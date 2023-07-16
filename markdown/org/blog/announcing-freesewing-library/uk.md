@@ -1,28 +1,28 @@
 ---
 author: "joostdecock"
-caption: "I don't drink, but this seemed appropriate for a celebration post ¯\_(ツ)_/¯"
+caption: "Я не п'ю, але це здалося доречним для святкового посту ¯\_(ツ)_/¯"
 date: "2018-08-25"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a6b5a3918ad412f7fb434413fafcc82107109d87-1920x1276.jpg"
-intro: "Celebrating one year of freesewing.org: Announcing the freesewing library"
-title: "Celebrating one year of freesewing.org: Announcing the freesewing library"
+intro: "Святкуємо рік з дня заснування freesewing.org: Анонс бібліотеки freesewing"
+title: "Святкуємо рік з дня заснування freesewing.org: Анонс бібліотеки freesewing"
 ---
 
 
-Exactly one year ago, the doors of freesewing.org swung open for our users, while those of makemypattern.com get one of those *we've moved* signs.
+Рівно рік тому двері freesewing.org відчинилися для наших користувачів , а користувачі makemypattern.com отримали один з цих *ми перенесли вивіски* .
 
-Looking back at [that blog post from 12 months ago](/blog/open-for-business), it almost beggars belief that the things announced then are only one year old. The concept of a draft, the comparison functionality, or even paperless patterns. They all celebrate their first birthday today.
+Озираючись на [, на дописи в блозі 12-місячної давнини](/blog/open-for-business), , майже не віриться, що те, про що тоді було заявлено, сталося лише рік тому. Концепція чернетки, функція порівняння або навіть безпаперові шаблони. Всі вони сьогодні святкують свій перший день народження.
 
-Not this site though, because [driven by the looming GDPR deadline](/blog/gdpr-plan), we dumped our Jekyll based site for a new front end sometime in May.
+Але не цей сайт, тому що [через наближення дедлайну GDPR](/blog/gdpr-plan)ми відмовилися від нашого сайту на основі Jekyll заради нового інтерфейсу десь у травні.
 
-## More languages with less languages
+## Більше мов з меншою кількістю мов
 
-GDPR was only part of that story. Other reasons for the rewrite were our desire to support multiple languages, and to simplify our technology stack.
+GDPR був лише частиною цієї історії. Іншими причинами переписування було наше бажання підтримувати кілька мов, та спростити наш технологічний стек.
 
-In other words, we wanted to reach people who speak different languages, and wanted to limit the number of programming languages required to do so.
+Іншими словами, ми хотіли охопити людей, які розмовляють різними мовами, і хотіли обмежити кількість мов програмування, необхідних для цього.
 
-### More natural languages
+### Більше природних мов
 
-We've done remarkably well on this front. While you won't find every last bit of content translated, this website's main features are now available in five languages:
+Ми досягли значних успіхів на цьому фронті. Хоча ви не знайдете повного перекладу контенту, основні функції цього веб-сайту тепер доступні п'ятьма мовами:
 
  - Англійська мова
  - Німецька
@@ -30,52 +30,52 @@ We've done remarkably well on this front. While you won't find every last bit of
  - Французька
  - Голландська
 
-Which really is 100% thanks to the great work of [our wonderful translators](/i18n/).
+І це дійсно на 100% завдяки чудовій роботі [наших чудових перекладачів](/i18n/).
 
-### Less programming languages
+### Менше мов програмування
 
-The switch from [Jekyll]() to a [Nuxt](https://nuxtjs.org/)-based front-end has removed [Ruby](https://www.ruby-lang.org/) from our technology stack. Freesewing.org now runs on JavaScript, PHP and a little bit of C (which we'll ignore for now).
+Перехід з [Jekyll]() на [Nuxt](https://nuxtjs.org/)- заснований на фронтенді прибрав [Ruby](https://www.ruby-lang.org/) з нашого технологічного стеку. Freesewing.org зараз працює на JavaScript, PHP і трохи C (який ми поки що ігноруємо).
 
-But removing programming languages is not a goal *an sich*. Rather, the underlying ambition is to simplify things, make it easier for people to get involved, and ultimately attract more contributors so that the project can grow and flourish.
+Але вилучення мов програмування не є метою *an sich*. Натомість, основна амбіція полягає в тому, щоб спростити речі, полегшити людям участь у і, зрештою, залучити більше дописувачів, щоб проект міг рости і процвітати.
 
-Today, designing/developing patterns is not an insurmountable obstacle. We've got [benjamin](/patterns/benjamin), [florent](/patterns/florent), and [sandy](/patterns/sandy) to show for it. All of these were contributed by people for whom freesewing was initially new, they went through the design tutorial, and in the end created a pattern of their own.
+Сьогодні проектування/розробка патернів не є нездоланною перешкодою. У нас є [Бенджамін](/patterns/benjamin), [Флоран](/patterns/florent), і [Сенді](/patterns/sandy) , щоб показати це. Все це було зроблено людьми, для яких фріспівінг був новим, вони пройшли курс навчання дизайну, і врешті-решт створили свій власний патерн.
 
-We'd like more people to follow in their footsteps. So making the process as simple as possible is a worthy investment of our time.
+Ми хотіли б, щоб більше людей пішли їхніми слідами. Тож зробити процес настільки простим, наскільки це можливо - гідна інвестиція нашого часу.
 
-## Announcing freesewing, the library
+## Оголошуючи фріспівінг, бібліотека
 
-For the past 2 months, I have taken time off from pattern making and sewing to tackle our [technical debt](https://en.wikipedia.org/wiki/Technical_debt).
+Останні 2 місяці я відволіклася від створення викрійок та шиття, щоб вирішити наш [технічний борг](https://en.wikipedia.org/wiki/Technical_debt).
 
-Specifically, I've set out to rewrite our core back-end from the ground up in JavaScript. But there's a twist. It's no longer a back-end. It's a library you can use both in your browser, or on the server with [node.js](https://nodejs.org/).
+Зокрема, я вирішив переписати наш основний бекенд з нуля на JavaScript. Але є один нюанс. Це вже не бек-енд. Це бібліотека, яку можна використовувати як у браузері, так і на сервері за допомогою [node.js](https://nodejs.org/).
 
-It is currently in version 0.10, and feature complete with freesewing core. It's [available on GitHub](https://github.com/freesewing/freesewing) and [NPM](https://www.npmjs.com/package/freesewing), and is fully documented at [developer.freesewing.org](https://developer.freesewing.org/).
+Наразі він має версію 0.10 і функціонує в комплекті з ядром freesewing. Він [доступний на GitHub](https://github.com/freesewing/freesewing) і [NPM](https://www.npmjs.com/package/freesewing), а також повністю задокументований на [developer.freesewing.org](https://developer.freesewing.org/).
 
-And while its API is richer than core's, it's footprint is actually a lot smaller:
+І хоча його API багатший, ніж у ядра, він займає набагато менше місця:
 
-![Lines of code comparison between the new library and (the relevant portion of) freesewing core](https://posts.freesewing.org/uploads/corevsfreesewing_c9327c9fa3.svg)
+![Порівняння рядків коду між новою бібліотекою та (відповідною частиною) ядра freesewing](https://posts.freesewing.org/uploads/corevsfreesewing_c9327c9fa3.svg)
 
-Which is good news, in case you were wondering.
+І це хороша новина, якщо вам цікаво.
 
-## What happens next?
+## Що буде далі?
 
-A lot of work needs to be done before we can actually use this on freesewing.org:
+Потрібно зробити ще багато роботи, перш ніж ми зможемо використовувати це на freesewing.org:
 
 
- - All our existing patterns need to be parted to the JS version. [Brian](https://github.com/freesewing/brian) is the first pattern to have been ported.
- - Rewrite our data back-end in JS. Since this will remove the PHP programming language from our stack.
- - Build a new website using the freesewing library and our new data back-end.
+ - Всі наші існуючі шаблони повинні бути перенесені в JS-версію. [Брайан](https://github.com/freesewing/brian) - перший шаблон, який було перенесено.
+ - Перепишемо наш бекенд з даними на JS. Оскільки це вилучить мову програмування PHP з нашого стеку.
+ - Створіть новий веб-сайт, використовуючи бібліотеку freesewing та наш новий бекенд даних.
 
-This really is a lot of work, and while I hope that by the end of the year we'll have made good progress, I can't promise it will be done.
+Це справді велика робота, і хоча я сподіваюся, що до кінця року ми досягнемо значного прогресу, я не можу обіцяти, що це буде зроблено.
 
-## But I just want patterns
+## Але я просто хочу шаблони
 
-Chances are, all you care about is patterns. What you want is more patterns, better patterns, different patterns. And all of this rewriting is not exactly pushing your buttons.
+Швидше за все, все, що вас цікавить - це шаблони. Ви хочете більше візерунків, кращих візерунків, різних візерунків. І все це переписування - не зовсім те, що вам потрібно.
 
-I get that. I really do. I for one have a list of patterns I'd like to see added to the site. And my work on other aspects of the project keeps me from adding them.
+Я зрозумів. Я справді хочу. У мене, наприклад, є список шаблонів, які я хотів би бачити на сайті. А робота над іншими аспектами проекту заважає мені їх додавати.
 
-But I believe that investing now in a streamlined developer experience will have a knock-on effect in the long term.
+Але я вважаю, що інвестиції в оптимізацію роботи розробників зараз матимуть ефект у довгостроковій перспективі.
 
-If we want a few extra patterns, this is not the right approach. But if we want a lot more patterns, I believe it is.
+Якщо ми хочемо кілька додаткових шаблонів, це неправильний підхід. Але якщо ми хочемо набагато більше візерунків, я вважаю, що так.
 
-And I want a lot more patterns.
+І я хочу набагато більше візерунків.
 
