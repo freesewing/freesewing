@@ -1,5 +1,5 @@
 ---
-title: "Masque Florence : Instructions de couture"
+title: "Florence face mask: Sewing Instructions"
 ---
 
 ### Étape 1 : Coudre la couture centrale
