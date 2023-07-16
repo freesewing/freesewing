@@ -1,5 +1,5 @@
 ---
-title: "Collar spread"
+title: "Spreiding kraag"
 ---
 
 Controls the distance between the points of the collar.
