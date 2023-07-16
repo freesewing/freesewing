@@ -7,10 +7,12 @@ import {
 import { postInfo as blogPostInfo, order as blogOrder } from 'site/prebuild/blog-paths.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
+import { useRouter } from 'next/router'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import Link from 'next/link'
 import { Pagination } from 'shared/components/navigation/pagination.mjs'
+import { Spinner } from 'shared/components/spinner.mjs'
 import { TimeAgo } from 'shared/components/mdx/meta.mjs'
 import { siteConfig } from 'site/site.config.mjs'
 import { localeSlug } from 'shared/utils.mjs'
@@ -121,7 +123,14 @@ const tiles = {
 }
 const PostIndexPage = ({ posts, page, current, total, postType }) => {
   const { t } = useTranslation()
-  if (!posts) return null
+  const router = useRouter()
+  if (router.isFallback) {
+    return (
+      <PageWrapper title={'Loading...'}>
+        <Spinner className="w16 h-16 animate-spin text-primary" />
+      </PageWrapper>
+    )
+  }
 
   const previews = []
   const Tile = tiles[postType]
@@ -155,6 +164,13 @@ export async function getStaticProps({ locale, params }) {
   const { postType } = params
   const postSlugs = orders[postType][locale].slice(numPerPage * (pageNum - 1), numPerPage * pageNum)
   const posts = postSlugs.map((s) => ({ ...infos[postType][locale][s], s }))
+  const numLocPages = numPages(locale, postType)
+
+  if (pageNum > numLocPages) {
+    return {
+      notFound: true,
+    }
+  }
 
   return {
     props: {
@@ -176,15 +192,15 @@ export const getStaticPaths = async () => {
   let paths = []
   for (const postType of ['blog', 'showcase']) {
     for (const locale in orders[postType]) {
-      const numLocPages = numPages(locale, postType)
-      for (let i = 0; i < numLocPages; i++) {
+      // only pre-generate the first two results pages
+      for (let i = 0; i < 2; i++) {
         paths.push(localeSlug(locale, `/${postType}/page/${i + 1}`))
       }
     }
   }
 
   return {
-    paths: [],
-    fallback: false,
+    paths,
+    fallback: true,
   }
 }

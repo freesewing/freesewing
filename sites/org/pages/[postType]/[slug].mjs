@@ -1,12 +1,18 @@
 import { useCompiledMdx } from 'shared/components/docs/docs-page.mjs'
 import { mdxLoader } from 'shared/mdx/v3loader.mjs'
-import { prebuildNavigation } from 'site/prebuild/navigation/index.mjs'
+import { order as showcaseOrder } from 'site/prebuild/showcase-paths.mjs'
+import { order as blogOrder } from 'site/prebuild/blog-paths.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { PostPageWrapper, ns as pageNs } from 'site/components/posts/page-wrapper.mjs'
 import { localeSlug } from 'shared/utils.mjs'
 
+const preGenerate = 6
 const namespaces = [...pageNs]
 
+const orders = {
+  showcase: showcaseOrder,
+  blog: blogOrder,
+}
 const PostPage = ({ page, slug, locale, mdx }) => {
   const { mdxContent, frontmatter } = useCompiledMdx(mdx, 'org')
 
@@ -21,6 +27,12 @@ export default PostPage
  */
 export async function getStaticProps({ locale, params }) {
   const slug = `${params.postType}/${params.slug}`
+
+  if (orders[params.postType][locale].indexOf(slug) === -1) {
+    return {
+      notFound: true,
+    }
+  }
 
   return {
     props: {
@@ -49,17 +61,23 @@ export async function getStaticProps({ locale, params }) {
  */
 export async function getStaticPaths() {
   const paths = []
-  for (const lang in prebuildNavigation) {
-    for (const postType of ['blog', 'showcase']) {
-      for (const slug in prebuildNavigation[lang][postType]) {
-        if (typeof prebuildNavigation[lang][postType][slug] === 'object')
-          paths.push(localeSlug(lang, `/${postType}/${slug}`))
+  for (const postType of ['blog', 'showcase']) {
+    for (const lang in orders[postType]) {
+      let i = 0,
+        counter = 0
+      while (i < preGenerate && counter < 20) {
+        counter++
+        const slug = orders[postType][lang][i]
+        if (!slug) continue
+
+        paths.push(localeSlug(lang, `/${orders[postType][lang][i]}`))
+        i++
       }
     }
   }
 
   return {
     paths,
-    fallback: false,
+    fallback: true,
   }
 }

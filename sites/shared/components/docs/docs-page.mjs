@@ -51,7 +51,7 @@ export const useCompiledMdx = (MDX, site) => {
       setFrontmatter(evaled.frontmatter)
     }
 
-    compileMdx()
+    if (MDX) compileMdx()
   }, [setMdxContent, setFrontmatter, MDX])
 
   return { mdxContent, frontmatter }

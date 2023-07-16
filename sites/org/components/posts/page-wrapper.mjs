@@ -8,11 +8,22 @@ import { TimeAgo } from 'shared/components/mdx/meta.mjs'
 import { useTranslation } from 'next-i18next'
 import { Toc } from 'shared/components/mdx/toc.mjs'
 import { PrevNext } from 'shared/components/prev-next.mjs'
+import { useRouter } from 'next/router'
+import { Spinner } from 'shared/components/spinner.mjs'
 
 export const ns = ['common', 'posts', ...pageNs]
 
 export const PostPageWrapper = ({ page, slug, locale, frontmatter, mdxContent }) => {
   const { t } = useTranslation(ns)
+  const router = useRouter()
+  if (router.isFallback) {
+    return (
+      <PageWrapper title={'Loading...'}>
+        <Spinner className="w16 h-16 animate-spin text-primary" />
+      </PageWrapper>
+    )
+  }
+
   return (
     <PageWrapper title={frontmatter.title} {...page}>
       <HeadInfo {...{ frontmatter, locale, slug, site: 'org' }} />
