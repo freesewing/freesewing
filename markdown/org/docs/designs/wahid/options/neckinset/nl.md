@@ -1,5 +1,5 @@
 ---
-title: "Neck inset"
+title: "Insnede nek"
 ---
 
 ![Insnede nek](neckinset.svg)
