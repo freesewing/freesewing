@@ -1,5 +1,5 @@
 content_segmentation: 0
-commit_message: "[ci skip]"
+commit_message: "skip-build"
 pull_request_assignees:
   - joostdecock
 files:

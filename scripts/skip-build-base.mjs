@@ -4,35 +4,46 @@ import { execSync } from 'child_process'
 const branchesToNeverBuild = ['i18n']
 
 export const shouldSkipBuild = (siteName, checkFolders = '../shared .') => {
-  console.log('Skip build script version 1.1.0')
+  const branch = process.env.VERCEL_GIT_COMMIT_REF
+  const commit = process.env.VERCEL_GIT_COMMIT_SHA
+  const author = process.env.VERCEL_GIT_COMMIT_AUTHOR_LOGIN
+  const msg = process.env.VERCEL_GIT_COMMIT_MESSAGE
+
+  // Say hi
+  console.log(`FreeSewing skip build check:
+  branch: ${branch}
+  commit: ${commit}
+  author: ${author}
+  commit message: ${msg}
+`)
 
   // Do not block production builds
   if (process.env.VERCEL_ENV === 'production') {
-    console.log('✅ - Production build - Proceed to build')
+    console.log('✅  Building: production build')
     process.exit(1)
   }
 
   // Do not build dependabot PRs
-  if (process.env.VERCEL_GIT_COMMIT_AUTHOR_LOGIN === 'dependabot[bot]') {
-    console.log('🛑 - Dependabot PR - Do not build')
+  if (author.toLowerCase().includes('ependabot')) {
+    console.log('🛑  Not building: Dependabot PR')
     process.exit(0)
   }
 
-  const branch = process.env.VERCEL_GIT_COMMIT_REF
   // Always build develop branch
   if (branch === 'develop') {
-    console.log('✅ - Develop build - Proceed to build')
+    console.log('✅ - Building: develop branch is always built')
     process.exit(1)
   }
 
   // Do not build branches that should never be build
-  for (const skip of branchesToNeverBuild) {
-    if (branch.match(skip)) return process.exit(1)
+  if (branchesToNeverBuild.includes(branch)) {
+    console.log('🛑  Not building: Branch is included in branches to never build')
+    process.exit(0)
   }
 
   // Do not build commits that have [vercel skip] in the message
-  if (process.env.VERCEL_GIT_COMMIT_MESSAGE.match(/\[vercel skip\]/)) {
-    console.log('🛑 - Commit message includes [vercel skip] - Do not build')
+  if (msg.includes('skip-build')) {
+    console.log('🛑  Not building: Commit message includes skip-build')
     process.exit(0)
   }
 
@@ -79,7 +90,5 @@ export const shouldSkipBuild = (siteName, checkFolders = '../shared .') => {
   }
 
   console.log('🛑 - Unhandled case - Do not build')
-  console.log(`  VERCEL_GIT_COMMIT_AUTHOR_LOGIN: ${process.env.VERCEL_GIT_COMMIT_AUTHOR_LOGIN}`)
-  console.log(`  VERCEL_GIT_COMMIT_REF: ${branch}`)
   process.exit(0)
 }
