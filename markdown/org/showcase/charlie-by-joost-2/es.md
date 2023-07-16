@@ -5,6 +5,7 @@ date: "2021-05-23"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/20ccf81fc098beaab92cbb48ee1a37b9f6a011c9-600x800.jpg"
 intro: "Joost made another excellent pair of Charlie Chinos in this tan fabric."
 title: "Another Charlie by Joost [No traducido]"
+designs: ["charlie"]
 ---
 
 

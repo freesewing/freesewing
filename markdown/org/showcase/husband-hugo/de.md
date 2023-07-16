@@ -5,6 +5,7 @@ date: "2015-12-28"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/bc1b64060b3b0907157c2e1608b2b2610b81a4b0-1080x1080.jpg"
 intro: "This picture is from the Instagram feed of uneanneedecouture ."
 title: "[auf Englisch] A hugo for the husband, by Sonia"
+designs: ["hugo"]
 ---
 
 

@@ -5,6 +5,7 @@ date: "2020-07-01"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ab68d41354448f2149dcdce2cbf3b0222f58012d-2160x1080.jpg"
 intro: "Je zou denken dat we dit uit een modetijdschrift geknipt hebben, maar het is een foto van Adam die deze prachtige Wahid voor zichzelf maakte."
 title: "Wahid door Adam"
+designs: ["wahid"]
 ---
 
 

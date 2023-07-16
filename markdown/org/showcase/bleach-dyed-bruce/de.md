@@ -5,6 +5,7 @@ date: "2018-01-21"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9e8834593713a2a6e4903d53e789b430449f947a-1280x960.jpg"
 intro: "[auf Englisch] Bleach dyed Bruce by Reanna"
 title: "[auf Englisch] Bleach dyed Bruce by Reanna"
+designs: ["bruce"]
 ---
 
 ![The back of the pair shown above](https://posts.freesewing.org/uploads/bleach_dyed_bruce_1_back_c91de98a99.jpg "The back of the pair shown above")

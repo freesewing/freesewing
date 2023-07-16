@@ -33,21 +33,26 @@ const sanity = {
  */
 
 /*
- * Query to load makers from Strapi
+ * Query to load makers and designs from Strapi
  */
-const loadMakers = async () => {
+const loadMakersAndDesigns = async () => {
   const result = await axios.get(
     'https://posts.freesewing.org/showcaseposts?_locale=en&_sort=date:ASC&_limit=500'
   )
   const makers = {}
+  const designs = {}
   for (const post of result.data) {
     makers[post.slug] =
       post.maker?.displayname && post.maker.displayname !== 'A FreeSewing Maker'
         ? post.maker.displayname
         : 'unknown'
+    designs[post.slug] = []
+    if (post.design1) designs[post.slug].push(post.design1)
+    if (post.design2) designs[post.slug].push(post.design2)
+    if (post.design3) designs[post.slug].push(post.design3)
   }
 
-  return makers
+  return { designs, makers }
 }
 
 /*
@@ -120,22 +125,27 @@ const createBlogPosts = async (posts, images) => {
 /*
  * Port a sanity showcase post to markdown
  */
-const sanityShowcasePostToMd = (post, img, maker) => `---
+const sanityShowcasePostToMd = (post, img, maker, designs) => {
+  //if (designs.length  > 1) console.log(designs)
+
+  return `---
 maker: ${JSON.stringify(maker)}
 caption: ${JSON.stringify(post.caption)}
 date: ${JSON.stringify(post.date)}
 image: ${JSON.stringify(img)}
 intro: ${JSON.stringify(post.intro)}
 title: ${JSON.stringify(post.title)}
+designs: ${JSON.stringify(designs)}
 ---
 
 ${post.body}
 `
+}
 
 /*
  * Helper method to create all showcase posts
  */
-const createShowcasePosts = async (posts, images, makers) => {
+const createShowcasePosts = async (posts, images, makers, designs) => {
   const promises = []
   const root = ['markdown', 'org', 'showcase']
   // First create the folders
@@ -155,7 +165,8 @@ const createShowcasePosts = async (posts, images, makers) => {
           sanityShowcasePostToMd(
             post,
             images.showcase[post.slug.current],
-            makers[post.slug.current]
+            makers[post.slug.current],
+            designs[post.slug.current]
           )
         )
       )
@@ -235,13 +246,13 @@ const sanityToMarkdown = async () => {
   console.log(' - Migrating blog posts')
   await createBlogPosts(content.blog, images)
 
-  // We failed to migrate maker info, so let's load that from Strapi
-  console.log(' - Loading makers from strapi (missing in Sanity)')
-  const makers = await loadMakers()
+  // We failed to migrate maker & designs info, so let's load that from Strapi
+  console.log(' - Loading makers and designs from strapi (missing in Sanity)')
+  const { makers, designs } = await loadMakersAndDesigns()
 
   // Migrate showcase posts
   console.log(' - Migrating showcase posts')
-  await createShowcasePosts(content.showcase, images, makers)
+  await createShowcasePosts(content.showcase, images, makers, designs)
 
   // Migrate newsletter posts
   console.log(' - Migrating newsletter posts')

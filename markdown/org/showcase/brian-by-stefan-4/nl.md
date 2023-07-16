@@ -5,6 +5,7 @@ date: "2017-11-24"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/72a8175d98f267194c48ad940c734853a62e4e66-2045x2044.jpg"
 intro: "Deze foto verscheen oorspronkelijk in de Twitter feed van @SThanheiser ."
 title: "Stefan maakt een t-shirt gebaseerd op Briann2WQL"
+designs: ["brian"]
 ---
 
 

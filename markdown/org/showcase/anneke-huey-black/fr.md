@@ -5,6 +5,7 @@ date: "2020-10-29"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4e6d5a2fdf43b6904230f7ef7594bbcd41dd8759-640x640.jpg"
 intro: "Anneke a fait plusieurs variations du gilet à capuche Huey. Découvrez ses autres versions ici et ici ."
 title: "Un Huey noir par Anneke"
+designs: ["huey"]
 ---
 
 Anneke a fait plusieurs variations du gilet à capuche Huey. Découvrez ses autres versions [ici](https://fr.freesewing.org/showcase/anneke-huey/) et [ici](https://fr.freesewing.org/showcase/anneke-huey-grey/).

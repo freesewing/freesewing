@@ -5,6 +5,7 @@ date: "2018-02-05"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5084bf9ead668c3ddd3a8ff4fd9a9ea4866d3d1a-1080x1080.jpg"
 intro: "Een Wonder Woman Simon door JV"
 title: "Een Wonder Woman Simon door JV"
+designs: ["simon"]
 ---
 
 ![Een andere kant](https://posts.freesewing.org/uploads/wonder_woman_simon_view2_a8f4c2e951.jpg "Een andere kant")
