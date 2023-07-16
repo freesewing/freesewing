@@ -1,5 +1,5 @@
 ---
-title: "Front cutaway angle"
+title: "Frontschnittwinkel"
 ---
 
 ![Frontschnittwinkel](frontcutawayangle.svg)
