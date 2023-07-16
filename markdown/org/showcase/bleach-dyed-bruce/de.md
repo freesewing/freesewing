@@ -3,9 +3,10 @@ maker: "unknown"
 caption: "These are made of black tshirt fabric she bleach dyed myself, using desert plants for the design."
 date: "2018-01-21"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9e8834593713a2a6e4903d53e789b430449f947a-1280x960.jpg"
-intro: "[auf Englisch] Bleach dyed Bruce by Reanna"
-title: "[auf Englisch] Bleach dyed Bruce by Reanna"
-designs: ["bruce"]
+intro: "Bleach dyed Bruce by Reanna"
+title: "Bleach dyed Bruce by Reanna"
+designs:
+  - "bruce"
 ---
 
 ![The back of the pair shown above](https://posts.freesewing.org/uploads/bleach_dyed_bruce_1_back_c91de98a99.jpg "The back of the pair shown above")
@@ -13,6 +14,7 @@ designs: ["bruce"]
 ![The front of a second pair](https://posts.freesewing.org/uploads/bleach_dyed_bruce_2_front_d9e26ac24b.jpg "The front of a second pair")
 
 ![The back of a second pair](https://posts.freesewing.org/uploads/bleach_dyed_bruce_2_back_f97d0b323f.jpg "The back of a second pair")
+
 
 <Note>
 
