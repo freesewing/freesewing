@@ -1,60 +1,60 @@
 ---
 author: "joostdecock"
-caption: "You too can wear this coat. Although you're on your own for the hat. At least for now."
+caption: "Ти теж можеш носити це пальто. Хоча за капелюх ви відповідаєте самі. Принаймні, поки що."
 date: "2017-12-20"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/01c201b14f04bedbe2630bb3bd40d925fd6c1ce4-3500x2333.jpg"
-intro: "Announcing Carlton, aka the Sherlock Holmes coat, and the Bent Body Block"
-title: "Announcing Carlton, aka the Sherlock Holmes coat, and the Bent Body Block"
+intro: "Анонсуємо Карлтон, він же пальто Шерлока Холмса, та Блок зігнутого тіла"
+title: "Анонсуємо Карлтон, він же пальто Шерлока Холмса, та Блок зігнутого тіла"
 ---
 
-Good news everybody, we've got your cosplaying needs covered. That is, if you are cosplaying as Sherlock Holmes. Our newest pattern release, [the Carlton Coat](/patterns/carlton) is exactly what the doctor prescribed if for some weird reason your doctor wants you to look like everyone's favorite detective.
+Хороші новини, ми задовольнили всі ваші потреби у косплеї. Тобто, якщо ви косплеїте Шерлока Холмса. Наш новий випуск моделей, [пальто Карлтон](/patterns/carlton) - саме те, що доктор прописав, якщо з якихось дивних причин ваш лікар хоче, щоб ви виглядали як всіма улюблений детектив.
 
-My memory is foggy on the exact origin of this endeavor. It probably involved me complaining about the cold and my lack of a warm winter coat, but apart from that, I'm not too sure.
+Я погано пам'ятаю точне походження цього починання. Можливо, я скаржився на холод і відсутність теплого зимового пальта, але крім цього, я не дуже впевнений.
 
-What I do remember is that at one point, [Anneke](http://www.annekecaramin.com/) and myself decided that we would reverse-engineer the Sherlock Holmes coat. More specifically, the coat worn by Benedict Cumberbatch in the BBC series Sherlock Holmes.
+Що я точно пам'ятаю, так це те, що в якийсь момент [Аннеке](http://www.annekecaramin.com/) і я вирішили, що ми зробимо реінжиніринг пальто Шерлока Холмса. А точніше, пальто, яке носив Бенедикт Камбербетч у серіалі BBC "Шерлок Холмс".
 
-![That coat though](https://posts.freesewing.org/uploads/bc_f20e01a16d.jpg)
+![Хоча це пальто](https://posts.freesewing.org/uploads/bc_f20e01a16d.jpg)
 
-The coat is popular with cosplayers for obvious reasons, but it's also just a really nice coat, and other brave souls [such as Melissa](http://blog.fehrtrade.com/gallery/868/the-sherlock-coat/) have tried their hand at it.
+Пальто популярне серед косплеєрів зі зрозумілих причин, але це також просто дуже гарне пальто, і інші сміливці [, такі як Мелісса](http://blog.fehrtrade.com/gallery/868/the-sherlock-coat/) , спробували свої сили в ньому.
 
-I must admit that I didn't know Melissa made a similar coat until mine was finished. Furthermore, her blog post mentions that she used the instructions in a livejournal post that is no longer available.
+Мушу визнати, що я не знала, що Мелісса робить подібне пальто, поки моє не було готове. Крім того, в її блозі згадується, що вона скористалася інструкціями з допису в livejournal, який більше не доступний.
 
-Anneke and myself did no such thing and just put the pattern together based on screengrabs from the TV show. We're hardcore like that.
+Ми з Аннеке не робили нічого подібного, а просто склали візерунок на основі скріншотів з серіалу. Ми такі хардкорні.
 
-### About the coat
+### Про пальто
 
-Carlton is a double-breasted long overcoat in the tradition of horseback uniform coats where the back of the coat isn't split, but rather has wide pleats that can drape over the back of the horse. Or, more realistically, fan open behind you as you walk about.
+Карлтон - це двобортне довге пальто в традиціях кінської уніформи , де спинка не розділена, а має широкі складки, які можуть драпіруватися на спині коня. Або, що більш реалістично, віяло відкривається позаду вас, коли ви йдете.
 
-![Front view of Carlton on yours truly](https://posts.freesewing.org/uploads/front_e1d64f3ceb.jpg) ![Back view of Carlton on yours truly](https://posts.freesewing.org/uploads/back_05c04878c5.jpg)
+![Вид спереду на Карлтон від вашого покірного слуги](https://posts.freesewing.org/uploads/front_e1d64f3ceb.jpg) ![Вид на Карлтон ззаду на вашого покірного слугу](https://posts.freesewing.org/uploads/back_05c04878c5.jpg)
 
-It comes with two patch pockets on the front, two map pockets at the chest, and two inner pockets. Six pockets in total, so you'll have plenty of room for all your belongings.
+Має дві накладні кишені спереду, дві кишені для карт на грудях та дві внутрішні кишені. Всього шість кишень, тому у вас буде достатньо місця для всіх ваших речей.
 
-![Map and patch pockets on the outside](https://posts.freesewing.org/uploads/pockets_28099d1afe.jpg) ![Inner pockets on the inside](https://posts.freesewing.org/uploads/innerpocket_4e4e3f5119.jpg)
+![Кишені для карт і накладні кишені зовні](https://posts.freesewing.org/uploads/pockets_28099d1afe.jpg) ![Внутрішні кишені з внутрішньої сторони](https://posts.freesewing.org/uploads/innerpocket_4e4e3f5119.jpg)
 
-I finished mine just in time for a trip to K&ouml;ln to visit my beloved friend and tailor [Sebastian Hoofs](http://sebastian-hoofs.de/massschneider/). It was cold as eff over there, but the coat kept me nice and warm. Not surprising since it's made in a hefty wool I picked up in [Bacci in Florence](http://www.baccitessuti.it/en/index.html) over the summer, and I took the extra step of interlining it with French terry (I really don't like to be cold).
+Я закінчив свій якраз вчасно для поїздки в К&ouml;ін, щоб відвідати мого улюбленого друга і кравця [Себастьяна Хуфса](http://sebastian-hoofs.de/massschneider/). Там було холодно, як у пеклі, але пальто тримало мене в теплі. Не дивно, адже він виготовлений з товстої вовни, яку я купила в [Bacci у Флоренції](http://www.baccitessuti.it/en/index.html) влітку, і я зробила додатковий крок, проклавши її французькою махрою (я дуже не люблю мерзнути).
 
-![I have no affiliation with Bacci, I'm just a sucker for great fabric stores](https://posts.freesewing.org/uploads/bacci_043f91c96c.jpg) ![You can see the terry interlining where I peeled back the sleeve lining](https://posts.freesewing.org/uploads/interlining_220e0eab71.jpg)
+![Я не маю жодного відношення до Bacci, я просто прихильник чудових магазинів тканин](https://posts.freesewing.org/uploads/bacci_043f91c96c.jpg) ![Ви можете побачити махрову підкладку там, де я відклеїла підкладку рукава](https://posts.freesewing.org/uploads/interlining_220e0eab71.jpg)
 
-### Burn the patriarchy to the ground through the power of pockets
+### Спалити патріархат дотла через владу кишень
 
-Ladies take note: Carlita --- a female version of Carlton --- is currently on the drawing board.
+Дами, візьміть до уваги: Карліта - жіноча версія Карлтона - зараз знаходиться на креслярській дошці.
 
-Initially, the plan was to release male and female versions side by side, but adapting the coat has proven to be more involved than anticipated because, well, because boobs.
+Спочатку планувалося випустити чоловічу та жіночу версії поруч, але адаптація пальта виявилася складнішою, ніж передбачалося, тому що, ну, тому що цицьки.
 
-I also feel like I have to keep too many plates spinning right now, so I'm hopeful that getting Carlton out the door will create some time/space to make Carlita follow soon(ish). Either way, I've promised Anneke that we'd do a female version, and [she's a freesewing Captain now](/patrons), so I intend to keep that promise.
+Я також відчуваю, що мені доводиться тримати занадто багато тарілок, тому сподіваюся, що коли Карлтон вийде за двері, це створить трохи часу/простору для того, щоб Карліта незабаром пішла слідом за ним. Так чи інакше, я пообіцяв Аннеке, що ми зробимо жіночу версію, і [вона тепер капітан фріспівробітників](/patrons), тож я маю намір дотриматись цієї обіцянки.
 
-Oh, and about that title: When Carlita's ready, she will have just as many pockets as Carlton.
+До речі, про титул: Коли Карліта буде готова, у неї буде стільки ж кишень, скільки у Карлтона.
 
-## Also, this: Introducing the Bent Body Block
-We're actually releasing two patterns today. Apart from the Carlton Coat, there's also the [Bent Body Block](/patterns/bent).
+## А ще ось це: Представляємо блок зігнутого тіла
+Сьогодні ми випускаємо два патерни. Окрім пальта Carlton Coat, є також та [Bent Body Block](/patterns/bent).
 
-Bent is a two-part sleeve variation of our [Brian Body Block](/patterns/bent). It's essentially a base for coat and jacket patterns for menswear.
+Бент - це варіація рукава, що складається з двох частин, нашого [Brian Body Block](/patterns/bent). Це, по суті, база для викрійок пальт і піджаків для чоловічого одягу.
 
-I originally designed Bent as a base for my [refashioners 2017 zebra jacket](/blog/the-refashioners-2017/), so you can expect that jacket pattern to also hit the site in the coming months.
+Спочатку я розробив Бента як основу для моєї [куртки з зебри](/blog/the-refashioners-2017/), , тому ви можете очікувати, що ця модель куртки також з'явиться на сайті в найближчі місяці.
 
-Carlton is also based on Bent, so we're giving you both today.
+Карлтон також заснований на Бенті, тому сьогодні ми даруємо вам обидва.
 
-Have wonderful and happy holidays if you're into that kind of thing. And happy making!
+Чудових і веселих свят, якщо ви любите такі речі. І щасливої творчості!
 
 
 
