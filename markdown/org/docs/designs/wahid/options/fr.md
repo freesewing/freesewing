@@ -1,5 +1,5 @@
 ---
-title: "Gilet Wahid: Options de style"
+title: "Wahid waistcoat: Design Options"
 ---
 
 <PatternOptions pattern='wahid' />
