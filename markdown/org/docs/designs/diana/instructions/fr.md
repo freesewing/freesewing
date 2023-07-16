@@ -1,5 +1,5 @@
 ---
-title: "Haut drapé Diana : Instructions de couture"
+title: "Diana draped top: Sewing Instructions"
 ---
 
 ### Étape 1 : Finir l'encolure du dos
