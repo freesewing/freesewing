@@ -1,5 +1,5 @@
 ---
-title: "Waist reduction"
+title: "Taillenreduzierung"
 ---
 
 ![Die Taillenreduzierung auf Kathrin](./waistreduction.svg)
