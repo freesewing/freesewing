@@ -1,87 +1,87 @@
 ---
 author: "joostdecock"
-caption: "This post is mostly about our work on progressive disclosure. Also: Three new patterns!"
+caption: "Ця публікація здебільшого про нашу роботу над прогресивним розкриттям інформації. І ще: Три нові візерунки!"
 date: "2019-10-06"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/52db6852590a15208dace4a16a6a1c824037e400-2000x1500.jpg"
-intro: "We've just release FreeSewing v2.1 🎉"
-title: "FreeSewing v2.1: Three new patterns, expert mode, and help with measurements"
+intro: "Ми щойно випустили FreeSewing v2.1 🎉."
+title: "FreeSewing v2.1: Три нові викрійки, експертний режим та допомога з вимірами"
 ---
 
 
-We've just release FreeSewing v2.1 🎉
+Ми щойно випустили FreeSewing v2.1 🎉.
 
-## Meet Penelope, Waralee, and Simone
+## Познайомтеся з Пенелопою, Варалі та Сімоною
 
-There are 3 new patterns in this release:
+У цьому випуску 3 нових шаблони:
 
- - [Penelope](/patterns/penelope) is a pencil skirt by [Wouter Van Wageningen](/users/wouter.vdub)
- - [Waralee](/patterns/waralee) are wrap pants, also by [Wouter](/users/wouter.vdub)
- - [Simone](/patterns/simone) is Simon (our versatile button-down pattern) adapted for breasts by [Joost De Cock](/users/joost)
+ - [Пенелопа](/patterns/penelope) - спідниця-олівець від [Wouter Van Wageningen](/users/wouter.vdub)
+ - [Waralee](/patterns/waralee) - це штани-обгортки, також від [Wouter](/users/wouter.vdub)
+ - [Simone](/patterns/simone) - це Симон (наш універсальний викрійка на ґудзиках), адаптований для грудей від [Joost De Cock](/users/joost)
 
-All of these patterns are either womenswear or -- in the case of Waralee -- unisex clothing. Which in an indication of our commitment to bring more womenswear patterns to the site.
+Всі ці моделі - або жіночий одяг, або - у випадку з Waralee - одяг унісекс. Це свідчить про наше прагнення додати більше моделей жіночого одягу на сайт.
 
-Apart from creating new patterns, a lot of efforts have gone into making things simpler, without making them dumber. Let me explain:
+Окрім створення нових патернів, багато зусиль було докладено до того, щоб зробити речі простішими, не роблячи їх тупішими. Дозвольте мені пояснити:
 
-## Our work on progressive disclosure
+## Наша робота над прогресивним розкриттям інформації
 
-Striking a balance between giving our users all the power of the platform, yet making it easy for newcomers to get started, is an ongoing challenge. We have started making inroads into addressing that issue with so-called *progressive disclosure of complexity*.
+Досягнення балансу між наданням нашим користувачам усієї потужності платформи та полегшенням початку роботи для новачків - це постійний виклик. Ми почали робити кроки у вирішенні цієї проблеми за допомогою так званого *прогресивного розкриття складності*.
 
-The idea -- which we didn't make up, but is a concept in UX design -- is to simplify the experience for most people without limiting the abilities of more advanced users.
+Ідея - яку ми не вигадали, але яка є концепцією в UX-дизайні - полягає в тому, щоб спростити користувацький досвід для більшості людей, не обмежуючи можливості більш просунутих користувачів.
 
-We are focusing our attention for progressive disclosure on two areas that are the ones that our users most often struggle with:
+Для поступового розкриття інформації ми зосереджуємо нашу увагу на двох сферах, з якими наші користувачі найчастіше стикаються:
 
- - **Pattern options**: Our patterns often come with dozens of options. That is great for those who like to fine-tune every detail of their pattern, but can be a bit overwhelming for newcomers
- - **Measurements**: Taking accurate measurements is crucial for good results with our patterns, yet not as trivial as you would think.
+ - **Варіанти візерунків**: Наші візерунки часто мають десятки варіантів. Це чудово підходить для тих, хто любить точно налаштовувати кожну деталь свого візерунка, але може бути дещо складним для новачків
+ - **Вимірювання**: Точне вимірювання має вирішальне значення для отримання хороших результатів з нашими лекалами, але це не так тривіально, як ви можете подумати.
 
-While we're certainly not there yet, we've made progress on both of these. Let's look at what we've been up to:
+Хоча ми, звичайно, ще не там, ми досягли прогресу в обох цих напрямках. Давайте подивимося, чим ми займалися:
 
-### Pattern options: We now have an expert mode, and it's off by default
+### Параметри візерунка: Тепер у нас є експертний режим, і за замовчуванням він вимкнений
 
-(some of) Our patterns have had *advanced options* for a while, but they are now hidden by default. That is until you turn on the **Expert mode** in the settings (below the pattern options).
+(деякі) Наші шаблони деякий час мали *розширені опції* , але зараз вони приховані за замовчуванням. Так буде до тих пір, поки ви не увімкнете **Експертний режим** в налаштуваннях (під опціями шаблону).
 
-Apart from advanced pattern options, export mode also reveals the lesser-used draft settings such as the ability to change the language, units, details, margin, and contents of your draft.
+Окрім розширених параметрів шаблону, режим експорту також відкриває рідше використовувані параметри чернетки, такі як можливість змінювати мову, одиниці виміру, деталі, поля і вміст чернетки.
 
-![Advanced mode](https://posts.freesewing.org/uploads/recreate_a6e2f9c4d6.png)
+![Розширений режим](https://posts.freesewing.org/uploads/recreate_a6e2f9c4d6.png)
 
 <Note> 
 
-###### Also shown: Pattern vs Recipe defaults
+###### Також показано: Шаблон vs Рецепт за замовчуванням
 
-When configuring your draft, every option has a little button to restore the default value for that option.
-Things get more complicated when you're re-creating a recipe. Now when you restore the default, is it the pattern default, or the recipe's default?
+Під час налаштування чернетки, кожна опція має маленьку кнопку для відновлення значення за замовчуванням для цієї опції.
+Все ускладнюється, коли ви створюєте рецепт заново. Тепер, коли ви відновлюєте значення за замовчуванням, це буде значення за замовчуванням шаблону чи рецепту?
 
-The answer used to be the pattern default, but with this release, you'll find that options where the recipe default is different from the pattern
-default will have two buttons. Once to restore the pattern default, and another to restore the recipe default. 
+Раніше відповіддю був шаблон за замовчуванням, але в цьому випуску ви побачите, що опції, де рецепт за замовчуванням відрізняється від шаблону
+за замовчуванням, матимуть дві кнопки. Один раз, щоб відновити шаблон за замовчуванням, а другий, щоб відновити рецепт за замовчуванням. 
 
-You can see this in the screenshot above.
+Ви можете побачити це на скріншоті вище.
 
 </Note>
 
-### Measurements: Helping you spot mistakes in your measurements
+### Вимірювання: Допомога у виявленні помилок у ваших вимірюваннях
 
-Ми додали декілька показників, аби допомогти Вам побачити можливі помилки чи проблеми з Вашими замірами. Your models will now show a graphical representation of your body measurements, which will allow you to spot any outliers.
+Ми додали декілька показників, аби допомогти Вам побачити можливі помилки чи проблеми з Вашими замірами. Тепер ваші моделі відображатимуть графічне представлення вимірів вашого тіла, що дозволить вам виявити будь-які відхилення від норми.
 
-![A graphical representation of your model's measurements](https://posts.freesewing.org/uploads/model_c3fa8fc50c.png)
+![Графічне представлення вимірювань вашої моделі](https://posts.freesewing.org/uploads/model_c3fa8fc50c.png)
 
-In addition, we are showing you an estimate of your different measurements (based on your neck circumference) next to the actual value. If the difference gets larger, we'll draw your attention to that.
+Крім того, поруч з фактичним значенням ми показуємо оцінку ваших різних вимірів (на основі обхвату шиї). Якщо різниця стане більшою, ми звернемо на це вашу увагу.
 
-This is a difficult area for us to work in. We want to help you get the best results, and that includes helping you spot issues with your measurements. On the other hand, we in no way want to imply that someone's measurements are *wrong* somehow.
+Для нас це складна сфера для роботи. Ми хочемо допомогти вам отримати найкращі результати, і це включає в себе допомогу у виявленні проблем з вашими вимірюваннями. З іншого боку, ми жодним чином не хочемо сказати, що чиїсь вимірювання *неправильні* якимось чином.
 
-Наша платформа має великий діапазон розмірів, та найбільша частина наших користувачів - люди, яким важко знаходити одяг чи викрійки в інших місцях. So on one hand, it might seem like we're setting ourselves up for failure by comparing measurements to a set of more or less *standard* measurements. Але Ви знаєте своє тіло. Ви знаєте які з Ваших вимірів відрізняються від загальних розмірних таблиць. І це є лише підтвердженням правильного зняття мірок, якщо ми зауважимо їх відмінність. З іншого боку, якщо таке зауваження стосується виміру, який зазвичай збігається з розмірними таблицями - Ви зможете перевірити цей вимір.
+Наша платформа має великий діапазон розмірів, та найбільша частина наших користувачів - люди, яким важко знаходити одяг чи викрійки в інших місцях. Тож, з одного боку, може здатися, що ми налаштовуємо себе на невдачу, порівнюючи вимірювання з набором більш-менш *стандартних* вимірювань. Але Ви знаєте своє тіло. Ви знаєте які з Ваших вимірів відрізняються від загальних розмірних таблиць. І це є лише підтвердженням правильного зняття мірок, якщо ми зауважимо їх відмінність. З іншого боку, якщо таке зауваження стосується виміру, який зазвичай збігається з розмірними таблицями - Ви зможете перевірити цей вимір.
 
-Last but not least, while we try to provide guidance about measurements to help spot mistakes, we never exclude anyone based on size or measurement. No matter what you throw at us, we will  draft a pattern that works for you, or (our software will) die trying.
+І останнє, але не менш важливе: хоча ми намагаємося надати рекомендації щодо вимірювань, щоб допомогти виявити помилки, ми ніколи нікого не виключаємо на основі розміру або вимірів. Незалежно від того, що ви нам кинете, ми розробимо шаблон, який буде працювати для вас, або (наше програмне забезпечення) помре, намагаючись.
 
-## Other changes
+## Інші зміни
 
- - We have extended our size ranges for our comparison views. Menswear sizes are now sampled from size 32 up to 48, while womenswear is sampled from size 28 up to 46.
- - We've made some changes to the defaults in the Simon pattern, based on our tests with Simone
- - We've added support for preloading models with breasts to our development environment for pattern designers
- - We've implemented fixes and improvements in our Jaeger, Bruce, Benajamin, Simon, Carlton, and Carlita patterns
- - We've added a bunch of missing images in the documentation, and [started an effort to make sure all options have an image to illustrate their purpose](https://github.com/freesewing/freesewing.org/issues/190).
+ - Ми розширили діапазон розмірів для наших порівняльних оглядів. Розміри чоловічого одягу тепер представлені від 32 до 48 розміру, а жіночого - від 28 до 46 розміру.
+ - Ми внесли деякі зміни до налаштувань за замовчуванням у шаблоні Simon на основі наших тестів з Simone
+ - Ми додали підтримку попереднього завантаження моделей з грудьми в наше середовище розробки для дизайнерів лекал
+ - Ми впровадили виправлення та покращення в наші шаблони Jaeger, Bruce, Benajamin, Simon, Carlton та Carlita
+ - Ми додали купу відсутніх зображень до документації, а [розпочали роботу над тим, щоб усі опції мали зображення, що ілюструють їхнє призначення](https://github.com/freesewing/freesewing.org/issues/190).
 
-More information is available [in the changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md).
+Більш детальна інформація доступна [в журналі змін](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md).
 
-We hope you enjoy this release, and please [stop by our chat room](https://discord.freesewing.org/) to share your thoughts, feedback, suggestions, or ideas. We'd love to hear from you 
+Ми сподіваємося, що вам сподобається цей випуск, і, будь ласка, [завітайте до нашого чату](https://discord.freesewing.org/) , щоб поділитися своїми думками, відгуками, пропозиціями чи ідеями. Ми будемо раді почути від вас 
 
 
 
