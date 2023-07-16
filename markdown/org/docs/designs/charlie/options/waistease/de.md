@@ -1,5 +1,5 @@
 ---
-title: "Waist ease"
+title: "Taillenzugabe"
 ---
 
 Steuert die Menge an Leichtigkeit in Ihrer Taille.
