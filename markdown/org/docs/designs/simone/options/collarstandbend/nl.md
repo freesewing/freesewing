@@ -1,5 +1,5 @@
 ---
-title: "Collar stand bend"
+title: "Kromming staander"
 ---
 
 ![Kromming staander](collarstandbend.svg)
