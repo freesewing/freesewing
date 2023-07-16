@@ -1,5 +1,5 @@
 ---
-title: "Strap length"
+title: "Länge des Riemens"
 ---
 
 Steuert die Riemenlänge.
@@ -12,4 +12,4 @@ Turn on paperless to see the length of the strap.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](hortensia_straplength_sample.svg "Effekt dieser Variable auf das Schnittmuster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](hortensia_straplength_sample.svg "Effekt dieser Option auf das Schnittmuster")
