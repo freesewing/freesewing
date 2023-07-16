@@ -3,10 +3,9 @@ author: "joostdecock"
 caption: "Cette image est probablement la seule chose dans le article que vous pourrez parcourir en diagonale"
 date: "2018-02-14"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/39f3d1e7320510b2dd12cc1bc2e58008263889f3-1920x1280.webp"
-intro: "Cet article de blog traite du Règlement Général sur la Protection de Données (RGPD) de l'Union Européenne (EU). Bien que je couvre les bases du RGPD, l'accent est mis sur la façon dont il impacte freesewing.org et ce que nous prévoyons de faire dans les 100 jours qui viennent avant l'entrée en vigueur du RGPD."
+intro: "Le Règlement Général sur la Protection des Données de l'Union Européenne: Notre plan de bataille."
 title: "Le Règlement Général sur la Protection des Données de l'Union Européenne: Notre plan de bataille."
 ---
-
 
 Cet article de blog traite du Règlement Général sur la Protection de Données (RGPD) de l'Union Européenne (EU). Bien que je couvre les bases du RGPD, l'accent est mis sur la façon dont il impacte freesewing.org et ce que nous prévoyons de faire dans les 100 jours qui viennent avant l'entrée en vigueur du RGPD.
 
@@ -16,7 +15,7 @@ Tout cela représente une sacré lecture, donc voici donc une table des matière
 
 J'ai une relation d'amour/haine avec l'Union européenne. J'adore ce qu'ils font et ce qu'ils défendent, je déteste la façon dont ils le font.
 
-![Je comprends totalement ce gars](rage-quit.gif)
+![Je comprends totalement ce gars](https://posts.freesewing.org/uploads/rage_quit_fff821e695.gif)
 
 Le RGPD ne fait pas exception. C'est un acte législatif important qui met la barre faute en matière de confidentialité en ligne ; ce qui est formidable. Mais alors qu'avançais dans la lecture à ce sujet, j'ai failli tout laisser tomber de rage car c'est un sacré boulot de bureaucrate !
 
@@ -103,7 +102,8 @@ Il s'avère que ce n'est pas le cas. Les données biométriques sont celles que 
 
 ### Collecte de données par consentement
 
-Pour collecter des données, vous avez besoin d'une fameuse *base légale pour le traitement des données*. Il existe différents types, mais celui qui s'applique à nous (et à la plupart des services en ligne) est **le consentement**.
+To collect data, you need a so-called *lawful basis for data processing*.  
+There are different types, but the one that applies to us (and to most online services) is **consent**.
 
 Dans ce scénario, votre base légale pour le traitement des données est que vous avez demandé à la personne de récupérer ses données et qu'elle vous les a données librement.
 
@@ -315,6 +315,5 @@ Il semble que nous ayons beaucoup de travail devant nous.
 Je pense personnellement que le RGPD est une bonne chose. Mais je veux entendre vos avis à propos des changements décrits dans ce billet de blog.
 
 Donc s'il vous plaît faites-nous part de vos commentaires et avis. Après tout, ce sont vos données dont nous parlons.
-
 
 
