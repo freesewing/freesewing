@@ -3,7 +3,7 @@ author: "joostdecock"
 caption: "Halten Sie diese mit Viren infizierten Tröpfchen mit unserer Florence-Gesichtsmaske in Schach"
 date: "2020-02-28"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d2235dcc38012e87ac402d43e7ae7084a7d7e9b4-1920x1272.jpg"
-intro: "Die Ausbreitung des Coronavirus Covid-19 scheint unerbittlich zu sein, und trotz der besten Versuche weltweit wird die Möglichkeit einer globalen Pandemie von Tag zu Tag realer. Das wirft die Frage auf, was wir tun können?"
+intro: "Wir haben gerade ein Gesichtsmaskenmuster wegen des Coronavirus veröffentlicht"
 title: "Wir haben gerade ein Gesichtsmaskenmuster wegen des Coronavirus veröffentlicht"
 ---
 
@@ -24,5 +24,4 @@ Damit soll lediglich verhindert werden, dass Sie das Coronavirus bekommen. Es gi
 Als ich nach Hause kam, machte ich mich also auf den Weg, um ein Schnittmuster für eine Gesichtsmaske zu erstellen. Der gesunde Menschenverstand sagt, dass es nicht schaden kann, und anscheinend steckt auch mehr dahinter. Nicht zuletzt möchte ich eine süße Gesichtsmaske, nicht eine der hässlichen, die man in den Nachrichten sieht.
 
 Bleiben Sie sicher da draußen.
-
 
