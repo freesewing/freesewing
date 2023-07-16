@@ -1,42 +1,42 @@
 ---
 author: "joostdecock"
-caption: "Your login background for October"
+caption: "Ваша історія входу в систему за жовтень"
 date: "2018-09-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b5a652991874d5eb4b6aa694653fcc483330a49d-1920x1280.jpg"
-intro: "Monthly roundup - September 2018: Shin, loads of JavaScript, and a long TODO list"
-title: "Monthly roundup - September 2018: Shin, loads of JavaScript, and a long TODO list"
+intro: "Щомісячний огляд - вересень 2018: Шин, багато JavaScript та довгий список справ"
+title: "Щомісячний огляд - вересень 2018: Шин, багато JavaScript та довгий список справ"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, і погляд на те, що чекає на нас у наступному місяці.
 
-## Looking back at September
+## Озираючись на вересень
 
-GitHub tells me that I've made 329 commits in 32 repositories during September. Most of that work is an investment in the future, and it will be a while before you'll be able to reap the benefits of it.
+GitHub показує, що протягом вересня я зробив 329 коммітів у 32 сховищах. Більша частина цієї роботи - це інвестиція в майбутнє, і пройде деякий час, перш ніж ви зможете пожинати її плоди.
 
-But not all, because between all the other stuff, I did find time to release the [Shin swim trunk pattern](/patterns/shin):
+Але не всі, бо між іншими справами я знайшла час випустити викрійку [плавок для гомілки](/patterns/shin):
 
-![Shin are swim trunks that I would qualify as menswear, but I see no reason women can't wear them](cover.jpg)
+![Shin - це плавки, які я б кваліфікував як чоловічий одяг, але не бачу причин, чому їх не можуть носити жінки](cover.jpg)
 
-### Pics or it didn't happen
+### Фото або цього не було
 
-Also new are a bunch of showcases, which is always nice, including this Jaeger jacket by [Paul](/users/Tiger751023):
+Також з'явилася купа нових вітрин, що завжди приємно, в тому числі цей піджак Jaeger від [Paul](/users/Tiger751023):
 
-![A Jaeger jacket by Paul](/showcase/linnen-jaeger-by-paul/showcase.jpg)
+![Куртка Jaeger від Павла](/showcase/linnen-jaeger-by-paul/showcase.jpg)
 
-If you're making our patterns, please don't hesitate to send in your pictures so we can add some more!
+Якщо ви створюєте наші викрійки, будь ласка, надсилайте свої фотографії, щоб ми могли додати ще більше!
 
-### Shadow boxing
+### Тіньовий бокс
 
-All the other work has mostly been JavaScript code as part of our future plans. I am aware that this kind of work is invisible to most of you (you don't stalk mmy on GitHub, do you?) and that the perception can be that not much is going on here.
+Вся інша робота в основному була JavaScript кодом в рамках наших майбутніх планів. Я усвідомлюю, що така робота невидима для більшості з вас (ви ж не переслідуєте mmy на GitHub, чи не так?). і може скластися враження, що тут мало що відбувається.
 
-The opposite is true. I am working harder on this project than ever, but for now it's mostly in the shadows.
+Все навпаки. Я працюю над цим проектом більше, ніж будь-коли, але поки що він здебільшого в тіні.
 
-To try shine some light on what's going on, I have created [a long todo-list](https://github.com/freesewing/todo), so if you'd like to help out (or if you're just curious what we're up to) go ahead and have a look.
+Щоб спробувати пролити світло на те, що відбувається, я створив [довгий список справ](https://github.com/freesewing/todo), , тож якщо ви хочете допомогти (або якщо вам просто цікаво, що ми робимо), заходьте і подивіться.
 
-Note that not all tasks are technical. We also need to pick pretty colors for the new patterns for example.
+Зверніть увагу, що не всі завдання є технічними. Нам також потрібно підібрати гарні кольори для нових візерунків, наприклад.
 
 
-## Looking ahead to October
+## Забігаючи наперед до жовтня
 
-I have two weeks of holiday in October, and I have promised myself I would (try to) put away my laptop and make some clothes. I'm curious to see how that goes.
+У мене два тижні відпустки в жовтні, і я пообіцяла собі, що (спробую) відкласти ноутбук і зшити собі одяг. Мені цікаво, що з цього вийде.
 
