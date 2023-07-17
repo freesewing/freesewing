@@ -1,5 +1,5 @@
 ---
-title: "Bow length"
+title: "Fliegenlänge"
 ---
 
 ![Fliegenlänge](bowlength.svg)

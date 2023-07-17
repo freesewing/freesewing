@@ -1,5 +1,5 @@
 ---
-title: "Sac à main Hortensia : Options de style"
+title: "Hortensia handbag: Design Options"
 ---
 
 <PatternOptions pattern='hortensia' />

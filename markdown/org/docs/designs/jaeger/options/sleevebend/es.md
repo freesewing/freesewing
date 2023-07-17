@@ -1,5 +1,5 @@
 ---
-title: "Sleeve bend"
+title: "Manga doblada"
 ---
 
 ![Manga doblada](sleevebend.svg)

@@ -1,5 +1,5 @@
 ---
-title: "Weitenzugabe Hüfte"
+title: "Zugabe Hüfte"
 ---
 
 ![Die Hüftleiste-Option auf Aaron](./hipsease.svg)

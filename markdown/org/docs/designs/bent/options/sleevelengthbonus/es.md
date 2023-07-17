@@ -1,5 +1,5 @@
 ---
-title: "Sleeve length bonus"
+title: "Longitud extra de manga"
 ---
 
 La cantidad para extender la manga más allá de la longitud de la manga en el bloque base.

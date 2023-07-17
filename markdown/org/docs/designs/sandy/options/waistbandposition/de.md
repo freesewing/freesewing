@@ -1,5 +1,5 @@
 ---
-title: "Waistband position"
+title: "Position des Taillenbundes"
 ---
 
 ![Position des Taillenbundes](waistbandposition.svg)

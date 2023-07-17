@@ -1,16 +1,17 @@
 ---
 maker: "Anneke Caramin"
 caption: "back view of Anneke's shiny black Sandy skirt"
-date: "2020-10-20"
+date: "20.10.2020"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f17b554dceedcfa01572346e5032e4836deb6f52-1080x1080.jpg"
 intro: "Read Anneke's extensive 2018 blogpost about her new Sandy skirt , including how she added pockets and a curved waistband."
-title: "[auf Englisch] Anneke's shiny black Sandy circle skirt"
-designs: ["sandy"]
+title: "Anneke's shiny black Sandy circle skirt"
+designs:
+  - "sandy"
 ---
 
 Read Anneke's extensive 2018 [blogpost about her new Sandy skirt](http://www.annekecaramin.com/2018/08/garbage-dragon.html), including how she added pockets and a curved waistband.
 
-Other views:
+Andere Ansichten:
 
 ![full length of the outfit](https://posts.freesewing.org/uploads/sandy_by_anneke_front_fulllength_76df5afe47.jpg "full length of the outfit")
 

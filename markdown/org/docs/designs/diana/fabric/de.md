@@ -1,5 +1,5 @@
 ---
-title: "Diana, das Wasserfallshirt: Stoffoptionen"
+title: "Diana draped top: Fabric Options"
 ---
 
 Dies funktioniert am besten in einem dieser beiden Szenarien:

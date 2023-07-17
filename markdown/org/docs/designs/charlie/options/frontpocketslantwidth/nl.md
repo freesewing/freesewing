@@ -1,5 +1,5 @@
 ---
-title: "Front pocket slant width"
+title: "Schouderstuk voorzak breedte"
 ---
 
 Bepaalt de breedte waarmee de voorste steekzak in het voorpand snijdt.

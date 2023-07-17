@@ -3,10 +3,9 @@ author: "joostdecock"
 caption: "Dieser lila Huey Hoodie ist der erste seiner Art. Nun sind Sie an der Reihe"
 date: "2017-10-21"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3be185a211486823b678af97710274804fe86dcf-2048x2048.jpg"
-intro: "Willkommen bei Huey , dem jüngsten Mitglied in unserer Schnittmusterfamilie. Huey ist ein Hoodie mit Reißverschluss und mit optionalen Taschen auf der Vorderseite. Ich habe mir selbst einen gemacht -- den da auf dem Bild da oben -- und hab ihn seither nicht mehr ausgezogen."
+intro: "Der Hoodie \"Huey\" ist jetzt als Beta-Version erhältlich. Was die Frage aufwirft, was es bedeutet, wenn ein Schnittmuster in der Beta-Phase ist?"
 title: "Der Hoodie \"Huey\" ist jetzt als Beta-Version erhältlich. Was die Frage aufwirft, was es bedeutet, wenn ein Schnittmuster in der Beta-Phase ist?"
 ---
-
 
 Willkommen bei [Huey](/patterns/huey), dem jüngsten Mitglied in unserer Schnittmusterfamilie. Huey ist ein Hoodie mit Reißverschluss und mit optionalen Taschen auf der Vorderseite. Ich habe mir selbst einen gemacht -- den da auf dem Bild da oben -- und hab ihn seither nicht mehr ausgezogen.
 
@@ -42,5 +41,4 @@ In Zukunft werde ich so bald wie möglich Schnittmuster veröffentlichen und an 
 Ich halte das für einen guten Weg und halte mich an das Mantra *früh veröffentlichen, oft veröffentlichen* von Open-Source-Software.
 
 Wenn Sie der Meinung sind, dass das eine schlechte (oder sehr gute) Idee ist, teilen Sie mir das bitte in den Kommentaren unten mit.
-
 

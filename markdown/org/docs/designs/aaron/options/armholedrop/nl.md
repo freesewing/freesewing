@@ -1,5 +1,5 @@
 ---
-title: "Armsgat verlaging"
+title: "Diepte armsgat"
 ---
 
 ![De diepte van het armsgat bij Aaron](./armholedrop.svg)

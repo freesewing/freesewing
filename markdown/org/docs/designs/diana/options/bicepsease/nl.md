@@ -1,5 +1,5 @@
 ---
-title: "Biceps ease"
+title: "Overwijdte biceps"
 ---
 
 ![De optie voor overwijdte biceps bij Diana](./bicepsease.svg)

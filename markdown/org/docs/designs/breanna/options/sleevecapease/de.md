@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap ease"
+title: "Armkugel Zugabe"
 ---
 
 Bestimmt die Menge der Zugabe an der Armkugel.
@@ -15,4 +15,4 @@ Für leichten Stoff oder Stricken wollen Sie wenig bis keine Ärmel leicht. Für
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](breanna_sleevecapease_sample.svg "Effekt dieser Variable auf das Schnittmuster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](breanna_sleevecapease_sample.svg "Effekt dieser Option auf das Schnittmuster")

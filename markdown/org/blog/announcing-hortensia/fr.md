@@ -3,7 +3,7 @@ author: "joostdecock"
 caption: "Un exemple de Hortensia fait par le designer"
 date: "2021-02-13"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/01f416518b5bf8fb75dcc8ae3ab2691d5532dd65-2000x1500.jpg"
-intro: "Je suis heureux d'annoncer la disponibilité immédiate de notre dernier modèle FreeSewing : le sac à main Hortensia ."
+intro: "I'm happy to announce the immeadiate availability of our latest FreeSewing pattern: the Hortensia handbag ."
 title: "Dites bonjour à notre dernier modèle : le sac à main Hortensia"
 ---
 
@@ -22,10 +22,9 @@ Cela fait de Hortensia un grand projet à faire en cadeau, car il n'y a pas beso
 
 <Tip>
 
-##### Now show us yours
+##### Maintenant, montrez-nous le vôtre
 
-If you do make a Hortensia, do [send us pictures](https://discord.freesewing.org/).
+Si vous faites une Hortensia, [envoyez-nous des photos](https://discord.freesewing.org/).
 
 </Tip>
-
 

@@ -1,5 +1,5 @@
 ---
-title: "Waist height"
+title: "Altura de la muñeca"
 ---
 
 Controla la altura de la cintura, donde:

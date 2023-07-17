@@ -1,5 +1,5 @@
 ---
-title: "Weitenzugabe Hüfte"
+title: "Zugabe Hüfte"
 ---
 
 ![Die Hüfte Leichtigkeit auf Diana](./hipsease.svg)

@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap Q3 offset"
+title: "Mouwkop Q3 offset"
 ---
 
 ![De compensatie in het derde kwartaal van de mouwkop](./sleevecapq3offset.svg)

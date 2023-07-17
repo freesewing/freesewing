@@ -1,5 +1,5 @@
 ---
-title: "Gilet Aaron : Instructions de coupe"
+title: "Wahid waistcoat: Cutting Instructions"
 ---
 
 - **Tissu principal**

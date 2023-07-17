@@ -3,10 +3,9 @@ author: "joostdecock"
 caption: "Die Schnittmusterdarstellung für Penelope"
 date: "2018-06-29"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/59646d7171bb8b18df952a1c9547cd212451de79-1920x1080.jpg"
-intro: "Ich freue mich sehr die sofortige Verfügbarkeit des Bleistiftrock Penelope in der Beta-Version bekanntzugeben."
+intro: "I'm very happy to announce the immeadiate availability of the Penelope Pencil Skirt , out in beta today."
 title: "Ankündigung des Penelope Bleistiftrockes; Und unsere Damenmode-Roadmap"
 ---
-
 
 Ich freue mich sehr die sofortige Verfügbarkeit des [Bleistiftrock Penelope](/patterns/penelope)in der Beta-Version bekanntzugeben.
 
@@ -29,5 +28,4 @@ Parallel dazu werde ich mit [@AnnekeCaramin](/users/annekecaramin) an einem weib
 Sobald wir diesen Grundschnitt haben, können Sie davon ausgehen, dass wir ihn in einen Haufen Kleider und Oberteile umwandeln.
 
 Und wie immer, wenn Sie über Fähigkeiten im Bereich Schnittdesign verfügen, sich aber von der Plattform etwas eingeschüchtert fühlen, kontaktieren Sie uns, um zu sehen, ob wir unsere Kräfte bündeln können, um Ihre Ideen zu verwirklichen.
-
 

@@ -1,5 +1,5 @@
 ---
-title: "Cuff ease"
+title: "Overwijdte manchet"
 ---
 
 De hoeveelheid overwijdte aan je manchet/pols.

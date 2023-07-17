@@ -1,5 +1,5 @@
 ---
-title: "Waist dart size"
+title: "Grootte neep taille"
 ---
 
 The size of the back waist dart

@@ -3,12 +3,12 @@ author: "joostdecock"
 caption: "Ce message traite principalement de notre travail sur la révélation progressive. De plus : trois nouveaux modèles !"
 date: "2019-10-06"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/52db6852590a15208dace4a16a6a1c824037e400-2000x1500.jpg"
-intro: "Nous venons juste de publier FreeSewing v2.1  🎉"
+intro: "Nous venons juste de publier FreeSewing v2.1 <unk> 🎉"
 title: "FreeSewing v2.1 : Trois nouveaux modèles, un mode expert et l'aide aux mesures"
 ---
 
 
-Nous venons juste de publier FreeSewing v2.1  🎉
+Nous venons juste de publier FreeSewing v2.1 <unk> 🎉
 
 ## Rencontrez Pénelope, Waralee et Simone
 
@@ -41,7 +41,7 @@ Bien que nous n'en soyons certainement pas encore là, nous avons fait des progr
 
 Hormis les options avancées de patron, le mode export révèle également les paramètres de brouillon moins utilisés comme la possibilité de changer la langue, l'unité, les détails, les marges et le contenu de votre brouillon.
 
-![Mode avancé](recreate.png)
+![Mode avancé](https://posts.freesewing.org/uploads/recreate_a6e2f9c4d6.png)
 
 <Note> 
 
@@ -61,7 +61,7 @@ Vous pouvez le voir dans la capture d'écran ci-dessus.
 
 Nous avons ajouté quelques indicateurs pour vous aider à repérer des erreurs ou des problèmes dans vos mesures. Vos modèles afficheront maintenant une représentation graphique de vos mensurations, ce qui vous permettra de repérer les erreurs potentielles.
 
-![Une représentation graphique des mensurations de votre modèle](model.png)
+![Une représentation graphique des mensurations de votre modèle](https://posts.freesewing.org/uploads/model_c3fa8fc50c.png)
 
 De plus, nous vous présentons une estimation de vos différentes mensurations (basées sur votre circonférence du cou) comparées à la valeur réelle. Si la différence s'accentue, nous attirerons votre attention sur ce point.
 
@@ -81,7 +81,9 @@ Enfin et surtout, alors que nous essayons de fournir des conseils sur les mesure
 
 Plus d'informations sont disponibles [dans le suivi des modifications](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md).
 
-We hope you enjoy this release, and please [stop by our chat room](https://discord.freesewing.org/) to share your thoughts, feedback, suggestions, or ideas. Nous aimerions connaître votre avis. 
+Nous espérons que vous apprécierez cette version, et [passerez dans notre salon de discussion](https://discord.freesewing.org/) pour partager vos pensées, vos commentaires, vos suggestions ou vos idées. Nous aimerions connaître votre avis. 
+
+
 
 
 

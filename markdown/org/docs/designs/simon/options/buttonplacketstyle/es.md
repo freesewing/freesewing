@@ -1,5 +1,5 @@
 ---
-title: "Button placket style"
+title: "Estilo de la vista de los botones"
 ---
 
 ![Estilo de la vista de los botones](buttonplacketstyle.svg)

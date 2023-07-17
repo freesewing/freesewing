@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap Q2 offset"
+title: "Offset der Armkugel Q2"
 ---
 
 ***

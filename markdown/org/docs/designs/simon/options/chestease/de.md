@@ -1,8 +1,8 @@
 ---
-title: "Bequemlichkeitszugabe Brust"
+title: "Brustumfangszugabe"
 ---
 
-![Brustzugabe](chestease.svg)
+![Brustumfangszugabe](chestease.svg)
 
 Wie viel Platz möchtest du an der Brust haben?
 

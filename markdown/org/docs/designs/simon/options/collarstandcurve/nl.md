@@ -1,5 +1,5 @@
 ---
-title: "Collar stand curve"
+title: "Curve staander"
 ---
 
 ![Curve staander](collarstandcurve.svg)

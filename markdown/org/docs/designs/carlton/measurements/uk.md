@@ -1,5 +1,5 @@
 ---
-title: "Карлтоновий плащ: Необхідні мірки"
+title: "Carlton coat: Required Measurements"
 ---
 
 <PatternMeasurements pattern='carlton' />

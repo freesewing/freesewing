@@ -4,7 +4,7 @@ caption: "Did you know that Sandy was named after Olivia Newton-John's character
 date: "2018-08-01"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/dc69133dd70791871c13267e14c24f70dc797693-1920x1280.jpg"
 intro: "Ladies and gentlemen --- because who says men can't wear skirts --- I am happy to announce the immeadiate availability of our latest freesewing pattern: the Sandy circle skirt ."
-title: "Announcing Sandy, a circle skirt designed by @AlfyLyr [No traducido]"
+title: "Announcing Sandy, a circle skirt designed by @AlfyLyr"
 ---
 
 Ladies and gentlemen --- because who says men can't wear skirts --- I am happy to announce the immeadiate availability of our latest freesewing pattern: [the Sandy circle skirt](/patterns/sandy).

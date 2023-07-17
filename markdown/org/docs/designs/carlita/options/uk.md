@@ -1,5 +1,5 @@
 ---
-title: "Пальто 'Карліта': Варіанти дизайну"
+title: "Carlita coat: Design Options"
 ---
 
 <PatternOptions pattern='carlita' />

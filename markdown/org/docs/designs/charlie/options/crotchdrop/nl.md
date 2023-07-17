@@ -1,5 +1,5 @@
 ---
-title: "Crotch drop"
+title: "Diepte kruis"
 ---
 
 Bepaalt hoeveel het kruis verlaagd is.

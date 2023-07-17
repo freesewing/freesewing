@@ -1,5 +1,5 @@
 ---
-title: "Sleeve length bonus"
+title: "Bonus mouwlengte"
 ---
 
 This option controls how long to lengthen the sleeves by.

@@ -7,7 +7,6 @@ intro: "Dames en heren – want wie zegt dat heren geen rokken kunnen dragen? �
 title: "Verwelkom Sandy, een cirkelrok ontworpen door @AlfyLyr"
 ---
 
-
 Dames en heren – want wie zegt dat heren geen rokken kunnen dragen? – het doet me plezier om jullie te kunnen melden dat ons nieuwste FreeSewing-patroon onmiddellijk beschikbaar is: [de Sandy-cirkelrok](/patterns/sandy).
 
 Sandy is ontworpen door [@AlfaLyr](/users/alfalyr) die er echt een hoogvlieger van heeft gemaakt. Dit betekent ook dat Sandy een patroon is dat uit de FreeSewing-community voortkomt, en dat vind ik echt geweldig.
@@ -18,6 +17,6 @@ Zoals wel meer patronen hier bij FreeSewing, krijg je bij Sandy een hele hoop op
 
 Er is een optie voor hoe groot je de cirkel wil hebben (een halve? een volle? nog iets anders?), hoe lang je de rok wil, de vorm en overlapping van de tailleband, of je plooien wil, hoe diep je zoom wordt, enzovoort.
 
-Volgens mij wordt dit echt een succesverhaal. Dus, hup! [Trakteer jezelf op een nieuwe rok](/draft/sandy) en laat aan [@AlfyLyr](/users/alfalyr) weten wat het resultaat is.
-
+Ik zie dit wel een succesverhaal worden.  
+Dus ga en [trakteer jezelf op een nieuwe rok](/draft/sandy), en laat [@AlfyLyr](/users/alfalyr) weten hoe het voor je uitpakt.
 

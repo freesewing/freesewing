@@ -1,31 +1,31 @@
 ---
-title: "Manteau Carlita : Instructions de coupe"
+title: "Carlita coat: Cutting Instructions"
 ---
 
 <Note>
 
-Certaines parties doivent être esquissées à partir des pièces existantes. La manière de les rédiger est indiquée dans les [instructions] (/docs/patterns/carlita/instructions).
+Certain parts have to be drafted off of the existing parts. La manière de les rédiger est indiquée dans les [instructions] (/docs/patterns/carlita/instructions).
 
 </Note>
 
 ### Matériaux
 
 - **Tissu principal**
-  - Couper **2 parties frontales**
+  - Cut **2 Front** parts
   - Couper **2 pièces latérales**
-  - Couper **2 parties avant **
+  - Cut **2 Front facing** parts
   - Couper **2 parties** arrières
-  - Couper **2 parties de manche supérieure**
-  - Couper **2 parties du manche inférieure**
-  - Couper **2 parties de queue**
+  - Cut **2 topsleeve** parts
+  - Cut **2 undersleeve** parts
+  - Cut **2 tail** parts
   - Couper **4 parties** de ceinture
-  - Couper **2 pièces du support de collier**
-  - Couper **2 parties de col** sur le pli ou Couper le col supérieur sur le pli et le col inférieur dans le biais
-  - Couper **2 parties de manche**
-  - Couper **2 pièces de poche**
-  - Couper **4 rabats de poche**
-  - Couper **2 parmentures de poche de poitrine**
-  - Couper ** 2 parmentures de poche intérieure**
+  - Cut **2 Collar stand** parts
+  - Cut **2 collar** parts on the fold or Cut the upper collar on the fold and the under collar on the bias
+  - Cut **2 cuffFacing** parts
+  - Cut **2 Pocket** parts
+  - Cut **4 pocketFlap** parts
+  - Cut **2 chestPocketWelt** parts
+  - Cut **2 innerPocketWelt** parts
 
 <Note>
 
@@ -34,29 +34,29 @@ Si votre tissu principal est assez léger et fragile, vous devrez peut-être int
 </Note>
 
 - **Tissu de doublure**
-  - Couper **2 pièces de la doublure avant**
+  - Cut **2 Front lining** parts
   - Couper **2 pièces latérales**
   - Couper **2 parties** arrières
-  - Couper **2 parties de manche supérieure**
-  - Couper **2 parties du manche inférieure**
-  - Couper **2 parties de queue**
-  - Couper ** 2 sacs de poche intérieure**
+  - Cut **2 topsleeve** parts
+  - Cut **2 undersleeve** parts
+  - Cut **2 tail** parts
+  - Cut **2 innerPocketBag** parts
   - Cut **1 innerPocketTab** parts
-  - Couper **2 doublures de poche **
-  - Couper **2 sacs de poche de poitrine**
-- **Toile pour cheveux légers à moyens**
-  - Couper **2 parties frontales**
+  - Cut **2 pocketLining** parts
+  - Cut **2 chestPocketBag** parts
+- **Light to Mediumweight Hair Canvas**
+  - Cut **2 Front** parts
   - Couper **2 pièces latérales**
-  - Couper **1 Pièce de collier**
-  - Couper **2 parties de col** dans le biais et coudre ensemble
-  - Couper **2 parties de manche**
-  - Couper **2 rabats de poche**
-  - Couper **2 parmentures de poche de poitrine**
-  - Découper **2 parties de la ceinture de poche intérieure**
-- **Toile lourde à cheveux**
+  - Cut **1 Collar stand** parts
+  - Cut **2 collar** parts on the bias and seam together
+  - Cut **2 cuffFacing** parts
+  - Cut **2 pocketFlap** parts
+  - Cut **2 chestPocketWelt** parts
+  - Cut **2 innerPocketWelt** parts
+- **Heavyweight Hair Canvas**
   - Découpage de **2 parties de l'épaule avant**
   - Découpe de **2 parties de l'épaulement latéral**
-  - Découpage **2 parties de l'épaule arrière**
+  - Cut **2 Back shoulder** parts
 
 <Note>
 

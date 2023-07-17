@@ -1,5 +1,5 @@
 ---
-title: "Блокування тіла Бріанни"
+title: "Викрійка-основа Бреанна"
 ---
 
 <PatternDocs pattern='breanna' />

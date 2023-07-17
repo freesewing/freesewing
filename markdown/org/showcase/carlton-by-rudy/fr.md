@@ -5,7 +5,8 @@ date: "2021-02-26"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4aef096adffa48aa1d8b1cb45fb2d417993eb707-613x613.jpg"
 intro: "Ce manteau élégant Carlton a été fait par Rudy qui a partagé :"
 title: "Manteau Carlton par Rudy"
-designs: ["carlton"]
+designs:
+  - "carlton"
 ---
 
 Ce manteau élégant Carlton a été fait par Rudy qui a partagé :
@@ -16,7 +17,7 @@ Ce manteau élégant Carlton a été fait par Rudy qui a partagé :
 
 ![Vue boutonnée](https://posts.freesewing.org/uploads/carlton_by_rudy_carltonrudy3_dfe71f082f.jpg "Vue boutonnée")
 
-![Vue du dos](https://posts.freesewing.org/uploads/carlton_by_rudy_carltonrudy4_09a14b90d7.jpg "Vue du dos")
+![Vue du dos](https://posts.freesewing.org/uploads/carlton_by_rudy_carltonrudy4_09a14b90d7.jpg)
 
 <Note>
 

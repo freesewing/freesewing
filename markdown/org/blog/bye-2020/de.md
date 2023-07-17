@@ -4,7 +4,7 @@ caption: "A photo by <a href='https://unsplash.com/@onevagabond'>Paulo Silva</a>
 date: "2021-01-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ffacb5c6384f250ad7cd3cb50b5ed4fdeff33ae6-1920x1280.jpg"
 intro: "Aren't we all glad 2020 is over?"
-title: "The year 2020 was something alright [Nicht übersetzt]"
+title: "The year 2020 was something alright"
 ---
 
 
@@ -12,16 +12,13 @@ title: "The year 2020 was something alright [Nicht übersetzt]"
 
 Aren't we all glad 2020 is over?
 
-Realistically, at least some of you, or your loved ones, got caught in the absolute gut-punch that is the COVID-19 pandemic. 
-Either indirectly through lost income or other practical concerns, or directly by battling the virus itself.
+Realistically, at least some of you, or your loved ones, got caught in the absolute gut-punch that is the COVID-19 pandemic. Either indirectly through lost income or other practical concerns, or directly by battling the virus itself.
 
-I can only offer my sympathy, and the belief that things will get better. 
-So hang in there, and let me briefly take your mind of things by sharing some good news against the bleak backdrop of the annus horribilis that 2020 turned out to be.
+I can only offer my sympathy, and the belief that things will get better. So hang in there, and let me briefly take your mind of things by sharing some good news against the bleak backdrop of the annus horribilis that 2020 turned out to be.
 
 ##### The face mask tsunami
 
-FreeSewing found itself — absolutely unexpected I might add — under the glaring spotlight of international media this year. 
-A tidal wave of attention rolled over us, and while the peak lasted only a good month, the repercussions and long tail of these events have shaped our entire year.
+FreeSewing found itself — absolutely unexpected I might add — under the glaring spotlight of international media this year. A tidal wave of attention rolled over us, and while the peak lasted only a good month, the repercussions and long tail of these events have shaped our entire year.
 
 It all started in February when COVID-19 was starting to rear its ugly head in Europe and the supplies of personal protective equipment (PPE) started dwindling. It seemed that face masks were going to be a big factor in trying to slow down the spread of this disease, but they were getting harder to come by every day.
 
@@ -31,7 +28,7 @@ We did not really want to be in the center of this, we just wanted to help peopl
 
 At that time, there were few patterns available for face masks, and soon enough a long list of other publications started running links to our pattern and website. When I found [the instruction video that I made for the pattern staring back at me on the website of the New York Times](https://www.nytimes.com/2020/03/31/opinion/coronavirus-n95-mask.html), it was a veritable oh-crap moment. Sure enough, in the month following the Forbes publication, a million people descended on freesewing.org.
 
-The sudden jump in visitors and users (not to mention patrons) made it clear that I am a bottleneck of the project, and so in the latter half of the year we've set out to [try and remedy that with some community building](/blog/a-call-for-help/). On one hand it's slow going, but on the other hand if I look at how vibrant the FreeSewing community is today, it almost beggars belief that we did all of this throughout 2020. We now have regular [contributor calls](/community/calls/), and [our chat rooms are never empty](https://discord.freesewing.org/).
+The sudden jump in visitors and users (not to mention patrons) made it clear that I am a bottleneck of the project, and so in the latter half of the year we've set out to [try and remedy that with some community building](/blog/a-call-for-help/). On one hand it's slow going, but on the other hand if I look at how vibrant the FreeSewing community is today, it almost beggars belief that we did all of this throughout 2020. Wir haben jetzt regelmäßige [Mitwirkendentreffen](/community/calls/), und [unsere Chaträume sind nie leer](https://discord.freesewing.org/).
 
 I hope to continue to fade into the background and let other people carry some of the torches. Not because I don't want to work on this anymore, but because I want to grow FreeSewing beyond what I can do on my own.
 

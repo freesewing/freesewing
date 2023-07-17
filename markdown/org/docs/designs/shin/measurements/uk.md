@@ -1,5 +1,5 @@
 ---
-title: "Плавки для гомілки: Необхідні виміри"
+title: "Shin swim trunks: Required Measurements"
 ---
 
 <PatternMeasurements pattern='shin' />

@@ -1,159 +1,138 @@
 ---
 author: "joostdecock"
-caption: "Your new login background for the month of January"
+caption: "Je nieuwe inlogachtergrond voor de maand januari"
 date: "2017-12-31"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7203a0f33c8c3d1cd6abdbca5c0fd85f44db3893-2000x1330.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - December 2017: Patrons, Bent, Carlton, Florent, and the looming Inkscape issue [Niet vertaald]"
+intro: "Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt."
+title: "Maandelijks overzicht - december 2017: Patrons, Bent, Carlton, Florent en de dreigende Inkscape-kwestie"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt.
 
-## Looking back at December
-As you may or may not know, for freesewing the year starts on December 10th.
-This way, I only have to write this blog post on New Year's eve, rather than roll out a bunch of new changes.
+## Terugblik op december
+Zoals je misschien wel of niet weet, begint het jaar voor freesewing op 10 december. Op deze manier hoef ik deze blogpost alleen op oudejaarsavond te schrijven, in plaats van een heleboel nieuwe veranderingen door te voeren.
 
-What changes? I'm glad you asked:
+Wat verandert er? Ik ben blij dat je het vraagt:
 
-### We have patrons now
+### We hebben nu beschermheren
 
-This was really big news for me, and something that we had been working on behind the scenes for a good while.
-But 3 weeks ago, we finally unveiled our new patron system.
+Dit was echt groot nieuws voor mij en iets waar we achter de schermen al een tijdje aan werkten. Maar 3 weken geleden onthulden we eindelijk ons nieuwe patronensysteem.
 
-The [announcement blog post](/blog/calling-all-patrons/) has all the details, plus an open-hearted look at the
-financial side of this project. If you haven't read it yet, I recommend it.
+</a> De blogpost
 
-![Spreading the word about our new patron approach](https://posts.freesewing.org/uploads/patrons_ig_bad479bb83.png)
+voor de aankondiging bevat alle details, plus een openhartige blik op de financiële kant van dit project . Als je het nog niet gelezen hebt, raad ik het je aan.</p> 
 
+![Informatie verspreiden over onze nieuwe mecenaatsbenadering](https://posts.freesewing.org/uploads/patrons_ig_bad479bb83.png)
 
-The gist of it is that we are building a bedrock of loyal supporters to ensure a 
-sustainable future for freesewing.org, our code, our patterns, and our community.
+De essentie is dat we een basis van trouwe supporters opbouwen om een duurzame toekomst voor freesewing.org, onze code, onze patronen en onze gemeenschap te garanderen.
 
-These people are our Patrons, and they support us with a small monthly contribution.
-We have three tiers, and they all come with their own prices and perks. You can find all the info
-on [the patrons sign-up page](/patrons/join).
+Deze mensen zijn onze Patrons en zij steunen ons met een kleine maandelijkse bijdrage. We hebben drie niveaus en ze hebben allemaal hun eigen prijzen en voordelen. Je kunt alle informatie vinden op [de aanmeldpagina voor patroons](/patrons/join).
 
-We are 3 weeks in now, and so far [25 people](/patrons) have shown their support for this project by becoming a patron.
+We zijn nu 3 weken bezig en tot nu toe hebben [25 mensen](/patrons) hun steun betuigd aan dit project door beschermheer te worden.
 
-Needless to say, this is truly wonderful news that we're all very excited about.
+Onnodig te zeggen dat dit echt geweldig nieuws is waar we allemaal erg enthousiast over zijn.
 
 
-### A logo tweak
 
-The roll out of our patron system had an unforeseen side-effect: We needed to simplify the freesewing logo a bit 
-so we could order all that swag with the logo on it.
 
-![The new logo](https://posts.freesewing.org/uploads/logo_cb4d9e16ca.svg)
-![The old logo](https://posts.freesewing.org/uploads/old_logo_flag_cbfc5a5ff1.png)
+### Een logo tweak
 
-Turns out there's a limit to the amount of detail you can get embossed into jeans rivets or buttons, or woven into labels.
-(that's just some of the swag our patrons get).
+De uitrol van ons patronensysteem had een onvoorzien neveneffect: We moesten het logo van Freesewing een beetje vereenvoudigen zodat we al die swag met het logo erop konden bestellen.
 
-So, we've streamlined the logo a bit. It's been on the site and our social media accounts since December 10th, but 
-we hadn't updated our auto-generated avatars yet. That's something we've managed to squeeze in in the last hours of 
-December (and the year) so that's good too.
+![Het nieuwe logo](https://posts.freesewing.org/uploads/logo_cb4d9e16ca.svg) ![Het oude logo](https://posts.freesewing.org/uploads/old_logo_flag_cbfc5a5ff1.png)
 
-### New patterns
+Het blijkt dat er een grens is aan de hoeveelheid details die je in reliëf in jeansklinknagels of -knopen kunt laten aanbrengen of in labels kunt verweven. (dat is slechts een greep uit de swag die onze klanten krijgen).
 
-We've had three (yes 3) pattern releases in December. 
+Dus we hebben het logo een beetje gestroomlijnd. Het staat al sinds 10 december op de site en onze social media accounts, maar we hadden onze automatisch gegenereerde avatars nog niet bijgewerkt. Dat is iets wat we in de laatste uren van december (en het jaar) hebben weten te proppen, dus dat is ook goed.
 
-[Florent](/patterns/florent) is a flat cap pattern that was contributed by 
-[Quentin](/users/ptzcb). The [announcement blog post](/blog/florent-flat-cap-beta/) has all the details.
 
-Then later this month, we published [Carlton](/patterns/carlton) and [Bent](/patterns/bent), the block it's based on.
-I've worked with [Anneke](/showcase/maker/annekecaramin) to make this pattern happen, and a female version of the coat is coming. 
-You know what, you should probably read all about it [in this blog post](/announcing-carlton-and-bent/).
 
-### Model name and draft reference are now printed on every pattern part
+### Nieuwe patronen
 
-We got a request to add the model and draft info to the printed pattern. People who were using a given pattern
-for different people (imagine making a hoodie for yourself and your partner) got confused about which parts belonged to which draft.
+We hebben drie (jawel 3) patroonreleases gehad in december. 
 
-That seemed like a good idea to us, so we've added this info to the patterns. If you have an
-older draft in your account, you can simply re-draft it to update it.
+[Florent](/patterns/florent) is een patroon voor een platte pet dat is gemaakt door [Quentin](/users/ptzcb). De [aankondigingsblogpost](/blog/florent-flat-cap-beta/) bevat alle details.
 
-### Data export
+Later deze maand publiceerden we [Carlton](/patterns/carlton) en [Bent](/patterns/bent), het blok waarop het is gebaseerd. Ik heb samengewerkt met [Anneke](/showcase/maker/annekecaramin) om dit patroon te maken, en er komt een vrouwelijke versie van de jas aan. Weet je wat, je moet er waarschijnlijk alles over lezen [in deze blogpost](/announcing-carlton-and-bent/).
 
-We've grouped a few harder to find pages in a new [Tools](/tools/) entry in the account section of the menu.
 
-It contains a link to our RSS feed of the blog, our on-demand tiler, and a link to remove your account,
-but none of those are new, we've just grouped them so they'd be easier to find.
 
-What is new is the ability to export all the data we have on file for you.
+### Modelnaam en ontwerpreferentie worden nu op elk patroondeel afgedrukt
 
-This work is in preparation of the changes we'll be making next month, which brings me to:
+We kregen een verzoek om het model en de ontwerpinfo toe te voegen aan het geprinte patroon. Mensen die een bepaald patroon voor verschillende mensen gebruikten (stel je voor dat je een hoodie voor jezelf en je partner maakt) raakten in de war over welke delen bij welk ontwerp hoorden.
 
-## Looking ahead to January
+Dat leek ons een goed idee, dus we hebben deze informatie toegevoegd aan de patronen. Als je een oudere draft op je account hebt staan, kun je die gewoon opnieuw aanmaken om hem bij te werken.
 
-There's new patterns in the pipeline, but I'm not ready to commit to a deadline for these yet, mostly because
-we have a bunch of other stuff on our plate. Including:
 
-### Open data and privacy talk
 
-We had a bit of a debate about whether or not we should publish anonymized measurements data here at freesewing.
+### Gegevensexport
 
-I won't repeat everything here, but [our tweet](https://twitter.com/j__st/status/941586171158777856)
-and [Instagram post](https://www.instagram.com/p/Bct2jUEnuS9/) on the topic get a lot of responses.
+We hebben een paar moeilijker te vinden pagina's gegroepeerd in een nieuw item [Tools](/tools/) in het accountgedeelte van het menu.
 
-A vast majority of people supports this idea, and as such we have plans to move ahead with it.
-However, if we do this, we want to do it right and completely in the open. 
-So expect a blog post on the matter shortly.
+Het bevat een link naar onze RSS-feed van de blog, onze tegelzetter op aanvraag en een link om je account te verwijderen, maar geen van deze zijn nieuw, we hebben ze gewoon gegroepeerd zodat ze makkelijker te vinden zijn.
 
-The questions that came up as we were discussing the possibility of publishing this data tend to 
-revolve around privacy. We are --- and remain --- committed to protecting the privacy or all
-our users and visitors, and have written about 
-[the choices we have made to guarantee your privacy](/blog/privacy-choices/).
+Nieuw is de mogelijkheid om alle gegevens te exporteren die we voor je hebben opgeslagen.
 
-Thinking about these issues made us realize that we want to provide a more iron-clad 
-guarantee than a blog post. So, we will draft and publish a privacy notice in line
-with the upcoming GDPR.
+Dit werk is ter voorbereiding op de veranderingen die we volgende maand gaan doorvoeren, en dat brengt me bij:
 
-Don't know what GDPR is? Good. Keep reading.
 
-### GDPR compliance
 
-The GDPR is the [General Data Protection Regulation](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) 
-of the European Union.  It replaces the *Data Protection Directive* and is a more ambitious piece of
-data protection legislation. 
+## Vooruitkijken naar januari
 
-The GDPR will become active in May 2018, and by that time, freesewing will be ready for it. 
-Specifically, we will publish a privacy notice that outlines exactly what happens to your data,
-and we will make certain that all your rights are respected.
+Er zitten nieuwe patronen in de pijplijn, maar ik wil me nog niet vastleggen op een deadline, vooral omdat we op nog een heleboel andere dingen op ons bordje hebben liggen. Inclusief:
 
-We are still planning how exactly we will tackle this, and for the most part, these will be cosmetic changes
-and that won't change anything about freesewing as such.
 
-But we value your privacy, and we want to practice what we preach, so we'll be making sure to do what's right.
 
-### Core issue #204 - The Inkscape default units quandary
+### Gesprek over open gegevens en privacy
 
-Under the heading *Important changes* the 
-[release notes for Inkscape 
-version 0.92](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.92#Important_changes) list:
+We hebben een beetje gediscussieerd over de vraag of we wel of niet geanonimiseerde meetgegevens moeten publiceren hier op freesewing.
 
-> The default resolution was changed from 90dpi to 96dpi, to match the CSS standard. 
+Ik zal hier niet alles herhalen, maar [onze tweet](https://twitter.com/j__st/status/941586171158777856) en [Instagram post](https://www.instagram.com/p/Bct2jUEnuS9/) over dit onderwerp krijgen veel reacties.
 
-This seemingly trivial update to the open source SVG editor will have some profound ripple effects for freesewing.
+Een grote meerderheid steunt dit idee en daarom hebben we plannen om ermee door te gaan. Maar als we dit doen, willen we het goed en volledig open doen. Verwacht dus binnenkort een blogpost over deze kwestie.
 
-While it won't impact our code as such, we use Inkscape to turn the SVG patterns we generate into the PDFs that you
-print at home. And if now Inkscape thinks that one inch no longer holds 90, but 96 pixels, your patterns will be
-scaled incorrectly, which is kind of a big deal.
+De vragen die naar voren kwamen toen we de mogelijkheid bespraken om deze gegevens te publiceren, draaiden meestal om privacy. We zijn - en blijven - toegewijd aan het beschermen van de privacy van al onze gebruikers en bezoekers en hebben geschreven over [de keuzes die we hebben gemaakt om uw privacy te waarborgen](/blog/privacy-choices/).
 
-Given that we can continue to run an older build of Inkscape to do our bidding, this doesn't mean things are on fire just yet.
-But it's a problem we will have to tackle sooner rather than later. 
+Nadenken over deze kwesties deed ons beseffen dat we een meer ijzersterke garantie willen bieden dan een blogpost. Daarom zullen we een privacyverklaring opstellen en publiceren in overeenstemming met met de aankomende GDPR.
 
-That's because even when we fix it, once we start using the new Inkscape, it will still incorrectly handle the drafts
-that have been generated prior to the fix and that are still stored in people's profiles.   
-Needless to say, I see a lot of mucking about with the SVG viewbox in my future.
+Weet je niet wat GDPR is? Goed. Blijf lezen.
 
-There's other changes in the newest Inkscape too that can potentially wreak havoc. Most likely to cause a stink-up
-is the new way the *line-height* attribute will be handled in text. Less dramatic, but still inconvenient.
 
-While these changes add an unwelcome number of entries to our to-do list, it's worth pointing out that
-the Inkscape maintainers make these changes because they thing it's the right thing, and that going forward,
-this will be the better option.
 
-So, in the same spirit, we'll make sure to follow suit. 
+### GDPR-naleving
 
-But that's for next year.
+De GDPR is de [Algemene Verordening Gegevensbescherming](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) van de Europese Unie.  De richtlijn vervangt de *Richtlijn gegevensbescherming* en is een ambitieuzer stuk wetgeving voor gegevensbescherming. 
+
+De GDPR wordt in mei 2018 actief en tegen die tijd is Freesewing er klaar voor. In het bijzonder zullen we een privacyverklaring publiceren waarin precies staat wat er met je gegevens gebeurt, en we zullen ervoor zorgen dat al je rechten worden gerespecteerd.
+
+We zijn nog aan het plannen hoe we dit precies gaan aanpakken, en voor het grootste deel zullen dit cosmetische veranderingen zijn en die zullen niets veranderen aan freesewing als zodanig.
+
+Maar we waarderen je privacy en we willen doen wat we zeggen, dus we zullen ervoor zorgen dat we doen wat juist is.
+
+
+
+### Kern probleem #204 - Het Inkscape standaard eenheden dilemma
+
+Onder het kopje *Belangrijke wijzigingen* de [release notes voor Inkscape versie 0.92](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.92#Important_changes) lijst:
+
+
+
+> De standaardresolutie is gewijzigd van 90 dpi naar 96 dpi, om overeen te komen met de CSS-standaard. 
+
+Deze ogenschijnlijk triviale update van de open source SVG-editor zal een aantal ingrijpende gevolgen hebben voor freesewing.
+
+Hoewel het geen invloed heeft op onze code als zodanig, gebruiken we Inkscape om de SVG-patronen die we genereren om te zetten in de PDF's die je thuis afdrukt. En als Inkscape nu denkt dat een inch niet langer 90, maar 96 pixels bevat, dan worden je patronen op verkeerd geschaald, wat nogal wat is.
+
+Gezien het feit dat we een oudere build van Inkscape kunnen blijven gebruiken om ons werk te doen, betekent dit nog niet dat alles in de fik staat. Maar het is een probleem dat we eerder vroeger dan later zullen moeten aanpakken. 
+
+Dat komt omdat zelfs als we het oplossen, zodra we de nieuwe Inkscape gaan gebruiken, het nog steeds verkeerd zal omgaan met de concepten die zijn gegenereerd vóór de oplossing en die nog steeds zijn opgeslagen in de profielen van mensen.   
+Onnodig te zeggen dat ik in de toekomst nog veel met de SVG viewbox zal moeten knoeien.
+
+Er zijn ook andere veranderingen in de nieuwste Inkscape die mogelijk een ravage kunnen aanrichten. De meest waarschijnlijke oorzaak van een stink-up is de nieuwe manier waarop het *line-height* attribuut zal worden behandeld in tekst. Minder dramatisch, maar nog steeds lastig.
+
+Hoewel deze wijzigingen een ongewenst aantal items toevoegen aan onze to-do lijst, is het de moeite waard om erop te wijzen dat de Inkscape beheerders deze wijzigingen maken omdat ze denken dat dit het juiste is, en dat in de toekomst dit de betere optie zal zijn.
+
+Dus, in dezelfde geest, zullen we ervoor zorgen dat we dit voorbeeld volgen. 
+
+Maar dat is voor volgend jaar.
 

@@ -1,5 +1,5 @@
 ---
-title: "Brian body block"
+title: "Brian Basisvorm"
 ---
 
 <PatternDocs pattern='brian' />

@@ -1,5 +1,5 @@
 ---
-title: "Shoulder ease"
+title: "Holgura de hombro"
 ---
 
 ![Holgura de hombro](./shoulderease.svg)

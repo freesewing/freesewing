@@ -1,5 +1,5 @@
 ---
-title: "Fit the knee"
+title: "Pas de knie aan"
 ---
 
 Bepaalt de breedte van de broekspijpen.

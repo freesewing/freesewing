@@ -1,5 +1,5 @@
 ---
-title: "Cuff drape"
+title: "Plisado del puño"
 ---
 
 ![Plisado del puño](cuffdrape.svg)

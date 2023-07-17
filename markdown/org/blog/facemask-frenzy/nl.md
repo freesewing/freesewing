@@ -1,6 +1,6 @@
 ---
 author: "joostdecock"
-caption: "Dr. Dragnea van het Universitair Ziekenhuis Antwerpen met een Florence mondmasker"
+caption: "Dr. Dragnea van het Universitair Ziekenhuis Antwerpen draagt een Florence-gezichtsmasker"
 date: "2020-03-19"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b811b79114f15aa192a1962b95083e6c55d79402-1532x1123.jpg"
 intro: "Oproep aan alle makers: Hier is een PDF patroon voor een mondmasker; Laten we samen aan de slag gaan"
@@ -34,8 +34,6 @@ Tijd om er een stapel te maken. Onze gezondheidszorg werkers rekenen op je!
 
 <Note>
 
-PS: You can support us by [becoming a patron](/patrons/join/) ❤️
+PS: Je kunt ons steunen door [beschermheer te worden](/patrons/join/) ❤️
 </Note>
-
-
 

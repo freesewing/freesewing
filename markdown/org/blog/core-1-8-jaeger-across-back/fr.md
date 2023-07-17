@@ -1,10 +1,10 @@
 ---
 author: "joostdecock"
 caption: "This release brought to you from Bangkok"
-date: "2018-03-21"
+date: "21-03-2018"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/34ed654dcda9004e7c249b90256ad197469cc87e-1920x1277.webp"
 intro: "We've just pushed the  button on core 1.8.0. That bump in minor number is typically because we have a new pattern, but in this case, there's two reasons:"
-title: "Freesewing core 1.8: Jaeger Jacket is in, across back measurement is out [Non traduit]"
+title: "Freesewing core 1.8: Jaeger Jacket is in, across back measurement is out"
 ---
 
 
@@ -12,11 +12,11 @@ We've just pushed the *release* button on core 1.8.0. That bump in minor number 
 
  - The [Jaeger Jacket](/patterns/jaeger) is now available
  - We've gotten rid of the *across back* measurement
- 
+
 Read on for the details.
- 
+
 ## Announcing the Jaeger Jacket
- 
+
 For [my refasioners entry last year](/blog/the-refashioners-2017/) I designed a jacket pattern that I intially wanted to release alongside my make. It didn't work out that way, and I asked for a bit more time to get the pattern out the door.
 
 Turns out that when I say *a bit more time* it means 6 and a half months, so please forgive me for the delay, but here it is, [the Jaeger Jacket](/designs/jaeger).
@@ -33,7 +33,7 @@ In other words, this is a garment that's typically worn on jeans or other trouse
 
 ### Options galore
 
-Jaeger comes with 38 options, so you can change *a lot* about this pattern. 
+Jaeger comes with 38 options, so you can change *a lot* about this pattern.
 
 No need to worry though, it also comes with sensible defaults, so you can just as well ignore all those choices.
 
@@ -43,11 +43,9 @@ Speaking of sensible defaults, Jaeger is not the only new thing in freesewing co
 
 We've also gotten rid of the *across back* measurement.
 
-The across back measurement was cause of a great deal of confusion among our users. 
-More often than not, when someone contacted us because their pattern looked wonky, an unrealistic across back measurement was to blame.
+The across back measurement was cause of a great deal of confusion among our users. More often than not, when someone contacted us because their pattern looked wonky, an unrealistic across back measurement was to blame.
 
-The roots of the across back measurement go back to a time when, instead of the *shoulder to shoulder* measurement we use now, we had the *shoulder length* measurement. 
-That one was also source of some confusion, so we phased it out in favour of the *shoulder to shoulder* measurement.
+The roots of the across back measurement go back to a time when, instead of the *shoulder to shoulder* measurement we use now, we had the *shoulder length* measurement. That one was also source of some confusion, so we phased it out in favour of the *shoulder to shoulder* measurement.
 
 The thing is that if we know the *shoulder to shoulder* measurement, we can guestimate with reasonable accuracy what the *across back* measurement will be. So, instead of asking you for it, we simply assume now.
 

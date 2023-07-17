@@ -3,11 +3,9 @@ author: "joostdecock"
 caption: "Dieser Beitrag beschreibt, was in Version 2.2 von FreeSewing neu ist"
 date: "2020-02-22"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/356c127b8b37937b9537790d71a949c236027513-1920x1280.jpg"
-intro: "Version 2.2 von FreeSewing ist da, und sie hat eine Menge großer und kleiner Änderungen und Verbesserungen. Das Änderungsprotokoll listet alle Änderungen auf, aber hier ist, was Sie wissen müssen:"
+intro: "Ein Blick auf die Neuerungen in FreeSewing 2.2, darunter Breanna, unser Grundschnittblock für Damenoberbekleidung"
 title: "Ein Blick auf die Neuerungen in FreeSewing 2.2, darunter Breanna, unser Grundschnittblock für Damenoberbekleidung"
 ---
-
-
 
 Version 2.2 von FreeSewing ist da, und sie hat eine Menge großer und kleiner Änderungen und Verbesserungen. Das [Änderungsprotokoll](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md) listet alle Änderungen auf, aber hier ist, was Sie wissen müssen:
 
@@ -19,15 +17,17 @@ Schauen wir uns an, was das im Einzelnen bedeutet:
 
 ## Neues Schnittmuster: Breanna ist ein Grundschnittblock für Damenoberbekleidung
 
-![Breanna line drawing](breanna.svg)
+<Linedrawing pattern="breanna" />
 
 Schauen Sie sich [Breanna](/designs/breanna/), unser Grundschnittblock für Damenoberbekleidung an.
 
-Ein Grundschnittblock ist vielleicht nicht das aufregendste Schnittmuster, das es gibt, aber er spielt eine wichtige Rolle, da er die Grundform ist, auf der andere Schnittmuster aufgebaut sind. For example, we have a similar block for menswear called [Brian](/designs/brian/) and our [Aaron](/designs/aaron/), [Bent](/designs/bent/), [Carlita](/designs/carlita/), [Carlton](/designs/carlton/), [Huey](/designs/huey/), [Hugo](/designs/hugo/), [Jaeger](/designs/jaeger/), [Simon](/designs/simon/), [Simone](/designs/simone/), [Sven](/designs/sven/), and [Wahid](/designs/wahid/) patterns can all can trace their lineage back to Brain somehow.
+Ein Grundschnittblock ist vielleicht nicht das aufregendste Schnittmuster, das es gibt, aber er spielt eine wichtige Rolle, da er die Grundform ist, auf der andere Schnittmuster aufgebaut sind.
 
-In other words, Breanna is an important building block for us to extend our womenswear collection. But that doesn't mean it's not good news for you too. If you've been sewing for a while, chances are drafting your own block/sloper has perpetually been on your to-do list. Well, good news, because here's your block ready to go.
+For example, we have a similar block for menswear called [Brian](/designs/brian/) and our [Aaron](/designs/aaron/), [Bent](/designs/bent/), [Carlita](/designs/carlita/), [Carlton](/designs/carlton/), [Huey](/designs/huey/), [Hugo](/designs/hugo/), [Jaeger](/designs/jaeger/), [Simon](/designs/simon/), [Simone](/designs/simone/), [Sven](/designs/sven/), and [Wahid](/designs/wahid/) patterns can all can trace their lineage back to Brain somehow.
 
-Oh, and of course it's got all the bells and whistles you've come to expect from us. Have a look at [the pattern options](/docs/patterns/breanna/options/) and I think you'll be positively impressed. If nothing else, this block can accommodate 1 or 2 bust darts in 15 different places, giving you 120 unique ways to place your bust dart(s).
+In other words, Breanna is an important building block for us to extend our womenswear collection. But that does not mean it is not good news for you too. If you have been sewing for a while, chances are drafting your own block/sloper has perpetually been on your to-do list. Well, good news, because here is your block ready to go.
+
+Oh, and of course it has all the bells and whistles you can expect from us. Have a look at [the pattern options](/docs/patterns/breanna/options/) and I think you'll be positively impressed. If nothing else, this block can accommodate 1 or 2 bust darts in 15 different places, giving you 120 unique ways to place your bust dart(s).
 
 Breanna has has been a while in the making, and we'd love to get your feedback on it. Making a muslin from a block like this really isn't much work. So if you've got some time to spare to whip this one up and let us know how it went, that would be great.
 
@@ -60,7 +60,10 @@ Unfortunately, there is no magic shortcut for this. If you want something made-t
 
 This does raise the bar for people who are new to the site, and want to kick the tires.
 
-> *Oooh, free patterns, nice* 😍 *Wait, I have to create an account first?* 🤔 *And take all these measurements?* 😬 *That seems like a lot of work.*
+> *Oooh, free patterns, nice* 😍  
+> *Wait, I have to create an account first?* 🤔  
+> *And take all these measurements?* 😬  
+> *That seems like a lot of work.*
 
 Fair enough.
 
@@ -74,7 +77,8 @@ Obvously, made-to-measure patterns is *our thing*, and we're not changing that. 
 
 The hardest thing about adding support for standard sizes? Figuring out what the heck standard sizes are supposed to be. We took a stab at it, and if you're curious you can [check out our sizing table here](/docs/various/sizes/).
 
-For menswear, our size range is 32 to 50, and they are based on a size 38 baseline that we then graded up and down. For womenswear, our size range is 28 to 48, and they are based on a size 34 baseline that we then graded up and down.
+For menswear, our size range is 32 to 50, and they are based on a size 38 baseline that we then graded up and down.  
+For womenswear, our size range is 28 to 48, and they are based on a size 34 baseline that we then graded up and down.
 
 <Note>
 
@@ -82,7 +86,8 @@ If you're not sure what these numbers are, they are the neck circumference in cm
 
 </Note>
 
-While we tried to make our size ranges inclusive, and these tables are an honest attempt to come up with something that makes sense, please understand that this is not our core business. We've love to hear your feedback on the sizing tables, and are open to tweaks and suggestions, but at the end of the day, what we want is to give you a pattern drafted to your measurements. These sizes are just a way to lure you in 🤫
+While we tried to make our size ranges inclusive, and these tables are an honest attempt to come up with something that makes sense, please understand that this is not our core business. We've love to hear your feedback on the sizing tables, and are open to tweaks and suggestions, but at the end of the day, what we want is to give you a pattern drafted to your measurements.  
+These sizes are just a way to lure you in 🤫
 
 
 ## Also: All the other stuff

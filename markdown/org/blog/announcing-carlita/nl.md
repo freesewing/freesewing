@@ -7,7 +7,6 @@ intro: "Deze is voor de dames - en ik heb het niet (alleen) over die foto van ha
 title: "We presenteren Carlita, de damesversie van onze Carlton jas."
 ---
 
-
 Deze is voor de dames - en ik heb het niet (alleen) over die foto van hartenbreker Benedict Cumberbatch bovenaan deze post.
 
 Ik heb het namelijk over de publicatie van ons laatste patroon: de [Carlita jas](/patterns/carlita), waarvan de betaversie vanaf vandaag beschikbaar is.
@@ -46,7 +45,7 @@ Dit controleert hoe scherp de prinsessennaad terug naar binnen keert na het extr
 
 Een foto zegt meer dan duizend woorden, dus hier is de optie aangeduid op het relevante patroondeel:
 
-![Het effect van de optie zoals getoond door onze sample service](smooth.png)
+![Het effect van de optie zoals getoond door onze sample service](https://posts.freesewing.org/uploads/smooth_e8f395dd4a.png)
 
 Zoals je kan zien controleert deze optie hoe fel de prinsessennaad terug naar je taille keert nadat ze over het volste deel van de buste gegaan is.
 

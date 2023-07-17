@@ -1,5 +1,5 @@
 ---
-title: "Circle ratio"
+title: "Porcentaje de círculo"
 ---
 
 ![Porcentaje de círculo](circleratio.svg)

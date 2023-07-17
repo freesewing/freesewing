@@ -1,5 +1,5 @@
 ---
-title: "Tip width"
+title: "Spitzenbreite"
 ---
 
 ![Fliegen breit und schmal](tipwidth.svg)

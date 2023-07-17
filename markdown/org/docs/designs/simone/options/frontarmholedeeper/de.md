@@ -1,6 +1,6 @@
-- - -
-title: "Front armhole extra cutout"
-- - -
+---
+title: "Zusätzlicher Ausschnitt am vorderen Armloch"
+---
 
 Steuert wie viel die Vorderseite des Armlochs tiefer in das Gewand geschnitten wird als die Rückseite.
 

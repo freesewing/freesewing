@@ -1,6 +1,6 @@
-- - -
-title: "Collar stand width"
-- - -
+---
+title: "Kragenstegbreite"
+---
 
 ![Breite der Collarstand](collarstandwidth.svg)
 

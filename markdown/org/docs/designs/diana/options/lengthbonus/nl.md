@@ -1,5 +1,5 @@
 ---
-title: "Length bonus"
+title: "Bonus lengte"
 ---
 
 ![De optie voor bonus lengte bij Diana](./lengthbonus.svg)

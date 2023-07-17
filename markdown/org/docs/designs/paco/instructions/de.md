@@ -344,5 +344,5 @@ wird leichter durch den Stoff manövrieren, und er wird die Zeichenfolge mitzieh
 
 ## Schritt 19: Genießen Sie Ihre Paco Hose!
 
-Du hast es getan! Wie geht's!
+Du hast es geschafft! Wie geht's!
 

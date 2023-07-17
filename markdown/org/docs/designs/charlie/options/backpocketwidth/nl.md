@@ -1,5 +1,5 @@
 ---
-title: "Back pocket width"
+title: "Breedte achterzak"
 ---
 
 Breedte van de achterzakken.

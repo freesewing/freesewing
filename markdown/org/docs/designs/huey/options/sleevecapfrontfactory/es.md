@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap front Y"
+title: "Funda frontal Y"
 ---
 
 ![La posición vertical del punto de inflexión frontal](./sleevecapfrontfactory.svg)

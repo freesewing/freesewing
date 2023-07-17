@@ -4,13 +4,13 @@ caption: "Your new login background for the month of october"
 date: "2017-09-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c6418b621228730525d835acff53c4cd6895a865-2000x1250.jpg"
 intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - September 2017: Simon complications, email issues, and donations are up this year. [No traducido]"
+title: "Monthly roundup - September 2017: Simon complications, email issues, and donations are up this year."
 ---
 
 This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
 
 ## Looking back at september, and a bit of august
-For this first edition, I'm looking back a bit further than one month, because [this site launched at the end of August](/blog/open-for-business/), so I'm including that week in this monthly roundup. 
+For this first edition, I'm looking back a bit further than one month, because [this site launched at the end of August](/blog/open-for-business/), so I'm including that week in this monthly roundup.
 
 ### My name is Simon, and I'm complicated
 
@@ -25,7 +25,7 @@ Full details are available in [the changelog](https://github.com/freesewing/core
  -  The sleeve length bonus was counted double
  -  The hip measurements/ease was not taken into account;  The chest measurement/ease was used instead
  -  A number option defaults were tweaked
- 
+
 
 Thanks to [Tatyana](/users/yrhdw) and [Stefan](/users/kczrw) for reporting these issues. You get that funky bug badge:
 
@@ -33,7 +33,7 @@ Thanks to [Tatyana](/users/yrhdw) and [Stefan](/users/kczrw) for reporting these
 
 #### What's your problem Simon?
 
-That these issues surface in Simon is not a coincidence. The pattern comes with a whopping 41 options that allow you to control pretty much every aspect of your shirt. 
+That these issues surface in Simon is not a coincidence. The pattern comes with a whopping 41 options that allow you to control pretty much every aspect of your shirt.
 
 Managing all those different combinations in the code leads to a lot of complexity. And were code complexity rises, bugs appear.
 
@@ -42,10 +42,9 @@ Managing all those different combinations in the code leads to a lot of complexi
 #### Is it time for an overhaul?
 Simon is a port of the Singular Shirt pattern of MakeMyPattern.com. Back there, making a differently styled shirt would have involved copying the code over, making changes, and then maintaining two slightly different variations for all eternity.
 
-Things are better here at freesewing, where inheritance is baked in the system.
-So I could (and should perhaps) have a basic shirt pattern, and then branch that out into a bunch of differently styled shirt patterns.
+Things are better here at freesewing, where inheritance is baked in the system. So I could (and should perhaps) have a basic shirt pattern, and then branch that out into a bunch of differently styled shirt patterns.
 
- - Brian Body Block
+ - Patrón Base Brian
    - Basic shirt pattern
      - Casual shirt pattern
      - Formal shirt pattern
@@ -62,13 +61,13 @@ I added a workaround for those of you who had trouble getting the registration e
 ![If these guys run your inbox, then who knows what other emails you're not getting](msft.gif)
 
 You can read [my blog post on the matter](/blog/email-spam-problems/) for all the details, but basically if you have one of those addresses, you should get those emails now. The only downside is that you might get them twice.
- 
+
 ## Referrals
 When people link to your site, and visitors click that link, that's called a referral. The bloggers among you might be familiar with skimming through your Google Analytics reports to see who's been linking to you.
 
-This site does not use Google Analytics --- there's [a blog post with details on that](/blog/privacy-choices/) too --- but still captures referrals. The overview of recent referrals is available for all to see on [the status page](/status). 
+This site does not use Google Analytics --- there's [a blog post with details on that](/blog/privacy-choices/) too --- but still captures referrals. The overview of recent referrals is available for all to see on [the status page](/status).
 
-Linking to freesewing.org is obviously a nice thing to do, so I keep an eye on the referrals, and if a site shows up that belongs to a user, you get the Ambassador badge. 
+Linking to freesewing.org is obviously a nice thing to do, so I keep an eye on the referrals, and if a site shows up that belongs to a user, you get the Ambassador badge.
 
 ![Linking to freesewing.org is one way to unlock the ambassasor badge](https://posts.freesewing.org/uploads/badge_ambassador_3dd1e722cc.svg)
 
@@ -79,7 +78,7 @@ During september, we passed last year's donations amount, so it's nice to see I'
 
 You can always keep track of the donations on [the donations pledge page](/about/pledge#donations-history), but here's the current status:
 
-![Yay! Better than last year](https://posts.freesewing.org/uploads/donations_68e214d133.svg)
+![Yay! Yay! Better than last year](https://posts.freesewing.org/uploads/donations_68e214d133.svg)
 
 ## More download formats
 
@@ -92,14 +91,13 @@ I've added the quality control badge for things like reporting (or fixing) typos
 
 These might not seem like an earth-shattering contribution, but they are important nevertheless.
 
-On the spectrum between endlessly toiling over the perfect content before publishing it, or getting it out fast warts and all, I lean heavily towards the latter. 
-So I kinda count on you guys to let me know when I messed up.
+On the spectrum between endlessly toiling over the perfect content before publishing it, or getting it out fast warts and all, I lean heavily towards the latter. So I kinda count on you guys to let me know when I messed up.
 
 ## Looking ahead to october
 
 There are 5 patterns I am currently working on. And all of them are ready to the point where I need to make them to verify that they work as intended. First a muslin, and then the real thing.
 
-That's a bit of a bottleneck for me because I have a long commute, so my sewing time is typically limited to the weekends. 
+That's a bit of a bottleneck for me because I have a long commute, so my sewing time is typically limited to the weekends.
 
 The only way I see to speed up the process of getting patterns released is to have people join in with the pattern testing. I don't think it's something I can ask people to do, because this is early stage testing. Not to mention that I have nothing to offer them to sweeten the deal. What am I going to give you, a free pattern?
 
@@ -108,7 +106,7 @@ Still, on the off chance that some of you want to help out by making a muslin an
  - A trouser block for men that should be better than Theo(dore)
  - A block for selvedge jeans for men
  - A zip-up hoodie for men
- - A wintercoat 
+ - A wintercoat
  - A unisex leggins pattern
 
 Should any of you want to make one of these as a test, [let me know](/contact), it would really help me out. 

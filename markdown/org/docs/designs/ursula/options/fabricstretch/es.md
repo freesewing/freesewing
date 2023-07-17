@@ -1,5 +1,5 @@
 ---
-title: "Fabric stretch"
+title: "estiramiento de tela"
 ---
 
 Ajuste esta opción para tejidos más o menos estirados.

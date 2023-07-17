@@ -3,10 +3,9 @@ author: "joostdecock"
 caption: "Dieses Bild ist wahrscheinlich das Einzige in der Post, was Sie diagonal überfliegen können"
 date: "2018-02-14"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/39f3d1e7320510b2dd12cc1bc2e58008263889f3-1920x1280.webp"
-intro: "Dieser Blogpost handelt von der Datenschutzgrundverordnung (DSGVO) der Europäischen Union (EU). Während ich auf die Grundlagen der DSGVO eingehe, konzentriert sich der Schwerpunkt auf deren Auswirkungen auf FreeSewing.org, und was wir in den 100 Tagen tun wollen, die bleiben, bevor die DSGVO in Kraft tritt."
+intro: "Die Datenschutzgrundverordnung der Europäischen Union: Unser Schlachtplan."
 title: "Die Datenschutzgrundverordnung der Europäischen Union: Unser Schlachtplan."
 ---
-
 
 Dieser Blogpost handelt von der Datenschutzgrundverordnung (DSGVO) der Europäischen Union (EU). Während ich auf die Grundlagen der DSGVO eingehe, konzentriert sich der Schwerpunkt auf deren Auswirkungen auf FreeSewing.org, und was wir in den 100 Tagen tun wollen, die bleiben, bevor die DSGVO in Kraft tritt.
 
@@ -16,7 +15,7 @@ Dies ist eine etwas lange Lektüre, deshalb hier ein Inhaltsverzeichnis:
 
 Ich habe eine Hassliebe mit der Europäischen Union. Ich liebe, was sie tun und wofür sie stehen, ich hasse, wie sie es tun.
 
-![Ich verstehe diesen Typen total](rage-quit.gif)
+![Ich verstehe diesen Typen total](https://posts.freesewing.org/uploads/rage_quit_fff821e695.gif)
 
 Mit der DSGVO ist es nicht anders. Es handelt sich um einen wichtiges Stück Gesetzgebung, das die Messlatte für den Online-Datenschutz höher legt, was großartig ist. Aber als ich über das Thema las, verspürte ich den Drang, aus Wut aufzuhören, diese ewigen Bürokraten.
 
@@ -103,7 +102,8 @@ Turns out it doesn't. Biometric data is what you can use to identify a person, l
 
 ### Collecting data through consent
 
-To collect data, you need a so-called *lawful basis for data processing*. There are different types, but the one that applies to us (and to most online services) is **consent**.
+To collect data, you need a so-called *lawful basis for data processing*.  
+There are different types, but the one that applies to us (and to most online services) is **consent**.
 
 In this scenario, your legal basis for processing the data is that you've asked the person to get their data and they've freely given it to you.
 
@@ -157,7 +157,7 @@ The EU enshrines basic rights for its citizens that should be respected when pro
 
 Let's look at each of these rights and their impact on freesewing.org.
 
-#### The right to be informed
+#### Das Recht, informiert zu werden
 
 > You need to be transparent about how you use personal data. Why you collect it, how you use it, and so on.
 
@@ -167,37 +167,37 @@ We will need to design the individual privacy notices, but also a more overall p
 
 While this will require some work, I don't expect any problems here.
 
-#### The right of access
+#### Das Recht auf Zugriff
 
 > People have the right to know their data is processed, and to access that data.
 
 We are already compliant, as all data users enter on the site can also be accessed by them.
 
-#### The right to rectification
+#### Das Recht auf Berichtigung
 
 > People have the right to correct their data if it's not correct.
 
 We are already compliant, as all data users enter on the site can also be edited by them.
 
-#### The right to erasure
+#### Das Recht auf Löschung
 
 > People have the right to have their data removed/erased.
 
 We are already compliant, as users can remove their models, or entire account at any time.
 
-#### The right to restrict processing
+#### Das Recht, die Verarbeitung einzuschränken
 
 This right means that users must be able to put a *freeze* on all data processing, without going as far as to delete their data.
 
 We do not currently offer this possibility, and will need to add this functionality to the site.
 
-#### The right to data portability
+#### Das Recht auf Datenübertragbarkeit
 
 > People not only have a right to export all their data, that export should also be in a format that makes it easy for them to take their data elsewhere.
 
 We are already compliant, as we allow users to export all of their data, and make it available in different standard formats (YAML and JSON).
 
-#### The right to object
+#### Das Recht auf Widerspruch
 
 > The right to object applies specifically to:
 > 
@@ -215,7 +215,7 @@ This is something we'll write about more at a later date, but essentially this f
 
 As such, we should add the possibility to object to this specific use of the data.
 
-#### Rights in relation to automated decision making and profiling
+#### Rechte in Bezug auf automatisierte Entscheidungsfindung und Profilerstellung
 
 > People have extra rights when it comes to profiling or decisions made by AI or algorithms without human involvement.
 
@@ -268,7 +268,7 @@ We already encrypt all data in transit. But, we are currently considering to add
 
 The idea is to encrypt all data that could potentially identify a user. Such as:
 
- - Email address
+ - E-Mail-Adresse
  - User name
  - Model names
  - Model notes
@@ -281,14 +281,14 @@ While this change will be non-trivial to implement and come with a performance p
 
 While we still have some work to do, we are already compliant with large parts of the GDPR, especially when it comes to respecting users rights:
 
- - The right to be informed
- - The right of access
- - The right to rectification
- - The right to erasure
- - The right to restrict processing
- - The right to data portability
- - The right to object
- - Rights in relation to automated decision making and profiling
+ - Das Recht, informiert zu werden
+ - Das Recht auf Zugriff
+ - Das Recht auf Berichtigung
+ - Das Recht auf Löschung
+ - Das Recht, die Verarbeitung einzuschränken
+ - Das Recht auf Datenübertragbarkeit
+ - Das Recht auf Widerspruch
+ - Rechte in Bezug auf automatisierte Entscheidungsfindung und Profilerstellung
 
 We are currently working on *the right to be informed* and have a plan for the changes required to respect *the right to restrict processing* and *the right to object*.
 
@@ -315,6 +315,5 @@ Seems like we've got a lot of work ahead of us.
 It is my personal opinion that the GDPR is a good thing. But I want to hear from you about the changes outlined in this blog post.
 
 So please reach out with your feedback and comments. It is after all your data we're talking about.
-
 
 

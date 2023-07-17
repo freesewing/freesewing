@@ -1,9 +1,9 @@
 ---
 author: "joostdecock"
-caption: "Ich trinke nicht, aber das schien für einen Festbeitrag angemessen zu sein ¯\\_(ツ)_/¯"
+caption: "Ich trinke nicht, aber das schien für einen Festbeitrag angemessen zu sein ¯\_(ツ)_/¯"
 date: "2018-08-25"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a6b5a3918ad412f7fb434413fafcc82107109d87-1920x1276.jpg"
-intro: "Vor genau einem Jahr öffneten sich die Türen von FreeSewing.org für unsere Nutzer,während die von makemypattern.com eines dieser  -Schilder erhielten."
+intro: "Wir feiern ein Jahr von FreeSewing.org: Ankündigung der FreeSewing-Library"
 title: "Wir feiern ein Jahr von FreeSewing.org: Ankündigung der FreeSewing-Library"
 ---
 
@@ -52,7 +52,7 @@ Sie befindet sich aktuell in der Version 0.10 und ist zusammen mit dem FreeSewin
 
 Obwohl die API mehr kann als der Core ist sie trotzdem schlanker:
 
-![Zeilen des Codevergleichs zwischen der neuen Library und dem (dem relevanten Teil des) FreeSewing-Core](corevsfreesewing.svg)
+![Zeilen des Codevergleichs zwischen der neuen Library und dem (dem relevanten Teil des) FreeSewing-Core](https://posts.freesewing.org/uploads/corevsfreesewing_c9327c9fa3.svg)
 
 Das ist eine gute Nachricht, wenn Sie sich fragen.
 
@@ -78,5 +78,4 @@ Aber ich glaube, dass die Investition in eine optimierte Entwicklungsarbeit lang
 Wenn wir nur ein paar zusätzliche Muster wollten, wäre dies nicht der richtige Ansatz. Aber wenn wir viele neue Schnittmuster wollen, glaube ich, dass es sich auszahlt.
 
 Und ich möchte viele Schnittmuster haben.
-
 

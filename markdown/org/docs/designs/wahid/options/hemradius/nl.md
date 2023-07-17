@@ -1,5 +1,5 @@
 ---
-title: "Hem radius"
+title: "Ronding zoom"
 ---
 
 ![Ronding zoom](hemradius.svg)

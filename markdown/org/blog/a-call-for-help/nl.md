@@ -1,42 +1,42 @@
 ---
 author: "joostdecock"
-caption: "Note: This post is a long read. Although nowhere near as long as this book"
+caption: "Opmerking: deze post is best lang. Maar bijlange niet zo lang als dit boek"
 date: "2020-08-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1a143c96b4afc8c12d2014c5605bfd1e63d917d0-2000x1348.jpg"
-intro: "Hallo iedereen, Joost hier. I'm writing this post to address some problems that have been worrying me lately. Specifically, these problems:"
+intro: "Help me om FreeSewing groter te laten worden dan wat ik zelf kan doen"
 title: "Help me om FreeSewing groter te laten worden dan wat ik zelf kan doen"
 ---
 
 
-Hallo iedereen, Joost hier. I'm writing this post to address some problems that have been worrying me lately. Specifically, these problems:
+Hallo iedereen, Joost hier. Ik schrijf dit bericht om een aantal problemen aan te pakken waar ik me de laatste tijd zorgen over maak. Specifiek deze problemen:
 
- 1. [There is too much work for one person](#problem-1-there-is-too-much-work-for-one-person)
- 2. [I feel I'm losing track of the sewing community](#problem-2-i-feel-im-losing-track-of-the-community)
- 3. [I feel insecure about how to deal with the issue of systemic racism](#problem-3-i-feel-insecure-about-how-to-deal-with-the-issue-of-systemic-racism)
+ 1. [Er is te veel werk voor één persoon](#problem-1-there-is-too-much-work-for-one-person)
+ 2. [Ik heb het gevoel dat ik de naaigemeenschap uit het oog verlies](#problem-2-i-feel-im-losing-track-of-the-community)
+ 3. [Ik voel me onzeker over hoe om te gaan met het probleem van systemisch racisme](#problem-3-i-feel-insecure-about-how-to-deal-with-the-issue-of-systemic-racism)
 
-The good news is that it's a relatively short list. The even better news is that all of these problems be addressed by the same solution: [Community building](#community-building).
+Het goede nieuws is dat het een relatief korte lijst is. Het nog betere nieuws is dat al deze problemen met dezelfde oplossing kunnen worden aangepakt: [Community building](#community-building).
 
 Laat ons elk probleem even bekijken voor we daar verder op ingaan:
 
-## Problem 1: There is too much work for one person
+## Probleem 1: Er is te veel werk voor één persoon
 
-Over the course of the last week I read [Working in public: The making and maintenance of open source software](https://www.amazon.com/dp/0578675862/) by [Nadia Eghbal](https://nadiaeghbal.com/).
+In de loop van de afgelopen week las ik [Werken in het openbaar: Het maken en onderhouden van open source software](https://www.amazon.com/dp/0578675862/) door [Nadia Eghbal](https://nadiaeghbal.com/).
 
-Ik kocht het omdat ik hoopte op antwoorden voor een aantal vragen die ik mezelf stel. Questions like “*How do other maintainers do it?*”, or “*Am I doing it wrong?*”
+Ik kocht het omdat ik hoopte op antwoorden voor een aantal vragen die ik mezelf stel. Vragen als "*Hoe doen andere beheerders het?*", of "*Doe ik het verkeerd?*"
 
 In andere woorden was ik op zoek naar een oplossing voor een probleem dat steeds groter wordt: het onvermogen om mijn eigen werk in verhouding te krijgen met wat ik wil voor FreeSewing als project.
 
-I don't want to spoil the book, but it didn't provide any straightforward answers on how to address that problem. It turns out that the vast majority of open source maintainers are in the same boat. Most projects are run by either a single person, or a handful of people.
+Ik wil het boek niet verpesten, maar het gaf geen eenduidige antwoorden over hoe dat probleem aan te pakken. Het blijkt dat de overgrote meerderheid van de open source beheerders in hetzelfde schuitje zit. De meeste projecten worden geleid door één persoon of een handjevol mensen.
 
-There's nothing wrong with that. But it does put a firm upper limit on how much projects like FreeSewing can accomplish.
+Daar is niets mis mee. Maar het legt wel een stevige bovengrens op aan hoeveel projecten zoals FreeSewing kunnen bereiken.
 
-## Problem 2: I feel I'm losing track of the sewing community
+## Probleem 2: ik heb het gevoel dat ik de naaigemeenschap uit het oog verlies
 
-I worry that I have been neglecting the communal aspects of FreeSewing, there are no comments or *social* aspects on the site. I've always felt it was a fool's errand to try to corral people onto your own website. Better to let them have discussions on the platforms of their choice.
+Ik maak me zorgen dat ik de gemeenschappelijke aspecten van FreeSewing heb verwaarloosd, er zijn geen reacties of *sociale* aspecten op de site. Ik vond altijd dat het een dwaas idee was om mensen op je eigen platform te willen verzamelen. Het leek me beter om discussies te laten plaatsvinden om platforms van hun eigen keuze.
 
-Voor de naaigemeenschap is dat vaak Instagram. Since I have left Instagram a year ago, I feel like I'm getting further away from the sewing community.
+Voor de naaigemeenschap is dat vaak Instagram. Sinds ik Instagram een jaar geleden heb verlaten, heb ik het gevoel dat ik verder weg kom te staan van de naaigemeenschap.
 
-My [reasons for leaving](https://joost.decock.org/post/187710847164/24-hours-from-now-i-want-to-remove-my-instagram) are as valid today as they were back then, but I wish I could connect with the sewing community in a way that works for me.
+Mijn [redenen om](https://joost.decock.org/post/187710847164/24-hours-from-now-i-want-to-remove-my-instagram) te verlaten zijn vandaag de dag nog net zo geldig als toen, maar ik zou willen dat ik contact kon maken met de naaigemeenschap op een manier die voor mij werkt.
 
 ## Probleem 3: ik voel me onzeker over hoe ik moet omgaan met de problematiek rond systemisch racisme.
 
@@ -44,124 +44,123 @@ Eerst en vooral: **Black lives matter**✊🏾
 
 Mijn onzekerheid komt uit mijn omgeving. Ik ben een witte, cisgender man van middelbare leeftijd, geboren en getogen in een land met een geschiedenis die doordrenkt is met het bloed van gekleurde mensen ([dat land is België](https://en.wikipedia.org/wiki/Atrocities_in_the_Congo_Free_State)). Tot op vandaag dringt racistisch gedachtegoed door in alle aspecten van de maatschappij waarin ik leef.
 
-A welcoming and diverse community is a *sine qua non* for me. But I feel ill-equipped to figure out how to create one on FreeSewing.
+Een gastvrije en diverse gemeenschap is voor mij een *sine qua non* . Maar ik voel me slecht uitgerust om uit te zoeken hoe ik er een kan maken op FreeSewing.
 
-## Community building
+## Gemeenschap gebouw
 
-As I mentioned earlier, these things have been on my mind for a while, albeit they were a lot more fuzzy. Then earlier this month I listened to [Black makers matter with Julian Collins on the podcast Love To Sew](https://lovetosewpodcast.com/episodes/episode-156-black-makers-matter-with-julian-collins/).
+Zoals ik al eerder zei, heb ik een tijdje aan deze dingen gedacht, al waren ze veel vager. Toen luisterde ik eerder deze maand naar [Black makers matter met Julian Collins op de podcast Love To Sew](https://lovetosewpodcast.com/episodes/episode-156-black-makers-matter-with-julian-collins/).
 
-[Julian](https://www.instagram.com/juliancreates/) is a patron of FreeSewing (thanks Julian) and actively involved with the [Black Makers Matter](https://www.instagram.com/blkmakersmatter/) movement on Instagram. Ik sprak Julian aan om hulp te vragen, en we hadden een lang gesprek via Zoom waarin we over zijn werk spraken en hoe hij de community organiseert.
+[Julian](https://www.instagram.com/juliancreates/) is een beschermheer van FreeSewing (bedankt Julian) en actief betrokken bij de [Black Makers Matter](https://www.instagram.com/blkmakersmatter/) beweging op Instagram. Ik sprak Julian aan om hulp te vragen, en we hadden een lang gesprek via Zoom waarin we over zijn werk spraken en hoe hij de community organiseert.
 
-Julian had een hoop goed advies. I couldn't possibly cram it all into this post, but it sort of boils down to:
+Julian had een hoop goed advies. Ik kan het onmogelijk allemaal in dit bericht proppen, maar het komt ongeveer op het volgende neer:
 
- - Just ask people for help
- - Be clear about what kind of community you want to build
+ - Vraag gewoon om hulp
+ - Wees duidelijk over het soort community dat je wil opbouwen
 
-So I am taking Julian's advice to heart, and asking for help. Before we get to that though, let's make sure we're all on the same page about the kind of community we're trying to build here.
+Dus ik neem Julians advies ter harte en vraag om hulp. Voordat we daar echter aan beginnen, moeten we ervoor zorgen dat we het allemaal eens zijn over het soort gemeenschap dat we hier proberen op te bouwen.
 
 ## Even checken: Kan jij je vinden in de waarden van FreeSewing?
 
-To ensure that your values are aligned with those of FreeSewing, please take a moment to familiarize yourself with:
+Om er zeker van te zijn dat jouw waarden overeenkomen met die van FreeSewing, neem dan even de tijd om jezelf bekend te maken met:
 
- - [Our community standards](/docs/various/community-standards/)
- - [Our code of conduct](https://freesewing.dev/contributors/code-of-conduct/)
- - [Our revenue pledge](/docs/various/pledge/)
+ - [Onze gemeenschapsnormen](/docs/various/community-standards/)
+ - [Onze gedragscode](https://freesewing.dev/contributors/code-of-conduct/)
+ - [Onze inkomstenbelofte](/docs/various/pledge/)
 
-If reading that made you happy rather than angry, we could use your help :)
+Als het lezen hiervan je blij maakt in plaats van boos, dan kunnen we je hulp goed gebruiken :)
 
 ## Help me om FreeSewing groter te laten worden dan wat ik zelf kan doen
 
-We're starting simple: We plan to hold a Zoom/Skype/Whatever call every 2 weeks to figure it out as we go. We start the first weekend of September (next weekend). We haven't picked a time yet, for it will depend on the time zones the participants live in.
+We beginnen eenvoudig: We zijn van plan om elke 2 weken een Zoom/Skype/Whatever gesprek te houden om het gaandeweg uit te zoeken. We beginnen het eerste weekend van september (volgend weekend). We hebben nog geen tijd gekozen, want dat hangt af van de tijdzones waarin de deelnemers leven.
 
-If you'd like to attend, please [let us know in our chat room](https://discord.freesewing.org/).
+Als je erbij wilt zijn, laat het ons dan weten via [in onze chatroom](https://discord.freesewing.org/).
 
-### What kind of help is needed?
+### Wat voor hulp is er nodig?
 
-Beggars can't be choosers. All help is welcome, and I certainly don't want to turn down any volunteers.
+Bedelaars kunnen niet kieskeurig zijn. Alle hulp is welkom en ik wil zeker geen vrijwilligers afwijzen.
 
-That being said, an overly vague call defuses the message. So I've listed/included a number of *roles* below to give you an idea of the kind of work that goes into FreeSewing. It's not meant to be an exhaustive list, but merely a starting point for a discussion.
+Dat gezegd hebbende, een te vage oproep ontkracht de boodschap. Daarom heb ik hieronder een aantal *rollen opgesomd/opgenomen* om je een idee te geven van het soort werk dat bij FreeSewing komt kijken. Het is niet bedoeld als een uitputtende lijst, maar slechts als startpunt voor een discussie.
 
-The order is alphabetic.
+De volgorde is alfabetisch.
 
 **Backend Developer**  
-You keep our backend in step with the latest frontend developments. Express is no stranger to you. Node JS is a good friend. Or maybe you'd like them to be.
+Je houdt onze backend in de pas met de nieuwste frontend ontwikkelingen. Express is geen onbekende voor je. Node JS is een goede vriend. Of misschien wil je dat wel.
 
-**Body Ambassador**  
-Maybe you're unusually short or tall. Maybe you have a bit of a pot belly or very large breasts. Maybe you have a disability that requires fit adjustments. Whatever it is, you represent a minority fitting issue, and are willing to act as an ambassador to make sure your needs are heard and understood.
+**Lichaamsambassadeur**  
+Misschien ben je ongewoon kort of lang. Misschien heb je een beetje een dikke buik of hele grote borsten. Misschien heb je een handicap die aanpassingen aan de pasvorm vereist. Wat het ook is, je vertegenwoordigt een probleem dat bij een minderheid past en je bent bereid om als ambassadeur op te treden om ervoor te zorgen dat je behoeften worden gehoord en begrepen.
 
 **Community Builder**  
-You're an extrovert extraordinaire, or you're good at faking it. You enjoy chatting with all sorts of people, and networking is just you doing you. You're like the jelly that molds a group of individuals into a cohesive community.
+Je bent extravert of je kunt goed doen alsof. Je kletst graag met allerlei mensen en netwerken is gewoon jij die jij doet. Je bent als de gelei die een groep individuen kneedt tot een hechte gemeenschap.
 
-**Database Administrator**  
-You look after our database. Other people might feel that's not important, but you know better. You're familiar with MongoDB.
+**Databasebeheerder**  
+Je zorgt voor onze database. Andere mensen vinden dat misschien niet belangrijk, maar jij weet wel beter. Je bent bekend met MongoDB.
 
 **Devops Engineer**  
-Your aim is to make almost all these other roles irrelevant by automating the heck out of everything. CI and Github actions are fun for you. You like to sit back and have the robots do the work for you.
+Je doel is om bijna al die andere rollen irrelevant te maken door alles te automatiseren. CI en Github acties zijn leuk voor jou. Je leunt graag achterover en laat de robots het werk voor je doen.
 
 **Frontend Developer**  
-You improve our websites, specifically freesewing.org and freesewing.dev. Both of them are built with [Gatsby](https://www.gatsbyjs.com/), an open source framework for building frontends that is powered by [React](https://reactjs.org/). If you know these things, or would like to learn them, this is your jam.
+Je verbetert onze websites, met name freesewing.org en freesewing.dev. Beide zijn gebouwd met [Gatsby](https://www.gatsbyjs.com/), een open source framework voor het bouwen van frontends dat wordt aangedreven door [React](https://reactjs.org/). Als je deze dingen weet, of ze wilt leren, dan is dit jouw jam.
 
 **Illustrator**  
-You create illustrations to go alongside the written documentation. If you draw a bicycle from memory, it actually looks like a bicycle.
+Je maakt illustraties naast de geschreven documentatie. Als je een fiets uit je hoofd tekent, lijkt het ook echt op een fiets.
 
-**Inclusion & Diversity Manager**  
-You have skin in the game when it comes to inclusion and diversity. You'll help make our community welcoming and diverse. You won't be afraid to tell this pasty white dude when he's wrong.
+**Inclusie & Diversiteitsmanager**  
+Je bent een kei in inclusie en diversiteit. Je helpt onze gemeenschap gastvrij en divers te maken. Je zult niet bang zijn om deze bleekscheet te vertellen wanneer hij het mis heeft.
 
-**Language Ambassador**  
-You represent FreeSewing in a non-English community. You can help answer questions or triage problem reports. Or you can point out where translations are missing.
+**Taalambassadeur**  
+Je vertegenwoordigt FreeSewing in een niet-Engelse gemeenschap. Je kunt helpen vragen te beantwoorden of probleemmeldingen te behandelen. Of je kunt aanwijzen waar vertalingen ontbreken.
 
-**Pattern Ambassador**  
-You'll be responsible for a specific FreeSewing design/pattern. You'll be *the person* to ask questions about how to make that pattern. You'll make sure the documentation is not forgotten. And you can help with questions or triage problem reports to developers or designers.
+**Patroon Ambassadeur**  
+Je bent verantwoordelijk voor een specifiek FreeSewing ontwerp/patroon. Dan ben je *de persoon* om vragen te stellen over hoe je dat patroon maakt. Je zorgt ervoor dat de documentatie niet wordt vergeten. En je kan helpen met vragen of het triëren van probleemrapporten naar developers of ontwerpers.
 
-**Pattern Designer**  
-You come up with new pattern designs for FreeSewing. You might not know how to turn on a computer, but damn if you can't draft a bodice.
+**Patroonontwerper  
+Je bedenkt nieuwe patronen voor FreeSewing. Je weet misschien niet eens hoe je een computer aanzet, maar je kan wel een verdomd goed bovenlijf tekenen.</p>
 
-**Pattern Developer**  
-You program new designs for FreeSewing. You might not know how to design sewing patterns, but you're not afraid of Javascript and are happy to team up with a designer to work on a new pattern together.
+**Patroon Developer  
+Je programmeert nieuwe ontwerpen voor FreeSewing. Je weet misschien niet hoe je naaipatronen moet ontwerpen, maar je bent niet bang van Javascript en ziet het zitten om met een ontwerper samen aan een nieuw patroon te werken.</p>
 
 **Proofreader**  
-You check original English text of translations for typos and/or grammar mistakes. You propose improvements and watch over a consistent style and tone across FreeSewing's documentation and written text. You're fluent in the language you're proofreading.
+Je kijkt de originele Engelse tekst of de vertalingen na, op zoek naar typfouten en/of grammaticafouten. Je stelt verbeteringen voor en helpt de toon en schrijfstijl van de documentatie en geschreven tekst op FreeSewing consequent te houden. Je beheerst de taal die je nakijkt goed.
 
 **Social Media Platform Manager**  
-You represent FreeSewing on a *platform*, where platform could be Facebook, Twitter, Instagram, Tiktok, Snapchat, Reddit &hellip;. You manage the FreeSewing account on the platform, and use it to interact with the community.
+Je vertegenwoordigt FreeSewing op een *platform*, waarbij het platform Facebook, Twitter, Instagram, Tiktok, Snapchat, Reddit &hellip;kan zijn. Je beheert de FreeSewing account op dit platform, en gebruikt dit voor interactie met de community.
 
-**System Administrator**  
-You look after our servers. You install updates, make sure certificates are up-to-date, the works. Linux is where your heart lies. You secretly automated most of your work with Ansible but hey, you put the playbooks in Git so no worries.
+**Systeembeheerder**  
+Je zorgt voor onze servers. Je installeert updates, zorgt ervoor dat certificaten up-to-date zijn, enzovoort. Linux heeft een bijzonder plekje in je hart. Je hebt stiekem het meeste van je werk geautomatiseerd met Ansible, maar hé, je hebt de playbooks in Git gezet dus geen zorgen.
 
-**Technical Writer (code)**  
-You write documentation for freesewing.dev, our developers website. You have good writing skills and familiarity with code (Javascript).
+**Technisch schrijver (code)**  
+Je schrijft documentatie voor freesewing.dev, onze website voor ontwikkelaars. Je kan goed schrijven en bent vertrouwd met code (Javascript).
 
-**Technical Writer (sewing)**  
-You write documentation for freesewing.org, our makers website. You have good writing skills and familiarity with sewing.
+**Technisch schrijver (naaien)**  
+Je schrijft documentatie voor freesewing.org, onze website voor makers. Je hebt goede schrijfvaardigheden en bent bekend met naaien.
 
-**Translator**  
-You translate FreeSewing into one of its additional languages (French, German, Dutch, Spanish) or if you're ambitious, add a new one. You're fluent in the language you're translating to, and have a good grasp of English.
+**Vertaler**  
+Je vertaalt FreeSewing in een van de extra talen (Frans, Duits, Nederlands, Spaans) of als je ambitieus bent, voeg je een nieuwe taal toe. Je beheerst de taal waar je naartoe vertaalt grondig, en Engels is geen probleem voor je.
 
 **UX Designer**  
-You know what UX is and are happy to point out where it sucks and how it can be made better.
+Je weet wat UX is en kan aangeven waar het nergens op lijkt en hoe het beter kan.
 
 **Release Manager**  
-You pull the plug on new releases, you bundle our code, and publish new versions of our packages on NPM.
+Je finaliseert nieuwe releases, bundelt onze code en publiceert nieuwe versies van onze paketten op NPM.
 
 **Web Designer**  
-You know how to make things pretty, even if you're not sure how to actually make them work.  You appreciate that we don't use #000 for black.
+Je weet hoe je dingen mooi maakt, ook al weer je niet zeker hoe je ze kan laten werken.  Je apprecieert dat we niet #000 gebruiken voor zwart.
 
-### What's in it for me?
+### Wat heb ik hieraan?
 
-We can't offer you money. Please [read our revenue pledge](/docs/various/pledge/) to understand why that is.
+We kunnen je geen geld geven. Bekijk alsjeblieft [onze belofte rond inkomsten](/docs/various/pledge/) om te begrijpen waarom dat zo is.
 
-What we can offer is responsibility, recognition, and a stake in something that strives to be a force for good in this world.
+Wat we kunnen bieden is verantwoordelijkheid, erkenning en een aandeel in iets dat ernaar streeft om een positieve kracht te zijn in deze wereld.
 
-It can also be an excellent learning opportunity for those of you who would like to pivot to a role in web development. And for as far as my time stretches — I will gladly teach and mentor people from underprivileged communities aiming for social mobility.
+Het kan ook een goede mogelijkheid zijn om bij te leren, voor wie in de richting van web development wil gaan. En in de mate van het mogelijke wil ik met plezier mijn kennis doorgeven aan mensen uit ondergepriviligeerde gemeenschappen en zo mikken op sociale mobiliteit.
 
-## Conclusion
+## Conclusie
 
-Maybe you can help. Maybe you know somebody who can help, or for whom this would be a valuable learning experience.
+Misschien kan jij helpen. Misschien ken je iemand die kan helpen, of voor wie dit een waardevolle leerervaring zou zijn.
 
-Either way, I'd appreciate it if you could help spread the message that I'm asking for help.
+Hoe dan ook, ik zou het op prijs stellen als je kunt helpen met het verspreiden van het bericht dat ik om hulp vraag.
 
-Thank you,
+Dank je wel,
 
 Joost
-
 

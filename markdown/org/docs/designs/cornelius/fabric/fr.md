@@ -1,5 +1,5 @@
 ---
-title: "Culotte cycliste Cornélius : Options de tissu"
+title: "Cornelius cycling breeches: Fabric Options"
 ---
 
 ### Tissu principal

@@ -1,5 +1,5 @@
 ---
-title: "Start of the cross seam curve"
+title: "Début de la courbe de l'enfourchure dos"
 ---
 
 Contrôle le début de la courbe de couture croisée.
@@ -17,4 +17,4 @@ Les gens qui ont un bum rond voudront peut-être abaisser cela pour créer un pe
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](paco_crossseamcurvestart_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](paco_crossseamcurvestart_sample.svg "Effet de cette option sur le motif")

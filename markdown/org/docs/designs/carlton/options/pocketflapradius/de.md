@@ -1,5 +1,5 @@
 ---
-title: "Pocket flap radius"
+title: "Taschenlaschenradius"
 ---
 
 ![Taschenlaschenradius](pocketflapradius.svg)

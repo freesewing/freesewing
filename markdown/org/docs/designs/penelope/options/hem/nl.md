@@ -1,5 +1,5 @@
 ---
-title: "Size of the hem"
+title: "Afmeting van de zoom"
 ---
 
 De grootte van de zoom.

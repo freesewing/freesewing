@@ -1,5 +1,5 @@
 ---
-title: "Corset Cathrin : Instructions de couture"
+title: "Cathrin corset: Sewing Instructions"
 ---
 
 <Note>

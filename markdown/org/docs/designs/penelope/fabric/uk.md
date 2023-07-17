@@ -1,5 +1,5 @@
 ---
-title: "Спідниця-олівець Пенелопа: Варіанти тканин"
+title: "Penelope pencil skirt: Fabric Options"
 ---
 
 ### Основна тканина

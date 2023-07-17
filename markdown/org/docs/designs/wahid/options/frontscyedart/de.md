@@ -1,5 +1,5 @@
 ---
-title: "Front scye dart"
+title: "Vorderer Armlochabnäher"
 ---
 
 Dieses Muster kommt mit einem Standardscye Dart 1 cm (denken Sie an Armlochdart) an der Vorderseite.

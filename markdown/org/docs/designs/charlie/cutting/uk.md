@@ -1,5 +1,5 @@
 ---
-title: "Чарлі Чинос: Інструкція з крою"
+title: "Charlie chinos: Cutting Instructions"
 ---
 
 ##### З основної тканини

@@ -1,5 +1,5 @@
 ---
-title: "Cuff narrow button"
+title: "Manschette schmaler Knopf"
 ---
 
 ![Schalenmanschette schmal Taste](./barrelcuffnarrowbutton.svg)

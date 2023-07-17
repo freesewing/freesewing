@@ -1,5 +1,5 @@
 ---
-title: "Bust darts shaping"
+title: "Bust nepen vormgeving"
 ---
 
 Controls the balance between the primary and secondary bust darts.

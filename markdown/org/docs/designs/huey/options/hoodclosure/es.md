@@ -1,5 +1,5 @@
 ---
-title: "Hood closure"
+title: "Cierre de capucha"
 ---
 
 ![Cierre de capucha](./hoodclosure.svg)

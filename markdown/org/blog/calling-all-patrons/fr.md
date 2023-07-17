@@ -3,10 +3,9 @@ author: "joostdecock"
 caption: "Nous construisons un cercle de soutiens fidèles pour assurer un avenir durable à freesewing.org, à notre code, à nos modèles et à notre communauté."
 date: "2017-12-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/84e39d762790744f10fe17bcb971f99e98550299-2000x1334.jpg"
-intro: "Chaque année, à ce jour, j'écris sur ce qui s'est passé au cours des 12 mois précédents, et annonce ce à quoi vous pouvez vous attendre pour l'année à venir."
+intro: "Appel aux mécènes ; rejoignez notre socle de soutiens fidèles."
 title: "Appel aux mécènes ; rejoignez notre socle de soutiens fidèles."
 ---
-
 
 Chaque année, à ce jour, j'écris sur ce qui s'est passé au cours des 12 mois précédents, et annonce ce à quoi vous pouvez vous attendre pour l'année à venir.
 
@@ -20,7 +19,7 @@ La version 1.0.0 de freesewing [a été publiée en mars de cette année](/blog/
 
 Beaucoup de choses en l’occurrence. Quelque chose devient plus évident depuis [la sortie de freesewing.org](/blog/open-for-business/) à la fin du mois d'août.
 
-![Image du blog de l'annonce originale](open.jpg)
+![Image du blog de l'annonce originale](https://posts.freesewing.org/uploads/open_e799153fa2.jpg)
 
 Le jour de Noël, il se sera écoulé (seulement) quatre mois depuis cette sortie. Pourtant dans ce délai, nous avons accueillis **2735 utilisateurs** pour qui nous hébergeons **1522 brouillons** et **2359 modèles**.
 
@@ -37,7 +36,7 @@ Vous pouvez essayer de visiter ce lien, mais vous finirez par revenir ici.
 
 MakeMyPattern.com a vu le jour en 2012. Il est passé par un certain nombre d'itérations depuis, et aujourd'hui est finalement remplacé par freesewing.org.
 
-![Était-ce un M ? Un livre ? Un oiseau ? Des seins ? Nous ne le saurons peut-être jamais](mmp.png)
+![Était-ce un M ? Un livre ? Un oiseau ? Des seins ? Nous ne le saurons peut-être jamais](https://posts.freesewing.org/uploads/mmp_27886c8346.png)
 
 Nous en avons terminé, et je pense que pour n'importe quel projet, c'est une bonne façon de faire quand vous vous faites cannibaliser par quelque chose qui vous inspire davantage.
 
@@ -62,7 +61,8 @@ Mais je voulais être complètement transparent sur ce qui se passe, alors j'ai 
 > 
 > Je suis privilégié, et j'ai donc des responsabilités. J'ai la chance d'être né en Europe occidentale, d'avoir un bon travail et un toit au-dessus de ma tête.
 > 
-> Pourrais-je utiliser cet argent ? Oui. Ai-je besoin de cet argent ? Non.
+> Pourrais-je utiliser cet argent ? Yes I could.  
+> Do I need the money? Non.
 > 
 > ##### La valeur de votre soutien
 > 
@@ -98,9 +98,10 @@ Donc, dès aujourd'hui, nous en appelons à tous les Mécènes.
 
 ## Devenez un Mécène de Freesewing
 
-Pour assurer un avenir durable à freesewing.org, à notre code, à nos patrons et à notre communauté, nous avons besoin de construire un socle de soutiens fidèles. Les mécènes qui nous soutiennent sont au cœur de notre travail, en développant une plateforme open source pour les patrons de couture sur-mesure.
+To ensure a sustainable future for freesewing.org, our code, our patterns, and our community, we need to build a bedrock of loyal supporters.  
+Patrons who support us in our core work; Developing an open source platform for made-to-measure sewing patterns.
 
-![Nous avons trois niveaux de Mécénat](patron-medals.jpg)
+![Nous avons trois niveaux de Mécénat](https://posts.freesewing.org/uploads/patron_medals_2160e69d77.jpg)
 
 Nous avons différents niveaux de Mécénat, chacun avec ses propres avantages. Vous pouvez nous soutenir à partir de 2€, et cela ne prend qu'une minute.
 
@@ -120,9 +121,11 @@ Merci et bonne année.
 
 joost
 
-<small>PS: Il serait dommage qu'il y ait des gens prêts à nous soutenir qui ne soient pas au courant. 
-Alors, peut-être pourriez-vous partager [cette image](patrons-ig.png) sur les réseaux sociaux ? <i class="fa fa-arrow-down" aria-hidden="true"></i></small>
+<small>PS: Il serait dommage qu'il y ait des gens prêts à nous soutenir qui ne soient pas au courant. Alors, peut-être pourriez-vous partager [cette image](patrons-ig.png) sur les réseaux sociaux ? <i class="fa fa-arrow-down" aria-hidden="true"></i></small>
 
-![Partager, c'est soutenir !](patrons-ig.png)
+![Partager, c'est soutenir !](https://posts.freesewing.org/uploads/patrons_ig_45e11fe270.png)
+
+
+
 
 

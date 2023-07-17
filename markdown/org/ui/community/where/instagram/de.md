@@ -1,5 +1,5 @@
----
----
+- - -
+- - -
 
 Unser Instagram-Account ist [@freesewing\_org](https://instagram.com/freesewing_org).  
 Folge uns für Updates über neue Schnittmuster, Genähtes aus der Community und andere Neuigkeiten.

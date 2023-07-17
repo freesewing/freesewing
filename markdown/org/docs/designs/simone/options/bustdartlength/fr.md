@@ -1,5 +1,5 @@
 ---
-title: "Bust dart length"
+title: "Longueur des pinces poitrine"
 ---
 
 Controls how close the **bust darts** approach the bust points.
@@ -9,4 +9,4 @@ Controls how close the **bust darts** approach the bust points.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_bustdartlength_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_bustdartlength_sample.svg "Effet de cette option sur le motif")

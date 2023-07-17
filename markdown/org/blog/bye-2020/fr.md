@@ -7,6 +7,9 @@ intro: "Ne sommes-nous pas tous heureux que 2020 soit finie ?"
 title: "L'année 2020 était quelque chose de tout à fait normal"
 ---
 
+
+
+
 Ne sommes-nous pas tous heureux que 2020 soit finie ?
 
 D’un point de vue réaliste, au moins certains d’entre vous, ou vos proches, ont été pris au piège absolu de la pandémie COVID-19. Soit indirectement par la perte de revenus ou d'autres préoccupations pratiques, soit directement par la lutte contre le virus lui-même.
@@ -25,7 +28,7 @@ Nous ne voulions pas vraiment être au centre de cela, nous voulions simplement 
 
 À cette époque, il y avait peu de modèles disponibles pour les masques, et assez tôt une longue liste d'autres publications ont commencé à donner des liens vers notre modèle et notre site Web. Quand j'ai découvert [la vidéo d'instruction que j'ai faite pour le patron qui me met en lumière sur le site du New York Times](https://www.nytimes.com/2020/03/31/opinion/coronavirus-n95-mask.html), C’était un véritable moment de dingue. Bien sûr, dans le mois qui a suivi la publication de Forbes, un million de personnes sont venues sur freesewing.org.
 
-L'augmentation soudaine des visiteurs et des utilisateurs (sans parler des clients) a clairement montré que je suis un goulot d'étranglement du projet, et donc dans la seconde moitié de l'année, nous nous sommes mis à [essayer d'y remédier avec un peu de construction de communauté](/blog/a-call-for-help/). D'un côté, c'est lent, mais d'un autre côté, si je regarde à quel point la communauté de FreeSewing est vibrante aujourd'hui, Il est presque dur de croire que nous avons fait tout cela tout durant l'année 2020. We now have regular [contributor calls](/community/calls/), and [our chat rooms are never empty](https://discord.freesewing.org/).
+L'augmentation soudaine des visiteurs et des utilisateurs (sans parler des clients) a clairement montré que je suis un goulot d'étranglement du projet, et donc dans la seconde moitié de l'année, nous nous sommes mis à [essayer d'y remédier avec un peu de construction de communauté](/blog/a-call-for-help/). D'un côté, c'est lent, mais d'un autre côté, si je regarde à quel point la communauté de FreeSewing est vibrante aujourd'hui, Il est presque dur de croire que nous avons fait tout cela tout durant l'année 2020. Nous avons maintenant des [appels réguliers de contributeur](/community/calls/), et [nos salons de discussion ne sont jamais vides](https://discord.freesewing.org/).
 
 J'espère continuer à m'éclipser dans le fond et laisser d'autres personnes porter quelques flambeaux. Non pas parce que je ne veux plus travailler là-dessus, mais parce que je veux faire grandir FreeSewing au-delà de ce que je peux faire seul.
 
@@ -45,6 +48,5 @@ Merci beaucoup, et soyez prudent
 
 love  
 joost
-
 
 

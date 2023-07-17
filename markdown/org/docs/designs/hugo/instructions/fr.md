@@ -52,7 +52,7 @@ Cette série de 6 épisodes vous montre comment réaliser votre sweat à capuche
 
   - Utilisez une surjeteuse pour coudre et surfiler la couture en une étape.  Ceci est rapide et pratique, mais donne un aspect moins raffiné.
   - Si vous n'avez pas de surjeteuse, ou si vous voulez un look plus raffiné, cousez une un point droit avec votre machine à coudre. Pressez les marges de couture en les écartant de chaque côté de la couture.  Ensuite, faites une couture au bord le long des deux côtés de la couture depuis l'endroit.  Enfin, coupez la marge de couture excédentaire.  Cela donne un aspect raffiné, mais prend plus de temps.
-  - Une autre option sans surjeteuse est de coudre la couture avec un point droit. Ensuite cousez les marges de couture avec un point supplémentaire en zig-zag le long du point droit.  Enfin, coupez l'excès de marge de couture.  Cela simule ce que ferait une surjeteuse, et c'est plus rapide que l'option (2).
+  - Une autre option sans surjeteuse est de coudre la couture avec un point droit. Ensuite cousez les marges de couture avec un point supplémentaire en zig-zag le long du point droit.  Enfin, coupez la marge de couture excédentaire.  Cela simule ce que ferait une surjeteuse, et c'est plus rapide que l'option (2).
 
 - Placez le dos de la manche sur l'arrière du sweat endroit contre endroit en faisant correspondre les doubles repères du dos et de la manche.  Faites la couture d'assemblage, puis terminez les coutures comme fait pour le devant.
 

@@ -1,5 +1,5 @@
 ---
-title: "Elastic width"
+title: "Breedte elastiek"
 ---
 
 > #### Waarom?

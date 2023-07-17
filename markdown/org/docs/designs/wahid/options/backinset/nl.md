@@ -1,5 +1,5 @@
 ---
-title: "Back inset"
+title: "Insnede rug"
 ---
 
 ![Insnede rug](backinset.svg)

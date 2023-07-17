@@ -1,5 +1,5 @@
 ---
-title: "Флорентійський капелюшок"
+title: "Пласка кепка Флорент"
 ---
 
 <PatternDocs pattern='florent' />

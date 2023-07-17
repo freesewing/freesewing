@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap back Y"
+title: "Funda atrás X"
 ---
 
 ![La posición vertical del punto de inflexión trasera](./sleevecapbackfactory.svg)

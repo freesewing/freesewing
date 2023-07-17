@@ -1,5 +1,5 @@
 ---
-title: "Плавки для гомілок"
+title: "Плавки Шін"
 ---
 
 <PatternDocs pattern='shin' />

@@ -1,5 +1,5 @@
 ---
-title: "Front pocket slant bend"
+title: "Schuine zakopening"
 ---
 
 Bepaalt de straal waarmee we het zakdeel op de rand afwerken.

@@ -1,5 +1,5 @@
 ---
-title: "Hood cutback"
+title: "Kapuzenausschnitt"
 ---
 
 ![Kapuzenausschnitt](./hoodcutback.svg)

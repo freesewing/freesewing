@@ -1,5 +1,5 @@
 ---
-title: "Seamless full circle"
+title: "Naadloze volledige cirkel"
 ---
 
 ![Naadloze volledige cirkel](seamlessfullcircle.svg)

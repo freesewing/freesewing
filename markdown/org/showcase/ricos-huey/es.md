@@ -4,8 +4,9 @@ caption: "A FreeSewing user wearing their new Huey"
 date: "2020-11-03"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/33aca2362964edd5ea4ea2363fefbdc3ce255a68-2000x1857.jpg"
 intro: "Another view"
-title: "Huey by Ricos [No traducido]"
-designs: ["huey"]
+title: "Huey by Ricos"
+designs:
+  - "huey"
 ---
 
 Another view

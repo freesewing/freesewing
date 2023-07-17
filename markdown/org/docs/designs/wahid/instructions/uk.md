@@ -1,5 +1,5 @@
 ---
-title: "Жилет вахід: Інструкція з пошиття"
+title: "Wahid waistcoat: Sewing Instructions"
 ---
 
 ### Крок 1: Взаємодія запобіжників

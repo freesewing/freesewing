@@ -16,8 +16,6 @@ Que feriez-vous si votre fille avait besoin d'un tablier pour l'école ?
 
 Parce que [c'est ce que Wouter a fait](/showcase/albert-by-wouter/), donc nous l'avons intégré dans FreeSewing v2.10, et [voilà](/designs/albert/).
 
-![Fille de Wouter portant le tablier Albert](albert.jpg)
-
-
+![Fille de Wouter portant le tablier Albert](https://posts.freesewing.org/uploads/albert_08ccbfc95b.jpg)
 
 

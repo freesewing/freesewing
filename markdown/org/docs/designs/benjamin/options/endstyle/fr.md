@@ -1,5 +1,5 @@
 ---
-title: "Style des extrémités"
+title: "Style de l'extrémité"
 ---
 
 ![Trois formes de pointe différentes](endstyle.svg)
@@ -12,4 +12,4 @@ En plus d'avoir quatre styles de nœud papillon différents, chaque style peut �
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](benjamin_endstyle_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](benjamin_endstyle_sample.svg "Effet de cette option sur le motif")

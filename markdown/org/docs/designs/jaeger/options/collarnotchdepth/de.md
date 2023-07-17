@@ -1,5 +1,5 @@
 ---
-title: "Collar notch depth"
+title: "Kragentiefe"
 ---
 
 ![Kragentiefe](collarnotchdepth.svg)

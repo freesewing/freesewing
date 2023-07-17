@@ -1,13 +1,13 @@
 ---
 maker: "unknown"
 caption: "Check out that ribbing!"
-date: "2020-11-27"
+date: "27.11.2020"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c73a63d22b171ce29161c068b9b259ba70e26d4d-1080x1080.jpg"
 intro: "Saul sewed up this Hugo hoodie in black, but gave it that extra something with bright pink ribbing at the hem and wrists. Can't buy that at the shop!"
-title: "[auf Englisch] Black Hugo with Pink Ribbing by Saul"
-designs: ["hugo"]
+title: "Black Hugo with Pink Ribbing by Saul"
+designs:
+  - "hugo"
 ---
-
 
 Saul sewed up this Hugo hoodie in black, but gave it that extra something with bright pink ribbing at the hem and wrists. Can't buy that at the shop!
 

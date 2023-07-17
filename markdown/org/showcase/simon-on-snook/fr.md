@@ -5,7 +5,8 @@ date: "2017-11-25"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/adbe9f0fb465866669913ed393d77c0ae48a59f7-2000x2667.jpg"
 intro: "Une chemise Simon par Kris pour son Snook"
 title: "Une chemise Simon par Kris pour son Snook"
-designs: ["simon"]
+designs:
+  - "simon"
 ---
 
 ![Vue du dos](https://posts.freesewing.org/uploads/simon_on_snook_high_back_405a53e578.jpg "Vue du dos")

@@ -4,8 +4,9 @@ caption: "Huey hoodie by Minty"
 date: "2021-03-06"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1ae81c4f08dd21d7db28538399d818c72ff586a9-810x1083.jpg"
 intro: "This fantastic Huey hoodie was made by Minty! Minty shared that he made this with a regular machine instead of a serger."
-title: "[auf Englisch] Huey by Minty"
-designs: ["huey"]
+title: "Huey by Minty"
+designs:
+  - "huey"
 ---
 
 This fantastic Huey hoodie was made by Minty! Minty shared that he made this with a regular machine instead of a serger.

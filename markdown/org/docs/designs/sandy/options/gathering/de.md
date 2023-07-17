@@ -1,5 +1,5 @@
 ---
-title: "Gathering"
+title: "Kräuseln"
 ---
 
 ![Kräuseln](gathering.svg)

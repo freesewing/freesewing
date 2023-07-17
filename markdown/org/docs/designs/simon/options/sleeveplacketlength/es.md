@@ -1,5 +1,5 @@
 ---
-title: "Sleeve placket length"
+title: "Longitud de la vista de la manga"
 ---
 
 ![Longitud de la vista de la manga](sleeveplacketlength.svg)

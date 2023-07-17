@@ -7,7 +7,7 @@ title: "Titan trouser block: Cutting Instructions"
 - Cut **2 front** parts with _good sides together_
 - Cut **2 back** parts with _good sides together_
 
-These cutting instructions are just for the default Titan block. Ajustez votre coupe en conséquence si vous avez apporté des modifications au bloc.
+These cutting instructions are just for the default Titan block. Si vous faites des changements sur le bloc ajustez votre coupe en fonction.
 
 <Note>
 

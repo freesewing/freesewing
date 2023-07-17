@@ -1,5 +1,5 @@
 ---
-title: "Lapel reduction"
+title: "Réduction de revers"
 ---
 
 Combien la pointe des revers se réduit vers l'intérieur.
@@ -11,4 +11,4 @@ It is common to have the edge of the lapels not be entirely straight, but rather
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_lapelreduction_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_lapelreduction_sample.svg "Effet de cette option sur le motif")

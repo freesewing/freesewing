@@ -4,7 +4,7 @@ caption: "Like history? Then this release is going to be right up your alley."
 date: "2021-10-17"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/af326b5b6326911272ed989947e8cafe22966019-1920x1280.jpg"
 intro: "I've just pulled the release lever on version 2.19 of FreeSewing and there's a lot that went into this release. For full details, you can check out the changelog , here I'll stick to the highlights:"
-title: "FreeSewing 2.19 brings Bee, Lunetius, Tiberius, Walburga, a new plugin, and a bunch of improvements and fixes [Non traduit]"
+title: "FreeSewing 2.19 brings Bee, Lunetius, Tiberius, Walburga, a new plugin, and a bunch of improvements and fixes"
 ---
 
 I've just pulled the release lever on version 2.19 of FreeSewing and there's a lot that went into this release. For full details, you can [check out the changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md#2190-2021-10-17), here I'll stick to the highlights:
@@ -13,9 +13,9 @@ I've just pulled the release lever on version 2.19 of FreeSewing and there's a l
 
 [Lunetius](/designs/lunetius), [Tiberius](/designs/tiberius/), and [Walburga](/designs/walburga/) are three new patters from **Rika Tamaike** who is the latest addition to our growing team of designers. These are all historical pattern:
 
- - Lunetius is a lacerna, a historical Roman cloak
- - Tiberius is a historical Roman tunic
- - Walburga is a tabard/surcoat, a historical garment from medieval Europe
+ - Lunetius est une lacerne, un manteau romain historique
+ - Tiberius est une tunique romaine historique
+ - Walburga est un tabard/surcot, un vêtement historique de l'Europe médiévale
 
 I'm not much of a history buff myself, so I'm looking forward to see what these will look like when people are going to start making them. What I can say for sure is that all of these are pretty straight-forward, so they should be fun to make.
 

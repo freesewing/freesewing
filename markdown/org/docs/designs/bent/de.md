@@ -1,5 +1,5 @@
 ---
-title: "Bent body Block"
+title: "Bent, ein Grundschnitt"
 ---
 
 <PatternDocs pattern='bent' />

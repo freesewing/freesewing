@@ -1,5 +1,5 @@
 ---
-title: "Ribbing stretch"
+title: "Extensión de tejido acanalado"
 ---
 
 ![Ribbing en Hugo](./ribbingstretch.svg)

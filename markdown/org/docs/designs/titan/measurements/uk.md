@@ -1,5 +1,5 @@
 ---
-title: "Титанова колодка для штанів: Необхідні виміри"
+title: "Titan trouser block: Required Measurements"
 ---
 
 <PatternMeasurements pattern='titan' />

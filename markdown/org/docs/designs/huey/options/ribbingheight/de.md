@@ -1,5 +1,5 @@
 ---
-title: "Bündchen Breite (Höhe)"
+title: "Bündchen-Höhe"
 ---
 
 ![Bündchen-Höhe](ribbingheight.svg)

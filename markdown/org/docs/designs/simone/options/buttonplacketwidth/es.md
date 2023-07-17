@@ -1,5 +1,5 @@
 ---
-title: "Button placket width"
+title: "Anchura de la vista de los botones"
 ---
 
 ![Anchura de la vista de los botones](buttonplacketwidth.svg)

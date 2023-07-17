@@ -1,10 +1,10 @@
 ---
-title: "Велосипедні бриджі Cornelius: Що вам потрібно"
+title: "Cornelius cycling breeches: What You Need"
 ---
 
 Щоб зробити Корнеліуса, вам знадобиться наступне:
 
-- Основні матеріали для шиття
+- Базові матеріали для шиття
 - Приблизно 2 метри (2,2 ярда) відповідної тканини ([див. варіанти тканини Cornelius](/docs/patterns/cornelius/fabric/))
 - Приблизно 0,5 метра (0,6 ярдів) підкладкової тканини ([див. варіанти тканини Cornelius](/docs/patterns/cornelius/fabric/))
 - Інтерфейс для поясу ([див. варіанти тканини Cornelius](/docs/patterns/cornelius/fabric/))

@@ -1,8 +1,8 @@
 ---
-title: "Waistband width"
+title: "Breedte tailleband"
 ---
 
-De breedte van de tailleband.
+Bepaalt de breedte van de tailleband.
 
 ## Effect van deze optie op het patroon
 

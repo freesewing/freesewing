@@ -1,5 +1,5 @@
 ---
-title: "Bow length"
+title: "Lengte strik"
 ---
 
 ![Lengte strik](bowlength.svg)

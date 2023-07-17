@@ -1,5 +1,5 @@
 ---
-title: "Inner pocket placement"
+title: "Plaatsing binnenzak"
 ---
 
 De locatie van de binnenzakken.

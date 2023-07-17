@@ -1,5 +1,5 @@
 ---
-title: "Chest ease"
+title: "Overwijdte borst"
 ---
 
 ![Overwijdte borst](./chestease.svg)

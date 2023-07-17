@@ -3,10 +3,9 @@ author: "joostdecock"
 caption: "We bouwen een trouwe supportersgroep om mee te werken aan een duurzame toekomst voor FreeSewing.org, onze code, onze patronen en onze community."
 date: "2017-12-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/84e39d762790744f10fe17bcb971f99e98550299-2000x1334.jpg"
-intro: "Elk jaar schrijf ik op deze dag neer wat er gebeurd is in de afgelopen twaalf maanden en kijk ik vooruit naar wat je in het komende jaar kan verwachten."
+intro: "Oproep aan alle Patrons: sluit je aan bij onze trouwe supportersgroep"
 title: "Oproep aan alle Patrons: sluit je aan bij onze trouwe supportersgroep"
 ---
-
 
 Elk jaar schrijf ik op deze dag neer wat er gebeurd is in de afgelopen twaalf maanden en kijk ik vooruit naar wat je in het komende jaar kan verwachten.
 
@@ -20,7 +19,7 @@ In maart van dit jaar [werd de FreeSewing core v1.0.0 gelanceerd](/blog/announci
 
 Veel, zo blijkt. Dat is steeds duidelijker geworden sinds [de lancering van FreeSewing.org](/blog/open-for-business/) eind augustus.
 
-![Afbeelding van de oorspronkelijke blogpost met de aankondiging](open.jpg)
+![Afbeelding van de oorspronkelijke blogpost met de aankondiging](https://posts.freesewing.org/uploads/open_e799153fa2.jpg)
 
 Op kerstdag is het (nog maar) vier maanden geleden sinds die lancering. Maar in die tijd hebben we **2735 gebruikers** geregistreerd voor wie we **1522 patroonversies** en **2359 modellen** hosten.
 
@@ -37,7 +36,7 @@ Probeer gerust om op de link te klikken, maar je komt toch terug hier terecht.
 
 MakeMyPattern.com zag het levenslicht in 2012. Daarna heeft het een paar transformaties meegemaakt. En nu is het dus vervangen en verbeterd met FreeSewing.org.
 
-![Was het een M? Een boek? Een vogel? Een stel borsten? We zullen het nooit weten](mmp.png)
+![Was het een M? Een boek? Een vogel? Een stel borsten? We zullen het nooit weten](https://posts.freesewing.org/uploads/mmp_27886c8346.png)
 
 We hebben het goed gehad samen. En naar mijn gevoel is het voor elk project een mooi einde als je opgevreten wordt door iets dat beter is dan jij, en waar je zelf de inspiratie voor bent geweest.
 
@@ -62,7 +61,8 @@ Maar ik wil volkomen transparant zijn over wat er hier gebeurt, dus ik heb mijn 
 > 
 > Ik ben bevoorrecht, en dus heb ik verantwoordelijkheden. Ik heb het enorme geluk dat ik geboren ben in West-Europa, een goede job heb en een dak boven mijn hoofd.
 > 
-> Zou ik het geld kunnen gebruiken? Ja, zeker. Heb ik het geld nodig? Nee, dat niet.
+> Zou ik het geld kunnen gebruiken? Ja, dat zou kunnen.  
+> Heb ik het geld nodig? Nee, dat niet.
 > 
 > ##### De waarde van jullie steun
 > 
@@ -98,9 +98,10 @@ Dus doen we vanaf vandaag een oproep voor Patrons.
 
 ## Word een FreeSewing-Patron
 
-Om een duurzame toekomst te verzekeren voor FreeSewing.org, onze code, onze patronen en onze gemeenschap, moeten we bouwen aan een stevige basis van trouwe supporters. Patrons die onze kerntaak ondersteunen: een open-sourceplatform ontwikkelen voor naaipatronen op maat.
+Om een duurzame toekomst voor freesewing.org, onze code, onze patronen en onze gemeenschap te garanderen, moeten we een basis van trouwe supporters opbouwen.  
+Donateurs die ons steunen in ons kernwerk; het ontwikkelen van een open source platform voor op maat gemaakte naaipatronen.
 
-![Er bestaan drie niveaus voor Patrons](patron-medals.jpg)
+![Er bestaan drie niveaus voor Patrons](https://posts.freesewing.org/uploads/patron_medals_2160e69d77.jpg)
 
 We hebben verschillende niveaus voor Patrons, elk met zijn eigen voordelen. Je kan ons al ondersteunen vanaf 2 euro, en het duurt maar een minuutje.
 
@@ -120,9 +121,11 @@ Bedankt, en maak er een topjaar van.
 
 joost
 
-<small>PS Het zou jammer zijn als er mensen zijn die ons wel zouden willen steunen, maar dit project niet kennen. 
-Dus misschien kan je [deze afbeelding](patrons-ig.png) delen op je sociale media? <i class="fa fa-arrow-down" aria-hidden="true"></i></small>
+<small>PS Het zou jammer zijn als er mensen zijn die ons wel zouden willen steunen, maar dit project niet kennen. Dus misschien kan je [deze afbeelding](patrons-ig.png) delen op je sociale media? <i class="fa fa-arrow-down" aria-hidden="true"></i></small>
 
-![Sharing is caring!](patrons-ig.png)
+![Sharing is caring!](https://posts.freesewing.org/uploads/patrons_ig_45e11fe270.png)
+
+
+
 
 

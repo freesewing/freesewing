@@ -3,14 +3,12 @@ author: "joostdecock"
 caption: "Hat-tip to nappy.co for the picture"
 date: "2021-05-24"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0145547c8ba61dde1a6553dc8de318f53e27cbe5-2000x1333.jpg"
-intro: "FreeSewing 2.16 comes with React 17 and Webpack 5 [No traducido]"
-title: "FreeSewing 2.16 comes with React 17 and Webpack 5 [No traducido]"
+intro: "FreeSewing 2.16 comes with React 17 and Webpack 5"
+title: "FreeSewing 2.16 comes with React 17 and Webpack 5"
 ---
 
 
-We released FreeSewing v2.16 today. 
-To the casual observer, there's not that many changes. 
-And for users of this website, that's certainly the case.
+We released FreeSewing v2.16 today. To the casual observer, there's not that many changes. And for users of this website, that's certainly the case.
 
 Scratch the surface however, and you'll find a lot of work went into this release.
 
@@ -44,7 +42,7 @@ To sidestep that issue, running:
 
 ```bash
 npx create-freesewing-pattern
-``` 
+```
 
 will now symlink `example/src/pattern` to the root folder of your pattern. That brings the code into the local scope, so it can be correctly loaded and fast-refreshed.
 

@@ -1,17 +1,17 @@
 ---
 maker: "Anneke Caramin"
-caption: "Anneke mit ihrem neusten Huey, diesmal in Schwarz."
-date: "2020-10-29"
+caption: "Anneke mit ihrem neuesten Huey, diesmal in Schwarz."
+date: "29.10.2020"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4e6d5a2fdf43b6904230f7ef7594bbcd41dd8759-640x640.jpg"
-intro: "Anneke hat einige Variationen des Hey Kapuzenpullis gemacht. Check out her other ones here and here ."
+intro: "Ein schwarzer Huey von Anneke"
 title: "Ein schwarzer Huey von Anneke"
-designs: ["huey"]
+designs:
+  - "huey"
 ---
 
-Anneke hat einige Variationen des Hey Kapuzenpullis gemacht. Check out her other ones [here](https://freesewing.org/showcase/anneke-huey/) and [here](https://freesewing.org/showcase/anneke-huey-grey/).
+Anneke hat einige Variationen des Huey-Kapuzenpullis gemacht. Schau dir ihre anderen Versionen [hier](https://freesewing.org/showcase/anneke-huey/) und [hier](https://freesewing.org/showcase/anneke-huey-grey/) an.
 
 Andere Ansichten.
-
 
 ![Frontansicht von Huey](https://posts.freesewing.org/uploads/anneke_huey_black_anneke2_a377a78430.jpg "Frontansicht von Huey")
 

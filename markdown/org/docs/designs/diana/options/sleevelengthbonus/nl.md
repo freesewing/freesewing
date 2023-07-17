@@ -1,5 +1,5 @@
 ---
-title: "Sleeve length bonus"
+title: "Bonus mouwlengte"
 ---
 
 ![De optie voor bonus mouwlengte bij Diana](./sleevelengthbonus.svg)

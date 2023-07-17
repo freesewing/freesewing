@@ -1,5 +1,5 @@
 ---
-title: "Chapeau de détective Holmes : Options de Style"
+title: "Holmes deerstalker hat: Design Options"
 ---
 
 <PatternOptions pattern='holmes' />

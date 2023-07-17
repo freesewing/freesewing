@@ -1,367 +1,319 @@
 ---
 author: "joostdecock"
-caption: "This image is probably the only thing in the post you can skim diagonally"
+caption: "Deze afbeelding is waarschijnlijk het enige in de post dat je diagonaal kunt bekijken"
 date: "2018-02-14"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/39f3d1e7320510b2dd12cc1bc2e58008263889f3-1920x1280.webp"
-intro: "The General Data Protection Regulation of the European Union: Our battle plan. [Niet vertaald]"
-title: "The General Data Protection Regulation of the European Union: Our battle plan. [Niet vertaald]"
+intro: "De Algemene Verordening Gegevensbescherming van de Europese Unie: Ons strijdplan."
+title: "De Algemene Verordening Gegevensbescherming van de Europese Unie: Ons strijdplan."
 ---
 
-This blog post is about the General Data Protection Regulation (GDPR) of the European Union (EU). 
-While I cover the basics of GDPR, the main focus is on how it impacts freesewing.org, and what we plan to do to in the 100 days that remain
-before GDPR goes into force.
+Deze blogpost gaat over de General Data Protection Regulation (GDPR) van de Europese Unie (EU). Hoewel ik de basisprincipes van GDPR behandel, gaat de aandacht vooral uit naar de gevolgen voor freesewing.org en wat we van plan zijn te doen in de 100 dagen die ons nog resten voordat GDPR van kracht wordt.
 
-This is a bit of a long read, so here's a table of contents:
+Dit is een beetje lang om te lezen, dus hier is een inhoudsopgave:
 
-## Thoughts on the EU's GDPR
+## Gedachten over de GDPR van de EU
 
-I have a love/hate relationship with the European Union. 
-I love what they do and what they stand for, I hate how they do it.
+Ik heb een haat-liefdeverhouding met de Europese Unie. Ik hou van wat ze doen en waar ze voor staan, ik haat hoe ze het doen.
 
-![I totally get this dude](https://posts.freesewing.org/uploads/rage_quit_fff821e695.gif)
+![Ik snap deze gast helemaal](https://posts.freesewing.org/uploads/rage_quit_fff821e695.gif)
 
-The GDPR is no different. 
-It's an important piece of legislation that raises the bar for online privacy, which is great.
-But as I was reading up on the subject, I felt the urge to rage-quit because OMG bureaucrats.
+De GDPR is niet anders. Het is een belangrijk stuk wetgeving dat de lat hoger legt voor online privacy, wat geweldig is. Maar toen ik over het onderwerp aan het lezen was, kreeg ik de neiging om te razen omdat OMG bureaucraten.
 
-Allow me to explain.
+Laat het me uitleggen.
 
-### Privacy needs protection
-For better or for worse (I believe for worse) the internet has settled into a modus operandi 
-where you pay for *free stuff* with your personal data. 
-Some people call it [people farming](https://ar.al/notes/we-didnt-lose-control-it-was-stolen/), and I think that's a great term.
+### Privacy moet worden beschermd
+In voor- en tegenspoed (ik geloof in tegenspoed) heeft het internet zich gevestigd in een modus operandi waarbij je betaalt voor *gratis spullen* met je persoonlijke gegevens. Sommige mensen noemen het [people farming](https://ar.al/notes/we-didnt-lose-control-it-was-stolen/), en ik vind dat een geweldige term.
 
-The [frightful five](https://www.nytimes.com/2017/05/10/technology/techs-frightful-five-theyve-got-us.html)
-are vacuuming up ever more of our personal lives. 
-Short of never going online, there seems to be precious little we can do about it.
+De [angstaanjagende vijf](https://www.nytimes.com/2017/05/10/technology/techs-frightful-five-theyve-got-us.html) zuigen steeds meer van ons persoonlijke leven op. We kunnen er weinig aan doen, behalve nooit online gaan.
 
-### Why the EU is the best
-This problem is too big to tackle by any of us. 
-Who could possibly stand up to the combined power of the tech giants?
+### Waarom de EU de beste is
+Dit probleem is te groot om door iemand van ons te worden aangepakt. Wie kan er op tegen de gecombineerde macht van de techreuzen?
 
-Well, how's this for a CV:
+Nou, wat vind je hiervan voor een CV:
 
-  - Fined Facebook 110 million euro for misleading statements about their WhatsApp purchase
-  - Ordered Amazon to pay 250 million euro extra taxes in Luxembourg 
-  - Fined Google 2.4 billion euro for abusing its dominant position in search
-  - Ordered Apple to pay 13 billion euro extra taxes in Ireland
+  - Facebook 110 miljoen euro boete opgelegd voor misleidende verklaringen over hun WhatsApp-aankoop
+  - Amazon veroordeeld tot 250 miljoen euro extra belastingen in Luxemburg
+  - Google 2,4 miljard euro boete opgelegd voor misbruik dominante positie in search
+  - Apple veroordeeld tot het betalen van 13 miljard euro extra belastingen in Ierland
 
-![We're the EU, bitch](titanfall.gif)
+![Wij zijn de EU, trut](titanfall.gif)
 
-When it comes to tech giants, the European Union is all stick/ no carrot.
+Als het op techreuzen aankomt, is de Europese Unie een en al stok en geen wortel.
 
-The General Data Protection Regulation enforces privacy policies that respect users' rights.
-It applies to all EU citizens, all the time, everywhere. 
+De Algemene Verordening Gegevensbescherming dwingt een privacybeleid af dat de rechten van gebruikers respecteert. Het geldt voor alle EU-burgers, altijd en overal.
 
-Doesn't matter if you're a silicon valley juggernaut, respect the rights of the EU citizens or face the wrath of the eurocracy:
+Het maakt niet uit of je een silicon valley moloch bent, respecteer de rechten van de EU-burgers of wordt geconfronteerd met de toorn van de eurocratie:
 
-> Organizations in breach of GDPR can be fined up to 4% of annual global turnover or 20 million euro (whichever is greater)
+> Organisaties die de GDPR overtreden kunnen worden beboet tot 4% van de wereldwijde jaaromzet of 20 miljoen euro (de hoogste van de twee).
 
-Four percent of global turnover is *a very big stick*.
+Vier procent van de wereldwijde omzet is *een hele grote stok*.
 
-### Why the EU is the worst
+### Waarom de EU de slechtste is
 
-![What I imagine a Article 29 Working Party looks like](complicated.gif)
+![Hoe ik me voorstel dat een Artikel 29-werkgroep eruitziet](complicated.gif)
 
-The EU being the EU, the regulation is a mixed bag of lofty goals and ideals, watered down by lobbying groups, and further complicated by the compromise required to get 28 member states on board.
+Omdat de EU de EU is, is de verordening een mengelmoes van verheven doelen en idealen, afgezwakt door lobbygroepen en verder gecompliceerd door het compromis dat nodig was om 28 lidstaten aan boord te krijgen.
 
-The intentions are great, it's a great idea, but they are doing a terrible job at selling it --- as usual.
+De bedoelingen zijn goed, het is een geweldig idee, maar ze verkopen het zoals gewoonlijk verschrikkelijk slecht.
 
-The practical implementation is in the hands of the so-called *Article 29 Working Party*
-which is currently keeping busy designing icons 
-(I am [not making this up](https://www.google.be/search?q=standardised+icons+gdpr))
-It will change its name to the 
-*European Data Protection Board* come May 25th, because you wouldn't want to get too comfortable with all this jargon now, would you?
+De praktische uitvoering is in handen van de zogenaamde *Artikel 29-werkgroep* die zich momenteel bezighoudt met het ontwerpen van pictogrammen (ik verzin dit niet [](https://www.google.be/search?q=standardised+icons+gdpr)) Het zal zijn naam veranderen in het *Europees Comité voor gegevensbescherming* vanaf 25 mei, want je wilt je toch niet al te comfortabel voelen met al dit jargon?
 
-## The GDPR in practice
+## De GDPR in de praktijk
 
-If you're looking for expert advice on GDPR compliance, this is not the place for you.
+Als je op zoek bent naar deskundig advies over GDPR-compliance, dan is dit niet de plek voor jou.
 
 
-But if you are curious about the GDPR and what it takes for a website like freesewing.org
-to be compliant, read on.
+Maar als je nieuwsgierig bent naar de GDPR en wat er voor nodig is om een website als freesewing.org compliant te maken, lees dan verder.
 
-> ##### Further reading
-> If you really want to know what GDPR is, the best thing you can do is 
-> [read the damn thing](http://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX%3A32016R0679). It ain't no rocket science.
+> ##### Meer lezen
 > 
-> If legislative texts make you run for the hills, the UKs ICO has 
-> [easily one of the best guides on GDPR](https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/).
+> Als je echt wilt weten wat GDPR is, kun je het beste [lezen:](http://eur-lex.europa.eu/legal-content/en/TXT/?uri=CELEX%3A32016R0679). Het is geen raketwetenschap.
+> 
+> Als je van wetteksten op de vlucht slaat, dan heeft de ICO van het Verenigd Koninkrijk [gemakkelijk een van de beste gidsen over GDPR](https://ico.org.uk/for-organisations/guide-to-the-general-data-protection-regulation-gdpr/).
 
-### Good to know
+### Goed om te weten
 
-A few things you should know before we dive into GDPR:
+Een paar dingen die je moet weten voordat we in GDPR duiken:
 
-#### There's 100 days left
+#### Er zijn nog 100 dagen te gaan
 
-The GDPR was adopted back in 2016, but it won't grow its teeth until May 25th 2018.
+De GDPR werd al in 2016 aangenomen, maar zal pas op 25 mei 2018 zijn vruchten afwerpen.
 
-Until that day, you get a pass. After that day, it's for real. 
-Which means we have 100 days left to get our house in order.
+Tot die dag krijg je een pas. Na die dag is het echt. Dat betekent dat we nog 100 dagen hebben om ons huis op orde te krijgen.
 
-#### There's exemptions for SMEs
+#### Er zijn uitzonderingen voor KMO's
 
-Organizations employing fewer than 250 people are exempt from some of the more bureaucratic aspects of the GDPR, such as a bunch of documenting requirements.
+Organisaties met minder dan 250 werknemers zijn vrijgesteld van enkele van de meer bureaucratische aspecten van de GDPR, zoals een heleboel documentatievereisten.
 
-Essentially, while you still have to do the right thing, there's a lot less paperwork to fill out.
+Het komt erop neer dat je nog steeds het juiste moet doen, maar dat je veel minder papierwerk hoeft in te vullen.
 
-Freesewing employs zero people, so we're off the hook. 
+Freesewing heeft nul mensen in dienst, dus we zijn er vanaf.
 
-#### There's extra provisions for sensitive data
+#### Er zijn extra voorzieningen voor gevoelige gegevens
 
-> Body measurements alone are not sensitive data
+> Lichaamsmetingen alleen zijn geen gevoelige gegevens
 
-The GDPR has extra provisions for *sensitive data*
-such as biometric data, profiling, and a bunch of other stuff.
+De GDPR heeft extra bepalingen voor *gevoelige gegevens* zoals biometrische gegevens, profilering en een heleboel andere zaken.
 
-This was cause for concern because we collect body measurements, and one of our questions was whether that qualifies as biometric data.
+Dit was reden tot bezorgdheid omdat we lichaamsmetingen verzamelen en een van onze vragen was of dat als biometrische gegevens kan worden aangemerkt.
 
-Turns out it doesn't. Biometric data is what you can use to identify a person, like a fingerprint or iris scan. Body measurements alone are not sensitive data.
+Het blijkt van niet. Biometrische gegevens zijn gegevens die je kunt gebruiken om iemand te identificeren, zoals een vingerafdruk of een irisscan. Lichaamsmetingen alleen zijn geen gevoelige gegevens.
 
 
-### Collecting data through consent
+### Gegevens verzamelen met toestemming
 
-To collect data, you need a so-called *lawful basis for data processing*.  
-There are different types, but the one that applies to us (and to most online services) is **consent**.
+Om gegevens te verzamelen, heb je een zogenaamde *wettelijke basis voor gegevensverwerking nodig*.  
+Er zijn verschillende soorten, maar degene die op ons van toepassing is (en op de meeste online diensten) is **toestemming**.
 
-In this scenario, your legal basis for processing the data is that you've asked the person to get their data
-and they've freely given it to you.
+In dit scenario is je rechtsgrondslag voor het verwerken van de gegevens dat je de persoon hebt gevraagd om zijn gegevens en dat hij deze vrijwillig aan je heeft gegeven.
 
-That is straight-forward, and makes sense. But the GDPR is really serious about making sure this consent is
-freely given, and not wrestled from you grudgingly.
+Dat is eenvoudig en logisch. Maar de GDPR wil er echt voor zorgen dat deze toestemming uit vrije wil wordt gegeven en niet met tegenzin.
 
-To prevent companies from throwing up a big wall of legalese that people have to agree to, the GDPR outlines a number
-of principles this consent should adhere to. Here's a non-exhaustive list:
+Om te voorkomen dat bedrijven een grote muur van juridisch jargon opwerpen waar mensen mee moeten instemmen, schetst de GDPR een aantal van principes waaraan deze toestemming moet voldoen. Hier is een niet-uitputtende lijst:
 
- - people should have real choice and control
- - consent requires a positive opt-in, pre-ticked boxes or anything like that are not allowed
- - there should be a very clear statement explaining what people are agreeing to
- - these requests for consent must be separate from any terms & conditions
- - consent needs to be granular, you need individual consent for different things, and can't ask for blanket consent
- - it must be easy for people to redraw consent
- - consent of data processing should not be a precondition for a service
+ - mensen moeten echte keuze en controle hebben
+ - toestemming vereist een positieve opt-in, vooraf aangevinkte vakjes of iets dergelijks zijn niet toegestaan
+ - er moet een heel duidelijke verklaring zijn die uitlegt waar mensen mee akkoord gaan
+ - deze verzoeken om toestemming moeten los staan van eventuele voorwaarden &
+ - Toestemming moet gedifferentieerd zijn, je hebt individuele toestemming nodig voor verschillende dingen en kunt geen algemene toestemming vragen.
+ - het moet makkelijk zijn voor mensen om toestemming te hertekenen
+ - toestemming voor gegevensverwerking mag geen voorwaarde zijn voor een dienst
 
-Looking at that list, I can't help but feel that legislation would be a lot simpler if lawmakers could just write 
-*don't be a dick* and call it a day.
+Als ik naar die lijst kijk, kan ik me niet aan de indruk onttrekken dat wetgeving een stuk eenvoudiger zou zijn als wetgevers gewoon *don't be a dick* konden schrijven en het voor gezien houden.
 
-#### Consent granularity
+#### Granulariteit toestemming
 
-Remember, we can't just get blanket consent.
-We need to get consent for every type of data processing we do. 
+Onthoud dat we niet zomaar algemene toestemming kunnen krijgen. We hebben toestemming nodig voor elk type gegevensverwerking dat we doen.
 
-For freesewing.org, we have identified three different types of data processing:
+Voor freesewing.org hebben we drie verschillende soorten gegevensverwerking geïdentificeerd:
 
- - Profile data
- - Model data
- - Patron data
+ - Profielgegevens
+ - Modelgegevens
+ - Patroonsgegevens
 
-For each of these, we'll need to get consent from the user, making sure it's *real consent* as intended in the GDPR.
+Voor elk van deze dingen moeten we toestemming krijgen van de gebruiker, waarbij we ervoor moeten zorgen dat het *echte toestemming is* zoals bedoeld in de GDPR.
 
-Below is a mockup for what this could look like for each data type:
+Hieronder zie je een voorbeeld van hoe dit er voor elk gegevenstype uit zou kunnen zien:
 
-> ##### These mockups are no longer available
->
-> Please note that the mockups originally included in this post are no longer
-> available. Instead, this functionality has been implemented in the website.
+> ##### Deze mockups zijn niet langer beschikbaar
+> 
+> Houd er rekening mee dat de mockups die oorspronkelijk in dit bericht stonden niet langer beschikbaar zijn. In plaats daarvan is deze functionaliteit geïmplementeerd in de website.
 
-#### Consent timing
+#### Toestemming timing
 
-The GDPR states that you should ask for consent when the data is collected. 
+De GDPR stelt dat je om toestemming moet vragen wanneer de gegevens worden verzameld.
 
-With our three types of data processing, that means that consent must be asked at different times:
+Met onze drie soorten gegevensverwerking betekent dit dat er op verschillende momenten om toestemming moet worden gevraagd:
 
- - **Profile data**: When signing up on the site
- - **Model data**: When creating the first model
- - **Patron data**: When becoming a patron
+ - **Profielgegevens**: Bij het aanmelden op de site
+ - **Modelgegevens**: Bij het maken van het eerste model
+ - **Patroonsgegevens**: Als je beschermheer wordt
 
-This will (also) require some extra work to integrate this in the site.
+Dit vereist (ook) wat extra werk om dit in de site te integreren.
 
-### Respecting basic rights when processing data
+### Basisrechten respecteren bij het verwerken van gegevens
 
-The EU enshrines basic rights for its citizens that should be respected when processing data.
+De EU legt basisrechten voor haar burgers vast die gerespecteerd moeten worden bij het verwerken van gegevens.
 
-Let's look at each of these rights and their impact on freesewing.org.
+Laten we eens kijken naar elk van deze rechten en hun invloed op freesewing.org.
 
-#### The right to be informed
+#### Het recht om geïnformeerd te worden
 
-> You need to be transparent about how you use personal data. Why you collect it, how you use it, and so on.
+> Je moet transparant zijn over hoe je persoonlijke gegevens gebruikt. Waarom je het verzamelt, hoe je het gebruikt, enzovoort.
 
-Informing users is something we are still working on. If anything, this blog post is part of that effort.
+Het informeren van gebruikers is iets waar we nog aan werken. Deze blogpost maakt daar deel van uit.
 
-We will need to design the individual privacy notices, but also a more overall privacy policy as well as 
-making certain that users are informed of all their rights.
+We moeten de individuele privacyverklaringen ontwerpen, maar ook een meer algemeen privacybeleid en ervoor zorgen dat gebruikers op de hoogte zijn van al hun rechten.
 
-While this will require some work, I don't expect any problems here.
+Hoewel dit wat werk vereist, verwacht ik hier geen problemen.
 
-#### The right of access
+#### Het recht op toegang
 
-> People have the right to know their data is processed, and to access that data.
+> Mensen hebben het recht om te weten dat hun gegevens worden verwerkt en om toegang te krijgen tot die gegevens.
 
-We are already compliant, as all data users enter on the site can also be accessed by them.
+We voldoen al aan de regels, omdat alle gegevens die gebruikers invoeren op de site ook voor hen toegankelijk zijn.
 
-#### The right to rectification
+#### Het recht op rectificatie
 
-> People have the right to correct their data if it's not correct.
+> Mensen hebben het recht om hun gegevens te corrigeren als ze niet kloppen.
 
-We are already compliant, as all data users enter on the site can also be edited by them.
+We voldoen al aan de regels, omdat alle gegevens die gebruikers invoeren op de site ook door hen bewerkt kunnen worden.
 
-#### The right to erasure
+#### Het recht om te wissen
 
-> People have the right to have their data removed/erased.
+> Mensen hebben het recht om hun gegevens te laten verwijderen/verwijderen.
 
-We are already compliant, as users can remove their models, or entire account at any time.  
+We voldoen al aan de regels, omdat gebruikers hun modellen of hele account op elk moment kunnen verwijderen.
 
-#### The right to restrict processing
+#### Het recht om de verwerking te beperken
 
-This right means that users must be able to put a *freeze* on all data processing, without going as far as to delete their data.
+Dit recht houdt in dat gebruikers een *bevriezing* moeten kunnen zetten op alle gegevensverwerking, zonder dat dit zover gaat dat ze hun gegevens kunnen wissen.
 
-We do not currently offer this possibility, and will need to add this functionality to the site.
+We bieden deze mogelijkheid momenteel nog niet en zullen deze functionaliteit aan de site moeten toevoegen.
 
-#### The right to data portability
+#### Het recht op gegevensportabiliteit
 
-> People not only have a right to export all their data, that export should also be in a format that makes it easy for them to take their data elsewhere.
+> Mensen hebben niet alleen het recht om al hun gegevens te exporteren, die export moet ook in een formaat zijn waarmee ze hun gegevens gemakkelijk ergens anders mee naartoe kunnen nemen.
 
-We are already compliant, as we allow users to export all of their data, and make it available in different standard formats (YAML and JSON).
+We voldoen hier al aan, omdat we gebruikers toestaan om al hun gegevens te exporteren en deze beschikbaar te stellen in verschillende standaardformaten (YAML en JSON).
 
-#### The right to object
+#### Het recht op bezwaar
 
-> The right to object applies specifically to:
->
-> - processing for public interests or by official authorities
-> - processing for direct marketing
-> - processing for science/historic research/statistics
->
-> In these cases, people can object to this specific processing.
+> Het recht om bezwaar te maken is specifiek van toepassing op:
+> 
+> - verwerking voor openbare belangen of door officiële instanties
+> - verwerking voor direct marketing
+> - verwerking voor wetenschap/historisch onderzoek/statistiek
+> 
+> In deze gevallen kunnen mensen bezwaar maken tegen deze specifieke verwerking.
 
-This is going to apply to us when we start publishing anonymized model data, something that's on our roadmap.
+Dit gaat voor ons gelden als we geanonimiseerde modelgegevens gaan publiceren, iets wat op onze roadmap staat.
 
-The reason for publishing this data is that we want to make a dataset available of *real* body measurements, rather than the
-*standard* measurements that are typically used in the industry.
+De reden voor het publiceren van deze gegevens is dat we een dataset beschikbaar willen maken van *echte* lichaamsmetingen, in plaats van de *standaard* metingen die meestal in de industrie worden gebruikt.
 
-This is something we'll write about more at a later date, but essentially this falls under the *scientific research/statistics* category.
-And even though the data is anonimized, we still need to respect the right of users to object to this processing.
+Hierover zullen we later meer schrijven, maar in wezen valt dit onder de categorie *wetenschappelijk onderzoek/statistiek* . En ook al zijn de gegevens geanonimiseerd, we moeten nog steeds het recht van gebruikers respecteren om bezwaar te maken tegen deze verwerking.
 
-As such, we should add the possibility to object to this specific use of the data.
+Daarom moeten we de mogelijkheid toevoegen om bezwaar te maken tegen dit specifieke gebruik van de gegevens.
 
-#### Rights in relation to automated decision making and profiling
+#### Rechten met betrekking tot geautomatiseerde besluitvorming en profilering
 
-> People have extra rights when it comes to profiling or decisions made by AI or algorithms without human involvement.
+> Mensen hebben extra rechten als het gaat om profilering of beslissingen die door AI of algoritmes worden genomen zonder menselijke betrokkenheid.
 
-This is not relevant in our situation.
+Dit is niet relevant in onze situatie.
 
-### Privacy by design
+### Privacy door ontwerp
 
-The EU isn't content with throwing up a couple of consent questions and respecting people's rights when processing data.
-It also wants to make certain that your privacy is (better) protected when things go wrong.
+De EU is niet tevreden met een paar toestemmingsvragen en het respecteren van de rechten van mensen bij het verwerken van gegevens. Het wil er ook voor zorgen dat je privacy (beter) beschermd is als het misgaat.
 
-That's why it advocates for *privacy by design*. While it's a concept that's hard to pin down in legislation, the 
-purpose is clear: They want everyone to consider privacy from the very start of their project/product/business, and
-not as an afterthought.
+Daarom pleit het voor *privacy by design*. Hoewel het een concept is dat moeilijk is vast te leggen in wetgeving, is het doel van duidelijk: ze willen dat iedereen vanaf het begin van hun project/product/bedrijf rekening houdt met privacy, en niet als bijzaak.
 
-Things such as encryption (both in transit and for data at-rest), pseudonyms, and data expiry are suggested as 
-things to keep in mind while designing.
+Zaken als versleuteling (zowel tijdens het transport als voor gegevens in rust), pseudoniemen en het verlopen van gegevens worden voorgesteld als zaken om in gedachten te houden tijdens het ontwerpen.
 
-Obviously, the EU is not going to come check your code to see whether you've taken privacy by design to heart.
-But it can (and probably will) have an influence when things to wrong.
+Het is duidelijk dat de EU je code niet komt controleren om te zien of je privacy by design ter harte hebt genomen. Maar het kan (en zal waarschijnlijk) invloed hebben als het misgaat.
 
-Imagine two companies who have a data leak, one of them hasn't done much to safeguard the privacy of their users,
-whereas the other has taken *privacy by design* measures to mitigate the damage.
+Stel je twee bedrijven voor die een datalek hebben, de ene heeft niet veel gedaan om de privacy van hun gebruikers te waarborgen, terwijl de andere *privacy by design* maatregelen heeft genomen om de schade te beperken.
 
-It seems obvious that the EU is going to come down harder on the company who didn't even try. 
+Het lijkt voor de hand te liggen dat de EU harder zal optreden tegen het bedrijf dat het niet eens heeft geprobeerd.
 
-#### What we're already doing
+#### Wat we al doen
 
-We already do a number of things that are driven by a *privacy by design* approach. For example:
+We doen al een aantal dingen die worden aangestuurd door een *privacy by design* benadering. Bijvoorbeeld:
 
- - We use pseudonyms for user accounts
- - We don't share any data with any third party
- - We don't include any tracking code, or analytics
- - We don't use cookies
- - We don't have any social logins, like buttons, or other such things
- - We don't run/show any ads
- - We don't run any third-party JavaScript code
- - We use encryption on all transport
+ - We gebruiken pseudoniemen voor gebruikersaccounts
+ - We delen geen gegevens met derden
+ - We voegen geen trackingcode of analytics toe
+ - We gebruiken geen cookies
+ - We hebben geen sociale logins, like-knoppen of dergelijke dingen
+ - We laten geen advertenties zien
+ - We voeren geen JavaScript-code van derden uit
+ - We gebruiken encryptie op alle transporten
 
-There's some more info on this in this blog post: 
-[The choices I've made to protect your privacy. Or why you won't be getting any cookies](/blog/privacy-choices/).
+Meer informatie hierover vind je in deze blogpost: [De keuzes die ik heb gemaakt om je privacy te beschermen. Of waarom je geen koekjes krijgt](/blog/privacy-choices/).
 
-These already form a very good basis for a privacy conscious website. But since we'll need to make changes
-for GDPR anyway, we're considering other options to further raise the privacy bar.
-Specifically, what can we do to limit the damage to our users in case there is a data leak.
+Deze vormen al een heel goede basis voor een privacybewuste website. Maar omdat we toch al wijzigingen moeten aanbrengen voor GDPR, overwegen we andere opties om de privacylat nog hoger te leggen. Specifiek: wat kunnen we doen om de schade voor onze gebruikers te beperken als er een datalek is?
 
-#### Restriction of data storage
+#### Beperking van gegevensopslag
 
-Some of the most sensitive data we store today is the address and birthday of our higher-tier patrons.
+Sommige van de meest gevoelige gegevens die we tegenwoordig opslaan zijn het adres en de geboortedatum van onze hooggeplaatste klanten.
 
-However, the site does not need this information to function. We only need it for administrative purposes; 
-Sending out gifts and birthday cards to our patrons.
+De site heeft deze informatie echter niet nodig om te functioneren. We hebben het alleen nodig voor administratieve doeleinden; Het versturen van cadeaus en verjaardagskaarten naar onze klanten.
 
-As such, there's no real need to keep this data in the freesewing database. 
-We could just as well write this information down in a notebook we keep on our coffee table.
+Daarom is het niet echt nodig om deze gegevens in de freesewing database te bewaren. We kunnen deze informatie net zo goed opschrijven in een notitieboekje dat we op onze salontafel bewaren.
 
-So, as part of our GDPR-related changes, we will remove this information from the database, and store it 
-offline.
+Als onderdeel van onze GDPR-gerelateerde veranderingen zullen we deze informatie uit de database verwijderen en offline opslaan op .
 
-#### Encryption of data at rest
+#### Encryptie van gegevens in rust
 
-We already encrypt all data in transit. But, we are currently considering to add encryption of data at rest.
+We versleutelen alle gegevens al tijdens het transport. Maar we overwegen momenteel om encryptie van gegevens in rust toe te voegen.
 
-The idea is to encrypt all data that could potentially identify a user. 
-Such as:
+Het idee is om alle gegevens te versleutelen waarmee een gebruiker mogelijk kan worden geïdentificeerd. Zoals:
 
- - Email address
- - User name
- - Model names
- - Model notes
+ - E-mailadres
+ - Gebruikersnaam
+ - Modelnamen
+ - Model opmerkingen
 
-This would add an extra layer of defense for our users' privacy in case somehow our database gets dumped.
+Dit zou een extra verdedigingslaag voor de privacy van onze gebruikers toevoegen voor het geval onze database op de een of andere manier wordt gedumpt.
 
-While this change will be non-trivial to implement and come with a performance penalty, I feel it's
-worth looking in to.
+Hoewel deze verandering niet-triviaal zal zijn om te implementeren en met een prestatieverlies gepaard zal gaan, vind ik dat het de moeite waard is om naar te kijken.
 
-## Conclusion
+## Conclusie
 
-While we still have some work to do, we are already compliant with large parts of the GDPR, especially when
-it comes to respecting users rights:
+Hoewel we nog wat werk te doen hebben, voldoen we al aan grote delen van de GDPR, vooral op als het gaat om het respecteren van gebruikersrechten:
 
- - The right to be informed
- - The right of access
- - The right to rectification
- - The right to erasure
- - The right to restrict processing
- - The right to data portability
- - The right to object
- - Rights in relation to automated decision making and profiling
+ - Het recht om geïnformeerd te worden
+ - Het recht op toegang
+ - Het recht op rectificatie
+ - Het recht om te wissen
+ - Het recht om de verwerking te beperken
+ - Het recht op gegevensportabiliteit
+ - Het recht op bezwaar
+ - Rechten met betrekking tot geautomatiseerde besluitvorming en profilering
 
-We are currently working on *the right to be informed* and have a plan
-for the changes required to respect *the right to restrict processing* and *the right to object*.
+We werken momenteel aan *het recht om geïnformeerd te worden* en hebben een plan voor de wijzigingen die nodig zijn om *het recht om de verwerking te beperken* en *het recht om bezwaar te maken*te respecteren.
 
-On the data collection site, we need to hammer out the details for our privacy notices.
-We'll also write a detailed privacy policy that bundles all the info from the different notices.
+Op de site voor het verzamelen van gegevens moeten we de details voor onze privacyverklaringen uitwerken. We schrijven ook een gedetailleerd privacybeleid waarin alle informatie uit de verschillende mededelingen wordt gebundeld.
 
-We'll need to add changes to the user on-boarding to make sure notices are presented at the correct time.
-Not to mention that we'll need to keep track of who gave their consent for what.
+We moeten wijzigingen aanbrengen in de gebruikersregistratie om ervoor te zorgen dat meldingen op het juiste moment worden gepresenteerd. En dan hebben we het er nog niet eens over dat we moeten bijhouden wie waarvoor toestemming heeft gegeven.
 
-### Action points
+### Actiepunten
 
- - Draft privacy notices for profile/model/patron data
- - Integrate consent in user on-boarding, model creation, and patron sign-up
- - Make site functionality depend on consent
- - Provide a centralized privacy dashboard where people can review their privacy settings/consent
- - Add email notifications every time consent is changed
- - Provide a way for people to *freeze* their account
- - Provide a way for people to object to their model data being used for research and statistics
- - Write and publish an overall privacy policy
- - Encrypt sensitive data in the database
+ - Opstellen privacyverklaringen voor profiel/model/patrongegevens
+ - Integreer toestemming bij het inwerken van gebruikers, het maken van modellen en het aanmelden van begunstigers
+ - Website functionaliteit afhankelijk maken van toestemming
+ - Zorg voor een centraal privacy dashboard waar mensen hun privacy-instellingen/toestemming kunnen bekijken
+ - E-mailmeldingen toevoegen telkens als toestemming wordt gewijzigd
+ - Mensen een manier bieden om *hun account te bevriezen*
+ - Mensen een manier bieden om bezwaar te maken tegen het gebruik van hun modelgegevens voor onderzoek en statistiek
+ - Een algemeen privacybeleid schrijven en publiceren
+ - Gevoelige gegevens in de database versleutelen
 
-Seems like we've got a lot of work ahead of us.
+Het lijkt erop dat we veel werk voor de boeg hebben.
 
 ### Feedback
 
-It is my personal opinion that the GDPR is a good thing.
-But I want to hear from you about the changes outlined in this blog post.
+Persoonlijk ben ik van mening dat de GDPR een goede zaak is. Maar ik wil graag van je horen over de veranderingen die in deze blogpost worden beschreven.
 
-So please reach out with your feedback and comments.
-It is after all your data we're talking about.
+Dus geef alsjeblieft feedback en commentaar. Het zijn tenslotte jouw gegevens waar we het over hebben.
 
 

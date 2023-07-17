@@ -1,5 +1,5 @@
 ---
-title: "Cuff narrow button"
+title: "Botón de ajuste del puño"
 ---
 
 ![Botón estrecho de corte de cañón](./barrelcuffnarrowbutton.svg)

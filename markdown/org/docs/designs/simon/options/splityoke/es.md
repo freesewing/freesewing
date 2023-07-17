@@ -1,5 +1,5 @@
 ---
-title: "Split yoke"
+title: "Canesú partido"
 ---
 
 ![Canesú partido](splityoke.svg)

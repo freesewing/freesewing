@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap back Y"
+title: "Armkugel Hinten Y"
 ---
 
 ![Die vertikale Position des Rückenbiegepunkts](./sleevecapbackfactory.svg)

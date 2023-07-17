@@ -1,5 +1,5 @@
 ---
-title: "Waist dart"
+title: "Taille neep"
 ---
 
 Whether or not to inlude a back waist dart to round the back.

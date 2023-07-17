@@ -1,5 +1,5 @@
 ---
-title: "Waist dart size"
+title: "Tamaño dart de Waist"
 ---
 
 The size of the back waist dart

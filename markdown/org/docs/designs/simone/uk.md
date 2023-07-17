@@ -1,5 +1,5 @@
 ---
-title: "Сорочка Симона"
+title: "Сорочка Сімон"
 ---
 
 <PatternDocs pattern='simone' />

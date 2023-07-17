@@ -1,5 +1,5 @@
 ---
-title: "Simon shirt"
+title: "Simon, das Hemd"
 ---
 
 <Tip>

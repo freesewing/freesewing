@@ -1,11 +1,12 @@
 ---
 maker: "unknown"
 caption: "You'll never look at those blankets on a plane the same way again."
-date: "2018-02-05"
+date: "05.02.2018"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9a8c3ceab1c7e91e3a6740fe34e73e8abec95acd-1080x1080.jpg"
-intro: "This image is from the Instagram feed of funloveadventure . It is published here with permission."
-title: "[auf Englisch] A Sven made out of two airline blankets"
-designs: ["sven"]
+intro: "A Sven made out of two airline blankets"
+title: "A Sven made out of two airline blankets"
+designs:
+  - "sven"
 ---
 
 

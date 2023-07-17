@@ -1,5 +1,5 @@
 ---
-title: "Collar height"
+title: "Hoogte kraag"
 ---
 
 ![Hoogte kraag](collarheight.svg)

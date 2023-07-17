@@ -1,5 +1,5 @@
 ---
-title: "Back neck cutout"
+title: "Hals uitsnijding achteraan"
 ---
 
 ![Hals uitsnijding achteraan](backneckcutout.svg)

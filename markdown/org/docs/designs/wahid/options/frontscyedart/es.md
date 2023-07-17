@@ -1,5 +1,5 @@
 ---
-title: "Front scye dart"
+title: "Pinza frontal de la sisa"
 ---
 
 Este patrón viene con un dart de guinda predeterminado de 1 cm (piense en la oscuridad del orificio) en el frente.

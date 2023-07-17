@@ -1,5 +1,5 @@
 ---
-title: "Across back factor"
+title: "Rugwijdte factor"
 ---
 
 ![Rugwijdte factor](./acrossbackfactor.svg)

@@ -14,7 +14,7 @@ Um Sven zu erstellen, benötigst du Folgendes:
 
 wie bei allen Strickwaren und Stretchgeweben wird dir ein Serger/Overlock das Leben erleichtern.
 
-Wenn Sie nicht eines davon haben, verzweifeln Sie nicht. Sie brauchen es nicht wirklich.
-Da diese Seitennaht und Schulternähte nicht ausgedehnt werden, können Sie sie einfach mit einer regelmässigen geraden Nähte nähen.
+Wenn du keine hast, musst du aber nicht verzweifeln. Du brauchst sie nicht unbedingt.
+Da die Seiten- und Schulternähte nicht gedehnt werden, kannst du sie mit einem gewöhnlichen Geradstich nähen.
 
 </Note>

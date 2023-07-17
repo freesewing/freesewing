@@ -1,5 +1,5 @@
 ---
-title: "Блок зігнутого тіла"
+title: "Викрійка-основа Бент"
 ---
 
 <PatternDocs pattern='bent' />

@@ -1,5 +1,5 @@
 ---
-title: "Sleeve length"
+title: "Mouwlengte"
 ---
 
 Bepaalt de lengte van de mouwen.

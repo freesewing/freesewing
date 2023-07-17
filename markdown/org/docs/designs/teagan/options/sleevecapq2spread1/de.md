@@ -1,6 +1,6 @@
-- - -
-title: "Sleevecap Q2 downward spread"
-- - -
+---
+title: "Armkugel Q2 Spreizung nach unten"
+---
 
 ![Die Abwärtsverteilung im zweiten Quadranten der Ärmel](./sleevecapq2spread1.svg)
 

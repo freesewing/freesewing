@@ -1,5 +1,5 @@
 ---
-title: "Seamless full circle"
+title: "Cercle entier sans couture"
 ---
 
 ![Cercle entier sans couture](seamlessfullcircle.svg)
@@ -16,4 +16,4 @@ Sélectionnez 'oui' pour un cercle transparent, qui est coupé sur un double pli
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sandy_seamlessfullcircle_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sandy_seamlessfullcircle_sample.svg "Effet de cette option sur le motif")

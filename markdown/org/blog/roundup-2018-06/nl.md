@@ -1,54 +1,39 @@
 ---
 author: "joostdecock"
-caption: "Your login background for July"
+caption: "Je inlogachtergrond voor juli"
 date: "2018-06-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d4f2c83df7c4bc98b2bee3159b3f042bf0c1177f-1920x1279.jpg"
-intro: "Monthly roundup - June 2018: German, Penelope, and more womenswear on the horizon [Niet vertaald]"
-title: "Monthly roundup - June 2018: German, Penelope, and more womenswear on the horizon [Niet vertaald]"
+intro: "Maandoverzicht - juni 2018: Duits, Penelope en meer damesmode aan de horizon"
+title: "Maandoverzicht - juni 2018: Duits, Penelope en meer damesmode aan de horizon"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, 
-and a look at what lies ahead in the next month.
+Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken, en een blik op wat er de komende maand in het verschiet ligt.
 
-## Looking back at June
+## Terugblik op juni
 
-After the mad scramble in May to get the new site ready for the GDPR deadline,
-June has (thankfully) been a bit let hectic. 
+Na het gekkenhuis in mei om de nieuwe site klaar te krijgen voor de GDPR-deadline, is juni (gelukkig) een beetje minder hectisch geweest.
 
-Not that we haven't been busy. We've resolved a few issues with the new site,
-and while there's a few things that still need work, the most pressing issues have been resolved.
+Niet dat we het niet druk hebben gehad. We hebben een paar problemen met de nieuwe site opgelost, en hoewel er nog een paar dingen moeten worden gedaan, zijn de meest dringende problemen opgelost.
 
-We've also completed the port of the documentation, which was something that was on our
-todo-list for June.
-It's always nice to make a plan and then follow through on it.
+We hebben ook de port van de documentatie voltooid, iets wat op onze todo-list voor juni stond. Het is altijd fijn om een plan te maken en het dan uit te voeren.
 
-With the migration demanding less of our time and attention, we've turned our attention
-back to building our pattern repository, and just before the end of the month, we were
-able to publish the [Penelope Pencil Skirt](/patterns/penelope).
+Nu de migratie minder van onze tijd en aandacht vraagt, hebben we onze aandacht weer gericht op het opbouwen van onze patronenrepository, en net voor het einde van de maand konden we de [Penelope Pencil Skirt](/patterns/penelope)publiceren.
 
-The pattern was designed by [@woutervdub](/users/woutervdub), it's his second pattern
-after he previously made [Benjamin](/patterns/benjamin).
+Het patroon is ontworpen door [@woutervdub](/users/woutervdub), het is zijn tweede patroon nadat hij eerder [Benjamin](/patterns/benjamin)maakte.
 
-To make certain the release wouldn't go unnoticed, we asked freesewing's illustrator 
-[Roy van der Hel](https://www.deviantart.com/royvdhel-art) to drew an illustration
-for Penelope, and as always, he nailed it.
+Om er zeker van te zijn dat de release niet onopgemerkt voorbij zou gaan, vroegen we freesewing's illustrator [Roy van der Hel](https://www.deviantart.com/royvdhel-art) om een illustratie te maken voor Penelope, en zoals altijd deed hij het geweldig.
 
-![Fun fact: Roy van der Hel means: Roy from Hel, and that's his real name](penelope.jpg)
+![Leuk weetje: Roy van der Hel betekent: Roy van Hel, en dat is zijn echte naam](penelope.jpg)
 
-Oh, and I'd almost forgot. The website is now available in German, so 
-tell your German-speaking friends about it!
+Oh, en ik zou het bijna vergeten. De website is nu beschikbaar in het Duits, dus vertel je Duitstalige vrienden erover!
 
-## Looking ahead to July
+## Vooruitkijken naar juli
 
-As you could read in the [Penelope announcement blog post](/blog/announcing-penelope) we
-are planning more womenswear patterns, and that's what our focus will be on in July.
+Zoals je hebt kunnen lezen in de blogpost over de aankondiging van [Penelope](/blog/announcing-penelope) plannen we op meer patronen voor dames, en daar zullen we ons in juli op richten.
 
-Some of those plans are more mid-term, but we should be releasing a circle skirt pattern
-in July designed by [@AlfaLyr](/users/alfalyr), who also provided much of the Spanish translation
-of the site.
+Sommige van die plannen zijn meer voor de middellange termijn, maar we zouden in juli een cirkelrokpatroon moeten uitbrengen, ontworpen door [@AlfaLyr](/users/alfalyr), die ook een groot deel van de Spaanse vertaling van de site heeft verzorgd.
 
-We also started working on a basic bodice block for women, but that will probably take a while
-to complete.
+We zijn ook begonnen met het maken van een basislijfje voor vrouwen, maar dat zal waarschijnlijk nog wel even duren .
 
-Watch this space.
+Houd dit in de gaten.
 

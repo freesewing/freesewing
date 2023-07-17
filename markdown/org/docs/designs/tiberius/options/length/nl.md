@@ -1,6 +1,6 @@
-- - -
-title: "Length"
-- - -
+---
+title: "Lengte"
+---
 
 Controls the length of the garment
 

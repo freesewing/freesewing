@@ -1,5 +1,5 @@
 ---
-title: "Buttonhole placket style"
+title: "Style de patte de boutonnage (côté boutonnières)"
 ---
 
 ![Style de patte de boutonnage (côté boutonnières)](buttonholeplacketstyle.svg)
@@ -20,4 +20,4 @@ As seamless is only possible on a _cut-on_ placket, this option is ignored if yo
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_buttonholeplacketstyle_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_buttonholeplacketstyle_sample.svg "Effet de cette option sur le motif")

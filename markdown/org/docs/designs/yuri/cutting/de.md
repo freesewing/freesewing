@@ -1,6 +1,6 @@
-- - -
+---
 title: "Yuri hoodie: Cutting Instructions"
-- - -
+---
 
 - Schneide **2 Vorderseiten** mit _guten Seiten zusammen_
 - Schneide **1 Rückenteil** _im Stoffbruch_

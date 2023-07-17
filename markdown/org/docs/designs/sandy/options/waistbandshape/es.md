@@ -1,5 +1,5 @@
 ---
-title: "Waistband shape"
+title: "Forma de la cinturilla"
 ---
 
 ![Forma de la cinturilla](waistbandshape.svg)

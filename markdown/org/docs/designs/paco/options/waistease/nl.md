@@ -1,10 +1,10 @@
 ---
-title: "Waist ease"
+title: "Overwijdte taille"
 ---
 
 Bepaalt de hoeveelheid overwijdte aan je taille.
 
-Zelfs als je lagere pants, zal dit nog steeds van invloed zijn op het gemak bovenaan je broek (de sluiting).
+Even if you draft lower pants, this will still influence the ease at the top of your pants (the closure).
 
 ## Effect van deze optie op het patroon
 

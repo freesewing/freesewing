@@ -1,14 +1,14 @@
 ---
 maker: "Wouter.vdub"
-caption: "The customer is very happy with it!"
+caption: "De klant is er erg blij mee!"
 date: "2020-10-08"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ebef91daa8acf992f814415e610a655a03278186-1200x1600.jpg"
-intro: "The first version of albert, made for his daughter, by Wouter.vdub [Niet vertaald]"
-title: "The first version of albert, made for his daughter, by Wouter.vdub [Niet vertaald]"
-designs: ["albert"]
+intro: "De eerste versie van albert, gemaakt voor zijn dochter, door Wouter.vdub"
+title: "De eerste versie van albert, gemaakt voor zijn dochter, door Wouter.vdub"
+designs:
+  - "albert"
 ---
 
-![View of the back ](https://posts.freesewing.org/uploads/albert_by_wouter_albert_back_846f1b89ac.jpg "View of the back ")
-![View of the front](https://posts.freesewing.org/uploads/albert_by_wouter_albert_side_8505eb3b84.jpg "View of the front")
+![Zicht op de achterkant ](https://posts.freesewing.org/uploads/albert_by_wouter_albert_back_846f1b89ac.jpg "Zicht op de achterkant ") ![Zicht op de voorkant](https://posts.freesewing.org/uploads/albert_by_wouter_albert_side_8505eb3b84.jpg "Zicht op de voorkant")
 
-This version has some extra straps on the back to keep it closed. My daughter teaches in a school, so it's important to be able to bend over and not have it open up in the back. The cross straps work fine for normal kitchen use.
+Deze versie heeft wat extra bandjes aan de achterkant om hem dicht te houden. Mijn dochter geeft les op een school, dus het is belangrijk dat ze kan bukken zonder dat de rug opengaat. De kruisbanden werken prima voor normaal keukengebruik.

@@ -1,5 +1,5 @@
 ---
-title: "Back rise"
+title: "Hoogte achter"
 ---
 
 ![De optie voor rughoogte bij Cathrin](./backrise.svg)

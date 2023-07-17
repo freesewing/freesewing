@@ -1,5 +1,5 @@
 ---
-title: "Masque Florence : Options de tissu"
+title: "Florence face mask: Fabric Options"
 ---
 
 Le but de notre masque est d'arrêter les gouttelettes. Il faut donc chercher un tissu qui répond à ce besoin. Encore une fois, vous devez pouvoir respirer à travers votre masque, donc nous voulons un tissu qui respire, mais qui ne laisse pas passer les gouttelettes.

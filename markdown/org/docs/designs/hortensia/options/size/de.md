@@ -1,5 +1,5 @@
 ---
-title: "Size"
+title: "Größe"
 ---
 
 Steuert die Gesamtgröße der Handtasche.

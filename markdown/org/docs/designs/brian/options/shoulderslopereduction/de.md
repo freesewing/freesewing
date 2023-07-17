@@ -1,10 +1,10 @@
 ---
-title: "Shoulder slope reduction"
+title: "Verringerung der Schulterneigung"
 ---
 
 ![Verringerung der Schulterneigung](./shoulderslopereduction.svg)
 
-Reduziert die Schulterneigung, um zusätzlichen Platz für Schulterpolster zu schaffen.
+Reduziert den Schulterhang, um zusätzlichen Platz für Schulterpolsterung zu schaffen.
 
 ## Effekt dieser Option auf das Schnittmuster
 

@@ -1,5 +1,5 @@
 ---
-title: "Сумочка Гортензія: Варіанти тканин"
+title: "Hortensia handbag: Fabric Options"
 ---
 
 ### Основна тканина

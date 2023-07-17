@@ -1,5 +1,5 @@
 ---
-title: "Albert schort: Knip-instructies"
+title: "Albert apron: Cutting Instructions"
 ---
 
 - Knip **1 voorpand** aan de stofvouw

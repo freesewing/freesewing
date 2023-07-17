@@ -1,5 +1,5 @@
 ---
-title: "Топ 'Таміко': Інструкція з пошиття"
+title: "Tamiko top: Sewing Instructions"
 ---
 
 ### Крок 1: Виконайте шов пройми

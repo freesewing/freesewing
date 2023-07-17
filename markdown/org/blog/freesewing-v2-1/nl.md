@@ -1,90 +1,87 @@
 ---
 author: "joostdecock"
-caption: "This post is mostly about our work on progressive disclosure. Also: Three new patterns!"
+caption: "Dit bericht gaat vooral over ons werk aan progressieve openbaarmaking. Ook: Drie nieuwe patronen!"
 date: "2019-10-06"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/52db6852590a15208dace4a16a6a1c824037e400-2000x1500.jpg"
-intro: "We've just release FreeSewing v2.1 🎉"
-title: "FreeSewing v2.1: Three new patterns, expert mode, and help with measurements [Niet vertaald]"
+intro: "We hebben zojuist FreeSewing v2.1 uitgebracht 🎉"
+title: "FreeSewing v2.1: Drie nieuwe patronen, expertmodus en hulp bij metingen"
 ---
 
 
-We've just release FreeSewing v2.1 🎉
+We hebben zojuist FreeSewing v2.1 uitgebracht 🎉
 
-## Meet Penelope, Waralee, and Simone
+## Ontmoet Penelope, Waralee en Simone
 
-There are 3 new patterns in this release:
+Er zijn 3 nieuwe patronen in deze release:
 
- - [Penelope](/patterns/penelope) is a pencil skirt by [Wouter Van Wageningen](/users/wouter.vdub)
- - [Waralee](/patterns/waralee) are wrap pants, also by [Wouter](/users/wouter.vdub)
- - [Simone](/patterns/simone) is Simon (our versatile button-down pattern) adapted for breasts by [Joost De Cock](/users/joost)
+ - [Penelope](/patterns/penelope) is een kokerrok van [Wouter Van Wageningen](/users/wouter.vdub)
+ - [Waralee](/patterns/waralee) zijn wikkelbroeken, ook van [Wouter](/users/wouter.vdub)
+ - [Simone](/patterns/simone) is Simon (ons veelzijdige button-down patroon) bewerkt voor borsten door [Joost De Cock](/users/joost)
 
-All of these patterns are either womenswear or -- in the case of Waralee -- unisex clothing. Which in an indication of our commitment to bring more womenswear patterns to the site.
+Al deze patronen zijn ofwel dameskleding of -- in het geval van Waralee -- unisex kleding. Dit geeft aan dat we meer patronen voor damesmode op de site willen zetten.
 
-Apart from creating new patterns, a lot of efforts have gone into making things simpler, without making them dumber. Let me explain:
+Naast het maken van nieuwe patronen is er veel moeite gedaan om dingen eenvoudiger te maken, zonder ze dommer te maken. Ik zal het uitleggen:
 
-## Our work on progressive disclosure
+## Ons werk aan progressieve openbaarmaking
 
-Striking a balance between giving our users all the power of the platform, yet making it easy for newcomers to get started, is an ongoing challenge. We have started making inroads into addressing that issue with so-called *progressive disclosure of complexity*.
+Het is een voortdurende uitdaging om een balans te vinden tussen het geven van alle kracht aan onze gebruikers en het toch makkelijk maken voor nieuwkomers om aan de slag te gaan. We zijn begonnen dat probleem aan te pakken met de zogenaamde *progressive disclosure of complexity*.
 
-The idea -- which we didn't make up, but is a concept in UX design -- is to simplify the experience for most people without limiting the abilities of more advanced users.
+Het idee - dat we niet hebben verzonnen, maar dat een concept is in UX design - is om de ervaring voor de meeste mensen te vereenvoudigen zonder de mogelijkheden van meer gevorderde gebruikers te beperken.
 
-We are focusing our attention for progressive disclosure on two areas that are the ones that our users most often struggle with:
+We richten onze aandacht voor progressieve openbaarmaking op twee gebieden waar onze gebruikers het vaakst mee worstelen:
 
- - **Pattern options**: Our patterns often come with dozens of options. That is great for those who like to fine-tune every detail of their pattern, but can be a bit overwhelming for newcomers
- - **Measurements**: Taking accurate measurements is crucial for good results with our patterns, yet not as trivial as you would think.
+ - **Patroonopties**: Onze patronen worden vaak geleverd met tientallen opties. Dat is geweldig voor degenen die graag elk detail van hun patroon afstemmen, maar kan een beetje overweldigend zijn voor nieuwkomers.
+ - **Metingen**: Het nemen van nauwkeurige metingen is cruciaal voor goede resultaten met onze patronen, maar niet zo triviaal als je zou denken.
 
-While we're certainly not there yet, we've made progress on both of these. Let's look at what we've been up to:
+Hoewel we er zeker nog niet zijn, hebben we op beide punten vooruitgang geboekt. Laten we eens kijken wat we hebben gedaan:
 
-### Pattern options: We now have an expert mode, and it's off by default
+### Patroonopties: We hebben nu een expertmodus en deze staat standaard uit
 
-(some of) Our patterns have had *advanced options* for a while, but they are now hidden by default. That is until you turn on the **Expert mode** in the settings (below the pattern options).
+(Sommige van) Onze patronen hebben een tijdje *geavanceerde opties* gehad, maar die zijn nu standaard verborgen. Dat is totdat je de **Expertmodus** aanzet in de instellingen (onder de patroonopties).
 
-Apart from advanced pattern options, export mode also reveals the lesser-used draft settings such as the ability to change the language, units, details, margin, and contents of your draft.
+Naast geavanceerde patroonopties laat de exportmodus ook de minder gebruikte kladinstellingen zien, zoals de mogelijkheid om de taal, eenheden, details, marge en inhoud van je klad te wijzigen.
 
-![Advanced mode](https://posts.freesewing.org/uploads/recreate_a6e2f9c4d6.png)
+![Geavanceerde modus](https://posts.freesewing.org/uploads/recreate_a6e2f9c4d6.png)
 
 <Note> 
 
-###### Also shown: Pattern vs Recipe defaults
+###### Ook getoond: Patroon vs Recept standaardwaarden
 
-When configuring your draft, every option has a little button to restore the default value for that option.
-Things get more complicated when you're re-creating a recipe. Now when you restore the default, is it the pattern default, or the recipe's default?
+Bij het configureren van je draft heeft elke optie een knopje om de standaardwaarde voor die optie te herstellen.
+Het wordt ingewikkelder als je een recept opnieuw maakt. Als je nu de standaardinstelling herstelt, is het dan de standaardinstelling van het patroon of de standaardinstelling van het recept?
 
-The answer used to be the pattern default, but with this release, you'll find that options where the recipe default is different from the pattern
-default will have two buttons. Once to restore the pattern default, and another to restore the recipe default. 
+Het antwoord was altijd het standaard patroon, maar met deze versie zul je zien dat opties waarbij het standaard recept anders is dan het standaard patroon
+twee knoppen hebben. Eén keer om de standaard patrooninstelling te herstellen, en nog een keer om de standaard receptinstelling te herstellen. 
 
-You can see this in the screenshot above.
+Je kunt dit zien in de schermafbeelding hierboven.
 
 </Note>
 
+### Metingen: Fouten in je metingen opsporen
 
-### Measurements: Helping you spot mistakes in your measurements
+We hebben een aantal indicatoren toegevoegd om je fouten of problemen in je metingen te helpen zien. Je modellen tonen nu een grafische weergave van je lichaamsafmetingen, zodat je eventuele uitschieters kunt zien.
 
-We've added a few indicators to help you spot mistakes or problems in your measurements. Your models will now show a graphical representation of your body measurements, which will allow you to spot any outliers.
+![Een grafische weergave van de metingen van je model](https://posts.freesewing.org/uploads/model_c3fa8fc50c.png)
 
-![A graphical representation of your model's measurements](https://posts.freesewing.org/uploads/model_c3fa8fc50c.png)
+Daarnaast tonen we je een schatting van je verschillende metingen (gebaseerd op je nekomtrek) naast de werkelijke waarde. Als het verschil groter wordt, zullen we je daar op wijzen.
 
-In addition, we are showing you an estimate of your different measurements (based on your neck circumference) next to the actual value. If the difference gets larger, we'll draw your attention to that.
+Dit is een moeilijk gebied voor ons om in te werken. We willen je helpen om de beste resultaten te krijgen, en dat houdt ook in dat we je helpen om problemen met je metingen te ontdekken. Aan de andere kant willen we op geen enkele manier impliceren dat iemands metingen *verkeerd zijn* op de een of andere manier.
 
-This is a difficult area for us to work in. We want to help you get the best results, and that includes helping you spot issues with your measurements. On the other hand, we in no way want to imply that someone's measurements are *wrong* somehow.  
+Wij zijn een zeer omvangrijk model en een onevenredig groot deel van onze gebruikers zijn mensen die moeite hebben om kleding of patronen te vinden uit andere buitentjes. Dus aan de ene kant lijkt het misschien alsof we onszelf op een mislukking voorbereiden door metingen te vergelijken met een set van min of meer *standaardmetingen* . Maar je kent je lichaam. U weet welke van uw metingen afwijken van het gemiddelde. En we wijzen erop dat ze dat wel doen, is slechts een bevestiging dat je het goed hebt gemeten. Aan de andere kant weet je dat als er iets springt waar je een redelijk gemiddelde maat hebt, je die metingen nog eens dubbel moet controleren.
 
-We are an extremely size-inclusive pattern outlet, and a disproportionate amount of our users are people who struggle to find clothes or patterns from other outlets. So on one hand, it might seem like we're setting ourselves up for failure by comparing measurements to a set of more or less *standard* measurements. 
-But you know your body. You know which of your measurements deviate from the average. And us pointing out that they do is in a way only confirmation that you've been measuring correctly.
-On the other hand, if something jumps out where you are fairly average sized, you know to double-check those measurements.
+Last but not least, terwijl we begeleiding proberen te geven bij metingen om fouten te helpen spoelen, we sluiten nooit iemand uit op basis van grootte of maat. Wat je ons ook voor de voeten werpt, we maken een patroon dat voor jou werkt, of (onze software zal) het proberen.
 
-Last but not least, while we try to provide guidance about measurements to help spot mistakes, we never exclude anyone based on size or measurement. No matter what you throw at us, we will  draft a pattern that works for you, or (our software will) die trying.
+## Andere wijzigingen
 
-## Other changes
+ - We hebben onze maatbereiken voor onze vergelijkingsoverzichten uitgebreid. Herenkleding wordt nu gesampled vanaf maat 32 tot en met 48, terwijl dameskleding wordt gesampled vanaf maat 28 tot en met 46.
+ - We hebben enkele wijzigingen aangebracht in de standaardinstellingen in het Simon patroon, gebaseerd op onze tests met Simone
+ - We hebben ondersteuning voor het vooraf laden van modellen met borsten toegevoegd aan onze ontwikkelomgeving voor patroonontwerpers
+ - We hebben reparaties en verbeteringen doorgevoerd in onze Jaeger, Bruce, Benajamin, Simon, Carlton en Carlita patronen.
+ - We hebben een heleboel ontbrekende afbeeldingen toegevoegd in de documentatie en [is begonnen met een poging om ervoor te zorgen dat alle opties een afbeelding hebben om hun doel te illustreren](https://github.com/freesewing/freesewing.org/issues/190).
 
- - We have extended our size ranges for our comparison views. Menswear sizes are now sampled from size 32 up to 48, while womenswear is sampled from size 28 up to 46.
- - We've made some changes to the defaults in the Simon pattern, based on our tests with Simone
- - We've added support for preloading models with breasts to our development environment for pattern designers
- - We've implemented fixes and improvements in our Jaeger, Bruce, Benajamin, Simon, Carlton, and Carlita patterns
- - We've added a bunch of missing images in the documentation, and [started an effort to make sure all options have an image to illustrate their purpose](https://github.com/freesewing/freesewing.org/issues/190).
+Meer informatie is beschikbaar [in de changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md).
 
-More information is available [in the changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md).
-
-We hope you enjoy this release, and please [stop by our chat room](https://discord.freesewing.org/) to share your thoughts, feedback, suggestions, or ideas. We'd love to hear from you 
+We hopen dat je deze release leuk vindt en [kom langs in onze chatroom](https://discord.freesewing.org/) om je gedachten, feedback, suggesties of ideeën te delen. We horen graag van je 
 
 
 

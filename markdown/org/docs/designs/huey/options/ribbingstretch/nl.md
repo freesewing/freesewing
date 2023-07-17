@@ -1,5 +1,5 @@
 ---
-title: "Ribbing stretch"
+title: "Stretch boordstof"
 ---
 
 ![Stretch boordstof](./ribbingstretch.svg)

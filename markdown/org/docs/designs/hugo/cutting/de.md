@@ -3,10 +3,10 @@ title: "Hugo hoodie: Cutting Instructions"
 ---
 
 - **Oberstoff**
-  - **1 Front** auf die Falte schneiden
-  - **1 zurück** auf die Falte schneiden
+  - Schneide **1 Vorderteil** im Stoffbruch
+  - Schneide **1 Rückenteil** im Stoffbruch
   - **2 Ärmel schneiden**, gute Seiten zusammen
-  - **1 Tasche** auf die Falte schneiden
+  - Schneide **1 Tasche** im Stoffbruch
   - **2 Taschenverkleidung(en) schneiden**, gute Seiten zusammen
   - Schneiden Sie **4 Kapuzenseite(n)**, 2x2 gute Seiten zusammen
   - **2 Haubenzentren(n) schneiden**, gute Seiten zusammen

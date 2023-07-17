@@ -3,10 +3,9 @@ author: "joostdecock"
 caption: "Wir bauen ein Fundament aus treuen Unterstützern, um eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Schnittmuster und unsere Community zu sichern."
 date: "2017-12-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/84e39d762790744f10fe17bcb971f99e98550299-2000x1334.jpg"
-intro: "Jedes Jahr, an diesem Tag, schreibe ich über die Ereignisse der letzten 12 Monate, und schaue nach vorne, was Sie im kommenden Jahr erwarten können."
+intro: "Aufruf an alle Gönner; Schließen Sie sich unserem Fundament treuer Unterstützer an."
 title: "Aufruf an alle Gönner; Schließen Sie sich unserem Fundament treuer Unterstützer an."
 ---
-
 
 Jedes Jahr, an diesem Tag, schreibe ich über die Ereignisse der letzten 12 Monate, und schaue nach vorne, was Sie im kommenden Jahr erwarten können.
 
@@ -20,7 +19,7 @@ Core FreeSewing v1.0.0 [wurde im März dieses Jahres](/blog/announcing-freesewin
 
 Viel, wie es sich herausstellt. Etwas, das offensichtlicher geworden ist, seit der [die Veröffentlichung von freesewing.org](/blog/open-for-business/) Ende August.
 
-![Bild aus dem ursprünglichen Ankündigungs-Blog-Beitrag](open.jpg)
+![Bild aus dem ursprünglichen Ankündigungs-Blog-Beitrag](https://posts.freesewing.org/uploads/open_e799153fa2.jpg)
 
 Am Weihnachtstag werden (erst) vier Monate verstrichen sein, seit dieser Veröffentlichung. Doch in dieser Zeit haben sich **2735 Benutzer** bei uns angemeldet, für die wir **1522 Entwürfe**und **2359 Modelle** speichern.
 
@@ -37,7 +36,7 @@ Du kannst versuchen, diesen Link zu besuchen, aber du wirst nur hier hinten land
 
 MakeMyPattern.com sah das Licht des Tages im Jahr 2012. Es hat seitdem eine Reihe von Iterationen durchlaufen, und heute wird es schließlich durch freesewing.org ersetzt.
 
-![War es ein M? Ein Buch? Ein Vogel? Brüste? Wir wissen vielleicht nie](mmp.png)
+![War es ein M? Ein Buch? Ein Vogel? Brüste? Wir wissen vielleicht nie](https://posts.freesewing.org/uploads/mmp_27886c8346.png)
 
 Es lief gut, und ich denke, dass es für jedes Projekt ein guter Weg ist, wenn es von etwas Besserem, zu dem es einen inspiriert hat, kannibalisiert wird.
 
@@ -56,15 +55,16 @@ Aber ich wollte völlig transparent sein, was vor sich geht, also habe ich mich 
 
 > ##### Noblesse oblige
 > 
-> Sie gehen wahrscheinlich davon aus, dass wir Geld bitten, um die Server zu betreiben. Aber das stimmt nicht genau.
+> Du gehst wahrscheinlich davon aus, dass wir um Geld bitten, damit wir die Server weiter betreiben können. Aber das stimmt nicht genau.
 > 
 > Ich weiß nicht, ob Sie mit dem Satz *noblesse oblige* vertraut sind, aber es bedeutet im Wesentlichen, dass Privilegien Verantwortung bedeutet.
 > 
 > Ich bin privilegiert, und damit habe ich Verantwortung. Ich habe das große Glück, in Westeuropa geboren zu sein, einen guten Job und ein Dach über dem Kopf zu haben.
 > 
-> Könnte ich das Geld gebrauchen? Ja, ich könnte es. Brauche ich das Geld? Nein ich bin nicht darauf angewiesen.
+> Könnte ich das Geld gebrauchen? Yes I could.  
+> Do I need the money? Nein ich bin nicht darauf angewiesen.
 > 
-> ##### Der Wert Ihrer Unterstützung
+> ##### Der Wert deiner Unterstützung
 > 
 > Das Hauptrisiko für Freesewing ist das gleiche wie bei jedem Open-Source-Projekt da draußen: Maintainer-Burnout.
 > 
@@ -72,7 +72,7 @@ Aber ich wollte völlig transparent sein, was vor sich geht, also habe ich mich 
 > 
 > Wenn Menschen Gönner werden (oder spenden), geben sie mehr als nur Geld. Für mich ist der Hauptwert die Botschaft, die sie mir und anderen Menschen, die daran arbeiten, vermitteln. Und diese Botschaft ist: *Hey, Ihr machst eine sinnvolle Sache. Macht weiter mit der guten Arbeit*.
 > 
-> ##### Der Wert Ihres Geldes
+> ##### Der Wert deines Geldes
 > 
 > Es geht nicht nur um das Geld. Aber das bedeutet nicht, dass das Geld nicht wichtig ist. Ganz im Gegenteil.
 > 
@@ -98,9 +98,10 @@ Deshalb nennen wir seit heute alle Gönner.
 
 ## Werde ein Gönner von FreeSewing
 
-Um eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Muster und unsere Community zu gewährleisten, müssen wir ein Fundament aus treuen Unterstützern aufbauen. Gönner, die uns in unserer Kernarbeit unterstützen: Entwicklung einer Open-Source-Plattform für maßgeschneiderte Schnittmuster.
+To ensure a sustainable future for freesewing.org, our code, our patterns, and our community, we need to build a bedrock of loyal supporters.  
+Patrons who support us in our core work; Developing an open source platform for made-to-measure sewing patterns.
 
-![Wir haben drei Stufen der Gönnerschaft](patron-medals.jpg)
+![Wir haben drei Stufen der Gönnerschaft](https://posts.freesewing.org/uploads/patron_medals_2160e69d77.jpg)
 
 Wir haben verschiedene Stufen der Gönnerschaft, jede mit ihren eigenen Vergünstigungen. Sie können uns für nur 2€ unterstützen, und es dauert nur eine Minute.
 
@@ -120,9 +121,11 @@ Vielen Dank und ich wünsche Ihnen ein gutes Wahr.
 
 joost
 
-<small>PS: Es wäre eine Schande, wenn dort Leute draußen bereit sind, uns zu unterstützen, die aber nicht wissen wie. 
-Vielleicht könnten Sie also [dieses Bild](patrons-ig.png) auf sozialen Medien teilen? <i class="fa fa-arrow-down" aria-hidden="true"></i></small>
+<small>PS: Es wäre eine Schande, wenn dort Leute draußen bereit sind, uns zu unterstützen, die aber nicht wissen wie. Vielleicht könnten Sie also [dieses Bild](patrons-ig.png) auf sozialen Medien teilen? <i class="fa fa-arrow-down" aria-hidden="true"></i></small>
 
-![Sharing is Caring!](patrons-ig.png)
+![Sharing is Caring!](https://posts.freesewing.org/uploads/patrons_ig_45e11fe270.png)
+
+
+
 
 

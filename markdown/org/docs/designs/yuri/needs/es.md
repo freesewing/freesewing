@@ -1,6 +1,6 @@
-- - -
+---
 title: "Yuri hoodie: What You Need"
-- - -
+---
 
 Para hacer Yuri, necesitarás lo siguiente:
 

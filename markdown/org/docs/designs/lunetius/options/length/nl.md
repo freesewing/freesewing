@@ -1,6 +1,6 @@
-- - -
-title: "Length"
-- - -
+---
+title: "Lengte"
+---
 
 Choose from the different length styles
 

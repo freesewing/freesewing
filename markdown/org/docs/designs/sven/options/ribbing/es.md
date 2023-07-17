@@ -1,5 +1,5 @@
 ---
-title: "Ribbing"
+title: "Tejido acanalado"
 ---
 
 ![Tejido acanalado](ribbing.svg)

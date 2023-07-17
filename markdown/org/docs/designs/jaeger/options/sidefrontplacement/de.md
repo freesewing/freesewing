@@ -1,5 +1,5 @@
 ---
-title: "Side/Front placement"
+title: "Seitliche / vordere Platzierung"
 ---
 
 ![Seitenfront Platzierung](sidefrontplacement.svg)

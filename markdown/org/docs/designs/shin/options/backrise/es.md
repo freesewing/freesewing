@@ -1,5 +1,5 @@
 ---
-title: "Back rise"
+title: "Elevación de la espalda"
 ---
 
 ¿Cuánto aumento adicional quieres a la espalda?

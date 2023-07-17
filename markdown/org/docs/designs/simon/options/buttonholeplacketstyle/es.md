@@ -1,5 +1,5 @@
 ---
-title: "Buttonhole placket style"
+title: "Estilo de la vista de los ojales"
 ---
 
 ![Estilo de la vista de los ojales](buttonholeplacketstyle.svg)

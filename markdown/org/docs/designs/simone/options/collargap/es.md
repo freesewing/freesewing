@@ -1,5 +1,5 @@
 ---
-title: "Collar gap"
+title: "Espaciado del cuello"
 ---
 
 ![Espaciado del cuello](collargap.svg)

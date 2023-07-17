@@ -1,5 +1,5 @@
 ---
-title: "Sac à main Hortensia : Option de tissus"
+title: "Hortensia handbag: Fabric Options"
 ---
 
 ### Tissu principal

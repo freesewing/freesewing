@@ -25,7 +25,7 @@ Noble is based on the Bella body block
 
 ### Armhole seam
 
-- Schließe die hinteren Abnäher.
+- Hintergrunddarts schließen.
 
 ### Both
 

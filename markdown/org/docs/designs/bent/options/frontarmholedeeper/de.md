@@ -1,5 +1,5 @@
 ---
-title: "Front armhole extra cutout"
+title: "Zusätzlicher Ausschnitt am vorderen Armloch"
 ---
 
 Wie viel das Rüstungsloch tiefer an der Vorderseite ausgeschnitten ist, als der Rücken.

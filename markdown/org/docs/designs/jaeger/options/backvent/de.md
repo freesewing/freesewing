@@ -1,5 +1,5 @@
 ---
-title: "Back vent"
+title: "Hinterer Gehschlitz"
 ---
 
 ![Hinterer Gehschlitz](backvent.svg)
