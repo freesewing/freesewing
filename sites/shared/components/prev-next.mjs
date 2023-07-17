@@ -38,6 +38,8 @@ export const PrevNext = ({ slug, noPrev = false }) => {
   // Lookup the current slug in the LUT
   const index = slugLut.indexOf(slug)
 
+  if (index < 0) return null
+
   // Add 1 for the next page, unless it's the last page
   const iNext = index === slugLut.length - 1 ? 0 : index + 1
 

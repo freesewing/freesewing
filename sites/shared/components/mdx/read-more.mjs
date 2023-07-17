@@ -5,6 +5,7 @@ import { NavigationContext } from 'shared/context/navigation-context.mjs'
 import { useNavigation } from 'site/hooks/use-navigation.mjs'
 import { BulletIcon, RightIcon } from 'shared/components/icons.mjs'
 import { pageHasChildren } from 'shared/utils.mjs'
+import orderBy from 'lodash.orderby'
 
 export const getRoot = {
   dev: (root, nav) => {
@@ -23,17 +24,20 @@ export const getRoot = {
 /*
  * This is a recursive function, so it needs to be lean
  */
-const RenderTree = ({ tree, recurse, depth = 1, level = 0 }) => (
-  <ul className="w-full list">
-    {Object.keys(tree)
-      .filter((key) => key.length > 1)
-      .map((key, i) => {
+const RenderTree = ({ tree, recurse, depth = 1, level = 0 }) => {
+  const orderedTree = orderBy(tree, ['o', 't'], ['asc', 'asc']).filter(
+    (item) => typeof item === 'object'
+  )
+
+  return (
+    <ul className="w-full list">
+      {orderedTree.map((item, i) => {
         /*
          * Does this have children?
          */
         const hasChildren =
-          recurse && (!depth || level < depth) && pageHasChildren(tree[key])
-            ? tree[key].s.replaceAll('/', '')
+          recurse && (!depth || level < depth) && pageHasChildren(item)
+            ? item.s.replaceAll('/', '')
             : false
 
         /*
@@ -47,23 +51,24 @@ const RenderTree = ({ tree, recurse, depth = 1, level = 0 }) => (
               <details className={`w-full inline flex flex-row`}>
                 <summary className="hover:bg-opacity-20 bg-secondary bg-opacity-0 block w-full flex flex-row items-center gap-0.5 lg:gap-1 px-1 lg:px-2">
                   <RightIcon className={`w-4 h-4 summary-chevron transition-all`} stroke={3} />
-                  <Link href={`/${tree[key].s}`}>{tree[key].t}</Link>
+                  <Link href={`/${item.s}`}>{item.t}</Link>
                 </summary>
-                <RenderTree tree={tree[key]} {...{ recurse, depth }} level={level + 1} />
+                <RenderTree tree={item} {...{ recurse, depth }} level={level + 1} />
               </details>
             ) : (
               <>
                 <BulletIcon className="w-2 h-2 mt-2 mx-1 ml-2 lg:ml-3 shrink-0" fill stroke={0} />
-                <Link href={`/${tree[key].s}`} className="break-all">
-                  {tree[key].t}
+                <Link href={`/${item.s}`} className="break-all">
+                  {item.t}
                 </Link>
               </>
             )}
           </li>
         )
       })}
-  </ul>
-)
+    </ul>
+  )
+}
 
 export const ReadMore = ({
   recurse = 0,
@@ -85,6 +90,8 @@ export const ReadMore = ({
   if (root === true) root = ''
 
   const tree = root === false ? getRoot[site](slug, siteNav) : getRoot[site](root, siteNav)
+
+  if (!tree) return null
 
   return <RenderTree {...{ tree, recurse, depth }} />
 }

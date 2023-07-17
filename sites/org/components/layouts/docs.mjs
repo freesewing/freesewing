@@ -8,12 +8,17 @@ import {
   BaseLayoutProse,
   BaseLayoutRight,
 } from 'shared/components/base-layout.mjs'
-import { NavLinks, Breadcrumbs, MainSections } from 'shared/components/navigation/sitenav.mjs'
+import {
+  NavLinks,
+  Breadcrumbs,
+  MainSections,
+  ns as navNs,
+} from 'shared/components/navigation/sitenav.mjs'
 import { Toc } from 'shared/components/mdx/toc.mjs'
 import { MdxMetaData } from 'shared/components/mdx/meta.mjs'
 import { PrevNext } from 'shared/components/prev-next.mjs'
 
-export const ns = [] //navNs
+export const ns = [navNs] //navNs
 
 export const DocsLayout = ({ children = [], slug, frontmatter }) => {
   const { siteNav } = useNavigation({ ignoreControl: true })
@@ -36,7 +41,7 @@ export const DocsLayout = ({ children = [], slug, frontmatter }) => {
         <meta property="og:url" content={`https://freesewing.org/${slug}`} key="url" />
         <meta property="og:locale" content="en" key="locale" />
         <meta property="og:site_name" content="freesewing.org" key="site" />
-        <title>{frontmatter.title} - FreeSewing.org</title>
+        <title>{frontmatter.title + '- FreeSewing.org'}</title>
       </Head>
 
       <BaseLayout>

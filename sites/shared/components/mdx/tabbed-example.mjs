@@ -81,6 +81,7 @@ export const TabbedExample = ({
   withHead,
   paperless,
   settings,
+  patternProps,
 }) => {
   if (settings)
     settings = {
@@ -89,49 +90,50 @@ export const TabbedExample = ({
     }
   else settings = { margin: 5 }
   if (withHead) settings.measurements = { head: 300 }
-  const pattern = buildPattern(children, settings, tutorial, paperless)
 
-  // Check that it's a valid pattern
-  if (!pattern.sample) return null
+  if (children && !patternProps) {
+    const pattern = buildPattern(children, settings, tutorial, paperless)
 
-  const patternProps = {
-    renderProps: settings.sample
-      ? pattern.sample().getRenderProps()
-      : pattern.draft().getRenderProps(),
-    logs: pattern.getLogs(),
+    // Check that it's a valid pattern
+    if (!pattern.sample) return null
+
+    patternProps = {
+      renderProps: settings.sample
+        ? pattern.sample().getRenderProps()
+        : pattern.draft().getRenderProps(),
+      logs: pattern.getLogs(),
+    }
   }
 
-  if (tutorial && !previewFirst)
-    return (
-      <div className="my-8">
-        <Tabs tabs="Code, Preview, X-Ray">
-          <Tab key="code">{children}</Tab>
-          <Tab key="preview">
-            <ShowPattern {...patternProps} />
-          </Tab>
-          <Tab key="xray">
-            <ShowPattern {...patternProps} mode="xray" />
-          </Tab>
-        </Tabs>
-        {caption && (
-          <div className="text-center italic -mt-4">
-            <Md>{caption}</Md>
-          </div>
-        )}
-      </div>
-    )
+  const tabs = []
+  const tabNames = ['Preview']
+  tabs.push(
+    <Tab key="preview">
+      <ShowPattern {...patternProps} />
+    </Tab>
+  )
+  if (children) {
+    const codeTab = <Tab key="code">{children}</Tab>
+
+    if (tutorial && !previewFirst) {
+      tabs.unshift(codeTab)
+      tabNames.unshift('Code')
+    } else {
+      tabs.push(codeTab)
+      tabNames.push('Code')
+    }
+  }
+
+  tabs.push(
+    <Tab key="xray">
+      <ShowPattern {...patternProps} mode="xray" />
+    </Tab>
+  )
+  tabNames.push('X-Ray')
 
   return (
     <div className="my-8">
-      <Tabs tabs="Preview, Code, X-Ray">
-        <Tab key="preview">
-          <ShowPattern {...patternProps} />
-        </Tab>
-        <Tab key="code">{children}</Tab>
-        <Tab key="xray">
-          <ShowPattern {...patternProps} mode="xray" />
-        </Tab>
-      </Tabs>
+      <Tabs tabs={tabNames.join(', ')}>{tabs}</Tabs>
       {caption && (
         <div className="text-center italic -mt-4">
           <Md>{caption}</Md>

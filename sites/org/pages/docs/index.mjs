@@ -16,7 +16,9 @@ const DocsHomePage = ({ page, slug, locale }) => {
   /* Load MDX dynamically */
   useEffect(() => {
     const loadMDX = async () => {
-      import(`../../../../markdown/org/docs/${locale}.md`).then((mod) => {
+      import(
+        /* webpackInclude: /docs\/\w+\.md/ */ `../../../../markdown/org/docs/${locale}.md`
+      ).then((mod) => {
         setFrontmatter(mod.frontmatter)
         const Component = mod.default
         setMDX(<Component components={components('org')} />)

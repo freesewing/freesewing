@@ -55,16 +55,13 @@ export const PageWrapper = (props) => {
    * Update navigation context with title and path
    */
   useEffect(() => {
-    // Only update if a new page was loaded
-    if (path.join('/') !== slug) {
-      setNavigation({
-        title: pageTitle,
-        locale,
-        path,
-      })
-      setNavupdates(navupdates + 1)
-    }
-  }, [path, pageTitle, slug, locale, navupdates, setNavigation])
+    setNavigation({
+      title: pageTitle,
+      locale,
+      path,
+    })
+    setNavupdates((curState) => curState + 1)
+  }, [path, pageTitle, locale, setNavupdates, setNavigation])
 
   /*
    * Hotkeys (keyboard actions)

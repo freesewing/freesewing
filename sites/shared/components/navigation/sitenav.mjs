@@ -7,6 +7,7 @@ import orderBy from 'lodash.orderby'
 import { icons } from 'shared/components/navigation/primary.mjs'
 import { useTranslation } from 'next-i18next'
 
+export const ns = ['sections']
 /*
  * This returns only those children that are expected to show up
  * in the side navigation. Specifically:
