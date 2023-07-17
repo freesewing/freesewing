@@ -401,7 +401,7 @@ shared:
     'remark-frontmatter': '4.0.1'
     'remark-mdx-frontmatter': '3.0.0'
     'remark-smartypants': '2.0.0'
-    'sharp': '0.32.2'
+    'sharp': '0.32.3'
     'svg-to-pdfkit': 'https://github.com/eriese/SVG-to-PDFKit'
     'tlds': '1.240.0'
     'to-vfile': '8.0.0'
