@@ -27,23 +27,24 @@ export const TimeAgo = ({ date, t }) => {
   return `${ago} ${t('ago')}`
 }
 
-const PersonList = ({ list }) => (
-  <ul>
-    {list.map((id) => (
-      <li key={id}>
-        {allAuthors[id] ? (
-          <PageLink href={`/users/${allAuthors[id].id}`} txt={allAuthors[id].name} />
-        ) : (
-          <span className="font-medium">{id}</span>
-        )}
-      </li>
-    ))}
-  </ul>
-)
+const PersonList = ({ list }) =>
+  list ? (
+    <ul>
+      {list.map((id) => (
+        <li key={id}>
+          {allAuthors[id] ? (
+            <PageLink href={`/users/${allAuthors[id].id}`} txt={allAuthors[id].name} />
+          ) : (
+            <span className="font-medium">{id}</span>
+          )}
+        </li>
+      ))}
+    </ul>
+  ) : null
 
 const CreditsList = ({ updates, frontmatter, locale, t }) => (
   <ul className="list list-inside list-disc">
-    {updates.a.length > 0 ? (
+    {updates.a?.length > 0 ? (
       <li className="list-none">
         <b>{t('authors')}:</b>
         <PersonList list={updates.a} />

@@ -5,14 +5,13 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Hooks
 import { useState, useEffect } from 'react'
 // Components
-import Head from 'next/head'
-import { PageWrapper, ns } from 'shared/components/wrappers/page.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { components } from 'shared/components/mdx/index.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
-import { Toc } from 'shared/components/mdx/toc.mjs'
-import { DocsLayout } from 'site/components/layouts/docs.mjs'
+import { DocsLayout, ns as layoutNs } from 'site/components/layouts/docs.mjs'
 
+const ns = [...pageNs, layoutNs]
 /*
  * PLEASE READ THIS BEFORE YOU TRY TO REFACTOR THIS PAGE
  *
@@ -40,42 +39,14 @@ export const Loading = () => (
   <Spinner className="w-24 h-24 color-primary animate-spin m-auto mt-8" />
 )
 
-const HeadInfo = ({ frontmatter, locale, slug }) => (
-  <Head>
-    <meta property="og:title" content={frontmatter.title} key="title" />
-    <meta property="og:type" content="article" key="type" />
-    <meta property="og:description" content={``} key="type" />
-    <meta property="og:article:author" content="Joost De Cock" key="author" />
-    <meta
-      property="og:image"
-      content={`https://canary.backend.freesewing.org/og-img/en/org/${slug}}`}
-      key="image"
-    />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:url" content={`https://freesewing.org/${slug}`} key="url" />
-    <meta property="og:locale" content={locale} key="locale" />
-    <meta property="og:site_name" content="freesewing.org" key="site" />
-    <title>{frontmatter.title} - FreeSewing.org</title>
-  </Head>
-)
-
-export const Page = ({ page, frontmatter, slug, locale, MDX }) => (
+export const Page = ({ page, frontmatter, locale, MDX }) => (
   <PageWrapper
     {...page}
+    locale={locale}
     title={frontmatter.title}
-    layout={(props) => <DocsLayout {...props} {...{ slug, frontmatter }} />}
+    layout={(props) => <DocsLayout {...props} {...{ slug: page.path.join('/'), frontmatter }} />}
   >
-    <HeadInfo {...{ frontmatter, locale, slug }} />
-    <div className="flex flex-row-reverse flex-wrap xl:flex-nowrap justify-end">
-      {frontmatter.toc && frontmatter.toc.length > 0 && (
-        <div className="mb-8 w-full xl:w-80 2xl:w-96 xl:pl-8 2xl:pl-16">
-          <Toc toc={frontmatter.toc} wrap />
-        </div>
-      )}
-      <MdxWrapper>{MDX}</MdxWrapper>
-    </div>
+    <MdxWrapper>{MDX}</MdxWrapper>
   </PageWrapper>
 )
 
@@ -87,7 +58,7 @@ const EnDocsPage = ({ page, slug }) => {
   /* Load MDX dynamically */
   useEffect(() => {
     const loadMDX = async () => {
-      import(`../../../../markdown/org/${slug}/en.md`).then((mod) => {
+      import(`orgmarkdown/docs/${slug}/en.md`).then((mod) => {
         setFrontmatter(mod.frontmatter)
         const Component = mod.default
         setMDX(<Component components={components('org')} />)
@@ -107,7 +78,7 @@ const FrDocsPage = ({ page, slug }) => {
   /* Load MDX dynamically */
   useEffect(() => {
     const loadMDX = async () => {
-      import(`../../../../markdown/org/${slug}/fr.md`).then((mod) => {
+      import(`orgmarkdown/docs/${slug}/fr.md`).then((mod) => {
         setFrontmatter(mod.frontmatter)
         const Component = mod.default
         setMDX(<Component components={components('org')} />)
@@ -127,7 +98,7 @@ const EsDocsPage = ({ page, slug }) => {
   /* Load MDX dynamically */
   useEffect(() => {
     const loadMDX = async () => {
-      import(`../../../../markdown/org/${slug}/es.md`).then((mod) => {
+      import(`orgmarkdown/docs/${slug}/es.md`).then((mod) => {
         setFrontmatter(mod.frontmatter)
         const Component = mod.default
         setMDX(<Component components={components('org')} />)
@@ -147,7 +118,7 @@ const DeDocsPage = ({ page, slug }) => {
   /* Load MDX dynamically */
   useEffect(() => {
     const loadMDX = async () => {
-      import(`../../../../markdown/org/${slug}/de.md`).then((mod) => {
+      import(`orgmarkdown/docs/${slug}/de.md`).then((mod) => {
         setFrontmatter(mod.frontmatter)
         const Component = mod.default
         setMDX(<Component components={components('org')} />)
@@ -167,7 +138,7 @@ const NlDocsPage = ({ page, slug }) => {
   /* Load MDX dynamically */
   useEffect(() => {
     const loadMDX = async () => {
-      import(`../../../../markdown/org/${slug}/nl.md`).then((mod) => {
+      import(`orgmarkdown/docs/${slug}/nl.md`).then((mod) => {
         setFrontmatter(mod.frontmatter)
         const Component = mod.default
         setMDX(<Component components={components('org')} />)
@@ -197,7 +168,7 @@ export async function getStaticProps({ locale, params }) {
   return {
     props: {
       ...(await serverSideTranslations('en', ['docs', ...ns])),
-      slug: 'docs/' + params.slug.join('/'),
+      slug: params.slug.join('/'),
       locale,
       page: {
         locale,

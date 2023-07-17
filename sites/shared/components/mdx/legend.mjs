@@ -8,7 +8,13 @@ export const Legend = ({ caption = false, part = '', children = null }) => {
       head: 370,
     },
   }
-  const patternProps = new LegendDesign(settings).draft().getRenderProps()
+  const pattern = new LegendDesign(settings).draft()
+
+  const patternProps = {
+    renderProps: pattern.getRenderProps(),
+    logs: pattern.getLogs(),
+  }
+
   if (caption)
     console.log(
       'Passing the caption prop to @freesewing/components/Legend is deprecated. See: https://github.com/freesewing/freesewing/issues/1043'

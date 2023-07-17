@@ -11,6 +11,13 @@ import { Legend } from './legend.mjs'
 import { DocsTitle, DocsLink } from './docs-helpers.mjs'
 import { V3Wip } from '../v3-wip.mjs'
 
+const WipWithReadMore = (props) => (
+  <>
+    <V3Wip {...props} />
+    <ReadMore />
+  </>
+)
+
 export const components = (site = 'org') => {
   const base = {
     // Custom components
@@ -48,9 +55,9 @@ export const components = (site = 'org') => {
       }
     : {
         ...base,
-        PatternDocs: V3Wip,
-        PatternOptions: V3Wip,
-        PatternMeasurements: V3Wip,
+        PatternDocs: WipWithReadMore,
+        PatternOptions: WipWithReadMore,
+        PatternMeasurements: WipWithReadMore,
         Gauge: V3Wip,
         Legend,
       }

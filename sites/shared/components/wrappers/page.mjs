@@ -48,23 +48,18 @@ export const PageWrapper = (props) => {
    */
   const [theme] = useTheme()
   const [currentTheme, setCurrentTheme] = useState()
-  const [navupdates, setNavupdates] = useState(0)
   useEffect(() => setCurrentTheme(theme), [currentTheme, theme])
 
   /*
    * Update navigation context with title and path
    */
   useEffect(() => {
-    // Only update if a new page was loaded
-    if (path.join('/') !== slug) {
-      setNavigation({
-        title: pageTitle,
-        locale,
-        path,
-      })
-      setNavupdates(navupdates + 1)
-    }
-  }, [path, pageTitle, slug, locale, navupdates, setNavigation])
+    setNavigation({
+      title: pageTitle,
+      locale,
+      path,
+    })
+  }, [path, pageTitle, locale, setNavigation])
 
   /*
    * Hotkeys (keyboard actions)

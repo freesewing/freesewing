@@ -6,6 +6,7 @@ import { designs, tags } from 'shared/config/designs.mjs'
 import { objUpdate } from 'shared/utils.mjs'
 import { orderedSlugLut } from 'shared/hooks/use-navigation-helpers.mjs'
 import { useRouter } from 'next/router'
+import { useMemo } from 'react'
 
 /*
  * prebuildNavvigation[locale] holds the navigation structure based on MDX content.
@@ -87,7 +88,7 @@ const sitePages = (t = false, control = 99) => {
       m: 1,
       s: 'new',
       h: 1,
-      t: t('new'),
+      t: t('sections:new'),
       pattern: {
         t: t('patternNew'),
         s: 'new/pattern',
@@ -178,34 +179,40 @@ export const useNavigation = (param = {}, extra = []) => {
   // We need the account if we want to take control into account
   const { account } = useAccount()
 
-  const siteNav = {
-    ...pbn[locale],
-    ...sitePages(t, ignoreControl ? undefined : account.control),
-  }
-  for (const [_path, _data] of extra) {
-    objUpdate(siteNav, _path, _data)
-  }
+  const control = ignoreControl ? undefined : account.control
 
-  // Apply some tweaks
-  siteNav.blog.m = 1
-  siteNav.blog.n = 1
-  siteNav.showcase.m = 1
-  siteNav.showcase.n = 1
-  siteNav.docs.m = 1
+  const value = useMemo(() => {
+    const siteNav = {
+      ...pbn[locale],
+      ...sitePages(t, control),
+    }
+    for (const [_path, _data] of extra) {
+      objUpdate(siteNav, _path, _data)
+    }
 
-  // Set order on main sections
-  siteNav.designs.o = 10
-  siteNav.docs.o = 20
-  siteNav.blog.o = 30
-  siteNav.showcase.o = 40
-  siteNav.community.o = 50
-  siteNav.patterns.o = 60
-  siteNav.sets.o = 70
-  siteNav.account.o = 80
-  siteNav.new.o = 90
+    // Apply some tweaks
+    siteNav.blog.m = 1
+    siteNav.blog.n = 1
+    siteNav.showcase.m = 1
+    siteNav.showcase.n = 1
+    siteNav.docs.m = 1
 
-  return {
-    siteNav, // Site navigation
-    slugLut: orderedSlugLut(siteNav), // Slug lookup table
-  }
+    // Set order on main sections
+    siteNav.designs.o = 10
+    siteNav.docs.o = 20
+    siteNav.blog.o = 30
+    siteNav.showcase.o = 40
+    siteNav.community.o = 50
+    siteNav.patterns.o = 60
+    siteNav.sets.o = 70
+    siteNav.account.o = 80
+    siteNav.new.o = 90
+
+    return {
+      siteNav, // Site navigation
+      slugLut: orderedSlugLut(siteNav), // Slug lookup table
+    }
+  }, [locale, extra, control])
+
+  return value
 }
