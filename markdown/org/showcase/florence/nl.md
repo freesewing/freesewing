@@ -1,19 +1,19 @@
 ---
-maker: "unknown"
-caption: "There's so many people who made our face mask, here's just a few of them"
+maker: "onbekend"
+caption: "Er zijn zoveel mensen die ons gezichtsmasker hebben gemaakt, hier zijn er een paar"
 date: "2020-07-12"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/85f06378981db4e6769579d583b5361e5b8b6e46-2000x1200.jpg"
-intro: "When we published our face mask in February, we did not anticipate that it would blow up the way it did."
-title: "Various Florence makers [Niet vertaald]"
-designs: ["florence"]
+intro: "Toen we ons gezichtsmasker in februari publiceerden, hadden we niet verwacht dat het zo'n grote vlucht zou nemen."
+title: "Diverse makers Florence"
+designs:
+  - "florence"
 ---
 
 
-When we published our face mask in February, we did not anticipate that it would blow up the way it did.
+Toen we ons gezichtsmasker in februari publiceerden, hadden we niet verwacht dat het zo'n grote vlucht zou nemen.
 
-Countless of people have made our mask, and in the avalange of questions and feedback, we haven't really
-kept trach of who did what.
+Ontelbare mensen hebben ons masker gemaakt en in de wirwar van vragen en feedback hebben we niet echt bijgehouden wie wat heeft gedaan.
 
-Above is selection of people who shared their makes with us on social media.  
-Thanks to all of them for doing so, and please do the same if you'd like us to showcase your makes.
+Hierboven zie je een selectie van mensen die hun werk met ons hebben gedeeld op social media.  
+Hartelijk dank aan iedereen die dit heeft gedaan en doe hetzelfde als je wilt dat we jouw creaties in de kijker zetten.
 
