@@ -1,11 +1,12 @@
 ---
-maker: "unknown"
+maker: "onbekend"
 caption: "Ligt het aan mij, of is dit te veel schattigheid?"
 date: "2018-02-05"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0d0673d758bb9ec6f60c01db5dba00a0d3fea7ee-1080x1080.jpg"
 intro: "Matchende Simon hemden voor deze twee schatjes"
 title: "Matchende Simon hemden voor deze twee schatjes"
-designs: ["simon"]
+designs:
+  - "simon"
 ---
 
 ![Model + lintmeter](https://posts.freesewing.org/uploads/matching_simon_view2_07c4206346.jpg "Model + lintmeter")
@@ -16,15 +17,15 @@ designs: ["simon"]
 
 ![Achterkant](https://posts.freesewing.org/uploads/matching_simon_view5_2e3b570060.jpg "Achterkant")
 
-![Hallo camera](https://posts.freesewing.org/uploads/matching_simon_view6_1b0caef89f.jpg "Hallo camera")
+![Hallo camera](https://posts.freesewing.org/uploads/matching_simon_view6_1b0caef89f.jpg)
 
 <Note>
 
-###### See the originals on the Instragram feed of ecmtts
+###### Bekijk de originelen op de Instragram feed van ecmtts
 
-These images are from 
-[the Instagram feed](https://www.instagram.com/ecmtts/)
-of [@ericamattos](/users/ericamattos).
-They are published here with permission.
+Deze afbeeldingen komen van 
+[de Instagram feed](https://www.instagram.com/ecmtts/)
+van [@ericamattos](/users/ericamattos).
+Ze zijn hier gepubliceerd met toestemming.
 
 </Note>
