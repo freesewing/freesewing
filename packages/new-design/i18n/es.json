@@ -19,7 +19,7 @@
   "youCan": "Puedes",
   "enterMeasurements": "Introducir medidas a mano",
   "preloadMeasurements": "Precarga un conjunto de medidas",
-  "size": "Talla",
+  "size": "Tamaño",
   "noRequiredMeasurements": "Este patrón no requiere tiene medidas",
   "howtoAddMeasurements": "Para requerir mediciones, agrégalas a la sección de <b>mediciones</b> del archivo de configuración del patrón.",
   "seeDocsAt": "La documentación sobre este tema está disponible en",
