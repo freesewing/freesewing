@@ -5517,10 +5517,10 @@ before-after-hook@^2.2.0:
   resolved "https://registry.yarnpkg.com/before-after-hook/-/before-after-hook-2.2.3.tgz#c51e809c81a4e354084422b9b26bad88249c517c"
   integrity sha512-NzUnlZexiaH/46WDhANlyR2bXRopNg4F/zuSA3OpZnllCUgRaOF2znDioDWrmbNVsuZk6l9pMquQB38cfBZwkQ==
 
-bezier-js@6.1.3:
-  version "6.1.3"
-  resolved "https://registry.yarnpkg.com/bezier-js/-/bezier-js-6.1.3.tgz#45c6cac9455253f6b676d8ffda7aed42adfc8d5d"
-  integrity sha512-VPFvkyO98oCJ1Tsi+bFBrKEWLdefAj4DJVaWp3xTEsdCbunC7Pt/nTeIgu/UdskBNcmHv8TOfsgdMZb1GsICmg==
+bezier-js@6.1.4:
+  version "6.1.4"
+  resolved "https://registry.yarnpkg.com/bezier-js/-/bezier-js-6.1.4.tgz#c7828f6c8900562b69d5040afb881bcbdad82001"
+  integrity sha512-PA0FW9ZpcHbojUCMu28z9Vg/fNkwTj5YhusSAjHHDfHDGLxJ6YUKrAN2vk1fP2MMOxVw4Oko16FMlRGVBGqLKg==
 
 big.js@^5.2.2:
   version "5.2.2"
