@@ -1,135 +1,92 @@
 ---
 author: "joostdecock"
-caption: "Your new login background for the month of February"
+caption: "Je nieuwe inlogachtergrond voor de maand februari"
 date: "2018-01-31"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/6fbc797ad0b3d50a8337bd2cb8401f04f63bffdd-2000x1125.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - January 2018: Inkscape DPI, version awareness, Bail, and Carlita [Niet vertaald]"
+intro: "Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt."
+title: "Maandelijkse roundup - januari 2018: Inkscape DPI, versiebewustzijn, Bail en Carlita"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt.
 
-## Looking back at January
-![More like this month](https://posts.freesewing.org/uploads/coffee_3f501d4076.gif)
+## Terugblik op januari
+![Meer zoals deze maand](https://posts.freesewing.org/uploads/coffee_3f501d4076.gif)
 
-It might be [the record-breaking depressing weather in my neck of the woods
-](https://www.theguardian.com/world/2018/jan/19/aint-no-sunshine-winter-darkest-europe),
-but I feel like January took a lot out of me. So let's see if we have at least something
-to show for it.
+Misschien is het [het recordbrekende deprimerende weer in mijn streek ](https://www.theguardian.com/world/2018/jan/19/aint-no-sunshine-winter-darkest-europe), maar ik heb het gevoel dat januari veel van me heeft gevergd. Dus laten we eens kijken of we op zijn minst iets kunnen laten zien.
 
-### The Inkscape default units quandary
+### Het Inkscape standaard eenheden dilemma
 
-At the start of the year, we rolled out core v1.3.0 to address [issue #204](https://github.com/freesewing/core/issues/204)
-aka the the Inkscape default units quandary.
+Aan het begin van het jaar brachten we core v1.3.0 uit om [issue #204](https://github.com/freesewing/core/issues/204) aka het Inkscape standaard eenheden dilemma aan te pakken.
 
-It was a bit of an unusual fix because our hand was forced due to upstream changes made by the
-Inkscape developers. In addition, we didn't only have to adapt our code, but also had to backport
-the changes to all your existing drafts. 
+Het was een beetje een ongebruikelijke fix omdat onze hand werd gedwongen door upstream wijzigingen van de Inkscape ontwikkelaars. Bovendien moesten we niet alleen onze code aanpassen, maar ook de wijzigingen backporteren naar al jullie bestaande concepten.
 
-If you were blissfully unaware of the whole thing, we wrote a blog post about it:
-[Freesewing core v1.3.0 is out; Comes with fixes so good that we back-ported them to all your drafts](https://joost.freesewing.org/blog/core-v1.3.0-is-out/).
+Als je het allemaal niet wist, hebben we er een blogpost over geschreven: [Freesewing core v1.3.0 is uit; Komt met fixes die zo goed zijn dat we ze hebben geback-port naar al je drafts](https://joost.freesewing.org/blog/core-v1.3.0-is-out/).
 
-### Version awareness 
+### Versiebewustzijn
 
-We now keep track of which version of core generated your draft. We roll out fixes and improvements
-all the time. So the drafts you have stored in your profile might be outdated.
+We houden nu bij welke versie van core je concept heeft gegenereerd. We brengen voortdurend fixes en verbeteringen aan op . De concepten die je in je profiel hebt opgeslagen kunnen dus verouderd zijn.
 
-You are now informed about this, both on the draft's page itself and on your list of drafts.
-A simple redraft will upgrade them to the latest version.
+Je wordt hier nu over geïnformeerd, zowel op de conceptpagina zelf als in je lijst met concepten. Een eenvoudige redraft zal ze upgraden naar de nieuwste versie.
 
-> ##### Long-term vision for versioning
+> ##### Langetermijnvisie voor versiebeheer
 > 
-> This solution is a step up from the previous situation, but it doesn't allow for very
-> granular version control. If you have 10 different Simon drafts stored in your profile, and we
-> bump the core version number because we made a tweak to Carlton, all your drafts are marked
-> as outdated, even though the changes don't impact them.
+> Deze oplossing is een stap vooruit ten opzichte van de vorige situatie, maar het biedt geen mogelijkheden voor granulair versiebeheer. Als je 10 verschillende concepten van Simon hebt opgeslagen in je profiel en we het versienummer van de kern veranderen omdat we Carlton hebben aangepast, worden al je concepten gemarkeerd als verouderd op , ook al hebben de wijzigingen geen invloed op hen.
 > 
-> With only a single core version number to depend on, there's no obvious way for us to keep track
-> of what changes impact what pattern.
+> Met slechts een enkel core versienummer om van af te hangen, is er geen voor de hand liggende manier voor ons om bij te houden welke veranderingen welk patroon beïnvloeden.
 > 
-> The long-term plan here is to have a core version number and a pattern version number.
-> This way, a version bump in one pattern will not impact other patterns. 
+> Het langetermijnplan hier is om een kernversienummer en een patroonversienummer te hebben. Op deze manier heeft een versiewobbel in één patroon geen invloed op andere patronen. 
 > 
-> A version bump in core will still impact all patterns, but there should be far fewer core versions
-> once we take all patterns out of core.
+> Een versie bump in core heeft nog steeds invloed op alle patronen, maar er zouden veel minder core versies moeten zijn als we alle patronen uit core halen.
 > 
-> The idea is that every pattern will be in its own repository, and we'll use composer to manage them 
-> as dependencies. 
+> Het idee is dat elk patroon in zijn eigen repository komt, en we gebruiken composer om ze te beheren als afhankelijkheden. 
 > 
-> But this is a long-term idea that won't be implemented until after we rewrite core. 
-> Yes, that's another long-term idea.
+> Maar dit is een langetermijnidee dat pas wordt geïmplementeerd nadat we core hebben herschreven. Ja, dat is ook een idee voor de lange termijn.
 
-### Bail for error handling
+### Borg voor foutafhandeling
 
-In the first half of the month, we tried Rollbar for error handling and reporting.
-While we liked the functionality it provided, we weren't too happy about the possible impact on 
-your privacy of sending that kind of data to a third party.
+In de eerste helft van de maand hebben we Rollbar uitgeprobeerd voor foutafhandeling en rapportage. Hoewel we de functionaliteit die het bood goed vonden, waren we niet zo blij met de mogelijke impact op van het versturen van dat soort gegevens naar een derde partij.
 
-So, we decided to write our own poor man's rollbar called Bail. Bail is now used in our data
-and core backends, so when things break, we know about it. 
+Dus besloten we onze eigen poor man's rollbar te schrijven, genaamd Bail. Bail wordt nu gebruikt in onze gegevens en core backends, dus als er dingen kapot gaan, weten we dat.
 
-This effort also lead to a 2-week side-quest to write tests for our data backend. All details:
-[Introducing freesewing bail: A poor man's rollbar --- because privacy](/blog/introducing-bail/)
- 
-### Carlita is here
+Deze inspanning leidde ook tot een 2 weken durende side-quest om tests te schrijven voor onze data backend. Alle details: [Introductie van freesewing borg: De rolbeugel van een arme man --- omdat privacy](/blog/introducing-bail/)
 
-A couple of days ago, we released the [Carlita Coat](/patterns/carlita), 
-the womenswear version of our Carlton coat.
+### Carlita is hier
 
-If you rushed out to get your hands on Carlita, it's good to know that she was released as
-part of core v1.6.0 and we're now at v1.6.3, and that is mostly due to fixes and tweaks in
-Carlton/Carlita.
+Een paar dagen geleden hebben we de [Carlita Coat](/patterns/carlita)uitgebracht, de damesversie van onze Carlton coat.
 
-If you've got an earlier version of the pattern, please redraft. If you've already printed
-it, perhaps have a look at [the changelog](https://github.com/freesewing/core/blob/develop/CHANGELOG.md) 
-to figure out what has changed.
+Als je je hebt gehaast om Carlita te bemachtigen, is het goed om te weten dat ze is uitgebracht als onderdeel van core v1.6.0 en dat we nu bij v1.6.3 zijn, en dat is voornamelijk te danken aan fixes en tweaks in Carlton/Carlita.
 
-If you check the changelog, you'll also see that we started the month on core v1.2.9 and
-are now running core v1.6.3, so I don't think it's just an idea that it was a busy month.
+Als je een eerdere versie van het patroon hebt, maak dan een nieuwe versie. Als je al hebt afgedrukt, kijk dan eens op [de changelog](https://github.com/freesewing/core/blob/develop/CHANGELOG.md) om erachter te komen wat er is veranderd.
 
-## Looking ahead to February
+Als je de changelog bekijkt, zie je ook dat we de maand begonnen met core v1.2.9 en draait nu core v1.6.3, dus ik denk niet dat het alleen maar een idee is dat het een drukke maand was.
 
-February is a short month so it's probably best to manage expectations. But here's
-what I have in mind for it:
+## Vooruitkijken naar februari
 
-### Carlton/Carlita documentation
+Februari is een korte maand, dus het is waarschijnlijk het beste om de verwachtingen te managen. Maar hier is wat ik ervoor in gedachten heb:
 
-Quite frankly, this is like pulling teeth to me, so don't expect it to be finished by the
-end of February, but I should at least have made some progress on the 
-documentation for the Carlton and Carlita patterns.
+### Carlton/Carlita documentatie
 
-On a related note, the increasing popularity of this site means I'm a lot more occupied with
-various questions, and small issues that need my attention. 
+Eerlijk gezegd is dit als tanden trekken voor mij, dus verwacht niet dat het eind februari af zal zijn, maar ik zou in ieder geval wat vooruitgang moeten hebben geboekt met de documentatie voor de Carlton en Carlita patronen.
 
-All that feedback is a good thing
-for it is how we improve things around here. But I do notice that it is becoming increasingly
-difficult to dedicate a larger chunk of time to one specific thing. 
-Which is really what you need when tackling larger tasks such as writing documentation
-or designing new patterns.
+Even terzijde: de toenemende populariteit van deze site betekent dat ik veel meer bezig ben met verschillende vragen en kleine problemen die mijn aandacht nodig hebben.
 
-I don't really have a solution for that, I'm just making the observation.
+Al die feedback is een goede zaak want zo verbeteren we de dingen hier. Maar ik merk wel dat het steeds moeilijker wordt om een groter stuk tijd aan één specifiek ding te besteden. Dat is echt wat je nodig hebt bij het aanpakken van grotere taken zoals het schrijven van documentatie of het ontwerpen van nieuwe patronen.
 
-### Maybe a Blake Blazer release
+Ik heb daar niet echt een oplossing voor, ik maak alleen de opmerking.
 
-I have a jacket pattern on my drawing board that's been there since the summer (it's called the Blake Blazer).
-I really should just take out some time to wrap it up and publish it, but
-I've been reluctant to do so because I can't seem to find the time to actually make
-the jacket.
+### Misschien een Blake Blazer release
 
-I've used the pattern before for 
-[my refashioners make this year](/blog/the-refashioners-2017/), 
-but that's not exactly
-a very representative example.
+Ik heb een patroon voor een jasje op mijn tekentafel liggen dat er al sinds de zomer ligt (het heet de Blake Blazer). Ik zou eigenlijk wat tijd moeten uittrekken om het in te pakken en te publiceren, maar ik zie er tegenop om dat te doen omdat ik maar geen tijd kan vinden om het jasje te laten maken.
 
-I don't think I'll find the time to make a jacket in February, but perhaps a muslin is enough
-to publish it in beta.
+Ik heb het patroon eerder gebruikt voor [mijn refashioners maken dit jaar](/blog/the-refashioners-2017/), maar dat is niet bepaald een heel representatief voorbeeld.
+
+Ik denk niet dat ik de tijd zal vinden om in februari een jasje te maken, maar misschien is een mousseline genoeg om het in bèta te publiceren.
 
 ### FOSDEM
 
-![All details on fosdem.org](https://posts.freesewing.org/uploads/fosdem_bb321397cc.png)
+![Alle details op fosdem.org](https://posts.freesewing.org/uploads/fosdem_bb321397cc.png)
 
-[FOSDEM](http://fosdem.org/) --- the Free and Open Source Developers' European Meeting ---
- is on the first weekend of February in Brussels.
+[FOSDEM](http://fosdem.org/) --- de Free and Open Source Developers' European Meeting --- is in het eerste weekend van februari in Brussel.
 
-I'm planning to be there on Sunday, so if you're attending too, let me know or come and say hi.
+Ik ben van plan er zondag te zijn, dus als jij er ook bent, laat het me dan weten of kom even gedag zeggen.
 

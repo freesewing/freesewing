@@ -1,5 +1,5 @@
 ---
-title: "Chest pocket placement"
+title: "Plaatsting borstzak"
 ---
 
 ![Plaatsting borstzak](chestpocketplacement.svg)

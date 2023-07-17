@@ -1,5 +1,5 @@
 ---
-title: "Inner pocket welt height"
+title: "Altura interior de los bolsillos"
 ---
 
 Controls the width of the inner pocket welts.

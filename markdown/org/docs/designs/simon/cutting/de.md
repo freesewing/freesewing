@@ -24,10 +24,10 @@ title: "Simon shirt: Cutting Instructions"
 
 <Note>
 
-Wenn du zwei ausschnitst, kannst du sie [gute Seiten zusammen schneiden](/docs/sewing/good-sides-together).
-Bei der Arbeit mit Stoff mit einem Muster ziehe ich es jedoch vor, sie individuell zu schneiden, um das Muster passend zu steuern.
+Wenn du zwei Teile ausschneidest, kannst du sie [mit guten Seiten zusammen](/docs/sewing/good-sides-together) ausschneiden.
+Wenn der Stoff jedoch ein Muster hat, ziehe ich es vor, sie einzeln auszuschneiden, damit ich das Abstimmen der Muster aufeinander genau kontrollieren kann.
 
-Wenn Sie sie einzeln schneiden, denken Sie daran, dass sie Spiegelbilder voneinander sein müssen. Wenden Sie also entweder Ihr Muster oder Ihren Stoff, wenn Sie das zweite schneiden.
+Wenn du die Teile einzeln ausschneidest, musst du daran denken, dass sie Spiegelbilder voneinander sein müssen. Wende also entweder dein Schnittmuster oder deinen Stoff, wenn du das zweite Teil ausschneidest.
 
 </Note>
 

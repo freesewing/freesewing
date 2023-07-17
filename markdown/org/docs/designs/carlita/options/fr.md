@@ -1,5 +1,5 @@
 ---
-title: "Manteau Carlita : Options de conception"
+title: "Carlita coat: Design Options"
 ---
 
 <PatternOptions pattern='carlita' />

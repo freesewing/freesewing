@@ -1,5 +1,5 @@
 ---
-title: "Waist ease"
+title: "Taillenzugabe"
 ---
 
 ![Taillenzugabe](waistease.svg)

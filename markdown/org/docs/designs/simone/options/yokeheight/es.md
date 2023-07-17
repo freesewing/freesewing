@@ -1,6 +1,6 @@
-- - -
-title: "Yoke height"
-- - -
+---
+title: "Altura del yugo"
+---
 
 Controls the height of the yoke seam.
 

@@ -1,5 +1,5 @@
 ---
-title: "Contour"
+title: "Kontur"
 ---
 
 Legt fest, wie scharf die Prinzessin Naht korrigiert, sobald sie die Fülle Ihrer Brüste überschritten hat.

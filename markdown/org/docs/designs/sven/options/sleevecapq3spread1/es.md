@@ -1,6 +1,6 @@
-- - -
-title: "Sleevecap Q3 upward spread"
-- - -
+---
+title: "Funda Q3 extendido hacia arriba"
+---
 
 ![La dispersión ascendente en el cuadrilátero de la manga](./sleevecapq3spread1.svg)
 

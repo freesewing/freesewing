@@ -1,5 +1,5 @@
 ---
-title: "Sleeve placket width"
+title: "Ärmelleiste Breite"
 ---
 
 ![Ärmelleiste Breite](sleeveplacketwidth.svg)

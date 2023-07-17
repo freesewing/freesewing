@@ -1,5 +1,5 @@
 ---
-title: "Боді-блок Бріанни: Інструкція з розкрою"
+title: "Breanna body block: Cutting Instructions"
 ---
 
 **Основна тканина**

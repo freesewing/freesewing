@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap front Y"
+title: "Mouwkop Y vooraan"
 ---
 
 ![De verticale locatie van het tussenpunt vooraan](./sleevecapfrontfactory.svg)

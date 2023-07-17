@@ -1,27 +1,28 @@
 ---
 maker: "unknown"
-caption: "Anne's husband Sigvard is a trainer at <a target='_BLANK' href='http://fighter.org/'>the local kick boxing club</a>. Hence the name <em>fighter hoodie</em>"
+caption: "Le mari d'Anne Sigvard est entraîneur au <a target='_BLANK' href='http://fighter.org'/>club de boxe locale</a>. D'où le nom de <em>du chasseur à capuche</em>"
 date: "2017-11-20"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8f0b0ca919900145250b0af08401775198623eda-1001x1500.jpg"
-intro: "[En anglais] The fighter hoodie: Hugo with a zip"
-title: "[En anglais] The fighter hoodie: Hugo with a zip"
-designs: ["hugo"]
+intro: "Le sweat à capuche du combattant : Hugo avec un zip"
+title: "Le sweat à capuche du combattant : Hugo avec un zip"
+designs:
+  - "hugo"
 ---
 
-![Another view](https://posts.freesewing.org/uploads/fighter_hoodie_1_69359b6e7d.jpg "Another view")
+![Une autre vue](https://posts.freesewing.org/uploads/fighter_hoodie_1_69359b6e7d.jpg "Une autre vue")
 
-![Another view](2.jpg)
+![Une autre vue](https://posts.freesewing.org/uploads/fighter_hoodie_2_c74c303646.jpg)
 
-![Another view](3.jpg)
+![Une autre vue](https://posts.freesewing.org/uploads/fighter_hoodie_3_f8766d848b.jpg)
 
-![Another view](4.jpg)
+![Une autre vue](https://posts.freesewing.org/uploads/fighter_hoodie_4_881e549c9b.jpg)
 
 <Note>
 
-###### See the original on [@Topstitched](/users/Topstitched)'s blog
-These picture are from the [Back again with the fighter hoodie](http://www.topstitched.net/?p=1431) 
-blog post on [topstitched.net](http://www.topstitched.net/).
+###### Voir l'original sur le blog de [@Topstitched](/users/Topstitched)
+Ces photos proviennent de l'article [De retour avec le gilet à capuche](http://www.topstitched.net/?p=1431) 
+ sur le blog [topstitched.net](http://www.topstitched.net/).
 
-They are reposted here with permission.
+Elles sont repostées ici avec autorisation.
 
 </Note>

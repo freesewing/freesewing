@@ -1,6 +1,6 @@
-- - -
+---
 title: "Yuri hoodie: Cutting Instructions"
-- - -
+---
 
 - Corta **2 frentes** con _lados buenos juntos_
 - Corta **1 atrás** _en el plegado_

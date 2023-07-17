@@ -1,210 +1,160 @@
 ---
 author: "joostdecock"
-caption: "Open 24/7 from now onwards"
+caption: "Vanaf nu 24/7 open"
 date: "2017-08-25"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/444b63db2120d50eb52004b2017c992624bbb66e-2000x1333.jpg"
-intro: "Freesewing.org is open for business. That is, the business of giving away free sewing patterns [Niet vertaald]"
-title: "Freesewing.org is open for business. That is, the business of giving away free sewing patterns [Niet vertaald]"
+intro: "Freesewing.org is open voor business. Dat wil zeggen, het weggeven van gratis naaipatronen"
+title: "Freesewing.org is open voor business. Dat wil zeggen, het weggeven van gratis naaipatronen"
 ---
 
-When I released freesewing core back in March, 
-I did not expect it to take another 5 months to finally have a proper front-end for it, 
-but here we are.
+Toen ik freesewing core in maart uitbracht, , had ik niet verwacht dat het nog eens 5 maanden zou duren voordat we eindelijk een goede front-end ervoor zouden hebben, maar hier zijn we dan.
 
-From today onwards, 
-[freesewing.org](https://freesewing.org/) 
-is the place to be for your made-to-measure sewing patterns.
+Vanaf vandaag kun je op [freesewing.org](https://freesewing.org/) terecht voor naaipatronen op maat.
 
-If you're new to freesewing, 
-I suggest you start reading [the about page](/about/), 
-which hopefully does a half-decent attempt at describing what this thing is.
+Als freesewing nieuw voor je is, raad ik je aan te beginnen met het lezen van [de over pagina](/about/), die hopelijk een half-degelijke poging doet om te beschrijven wat dit ding is.
 
-> As of today mmp will no longer allow new users to sign up and after a grace period of a few months, I will shut it down
+> Vanaf vandaag kunnen nieuwe gebruikers zich niet meer aanmelden bij mmp en na een aflossingsvrije periode van een paar maanden zal ik het afsluiten.
 
-If you do know what I'm doing here, 
-or you saw *An open-source platform for made-to-measure sewing patterns* 
-at the top of this page and that was enough for you to figure it out, 
-this announcement comes after 18 months of work to reinvent my previous site, 
-[makemypattern.com](https://makemypattern.com/).
+Als je weet wat ik hier aan het doen ben, of je zag *Een open-source platform voor naaipatronen op maat* bovenaan deze pagina en dat was genoeg voor je om erachter te komen, komt deze aankondiging na 18 maanden werk om mijn vorige site, [makemypattern.com](https://makemypattern.com/)opnieuw uit te vinden.
 
-Speaking of which, 
-makemypattern.com has so far generated more than 6500 sewing patterns, 
-so I think it's fair to say it's been a good run. 
+Nu we het er toch over hebben: makemypattern.com heeft tot nu toe meer dan 6500 naaipatronen opgeleverd, dus ik denk dat we wel kunnen zeggen dat het een goede reeks is geweest.
 
-![Graph of the number of patterns generated on makemypattern.com](https://posts.freesewing.org/uploads/mmp_patterns_82c2056938.png)
+![Grafiek van het aantal patronen gegenereerd op makemypattern.com](https://posts.freesewing.org/uploads/mmp_patterns_82c2056938.png)
 
-But [every new beginning comes from some other beginning's end](https://www.youtube.com/watch?v=xGytDsqkQY8). 
-So as of today mmp will no longer allow new users to sign up 
-and after a grace period of a few months, I will shut it down. 
+Maar [elk nieuw begin komt voort uit het einde van een ander begin](https://www.youtube.com/watch?v=xGytDsqkQY8). Dus vanaf vandaag zal mmp geen nieuwe gebruikers meer toestaan om zich aan te melden op en na een aflossingsvrije periode van een paar maanden zal ik het afsluiten.
 
-Update your bookmarks people, 
-because [freesewing.org](https://freesewing.org/) is where it's at.
+Update je bladwijzers mensen, want [freesewing.org](https://freesewing.org/) is where it's at.
 
-## Everything is new or different, and hopefully better
+## Alles is nieuw of anders, en hopelijk beter
 
-The idea of generating made-to-measure sewing patterns based on your measurements is the same. 
-Apart from that, pretty much everything you see here is different.
+Het idee om op maat gemaakte naaipatronen te maken op basis van jouw maten is hetzelfde. Afgezien daarvan is vrijwel alles wat je hier ziet anders.
 
-I've written before about the choices I've made when building this frontend. 
-The [matters of principle and ethics](/en/blog/privacy-choices/) 
-as wel as [the technical stuff](/en/blog/freesewing-goes-jamstack/).
+Ik heb al eerder geschreven over de keuzes die ik heb gemaakt bij het bouwen van deze voorkant. De [principekwesties en ethiek](/en/blog/privacy-choices/) evenals [de technische zaken](/en/blog/freesewing-goes-jamstack/).
 
-Today, I won't go into the details of how things work under the hood. 
-Instead, I'd like to briefly highlight some of the most significant changes for the users of the site. Hopefully, that includes you.
+Ik zal vandaag niet in detail treden over hoe alles onder de motorkap werkt. In plaats daarvan wil ik kort een aantal van de belangrijkste veranderingen voor de gebruikers van de site uitlichten. Hopelijk geldt dat ook voor jou.
 
-### Patterns vs drafts
+### Patronen vs ontwerpen
 
-I told you earlier that mmp generated over 6500 patterns. 
-I can also tell you that mmp has 10 patterns available.
+Ik heb je eerder verteld dat mmp meer dan 6500 patronen heeft gegenereerd. Ik kan je ook vertellen dat mmp 10 patronen beschikbaar heeft.
 
-So which one is it, 10 or 6500? 
-Well, it depends on the context. Which is ambigious and confusing.
+Dus welke is het, 10 of 6500? Nou, dat hangt af van de context. Dat is dubbelzinnig en verwarrend.
 
-Now, patterns are patterns, and drafts are drafts.  
-That is, a draft is what you generate from a pattern. It's a pattern drafted to your exact specifications.
+Welnu, patronen zijn patronen en concepten zijn concepten.  
+Dat wil zeggen, een klad is wat je genereert uit een patroon. Het is een patroon dat precies volgens jouw specificaties is gemaakt.
 
-![An example of a draft from freesewing.org](https://posts.freesewing.org/uploads/draft_sample_7e92caf0d6.svg)
+![Een voorbeeld van een ontwerp van freesewing.org](https://posts.freesewing.org/uploads/draft_sample_7e92caf0d6.svg)
 
-I hope that in using both terms consistently, it will become self-explanatory.
+Ik hoop dat als je beide termen consequent gebruikt, het voor zichzelf spreekt.
 
-So, for freesewing that means there are 12 patterns available, 
-from which a number of drafts have been generated that you can track live on 
-[the status page](/status).
+Voor freesewing betekent dit dus dat er 12 patronen beschikbaar zijn, waarvan een aantal concepten zijn gegenereerd die je live kunt volgen op [de statuspagina](/status).
 
-### New patterns, and blocks
+### Nieuwe patronen en blokken
 
-Currently, 12 patterns are available on freesewing.org. 
-All 10 from mmp (note: some have had their name changed) 
-plus the new [Sven Sweatshirt](/patterns/sven) and the [Brian Body Block](/patterns/brian).
+Op dit moment zijn er 12 patronen beschikbaar op freesewing.org. Alle 10 van mmp (let op: van sommige is de naam veranderd) plus de nieuwe [Sven Sweatshirt](/patterns/sven) en de [Brian Body Block](/patterns/brian).
 
-![An example of the Sven sweatshirt](https://posts.freesewing.org/uploads/sven_b189ad1368.jpg)
+![Een voorbeeld van het Sven sweatshirt](https://posts.freesewing.org/uploads/sven_b189ad1368.jpg)
 
-The block also existed in the mmp backend, but it wasn't available to you. 
-So that's another change, I am making all my blocks (slopers) available.
+Het blok bestond ook in de mmp backend, maar het was niet beschikbaar voor jou. Dus dat is nog een verandering, ik maak al mijn blokken (slopers) beschikbaar.
 
-And more is coming, I currently have 3 patterns and 1 block that I am working on. 
-They are not ready yet, and I didn't want to delay the release for them, 
-but I hope to have them all out before the end of the year.
+En er komt nog meer aan, ik heb momenteel 3 patronen en 1 blok waar ik aan werk. Ze zijn nog niet klaar en ik wilde de release voor hen niet vertragen, maar ik hoop ze allemaal voor het eind van het jaar uit te hebben.
 
-What I'm saying is, watch this space. 
-Or better, check the links at the bottom of this page for social media accounts to follow.
+Wat ik wil zeggen is: watch this space. Of bekijk de links onderaan deze pagina voor sociale media accounts die je kunt volgen.
 
-### Better support for *les autres* 
+### Betere ondersteuning voor *les autres*
 
-I [tried](https://makemypattern.com/blog/imperial-units-have-been-spotted-and-they-might-break-things)
-and [failed](https://makemypattern.com/blog/imperial-units-not-worth-it) to add support for imperial units to makemypattern.com.
+Ik [probeerde](https://makemypattern.com/blog/imperial-units-have-been-spotted-and-they-might-break-things) en [mislukte](https://makemypattern.com/blog/imperial-units-not-worth-it) om ondersteuning voor imperiale eenheden toe te voegen aan makemypattern.com.
 
-This time around, both metric and imperial are fully supported. You can set your preferred units in your account settings.
-And in each model you can set the units seperately, just in case you happen to sew for people living in different parts of the world.
+Deze keer worden zowel metrische als Engelse eenheden volledig ondersteund. Je kunt de eenheden van je voorkeur instellen in je accountinstellingen. En in elk model kun je de eenheden afzonderlijk instellen, voor het geval je naait voor mensen die in verschillende delen van de wereld wonen.
 
-Speaking of different parts of the world, freesewing core fully supports different languages. 
-You can get your pattern in a number of languages, and if yours is not listed you can help with the translation.
+Over verschillende delen van de wereld gesproken, freesewing core ondersteunt volledig verschillende talen. Je kunt je patroon in een aantal talen krijgen en als de jouwe er niet bij staat, kun je helpen met de vertaling.
 
-![The yoke of Simon, in French](https://posts.freesewing.org/uploads/yoke_7555f8616c.svg)
+![Het juk van Simon, in het Frans](https://posts.freesewing.org/uploads/yoke_7555f8616c.svg)
 
-Arguably, that is a bit of a half-measure when this site is only in English, but baby steps, right?
+Dat is misschien een beetje een halve maatregel als deze site alleen in het Engels is, maar babystapjes, toch?
 
-### Compare to catch issues early
+### Vergelijken om problemen vroeg op te sporen
 
-One of the common pitfalls is that people take measurements the wrong way.
+Een van de meest voorkomende valkuilen is dat mensen metingen verkeerd opvatten.
 
-When they generate a pattern, those incorrect measurements can sometimes really mess up the pattern 
-in a way that can be hard to spot if you are not familiar with the pattern.
+Wanneer ze een patroon genereren, kunnen die onjuiste afmetingen het patroon soms echt verknoeien op een manier die moeilijk te herkennen is als je niet bekend bent met het patroon.
 
-One way to tackle that is with better measuring instructions, which I have added.
-But what I really wanted was a way to make spot issues in an easy way.
+Een manier om dat aan te pakken is met betere meetinstructies, die ik heb toegevoegd. Maar wat ik echt wilde, was een manier om op een eenvoudige manier problemen op te sporen.
 
-![These two are going to help you to take accurate measurements](https://posts.freesewing.org/uploads/standing_d66bef801a.jpg)
+![Deze twee zullen je helpen om nauwkeurige metingen te doen](https://posts.freesewing.org/uploads/standing_d66bef801a.jpg)
 
-Comparing yourself to others is the fastest way to be unhappy. 
-But in this case, there's value to a comparison.
+Jezelf vergelijken met anderen is de snelste manier om ongelukkig te worden. Maar in dit geval heeft een vergelijking waarde.
 
-Putting your pattern side by side with a pattern that is known to be correct 
-can help you spot any issues that go beyond size differences.
+Door je patroon naast een patroon te leggen waarvan bekend is dat correct is, kun je eventuele problemen opsporen die verder gaan dan maatverschillen.
 
-So, comparison is built-in. Every time you generate a draft, you get two things:
+Vergelijking is dus ingebouwd. Elke keer dat je een ontwerp genereert, krijg je twee dingen:
 
- - Your drafted pattern
- - A comparison of your draft to a range of standard sizes
+ - Je opgestelde patroon
+ - Een vergelijking van je ontwerp met een reeks standaardmaten
 
-![An example of a draft compared to standard sizes](https://posts.freesewing.org/uploads/compare_sample_171c3eaecd.svg)
+![Een voorbeeld van een ontwerp vergeleken met standaardmaten](https://posts.freesewing.org/uploads/compare_sample_171c3eaecd.svg)
 
-It's a way to quickly eyeball your draft for any glaring issues before you start working with it.
+Het is een manier om snel te kijken of er opvallende problemen zijn voordat je ermee aan de slag gaat.
 
-### Paperless because trees are precious, and printers not a given
+### Papierloos omdat bomen kostbaar zijn en printers niet vanzelfsprekend
 
-Something that I am curious to see whether it will catch on are paperless drafts.
+Iets waarvan ik benieuwd ben of het zal aanslaan zijn papierloze concepten.
 
-Apart from the obvious upside of saving paper, I hope this will allow people who don't have access to 
-a printer to use freesewing.
+Afgezien van het voor de hand liggende voordeel van het besparen van papier, hoop ik dat dit mensen die geen toegang hebben tot een printer in staat zal stellen om freesewing te gebruiken.
 
-The idea is that you don't have to print your pattern. 
-Instead, you can transfer it directly onto fabric or another medium.
+Het idee is dat je je patroon niet hoeft uit te printen. In plaats daarvan kun je het direct overbrengen op stof of een ander medium.
 
-To make that possible, the pattern comes with detailed dimensions and a metric grid (or imperial grid if you're into that)
-that helps you transfer all the information.
+Om dat mogelijk te maken wordt het patroon geleverd met gedetailleerde afmetingen en een metrisch raster (of imperiaal raster als je daar van houdt) dat je helpt alle informatie over te brengen.
 
-![An example of a draft using the paperless theme](https://posts.freesewing.org/uploads/paperless_sample_def717482e.svg)
+![Een voorbeeld van een ontwerp met het thema Papierloos](https://posts.freesewing.org/uploads/paperless_sample_def717482e.svg)
 
-As I said, I'm curious to see whether this will be useful to people, but I felt it was worth a try.
+Zoals ik al zei, ik ben benieuwd of mensen hier iets aan hebben, maar ik vond het het proberen waard.
 
-### I've got your back (up)
+### Ik steun je (omhoog)
 
-Also new is that when you draft a pattern, I will keep that draft for you, and it will remain available. 
+Ook nieuw is dat als je een patroon ontwerpt, ik dat ontwerp voor je bewaar en het beschikbaar blijft.
 
-![All your drafts are kept and available in your account](https://posts.freesewing.org/uploads/draft_list_7950e1609a.png)
+![Al je concepten worden bewaard en zijn beschikbaar in je account](https://posts.freesewing.org/uploads/draft_list_7950e1609a.png)
 
-You can come back at any time to re-download the pattern, or tweak it, redraft it, or fork it.
-Yes [fork it](/docs/site/fork), which is kinda cool because you can also fork patterns from other people after they've shared their draft.
+Je kunt op elk moment terugkomen om het patroon opnieuw te downloaden, aan te passen, te herschrijven of te forken. Ja [fork het](/docs/site/fork), wat best cool is omdat je ook patronen van andere mensen kunt forken nadat ze hun ontwerp hebben gedeeld.
 
-You can also add your own notes to your drafts (and to your models for that matter).
+Je kunt ook je eigen aantekeningen toevoegen aan je concepten (en aan je modellen trouwens).
 
-### Community-driven blog and showcase
+### Blog en showcase voor de gemeenschap
 
-Your makes deserve better than a Flickr album somewhere, so I've added showcases to the site. 
-The idea is to have a grabbag of examples here on the site of things people have made.
+Jouw creaties verdienen beter dan een Flickr album ergens, dus heb ik showcases aan de site toegevoegd. Het idee is om hier op de site een grabbelton te hebben van voorbeelden van dingen die mensen hebben gemaakt.
 
-![Showcase of the Hugo hoodie by uneanneedecouture](https://posts.freesewing.org/uploads/hugo_b331b0c298.jpg)
+![Showcase van de Hugo hoodie door uneanneedecouture](https://posts.freesewing.org/uploads/hugo_b331b0c298.jpg)
 
-Obviously, I can't add your work if I don't know about it, 
-so either get in touch of make sure to use the #freesewing hashtag when posting about it.
+Uiteraard kan ik je werk niet toevoegen als ik er niet van weet, dus neem contact op of zorg ervoor dat je de #freesewing hashtag gebruikt als je erover post.
 
-Speaking of posting, the freesewing blog is also open to your contributions if you feel you have something to share.
+Over posten gesproken, de freesewing blog staat ook open voor jouw bijdragen als je vindt dat je iets te delen hebt.
 
 ### Badges baby
 
-This is a bit silly, but you can now unlock [badges](/docs/site/badges) on the site. 
-I added the feature initially because I wanted to find a way to 
-thank the people who took part in the early access program.
+Dit is een beetje flauw, maar je kunt nu [badges vrijspelen](/docs/site/badges) op de site. Ik heb de functie in eerste instantie toegevoegd omdat ik een manier wilde vinden om de mensen te bedanken die hebben deelgenomen aan het programma voor vroege toegang.
 
-A while ago, I opened up an early access version of the site to 
-those people who were interested, and I would like to thank all of 
-you who tried out the site, reported issues, or merely gave feedback or encouragements.
+Een tijdje geleden heb ik een early access versie van de site opengesteld voor geïnteresseerden, en ik wil jullie allemaal bedanken die de site hebben uitgeprobeerd, problemen hebben gemeld of gewoon feedback of aanmoedigingen hebben gegeven.
 
-Those of you who took part should all get that coveted early access badge. 
-If it's missing from [your profile](/profile), [get in touch](/contact).
+Degenen die hebben meegedaan zouden allemaal die felbegeerde early access badge moeten krijgen. Als het ontbreekt in [je profiel](/profile), [neem dan contact op met](/contact).
 
-Other badges are available, including one for signing up on launch day. [The full list of badges is here](/docs/site/badges).
+Er zijn ook andere badges beschikbaar, waaronder één voor het inschrijven op de lanceerdag. [De volledige lijst met badges staat hier](/docs/site/badges).
 
-## What happens now?
+## Wat gebeurt er nu?
 
-![Darkness, realistically](https://posts.freesewing.org/uploads/darkness_a9b72d2537.svg)
+![Duisternis, realistisch](https://posts.freesewing.org/uploads/darkness_a9b72d2537.svg)
 
-Maybe it's just me, but after every major project comes to completion, 
-I tend to slide into a black hole of *is this it?* disillusionment.
+Misschien ligt het aan mij, maar na de voltooiing van elk groot project, heb ik de neiging om af te glijden naar een zwart gat van *is dit het?* desillusie.
 
-I might need a few weeks to bounce back from that, but don't let that stop you from giving me 
-[your feedback and opinions](/contact) on the site. 
-And if you manage to break something, you can [create an issue](https://github.com/freesewing/site/issues/new).
+Ik heb misschien een paar weken nodig om daarvan te herstellen, maar laat dat je er niet van weerhouden om me [je feedback en meningen te geven](/contact) op de site. En als het je lukt om iets kapot te maken, kun je [een probleem maken](https://github.com/freesewing/site/issues/new).
 
-## One last thing
-I've worked on this for about a year and a half, and especially the last 11 months or so rather intensively.
+## Nog een laatste ding
+Ik heb hier ongeveer anderhalf jaar aan gewerkt, en vooral de laatste 11 maanden of zo vrij intensief.
 
-Now that it's ready, would you help me spread the news a little?
+Nu het klaar is, wil je me helpen het nieuws een beetje te verspreiden?
 
-If you could tell somebody about this or perhaps tweet or write about it, you'd do me a real favour.
+Als je iemand hierover zou kunnen vertellen of er misschien over zou kunnen twitteren of schrijven, zou je me er een groot plezier mee doen.
 
-Thank you
+Hartelijk dank
 
 
 

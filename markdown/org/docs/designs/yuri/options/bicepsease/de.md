@@ -1,9 +1,9 @@
-- - -
-weitenzugabe/Bequemlichkeitszugabe Oberarm
-- - -
+---
+title: "Bizeps Zugabe"
+---
 
-Die Menge an Leichtigkeit an Ihrem Oberarm.
+Das Maß der Bequemlichkeitszugabe/Weitenzugabe am Oberarm.
 
-## Effekt dieser Variable auf das Schnittmuster
+## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](yuri_bicepsease_sample.svg "Effekt dieser Variable auf das Schnittmuster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](yuri_bicepsease_sample.svg "Effekt dieser Option auf das Schnittmuster")

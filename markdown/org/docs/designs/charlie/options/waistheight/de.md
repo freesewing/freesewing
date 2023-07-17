@@ -1,5 +1,5 @@
 ---
-title: "Waist height"
+title: "Taillenhöhe"
 ---
 
 Steuert die Höhe der Taille, wo:
@@ -9,4 +9,4 @@ Steuert die Höhe der Taille, wo:
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](charlie_waistheight_sample.svg "Effekt dieser Variable auf das Schnittmuster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](charlie_waistheight_sample.svg "Effekt dieser Option auf das Schnittmuster")

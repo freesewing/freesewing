@@ -46,4 +46,4 @@ To make sure the binding is long enough, instead of cutting the binding down you
 
 ## Schritt 3: Viel Spaß!
 
-Das war's! Fertig! Now go stuff your new pockets to the brim!
+Das war's! Sie sind fertig! Now go stuff your new pockets to the brim!

@@ -1,5 +1,5 @@
 ---
-title: "Bust dart angle"
+title: "Angle des pinces poitrine"
 ---
 
 Contrôle l'angle par lequel la pince poitrine (sur le côté) s'incline vers le bas.
@@ -9,4 +9,4 @@ Contrôle l'angle par lequel la pince poitrine (sur le côté) s'incline vers le
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_bustdartangle_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_bustdartangle_sample.svg "Effet de cette option sur le motif")

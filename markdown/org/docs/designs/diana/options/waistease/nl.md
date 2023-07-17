@@ -1,5 +1,5 @@
 ---
-title: "Waist ease"
+title: "Overwijdte taille"
 ---
 
 ![De optie voor overwijdte aan de taille bij Diana](./waistease.svg)

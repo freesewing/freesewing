@@ -1,5 +1,5 @@
 ---
-title: "Ribbing stretch"
+title: "Bündchen-Elastizität"
 ---
 
 ![Ribbing-Strecken auf Hugo](./ribbingstretch.svg)

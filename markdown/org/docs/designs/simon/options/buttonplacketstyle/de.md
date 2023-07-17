@@ -1,5 +1,5 @@
 ---
-title: "Button placket style"
+title: "Knopfleiste Stil"
 ---
 
 ![Knopfleiste Stil](buttonplacketstyle.svg)

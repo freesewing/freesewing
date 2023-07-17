@@ -1,5 +1,5 @@
 ---
-title: "Пісочна спідниця-коло: Необхідні виміри"
+title: "Sandy circle skirt: Required Measurements"
 ---
 
 <PatternMeasurements pattern='sandy' />

@@ -1,5 +1,5 @@
 ---
-title: "Cuff ease"
+title: "Overwijdte manchet"
 ---
 
 ![Overwijdte manchet](cuffease.svg)

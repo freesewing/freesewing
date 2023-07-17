@@ -1,5 +1,5 @@
 ---
-title: "Aaron A-Shirt: Cutting Instructions"
+title: "Aaron, camiseta sin mangas: instrucciones de corte"
 ---
 
 - Corta **1 trasero** al lomo

@@ -1,10 +1,10 @@
-- - -
+---
 title: "Huey hoodie: Cutting Instructions"
-- - -
+---
 
 **Tissu principal**
 
-- Cut **2 front** parts
+- Couper **2 parties frontales**
 - Cut **1 back** part on the fold
 - Cut **2 sleeves** parts
 - cut two pocket pieces

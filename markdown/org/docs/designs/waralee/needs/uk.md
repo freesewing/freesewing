@@ -1,9 +1,9 @@
 ---
-title: "Штани-обгортки Waralee: Що вам потрібно"
+title: "Waralee wrap pants: What You Need"
 ---
 
 Щоб зробити Waralee, вам знадобиться наступне:
 
-- [Основні матеріали для шиття](/docs/sewing/basic-sewing-supplies)
+- [Базові матеріали для шиття](/docs/sewing/basic-sewing-supplies)
 - Близько 2 метрів (2,2 ярда) відповідної тканини ([див. варіанти тканини Waralee](/docs/patterns/waralee/fabric/))
 - Деякий інтерфейс для пояса і кишень (якщо є кишені).

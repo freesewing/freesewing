@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap ease"
+title: "Extra ruimte mouwkop"
 ---
 
 Bepaalt de hoeveelheid extra ruimte in de mouwkop.

@@ -1,5 +1,5 @@
 ---
-title: "Leg opening"
+title: "Apertura de la pierna"
 ---
 
 Esta opción controla hasta qué punto se corta la pierna.

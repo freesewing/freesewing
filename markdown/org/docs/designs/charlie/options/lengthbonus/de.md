@@ -15,4 +15,4 @@ Die Hose muss länger sein, um auf den Boden zu kommen.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](charlie_lengthbonus_sample.svg "Effekt dieser Variable auf das Schnittmuster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](charlie_lengthbonus_sample.svg "Effekt dieser Option auf das Schnittmuster")

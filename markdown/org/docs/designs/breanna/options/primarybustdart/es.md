@@ -1,5 +1,5 @@
 ---
-title: "Bust dart"
+title: "Dardo de busto"
 ---
 
 Where to place the primary bust dart to shape the chest.

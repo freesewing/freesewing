@@ -1,5 +1,5 @@
 ---
-title: "Cuff button rows"
+title: "Manschettenknopfreihen"
 ---
 
 ![Manschettenknopfreihen](cuffbuttonrows.svg)

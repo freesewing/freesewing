@@ -7,7 +7,6 @@ intro: "Celui-ci est pour les dames -- et je ne parle pas (juste) de cette image
 title: "Annonce de Carlita, la version féminine de notre manteau Carlton."
 ---
 
-
 Celui-ci est pour les dames -- et je ne parle pas (juste) de cette image du craquant Benoît Cumberbatch en haut de l'article.
 
 Je parles plutôt de la publication de notre dernier parton : le [Manteau Carlita](/patterns/carlita) qui est sorti en version bêta à compter d'aujourd'hui.
@@ -46,7 +45,7 @@ Cette option permet de régler la netteté de la découpe princesse après avoir
 
 Une image en dit plus que mille mots, donc voici une illustration de l'option sur la partie concernée du modèle :
 
-![L'effet de l'option comme le montre notre exemple](smooth.png)
+![L'effet de l'option comme le montre notre exemple](https://posts.freesewing.org/uploads/smooth_e8f395dd4a.png)
 
 Comme vous pouvez le voir, l'option gère la "rapidité" avec laquelle la découpe princesse rejoint votre taille après avoir passé le point le plus large de votre buste.
 

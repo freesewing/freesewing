@@ -1,5 +1,5 @@
 ---
-title: "Bloc de corps de Breanna: Ce dont tu as besoin"
+title: "Breanna body block: What You Need"
 ---
 
 Pour préparer Breanna, vous aurez besoin des éléments suivants :

@@ -1,5 +1,5 @@
 ---
-title: "Casquette plate Florent : Mesures requises"
+title: "Florent flat cap: Required Measurements"
 ---
 
 <PatternMeasurements pattern='florent' />

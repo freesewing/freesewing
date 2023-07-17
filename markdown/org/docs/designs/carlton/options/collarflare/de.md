@@ -1,5 +1,5 @@
 ---
-title: "Collar flare"
+title: "Kragenausstellung"
 ---
 
 Controls the flare of the collar by altering the fall length (between the neck and the points) of the collar.
@@ -9,4 +9,4 @@ Controls the flare of the collar by altering the fall length (between the neck a
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](carlton_collarflare_sample.svg "Effekt dieser Variable auf das Schnittmuster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](carlton_collarflare_sample.svg "Effekt dieser Option auf das Schnittmuster")

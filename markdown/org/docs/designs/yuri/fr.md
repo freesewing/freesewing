@@ -1,5 +1,5 @@
-- - -
-title: "Yuri hoodie"
-- - -
+---
+title: "Sweat à capuche Yuri"
+---
 
 <PatternDocs pattern='yuri' />

@@ -1,5 +1,5 @@
 ---
-title: "Drape angle"
+title: "Ángulo del drapeado"
 ---
 
 ![La opción de ángulo de drapeado en Diana](./drapeangle.svg)

@@ -1,5 +1,5 @@
 ---
-title: "Back armhole shape"
+title: "Forma posterior de la sisa"
 ---
 
 ![La opción de forma del agujero trasero en Aaron](./backlinebend.svg)

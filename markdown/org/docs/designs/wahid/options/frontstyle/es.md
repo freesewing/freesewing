@@ -1,5 +1,5 @@
 ---
-title: "Neck opening style"
+title: "Estilo de la apertura del cuello"
 ---
 
 ![Estilo frontal](frontstyle.svg)

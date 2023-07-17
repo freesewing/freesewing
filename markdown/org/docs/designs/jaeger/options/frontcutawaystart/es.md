@@ -1,5 +1,5 @@
 ---
-title: "Front cutaway start"
+title: "Estrella de corte frontal"
 ---
 
 ![Estrella de corte frontal](frontcutawaystart.svg)

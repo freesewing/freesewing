@@ -1,5 +1,5 @@
 ---
-title: "Collar stand curve"
+title: "Curvatura de la base del cuello"
 ---
 
 ![Curva de Collarstand](collarstandcurve.svg)

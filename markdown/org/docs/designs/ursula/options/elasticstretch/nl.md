@@ -1,5 +1,5 @@
 ---
-title: "Elastic stretch"
+title: "Elastische stretch"
 ---
 
 Pas deze optie aan voor meer of minder elastische.

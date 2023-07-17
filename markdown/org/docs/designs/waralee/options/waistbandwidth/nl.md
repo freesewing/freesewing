@@ -1,5 +1,5 @@
 ---
-title: "Waist Band"
+title: "Tailleband"
 ---
 
 Grootte van de tailleband

@@ -1,5 +1,5 @@
 ---
-title: "Center back dart"
+title: "Pinza en el centro de la espalda"
 ---
 
 ![Centroretroceso](centerbackdart.svg)

@@ -5,10 +5,11 @@ date: "2017-12-11"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f3126799846dc9ea9aecb423e7283bb715db93b4-3724x2785.jpg"
 intro: "Un test de Florent pour voir si le patron fonctionne pour les autres, par Wouter.vdub"
 title: "Un test de Florent pour voir si le patron fonctionne pour les autres, par Wouter.vdub"
-designs: ["florent"]
+designs:
+  - "florent"
 ---
 
-![Photo de l'avant](https://posts.freesewing.org/uploads/florent_by_wouter_high_back_20ec93b7c1.jpg "Photo de l'avant")
+![Vue du dos ](https://posts.freesewing.org/uploads/florent_by_wouter_high_back_20ec93b7c1.jpg "Vue du dos ") ![Photo de l'avant](https://posts.freesewing.org/uploads/florent_by_wouter_high_front_9f28a1eb39.jpg "Photo de l'avant")
 
 Wouter écrit :
 

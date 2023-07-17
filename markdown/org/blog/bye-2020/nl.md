@@ -1,55 +1,52 @@
 ---
 author: "joostdecock"
-caption: "A photo by <a href='https://unsplash.com/@onevagabond'>Paulo Silva</a> shows an empty Times Square in New York during the COVID pandemic"
+caption: "Een foto van <a href='https://unsplash.com/@onevagabond'>Paulo Silva</a> toont een leeg Times Square in New York tijdens de COVID pandemie."
 date: "2021-01-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ffacb5c6384f250ad7cd3cb50b5ed4fdeff33ae6-1920x1280.jpg"
-intro: "Aren't we all glad 2020 is over?"
-title: "The year 2020 was something alright [Niet vertaald]"
+intro: "Zijn we niet allemaal blij dat 2020 voorbij is?"
+title: "Het jaar 2020 was iets goeds"
 ---
 
 
 
 
-Aren't we all glad 2020 is over?
+Zijn we niet allemaal blij dat 2020 voorbij is?
 
-Realistically, at least some of you, or your loved ones, got caught in the absolute gut-punch that is the COVID-19 pandemic. 
-Either indirectly through lost income or other practical concerns, or directly by battling the virus itself.
+Realistisch gezien zijn op zijn minst een aantal van jullie, of jullie dierbaren, getroffen door de absolute klap die de COVID-19 pandemie heeft gekregen. Hetzij indirect door inkomensverlies of andere praktische zaken, hetzij direct door de strijd tegen het virus zelf.
 
-I can only offer my sympathy, and the belief that things will get better. 
-So hang in there, and let me briefly take your mind of things by sharing some good news against the bleak backdrop of the annus horribilis that 2020 turned out to be.
+Ik kan alleen maar mijn medeleven betuigen en geloven dat het beter zal gaan. Dus hou vol en laat me je even op andere gedachten brengen door wat goed nieuws te delen tegen de sombere achtergrond van het annus horribilis dat 2020 bleek te zijn.
 
-##### The face mask tsunami
+##### De tsunami van gezichtsmaskers
 
-FreeSewing found itself — absolutely unexpected I might add — under the glaring spotlight of international media this year. 
-A tidal wave of attention rolled over us, and while the peak lasted only a good month, the repercussions and long tail of these events have shaped our entire year.
+FreeSewing kwam dit jaar - geheel onverwacht mag ik wel zeggen - in de schijnwerpers van de internationale media te staan. Een vloedgolf van aandacht rolde over ons heen en hoewel de piek maar een goede maand duurde, hebben de gevolgen en de lange staart van deze gebeurtenissen ons hele jaar gevormd.
 
-It all started in February when COVID-19 was starting to rear its ugly head in Europe and the supplies of personal protective equipment (PPE) started dwindling. It seemed that face masks were going to be a big factor in trying to slow down the spread of this disease, but they were getting harder to come by every day.
+Het begon allemaal in februari, toen COVID-19 zijn lelijke kop opstak in Europa en de voorraden persoonlijke beschermingsmiddelen (PBM's) begonnen te slinken. Het leek erop dat gezichtsmaskers een grote rol zouden gaan spelen bij het vertragen van de verspreiding van deze ziekte, maar ze werden met de dag moeilijker verkrijgbaar.
 
-So on February 28th, after some design and experimentation, we [published our face mask pattern on freesewing.org](/blog/florence-face-mask/). Three weeks later, we followed up with [a one-page PDF that people could share and adapt](/blog/facemask-frenzy/).
+Dus op 28 februari, na wat ontwerpen en experimenteren, publiceerden we [ons gezichtsmaskerpatroon op freesewing.org](/blog/florence-face-mask/). Drie weken later volgden we met [een PDF van één pagina die mensen konden delen en aanpassen](/blog/facemask-frenzy/).
 
-We did not really want to be in the center of this, we just wanted to help people make masks. But when [Forbes ran an editorial calling on people to help out with the healthcare workers PPE shortage](https://www.forbes.com/sites/tjmccue/2020/03/20/calling-all-people-who-sew-and-make-you-can-help-solve-2020-n95-type-mask-shortage/), we suddenly found ourselves in the middle of a gigantic spotlight. The article prominently featured FreeSewing, and linked to [our blog post](/blog/facemask-frenzy).
+We wilden niet echt in het middelpunt staan, we wilden gewoon mensen helpen maskers te maken. Maar toen [Forbes een redactioneel artikel publiceerde waarin mensen werden opgeroepen om te helpen met het PBM-tekort in de gezondheidszorg](https://www.forbes.com/sites/tjmccue/2020/03/20/calling-all-people-who-sew-and-make-you-can-help-solve-2020-n95-type-mask-shortage/), stonden we ineens midden in een gigantische schijnwerper. Het artikel besteedde prominent aandacht aan FreeSewing en linkte naar [onze blogpost](/blog/facemask-frenzy).
 
-At that time, there were few patterns available for face masks, and soon enough a long list of other publications started running links to our pattern and website. When I found [the instruction video that I made for the pattern staring back at me on the website of the New York Times](https://www.nytimes.com/2020/03/31/opinion/coronavirus-n95-mask.html), it was a veritable oh-crap moment. Sure enough, in the month following the Forbes publication, a million people descended on freesewing.org.
+Op dat moment waren er nog maar weinig patronen voor gezichtsmaskers beschikbaar, en al snel begon een lange lijst van andere publicaties met links naar ons patroon en onze website. Toen ik op [de instructievideo die ik voor het patroon had gemaakt naar me terug zag staren op de website van de New York Times](https://www.nytimes.com/2020/03/31/opinion/coronavirus-n95-mask.html), was dat een waar oh-crap moment. En inderdaad, in de maand die volgde op de publicatie van Forbes daalden een miljoen mensen af naar freesewing.org.
 
-The sudden jump in visitors and users (not to mention patrons) made it clear that I am a bottleneck of the project, and so in the latter half of the year we've set out to [try and remedy that with some community building](/blog/a-call-for-help/). On one hand it's slow going, but on the other hand if I look at how vibrant the FreeSewing community is today, it almost beggars belief that we did all of this throughout 2020. We now have regular [contributor calls](/community/calls/), and [our chat rooms are never empty](https://discord.freesewing.org/).
+De plotselinge sprong in bezoekers en gebruikers (en niet te vergeten begunstigers) maakte duidelijk dat ik een knelpunt van het project ben, en dus zijn we in de tweede helft van het jaar begonnen met [om te proberen dat te verhelpen met wat gemeenschapsopbouw](/blog/a-call-for-help/). Aan de ene kant gaat het langzaam, maar aan de andere kant, als ik zie hoe levendig de FreeSewing gemeenschap vandaag de dag is, is het bijna niet te geloven dat we dit allemaal in 2020 hebben gedaan. We hebben nu regelmatig [contributor calls](/community/calls/), en [onze chatrooms zijn nooit leeg](https://discord.freesewing.org/).
 
-I hope to continue to fade into the background and let other people carry some of the torches. Not because I don't want to work on this anymore, but because I want to grow FreeSewing beyond what I can do on my own.
+Ik hoop verder naar de achtergrond te verdwijnen en andere mensen een deel van de fakkels te laten dragen. Niet omdat ik hier niet meer aan wil werken, maar omdat ik FreeSewing verder wil laten groeien dan ik alleen kan.
 
-##### Black Lives Matter
-Since this is a look at 2020, I also want to pause and acknowledge the **Black Lives Matter** movement and the ongoing problem of systemic racism. It is an area where my background and genetic material makes me ill-equipped to take a leading role, so here too I rely on our community for guidance.
+##### Zwarte levens doen ertoe
+Omdat dit een blik op 2020 is, wil ik ook even stilstaan bij de **Black Lives Matter** beweging en het voortdurende probleem van systemisch racisme. Het is een gebied waar ik door mijn achtergrond en genetisch materiaal niet geschikt ben om een leidende rol te spelen, dus ook hier vertrouw ik op onze gemeenschap voor begeleiding.
 
-We are also expanding our efforts to provide patterns that work for all body types, and I am particularly proud of how many of our users come to us because our patterns help them project the gender of their choice.
+We breiden onze inspanningen ook uit om patronen aan te bieden die voor alle lichaamstypes werken, en ik ben er bijzonder trots op dat veel van onze gebruikers naar ons toe komen omdat onze patronen hen helpen het geslacht van hun keuze uit te stralen.
 
-##### We helped more people than ever this year
-On the practical side of things, I have extended our book year with a couple of weeks so that going forward, we will just follow the calendar years. With a couple of hours left in this year, FreeSewing's revenue for 2020 clocks in at **10.736,82 euro**. That makes 2020 and absolute bumper year, and it's more than all previous years combined (2015: € 256.65, 2016: € 473.50, 2017: € 673.14, 2018: € 3162.14, 2019: € 4109.38).
+##### We hebben dit jaar meer mensen dan ooit geholpen
+Praktisch gezien heb ik ons boekjaar met een paar weken verlengd, zodat we voortaan gewoon het kalenderjaar volgen. Met nog een paar uur te gaan in dit jaar, zijn de inkomsten van FreeSewing voor 2020 **10.736,82 euro**. Dat maakt 2020 en absoluut topjaar, en het is meer dan alle voorgaande jaren bij elkaar (2015: € 256,65, 2016: € 473,50, 2017: € 673,14, 2018: € 3162,14, 2019: € 4109,38).
 
-As always, all of FreeSewing's revenue -- the entire 10.736,82 euro -- [goes to Doctors Without Borders](/docs/various/pledge/).
+Zoals altijd gaan alle inkomsten van FreeSewing -- de volledige 10.736,82 euro -- [naar Artsen zonder Grenzen](/docs/various/pledge/).
 
-I am truly grateful for your continued support and contributions. I feel like in a very small way, we are able to apply some balm to the hurt that seems at times omnipresent in the world.
+Ik ben echt dankbaar voor jullie voortdurende steun en bijdragen. Ik heb het gevoel dat we op een heel kleine manier wat balsem kunnen aanbrengen op de pijn die soms alomtegenwoordig lijkt in de wereld.
 
-Thank you so much, and stay safe
+Heel erg bedankt en blijf veilig
 
-love  
+liefde  
 joost
 
 

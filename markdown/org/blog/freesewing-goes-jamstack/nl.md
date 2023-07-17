@@ -1,105 +1,92 @@
 ---
 author: "joostdecock"
-caption: "Picture by <a href='https://stock.tookapic.com/jenniferforjoy' target='_BLANK' rel='nofollow'>Jennifer</a>"
+caption: "Foto door <a href='https://stock.tookapic.com/jenniferforjoy' target='_BLANK' rel='nofollow'>Jennifer</a>"
 date: "2017-06-12"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/952f714d11203d03a449895053c63963b0c02dbd-2000x1126.jpg"
-intro: "When we released freesewing core at the end of March, my focus immeadiatly shifted to building our front-end so that freesewing.org could fully replace makemypattern.com ."
-title: "We're JAMstack, we're JAMstack, we're JAMstack, we're JAMstack, we're JAMstack, we're JAMstack, we're JAMstack, and I hope you like JAMstack too [Niet vertaald]"
+intro: "Toen we eind maart freesewing core uitbrachten, verschoof mijn focus onmiddellijk naar het bouwen van onze front-end, zodat freesewing.org makemypattern.com volledig kon vervangen."
+title: "Wij zijn JAMstack, wij zijn JAMstack, wij zijn JAMstack, wij zijn JAMstack, wij zijn JAMstack, wij zijn JAMstack, wij zijn JAMstack, en ik hoop dat jij JAMstack ook leuk vindt"
 ---
 
-When we released freesewing core at the end of March, my focus immeadiatly shifted to building our front-end so that [freesewing.org](/) could fully replace [makemypattern.com](https://makemypattern.com/).
+Toen we eind maart freesewing core uitbrachten, verschoof mijn focus onmiddellijk naar het bouwen van onze front-end, zodat [freesewing.org](/) [makemypattern.com](https://makemypattern.com/)volledig kon vervangen.
 
-I believe that the value of freesewing lies with the core platform and our patterns. 
-But without a user friendly way to expose that value, it will largely go ignored.
+Ik geloof dat de waarde van freesewing ligt in het kernplatform en onze patronen. Maar zonder een gebruiksvriendelijke manier om die waarde bloot te leggen, zal die grotendeels genegeerd worden.
 
-So we needed a website that lets people generate patterns. Makemypattern.com &mdash; arguably the best comparison of something similar &mdash; runs on Drupal 7, and my initial idea was to run the new site on Drupal 8. 
-I went down that path far enought to be confident I could get it to work, and hook it up to our backend. At which point I switched gears and turned my attention to what is now known as freesewing core. 
+Dus hadden we een website nodig waarop mensen patronen kunnen genereren. Makemypattern.com &mdash; misschien wel de beste vergelijking van iets vergelijkbaars &mdash; draait op Drupal 7, en mijn oorspronkelijke idee was om de nieuwe site op Drupal 8 te draaien. Ik heb dat pad ver genoeg bewandeld om er zeker van te zijn dat ik het aan de praat kon krijgen en kon aansluiten op onze backend. Op dat moment schakelde ik over en richtte mijn aandacht op wat nu bekend staat als freesewing core.
 
-Core took about 7 months to build, and a lot has changed since then. Or perhaps I have changed, I certainly learned a lot along the way. Either way, I've decided to do things different.
+Het duurde ongeveer 7 maanden om Core te bouwen en sindsdien is er veel veranderd. Of misschien ben ik veranderd, ik heb in ieder geval veel geleerd onderweg. Hoe dan ook, ik heb besloten om het anders aan te pakken.
 
-## The problem with a CMS
+## Het probleem met een CMS
 
-I have no beef with Drupal but the idea of managing the freesewing website through any Content Management System (CMS) does not appeal to me.
+Ik heb niets tegen Drupal, maar het idee om de gratis website te beheren via een Content Management Systeem (CMS) spreekt me niet aan.
 
-One of the main reason is that so much information is stored under an opaque database layer which makes it difficult to manage. 
-That goes for content where posts, metadata, images, and so on is all spread across tables, locations, and folders. 
-But there's also the theme that has a bunch of stuff in it, there's the custom Drupal modules to connect to the backend, and so on and so forth.
+Een van de belangrijkste redenen is dat er zoveel informatie is opgeslagen onder een ondoorzichtige databaselaag, waardoor het moeilijk te beheren is. Dat geldt ook voor inhoud, waar berichten, metadata, afbeeldingen enzovoort allemaal verspreid zijn over tabellen, locaties en mappen. Maar er is ook het thema dat een heleboel dingen bevat, er zijn de aangepaste Drupal-modules om verbinding te maken met de backend, enzovoort, enzovoort.
 
-> I wanted that same approach in a website. Except, it can't be static because it has to, you know, do stuff.
+> Ik wilde diezelfde benadering in een website. Maar het kan niet statisch zijn, want het moet dingen doen.
 
-When we were finalizing core, I built a documentation site for it based on [Jekyll](https://jekyllrb.com/). It felt like a breath of fresh air in comparison. 
-Just a bunch of markdown files, with some SASS, images, and some JavaScript thrown in the mix, and it all compiles into a neat static website.
+Toen we core aan het afronden waren, heb ik er een documentatiesite voor gebouwd op basis van [Jekyll](https://jekyllrb.com/). In vergelijking daarmee voelde het als een verademing. Gewoon een hoop markdown-bestanden, met wat SASS, afbeeldingen en wat JavaScript erbij, en het wordt allemaal gecompileerd tot een keurige statische website.
 
-It's easy to manage, and it integrates nicely with a GitHub-centered workflow that is going to be famliar to potential contributors.
+Het is eenvoudig te beheren en het integreert mooi met een GitHub-gerichte werkstroom die bekend zal zijn bij potentiële bijdragers.
 
-I wanted that same approach in a website. Except, it can't be static because it has to, you know, do stuff.
+Ik wilde diezelfde benadering in een website. Maar het kan niet statisch zijn, want het moet dingen doen.
 
 
-## An alternative approach: JAMstack
+## Een alternatieve benadering: JAMstack
 
-I first learned about JAMstack when I started looking into hosting for said core documentation site. 
-It was initially hosted on GitHub pages which provides free hosting.
-They also have SSL or a custom domain name, but you can't have both. Which was kind of a deal breaker.
+Ik leerde JAMstack voor het eerst kennen toen ik op zoek ging naar hosting voor mijn core documentatiesite. Het werd in eerste instantie gehost op GitHub pagina's die gratis hosting bieden. Ze hebben ook SSL of een aangepaste domeinnaam, maar je kunt ze niet allebei hebben. Dat was een soort dealbreker.
 
-Looking for alternatives, I stumbled onto [Netlify](https://www.netlify.com/), who do both SSL and custom domains and have a free-tier for open source projects (thanks guys).
-Furthermore, [this video by Netlify CEO Mathias Biilmann](https://vimeo.com/163522126) got me really excited about JAMstack.
+Op zoek naar alternatieven stuitte ik op [Netlify](https://www.netlify.com/), die zowel SSL als aangepaste domeinen doen en een free-tier hebben voor open source projecten (bedankt jongens). Verder heeft [deze video van Netlify CEO Mathias Biilmann](https://vimeo.com/163522126) me erg enthousiast gemaakt over JAMstack.
 
-Unless you're familiar with JAMstack, I suggest you check out the video, but it boils down to this:
+Tenzij je bekend bent met JAMstack, raad ik je aan de video te bekijken, maar het komt hier op neer:
 
  - **J** = JavaScript
- - **A** = APIs
- - **M** = Markup
+ - **A** = API's
+ - **M** = Opmaak
 
-The idea is that you build your static site (markup) that you then make interactive with JavaScript that hooks up to one or more APIs.
+Het idee is dat je een statische site bouwt (markup) die je vervolgens interactief maakt met JavaScript dat inhaakt op een of meer API's.
 
-So in our case, rather than having a straight-forward documentation site with easy-to-edit markdown and a complex CMS to handle the dymanic stuff, let's just build one simple site that is statically generated, yet uses JavaScript and APIs to do the smart stuff.
+Dus in ons geval, in plaats van een eenvoudige documentatiesite te hebben met eenvoudig te bewerken markdown en een complex CMS om de ingewikkelde dingen af te handelen, laten we gewoon een eenvoudige site bouwen die statisch wordt gegenereerd, maar JavaScript en API's gebruikt om de slimme dingen te doen.
 
-## Running before you can walk
+## Rennen voordat je kunt lopen
 
-I must admit that in my enthousiasm to embrace this new approach I got a little ahead of myself.
-Suddenly, I was no longer building a simple site, but I was up to my eyeballs in isomorphic rendering, client-side routing, React and Redux, Node.js and ES6 transpiling.
+Ik moet toegeven dat ik in mijn enthousiasme om deze nieuwe aanpak te omarmen een beetje op de zaken vooruit ben gelopen. Plotseling was ik niet langer bezig met het bouwen van een eenvoudige site, maar zat ik tot over mijn oren in isomorfe rendering, client-side routing, React en Redux, Node.js en ES6 transpiling.
 
-> If you don't know what any of that means, you might get a hint of the frustration I felt as I was trying to tame all these new beasts.
+> Als je niet weet wat dat allemaal betekent, krijg je misschien een idee van de frustratie die ik voelde toen ik al deze nieuwe beesten probeerde te temmen.
 > 
-> If you do know what it all means, where were you back in April when I walked through the valley of the React of death? 
+> Als je weet wat het allemaal betekent, waar was je dan in april toen ik door de vallei van de doodsreactie liep?
 
-Point is, I'm not a developer and I was in way over my head. 
-While I was learning new things every day, I wasn't making much progress on the actual task at hand, and felt frustrated with my inability to do even the most mundane things.
+Het punt is, ik ben geen ontwikkelaar en ik zat er tot over mijn oren in. Hoewel ik elke dag nieuwe dingen leerde, boekte ik niet veel vooruitgang met de eigenlijke taak en voelde ik me gefrustreerd over mijn onvermogen om zelfs de meest alledaagse dingen te doen.
 
-After a month of frustration, loads of trial and seemingly even more error, I threw in the towel. 
-Eff this newfangled shiny JavaScript all the young kids are using, I'll stick to what I know. 
+Na een maand van frustratie, veel proberen en schijnbaar nog meer fouten, gooide ik de handdoek in de ring. Eff dit nieuwerwetse glimmende JavaScript dat alle jonge kinderen gebruiken, ik blijf bij wat ik ken.
 
-Which is essentially the basics of jQuery. In other words, stuff that was pretty cool 10 years ago.
+Dat is in wezen de basis van jQuery. Met andere woorden, dingen die 10 jaar geleden best cool waren.
 
-## 10 year old jam is still jam right?
+## 10 jaar oude jam is nog steeds jam toch?
 
-So here we are, freesewing.org is a site powered by the JAMstack. And you know what, it seems to do what it needs to do.
+Hier zijn we dan, freesewing.org is een site aangedreven door de JAMstack. En weet je wat, het lijkt te doen wat het moet doen.
 
-We have Jekyll build out static site, and when we push to our master branch, it gets autmatically deployed to Netlify.
+We laten Jekyll een statische site bouwen en als we pushen naar onze master branch, wordt deze automatisch ingezet op Netlify.
 
-> Eff this newfangled shiny JavaScript all the young kids are using
+> Eff dat nieuwerwetse glimmende JavaScript dat alle jonge kinderen gebruiken
 
-We have [a brand new data API](https://github.com/freesewing/data) build on [the Slim framework](https://www.slimframework.com/). 
-It handles all user data. Things like accounts, measurements, models, and drafts, but also comments on this website and so on.
+We hebben [een gloednieuwe data-API](https://github.com/freesewing/data) gebouwd op [het Slim framework](https://www.slimframework.com/). Het verwerkt alle gebruikersgegevens. Dingen zoals rekeningen, metingen, modellen en ontwerpen, maar ook opmerkingen op deze website enzovoort.
 
-It also talks to core for us, and every time you draft a pattern, we don't just give you the pattern, but we also run a comparison of your pattern to a range of standard sizes, which is kinda cool.
+Het praat ook met de kern voor ons en elke keer dat je een patroon ontwerpt, geven we je niet alleen het patroon, maar vergelijken we je patroon ook met een reeks standaardmaten, wat best cool is.
 
-And we have other cool stuff, like the ability to fork or redraft an existing draft.
+En we hebben nog andere coole dingen, zoals de mogelijkheid om een bestaand ontwerp te forken of opnieuw op te stellen.
 
-## This is a starting point
+## Dit is een startpunt
 
-I hope the user experience/interface is not going to be a roadblock for people. 
-I've made a great deal of effort to make the drafting process as intuitive as possible and I think that in comparison to our demo (or the makemypattern interface for that matter) it's a vast improvement.
+Ik hoop dat de gebruikerservaring/interface geen wegversperring wordt voor mensen. Ik heb veel moeite gedaan om het tekenproces zo intuïtief mogelijk te maken en ik denk dat het in vergelijking met onze demo (of de makemypattern interface) een enorme verbetering is.
 
-Then again, I'm sure things will break left or right, or that some of you don't like the colours or whatnot.
+Maar ja, ik weet zeker dat er links of rechts dingen zullen breken, of dat sommigen van jullie de kleuren niet mooi vinden of wat al niet meer.
 
-The point is that I set out to build something that can replace makemypattern.com so that I could tell all of you _Hey, come over and play with this new thing_.
+Het punt is dat ik iets wilde bouwen dat makemypattern.com kon vervangen, zodat ik jullie allemaal kon vertellen _Hé, kom eens langs en speel met dit nieuwe ding_.
 
-I think if nothing else, I can do that now. And if you see room for improvement, please [join the effort](/contribute), we're only getting started.
+Ik denk dat ik dat nu wel kan doen. En als je ziet dat er ruimte is voor verbetering, [doe dan mee](/contribute), we zijn nog maar net begonnen.
 
 
 
-<small>PS: For those of you wondering about the title of this post:</small>
+<small>PS: Voor degenen die zich afvragen wat de titel van dit bericht is:</small>
 
 <YouTube id='oFRbZJXjWIA' />
 

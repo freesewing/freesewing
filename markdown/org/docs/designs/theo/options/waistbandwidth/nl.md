@@ -1,5 +1,5 @@
 ---
-title: "Waistband width"
+title: "Breedte tailleband"
 ---
 
 ![Breedte tailleband](waistbandwidth.svg)

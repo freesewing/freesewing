@@ -1,5 +1,5 @@
 ---
-title: "Collar notch angle"
+title: "Ángulo de la muesca del cuello"
 ---
 
 ![Ángulo de la muesca del cuello](collarnotchangle.svg)

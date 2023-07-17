@@ -1,5 +1,5 @@
 ---
-title: "Extra top button"
+title: "Zusätzlicher oberer Knopf"
 ---
 
 ![Zusätzlicher oberer Knopf](extratopbutton.svg)

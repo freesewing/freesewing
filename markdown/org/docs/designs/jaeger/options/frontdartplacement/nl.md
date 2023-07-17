@@ -1,5 +1,5 @@
 ---
-title: "Front dart placement"
+title: "Plaatsing neep vooraan"
 ---
 
 ![Plaatsing neep vooraan](frontdartplacement.svg)

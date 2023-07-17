@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap Q2 upward spread"
+title: "Funda Q2 extendido hacia arriba"
 ---
 
 ![La dispersión ascendente en el segundo cuadrante de la manga](./sleevecapq2spread2.svg)

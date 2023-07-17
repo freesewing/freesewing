@@ -1,5 +1,5 @@
 ---
-title: "Блок тіла Брайана: Необхідні виміри"
+title: "Brian body block: Required Measurements"
 ---
 
 <PatternMeasurements pattern='brian' />

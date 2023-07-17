@@ -1,11 +1,12 @@
 ---
 maker: "unknown"
 caption: "Beautiful fabric, and a greatly made tie"
-date: "2017-09-29"
+date: "29.09.2017"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a4df7c8446671138fe4f6e07eebf32058af31999-1080x1080.jpg"
-intro: "My husband travelled to Ireland 🇮🇪 for a weekend (62hrs travelling for 60hrs on the ground 🙀) to attend his brother's wedding 👏 My contribution was this beautiful @libertylondon silk tie and pocket square made specifically for the big day. I was there in spirit."
-title: "[auf Englisch] A Trayvon tie in a Liberty silk by Victoria"
-designs: ["trayvon"]
+intro: "A Trayvon tie in a Liberty silk by Victoria"
+title: "A Trayvon tie in a Liberty silk by Victoria"
+designs:
+  - "trayvon"
 ---
 
 

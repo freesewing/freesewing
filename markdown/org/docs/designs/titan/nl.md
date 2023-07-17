@@ -1,5 +1,5 @@
 ---
-title: "Titan trouser block"
+title: "Titan basispatroon broek"
 ---
 
 <PatternDocs pattern='titan' />

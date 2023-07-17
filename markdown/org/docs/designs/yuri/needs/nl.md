@@ -1,6 +1,6 @@
-- - -
+---
 title: "Yuri hoodie: What You Need"
-- - -
+---
 
 Om Yuri te maken heb je het volgende nodig:
 

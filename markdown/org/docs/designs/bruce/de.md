@@ -1,5 +1,5 @@
 ---
-title: "Bruce boxer briefs"
+title: "Bruce, die Retroshorts"
 ---
 
 <YouTube id='PL1gv5yv3DoZME1xe5fBEHd0rKPW_xNpF3' playlist />

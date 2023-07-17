@@ -3,7 +3,7 @@ author: "joostdecock"
 caption: "Aperçu issu du tutoriel YouTube de Bernadette Banner pour ce chapeau"
 date: "2020-02-23"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/02a03dd39c9e5317e89681482735e8e5929d7c2d-2748x1546.jpg"
-intro: "Plus tôt cette semaine, AlfaLyr nous a écrit pour dire qu'elle avait fait un patron pour le chapeau emblématique Deerstalker de Sherlock Holmes, basé sur ce tutoriel YouTube de Banner Bernadette :"
+intro: "Nouveau patron : Chapeau Deerstalker de Sherlock Holmes"
 title: "Nouveau patron : Chapeau Deerstalker de Sherlock Holmes"
 ---
 
@@ -17,5 +17,4 @@ Malheureusement, nous avions déjà fait le récap sur [le déploiement de la v2
 Mais bien sûr nous aimons ce chapeau, sans mentionner que c'est l'accessoire parfait pour nos patrons [Carlton](/designs/carlton/) et [Carlita](/designs/carlita/). Donc voici la mise à jour [FreeSewing 2.3](https://github.com/freesewing/freesewing/releases/tag/v2.2.0) avec [le nouveau patron Holmes](/designs/holmes/).
 
 Profitez bien !
-
 

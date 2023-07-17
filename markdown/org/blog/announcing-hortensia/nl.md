@@ -1,34 +1,30 @@
 ---
 author: "joostdecock"
-caption: "An example Hortensia made by the designer"
+caption: "Een voorbeeld Hortensia gemaakt door de ontwerper"
 date: "2021-02-13"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/01f416518b5bf8fb75dcc8ae3ab2691d5532dd65-2000x1500.jpg"
-intro: "I'm happy to announce the immeadiate availability of our latest FreeSewing pattern: the Hortensia handbag ."
-title: "Say hi to our latest pattern: The Hortensia handbag [Niet vertaald]"
+intro: "Met veel plezier kondig ik de directe beschikbaarheid aan van ons nieuwste FreeSewing patroon: de Hortensia handtas ."
+title: "Zeg hallo tegen ons nieuwste patroon: De Hortensia handtas"
 ---
 
 
-I'm happy to announce the immeadiate availability of our latest FreeSewing pattern: [the Hortensia handbag](/designs/hortensia/).
+Met veel plezier kondig ik de beschikbaarheid aan van ons nieuwste FreeSewing patroon: [de Hortensia handtas](/designs/hortensia/).
 
-Hortensia's origin story traces back to [@stoffsuchti](https://twitter.com/stoffsuchti) who wanted
-to create a pattern for a handbag, and was looking for somebody who could implement that design in code.
+Het verhaal van Hortensia gaat terug tot [@stoffsuchti](https://twitter.com/stoffsuchti) die een patroon voor een handtas wilde laten maken en iemand zocht die dat ontwerp in code kon implementeren.
 
-It was [Wouter](https://github.com/woutervdub) who answered the call and implemented the pattern,
-making this another success story from the FreeSewing community.
+Het was [Wouter](https://github.com/woutervdub) die de oproep beantwoordde en het patroon implementeerde, waardoor dit weer een succesverhaal is van de FreeSewing gemeenschap.
 
-## No measurements needed
+## Geen metingen nodig
 
-This is the first pattern on FreeSewing that does not require any measurements to make.
-There's some options you can choose — to control the size of the handbag for one thing — but 
-since this is a handbag, no measurements are needed.
+Dit is het eerste patroon op FreeSewing waarvoor je niet hoeft te meten om het te maken. Er zijn een aantal opties die je kunt kiezen - bijvoorbeeld om de grootte van de handtas te bepalen - maar omdat dit een handtas is, zijn er geen metingen nodig.
 
-This makes Hortensia a great project to make as a gift, since there's no need to worry about fit.
+Dit maakt Hortensia een geweldig project om cadeau te geven, omdat je je geen zorgen hoeft te maken over de pasvorm.
 
 <Tip>
 
-##### Now show us yours
+##### Laat ons nu de jouwe zien
 
-If you do make a Hortensia, do [send us pictures](https://discord.freesewing.org/).
+Als je een Hortensia maakt, [stuur ons dan foto's](https://discord.freesewing.org/).
 
 </Tip>
 

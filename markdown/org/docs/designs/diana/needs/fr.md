@@ -1,5 +1,5 @@
 ---
-title: "Haut drapé Diana : Ce qu'il faut"
+title: "Diana draped top: What You Need"
 ---
 
 Pour faire de Diana, vous aurez besoin des éléments suivants :

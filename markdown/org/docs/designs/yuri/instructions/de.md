@@ -1,6 +1,6 @@
-- - -
+---
 title: "Yuri hoodie: Sewing Instructions"
-- - -
+---
 
 <Note>
 
@@ -35,7 +35,7 @@ Bei Verwendung eines Overlockers/Sergers können Sie Nähte nähen, die in einem
 - Mit guten Seiten zusammen nähen Sie die vorderen Teile auf der Rückseite entlang der Schulternaht.
 - _finish_ seams.
 
-## Schritt 3: Hänge die Ärmel an
+## Schritt 3: Annähen der Ärmel
 
 - Mit guten Seiten zusammen, passend hinten zum Rückennoch und Frontnoch an der Vorderseite, nähen Sie die Ärmel in den Körper.
 - _finish_ seams.

@@ -1,5 +1,5 @@
 ---
-title: "Толстовка з капюшоном Г'юї: Інструкція з пошиття"
+title: "Huey hoodie: Sewing Instructions"
 ---
 
 <Note>

@@ -3,12 +3,13 @@ maker: "Wouter.vdub"
 caption: "Turned out really well for a toile"
 date: "2017-12-11"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f3126799846dc9ea9aecb423e7283bb715db93b4-3724x2785.jpg"
-intro: "[auf Englisch] A test of Florent to see if the pattern works for others, by Wouter.vdub"
-title: "[auf Englisch] A test of Florent to see if the pattern works for others, by Wouter.vdub"
-designs: ["florent"]
+intro: "A test of Florent to see if the pattern works for others, by Wouter.vdub"
+title: "A test of Florent to see if the pattern works for others, by Wouter.vdub"
+designs:
+  - "florent"
 ---
 
-![View of the front](https://posts.freesewing.org/uploads/florent_by_wouter_high_back_20ec93b7c1.jpg "View of the front")
+![View of the back ](https://posts.freesewing.org/uploads/florent_by_wouter_high_back_20ec93b7c1.jpg "View of the back ") ![View of the front](https://posts.freesewing.org/uploads/florent_by_wouter_high_front_9f28a1eb39.jpg "View of the front")
 
 Wouter writes:
 

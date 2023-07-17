@@ -1,5 +1,5 @@
 ---
-title: "Жилет вахіда"
+title: "Жилет Вахід"
 ---
 
 <PatternDocs pattern='wahid' />

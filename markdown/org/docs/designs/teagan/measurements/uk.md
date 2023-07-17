@@ -1,5 +1,5 @@
-- - -
-назва: "Футболка Тіган: Необхідні виміри"
-- - -
+---
+title: "Teagan T-shirt: Required Measurements"
+---
 
 <PatternMeasurements pattern='teagan' />

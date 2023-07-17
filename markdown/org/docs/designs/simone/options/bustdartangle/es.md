@@ -1,5 +1,5 @@
 ---
-title: "Bust dart angle"
+title: "Ángulo de dardos de polvo"
 ---
 
 Controla el ángulo por el cual el (lado) dardos de polvo tiene pendiente descendente.

@@ -1,5 +1,5 @@
 ---
-title: "Chest pocket placement"
+title: "Platzierung der Brusttasche"
 ---
 
 ![Platzierung der Brusttasche](chestpocketplacement.svg)

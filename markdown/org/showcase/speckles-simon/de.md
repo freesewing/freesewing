@@ -1,11 +1,12 @@
 ---
 maker: "unknown"
 caption: "That constrasting buttonhole packet is a great touch."
-date: "2018-03-05"
+date: "05.03.2018"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/42a90db048975ca7afdcebe7c2d19e9c9e524b5c-1080x1194.jpg"
 intro: "Allie writes:"
-title: "[auf Englisch] A speckled simon by Allie for her husband"
-designs: ["simon"]
+title: "A speckled simon by Allie for her husband"
+designs:
+  - "simon"
 ---
 
 

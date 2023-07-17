@@ -1,5 +1,5 @@
 ---
-title: "Aaron A-Shirt: Knip-instructies"
+title: "Aaron A-Shirt: Cutting Instructions"
 ---
 
 - Knip **1 rugpand** aan de stofvouw

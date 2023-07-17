@@ -1,5 +1,5 @@
 ---
-title: "Collar stand curve"
+title: "Kragenstegkrümmung"
 ---
 
 ![Kollarstand Kurve](collarstandcurve.svg)

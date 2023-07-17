@@ -1,5 +1,5 @@
 ---
-title: "Leg balance"
+title: "Équilibre des jambes"
 ---
 
 Contrôle la proportion entre la partie avant et arrière des jambes.
@@ -18,4 +18,4 @@ This trick is often used in womenswear jeans
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](titan_legbalance_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](titan_legbalance_sample.svg "Effet de cette option sur le motif")

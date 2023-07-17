@@ -1,5 +1,5 @@
 ---
-title: "Ankle/Hem elastic width"
+title: "Knöchel/Saum Gummizugbreite"
 ---
 
 If you're using an elasticated hem at the ankle, use this to set the width of the elastic you'll use.

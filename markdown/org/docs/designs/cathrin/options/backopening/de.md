@@ -1,5 +1,5 @@
 ---
-title: "Back opening"
+title: "Hintere Öffnung"
 ---
 
 ![Die Back-Öffnungs-Option auf Kathrin](./backopening.svg)

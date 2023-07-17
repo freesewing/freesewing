@@ -3,7 +3,7 @@ author: "joostdecock"
 caption: "Faire du vélo comme un vrai gentilhomme"
 date: "2021-03-06"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/15c72486b0c48905f9f4a916a32caa058f1b0f8a-997x857.jpg"
-intro: "Wouter s'y est remis, cette fois-ci il nous a préparé une culotte de cyclisme classique."
+intro: "Wouter is at it again, this time around he's treating us to classic cycling breeches."
 title: "Cette culotte de cyclisme Cornelius est le dernier cadeau de Woutter pour nous tous"
 ---
 
@@ -20,7 +20,7 @@ Il a écrit :
 
 Comme Wouter l'a mentionné; Ce modèle est basé sur [la méthode de patronage de Keystone](https://archive.org/details/keystonesystemsc00heck/page/n5/mode/2up). Cela n'a pas d'importance parce que, comme toujours, vous le faites sur mesure pour vous [ici sur FreeSewing.org](/designs/cornelius/).
 
-![Voici l'homme lui-même](wouter.jpg)
+![Voici l'homme lui-même](https://posts.freesewing.org/uploads/wouter_9fbc821146.jpg)
 
 Notez que vous n'avez pas à faire de vélo pour les porter. Tout ce qu'il faut c'est une volonté de montrer vos chaussettes (ou mollets).
 

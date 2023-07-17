@@ -1,115 +1,113 @@
 ---
 author: "joostdecock"
-caption: "Your new login background for the month of october"
+caption: "Je nieuwe inlogachtergrond voor de maand oktober"
 date: "2017-09-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c6418b621228730525d835acff53c4cd6895a865-2000x1250.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - September 2017: Simon complications, email issues, and donations are up this year. [Niet vertaald]"
+intro: "Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt."
+title: "Maandelijks overzicht - september 2017: Simon complicaties, e-mail problemen en donaties zijn dit jaar gestegen."
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt.
 
-## Looking back at september, and a bit of august
-For this first edition, I'm looking back a bit further than one month, because [this site launched at the end of August](/blog/open-for-business/), so I'm including that week in this monthly roundup. 
+## Terugblik op september, en een beetje op augustus
+Voor deze eerste editie kijk ik iets verder terug dan een maand, want [deze site is eind augustus](/blog/open-for-business/)gelanceerd, dus die week neem ik mee in deze maandelijkse roundup.
 
-### My name is Simon, and I'm complicated
+### Mijn naam is Simon en ik ben ingewikkeld.
 
-Since the launch, there's been [3 new path releases of freesewing core](https://github.com/freesewing/core/releases) --- you know, the thing that actually generates your sewing patterns --- and all of them were due to issues with [the Simon Shirt pattern](/patterns/simon).
+Sinds de lancering zijn er [3 nieuwe padreleases geweest van freesewing core](https://github.com/freesewing/core/releases) --- je weet wel, datgene dat je naaipatronen genereert --- en die waren allemaal te wijten aan problemen met [het Simon Shirt patroon](/patterns/simon).
 
-Full details are available in [the changelog](https://github.com/freesewing/core/blob/develop/CHANGELOG.md), but here's the gist of it:
-
-
- -  The seam allowance at the hem was incorrect when the lenthBonus was very low.
- -  The cut in the sleeve for the placket was too short
- -  There was a problem with the seam allowance at the buttonhole placket
- -  The sleeve length bonus was counted double
- -  The hip measurements/ease was not taken into account;  The chest measurement/ease was used instead
- -  A number option defaults were tweaked
- 
-
-Thanks to [Tatyana](/users/yrhdw) and [Stefan](/users/kczrw) for reporting these issues. You get that funky bug badge:
-
-![I really like this one](https://posts.freesewing.org/uploads/badge_found_bug_d7d0c9055a.svg)
-
-#### What's your problem Simon?
-
-That these issues surface in Simon is not a coincidence. The pattern comes with a whopping 41 options that allow you to control pretty much every aspect of your shirt. 
-
-Managing all those different combinations in the code leads to a lot of complexity. And were code complexity rises, bugs appear.
-
-![If Simon was on facebook, its relationship status would certainly be *It's complicated*](https://posts.freesewing.org/uploads/complicated_d8c872358d.gif)
-
-#### Is it time for an overhaul?
-Simon is a port of the Singular Shirt pattern of MakeMyPattern.com. Back there, making a differently styled shirt would have involved copying the code over, making changes, and then maintaining two slightly different variations for all eternity.
-
-Things are better here at freesewing, where inheritance is baked in the system.
-So I could (and should perhaps) have a basic shirt pattern, and then branch that out into a bunch of differently styled shirt patterns.
-
- - Brian Body Block
-   - Basic shirt pattern
-     - Casual shirt pattern
-     - Formal shirt pattern
-     - Some other shirt pattern
-
-It would not only cut down on code complexity, it would arguably also be more intuitive to see a bunch of differently styled shirt patterns, rather than have only one pattern and then have 41 options to juggle.
-
-A full Simon overhaul is going to be a bit of work, but it is possible. I'd be interested to hear your thoughts on the matter.
+Volledige details zijn te vinden op [de changelog](https://github.com/freesewing/core/blob/develop/CHANGELOG.md), maar hier is de essentie:
 
 
-## Dealing with email delivery issues
-I added a workaround for those of you who had trouble getting the registration emails. Basically, people with an email account managed by Microsoft.
+ -  De naadtoeslag bij de zoom klopte niet toen de lenthBonus erg laag was.
+ -  De snede in de mouw voor de sluiting was te kort
+ -  Er was een probleem met de naadtoeslag bij het knoopsgat
+ -  De mouwlengtebonus werd dubbel geteld
+ -  Er werd geen rekening gehouden met de heupomvang/gemakkelijkheid; in plaats daarvan werd de borstomvang/gemakkelijkheid gebruikt.
+ -  Een aantal standaardopties zijn aangepast
 
-![If these guys run your inbox, then who knows what other emails you're not getting](msft.gif)
 
-You can read [my blog post on the matter](/blog/email-spam-problems/) for all the details, but basically if you have one of those addresses, you should get those emails now. The only downside is that you might get them twice.
- 
-## Referrals
-When people link to your site, and visitors click that link, that's called a referral. The bloggers among you might be familiar with skimming through your Google Analytics reports to see who's been linking to you.
+Met dank aan [Tatyana](/users/yrhdw) en [Stefan](/users/kczrw) voor het melden van deze problemen. Je krijgt die funky bugbadge:
 
-This site does not use Google Analytics --- there's [a blog post with details on that](/blog/privacy-choices/) too --- but still captures referrals. The overview of recent referrals is available for all to see on [the status page](/status). 
+![Ik vind deze echt leuk](https://posts.freesewing.org/uploads/badge_found_bug_d7d0c9055a.svg)
 
-Linking to freesewing.org is obviously a nice thing to do, so I keep an eye on the referrals, and if a site shows up that belongs to a user, you get the Ambassador badge. 
+#### Wat is je probleem Simon?
 
-![Linking to freesewing.org is one way to unlock the ambassasor badge](https://posts.freesewing.org/uploads/badge_ambassador_3dd1e722cc.svg)
+Dat deze problemen opduiken bij Simon is geen toeval. Het patroon heeft maar liefst 41 opties waarmee je vrijwel elk aspect van je shirt kunt bepalen.
 
-It's a small way to say thank you for spreading the word about freesewing.
+Het beheren van al die verschillende combinaties in de code leidt tot veel complexiteit. En waar de complexiteit van code toeneemt, verschijnen er bugs.
 
-## Donations
-During september, we passed last year's donations amount, so it's nice to see I'll be able to [send more money to MSF](/about/pledge#donations-history) this year than in 2016.
+![Als Simon op Facebook zou staan, zou zijn relatiestatus zeker *Het is ingewikkeld* zijn.](https://posts.freesewing.org/uploads/complicated_d8c872358d.gif)
 
-You can always keep track of the donations on [the donations pledge page](/about/pledge#donations-history), but here's the current status:
+#### Is het tijd voor een revisie?
+Simon is een port van het Singular Shirt patroon van MakeMyPattern.com. Toen zou het maken van een shirt met een andere stijl hebben betekend dat de code moest worden gekopieerd, wijzigingen moesten worden aangebracht en dat er dan voor eeuwig twee licht verschillende variaties moesten blijven bestaan.
 
-![Yay! Better than last year](https://posts.freesewing.org/uploads/donations_68e214d133.svg)
+Het gaat hier beter bij freesewing, waar overerving is ingebakken in het systeem. Ik zou dus een basispatroon voor overhemden kunnen (en misschien wel moeten) hebben, en dat dan uitbreiden met een heleboel verschillend gestileerde overhemdpatronen.
 
-## More download formats
+ - Brian Basispatroon
+   - Basis patroon overhemd
+     - Casual overhemd patroon
+     - Formeel overhemd patroon
+     - Een ander overhemdpatroon
 
-I've also added additional formats to the draft download page. You now have a choice of SVG, PDF, letter-PDF, tabloid-PDF, A4-PDF, A3-PDF, A2-PDF, A1-PDF, and A0-PDF.
+Het zou niet alleen de complexiteit van de code verminderen, maar het zou aantoonbaar ook intuïtiever zijn om een aantal verschillend gestileerde overhemdpatronen te zien, in plaats van slechts één patroon en dan 41 opties om mee te jongleren.
 
-## The quality control badge
-I've added the quality control badge for things like reporting (or fixing) typos, broken links, grammar, and other small improvements.
+Een volledige Simon revisie zal wat werk zijn, maar het is mogelijk. Ik ben benieuwd naar je gedachten hierover.
 
-![See a typo? Let me know and you get this](https://posts.freesewing.org/uploads/badge_quality_control_6acb8c10c2.svg)
 
-These might not seem like an earth-shattering contribution, but they are important nevertheless.
+## Problemen met de bezorging van e-mail oplossen
+Ik heb een workaround toegevoegd voor degenen die problemen hadden met het ontvangen van de registratiemails. In principe mensen met een e-mailaccount dat wordt beheerd door Microsoft.
 
-On the spectrum between endlessly toiling over the perfect content before publishing it, or getting it out fast warts and all, I lean heavily towards the latter. 
-So I kinda count on you guys to let me know when I messed up.
+![Als deze jongens je inbox beheren, wie weet wat voor e-mails je dan nog meer niet krijgt?](msft.gif)
 
-## Looking ahead to october
+Je kunt [mijn blogpost over deze kwestie](/blog/email-spam-problems/) lezen voor alle details, maar als je een van deze adressen hebt, zou je deze e-mails nu moeten krijgen. Het enige nadeel is dat je ze misschien twee keer krijgt.
 
-There are 5 patterns I am currently working on. And all of them are ready to the point where I need to make them to verify that they work as intended. First a muslin, and then the real thing.
+## Verwijzingen
+Als mensen een link naar je site plaatsen en bezoekers klikken op die link, dan heet dat een verwijzing. De bloggers onder jullie zijn misschien bekend met het doorbladeren van je Google Analytics-rapporten om te zien wie er naar je heeft gelinkt.
 
-That's a bit of a bottleneck for me because I have a long commute, so my sewing time is typically limited to the weekends. 
+Deze site maakt geen gebruik van Google Analytics --- er is [een blogpost met details over dat](/blog/privacy-choices/) ook --- maar legt nog steeds verwijzingen vast. Het overzicht van recente verwijzingen is voor iedereen beschikbaar op [de statuspagina](/status).
 
-The only way I see to speed up the process of getting patterns released is to have people join in with the pattern testing. I don't think it's something I can ask people to do, because this is early stage testing. Not to mention that I have nothing to offer them to sweeten the deal. What am I going to give you, a free pattern?
+Linken naar freesewing.org is natuurlijk leuk om te doen, dus ik houd de verwijzingen in de gaten en als er een site opduikt die van een gebruiker is, krijg je de Ambassador badge.
 
-Still, on the off chance that some of you want to help out by making a muslin and letting me know how it went, here's what's currently on my drawing board:
+![Linken naar freesewing.org is een manier om de ambassadeurbadge vrij te spelen.](https://posts.freesewing.org/uploads/badge_ambassador_3dd1e722cc.svg)
 
- - A trouser block for men that should be better than Theo(dore)
- - A block for selvedge jeans for men
- - A zip-up hoodie for men
- - A wintercoat 
- - A unisex leggins pattern
+Het is een kleine manier om je te bedanken voor het verspreiden van freesewing.
 
-Should any of you want to make one of these as a test, [let me know](/contact), it would really help me out. 
+## Donaties
+In september hebben we het donatiebedrag van vorig jaar gepasseerd, dus het is fijn om te zien dat ik dit jaar [meer geld naar AzG](/about/pledge#donations-history) kan sturen dan in 2016.
+
+Je kunt de donaties altijd volgen op [de donaties belofte pagina](/about/pledge#donations-history), maar hier is de huidige status:
+
+![Joehoew! Beter dan vorig jaar](https://posts.freesewing.org/uploads/donations_68e214d133.svg)
+
+## Meer downloadformaten
+
+Ik heb ook extra formaten toegevoegd aan de concept downloadpagina. Je hebt nu de keuze uit SVG, PDF, brief-PDF, tabloid-PDF, A4-PDF, A3-PDF, A2-PDF, A1-PDF en A0-PDF.
+
+## De badge voor kwaliteitscontrole
+Ik heb de kwaliteitscontrolebadge toegevoegd voor dingen als het melden (of repareren) van typefouten, gebroken links, grammatica en andere kleine verbeteringen.
+
+![Zie je een typefout? Laat het me weten en je krijgt dit](https://posts.freesewing.org/uploads/badge_quality_control_6acb8c10c2.svg)
+
+Dit lijkt misschien geen wereldschokkende bijdrage, maar toch zijn ze belangrijk.
+
+Op het spectrum tussen eindeloos zwoegen op de perfecte inhoud voordat je het publiceert, of het snel uitbrengen met alles erop en eraan, neig ik sterk naar het laatste. Dus ik reken een beetje op jullie om me te laten weten wanneer ik het verprutst heb.
+
+## Vooruitkijken naar oktober
+
+Er zijn 5 patronen waar ik momenteel aan werk. En ze zijn allemaal zover klaar dat ik ze moet maken om te controleren of ze werken zoals bedoeld. Eerst een mousseline en dan het echte werk.
+
+Dat is een beetje een knelpunt voor mij omdat ik lang moet pendelen, dus mijn naaitijd is meestal beperkt tot het weekend.
+
+De enige manier die ik zie om het proces van het uitbrengen van patronen te versnellen is om mensen mee te laten doen met het testen van patronen. Ik denk niet dat het iets is wat ik mensen kan vragen om te doen, want dit is een vroeg teststadium. Om nog maar te zwijgen over het feit dat ik ze niets te bieden heb om de deal te versoepelen. Wat ga ik je geven, een gratis patroon?
+
+Maar toch, voor het geval dat sommigen van jullie willen helpen door een mousseline te maken en me te laten weten hoe dat ging, hier is wat er op dit moment op mijn tekentafel ligt:
+
+ - Een broekenblok voor mannen dat beter zou moeten zijn dan Theo(dore)
+ - Een blok voor jeans met zelfkant voor mannen
+ - Een zip-up hoodie voor mannen
+ - Een winterjas
+ - Een uniseks leggins patroon
+
+Als iemand van jullie er een wil maken als test, [laat het me dan weten](/contact), het zou me echt helpen. 
 

@@ -1,8 +1,8 @@
 ---
-title: "Bequemlichkeitszugabe Brust"
+title: "Brustumfangszugabe"
 ---
 
-![Brustzugabe](chestease.svg)
+![Brustumfangszugabe](chestease.svg)
 
 Die Menge an Bewegungs-/Bequemlichkeitszugabe an deiner Brust.
 

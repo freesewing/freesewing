@@ -1,5 +1,5 @@
 ---
-title: "Buttonhole placket width"
+title: "Breedte knoopsgatenpat"
 ---
 
 ![Breedte knoopsgatenpat](buttonholeplacketwidth.svg)

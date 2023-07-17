@@ -1,30 +1,25 @@
 ---
 author: "joostdecock"
-caption: "Your login background for May"
+caption: "Je inlogachtergrond voor mei"
 date: "2018-04-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/992689c621b6b83a80706620ae5cd92262dcf4bd-1920x1273.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - April 2018: Calm before the storm [Niet vertaald]"
+intro: "Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt."
+title: "Maandelijkse roundup - april 2018: Rust voor de storm"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt.
 
-## Looking back at April
+## Terugblik op april
 
-Did you get them? All those emails, notifications, and popups from companies informing you
-that they've made some changes to their privacy policy, or the way they handle your data,
-and would you please agree to these changes?
+Heb je ze gekregen? Al die e-mails, meldingen en pop-ups van bedrijven die je op laten weten dat ze een aantal wijzigingen hebben aangebracht in hun privacybeleid of de manier waarop ze met je gegevens omgaan, en of je alsjeblieft akkoord wilt gaan met deze wijzigingen?
 
-I bet you did, as did I. And with each one of them, I grow a bit more nervous as the 
-GDPR deadline of May 25th is approaching, yet I'm not ready yet to send you one of those emails.
+Ik wed dat je dat deed, net als ik. En met elk van hen word ik een beetje nerveuzer omdat de GDPR-deadline van 25 mei nadert, maar ik ben nog niet klaar om je zo'n e-mail te sturen.
 
-Our [carefully laid plans](/blog/gdpr-plan/) are but a small part of the changes we're working on,
-and that's why it's all taking a bit longer than expected.
+Onze [zorgvuldig opgestelde plannen](/blog/gdpr-plan/) zijn maar een klein deel van de veranderingen waar we aan werken, en daarom duurt het allemaal wat langer dan verwacht.
 
-I could write a bit more about it, but I've got a ton of work to do and very little time to do it in.
-So if it's all the same, I think I'd rather get back to work.
+Ik zou er nog wel wat meer over kunnen schrijven, maar ik heb nog heel veel werk te doen en heel weinig tijd om dat te doen. Dus als het allemaal hetzelfde is, denk ik dat ik liever weer aan het werk ga.
 
-## Looking ahead to May
+## Vooruitkijken naar mei
 
-Expect changes. A lot of changes. Nothing to worry about though 😉
+Verwacht veranderingen. Veel veranderingen. Niets om je zorgen over te maken hoor 😉
 

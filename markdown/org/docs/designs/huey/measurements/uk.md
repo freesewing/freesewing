@@ -1,5 +1,5 @@
 ---
-title: "Толстовка Г'юї: Необхідні виміри"
+title: "Huey hoodie: Required Measurements"
 ---
 
 <PatternMeasurements pattern='huey' />

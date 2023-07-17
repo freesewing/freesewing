@@ -1,5 +1,5 @@
 ---
-title: "Holmes deerstalker hat"
+title: "Holmes deerstanker hoed"
 ---
 
 <YouTube id='H24VBFMZJF4' />

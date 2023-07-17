@@ -1,109 +1,60 @@
 ---
 author: "joostdecock"
-caption: "As an introvert I don't say this often, but I'd actually like to meet you guys."
+caption: "Als introvert zeg ik dit niet vaak, maar ik zou jullie eigenlijk wel willen ontmoeten."
 date: "2018-12-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b5fdb232675b32c7c08b59ffc57e9b9da31f02f-1920x1078.jpg"
-intro: "Let's meet up in 2019! And other end-of-year musings [Niet vertaald]"
-title: "Let's meet up in 2019! And other end-of-year musings [Niet vertaald]"
+intro: "Laten we elkaar ontmoeten in 2019! En andere eindejaarsgedachten"
+title: "Laten we elkaar ontmoeten in 2019! En andere eindejaarsgedachten"
 ---
 
 
-Because nobody likes a deadline on New Year's Eve, freesewing traditionally 
-wraps up its year on December 10th. Which means that now is the time to 
-reflect on the past, and look forward to what lies ahead.
+Omdat niemand houdt van een deadline op oudejaarsavond, sluit freesewing traditiegetrouw zijn jaar af op 10 december. Dat betekent dat het nu tijd is om te laten reflecteren op het verleden en vooruit te kijken naar wat er in het verschiet ligt.
 
-## How do you feel about meeting up?
+## Wat vind je ervan om af te spreken?
 
-I'll jump right in: In 2019 I would like to organize a get-together 
-of freesewing supporters and contributors to discuss the future of the project, 
-exchange ideas and experiences. The invitation is open to everyone, so feel free
-to share this post with others.
+Ik spring er meteen in: In 2019 wil ik graag een bijeenkomst organiseren van freesewing supporters en bijdragers om de toekomst van het project te bespreken, ideeën en ervaringen uit te wisselen. De uitnodiging staat open voor iedereen, dus voel je vrij om dit bericht met anderen te delen.
 
-I can't give you any details yet. Not because I'm lazy (which I am, but that's a 
-different story) but because I want to hear from you what you'd like to do/hear/talk 
-about.
+Ik kan je nog geen details geven. Niet omdat ik lui ben (wat ik wel ben, maar dat is een ander verhaal), maar omdat ik van jullie wil horen wat jullie graag willen doen/horen/praten op .
 
-So if this sounds like something you'd like to attend, 
-please share your thoughts, ideas, and suggestions. I've created
-[a GitHub issue for the matter](https://github.com/freesewing/meetup/issues/1)
-so that's a good place to leave your input. But social media is a good place too.
+Dus als dit klinkt als iets wat je zou willen bijwonen, deel dan alsjeblieft je gedachten, ideeën en suggesties. Ik heb [een GitHub issue aangemaakt voor de kwestie](https://github.com/freesewing/meetup/issues/1) dus dat is een goede plek om je input achter te laten. Maar sociale media zijn ook een goede plek.
 
-Input on what, you ask? Well, here's some questions that need answers:
+Input voor wat, vraag je? Nou, hier zijn een paar vragen die beantwoord moeten worden:
 
- - When are we going to do this? Next week? August? The last blood moon before the reckoning?
- - Where are we going to do this? Your mom's basement? The parish hall of Oostrozebeke? London? Paris? Montreal? Mar-a-Lago?
- - Is this going to be a 2-hour thing, a Thursday afternoon, or a full weekend?
- - What are we going to talk about. What are we going to do? What would you like to see or hear?
+ - Wanneer gaan we dit doen? Volgende week? Augustus? De laatste bloedmaan voor de afrekening?
+ - Waar gaan we dit doen? De kelder van je moeder? De parochiezaal van Oostrozebeke? Londen? Parijs? Montreal? Mar-a-Lago?
+ - Wordt dit iets van 2 uur, een donderdagmiddag of een heel weekend?
+ - Waar gaan we het over hebben. Wat gaan we doen? Wat zou je willen zien of horen?
 
 
-Once again, nothing is set in stone, and I'm looking forward to hearing from you guys how
-we could make this memorable.
+Nogmaals, niets staat vast en ik kijk ernaar uit om van jullie te horen hoe we dit gedenkwaardig kunnen maken.
 
-So don't be shy, just share.
+Dus wees niet verlegen, deel het gewoon.
 
-## freesewing 2.0
+## freeswing 2.0
 
-We have done a lot of work since freesewing.org was launched (only) 
-16 months ago. We've added new patterns,  built a new website, and we've 
-translated freesewing.org into 4 additional languages in order to remove 
-knowledge of English as a barrier to using the site.
+We hebben veel werk verzet sinds freesewing.org (slechts) 16 maanden geleden werd gelanceerd. We hebben nieuwe patronen toegevoegd, een nieuwe website gebouwd en we hebben freesewing.org vertaald in 4 extra talen om kennis van het Engels als barrière voor het gebruik van de site te verwijderen.
 
-But we actually did much more this year. For the last 6 months or so, I've been 
-working like crazy
-on [freesewing 2.0.](https://github.com/freesewing/freesewing). 
-It's a complete rewrite of pretty much 
-every aspect of the project. My reasons for doing so are simple: With the project 
-growing as it does, the fact that I only have two hands and 24 hours in a day is 
-quickly becoming a bottleneck. For freesewing to thrive we must make it simpler 
-for other people to [dive in](https://developer.freesewing.org), and get involved.
+Maar we hebben dit jaar eigenlijk veel meer gedaan. De afgelopen 6 maanden of zo heb ik als een gek gewerkt op aan [freesewing 2.0.](https://github.com/freesewing/freesewing). Het is een complete herschrijving van zo'n beetje elk aspect van het project. Mijn redenen hiervoor zijn eenvoudig: Met het groeiende project wordt het feit dat ik maar twee handen heb en 24 uur in een dag zit al snel een knelpunt. Om freesewing te laten gedijen moeten we het eenvoudiger maken voor andere mensen om [in](https://developer.freesewing.org)te duiken en betrokken te raken.
 
-As such, I have embarked on a journey to tackle technical debt, and simplify our 
-technology stack. The first big hurdle 
-was [rounded in August](/blog/announcing-freesewing-library) when the JavaScript 
-port of our core platform reached feature parity. Since then, I have 
-ported [several patterns](https://github.com/freesewing/patterns), 
-and currently I am working 
-on [a new backend](https://github.com/freesewing/backend) and [website](https://github.com/freesewing/website). 
+Daarom ben ik begonnen aan een reis om de technische schuld aan te pakken en onze technologiestapel te vereenvoudigen. [De eerste grote horde werd in augustus](/blog/announcing-freesewing-library) genomen toen de JavaScript port van ons kernplatform gelijkwaardig werd. Sindsdien heb ik verschillende patronen geport [](https://github.com/freesewing/patterns), en momenteel werk ik aan [een nieuwe backend](https://github.com/freesewing/backend) en [website](https://github.com/freesewing/website).
 
-The new setup will be faster, more modular, and easier to extend and wrap your 
-head around. Which is crucial for our long-term growth. 
+De nieuwe opzet zal sneller zijn, meer modulair en gemakkelijker uit te breiden en je hoofd er omheen te wikkelen. Dat is cruciaal voor onze groei op de lange termijn.
 
-Unfortunately, this is one of those scenarios where nothing works until everything works. 
-So while you can go 
-to [beta.freesewing.org](https://beta.freesewing.org) now and kick the tires, 
-it's probably going to be a bit of a downer as so much is still broken, or unfinished.
+Helaas is dit een van die scenario's waarbij niets werkt totdat alles werkt. Dus terwijl je nu naar kunt gaan naar [beta.freesewing.org](https://beta.freesewing.org) en de banden kunt uitproberen, zal het waarschijnlijk een beetje een domper zijn, omdat er nog zoveel kapot of onaf is.
 
-So please bear with me as we continue this important behind-the-scenes work. 
-Because while I can't tell you when it will be ready, 
-I really feel it's something worth looking forward to.
+Heb dus even geduld terwijl we dit belangrijke werk achter de schermen voortzetten. Want hoewel ik je niet kan vertellen wanneer het klaar zal zijn, heb ik echt het gevoel dat het iets is dat de moeite waard is om naar uit te kijken.
 
-## Oh, and one more thing
+## Oh, en nog één ding
 
-I'm more of a looking-forward than a looking-back kinda guy, but as I reflect on the year, 
-it is clear to me that the most important thing we did with freesewing, was to team up 
-with [our patrons](/community/who/patrons). 
+Ik ben meer een vooruitkijker dan een terugkijker, maar als ik terugkijk op het jaar, is het me duidelijk dat het belangrijkste wat we met freesewing hebben gedaan, het samenwerken was met [onze beschermheren](/community/who/patrons).
 
-Twelve months ago
-, [we launched our patron project](/blog/calling-all-patrons). Since then, 65 patrons 
-— spread roughly equally among our 3 tiers of patronage — 
-have [stepped forward to support freesewing](/patrons/join). 
-The knock-on effects of these people making a commitment to support our work have surpassed 
-even my most optimistic hopes.
+Twaalf maanden geleden , [lanceerden we ons mecenaatsproject](/blog/calling-all-patrons). Sindsdien hebben 65 mecenassen - ongeveer gelijk verdeeld over onze 3 niveaus van mecenaat - [naar voren gestapt om freesewing te steunen](/patrons/join). De kettingreactie van deze mensen die zich inzetten om ons werk te steunen, heeft zelfs mijn meest optimistische hoop overtroffen.
 
-You may or may not know that I 
-have [made a pledge](/docs/various/pledge) to donate all income from freesewing to charity. 
-So this morning I transferred our entire revenue for the year (**3162.14 euros**) 
-to [Médecins Sans Frontières](https://www.msf.org/) (Doctors Without Borders).
-Money that will go towards bringing relief to some of the most vulnerable people on this planet.
+Je weet misschien wel of niet dat ik [een belofte heb gedaan](/docs/various/pledge) om alle inkomsten van freesewing aan goede doelen te schenken. Dus vanmorgen heb ik onze hele jaaropbrengst (**3162,14 euro**) overgemaakt naar [Artsen zonder Grenzen](https://www.msf.org/) . Geld dat zal worden gebruikt om hulp te bieden aan de meest kwetsbare mensen op deze planeet.
 
-You made that happen, and if it brings a fraction of the joy to your heart as it does to mine, 
-you'll understand how much your patronage means to me.
+Jij hebt dat mogelijk gemaakt en als het ook maar een fractie van de vreugde in jouw hart brengt als in het mijne, zul je begrijpen hoeveel jouw mecenaat voor mij betekent.
 
-I have, for several years now, put a lot of time and effort into freesewing. 
-And I can honestly say that I've never worked harder on this than I am doing now. 
-But at the same time, it has been easier than ever for me to find the motivation to do so. 
-Every contribution, no matter how small, is like a small patch in a warm blanket of support 
-under which freesewing can thrive.
+Ik steek al een paar jaar veel tijd en moeite in freesewing. En ik kan eerlijk zeggen dat ik hier nog nooit zo hard aan heb gewerkt als nu. Maar tegelijkertijd is het voor mij gemakkelijker dan ooit om de motivatie te vinden om dit te doen. Elke bijdrage, hoe klein ook, is als een klein stukje in een warme deken van ondersteuning waaronder freesewing kan gedijen.
 
-So thank you for all this. And let's try to do (even) better next year.
+Dus bedankt voor dit alles. En laten we proberen het volgend jaar (nog) beter te doen.
 

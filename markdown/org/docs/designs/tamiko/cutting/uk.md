@@ -1,5 +1,5 @@
 ---
-title: "Топ Таміко: Інструкція з розкрою"
+title: "Tamiko top: Cutting Instructions"
 ---
 
 - **Основна тканина**

@@ -1,8 +1,8 @@
-- - -
-title: "Cuff style"
-- - -
+---
+title: "Stijl Manchet"
+---
 
-![Stijl manchet](cuffstyle.svg)
+![Stijl Manchet](cuffstyle.svg)
 
 Wat voor manchet wil je?
 

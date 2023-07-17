@@ -1,5 +1,5 @@
 ---
-title: "Armhole depth factor"
+title: "Factor de profundidad de la sisa"
 ---
 
 ![El factor de profundidad del agujero en Brian](./armholedepthfactor.svg)

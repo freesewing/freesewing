@@ -1,43 +1,32 @@
 ---
 author: "joostdecock"
-caption: "Your login background for November"
+caption: "Je inlogachtergrond voor november"
 date: "2018-11-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5be11786eaed9bba641fa66b812a3fc9f68aed1d-1920x1410.jpg"
-intro: "Monthly roundup - October 2018: Progress on beta.freesewing.org [Niet vertaald]"
-title: "Monthly roundup - October 2018: Progress on beta.freesewing.org [Niet vertaald]"
+intro: "Maandelijkse samenvatting - oktober 2018: Vooruitgang op beta.freesewing.org"
+title: "Maandelijkse samenvatting - oktober 2018: Vooruitgang op beta.freesewing.org"
 ---
 
 
-This is your monthly roundup of the freesewing news of the last four weeks, 
-and a look at what lies ahead in the next month.
+Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken, en een blik op wat er de komende maand in het verschiet ligt.
 
-## Looking back at October
+## Terugblik op oktober
 
-Skeletons pack up their rattling chains, and your *sexy Brett Kavanaugh* costume
-has found a new home in the attic. This can only mean one thing: Halloween is over,
-here comes November.
+Skeletten pakken hun rammelende kettingen op en je *sexy Brett Kavanaugh* kostuum heeft een nieuw thuis gevonden op zolder. Dit kan maar één ding betekenen: Halloween is voorbij, hier komt november.
 
-I am currently under the influence of influenza, so pardon me if I keep this short.
+Ik ben momenteel onder invloed van griep, dus vergeef me als ik het kort houd.
 
-What I can tell you about October is that a lot of work has been done, and while it's not 
-always obvious to somehow showcase this behind-the-scenes work, 
-[our beta website](https://beta.freesewing.org/) is 
-slowly starting to gain more and more features.
+Wat ik je over oktober kan vertellen is dat er veel werk is verzet, en hoewel het niet altijd voor de hand ligt om dit werk achter de schermen op de een of andere manier te laten zien, [onze bètawebsite](https://beta.freesewing.org/) begint langzaam steeds meer functies te krijgen.
 
-Not that we're anything close to finishing it. But you can login with your current freesewing
-username and password. Which means that we've successfully migrated all our data to our new backend.
+Niet dat we er bijna klaar mee zijn. Maar je kunt inloggen met je huidige gebruikersnaam en wachtwoord voor freesewing . Dit betekent dat we al onze gegevens met succes hebben gemigreerd naar ons nieuwe backend.
 
-It's baby steps, but with each passing day, and each line of code written, we get a little closer
-to where we want to go.
+Het zijn babystapjes, maar met elke dag die voorbijgaat en elke regel code die we schrijven, komen we een beetje dichter bij waar we heen willen.
 
-## Looking ahead to November
+## Vooruitkijken naar november
 
-In early December we traditionally do our yearly roundup, which means that November is kind of 
-that last month we have to come up with something to show off.
+Begin december doen we traditiegetrouw onze jaarlijkse roundup, wat betekent dat november een soort is, die laatste maand waarin we iets moeten verzinnen om mee te pronken.
 
-I've somehow made peace with the fact that things won't be nearly as ready as I'd like them to be.
-But on the other hand, I am still excited about all the work we are doing/have been doing, so 
-hopefully that will shine through regardless of whether we can show you much or not.
+Ik heb er op de een of andere manier vrede mee dat de dingen lang niet zo klaar zullen zijn als ik zou willen. Maar aan de andere kant ben ik nog steeds enthousiast over al het werk dat we doen/hebben gedaan, dus hopelijk zal dat doorschijnen, ongeacht of we jullie veel kunnen laten zien of niet.
 
-Now if you don't mind, I'll get back to tea and tissues.
+Als je het niet erg vindt, ga ik nu terug naar de thee en tissues.
 

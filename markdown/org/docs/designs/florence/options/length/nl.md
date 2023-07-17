@@ -1,5 +1,5 @@
 ---
-title: "Length"
+title: "Lengte"
 ---
 
 ![Lengte optie](./length.svg)

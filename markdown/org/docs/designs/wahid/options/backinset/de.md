@@ -1,5 +1,5 @@
 ---
-title: "Back inset"
+title: "Rückseite Ausschnitt"
 ---
 
 ![Rückseite Ausschnitt](backinset.svg)

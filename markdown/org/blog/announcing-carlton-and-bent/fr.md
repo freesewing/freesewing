@@ -3,10 +3,9 @@ author: "joostdecock"
 caption: "Vous aussi, vous pouvez porter ce manteau. Pour le chapeau, c'est vous qui verrez. Du moins, pour l'instant."
 date: "2017-12-20"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/01c201b14f04bedbe2630bb3bd40d925fd6c1ce4-3500x2333.jpg"
-intro: "Bonne nouvelle, vos désirs de cosplay vont être exhaucés. En tout cas, si vous endossez le rôle de Sherlock Holmes. Notre dernière version de patron, du manteau Carlton est totalement conforme à la prescription de votre médecin si pour une raison étrange, il veut que vous ressembliez au détective préféré de chacun."
+intro: "Annonce de Carlton, le manteau de Sherlock Holmes, et de Bent, haut de base"
 title: "Annonce de Carlton, le manteau de Sherlock Holmes, et de Bent, haut de base"
 ---
-
 
 Bonne nouvelle, vos désirs de cosplay vont être exhaucés. En tout cas, si vous endossez le rôle de Sherlock Holmes. Notre dernière version de patron, [du manteau Carlton ](/patterns/carlton) est totalement conforme à la prescription de votre médecin si pour une raison étrange, il veut que vous ressembliez au détective préféré de chacun.
 
@@ -14,7 +13,7 @@ Mes souvenirs sont flous quant à l'origine exacte de cette intiative. Mis à pa
 
 Je me souviens simplement qu'à un moment, [Anneke](http://www.annekecaramin.com/) et moi avons décidé que nous allions revisiter le manteau de Sherlock Holmes. Plus précisément, le manteau porté par Benedict Cumberbatch dans la série Sherlock Holmes de la BBC.
 
-![Principe de ce manteau](bc.jpg)
+![Principe de ce manteau](https://posts.freesewing.org/uploads/bc_f20e01a16d.jpg)
 
 Pour des raisons évidentes, ce manteau est populaire auprès des cosplayers, mais c'est aussi un manteau vraiment sympa, et d'autres valeureux [tels que Melissa](http://blog.fehrtrade.com/gallery/868/the-sherlock-coat/) se sont lancés dans sa réalisation.
 
@@ -26,15 +25,15 @@ Anneke et moi-même n'avons rien fait de tel ; nous avons créé le patron ensem
 
 Carlton est un manteau croisé, long, s'inspirant des uniformes de cavaliers, sans fente au dos, mais à la place de larges plis pouvant se draper sur le dos du cheval. Ou, de manière plus réaliste, se soulève derrière vous lorsque vous marchez.
 
-![Carlton vu de face](front.jpg) ![Carlton vu de dos](back.jpg)
+![Carlton vu de face](https://posts.freesewing.org/uploads/front_e1d64f3ceb.jpg) ![Carlton vu de dos](https://posts.freesewing.org/uploads/back_05c04878c5.jpg)
 
 Il comporte deux poches appliquées sur le devant, deux poches poitrine et deux poches intérieures. Soit six poches au total, vous aurez donc beaucoup de place pour vos affaires.
 
-![Poches poitrine et poches applquées extérieures](pockets.jpg) ![Poches intérieures](innerpocket.jpg)
+![Poches poitrine et poches applquées extérieures](https://posts.freesewing.org/uploads/pockets_28099d1afe.jpg) ![Poches intérieures](https://posts.freesewing.org/uploads/innerpocket_4e4e3f5119.jpg)
 
 J'ai terminé le mien juste à temps pour un voyage à K. pour rendre visite à mon cher ami et tailleur [Sebastian Hoofs](http://sebastian-hoofs.de/massschneider/). Il y faisait un froid de canard, mais le manteau m'a bien tenu chaud. Pas surprenant, car il est réalisé dans une laine lourde que j'ai trouvée chez [Bacci à Florence](http://www.baccitessuti.it/en/index.html) un été, et j'ai choisi l'option d'ajouter une sous-couche en molleton french terry (je n'aime vraiment pas avoir froid).
 
-![Je n'ai aucun lien avec Bacci, je suis juste un aspirateur à grands magasins de tissus](bacci.jpg) ![Vous pouvez voir la sous couche en molleton au dos de la doublure de manche](interlining.jpg)
+![Je n'ai aucun lien avec Bacci, je suis juste un aspirateur à grands magasins de tissus](https://posts.freesewing.org/uploads/bacci_043f91c96c.jpg) ![Vous pouvez voir la sous couche en molleton au dos de la doublure de manche](https://posts.freesewing.org/uploads/interlining_220e0eab71.jpg)
 
 ### Prenez le pouvoir grâce à ces poches magnifiques
 
@@ -56,5 +55,7 @@ J'ai initialement conçu Bent comme une base pour ma veste zèbre [refashioners 
 Carlton étant également basé sur Bent, nous vous donnons les deux aujourd'hui.
 
 Passez des vacances merveilleuses et heureuses si vous êtes dans ce genre de choses. Et bonnes réalisations !
+
+
 
 

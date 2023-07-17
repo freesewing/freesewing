@@ -1,5 +1,5 @@
 ---
-title: "Hood angle"
+title: "Angulo de capucha"
 ---
 
 ![Angulo de capucha](./hoodangle.svg)

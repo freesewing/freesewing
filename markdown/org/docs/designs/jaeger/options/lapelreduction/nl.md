@@ -1,5 +1,5 @@
 ---
-title: "Lapel reduction"
+title: "Reductie revers"
 ---
 
 Mate waarin het einde van de revers weer inwaards keren.

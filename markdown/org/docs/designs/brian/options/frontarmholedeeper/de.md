@@ -1,5 +1,5 @@
 ---
-title: "Front armhole extra cutout"
+title: "Zusätzlicher Ausschnitt am vorderen Armloch"
 ---
 
 ![Zusätzlicher Ausschnitt am vorderen Armloch](./frontarmholedeeper.svg)

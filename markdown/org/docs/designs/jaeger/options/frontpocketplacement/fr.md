@@ -1,5 +1,5 @@
 ---
-title: "Front pocket placement"
+title: "Emplacement des poches avant"
 ---
 
 ![Emplacement des poches avant](frontpocketplacement.svg)
@@ -8,4 +8,4 @@ Emplacement de la poche avant en proportion d'un quart de la circonférence de l
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_frontpocketplacement_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_frontpocketplacement_sample.svg "Effet de cette option sur le motif")

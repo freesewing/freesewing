@@ -1,32 +1,31 @@
 ---
 author: "joostdecock"
-caption: "Remember when we were allowed to go outside?"
+caption: "Weet je nog dat we naar buiten mochten?"
 date: "2021-01-17"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0faad5ded9176b4cf9e58cf5b05a939ba7670363-1920x1272.jpg"
-intro: "We've just published a new pattern on this website: Bella, a bodice block for womenswear . It's a block with bust and waist dart, and a waist dart at the back."
+intro: "Het Bella bovenstuk basispatroon voor dameskledij"
 title: "Het Bella bovenstuk basispatroon voor dameskledij"
 ---
 
 
-We've just published a new pattern on this website: [Bella, a bodice block for womenswear](/designs/bella/). It's a block with bust and waist dart, and a waist dart at the back.
+We hebben zojuist een nieuw patroon op deze website gepubliceerd: [Bella, een lijfjeblok voor dameskleding](/designs/bella/). Het is een blok met buste- en taillescheepjes en een taillescheepje op de rug.
 
-My goal when venturing into womenswear was to make one foundational block from which we could then spin out a range of different garments.
+Toen ik me aan damesmode waagde, was mijn doel om één basisblok te maken, waaruit we op een reeks verschillende kledingstukken konden maken.
 
-Which is why we have [Breanna](/designs/breanna/), which I designed from scratch. Unfortunately, it hasn't been the end-all be-all that I — perhaps naively — hoped it would be.
+Daarom hebben we [Breanna](/designs/breanna/), die ik helemaal opnieuw heb ontworpen. Helaas is het niet het eindstation dat ik - misschien naïef - hoopte dat het zou zijn.
 
-For Bella, I worked with someone from the industry to implement a design that is commonly used for commercial garment making. As such, I am curious to see how this one will pan out.
+Voor Bella werkte ik samen met iemand uit de industrie om een ontwerp te implementeren dat gewoonlijk wordt gebruikt voor het maken van commerciële kleding. Daarom ben ik benieuwd hoe deze zal uitpakken.
 
-My initial plan was to also make a variation with a shoulder dart at the front, to replace the bust dart, but in the end I settled for getting it released, rather than work on it longer.
+Aanvankelijk was ik van plan om ook een variatie te maken met een schouderpas aan de voorkant, ter vervanging van de bustespas, maar uiteindelijk heb ik er genoegen mee genomen om hem uit te brengen in plaats van er langer aan te werken.
 
-Which brings me to:
+Wat me op het volgende brengt:
 
-##### I'm taking a break from womenswear
+##### Ik neem een pauze in de damesmode
 
-I feel like I'm expending a lot of effort here for little result. It's getting me down, and I need a win.
+Ik heb het gevoel dat ik hier veel moeite doe voor weinig resultaat. Het maakt me depressief en ik heb een overwinning nodig.
 
-I want to work on something that I can not only design, but also make and wear. Something that gives me joy, and makes me feel like I know what I'm doing.
+Ik wil aan iets werken dat ik niet alleen kan ontwerpen, maar ook kan maken en dragen. Iets dat me vreugde geeft en me het gevoel geeft dat ik weet wat ik doe.
 
-So while I'll still help out people who want to design for women themselves, I am taking a break from womenswear. 
-
+Dus hoewel ik nog steeds mensen zal helpen die zelf voor vrouwen willen ontwerpen, neem ik op een pauze in de damesmode. 
 
 

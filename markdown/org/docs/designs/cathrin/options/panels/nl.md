@@ -1,5 +1,5 @@
 ---
-title: "Number of panels"
+title: "Aantal panelen"
 ---
 
 ![De opties voor panelen bij Cathrin](./panels.svg)

@@ -19,7 +19,7 @@ As Bent is a block it does not have any closures. So the instructions below will
 
 </Warning>
 
-### Step 1: Mock-up Construction
+### Stap 1: Model constructie
 
 - Sew the fronts to the back at the shoulder seams good sides together.
 - Sew the fronts to the back at the side seams good sides together.

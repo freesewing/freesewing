@@ -3,14 +3,14 @@ author: "joostdecock"
 caption: "Diese Version übermitteln wir Ihnen aus Bangkok"
 date: "2018-03-21"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/34ed654dcda9004e7c249b90256ad197469cc87e-1920x1277.webp"
-intro: "Wir haben gerade den  Button auf Core 1.8.0 gedrückt. Diesmal ist es eher ein kleineres Update, weil wir ein neues Schnittmuster haben, aber in diesem Fall gibt es zwei Gründe:"
+intro: "We've just pushed the  button on core 1.8.0. That bump in minor number is typically because we have a new pattern, but in this case, there's two reasons:"
 title: "FreeSewing Core 1.8: Jeager-Sakko ist drin, die Rückenbreite ist raus"
 ---
 
 
-Wir haben gerade den *Release* Button auf Core 1.8.0 gedrückt. Diesmal ist es eher ein kleineres Update, weil wir ein neues Schnittmuster haben, aber in diesem Fall gibt es zwei Gründe:
+We've just pushed the *release* button on core 1.8.0. That bump in minor number is typically because we have a new pattern, but in this case, there's two reasons:
 
- - Das[Jaeger-Sakko](/designs/jaeger) ist jetzt verfügbar
+ - Das[Jaeger-Sakko](/patterns/jaeger) ist jetzt verfügbar
  - Und wir haben uns von der *Rückenbreite* verabschiedet
 
 Lesen Sie weiter für die Details.
@@ -21,7 +21,9 @@ Für [meine Refasioner Einreichung im letzten Jahr](/blog/the-refashioners-2017/
 
 Wie sich herausstellt, bedeutet es, wenn ich sage * dass ein bisschen mehr Zeit brauchte* es am Ende 6,5 Monate sind, also verzeihen Sie mir bitte die Verzögerung, aber hier ist es, [das Jaeger-Sakko](/designs/jaeger).
 
-![Beachten Sie, dass ich damals in meinem Beitrag über den Blake Blazer gesprochen habe, aber ich habe ihn seitdem umbenannt, weil Jaeger-Sakko einfach cooler ist](jaeger.jpg)
+![Beachten Sie, dass ich damals in meinem Beitrag über den Blake Blazer gesprochen habe, aber ich habe ihn seitdem umbenannt, weil Jaeger-Sakko einfach cooler ist](https://posts.freesewing.org/uploads/jaeger_1cb91a3cd3.jpg)
+
+
 
 ### Das Jaeger-Sport-Sakko ist keine Alliteration
 
@@ -49,16 +51,16 @@ Die Sache ist die, dass, wenn wir das *Schulter-zu-Schulter*Mass kennen, wir mit
 
 ### Aber Sie vereinfachen das Muster zu sehr
 
-Dies ist nicht der Fall *dieses Schnittmuster kommt mit 38 Optionen*.  Als ob dies nicht schon genug Einstellungsmöglichkeiten wären, setzen wir hier bei FreeSewing alles daran Ihnen möglich alle Regler zur Optimierung des Schnittes an die an die Hand zu geben.
+Dies ist nicht der Fall *dieses Schnittmuster kommt mit 38 Optionen*. Als ob dies nicht schon genug Einstellungsmöglichkeiten wären, setzen wir hier bei FreeSewing alles daran Ihnen möglich alle Regler zur Optimierung des Schnittes an die an die Hand zu geben.
 
 Das Ersetzen einer Messung durch einen errechneten Wert, der auf der Grundlage einer anderen Messung generiert wird, mag dem entgegengesetzt erscheinen, aber es besteht kein Grund zur Sorge. Wir haben dafür gesorgt, dass Sie sich immer noch und die Passform am Rücken kümmern können.
 
-Muster, die früher die die Rückenbreite als Mass erforderten, haben nun eine neue erweiterte Option: den *Rückenfaktor*. Es erlaubt Ihnen, die Berechnung Ihrer Rückenbreite zu optimieren, stellt aber sicher, dass diese innerhalb sinnvoller Parameter bleibt.
+Muster, die früher die *die Rückenbreite als Mass erforderten, haben nun eine neue erweiterte Option: den *Rückenfaktor*. Es erlaubt Ihnen, die Berechnung Ihrer Rückenbreite zu optimieren, stellt aber sicher, dass diese innerhalb sinnvoller Parameter bleibt.</p>
 
-![Der Rückenbreitenfaktor](acrossback.png)
+![Der Rückenbreitenfaktor](https://posts.freesewing.org/uploads/acrossback_60791a4392.png)
+
 
 Wir tun dies in der Überzeugung, dass wir Fehler für den gelegentlichen Benutzer vermeiden, ohne Ihnen, den Schnittmuster-Optionsguru, in Ihren Möglichkeiten einzuschränken.
 
 Oder anders ausgedrückt, Sie können immer noch mit der Rückenbreite herumalbern, aber standardmäßig müssen Sie sich keine Gedanken mehr darüber machen.
-
 

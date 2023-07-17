@@ -1,5 +1,5 @@
 ---
-title: "Simon shirt: Fabric Options"
+title: "Simon, camisa: opciones de tela"
 ---
 
 Cualquier tienda de telas que se precie debería tener una sección para camisas. Puedes ir, preguntar dónde está la sección para camisas y elegir algo que te guste.

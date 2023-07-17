@@ -1,5 +1,5 @@
 ---
-title: "Collar angle"
+title: "Hoek kraag"
 ---
 
 ![Hoek kraag](collarangle.svg)

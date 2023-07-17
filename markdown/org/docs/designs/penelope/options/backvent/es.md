@@ -1,5 +1,5 @@
 ---
-title: "Back vent"
+title: "Abertura trasera"
 ---
 
 Esto añade un respiro a la parte posterior de la sombra.

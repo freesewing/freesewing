@@ -1,5 +1,5 @@
 ---
-title: "Жилет вахід: Інструкція з крою"
+title: "Wahid waistcoat: Cutting Instructions"
 ---
 
 - **Основна тканина**

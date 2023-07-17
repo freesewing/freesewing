@@ -1,6 +1,6 @@
-- - -
-title: "Buttonhole guide"
-- - -
+---
+title: "Guide des boutonnières"
+---
 
 ***
 

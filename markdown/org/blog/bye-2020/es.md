@@ -4,7 +4,7 @@ caption: "A photo by <a href='https://unsplash.com/@onevagabond'>Paulo Silva</a>
 date: "2021-01-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ffacb5c6384f250ad7cd3cb50b5ed4fdeff33ae6-1920x1280.jpg"
 intro: "Aren't we all glad 2020 is over?"
-title: "The year 2020 was something alright [No traducido]"
+title: "The year 2020 was something alright"
 ---
 
 
@@ -12,16 +12,13 @@ title: "The year 2020 was something alright [No traducido]"
 
 Aren't we all glad 2020 is over?
 
-Realistically, at least some of you, or your loved ones, got caught in the absolute gut-punch that is the COVID-19 pandemic. 
-Either indirectly through lost income or other practical concerns, or directly by battling the virus itself.
+Realistically, at least some of you, or your loved ones, got caught in the absolute gut-punch that is the COVID-19 pandemic. Either indirectly through lost income or other practical concerns, or directly by battling the virus itself.
 
-I can only offer my sympathy, and the belief that things will get better. 
-So hang in there, and let me briefly take your mind of things by sharing some good news against the bleak backdrop of the annus horribilis that 2020 turned out to be.
+I can only offer my sympathy, and the belief that things will get better. So hang in there, and let me briefly take your mind of things by sharing some good news against the bleak backdrop of the annus horribilis that 2020 turned out to be.
 
 ##### The face mask tsunami
 
-FreeSewing found itself — absolutely unexpected I might add — under the glaring spotlight of international media this year. 
-A tidal wave of attention rolled over us, and while the peak lasted only a good month, the repercussions and long tail of these events have shaped our entire year.
+FreeSewing found itself — absolutely unexpected I might add — under the glaring spotlight of international media this year. A tidal wave of attention rolled over us, and while the peak lasted only a good month, the repercussions and long tail of these events have shaped our entire year.
 
 It all started in February when COVID-19 was starting to rear its ugly head in Europe and the supplies of personal protective equipment (PPE) started dwindling. It seemed that face masks were going to be a big factor in trying to slow down the spread of this disease, but they were getting harder to come by every day.
 

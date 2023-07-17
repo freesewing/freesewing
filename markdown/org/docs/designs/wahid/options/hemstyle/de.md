@@ -1,5 +1,5 @@
 ---
-title: "Hem style"
+title: "Saumstil"
 ---
 
 ![Saumstil](hemstyle.svg)

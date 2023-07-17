@@ -5,9 +5,9 @@ date: "2020-11-27"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/89782b1ed572a5348c9ad925471f7e5252f630f7-750x750.jpg"
 intro: "Jeroen a fait ce pantalon Theo raccourci dans un tartan rouge vif et audacieux. Nous aimons la façon dont ça a évolué !"
 title: "Short Theo en tartan rouge par Jeroen"
-designs: ["theo"]
+designs:
+  - "theo"
 ---
-
 
 Jeroen a fait ce pantalon Theo raccourci dans un tartan rouge vif et audacieux. Nous aimons la façon dont ça a évolué !
 

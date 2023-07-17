@@ -1,6 +1,6 @@
-- - -
-title: "Walburga Wappenrock: Cutting Instructions"
-- - -
+---
+title: "Walburga, tabardo: Instrucciones de corte"
+---
 
 Walburga consiste en dos partes, una parte delantera __ y una parte _trasera_.
 

@@ -15,7 +15,7 @@ Nun die schlechte Nachricht: Die schriftlichen Anweisungen für Hugo sind noch n
 
 ## Video
 
-Ist der Text zu trocken für dich? Ich versuche, Videos als Teil der Musterdokumentation zur Verfügung zu stellen.
+Text ein bisschen trocken für dich? Ich versuche, Videos als Teil der Musterdokumentation zur Verfügung zu stellen.
 
 Diese Reihe an 6 Episoden zeigt dir, wie du deinen Hoodie von Anfang bis Ende nähst:
 
@@ -52,7 +52,7 @@ Diese Reihe an 6 Episoden zeigt dir, wie du deinen Hoodie von Anfang bis Ende n�
 
   - Verwenden Sie einen Serger, um die Naht in einem Schritt zu nähen und zu beenden.  Dies ist schnell und komfortabel, erzeugt aber ein weniger raffiniertes Aussehen.
   - Wenn Sie keinen Serger haben oder einen raffinierteren Look wünschen, nähen Sie eine Naht mit einer geraden Naht auf Ihrer herkömmlichen Maschine. Bügeln Sie die Nahtzugabe auf der linken Seite auseinander.  Dann auf beiden Seiten der Naht auf der rechten Seite knappkantig absteppen.  Kürze die Nahtzugabe ein.  Dies erzeugt ein raffiniertes Aussehen, aber dauert länger.
-  - Eine weitere Option ohne Overlock ist das Nähen der Naht mit einem geraden Stich. Dann die Nahtzugaben mit einer zusätzlichen Zick-Zack-Linie neben der geraden Naht zusammennähen.  Nahtzugabe einkürzen.  Dies simuliert, was ein Serger tun würde, und ist schneller als die Option (2).
+  - Eine weitere Option ohne Overlock ist das Nähen der Naht mit einem geraden Stich. Dann die Nahtzugaben mit einer zusätzlichen Zick-Zack-Linie neben der geraden Naht zusammennähen.  Kürze die Nahtzugabe ein.  Dies simuliert, was ein Serger tun würde, und ist schneller als die Option (2).
 
 - Lege die Hinterseite des Ärmels rechts auf rechts auf das Rückenteil. Die doppelten Knipse treffen aufeinander.  Nähen Sie die Naht ab und beenden Sie die Nähte wie für die Vorderseite.
 

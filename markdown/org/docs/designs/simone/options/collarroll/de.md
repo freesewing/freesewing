@@ -1,5 +1,5 @@
 ---
-title: "Collar roll"
+title: "Kragenrolle"
 ---
 
 ![Kragenrolle](collarroll.svg)

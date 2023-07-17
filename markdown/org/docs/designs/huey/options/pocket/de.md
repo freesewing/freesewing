@@ -1,5 +1,5 @@
 ---
-title: "Pocket"
+title: "Tasche"
 ---
 
 ![Diese Option bestimmt, ob die Tasche vorne eingeschlossen werden soll oder nicht](./pocket.svg)

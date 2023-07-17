@@ -1,5 +1,5 @@
 ---
-title: "Stretch"
+title: "Dehnung"
 ---
 
 ![Die Stretch-Faktor Option auf Aaron](./stretchfactor.svg)

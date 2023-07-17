@@ -1,5 +1,5 @@
 ---
-title: "Cuff button rows"
+title: "Rijen knopen op manchet"
 ---
 
 ![Rijen knopen op manchet](cuffbuttonrows.svg)

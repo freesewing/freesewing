@@ -1,5 +1,5 @@
 ---
-title: "Number of panels"
+title: "Número de paneles"
 ---
 
 ![Opción de paneles en Catrin](./panels.svg)

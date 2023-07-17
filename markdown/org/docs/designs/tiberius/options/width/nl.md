@@ -1,6 +1,6 @@
-- - -
-title: "Width"
-- - -
+---
+title: "Breedte"
+---
 
 Controls the width of the garment
 

@@ -1,5 +1,5 @@
 ---
-title: "Curve"
+title: "Krümmung"
 ---
 
 ![Krümmungs-Option](./curve.svg)

@@ -6,7 +6,7 @@ Unice consists of a front, a back, and a lined gusset.
 
 - **Oberstoff**
   - Schneide **1 Vorderteil**
-  - Schneide **1 Rückteil**
+  - **1 zurück schneiden**
   - Schneide **2 Zwickel**
 
 <Note>

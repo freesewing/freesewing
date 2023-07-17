@@ -4,10 +4,10 @@ caption: "Seems the husband was not willing to model these"
 date: "2017-09-13"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/cc7d2096649640ce7638cb6ba4c81815bd8fef29-720x890.jpg"
 intro: "Judy wrote:"
-title: "[auf Englisch] Black boxers by Judy"
-designs: ["bruce"]
+title: "Black boxers by Judy"
+designs:
+  - "bruce"
 ---
-
 
 Judy wrote:
 

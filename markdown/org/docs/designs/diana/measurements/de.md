@@ -1,5 +1,5 @@
 ---
-title: "Diana, das Wasserfallshirt: Erforderliche Maße"
+title: "Diana draped top: Required Measurements"
 ---
 
 <PatternMeasurements pattern='diana' />

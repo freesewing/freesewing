@@ -1,5 +1,5 @@
 ---
-title: "Shoulder slope reduction"
+title: "Verringerung der Schulterneigung"
 ---
 
 ![Verringerung der Schulterneigung](shoulderslopereduction.svg)

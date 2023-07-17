@@ -1,5 +1,5 @@
 ---
-title: "Leg width"
+title: "Ancho de la pierna"
 ---
 
 Controla la anchura de la pernera.

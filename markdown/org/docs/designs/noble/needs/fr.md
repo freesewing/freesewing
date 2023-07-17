@@ -4,7 +4,7 @@ title: "Noble body block: What You Need"
 
 To make Noble, you will need the following:
 
-- Matériel de couture de base
+- Fourniture de base pour la couture
 - About 0.5 metres (0.6 yards) of a suitable fabric ([see Noble Fabric options](/docs/patterns/noble/fabric/))
 
 This list is for a default Noble Block. Si vous avez apporté des modifications au bloc, vous devrez peut-être vous procurer des éléments supplémentaires tels que des fermetures, des reliures, etc.

@@ -1,5 +1,5 @@
 ---
-title: "Front overlap"
+title: "Overlap voorzijde"
 ---
 
 How far the fabric extends beyond the button closure.

@@ -1,5 +1,5 @@
 ---
-title: "Front pocket facing"
+title: "Beleg zak"
 ---
 
 Bepaalt de grens tussen het beleg van de voorzak en het zakdeel.

@@ -7,6 +7,6 @@ Steuert die Größe der Halsöffnung in Relation zu der Größe des Lätzchens. 
 - Increase the percentage to widen the neck opening.
 - Decrease the percentage to constrict the neck opening.
 
-## Effekt dieser Variable auf das Schnittmuster
+## Effekt dieser Option auf das Schnittmuster
 
 ![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bob_neckratio_sample.svg "Effekt dieser Option auf das Schnittmuster")

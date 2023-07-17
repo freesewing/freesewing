@@ -3,9 +3,10 @@ maker: "unknown"
 caption: "Trop. De. Style."
 date: "2020-08-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/be12610ca753f520a5ddebc6f034358551d9939c-1080x1349.jpg"
-intro: "Après son premier Wahid à couper le souffle Adam est de retour avec une autre beauté."
+intro: "After his first jaw-dropping Wahid Adam is back with another beauty."
 title: "Un autre gilet Wahid par Adam"
-designs: ["wahid"]
+designs:
+  - "wahid"
 ---
 
 

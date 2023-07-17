@@ -1,82 +1,64 @@
 ---
 author: "joostdecock"
-caption: "Your login background for April"
+caption: "Je inlogachtergrond voor april"
 date: "2018-03-31"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/637be1530f8be9387a2be4feac90b92a145b1ddd-1920x1280.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - March 2018: Parlez-vous français? Sprechen Sie Deutsch? ¿Hablas español? 你會說中文嗎？ [Niet vertaald]"
+intro: "Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt."
+title: "Maandelijkse roundup - maart 2018: Parlez-vous français? Spreekt u Duits? ¿Hablas español? 你會說中文嗎？"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt.
 
-## Looking back at March
+## Terugblik op maart
 
-As a general rule of thumb, the less you hear from me, the harder I'm working. 
-Chances are you didn't hear from me during March at all. And yes, that's because I'm working hard.
+Als vuistregel geldt: hoe minder je van me hoort, hoe harder ik werk. De kans is groot dat je in maart helemaal niets van me hebt gehoord. En ja, dat komt omdat ik hard werk.
 
-Here's why:
+Dit is de waarom:
 
-### The Jaeger Jacket is now available
+### Het Jaeger Jacket is nu verkrijgbaar
 
-We've had the new [Jaeger Jacket](/patterns/jaeger) jacket in the pipeline for a while now. 
-I had stalled a release because I couldn't find the time to make one, something which seems to
-be a general problem for pattern releases.
+De nieuwe [Jaeger Jacket](/patterns/jaeger) jas zit al een tijdje in de pijplijn. Ik had een release uitgesteld omdat ik de tijd niet kon vinden om er een te maken, iets wat een algemeen probleem lijkt te zijn voor patroonreleases.
 
-So, I asked for help and a number of people stepped up and offered to make up (a muslin of) a Jaeger jacket.
+Dus vroeg ik om hulp en een aantal mensen bood aan om (een mousseline van) een Jaeger jasje te maken.
 
-That went well, so a couple of weeks ago we finally pushed out Jaeger for general availability.
-It's part of our core 1.8 release, and [the announcement post](/blog/core-1.8-jaeger-across-back/) has all the details.
+Dat ging goed, dus een paar weken geleden hebben we Jaeger eindelijk naar buiten gebracht voor algemene beschikbaarheid. Het maakt deel uit van onze core 1.8 release, en [de aankondigingspost](/blog/core-1.8-jaeger-across-back/) heeft alle details.
 
-### The *across back* measurement is no more
+### De meting *over de rug* is niet meer dan
 
-The across back measurement was cause of a great deal of confusion among our users. 
-More often than not, when someone contacted us because their pattern looked wonky, 
-an unrealistic across back measurement was to blame.
+De 'across back'-afmeting leverde bij veel gebruikers verwarring op. Vaker wel dan niet, als iemand contact met ons opnam omdat zijn patroon er raar uitzag, was een onrealistische overdwarse rugmeting de schuldige.
 
-So, we stepped in and removed that measurement in favour of calculating it from the *shoulder to shoulder* 
-measurement, and giving you a new *across back factor* option so you can still tweak it if you want to.
+Dus hebben we die meting verwijderd en vervangen door de berekening van *schouder tot schouder* . We geven je een nieuwe *over de rugfactor* optie zodat je het nog steeds kunt aanpassen als je dat wilt.
 
-For a more detailed description, please refer to [the core 1.8 release blog post](/blog/core-1.8-jaeger-across-back/).
+Zie voor een meer gedetailleerde beschrijving [the core 1.8 release blog post](/blog/core-1.8-jaeger-across-back/).
 
-## Looking ahead to April
+## Vooruitkijken naar april
 
-### The big GDPR overhaul
+### De grote herziening van GDPR
 
-Last month we [outlined our GDPR battle plan](/blog/gdpr-plan/) and shortly afterwards I made a decision:
-Rather than implement all these changes in the site, I would start over from scratch.
+Vorige maand hebben we [ons GDPR strijdplan](/blog/gdpr-plan/) geschetst en kort daarna heb ik een besluit genomen: In plaats van al deze veranderingen in de site door te voeren, zou ik helemaal opnieuw beginnen.
 
-Or rather, I've given myself until the end of April to work on this. At which time I will need to decide
-whether it's possible to migrate the entire site before GDPR doomsday (May 25th) or should I abandon this 
-effort and do what needs to be done in the current site.
+Of beter gezegd, ik heb mezelf tot eind april gegeven om hieraan te werken. Op dat moment zal ik moeten beslissen of het mogelijk is om de hele site te migreren voor GDPR doomsday (25 mei) of dat ik deze poging laat varen en doe wat er gedaan moet worden in de huidige site.
+> In plaats van al deze veranderingen in de site door te voeren, zou ik helemaal opnieuw beginnen.
 
->Rather than implement all these changes in the site, I would start over from scratch.
+Het eerste scenario bevalt me beter en ik heb er de afgelopen weken behoorlijk veel dag en (een deel van de) nacht aan gewerkt .
 
-I like the first scenario better and have been working on it pretty much day and (part of the) night
-during the last couple of weeks.
+Ik kan je niet echt veel laten zien, maar het doel is om de nieuwe site te bouwen bovenop [het Nuxt framework](https://nuxtjs.org/). Door dit te doen kunnen we Ruby uit de freesewing technologiestack laten vallen, wat de implementatie en ontwikkeling zou stroomlijnen.
 
-I can't really show you much, but the goal is to build the new site on top of 
-[the Nuxt framework](https://nuxtjs.org/). Doing so would allow us to drop Ruby from the freesewing technology stack,
-which would streamline deployment and development.
+Ik hoop ook dat het gebruik van een modern en populair frontend JS-framework het gemakkelijker/aantrekkelijker zal maken om veranderingen aan de site door te voeren.
 
-My hope is also that using a modern and popular JS frontend framework will make it easier/more attractive 
-contribute changes to the site.
+### Vertalers gezocht
 
-### Translators wanted
+Over bijdragen gesproken. Omdat ik de site helemaal opnieuw ga schrijven, heb ik besloten om een nieuwe uitdaging aan de mix toe te voegen: i18n.
 
-Speaking of contributions. Since I'll be rewriting the site from scratch, I've decided to add a new challenge to the mix: i18n.
+Voor het geval je het je afvraagt, i18n is een afkorting voor internationalisatie, oftewel het beschikbaar maken van de site in verschillende talen.
 
-In case you're wondering, i18n is short for internationalisation, aka making the site available in different languages.
+Ja, 25 mei komt eraan en ja, ik heb meer werk nodig zoals ik nog een gat in mijn hoofd nodig heb. Maar ik vind het een belangrijk project om te proberen freesewing.org voor zoveel mogelijk mensen beschikbaar te maken. En daarvoor moeten we van de taalbarrière af.
 
-Yes, May 25th will be here soon, and yes I need more work like I need another hole in my head. 
-But I feel it's an important project to try and make freesewing.org available to as many people as possible. 
-And for this, we need to get rid of the language barrier.
+Nu heb ik goede hoop dat ik de technische aspecten van het meertalig maken van de site voor mijn rekening kan nemen. Maar daar hebben we niets aan zonder vertalingen. Dus daar kom jij om de hoek kijken :)
 
-Now I'm hopeful that I'll be able to take care of the technical aspects of making the site multi-lingual. 
-But that won't do us any good without translations. So that's where you come in :)
+> #### Als je wilt helpen met het vertalen van freesewing, neem dan [contact op met](/contact). We hebben je hulp nodig.
 
-> #### If you're willing to help with the effort of translating freesewing, please [get in touch](/contact). We need your help. 
-
-It would also help if you could spread the word a bit :)
+Het zou ook helpen als je de boodschap een beetje zou verspreiden :)
 
 
 

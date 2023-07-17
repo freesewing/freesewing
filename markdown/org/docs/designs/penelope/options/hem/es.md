@@ -1,5 +1,5 @@
 ---
-title: "Size of the hem"
+title: "Anchura del dobladillo"
 ---
 
 El tamaño del sombrero.

@@ -3,12 +3,12 @@ author: "joostdecock"
 caption: "Deze update bereikt je vanuit Bangkok"
 date: "2018-03-21"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/34ed654dcda9004e7c249b90256ad197469cc87e-1920x1277.webp"
-intro: "We hebben net onze core 1.8.0 gelanceerd. Zo'n nieuw getal na de komma doen we meestal wanneer we een nieuw patroon toevoegen, maar in dit geval zijn er twee redenen:"
+intro: "We hebben zojuist de knop voor core 1.8.0 ingedrukt. Die hobbel in het kleine getal is meestal omdat we een nieuw patroon hebben, maar in dit geval zijn er twee redenen:"
 title: "FreeSewing core 1.8: het Jaeger-jasje komt erbij en de 'across back'-afmeting verdwijnt"
 ---
 
 
-We hebben net onze core 1.8.0 gelanceerd. Zo'n nieuw getal na de komma doen we meestal wanneer we een nieuw patroon toevoegen, maar in dit geval zijn er twee redenen:
+We hebben zojuist op de *release* knop gedrukt voor core 1.8.0. Die hobbel in het kleine getal is meestal omdat we een nieuw patroon hebben, maar in dit geval zijn er twee redenen:
 
  - Het [Jaeger-jasje](/patterns/jaeger) is nu beschikbaar
  - We hebben de afmeting *across back* verwijderd
@@ -19,9 +19,11 @@ Lees verder voor meer details.
 
 Voor mijn deelname aan [The Refashioners](/blog/the-refashioners-2017/) vorig jaar heb ik een patroon voor een jasje ontworpen dat ik oorspronkelijk wilde lanceren samen met mijn eerste uitvoering ervan. Het is een beetje anders gegaan en ik heb wat meer tijd gevraagd om het patroon op punt te stellen.
 
-*Wat meer tijd* bleek uiteindelijk iets meer dan zes maanden te zijn. Dus vergeef me voor de vertraging, maar hier is hij: het [Jaeger-jasje](/patterns/jaeger).
+*Wat meer tijd* bleek uiteindelijk iets meer dan zes maanden te zijn. Dus vergeef me voor de vertraging, maar hier is hij: het [Jaeger-jasje](/designs/jaeger).
 
-![In mijn oorspronkelijke post had ik het over de Blake-blazer, maar ik heb het patroon een nieuwe naam gegeven omdat Jaeger-jasje gewoon cooler is](jaeger.jpg)
+![In mijn oorspronkelijke post had ik het over de Blake-blazer, maar ik heb het patroon een nieuwe naam gegeven omdat Jaeger-jasje gewoon cooler is](https://posts.freesewing.org/uploads/jaeger_1cb91a3cd3.jpg)
+
+
 
 ### 'Jaeger-sportjasje' is geen alliteratie
 
@@ -55,10 +57,10 @@ Een afmeting vervangen door een waarde die berekend wordt op basis van een ander
 
 Patronen waarvoor je vroeger een 'across back'-afmeting nodig had, hebben nu een geavanceerde optie: de *rugbreedtefactor*. Dat laat je toe om aan te passen hoe de rugbreedte berekend wordt, maar dan wel binnen realistische proporties voor je patroon.
 
-![De rugbreedtefactor-optie](acrossback.png)
+![De rugbreedtefactor-optie](https://posts.freesewing.org/uploads/acrossback_60791a4392.png)
+
 
 Op die manier denken we dat we frustraties voorkomen bij onze nonchalante gebruikers terwijl we jou, de patroonoptiegoeroe, toch alle vrijheid geven.
 
 Of anders gezegd, je kan nog altijd prutsen met je 'across back', maar standaard hoef je er zelfs niet meer bij stil te staan.
-
 

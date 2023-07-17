@@ -4,7 +4,7 @@ caption: "Photo by Deeana Creates from Pexels"
 date: "2020-07-12"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f04cc6c50a8e5f08f3ebd6c3d4903fb3055c9a01-1920x1280.jpg"
 intro: "We've just release FreeSewing v2.7 🎉"
-title: "FreeSewing v2.7: Titan, changes to measurements, and a long list of improvements [No traducido]"
+title: "FreeSewing v2.7: Titan, changes to measurements, and a long list of improvements"
 ---
 
 
@@ -14,7 +14,7 @@ There's a lot of work that went into this release, and unfortunately it  also wi
 
 Let's have a look at what's new:
 
-## Titan trouser block
+## Titan, patrón base de pantalón
 
 I have lost count of the number of times I have started working on a trouser block over the last couple of years. It's something that's been on my to-do list for a long time, yet despite several attempts at making it happen, I hadn't come up with something that I was happy with.
 
@@ -62,7 +62,7 @@ To get around this, you should probably [reload your account](/account/reload/).
 
 ## Frontend changes
 
-We've made a few changes to the website too. 
+We've made a few changes to the website too.
 
  - We've added a [pattern notation guide](/docs/various/notation/) to take the guesswork out of what those markings on your pattern mean.
  - We've added a [reload account](/account/actions/reload/) page to help you avoid issues due to cached account data

@@ -1,5 +1,5 @@
 ---
-title: "Split yoke"
+title: "Tweedelige schouderpas"
 ---
 
 ![Tweedelige schouderpas](splityoke.svg)

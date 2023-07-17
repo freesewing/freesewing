@@ -1,5 +1,5 @@
 ---
-title: "Waist balance"
+title: "Balans taille"
 ---
 
 Bepaalt de verdeling van de stof tussen de voor- en achterkant aan de taille.

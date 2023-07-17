@@ -3,7 +3,7 @@ author: "joostdecock"
 caption: "Vous vous souvenez de quand nous avions le droit de sortir ?"
 date: "2021-01-17"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0faad5ded9176b4cf9e58cf5b05a939ba7670363-1920x1272.jpg"
-intro: "Nous venons de publier un nouveau modèle sur ce site : Bella, un bloc de buste pour vêtements féminins . C'est un bloc avec une pince de poitrine et de taille, ainsi qu'une pince de taille dans le dos."
+intro: "Le bloc de buste Bella pour vêtements féminins"
 title: "Le bloc de buste Bella pour vêtements féminins"
 ---
 
@@ -27,6 +27,5 @@ J'ai l'impression que je dépense beaucoup d'efforts ici pour peu de résultats.
 Je veux travailler sur quelque chose que je peux non seulement concevoir, mais aussi réaliser et porter. Quelque chose qui me procure de la joie, et me fait sentir que je sais ce que je fais.
 
 Donc bien que je prévois toujours d'aider les personnes qui veulent concevoir pour les femmes, je prends une pause sur les vêtements féminins. 
-
 
 

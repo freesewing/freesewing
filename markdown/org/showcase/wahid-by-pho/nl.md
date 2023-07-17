@@ -1,11 +1,12 @@
 ---
-maker: "unknown"
+maker: "onbekend"
 caption: "Wahid waistcoat by Pho"
 date: "2021-05-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e172985d483a277509c6cbaf64fcd58ded7a95ea-521x800.jpg"
 intro: "Pho made this stellar Wahid! They shared:"
-title: "Wahid by Pho [Niet vertaald]"
-designs: ["wahid"]
+title: "Wahid by Pho"
+designs:
+  - "wahid"
 ---
 
 Pho made this stellar Wahid! They shared:
@@ -14,10 +15,10 @@ Pho made this stellar Wahid! They shared:
 
 One more picture of their fantastic work:
 
-![Side view](https://posts.freesewing.org/uploads/wahid_by_pho_wahidbypho2_ba0be6a31c.jpg "Side view")
+![Zijaanzicht](https://posts.freesewing.org/uploads/wahid_by_pho_wahidbypho2_ba0be6a31c.jpg "Zijaanzicht")
 
 <Note>
 
-This picture is from Pho on Discord. It is reposted here with permission.
+This picture is from Pho on Discord. Hij werd hier gepost met toestemming.
 
 </Note>

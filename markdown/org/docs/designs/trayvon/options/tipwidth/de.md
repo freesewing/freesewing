@@ -1,5 +1,5 @@
 ---
-title: "Tip width"
+title: "Spitzenbreite"
 ---
 
 ![Spitzenbreite](tipwidth.svg)

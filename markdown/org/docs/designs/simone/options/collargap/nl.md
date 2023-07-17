@@ -1,5 +1,5 @@
 ---
-title: "Collar gap"
+title: "Afstand kraag"
 ---
 
 ![Afstand kraag](collargap.svg)

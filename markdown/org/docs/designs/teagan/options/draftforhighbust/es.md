@@ -1,5 +1,5 @@
 ---
-title: "Draft for high bust"
+title: "Borrador para alta caída"
 ---
 
 Choose this option to draft Teagan to your high bust measurement, rather than your full chest circumference.

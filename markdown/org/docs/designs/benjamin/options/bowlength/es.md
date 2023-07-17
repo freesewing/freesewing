@@ -1,5 +1,5 @@
 ---
-title: "Bow length"
+title: "Longitud del lazo"
 ---
 
 ![Longitud del lazo](bowlength.svg)

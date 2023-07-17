@@ -1,5 +1,5 @@
 ---
-title: "Waistband position"
+title: "Positie tailleband"
 ---
 
 ![Positie tailleband](waistbandposition.svg)

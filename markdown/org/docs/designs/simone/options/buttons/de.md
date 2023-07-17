@@ -1,5 +1,5 @@
 ---
-title: "Number of buttons"
+title: "Anzahl der Knöpfe"
 ---
 
 ![Knöpfe](buttons.svg)

@@ -1,5 +1,5 @@
 ---
-title: "Inner pocket placement"
+title: "Colocación del bolsillo interior"
 ---
 
 La ubicación del bolsillo interior.

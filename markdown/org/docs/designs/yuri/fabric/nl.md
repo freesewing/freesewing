@@ -1,6 +1,6 @@
-- - -
+---
 title: "Yuri hoodie: Fabric Options"
-- - -
+---
 
 Misschien heeft jouw stoffenwinkel wel een aparte afdeling voor sweater/trainingstof. Als dit niet zo is, kijk dan gewoon bij de gebreide stoffen en zoek naar een iets dikkere, comfortabele jersey.
 

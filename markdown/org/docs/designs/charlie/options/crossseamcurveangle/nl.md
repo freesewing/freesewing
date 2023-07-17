@@ -1,5 +1,5 @@
 ---
-title: "Cross seam angle"
+title: "Grensoverschrijdende hoek"
 ---
 
 Controls the angle of cross seam curve.

@@ -4,17 +4,17 @@ caption: "We're saying thanks to our contributors and want to make sure their co
 date: "2021-11-28"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1488bc5a9940423308a38d2cd33edb86b6eed442-1920x1280.jpg"
 intro: "During our last contributor call , we decided that we would implement the All Contributors specification as a way to honour all our contributors."
-title: "Calling all contributors [Non traduit]"
+title: "Calling all contributors"
 ---
 
-During [our last contributor call](https://github.com/freesewing/freesewing/issues/1514), we decided that we would implement the [All Contributors specification](https://allcontributors.org/) as a way to honour all our contributors. 
+During [our last contributor call](https://github.com/freesewing/freesewing/issues/1514), we decided that we would implement the [All Contributors specification](https://allcontributors.org/) as a way to honour all our contributors.
 
 If on the surface, a contributor call decision to honour contributors sounds like some sort of self-serving nonsense, let me reassure you that there's no risk of dislocated shoulders from patting ourselves on the back. Instead it's about (also) honouring those contributions that tend to go overlooked in Open Source.
 
 The All Contributors website summerazes it as:
 
 > This is a specification for recognizing contributors to an open source project in a way that rewards each and every contribution, not just code.
->
+> 
 > People are giving themselves and their free time to contribute to open source projects in so many ways, so we believe everyone should be praised for their contributions (code or not).
 
 When we talk about *contributors* in open source projects, there is often the assumption that this is all the people who contribute code to the project. The fact the [GitHub lists the contributors of a project based on the actual commits](https://github.com/freesewing/freesewing/graphs/contributors) goes a long way to cement that view.

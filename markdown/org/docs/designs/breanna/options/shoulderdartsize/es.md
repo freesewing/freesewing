@@ -1,5 +1,5 @@
 ---
-title: "Shoulder dart size"
+title: "Tamaño dart de hombro"
 ---
 
 The size of the back shoulder dart.

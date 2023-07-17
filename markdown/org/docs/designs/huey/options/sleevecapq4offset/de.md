@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap Q4 offset"
+title: "Offset der Armkugel Q4"
 ---
 
 ![Der Versatz im vierten Quartal der Ärmel](./sleevecapq4offset.svg)

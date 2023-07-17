@@ -4,7 +4,7 @@ caption: "This release really is a sea-change"
 date: "2019-08-25"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5b31cfbe3a85cee5519e12afe767ca3249588463-2000x1126.jpg"
 intro: "Welcome to version 2 of FreeSewing, the open source platform for made-to-measure sewing patterns."
-title: "Announcing FreeSewing v2.0 [No traducido]"
+title: "Announcing FreeSewing v2.0"
 ---
 
 
@@ -12,25 +12,21 @@ title: "Announcing FreeSewing v2.0 [No traducido]"
 
 Welcome to version 2 of FreeSewing, the open source platform for made-to-measure sewing patterns.
 
-This release culminates more than a year of work, and comes two years to the day since FreeSewing first went live. 
-Today, we once again raise the bar for what you can expect from modern-day sewing patterns.
+This release culminates more than a year of work, and comes two years to the day since FreeSewing first went live. Today, we once again raise the bar for what you can expect from modern-day sewing patterns.
 
 ## 🦄 Harder, better, faster, stronger [\*](https://www.youtube.com/watch?v=GDpmVUEjagg)
 
 
-We are *extremely* excited about this release, which is not just merely a new major version with some breaking changes, 
-but a complete rewrite in JavaScript/Node.js.  We won't go into the nitty gritty here, but if you'd like to know how 
-we've done it, check out [the developer docs](https://freesewing.dev) or [FreeSewing on GitHub](https://github.com/freesewing). 
+We are *extremely* excited about this release, which is not just merely a new major version with some breaking changes, but a complete rewrite in JavaScript/Node.js.  We won't go into the nitty gritty here, but if you'd like to know how we've done it, check out [the developer docs](https://freesewing.dev) or [FreeSewing on GitHub](https://github.com/freesewing).
 
 
 ## ✨ Live preview
 
-FreeSewing has always had a reputation for publishing sewing patterns with tons of options for you to tweak. Which is great, but can be a bit overwhelming because you only got to see the result of all those tweaks at the very end.
-But those days are gone. Now, no matter what changes you make, you get a live preview of what your pattern will look like, taking the guesswork out of configuring your pattern exactly as you like it.
+FreeSewing has always had a reputation for publishing sewing patterns with tons of options for you to tweak. Which is great, but can be a bit overwhelming because you only got to see the result of all those tweaks at the very end. But those days are gone. Now, no matter what changes you make, you get a live preview of what your pattern will look like, taking the guesswork out of configuring your pattern exactly as you like it.
 
 ## 🧂  Recipes
 
-Where we used to store your patterns for you, now we'll store your *recipes* instead. You can go through as many pattern iterations as you want. And when you're happy, we'll save all the settings it takes to create that exact pattern in a so-called recipe. 
+Where we used to store your patterns for you, now we'll store your *recipes* instead. You can go through as many pattern iterations as you want. And when you're happy, we'll save all the settings it takes to create that exact pattern in a so-called recipe.
 
 You can then at any time re-use that recipe to recreate your pattern, or use it as a starting point to make a slightly different pattern. You can also share these recipes, allowing others to generate the same look for their own measurements.
 
@@ -48,11 +44,9 @@ There's good news for translators too, as we now use [Crowdin](https://crowdin.c
 
 It's conventional wisdom in software development that refactoring code is good, but rewriting it from scratch is bad. Still, we did it anyway because we wanted to make it easier for people to get involved in the project, and generate patterns in real-time in the browser.
 
-That being said, this is a .zero release so you may stumble upon an issue left or right. When you do, please [let us know](https://discord.freesewing.org/) or submit an issue. 
+That being said, this is a .zero release so you may stumble upon an issue left or right. When you do, please [let us know](https://discord.freesewing.org/) or submit an issue.
 
 ## 🤞 Tell us what you think
 
-We'd love to hear your feedback. We're **@freesewing\_org** on [Twitter](https://twitter.com/freesewing_org) 
-and [Instagram](https://instagram.com/freesewing_org), 
-use the **#freesewing** hashtag, or [check our share page](/share).
+We'd love to hear your feedback. We're **@freesewing\_org** on [Twitter](https://twitter.com/freesewing_org) and [Instagram](https://instagram.com/freesewing_org), use the **#freesewing** hashtag, or [check our share page](/share).
 

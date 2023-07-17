@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap Q1 offset"
+title: "Funda Q1 offset"
 ---
 
 ![El desplazamiento en el primer trimestre de la manga](./sleevecapq1offset.svg)

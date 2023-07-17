@@ -24,8 +24,8 @@
     "description": "Zie <a href='/docs/sewing/ease/'>Overwijdte</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
   },
   "edgestitch": {
-    "term": "edgestitch",
-    "description": "See <a href='/docs/sewing/edgestitching/'>Edgestitching</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+    "term": "kantsteek",
+    "description": "Zie <a href='/docs/sewing/edgestitching/'>Kantstikken</a> in de <a href='/docs/sewing'>Naaidocumentatie</a>"
   },
   "fabricGrain": {
     "term": "draadrichting",
@@ -33,7 +33,7 @@
   },
   "goodSidesTogether": {
     "term": "goede kanten op elkaar",
-    "description": "Zie <a href='/docs/sewing/good-sides-together/'>Goede kanten op elkaar</a> bij de <a href='/docs/sewing/'>Documentatie naaien</a>"
+    "description": "Zie <a href='/docs/sewing/good-sides-together/'>Goede kanten op elkaar</a> in de<a href='/docs/sewing/'>Documentatie naaien</a>"
   },
   "onTheFold": {
     "term": "aan de stofvouw",
@@ -72,8 +72,8 @@
     "description": "Zie <a href='/docs/sewing/serger/'>Serger/Overlock</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
   },
   "slipstitch": {
-    "term": "slipstitch",
-    "description": "See <a href='/docs/sewing/slipstitch/'>Slipstitch</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+    "term": "slipsteek",
+    "description": "Zie <a href='/docs/sewing/slipstitch/'>Slipsteek</a> in de <a href='/docs/sewing'>Naaidocumentatie</a>"
   },
   "topstitching": {
     "term": "sierstiksel",

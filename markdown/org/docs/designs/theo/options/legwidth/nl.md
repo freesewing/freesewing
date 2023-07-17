@@ -1,5 +1,5 @@
 ---
-title: "Leg width"
+title: "Breedte been"
 ---
 
 Bepaalt de breedte van de broekspijpen.

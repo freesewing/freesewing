@@ -1,5 +1,5 @@
 ---
-title: "Cross seam bend"
+title: "Buiging binnenbeennaad"
 ---
 
 Bepaalt de curve van de kruisnaad

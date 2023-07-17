@@ -1,5 +1,5 @@
 ---
-title: "Ribbing"
+title: "Boordstof"
 ---
 
 ![Boordstof](./ribbing.svg)

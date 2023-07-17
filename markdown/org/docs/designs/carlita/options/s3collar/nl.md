@@ -1,5 +1,5 @@
 ---
-title: "Shoulder seam shift: collar side"
+title: "Schoudernaad verschuiving: kraagkant"
 ---
 
 Bepaalt de locatie van de schoudernaad aan de kant van de kraag.

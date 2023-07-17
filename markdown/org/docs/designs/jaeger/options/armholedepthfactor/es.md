@@ -1,5 +1,5 @@
 ---
-title: "Armhole depth factor"
+title: "Factor de profundidad de la sisa"
 ---
 
 ![Factor de profundidad de la sisa](armholedepthfactor.svg)

@@ -1,5 +1,5 @@
 ---
-title: "Hem curve"
+title: "Saumkurve"
 ---
 
 ![Saumkurve](hemcurve.svg)

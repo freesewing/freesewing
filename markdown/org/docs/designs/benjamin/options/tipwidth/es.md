@@ -1,5 +1,5 @@
 ---
-title: "Tip width"
+title: "Ancho de la punta"
 ---
 
 ![Bow vínculos anchos y flecha](tipwidth.svg)

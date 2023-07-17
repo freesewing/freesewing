@@ -1,5 +1,5 @@
 ---
-title: "Ribbing"
+title: "Bündchen"
 ---
 
 ![Bündchen](./ribbing.svg)

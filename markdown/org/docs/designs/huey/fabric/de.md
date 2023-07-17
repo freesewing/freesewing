@@ -1,6 +1,6 @@
-- - -
+---
 title: "Huey hoodie: Fabric Options"
-- - -
+---
 
 In einem Stoffgeschäft deiner Wahl findest du eine spezielle Sweatshirt-/Tracksuit Stoffabteilung. Wenn nicht, schaue einfach nach der Strickwarensektion und suche nach einem dickeren und bequemen Strickstoff.
 

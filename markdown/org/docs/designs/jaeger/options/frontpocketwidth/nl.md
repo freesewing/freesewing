@@ -1,5 +1,5 @@
 ---
-title: "Front pocket width"
+title: "Breedte voorzak"
 ---
 
 ![Breedte voorzak](frontpocketwidth.svg)

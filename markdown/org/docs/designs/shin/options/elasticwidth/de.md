@@ -1,5 +1,5 @@
 ---
-title: "Elastic width"
+title: "Breite des Gummis"
 ---
 
 > #### Was ist der Punkt?
@@ -8,6 +8,6 @@ title: "Elastic width"
 > 
 > Die Breite Ihrer Elastik ist jedoch auch ein Faktor, der berücksichtigt werden muss.
 
-## Effekt dieser Variable auf das Schnittmuster
+## Effekt dieser Option auf das Schnittmuster
 
 ![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](shin_elasticwidth_sample.svg "Effekt dieser Option auf das Schnittmuster")

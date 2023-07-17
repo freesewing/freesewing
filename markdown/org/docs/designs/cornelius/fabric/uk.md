@@ -1,5 +1,5 @@
 ---
-title: "Велосипедні бриджі Cornelius: Варіанти тканин"
+title: "Cornelius cycling breeches: Fabric Options"
 ---
 
 ### Основна тканина

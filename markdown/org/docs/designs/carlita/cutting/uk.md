@@ -1,5 +1,5 @@
 ---
-title: "Пальто Карліта: Інструкція з крою"
+title: "Carlita coat: Cutting Instructions"
 ---
 
 <Note>

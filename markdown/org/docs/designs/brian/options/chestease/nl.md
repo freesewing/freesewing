@@ -1,5 +1,5 @@
 ---
-title: "Chest ease"
+title: "Overwijdte borst"
 ---
 
 ![De factor voor overwijdte borst bij Brian](./chestease.svg)
