@@ -1,19 +1,21 @@
 ---
-maker: "unknown"
-caption: "Rayon Paco pants in a dark floral print"
+maker: "onbekend"
+caption: "Rayon Paco broek in een donkere bloemenprint"
 date: "2021-04-01"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9255d1162b83bc4691a6029126944d2e714d33e1-1539x1800.jpg"
-intro: "The Pacos were made in a rayon challis, with the default options (and the front rise lowered a touch). They're modelled here with a bonus Teagan T-shirt."
-title: "Tropical Pacos [Niet vertaald]"
-designs: ["paco","teagan"]
+intro: "De Paco's zijn gemaakt van rayon challis, met de standaardopties (en de stijging aan de voorkant iets verlaagd). Ze zijn hier gemodelleerd met een bonus-Teagan T-shirt."
+title: "Tropische pacos"
+designs:
+  - "paco"
+  - "teagan"
 ---
 
-The Pacos were made in a rayon challis, with the default options (and the front rise lowered a touch). They're modelled here with a bonus Teagan T-shirt.
+De Paco's zijn gemaakt van rayon challis, met de standaardopties (en de stijging aan de voorkant iets verlaagd). Ze zijn hier gemodelleerd met een bonus-Teagan T-shirt.
 
-![Paco front view](https://posts.freesewing.org/uploads/paco_by_karen_showcase2_85c38807f6.jpeg "Paco front view")
+![Paco vooraanzicht](https://posts.freesewing.org/uploads/paco_by_karen_showcase2_85c38807f6.jpeg "Paco vooraanzicht")
 
-Some additional views...
+Wat extra uitzichten...
 
-![Paco rear view](https://posts.freesewing.org/uploads/paco_by_karen_showcase3_ae80f66814.jpeg)
+![Paco achteraanzicht](https://posts.freesewing.org/uploads/paco_by_karen_showcase3_ae80f66814.jpeg)
 
-![Paco side view](https://posts.freesewing.org/uploads/paco_by_karen_showcase4_3a7cb22fff.jpeg)
+![Zijaanzicht Paco](https://posts.freesewing.org/uploads/paco_by_karen_showcase4_3a7cb22fff.jpeg)
