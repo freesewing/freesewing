@@ -5,7 +5,8 @@ date: "2017-08-14"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/468efcd7ea0faf06b74fa10c0a092f21d374c7e8-1080x1142.jpg"
 intro: "Petros écrit (via Facebook messenger) :"
 title: "Bermudas rouges par Petros"
-designs: ["theo"]
+designs:
+  - "theo"
 ---
 
 Petros écrit (via Facebook messenger) :
