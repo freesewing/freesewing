@@ -48,7 +48,6 @@ export const PageWrapper = (props) => {
    */
   const [theme] = useTheme()
   const [currentTheme, setCurrentTheme] = useState()
-  const [navupdates, setNavupdates] = useState(0)
   useEffect(() => setCurrentTheme(theme), [currentTheme, theme])
 
   /*
@@ -60,8 +59,7 @@ export const PageWrapper = (props) => {
       locale,
       path,
     })
-    setNavupdates((curState) => curState + 1)
-  }, [path, pageTitle, locale, setNavupdates, setNavigation])
+  }, [path, pageTitle, locale, setNavigation])
 
   /*
    * Hotkeys (keyboard actions)

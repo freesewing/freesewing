@@ -5,7 +5,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Hooks
 import { useState, useEffect } from 'react'
 // Components
-import Head from 'next/head'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { components } from 'shared/components/mdx/index.mjs'
@@ -40,9 +39,10 @@ export const Loading = () => (
   <Spinner className="w-24 h-24 color-primary animate-spin m-auto mt-8" />
 )
 
-export const Page = ({ page, frontmatter, slug, locale, MDX }) => (
+export const Page = ({ page, frontmatter, locale, MDX }) => (
   <PageWrapper
     {...page}
+    locale={locale}
     title={frontmatter.title}
     layout={(props) => <DocsLayout {...props} {...{ slug: page.path.join('/'), frontmatter }} />}
   >
