@@ -1,8 +1,8 @@
 ---
-title: "Back vent length"
+title: "Longitud de la abertura trasera"
 ---
 
-This controls the length of the back vent as a percentage of the skirt length.
+Controla la longitud de la válvula trasera como un porcentaje de la longitud de la cabina.
 
 ## Efecto de esta opción en el patrón
 
