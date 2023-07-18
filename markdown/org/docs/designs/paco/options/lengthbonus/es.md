@@ -2,14 +2,14 @@
 title: "Bonus de longitud"
 ---
 
-Controla la longitud de los pantalones enteros, lo que significa esencialmente la longitud de las piernas.
+Controls the length of the entire trousers, which essentially means the length of the legs.
 
 <Note>
 
-Establecer esto a cero hará que los pantalones tengan la misma longitud que la medición [cintura a piso](/docs/measurements/waisttofloor).
+Setting this to zero will make the trousers the same length as the [waist to floor](/docs/measurements/waisttofloor) measurement.
 
-Esto no significa que los pantalones golpeen el suelo, ya que debido a las curvas del cuerpo y a la forma en que el tejido se tapa,
-los pantalones tendrán que ser más largos que esto para golpear realmente el suelo.
+This does not mean that the trousers will hit the floor, since due to the curves of the body and the way the fabric drapes,
+the trousers will need to be longer than this to actually hit the floor.
 
 </Note>
 
