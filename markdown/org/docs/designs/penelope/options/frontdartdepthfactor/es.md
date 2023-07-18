@@ -2,7 +2,7 @@
 title: "Factor de la pinza delantera"
 ---
 
-How far down does the front dart go from the waistband. This is a factor of the natural waist To seat measurement.
+Que tan abajo va el dardo delantero de la cintura. Este es un factor de la cintura natural Para medir el asiento.
 
 ## Efecto de esta opción en el patrón
 
