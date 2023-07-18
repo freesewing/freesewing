@@ -1,5 +1,5 @@
 ---
-title: "Noble, patrón base de torso"
+title: "Noble body block"
 ---
 
 <PatternDocs pattern='noble' />
