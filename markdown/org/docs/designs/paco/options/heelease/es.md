@@ -2,9 +2,9 @@
 title: "Heel ease"
 ---
 
-Esto controla la cantidad de facilidad en su lugar, o talón.
+This controls the amount of ease at the instep, or heel.
 
-Aumenta esto para que sea más fácil entrar y salir de tus pantalones.
+Increase this to make it easier to get in and out of your pants.
 
 ## Efecto de esta opción en el patrón
 
