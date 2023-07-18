@@ -4,12 +4,27 @@ import {
   ns as sanityNs,
 } from 'site/components/sanity/page-wrapper.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { sanityLoader, sanitySiteImage } from 'site/components/sanity/utils.mjs'
+import { useDynamicMdx } from 'shared/hooks/use-dynamic-mdx.mjs'
+import { useCallback } from 'react'
 
 const namespaces = [...sanityNs]
 
-const BlogPostPage = (props) => {
-  return <SanityPageWrapper {...props} namespaces={namespaces} />
+const BlogPostPage = ({ slug, page, locale }) => {
+  const loader = useCallback(() => import(`orgmarkdown/blog/${slug}/${locale}.md`), [slug, locale])
+
+  const { frontmatter, MDX } = useDynamicMdx(loader)
+  if (!MDX) return null
+  return (
+    <SanityPageWrapper
+      {...{
+        frontmatter,
+        MDX,
+        namespaces,
+        page,
+        slug,
+      }}
+    />
+  )
 }
 
 /*
@@ -24,32 +39,14 @@ const BlogPostPage = (props) => {
  */
 export async function getStaticProps({ params, locale }) {
   const { slug } = params
-  const post = await sanityLoader({ type: 'blog', language: locale, slug })
-    .then((data) => data[0])
-    .catch((err) => console.log(err))
 
   return {
     props: {
-      post: {
-        slug,
-        body: post.body,
-        title: post.title,
-        date: post.date,
-        caption: post.caption,
-        image: sanitySiteImage(post.image),
-      },
-      // FIXME load the author separately
-      author: {
-        displayname: post.author,
-        // slug: post.author.slug,
-        // about: post.author.about,
-        // image: strapiImage(post.author.picture, ['small']),
-        // about: post.author.about,
-      },
+      slug,
       ...(await serverSideTranslations(locale, namespaces)),
+      locale,
       page: {
         locale,
-        title: post.title,
         path: ['blog', slug],
       },
     },

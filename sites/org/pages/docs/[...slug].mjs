@@ -3,13 +3,15 @@ import { mdxPaths } from 'site/prebuild/mdx-paths.en.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Hooks
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
+import { useDynamicMdx } from 'shared/hooks/use-dynamic-mdx.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { Spinner } from 'shared/components/spinner.mjs'
+import { Loading } from 'shared/components/spinner.mjs'
 import { components } from 'shared/components/mdx/index.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { DocsLayout, ns as layoutNs } from 'site/components/layouts/docs.mjs'
+import { loaders } from 'shared/components/dynamic-docs/org.mjs'
 
 const ns = [...pageNs, layoutNs]
 /*
@@ -34,12 +36,7 @@ const ns = [...pageNs, layoutNs]
  * joost
  *
  */
-
-export const Loading = () => (
-  <Spinner className="w-24 h-24 color-primary animate-spin m-auto mt-8" />
-)
-
-export const Page = ({ page, frontmatter, locale, MDX }) => (
+export const Page = ({ page, locale, frontmatter, MDX, slug }) => (
   <PageWrapper
     {...page}
     locale={locale}
@@ -50,112 +47,12 @@ export const Page = ({ page, frontmatter, locale, MDX }) => (
   </PageWrapper>
 )
 
-const EnDocsPage = ({ page, slug }) => {
+const DocsPage = ({ page, locale, slug }) => {
+  const loader = useCallback(() => loaders[locale](slug), [locale, slug])
   // State
-  const [frontmatter, setFrontmatter] = useState({ title: 'FreeSewing.org' })
-  const [MDX, setMDX] = useState(<Loading />)
+  const { frontmatter, MDX } = useDynamicMdx(loader)
 
-  /* Load MDX dynamically */
-  useEffect(() => {
-    const loadMDX = async () => {
-      import(`orgmarkdown/docs/${slug}/en.md`).then((mod) => {
-        setFrontmatter(mod.frontmatter)
-        const Component = mod.default
-        setMDX(<Component components={components('org')} />)
-      })
-    }
-    loadMDX()
-  }, [slug])
-
-  return <Page {...{ page, slug, frontmatter, MDX }} locale="en" />
-}
-
-const FrDocsPage = ({ page, slug }) => {
-  // State
-  const [frontmatter, setFrontmatter] = useState({ title: 'FreeSewing.org' })
-  const [MDX, setMDX] = useState(<Loading />)
-
-  /* Load MDX dynamically */
-  useEffect(() => {
-    const loadMDX = async () => {
-      import(`orgmarkdown/docs/${slug}/fr.md`).then((mod) => {
-        setFrontmatter(mod.frontmatter)
-        const Component = mod.default
-        setMDX(<Component components={components('org')} />)
-      })
-    }
-    loadMDX()
-  }, [slug])
-
-  return <Page {...{ page, slug, frontmatter, MDX }} locale="fr" />
-}
-
-const EsDocsPage = ({ page, slug }) => {
-  // State
-  const [frontmatter, setFrontmatter] = useState({ title: 'FreeSewing.org' })
-  const [MDX, setMDX] = useState(<Loading />)
-
-  /* Load MDX dynamically */
-  useEffect(() => {
-    const loadMDX = async () => {
-      import(`orgmarkdown/docs/${slug}/es.md`).then((mod) => {
-        setFrontmatter(mod.frontmatter)
-        const Component = mod.default
-        setMDX(<Component components={components('org')} />)
-      })
-    }
-    loadMDX()
-  }, [slug])
-
-  return <Page {...{ page, slug, frontmatter, MDX }} locale="es" />
-}
-
-const DeDocsPage = ({ page, slug }) => {
-  // State
-  const [frontmatter, setFrontmatter] = useState({ title: 'FreeSewing.org' })
-  const [MDX, setMDX] = useState(<Loading />)
-
-  /* Load MDX dynamically */
-  useEffect(() => {
-    const loadMDX = async () => {
-      import(`orgmarkdown/docs/${slug}/de.md`).then((mod) => {
-        setFrontmatter(mod.frontmatter)
-        const Component = mod.default
-        setMDX(<Component components={components('org')} />)
-      })
-    }
-    loadMDX()
-  }, [slug])
-
-  return <Page {...{ page, slug, frontmatter, MDX }} locale="de" />
-}
-
-const NlDocsPage = ({ page, slug }) => {
-  // State
-  const [frontmatter, setFrontmatter] = useState({ title: 'FreeSewing.org' })
-  const [MDX, setMDX] = useState(<Loading />)
-
-  /* Load MDX dynamically */
-  useEffect(() => {
-    const loadMDX = async () => {
-      import(`orgmarkdown/docs/${slug}/nl.md`).then((mod) => {
-        setFrontmatter(mod.frontmatter)
-        const Component = mod.default
-        setMDX(<Component components={components('org')} />)
-      })
-    }
-    loadMDX()
-  }, [slug])
-
-  return <Page {...{ page, slug, frontmatter, MDX }} locale="nl" />
-}
-
-const DocsPage = (props) => {
-  if (props.locale === 'en') return <EnDocsPage {...props} />
-  if (props.locale === 'fr') return <FrDocsPage {...props} />
-  if (props.locale === 'es') return <EsDocsPage {...props} />
-  if (props.locale === 'de') return <DeDocsPage {...props} />
-  if (props.locale === 'nl') return <NlDocsPage {...props} />
+  return <Page {...{ page, slug, frontmatter, MDX, locale }} />
 }
 
 export default DocsPage
