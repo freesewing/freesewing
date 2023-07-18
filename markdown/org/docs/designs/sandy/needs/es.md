@@ -6,7 +6,7 @@ To make Sandy, you will need the following:
 
 - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
 - About 2 - 6 metres (2.2 - 6.6 yards) of a suitable main fabric ([see Sandy Fabric options](/docs/patterns/sandy/fabric))
-- Some interfacing for the waistband
+- Interfaz para la cintura
 - (Optional) Facing for the hem.
 - Some sort of closure for the waistband (if not seamless)
 - (Optional) About 2 - 6 metres (2.2 - 6.6 yards) of suitable lining fabric ([see Sandy Fabric options](/docs/patterns/sandy/fabric))
@@ -42,6 +42,6 @@ To add flare/keep the hems shape you may wish to add a facing to the bottom of t
 
 If not making an elasticated Sandy you will need some type of closure. This can be just a zip that is inserted in to the waistband and seam or it can be buttons, dress hooks, or snaps with an overlapping waistband and an openining, placket or zipper at the top of the seam.
 
-##### Elastic
+##### Elástico
 
 Elastic is needed if you intend to make a seamless or a closure free Sandy. Width-wise it will need to be able to fit inside the waistband, length-wise it will need to be able to fit around your waist.
