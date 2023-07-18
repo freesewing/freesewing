@@ -46,4 +46,4 @@ use a piece of tape as binding and tie, sewing it down to the top and leaving th
 
 ## Paso 3: ¡Disfrútalo!
 
-¡Eso es todo! Todo listo! Now go stuff your new pockets to the brim!
+That's it! You're all done! Now go stuff your new pockets to the brim!
