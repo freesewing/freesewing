@@ -1,10 +1,10 @@
 ---
-title: "Holgura de cintura"
+title: "Waist ease"
 ---
 
 ***
 
-La opción de facilidad de cintura **** controla la cantidad de facilidad en la cintura.
+The **waist ease** option controls the amount of ease at your waist.
 
 ## Efecto de esta opción en el patrón
 
