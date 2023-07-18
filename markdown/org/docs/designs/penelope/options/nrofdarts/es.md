@@ -2,7 +2,7 @@
 title: "Número de pinzas"
 ---
 
-El número de dardos utilizados en el patrón. El máximo es 2, pero esta opción puede ser reducida por el patrón si los cálculos crean dardos que son demasiado pequeños.
+The number of darts used in the pattern. The maximum is 2, but this option can be reduced by the pattern if the calculations create darts that are too small.
 
 ## Efecto de esta opción en el patrón
 
