@@ -4,7 +4,7 @@ title: "Anchura elástica Ancla/Hem"
 
 If you're using an elasticated hem at the ankle, use this to set the width of the elastic you'll use.
 
-En otras palabras, esto controlará la altura del cerdo.
+In other words, this will control the height of the cuff.
 
 ## Efecto de esta opción en el patrón
 
