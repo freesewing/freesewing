@@ -1,10 +1,10 @@
 ---
-title: "Forma de la cinturilla"
+title: "Waistband shape"
 ---
 
-![Forma de la cinturilla](waistbandshape.svg)
+![Waistband shape](waistbandshape.svg)
 
-La forma de la cintura. Straight hace las cosas más fáciles, pero una cintura redondeada se adapta a tu cuerpo si tienes una diferencia justa entre las circunstancias de la cintura y la cadera.
+The shape of the waistband. Straight makes things easier, but a rounded waistband adapts to your body if you have a fair difference between waist and hips circumferences.
 
 ## Efecto de esta opción en el patrón
 
