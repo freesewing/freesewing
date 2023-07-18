@@ -1,11 +1,11 @@
 ---
-title: "Corte trasero del cuello"
+title: "Back neck cutout"
 ---
 
 ***
 
-La opción de **recortar el cuello trasero** controla hasta qué punto la abertura del cuello es escopeada en la espalda.
+The **back neck cutout** option controls how far the neck opening is scooped out at the back.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](noble_backneckcutout_sample.svg "Efecto de esta opción en el patrón")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_backneckcutout_sample.svg "Effect of this option on the pattern")
