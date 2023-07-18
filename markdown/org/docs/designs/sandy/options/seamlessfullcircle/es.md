@@ -1,10 +1,10 @@
 ---
-title: "Círculo completo sin costura"
+title: "Seamless full circle"
 ---
 
-![Círculo completo sin costura](seamlessfullcircle.svg)
+![Seamless full circle](seamlessfullcircle.svg)
 
-Selecciona "Sí" para un círculo sin costuras, que se corta en un doble pliegue. Como no tiene aberturas, necesitarás una cintura elástica.
+Select 'yes' for a seamless circle, which is cut on a double fold. Since it has no openings, you'll need an elastic waistband.
 
 <Note>
 
