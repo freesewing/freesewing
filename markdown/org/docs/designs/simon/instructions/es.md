@@ -515,13 +515,13 @@ Cuando esté listo, presione la costura plana desde el lado bueno para que se en
 
 Coloque su camisa con los lados buenos juntos, y coser el lado y manga costuras para cerrar la camiseta.
 
-> En la manga y en los lados delanteros hay una franquicia extra de costura que permite la creación de la costura llana. As such, be careful to not align the fabric edge, but align the seam so that the extra seam allowance sits out 1cm.
+> En la manga y en los lados delanteros hay una franquicia extra de costura que permite la creación de la costura llana. Como tal, tenga cuidado de no alinear el borde del tejido, pero alinear la costura para que la costura adicional se sienta hacia fuera 1cm.
 
-### Step 17: Flat-fell the side/sleeve seams
+### Paso 17: La costura lateral o manga
 
 #### Presione el permiso de costura a un lado
 
-![Press the seam allowance to one side](15a.png)
+![Presione la costura a un lado](15a.png)
 
 Vamos a presionar a una de las partes para que se le conceda la costura. Para ello, identifique la franquicia de costura que es más amplia (para la costura plana cortada).
 
@@ -545,114 +545,114 @@ Ahora, desde el lado malo de la tela, coser la costura de abajo justo en el bord
 
 Important here is to keep an even distance from the seam of your sleeve. Si usted tiene un pie cortante para su máquina de coser, le ayudará con eso. Pero si no, tenga cuidado.
 
-> It is more important to keep an even distance from the sleeve seam than to sew exactly at the edge of the fold. Idealmente, el pliegue se sienta a una distancia uniforme de todos modos, pero si no lo hace, asegúrese de coser paralelo a la costura de manga. Incluso si eso significa que se desvia un poco del borde doblado.
+> Es más importante mantener e incluso alejarse de la costura de manga que coser exactamente al borde del plegado. Idealmente, el pliegue se sienta a una distancia uniforme de todos modos, pero si no lo hace, asegúrese de coser paralelo a la costura de manga. Incluso si eso significa que se desvia un poco del borde doblado.
 
 #### Presione la costura plana
 
 Cuando esté listo, presione la costura plana desde el lado bueno para que se encuentre agradable y plana.
 
-### Step 18: Attach cuffs to sleeves
+### Paso 18: Adjunta los cortes para mangas
 
-#### Pin cuff in place
+#### Fijar corte en su lugar
 
-![Pin cuff in place](18a.png)
+![Fijar corte en su lugar](18a.png)
 
 You need to insert the sleeve between the two layers of your cuff, making sure that the good side of the fabric sits against the side of your cuff that has the interfacing applied to it.
 
-You will need to pin this in place, because depending on how long your sleeve placket is, it might be hard or even impossible to get this to lie flat.
+Necesitarás fijar esto en tu lugar, ya que dependiendo de cuánto dura tu placket de manga puede ser difícil o incluso imposible conseguir que esto se quede plano.
 
-Also note that your sleeve edge will be longer than your cuff (how much longer depends on the sleeve drape). You need to make one or a few folds in your sleeve to accommodate for this.
+También tenga en cuenta que el borde de la manga será más largo que el de la manga (cuánto tiempo más depende de la manga de la batería). Necesitas hacer uno o unos cuantos pliegues en tu manga para acomodar esto.
 
 > Your pattern contains helplines on the sleeve to help you place the folds.
 
-> Take your time to pin everything carefully in place. We are going to edge-stitch this later, so it's important that the front and back of your cuff align nicely.
+> Tómese su tiempo para fijar todo cuidadosamente en su lugar. We are going to edge-stitch this later, so it's important that the front and back of your cuff align nicely.
 
-#### Edge-stitch cuffs to sleeves
+#### Unir filos para mangas
 
-![Edge-stitch cuffs to sleeves](18b.png)
+![Unir filos para mangas](18b.png)
 
-Once everything is pinned in place, edge stitch along the edge of your cuff to attach it to your sleeve.
+Una vez que todo esté fijado en su lugar, el borde se tira a lo largo del borde de tu taza para sujetarlo a la manga.
 
 It's important to catch both the outer and inner layer of your cuff on the edge.
 
-> Make sure to edge-stitch from the outer layer side (the good side of your sleeve) and keep it parallel with your cuff edge.
+> Asegúrate de enganchar desde el lado de la capa exterior (el lado bueno de la manga) y mantenerlo paralelo con el borde de la manga.
 
-When you're done, give your cuffs a good press.
+Cuando hayas terminado, dale una buena prensa.
 
-#### Top-stitch the cuffs
+#### Unir las vajillas
 
-![Top-stitch the cuffs](18c.png)
+![Unir las vajillas](18c.png)
 
-> Make sure to press your cuffs before you do this.
+> Asegúrate de pulsar tus tazas antes de hacer esto.
 
-Top-stitch around your cuff at a distance from the edge that is a bit less than your seam allowance. Go all the way around your cuff.
+Top-stitch around your cuff at a distance from the edge that is a bit less than your seam allowance. Vaya todo el camino alrededor de su café.
 
-### Step 19: Attach the collar
+### Paso 19: Adjuntar el collar
 
-#### Baste collar in place
+#### Baste el cuello en su lugar
 
-![Baste collar in place](19a.png)
+![Baste el cuello en su lugar](19a.png)
 
-This is an important seam, so we are going to baste this in place to make sure it sits exactly right before we sew it.
+Se trata de una costura importante, así que vamos a aplastar esto en su lugar para asegurarnos de que se sienta exactamente antes de coser.
 
-Start at the center back, and place the seam allowance of your back part between your two collar stands. Work your way around one side, and then do the other.
+Comience en el centro de atrás y coloque la costura de su parte trasera entre sus dos paredes. Trabaja tu camino por un lado y luego haz el otro.
 
-Make sure to respect the standard seam allowance and - important - avoid any wrinkles.
+Asegúrese de respetar la franquicia estándar de costura y - importante - evitar cualquier envoltorio.
 
-> While your collar stand is relatively straight, we are going to sew it to what is essentially a hole in your shirt.
+> Mientras que su soporte de cuello está relativamente recto, vamos a coser a lo que es esencialmente un agujero en su camisa.
 > 
-> That's a bit tricky, so take extra care at those parts that are most curved: where the back joins the fronts.
+> Eso es un poco complicado, así que ten mucho cuidado en aquellas partes que están más curvadas: donde la parte trasera se une a los frentes.
 
-#### Edge-stitch collar in place
+#### Collar el borde en su lugar
 
-![Edge-stitch collar in place](19b.png) ![Edge-stitch collar in place](19c.png)
+![Collar el borde en su lugar](19b.png) ![Collar el borde en su lugar](19c.png)
 
-When you're happy with how you've basted your collar in place, it's time to sew that thing down.
+Cuando estés contento con cómo has echado tu cuello en su lugar, es hora de coser esa cosa.
 
 We're going to start at the center-back and sew all the way around the collar stand.
 
-#### Sew along the collar edge
+#### Divertirse a lo largo del borde del cuello
 
-![Sew along the collar edge](19d.png)
+![Divertirse a lo largo del borde del cuello](19d.png)
 
-To give more body to your collar, and firmly secure it in place we're going to sew along the top edge of the collar stand.
+Para darle más cuerpo al cuello y asegurarlo firmemente en su lugar vamos a coser a lo largo del borde superior del soporte de cuello.
 
-Sew about half the seam allowance from your earlier edge-stitching. Make sure to stop a few cm before the end of the collar.
+Difunde aproximadamente la mitad de la franquicia de costura de su borde anterior. Asegúrese de parar unos pocos cm antes del final del cuello.
 
-> You need to stop a few cm before the end of the collar (note: the end of the collar, not the end of the collar stand) so that this seam is entirely covered when the collar is folded down.
+> Tienes que parar unos pocos cm antes del final del collar (nota: el final del collar, no el final del soporte de cuello) para que esta costura esté completamente cubierta cuando el cuello se pliegue.
 
-#### Press the collar
+#### Presione el cuello
 
-![Press the collar](19e.png)
+![Presione el cuello](19e.png)
 
-Now that your collar is attached, give it a good press.
+Ahora que tu cuello está adjunto, dale una buena prensa.
 
-### Step 20: Hem your shirt
+### Paso 20: Maneja tu camisa
 
-![Fold over and press](20a.png) ![FOld over again, and press again](20b.png) ![Sew the hem](20c.png)
+![Plegar y pulsar](20a.png) ![Antiguo de nuevo, y pulsa de nuevo](20b.png) ![Difunde el sombrero](20c.png)
 
-Time to finish the hem (that's the part you tuck in your trousers).
+Es hora de terminar el hem (esa es la parte que pegaste en tus pantalones).
 
-Fold up half of the hem allowance and press down. Then, fold up again and press again.
+Doblar la mitad de la franquicia y presionar. Luego, vuelva a doblar y presione de nuevo.
 
 Now, sew along the upper edge to finish the hem.
 
-### Step 21: Create buttonholes
+### Paso 21: Crear botones
 
-If you haven't done so initially, mark all the places you should have buttonholes.
+Si no lo ha hecho inicialmente, marque todos los lugares que debería tener agujeros de botón.
 
-They sit along the front closure and at your cuffs.
+Se sientan a lo largo del cierre delantero y en sus tazas.
 
-When you've marked them, make buttonholes there.
+Cuando los hayas marcado, haz agujeros de botones.
 
-### Step 22: Attach buttons
+### Paso 22: Adjuntar botones
 
-Pin your shirt closed to transfer the place of the buttonholes to the button sides.
+Fije su camisa cerrada para transferir el lugar de los agujeros de los botones a los lados del botón.
 
-When you've marked where buttons should go, sew them on.
+Cuando hayas marcado a dónde deben ir los botones, coja los botones.
 
-> Rather than mark the location of the buttons from the pattern, I prefer to transfer the location of the created buttonholes.
+> En lugar de marcar la ubicación de los botones del patrón, prefiero transferir la ubicación de los agujeros de botones creados.
 > 
-> This way, if a buttonhole sits a little bit out of place, the button will simply follow it.
+> De esta manera, si un orificio de botón se sienta un poco fuera de lugar, el botón simplemente lo seguirá.
 
-![That's it, you're done](finished.gif)
+![Eso es así, ya has terminado](finished.gif)
