@@ -114,7 +114,10 @@ function draftBase({
         .curve(points.sideCp1, points.sideCp2, points.armholeCornerScooped)
   }
 
-  paths.saBase = drawSide()
+  paths.saBase = new Path().move(points.sideHem)
+  if (options.straightSides) paths.saBase.line(points.armholeCornerScooped)
+  else paths.saBase.curve(points.sideCp1, points.sideCp2, points.armholeCornerScooped)
+  paths.saBase
     .curve(points.armholeScoopCp1, points.armholeScoopCp2, points.armholeScoopEnd)
     .line(points.neckShoulderCorner)
     .curve(points.neckCP1, points.neckCP2, points.cfNeck)
