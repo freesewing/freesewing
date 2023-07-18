@@ -1,10 +1,10 @@
 ---
-title: "Posición de la cinturilla"
+title: "Waistband position"
 ---
 
-![Posición de la cinturilla](waistbandposition.svg)
+![Waistband position](waistbandposition.svg)
 
-Donde se sienta la cintura. 0% lo hace sentarse en la cintura natural, 100% lo hace sentarse en las caderas.
+Where the waistband sits. 0% makes it sit on the natural waist, 100% makes it sit on the hips.
 
 ## Efecto de esta opción en el patrón
 
