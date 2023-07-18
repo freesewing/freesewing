@@ -1,10 +1,10 @@
 ---
-title: "Superposición de la cinturilla"
+title: "Waistband overlap"
 ---
 
-![Superposición de la cinturilla](waistbandoverlap.svg)
+![Waistband overlap](waistbandoverlap.svg)
 
-La longitud de la superposición entre los extremos de la cintura, para permitir un botón. 0 significa que no hay solapamiento, por ejemplo para colocar un zipper que vaya hasta la parte superior de la cintura.
+The length of the overlap between the ends of the waistband, to allow a button. 0 means no overlap, for example to place a zipper that goes all the way to the top of the waistband.
 
 ## Efecto de esta opción en el patrón
 
