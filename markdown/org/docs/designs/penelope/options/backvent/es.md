@@ -1,8 +1,8 @@
 ---
-title: "Abertura trasera"
+title: "Back vent"
 ---
 
-Esto añade un respiro a la parte posterior de la sombra.
+This adds a vent to the back of the skirt.
 
 ## Efecto de esta opción en el patrón
 
