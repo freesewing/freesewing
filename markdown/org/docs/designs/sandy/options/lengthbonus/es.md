@@ -4,7 +4,7 @@ title: "Bonus de longitud"
 
 ![Bonus de longitud](lengthbonus.svg)
 
-La longitud de la cabeza.
+The length of the skirt.
 
 ## Efecto de esta opción en el patrón
 
