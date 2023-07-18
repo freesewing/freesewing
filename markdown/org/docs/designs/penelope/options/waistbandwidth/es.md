@@ -2,7 +2,7 @@
 title: "Anchura de la cinturilla"
 ---
 
-La anchura de la cinturilla.
+The width of the waist band.
 
 ## Efecto de esta opción en el patrón
 
