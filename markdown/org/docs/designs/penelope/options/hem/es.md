@@ -2,7 +2,7 @@
 title: "Anchura del dobladillo"
 ---
 
-The size of the hem.
+El tamaño del sombrero.
 
 ## Efecto de esta opción en el patrón
 
