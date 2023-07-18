@@ -2,7 +2,7 @@
 title: "Holgura de asiento"
 ---
 
-Controls the amount of ease at your seat/bum.
+Controla la cantidad de facilidad en tu asiento/bum.
 
 ## Efecto de esta opción en el patrón
 
