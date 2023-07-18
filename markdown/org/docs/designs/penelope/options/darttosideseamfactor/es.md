@@ -2,7 +2,7 @@
 title: "Factor pinza a costura lateral"
 ---
 
-Porcentaje de cuánta de la reducción de cadera a cintura se toma de las pinzas con respecto a las costuras laterales.
+Percentage of how much of the hip to waist reduction has to be taken in by the darts versus the side seam.
 
 ## Efecto de esta opción en el patrón
 
