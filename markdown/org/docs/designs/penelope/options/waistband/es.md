@@ -2,7 +2,7 @@
 title: "Cinturilla"
 ---
 
-Adds a waistband to the pattern.
+Añade una cintura al patrón.
 
 ## Efecto de esta opción en el patrón
 
