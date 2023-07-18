@@ -2,7 +2,7 @@
 title: "Ubicación de la cremallera"
 ---
 
-Controla la ubicación del zipper. Costura de espalda, o costura lateral
+Controls the location of the zipper. Either at the back seam, or at the side seam
 
 ## Efecto de esta opción en el patrón
 
