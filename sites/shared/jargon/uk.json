@@ -9,11 +9,11 @@
   },
   "cutting": {
     "term": "вирізання",
-    "description": "Дивіться <a href='/docs/sewing/cutting/'>Вирізання</a> у <a href='/docs/sewing'> Документація до шиття</a>"
+    "description": "Дивіться <a href='/docs/sewing/cutting/'>Крій</a> у <a href='/docs/sewing'> Документації до шиття</a>"
   },
   "darts": {
     "term": "виточки",
-    "description": "Дивіться <a href='/docs/sewing/darts/'>Виточки</a> у<a href='/docs/sewing'>Документація до шиття</a>"
+    "description": "Дивіться <a href='/docs/sewing/darts/'>Виточки</a> у <a href='/docs/sewing'>Документації до шиття</a>."
   },
   "doubleWeltPockets": {
     "term": "кишеня з подвійною листочкою",
@@ -81,7 +81,7 @@
   },
   "trimming": {
     "term": "підрізання припусків на шов",
-    "description": "Дивіться <a href='/docs/sewing/trimming/'>Підрізання припусків на шов</a> у <a href='/docs/sewing'>Документація до шиття</a>"
+    "description": "Дивіться <a href='/docs/sewing/trimming/'>Підрізання припусків на шов</a> у <a href='/docs/sewing'>Документації до шиття</a>"
   },
   "twinNeedle": {
     "term": "подвійна голка",
