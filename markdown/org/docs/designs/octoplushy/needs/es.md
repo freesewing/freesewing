@@ -11,7 +11,7 @@ To make Octoplushy, you will need the following:
 - Small piece of black fabric for the pupils of the Squid and Octopus versions
 - Small piece of white fabric for the eyes of the Squid and Octopus versions
 - (Optional) Topstitch or Embroidery thread for the mouth of the Octoplushy version
-- Stuffing
+- Relleno
 
 <Note>
 
