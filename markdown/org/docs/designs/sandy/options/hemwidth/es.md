@@ -4,7 +4,7 @@ title: "Hem width"
 
 ![Hem width](hemwidth.svg)
 
-La anchura del sombrero.
+The width of the hem.
 
 ## Efecto de esta opción en el patrón
 
