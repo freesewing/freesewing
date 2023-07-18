@@ -2,14 +2,14 @@
 title: "Saldo de pierna"
 ---
 
-Controla la proporción entre la parte frontal y trasera de las piernas.
+Controls the proportion between the front and back part of the legs.
 
-La parte trasera de las patas de los pantalones son siempre más anchas que la parte delantera. Esto controla en qué medida.
+The back of the trouser legs are always wider than the front. This controls by how much.
 
 <Note>
 
-Incrementar esto hará que el panel de la pierna delantera sea más estrecho.  
-Esto hace que el portador luzca más despellejado.
+Increasing this will make the front leg panel narrower.  
+This makes the wearer look more skinny.
 
 This trick is often used in womenswear jeans
 (now you know why you can't find womenswear jeans with functional front pockets).
