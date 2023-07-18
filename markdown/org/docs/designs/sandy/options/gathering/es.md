@@ -1,10 +1,10 @@
 ---
-title: "Gathering"
+title: "Fruncido"
 ---
 
-![Gathering](gathering.svg)
+![Fruncido](gathering.svg)
 
-The percent by which the top of the skirt is longer than the bottom of the waistband. Give a value higher than 0 to pleat the skirt.
+El porcentaje por el que la parte superior de la falda es más largo que la parte inferior de la cinturilla. Dar un valor superior a 0 para plegar la cabeza.
 
 ## Efecto de esta opción en el patrón
 
