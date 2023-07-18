@@ -1,11 +1,11 @@
 ---
-title: "Curvatura del orificio trasero"
+title: "Back armhole curvature"
 ---
 
 ***
 
-La opción de **curvatura del agujero de armadura trasera** controla cuánto se escucha el agujero en la parte inferior de la espalda.
+The **back armhole curvature** option controls how much the armhole is scooped at out the bottom in the back.
 
-## Efecto de esta opción en el patrón
+## Effect of this option on the pattern
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](noble_backarmholecurvature_sample.svg "Efecto de esta opción en el patrón")
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_backarmholecurvature_sample.svg "Effect of this option on the pattern")
