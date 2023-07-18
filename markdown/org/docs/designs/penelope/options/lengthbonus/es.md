@@ -2,7 +2,7 @@
 title: "Bonus de longitud"
 ---
 
-This controls the length of the skirt. Percentage of the natural waist to knee measurement.
+Controla la longitud de la cabeza. Porcentaje de la cintura natural a medida de rodilla.
 
 ## Efecto de esta opción en el patrón
 
