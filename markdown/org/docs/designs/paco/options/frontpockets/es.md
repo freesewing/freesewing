@@ -2,7 +2,7 @@
 title: "Pockets delanteros"
 ---
 
-Whether to include front pockets (on the side seam) or not.
+Si incluir bolsillos frontales (en la costura lateral) o no.
 
 ## Efecto de esta opción en el patrón
 
