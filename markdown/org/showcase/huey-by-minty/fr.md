@@ -5,7 +5,8 @@ date: "2021-03-06"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1ae81c4f08dd21d7db28538399d818c72ff586a9-810x1083.jpg"
 intro: "Ce fantastique sweat à capuche Huey a été cousu par Minty! Minty a partagé qu'il l'a réalisé avec une machine normale sans surjeteuse."
 title: "Huey par Minty"
-designs: ["huey"]
+designs:
+  - "huey"
 ---
 
 Ce fantastique sweat à capuche Huey a été cousu par Minty! Minty a partagé qu'il l'a réalisé avec une machine normale sans surjeteuse.
