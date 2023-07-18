@@ -2,10 +2,10 @@
 title: "Gota de cromo"
 ---
 
-Controla por cuánto se reduce el crocer.
+Controls by how much the crotch is lowered.
 
-Bajar el cromo hace que sea más informal.  
-Un crotched bajado con señales también puede ser una elección de estilo.
+Lowering the crotch makes for a more casual fit.  
+A signigicantly lowered crotched can also be a style choice.
 
 ## Efecto de esta opción en el patrón
 
