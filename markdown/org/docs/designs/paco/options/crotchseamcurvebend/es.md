@@ -2,7 +2,7 @@
 title: "curva de costura cruda"
 ---
 
-Controla la curvatura de la costura de la costra, que influye en el encaje de su cosecha.
+Controls the curvature of the croth seam, which influences the fit at your crotch.
 
 ## Efecto de esta opción en el patrón
 
