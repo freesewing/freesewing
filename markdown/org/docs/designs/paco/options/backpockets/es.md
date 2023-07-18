@@ -2,7 +2,7 @@
 title: "Paquetes de retroceso"
 ---
 
-Si incluir bolsillos de espalda, sí o no.
+Whether to include back pockets, yes or no.
 
 ## Efecto de esta opción en el patrón
 
