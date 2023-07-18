@@ -2,7 +2,7 @@
 title: "Holgura de asiento"
 ---
 
-Amount of ease around the fullest part of your bum.
+Cantidad de facilidad alrededor de la parte más completa de su búfer.
 
 ## Efecto de esta opción en el patrón
 
