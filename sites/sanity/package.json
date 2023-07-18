@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@sanity/eslint-config-studio": "2.0.4",
-    "eslint": "8.44.0",
+    "eslint": "8.45.0",
     "prettier": "3.0.0",
     "typescript": "5.1.6",
     "@sanity/cli": "3.14.2"
