@@ -1,6 +1,6 @@
-- - -
-title: "Stretch"
-- - -
+---
+title: "Dehnung"
+---
 
 ![Die Stretchoption auf Bruce](./stretch.svg)
 
