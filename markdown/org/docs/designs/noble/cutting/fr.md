@@ -14,9 +14,9 @@ title: "Noble body block: Cutting Instructions"
 
 ### Armhole dart
 
-- Cut **2 Back** part.
+- Couper ** deux parties arrière**.
 
-These cutting instructions are just for the default Noble block. Ajustez votre coupe en conséquence si vous avez apporté des modifications au bloc.
+These cutting instructions are just for the default Noble block. Si vous faites des changements sur le bloc ajustez votre coupe en fonction.
 
 <Tip>
 
