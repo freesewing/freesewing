@@ -1,5 +1,5 @@
-- - -
-title: "Walburga Wappenrock"
-- - -
+---
+title: "Walburga Wapenrok"
+---
 
 <PatternDocs pattern='walburga' />
