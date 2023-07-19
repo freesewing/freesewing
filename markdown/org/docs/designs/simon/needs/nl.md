@@ -1,6 +1,6 @@
-- - -
+---
 title: "Simon shirt: What You Need"
-- - -
+---
 
 Om Simon te maken heb je het volgende nodig:
 
