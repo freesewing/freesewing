@@ -1,6 +1,6 @@
-- - -
-title: "Bust dart length"
-- - -
+---
+title: "Longitud del dart del polvo"
+---
 
 The length of the primary bust dart.
 
