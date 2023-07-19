@@ -1,6 +1,6 @@
-- - -
-title: "Armhole drop"
-- - -
+---
+title: "Armlochabsenkung"
+---
 
 ![Die Armloch-Drop-Option auf Aaron](./armholedrop.svg)
 
