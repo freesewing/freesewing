@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shin swim trunks: What You Need"
-- - -
+---
 
 Pour faire du shin, vous aurez besoin des éléments suivants :
 
