@@ -1,6 +1,6 @@
-- - -
-title: "Bust darts shaping"
-- - -
+---
+title: "Dardos de busto que conforman"
+---
 
 Controls the balance between the primary and secondary bust darts.
 
