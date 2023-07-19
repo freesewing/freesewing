@@ -1,6 +1,6 @@
-- - -
-title: "Collar spread"
-- - -
+---
+title: "Kragen ausgebreitet"
+---
 
 Controls the distance between the points of the collar.
 
@@ -9,4 +9,4 @@ Controls the distance between the points of the collar.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](carlton_collarspread_sample.svg "Effekt dieser Variable auf das Schnittmuster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](carlton_collarspread_sample.svg "Effekt dieser Option auf das Schnittmuster")
