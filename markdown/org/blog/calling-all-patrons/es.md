@@ -55,16 +55,16 @@ But I wanted to be completely transparent about what's going on, so I made the e
 
 > ##### Noblesse oblige
 > 
-> Probablemente asumas que pedimos dinero para mantener los servidores en funcionamiento. But that’s not exactly true.
+> Probablemente asuma que pedimos dinero para mantener los servidores en funcionamiento. But that’s not exactly true.
 > 
 > I don’t know if you’re familiar with the phrase *noblesse oblige* but it essentially means that privilege entails responsibility.
 > 
-> Soy privilegiado y, por lo tanto, tengo responsabilidades. I am very fortunate to have been born in Western Europe, have a good job, and a roof over my head.
+> Estoy privilegiado y, por lo tanto, tengo responsabilidades. I am very fortunate to have been born in Western Europe, have a good job, and a roof over my head.
 > 
-> ¿Me iría bien el dinero? Yes I could.  
+> ¿Puedo utilizar el dinero? Yes I could.  
 > Do I need the money? No I don’t.
 > 
-> ##### El valor de tu apoyo
+> ##### El valor de su apoyo
 > 
 > The main risk to Freesewing is the same as any open source project out there: maintainer burnout.
 > 
@@ -74,9 +74,9 @@ But I wanted to be completely transparent about what's going on, so I made the e
 > 
 > ##### El valor de tu dinero
 > 
-> It is not just about the money. But that doesn’t mean the money is not important. Al contrario.
+> It is not just about the money. But that doesn’t mean the money is not important. Muy al contrario.
 > 
-> Recaudar dinero haciendo algo que me encanta y luego darlo la organizaciones benéficas me permite dormir por la noche.
+> Aumentar el dinero haciendo algo que me encanta y luego pasarlo a la caridad me permite dormir por la noche.
 > 
 > I could volunteer at a soup kitchen, or teach underprivileged children how to sew. But instead I’m working on Freesewing.
 > 
