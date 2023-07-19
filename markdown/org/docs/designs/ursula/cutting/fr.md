@@ -1,6 +1,6 @@
-- - -
+---
 title: "Ursula undies: Cutting Instructions"
-- - -
+---
 
 Ursula se compose d'un front, d'un dos et d'un gusset doublé.
 
