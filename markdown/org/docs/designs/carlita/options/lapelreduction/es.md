@@ -1,6 +1,6 @@
-- - -
-title: "Lapel reduction"
-- - -
+---
+title: "Reducción de la solapa"
+---
 
 Controla cuánto va la punta de la lapel hacia adentro.
 
