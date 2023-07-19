@@ -1,6 +1,6 @@
-- - -
-"Сорочка Сімони": "Сорочка Симона: Інструкція з крою"
-- - -
+---
+title: "Simone shirt: Cutting Instructions"
+---
 
 <Note>
 
