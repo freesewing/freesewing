@@ -1,6 +1,6 @@
-- - -
-titre : "Placement horizontal de la poche arrière"
-- - -
+---
+title: "Placement horizontal de la poche arrière"
+---
 
 Contrôle la position horizontale des poches arrières.
 
@@ -8,4 +8,4 @@ En d’autres termes, plus vers l’extérieur, et plus loin encore. Ou plus ver
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_backpockethorizontalplacement_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_backpockethorizontalplacement_sample.svg "Effet de cette option sur le motif")
