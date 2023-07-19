@@ -5,6 +5,8 @@ date: "2017-09-29"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a4df7c8446671138fe4f6e07eebf32058af31999-1080x1080.jpg"
 intro: "Краватка Trayvon з шовку Liberty від Victoria"
 title: "Краватка Trayvon з шовку Liberty від Victoria"
+designs:
+  - "trayvon"
 ---
 
 
