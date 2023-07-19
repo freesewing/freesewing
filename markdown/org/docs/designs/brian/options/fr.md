@@ -1,6 +1,6 @@
-- - -
-titre : "Bloc corporel de Brian : Options de conception"
-- - -
+---
+title: "Brian body block: Design Options"
+---
 
 <PatternOptions pattern='brian' />
 
