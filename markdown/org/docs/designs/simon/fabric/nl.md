@@ -1,6 +1,6 @@
-- - -
+---
 title: "Simon shirt: Fabric Options"
-- - -
+---
 
 Elke stoffenwinkel die je tijd waard is zou een afdeling hemdstoffen moeten hebben. Je kan binnenwandelen, vragen waar de hemdstoffen zijn, en iets kiezen dat je mooi vindt.
 
