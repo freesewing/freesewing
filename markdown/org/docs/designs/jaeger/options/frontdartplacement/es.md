@@ -1,6 +1,6 @@
-- - -
-title: "Front dart placement"
-- - -
+---
+title: "Colocación de la pinza delantera"
+---
 
 ![Colocación de la pinza delantera](frontdartplacement.svg)
 
