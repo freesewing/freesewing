@@ -1,5 +1,5 @@
-- - -
-"Вальбурґа Ваппенрок: "Вальбурга Ваппенрок: Варіанти дизайну"
-- - -
+---
+title: "Walburga Wappenrock: Design Options"
+---
 
 <PatternOptions pattern='walburga' />
