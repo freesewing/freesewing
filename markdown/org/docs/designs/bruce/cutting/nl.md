@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bruce boxer briefs: Cutting Instructions"
-- - -
+---
 
 Bruce bestaat uit een achterkant, en twee zijden, inzetstukken en voorkanten.
 
