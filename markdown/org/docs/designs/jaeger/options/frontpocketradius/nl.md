@@ -1,6 +1,6 @@
-- - -
-title: "Front pocket radius"
-- - -
+---
+title: "Ronding zak"
+---
 
 De mate waarin de zakken zijn afgerond.
 
