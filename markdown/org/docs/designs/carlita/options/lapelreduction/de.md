@@ -1,6 +1,6 @@
-- - -
-title: "Lapel reduction"
-- - -
+---
+title: "Reversverkleinerung"
+---
 
 Legt fest, wie sehr die Lappenspitze nach innen geht.
 
