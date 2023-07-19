@@ -1,5 +1,5 @@
-- - -
-назва: "Чарлі чінос: Варіанти дизайну"
-- - -
+---
+title: "Charlie chinos: Design Options"
+---
 
 <PatternOptions pattern='charlie' />
