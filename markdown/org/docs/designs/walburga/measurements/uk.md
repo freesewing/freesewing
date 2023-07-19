@@ -1,5 +1,5 @@
-- - -
-"Вальбурґа Ваппенрок: "Вальбурга Ваппенрок: Необхідні виміри"
-- - -
+---
+title: "Walburga Wappenrock: Required Measurements"
+---
 
 <PatternMeasurements pattern='walburga' />
