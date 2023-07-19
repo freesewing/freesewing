@@ -1,5 +1,5 @@
-- - -
-назва: "Корсет Катрін: Необхідні мірки"
-- - -
+---
+title: "Cathrin corset: Required Measurements"
+---
 
 <PatternMeasurements pattern='cathrin' />
