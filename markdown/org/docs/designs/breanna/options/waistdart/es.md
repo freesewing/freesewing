@@ -1,6 +1,6 @@
-- - -
-title: "Waist dart"
-- - -
+---
+title: "Dardo de Waist"
+---
 
 Whether or not to inlude a back waist dart to round the back.
 
