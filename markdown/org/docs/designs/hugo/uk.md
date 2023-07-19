@@ -1,6 +1,6 @@
-- - -
-назва: "Худі Г'юго"
-- - -
+---
+title: "Худі Хьюго"
+---
 
 <YouTube id='PL1gv5yv3DoZOHLjisuD1JcUPTkFy_IGGO' playlist />
 
