@@ -1,6 +1,6 @@
-- - -
+---
 title: "Wahid waistcoat: Sewing Instructions"
-- - -
+---
 
 ### Stap 1: Bevestig tussenvoering
 
