@@ -1,6 +1,6 @@
-- - -
-title: "Bust dart length"
-- - -
+---
+title: "Lengte busteneep"
+---
 
 Controls how close the **bust darts** approach the bust points.
 
