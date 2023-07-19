@@ -1,6 +1,6 @@
-- - -
-title: "Waist ease"
-- - -
+---
+title: "Taillenzugabe"
+---
 
 ![Die Taille Leichtigkeit Option auf Diana](./waistease.svg)
 
