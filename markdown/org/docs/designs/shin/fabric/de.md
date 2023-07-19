@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shin swim trunks: Fabric Options"
-- - -
+---
 
 Swim Stämme sollten aus einem Material mit Dehnung, die geeignet ist, im Wasser zu sein.
 
