@@ -1,6 +1,6 @@
-- - -
-title: "Ribbing stretch"
-- - -
+---
+title: "Extensión de tejido acanalado"
+---
 
 ![Extensión de tejido acanalado](ribbingstretch.svg)
 
