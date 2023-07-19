@@ -1,6 +1,6 @@
-- - -
-title: "Inner pocket depth"
-- - -
+---
+title: "Profundidad del bolsillo interior"
+---
 
 How deep you would like the inner pocket to be.
 
