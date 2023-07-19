@@ -1,6 +1,6 @@
-- - -
+---
 title: "Diana draped top: What You Need"
-- - -
+---
 
 Para hacer Diana, necesitarás lo siguiente:
 
