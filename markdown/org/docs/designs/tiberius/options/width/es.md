@@ -1,6 +1,6 @@
-- - -
-title: "Width"
-- - -
+---
+title: "Anchura"
+---
 
 Controls the width of the garment
 
