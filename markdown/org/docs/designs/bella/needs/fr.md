@@ -1,6 +1,6 @@
-- - -
-titre: "Bloc du corps de Bella : Ce dont tu as besoin"
-- - -
+---
+title: "Bella body block: What You Need"
+---
 
 Pour faire Bella, vous aurez besoin des éléments suivants :
 
