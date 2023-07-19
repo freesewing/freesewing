@@ -1,6 +1,6 @@
-- - -
-title: "Waistband shape"
-- - -
+---
+title: "Taillenbundform"
+---
 
 ![Taillenbundform](waistbandshape.svg)
 
