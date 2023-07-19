@@ -1,4 +1,3 @@
-import { SanityMdxWrapper } from './mdx-wrapper.mjs'
 import { useTranslation } from 'next-i18next'
 
 export const Author = ({ author = '' }) => {

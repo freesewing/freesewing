@@ -1,5 +1,7 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { postInfo, order } from 'site/prebuild/blog-paths.mjs'
+import { getPostIndexPaths, getPostIndexProps } from 'site/components/mdx/posts/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
@@ -7,12 +9,9 @@ import Link from 'next/link'
 import { TimeAgo } from 'shared/components/mdx/meta.mjs'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Pagination } from 'shared/components/navigation/pagination.mjs'
-import { postInfo, order } from 'site/prebuild/blog-paths.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set(['designs', 'sections', ...pageNs])]
-
-export const numPerPage = 12
 
 const textShadow = {
   style: {
@@ -92,42 +91,26 @@ const BlogIndexPage = ({ posts, page, current, total }) => {
 export default BlogIndexPage
 
 export async function getStaticProps({ locale, params }) {
-  const pageNum = parseInt(params.page)
-  const postSlugs = order[locale].slice(numPerPage * (pageNum - 1), numPerPage * pageNum)
-  const posts = postSlugs.map((s) => ({ ...postInfo[locale][s], s }))
-  const numLocPages = Math.ceil(order[locale].length / numPerPage)
+  const props = getPostIndexProps(locale, params, order, postInfo)
 
-  if (pageNum > numLocPages) {
-    return {
-      notFound: true,
-    }
-  }
+  if (props === false) return { notFound: true }
 
   return {
     props: {
       // designs,
-      posts,
-      current: pageNum,
-      total: numLocPages,
+      ...props,
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
         locale,
-        path: ['blog'],
+        path: ['showcase'],
       },
     },
   }
 }
 
 export const getStaticPaths = async () => {
-  const paths = []
-  for (const language in order) {
-    const lPath = language === 'en' ? '' : `/${language}`
-    paths.push(`${lPath}/blog/page/1`)
-    paths.push(`${lPath}/blog/page/2`)
-  }
-
   return {
-    paths,
+    paths: getPostIndexPaths(order, 'blog'),
     fallback: 'blocking',
   }
 }

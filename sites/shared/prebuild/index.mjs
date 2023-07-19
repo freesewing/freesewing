@@ -18,9 +18,11 @@ const run = async () => {
   const SITE = process.env.SITE || 'lab'
   await prebuildDesigns()
   if (['org', 'dev'].includes(SITE)) {
-    if (!FAST) await prebuildGitData(SITE)
+    if (!FAST) {
+      await prebuildGitData(SITE)
+      await prebuildCrowdin()
+    }
     const docPages = await prebuildDocs(SITE)
-    await prebuildCrowdin()
     const postPages = await prebuildPosts(SITE)
     prebuildNavigation(docPages, postPages, SITE)
     if (!FAST && process.env.GENERATE_OG_IMAGES) {

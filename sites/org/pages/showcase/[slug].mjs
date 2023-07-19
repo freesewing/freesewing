@@ -1,13 +1,13 @@
-import {
-  SanityPageWrapper,
-  getSanityStaticPaths,
-  ns as sanityNs,
-} from 'site/components/sanity/page-wrapper.mjs'
+import { order } from 'site/prebuild/showcase-paths.mjs'
+import { getPostSlugPaths } from 'site/components/mdx/posts/utils.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useDynamicMdx } from 'shared/hooks/use-dynamic-mdx.mjs'
 import { useCallback } from 'react'
+import { PostLayout, ns as layoutNs } from 'site/components/layouts/post.mjs'
+import { PostArticle, ns as postNs } from 'site/components/mdx/posts/article.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 
-const namespaces = [...sanityNs]
+const namespaces = [...layoutNs, ...postNs, ...pageNs]
 
 const ShowcasePage = ({ locale, slug, page }) => {
   const loader = useCallback(
@@ -18,15 +18,21 @@ const ShowcasePage = ({ locale, slug, page }) => {
   const { frontmatter, MDX } = useDynamicMdx(loader)
   if (!MDX) return null
   return (
-    <SanityPageWrapper
-      {...{
-        frontmatter,
-        MDX,
-        namespaces,
-        page,
-        slug,
-      }}
-    />
+    <PageWrapper
+      {...page}
+      locale={locale}
+      title={frontmatter.title}
+      layout={(props) => <PostLayout {...props} {...{ slug: page.path.join('/'), frontmatter }} />}
+    >
+      <PostArticle
+        {...{
+          slug,
+          frontmatter,
+          MDX,
+          page,
+        }}
+      />
+    </PageWrapper>
   )
 }
 
@@ -56,6 +62,11 @@ export async function getStaticProps({ params, locale }) {
   }
 }
 
-export const getStaticPaths = getSanityStaticPaths('showcase')
+export const getStaticPaths = async () => {
+  return {
+    paths: getPostSlugPaths(order, 'showcase'),
+    fallback: 'blocking',
+  }
+}
 
 export default ShowcasePage
