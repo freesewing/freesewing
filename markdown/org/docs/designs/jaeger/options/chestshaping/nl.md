@@ -1,6 +1,6 @@
-- - -
-title: "Chest shaping"
-- - -
+---
+title: "Borstvorming"
+---
 
 ![Borstvorming](chestshaping.svg)
 
