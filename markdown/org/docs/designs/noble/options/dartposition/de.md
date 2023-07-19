@@ -1,9 +1,9 @@
 ---
-title: Dart position
+title: Position Abnäher
 ---
 
-Controls whether to split at the shoulder or armhole
+Steuert, ob an der Schulter oder am Armloch geteilt werden soll
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_dartposition_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](noble_dartposition_sample.svg "Effekt dieser Option auf das Schnittmuster")
