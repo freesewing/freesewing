@@ -1,6 +1,6 @@
-- - -
-title: "Waist ease"
-- - -
+---
+title: "Holgura de cintura"
+---
 
 ![La opción de holgura de cintura en Diana](./waistease.svg)
 
