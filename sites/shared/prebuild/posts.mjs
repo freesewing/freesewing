@@ -37,7 +37,7 @@ export const prebuildPosts = async (site) => {
           sorted,
           null,
           2
-        )}\nexport const postInfo = ${JSON.stringify(resultPages, 2, null)}`
+        )}\nexport const postInfo = ${JSON.stringify(resultPages, null, 2)}`
       )
     )
   }
