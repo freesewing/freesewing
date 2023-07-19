@@ -5,6 +5,8 @@ date: "2017-11-20"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8f0b0ca919900145250b0af08401775198623eda-1001x1500.jpg"
 intro: "Толстовка для бійців: Hugo на блискавці"
 title: "Толстовка для бійців: Hugo на блискавці"
+designs:
+  - "hugo"
 ---
 
 ![Інший погляд](https://posts.freesewing.org/uploads/fighter_hoodie_1_69359b6e7d.jpg "Інший погляд")
