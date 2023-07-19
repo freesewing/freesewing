@@ -1,6 +1,6 @@
-- - -
+---
 title: "Paco pants: What You Need"
-- - -
+---
 
 Pour faire Paco, vous aurez besoin des éléments suivants :
 
