@@ -1,6 +1,6 @@
-- - -
-title: "Across back factor"
-- - -
+---
+title: "Rückenweitenverhältnis"
+---
 
 ![Rückenweitenverhältnis](./acrossbackfactor.svg)
 
