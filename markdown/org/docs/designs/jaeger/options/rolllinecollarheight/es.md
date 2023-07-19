@@ -1,6 +1,6 @@
-- - -
-title: "Roll-line collar height"
-- - -
+---
+title: "Altura de cuello de línea de rodadura"
+---
 
 ![Altura del collar de la línea de rollo](rolllinecollarheight.svg)
 
