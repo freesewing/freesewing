@@ -10,4 +10,4 @@ La opción **de reducción de polvo** controla la facilidad con la que se aplica
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción al superponer varias variantes que tienen un valor diferente para esta opción](noble_bustspanease_sample.svg "Efecto de esta opción en el patrón")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](noble_bustspanease_sample.svg "Efecto de esta opción en el patrón")
