@@ -1,6 +1,6 @@
-- - -
-title: "Bulge"
-- - -
+---
+title: "Kruisstuk"
+---
 
 Hoeveel ruimte wil je vooraan?
 
