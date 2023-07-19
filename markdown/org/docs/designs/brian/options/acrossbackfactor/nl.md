@@ -1,6 +1,6 @@
-- - -
-title: "Across back factor"
-- - -
+---
+title: "Rugwijdte factor"
+---
 
 ![De optie voor de rug over Brian](./acrossbackfactor.svg)
 
