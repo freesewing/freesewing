@@ -1,6 +1,6 @@
-- - -
-title: "Chest pocket welt size"
-- - -
+---
+title: "Afmeting paspel borstzak"
+---
 
 ![Afmeting paspel borstzak](chestpocketweltsize.svg)
 
