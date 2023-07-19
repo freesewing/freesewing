@@ -1,6 +1,6 @@
-- - -
-titre : "Profondeur de la poche avant"
-- - -
+---
+title: "Profondeur des poches avant"
+---
 
 ![Profondeur des poches avant](frontpocketdepth.svg)
 
@@ -8,4 +8,4 @@ La profondeur des poches avant, comme facteur de l'espace entre la taille et l'o
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_frontpocketdepth_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_frontpocketdepth_sample.svg "Effet de cette option sur le motif")
