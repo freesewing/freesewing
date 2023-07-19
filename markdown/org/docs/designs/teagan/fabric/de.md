@@ -1,6 +1,6 @@
-- - -
+---
 title: "Teagan T-shirt: Fabric Options"
-- - -
+---
 
 Das Teagan T-Shirt ist als enges T-Shirt konzipiert und eignet sich am besten für Strickgewebe mit Stretch, wie z.B. Trikot. Baumwollstricke sind oft eine leicht zu nähende Option für die neuen Strickmaschinen. Rayon Stricken haben in der Regel etwas mehr Drape und sind rutschiger zu nähen.
 
