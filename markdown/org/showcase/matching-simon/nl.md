@@ -5,13 +5,15 @@ date: "2018-02-05"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0d0673d758bb9ec6f60c01db5dba00a0d3fea7ee-1080x1080.jpg"
 intro: "Matchende Simon hemden voor deze twee schatjes"
 title: "Matchende Simon hemden voor deze twee schatjes"
+designs:
+  - "simon"
 ---
 
 ![Model + lintmeter](https://posts.freesewing.org/uploads/matching_simon_view2_07c4206346.jpg "Model + lintmeter")
 
 ![Deze stof is prachtig](https://posts.freesewing.org/uploads/matching_simon_view3_6be104bac1.jpg "Deze stof is prachtig")
 
-![Schoulder helling](https://posts.freesewing.org/uploads/matching_simon_view4_df63556bdf.jpg "Schoulder helling")
+![Schouderhelling](https://posts.freesewing.org/uploads/matching_simon_view4_df63556bdf.jpg "Schouderhelling")
 
 ![Achterkant](https://posts.freesewing.org/uploads/matching_simon_view5_2e3b570060.jpg "Achterkant")
 
