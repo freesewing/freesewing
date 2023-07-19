@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bruce boxer briefs: Cutting Instructions"
-- - -
+---
 
 Bruce se compone de una espalda y dos lados, insets y frontales.
 
