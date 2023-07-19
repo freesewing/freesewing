@@ -1,6 +1,6 @@
-- - -
-titre : "Aisance de la tête de manche"
-- - -
+---
+title: "Aisance tête de manche"
+---
 
 ***
 
@@ -17,4 +17,4 @@ Pour les tissus légers ou la maille, on n'ajoute pas d'aisance de tête de manc
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_sleevecapease_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_sleevecapease_sample.svg "Effet de cette option sur le motif")
