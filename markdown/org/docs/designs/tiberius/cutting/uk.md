@@ -1,6 +1,6 @@
-- - -
-назва: "Туніка Тіберія: Інструкція з крою"
-- - -
+---
+title: "Tiberius Tunica: Cutting Instructions"
+---
 
 <Tip>
 
