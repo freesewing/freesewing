@@ -1,5 +1,5 @@
-- - -
-назва: "Капелюшок "Флоран": Варіанти дизайну"
-- - -
+---
+title: "Florent flat cap: Design Options"
+---
 
 <PatternOptions pattern='florent' />
