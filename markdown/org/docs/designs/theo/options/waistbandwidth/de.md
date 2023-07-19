@@ -1,6 +1,6 @@
-- - -
-title: "Waistband width"
-- - -
+---
+title: "Taillenbundweite"
+---
 
 ![Taillenbundweite](waistbandwidth.svg)
 
