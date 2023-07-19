@@ -1,6 +1,6 @@
-- - -
-title: "Bust dart"
-- - -
+---
+title: "Bust neep"
+---
 
 Where to place the primary bust dart to shape the chest.
 
