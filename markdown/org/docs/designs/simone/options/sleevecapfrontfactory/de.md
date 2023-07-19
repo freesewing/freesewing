@@ -1,6 +1,6 @@
-- - -
-title: "Sleevecap front Y"
-- - -
+---
+title: "Armkugel Vorne Y"
+---
 
 ![Die vertikale Position des vorderen Durchbiegungspunkts](./sleevecapfrontfactory.svg)
 
