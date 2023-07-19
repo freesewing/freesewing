@@ -1,6 +1,6 @@
-- - -
-title: "Shoulder slope reduction"
-- - -
+---
+title: "Verringerung der Schulterneigung"
+---
 
 Dieses Muster passt sich an die schräge Schulter an, indem die Schulterschräge Messung berücksichtigt werden.
 
