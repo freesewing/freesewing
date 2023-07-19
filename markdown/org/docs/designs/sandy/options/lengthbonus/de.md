@@ -1,6 +1,6 @@
-- - -
+---
 title: "Längenzugabe"
-- - -
+---
 
 ![Längenzugabe](lengthbonus.svg)
 
