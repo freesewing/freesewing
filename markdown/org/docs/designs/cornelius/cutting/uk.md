@@ -1,6 +1,6 @@
-- - -
-"Корнеліус велосипедні штани": "Велосипедні бриджі Cornelius: Інструкція з крою"
-- - -
+---
+title: "Cornelius cycling breeches: Cutting Instructions"
+---
 
 ### Матеріали
 
