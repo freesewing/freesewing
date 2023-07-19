@@ -1,6 +1,6 @@
-- - -
-title: "Contour"
-- - -
+---
+title: "Contorno"
+---
 
 Controla cómo se elimina de nuevo el espacio extra para los senos debajo del cofre.
 
