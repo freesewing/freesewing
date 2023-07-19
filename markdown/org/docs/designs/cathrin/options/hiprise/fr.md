@@ -1,6 +1,6 @@
-- - -
-titre : "Hauteur des hanches"
-- - -
+---
+title: "Élévation des hanches"
+---
 
 ![L'option de montée de la hanche sur Cathrin](./hiprise.svg)
 
@@ -8,4 +8,4 @@ titre : "Hauteur des hanches"
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](cathrin_hiprise_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](cathrin_hiprise_sample.svg "Effet de cette option sur le motif")
