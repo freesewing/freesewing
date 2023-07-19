@@ -64,7 +64,7 @@ Aber ich wollte völlig transparent sein, was vor sich geht, also habe ich mich 
 > Könnte ich das Geld gebrauchen? Yes I could.  
 > Do I need the money? Nein ich bin nicht darauf angewiesen.
 > 
-> ##### Der Wert Ihrer Unterstützung
+> ##### Der Wert deiner Unterstützung
 > 
 > Das Hauptrisiko für Freesewing ist das gleiche wie bei jedem Open-Source-Projekt da draußen: Maintainer-Burnout.
 > 
@@ -72,7 +72,7 @@ Aber ich wollte völlig transparent sein, was vor sich geht, also habe ich mich 
 > 
 > Wenn Menschen Gönner werden (oder spenden), geben sie mehr als nur Geld. Für mich ist der Hauptwert die Botschaft, die sie mir und anderen Menschen, die daran arbeiten, vermitteln. Und diese Botschaft ist: *Hey, Ihr machst eine sinnvolle Sache. Macht weiter mit der guten Arbeit*.
 > 
-> ##### Der Wert Ihres Geldes
+> ##### Der Wert deines Geldes
 > 
 > Es geht nicht nur um das Geld. Aber das bedeutet nicht, dass das Geld nicht wichtig ist. Ganz im Gegenteil.
 > 
