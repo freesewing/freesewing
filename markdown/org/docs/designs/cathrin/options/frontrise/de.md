@@ -1,6 +1,6 @@
-- - -
-title: "Front rise"
-- - -
+---
+title: "Frontanstieg"
+---
 
 ![Die Front-Up-Option auf Cathrin](./frontrise.svg)
 
