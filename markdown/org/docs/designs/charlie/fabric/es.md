@@ -1,6 +1,6 @@
-- - -
+---
 title: "Charlie chinos: Fabric Options"
-- - -
+---
 
 La opción obvia para los chinos Charlie, es [tejido chino](https://en.wikipedia.org/wiki/Chino_cloth), que es un tejido de tinta de algodón. Hoy en día a menudo se vende como una mezcla de un poco de estiramiento, lo que es opcional.
 
