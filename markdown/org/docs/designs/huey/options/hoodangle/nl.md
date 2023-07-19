@@ -1,6 +1,6 @@
-- - -
-title: "Hood angle"
-- - -
+---
+title: "Capuchon hoek"
+---
 
 ![Capuchon hoek](./hoodangle.svg)
 
