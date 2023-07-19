@@ -1,6 +1,6 @@
-- - -
-titre : "Retour de manchon Y"
-- - -
+---
+title: "Tête de manche arrière Y"
+---
 
 ![La position verticale du point de flexion arrière](./sleevecapbackfactory.svg)
 
@@ -14,4 +14,4 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_sleevecapbackfactory_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_sleevecapbackfactory_sample.svg "Effet de cette option sur le motif")
