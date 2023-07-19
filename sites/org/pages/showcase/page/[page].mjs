@@ -1,19 +1,19 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { sanitySiteImage, numPerPage, sanityLoader } from 'site/components/sanity/utils.mjs'
+import { postInfo, order } from 'site/prebuild/showcase-paths.mjs'
+import { getPostIndexPaths, getPostIndexProps } from 'site/components/mdx/posts/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
-import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import Link from 'next/link'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Pagination } from 'shared/components/navigation/pagination.mjs'
-import { siteConfig } from 'site/site.config.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set(['common', 'designs', ...pageNs])]
 
 export const PreviewTile = ({ img, slug, title }) => (
-  <Link href={`/showcase/${slug}`} className="text-center">
+  <Link href={`/${slug}`} className="text-center">
     <span
       style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover' }}
       className={`
@@ -48,14 +48,7 @@ const Posts = ({ posts }) => {
     //   designs[design].push(post)
     // }
 
-    previews.push(
-      <PreviewTile
-        img={sanitySiteImage(post.image[0]) + '?fit=clip&w=400'}
-        slug={post.slug.current}
-        title={post.title}
-        key={post.slug.current}
-      />
-    )
+    previews.push(<PreviewTile img={post.i} slug={post.s} title={post.t} key={post.s} />)
   })
 
   return (
@@ -82,20 +75,14 @@ const ShowcaseIndexPage = ({ posts, page, current, total }) => {
 export default ShowcaseIndexPage
 
 export async function getStaticProps({ locale, params }) {
-  const allPosts = await sanityLoader({
-    language: locale,
-    type: 'showcase',
-    order: 'date desc',
-    filters: '{_id, date, slug, title, maker, image}',
-  })
-  const pageNum = parseInt(params.page)
+  const props = getPostIndexProps(locale, params, order, postInfo)
+
+  if (props === false) return { notFound: true }
 
   return {
     props: {
       // designs,
-      posts: allPosts.slice(numPerPage * (pageNum - 1), numPerPage * pageNum),
-      current: pageNum,
-      total: allPosts.length,
+      ...props,
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
         locale,
@@ -106,16 +93,8 @@ export async function getStaticProps({ locale, params }) {
 }
 
 export const getStaticPaths = async () => {
-  const numPosts = await sanityLoader({ query: `count(*[_type == "showcaseen"])` })
-  const numPages = Math.ceil(numPosts / numPerPage)
-  const paths = []
-  for (let i = 0; i < numPages; i++) {
-    const pathName = `/showcase/page/${i + 1}`
-    siteConfig.languages.forEach((l) => paths.push(`${l.length ? '/' : ''}${l}${pathName}`))
-  }
-
   return {
-    paths,
-    fallback: false,
+    paths: getPostIndexPaths(order, 'showcase'),
+    fallback: 'blocking',
   }
 }

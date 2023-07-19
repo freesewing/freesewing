@@ -69,7 +69,7 @@
     @apply pl-2 lg:pl-4 list-decimal list-inside text-base-content;
   }
   .mdx code {
-    @apply bg-neutral bg-opacity-10 px-2 rounded text-neutral font-mono font-bold;
+    @apply bg-neutral-content px-2 rounded text-neutral font-mono font-bold;
   }
   .mdx pre code {
     @apply bg-inherit;

@@ -56,6 +56,7 @@ export const Pagination = ({ current, total, hrefBuilder = defaultHrefBuilder })
           pageNum: current - 1,
           label: <LeftIcon />,
           title: t('previous'),
+          visible: current !== 1,
           ...buttonProps,
         }}
       />
@@ -71,6 +72,7 @@ export const Pagination = ({ current, total, hrefBuilder = defaultHrefBuilder })
           pageNum: current + 1,
           label: <RightIcon />,
           title: t('next'),
+          visible: current !== total,
           ...buttonProps,
         }}
       />

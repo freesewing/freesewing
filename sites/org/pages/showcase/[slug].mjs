@@ -1,15 +1,39 @@
-import {
-  SanityPageWrapper,
-  getSanityStaticPaths,
-  ns as sanityNs,
-} from 'site/components/sanity/page-wrapper.mjs'
+import { order } from 'site/prebuild/showcase-paths.mjs'
+import { getPostSlugPaths } from 'site/components/mdx/posts/utils.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { sanityLoader, sanitySiteImage } from 'site/components/sanity/utils.mjs'
+import { useDynamicMdx } from 'shared/hooks/use-dynamic-mdx.mjs'
+import { useCallback } from 'react'
+import { PostLayout, ns as layoutNs } from 'site/components/layouts/post.mjs'
+import { PostArticle, ns as postNs } from 'site/components/mdx/posts/article.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 
-const namespaces = [...sanityNs]
+const namespaces = [...layoutNs, ...postNs, ...pageNs]
 
-const ShowcasePage = (props) => {
-  return <SanityPageWrapper {...props} namespaces={namespaces} />
+const ShowcasePage = ({ locale, slug, page }) => {
+  const loader = useCallback(
+    () => import(`orgmarkdown/showcase/${slug}/${locale}.md`),
+    [slug, locale]
+  )
+
+  const { frontmatter, MDX } = useDynamicMdx(loader)
+  if (!MDX) return null
+  return (
+    <PageWrapper
+      {...page}
+      locale={locale}
+      title={frontmatter.title}
+      layout={(props) => <PostLayout {...props} {...{ slug: page.path.join('/'), frontmatter }} />}
+    >
+      <PostArticle
+        {...{
+          slug,
+          frontmatter,
+          MDX,
+          page,
+        }}
+      />
+    </PageWrapper>
+  )
 }
 
 /*
@@ -24,32 +48,11 @@ const ShowcasePage = (props) => {
  */
 export async function getStaticProps({ params, locale }) {
   const { slug } = params
-  const post = await sanityLoader({ type: 'showcase', language: locale, slug })
-    .then((data) => data[0])
-    .catch((err) => console.log(err))
-
-  const designs = [post.design1 || null]
-  if (post.design2 && post.design2.length > 2) designs.push(post.design2)
-  if (post.design3 && post.design3.length > 2) designs.push(post.design3)
 
   return {
     props: {
-      post: {
-        slug,
-        body: post.body,
-        title: post.title,
-        date: post.date,
-        caption: post.caption,
-        image: sanitySiteImage(post.image[0]),
-        designs,
-      },
-      // FIXME load the author separately
-      author: {
-        displayname: post.maker,
-        // slug: post.maker.slug,
-        // image: strapiImage(post.maker.picture, ['small']),
-        // ...(await mdxCompiler(post.maker.about)),
-      },
+      slug,
+      locale,
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
         locale,
@@ -59,6 +62,11 @@ export async function getStaticProps({ params, locale }) {
   }
 }
 
-export const getStaticPaths = getSanityStaticPaths('showcase')
+export const getStaticPaths = async () => {
+  return {
+    paths: getPostSlugPaths(order),
+    fallback: 'blocking',
+  }
+}
 
 export default ShowcasePage

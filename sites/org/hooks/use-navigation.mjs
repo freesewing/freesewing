@@ -196,6 +196,7 @@ export const useNavigation = (param = {}, extra = []) => {
     siteNav.showcase.m = 1
     siteNav.showcase.n = 1
     siteNav.docs.m = 1
+    siteNav.newsletter._ = true
 
     // Set order on main sections
     siteNav.designs.o = 10
