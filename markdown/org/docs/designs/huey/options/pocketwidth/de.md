@@ -1,6 +1,6 @@
-- - -
-title: "Pocket width"
-- - -
+---
+title: "Taschenbreite"
+---
 
 ![Taschenbreite](./pocketwidth.svg)
 
