@@ -1,6 +1,6 @@
-- - -
-title: "Pantalon portefauille Waralee : ce dont vous avez besoin"
-- - -
+---
+title: "Waralee wrap pants: What You Need"
+---
 
 Pour faire Waralee, vous aurez besoin des éléments suivants :
 
