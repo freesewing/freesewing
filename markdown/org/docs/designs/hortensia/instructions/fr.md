@@ -1,6 +1,6 @@
-- - -
-title: "Sac à main Hortensia : Instructions de couture"
-- - -
+---
+title: "Hortensia handbag: Sewing Instructions"
+---
 
 ### (Optionnel) Étape 1 : Entoiler le tissu principal
 
