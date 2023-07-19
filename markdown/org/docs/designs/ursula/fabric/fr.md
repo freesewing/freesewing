@@ -1,6 +1,6 @@
-- - -
+---
 title: "Ursula undies: Fabric Options"
-- - -
+---
 
 Vous avez besoin d'un tissu avec de nombreuses extensions horizontales et verticales (parfois appelées « stretch à quatre sens ») pour ce motif. De préférence quelque chose qui est confortable, doux et respiré.
 
