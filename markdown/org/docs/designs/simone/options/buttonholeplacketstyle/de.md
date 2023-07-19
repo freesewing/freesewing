@@ -1,6 +1,6 @@
-- - -
-title: "Buttonhole placket style"
-- - -
+---
+title: "Knopflochleiste Stil"
+---
 
 ![Knopflochleiste Stil](buttonholeplacketstyle.svg)
 
