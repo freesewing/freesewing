@@ -1,6 +1,6 @@
-- - -
-"Спідниця-олівець Пелагея": "Спідниця-олівець Пенелопа: Інструкція з крою"
-- - -
+---
+title: "Penelope pencil skirt: Cutting Instructions"
+---
 
 <Note>
 
