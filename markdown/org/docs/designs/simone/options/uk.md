@@ -1,5 +1,5 @@
-- - -
-"Сорочка Сімони": "Сорочка Симона: Варіанти дизайну"
-- - -
+---
+title: "Simone shirt: Design Options"
+---
 
 <PatternOptions pattern='simone' />
