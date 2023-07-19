@@ -1,6 +1,6 @@
-- - -
-title: "Grainline position"
-- - -
+---
+title: "Posición en línea"
+---
 
 Controla la posición del grainline.
 
