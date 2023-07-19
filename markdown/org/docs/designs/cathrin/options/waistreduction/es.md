@@ -1,6 +1,6 @@
-- - -
-title: "Waist reduction"
-- - -
+---
+title: "Reducción de cintura"
+---
 
 ![La opción de reducción de cintura en la Catedral](./waistreduction.svg)
 
