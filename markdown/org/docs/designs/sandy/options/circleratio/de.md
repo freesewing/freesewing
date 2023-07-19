@@ -1,6 +1,6 @@
-- - -
-title: "Circle ratio"
-- - -
+---
+title: "Kreisverhältnis"
+---
 
 ![Kreisverhältnis](circleratio.svg)
 
