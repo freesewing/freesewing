@@ -5,6 +5,8 @@ date: "2020-08-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/be12610ca753f520a5ddebc6f034358551d9939c-1080x1349.jpg"
 intro: "Na zijn eerste verbluffende Wahid Adam is hij terug met een nieuwe schoonheid."
 title: "Nog een Wahid gilet door Adam"
+designs:
+  - "wahid"
 ---
 
 
