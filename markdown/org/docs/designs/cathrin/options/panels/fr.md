@@ -1,6 +1,6 @@
-- - -
-titre : "Nombre de panneaux"
-- - -
+---
+title: "Nombre de pièces"
+---
 
 ![L'option des panneaux sur Cathrin](./panels.svg)
 
@@ -15,4 +15,4 @@ Plus de panneaux est un peu plus de travaux, mais permet également de rééquil
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](cathrin_panels_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](cathrin_panels_sample.svg "Effet de cette option sur le motif")
