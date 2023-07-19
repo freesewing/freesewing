@@ -1,10 +1,10 @@
-- - -
+---
 title: "Walburga Wappenrock: Sewing Instructions"
-- - -
+---
 
 <Note>
 
-Walburga is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. Vous le faites.
+Walburga is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. Faites comme vous voulez.
 
 </Note>
 
@@ -34,4 +34,4 @@ If you cut slits, there will be no seam (or hem) allowance to finish the edge th
 
 ### Step 5: That's it!
 
-C'est terminé ! You could now appliqué/embroider/otherwise attach a symbol or heraldics of your choice onto your garment.
+Vous avez terminé ! You could now appliqué/embroider/otherwise attach a symbol or heraldics of your choice onto your garment.
