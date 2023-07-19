@@ -1,6 +1,6 @@
-- - -
+---
 title: "Charlie chinos: Sewing Instructions"
-- - -
+---
 
 ## Schritt 1: Nähe den hinteren Abnäher
 
