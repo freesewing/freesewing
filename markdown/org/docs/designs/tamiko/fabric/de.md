@@ -1,6 +1,6 @@
-- - -
+---
 title: "Tamiko top: Fabric Options"
-- - -
+---
 
 Dieses Muster hat viele unfertige Kanten, so dass Sie etwas brauchen, das nicht verrät. Und Sie wollen für etwas mit einem netten Drap gehen.
 
