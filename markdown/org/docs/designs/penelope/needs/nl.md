@@ -1,6 +1,6 @@
-- - -
+---
 title: "Penelope pencil skirt: What You Need"
-- - -
+---
 
 Om Penelop te maken heb je het volgende nodig:
 
