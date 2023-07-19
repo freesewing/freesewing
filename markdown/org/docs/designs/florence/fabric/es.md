@@ -1,6 +1,6 @@
-- - -
+---
 title: "Florence face mask: Fabric Options"
-- - -
+---
 
 El objetivo de nuestra mascarilla es parar las gotitas. Así que quieres algo que las mantenga fuera. Además, necesitas poder respirar a través de la mascarilla, así que queremos una mascarilla que sea transpirable pero que no deje pasar las gotitas.
 
