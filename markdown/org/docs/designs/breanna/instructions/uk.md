@@ -1,6 +1,6 @@
-- - -
-назва: "Боді-блок "Бріанна": Інструкція з пошиття"
-- - -
+---
+title: "Breanna body block: Sewing Instructions"
+---
 
 <Note>
 
