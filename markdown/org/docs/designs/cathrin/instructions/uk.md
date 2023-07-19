@@ -1,6 +1,6 @@
-- - -
-назва: "Корсет "Катрін": Інструкція з пошиття"
-- - -
+---
+title: "Cathrin corset: Sewing Instructions"
+---
 
 <Note>
 
