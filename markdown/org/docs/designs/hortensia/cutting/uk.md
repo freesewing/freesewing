@@ -1,6 +1,6 @@
-- - -
-назва: "Сумочка з гортензії: Інструкція з крою"
-- - -
+---
+title: "Hortensia handbag: Cutting Instructions"
+---
 
 ### Матеріали
 
