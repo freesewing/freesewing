@@ -1,6 +1,6 @@
-- - -
-title: "Head ease"
-- - -
+---
+title: "Overwijdte hoofd"
+---
 
 De hoeveelheid overwijdte rond je hoofd.
 
