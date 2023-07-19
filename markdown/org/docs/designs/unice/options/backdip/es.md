@@ -6,4 +6,4 @@ Together with the "Back curve" option, this option controls how much the back wa
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción al superponer varias variantes que tienen un valor diferente para esta opción](unice_backdip_sample.svg "Efecto de esta opción en el patrón")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](unice_backdip_sample.svg "Efecto de esta opción en el patrón")
