@@ -1,6 +1,6 @@
-- - -
+---
 title: "Jaeger jacket: Sewing Instructions"
-- - -
+---
 
 <Note>
 
@@ -10,7 +10,7 @@ Cette documentation n'est pas encore terminée.
 
 </Note>
 
-## Construction
+## Montage
 
 ### Fermer les fléchettes avant
 
