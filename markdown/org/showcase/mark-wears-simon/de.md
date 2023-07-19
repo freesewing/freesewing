@@ -5,6 +5,8 @@ date: "2017-08-20"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8889aa644473d0615584ea0b69a570f95c69c1f9-1080x1080.jpg"
 intro: "Mark wears a simon shirt made by his wife"
 title: "Mark wears a simon shirt made by his wife"
+designs:
+  - "simon"
 ---
 
 ![Eine andere Ansicht](https://posts.freesewing.org/uploads/mark_wears_simon_2_a4950a3229.jpg "Eine andere Ansicht")
