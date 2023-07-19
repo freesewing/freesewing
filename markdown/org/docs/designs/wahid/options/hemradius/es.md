@@ -1,6 +1,6 @@
-- - -
-title: "Hem radius"
-- - -
+---
+title: "Radio del dobladillo"
+---
 
 ![Radio del dobladillo](hemradius.svg)
 
