@@ -1,6 +1,6 @@
-- - -
-title: "Number of panels"
-- - -
+---
+title: "Anzahl der Schnittteile"
+---
 
 ![Die Panel-Option auf Kathrin](./panels.svg)
 
