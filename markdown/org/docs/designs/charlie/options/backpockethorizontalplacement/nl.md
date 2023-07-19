@@ -1,6 +1,6 @@
-- - -
-title: "Back pocket horizontal placement"
-- - -
+---
+title: "Plaatsing horizontale achterzak"
+---
 
 Bepaalt de horizontale plaatsing van de achterzakken.
 
