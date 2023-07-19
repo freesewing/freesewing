@@ -1,6 +1,6 @@
-- - -
-title: "Nœud papillon Benjamin : ce dont vous avez besoin"
-- - -
+---
+title: "Benjamin bow tie: What You Need"
+---
 
 Pour réaliser Benjamin, vous aurez besoin de :
 
