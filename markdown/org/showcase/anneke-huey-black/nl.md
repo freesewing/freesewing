@@ -5,6 +5,8 @@ date: "2020-10-29"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4e6d5a2fdf43b6904230f7ef7594bbcd41dd8759-640x640.jpg"
 intro: "Een zwarte Huey door Anneke"
 title: "Een zwarte Huey door Anneke"
+designs:
+  - "huey"
 ---
 
 Anneke heeft verschillende variaties op de Huey hoodie gemaakt. Bekijk haar andere die [hier](https://freesewing.org/showcase/anneke-huey/) en [hier](https://freesewing.org/showcase/anneke-huey-grey/).
