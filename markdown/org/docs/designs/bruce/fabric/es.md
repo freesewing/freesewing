@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bruce boxer briefs: Fabric Options"
-- - -
+---
 
 Necesitas un tejido estirado para este patrón. Preferible algo que es cómodo y suave al tacto, permitiendo al mismo tiempo que la piel respire.
 
