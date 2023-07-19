@@ -1,6 +1,6 @@
-- - -
-title: "Lapel start"
-- - -
+---
+title: "Inicio de la solapa"
+---
 
 ![Inicio de la solapa](lapelstart.svg)
 
