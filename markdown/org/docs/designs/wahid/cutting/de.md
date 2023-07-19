@@ -1,6 +1,6 @@
-- - -
+---
 title: "Wahid waistcoat: Cutting Instructions"
-- - -
+---
 
 - **Oberstoff**
   - Schneiden Sie **2 Front(e)** mit _guten Seiten zusammen_
