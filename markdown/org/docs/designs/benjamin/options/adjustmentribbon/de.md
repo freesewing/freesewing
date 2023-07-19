@@ -1,6 +1,6 @@
-- - -
-title: "Adjustment ribbon"
-- - -
+---
+title: "Einstellband"
+---
 
 ![Traditionell oder einstellbar](adjustmentribbon.svg)
 
