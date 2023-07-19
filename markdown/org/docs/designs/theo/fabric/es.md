@@ -1,6 +1,6 @@
-- - -
+---
 title: "Theo trousers: Fabric Options"
-- - -
+---
 
 Aquí tienes muchas opciones, pero ten en cuenta que son pantalones de corte clásicos. En otras palabras, no utilice estiramiento, denim, pliegue de ese tipo de cosas. Las apuestas seguras son lana, algodón o lino, posiblemente mezcladas con algún sintético.
 
