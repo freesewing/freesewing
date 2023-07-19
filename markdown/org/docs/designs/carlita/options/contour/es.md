@@ -1,6 +1,6 @@
-- - -
-title: "Contour"
-- - -
+---
+title: "Contorno"
+---
 
 Controla hasta qué punto la costura de la princesa se corregirá una vez que se supere la plenitud de tus senos.
 
