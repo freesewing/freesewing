@@ -1,6 +1,6 @@
-- - -
-назва: "Худі Юрія: Інструкція з пошиття"
-- - -
+---
+title: "Yuri hoodie: Sewing Instructions"
+---
 
 <Note>
 
