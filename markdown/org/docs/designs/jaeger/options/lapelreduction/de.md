@@ -1,6 +1,6 @@
-- - -
-title: "Lapel reduction"
-- - -
+---
+title: "Reversverkleinerung"
+---
 
 How much the tip of the lapels turns inwards.
 
