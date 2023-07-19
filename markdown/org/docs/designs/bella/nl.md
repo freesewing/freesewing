@@ -1,5 +1,5 @@
-- - -
-title: "Bella body block"
-- - -
+---
+title: "Bella lichaam blok"
+---
 
 <PatternDocs pattern='bella' />
