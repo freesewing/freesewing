@@ -1,6 +1,6 @@
-- - -
-title: "Collar stand bend"
-- - -
+---
+title: "Doblado de la base del cuello"
+---
 
 ![Collarstand doblado](collarstandbend.svg)
 
