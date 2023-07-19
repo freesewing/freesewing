@@ -1,6 +1,6 @@
-- - -
-title: "Back vent"
-- - -
+---
+title: "Abertura trasera"
+---
 
 ![Abertura trasera](backvent.svg)
 
