@@ -1,6 +1,6 @@
-- - -
-title: "Collar angle"
-- - -
+---
+title: "Kragenwinkel"
+---
 
 ![Kragenwinkel](collarangle.svg)
 
