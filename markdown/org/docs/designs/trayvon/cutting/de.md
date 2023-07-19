@@ -1,6 +1,6 @@
-- - -
+---
 title: "Trayvon tie: Cutting Instructions"
-- - -
+---
 
 - **Oberstoff**
   - **1 Tipp schneiden**
