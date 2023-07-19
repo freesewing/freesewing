@@ -1,6 +1,6 @@
-- - -
-title: "Back opening"
-- - -
+---
+title: "Abertura de la espalda"
+---
 
 ![La opción de volver a abrir en la Catedral](./backopening.svg)
 
