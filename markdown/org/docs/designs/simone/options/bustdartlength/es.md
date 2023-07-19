@@ -1,6 +1,6 @@
-- - -
-title: "Bust dart length"
-- - -
+---
+title: "Longitud del dart del polvo"
+---
 
 Controls how close the **bust darts** approach the bust points.
 
