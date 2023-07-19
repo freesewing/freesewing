@@ -1,6 +1,6 @@
-- - -
-title: "Wedge"
-- - -
+---
+title: "Cuña"
+---
 
 Controla la longitud de la costura transversal.
 
