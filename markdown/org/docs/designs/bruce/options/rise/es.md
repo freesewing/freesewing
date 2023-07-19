@@ -1,6 +1,6 @@
-- - -
-title: "Rise"
-- - -
+---
+title: "Elevación de la cintura"
+---
 
 ![Opción de ascenso en Bruce](./rise.svg)
 
