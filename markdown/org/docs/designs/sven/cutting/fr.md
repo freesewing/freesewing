@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sven sweatshirt: Cutting Instructions"
-- - -
+---
 
 Sven est un motif très simple et se compose de deux parties principales et de quelques bandes pour le cou et le blindage.
 
