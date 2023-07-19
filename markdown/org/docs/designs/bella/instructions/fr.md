@@ -1,6 +1,6 @@
-- - -
-title: "Bloc du corps de Bella : Instructions de couture"
-- - -
+---
+title: "Bella body block: Sewing Instructions"
+---
 
 <Note>
 
