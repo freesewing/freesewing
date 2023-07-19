@@ -1,5 +1,5 @@
-- - -
-"Плавки для гомілки": "Плавки з гомілкою: Варіанти дизайну"
-- - -
+---
+title: "Shin swim trunks: Design Options"
+---
 
 <PatternOptions pattern='shin' />
