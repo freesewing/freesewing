@@ -1,6 +1,6 @@
-- - -
-titre: "Pantalon portefeuille Waralee : Option de tissus"
-- - -
+---
+title: "Waralee wrap pants: Fabric Options"
+---
 
 ### Tissu principal
 
