@@ -1,6 +1,6 @@
-- - -
-title: "Sleeve length bonus"
-- - -
+---
+title: "Longitud extra de manga"
+---
 
 This option controls how long to lengthen the sleeves by.
 
