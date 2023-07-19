@@ -1,6 +1,6 @@
-- - -
-назва: "Штани з запахом Waralee: Інструкція з пошиття"
-- - -
+---
+title: "Waralee wrap pants: Sewing Instructions"
+---
 
 <Warning>
 
