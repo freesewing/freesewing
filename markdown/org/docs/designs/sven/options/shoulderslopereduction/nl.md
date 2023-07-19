@@ -2,7 +2,7 @@
 title: Reductie schouderhelling
 ---
 
-Hoeveel de schouderhelling verminderd wordt om ruimte te maken voor epauletten.
+De hoeveelheid waarmee de helling van de schouder verminderd wordt om ruimte te maken voor epauletten.
 
 ## Effect van deze optie op het patroon
 
