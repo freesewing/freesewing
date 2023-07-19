@@ -1,6 +1,6 @@
-- - -
+---
 title: "Trayvon tie: Cutting Instructions"
-- - -
+---
 
 - **Buitenstof**
   - Knip **1 punt**
