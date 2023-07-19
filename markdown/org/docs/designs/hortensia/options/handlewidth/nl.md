@@ -1,6 +1,6 @@
-- - -
-title: "Handle width"
-- - -
+---
+title: "Afhandeling breedte"
+---
 
 Bepaalt de breedte van het handvat.
 
