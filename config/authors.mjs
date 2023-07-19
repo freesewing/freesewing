@@ -5,6 +5,7 @@
  */
 export const authors = {
   joostdecock: { id: 0, name: 'Joost De Cock' },
+  mocked: { id: 0, name: 'Unknown (mocked in dev)' },
   benjamesben: { id: 0, name: 'Benjamin' },
   nikhil: { id: 0, name: 'nikhil' },
   jackseye: { id: 0, name: 'jackseye' },

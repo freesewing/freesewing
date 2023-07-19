@@ -1,4 +1,4 @@
-import { pageHasChildren } from 'shared/utils.mjs'
+import { pageHasChildren } from '../utils.mjs'
 import orderBy from 'lodash.orderby'
 
 /*

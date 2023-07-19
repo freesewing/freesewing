@@ -104,7 +104,7 @@ new-design:
     'chalk': '5.0.1'
     'execa': '7.1.1'
     'mustache': '4.2.0'
-    'ora': '6.1.0'
+    'ora': '6.3.1'
     'prompts': '2.4.2'
     'recursive-readdir': '2.2.3'
 noble:

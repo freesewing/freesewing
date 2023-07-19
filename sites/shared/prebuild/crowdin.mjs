@@ -43,18 +43,17 @@ const sendApiRequest = async (url = '', body = false, download = false) => {
   return false
 }
 
-//const loadProjectMembers = async () => await sendApiRequest('members?limit=100')
-
 const loadTopMembers = async (languageId) =>
   await sendApiRequest('reports?limit=500', { ...report, schema: { ...report.schema, languageId } })
 const checkReportStatus = async (id) => await sendApiRequest(`reports/${id}`)
 const getReportUrl = async (id) => await sendApiRequest(`reports/${id}/download`)
 const downloadReport = async (url) => await sendApiRequest('', false, url)
 
-export const prebuildCrowdin = async () => {
+export const prebuildCrowdin = async (store, mock = false) => {
+  if (mock) return (store.crowdin = mockedData)
+
   const contributions = {}
   for (let language of languages) {
-    console.log(`Loading translator contributions for ${language}`)
     contributions[language] = {}
     const report = await loadTopMembers(language)
     const id = report.identifier
@@ -85,6 +84,19 @@ export const prebuildCrowdin = async () => {
     path.resolve('..', 'org', 'prebuild', 'translators.json'),
     JSON.stringify(contributions)
   )
+
+  store.crowdin = contributions
+
+  return
 }
 
-//prebuildCrowdin()
+/*
+ * In development, we return this mocked data to speed things up
+ */
+const mockedData = {
+  nl: { 'Joost De Cock (joostdecock)': { translated: 16427 } },
+  fr: { bret76: { translated: 36800 } },
+  de: { starf: { translated: 22370 } },
+  uk: { 'Morgan Frost (KaerMorhan)': { translated: 10505 } },
+  es: { 'Sara Latorre (Tyrannogina)': { translated: 6713 } },
+}

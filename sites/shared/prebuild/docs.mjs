@@ -1,3 +1,4 @@
+import allLocales from '../../../config/languages.json' assert { type: 'json' }
 import fs from 'fs'
 import path from 'path'
 import rdir from 'recursive-readdir'
@@ -103,7 +104,7 @@ export const prebuildDocs = async (site) => {
   const mdxRoot = path.resolve(...root)
 
   // Languages
-  const locales = site === 'dev' ? ['en'] : ['en', 'fr', 'es', 'nl', 'de']
+  const locales = site === 'dev' ? ['en'] : allLocales
 
   const pages = {}
   // Loop over languages

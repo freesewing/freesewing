@@ -1,5 +1,5 @@
 // Used in static paths
-import { mdxPaths } from 'site/prebuild/mdx-paths.en.mjs'
+import { pages } from 'site/prebuild/docs.en.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Hooks
@@ -126,7 +126,7 @@ export async function getStaticProps({ params }) {
  */
 export async function getStaticPaths() {
   return {
-    paths: mdxPaths.map((slug) => '/' + slug),
+    paths: Object.keys(pages).map((slug) => '/' + slug),
     fallback: false,
   }
 }
