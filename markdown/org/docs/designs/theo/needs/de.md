@@ -1,6 +1,6 @@
-- - -
+---
 title: "Theo trousers: What You Need"
-- - -
+---
 
 Um Theodore zu erstellen, benötigst du Folgendes:
 
