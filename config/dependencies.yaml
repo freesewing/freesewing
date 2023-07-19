@@ -349,7 +349,7 @@ org:
 
 sanity:
   _:
-    '@sanity/vision': &sanity '3.14.2'
+    '@sanity/vision': &sanity '3.14.3'
     'easymde': '2.18.0'
     'react': *react
     'react-dom': *react
