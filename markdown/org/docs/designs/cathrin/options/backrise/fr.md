@@ -1,6 +1,6 @@
-- - -
-title: "Hauteur du dos"
-- - -
+---
+title: "Élévation arrière"
+---
 
 ![L'option de montée arrière sur Cathrin](./backrise.svg)
 
@@ -14,4 +14,4 @@ Si vous augmentez le dos, votre corset se lèvera vers le haut à l'arrière.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](cathrin_backrise_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](cathrin_backrise_sample.svg "Effet de cette option sur le motif")
