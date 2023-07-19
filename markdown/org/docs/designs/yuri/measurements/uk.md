@@ -1,5 +1,5 @@
-- - -
-назва: "Юрій Гуді: Необхідні виміри"
-- - -
+---
+title: "Yuri hoodie: Required Measurements"
+---
 
 <PatternMeasurements pattern='yuri' />
