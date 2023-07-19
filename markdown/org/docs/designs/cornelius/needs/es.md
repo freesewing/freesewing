@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cornelius cycling breeches: What You Need"
-- - -
+---
 
 To make Cornelius, you will need the following:
 
