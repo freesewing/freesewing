@@ -1,6 +1,6 @@
-- - -
-title: "Cuff ease"
-- - -
+---
+title: "Holgura de muñeca"
+---
 
 ![El factor de facilidad de corte en Brian](./cuffease.svg)
 
