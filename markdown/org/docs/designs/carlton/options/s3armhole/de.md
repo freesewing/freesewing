@@ -1,6 +1,6 @@
-- - -
-title: "Shoulder seam shift: armhole side"
-- - -
+---
+title: "Schulternahtverschiebung: Armlochseite"
+---
 
 Steuert die Position der Schulternaht auf der Armlochseite.
 
@@ -9,4 +9,4 @@ Steuert die Position der Schulternaht auf der Armlochseite.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](carlton_s3armhole_sample.svg "Effekt dieser Variable auf das Schnittmuster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](carlton_s3armhole_sample.svg "Effekt dieser Option auf das Schnittmuster")
