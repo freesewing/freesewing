@@ -64,7 +64,7 @@ export async function getStaticProps({ params, locale }) {
 
 export const getStaticPaths = async () => {
   return {
-    paths: getPostSlugPaths(order, 'showcase'),
+    paths: getPostSlugPaths(order),
     fallback: 'blocking',
   }
 }

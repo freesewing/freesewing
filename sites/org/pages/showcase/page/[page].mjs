@@ -94,7 +94,7 @@ export async function getStaticProps({ locale, params }) {
 
 export const getStaticPaths = async () => {
   return {
-    paths: getPostIndexPaths(order),
+    paths: getPostIndexPaths(order, 'showcase'),
     fallback: 'blocking',
   }
 }
