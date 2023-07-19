@@ -1,6 +1,6 @@
-- - -
-title: "Back pocket vertical placement"
-- - -
+---
+title: "Verticale plaatsing achterzak"
+---
 
 Bepaalt de verticale plaatsing van de achterzakken.
 
