@@ -1,6 +1,6 @@
-- - -
+---
 title: "Charlie chinos: What You Need"
-- - -
+---
 
 Um Charlie zu erstellen, benötigst du Folgendes:
 
