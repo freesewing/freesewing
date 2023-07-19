@@ -1,6 +1,6 @@
-- - -
-"Вальбурґа Ваппенрок: "Вальбурга Ваппенрок: Інструкція з пошиття"
-- - -
+---
+title: "Walburga Wappenrock: Sewing Instructions"
+---
 
 <Note>
 
