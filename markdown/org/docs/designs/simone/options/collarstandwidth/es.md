@@ -1,6 +1,6 @@
-- - -
-title: "Collar stand width"
-- - -
+---
+title: "Anchura de la base del cuello"
+---
 
 ![Ancho del soporte](collarstandwidth.svg)
 
