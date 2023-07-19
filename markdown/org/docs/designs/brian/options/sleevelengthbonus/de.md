@@ -1,6 +1,6 @@
-- - -
-title: "Längenzugabe Ärmel"
-- - -
+---
+title: "Ärmel Längenzugabe"
+---
 
 ![Die Hülsen-Bonusoption auf Brian](./sleevelengthbonus.svg)
 
