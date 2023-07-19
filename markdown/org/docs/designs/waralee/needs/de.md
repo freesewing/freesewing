@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waralee wrap pants: What You Need"
-- - -
+---
 
 Um Warale zu erstellen, benötigst du Folgendes:
 
