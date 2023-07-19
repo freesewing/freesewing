@@ -1,6 +1,6 @@
-- - -
-title: "Collar roll"
-- - -
+---
+title: "Omval kraag"
+---
 
 ![Omval kraag](collarroll.svg)
 
