@@ -1,6 +1,6 @@
-- - -
-title: "Pocket flap radius"
-- - -
+---
+title: "Radio de la tapa del bolsillo"
+---
 
 ![Radio de la tapa del bolsillo](pocketflapradius.svg)
 
