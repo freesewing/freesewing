@@ -1,6 +1,6 @@
-- - -
-title: "Buttonhole placket fold width"
-- - -
+---
+title: "Anchura del pliegue de la vista de los ojales"
+---
 
 ![Anchura del pliegue de la vista de los ojales](buttonholeplacketfoldwidth.svg)
 
