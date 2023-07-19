@@ -1,6 +1,6 @@
-- - -
-title: "Overwijdte heupen"
-- - -
+---
+title: "Overwijdte heup"
+---
 
 ![De optie voor overwijdte heupen van Diana](./hipsease.svg)
 
