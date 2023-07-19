@@ -1,6 +1,6 @@
-- - -
-назва: "Єгерська куртка: Інструкція з пошиття"
-- - -
+---
+title: "Jaeger jacket: Sewing Instructions"
+---
 
 <Note>
 
