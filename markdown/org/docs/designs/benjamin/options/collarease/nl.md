@@ -1,6 +1,6 @@
-- - -
-title: "Collar ease"
-- - -
+---
+title: "Overwijdte kraag"
+---
 
 ![Hoeveel overwijdte heeft je kraag?](collarease.svg)
 
