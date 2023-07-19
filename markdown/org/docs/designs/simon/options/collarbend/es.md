@@ -1,6 +1,6 @@
-- - -
-title: "Collar bend"
-- - -
+---
+title: "Inclinación del cuello"
+---
 
 ![Inclinación del cuello](collarbend.svg)
 
