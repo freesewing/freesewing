@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cathrin corset: Cutting Instructions"
-- - -
+---
 
 Cortar 1 tela del núcleo y 1 tela exterior del panel central, asegurándose de cortar sobre el plegado.
 
