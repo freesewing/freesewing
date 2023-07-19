@@ -1,6 +1,6 @@
-- - -
-title: "Front cutaway end"
-- - -
+---
+title: "Einde uitsnijding vooraan"
+---
 
 Door dit te verhogen blijft de verloping vooraan bij het midden
 
