@@ -92,7 +92,7 @@
     "description": "Siehe <a href='/docs/sewing/zig-zag-stitch/'>Zickzackstich</a> in der <a href='/docs/sewing'>Dokumentation zum Nähen</a>"
   },
   "freesewing": {
-    "term": "FreeSewing",
+    "term": "freesewing",
     "description": "<b>FreeSewing</b> ist eine Open-Source Plattform für Schnittmuster nach Maß"
   },
   "patternOptions": {
