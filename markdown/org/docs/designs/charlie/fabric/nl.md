@@ -1,6 +1,6 @@
-- - -
+---
 title: "Charlie chinos: Fabric Options"
-- - -
+---
 
 De voor de hand liggende keuze voor Charlie chinos, is [chinostof](https://en.wikipedia.org/wiki/Chino_cloth), een katoenen twill stof. Tegenwoordig wordt het vaak verkocht als een mengeling aan een beetje stretch, wat optioneel is.
 
