@@ -1,7 +1,7 @@
 ---
 date: "2023-07-01"
 edition: "2023q3"
-intro: "Welkom bij de 2023 zomereditie van de FreeSewing nieuwsbrief. Dit is wat we voor je hebben opgenomen:"
+intro: "Welkom bij de 2023 zomereditie van de FreeSewing nieuwsbrief."
 title: "2023 Zomernummer"
 ---
 
@@ -204,5 +204,4 @@ Dus voorlopig, en waarschijnlijk in ieder geval totdat v3 klaar is, neem ik een 
 Ik ben nu op een betere plek. Het was even kantje boord, en ik wil graag mijn excuses aanbieden aan de leden van de community die te maken hadden met mijn steeds meer verslechterde geestelijke gezondheid in de weken voorafgaand aan mijn koerscorrectie .
 
 Ik weet nog steeds niet zeker of ik de deadlines zal halen die ik voor mezelf heb gesteld. Maar ik voel me weer positief en hoopvol dat het werk dat we doen de moeite waard is en uiteindelijk zal lonen. En - mocht daar enige twijfel over bestaan - ik weet zeker dat de FreeSewing gemeenschap het ook prima doet zonder mij. En op sommige van mijn moeilijkere dagen waarschijnlijk nog meer.
-
 
