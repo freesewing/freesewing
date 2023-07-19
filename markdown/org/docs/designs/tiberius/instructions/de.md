@@ -1,10 +1,10 @@
-- - -
+---
 title: "Tiberius Tunica: Sewing Instructions"
-- - -
+---
 
 <Note>
 
-Tiberius ist ein historisch inspiriertes Schnittmuster, und für mehr Authentizität ist das Nähen per Hand das Mittel der Wahl. Ich selber verwende eine Nähmaschine. Tu, was immer dir besser gefällt.
+Tiberius ist ein historisch inspiriertes Schnittmuster, und für mehr Authentizität ist das Nähen per Hand das Mittel der Wahl. Ich selber verwende eine Nähmaschine. Sie tun das.
 
 </Note>
 
