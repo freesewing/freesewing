@@ -1,6 +1,6 @@
-- - -
-title: "Back rise"
-- - -
+---
+title: "Hintere Anstieg"
+---
 
 ![Die Rückenaufstiegsoption auf Bruce](./backrise.svg)
 
