@@ -1,9 +1,9 @@
-- - -
-title: "Across back factor"
-- - -
+---
+title: "Rückenweitenverhältnis"
+---
 
 Steuert die Rückenbreite als Faktor der Schultermessung
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](bent_acrossbackfactor_sample.svg "Effekt dieser Variable auf das Schnittmuster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bent_acrossbackfactor_sample.svg "Effekt dieser Option auf das Schnittmuster")
