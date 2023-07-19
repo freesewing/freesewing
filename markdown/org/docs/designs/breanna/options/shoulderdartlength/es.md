@@ -1,6 +1,6 @@
-- - -
-title: "Shoulder dart length"
-- - -
+---
+title: "Longitud del dart del hombro"
+---
 
 The length of the back shoulder dart.
 
