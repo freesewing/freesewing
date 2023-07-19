@@ -1,9 +1,9 @@
-- - -
-title: "Front overlap"
-- - -
+---
+title: "Übertritt vorne"
+---
 
 Steuert wie sehr sich die rechte und linke Vorderseite des Kleidungsstückes an der Mitte überlappt.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](carlita_frontoverlap_sample.svg "Effekt dieser Variable auf das Schnittmuster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](carlita_frontoverlap_sample.svg "Effekt dieser Option auf das Schnittmuster")
