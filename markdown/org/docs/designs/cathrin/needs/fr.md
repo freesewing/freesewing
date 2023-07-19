@@ -1,6 +1,6 @@
-- - -
-titre : "Le corset Cathrin : Ce qu'il faut"
-- - -
+---
+title: "Cathrin corset: What You Need"
+---
 
 Les corsets sont plus faciles à construire qu'ils ne le semblent, mais ils ont besoin de plusieurs objets et outils spécialisés.
 
