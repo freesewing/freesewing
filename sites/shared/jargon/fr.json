@@ -1,6 +1,6 @@
 {
   "basting": {
-    "term": "bâti",
+    "term": "bâtir",
     "description": "Voir <a href='/docs/sewing/basting/'>Bâtir</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
   },
   "coverlock": {
@@ -44,7 +44,7 @@
     "description": "Voir <a href='/docs/sewing/hemming/'>Ourlet</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
   },
   "jersey": {
-    "term": "Jersey",
+    "term": "jersey",
     "description": "Voir <a href='/docs/sewing/jersey/'>Jersey</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
   },
   "knitBinding": {
@@ -68,7 +68,7 @@
     "description": "Voir <a href='/docs/sewing/seam-allowance/'>Marge de couture</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
   },
   "serger": {
-    "term": "sergeur",
+    "term": "surjeteuse",
     "description": "Voir <a href='/docs/sewing/serger/'>Surgeteuse</a> dans la <a href='/docs/sewing'>documentation de Couture</a>"
   },
   "slipstitch": {
