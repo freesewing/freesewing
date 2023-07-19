@@ -1,6 +1,6 @@
-- - -
-title: "Collar notch return"
-- - -
+---
+title: "Kraag inkeping terugloop"
+---
 
 ![Kraag inkeping terugloop](collarnotchreturn.svg)
 
