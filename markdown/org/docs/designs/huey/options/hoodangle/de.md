@@ -1,6 +1,6 @@
-- - -
-title: "Hood angle"
-- - -
+---
+title: "Winkel der Kapuze"
+---
 
 ![Winkel der Kapuze](./hoodangle.svg)
 
