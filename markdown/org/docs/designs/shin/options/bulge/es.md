@@ -1,6 +1,6 @@
-- - -
-title: "Bulge"
-- - -
+---
+title: "Bulto"
+---
 
 ¿Cuánto espacio quieres en la parte delantera?
 
