@@ -1,6 +1,6 @@
-- - -
-titre : "Culotte de cycliste Cornélius : Instructions de coupe"
-- - -
+---
+title: "Cornelius cycling breeches: Cutting Instructions"
+---
 
 ### Matériaux
 
