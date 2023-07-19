@@ -1,12 +1,12 @@
-- - -
+---
 title: "Ursula undies: Cutting Instructions"
-- - -
+---
 
 Ursula besteht aus einem vorderen Teil, einem hinteren Teil und einem gefütterten Zwickel.
 
 - **Oberstoff**
   - Schneide **1 Vorderteil**
-  - Schneide **1 Rückteil**
+  - **1 zurück schneiden**
   - Schneide **2 Zwickel**
 
 <Note>
