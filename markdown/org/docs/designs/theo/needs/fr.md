@@ -1,6 +1,6 @@
-- - -
+---
 title: "Theo trousers: What You Need"
-- - -
+---
 
 Pour que Theodore, vous aurez besoin des éléments suivants :
 
