@@ -1,6 +1,6 @@
-- - -
-title: "Sleevecap front Y"
-- - -
+---
+title: "Tête de manche devant Y"
+---
 
 ![La position verticale du point de flexion avant](./sleevecapfrontfactory.svg)
 
@@ -14,4 +14,4 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_sleevecapfrontfactory_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_sleevecapfrontfactory_sample.svg "Effet de cette option sur le motif")
