@@ -1,6 +1,6 @@
-- - -
-title: "Button free length"
-- - -
+---
+title: "Longitud sin botones"
+---
 
 ![Longitud sin botones](./buttonfreelength.svg)
 
