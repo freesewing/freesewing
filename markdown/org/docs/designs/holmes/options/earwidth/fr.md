@@ -1,6 +1,6 @@
-- - -
-title: "Ear flap width"
-- - -
+---
+title: "Largeur du rabat de l'oreille"
+---
 
 ***
 
