@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sandy circle skirt: Fabric Options"
-- - -
+---
 
 ### Tela principal
 
