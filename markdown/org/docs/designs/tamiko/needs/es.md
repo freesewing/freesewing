@@ -1,6 +1,6 @@
-- - -
+---
 title: "Tamiko top: What You Need"
-- - -
+---
 
 Para hacer Tamiko, necesitarás lo siguiente:
 
