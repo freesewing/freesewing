@@ -1,6 +1,6 @@
-- - -
-titre : "Hauteur de poche"
-- - -
+---
+title: "Hauteur de la poche"
+---
 
 ![Hauteur de la poche](./pocketheight.svg)
 
@@ -8,4 +8,4 @@ Contrôle la hauteur de la poche avant.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](huey_pocketheight_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](huey_pocketheight_sample.svg "Effet de cette option sur le motif")
