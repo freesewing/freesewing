@@ -1,6 +1,6 @@
-- - -
-title: "Knot width"
-- - -
+---
+title: "Ancho de nudo"
+---
 
 ![Ancho de nudo](knotwidth.svg)
 
