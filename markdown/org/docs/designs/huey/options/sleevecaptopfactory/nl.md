@@ -1,6 +1,6 @@
-- - -
-title: "Sleevecap top Y"
-- - -
+---
+title: "Mouwkop top X"
+---
 
 ![De verticale locatie van de bovenkant van de mouwkop](./sleevecaptopfactory.svg)
 
