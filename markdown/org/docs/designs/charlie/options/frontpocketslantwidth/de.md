@@ -1,6 +1,6 @@
-- - -
-title: "Front pocket slant width"
-- - -
+---
+title: "Fronttasche Schrägbreite"
+---
 
 Steuert die Breite, mit der die Vordertaschenschicht in die Vordertafel geschnitten wird.
 
