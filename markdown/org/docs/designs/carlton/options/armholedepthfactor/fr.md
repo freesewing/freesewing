@@ -1,6 +1,6 @@
-- - -
-titre : "Facteur de profondeur d'emmanchure"
-- - -
+---
+title: "Hauteur de l'emmanchure"
+---
 
 ![Hauteur de l'emmanchure](./armholedepthfactor.svg)
 
@@ -8,4 +8,4 @@ Cela permet de contrôler la profondeur de l'emmanchure qui, à son tour, influe
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlton_armholedepthfactor_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlton_armholedepthfactor_sample.svg "Effet de cette option sur le motif")
