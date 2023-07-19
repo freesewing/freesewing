@@ -1,6 +1,6 @@
-- - -
+---
 title: "Yuri hoodie: Fabric Options"
-- - -
+---
 
 In einem Stoffgeschäft deiner Wahl findest du eine spezielle Sweatshirt-/Tracksuit Stoffabteilung. Wenn nicht, schaue einfach nach der Strickwarensektion und suche nach einem dickeren und bequemen Strickstoff.
 
@@ -10,8 +10,8 @@ Achte auf die Innenseite des Stoffes. Sweatshirt-Stoffe kommen in loopback und z
 
 <Note>
 
-Du musst keinen Sweatshirt-Stoff verwenden. Andere Optionen sind verfügbar, vom modischen Neopren (aka scuba) bis hin zu einer exzentrischen Wahl wie gebrochener Velour (aka Samt).
+Sie müssen keine Sweatshirt-Stoff verwenden. Andere Optionen sind verfügbar, von modischem Neopren (aka scuba) bis hin zu einer augenblicklicheren Wahl wie zerkleinerter Velour (aka Velvet).
 
-Oder wenn du deine Klasse aufgegeben hast, kannst du nach Fleece greifen.
+Oder wenn du die Klasse aufgegeben hast, kannst du nach Vlies gehen.
 
 </Note>
