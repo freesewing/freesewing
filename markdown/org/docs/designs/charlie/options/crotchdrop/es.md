@@ -1,6 +1,6 @@
-- - -
-title: "Crotch drop"
-- - -
+---
+title: "Gota de cromo"
+---
 
 Controla por cuánto se reduce el crocer.
 
