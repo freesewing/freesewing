@@ -1,6 +1,6 @@
-- - -
-title: "Wedge"
-- - -
+---
+title: "Spie"
+---
 
 Bepaalt de lengte van de kruisnaad.
 
