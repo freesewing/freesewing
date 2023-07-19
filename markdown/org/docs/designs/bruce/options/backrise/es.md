@@ -1,6 +1,6 @@
-- - -
-title: "Back rise"
-- - -
+---
+title: "Elevación de la espalda"
+---
 
 ![Opción de retroceso en Bruce](./backrise.svg)
 
