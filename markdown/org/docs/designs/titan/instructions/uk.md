@@ -1,6 +1,6 @@
-- - -
-назва: "Брючний блок "Титан": Інструкція з пошиття"
-- - -
+---
+title: "Titan trouser block: Sewing Instructions"
+---
 
 <Note>
 
