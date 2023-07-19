@@ -1,6 +1,6 @@
-- - -
-title: "Buttonhole placket width"
-- - -
+---
+title: "Anchura de la vista de los ojales"
+---
 
 ![Anchura de la vista de los ojales](buttonholeplacketwidth.svg)
 
