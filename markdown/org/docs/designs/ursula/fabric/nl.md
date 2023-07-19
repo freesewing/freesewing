@@ -1,6 +1,6 @@
-- - -
+---
 title: "Ursula undies: Fabric Options"
-- - -
+---
 
 Je hebt een stof nodig met veel horizontale en verticale stretch (soms "vierweg stretch") voor dit patroon. Bij voorkeur iets dat comfortabel, zacht en adembaar is.
 
