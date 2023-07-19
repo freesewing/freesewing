@@ -1,6 +1,6 @@
-- - -
-title: "Collar bend"
-- - -
+---
+title: "Kromming kraag"
+---
 
 ![Kromming kraag](collarbend.svg)
 
