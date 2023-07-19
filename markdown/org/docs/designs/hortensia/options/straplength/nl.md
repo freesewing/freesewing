@@ -1,6 +1,6 @@
-- - -
-title: "Strap length"
-- - -
+---
+title: "Rep lengte"
+---
 
 Bepaalt de lengte van de band.
 
