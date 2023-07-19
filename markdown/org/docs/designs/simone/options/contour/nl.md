@@ -1,6 +1,6 @@
-- - -
+---
 title: "Contour"
-- - -
+---
 
 Bepaalt in hoeverre de extra ruimte voor borsten onder de buste verwijderd wordt.
 
