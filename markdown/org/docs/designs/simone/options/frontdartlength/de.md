@@ -1,6 +1,6 @@
-- - -
-title: "Front dart length"
-- - -
+---
+title: "Länge der vorderen Abnäher"
+---
 
 Controls how close the **front waist darts** approach the bust points.
 
@@ -9,4 +9,4 @@ Controls how close the **front waist darts** approach the bust points.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](simone_frontdartlength_sample.svg "Effekt dieser Variable auf das Schnittmuster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_frontdartlength_sample.svg "Effekt dieser Option auf das Schnittmuster")
