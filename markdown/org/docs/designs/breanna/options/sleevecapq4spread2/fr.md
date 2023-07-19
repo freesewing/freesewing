@@ -1,6 +1,6 @@
-- - -
-title: "Sleevecap Q4 downward spread"
-- - -
+---
+title: "Tête de manche abaissement Q4"
+---
 
 ![La propagation vers le bas dans le quatrième quadrant de la tête de manche](./sleevecapq4spread2.svg)
 
@@ -14,4 +14,4 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_sleevecapq4spread2_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_sleevecapq4spread2_sample.svg "Effet de cette option sur le motif")
