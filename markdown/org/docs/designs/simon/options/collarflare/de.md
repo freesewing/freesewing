@@ -1,6 +1,6 @@
-- - -
-title: "Collar flare"
-- - -
+---
+title: "Kragenausstellung"
+---
 
 ![Kragenausstellung](collarflare.svg)
 
