@@ -1,6 +1,6 @@
-- - -
-title: "Zipper size"
-- - -
+---
+title: "Rits grootte"
+---
 
 What size zipper the pattern uses to draft.
 
