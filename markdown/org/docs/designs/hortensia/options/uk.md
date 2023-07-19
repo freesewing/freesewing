@@ -1,5 +1,5 @@
-- - -
-назва: "Сумочка Гортензія: Варіанти дизайну"
-- - -
+---
+title: "Hortensia handbag: Design Options"
+---
 
 <PatternOptions pattern='hortensia' />
