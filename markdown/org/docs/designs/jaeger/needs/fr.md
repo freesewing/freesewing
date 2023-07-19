@@ -1,6 +1,6 @@
-- - -
+---
 title: "Jaeger jacket: What You Need"
-- - -
+---
 
 Pour fabriquer Jaeger, vous aurez besoin des éléments suivants:
 
