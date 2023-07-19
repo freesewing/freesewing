@@ -1,6 +1,6 @@
-- - -
+---
 title: "Huey hoodie: Fabric Options"
-- - -
+---
 
 Vous pouvez trouver une section spéciale pour le tissu sweat dans votre magasin de tissus. Si vous n'en avez pas, il suffit de vous diriger vers la section mailles/Jersey et de chercher un tissu plus épais et confortable.
 
