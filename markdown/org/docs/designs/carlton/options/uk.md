@@ -1,5 +1,5 @@
-- - -
-назва: "Пальто "Карлтон": Варіанти дизайну"
-- - -
+---
+title: "Carlton coat: Design Options"
+---
 
 <PatternOptions pattern='carlton' />
