@@ -1,6 +1,6 @@
-- - -
-title: "Yoke height"
-- - -
+---
+title: "Hauteur du yoke"
+---
 
 Controls the height of the yoke seam.
 
@@ -9,4 +9,4 @@ Controls the height of the yoke seam.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_yokeheight_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_yokeheight_sample.svg "Effet de cette option sur le motif")
