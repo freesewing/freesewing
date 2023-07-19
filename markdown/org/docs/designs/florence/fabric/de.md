@@ -1,6 +1,6 @@
-- - -
+---
 title: "Florence face mask: Fabric Options"
-- - -
+---
 
 Das Ziel unserer Maske ist es, die Tröpfchen zu stoppen. Du willst dich also für etwas entscheiden, das diese herausfiltert. Andererseits musst du in der Lage sein, durch deine Maske zu atmen, deshalb wollen wir Gewebe, das atmet, ohne Tröpfchen durchzulassen.
 
