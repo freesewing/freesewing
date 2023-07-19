@@ -1,6 +1,6 @@
-- - -
-назва: "Титанова штанина: Інструкція з розкрою"
-- - -
+---
+title: "Titan trouser block: Cutting Instructions"
+---
 
 **Основна тканина**
 
