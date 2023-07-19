@@ -1,6 +1,6 @@
-- - -
-title: "Hip rise"
-- - -
+---
+title: "Elevación de la cadera"
+---
 
 ![La opción de ascenso de cadera en la Catedral](./hiprise.svg)
 
