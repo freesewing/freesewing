@@ -1,6 +1,6 @@
-- - -
-title: "End style"
-- - -
+---
+title: "Puntvorm"
+---
 
 ![Drie verschillende puntjes](endstyle.svg)
 
