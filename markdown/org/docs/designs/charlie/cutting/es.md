@@ -1,6 +1,6 @@
-- - -
+---
 title: "Charlie chinos: Cutting Instructions"
-- - -
+---
 
 ##### De tela principal
 
