@@ -1,8 +1,8 @@
-- - -
-title: "Rückenhalsausschnitt"
-- - -
+---
+title: "Ausschnitt im Nacken"
+---
 
-![Rückenhalsausschnitt](./backneckcutout.svg)
+![Ausschnitt im Nacken](./backneckcutout.svg)
 
 Beeinflusst die Tiefe des Halsausschnitts im Rückenteil. Mit anderen Worten, wenn man diesen erhöht, wird der Halsausschnitt hinten weiter.
 
