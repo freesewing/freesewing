@@ -1,6 +1,6 @@
-- - -
-title: "Head ease"
-- - -
+---
+title: "Holgura de cabeza"
+---
 
 ***
 
