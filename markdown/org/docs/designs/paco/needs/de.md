@@ -1,6 +1,6 @@
-- - -
+---
 title: "Paco pants: What You Need"
-- - -
+---
 
 Um Paco zu erstellen, benötigst du Folgendes:
 
