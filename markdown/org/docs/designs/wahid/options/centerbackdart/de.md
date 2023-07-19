@@ -1,6 +1,6 @@
-- - -
-title: "Center back dart"
-- - -
+---
+title: "Abnäher in der hinteren Mitte"
+---
 
 ![Zentrierter Dart](centerbackdart.svg)
 
