@@ -1,6 +1,6 @@
-- - -
-title: "Flat-felled seam allowace"
-- - -
+---
+title: "Costura plana permitida"
+---
 
 Controls the amount of seam allowance on flat-felled seams.
 
