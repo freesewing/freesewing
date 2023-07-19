@@ -8,4 +8,4 @@ La opción de **curvatura del agujero de armadura trasera** controla cuánto se 
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción al superponer varias variantes que tienen un valor diferente para esta opción](noble_backarmholecurvature_sample.svg "Efecto de esta opción en el patrón")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](noble_backarmholecurvature_sample.svg "Efecto de esta opción en el patrón")
