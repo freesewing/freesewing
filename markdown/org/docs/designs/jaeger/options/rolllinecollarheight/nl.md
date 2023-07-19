@@ -1,6 +1,6 @@
-- - -
-title: "Roll-line collar height"
-- - -
+---
+title: "Rollijn kraaghoogte"
+---
 
 ![Hoogte breuklijn kraag](rolllinecollarheight.svg)
 
