@@ -1,6 +1,6 @@
-- - -
-title: "Leg reduction"
-- - -
+---
+title: "Been reductie"
+---
 
 Hoeveel smaller de (boven)benen moeten worden.
 
