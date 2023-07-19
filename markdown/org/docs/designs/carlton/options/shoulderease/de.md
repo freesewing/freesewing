@@ -1,6 +1,6 @@
-- - -
-title: "Shoulder ease"
-- - -
+---
+title: "Schulter Zugabe"
+---
 
 ![Schulter Zugabe](./shoulderease.svg)
 
