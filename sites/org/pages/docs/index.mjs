@@ -4,7 +4,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useCallback } from 'react'
 import { useDynamicMdx } from 'shared/hooks/use-dynamic-mdx.mjs'
 // Components
-import { Page } from './[...slug].mjs'
+import { Page, ns } from './[...slug].mjs'
 
 const DocsHomePage = ({ page, slug, locale }) => {
   const loader = useCallback(

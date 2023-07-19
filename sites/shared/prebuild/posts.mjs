@@ -35,8 +35,8 @@ export const prebuildPosts = async (site) => {
         path.resolve('..', site, 'prebuild', `${types[i]}-paths.mjs`),
         `${header}export const order = ${JSON.stringify(
           sorted,
-          2,
-          null
+          null,
+          2
         )}\nexport const postInfo = ${JSON.stringify(resultPages, 2, null)}`
       )
     )

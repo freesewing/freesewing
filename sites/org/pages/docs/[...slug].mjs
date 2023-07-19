@@ -11,7 +11,7 @@ import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { DocsLayout, ns as layoutNs } from 'site/components/layouts/docs.mjs'
 import { loaders } from 'shared/components/dynamic-docs/org.mjs'
 
-const ns = [...pageNs, layoutNs]
+export const ns = [...pageNs, layoutNs]
 /*
  * PLEASE READ THIS BEFORE YOU TRY TO REFACTOR THIS PAGE
  *

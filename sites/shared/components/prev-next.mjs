@@ -31,10 +31,10 @@ const NextPage = ({ t, s }) =>
     <span></span>
   )
 
-const getItemWithCaveat = (index, slugLut, siteNav, shouldGet) => {
-  if (index === false || shouldGet === true) return null
+const getItemWithCaveat = (index, slugLut, siteNav, shouldHide) => {
+  if (shouldHide === true) return null
 
-  if (typeof shouldGet === 'function' && shouldGet(slugLut[index])) return null
+  if (typeof shouldHide === 'function' && shouldHide(slugLut[index])) return null
 
   return get(siteNav, slugLut[index].split('/'))
 }
