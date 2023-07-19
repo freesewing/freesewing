@@ -1,6 +1,6 @@
-- - -
-title: "Sleevecap Q1 offset"
-- - -
+---
+title: "Mouwkop Q1 offset"
+---
 
 ![De offset in het eerste kwartaal van de mouwkop](./sleevecapq1offset.svg)
 
