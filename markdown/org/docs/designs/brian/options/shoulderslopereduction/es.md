@@ -1,6 +1,6 @@
-- - -
-title: "Shoulder slope reduction"
-- - -
+---
+title: "Reducción de caída del hombro"
+---
 
 ![Reducción de caída del hombro](./shoulderslopereduction.svg)
 
