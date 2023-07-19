@@ -1,5 +1,5 @@
-- - -
-title: "Bent body Block"
-- - -
+---
+title: "Bent Basisvorm"
+---
 
 <PatternDocs pattern='bent' />
