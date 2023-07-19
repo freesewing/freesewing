@@ -1,6 +1,6 @@
-- - -
-title: "Diana, das Wasserfallshirt: Zuschnitt"
-- - -
+---
+title: "Diana draped top: Cutting Instructions"
+---
 
 - Schneide **1 Rückenteil** im Stoffbruch
 - Schneide **1 Vorderteil** im Stoffbruch
