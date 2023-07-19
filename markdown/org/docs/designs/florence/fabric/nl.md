@@ -1,6 +1,6 @@
-- - -
+---
 title: "Florence face mask: Fabric Options"
-- - -
+---
 
 Het doel van ons masker is om droplets te stoppen. Dus u wilt iets doen dat de mensen wegjaagt. En nogmaals, je moet door je masker kunnen ademen, zodat we stof willen die adem ademt, zonder droplets door te laten gaan.
 
