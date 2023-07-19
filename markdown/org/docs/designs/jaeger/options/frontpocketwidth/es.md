@@ -1,6 +1,6 @@
-- - -
-title: "Front pocket width"
-- - -
+---
+title: "Ancho bolsillo frontal"
+---
 
 ![Ancho bolsillo frontal](frontpocketwidth.svg)
 
