@@ -1,6 +1,6 @@
-- - -
-title: "Sac à main Hortensia : Instructions de coupe"
-- - -
+---
+title: "Hortensia handbag: Cutting Instructions"
+---
 
 ### Matériaux
 
