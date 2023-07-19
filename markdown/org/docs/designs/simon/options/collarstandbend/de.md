@@ -1,6 +1,6 @@
-- - -
-title: "Collar stand bend"
-- - -
+---
+title: "Kragenstegbiegung"
+---
 
 ![Kollarstand Biegen](collarstandbend.svg)
 
