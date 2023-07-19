@@ -1,6 +1,6 @@
-- - -
-title: "Front overlap"
-- - -
+---
+title: "Superposición frontal"
+---
 
 How far the fabric extends beyond the button closure.
 
