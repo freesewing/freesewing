@@ -1,6 +1,6 @@
-- - -
-title: "Sleevecap Q4 upward spread"
-- - -
+---
+title: "Armkugel Q4 Spreizung nach oben"
+---
 
 ![Die Aufwärtsverteilung im vierten Viertel der Ärmel](./sleevecapq4spread1.svg)
 
