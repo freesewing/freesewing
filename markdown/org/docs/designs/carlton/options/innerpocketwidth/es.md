@@ -1,6 +1,6 @@
-- - -
-title: "Inner pocket width"
-- - -
+---
+title: "Ancho bolsillo interior"
+---
 
 Controla el ancho del bolsillo interior.
 
