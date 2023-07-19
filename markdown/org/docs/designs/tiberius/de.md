@@ -1,5 +1,5 @@
-- - -
-title: "Tiberius Tunica"
-- - -
+---
+title: "Tiberius, die Tunica"
+---
 
 <PatternDocs pattern='tiberius' />
