@@ -1,6 +1,6 @@
-- - -
-назва: "Штани-обгортки Waralee: Інструкція з крою"
-- - -
+---
+title: "Waralee wrap pants: Cutting Instructions"
+---
 
 <Note>
 
