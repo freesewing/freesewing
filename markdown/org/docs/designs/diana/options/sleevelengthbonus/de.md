@@ -1,6 +1,6 @@
-- - -
-title: "Längenzugabe Ärmel"
-- - -
+---
+title: "Ärmel Längenzugabe"
+---
 
 ![Die Hülle-Bonusoption auf Diana](./sleevelengthbonus.svg)
 
