@@ -1,6 +1,6 @@
-- - -
-title: "Collar gap"
-- - -
+---
+title: "Kragenlücke"
+---
 
 ![Kragenlücke](collargap.svg)
 
