@@ -1,6 +1,6 @@
-- - -
+---
 title: "Cathrin corset: What You Need"
-- - -
+---
 
 Korsetten zijn makkelijker te bouwen dan ze lijken, maar ze hebben wel verschillende specialistische voorwerpen en gereedschap nodig.
 
