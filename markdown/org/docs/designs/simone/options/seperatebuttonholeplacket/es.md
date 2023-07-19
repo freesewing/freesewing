@@ -1,6 +1,6 @@
-- - -
-title: "Seperate buttonhole placket"
-- - -
+---
+title: "Tapeta de ojal separada"
+---
 
 ![Tapeta de ojal separada](seperatebuttonholeplacket.svg)
 
