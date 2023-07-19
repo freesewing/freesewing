@@ -1,6 +1,6 @@
-- - -
-title: "Neckline drop"
-- - -
+---
+title: "Diepte halslijn"
+---
 
 ![Diepte halslijn](necklinedrop.svg)
 
