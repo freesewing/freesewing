@@ -1,6 +1,6 @@
-- - -
-назва: "Лунецій Лацерна: Інструкція з шиття"
-- - -
+---
+title: "Lunetius Lacerna: Sewing Instructions"
+---
 
 <Note>
 
