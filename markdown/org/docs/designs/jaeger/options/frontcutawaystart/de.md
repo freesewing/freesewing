@@ -1,6 +1,6 @@
-- - -
-title: "Front cutaway start"
-- - -
+---
+title: "Stern vorne"
+---
 
 ![Stern vorne](frontcutawaystart.svg)
 
