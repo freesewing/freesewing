@@ -1,6 +1,6 @@
-- - -
-title: "Collar flare"
-- - -
+---
+title: "Forma de los picos del cuello"
+---
 
 ![Forma de los picos del cuello](collarflare.svg)
 
