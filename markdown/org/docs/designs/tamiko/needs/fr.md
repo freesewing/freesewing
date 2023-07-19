@@ -1,6 +1,6 @@
-- - -
-title: "Top Tamiko : ce dont vous avez besoin"
-- - -
+---
+title: "Tamiko top: What You Need"
+---
 
 Pour faire Tamiko, vous aurez besoin des éléments suivants :
 
