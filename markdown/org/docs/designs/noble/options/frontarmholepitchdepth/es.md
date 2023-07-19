@@ -8,4 +8,4 @@ La opción **profundidad de zanqueo del orificio frontal** controla la posición
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción al superponer varias variantes que tienen un valor diferente para esta opción](noble_frontarmholepitchdepth_sample.svg "Efecto de esta opción en el patrón")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](noble_frontarmholepitchdepth_sample.svg "Efecto de esta opción en el patrón")
