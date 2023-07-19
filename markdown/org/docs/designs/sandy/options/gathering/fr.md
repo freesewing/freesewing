@@ -1,6 +1,6 @@
-- - -
-title: "Gathering"
-- - -
+---
+title: "Fronçage"
+---
 
 ![Fronçage](gathering.svg)
 
@@ -8,4 +8,4 @@ Le pourcent par lequel le tissu du haut de la jupe est plus long que celui du ba
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sandy_gathering_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sandy_gathering_sample.svg "Effet de cette option sur le motif")
