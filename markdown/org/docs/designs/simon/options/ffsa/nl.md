@@ -1,6 +1,6 @@
-- - -
-title: "Flat-felled seam allowace"
-- - -
+---
+title: "Glanzende naadwaarde"
+---
 
 Controls the amount of seam allowance on flat-felled seams.
 
