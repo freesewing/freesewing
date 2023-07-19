@@ -1,5 +1,5 @@
-- - -
-titel: "Albert schort"
-- - -
+---
+title: "Albert schort"
+---
 
 <PatternDocs pattern='albert' />
