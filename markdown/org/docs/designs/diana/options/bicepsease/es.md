@@ -1,6 +1,6 @@
-- - -
-title: "Biceps ease"
-- - -
+---
+title: "Holgura del bíceps"
+---
 
 ![La opción de holgura de sisa en Diana](./bicepsease.svg)
 
