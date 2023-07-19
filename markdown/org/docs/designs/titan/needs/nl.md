@@ -1,6 +1,6 @@
-- - -
+---
 title: "Titan trouser block: What You Need"
-- - -
+---
 
 Om Titaan te maken heb je het volgende nodig:
 
