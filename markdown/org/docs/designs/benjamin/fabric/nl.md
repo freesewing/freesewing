@@ -1,6 +1,6 @@
-- - -
+---
 title: "Benjamin bow tie: Fabric Options"
-- - -
+---
 
 De vlinderdasjes die je in de winkel vindt zijn meestal gemaakt uit zijde of imitatiezijde (vaak polyester). Het is dus niet verrassend dat dit goede opties zijn. Any type of fabric that you like the pattern or looks of can become a candidate for a bow tie. The only real limitation is that the bow tie will have to be turned inside out through a tube that is only 2cm across. Met sommige zwaardere stoffen kan dit een probleem vormen.
 
