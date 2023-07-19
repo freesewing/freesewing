@@ -1,5 +1,5 @@
-- - -
-"Метелик Бенджамін": "Метелик Бенджаміна: Необхідні виміри"
-- - -
+---
+title: "Benjamin bow tie: Required Measurements"
+---
 
 <PatternMeasurements pattern='benjamin' />
