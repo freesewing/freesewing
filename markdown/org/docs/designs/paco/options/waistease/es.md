@@ -1,6 +1,6 @@
-- - -
-title: "Waist ease"
-- - -
+---
+title: "Holgura de cintura"
+---
 
 Controla la cantidad de facilidad en la cintura.
 
