@@ -1,6 +1,6 @@
-- - -
-titre : "décalage Q1 de la tête de manche"
-- - -
+---
+title: "Tête de manche décalage Q1"
+---
 
 ***
 
@@ -16,4 +16,4 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_sleevecapq1offset_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_sleevecapq1offset_sample.svg "Effet de cette option sur le motif")
