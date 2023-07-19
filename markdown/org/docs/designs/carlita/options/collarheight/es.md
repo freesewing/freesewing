@@ -1,6 +1,6 @@
-- - -
-title: "Collar height"
-- - -
+---
+title: "Altura del cuello"
+---
 
 ![Altura del cuello](collarheight.svg)
 
