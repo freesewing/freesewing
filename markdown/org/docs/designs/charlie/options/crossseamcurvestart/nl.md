@@ -1,6 +1,6 @@
-- - -
-title: "Start of the cross seam curve"
-- - -
+---
+title: "Begin van de curve van de binnenbeennaad"
+---
 
 Bepaalt het begin van de kruisnaadcurve.
 
