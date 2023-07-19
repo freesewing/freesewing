@@ -1,6 +1,6 @@
-- - -
-title: "Front pocket placement"
-- - -
+---
+title: "Plaatsing voorzak"
+---
 
 ![Plaatsing voorzak](frontpocketplacement.svg)
 
