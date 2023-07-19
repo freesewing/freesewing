@@ -8,7 +8,7 @@ import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 
 export const ns = ['common', 'posts']
 
-export const PostArticle = ({ slug, frontmatter, MDX, page }) => {
+export const PostArticle = ({ frontmatter, MDX }) => {
   const { t } = useTranslation('common')
   return (
     <article className="mb-12 px-8 max-w-7xl">

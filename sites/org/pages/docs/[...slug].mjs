@@ -3,12 +3,10 @@ import { mdxPaths } from 'site/prebuild/mdx-paths.en.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Hooks
-import { useState, useEffect, useCallback } from 'react'
+import { useCallback } from 'react'
 import { useDynamicMdx } from 'shared/hooks/use-dynamic-mdx.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { Loading } from 'shared/components/spinner.mjs'
-import { components } from 'shared/components/mdx/index.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { DocsLayout, ns as layoutNs } from 'site/components/layouts/docs.mjs'
 import { loaders } from 'shared/components/dynamic-docs/org.mjs'
@@ -36,7 +34,7 @@ const ns = [...pageNs, layoutNs]
  * joost
  *
  */
-export const Page = ({ page, locale, frontmatter, MDX, slug }) => (
+export const Page = ({ page, locale, frontmatter, MDX }) => (
   <PageWrapper
     {...page}
     locale={locale}

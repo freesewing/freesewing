@@ -21,11 +21,12 @@ export const ns = [navNs, 'docs'] //navNs
 
 const isEndSlug = (slug) => slug.split('/').length === 1
 
-export const PostLayout = ({ children = [], slug, frontmatter }) => {
+export const PostLayout = ({ children = [], slug, frontmatter, locale }) => {
   const { siteNav } = useNavigation({ ignoreControl: true })
 
   return (
     <>
+      <FrontmatterHead {...{ frontmatter, slug, locale }} />
       <BaseLayout>
         <BaseLayoutLeft>
           <MainSections {...{ siteNav, slug }} />

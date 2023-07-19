@@ -7,7 +7,7 @@ export const getPostSlugPaths = (order) => {
 
   for (const lang in order) {
     for (let i = 0; i < preGenerate; i++) {
-      const slug = order[lang][i]
+      ß
       paths.push(localePath(lang, `${order[lang][i]}`))
     }
   }

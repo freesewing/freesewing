@@ -20,7 +20,7 @@ import { PrevNext } from 'shared/components/prev-next.mjs'
 
 export const ns = [navNs, 'docs'] //navNs
 
-export const FrontmatterHead = ({ frontmatter }) => (
+export const FrontmatterHead = ({ frontmatter, slug, locale }) => (
   <Head>
     <meta property="og:title" content={frontmatter.title} key="title" />
     <meta property="og:type" content="article" key="type" />
@@ -50,6 +50,7 @@ export const DocsLayout = ({ children = [], slug, frontmatter, locale }) => {
 
   return (
     <>
+      <FrontmatterHead {...{ frontmatter, slug, locale }} />
       <BaseLayout>
         <BaseLayoutLeft>
           <MainSections {...{ siteNav, slug }} />

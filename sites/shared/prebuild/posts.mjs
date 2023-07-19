@@ -1,8 +1,6 @@
 import { loadMdxForPrebuild, header } from './docs.mjs'
 import fs from 'fs/promises'
 import path from 'path'
-import rdir from 'recursive-readdir'
-import orderBy from 'lodash.orderby'
 
 const types = ['blog', 'showcase', 'newsletter']
 
@@ -20,8 +18,6 @@ export const prebuildPosts = async (site) => {
   const writeOps = []
   const pages = {}
   for (var i = 0; i < types.length; i++) {
-    const writePath = path.resolve('..', site, 'prebuild', types[i])
-
     const sorted = {}
     const resultPages = results[i]
 

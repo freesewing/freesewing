@@ -1,12 +1,9 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Hooks
-import { useState, useEffect, useCallback } from 'react'
+import { useCallback } from 'react'
 import { useDynamicMdx } from 'shared/hooks/use-dynamic-mdx.mjs'
 // Components
-import { ns } from 'shared/components/wrappers/page.mjs'
-import { components } from 'shared/components/mdx/index.mjs'
-//import { TocWrapper } from 'shared/components/wrappers/toc.mjs'
 import { Page } from './[...slug].mjs'
 
 const DocsHomePage = ({ page, slug, locale }) => {
