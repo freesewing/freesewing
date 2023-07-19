@@ -1,6 +1,6 @@
-- - -
+---
 title: "Titan trouser block: What You Need"
-- - -
+---
 
 Um Titan zu erstellen, benötigst du Folgendes:
 
