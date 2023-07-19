@@ -1,6 +1,6 @@
-- - -
-назва: "Туніка Тіберія: Інструкція з пошиття"
-- - -
+---
+title: "Tiberius Tunica: Sewing Instructions"
+---
 
 <Note>
 
