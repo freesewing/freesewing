@@ -1,6 +1,6 @@
-- - -
+---
 title: "Jaeger jacket: Fabric Options"
-- - -
+---
 
 Les scoats sportifs sont généralement fabriqués à partir d'une laine plus lourde, souvent avec une texture ou un motif dans le tissage. En général, ils sont fabriqués en tissus _plus achalandés_.
 
