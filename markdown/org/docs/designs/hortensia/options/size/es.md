@@ -1,6 +1,6 @@
-- - -
-title: "Size"
-- - -
+---
+title: "Talla"
+---
 
 Controla el tamaño total del bolso.
 
