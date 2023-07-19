@@ -1,6 +1,6 @@
-- - -
-title: "Length bonus"
-- - -
+---
+title: "Bonus de longitud"
+---
 
 The amount to lengthen the garment by. A negative value will shorten it.
 
