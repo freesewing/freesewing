@@ -1,6 +1,6 @@
-- - -
-title: "Heel ease"
-- - -
+---
+title: "Overwijdte hiel"
+---
 
 Dit controleert de hoeveelheid overwijdte aan de plaats of heel.
 
