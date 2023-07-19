@@ -15,7 +15,7 @@ Noble is based on the Bella body block
 
 </Note>
 
-### Step 1: Mock-up Construction
+### Stap 1: Model constructie
 
 - Sew the front inside to the front outside, good sides together.
 
