@@ -1,6 +1,6 @@
-- - -
+---
 title: "Simon shirt: What You Need"
-- - -
+---
 
 Pour faire du Simon, vous aurez besoin des éléments suivants :
 
