@@ -1,6 +1,6 @@
-- - -
-назва: "Штани Тео: Інструкція з пошиття"
-- - -
+---
+title: "Theo trousers: Sewing Instructions"
+---
 
 <Note>
 
