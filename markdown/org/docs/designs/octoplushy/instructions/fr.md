@@ -42,8 +42,8 @@ Before sewing the eyebrows in half, you can stuff the eyebrows to create a more 
 </Note>
 
 - **Calamar**
-  - Avec _l'endroit contre endroit_, coudre les quatre parties de la tête ensemble, de l'encoche B à la pointe de la partie de la tête A, en créant une forme de demi-sphère.
-  - Répéter l'opération avec les quatre autres parties de la tête pour créer une deuxième moitié.
+  - With _good sides together_ sew four head parts together, from notch B to the tip of the head part A creating a semi-sphere like shape.
+  - Repeat with the remaining four head parts to create a second half.
   - Sur la tête (a), les pièces se plient le long de la ligne de pliage, _endroit contre endroit_.
   - Sew the straight line that juts out and then turn the flap _good sides_ out.
   - With _good sides together_ sew the non - flap edges of the head (a) parts to the one of the head halves sewn earlier, from notch B to the tip of the head part A.
