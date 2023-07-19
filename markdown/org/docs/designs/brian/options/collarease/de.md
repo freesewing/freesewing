@@ -1,6 +1,6 @@
-- - -
-title: "Collar ease"
-- - -
+---
+title: "Kragen Zugabe"
+---
 
 ![Kragen Zugabe](./collarease.svg)
 
