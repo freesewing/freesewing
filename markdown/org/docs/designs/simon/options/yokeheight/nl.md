@@ -1,6 +1,6 @@
-- - -
-title: "Yoke height"
-- - -
+---
+title: "Hoogte schouderpas"
+---
 
 Controls the height of the yoke seam.
 
