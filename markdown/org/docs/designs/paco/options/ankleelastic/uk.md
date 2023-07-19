@@ -1,6 +1,6 @@
-- - -
-назва: "Ширина еластичності щиколотки/пододу"
-- - -
+---
+title: "Ширина гумки на кісточці"
+---
 
 If you're using an elasticated hem at the ankle, use this to set the width of the elastic you'll use.
 
