@@ -1,6 +1,6 @@
-- - -
-title: "Front darts"
-- - -
+---
+title: "Dardos delanteros"
+---
 
 Whether to include front waist darts or not.
 
