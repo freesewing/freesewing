@@ -1,6 +1,6 @@
-- - -
+---
 title: "Waralee wrap pants: What You Need"
-- - -
+---
 
 Para hacer Waralee, necesitarás lo siguiente:
 
