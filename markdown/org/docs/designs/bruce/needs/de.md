@@ -1,6 +1,6 @@
-- - -
+---
 title: "Bruce boxer briefs: What You Need"
-- - -
+---
 
 Um Bruce zu erstellen, benötigst du Folgendes:
 
