@@ -1,6 +1,6 @@
-- - -
-title: "End style"
-- - -
+---
+title: "Estilo de las puntas"
+---
 
 ![Tres formas de punta diferentes](endstyle.svg)
 
