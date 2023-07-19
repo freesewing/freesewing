@@ -1,6 +1,6 @@
-- - -
-title: "Collar spread"
-- - -
+---
+title: "Cuello extendido"
+---
 
 Controls the distance between the points of the collar.
 
