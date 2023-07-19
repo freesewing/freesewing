@@ -1,6 +1,6 @@
-- - -
+---
 title: "Aaron, das A-Shirt: Zuschnitt"
-- - -
+---
 
 - Schneide **1 Rückenteil** im Stoffbruch
 - Schneide **1 Vorderteil** im Stoffbruch
