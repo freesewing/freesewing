@@ -1,5 +1,5 @@
-- - -
-titre : "Bloc de corps de Brian"
-- - -
+---
+title: "Patron de base Brian"
+---
 
 <PatternDocs pattern='brian' />
