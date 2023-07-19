@@ -5,6 +5,8 @@ date: "29.09.2017"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a4df7c8446671138fe4f6e07eebf32058af31999-1080x1080.jpg"
 intro: "A Trayvon tie in a Liberty silk by Victoria"
 title: "A Trayvon tie in a Liberty silk by Victoria"
+designs:
+  - "trayvon"
 ---
 
 
