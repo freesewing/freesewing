@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sandy circle skirt: What You Need"
-- - -
+---
 
 To make Sandy, you will need the following:
 
