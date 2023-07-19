@@ -8,20 +8,23 @@ import { prebuildLab } from './lab.mjs'
 import { prebuildDesigns } from './designs.mjs'
 import { prebuildFavicon } from './favicon.mjs'
 import { generateOgImage } from './og/index.mjs'
-import { loadSanityPosts } from './sanity.mjs'
+import { prebuildPosts } from './posts.mjs'
 import { prebuildCrowdin } from './crowdin.mjs'
 
 const run = async () => {
+  const now = Date.now()
   if (process.env.LINTER) return true
   const FAST = process.env.FAST ? true : false
   const SITE = process.env.SITE || 'lab'
   await prebuildDesigns()
   if (['org', 'dev'].includes(SITE)) {
-    if (!FAST) await prebuildGitData(SITE)
+    if (!FAST) {
+      await prebuildGitData(SITE)
+      await prebuildCrowdin()
+    }
     const docPages = await prebuildDocs(SITE)
-    await prebuildCrowdin()
-    const sanityPosts = await loadSanityPosts(SITE)
-    prebuildNavigation(docPages, sanityPosts, SITE)
+    const postPages = await prebuildPosts(SITE)
+    prebuildNavigation(docPages, postPages, SITE)
     if (!FAST && process.env.GENERATE_OG_IMAGES) {
       // Create og image for the home page
       await generateOgImage({
@@ -50,6 +53,7 @@ const run = async () => {
     await prebuildPatrons(SITE)
     await prebuildFavicon(SITE)
   }
+  console.log('completed prebuild in ', Date.now() - now, 'ms')
   console.log()
 }
 

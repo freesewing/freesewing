@@ -349,3 +349,10 @@ export const maxPovDepthSlug = (slug, site) => {
  * In that case, this will return true
  */
 export const isSlugPart = (part, slug) => slug.slice(0, part.length) === part
+
+/*
+ * Makes a properly formated path for the given locale
+ * (i.e. skips adding 'en' to localized paths)
+ * Expects a slug with no leading slash
+ * */
+export const localePath = (locale, slug) => (locale === 'en' ? '/' : `/${locale}/`) + slug

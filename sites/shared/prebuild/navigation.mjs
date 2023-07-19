@@ -3,9 +3,6 @@ import fs from 'fs'
 import set from 'lodash.set'
 import { loadYaml, folders } from './i18n.mjs'
 
-// Some arbitrary future time
-const future = new Date('10-12-2026').getTime()
-
 // We need to load the translation for blog + showcase
 const loadTranslation = (locale) => {
   let data
@@ -22,7 +19,7 @@ const loadTranslation = (locale) => {
 /*
  * Main method that does what needs doing
  */
-export const prebuildNavigation = (docPages, sanityPosts, site) => {
+export const prebuildNavigation = (docPages, postPages, site) => {
   /*
    * Since this is written to disk and loaded as JSON, we minimize
    * the data to load by using the following 1-character keys:
@@ -50,20 +47,19 @@ export const prebuildNavigation = (docPages, sanityPosts, site) => {
     }
 
     // Handle strapi content
-    for (const type in sanityPosts) {
+    for (const type in postPages) {
       set(nav, [lang, type], {
         t: translations[type] || type,
-        l: type,
         s: type,
-        o: type === 'blog' ? 50 : 20,
       })
-      for (const page of sanityPosts[type][lang]) {
-        const chunks = page.slug.split('/')
-        set(nav, [lang, type, ...chunks], {
-          t: page.title,
-          l: page.linktitle,
-          s: type + '/' + page.slug,
-          o: (future - new Date(page.date).getTime()) / 100000,
+
+      for (const page in postPages[type][lang]) {
+        const pageData = postPages[type][lang][page]
+        const chunks = page.split('/')
+        set(nav, [lang, ...chunks], {
+          t: pageData.t,
+          s: page,
+          o: pageData.o,
         })
       }
     }

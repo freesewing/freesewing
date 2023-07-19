@@ -31,7 +31,15 @@ const NextPage = ({ t, s }) =>
     <span></span>
   )
 
-export const PrevNext = ({ slug, noPrev = false }) => {
+const getItemWithCaveat = (index, slugLut, siteNav, shouldHide) => {
+  if (shouldHide === true) return null
+
+  if (typeof shouldHide === 'function' && shouldHide(slugLut[index])) return null
+
+  return get(siteNav, slugLut[index].split('/'))
+}
+
+export const PrevNext = ({ slug, noPrev = false, noNext = false }) => {
   // Grab site navigation and slug lookup table from the useNavigatin hook
   const { siteNav, slugLut } = useNavigation()
 
@@ -44,13 +52,13 @@ export const PrevNext = ({ slug, noPrev = false }) => {
   const iNext = index === slugLut.length - 1 ? 0 : index + 1
 
   // Subtract 1 for the previous page, unless it's the first page
-  const iPrev = noPrev ? false : index === 0 ? slugLut.length - 1 : index - 1
+  let iPrev = index === 0 ? slugLut.length - 1 : index - 1
 
   // Get the next page from the siteNav object
-  const next = get(siteNav, slugLut[iNext].split('/'))
+  const next = getItemWithCaveat(iNext, slugLut, siteNav, noNext)
 
   // Get the previous page from the siteNav object
-  const prev = noPrev ? false : get(siteNav, slugLut[iPrev].split('/'))
+  const prev = getItemWithCaveat(iPrev, slugLut, siteNav, noPrev)
 
   // Return content
   return (
@@ -60,8 +68,8 @@ export const PrevNext = ({ slug, noPrev = false }) => {
         'items-start pt-6 mt-6 border-t-2 border-solid border-r-0 border-l-0 border-b-0'
       }
     >
-      {noPrev ? <span /> : <PrevPage t={prev.t} s={prev.s} />}
-      <NextPage t={next.t} s={next.s} />
+      {prev ? <PrevPage t={prev.t} s={prev.s} /> : <span />}
+      {next ? <NextPage t={next.t} s={next.s} /> : <span />}
     </div>
   )
 }
