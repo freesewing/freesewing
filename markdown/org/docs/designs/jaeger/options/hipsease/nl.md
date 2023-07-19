@@ -1,6 +1,6 @@
-- - -
-title: "Overwijdte heupen"
-- - -
+---
+title: "Overwijdte heup"
+---
 
 ![Overwijdte heup](hipsease.svg)
 
