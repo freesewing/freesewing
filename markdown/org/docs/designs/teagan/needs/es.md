@@ -1,6 +1,6 @@
-- - -
+---
 title: "Teagan T-shirt: What You Need"
-- - -
+---
 
 Para hacer Teagan, necesitarás lo siguiente:
 
