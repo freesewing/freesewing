@@ -1,6 +1,6 @@
-- - -
-title: "Sleeve length bonus"
-- - -
+---
+title: "Longitud extra de manga"
+---
 
 ![Bono de matrícula](./sleevelengthbonus.svg)
 
