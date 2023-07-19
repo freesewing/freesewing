@@ -1,6 +1,6 @@
-- - -
-titre: "Bloc de corps pour Breanna : Options de conception"
-- - -
+---
+title: "Breanna body block: Design Options"
+---
 
 <PatternOptions pattern='breanna' />
 
