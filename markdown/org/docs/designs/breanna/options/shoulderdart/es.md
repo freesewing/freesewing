@@ -1,6 +1,6 @@
-- - -
-title: "Shoulder dart"
-- - -
+---
+title: "Dardo de hombro"
+---
 
 Whether or not to inlude a back shoulder dart to round the back.
 
