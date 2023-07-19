@@ -34,7 +34,7 @@
     "eslint": "8.45.0",
     "prettier": "3.0.0",
     "typescript": "5.1.6",
-    "@sanity/cli": "3.14.2"
+    "@sanity/cli": "3.14.3"
   },
   "engines": {
     "node": ">=16.0.0",
