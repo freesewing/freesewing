@@ -1,6 +1,6 @@
-- - -
-title: "Simon shirt: Cutting Instructions"
-- - -
+---
+title: "Simon, camisa: instrucciones de corte"
+---
 
 - **Tela principal**
   - Cortar **1 frente izquierdo**
