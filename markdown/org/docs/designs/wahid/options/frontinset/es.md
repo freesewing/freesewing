@@ -1,6 +1,6 @@
-- - -
-title: "Front inset"
-- - -
+---
+title: "Inserción delantera"
+---
 
 ![Inserción delantera](frontinset.svg)
 
