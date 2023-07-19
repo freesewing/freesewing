@@ -1,6 +1,6 @@
-- - -
-title: "Cross seam bend"
-- - -
+---
+title: "curva de costura cruzada"
+---
 
 Controla la curvatura de la curva de costura cruzada.
 
