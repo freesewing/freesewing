@@ -1,6 +1,6 @@
-- - -
-title: "Length ratio"
-- - -
+---
+title: "Lengteratio"
+---
 
 Controls the length of the garment
 
