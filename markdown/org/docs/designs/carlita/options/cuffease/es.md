@@ -1,6 +1,6 @@
-- - -
-title: "Cuff ease"
-- - -
+---
+title: "Holgura de muñeca"
+---
 
 ![Holgura de muñeca](./cuffease.svg)
 
