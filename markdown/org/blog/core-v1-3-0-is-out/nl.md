@@ -4,7 +4,7 @@ caption: "Weegschalen, hoe werken die?"
 date: "2018-01-04"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d09252be53d33ab5b743c22f523a9ea8cbd70708-2000x1328.jpg"
 intro: "Freesewing core v1.3.0 is uit; komt met fixes die zo goed zijn dat we ze hebben geback-port naar al je drafts"
-title: "Freesewing core v1.3.0 is uit; komt met fixes die zo goed zijn dat we ze back-ported hebben naar al je drafts"
+title: "Freesewing core v1.3.0 is uit; komt met fixes die zo goed zijn dat we ze hebben geback-port naar al je drafts"
 ---
 
 Op de laatste dag van 2017 schreven we in onze [maandelijkse roundup van al het freeswing-nieuws](/blog/roundup-2017-12/) over het dreigende probleem met onjuist geschaalde concepten, aka [Core issue #204 - The Inkscape default units quandary](https://github.com/freesewing/core/issues/204).
