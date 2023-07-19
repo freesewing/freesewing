@@ -1,6 +1,6 @@
-- - -
-title: "Pocket"
-- - -
+---
+title: "Bolsillo"
+---
 
 ![Esta opción controla si incluir o no el bolsillo frontal](./pocket.svg)
 
