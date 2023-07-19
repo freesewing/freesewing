@@ -1,6 +1,6 @@
-- - -
+---
 title: "Penelope pencil skirt: What You Need"
-- - -
+---
 
 Um Penelope zu erstellen, benötigst du Folgendes:
 
