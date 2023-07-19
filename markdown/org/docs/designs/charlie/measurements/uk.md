@@ -1,5 +1,5 @@
-- - -
-назва: "Чарлі Чінос: Необхідні виміри"
-- - -
+---
+title: "Charlie chinos: Required Measurements"
+---
 
 <PatternMeasurements pattern='charlie' />
