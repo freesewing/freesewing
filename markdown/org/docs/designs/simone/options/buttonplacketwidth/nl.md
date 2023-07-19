@@ -1,6 +1,6 @@
-- - -
-title: "Button placket width"
-- - -
+---
+title: "Breedte knopenpat"
+---
 
 ![Breedte knopenpat](buttonplacketwidth.svg)
 
