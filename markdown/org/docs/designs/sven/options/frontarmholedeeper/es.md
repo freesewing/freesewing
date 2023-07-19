@@ -1,6 +1,6 @@
-- - -
-title: "Front armhole extra cutout"
-- - -
+---
+title: "Sujetador delantero extra recorte"
+---
 
 Controla cuánto se corta más en la prenda la parte delantera del orificio que la parte trasera.
 
