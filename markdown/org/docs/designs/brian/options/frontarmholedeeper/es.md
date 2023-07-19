@@ -1,6 +1,6 @@
-- - -
-title: "Front armhole extra cutout"
-- - -
+---
+title: "Sujetador delantero extra recorte"
+---
 
 ![Sujetador delantero extra recorte](./frontarmholedeeper.svg)
 
