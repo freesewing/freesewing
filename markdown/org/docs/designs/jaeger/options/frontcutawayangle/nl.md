@@ -1,6 +1,6 @@
-- - -
-title: "Front cutaway angle"
-- - -
+---
+title: "Hoek uitsnijding vooraan"
+---
 
 ![Hoek uitsnijding vooraan](frontcutawayangle.svg)
 
