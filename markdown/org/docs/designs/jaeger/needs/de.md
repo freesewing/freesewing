@@ -1,6 +1,6 @@
-- - -
+---
 title: "Jaeger jacket: What You Need"
-- - -
+---
 
 Um Jaeger zu erstellen, benötigst du Folgendes:
 
@@ -13,7 +13,7 @@ Um Jaeger zu erstellen, benötigst du Folgendes:
 - Einige Domette zum Einbinden
 - Schulterpads
 - Sleevehead Wadding, mit Leinwand wenn möglich
-- Unterkragen Stoff
+- Stoff für Unterkragen
 
 <Note>
 
