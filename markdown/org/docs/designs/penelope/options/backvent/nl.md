@@ -1,6 +1,6 @@
-- - -
-title: "Back vent"
-- - -
+---
+title: "Rugsplit"
+---
 
 Dit versterkt een vent aan de achterkant van de rok.
 
