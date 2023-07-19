@@ -1,6 +1,6 @@
-- - -
-title: "Front inset"
-- - -
+---
+title: "Vorderseite Ausschnitt"
+---
 
 ![Vorderseite Ausschnitt](frontinset.svg)
 
