@@ -1,6 +1,6 @@
-- - -
-title: "Back drop"
-- - -
+---
+title: "Caída de la espalda"
+---
 
 ![La opción de retroceso en la Catedral](./backdrop.svg)
 
