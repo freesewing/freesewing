@@ -1,6 +1,6 @@
-- - -
-title: "Tip width"
-- - -
+---
+title: "Breedte punt"
+---
 
 ![Breedte punt](tipwidth.svg)
 
