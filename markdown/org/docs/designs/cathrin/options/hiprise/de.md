@@ -1,6 +1,6 @@
-- - -
-title: "Hip rise"
-- - -
+---
+title: "Hüftanstieg"
+---
 
 ![Die Hüftaufstiegsoption auf Cathrin](./hiprise.svg)
 
