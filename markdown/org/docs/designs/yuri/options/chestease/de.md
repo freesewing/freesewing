@@ -1,9 +1,9 @@
-- - -
-title: "Bequemlichkeitszugabe Brust"
-- - -
+---
+title: "Brustumfangszugabe"
+---
 
-Diese Option steuert die Leichtigkeit an deiner Truhe.
+Diese Variable beeinflusst die Weite an der Brust.
 
-## Effekt dieser Variable auf das Schnittmuster
+## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](yuri_chestease_sample.svg "Effekt dieser Variable auf das Schnittmuster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](yuri_chestease_sample.svg "Effekt dieser Option auf das Schnittmuster")
