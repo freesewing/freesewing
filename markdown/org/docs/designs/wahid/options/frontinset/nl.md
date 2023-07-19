@@ -1,6 +1,6 @@
-- - -
-title: "Front inset"
-- - -
+---
+title: "Insnede voorpand"
+---
 
 ![Insnede voorpand](frontinset.svg)
 
