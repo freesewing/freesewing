@@ -1,6 +1,6 @@
-- - -
+---
 title: "Walburga Wappenrock: What You Need"
-- - -
+---
 
 Um Walburga zu erstellen, benötigst du Folgendes:
 
