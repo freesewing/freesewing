@@ -1,6 +1,6 @@
-- - -
-title: "Shoulder seam length"
-- - -
+---
+title: "Schulternahtlänge"
+---
 
 ![Die Option der Schulternahtlänge auf Diana](./shoulderseamlength.svg)
 
