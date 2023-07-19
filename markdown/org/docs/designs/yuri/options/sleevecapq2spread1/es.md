@@ -1,6 +1,6 @@
-- - -
-title: "Sleevecap Q2 downward spread"
-- - -
+---
+title: "Funda Q2 propagación a la baja"
+---
 
 ![La dispersión descendente en el segundo cuadrante de la manga](./sleevecapq2spread1.svg)
 
