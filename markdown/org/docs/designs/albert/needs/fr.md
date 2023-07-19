@@ -1,6 +1,6 @@
-- - -
-titre : "Tablier Albert : Ce qu'il faut"
-- - -
+---
+title: "Tablier Albert : Ce dont vous avez besoin"
+---
 
 Pour réaliser Albert, vous aurez besoin de :
 
