@@ -1,6 +1,6 @@
-- - -
-title: "Hips ease"
-- - -
+---
+title: "Holgura de cadera"
+---
 
 ![La opción de holgura de cadera en Diana](./hipsease.svg)
 
