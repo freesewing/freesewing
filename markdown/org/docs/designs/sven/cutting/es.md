@@ -1,6 +1,6 @@
-- - -
+---
 title: "Sven sweatshirt: Cutting Instructions"
-- - -
+---
 
 Sven es un patrón muy sencillo, y consiste en dos partes principales más algunas tiras para el cuello y el encuadernado del brazo.
 
