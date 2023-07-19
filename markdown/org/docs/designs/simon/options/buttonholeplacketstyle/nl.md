@@ -1,6 +1,6 @@
-- - -
-title: "Buttonhole placket style"
-- - -
+---
+title: "Stijl knoopsgatenpat"
+---
 
 ![Stijl knoopsgatenpat](buttonholeplacketstyle.svg)
 
