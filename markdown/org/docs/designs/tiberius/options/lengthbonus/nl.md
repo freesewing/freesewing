@@ -1,6 +1,6 @@
-- - -
-title: "Length bonus"
-- - -
+---
+title: "Bonus lengte"
+---
 
 Allows variation of the length of the garment
 
