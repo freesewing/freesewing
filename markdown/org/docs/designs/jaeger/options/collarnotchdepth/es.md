@@ -1,6 +1,6 @@
-- - -
-title: "Collar notch depth"
-- - -
+---
+title: "Profundidad de la muesca del cuello"
+---
 
 ![Profundidad de la muesca del cuello](collarnotchdepth.svg)
 
