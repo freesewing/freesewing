@@ -1,6 +1,6 @@
-- - -
+---
 title: "Simon shirt: What You Need"
-- - -
+---
 
 Um Simon zu erstellen, benötigst du Folgendes:
 
