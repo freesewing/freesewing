@@ -1,6 +1,6 @@
-- - -
-title: "Chest pocket placement"
-- - -
+---
+title: "Colocación de bolsillo en el pecho"
+---
 
 ![Colocación de bolsillo en el pecho](chestpocketplacement.svg)
 
