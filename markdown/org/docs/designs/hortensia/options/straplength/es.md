@@ -1,6 +1,6 @@
-- - -
-title: "Strap length"
-- - -
+---
+title: "Longitud del Strp"
+---
 
 Controla la longitud de la correa.
 
