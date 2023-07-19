@@ -1,6 +1,6 @@
-- - -
+---
 title: "Shin swim trunks: Fabric Options"
-- - -
+---
 
 Een zwembroek zou gemaakt moeten worden uit elastisch materiaal dat tegen zout of chloor kan.
 
