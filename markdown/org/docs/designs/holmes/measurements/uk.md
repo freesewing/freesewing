@@ -1,5 +1,5 @@
-- - -
-назва: "Капелюх мисливця на оленів Холмса: Необхідні виміри"
-- - -
+---
+title: "Holmes deerstalker hat: Required Measurements"
+---
 
 <PatternMeasurements pattern='holmes' />
