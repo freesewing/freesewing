@@ -1,6 +1,6 @@
-- - -
-title: "Seat ease"
-- - -
+---
+title: "Zugabe Gesäß"
+---
 
 ![Zugabe Gesäß](./seatease.svg)
 
