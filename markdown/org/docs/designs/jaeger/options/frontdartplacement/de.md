@@ -1,6 +1,6 @@
-- - -
-title: "Front dart placement"
-- - -
+---
+title: "Platzierung des vorderen Abnähers"
+---
 
 ![Platzierung des vorderen Abnähers](frontdartplacement.svg)
 
