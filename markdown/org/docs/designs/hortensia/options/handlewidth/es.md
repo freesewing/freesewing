@@ -1,6 +1,6 @@
-- - -
-title: "Handle width"
-- - -
+---
+title: "Anchura del Manejo"
+---
 
 Controla el ancho del asa.
 
