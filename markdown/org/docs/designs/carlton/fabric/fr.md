@@ -1,6 +1,6 @@
-- - -
+---
 title: "Carlton coat: Fabric Options"
-- - -
+---
 
 ### Tissu principal
 
@@ -24,7 +24,7 @@ Comme d'habitude avec les doublures, c'est vraiment à vous de choisir le matér
 
 ### Façades
 
-We recommend **Hair canvases**. You may be tempted to use modern interfacing but hair canvases will provide the best results. You will want a combination of different weight hair canvases such as lightweight to medium weight **Tailors Canvas** and heavyweight **Horsehair Canvas**. A common misconception is that you have to use horsehair canvas for all of it, but this is not the case and really is only needed for areas that need the most structure such as the upper front but are often too stiff for other parts. Tailors canvas is generally used for the majority of facing a coat.
+Nous recommandons les **Toiles à cheveux**. Vous pourriez être tenté d'utiliser un entoilage moderne, mais les toiles à cheveux donneront les meilleurs résultats. Vous aurez besoin d'une combinaison de toiles à cheveux de différents poids, telles que les toiles de **tailleur** légères à moyennes et les **toiles lourdes** à poils de cheval. A common misconception is that you have to use horsehair canvas for all of it, but this is not the case and really is only needed for areas that need the most structure such as the upper front but are often too stiff for other parts. La toile de tailleur est généralement utilisée pour la majeure partie de l'habillage d'un manteau.
 
 <Tip>
 
