@@ -1,6 +1,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { exec } from 'node:child_process'
+import orderBy from 'lodash.orderby'
 
 /*
  * Shared header to include in written .mjs files
@@ -25,14 +26,23 @@ const stripQuotes = (str) => {
 /*
  * This is the fast and low-tech way to some frontmatter from all files in a folder
  */
-const loadFolderFrontmatter = async (key, site, folder, transform = false) => {
-  const prefix = site === 'org' ? 'docs/' : ''
+const loadFolderFrontmatter = async (key, site, folder, transform = false, lang = false) => {
+  const prefix = site === 'org' ? `${folder}/` : ''
   /*
    * Figure out what directory to spawn the child process in
    */
   const cwd = await path.resolve(process.cwd(), '..', '..', 'markdown', site, folder)
   let list = false
-  const grep = exec('grep ^' + key + ': -RIsm 1 ' + cwd, { cwd }, (error, stdout, stderr) => {
+  /*
+   * When going through a small number of files in a flat directory (eg. blog posts) a
+   * recursive grep through all files is faster.
+   * But the biggest task is combing through all the org documentation and for this
+   * it's much faster to first run find to limit the number of files to open
+   */
+  const cmd = `find ${cwd} -type f -name "${
+    lang ? lang : '*'
+  }.md" -exec grep "^${key}:" -ism 1 {} +`
+  const grep = exec(cmd, { cwd }, (error, stdout, stderr) => {
     if (error) {
       console.error(`exec error: ${error}`)
       return
@@ -61,7 +71,7 @@ const loadFolderFrontmatter = async (key, site, folder, transform = false) => {
      * Trim some of the irrelevant path info prior to splitting on '.md:{key}:'
      */
     const chunks = match
-      .split(`markdown/${site}/${site === 'org' ? 'docs/' : ''}`)
+      .split(`markdown/${site}/${site === 'dev' ? '' : folder + '/'}`)
       .pop()
       .split(`.md:${key}:`)
     if (chunks.length === 2 && chunks[0].length > 1) {
@@ -89,13 +99,14 @@ const loadFolderFrontmatter = async (key, site, folder, transform = false) => {
 /*
  * Merges in order key on those slugs that have it set
  */
-const mergeOrder = (titles, order) => {
+const mergeOrder = (titles, order, withSlug = false) => {
   const pages = {}
   for (const lang in titles) {
     pages[lang] = {}
     for (const [slug, t] of Object.entries(titles[lang])) {
       pages[lang][slug] = { t }
-      if (order[slug]) pages[lang][slug] = order[slug]
+      if (order.en[slug]) pages[lang][slug].o = order.en[slug]
+      if (withSlug) pages[lang][slug].s = slug
     }
   }
 
@@ -121,7 +132,8 @@ const formatDate = (date, slug, lang) => {
 const loadDocs = async (site) => {
   const folder = site === 'org' ? 'docs' : '.'
   const titles = await loadFolderFrontmatter('title', site, folder)
-  const order = await loadFolderFrontmatter('order', site, folder)
+  // Order is the same for all languages, so only grab EN files
+  const order = await loadFolderFrontmatter('order', site, folder, false, 'en')
 
   return mergeOrder(titles, order)
 }
@@ -131,19 +143,81 @@ const loadDocs = async (site) => {
  */
 const loadBlog = async () => {
   const titles = await loadFolderFrontmatter('title', 'org', 'blog')
-  const order = await loadFolderFrontmatter('date', 'org', 'blog', formatDate)
+  // Order is the same for all languages, so only grab EN files
+  const order = await loadFolderFrontmatter('date', 'org', 'blog', formatDate, 'en')
+  // Author is the same for all languages, so only grab EN files
+  const authors = await loadFolderFrontmatter('author', 'org', 'blog', false, 'en')
+  // Image is the same for all languages, so only grab EN files
+  const images = await loadFolderFrontmatter('image', 'org', 'blog', false, 'en')
 
-  return mergeOrder(titles, order)
+  // Merge titles and order for EN
+  const merged = {}
+  for (const slug in titles.en)
+    merged[slug] = {
+      t: titles.en[slug],
+      o: order.en[slug],
+      s: slug,
+      a: authors.en[slug],
+      i: images.en[slug],
+    }
+  // Order based on post data (descending)
+  const ordered = orderBy(merged, 'o', 'desc')
+
+  // Apply same order to all languages
+  const posts = {}
+  const meta = {}
+  const languages = Object.keys(titles).filter((lang) => lang !== 'em')
+
+  for (const lang of Object.keys(titles)) {
+    posts[lang] = {}
+    for (const post of ordered) {
+      posts[lang][post.s] = { t: post.t }
+      if (lang === 'en') meta[post.s] = { a: post.a, d: post.o, i: post.i }
+    }
+  }
+
+  return { posts, meta }
 }
 
 /*
  * Loads all showcase posts, titles and order
  */
 const loadShowcase = async () => {
-  const titles = await loadFolderFrontmatter('title', 'org', 'blog')
-  const order = await loadFolderFrontmatter('date', 'org', 'blog')
+  const titles = await loadFolderFrontmatter('title', 'org', 'showcase')
+  // Order is the same for all languages, so only grab EN files
+  const order = await loadFolderFrontmatter('date', 'org', 'showcase', formatDate, 'en')
+  // Author is the same for all languages, so only grab EN files
+  const makers = await loadFolderFrontmatter('maker', 'org', 'showcase', false, 'en')
+  // Image is the same for all languages, so only grab EN files
+  const images = await loadFolderFrontmatter('image', 'org', 'showcase', false, 'en')
 
-  return mergeOrder(titles, order)
+  // Merge titles and order for EN
+  const merged = {}
+  for (const slug in titles.en)
+    merged[slug] = {
+      t: titles.en[slug],
+      o: order.en[slug],
+      s: slug,
+      m: makers.en[slug],
+      i: images.en[slug],
+    }
+  // Order based on post data (descending)
+  const ordered = orderBy(merged, 'o', 'desc')
+
+  // Apply same order to all languages
+  const posts = {}
+  const meta = {}
+  const languages = Object.keys(titles).filter((lang) => lang !== 'em')
+
+  for (const lang of Object.keys(titles)) {
+    posts[lang] = {}
+    for (const post of ordered) {
+      posts[lang][post.s] = { t: post.t }
+      if (lang === 'en') meta[post.s] = { m: post.m, d: post.o, i: post.i }
+    }
+  }
+
+  return { posts, meta }
 }
 
 /*
@@ -151,7 +225,8 @@ const loadShowcase = async () => {
  */
 const loadNewsletter = async () => {
   const titles = await loadFolderFrontmatter('title', 'org', 'newsletter')
-  const order = await loadFolderFrontmatter('edition', 'org', 'newsletter')
+  // Order is the same for all languages, so only grab EN files
+  const order = await loadFolderFrontmatter('edition', 'org', 'newsletter', false, 'en')
 
   return mergeOrder(titles, order)
 }
@@ -178,6 +253,16 @@ export const pages = { ${Object.keys(pages).join(',')} }`
 }
 
 /*
+ * Write out a single prebuild file
+ */
+const writeFile = async (filename, exportname, site, content) => {
+  fs.writeFileSync(
+    path.resolve('..', site, 'prebuild', `${filename}.mjs`),
+    `${header}export const ${exportname} = ${JSON.stringify(content)}`
+  )
+}
+
+/*
  * Main method that does what needs doing for the docs
  */
 export const prebuildDocs = async (store) => {
@@ -192,9 +277,11 @@ export const prebuildPosts = async (store) => {
   store.posts = {
     blog: await loadBlog(),
     showcase: await loadShowcase(),
-    newsletter: await loadNewsletter(),
+    newsletter: { posts: await loadNewsletter() },
   }
-  await writeFiles('blog', 'org', store.posts.blog)
-  await writeFiles('showcase', 'org', store.posts.showcase)
+  await writeFiles('blog', 'org', store.posts.blog.posts)
+  await writeFiles('showcase', 'org', store.posts.showcase.posts)
   await writeFiles('newsletter', 'org', store.posts.newsletter)
+  await writeFile('blog-meta', 'meta', 'org', store.posts.blog.meta)
+  await writeFile('showcase-meta', 'meta', 'org', store.posts.showcase.meta)
 }

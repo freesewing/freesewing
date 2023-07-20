@@ -1,22 +1,23 @@
 import { localePath } from 'shared/utils.mjs'
-const preGenerate = 6
-export const numPerPage = 12
+import { siteConfig as config } from 'site/site.config.mjs'
 
-export const getPostSlugPaths = (order) => {
+export const getPostSlugPaths = (posts) => {
   const paths = []
 
-  for (const lang in order) {
-    for (let i = 0; i < preGenerate; i++) {
-      paths.push(localePath(lang, `${order[lang][i]}`))
-    }
+  for (const lang in posts) {
+    paths.push(
+      ...Object.keys(posts[lang])
+        .slice(0, config.posts.preGenerate)
+        .map((slug) => localePath(lang, slug))
+    )
   }
 
   return paths
 }
 
-export const getPostIndexPaths = (order, type) => {
+export const getPostIndexPaths = (posts, type) => {
   const paths = []
-  for (const language in order) {
+  for (const language in posts) {
     paths.push(localePath(language, `${type}/page/1`))
     paths.push(localePath(language, `${type}/page/2`))
   }
@@ -24,13 +25,18 @@ export const getPostIndexPaths = (order, type) => {
   return paths
 }
 
-export const getPostIndexProps = (locale, params, order, postInfo) => {
-  const pageNum = parseInt(params.page)
-  const numLocPages = Math.ceil(order[locale].length / numPerPage)
+export const getPostIndexProps = (pagenr, posts, meta) => {
+  const pageNum = parseInt(pagenr)
+  const numLocPages = Math.ceil(Object.keys(posts).length / config.posts.perPage)
   if (pageNum > numLocPages) return false
 
-  const postSlugs = order[locale].slice(numPerPage * (pageNum - 1), numPerPage * pageNum)
-  const posts = postSlugs.map((s) => ({ ...postInfo[locale][s], s }))
+  const pagePosts = Object.entries(posts)
+    .slice(config.posts.perPage * (pageNum - 1), config.posts.perPage * pageNum)
+    .map(([slug, post]) => ({
+      s: slug,
+      ...post,
+      ...meta[slug],
+    }))
 
-  return { posts, current: pageNum, total: numLocPages }
+  return { posts: pagePosts, current: pageNum, total: numLocPages }
 }

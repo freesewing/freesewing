@@ -1,6 +1,7 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { postInfo, order } from 'site/prebuild/blog-paths.mjs'
+import { pages as posts } from 'site/prebuild/blog.mjs'
+import { meta } from 'site/prebuild/blog-meta.mjs'
 import { getPostIndexPaths, getPostIndexProps } from 'site/components/mdx/posts/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
@@ -80,7 +81,7 @@ const BlogIndexPage = ({ posts, page, current, total }) => {
     <PageWrapper {...page} t={t('sections:blog')}>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3 max-w-7xl lg:pr-4 xl:pr-6">
         {posts.map((post) => (
-          <Preview post={post} t={t} key={post.s} />
+          <Preview post={post} t={t} key={post.slug} />
         ))}
       </div>
       <Pagination {...{ current, total }} />
@@ -91,7 +92,7 @@ const BlogIndexPage = ({ posts, page, current, total }) => {
 export default BlogIndexPage
 
 export async function getStaticProps({ locale, params }) {
-  const props = getPostIndexProps(locale, params, order, postInfo)
+  const props = getPostIndexProps(params.page, posts[locale], meta)
 
   if (props === false) return { notFound: true }
 
@@ -110,7 +111,7 @@ export async function getStaticProps({ locale, params }) {
 
 export const getStaticPaths = async () => {
   return {
-    paths: getPostIndexPaths(order, 'blog'),
+    paths: getPostIndexPaths(posts, 'blog'),
     fallback: 'blocking',
   }
 }

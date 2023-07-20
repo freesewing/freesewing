@@ -80,7 +80,7 @@ export const prebuildNavigation = async (store) => {
     // Handle posts
     if (posts) {
       for (const type in posts) {
-        for (const [slug, post] of Object.entries(posts[type][lang])) {
+        for (const [slug, post] of Object.entries(posts[type].posts[lang])) {
           set(sitenav, [lang, ...slug.split('/')], { t: post.t, o: post.o, s: slug })
         }
       }
