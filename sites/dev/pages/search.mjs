@@ -18,7 +18,6 @@ const namespaces = [...pageNs]
 const SearchPage = ({ page, slug }) => {
   const title = 'Search'
 
-  console.log(namespaces)
   const tip = (
     <Popout tip compact>
       The <PageLink href="/sitemap" txt="sitemap" /> can also be helpful to find things.
