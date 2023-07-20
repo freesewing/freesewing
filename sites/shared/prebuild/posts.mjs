@@ -26,8 +26,6 @@ export const prebuildPosts = async (site) => {
       sorted[lang] = Object.keys(resultPages[lang]).sort(
         (a, b) => resultPages[lang][a].o - resultPages[lang][b].o
       )
-      // get rid of the index page
-      sorted[lang].shift()
     }
 
     writeOps.push(

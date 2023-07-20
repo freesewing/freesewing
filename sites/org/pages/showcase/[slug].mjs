@@ -9,14 +9,21 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 
 const namespaces = [...layoutNs, ...postNs, ...pageNs]
 
+/*
+ * Each page MUST be wrapped in the PageWrapper component.
+ * You also MUST spread props.page into this wrapper component
+ * when path and locale come from static props (as here)
+ * or set them manually.
+ */
 const ShowcasePage = ({ locale, slug, page }) => {
+  // function to load the correct markdown
   const loader = useCallback(
     () => import(`orgmarkdown/showcase/${slug}/${locale}.md`),
     [slug, locale]
   )
 
   const { frontmatter, MDX } = useDynamicMdx(loader)
-  if (!MDX) return null
+
   return (
     <PageWrapper
       {...page}
@@ -39,7 +46,7 @@ const ShowcasePage = ({ locale, slug, page }) => {
 /*
  * getStaticProps() is used to fetch data at build-time.
  *
- * On this page, it is loading the showcase content from strapi.
+ * On this page, it it passes the name of the bundle to be loaded on the client.
  *
  * This, in combination with getStaticPaths() below means this
  * page will be used to render/generate all showcase content.
@@ -48,6 +55,11 @@ const ShowcasePage = ({ locale, slug, page }) => {
  */
 export async function getStaticProps({ params, locale }) {
   const { slug } = params
+
+  // if the slug isn't present in the prebuilt order, return 404
+  if (order[locale].indexOf(`showcase/${slug}`) === -1) {
+    return { notFound: true }
+  }
 
   return {
     props: {
@@ -62,6 +74,21 @@ export async function getStaticProps({ params, locale }) {
   }
 }
 
+/*
+ * getStaticPaths() is used to specify for which routes (think URLs)
+ * this page should be used to generate the result.
+ *
+ * On this page, it is returning a truncated list of routes (think URLs) for all
+ * the mdx showcase (markdown) content.
+ * That list comes from prebuild/showcase-paths.mjs, which is built in the prebuild step
+ * and contains paths, titles, imageUrls, and intro for all showcase posts.
+ *
+ * the fallback: 'blocking' property means that
+ * any pages that haven't been pre-generated
+ * will generate and cache the first time someone visits them
+ *
+ * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
+ */
 export const getStaticPaths = async () => {
   return {
     paths: getPostSlugPaths(order),

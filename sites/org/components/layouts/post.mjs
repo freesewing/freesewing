@@ -19,8 +19,10 @@ import { PrevNext } from 'shared/components/prev-next.mjs'
 
 export const ns = [navNs, 'docs'] //navNs
 
+/** checks for a slug that isn't a post, to prevent a prev or next button to it */
 const isEndSlug = (slug) => slug.split('/').length === 1
 
+/** layout for a page that displays a blog, showcase or newsletter */
 export const PostLayout = ({ children = [], slug, frontmatter, locale }) => {
   const { siteNav } = useNavigation({ ignoreControl: true })
 

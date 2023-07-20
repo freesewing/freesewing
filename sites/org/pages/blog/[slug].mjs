@@ -53,6 +53,11 @@ const BlogPage = ({ locale, slug, page }) => {
 export async function getStaticProps({ params, locale }) {
   const { slug } = params
 
+  // if the slug isn't present in the prebuilt order, return 404
+  if (order[locale].indexOf(`blog/${slug}`) === -1) {
+    return { notFound: true }
+  }
+
   return {
     props: {
       slug,
@@ -66,6 +71,21 @@ export async function getStaticProps({ params, locale }) {
   }
 }
 
+/*
+ * getStaticPaths() is used to specify for which routes (think URLs)
+ * this page should be used to generate the result.
+ *
+ * On this page, it is returning a truncated list of routes (think URLs) for all
+ * the mdx blog (markdown) content.
+ * That list comes from prebuild/blog-paths.mjs, which is built in the prebuild step
+ * and contains paths, titles, imageUrls, and intro for all blog posts.
+ *
+ * the fallback: 'blocking' property means that
+ * any pages that haven't been pre-generated
+ * will generate and cache the first time someone visits them
+ *
+ * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
+ */
 export const getStaticPaths = async () => {
   return {
     paths: getPostSlugPaths(order),
