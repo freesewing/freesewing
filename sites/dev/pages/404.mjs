@@ -69,7 +69,7 @@ export async function getStaticProps() {
     props: {
       ...(await serverSideTranslations('en', namespaces)),
       page: {
-        path: ['search'],
+        path: ['404'],
       },
     },
   }
