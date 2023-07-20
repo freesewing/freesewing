@@ -1,5 +1,5 @@
 // Used in static paths
-import { mdxPaths } from 'site/prebuild/mdx-paths.en.mjs'
+import { pages } from 'site/prebuild/docs.en.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Hooks
@@ -85,7 +85,7 @@ export async function getStaticProps({ locale, params }) {
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticPaths() {
-  const somePaths = mdxPaths
+  const somePaths = Object.keys(pages)
     .filter((path) => path.split('/').length < 5)
     .filter((path) => path !== 'docs')
 
@@ -96,6 +96,7 @@ export async function getStaticPaths() {
       ...somePaths.map((key) => `/de/${key}`),
       ...somePaths.map((key) => `/fr/${key}`),
       ...somePaths.map((key) => `/nl/${key}`),
+      ...somePaths.map((key) => `/uk/${key}`),
     ],
     fallback: 'blocking',
   }

@@ -1,5 +1,3 @@
-// Hooks
-import { useNavigation } from 'site/hooks/use-navigation.mjs'
 // Components
 import { FrontmatterHead } from './docs.mjs'
 import {
@@ -17,7 +15,7 @@ import {
 import { Toc } from 'shared/components/mdx/toc.mjs'
 import { PrevNext } from 'shared/components/prev-next.mjs'
 
-export const ns = [navNs, 'docs'] //navNs
+export const ns = [navNs, 'docs']
 
 const isEndSlug = (slug) => slug.split('/').length === 1
 
@@ -29,20 +27,20 @@ export const PostLayout = ({ children = [], slug, frontmatter, locale }) => {
       <FrontmatterHead {...{ frontmatter, slug, locale }} />
       <BaseLayout>
         <BaseLayoutLeft>
-          <MainSections {...{ siteNav, slug }} />
-          <NavLinks {...{ siteNav, slug }} />
+          <MainSections />
+          <NavLinks />
         </BaseLayoutLeft>
 
         <BaseLayoutProse>
           <div className="w-full">
-            <Breadcrumbs {...{ siteNav, slug }} />
+            <Breadcrumbs />
             <h1 className="break-words searchme">{frontmatter.title}</h1>
             <div className="block xl:hidden">
               <Toc toc={frontmatter.toc} wrap />
             </div>
           </div>
           {children}
-          <PrevNext slug={slug} noPrev={isEndSlug} noNext={isEndSlug} />
+          <PrevNext noPrev={isEndSlug} noNext={isEndSlug} />
         </BaseLayoutProse>
 
         <BaseLayoutRight>
