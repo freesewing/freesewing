@@ -2,7 +2,7 @@
  * The default full-page FreeSewing layout
  */
 export const BaseLayout = ({ children = [] }) => (
-  <div className="flex flex-row items-start mt-8 w-full justify-between 2xl:px-36 xl:px-12 px-4">
+  <div className="flex flex-row items-start mt-8 w-full justify-between 2xl:px-36 xl:px-12 px-4 gap-0 lg:gap-4 xl:gap-8 3xl: gap-12">
     {children}
   </div>
 )
