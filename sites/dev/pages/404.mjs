@@ -1,17 +1,18 @@
-// Hooks
-import { useNavigation } from 'site/hooks/use-navigation.mjs'
+// Dependencies
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import Head from 'next/head'
-import { PageWrapper } from 'shared/components/wrappers/page.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Robot } from 'shared/components/robot/index.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
 import { BaseLayout, BaseLayoutLeft, BaseLayoutWide } from 'shared/components/base-layout.mjs'
 import { NavLinks, MainSections } from 'shared/components/navigation/sitenav.mjs'
 
+const namespaces = [...pageNs]
+
 const Page404 = () => {
   const title = '404: Page not found'
-  const { siteNav } = useNavigation({ ignoreControl: true })
   const slug = '404'
 
   return (
@@ -34,8 +35,8 @@ const Page404 = () => {
       </Head>
       <BaseLayout>
         <BaseLayoutLeft>
-          <MainSections {...{ siteNav, slug }} />
-          <NavLinks {...{ siteNav, slug }} />
+          <MainSections />
+          <NavLinks />
         </BaseLayoutLeft>
         <BaseLayoutWide>
           <div className="max-w-2xl">
@@ -62,3 +63,14 @@ const Page404 = () => {
 }
 
 export default Page404
+
+export async function getStaticProps() {
+  return {
+    props: {
+      ...(await serverSideTranslations('en', namespaces)),
+      page: {
+        path: ['search'],
+      },
+    },
+  }
+}

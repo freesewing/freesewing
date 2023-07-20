@@ -1,7 +1,8 @@
 // Dependencies
 import orderBy from 'lodash.orderby'
+import { NavigationContext } from 'shared/context/navigation-context.mjs'
 // Hooks
-import { useNavigation } from 'site/hooks/use-navigation.mjs'
+import { useContext } from 'react'
 // Components
 import Link from 'next/link'
 import { Ribbon } from 'shared/components/ribbon.mjs'
@@ -14,7 +15,8 @@ export const ns = ['footer', ...sponsorsNs]
 const onlyFooterLinks = (tree) => orderBy(tree, ['t'], ['asc']).filter((entry) => entry.f)
 
 export const Footer = () => {
-  const { siteNav } = useNavigation({ ignoreControl: true })
+  // Grab siteNav from the navigation context
+  const { siteNav } = useContext(NavigationContext)
 
   return (
     <footer className="bg-neutral">

@@ -93,7 +93,6 @@ export const MdxMetaData = ({ frontmatter, locale, slug }) => {
         className="btn btn-success flex flex-row justify-between items-center w-full px-4 bg-gradient-to-r from-primary to-accent mb-4 hover:from-accent hover:to-accent"
       >
         <EditIcon />
-        <span>Found a mistake?</span>
         <span>{t('editThisPage')}</span>
       </a>
       <div

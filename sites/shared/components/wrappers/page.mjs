@@ -1,6 +1,5 @@
 // Dependencies
 import React, { useState, useEffect, useContext } from 'react'
-//import { useHotkeys } from 'react-hotkeys-hook'
 // Hooks
 import { useTheme } from 'shared/hooks/use-theme.mjs'
 // Components
@@ -40,7 +39,6 @@ export const PageWrapper = (props) => {
    * Contexts
    */
   const { modalContent } = useContext(ModalContext)
-  const { setNavigation } = useContext(NavigationContext)
 
   /*
    * This forces a re-render upon initial bootstrap of the app
@@ -49,29 +47,6 @@ export const PageWrapper = (props) => {
   const [theme] = useTheme()
   const [currentTheme, setCurrentTheme] = useState()
   useEffect(() => setCurrentTheme(theme), [currentTheme, theme])
-
-  /*
-   * Update navigation context with title and path
-   */
-  useEffect(() => {
-    setNavigation({
-      title: pageTitle,
-      locale,
-      path,
-    })
-  }, [path, pageTitle, locale, setNavigation])
-
-  /*
-   * Hotkeys (keyboard actions)
-   */
-  // Trigger search with /
-  //useHotkeys('/', (evt) => {
-  //  evt.preventDefault()
-  //  setSearch(true)
-  //})
-
-  // Search state
-  //const [search, setSearch] = useState(false)
 
   // Helper object to pass props down (keeps things DRY)
   const childProps = { footer, header, pageTitle, slug }

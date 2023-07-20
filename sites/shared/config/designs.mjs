@@ -1,4 +1,8 @@
-import allDesigns from 'config/software/designs.json'
+/*
+ * Do not use  webpack alias because this is used
+ * in the prebuild step which is pure NodeJS
+ */
+import allDesigns from '../../../config/software/designs.json' assert { type: 'json' }
 
 /*
  * Filter out utility patterns by checking whether they have any tags

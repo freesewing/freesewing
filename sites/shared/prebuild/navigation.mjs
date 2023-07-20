@@ -2,11 +2,12 @@ import path from 'path'
 import fs from 'fs'
 import set from 'lodash.set'
 import orderBy from 'lodash.orderby'
-//import { loadYaml, folders } from './i18n.mjs'
 import { extendSiteNav as dev } from './sitenav-dev.mjs'
+import { extendSiteNav as org } from './sitenav-org.mjs'
 import { pageHasChildren } from '../utils.mjs'
+import { header } from './docs.mjs'
 
-const extendNav = { dev }
+const extendNav = { dev, org }
 
 /*
  * A method to recursively add the ordered slugs to the LUT
@@ -57,9 +58,13 @@ export const prebuildNavigation = async (store) => {
    */
   const sitenav = {}
   const sluglut = {}
+  const all = {
+    sitenav: '',
+  }
+  const locales = []
   for (const lang in docs) {
+    locales.push(lang)
     sitenav[lang] = {}
-    sluglut[lang] = {}
 
     // Handle docs
     for (const slug of Object.keys(docs[lang]).sort()) {
@@ -81,26 +86,41 @@ export const prebuildNavigation = async (store) => {
       }
     }
 
+    // Add imports for umbrella file
+    all.sitenav += `import { siteNav as ${lang} } from './sitenav.${lang}.mjs'` + '\n'
+
     // Extend navigation if there's a method for that
     if (extendNav[site]) sitenav[lang] = extendNav[site](sitenav[lang], lang)
-    // Create slut lookup table
-    sluglut[lang] = orderedSlugLut(sitenav[lang])
 
     // Write out navigation object
     fs.writeFileSync(
-      path.resolve('..', site, 'prebuild', `navigation.${lang}.mjs`),
-      `export const siteNav =  ${JSON.stringify(sitenav[lang])}`
+      path.resolve('..', site, 'prebuild', `sitenav.${lang}.mjs`),
+      `${header}export const siteNav =  ${JSON.stringify(sitenav[lang])}`
     )
 
-    // Write out slug lookup table (sluglut)
-    fs.writeFileSync(
-      path.resolve('..', site, 'prebuild', `sluglut.${lang}.mjs`),
-      `export const slugLut =  ${JSON.stringify(sluglut[lang])}`
-    )
+    /*
+     * Since slugs are language-agnostic, we only need to create a slug lookup tables
+     * once, for which we'll use the EN locale as that one is always present
+     */
+    if (lang === 'en') {
+      const sluglut = orderedSlugLut(sitenav[lang])
+      // Write out slug lookup table (sluglut)
+      fs.writeFileSync(
+        path.resolve('..', site, 'prebuild', `sluglut.mjs`),
+        `${header}export const slugLut =  ${JSON.stringify(sluglut)}`
+      )
+      store.navigation = { sluglut }
+    }
   }
 
+  // Write umbrella siteNav file
+  fs.writeFileSync(
+    path.resolve('..', site, 'prebuild', `sitenav.mjs`),
+    `${header}${all.sitenav}export const siteNav = { ${locales.join(',')} }`
+  )
+
   // Update the store
-  store.navigation = { sitenav, sluglut }
+  store.navigation.sitenav = sitenav
 
   return
 }

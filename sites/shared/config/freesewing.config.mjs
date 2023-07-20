@@ -1,4 +1,4 @@
-import { social } from 'config/social.mjs'
+import { social } from '../../../config//social.mjs'
 
 export const freeSewingConfig = {
   monorepo: 'https://github.com/freesewing/freesewing',

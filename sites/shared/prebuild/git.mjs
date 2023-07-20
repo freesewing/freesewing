@@ -116,10 +116,10 @@ export const prebuildGitData = async (store, mock) => {
 const mockedData = (store) => {
   const pages = {}
   const u = yyyymmdd()
-  for (const slug of store.navigation.sluglut.en) pages[slug] = { u, a: ['mocked'] }
+  for (const slug of store.navigation.sluglut) pages[slug] = { u, a: ['mocked'] }
 
   return {
     pages,
-    stats: { mocked: store.navigation.sluglut.en.length },
+    stats: { mocked: store.navigation.sluglut.length },
   }
 }

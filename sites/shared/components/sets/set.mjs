@@ -4,7 +4,7 @@
 //import { designs } from 'shared/config/designs.mjs'
 //import { DesignTag } from 'shared/components/designs/tag.mjs'
 
-export const ns = ['design', 'designs', 'tags']
+export const ns = ['designs', 'tags']
 
 export const Set = ({ name }) => {
   //const { t } = useTranslation(ns)
@@ -21,7 +21,7 @@ export const Set = ({ name }) => {
       <h5 className="flex flex-row items-center justify-between w-full">
         <span>{t(`designs:${name}.t`)}</span>
         <div className="flex flex-col items-end">
-          <span className="text-xs font-medium opacity-70">{t('design:difficulty')}</span>
+          <span className="text-xs font-medium opacity-70">{t('tags:difficulty')}</span>
           <Difficulty score={designs[name].difficulty} />
         </div>
       </h5>

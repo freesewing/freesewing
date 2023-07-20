@@ -1,7 +1,8 @@
 // Dependencies
 import get from 'lodash.get'
+import { NavigationContext } from 'shared/context/navigation-context.mjs'
 // Hooks
-import { useNavigation } from 'site/hooks/use-navigation.mjs'
+import { useContext } from 'react'
 // Components
 import Link from 'next/link'
 import { LeftIcon, RightIcon } from 'shared/components/icons.mjs'
@@ -39,9 +40,9 @@ const getItemWithCaveat = (index, slugLut, siteNav, shouldHide) => {
   return get(siteNav, slugLut[index].split('/'))
 }
 
-export const PrevNext = ({ slug, noPrev = false, noNext = false }) => {
-  // Grab site navigation and slug lookup table from the useNavigatin hook
-  const { siteNav, slugLut } = useNavigation()
+export const PrevNext = ({ noPrev = false, noNext = false }) => {
+  // Grab siteNav and slugLut from the navigation context
+  const { siteNav, slugLut, slug } = useContext(NavigationContext)
 
   // Lookup the current slug in the LUT
   const index = slugLut.indexOf(slug)
