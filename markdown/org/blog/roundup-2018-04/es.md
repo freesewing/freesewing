@@ -1,25 +1,25 @@
 ---
 author: "joostdecock"
-caption: "Your login background for May"
+caption: "Tu fondo de conexión para mayo"
 date: "2018-04-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/992689c621b6b83a80706620ae5cd92262dcf4bd-1920x1273.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - April 2018: Calm before the storm"
+intro: "Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene."
+title: "Resumen mensual - Abril de 2018: La calma antes de la tormenta"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene.
 
-## Looking back at April
+## Echando la vista atrás a abril
 
-Did you get them? All those emails, notifications, and popups from companies informing you that they've made some changes to their privacy policy, or the way they handle your data, and would you please agree to these changes?
+¿Los has conseguido? Todos esos correos electrónicos, notificaciones y ventanas emergentes de empresas que te informan de que han hecho algunos cambios en su política de privacidad, o en la forma en que manejan tus datos, y ¿podrías, por favor, aceptar estos cambios?
 
-I bet you did, as did I. And with each one of them, I grow a bit more nervous as the GDPR deadline of May 25th is approaching, yet I'm not ready yet to send you one of those emails.
+Apuesto a que sí, al igual que yo. Y con cada uno de ellos, me pongo un poco más nerviosa a medida que se acerca la fecha límite de GDPR del 25 de mayo, aunque todavía no estoy preparada para enviarte uno de esos correos electrónicos.
 
-Our [carefully laid plans](/blog/gdpr-plan/) are but a small part of the changes we're working on, and that's why it's all taking a bit longer than expected.
+Nuestros [planes cuidadosamente trazados](/blog/gdpr-plan/) no son más que una pequeña parte de los cambios en los que estamos trabajando, y por eso todo está llevando un poco más de tiempo de lo esperado.
 
-I could write a bit more about it, but I've got a ton of work to do and very little time to do it in. So if it's all the same, I think I'd rather get back to work.
+Podría escribir un poco más sobre ello, pero tengo un montón de trabajo que hacer y muy poco tiempo para hacerlo. Así que si todo sigue igual, creo que prefiero volver al trabajo.
 
-## Looking ahead to May
+## De cara a mayo
 
-Expect changes. A lot of changes. Nothing to worry about though 😉
+Espera cambios. Muchos cambios. Aunque no hay de qué preocuparse 😉
 
