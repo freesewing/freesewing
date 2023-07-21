@@ -2,7 +2,7 @@
 title: "Longueur des pinces poitrine"
 ---
 
-The length of the primary bust dart.
+La longueur de la fléchette primaire du buste.
 
 ## Effet de cette option sur le motif
 
