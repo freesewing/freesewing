@@ -1,5 +1,5 @@
 ---
-title: "Wahid waistcoat: Sewing Instructions"
+title: "Chaleco Wahid: Instrucciones de costura"
 ---
 
 ### Paso 1: Fusionar interfaz
@@ -148,7 +148,7 @@ Doblarlos asegurándote de mantener tu bolsillo abriendo un rectángulo limpio y
 
 ![Trae la soldadura del bolsillo a la espalda, pliega y presiona](05i.png) ![Trae la soldadura del bolsillo a la espalda, pliega y presiona](05j.png)
 
-Flip the pocket welt with the attached pocket back tot he back side.
+Da la vuelta al ribete del bolsillo con el bolsillo unido hacia atrás.
 
 Doblar su soldadura en el punto donde llega a la parte superior del bolsillo. La soldadura debe cubrir toda la abertura del bolsillo.
 
