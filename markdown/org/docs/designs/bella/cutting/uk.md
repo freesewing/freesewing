@@ -1,5 +1,5 @@
 ---
-title: "Bella body block: Cutting Instructions"
+title: "Боді-блок Bella: Інструкція з розкрою"
 ---
 
 **Основна тканина**
