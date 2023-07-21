@@ -1,5 +1,5 @@
 ---
-title: "Paco pants: Sewing Instructions"
+title: "Paco Hosen: Anleitung zum Nähen"
 ---
 
 <Tip>
@@ -223,10 +223,10 @@ Find the center front of your waistband (easy if there are eyelets, if not just 
 
 <Tip>
 
-##### Mind your eyelets
+##### Achte auf deine Ösen
 
-To make sure your eyelets will end up on the outside, make sure they are closer to the top of your
-waistband, above the fold, for now.
+Um sicherzustellen, dass deine Ösen am Ende außen liegen, achte darauf, dass sie näher am oberen Rand deines
+Bunds liegen, also oberhalb der Falte.
 
 </Tip>
 
@@ -265,8 +265,8 @@ Sie werden Ihre Manschetten auf die gleiche Weise anbringen, wie Sie die Taille 
 
 <Note>
 
-If your sewing machine has a detachable bed (usually removed to expose the "free arm" for sewing
-sleeve cuffs), this will make sewing the cuffs easier.
+Wenn deine Nähmaschine ein abnehmbares Bett hat (das normalerweise abgenommen wird, um den "freien Arm" zum Nähen von
+Ärmelbündchen freizulegen), wird das Nähen der Bündchen einfacher.
 
  </Note>
 
