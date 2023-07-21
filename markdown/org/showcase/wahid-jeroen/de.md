@@ -1,19 +1,19 @@
 ---
-maker: "unknown"
-caption: "Red plaid perfection"
+maker: "unbekannt"
+caption: "Rot karierte Perfektion"
 date: "27.11.2020"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/03e55c42fb0bb6109af5ab0dbf58ad9e6f5a8110-1080x1080.jpg"
-intro: "Jeroen made this stunning Wahid waistcoat in a beautiful red plaid."
-title: "Red Plaid Wahid Waistcoat by Jeroen"
+intro: "Jeroen hat diese atemberaubende Wahid-Weste in einem schönen roten Karo angefertigt."
+title: "Rot karierte Wahid-Weste von Jeroen"
 designs:
   - "wahid"
 ---
 
-Jeroen made this stunning Wahid waistcoat in a beautiful red plaid.
+Jeroen hat diese atemberaubende Wahid-Weste in einem schönen roten Karo angefertigt.
 
-Check out the matching Theo shorts Jeroen made [here](https://freesewing.org/showcase/theo-jeroen/)!
+Schau dir die passenden Theo Shorts von Jeroen an [hier](https://freesewing.org/showcase/theo-jeroen/)!
 
 <Note>
-This picture is from the instagram feed of [Jeroen Keerl](https://www.instagram.com/jeroenkeerl/). It is posted here with permission.
+Dieses Bild stammt aus dem Instagram-Feed von [Jeroen Keerl](https://www.instagram.com/jeroenkeerl/). Er wird hier mit Genehmigung veröffentlicht.
 </Note>
 
