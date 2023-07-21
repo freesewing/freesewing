@@ -1,0 +1,34 @@
+menu: Меню
+draft: Чернетка
+test: Тест
+printLayout: Макет для друку
+cutLayout: Макет розкрою
+save: Зберегти
+export: Експортувати
+edit: Редагувати
+reset: Змінити
+help: Допоможіть!
+name: Назва
+width: Ширина
+height: Висота
+length: Довжина
+topLeft: Вгорі ліворуч
+bottomRight: Внизу праворуч
+attributes: Атрибути
+showAllParts: Показати всі частини деталі
+showOnlyThisPart: Показати тільки цю частину деталі
+showMovableButtons: Кнопки
+partInfo: Інформація про деталь
+pathInfo: Інформація про шлях
+part: Деталь викрійки
+draftPattern: Ескіз шаблону
+testPattern: Тестовий зразок
+savePattern: Зберегти викрійку
+exportPattern: Експортувати викрійку
+editSettings: Редагування конфігурації
+patternLogs: Журнали шаблонів
+patternInspector: Інспектор зразків
+docs: Документація
+configurePattern: Налаштувати шаблон
+measies: Вимірювання викрійки
+noDesignFound: Ми не змогли знайти цей дизайн. Цього не повинно статися, тому ми будемо дуже вдячні, якщо ви повідомите про це.
