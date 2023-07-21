@@ -2,7 +2,7 @@
 title: "Absenkung hintere Taille"
 ---
 
-Together with the "Back curve" option, this option controls how much the back waist curves (revealing more or less skin). For this option, the curve is achieved by cutting away a crescent at the waist. (For fabric with horizontal stripes, some stripes would be interrupted around the center of the waist.)
+Zusammen mit der Option "Rückenkurve" steuert diese Option, wie stark sich die Rückentaille wölbt (mehr oder weniger Haut enthüllt). Bei dieser Option wird die Kurve durch Wegschneiden eines Halbmondes an der Taille erreicht. (Bei Stoffen mit horizontalen Streifen würden einige Streifen in der Mitte der Taille unterbrochen werden).
 
 ## Effekt dieser Option auf das Schnittmuster
 
