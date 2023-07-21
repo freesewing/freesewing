@@ -1,28 +1,28 @@
 ---
 author: "joostdecock"
-caption: "I don't drink, but this seemed appropriate for a celebration post ¯\_(ツ)_/¯"
+caption: "No bebo, pero esto me pareció apropiado para un post de celebración ¯\_(ツ)_/¯"
 date: "2018-08-25"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a6b5a3918ad412f7fb434413fafcc82107109d87-1920x1276.jpg"
-intro: "Celebrating one year of freesewing.org: Announcing the freesewing library"
-title: "Celebrating one year of freesewing.org: Announcing the freesewing library"
+intro: "Celebrando un año de freesewing.org: Anunciamos la biblioteca freesewing"
+title: "Celebrando un año de freesewing.org: Anunciamos la biblioteca freesewing"
 ---
 
 
-Exactly one year ago, the doors of freesewing.org swung open for our users, while those of makemypattern.com get one of those *we've moved* signs.
+Hace exactamente un año, las puertas de freesewing.org se abrieron para nuestros usuarios, mientras los de makemypattern.com recibían uno de esos carteles de *nos hemos mudado* .
 
-Looking back at [that blog post from 12 months ago](/blog/open-for-business), it almost beggars belief that the things announced then are only one year old. The concept of a draft, the comparison functionality, or even paperless patterns. They all celebrate their first birthday today.
+Echando la vista atrás a [, esa entrada del blog de hace 12 meses](/blog/open-for-business), casi resulta increíble que las cosas que se anunciaron entonces tengan sólo un año. El concepto de borrador, la funcionalidad de comparación o incluso los patrones sin papel. Todos ellos celebran hoy su primer cumpleaños.
 
-Not this site though, because [driven by the looming GDPR deadline](/blog/gdpr-plan), we dumped our Jekyll based site for a new front end sometime in May.
+Pero no en este sitio, porque [impulsado por la inminente fecha límite del GDPR](/blog/gdpr-plan), abandonamos nuestro sitio basado en Jekyll por un nuevo front-end en algún momento de mayo.
 
-## More languages with less languages
+## Más lenguas con menos lenguas
 
-GDPR was only part of that story. Other reasons for the rewrite were our desire to support multiple languages, and to simplify our technology stack.
+El GDPR era sólo una parte de esa historia. Otras razones para la reescritura fueron nuestro deseo de admitir varios idiomas, y simplificar nuestra pila tecnológica.
 
-In other words, we wanted to reach people who speak different languages, and wanted to limit the number of programming languages required to do so.
+En otras palabras, queríamos llegar a personas que hablan distintas lenguas, y queríamos limitar el número de lenguajes de programación necesarios para ello.
 
-### More natural languages
+### Lenguas más naturales
 
-We've done remarkably well on this front. While you won't find every last bit of content translated, this website's main features are now available in five languages:
+Lo hemos hecho notablemente bien en este frente. Aunque no encontrarás todo el contenido traducido, las principales funciones de este sitio web están ahora disponibles en cinco idiomas:
 
  - Inglés
  - Alemán
@@ -30,52 +30,52 @@ We've done remarkably well on this front. While you won't find every last bit of
  - Francés
  - Holandés
 
-Which really is 100% thanks to the great work of [our wonderful translators](/i18n/).
+Lo que realmente es 100% gracias al gran trabajo de [nuestros maravillosos traductores](/i18n/).
 
-### Less programming languages
+### Menos lenguajes de programación
 
-The switch from [Jekyll]() to a [Nuxt](https://nuxtjs.org/)-based front-end has removed [Ruby](https://www.ruby-lang.org/) from our technology stack. Freesewing.org now runs on JavaScript, PHP and a little bit of C (which we'll ignore for now).
+El cambio de [Jekyll]() a un front-end basado en [Nuxt](https://nuxtjs.org/) ha eliminado [Ruby](https://www.ruby-lang.org/) de nuestra pila tecnológica. Freesewing.org funciona ahora con JavaScript, PHP y un poco de C (que ignoraremos por ahora).
 
-But removing programming languages is not a goal *an sich*. Rather, the underlying ambition is to simplify things, make it easier for people to get involved, and ultimately attract more contributors so that the project can grow and flourish.
+Pero eliminar los lenguajes de programación no es un objetivo *an sich*. Más bien, la ambición subyacente es simplificar las cosas, facilitar la participación de la gente en y, en última instancia, atraer a más colaboradores para que el proyecto pueda crecer y florecer.
 
-Today, designing/developing patterns is not an insurmountable obstacle. We've got [benjamin](/patterns/benjamin), [florent](/patterns/florent), and [sandy](/patterns/sandy) to show for it. All of these were contributed by people for whom freesewing was initially new, they went through the design tutorial, and in the end created a pattern of their own.
+Hoy en día, diseñar/desarrollar patrones no es un obstáculo insalvable. Tenemos [benjamin](/patterns/benjamin), [florent](/patterns/florent), y [sandy](/patterns/sandy) para demostrarlo. Todos ellos fueron aportados por personas para las que freesewing era inicialmente nuevo, pasaron por el tutorial de diseño, y al final crearon un patrón propio.
 
-We'd like more people to follow in their footsteps. So making the process as simple as possible is a worthy investment of our time.
+Nos gustaría que más gente siguiera sus pasos. Así que hacer que el proceso sea lo más sencillo posible es una inversión de nuestro tiempo que merece la pena.
 
-## Announcing freesewing, the library
+## Anunciamos freesewing, la biblioteca
 
-For the past 2 months, I have taken time off from pattern making and sewing to tackle our [technical debt](https://en.wikipedia.org/wiki/Technical_debt).
+Durante los últimos 2 meses, me he tomado un tiempo libre de patronaje y costura para abordar nuestra deuda técnica [](https://en.wikipedia.org/wiki/Technical_debt).
 
-Specifically, I've set out to rewrite our core back-end from the ground up in JavaScript. But there's a twist. It's no longer a back-end. It's a library you can use both in your browser, or on the server with [node.js](https://nodejs.org/).
+En concreto, me he propuesto reescribir nuestro back-end central desde cero en JavaScript. Pero hay un giro. Ya no es un back-end. Es una biblioteca que puedes utilizar tanto en tu navegador, como en el servidor con [node.js](https://nodejs.org/).
 
-It is currently in version 0.10, and feature complete with freesewing core. It's [available on GitHub](https://github.com/freesewing/freesewing) and [NPM](https://www.npmjs.com/package/freesewing), and is fully documented at [developer.freesewing.org](https://developer.freesewing.org/).
+Actualmente se encuentra en la versión 0.10, y cuenta con el núcleo freesewing. Está [disponible en GitHub](https://github.com/freesewing/freesewing) y [NPM](https://www.npmjs.com/package/freesewing), y está completamente documentada en [developer.freesewing.org](https://developer.freesewing.org/).
 
-And while its API is richer than core's, it's footprint is actually a lot smaller:
+Y aunque su API es más rica que la de Core, su huella es en realidad mucho menor:
 
-![Lines of code comparison between the new library and (the relevant portion of) freesewing core](https://posts.freesewing.org/uploads/corevsfreesewing_c9327c9fa3.svg)
+![Comparación de líneas de código entre la nueva biblioteca y (la parte relevante de) el núcleo de freesewing](https://posts.freesewing.org/uploads/corevsfreesewing_c9327c9fa3.svg)
 
-Which is good news, in case you were wondering.
+Lo cual es una buena noticia, por si te lo estabas preguntando.
 
-## What happens next?
+## ¿Qué ocurre después?
 
-A lot of work needs to be done before we can actually use this on freesewing.org:
+Queda mucho trabajo por hacer antes de que podamos utilizarlo realmente en freesewing.org:
 
 
- - All our existing patterns need to be parted to the JS version. [Brian](https://github.com/freesewing/brian) is the first pattern to have been ported.
- - Rewrite our data back-end in JS. Since this will remove the PHP programming language from our stack.
- - Build a new website using the freesewing library and our new data back-end.
+ - Todos nuestros patrones existentes deben adaptarse a la versión JS. [Brian](https://github.com/freesewing/brian) es el primer patrón que se ha portado.
+ - Reescribe nuestro back-end de datos en JS. Ya que esto eliminará el lenguaje de programación PHP de nuestra pila.
+ - Construye un nuevo sitio web utilizando la biblioteca freesewing y nuestro nuevo back-end de datos.
 
-This really is a lot of work, and while I hope that by the end of the year we'll have made good progress, I can't promise it will be done.
+Esto es realmente mucho trabajo, y aunque espero que a finales de año hayamos hecho buenos progresos, no puedo prometer que esté hecho.
 
-## But I just want patterns
+## Pero sólo quiero patrones
 
-Chances are, all you care about is patterns. What you want is more patterns, better patterns, different patterns. And all of this rewriting is not exactly pushing your buttons.
+Lo más probable es que lo único que te importe sean los patrones. Lo que quieres son más patrones, mejores patrones, patrones diferentes. Y toda esta reescritura no te está tocando precisamente las narices.
 
-I get that. I really do. I for one have a list of patterns I'd like to see added to the site. And my work on other aspects of the project keeps me from adding them.
+Lo entiendo. De verdad. Por mi parte, tengo una lista de patrones que me gustaría que se añadieran al sitio. Y mi trabajo en otros aspectos del proyecto me impide añadirlos.
 
-But I believe that investing now in a streamlined developer experience will have a knock-on effect in the long term.
+Pero creo que invertir ahora en una experiencia racionalizada para los desarrolladores tendrá un efecto en cadena a largo plazo.
 
-If we want a few extra patterns, this is not the right approach. But if we want a lot more patterns, I believe it is.
+Si queremos unos patrones adicionales, éste no es el enfoque adecuado. Pero si queremos muchos más patrones, creo que sí.
 
-And I want a lot more patterns.
+Y quiero muchos más patrones.
 
