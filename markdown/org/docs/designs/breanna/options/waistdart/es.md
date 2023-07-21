@@ -2,7 +2,7 @@
 title: "Dardo de Waist"
 ---
 
-Whether or not to inlude a back waist dart to round the back.
+Incluir o no una pinza en la cintura para redondear la espalda.
 
 ## Efecto de esta opción en el patrón
 
