@@ -1,16 +1,16 @@
 ---
 maker: "невідомо"
-caption: "Adam looking spectacularly dapper in his Wahid"
+caption: "Адам виглядає ефектно у своєму вахідському вбранні"
 date: "2020-07-01"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ab68d41354448f2149dcdce2cbf3b0222f58012d-2160x1080.jpg"
-intro: "Wahid by Adam"
-title: "Wahid by Adam"
+intro: "Вахід від Адама"
+title: "Вахід від Адама"
 designs:
-  - "wahid"
+  - "вахід"
 ---
 
 
-You'd be forgiven to think we cut this out of a high-fashion magazine, but it's a picture from Adam who made this gorgeous Wahid for himself.
+Ви можете подумати, що ми вирізали це фото з журналу високої моди, але це фото від Адама, який зробив цей чудовий вахід для себе.
 
 <Note>
 
