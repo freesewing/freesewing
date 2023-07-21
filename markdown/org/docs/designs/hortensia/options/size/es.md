@@ -4,22 +4,22 @@ title: "Talla"
 
 Controla el tamaño total del bolso.
 
-Rather than using measurements, Hortensia's size is determined by scaling fixed values.
+En lugar de utilizar medidas, el tamaño de Hortensia se determina escalando valores fijos.
 
-- 20% : Will scale these values by 0.2
-- 200% : Will scale these values by 2
+- 20% : Escalará estos valores en 0,2
+- 200% : Escalará estos valores en 2
 
-The two fixed values that are used the most are Width: 23cm and Height: 33cm.
+Los dos valores fijos que más se utilizan son Anchura: 23 cm y Altura: 33 cm.
 
 <Note>
 
-So an example of this would be the default, which is 50%. This would scale the values by 0.5 resulting in a handbag that is 11.5cm (23cm x 0.5) in width and 16.5cm (33cm x 0.5) in height.
+Un ejemplo sería el valor por defecto, que es el 50%. Esto escalaría los valores en 0,5, lo que daría como resultado un bolso de 11,5 cm (23 cm x 0,5) de ancho y 16,5 cm (33 cm x 0,5) de alto.
 
 </Note>
 
 <Tip>
 
-Turn on paperless to see the measurements of the handbag. This will help you to determine the size you want and see the effects of this option.
+Activa la función sin papel para ver las medidas del bolso. Esto te ayudará a determinar el tamaño que deseas y a ver los efectos de esta opción.
 
 </Tip>
 
