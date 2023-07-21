@@ -2,7 +2,7 @@
 title: "Bonus de longitud"
 ---
 
-Allows variation of the length of the garment
+Permite variar la longitud de la prenda
 
 ## Efecto de esta opción en el patrón
 
