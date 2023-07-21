@@ -2,7 +2,7 @@
 title: "Bonus mouwlengte"
 ---
 
-This option controls how long to lengthen the sleeves by.
+Deze optie bepaalt hoe lang de mouwen moeten worden verlengd.
 
 ## Effect van deze optie op het patroon
 
