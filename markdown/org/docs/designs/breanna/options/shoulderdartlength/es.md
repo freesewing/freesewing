@@ -2,7 +2,7 @@
 title: "Longitud del dart del hombro"
 ---
 
-The length of the back shoulder dart.
+La longitud de la pinza del hombro trasero.
 
 ## Efecto de esta opción en el patrón
 
