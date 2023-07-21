@@ -1,5 +1,5 @@
 ---
-title: "Carlita coat: Design Options"
+title: "Abrigo Carlita: Opciones de diseño"
 ---
 
 <PatternOptions pattern='carlita' />
