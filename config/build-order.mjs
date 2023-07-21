@@ -8,7 +8,7 @@ import { designs, plugins, packages } from './software/index.mjs'
 
 const first = ['core', 'remark-jargon', 'snapseries']
 const blocks = ['brian', 'titan', 'bella', 'breanna']
-const extended = ['bent', 'simon', 'carlton', 'ursula']
+const extended = ['bent', 'simon', 'carlton']
 
 export const buildOrder = [
   // First build FreeSewing core library and config-helpers
