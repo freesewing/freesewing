@@ -1,5 +1,5 @@
 ---
-title: "Hugo hoodie: Sewing Instructions"
+title: "Hugo hoodie: Naai-instructies"
 ---
 
 <Note>
@@ -29,8 +29,8 @@ Deze zesdelige reeks toont je van begin tot eind hoe je de hoodie in elkaar zet:
 - Stik de belegdelen aan de zak met 1 cm naadwaarde.  Stik zowel de lange rand als het kortere randje onderaan de zak.
 - Knip voorzichtig de naadwaarde bij aan de belegdelen.
 - Keer de belegdelen naar de goede kant.  Rol de naden op hun plaats en strijk ze plat.
-- Topstitch or edge-stitch 0.5 cm along both upper and lower edges on each side of the pocket, to anchor the facing and the seam allowance.
-- Topstitch another line 0.5 cm from the inside upper edge of the facing on each side of the pocket.  Dit stiksel stopt aan het eerste stiksel aan de onderrand.
+- Stik of kantstik 0,5 cm langs beide boven- en onderranden aan elke kant van de zak om het beleg en de naadtoeslag te verankeren.
+- Stik nog een lijn door op 0,5 cm van de binnenbovenrand van het beleg aan elke kant van de zak.  Dit stiksel stopt aan het eerste stiksel aan de onderrand.
 - Knip het overtollige beleg aan de binnenkant van de zak weg.
 - Strijk de randen.
 
@@ -90,7 +90,7 @@ Deze zesdelige reeks toont je van begin tot eind hoe je de hoodie in elkaar zet:
 - Om de kap te sluiten lock je de lagen samen langs de halslijn.  Als je geen overlock hebt, gebruik dan een zigzagsteek.
 - (Optioneel) Als je gaten hebt gemaakt voor een koordje kan je dit er nu doorheen halen.
 
-### Step 8: Preparing a Neckband and Attaching the Hood
+### Stap 8: Een nekband maken en de kap vastmaken
 
 - Knip een kruisverstandige strook stof uit je hoofdstof, je halsopening + 2 cm (3/4 inch) lang en drievoudig de naadwaarde van je nek.
 - Leg de uiteindes van de halsbies met goede kanten op elkaar en stik vast met 1 cm naadwaarde om een ronde band te vormen.
