@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3d05ee5656f7aac511d95
 intro: "Жилет вахід з зав'язаними петлицями"
 title: "Жилет вахід з зав'язаними петлицями"
 designs:
-  - "wahid"
+  - "вахід"
 ---
 
 ![Вид збоку](https://posts.freesewing.org/uploads/bound_wahid_2_8cecc34558.jpg "Вид збоку")
