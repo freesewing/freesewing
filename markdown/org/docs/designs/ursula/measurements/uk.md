@@ -1,5 +1,5 @@
 ---
-title: "Ursula undies: Required Measurements"
+title: "Урсула роздягається: Необхідні виміри"
 ---
 
 <Note>
