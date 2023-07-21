@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fd444e514ea1ec6a2e283
 intro: "Цей пост спочатку з'явився в Instagram-каналі nadesmakes ."
 title: "Светр Sven з французької махри, який майже не розтягується"
 designs:
-  - "sven"
+  - "Свен"
 ---
 
 
