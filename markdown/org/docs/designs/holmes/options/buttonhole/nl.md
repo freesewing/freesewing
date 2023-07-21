@@ -4,7 +4,7 @@ title: "Knoopsgatengids"
 
 ***
 
-Adds a buttonhole to the ear flap to help you draft the buttonhole ear flap variant
+Voegt een knoopsgat toe aan de oorflap om je te helpen bij het opstellen van de knoopsgat-oorflapvariant
 
 ## Effect van deze optie op het patroon
 
