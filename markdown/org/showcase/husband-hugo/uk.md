@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/bc1b64060b3b0907157c2
 intro: "Це фото з Instagram-каналу uneanneedecouture ."
 title: "Г'юго для чоловіка, від Соні"
 designs:
-  - "hugo"
+  - "Хьюго."
 ---
 
 Це фото з [стрічки Instagram](https://www.instagram.com/p/_1j7FSgynG/)  від [uneanneedecouture](https://uneanneedecouture.wordpress.com/).
