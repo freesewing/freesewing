@@ -1,5 +1,5 @@
 ---
-title: "Aaron A-Shirt: Sewing Instructions"
+title: "Camiseta Aaron A: Instrucciones de costura"
 ---
 
 ## Paso 1: Cerrar costuras
