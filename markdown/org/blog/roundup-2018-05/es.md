@@ -1,37 +1,37 @@
 ---
 author: "joostdecock"
-caption: "Your login background for June"
+caption: "Tu fondo de conexión para junio"
 date: "2018-05-31"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/63d370c4ad7447d762f2ed053279bc3f11c7583d-1920x1080.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - May 2018: The post-GDPR era is upon us"
+intro: "Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene."
+title: "Resumen mensual - Mayo de 2018: Llega la era post-GDPR"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene.
 
-## Looking back at May
+## Echando la vista atrás a mayo
 
-Well here we are, the GPPR deadline of May 25th is getting smaller and smaller in our rear-view mirror, and we have a new website.
+Bueno, aquí estamos, el plazo del GPPR del 25 de mayo se hace cada vez más pequeño en nuestro espejo retrovisor, y tenemos un nuevo sitio web.
 
-Both of those things are obviously related, but you probably [already knew that](/blog/gdpr-ready).
+Ambas cosas están obviamente relacionadas, pero probablemente [ya lo sabía](/blog/gdpr-ready).
 
-May has been an incredibly hectic month, with a lot of self-inflicted stress because rather than just implement the changes required for GDPR, we decided to rebuild the entire site. However, as the GDPR changes needed to be ready in time, that meant that the entire site had to be ready.
+Mayo ha sido un mes increíblemente ajetreado, con mucho estrés autoinfligido porque en lugar de limitarnos a aplicar los cambios necesarios para el GDPR, decidimos reconstruir todo el sitio. Sin embargo, como los cambios del GDPR tenían que estar listos a tiempo, eso significaba que todo el sitio tenía que estar listo.
 
-*Ready* is obviously open to interpretation, and even though we published the site on time — with 1.5 hours to spare to be precise — there were still a few loose ends left and right.
+*Listo* está obviamente abierto a la interpretación, y aunque publicamos el sitio a tiempo -con 1,5 horas de sobra para ser exactos- todavía quedaban algunos cabos sueltos a diestro y siniestro.
 
-We've fixed a bunch of those and I'd like to thank all of you who reported issues and helped us fix them by sharing their experience.
+Hemos solucionado un montón de ellos y me gustaría dar las gracias a todos los que nos informasteis de los problemas y nos ayudasteis a a solucionarlos compartiendo vuestra experiencia.
 
-A lot of time and effort has been invested in making the site multi-lingual, and it's been great to be able to launch with three langauges enabled. All the translators are doing great work and I hope we'll be able to turn on a few other langauges relatively soon.
+Se ha invertido mucho tiempo y esfuerzo en hacer el sitio multilingüe, y ha sido estupendo poder lanzarlo con tres idiomas habilitados. Todos los traductores están haciendo un gran trabajo y espero que podamos activar algunos otros idiomas relativamente pronto.
 
-Apart from [open issues](https://github.com/freesewing/site/issues), we also still have to port some of the documentation to the new site, which is something that we'll continue to work on in June. Speaking of which:
+Aparte de [cuestiones abiertas](https://github.com/freesewing/site/issues), también tenemos que portar parte de la documentación al nuevo sitio, que es algo en lo que seguiremos trabajando en junio. Hablando de eso:
 
-## Looking ahead to June
+## De cara a junio
 
-Don't expect any ground breaking changes in June. We're going to keep on ironing out the last kinks on the site, and continue to port the remaining documentation that's still missing from the site.
+No esperes cambios revolucionarios en junio. Vamos a seguir limando los últimos asperezas del sitio , y continuaremos portando la documentación que aún falta en el sitio .
 
-I can't — and won't — make any promises and expect other people to keep them, so while I can't commit to any translation work, great strides are being made in the French and Swedish translations, so that's all very exciting.
+No puedo -ni quiero- hacer promesas y esperar que otras personas las cumplan, así que, aunque no puedo comprometerme con ningún trabajo de traducción, se están haciendo grandes progresos en las traducciones al francés y al sueco, así que todo eso es muy emocionante.
 
-I'm also thrilled that this translation work is turning out to be a good on-ramp for people with no prior experience as open source contributors. Not only that, but translators are now actually fixing small bugs left and right which is really terrific.
+También estoy encantada de que este trabajo de traducción esté resultando ser una buena rampa de acceso para personas sin experiencia previa como colaboradores de código abierto. No sólo eso, sino que los traductores están ahora corrigiendo pequeños errores a diestro y siniestro, lo que es realmente estupendo.
 
-Obviously there's a lot of work that remains to be done, so if you're still standing on the sidelines wondering whether this is something for you, don't be shy. [Stop by our chat room to say hello](https://discord.freesewing.org/), we don't bite ☺️
+Obviamente, queda mucho trabajo por hacer, así que si todavía estás al margen de preguntándote si esto es algo para ti, no te cortes. [Pásate por nuestro chat para saludar](https://discord.freesewing.org/), no mordemos ☺️
 
