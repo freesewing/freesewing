@@ -1,8 +1,8 @@
 ---
-title: "Fabric stretch Y"
+title: "Stoff Stretch Y"
 ---
 
-Controls the stretch in vertical direction.
+Steuert die Dehnung in vertikaler Richtung.
 
 ## Effekt dieser Option auf das Schnittmuster
 
