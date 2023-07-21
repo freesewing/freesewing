@@ -1,19 +1,19 @@
 ---
-maker: "unknown"
-caption: "There's so many people who made our face mask, here's just a few of them"
+maker: "desconocido"
+caption: "Hay tantas personas que han hecho nuestra máscara facial, aquí están algunas de ellas"
 date: "2020-07-12"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/85f06378981db4e6769579d583b5361e5b8b6e46-2000x1200.jpg"
-intro: "When we published our face mask in February, we did not anticipate that it would blow up the way it did."
-title: "Various Florence makers"
+intro: "Cuando publicamos nuestra máscara facial en febrero, no preveíamos que fuera a explotar como lo hizo."
+title: "Varios fabricantes de Florencia"
 designs:
-  - "florence"
+  - "florencia"
 ---
 
 
-When we published our face mask in February, we did not anticipate that it would blow up the way it did.
+Cuando publicamos nuestra máscara facial en febrero, no preveíamos que fuera a explotar como lo hizo.
 
-Countless of people have made our mask, and in the avalange of questions and feedback, we haven't really kept trach of who did what.
+Innumerables personas han hecho nuestra máscara, y en la avalancha de preguntas y comentarios, realmente no hemos mantenido el rastro de quién hizo qué.
 
-Above is selection of people who shared their makes with us on social media.  
-Thanks to all of them for doing so, and please do the same if you'd like us to showcase your makes.
+Arriba tienes una selección de personas que han compartido sus creaciones con nosotros en las redes sociales.  
+Gracias a todos ellos por hacerlo y, por favor, haz lo mismo si quieres que mostremos tus creaciones.
 
