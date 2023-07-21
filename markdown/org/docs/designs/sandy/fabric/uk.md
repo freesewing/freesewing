@@ -1,5 +1,5 @@
 ---
-title: "Sandy circle skirt: Fabric Options"
+title: "Пісочна спідниця-коло: Варіанти тканин"
 ---
 
 ### Основна тканина
