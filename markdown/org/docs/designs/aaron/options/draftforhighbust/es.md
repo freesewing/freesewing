@@ -2,7 +2,7 @@
 title: Borrador para alta caída
 ---
 
-Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts.
+Redacta el patrón para la medida del busto alto (si lo tienes) en lugar del pecho (completo). El resultado será una prenda más ajustada para las personas con senos.
 
 ## Efecto de esta opción en el patrón
 
