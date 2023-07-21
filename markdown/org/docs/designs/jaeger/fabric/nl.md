@@ -1,5 +1,5 @@
 ---
-title: "Jaeger jacket: Fabric Options"
+title: "Jaeger jasje: Stof opties"
 ---
 
 Dit type jasjes worden vaak gemaakt van een zwaardere wol, meestal met wat textuur of een ingeweven patroon. Over het algemeen worden ze gemaakt in _drukkere_ stoffen.
