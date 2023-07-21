@@ -1,5 +1,5 @@
 ---
-title: "Carlita coat: What You Need"
+title: "Manteau Carlita : Ce qu'il te faut"
 ---
 
 Pour fabriquer Carlita, vous aurez besoin des éléments suivants :
@@ -10,13 +10,13 @@ Pour fabriquer Carlita, vous aurez besoin des éléments suivants :
 - Environ 0,75 à 1 mètre de tissu de doublure de manche ([voir les options de tissu Carlita](/docs/patterns/carlita/fabric/))
 - Toile légère à moyenne ([voir les options du tissu Carlita](/docs/patterns/carlita/fabric/))
 - Toile à poils lourds ([voir les options de tissu Carlita](/docs/patterns/carlita/fabric/))
-- Tailors tape
-- 6 Buttons for front closure
-- Strong thread for attaching facings
-- (Optional) Silk buttonhole twist if hand-sewing the buttonholes and buttons.
+- Ruban de tailleur
+- 6 boutons pour la fermeture avant
+- Fil solide pour fixer les parements
+- (Facultatif) Pince à boutonnières en soie si vous cousez les boutonnières et les boutons à la main.
 
 <Warning>
 
-Carlita a beaucoup de pièces ! These lengths are estimates, you may need more or less depending on your size but if in doubt add an extra 0.5 to 1 metre of fabric.
+Carlita a beaucoup de pièces ! Ces longueurs sont des estimations, vous pouvez avoir besoin de plus ou moins en fonction de votre taille, mais en cas de doute, ajoutez 0,5 à 1 mètre de tissu supplémentaire.
 
 </Warning>
