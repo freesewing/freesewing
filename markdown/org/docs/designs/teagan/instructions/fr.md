@@ -1,5 +1,5 @@
 ---
-title: "Teagan T-shirt: Sewing Instructions"
+title: "T-shirt Teagan : Instructions de couture"
 ---
 
 ## Etape 1: Assemblez les coutures d'épaule
@@ -18,54 +18,54 @@ Optionnel: Dans un tricot drapier, vous pouvez choisir de renforcer les coutures
 ![Mettre dans les manches](step02.svg)
 
 - Placez le devant et le dos maintenant fixés avec le bon côté vers le haut.
-- Identifiez les côtés avant et arrière de chacune de vos manches. (C'est ainsi que vous séparez la manche gauche de la droite.) On your paper pattern piece, the front side of the sleeve is to the right.
+- Identifiez les côtés avant et arrière de chacune de vos manches. (C'est ainsi que vous séparez la manche gauche de la droite.) Sur ta pièce de patron en papier, le devant de la manche se trouve à droite.
 - Placez une manche sur le devant et le dos, avec le bon côté vers le bas.
 - Alignez le haut de la tête de manche avec la couture de l'épaule. Assurez-vous que l'avant et l'arrière de la manche sont alignés avec les pièces avant et arrière de votre chemise.
 - Épingler la manche en place le long de toute l'armurière. Il y a un peu de tête de manche facile, ce qui signifie que la tête de manche est un peu plus longue que la manche. Facilité dans la partie supérieure de la tête de manche en épinglant.
 - Coudre ou serrer votre manche épinglée en place.
 - Répétez pour l'autre manche.
 
-## Step 3: Sew the neck finish
+## Étape 3 : Coudre la finition du cou
 
-There are two options for the neck finish on Teagan: a knit band or knit binding. Knit band is what you typically see on store-bought T-shirts, whereas knit binding is the finish you'll find on the Aaron A-Tank. Directions for both are given here.
+Il y a deux options pour la finition du cou sur Teagan : une bande de tricot ou une reliure en tricot. La bande de tricot est ce que tu vois généralement sur les t-shirts achetés dans le commerce, tandis que la bande de tricot est la finition que tu trouveras sur le Aaron A-Tank. Les instructions pour les deux sont données ici.
 
 <Note>
 Il s'agit de l'étape la plus complexe dans la fabrication du T-shirt Teagan, mais cela nécessite juste un peu de pratique. Ne vous inquiétez pas, tout ce que vous avez à faire est d’en faire deux et vous serez un pro en un rien de temps.
 </Note>
 
-### Option 1: knit band finish
+### Option 1 : finition de la bande tricotée
 
-#### Place (the start of) your knit band
+#### Place (le début de) ta bande de tricot.
 
-![Place your knit band](step03f.svg)
+![Place ta bande de tricot](step03f.svg)
 
-- Fold your binding in half lengthwise (parallel to the longest side), and press.
-- Put your T-shirt down with the back good side up, and place your band strip on top of it, lining up the raw edges of the band with the raw edge of the neck opening.
-- Your band should start at the center back of the neck opening.
+- Plie ta reliure en deux dans le sens de la longueur (parallèlement au côté le plus long), et presse.
+- Pose ton T-shirt avec le bon côté du dos vers le haut, et place ta bande sur le dessus, en alignant les bords bruts de la bande avec le bord brut de l'ouverture de l'encolure.
+- Ta bande doit commencer au centre arrière de l'ouverture du cou.
 - Décalez maintenant votre bande de biais de 1 cm avant votre point de départ. Ce petit surplus garantira que nous pourrons joindre les deux extrémités plus tard.
 
-#### Sew band in place
+#### Couds la bande en place
 
-![Sew knit band in place](step03g.svg)
+![Couds la bande de tricot en place](step03g.svg)
 
-- Place your presser foot 3 cm along the knit band, so a 4 cm tail will be left unstitched. This will help us join the ends together later. Then, sew around the neck opening, stretching the band gently as you sew.
+- Place ton pied-de-biche à 3 cm de la bande de tricot, de sorte qu'une queue de 4 cm sera laissée sans couture. Cela nous aidera à joindre les extrémités plus tard. Puis, couds autour de l'ouverture du cou, en étirant doucement la bande pendant que tu couds.
 
 <Note>
   
-This stretching is the trickiest part. Many online tutorials will tell you to simply start with a band slightly smaller than the neck opening, and stretch to fit. While an option, this does not account for differences in fabric stretch and elasticity, and can result in a floppy or puckered neck finish. Stretching to fit the neck opening by feel is something that takes a bit of practice, but is a good skill to build for better finishes long-term.
+Cet étirement est la partie la plus délicate. De nombreux tutoriels en ligne te diront de simplement commencer par une bande légèrement plus petite que l'ouverture du cou, et de l'étirer pour l'ajuster. Bien qu'il s'agisse d'une option, cela ne tient pas compte des différences d'étirement et d'élasticité du tissu, et peut donner une finition de cou flasque ou froncée. S'étirer pour s'adapter à l'ouverture du manche au feeling est quelque chose qui demande un peu de pratique, mais c'est une bonne compétence à acquérir pour obtenir de meilleures finitions à long terme.
   
 </Note>
 
 - Arrêtez de coudre 3 cm avant la fin, laissant une queue comme nous l'avons fait au début.
 
-#### Sew band ends together
+#### Couds les extrémités de la bande ensemble
 
-![Sew band ends](step03c.svg)
+![Couds les extrémités de la bande](step03c.svg)
 
-Now it's time to sew the ends of our knit band together.
-- Take the end of your knit band, and stretch it along the 3 cm separating it from the start point as you would while sewing. On the band, mark where the band reached the start point, or center back. Faites la même chose pour l'autre extrémité.
-- Fold your T-shirt in whatever way makes it more easy for you to place both band ends with good sides together, aligning the marks. Les coudre ensemble aux marques.
- - You should now have a joined knit band.
+Il est maintenant temps de coudre les extrémités de notre bande de tricot ensemble.
+- Prends l'extrémité de ta bande de tricot, et étire-la le long des 3 cm qui la séparent du point de départ, comme tu le ferais en cousant. Sur la bande, marque l'endroit où la bande a atteint le point de départ, ou le centre arrière. Faites la même chose pour l'autre extrémité.
+- Plie ton T-shirt de la façon qui te facilitera la tâche pour placer les deux extrémités de la bande avec les bons côtés ensemble, en alignant les marques. Les coudre ensemble aux marques.
+ - Tu devrais maintenant avoir une bande tricotée jointe.
 
 <Note>
 
@@ -73,15 +73,15 @@ Now it's time to sew the ends of our knit band together.
 
 </Note>
 
-![Finish knit band](step03h.svg)
+![Bande de tricot de finition](step03h.svg)
 
-- Now that your band ends are joined together, it’s time to finish the last 6 cm, by stretching and sewing down the band as you did for the rest.
+- Maintenant que les extrémités de ta bande sont réunies, il est temps de terminer les 6 derniers centimètres, en étirant et en cousant la bande comme tu l'as fait pour le reste.
 
-Hurray! Vous avez terminé la partie la plus délicate ! Optionally, you can secure the raw edges by stitching them down to the T-shirt fabric, just inside the knit band with a sig-zag or coverlock stitch. This is not required, but it is a detail that you'll see on many ready-to-wear T-shirts, and it can help your neck band lie flat.
+Hourra ! Vous avez terminé la partie la plus délicate ! Tu peux aussi fixer les bords bruts en les cousant au tissu du T-shirt, juste à l'intérieur de la bande de tricot, à l'aide d'un point sig-zag ou d'un point de recouvrement. Ce n'est pas obligatoire, mais c'est un détail que tu verras sur de nombreux T-shirts prêts à porter, et cela peut aider ton tour de cou à rester plat.
 
-![Sew down knit band to secure](step03i.svg)
+![Couds la bande de tricot pour la fixer](step03i.svg)
 
-### Option 2: knit binding finish
+### Option 2 : finition tricotée
 
 <Tip>
 
