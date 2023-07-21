@@ -4,8 +4,8 @@ title: "Angle des pinces poitrine"
 
 Contrôle l'angle par lequel la pince poitrine (sur le côté) s'incline vers le bas.
 
-- Increase this option to angle the bust darts downwards and towards the floor
-- Decrease this option to angle the bust darts upwards and towards the armscye
+- Augmente cette option pour orienter les pinces du buste vers le bas et vers le sol.
+- Diminue cette option pour orienter les pinces du buste vers le haut et vers l'emmanchure.
 
 ## Effet de cette option sur le motif
 
