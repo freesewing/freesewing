@@ -1,5 +1,5 @@
 ---
-title: "Wahid waistcoat: Sewing Instructions"
+title: "Wahid vest: Naai-instructies"
 ---
 
 ### Stap 1: Bevestig tussenvoering
@@ -148,7 +148,7 @@ Plooi ze terug, en let op dat je zakopening een mooie rechthoek blijft, en strij
 
 ![Keer de paspel naar de achterkant, plooi en strijk](05i.png) ![Keer de paspel naar de achterkant, plooi en strijk](05j.png)
 
-Flip the pocket welt with the attached pocket back tot he back side.
+Klap het zakomslag met de aangehechte zak terug naar de achterkant.
 
 Plooi je paspel om aan het punt waar hij de bovenrand van de zakopening raakt. De paspel zou de hele zakopening moeten bedekken.
 
