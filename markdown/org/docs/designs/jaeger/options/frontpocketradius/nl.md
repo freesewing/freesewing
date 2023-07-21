@@ -4,8 +4,8 @@ title: "Ronding zak"
 
 De mate waarin de zakken zijn afgerond.
 
-- Increase this option to curve the bottom of the front pocket
-- Decrease this option to straighten out the bottom of the front pocket
+- Verhoog deze optie om de onderkant van de voorzak te buigen
+- Verlaag deze optie om de onderkant van de voorzak recht te maken
 
 ## Effect van deze optie op het patroon
 
