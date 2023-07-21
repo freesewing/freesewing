@@ -1,5 +1,5 @@
 ---
-title: "Diana draped top: Cutting Instructions"
+title: "Diana gedrapeerde top: Snij-instructies"
 ---
 
 - Knip **1 rugpand** aan de stofvouw
