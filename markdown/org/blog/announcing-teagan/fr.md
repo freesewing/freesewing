@@ -29,7 +29,7 @@ Si vous songez à coudre Teagan, mais vous êtes débutant pour coudre ou travai
 
 <YouTube id='3UGJSNxNe8I' />
 
-If all of this sounds awesome, and you want to get more involved with FreeSewing, you can check out our repositories and source code on [Github](https://github.com/freesewing/) or connect with other contributors via [Discord](https://discord.freesewing.org/). Vous pouvez trouver les annonces sur les appels des contributeurs à venir sur Discord, dans le canal des annonces.
+Si tout cela te semble génial et que tu veux t'impliquer davantage dans FreeSewing, tu peux consulter nos dépôts et notre code source sur [Github](https://github.com/freesewing/) ou te connecter avec d'autres contributeurs via [Discord](https://discord.freesewing.org/). Vous pouvez trouver les annonces sur les appels des contributeurs à venir sur Discord, dans le canal des annonces.
 
 Et si vous coupez un T-shirt Teagan, faites-nous savoir ce que vous en pensez !
 
