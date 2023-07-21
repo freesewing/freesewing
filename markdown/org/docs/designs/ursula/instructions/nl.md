@@ -1,5 +1,5 @@
 ---
-title: "Ursula undies: Sewing Instructions"
+title: "Ursula onderbroek: Naai-instructies"
 ---
 
 ### Stap 1: Stik het voorpand aan het eerste zweefstuk
