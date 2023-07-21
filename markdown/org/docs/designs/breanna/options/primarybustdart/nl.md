@@ -2,7 +2,7 @@
 title: "Bust neep"
 ---
 
-Where to place the primary bust dart to shape the chest.
+Waar plaats je de primaire bustespijl om de borst vorm te geven.
 
 ## Effect van deze optie op het patroon
 
