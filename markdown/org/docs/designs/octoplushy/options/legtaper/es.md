@@ -1,8 +1,8 @@
 ---
-title: "Leg Taper"
+title: "Conicidad de la pierna"
 ---
 
-This setting changes how much the legs taper from the body down to the end.
+Este ajuste cambia el grado de estrechamiento de las piernas desde el cuerpo hasta el final.
 
 ## Efecto de esta opción en el patrón
 
