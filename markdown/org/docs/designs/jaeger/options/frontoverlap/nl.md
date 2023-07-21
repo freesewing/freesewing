@@ -2,7 +2,7 @@
 title: "Overlap voorzijde"
 ---
 
-How far the fabric extends beyond the button closure.
+Hoe ver de stof uitsteekt voorbij de knoopsluiting.
 
 ## Effect van deze optie op het patroon
 
