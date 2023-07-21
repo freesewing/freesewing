@@ -1,5 +1,5 @@
 ---
-title: "Hortensia handbag: Cutting Instructions"
+title: "Sac à main Hortensia : Instructions de coupe"
 ---
 
 ### Matériaux
@@ -8,9 +8,9 @@ title: "Hortensia handbag: Cutting Instructions"
   - Couper **2 pièces latérales**
   - Couper **2 parties avant **
   - Couper **1 partie inférieure**
-  - Cut **2 SidePanelReinforcement** parts
-  - Cut **2 Strap** parts
-  - Cut **1 ZipperPanel** part
+  - Coupe **2 Renforcement des panneaux latéraux** parties
+  - Coupe **2 Strap** parts
+  - Coupe **1 ZipperPanel** partie
 - **Tissu de doublure**
   - Couper **2 pièces latérales**
   - Couper **2 parties avant **
