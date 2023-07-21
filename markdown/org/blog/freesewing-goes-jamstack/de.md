@@ -34,9 +34,7 @@ Ich wollte den gleichen Ansatz in einer Website. Außer, dass sie nicht statisch
 
 Ich habe zum ersten Mal von JAMstack erfahren, als ich anfing, mich mit dem Hosting für diese zentrale Dokumentationsseite zu befassen. Es wurde ursprünglich auf GitHub-Seiten gehostet, die kostenloses Hosting anbieten. Sie haben auch SSL oder einen benutzerdefinierten Domänennamen, aber Sie können nicht beides haben. Was eine Art Deal-Breaker war.
 
-Auf der Suche nach Alternativen stolperte ich über [Netlify](https://www.netlify.com/), die sowohl SSL- als auch kundenspezifische Domains betreiben und ein kostenloses Angebot für Open-Source-Projekte haben (danke Jungs). Außerdem hat mich dieses Video von Netlify CEO Mathias Biilmann
-
- sehr begeistert für JAMstack.</p> 
+Auf der Suche nach Alternativen stolperte ich über [Netlify](https://www.netlify.com/), die sowohl SSL- als auch kundenspezifische Domains betreiben und ein kostenloses Angebot für Open-Source-Projekte haben (danke Jungs). Außerdem hat mich dieses Video von Netlify CEO Mathias Biilmann sehr begeistert für JAMstack.
 
 Sofern Sie nicht mit JAMstack vertraut sind, schlage ich vor, dass Sie sich das Video ansehen, aber es läuft darauf hinaus:
 

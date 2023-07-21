@@ -12,6 +12,8 @@ export const LayoutWrapper = ({
   setSearch,
   noSearch = false,
   header = false,
+  footer = true,
+  slug,
 }) => {
   const ChosenHeader = header ? header : Header
 
@@ -45,7 +47,7 @@ export const LayoutWrapper = ({
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <ChosenHeader show={showHeader} />
+      <ChosenHeader show={showHeader} slug={slug} />
 
       <main
         className={`grow transition-margin duration-300 ease-in-out lg:group-[.header-shown]/layout:mt-24 lg:mt-4
@@ -70,7 +72,7 @@ export const LayoutWrapper = ({
           <div className="fixed top-0 left-0 w-full min-h-screen bg-neutral z-20 bg-opacity-70"></div>
         </>
       )}
-      <Footer />
+      {footer && <Footer />}
     </div>
   )
 }

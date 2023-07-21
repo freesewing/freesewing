@@ -5,9 +5,8 @@ import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ReadMore } from 'shared/components/mdx/read-more.mjs'
-import { ns as navNs } from 'site/hooks/use-navigation.mjs'
 
-const ns = [...pageNs, navNs, 'common']
+const ns = [...pageNs, 'common']
 
 const SitemapPage = ({ page }) => {
   const { t } = useTranslation(ns)

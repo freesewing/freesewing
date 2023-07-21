@@ -2,4 +2,4 @@
 title: Sitemap
 ---
 
-<ReadMore recurse root />
+<ReadMore recurse root depth={3}/>

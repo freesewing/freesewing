@@ -10,7 +10,7 @@ designs:
 ---
 
 
-Joost maakte deze Charlie Chinos broek en de hele FreeSewing community viel meteen voor het ontwerp van de broek en de stof. </em> Joost kon ons niet vertellen waar de stof vandaan kwam (het was uit zijn voorraad), maar *gaf een paar dagen later wel het Charlie patroon vrij.</p>
+Joost maakte deze Charlie Chinos broek en de hele FreeSewing community viel meteen voor het ontwerp van de broek en de stof. Joost kon ons niet vertellen waar de stof vandaan kwam (het was uit zijn voorraad), maar *gaf* een paar dagen later wel het Charlie patroon vrij.
 
 Deze foto is van Joost, [@j__st op Twitter](https://twitter.com/j__st). Hij werd hier gepost met toestemming.
 

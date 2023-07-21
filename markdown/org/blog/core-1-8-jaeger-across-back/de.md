@@ -55,7 +55,7 @@ Dies ist nicht der Fall *dieses Schnittmuster kommt mit 38 Optionen*. Als ob die
 
 Das Ersetzen einer Messung durch einen errechneten Wert, der auf der Grundlage einer anderen Messung generiert wird, mag dem entgegengesetzt erscheinen, aber es besteht kein Grund zur Sorge. Wir haben dafür gesorgt, dass Sie sich immer noch und die Passform am Rücken kümmern können.
 
-Muster, die früher die *die Rückenbreite als Mass erforderten, haben nun eine neue erweiterte Option: den *Rückenfaktor*. Es erlaubt Ihnen, die Berechnung Ihrer Rückenbreite zu optimieren, stellt aber sicher, dass diese innerhalb sinnvoller Parameter bleibt.</p>
+Muster, die früher die *die Rückenbreite als Mass erforderten, haben nun eine neue erweiterte Option: den *Rückenfaktor*. Es erlaubt Ihnen, die Berechnung Ihrer Rückenbreite zu optimieren, stellt aber sicher, dass diese innerhalb sinnvoller Parameter bleibt.
 
 ![Der Rückenbreitenfaktor](https://posts.freesewing.org/uploads/acrossback_60791a4392.png)
 

@@ -15,3 +15,7 @@ export const Spinner = ({ className = 'h-6 w-6 animate-spin' }) => (
     ></path>
   </svg>
 )
+
+export const Loading = () => (
+  <Spinner className="w-24 h-24 color-primary animate-spin m-auto mt-8" />
+)

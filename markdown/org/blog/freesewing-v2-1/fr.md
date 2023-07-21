@@ -8,7 +8,7 @@ title: "FreeSewing v2.1 : Trois nouveaux modèles, un mode expert et l'aide aux 
 ---
 
 
-Nous venons juste de publier FreeSewing v2.1 <unk> 🎉
+Nous venons juste de publier FreeSewing v2.1 🎉
 
 ## Rencontrez Pénelope, Waralee et Simone
 

@@ -73,7 +73,7 @@ export const DesignOptions = ({
   const menuNs = [`o_${design}`, ...ns]
   const optionsMenu = optionsMenuStructure(patternConfig.options)
   const getDocsPath = (option) =>
-    `patterns/${design}/options${option ? '/' + option.toLowerCase() : ''}`
+    `designs/${design}/options${option ? '/' + option.toLowerCase() : ''}`
 
   return (
     <WorkbenchMenu

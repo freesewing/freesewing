@@ -61,7 +61,7 @@ export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
       const setTags = []
       for (const lang of siteConfig.languages) {
         const key = `tags${capitalize(lang)}`
-        setTags.push(...set[key])
+        if (set[key]) setTags.push(...set[key])
       }
       let match = 0
       for (const tag of filter) {

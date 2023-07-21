@@ -1,17 +1,17 @@
 // Used in static paths
-import { mdxPaths } from 'site/prebuild/mdx-paths.en.mjs'
+import { pages } from 'site/prebuild/docs.en.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Hooks
-import { useState, useEffect } from 'react'
+import { useCallback } from 'react'
+import { useDynamicMdx } from 'shared/hooks/use-dynamic-mdx.mjs'
 // Components
-import Head from 'next/head'
-import { PageWrapper, ns } from 'shared/components/wrappers/page.mjs'
-import { Spinner } from 'shared/components/spinner.mjs'
-import { components } from 'shared/components/mdx/index.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
-import { Toc } from 'shared/components/mdx/toc.mjs'
+import { DocsLayout, ns as layoutNs } from 'site/components/layouts/docs.mjs'
+import { loaders } from 'shared/components/dynamic-docs/org.mjs'
 
+export const ns = [...pageNs, layoutNs]
 /*
  * PLEASE READ THIS BEFORE YOU TRY TO REFACTOR THIS PAGE
  *
@@ -34,152 +34,23 @@ import { Toc } from 'shared/components/mdx/toc.mjs'
  * joost
  *
  */
-
-export const Loading = () => (
-  <Spinner className="w-24 h-24 color-primary animate-spin m-auto mt-8" />
-)
-
-const HeadInfo = ({ frontmatter, locale, slug }) => (
-  <Head>
-    <meta property="og:title" content={frontmatter.title} key="title" />
-    <meta property="og:type" content="article" key="type" />
-    <meta property="og:description" content={``} key="type" />
-    <meta property="og:article:author" content="Joost De Cock" key="author" />
-    <meta
-      property="og:image"
-      content={`https://canary.backend.freesewing.org/og-img/en/org/${slug}}`}
-      key="image"
-    />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:url" content={`https://freesewing.org/${slug}`} key="url" />
-    <meta property="og:locale" content={locale} key="locale" />
-    <meta property="og:site_name" content="freesewing.org" key="site" />
-    <title>{frontmatter.title} - FreeSewing.org</title>
-  </Head>
-)
-
-export const Page = ({ page, frontmatter, slug, locale, MDX }) => (
-  <PageWrapper {...page} title={frontmatter.title}>
-    <HeadInfo {...{ frontmatter, locale, slug }} />
-    <div className="flex flex-row-reverse flex-wrap xl:flex-nowrap justify-end">
-      {frontmatter.toc && frontmatter.toc.length > 0 && (
-        <div className="mb-8 w-full xl:w-80 2xl:w-96 xl:pl-8 2xl:pl-16">
-          <Toc toc={frontmatter.toc} wrap />
-        </div>
-      )}
-      <MdxWrapper>{MDX}</MdxWrapper>
-    </div>
+export const Page = ({ page, locale, frontmatter, MDX }) => (
+  <PageWrapper
+    {...page}
+    locale={locale}
+    title={frontmatter.title}
+    layout={(props) => <DocsLayout {...props} {...{ slug: page.path.join('/'), frontmatter }} />}
+  >
+    <MdxWrapper>{MDX}</MdxWrapper>
   </PageWrapper>
 )
 
-const EnDocsPage = ({ page, slug }) => {
+const DocsPage = ({ page, locale, slug }) => {
+  const loader = useCallback(() => loaders[locale](slug), [locale, slug])
   // State
-  const [frontmatter, setFrontmatter] = useState({ title: 'FreeSewing.org' })
-  const [MDX, setMDX] = useState(<Loading />)
+  const { frontmatter, MDX } = useDynamicMdx(loader)
 
-  /* Load MDX dynamically */
-  useEffect(() => {
-    const loadMDX = async () => {
-      import(`../../../../markdown/org/${slug}/en.md`).then((mod) => {
-        setFrontmatter(mod.frontmatter)
-        const Component = mod.default
-        setMDX(<Component components={components('org')} />)
-      })
-    }
-    loadMDX()
-  }, [slug])
-
-  return <Page {...{ page, slug, frontmatter, MDX }} locale="en" />
-}
-
-const FrDocsPage = ({ page, slug }) => {
-  // State
-  const [frontmatter, setFrontmatter] = useState({ title: 'FreeSewing.org' })
-  const [MDX, setMDX] = useState(<Loading />)
-
-  /* Load MDX dynamically */
-  useEffect(() => {
-    const loadMDX = async () => {
-      import(`../../../../markdown/org/${slug}/fr.md`).then((mod) => {
-        setFrontmatter(mod.frontmatter)
-        const Component = mod.default
-        setMDX(<Component components={components('org')} />)
-      })
-    }
-    loadMDX()
-  }, [slug])
-
-  return <Page {...{ page, slug, frontmatter, MDX }} locale="fr" />
-}
-
-const EsDocsPage = ({ page, slug }) => {
-  // State
-  const [frontmatter, setFrontmatter] = useState({ title: 'FreeSewing.org' })
-  const [MDX, setMDX] = useState(<Loading />)
-
-  /* Load MDX dynamically */
-  useEffect(() => {
-    const loadMDX = async () => {
-      import(`../../../../markdown/org/${slug}/es.md`).then((mod) => {
-        setFrontmatter(mod.frontmatter)
-        const Component = mod.default
-        setMDX(<Component components={components('org')} />)
-      })
-    }
-    loadMDX()
-  }, [slug])
-
-  return <Page {...{ page, slug, frontmatter, MDX }} locale="es" />
-}
-
-const DeDocsPage = ({ page, slug }) => {
-  // State
-  const [frontmatter, setFrontmatter] = useState({ title: 'FreeSewing.org' })
-  const [MDX, setMDX] = useState(<Loading />)
-
-  /* Load MDX dynamically */
-  useEffect(() => {
-    const loadMDX = async () => {
-      import(`../../../../markdown/org/${slug}/de.md`).then((mod) => {
-        setFrontmatter(mod.frontmatter)
-        const Component = mod.default
-        setMDX(<Component components={components('org')} />)
-      })
-    }
-    loadMDX()
-  }, [slug])
-
-  return <Page {...{ page, slug, frontmatter, MDX }} locale="de" />
-}
-
-const NlDocsPage = ({ page, slug }) => {
-  // State
-  const [frontmatter, setFrontmatter] = useState({ title: 'FreeSewing.org' })
-  const [MDX, setMDX] = useState(<Loading />)
-
-  /* Load MDX dynamically */
-  useEffect(() => {
-    const loadMDX = async () => {
-      import(`../../../../markdown/org/${slug}/nl.md`).then((mod) => {
-        setFrontmatter(mod.frontmatter)
-        const Component = mod.default
-        setMDX(<Component components={components('org')} />)
-      })
-    }
-    loadMDX()
-  }, [slug])
-
-  return <Page {...{ page, slug, frontmatter, MDX }} locale="nl" />
-}
-
-const DocsPage = (props) => {
-  if (props.locale === 'en') return <EnDocsPage {...props} />
-  if (props.locale === 'fr') return <FrDocsPage {...props} />
-  if (props.locale === 'es') return <EsDocsPage {...props} />
-  if (props.locale === 'de') return <DeDocsPage {...props} />
-  if (props.locale === 'nl') return <NlDocsPage {...props} />
+  return <Page {...{ page, slug, frontmatter, MDX, locale }} />
 }
 
 export default DocsPage
@@ -192,7 +63,7 @@ export async function getStaticProps({ locale, params }) {
   return {
     props: {
       ...(await serverSideTranslations('en', ['docs', ...ns])),
-      slug: 'docs/' + params.slug.join('/'),
+      slug: params.slug.join('/'),
       locale,
       page: {
         locale,
@@ -214,7 +85,7 @@ export async function getStaticProps({ locale, params }) {
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticPaths() {
-  const somePaths = mdxPaths
+  const somePaths = Object.keys(pages)
     .filter((path) => path.split('/').length < 5)
     .filter((path) => path !== 'docs')
 
@@ -225,6 +96,7 @@ export async function getStaticPaths() {
       ...somePaths.map((key) => `/de/${key}`),
       ...somePaths.map((key) => `/fr/${key}`),
       ...somePaths.map((key) => `/nl/${key}`),
+      ...somePaths.map((key) => `/uk/${key}`),
     ],
     fallback: 'blocking',
   }

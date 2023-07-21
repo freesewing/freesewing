@@ -11,15 +11,18 @@ translating FreeSewing into other languages.
 
 ## Supported Languages
 
-We currently support the following five languages:
+FreeSewing is currently available in the following languages:
 
-- **en** : English <small>(This is our source language and the working language
-  of the FreeSewing project)</small>
+- **en** : English
 - **de** : German
 - **es** : Spanish
 - **fr** : French
 - **nl** : Dutch
 - **uk** : Ukranian
+
+<Note compact>
+English is the translation source language and the working language of the FreeSewing project
+</Note>
 
 ## Become a FreeSewing translator
 
@@ -100,7 +103,7 @@ The status of the ongoing translation work is available at
 It's a good place to check what languages need extra help, and which are
 leading the scoreboard.
 
-## Content types and translation priorities
+## Translation priorities
 
 To fully translate FreeSewing, the following types of content needs to be
 translated:
@@ -117,26 +120,18 @@ complete over the course of a weekend.
 **High priority: Translation of Documenation**   
 This includes all the documentation on FreeSewing.org.
 
-This is a significant amount of text that makes up more than 90% of hte top *
+This is a significant amount of text that makes up more than 90% of the top &
 high priority content.  It's an effort you should probably not take on by
 yourself, but rather tackle with a team of translators.
 
-**Low Priority: Content of blog and showcase posts**  
+**Low Priority: Content of blog and showcase posts, and newsletters**  
 This is _nice to have_ as people can use and navigate FreeSewing even when this
 content remains untranslated.
 
-Still, if you are considering translating this content, you might want to
-consider the following priorities within this categors:
-
-- First: Showcases posts. Not only do they typically have less text, their
-  value is also less tied to how recent they are
-- Then: Blog posts. Start with the most recent onces. How older a blog post
-  gets, the less relevant it becomes
-
 ## Translation through Crowdin
 
-All of our top-priority and high-priority translation work is handled through
-[Crowdin](https://crowdin.com/), an online platform to facilitate translation.
+All of our translation work is handled through [Crowdin](https://crowdin.com/), 
+an online platform to facilitate translation.
 
 <Tip compact>
 
@@ -166,55 +161,29 @@ translations.
 
 - The top-priority translations in Crowdin are everything under the `packages`
   and `sites` folder. Do this first.
-- The high-priory translations in Crowdin is everything under the `markdown`
-  folder.
+- The high-priory translations in Crowdin is everything under the
+  `markdown/org/docs` folder.
+- The low-priory translations in Crowdin is everything under the
+  `markdown/org/blog`, `markdown/org/showcase`, and `markdown/org/newsletter` folders.
 
 </Note>
 
-## Translation through Sanity
 
-Sanity ([sanity.io](https://sanity.io/)) is a so-called _headless content
-management system (CMS)_.  "_Headless_" just means that we load the content
-from it via an API, rather than have it be part of our website like a classic
-CMS (eg. Wordpress).
+## Machine translation
 
-In Sanity, we keep our blog and showcases posts for freesewing.org.
-In other words, **Sanity only holds the low priority translation work**.
+While everybody knows that translation is best when it's done by a human being, 
+we also have to be realistic that the growing body of documentation and other 
+FreeSewing content can be a daunting task to take on for translators, especially
+when you want to start a new language.
 
-<Tip compact>
+Furtunately, machine translation has gotten rather good so we can get some help.
+Our Crowdin project is integrated with a [DeepL](https://www.deepl.com) 
+subscription, and this can be a great help to translators.
 
-You can reach the FreeSewing project on Crowdin directly via
-[translate.freesewing.org](https://translate.freesewing.org).
-</Tip>
-
-<Note>
-
-##### Why we don use Crowdin for blog/showcase translations
-
-Crowdin enforces a strict one-to-one match between the English source material
-and the translation.
-
-This strict correlation is important for the UX and documenation transaltions.
-People expect a menu to have the same structure in all languages, and when we
-refer to the documentation we need to ensure that those links works for all
-languages, which requires that all languages use the same structure, the same
-amount of headings, paragraphs, and so on.
-
-Sanity supports different language versions for posts, but it does not enforce
-any structure on them.  A translated blog post could have more or less
-paragraphs, different images, you name it.
-
-This additional freedom is why we use Sanity for these types of content. We lik
-to encourage the non-English FreeSewing communities to make FreeSewing their
-own, by writing blog posts that are relevant or specific to them, or
-translating blog posts not merely word-for-word, but making them relevent to
-their language group.
-
-This also means that English does not have to be the source language in Sanity.
-Somebody could write a French blog post (for example) which can then be
-translated to English.
-
-</Note>
+You can use the DeepL suggestions when translating, or there is also the possibility
+to machine-translate entire files or folders. For example, you may start a new 
+language by machine-translating everything, and then focus on proofreading the
+top-priority content, and then move on to the high-priority content.
 
 ## Syntax
 

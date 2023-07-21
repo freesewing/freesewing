@@ -18,9 +18,7 @@ Wat verandert er? Ik ben blij dat je het vraagt:
 
 Dit was echt groot nieuws voor mij en iets waar we achter de schermen al een tijdje aan werkten. Maar 3 weken geleden onthulden we eindelijk ons nieuwe patronensysteem.
 
-</a> De blogpost
-
-voor de aankondiging bevat alle details, plus een openhartige blik op de financiële kant van dit project . Als je het nog niet gelezen hebt, raad ik het je aan.</p> 
+De blogpost voor de aankondiging bevat alle details, plus een openhartige blik op de financiële kant van dit project . Als je het nog niet gelezen hebt, raad ik het je aan.
 
 ![Informatie verspreiden over onze nieuwe mecenaatsbenadering](https://posts.freesewing.org/uploads/patrons_ig_bad479bb83.png)
 

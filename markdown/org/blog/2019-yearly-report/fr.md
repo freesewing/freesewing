@@ -44,7 +44,7 @@ Nous cherchons également à embarquer plus de designers à bord de FreeSewing. 
 
 Grâce à nos forrmidables mécènes, les revenus ont encore augmenté cette année. Comme vous le savez peut-être, FreeSewing fait don de 100 % de ses revenus à Medecins Sans Frontières/Doctors Sans Frontières. Donc, ce matin, j'ai eu le grand honneur de faire un chèque de 4109,38€ à [MSF](https://www.msf.org/).
 
-Cela fait **vraiment du bien** alors merci à tous nos mécènes**</a> pour leur soutien continu. Si vous souhaitez rejoindre ce groupe génial, [vous pouvez le faire ici](/patrons/join).</p>
+Cela fait **vraiment du bien** alors merci à tous nos mécènes pour leur soutien continu. Si vous souhaitez rejoindre ce groupe génial, [vous pouvez le faire ici](/patrons/join).
 
 
 

@@ -24,8 +24,6 @@ core:
   prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
   lint: "npx eslint 'src/*.mjs' 'tests/*.mjs'"
   jsdoc: 'jsdoc -c jsdoc.json -r src'
-i18n:
-  prebuild: 'node scripts/prebuilder.mjs'
 models:
   test: 'npx mocha tests/*.test.mjs'
 new-design:
@@ -67,13 +65,14 @@ dev:
   build: &nextBuild 'next build'
   cibuild: 'yarn build && node scripts/algolia.mjs'
   clean: &nextClean 'rimraf prebuild/* && rimraf public/locales/*/* && rimraf public/feeds/* && rimraf ../shared/prebuild/data/*'
-  predev: 'FAST=1 SITE=dev node --experimental-json-modules ../shared/prebuild/index.mjs'
   dev: &nextDev 'next dev -p 8000'
   develop: *nextDev
   i18n: "SITE=dev node ../shared/prebuild/i18n-only.mjs"
   lint: &nextLint 'next lint'
   buildsitedeps: &buildsitedeps 'cd ../../ && yarn buildall && cd -'
-  prebuild: 'yarn buildsitedeps && SITE=dev node --experimental-json-modules ../shared/prebuild/index.mjs'
+  prebuild: 'yarn buildsitedeps && node --experimental-json-modules ./prebuild.mjs'
+  prebuildonly: 'node --experimental-json-modules ./prebuild.mjs'
+  predev: 'node --experimental-json-modules ./prebuild.mjs'
   serve: "pm2 start npm --name 'dev' -- run start"
   start: &nextStart 'yarn prebuild && yarn dev'
 
@@ -91,20 +90,22 @@ lab:
   e2e: &e2e 'yarn playwright test'
   lint: *nextLint
   buildsitedeps: *buildsitedeps
-  prebuild: 'yarn buildsitedeps && SITE=lab node --experimental-json-modules ../shared/prebuild/index.mjs'
+  prebuild: 'yarn buildsitedeps && node --experimental-json-modules ./prebuild.mjs'
+  prebuildonly: 'node --experimental-json-modules ./prebuild.mjs'
   start: *nextStart
 
 org:
   build: *nextBuild
   cibuild: 'yarn build'
   clean: *nextClean
-  predev: 'FAST=1 SITE=org node --experimental-json-modules ../shared/prebuild/index.mjs'
   dev: *nextDev
   develop: *nextDev
   i18n: 'SITE=org node ../shared/prebuild/i18n-only.mjs'
   lint: *nextLint
   buildsitedeps: *buildsitedeps
-  prebuild: 'yarn buildsitedeps && SITE=org node --experimental-json-modules ../shared/prebuild/index.mjs'
+  prebuild: 'yarn buildsitedeps && node --experimental-json-modules ./prebuild.mjs'
+  prebuildonly: 'node --experimental-json-modules ./prebuild.mjs'
+  predev: 'node --experimental-json-modules ./prebuild.mjs'
   start: *nextStart
 
 sanity:
