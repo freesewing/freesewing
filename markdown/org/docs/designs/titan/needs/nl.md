@@ -1,17 +1,17 @@
 ---
-title: "Titan trouser block: What You Need"
+title: "Titan broekenblok: Wat je nodig hebt"
 ---
 
 Om Titaan te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- About 1.5 meters (1.7 yards) of suitable fabric ([see Titan Fabric options](/docs/patterns/titan/fabric))
+- Ongeveer 1,5 meter geschikte stof ([zie Titan Stofopties](/docs/patterns/titan/fabric))
 
 <Note>
 
-###### Titan is a block, not a pattern
+###### Titan is een blok, geen patroon
 
-A block is a basic shape on which other patterns are based.
+Een blok is een basisvorm waarop andere patronen zijn gebaseerd.
 Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.
 
 Blokken worden meestal niet gemaakt zoals is, maar dienen als basis voor andere patronen.
