@@ -1,8 +1,8 @@
 ---
-title: "Fabric stretch X"
+title: "Tejido elástico X"
 ---
 
-Controls the stretch in horizontal direction.
+Controla el estiramiento en dirección horizontal.
 
 ## Efecto de esta opción en el patrón
 
