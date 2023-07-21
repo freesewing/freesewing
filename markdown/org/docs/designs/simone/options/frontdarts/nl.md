@@ -2,7 +2,7 @@
 title: "Nepen voor"
 ---
 
-Whether to include front waist darts or not.
+Wel of geen figuurnaden in de taille aan de voorkant.
 
 ## Effect van deze optie op het patroon
 
