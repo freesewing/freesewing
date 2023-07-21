@@ -1,5 +1,5 @@
 ---
-title: "Shin swim trunks: Cutting Instructions"
+title: "Bañador de espinilla: Instrucciones de corte"
 ---
 
 - Corta **2 espaldas** con buenos lados juntos
