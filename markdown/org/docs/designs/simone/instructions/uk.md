@@ -1,5 +1,5 @@
 ---
-title: "Simone shirt: Sewing Instructions"
+title: "Сорочка \"Симона\": Інструкція з пошиття"
 ---
 
 ### Крок 1: Дротики для бюста
