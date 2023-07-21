@@ -11,9 +11,9 @@ designs:
 
 ![Vue de l'intérieur](https://posts.freesewing.org/uploads/anneke_huey_facing_8c3874be29.jpg "Vue de l'intérieur")
 
-**See the original on Anneke's blog**
+**Voir l'original sur le blog d'Anneke**
 
-This post [originally appeared](http://www.annekecaramin.com/2017/11/pleasure-dot-loathing-dot-huey-dot.html) on [annekecaramin.com](http://www.annekecaramin.com/).
+Cet article [est apparu initialement](http://www.annekecaramin.com/2017/11/pleasure-dot-loathing-dot-huey-dot.html) sur [annekecaramin.com](http://www.annekecaramin.com/).
 
 Elle est publiée ici avec son autorisation.
 
