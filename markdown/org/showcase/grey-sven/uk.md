@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8470f4414deeee3d07240
 intro: "Це зображення зі стрічки Instagram Ксенії."
 title: "Свен у сірій махрі Сірий махровий Свен"
 designs:
-  - "sven"
+  - "Свен"
 ---
 
 
