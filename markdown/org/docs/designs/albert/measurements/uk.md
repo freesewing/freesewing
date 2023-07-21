@@ -1,5 +1,5 @@
 ---
-title: "Albert apron: Required Measurements"
+title: "Фартух Альберт: Необхідні розміри"
 ---
 
 <PatternMeasurements pattern='albert' />
