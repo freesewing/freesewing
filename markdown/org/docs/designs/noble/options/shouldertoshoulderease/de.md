@@ -1,10 +1,10 @@
 ---
-title: "Shoulder to Shoulder Ease"
+title: "Schulter-zu-Schulter-Erleichterung"
 ---
 
 ***
 
-The **Shoulder to Shoulder Ease** option allows you to add ease between the shoulders.
+Mit der Option **Schulter-zu-Schulter-Erleichterung** kannst du eine Erleichterung zwischen den Schultern hinzufügen.
 
 ## Effekt dieser Option auf das Schnittmuster
 
