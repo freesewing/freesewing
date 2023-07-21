@@ -2,7 +2,7 @@
 title: "Lengte neep taille"
 ---
 
-The length of the back waist dart.
+De lengte van de rugpijp.
 
 ## Effect van deze optie op het patroon
 
