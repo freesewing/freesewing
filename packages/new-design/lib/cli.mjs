@@ -1,4 +1,4 @@
-import { banner } from './banner.mjs'
+import { banner } from '../../../scripts/banner.mjs'
 import { checkNodeVersion, getChoices, createEnvironment } from './utils.mjs'
 
 export const cli = async () => {
