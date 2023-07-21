@@ -1,10 +1,10 @@
 ---
-title: "Shoulder Dart Position"
+title: "Schulter Abnäher Position"
 ---
 
 ***
 
-The **Shoulder Dart Position** option allows you to move the position of the dart/princess seam.
+Mit der Option **Schulterabnäherposition** kannst du die Position des Abnähers/der Prinzessinnennaht verschieben.
 
 ## Effekt dieser Option auf das Schnittmuster
 
