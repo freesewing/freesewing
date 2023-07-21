@@ -1,5 +1,5 @@
 ---
-title: "Bruce boxer briefs: Fabric Options"
+title: "Bruce Boxershorts: Stoff Optionen"
 ---
 
 Für dieses Schnittmuster benötigst du einen dehnbaren Stoff. Vorzugsweise etwas Bequemes und Weiches, das dazu die Haut atmen lässt.
