@@ -1,85 +1,85 @@
 ---
 author: "joostdecock"
-caption: "Your login background for February"
+caption: "Je inlogachtergrond voor februari"
 date: "2019-01-31"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/26bf3d41513702ad361b5a0f15dcff2350cc852b-1920x1440.jpg"
-intro: "Is it really the end of January? Already?"
-title: "Monthly roundup - January 2019: The big beta update"
+intro: "Is het echt eind januari? Nu al?"
+title: "Maandoverzicht - januari 2019: de grote bèta-update"
 ---
 
 
-Is it really the end of January? Already?
+Is het echt eind januari? Nu al?
 
-After using the Xmas break to port [Simon](/en/patterns/simon) — not exactly the most trivial of patterns — I'm fairly confident that all patterns will be ok. Simon has 61 options, so if it works for Simon, it will work for all patterns, or at least that's how I see it.
+Na de kerstvakantie gebruikt te hebben om [Simon](/en/patterns/simon) over te zetten - niet bepaald het meest triviale patroon - ben ik er vrij zeker van dat alle patronen goed zullen doen. Simon heeft 61 opties, dus als het voor Simon werkt, werkt het voor alle patronen, althans zo zie ik het.
 
-Seven patterns have now been ported. That might not seem like much, but it does get rather tedious every time we make a change that touches the patterns, as we then have 7 to update. So I decided to put the pattern porting on hold for a while, and instead focus my attention on [our new beta website](/en/).
+Er zijn nu zeven patronen overgezet. Dat lijkt misschien niet veel, maar het wordt wel vervelend elke keer als we een verandering aanbrengen die de patronen raakt, omdat we er dan 7 moeten bijwerken. Ik heb dus besloten om het overzetten van patronen even in de ijskast te zetten en in plaats daarvan mijn aandacht te richten op [onze nieuwe bètawebsite](/en/).
 
-## Gatsby is now our static site generator
+## Gatsby is nu onze statische site generator
 
-The new website is built on top of [Gatsby](https://www.gatsbyjs.org/), a static site generator written in JavaScript and powered by [React](https://reactjs.org/). We've been fairly committed to [the JAMstack architecture](/en/blog/freesewing-goes-jamstack) here at freesewing.org.
+De nieuwe website is gebouwd bovenop [Gatsby](https://www.gatsbyjs.org/), een statische site-generator geschreven in JavaScript en aangedreven door [React](https://reactjs.org/). We zijn behoorlijk toegewijd aan [de JAMstack architectuur](/en/blog/freesewing-goes-jamstack) hier bij freesewing.org.
 
-It's our third rewrite of the site since we launched freesewing.org and I admit that that's a bit much. As in, I really hope the site we're building now will stick around for a while.
+Het is onze derde herschrijving van de site sinds we freesewing.org hebben gelanceerd en ik geef toe dat dat een beetje veel is. Ik hoop echt dat de site die we nu aan het bouwen zijn nog een tijdje blijft bestaan.
 
-Then again, rapid iterations are a good thing, especially as we were still finding our feet. We do what it takes to get it right, and while the question of *what's the purpose of this all* is perhaps on some of your minds, I feel like beta.freesewing.org has gotten to the point where it answers that question.
+Aan de andere kant zijn snelle iteraties een goede zaak, vooral omdat we onze draai nog moesten vinden. We doen wat nodig is om het goed te doen, en terwijl de vraag van *wat is het doel van dit alles* misschien bij sommigen van jullie opkomt, heb ik het gevoel dat beta.freesewing.org op het punt is gekomen waar het die vraag beantwoordt.
 
-## (almost) everything happens in your browser now
+## (Bijna) alles gebeurt nu in je browser
 
-We rewrote our platform in JavaScript. That thing that runs in your browser. Previously, whenever you wanted to change the style of your cuffs or something, we needed to send your wishes to a backend, who'd then generate a draft and send it back.
+We hebben ons platform herschreven in JavaScript. Dat ding dat in je browser draait. Als je voorheen de stijl van je manchetten of iets dergelijks wilde veranderen, moesten we gebruiken om je wensen naar een backend te sturen, die dan een ontwerp genereerde en het terugstuurde.
 
-Now, when you tweak an option, we don't need a round-trip to a backend to show you what things look like. Because everything runs in your browser. So if you change something, it just updates right there on your screen.
+Als je nu een optie aanpast, hoeven we niet naar een backend te gaan om je te laten zien hoe de dingen eruit zien. Omdat alles in je browser draait. Dus als je iets verandert, , dan wordt het gewoon bijgewerkt op je scherm.
 
-That's sort of what we had in mind all along, but it's still a powerful moment when all the pieces finally start to fall in place and things actually work.
+Dat hadden we al die tijd al in gedachten, maar het blijft een krachtig moment wanneer alle stukjes eindelijk op hun plaats vallen en de dingen echt werken.
 
-That being said, not everything runs in the browser yet. Specifically turning your patterns into PDFs is something that we handle in the backend as we're still working on that part.
+Dat gezegd hebbende, draait nog niet alles in de browser. Specifiek het omzetten van je patronen in PDF's is iets dat we in de backend afhandelen omdat we nog steeds aan dat deel werken.
 
-## No account needed
+## Geen account nodig
 
-Our [new demo](https://beta.freesewing.org/en/demo) allows you to kick the tires without the need to sign up. When signing up, there's no need to create an account with password, as we now support signing up with your existing Google or GitHub account.
+Met onze [nieuwe demo](https://beta.freesewing.org/en/demo) kun je de banden aanhalen zonder de noodzaak om je aan te melden. Bij het aanmelden hoef je geen account met wachtwoord aan te maken, want ondersteunt nu het aanmelden met je bestaande Google of GitHub account.
 
-People who already have an account will be able to login with their Google or GitHub account, provided the email address of their freesewing account matches.
+Mensen die al een account hebben, kunnen inloggen met hun Google of GitHub account, op voorwaarde dat het e-mailadres van hun freesewing account overeenkomt.
 
-## You can change everything
+## Je kunt alles veranderen
 
-We've made many changes to try and make it easier for developers to get started with freesewing. But we've also made changes for people who contribute in other ways.
+We hebben veel veranderingen doorgevoerd om het voor ontwikkelaars makkelijker te maken om aan de slag te gaan met freesewing. Maar we hebben ook veranderingen doorgevoerd voor mensen die op andere manieren bijdragen.
 
-All our (markdown) content can now be edited on the site. No GitHub account needed, just click the little pencil icon next to the title, submit your changes, and we're good.
+Al onze (markdown) inhoud kan nu op de site worden bewerkt. Geen GitHub account nodig, klik gewoon op het kleine potlood-icoontje naast de titel, stuur je wijzigingen in en we zijn klaar.
 
-Same good news for translators. All the translations can also be edited online. We've also updated our documentation for translators and editors to reflect this new simplified workflow.
+Hetzelfde goede nieuws voor vertalers. Alle vertalingen kunnen ook online worden bewerkt. We hebben ook onze documentatie voor vertalers en bewerkers bijgewerkt om deze nieuwe vereenvoudigde workflow weer te geven.
 
-## Custom layouts
+## Aangepaste lay-outs
 
-The login/signup with GitHub/Google accounts was a feature requested by users, and so is this one: We now support the creation of a custom layout for your pattern. Here's how it works:
+Het inloggen/aanmelden met GitHub/Google accounts was een functie waar gebruikers om hadden gevraagd, en dat is deze ook: We ondersteunen nu het maken van een aangepaste lay-out voor je patroon. Zo werkt het:
 
-When a pattern is drafted, the different pattern parts are laid out on the pattern automatically. Often that's great, but sometimes you wish your could make some changes. For example, you may want to get your pattern printed in a copy shop so you want to make sure it fits on the width of their roll of paper. Or you want to save some paper by squeezing some parts together.
+Wanneer een patroon wordt ontworpen, worden de verschillende patroondelen automatisch op het patroon gelegd. Vaak is dat geweldig, maar soms zou je willen dat je iets kon veranderen. Het kan bijvoorbeeld zijn dat je je patroon wilt laten afdrukken in een copyshop, dus je wilt er zeker van zijn dat het op de breedte van hun rol papier past. Of je wilt wat papier besparen door sommige delen samen te drukken.
 
-It's in early beta (as in, it still breaks from time to time) but you can now change the width of your pattern, move your pattern parts around, rotate them, or even mirror them vertically or horizontally to suit whatever your plans are. All of that can be done in your browser, on the site.
+Het is nog in vroege bèta (dus nog steeds af en toe stuk), maar je kunt nu de breedte van je patroon veranderen, je patroondelen verplaatsen, roteren of zelfs verticaal of horizontaal spiegelen om het aan te passen aan je plannen. Dat kan allemaal in je browser, op de site.
 
 ## Documentatie voor ontwikkelaars
 
-We've also integrated our developer documentation on the new site. Until yesterday, documentation about the new platform was hosted on a separate site, but now, we've ported the documentation and everything is integrated in our (future) website.
+We hebben ook onze documentatie voor ontwikkelaars op de nieuwe site gezet. Tot gisteren werd de documentatie over het nieuwe platform gehost op een aparte site, , maar nu hebben we de documentatie overgezet en is alles geïntegreerd in onze (toekomstige) website.
 
-## We won't migrate your drafts
+## We migreren je concepten niet
 
-Time to talk about the things we won't be doing: We will not migrate your existing drafts. The new platform is just too different. There is no way for us to migrate your existing drafts in a way that makes sense. So, when the day comes we switch over to the new site, your drafts will no longer be there.
+Tijd om het te hebben over de dingen die we niet zullen doen: We zullen je bestaande concepten niet migreren. Het nieuwe platform is gewoon te anders. Er is geen manier voor ons om je bestaande concepten te migreren op een manier die zinvol is. Dus als de dag komt dat we overschakelen naar de nieuwe site, zullen je concepten er niet meer zijn.
 
-You can download all your data from our site, but if you don't do that yourself, your v1 drafts will be gone.
+Je kunt al je gegevens downloaden van onze site, maar als je dat niet zelf doet, is je v1 drafts kwijt.
 
-## No more comments
+## Geen opmerkingen meer
 
-I have decided to not implement a comments feature because I feel having them raises the wrong expectations.
+Ik heb besloten om geen commentaarfunctie te implementeren omdat ik het gevoel heb dat de verkeerde verwachtingen wekt.
 
-Freesewing is not another [Pattern Review](https://sewing.patternreview.com/), or [Thread and Needles](https://www.threadandneedles.org/), or [The Fold Line](https://thefoldline.com/), or [Textillia](https://www.textillia.com/), or [Kollabora](http://www.kollabora.com/), or whatever the *Raverly of sewing* du jour is.
+Freesewing is niet weer een [Pattern Review](https://sewing.patternreview.com/), of [Thread and Needles](https://www.threadandneedles.org/), of [The Fold Line](https://thefoldline.com/), of [Textillia](https://www.textillia.com/), of [Kollabora](http://www.kollabora.com/), of wat de *Raverly of sewing* du jour ook is.
 
-I don't want freesewing.org to compete with these websites. They do their thing, we do ours. Their value proposition is the community, ours is not. That doesn't mean our community isn't valuable. It just means that we don't need our community to gather on our website. Our community exists wherever it goes. Be it Twitter, Instagram, Reddit, blogs, or some social network that I've never even heard of. It doesn't matter, it's all good.
+Ik wil niet dat freesewing.org gaat concurreren met deze websites. Zij doen hun ding, wij het onze. Hun waardepropositie is de gemeenschap, de onze niet. Dat betekent niet dat onze gemeenschap niet waardevol is. Het betekent alleen dat we onze gemeenschap niet nodig hebben om zich op onze website te verzamelen. Onze gemeenschap bestaat overal waar gaat. Of het nu Twitter, Instagram, Reddit, blogs of een ander sociaal netwerk is waar ik nog nooit van heb gehoord. Het maakt niet uit, het is allemaal goed.
 
-Building a community on the website takes time, it takes effort, it takes work. And we simply don't have the bandwidth for that. So I'd rather we focus on [our core mission](/en/docs/faq/#whats-your-end-game), and let people talk about freesewing wherever it is they talk about things.
+Het opbouwen van een gemeenschap op de website kost tijd, moeite en werk. En daar hebben we simpelweg de bandbreedte niet voor. Dus ik heb liever dat we ons richten op [onze kerntaak](/en/docs/faq/#whats-your-end-game)en dat we mensen over freesewing laten praten, waar ze ook over dingen praten.
 
-## Paris anyone?
+## Iemand Parijs?
 
-I've mentioned I'd like to do some sort of meetup this year, and while I haven't really had any time to work out what that would mean, we might end up meeting anyway.
+Ik heb gezegd dat ik dit jaar een soort meetup wil organiseren, en hoewel ik nog niet echt de tijd heb gehad om uit te werken wat dat zou inhouden, komen we elkaar misschien toch wel tegen.
 
-Specifically, [Charlotte](https://englishgirlathome.com/) (aka English girl at home) and [Carmen](https://www.carmencitab.com/) (aka CarmencitaB) are organising the [Paris Sewcial](https://englishgirlathome.com/2019/01/23/paris-sewcial-paris-coud-2019-registration-open/) meetup in May. I'll be heading to Paris to be part of that, so if you are too, we'll meet up there.
+Om precies te zijn, [Charlotte](https://englishgirlathome.com/) (aka English girl at home) en [Carmen](https://www.carmencitab.com/) (aka CarmencitaB) organiseren de [Paris Sewcial](https://englishgirlathome.com/2019/01/23/paris-sewcial-paris-coud-2019-registration-open/) meetup in mei. Ik ga naar Parijs om daar deel van uit te maken, dus als jullie ook gaan, zien we elkaar daar.
 
-Registration is [right this way](https://www.eventbrite.co.uk/e/paris-sewcial-paris-coud-registration-54520802187). 
+De registratie is [op deze manier](https://www.eventbrite.co.uk/e/paris-sewcial-paris-coud-registration-54520802187). 
 
 
