@@ -1,5 +1,5 @@
 ---
-title: "Simon shirt: Sewing Instructions"
+title: "Simon shirt : Instructions de couture"
 ---
 
 <Tip>
@@ -10,14 +10,14 @@ Kelly Hogaboom et Julian Collins ont fait une couture de Simone, et ils ont des 
 toutes les étapes.
 Si vous cherchez à créer ce modèle, Kelly et Julian peuvent vous guider vers la fin.
 
-You can find all the material's on Kelly's
-site: [#simonsayssew with kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
+Tu peux trouver tout le matériel sur le site de Kelly
+: [#simonsayssew avec kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
 
 </Tip>
 
 ### Étape 1 : Thermocoller l'entoilage
 
-![Thermocollez l'entoilage aux poignets](1a.png) ![Fuse collar interfacing](1b.png)
+![Thermocollez l'entoilage aux poignets](1a.png) ![Fuse l'entoilage du col](1b.png)
 
 #### Thermocoller au fer l'entoilage sur les poignets
 
@@ -31,11 +31,11 @@ Pour chaque poignet, repassez l'entoilage sur l'envers du poignet.
 
 > Selon le poignet que vous avez choisi, la forme du poignet sera différente.
 > 
-> In the first illustration, you can see both a round barrel cuff and a French cuff as examples.
+> Dans la première illustration, tu peux voir à la fois une manchette ronde en tonneau et une manchette française comme exemples.
 > 
 > Ci dessous, les images montrent un poignet arrondi, mais le processus est le même pour les autres types de poignets.
 
-#### Press interfacing to collar, undercollar and collar stand
+#### Repasse l'entoilage sur le col, le sous-col et le pied de col.
 
 Pour faire votre col, vous devez couper 1 sous-col, 1 col, et 2 pieds de col. Le tout dans le tissu, et dans l'entoilage thermocollant.
 
@@ -49,7 +49,7 @@ Poser l'entoilage thermocollant sur l'envers de chaque pièce et repassez le.
 
 Placez les 2 pièces de vos poignets (l'une entoilée, l'autre non) endroit contre endroit, et cousez les ensemble en respectant la marge de couture.
 
-> **Ensure you**
+> **Veille à ce que tu**
 > 
 > - - ne pas coudre le côté qui sera assemblé à la manche plus tard
 > - - vous arrêter de coudre à la marge de couture, à partir du bord qui sera assemblé à la manche
@@ -58,13 +58,13 @@ Placez les 2 pièces de vos poignets (l'une entoilée, l'autre non) endroit cont
 
 ![Dégarnir la marge de couture](2b.png)
 
-Before we flip your cuff over, we need to trim back the seam allowance to remove bulk.
+Avant de retourner ta manchette, nous devons découper la marge de couture pour la rendre moins volumineuse.
 
 #### Repasser la marge de couture
 
 ![Repasser la marge de couture](2c.png)
 
-Fold back the seam allowances on each side of the cuff where the cuff attaches to the sleeve, and press them down.
+Replie les surplus de couture de chaque côté de la manchette, là où la manchette s'attache à la manche, et repasse-les.
 
 > Si vous avez cousu trop loin, décousez quelques points.
 
@@ -74,7 +74,7 @@ Fold back the seam allowances on each side of the cuff where the cuff attaches t
 
 Retournez votre poignet sur l'endroit, et donnez un bon coup de fer.
 
-> When pressing your cuffs, make sure to roll the seam a bit to the backside of the cuff to guarantee that the inner fabric of the cuff is not visible.
+> Lorsque tu presses tes manchettes, veille à rouler un peu la couture vers l'arrière de la manchette pour garantir que le tissu intérieur de la manchette n'est pas visible.
 
 Vous pouvez maintenant mettre vos poignets de côté, nous les attacherons plus tard.
 
@@ -84,13 +84,13 @@ Vous pouvez maintenant mettre vos poignets de côté, nous les attacherons plus 
 
 ![Coudre ensemble le col et le sous-col](3a.png)
 
-Place both collar parts with the _good sides together_, and sew them together at the standard seam allowance.
+Place les deux parties du col avec les _bons côtés ensemble_, et couds-les ensemble avec la marge de couture standard.
 
 #### Dégarnir la marge de couture
 
 ![Dégarnir la marge de couture](3b.png)
 
-Before we flip your collar over, we need to trim back the seam allowance to remove bulk.
+Avant de retourner ton col, nous devons découper la marge de couture pour la rendre moins volumineuse.
 
 #### Retourner le col et repasser
 
@@ -120,7 +120,7 @@ Marquez le milieu de votre col et de votre pied de col avec une épingle. Le mil
 
 Placez d'abord un pied de col sur l'envers, puis votre col, côté entoilé sur le dessus (et côté non cousu en haut), et enfin le deuxième pied de col, sur l'endroit.
 
-Your collar should sit between your two collar stands, and the middles (where you placed your pin) should be aligned.
+Ton collier doit reposer entre tes deux supports de collier, et les milieux (où tu as placé ton épingle) doivent être alignés.
 
 > L'aspect dépend un peu du col que vous avez choisi, mais en général votre col est courbé vers le bas, et votre pied de col est courbé vers le haut.
 > 
@@ -132,7 +132,7 @@ Maintenant, commencez à bâtir à partir de cette épingle jusqu'au coin du col
 
 Lorsque vous atteignez le coin de votre col, continuez et bâtissez les deux pieds de col ensemble.
 
-When you've done one side, start from your pin in the middle again and do the other side. Une fois que vous avez fini de bâtir, vous pouvez retirer l'épingle.
+Quand tu as fait un côté, recommence à partir de ton épingle au milieu et fais l'autre côté. Une fois que vous avez fini de bâtir, vous pouvez retirer l'épingle.
 
 #### Coudre votre col sur les pieds de col
 
@@ -148,7 +148,7 @@ Repliez la marge de couture du côté non cousu de votre pied de col et repassez
 
 > Au milieu, ce sera facile. Mais vers les pointes de votre col, ce sera difficile de ne pas faire de plis.
 > 
-> Press it as best as you can without making folds in your collar. Nous repasserons à nouveau quand le col sera retourné.
+> Presse-le du mieux que tu peux sans faire de plis dans ton col. Nous repasserons à nouveau quand le col sera retourné.
 
 #### Retourner le col et repasser
 
@@ -174,7 +174,7 @@ Placez un empiècement dos sur l'envers. Placez dessus votre dos sur l'envers, e
 
 Enfin, placez sur le tout votre deuxième empiècement, sur l'endroit.
 
-Your back should now be sandwiched between the good sides of your two yokes.
+Ton dos doit maintenant être pris en sandwich entre les bons côtés de tes deux empiècements.
 
 Si c'est le cas, cousez le dos et les empiècements ensemble, en respectant la marge de couture.
 
@@ -188,7 +188,7 @@ Quand vous avez terminé, n'oubliez pas de donner un bon coup de fer pour que la
 
 Votre empiècement étant attaché au dos, nous allons faire une surpiqûre de renfort le long de la couture que nous venons de faire, côté empiècement.
 
-> Pliez la partie de l'empiècement dos située à l'intérieur de la chemise hors du chemin, vers le bas. Our edge stitching will catch the outer yoke, back and all the seam allowances, but not the inner yoke.
+> Pliez la partie de l'empiècement dos située à l'intérieur de la chemise hors du chemin, vers le bas. Notre piqûre de bordure attrapera l'empiècement extérieur, le dos et toutes les marges de couture, mais pas l'empiècement intérieur.
 
 Surpiquez juste à côté de la couture qui joint empiècement dos et dos.
 
@@ -250,7 +250,7 @@ Quand vous êtes satisfait, repassez la patte pliée.
 
 Retourner la pièce sur l'endroit, et fixer la patte repliée en piquant dans la rainure.
 
-Pour cela, coudre exactement sur votre couture précédente. Since you folded the fabric of your placket a bit past this seam, it will get caught at the back, fixing your folded placket in place, and locking the seam allowance inside.
+Pour cela, coudre exactement sur votre couture précédente. Comme tu as plié le tissu de ta patte de boutonnage un peu au-delà de cette couture, il sera pris à l'arrière, fixant ta patte de boutonnage pliée en place, et bloquant le surplus de couture à l'intérieur.
 
 ### Etape 10: Préparer la patte de boutonnage (côté boutonnières)
 
@@ -328,7 +328,7 @@ Maintenant repassez-moi tout ça mon ami. Avouez qu'on en a envie.
 
 > **Faisons un burrito**
 > 
-> We are going to close the shoulder seams with a technique that is commonly known as the **burrito method**.
+> Nous allons fermer les coutures des épaules avec une technique qui est communément appelée la méthode **burrito**.
 > 
 > Si vous connaissez la méthode du burrito, vous savez déjà comment faire. Si ce n'est pas le cas, lisez ce qui suit pour découvrir une méthode astucieuse pour assembler les coutures d'épaule de votre chemise tout en emprisonnant de façon invisible tous les bords bruts.
 
@@ -354,7 +354,7 @@ Maintenant, faites passer cet empiécement dos par dessus votre saucisse, et ali
 
 > Assurez-vous d'aligner la vraie ligne de couture. En raison des angles inégaux à l'encolure, le bord du tissu est souvent plus long d'un côté que de l'autre.
 > 
-> However, the seamlines are the same length, so make sure to match them carefully using the notches.
+> Cependant, les lignes de couture sont de la même longueur, alors assure-toi de les faire correspondre soigneusement à l'aide des encoches.
 
 #### Retournez-le à l'intérieur à travers l'encolure
 
@@ -391,7 +391,7 @@ Puisque vous venez de repasser ces coutures d'épaule, tout devrait être beau e
 - Repliez la sous-patte, et repasser la couture.
 - Retournez votre manche sur l'endroit, et ramenez votre sous-patte par dessus la fente de votre manche.
 - Plier deux fois sur les lignes de façon à emprisonner le bord brut.
-- Make your folds so that the upper fold sits ever so slightly further than the seam you already made.
+- Fais tes plis de façon à ce que le pli supérieur se trouve toujours un peu plus loin que la couture que tu as déjà faite.
 - Repassez le tout, puis surpiquez la sous-patte.
 
 #### Plier et repasser la patte
@@ -401,7 +401,7 @@ Puisque vous venez de repasser ces coutures d'épaule, tout devrait être beau e
 C'est le moment Origami ! Nous allons plier la patte de manche en utilisant les lignes comme repères. Cela sera beaucoup plus facile si vous repassez entre chaque pli.
 
 - Tout d'abord, pliez les bords extérieurs de la patte vers l'intérieur.
-- Next, fold the entire thing in half.
+- Ensuite, plie le tout en deux.
 - Puis faites deux plis à l'extrémité pour obtenir une belle forme pointue.
 - Maintenant donnez un bon coup de fer.
 
@@ -427,7 +427,7 @@ Commencez au bord de la manche (bas de la patte de manche) et piquez le long du 
 
 Faites le tour de la pointe et redescendez de l'autre côté de la fente (côté plié) jusqu'à ce que vous ayez passé le point où se termine votre sous-patte en haut de la fente.
 
-Then, sew horizontally to the other side of the placket to finish.
+Ensuite, couds horizontalement l'autre côté de la patte de boutonnage pour terminer.
 
 > J'ai inclus ici une illustration supplémentaire qui ne montre que le contour de la patte. Vous pouvez voir que l'extrémité de la sous-patte est prise dans la couture de la patte, et est ainsi bien cachée.
 
@@ -441,17 +441,17 @@ Then, sew horizontally to the other side of the placket to finish.
 > 
 > Par conséquent, ce sont les coutures et non les bords qui doivent être alignés, donc il faut positionner la manche de façon à ce qu'elle dépasse du bord de 1 cm.
 
-#### Pin sleeve in place
+#### Manchon à goupille en place
 
-![Pin sleeve in place](14a.png)
+![Manchon à goupille en place](14a.png)
 
 Étalez votre chemise sur l'envers, en mettant les deux devants et le dos bien à plat.
 
-Now place your sleeve on top with the good side down, matching the top of the sleeve with the shoulder seam.
+Place maintenant ta manche sur le dessus, le bon côté vers le bas, en faisant coïncider le haut de la manche avec la couture de l'épaule.
 
-> Be careful, your sleeve is not symmetric, so be sure to have the back notch (⊗) and cuff guard on the back side, and the front notch (⊙) on the front side.
+> Attention, ta manche n'est pas symétrique, alors assure-toi d'avoir l'encoche arrière (⊗) et la protection de manchette sur le côté arrière, et l'encoche avant (⊙) sur le côté avant.
 > 
-> Also note that the back notch (⊗) on the sleeve does not have a corresponding notch on the back of the shirt. That's because it should match up with the seam where your yoke joins the back.
+> Note aussi que l'encoche arrière (⊗) sur la manche n'a pas d'encoche correspondante sur le dos de la chemise. C'est parce qu'il doit correspondre à la couture où ton empiècement rejoint le dos.
 
 Vous devez maintenant épingler la manche à l'emmanchure. Pour ce faire, assurez-vous de :
 
@@ -459,7 +459,7 @@ Vous devez maintenant épingler la manche à l'emmanchure. Pour ce faire, assure
 - Faire correspondre les repères de la tête de manche aux repères du dos et des devant
 - Distribuer l'embu entre les repères comme indiqué
 
-#### Distribute sleevecap ease
+#### Distribue la facilité du sleevecap
 
 ![Répartir l'embu de la tête de manche](14b.png)
 
@@ -501,7 +501,7 @@ Vous pouvez épingler pour maintenir en place, ou tout simplement repasser.
 
 Maintenant, sur l'envers, cousez la marge de couture sur le bord, juste au niveau ou elle est repliée sous l'autre marge de couture.
 
-Here it is important to keep an even distance from the seam of your sleeve. Si vous avez un pied rabatteur, cela pourra vous aider. Mais si ce n'est pas le cas, soyez simplement soigneux.
+Ici, il est important de garder une distance égale par rapport à la couture de ta manche. Si vous avez un pied rabatteur, cela pourra vous aider. Mais si ce n'est pas le cas, soyez simplement soigneux.
 
 > Il est plus important de rester à la même distance de la couture de manche que de coudre exactement au bord du pli. Idéalement, le pli est censé être aussi à distance constante de la couture, mais si ce n'est pas le cas, assurez-vous juste de coudre parallèlement à la couture de manche. Même si cela implique de s'écarter un peu du bord plié.
 
@@ -543,7 +543,7 @@ Vous pouvez épingler pour maintenir en place, ou tout simplement repasser.
 
 Maintenant, sur l'envers, cousez la marge de couture sur le bord, juste au niveau ou elle est repliée sous l'autre marge de couture.
 
-Important here is to keep an even distance from the seam of your sleeve. Si vous avez un pied rabatteur, cela pourra vous aider. Mais si ce n'est pas le cas, soyez simplement soigneux.
+Ce qui est important ici, c'est de garder une distance égale par rapport à la couture de ta manche. Si vous avez un pied rabatteur, cela pourra vous aider. Mais si ce n'est pas le cas, soyez simplement soigneux.
 
 > Il est plus important de rester à la même distance de la couture de manche que de coudre exactement au bord du pli. Idéalement, le pli est censé être aussi à distance constante de la couture, mais si ce n'est pas le cas, assurez-vous juste de coudre parallèlement à la couture de manche. Même si cela implique de s'écarter un peu du bord plié.
 
@@ -557,15 +557,15 @@ Quand vous avez terminé, repassez la couture plate rabattue sur l'endroit, pour
 
 ![Épingler les poignets en place](18a.png)
 
-You need to insert the sleeve between the two layers of your cuff, making sure that the good side of the fabric sits against the side of your cuff that has the interfacing applied to it.
+Tu dois insérer la manche entre les deux couches de ta manchette, en veillant à ce que le bon côté du tissu repose contre le côté de ta manchette sur lequel est appliqué l'entoilage.
 
 Vous devrez épingler en place, car selon la longueur de votre patte de boutonnage, il peut être difficile ou même impossible de maintenir le tout bien plat.
 
 Notez également que le bord de votre manche sera plus long que votre poignet (d'autant plus que le drapé de votre manche est important). Vous devez faire un ou quelques plis sur votre manche l'ajuster au poignet.
 
-> Your pattern contains helplines on the sleeve to help you place the folds.
+> Ton patron contient des lignes d'aide sur la manche pour t'aider à placer les plis.
 
-> Prenez votre temps pour épingler tout ceci avec soin. We are going to edge-stitch this later, so it's important that the front and back of your cuff align nicely.
+> Prenez votre temps pour épingler tout ceci avec soin. Nous allons faire des points de bordure plus tard, il est donc important que l'avant et l'arrière de ta manchette soient bien alignés.
 
 #### Piquer les poignets aux manches
 
@@ -573,7 +573,7 @@ Notez également que le bord de votre manche sera plus long que votre poignet (d
 
 Une fois que tout est épinglé, cousez le long du bord du poignet pour l'attacher à votre manche.
 
-It's important to catch both the outer and inner layer of your cuff on the edge.
+Il est important d'attraper à la fois la couche extérieure et la couche intérieure de ta manchette sur le bord.
 
 > Assurez-vous de piquer sur la face extérieure (endroit de votre manche) en restant parallèle au bord du poignet.
 
@@ -609,7 +609,7 @@ Veillez à respecter la marge de couture standard et - important - évitez les p
 
 Quand vous serez satisfait de la façon dont vous avez bâti votre col en place, il est temps de piquer cette chose.
 
-We're going to start at the center-back and sew all the way around the collar stand.
+Nous allons commencer au centre du dos et coudre tout autour du pied de col.
 
 #### Coudre le long du bord du col
 
@@ -635,7 +635,7 @@ Il est temps de faire l'ourlet (c'est la partie que vous glissez dans votre pant
 
 Repliez la moitié de la marge d'ourlet et repassez. Ensuite, pliez à nouveau et repassez à nouveau.
 
-Now, sew along the upper edge to finish the hem.
+Maintenant, couds le long du bord supérieur pour terminer l'ourlet.
 
 ### Etape 21 : Faire les boutonnières
 
