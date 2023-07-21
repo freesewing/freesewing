@@ -2,10 +2,10 @@
 title: "Altura interior de los bolsillos"
 ---
 
-Controls the width of the inner pocket welts.
+Controla la anchura de los ribetes de los bolsillos interiores.
 
-- Increase this option to increase the width of the inner pocket welts
-- Decrease this option to decrease the width of the inner pocket welts
+- Aumenta esta opción para aumentar la anchura de los ribetes de los bolsillos interiores
+- Disminuye esta opción para reducir la anchura de los ribetes de los bolsillos interiores
 
 ## Efecto de esta opción en el patrón
 
