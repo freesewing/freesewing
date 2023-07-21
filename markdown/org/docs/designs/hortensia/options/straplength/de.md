@@ -6,7 +6,7 @@ Steuert die Riemenlänge.
 
 <Tip>
 
-Turn on paperless to see the length of the strap.
+Schalte das papierlose System ein, um die Länge des Gurtes zu sehen.
 
 </Tip>
 
