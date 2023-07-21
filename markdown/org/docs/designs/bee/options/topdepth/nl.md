@@ -1,10 +1,10 @@
 ---
-title: "Top Depth"
+title: "Diepte boven"
 ---
 
 ***
 
-Controls how far the bikini cup extends upwards
+Bepaalt hoe ver de bikinicup naar boven uitsteekt
 
 ## Effect van deze optie op het patroon
 
