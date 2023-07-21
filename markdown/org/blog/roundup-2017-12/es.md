@@ -1,119 +1,119 @@
 ---
 author: "joostdecock"
-caption: "Your new login background for the month of January"
+caption: "Tu nuevo fondo de inicio de sesión para el mes de enero"
 date: "2017-12-31"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7203a0f33c8c3d1cd6abdbca5c0fd85f44db3893-2000x1330.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - December 2017: Patrons, Bent, Carlton, Florent, and the looming Inkscape issue"
+intro: "Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene."
+title: "Resumen mensual - Diciembre de 2017: Patronos, Bent, Carlton, Florent y el inminente problema de Inkscape"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene.
 
-## Looking back at December
-As you may or may not know, for freesewing the year starts on December 10th. This way, I only have to write this blog post on New Year's eve, rather than roll out a bunch of new changes.
+## Echando la vista atrás a diciembre
+Como sabrás o no, para el freesewing el año comienza el 10 de diciembre. De este modo, sólo tengo que escribir esta entrada de blog en Nochevieja, en lugar de lanzar un montón de nuevos cambios.
 
-What changes? I'm glad you asked:
+¿Qué cambia? Me alegro de que lo preguntes:
 
-### We have patrons now
+### Ahora tenemos mecenas
 
-This was really big news for me, and something that we had been working on behind the scenes for a good while. But 3 weeks ago, we finally unveiled our new patron system.
+Esto fue una gran noticia para mí, y algo en lo que habíamos estado trabajando entre bastidores durante un buen tiempo. Pero hace 3 semanas, por fin presentamos nuestro nuevo sistema de mecenas.
 
-The [announcement blog post](/blog/calling-all-patrons/) has all the details, plus an open-hearted look at the financial side of this project. If you haven't read it yet, I recommend it.
+La entrada del blog del anuncio de [](/blog/calling-all-patrons/) tiene todos los detalles, además de una mirada sincera a la parte financiera de este proyecto. Si aún no lo has leído, te lo recomiendo.
 
-![Spreading the word about our new patron approach](https://posts.freesewing.org/uploads/patrons_ig_bad479bb83.png)
-
-
-The gist of it is that we are building a bedrock of loyal supporters to ensure a sustainable future for freesewing.org, our code, our patterns, and our community.
-
-These people are our Patrons, and they support us with a small monthly contribution. We have three tiers, and they all come with their own prices and perks. You can find all the info on [the patrons sign-up page](/patrons/join).
-
-We are 3 weeks in now, and so far [25 people](/patrons) have shown their support for this project by becoming a patron.
-
-Needless to say, this is truly wonderful news that we're all very excited about.
+![Difusión de nuestro nuevo enfoque de patrocinio](https://posts.freesewing.org/uploads/patrons_ig_bad479bb83.png)
 
 
-### A logo tweak
+Lo esencial es que estamos construyendo una base de seguidores leales para garantizar un futuro sostenible en para freesewing.org, nuestro código, nuestros patrones y nuestra comunidad.
 
-The roll out of our patron system had an unforeseen side-effect: We needed to simplify the freesewing logo a bit so we could order all that swag with the logo on it.
+Estas personas son nuestros Mecenas, y nos apoyan con una pequeña contribución mensual. Tenemos tres niveles, cada uno con sus propios precios y ventajas. Puedes encontrar toda la información en [la página de inscripción de mecenas](/patrons/join).
 
-![The new logo](https://posts.freesewing.org/uploads/logo_cb4d9e16ca.svg) ![The old logo](https://posts.freesewing.org/uploads/old_logo_flag_cbfc5a5ff1.png)
+Ya llevamos 3 semanas, y hasta ahora [25 personas](/patrons) han mostrado su apoyo a este proyecto convirtiéndose en mecenas.
 
-Turns out there's a limit to the amount of detail you can get embossed into jeans rivets or buttons, or woven into labels. (that's just some of the swag our patrons get).
+Ni que decir tiene que se trata de una noticia realmente maravillosa que nos entusiasma a todos.
 
-So, we've streamlined the logo a bit. It's been on the site and our social media accounts since December 10th, but we hadn't updated our auto-generated avatars yet. That's something we've managed to squeeze in in the last hours of December (and the year) so that's good too.
 
-### New patterns
+### Un retoque del logotipo
 
-We've had three (yes 3) pattern releases in December.
+El despliegue de nuestro sistema de mecenas tuvo un efecto secundario imprevisto: Necesitábamos simplificar un poco el logotipo de freesewing para poder pedir todo ese botín con el logotipo.
 
-[Florent](/patterns/florent) is a flat cap pattern that was contributed by [Quentin](/users/ptzcb). The [announcement blog post](/blog/florent-flat-cap-beta/) has all the details.
+![El nuevo logotipo](https://posts.freesewing.org/uploads/logo_cb4d9e16ca.svg) ![El antiguo logotipo](https://posts.freesewing.org/uploads/old_logo_flag_cbfc5a5ff1.png)
 
-Then later this month, we published [Carlton](/patterns/carlton) and [Bent](/patterns/bent), the block it's based on. I've worked with [Anneke](/showcase/maker/annekecaramin) to make this pattern happen, and a female version of the coat is coming. You know what, you should probably read all about it [in this blog post](/announcing-carlton-and-bent/).
+Resulta que hay un límite a la cantidad de detalles que puedes grabar en los remaches o botones de los vaqueros, o entretejer en las etiquetas. (esto es sólo parte del botín que reciben nuestros mecenas).
 
-### Model name and draft reference are now printed on every pattern part
+Así que hemos racionalizado un poco el logotipo. Lleva en el sitio y en nuestras cuentas de redes sociales desde el 10 de diciembre, pero aún no habíamos actualizado nuestros avatares autogenerados. Es algo que hemos conseguido exprimir en las últimas horas de diciembre (y del año), así que eso también está bien.
 
-We got a request to add the model and draft info to the printed pattern. People who were using a given pattern for different people (imagine making a hoodie for yourself and your partner) got confused about which parts belonged to which draft.
+### Nuevos modelos
 
-That seemed like a good idea to us, so we've added this info to the patterns. If you have an older draft in your account, you can simply re-draft it to update it.
+Hemos tenido tres (sí, 3) lanzamientos de patrones en diciembre.
 
-### Data export
+[Florent](/patterns/florent) es un patrón de gorra plana aportado por [Quentin](/users/ptzcb). La entrada del blog del anuncio [](/blog/florent-flat-cap-beta/) tiene todos los detalles.
 
-We've grouped a few harder to find pages in a new [Tools](/tools/) entry in the account section of the menu.
+A finales de este mes, publicamos [Carlton](/patterns/carlton) y [Bent](/patterns/bent), el bloque en el que se basa. He trabajado con [Anneke](/showcase/maker/annekecaramin) para hacer realidad este patrón, y próximamente habrá una versión femenina del abrigo. Sabes qué, probablemente deberías leer todo sobre ello [en esta entrada del blog](/announcing-carlton-and-bent/).
 
-It contains a link to our RSS feed of the blog, our on-demand tiler, and a link to remove your account, but none of those are new, we've just grouped them so they'd be easier to find.
+### El nombre del modelo y la referencia del proyecto se imprimen ahora en cada pieza del patrón
 
-What is new is the ability to export all the data we have on file for you.
+Recibimos una solicitud para añadir la información sobre el modelo y el boceto al patrón impreso. Las personas que utilizaban un patrón determinado para distintas personas (imagínate hacer una sudadera con capucha para ti y para tu pareja) se confundían sobre qué partes pertenecían a cada borrador.
 
-This work is in preparation of the changes we'll be making next month, which brings me to:
+Nos pareció una buena idea, así que hemos añadido esta información a los patrones. Si tienes un borrador antiguo de en tu cuenta, puedes simplemente volver a girarlo para actualizarlo.
 
-## Looking ahead to January
+### Exportación de datos
 
-There's new patterns in the pipeline, but I'm not ready to commit to a deadline for these yet, mostly because we have a bunch of other stuff on our plate. Including:
+Hemos agrupado algunas páginas más difíciles de encontrar en una nueva entrada [Herramientas](/tools/) en la sección de cuentas del menú.
 
-### Open data and privacy talk
+Contiene un enlace a nuestro canal RSS del blog, a nuestro alicatador a la carta y un enlace para eliminar tu cuenta, , pero ninguno de ellos es nuevo, sólo los hemos agrupado para que sean más fáciles de encontrar.
 
-We had a bit of a debate about whether or not we should publish anonymized measurements data here at freesewing.
+La novedad es la posibilidad de exportar todos los datos que tenemos archivados para ti.
 
-I won't repeat everything here, but [our tweet](https://twitter.com/j__st/status/941586171158777856) and [Instagram post](https://www.instagram.com/p/Bct2jUEnuS9/) on the topic get a lot of responses.
+Este trabajo es en preparación de los cambios que haremos el mes que viene, lo que me lleva a:
 
-A vast majority of people supports this idea, and as such we have plans to move ahead with it. However, if we do this, we want to do it right and completely in the open. So expect a blog post on the matter shortly.
+## De cara a enero
 
-The questions that came up as we were discussing the possibility of publishing this data tend to revolve around privacy. We are --- and remain --- committed to protecting the privacy or all our users and visitors, and have written about [the choices we have made to guarantee your privacy](/blog/privacy-choices/).
+Hay nuevos patrones en preparación, pero aún no estoy preparada para comprometerme a una fecha límite para ellos, sobre todo porque tenemos un montón de otras cosas en nuestro plato. Incluido:
 
-Thinking about these issues made us realize that we want to provide a more iron-clad guarantee than a blog post. So, we will draft and publish a privacy notice in line with the upcoming GDPR.
+### Charla sobre datos abiertos y privacidad
 
-Don't know what GDPR is? Good. Keep reading.
+Tuvimos un pequeño debate sobre si debíamos o no publicar datos de mediciones anonimizados aquí en freesewing.
 
-### GDPR compliance
+No lo repetiré todo aquí, pero [nuestro tweet](https://twitter.com/j__st/status/941586171158777856) y [Instagram post](https://www.instagram.com/p/Bct2jUEnuS9/) sobre el tema obtuvieron muchas respuestas.
 
-The GDPR is the [General Data Protection Regulation](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) of the European Union.  It replaces the *Data Protection Directive* and is a more ambitious piece of data protection legislation.
+Una gran mayoría de la gente apoya esta idea, y como tal tenemos planes para seguir adelante con ella. Sin embargo, si lo hacemos, queremos hacerlo bien y completamente al descubierto. Así que espera una entrada en el blog sobre el asunto en breve.
 
-The GDPR will become active in May 2018, and by that time, freesewing will be ready for it. Specifically, we will publish a privacy notice that outlines exactly what happens to your data, and we will make certain that all your rights are respected.
+Las preguntas que surgieron mientras discutíamos la posibilidad de publicar estos datos tienden a girar en torno a la privacidad. Estamos -y seguimos estando- comprometidos con la protección de la privacidad de todos nuestros usuarios y visitantes, y hemos escrito sobre [las decisiones que hemos tomado para garantizar tu privacidad](/blog/privacy-choices/).
 
-We are still planning how exactly we will tackle this, and for the most part, these will be cosmetic changes and that won't change anything about freesewing as such.
+Pensar en estas cuestiones nos hizo darnos cuenta de que queremos ofrecer una garantía más férrea que una entrada de blog. Por tanto, redactaremos y publicaremos un aviso de privacidad en línea con el próximo GDPR.
 
-But we value your privacy, and we want to practice what we preach, so we'll be making sure to do what's right.
+¿No sabes qué es el GDPR? Bien. Sigue leyendo.
 
-### Core issue #204 - The Inkscape default units quandary
+### Cumplimiento del GDPR
 
-Under the heading *Important changes* the [release notes for Inkscape version 0.92](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.92#Important_changes) list:
+El GDPR es el Reglamento General de Protección de Datos [](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation) de la Unión Europea.  Sustituye a la Directiva de Protección de Datos ** y es un texto legislativo más ambicioso en materia de protección de datos .
 
-> The default resolution was changed from 90dpi to 96dpi, to match the CSS standard.
+El GDPR entrará en vigor en mayo de 2018, y para entonces, freesewing estará preparado para ello. En concreto, publicaremos un aviso de privacidad que describa exactamente qué ocurre con tus datos, y nos aseguraremos de que se respeten todos tus derechos.
 
-This seemingly trivial update to the open source SVG editor will have some profound ripple effects for freesewing.
+Todavía estamos planificando cómo abordaremos esto exactamente, y en su mayor parte, serán cambios cosméticos y que no cambiarán nada del freesewing como tal.
 
-While it won't impact our code as such, we use Inkscape to turn the SVG patterns we generate into the PDFs that you print at home. And if now Inkscape thinks that one inch no longer holds 90, but 96 pixels, your patterns will be scaled incorrectly, which is kind of a big deal.
+Pero valoramos tu privacidad y queremos practicar lo que predicamos, así que nos aseguraremos de hacer lo correcto.
 
-Given that we can continue to run an older build of Inkscape to do our bidding, this doesn't mean things are on fire just yet. But it's a problem we will have to tackle sooner rather than later.
+### Edición principal nº 204 - El dilema de las unidades por defecto de Inkscape
 
-That's because even when we fix it, once we start using the new Inkscape, it will still incorrectly handle the drafts that have been generated prior to the fix and that are still stored in people's profiles.   
-Needless to say, I see a lot of mucking about with the SVG viewbox in my future.
+Bajo el título *Cambios importantes* las [notas de la versión de Inkscape versión 0.92](http://wiki.inkscape.org/wiki/index.php/Release_notes/0.92#Important_changes) lista:
 
-There's other changes in the newest Inkscape too that can potentially wreak havoc. Most likely to cause a stink-up is the new way the *line-height* attribute will be handled in text. Less dramatic, but still inconvenient.
+> Se cambió la resolución por defecto de 90 ppp a 96 ppp, para ajustarla al estándar CSS.
 
-While these changes add an unwelcome number of entries to our to-do list, it's worth pointing out that the Inkscape maintainers make these changes because they thing it's the right thing, and that going forward, this will be the better option.
+Esta actualización aparentemente trivial del editor SVG de código abierto tendrá profundos efectos en freesewing.
 
-So, in the same spirit, we'll make sure to follow suit.
+Aunque no afectará a nuestro código como tal, utilizamos Inkscape para convertir los patrones SVG que generamos en los PDF que imprimes en casa en . Y si ahora Inkscape piensa que una pulgada ya no tiene 90, sino 96 píxeles, tus patrones se escalarán incorrectamente en , lo cual es un gran problema.
 
-But that's for next year.
+Dado que podemos seguir ejecutando una compilación antigua de Inkscape para realizar nuestras tareas, esto no significa que las cosas estén en llamas todavía. Pero es un problema que tendremos que abordar más pronto que tarde.
+
+Eso es porque incluso cuando lo arreglemos, una vez que empecemos a usar el nuevo Inkscape, seguirá manejando incorrectamente los borradores que se han generado antes del arreglo y que siguen almacenados en los perfiles de la gente.   
+No hace falta decir que veo mucho trabajo con la caja de visualización SVG en mi futuro.
+
+También hay otros cambios en el último Inkscape que pueden causar estragos. Lo más probable es que provoque un disgusto es la nueva forma en que se tratará en el texto el atributo *line-height* . Menos dramático, pero aún así inconveniente.
+
+Aunque estos cambios añaden un número no deseado de entradas a nuestra lista de tareas pendientes, merece la pena señalar que los mantenedores de Inkscape hacen estos cambios porque creen que es lo correcto, y que en el futuro, esta será la mejor opción.
+
+Así que, con el mismo espíritu, nos aseguraremos de seguir el ejemplo.
+
+Pero eso es para el año que viene.
 
