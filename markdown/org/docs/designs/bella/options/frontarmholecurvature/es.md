@@ -1,10 +1,10 @@
 ---
-title: "Front armhole curvature"
+title: "Curvatura de la sisa delantera"
 ---
 
 ***
 
-Controls how deep the armhole is scooped out at the front bottom
+Controla la profundidad de la sisa en la parte inferior delantera
 
 ## Efecto de esta opción en el patrón
 
