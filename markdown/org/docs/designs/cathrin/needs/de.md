@@ -1,5 +1,5 @@
 ---
-title: "Cathrin corset: What You Need"
+title: "Cathrin Korsett: Was du brauchst"
 ---
 
 Korsetts sind einfacher zu konstruieren als sie scheinen, aber sie benötigen mehrere Spezialartikel und Werkzeuge.
@@ -10,8 +10,8 @@ Du findest eine gute Anleitung zu anderen Werkzeugen unter [Foundations Revealed
 
 Mustervorrätliste:
 
-- About 0.5 meters (0.6 yards) of core fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
-- About 0.5 meters (0.6 yards) of outer fabric ([see Fabric options](/docs/patterns/cathrin/fabric))
+- Etwa 0,5 Meter (0,6 Yards) Kernstoff ([siehe Stoffoptionen](/docs/patterns/cathrin/fabric))
+- Etwa 0,5 Meter (0,6 Yards) Außenstoff ([siehe Stoffoptionen](/docs/patterns/cathrin/fabric))
 - Boning
 - Grommets (size 2)
 - Ungefähr 2 Meter Voreinstellung
