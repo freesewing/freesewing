@@ -2,10 +2,10 @@
 title: "Profundidad del bolsillo interior"
 ---
 
-How deep you would like the inner pocket to be.
+Qué profundidad quieres que tenga el bolsillo interior.
 
-- Increase this option to make a deeper inner pocket
-- Decrease this option to make a shallower inner pocket
+- Aumenta esta opción para hacer una bolsa interior más profunda
+- Disminuye esta opción para hacer una bolsa interior menos profunda
 
 ## Efecto de esta opción en el patrón
 
