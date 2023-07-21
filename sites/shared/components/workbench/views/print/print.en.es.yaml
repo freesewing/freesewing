@@ -1,0 +1,40 @@
+printSettings: Ajustes de impresión
+printSettings.d: Estos ajustes controlan aspectos de la página para la exportación e impresión en PDF
+size.t: Tamaño del papel
+size.d: Elige un tamaño de papel
+a4.t: A4
+a4.d: 210 x 297 mm
+a3.t: A3
+a3.d: 297 × 420 mm
+a2.t: A2
+a2.d: 420 × 594 mm
+a1.t: A1
+a1.d: 594 × 841 mm
+a0.t: A0
+a0.d: 841 × 1189 mm
+letter.t: Carta
+letter.d: 8,5 x 11 pulg.
+legal.t: Legal
+legal.d: 8,5 x 14 pulg.
+tabloid.t: Tabloide
+tabloid.d: 11 x 17 pulg.
+cutlist.t: Incluir diseños de corte
+cutlist.d: '¿Deben incluirse en el PDF exportado imágenes de los esquemas de corte sugeridos para cada material?'
+cutlistNo.t: No incluyas esquemas de corte
+cutlistNo.d: Los PDF exportados no incluirán ningún diseño de corte sugerido
+cutlistYes.t: Incluir esquemas de corte
+cutlistYes.d: Los PDF exportados incluirán una página para cada material utilizado en el patrón, en la que se indicará la cantidad de material necesaria y se sugerirá un esquema para recortar las piezas adecuadas.
+coverPage.t: Incluir portada
+coverPage.d: '¿El PDF exportado debe incluir una portada?'
+coverPageYes.t: Incluye una portada
+coverPageYes.d: Añade una portada al PDF exportado que incluya información sobre el patrón y una imagen de todo el diseño montado
+coverPageNo.t: No incluyas una portada
+coverPageNo.d: Los PDF exportados omitirán la portada
+margin.t: Margen de página
+margin.d: '¿Qué margen deben tener las páginas del PDF? Esto es útil para asegurarte de que todo el contenido está dentro de los márgenes de tu impresora. También controla cuánto se solaparán las páginas adyacentes.'
+orientation.t: Orientación de la página
+orientation.d: '¿En qué dirección deben girarse las páginas?'
+portrait.t: Retrato
+portrait.d: Las páginas serán más largas que anchas
+landscape.t: Paisaje
+landscape.d: Las páginas serán más anchas que largas
