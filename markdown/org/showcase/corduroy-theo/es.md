@@ -1,14 +1,14 @@
 ---
-maker: "unknown"
-caption: "Gus in his brown corduroys"
+maker: "desconocido"
+caption: "Gus con su pana marrón"
 date: "2017-01-17"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4addf70ac76582708c6aa4518028517d00dbaba2-1200x1600.jpg"
-intro: "Corduroy trousers for Gus, by Fabricated"
-title: "Corduroy trousers for Gus, by Fabricated"
+intro: "Pantalones de pana para Gus, de Fabricated"
+title: "Pantalones de pana para Gus, de Fabricated"
 designs:
   - "theo"
 ---
 
 
-This picture is from the [fabricated.com](http://fabrickated.com/) blog. You should read [the entire post](http://fabrickated.com/2017/01/21/manswap-7-finishing-the-brown-corduroy-trousers/).
+Esta foto es del blog [fabricated.com](http://fabrickated.com/) . Deberías leer [todo el post](http://fabrickated.com/2017/01/21/manswap-7-finishing-the-brown-corduroy-trousers/).
 
