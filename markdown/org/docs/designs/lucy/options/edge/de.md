@@ -1,8 +1,8 @@
 ---
-title: Edge
+title: Kante
 ---
 
-This option controls the width of the top edge of your pocket.
+Diese Option steuert die Breite der oberen Kante deiner Tasche.
 
 ## Effekt dieser Option auf das Schnittmuster
 
