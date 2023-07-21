@@ -2,10 +2,10 @@
 title: "Paspel binnenzak"
 ---
 
-Controls the width of the inner pocket welts.
+Regelt de breedte van de binnenzakranden.
 
-- Increase this option to increase the width of the inner pocket welts
-- Decrease this option to decrease the width of the inner pocket welts
+- Verhoog deze optie om de breedte van de binnenzakranden te vergroten
+- Verlaag deze optie om de breedte van de binnenzakranden te verkleinen
 
 ## Effect van deze optie op het patroon
 
