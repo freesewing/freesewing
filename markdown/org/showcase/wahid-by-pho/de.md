@@ -1,24 +1,24 @@
 ---
-maker: "unknown"
-caption: "Wahid waistcoat by Pho"
+maker: "unbekannt"
+caption: "Wahid-Weste von Pho"
 date: "2021-05-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e172985d483a277509c6cbaf64fcd58ded7a95ea-521x800.jpg"
-intro: "Pho made this stellar Wahid! They shared:"
-title: "Wahid by Pho"
+intro: "Pho hat diesen stellaren Wahid gemacht! Sie teilten:"
+title: "Wahid von Pho"
 designs:
   - "wahid"
 ---
 
-Pho made this stellar Wahid! They shared:
+Pho hat diesen stellaren Wahid gemacht! Sie teilten:
 
-> Wahid to my measurements. I opted out of buttons since I sit a lot at work and a completely fitted garment for me wouldn't be able to stay buttoned. I also did the pocket bags as one long piece of fabric which was easiest for me to understand under guidance of a sewing teacher.  I might opt for snaps or just leave it open. My size stomach wise is bigger than my chest. Amazing how a garment my size makes me look great! Thanks for the pattern!
+> Wahid nach meinen Maßen. Ich habe mich gegen Knöpfe entschieden, da ich bei der Arbeit viel sitze und ein komplett tailliertes Kleidungsstück für mich nicht geknöpft bleiben kann. Ich habe die Taschenbeutel auch als ein langes Stück Stoff genäht, was für mich unter Anleitung einer Nählehrerin am einfachsten zu verstehen war.  Vielleicht entscheide ich mich für Druckknöpfe oder lasse sie einfach offen. Mein Bauch ist größer als meine Brust. Erstaunlich, wie ein Kleidungsstück in meiner Größe mich toll aussehen lässt! Danke für das Muster!
 
-One more picture of their fantastic work:
+Ein weiteres Bild von ihrer fantastischen Arbeit:
 
-![Side view](https://posts.freesewing.org/uploads/wahid_by_pho_wahidbypho2_ba0be6a31c.jpg "Side view")
+![Seitenansicht](https://posts.freesewing.org/uploads/wahid_by_pho_wahidbypho2_ba0be6a31c.jpg "Seitenansicht")
 
 <Note>
 
-This picture is from Pho on Discord. It is reposted here with permission.
+Dieses Bild ist von Pho auf Discord. Er wird hier mit Erlaubnis wieder veröffentlicht.
 
 </Note>
