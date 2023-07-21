@@ -79,7 +79,7 @@ Von diesen Personen, die in der Lage waren, ihr Konto zu aktivieren, haben wenig
 
 Mehr als 40% der E-Mail-Nachrichten zur Kontobestätigung werden einfach von Microsoft blockiert, und je nach Anzahl der Aktivierungen scheint es wahrscheinlich, dass sie, selbst wenn sie nicht am SMTP-Relay blockiert werden, irgendwo weiter hinten gefiltert werden.
 
-As things stand, it seems almost impossible for the average hotmail/outlook/live/MSN/... user to sign up for this site.
+So wie es aussieht, ist es für den durchschnittlichen hotmail/outlook/live/MSN/... Nutzer fast unmöglich, sich auf dieser Seite anzumelden.
 
 ## Was können wir dagegen tun?
 
