@@ -1,5 +1,5 @@
 ---
-title: "Trayvon tie: Fabric Options"
+title: "Corbata Trayvon Opciones de tejido"
 ---
 
 ## Tie fabric
