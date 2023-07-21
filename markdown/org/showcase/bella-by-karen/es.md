@@ -1,20 +1,20 @@
 ---
-maker: "unknown"
-caption: "Karen's shirt based on the Bella block"
+maker: "desconocido"
+caption: "Camisa de Karen basada en el bloque Bella"
 date: "2021-02-27"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d5ba88624a180a770eb8f022022447b5c7f91649-810x810.jpg"
-intro: "Karen made this fabulous shirt based on the Bella block. She used the Bella block with most default options, only modifying to take in the back darts a bit more. She added several additional design elements to make this shirt."
-title: "Bella by Karen"
+intro: "Karen hizo esta fabulosa camiseta basándose en el bloque Bella. Utilizó el bloque Bella con la mayoría de las opciones predeterminadas, sólo modificándolo para llevar las pinzas de la espalda un poco más adentro. Añadió varios elementos de diseño adicionales para hacer esta camiseta."
+title: "Bella por Karen"
 designs:
   - "bella"
 ---
 
 
-Karen made this fabulous shirt based on the Bella block. She used the Bella block with most default options, only modifying to take in the back darts a bit more. She added several additional design elements to make this shirt.
+Karen hizo esta fabulosa camiseta basándose en el bloque Bella. Utilizó el bloque Bella con la mayoría de las opciones predeterminadas, sólo modificándolo para llevar las pinzas de la espalda un poco más adentro. Añadió varios elementos de diseño adicionales para hacer esta camiseta.
 
 <Note>
 
-This picture is from Discord and is reposted here with permission.
+Esta imagen es de Discordia y se publica aquí con permiso.
 
 </Note>
 
