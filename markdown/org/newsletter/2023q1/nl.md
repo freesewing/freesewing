@@ -1,61 +1,41 @@
 ---
 date: "2023-01-01"
 edition: "2023q1"
-intro: "Welcome to the 2023 Winter edition of the FreeSewing newsletter."
-title: "2023 Winter edition"
+intro: "Welkom bij de 2023 Winter editie van de FreeSewing nieuwsbrief."
+title: "2023 Wintereditie"
 ---
 
-Welcome to the 2023 Winter edition of the FreeSewing newsletter.
+Welkom bij de 2023 Winter editie van de FreeSewing nieuwsbrief.
 
-First up: Happy new year to those who celebrate. May 2023 bring you everything you've hoped for, and perhaps some nice surprises too.
+Als eerste: Gelukkig nieuwjaar voor degenen die het vieren. Moge 2023 je alles brengen waar je op gehoopt hebt, en misschien ook een paar leuke verrassingen.
 
-As is a tradition this time of the year, our contributors enjoy a break to enjoy the holidays, and what you'll find below is made up almost entirely of the ramblings of me, Joost.
+Zoals gebruikelijk in deze tijd van het jaar nemen onze medewerkers een pauze om van de feestdagen te genieten, en wat je hieronder vindt bestaat bijna volledig uit het gebazel van mij, Joost.
 
-In addition, it's new year's day, so I'm not going to make this too long. Here's what's in store today:
+Bovendien is het nieuwjaarsdag, dus ik ga dit niet te lang maken. Dit is wat je vandaag kunt verwachten:
 
-- 🏁 2022 was the year of FreeSewing 2.22 (1-minute read - by Joost)
-- ✋ 2023 will be the year of FreeSewing 3 (1-minute read - by Joost)
-- 💜 The cost of loving (2-minute read - by Joost)
-- 🕵️ Behind the Seams: Zwaluw (4-minute read - by Karen & Zwaluw)
+- 🏁 2022 was het jaar van FreeSewing 2.22 (1-minuut lezen - door Joost)
+- 2023 wordt het jaar van FreeSewing 3 (1 minuut lezen - door Joost)
+- 💜 De kosten van liefhebben (2 minuten lezen - door Joost)
+- 🕵️ Achter de naden: Zwaluw (4 minuten lezen - door Karen & Zwaluw)
 
-Let's get right to it.
-
-&nbsp;
+Laten we er meteen mee beginnen.
 
 &nbsp;
 
-## 🏁 2022 was the year of FreeSewing 2.22
-
-You won't find this on the list of any 2022 retrospective, but this is not a newsletter for hot takes about the news, this is the FreeSewing newsletter. And for us, 2022 was the year we release FreeSewing v2.22 and decided it would be the last v2 release ever.
-
-The [FreeSewing contributor call of 20 august 2022](https://github.com/freesewing/freesewing/discussions/2582) marks the official moment were we decided to wrap up development of v2 with one final release, and then turn our attention to version 3.
-
-In the months leading up to this moment, we had already made great strides in trying to implement many of the things on [our road map](https://github.com/freesewing/freesewing/discussions/1278), and it feels weird to me somehow that only four months have passed since when I think about all the work that has been done on v3.
-
-On the developer side of things, we've completely switched over already. FreeSewing.dev holds our developer documentation for v3, while the _legacy_ v2 documentation is relegated to v2.freesewing.dev.
-
-Our development environment for v3 is also ready — run `npx @freesewing/new-design@next` to try it yourself — and we also rewrote our backend to support our future plans, like hooking up our development environment to the backend so designers can use the measurements data they have stored in their FreeSewing account to test their designs.
-
-
 &nbsp;
 
----
+## 2022 was het jaar van FreeSewing 2.22
 
-&nbsp;
+Je zult dit niet vinden op de lijst van een terugblik op 2022, maar dit is geen nieuwsbrief voor hot takes over het nieuws, dit is de FreeSewing nieuwsbrief. En voor ons was 2022 het jaar waarin we FreeSewing v2.22 uitbrachten en besloten dat dit de laatste v2-uitgave ooit zou zijn.
 
-## ✋ 2023 will be the year of FreeSewing 3
+De [FreeSewing contributor call van 20 augustus 2022](https://github.com/freesewing/freesewing/discussions/2582) markeert het officiële moment waarop we besloten om de ontwikkeling van v2 af te ronden met een laatste release, en daarna onze aandacht te richten op versie 3.
 
-The current `next` release of FreeSewing is v3.0.0-alpha.4. The race has started now to turn that into `beta` and then finally put it in production on FreeSewing.org.
+In de maanden voorafgaand aan dit moment hadden we al grote stappen gezet in het implementeren van veel van de dingen op [onze roadmap](https://github.com/freesewing/freesewing/discussions/1278), en het voelt op de een of andere manier raar voor me dat er nog maar vier maanden zijn verstreken als ik denk aan al het werk dat is gedaan aan v3.
 
-I've talked about some of the new things in FreeSewing v3 in [our last newsletter](https://freesewing.org/newsletter/2022q4/). I could talk about it more, but talk is cheap. You want to see it, right? Well you can't. It's not ready. It was also not supposed to be ready. We started the effort late in August this year, and from the very start put the release at _sometime in 2023_.
+Aan de kant van de ontwikkelaars zijn we al helemaal overgestapt. FreeSewing.dev bevat onze documentatie voor ontwikkelaars voor v3, terwijl de _documentatie voor de oude_ v2 is gedegradeerd naar v2.freesewing.dev.
 
-But, you can start the clock today and I promise that it will be out before the end of the year. If it's Q4, I will be a bit disappointed. If it's Q3, I will be happy. If it's Q2 I will be thrilled. En als het Q1 is, zal ik erg verbaasd zijn.
+Onze ontwikkelomgeving voor v3 is ook klaar - voer `npx @freesewing/new-design@next` uit om het zelf te proberen - en we hebben ook onze backend herschreven om onze toekomstplannen te ondersteunen, zoals het koppelen van onze ontwikkelomgeving aan de backend zodat ontwerpers de meetgegevens die ze hebben opgeslagen in hun FreeSewing account kunnen gebruiken om hun ontwerpen te testen.
 
-The only thing that's really left to do right now — apart from copious amounts of polish and bug fixes obviously — is to write a new frontend. In other words, a new FreeSewing.org where you can actually use all of the cool stuff we've been working on.
-
-In many ways, it will be the crowning achievement of version 3. The thing that brings everything together.
-
-No pressure.
 
 &nbsp;
 
@@ -63,17 +43,19 @@ No pressure.
 
 &nbsp;
 
-## 💜 The cost of loving
+## 2023 wordt het jaar van FreeSewing 3
 
-FreeSewing's revenue during 2022 was `9.325,54` euro. That's down from `10.070,77` in 2021, which was in turn lower than the `10.736,82` of revenue in 2020. Still, it's more than double of the `4.109,38` euro revenue of 2019 and I think that's worth pointing out because 2019 was the last pre-pandemic year.
+De huidige `volgende` release van FreeSewing is v3.0.0-alpha.4. De race is nu begonnen om dat om te zetten in `beta` en het dan uiteindelijk in productie te nemen op FreeSewing.org.
 
-We've seen an enormous influx of users, patrons, and revenue in 2020 undoubtedly because [our face mask pattern](https://freesewing.org/designs/florence/) was wildly popular during the PPE shortage that year. That peak has been tapering off ever since, and has pushed year-on-year revenue into a downward trend. Furthermore, inflation and the cost of living crisis has been particularly tangible this year, and I've received more than one apologetic message from patrons who wanted to continue supporting us but felt obliged to cut us from their monthly budget to ensure they would be able to support themselves and/or their families.
+Ik heb het over een aantal nieuwe dingen in FreeSewing v3 gehad in [onze laatste nieuwsbrief](https://freesewing.org/newsletter/2022q4/). Ik zou er meer over kunnen vertellen, maar praten is goedkoop. Je wilt het toch zien? Nou, dat kun je niet. Het is nog niet klaar. Het was ook niet de bedoeling dat het klaar zou zijn. We zijn eind augustus van dit jaar begonnen en hebben vanaf het begin de release op _ergens in 2023 gezet_.
 
-So I don't feel bad about revenue being lower this year. I think it's been a difficult year for many people, and we have always been looking for support from those who could spare it without hardship. Yes, it's nice to break the `10.000` barrier. Yes, I would love to get to `12.000` and reach `1.000` MRR (monthly recurring revenue) but I'm not going to let that get in the way of being proud of the work we do.
+Maar, je kunt de klok vandaag starten en ik beloof je dat het voor het eind van het jaar uit zal zijn. Als het Q4 is, zal ik een beetje teleurgesteld zijn. Als het Q3 is, zal ik blij zijn. Als het Q2 is, zal ik dolblij zijn. En als het Q1 is, zal ik erg verbaasd zijn.
 
-I am proud not only of the work we do, but because FreeSewing is a force for good in this world. With the addition of this year's `9.325,54`, FreeSewing's contributions to [Médecins sans frontières/Doctors Without Borders](https://www.msf.org/) stands at `38.814,94` euro or about 41.6k US dollar. Money that helps people who are in a worse situation than we all are.
+Het enige dat nu nog echt gedaan moet worden - afgezien van overvloedig poetsen en bugfixes natuurlijk - is het schrijven van een nieuwe frontend. Met andere woorden, een nieuwe FreeSewing.org waar je alle coole dingen waar we aan gewerkt hebben ook echt kunt gebruiken.
 
-So I am proud of those numbers, and most of all I am proud of the FreeSewing patrons who are behind them. They are the real heroes.
+In veel opzichten zal het de bekroning zijn op versie 3. Dat wat alles samenbrengt.
+
+Geen druk.
 
 &nbsp;
 
@@ -81,69 +63,87 @@ So I am proud of those numbers, and most of all I am proud of the FreeSewing pat
 
 &nbsp;
 
-## 🕵️ Behind the Seams: Zwaluw
+## De kosten van liefhebben
 
-One of our Contributor Call hosts sat down (virtually) with Zwaluw (who goes by Z or Zee) to learn a little more about their background and journey to becoming a FreeSewing contributor! The interview below has been edited for length, and any errors, oversights, etc. are entirely the fault of the interviewer!
+De omzet van FreeSewing gedurende 2022 was `9.325,54` euro. Dat is lager dan de `10.070,77` in 2021, die weer lager was dan de `10.736,82` aan inkomsten in 2020. Toch is het meer dan het dubbele van de `4.109,38` euro omzet van 2019 en ik denk dat dat het vermelden waard is omdat 2019 het laatste pre-pandemische jaar was.
+
+We hebben een enorme toestroom van gebruikers, klanten en inkomsten gezien in 2020, ongetwijfeld omdat [ons gezichtsmaskerpatroon](https://freesewing.org/designs/florence/) razend populair was tijdens het PBM-tekort in dat jaar. Die piek is sindsdien afgezwakt en heeft de inkomsten op jaarbasis in een neerwaartse trend geduwd. Bovendien zijn de inflatie en de crisis in de kosten van levensonderhoud dit jaar bijzonder voelbaar geweest en ik heb meer dan eens verontschuldigende berichten ontvangen van mecenassen die ons wilden blijven steunen, maar zich gedwongen voelden om ons uit hun maandelijkse budget te schrappen om ervoor te zorgen dat ze zichzelf en/of hun gezin konden onderhouden.
+
+Ik vind het dus niet erg dat de inkomsten dit jaar lager zijn. Ik denk dat het voor veel mensen een moeilijk jaar is geweest en we hebben altijd steun gezocht bij degenen die het zonder ontberingen konden missen. Ja, het is leuk om de barrière van `10.000` te doorbreken. Ja, ik zou graag naar `12.000` gaan en `1.000` MRR (monthly recurring revenue) bereiken, maar ik laat dat niet in de weg staan van trots zijn op het werk dat we doen.
+
+Ik ben niet alleen trots op het werk dat we doen, maar ook omdat FreeSewing een kracht voor het goede is in deze wereld. Met de toevoeging van `9.325,54`van dit jaar, staat de bijdrage van FreeSewing aan [Médecins sans frontières/Doctors Without Borders](https://www.msf.org/) op `38.814,94` euro of ongeveer 41,6k US dollar. Geld dat mensen helpt die het slechter hebben dan wij allemaal.
+
+Ik ben dus trots op deze cijfers, en ik ben vooral trots op de FreeSewing klanten die erachter staan. Zij zijn de echte helden.
+
+&nbsp;
+
+---
+
+&nbsp;
+
+## 🕵️ Achter de naden: Zwaluw
+
+Een van onze Contributor Call hosts ging (virtueel) zitten met Zwaluw (die Z of Zee heet) om wat meer te weten te komen over hun achtergrond en hun reis om een FreeSewing contributor te worden! Het onderstaande interview is bewerkt voor de lengte en eventuele fouten, vergissingen, etc. zijn geheel de schuld van de interviewer!
 
 ### Hoe heb je FreeSewing leren kennen?
-I don’t remember! I’m very active now, but I remember looking at the site a long while back and thinking it was cool, but I don’t remember how I got there… Maybe googling made-to-measure patterns?
+Ik weet het niet meer! Ik ben nu heel actief, maar ik herinner me dat ik een hele tijd geleden op de site keek en dacht dat het cool was, maar ik weet niet meer hoe ik er kwam… Misschien googlen op patronen op maat?
 
 ### Hoe ben je medewerker geworden?
-That I do remember, it was writing documentation! I don’t remember if Starf asked or I offered, but my first project was writing the documentation for [Lunetius](https://freesewing.org/designs/lunetius/), a historical Roman cloak.
+Wat ik me wel herinner, was het schrijven van documentatie! Ik weet niet meer of Starf het vroeg of dat ik het aanbood, maar mijn eerste project was het schrijven van de documentatie voor [Lunetius](https://freesewing.org/designs/lunetius/), een historische Romeinse mantel.
 
 ### Wat is je werk tot nu toe geweest?
-My first contribution work was the documentation for Lunetius, and I still help with documentation sometimes, but I’ve also started developing patterns. In particular, I’ve made [Lucy](https://freesewing.org/designs/lucy/), a historical tie-on pocket, and Jane. Jane is a to-be-released shift pattern (or underwear for historical garments), and there’s not a lot of patterns out there for those. For so many people in the historical sewing community, you make a shift and get it over with, and that’s not me. Jane gives you options on a pattern that’s pretty loosely fitted, but you might want more or less ease, different sleeves, etc.
+Mijn eerste bijdrage was de documentatie voor Lunetius, en ik help nog steeds soms met documentatie, maar ik ben ook begonnen met het ontwikkelen van patronen. Ik heb in het bijzonder [Lucy](https://freesewing.org/designs/lucy/), een historische opknoopzak, en Jane gemaakt. Jane is een nog uit te brengen ploegenpatroon (of ondergoed voor historische kledingstukken), en daar zijn niet veel patronen voor. Voor zoveel mensen in de historische naaigemeenschap geldt dat je een shift maakt en dat het dan klaar is, en dat ben ik niet. Jane geeft je opties voor een patroon dat vrij losjes zit, maar je wilt misschien meer of minder gemak, andere mouwen, enz.
 
 ### Ben je een naaister? Een codeur? Beide? Geen van beide?
-I’m definitely both! I’ve sewn for much longer, and FreeSewing is how I started to learn Javascript and Markdown. I’d wanted to learn, but I had done absolutely no coding before, and something about FreeSewing really appealed. I think because I thought, “If I learn this, I can make a pattern.” It’s a really cool way to learn about web design and how to build websites, and I love joining the Contributor Calls. (Note from the interviewer: you too can join the Contributor Calls, every other Saturday! Schedules and agendas are posted in the [Discussions](https://github.com/freesewing/freesewing/discussions) section of the FreeSewing monorepo on Github. The next one is [January 7th!](https://github.com/freesewing/freesewing/discussions/3201))
+Ik ben zeker allebei! Ik naai al veel langer en door FreeSewing ben ik Javascript en Markdown gaan leren. Ik wilde het graag leren, maar ik had nog nooit gecodeerd en FreeSewing sprak me erg aan. Ik denk omdat ik dacht: "Als ik dit leer, kan ik een patroon maken." Het is echt een leuke manier om meer te leren over webdesign en het bouwen van websites, en ik doe graag mee aan de contributiegesprekken. (Opmerking van de interviewer: ook jij kunt meedoen aan de Contributor Calls, om de zaterdag! Schema's en agenda's worden geplaatst in de sectie [Discussions](https://github.com/freesewing/freesewing/discussions) van de FreeSewing monorepo op Github. De volgende is [7 januari!](https://github.com/freesewing/freesewing/discussions/3201))
 
 ### Wanneer en waarom ben je begonnen met naaien?
-I first started sewing around when I was ten years old, so sixteen years ago, and I’ve been making my own clothes for most of that time. At some point, I got into historical sewing, and it definitely influences my modern clothing. I like to make historical things that also work for me in my daily life. For example, I wear a lot of walking skirts.
+Ik begon voor het eerst met naaien toen ik tien jaar oud was, dus zestien jaar geleden, en het grootste deel van die tijd heb ik mijn eigen kleding gemaakt. Op een gegeven moment ben ik me gaan verdiepen in historisch naaiwerk en dat heeft zeker invloed op mijn moderne kleding. Ik maak graag historische dingen die ook in mijn dagelijks leven werken. Ik draag bijvoorbeeld veel looprokjes.
 
-My dream project is a Victorian bustle gown, but it’s a lot of work. I do have a lobster bustle and corset, so maybe I will do a corset cover next…
+Mijn droomproject is een Victoriaanse busteljurk, maar dat is veel werk. Ik heb een kreeft bustel en korset, dus misschien doe ik de volgende keer wel een korsetovertrek…
 
 ### Waar werk je op dit moment aan?
-Right now, I’m working on a quilt in shades of blue that is all hand sewn.
+Op dit moment ben ik bezig met een quilt in blauwtinten die helemaal met de hand is genaaid.
 
-I like to have multiple types of projects going at once, though, so I am also working on a warm winter skirt made from IKEA flannel bedsheets in a beautiful gray and white plaid. Currently, I’m debating how to create the flannel waistband while keeping it from getting too bulky. I’ve also got some 1780s stays that are hand sewn except for the boning channels, with synthetic whalebone boning, and I need to make a bunch of new shifts, as some of my current ones are getting worn out.
+Ik vind het wel leuk om meerdere soorten projecten tegelijk te hebben, dus ik ben ook bezig met een warme winterrok van IKEA flanellen lakens in een mooie grijs-witte ruit. Op dit moment ben ik aan het nadenken over hoe ik de flanellen tailleband kan maken zonder dat hij te volumineus wordt. Ik heb ook een aantal 1780s stays die handgenaaid zijn, behalve de baleinen, met synthetische baleinen van balein, en ik moet een stel nieuwe shifts maken, omdat sommige van mijn huidige versleten raken.
 
 ### Welk project heb je net afgerond?
-The skirt I’m wearing! It’s a wool skirt for going to Tromsø, Norway in the Arctic Circle and I needed very warm stuff for that. While I was there, I also made so many napkins for the people whose house I was staying in. Sometimes I’ll use handcrafts as a fidget.
+De rok die ik draag! Het is een wollen rok voor naar Tromsø, Noorwegen in de poolcirkel en daar had ik hele warme spullen voor nodig. Toen ik daar was, heb ik ook heel veel servetten gemaakt voor de mensen in wiens huis ik logeerde. Soms gebruik ik handwerk als friemeltje.
 
 ### Op welk naai-/codeerproject ben je het meest trots?
-I think I’m most proud of Jane, a shift designed on FreeSewing that’s slated for release in 2023. That was my first coding project, and it’s done now, and functional! [Lucy](https://freesewing.org/designs/lucy/) I slapped together in a weekend, while Jane I’ve been working on for a year.
+Ik denk dat ik het meest trots ben op Jane, een shift ontworpen op FreeSewing die in 2023 wordt uitgebracht. Dat was mijn eerste coderingsproject, en het is nu klaar en functioneel! [Lucy](https://freesewing.org/designs/lucy/) heb ik in een weekend in elkaar geflanst en Jane heb ik een jaar aan gewerkt.
 
 ### Waar ben je het meest trots op in je leven?
-My family isn’t super crafty, but both my grandmothers were sewists, and my Dutch grandmother was a weaver, and I’m definitely proud that I’m continuing that, even though they never got a chance to teach me. I have my grandmother’s old looms, and my great grandmother's sewing machine. Looms are too big for a studio, but the sewing machine is one of those ancient black cast iron Singers that you crank by hand, and it still works! I can’t date it specifically, because it is from before they had serial numbers (which means it’s pre-1860s).
+Mijn familie is niet superhandig, maar mijn beide oma's waren naaisters en mijn Nederlandse oma was weefster, en ik ben er zeker trots op dat ik dat voortzet, ook al hebben ze nooit de kans gekregen om het me te leren. Ik heb de oude weefgetouwen van mijn oma en de naaimachine van mijn overgrootmoeder. Weefgetouwen zijn te groot voor een atelier, maar de naaimachine is zo'n oude zwarte gietijzeren Singers die je met de hand aanzwengelt, en hij werkt nog steeds! Ik kan het niet specifiek dateren, want het is van voordat ze serienummers hadden (wat betekent dat het van voor 1860 is).
 
 ### Wat vind je het leukste aan naaien?
-I love the meditative aspect of sewing. I can’t do meditation, and I’m not a mindfulness person, but when I sit down with a project and hand stitch, it’s very calming. I will machine stitch some things, too, but I find myself thinking: “This is so fast, I don’t enjoy this.”
+Ik hou van het meditatieve aspect van naaien. Ik kan niet mediteren en ik ben geen mindfulness persoon, maar als ik met een project ga zitten en met de hand naai, is dat heel rustgevend. Ik naai ook sommige dingen met de machine, maar ik betrap mezelf erop dat ik denk: "Dit gaat zo snel, hier geniet ik niet van."
 
 ### Wat is voor jou het moeilijkste aan naaien?
-The historical sewing community can be pretty inaccessible – if you don’t have a lot of money or time, then getting into this hobby can be really hard, and I wish that wasn’t the case. It’s part of what makes FreeSewing so cool – everyone’s donating their time and skills, so you’re not paying $30 for a pattern that doesn’t even properly fit you.
+De historische naaigemeenschap kan behoorlijk ontoegankelijk zijn - als je niet veel geld of tijd hebt, kan het heel moeilijk zijn om aan deze hobby te beginnen en ik zou willen dat dat niet zo was. Dat maakt FreeSewing zo cool - iedereen doneert zijn tijd en vaardigheden, dus je betaalt geen $30 voor een patroon dat je niet eens goed past.
 
-For me personally, I think the hardest part is pacing, and making sure I don’t overdo it and hurt my hands. I do my best to have projects in different buckets: complicated, easy, practical… And I switch between them to not completely burn myself out. I need to recognize when I need to not sew for a few days, and then usually I end up switching to FreeSewing things!
+Voor mij persoonlijk denk ik dat het moeilijkste deel het tempo is en ervoor zorgen dat ik niet overdrijf en mijn handen bezeer. Ik doe mijn best om projecten in verschillende emmers te hebben: ingewikkeld, gemakkelijk, praktisch… En ik wissel af om mezelf niet helemaal op te branden. Ik moet herkennen wanneer ik een paar dagen niet moet naaien, en dan ga ik meestal over op FreeSewing-dingen!
 
 ### Wat zou jouw advies zijn voor beginnende naaisters?
-Do something you enjoy. Even if it’s a big project and it’s overwhelming, it’s more fun to do that than to do something easy. And don’t forget your thimble. Historical costuming folks so often don’t have a thimble, or don’t stitch ergonomically, and it can really hurt your hands. I did not start out as a hand sewist – I took a class with Sarah at Williamsburg.  I basically spent an hour sewing, and my hands hurt, and it didn’t work, and she saw and taught me her method. I’ve been handsewing ever since. (You can find Sarah on Instagram at [@sewnstories](https://www.instagram.com/sewnstories/).)
+Doe iets wat je leuk vindt. Zelfs als het een groot project is en het overweldigend is, is het leuker om dat te doen dan om iets makkelijks te doen. En vergeet je vingerhoed niet. Historisch gekostumeerde mensen hebben vaak geen vingerhoed of naaien niet ergonomisch, en dat kan echt pijn doen aan je handen. Ik ben niet begonnen als handnaaister - ik volgde een cursus bij Sarah in Williamsburg.  Ik ben eigenlijk een uur bezig geweest met naaien, en mijn handen deden pijn, en het werkte niet, en zij zag het en leerde me haar methode. Sindsdien naai ik met de hand. (Je kunt Sarah op Instagram vinden op [@sewnstories](https://www.instagram.com/sewnstories/).)
 
 ### Naai je vooral voor jezelf of voor anderen, zoals vrienden en familie?
-I sew mostly for myself. I have made things for other people occasionally, but not a lot. Sometimes I have a time where I don’t have enough spoons and I really want to make things, but I already have enough towels, aprons, etc. So then I’ll make things for other people. And I am theoretically available for commissions (but it’s slow).
+Ik naai vooral voor mezelf. Ik heb af en toe dingen voor andere mensen gemaakt, maar niet veel. Soms heb ik een moment waarop ik niet genoeg lepels heb en ik echt dingen wil maken, maar ik heb al genoeg handdoeken, schorten, enz. Dus dan maak ik dingen voor andere mensen. En ik ben theoretisch beschikbaar voor opdrachten (maar het gaat langzaam).
 
 ### Wat doe je als je geen kleding maakt of patronen ontwerpt?
-Reading books – I don’t have any favorite genres, but my favorite author is Terry Pratchett. I’m excited that we’re finally getting a Discworld movie version that looks good! Besides reading, I spend some of my time playing video games (I’m currently playing Destiny 2) and resting.
+Boeken lezen - Ik heb geen favoriete genres, maar mijn favoriete schrijver is Terry Pratchett. Ik ben blij dat we eindelijk een Discworld-verfilming krijgen die er goed uitziet! Naast lezen besteed ik een deel van mijn tijd aan het spelen van videogames (ik speel momenteel Destiny 2) en uitrusten.
 
 ### Wil je manieren delen om je te volgen op sociale media?
-I’m bad about posting, but my Instagram is [@zwaluwz](https://www.instagram.com/zwaluwz/). It also includes pictures of my cat, who was leash-trained!
+Ik ben slecht in posten, maar mijn Instagram is [@zwaluwz](https://www.instagram.com/zwaluwz/). Er staan ook foto's in van mijn kat, die aangelijnd was!
 
 ### Heb je huisdieren? Familie?
-I had a cat named Q, but he passed away last April. I’m hoping to move, so that I can have a cat again, because my landlord won’t let me get a new cat.
+Ik had een kat die Q heette, maar hij is afgelopen april overleden. Ik hoop te verhuizen, zodat ik weer een kat kan hebben, want ik mag van mijn huisbaas geen nieuwe kat.
 
 ### Ben je een honden- of kattenpersoon?
-Beide! I do not discriminate in animals. I got to handle a bunch of snakes once, and it was the happiest I’ve ever been. Maybe I should just get a lizard… Or a hognose snake…
+Beide! Ik discrimineer niet bij dieren. Ik heb een keer met een stel slangen mogen omgaan en dat was het gelukkigste dat ik ooit ben geweest. Misschien moet ik maar een hagedis nemen… Of een hognose slang…
 
 ### Als je één ding mee zou kunnen nemen naar een onbewoond eiland, wat zou dat dan zijn? Waarom?
-A sewing project!
+Een naaiproject!
 
 ### Als er één persoon was die je mee mocht nemen naar een onbewoond eiland, wie zou dat dan zijn? Waarom?
-I don’t think I would take people, I’d just have a nice quiet time.
+Ik denk niet dat ik mensen mee zou nemen, maar gewoon lekker rustig.
