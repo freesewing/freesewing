@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1ae81c4f08dd21d7db285
 intro: "Це фантастичне худі Huey зроблене Minty! Мінті поділився, що він зробив це на звичайній машині, а не на серзері."
 title: "Huey від Minty"
 designs:
-  - "huey"
+  - "Х'юї."
 ---
 
 Це фантастичне худі Huey зроблене Minty! Мінті поділився, що він зробив це на звичайній машині, а не на серзері.
