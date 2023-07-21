@@ -1,10 +1,10 @@
 ---
-title: "Brian body block: Fabric Options"
+title: "Brian Body Block: Stoffoptionen"
 ---
 
-If you are making a default Brian to see how it fits we recommend a fabric such as **Calico (Muslin)** or a cheaper fabric that matches the drape and stretch of the fabric you intend to make a finalised version of Brian with.
+Wenn du eine Probeversion von Brian anfertigst, um zu sehen, wie sie passt, empfehlen wir einen Stoff wie **Calico (Muslin)** oder einen billigeren Stoff, der dem Stoff entspricht, aus dem du die endgültige Version von Brian anfertigen willst.
 
-You can use scraps of fabrics from your stash so don't worry about buying fabric specifically for Brian.
+Du kannst Stoffreste aus deinem Vorrat verwenden, du musst also nicht extra für Brian Stoff kaufen.
 
 <Note>
 
