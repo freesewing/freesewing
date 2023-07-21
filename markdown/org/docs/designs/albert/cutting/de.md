@@ -1,5 +1,5 @@
 ---
-title: "Albert apron: Cutting Instructions"
+title: "Albert Schürze: Schnittanleitung"
 ---
 
 - Schneide **1 Vorderteil** im Stoffbruch
