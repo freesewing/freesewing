@@ -1,60 +1,60 @@
 ---
 author: "joostdecock"
-caption: "You too can wear this coat. Although you're on your own for the hat. At least for now."
+caption: "Tú también puedes llevar este abrigo. Aunque lo del sombrero es cosa tuya. Al menos por ahora."
 date: "2017-12-20"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/01c201b14f04bedbe2630bb3bd40d925fd6c1ce4-3500x2333.jpg"
-intro: "Announcing Carlton, aka the Sherlock Holmes coat, and the Bent Body Block"
-title: "Announcing Carlton, aka the Sherlock Holmes coat, and the Bent Body Block"
+intro: "Anunciamos Carlton, alias el abrigo de Sherlock Holmes, y el Bent Body Block"
+title: "Anunciamos Carlton, alias el abrigo de Sherlock Holmes, y el Bent Body Block"
 ---
 
-Good news everybody, we've got your cosplaying needs covered. That is, if you are cosplaying as Sherlock Holmes. Our newest pattern release, [the Carlton Coat](/patterns/carlton) is exactly what the doctor prescribed if for some weird reason your doctor wants you to look like everyone's favorite detective.
+Buenas noticias a todos, tenemos cubiertas vuestras necesidades de cosplaying. Eso, si te disfrazas de Sherlock Holmes. Nuestro patrón más reciente, [el abrigo Carlton](/patterns/carlton) es exactamente lo que te ha recetado el médico si por alguna extraña razón tu médico quiere que te parezcas al detective favorito de todos.
 
-My memory is foggy on the exact origin of this endeavor. It probably involved me complaining about the cold and my lack of a warm winter coat, but apart from that, I'm not too sure.
+No recuerdo bien el origen exacto de esta empresa. Probablemente se trataba de quejándome del frío y de mi falta de abrigo de invierno, pero aparte de eso, no estoy demasiado segura.
 
-What I do remember is that at one point, [Anneke](http://www.annekecaramin.com/) and myself decided that we would reverse-engineer the Sherlock Holmes coat. More specifically, the coat worn by Benedict Cumberbatch in the BBC series Sherlock Holmes.
+Lo que sí recuerdo es que, en un momento dado, [Anneke](http://www.annekecaramin.com/) y yo decidimos que haríamos ingeniería inversa con el abrigo de Sherlock Holmes. Más concretamente, el abrigo que lleva Benedict Cumberbatch en la serie de la BBC Sherlock Holmes.
 
-![That coat though](https://posts.freesewing.org/uploads/bc_f20e01a16d.jpg)
+![Aunque ese abrigo](https://posts.freesewing.org/uploads/bc_f20e01a16d.jpg)
 
-The coat is popular with cosplayers for obvious reasons, but it's also just a really nice coat, and other brave souls [such as Melissa](http://blog.fehrtrade.com/gallery/868/the-sherlock-coat/) have tried their hand at it.
+El abrigo es popular entre los cosplayers por razones obvias, pero también es simplemente un abrigo muy bonito, y otras almas valientes [como Melissa](http://blog.fehrtrade.com/gallery/868/the-sherlock-coat/) han probado suerte con él.
 
-I must admit that I didn't know Melissa made a similar coat until mine was finished. Furthermore, her blog post mentions that she used the instructions in a livejournal post that is no longer available.
+Debo admitir que no sabía que Melissa hacía un abrigo similar hasta que el mío estuvo terminado. Además, la entrada de su blog menciona que utilizó las instrucciones de una entrada de livejournal que ya no está disponible.
 
-Anneke and myself did no such thing and just put the pattern together based on screengrabs from the TV show. We're hardcore like that.
+Anneke y yo no hicimos tal cosa y nos limitamos a montar el patrón basándonos en capturas de pantalla del programa de TV. Somos así de duros.
 
-### About the coat
+### Sobre el abrigo
 
-Carlton is a double-breasted long overcoat in the tradition of horseback uniform coats where the back of the coat isn't split, but rather has wide pleats that can drape over the back of the horse. Or, more realistically, fan open behind you as you walk about.
+Carlton es un abrigo largo de doble botonadura que sigue la tradición de los abrigos de uniforme de montar a caballo , en los que la parte trasera del abrigo no está dividida, sino que tiene amplios pliegues que pueden cubrir el lomo del caballo. O, siendo más realistas, se abren en abanico detrás de ti mientras caminas.
 
-![Front view of Carlton on yours truly](https://posts.freesewing.org/uploads/front_e1d64f3ceb.jpg) ![Back view of Carlton on yours truly](https://posts.freesewing.org/uploads/back_05c04878c5.jpg)
+![Vista frontal del Carlton de tu servidor](https://posts.freesewing.org/uploads/front_e1d64f3ceb.jpg) ![Vista posterior de Carlton sobre tu servidor](https://posts.freesewing.org/uploads/back_05c04878c5.jpg)
 
-It comes with two patch pockets on the front, two map pockets at the chest, and two inner pockets. Six pockets in total, so you'll have plenty of room for all your belongings.
+Tiene dos bolsillos de parche en la parte delantera, dos bolsillos para mapas en el pecho y dos bolsillos interiores. Seis bolsillos en total, para que tengas espacio de sobra para todas tus pertenencias.
 
-![Map and patch pockets on the outside](https://posts.freesewing.org/uploads/pockets_28099d1afe.jpg) ![Inner pockets on the inside](https://posts.freesewing.org/uploads/innerpocket_4e4e3f5119.jpg)
+![Mapa y bolsillos de parche en el exterior](https://posts.freesewing.org/uploads/pockets_28099d1afe.jpg) ![Bolsillos interiores](https://posts.freesewing.org/uploads/innerpocket_4e4e3f5119.jpg)
 
-I finished mine just in time for a trip to K&ouml;ln to visit my beloved friend and tailor [Sebastian Hoofs](http://sebastian-hoofs.de/massschneider/). It was cold as eff over there, but the coat kept me nice and warm. Not surprising since it's made in a hefty wool I picked up in [Bacci in Florence](http://www.baccitessuti.it/en/index.html) over the summer, and I took the extra step of interlining it with French terry (I really don't like to be cold).
+Terminé el mío justo a tiempo para un viaje a K&ouml;ln para visitar a mi querido amigo y sastre [Sebastian Hoofs](http://sebastian-hoofs.de/massschneider/). Hacía un frío del carajo, pero el abrigo me mantenía caliente. No es de extrañar, ya que está confeccionado con una lana gruesa de que compré en [Bacci en Florencia](http://www.baccitessuti.it/en/index.html) durante el verano, y di a el paso extra de entretela con rizo francés (no me gusta nada pasar frío).
 
-![I have no affiliation with Bacci, I'm just a sucker for great fabric stores](https://posts.freesewing.org/uploads/bacci_043f91c96c.jpg) ![You can see the terry interlining where I peeled back the sleeve lining](https://posts.freesewing.org/uploads/interlining_220e0eab71.jpg)
+![No tengo ninguna afiliación con Bacci, simplemente me encantan las tiendas de telas estupendas](https://posts.freesewing.org/uploads/bacci_043f91c96c.jpg) ![Puedes ver la entretela de rizo donde he despegado el forro de las mangas](https://posts.freesewing.org/uploads/interlining_220e0eab71.jpg)
 
-### Burn the patriarchy to the ground through the power of pockets
+### Quemar el patriarcado hasta los cimientos mediante el poder de los bolsillos
 
-Ladies take note: Carlita --- a female version of Carlton --- is currently on the drawing board.
+Señoras, tomen nota: Carlita, una versión femenina de Carlton, está actualmente en la mesa de dibujo.
 
-Initially, the plan was to release male and female versions side by side, but adapting the coat has proven to be more involved than anticipated because, well, because boobs.
+Inicialmente, el plan era lanzar versiones masculina y femenina una al lado de la otra, pero adaptar el abrigo ha resultado ser más complicado de lo previsto porque, bueno, porque las tetas.
 
-I also feel like I have to keep too many plates spinning right now, so I'm hopeful that getting Carlton out the door will create some time/space to make Carlita follow soon(ish). Either way, I've promised Anneke that we'd do a female version, and [she's a freesewing Captain now](/patrons), so I intend to keep that promise.
+También siento que tengo que mantener demasiados platos girando ahora mismo, así que tengo la esperanza de que sacar a Carlton por la puerta creará algo de tiempo/espacio para hacer que Carlita siga pronto(ish). En cualquier caso, le he prometido a Anneke que haríamos una versión femenina, y [ahora es una Capitana libre](/patrons), así que tengo la intención de cumplir esa promesa.
 
-Oh, and about that title: When Carlita's ready, she will have just as many pockets as Carlton.
+Ah, y sobre ese título: Cuando Carlita esté lista, tendrá tantos bolsillos como Carlton.
 
-## Also, this: Introducing the Bent Body Block
-We're actually releasing two patterns today. Apart from the Carlton Coat, there's also the [Bent Body Block](/patterns/bent).
+## También esto Presentamos el Bloque de Cuerpo Doblado
+De hecho, hoy publicamos dos modelos. Aparte del Abrigo Carlton, también está el [Bent Body Block](/patterns/bent).
 
-Bent is a two-part sleeve variation of our [Brian Body Block](/patterns/bent). It's essentially a base for coat and jacket patterns for menswear.
+Bent es una variante con mangas de dos partes de nuestro [Brian Body Block](/patterns/bent). Es esencialmente una base para patrones de abrigos y chaquetas de hombre.
 
-I originally designed Bent as a base for my [refashioners 2017 zebra jacket](/blog/the-refashioners-2017/), so you can expect that jacket pattern to also hit the site in the coming months.
+Originalmente diseñé Bent como base para mi [refashioners 2017 zebra jacket](/blog/the-refashioners-2017/), así que puedes esperar que ese patrón de chaqueta también llegue al sitio en los próximos meses.
 
-Carlton is also based on Bent, so we're giving you both today.
+Carlton también se basa en Bent, así que hoy te damos los dos.
 
-Have wonderful and happy holidays if you're into that kind of thing. And happy making!
+Que pases unas maravillosas y felices fiestas si te van esas cosas. Y ¡feliz fabricación!
 
 
 
