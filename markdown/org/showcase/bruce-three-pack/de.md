@@ -1,20 +1,20 @@
 ---
-maker: "unknown"
-caption: "Theo made three of these from leftover jersey."
+maker: "unbekannt"
+caption: "Theo hat drei davon aus übrig gebliebenen Trikots gemacht."
 date: "2018-10-18"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/305d6d6adbdad633bc2cd33b0de6f7a199a38c28-3043x2282.jpg"
-intro: "Felix made three of these, and he writes:"
-title: "A Bruce three-pack"
+intro: "Felix hat drei davon gemacht, und er schreibt:"
+title: "Ein Bruce-Dreierpack"
 designs:
   - "bruce"
 ---
 
-Felix made three of these, and he writes:
+Felix hat drei davon gemacht, und er schreibt:
 
-> I just finished a three-pack* of Bruce underpants. I used some jersey leftovers and tried some elastic stitches on my sewing machine, not all seams were perfect - but now I know which settings are the best. 
+> Ich habe gerade einen Dreierpack* Unterhosen von Bruce fertiggestellt. Ich habe einige Jersey-Reste verwendet und einige elastische Stiche auf meiner Nähmaschine ausprobiert. Nicht alle Nähte waren perfekt - aber jetzt weiß ich welche Einstellungen am besten sind. 
 > 
-> They fit excellent!
+> Sie passen hervorragend!
 
-Here's a picture of the back:
+Hier ist ein Bild von der Rückseite:
 
-![Back image](https://posts.freesewing.org/uploads/bruce_three_pack_back_6ed8c9ae38.jpg "Back image")
+![Bild zurück](https://posts.freesewing.org/uploads/bruce_three_pack_back_6ed8c9ae38.jpg "Bild zurück")
