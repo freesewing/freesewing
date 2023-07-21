@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/be12610ca753f520a5dde
 intro: "Після свого першого приголомшливого виступу Вахід Адам повертається з черговою красунею."
 title: "Ще одна вахідська жилетка від Адама"
 designs:
-  - "wahid"
+  - "вахід"
 ---
 
 
