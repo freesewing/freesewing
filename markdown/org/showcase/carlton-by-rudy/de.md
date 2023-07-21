@@ -1,26 +1,26 @@
 ---
-maker: "unknown"
-caption: "The Carlton coat by Rudy"
+maker: "unbekannt"
+caption: "Der Carlton-Mantel von Rudy"
 date: "2021-02-26"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4aef096adffa48aa1d8b1cb45fb2d417993eb707-613x613.jpg"
-intro: "This stylish Carlton coat was made by Rudy, who shared:"
-title: "Carlton coat by Rudy"
+intro: "Dieser stilvolle Carlton-Mantel wurde von Rudy gemacht, der ihn mit uns geteilt hat:"
+title: "Carlton Mantel von Rudy"
 designs:
   - "carlton"
 ---
 
-This stylish Carlton coat was made by Rudy, who shared:
+Dieser stilvolle Carlton-Mantel wurde von Rudy gemacht, der ihn mit uns geteilt hat:
 
-> My take on the Carlton coat. My first big sewing project and first time using a freesewing pattern. I even made my own buttons :)
+> Meine Meinung zum Carlton-Mantel. Mein erstes großes Nähprojekt und das erste Mal mit einem Freesewing-Muster. Ich habe sogar meine eigenen Knöpfe gemacht :)
 
-![View of the front](https://posts.freesewing.org/uploads/carlton_by_rudy_carltonrudy2_ff73f3dc38.jpg "View of the front")
+![Blick auf die Vorderseite](https://posts.freesewing.org/uploads/carlton_by_rudy_carltonrudy2_ff73f3dc38.jpg "Blick auf die Vorderseite")
 
-![Buttoned view](https://posts.freesewing.org/uploads/carlton_by_rudy_carltonrudy3_dfe71f082f.jpg "Buttoned view")
+![Geknöpfte Ansicht](https://posts.freesewing.org/uploads/carlton_by_rudy_carltonrudy3_dfe71f082f.jpg "Geknöpfte Ansicht")
 
-![View of the back](https://posts.freesewing.org/uploads/carlton_by_rudy_carltonrudy4_09a14b90d7.jpg)
+![Blick auf die Rückseite](https://posts.freesewing.org/uploads/carlton_by_rudy_carltonrudy4_09a14b90d7.jpg)
 
 <Note>
 
-This picture is from Rudy, [@rudy_lee21 on Instagram](https://www.instagram.com/rudy_lee21/). It is reposted here with permission.
+Dieses Bild ist von Rudy, [@rudy_lee21 auf Instagram] (https://www.instagram.com/rudy_lee21/). Er wird hier mit Erlaubnis wieder veröffentlicht.
 
 </Note>
