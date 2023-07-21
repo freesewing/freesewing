@@ -1,44 +1,44 @@
 ---
 author: "joostdecock"
-caption: "This purple Huey hoodie is the first of its kind. Now it's your turn"
+caption: "Esta sudadera con capucha Huey morada es la primera de su clase. Ahora te toca a ti"
 date: "2017-10-21"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3be185a211486823b678af97710274804fe86dcf-2048x2048.jpg"
-intro: "The Huey Hoodie is now available in beta. Which begs the question, what does it mean for a pattern to be in Beta?"
-title: "The Huey Hoodie is now available in beta. Which begs the question, what does it mean for a pattern to be in Beta?"
+intro: "La sudadera con capucha Huey ya está disponible en versión beta. Lo que nos lleva a preguntarnos: ¿qué significa que un patrón esté en Beta?"
+title: "La sudadera con capucha Huey ya está disponible en versión beta. Lo que nos lleva a preguntarnos: ¿qué significa que un patrón esté en Beta?"
 ---
 
-Welcome to [Huey](/patterns/huey), the youngest member in our pattern family. Huey is a zip-up hoodie with an (optional) front pouch. I've made one for myself -- the one in the picture above -- and I have yet to take it off since.
+Bienvenido a [Huey](/patterns/huey), el miembro más joven de nuestra familia de patrones. Huey es una sudadera con capucha y cremallera con una bolsa frontal (opcional). Me he hecho uno para mí -- el de la foto de arriba -- y todavía no me lo he quitado desde entonces.
 
-Meanwhile, I've been wondering why the hell I didn't design this pattern sooner. It's just that nice to wear.
+Mientras tanto, me he estado preguntando por qué demonios no diseñé este patrón antes. Es así de agradable de llevar.
 
-## Available as of now, in beta
+## Disponible a partir de ahora, en beta
 
-The pattern is available [right here](/patterns/huey), right now, but it's in beta.
+El patrón está disponible [aquí mismo](/patterns/huey), ahora mismo, pero está en fase beta.
 
-To find out what that means -- and why I'm doing this -- just continue reading. But if you're itching to make this, here's is what you need to know about beta status:
+Para saber qué significa esto -y por qué lo hago- sigue leyendo. Pero si tienes ganas de hacerlo, esto es lo que necesitas saber sobre el estado beta:
 
- - Beta patterns lack documentation
- - Beta patterns are made by few people (so far)
+ - Los patrones beta carecen de documentación
+ - Los patrones beta los hacen pocas personas (hasta ahora)
 
-As time goes by and these issues are resolved, Huey will move from beta to core.
+A medida que pase el tiempo y se resuelvan estos problemas, Huey pasará de beta a núcleo.
 
-## So why this beta business
+## Entonces, ¿por qué este asunto de la beta?
 
-As I explained in [my round-up post of last month](/blog/roundup-2017-09/), pattern testing is a real bottleneck for me.
+Como expliqué en [mi post de resumen del mes pasado](/blog/roundup-2017-09/), la prueba de patrones es un verdadero cuello de botella para mí.
 
-A number of people came forward, offering to help out with testing (thank you very much for that) which lead me to consider how this would work in practice.
+Varias personas se ofrecieron a colaborar en las pruebas (muchas gracias por ello) , lo que me llevó a plantearme cómo funcionaría en la práctica.
 
-Like, I've got Huey to point of *it works for me* and I am somewhat confident that it will work for others too. Stil, nothing replaces a real-world test so it would be nice if a couple of people could make it.
+Como, tengo Huey a punto de *a mí me funciona* y tengo cierta confianza en que a otros también les funcionará. Aun así, nada sustituye a una prueba en el mundo real, así que estaría bien que un par de personas pudieran hacerlo.
 
-Rather than given the opportunity to test Huey to a handful of people who came forward, I figured I might as well open it up to everyone who feels so inclined.
+En lugar de dar la oportunidad de probar Huey a un puñado de personas que se presentaron, pensé que podría abrirlo a todos los que se sintieran inclinados a hacerlo.
 
-And to indicate that this pattern isn't as road-tested as the others, I'm keeping it in the beta namespace, where it actually is developed and this will also show up on the pattern page. No changes required.
+Y para indicar que este patrón no está tan probado como los demás, lo mantengo en el espacio de nombres beta, donde realmente se desarrolla y esto también aparecerá en la página del patrón. No se requieren cambios.
 
-## Release early, release often
+## Libera pronto, libera a menudo
 
-Going forward, I will release patterns as soon as I can, and work on completing the documentation while they remain in beta.
+En el futuro, publicaré patrones tan pronto como pueda, y trabajaré para completar la documentación mientras permanezcan en fase beta.
 
-I think it's a good way to go, and adheres to the *release early, release often* mantra of open source software.
+Creo que es una buena forma de proceder, y se adhiere al mantra *release early, release often* del software de código abierto.
 
-If you think that's a bad idea (or a very good idea), make sure to tell me about it in the comments below.
+Si crees que es una mala idea (o una muy buena idea), asegúrate de decírmelo en los comentarios de abajo.
 
