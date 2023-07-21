@@ -1,5 +1,5 @@
 ---
-title: "Hugo hoodie: Sewing Instructions"
+title: "Hugo hoodie : Instructions de couture"
 ---
 
 <Note>
@@ -29,8 +29,8 @@ Cette série de 6 épisodes vous montre comment réaliser votre sweat à capuche
 - Cousez les parmentures à la poche avec une marge de 1 cm.  Cousez à la fois le bord long et le bord court sur le bas de la poche.
 - Dégarnissez soigneusement la marge de couture sur les pièces de parmenture.
 - Retournez les pièces de parmenture sur l'endroit.  Aplatissez bien la couture en faisant rouler pour bien mettre en place la couture, puis pressez au fer.
-- Topstitch or edge-stitch 0.5 cm along both upper and lower edges on each side of the pocket, to anchor the facing and the seam allowance.
-- Topstitch another line 0.5 cm from the inside upper edge of the facing on each side of the pocket.  Cette surpiqûre s'arrête sur la première ligne de surpiqûre du côté bas (voir vidéo 2 à 1'50)
+- Surpique ou fais une piqûre de bordure sur 0,5 cm le long des bords supérieur et inférieur de chaque côté de la poche, pour ancrer le parement et le surplus de couture.
+- Surpique une autre ligne à 0,5 cm du bord supérieur intérieur de la parementure de chaque côté de la poche.  Cette surpiqûre s'arrête sur la première ligne de surpiqûre du côté bas (voir vidéo 2 à 1'50)
 - Dégarnissez l'excès de matière de la parmenture à l'intérieur de la poche.
 - Pressez sur les bords.
 
@@ -90,7 +90,7 @@ Cette série de 6 épisodes vous montre comment réaliser votre sweat à capuche
 - Pour fermer la capuche, surjetez ensemble les couches en bas, le long du cou.  Si vous n'avez pas de surjeteuse, utilisez un point zig-zag.
 - (Facultatif) Si vous avez ajouté des trous pour un cordon, vous pouvez le passer maintenant.
 
-### Step 8: Preparing a Neckband and Attaching the Hood
+### Étape 8 : Préparer un tour de cou et fixer la capuche
 
 - Coupez une bande de tissu dans votre tissu principal, de la longueur de votre encolure + 2 cm (3/4 po) et de la largeur égale au triple de votre marge de couture au cou.
 - Pliez endroit contre endroit la pièce d'encolure et la coudre à 1 cm sur le côté court afin de créer une bande circulaire.
