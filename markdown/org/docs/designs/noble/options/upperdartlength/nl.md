@@ -1,10 +1,10 @@
 ---
-title: "Upper Dart Length"
+title: "Lengte bovenste pijl"
 ---
 
 ***
 
-The **Upper Dart Length** controls the length of the upper dart, 100% is all teh way to the bust point.
+De **Bovenpijllengte** regelt de lengte van de bovenpijl, 100% is helemaal tot aan de buste.
 
 ## Effect van deze optie op het patroon
 
