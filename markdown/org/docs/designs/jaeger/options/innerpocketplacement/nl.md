@@ -4,8 +4,8 @@ title: "Plaatsing binnenzak"
 
 De locatie van de binnenzakken.
 
-- Increase this option to shift the inner pocket towards the side seam
-- Decrease this option to shift the inner pocket towards the centre front
+- Verhoog deze optie om de binnenzak naar de zijnaad te verschuiven
+- Verlaag deze optie om de binnenzak naar de middenvoor te verschuiven
 
 ## Effect van deze optie op het patroon
 
