@@ -6,7 +6,7 @@ Controla el ancho del asa.
 
 <Tip>
 
-Turn on paperless to see the width of the handle.
+Enciende el sin papel para ver la anchura del mango.
 
 </Tip>
 
