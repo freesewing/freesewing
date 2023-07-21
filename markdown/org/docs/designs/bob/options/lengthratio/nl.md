@@ -4,8 +4,8 @@ title: Lengteratio
 
 Bepaalt de lengte van het slabbetje.
 
-- Increase the percentage to lengthen the bib.
-- Decrease the percentage to shorten the bib.
+- Verhoog het percentage om de slab te verlengen.
+- Verlaag het percentage om de slab in te korten.
 
 ## Effect van deze optie op het patroon
 
