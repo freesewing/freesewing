@@ -1,5 +1,5 @@
 ---
-title: "Charlie chinos: Sewing Instructions"
+title: "Чарлі-чинос: Інструкція з пошиття"
 ---
 
 ## Крок 1: Закрийте задню виточку
