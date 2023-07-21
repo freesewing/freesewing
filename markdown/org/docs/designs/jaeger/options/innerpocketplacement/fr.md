@@ -4,8 +4,8 @@ title: "Placement de la poche intérieure"
 
 L'emplacement de la poche intérieure.
 
-- Increase this option to shift the inner pocket towards the side seam
-- Decrease this option to shift the inner pocket towards the centre front
+- Augmente cette option pour déplacer la poche intérieure vers la couture latérale.
+- Diminue cette option pour déplacer la poche intérieure vers le centre de l'avant.
 
 ## Effet de cette option sur le motif
 
