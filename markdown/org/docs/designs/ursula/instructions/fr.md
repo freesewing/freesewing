@@ -1,5 +1,5 @@
 ---
-title: "Ursula undies: Sewing Instructions"
+title: "Sous-vêtements Ursula : Instructions de couture"
 ---
 
 ### Étape 1 : Coudre le devant à la première pièce de la rafale
