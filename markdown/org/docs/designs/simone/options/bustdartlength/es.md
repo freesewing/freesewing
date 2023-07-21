@@ -2,10 +2,10 @@
 title: "Longitud del dart del polvo"
 ---
 
-Controls how close the **bust darts** approach the bust points.
+Controla lo cerca que se acercan las pinzas de busto **** a los puntos del busto.
 
-- Increase this option to lengthen the bust darts moving them closer to the bust points
-- Decrease this option to shorten the bust darts moving them further away from the bust points
+- Aumenta esta opción para alargar las pinzas del busto acercándolas a los puntos del busto
+- Disminuye esta opción para acortar las pinzas del busto alejándolas de los puntos del busto
 
 ## Efecto de esta opción en el patrón
 
