@@ -2,7 +2,7 @@
 title: "Taille de la pince de taille"
 ---
 
-The size of the back waist dart
+La taille de la fléchette de la taille arrière
 
 ## Effet de cette option sur le motif
 
