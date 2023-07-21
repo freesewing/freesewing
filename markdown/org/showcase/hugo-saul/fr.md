@@ -1,5 +1,5 @@
 ---
-maker: "unknown"
+maker: "inconnue"
 caption: "Admirez ces bords-côtes !"
 date: "2020-11-27"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c73a63d22b171ce29161c068b9b259ba70e26d4d-1080x1080.jpg"
