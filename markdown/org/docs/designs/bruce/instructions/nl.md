@@ -1,5 +1,5 @@
 ---
-title: "Bruce boxer briefs: Sewing Instructions"
+title: "Bruce boxerslip: Naai-instructies"
 ---
 
 <YouTube id='PL1gv5yv3DoZME1xe5fBEHd0rKPW_xNpF3' playlist />
@@ -11,8 +11,8 @@ title: "Bruce boxer briefs: Sewing Instructions"
 Leg de zijkant (stuk 3) op de rug (stuk 1) aan de zijrand, met de goede kanten op elkaar. Since the side (piece 3) is symmetric, you can't go wrong.
 
 <Tip>
-If you look at the part 3 (the side) with the text so you can read it, then then left side should be attached to the back,
-and the right side attached to the front & inset. The notches will also help you figure it out.
+Als je kijkt naar deel 3 (de zijkant) met de tekst zodat je het kunt lezen, dan moet de linkerkant aan de achterkant worden vastgemaakt,
+en de rechterkant aan de voorkant & inzet. De inkepingen helpen je ook om het uit te zoeken.
 </Tip>
 
 Lock de naad, met een naadwaarde van 1 cm. Mik dus met de buitenste naald van je lockmachine op 1 cm naast de rand van je stof.
@@ -25,7 +25,7 @@ Lock de naad, met een naadwaarde van 1 cm. Mik dus met de buitenste naald van je
 
 ![Bevestig rugpand aan tweede zijkant](step02.png)
 
-Align the other side of the back (piece 1) with the second side (piece 3) making sure to put the good sides together. Again, because the side (piece 3) is not symmetric, be careful to correctly match them.
+Lijn de andere kant van de achterkant (stuk 1) uit met de tweede kant (stuk 3) en zorg ervoor dat je de goede kanten op elkaar legt. Nogmaals, omdat de zijkant (stuk 3) niet symmetrisch is, moet je ze goed op elkaar afstemmen.
 
 Lock de naad samen, zoals je aan de andere kant al deed.
 
@@ -49,7 +49,7 @@ Als je de stof zo manipuleert is het makkelijk om één stuk meer uit te rekken 
 
 Zodra je voorbij dit merkteken bent wordt alles makkelijker. Dit zou ook een goed moment zijn om de resterende lengte van de gebogen naden te vergelijken. Als één stuk een beetje langer is dan het andere, rek het korte stuk dan een beetje tot ze even lang zijn.
 
-Als het verschil te groot is, laat het dan gewoon. It will get cut off when we do the crotchseam.
+Als het verschil te groot is, laat het dan gewoon. Het wordt afgesneden als we de kruisnaad doen.
 
 <Note>
 
