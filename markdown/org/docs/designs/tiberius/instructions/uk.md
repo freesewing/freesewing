@@ -1,5 +1,5 @@
 ---
-title: "Tiberius Tunica: Sewing Instructions"
+title: "Туніка Тіберія: Інструкція з пошиття"
 ---
 
 <Note>
