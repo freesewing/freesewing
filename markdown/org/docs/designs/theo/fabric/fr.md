@@ -1,5 +1,5 @@
 ---
-title: "Theo trousers: Fabric Options"
+title: "Pantalon Theo : Options de tissu"
 ---
 
 Vous avez beaucoup d'options ici, mais gardez à l'esprit que ce sont des pantalons de coupe classiques. En d'autres termes, n'utilisez pas étirement, denim, pleurez de ce genre de choses. Les paris sûrs sont de la laine, du coton ou du lin, éventuellement mélangés avec un peu de synthétique.
