@@ -6,7 +6,7 @@ Bepaalt de breedte van het handvat.
 
 <Tip>
 
-Turn on paperless to see the width of the handle.
+Zet papierloos aan om de breedte van het handvat te zien.
 
 </Tip>
 
