@@ -2,10 +2,10 @@
 title: "Schneckennaht Winkel"
 ---
 
-Controls the angle of the crotch seam curve.
+Steuert den Winkel der Nahtkurve im Schritt.
 
-- 0% makes the crotch seam draft parallel to the hem.
-- Increasing this option will draft the crotch seam at 180 - the angle.
+- 0% sorgt dafür, dass der Entwurf der Schrittnaht parallel zum Saum verläuft.
+- Wenn du diese Option erhöhst, wird die Schrittnaht in einem Winkel von 180° gezogen.
 
 
 ## Effekt dieser Option auf das Schnittmuster
