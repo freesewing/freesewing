@@ -1,8 +1,8 @@
 ---
-title: "Leg Length"
+title: "Beenlengte"
 ---
 
-The length of the legs can be adjusted.
+De lengte van de poten kan worden aangepast.
 
 ## Effect van deze optie op het patroon
 
