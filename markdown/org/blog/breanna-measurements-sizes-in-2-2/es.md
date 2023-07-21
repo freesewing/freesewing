@@ -1,104 +1,104 @@
 ---
 author: "joostdecock"
-caption: "This post describes what's new in version 2.2 of FreeSewing"
+caption: "Este post describe las novedades de la versión 2.2 de FreeSewing"
 date: "2020-02-22"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/356c127b8b37937b9537790d71a949c236027513-1920x1280.jpg"
-intro: "A look at what's new in FreeSewing 2.2, including Breanna, our bodice block for womenswear"
-title: "A look at what's new in FreeSewing 2.2, including Breanna, our bodice block for womenswear"
+intro: "Un vistazo a las novedades de FreeSewing 2.2, incluida Breanna, nuestro bloque de corpiño para ropa de mujer"
+title: "Un vistazo a las novedades de FreeSewing 2.2, incluida Breanna, nuestro bloque de corpiño para ropa de mujer"
 ---
 
-Version 2.2 of FreeSewing is here, and it has a bunch of changes and improvements big and small. The [changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md) lists all the changes, but here's what you need to know:
+La versión 2.2 de FreeSewing ya está aquí, y tiene un montón de cambios y mejoras grandes y pequeñas. El registro de cambios de [](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md) enumera todos los cambios, pero esto es lo que necesitas saber:
 
- - [New pattern: Breanna is a bodice block for womenswear](#new-pattern-breanna-is-a-bodice-block-for-womenswear)
- - [New/Different measurements to better suit womenswear](#newdifferent-measurements-to-better-suit-womenswear)
- - [Generate patterns in *standard* sizes (no account required)](#generate-patterns-in-standard-sizes-no-account-required)
+ - [Nuevo patrón: Breanna es un bloque de corpiño para mujer](#new-pattern-breanna-is-a-bodice-block-for-womenswear)
+ - [Medidas nuevas/diferentes para adaptarse mejor a la ropa de mujer](#newdifferent-measurements-to-better-suit-womenswear)
+ - [Genera patrones en *tamaños estándar* (no se necesita cuenta)](#generate-patterns-in-standard-sizes-no-account-required)
 
-Let's have a look at what it all means:
+Veamos qué significa todo esto:
 
-## New pattern: Breanna is a bodice block for womenswear
+## Nuevo patrón: Breanna es un bloque de corpiño para mujer
 
 <Linedrawing pattern="breanna" />
 
-Meet [Breanna](/designs/breanna/), our bodice block for womenswear.
+Conoce [Breanna](/designs/breanna/), nuestro bloque de corpiños para ropa de mujer.
 
-A block (or sloper) may not the most exciting pattern to look at, but it plays an important role as it is the basic form which other patterns are built on.
+Puede que un bloque (o sloper) no sea el patrón más emocionante a la vista, pero desempeña un importante papel en , ya que es la forma básica sobre la que se construyen otros patrones.
 
-For example, we have a similar block for menswear called [Brian](/designs/brian/) and our [Aaron](/designs/aaron/), [Bent](/designs/bent/), [Carlita](/designs/carlita/), [Carlton](/designs/carlton/), [Huey](/designs/huey/), [Hugo](/designs/hugo/), [Jaeger](/designs/jaeger/), [Simon](/designs/simon/), [Simone](/designs/simone/), [Sven](/designs/sven/), and [Wahid](/designs/wahid/) patterns can all can trace their lineage back to Brain somehow.
+Por ejemplo, tenemos un bloque similar para ropa de hombre llamado [Brian](/designs/brian/) y nuestro [Aaron](/designs/aaron/), [Bent](/designs/bent/), [Carlita](/designs/carlita/), [Carlton](/designs/carlton/), [Huey](/designs/huey/), [Hugo](/designs/hugo/), [Jaeger](/designs/jaeger/), [Simon](/designs/simon/), [Simone](/designs/simone/), [Sven](/designs/sven/), y [Wahid](/designs/wahid/) patrones pueden remontar su linaje hasta Brain de algún modo.
 
-In other words, Breanna is an important building block for us to extend our womenswear collection. But that does not mean it is not good news for you too. If you have been sewing for a while, chances are drafting your own block/sloper has perpetually been on your to-do list. Well, good news, because here is your block ready to go.
+En otras palabras, Breanna es un elemento importante para ampliar nuestra colección de ropa de mujer. Pero eso no significa que no sea una buena noticia también para ti. Si llevas un tiempo cosiendo para , es probable que hacer tu propio bloque/sloper haya estado siempre en tu lista de tareas pendientes de . Pues buenas noticias, porque aquí tienes tu bloque listo para salir.
 
-Oh, and of course it has all the bells and whistles you can expect from us. Have a look at [the pattern options](/docs/patterns/breanna/options/) and I think you'll be positively impressed. If nothing else, this block can accommodate 1 or 2 bust darts in 15 different places, giving you 120 unique ways to place your bust dart(s).
+Y, por supuesto, tiene todos los extras que puedes esperar de nosotros. Echa un vistazo a [las opciones de patrones](/docs/patterns/breanna/options/) y Creo que te impresionarán positivamente. Por lo menos, este bloque puede alojar 1 ó 2 dardos de busto en 15 lugares diferentes, lo que te proporciona 120 formas únicas de colocar tu(s) dardo(s) de busto.
 
-Breanna has has been a while in the making, and we'd love to get your feedback on it. Making a muslin from a block like this really isn't much work. So if you've got some time to spare to whip this one up and let us know how it went, that would be great.
+Breanna lleva tiempo gestándose, y nos encantaría recibir tus comentarios al respecto. Hacer una muselina a partir de un bloque como éste no es realmente mucho trabajo. Así que si tienes algo de tiempo libre para prepararlo y contarnos cómo te ha ido, , sería estupendo.
 
 
-## New/Different measurements to better suit womenswear
+## Medidas nuevas/diferentes para adaptarse mejor a la ropa de mujer
 
-Now that we're making our jouney into womenswear, we realized that the measurements we use on the site are somewhat skewed towards menswear. In addition, we had a lot of people stuggling with the shoulder slope measurement. So we decided to re-visit our measuremets, and we've made the following changes:
+Ahora que nos estamos adentrando en la ropa de mujer, nos hemos dado cuenta de que las medidas que utilizamos en están algo sesgadas hacia la ropa de hombre. Además, mucha gente de tuvo problemas con la medición de la pendiente del arcén. Así que decidimos volver a revisar nuestras medidas, y hemos introducido los siguientes cambios:
 
-### We have a bunch of new *HPS* measurements
+### Tenemos un montón de nuevas medidas *HPS*
 
-We've settled on the High-Point Shoulder, the so-called HPS point, as the basis for many of the vertical torso measurements. If you're not certain what/where the HPS point is, [check the HPS documentation](/docs/measurements/hps/).
+Nos hemos decantado por el Punto Alto del Hombro, el llamado punto HPS, como base para muchas de las medidas verticales del torso. Si no estás seguro de cuál es/dónde está el punto HPS, [consulta la documentación sobre HPS](/docs/measurements/hps/).
 
-### We discontinued the Center Back To Neck measurement
+### Hemos interrumpido la medida Centro de la espalda al cuello
 
-As we mentioned earlier, we use measurements from the HPS point now for vertical torso measurements. As a result, we've discontinued the old *Center back neck to waist* measurement.
+Como hemos dicho antes, ahora utilizamos las medidas del punto HPS para las medidas verticales del torso . *Como resultado, hemos dejado de utilizar la antigua medida de cuello a cintura* .
 
-Given that this measurement is now gone, you may need to add another measurement for certain patterns.
+Dado que esta medida ya no existe, puede que necesites añadir otra medida para determinados patrones.
 
-### We changed the way the shoulder slope is measured
+### Hemos cambiado la forma de medir la pendiente del arcén
 
-We noticed that people struggles with the way we asked them to measure [the shoulder slope measurement](/docs/measurements/shoulderslope) so we have changed how to do that.
+Nos hemos dado cuenta de que a la gente le cuesta medir [la medición de la pendiente del arcén ](/docs/measurements/shoulderslope) , así que hemos cambiado la forma de hacerlo.
 
-Because the new method yields a very different number (that ultimately captures the same thing, how much your shoulder slopes downward) here too we had to go in and reset all the existing data. In other words, you'll have to re-measure your shoulder slope.
+Como el nuevo método arroja una cifra muy diferente (que en última instancia capta lo mismo , cuánto se inclina tu hombro hacia abajo) aquí también tuvimos que entrar y restablecer todos los datos existentes. En otras palabras, tendrás que volver a medir la inclinación de tu hombro.
 
-## Generate patterns in *standard* sizes (no account required
+## Genera patrones en *tamaños estándar de* (no se requiere cuenta
 
-To get great patterns, you need good measurements, and a bunch of them. It's what we do here at FreeSewing, and most of the problems with patterns are because something goes wrong with taking measurements.
+Para conseguir grandes patrones, necesitas buenas medidas, y un montón de ellas. Es lo que hacemos aquí en FreeSewing, y la mayoría de los problemas con los patrones se deben a que algo falla al tomar las medidas.
 
-Unfortunately, there is no magic shortcut for this. If you want something made-to-measure, it's always going to start with acurate measurements.
+Por desgracia, no existe un atajo mágico para esto. Si quieres algo a medida, siempre va a empezar por unas medidas exactas.
 
-This does raise the bar for people who are new to the site, and want to kick the tires.
+Esto eleva el listón para las personas que son nuevas en el sitio y quieren probarlo.
 
-> *Oooh, free patterns, nice* 😍  
-> *Wait, I have to create an account first?* 🤔  
-> *And take all these measurements?* 😬  
-> *That seems like a lot of work.*
+> *Oooh, patrones gratis, bonito* 😍  
+> *Espera, ¿tengo que crear una cuenta primero?* 🤔  
+> *¿Y tomar todas esas medidas?* 😬  
+> *Eso parece mucho trabajo.*
 
-Fair enough.
+Me parece justo.
 
-In addition, our regular visitors also asked us whether they could get to see a pattern and play around with it without first having to put in a bunch of measurements.
+Además, nuestros visitantes habituales también nos preguntaban si podían llegar a ver un patrón y jugar con él sin tener que poner primero un montón de medidas.
 
-So __*drumroll*__ that is no longer required. We now offer all our patterns in *standard sizes*. Not only do you not have to take measurements to try out the patterns, you don't even have to sign up or log in. No account needed, just pick a pattern, a size, and you're good to go.
+Así que __*redoble de tambores*__ que ya no es necesario. Ahora ofrecemos todos nuestros patrones en las tallas estándar **. No sólo no tienes que tomar medidas para probar los patrones, sino que ni siquiera tienes que registrarte o iniciar sesión. No hace falta tener cuenta, sólo tienes que elegir un patrón, una talla y listo.
 
-Obvously, made-to-measure patterns is *our thing*, and we're not changing that. But we're hoping that by lowering the bar to try out our platform, more people will give FreeSewing a try.
+Obviamente, los patrones a medida son *lo nuestro*, y no vamos a cambiar eso. Pero esperamos que bajando el listón para probar nuestra plataforma, más gente le dé una oportunidad a FreeSewing.
 
-### What are standard sizes anyway?
+### ¿Qué son las tallas estándar?
 
-The hardest thing about adding support for standard sizes? Figuring out what the heck standard sizes are supposed to be. We took a stab at it, and if you're curious you can [check out our sizing table here](/docs/various/sizes/).
+¿Lo más difícil de añadir soporte para tamaños estándar? Averiguar qué diablos se supone que son las medidas estándar . Lo hemos intentado, y si tienes curiosidad puedes consultar [ nuestra tabla de tallas aquí](/docs/various/sizes/).
 
-For menswear, our size range is 32 to 50, and they are based on a size 38 baseline that we then graded up and down.  
-For womenswear, our size range is 28 to 48, and they are based on a size 34 baseline that we then graded up and down.
+Para la ropa de hombre, nuestra gama de tallas va de la 32 a la 50, y se basan en una talla base 38 que luego graduamos hacia arriba y hacia abajo.  
+Para la ropa de mujer, nuestra gama de tallas va de la 28 a la 48, y se basan en una talla 34 de referencia que luego graduamos hacia arriba y hacia abajo.
 
 <Note>
 
-If you're not sure what these numbers are, they are the neck circumference in cm.
+Si no estás seguro de lo que son estos números, son la circunferencia del cuello en cm.
 
 </Note>
 
-While we tried to make our size ranges inclusive, and these tables are an honest attempt to come up with something that makes sense, please understand that this is not our core business. We've love to hear your feedback on the sizing tables, and are open to tweaks and suggestions, but at the end of the day, what we want is to give you a pattern drafted to your measurements.  
-These sizes are just a way to lure you in 🤫
+Aunque hemos intentado que nuestros rangos de tallas sean inclusivos, y estas tablas son un intento honesto de llegar a algo que tenga sentido, por favor, comprende que éste no es nuestro negocio principal. Nos encantaría conocer tu opinión sobre las tablas de tallas, y estamos abiertos a ajustes y sugerencias, pero en al fin y al cabo, lo que queremos es darte un patrón confeccionado según tus medidas.  
+Estas tallas son sólo una forma de atraerte 🤫
 
 
-## Also: All the other stuff
+## También: Todo lo demás
 
-Now go and click around, for we've changed a bunch of other stuff too.
+Ahora ve y haz clic por ahí, porque también hemos cambiado un montón de cosas más.
 
-If you bump into any problems or have questions, as always [our chat room is the place to get in touch](https://discord.freesewing.org/).
+Si te encuentras con algún problema o tienes alguna pregunta, como siempre [nuestra sala de chat es el lugar para ponerte en contacto](https://discord.freesewing.org/).
 
-And if you happen to like what we do here, perhaps now is a good time to tell your friends about FreeSewing. After all, they can now check it out without needing to sign up.
+Y si te gusta lo que hacemos aquí, tal vez sea un buen momento para hablar a tus amigos de FreeSewing. Al fin y al cabo, ahora pueden comprobarlo sin necesidad de inscribirse.
 
-PS: We have [a handy share page](/share/) you can use for this.
+PD: Tenemos [una práctica página para compartir](/share/) que puedes utilizar para ello.
 
 
 
