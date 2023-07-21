@@ -1,18 +1,18 @@
 ---
 maker: "Wouter.vdub"
-caption: "Turned out really well for a toile"
+caption: "Ha quedado muy bien para ser un toile"
 date: "2017-12-11"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f3126799846dc9ea9aecb423e7283bb715db93b4-3724x2785.jpg"
-intro: "A test of Florent to see if the pattern works for others, by Wouter.vdub"
-title: "A test of Florent to see if the pattern works for others, by Wouter.vdub"
+intro: "Una prueba de Florent para ver si el patrón funciona para otros, por Wouter.vdub"
+title: "Una prueba de Florent para ver si el patrón funciona para otros, por Wouter.vdub"
 designs:
   - "florent"
 ---
 
-![View of the back ](https://posts.freesewing.org/uploads/florent_by_wouter_high_back_20ec93b7c1.jpg "View of the back ") ![View of the front](https://posts.freesewing.org/uploads/florent_by_wouter_high_front_9f28a1eb39.jpg "View of the front")
+![Vista de la parte trasera ](https://posts.freesewing.org/uploads/florent_by_wouter_high_back_20ec93b7c1.jpg "Vista de la parte trasera ") ![Vista frontal](https://posts.freesewing.org/uploads/florent_by_wouter_high_front_9f28a1eb39.jpg "Vista frontal")
 
-Wouter writes:
+Wouter escribe:
 
-> This was made as a toile, and although precision was used, some aspects could have been improved by using hand stitching, instead of machine stitching.
+> Se hizo como una toile, y aunque se utilizó precisión, algunos aspectos podrían haberse mejorado utilizando puntadas a mano, en lugar de a máquina.
 > 
-> Also, the pattern was printed with the standard `ease` of 1cm, and that was taken in at the back seam after the pieces were cut out.
+> Además, el patrón se imprimió con la holgura estándar `` de 1 cm, y ese se cogió en la costura trasera después de cortar las piezas.
