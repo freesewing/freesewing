@@ -12,7 +12,7 @@ Wahnsinn! Was für ein Jahr für FreeSewing. Im August haben wir die Version 2.0
 
 ## Skalierung ist schwierig, aber wir haben beachtenswerte Fortschritte gemacht
 
-So cool wie unser neuer Technologie-Stack ist, ist es nicht die wichtigste Arbeit, die wir im letzten Jahr geleistet haben. Yes, it's pretty neat, and yes it's only possible because of the work done on 2.0. But that work itself is what matters most. Der Hauptgrund für das Umschreiben von 2.0 war es, eine vertikale Skalierung des Projekts zu ermöglichen. Oder, um es, es ganz offen auszudrücken: Um es Freesewing zu erlauben sich dorthin zu entwickeln, wo ich es nicht alleine hintragen konnte.
+So cool wie unser neuer Technologie-Stack ist, ist es nicht die wichtigste Arbeit, die wir im letzten Jahr geleistet haben. Ja, das ist ziemlich toll, und ja, es ist nur möglich, weil an 2.0 gearbeitet hat. Aber die Arbeit selbst ist das, was am meisten zählt. Der Hauptgrund für das Umschreiben von 2.0 war es, eine vertikale Skalierung des Projekts zu ermöglichen. Oder, um es, es ganz offen auszudrücken: Um es Freesewing zu erlauben sich dorthin zu entwickeln, wo ich es nicht alleine hintragen konnte.
 
 In gewisser Weise ist das (Software-)Projekt FreeSewing erwachsen geworden. Wir haben mehrere Personen, die regelmäßig etwas beitragen, [einen aktiven Chat-Room](https://discord.freesewing.org/), [eine speziell für Entwickler gedachte Website und Dokumentation für Übersetzer](https://freesewing.dev), eine Vielzahl an [Paketen, die wir auf NPM veröffentlichen](https://www.npmjs.com/search?q=keywords:freesewing), wir haben an der benötigten Upstream-Software Bugfixes und Verbesserungen gemacht, und wir haben nun auch andere Personen und Teams, die auf unsere Pakete angewiesen sind.
 
