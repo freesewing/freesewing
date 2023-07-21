@@ -1,49 +1,36 @@
 ---
 date: "2021-10-01"
 edition: "2021q4"
-intro: "2021 Fall edition"
-title: "2021 Fall edition"
+intro: "2021 Herfsteditie"
+title: "2021 Herfsteditie"
 ---
 
-Welcome to the 2021 Autumn edition of the FreeSewing newsletter. Dit is wat we voor je hebben opgenomen:
+Welkom bij de herfsteditie van 2021 van de FreeSewing nieuwsbrief. Dit is wat we voor je hebben opgenomen:
 
-- 🎉 Pattern releases fall 2021  (1-minute read - by Karen)
-- ✏ Call for feedback: Hellgy's user survey (1-minute read - by Karen, 5-minute survey by Hellgy)
-- ✨ Version 3 roadmap (3-minute read - by joost)
-- 🕵 Behind the seams: Anneke (5-minute read - by Anneke, An, and Eleonore)
-- 👻 Halloween 🕷 costume 👽 ideas (1-minute read - by bobgeorgethe3rd and Lucian)
-- 😋 We have a TikTok now! (1-minute read - by Lucian)
-- 🎧 Sew over 50 podcast, double-dose with Wouter and Joost (1-minute read - by Karen, over an hour of podcast fun by Maria)
-- 👕 Pattern Project (2-minute read - by joost)
+- 🎉 Patroon releases herfst 2021 (1 minuut gelezen - door Karen)
+- Oproep voor feedback: Hellgy's gebruikersonderzoek (1 minuut lezen - door Karen, 5 minuten onderzoek door Hellgy)
+- ✨ Versie 3 stappenplan (3 minuten lezen - door joost)
+- 🕵 Achter de naden: Anneke (5 minuten lezen - door Anneke, An en Eleonore)
+- Halloween 🕷 kostuum 👽 ideeën (1 minuut gelezen - door bobgeorgethe3rd en Lucian)
+- We hebben nu een TikTok! (1-minuut lezen - door Lucian)
+- 🎧 Naaien over 50 podcast, dubbele dosis met Wouter en Joost (1 minuut lezen - door Karen, meer dan een uur podcastplezier door Maria)
+- 👕 Patroonproject (2 minuten lezen - door joost)
 
-We hope you enjoy it.  
-If not, mash that reply button and tell us what you'd like to read instead ¯\\\_(ツ)\_/¯
-
-&nbsp;
+We hopen dat je het leuk vindt.  
+Zo niet, druk dan op die antwoordknop en vertel ons wat je in plaats daarvan zou willen lezen.
 
 &nbsp;
 
-## 🎉 Pattern releases fall 2021
-
-A new pattern is out that's perfect for fall, at least if you're in the northern hemisphere.
-
-[The Yuri hoodie](https://freesewing.org/blog/annnouncing-yuri/) is based on the [Hugo](https://freesewing.org/designs/hugo/) and [Huey](https://freesewing.org/designs/huey/) hoodie patterns, but it's got something a little extra.  
-Or rather, it doesn't. Yuri has no zippers!
-
-Designed by [Hellgy](https://freesewing.org/makers/hellgy/) and coded by [Biou](https://github.com/biou/), Yuri uses overlapping panels secured with buttons to keep you cozy and stylish.
-
 &nbsp;
 
----
+## 🎉 Patroon releases herfst 2021
 
-&nbsp;
+Er is een nieuw patroon uit dat perfect is voor de herfst, tenminste als je op het noordelijk halfrond bent.
 
-## ✏ Call for feedback: FreeSewing user survey
+[De Yuri hoodie](https://freesewing.org/blog/annnouncing-yuri/) is gebaseerd op de [Hugo](https://freesewing.org/designs/hugo/) en [Huey](https://freesewing.org/designs/huey/) hoodie patronen, maar heeft iets extra's.  
+Of eigenlijk niet. Yuri heeft geen ritsen!
 
-FreeSewing rockstar Hellgy [didn't just release a new pattern this quarter](https://freesewing.org/blog/annnouncing-yuri/), they also put together [a FreeSewing user survey]((https://forms.gle/7zFSJP7AbUeg3Tbo9))!   
-Their goal: find out what our users like or dislike and find easy or difficult, then use that information to help with the UX/UI design of the site.
-
-Here's where we need you! Do you have 5 minutes and want to help out FreeSewing? [Fill out the FreeSewing user survey](https://forms.gle/7zFSJP7AbUeg3Tbo9) and let us know how you use the site and what your experience has been.
+Ontworpen door [Hellgy](https://freesewing.org/makers/hellgy/) en gecodeerd door [Biou](https://github.com/biou/), maakt Yuri gebruik van overlappende panelen die worden vastgezet met knopen om je knus en stijlvol te houden.
 
 &nbsp;
 
@@ -51,18 +38,31 @@ Here's where we need you! Do you have 5 minutes and want to help out FreeSewing?
 
 &nbsp;
 
-## ✨ Version 3 roadmap
-It's been a bit over 2 years [since FreeSewing v2.0.0 came out](https://freesewing.org/blog/announcing-v2/). Since its release, we've been working on adding new designs as well as improving things big and small, and it's fair to say that the v2.19 release that we're currently preparing is leaps and bounds ahead of that 2.0 version from 2 years ago.
+## Vraag om feedback: FreeSewing gebruikersonderzoek
 
-Still, there's a number of things we'd like to do but we can't. Or at least not without breaking a bunch of stuff, which we won't because FreeSewing practices something called [semantic versioning](https://semver.org/). That's a fancy term that boils down to version numbers that looks like major.minor.patch. For example: 2.18.1.
+FreeSewing rockster Hellgy [heeft dit kwartaal niet alleen een nieuw patroon uitgebracht](https://freesewing.org/blog/annnouncing-yuri/), ze hebben ook [een FreeSewing gebruikersonderzoek]((https://forms.gle/7zFSJP7AbUeg3Tbo9))samengesteld!   
+Hun doel: uitvinden wat onze gebruikers leuk of niet leuk, makkelijk of moeilijk vinden en die informatie dan gebruiken om te helpen met het UX/UI-ontwerp van de site.
 
-The way it works is that for bugfixes, you increase the patch level. For new features, you increase the minor level. And the major number is only increased for so-called breaking changes.
+Hier hebben we je nodig! Heb je 5 minuten en wil je FreeSewing helpen? [Vul de FreeSewing gebruikersenquête](https://forms.gle/7zFSJP7AbUeg3Tbo9) in en laat ons weten hoe je de site gebruikt en wat je ervaringen zijn.
 
-Another way to look at it is that when you practice semantic versioning, you make a promise to your users: As long as you stick to the same major version, we won't break your stuff. That is not super relevant for regular users of freesewing.org but is very important for people who are building on top of our software, and example of which you can read further down in this newsletter.
+&nbsp;
 
-In practical terms, everything we have a *ooh that would be nice but it would break things* idea, we file it under *maybe in the next major release*. And after two years, we feel we've got enough of a grab-bag of ideas to start being serious about what we want to see in version 3.
+---
 
-To that extend, we have published [the FreeSewing v3 roadmap](https://github.com/freesewing/freesewing/discussions/1278). It is a list of all the things that we would like to see happen in the next major release. And it's open for feedback, suggestions, and ideas. In other words, if there's something you always wanted to see in FreeSewing, or if you've got some great ideas for us, now is the time to chime in. You can [comment on the roadmap]((https://github.com/freesewing/freesewing/discussions/1278)), or [join us on Discord](https://discord.freesewing.org/).
+&nbsp;
+
+## Versie 3 stappenplan
+Het is iets meer dan 2 jaar geleden [dat FreeSewing v2.0.0 uitkwam](https://freesewing.org/blog/announcing-v2/). Sinds de release hebben we gewerkt aan het toevoegen van nieuwe ontwerpen en het verbeteren van grote en kleine dingen, en het is eerlijk om te zeggen dat de v2.19 release die we nu voorbereiden met sprongen vooruit gaat ten opzichte van die 2.0 versie van 2 jaar geleden.
+
+Toch zijn er een aantal dingen die we zouden willen doen, maar niet kunnen. Of in ieder geval niet zonder een heleboel dingen kapot te maken, wat we niet zullen doen omdat FreeSewing iets gebruikt dat [semantisch versiebeheer](https://semver.org/)heet. Dat is een fancy term die neerkomt op versienummers die eruit zien als major.minor.patch. Bijvoorbeeld: 2.18.1.
+
+De manier waarop het werkt is dat je voor bugfixes het patchniveau verhoogt. Voor nieuwe functies verhoog je het minder belangrijke niveau. En het grote getal wordt alleen verhoogd voor zogenaamde breaking changes.
+
+Een andere manier om het te bekijken is dat als je semantisch versiebeheer toepast, je een belofte doet aan je gebruikers: Zolang je je aan dezelfde hoofdversie houdt, zullen we je spullen niet kapot maken. Dat is niet super relevant voor gewone gebruikers van freesewing.org, maar wel heel belangrijk voor mensen die bovenop onze software bouwen, en waarvan je verderop in deze nieuwsbrief een voorbeeld kunt lezen.
+
+Praktisch gezien is alles wat we hebben een *ooh dat zou leuk zijn maar het zou dingen breken* idee, we bergen het op onder *misschien in de volgende grote release*. En na twee jaar hebben we het gevoel dat we genoeg ideeën hebben om serieus te gaan nadenken over wat we in versie 3 willen zien.
+
+Daarom hebben we [de FreeSewing v3 roadmap](https://github.com/freesewing/freesewing/discussions/1278)gepubliceerd. Het is een lijst van alle dingen die we graag in de volgende grote release zouden zien gebeuren. En het staat open voor feedback, suggesties en ideeën. Met andere woorden, als er iets is dat je altijd al in FreeSewing hebt willen zien, of als je leuke ideeën voor ons hebt, dan is het nu tijd om mee te doen. Je kunt [reageren op de routekaart]((https://github.com/freesewing/freesewing/discussions/1278)), of [met ons meedoen op Discord](https://discord.freesewing.org/).
 
 &nbsp;
 
@@ -71,42 +71,29 @@ To that extend, we have published [the FreeSewing v3 roadmap](https://github.com
 &nbsp;
 
 
-## 🕵 Behind the seams: Anneke
-*We’re happy to introduce you to another of FreeSewing’s contributors. She’s multi-talented, has green hair and the best sense of humour. Anneke was around before FreeSewing was even a thing. Without her, FreeSewing wouldn’t have a face … or should we say, skull?*
+## 🕵 Achter de naden: Anneke
+*We stellen je graag voor aan nog een van de medewerkers van FreeSewing. Ze is multi-getalenteerd, heeft groen haar en het beste gevoel voor humor. Anneke was er al voordat FreeSewing bestond. Zonder haar zou FreeSewing geen gezicht hebben … of moeten we zeggen, schedel?*
 
 ### Hoe heb je FreeSewing leren kennen?
-“I met Joost at a blog meet-up, way back in the day. You know it was a long time ago because Joost still left the house and socialising was still allowed. Anyway, we started following each other and that’s how I found about his patterns-to-measurements project. It was still called MakeMyPattern at that time. Apart from my work as a seamstress and getting a second degree in animal care, I’m also an illustrator. At some point Joost asked me to design a logo for FreeSewing, and that’s how Skully happened.”
+"Ik heb Joost ontmoet tijdens een blogbijeenkomst, heel lang geleden. Je weet dat het lang geleden was, want Joost ging nog het huis uit en gezelligheid was nog toegestaan. Hoe dan ook, we begonnen elkaar te volgen en zo kwam ik achter zijn patronen-op-maat project. Het heette toen nog MakeMyPattern. Naast mijn werk als naaister en het behalen van een tweede graad in dierenverzorging, ben ik ook illustrator. Op een gegeven moment vroeg Joost me om een logo te ontwerpen voor FreeSewing, en zo is Skully ontstaan."
 
-### What else have you been up to as a contributor?
-“Joost and I created a pattern together, Carlton and Carlita. They are two versions of the coat Benedict Cumberbatch wears in “Sherlock”. I also help out with translations, manage our Facebook group and test new patterns if they are something that I would wear.”
+### Wat heb je nog meer gedaan als medewerker?
+"Joost en ik hebben samen een patroon gemaakt, Carlton en Carlita. Het zijn twee versies van de jas die Benedict Cumberbatch draagt in "Sherlock". Ik help ook met vertalingen, beheer onze Facebookgroep en test nieuwe patronen als ze iets zijn dat ik zou dragen."
 
-### What drew you to sewing?
-“I started sewing over ten years ago. My mother had no inspiration for a birthday present but she saw me messing around with some fabric and gave me a sewing machine. It all went downhill from there. I currently work as a seamstress parttime, doing mostly repairs and alterations. It's very different from sewing from scratch, and interesting in its own way. I still sew for fun, too. I love how sewing gives me absolute control over my wardrobe. I'm no longer limited to what's on offer in shops, I can wear whatever I want in the materials that I want. As someone who can get very sensitive to textures and fit, this is a huge advantage.”
+### Wat trok je aan in naaien?
+"Ik ben meer dan tien jaar geleden begonnen met naaien. Mijn moeder had geen inspiratie voor een verjaardagscadeau, maar ze zag me rommelen met wat stof en gaf me een naaimachine. Vanaf dat moment ging het bergafwaarts. Ik werk momenteel parttime als naaister, voornamelijk voor reparaties en verstelwerk. Het is heel anders dan naaien vanaf nul, en interessant op zijn eigen manier. Ik naai ook nog steeds voor mijn plezier. Ik vind het heerlijk dat ik door te naaien absolute controle heb over mijn garderobe. Ik ben niet langer beperkt tot het aanbod in de winkels, ik kan dragen wat ik wil in de materialen die ik wil. Als iemand die erg gevoelig kan worden voor texturen en pasvorm, is dit een enorm voordeel."
 
 ### Wat is voor jou het moeilijkste aan naaien?
-“Finding the balance between doing something I enjoy and owning too many clothes. Sewing for others feels too much like work, so if I sew in my spare time, it’s always for me. But you do end up with a LOT of clothes, and that makes me feel guilty or wasteful sometimes. I try to see the giant wardrobe as a testimony to my learning process, and donate the things that are no longer worn so they get another chance. On a less serious note, I’m terrible at cleaning up after myself when I’m sewing. I’m a messy person and it’s a messy activity. What can you do?”
+"De balans vinden tussen iets doen wat ik leuk vind en te veel kleren bezitten. Naaien voor anderen voelt te veel als werk, dus als ik naai in mijn vrije tijd, is het altijd voor mezelf. Maar uiteindelijk heb je wel heel veel kleding, en daardoor voel ik me soms schuldig of verkwistend. Ik probeer de gigantische kledingkast te zien als een getuigenis van mijn leerproces en doneer de dingen die niet meer gedragen worden zodat ze nog een kans krijgen. Even een minder serieuze opmerking: ik ben vreselijk in het opruimen als ik aan het naaien ben. Ik ben een rommelig persoon en het is een rommelige bezigheid. Wat kun je doen?"
 
-### What would be your advise for starting sewists/sewistas?
-“Be ambitious. You will learn a lot from projects that challenge you. It's OK to start with very simple things just to learn how to use your machine, but don't be afraid of zippers or buttons or collars. The internet is full of information and tutorials, and if you mess it up, learn from it and try again. I’m still proud of my own “milestone” projects that tought me new skills and pushed me forward. My first real coat, first pair of jeans, first underwire bra.”
+### Wat zou jouw advies zijn voor beginnende naaisters/naaisters?
+"Wees ambitieus. Je zult veel leren van projecten die je uitdagen. Het is prima om met heel eenvoudige dingen te beginnen om je machine te leren gebruiken, maar wees niet bang voor ritsen of knopen of kragen. Het internet staat vol met informatie en tutorials, en als je het verprutst, leer er dan van en probeer het opnieuw. Ik ben nog steeds trots op mijn eigen "mijlpaal"-projecten die me nieuwe vaardigheden hebben geleerd en me vooruit hebben geholpen. Mijn eerste echte jas, eerste spijkerbroek, eerste beugelbeha."
 
-### Are you a dog or a cat person?
-“I’m an animal person. All animals are good in my book. Except for mosquitos, they can go fuck themselves. Can I say that?” (You can, and you did.)
+### Ben je een honden- of kattenliefhebber?
+"Ik ben een dierenmens. Alle dieren zijn goed in mijn boek. Behalve muggen, die kunnen de pot op. Mag ik dat zeggen?" (Dat kan en dat heb je gedaan.)
 
-### Where can we find you on social media?
-You can find my (relatively quiet) blog at www.annekecaramin.com or my Instagram at [@annekecaramin](https://www.instagram.com/annekecaramin/).
-
-&nbsp;
-
----
-
-&nbsp;
-
-## 👻 Halloween 🕷 costume 👽 ideas
-With Halloween just four weeks away, we've got something special lined up for you: Lucian and bobgeorgethe3rd are putting the finishing touches on a list of ideas for awesome costumes to sew. And — best of all — you can make all of them from FreeSewing patterns!
-
-The ideas range all the way from recreating a Victorian-esque look with extravagant sleeves, to embodying the role of Spongebob.
-
-There's plenty of options, for all ages, so keep on eye on [our blog](https://freesewing.org/blog/) for spooky updates as Halloween draws closer.
+### Waar kunnen we je vinden op sociale media?
+Je kunt mijn (relatief rustige) blog vinden op www.annekecaramin.com of mijn Instagram op [@annekecaramin](https://www.instagram.com/annekecaramin/).
 
 &nbsp;
 
@@ -114,8 +101,12 @@ There's plenty of options, for all ages, so keep on eye on [our blog](https://fr
 
 &nbsp;
 
-## 😋 We have a TikTok now!
-You may have noticed that [our Instagram account](https://www.instagram.com/freesewing_org/) has been posting a lot more lately. True! But that's not the only social media work done; we have a TikTok account now! [You can find it under @freesewing_org](https://www.tiktok.com/@freesewing_org), which is the name all of our social accounts carry. Who knows what the future holds... 👀
+## Halloween 🕷 kostuum 👽 ideeën
+Met Halloween nog maar vier weken te gaan, hebben we iets speciaals voor je in petto: Lucian en bobgeorgethe3rd leggen de laatste hand aan een lijst met ideeën voor te gekke kostuums om te naaien. En - het beste van alles - je kunt ze allemaal maken van FreeSewing patronen!
+
+De ideeën variëren van een Victoriaanse look met extravagante mouwen tot de rol van Spongebob.
+
+Er zijn genoeg mogelijkheden, voor alle leeftijden, dus houd onze blog [](https://freesewing.org/blog/) in de gaten voor griezelige updates naarmate Halloween dichterbij komt.
 
 &nbsp;
 
@@ -123,12 +114,8 @@ You may have noticed that [our Instagram account](https://www.instagram.com/free
 
 &nbsp;
 
-## 🎧 Sew over 50 podcast, double-dose with Wouter and Joost
-FreeSewing's very own Wouter (you may remember him from the interview in the first FreeSewing newsletter) has been interviewed for the Sew Over 50 podcast! Tune in to learn about how Wouter got into sewing, the projects that intrigue him, his advice for new sewists, and his work with FreeSewing!
-
-And just under the wire for this newsletter, Joost has also been recently interviewed by Sew Organised Style, sharing how FreeSewing came to be, how you can get involved, and what brought Joost to sewing in the first place! Plus bonus thoughts on finding the perfect shoes.
-
-Find out more on the [Sew Organised Style page](https://seworganisedstylepodcast.com/), and listen to Wouter's podcast [here](https://seworganisedstylepodcast.com/2021/08/12/wouter-vdub/) and Joost's podcast [here](https://seworganisedstylepodcast.com/2021/09/27/freesewing-org/), or look for Sew Organised Style on your favorite podcast app.
+## We hebben nu een TikTok!
+Het is je misschien opgevallen dat [ons Instagram account](https://www.instagram.com/freesewing_org/) de laatste tijd veel meer post. Echt waar! Maar dat is niet het enige social media werk; we hebben nu ook een TikTok account! [Je kunt het vinden onder @freesewing_org](https://www.tiktok.com/@freesewing_org), de naam die al onze sociale accounts dragen. Wie weet wat de toekomst brengt... 👀
 
 &nbsp;
 
@@ -136,16 +123,29 @@ Find out more on the [Sew Organised Style page](https://seworganisedstylepodcast
 
 &nbsp;
 
-## 👕 Pattern project
+## 🎧 Naai 50 podcast, dubbele dosis met Wouter en Joost
+FreeSewing's eigen Wouter (je kent hem misschien nog van het interview in de eerste FreeSewing nieuwsbrief) is geïnterviewd voor de Sew Over 50 podcast! Kom meer te weten over hoe Wouter met naaien is begonnen, de projecten die hem intrigeren, zijn advies voor nieuwe naaisters en zijn werk met FreeSewing!
 
-To be clear: This is not an ad. But I do want to talk about a new clothing company based in the UK named Pattern Project. They describe themselves on [their website](https://www.pattern-project.com/) as:
+En net voor deze nieuwsbrief is Joost ook nog geïnterviewd door Sew Organised Style, waarin hij vertelt hoe FreeSewing is ontstaan, hoe je mee kunt doen en wat Joost in de eerste plaats tot naaien heeft gebracht! Plus bonusgedachten over het vinden van de perfecte schoenen.
 
-> *Pattern Project is a South London micro-factory. We make clean, urban, local manufacturing of clothing possible and cost-effective. We produce clothing after it is sold in a matter of days.*
+Kom meer te weten op de [Sew Organised Style pagina](https://seworganisedstylepodcast.com/), en luister naar Wouter's podcast [hier](https://seworganisedstylepodcast.com/2021/08/12/wouter-vdub/) en Joost's podcast [hier](https://seworganisedstylepodcast.com/2021/09/27/freesewing-org/), of zoek naar Sew Organised Style op je favoriete podcast app.
+
+&nbsp;
+
+---
+
+&nbsp;
+
+## Patroonproject
+
+Voor de duidelijkheid: dit is geen advertentie. Maar ik wil het wel hebben over een nieuw kledingbedrijf in het Verenigd Koninkrijk genaamd Pattern Project. Ze beschrijven zichzelf op [hun website](https://www.pattern-project.com/) als:
+
+> *Pattern Project is een microfabriek in Zuid-Londen. Wij maken schone, stedelijke, lokale productie van kleding mogelijk en kosteneffectief. We produceren kleding nadat deze binnen enkele dagen is verkocht.*
 > 
-> *We sell Sew-It-Yourself Kits and Ready-To-Wear clothes. The kits contain precut and annotated fabric are easy to make and take less time than regular sewing.*
+> *We verkopen Naai-Zelf Kits en confectiekleding. De pakketten bevatten voorgeknipte en geannoteerde stof, zijn eenvoudig te maken en kosten minder tijd dan gewoon naaien.*
 
-The reason I'm writing about them in our newsletter can't be glanced from their website, nor will you [read about it in the press](https://www.theguardian.com/lifeandstyle/2021/sep/28/sew-it-yourself-inside-the-zero-waste-zero-sweatshop-revolution). But behind the scenes of this micro-factory, FreeSewing churns out the patterns for the laser machines that cut the fabric.
+De reden waarom ik over hen schrijf in onze nieuwsbrief kun je niet van hun website aflezen en ook niet op [in de pers](https://www.theguardian.com/lifeandstyle/2021/sep/28/sew-it-yourself-inside-the-zero-waste-zero-sweatshop-revolution). Maar achter de schermen van deze microfabriek maakt FreeSewing de patronen voor de lasermachines die de stof snijden.
 
-It feels significant somehow to cross that threshold from *nice hobby website you've got there* into a place where FreeSewing is a project on which other build their business, and in a very tangible way, their livelihood.
+Het voelt op de een of andere manier belangrijk om die drempel over te gaan van *leuke hobbywebsite die je daar hebt* naar een plek waar FreeSewing een project is waarop anderen hun bedrijf bouwen, en op een heel tastbare manier, hun levensonderhoud.
 
-I don't even know if the achievement this unlocks carries a name. But I wanted to share it and thank all our contributors and patrons for their support without which we would have never gotten this far.
+Ik weet niet eens of de prestatie die hiermee wordt verkregen een naam heeft. Maar ik wilde het delen en al onze donateurs en begunstigers bedanken voor hun steun, zonder wie we nooit zo ver zouden zijn gekomen.
