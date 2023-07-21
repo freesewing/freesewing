@@ -3,11 +3,10 @@ import { NavigationContext } from 'shared/context/navigation-context.mjs'
 // Hooks
 import { useContext } from 'react'
 // Components
-import { SectionsMenu, ns as sectionsNs } from 'site/components/navigation/sections-menu.mjs'
+import { SectionsMenu, ns as sectionsNs } from 'shared/components/navigation/sections-menu.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { nsMerge } from 'shared/utils.mjs'
 import { ChoiceLink } from 'shared/components/choice-link.mjs'
-
 import { NavLinks, Breadcrumbs } from 'shared/components/navigation/sitenav.mjs'
 
 export const ns = nsMerge(sectionsNs)

@@ -92,6 +92,7 @@ lab:
   buildsitedeps: *buildsitedeps
   prebuild: 'yarn buildsitedeps && node --experimental-json-modules ./prebuild.mjs'
   prebuildonly: 'node --experimental-json-modules ./prebuild.mjs'
+  predev: 'node --experimental-json-modules ./prebuild.mjs'
   start: *nextStart
 
 org:

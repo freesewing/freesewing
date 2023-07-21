@@ -1,6 +1,7 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { postInfo, order } from 'site/prebuild/showcase-paths.mjs'
+import { pages as posts } from 'site/prebuild/showcase.mjs'
+import { meta } from 'site/prebuild/showcase-meta.mjs'
 import { getPostIndexPaths, getPostIndexProps } from 'site/components/mdx/posts/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
@@ -91,7 +92,7 @@ export default ShowcaseIndexPage
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticProps({ locale, params }) {
-  const props = getPostIndexProps(locale, params, order, postInfo)
+  const props = getPostIndexProps(params.page, posts[locale], meta)
 
   // if there shouldn't be a page with these params, return 404
   if (props === false) return { notFound: true }
@@ -126,7 +127,7 @@ export async function getStaticProps({ locale, params }) {
  */
 export const getStaticPaths = async () => {
   return {
-    paths: getPostIndexPaths(order, 'showcase'),
+    paths: getPostIndexPaths(posts, 'showcase'),
     fallback: 'blocking',
   }
 }

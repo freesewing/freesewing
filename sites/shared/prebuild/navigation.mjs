@@ -1,13 +1,15 @@
+import allLanguages from '../../../config/languages.json' assert { type: 'json' }
 import path from 'path'
 import fs from 'fs'
 import set from 'lodash.set'
 import orderBy from 'lodash.orderby'
 import { extendSiteNav as dev } from './sitenav-dev.mjs'
 import { extendSiteNav as org } from './sitenav-org.mjs'
+import { extendSiteNav as lab } from './sitenav-lab.mjs'
 import { pageHasChildren } from '../utils.mjs'
 import { header } from './shared.mjs'
 
-const extendNav = { dev, org }
+const extendNav = { dev, org, lab }
 
 /*
  * A method to recursively add the ordered slugs to the LUT
@@ -47,7 +49,7 @@ export const orderedSlugLut = (nav) => {
  * Main method that does what needs doing
  */
 export const prebuildNavigation = async (store) => {
-  const { docs, site, posts = false } = store
+  const { site, docs = false, posts = false } = store
   /*
    * Since this is written to disk and loaded as JSON, we minimize
    * the data to load by using the following 1-character keys:
@@ -60,23 +62,24 @@ export const prebuildNavigation = async (store) => {
   const all = {
     sitenav: '',
   }
-  const locales = []
-  for (const lang in docs) {
-    locales.push(lang)
+  const locales = docs ? Object.keys(docs) : allLanguages
+  for (const lang of locales) {
     sitenav[lang] = {}
 
-    // Handle docs
-    for (const slug of Object.keys(docs[lang]).sort()) {
-      const page = docs[lang][slug]
-      const val = {
-        t: page.t,
-        s: slug,
+    // Handle docs if there are any
+    if (docs[lang]) {
+      for (const slug of Object.keys(docs[lang]).sort()) {
+        const page = docs[lang][slug]
+        const val = {
+          t: page.t,
+          s: slug,
+        }
+        if (page.o) val.o = page.o
+        set(sitenav, [lang, ...slug.split('/')], val)
       }
-      if (page.o) val.o = page.o
-      set(sitenav, [lang, ...slug.split('/')], val)
     }
 
-    // Handle posts
+    // Handle posts if there are any
     if (posts) {
       for (const type in posts) {
         for (const [slug, post] of Object.entries(posts[type].posts[lang])) {
@@ -117,6 +120,9 @@ export const prebuildNavigation = async (store) => {
     path.resolve('..', site, 'prebuild', `sitenav.mjs`),
     `${header}${all.sitenav}export const siteNav = { ${locales.join(',')} }`
   )
+
+  // In the lab, there will be no navigation set in the store
+  if (!store.navigation) store.navigation = {}
 
   // Update the store
   store.navigation.sitenav = sitenav
