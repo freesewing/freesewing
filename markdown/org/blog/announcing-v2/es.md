@@ -1,52 +1,52 @@
 ---
 author: "joostdecock"
-caption: "This release really is a sea-change"
+caption: "Esta versión es realmente un cambio radical"
 date: "2019-08-25"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5b31cfbe3a85cee5519e12afe767ca3249588463-2000x1126.jpg"
-intro: "Welcome to version 2 of FreeSewing, the open source platform for made-to-measure sewing patterns."
-title: "Announcing FreeSewing v2.0"
+intro: "Bienvenido a la versión 2 de FreeSewing, la plataforma de código abierto para patrones de costura a medida."
+title: "Anuncio de FreeSewing v2.0"
 ---
 
 
-# Announcing FreeSewing v2.0
+# Anuncio de FreeSewing v2.0
 
-Welcome to version 2 of FreeSewing, the open source platform for made-to-measure sewing patterns.
+Bienvenido a la versión 2 de FreeSewing, la plataforma de código abierto para patrones de costura a medida.
 
-This release culminates more than a year of work, and comes two years to the day since FreeSewing first went live. Today, we once again raise the bar for what you can expect from modern-day sewing patterns.
+Este lanzamiento culmina más de un año de trabajo, y se produce dos años después de que FreeSewing se pusiera en marcha por primera vez. Hoy, una vez más, elevamos el listón de lo que puedes esperar de los patrones de costura actuales.
 
-## 🦄 Harder, better, faster, stronger [\*](https://www.youtube.com/watch?v=GDpmVUEjagg)
-
-
-We are *extremely* excited about this release, which is not just merely a new major version with some breaking changes, but a complete rewrite in JavaScript/Node.js.  We won't go into the nitty gritty here, but if you'd like to know how we've done it, check out [the developer docs](https://freesewing.dev) or [FreeSewing on GitHub](https://github.com/freesewing).
+## 🦄 Más duro, mejor, más rápido, más fuerte [\*](https://www.youtube.com/watch?v=GDpmVUEjagg)
 
 
-## ✨ Live preview
+Estamos *extremadamente* entusiasmados con este lanzamiento, que no es simplemente una nueva versión principal con algunos cambios de última hora, sino una reescritura completa en JavaScript/Node.js.  No entraremos en detalles aquí, pero si quieres saber cómo lo hemos hecho , consulta [los documentos para desarrolladores](https://freesewing.dev) o [FreeSewing en GitHub](https://github.com/freesewing).
 
-FreeSewing has always had a reputation for publishing sewing patterns with tons of options for you to tweak. Which is great, but can be a bit overwhelming because you only got to see the result of all those tweaks at the very end. But those days are gone. Now, no matter what changes you make, you get a live preview of what your pattern will look like, taking the guesswork out of configuring your pattern exactly as you like it.
 
-## 🧂  Recipes
+## ✨ Vista previa en directo
 
-Where we used to store your patterns for you, now we'll store your *recipes* instead. You can go through as many pattern iterations as you want. And when you're happy, we'll save all the settings it takes to create that exact pattern in a so-called recipe.
+FreeSewing siempre ha tenido fama de publicar patrones de costura con montones de opciones para que los modifiques. Lo cual está muy bien, pero puede ser un poco abrumador porque sólo llegas a ver el resultado de todos esos retoques al final. Pero esos días ya pasaron. Ahora, independientemente de los cambios que hagas, obtendrás una vista previa en directo del aspecto que tendrá tu patrón, eliminando las conjeturas a la hora de configurar tu patrón exactamente como te gusta.
 
-You can then at any time re-use that recipe to recreate your pattern, or use it as a starting point to make a slightly different pattern. You can also share these recipes, allowing others to generate the same look for their own measurements.
+## 🧂 Recetas
 
-## 🤝 Getting involved was never easier
+Donde antes almacenábamos tus patrones por ti, ahora almacenaremos en su lugar tus recetas de **. Puedes pasar por tantas iteraciones de patrones como quieras. Y cuando estés contento, guardaremos todos los ajustes necesarios para crear ese patrón exacto en una llamada receta.
 
-What hasn't changed is that we still support 5 languages (shout-out to all translators) and that FreeSewing is still a 100% communal effort (shout-out to all contributors). There's only volunteers here, and if you'd like to help out, it's never been easier.
+Luego, en cualquier momento, puedes volver a utilizar esa receta para recrear tu patrón, o utilizarla como punto de partida para hacer un patrón ligeramente distinto. También puedes compartir estas recetas, permitiendo que otros generen el mismo aspecto para sus propias medidas.
 
-For those who are interested in our code, head over to our new developer documentation at [freesewing.dev](https://freesewing.dev) to learn about the new platform, our core API, our plugins, and more.
+## 🤝 Participar nunca fue tan fácil
 
-For those of you who are interested in designing patterns, we have updated our [pattern design tutorial](https://freesewing.dev/tutorial) so you can hit the ground running.
+Lo que no ha cambiado es que seguimos siendo compatibles con 5 idiomas (un saludo a todos los traductores) y que FreeSewing sigue siendo un esfuerzo 100% comunitario (un saludo a todos los colaboradores). Aquí sólo hay voluntarios, y si quieres ayudar, nunca ha sido tan fácil.
 
-There's good news for translators too, as we now use [Crowdin](https://crowdin.com/) which makes translation a breeze. If you'd like to help out with translation, or maybe even add a new language to FreeSewing, make sure to [get in touch](https://discord.freesewing.org/).
+Para aquellos que estén interesados en nuestro código, diríjanse a nuestra nueva documentación para desarrolladores en [freesewing.dev](https://freesewing.dev) para conocer la nueva plataforma, nuestra API central, nuestros plugins y mucho más.
 
-## 💩 Usual caveats apply
+Para los que estéis interesados en diseñar patrones, hemos actualizado nuestro tutorial de diseño de patrones [](https://freesewing.dev/tutorial) para que puedas ponerte manos a la obra.
 
-It's conventional wisdom in software development that refactoring code is good, but rewriting it from scratch is bad. Still, we did it anyway because we wanted to make it easier for people to get involved in the project, and generate patterns in real-time in the browser.
+También hay buenas noticias para los traductores, ya que ahora utilizamos [Crowdin](https://crowdin.com/) , que hace que la traducción sea pan comido. Si quieres ayudar con la traducción, o incluso añadir un nuevo idioma a FreeSewing, ponte en contacto con [](https://discord.freesewing.org/).
 
-That being said, this is a .zero release so you may stumble upon an issue left or right. When you do, please [let us know](https://discord.freesewing.org/) or submit an issue.
+## 💩 Se aplican las advertencias habituales
 
-## 🤞 Tell us what you think
+La sabiduría convencional en el desarrollo de software es que refactorizar el código es bueno, pero reescribirlo desde cero es malo. Aun así, lo hicimos de todos modos porque queríamos facilitar a la gente su participación en el proyecto, y generar patrones en tiempo real en el navegador.
 
-We'd love to hear your feedback. We're **@freesewing\_org** on [Twitter](https://twitter.com/freesewing_org) and [Instagram](https://instagram.com/freesewing_org), use the **#freesewing** hashtag, or [check our share page](/share).
+Dicho esto, se trata de una versión .cero, por lo que puedes tropezar con algún problema a diestro y siniestro. Cuando lo hagas, por favor, [háznoslo saber](https://discord.freesewing.org/) o envía una incidencia.
+
+## 🤞 Dinos lo que piensas
+
+Nos encantaría conocer tu opinión. Somos **@freesewing\_org** en [Twitter](https://twitter.com/freesewing_org) y [Instagram](https://instagram.com/freesewing_org), utiliza el hashtag **#freesewing** , o [consulta nuestra página para compartir](/share).
 
