@@ -1,5 +1,5 @@
 ---
-title: "Tamiko top: Fabric Options"
+title: "Top Tamiko: Opciones de tejido"
 ---
 
 Este patrón tiene muchos bordes inacabados, así que necesitas algo que no se cuelga. Y usted quiere ir a por algo con un buen borrón.
