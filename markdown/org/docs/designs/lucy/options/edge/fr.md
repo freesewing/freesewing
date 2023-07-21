@@ -1,8 +1,8 @@
 ---
-title: Edge
+title: Bord
 ---
 
-This option controls the width of the top edge of your pocket.
+Cette option permet de contrôler la largeur du bord supérieur de ta poche.
 
 ## Effet de cette option sur le motif
 
