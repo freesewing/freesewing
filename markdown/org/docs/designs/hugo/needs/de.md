@@ -1,5 +1,5 @@
 ---
-title: "Hugo hoodie: What You Need"
+title: "Hugo Hoodie: Was du brauchst"
 ---
 
 Um Hugo zu machen, werden Sie Folgendes benötigen:
