@@ -1,5 +1,5 @@
 ---
-maker: "unknown"
+maker: "inconnue"
 caption: "La perfection du tartan rouge"
 date: "2020-11-27"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/89782b1ed572a5348c9ad925471f7e5252f630f7-750x750.jpg"
