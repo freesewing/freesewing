@@ -1,9 +1,9 @@
 ---
-title: "Walburga Wappenrock: What You Need"
+title: "Walburga Wappenrock : Ce dont tu as besoin"
 ---
 
-To make Walburga, you will need the following:
+Pour préparer la Walburga, tu auras besoin des éléments suivants :
 
 - [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
-- About 1 meter (1.1 yards) of a suitable fabric (see [Fabric options](/docs/patterns/walburga/fabric))
-- (optional) about 3 metres (3.3 yards) of bias tape or trimmings to finsh the raw edges
+- Environ 1 mètre d'un tissu approprié (voir [Options de tissu](/docs/patterns/walburga/fabric)).
+- (facultatif) environ 3 mètres de ruban de biais ou de passementerie pour finir les bords bruts.
