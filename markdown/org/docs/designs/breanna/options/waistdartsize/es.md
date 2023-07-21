@@ -2,7 +2,7 @@
 title: "Tamaño dart de Waist"
 ---
 
-The size of the back waist dart
+El tamaño de la pinza de la cintura
 
 ## Efecto de esta opción en el patrón
 
