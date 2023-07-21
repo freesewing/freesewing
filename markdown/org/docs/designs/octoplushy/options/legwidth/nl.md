@@ -1,8 +1,8 @@
 ---
-title: "Leg Width"
+title: "Beenbreedte"
 ---
 
-The width of the legs can be adjusted.
+De breedte van de poten kan worden aangepast.
 
 ## Effect van deze optie op het patroon
 
