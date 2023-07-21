@@ -1,66 +1,66 @@
 ---
 author: "joostdecock"
-caption: "This release brought to you from Bangkok"
+caption: "Este comunicado llega desde Bangkok"
 date: "2018-03-21"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/34ed654dcda9004e7c249b90256ad197469cc87e-1920x1277.webp"
-intro: "We've just pushed the  button on core 1.8.0. That bump in minor number is typically because we have a new pattern, but in this case, there's two reasons:"
-title: "Freesewing core 1.8: Jaeger Jacket is in, across back measurement is out"
+intro: "Acabamos de pulsar el botón del núcleo 1.8.0. Ese bache en el número menor suele deberse a que tenemos un nuevo patrón, pero en este caso, hay dos razones:"
+title: "Núcleo libre 1.8: la chaqueta Jaeger está dentro, la medida transversal a la espalda está fuera"
 ---
 
 
-We've just pushed the *release* button on core 1.8.0. That bump in minor number is typically because we have a new pattern, but in this case, there's two reasons:
+Acabamos de pulsar el botón de publicación ** en el núcleo 1.8.0. Ese bache en el número menor suele deberse a que tenemos un nuevo patrón, pero en este caso, hay dos razones:
 
- - The [Jaeger Jacket](/patterns/jaeger) is now available
- - We've gotten rid of the *across back* measurement
+ - Ya está disponible la [Chaqueta Jaeger](/patterns/jaeger)
+ - Nos hemos librado de la medida *a través de la espalda*
 
-Read on for the details.
+Sigue leyendo para conocer los detalles.
 
-## Announcing the Jaeger Jacket
+## Anunciamos la Chaqueta Jaeger
 
-For [my refasioners entry last year](/blog/the-refashioners-2017/) I designed a jacket pattern that I intially wanted to release alongside my make. It didn't work out that way, and I asked for a bit more time to get the pattern out the door.
+Para [mi entrada de refasioners del año pasado](/blog/the-refashioners-2017/) diseñé un patrón de chaqueta que en principio quería publicar junto con mi marca. No funcionó así, y pedí un poco más de tiempo para sacar el patrón.
 
-Turns out that when I say *a bit more time* it means 6 and a half months, so please forgive me for the delay, but here it is, [the Jaeger Jacket](/designs/jaeger).
+Resulta que cuando digo *un poco más de tiempo* significa 6 meses y medio, así que disculpad el retraso, pero aquí está, [la Chaqueta Jaeger](/designs/jaeger).
 
-![Note that in my post back then, I was talking about the Blake Blazer, but I've since renamed it because Jaeger Jacket is just cooler](https://posts.freesewing.org/uploads/jaeger_1cb91a3cd3.jpg)
-
-
-
-### Jaeger Sport Coat is not an alliteration
-
-Jaeger is a sport coat style of jacket. As in, a single-breasted jacket with a 2-button closure, and patch pockets.
-
-In other words, this is a garment that's typically worn on jeans or other trousers, and not as part of a suit.
-
-### Options galore
-
-Jaeger comes with 38 options, so you can change *a lot* about this pattern.
-
-No need to worry though, it also comes with sensible defaults, so you can just as well ignore all those choices.
-
-## The across back measurement is no more
-
-Speaking of sensible defaults, Jaeger is not the only new thing in freesewing core 1.8.0, which is out today.
-
-We've also gotten rid of the *across back* measurement.
-
-The across back measurement was cause of a great deal of confusion among our users. More often than not, when someone contacted us because their pattern looked wonky, an unrealistic across back measurement was to blame.
-
-The roots of the across back measurement go back to a time when, instead of the *shoulder to shoulder* measurement we use now, we had the *shoulder length* measurement. That one was also source of some confusion, so we phased it out in favour of the *shoulder to shoulder* measurement.
-
-The thing is that if we know the *shoulder to shoulder* measurement, we can guestimate with reasonable accuracy what the *across back* measurement will be. So, instead of asking you for it, we simply assume now.
-
-### But you're dumbing down the pattern
-
-In case the *this pattern comes with 38 options* bit above wasn't enough of a giveaway, we're pretty committed here at freesewing to give you all the knobs to tweak your drafts.
-
-Replacing a measurement with a value calculated based on another measurement may seem to go against that, but there's no need to worry. We've made sure you can still muck about with your across back.
-
-Patterns that used to require the *across back* measurement now have a new advanced option: the *across back factor*. It allows you to tweak how we calculate your across back measurement, but does make sure to keep it within boundaries that are sensible.
-
-![The across back factor option](https://posts.freesewing.org/uploads/acrossback_60791a4392.png)
+![Ten en cuenta que en mi post de entonces hablaba de la Blake Blazer, pero le he cambiado el nombre porque Jaeger Jacket es simplemente más guay](https://posts.freesewing.org/uploads/jaeger_1cb91a3cd3.jpg)
 
 
-As such, we feel we're preventing mistakes for the casual user, without taking away power from you, the pattern option guru.
 
-Or to put it differently, you can still muck about with your across back, but by default, you don't have to worry about it anymore.
+### Jaeger Sport Coat no es una aliteración
+
+Jaeger es un estilo de chaqueta deportiva. Como una chaqueta de un solo pecho con cierre de 2 botones y bolsillos de parche.
+
+En otras palabras, es una prenda que se suele llevar sobre vaqueros u otros pantalones, y no como parte de un traje.
+
+### Multitud de opciones
+
+Jaeger viene con 38 opciones, así que puedes cambiar mucho ** sobre este patrón.
+
+Pero no te preocupes, también viene con valores por defecto razonables, así que puedes ignorar todas esas opciones.
+
+## La medida a lo ancho de la espalda no es más
+
+Hablando de valores por defecto sensatos, Jaeger no es la única novedad del núcleo de freesewing 1.8.0, que sale hoy.
+
+También nos hemos librado de la medida *a través de la espalda* .
+
+La medida transversal de la espalda era causa de mucha confusión entre nuestros usuarios. La mayoría de las veces, cuando alguien se ponía en contacto con nosotros porque su patrón parecía torcido, la culpa era de una medida de espalda poco realista.
+
+Las raíces de la medida a través de la espalda se remontan a una época en la que, en lugar de la medida *de hombro a hombro* que utilizamos ahora, teníamos la medida *de longitud de hombros* . Ésta también era fuente de confusión, así que la hemos eliminado gradualmente en favor de la medida *de hombro a hombro* .
+
+La cuestión es que si conocemos la medida de *de hombro a hombro* , podemos estimar con razonable exactitud cuál será la medida de *a través de la espalda* . Así que, en lugar de pedírtelo, ahora simplemente lo asumimos.
+
+### Pero estás simplificando el patrón
+
+En caso de que el *este patrón viene con 38 opciones* poco más arriba no fuera suficiente regalo, estamos bastante comprometidos aquí en freesewing a darte todas las perillas para ajustar tus borradores.
+
+Sustituir una medida por un valor calculado a partir de otra medida puede parecer que va en contra de eso, pero no hay por qué preocuparse. Nos hemos asegurado de que puedas seguir jugueteando con tu espalda cruzada.
+
+Los patrones que solían requerir la medida *a través de la espalda* tienen ahora una nueva opción avanzada: el factor *a través de la espalda*. Te permite ajustar la forma en que calculamos la medida de tu espalda, pero se asegura de mantenerla dentro de unos límites razonables.
+
+![La opción del factor espalda cruzada](https://posts.freesewing.org/uploads/acrossback_60791a4392.png)
+
+
+De este modo, creemos que evitamos errores al usuario ocasional, sin quitarte poder a ti, el gurú de las opciones de patrón.
+
+O dicho de otro modo, puedes seguir jodiendo con tu espalda cruzada, pero por defecto, ya no tienes que preocuparte por ella.
 
