@@ -1,8 +1,8 @@
 ---
-title: "Taper to gusset"
+title: "Verjüngung zum Zwickel"
 ---
 
-Controls how much the front will curve inwards to meet the gusset.
+Steuert, wie stark sich die Vorderseite nach innen wölbt, um auf den Zwickel zu treffen.
 
 ## Effekt dieser Option auf das Schnittmuster
 
