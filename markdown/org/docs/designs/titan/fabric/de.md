@@ -1,10 +1,10 @@
 ---
-title: "Titan trouser block: Fabric Options"
+title: "Titan-Hosenblock: Stoff Optionen"
 ---
 
-If you are making a default Titan to see how it fits we recommend a fabric such as **Calico (Muslin)** or a cheaper fabric that matches the drape and stretch of the fabric you intend to make a finalised version of Titan with.
+Wenn du einen Standard-Titan anfertigst, um zu sehen, wie er passt, empfehlen wir einen Stoff wie **Calico (Muslin)** oder einen billigeren Stoff, der dem Faltenwurf und der Dehnbarkeit des Stoffes entspricht, aus dem du die endgültige Version des Titans anfertigen willst.
 
-You can use scraps of fabrics from your stash so don't worry about buying fabric specifically for Titan.
+Du kannst Stoffreste aus deinem Vorrat verwenden, du musst also nicht extra Stoff für Titan kaufen.
 
 <Note>
 
