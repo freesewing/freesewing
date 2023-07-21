@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ebfd17f37ad974a3d2814
 intro: "Брюки від Paul"
 title: "Брюки від Paul"
 designs:
-  - "bruce"
+  - "Брюс."
 ---
 
 ![Вид ззаду](https://posts.freesewing.org/uploads/bruces_by_paul_back_19f9daa0e8.jpg "Вид ззаду")
