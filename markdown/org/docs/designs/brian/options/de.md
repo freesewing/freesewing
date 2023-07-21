@@ -1,12 +1,12 @@
 ---
-title: "Brian body block: Design Options"
+title: "Brian Body Block: Gestaltungsmöglichkeiten"
 ---
 
 <PatternOptions pattern='brian' />
 
 ## Die Ärmel verstehen
 
-In version 2 of FreeSewing, the sleevecap of Brian was redesigned to be more adaptable to different types of sleeves and garments. Das Ergebnis ist, dass die Ärmelkugel allein über 20 Optionen zur Kontrolle der Form hat. Whereas that may seem a bit overwhelming at first, understanding how the sleevecap is drafted makes it easy to understand what all the individual options do.
+In version 2 of FreeSewing, the sleevecap of Brian was redesigned to be more adaptable to different types of sleeves and garments. Das Ergebnis ist, dass die Ärmelkugel allein über 20 Optionen zur Kontrolle der Form hat. Das mag auf den ersten Blick etwas überwältigend erscheinen, aber wenn du verstehst, wie die sleevecap aufgebaut ist, kannst du leicht nachvollziehen, was die einzelnen Optionen bewirken.
 
 ### Die Begrenzungsbox
 
@@ -25,9 +25,9 @@ ist. In unserem Beispiel befindet sich die Vorderseite der Ärmel auf der rechte
 Während Muster typischerweise eine Anzeige haben, die zeigt, welche Seite welche ist (eine einzige Note
 bedeutet die Front, während ein Doppelbett den Rücken bedeutet), können Sie auch
 die Vorderseite einer Ärmel erkennen, da sie kurviger ist. Die Rückseite der
-Ärmelkarte wird ebenfalls gebogen, aber es ist eine flachere Kurve. That's because the human shoulder
-is more pronounced and curved on the front of the body, thus the sleevecap is more curved
-there to fit the shoulder.
+Ärmelkarte wird ebenfalls gebogen, aber es ist eine flachere Kurve. Das liegt daran, dass die menschliche Schulter
+auf der Vorderseite des Körpers stärker ausgeprägt und gekrümmt ist, daher ist die Ärmelkappe
+dort stärker gekrümmt, um sich der Schulter anzupassen.
 
 </Note>
 
@@ -35,7 +35,7 @@ The width of the sleevecap (and thus the width of the sleeve at the bottom of th
 
 ![Oberseite der Ärmel steuern](sleevecaptop.svg)
 
-Die Höhe der Ärmel entspricht der Entfernung zwischen den Punkten 3 und 4. The exact height is a trade-off between the measurments of the model, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. Die Höhe kann also variieren und wir kontrollieren nicht den exakten Wert. Aber es gibt zwei Optionen, die die Form unserer Ärmel kontrollieren:
+Die Höhe der Ärmel entspricht der Entfernung zwischen den Punkten 3 und 4. Die genaue Höhe ist ein Kompromiss zwischen den Maßen des Modells, den Optionen, der Bequemlichkeit, der Bequemlichkeit der Ärmelkappe und der Tatsache , dass der Ärmel letztendlich zum Armloch passen muss. Die Höhe kann also variieren und wir kontrollieren nicht den exakten Wert. Aber es gibt zwei Optionen, die die Form unserer Ärmel kontrollieren:
 
 - [Sleevecap Top X](/docs/patterns/brian/options/sleevecaptopfactorx/) : Steuert die horizontale Platzierung von Punkt 3 und 4
 - [Sleevecap oben Y](/docs/patterns/brian/options/sleevecaptopfactory/) : Steuert die vertikale Platzierung von Punkt 4
@@ -46,7 +46,7 @@ In other words, point 4 can be made higher and lower and, perhaps less intutitiv
 
 ![Steuerung der Ablenkungspunkte](sleevecapinflection.svg)
 
-Mit den Punkten 1, 2, 3 und 4 haben wir ein Kästchen zum Einzeichnen unserer Ärmel. Now it's time to map out our _inflection points_. These are points 5 and 6 on our drawing, and their placement is determined by the following 4 options:
+Mit den Punkten 1, 2, 3 und 4 haben wir ein Kästchen zum Einzeichnen unserer Ärmel. Jetzt ist es an der Zeit, unsere _Wendepunkte_darzustellen. Das sind die Punkte 5 und 6 auf unserer Zeichnung, und ihre Platzierung wird durch die folgenden 4 Optionen bestimmt:
 
 - [Sleevecap zurück X](/docs/patterns/brian/options/sleevecapbackfactorx) : Steuert die horizontale Platzierung von Punkt 5
 - [Sleevecap zurück Y](/docs/patterns/brian/options/sleevecapbackfactory) : Steuert die vertikale Platzierung von Punkt 5
@@ -66,7 +66,7 @@ hilfreich, um die Punkte zu schaffen, die immer auf der Ärmel liegen: die Anker
 
 Letztlich wird unsere Ärmel die Kombination aus 5 Kurven sein. In addition to points 1 and 2, the four _anchor points_ that are marked in orange in our example will be the start/finish of those curves.
 
-The points are _offset_ perpendicular from the middle of a line between the two anchor points surrounding them. Der Offset für jeden Punkt wird durch diese 4 Optionen kontrolliert:
+Die Punkte sind _versetzt_ senkrecht zur Mitte einer Linie zwischen den beiden Ankerpunkten , die sie umgeben. Der Offset für jeden Punkt wird durch diese 4 Optionen kontrolliert:
 
 - [Sleevecap Q1 Offset](/docs/patterns/brian/options/sleevecapq1offset) : Steuert den senkrechten Offset zur Linie von Punkt 2 bis 6
 - [Sleevecap Q2 Offset](/docs/patterns/brian/options/sleevecapq2offset) : Steuert den senkrechten Offset auf die Linie von Punkt 6 bis 4
@@ -78,8 +78,8 @@ The points are _offset_ perpendicular from the middle of a line between the two 
 Wir haben unsere Ärmel in 4 Quartale aufgeteilt. Wir beginnen vorne (das rechte Beispiel in unserem Beispiel)
 mit Viertel 1, und fahren Sie mit Quartal 4 bis zur Rückseite.
 
-Like the offset option, the last options to determine the shape of our sleevecap will just repeat so you can
-control each quarter individually.
+Wie bei der Offset-Option wiederholen sich auch die letzten Optionen, um die Form unserer Ärmelkappe zu bestimmen, so dass du unter
+jedes Viertel einzeln steuern kannst.
 
 </Note>
 
@@ -87,18 +87,18 @@ control each quarter individually.
 
 ![Steuerung der Ankerpunkte](sleevecapspread.svg)
 
-Wir haben jetzt alle Anfangs- und Endpunkte, um die 5 Kurven zu zeichnen, die unsere Ärmel ausmachen. What we're missing are the control points (see [our info on Bézier curves](https://freesewing.dev/concepts/beziercurves) to learn more about how curves are constructed). Diese werden durch den so genannten _Spread_ bestimmt.
+Wir haben jetzt alle Anfangs- und Endpunkte, um die 5 Kurven zu zeichnen, die unsere Ärmel ausmachen. Was uns fehlt, sind die Kontrollpunkte (siehe [unsere Infos zu Bézier-Kurven](https://freesewing.dev/concepts/beziercurves) um mehr darüber zu erfahren, wie Kurven konstruiert werden). Diese werden durch den so genannten _Spread_ bestimmt.
 
 For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option to control the spread upwards, and downwards:
 
 - [Sleevecap Q1 nach unten ausgebreitet](/docs/patterns/brian/options/sleevecapq1spread1) : Steuert die Abwärtsverteilung im ersten Quartal
-- [Sleevecap Q1 upward spread](/docs/patterns/brian/options/sleevecapq1spread2) : Controls the upward spread in the first quarter
+- [Sleevecap Q1 Aufwärtsspread](/docs/patterns/brian/options/sleevecapq1spread2) : Steuert den Aufwärtsspread im ersten Quartal
 - [Sleevecap Q2 nach unten verteilt](/docs/patterns/brian/options/sleevecapq2spread1) : Steuert die Abwärtsverteilung im zweiten Quartal
-- [Sleevecap Q2 upward spread](/docs/patterns/brian/options/sleevecapq2spread2) : Controls the upward spread in the second quarter
-- [Sleevecap Q3 upward spread](/docs/patterns/brian/options/sleevecapq3spread1) : Controls the upward spread in the third quarter
+- [Sleevecap Q2 upward spread](/docs/patterns/brian/options/sleevecapq2spread2) : Steuert die Aufwärtsspanne im zweiten Quartal
+- [Sleevecap Q3 upward spread](/docs/patterns/brian/options/sleevecapq3spread1) : Steuert die Aufwärtsspanne im dritten Quartal
 - [Sleevecap Q3 nach unten verteilt](/docs/patterns/brian/options/sleevecapq3spread2) : Steuert die Abwärtsverteilung im dritten Quartal
-- [Sleevecap Q4 upward spread](/docs/patterns/brian/options/sleevecapq4spread1) : Controls the upward spread in the fourth quarter
-- [Sleevecap Q4 downward spread](/docs/patterns/brian/options/sleevecapq4spread2) : Controls the downward spread in the fourth quarter
+- [Sleevecap Q4 upward spread](/docs/patterns/brian/options/sleevecapq4spread1) : Steuert die Aufwärtsspanne im vierten Quartal
+- [Sleevecap Q4 Downward Spread](/docs/patterns/brian/options/sleevecapq4spread2) : Steuert den Downward Spread im vierten Quartal
 
 <Note>
 
@@ -111,7 +111,7 @@ die Kurve wird übersteigen.
 
 ### Takeaways
 
-While the sleevecap in Brian (and all patterns that extend Brian) have a lot of options, understanding how the sleevecap is constructed can help you design the exact sleevecap shape you want. Zu tun:
+Die Ärmelkappe in Brian (und allen anderen Mustern, die Brian verlängern) bietet zwar viele Möglichkeiten, aber wenn du verstehst, wie die Ärmelkappe aufgebaut ist, kannst du genau die Form entwerfen, die du willst. Zu tun:
 
 - Beginnen Sie mit der Platzierung der Oberseite Ihrer Sleevecap
 - Dann bestimmen Sie die Wendepunkte
