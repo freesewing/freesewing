@@ -2,10 +2,10 @@
 title: "Innentaschentiefe"
 ---
 
-How deep you would like the inner pocket to be.
+Wie tief du die Innentasche haben möchtest.
 
-- Increase this option to make a deeper inner pocket
-- Decrease this option to make a shallower inner pocket
+- Erhöhe diese Option, um eine tiefere Innentasche zu erhalten
+- Verringere diese Option, um eine flachere Innentasche zu erhalten.
 
 ## Effekt dieser Option auf das Schnittmuster
 
