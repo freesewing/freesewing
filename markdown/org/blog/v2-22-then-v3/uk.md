@@ -1,26 +1,26 @@
 ---
 author: "joostdecock"
-caption: "We're moving on"
+caption: "Ми рухаємося далі"
 date: "2022-08-23"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/6a5739e3f4ab7694fdd0d1f46c9ec7ecd4c6431b-1920x1280.jpg"
-intro: "We have released version 2.22 of FreeSewing. As always, a minor version bump indicates a new design, and this time it's the Octoplushy design by Wouter."
-title: "FreeSewing v2.22 is out, and will be the final minor release before v3"
+intro: "Ми випустили версію 2.22 FreeSewing. Як завжди, невелика зміна версії вказує на новий дизайн, і цього разу це дизайн Octoplushy від Wouter."
+title: "Вийшла версія 2.22 FreeSewing, яка стане останнім незначним оновленням перед версією 3"
 ---
 
-We have released version 2.22 of FreeSewing. As always, a minor version bump indicates a new design, and this time it's the [Octoplushy design](/designs/octoplushy) by Wouter.
+Ми випустили версію 2.22 FreeSewing. Як завжди, незначна зміна версії вказує на новий дизайн, і цього разу це [Octoplushy дизайн](/designs/octoplushy) від Wouter.
 
-Version 2.22 is planned to be the last minor release in the v2 branch. Momentum for version 3 has been building for a while, and during [this weekend's contributor call](https://github.com/freesewing/freesewing/discussions/2582) we decided we'd double down on those efforts and focus all our attention on the upcoming version 3.
+Планується, що версія 2.22 буде останнім незначним оновленням у гілці v2. Імпульс до створення версії 3 наростав протягом деякого часу, і під час [заклику дописувачів на цих вихідних](https://github.com/freesewing/freesewing/discussions/2582) ми вирішили подвоїти ці зусилля і зосередити всю нашу увагу на майбутній версії 3.
 
-## What does this all mean?
+## Що все це означає?
 
-In the short term, you might not even notice. FreeSewing.org will continue running the production-ready v2 code, while we start building version 3.
+У короткостроковій перспективі ви можете навіть не помітити. FreeSewing.org продовжить працювати з готовим до виробництва кодом v2, поки ми почнемо створювати версію 3.
 
-For developers and/or pattern designers, the situation is different. Effective immediately, our (default) `develop` branch in [our monorepo](https://github.com/freesewing/freesewing) is where we'll be working on version 3 code. Version 2 code is now in the `v2` branch where will will backport fixes for as long as version 3 is under development.
+Для розробників та/або дизайнерів шаблонів ситуація інша. Відтепер наша (стандартна) гілка `develop` знаходиться в [, а в нашому монорепозиторії](https://github.com/freesewing/freesewing) ми працюватимемо над кодом версії 3. Код версії 2 зараз знаходиться у гілці `v2` , де будуть підтримуватися виправлення, поки розробляється версія 3.
 
-To keep up to date of all changes, please refer to [freesewing.dev](https://freesewing.dev) where we will over time document everything you need to know about the migration.
+Щоб бути в курсі всіх змін, будь ласка, відвідайте [freesewing.dev](https://freesewing.dev) , де ми з часом задокументуємо все, що вам потрібно знати про міграцію.
 
-## When can we expect version 3?
+## Коли ми можемо очікувати версію 3?
 
-We have a lot of exciting plans, but they will take some time to manifest. I suspect the first production release of version 3 code, and the rollout on FreeSewing.org will be a matter for 2023.
+У нас є багато цікавих планів, але для їх реалізації потрібен певний час. Я підозрюю, що перший виробничий реліз коду версії 3 і розгортання на FreeSewing.org стане справою 2023 року.
 
 
