@@ -1,80 +1,8 @@
+import allLanguages from '../../../config/languages.json' assert { type: 'json' }
+import { loadTranslations } from './shared.mjs'
 import { freeSewingConfig as conf } from '../config/freesewing.config.mjs'
 import { designs, tags } from '../config/designs.mjs'
-// Translation via i18next directly
 import i18next from 'i18next'
-// Actual translations for various languages
-// EN
-import accountEn from '../../lab/public/locales/en/sections.json' assert { type: 'json' }
-import designsEn from '../../lab/public/locales/en/sections.json' assert { type: 'json' }
-import sectionsEn from '../../lab/public/locales/en/sections.json' assert { type: 'json' }
-import tagsEn from '../../lab/public/locales/en/sections.json' assert { type: 'json' }
-// DE
-import accountDe from '../../lab/public/locales/de/sections.json' assert { type: 'json' }
-import designsDe from '../../lab/public/locales/de/sections.json' assert { type: 'json' }
-import sectionsDe from '../../lab/public/locales/de/sections.json' assert { type: 'json' }
-import tagsDe from '../../lab/public/locales/de/sections.json' assert { type: 'json' }
-// ES
-import accountEs from '../../lab/public/locales/es/sections.json' assert { type: 'json' }
-import designsEs from '../../lab/public/locales/es/sections.json' assert { type: 'json' }
-import sectionsEs from '../../lab/public/locales/es/sections.json' assert { type: 'json' }
-import tagsEs from '../../lab/public/locales/es/sections.json' assert { type: 'json' }
-// FR
-import accountFr from '../../lab/public/locales/fr/sections.json' assert { type: 'json' }
-import designsFr from '../../lab/public/locales/fr/sections.json' assert { type: 'json' }
-import sectionsFr from '../../lab/public/locales/fr/sections.json' assert { type: 'json' }
-import tagsFr from '../../lab/public/locales/fr/sections.json' assert { type: 'json' }
-// NL
-import accountNl from '../../lab/public/locales/nl/sections.json' assert { type: 'json' }
-import designsNl from '../../lab/public/locales/nl/sections.json' assert { type: 'json' }
-import sectionsNl from '../../lab/public/locales/nl/sections.json' assert { type: 'json' }
-import tagsNl from '../../lab/public/locales/nl/sections.json' assert { type: 'json' }
-// UK
-import accountUk from '../../lab/public/locales/uk/sections.json' assert { type: 'json' }
-import designsUk from '../../lab/public/locales/uk/sections.json' assert { type: 'json' }
-import sectionsUk from '../../lab/public/locales/uk/sections.json' assert { type: 'json' }
-import tagsUk from '../../lab/public/locales/uk/sections.json' assert { type: 'json' }
-
-/*
- * Construct an object we can load the translations from
- */
-const translations = {
-  en: {
-    account: accountEn,
-    design: designsEn,
-    sections: sectionsEn,
-    tags: tagsEn,
-  },
-  de: {
-    account: accountDe,
-    design: designsDe,
-    sections: sectionsDe,
-    tags: tagsDe,
-  },
-  es: {
-    account: accountEs,
-    design: designsEs,
-    sections: sectionsEs,
-    tags: tagsEs,
-  },
-  fr: {
-    account: accountFr,
-    design: designsFr,
-    sections: sectionsFr,
-    tags: tagsFr,
-  },
-  nl: {
-    account: accountNl,
-    design: designsNl,
-    sections: sectionsNl,
-    tags: tagsNl,
-  },
-  uk: {
-    account: accountUk,
-    design: designsUk,
-    sections: sectionsUk,
-    tags: tagsUk,
-  },
-}
 
 /* Remember Mc_Shifton:
  * Note: Set 'm' to truthy to show this as a main section in the side-navigation (optional)
@@ -88,7 +16,13 @@ const translations = {
  * Note: Set 'o' to set the order (optional)
  * Note: Set 'n' to mark this as a noisy entry that should always be closed unless active (like blog)
  */
-export const extendSiteNav = (pages, lang) => {
+export const extendSiteNav = async (pages, lang) => {
+  const translations = await loadTranslations({
+    site: 'lab',
+    namespaces: ['account', 'design', 'sections', 'tags'],
+    languages: allLanguages,
+  })
+
   const resources = {}
   resources[lang] = translations[lang]
   i18next.init({
