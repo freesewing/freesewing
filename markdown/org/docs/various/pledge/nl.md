@@ -8,14 +8,14 @@ De **FreeSewing revenue commitment** verklaart dat:
 
 De onderhouder van FreeSewing (joost) heeft de belofte gedaan en deze belofte ook gestand gedaan. Je kunt lezen over [zijn motivaties om dit te doen op deze pagina](/docs/various/pledge/motivation/).
 
-## Revenue history
+## Inkomstengeschiedenis
 
 <table class="table table-striped text-base-content">
   <thead>
     <tr>
       <th>jaar</th>
-      <th>Revenue</th>
-      <th>Currency</th>
+      <th>Inkomsten</th>
+      <th>Valuta</th>
     </tr>
   </thead>
   <tbody>
@@ -55,15 +55,15 @@ De onderhouder van FreeSewing (joost) heeft de belofte gedaan en deze belofte oo
       <td>euro</td>
     </tr>
     <tr>
-      <td>**Total**</td>
+      <td>**Totaal**</td>
       <td>`29.489,40`</td>
-      <td>**Euro donated to MSF**</td>
+      <td>**Euro gedoneerd aan Artsen zonder Grenzen**</td>
     </tr>
   </tbody>
 </table>
 
 <Tip>
 
-If you'd like to support FreeSewing, you can [do so by becoming a patron](/patrons/join/)
+Als je FreeSewing wilt steunen, kun je [dat doen door een mecenas te worden](/patrons/join/)
 
 </Tip>
