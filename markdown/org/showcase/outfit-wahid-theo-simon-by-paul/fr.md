@@ -1,5 +1,5 @@
 ---
-maker: "unknown"
+maker: "inconnue"
 caption: "Ensemble - Simon, Theo & Wahid par Paul"
 date: "2018-01-02"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4cf88b3cad5a8920a471a984b172e8f0fc7cee32-2000x2666.jpg"
