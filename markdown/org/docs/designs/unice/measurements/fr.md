@@ -1,5 +1,5 @@
 ---
-title: "Unice undies: Required measurements"
+title: "Sous-vêtements Unice : Mesures requises"
 ---
 
 <PatternMeasurements pattern='unice' />
