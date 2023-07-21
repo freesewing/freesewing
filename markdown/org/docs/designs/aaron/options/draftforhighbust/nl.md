@@ -2,7 +2,7 @@
 title: Teken voor hoge buste
 ---
 
-Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts.
+Stel het patroon op voor de hoge borstomvang (indien beschikbaar) in plaats van de (volle) borst. Dit resulteert in een beter passend kledingstuk voor mensen met borsten.
 
 ## Effect van deze optie op het patroon
 
