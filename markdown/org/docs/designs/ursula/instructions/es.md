@@ -1,5 +1,5 @@
 ---
-title: "Ursula undies: Sewing Instructions"
+title: "Calzoncillos Ursula: Instrucciones de costura"
 ---
 
 ### Paso 1: Agarra la parte frontal a la primera pieza de chispa
