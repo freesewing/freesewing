@@ -1,5 +1,5 @@
 ---
-title: "Simon shirt: Cutting Instructions"
+title: "Simon Shirt: Schnittanleitung"
 ---
 
 - **Oberstoff**
@@ -35,7 +35,7 @@ Wenn du die Teile einzeln ausschneidest, musst du daran denken, dass sie Spiegel
 
 ###### Caveats
 
-- The **front right**, **front left**, and **sleeve** have seams that should be made into flat-felled seams. Daher haben sie zusätzliche Nahtzuschüsse für diese Nähte. Beim Ausschneiden dieser Stücke musst du **muss** diese zusätzliche Naht berücksichtigen.
+- Die **Vorderseite rechts**, die **Vorderseite links** und der **Ärmel** haben Nähte, die zu Flachnähten gemacht werden sollten. Daher haben sie zusätzliche Nahtzuschüsse für diese Nähte. Beim Ausschneiden dieser Stücke musst du **muss** diese zusätzliche Naht berücksichtigen.
 The cuff guard and cuff placket have no seam allowance. Das ist normal, schneiden Sie sie einfach aus, wie sie auf dem Muster gezogen werden.
 Do not cut out the darts in the **back** piece. Sie sollten sie markieren, aber nicht ausschneiden.
 
