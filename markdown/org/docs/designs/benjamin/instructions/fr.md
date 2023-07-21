@@ -1,5 +1,5 @@
 ---
-title: "Benjamin bow tie: Sewing Instructions"
+title: "Nœud papillon Benjamin : Instructions de couture"
 ---
 
 ## Notes et conseils
