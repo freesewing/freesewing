@@ -1,7 +1,7 @@
 ---
-title: "Bob the Bib: Fabric Options"
+title: "Bob der Latz: Stoff-Optionen"
 ---
 
-An bib should be soft, absorbent, and be able to handle plenty of washing cycles. In addition, natural fibres are much preferred, especially for babies.
+Ein Lätzchen sollte weich und saugfähig sein und viele Waschgänge aushalten können. Außerdem werden Naturfasern bevorzugt, besonders bei Babys.
 
-So use cotton, flannel, or jersey knit for the bib front of the bib, and back it with something like terrycloth (aka towel fabric) or a similar bamboo-based fabric.
+Verwende also für die Vorderseite des Lätzchens Baumwolle, Flanell oder Strickjersey und für die Rückseite etwas wie Frottee (auch Handtuchstoff genannt) oder einen ähnlichen Stoff auf Bambusbasis.
