@@ -1,5 +1,5 @@
 ---
-title: "Paco pants: Sewing Instructions"
+title: "Pantalon Paco : Instructions de couture"
 ---
 
 <Tip>
@@ -265,8 +265,8 @@ Vous fixerez vos poignets de la même façon que vous fixez la ceinture. As with
 
 <Note>
 
-If your sewing machine has a detachable bed (usually removed to expose the "free arm" for sewing
-sleeve cuffs), this will make sewing the cuffs easier.
+Si ta machine à coudre possède un lit amovible (généralement retiré pour exposer le "bras libre" afin de coudre les manchettes de
+), cela facilitera la couture des manchettes.
 
  </Note>
 
