@@ -1,5 +1,5 @@
 ---
-title: "Teagan T-shirt: Sewing Instructions"
+title: "Camiseta Teagan: Instrucciones de costura"
 ---
 
 ## Paso 1: Cierra las costuras del hombro
@@ -25,47 +25,47 @@ Opcional: En un tejedor más apretado, puede optar por reforzar las costuras del
 - Coser / servir tu manga anclada en su lugar.
 - Repita para la otra manga.
 
-## Step 3: Sew the neck finish
+## Paso 3: Cose la terminación del cuello
 
-There are two options for the neck finish on Teagan: a knit band or knit binding. Knit band is what you typically see on store-bought T-shirts, whereas knit binding is the finish you'll find on the Aaron A-Tank. Directions for both are given here.
+Hay dos opciones para el acabado del cuello de Teagan: una banda de punto o un ribete de punto. La banda de punto es lo que sueles ver en las camisetas compradas en tiendas, mientras que el ribete de punto es el acabado que encontrarás en la camiseta Aaron A-Tank. Aquí se dan las instrucciones para ambos.
 
 <Note>
 Este es el paso más complejo para hacer la camisa de Teagan, pero sólo requiere un poco de práctica. No te preocupes, todo lo que tienes que hacer es hacer un par de estos y serás un profesional en poco tiempo.
 </Note>
 
-### Option 1: knit band finish
+### Opción 1: acabado de banda de punto
 
-#### Place (the start of) your knit band
+#### Coloca (el inicio de) tu banda de punto
 
-![Place your knit band](step03f.svg)
+![Coloca tu banda de punto](step03f.svg)
 
-- Fold your binding in half lengthwise (parallel to the longest side), and press.
-- Put your T-shirt down with the back good side up, and place your band strip on top of it, lining up the raw edges of the band with the raw edge of the neck opening.
-- Your band should start at the center back of the neck opening.
+- Dobla la encuadernación por la mitad a lo largo (paralelamente al lado más largo), y presiona.
+- Coloca la camiseta con la parte buena de la espalda hacia arriba, y pon encima la tira de banda, alineando los bordes crudos de la banda con el borde crudo de la abertura del cuello.
+- Tu banda debe empezar en el centro de la parte posterior de la abertura del cuello.
 - Ahora desplaza tu tira de unión de 1 cm más allá de tu punto de partida. Este pequeño extra garantizará que podamos unirnos a los dos fines más adelante.
 
-#### Sew band in place
+#### Cose la banda en su sitio
 
-![Sew knit band in place](step03g.svg)
+![Cose la banda de punto en su sitio](step03g.svg)
 
-- Place your presser foot 3 cm along the knit band, so a 4 cm tail will be left unstitched. This will help us join the ends together later. Then, sew around the neck opening, stretching the band gently as you sew.
+- Coloca el prensatelas a 3 cm a lo largo de la banda de punto, de modo que quede una cola de 4 cm sin coser. Esto nos ayudará a unir los extremos más tarde. Luego, cose alrededor de la abertura del cuello, estirando la banda suavemente mientras coses.
 
 <Note>
   
-This stretching is the trickiest part. Many online tutorials will tell you to simply start with a band slightly smaller than the neck opening, and stretch to fit. While an option, this does not account for differences in fabric stretch and elasticity, and can result in a floppy or puckered neck finish. Stretching to fit the neck opening by feel is something that takes a bit of practice, but is a good skill to build for better finishes long-term.
+Este estiramiento es la parte más complicada. Muchos tutoriales en línea te dirán que empieces simplemente con una banda ligeramente más pequeña que la abertura del cuello, y que la estires hasta ajustarla. Aunque es una opción, no tiene en cuenta las diferencias de elasticidad y estiramiento del tejido, y puede dar lugar a un acabado de cuello flojo o fruncido. Estirarse para ajustarse a la abertura del mástil mediante el tacto es algo que requiere un poco de práctica, pero es una buena habilidad a desarrollar para conseguir mejores acabados a largo plazo.
   
 </Note>
 
 - Dejar de coser 3 cm antes del final, dejando una cola como lo hicimos al principio.
 
-#### Sew band ends together
+#### Cose los extremos de la banda
 
-![Sew band ends](step03c.svg)
+![Cose los extremos de la banda](step03c.svg)
 
-Now it's time to sew the ends of our knit band together.
-- Take the end of your knit band, and stretch it along the 3 cm separating it from the start point as you would while sewing. On the band, mark where the band reached the start point, or center back. Haga lo mismo con el otro extremo.
-- Fold your T-shirt in whatever way makes it more easy for you to place both band ends with good sides together, aligning the marks. Consúltenlos juntos en las marcas.
- - You should now have a joined knit band.
+Ahora es el momento de coser los extremos de nuestra banda de punto.
+- Coge el extremo de tu banda de punto y estíralo a lo largo de los 3 cm que lo separan del punto de inicio, como harías al coser. En la banda, marca dónde llegó la banda al punto de inicio, o al centro de la espalda. Haga lo mismo con el otro extremo.
+- Dobla la camiseta de la forma que te resulte más fácil para colocar los dos extremos de la banda con los lados bien juntos, alineando las marcas. Consúltenlos juntos en las marcas.
+ - Ahora deberías tener una banda de punto unida.
 
 <Note>
 
@@ -73,15 +73,15 @@ Now it's time to sew the ends of our knit band together.
 
 </Note>
 
-![Finish knit band](step03h.svg)
+![Banda de punto de acabado](step03h.svg)
 
-- Now that your band ends are joined together, it’s time to finish the last 6 cm, by stretching and sewing down the band as you did for the rest.
+- Ahora que los extremos de la banda están unidos, es el momento de terminar los últimos 6 cm, estirando y cosiendo la banda como hiciste con el resto.
 
-Hurray! You've finished the trickiest part! Hurray! You've finished the trickiest part! Optionally, you can secure the raw edges by stitching them down to the T-shirt fabric, just inside the knit band with a sig-zag or coverlock stitch. This is not required, but it is a detail that you'll see on many ready-to-wear T-shirts, and it can help your neck band lie flat.
+¡Hurra! ¡Has terminado la parte más difícil! Hurray! You've finished the trickiest part! Optionally, you can secure the raw edges by stitching them down to the T-shirt fabric, just inside the knit band with a sig-zag or coverlock stitch. No es obligatorio, pero es un detalle que verás en muchas camisetas listas para llevar, y puede ayudar a que la banda del cuello quede plana.
 
-![Sew down knit band to secure](step03i.svg)
+![Cose la banda de punto para fijarla](step03i.svg)
 
-### Option 2: knit binding finish
+### Opción 2: acabado de punto
 
 <Tip>
 
