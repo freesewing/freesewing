@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/eb82ceffa42a328a5e2ff
 intro: "Клер зробила цього Свена у червоно-чорному смугастому трикотажі і додала те, що ми можемо лише припустити - її тварину-духа."
 title: "Свен від Клер"
 designs:
-  - "sven"
+  - "Свен"
 ---
 
 
