@@ -1,8 +1,8 @@
 ---
-title: undefined
+title: undefiniert
 ---
 
-undefined
+undefiniert
 
 ## Effekt dieser Option auf das Schnittmuster
 
