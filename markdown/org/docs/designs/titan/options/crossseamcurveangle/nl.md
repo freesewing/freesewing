@@ -2,10 +2,10 @@
 title: "Grensoverschrijdende hoek"
 ---
 
-Controls the angle of cross seam curve.
+Regelt de hoek van de kruisnaadcurve.
 
-- 0% makes the cross seam draft parallel to the hem.
-- Increasing this option will draft the cross seam at that angle away from the hem.
+- 0% maakt de dwarsnaad evenwijdig aan de zoom.
+- Als je deze optie verhoogt, wordt de dwarsnaad in die hoek van de zoom af getrokken.
 
 ## Effect van deze optie op het patroon
 
