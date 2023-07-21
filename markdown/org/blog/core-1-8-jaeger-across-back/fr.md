@@ -1,66 +1,66 @@
 ---
 author: "joostdecock"
-caption: "This release brought to you from Bangkok"
+caption: "Ce communiqué t'est présenté par Bangkok"
 date: "21-03-2018"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/34ed654dcda9004e7c249b90256ad197469cc87e-1920x1277.webp"
-intro: "We've just pushed the  button on core 1.8.0. That bump in minor number is typically because we have a new pattern, but in this case, there's two reasons:"
-title: "Freesewing core 1.8: Jaeger Jacket is in, across back measurement is out"
+intro: "Nous venons d'appuyer sur le bouton du noyau 1.8.0. Cette augmentation du nombre de mineurs est généralement due à un nouveau modèle, mais dans ce cas, il y a deux raisons :"
+title: "Freesewing core 1.8 : La veste Jaeger est en place, la mesure transversale du dos est supprimée."
 ---
 
 
-We've just pushed the *release* button on core 1.8.0. That bump in minor number is typically because we have a new pattern, but in this case, there's two reasons:
+Nous venons d'appuyer sur le bouton *release* pour le noyau 1.8.0. Cette augmentation du nombre de mineurs est généralement due à un nouveau modèle, mais dans ce cas, il y a deux raisons :
 
- - The [Jaeger Jacket](/patterns/jaeger) is now available
- - We've gotten rid of the *across back* measurement
+ - La veste Jaeger [](/patterns/jaeger) est maintenant disponible.
+ - Nous nous sommes débarrassés de la mesure *à travers le dos* .
 
-Read on for the details.
+Lis la suite pour connaître les détails.
 
-## Announcing the Jaeger Jacket
+## Annonce la veste Jaeger
 
-For [my refasioners entry last year](/blog/the-refashioners-2017/) I designed a jacket pattern that I intially wanted to release alongside my make. It didn't work out that way, and I asked for a bit more time to get the pattern out the door.
+Pour [mon entrée de refasioners l'année dernière](/blog/the-refashioners-2017/) j'ai dessiné un patron de veste que je voulais initialement publier en même temps que ma création. Ça n'a pas marché comme ça, et j'ai demandé un peu plus de temps pour sortir le modèle.
 
-Turns out that when I say *a bit more time* it means 6 and a half months, so please forgive me for the delay, but here it is, [the Jaeger Jacket](/designs/jaeger).
+Il s'avère que lorsque je dis *un peu plus de temps* , cela signifie 6 mois et demi, alors pardonne-moi pour le retard, mais le voici, [la veste Jaeger](/designs/jaeger).
 
-![Note that in my post back then, I was talking about the Blake Blazer, but I've since renamed it because Jaeger Jacket is just cooler](https://posts.freesewing.org/uploads/jaeger_1cb91a3cd3.jpg)
-
-
-
-### Jaeger Sport Coat is not an alliteration
-
-Jaeger is a sport coat style of jacket. As in, a single-breasted jacket with a 2-button closure, and patch pockets.
-
-In other words, this is a garment that's typically worn on jeans or other trousers, and not as part of a suit.
-
-### Options galore
-
-Jaeger comes with 38 options, so you can change *a lot* about this pattern.
-
-No need to worry though, it also comes with sensible defaults, so you can just as well ignore all those choices.
-
-## The across back measurement is no more
-
-Speaking of sensible defaults, Jaeger is not the only new thing in freesewing core 1.8.0, which is out today.
-
-We've also gotten rid of the *across back* measurement.
-
-The across back measurement was cause of a great deal of confusion among our users. More often than not, when someone contacted us because their pattern looked wonky, an unrealistic across back measurement was to blame.
-
-The roots of the across back measurement go back to a time when, instead of the *shoulder to shoulder* measurement we use now, we had the *shoulder length* measurement. That one was also source of some confusion, so we phased it out in favour of the *shoulder to shoulder* measurement.
-
-The thing is that if we know the *shoulder to shoulder* measurement, we can guestimate with reasonable accuracy what the *across back* measurement will be. So, instead of asking you for it, we simply assume now.
-
-### But you're dumbing down the pattern
-
-In case the *this pattern comes with 38 options* bit above wasn't enough of a giveaway, we're pretty committed here at freesewing to give you all the knobs to tweak your drafts.
-
-Replacing a measurement with a value calculated based on another measurement may seem to go against that, but there's no need to worry. We've made sure you can still muck about with your across back.
-
-Patterns that used to require the *across back* measurement now have a new advanced option: the *across back factor*. It allows you to tweak how we calculate your across back measurement, but does make sure to keep it within boundaries that are sensible.
-
-![The across back factor option](https://posts.freesewing.org/uploads/acrossback_60791a4392.png)
+![Note que dans mon post de l'époque, je parlais du Blazer Blake, mais je l'ai depuis renommé parce que la veste Jaeger est tout simplement plus cool.](https://posts.freesewing.org/uploads/jaeger_1cb91a3cd3.jpg)
 
 
-As such, we feel we're preventing mistakes for the casual user, without taking away power from you, the pattern option guru.
 
-Or to put it differently, you can still muck about with your across back, but by default, you don't have to worry about it anymore.
+### Jaeger Sport Coat n'est pas une allitération.
+
+Jaeger est une veste de style manteau de sport. Comme dans, une veste à simple boutonnage avec une fermeture à 2 boutons, et des poches plaquées.
+
+En d'autres termes, c'est un vêtement qui se porte généralement sur un jean ou un autre pantalon, et non pas dans le cadre d'un costume.
+
+### Des options à profusion
+
+Jaeger propose 38 options, tu peux donc changer *beaucoup* de choses sur ce modèle.
+
+Mais ne t'inquiète pas, il est également livré avec des valeurs par défaut raisonnables, tu peux donc tout aussi bien ignorer tous ces choix.
+
+## La mesure transversale du dos n'est pas plus
+
+En parlant de valeurs par défaut judicieuses, Jaeger n'est pas la seule nouveauté de la version 1.8.0 de freesewing core, qui sort aujourd'hui.
+
+Nous nous sommes également débarrassés de la mesure *dans le dos* .
+
+La mesure de la largeur du dos a été à l'origine d'une grande confusion parmi nos utilisateurs. Le plus souvent, lorsque quelqu'un nous contacte parce que son patron a l'air bancal, c'est parce que la mesure du dos n'est pas réaliste.
+
+Les origines de la mesure du dos en travers remontent à une époque où, au lieu de la mesure *d'épaule à épaule* que nous utilisons aujourd'hui, nous avions la mesure *de la longueur d'épaule* . Cette mesure était également source de confusion, nous l'avons donc progressivement abandonnée au profit de la mesure *d'une épaule à l'autre* .
+
+</em></em> Le fait est que si nous connaissons la mesure d'épaule à épaule de *, nous pouvons estimer avec une précision raisonnable ce que sera la mesure d'épaule à dos de *. Alors, au lieu de te le demander, nous assumons simplement maintenant.</p>
+
+### Mais tu réduis le modèle à sa plus simple expression.
+
+Au cas où le lien *this pattern comes with 38 options* ci-dessus n'aurait pas suffi à te mettre la puce à l'oreille, nous nous engageons ici, chez freesewing, à te donner tous les outils nécessaires pour peaufiner tes projets.
+
+Remplacer une mesure par une valeur calculée à partir d'une autre mesure peut sembler aller à l'encontre de cela, mais il n'y a pas lieu de s'inquiéter. Nous avons veillé à ce que tu puisses encore t'amuser avec ton dos de travers.
+
+Les modèles qui nécessitaient la mesure *dans le dos* ont maintenant une nouvelle option avancée : le facteur *dans le dos*. Il te permet de modifier la façon dont nous calculons la mesure de ton dos, tout en veillant à ce qu'elle reste dans des limites raisonnables.
+
+![L'option du facteur de traversée du dos](https://posts.freesewing.org/uploads/acrossback_60791a4392.png)
+
+
+Ainsi, nous pensons éviter les erreurs pour l'utilisateur occasionnel, sans enlever du pouvoir à toi, le gourou des options de motifs.
+
+Ou, pour le dire autrement, tu peux toujours t'occuper de ton dos d'âne, mais par défaut, tu n'as plus à t'en préoccuper.
 
