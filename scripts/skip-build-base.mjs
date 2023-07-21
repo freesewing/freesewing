@@ -46,7 +46,7 @@ export const shouldSkipBuild = (site, checkFolders = '../shared .') => {
   }
 
   // Do not build dependabot PRs
-  if (author.toLowerCase().includes('dependabot')) {
+  if (branch.toLowerCase().includes('dependabot')) {
     console.log('🛑  Not building: Dependabot PR')
     process.exit(0)
   }

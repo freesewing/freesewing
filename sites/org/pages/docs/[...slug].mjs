@@ -12,27 +12,13 @@ import { DocsLayout, ns as layoutNs } from 'site/components/layouts/docs.mjs'
 import { loaders } from 'shared/components/dynamic-docs/org.mjs'
 
 export const ns = [...pageNs, layoutNs]
-/*
- * PLEASE READ THIS BEFORE YOU TRY TO REFACTOR THIS PAGE
- *
- * You will notice that this page has a page component for each language
- * and that those components are 95% identical. So you may be thinking:
- *
- *   This is not DRY, let me refactor this real quick
- *
- * Before you do so, please reflect on these topics:
- *
- *   - Do you know the pitfalls of dynamic imports in Webpack?
- *   - Do you know how much documentation we have?
- *   - Do you know we support 5 languages?
- *
- * If you do know all of these thigns, and you think you can improve this page. Go ahead.
- *
- * If you are not sure, then I would recommend you find something else to work on, unless
- * you consider this a learning opportunity.
- *
- * joost
- *
+
+/**
+ * a page to display documentation markdown
+ * Each page MUST be wrapped in the PageWrapper component.
+ * You also MUST spread props.page into this wrapper component
+ * when path and locale come from static props (as here)
+ * or set them manually.
  */
 export const Page = ({ page, locale, frontmatter, MDX }) => (
   <PageWrapper
@@ -46,6 +32,7 @@ export const Page = ({ page, locale, frontmatter, MDX }) => (
 )
 
 const DocsPage = ({ page, locale, slug }) => {
+  // get the appropriate loader for the locale, and load the mdx for this page
   const loader = useCallback(() => loaders[locale](slug), [locale, slug])
   // State
   const { frontmatter, MDX } = useDynamicMdx(loader)
@@ -98,6 +85,6 @@ export async function getStaticPaths() {
       ...somePaths.map((key) => `/nl/${key}`),
       ...somePaths.map((key) => `/uk/${key}`),
     ],
-    fallback: 'blocking',
+    fallback: false,
   }
 }
