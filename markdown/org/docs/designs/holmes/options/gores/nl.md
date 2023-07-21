@@ -4,9 +4,9 @@ title: "Aantal panden"
 
 ***
 
-Controls the number of panels there are in the crown
+Bepaalt het aantal panelen in de kroon
 
-![Illustration showing the effect of this option](gores.svg)
+![Illustratie van het effect van deze optie](gores.svg)
 
 ## Effect van deze optie op het patroon
 
