@@ -32,14 +32,31 @@ const NextPage = ({ t, s }) =>
     <span></span>
   )
 
+/**
+ * get slug at the given index, or null if it should not be displayed
+ * @param  {Number} index      the index of the page to get
+ * @param  {String[]} slugLut    the lut for navigation slugs
+ * @param  {Object} siteNav    nav data
+ * @param  {Boolen | Function} shouldHide should this element be hidden?
+ * Function arguments should accept the slug that this element would display and return a boolean
+ * @return {String | null}            the slug for the page, or null if it shouldn't display
+ */
 const getItemWithCaveat = (index, slugLut, siteNav, shouldHide) => {
+  // boolean shouldHide, return null
   if (shouldHide === true) return null
 
+  // function shouldHide, return null if it returns true
   if (typeof shouldHide === 'function' && shouldHide(slugLut[index])) return null
 
+  // get the slug at the index
   return get(siteNav, slugLut[index].split('/'))
 }
 
+/**
+ * Previous and Next buttons
+ * @param  {Boolean | Function} options.noPrev should the previous button be hidden? You can pass a function that accepts the slug for the previous button and returns a boolean, or just pass a boolean
+ * @param  {Boolean | Function} options.noNext should the next button be hidden? You can pass a function that accepts the slug for the next button and returns a boolean, or just pass a boolean
+ */
 export const PrevNext = ({ noPrev = false, noNext = false }) => {
   // Grab siteNav and slugLut from the navigation context
   const { siteNav, slugLut, slug } = useContext(NavigationContext)
