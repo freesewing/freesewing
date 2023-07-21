@@ -2,7 +2,7 @@
 title: "Taille de la pince de l'épaule"
 ---
 
-The size of the back shoulder dart.
+La taille de la fléchette de l'épaule arrière.
 
 ## Effet de cette option sur le motif
 
