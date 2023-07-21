@@ -1,5 +1,5 @@
 ---
-title: "Tamiko top: What You Need"
+title: "Top Tamiko : Ce dont tu as besoin"
 ---
 
 Pour faire Tamiko, vous aurez besoin des éléments suivants :
