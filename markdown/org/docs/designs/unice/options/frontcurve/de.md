@@ -1,8 +1,8 @@
 ---
-title: "Front Curve"
+title: "Vordere Kurve"
 ---
 
-Together with the "Front waist dip" option, this option controls how much the front waist curves (revealing more or less skin). For this option, the curve is achieved by slanting the pattern piece and allowing the fabric to conform to the body shape. (For fabric with horizontal stripes, the stripes would remain continuous but would dip around the waist.)
+Zusammen mit der Option "Vordere Taillenabsenkung" steuert diese Option, wie stark sich die vordere Taille wölbt (mehr oder weniger Haut enthüllt). Bei dieser Option wird die Kurve erreicht, indem das Schnittmusterteil schräg gelegt wird und sich der Stoff der Körperform anpasst. (Bei Stoffen mit horizontalen Streifen würden die Streifen durchgehend bleiben, aber um die Taille herum abfallen).
 
-When this option is used, the shape of the front pattern piece does not fully convey the shape when worn. The projected dip at the front center of the waist can be found in the info generated together with the pattern.
+Wenn diese Option verwendet wird, wird die Form des vorderen Musterteils beim Tragen nicht vollständig wiedergegeben. Die projizierte Einbuchtung in der vorderen Mitte der Taille findest du in der Info, die zusammen mit dem Schnittmuster erstellt wurde.
 
