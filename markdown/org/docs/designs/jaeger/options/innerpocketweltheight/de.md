@@ -2,10 +2,10 @@
 title: "Innentasche Rahmenhöhe"
 ---
 
-Controls the width of the inner pocket welts.
+Steuert die Breite der inneren Taschenbünde.
 
-- Increase this option to increase the width of the inner pocket welts
-- Decrease this option to decrease the width of the inner pocket welts
+- Erhöhe diese Option, um die Breite der Innentaschenbünde zu erhöhen
+- Verringere diese Option, um die Breite der Innentaschenbünde zu verringern
 
 ## Effekt dieser Option auf das Schnittmuster
 
