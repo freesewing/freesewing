@@ -1,8 +1,8 @@
 ---
-title: "Front Exposure"
+title: "Exposition frontale"
 ---
 
-Controls how much the front will curve inwards to meet the gusset.
+Contrôle l'ampleur de la courbure de l'avant vers l'intérieur pour rejoindre le gousset.
 
 ## Effet de cette option sur le motif
 
