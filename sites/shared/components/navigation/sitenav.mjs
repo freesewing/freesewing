@@ -1,3 +1,5 @@
+import { useContext } from 'react'
+import { NavigationContext } from 'shared/context/navigation-context.mjs'
 import Link from 'next/link'
 import { pageHasChildren, isSlugPart } from 'shared/utils.mjs'
 import get from 'lodash.get'
@@ -130,10 +132,12 @@ const MainLink = ({
 /*
  * A React component to render breadcrumbs to the current page
  *
- * @param slug {string}       - The slug of the current page
- * @param siteNav {object}    - The site navigation object as returned by the useNavigation hook
+ * @param lead {string}  - A lead to display before the cumbs (eg: You are here)
  */
-export const Breadcrumbs = ({ slug = false, lead = false, siteNav }) => {
+export const Breadcrumbs = ({ lead = false }) => {
+  // Grab siteNav and slug from the navigation context
+  const { siteNav, slug } = useContext(NavigationContext)
+
   const { t } = useTranslation(['common'])
 
   if (slug === false) {
@@ -193,33 +197,34 @@ export const Breadcrumbs = ({ slug = false, lead = false, siteNav }) => {
 /*
  * A React component to render sidebar navigation based on the siteNav object and current slug
  *
- * The main sections are determined in the use-navigation hook.
+ * The main sections are determined in the navigation prebuild code.
  * We always display the navigation as:
  *   - Always show all top-level entries
  *   - Always show all direct children of all top-level entries (this allows for better discoverability)
  *   - If we're deeper down, only expand the active page
- *
- * @param slug          {string}    - The slug of the current page
- * @param siteNav       {object}    - The siteNav object from the useNavigation hook
  */
-export const NavLinks = ({ slug, siteNav }) => (
-  <ul className="w-full list mb-8 mt-3">
-    {onlyValidChildren(siteNav).map((page, i) => (
-      <li key={i} className="w-full">
-        <MainLink s={page.s} t={page.t} slug={slug} />
-        {pageHasChildren(page) && !page.n && <Section {...{ tree: page, slug }} />}
-      </li>
-    ))}
-  </ul>
-)
+export const NavLinks = () => {
+  // Grab siteNav and slug from the navigation context
+  const { siteNav, slug } = useContext(NavigationContext)
+
+  return (
+    <ul className="w-full list mb-8 mt-3">
+      {onlyValidChildren(siteNav).map((page, i) => (
+        <li key={i} className="w-full">
+          <MainLink s={page.s} t={page.t} slug={slug} />
+          {pageHasChildren(page) && !page.n && <Section {...{ tree: page, slug }} />}
+        </li>
+      ))}
+    </ul>
+  )
+}
 
 /*
  * A React component to render sidebar navigation for the main sections
- *
- * @param siteNav       {object}    - The siteNav object from the useNavigation hook
- * @param slug          {string}    - The slug of the current page
  */
-export const MainSections = ({ siteNav, slug }) => {
+export const MainSections = () => {
+  // Grab siteNav and slug from the navigation context
+  const { siteNav, slug } = useContext(NavigationContext)
   const output = []
   for (const page of onlyMainSections(siteNav)) {
     const act = isSlugPart(page.s, slug)

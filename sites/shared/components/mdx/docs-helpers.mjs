@@ -1,5 +1,6 @@
+import { useContext } from 'react'
+import { NavigationContext } from 'shared/context/navigation-context.mjs'
 import get from 'lodash.get'
-import { useNavigation } from 'site/hooks/use-navigation.mjs'
 import Link from 'next/link'
 
 const getPage = {
@@ -13,7 +14,7 @@ const getPage = {
 }
 
 export const DocsTitle = ({ slug, className = '', site = 'org' }) => {
-  const { siteNav } = useNavigation()
+  const { siteNav } = useContext(NavigationContext)
   const page = getPage[site](slug, siteNav)
 
   return page ? <span className={className}>{page.t}</span> : null

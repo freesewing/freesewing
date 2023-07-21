@@ -1,9 +1,7 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-// Hooks
-import { useNavigation } from 'site/hooks/use-navigation.mjs'
 // Components
-import { PageWrapper } from 'shared/components/wrappers/page.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Search } from 'site/components/search.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
@@ -15,13 +13,10 @@ import {
   BaseLayoutRight,
 } from 'shared/components/base-layout.mjs'
 
-const SearchPage = ({ page, slug }) => {
-  /*
-   * Get the siteNav object from the useNavigation hook
-   * FIXME: ignorecontrol is not yet implmented here
-   */
-  const { siteNav } = useNavigation({ ignoreControl: true })
-  const title = siteNav.about.t
+const namespaces = [...pageNs]
+
+const SearchPage = ({ page }) => {
+  const title = 'Search'
 
   const tip = (
     <Popout tip compact>
@@ -33,12 +28,12 @@ const SearchPage = ({ page, slug }) => {
     <PageWrapper {...page}>
       <BaseLayout>
         <BaseLayoutLeft>
-          <MainSections {...{ siteNav, slug }} />
-          <NavLinks {...{ siteNav, slug }} />
+          <MainSections />
+          <NavLinks />
         </BaseLayoutLeft>
         <BaseLayoutProse>
           <div className="w-full">
-            <Breadcrumbs {...{ siteNav, slug }} />
+            <Breadcrumbs />
             <h1 className="break-words searchme">{title}</h1>
             <div className="block xl:hidden">{tip}</div>
           </div>
@@ -55,8 +50,7 @@ export default SearchPage
 export async function getStaticProps() {
   return {
     props: {
-      ...(await serverSideTranslations('en')),
-      slug: 'search',
+      ...(await serverSideTranslations('en', namespaces)),
       page: {
         path: ['search'],
       },

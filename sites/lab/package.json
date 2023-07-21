@@ -23,7 +23,8 @@
     "e2e": "yarn playwright test",
     "lint": "next lint",
     "buildsitedeps": "cd ../../ && yarn buildall && cd -",
-    "prebuild": "yarn buildsitedeps && SITE=lab node --experimental-json-modules ../shared/prebuild/index.mjs",
+    "prebuild": "yarn buildsitedeps && node --experimental-json-modules ./prebuild.mjs",
+    "prebuildonly": "node --experimental-json-modules ./prebuild.mjs",
     "start": "yarn prebuild && yarn dev"
   },
   "peerDependencies": {},

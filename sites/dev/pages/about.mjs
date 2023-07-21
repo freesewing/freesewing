@@ -1,8 +1,6 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
-// Hooks
-import { useNavigation } from 'site/hooks/use-navigation.mjs'
 // Components
 import Head from 'next/head'
 import { PageWrapper } from 'shared/components/wrappers/page.mjs'
@@ -17,13 +15,8 @@ import {
   BaseLayoutRight,
 } from 'shared/components/base-layout.mjs'
 
-const ContactPage = ({ page, slug }) => {
-  /*
-   * Get the siteNav object from the useNavigation hook
-   * FIXME: ignorecontrol is not yet implmented here
-   */
-  const { siteNav } = useNavigation({ ignoreControl: true })
-  const title = siteNav.about.t
+const ContactPage = ({ page }) => {
+  const title = 'About FreeSewing'
 
   return (
     <PageWrapper {...page}>
@@ -45,12 +38,12 @@ const ContactPage = ({ page, slug }) => {
       </Head>
       <BaseLayout>
         <BaseLayoutLeft>
-          <MainSections {...{ siteNav, slug }} />
-          <NavLinks {...{ siteNav, slug }} />
+          <MainSections />
+          <NavLinks />
         </BaseLayoutLeft>
         <BaseLayoutProse>
           <div className="w-full">
-            <Breadcrumbs {...{ siteNav, slug }} />
+            <Breadcrumbs />
             <h1 className="break-words searchme">{title}</h1>
           </div>
           <div className="mdx max-w-prose">
@@ -187,7 +180,6 @@ export async function getStaticProps() {
   return {
     props: {
       ...(await serverSideTranslations('en')),
-      slug: 'about',
       page: {
         path: ['about'],
       },

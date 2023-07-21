@@ -1,5 +1,6 @@
+import { NavigationContext } from 'shared/context/navigation-context.mjs'
 // Hooks
-import { useNavigation } from 'site/hooks/use-navigation.mjs'
+import { useContext } from 'react'
 // Components
 import Head from 'next/head'
 import {
@@ -45,21 +46,21 @@ export const FrontmatterHead = ({ frontmatter, slug, locale }) => (
   </Head>
 )
 
-export const DocsLayout = ({ children = [], slug, frontmatter, locale }) => {
-  const { siteNav } = useNavigation({ ignoreControl: true })
+export const DocsLayout = ({ children = [], frontmatter }) => {
+  const { slug, locale } = useContext(NavigationContext)
 
   return (
     <>
       <FrontmatterHead {...{ frontmatter, slug, locale }} />
       <BaseLayout>
         <BaseLayoutLeft>
-          <MainSections {...{ siteNav, slug }} />
-          <NavLinks {...{ siteNav, slug }} />
+          <MainSections />
+          <NavLinks />
         </BaseLayoutLeft>
 
         <BaseLayoutProse>
           <div className="w-full">
-            <Breadcrumbs {...{ siteNav, slug }} />
+            <Breadcrumbs />
             <h1 className="break-words searchme">{frontmatter.title}</h1>
             <div className="block xl:hidden">
               <Toc toc={frontmatter.toc} wrap />

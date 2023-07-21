@@ -1,10 +1,9 @@
 // Used in static paths
-import { mdxPaths } from 'site/prebuild/mdx-paths.en.mjs'
+import { pages } from 'site/prebuild/docs.en.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Hooks
 import { useState, useEffect } from 'react'
-import { useNavigation } from 'site/hooks/use-navigation.mjs'
 // Components
 import Head from 'next/head'
 import { PageWrapper, ns } from 'shared/components/wrappers/page.mjs'
@@ -31,11 +30,6 @@ import {
 const DocsPage = ({ page, slug }) => {
   const [frontmatter, setFrontmatter] = useState({ title: 'FreeSewing.dev' })
   const [MDX, setMDX] = useState(<Spinner />)
-  /*
-   * Get the siteNav object from the useNavigation hook
-   * FIXME: ignorecontrol is not yet implmented here
-   */
-  const { siteNav } = useNavigation({ ignoreControl: true })
 
   /* Load MDX dynamically */
   useEffect(() => {
@@ -71,12 +65,12 @@ const DocsPage = ({ page, slug }) => {
       </Head>
       <BaseLayout>
         <BaseLayoutLeft>
-          <MainSections {...{ siteNav, slug }} />
-          <NavLinks {...{ siteNav, slug }} />
+          <MainSections />
+          <NavLinks />
         </BaseLayoutLeft>
         <BaseLayoutProse>
           <div className="w-full">
-            <Breadcrumbs {...{ siteNav, slug }} />
+            <Breadcrumbs />
             <h1 className="break-words searchme">{frontmatter.title}</h1>
             <div className="block xl:hidden">
               <Toc toc={frontmatter.toc} wrap />
@@ -126,7 +120,7 @@ export async function getStaticProps({ params }) {
  */
 export async function getStaticPaths() {
   return {
-    paths: mdxPaths.map((slug) => '/' + slug),
+    paths: Object.keys(pages).map((slug) => '/' + slug),
     fallback: false,
   }
 }

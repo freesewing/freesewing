@@ -279,6 +279,17 @@ export const shortDate = (locale = 'en', timestamp = false) => {
   return ts.toLocaleDateString(locale, options)
 }
 
+export const yyyymmdd = (timestamp = false) => {
+  const ts = timestamp ? new Date(timestamp) : new Date()
+
+  let m = String(ts.getMonth() + 1)
+  if (m.length === 1) m = '0' + m
+  let d = '' + ts.getDate()
+  if (d.length === 1) d = '0' + d
+
+  return `${ts.getFullYear()}${m}${d}`
+}
+
 export const scrollTo = (id) => {
   // eslint-disable-next-line no-undef
   const el = document ? document.getElementById(id) : null

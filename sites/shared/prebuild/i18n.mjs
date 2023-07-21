@@ -168,24 +168,25 @@ const patternTranslationAsNamespace = (i18n, language) => {
 /*
  * The method that does the actual work
  */
-export const prebuildI18n = async (site) => {
+export const prebuildI18n = async (store) => {
   /*
    * FreeSewing.dev is only available in English
    */
-  const languages = site === 'dev' ? ['en'] : allLanguages
+  const languages = store.site === 'dev' ? ['en'] : allLanguages
 
   /*
    * Handle code-adjacent translations (for React components and so on)
    */
-  const files = await getI18nFileList(site, languages)
+  const files = await getI18nFileList(store.site, languages)
   const data = filesAsNamespaces(files)
   const namespaces = fixData(data, languages)
   // Write out code-adjacent source files
   for (const language of languages) {
     // Fan out into namespaces
     for (const namespace in namespaces)
-      writeJson(site, language, namespace, namespaces[namespace][language])
+      writeJson(store.site, language, namespace, namespaces[namespace][language])
   }
+
   /*
    * Handle design translations
    */
@@ -197,8 +198,13 @@ export const prebuildI18n = async (site) => {
       const content = patternTranslationAsNamespace(designs[design], language)
       designNs[language][`${design}.t`] = content.t
       designNs[language][`${design}.d`] = content.d
-      writeJson(site, language, design, content)
+      writeJson(store.site, language, design, content)
     }
   }
-  for (const language of languages) writeJson(site, language, 'designs', designNs[language])
+  for (const language of languages) writeJson(store.site, language, 'designs', designNs[language])
+
+  /*
+   * Update the store
+   */
+  store.i18n = { namespaces, designNs }
 }

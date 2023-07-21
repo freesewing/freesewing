@@ -1,9 +1,10 @@
+import { useContext } from 'react'
+import { NavigationContext } from 'shared/context/navigation-context.mjs'
 import Link from 'next/link'
 import { icons, ns as sectionsNs } from 'shared/components/navigation/primary.mjs'
 import { useTranslation } from 'next-i18next'
 import orderBy from 'lodash.orderby'
 import { colors } from 'shared/components/header.mjs'
-import { useNavigation } from 'site/hooks/use-navigation.mjs'
 
 export const ns = sectionsNs
 
@@ -11,7 +12,7 @@ const onlySections = (tree) => orderBy(tree, ['t'], ['asc']).filter((entry) => e
 
 export const SectionsMenu = ({ bOnly = false }) => {
   const { t } = useTranslation(ns)
-  const { siteNav } = useNavigation()
+  const { siteNav } = useContext(NavigationContext)
 
   const output = []
   let i = 1

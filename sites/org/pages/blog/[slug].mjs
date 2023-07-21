@@ -1,4 +1,4 @@
-import { order } from 'site/prebuild/blog-paths.mjs'
+import { pages as posts } from 'site/prebuild/blog.mjs'
 import { getPostSlugPaths } from 'site/components/mdx/posts/utils.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useDynamicMdx } from 'shared/hooks/use-dynamic-mdx.mjs'
@@ -68,7 +68,7 @@ export async function getStaticProps({ params, locale }) {
 
 export const getStaticPaths = async () => {
   return {
-    paths: getPostSlugPaths(order),
+    paths: getPostSlugPaths(posts),
     fallback: 'blocking',
   }
 }
