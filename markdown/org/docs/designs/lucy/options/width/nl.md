@@ -2,7 +2,7 @@
 title: Breedte
 ---
 
-This option determines the width of the pocket overall.
+Deze optie bepaalt de totale breedte van de zak.
 
 ## Effect van deze optie op het patroon
 
