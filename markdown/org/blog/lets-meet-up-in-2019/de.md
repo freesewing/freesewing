@@ -32,29 +32,29 @@ Seien Sie also nicht schüchtern, sondern teilen Sie sich uns mit.
 
 ## FreeSewing 2.0
 
-We have done a lot of work since freesewing.org was launched (only) 16 months ago. We've added new patterns,  built a new website, and we've translated freesewing.org into 4 additional languages in order to remove knowledge of English as a barrier to using the site.
+Seit dem Start von freesewing.org (nur) vor 16 Monaten haben wir eine Menge Arbeit geleistet. Wir haben neue Muster hinzugefügt, eine neue Website erstellt und in 4 weitere Sprachen übersetzt, um Englischkenntnisse als Hindernis für die Nutzung der Website zu beseitigen.
 
-But we actually did much more this year. For the last 6 months or so, I've been working like crazy on [freesewing 2.0.](https://github.com/freesewing/freesewing). It's a complete rewrite of pretty much every aspect of the project. My reasons for doing so are simple: With the project growing as it does, the fact that I only have two hands and 24 hours in a day is quickly becoming a bottleneck. For freesewing to thrive we must make it simpler for other people to [dive in](https://developer.freesewing.org), and get involved.
+Aber wir haben dieses Jahr noch viel mehr gemacht. In den letzten 6 Monaten habe ich wie verrückt an [freesewing 2.0 gearbeitet.](https://github.com/freesewing/freesewing). Es ist eine komplette Neufassung von so ziemlich jedem Aspekt des Projekts. Meine Gründe dafür sind einfach: Da das Projekt immer weiter wächst, wird die Tatsache, dass ich nur zwei Hände und 24 Stunden am Tag habe, schnell zu einem Engpass. Damit Freesewing gedeihen kann, müssen wir es anderen Menschen einfacher machen, [in](https://developer.freesewing.org)einzutauchen und sich zu beteiligen.
 
-As such, I have embarked on a journey to tackle technical debt, and simplify our technology stack. The first big hurdle was [rounded in August](/blog/announcing-freesewing-library) when the JavaScript port of our core platform reached feature parity. Since then, I have ported [several patterns](https://github.com/freesewing/patterns), and currently I am working on [a new backend](https://github.com/freesewing/backend) and [website](https://github.com/freesewing/website).
+Deshalb habe ich mich auf den Weg gemacht, um technische Schulden zu beseitigen und unser Technologiepaket zu vereinfachen. Die erste große Hürde wurde [im August](/blog/announcing-freesewing-library) genommen, als die JavaScript Portierung unserer Kernplattform die Funktionsparität erreichte. Seitdem habe ich [mehrere Muster](https://github.com/freesewing/patterns), portiert und arbeite derzeit an [einem neuen Backend](https://github.com/freesewing/backend) und [Website](https://github.com/freesewing/website).
 
-The new setup will be faster, more modular, and easier to extend and wrap your head around. Which is crucial for our long-term growth.
+Das neue System wird schneller, modularer und einfacher zu erweitern sein, und du kannst deinen Kopf leichter damit vertraut machen. Das ist entscheidend für unser langfristiges Wachstum.
 
-Unfortunately, this is one of those scenarios where nothing works until everything works. So while you can go to [beta.freesewing.org](https://beta.freesewing.org) now and kick the tires, it's probably going to be a bit of a downer as so much is still broken, or unfinished.
+Leider ist dies eines dieser Szenarien, in denen nichts funktioniert, bis alles funktioniert. Du kannst zwar jetzt auf zu [beta.freesewing.org](https://beta.freesewing.org) gehen und es ausprobieren, aber wird wahrscheinlich ein kleiner Wermutstropfen sein, weil noch so viel kaputt oder unfertig ist.
 
-So please bear with me as we continue this important behind-the-scenes work. Because while I can't tell you when it will be ready, I really feel it's something worth looking forward to.
+Bitte habe also Geduld mit mir, wenn wir diese wichtige Arbeit hinter den Kulissen fortsetzen. Ich kann dir zwar nicht sagen, wann es fertig sein wird, aber ich habe das Gefühl, dass es etwas ist, auf das du dich freuen kannst.
 
-## Oh, and one more thing
+## Oh, und noch eine Sache
 
-I'm more of a looking-forward than a looking-back kinda guy, but as I reflect on the year, it is clear to me that the most important thing we did with freesewing, was to team up with [our patrons](/community/who/patrons).
+Ich schaue eher nach vorne als zurück, aber wenn ich über das Jahr nachdenke, ist mir klar, dass das Wichtigste, was wir mit freesewing gemacht haben, die Zusammenarbeit mit und [war.](/community/who/patrons)
 
-Twelve months ago , [we launched our patron project](/blog/calling-all-patrons). Since then, 65 patrons — spread roughly equally among our 3 tiers of patronage — have [stepped forward to support freesewing](/patrons/join). The knock-on effects of these people making a commitment to support our work have surpassed even my most optimistic hopes.
+Vor zwölf Monaten , [haben wir unser Patenprojekt](/blog/calling-all-patrons)gestartet. Seitdem haben sich 65 Gönnerinnen und Gönner - etwa gleichmäßig verteilt auf unsere 3 Gönnerschichten - [gemeldet, um Freesewing](/patrons/join)zu unterstützen. Die Auswirkungen dieser Menschen, die sich verpflichtet haben, unsere Arbeit zu unterstützen, haben selbst meine optimistischsten Hoffnungen übertroffen.
 
-You may or may not know that I have [made a pledge](/docs/various/pledge) to donate all income from freesewing to charity. So this morning I transferred our entire revenue for the year (**3162.14 euros**) to [Médecins Sans Frontières](https://www.msf.org/) (Doctors Without Borders). Money that will go towards bringing relief to some of the most vulnerable people on this planet.
+[Du weißt vielleicht oder auch nicht, dass ich ein Versprechen](/docs/various/pledge) abgegeben habe, alle Einnahmen aus dem Freesewing für wohltätige Zwecke zu spenden. Deshalb habe ich heute Morgen unsere gesamten Jahreseinnahmen (**3162,14 Euro**) an [Médecins Sans Frontières](https://www.msf.org/) (Ärzte ohne Grenzen) überwiesen. Geld, das dazu beitragen wird, einigen der bedürftigsten Menschen auf diesem Planeten zu helfen.
 
-You made that happen, and if it brings a fraction of the joy to your heart as it does to mine, you'll understand how much your patronage means to me.
+Du hast das möglich gemacht, und wenn es dein Herz auch nur zu einem Bruchteil so erfreut wie meins, dann wirst du verstehen, wie viel mir deine Unterstützung bedeutet: .
 
-I have, for several years now, put a lot of time and effort into freesewing. And I can honestly say that I've never worked harder on this than I am doing now. But at the same time, it has been easier than ever for me to find the motivation to do so. Every contribution, no matter how small, is like a small patch in a warm blanket of support under which freesewing can thrive.
+Ich investiere schon seit einigen Jahren viel Zeit und Mühe in das Freesewing. Und ich kann ehrlich sagen, dass ich noch nie so hart daran gearbeitet habe wie jetzt. Aber gleichzeitig war es für mich leichter denn je, die Motivation dafür zu finden. Jeder Beitrag, egal wie klein, ist wie ein kleiner Fleck in einer warmen Decke der Unterstützung , unter der Freesewing gedeihen kann.
 
-So thank you for all this. And let's try to do (even) better next year.
+Also danke für all das. Und lass uns versuchen, es nächstes Jahr (noch) besser zu machen.
 
