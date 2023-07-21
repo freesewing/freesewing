@@ -2,7 +2,7 @@
 title: "Ratio de longitud"
 ---
 
-Controls the length of the garment
+Controla la longitud de la prenda
 
 ## Efecto de esta opción en el patrón
 
