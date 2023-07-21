@@ -1,11 +1,11 @@
 ---
-title: "Titan trouser block: What You Need"
+title: "Titan-Hosenblock: Was du brauchst"
 ---
 
 Um Titan zu erstellen, benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- About 1.5 meters (1.7 yards) of suitable fabric ([see Titan Fabric options](/docs/patterns/titan/fabric))
+- Etwa 1,5 Meter (1,7 Yards) eines geeigneten Stoffes ([siehe Titan Fabric options](/docs/patterns/titan/fabric))
 
 <Note>
 
