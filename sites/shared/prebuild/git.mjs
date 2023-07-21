@@ -1,8 +1,8 @@
 import execa from 'execa'
+import { exec } from 'node:child_process'
 import { gitToAuthor, authors as authorInfo } from '../../../config/authors.mjs'
 import path from 'path'
 import fs from 'fs'
-import { getMdxFileList, fileToSlug } from './docs.mjs'
 import { yyyymmdd } from '../utils.mjs'
 
 const divider = '____'
@@ -10,11 +10,18 @@ const divider = '____'
 const parseLog = (line) => line.split(divider).map((item) => item.trim())
 
 /*
+ * Helper method to get the website slug (path) from the file path
+ */
+const fileToSlug = (file, site, lang) =>
+  file.slice(-6) === `/${lang}.md` ? file.split(`/markdown/${site}/`).pop().slice(0, -6) : false
+
+/*
  * Extracts git authors and last modification date from git log.
  * Strictly speaking, it's the last commit date, but you get the idea.
  */
 export const getGitMetadata = async (file, site) => {
   const slug = fileToSlug(file, site, 'en')
+  if (!slug) console.log({ file, slug })
   const log = await execa.command(
     `git log --pretty="format:%cs${divider}%aN${divider}%aE" ${file}`,
     { shell: true }
@@ -27,12 +34,10 @@ export const getGitMetadata = async (file, site) => {
     if (!lastUpdated) lastUpdated = date.split('-').join('')
     let key = false
     if (typeof authorInfo[author] !== 'undefined') key = author
+    else if (typeof authorInfo[email] !== 'undefined') key = author
     else {
-      if (typeof gitToAuthor[author] !== 'undefined') {
-        key = gitToAuthor[author]
-      } else if (typeof gitToAuthor[email] !== 'undefined') {
-        key = gitToAuthor[email]
-      }
+      if (typeof gitToAuthor[author] !== 'undefined') key = gitToAuthor[author]
+      else if (typeof gitToAuthor[email] !== 'undefined') key = gitToAuthor[email]
     }
     if (!key) {
       if (typeof email === 'undefined') {
@@ -40,8 +45,9 @@ export const getGitMetadata = async (file, site) => {
         authors.add('unknown')
       } else {
         // There is a git history, but the author is not known
-        console.log({ email, author, slug })
-        throw `Git author email ${email} is unknown in the git-to-author table`
+        console.log('Missing git author info for:', { email, author, slug })
+        // Don't throw, it's annotying
+        //throw `Git author email ${email} is unknown in the git-to-author table`
       }
     } else authors.add(key)
   }
@@ -72,6 +78,32 @@ const writeData = async (store) => {
 }
 
 /*
+ * Helper method to load all MDX files from a folder
+ */
+const getMdxFileList = async (cwd, lang) => {
+  const cmd = `find ${cwd} -type f -name "en.md"`
+  const find = exec(cmd, { cwd }, (error, stdout, stderr) => {
+    if (error) {
+      console.error(`exec error: ${error}`)
+      return
+    }
+
+    return stdout
+  })
+
+  /*
+   * Stdout is buffered, so we need to gather all of it
+   */
+  let stdout = ''
+  for await (const data of find.stdout) stdout += data
+
+  /*
+   * Rerturn all matches as  a sorted array
+   */
+  return stdout.split('\n').sort()
+}
+
+/*
  * Main method that does what needs doing
  */
 export const prebuildGitData = async (store, mock) => {
@@ -92,11 +124,14 @@ export const prebuildGitData = async (store, mock) => {
 
   // Get list of filenames
   const list = await getMdxFileList(mdxRoot, 'en')
-
   // Loop over files
   for (const file of list) {
-    const { lastUpdated, authors, slug } = await getGitMetadata(file, store.site)
-    store.git.pages[slug] = { u: lastUpdated, a: [...authors] }
+    // This list will include '' which we don't want to get the git log for as that
+    // will return  the entire history
+    if (file) {
+      const { lastUpdated, authors, slug } = await getGitMetadata(file, store.site)
+      store.git.pages[slug] = { u: lastUpdated, a: [...authors] }
+    }
   }
 
   // How about some stats

@@ -1,3 +1,7 @@
+/*
+ * Do not use the 'config' webpack alias here because
+ * this is used in the prebuild step which is pure NodeJS
+ */
 import { social } from '../../../config//social.mjs'
 
 export const freeSewingConfig = {

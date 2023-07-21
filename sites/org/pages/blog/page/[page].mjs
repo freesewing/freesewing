@@ -81,7 +81,7 @@ const BlogIndexPage = ({ posts, page, current, total }) => {
     <PageWrapper {...page} t={t('sections:blog')}>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3 max-w-7xl lg:pr-4 xl:pr-6">
         {posts.map((post) => (
-          <Preview post={post} t={t} key={post.slug} />
+          <Preview post={post} t={t} key={post.s} />
         ))}
       </div>
       <Pagination {...{ current, total }} />

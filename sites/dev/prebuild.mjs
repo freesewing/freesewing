@@ -85,8 +85,8 @@ prebuildRunner({
     // NEVER PREBUILD //////////////////////////////////////////////////////////
 
     /*
-     * Never prebuild the MDX posts because there are not on FreeSewing.dev
-     * We could have leave this out, but it's included here for documenation purposes
+     * Never prebuild the MDX posts because there are no such posts on FreeSewing.dev
+     * We could have leave this step out, but it's included here for documenation purposes
      */
     posts: false,
   },

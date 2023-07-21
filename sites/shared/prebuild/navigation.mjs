@@ -5,7 +5,7 @@ import orderBy from 'lodash.orderby'
 import { extendSiteNav as dev } from './sitenav-dev.mjs'
 import { extendSiteNav as org } from './sitenav-org.mjs'
 import { pageHasChildren } from '../utils.mjs'
-import { header } from './docs.mjs'
+import { header } from './shared.mjs'
 
 const extendNav = { dev, org }
 
