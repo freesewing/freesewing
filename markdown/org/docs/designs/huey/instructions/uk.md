@@ -1,5 +1,5 @@
 ---
-title: "Huey hoodie: Sewing Instructions"
+title: "Худі з капюшоном Huey: Інструкція з пошиття"
 ---
 
 <Note>
