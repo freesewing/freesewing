@@ -1,5 +1,5 @@
 ---
-title: "Breanna body block: Design Options"
+title: "Bloque de cuerpo Breanna: Opciones de diseño"
 ---
 
 <PatternOptions pattern='breanna' />
@@ -25,9 +25,9 @@ En nuestro ejemplo, el frente de la manga está en el lado derecho. Pero, ¿cóm
 Mientras que los patrones normalmente tienen una indicación que muestra qué lado es qué (una sola nota
 significa el frente, mientras que una batida doble significa la parte trasera), también puedes
 reconocer la parte frontal de una manga porque está más curvada. La parte trasera del manga
-también se curvará, pero es una curva más plana. That's because the human shoulder
-is more pronounced and curved on the front of the body, thus the sleevecap is more curved
-there to fit the shoulder.
+también se curvará, pero es una curva más plana. Eso se debe a que el hombro humano
+es más pronunciado y curvado en la parte delantera del cuerpo, por lo que el manguito es más curvado
+allí para ajustarse al hombro.
 
 </Note>
 
@@ -78,8 +78,8 @@ The points are _offset_ perpendicular from the middle of a line between the two 
 Hemos dividido nuestra manga en 4 cuarteles. Empezamos en el frente (la derecha en nuestro ejemplo)
 con el trimestre 1, y hacer nuestro camino hacia atrás hasta el final con el cuarto trimestre.
 
-Like the offset option, the last options to determine the shape of our sleevecap will just repeat so you can
-control each quarter individually.
+Al igual que la opción de desplazamiento, las últimas opciones para determinar la forma de nuestro remate se repetirán para que puedas
+controlar cada cuarto individualmente.
 
 </Note>
 
