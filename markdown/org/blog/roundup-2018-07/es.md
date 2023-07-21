@@ -1,32 +1,32 @@
 ---
 author: "joostdecock"
-caption: "Your login background for August"
+caption: "Tu fondo de conexión para agosto"
 date: "2018-07-31"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/73ad81c28d5045aeaaebc1e182accac4f93f52eb-1920x1280.jpg"
-intro: "Monthly roundup - July 2018: French and waiting for Sandy"
-title: "Monthly roundup - July 2018: French and waiting for Sandy"
+intro: "Resumen mensual - Julio de 2018: Francés y esperando a Sandy"
+title: "Resumen mensual - Julio de 2018: Francés y esperando a Sandy"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el próximo mes.
 
-## Looking back at July
+## Echando la vista atrás a julio
 
-It's the summer time, and the heatwave across Europe isn't exactly helping with our productivity. What I'm saying is: I said we would have a new pattern out in July, but it's going to be late. We're still waiting for the final artwork, although I can show you the initial sketch now:
+Estamos en verano, y la ola de calor que azota Europa no ayuda precisamente a nuestra productividad. Lo que digo es: Dije que sacaríamos un nuevo patrón en julio, pero va a ser tarde. Aún estamos esperando el material gráfico definitivo, aunque ya puedo mostrarte el boceto inicial:
 
-![Meat the Sandy Circle Skirt](https://posts.freesewing.org/uploads/schets_bb8fb5c30a.png)
+![Cómete la falda Sandy Circle](https://posts.freesewing.org/uploads/schets_bb8fb5c30a.png)
 
-This is Sandy, it's a circle skirt pattern, and it will be out in August. Promise :)
+Esta es Sandy, es un patrón de falda circular, y saldrá en agosto. Te lo prometo :)
 
-Apart from that, thanks to some great work of [our translators](/i18n/), we've also enabled our fifth language on the website: [French](/fr). We've seen an increase in users signing up with .fr email addresses, so that goes to show that translation really does help make the site accessible to more people.
+Aparte de eso, gracias al gran trabajo de [nuestros traductores](/i18n/), también hemos habilitado nuestro quinto idioma en el sitio web: [el francés](/fr). Hemos observado un aumento de los usuarios que se registran con direcciones de correo electrónico .fr, , lo que demuestra que la traducción realmente ayuda a que el sitio sea accesible a más personas.
 
-Now apart from this, I don't have much to talk about that you can see right here on the site. That doesn't mean we haven't been busy. Al contrario!
+Ahora, aparte de esto, no tengo mucho de lo que hablar que puedas ver aquí mismo en el sitio. Eso no significa que no hayamos estado ocupados. Al contrario!
 
-I've started porting freesewing core to node.js. It's really early days so I can't really talk about it too much, but I will do so at a later date.
+He empezado a portar el núcleo de freesewing a node.js. Es muy pronto, así que no puedo hablar demasiado de ello, pero lo haré más adelante.
 
-## Looking ahead to August
+## De cara a agosto
 
-August will bring the release of Sandy, and we'll also celebrate our first year here at freesewing.org.
+Agosto traerá el lanzamiento de Sandy, y también celebraremos nuestro primer año aquí en freesewing.org.
 
-Perhaps that will be a good time to talk about our plans for the future :)
+Quizá sea un buen momento para hablar de nuestros planes de futuro :)
 
 
