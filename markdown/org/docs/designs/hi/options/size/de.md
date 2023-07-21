@@ -2,7 +2,7 @@
 title: "Größe"
 ---
 
-Hi can be made in different sizes. The default is about a meter in length. Dies ist ein Prozentsatz dieser Standardlänge.
+Hi kann in verschiedenen Größen hergestellt werden. Die Vorgabe ist etwa einen Meter lang. Dies ist ein Prozentsatz dieser Standardlänge.
 
 ## Effekt dieser Option auf das Schnittmuster
 
