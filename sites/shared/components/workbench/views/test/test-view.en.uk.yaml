@@ -1,0 +1,5 @@
+testThis.option: Спробуйте цю опцію
+testThis.measurement: Перевірте це вимірювання
+measurements.d: Перевірте вплив вимірювання на вигляд цього шаблону
+designOptions.d: Перевірте вплив опції на вигляд цього шаблону
+testThing: "Тест {design}: {thing}"
