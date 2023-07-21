@@ -1,10 +1,10 @@
 ---
-maker: "unknown"
-caption: "Anne's husband Sigvard is a trainer at <a target='_BLANK' href='http://fighter.org/'>the local kick boxing club</a>. Hence the name <em>fighter hoodie</em>"
+maker: "unbekannt"
+caption: "Annes Mann Sigvard ist Trainer bei <a target='_BLANK' href='http://fighter.org/'>, dem örtlichen Kickboxclub</a>. Daher auch der Name <em>fighter hoodie</em>"
 date: "2017-11-20"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8f0b0ca919900145250b0af08401775198623eda-1001x1500.jpg"
-intro: "The fighter hoodie: Hugo with a zip"
-title: "The fighter hoodie: Hugo with a zip"
+intro: "Der Fighter Hoodie: Hugo mit Reißverschluss"
+title: "Der Fighter Hoodie: Hugo mit Reißverschluss"
 designs:
   - "hugo"
 ---
@@ -19,10 +19,10 @@ designs:
 
 <Note>
 
-###### See the original on [@Topstitched](/users/Topstitched)'s blog
-These picture are from the [Back again with the fighter hoodie](http://www.topstitched.net/?p=1431) 
-blog post on [topstitched.net](http://www.topstitched.net/).
+###### Siehe das Original auf [@Topstitched](/users/Topstitched)'s Blog
+Diese Bilder sind aus dem [Back again with the fighter hoodie](http://www.topstitched.net/?p=1431) 
+Blogpost auf [topstitched.net](http://www.topstitched.net/).
 
-They are reposted here with permission.
+Sie werden hier mit Erlaubnis wiederveröffentlicht.
 
 </Note>
