@@ -4,8 +4,8 @@ title: "Innentaschenplatzierung"
 
 Die Position der Innentasche.
 
-- Increase this option to shift the inner pocket towards the side seam
-- Decrease this option to shift the inner pocket towards the centre front
+- Erhöhe diese Option, um die Innentasche in Richtung der Seitennaht zu verschieben
+- Verringere diese Option, um die Innentasche zur vorderen Mitte hin zu verschieben
 
 ## Effekt dieser Option auf das Schnittmuster
 
