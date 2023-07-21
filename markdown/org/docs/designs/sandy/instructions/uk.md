@@ -1,5 +1,5 @@
 ---
-title: "Sandy circle skirt: Sewing Instructions"
+title: "Пісочна спідниця по колу: Інструкція з пошиття"
 ---
 
 <Warning>
