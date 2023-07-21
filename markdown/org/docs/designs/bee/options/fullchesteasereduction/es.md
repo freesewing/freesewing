@@ -1,10 +1,10 @@
 ---
-title: "Full chest reduction (Bella)"
+title: "Reducción total de pecho (Bella)"
 ---
 
 ***
 
-Controls the full chest reduction in the underlying Bella block Bee is based on
+Controla la reducción total del pecho en el bloque subyacente Bella Bee se basa en
 
 ## Efecto de esta opción en el patrón
 
