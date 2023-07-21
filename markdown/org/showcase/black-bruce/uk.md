@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/cc7d2096649640ce7638c
 intro: "Джуді написала:"
 title: "Чорні боксери від Judy"
 designs:
-  - "bruce"
+  - "Брюс."
 ---
 
 Джуді написала:
