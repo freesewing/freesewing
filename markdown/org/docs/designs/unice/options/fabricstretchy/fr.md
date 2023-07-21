@@ -1,8 +1,8 @@
 ---
-title: "Fabric stretch Y"
+title: "Tissu extensible Y"
 ---
 
-Controls the stretch in vertical direction.
+Contrôle l'étirement dans le sens vertical.
 
 ## Effet de cette option sur le motif
 
