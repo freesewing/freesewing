@@ -1,10 +1,10 @@
 ---
-title: "Neck tie ends"
+title: "Uiteinden nekdas"
 ---
 
 ***
 
-Whether you like straight or pointy ends on the ties around your neck
+Of je nu houdt van rechte of puntige uiteinden aan de stropdassen om je nek
 
 ## Effect van deze optie op het patroon
 
