@@ -2,7 +2,7 @@
 title: "Talla"
 ---
 
-Hi can be made in different sizes. The default is about a meter in length. This is a percentage of this default length.
+Hi puede fabricarse en diferentes tamaños. El valor por defecto es de aproximadamente un metro de longitud. Es un porcentaje de esta longitud por defecto.
 
 ## Efecto de esta opción en el patrón
 
