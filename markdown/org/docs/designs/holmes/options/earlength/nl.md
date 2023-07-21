@@ -4,7 +4,7 @@ title: "Lengte oorkleppen"
 
 ***
 
-Controls the length of the ear flaps independently from the crown pieces
+Regelt de lengte van de oorflappen onafhankelijk van de kroonstukken
 
 ## Effect van deze optie op het patroon
 
