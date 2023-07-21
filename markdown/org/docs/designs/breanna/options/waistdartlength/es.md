@@ -2,7 +2,7 @@
 title: "Longitud del dart de Waist"
 ---
 
-The length of the back waist dart.
+La longitud de la pinza de la cintura trasera.
 
 ## Efecto de esta opción en el patrón
 
