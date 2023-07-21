@@ -1,22 +1,22 @@
 ---
 maker: "onbekend"
-caption: "Paneled Sandy skirt by Sunshine"
+caption: "Sandy rok met panelen van Sunshine"
 date: "2021-02-15"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4d38d6837e8125276522abb62d44a99e191fd8a0-1477x1969.jpg"
-intro: "This lovely Sandy skirt was made by Sunshine. The maker shared more information about the project:"
-title: "Sandy skirt by Sunshine"
+intro: "Deze mooie Sandy rok is gemaakt door Sunshine. De maker deelde meer informatie over het project:"
+title: "Sandy rok van Sunshine"
 designs:
   - "sandy"
 ---
 
 
-This lovely Sandy skirt was made by Sunshine. The maker shared more information about the project:
+Deze mooie Sandy rok is gemaakt door Sunshine. De maker deelde meer informatie over het project:
 
-"I couldn't fit the Sandy pattern on the 44"fabric I bought, so I ended up folding it a few times and using it to cut sections for a panel skirt using alternating colors instead that I had dyed last week. I added a strip on the bottom to increase the length. Then, I added a  trim that I had sitting in my sewing basket for 2 years. I hadn't previously considered using a section of the Sandy as a panel segment, but it worked super well!!! I'm not perfect at sewing, but I think it turned out alright!"
+"Het Sandy-patroon paste niet op de stof van 44 inch die ik had gekocht, dus heb ik hem uiteindelijk een paar keer gevouwen en gebruikt om delen te snijden voor een rok met panelen, waarbij ik in plaats daarvan afwisselende kleuren heb gebruikt die ik vorige week had geverfd. Ik heb een strook aan de onderkant toegevoegd om de lengte te vergroten. Daarna voegde ik een sierrand toe die ik al 2 jaar in mijn naaimandje had zitten. Ik had nog niet eerder overwogen om een deel van de Sandy als paneelsegment te gebruiken, maar het werkte supergoed!!! Ik ben niet perfect in naaien, maar volgens mij is het goed gelukt!"
 
 <Note>
 
-This project is from [the FreeSewing Discord](https://discord.freesewing.org/) and has been shared here with permission.
+Dit project komt uit [de FreeSewing Discord](https://discord.freesewing.org/) en is hier met toestemming gedeeld.
 
 </Note>
 
