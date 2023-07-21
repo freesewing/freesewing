@@ -1,10 +1,10 @@
 ---
-title: "Ribbon width"
+title: "Breedte lint"
 ---
 
 ***
 
-Width of the ribbon
+Breedte van het lint
 
 ## Effect van deze optie op het patroon
 
