@@ -15,8 +15,8 @@ Ils se coincent dans votre ceinture et compliquent les pauses pipi.
 
 Si vous voulez avoir des boutons en dessous de votre ceinture, vous pouvez.
 
-Si vous voulez avoir des boutons en dessous de votre ceinture, vous pouvez. You should enter a negative value here,
-making sure it's within the length bonus you have available.
+Si vous voulez avoir des boutons en dessous de votre ceinture, vous pouvez. Tu dois entrer une valeur négative ici,
+en veillant à ce qu'elle soit comprise dans le bonus de longueur dont tu disposes.
 
 </Note>
 
