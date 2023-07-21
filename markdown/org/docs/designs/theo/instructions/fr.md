@@ -1,5 +1,5 @@
 ---
-title: "Theo trousers: Sewing Instructions"
+title: "Pantalon Theo : Instructions de couture"
 ---
 
 <Note>
@@ -161,13 +161,13 @@ Lorsque tout est épinglé ensemble, repliez la pièce avant et la doublure et f
 
 <Tip>
 
-Sew to bottom curve of the pocket bag up until the point where it reached the side piece
+Couds la courbe inférieure du sac de poche jusqu'au point où elle atteint la pièce latérale
 
-You can finish the pocket bag in a number of ways, including:
+Tu peux finir le sac de poche de plusieurs façons, notamment :
 
-- Serge the sides together
-- Finish the edge with bias tape
-- Sew the sides together and finish the edge with a zig-zag stitch
+- Sertir les côtés ensemble
+- Finir le bord avec du ruban de biais
+- Coudre les côtés ensemble et finir le bord avec un point zig-zag.
 
 </Tip>
 
@@ -398,11 +398,11 @@ Enfin et surtout, coudre le long du zip avec votre pied à glissière pour l'att
 
 <Tip>
 
-When aligning the zip, make sure to take the following into account:
+Lorsque tu alignes la fermeture éclair, assure-toi de tenir compte des points suivants :
 
-- The zip should be placed with the good side down
-- The zip should sit a bit back from the edge of your fly piece
-- Make sure to align the top of the zip with the other zip half on the right leg
+- La fermeture éclair doit être placée avec le bon côté vers le bas
+- La fermeture éclair doit se trouver un peu en retrait du bord de ta braguette
+- Veille à aligner le haut de la fermeture éclair avec l'autre moitié de fermeture éclair sur la jambe droite.
 
 </Tip>
 
@@ -668,8 +668,8 @@ Avant de finaliser la ceinture, nous allons couper une partie de sa marge de cou
 
 <Tip>
 
-**About seam allowance grading**
-When trimming back different layers of seam allowance, always try to cut them at different lengths so that the bulk is reduced in incremental steps.
+**A propos du calibrage de la marge de couture**
+Lorsque tu découpes différentes couches de marge de couture, essaie toujours de les couper à des longueurs différentes afin de réduire l'encombrement par étapes successives.
 
 La couche la plus proche du bon côté du vêtement devrait être la plus longue, donc couper de là.
 
@@ -769,9 +769,9 @@ Avec l'ourlet bien enfoncé, cousez simplement à la main la partie arrière pli
 
 <Tip>
 
-L'emménagement se fait à la main parce qu'il est important que les points ne s'affichent pas sur le devant. So when hand-sewing the hem, don't push your needle through the fabric, but just catch a few threads so your stitches don't show on the front
+L'emménagement se fait à la main parce qu'il est important que les points ne s'affichent pas sur le devant. Lorsque tu couds l'ourlet à la main, n'enfonce pas ton aiguille dans le tissu, mais attrape juste quelques fils pour que tes points ne se voient pas sur le devant
 
-While there are machine alternatives, they aren't as neat (blind hem stitch) or probably not accessible to the home-sewer (industrial blind hem machine).
+. Il existe des alternatives à la machine, mais elles ne sont pas aussi soignées (point d'ourlet invisible) ou probablement pas accessibles aux couturiers amateurs (machine à ourlet invisible industrielle).
 
 </Tip>
 
