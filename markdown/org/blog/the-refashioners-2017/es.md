@@ -128,7 +128,7 @@ And I'm not entirely pleased with the collar. I had made one muslin test garment
 
 In the meanwhile, enjoy some [more pictures of the jacket in this Flickr set](https://www.flickr.com/photos/__niki__/albums/72157684742893052).
 
-## Now it's your turn
+## Ahora te toca a ti
 
 So this is it, my contribution for The Refasioners 2017. I hope I was able to inspire you for some refashioning of your own. If nothing else, maybe it was a good reminder of what not to try ;)
 
