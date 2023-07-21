@@ -9,7 +9,7 @@ Cuánto el final de la manga es más ancho que la muñeca.
 <Note>
 
 Esto cambia un poco el aspecto de la manga.
-More drape makes the sleeve wider and gives you a more _blousy_ effect, whereas less drape makes the sleeve more narrow.
+Más caída hace que la manga sea más ancha y te da un efecto más _bluso_, mientras que menos caída hace que la manga sea más estrecha.
 
 El tapón se trabajará en la taza con pliegues.
 
