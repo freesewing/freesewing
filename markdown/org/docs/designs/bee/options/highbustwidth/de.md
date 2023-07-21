@@ -1,10 +1,10 @@
 ---
-title: "High bust width (Bella)"
+title: "Hohe Brustweite (Bella)"
 ---
 
 ***
 
-Controls the high bust width in the underlying Bella block Bee is based on
+Kontrolliert die hohe Brustbreite des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 
 ## Effekt dieser Option auf das Schnittmuster
 
