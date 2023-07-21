@@ -1,5 +1,5 @@
 ---
-title: "Shin swim trunks: Cutting Instructions"
+title: "Shin-Badehose: Schnittanleitung"
 ---
 
 - **2 zurück** mit guten Seiten zusammen schneiden
