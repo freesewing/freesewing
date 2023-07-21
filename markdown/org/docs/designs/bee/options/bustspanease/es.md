@@ -4,7 +4,7 @@ title: "Facilidad de la expansión del polvo"
 
 ***
 
-Controls the bust span ease in the underlying Bella block Bee is based on
+Controla la holgura de busto en el patrón base (Bella) en el que se basa Bee
 
 ## Efecto de esta opción en el patrón
 
