@@ -1,5 +1,5 @@
 ---
-title: "Huey hoodie: Fabric Options"
+title: "Sudadera con capucha Huey: Opciones de tejido"
 ---
 
 Puede encontrar una sección dedicada de tela de sudader/traje-traje en su tienda de tejidos. Si no lo haces, dirígete a la sección de tejidos y busca un tejido de tejidos más grueso y cómodo.
