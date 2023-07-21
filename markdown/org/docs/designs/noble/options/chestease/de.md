@@ -4,7 +4,7 @@ title: "Brustumfangszugabe"
 
 ***
 
-The **chest ease** option controls the amount of ease at the fullest part of your chest.
+Mit der Option **chest ease** kannst du den Grad der Entspannung an der vollsten Stelle deiner Brust einstellen.
 
 ## Effekt dieser Option auf das Schnittmuster
 
