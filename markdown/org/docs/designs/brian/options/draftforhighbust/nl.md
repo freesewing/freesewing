@@ -1,8 +1,8 @@
 ---
-title: undefined
+title: ongedefinieerd
 ---
 
-undefined
+ongedefinieerd
 
 ## Effect van deze optie op het patroon
 
