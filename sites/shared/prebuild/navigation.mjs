@@ -92,7 +92,7 @@ export const prebuildNavigation = async (store) => {
     all.sitenav += `import { siteNav as ${lang} } from './sitenav.${lang}.mjs'` + '\n'
 
     // Extend navigation if there's a method for that
-    if (extendNav[site]) sitenav[lang] = extendNav[site](sitenav[lang], lang)
+    if (extendNav[site]) sitenav[lang] = await extendNav[site](sitenav[lang], lang)
 
     // Write out navigation object
     fs.writeFileSync(
