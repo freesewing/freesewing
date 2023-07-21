@@ -1,12 +1,12 @@
 ---
-title: "Hortensia handbag: Fabric Options"
+title: "Sac à main Hortensia : Options de tissu"
 ---
 
 ### Tissu principal
 
 Les meilleurs tissus pour Hortensia sont non élastiques, durables et assez solides pour contenir des objets.
 
-En fin de compte, votre choix de tissu principal dépend de votre style personnel et de celui que vous souhaitez utiliser pour votre sac à main. Comme Hortensia a une option de taille, il peut également être agrandi et utilisé pour des choses comme un sac de gym qui n'a pas besoin d'être aussi chic qu'un sac à main haut de gamme. Donc vous pouvez simplement utiliser du **Cotons**, du **Lin** ou amusez-vous un peu avec des **Cotons imprimés**. If you want something more fancy you can try going for **Brocades** and other luxe fabrics. If you want something that will be very durable you can try **Upholstery fabrics**. Vous pouvez également essayer le **Cuir** mais cela sera plus difficile à coudre surtout s'il est épais, donc n'utilisez le que si vous savez ce que vous faites. Rappelez-vous que si vous souhaitez l'utiliser en permanence, favorisez la praticité par rapport au design, comme le but devrait être de le faire durer, plutôt que de le rendre fantaisiste. Si vous ne vous souciez pas du tout de l'apparence, cela pourrait être une opportunité pour utiliser le tissu de votre réserve que vous n'utilisez pas d'habitude, comme ce tissu moche dont vous ne pourrez jamais trouver un usage.
+En fin de compte, votre choix de tissu principal dépend de votre style personnel et de celui que vous souhaitez utiliser pour votre sac à main. Comme Hortensia a une option de taille, il peut également être agrandi et utilisé pour des choses comme un sac de gym qui n'a pas besoin d'être aussi chic qu'un sac à main haut de gamme. Donc vous pouvez simplement utiliser du **Cotons**, du **Lin** ou amusez-vous un peu avec des **Cotons imprimés**. Si tu veux quelque chose de plus fantaisiste, tu peux essayer de choisir **Brocades** et d'autres tissus de luxe. Si tu veux quelque chose de très durable, tu peux essayer **Upholstery fabrics**. Vous pouvez également essayer le **Cuir** mais cela sera plus difficile à coudre surtout s'il est épais, donc n'utilisez le que si vous savez ce que vous faites. Rappelez-vous que si vous souhaitez l'utiliser en permanence, favorisez la praticité par rapport au design, comme le but devrait être de le faire durer, plutôt que de le rendre fantaisiste. Si vous ne vous souciez pas du tout de l'apparence, cela pourrait être une opportunité pour utiliser le tissu de votre réserve que vous n'utilisez pas d'habitude, comme ce tissu moche dont vous ne pourrez jamais trouver un usage.
 
 <Note>
 
