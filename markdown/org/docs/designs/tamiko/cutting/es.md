@@ -1,5 +1,5 @@
 ---
-title: "Tamiko top: Cutting Instructions"
+title: "Top Tamiko: Instrucciones de corte"
 ---
 
 - **Tela principal**
