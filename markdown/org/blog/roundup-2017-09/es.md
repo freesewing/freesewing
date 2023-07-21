@@ -1,113 +1,113 @@
 ---
 author: "joostdecock"
-caption: "Your new login background for the month of october"
+caption: "Tu nuevo fondo de inicio de sesión para el mes de octubre"
 date: "2017-09-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c6418b621228730525d835acff53c4cd6895a865-2000x1250.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - September 2017: Simon complications, email issues, and donations are up this year."
+intro: "Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene."
+title: "Resumen mensual - Septiembre de 2017: Las complicaciones de Simon, los problemas de correo electrónico y las donaciones han aumentado este año."
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene.
 
-## Looking back at september, and a bit of august
-For this first edition, I'm looking back a bit further than one month, because [this site launched at the end of August](/blog/open-for-business/), so I'm including that week in this monthly roundup.
+## Repasando septiembre, y un poco de agosto
+Para esta primera edición, miro un poco más atrás de un mes, porque [este sitio se lanzó a finales de agosto](/blog/open-for-business/), así que incluyo esa semana en este resumen mensual.
 
-### My name is Simon, and I'm complicated
+### Me llamo Simón y soy complicado
 
-Since the launch, there's been [3 new path releases of freesewing core](https://github.com/freesewing/core/releases) --- you know, the thing that actually generates your sewing patterns --- and all of them were due to issues with [the Simon Shirt pattern](/patterns/simon).
+Desde el lanzamiento, ha habido [3 nuevas versiones de la ruta del núcleo de freesewing](https://github.com/freesewing/core/releases) --- ya sabes, lo que realmente genera tus patrones de costura --- y todas ellas se debieron a problemas con [el patrón Simon Shirt](/patterns/simon).
 
-Full details are available in [the changelog](https://github.com/freesewing/core/blob/develop/CHANGELOG.md), but here's the gist of it:
-
-
- -  The seam allowance at the hem was incorrect when the lenthBonus was very low.
- -  The cut in the sleeve for the placket was too short
- -  There was a problem with the seam allowance at the buttonhole placket
- -  The sleeve length bonus was counted double
- -  The hip measurements/ease was not taken into account;  The chest measurement/ease was used instead
- -  A number option defaults were tweaked
+Puedes consultar todos los detalles en [el registro de cambios](https://github.com/freesewing/core/blob/develop/CHANGELOG.md), pero aquí tienes lo esencial:
 
 
-Thanks to [Tatyana](/users/yrhdw) and [Stefan](/users/kczrw) for reporting these issues. You get that funky bug badge:
+ -  El margen de costura en el dobladillo era incorrecto cuando el lenthBonus era muy bajo.
+ -  El corte de la manga para la tapeta era demasiado corto
+ -  Había un problema con el margen de costura en la tapeta del ojal
+ -  La bonificación por la longitud de la manga se contó doble
+ -  No se ha tenido en cuenta la medida de la cadera / facilidad; en su lugar se ha utilizado la medida del pecho / facilidad
+ -  Se han modificado algunas opciones por defecto
 
-![I really like this one](https://posts.freesewing.org/uploads/badge_found_bug_d7d0c9055a.svg)
 
-#### What's your problem Simon?
+Gracias a [Tatyana](/users/yrhdw) y [Stefan](/users/kczrw) por informar de estos problemas. Consigue esa insignia de bicho raro:
 
-That these issues surface in Simon is not a coincidence. The pattern comes with a whopping 41 options that allow you to control pretty much every aspect of your shirt.
+![Este me gusta mucho](https://posts.freesewing.org/uploads/badge_found_bug_d7d0c9055a.svg)
 
-Managing all those different combinations in the code leads to a lot of complexity. And were code complexity rises, bugs appear.
+#### ¿Cuál es tu problema, Simon?
 
-![If Simon was on facebook, its relationship status would certainly be *It's complicated*](https://posts.freesewing.org/uploads/complicated_d8c872358d.gif)
+Que estas cuestiones afloren en Simon no es una coincidencia. El patrón incluye la friolera de 41 opciones que te permiten controlar prácticamente todos los aspectos de tu camiseta.
 
-#### Is it time for an overhaul?
-Simon is a port of the Singular Shirt pattern of MakeMyPattern.com. Back there, making a differently styled shirt would have involved copying the code over, making changes, and then maintaining two slightly different variations for all eternity.
+Gestionar todas esas combinaciones diferentes en el código conlleva una gran complejidad. Y cuando aumenta la complejidad del código, aparecen los errores.
 
-Things are better here at freesewing, where inheritance is baked in the system. So I could (and should perhaps) have a basic shirt pattern, and then branch that out into a bunch of differently styled shirt patterns.
+![Si Simon estuviera en facebook, su estado sentimental sería sin duda *Es complicado*.](https://posts.freesewing.org/uploads/complicated_d8c872358d.gif)
+
+#### ¿Es hora de una revisión?
+Simon es un port del patrón Camisa Singular de MakeMyPattern.com. En aquel entonces, hacer una camisa con un estilo diferente habría implicado copiar el código, hacer cambios y luego mantener dos variaciones ligeramente diferentes para toda la eternidad.
+
+Las cosas son mejores aquí en freesewing, donde la herencia está integrada en el sistema. Así que podría (y tal vez debería) tener un patrón básico de camisa, y luego ramificarlo en un montón de patrones de camisa de estilos diferentes.
 
  - Patrón Base Brian
-   - Basic shirt pattern
-     - Casual shirt pattern
-     - Formal shirt pattern
-     - Some other shirt pattern
+   - Patrón básico de camisa
+     - Patrón de camisa informal
+     - Patrón de camisa formal
+     - Algún otro patrón de camisa
 
-It would not only cut down on code complexity, it would arguably also be more intuitive to see a bunch of differently styled shirt patterns, rather than have only one pattern and then have 41 options to juggle.
+No sólo reduciría la complejidad del código, sino que también podría decirse que sería más intuitivo ver un montón de patrones de camisas con estilos diferentes, en lugar de tener un solo patrón y luego tener 41 opciones con las que hacer malabarismos.
 
-A full Simon overhaul is going to be a bit of work, but it is possible. I'd be interested to hear your thoughts on the matter.
+Una revisión completa de Simon va a suponer un poco de trabajo, pero es posible. Me interesaría conocer tu opinión al respecto.
 
 
-## Dealing with email delivery issues
-I added a workaround for those of you who had trouble getting the registration emails. Basically, people with an email account managed by Microsoft.
+## Tratar los problemas de entrega del correo electrónico
+He añadido una solución para los que teníais problemas para recibir los correos electrónicos de registro. Básicamente, personas con una cuenta de correo electrónico gestionada por Microsoft.
 
-![If these guys run your inbox, then who knows what other emails you're not getting](msft.gif)
+![Si estos tipos dirigen tu bandeja de entrada, quién sabe qué otros correos electrónicos no estás recibiendo](msft.gif)
 
-You can read [my blog post on the matter](/blog/email-spam-problems/) for all the details, but basically if you have one of those addresses, you should get those emails now. The only downside is that you might get them twice.
+Puedes leer [mi entrada en el blog sobre el asunto](/blog/email-spam-problems/) para conocer todos los detalles, pero básicamente si tienes una de esas direcciones, deberías recibir esos correos electrónicos ahora. El único inconveniente es que puede que los recibas dos veces.
 
-## Referrals
-When people link to your site, and visitors click that link, that's called a referral. The bloggers among you might be familiar with skimming through your Google Analytics reports to see who's been linking to you.
+## Remisiones
+Cuando la gente enlaza con tu sitio, y los visitantes hacen clic en ese enlace, eso se llama una referencia. Es posible que los blogueros entre vosotros estéis familiarizados con ojear vuestros informes de Google Analytics para ver quién os ha estado enlazando.
 
-This site does not use Google Analytics --- there's [a blog post with details on that](/blog/privacy-choices/) too --- but still captures referrals. The overview of recent referrals is available for all to see on [the status page](/status).
+Este sitio no utiliza Google Analytics --- hay [una entrada de blog con detalles sobre eso](/blog/privacy-choices/) también --- pero todavía captura referencias. El resumen de las remisiones recientes está disponible para todos en [la página de estado](/status).
 
-Linking to freesewing.org is obviously a nice thing to do, so I keep an eye on the referrals, and if a site shows up that belongs to a user, you get the Ambassador badge.
+Enlazar a freesewing.org es obviamente algo agradable, así que vigilo las referencias, y si aparece un sitio que pertenece a un usuario, obtienes la insignia de Embajador.
 
-![Linking to freesewing.org is one way to unlock the ambassasor badge](https://posts.freesewing.org/uploads/badge_ambassador_3dd1e722cc.svg)
+![Enlazar a freesewing.org es una forma de desbloquear la insignia de embajador](https://posts.freesewing.org/uploads/badge_ambassador_3dd1e722cc.svg)
 
-It's a small way to say thank you for spreading the word about freesewing.
+Es una pequeña forma de darte las gracias por difundir la palabra sobre freesewing.
 
-## Donations
-During september, we passed last year's donations amount, so it's nice to see I'll be able to [send more money to MSF](/about/pledge#donations-history) this year than in 2016.
+## Donaciones
+Durante el mes de septiembre, superamos la cantidad de donaciones del año pasado, así que es agradable ver que podré [enviar más dinero a MSF](/about/pledge#donations-history) este año que en 2016.
 
-You can always keep track of the donations on [the donations pledge page](/about/pledge#donations-history), but here's the current status:
+Siempre puedes hacer un seguimiento de las donaciones en [la página de compromiso de donaciones](/about/pledge#donations-history), pero aquí tienes el estado actual:
 
-![Yay! Yay! Better than last year](https://posts.freesewing.org/uploads/donations_68e214d133.svg)
+![Yay! Yay! Mejor que el año pasado](https://posts.freesewing.org/uploads/donations_68e214d133.svg)
 
-## More download formats
+## Más formatos de descarga
 
-I've also added additional formats to the draft download page. You now have a choice of SVG, PDF, letter-PDF, tabloid-PDF, A4-PDF, A3-PDF, A2-PDF, A1-PDF, and A0-PDF.
+También he añadido formatos adicionales a la página de descarga del borrador. Ahora puedes elegir entre SVG, PDF, carta-PDF, tabloide-PDF, A4-PDF, A3-PDF, A2-PDF, A1-PDF y A0-PDF.
 
-## The quality control badge
-I've added the quality control badge for things like reporting (or fixing) typos, broken links, grammar, and other small improvements.
+## El distintivo de control de calidad
+He añadido la insignia de control de calidad para cosas como informar (o arreglar) erratas, enlaces rotos, gramática y otras pequeñas mejoras.
 
-![See a typo? Let me know and you get this](https://posts.freesewing.org/uploads/badge_quality_control_6acb8c10c2.svg)
+![¿Ves una errata? Avísame y consigue esto](https://posts.freesewing.org/uploads/badge_quality_control_6acb8c10c2.svg)
 
-These might not seem like an earth-shattering contribution, but they are important nevertheless.
+Puede que estas aportaciones no parezcan trascendentales, pero son importantes.
 
-On the spectrum between endlessly toiling over the perfect content before publishing it, or getting it out fast warts and all, I lean heavily towards the latter. So I kinda count on you guys to let me know when I messed up.
+En el espectro entre esforzarse interminablemente por conseguir el contenido perfecto antes de publicarlo, o publicarlo rápidamente con todas sus verrugas, me inclino mucho por lo segundo. Así que cuento un poco con vosotros para que me aviséis cuando meto la pata.
 
-## Looking ahead to october
+## De cara a octubre
 
-There are 5 patterns I am currently working on. And all of them are ready to the point where I need to make them to verify that they work as intended. First a muslin, and then the real thing.
+Actualmente estoy trabajando en 5 patrones. Y todas ellas están listas hasta el punto en que necesito hacerlas para verificar que funcionan como está previsto. Primero una muselina y luego la cosa real.
 
-That's a bit of a bottleneck for me because I have a long commute, so my sewing time is typically limited to the weekends.
+Eso me supone un pequeño cuello de botella, porque tengo un largo viaje al trabajo, así que mi tiempo de costura suele limitarse a los fines de semana.
 
-The only way I see to speed up the process of getting patterns released is to have people join in with the pattern testing. I don't think it's something I can ask people to do, because this is early stage testing. Not to mention that I have nothing to offer them to sweeten the deal. What am I going to give you, a free pattern?
+La única forma que veo de acelerar el proceso de publicación de patrones es que la gente participe en la prueba de patrones. No creo que sea algo que pueda pedir a la gente que haga, porque se trata de pruebas en fase inicial. Por no hablar de que no tengo nada que ofrecerles para endulzar el trato. ¿Qué te voy a dar, un patrón gratis?
 
-Still, on the off chance that some of you want to help out by making a muslin and letting me know how it went, here's what's currently on my drawing board:
+Aun así, por si alguno de vosotros quiere ayudarme haciendo una muselina y contándome cómo le ha ido, esto es lo que tengo actualmente en mi mesa de dibujo:
 
- - A trouser block for men that should be better than Theo(dore)
- - A block for selvedge jeans for men
- - A zip-up hoodie for men
- - A wintercoat
- - A unisex leggins pattern
+ - Un bloque de pantalones para hombre que debería ser mejor que Theo(dore)
+ - Un bloque para vaqueros de orillo para hombre
+ - Una sudadera con cremallera para hombre
+ - Un abrigo de invierno
+ - Un patrón de leggins unisex
 
-Should any of you want to make one of these as a test, [let me know](/contact), it would really help me out. 
+Si alguno de vosotros quiere hacer uno de estos como prueba, [hacédmelo saber](/contact), me sería de gran ayuda. 
 
