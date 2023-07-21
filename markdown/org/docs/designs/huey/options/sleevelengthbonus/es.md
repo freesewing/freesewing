@@ -2,7 +2,7 @@
 title: "Longitud extra de manga"
 ---
 
-This option controls how long to lengthen the sleeves by.
+Esta opción controla la longitud de las mangas.
 
 ## Efecto de esta opción en el patrón
 
