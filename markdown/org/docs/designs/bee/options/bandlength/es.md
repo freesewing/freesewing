@@ -1,5 +1,5 @@
 ---
-title: "Band Length (Cross back ties)"
+title: "Longitud de la banda (Lazos traseros cruzados)"
 ---
 
 ***
