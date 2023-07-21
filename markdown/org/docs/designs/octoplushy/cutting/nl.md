@@ -1,22 +1,22 @@
 ---
-title: "Octoplushy, the plushy octopus: Cutting Instructions"
+title: "Octoplushy, de pluchen octopus: Knip instructies"
 ---
 
-- **Color 1 (Upper body, top of legs & head)**
-  - **Octoplushy, Octopus & Squid**
-    - Cut **8 head** parts
-  - **Octopus only**
-    - Cut **2 eyebrow** parts
-  - **Squid only**
-    - Cut **2 head (a)** parts
+- **Kleur 1 (bovenlichaam, bovenkant benen & hoofd)**
+  - **Octoplushy, Octopus & Inktvis**
+    - Snijd **8 hoofd** onderdelen
+  - **Alleen Octopus**
+    - Knip **2 wenkbrauw** delen
+  - **Alleen inktvis**
+    - Snijd **2 kop (a)** delen
 
-- **Color 2 (Belly, bottom of legs)**
-  - **Octoplushy, Octopus & Squid**
-    - Cut **8 leg** parts
-  - **Squid only**
-    - Cut **2 leg (a)** parts
+- **Kleur 2 (buik, onderkant benen)**
+  - **Octoplushy, Octopus & Inktvis**
+    - Snijd **8 poot** delen
+  - **Alleen inktvis**
+    - Snijd **2 been (a)** delen
 
-- **Eyes Fabric**
-  - **Octopus & Squid**
-    - Cut **2 eye (white)** parts
-    - Cut **2 pupil (black)** parts
+- **Ogen Stof**
+  - **Octopus & Inktvis**
+    - Snijd **2 oog (wit)** delen.
+    - Snijd **2 pupil (zwart)** delen
