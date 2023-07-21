@@ -1,5 +1,5 @@
 ---
-title: "Florence face mask: Cutting Instructions"
+title: "Florence Gesichtsmaske: Anleitung zum Schneiden"
 ---
 
 Florence hat nur einen Teil, die _Maske_. Das ist die Hälfte der Maske, also werden wir zwei davon brauchen. Darüber hinaus wollen wir eine äußere und eine innere Gewebeschicht, also brauchen wir insgesamt vier:
