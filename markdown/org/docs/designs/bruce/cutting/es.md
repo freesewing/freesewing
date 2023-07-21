@@ -1,5 +1,5 @@
 ---
-title: "Bruce boxer briefs: Cutting Instructions"
+title: "Calzoncillos bóxer Bruce: Instrucciones de corte"
 ---
 
 Bruce se compone de una espalda y dos lados, insets y frontales.
