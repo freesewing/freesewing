@@ -1,8 +1,8 @@
 ---
-title: "Pointiness of the nose"
+title: "Spitsheid van de neus"
 ---
 
-The shark can be made with a more blunt, or sharper nose, depending on your preference.
+De haai kan worden gemaakt met een meer stompe of scherpere neus, , afhankelijk van je voorkeur.
 
 ## Effect van deze optie op het patroon
 
