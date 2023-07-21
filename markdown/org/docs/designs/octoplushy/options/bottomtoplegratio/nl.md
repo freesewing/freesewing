@@ -1,8 +1,8 @@
 ---
-title: "Bottom to Top Leg Ratio"
+title: "Verhouding tussen onder- en bovenbenen"
 ---
 
-This setting adjusts the ratio between the top and the bottom of the legs. The lower the ration, the more fabric will be associated with the top of the leg. 100% makes both the top and the bottom the same.
+Deze instelling past de verhouding tussen de boven- en onderkant van de poten aan. Hoe lager de verhouding, hoe meer stof er bij de bovenkant van het been hoort. 100% maakt zowel de bovenkant als de onderkant hetzelfde.
 
 ## Effect van deze optie op het patroon
 
