@@ -1,13 +1,13 @@
 ---
-title: "Bee bikini top: Fabric Options"
+title: "Bikinitopje Bee: Stof Opties"
 ---
 
-### Main and Lining Fabric
+### Hoofd- en voeringstof
 
-The main and lining fabric are the same type of material. Bee is made with swimwear fabrics such as lycras.
+De hoofd- en voeringstof zijn van hetzelfde materiaal. Bee is gemaakt met zwemkledingstoffen zoals lycra.
 
 <Note>
 
-You only need lining fabric if you intend to make the pattern reversible or if you want the band for the cross back tie variant to be a constrasting fabric. Otherwise you can cut all the required pieces from your main fabric.
+Je hebt alleen voeringstof nodig als je van plan bent het patroon omkeerbaar te maken of als je wilt dat de band voor de kruislingse stropdasvariant een contrasterende stof is. Anders kun je alle benodigde stukken uit je hoofdstof knippen.
 
 </Note>
