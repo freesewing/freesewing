@@ -1,5 +1,5 @@
 ---
-title: "Bruce boxer briefs: What You Need"
+title: "Les caleçons de Bruce Ce qu'il faut"
 ---
 
 Pour réaliser Bruce, vous aurez besoin de :
