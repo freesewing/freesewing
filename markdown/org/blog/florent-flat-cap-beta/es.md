@@ -1,33 +1,33 @@
 ---
 author: "joostdecock"
-caption: "Quentin surrounded by our future robot overlords."
+caption: "Quentin rodeado de nuestros futuros señores robots."
 date: "2017-12-06"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ee5c11e3b29fe788dae470ab0e20396d806c4d1b-2000x1333.jpg"
-intro: "The Florent Flat Cap pattern is now available in beta. That's another gift sorted."
-title: "The Florent Flat Cap pattern is now available in beta. That's another gift sorted."
+intro: "El patrón Florent Flat Cap ya está disponible en versión beta. Eso es otro regalo solucionado."
+title: "El patrón Florent Flat Cap ya está disponible en versión beta. Eso es otro regalo solucionado."
 ---
 
-After last month's release of [Benjamin](/patterns/benjamin), here's another pattern release to channel the dapper gentleman within: the [Florent Flat Cap](/patterns/florent).
+Tras el lanzamiento el mes pasado de [Benjamin](/patterns/benjamin), aquí tienes otro patrón para canalizar al elegante caballero que llevas dentro: el [Florent Flat Cap](/patterns/florent).
 
-Like Benjamin, this pattern was contributed by the freesewing community, rather than yours truly. In this case, it was [Quentin Felix](/users/ptzcb) who signed for the design.
+Al igual que Benjamin, este patrón ha sido aportado por la comunidad de costura libre, en lugar de . En este caso, fue [Quentin Felix](/users/ptzcb) quien firmó el diseño.
 
-I asked Quentin if he wanted to write this announcement blog post himself, but he argued that it was time I did something too. He did have this to share though, on his reasons for designing this pattern in the first place:
+Le pregunté a Quentin si quería escribir él mismo esta entrada del blog del anuncio, pero argumentó que ya era hora de que yo también hiciera algo. Sin embargo, tenía esto para compartir , sobre sus razones para diseñar este patrón en primer lugar:
 
-> ##### Quentin on his reasons for designing Florent
+> ##### Quentin sobre sus motivos para diseñar a Florent
 > 
-> I like wearing flat caps myself. I didn't use to, but I have a friend Florent who inspired me to wear them (now you know where the name comes from).
+> A mí también me gusta llevar gorras planas. No solía hacerlo, pero tengo un amigo Florent que me inspiró para llevarlos (ahora ya sabes de dónde viene el nombre).
 > 
-> The first time I made a flat cap, it took me ages to scale the pattern to an exact fit, involving a lot of messing about with tracing paper. There's a number of patterns available online for flat caps. But they all come in one size only. 
+> La primera vez que hice una gorra plana, tardé siglos en escalar el patrón de para que encajara exactamente, lo que supuso un montón de enredos con papel de calco. Hay varios patrones disponibles en Internet para gorras planas. Pero todos vienen en una sola talla. 
 > 
-> I wanted to make this more accessible to people. And, while I was at it, I also drew on my experience to add some tweaks for a better fit. 
+> Quería hacerlo más accesible a la gente. Y, ya que estaba, También me basé en mi experiencia para añadir algunos retoques para un mejor ajuste. 
 > 
-> For example, this design extends lower at the back of the head, which gives it better hold.
+> Por ejemplo, este diseño se extiende más abajo en la parte posterior de la cabeza, lo que le da mejor sujeción.
 
-This *why should we always have to re-invent the wheel?* could pretty much be freesewing's slogan.
+Este *¿por qué tenemos que reinventar siempre la rueda?* podría ser más o menos el eslogan de freesewing.
 
-## It's the season for giving
+## Es la época de dar
 
-Florent requires only one measurement: the head circumference. As such, this release is perfectly timed. With the holiday season coming up, here's another gift you can make yourself.
+Florent sólo necesita una medida: el perímetro cefálico. Por ello, este lanzamiento es perfectamente oportuno. Ahora que se acercan las fiestas, te ofrece otro regalo que puedes hacer tú mismo.
 
-Thanks Quentin!
+¡Gracias Quentin!
 
