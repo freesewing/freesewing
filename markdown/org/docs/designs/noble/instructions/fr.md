@@ -1,17 +1,17 @@
 ---
-title: "Noble body block: Sewing Instructions"
+title: "Bloc de corps noble : Instructions de couture"
 ---
 
 <Note>
 
-###### Noble is a block, not a pattern
+###### Noble est un bloc, pas un motif
 
-A block is a basic shape on which other patterns are based.
+Un bloc est une forme de base sur laquelle les autres motifs sont basés.
 Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Noble block.
+Les blocs ne sont généralement pas faits tels quels mais servent plutôt de base à d'autres modèles. Les instructions ci-dessous n'approfondissent donc pas les fermetures ou les finitions et concernent le bloc Noble par défaut.
 
-Noble is based on the Bella body block
+Noble est basé sur le bloc corporel Bella
 
 </Note>
 
@@ -19,15 +19,15 @@ Noble is based on the Bella body block
 
 - Sew the front inside to the front outside, good sides together.
 
-### Shoulder seam
+### Couture d'épaule
 
 - Sew the back inside to the back outside, good sides together.
 
-### Armhole seam
+### Couture de l'emmanchure
 
 - Fermer les fléchettes arrière.
 
-### Both
+### Les deux
 
 - Sew the front to the backs at the shoulders, good sides together.
 - Sew the front to the backs at the side seams, good sides together.
@@ -56,7 +56,7 @@ Il est parfois nécessaire de porter la maquette pendant un certain temps pour a
 
 <Note>
 
-Remember to treat Noble as a basis rather than a final product, so adjust what you need to get the desired look.
+N'oublie pas de considérer Noble comme une base plutôt que comme un produit final, alors ajuste ce dont tu as besoin pour obtenir l'aspect désiré.
 For instance:
 
 - Change the neck line
@@ -65,9 +65,9 @@ For instance:
 - Add a collar
 
 It is all up to you!
-- Add a collar
+- Ajoute un collier
 
-It is all up to you! Expérimentez et allez-y !
+Tout dépend de toi ! Expérimentez et allez-y !
 
 </Note>
 
