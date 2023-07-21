@@ -1,5 +1,5 @@
 ---
-title: "Aaron A-Shirt: What You Need"
+title: "Aaron A-Shirt: Was du brauchst"
 ---
 
 Um Aaron zu erstellen, benötigst du Folgendes:
