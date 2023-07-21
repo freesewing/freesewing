@@ -1,22 +1,22 @@
 ---
 author: "joostdecock"
-caption: "Did you know that Sandy was named after Olivia Newton-John's character in the move Grease?"
+caption: "Savais-tu que Sandy a été nommée d'après le personnage d'Olivia Newton-John dans le film Grease ?"
 date: "08-01-2018"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/dc69133dd70791871c13267e14c24f70dc797693-1920x1280.jpg"
-intro: "Ladies and gentlemen --- because who says men can't wear skirts --- I am happy to announce the immeadiate availability of our latest freesewing pattern: the Sandy circle skirt ."
-title: "Announcing Sandy, a circle skirt designed by @AlfyLyr"
+intro: "Mesdames et messieurs --- parce que qui a dit que les hommes ne pouvaient pas porter de jupes --- je suis heureux de vous annoncer la disponibilité immédiate de notre dernier patron de freesewing : la jupe cercle Sandy ."
+title: "Nous te présentons Sandy, une jupe circulaire conçue par @AlfyLyr."
 ---
 
-Ladies and gentlemen --- because who says men can't wear skirts --- I am happy to announce the immeadiate availability of our latest freesewing pattern: [the Sandy circle skirt](/patterns/sandy).
+Mesdames et messieurs --- parce que qui a dit que les hommes ne pouvaient pas porter de jupes --- je suis heureux de vous annoncer la disponibilité immédiate de notre dernier patron de couture libre : [la jupe circulaire Sandy](/patterns/sandy).
 
-Sandy was designed by [@AlfaLyr](/users/alfalyr) who really did a stellar job. This makes it also another pattern from the freesewing community, something that I'm very excited about.
+Sandy a été conçu par [@AlfaLyr](/users/alfalyr) qui a vraiment fait un travail remarquable. Cela en fait également un autre modèle issu de la communauté freesewing, ce qui m'enthousiasme beaucoup.
 
-## All the options
+## Toutes les options
 
-As many patterns here at freesewing, Sandy comes with a bunch of options to allow you to customize your skirt to your wishes.
+Comme beaucoup de patrons ici sur freesewing, Sandy est accompagnée d'un tas d'options qui te permettront de personnaliser ta jupe selon tes souhaits.
 
-There's options for how much of circle you want (half? full? Something else?), how long you want it, the shape and overlap of the waistband, whether you want pleats, how much hem, and so on.
+Tu peux choisir la quantité de cercle que tu veux (la moitié ? complet ? Autre chose ?), la longueur que tu veux, la forme et le chevauchement de la ceinture, si tu veux des plis, la taille de l'ourlet, etc.
 
-I can see this becoming rather the success story.  
-So go and [treat yourself to a new skirt](/draft/sandy), and let [@AlfyLyr](/users/alfalyr) know how it works out for you.
+Je vois bien que cela va devenir une véritable histoire à succès.  
+Alors vas-y et [offre-toi une nouvelle jupe](/draft/sandy), et fais savoir à [@AlfyLyr](/users/alfalyr) comment ça se passe pour toi.
 
