@@ -1,5 +1,5 @@
 ---
-title: "Paco pants: Sewing Instructions"
+title: "Paco broek: Naai-instructies"
 ---
 
 <Tip>
@@ -265,8 +265,8 @@ Je zal je manchetten op dezelfde manier bevestigen als je de tailleband bevestig
 
 <Note>
 
-If your sewing machine has a detachable bed (usually removed to expose the "free arm" for sewing
-sleeve cuffs), this will make sewing the cuffs easier.
+Als je naaimachine een afneembaar bed heeft (meestal verwijderd om de "vrije arm" bloot te leggen voor het naaien van
+mouwboorden), maakt dit het naaien van de manchetten makkelijker.
 
  </Note>
 
