@@ -1,160 +1,160 @@
 ---
 author: "joostdecock"
-caption: "Open 24/7 from now onwards"
+caption: "Abierto 24/7 a partir de ahora"
 date: "2017-08-25"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/444b63db2120d50eb52004b2017c992624bbb66e-2000x1333.jpg"
-intro: "Freesewing.org is open for business. That is, the business of giving away free sewing patterns"
-title: "Freesewing.org is open for business. That is, the business of giving away free sewing patterns"
+intro: "Freesewing.org está abierto al público. Es decir, el negocio de regalar patrones de costura gratuitos"
+title: "Freesewing.org está abierto al público. Es decir, el negocio de regalar patrones de costura gratuitos"
 ---
 
-When I released freesewing core back in March, I did not expect it to take another 5 months to finally have a proper front-end for it, but here we are.
+Cuando lancé el núcleo de freesewing en marzo, no esperaba que tardara otros 5 meses en tener por fin un front-end adecuado para él, pero aquí estamos.
 
-From today onwards, [freesewing.org](https://freesewing.org/) is the place to be for your made-to-measure sewing patterns.
+A partir de hoy, [freesewing.org](https://freesewing.org/) es el lugar donde encontrarás tus patrones de costura a medida.
 
-If you're new to freesewing, I suggest you start reading [the about page](/about/), which hopefully does a half-decent attempt at describing what this thing is.
+Si eres nuevo en freesewing, te sugiero que empieces leyendo [la página acerca de](/about/), que espero que haga un intento medio decente de describir lo que es esta cosa.
 
-> As of today mmp will no longer allow new users to sign up and after a grace period of a few months, I will shut it down
+> A partir de hoy mmp ya no permitirá que se registren nuevos usuarios y tras un periodo de gracia de unos meses, lo cerraré
 
-If you do know what I'm doing here, or you saw *An open-source platform for made-to-measure sewing patterns* at the top of this page and that was enough for you to figure it out, this announcement comes after 18 months of work to reinvent my previous site, [makemypattern.com](https://makemypattern.com/).
+Si sabes lo que estoy haciendo aquí, o has visto *Una plataforma de código abierto para patrones de costura a medida* en la parte superior de esta página y eso te ha bastado para darte cuenta, este anuncio llega tras 18 meses de trabajo para reinventar mi anterior sitio, [makemypattern.com](https://makemypattern.com/).
 
-Speaking of which, makemypattern.com has so far generated more than 6500 sewing patterns, so I think it's fair to say it's been a good run.
+Hablando de eso, makemypattern.com ha generado hasta ahora más de 6500 patrones de costura, así que creo que es justo decir que ha sido una buena racha.
 
-![Graph of the number of patterns generated on makemypattern.com](https://posts.freesewing.org/uploads/mmp_patterns_82c2056938.png)
+![Gráfico del número de patrones generados en makemypattern.com](https://posts.freesewing.org/uploads/mmp_patterns_82c2056938.png)
 
-But [every new beginning comes from some other beginning's end](https://www.youtube.com/watch?v=xGytDsqkQY8). So as of today mmp will no longer allow new users to sign up and after a grace period of a few months, I will shut it down.
+Pero [todo nuevo comienzo proviene del final de algún otro comienzo](https://www.youtube.com/watch?v=xGytDsqkQY8). Así que a partir de hoy mmp ya no permitirá que se registren nuevos usuarios y tras un periodo de gracia de unos meses, lo cerraré.
 
-Update your bookmarks people, because [freesewing.org](https://freesewing.org/) is where it's at.
+Actualiza tus marcadores, , porque [freesewing.org](https://freesewing.org/) está donde está.
 
-## Everything is new or different, and hopefully better
+## Todo es nuevo o diferente, y esperemos que mejor
 
-The idea of generating made-to-measure sewing patterns based on your measurements is the same. Apart from that, pretty much everything you see here is different.
+La idea de generar patrones de costura a medida basados en tus medidas es la misma. Aparte de eso, casi todo lo que ves aquí es diferente.
 
-I've written before about the choices I've made when building this frontend. The [matters of principle and ethics](/en/blog/privacy-choices/) as wel as [the technical stuff](/en/blog/freesewing-goes-jamstack/).
+Ya he escrito antes sobre las decisiones que he tomado al construir este frontend. Las [cuestiones de principios y ética](/en/blog/privacy-choices/) así como [las cosas técnicas](/en/blog/freesewing-goes-jamstack/).
 
-Today, I won't go into the details of how things work under the hood. Instead, I'd like to briefly highlight some of the most significant changes for the users of the site. Hopefully, that includes you.
+Hoy no voy a entrar en detalles sobre cómo funcionan las cosas bajo el capó. En su lugar, me gustaría destacar brevemente algunos de los cambios más significativos para los usuarios del sitio. Esperemos que eso te incluya a ti.
 
-### Patterns vs drafts
+### Patrones vs borradores
 
-I told you earlier that mmp generated over 6500 patterns. I can also tell you that mmp has 10 patterns available.
+Antes te he dicho que mmp generó más de 6500 patrones. También puedo decirte que mmp tiene 10 patrones disponibles.
 
-So which one is it, 10 or 6500? Well, it depends on the context. Which is ambigious and confusing.
+Entonces, ¿cuál es, 10 o 6500? Bueno, depende del contexto. Lo cual es ambiguo y confuso.
 
-Now, patterns are patterns, and drafts are drafts.  
-That is, a draft is what you generate from a pattern. It's a pattern drafted to your exact specifications.
+Ahora bien, los patrones son patrones, y los borradores son borradores.  
+Es decir, un borrador es lo que generas a partir de un patrón. Es un patrón elaborado según tus especificaciones exactas.
 
-![An example of a draft from freesewing.org](https://posts.freesewing.org/uploads/draft_sample_7e92caf0d6.svg)
+![Un ejemplo de borrador de freesewing.org](https://posts.freesewing.org/uploads/draft_sample_7e92caf0d6.svg)
 
-I hope that in using both terms consistently, it will become self-explanatory.
+Espero que al utilizar ambos términos de forma coherente, se explique por sí mismo.
 
-So, for freesewing that means there are 12 patterns available, from which a number of drafts have been generated that you can track live on [the status page](/status).
+Así pues, para freesewing eso significa que hay 12 patrones disponibles, a partir de los cuales se han generado una serie de borradores que puedes seguir en directo en [la página de estado](/status).
 
-### New patterns, and blocks
+### Nuevos patrones y bloques
 
-Currently, 12 patterns are available on freesewing.org. All 10 from mmp (note: some have had their name changed) plus the new [Sven Sweatshirt](/patterns/sven) and the [Brian Body Block](/patterns/brian).
+Actualmente hay 12 patrones disponibles en freesewing.org. Los 10 de mmp (nota: algunos han cambiado de nombre) más la nueva [Sudadera Sven](/patterns/sven) y el [Brian Body Block](/patterns/brian).
 
-![An example of the Sven sweatshirt](https://posts.freesewing.org/uploads/sven_b189ad1368.jpg)
+![Un ejemplo de la sudadera Sven](https://posts.freesewing.org/uploads/sven_b189ad1368.jpg)
 
-The block also existed in the mmp backend, but it wasn't available to you. So that's another change, I am making all my blocks (slopers) available.
+El bloque también existía en el backend de mmp, pero no estaba disponible para ti. Así que ése es otro cambio, voy a poner a disposición todos mis bloques (pendientes).
 
-And more is coming, I currently have 3 patterns and 1 block that I am working on. They are not ready yet, and I didn't want to delay the release for them, but I hope to have them all out before the end of the year.
+Y viene más, actualmente tengo 3 patrones y 1 bloque en los que estoy trabajando. Aún no están listos, y no quería retrasar su publicación, pero espero tenerlos todos antes de fin de año.
 
-What I'm saying is, watch this space. Or better, check the links at the bottom of this page for social media accounts to follow.
+Lo que quiero decir es que mires este espacio. O mejor, consulta los enlaces al final de esta página para ver las cuentas de redes sociales que puedes seguir.
 
-### Better support for *les autres*
+### Mejor soporte para *les autres*
 
-I [tried](https://makemypattern.com/blog/imperial-units-have-been-spotted-and-they-might-break-things) and [failed](https://makemypattern.com/blog/imperial-units-not-worth-it) to add support for imperial units to makemypattern.com.
+Yo [intenté](https://makemypattern.com/blog/imperial-units-have-been-spotted-and-they-might-break-things) y [fracasé](https://makemypattern.com/blog/imperial-units-not-worth-it) para añadir soporte para unidades imperiales a makemypattern.com.
 
-This time around, both metric and imperial are fully supported. You can set your preferred units in your account settings. And in each model you can set the units seperately, just in case you happen to sew for people living in different parts of the world.
+Esta vez, tanto el sistema métrico como el imperial son totalmente compatibles. Puedes establecer tus unidades preferidas en la configuración de tu cuenta. Y en cada modelo puedes ajustar las unidades por separado, por si acaso vas a coser para personas que viven en distintas partes del mundo.
 
-Speaking of different parts of the world, freesewing core fully supports different languages. You can get your pattern in a number of languages, and if yours is not listed you can help with the translation.
+Hablando de diferentes partes del mundo, el núcleo de freesewing es totalmente compatible con diferentes idiomas. Puedes obtener tu patrón en varios idiomas, y si el tuyo no está en la lista, puedes ayudar con la traducción.
 
-![The yoke of Simon, in French](https://posts.freesewing.org/uploads/yoke_7555f8616c.svg)
+![El yugo de Simón, en francés](https://posts.freesewing.org/uploads/yoke_7555f8616c.svg)
 
-Arguably, that is a bit of a half-measure when this site is only in English, but baby steps, right?
+Podría decirse que es una medida a medias cuando este sitio sólo está en inglés, pero son pasos de bebé, ¿no?
 
-### Compare to catch issues early
+### Compara para detectar problemas a tiempo
 
-One of the common pitfalls is that people take measurements the wrong way.
+Uno de los escollos habituales es que la gente se toma las medidas de forma equivocada.
 
-When they generate a pattern, those incorrect measurements can sometimes really mess up the pattern in a way that can be hard to spot if you are not familiar with the pattern.
+Cuando generan un patrón, esas medidas incorrectas a veces pueden estropear realmente el patrón de una forma que puede ser difícil de detectar si no estás familiarizado con el patrón.
 
-One way to tackle that is with better measuring instructions, which I have added. But what I really wanted was a way to make spot issues in an easy way.
+Una forma de abordarlo es con mejores instrucciones de medición, que he añadido. Pero lo que realmente quería era una forma de hacer ediciones puntuales de manera fácil.
 
-![These two are going to help you to take accurate measurements](https://posts.freesewing.org/uploads/standing_d66bef801a.jpg)
+![Estos dos te ayudarán a tomar medidas precisas](https://posts.freesewing.org/uploads/standing_d66bef801a.jpg)
 
-Comparing yourself to others is the fastest way to be unhappy. But in this case, there's value to a comparison.
+Compararte con los demás es la forma más rápida de ser infeliz. Pero en este caso, la comparación tiene su valor.
 
-Putting your pattern side by side with a pattern that is known to be correct can help you spot any issues that go beyond size differences.
+Poner tu patrón al lado de otro que se sepa que es correcto puede ayudarte a detectar cualquier problema que vaya más allá de las diferencias de tamaño.
 
-So, comparison is built-in. Every time you generate a draft, you get two things:
+Por tanto, la comparación está incorporada. Cada vez que generas un borrador, obtienes dos cosas:
 
- - Your drafted pattern
- - A comparison of your draft to a range of standard sizes
+ - Tu patrón redactado
+ - Una comparación de tu boceto con una serie de tamaños estándar
 
-![An example of a draft compared to standard sizes](https://posts.freesewing.org/uploads/compare_sample_171c3eaecd.svg)
+![Un ejemplo de borrador comparado con los tamaños estándar](https://posts.freesewing.org/uploads/compare_sample_171c3eaecd.svg)
 
-It's a way to quickly eyeball your draft for any glaring issues before you start working with it.
+Es una forma de echar un vistazo rápido a tu borrador para detectar cualquier problema evidente antes de empezar a trabajar con él.
 
-### Paperless because trees are precious, and printers not a given
+### Sin papel porque los árboles son preciosos, y las impresoras no son un regalo
 
-Something that I am curious to see whether it will catch on are paperless drafts.
+Algo que tengo curiosidad por ver si se pone de moda son los borradores sin papel.
 
-Apart from the obvious upside of saving paper, I hope this will allow people who don't have access to a printer to use freesewing.
+Aparte de la ventaja obvia del ahorro de papel, espero que esto permita utilizar freesewing a las personas que no tienen acceso a una impresora.
 
-The idea is that you don't have to print your pattern. Instead, you can transfer it directly onto fabric or another medium.
+La idea es que no tengas que imprimir tu patrón. En su lugar, puedes transferirlo directamente sobre tela u otro soporte.
 
-To make that possible, the pattern comes with detailed dimensions and a metric grid (or imperial grid if you're into that) that helps you transfer all the information.
+Para hacerlo posible, el patrón viene con dimensiones detalladas y una cuadrícula métrica (o imperial, si te va eso) que te ayuda a transferir toda la información.
 
-![An example of a draft using the paperless theme](https://posts.freesewing.org/uploads/paperless_sample_def717482e.svg)
+![Un ejemplo de borrador utilizando el tema sin papel](https://posts.freesewing.org/uploads/paperless_sample_def717482e.svg)
 
-As I said, I'm curious to see whether this will be useful to people, but I felt it was worth a try.
+Como he dicho, tengo curiosidad por ver si esto será útil para la gente, pero me pareció que merecía la pena intentarlo.
 
-### I've got your back (up)
+### Te cubro las espaldas (arriba)
 
-Also new is that when you draft a pattern, I will keep that draft for you, and it will remain available.
+Otra novedad es que, cuando hagas el borrador de un patrón, guardaré ese borrador para ti y seguirá estando disponible.
 
-![All your drafts are kept and available in your account](https://posts.freesewing.org/uploads/draft_list_7950e1609a.png)
+![Todos tus borradores se guardan y están disponibles en tu cuenta](https://posts.freesewing.org/uploads/draft_list_7950e1609a.png)
 
-You can come back at any time to re-download the pattern, or tweak it, redraft it, or fork it. Yes [fork it](/docs/site/fork), which is kinda cool because you can also fork patterns from other people after they've shared their draft.
+Puedes volver en cualquier momento para descargar de nuevo el patrón, o retocarlo, redactarlo de nuevo o bifurcarlo. Sí [bifurcarlo](/docs/site/fork), lo que es bastante guay porque también puedes bifurcar patrones de otras personas después de que hayan compartido su borrador.
 
-You can also add your own notes to your drafts (and to your models for that matter).
+También puedes añadir tus propias notas a tus borradores (y a tus modelos en realidad).
 
-### Community-driven blog and showcase
+### Blog y escaparate comunitario
 
-Your makes deserve better than a Flickr album somewhere, so I've added showcases to the site. The idea is to have a grabbag of examples here on the site of things people have made.
+Tus marcas merecen algo mejor que un álbum de Flickr en alguna parte, así que he añadido vitrinas al sitio. La idea es tener una recopilación de ejemplos aquí en el sitio de cosas que ha hecho la gente.
 
-![Showcase of the Hugo hoodie by uneanneedecouture](https://posts.freesewing.org/uploads/hugo_b331b0c298.jpg)
+![Escaparate de la sudadera Hugo de uneanneedecouture](https://posts.freesewing.org/uploads/hugo_b331b0c298.jpg)
 
-Obviously, I can't add your work if I don't know about it, so either get in touch of make sure to use the #freesewing hashtag when posting about it.
+Obviamente, no puedo añadir tu trabajo si no lo conozco, , así que ponte en contacto conmigo o asegúrate de utilizar el hashtag #freesewing cuando publiques algo sobre él.
 
-Speaking of posting, the freesewing blog is also open to your contributions if you feel you have something to share.
+Hablando de publicar, el blog de freesewing también está abierto a tus contribuciones si crees que tienes algo que compartir.
 
-### Badges baby
+### Insignias bebé
 
-This is a bit silly, but you can now unlock [badges](/docs/site/badges) on the site. I added the feature initially because I wanted to find a way to thank the people who took part in the early access program.
+Esto es un poco tonto, pero ahora puedes desbloquear insignias [](/docs/site/badges) en el sitio. Añadí la función inicialmente porque quería encontrar una forma de dar las gracias a a las personas que participaron en el programa de acceso anticipado.
 
-A while ago, I opened up an early access version of the site to those people who were interested, and I would like to thank all of you who tried out the site, reported issues, or merely gave feedback or encouragements.
+Hace un tiempo, abrí una versión de acceso anticipado del sitio para a aquellas personas que estuvieran interesadas, y me gustaría dar las gracias a todos los que probasteis el sitio, informasteis de problemas o simplemente disteis vuestra opinión o vuestros ánimos.
 
-Those of you who took part should all get that coveted early access badge. If it's missing from [your profile](/profile), [get in touch](/contact).
+Todos los que habéis participado deberíais recibir la codiciada insignia de acceso anticipado. Si falta en [tu perfil](/profile), [ponte en contacto](/contact).
 
-Other badges are available, including one for signing up on launch day. [The full list of badges is here](/docs/site/badges).
+Hay otras insignias disponibles, incluida una por inscribirse el día del lanzamiento. [La lista completa de insignias está aquí](/docs/site/badges).
 
-## What happens now?
+## ¿Qué pasa ahora?
 
-![Darkness, realistically](https://posts.freesewing.org/uploads/darkness_a9b72d2537.svg)
+![Oscuridad, de forma realista](https://posts.freesewing.org/uploads/darkness_a9b72d2537.svg)
 
-Maybe it's just me, but after every major project comes to completion, I tend to slide into a black hole of *is this it?* disillusionment.
+Tal vez sea sólo yo, pero después de que cada gran proyecto llegue a su fin, tiendo a deslizarme en un agujero negro de *¿es esto?* desilusión.
 
-I might need a few weeks to bounce back from that, but don't let that stop you from giving me [your feedback and opinions](/contact) on the site. And if you manage to break something, you can [create an issue](https://github.com/freesewing/site/issues/new).
+Puede que necesite unas semanas para recuperarme de ello, pero no dejes que eso te impida darme [tus comentarios y opiniones](/contact) en el sitio. Y si consigues romper algo, puedes [crear un problema](https://github.com/freesewing/site/issues/new).
 
-## One last thing
-I've worked on this for about a year and a half, and especially the last 11 months or so rather intensively.
+## Una última cosa
+He trabajado en esto durante un año y medio, y especialmente los últimos 11 meses más o menos de forma bastante intensa.
 
-Now that it's ready, would you help me spread the news a little?
+Ahora que está listo, ¿me ayudas a difundir un poco la noticia?
 
-If you could tell somebody about this or perhaps tweet or write about it, you'd do me a real favour.
+Si pudieras contárselo a alguien o quizás tuitear o escribir sobre ello, me harías un verdadero favor.
 
-Thank you
+Gracias
 
 
 
