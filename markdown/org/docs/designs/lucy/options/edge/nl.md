@@ -1,8 +1,8 @@
 ---
-title: Edge
+title: Rand
 ---
 
-This option controls the width of the top edge of your pocket.
+Deze optie bepaalt de breedte van de bovenrand van je zak.
 
 ## Effect van deze optie op het patroon
 
