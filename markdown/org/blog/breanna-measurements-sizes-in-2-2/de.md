@@ -23,82 +23,82 @@ Schauen Sie sich [Breanna](/designs/breanna/), unser Grundschnittblock für Dame
 
 Ein Grundschnittblock ist vielleicht nicht das aufregendste Schnittmuster, das es gibt, aber er spielt eine wichtige Rolle, da er die Grundform ist, auf der andere Schnittmuster aufgebaut sind.
 
-For example, we have a similar block for menswear called [Brian](/designs/brian/) and our [Aaron](/designs/aaron/), [Bent](/designs/bent/), [Carlita](/designs/carlita/), [Carlton](/designs/carlton/), [Huey](/designs/huey/), [Hugo](/designs/hugo/), [Jaeger](/designs/jaeger/), [Simon](/designs/simon/), [Simone](/designs/simone/), [Sven](/designs/sven/), and [Wahid](/designs/wahid/) patterns can all can trace their lineage back to Brain somehow.
+Wir haben zum Beispiel einen ähnlichen Block für Herrenbekleidung namens [Brian](/designs/brian/) und unsere [Aaron](/designs/aaron/), [Bent](/designs/bent/), [Carlita](/designs/carlita/), [Carlton](/designs/carlton/), [Huey](/designs/huey/), [Hugo](/designs/hugo/), [Jaeger](/designs/jaeger/), [Simon](/designs/simon/), [Simone](/designs/simone/), [Sven](/designs/sven/), und [Wahid](/designs/wahid/) Muster können alle irgendwie auf Brain zurückgeführt werden.
 
-In other words, Breanna is an important building block for us to extend our womenswear collection. But that does not mean it is not good news for you too. If you have been sewing for a while, chances are drafting your own block/sloper has perpetually been on your to-do list. Well, good news, because here is your block ready to go.
+Mit anderen Worten: Breanna ist für uns ein wichtiger Baustein, um unsere Damenkollektion zu erweitern. Das heißt aber nicht, dass es nicht auch für dich eine gute Nachricht ist. Wenn du schon eine Weile für nähst, stehen die Chancen gut, dass das Entwerfen eines eigenen Blocks/Slopers immer auf deiner To-Do-Liste steht. Dann gibt es gute Neuigkeiten, denn hier ist dein Block fertig zum Mitnehmen.
 
-Oh, and of course it has all the bells and whistles you can expect from us. Have a look at [the pattern options](/docs/patterns/breanna/options/) and I think you'll be positively impressed. If nothing else, this block can accommodate 1 or 2 bust darts in 15 different places, giving you 120 unique ways to place your bust dart(s).
+Oh, und natürlich hat es all den Schnickschnack, den du von uns erwarten kannst. Schau dir [an, die Musteroptionen](/docs/patterns/breanna/options/) und Ich denke, du wirst positiv beeindruckt sein. Zumindest kann dieser Block 1 oder 2 Brustabnäher an 15 verschiedenen Stellen unterbringen, so dass du 120 einzigartige Möglichkeiten hast, deine Brustabnäher zu platzieren.
 
-Breanna has has been a while in the making, and we'd love to get your feedback on it. Making a muslin from a block like this really isn't much work. So if you've got some time to spare to whip this one up and let us know how it went, that would be great.
+Die Entwicklung von Breanna hat eine Weile gedauert und wir würden uns freuen, wenn du uns dein Feedback gibst. Aus einem solchen Block einen Musselin zu machen, ist wirklich nicht viel Arbeit. Wenn du also ein bisschen Zeit hast und uns wissen lässt, wie es gelaufen ist, , wäre das toll.
 
 
 ## Neue/Verschiedene Maße zur besseren Anpassung an Damenbekleidung
 
-Now that we're making our jouney into womenswear, we realized that the measurements we use on the site are somewhat skewed towards menswear. In addition, we had a lot of people stuggling with the shoulder slope measurement. So we decided to re-visit our measuremets, and we've made the following changes:
+Jetzt, wo wir uns der Damenmode zuwenden, haben wir gemerkt, dass die Maße, die wir auf der Website verwenden, etwas schräg zur Herrenmode sind. Außerdem hatten viele Leute Probleme mit der Messung der Schulterneigung. Deshalb haben wir uns entschlossen, unsere Maßstäbe zu überdenken, , und wir haben folgende Änderungen vorgenommen:
 
-### We have a bunch of new *HPS* measurements
+### Wir haben einen Haufen neuer *HPS* Messungen
 
-We've settled on the High-Point Shoulder, the so-called HPS point, as the basis for many of the vertical torso measurements. If you're not certain what/where the HPS point is, [check the HPS documentation](/docs/measurements/hps/).
+Wir haben uns für den High-Point Shoulder, den sogenannten HPS-Punkt, als Grundlage für viele der vertikalen Rumpfmaße entschieden. Wenn du dir nicht sicher bist, wo sich der HPS-Punkt befindet, kannst du unter [in der HPS-Dokumentation](/docs/measurements/hps/)nachsehen.
 
-### We discontinued the Center Back To Neck measurement
+### Wir haben die Messung "Mitte Rücken zum Nacken" eingestellt
 
-As we mentioned earlier, we use measurements from the HPS point now for vertical torso measurements. As a result, we've discontinued the old *Center back neck to waist* measurement.
+Wie bereits erwähnt, verwenden wir die Messungen vom HPS-Punkt jetzt für die vertikalen Rumpfmessungen . Aus diesem Grund haben wir die alte *Rückenmitte Nacken bis Taille* Messung eingestellt.
 
-Given that this measurement is now gone, you may need to add another measurement for certain patterns.
+Da dieses Maß nun wegfällt, musst du für bestimmte Muster eventuell ein weiteres Maß hinzufügen.
 
-### We changed the way the shoulder slope is measured
+### Wir haben die Art und Weise geändert, wie die Schulterneigung gemessen wird
 
-We noticed that people struggles with the way we asked them to measure [the shoulder slope measurement](/docs/measurements/shoulderslope) so we have changed how to do that.
+Wir haben festgestellt, dass die Leute mit der Art und Weise, wie wir sie gebeten haben, [die Schulterneigung zu messen, zu kämpfen haben.](/docs/measurements/shoulderslope) Deshalb haben wir die Vorgehensweise geändert.
 
-Because the new method yields a very different number (that ultimately captures the same thing, how much your shoulder slopes downward) here too we had to go in and reset all the existing data. In other words, you'll have to re-measure your shoulder slope.
+Da die neue Methode eine ganz andere Zahl ergibt (die letztlich dasselbe erfasst , nämlich wie stark deine Schulter nach unten abfällt), mussten wir auch hier alle vorhandenen Daten zurücksetzen. Mit anderen Worten: Du musst die Neigung deiner Schulter neu messen.
 
-## Generate patterns in *standard* sizes (no account required
+## Erstelle Muster in *Standardgrößen* (kein Konto erforderlich)
 
-To get great patterns, you need good measurements, and a bunch of them. It's what we do here at FreeSewing, and most of the problems with patterns are because something goes wrong with taking measurements.
+Um tolle Muster zu bekommen, brauchst du gute Maße, und zwar jede Menge davon. Das ist es, was wir hier bei FreeSewing tun, und die meisten Probleme mit Schnittmustern entstehen, weil etwas beim Messen schief läuft.
 
-Unfortunately, there is no magic shortcut for this. If you want something made-to-measure, it's always going to start with acurate measurements.
+Leider gibt es dafür keine magische Abkürzung. Wenn du etwas nach Maß haben willst, , musst du zuerst genau messen.
 
-This does raise the bar for people who are new to the site, and want to kick the tires.
+Das legt die Messlatte für Leute höher, die neu auf der Website sind und sie erst einmal ausprobieren wollen.
 
-> *Oooh, free patterns, nice* 😍  
-> *Wait, I have to create an account first?* 🤔  
-> *And take all these measurements?* 😬  
-> *That seems like a lot of work.*
+> *Oooh, kostenlose Muster, schön* 😍  
+> *Warte, ich muss erst ein Konto erstellen?* 🤔  
+> *Und all diese Maße nehmen?* 😬  
+> *Das scheint eine Menge Arbeit zu sein.*
 
-Fair enough.
+Das stimmt.
 
-In addition, our regular visitors also asked us whether they could get to see a pattern and play around with it without first having to put in a bunch of measurements.
+Außerdem haben uns unsere regelmäßigen Besucher gefragt, ob sie ein Muster sehen und damit herumspielen können, ohne vorher einen Haufen Maße eingeben zu müssen.
 
-So __*drumroll*__ that is no longer required. We now offer all our patterns in *standard sizes*. Not only do you not have to take measurements to try out the patterns, you don't even have to sign up or log in. No account needed, just pick a pattern, a size, and you're good to go.
+Also __*Trommelwirbel*__ das ist nicht mehr nötig. Wir bieten jetzt alle unsere Muster in *Standardgrößen*an. Du musst nicht nur keine Maße nehmen, um die Muster auszuprobieren, sondern du musst dich nicht einmal anmelden oder einloggen. Du brauchst kein Konto, wähle einfach ein Muster und eine Größe aus und schon kann es losgehen.
 
-Obvously, made-to-measure patterns is *our thing*, and we're not changing that. But we're hoping that by lowering the bar to try out our platform, more people will give FreeSewing a try.
+Offensichtlich sind Maßanfertigungen *unser Ding*, und das werden wir auch nicht ändern. Aber wir hoffen , dass mehr Menschen FreeSewing ausprobieren werden, wenn wir die Hürde zum Ausprobieren unserer Plattform senken.
 
-### What are standard sizes anyway?
+### Was sind eigentlich Standardgrößen?
 
-The hardest thing about adding support for standard sizes? Figuring out what the heck standard sizes are supposed to be. We took a stab at it, and if you're curious you can [check out our sizing table here](/docs/various/sizes/).
+Was ist das Schwierigste an der Unterstützung von Standardgrößen? Finde heraus, welche Standardgrößen haben soll. Wir haben es ausprobiert und wenn du neugierig bist, kannst du [ unsere Größentabelle hier](/docs/various/sizes/)nachlesen.
 
-For menswear, our size range is 32 to 50, and they are based on a size 38 baseline that we then graded up and down.  
-For womenswear, our size range is 28 to 48, and they are based on a size 34 baseline that we then graded up and down.
+Für Herrenbekleidung reicht unsere Größenskala von 32 bis 50. Sie basiert auf einer Basisgröße von 38, die wir dann auf nach oben und unten abgestuft haben.  
+Bei Damenbekleidung reicht die Größenskala von 28 bis 48 und basiert auf einer Basisgröße von 34, die wir dann nach oben und unten abgestuft haben.
 
 <Note>
 
-If you're not sure what these numbers are, they are the neck circumference in cm.
+Falls du dir nicht sicher bist, was diese Zahlen bedeuten, es handelt sich um den Halsumfang in cm.
 
 </Note>
 
-While we tried to make our size ranges inclusive, and these tables are an honest attempt to come up with something that makes sense, please understand that this is not our core business. We've love to hear your feedback on the sizing tables, and are open to tweaks and suggestions, but at the end of the day, what we want is to give you a pattern drafted to your measurements.  
-These sizes are just a way to lure you in 🤫
+Wir haben zwar versucht, unsere Größenbereiche so umfassend wie möglich zu gestalten, und diese Tabellen sind ein ehrlicher Versuch, mit etwas Sinnvolles zu finden. Wir freuen uns über dein Feedback zu den Größentabellen und sind offen für Verbesserungen und Vorschläge, aber am Ende des Tages wollen wir dir ein Schnittmuster geben, das nach deinen Maßen entworfen wurde.   
+Diese Größen sind nur ein Mittel, um dich anzulocken 🤫.
 
 
-## Also: All the other stuff
+## Außerdem: All die anderen Sachen
 
-Now go and click around, for we've changed a bunch of other stuff too.
+Jetzt klick dich mal durch, denn wir haben auch noch einen Haufen anderer Sachen geändert.
 
-If you bump into any problems or have questions, as always [our chat room is the place to get in touch](https://discord.freesewing.org/).
+Wenn du auf Probleme stößt oder Fragen hast, ist wie immer [unser Chatroom der richtige Ort, um mit in Kontakt zu treten](https://discord.freesewing.org/).
 
-And if you happen to like what we do here, perhaps now is a good time to tell your friends about FreeSewing. After all, they can now check it out without needing to sign up.
+Und wenn dir gefällt, was wir hier machen, ist jetzt vielleicht ein guter Zeitpunkt, um deinen Freunden von FreeSewing zu erzählen. Immerhin können sie es jetzt ausprobieren, ohne sich anmelden zu müssen.
 
-PS: We have [a handy share page](/share/) you can use for this.
+PS: Wir haben [eine praktische Share Page](/share/) , die du dafür verwenden kannst.
 
 
 
