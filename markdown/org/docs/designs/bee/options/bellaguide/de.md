@@ -1,16 +1,16 @@
 ---
-title: "Show Bella"
+title: "Bella anzeigen"
 ---
 
 ***
 
-Shows the outline of the Bella block Bee is based on
+Zeigt die Umrisse des Bella-Grundschnittes an, auf dem Bee basiert
 
-This is to help give context to the other options of Bee especially when using the fit options
+Dies dient dazu, den Kontext zu den anderen Optionen von Bee zu verdeutlichen, insbesondere bei der Verwendung der Anpassungsoptionen
 
 <Note>
 
-It is recommended to have this on when adjusting the options for this pattern but also to turn it off before printing
+Es wird empfohlen, diese Option zu aktivieren, wenn du die Optionen für dieses Muster einstellst, aber auch, sie vor dem Drucken zu deaktivieren
 
 </Note>
 
