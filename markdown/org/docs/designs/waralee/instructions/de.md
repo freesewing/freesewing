@@ -1,5 +1,5 @@
 ---
-title: "Waralee wrap pants: Sewing Instructions"
+title: "Waralee Wickelhose: Anleitung zum Nähen"
 ---
 
 <Warning>
@@ -26,47 +26,47 @@ wenn du die Taschen herstellen willst, machen Sie sie, bevor Sie ein Stück Stof
 
 </Note>
 
-Both sets of pockets on Waralee are single welt pockets. These use a single piece of fabric to create a pocket opening, but are otherwise very similar to the double welt pockets shown here: [Double welt pockets](https://freesewing.org/docs/sewing/double-welt-pockets).
+Beide Taschensets der Waralee sind einfache Leistentaschen. Sie verwenden ein einziges Stück Stoff, um eine Taschenöffnung zu schaffen, sind aber ansonsten den hier gezeigten doppelten Leistentaschen sehr ähnlich: [Doppelte Leistentaschen](https://freesewing.org/docs/sewing/double-welt-pockets).
 
-We'll start with the front pockets.
-- Start with all the parts, and mark the location of the pocket on the right side of the fabric.
-- Mark the pocket opening on one of the facing pieces too. This time on the wrong side of the fabric.
-- Place the facing on the fabric, right sides together. Align the corners of the pocket openings, and pin in place.
+Wir beginnen mit den Vordertaschen.
+- Beginne mit allen Teilen und markiere die Stelle, an der die Tasche sitzen soll, auf der rechten Seite des Stoffes.
+- Markiere die Taschenöffnung auch auf einem der Verkleidungsteile. Diesmal auf der falschen Seite des Stoffes.
+- Lege den Besatz rechts auf rechts auf den Stoff. Richte die Ecken der Taschenöffnungen aus und stecke sie fest.
 
-Pocket lining
-- Mark the pocket opening on your pocket lining. It should be just inside the seam allowance.
-- Align the pocket openings up on all fabric pieces, and line your pocket lining top up with the waistband. Pin or baste in place.
+Taschenfutter
+- Markiere die Taschenöffnung auf deinem Taschenfutter. Sie sollte genau innerhalb der Nahtzugabe liegen.
+- Richte die Taschenöffnungen an allen Stoffteilen nach oben aus und lege das Taschenfutter oben an den Bund. Feststecken oder festheften.
 
-Pocket opening
-- Using small stitches, sew the long sides of the pocket openings, catching fabric, facing, and pocket lining. Do not sew past the ends of the pocket opening.
-- Cut a slit directly between the two lines of stitching. Just before the end, split each end of the cut, snipping into each corner of the pocket opening (but not past). You should have a small V at each end of the cut.
-- Press the seams open.
-- Now push everything through the opening to the other side. Lay everything out nicely with the pocket opening open. Press the pocket opening.
+Taschenöffnung
+- Nähen Sie mit kleinen Stichen die langen Seiten der Taschenöffnungen, den Auffangstoff, den Besatz und das Taschenfutter zusammen. Nähen Sie nicht über die Enden der Taschenöffnung hinaus.
+- Schneide einen Schlitz direkt zwischen den beiden Nahtlinien. Kurz vor dem Ende teilst du die beiden Enden des Schnitts und schneidest in jede Ecke der Taschenöffnung (aber nicht darüber hinaus). Du solltest an jedem Ende des Schnitts ein kleines V haben.
+- Bügle die Nähte auf.
+- Schiebe nun alles durch die Öffnung auf die andere Seite. Lege alles schön aus, wobei die Taschenöffnung offen ist. Drücke die Taschenöffnung.
 
-Constructing the welt
-- Turn the garment over, and press the bottom edge of the pocket facing under. Later, this will yield a nice, clean edgestitch.
-- Next, flip the pocket facing up, so that it covers the pocket opening. Then, fold back just enough of the facing to exactly cover the entire pocket opening. Press, and pin in place.
+Konstruktion des Rahmens
+- Drehe das Kleidungsstück um und bügle die untere Kante der Tasche nach unten. So entsteht später ein schöner, sauberer Randstich.
+- Als Nächstes drehst du die Tasche nach oben, so dass sie die Taschenöffnung bedeckt. Falte dann gerade so viel von der Verkleidung zurück, dass sie die gesamte Taschenöffnung genau bedeckt. Drücke und stecke sie fest.
 
-Sewing the pocket opening in place
-- Turn the whole thing right side up, then fold back the fabric on one short side of the pocket opening, revealing a little triangle cutout and your pocket lining.
-- Sew the short edge of the pocket opening, just outside of your markings. This should secure the V-shaped cutout bits to the lining. Once you feel confident everything will look good from the right side, restitch this line a few times to secure.
-- Press.
-- To make things nice and tidy, you'll also stitch the bottom edge of the pocket facing to the pocket lining at this point. (This is why we pressed the very edge under earlier.)
+Einnähen der Taschenöffnung
+- Drehe das Ganze auf die rechte Seite und falte den Stoff an einer kurzen Seite der Taschenöffnung um, sodass ein kleiner dreieckiger Ausschnitt und dein Taschenfutter zum Vorschein kommen.
+- Nähen Sie die kurze Kante der Taschenöffnung knapp außerhalb der Markierungen. Damit sollten die V-förmigen Ausschnitte am Futter befestigt werden. Wenn du sicher bist, dass alles von der rechten Seite aus gut aussieht, nähst du diese Linie ein paar Mal nach, um sie zu sichern.
+- Presse.
+- Damit alles schön ordentlich ist, nähst du an dieser Stelle auch die Unterkante des Taschenbesatzes an das Taschenfutter. (Deshalb haben wir vorhin die Kante nach unten gedrückt.)
 
-Finishing the pocket
-- Take your second pocket facing, and press all edges under except for one of the longer edges.
-- Lay this facing over the pocket opening, right sides together and raw edge aligned with the raw edge of the pocket lining.
-- Now, fold your pocket lining over, aligning all the edges of the pocket.
-- Pin or clip the second pocket facing to the pocket lining along the raw edges. Then flip the pocket lining back, and pin the entire edge of the facing to the pocket lining.
-- Edgestitch the facing to the pocket fabric. This will sit behind the pocket opening when everything is assembled, so that if your pocket gaps open, your fashion fabric will show in the gap.
-- Flip the pocket fabric back, aligning edges, and pin all sides of the pocket. Close the pocket as you normally do. You can use a french seam, a serger, or another method.
+Fertigstellung der Tasche
+- Nimm deine zweite Taschenbespannung und bügle alle Kanten nach unten, bis auf eine der längeren Kanten.
+- Lege diesen Besatz rechts auf rechts über die Taschenöffnung, so dass die Schnittkante mit der Schnittkante des Taschenfutters übereinstimmt.
+- Falte nun dein Taschenfutter um und richte dabei alle Kanten der Tasche aus.
+- Stecke oder klammere den zweiten Taschenbesatz entlang der Schnittkanten an das Taschenfutter. Dann drehst du das Taschenfutter um und steckst die gesamte Kante des Besatzes an das Taschenfutter.
+- Nähen Sie den Besatz an den Taschenstoff. Dieser wird hinter der Taschenöffnung sitzen, wenn alles zusammengebaut ist, so dass dein Modestoff in der Lücke zu sehen ist, wenn deine Tasche offen ist.
+- Drehe den Taschenstoff um, wobei du die Kanten ausrichtest, und stecke alle Seiten der Tasche fest. Schließe die Tasche wie gewohnt. Du kannst eine französische Naht, einen Serger oder eine andere Methode verwenden.
 
-Making everything clean and tidy
-- Flip the whole piece over so you're looking at the right side.
-- Fold back the main fabric, so you can see the little triangles on the short edge of the pocket opening.
-- Sew another line, now through all layers. You should be able to see the edge stitching line of the first facing. Stitch all the way to this line, which finishes the facing on the inside of the pocket. You want to be really close to the fold with this stitch line.
-- Now fold the fabric back on the long side of the pocket opening, where the pocket sides were stitches together. You'll see the initial stitch line of the pocket opening. Make sure all the layers of fabric are laying nicely, and stitch over this stitch line once again, now through all layers. This secures this side of the pocket to the garment fabric.
-- Flip over, press well, and admire your work.
+Alles sauber und aufgeräumt machen
+- Drehe das ganze Stück um, sodass du auf die rechte Seite schaust.
+- Falte den Hauptstoff zurück, sodass du die kleinen Dreiecke an der kurzen Kante der Taschenöffnung sehen kannst.
+- Näht eine weitere Linie, jetzt durch alle Schichten. Du solltest die Nahtlinie des ersten Besatzes sehen können. Nähen Sie bis zu dieser Linie, die den Besatz auf der Innenseite der Tasche abschließt. Du willst mit dieser Stichlinie wirklich nah an der Falte sein.
+- Falte nun den Stoff an der langen Seite der Taschenöffnung zurück, wo die Taschenseiten zusammengenäht wurden. Du siehst die erste Nahtlinie der Taschenöffnung. Vergewissere dich, dass alle Stofflagen gut liegen, und nähe noch einmal über diese Nahtlinie, jetzt durch alle Lagen. Dadurch wird diese Seite der Tasche auf dem Stoff der Kleidung befestigt.
+- Drehe sie um, drücke sie gut aus und bewundere dein Werk.
 
 <Note>
 
@@ -74,18 +74,18 @@ Ich habe Platzierungen für die vorderen Taschen einbezogen, die durch die Klapp
 
 </Note>
 
-Constructing the back pockets
-- The back pockets are also single welt pockets, but the pocket opening is horizontal, rather than at an angle. This means they hew much closer to the instructions for [double welt pockets](https://freesewing.org/docs/sewing/double-welt-pockets).
-- Follow the double welt instructions, modifying the opening to have a single welt, rather than a double welt.
+Konstruktion der Gesäßtaschen
+- Die Gesäßtaschen sind ebenfalls einfache Leistentaschen, aber die Taschenöffnung ist horizontal und nicht schräg. Das bedeutet, dass sie sich viel genauer an die Anleitung für [double welt pockets](https://freesewing.org/docs/sewing/double-welt-pockets)halten.
+- Befolge die Anweisungen für den doppelten Saum, indem du die Öffnung so abänderst, dass sie einen einfachen statt einen doppelten Saum hat.
 
-Congratulations! Your pockets are finished!
+Herzlichen Glückwunsch! Deine Taschen sind fertig!
 
 ### Schritt 2: Hem die Seiten und unten
 
 ![Hem die Seiten und unten](waralee-hem-sides-and-bottom.png)
 
-- Hem the sides
-- Hem the bottom.
+- Säume an den Seiten
+- Säume den Boden.
 
 <Note>
 
@@ -93,20 +93,20 @@ Sie können die beste Methode für Sie verwenden. In der Version, die ich zum er
 
 </Note>
 
-### Step 3: Sew the two pants parts together at the crotch
+### Schritt 3: Nähen Sie die beiden Hosenteile im Schritt zusammen.
 
 ![Verlege die beiden Teile nebeneinander mit guten Seiten zusammen. Nähen Sie die Schnitt Naht](waralee-crotch-seam-no-pockets.png)
 
-Now you get to sew the two pants parts together.
+Jetzt kannst du die beiden Hosenteile zusammennähen.
 
-- Lay the two pants parts on top of one another with _good sides together_ and sew the seam along the cutout.
-- _Finish_ this seam and press it.
+- Lege die beiden Hosenteile mit _guten Seiten aufeinander_ und nähe die Naht entlang des Ausschnitts.
+- _Beende_ diese Naht und bügle sie.
 
 ### Schritt 4: Bereiten Sie die vier Zeichenketten vor
 
 Die Saiten sind nur lange Rohre aus Stoff.
 
-- Nehmen Sie ein Viertel Ihrer Taillenmessung. Fügen Sie diese Zahl auf 40cm hinzu (17”). Fügen Sie Ihre Nahtgenehmigung hinzu. This is the length of each string.
+- Nehmen Sie ein Viertel Ihrer Taillenmessung. Fügen Sie diese Zahl auf 40cm hinzu (17”). Fügen Sie Ihre Nahtgenehmigung hinzu. Das ist die Länge der einzelnen Strings.
 - Schneiden Sie vier Stoffstreifen aus, die so lang und 5cm breit sind.
 
 <Tip>
@@ -130,8 +130,8 @@ Wenn Ihr Material empfindlich oder fadenscheinig ist, können Sie eine Schnittst
 </Note>
 
 - Halb entlang der langen Seite einklappen, _gute Seiten zusammen_.
-- Stitch the long side and one of the short sides,
-- Turn the tie right side out.
+- Nähen Sie die lange Seite und eine der kurzen Seiten,
+- Drehe die Krawatte auf die rechte Seite.
 
 <Tip>
 
@@ -147,7 +147,7 @@ Das kann erleichtert werden, wenn man ein Stück länger als die Streifen nimmt.
 
 Jetzt ist es an der Zeit, die Taillenband zu nähen.
 
-- If your fabric is delicate, add interfacing to the wrong side of the pants above the waist band line. (rot)
+- Wenn dein Stoff empfindlich ist, füge auf der linken Seite der Hose oberhalb des Taillenbandes eine Einlage hinzu. (rot)
 - Falten Sie die Nahtgenehmigung ein und falten Sie dann entlang der Taillenbandlinie. (rot)
 - Fügen Sie eine der Zeichenketten ein, die Sie im vorherigen Schritt auf jeder Seite gemacht haben.
 - Nähen Sie die Taillenbandlinie entlang und fügen Sie ein paar zusätzliche Nähte hinzu, um sicherzustellen, dass diese Saiten gut befestigt sind. (blau)
