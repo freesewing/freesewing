@@ -1,22 +1,22 @@
 ---
-maker: "unknown"
-caption: "Paneled Sandy skirt by Sunshine"
+maker: "desconocido"
+caption: "Falda Sandy con paneles de Sunshine"
 date: "2021-02-15"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4d38d6837e8125276522abb62d44a99e191fd8a0-1477x1969.jpg"
-intro: "This lovely Sandy skirt was made by Sunshine. The maker shared more information about the project:"
-title: "Sandy skirt by Sunshine"
+intro: "Esta encantadora falda Sandy fue confeccionada por Sunshine. El creador compartió más información sobre el proyecto:"
+title: "Falda Sandy de Sunshine"
 designs:
-  - "sandy"
+  - "arena"
 ---
 
 
-This lovely Sandy skirt was made by Sunshine. The maker shared more information about the project:
+Esta encantadora falda Sandy fue confeccionada por Sunshine. El creador compartió más información sobre el proyecto:
 
-"I couldn't fit the Sandy pattern on the 44"fabric I bought, so I ended up folding it a few times and using it to cut sections for a panel skirt using alternating colors instead that I had dyed last week. I added a strip on the bottom to increase the length. Then, I added a  trim that I had sitting in my sewing basket for 2 years. I hadn't previously considered using a section of the Sandy as a panel segment, but it worked super well!!! I'm not perfect at sewing, but I think it turned out alright!"
+"No me cabía el patrón Sandy en la tela de 44" que compré, así que acabé doblándola unas cuantas veces y utilizándola para cortar secciones para una falda de paneles utilizando en su lugar colores alternos que había teñido la semana pasada. Añadí una tira en la parte inferior para aumentar la longitud. Después, añadí un ribete que tenía en mi cesta de costura desde hacía 2 años. No me había planteado antes utilizar una sección del Sandy como segmento de panel, ¡¡¡pero funcionó súper bien!!! No soy perfecta cosiendo, pero creo que ha quedado bien".
 
 <Note>
 
-This project is from [the FreeSewing Discord](https://discord.freesewing.org/) and has been shared here with permission.
+Este proyecto procede de [la Discordia de FreeSewing](https://discord.freesewing.org/) y se ha compartido aquí con permiso.
 
 </Note>
 
