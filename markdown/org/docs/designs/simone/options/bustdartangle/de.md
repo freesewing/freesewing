@@ -4,8 +4,8 @@ title: "Winkel des Brustabnähers"
 
 Kontrolliert den Winkel, in welchem der (seitliche) Brustabnäher sich nach unten neigt.
 
-- Increase this option to angle the bust darts downwards and towards the floor
-- Decrease this option to angle the bust darts upwards and towards the armscye
+- Erhöhe diese Option, um die Brustabnäher nach unten und zum Boden hin zu neigen
+- Verringere diese Option, um die Brustabnäher nach oben und in Richtung der Achselhöhle zu winkeln
 
 ## Effekt dieser Option auf das Schnittmuster
 
