@@ -1,5 +1,4 @@
 import { pages as posts } from 'site/prebuild/blog.mjs'
-import { meta } from 'site/prebuild/blog-meta.mjs'
 import { getPostSlugPaths } from 'site/components/mdx/posts/utils.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useDynamicMdx } from 'shared/hooks/use-dynamic-mdx.mjs'

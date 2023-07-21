@@ -80,7 +80,7 @@ const writeData = async (store) => {
 /*
  * Helper method to load all MDX files from a folder
  */
-const getMdxFileList = async (cwd, lang) => {
+const getMdxFileList = async (cwd) => {
   const cmd = `find ${cwd} -type f -name "en.md"`
   const find = exec(cmd, { cwd }, (error, stdout, stderr) => {
     if (error) {
@@ -123,7 +123,7 @@ export const prebuildGitData = async (store, mock) => {
   }
 
   // Get list of filenames
-  const list = await getMdxFileList(mdxRoot, 'en')
+  const list = await getMdxFileList(mdxRoot)
   // Loop over files
   for (const file of list) {
     // This list will include '' which we don't want to get the git log for as that

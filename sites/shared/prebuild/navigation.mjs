@@ -57,7 +57,6 @@ export const prebuildNavigation = async (store) => {
    * s: slug without leading or trailing slash (/)
    */
   const sitenav = {}
-  const sluglut = {}
   const all = {
     sitenav: '',
   }

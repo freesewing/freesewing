@@ -166,7 +166,6 @@ const loadBlog = async () => {
   // Apply same order to all languages
   const posts = {}
   const meta = {}
-  const languages = Object.keys(titles).filter((lang) => lang !== 'em')
 
   for (const lang of Object.keys(titles)) {
     posts[lang] = {}
@@ -207,7 +206,6 @@ const loadShowcase = async () => {
   // Apply same order to all languages
   const posts = {}
   const meta = {}
-  const languages = Object.keys(titles).filter((lang) => lang !== 'em')
 
   for (const lang of Object.keys(titles)) {
     posts[lang] = {}

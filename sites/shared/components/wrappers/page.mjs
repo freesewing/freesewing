@@ -9,7 +9,6 @@ import { LayoutWrapper, ns as layoutNs } from 'shared/components/wrappers/layout
 import { DefaultLayout, ns as defaultLayoutNs } from 'site/components/layouts/default.mjs'
 import { Feeds } from 'site/components/feeds.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
-import { NavigationContext } from 'shared/context/navigation-context.mjs'
 
 export const ns = [...new Set([...layoutNs, ...defaultLayoutNs])]
 
@@ -18,14 +17,7 @@ export const PageWrapper = (props) => {
   /*
    * Deconstruct props
    */
-  const {
-    layout = DefaultLayout,
-    footer = true,
-    header = false,
-    children = [],
-    path = [],
-    locale = 'en',
-  } = props
+  const { layout = DefaultLayout, footer = true, header = false, children = [], path = [] } = props
   // Title is typically set in props.t but check props.title too
   const pageTitle = props.t ? props.t : props.title ? props.title : null
 
