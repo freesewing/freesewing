@@ -1,10 +1,10 @@
 ---
-title: "Front shoulder width (Bella)"
+title: "Schouderbreedte voorkant (Bella)"
 ---
 
 ***
 
-Controls the front shoulder width in the underlying Bella block Bee is based on
+Regelt de voorste schouderbreedte in het onderliggende Bella blok Bee is gebaseerd op
 
 ## Effect van deze optie op het patroon
 
