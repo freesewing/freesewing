@@ -1,20 +1,20 @@
 ---
 maker: "onbekend"
-caption: "Purple, floral, utterly delightful Wahid waistcoat"
+caption: "Paars, gebloemd, heerlijk Wahid gilet"
 date: "2020-11-27"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4aa2526bd8de543f32ed5f9470e1728d876aa568-750x750.jpg"
-intro: "Kaena made her husband a Wahid waistcoat to go to a wedding, and we just love it!"
-title: "Purple Wahid by Kaena"
+intro: "Kaena heeft voor haar man een Wahid-gilet gemaakt voor op een bruiloft, en we vinden het geweldig!"
+title: "Paars Wahid door Kaena"
 designs:
   - "wahid"
 ---
 
-Kaena made her husband a Wahid waistcoat to go to a wedding, and we just love it!
+Kaena heeft voor haar man een Wahid-gilet gemaakt voor op een bruiloft, en we vinden het geweldig!
 
-![Kaena's husband rocking their Wahid waistcoat](https://posts.freesewing.org/uploads/wahid_kaena_wahid_kaena_2_ad16bc1ad6.jpg "Kaena's husband rocking their Wahid waistcoat")
+![Kaena's man rockt hun Wahid vest](https://posts.freesewing.org/uploads/wahid_kaena_wahid_kaena_2_ad16bc1ad6.jpg "Kaena's man rockt hun Wahid vest")
 
 <Note>
 
-These pictures are from the instagram feed of [Kaena](https://www.instagram.com/kaena.mackinnon/). They are posted here with permission.
+Deze foto's komen van de instagramfeed van [Kaena](https://www.instagram.com/kaena.mackinnon/). Ze zijn hier geplaatst met toestemming.
 
 </Note>
