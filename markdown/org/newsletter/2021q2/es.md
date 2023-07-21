@@ -1,36 +1,36 @@
 ---
 date: "2021-04-01"
 edition: "2021q2"
-intro: "Welcome to the 2021 Spring edition of the FreeSewing newsletter. Here's what we have included for you:"
-title: "2021 Spring edition"
+intro: "Bienvenido a la edición de primavera 2021 del boletín FreeSewing. Esto es lo que hemos incluido para ti:"
+title: "2021 Edición de primavera"
 ---
 
-Welcome to the 2021 Spring edition of the FreeSewing newsletter.  
-Here's what we have included for you:
+Bienvenida a la edición de primavera 2021 del boletín FreeSewing.  
+Esto es lo que hemos incluido para ti:
 
-- 👕 Pattern releases winter 2021 (1-minute read - by Joost)
-- 🕵️ Behind the seams: Wouter van Wageningen (9-minute read - by An & Wouter)
-- 🔍 Spotlight on some lesser-know FreeSewing features (3-minute read - by Joost)
-- 🤯 Some of the more crazy ideas on our drawing board (3-minute read - by Joost)
-- ❤️ FreeSewing is brought to you by the kindness of strangers (5-minute read by Joost)
+- 👕 El patrón sale en invierno de 2021 (lectura de 1 minuto - por Joost)
+- 🕵️ Tras las costuras: Wouter van Wageningen (lectura de 9 minutos - por An & Wouter)
+- 🔍 Destacamos algunas funciones menos conocidas de FreeSewing (lectura de 3 minutos - por Joost)
+- 🤯 Algunas de las ideas más locas de nuestro tablero de dibujo (lectura de 3 minutos - por Joost)
+- ❤️ FreeSewing llega a ti gracias a la amabilidad de desconocidos (lectura de 5 minutos por Joost)
 
-We hope you enjoy it. If not, mash that reply button and tell us what you'd like to read instead ¯\\\_(ツ)\_/¯
-
-&nbsp;
+Esperamos que lo disfrutes. Si no, pulsa el botón de respuesta y dinos qué te gustaría leer en su lugar ¯\_(ツ)\_/¯
 
 &nbsp;
 
+&nbsp;
 
 
-# 👕 Pattern releases winter 2021
 
-Here's a quick recap of the new patterns we released in the first quarter of this year:
+# 👕 Patrón lanzamientos invierno 2021
 
- - [The Bella bodice block for womenswear](https://freesewing.org/blog/bella-bodice-block/): A collaboration with somebody from the industry to replicate the kind of bodice block that's used in fashion today. Currently it has a bust dart towards the side-seam. A variation with a shoulder dart is on our todo list.
- - [The Hortensia handbag](https://freesewing.org/blog/announcing-hortensia/): Another collaboration, this time between Stofsuchti and long-time contributor Wouter Van Wageningen brought the first handbag pattern to FreeSewing.
- - [The Cornelius cycling breeches](https://freesewing.org/blog/cornelius-cycling-breeches/): More from Wouter still, these cycling breeches or knickerbockers are based on the Keystone drafting method.
+He aquí un rápido resumen de los nuevos patrones que hemos lanzado en el primer trimestre de este año:
 
-Click through any of the links for the blog posts announcing these patterns.
+ - [El bloque de corpiño Bella para ropa de mujer](https://freesewing.org/blog/bella-bodice-block/): Una colaboración con alguien del sector para reproducir el tipo de bloque de corpiño que se utiliza en la moda actual. Actualmente tiene una pinza en el busto hacia la costura lateral. Una variación con un dardo en el hombro está en nuestra lista de cosas por hacer.
+ - [El bolso Hortensia](https://freesewing.org/blog/announcing-hortensia/): Otra colaboración, esta vez entre Stofsuchti y el antiguo colaborador Wouter Van Wageningen, trajo el primer patrón de bolso a FreeSewing.
+ - [Los pantalones de ciclismo Cornelius](https://freesewing.org/blog/cornelius-cycling-breeches/): Más de Wouter todavía, estos pantalones de ciclismo o bombachos se basan en el método de calado Keystone.
+
+Haz clic en cualquiera de los enlaces para acceder a las entradas del blog que anuncian estos patrones.
 
 
 &nbsp;
@@ -39,109 +39,109 @@ Click through any of the links for the blog posts announcing these patterns.
 
 &nbsp;
 
-# 🕵️ Behind the seams: Wouter van Wageningen
+# 🕵️ Tras las costuras: Wouter van Wageningen
 
-> *With two pattern releases to his name in the last 3 months,* *who better to shine a spotlight on than long time contributor Wouter.*
+> *Con dos lanzamientos de patrones en su haber en los últimos 3 meses,* *quién mejor que Wouter, colaborador desde hace mucho tiempo, para destacarlo.*
 > 
-> *An — one of our newer contributors — interviewed him for this newsletter:*
+> *An -uno de nuestros colaboradores más recientes- le entrevistó para este boletín:*
 
 ## Bio
 
-Born in the Netherlands and lived there for 30 years before moving to “the States”. He accompanied his American wife when she wanted to return and has been living there for over 20 years. He now considers it his home, while recognizing all the emotional ties to The Netherlands when he goes back to visit.
+Nació en Holanda y vivió allí 30 años antes de trasladarse a "Estados Unidos". Acompañó a su esposa estadounidense cuando ésta quiso regresar y lleva viviendo allí más de 20 años. Ahora la considera su hogar, aunque reconoce todos los vínculos emocionales con Holanda cuando vuelve de visita.
 
-While a busy IT manager, he likes to create new patterns for FreeSewing from time to time.
+Aunque es un ocupado director de informática, de vez en cuando le gusta crear nuevos patrones para FreeSewing.
 
-## How did you learn about freesewing?
+## ¿Cómo conociste la costura libre?
 
-When I started sewing many years ago, I was continuously looking for patterns for men. The site of Joost, Makemypattern (since late 2012), came up in one of my searches, and I thought it was an interesting concept.
+Cuando empecé a coser hace muchos años, buscaba continuamente patrones para hombres. El sitio de Joost, Makemypattern (desde finales de 2012), apareció en una de mis búsquedas, y me pareció un concepto interesante.
 
-## How did you become a contributor?
+## ¿Cómo te convertiste en colaborador?
 
-In the beginning, there were no contributors other than Joost, that I remember. He had made this framework that allowed other people to make patterns that could be incorporated. Being a programmer, as a professional and hobbyist, this intrigued me. The originally site was created in the PHP programming language, one I had not worked with before. I thought this made for an interesting challenge to contribute to the work of Joost.
+Al principio, no había más colaboradores que Joost, que yo recuerde. Había hecho este marco que permitía a otras personas hacer patrones que pudieran incorporarse. Como programador, profesional y aficionado, esto me intrigaba. El sitio original se creó en el lenguaje de programación PHP, con el que no había trabajado antes. Pensé que suponía un reto interesante para contribuir al trabajo de Joost.
 
-As this was my first experience with the toolset, the language, and making patterns, I picked something as easy as [a bow tie](https://freesewing.org/designs/benjamin/). It is a simple object, as it is flat with a width and a height, but no real depth. Therefore, I didn’t have to try to shape a piece of fabric around a 3D shape. The result passed the muster of Joost, and became an official pattern on the site.
+Como ésta era mi primera experiencia con el conjunto de herramientas, el lenguaje y la creación de patrones, elegí algo tan fácil como [una pajarita](https://freesewing.org/designs/benjamin/). Es un objeto simple, ya que es plano, con una anchura y una altura, pero sin profundidad real. Por lo tanto, no tuve que intentar dar forma a un trozo de tela alrededor de una forma 3D. El resultado pasó el examen de Joost y se convirtió en un patrón oficial del sitio.
 
-Before finding FreeSewing, I had drawn a pencil skirt for my partner by just using her measurements. I realized while working on the bow tie that I could try to combine the experience of making this skirt with that of making the pattern for the bow tie, and make another pattern for FreeSewing. Thus, [the Penelope pencil skirt](https://freesewing.org/designs/penelope/) was born.
+Antes de encontrar FreeSewing, había dibujado una falda lápiz para mi compañera utilizando simplemente sus medidas. Mientras trabajaba en la pajarita me di cuenta de que podía intentar combinar la experiencia de hacer esta falda con la de hacer el patrón para la pajarita, y hacer otro patrón para FreeSewing. Así nació [la falda lápiz Penélope](https://freesewing.org/designs/penelope/) .
 
-## What has been your contributor work so far?
+## ¿Cuál ha sido tu trabajo como colaborador hasta ahora?
 
-I have created [the Waralee wrap pants](https://freesewing.org/designs/waralee/), [Albert apron](https://freesewing.org/designs/albert/), and [Cornelius cycling breeches](https://freesewing.org/designs/cornelius/). I also did the implementation of [the Hortensia handbag](https://freesewing.org/designs/hortensia/), but that is not my design. I got the drawings and measurements from the designer (Stoffsuchti), and translated those into a FreeSewing pattern.
+He creado [los pantalones envolventes Waralee](https://freesewing.org/designs/waralee/), [el delantal Albert](https://freesewing.org/designs/albert/), y [los pantalones de ciclista Cornelius](https://freesewing.org/designs/cornelius/). También hice la implementación de [el bolso Hortensia](https://freesewing.org/designs/hortensia/), pero no es mi diseño. Obtuve los dibujos y las medidas del diseñador (Stoffsuchti), y traduje esos a un patrón de FreeSewing.
 
-The Benjamin bow tie was totally my own creation, exactly as I imagined what it should look. The Penelope and Waralee designs were built from the knowledge I gathered by reading about those types of garments, and implementing my interpretation of them. The Cornelius is actually an implementation of a pattern in an existing drafting system (The "Keystone" System).
+La pajarita Benjamin fue una creación totalmente mía, exactamente como me imaginaba que debía ser. Los diseños de Penélope y Waralee se construyeron a partir de los conocimientos que reuní leyendo sobre ese tipo de prendas, y poniendo en práctica mi interpretación de las mismas. El Cornelius es en realidad una implementación de un patrón en un sistema de dibujo existente (El Sistema "Keystone").
 
-## When and why did you start sewing?
+## ¿Cuándo y por qué empezaste a coser?
 
-Seven or eight years ago, I wanted to know what it would be like to wear a kilt. But kilts are insanely expensive. They are made of very nice wool and it takes an enormous amount of time to make a real Scottish kilt. There are these “utility kilts”, which are basically cargo pants made into a kilt. More practical with pockets, and made out of cotton, but they still cost around $200.
+Hace siete u ocho años, quería saber cómo sería llevar una falda escocesa. Pero kilts son increíblemente caros. Están hechos de una lana muy bonita y se tarda muchísimo tiempo en confeccionar un auténtico kilt escocés. Existen los "kilts utilitarios", que son básicamente pantalones de carga convertidos en kilt. Más prácticos, con bolsillos y hechos de algodón, pero siguen costando unos 200 $.
 
-Because I was still figuring out whether I would enjoy wearing a kilt, it didn't make much sense to me to invest that much. While researching this I found [a website dedicated to people wearing kilts](http://www.xmarksthescot.com/), and it had a documented process on how to create your own utility kilt. I did have a sewing machine, it seemed within my abilities, so I bought some fabric and started sewing. One kilt became two, and then I figured I needed a shirt to go along with it. It should be somewhat contemporary to old kilts. With a little searching I found a pattern to make such a shirt. And that led to making more and more shirts, and then pants and...
+Como aún estaba pensando si me gustaría llevar falda escocesa, no tenía mucho sentido invertir tanto. Mientras investigaba encontré [, un sitio web dedicado a la gente que lleva kilts](http://www.xmarksthescot.com/), y tenía un proceso documentado sobre cómo crear tu propio kilt utilitario. Tenía una máquina de coser, parecía estar dentro de mis posibilidades, así que compré tela y empecé a coser. Una falda escocesa se convirtió en dos, y entonces pensé que necesitaba una camisa que la acompañara. Debe ser algo contemporáneo a los kilts antiguos. Buscando un poco encontré un patrón para hacer una camisa así. Y eso me llevó a hacer más y más camisas, y luego pantalones y...
 
-At one point I decided that I wasn't going to buy any more clothes, I was just going to make them. One exception to that are underwear and socks, as these don’t give me much pleasure in making them, and are usually ridiculously cheap. I have knitted a pair of socks, and I like knitting a lot. I just don't seem to be able to knit fast enough to keep up with the wear and tear. The other exception is athletic or technical clothing, as I just cannot buy the fabrics (e.g. eVent) you need for it. These are exclusively sold to vendors of this type of clothing. I have recently made some yoga pants and biking shorts for myself, so this may change.
+Llegó un momento en que decidí que no iba a comprar más ropa, sólo iba a hacerla. Una excepción son la ropa interior y los calcetines, ya que no me da mucho placer hacerlos, y suelen ser ridículamente baratos. He tejido un par de calcetines, y me gusta mucho tejer. Parece que no soy capaz de tejer lo suficientemente rápido para seguir el ritmo del desgaste. La otra excepción es la ropa atlética o técnica, ya que no puedo comprar los tejidos (por ejemplo, eVent) que se necesitan para ella. Se venden exclusivamente a vendedores de este tipo de ropa. Recientemente me he hecho unos pantalones de yoga y unos pantalones cortos de ciclismo, así que esto puede cambiar.
 
-## What is your daily job, outside of freesewing?
+## ¿Cuál es tu trabajo diario, fuera del freesewing?
 
-IT manager. I take care of the IT needs for a union of homecare workers.
+Director de informática. Me ocupo de las necesidades informáticas de un sindicato de trabajadores a domicilio.
 
-## What are you currently working on?
+## ¿En qué estás trabajando actualmente?
 
-Nothing for FreeSewing at the moment, but I am looking into the possibility to make a pattern based on the trouser block. That way, I don't have to start from scratch as I usually do, and just extend Joost's work. I'm looking forward to trying this approach, but I first have to complete my doublet.
+De momento no hay nada para Costura Libre, pero estoy estudiando la posibilidad de hacer un patrón basado en el bloque del pantalón. De este modo, no tengo que empezar de cero como suelo hacer, y me limito a ampliar el trabajo de Joost. Estoy deseando probar este enfoque, pero primero tengo que completar mi doblete.
 
-## Which project did you just finish?
+## ¿Qué proyecto acabas de terminar?
 
-The [Cornelius cycling breeches](https://freesewing.org/designs/cornelius/) and the implementation of [the Hortensia handbag](https://freesewing.org/designs/hortensia/).
+Los pantalones de ciclista [Cornelius](https://freesewing.org/designs/cornelius/) y la implantación de [el bolso Hortensia](https://freesewing.org/designs/hortensia/).
 
-## What sewing project are you most proud of?
+## ¿De qué proyecto de costura estás más orgullosa?
 
-I'm proud of a lot of projects; my first shirt (even though it has a lot of faults), my first tailored coat, all of my art shirts, … But if I had to pick one, it would probably be [my Mondrian shirt](https://shirtartistry.blog/2019/01/23/mondrian-shirt-the-beginning/). It was the one where I went all the way from a concept in my mind, though creating it on paper, to turning it into a garment.
+Estoy orgullosa de un montón de proyectos; mi primera camisa (aunque tiene muchos fallos), mi primer abrigo a medida, todas mis camisas de arte, … Pero si tuviera que elegir una, probablemente sería [mi camisa Mondrian](https://shirtartistry.blog/2019/01/23/mondrian-shirt-the-beginning/). Fue en la que pasé de un concepto en mi mente, a crearlo sobre el papel, a convertirlo en una prenda.
 
-## What in your life are you most proud of?
+## ¿De qué aspecto de tu vida estás más orgulloso?
 
-Everybody will answer that with something like 'my children'. And I am proud of the persons they've become. But I think that is more something they have done, than what I have done. I was just there to help them when needed. One of the things I've done that I'm proud of is having been a volunteer firefighter for 10 years. And, for the last 20 years or so, I've worked for nonprofits trying to make the world a better place.
+Todo el mundo responderá con algo así como "mis hijos". Y estoy orgulloso de las personas en que se han convertido. Pero creo que eso es más algo que han hecho ellos, que lo que he hecho yo. Yo sólo estaba allí para ayudar a cuando fuera necesario. Una de las cosas de las que me siento orgulloso es de haber sido bombero voluntario durante 10 años. Y, durante los últimos 20 años aproximadamente, he trabajado para organizaciones sin ánimo de lucro que intentan hacer del mundo un lugar mejor.
 
-## What do you love the most about sewing?
+## ¿Qué es lo que más te gusta de la costura?
 
-The creativity. I like to make things. I discovered that with sewing, in contrast to things like wood or metal working, I can be really precise. And I can find the patience in myself to create that precision. What’s more, if I make a mistake, I can usually undo it (e.g. take the seam out). It's a lot harder to take things apart once you've glued them together. I also like that I can make something that is a flat drawing on a piece of paper into something that is a real three dimensional thing, by turning those patterns into pieces of fabric and sewing them together. Even the trail and error process to adapt a pattern to my needs, or to create a new pattern from scratch, is interesting to me. It's a discovery journey with practical outcomes. And, although I'm not good at all of the required skills, I can do most of them well enough that I can go from something in my head to something that I can wear, and that is very satisfying.
+La creatividad. Me gusta hacer cosas. Descubrí que con la costura, a diferencia de cosas como el trabajo de la madera o el metal, puedo ser realmente precisa. Y puedo encontrar la paciencia en mí misma para crear esa precisión. Además, si cometo un error, normalmente puedo deshacerlo (por ejemplo, quitar la costura). Es mucho más difícil desmontar las cosas una vez que las has pegado. También me gusta poder convertir algo que es un dibujo plano en un trozo de papel en algo que es una cosa tridimensional real, convirtiendo esos patrones en trozos de tela y cosiéndolos juntos. Incluso el proceso de prueba y error para adaptar un patrón a mis necesidades, o para crear un nuevo patrón desde cero, me resulta interesante. Es un viaje de descubrimiento con resultados prácticos. Y, aunque no soy buena en todas las habilidades requeridas, puedo hacer la mayoría de ellas lo suficientemente bien como para pasar de algo en mi cabeza a algo que pueda llevar puesto, y eso es muy satisfactorio.
 
-## What do you hate the most about sewing?
+## ¿Qué es lo que más odias de la costura?
 
-I am a bit too impatient to do large parts of sewing by hand, and that is my least favorable part of sewing. The occasional basting is fine, it is the sewing of a full seam by hand that is beyond me. I have made buttonholes by hand on my tailored jacket, and that was satisfying by itself. Yet it takes too much time and it doesn't fascinate me enough to allow me to become good at it. It'll most likely take a long time before I’ll do it again. For some reason I don't mind doing the pad stitching for lapels and such on tailored jackets.
+Soy un poco impaciente para hacer grandes partes de la costura a mano, y esa es mi parte menos favorable de la costura. Hilvanar de vez en cuando está bien, lo que me supera es coser una costura completa a mano. He hecho ojales a mano en mi chaqueta a medida, y eso ya era satisfactorio de por sí. Sin embargo, me lleva demasiado tiempo y no me fascina lo suficiente como para permitirme llegar a ser buena en ello. Lo más probable es que pase mucho tiempo antes de que vuelva a hacerlo. Por alguna razón no me importa hacer las costuras de las solapas y demás en las chaquetas a medida.
 
-## What’s the hardest part of sewing to you?
+## ¿Qué es para ti lo más difícil de coser?
 
-It is nearly impossible for me to draw the mental picture that is in my head on a piece of paper. I'm really bad at drawing free form. Because of this, I cannot, not even temporarily, put the end result of a certain clothing design on a piece of paper to look at it. And therefore I cannot get someone else’s opinion or input on it before I create it. It is frustrating.
+Me resulta casi imposible dibujar en un papel la imagen mental que tengo en la cabeza. Soy realmente malo dibujando de forma libre. Por ello, no puedo, ni siquiera temporalmente, poner el resultado final de un determinado diseño de ropa en un trozo de papel para mirarlo. Y, por tanto, no puedo recabar la opinión o la aportación de otra persona sobre ella antes de crearla. Es frustrante.
 
-## What would be your advice for starting sewists/sewistas?
+## ¿Cuál sería tu consejo para los costureros/cosedoras principiantes?
 
-First of all, go for it and concentrate on the parts of the sewing process you enjoy. Look at the big picture of creating a garment for yourself, and let that motivate you to get through the parts you don't like so much.
+En primer lugar, ve a por ello y concéntrate en las partes del proceso de costura con las que disfrutas. Mira la gran imagen de crear una prenda para ti, y deja que eso te motive para superar las partes que no te gustan tanto.
 
-Secondly, just keep going and don’t look at things that didn't work out so well too much. Everything takes practice, and you will get better at it. Break up things into smaller parts and think about what you can do to improve that one part. Maybe there's a different way to do this step that works better for you.
+En segundo lugar, sigue adelante y no te fijes demasiado en las cosas que no salieron tan bien. Todo requiere práctica, y mejorarás en ello. Divide las cosas en partes más pequeñas y piensa en qué puedes hacer para mejorar esa parte. Tal vez haya una forma diferente de hacer este paso que te funcione mejor .
 
-Lastly, don’t be intimidated by patterns. Try different patterns, designers, and techniques. Pick out what works for you. All designers have their own way of doing certain things, and they may not always align with your strengths and weeknesses. I always do a zipper fly the same way, regardless of what the designer suggested. My way works for me and gives me good results. Others may prefer other techniques, so find your own by trying a lot of different ways.
+Por último, no te dejes intimidar por los patrones. Prueba distintos modelos, diseñadores y técnicas. Elige lo que funcione para ti. Todos los diseñadores tienen su propia forma de hacer ciertas cosas, y no siempre coinciden con tus puntos fuertes y débiles. Siempre hago una bragueta de cremallera de la misma manera, independientemente de lo que sugiera el diseñador. A mí me funciona y me da buenos resultados. Otros pueden preferir otras técnicas, así que encuentra la tuya probando muchas formas distintas.
 
-And most of all; enjoy the process of creating. The end product is an additinal benefit. Through the enjoyment of the process, you will gain the experience to get good at it. And with that, you will get the garments you like.
+Y, sobre todo, disfruta del proceso de creación. El producto final es un beneficio añadido. Disfrutando del proceso, adquirirás la experiencia necesaria para hacerlo bien. Y con eso, conseguirás las prendas que te gustan.
 
-## Are you married?
+## ¿Estás casada?
 
-Not anymore, after 25 years we amicably split up. I have a new partner now.
+Ya no, después de 25 años nos separamos amistosamente. Ahora tengo un nuevo compañero.
 
-## Do you have children?
+## ¿Tienes hijos?
 
-Five in total, two adult children of myself and three almost adults of my partner.
+Cinco en total, dos hijos adultos míos y tres casi adultos de mi pareja.
 
-## Are you a dog person or a cat person?
+## ¿Te gustan los perros o los gatos?
 
-I am a dog person, but I don’t have a dog anymore.
+Me gustan los perros, pero ya no tengo perro.
 
-## Do you have pets?
+## ¿Tienes animales de compañía?
 
-I have had three dogs. I would enjoy having a dog, but my current life style and freedom to travel does not match up with having one.
+He tenido tres perros. Me gustaría tener un perro, pero mi estilo de vida actual y mi libertad para viajar no se ajustan a tener uno.
 
-## If there was one thing you could take with you to an uninhibited island what would it be? Why?
+## Si hubiera una cosa que pudieras llevarte a una isla desinhibida, ¿qué sería? ¿Por qué?
 
-A knife, because it seems to be the most useful item to help me survive.
+Un cuchillo, porque parece ser el objeto más útil para ayudarme a sobrevivir.
 
-## If there was one person you could take with you to an uninhibited island, who would it be? Why?
+## Si hubiera una persona que pudieras llevarte a una isla desinhibida, ¿quién sería? ¿Por qué?
 
-Nobody, since I could not forgive myself for putting someone else through the same ordeal. I love what thousands of years of society has brought us, and I don't want to be without its fruits. So it would be cruel for me to subject someone else to this punishment.
+A nadie, ya que no podía perdonarme hacer pasar a otra persona por el mismo calvario. Me encanta lo que miles de años de sociedad nos ha aportado, y no quiero quedarme sin sus frutos. Así que sería cruel por mi parte someter a otra persona a este castigo.
 
 
 &nbsp;
@@ -151,111 +151,46 @@ Nobody, since I could not forgive myself for putting someone else through the sa
 &nbsp;
 
 
-# 🔍 Spotlight on some lesser-know FreeSewing features
+# 🔍 Destacamos algunas funciones de FreeSewing menos conocidas
 
-Regardless of whether you've only recently discovered FreeSewing, or have been a user for many years, here are some things you might not have discovered on your own:
+Tanto si acabas de descubrir FreeSewing como si eres usuaria desde hace muchos años, aquí tienes algunas cosas que quizá no hayas descubierto por ti misma:
 
-## Multilingualism
+## Multilingüismo
 
-FreeSewing is available in 5 languages, each with their own website. In addition to [English at freesewing.org](https://freesewing.org/), we have websites in [French](https://fr.freesewing.org/), [German](https://de.freesewing.org/), [Dutch](https://nl.freesewing.org/), and [Spanish](https://es.freesewing.org/).
+FreeSewing está disponible en 5 idiomas, cada uno con su propio sitio web. Además de [en inglés en freesewing.org](https://freesewing.org/), tenemos sitios web en [francés](https://fr.freesewing.org/), [alemán](https://de.freesewing.org/), [holandés](https://nl.freesewing.org/), y [español](https://es.freesewing.org/).
 
-If you'd like to help us add more languages, [get in touch](https://discord.freesewing.org/).
-## Paperless patterns
+Si quieres ayudarnos a añadir más idiomas, [ponte en contacto con nosotros](https://discord.freesewing.org/).
+## Patrones sin papel
 
-Not a fan of printing and sticking pages together? Or perhaps you don't have a printer? Don't despair, because FreeSewing provides **paperless patterns**.
+¿No te gusta imprimir y pegar páginas? ¿O quizás no tienes impresora? No desesperes, porque FreeSewing proporciona **patrones sin papel**.
 
-You'll find the **paperless** option under the **Pattern options**. Flick it on and now you'll have dimensions as well as a grid in either metric or imperial so you can transfer your pattern directly to fabric or another medium like pattern paper.
+Encontrarás la opción **sin papel** en las opciones del patrón ****. Enciéndelo y tendrás las dimensiones y una cuadrícula en sistema métrico o imperial para que puedas transferir el patrón directamente a la tela o a otro soporte, como el papel para patrones.
 
-## Custom layout/tiler
+## Diseño/tiler personalizado
 
-Laying out the different pattern parts on your pattern happens automatically. But alas, it's one of those things that computers are far worse at that humans. Often you can save a bunch of pages by squishing things together yourself. If only you could, right?
+La disposición de las distintas partes del patrón en tu patrón se realiza automáticamente. Pero, por desgracia, es una de esas cosas que los ordenadores hacen mucho peor que los humanos. A menudo puedes ahorrarte un montón de páginas aplastando las cosas tú mismo. Si pudieras, ¿verdad?
 
-Turns out you can. Simply **Export** your pattern as **SVG** and fire up **Inkscape** (which you can [download for free](https://inkscape.org/)).
+Resulta que sí puedes. Simplemente **Exporta** tu patrón como **SVG** y enciende **Inkscape** (que puedes descargar gratuitamente [](https://inkscape.org/)).
 
-When you open the pattern in Inkscape, the entire pattern will be in a *group*, so first thing to do is to **select** it and **right-click** and choose **ungroup**. Now you can rotate and flip each part around and arrange them just as you like. When you're happy, click **File** -> **Document properties** and choose **Resize page to content**.
+Cuando abras el patrón en Inkscape, todo el patrón estará en un grupo **, así que lo primero que hay que hacer es **seleccionarlo** y **hacer clic con el botón derecho del ratón en** y elegir **desagrupar**. Ahora puedes girar y voltear cada pieza y disponerlas como quieras. Cuando estés satisfecho, haz clic en **Archivo** -> **Propiedades del documento** y elige **Redimensionar la página al contenido**.
 
-When you're done, save the SVG and upload it to our custom tiler: https://tiler.freesewing.org/ There you can upload the SVG and pick your page size, and you'll get a PDF just like on the  website. Only this time, with your own layout 👍
+Cuando hayas terminado, guarda el SVG y súbelo a nuestro compilador personalizado: https://tiler.freesewing.org/ . Allí podrás subir el SVG y elegir el tamaño de página, y obtendrás un PDF igual que en el sitio web. Sólo que esta vez, con tu propio diseño 👍
 
-## Remove details from a pattern
+## Eliminar detalles de un patrón
 
-This option was originally intended for laser cutters, but has other uses too.
+Esta opción estaba pensada originalmente para cortadoras láser, pero también tiene otros usos.
 
-For this, you'll have to enable so-called **Expert mode**. Under **Pattern options**, click **Expert mode** and set it to **Show**. Now, you'll have the **Advanced** option under which you'll find **Detail**. If you set it to **Hide**, your pattern will not only show the outline of the different pattern parts.
+Para ello, tendrás que activar el llamado modo Experto ****. En **Opciones de patrón**, haz clic en **Modo experto** y ajústalo a **Mostrar**. Ahora, tendrás la opción **Avanzado** bajo la cual encontrarás **Detalle**. Si lo ajustas a **Ocultar**, tu patrón no sólo mostrará el contorno de las distintas partes del patrón.
 
-This is also handy for when you are making doll clothes as the titles, logo, and size box end up being taking up more space than the pattern itself.
+Esto también es útil cuando haces ropa para muñecas, ya que los títulos, el logotipo y la caja de tallas acaban ocupando más espacio que el propio patrón.
 
-## Include only certain pattern parts
+## Incluir sólo determinadas partes del patrón
 
-Since we've unlocked **Expert mode**, here's another tip you mightn't be aware of: the **Contents** option. This option allows you to not draft the entire pattern, but only those parts that you want.
+Ya que hemos desbloqueado **Modo experto**, aquí tienes otro truco que quizá no conozcas: la opción **Contenidos** . Esta opción te permite no dibujar todo el patrón, sino sólo las partes que desees.
 
-This can be handy if you want to make a change to a pattern and only print those parts that are affected. But also if you want to combine different styles. For example you can generate a complete Simon pattern, and then additional collar or cuff styles where only the collar/cuffs are included in the pattern.
+Esto puede ser útil si quieres hacer un cambio en un patrón e imprimir sólo las partes afectadas. Pero también si quieres combinar diferentes estilos. Por ejemplo, puedes generar un patrón Simón completo y, a continuación, estilos adicionales de cuello o puños en los que sólo se incluyan en el patrón el cuello/los puños.
 
-Got an idea for some other cool feature you'd like to see? Make sure to [let us know](https://discord.freesewing.org/).
-
-
-&nbsp;
-
----
-
-&nbsp;
-
-
-# 🤯 Some of the more crazy ideas on our drawing board
-
-We're rarely stuck for things to do, because some work is never finished: adding more patterns, writing more or better documentation, improving user experience, and so on.
-
-But sometimes, we also like to shoot the breeze and come up with some ideas that are a bit off the beaten path. Here's a selection of them that we've been mulling over. Don't consider it a sneak preview though, some of these are bona fide moonshots:
-
-## Allowing users to create their own pattern layouts on the site
-
-The pattern layout — the way the individual pattern pieces are laid out on the page — seems like the low-hanging fruit of improvements. Almost without exception, your pattern will not be the most optimal layout.
-
-Thing is, computers are not very good at this sort of spacial problem that's called *packing*. We could try to tweak the algorithm, but human beings are just intuitively better at it than computers are.
-
-**The goal**  
-To make it possible (and ideally easy) for people to do their own layout. So that before you export your pattern, you have the option to arrange it just as you like it.
-
-**What it would take**  
-This is something that's been on the drawing board for quite some time. FreeSewing core already has support for custom layouts, so it's really *just* a matter of creating the frontend interface to handle the layouting.
-
-**Roadblocks**  
-Doing the SVG layout on mobile is a minefield.
-
-**Chances of this happening**  
-High. We're almost certainly going to do this at some point.
-
-## Using 3D renders to showcase patterns or options
-
-3D in general is something we have our eye on, but in this case it's really about presenting the patterns to the user. People want to know what they're going to get, and line drawings and showcases can only go so far to show that.
-
-The idea would be to be able to show patterns on a 3D avatar. However, a big caveat is that we would have to be able to somehow automate this process since we can't go manually creating a 3D render of every pattern & option.
-
-**The goal**  
-Create 3D renders of different patterns and the effect of pattern options. Integrating this with our build pipeline so those renders can be auto-generated.
-
-**What it would take**  
-Some work has been done already. Last year we wrote a DXF-exporter plugin that can export patterns as DXF, a popular format in 3D tools. We did some initial tests with CLO3D but the lack of automation options not to mention the fact that it's a closed-source commercial product made us abandon that path.
-
-The right thing to do would be using Blender so that this work would benefit the open source community.
-
-**Roadblocks**  
-Blender is not that easy to learn. Automation and plugins in Blender need to be written in Python, and we're a JavaScript project. Basically, we have nobody who knows how to even start on this today.
-
-**Chances of this happening**  
-Medium. Could really use some help on this.
-
-## Frankenstein patterns
-
-The name *Frankenstein pattern* is something that came up during one of our contributor calls, and the name sort of stuck. The idea is that you could mix and match parts from different patterns to create your own combinations. Like, pick a top and combine it with the sleeves from another top and perhaps the collar from yet another top.
-
-**The goal**  
-Allow patterns to be created by combining different building blocks.
-
-**Roadblocks**  
-This would require some sort of inter-pattern API or interface specification.
-
-**Chances of this happening**  
-Low. For pattern developers, combining parts from different patterns is already possible via inheritance. Exposing this sort of functionality to the user level would already be a significant challenge. But doing it in a way that requires no code and merely some clicking around is pretty far out there.
+¿Tienes alguna idea sobre alguna otra función interesante que te gustaría ver? Asegúrate de que [nos lo hace saber](https://discord.freesewing.org/).
 
 
 &nbsp;
@@ -265,63 +200,128 @@ Low. For pattern developers, combining parts from different patterns is already 
 &nbsp;
 
 
-# ❤️ FreeSewing is brought to you by the kindness of strangers
+# 🤯 Algunas de las ideas más locas de nuestro tablero de dibujo
 
-On April 5th 2011, a Tuesday of all days, I published a sewing pattern on my blog. BXR-M01A was a pattern for boxer briefs that came in one size only, and was free to download under a Creative Commons license.
+Rara vez estamos atascados de cosas que hacer, porque hay trabajo que nunca termina: añadir más patrones, escribir más o mejor documentación, mejorar la experiencia del usuario, etc.
 
-It was also the very first pattern I ever published.
+Pero, a veces, también nos gusta charlar y proponer ideas que se salgan un poco de lo habitual. Aquí tienes una selección de ellas que hemos estado estudiando. Sin embargo, no lo consideres un adelanto, algunos de ellos son auténticos "moonshots":
 
-The event as such doesn’t deserve much attention, but it just happens to have occurred 10 years ago — almost to the day. So it seemed a good starting point for a brief history of how we got from there to here.
+## Permitir a los usuarios crear sus propios diseños de patrones en el sitio web
 
-## The Early Days
+La disposición de los patrones, es decir, la forma en que se colocan cada una de las piezas en la página, parece el fruto más fácil de mejorar. Casi sin excepción, tu patrón no será la disposición más óptima.
 
-I started drafting my own sewing patterns because I had fitting issues with store-bought ones. Drafting my own patterns held the promise of flawless fit with just a bit of effort (Oh, how naive I was!). The fiddling about with paper had me bored in no time, so I set out to try to automate that part of the process. I came up with a way to reduce the pattern to a number of steps, and abstract away the measurements. Now, you could feed it whatever measurements you wanted, and it would re-draft the pattern for you.
+La cosa es que los ordenadores no son muy buenos en este tipo de problema espacial que se llama *empaquetamiento*. Podríamos intentar ajustar el algoritmo, pero los seres humanos son intuitivamente mejores que los ordenadores.
 
-I launched the beta version of my little pattern machine in February of 2012. It wasn’t an immediate success. As a matter of fact, to the best of my knowledge, only one person ever tested it. That person was Nico in Copenhagen (who I've sadly lost track of) who wrote:
+**El objetivo**  
+Hacer posible (e idealmente fácil) que la gente haga su propio trazado. Así, antes de exportar tu patrón, tendrás la opción de organizarlo como más te guste.
 
-> *That is sooo cool.*  
-> *I will enter my thoughts about your project using your feed back thingy on the pattern web site.*  
-> *But you should know that the overall fit is amazing! I think I have a new favourite pattern :-)*
+**Qué haría falta**  
+Esto es algo que lleva bastante tiempo en el tablero de dibujo. El núcleo de FreeSewing ya admite diseños personalizados, así que en realidad *sólo* una cuestión de crear la interfaz del frontend para gestionar el diseño.
+
+**Barricadas**  
+Hacer el diseño SVG en móvil es un campo de minas.
+
+**Probabilidad de que esto ocurra**  
+Alta. Es casi seguro que lo haremos en algún momento.
+
+## Utilizar renders 3D para mostrar patrones u opciones
+
+El 3D en general es algo a lo que tenemos echado el ojo, pero en este caso se trata realmente de presentar los patrones al usuario. La gente quiere saber lo que va a obtener, y los dibujos lineales y las vitrinas sólo pueden llegar hasta cierto punto para mostrarlo.
+
+La idea sería poder mostrar patrones en un avatar 3D. Sin embargo, una gran advertencia es que tendríamos que poder automatizar de algún modo este proceso, ya que no podemos ir creando manualmente un render 3D de cada opción del patrón & .
+
+**El objetivo**  
+Crear renders 3D de diferentes patrones y el efecto de las opciones de patrón. Integrando esto con nuestro proceso de construcción para que esos renders puedan ser autogenerados.
+
+**Qué haría falta**  
+Ya se ha hecho algún trabajo. El año pasado escribimos un plugin exportador de DXF que puede exportar patrones como DXF, un formato popular en las herramientas 3D. Hicimos algunas pruebas iniciales con CLO3D, pero la falta de opciones de automatización, por no mencionar el hecho de que es un producto comercial de código cerrado, nos hizo abandonar ese camino.
+
+Lo correcto sería utilizar Blender para que este trabajo beneficie a la comunidad de código abierto.
+
+**Obstáculos**  
+Blender no es tan fácil de aprender. La automatización y los plugins en Blender deben escribirse en Python, y nosotros somos un proyecto de JavaScript. Básicamente, hoy no tenemos a nadie que sepa siquiera cómo empezar con esto.
+
+**Probabilidad de que esto ocurra**  
+Media. Me vendría muy bien un poco de ayuda al respecto.
+
+## Patrones Frankenstein
+
+El nombre *Frankenstein pattern* es algo que surgió durante una de nuestras llamadas a colaboradores, y el nombre como que se quedó. La idea es que puedas mezclar y combinar piezas de distintos modelos para crear tus propias combinaciones. Por ejemplo, elige un top y combínalo con las mangas de otro top y quizás el cuello de otro top más.
+
+**El objetivo**  
+Permitir que se creen patrones combinando diferentes bloques de construcción.
+
+**Bloqueos**  
+Esto requeriría algún tipo de API o especificación de interfaz entre patrones.
+
+**Probabilidad de que esto ocurra**  
+Baja. Para los desarrolladores de patrones, combinar partes de diferentes patrones ya es posible mediante la herencia. Exponer este tipo de funcionalidad a nivel de usuario ya sería un reto importante. Pero hacerlo de una forma que no requiera código y sólo algunos clics es algo bastante exagerado.
+
+
+&nbsp;
+
+---
+
+&nbsp;
+
+
+# ❤️ FreeSewing llega a ti gracias a la amabilidad de desconocidos
+
+El 5 de abril de 2011, un martes de todos los días, publiqué un patrón de costura en mi blog. BXR-M01A era un patrón de calzoncillos bóxer que se presentaba en una sola talla, y que se podía descargar gratuitamente bajo licencia Creative Commons.
+
+También fue el primer patrón que publiqué.
+
+El acontecimiento como tal no merece mucha atención, pero da la casualidad de que ocurrió hace 10 años, casi el mismo día. Así que me pareció un buen punto de partida para una breve historia de cómo hemos llegado desde allí hasta aquí.
+
+## Los primeros días
+
+Empecé a diseñar mis propios patrones de costura porque tenía problemas de ajuste con los comprados en la tienda. Redactar mis propios patrones prometía un ajuste perfecto con un poco de esfuerzo (¡qué ingenua era!). El jugueteo con el papel me aburrió enseguida, así que me propuse intentar automatizar esa parte del proceso. Se me ocurrió una forma de reducir el patrón a una serie de pasos, y abstraerme de las medidas. Ahora podías darle las medidas que quisieras y te hacía el patrón.
+
+Lancé la versión beta de mi pequeña máquina de patrones en febrero de 2012. No fue un éxito inmediato. De hecho, que yo sepa, sólo una persona lo ha probado. Esa persona era Nico, de Copenhague (a quien tristemente he perdido la pista), que escribió:
+
+> *Eso está muy bien.*  
+> *Te daré mi opinión sobre tu proyecto a través de la página web del patrón.*  
+> *Pero debes saber que el ajuste general es increíble. Creo que tengo un nuevo patrón favorito :-)*
 
 ## makemypattern.com
 
-One good review is perhaps not much to go on, but I found it rather encouraging and set out to walk this path a bit further. Fast-forward six months and I’d rewritten the thing from scratch, and with four patterns available officially launched makemypattern.com in September of 2012.
+Una buena crítica quizá no sea mucho, pero me pareció bastante alentadora y me propuse recorrer un poco más este camino. Seis meses más tarde, volví a escribirlo desde cero y, con cuatro patrones disponibles, lancé oficialmente makemypattern.com en septiembre de 2012.
 
-Things sort of trickled along as I added a pattern every now and then. Then, in January 2014 I got an email from Tin Doan in Canada asking how they could donate to the site. I sort of expected this to be some sort of scam, but I still answered the email asking “Are you for real?”. Tin answered:
+Las cosas fueron avanzando a medida que añadía un patrón de vez en cuando. Entonces, en enero de 2014 recibí un correo electrónico de Tin Doan, de Canadá, preguntándome cómo podían hacer una donación al sitio. En cierto modo esperaba que se tratara de algún tipo de estafa, pero aun así contesté al correo electrónico preguntando "¿Eres de verdad?". Contestó Tin:
 
-> *Yes Joost, I'm serious. Please kindly accept $200.00 from me.*
+> *Sí Joost, hablo en serio. Por favor, acepta 200,00 dólares de mi parte.*
 
-Sure enough, I soon found myself at the receiving end of a $200 donation. To this day, it remains the highest amount I've ever received in a single donation.
+Efectivamente, pronto me encontré recibiendo una donación de 200 dólares. A día de hoy, sigue siendo la cantidad más alta que he recibido en una sola donación.
 
-This unexpected yet very tangible token of support felt like a fork in the road. I'd been happy building this thing mostly as a learning experience. Now it felt like perhaps it needed a bit more devotion and care.
+Esta muestra de apoyo inesperada pero muy tangible se sintió como una bifurcación en el camino. Había sido feliz construyendo esta cosa sobre todo como experiencia de aprendizaje. Ahora sentía que quizás necesitaba un poco más de devoción y cuidado.
 
-In retrospect, this point probably marks the end of my social life 😂 good thing I had found a partner by now (phew).
+En retrospectiva, este punto probablemente marca el final de mi vida social 😂 menos mal que ya había encontrado pareja (uf).
 
-## Pivot to Open Source and freesewing.org
+## Pivota hacia el código abierto y freesewing.org
 
-So of course I rewrote the whole thing — again — into what would turn out to be the last version of makemypattern.com. By the summer of 2016, five years after my first pattern release, and four years after launching makemypattern.com, my little hobby project had made a lot of headway, and I found myself at another turning point: Keep doing what I'm doing, or try to break through the next barrier.
+Así que, por supuesto, lo reescribí todo -de nuevo- en lo que resultaría ser la última versión de makemypattern.com. En el verano de 2016, cinco años después de la publicación de mi primer patrón y cuatro años después de lanzar makemypattern.com, mi pequeño proyecto de hobby había avanzado mucho, y me encontré en otro punto de inflexión: Seguir haciendo lo que estoy haciendo, o intentar superar la siguiente barrera.
 
-Up until this point, I had been doing makemypattern.com on my own. The code wasn’t even available. I wanted to make it into an open source project that people could contribute to. But I had never started it with that ambition, and it was going to take some serious refactoring to make it into something that people would be able to wrap their heads around.
+Hasta ese momento, había estado haciendo makemypattern.com por mi cuenta. El código ni siquiera estaba disponible. Quería convertirlo en un proyecto de código abierto al que la gente pudiera contribuir. Pero nunca lo había empezado con esa ambición, e iba a necesitar una refactorización seria para convertirlo en algo que la gente pudiera entender.
 
-So I did exactly that, and in March 2017 I launched v1.0.0 of freesewing.org. A new name (and logo) to mark the transition to an open source project. This was a much more mature release, with a documented API and it led to the first patterns contributed by others. It also came with a hat I hadn't worn before, open source maintainer.
+Así que hice exactamente eso, y en marzo de 2017 lancé la v1.0.0 de freesewing.org. Un nuevo nombre (y logotipo) para marcar la transición a un proyecto de código abierto. Se trataba de una versión mucho más madura, con una API documentada y que dio lugar a los primeros patrones aportados por otros. También vino con un sombrero que no me había puesto antes: mantenedor de código abierto.
 
-## FreeSewing v2.0.0: It's JavaScript Now
+## FreeSewing v2.0.0: Ahora es JavaScript
 
-During all this time, the world of frontend development had changed and we could do so much more in a browser. Rather than picking a bunch of options and getting a pattern in the end, the idea of seeing the pattern update in your browser as you changed options was — at least in theory — attainable now.
+Durante todo este tiempo, el mundo del desarrollo frontend había cambiado y podíamos hacer mucho más en un navegador. En lugar de elegir un montón de opciones y obtener un patrón al final, la idea de ver en cómo se actualizaba el patrón en tu navegador a medida que cambiabas de opciones era ahora -al menos en teoría- alcanzable.
 
-With that goal in mind, I started over again, this time in JavaScript. And in August of 2019 v2.0.0 landed on freesewing.org. A complete rewrite in JavaScript with a new website to boot.
+Con ese objetivo en mente, empecé de nuevo, esta vez en JavaScript. Y en agosto de 2019 la v2.0.0 aterrizó en freesewing.org. Una reescritura completa en JavaScript con un nuevo sitio web.
 
-Since then, I've been able to keep myself from rewriting the entire thing again 🤞
+Desde entonces, he podido evitar reescribirlo todo de nuevo 🤞
 
-## The Family You Choose
+## La familia que elijas
 
-We're getting closer to present time, but there's one more moment that stands out for me, and that's a blog post from August 2020 where — maybe for the first time — I explicitly asked for help to grow the project. Since then, a community has developed around FreeSewing that feels more valuable to me than any code I could ever write.
+Nos acercamos a la actualidad, pero hay un momento más que destaca para mí, y es una entrada de blog de agosto de 2020 en la que -quizás por primera vez- pedí explícitamente ayuda para hacer crecer el proyecto. Desde entonces, se ha desarrollado una comunidad en torno a FreeSewing que me parece más valiosa que cualquier código que yo pudiera escribir.
 
-Motivation is a powerful thing, and I wonder whether FreeSewing would exist today if it wasn't for the full-on enthusiasm of Nico in the early days. Or whether it would have fizzled out without Tin injecting some rocket fuel in the form of a donation. Or whether perhaps I would have succumbed to burnout by now if I hadn't found such a great group of people to walk this road with me.
+La motivación es algo poderoso, y me pregunto si FreeSewing existiría hoy si no hubiera sido por el entusiasmo total de Nico en los primeros días. O si se hubiera desvanecido sin que Tin inyectara algo de combustible para cohetes en forma de donativo. O si tal vez ya habría sucumbido al agotamiento si no hubiera encontrado un grupo tan estupendo de personas para recorrer este camino conmigo.
 
-Speaking of which: There are countless individuals who have contributed to get to where we are today. I couldn't possible mention them all. But what they have in common is that at one point, they were complete strangers to me, as I was to them.
+Hablando de eso: Hay innumerables personas que han contribuido a llegar a donde estamos hoy. No podría mencionarlos todos. Pero lo que tienen en común es que, en un momento dado, eran unos completos desconocidos para mí, como yo lo era para ellos.
 
-It’s the kindness of strangers that brought us here.
+Es la amabilidad de los desconocidos lo que nos ha traído hasta aquí.
 
-Thank you strangers.
+Gracias extraños.
 
