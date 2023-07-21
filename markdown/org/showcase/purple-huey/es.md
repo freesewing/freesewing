@@ -1,16 +1,16 @@
 ---
 maker: "Joost De Cock"
-caption: "Yes, that vintage Atari T-shirt is pretty sweet too."
+caption: "Sí, esa camiseta vintage de Atari también es muy bonita."
 date: "2017-10-18"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1a07778bc08dd8edb0866e87b6f1e74d3827e81e-2129x2129.jpg"
-intro: "This post is originally appeared on the Instagram feed of joostdecock ."
-title: "This was the first ever Huey that's been made and of course it's purple"
+intro: "Este post apareció originalmente en el feed de Instagram de joostdecock ."
+title: "Este fue el primer Huey que se fabricó y por supuesto es morado"
 designs:
   - "huey"
 ---
 
 
-This post is [originally appeared](https://www.instagram.com/p/BaRWb34jYCL/) on [the Instagram feed of joostdecock](https://www.instagram.com/joostdecock/).
+Este post es [apareció originalmente](https://www.instagram.com/p/BaRWb34jYCL/) en [el feed de Instagram de joostdecock](https://www.instagram.com/joostdecock/).
 
-It is reposted here with permission.
+Se publica aquí con permiso.
 
