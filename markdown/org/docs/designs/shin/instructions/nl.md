@@ -1,5 +1,5 @@
 ---
-title: "Shin swim trunks: Sewing Instructions"
+title: "Shin zwembroek: Naai-instructies"
 ---
 
 > ### Prentjes zijn onderweg
