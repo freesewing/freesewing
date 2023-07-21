@@ -1,40 +1,40 @@
 ---
 author: "joostdecock"
-caption: "Like history? Then this release is going to be right up your alley."
+caption: "Comme l'histoire ? Dans ce cas, cette publication va te plaire."
 date: "2021-10-17"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/af326b5b6326911272ed989947e8cafe22966019-1920x1280.jpg"
-intro: "I've just pulled the release lever on version 2.19 of FreeSewing and there's a lot that went into this release. For full details, you can check out the changelog , here I'll stick to the highlights:"
-title: "FreeSewing 2.19 brings Bee, Lunetius, Tiberius, Walburga, a new plugin, and a bunch of improvements and fixes"
+intro: "Je viens de lancer la version 2.19 de FreeSewing et beaucoup de choses ont été prises en compte dans cette version. Pour plus de détails, tu peux consulter le journal des modifications, mais je m'en tiendrai ici aux points essentiels :"
+title: "FreeSewing 2.19 apporte Bee, Lunetius, Tiberius, Walburga, un nouveau plugin, et un tas d'améliorations et de corrections."
 ---
 
-I've just pulled the release lever on version 2.19 of FreeSewing and there's a lot that went into this release. For full details, you can [check out the changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md#2190-2021-10-17), here I'll stick to the highlights:
+Je viens de lancer la version 2.19 de FreeSewing et beaucoup de choses ont été prises en compte dans cette version. Pour plus de détails, tu peux [consulter le changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md#2190-2021-10-17), ici je m'en tiendrai aux points essentiels :
 
-## Lunetius, Tiberius, and Walburga
+## Lunetius, Tiberius et Walburga
 
-[Lunetius](/designs/lunetius), [Tiberius](/designs/tiberius/), and [Walburga](/designs/walburga/) are three new patters from **Rika Tamaike** who is the latest addition to our growing team of designers. These are all historical pattern:
+[Lunetius](/designs/lunetius), [Tiberius](/designs/tiberius/), et [Walburga](/designs/walburga/) sont trois nouveaux modèles de **Rika Tamaike** qui est la dernière arrivée dans notre équipe croissante de créateurs. Il s'agit de modèles historiques :
 
  - Lunetius est une lacerne, un manteau romain historique
  - Tiberius est une tunique romaine historique
  - Walburga est un tabard/surcot, un vêtement historique de l'Europe médiévale
 
-I'm not much of a history buff myself, so I'm looking forward to see what these will look like when people are going to start making them. What I can say for sure is that all of these are pretty straight-forward, so they should be fun to make.
+Je ne suis pas très féru d'histoire moi-même, alors j'ai hâte de voir à quoi ils ressembleront quand les gens commenceront à les fabriquer. Ce que je peux dire avec certitude, c'est qu'ils sont tous assez simples, et qu'ils devraient donc être amusants à réaliser.
 
-## The Bee bikini
+## Le bikini de l'abeille
 
-Also new in this release is [Bee](/designs/bee/), a bikini pattern that you can pair with the [Ursula Undies pattern](/designs/ursula/). **Bobgeorgethe3rd** signed for the code, the design of the bikini was a collaboration with **PrudenceRabbit**.
+Cette nouvelle version comprend également [Bee](/designs/bee/), un modèle de bikini que tu peux associer au modèle [Ursula Undies](/designs/ursula/). **Bobgeorgethe3rd** a signé pour le code, le design du bikini était une collaboration avec **PrudenceRabbit**.
 
-I'm hoping for some people in the Southern hemisphere to make this one because I suspect it might be a while before bikini weather returns to those of use living above the equator.
+J'espère que certaines personnes de l'hémisphère sud feront ce projet, car je pense qu'il faudra un certain temps avant que le temps des bikinis ne revienne pour ceux d'entre nous qui vivent au-dessus de l'équateur.
 
-This too is a fast and simple make, so go and check it out.
+C'est aussi une réalisation simple et rapide, alors va voir ce qu'il en est.
 
-## The versionfree-svg plugin
+## Le plugin versionfree-svg
 
-This is a bit more under-the-hood stuff, but we've also published [plugin-versinofree-svg](https://www.npmjs.com/package/@freesewing/plugin-versionfree-svg), a new plugin that will strip the version information from FreeSewing's SVG output.
+Il s'agit d'un peu plus de choses sous le capot, mais nous avons également publié [plugin-versinofree-svg](https://www.npmjs.com/package/@freesewing/plugin-versionfree-svg), un nouveau plugin qui supprimera les informations de version de la sortie SVG de FreeSewing.
 
-This is handy because it allows diffing between different versions. By not including the version information, you can see what (if anything) has changed between different versions of a pattern, something we use ourselved in our QA pipeline.
+C'est pratique car cela permet de faire des différences entre les différentes versions. En n'incluant pas les informations sur la version, tu peux voir ce qui a changé (le cas échéant) entre les différentes versions d'un modèle, ce que nous utilisons nous-mêmes dans notre pipeline d'assurance qualité.
 
-## Backported snap options from the v3 roadmap
+## Options de snap reportées de la feuille de route de la v3
 
-Speaking of under-the-hood, the [snap proposal](https://github.com/freesewing/freesewing/discussions/1331) on [our v3 roadmap](https://github.com/freesewing/freesewing/discussions/1278) was something we liked so much that we promptly backported it to v2, and it's already being used in different patterns.
+En parlant de sous le capot, la proposition de snap [](https://github.com/freesewing/freesewing/discussions/1331) sur [notre feuille de route v3](https://github.com/freesewing/freesewing/discussions/1278) nous a tellement plu que nous l'avons rapidement rétroportée dans la v2, et elle est déjà utilisée dans différents modèles.
 
-Have fun with the new patterns, and for feedback, questions, or suggestions, [come hang out with us on Discord](https://discord.freesewing.org).
+Amuse-toi bien avec les nouveaux modèles, et pour tout commentaire, question ou suggestion, [viens nous voir sur Discord](https://discord.freesewing.org).
