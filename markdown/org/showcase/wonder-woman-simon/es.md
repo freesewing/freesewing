@@ -1,23 +1,23 @@
 ---
 maker: "RedBlaqueGolden"
-caption: "There's some really quality posing in this set."
+caption: "Hay algunas poses de gran calidad en este conjunto."
 date: "2018-02-05"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5084bf9ead668c3ddd3a8ff4fd9a9ea4866d3d1a-1080x1080.jpg"
 intro: ""
-title: "A Wonder Women simon by JV"
+title: "Un simón de Wonder Women por JV"
 designs:
   - "simon"
 ---
 
-![Another view](https://posts.freesewing.org/uploads/wonder_woman_simon_view2_a8f4c2e951.jpg "Another view") ![Another view](https://posts.freesewing.org/uploads/wonder_woman_simon_view3_c4357bf70f.jpg "Another view") ![Another view](https://posts.freesewing.org/uploads/wonder_woman_simon_view4_b6b74a2fe6.jpg "Another view") ![Another view](https://posts.freesewing.org/uploads/wonder_woman_simon_view5_6e42e949af.jpg "Another view")
+![Otro punto de vista](https://posts.freesewing.org/uploads/wonder_woman_simon_view2_a8f4c2e951.jpg "Otro punto de vista") ![Otro punto de vista](https://posts.freesewing.org/uploads/wonder_woman_simon_view3_c4357bf70f.jpg "Otro punto de vista") ![Otro punto de vista](https://posts.freesewing.org/uploads/wonder_woman_simon_view4_b6b74a2fe6.jpg "Otro punto de vista") ![Otro punto de vista](https://posts.freesewing.org/uploads/wonder_woman_simon_view5_6e42e949af.jpg "Otro punto de vista")
 
 <Note>
 
-###### See the originals on the Instragram feed of funloveadventure
+###### Mira los originales en el feed de Instragram de funloveadventure
 
-These images are from 
-[the Instagram feed](https://www.instagram.com/myxterhyde/)
-of [@MyxterHyde](/users/MyxterHyde).
-They are published here with permission.
+Estas imágenes son de 
+[el feed de Instagram](https://www.instagram.com/myxterhyde/)
+de [@MyxterHyde](/usuarios/MyxterHyde).
+Se publican aquí con permiso.
 
 </Note>
