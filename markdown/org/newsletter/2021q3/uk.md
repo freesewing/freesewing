@@ -1,48 +1,36 @@
 ---
 date: "2021-07-01"
 edition: "2021q3"
-intro: "Ласкаво просимо до літнього випуску 2021 року інформаційного бюлетеня FreeSewing. Here's what we've included for you:"
+intro: "Ласкаво просимо до літнього випуску 2021 року інформаційного бюлетеня FreeSewing. Ось що ми включили для вас:"
 title: "2021 Літній випуск"
 ---
 
-Welcome to the 2021 Summer edition of the FreeSewing newsletter.  
-Here's what we've included for you:
+Ласкаво просимо до літнього випуску 2021 року ньюзлетера FreeSewing.  
+Ось що ми підготували для вас:
 
-- 🩲 Pattern releases spring 2021 (1-minute read - by Natalia)
-- 👀 Help Sanne test her new bodice block (1-minute read - by Joost)
-- 😢 Farewell David: Remembering David Page Coffin (2-minute read - by Joost)
-- 🕵️ Behind the seams: An Gargouri (8-minute read - by Eleonore)
-- 🤓 Git good: Let’s walk through a simple FreeSewing contribution together (2-minute read - by Natalia)
-- ⚡ FreeSewing v2.16: This one's for the developers (1-minute read - by Joost)
-- 🤷 Gender inclusivity (3-minute read - by Karen)
+- Релізи візерунків весна 2021 (1-хвилинне читання від Наталії)
+- Допоможіть Санні протестувати її новий ліф (1-хвилинне читання - Joost)
+- Прощавай, Девіде: Пам'ятаючи про труну Девіда Пейджа (2-хвилинне читання - Joost)
+- 🕵️ За швами: Ан Ґарґурі (8-хвилинне читання - Елеонора)
+- 🤓 Git добре: Давайте разом пройдемося по простому внеску FreeSewing (2-хвилинне читання від Наталії)
+- FreeSewing v2.16: Це для розробників (1-хвилинне читання - Joost)
+- Гендерна інклюзивність (3-хвилинне читання - Карен)
 
-We hope you enjoy it. If not, mash that reply button and tell us what you'd like to read instead ¯\\\_(ツ)\_/¯
+Сподіваємося, вам сподобається. Якщо ні, натисніть кнопку "Відповісти" і скажіть нам, що б ви хотіли прочитати замість цього ¯\\\\_(ツ)\_/¯
 
-
-&nbsp;
 
 &nbsp;
 
-# 🩲 Pattern releases spring 2021
-
-Here's a quick recap of the new patterns we released in the second quarter of this year:
-
- - [The Ursula undies](https://freesewing.org/blog/announcing-ursula/): A highly-customizable underwear pattern with plenty of options to achieve different styles. This is my first pattern design. My hope is that Ursula will help you customize undies with the perfect look and fit for your own body. Interested in making a test pair and helping to refine the pattern? I'd love to chat with you over in the [FreeSewing Discord](https://discord.freesewing.org/).
- - [The Charlie Chinos trousers](https://freesewing.org/blog/announcing-charlie/): Joost designed a new trouser pattern that will adapt better to differently shaped bodies. Charlie has 31 options that allow you to configure your trousers so you get them just as you like.
-
-Click through either of the links for the blog posts announcing these patterns.
-
 &nbsp;
 
----
+# 𯩲 Релізи візерунків весна 2021
 
-&nbsp;
+Ось короткий огляд нових шаблонів, які ми випустили у другому кварталі цього року:
 
-# 👀 Help Sanne test her new bodice block
+ - [Труси Урсула](https://freesewing.org/blog/announcing-ursula/): модель нижньої білизни, що легко налаштовується, з великою кількістю варіантів для створення різних стилів. Це мій перший дизайн візерунка. Я сподіваюся, що Урсула допоможе вам підібрати нижню білизну, яка буде ідеально виглядати і підходити до вашого тіла. Хочете зробити тестову пару і допомогти вдосконалити шаблон? Буду рада поспілкуватися з вами на форумі [FreeSewing Discord](https://discord.freesewing.org/).
+ - [Штани Charlie Chinos](https://freesewing.org/blog/announcing-charlie/): Joost розробив новий крій штанів, який краще пристосовується до фігур різної форми. Чарлі має 31 опцію, які дозволяють вам налаштувати штани так, щоб вони були саме такими, як ви хочете.
 
-Sanne is working on a bodice block that is based on her own drafting experience and the techniques she learned. She's hoping to get some feedback from a couple of more testers, particularly people with larger cup sizes.
-
-If you'd like to help out, you can [generate your own version of the block online](https://bodice-block-sannek.netlify.app/).
+Перейдіть за будь-яким із посилань на публікації в блозі, що анонсують ці шаблони.
 
 &nbsp;
 
@@ -50,19 +38,11 @@ If you'd like to help out, you can [generate your own version of the block onlin
 
 &nbsp;
 
+# Допоможи Санні протестувати її новий ліф-блок
 
-# 😢 Farewell David: Remembering David Page Coffin
+Санне працює над блоком ліфа, який базується на її власному досвіді проектування та техніці , яку вона вивчила. Вона сподівається отримати відгуки ще від кількох тестувальників, особливо від людей з великим розміром чашок.
 
-In early May, I received news of the passing of David Page Coffin. David was editor of Threads Magazine back when animals could talk, and his books on making trousers and shirts adorns my bookshelves, as I'm sure they do many others. David was also a friend of FreeSewing, and he reached out to me a couple of years ago to discuss plans he had for a new book. He wanted to make another book about shirts. Not so much about the basic grunt work of making a shirt that fits. But more about all the little style variations and creative embellishments one could add to a shirt to make it into something really special.
-
-Still, he also felt that somebody who would pick up a book about making shirts would also expect to, you know, make a shirt from it. So he was wondering whether he could point them to FreeSewing's Simon pattern instead of having to dedicate a section of the book to the basics.
-
-I really enjoyed talking to David at length about what he was working on, and his tacit endorsement felt like a big deal from someone who would have no trouble getting his foot in the door of a household-brand pattern company.
-
-Like so many other ideas and good intentions, this one too ended up in the time-deprived *maybe one day* pile.
-
-Still, for a brief moment I was allowed to bask in the David's enthusiasm. It is a conversation I will continue to cherish. And also one that made one thing painfully clear to me: He will be sorely missed.
-
+Якщо ви хочете допомогти, ви можете [згенерувати власну версію блоку онлайн](https://bodice-block-sannek.netlify.app/).
 
 &nbsp;
 
@@ -71,90 +51,80 @@ Still, for a brief moment I was allowed to bask in the David's enthusiasm. It is
 &nbsp;
 
 
-# 🕵️ Behind the seams: An Gargouri
+# Прощання з Девідом: Пам'ять про труну Девіда Пейджа
 
-> *When we were discussing what kind of content we would like to create for* *the very newsletter you’re reading now, An didn’t have to think long.* *She wanted to interview as many contributors as she could, and share* *what she found out with you. Чому? “I’m just a curious person”, she says.* *Which made us curious about her.*
+На початку травня я отримав звістку про смерть Девіда Пейджа Коффіна. Девід був редактором журналу Threads ще тоді, коли тварини вміли розмовляти, і його книги про пошиття штанів і сорочок прикрашають мою книжкову полицю , як, я впевнений, і багато інших. Девід також був другом FreeSewing, і він зв'язався зі мною кілька років тому, щоб обговорити плани нової книги. Він хотів зробити ще одну книгу про сорочки. Не стільки про основну грубу роботу по пошиттю сорочки, скільки про те, як зробити так, щоб вона сиділа по фігурі. Але більше про всі маленькі варіації стилю та креативні прикраси, які можна додати до сорочки, щоб перетворити її на щось дійсно особливе.
+
+Проте він також відчував, що той, хто візьме в руки книгу про пошиття сорочок, також очікує, що , ну, знаєте, зробить з неї сорочку. Тому він подумав, чи не міг би він вказати їм на шаблон Саймона від FreeSewing замість того, щоб присвячувати цілий розділ книги основам.
+
+Мені дуже сподобалося довго розмовляти з Девідом про те, над чим він працює, і його мовчазна підтримка здалася мені великою справою від людини, яка без проблем потрапила б у двері компанії, що займається моделюванням побутових брендів.
+
+Як і багато інших ідей та добрих намірів, ця теж опинилася у відкладеній на потім *, можливо, колись * купі.
+
+І все ж, на коротку мить мені дозволили погрітися в ентузіазмі Девіда. Це розмова, яку я буду продовжувати плекати. А також той, хто зробив одну річ до болю зрозумілою для мене: Його буде дуже не вистачати.
+
+
+&nbsp;
+
+---
+
+&nbsp;
+
+
+# 🕵️ За швами: Ан Ґарґурі
+
+> *Коли ми обговорювали, який контент ми хотіли б створити для* *, того самого ньюзлетера, який ви зараз читаєте, Ен не довелося довго думати.* *Вона хотіла взяти інтерв'ю у якомога більшої кількості дописувачів і поділитися з вами* *тим, що вона дізналася. Чому? "Я просто допитлива людина", - каже вона.* *Що зробило нас цікавими до неї.*
 
 ## Як ви дізналися про FreeSewing?
 
-I only started sewing last year, so I’m still very much a beginner. I started out with face masks and when those worked out okay, I got excited and started on the most complicated dress pattern I could find. Needless to say, that didn’t turn out great. So I backtracked and started looking for sewing patterns with accompanying instruction videos. I mean, those are basically free sewing lessons. Awesome, right?
+Я почала шити лише минулого року, тож я все ще дуже початківець. Я почала з масок для обличчя, і коли з ними все вийшло, я захопилася і взялася за найскладнішу викрійку сукні, яку змогла знайти. Зрозуміло, що вийшло не дуже добре. Тож я дала задній хід і почала шукати викрійки для шиття із супровідними відео з інструкціями. Я маю на увазі, що це, в основному, безкоштовні уроки шиття. Круто, правда?
 
-That’s how I found the pattern for the [Bruce boxer briefs](https://freesewing.org/designs/bruce/) with Joost’s video instructions. And honestly, once you understand how FreeSewing works, how could you not get hooked? I started entering measurements and watching the magic happen. I was so impressed that all of this was available for free, that I became a Patron. Joost sent me an e-mail with a link to [FreeSewing’s Discord](https://discord.freesewing.org/) — an online platform for community building — and that’s where I found out about the contributor calls. Being a curious person, the rest is history!
+Так я знайшов викрійку для трусів-боксерів [Bruce](https://freesewing.org/designs/bruce/) з відеоінструкцією від Joost . І чесно кажучи, як тільки ви зрозумієте, як працює FreeSewing, як вас може не зачепити? Я почав вводити виміри і спостерігати, як відбувається магія. Мене настільки вразило, що все це було доступно безкоштовно, що я стала Меценатом. Joost надіслав мені електронного листа з посиланням на [FreeSewing's Discord](https://discord.freesewing.org/) - онлайн-платформу для створення спільноти - і саме там я дізналася про заклики дописувачів. Будучи допитливою людиною, решта - історія!
 
 ## Як ви стали дописувачем?
 
-That happened sort of by accident. Like I said, I’m curious. I wanted to know all about FreeSewing’s contributor team, so these interviews were a great way to ask all my nosy questions. Maybe I got a bit carried away. That [first interview with Wouter](https://freesewing.org/newsletter/2021q2/#%EF%B8%8F-behind-the-seams-wouter-van-wageningen) took so much time! But I’m also not one to quit when I’ve started something, so you’ll see more of these interviews in the next editions of the newsletter. By the way, if anyone would like to be interviewed, I’m here and I can’t wait to hear everything you have to say!
+Це сталося ніби випадково. Як я вже казав, мені цікаво. Я хотіла дізнатися все про команду авторів FreeSewing, тому ці інтерв'ю були чудовим способом поставити всі мої допитливі запитання. Можливо, я трохи захопився. Те [перше інтерв'ю з Wouter](https://freesewing.org/newsletter/2021q2/#%EF%B8%8F-behind-the-seams-wouter-van-wageningen) зайняло стільки часу! Але я також не з тих, хто кидає розпочату справу, тому ви побачите більше таких інтерв'ю в наступних випусках ньюзлетера. До речі, якщо хтось хоче взяти інтерв'ю, я тут і з нетерпінням чекаю, щоб почути все, що ви скажете!
 
-## What do you enjoy the most about your interviews with contributors?
+## Що вам найбільше подобається у ваших інтерв'ю з дописувачами?
 
-I especially love people’s answers to the question what they would take with them to an uninhabited island. But I’m not giving anything away. You’ll have to wait to read the interviews yourself.
+Особливо мені подобаються відповіді людей на питання, що б вони взяли з собою на безлюдний острів . Але я нічого не віддаю. Вам доведеться почекати, щоб прочитати інтерв'ю самостійно.
 
-## What would YOU take with you to an uninhabited island?
+## Що б ВИ взяли з собою на безлюдний острів?
 
-Why didn’t I see this question coming?! I would take one of the books that I never get around to reading. Let’s see … ‘Making History’ by Stephen Fry. Or wait, is there food on this island? I’m not going to fish or anything, and I don’t think I’d be good at starting a fire. Maybe I should just take some canned food. And I’ll need my meds.
+Чому я не побачив цього питання?! Я б взяв одну з книжок, які ніколи не можу прочитати. Давайте подивимося … "Творення історії" Стівена Фрая. Або зачекайте, чи є на цьому острові їжа? Я не збираюся рибу чи щось подібне, і я не думаю, що зможу розпалити вогонь. Може, мені просто взяти якісь консерви? І мені потрібні мої ліки.
 
-## And if you could take one person?
+## А якби ви могли взяти одну людину?
 
 
-That’s easy. I’d take my husband, Bart. That would solve all my problems, anyway. Bart will fish and hunt and light a fire. He can do anything.
+Це легко. Я б взяла свого чоловіка, Барта. Це вирішило б усі мої проблеми. Барт буде рибалити, полювати і розпалювати багаття. Він може робити все, що завгодно.
 
 ## Ви швачка? Кодер? Обидва? Ні?
 
-Right now, I’m mostly a sewist. I did try to learn coding 15 years ago. That’s actually how I met my husband. And then, well, other priorities took over. I can feel the itch to pick it up again now. FreeSewing has me excited about pattern drafting and coding. I’d love to find out what I can do if I set my mind to it.
+Зараз я переважно швачка. Я намагався вивчити програмування 15 років тому. Власне, так я і познайомилася зі своїм чоловіком. А потім, ну, інші пріоритети взяли гору. Зараз я відчуваю свербіж, щоб знову взяти його в руки. У FreeSewing я захоплююся розробкою викрійок і кодуванням. Мені б хотілося дізнатися, що я можу зробити, якщо поставлю собі за мету.
 
-## What are you working on right now?
+## Над чим ви зараз працюєте?
 
-I’m proud to say I’ve just started using patterns without videos again and feeling good about it! I just made a muslin for a pretty blouse with a cut-out and little buttons, and it’s looking good. I’m going to have a go at it in my fashion fabric. You know, I’m a princess at heart. I love girly dresses and blouses, especially those vintage styles with cinched waists. Those aren’t the best silhouettes for me, though. That’s why I want to learn how to draft my own patterns. I love the idea of turning 2D pieces into a 3D garment and making it fit my body. I think that’s a really cool thing about sewing, by the way. The pattern pieces can look like such a puzzle, but once you start putting it together, it suddenly turns into a garment.
+Я з гордістю можу сказати, що знову почав використовувати шаблони без відео і відчуваю себе добре! Я щойно зробила муслін для гарної блузки з вирізом і маленькими ґудзиками, і вона має гарний вигляд. Я збираюся спробувати це в моїй модній тканині. Знаєте, в душі я принцеса. Мені подобаються дівочі сукні та блузки, особливо вінтажні фасони із завуженою талією. Але це не найкращі силуети для мене. Тому я хочу навчитися створювати власні викрійки. Мені подобається ідея перетворення 2D-об'єктів на 3D-вбрання, щоб воно облягало моє тіло. До речі, я вважаю, що це дуже крута річ у шитті. Шматочки викрійки можуть виглядати як такий пазл, але як тільки ви починаєте його складати, він несподівано перетворюється на одяг.
 
-## Anything you dislike about sewing?
+## Є щось, що вам не подобається в шитті?
 
-Honestly? I dislike most of the process other than actually sewing the pieces together. I also really hate cutting patterns out of fabric. That’s where Bart comes in, usually. I tend to buy less fabric than I’ll actually need, but Bart is so good at pattern tetris that he can make almost anything fit onto the fabric.
+Чесно? Мені не подобається більша частина процесу, окрім власне зшивання шматків. А ще я дуже не люблю вирізати викрійки з тканини. Зазвичай саме тут з'являється Барт. Я зазвичай купую менше тканини, ніж мені потрібно, але Барт настільки добре розбирається у викрійках тетрісу, що може зробити майже все, що завгодно, на тканині.
 
-## Any advice for fellow sewists?
+## Порада для колег-швачок?
 
-Just keep going. It can be so frustrating when things don’t work out the way you’d envisioned. But you just have to wait for things to ‘click’. And they will, eventually. I think, Haha! I’m still a beginner myself!
+Не зупиняйся. Буває так прикро, коли все йде не так, як ви собі уявляли. Але потрібно просто почекати, поки щось "клацне". І врешті-решт вони це зроблять. Я думаю: "Ха-ха! Я сама ще початківець!
 
-## Do you sew more for yourself or for others?
+## Ви шиєте більше для себе чи для інших?
 
-Bart dislikes new things, so if I make him anything, he’ll wait five years before he decides to wear it. And our son Luc has more clothes than he can wear already. He doesn’t need any more. So I sew for me. I’m the only one who’s actually grateful for handmade clothes!
+Барт не любить нові речі, тож якщо я йому щось зроблю, він чекатиме п'ять років, перш ніж наважиться це вдягнути. А у нашого сина Люка вже більше одягу, ніж він може носити. Йому більше нічого не потрібно. Тому я шию для себе. Я єдина, хто насправді вдячна за одяг ручної роботи!
 
-## What do you do outside of FreeSewing?
+## Чим ти займаєшся поза FreeSewing?
 
-Professionally, I’m a management assistant, although I’m not working at the moment. I’m really proud that I got my bachelor’s degree, even though people said I couldn’t do it. Clearly I could, and I’m so glad that I pushed through! I’m not sure where I’m headed right now in my career, but I’m taking this time to organize our home. Nothing Marie Kondo-style, mind you. I’d be terrible at that. I love having stuff around. But it sure would be nice if all that stuff was a bit more organized.
+За фахом я асистент керівника, хоча зараз не працюю. Я дуже пишаюся тим, що отримала ступінь бакалавра, хоча люди казали, що я не зможу цього зробити. Очевидно, що я міг, і я дуже радий, що зміг це зробити! Я не впевнений, куди я зараз прямую в своїй кар'єрі, але я використовую цей час, щоб організувати наш дім. Нічого в стилі Марі Кондо, зауважте. У мене б це жахливо вийшло. Мені подобається мати речі навколо. Але було б добре, якби все це було трохи більш організовано.
 
-## What else do we need to know about you?
+## Що ще нам потрібно знати про вас?
 
-I can be a bit of a bull in a china shop. Forgive me! I’m impulsive, I’m honest and sometimes I should think twice before I say something. But it all comes from a good place!
-
-
-&nbsp;
-
----
-
-&nbsp;
-
-
-# 🤓 Git(Hub) Good: Let’s walk through a simple FreeSewing contribution together
-
-You — yes, you — can contribute to FreeSewing. On the way, you can learn a little bit about GitHub. Don’t panic. You’ll love it.
-
-I think the easiest way to get your feet wet is cruising around the documentation at [FreeSewing.org](https://freesewing.org/) or [FreeSewing.dev](https://freesewing.dev). Occasionally you’ll find a typo or a broken link, or just an opportunity to phrase something more clearly.
-
-On [FreeSewing.dev](https://freesewing.dev), you can click on [For Editors](https://freesewing.dev/editors/) for a friendly reference guide. At time of writing, I did that and tried clicking the [Common tasks for editors](https://freesewing.dev/howtos/editors/) link at the bottom. It took me to a *Page not found* message with a sad robot. Yippee!! Let’s fix it.
-
-First, let’s find the correct link. I know I’m looking for a page called *Common tasks for editors*, so I click the magnifying glass icon, put “Common tasks for editors” in the search bar and get this: https://freesewing.dev/editors/howtos. Looks good.
-
-Then, let’s go back to the *For editors* page. Click the pencil icon next to the page title.
-
-Hey, now we’re in GitHub. Let’s create an account.
-
-After creating our account, we'll fork the FreeSewing markdown repository, or repo. The repo contains a bunch of FreeSewing’s files and the history of changes to those files.
-
-At this point, we're editing the *For editors* file. We’ll swap out the old link with the new link we identified, and then propose changes. Let’s give the proposal a nice title and description.
-
-Time to submit a pull request! Now we’re cooking with fire. A pull request, or PR, is a way to tell FreeSewing that we are proposing a change. In this case we’re saying: "Hi, I found a broken link and I fixed it".
-
-Finally, someone at FreeSewing will review the PR and say: "Cool, this looks great, so I’ll accept the change; I’ll *merge* it". That will send you, the author, a brief email, it’ll be updated in GitHub, and when Joost next deploys the site, typically within a week or so, you’ll see your contributions live on FreeSewing.org or FreeSewing.dev. Crushed it.
+Я можу бути трохи схожим на бика в посудній лавці. Вибач мені! Я імпульсивна, чесна і іноді мені варто подумати двічі, перш ніж щось сказати. Але все це походить з хорошого місця!
 
 
 &nbsp;
@@ -164,13 +134,27 @@ Finally, someone at FreeSewing will review the PR and say: "Cool, this looks gre
 &nbsp;
 
 
-# ⚡ FreeSewing v2.16: This one's for the developers
+# 🤓 Git(Hub) Good: Давайте разом пройдемося по простому внеску FreeSewing
 
-We rolled out FreeSewing 2.16 in May, and a minor version bump typically means a new pattern. Not this time though, because we've been working hard on updating our development environment to React 17, CRA 4, and Webpack 5.
+Ви - так, саме ви - можете зробити свій внесок у FreeSewing. Дорогою ви можете дізнатися трохи про GitHub. Без паніки. Тобі сподобається.
 
-That's great news for (aspiring) developers and pattern designers, as React's new *FAST_REFRESH* makes everything just so much better.
+Я думаю, що найпростіший спосіб намочити ноги - це прогулятися по документації на [FreeSewing.org](https://freesewing.org/) або [FreeSewing.dev](https://freesewing.dev). Іноді ви знайдете помилку або непрацююче посилання, або просто можливість сформулювати щось більш чітко.
 
-There's a lot of work that went into this release, but I also know it's all kinda technical and under-the-hood stuff. So rather than ramble on about it here, I will just [point you to the blog post on the matter](https://freesewing.org/blog/react-17/).
+На сайті [FreeSewing.dev](https://freesewing.dev)ви можете натиснути на [Для редакторів](https://freesewing.dev/editors/) , щоб отримати дружній довідник. На момент написання статті я зробив це і спробував натиснути на посилання [Загальні завдання для редакторів](https://freesewing.dev/howtos/editors/) внизу. Це привело мене на *Сторінку не знайдено* повідомлення з сумним роботом. Ура!! Давай виправимо це.
+
+Спочатку давайте знайдемо правильне посилання. Я знаю, що шукаю сторінку під назвою *Загальні завдання для редакторів*, тому я натискаю на іконку лупи, вводжу "Загальні завдання для редакторів" в рядок пошуку і отримую ось це: https://freesewing.dev/editors/howtos. Виглядає непогано.
+
+Повернімося до сторінки *Для редакторів* . Натисніть на іконку олівця поруч із заголовком сторінки.
+
+Привіт, тепер ми на GitHub. Давайте створимо обліковий запис.
+
+Після створення облікового запису ми створимо форк репозиторію знижок FreeSewing, або репо. Репозиторій містить купу файлів FreeSewing та історію змін цих файлів.
+
+На цьому етапі ми редагуємо файл *Для редакторів* . Ми замінимо старе посилання на на нове, яке ми визначили, а потім запропонуємо зміни. Давайте дамо пропозиції гарну назву та опис.
+
+Час подавати запит на вилучення! Тепер ми готуємо на вогні. Запит на витяг або PR - це спосіб повідомити FreeSewing про те, що ми пропонуємо зміни. У цьому випадку ми говоримо: "Привіт, я знайшов непрацююче посилання і виправив його".
+
+Зрештою, хтось у FreeSewing перегляне піар і скаже: "Круто, це виглядає чудово, тому я прийму зміни; я *об'єднаю* це". Це надішле вам, автору, короткий електронний лист на адресу . Його буде оновлено на GitHub, і коли Joost наступного разу розгорне сайт, зазвичай протягом тижня або близько того, ви побачите свій внесок у прямому ефірі на FreeSewing.org або FreeSewing.dev. Розчавив його.
 
 
 &nbsp;
@@ -180,20 +164,36 @@ There's a lot of work that went into this release, but I also know it's all kind
 &nbsp;
 
 
-# 🤷 Gender Inclusivity
+# FreeSewing v2.16: Ця версія для розробників
 
-A month or two back, some FreeSewing users asked a really great question on the [Discord](https://chat.freesewing.org/). What is the goal of having a "womenswear" and "menswear" tag on FreeSewing patterns, and is it really necessary? While some of our users found the tags helpful for sorting, others felt alienated by the terminology, or didn't feel like either term represented them. We thought we could do better, so we've made a few changes.
+Ми випустили FreeSewing 2.16 у травні, а незначні зміни у версії зазвичай означають появу нового шаблону. Але не цього разу, тому що ми наполегливо працювали над оновленням нашого середовища розробки до React 17, CRA 4 та Webpack 5.
 
-**Tags are gone!** 🎉
+Це чудова новина для (початківців) розробників та дизайнерів шаблонів, адже новий *FAST_REFRESH* React робить все набагато краще.
 
-Instead, we now have departments. For the moment, these departments include Accessories, Bottoms, Tops, Coats & Jackets, Underwear, and Swimwear. The departments are listed at the top of the [Designs](https://freesewing.org/designs/) page, along with difficulty ratings and types of patterns (pattern or block). If you are looking for something in particular, you can use the departments to filter patterns, then decide what's right for you!
+У цей реліз було вкладено багато зусиль, але я також знаю, що це все технічні та речі, що знаходяться в "підкапотному просторі". Тому замість того, щоб розводитися про це тут, , я просто [вас на публікацію в блозі на цю тему](https://freesewing.org/blog/react-17/).
 
-**Why is this an improvement?** 🤔
 
-The old categories on FreeSewing's Designs page, including menswear and womenswear, were developed based on the types of categories you might find at a clothing shop. However, we're not a clothing shop. And that's kind of the point. FreeSewing patterns are made-to-measure because they're meant for everyone. We think these new departments are a better representation of that.
+&nbsp;
 
-These categories were also not visible on the Designs page - you had to do a little more work to filter patterns. As we add more patterns to FreeSewing, it made sense to add some filters, so you can more easily find just what you're looking for.
+---
 
-Thanks to the users who started this discussion and helped make FreeSewing a little better! ♥
+&nbsp;
+
+
+# 🤷 Гендерна інклюзивність
+
+Місяць чи два тому деякі користувачі FreeSewing поставили дуже гарне запитання на дискусії [](https://chat.freesewing.org/). Яка мета тегів "жіночий одяг" і "чоловічий одяг" на викрійках FreeSewing, , і чи дійсно вони потрібні? У той час як деякі наші користувачі вважали теги корисними для сортування, інші відчували відчуження від термінології, або не відчували, що жоден з термінів не відображає їхню позицію. Ми думали, що можемо зробити краще, тому внесли деякі зміни.
+
+**Тегів більше немає!** 🎉
+
+Натомість тепер у нас є відділи. На даний момент ці відділи включають Аксесуари, Низ, Топи, Пальто & Куртки, Білизна та Купальники. Відділи перераховані вгорі сторінки [Designs](https://freesewing.org/designs/) , разом з рейтингами складності та типами патернів (патерн або блок). Якщо ви шукаєте щось конкретне, ви можете скористатися відділами, щоб відфільтрувати шаблони , а потім вирішити, що саме вам підходить!
+
+**Чому це покращення?** 🤔
+
+Старі категорії на сторінці дизайнів FreeSewing, включаючи чоловічий та жіночий одяг, були розроблені на основі типів категорій, які ви можете знайти в магазині одягу. Але ми не магазин одягу. І в цьому вся суть. Викрійки FreeSewing зроблені за індивідуальними розмірами, тому що вони призначені для всіх. Ми вважаємо, що ці нові відділи є кращою репрезентацією цього.
+
+Ці категорії також не було видно на сторінці Designs - вам довелося докласти трохи більше зусиль , щоб відфільтрувати патерни. Оскільки ми додаємо до FreeSewing все більше викрійок, ми вирішили додати кілька фільтрів, , щоб ви могли легше знайти саме те, що шукаєте.
+
+Дякуємо користувачам, які розпочали цю дискусію і допомогли зробити FreeSewing трохи кращим! ♥
 
 
