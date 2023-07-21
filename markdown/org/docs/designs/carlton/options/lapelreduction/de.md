@@ -4,7 +4,7 @@ title: "Reversverkleinerung"
 
 Legt fest, wie sehr die Lappenspitze nach innen geht.
 
-It is common to have the edge of the lapels not be entirely straight, but rather turn inwards a bit towards the top of the lapels. Diese Option kontrolliert, wie viel sie das tut.
+Es ist üblich, dass die Kante des Revers nicht ganz gerade ist, sondern ein wenig nach innen zum oberen Ende des Revers hin gebogen ist. Diese Option kontrolliert, wie viel sie das tut.
 
 ## Effekt dieser Option auf das Schnittmuster
 
