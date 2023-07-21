@@ -1,5 +1,5 @@
 ---
-title: "Waralee wrap pants: What You Need"
+title: "Pantalon enveloppant Waralee : Ce dont tu as besoin"
 ---
 
 Pour faire Waralee, vous aurez besoin des éléments suivants :
