@@ -1,18 +1,18 @@
 ---
 maker: "Wouter.vdub"
-caption: "Turned out really well for a toile"
+caption: "Für ein Toilettentuch ist es wirklich gut geworden"
 date: "2017-12-11"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f3126799846dc9ea9aecb423e7283bb715db93b4-3724x2785.jpg"
-intro: "A test of Florent to see if the pattern works for others, by Wouter.vdub"
-title: "A test of Florent to see if the pattern works for others, by Wouter.vdub"
+intro: "Ein Test von Florent, um zu sehen, ob das Muster auch bei anderen funktioniert, von Wouter.vdub"
+title: "Ein Test von Florent, um zu sehen, ob das Muster auch bei anderen funktioniert, von Wouter.vdub"
 designs:
   - "florent"
 ---
 
-![View of the back ](https://posts.freesewing.org/uploads/florent_by_wouter_high_back_20ec93b7c1.jpg "View of the back ") ![View of the front](https://posts.freesewing.org/uploads/florent_by_wouter_high_front_9f28a1eb39.jpg "View of the front")
+![Blick auf die Rückseite ](https://posts.freesewing.org/uploads/florent_by_wouter_high_back_20ec93b7c1.jpg "Blick auf die Rückseite ") ![Blick auf die Vorderseite](https://posts.freesewing.org/uploads/florent_by_wouter_high_front_9f28a1eb39.jpg "Blick auf die Vorderseite")
 
-Wouter writes:
+Wouter schreibt:
 
-> This was made as a toile, and although precision was used, some aspects could have been improved by using hand stitching, instead of machine stitching.
+> Dieses Kleidungsstück wurde als Toilettentuch angefertigt, und obwohl es sehr präzise gearbeitet wurde, hätten einige Aspekte durch Handnähte anstelle von Maschinenstichen verbessert werden können.
 > 
-> Also, the pattern was printed with the standard `ease` of 1cm, and that was taken in at the back seam after the pieces were cut out.
+> Außerdem wurde das Schnittmuster mit der standardmäßigen `Erleichterung` von 1 cm gedruckt, und diese wurde nach dem Zuschneiden der Teile an der hinteren Naht eingezogen.
