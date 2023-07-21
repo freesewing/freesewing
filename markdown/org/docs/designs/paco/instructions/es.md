@@ -1,5 +1,5 @@
 ---
-title: "Paco pants: Sewing Instructions"
+title: "Pantalones Paco: Instrucciones de costura"
 ---
 
 <Tip>
@@ -265,8 +265,8 @@ Vas a sujetar tus tazas de la misma manera que te has unido a la cintura. As wit
 
 <Note>
 
-If your sewing machine has a detachable bed (usually removed to expose the "free arm" for sewing
-sleeve cuffs), this will make sewing the cuffs easier.
+Si tu máquina de coser tiene una bancada desmontable (normalmente se retira para dejar al descubierto el "brazo libre" para coser los puños de las mangas
+), esto facilitará la costura de los puños.
 
  </Note>
 
