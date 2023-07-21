@@ -6,19 +6,19 @@ files:
   - source: /markdown/org/**/en.md
     translation: /markdown/org/**/%two_letters_code%.md
   - source: /sites/org/pages/*/*.en.yaml
-    translation: /sites/org/pages/*/*.%two_letters_code%.yaml
+    translation: /sites/org/pages/*/%file_name%.%two_letters_code%.yaml
   - source: /sites/org/pages/**/*.en.yaml
-    translation: /sites/org/pages/**/*.%two_letters_code%.yaml
+    translation: /sites/org/pages/**/%file_name%.%two_letters_code%.yaml
   - source: /sites/org/components/*/*.en.yaml
-    translation: /sites/org/components/*/*.%two_letters_code%.yaml
+    translation: /sites/org/components/*/%file_name%.%two_letters_code%.yaml
   - source: /sites/org/components/**/*.en.yaml
-    translation: /sites/org/components/**/*.%two_letters_code%.yaml
+    translation: /sites/org/components/**/%file_name%.%two_letters_code%.yaml
   - source: /sites/shared/components/**/*.en.yaml
-    translation: /sites/shared/components/**/*.%two_letters_code%.yaml
+    translation: /sites/shared/components/**/%file_name%.%two_letters_code%.yaml
   - source: /sites/shared/i18n/*.en.yaml
-    translation: /sites/shared/i18n/*.%two_letters_code%.yaml
+    translation: /sites/shared/i18n/%file_name%.%two_letters_code%.yaml
   - source: /sites/backend/src/**/*.en.yaml
-    translation: /sites/backend/src/**/*.%two_letters_code%.yaml
+    translation: /sites/backend/src/**/%file_name%.%two_letters_code%.yaml
   - source: /sites/shared/jargon/en.json
     translation: /sites/shared/jargon/%two_letters_code%.json
   - source: /designs/*/i18n/en.json

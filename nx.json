@@ -16,7 +16,7 @@
       "dependsOn": ["^build"]
     },
     "lint": {
-      "dependsOn": ["prebuild"]
+      "dependsOn": []
     },
     "e2e": {
       "dependsOn": ["prebuild"]

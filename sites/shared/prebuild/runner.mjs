@@ -42,6 +42,15 @@ export const prebuildRunner = async ({
   prebuild, // The prebuild configuration object. See sites/[site]/prebuild.mjs
 }) => {
   /*
+   * We don't run this in the linter
+   * because it slows down linting for no good reason
+   */
+  if (process.env.LINTER) {
+    console.log('Linter detected - Skipping prebuidl step')
+    return
+  }
+
+  /*
    * Setup a place where we can keep data
    */
   const store = { site }
