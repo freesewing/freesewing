@@ -25,6 +25,7 @@
     "buildsitedeps": "cd ../../ && yarn buildall && cd -",
     "prebuild": "yarn buildsitedeps && node --experimental-json-modules ./prebuild.mjs",
     "prebuildonly": "node --experimental-json-modules ./prebuild.mjs",
+    "predev": "node --experimental-json-modules ./prebuild.mjs",
     "start": "yarn prebuild && yarn dev"
   },
   "peerDependencies": {},
