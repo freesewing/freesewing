@@ -1,5 +1,5 @@
 ---
-title: "Bruce boxer briefs: Sewing Instructions"
+title: "Bruce Boxershorts: Anleitung zum Nähen"
 ---
 
 <YouTube id='PL1gv5yv3DoZME1xe5fBEHd0rKPW_xNpF3' playlist />
@@ -8,11 +8,11 @@ title: "Bruce boxer briefs: Sewing Instructions"
 
 ![Rückteil an erstes Seitenteil anbringen](step01.png)
 
-Legen Sie die Seite des Rückens (Teil 1) mit der Seite (Teil 3) und stellen Sie sicher, dass die guten Seiten zusammengesetzt sind. The side (piece 3) is not symmetric, so make be careful to correctly match them.
+Legen Sie die Seite des Rückens (Teil 1) mit der Seite (Teil 3) und stellen Sie sicher, dass die guten Seiten zusammengesetzt sind. Die Seite (Teil 3) ist nicht symmetrisch, also achte darauf, dass sie richtig zusammenpasst.
 
 <Tip>
-If you look at the part 3 (the side) with the text so you can read it, then then left side should be attached to the back,
-and the right side attached to the front & inset. The notches will also help you figure it out.
+Wenn du dir den Teil 3 (die Seite) mit dem Text ansiehst, damit du ihn lesen kannst, dann sollte die linke Seite an der Rückseite befestigt sein,
+und die rechte Seite an der Vorderseite und am Einsatz. Die Kerben helfen dir auch dabei, es herauszufinden.
 </Tip>
 
 Servieren Sie sie zusammen und berücksichtigen Sie, dass die Naht 1 cm beträgt. So richten Sie die Außennadel Ihres Sergers 1cm vom Rand Ihres Stoffes.
@@ -25,7 +25,7 @@ Servieren Sie sie zusammen und berücksichtigen Sie, dass die Naht 1 cm beträgt
 
 ![Rückteil an zweites Seitenteil anbringen](step02.png)
 
-Align the other side of the back (piece 1) with the second side (piece 3) making sure to put the good sides together. Again, because the side (piece 3) is not symmetric, be careful to correctly match them.
+Richte die andere Seite des Rückenteils (Teil 1) an der zweiten Seite (Teil 3) aus und achte darauf, dass die guten Seiten aufeinander liegen. Da die Seite (Teil 3) nicht symmetrisch ist, musst du auch hier darauf achten, dass sie richtig zusammenpasst.
 
 Servieren Sie sie zusammen, wie Sie es auf der anderen Seite getan haben.
 
@@ -49,7 +49,7 @@ Während du den Stoff manipulierst, um ihn richtig auszurichten, ist es einfach 
 
 Sobald Sie die Etappe überwunden haben, wird es einfacher werden. Dies wäre auch ein guter Zeitpunkt, um die verbleibende Länge der gebogenen Nähte zu vergleichen. Wenn der eine ein bisschen länger als der andere ist, dann strecken Sie einfach die kürzere aus, bis sie zusammenpassen.
 
-Wenn der Unterschied jedoch zu groß ist, lassen Sie ihn einfach aus. It will get cut off when we do the crotchseam.
+Wenn der Unterschied jedoch zu groß ist, lassen Sie ihn einfach aus. Sie wird abgeschnitten, wenn wir die Schrittnaht machen.
 
 <Note>
 
