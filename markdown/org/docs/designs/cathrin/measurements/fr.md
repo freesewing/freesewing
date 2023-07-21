@@ -1,5 +1,5 @@
 ---
-title: "Cathrin corset: Required Measurements"
+title: "Corset Cathrin : Mesures requises"
 ---
 
 <PatternMeasurements pattern='cathrin' />
