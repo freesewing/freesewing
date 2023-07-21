@@ -1,85 +1,85 @@
 ---
 author: "joostdecock"
-caption: "Your login background for February"
+caption: "Ваша історія входу в систему за лютий"
 date: "2019-01-31"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/26bf3d41513702ad361b5a0f15dcff2350cc852b-1920x1440.jpg"
-intro: "Is it really the end of January? Already?"
-title: "Monthly roundup - January 2019: The big beta update"
+intro: "Невже вже кінець січня? Вже?"
+title: "Щомісячний огляд - січень 2019: велике бета-оновлення"
 ---
 
 
-Is it really the end of January? Already?
+Невже вже кінець січня? Вже?
 
-After using the Xmas break to port [Simon](/en/patterns/simon) — not exactly the most trivial of patterns — I'm fairly confident that all patterns will be ok. Simon has 61 options, so if it works for Simon, it will work for all patterns, or at least that's how I see it.
+Після використання різдвяної перерви для перенесення [Саймона](/en/patterns/simon) - не зовсім тривіальних шаблонів - я впевнений, що з усіма шаблонами буде все гаразд. Simon має 61 опцію, тож якщо працює для Simon, то працюватиме і для всіх шаблонів, або, принаймні, я так вважаю.
 
-Seven patterns have now been ported. That might not seem like much, but it does get rather tedious every time we make a change that touches the patterns, as we then have 7 to update. So I decided to put the pattern porting on hold for a while, and instead focus my attention on [our new beta website](/en/).
+Наразі перенесено сім шаблонів. Це може здатися не так вже й багато, але це стає досить нудним щоразу, коли ми вносимо зміни, які зачіпають шаблони, оскільки потім нам потрібно оновити 7 версій. Тому я вирішив на деякий час призупинити перенесення шаблонів, а замість цього зосередити свою увагу на [нашому новому бета-сайті](/en/).
 
-## Gatsby is now our static site generator
+## Gatsby тепер наш генератор статичних сайтів
 
-The new website is built on top of [Gatsby](https://www.gatsbyjs.org/), a static site generator written in JavaScript and powered by [React](https://reactjs.org/). We've been fairly committed to [the JAMstack architecture](/en/blog/freesewing-goes-jamstack) here at freesewing.org.
+Новий сайт побудований на основі [Gatsby](https://www.gatsbyjs.org/), статичного генератора сайтів , написаного на JavaScript і працюючого на [React](https://reactjs.org/). Ми були досить віддані [архітектурі JAMstack](/en/blog/freesewing-goes-jamstack) тут, на freesewing.org.
 
-It's our third rewrite of the site since we launched freesewing.org and I admit that that's a bit much. As in, I really hope the site we're building now will stick around for a while.
+Це наша третя переробка сайту з моменту запуску freesewing.org, і я визнаю, що це вже трохи . Я дуже сподіваюся, що сайт, який ми зараз створюємо, протримається деякий час.
 
-Then again, rapid iterations are a good thing, especially as we were still finding our feet. We do what it takes to get it right, and while the question of *what's the purpose of this all* is perhaps on some of your minds, I feel like beta.freesewing.org has gotten to the point where it answers that question.
+З іншого боку, швидкі ітерації - це добре, особливо коли ми ще тільки ставали на ноги. Ми робимо все можливе, щоб зробити це правильно, і хоча питання про *, яка мета всього цього* , можливо, хвилює декого з вас, я відчуваю , що beta.freesewing.org дійшов до того, щоб відповісти на це питання.
 
-## (almost) everything happens in your browser now
+## Тепер (майже) все відбувається у вашому браузері
 
-We rewrote our platform in JavaScript. That thing that runs in your browser. Previously, whenever you wanted to change the style of your cuffs or something, we needed to send your wishes to a backend, who'd then generate a draft and send it back.
+Ми переписали нашу платформу на JavaScript. Та штука, яка запускається у вашому браузері. Раніше, коли ви хотіли змінити стиль манжетів або щось інше, нам потрібно було надіслати ваші побажання на , щоб бекенд-менеджер згенерував чернетку і надіслав її назад.
 
-Now, when you tweak an option, we don't need a round-trip to a backend to show you what things look like. Because everything runs in your browser. So if you change something, it just updates right there on your screen.
+Тепер, коли ви налаштовуєте опцію, нам не потрібно йти до бекенду, щоб показати вам , як все виглядає. Тому що все працює у вашому браузері. Тож якщо ви щось зміните, просто оновиться прямо на вашому екрані.
 
-That's sort of what we had in mind all along, but it's still a powerful moment when all the pieces finally start to fall in place and things actually work.
+Це приблизно те, що ми мали на увазі з самого початку, але це все одно потужний момент, коли всі шматочки нарешті починають ставати на свої місця і все починає працювати.
 
-That being said, not everything runs in the browser yet. Specifically turning your patterns into PDFs is something that we handle in the backend as we're still working on that part.
+При цьому ще не все працює в браузері. Конкретно перетворення ваших шаблонів у PDF - це те, чим ми займаємося в бекенді, оскільки ми все ще працюємо над цією частиною.
 
-## No account needed
+## Обліковий запис не потрібен
 
-Our [new demo](https://beta.freesewing.org/en/demo) allows you to kick the tires without the need to sign up. When signing up, there's no need to create an account with password, as we now support signing up with your existing Google or GitHub account.
+Наша [нова демо-версія](https://beta.freesewing.org/en/demo) дозволяє вам спробувати свої сили без необхідності реєструватися. При реєстрації немає необхідності створювати обліковий запис з паролем, оскільки тепер підтримує реєстрацію з вашим існуючим обліковим записом Google або GitHub.
 
-People who already have an account will be able to login with their Google or GitHub account, provided the email address of their freesewing account matches.
+Люди, які вже мають обліковий запис, зможуть увійти за допомогою свого облікового запису Google або GitHub, за умови, що адреса електронної пошти їхнього облікового запису freesewing збігається.
 
-## You can change everything
+## Ви можете змінити все
 
-We've made many changes to try and make it easier for developers to get started with freesewing. But we've also made changes for people who contribute in other ways.
+Ми внесли багато змін, щоб полегшити розробникам початок роботи з freesewing. Але ми також внесли зміни для людей, які роблять свій внесок в інший спосіб.
 
-All our (markdown) content can now be edited on the site. No GitHub account needed, just click the little pencil icon next to the title, submit your changes, and we're good.
+Весь наш (уцінений) контент тепер можна редагувати на сайті. Обліковий запис на GitHub не потрібен, просто натисніть на іконку з олівцем поруч із заголовком, надішліть свої зміни, і все готово.
 
-Same good news for translators. All the translations can also be edited online. We've also updated our documentation for translators and editors to reflect this new simplified workflow.
+Така ж гарна новина і для перекладачів. Усі переклади також можна редагувати онлайн. Ми також оновили нашу документацію для перекладачів і редакторів, щоб відобразити цей новий спрощений робочий процес.
 
-## Custom layouts
+## Нестандартні макети
 
-The login/signup with GitHub/Google accounts was a feature requested by users, and so is this one: We now support the creation of a custom layout for your pattern. Here's how it works:
+Вхід/реєстрація за допомогою акаунтів GitHub/Google була функцією, про яку просили користувачі, і ця функція є такою самою: Тепер ми підтримуємо створення кастомного макета для вашого шаблону. Ось як це працює:
 
-When a pattern is drafted, the different pattern parts are laid out on the pattern automatically. Often that's great, but sometimes you wish your could make some changes. For example, you may want to get your pattern printed in a copy shop so you want to make sure it fits on the width of their roll of paper. Or you want to save some paper by squeezing some parts together.
+Під час побудови лекал різні частини деталі автоматично розміщуються на лекалах. Часто це чудово, але іноді хочеться щось змінити. Наприклад, ви хочете надрукувати свій шаблон у копіювальній майстерні, тому вам потрібно переконатися, що вписується в ширину їхнього рулону паперу. Або ви хочете заощадити папір, стиснувши деякі частини разом.
 
-It's in early beta (as in, it still breaks from time to time) but you can now change the width of your pattern, move your pattern parts around, rotate them, or even mirror them vertically or horizontally to suit whatever your plans are. All of that can be done in your browser, on the site.
+Це ще рання бета-версія (тобто, вона все ще час від часу ламається), але вже зараз ви можете змінювати ширину вашого шаблону, переміщати частини шаблону, обертати їх або навіть віддзеркалювати їх по вертикалі або горизонталі, щоб відповідати вашим планам. Все це можна зробити в браузері, на сайті.
 
 ## Документація для розробників
 
-We've also integrated our developer documentation on the new site. Until yesterday, documentation about the new platform was hosted on a separate site, but now, we've ported the documentation and everything is integrated in our (future) website.
+Ми також інтегрували нашу документацію для розробників на новий сайт. До вчорашнього дня документація про нову платформу була розміщена на окремому сайті , але зараз ми перенесли документацію і все інтегровано на наш (майбутній) сайт.
 
-## We won't migrate your drafts
+## Ми не будемо мігрувати ваші чернетки
 
-Time to talk about the things we won't be doing: We will not migrate your existing drafts. The new platform is just too different. There is no way for us to migrate your existing drafts in a way that makes sense. So, when the day comes we switch over to the new site, your drafts will no longer be there.
+Час поговорити про те, чого ми не будемо робити: Ми не будемо мігрувати ваші існуючі чернетки. Нова платформа занадто відрізняється. Ми не можемо перенести ваші існуючі чернетки у розумний спосіб. Отже, коли настане день, коли ми перейдемо на новий сайт, ваших чернеток там більше не буде.
 
-You can download all your data from our site, but if you don't do that yourself, your v1 drafts will be gone.
+Ви можете завантажити всі свої дані з нашого сайту, але якщо ви не зробите цього самостійно, ваші чернетки v1 зникнуть.
 
-## No more comments
+## Більше немає коментарів
 
-I have decided to not implement a comments feature because I feel having them raises the wrong expectations.
+Я вирішив не впроваджувати функцію коментарів, оскільки вважаю, що їх наявність викликає неправильні очікування.
 
-Freesewing is not another [Pattern Review](https://sewing.patternreview.com/), or [Thread and Needles](https://www.threadandneedles.org/), or [The Fold Line](https://thefoldline.com/), or [Textillia](https://www.textillia.com/), or [Kollabora](http://www.kollabora.com/), or whatever the *Raverly of sewing* du jour is.
+[Фріволіте - це не черговий [Pattern Review](https://sewing.patternreview.com/), або [Thread and Needles](https://www.threadandneedles.org/), або [The Fold Line](https://thefoldline.com/), або [Textillia](https://www.textillia.com/), 1 або 2 Kollabora](http://www.kollabora.com/), або що б там не було *Raverly of sewing* du jour.
 
-I don't want freesewing.org to compete with these websites. They do their thing, we do ours. Their value proposition is the community, ours is not. That doesn't mean our community isn't valuable. It just means that we don't need our community to gather on our website. Our community exists wherever it goes. Be it Twitter, Instagram, Reddit, blogs, or some social network that I've never even heard of. It doesn't matter, it's all good.
+Я не хочу, щоб freesewing.org конкурував з цими сайтами. Вони роблять свою справу, ми - свою. Їхньою ціннісною пропозицією є спільнота, а нашою - ні. Це не означає, що наша спільнота не є цінною. Це просто означає, що ми не потребуємо, щоб наша спільнота збиралася на нашому сайті. Наша спільнота існує скрізь, куди б вона не . Будь то Twitter, Instagram, Reddit, блоги або якась соціальна мережа, про яку я ніколи навіть не чув. Це не має значення, це все добре.
 
-Building a community on the website takes time, it takes effort, it takes work. And we simply don't have the bandwidth for that. So I'd rather we focus on [our core mission](/en/docs/faq/#whats-your-end-game), and let people talk about freesewing wherever it is they talk about things.
+Створення спільноти на веб-сайті потребує часу, зусиль і роботи. І у нас просто немає для цього пропускної здатності. Тому я вважаю за краще, щоб ми зосередилися на [нашої основної місії](/en/docs/faq/#whats-your-end-game), і нехай люди говорять про фріскейтинг, де б вони не говорили про що завгодно.
 
-## Paris anyone?
+## Хтось хоче в Париж?
 
-I've mentioned I'd like to do some sort of meetup this year, and while I haven't really had any time to work out what that would mean, we might end up meeting anyway.
+Я вже згадував, що хотів би провести якусь зустріч цього року, і хоча я ще не часу, щоб обміркувати, що це буде означати, можливо, ми все одно зустрінемося.
 
-Specifically, [Charlotte](https://englishgirlathome.com/) (aka English girl at home) and [Carmen](https://www.carmencitab.com/) (aka CarmencitaB) are organising the [Paris Sewcial](https://englishgirlathome.com/2019/01/23/paris-sewcial-paris-coud-2019-registration-open/) meetup in May. I'll be heading to Paris to be part of that, so if you are too, we'll meet up there.
+Зокрема, [Шарлотта](https://englishgirlathome.com/) (вона ж англійська дівчина вдома) та [Кармен](https://www.carmencitab.com/) (вона ж КарменсітаВ) організовують у травні [Paris Sewcial](https://englishgirlathome.com/2019/01/23/paris-sewcial-paris-coud-2019-registration-open/) meetup. Я їду до Парижа, щоб взяти участь у цьому заході, тож якщо ви теж , то зустрінемося там.
 
-Registration is [right this way](https://www.eventbrite.co.uk/e/paris-sewcial-paris-coud-registration-54520802187). 
+Реєстрація [за цим посиланням](https://www.eventbrite.co.uk/e/paris-sewcial-paris-coud-registration-54520802187). 
 
 
