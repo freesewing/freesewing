@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/bdb5e72db9290457048b7
 intro: "Синя сорочка Simon від feelingmyoats"
 title: "Синя сорочка Simon від feelingmyoats"
 designs:
-  - "simon"
+  - "Саймон"
 ---
 
 ![Вид спереду](https://posts.freesewing.org/uploads/blue_simon_front_1a4a8e9897.jpg "Вид спереду")
