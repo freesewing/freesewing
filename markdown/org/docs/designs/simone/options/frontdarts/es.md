@@ -2,7 +2,7 @@
 title: "Dardos delanteros"
 ---
 
-Whether to include front waist darts or not.
+Incluir o no pinzas delanteras en la cintura.
 
 ## Efecto de esta opción en el patrón
 
