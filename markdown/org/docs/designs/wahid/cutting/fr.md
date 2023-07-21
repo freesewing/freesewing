@@ -1,5 +1,5 @@
 ---
-title: "Wahid waistcoat: Cutting Instructions"
+title: "Gilet Wahid Instructions de coupe"
 ---
 
 - **Tissu principal**
