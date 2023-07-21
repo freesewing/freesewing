@@ -6,7 +6,7 @@ title: "Altura del dart trasero"
 
 ![El efecto de la altura del dardo posterior en el patrón](sample.png)
 
-The **back dart height** option controls the height (length if you will) of the back dart.
+La opción **altura del dardo trasero** controla la altura (longitud, si quieres) del dardo trasero.
 
 ## Efecto de esta opción en el patrón
 
