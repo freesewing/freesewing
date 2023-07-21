@@ -1,5 +1,5 @@
 ---
-title: "Noble body block"
+title: "Noble bovenlichaam blok"
 ---
 
 <PatternDocs pattern='noble' />
