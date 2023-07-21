@@ -1,5 +1,5 @@
 ---
-title: "Yuri hoodie: Cutting Instructions"
+title: "Sweat à capuche Yuri : Instructions de coupe"
 ---
 
 - Couper **2 devants** _endroit contre endroit_
