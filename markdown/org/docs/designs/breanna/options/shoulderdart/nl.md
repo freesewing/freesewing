@@ -2,7 +2,7 @@
 title: "Schouder neep"
 ---
 
-Whether or not to inlude a back shoulder dart to round the back.
+Wel of geen schouderpas op de rug om de rug af te ronden.
 
 ## Effect van deze optie op het patroon
 
