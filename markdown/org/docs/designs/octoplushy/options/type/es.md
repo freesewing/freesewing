@@ -2,7 +2,7 @@
 title: "Tipo"
 ---
 
-There are three distinct Octoplushies. The original cute Octoplushy, the more authentic Octopus, and the Squid.
+Hay tres Octoplushies distintos. El simpático Pulpo original, el Pulpo más auténtico y el Calamar.
 
 ## Efecto de esta opción en el patrón
 
