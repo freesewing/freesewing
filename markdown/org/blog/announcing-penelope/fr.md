@@ -1,31 +1,31 @@
 ---
 author: "joostdecock"
-caption: "The pattern illustration for Penelope"
+caption: "L'illustration du patron de Pénélope"
 date: "2018-06-29"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/59646d7171bb8b18df952a1c9547cd212451de79-1920x1080.jpg"
-intro: "I'm very happy to announce the immeadiate availability of the Penelope Pencil Skirt , out in beta today."
-title: "Announcing the Penelope Pencil Skirt; And our womenswear roadmap"
+intro: "Je suis très heureuse d'annoncer la disponibilité immédiate de la jupe crayon Pénélope , sortie en version bêta aujourd'hui."
+title: "Annonce la jupe crayon Pénélope ; et notre feuille de route pour les vêtements pour femmes."
 ---
 
-I'm very happy to announce the immeadiate availability of [the Penelope Pencil Skirt](/patterns/penelope), out in beta today.
+Je suis très heureuse d'annoncer la disponibilité immédiate de [la jupe crayon Pénélope](/patterns/penelope), en version bêta aujourd'hui.
 
-![A linedrawing of Penelope](linedrawing.svg)
+![Un dessin de Pénélope](linedrawing.svg)
 
-Penelope was designed by [@woutervdub](/users/woutervdub) who also signed for [benjamin](/patterns/benjamin).
+Penelope a été conçue par [@woutervdub](/users/woutervdub) qui a également signé pour [benjamin](/patterns/benjamin).
 
-## Freesewing is not (just) for menswear
+## Freesewing n'est pas (seulement) pour les vêtements pour hommes
 
-This new foray into womenswear foreshadows our plans for the second half of this year. That's right, we're going to be making more patterns for ladies.
+Cette nouvelle incursion dans la mode féminine préfigure nos projets pour le second semestre de cette année. C'est vrai, nous allons faire plus de patrons pour les femmes.
 
-Freesewing has a bit of a menswear reputation, since historically we've had a lot more patterns for men than for ladies. But that doesn't mean women are second-class citizens here. It's just a side-effect of how this project was historically run by a man. Can you blame a brother for designing patterns he'd like to wear himself?
+Freesewing a une certaine réputation en matière de vêtements pour hommes, , car historiquement, nous avons eu beaucoup plus de patrons pour les hommes que pour les femmes. Mais cela ne veut pas dire que les femmes sont des citoyennes de seconde zone ici. C'est juste un effet secondaire de la façon dont ce projet a été historiquement dirigé par un homme. Peux-tu reprocher à un frère de concevoir des modèles qu'il aimerait porter lui-même ?
 
-Today, freesewing is a communal effort, and there's plenty of ladies involved. So it only make sense to make a conscious effort to do something for our sisters. And that's exactly what we'll be doing.
+Aujourd'hui, le freesewing est un effort commun, et beaucoup de femmes y participent. Il est donc logique de faire un effort conscient pour faire quelque chose pour nos sœurs. Et c'est exactement ce que nous allons faire.
 
-We've got another pattern in the pipeline that is not only for women, but also by a woman. By [@AlfaLyr](/users/alfalyr) in particular, who has designed a circle skirt pattern that is going to land here real soon.
+Nous avons un autre modèle en préparation qui n'est pas seulement pour les femmes, mais aussi par une femme. Par [@AlfaLyr](/users/alfalyr) notamment, qui a conçu un modèle de jupe en cercle que va débarquer ici très bientôt.
 
-In parallel, I'll be working with [@AnnekeCaramin](/users/annekecaramin) on a female equivalent for [Brian](/patterns/brian), our basic body block on which many of our patterns are based. The idea is to make a quality bodice block for ladies that is made-to-measure and can handle the common fitting issues automatically. I'm talking about full bust adjustment, sway back, these kind of things.
+Parallèlement, je travaillerai avec [@AnnekeCaramin](/users/annekecaramin) sur un équivalent féminin de [Brian](/patterns/brian), notre bloc corporel de base sur lequel reposent bon nombre de nos modèles. L'idée est de fabriquer un bloc de corsage de qualité pour les dames qui est fait sur mesure et peut gérer automatiquement les problèmes d'ajustement courants. Je parle de l'ajustement complet du buste, de l'oscillation du dos, de ce genre de choses.
 
-Once we have that block, expect us to spin it into a bunch of dresses and tops.
+Une fois que nous aurons ce bloc, attends-toi à ce que nous le transformions en un tas de robes et de hauts.
 
-And as always, if you have pattern design skills but are a bit intimidated by the platform, reach out to us to see if we can join forces to make your ideas a reality.
+Et comme toujours, si tu as des compétences en conception de patrons mais que tu es un peu intimidé par la plateforme, nous contacter pour voir si nous pouvons unir nos forces pour faire de tes idées une réalité.
 
