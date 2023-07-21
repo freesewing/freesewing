@@ -1,37 +1,41 @@
 ---
 author: "joostdecock"
-caption: "Your login background for June"
+caption: "Ton arrière-plan de connexion pour le mois de juin"
 date: "31-05-2018"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/63d370c4ad7447d762f2ed053279bc3f11c7583d-1920x1080.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - May 2018: The post-GDPR era is upon us"
+intro: "Voici ton récapitulatif mensuel de l'actualité freesewing des quatre dernières semaines, et un aperçu de ce qui t'attend le mois prochain."
+title: "Récapitulatif mensuel - mai 2018 : L'ère post-GDPR est à nos portes"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Voici ton récapitulatif mensuel de l'actualité freesewing des quatre dernières semaines, et un aperçu de ce qui t'attend le mois prochain.
 
-## Looking back at May
+## Retour sur le mois de mai
 
-Well here we are, the GPPR deadline of May 25th is getting smaller and smaller in our rear-view mirror, and we have a new website.
+Et bien nous y voilà, la date limite du 25 mai pour les RPGP se réduit de plus en plus dans notre rétroviseur, et nous avons un nouveau site web.
 
-Both of those things are obviously related, but you probably [already knew that](/blog/gdpr-ready).
+</a>Ces deux choses sont évidemment liées, mais tu le savais probablement déjà
 
-May has been an incredibly hectic month, with a lot of self-inflicted stress because rather than just implement the changes required for GDPR, we decided to rebuild the entire site. However, as the GDPR changes needed to be ready in time, that meant that the entire site had to be ready.
+.</p> 
 
-*Ready* is obviously open to interpretation, and even though we published the site on time — with 1.5 hours to spare to be precise — there were still a few loose ends left and right.
+Le mois de mai a été incroyablement agité, avec beaucoup de stress auto-infligé parce que plutôt que de simplement mettre en œuvre les changements requis pour le GDPR, nous avons décidé de reconstruire tout le site. Cependant, comme les modifications du GDPR devaient être prêtes à temps, cela signifiait que l'ensemble du site devait être prêt. 
 
-We've fixed a bunch of those and I'd like to thank all of you who reported issues and helped us fix them by sharing their experience.
+*Ready* est évidemment ouvert à l'interprétation, et même si nous avons publié le site à temps - avec une heure et demie de retard pour être précis - il y avait encore quelques détails à gauche et à droite.
 
-A lot of time and effort has been invested in making the site multi-lingual, and it's been great to be able to launch with three langauges enabled. All the translators are doing great work and I hope we'll be able to turn on a few other langauges relatively soon.
+Nous en avons corrigé un certain nombre et j'aimerais remercier tous ceux d'entre vous qui nous ont signalé des problèmes et nous ont aidés à à les résoudre en partageant leur expérience. 
 
-Apart from [open issues](https://github.com/freesewing/site/issues), we also still have to port some of the documentation to the new site, which is something that we'll continue to work on in June. A ce propos:
+Beaucoup de temps et d'efforts ont été investis pour rendre le site multilingue, et c'est formidable de pouvoir le lancer avec trois langues activées. Tous les traducteurs font un excellent travail et j'espère que nous pourrons bientôt utiliser d'autres langues.
 
-## Looking ahead to June
+En plus des questions ouvertes [,](https://github.com/freesewing/site/issues), , nous devons encore porter une partie de la documentation sur le nouveau site, , ce sur quoi nous continuerons à travailler en juin. A ce propos:
 
-Don't expect any ground breaking changes in June. We're going to keep on ironing out the last kinks on the site, and continue to port the remaining documentation that's still missing from the site.
 
-I can't — and won't — make any promises and expect other people to keep them, so while I can't commit to any translation work, great strides are being made in the French and Swedish translations, so that's all very exciting.
 
-I'm also thrilled that this translation work is turning out to be a good on-ramp for people with no prior experience as open source contributors. Not only that, but translators are now actually fixing small bugs left and right which is really terrific.
+## En attendant le mois de juin
 
-Obviously there's a lot of work that remains to be done, so if you're still standing on the sidelines wondering whether this is something for you, don't be shy. [Stop by our chat room to say hello](https://discord.freesewing.org/), we don't bite ☺️
+Ne t'attends pas à des changements révolutionnaires en juin. Nous allons continuer à résoudre les derniers problèmes du site, et continuer à porter la documentation restante qui est toujours manquante sur le site.
+
+Je ne peux pas - et je ne veux pas - faire de promesses et attendre des autres qu'ils les tiennent, alors même si je ne peux pas m'engager dans un travail de traduction, de grands progrès sont réalisés dans les traductions française et suédoise, , et c'est très excitant.
+
+Je suis également ravie que ce travail de traduction s'avère être une bonne rampe de lancement pour les personnes qui n'ont pas d'expérience préalable en tant que contributeurs open source. Non seulement cela, mais les traducteurs sont maintenant en train de corriger de petits bugs à gauche et à droite, ce qui est vraiment formidable.
+
+Il reste évidemment beaucoup de travail à faire, alors si tu te tiens encore à l'écart sur en te demandant si c'est quelque chose pour toi, ne te gêne pas. [Passe dans notre salle de chat pour nous dire bonjour](https://discord.freesewing.org/), nous ne mordons pas ☺️
 
