@@ -247,7 +247,8 @@ dev:
     'rehype-sanitize': &rehypeSanitize '5.0.1'
     'rehype-slug': &rehypeSlug '5.1.0'
     'rehype-stringify': &rehypeStringify '9.0.3'
-    'remark-copy-linked-files': &remarkCopyLinkedFiles 'https://github.com/joostdecock/remark-copy-linked-files'
+    # see: https://github.com/npm/cli/issues/2610#issuecomment-1295371753
+    'remark-copy-linked-files': &remarkCopyLinkedFiles 'git+https://git@github.com/joostdecock/remark-copy-linked-files'
     'remark-gfm': &remarkGfm '3.0.1'
   dev: &nextSiteDevDependencies
     '@playwright/test': '^1.32.3'
