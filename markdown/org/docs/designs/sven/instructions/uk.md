@@ -1,5 +1,5 @@
 ---
-title: "Sven sweatshirt: Sewing Instructions"
+title: "Світшот Sven: Інструкція з пошиття"
 ---
 
 ### Крок 1: Зшийте плечові шви
