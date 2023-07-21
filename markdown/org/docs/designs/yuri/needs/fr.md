@@ -1,5 +1,5 @@
 ---
-title: "Yuri hoodie: What You Need"
+title: "Sweat à capuche Yuri : Ce dont tu as besoin"
 ---
 
 Pour réaliser Yuri, vous aurez besoin des fournitures suivantes :
