@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9e8834593713a2a6e4903
 intro: "Відбілювач Bruce від Reanna"
 title: "Відбілювач Bruce від Reanna"
 designs:
-  - "bruce"
+  - "Брюс."
 ---
 
 ![Задня частина пари, показана вище](https://posts.freesewing.org/uploads/bleach_dyed_bruce_1_back_c91de98a99.jpg "Задня частина пари, показана вище")
