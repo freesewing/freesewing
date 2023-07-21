@@ -1,20 +1,20 @@
 ---
 maker: "RedBlaqueGolden"
-caption: "JV in a Sandy with matching mask"
+caption: "JV in einem Sandy mit passender Maske"
 date: "20.10.2020"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/35daf9e79d06a8a12972a1e0bd87bce6f3c92028-1536x2048.jpg"
-intro: "JV shared their new dress using the Sandy skirt on Twitter."
-title: "JV's dress made using a Sandy circle skirt"
+intro: "JV teilte ihr neues Kleid mit dem Sandy-Rock auf Twitter."
+title: "JVs Kleid aus einem Sandy-Kreisrock"
 designs:
   - "sandy"
 ---
 
-JV shared their [new dress using the Sandy skirt](https://twitter.com/RedBlaqueGolden/status/1317752221933633537) on Twitter.
+JV teilte ihr [neues Kleid unter Verwendung des Sandy-Rocks](https://twitter.com/RedBlaqueGolden/status/1317752221933633537) auf Twitter.
 
-Here are some other views.
+Hier sind einige andere Ansichten.
 
-![full length of the outfit](https://posts.freesewing.org/uploads/sandy_by_jv_jv_sandy_fulllength_3553786a5c.jpg "full length of the outfit")
+![die gesamte Länge des Outfits](https://posts.freesewing.org/uploads/sandy_by_jv_jv_sandy_fulllength_3553786a5c.jpg "die gesamte Länge des Outfits")
 
-![mid twirl](https://posts.freesewing.org/uploads/sandy_by_jv_jv_sandy_midtwirl_d5dccbb1d1.jpg)
+![Mitten im Wirbel](https://posts.freesewing.org/uploads/sandy_by_jv_jv_sandy_midtwirl_d5dccbb1d1.jpg)
 
-![close up of the key fabric](https://posts.freesewing.org/uploads/sandy_by_jv_jv_sandy_fabric_closeup_1fa49dfcad.jpg)
+![Nahaufnahme des Schlüsselstoffs](https://posts.freesewing.org/uploads/sandy_by_jv_jv_sandy_fabric_closeup_1fa49dfcad.jpg)
