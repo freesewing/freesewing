@@ -1,5 +1,5 @@
 ---
-title: "Jaeger jacket: Cutting Instructions"
+title: "Jaeger Jacke: Schnittanleitung"
 ---
 
 - **Oberstoff**
