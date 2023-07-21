@@ -1,88 +1,64 @@
 ---
 date: "2022-07-01"
 edition: "2022q3"
-intro: "2022 Summer edition"
-title: "2022 Summer edition"
+intro: "2022 Edición de verano"
+title: "2022 Edición de verano"
 ---
 
-Welcome to the 2022 Summer edition of the FreeSewing newsletter. Here's what's in it for you today:
+Bienvenido a la edición de verano 2022 del boletín FreeSewing. Esto es lo que te espera hoy:
 
-- 🦈 FreeSewing 2.21 adds five new patterns (4-minute read - by Karen)
-- 🔨 Changes to our monorepo structure (2-minute read - by Natalia)
-- 🚸 Honey, we shrunk FreeSewing: Adapting FreeSewing designs for kiddos (2-minute read - by Natalia)
-- 👨‍💻 FreeSewing *afk* (1-minute read - by Lexander)
-- 🕵️ Behind the Seams: Starfetcher (4-minute read - by Karen & Starfetcher)
-- 💰 Should we be down because FreeSewing's revenue is down? (2-minute read - by Joost)
+- 🦈 FreeSewing 2.21 añade cinco patrones nuevos (lectura de 4 minutos - por Karen)
+- 🔨 Cambios en nuestra estructura monorepo (lectura de 2 minutos - por Natalia)
+- 🚸 Cariño, hemos encogido FreeSewing: Adaptar diseños de FreeSewing para niños (lectura de 2 minutos - por Natalia)
+- 👨‍💻 FreeSewing *afk* (lectura de 1 minuto - por Lexander)
+- 🕵️ Tras las costuras: Starfetcher (lectura de 4 minutos - por Karen & Starfetcher)
+- 💰 ¿Deberíamos estar de bajón porque los ingresos de FreeSewing han bajado? (lectura de 2 minutos - por Joost)
 
-Let's jump right in!
-
-&nbsp;
+¡Vamos allá!
 
 &nbsp;
 
-## 🦈 FreeSewing 2.21 adds five new patterns
+&nbsp;
 
-FreeSewing 2.21 adds Bob, Hi, Lucy, Noble and Unice designs.
+## 🦈 FreeSewing 2.21 añade cinco nuevos patrones
+
+FreeSewing 2.21 añade los diseños Bob, Hi, Lucy, Noble y Unice.
 
 ### Bob el babero
 
-Long-time followers of FreeSewing may recognize Bob, a classic bib, and the result of the FreeSewing pattern design tutorial. Want to sew up Bob without learning how to develop a FreeSewing pattern? Now you can! Although we think you should still learn how to develop a FreeSewing pattern, like the folks below.
+Los antiguos seguidores de FreeSewing reconocerán a Bob, un peto clásico, y el resultado del tutorial de diseño de patrones de FreeSewing. ¿Quieres coser a Bob sin aprender a elaborar un patrón de FreeSewing? ¡Ahora puedes! Aunque creemos que deberías aprender a desarrollar un patrón de FreeSewing, como la gente de abajo.
 
-[Discover Bob on FreeSewing.org](https://freesewing.org/designs/bob)
+[Descubre a Bob en FreeSewing.org](https://freesewing.org/designs/bob)
 
 ### <strike>BLÅHAJ</strike>, nay Hi
 
-When (the UK branch of) a certain Swedish yellow/blue colored furniture giant announced that it would discontinue its universally beloved plush shark, the internet did not handle it very well. People love soft and cuddly sharks and the idea of ever being without one to keep you company when things are rough was quite frankly unsettling.
+Cuando (la sucursal británica de) cierto gigante sueco de los muebles de color amarillo/azul anunció que iba a dejar de fabricar su universalmente querido tiburón de peluche, Internet no lo llevó muy bien. A la gente le encantan los tiburones suaves y mimosos y la idea de quedarte alguna vez sin uno que te haga compañía cuando las cosas se ponen feas era francamente inquietante.
 
-So plans were made, strategies discussed, but for a while it seemed we were just going to have to accept defeat. Smash cut to Wouter Van Wageningen, one of FreeSewings' most senior pattern designers, who embarked on a singular mission: To save the sharks. Suffice to say. He did. Because of course he did.
+Así que se hicieron planes, se discutieron estrategias, pero durante un tiempo pareció que íbamos a tener que aceptar la derrota. Smash cut a Wouter Van Wageningen, uno de los diseñadores de patrones más veteranos de FreeSewings, que se embarcó en una misión singular: Salvar a los tiburones. Basta con decirlo. Lo hizo. Porque claro que lo hizo.
 
-Wouter named the pattern Hi and those of you who share his Dutch roots will get the play on words here 🦈 So now you can sew up your very own Hi, a friendly and fabulous plush shark and frankly an internet icon.
+Wouter bautizó el patrón con el nombre de Hi, y los que compartáis sus raíces holandesas entenderéis el juego de palabras 🦈 Así que ya puedes coser tu propio Hi, un simpático y fabuloso tiburón de peluche y, francamente, un icono de Internet.
 
-This is FreeSewing's first plush pattern, and as such it is not be tailored to any measurements, but it's still parametric! You can sew up Hi in any size from roughly 5 centimeters to 5 meters, and you can modify its mouth, its nose pointiness, and make your Hi "aggressive" (that's when you give it pointy teeth). Another great thing about Hi: it'll fit anyone in your life! Does your sibling, cat, in-law, crush, boss, GM, barista, or anyone else in your life need a Hi? Probably. Do you need a Hi? Almost definitely. Does it need to be 5 meters long? No, but it wants to.
+Éste es el primer patrón de felpa de FreeSewing, y como tal no se adapta a ninguna medida, ¡pero sigue siendo paramétrico! Puedes coser Hi de cualquier tamaño, desde unos 5 centímetros hasta 5 metros, y puedes modificar su boca, la punta de su nariz y hacer que tu Hi sea "agresiva" (es cuando le pones dientes puntiagudos). Otra cosa buena de Hi: ¡se adaptará a cualquier persona de tu vida! ¿Tu hermano, gato, suegro, enamorado, jefe, gerente, camarero o cualquier otra persona de tu vida necesita un Hola? Probablemente. ¿Necesitas un Hi? Casi seguro. ¿Es necesario que mida 5 metros? No, pero quiere hacerlo.
 
-[Discover Hi on FreeSewing.org](https://freesewing.org/designs/hi)
+[Descubre Hola en FreeSewing.org](https://freesewing.org/designs/hi)
 
 ### Lucy
 
-[Lucy](https://en.wikipedia.org/wiki/Lucy_Locket) is a perfect accessory for the historically-inspired sewist, a historical pocket that you can tie around your waist, designed by SeaZeeZee. Traditionally, these could have been worn under other layers of clothing, creating an easy way to carry things that was obscured by skirts or aprons, but there's no requirement to hide your Lucy under a bushel (or a bustle). Make one in just about any fabric you like - Lucy looks great in that cute quilting cotton you couldn't resist, that scrap you love too much to throw away, or the textile that you're intimidated by but want to take for a test drive. A Lucy in sequins, velvet, or vinyl? Definitely cool. 😎
+[Lucy](https://en.wikipedia.org/wiki/Lucy_Locket) es un accesorio perfecto para la costurera de inspiración histórica, un bolsillo histórico que puedes atarte a la cintura, diseñado por SeaZeeZee. Tradicionalmente, podían llevarse bajo otras capas de ropa, creando una forma fácil de llevar cosas que quedaba oculta por las faldas o los delantales, pero no es necesario esconder a tu Lucy bajo un celemín (o un polisón). Lucy queda genial con ese bonito algodón para acolchar al que no pudiste resistirte, con ese retal que te gusta demasiado como para tirarlo o con el tejido que te intimida pero que quieres probar. ¿Una Lucy de lentejuelas, terciopelo o vinilo? Sin duda, genial. 😎
 
-[Discover Lucy on FreeSewing.org](https://freesewing.org/designs/lucy)
+[Descubre a Lucy en FreeSewing.org](https://freesewing.org/designs/lucy)
 
 ### Noble
 
-Hi isn't the only pattern release from Wouter Van Wageningen this quarter. For those looking to experiment with their own pattern drafting, Wouter has created the Noble block, a sleeveless prince(ss) seam block based on the Bella block pattern. Blocks are the basis for other patterns, so Noble doesn't have finishes or closures, but it makes a great, made-to-measure starting point for self-drafted patterns.
+Hola no es el único lanzamiento de patrones de Wouter Van Wageningen este trimestre. Para quienes deseen experimentar con su propio patrón de dibujo, Wouter ha creado el bloque Noble, un bloque de costura príncipe(s) sin mangas basado en el patrón del bloque Bella. Los bloques son la base de otros patrones, por lo que Noble no tiene acabados ni cierres, pero constituye un magnífico punto de partida a medida para patrones de elaboración propia.
 
-[Discover Noble on FreeSewing.org](https://freesewing.org/designs/noble)
+[Descubre a Noble en FreeSewing.org](https://freesewing.org/designs/noble)
 
 ### Unice
 
-Last but not least, first-time FreeSewing designer Anna Puk has released a new underwear pattern, Unice! Unice is a variation on Ursula, a basic, highly customizable underwear pattern. Trying to figure out whether to sew up Ursula or Unice? Unice was designed to accommodate a full rear, so it might be a good one to try if you find that undies in your size don't provide adequate coverage in the back, or if your jeans are always tighter across the seat than the thighs or waist. Or, even better, make them both! After all, you can never have too many undies. (And if you do, please hop into the [Discord](https://freesewing.org/community/where/discord/) or onto our social channels, @freesewing_org on Instagram and Twitter, and let us know how they work out for you!)
+Por último, pero no por ello menos importante, Anna Puk, diseñadora de FreeSewing por primera vez, ha publicado un nuevo patrón de ropa interior, ¡Unice! Unice es una variación de Ursula, un patrón básico de ropa interior muy personalizable. ¿Tratando de decidir si coser a Úrsula o a Unice? Unice se diseñó para acomodar un trasero completo, por lo que podría ser una buena opción si te parece que los calzoncillos de tu talla no proporcionan una cobertura adecuada en la espalda, o si tus vaqueros siempre te aprietan más en el asiento que en los muslos o la cintura. O, mejor aún, ¡haz los dos! Al fin y al cabo, nunca se tienen demasiados calzoncillos. (Y si lo haces, por favor, entra en el Discord [](https://freesewing.org/community/where/discord/) o en nuestros canales sociales, @freesewing_org en Instagram y Twitter, ¡y cuéntanos cómo te han funcionado!)
 
-[Discover Unice on FreeSewing.org](https://freesewing.org/designs/unice)
-
-&nbsp;
-
----
-
-&nbsp;
-
-## 🔨 Changes to our monorepo structure
-
-Big things are happening.
-
-There have been some changes in the monorepo structure. With the previous single yarn workspace in packages now split up in:
-- designs for designs
-- plugins for plugins
-- packages for NPM packages that are neither design nor plugin
-- sites for websites, backend code, our svg tiler and so on
-
-The monorepo has been stripped of the individual development environments for designs. Instead, all development on designs should now happen in the lab. There's a new command `yarn tips` that you can run that will give you a quick summary of how to work within our monorepo. And you can run `yarn lab` to start the lab from the root of the repo, or from any design or plugin folder.
-
-If you want to add a new design, run `yarn new design` and everything will be taken care of for you.
-
-The old stand-alone development environment (`npx create-freesewing-pattern`) is deprecated (ever since v2.21 running it will show a warning about that) but still available. Those who are looking for stand-alone development should try out the replacement that uses that same improved development environment as our monorepo. To launch it run: `npx @freesewing/new-design`
-
-Want a full list of what's new? Check out the [notes from the latest contributor call](https://github.com/freesewing/freesewing/discussions/2270).
+[Descubre Unice en FreeSewing.org](https://freesewing.org/designs/unice)
 
 &nbsp;
 
@@ -90,21 +66,45 @@ Want a full list of what's new? Check out the [notes from the latest contributor
 
 &nbsp;
 
-## 🚸 Honey, we shrunk FreeSewing: Adapting FreeSewing designs for kiddos
+## 🔨 Cambios en nuestra estructura monorepo
 
-First dolls, now children?! FreeSewing contributors seem intent on making mini versions of our designs.
+Están ocurriendo grandes cosas.
 
-We wanted to talk a moment to highlight some of the great projects folks are making for their kids and some of the lessons they've shared. Don't miss the photos in the [showcase](https://freesewing.org/showcase/).
+Se han producido algunos cambios en la estructura monorrepo. Con el anterior espacio de trabajo de hilo único en paquetes ahora dividido en:
+- diseños para diseños
+- plugins para plugins
+- paquetes para paquetes NPM que no son ni diseño ni plugin
+- sitios para sitios web, código backend, nuestro compilador de svg, etc.
 
-If you're interested in adapting a FreeSewing design for a young person, a few things to consider:
+El monorepo ha sido despojado de los entornos de desarrollo individuales para los diseños. En lugar de eso, todo el desarrollo de los diseños debe hacerse ahora en el laboratorio. Hay un nuevo comando `yarn tips` que puedes ejecutar y que te dará un resumen rápido de cómo trabajar dentro de nuestro monorepo. Y puedes ejecutar `yarn lab` para iniciar el laboratorio desde la raíz del repositorio, o desde cualquier carpeta de diseño o plugin.
 
-- **Make test garments!** Making a muslin is a good habit in general, and especially important when sewing for people whose measurements may not have been tested yet with a FreeSewing design as their proportions won't necessarily work smoothly the first time around. `comixminx` is the undisputed champion of Shin sewing trunks, having sewn several test pairs on the way to making wearable pairs for each of [her](https://freesewing.org/showcase/shin-swim-trunks-for-comixminxs-kid/) [kids](https://freesewing.org/showcase/more-shin-swim-shorts/).
-- **Consider trying out a block.** As evidenced in `Bob3000`'s adorable [chore coat](https://freesewing.org/showcase/bob3000-chore-coat/) for his kid, based on the Brian block, the basic shape of a block might be a good starting point to which you can add design elements.
-- **Use lots of ease when designing for toddlers.** `mathstitch` ended up drafting their own collared shirt and it turned out rather wonderfully. They shared some tips for anyone who might try to adapt an existing design in the future! They suggest adding heaps of ease because toddlers are so active and uncoordinated, tend to adopt unusual postures all the time like crouching and crawling, and some have big bellies and lots of puppy fat. 🐶 A short sleevecap is appropriate. If your kiddo is still in diapers, the shirt needs to flare at the hips to accommodate that, and you'll want to ensure the buttons end far enough up from the bottom of the shirt.
-- **Add adjustable elements to make garments fit for longer.** `Rowan` made a tiny [Albert apron](https://freesewing.org/showcase/a-tiny-albert-apron/) for their kid's birthday and added adjusters to the straps. Great idea to maximize the number of wears they can get out of this very cute accessory.
-- **Sew quickly.** `AMJ` reports having seen kids change sizes between fitting and sewing. 😀
+Si quieres añadir un nuevo diseño, ejecuta `hilar nuevo diseño` y todo se hará por ti.
 
-If you're trying out one of our designs with your kid, we hope you'll come chat about it in [Discord](https://discord.freesewing.org/).
+El antiguo entorno de desarrollo autónomo (`npx create-freesewing-pattern`) está obsoleto (desde la v2.21 al ejecutarlo aparecerá un aviso al respecto), pero sigue disponible. Los que busquen un desarrollo autónomo deberían probar el sustituto que utiliza el mismo entorno de desarrollo mejorado que nuestro monorrepo. Para iniciarlo ejecuta: `npx @freesewing/new-design`
+
+¿Quieres una lista completa de las novedades? Consulta las notas de [de la última convocatoria de contribuyentes](https://github.com/freesewing/freesewing/discussions/2270).
+
+&nbsp;
+
+---
+
+&nbsp;
+
+## 🚸 Cariño, hemos encogido FreeSewing: Adaptar diseños de FreeSewing para niños
+
+Primero las muñecas, ahora los niños? Los colaboradores de FreeSewing parecen empeñados en hacer mini versiones de nuestros diseños.
+
+Queríamos hablar un momento para destacar algunos de los grandes proyectos que la gente está haciendo para sus hijos y algunas de las lecciones que han compartido. No te pierdas las fotos en el escaparate [](https://freesewing.org/showcase/).
+
+Si te interesa adaptar un diseño de FreeSewing para un joven, debes tener en cuenta algunas cosas:
+
+- **¡Haz prendas de prueba!** Hacer una muselina es un buen hábito en general, y especialmente importante cuando se cose para personas cuyas medidas no se han probado aún con un diseño de FreeSewing, ya que sus proporciones no necesariamente funcionarán bien la primera vez. `comixminx` es la campeona indiscutible de los baúles de costura Shin, habiendo cosido varios pares de prueba de camino a hacer pares ponibles para cada uno de [sus](https://freesewing.org/showcase/shin-swim-trunks-for-comixminxs-kid/) [niños](https://freesewing.org/showcase/more-shin-swim-shorts/).
+- **Considera la posibilidad de probar con un bloque.** Como se aprecia en `Bob3000`'s adorable [chore coat](https://freesewing.org/showcase/bob3000-chore-coat/) para su hijo, basado en el bloque Brian, la forma básica de un bloque puede ser un buen punto de partida al que puedes añadir elementos de diseño.
+- **Utiliza mucha facilidad cuando diseñes para niños pequeños.** `mathstitch` acabaron diseñando su propia camisa con cuello y les quedó de maravilla. Compartieron algunos consejos para cualquiera que intente adaptar un diseño existente en el futuro. Sugieren añadir mucha facilidad porque los niños pequeños son muy activos y descoordinados, tienden a adoptar posturas inusuales todo el tiempo, como agacharse y gatear, y algunos tienen grandes barrigas y mucha grasa de cachorro. 🐶 Una gorra de manga corta es adecuada. Si tu hijo aún lleva pañales, la camisa debe ensancharse a la altura de las caderas para adaptarse a ello, y deberás asegurarte de que los botones terminan lo suficientemente arriba de la parte inferior de la camisa.
+- **Añade elementos ajustables para que las prendas duren más.** `Rowan` confeccionó un diminuto delantal [Albert](https://freesewing.org/showcase/a-tiny-albert-apron/) para el cumpleaños de su hijo y añadió ajustadores a los tirantes. Gran idea para maximizar el número de usos que pueden sacarle a este accesorio tan mono.
+- **Cose rápido.** `AMJ` dice haber visto a niños cambiar de talla entre la prueba y la costura. 😀
+
+Si estás probando uno de nuestros diseños con tu hijo, esperamos que vengas a charlar sobre él en [Discord](https://discord.freesewing.org/).
 
 &nbsp;
 
@@ -114,97 +114,9 @@ If you're trying out one of our designs with your kid, we hope you'll come chat 
 
 ## 👨‍💻 FreeSewing *afk*
 
-FreeSewing is going outside! FreeSewing will be part of the [May Contain Hackers](https://mch2022.org/) camp as a short talk by Lexander. Mark your calendar for July 24th, 09:40 PM CEST; it can be followed with a livestream.
+¡FreeSewing sale al exterior! FreeSewing formará parte del campamento [May Contain Hackers](https://mch2022.org/) como una breve charla de Lexander. Marca en tu calendario el 24 de julio a las 09:40 PM CEST; se podrá seguir con un livestream.
 
-Lexander will describe about what FreeSewing is, Joost’s (and other volunteers’) motivations behind it, a bit about the tech, and why it’s important for fashion and clothing as a whole. More info is in the full description [on the event’s site](https://program.mch2022.org/mch2021-2020/talk/M9JWKM/).
-
-&nbsp;
-
----
-
-&nbsp;
-
-## 🕵️ Behind the Seams: Starfetcher
-
-### How did you learn about FreeSewing?
-
-I can't quite remember, but I think I was searching for sewing patterns one day and had the glorious insight to use "open source sewing pattern" as a keyword. The search engine did its job.
-
-### How did you become a contributor?
-
-While reading the developer docs I found a few typos and decided to correct them, while starting on translations I found some more, and suddenly I was a contributor. Joining the contributor calls was the next logical step, and I haven't looked back since.
-
-### What has been your contributor work so far?
-
-Apart from fixing typos and broken links, I sporadically do some translation work and have coded three historically inspired patterns: Lunetius, Tiberius and Walburga.
-
-### Are you a sewist? A coder? Both? Neither?
-
-Both, and it depends on my mood what I like to do more.
-
-### When and why did you start sewing?
-
-As a child, my mother taught me the basics, but it wasn't until my late teens that I started to take it seriously when I decided to sew my own costume for my birthday party (my birthday parties were and still are always costume parties). I did lots of mistakes (like finishing the edges before sewing the parts together), but I was (and still am) incredibly proud of it. Then I took a break from sewing again, but rediscovered it in my middle tweens when I got back into cosplay.
-
-### What is your daily job, outside of FreeSewing?
-
-Right now I'm doing my PhD in experimental physics, so I have a good mixture of hands-on work at the machine and cursing a lot at the computer at 11PM.
-
-### What are you currently working on?
-
-Currently I'm working on making foam armour to complement the fabric parts of my costume (consisting of Lunetius, Tiberius and Walburga, of course). It's a new technique for me so it's lots of fun to play around with.
-
-### Which project did you just finish?
-
-I just finished coding and sewing Pythia the paenula, my upcoming FreeSewing pattern for another type of historically inspired cloak. Now I'm procrastinating on hunting down the last bugs.
-
-### What sewing/coding project are you most proud of?
-
-On the sewing side, I'm still very proud of the first costume I sew by myself, but the trickiest one so far is the Sailor Fuku I made a few years back. Oh, and the Victorian shirt with lots of pleating on the front, where I also had to adjust the sizing of basically everything (an experience that ultimately led me to FreeSewing). Coding-wise, that's probably a work-related thing where I made some nice graphical representations with Python and LaTeX.
-
-### What in your life are you most proud of?
-
-That's a hard question! Probably all the combined experiences that taught me everything I know today.
-
-### What do you love the most about sewing?
-
-The magical feeling when you finish something and you put it on and it's just perfect.
-
-### What do you hate the most about sewing?
-
-The sinking feeling when you finish something and you realise something went wrong and your immediate future probably involves the thread picker or the cutting mat if you're unlucky. Oh, and hemming skirts, especially hemming two combined full circle skirts because you wanted the volume at 2AM.
-
-### What’s the hardest part of sewing to you?
-
-Laying out pattern pieces with the correct grainline and cutting things out without forgetting the seam allowance.
-
-### What would be your advice for starting sewists?
-
-Just dive right in! Don't be afraid to make mistakes and don't be afraid to ask for help, but just try.
-
-### Do you sew mostly for yourself, or for others like friends and family?
-
-Mostly just for me, though I tried to sew something as a present a few times - so far I never finished any.
-
-### What are you up to when you’re not making clothes or designing patterns? - Would you like to share ways to follow you on social media?
-
-I like table top roleplaying games (DSA, Cthulhu, ...), video games, reading, photography, fencing and archery (still an amateur, mind). I'm also responsible for directing the acting portion of my old schools musical group. No social media for me.
-
-### Do you have pets? Family?
-
-Sadly no pets, although my SO has a cute dog. I'm pretty close to my parents.
-
-### Are you a dog person or a cat person?
-
-Both! Though if I were forced to choose, I'd pick... a penguin.
-
-### If there was one thing you could take with you to an uninhabited island, what would it be? Why?
-
-Apart from things like water and food and a knife? Probably my ebook reader, upgraded with solar cells, and loaded to the brim with books for entertainment and survival.
-
-### If there was one person you could take with you to an uninhabited island, who would it be? Why?
-
-That's tricky! If it's voluntary, my SO, but they'd have hard time without electricity and other perks of civilization. If it's not voluntary, someone who increases my chances of survival, like a really strong doctor.
+Lexander describirá qué es FreeSewing, las motivaciones de Joost (y otros voluntarios), un poco sobre la tecnología y por qué es importante para la moda y la ropa en general. Más información en la descripción completa [en el sitio del evento](https://program.mch2022.org/mch2021-2020/talk/M9JWKM/).
 
 &nbsp;
 
@@ -212,18 +124,106 @@ That's tricky! If it's voluntary, my SO, but they'd have hard time without elect
 
 &nbsp;
 
-## 💰 Should we be down because FreeSewing's revenue is down?
+## 🕵️ Tras las costuras: Starfetcher
 
-I'm going to assume you're familiar with [FreeSewing's revenue pledge](https://freesewing.org/docs/various/pledge/)? If not, go ahead and read it. I'll wait.
+### ¿Cómo conociste FreeSewing?
 
-Over the first 6 months of 2022, FreeSewing's revenue was 25% lower than the (average) revenue of 2021.
+No lo recuerdo bien, pero creo que un día estaba buscando patrones de costura y tuve la gloriosa idea de utilizar "patrón de costura de código abierto" como palabra clave. El motor de búsqueda hizo su trabajo.
 
-This is not entirely unexpected. There was an influx of new patrons during the Covid pandemic, and we are now on the down-slope of that wave. Many patrons who discovered FreeSewing because of our facemask pattern are now leaving us because they don't see the point in extending their support. Others are feeling the cost-of-living crisis and have either lowered their contributions or cancelled them altogether.
+### ¿Cómo te convertiste en colaborador?
 
-I am truly appreciative of all these contributions, but seeing patrons leave does tend to make me wonder whether we have a problem? I personally don't think so. But I'm not a 100% certain about that either. And on the bad days, it certainly feeds into my doubts about... well, everything really.
+Mientras leía la documentación para desarrolladores encontré algunas erratas y decidí corregirlas, al empezar con las traducciones encontré algunas más, y de repente me convertí en colaborador. Unirme a las convocatorias de colaboradores era el siguiente paso lógico, y desde entonces no he mirado atrás.
 
-There are many different metrics you could point to that show FreeSewing is thriving. Whether it's the number of designs we have available, the size and activity of the community, or something as easy to measure as number of commits.
+### ¿Cuál ha sido tu trabajo como colaborador hasta ahora?
 
-Yet still...
+Aparte de arreglar erratas y enlaces rotos, esporádicamente hago algún trabajo de traducción y he codificado tres patrones de inspiración histórica: Lunecio, Tiberio y Walburga.
 
-After mulling it for a while, I figured the best thing to do is just be transparent about what's going on: FreeSewing is doing fine, but we are seeing less financial support than we used to. Revenue will be lower this year, from the looks of things by at least 25%.
+### ¿Eres costurera? ¿Un programador? ¿Ambos? ¿Ninguno de los dos?
+
+Ambas cosas, y depende de mi estado de ánimo lo que me guste más hacer.
+
+### ¿Cuándo y por qué empezaste a coser?
+
+De niña, mi madre me enseñó lo básico, pero no fue hasta el final de mi adolescencia cuando empecé a tomármelo en serio cuando decidí coser mi propio disfraz para mi fiesta de cumpleaños (mis fiestas de cumpleaños eran y siguen siendo siempre fiestas de disfraces). Cometí muchos errores (como rematar los bordes antes de coser las piezas), pero estaba (y sigo estando) increíblemente orgullosa de ello. Luego me tomé un descanso de la costura, pero la redescubrí en la adolescencia, cuando volví a hacer cosplay.
+
+### ¿Cuál es tu trabajo diario, fuera de FreeSewing?
+
+Ahora mismo estoy haciendo mi doctorado en física experimental, así que tengo una buena mezcla de trabajo práctico en la máquina y de maldecir mucho al ordenador a las 11 de la noche.
+
+### ¿En qué estás trabajando actualmente?
+
+Actualmente estoy trabajando en la confección de una armadura de espuma para complementar las partes de tela de mi traje (compuesto por Lunecio, Tiberio y Walburga, por supuesto). Es una técnica nueva para mí, así que es muy divertido jugar con ella.
+
+### ¿Qué proyecto acabas de terminar?
+
+Acabo de terminar de codificar y coser Pythia la paenula, mi próximo patrón de FreeSewing para otro tipo de capa de inspiración histórica. Ahora estoy procrastinando la caza de los últimos bichos.
+
+### ¿De qué proyecto de costura/codificación estás más orgullosa?
+
+En cuanto a la costura, sigo estando muy orgullosa del primer disfraz que cosí yo sola, pero el más complicado hasta ahora es el de Sailor Fuku que hice hace unos años. Ah, y la camisa victoriana con muchos pliegues en la parte delantera, en la que también tuve que ajustar el tallaje de básicamente todo (una experiencia que finalmente me llevó a FreeSewing). En cuanto a la codificación, probablemente se trate de algo relacionado con el trabajo, en el que realicé algunas bonitas representaciones gráficas con Python y LaTeX.
+
+### ¿De qué aspecto de tu vida estás más orgulloso?
+
+Es una pregunta difícil. Probablemente todas las experiencias combinadas que me enseñaron todo lo que sé hoy.
+
+### ¿Qué es lo que más te gusta de la costura?
+
+La sensación mágica cuando terminas algo y te lo pones y es simplemente perfecto.
+
+### ¿Qué es lo que más odias de la costura?
+
+La sensación de hundimiento cuando terminas algo y te das cuenta de que algo ha salido mal y tu futuro inmediato probablemente pase por el recogedor de hilos o la alfombrilla de corte si tienes mala suerte. Ah, y el dobladillo de las faldas, sobre todo el dobladillo de dos faldas de círculo completo combinadas porque querías volumen a las 2 de la madrugada.
+
+### ¿Qué es para ti lo más difícil de coser?
+
+Colocar las piezas del patrón con la línea de grano correcta y cortarlas sin olvidar el margen de costura.
+
+### ¿Cuál sería tu consejo para los costureros principiantes?
+
+¡Sumérgete de lleno! No tengas miedo de cometer errores y no tengas miedo de pedir ayuda, pero inténtalo.
+
+### ¿Coses sobre todo para ti o para otras personas, como amigos y familiares?
+
+Sobre todo para mí, aunque algunas veces he intentado coser algo para regalar, pero nunca he terminado nada.
+
+### ¿Qué haces cuando no estás haciendo ropa o diseñando patrones? - ¿Quieres compartir formas de seguirte en las redes sociales?
+
+Me gustan los juegos de rol de mesa (DSA, Cthulhu, ...), los videojuegos, la lectura, la fotografía, la esgrima y el tiro con arco (aún soy aficionado, eso sí). También soy responsable de dirigir la parte de interpretación del grupo musical de mi antigua escuela. Nada de redes sociales para mí.
+
+### ¿Tienes animales de compañía? ¿Familia?
+
+Lamentablemente no tengo mascotas, aunque mi SO tiene un perro muy mono. Estoy muy unida a mis padres.
+
+### ¿Te gustan los perros o los gatos?
+
+Ambas cosas. Aunque si tuviera que elegir, elegiría... un pingüino.
+
+### Si hubiera una cosa que pudieras llevarte a una isla deshabitada, ¿qué sería? ¿Por qué?
+
+¿Aparte de cosas como agua, comida y un cuchillo? Probablemente mi lector de libros electrónicos, mejorado con células solares y cargado hasta los topes con libros de entretenimiento y supervivencia.
+
+### Si hubiera una persona que pudieras llevarte a una isla deshabitada, ¿quién sería? ¿Por qué?
+
+Eso es complicado. Si es voluntario, mi SO, pero lo pasarían mal sin electricidad y otras ventajas de la civilización. Si no es voluntario, alguien que aumente mis posibilidades de supervivencia, como un médico muy fuerte.
+
+&nbsp;
+
+---
+
+&nbsp;
+
+## 💰 ¿Deberíamos estar de bajón porque los ingresos de FreeSewing han bajado?
+
+Voy a suponer que conoces el compromiso de ingresos de [FreeSewing](https://freesewing.org/docs/various/pledge/)? Si no, adelante, léelo. Esperaré.
+
+Durante los 6 primeros meses de 2022, los ingresos de FreeSewing fueron un 25% inferiores a los ingresos (medios) de 2021.
+
+Esto no es del todo inesperado. Hubo una afluencia de nuevos clientes durante la pandemia de Covid, y ahora estamos en la pendiente descendente de esa ola. Muchos mecenas que descubrieron FreeSewing gracias a nuestro patrón de máscaras faciales nos abandonan ahora porque no ven sentido a prolongar su apoyo. Otros están sintiendo la crisis del coste de la vida y han reducido sus cotizaciones o las han cancelado por completo.
+
+Agradezco sinceramente todas estas aportaciones, pero ver que los mecenas se marchan me hace preguntarme si tenemos un problema... Personalmente no lo creo. Pero tampoco estoy seguro al 100%. Y en los días malos, ciertamente alimenta mis dudas sobre... bueno, sobre todo en realidad.
+
+Hay muchas métricas diferentes que podrías señalar para demostrar que FreeSewing está prosperando. Ya sea el número de diseños que tenemos disponibles, el tamaño y la actividad de la comunidad, o algo tan fácil de medir como el número de commits.
+
+Aun así...
+
+Después de meditarlo un rato, he pensado que lo mejor es ser transparente sobre lo que está pasando: FreeSewing va bien, pero estamos recibiendo menos apoyo financiero que antes. Los ingresos serán inferiores este año, por lo que parece, al menos en un 25%.
