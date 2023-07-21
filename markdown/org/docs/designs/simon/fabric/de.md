@@ -1,5 +1,5 @@
 ---
-title: "Simon shirt: Fabric Options"
+title: "Simon Hemd: Stoff Optionen"
 ---
 
 Jeder Stoff-Shop, der Ihr Geschäft wert ist, sollte eine Shirt-Sektion haben. Du kannst einfach hingehen, fragen, wo du das Hemd findest, und etwas auswählen, was dir gefällt.
