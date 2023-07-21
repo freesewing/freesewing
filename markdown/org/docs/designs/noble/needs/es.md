@@ -1,19 +1,19 @@
 ---
-title: "Noble body block: What You Need"
+title: "Bloque de carrocería noble: Lo que necesitas"
 ---
 
-To make Noble, you will need the following:
+Para hacer Noble, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- About 0.5 metres (0.6 yards) of a suitable fabric ([see Noble Fabric options](/docs/patterns/noble/fabric/))
+- Unos 0,5 metros (0,6 yardas) de una tela adecuada ([ver opciones de telas nobles](/docs/patterns/noble/fabric/))
 
-This list is for a default Noble Block. If you have/are making changes to the block you may need to get additional items such as closures, binding etc.
+Esta lista es para un Bloque Noble por defecto. Si has hecho o vas a hacer cambios en el bloque, puede que tengas que conseguir elementos adicionales como cierres, encuadernación, etc.
 
 <Note>
 
-###### Noble is a block, not a pattern
+###### Noble es un bloque, no un patrón
 
-A block is a basic shape on which other patterns are based.
+Un bloque es una forma básica en la que se basan otros patrones.
 A veces también se llaman trampas, aunque los puristas argumentarán que un bloque y una inclinación son cosas diferentes.
 
 Los bloques normalmente no se hacen as-is sino que sirven como base para otros patrones.
