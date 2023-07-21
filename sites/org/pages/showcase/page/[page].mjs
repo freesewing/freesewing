@@ -58,6 +58,12 @@ const Posts = ({ posts }) => {
   )
 }
 
+/*
+ * Each page MUST be wrapped in the PageWrapper component.
+ * You also MUST spread props.page into this wrapper component
+ * when path and locale come from static props (as here)
+ * or set them manually.
+ */
 const ShowcaseIndexPage = ({ posts, page, current, total }) => {
   const { t } = useTranslation()
 
@@ -74,9 +80,20 @@ const ShowcaseIndexPage = ({ posts, page, current, total }) => {
 
 export default ShowcaseIndexPage
 
+/*
+ * getStaticProps() is used to fetch data at build-time.
+ *
+ * On this page, it fetches data for the showcases to be linked to on this page
+ *
+ * This, in combination with getStaticPaths() below means this
+ * page will be used to link to all showcases.
+ *
+ * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
+ */
 export async function getStaticProps({ locale, params }) {
   const props = getPostIndexProps(locale, params, order, postInfo)
 
+  // if there shouldn't be a page with these params, return 404
   if (props === false) return { notFound: true }
 
   return {
@@ -92,6 +109,21 @@ export async function getStaticProps({ locale, params }) {
   }
 }
 
+/*
+ * getStaticPaths() is used to specify for which routes (think URLs)
+ * this page should be used to generate the result.
+ *
+ * On this page, it is returning a truncated list of routes (think URLs) for pages that list and link to
+ * the mdx showcase (markdown) content.
+ * That list comes from prebuild/showcase-paths.mjs, which is built in the prebuild step
+ * and contains paths, titles, imageUrls, and intro for all showcase posts.
+ *
+ * the fallback: 'blocking' property means that
+ * any pages that haven't been pre-generated
+ * will generate and cache the first time someone visits them
+ *
+ * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
+ */
 export const getStaticPaths = async () => {
   return {
     paths: getPostIndexPaths(order, 'showcase'),
