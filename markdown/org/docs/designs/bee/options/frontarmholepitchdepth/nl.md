@@ -1,10 +1,10 @@
 ---
-title: "Front armhole pitch depth (Bella)"
+title: "Diepte armsgat voor (Bella)"
 ---
 
 ***
 
-Controls the front armhole pitch depth in the underlying Bella block Bee is based on
+Regelt de steekdiepte van het voorste armsgat in het onderliggende Bella-blok Bee is gebaseerd op
 
 ## Effect van deze optie op het patroon
 
