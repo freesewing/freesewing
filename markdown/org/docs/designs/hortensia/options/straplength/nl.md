@@ -6,7 +6,7 @@ Bepaalt de lengte van de band.
 
 <Tip>
 
-Turn on paperless to see the length of the strap.
+Zet papierloos aan om de lengte van de riem te zien.
 
 </Tip>
 
