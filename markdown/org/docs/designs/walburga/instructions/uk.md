@@ -1,5 +1,5 @@
 ---
-title: "Walburga Wappenrock: Sewing Instructions"
+title: "Вальбурга Ваппенрок: Інструкція з пошиття"
 ---
 
 <Note>
