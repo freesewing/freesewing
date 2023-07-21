@@ -1,5 +1,5 @@
 ---
-title: "Bruce boxer briefs: Fabric Options"
+title: "Bruce boxerslip: Stof opties"
 ---
 
 Je hebt een elastische stof nodig voor dit patroon. Liefst iets dat comfortabel is en zacht aanvoelt, en de huid laat ademen.
