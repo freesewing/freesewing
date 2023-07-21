@@ -2,7 +2,7 @@
 title: "Bonus lengte"
 ---
 
-Allows variation of the length of the garment
+Maakt variatie in de lengte van het kledingstuk mogelijk
 
 ## Effect van deze optie op het patroon
 
