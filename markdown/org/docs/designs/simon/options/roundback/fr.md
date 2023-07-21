@@ -2,10 +2,10 @@
 title: "Arrondi arrière"
 ---
 
-Controls how round the back yoke seam is by adding length to the center back at the yoke that tapers of towards the sides.
+Contrôle la rondeur de la couture de l'empiècement arrière en ajoutant une longueur au centre du dos au niveau de l'empiècement qui se rétrécit vers les côtés.
 
-- Increase this option to round the back yoke seam
-- Decrease this option to straighten the back yoke seam
+- Augmente cette option pour arrondir la couture de l'empiècement arrière.
+- Diminue cette option pour redresser la couture de l'empiècement arrière.
 
 ## Effet de cette option sur le motif
 
