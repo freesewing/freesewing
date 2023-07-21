@@ -1,5 +1,5 @@
 ---
-title: "Diana draped top: Sewing Instructions"
+title: "Diana drapiertes Oberteil: Anleitung zum Nähen"
 ---
 
 ### Schritt 1: Versäubern der Nackennaht
