@@ -6,3 +6,18 @@ export const header = `/*
  * Any changes you make to it will be lost on the next (pre)build.
  */
 `
+
+export const loadTranslations = async ({ namespaces = [], languages = [], site }) => {
+  const translations = {}
+  for (const lang of languages) {
+    translations[lang] = {}
+    for (const ns of namespaces) {
+      const t = await import(`../../${site}/public/locales/${lang}/${ns}.json`, {
+        assert: { type: 'json' },
+      })
+      translations[lang][ns] = t.default
+    }
+  }
+
+  return translations
+}
