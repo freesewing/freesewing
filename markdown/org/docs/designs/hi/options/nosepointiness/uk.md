@@ -2,7 +2,7 @@
 title: "Гострота носа"
 ---
 
-The shark can be made with a more blunt, or sharper nose, depending on your preference.
+Акулу можна зробити з більш тупим або більш гострим носом, залежно від ваших уподобань.
 
 ## Вплив цієї опції на шаблон
 
