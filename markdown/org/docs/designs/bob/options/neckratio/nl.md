@@ -1,11 +1,11 @@
 ---
-title: Neck ratio
+title: Nekverhouding
 ---
 
-Controls the size of the neck opening relative to the bib size. The bib size is determined by [head size](/docs/patterns/bob/options/headsize), this option controls how much to reduce the head size by to determine the circumference and width of the neck opening.
+Bepaalt de grootte van de halsopening ten opzichte van de slabmaat. De slabmaat wordt bepaald door [hoofdmaat](/docs/patterns/bob/options/headsize), deze optie bepaalt hoeveel de hoofdmaat moet worden verkleind om de omtrek en breedte van de halsopening te bepalen.
 
-- Increase the percentage to widen the neck opening.
-- Decrease the percentage to constrict the neck opening.
+- Verhoog het percentage om de halsopening wijder te maken.
+- Verlaag het percentage om de halsopening te vernauwen.
 
 ## Effect van deze optie op het patroon
 
