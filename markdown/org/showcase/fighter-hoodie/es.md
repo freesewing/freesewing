@@ -1,28 +1,28 @@
 ---
-maker: "unknown"
-caption: "Anne's husband Sigvard is a trainer at <a target='_BLANK' href='http://fighter.org/'>the local kick boxing club</a>. Hence the name <em>fighter hoodie</em>"
+maker: "desconocido"
+caption: "Sigvard, el marido de Ana, es entrenador en <a target='_BLANK' href='http://fighter.org/'>, el club local de kick boxing</a>. De ahí el nombre <em>fighter hoodie</em>"
 date: "2017-11-20"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8f0b0ca919900145250b0af08401775198623eda-1001x1500.jpg"
-intro: "The fighter hoodie: Hugo with a zip"
-title: "The fighter hoodie: Hugo with a zip"
+intro: "La sudadera con capucha luchadora: Hugo con cremallera"
+title: "La sudadera con capucha luchadora: Hugo con cremallera"
 designs:
   - "hugo"
 ---
 
-![Another view](https://posts.freesewing.org/uploads/fighter_hoodie_1_69359b6e7d.jpg "Another view")
+![Otro punto de vista](https://posts.freesewing.org/uploads/fighter_hoodie_1_69359b6e7d.jpg "Otro punto de vista")
 
-![Another view](https://posts.freesewing.org/uploads/fighter_hoodie_2_c74c303646.jpg)
+![Otro punto de vista](https://posts.freesewing.org/uploads/fighter_hoodie_2_c74c303646.jpg)
 
-![Another view](https://posts.freesewing.org/uploads/fighter_hoodie_3_f8766d848b.jpg)
+![Otro punto de vista](https://posts.freesewing.org/uploads/fighter_hoodie_3_f8766d848b.jpg)
 
-![Another view](https://posts.freesewing.org/uploads/fighter_hoodie_4_881e549c9b.jpg)
+![Otro punto de vista](https://posts.freesewing.org/uploads/fighter_hoodie_4_881e549c9b.jpg)
 
 <Note>
 
-###### See the original on [@Topstitched](/users/Topstitched)'s blog
-These picture are from the [Back again with the fighter hoodie](http://www.topstitched.net/?p=1431) 
-blog post on [topstitched.net](http://www.topstitched.net/).
+###### Ver el original en el blog de [@Topstitched](/usuarios/Topstitched)
+Estas fotos son del blog [Back again with the fighter hoodie](http://www.topstitched.net/?p=1431) 
+en [topstitched.net](http://www.topstitched.net/).
 
-They are reposted here with permission.
+Se publican aquí con permiso.
 
 </Note>
