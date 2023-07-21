@@ -2,7 +2,7 @@
 title: "Chevauchement avant"
 ---
 
-How far the fabric extends beyond the button closure.
+Jusqu'où le tissu s'étend au-delà de la fermeture à boutons.
 
 ## Effet de cette option sur le motif
 
