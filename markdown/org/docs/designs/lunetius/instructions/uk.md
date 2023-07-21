@@ -1,5 +1,5 @@
 ---
-title: "Lunetius Lacerna: Sewing Instructions"
+title: "Lunetius Lacerna: інструкція з пошиття"
 ---
 
 <Note>
