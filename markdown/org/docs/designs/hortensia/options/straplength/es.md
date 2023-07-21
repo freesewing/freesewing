@@ -6,7 +6,7 @@ Controla la longitud de la correa.
 
 <Tip>
 
-Turn on paperless to see the length of the strap.
+Activa el sin papel para ver la longitud de la correa.
 
 </Tip>
 
