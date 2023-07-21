@@ -2587,10 +2587,10 @@
   dependencies:
     glob "7.1.7"
 
-"@next/mdx@13.4.10":
-  version "13.4.10"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-13.4.10.tgz#68e6f4f670d5fbd249cbc6edd0087178a886085c"
-  integrity sha512-0ZbUIr3yuFFfkaYth2kNFAT0fbyylJTMqZy5zTdb7YGqvYjKFD8n75L3UYAX0g5mibGp3iETJ0I7730sW13PKQ==
+"@next/mdx@13.4.11":
+  version "13.4.11"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-13.4.11.tgz#91a1bc736b358f0f411369cc7f810c763aa9871b"
+  integrity sha512-XD95wB2RH547lKWkFbZQ8OnFV2cTxHr/+pcYP8loPchFOR/zt008MmPcxAg1cyK+6XZcJhX9ZRw1AqLq7qLKzQ==
   dependencies:
     source-map "^0.7.0"
 
@@ -14664,18 +14664,18 @@ optionator@^0.9.3:
     prelude-ls "^1.2.1"
     type-check "^0.4.0"
 
-ora@6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/ora/-/ora-6.1.0.tgz#86aa07058c4e9fb91444412d103b0d7e01aca973"
-  integrity sha512-CxEP6845hLK+NHFWZ+LplGO4zfw4QSfxTlqMfvlJ988GoiUeZDMzCvqsZkFHv69sPICmJH1MDxZoQFOKXerAVw==
+ora@6.3.1:
+  version "6.3.1"
+  resolved "https://registry.yarnpkg.com/ora/-/ora-6.3.1.tgz#a4e9e5c2cf5ee73c259e8b410273e706a2ad3ed6"
+  integrity sha512-ERAyNnZOfqM+Ao3RAvIXkYh5joP220yf59gVe2X/cI6SiCxIdi4c9HZKZD8R6q/RDXEje1THBju6iExiSsgJaQ==
   dependencies:
-    bl "^5.0.0"
     chalk "^5.0.0"
     cli-cursor "^4.0.0"
     cli-spinners "^2.6.1"
     is-interactive "^2.0.0"
     is-unicode-supported "^1.1.0"
     log-symbols "^5.1.0"
+    stdin-discarder "^0.1.0"
     strip-ansi "^7.0.1"
     wcwidth "^1.0.1"
 
@@ -14692,21 +14692,6 @@ ora@^5.1.0, ora@^5.4.1:
     is-unicode-supported "^0.1.0"
     log-symbols "^4.1.0"
     strip-ansi "^6.0.0"
-    wcwidth "^1.0.1"
-
-ora@^6.3.1:
-  version "6.3.1"
-  resolved "https://registry.yarnpkg.com/ora/-/ora-6.3.1.tgz#a4e9e5c2cf5ee73c259e8b410273e706a2ad3ed6"
-  integrity sha512-ERAyNnZOfqM+Ao3RAvIXkYh5joP220yf59gVe2X/cI6SiCxIdi4c9HZKZD8R6q/RDXEje1THBju6iExiSsgJaQ==
-  dependencies:
-    chalk "^5.0.0"
-    cli-cursor "^4.0.0"
-    cli-spinners "^2.6.1"
-    is-interactive "^2.0.0"
-    is-unicode-supported "^1.1.0"
-    log-symbols "^5.1.0"
-    stdin-discarder "^0.1.0"
-    strip-ansi "^7.0.1"
     wcwidth "^1.0.1"
 
 org-regex@^1.0.0:
