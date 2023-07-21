@@ -2,7 +2,7 @@
 title: "Longueur de la pince de taille"
 ---
 
-The length of the back waist dart.
+La longueur de la fente de la taille au dos.
 
 ## Effet de cette option sur le motif
 
