@@ -4,8 +4,8 @@ title: "Contour"
 
 Bepaalt in hoeverre de extra ruimte voor borsten onder de buste verwijderd wordt.
 
-- Increase this option to sharpen the curve below the bust darts
-- Decrease this option to loosen the curve below the bust darts
+- Verhoog deze optie om de ronding onder de bustes scherper te maken
+- Verlaag deze optie om de ronding onder de buste-darts losser te maken
 
 ## Effect van deze optie op het patroon
 
