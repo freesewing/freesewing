@@ -1,139 +1,139 @@
 ---
 author: "joostdecock"
-caption: "They said I was crazy to make a zebra jacket, so I made it anyway. And it sank into the swamp."
+caption: "Dijeron que estaba loca por hacer una chaqueta de cebra, así que la hice de todos modos. Y se hundió en el pantano."
 date: "2017-09-04"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/35dda6f4c8ec6f2689e2741cc49cf178e4a39474-3300x2200.jpg"
-intro: "For the uninitiated, the refashioners is a yearly event/competition hosted by the charming (and very persuasive) Portia Lawrie ."
-title: "The Refashioners 2017 - Now with a Blake Blazer preview and 100% more zebra"
+intro: "Para los no iniciados, el refashioners es un evento/concurso anual organizado por la encantadora (y muy persuasiva) Portia Lawrie ."
+title: "The Refashioners 2017 - Ahora con un avance de Blake Blazer y 100% más cebra"
 ---
 
-For the uninitiated, the refashioners is a yearly event/competition hosted by the charming (and very persuasive) [Portia Lawrie](http://www.makery.uk/).
+Para los no iniciados, el refashioners es un evento/concurso anual organizado por la encantadora (y muy persuasiva) [Portia Lawrie](http://www.makery.uk/).
 
-Its focus is on giving old, unworn, or unloved garments a new lease on life through the art of refashioning.
+Su objetivo es dar una nueva vida a las prendas viejas, sin usar o sin querer, mediante el arte de la moda.
 
-This bonanza of garment Frankensteining kicks of with a series of *hors-comp&eacute;tition*  makes, aimed at getting the creative juices flowing. And [just like last year](http://www.makery.uk/2016/08/the-refashioners-2016-joost/), I got asked to be one of those *warm-up acts*.
+Esta bonanza de Frankensteining de prendas de vestir comienza con una serie de *hors-comp&eacute;tition*  hace, con el objetivo de conseguir los jugos creativos que fluyen. Y [al igual que el año pasado](http://www.makery.uk/2016/08/the-refashioners-2016-joost/), me pidieron que fuera uno de esos *actos de calentamiento*.
 
-Before I talk a bit about how it went, here's some pictures of what I made:
+Antes de hablar un poco de cómo me fue, aquí tienes algunas fotos de lo que hice:
 
-![Yup, defenitely a zebra jacket](https://posts.freesewing.org/uploads/zebra1_f856635d39.jpg)
+![Sí, definitivamente una chaqueta de cebra](https://posts.freesewing.org/uploads/zebra1_f856635d39.jpg)
 
-![A view of the back](https://posts.freesewing.org/uploads/zebra2_c1df8979c5.jpg)
+![Una vista de la parte trasera](https://posts.freesewing.org/uploads/zebra2_c1df8979c5.jpg)
 
-![Stripe matching with sleevecap ease is tricky](https://posts.freesewing.org/uploads/zebra3_db4d55ad19.jpg)
+![Hacer coincidir las rayas con la soltura de la solapa de la manga es complicado](https://posts.freesewing.org/uploads/zebra3_db4d55ad19.jpg)
 
-![A look at the insanity that lies beneath](https://posts.freesewing.org/uploads/zebra4_154c70b269.jpg)
+![Una mirada a la locura que subyace](https://posts.freesewing.org/uploads/zebra4_154c70b269.jpg)
 
-![Recycled buttons](https://posts.freesewing.org/uploads/zebra5_139563ceb2.jpg)
+![Botones reciclados](https://posts.freesewing.org/uploads/zebra5_139563ceb2.jpg)
 
-![I case you missed it, this jacket comes with patch pocket](https://posts.freesewing.org/uploads/zebra6_34df45c31e.jpg)
+![Por si te lo has perdido, esta chaqueta viene con bolsillo de parche](https://posts.freesewing.org/uploads/zebra6_34df45c31e.jpg)
 
-## The male romper lobby
-Last year, the theme was jeans, this year it's suits. And from the moment I shared that snippet of info with a handful of friends, they've conspiring to get me to make a male romper.
+## El vestíbulo masculino
+El año pasado, el tema fueron los vaqueros, este año son los trajes. Y desde el momento en que compartí ese fragmento de información con un puñado de amigos, han conspirado para que haga un pelele masculino.
 
-![Sorcha trying to get me to make a romper](https://posts.freesewing.org/uploads/romper_chat_6cf0df4477.png)
+![Sorcha intentando que me haga un pelele](https://posts.freesewing.org/uploads/romper_chat_6cf0df4477.png)
 
-![Anneke trying to help by sketching a romper for me](https://posts.freesewing.org/uploads/romper_sketch_09c8005525.jpg)
+![Anneke intenta ayudarme esbozando un pelele para mí](https://posts.freesewing.org/uploads/romper_sketch_09c8005525.jpg)
 
-With friends like that, who needs enemies.
+Con amigos así, quién necesita enemigos.
 
-## How I got to zebra
+## Cómo llegué a cebra
 
-The first thing I did was limit my options. Too much choice tends to paralize.
+Lo primero que hice fue limitar mis opciones. Demasiadas opciones tienden a paralizar.
 
-I decided to not only respect the suit theme with regards to the source material, but also concerning the techniques involved. Making a suit, and especially jacket construction, is a fine art and I wanted that to be part of my project.
+Decidí no sólo respetar el tema del traje con respecto al material de origen, sino también en lo relativo a las técnicas empleadas. Confeccionar un traje, y especialmente la construcción de la chaqueta, es todo un arte y quería que eso formara parte de mi proyecto.
 
-So, no messenger bags or (dare I say it) shoes out of recycled suits, I wanted to make a jacket.
+Así que, nada de bolsas de mensajero o (me atrevería a decir) zapatos de trajes reciclados, quería hacer una chaqueta.
 
-The problem is that suits are rather challenging to refashion. There's just not a lot of large pieces of pristine fabric to work with.
+El problema es que los trajes son bastante difíciles de remodelar. No hay muchos trozos grandes de tela prístina con los que trabajar.
 
-![The front part of a jacket does not leave you with a lot to work with](https://posts.freesewing.org/uploads/front_part_4401c51b7b.jpg)
+![La parte delantera de una chaqueta no te deja mucho con lo que trabajar](https://posts.freesewing.org/uploads/front_part_4401c51b7b.jpg)
 
-In addition, I'm really tall so there is simply no way I can salvage enough fabric form a suit to make a new jacket without having to sew a bunch of scraps together.
+Además, soy muy alta, así que no hay forma de que pueda recuperar suficiente tela de un traje para hacerme una chaqueta nueva sin tener que coser un montón de retales.
 
-I was worried that this sort of patchwork jacket was going to look super hobo. But since I don't really have any other option to make a jacket, I started thinking about what sort of patchwork would be most acceptable.
+Me preocupaba que esta especie de chaqueta de patchwork fuera a parecer super hobo. Pero como en realidad no tengo otra opción para hacerme una chaqueta, empecé a pensar qué tipo de patchwork sería más aceptable.
 
-![Eurek(zebr)a!](https://posts.freesewing.org/uploads/real_zebra_b1decba3b1.jpg)
+![¡Eurek(zebr)a!](https://posts.freesewing.org/uploads/real_zebra_b1decba3b1.jpg)
 
-And then one day in the shower it hit me: zebra! If I could find a black and a white suit, I could cut them into stripes and join those together to form the pattern parts I needed. If it was going to be patchwork, I might as well embrace it, right?
+Y un día, en la ducha, me di cuenta: ¡la cebra! Si pudiera encontrar un traje blanco y otro negro, podría cortarlos a rayas y unirlos para formar las partes del patrón que necesitaba. Si iba a ser un patchwork, más me valía aceptarlo, ¿no?
 
-## The Blake Blazer pattern
+## El patrón Blake Blazer
 
-My first idea was to make a jacket in muslin, draw zebra stripes on it, take it apart, cut out the stripes, and use that as my pattern. But I was worried this process would not be precise enough.
+Mi primera idea fue hacer una chaqueta en muselina, dibujarle rayas de cebra, desmontarla, recortar las rayas y utilizarla como patrón. Pero me preocupaba que este proceso no fuera lo suficientemente preciso.
 
-Also, what pattern would I use to make the jacket in the first place? I don't really use patterns that I haven't designed myself because I'm more of an uphill ice-skating kinda guy.
+Además, ¿qué patrón utilizaría para hacer la chaqueta en primer lugar? En realidad, no utilizo patrones que no haya diseñado yo mismo porque soy más del tipo de patinaje sobre hielo cuesta arriba.
 
-![Some mofos are always trying to ice-skate uphill](https://posts.freesewing.org/uploads/ice_skating_uphill_80ab69e9bd.gif)
+![Algunos tipos siempre intentan patinar sobre hielo cuesta arriba](https://posts.freesewing.org/uploads/ice_skating_uphill_80ab69e9bd.gif)
 
-So, I set out to design the Blake Blazer. It's a jacket/sportscoat pattern that I initially hoped to release with this post, but you're going to have to give me some more time for that.
+Así que me propuse diseñar el Blake Blazer. Es un patrón de chaqueta/abrigo deportivo que inicialmente esperaba publicar con este post, pero vas a tener que darme algo más de tiempo para ello.
 
-![The early draft of the Blake Blazer that I used for this jacket](https://posts.freesewing.org/uploads/blake_f3e813a99d.svg)
+![El primer borrador del Blake Blazer que utilicé para esta chaqueta](https://posts.freesewing.org/uploads/blake_f3e813a99d.svg)
 
-To get those zebra stripes as precise as possible, I decided to add the stripes to the pattern. This way, I could make sure they would match and whenever they don't in the jacket, I've got my own shoddy workmanship to blame.
+Para que esas rayas de cebra fueran lo más precisas posible, decidí añadir las rayas al patrón. Así me aseguraba de que coincidieran y, si no coincidían en la chaqueta, la culpa era mía.
 
-Also, for this project, I decided to make it a bit of a cropped look because I was worried I wouldn't have enough fabric to work with.
+Además, para este proyecto, decidí darle un aspecto un poco recortado porque me preocupaba no tener suficiente tela con la que trabajar.
 
-## Finding suits to refashion
+## Encontrar trajes para renovar
 
-With my pattern sorted, I started looking into the source material for my make. As it happens, I have a cardboard box full of old and unloved suits that's still in storage since my last move.
+Con mi patrón ordenado, empecé a buscar el material de origen para mi confección. Resulta que tengo una caja de cartón llena de trajes viejos y sin cariño que sigue almacenada desde mi última mudanza.
 
-I've always intended to take these apart to learn from their construction so this was the perfect opportunity.
+Siempre he tenido la intención de desmontarlas para aprender de su construcción, así que ésta era la oportunidad perfecta.
 
-![A box of suits to reverse engineer](https://posts.freesewing.org/uploads/suits_box_434d198619.jpg)
+![Una caja de trajes para ingeniería inversa](https://posts.freesewing.org/uploads/suits_box_434d198619.jpg)
 
-![Treasure!](https://posts.freesewing.org/uploads/suits_inside_0637374422.jpg)
+![¡Un tesoro!](https://posts.freesewing.org/uploads/suits_inside_0637374422.jpg)
 
-I have two black suits to choose from, but absolutely no white suits. So I hit the thriftstores only to discover that white suits are a bit of a rarity.
+Tengo dos trajes negros para elegir, pero absolutamente ningún traje blanco. Así que fui a las tiendas de segunda mano y descubrí que los trajes blancos son una rareza.
 
-I was unable to find any white suit even though I visited 8 different thrift stores. To make matters worse, I couldn't even find a white suit in any of the second hand stores I visited with one exception: I found a white suit in a second hand store, but it was 200 euro.
+No pude encontrar ningún traje blanco aunque visité 8 tiendas de segunda mano diferentes. Para colmo, ni siquiera pude encontrar un traje blanco de en ninguna de las tiendas de segunda mano que visité, con una excepción: Encontré un traje blanco en una tienda de segunda mano, pero costaba 200 euros.
 
-Apart from the fact that I'm not made of money, I don't think buying a 200 euro second hand suit only to rip it apart is much in line with the spirit of the refashioners.
+Aparte de que no estoy hecho de dinero, no creo que comprar un traje de segunda mano de 200 euros para destrozarlo esté muy en consonancia con el espíritu de los refashioners.
 
-I briefly contemplated a different colour combination, but nobody is waiting for a black and navy zebra.
+Contemplé brevemente una combinación de colores diferente, pero nadie está esperando una cebra negra y azul marino.
 
-![I ended up using the one on the left](https://posts.freesewing.org/uploads/suits_black_53828cb3ec.jpg)
+![Acabé utilizando el de la izquierda](https://posts.freesewing.org/uploads/suits_black_53828cb3ec.jpg)
 
-![Never a good sign when things are secured with a steel cable](https://posts.freesewing.org/uploads/suits_white_c02d4bf0c8.jpg)
+![Nunca es buena señal que las cosas se aseguren con un cable de acero](https://posts.freesewing.org/uploads/suits_white_c02d4bf0c8.jpg)
 
-Fortunately, the rules of the refashioners are that at least 50% of your make should be recycled suits. Apart from that, you do what you want.
+Afortunadamente, las reglas de los refashioners son que al menos el 50% de tu confección sean trajes reciclados. Aparte de eso, haz lo que quieras.
 
-So, by making the black stripes dominant, making the entire facing out of black, and recycling the inner parts of the suit (think canvas, shouler padding, buttons and so on) I would have no problem reaching that 50% treshold.
+Así que, haciendo que las rayas negras sean dominantes, haciendo todo el revestimiento de negro y reciclando las partes interiores del traje (piensa en la lona, el relleno del shouler, los botones, etc.) no tendría ningún problema para alcanzar ese umbral del 50%.
 
-So, true to the thrifty spirit of refashioners, I picked up some white fabric in the haberdasher that was 4 euro per meter. Something that I would soon regret as I tried to make this piece of glorified plastic play nice with the wool of the black suit.
+Así que, fiel al espíritu ahorrador de los refashioners, cogí tela blanca en la mercería que costaba 4 euros el metro. Algo de lo que pronto me arrepentiría al intentar que este trozo de plástico glorificado se llevara bien con la lana del traje negro.
 
-## Putting it all together
+## Ponerlo todo junto
 
-I wanted the zebra stripes to look like a real zebra, so no straight lines. I addition, I noticed that a zebra's stripes don't continue on his back and belly but sort of a run before they hit the center. I wanted to replicate that look, and lived to regret it.
+Quería que las rayas de cebra parecieran las de una cebra de verdad, así que nada de líneas rectas. Además, me he dado cuenta de que las rayas de una cebra no continúan en la espalda y el vientre sino que hacen una especie de recorrido antes de llegar al centro. Quise reproducir ese aspecto, y viví para arrepentirme.
 
-![These scraps are waiting to become an undersleeve](https://posts.freesewing.org/uploads/sleeve_parts_052a369ca4.jpg)
+![Estos retales esperan convertirse en una manga interior](https://posts.freesewing.org/uploads/sleeve_parts_052a369ca4.jpg)
 
-I ended up having to hand baste all the different parts together. This jacket's outer shell is made up of 93 different scraps and pieces that are all puzzled together.
+Al final tuve que hilvanar a mano todas las partes. La capa exterior de esta chaqueta está formada por 93 retazos y piezas diferentes que se entrecruzan.
 
-![This are not scraps to be thrown out, but scraps to be made into a jacket](https://posts.freesewing.org/uploads/scraps_412f72f0f2.jpg)
+![Esto no son retales para tirar, sino retales para hacer una chaqueta](https://posts.freesewing.org/uploads/scraps_412f72f0f2.jpg)
 
-In addition, I had to squeeze all the new parts out of the old suit parts, which meant that in some cases I was left with as little as a few mm of seam allowance.
+Además, tuve que exprimir todas las piezas nuevas de las viejas piezas del traje, lo que significaba que en algunos casos me quedaban tan sólo unos pocos mm de margen de costura.
 
-![Cutting the new sleeve parts out of the old sleeve](https://posts.freesewing.org/uploads/sleeve_2fd77b450d.jpg)
+![Cortar las piezas del manguito nuevo a partir del manguito viejo](https://posts.freesewing.org/uploads/sleeve_2fd77b450d.jpg)
 
-Suffice to say, it was stressful. And after I had puzzled together the initial parts, I still had to -- you know -- make a jacket. Which was kinda challenging with all that stripe matching I needed to do.
+Basta decir que fue estresante. Y después de haber reunido las piezas iniciales, aún tenía que... ya sabes... hacer una chaqueta. Lo que supuso todo un reto al tener que combinar todas las rayas.
 
-![Construction slowly moving forward](https://posts.freesewing.org/uploads/front_9821526627.jpg)
+![La construcción avanza lentamente](https://posts.freesewing.org/uploads/front_9821526627.jpg)
 
-![Preparing the patch pockets](https://posts.freesewing.org/uploads/pocket_db7596902d.jpg)
+![Preparación de los bolsillos de parche](https://posts.freesewing.org/uploads/pocket_db7596902d.jpg)
 
-## Final notes
+## Notas finales
 
-I ran out of time to add the lining, but part of me feels it would be a shame to cover up the insanity that is the inside of the jacket.
+Me quedé sin tiempo para añadir el forro, pero una parte de mí siente que sería una pena tapar la locura que es el interior de la chaqueta.
 
-And I'm not entirely pleased with the collar. I had made one muslin test garment, but now that I've made the real thing, I am going to go back to the pattern and make some tweaks before releasing it.
+Y no estoy del todo satisfecho con el collar. Había hecho una prenda de prueba en muselina, pero ahora que he hecho la prenda real, voy a volver al patrón y hacer algunos retoques antes de publicarlo.
 
-In the meanwhile, enjoy some [more pictures of the jacket in this Flickr set](https://www.flickr.com/photos/__niki__/albums/72157684742893052).
+Mientras tanto, disfruta de algunas [fotos más de la chaqueta en este conjunto de Flickr](https://www.flickr.com/photos/__niki__/albums/72157684742893052).
 
 ## Ahora te toca a ti
 
-So this is it, my contribution for The Refasioners 2017. I hope I was able to inspire you for some refashioning of your own. If nothing else, maybe it was a good reminder of what not to try ;)
+Así que esto es todo, mi contribución para The Refasioners 2017. Espero haberte servido de inspiración para tu propio "refashioning". Aunque sólo fuera eso, quizá fuera un buen recordatorio de lo que no hay que intentar ;)
 
 
-> ##### More refashioners
+> ##### Más refashioners
 > 
-> To stay up to date with The Refashioners 2017, see all the other inspiring refashions AND find out how you could win an amazing prize go to: [www.makery.uk/the-refashioners/](http://www.makery.uk/the-refashioners/)
+> Para mantenerte al día sobre The Refashioners 2017, ver todas las demás modas inspiradoras Y averiguar cómo puedes ganar un premio increíble entra en: [www.makery.uk/the-refashioners/](http://www.makery.uk/the-refashioners/)
 
