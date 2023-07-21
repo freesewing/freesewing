@@ -4,7 +4,7 @@ title: "Overwijdte taille"
 
 ***
 
-Controls the waist ease in the underlying Bella block Bee is based on
+Regelt het taillegemak in het onderliggende Bella blok Bee is gebaseerd op
 
 ## Effect van deze optie op het patroon
 
