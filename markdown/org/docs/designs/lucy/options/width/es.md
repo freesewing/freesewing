@@ -2,7 +2,7 @@
 title: Anchura
 ---
 
-This option determines the width of the pocket overall.
+Esta opción determina la anchura total de la bolsa.
 
 ## Efecto de esta opción en el patrón
 
