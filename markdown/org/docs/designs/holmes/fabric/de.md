@@ -1,14 +1,14 @@
 ---
-title: "Holmes deerstalker hat: Fabric Options"
+title: "Holmes Pirschhut: Stoff Optionen"
 ---
 
 ### Hauptstoff
 
-Für den Hauptstoff deines Hutes Ein dicker Stoff wird am besten funktionieren, um die Form zu halten, aber wenn du einen leichteren Stoff suchen möchtest, kannst du ihn so einstellen, dass er mehr Körper erhält. Generally you want to use **wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
+Für den Hauptstoff deines Hutes Ein dicker Stoff wird am besten funktionieren, um die Form zu halten, aber wenn du einen leichteren Stoff suchen möchtest, kannst du ihn so einstellen, dass er mehr Körper erhält. In der Regel solltest du **Wolle** der Beschichtung verwenden, aber du kannst mit verschiedenen Gewichten und Stoffen mit der entsprechenden Einlage experimentieren.
 
 <Note>
 
-Eine lustige Sache zu versuchen, ist die Baumwolle. Verdoppeln Sie einfach den Hauptstoff, so dass jedes Stück ist doppelte Dicke. Then interface it with a **medium firm interfacing**.
+Eine lustige Sache zu versuchen, ist die Baumwolle. Verdoppeln Sie einfach den Hauptstoff, so dass jedes Stück ist doppelte Dicke. Verbinde es dann mit einer **mittelfesten Einlage**.
 
 </Note>
 
@@ -18,11 +18,11 @@ Im Allgemeinen wollen Sie einen leichten Stoff wie **Seiden** oder **Baumwolle**
 
 ### Einlage
 
-Abhängig von der Dicke Ihres Stoffes und wie gut er seine Form beibehält, können Sie die Oberfläche Ihres Stoffes anpassen. If you are uncertain of whether your fabric requires interfacing, quickly _baste_ your crown pieces together and see if the crown stays up right when placed on a surface. Wenn es keine Schnittstelle braucht. Als Faustregel benötigen Sie im Allgemeinen eine **mittlere Firm-Schnittstelle** aber wenn Ihr Stoff ziemlich dünn ist, benötigen Sie vielleicht eine festere Schnittstelle. If you are still uncertain you can face your crown pieces and once again _baste_ the crown pieces together and check how it looks on your head. Sie können entweder fusible oder nicht fusible Schnittstellen verwenden. If using non-fusible interfacing you will want to flat line the interfacing to your pieces wih temporary _pad stitches_.
+Abhängig von der Dicke Ihres Stoffes und wie gut er seine Form beibehält, können Sie die Oberfläche Ihres Stoffes anpassen. Wenn du dir nicht sicher bist, ob dein Stoff eine Einlage benötigt, hefte deine Kronenteile schnell __ zusammen und prüfe, ob die Krone richtig steht, wenn du sie auf eine Unterlage legst. Wenn es keine Schnittstelle braucht. Als Faustregel benötigen Sie im Allgemeinen eine **mittlere Firm-Schnittstelle** aber wenn Ihr Stoff ziemlich dünn ist, benötigen Sie vielleicht eine festere Schnittstelle. Wenn du dir noch unsicher bist, kannst du deine Kronenteile umdrehen und noch einmal _heften_ die Kronenteile zusammen und überprüfen, wie es auf deinem Kopf aussieht. Sie können entweder fusible oder nicht fusible Schnittstellen verwenden. Wenn du eine nicht aufbügelbare Einlage verwendest, solltest du die Einlage mit provisorischen Stichen __an deinen Teilen befestigen.
 
 <Note>
 
-If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Vergewissern Sie sich, dass Sie natürliche Fasern verwenden.
+Wenn du einen historischeren Holmes machen willst, kannst du **Tarlatan** verwenden, einen leichten, steifen Musselin. Vergewissern Sie sich, dass Sie natürliche Fasern verwenden.
 
 </Note>
 
