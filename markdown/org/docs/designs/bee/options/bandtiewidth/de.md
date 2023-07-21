@@ -1,10 +1,10 @@
 ---
-title: "Band (chest) tie width"
+title: "Breite des Brustbandes"
 ---
 
 ***
 
-Controls the width of the tie/band around your chest
+Regelt die Breite des Bandes um deine Brust
 
 ## Effekt dieser Option auf das Schnittmuster
 
