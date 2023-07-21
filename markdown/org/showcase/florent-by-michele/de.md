@@ -1,10 +1,10 @@
 ---
-maker: "unknown"
-caption: "A green Florent by Michele Nel"
+maker: "unbekannt"
+caption: "Ein grünes Florent von Michele Nel"
 date: "2017-12-12"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/210ddaa1ecb0afad4260d6c60627be34e46189d0-1280x960.jpg"
 intro: ""
-title: "Florent by Michele Nel"
+title: "Florent von Michele Nel"
 designs:
   - "florent"
 ---
