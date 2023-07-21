@@ -1,43 +1,43 @@
 ---
-title: "Bee bikini top: Cutting Instructions"
+title: "Top de bikini Bee: Instrucciones de corte"
 ---
 
-There are three variations of this pattern. **One Colour**, which is where the bikini top is made out of one colour. **Two Colours**, where the bikini top is made reversible by using two colours, and **Cross Back Tie Variant**, where the neck ties tie in the back replacing the band tie.
+Hay tres variaciones de este patrón. **Un color**, que es cuando la parte superior del bikini está hecha de un solo color. **Dos Colores**, en el que el top del bikini se hace reversible utilizando dos colores, y **Variante de Lazo Cruzado en la Espalda**, en el que los lazos del cuello se anudan en la espalda sustituyendo al lazo de banda.
 
 ## Materiales
 
-### One Colour (Non-Reversible)
+### Un color (no reversible)
 
 **Tela principal**
 
-- Cut **4 cup** parts.
-- Cut **2 neck tie** parts.
-- Cut **1 band tie** part.
+- Corta **4 tazas** partes.
+- Corta **2 partes de la corbata** .
+- Corta **1 banda de atar** parte.
 
-### Two Colours (Reversible)
+### Dos colores (reversible)
 
 **Tela principal**
 
-- Cut **2 cup** parts from main.
-- Cut **2 neck tie** parts.
-- Cut **1 band tie** part.
+- Corta **2 taza** partes del principal.
+- Corta **2 partes de la corbata** .
+- Corta **1 banda de atar** parte.
 
 **Tela fina**
 
-- Cut **2 cup** parts.
-- Cut **2 neck tie** parts.
-- Cut **1 band tie** part.
+- Corta **2 tazas** partes.
+- Corta **2 partes de la corbata** .
+- Corta **1 banda de atar** parte.
 
-### Cross Back Tie Variant.
+### Variante de la Corbata Cruzada en la Espalda.
 
 **Tela principal**
 
-- Cut **4 cup** parts or Cut **2 cups** from main and lining if making reversible ties.
-- Cut **2 neck tie** parts or Cut **2 neck ties** from main and lining if making reversible ties.
-- Cut **1 band** part if making cross back tie variant instead of band tie variant.
+- Corta **4 tazas** partes o Corta **2 tazas** del principal y del forro si vas a hacer lazos reversibles.
+- Corta **2 partes de corbata** o Corta **2 partes de corbata** de la principal y del forro si haces corbatas reversibles.
+- Corta **1 banda** parte si haces la variante de lazo cruzado en la espalda en lugar de la variante de lazo de banda.
 
 <Note>
 
-This pattern is easily made reversible by buying a similar fabric to the main fabric and using it as contrast. To save confusion on instructions it will be refered to as the lining fabric.
+Este patrón es fácilmente reversible comprando una tela similar a la tela principal y utilizándola como contraste. Para evitar confusiones en las instrucciones, se denominará tela de forro.
 
 </Note>
