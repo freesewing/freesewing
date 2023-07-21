@@ -4,7 +4,7 @@ caption: "Imagínate a usted y a él, en los abrigos iguales."
 date: "2018-01-26"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d0ac31adcf8e14cec377aada6c688394a15199d8-1920x1440.webp"
 intro: "Esta es para las damas --- y no estoy (solamente) hablando de la imagen del ídolo Benedict Cumberbatch en la parte superior de este post."
-title: "Announcing Carlita, the womenswear version of our Carlton coat."
+title: "Presentamos Carlita, la versión femenina de nuestro abrigo Carlton."
 ---
 
 Esta es para las damas --- y no estoy (solamente) hablando de la imagen del ídolo Benedict Cumberbatch en la parte superior de este post.
@@ -19,57 +19,57 @@ Para más detalles sobre cómo llegó este proyecto, te remito a [la publicació
 
 Queriamos mantener el patrón lo mas cerca possible al original, así que todo lo que hicimos fue hacer cambios para abordar un desafío: ajustar los senos.
 
-### Princess, meet your seam
+### Princesa, conoce a tu costura
 
 Dibujamos una costura princesa adicional en el panel frontal del abrigo, a través del cual añadimos forma para el busto.
 
 Para poder hacerlo con precisión, Carlita requiere tres mediciones adicionales además de las medidas requeridas por Carlton. Estas son:
 
  - El [alto polvo](/docs/measurements/#highBust)
- - The [bust span](/docs/measurements/#bustSpan)
- - The [high point shoulder to bust](/docs/measurements/#highPointShoulderToBust)
+ - La extensión del busto [](/docs/measurements/#bustSpan)
+ - El [punto alto del hombro al busto](/docs/measurements/#highPointShoulderToBust)
 
-We use your high bust measurements to draft the coat, and then do a full bust adjustment on the princess seam based on your (full) chest circumference, bust span and HPS to bust.
+Utilizamos tus medidas de busto alto para hacer el borrador del abrigo, y luego hacemos un ajuste de busto completo en la costura princesa basándonos en tu perímetro torácico (completo), la amplitud del busto y la distancia de HPS al busto.
 
-### All of the pockets, but we had to move some of them
+### Todos los bolsillos, pero tuvimos que mover algunos
 
-The addition of the princess seam made the map pocket placement a bit difficult, so we've slightly moved it, and aligned it vertically, rather than slightly tilted as it is in Carlton.
+La adición de la costura princesa dificultó un poco la colocación del bolsillo del mapa, así que lo hemos desplazado ligeramente, y lo hemos alineado verticalmente, en lugar de ligeramente inclinado como está en Carlton.
 
-This way, the pocket can be integrated in the princess seam, somewhere in the underboob region.
+De este modo, el bolsillo puede integrarse en la costura princesa, en algún lugar de la región inferior del pecho.
 
-### One extra option: The princess seam smooth factor
+### Una opción extra: El factor liso de la costura princesa
 
-Carlita also has one extra option that Carlton doesn't have, the somewhat elaborately named [Princess seam smooth factor](/docs/patterns/carlita/options#princessSeamSmoothFactor).
+Carlita también tiene una opción extra que Carlton no tiene, el factor de costura lisa [Princess, de nombre algo elaborado](/docs/patterns/carlita/options#princessSeamSmoothFactor).
 
-This controls how sharply the princess seam will revert back after having added the extra volume for your chest.
+De este modo se controla el retroceso de la costura princesa después de haber añadido el volumen extra para el pecho.
 
-A picture says more than a thousand words, so here's the option sampled on the relevant part of the pattern:
+Una imagen dice más que mil palabras, así que aquí tienes la opción muestreada en la parte correspondiente del patrón:
 
-![The effect of the option as shown by our sampler service](https://posts.freesewing.org/uploads/smooth_e8f395dd4a.png)
+![El efecto de la opción tal y como lo muestra nuestro servicio de muestreo](https://posts.freesewing.org/uploads/smooth_e8f395dd4a.png)
 
-As you can see, the option controls the urgency with which the princess seam reverts back to your waistline after passing the fullest point of your bust.
+Como puedes ver, la opción controla la urgencia con la que la costura princesa vuelve a tu cintura después de pasar por el punto más lleno de tu busto.
 
-A low factor will make for a more fitted coat, but also a more curvy seam that is harder to sew.
+Un factor bajo dará lugar a un abrigo más entallado, pero también a una costura más curvada que es más difícil de coser.
 
-A higher smooth factor will smooth this out so it's a more sloped retreat to the downward seam. This will make the coat less fitted under your chest, and the seam easier to sew.
+Un factor de suavidad más alto suavizará esto para que sea un retroceso más inclinado hacia la costura descendente. Esto hará que el abrigo quede menos ajustado bajo el pecho, y que la costura sea más fácil de coser.
 
-## A reminder about made-to-measure patterns
+## Recordatorio sobre los patrones a medida
 
-This goes without saying for regular visitors to this site, but if you're new here, it's worth repeating:
+Esto es obvio para los visitantes habituales de este sitio, pero si eres nuevo aquí, merece la pena repetirlo:
 
-> This coat is not drafted with a certain cup size in mind. Instead, it will adapt to your chest based on your measurements.
+> Este abrigo no se ha confeccionado teniendo en cuenta una determinada talla de copa. En su lugar, se adaptará a tu pecho en función de tus medidas.
 
-## Ladies, we need your feedback
+## Señoras, necesitamos vuestra opinión
 
-This is our first womenswear pattern with a fitted chest. As such, we're breaking new ground here, and I'd be interested to see how this pattern adapts to a variety of body shapes/cup sizes.
+Este es nuestro primer patrón para mujer con el pecho ajustado. Como tal, estamos abriendo nuevos caminos aquí, y me interesaría ver cómo se adapta este patrón a una variedad de formas corporales/tallas de copa.
 
-If you're planning to make this coat, or a muslin of it, please share your experience, and don't hesitate to get in touch should you run into any issues.
+Si piensas hacer este abrigo, o una muselina del mismo, por favor, comparte tu experiencia, y no dudes en ponerte en contacto con si tienes algún problema.
 
 
-I plan to design more womenswear patterns, so if there are any fit issues, I'd like to know about it sooner rather than later.
+Tengo previsto diseñar más patrones de ropa de mujer, así que si hay algún problema de ajuste, me gustaría saberlo cuanto antes.
 
-## Shout-out
+## Un saludo a
 
-Last but not least, I'd like to thank [Anneke](http://www.annekecaramin.com/) for her help throughout this project, and tolerating my countless rants about my love/hate relationship with boobs.
+Por último, pero no por ello menos importante, me gustaría dar las gracias a [Anneke](http://www.annekecaramin.com/) por su ayuda a lo largo de este proyecto, y por tolerar mis innumerables desvaríos sobre mi relación de amor/odio con las tetas.
 
 
