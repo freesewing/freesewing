@@ -1,5 +1,5 @@
 ---
-title: "Shin swim trunks: Sewing Instructions"
+title: "Плавки з гомілкою: інструкція з пошиття"
 ---
 
 > ### Зображення будуть незабаром
