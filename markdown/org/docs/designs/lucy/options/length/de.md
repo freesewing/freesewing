@@ -2,7 +2,7 @@
 title: Länge
 ---
 
-The length option determines how long your pocket will be.
+Die Option Länge bestimmt, wie lang deine Tasche sein wird.
 
 ## Effekt dieser Option auf das Schnittmuster
 
