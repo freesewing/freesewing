@@ -6,7 +6,7 @@ Steuert die Breite des Griffes.
 
 <Tip>
 
-Turn on paperless to see the width of the handle.
+Schalte das Papierlos ein, um die Breite des Griffs zu sehen.
 
 </Tip>
 
