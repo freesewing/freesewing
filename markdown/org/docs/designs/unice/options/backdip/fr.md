@@ -2,7 +2,7 @@
 title: "trempette à taille arrière"
 ---
 
-Together with the "Back curve" option, this option controls how much the back waist curves (revealing more or less skin). For this option, the curve is achieved by cutting away a crescent at the waist. (For fabric with horizontal stripes, some stripes would be interrupted around the center of the waist.)
+Avec l'option "Courbe du dos", cette option permet de contrôler la courbure de la taille du dos (révélant plus ou moins de peau). Pour cette option, la courbe est obtenue en découpant un croissant au niveau de la taille. (Pour les tissus à rayures horizontales, certaines rayures seraient interrompues autour du centre de la taille).
 
 ## Effet de cette option sur le motif
 
