@@ -4,7 +4,7 @@ title: "Overwijdte heup"
 
 ***
 
-Controls the amount of ease at your hips (the bottom of the sweater)
+Bepaalt de hoeveelheid overwijdte aan je heupen (de onderkant van de trui)
 
 ## Effect van deze optie op het patroon
 
