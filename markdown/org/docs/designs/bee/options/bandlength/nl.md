@@ -1,10 +1,10 @@
 ---
-title: "Band Length (Cross back ties)"
+title: "Bandlengte (kruislinks)"
 ---
 
 ***
 
-Controls the length of the band around your chest for the cross back ties variation of Bee
+Bepaalt de lengte van de band rond je borst voor de kruislingse rugbandvariatie van Bee
 
 ## Effect van deze optie op het patroon
 
