@@ -1,5 +1,5 @@
 ---
-title: "Simone shirt: Fabric Options"
+title: "Сорочка Simone: Варіанти тканин"
 ---
 
 <Note>
