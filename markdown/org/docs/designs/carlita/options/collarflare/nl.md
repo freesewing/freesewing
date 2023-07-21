@@ -2,10 +2,10 @@
 title: "Spreiding kraag"
 ---
 
-Controls the flare of the collar by altering the fall length (between the neck and the points) of the collar.
+Regelt de flare van de kraag door de vallengte (tussen de hals en de punten) van de kraag te veranderen.
 
-- Increase this option to increase the fall length.
-- Decrease this option to decrease the fall length.
+- Verhoog deze optie om de vallengte te vergroten.
+- Verlaag deze optie om de vallengte te verlagen.
 
 ## Effect van deze optie op het patroon
 
