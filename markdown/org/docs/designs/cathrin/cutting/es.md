@@ -1,5 +1,5 @@
 ---
-title: "Cathrin corset: Cutting Instructions"
+title: "Corsé Cathrin: Instrucciones de corte"
 ---
 
 Cortar 1 tela del núcleo y 1 tela exterior del panel central, asegurándose de cortar sobre el plegado.
