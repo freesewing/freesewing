@@ -1,8 +1,8 @@
 ---
-title: Edge
+title: Arista
 ---
 
-This option controls the width of the top edge of your pocket.
+Esta opción controla la anchura del borde superior de tu bolsillo.
 
 ## Efecto de esta opción en el patrón
 
