@@ -4,9 +4,9 @@ title: "Número de paneles"
 
 ***
 
-Controls the number of panels there are in the crown
+Controla el número de paneles que hay en la corona
 
-![Illustration showing the effect of this option](gores.svg)
+![Ilustración que muestra el efecto de esta opción](gores.svg)
 
 ## Efecto de esta opción en el patrón
 
