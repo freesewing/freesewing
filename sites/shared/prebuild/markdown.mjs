@@ -32,7 +32,6 @@ const loadFolderFrontmatter = async (key, site, folder, transform = false, lang 
    * Figure out what directory to spawn the child process in
    */
   const cwd = await path.resolve(process.cwd(), '..', '..', 'markdown', site, folder)
-  let list = false
   /*
    * When going through a small number of files in a flat directory (eg. blog posts) a
    * recursive grep through all files is faster.
@@ -44,7 +43,7 @@ const loadFolderFrontmatter = async (key, site, folder, transform = false, lang 
   }.md" -exec grep "^${key}:" -ism 1 {} +`
   const grep = exec(cmd, { cwd }, (error, stdout, stderr) => {
     if (error) {
-      console.error(`exec error: ${error}`)
+      console.error(`exec error: ${error} - ${stderr}`)
       return
     }
 

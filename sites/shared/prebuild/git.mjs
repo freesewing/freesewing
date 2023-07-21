@@ -84,7 +84,7 @@ const getMdxFileList = async (cwd) => {
   const cmd = `find ${cwd} -type f -name "en.md"`
   const find = exec(cmd, { cwd }, (error, stdout, stderr) => {
     if (error) {
-      console.error(`exec error: ${error}`)
+      console.error(`exec error: ${error} - ${stderr}`)
       return
     }
 

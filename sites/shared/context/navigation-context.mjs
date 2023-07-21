@@ -35,7 +35,7 @@ export const NavigationContextProvider = ({ children }) => {
    * @param value {value} to set
    */
   function updateSiteNav(path, value) {
-    setSiteNav(objUpdate(__siteNav.siteNav, path, value))
+    setSiteNav(objUpdate(siteNav[locale], path, value))
   }
 
   /*
@@ -49,7 +49,7 @@ export const NavigationContextProvider = ({ children }) => {
    * We'll do this later. Not even certain it's needed as we may just not place
    * previous/next links on user-generated content.
    */
-  function updateSlugLut(path, value) {
+  function updateSlugLut() {
     // FIXME: Is this even needed?
     console.log('updateSlugLut is not implemented (yet)')
   }
@@ -70,7 +70,7 @@ export const NavigationContextProvider = ({ children }) => {
    * so that updating it will trigger a re-render and the propagated value will update.
    */
   const [siteNav, setSiteNav] = useState(defaultSiteNav)
-  const [slugLut, setSlugLut] = useState(defaultSlugLut)
+  const [slugLut] = useState(defaultSlugLut)
 
   /*
    * Pass everything down as the value object, including the methods to update

@@ -11,7 +11,7 @@
  * Note: Set 'n' to mark this as a noisy entry that should always be closed unless active (like blog)
  */
 
-export const extendSiteNav = (pages, lang) => {
+export const extendSiteNav = (pages) => {
   pages.about = {
     s: 'about',
     t: 'About FreeSewing',

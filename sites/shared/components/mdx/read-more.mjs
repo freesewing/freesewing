@@ -69,13 +69,7 @@ const RenderTree = ({ tree, recurse, depth = 1, level = 0 }) => {
   )
 }
 
-export const ReadMore = ({
-  recurse = 0,
-  root = false,
-  site = 'org',
-  depth = 99,
-  ignoreControl,
-}) => {
+export const ReadMore = ({ recurse = 0, root = false, site = 'org', depth = 99 }) => {
   const { siteNav, slug } = useContext(NavigationContext)
 
   // Deal with recurse not being a number

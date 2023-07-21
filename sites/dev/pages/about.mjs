@@ -15,7 +15,7 @@ import {
   BaseLayoutRight,
 } from 'shared/components/base-layout.mjs'
 
-const ContactPage = ({ page, slug }) => {
+const ContactPage = ({ page }) => {
   const title = 'About FreeSewing'
 
   return (
@@ -180,7 +180,6 @@ export async function getStaticProps() {
   return {
     props: {
       ...(await serverSideTranslations('en')),
-      slug: 'about',
       page: {
         path: ['about'],
       },

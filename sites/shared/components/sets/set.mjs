@@ -6,7 +6,7 @@
 
 export const ns = ['designs', 'tags']
 
-export const Set = ({ name }) => {
+export const Set = ({}) => {
   //const { t } = useTranslation(ns)
 
   return <p>fixme</p>

@@ -15,7 +15,7 @@ import {
 
 const namespaces = [...pageNs]
 
-const SearchPage = ({ page, slug }) => {
+const SearchPage = ({ page }) => {
   const title = 'Search'
 
   const tip = (
@@ -51,7 +51,6 @@ export async function getStaticProps() {
   return {
     props: {
       ...(await serverSideTranslations('en', namespaces)),
-      slug: 'search',
       page: {
         path: ['search'],
       },
