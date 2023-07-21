@@ -1,87 +1,87 @@
 ---
 author: "joostdecock"
-caption: "This post is mostly about our work on progressive disclosure. Also: Three new patterns!"
+caption: "Este post trata principalmente de nuestro trabajo sobre la divulgación progresiva. También: ¡Tres nuevos patrones!"
 date: "2019-10-06"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/52db6852590a15208dace4a16a6a1c824037e400-2000x1500.jpg"
-intro: "We've just release FreeSewing v2.1 🎉"
-title: "FreeSewing v2.1: Three new patterns, expert mode, and help with measurements"
+intro: "Acabamos de lanzar FreeSewing v2.1 🎉"
+title: "FreeSewing v2.1: Tres nuevos patrones, modo experto y ayuda con las medidas"
 ---
 
 
-We've just release FreeSewing v2.1 🎉
+Acabamos de lanzar FreeSewing v2.1 🎉
 
-## Meet Penelope, Waralee, and Simone
+## Conoce a Penélope, Waralee y Simone
 
-There are 3 new patterns in this release:
+Hay 3 patrones nuevos en esta versión:
 
- - [Penelope](/patterns/penelope) is a pencil skirt by [Wouter Van Wageningen](/users/wouter.vdub)
- - [Waralee](/patterns/waralee) are wrap pants, also by [Wouter](/users/wouter.vdub)
- - [Simone](/patterns/simone) is Simon (our versatile button-down pattern) adapted for breasts by [Joost De Cock](/users/joost)
+ - [Penelope](/patterns/penelope) es una falda lápiz de [Wouter Van Wageningen](/users/wouter.vdub)
+ - [Waralee](/patterns/waralee) son pantalones envolventes, también de [Wouter](/users/wouter.vdub)
+ - [Simone](/patterns/simone) es Simon (nuestro versátil patrón de botones) adaptado para pechos por [Joost De Cock](/users/joost)
 
-All of these patterns are either womenswear or -- in the case of Waralee -- unisex clothing. Which in an indication of our commitment to bring more womenswear patterns to the site.
+Todos estos patrones son ropa de mujer o, en el caso de Waralee, ropa unisex. Lo cual es una indicación de nuestro compromiso de traer más patrones de ropa de mujer al sitio.
 
-Apart from creating new patterns, a lot of efforts have gone into making things simpler, without making them dumber. Let me explain:
+Aparte de crear nuevos patrones, se han dedicado muchos esfuerzos a simplificar las cosas, sin hacerlas más tontas. Me explico:
 
-## Our work on progressive disclosure
+## Nuestro trabajo sobre la divulgación progresiva
 
-Striking a balance between giving our users all the power of the platform, yet making it easy for newcomers to get started, is an ongoing challenge. We have started making inroads into addressing that issue with so-called *progressive disclosure of complexity*.
+Lograr un equilibrio entre dar a nuestros usuarios toda la potencia de la plataforma y facilitar a los recién llegados que empiecen a utilizarla es un reto constante. Hemos empezado a avanzar en la solución de este problema con la llamada divulgación progresiva de la complejidad **.
 
-The idea -- which we didn't make up, but is a concept in UX design -- is to simplify the experience for most people without limiting the abilities of more advanced users.
+La idea --que no nos hemos inventado, sino que es un concepto del diseño UX-- es simplificar la experiencia para la mayoría de la gente sin limitar las capacidades de los usuarios más avanzados.
 
-We are focusing our attention for progressive disclosure on two areas that are the ones that our users most often struggle with:
+Estamos centrando nuestra atención para la divulgación progresiva en dos áreas que son con las que nuestros usuarios tienen más dificultades:
 
- - **Pattern options**: Our patterns often come with dozens of options. That is great for those who like to fine-tune every detail of their pattern, but can be a bit overwhelming for newcomers
- - **Measurements**: Taking accurate measurements is crucial for good results with our patterns, yet not as trivial as you would think.
+ - **Opciones de patrón**: Nuestros patrones suelen venir con docenas de opciones. Eso es estupendo para quienes les gusta afinar cada detalle de su patrón, pero puede resultar un poco abrumador para los recién llegados
+ - **Medidas**: Tomar medidas exactas es crucial para obtener buenos resultados con nuestros patrones, pero no es tan trivial como podría pensarse.
 
-While we're certainly not there yet, we've made progress on both of these. Let's look at what we've been up to:
+Aunque ciertamente aún no hemos llegado a ese punto, hemos avanzado en ambos. Echemos un vistazo a lo que hemos estado haciendo:
 
-### Pattern options: We now have an expert mode, and it's off by default
+### Opciones de patrón: Ahora tenemos un modo experto, y está desactivado por defecto
 
-(some of) Our patterns have had *advanced options* for a while, but they are now hidden by default. That is until you turn on the **Expert mode** in the settings (below the pattern options).
+(algunos de) Nuestros patrones han tenido *opciones avanzadas* durante un tiempo, pero ahora están ocultas por defecto. Eso es hasta que activas el modo Experto **** en los ajustes (debajo de las opciones de patrón).
 
-Apart from advanced pattern options, export mode also reveals the lesser-used draft settings such as the ability to change the language, units, details, margin, and contents of your draft.
+Aparte de las opciones avanzadas de patrón, el modo de exportación también revela los ajustes de borrador menos utilizados, como la posibilidad de cambiar el idioma, las unidades, los detalles, el margen y el contenido de tu borrador.
 
-![Advanced mode](https://posts.freesewing.org/uploads/recreate_a6e2f9c4d6.png)
+![Modo avanzado](https://posts.freesewing.org/uploads/recreate_a6e2f9c4d6.png)
 
 <Note> 
 
-###### Also shown: Pattern vs Recipe defaults
+###### También se muestra: Patrón vs. Receta por defecto
 
-When configuring your draft, every option has a little button to restore the default value for that option.
-Things get more complicated when you're re-creating a recipe. Now when you restore the default, is it the pattern default, or the recipe's default?
+Al configurar tu borrador, cada opción tiene un pequeño botón para restaurar el valor por defecto de esa opción.
+Las cosas se complican cuando recreas una receta. Ahora bien, cuando restableces el valor por defecto, ¿es el valor por defecto del patrón o el valor por defecto de la receta?
 
-The answer used to be the pattern default, but with this release, you'll find that options where the recipe default is different from the pattern
-default will have two buttons. Once to restore the pattern default, and another to restore the recipe default. 
+La respuesta solía ser el patrón por defecto, pero con esta versión, verás que las opciones en las que la receta por defecto es diferente del patrón por defecto
+tendrán dos botones. Una vez para restaurar el patrón por defecto, y otra para restaurar la receta por defecto. 
 
-You can see this in the screenshot above.
+Puedes verlo en la captura de pantalla anterior.
 
 </Note>
 
-### Measurements: Helping you spot mistakes in your measurements
+### Medidas: Te ayuda a detectar errores en tus mediciones
 
-Hemos añadido algunos indicadores para ayudarle a detectar errores o problemas en sus mediciones. Your models will now show a graphical representation of your body measurements, which will allow you to spot any outliers.
+Hemos añadido algunos indicadores para ayudarle a detectar errores o problemas en sus mediciones. Tus modelos mostrarán ahora una representación gráfica de tus medidas corporales, lo que te permitirá detectar cualquier valor atípico.
 
-![A graphical representation of your model's measurements](https://posts.freesewing.org/uploads/model_c3fa8fc50c.png)
+![Una representación gráfica de las medidas de tu modelo](https://posts.freesewing.org/uploads/model_c3fa8fc50c.png)
 
-In addition, we are showing you an estimate of your different measurements (based on your neck circumference) next to the actual value. If the difference gets larger, we'll draw your attention to that.
+Además, te mostramos una estimación de tus diferentes medidas (basada en la circunferencia de tu cuello) junto al valor real. Si la diferencia aumenta, llamaremos tu atención sobre ello.
 
-This is a difficult area for us to work in. We want to help you get the best results, and that includes helping you spot issues with your measurements. On the other hand, we in no way want to imply that someone's measurements are *wrong* somehow.
+Se trata de un ámbito en el que nos resulta difícil trabajar. Queremos ayudarte a obtener los mejores resultados, y eso incluye ayudarte a detectar problemas con tus medidas. Por otra parte, de ninguna manera queremos dar a entender que las medidas de alguien son *erróneas* de alguna manera.
 
-Somos un patrón muy incluyente de tamaño, y una cantidad desproporcionada de nuestros usuarios son personas que luchan por encontrar ropa o patrones de otras tiendas. So on one hand, it might seem like we're setting ourselves up for failure by comparing measurements to a set of more or less *standard* measurements. Pero usted conoce su cuerpo. Usted sabe cuál de sus mediciones se desviará de la media. Y señalamos que lo hacen de alguna manera sólo es una confirmación de que ha estado mediendo correctamente. Por otro lado, si algo salta hacia fuera donde tienes un tamaño bastante medio, sabes que puedes revisar esas mediciones.
+Somos un patrón muy incluyente de tamaño, y una cantidad desproporcionada de nuestros usuarios son personas que luchan por encontrar ropa o patrones de otras tiendas. Así que, por un lado, podría parecer que nos estamos preparando para el fracaso al comparar las medidas con un conjunto de medidas más o menos estándar de **. Pero usted conoce su cuerpo. Usted sabe cuál de sus mediciones se desviará de la media. Y señalamos que lo hacen de alguna manera sólo es una confirmación de que ha estado mediendo correctamente. Por otro lado, si algo salta hacia fuera donde tienes un tamaño bastante medio, sabes que puedes revisar esas mediciones.
 
-Por último, pero no menos importante, mientras intentamos proporcionar orientación sobre las mediciones para ayudar a detectar errores, nunca excluimos a nadie basado en el tamaño o medición. No matter what you throw at us, we will  draft a pattern that works for you, or (our software will) die trying.
+Por último, pero no menos importante, mientras intentamos proporcionar orientación sobre las mediciones para ayudar a detectar errores, nunca excluimos a nadie basado en el tamaño o medición. No importa lo que nos eches, redactaremos un patrón que funcione para ti, o (nuestro software) morirá en el intento.
 
-## Other changes
+## Otros cambios
 
- - We have extended our size ranges for our comparison views. Menswear sizes are now sampled from size 32 up to 48, while womenswear is sampled from size 28 up to 46.
- - We've made some changes to the defaults in the Simon pattern, based on our tests with Simone
- - We've added support for preloading models with breasts to our development environment for pattern designers
- - We've implemented fixes and improvements in our Jaeger, Bruce, Benajamin, Simon, Carlton, and Carlita patterns
- - We've added a bunch of missing images in the documentation, and [started an effort to make sure all options have an image to illustrate their purpose](https://github.com/freesewing/freesewing.org/issues/190).
+ - Hemos ampliado los rangos de tamaño de nuestras vistas comparativas. Las tallas de caballero se muestran ahora desde la talla 32 hasta la 48, mientras que las de señora van desde la 28 hasta la 46.
+ - Hemos hecho algunos cambios en los valores por defecto del patrón Simón, basándonos en nuestras pruebas con Simone
+ - Hemos añadido soporte para precargar modelos con senos a nuestro entorno de desarrollo para diseñadores de patrones
+ - Hemos implementado correcciones y mejoras en nuestros patrones Jaeger, Bruce, Benajamin, Simon, Carlton y Carlita
+ - Hemos añadido un montón de imágenes que faltaban en la documentación, y [ha iniciado un esfuerzo para que todas las opciones tengan una imagen que ilustre su finalidad](https://github.com/freesewing/freesewing.org/issues/190).
 
-More information is available [in the changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md).
+Hay más información disponible [en el registro de cambios](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md).
 
-We hope you enjoy this release, and please [stop by our chat room](https://discord.freesewing.org/) to share your thoughts, feedback, suggestions, or ideas. We'd love to hear from you 
+Esperamos que disfrutes de esta versión, y por favor, [pásate por nuestra sala de chat](https://discord.freesewing.org/) para compartir tus opiniones, comentarios, sugerencias o ideas. Nos encantaría saber de ti 
 
 
 
