@@ -1,35 +1,35 @@
 ---
 author: "joostdecock"
-caption: "We're saying thanks to our contributors and want to make sure their contributions get the credit they deserve"
+caption: "Nous disons merci à nos contributeurs et voulons nous assurer que leurs contributions reçoivent le crédit qu'elles méritent"
 date: "2021-11-28"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1488bc5a9940423308a38d2cd33edb86b6eed442-1920x1280.jpg"
-intro: "During our last contributor call , we decided that we would implement the All Contributors specification as a way to honour all our contributors."
-title: "Calling all contributors"
+intro: "Lors de notre dernier appel aux contributeurs, nous avons décidé de mettre en œuvre la spécification Tous les contributeurs afin d'honorer tous nos contributeurs."
+title: "Appel à tous les contributeurs"
 ---
 
-During [our last contributor call](https://github.com/freesewing/freesewing/issues/1514), we decided that we would implement the [All Contributors specification](https://allcontributors.org/) as a way to honour all our contributors.
+Lors de [notre dernier appel aux contributeurs](https://github.com/freesewing/freesewing/issues/1514), nous avons décidé de mettre en place la spécification [All Contributors](https://allcontributors.org/) afin d'honorer tous nos contributeurs.
 
-If on the surface, a contributor call decision to honour contributors sounds like some sort of self-serving nonsense, let me reassure you that there's no risk of dislocated shoulders from patting ourselves on the back. Instead it's about (also) honouring those contributions that tend to go overlooked in Open Source.
+Si, à première vue, une décision d'appel à contribution visant à honorer les contributeurs ressemble à une sorte d'absurdité intéressée, laisse-moi te rassurer : nous ne risquons pas de nous déboîter les épaules en nous tapant dans le dos. Il s'agit plutôt d'honorer (aussi) les contributions qui ont tendance à être négligées dans l'Open Source.
 
-The All Contributors website summerazes it as:
+Le site Web de tous les contributeurs le résume ainsi :
 
-> This is a specification for recognizing contributors to an open source project in a way that rewards each and every contribution, not just code.
+> Il s'agit d'une spécification permettant de reconnaître les contributeurs à un projet open source de manière à récompenser chaque contribution, et pas seulement le code.
 > 
-> People are giving themselves and their free time to contribute to open source projects in so many ways, so we believe everyone should be praised for their contributions (code or not).
+> Les gens se donnent et donnent de leur temps libre pour contribuer aux projets open source de tant de façons, nous pensons donc que tout le monde devrait être félicité pour ses contributions (code ou non).
 
-When we talk about *contributors* in open source projects, there is often the assumption that this is all the people who contribute code to the project. The fact the [GitHub lists the contributors of a project based on the actual commits](https://github.com/freesewing/freesewing/graphs/contributors) goes a long way to cement that view.
+Lorsque l'on parle de *contributeurs* dans les projets open source, on suppose souvent qu'il s'agit de toutes les personnes qui contribuent au code du projet. Le fait que le site [GitHub répertorie les contributeurs d'un projet en fonction des commits réels](https://github.com/freesewing/freesewing/graphs/contributors) contribue grandement à cimenter ce point de vue.
 
-But there's plenty of contributions that fly under the radar of an automated system based on the commit history. Things like documentation and blog posts, community building, answering questions or submitting bug reports, are all valuable contributions that deserve to be recognized.
+Mais il y a plein de contributions qui passent sous le radar d'un système automatisé basé sur l'historique des livraisons. Des choses comme la documentation et les articles de blog, le développement de la communauté, la réponse aux questions ou la soumission de rapports de bogues, sont toutes des contributions précieuses qui méritent d'être reconnues.
 
-By implementing the All Contributors specification, we pledge to give those people credit for their contributions, and make that credit visible. In practice the list of contributors will be included in the `README.md` file of all our packages, as well as in the main `README.md` file of [our `freesewing/freesewing` monorepo](https://github.com/freesewing/freesewing).
+En mettant en œuvre la spécification Tous les contributeurs, nous nous engageons à donner à ces personnes le crédit de leurs contributions, et à rendre ce crédit visible. En pratique, la liste des contributeurs sera incluse dans le fichier `README.md` de tous nos paquets, ainsi que dans le fichier principal `README.md` de [notre `freesewing/freesewing` monorepo](https://github.com/freesewing/freesewing).
 
-In the future, we also plan to make this list available on our website.
+À l'avenir, nous prévoyons également de rendre cette liste disponible sur notre site Internet.
 
-## How does it work?
+## Comment cela fonctionne-t-il ?
 
-Going forward, we will make an effort to add all contributors regardless of how they contribute to the project. But we'd also like to capture contributions that were made up until now.
+À l'avenir, nous nous efforcerons d'ajouter tous les contributeurs, quelle que soit la façon dont ils contribuent au projet. Mais nous aimerions aussi saisir les contributions qui ont été faites jusqu'à présent.
 
-For this, we need your help. If you've contributed to FreeSewing, let us know. You can [let us know on Discord](https://discord.freesewing.org/), or you can [create an issue](https://github.com/freesewing/freesewing/issues/new?assignees=joostdecock&labels=%F0%9F%92%9C+all+contributors&template=all-contributors.md&title=All+Contributors%3A+Please+add+%28username+here%29), or you can comment on [any issue](https://github.com/freesewing/freesewing/issues) or [pull request](https://github.com/freesewing/freesewing/pulls) using [the instructions for the all-contributors bot](https://allcontributors.org/docs/en/bot/usage).
+Pour cela, nous avons besoin de ton aide. Si tu as contribué à FreeSewing, fais-le nous savoir. Tu peux [nous le faire savoir sur Discord](https://discord.freesewing.org/), ou tu peux [créer un problème](https://github.com/freesewing/freesewing/issues/new?assignees=joostdecock&labels=%F0%9F%92%9C+all+contributors&template=all-contributors.md&title=All+Contributors%3A+Please+add+%28username+here%29), ou tu peux commenter [n'importe quel problème](https://github.com/freesewing/freesewing/issues) ou [pull request](https://github.com/freesewing/freesewing/pulls) en utilisant [les instructions pour le bot all-contributors](https://allcontributors.org/docs/en/bot/usage).
 
 
-Don't be shy, add yourself :)
+Ne sois pas timide, ajoute-toi :)
