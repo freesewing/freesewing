@@ -1,8 +1,8 @@
 ---
-title: "Back Curve"
+title: "Rückenkurve"
 ---
 
-Together with the "Back waist dip" option, this option controls how much the back waist curves (revealing more or less skin). For this option, the curve is achieved by slanting the pattern piece and allowing the fabric to conform to the body shape. (For fabric with horizontal stripes, the stripes would remain continuous but would dip around the waist.)
+Zusammen mit der Option "Rückwärtige Taillenabsenkung" steuert diese Option, wie stark sich die hintere Taille wölbt (mehr oder weniger Haut enthüllt). Bei dieser Option wird die Kurve erreicht, indem das Schnittmusterteil schräg gelegt wird und sich der Stoff der Körperform anpasst. (Bei Stoffen mit horizontalen Streifen würden die Streifen durchgehend bleiben, aber um die Taille herum abfallen).
 
-When this option is used, the shape of the back pattern piece does not fully convey the shape when worn. The projected dip at the back center of the waist can be found in the info generated together with the pattern.
+Wenn du diese Option wählst, wird die Form des Rückenteils beim Tragen nicht vollständig wiedergegeben. Die projizierte Einbuchtung in der hinteren Mitte der Taille findest du in der Info, die zusammen mit dem Schnittmuster erstellt wurde.
 
