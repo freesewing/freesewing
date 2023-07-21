@@ -1,5 +1,5 @@
 ---
-maker: "unknown"
+maker: "inconnue"
 caption: "Croyez-le ou non, il ne s'agit là que de son troisième projet de couture."
 date: "2018-02-05"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3d05ee5656f7aac511d95ed567dab54c6545cd88-1080x1080.jpg"
@@ -9,11 +9,11 @@ designs:
   - "wahid"
 ---
 
-![Side view](https://posts.freesewing.org/uploads/bound_wahid_2_8cecc34558.jpg "Side view")
+![Vue de côté](https://posts.freesewing.org/uploads/bound_wahid_2_8cecc34558.jpg "Vue de côté")
 
-![Front view](https://posts.freesewing.org/uploads/bound_wahid_3_f8978b57b8.jpg "Front view")
+![Vue de face](https://posts.freesewing.org/uploads/bound_wahid_3_f8978b57b8.jpg "Vue de face")
 
-![Flat lay](https://posts.freesewing.org/uploads/bound_wahid_4_7ee387162d.jpg "Flat lay")
+![Pose à plat](https://posts.freesewing.org/uploads/bound_wahid_4_7ee387162d.jpg "Pose à plat")
 
 > ##### Voir les originaux sur le feed Instragram de funloveadventure
 > 
