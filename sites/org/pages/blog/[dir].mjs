@@ -15,9 +15,9 @@ const namespaces = [...layoutNs, ...postNs, ...pageNs]
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const BlogPage = ({ locale, slug, page }) => {
+const BlogPage = ({ locale, dir, page }) => {
   // function to load the correct markdown
-  const loader = useCallback(() => import(`orgmarkdown/blog/${slug}/${locale}.md`), [slug, locale])
+  const loader = useCallback(() => import(`orgmarkdown/blog/${dir}/${locale}.md`), [dir, locale])
   // load the markdown
   const { frontmatter, MDX } = useDynamicMdx(loader)
 
@@ -28,14 +28,7 @@ const BlogPage = ({ locale, slug, page }) => {
       title={frontmatter.title}
       layout={(props) => <PostLayout {...props} {...{ slug: page.path.join('/'), frontmatter }} />}
     >
-      <PostArticle
-        {...{
-          slug,
-          frontmatter,
-          MDX,
-          page,
-        }}
-      />
+      <PostArticle {...{ frontmatter, MDX }} />
     </PageWrapper>
   )
 }
@@ -51,19 +44,19 @@ const BlogPage = ({ locale, slug, page }) => {
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticProps({ params, locale }) {
-  const { slug } = params
+  const { dir } = params
 
-  // if the slug isn't present in the prebuilt posts, return 404
-  if (!Object.keys(posts).includes(`blog/${slug}`)) return { notFound: true }
+  // if the dir isn't present in the prebuilt posts, return 404
+  if (!Object.keys(posts[locale]).includes(`blog/${dir}`)) return { notFound: true }
 
   return {
     props: {
-      slug,
+      dir,
       locale,
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
         locale,
-        path: ['blog', slug],
+        path: ['blog', dir],
       },
     },
   }

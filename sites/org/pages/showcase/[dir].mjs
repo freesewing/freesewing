@@ -15,11 +15,11 @@ const namespaces = [...layoutNs, ...postNs, ...pageNs]
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const ShowcasePage = ({ locale, slug, page }) => {
+const ShowcasePage = ({ locale, dir, page }) => {
   // function to load the correct markdown
   const loader = useCallback(
-    () => import(`orgmarkdown/showcase/${slug}/${locale}.md`),
-    [slug, locale]
+    () => import(`orgmarkdown/showcase/${dir}/${locale}.md`),
+    [dir, locale]
   )
 
   const { frontmatter, MDX } = useDynamicMdx(loader)
@@ -31,14 +31,7 @@ const ShowcasePage = ({ locale, slug, page }) => {
       title={frontmatter.title}
       layout={(props) => <PostLayout {...props} {...{ slug: page.path.join('/'), frontmatter }} />}
     >
-      <PostArticle
-        {...{
-          slug,
-          frontmatter,
-          MDX,
-          page,
-        }}
-      />
+      <PostArticle {...{ frontmatter, MDX }} />
     </PageWrapper>
   )
 }
@@ -54,19 +47,19 @@ const ShowcasePage = ({ locale, slug, page }) => {
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticProps({ params, locale }) {
-  const { slug } = params
+  const { dir } = params
 
-  // if the slug isn't present in the prebuilt posts, return 404
-  if (!Object.keys(posts).includes(`showcase/${slug}`)) return { notFound: true }
+  // if the dir isn't present in the prebuilt posts, return 404
+  if (!Object.keys(posts[locale]).includes(`showcase/${dir}`)) return { notFound: true }
 
   return {
     props: {
-      slug,
+      dir,
       locale,
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
         locale,
-        path: ['showcase', slug],
+        path: ['showcase', dir],
       },
     },
   }

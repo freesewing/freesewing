@@ -16799,7 +16799,7 @@ remark-cli@^11.0.0:
 
 "remark-copy-linked-files@https://github.com/joostdecock/remark-copy-linked-files":
   version "1.5.0"
-  resolved "git+ssh://git@github.com/joostdecock/remark-copy-linked-files.git#73f8e407d7c7055bc3d56cec32657ed401d43362"
+  resolved "https://github.com/joostdecock/remark-copy-linked-files#73f8e407d7c7055bc3d56cec32657ed401d43362"
   dependencies:
     apr-for-each "^3.0.3"
     apr-intercept "^3.0.4"
