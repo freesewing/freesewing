@@ -1,18 +1,18 @@
 ---
-title: "Bee bikini top: What You Need"
+title: "Bienen-Bikinioberteil: Was du brauchst"
 ---
 
-To make Bee, you will need the following:
+Für die Herstellung von Bee benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- About 0.5 - 1 metre (0.6 - 1.1 yards) of a suitable fabric ([see Bee Fabric options](/docs/patterns/bee/fabric/))
-- (Optional) About 0.5 - 1 metre (0.6 - 1.1 yards) of lining fabric ([see Bee Fabric options](/docs/patterns/bee/fabric/))
-- (Optional) Ribbons/Tapes/Cords for neck ties and bands, with the same length and width as neck tie and/or band.
+- Etwa 0,5 - 1 Meter (0,6 - 1,1 Yards) eines geeigneten Stoffes ([siehe Bee Fabric options](/docs/patterns/bee/fabric/))
+- (Optional) Etwa 0,5 - 1 Meter (0,6 - 1,1 Yards) Futterstoff ([siehe Bienenstoffoptionen](/docs/patterns/bee/fabric/))
+- (Optional) Bänder für Krawatten und Bänder mit der gleichen Länge und Breite wie die Krawatte und/oder das Band.
 
 <Note>
 
-The lining fabric is only needed if you want to make this pattern reversible. If you don't, you only need the main fabric.  
-You can use a serger/overlocker to construct this pattern but it is not mandatory.  
-Ribbons/Tapes/Cords can be used instead of making custom ties. Just make sure to get more than you need and that you cut down to size after construction.
+Der Futterstoff wird nur benötigt, wenn du das Muster wendbar machen willst. Wenn du das nicht tust, brauchst du nur den Hauptstoff.  
+Du kannst für dieses Muster einen Serger/Overlocker verwenden, aber das ist nicht zwingend erforderlich.  
+Du kannst Bänder und Kordeln verwenden, anstatt eigene Krawatten herzustellen. Achte nur darauf, dass du mehr kaufst, als du brauchst, und dass du sie nach dem Bau zuschneidest.
 
 </Note>
