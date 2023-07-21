@@ -1,12 +1,12 @@
 ---
-title: "Bee bikini top: What You Need"
+title: "Top de bikini Bee: Lo que necesitas"
 ---
 
 Para hacer Bee, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- About 0.5 - 1 metre (0.6 - 1.1 yards) of a suitable fabric ([see Bee Fabric options](/docs/patterns/bee/fabric/))
-- (Optional) About 0.5 - 1 metre (0.6 - 1.1 yards) of lining fabric ([see Bee Fabric options](/docs/patterns/bee/fabric/))
+- Aproximadamente 0,5 - 1 metro (0,6 - 1,1 yardas) de una tela adecuada ([ver opciones de tela de abeja](/docs/patterns/bee/fabric/))
+- (Opcional) Aproximadamente 0,5 - 1 metro (0,6 - 1,1 yardas) de tela de forro ([ver opciones de tela de abeja](/docs/patterns/bee/fabric/))
 - (Opcional) Lazos, cintas o cuerdas para las tiras del cuello y torso, de la misma longitud y ancho que las tiras del patrón.
 
 <Note>
