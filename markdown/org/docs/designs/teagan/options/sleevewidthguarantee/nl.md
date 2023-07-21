@@ -2,7 +2,7 @@
 title: Gegarandeerde mouw breedte
 ---
 
-Controls how much of the sleeve width will be guaranteed. This determines how much we can alter the sleeve width to fit the sleeve in the armhole.
+Bepaalt hoeveel van de mouwbreedte wordt gegarandeerd. Dit bepaalt hoeveel we de mouwbreedte kunnen aanpassen om de mouw in het armsgat te laten passen.
 
 ## Effect van deze optie op het patroon
 
