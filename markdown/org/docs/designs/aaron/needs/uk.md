@@ -1,5 +1,5 @@
 ---
-title: "Aaron A-Shirt: What You Need"
+title: "Aaron A-Shirt: Що вам потрібно"
 ---
 
 Щоб пошити Майку Аарон, Вам потрібно:
