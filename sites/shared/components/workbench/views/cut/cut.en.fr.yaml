@@ -1,0 +1,26 @@
+canvas: Toile
+cut: Couper
+cuttingLayout: Disposition de coupe suggérée
+fabric: Tissu principal
+materialSize: "{length} sur {width} de large matériel"
+heavyCanvas: Toile lourde
+interfacing: Entoilage
+lining: Doublure
+lmhCanvas: Tissu de poids léger a moyen
+mirrored: en miroir
+onFoldLower: sur le pli
+onFoldAndBias: plié dans le biais
+onBias: dans le biais
+plastic: Plastique
+ribbing: Bord côte
+edgeOfFabric: Bord du tissu
+sheetWidth.t: Largeur du matériau
+sheetWidth.d: Quelle est la largeur du matériau ?
+grainDirection.t: Direction du grain
+grainDirection.d: Quel est le sens du grain sur le matériau ?
+horizontal.t: Horizontal
+horizontal.d: Le grain s'écoule de gauche à droite
+vertical.t: Vertical
+vertical.d: Le grain va de haut en bas
+cutSettings: Réglages des matériaux
+cutSettings.d: Ces paramètres te permettent de spécifier les propriétés du matériau afin de faciliter la réalisation d'un plan de coupe
