@@ -1,5 +1,5 @@
 ---
-title: "Shin swim trunks: Cutting Instructions"
+title: "Maillot de bain Shin : Instructions de coupe"
 ---
 
 - Couper **2 dos** avec de bons côtés ensemble
