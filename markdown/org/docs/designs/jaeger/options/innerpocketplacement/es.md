@@ -4,8 +4,8 @@ title: "Colocación del bolsillo interior"
 
 La ubicación del bolsillo interior.
 
-- Increase this option to shift the inner pocket towards the side seam
-- Decrease this option to shift the inner pocket towards the centre front
+- Aumenta esta opción para desplazar el bolsillo interior hacia la costura lateral
+- Disminuye esta opción para desplazar el bolsillo interior hacia el centro delantero
 
 ## Efecto de esta opción en el patrón
 
