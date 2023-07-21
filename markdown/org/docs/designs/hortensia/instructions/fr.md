@@ -1,5 +1,5 @@
 ---
-title: "Hortensia handbag: Sewing Instructions"
+title: "Sac à main Hortensia : Instructions de couture"
 ---
 
 ### (Optionnel) Étape 1 : Entoiler le tissu principal
@@ -18,7 +18,7 @@ title: "Hortensia handbag: Sewing Instructions"
 - Repliez les sangles en deux dans le sens de la longueur _endroit contre endroit_.
 - Coudre les bords bruts ensemble en laissant un vide pour tourner.
 - Retourner à l'envers.
-- _Slipstich_ the opening closed.
+- _Le Slipstich_ permet de fermer l'ouverture.
 - Alternativement _surpiquer_ les bords.
 - Attachez une sangle sur le panneau avant et une sangle sur le panneau arrière en cousant un rectangle et une croix.
 
@@ -59,22 +59,22 @@ Nous recommandons que les languettes soient environ un quart de la longueur des 
 
 ### Étape 7 : Préparation des panneaux latéraux
 
-- Press under the top seam allowance of the side panel reinforcement parts.
-- Place the side panel reinforcement parts on top of the side panels matching the raw edges.
-- _Edgestitch_ the folded edge of the reinforcement parts to the side panels.
+- Repasse sous le surplus de couture supérieur des pièces de renfort des panneaux latéraux.
+- Place les pièces de renfort des panneaux latéraux sur le dessus des panneaux latéraux en faisant correspondre les bords bruts.
+- _Point de bordure_ le bord plié des pièces de renfort aux panneaux latéraux.
 - _Collez_ les bords bruts ensemble.
 
 ### Étape 8 : Fixer les panneaux latéraux au tube
 
-- With _good sides together_ sew the side panels to the tube matching notches to the bottom and zipper panel seams.
-- If binding the edges rather than turning, sew with _wrong sides together_ instead.
-- If not binding the edges leave a gap in one of the sides for turning.
-- Turn inside out and _Slipstich_ the opening closed.
-- If sewn _wrong sides together_ bind the raw edges of the side panels.
+- Avec _bons côtés ensemble_ couds les panneaux latéraux au tube en faisant correspondre les encoches aux coutures du bas et du panneau de la fermeture à glissière.
+- Si tu veux relier les bords plutôt que de les retourner, couds _endroit contre endroit_ à la place.
+- Si tu ne relies pas les bords, laisse un espace dans l'un des côtés pour le retournement.
+- Retourne l'envers et _Slipstich_ l'ouverture fermée.
+- Si tu as cousu _endroit contre endroit_ , relie les bords bruts des panneaux latéraux.
 
 <Note>
 
-It is recommended to leave the gap for turning on the side rather than the top or bottom as it needs less reinforcement.
+Il est recommandé de laisser l'espace pour le tournage sur le côté plutôt que sur le haut ou le bas, car il nécessite moins de renfort.
 
 </Note>
 
@@ -85,7 +85,7 @@ It is recommended to leave the gap for turning on the side rather than the top o
 - Repassez vers le bas les marges de couture.
 - Alernativement vous pouvez mettre un biais sur les bords supérieurs.
 - Placez la doublure à l'intérieur du sac _envers contre envers_.
-- _Slipstitch_ or _Whipstitch_ the lining to the zipper panel.
+- _Couds_ ou _Couds_ la doublure au panneau de la fermeture à glissière.
 
 ### Étape 10: Profitez-en!
 
