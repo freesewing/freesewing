@@ -1,5 +1,5 @@
 ---
-title: "Cornelius cycling breeches: Sewing Instructions"
+title: "Велосипедні бриджі Cornelius: Інструкція з пошиття"
 ---
 
 ### Крок 1: Передні кишені
