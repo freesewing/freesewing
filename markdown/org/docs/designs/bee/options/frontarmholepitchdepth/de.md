@@ -1,10 +1,10 @@
 ---
-title: "Front armhole pitch depth (Bella)"
+title: "Tiefe des vorderen Armlochdrehpunktes (Bella)"
 ---
 
 ***
 
-Controls the front armhole pitch depth in the underlying Bella block Bee is based on
+Kontrolliert die Tiefe des vorderen Armlochdrehpunktes des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 
 ## Effekt dieser Option auf das Schnittmuster
 
