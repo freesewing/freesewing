@@ -2,7 +2,7 @@
 title: "Formgebung der Brustabnäher"
 ---
 
-Controls the balance between the primary and secondary bust darts.
+Steuert das Gleichgewicht zwischen dem primären und sekundären Brustabnäher.
 
 ## Effekt dieser Option auf das Schnittmuster
 
