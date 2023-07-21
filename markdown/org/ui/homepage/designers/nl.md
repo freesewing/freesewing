@@ -1,5 +1,5 @@
-- - -
-- - -
+---
+---
 
 #### Wat is parametrisch ontwerp?
 

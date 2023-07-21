@@ -18,6 +18,7 @@ find ./markdown/org/docs/. -type f -name "uk.md" -exec sed -i "s/^заголов
 find ./markdown/org/docs/. -type f -name "uk.md" -exec sed -i "s/^\"Корнеліус велосипедні штани\": /title: /g" {} +
 find ./markdown/org/docs/. -type f -name "*.md" -exec sed -i "s/^title : /title: /g" {} +
 find ./markdown/org/docs/. -type f -name "*.md" -exec sed -i "s/^title:\"/title: \"/g" {} +
+find ./markdown/org/docs/. -type f -name "*.md" -exec sed -i "s/<0>//g" {} +
 # Replace double quotes in Ukranian titles
 find ./markdown/org/docs/designs/carlita/.. -type f -name "uk.md" -exec sed -i "s/ \"Карліта\": / 'Карліта': /g" {} +
 find ./markdown/org/docs/designs/carlton/.. -type f -name "uk.md" -exec sed -i "s/ \"Карлтон\": / 'Карлтон': /g" {} +
