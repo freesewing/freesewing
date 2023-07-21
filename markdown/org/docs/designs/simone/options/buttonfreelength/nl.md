@@ -15,8 +15,8 @@ Ze zitten vast in je riem, en maken toiletpauzes onnodig lastig.
 
 Als je knopen onder je tailleband wil kan dat ook.
 
-Als je knopen onder je tailleband wil kan dat ook. You should enter a negative value here,
-making sure it's within the length bonus you have available.
+Als je knopen onder je tailleband wil kan dat ook. Je moet hier een negatieve waarde invoeren,
+zorg ervoor dat het binnen de lengtebonus valt die je beschikbaar hebt.
 
 </Note>
 
