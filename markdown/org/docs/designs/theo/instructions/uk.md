@@ -1,5 +1,5 @@
 ---
-title: "Theo trousers: Sewing Instructions"
+title: "Штани Тео: Інструкція з пошиття"
 ---
 
 <Note>
