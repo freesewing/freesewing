@@ -1,6 +1,7 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { postInfo, order } from 'site/prebuild/showcase-paths.mjs'
+import { pages as posts } from 'site/prebuild/showcase.mjs'
+import { meta } from 'site/prebuild/showcase-meta.mjs'
 import { getPostIndexPaths, getPostIndexProps } from 'site/components/mdx/posts/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
@@ -75,7 +76,7 @@ const ShowcaseIndexPage = ({ posts, page, current, total }) => {
 export default ShowcaseIndexPage
 
 export async function getStaticProps({ locale, params }) {
-  const props = getPostIndexProps(locale, params, order, postInfo)
+  const props = getPostIndexProps(params.page, posts[locale], meta)
 
   if (props === false) return { notFound: true }
 
@@ -94,7 +95,7 @@ export async function getStaticProps({ locale, params }) {
 
 export const getStaticPaths = async () => {
   return {
-    paths: getPostIndexPaths(order, 'showcase'),
+    paths: getPostIndexPaths(posts, 'showcase'),
     fallback: 'blocking',
   }
 }

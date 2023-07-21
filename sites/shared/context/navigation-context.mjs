@@ -1,7 +1,7 @@
 import { createContext, useState } from 'react'
 import { objUpdate } from 'shared/utils.mjs'
 import { siteNav as defaultSiteNav } from 'site/prebuild/sitenav.mjs'
-import { slugLut as defaultSlugLut } from 'site/prebuild/slugLut.mjs'
+import { slugLut as defaultSlugLut } from 'site/prebuild/sluglut.mjs'
 import { useRouter } from 'next/router'
 
 /*

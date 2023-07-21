@@ -50,7 +50,14 @@ const getReportUrl = async (id) => await sendApiRequest(`reports/${id}/download`
 const downloadReport = async (url) => await sendApiRequest('', false, url)
 
 export const prebuildCrowdin = async (store, mock = false) => {
-  if (mock) return (store.crowdin = mockedData)
+  if (mock) {
+    fs.writeFileSync(
+      path.resolve('..', 'org', 'prebuild', 'translators.json'),
+      JSON.stringify(mockedData)
+    )
+
+    return (store.crowdin = mockedData)
+  }
 
   const contributions = {}
   for (let language of languages) {
