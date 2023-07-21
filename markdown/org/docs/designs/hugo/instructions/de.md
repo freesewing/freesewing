@@ -1,5 +1,5 @@
 ---
-title: "Hugo hoodie: Sewing Instructions"
+title: "Hugo Hoodie: Anleitung zum Nähen"
 ---
 
 <Note>
@@ -30,14 +30,14 @@ Diese Reihe an 6 Episoden zeigt dir, wie du deinen Hoodie von Anfang bis Ende n�
 - Die Nahtzugaben am Futterteil vorsichtig einkürzen.
 - Die Tasche wenden, sodass die rechte Seite außen ist.  Dann Handwalzen und drücken Sie die Nähte.
 - Steppe mit Abstand von 0,5 cm zur Kante die obere und untere Seite der Tasche. Damit wird das Futter und die Nahtzugabe fixiert
-- Topstitch another line 0.5 cm from the inside upper edge of the facing on each side of the pocket.  Diese Stichlinie endet an der unteren Kantenstichlinie.
+- Steppe eine weitere Linie 0,5 cm von der inneren Oberkante des Besatzes auf jeder Seite der Tasche ab.  Diese Stichlinie endet an der unteren Kantenstichlinie.
 - Abschneiden Sie den Überschuss an der Innenseite der Tasche.
 - Bügeln Sie die Kanten gut aus.
 
 ### Schritt 2: Befestige die Tasche
 
 - Passen Sie die Pocket auf die Vorderseite, gute Seiten zusammen.
-- Die obere Taschennahtlinie ist mit Knipsen am Schnittmuster gekennzeichnet.  Die Unterkante der Tasche sollte auf die Halslinie zeigen.  Die Kanten der Tasche horizontal mit den Noten am Muster ausrichten. Overlap the top of the pocket over the seam line by a little less than 1 cm seam allowance.
+- Die obere Taschennahtlinie ist mit Knipsen am Schnittmuster gekennzeichnet.  Die Unterkante der Tasche sollte auf die Halslinie zeigen.  Die Kanten der Tasche horizontal mit den Noten am Muster ausrichten. Überlappe die Oberseite der Tasche über die Nahtlinie mit etwas weniger als 1 cm Nahtzugabe.
 - Nähen Sie die obere Naht der Tasche an die Shirt Front.
 - Drehen Sie die Tasche über die Nahtlinie, so dass die Unterseite nun mit der Kante an der Taille nach oben zieht.
 - Mit einem langen Heftstich (4mm oder länger) die Tasche in der Taille mit einer Nahtzugabe von ½ cm fixieren.  Dies ist optional, hält aber die Tasche fest während Sie am Rest des Hemdes arbeiten.
@@ -60,12 +60,12 @@ Diese Reihe an 6 Episoden zeigt dir, wie du deinen Hoodie von Anfang bis Ende n�
 
 - Ärmel- und Seitennaht passgenau aufeinander legen.
 - Nähen Sie die Seitennaht und die Ärmel in einer langen Naht zusammen von der Taille bis zum Ende des Ärmels.  Sie können an der Unterarm Punkt stoppen, um die Farben für den Ärmel zu ändern, wenn Ihr Design dies erfordert.
-- Drücken Sie die Nahtzuschläge und beenden Sie sie wie in Schritt 2.  If you finish the sleeves with the edgestitch method, you will need to go slow for finishing the sleeve seam, as you will be .sewing in the tunnel..
+- Drücken Sie die Nahtzuschläge und beenden Sie sie wie in Schritt 2.  Wenn du die Ärmel mit der Edgestitch-Methode fertigstellst, musst du beim Fertigstellen der Ärmelnaht langsam vorgehen, da du den Tunnel einnähst.
 
 ### Schritt 5: Füge eine Zeichenfolge zur Kapuze hinzu (Optional)
 
 - Nehmen Sie ein passendes Set der Hood Side Stücke, die Sie auf der Außenseite der fertigen Hoodie vorführen möchten.
-- Mark the place for a hole on each side hood piece, along the rim.
+- Markiere die Stelle für ein Loch auf jeder Seite der Haube, entlang des Randes.
 - Das Loch sollte etwa 1,5-2cm vom Rand des Stoffes entfernt sein.  Dies soll sowohl die Nahtzuweisung als auch die Haube erlauben
 - Das Loch sollte über der Höhe auf dem Kopfrand liegen.  Die Schicht zeigt an, wo sich die Seiten der Kapuze an der Vorderseite überlappen, so dass die Schnur oberhalb dieses Punktes verlassen sollte.
 - Sie können die Funktion des Knopflochs Ihrer Nähmaschine in Betracht ziehen, falls sie eine besitzt, um an dieser Stelle ein Knopfloch zu nähen.
@@ -90,7 +90,7 @@ Diese Reihe an 6 Episoden zeigt dir, wie du deinen Hoodie von Anfang bis Ende n�
 - Um die Kapuze zu schließen, werden die unteren Schichten entlang der Halslinie zusammengeführt.  Wenn du keine/n Overlock/Serger hast, verwende eine Zick-Zack-Naht.
 - (Optional) Wenn Sie Löcher für eine Zeichenkette hinzugefügt haben, können Sie die Zeichenkette jetzt einbinden.
 
-### Step 8: Preparing a Neckband and Attaching the Hood
+### Schritt 8: Vorbereiten des Nackenbandes und Anbringen der Kapuze
 
 - Schneiden Sie einen quer gerichteten Stoffstreifen aus Ihrem Hauptstoff, Ihre Nackenöffnung + 2cm lang (3/4 Zoll) und dreifachen Sie Ihren Nackennaht breit.
 - Platziere gute Seiten zusammen auf das Halsbindungsstück, Dann nähen Sie eine Naht von 1 cm entlang der kurzen Seite, um die Bindung zu einem Rundband zu machen.
