@@ -1,5 +1,5 @@
 ---
-title: "Trayvon tie: Fabric Options"
+title: "Trayvon stropdas: Stof Opties"
 ---
 
 ## Stof voor een das
