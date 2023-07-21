@@ -1,5 +1,5 @@
 ---
-title: "Brian body block: Cutting Instructions"
+title: "Блок для тіла Брайана: Інструкція з розкрою"
 ---
 
 **Основна тканина**
