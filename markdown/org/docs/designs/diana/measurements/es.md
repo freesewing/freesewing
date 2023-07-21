@@ -1,5 +1,5 @@
 ---
-title: "Diana draped top: Required Measurements"
+title: "Top drapeado Diana: Medidas requeridas"
 ---
 
 <PatternMeasurements pattern='diana' />
