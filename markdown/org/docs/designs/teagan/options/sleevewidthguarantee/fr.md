@@ -2,7 +2,7 @@
 title: Largeur des manches garantie
 ---
 
-Controls how much of the sleeve width will be guaranteed. This determines how much we can alter the sleeve width to fit the sleeve in the armhole.
+Contrôle la proportion de la largeur de la manche qui sera garantie. Cela détermine dans quelle mesure nous pouvons modifier la largeur de la manche pour l'adapter à l'emmanchure.
 
 ## Effet de cette option sur le motif
 
