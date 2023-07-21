@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a5256f3dc2e94bbcaa08f
 intro: "СП - плідний творець і друг сайту. Як і годиться, вони зробили цю приголомшливу маску для обличчя \"Флоренція\"."
 title: "СП робить Флоренцію"
 designs:
-  - "florence"
+  - "Флоренція"
 ---
 
 
