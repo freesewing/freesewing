@@ -1,5 +1,5 @@
 ---
-title: "Hugo hoodie: Cutting Instructions"
+title: "Худі Hugo: Інструкція з крою"
 ---
 
 - **Основна тканина**
