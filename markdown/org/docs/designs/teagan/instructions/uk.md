@@ -1,5 +1,5 @@
 ---
-title: "Teagan T-shirt: Sewing Instructions"
+title: "Футболка Teagan: Інструкція з пошиття"
 ---
 
 ## Крок 1: Зшийте плечові шви
