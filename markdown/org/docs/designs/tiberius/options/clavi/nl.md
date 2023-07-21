@@ -2,7 +2,7 @@
 title: "Clavi"
 ---
 
-Whether or not to include guides for clavi
+Wel of geen gidsen voor clavi
 
 ## Effect van deze optie op het patroon
 
