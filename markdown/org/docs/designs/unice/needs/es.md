@@ -1,12 +1,12 @@
 ---
-title: "Unice undies: What you need"
+title: "Ropa interior Unice: Lo que necesitas"
 ---
 
-To make Unice, you will need the following:
+Para hacer Unice, necesitarás lo siguiente:
 
 - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
-- About 0.7 meters (0.8 yards) of a suitable fabric (see [Fabric options](/docs/patterns/unice/fabric))
-- About 3 meters (3.3 yards) of underwear elastic, such as picot elastic or fold over elastic
+- Unos 0,7 metros (0,8 yardas) de una tela adecuada (consulta [Opciones de tela](/docs/patterns/unice/fabric))
+- Unos 3 metros (3,3 yardas) de elástico para ropa interior, como elástico picot o elástico plegable
 
 <Tip>
 
@@ -16,6 +16,6 @@ Si se utiliza el pliegue sobre el elástico (FOE) o si se vincula el tejido, Ust
 
 ##### Una remalladora es interesante, pero opcional
 
-Como con todas las telas elásticas, una remalladora te hará la vida más fácil. Si no tienes una no te desesperes. Realmente no la necesitas. You can just sew Unice with a zigzag stitch.
+Como con todas las telas elásticas, una remalladora te hará la vida más fácil. Si no tienes una no te desesperes. Realmente no la necesitas. Puedes coser Unice con una puntada en zigzag.
 
 </Tip>
