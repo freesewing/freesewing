@@ -1,16 +1,16 @@
 ---
 maker: "Joost De Cock"
-caption: "The first ever pair of Charlie Chinos"
+caption: "La toute première paire de Charlie Chinos"
 date: "2021-05-23"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4316e61ba68384487d5e6c1f6c50c3fc935ebdcb-600x800.jpg"
-intro: "Joost made this pair of Charlie Chinos trousers and the entire FreeSewing community immediately fell for the trousers' design and the fabric. While Joost couldn't tell us where the fabric came from (it was from his stash), he  release the Charlie pattern a few days later."
-title: "Charlie by Joost"
+intro: "Joost a réalisé cette paire de pantalons Charlie Chinos et toute la communauté FreeSewing a immédiatement craqué pour le design du pantalon et le tissu. Joost n'a pas pu nous dire d'où venait le tissu (il provenait de sa réserve), mais il a publié le modèle Charlie quelques jours plus tard."
+title: "Charlie par Joost"
 designs:
   - "charlie"
 ---
 
 
-Joost made this pair of Charlie Chinos trousers and the entire FreeSewing community immediately fell for the trousers' design and the fabric. While Joost couldn't tell us where the fabric came from (it was from his stash), he *did* release the Charlie pattern a few days later.
+Joost a réalisé cette paire de pantalons Charlie Chinos et toute la communauté FreeSewing a immédiatement craqué pour le design du pantalon et le tissu. Bien que Joost n'ait pas pu nous dire d'où venait le tissu (il provenait de sa réserve), il a ** publié le modèle Charlie quelques jours plus tard.
 
-This picture is from Joost, [@j__st on Twitter](https://twitter.com/j__st). Elle est publiée ici avec son autorisation.
+Cette image est de Joost, [@j__st sur Twitter](https://twitter.com/j__st). Elle est publiée ici avec son autorisation.
 
