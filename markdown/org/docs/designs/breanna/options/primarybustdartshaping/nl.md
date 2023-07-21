@@ -2,7 +2,7 @@
 title: "Bust nepen vormgeving"
 ---
 
-Controls the balance between the primary and secondary bust darts.
+Regelt de balans tussen de primaire en secundaire bustes.
 
 ## Effect van deze optie op het patroon
 
