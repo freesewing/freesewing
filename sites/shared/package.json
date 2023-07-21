@@ -64,8 +64,8 @@
     "html-to-text": "^9.0.5"
   },
   "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=8"
+    "node": "18",
+    "npm": "9"
   },
   "private": true
 }

@@ -63,7 +63,7 @@ The current production code -- what is running on freesewing.org -- is in the `v
 
 ## Getting started ⚡ 
 
-As this is a monorepo. You'll need [NodeJS v16](https://nodejs.org), [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/) on your system.  
+As this is a monorepo. You'll need [NodeJS v18](https://nodejs.org), [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/) on your system.  
 Once you have those, clone (or fork) this repo and run `yarn kickstart`:
 
 ```bash

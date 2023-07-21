@@ -57,8 +57,8 @@
     "prisma": "5.0.0"
   },
   "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=8"
+    "node": "18",
+    "npm": "9"
   },
   "private": true
 }

@@ -53,10 +53,8 @@ const BlogPage = ({ locale, slug, page }) => {
 export async function getStaticProps({ params, locale }) {
   const { slug } = params
 
-  // if the slug isn't present in the prebuilt order, return 404
-  if (order[locale].indexOf(`blog/${slug}`) === -1) {
-    return { notFound: true }
-  }
+  // if the slug isn't present in the prebuilt posts, return 404
+  if (!Object.keys(posts).includes(`blog/${slug}`)) return { notFound: true }
 
   return {
     props: {
