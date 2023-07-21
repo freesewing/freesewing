@@ -1,5 +1,5 @@
 ---
-title: "Breanna body block: Sewing Instructions"
+title: "Боді-блок Бріанна: Інструкція з пошиття"
 ---
 
 <Note>
