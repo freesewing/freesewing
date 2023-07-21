@@ -1,17 +1,17 @@
 ---
 maker: "невідомо"
-caption: "Sorcha wears a red and blue tartan Florence face mask"
+caption: "Сорча носить червоно-синю тартанову маску для обличчя \"Флоренція"
 date: "2020-03-01"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/36e7302d2cbddb4d0d739d8c25e7b0c388c1fee9-2000x1500.jpg"
-intro: "A Florence face mask in red and blue"
-title: "A Florence face mask in red and blue"
+intro: "Червоно-синя маска для обличчя \"Флоренція"
+title: "Червоно-синя маска для обличчя \"Флоренція"
 designs:
-  - "florence"
+  - "Флоренція"
 ---
 
-Sorcha is a healthcare provider working in the [Antwerp University Hospital](https://www.uza.be/), one of Belgium's two centres of reference for coronavirus.
+Сорча - медичний працівник, який працює в Університетській лікарні Антверпена [,](https://www.uza.be/), - одному з двох бельгійських центрів з вивчення коронавірусу.
 
-At work, she wears a medical-grade face mask. This [Florence face mask](/designs/florence/) is for her commute to work on public transport.
+На роботі вона носить медичну маску для обличчя. Ця [маска для обличчя Флоренс](/designs/florence/) призначена для її поїздок на роботу в громадському транспорті.
 
 
 
