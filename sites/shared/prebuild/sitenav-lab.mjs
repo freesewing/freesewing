@@ -3,7 +3,6 @@ import { loadTranslations } from './shared.mjs'
 import { freeSewingConfig as conf } from '../config/freesewing.config.mjs'
 import { designs, tags } from '../config/designs.mjs'
 import i18next from 'i18next'
-
 /* Remember Mc_Shifton:
  * Note: Set 'm' to truthy to show this as a main section in the side-navigation (optional)
  * Note: Set 'c' to set the control level to hide things from users (optional)
@@ -16,6 +15,7 @@ import i18next from 'i18next'
  * Note: Set 'o' to set the order (optional)
  * Note: Set 'n' to mark this as a noisy entry that should always be closed unless active (like blog)
  */
+
 export const extendSiteNav = async (pages, lang) => {
   const translations = await loadTranslations({
     site: 'lab',
