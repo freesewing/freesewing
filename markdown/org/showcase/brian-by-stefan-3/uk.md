@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c640419601bc0933c4a8c
 intro: "Ця фотографія спочатку з'явилася в твіттері @SThanheiser ."
 title: "Стефан робить футболку за мотивами Брайана 3/4"
 designs:
-  - "brian"
+  - "Брайан"
 ---
 
 
