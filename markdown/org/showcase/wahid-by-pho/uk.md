@@ -1,24 +1,24 @@
 ---
 maker: "невідомо"
-caption: "Wahid waistcoat by Pho"
+caption: "Жилет вахід від Pho"
 date: "2021-05-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e172985d483a277509c6cbaf64fcd58ded7a95ea-521x800.jpg"
-intro: "Pho made this stellar Wahid! They shared:"
-title: "Wahid by Pho"
+intro: "Фо зробив цього зоряного вахіда! Вони поділилися:"
+title: "Вахід від Фо"
 designs:
-  - "wahid"
+  - "вахід"
 ---
 
-Pho made this stellar Wahid! They shared:
+Фо зробив цього зоряного вахіда! Вони поділилися:
 
-> Wahid to my measurements. I opted out of buttons since I sit a lot at work and a completely fitted garment for me wouldn't be able to stay buttoned. I also did the pocket bags as one long piece of fabric which was easiest for me to understand under guidance of a sewing teacher.  I might opt for snaps or just leave it open. My size stomach wise is bigger than my chest. Amazing how a garment my size makes me look great! Thanks for the pattern!
+> Вахід за моїми мірками. Я відмовилася від ґудзиків, оскільки багато сиджу на роботі, і повністю приталений одяг не міг би залишатися застебнутим на всі ґудзики. Я також робила кишенькові сумки як один довгий шматок тканини, що було найлегше для мене під керівництвом вчительки шиття.  Я можу вибрати застібки або просто залишити його відкритим. Мій розмір шлунку більший за розмір грудей. Дивно, як одяг мого розміру допомагає мені виглядати чудово! Дякую за викрійку!
 
-One more picture of their fantastic work:
+Ще одна фотографія їхньої фантастичної роботи:
 
 ![Вид збоку](https://posts.freesewing.org/uploads/wahid_by_pho_wahidbypho2_ba0be6a31c.jpg "Вид збоку")
 
 <Note>
 
-This picture is from Pho on Discord. Передруковується з дозволу редакції.
+Це фото з фільму "Фо на розбраті". Передруковується з дозволу редакції.
 
 </Note>
