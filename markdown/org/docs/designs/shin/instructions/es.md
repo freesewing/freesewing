@@ -1,5 +1,5 @@
 ---
-title: "Shin swim trunks: Sewing Instructions"
+title: "Bañador de espinilla: Instrucciones de costura"
 ---
 
 > ### Imágenes próximamente
