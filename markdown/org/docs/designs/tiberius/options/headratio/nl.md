@@ -1,8 +1,8 @@
 ---
-title: "Head ratio"
+title: "Verhouding hoofd"
 ---
 
-Controls the size of the head opening
+Bepaalt de grootte van de hoofdopening
 
 ## Effect van deze optie op het patroon
 
