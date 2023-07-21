@@ -1,5 +1,5 @@
 ---
-title: "Hugo hoodie: Cutting Instructions"
+title: "Sudadera con capucha Hugo: Instrucciones de corte"
 ---
 
 - **Tela principal**
@@ -19,7 +19,7 @@ title: "Hugo hoodie: Cutting Instructions"
 
 ###### Caveats
 
-- **sleeve**: There's a single notch at the front, and a double notch at the back. Estas muñecas coinciden en las partes delanteras y traseras respectivamente.
+- **manga**: Hay una sola muesca delante y una muesca doble detrás. Estas muñecas coinciden en las partes delanteras y traseras respectivamente.
 - **cara de bolsillo** y **capa**: Cuidado con las líneas de graines en estas partes
 
 Porque la manga de Hugo también cubre una porción de la parte trasera y delantera,
