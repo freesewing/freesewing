@@ -1,5 +1,5 @@
 ---
-title: "Waralee wrap pants: Sewing Instructions"
+title: "Штани з запахом Waralee: Інструкція з пошиття"
 ---
 
 <Warning>
