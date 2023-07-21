@@ -2,7 +2,7 @@
 title: "Übertritt vorne"
 ---
 
-How far the fabric extends beyond the button closure.
+Wie weit der Stoff über den Knopfverschluss hinausgeht.
 
 ## Effekt dieser Option auf das Schnittmuster
 
