@@ -1,5 +1,5 @@
 ---
-title: "Teagan T-shirt: Cutting Instructions"
+title: "Teagan-T-Shirt: Schnittanleitung"
 ---
 
 - Schneiden Sie 1 zurück auf die Faltung.
