@@ -2,7 +2,7 @@
 title: "Größe der Schulterabnäher"
 ---
 
-The size of the back shoulder dart.
+Die Größe des hinteren Schulterabnähers.
 
 ## Effekt dieser Option auf das Schnittmuster
 
