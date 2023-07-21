@@ -2,7 +2,7 @@
 title: "Grootte neep taille"
 ---
 
-The size of the back waist dart
+De grootte van de tailleschets
 
 ## Effect van deze optie op het patroon
 
