@@ -1,73 +1,29 @@
 ---
 date: "2022-10-01"
 edition: "2022q4"
-intro: "2022 Autumn edition"
-title: "2022 Autumn edition"
+intro: "2022 Edición de otoño"
+title: "2022 Edición de otoño"
 ---
 
-Welcome to the 2022 Autumn edition of the FreeSewing newsletter. Here's what's in it for you today:
+Bienvenido a la edición de otoño de 2022 del boletín FreeSewing. Esto es lo que te espera hoy:
 
-- 🏁 FreeSewing 2.22 is out and will be the final v2 release (1-minute read - by Joost)
-- 🔱 FreeSewing version 3; What is it, and when can you expect it? (3-minute read - by Joost)
-- 🚀 We've crossed the 50.000 commits milestone (1-minute read - by Joost)
-- ⛵ FreeSewing at the Serendiep in Rotterdam (1-minute read - by Lexander)
-- 🕵️ Behind the Seams: Enoch (4-minute read - by Karen & Enoch)
+- 🏁 FreeSewing 2.22 ha salido y será la versión final v2 (lectura de 1 minuto - por Joost)
+- 🔱 FreeSewing versión 3; ¿Qué es y cuándo puedes esperarlo? (Lectura de 3 minutos - por Joost)
+- 🚀 Hemos superado el hito de los 50.000 commits (lectura de 1 minuto - por Joost)
+- ⛵ FreeSewing en el Serendiep de Rotterdam (lectura de 1 minuto - por Lexander)
+- 🕵️ Tras las costuras: Enoch (lectura de 4 minutos - por Karen & Enoch)
 
-Let's jump right in!
-
-&nbsp;
+¡Vamos allá!
 
 &nbsp;
 
-## 🏁 FreeSewing 2.22 is out and will be the final v2 release
-
-FreeSewing 2.22 came out towards the end of August, featuring a new plushie design by Wouter — who also signed for Hi the shark.  This time, it's [Octoplushy](https://freesewing.org/designs/octoplushy/) which is, you guessed it, an octopus.
-
-What's certainly less adorable but perhaps not relevant is that this will be the final minor release under version 2.  That's right, version 3 of FreeSewing is coming, and while we continue to support version 2 — not to mention that it's still powering FreeSewing.org — our focus is now very much on the next major version: FreeSewing v3.
-
 &nbsp;
 
----
+## 🏁 FreeSewing 2.22 ha salido y será la versión final v2
 
-&nbsp;
+FreeSewing 2.22 salió a finales de agosto, con un nuevo diseño de peluche de Wouter, que también firmó por Hi el tiburón.  Esta vez se trata de [Octoplushy](https://freesewing.org/designs/octoplushy/) que es, lo has adivinado , un pulpo.
 
-## 🔱 FreeSewing version 3; What is it, and when can you expect it?
-
-For a bit over a month now, we've put the version 2 code base in long-term storage and have started working towards version 3. And while it will be a while before this lands in production — which means FreeSewing.org for us — I'd like to give a very brief highlight tour of some of the things that are happening with FreeSewing version 3 right now that I am personally most excited about.
-
-### Part-level configuration, aka pack support
-
-On [our road map](https://github.com/freesewing/freesewing/discussions/1278) — which if you have been paying attention has ever more things under the *already implemented* heading — we had so-called support for *packs*. The idea was that we'd love to make it possible to create designs by freely combining different components. Like perhaps you'd get the sleeves from a *sleeve pack* and the collar from a *collar pack*, add some pockets from a *collar pack* and so on.
-
-It's one of those things that makes a lot of sense, but begs the question: How will all of this work under the hood? In v2 of FreeSewing, implementing these ideas would have been non-trivial because even though we support extending patterns into other designs, the process is too cumbersome for this level of ad-hoc mashing together different designs.
-
-So that's something we wanted to address in version 3, and to do so we've essentially move all configuration to the part level. For example a sleeve part will have it's own options defined and list what measurements it needs and so on. You can now just pull that sleeve part out of the design (or in the future a sleeve pack) and use it in your own design without having to worry about measurements and options and so on.
-
-It's the most fundamental change in V3, but it's something that will open the door to a lot of creative combinations of various designs in the future.
-
-### Support for multiple sets of settings, or as we call them: Multisets
-
-Patterns are ultimately drafted for users by passing them a bunch of *settings*. The measurements to use, how you'd like the options to be just your way and so on.
-
-In FreeSewing version 3, you'll still be able to pass multiple sets of these settings to the pattern. This has a bunch of interesting applications. For example, if you're working with an asymmetric body, you'd be able to pass in two different sets of measurements and say "*give me those and those parts with these measurements, and the other parts with those measurements*".
-
-We also use this new feature under the hood to handle how we *sample* patterns. Which is when we compare various iterations of a pattern with each other. This used to be somewhat bolted on top in a semi-awkward way. But in version 3, it's as simple as compiling a list of different sets of settings (since one gets tired of typing/saying *sets of settings* rather quickly, we refer to them as *multisets*) and then we can *simply* pass them to the pattern and it *just works*.
-
-### Stack support
-
-Closely related to multiset support is support for stacks in the layout phase. Stacks are a bit like *layers*. Typically, when lay-outing each part is its own thing and we would lay them out individually. Now, you can say that different parts are part of the same *stack* and they would be stacked on top of each other in the layout, like layers.
-
-It's once again something we use internally for some of our sampling/comparing work, but also opens up interesting possibilities and I'm curious to see how people will end up using these features.
-
-### And so much more
-
-There's really is a lot more going on in version 3, with improvements and tweaks big and small. But these are some of the more fundamental changes. We're also still working on it, so if you have a great idea, [our road map](https://github.com/freesewing/freesewing/discussions/1278) is the more formal way to propose them. For a more informal chat, stop by [the FreeSewing Discord](https://discord.freesewing.org/) where we hang out and coordinate our work.
-
-### When can you expect version 3?
-
-The short answer to when you can expect version 3 is *sometime in 2023*. If that seems long, it's because we're really re-working things from the ground up. The changes outlined above are really foundational changes, and they need to ripple through the entire machinery built on top of those foundations before it can all come together in something that can be released on FreeSewing.org.
-
-And we also want to make sure we get it right. So we're going to keep on keeping on, and release it when it's ready.
+Lo que sin duda es menos adorable, pero quizá no relevante, es que ésta será la última versión menor de la versión 2.  Así es, la versión 3 de FreeSewing está a punto de llegar , y aunque seguimos dando soporte a la versión 2 -por no mencionar que sigue alimentando FreeSewing.org- nuestra atención se centra ahora en la próxima gran versión : FreeSewing v3.
 
 &nbsp;
 
@@ -75,11 +31,43 @@ And we also want to make sure we get it right. So we're going to keep on keeping
 
 &nbsp;
 
-## 🚀 We've crossed the 50.000 commits milestone
+## 🔱 FreeSewing versión 3; ¿Qué es y cuándo puedes esperarlo?
 
-A couple of days ago, we crossed the threshold of 50.000 commits [on our monorepo](https://github.com/freesewing/freesewing).
+Desde hace algo más de un mes, hemos puesto la base de código de la versión 2 en almacenamiento a largo plazo y hemos empezado a trabajar para la versión 3. Y aunque pasará un tiempo antes de que se ponga en producción -lo que significa FreeSewing.org para nosotros-, me gustaría hacer un breve recorrido por algunas de las cosas que están ocurriendo ahora mismo con la versión 3 de FreeSewing y que personalmente más me entusiasman.
 
-Numbers in itself aren't really that meaningful, not to mention that you can always game the system. So I don't mean to imply that this milestone in itself has some sort of special significance. But I do feel that at a time that most work (on v3) is happening behind the scenes, it serves as a good reminder that FreeSewing is a bit like a swan. It might seem to glide forward seemingly effortlessly at a steady pace, but there is frantic pedaling going on beneath the surface.
+### Configuración a nivel de pieza, también conocido como soporte de paquetes
+
+En [nuestra hoja de ruta](https://github.com/freesewing/freesewing/discussions/1278) -que si has estado atento tiene cada vez más cosas bajo el epígrafe *ya implementadas* - teníamos el llamado apoyo a *paquetes*. La idea era que nos encantaría hacer posible la creación de diseños combinando libremente distintos componentes. Por ejemplo, podrías obtener las mangas de un paquete de mangas ** y el cuello de un paquete de cuello **, añadir algunos bolsillos de un paquete de cuello ** y así sucesivamente.
+
+Es una de esas cosas que tienen mucho sentido, pero plantea la pregunta: ¿Cómo funcionará todo esto bajo el capó? En la v2 de FreeSewing, poner en práctica estas ideas no habría sido trivial porque, aunque admitimos la ampliación de patrones a otros diseños, el proceso es demasiado engorroso para este nivel de mezcla ad hoc de diferentes diseños.
+
+Así que eso es algo que queríamos abordar en la versión 3, y para ello hemos trasladado esencialmente toda la configuración al nivel de pieza. Por ejemplo, una pieza de manguito tendrá sus propias opciones definidas y una lista de las medidas que necesita, etc. Ahora puedes simplemente sacar esa parte de la manga del diseño (o en el futuro un paquete de mangas) y utilizarla en tu propio diseño sin tener que preocuparte de medidas y opciones, etc.
+
+Es el cambio más fundamental de la V3, pero es algo que abrirá la puerta a un montón de combinaciones creativas de varios diseños en el futuro.
+
+### Soporte para múltiples conjuntos de ajustes, o como nosotros los llamamos Conjuntos múltiples
+
+En última instancia, los patrones se redactan para los usuarios pasándoles un montón de ajustes **. Las medidas a utilizar, cómo te gustaría que fueran las opciones a tu manera, etc.
+
+En la versión 3 de FreeSewing, seguirás pudiendo pasar varios conjuntos de estos ajustes al patrón. Esto tiene un montón de aplicaciones interesantes. Por ejemplo, si trabajas con un cuerpo asimétrico, podrías pasar dos conjuntos diferentes de medidas y decir "*dame esas partes con esas medidas, y las otras partes con esas medidas*".
+
+También utilizamos esta nueva función bajo el capó para gestionar la forma en que *muestra los patrones de* . Que es cuando comparamos varias iteraciones de un patrón entre sí. Esto solía estar un poco atornillado en la parte superior de una forma semiincómoda. Pero en la versión 3, es tan sencillo como compilar una lista de diferentes conjuntos de ajustes (como uno se cansa de teclear/decir *conjuntos de ajustes* con bastante rapidez, nos referimos a ellos como *multisets*) y entonces podemos *simplemente* pasarlos al patrón y éste *simplemente funciona*.
+
+### Soporte de pila
+
+Estrechamente relacionado con el soporte de conjuntos múltiples está el soporte de pilas en la fase de disposición. Las pilas son un poco como las capas de **. Normalmente, al maquetar, cada pieza es algo propio y las maquetamos individualmente. Ahora, puedes decir que las distintas piezas forman parte de la misma pila ** y se apilarían unas sobre otras en la maqueta, como capas.
+
+Una vez más, es algo que utilizamos internamente para parte de nuestro trabajo de muestreo/comparación, pero también abre posibilidades interesantes y tengo curiosidad por ver cómo acabará utilizando la gente estas funciones.
+
+### Y mucho más
+
+Realmente hay mucho más en la versión 3, con mejoras y ajustes grandes y pequeños. Pero estos son algunos de los cambios más fundamentales. También seguimos trabajando en ello, así que si tienes una gran idea, [nuestra hoja de ruta](https://github.com/freesewing/freesewing/discussions/1278) es la manera más formal de proponerlas. Para una charla más informal, pásate por [el Discord de FreeSewing](https://discord.freesewing.org/) donde pasamos el rato y coordinamos nuestro trabajo.
+
+### ¿Para cuándo la versión 3?
+
+La respuesta breve a cuándo puedes esperar la versión 3 es *en algún momento de 2023*. Si te parece largo, es porque realmente estamos rehaciendo las cosas desde cero. Los cambios descritos anteriormente son realmente cambios fundacionales, y tienen que propagarse por toda la maquinaria construida sobre esos cimientos antes de que todo pueda unirse en algo que pueda publicarse en FreeSewing.org.
+
+Y también queremos asegurarnos de que lo hacemos bien. Así que seguiremos adelante y lo publicaremos cuando esté listo.
 
 &nbsp;
 
@@ -87,13 +75,11 @@ Numbers in itself aren't really that meaningful, not to mention that you can alw
 
 &nbsp;
 
-## ⛵ FreeSewing at the Serendiep in Rotterdam (1-minute read - by Lexander)
+## 🚀 Hemos superado el hito de los 50.000 commits
 
-FreeSewing was invited to join an exposition hosted by Serendiep, which is a ship that's home to art and science, with a theater space and machines inside. The week-long exposition was part of a bigger whole: the city of Rotterdam is celebrating the 150th birthday of one of their canals.
+Hace un par de días, cruzamos el umbral de los 50.000 commits [en nuestro monorepo](https://github.com/freesewing/freesewing).
 
-The workshop began with me, Lexander, introducing FreeSewing and explaining the concept, and we spent the evening making a sleeveless Teagan as a sleeping shirt. We were with a group of a few people and did the whole FreeSewing process: taking the measurements, assembling the paper pattern, cutting the fabric pieces and sewing them together.
-
-The Teagan fit nicely and overall it was a really fun experience! I’m looking forward to what the future will bring.
+Los números en sí mismos no son realmente tan significativos, por no mencionar que siempre se puede jugar con el sistema. Por tanto, no quiero decir que este hito en sí mismo tenga algún tipo de significado especial. Pero creo que en un momento en que la mayor parte del trabajo (en la v3) se está realizando entre bastidores, sirve como un buen recordatorio de que FreeSewing es un poco como un cisne. Puede parecer que se desliza hacia delante aparentemente sin esfuerzo a un ritmo constante, pero hay un frenético pedaleo bajo la superficie.
 
 &nbsp;
 
@@ -101,79 +87,93 @@ The Teagan fit nicely and overall it was a really fun experience! I’m looking 
 
 &nbsp;
 
-## 🕵️ Behind the Seams: Enoch
+## ⛵ FreeSewing en el Serendiep de Rotterdam (lectura de 1 minuto - por Lexander)
 
-One of our Contributor Call hosts sat down (virtually) with Enoch to learn a little more about hir background and journey to becoming a FreeSewing contributor! The interview below has been edited for length, and any errors, oversights, etc. are entirely the fault of the interviewer.
+FreeSewing fue invitado a unirse a una exposición organizada por Serendiep, que es una nave que alberga arte y ciencia, con un espacio teatral y máquinas en su interior. La exposición, de una semana de duración, formaba parte de un todo mayor: la ciudad de Rotterdam celebra el 150 aniversario de uno de sus canales.
 
-### How did you learn about FreeSewing?
+El taller comenzó conmigo, Lexander, presentando FreeSewing y explicando el concepto, y pasamos la tarde confeccionando una Teagan sin mangas como camisa de dormir. Estuvimos con un grupo de pocas personas e hicimos todo el proceso de FreeSewing: tomar las medidas, montar el patrón de papel, cortar las piezas de tela y coserlas.
 
-I learned to sew in grade school, but since then hadn’t done much sewing until the pandemic. In March 2020, just before lockdown, I wrapped up a long-time project, so, like many people, I found myself with some free time. Just prior to that I had finally received a diagnosis to explain my decades-long struggle with exhaustion (Restless Legs Syndrome, of all things), and medicating it meant that for the first time ever I had enough energy to have interests and hobbies.
+El Teagan encajaba muy bien y, en general, ¡fue una experiencia muy divertida! Espero con impaciencia lo que nos deparará el futuro.
 
-So I dusted off my old sewing machine and started playing around. At some point I was trying to make a piece that I couldn’t find a pattern for, so I learned enough pattern drafting to pull something together to make it happen. Because I'm a coder with an interest in open source, once I had done it in paper for myself, I wanted to automate it, and in automating it I wanted to make it available for as many bodies as possible. I decided I needed a parametric pattern, and tried out a few different things before finding FreeSewing.
+&nbsp;
 
-### How did you become a contributor?
+---
 
-Once I started developing patterns in FreeSewing, I found myself thinking, “It would be cool if there were this. It would be cool if there were that.” For instance, as I was designing, I wanted to be able to generate line drawings to preview how different settings and measurements would impact the finished garments, and then I wanted to be able to drop in my fabrics and see how they would look on the designs. Adding the custom option types I wanted wasn't very straightforward, so my first PR was me trying to make it easier to replace small parts of the workbench. My first few PRs broke some stuff, so I got more involved just trying to clean up after myself. And then I really got into it.
+&nbsp;
 
-I've worked on open source software before in small amounts, and I've been the sole developer on software that was technically open sourced, but this is my first time being in the community of an open source software, and I'm finding that part of it really rewarding. To have all these people focusing on all these different areas of making it good, and all in basically constant communication with one another is super cool. The human element really matters, and FreeSewing is so much about the human element at all levels. Iit drives me to contribute at a higher and more consistent level. And I think Joost deserves a lot of credit for having written this massive thing and still managing to really foster this community around building and bettering it.
+## 🕵️ Tras las costuras: Enoch
 
-### What has been your contributor work so far?
+Uno de nuestros anfitriones de la Llamada a Colaboradores se sentó (virtualmente) con Enoch para conocer un poco más su trayectoria y su viaje hasta convertirse en colaborador de FreeSewing. La entrevista que figura a continuación ha sido editada por razones de longitud, y cualquier error, omisión, etc. es enteramente culpa del entrevistador.
 
-I've done a few smaller things, but there are two big things I’ve worked on, and one still in the works!
+### ¿Cómo conociste FreeSewing?
 
-The first is getting Gitpod set up. Gitpod allows you to do your development in the browser, so that you don’t have to manage dependencies locally. This is especially useful for Windows developers because our environment isn't very Windows friendly, and it's not officially supported. I've also recently submitted some updates to the environment to help smooth things for Windows folks who really prefer to develop locally.
+Aprendí a coser en la escuela primaria, pero desde entonces no había cosido mucho hasta la pandemia. En marzo de 2020, justo antes del encierro, terminé un proyecto de larga duración, así que, como mucha gente, me encontré con algo de tiempo libre. Justo antes había recibido por fin un diagnóstico que explicaba mi lucha de décadas contra el agotamiento (el síndrome de las piernas inquietas, entre otras cosas), y medicarlo significaba que por primera vez tenía energía suficiente para tener intereses y aficiones.
 
-The second is an update to the Printing Layout tool for the Lab. I reworked the moving and rotating functionality so that it works more smoothly and we now have snapped rotation in addition to free rotation. I also overhauled our export to PDF system so that when you export it looks as you would expect it to based on how you laid it out. We have a lot more control over the tiling now, and Joost doesn't have to maintain any C code alongside everything else.
+Así que desempolvé mi vieja máquina de coser y me puse a jugar. En algún momento intenté hacer una pieza para la que no podía encontrar un patrón, así que aprendí lo suficiente de dibujo de patrones como para juntar algo para hacerla realidad. Como soy programador y me interesa el código abierto, una vez que lo hice en papel para mí, quise automatizarlo, y al automatizarlo quise ponerlo a disposición del mayor número posible de personas. Decidí que necesitaba un patrón paramétrico y probé varias cosas antes de encontrar FreeSewing.
 
-Still In progress is the Cutting Layout tool, which will allow you to specify a fabric width and lay out all the pieces (and if you're supposed to cut two, it'll give you two of them) so you can figure out how much fabric your pattern needs.
+### ¿Cómo te convertiste en colaborador?
 
-### Are you a sewist? A coder? Both? Neither?
+Una vez que empecé a desarrollar patrones en FreeSewing, me encontré pensando: "Sería genial que existiera esto. Sería genial que existiera eso". Por ejemplo, mientras diseñaba, quería poder generar dibujos lineales para ver cómo afectarían los distintos ajustes y medidas a las prendas acabadas, y luego quería poder colocar mis telas y ver cómo quedarían en los diseños. Añadir los tipos de opciones personalizadas que quería no fue muy sencillo, así que mi primer RP consistió en intentar que fuera más fácil sustituir pequeñas partes del banco de trabajo. Mis primeros PR rompieron algunas cosas, así que me involucré más en intentar limpiar lo que ensuciaba. Y entonces me metí de lleno en ello.
 
-Both! But I’ve definitely done more coding. That’s my job, so I’ve done it most days for ten years.
+He trabajado antes en software de código abierto en pequeñas cantidades, y he sido el único desarrollador en software que técnicamente era de código abierto, pero ésta es la primera vez que formo parte de la comunidad de un software de código abierto, y estoy encontrando esa parte realmente gratificante. Tener a toda esta gente centrada en todas estas áreas diferentes para hacerlo bien, y todos en comunicación constante entre sí es genial. El elemento humano realmente importa, y FreeSewing tiene mucho que ver con el elemento humano a todos los niveles. Me impulsa a contribuir a un nivel más alto y constante. Y creo que Joost merece mucho crédito por haber escrito esta cosa masiva y aún así conseguir fomentar realmente esta comunidad en torno a su construcción y mejora.
 
-### When and why did you start sewing?
+### ¿Cuál ha sido tu trabajo como colaborador hasta ahora?
 
-I started sewing early – I took sewing classes in elementary school, and my dad bought me a sewing machine in exchange for promising to hem all his pants (which I never did). Then, except for a semester or two of costume design in college, I hardly sewed again until more recently. I did learn to use an industrial machine, though!
+He hecho algunas cosas más pequeñas, pero hay dos grandes en las que he trabajado, ¡y una que aún está en preparación!
 
-### What are you currently working on?
+La primera es poner en marcha Gitpod. Gitpod te permite hacer tu desarrollo en el navegador, para que no tengas que gestionar las dependencias localmente. Esto es especialmente útil para los desarrolladores de Windows, porque nuestro entorno no es muy amigable con Windows, y no está soportado oficialmente. También he enviado recientemente algunas actualizaciones al entorno para facilitar las cosas a la gente de Windows que realmente prefiere desarrollar localmente.
 
-I've been slow recently, but I always have ideas – I have a whole backlog of things I want to make for my partner, and I also do woodworking and am restoring a steel tanker desk and some rosewood mid-century side tables, and I’m working on a design for the back and front yard of my home. I learned a lot of 3D modeling during the pandemic, and it’s cooling off enough now (in the southern US) to work in the yard.
+La segunda es una actualización de la herramienta Diseño de impresión para el Laboratorio. He rediseñado la función de movimiento y rotación para que funcione con más fluidez y ahora tenemos rotación encajada además de rotación libre. También he revisado nuestro sistema de exportación a PDF para que, cuando lo exportes, tenga el aspecto que esperas en función de cómo lo hayas maquetado. Ahora tenemos mucho más control sobre el embaldosado, y Joost no tiene que mantener ningún código C junto con todo lo demás.
 
-### What project did you just finish?
+Aún está en progreso la herramienta Disposición de corte, que te permitirá especificar un ancho de tela y disponer todas las piezas (y si tienes que cortar dos, te dará dos de ellas) para que puedas calcular cuánta tela necesita tu patrón.
 
-I just finished a tunic for my partner, and I designed the suit I wore to my sister’s wedding.. I handed the design off to a tailor, but when the suit was delivered, the sleeves were attached in the most baffling manner, and I ended up having to attach them myself. It turned out beautiful, although I’m still unhappy with the sleeves.
+### ¿Eres costurera? ¿Un programador? ¿Ambos? ¿Ninguno de los dos?
 
-### What do you love the most about sewing?
+Ambas cosas. Pero definitivamente he codificado más. Ese es mi trabajo, así que lo he hecho casi todos los días durante diez años.
 
-I like that sewing opens up the world. You can realize or fix or customize whatever you want, and sewing allows you to get a perfect fit (or at least try…), whatever that means to you.  I'm a very aesthetically driven person who was raised by very aesthetically driven people, and I believe in the transformative power of clothes, so it's great to be able to take that control for yourself. Plus, I love to have any skill, and sewing is really a whole category of skills that really allows you to imagine a thing and say, “Yeah, we can do that.”
+### ¿Cuándo y por qué empezaste a coser?
 
-### What do you hate the most about sewing?
+Empecé a coser muy pronto: recibí clases de costura en la escuela primaria y mi padre me compró una máquina de coser a cambio de prometerle que le haría el dobladillo a todos sus pantalones (cosa que nunca hice). Después, salvo uno o dos semestres de diseño de vestuario en la universidad, apenas volví a coser hasta hace poco. Sin embargo, ¡aprendí a utilizar una máquina industrial!
 
-Seam ripping – which I have to do a ton of. And I sometimes feel there are too many steps to making the things it interests me to make.
+### ¿En qué estás trabajando actualmente?
 
-I think in reality I don’t often actually find sewing an enjoyable activity – on the one hand, I'm very ambitious, but on the other hand I'm very risk-averse and a massive perfectionist, so I have to do like 3 muslins before a final version of anything. But then I get distracted, which results in a lot of prototypes that I just wear even though they’re more a proof of concept than an actual garment. The most extreme example is from when I was a teen: I was experimenting with making my own chest binders, and the first one I made that worked out, which I wore for probably two years, was held together with ribbons and safety pins. Eventually I needed a new one, which I sewed fully, but for those first two years you can see the outline of safety pins through my shirt in every picture.
+Últimamente he ido despacio, pero siempre tengo ideas: tengo un montón de cosas atrasadas que quiero hacer para mi pareja, y también trabajo la madera y estoy restaurando un escritorio de acero de petrolero y unas mesas auxiliares de palisandro de mediados de siglo, y estoy trabajando en un diseño para el patio trasero y delantero de mi casa. Aprendí mucho de modelado 3D durante la pandemia, y ahora está refrescando lo suficiente (en el sur de EE.UU.) como para trabajar en el jardín.
 
-### What would be your advice for starting sewists?
+### ¿Qué proyecto acabas de terminar?
 
-Start with something that interests you. Lots of folks are taught to start with samplers, zipper bags, etc., and that works if it will interest you to develop the fundamentals. But if you want to tackle something ambitious, buy some cheap fabric and go for it! It won’t be nearly as bad as you think it is, and there’s always more fabric.
+Acabo de terminar una túnica para mi pareja, y diseñé el traje que llevé a la boda de mi hermana.. Entregué el diseño a un sastre, pero cuando me entregaron el traje, las mangas estaban sujetas de la manera más desconcertante, y acabé teniendo que sujetarlas yo mismo. Ha quedado precioso, aunque sigo descontenta con las mangas.
 
-### Do you sew mostly for yourself, or for others like friends and family?
+### ¿Qué es lo que más te gusta de la costura?
 
-I mostly sew for other people, but I’ll make things sometimes because it seems easier to make a piece of clothing than to go and find it. I guess I’m a “make it if I don’t think it exists in the world” kind of sewer, but I’ll buy a tee shirt even though I could sew one. Or one time I sewed a pair of pants the day before a trip because I didn't have enough pants and going shopping sounded more inconvenient.
+Me gusta que la costura abra el mundo. Puedes realizar o arreglar o personalizar lo que quieras, y coser te permite conseguir un ajuste perfecto (o al menos intentarlo…), sea lo que sea lo que eso signifique para ti.  Soy una persona muy orientada a la estética que fue criada por personas muy orientadas a la estética, y creo en el poder transformador de la ropa, así que es estupendo poder asumir ese control por ti misma. Además, me encanta tener cualquier habilidad, y la costura es realmente toda una categoría de habilidades que te permite imaginar una cosa y decir: "Sí, podemos hacer eso".
 
-### What are you up to when you’re not making clothes or designing patterns?
+### ¿Qué es lo que más odias de la costura?
 
-I’m always doing something – woodworking, design, I occasionally code other things, I’m always washing dishes… I like puzzles, and finally finished a 1500 piece one that I kept taking months-long breaks from. I made a little free puzzle library for the finished ones, but nobody ever comes and takes any puzzles from me.
+Rasgar costuras, que tengo que hacer un montón. Y a veces siento que hay demasiados pasos para hacer las cosas que me interesa hacer.
 
-### Do you have pets? Family?
+Por un lado, soy muy ambiciosa, pero por otro soy muy reacia al riesgo y muy perfeccionista, así que tengo que hacer como 3 muselinas antes de tener una versión final de algo. Pero luego me distraigo, lo que da lugar a un montón de prototipos que me pongo aunque sean más una prueba de concepto que una prenda real. El ejemplo más extremo es de cuando era adolescente: Estaba experimentando con hacer mis propias carpetas de pecho, y la primera que hice que funcionó, que llevé probablemente durante dos años, estaba sujeta con cintas e imperdibles. Con el tiempo necesité una nueva, que cosí completamente, pero durante esos dos primeros años puedes ver el contorno de los imperdibles a través de mi camisa en cada foto.
 
-I prefer people to animals, and I live with a partner in a beautiful, pet-free home. My partner and I share a philosophy of "the loved ones of my loved ones are my loved ones", which allows us to think about family really lovingly and expansively. I'm also lucky to have a great adult relationship with my family of origin, though I don't currently live close to them.
+### ¿Cuál sería tu consejo para los costureros principiantes?
 
-### If there was one person you could take with you to an uninhabited island, who would it be? Why?
-Honestly, my partner is the person – we’ve lived together for almost 5 years, and being around each other constantly during the pandemic really brought us closer, (and taught us how to set better boundaries!) so I feel confident we'd be ok in a deserted island scenario. They would grow us food and I would build us shelter, and it would be great.
+Empieza con algo que te interese. A mucha gente le enseñan a empezar con muestrarios, bolsas con cremallera, etc., y eso funciona si te interesa desarrollar los fundamentos. Pero si quieres enfrentarte a algo ambicioso, compra tela barata y ¡a por ello! No será tan malo como crees, y siempre hay más tela.
 
-### Would you like to share ways to follow you on social media?
-You can follow me on Instagram at @enoch\_tries\_everything, but be warned it’s very rarely updated.
+### ¿Coses sobre todo para ti o para otras personas, como amigos y familiares?
+
+Principalmente coso para otras personas, pero a veces hago cosas porque me parece más fácil hacer una prenda que ir a buscarla. Supongo que soy del tipo de costurera "hazlo si no creo que exista en el mundo", pero compraré una camiseta aunque pueda coser una. O una vez cosí un par de pantalones el día antes de un viaje porque no tenía suficientes pantalones e ir de compras sonaba más inconveniente.
+
+### ¿Qué haces cuando no estás haciendo ropa o diseñando patrones?
+
+Siempre estoy haciendo algo: carpintería, diseño, de vez en cuando codifico otras cosas, siempre estoy fregando platos… Me gustan los puzzles, y por fin he terminado uno de 1500 piezas del que me tomaba descansos de meses. Hice una pequeña biblioteca de puzzles gratuitos para los acabados, pero nunca viene nadie y me quita ningún puzzle.
+
+### ¿Tienes animales de compañía? ¿Familia?
+
+Prefiero las personas a los animales, y vivo con una pareja en una bonita casa sin mascotas. Mi pareja y yo compartimos la filosofía de "los seres queridos de mis seres queridos son mis seres queridos", que nos permite pensar en la familia de forma realmente amorosa y expansiva. También tengo la suerte de mantener una gran relación adulta con mi familia de origen, aunque actualmente no vivo cerca de ellos.
+
+### Si hubiera una persona que pudieras llevarte a una isla deshabitada, ¿quién sería? ¿Por qué?
+Sinceramente, mi pareja es la persona adecuada: vivimos juntos desde hace casi 5 años, y el hecho de estar cerca el uno del otro constantemente durante la pandemia nos unió mucho (¡y nos enseñó a establecer mejores límites!), así que estoy segura de que estaríamos bien en una isla desierta. Ellos nos cultivarían la comida y yo nos construiría un refugio, y sería genial.
+
+### ¿Quieres compartir formas de seguirte en las redes sociales?
+Puedes seguirme en Instagram en @enoch\_trata_de_todo, pero te advierto que se actualiza muy poco.
 
 
 
