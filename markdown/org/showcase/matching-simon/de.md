@@ -1,31 +1,31 @@
 ---
-maker: "unknown"
-caption: "Is it me, or does this seriously overload one's cute sensors?"
+maker: "unbekannt"
+caption: "Liegt es an mir, oder überfordert das wirklich die Niedlichkeitssensoren?"
 date: "05.02.2018"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0d0673d758bb9ec6f60c01db5dba00a0d3fea7ee-1080x1080.jpg"
-intro: "Matching simon shirts for these two cuties"
-title: "Matching simon shirts for these two cuties"
+intro: "Passende Simon-Shirts für diese beiden Süßen"
+title: "Passende Simon-Shirts für diese beiden Süßen"
 designs:
   - "simon"
 ---
 
-![Model + tapemeasure](https://posts.freesewing.org/uploads/matching_simon_view2_07c4206346.jpg "Model + tapemeasure")
+![Modell + Tapemaß](https://posts.freesewing.org/uploads/matching_simon_view2_07c4206346.jpg "Modell + Tapemaß")
 
-![That fabric is gorgeous](https://posts.freesewing.org/uploads/matching_simon_view3_6be104bac1.jpg "That fabric is gorgeous")
+![Der Stoff ist wunderschön](https://posts.freesewing.org/uploads/matching_simon_view3_6be104bac1.jpg "Der Stoff ist wunderschön")
 
 ![Schulterneigung](https://posts.freesewing.org/uploads/matching_simon_view4_df63556bdf.jpg "Schulterneigung")
 
-![View from the back](https://posts.freesewing.org/uploads/matching_simon_view5_2e3b570060.jpg "View from the back")
+![Blick von hinten](https://posts.freesewing.org/uploads/matching_simon_view5_2e3b570060.jpg "Blick von hinten")
 
-![Hi camera](https://posts.freesewing.org/uploads/matching_simon_view6_1b0caef89f.jpg)
+![Hallo Kamera](https://posts.freesewing.org/uploads/matching_simon_view6_1b0caef89f.jpg)
 
 <Note>
 
-###### See the originals on the Instragram feed of ecmtts
+###### Sieh dir die Originale auf dem Instragram-Feed von ecmtts
 
-These images are from 
-[the Instagram feed](https://www.instagram.com/ecmtts/)
-of [@ericamattos](/users/ericamattos).
-They are published here with permission.
+an. Diese Bilder sind von 
+[dem Instagram-Feed](https://www.instagram.com/ecmtts/)
+von [@ericamattos](/users/ericamattos).
+Sie werden hier mit Genehmigung veröffentlicht.
 
 </Note>
