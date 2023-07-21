@@ -1,10 +1,10 @@
 ---
-title: "Band (chest) tie ends"
+title: "Puntas de la cinta del pecho"
 ---
 
 ***
 
-Whether you like straight or pointy ends on the tie around your chest
+Si prefieres que las puntas de la cinta alrededor del pecho sean planas o acaben en punta
 
 ## Efecto de esta opción en el patrón
 
