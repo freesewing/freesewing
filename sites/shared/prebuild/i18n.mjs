@@ -125,6 +125,7 @@ const fixData = (rawData, languages) => {
   const data = {}
   for (const [namespace, nsdata] of Object.entries(rawData)) {
     if (typeof nsdata.en === 'undefined') {
+      console.log({ namespace, nsdata })
       throw `No English data for namespace ${namespace}. Bailing out`
     }
     data[namespace] = { en: nsdata.en }
