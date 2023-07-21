@@ -1,19 +1,19 @@
 ---
-title: "Bent body Block: Cutting Instructions"
+title: "Bloc de corps courbé : Instructions de coupe"
 ---
 
 **Tissu principal**
 
 - Couper **1 partie avant** dans le pli.
 - Coupez **1 partie arrière** sur le pli.
-- Cut **2 Top sleeve** parts.
-- Cut **2 Under sleeve** parts.
+- Coupe **2 Manchon supérieur** pièces.
+- Coupe **2 Sous la manche** pièces.
 
-These cutting instructions are just for the default Bent block. Si vous faites des changements sur le bloc ajustez votre coupe en fonction.
+Ces instructions de découpage ne concernent que le bloc Bent par défaut. Si vous faites des changements sur le bloc ajustez votre coupe en fonction.
 
 <Warning>
 
-Comme Bent est un bloc, il n'y a pas de fermeture. If you are making a test Bent you will want to Cut 2 Front parts with seam allowances so you can pin yourself into it.
+Comme Bent est un bloc, il n'y a pas de fermeture. Si tu fais un Bent d'essai, tu voudras découper deux parties avant avec des surplus de couture pour que tu puisses t'y épingler.
 
 </Warning>
 
