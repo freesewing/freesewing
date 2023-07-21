@@ -1,5 +1,5 @@
 ---
-title: "Hugo hoodie: Sewing Instructions"
+title: "Sudadera con capucha Hugo: Instrucciones de costura"
 ---
 
 <Note>
@@ -29,8 +29,8 @@ Esta serie de 6 episodios muestra cómo hacer que tu sudadera comience a termina
 - Unir las piezas de cara al bolsillo con una costura de 1 cm.  Unir tanto el borde largo como el borde más corto en la parte inferior del bolsillo.
 - Recorre cuidadosamente la franquicia de la costura en los pedazos orientados.
 - Girar y girar las piezas de cara hacia afuera.  Luego rodar a mano y presionar las costuras.
-- Topstitch or edge-stitch 0.5 cm along both upper and lower edges on each side of the pocket, to anchor the facing and the seam allowance.
-- Topstitch another line 0.5 cm from the inside upper edge of the facing on each side of the pocket.  Esta línea superior terminará en la línea de stitch del borde inferior.
+- Haz una puntada de remate o de borde de 0,5 cm a lo largo de los bordes superior e inferior de cada lado del bolsillo, para anclar el revestimiento y el margen de costura.
+- Cose otra línea a 0,5 cm del borde superior interior del revestimiento a cada lado del bolsillo.  Esta línea superior terminará en la línea de stitch del borde inferior.
 - Recorre el exceso de cara en el interior del bolsillo.
 - Presione los bordes.
 
@@ -90,7 +90,7 @@ Esta serie de 6 episodios muestra cómo hacer que tu sudadera comience a termina
 - Para cerrar el capó, siéntese juntar las capas inferiores a lo largo de la línea del cuello.  Si no tienes un serger, usa un zig-zag stitch.
 - (Opcional) Si agregó agujeros para una cadena de dibujo, puede hilar la cadena de dibujo ahora.
 
-### Step 8: Preparing a Neckband and Attaching the Hood
+### Paso 8: Preparar una cinta para el cuello y fijar la capucha
 
 - Corta una banda de tela de sentido cruzado de tu tela principal, la abertura de su cuello + 2cm (3/4 pulgadas) largo y triplicar la costura del cuello
 - Coloca buenos lados juntos en el tubo de unión del cuello a continuación, coser una costura de 1 cm a lo largo del lado corto para hacer la unión en una banda circular.
