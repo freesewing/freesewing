@@ -6,6 +6,6 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3a6bef4d69f110ee3ebe4
 intro: "FIXME_no_intro"
 title: "Huey by Paul"
 designs:
-  - "huey"
+  - "Х'юї."
 ---
 
