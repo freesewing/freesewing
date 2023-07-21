@@ -237,7 +237,7 @@ dev:
     'react-copy-to-clipboard': &reactCopyToClipboard '5.1.0'
     'react-dom': *react
     'react-hotkeys-hook': &reactHotkeysHook '4.4.1'
-    'react-instantsearch-dom': &reactInstantsearchDom '6.40.1'
+    'react-instantsearch-dom': &reactInstantsearchDom '6.40.3'
     'react-instantsearch-hooks-web': '6.47.1'
     'react-markdown': &reactMarkdown '8.0.7'
     'react-swipeable': &reactSwipeable '7.0.1'
@@ -367,7 +367,7 @@ sanity:
 shared:
   _:
     '@headlessui/react': *headlessUiReact
-    '@next/mdx': '13.4.10'
+    '@next/mdx': '13.4.11'
     '@resvg/resvg-js': '2.4.1'
     '@tailwindcss/typography': *tailwindTypography
     'Buffer': '0.0.0'
