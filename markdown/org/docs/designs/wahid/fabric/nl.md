@@ -1,5 +1,5 @@
 ---
-title: "Wahid waistcoat: Fabric Options"
+title: "Wahid vest: Stof Opties"
 ---
 
 Alle pakstoffen zijn een goede keuze voor je gilets. Elke stoffenwinkel die de moeite is zou een afdeling met pakstoffen moeten hebben. Je kan binnenwandelen, vragen waar de stoffen voor kostuums zijn, en iets kiezen dat je mooi vindt.
