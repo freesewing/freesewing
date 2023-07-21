@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/abd61dc5abc173a4e858d
 intro: "Wouter створив модель велосипедних бриджів Cornelius на основі систем Keystone. Читайте більше на блозі FreeSewing ."
 title: "Корнеліус від Wouter"
 designs:
-  - "cornelius"
+  - "Корнеліус"
 ---
 
 Wouter створив модель велосипедних бриджів Cornelius на основі систем Keystone. Читайте більше [на блозі FreeSewing](https://freesewing.org/blog/cornelius-cycling-breeches/).
