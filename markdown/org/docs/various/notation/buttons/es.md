@@ -6,7 +6,7 @@ Buttons and buttonholes may come in different sizes, but always have the same sh
 
 <Legend part="buttons">
 
-A button is shown on the left, and a buttonhole on the right
+A la izquierda se muestra un botón y a la derecha un ojal
 
 </Legend>
 
@@ -14,6 +14,6 @@ Las tomas tienen una parte del socket __ y _del stud_ y también se ven como lo 
 
 <Legend part="snaps">
 
-A snap stud is shown on the left, and a snap socket on the right
+A la izquierda se muestra un perno elástico y a la derecha un casquillo elástico
 
 </Legend>
