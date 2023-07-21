@@ -1,8 +1,8 @@
 ---
-title: "Neck Width"
+title: "Halsbreedte"
 ---
 
-The width of the neck can be adjusted. This is a percentage of the head.
+De breedte van de hals kan worden aangepast. Dit is een percentage van het hoofd.
 
 ## Effect van deze optie op het patroon
 
