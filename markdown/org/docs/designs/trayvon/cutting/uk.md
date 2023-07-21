@@ -1,5 +1,5 @@
 ---
-title: "Trayvon tie: Cutting Instructions"
+title: "Краватка з тройону: Інструкція з розкрою"
 ---
 
 - **Основна тканина**
