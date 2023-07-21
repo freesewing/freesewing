@@ -1,5 +1,5 @@
 ---
-title: "Jaeger jacket: Cutting Instructions"
+title: "Єгерська куртка: Інструкція з крою"
 ---
 
 - **Основна тканина**
