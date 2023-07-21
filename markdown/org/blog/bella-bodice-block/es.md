@@ -1,31 +1,31 @@
 ---
 author: "joostdecock"
-caption: "Remember when we were allowed to go outside?"
+caption: "¿Recuerdas cuando nos dejaban salir fuera?"
 date: "2021-01-17"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0faad5ded9176b4cf9e58cf5b05a939ba7670363-1920x1272.jpg"
-intro: "The Bella bodice block for womenswear"
-title: "The Bella bodice block for womenswear"
+intro: "El bloque de corpiño Bella para mujer"
+title: "El bloque de corpiño Bella para mujer"
 ---
 
 
-We've just published a new pattern on this website: [Bella, a bodice block for womenswear](/designs/bella/). It's a block with bust and waist dart, and a waist dart at the back.
+Acabamos de publicar un nuevo patrón en este sitio web: [Bella, un bloque de corpiño para mujer](/designs/bella/). Es un bloque con pinzas en el busto y la cintura, y una pinza en la cintura por detrás.
 
-My goal when venturing into womenswear was to make one foundational block from which we could then spin out a range of different garments.
+Mi objetivo al aventurarme en la ropa de mujer era crear un bloque fundacional a partir del cual pudiéramos crear una gama de prendas diferentes.
 
-Which is why we have [Breanna](/designs/breanna/), which I designed from scratch. Unfortunately, it hasn't been the end-all be-all that I — perhaps naively — hoped it would be.
+Por eso tenemos [Breanna](/designs/breanna/), que diseñé desde cero. Desgraciadamente, no ha sido el todo que yo -quizás ingenuamente- esperaba que fuera.
 
-For Bella, I worked with someone from the industry to implement a design that is commonly used for commercial garment making. As such, I am curious to see how this one will pan out.
+Para Bella, trabajé con alguien de la industria para poner en práctica un diseño que se utiliza habitualmente para la confección de prendas comerciales. Por ello, tengo curiosidad por ver cómo se desarrolla.
 
-My initial plan was to also make a variation with a shoulder dart at the front, to replace the bust dart, but in the end I settled for getting it released, rather than work on it longer.
+Mi plan inicial era hacer también una variación con una pinza en los hombros por delante, para sustituir a la pinza del busto, pero al final me conformé con estrenarla, en lugar de trabajar en ella más tiempo.
 
-Which brings me to:
+Lo que me lleva a
 
-##### I'm taking a break from womenswear
+##### Me tomo un descanso de la ropa de mujer
 
-I feel like I'm expending a lot of effort here for little result. It's getting me down, and I need a win.
+Tengo la sensación de estar gastando mucho esfuerzo para obtener pocos resultados. Me está deprimiendo y necesito una victoria.
 
-I want to work on something that I can not only design, but also make and wear. Something that gives me joy, and makes me feel like I know what I'm doing.
+Quiero trabajar en algo que no sólo pueda diseñar, sino también fabricar y llevar. Algo que me dé alegría y me haga sentir que sé lo que hago.
 
-So while I'll still help out people who want to design for women themselves, I am taking a break from womenswear. 
+Así que, aunque seguiré ayudando a la gente que quiera diseñar para mujeres, me estoy tomando un descanso de la ropa de mujer. 
 
 
