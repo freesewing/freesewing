@@ -1,12 +1,12 @@
 ---
-title: "Benjamin bow tie: Sewing Instructions"
+title: "Benjamin Fliege: Anleitung zum Nähen"
 ---
 
 ## Anmerkungen und Hinweise
 
 ### Präzision
 
-Since a bow tie is a rather small item, precision with sewing is key to a good result. Jeder leichte Unterschied zwischen dem oberen und unteren Teil der Schleife wird hervorstechen. Um gute Ergebnisse zu erzielen, fand ich es immer sehr hilfreich, die Nahtlinie auf die Einlage zu übertragen und dieser beim Nähen zu folgen.
+Da eine Fliege eher klein ist, ist Präzision beim Nähen der Schlüssel zu einem guten Ergebnis. Jeder leichte Unterschied zwischen dem oberen und unteren Teil der Schleife wird hervorstechen. Um gute Ergebnisse zu erzielen, fand ich es immer sehr hilfreich, die Nahtlinie auf die Einlage zu übertragen und dieser beim Nähen zu folgen.
 
 ### Setze das Bügeleisen weise ein
 
@@ -20,26 +20,26 @@ Dieses Schnittmuster enthält einen Fadenlauf. Der Fadenlauf ist hier größtent
 
 <Note>
 
-If this all sounds very confusing, might I suggest reading the help
-page on [Fabric grain](/docs/sewing/fabric-grain).
+Wenn das alles sehr verwirrend klingt, empfehle ich dir, die Hilfeseite
+zum Thema [Stoffmaserung] (/docs/sewing/fabric-grain) zu lesen.
 
 </Note>
 
-### Bow tie adjustment ribbon and hardware
+### Band und Beschläge zur Einstellung der Fliege
 
-By default, this design makes a fixed-length bow tie that is the right length for a certain neck size. However, by enabling the Adjustment Ribbon option, it can also make a tie that uses an adjustment ribbon and hardware that makes the bow tie adjustable to different neck sizes. Das ist sehr nützlich, wenn deine Hemden nicht alle dasselbe Halsmaß/Kragenweite haben oder wenn du manchmal gerne Hemden trägst, die etwas mehr Zugabe am Hals haben.
+Standardmäßig macht dieses Design eine Fliege mit fester Länge, die die richtige Länge für eine bestimmte Halsgröße hat. Wenn du jedoch die Option Anpassungsband aktivierst, kannst du auch eine Krawatte erstellen, die ein Anpassungsband und Beschläge verwendet, mit denen sich die Fliege an verschiedene Halsgrößen anpassen lässt. Das ist sehr nützlich, wenn deine Hemden nicht alle dasselbe Halsmaß/Kragenweite haben oder wenn du manchmal gerne Hemden trägst, die etwas mehr Zugabe am Hals haben.
 
-These adjustment ribbons and bow tie hardware can be found in the better haberdasheries or can be ordered online.
+Diese Anpassungsbänder und Fliegenhalter findest du in den besseren Kurzwarenläden oder kannst sie online bestellen.
 
 <Note>
 
-These instructions are for the type of adjustment ribbon that comes with
-holes at regular intervals, to be used in combination with two-piece
-hardware consisting of an oval loop part and a part with a smaller loop
-and attached T-shaped hook.
+Diese Anleitung bezieht sich auf die Art von Verstellband, das in regelmäßigen Abständen mit
+Löchern versehen ist. Es wird in Kombination mit dem zweiteiligen
+Beschlag verwendet, der aus einem ovalen Schlaufenteil und einem Teil mit einer kleineren Schlaufe
+und einem angebrachten T-förmigen Haken besteht.
 
-There are other styles of bow tie ribbons and hardware, but their use is
-outside the scope of these instructions.
+Es gibt noch andere Arten von Fliegenbändern und Beschlägen, aber ihre Verwendung liegt
+außerhalb des Rahmens dieser Anleitung.
 
 </Note>
 
@@ -55,15 +55,15 @@ Bringe Einlage an allen Teilen an, wo du sie für notwendig hältst.
 
 ### Ohne Einstellband
 
-#### Step 2: Sew the bow to the collar band
+#### Schritt 2: Nähen Sie die Schleife an das Kragenband
 
-Put one of the Collar Band parts on one of the Bow parts, right sides together. Richte die Enden beider Stücke aus. Nähe nun über das Ende um beide Teile zusammenzufügen.
+Lege eines der Kragenbandteile auf eines der Schleifenteile, rechts auf rechts. Richte die Enden beider Stücke aus. Nähe nun über das Ende um beide Teile zusammenzufügen.
 
-![Sew the collar band to the bow](step12.png)
+![Das Kragenband an die Schleife nähen](step12.png)
 
-In a similar fashion, sew a second Bow part to the other end of the same Collar Band.
+Auf ähnliche Weise nähst du ein zweites Schleifenteil an das andere Ende desselben Kragenbandes.
 
-Repeat these steps to sew the other 2 Bows to the other Collar Band.
+Wiederhole diese Schritte, um die anderen 2 Schleifen an das andere Kragenband zu nähen.
 
 Alle Nähte außeinander bügeln.
 
@@ -73,7 +73,7 @@ Nun hast du zwei identische einseitige Fliegen.
 
 ![Nähe beide Seiten zusammen](step13.png)
 
-Lege beide Seiten aufeinander, rechte Seiten zusammen. Sew all along the edges, but leave an area of 5 cm open in the middle of the collar band. Durch diese Öffnung werden wir die Fliege auf rechts wenden.
+Lege beide Seiten aufeinander, rechte Seiten zusammen. Näht alle entlang der Kanten, lasst aber in der Mitte des Kragenbandes einen Bereich von 5 cm offen. Durch diese Öffnung werden wir die Fliege auf rechts wenden.
 
 #### Schritt 4: Wenden
 
@@ -89,7 +89,7 @@ Sobald du die Fliege auf rechts gewendet hast, drücke alle Ecken und Kanten nac
 
 ![Die Fliege schließen](step15.png)
 
-Now all that is left is closing the little hole we used to turn the bow tie right side out. Du kannst dies per Hand mit einem Leiterstich oder einem Blindstich tun. Oder du nimmst die Maschine und nähst direkt an der Kante des Bandes entlang. Da diese Stelle normalerweise vom Kragen deines Hemdes verdeckt wird, wird es nicht so auffallen.
+Jetzt muss nur noch das kleine Loch geschlossen werden, mit dem wir die Fliege auf die richtige Seite gedreht haben. Du kannst dies per Hand mit einem Leiterstich oder einem Blindstich tun. Oder du nimmst die Maschine und nähst direkt an der Kante des Bandes entlang. Da diese Stelle normalerweise vom Kragen deines Hemdes verdeckt wird, wird es nicht so auffallen.
 
 Bügel die Fliege nun ein letztes Mal und bewundere deine Arbeit.
 
@@ -99,9 +99,9 @@ Bügel die Fliege nun ein letztes Mal und bewundere deine Arbeit.
 
 ![Nähe das Band an Teil 1 an](step22.png)
 
-The first thing to do is to sew the adjustment ribbon to the Short Bow part. Das Band sollte 290mm lang sein. Wenn es eine andere Länge hat, musst du sicherstellen, dass du es so ausrichtest, dass das Band und das kurze Schleifenteil zusammen so lang sind wie das lange Schleifenteil.
+Als Erstes nähst du das Anpassungsband an das Short Bow Teil. Das Band sollte 290mm lang sein. Wenn es eine andere Länge hat, musst du sicherstellen, dass du es so ausrichtest, dass das Band und das kurze Schleifenteil zusammen so lang sind wie das lange Schleifenteil.
 
-Put right sides of the Short Bow piece and the ribbon together.
+Lege die rechte Seite der kurzen Schleife und des Bandes zusammen.
 
 Nähe nun über das Ende um beide Teile zusammenzufügen.
 
@@ -109,13 +109,13 @@ Nähe nun über das Ende um beide Teile zusammenzufügen.
 
 ![Nähe beide Seiten zusammen](step23.png)
 
-Lay both of the Medium Bow parts on top of each other, right sides together.
+Lege die beiden Teile der mittleren Schleife rechts auf rechts übereinander.
 
-Sew all along the edges, but leave the short end open. Through this opening we will turn the bow tie part right side out.
+Nähen Sie entlang der Kanten, aber lassen Sie das kurze Ende offen. Durch diese Öffnung drehen wir das Fliegenteil auf die rechte Seite.
 
-Lay the Long Bow on top of the ribbon and Short Bow part, also right sides together.
+Lege die lange Schleife auf das Band und den Teil der kurzen Schleife, ebenfalls mit der rechten Seite zusammen.
 
-Again, sew all along the edges, leaving the short end open.
+Auch hier nähst du an den Kanten entlang und lässt das kurze Ende offen.
 
 #### Schritt 4: Wenden
 
@@ -131,20 +131,20 @@ Mache dies mit beiden Teilen.
 
 #### Schritt 5: Zubehör hinzufügen
 
-Jetzt müssen wir die beiden Zubehörteile anbringen, die die Fliege einstellbar machen. The oval loop piece will be attached to the part without the adjustment ribbon. And, the piece with the T-hook will go on the part with the ribbon.
+Jetzt müssen wir die beiden Zubehörteile anbringen, die die Fliege einstellbar machen. Das ovale Schlaufenstück wird an dem Teil ohne das Anpassungsband befestigt. Und das Teil mit dem T-Haken kommt auf das Teil mit dem Band.
 
 Befestige zunächst das Stück ohne die Schleife. Das liegt daran, dass das Stoffende des Schleifenstückes durch die ovale Öffnung passen muss, bevor wir das Zubehör annähen. Wenn du die Reihenfolge änderst, könnte es nicht mehr hindurchpassen.
 
-To finish the ends, we're going to fold the fabric in three steps, before sewing it in a fourth step:
+Um die Enden abzuschließen, falten wir den Stoff in drei Schritten, , bevor wir ihn in einem vierten Schritt vernähen:
 
 ![Drei Schritte zu falten, ein Schritt zu nähen](step25.png)
 
-1. First we fold the sides in at an angle.
-2. Then we fold the end over by just a small seam allowance, something like 5 mm.
-3. Then we fold it over again, for about 1 cm.
-4. Finally we stick the oval loop under this last fold and stitch across.
+1. Zuerst falten wir die Seiten schräg nach innen.
+2. Dann falten wir das Ende mit einer kleinen Nahtzugabe um, etwa 5 mm.
+3. Dann falten wir es wieder um, etwa 1 cm lang.
+4. Zum Schluss steckst du die ovale Schlaufe unter diese letzte Falte und nähst quer.
 
-Now feed the adjustment ribbon piece through the oval loop, and attach the T-hook to the end of the ribbon, sewing it in the same way.
+Führe nun das Stück Anpassungsband durch die ovale Schlaufe und befestige den T-Haken am Ende des Bandes, indem du es auf die gleiche Weise nähst.
 
 Hake das T in einer der Verstelllöcher fest und deine Fliege ist fertig!
 
