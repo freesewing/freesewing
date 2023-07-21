@@ -1,13 +1,13 @@
 ---
 author: "joostdecock"
-caption: "Designer Hellgy struts their stuff, while their Yuri flows in a summer breeze"
+caption: "Le designer Hellgy se pavane, tandis que sa Yuri s'écoule dans une brise d'été."
 date: "2021-09-05"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/af8e14596c0112734fb14e4a838853fb9dc0ac8a-1899x1266.jpg"
-intro: "Announcing FreeSewing v2.18: Congratulations, it's a Yuri"
-title: "Announcing FreeSewing v2.18: Congratulations, it's a Yuri"
+intro: "Annonce FreeSewing v2.18 : Félicitations, c'est un Yuri !"
+title: "Annonce FreeSewing v2.18 : Félicitations, c'est un Yuri !"
 ---
 
-I'm happy to announce the immediate availability of FreeSewing v2.18 and our latest addition to our catalog of designs: [The Yuri hoodie](/designs/yuri/) . Designed by [Hellgy](https://twitter.com/hellgy) and coded by their bae [Biou](https://github.com/biou/), Yuri is everything they love about [our Huey hoodie](/designs/huey/) sans their arch enemy: zippers.
+Je suis heureux de vous annoncer la disponibilité immédiate de FreeSewing v2.18 et de notre dernier ajout à notre catalogue de modèles : [Le hoodie Yuri](/designs/yuri/) . Conçu par [Hellgy](https://twitter.com/hellgy) et codé par leur bae [Biou](https://github.com/biou/), Yuri représente tout ce qu'ils aiment dans [notre sweat à capuche Huey](/designs/huey/) sans leur ennemi juré : les fermetures éclair.
 
-Checkout [Hellgy's showcase for more pictures](/showcase/yuri-by-its-designer), or check out [the pattern page itself](/designs/yuri/) for all details.
+Consulte [Hellgy's showcase pour plus d'images](/showcase/yuri-by-its-designer), ou consulte [la page du modèle lui-même](/designs/yuri/) pour tous les détails.
 
