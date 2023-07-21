@@ -1,39 +1,39 @@
 ---
 author: "joostdecock"
-caption: "Your login background for July"
+caption: "Dein Login-Hintergrund für Juli"
 date: "2018-06-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d4f2c83df7c4bc98b2bee3159b3f042bf0c1177f-1920x1279.jpg"
-intro: "Monthly roundup - June 2018: German, Penelope, and more womenswear on the horizon"
-title: "Monthly roundup - June 2018: German, Penelope, and more womenswear on the horizon"
+intro: "Monatliche Zusammenfassung - Juni 2018: German, Penelope und mehr Damenmode am Horizont"
+title: "Monatliche Zusammenfassung - Juni 2018: German, Penelope und mehr Damenmode am Horizont"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Dies ist dein monatlicher Überblick über die Freesewing-Nachrichten der letzten vier Wochen, und ein Ausblick auf das, was im nächsten Monat ansteht.
 
-## Looking back at June
+## Rückblick auf den Juni
 
-After the mad scramble in May to get the new site ready for the GDPR deadline, June has (thankfully) been a bit let hectic.
+Nach dem verrückten Gedränge im Mai, um die neue Website für die GDPR-Frist fertigzustellen, war der Juni (zum Glück) etwas weniger hektisch.
 
-Not that we haven't been busy. We've resolved a few issues with the new site, and while there's a few things that still need work, the most pressing issues have been resolved.
+Nicht, dass wir nicht viel zu tun gehabt hätten. Wir haben ein paar Probleme mit der neuen Website gelöst. Es gibt zwar noch ein paar Dinge, an denen wir arbeiten müssen, aber die dringendsten Probleme sind behoben.
 
-We've also completed the port of the documentation, which was something that was on our todo-list for June. It's always nice to make a plan and then follow through on it.
+Außerdem haben wir die Portierung der Dokumentation abgeschlossen, die auf unserer ToDo-Liste für Juni stand. Es ist immer schön, einen Plan zu machen und ihn dann auch durchzuziehen.
 
-With the migration demanding less of our time and attention, we've turned our attention back to building our pattern repository, and just before the end of the month, we were able to publish the [Penelope Pencil Skirt](/patterns/penelope).
+Da die Migration weniger Zeit und Aufmerksamkeit beansprucht, haben wir unsere Aufmerksamkeit wieder auf den Aufbau unseres Schnittmuster-Repositorys gerichtet, und kurz vor Monatsende konnten wir den [Penelope Pencil Skirt](/patterns/penelope)veröffentlichen.
 
-The pattern was designed by [@woutervdub](/users/woutervdub), it's his second pattern after he previously made [Benjamin](/patterns/benjamin).
+Das Muster wurde von [@woutervdub](/users/woutervdub)entworfen, es ist sein zweites Muster nachdem er zuvor [Benjamin](/patterns/benjamin)gemacht hat.
 
-To make certain the release wouldn't go unnoticed, we asked freesewing's illustrator [Roy van der Hel](https://www.deviantart.com/royvdhel-art) to drew an illustration for Penelope, and as always, he nailed it.
+Um sicherzugehen, dass die Veröffentlichung nicht unbemerkt bleibt, haben wir den freesewing-Illustrator [Roy van der Hel](https://www.deviantart.com/royvdhel-art) gebeten, eine Illustration für Penelope zu zeichnen, und wie immer hat er es geschafft.
 
-![Fun fact: Roy van der Hel means: Roy from Hel, and that's his real name](penelope.jpg)
+![Spaßfakt: Roy van der Hel bedeutet: Roy von der Hel, und das ist sein richtiger Name](penelope.jpg)
 
-Oh, and I'd almost forgot. The website is now available in German, so tell your German-speaking friends about it!
+Oh, und das hätte ich fast vergessen. Die Website ist jetzt auch auf Deutsch verfügbar, also erzähl deinen deutschsprachigen Freunden von !
 
-## Looking ahead to July
+## Blick auf den Juli
 
-As you could read in the [Penelope announcement blog post](/blog/announcing-penelope) we are planning more womenswear patterns, and that's what our focus will be on in July.
+Wie du im Blogbeitrag [Penelope Ankündigung](/blog/announcing-penelope) lesen konntest, planen wir mehr Schnittmuster für Damenmode, und darauf wird unser Fokus im Juli liegen.
 
-Some of those plans are more mid-term, but we should be releasing a circle skirt pattern in July designed by [@AlfaLyr](/users/alfalyr), who also provided much of the Spanish translation of the site.
+Einige dieser Pläne sind eher mittelfristig, aber wir sollten im Juli ein kreisförmiges Rockmuster veröffentlichen, das von [@AlfaLyr](/users/alfalyr)entworfen wurde, der auch einen Großteil der spanischen Übersetzung der Website erstellt hat.
 
-We also started working on a basic bodice block for women, but that will probably take a while to complete.
+Wir haben auch mit der Arbeit an einem grundlegenden Miederblock für Frauen begonnen, aber das wird wohl noch eine Weile dauern , bis er fertig ist.
 
-Watch this space.
+Beobachte diese Stelle.
 
