@@ -1,5 +1,5 @@
 ---
-title: "Bruce boxer briefs: What You Need"
+title: "Труси-боксери Bruce: Що вам потрібно"
 ---
 
 Щоб зробити Брюса, вам знадобиться наступне:
