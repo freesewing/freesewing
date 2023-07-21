@@ -1,5 +1,5 @@
 ---
-title: "Teagan T-shirt: Sewing Instructions"
+title: "Teagan T-shirt: Naai-instructies"
 ---
 
 ## Stap 1: Sluit de schoudernaden
@@ -18,54 +18,54 @@ Optioneel: In een draaiknop kun je ervoor kiezen om de schoudernaden te versterk
 ![Zet de mouwen in](step02.svg)
 
 - Leg je aan elkaar bevestigde voor- en achterpand neer met de goede kant naar boven.
-- Identificeer de voor- en achterkanten van elke mouw. (Dit is hoe je de linker mouw van rechts scheidt.) On your paper pattern piece, the front side of the sleeve is to the right.
+- Identificeer de voor- en achterkanten van elke mouw. (Dit is hoe je de linker mouw van rechts scheidt.) Op je papieren patroondeel is de voorkant van de mouw naar rechts.
 - Leg een mouw bovenop de voor- en achterkant, met de goede kant naar beneden.
 - Leg de bovenkant van de mouwkop gelijk met de schoudernaad. Zorg dat de voor- en achterkant van de mouw gelijk staan met de voor- en achterpanden van je shirt.
 - Speld de mouw op z'n plaats langs het hele armsgat. Er is een beetje extra stof in de mouwkop, wat betekent dat de mouwkop iets langer is dan het armsgat. Verbeter het bovenste deel van de mouwkop tijdens het spelden.
 - Stik/lock de gespelde mouw op z'n plaats.
 - Herhaal voor de andere mouw.
 
-## Step 3: Sew the neck finish
+## Stap 3: Naai de halsafwerking
 
-There are two options for the neck finish on Teagan: a knit band or knit binding. Knit band is what you typically see on store-bought T-shirts, whereas knit binding is the finish you'll find on the Aaron A-Tank. Directions for both are given here.
+Er zijn twee opties voor de halsafwerking van Teagan: een gebreide band of een gebreide binding. Gebreide band is wat je meestal ziet op T-shirts die je in de winkel koopt, terwijl gebreide band de afwerking is die je vindt op de Aaron A-Tank. De aanwijzingen voor beide worden hier gegeven.
 
 <Note>
 Dit is de meest complexe stap in het maken van een T-shirt in Teagan, maar het vereist slechts een beetje praktijk. Maak je geen zorgen, het enige wat je hoeft te doen is een paar van deze maken en je zal binnen een tijdsbestek een pro zijn.
 </Note>
 
-### Option 1: knit band finish
+### Optie 1: afwerking met gebreide band
 
-#### Place (the start of) your knit band
+#### Plaats (het begin van) je gebreide band
 
-![Place your knit band](step03f.svg)
+![Plaats je gebreide band](step03f.svg)
 
-- Fold your binding in half lengthwise (parallel to the longest side), and press.
-- Put your T-shirt down with the back good side up, and place your band strip on top of it, lining up the raw edges of the band with the raw edge of the neck opening.
-- Your band should start at the center back of the neck opening.
+- Vouw je binding in de lengte dubbel (parallel aan de langste kant) en pers.
+- Leg je T-shirt neer met de goede achterkant naar boven en leg je bandstrook erop, waarbij je de knipranden van de band op één lijn legt met de kniprand van de halsopening.
+- Je band moet middenachter bij de halsopening beginnen.
 - Leg nu je bies 1 cm voorbij je startpunt. Dit beetje extra garandeert dat we later de twee uiteindes aan elkaar kunnen bevestigen.
 
-#### Sew band in place
+#### Band vastnaaien
 
-![Sew knit band in place](step03g.svg)
+![Naai gebreide band vast](step03g.svg)
 
-- Place your presser foot 3 cm along the knit band, so a 4 cm tail will be left unstitched. This will help us join the ends together later. Then, sew around the neck opening, stretching the band gently as you sew.
+- Plaats je naaivoetje 3 cm langs de breiband, zodat er een staart van 4 cm ongestikt blijft. Dit zal ons later helpen om de uiteinden aan elkaar te maken. Naai dan rond de halsopening en rek de band voorzichtig uit terwijl je naait.
 
 <Note>
   
-This stretching is the trickiest part. Many online tutorials will tell you to simply start with a band slightly smaller than the neck opening, and stretch to fit. While an option, this does not account for differences in fabric stretch and elasticity, and can result in a floppy or puckered neck finish. Stretching to fit the neck opening by feel is something that takes a bit of practice, but is a good skill to build for better finishes long-term.
+Dit uitrekken is het lastigste deel. Veel online handleidingen vertellen je dat je gewoon moet beginnen met een band die iets kleiner is dan de halsopening en dat je die moet uitrekken. Hoewel dit een optie is, houdt het geen rekening met verschillen in rek en elasticiteit van de stof en kan het resulteren in een slappe of gebobbelde hals. Op gevoel rekken om de halsopening aan te passen is iets dat wat oefening vergt, maar het is een goede vaardigheid om te ontwikkelen voor een betere afwerking op de lange termijn.
   
 </Note>
 
 - Stop met 3 cm voor het uiteinde en een staart achterlaten zoals we aan het begin deden.
 
-#### Sew band ends together
+#### Banduiteinden aan elkaar naaien
 
-![Sew band ends](step03c.svg)
+![Banduiteinden naaien](step03c.svg)
 
-Now it's time to sew the ends of our knit band together.
-- Take the end of your knit band, and stretch it along the 3 cm separating it from the start point as you would while sewing. On the band, mark where the band reached the start point, or center back. Doe hetzelfde voor het andere uiteinde.
-- Fold your T-shirt in whatever way makes it more easy for you to place both band ends with good sides together, aligning the marks. Stik ze samen op de marken.
- - You should now have a joined knit band.
+Nu is het tijd om de uiteinden van onze gebreide band aan elkaar te naaien.
+- Neem het uiteinde van je gebreide band en rek het uit langs de 3 cm die het scheidt van het beginpunt, zoals je zou doen tijdens het naaien. Markeer op de band waar de band het startpunt, of middenachter, heeft bereikt. Doe hetzelfde voor het andere uiteinde.
+- Vouw je T-shirt op een manier die het voor jou gemakkelijker maakt om beide uiteinden van de band met de goede kanten op elkaar te leggen en de markeringen op elkaar te laten aansluiten. Stik ze samen op de marken.
+ - Je zou nu een samengevoegde gebreide band moeten hebben.
 
 <Note>
 
@@ -73,15 +73,15 @@ Now it's time to sew the ends of our knit band together.
 
 </Note>
 
-![Finish knit band](step03h.svg)
+![Afwerking gebreide band](step03h.svg)
 
-- Now that your band ends are joined together, it’s time to finish the last 6 cm, by stretching and sewing down the band as you did for the rest.
+- Nu de uiteinden van je band aan elkaar zitten, is het tijd om de laatste 6 cm af te werken, door de band uit te rekken en vast te naaien zoals je voor de rest hebt gedaan.
 
-Hurray! You've finished the trickiest part! Optionally, you can secure the raw edges by stitching them down to the T-shirt fabric, just inside the knit band with a sig-zag or coverlock stitch. This is not required, but it is a detail that you'll see on many ready-to-wear T-shirts, and it can help your neck band lie flat.
+Hoera! Je bent klaar met het lastigste deel! Eventueel kun je de knipranden vastzetten door ze vast te naaien aan de T-shirtstof, net binnen de gebreide band met een sig-zag of coverlocksteek. Dit is niet verplicht, maar het is een detail dat je op veel confectie T-shirts ziet en het kan je nekband helpen plat te liggen.
 
-![Sew down knit band to secure](step03i.svg)
+![Naai gebreide band vast](step03i.svg)
 
-### Option 2: knit binding finish
+### Optie 2: afwerking met gebreide binding
 
 <Tip>
 
