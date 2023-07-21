@@ -1,10 +1,10 @@
 ---
-title: "Upper Dart Length"
+title: "Obere Abnäherlänge"
 ---
 
 ***
 
-The **Upper Dart Length** controls the length of the upper dart, 100% is all teh way to the bust point.
+Die **Upper Dart Length** steuert die Länge des oberen Abnähers, der zu 100 % bis zum Brustansatz reicht.
 
 ## Effekt dieser Option auf das Schnittmuster
 
