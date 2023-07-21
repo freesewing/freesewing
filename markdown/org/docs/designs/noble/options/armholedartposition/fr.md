@@ -1,10 +1,10 @@
 ---
-title: "Armhole Dart Position"
+title: "Position de la fléchette d'emmanchure"
 ---
 
 ***
 
-The **Armhole Dart Position** option allows you to move the position of the dart/princess seam.
+L'option **Armhole Dart Position** te permet de déplacer la position de la couture à l'emporte-pièce.
 
 ## Effet de cette option sur le motif
 
