@@ -8,7 +8,6 @@ export const header = `/*
 `
 
 export const loadTranslations = async ({ namespaces = [], languages = [], site }) => {
-  const promises = []
   const translations = {}
   for (const lang of languages) {
     translations[lang] = {}
