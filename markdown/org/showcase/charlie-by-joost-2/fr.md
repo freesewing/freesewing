@@ -1,18 +1,18 @@
 ---
 maker: "Joost De Cock"
-caption: "Moar Charlie"
+caption: "Plus de Charlie"
 date: "2021-05-23"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/20ccf81fc098beaab92cbb48ee1a37b9f6a011c9-600x800.jpg"
-intro: "Joost made another excellent pair of Charlie Chinos in this tan fabric."
-title: "Another Charlie by Joost"
+intro: "Joost a fabriqué une autre excellente paire de Charlie Chinos dans ce tissu beige."
+title: "Un autre Charlie par Joost"
 ---
 
 
-Joost made another excellent pair of Charlie Chinos in this tan fabric.
+Joost a fabriqué une autre excellente paire de Charlie Chinos dans ce tissu beige.
 
 ![Une autre vue](https://posts.freesewing.org/uploads/charlie_by_joost_2_charliebyjoost3_78b3eecfb6.jpg)
 
-![A look at the fabric](https://posts.freesewing.org/uploads/charlie_by_joost_2_charliebyjoost4_0329b2ca47.jpg)
+![Un coup d'œil sur le tissu](https://posts.freesewing.org/uploads/charlie_by_joost_2_charliebyjoost4_0329b2ca47.jpg)
 
-This picture is from Joost, [@j__st on Twitter](https://twitter.com/j__st). Elle est publiée ici avec son autorisation.
+Cette image est de Joost, [@j__st sur Twitter](https://twitter.com/j__st). Elle est publiée ici avec son autorisation.
 
