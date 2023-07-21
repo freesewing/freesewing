@@ -1,5 +1,5 @@
 ---
-title: "Simone shirt: Design Options"
+title: "Simone Shirt: Design Optionen"
 ---
 
 <PatternOptions pattern='simone' />
