@@ -2,10 +2,10 @@
 title: "Hoogte schouderpas"
 ---
 
-Controls the height of the yoke seam.
+Regelt de hoogte van de juknaad.
 
-- Increase this option to lower the height and lengthen the yoke
-- Decrease this option to raise the height and shorten the yoke
+- Verhoog deze optie om de hoogte te verlagen en het juk te verlengen
+- Verlaag deze optie om de hoogte te verhogen en het juk in te korten
 
 ## Effect van deze optie op het patroon
 
