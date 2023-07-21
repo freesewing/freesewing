@@ -1,16 +1,16 @@
 ---
-maker: "unknown"
-caption: "Not the greatest quality picture, but what can we do"
+maker: "desconocido"
+caption: "No es la mejor calidad de imagen, pero qué le vamos a hacer"
 date: "2017-08-14"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/468efcd7ea0faf06b74fa10c0a092f21d374c7e8-1080x1142.jpg"
-intro: "Petros writes (via Facebook messenger):"
-title: "Red bermuda shorts by Petros"
+intro: "Petros escribe (a través de Facebook messenger):"
+title: "Bermudas rojas de Petros"
 designs:
   - "theo"
 ---
 
-Petros writes (via Facebook messenger):
+Petros escribe (a través de Facebook messenger):
 
-> Hi, Joost. The new platform is amazing. Congratulations!!! I have posted a comment under username Petros. I used the pattern Theo from the previous site and i sewed a bermuda shorts under your guidance and thorough instructions of the youtube tutorials you 've made. I have never sewed a gament this complex before and yet you made it easy. You are extraordinary.
+> Hola, Joost. La nueva plataforma es increíble. ¡¡¡Enhorabuena!!! He publicado un comentario con el nombre de usuario Petros. Utilicé el patrón Theo del sitio anterior y cosí una bermuda bajo tu guía y las minuciosas instrucciones de los tutoriales de youtube que has hecho. Nunca había cosido un gamento tan complejo y sin embargo lo has hecho fácil. Eres extraordinaria.
 
-![Here's a view from the front](https://posts.freesewing.org/uploads/red_theo_2_6b1dc84c14.jpg "Here's a view from the front")
+![Aquí tienes una vista desde la parte delantera](https://posts.freesewing.org/uploads/red_theo_2_6b1dc84c14.jpg "Aquí tienes una vista desde la parte delantera")
