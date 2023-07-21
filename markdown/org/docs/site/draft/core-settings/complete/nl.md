@@ -1,10 +1,10 @@
 ---
-title: Pattern Details
+title: Details patroon
 ---
 
 <Fixme> 
 
-This setting is likely to be revised prior to the release of v3
+Deze instelling wordt waarschijnlijk herzien voordat v3 wordt uitgebracht.
 
 </Fixme>
 
