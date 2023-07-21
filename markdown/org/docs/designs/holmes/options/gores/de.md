@@ -4,7 +4,7 @@ title: "Anzahl der Keile"
 
 ***
 
-Controls the number of panels there are in the crown
+Steuert die Anzahl der Felder in der Krone
 
 ![Illustration, die den Effekt dieser Option zeigt](gores.svg)
 
