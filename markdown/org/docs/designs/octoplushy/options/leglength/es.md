@@ -1,8 +1,8 @@
 ---
-title: "Leg Length"
+title: "Longitud de la pierna"
 ---
 
-The length of the legs can be adjusted.
+La longitud de las patas se puede ajustar.
 
 ## Efecto de esta opción en el patrón
 
