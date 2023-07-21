@@ -1,21 +1,21 @@
 ---
-maker: "unknown"
-caption: "Rayon Paco pants in a dark floral print"
+maker: "desconocido"
+caption: "Pantalón Paco de rayón con estampado floral oscuro"
 date: "2021-04-01"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9255d1162b83bc4691a6029126944d2e714d33e1-1539x1800.jpg"
-intro: "The Pacos were made in a rayon challis, with the default options (and the front rise lowered a touch). They're modelled here with a bonus Teagan T-shirt."
-title: "Tropical Pacos"
+intro: "Los Pacos se confeccionaron en un challis de rayón, con las opciones predeterminadas (y se rebajó un poco la subida delantera). Aquí se muestran con una camiseta Teagan adicional."
+title: "Pacos tropicales"
 designs:
   - "paco"
   - "teagan"
 ---
 
-The Pacos were made in a rayon challis, with the default options (and the front rise lowered a touch). They're modelled here with a bonus Teagan T-shirt.
+Los Pacos se confeccionaron en un challis de rayón, con las opciones predeterminadas (y se rebajó un poco la subida delantera). Aquí se muestran con una camiseta Teagan adicional.
 
-![Paco front view](https://posts.freesewing.org/uploads/paco_by_karen_showcase2_85c38807f6.jpeg "Paco front view")
+![Vista frontal de Paco](https://posts.freesewing.org/uploads/paco_by_karen_showcase2_85c38807f6.jpeg "Vista frontal de Paco")
 
-Some additional views...
+Algunas vistas adicionales...
 
-![Paco rear view](https://posts.freesewing.org/uploads/paco_by_karen_showcase3_ae80f66814.jpeg)
+![Vista trasera de Paco](https://posts.freesewing.org/uploads/paco_by_karen_showcase3_ae80f66814.jpeg)
 
-![Paco side view](https://posts.freesewing.org/uploads/paco_by_karen_showcase4_3a7cb22fff.jpeg)
+![Vista lateral de Paco](https://posts.freesewing.org/uploads/paco_by_karen_showcase4_3a7cb22fff.jpeg)
