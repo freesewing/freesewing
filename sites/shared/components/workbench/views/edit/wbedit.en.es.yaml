@@ -1,0 +1,4 @@
+yamlEditViewTitleThing: 'Editar configuración de patrones para {thing}'
+yamlEditViewError: Problemas con YAML
+yamlEditViewErrorDesc: Hemos guardado tu entrada, pero puede que no funcione por las siguientes razones
+save: Guardar ajustes
