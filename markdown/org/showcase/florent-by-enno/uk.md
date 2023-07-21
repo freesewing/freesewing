@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a5b79cac257f7193ffd73
 intro: "Енно також має жилетку, яка йде в комплекті з ним:"
 title: "Florent від Enno"
 designs:
-  - "florent"
+  - "флорентійський"
 ---
 
 Енно також має жилетку, яка йде в комплекті з ним:
