@@ -1,5 +1,5 @@
 ---
-title: "Theo trousers: Sewing Instructions"
+title: "Theo Hose: Anleitung zum Nähen"
 ---
 
 <Note>
@@ -161,13 +161,13 @@ Wenn alles zusammengesteckt ist, klappen Sie das vordere Stück und das Futter a
 
 <Tip>
 
-Sew to bottom curve of the pocket bag up until the point where it reached the side piece
+Nähen Sie die untere Rundung des Taschenbeutels bis zu dem Punkt, an dem sie das Seitenteil erreicht
 
-You can finish the pocket bag in a number of ways, including:
+Du kannst den Taschenbeutel auf verschiedene Arten fertigstellen, z. B:
 
-- Serge the sides together
-- Finish the edge with bias tape
-- Sew the sides together and finish the edge with a zig-zag stitch
+- Nähen Sie die Seiten zusammen
+- Schließen Sie die Kante mit Schrägband ab
+- Nähen Sie die Seiten zusammen und schließen Sie die Kante mit einem Zickzackstich ab
 
 </Tip>
 
@@ -312,7 +312,7 @@ Wenn du fertig bist, entferne deine früheren senkrechten Pins.
 
 ### Schritt 21: Über Fliegenschild falten und nach unten anpinnen
 
-![Fold over fly shield and pin down](step21a.png) ![Fold over fly shield and pin down](step21b.png)
+![Fliegengitter umklappen und feststecken](step21a.png) ![Fliegengitter umklappen und feststecken](step21b.png)
 
 Drehen Sie alles, damit Ihr Fliegenschild unten liegt.
 
@@ -398,11 +398,11 @@ Zu guter Letzt nähen Sie die Reißverschluss entlang mit Ihrem Reißverschluss,
 
 <Tip>
 
-When aligning the zip, make sure to take the following into account:
+Wenn du den Reißverschluss ausrichtest, solltest du Folgendes beachten:
 
-- The zip should be placed with the good side down
-- The zip should sit a bit back from the edge of your fly piece
-- Make sure to align the top of the zip with the other zip half on the right leg
+- Der Reißverschluss sollte mit der guten Seite nach unten angebracht werden
+- Der Reißverschluss sollte ein wenig von der Kante deines Schlitzteils entfernt sitzen
+- Achte darauf, dass die Oberseite des Reißverschlusses mit der anderen Reißverschlusshälfte am rechten Bein ausgerichtet ist
 
 </Tip>
 
@@ -668,8 +668,8 @@ Bevor wir die Taille fertigstellen, werden wir einen Teil der Naht zurückdrehen
 
 <Tip>
 
-**About seam allowance grading**
-When trimming back different layers of seam allowance, always try to cut them at different lengths so that the bulk is reduced in incremental steps.
+**Über die Abstufung der Nahtzugabe**
+Wenn du verschiedene Lagen der Nahtzugabe zurückschneidest, versuche immer, sie in unterschiedlichen Längen zu schneiden, damit die Masse schrittweise reduziert wird.
 
 Die Schicht, die der guten Seite des Kleidungsstückes am nächsten liegt, sollte die längste sein, also von dort zurück schneiden.
 
@@ -769,9 +769,9 @@ Wenn der Saum sauber gedrückt wird, nähen Sie einfach den gefalteten hinteren 
 
 <Tip>
 
-Hemming wird von Hand gemacht, weil es wichtig ist, dass die Nähte nicht auf der Vorderseite zeigen. So when hand-sewing the hem, don't push your needle through the fabric, but just catch a few threads so your stitches don't show on the front
+Hemming wird von Hand gemacht, weil es wichtig ist, dass die Nähte nicht auf der Vorderseite zeigen. Wenn du den Saum mit der Hand nähst, stichst du deine Nadel nicht durch den Stoff, sondern fängst nur ein paar Fäden auf, damit deine Stiche nicht auf der Vorderseite zu sehen sind.
 
-While there are machine alternatives, they aren't as neat (blind hem stitch) or probably not accessible to the home-sewer (industrial blind hem machine).
+Es gibt zwar maschinelle Alternativen, aber die sind nicht so sauber (Blindsaumstich) oder wahrscheinlich für den Heimnäher nicht zugänglich (industrielle Blindsaummaschine).
 
 </Tip>
 
