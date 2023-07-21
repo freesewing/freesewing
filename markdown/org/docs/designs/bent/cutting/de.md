@@ -1,27 +1,27 @@
 ---
-title: "Bent body Block: Cutting Instructions"
+title: "Gebogener Körper Block: Anleitung zum Schneiden"
 ---
 
 **Oberstoff**
 
 - Schneide **1 Vorderteil** im Stoffbruch.
-- Cut **1 Back** part on the fold.
-- Cut **2 Top sleeve** parts.
-- Cut **2 Under sleeve** parts.
+- Schneide **1 Rückenteil** an der Falte aus.
+- Schneide **2 Teile der oberen Hülse** zu.
+- Schneide **2 Unter der Hülse** Teile.
 
-These cutting instructions are just for the default Bent block. Passe deinen Zuschnitt entsprechend an, falls du Änderungen am Grundschnitt vornimmst.
+Diese Schneideanleitung gilt nur für den Standard-Bent-Block. Passe deinen Zuschnitt entsprechend an, falls du Änderungen am Grundschnitt vornimmst.
 
 <Warning>
 
-As Bent is a block it does not have any closures. If you are making a test Bent you will want to Cut 2 Front parts with seam allowances so you can pin yourself into it.
+Da Bent ein Block ist, hat er keine Verschlüsse. Wenn du einen Test-Bent machst, solltest du 2 Vorderteile mit Nahtzugaben zuschneiden, damit du dich darin feststecken kannst.
 
 </Warning>
 
 <Note>
 
-###### Bent is a block, not a pattern
+###### Bent ist ein Block, kein Muster
 
-A block is a basic shape on which other patterns are based.
+Ein Block ist eine Grundform, auf der andere Muster aufgebaut sind.
 Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
 
 Grundschnitte werden in der Regel nicht so gemacht, wie sie sind, sondern dienen als Grundlage für andere Schnittmuster.
