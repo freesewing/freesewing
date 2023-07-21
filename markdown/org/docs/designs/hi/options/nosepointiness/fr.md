@@ -1,8 +1,8 @@
 ---
-title: "Pointiness of the nose"
+title: "Nez pointu"
 ---
 
-The shark can be made with a more blunt, or sharper nose, depending on your preference.
+Le requin peut être fait avec un nez plus émoussé ou plus pointu, selon tes préférences.
 
 ## Effet de cette option sur le motif
 
