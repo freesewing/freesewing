@@ -11,8 +11,8 @@ Le dos des pattes du pantalon est toujours plus large que le devant. Cela contr�
 Augmenter ceci rendra le panneau de la jambe avant plus étroit.  
 Cela rend le porteur plus habillé.
 
-This trick is often used in womenswear jeans
-(now you know why you can't find womenswear jeans with functional front pockets).
+Cette astuce est souvent utilisée dans les jeans womenswear
+(tu sais maintenant pourquoi tu ne peux pas trouver de jeans womenswear avec des poches avant fonctionnelles).
 
 </Note>
 
