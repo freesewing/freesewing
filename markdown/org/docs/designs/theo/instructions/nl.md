@@ -1,5 +1,5 @@
 ---
-title: "Theo trousers: Sewing Instructions"
+title: "Theo broek: Naai-instructies"
 ---
 
 <Note>
@@ -161,13 +161,13 @@ Plooi wanneer alles samengespeld is het voorpand en de voering opzij en sluit de
 
 <Tip>
 
-Sew to bottom curve of the pocket bag up until the point where it reached the side piece
+Naai de onderste ronding van de zak tot aan het punt waar hij het zijstuk bereikt
 
-You can finish the pocket bag in a number of ways, including:
+Je kunt de zak op een aantal manieren afwerken, zoals:
 
-- Serge the sides together
-- Finish the edge with bias tape
-- Sew the sides together and finish the edge with a zig-zag stitch
+- Sergeer de zijkanten aan elkaar
+- Werk de rand af met biaisband
+- Naai de zijkanten aan elkaar en werk de rand af met een zigzagsteek
 
 </Tip>
 
@@ -398,11 +398,11 @@ Stik uiteindelijk langs de rits met je ritsvoet om ze vast te maken aan het gulp
 
 <Tip>
 
-When aligning the zip, make sure to take the following into account:
+Let bij het uitlijnen van de rits op het volgende:
 
-- The zip should be placed with the good side down
-- The zip should sit a bit back from the edge of your fly piece
-- Make sure to align the top of the zip with the other zip half on the right leg
+- De rits moet met de goede kant naar beneden geplaatst worden
+- De rits moet iets terug zitten van de rand van je gulpstuk
+- Zorg ervoor dat je de bovenkant van de rits uitlijnt met de andere ritshelft op het rechterbeen
 
 </Tip>
 
@@ -668,8 +668,8 @@ Voor we de tailleband afwerken gaan we de naadwaarde wat bijknippen.
 
 <Tip>
 
-**About seam allowance grading**
-When trimming back different layers of seam allowance, always try to cut them at different lengths so that the bulk is reduced in incremental steps.
+**Over naadtoeslagnivellering**
+Wanneer je verschillende lagen naadtoeslag afknipt, probeer ze dan altijd op verschillende lengtes af te knippen, zodat de massa in stappen wordt verminderd.
 
 De laag die het dichtst bij de goede kant van het kledingstuk ligt moet het langst zijn, dus begin daar.
 
@@ -769,9 +769,9 @@ Als de zoom netjes gestreken is, naai het teruggeplooide deel dan vast aan de bi
 
 <Tip>
 
-Omzomen wordt met de hand gedaan omdat het belangrijk is dat de steken niet zichtbaar zijn aan de goede kant. So when hand-sewing the hem, don't push your needle through the fabric, but just catch a few threads so your stitches don't show on the front
+Omzomen wordt met de hand gedaan omdat het belangrijk is dat de steken niet zichtbaar zijn aan de goede kant. Dus als je de zoom met de hand naait, duw je je naald niet door de stof heen, maar vang je gewoon een paar draden op zodat je steken niet zichtbaar zijn op de voorkant
 
-While there are machine alternatives, they aren't as neat (blind hem stitch) or probably not accessible to the home-sewer (industrial blind hem machine).
+Hoewel er machinale alternatieven zijn, zijn die niet zo netjes (blinde zoomsteek) of waarschijnlijk niet toegankelijk voor de thuisnaaister (industriële blinde zoommachine).
 
 </Tip>
 
