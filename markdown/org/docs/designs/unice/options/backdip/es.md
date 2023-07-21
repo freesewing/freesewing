@@ -2,7 +2,7 @@
 title: "Buceo de cintura trasera"
 ---
 
-Together with the "Back curve" option, this option controls how much the back waist curves (revealing more or less skin). For this option, the curve is achieved by cutting away a crescent at the waist. (For fabric with horizontal stripes, some stripes would be interrupted around the center of the waist.)
+Junto con la opción "Curvatura de la espalda", esta opción controla cuánto se curva la cintura de la espalda (revelando más o menos piel). Para esta opción, la curva se consigue recortando una media luna en la cintura. (En el caso de telas con rayas horizontales, algunas rayas se interrumpirían alrededor del centro de la cintura).
 
 ## Efecto de esta opción en el patrón
 
