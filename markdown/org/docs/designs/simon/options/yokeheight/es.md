@@ -2,10 +2,10 @@
 title: "Altura del yugo"
 ---
 
-Controls the height of the yoke seam.
+Controla la altura de la costura del canesú.
 
-- Increase this option to lower the height and lengthen the yoke
-- Decrease this option to raise the height and shorten the yoke
+- Aumenta esta opción para bajar la altura y alargar el yugo
+- Disminuye esta opción para elevar la altura y acortar el yugo
 
 ## Efecto de esta opción en el patrón
 
