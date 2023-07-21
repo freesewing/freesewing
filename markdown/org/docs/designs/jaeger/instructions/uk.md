@@ -1,5 +1,5 @@
 ---
-title: "Jaeger jacket: Sewing Instructions"
+title: "Єгерська куртка: Інструкція з пошиття"
 ---
 
 <Note>
