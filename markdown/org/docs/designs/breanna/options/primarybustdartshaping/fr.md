@@ -2,7 +2,7 @@
 title: "Forme des pinces poitrine"
 ---
 
-Controls the balance between the primary and secondary bust darts.
+Contrôle l'équilibre entre les pinces primaires et secondaires du buste.
 
 ## Effet de cette option sur le motif
 
