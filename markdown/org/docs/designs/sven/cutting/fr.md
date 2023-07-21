@@ -1,5 +1,5 @@
 ---
-title: "Sven sweatshirt: Cutting Instructions"
+title: "Sweat-shirt Sven : Instructions de coupe"
 ---
 
 Sven est un motif très simple et se compose de deux parties principales et de quelques bandes pour le cou et le blindage.
@@ -17,6 +17,6 @@ Sven est un motif très simple et se compose de deux parties principales et de q
 
 ###### Caveats
 
-The ribbing parts are not included on the pattern because they're just rectangular.
+Les parties de côtes ne sont pas incluses dans le patron parce qu'elles sont juste rectangulaires.
 
 </Warning>
