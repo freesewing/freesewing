@@ -1,0 +1,26 @@
+canvas: Полотно
+cut: Знято.
+cuttingLayout: Пропонована схема розкрою
+fabric: Основна тканина
+materialSize: "{length} широкого матеріалу {width}"
+heavyCanvas: Важке полотно
+interfacing: Взаємодія
+lining: Підкладка
+lmhCanvas: Полотно для легкого та середнього волосся
+mirrored: віддзеркалено
+onFoldLower: на згині
+onFoldAndBias: складені на ухил
+onBias: про упередженість
+plastic: Пластик
+ribbing: Ребристість
+edgeOfFabric: Край тканини
+sheetWidth.t: Ширина матеріалу
+sheetWidth.d: Наскільки широкий матеріал?
+grainDirection.t: Зерновий напрямок
+grainDirection.d: В якому напрямку рухається зерно по матеріалу?
+horizontal.t: Горизонтальний
+horizontal.d: Зерно рухається зліва направо
+vertical.t: Вертикальний
+vertical.d: Зерно рухається зверху вниз
+cutSettings: Налаштування матеріалів
+cutSettings.d: Ці налаштування дозволяють вказати властивості матеріалу, які допоможуть у створенні розкладки розкрою
