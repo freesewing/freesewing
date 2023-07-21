@@ -1,0 +1,5 @@
+testThis.option: Prueba esta opción
+testThis.measurement: Prueba esta medida
+measurements.d: Prueba el efecto de una medida en el aspecto de este patrón
+designOptions.d: Prueba el efecto de una opción sobre el aspecto de este patrón
+testThing: "Prueba {design}: {thing}"
