@@ -2,7 +2,7 @@
 title: "Länge des Brustabnähers"
 ---
 
-The length of the primary bust dart.
+Die Länge des primären Brustabnähers.
 
 ## Effekt dieser Option auf das Schnittmuster
 
