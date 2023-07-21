@@ -8,7 +8,7 @@ Ter referentie zijn hier de verschillende beschikbare lijndiktes:
 
 <Legend part="lineWidths">
 
-The different line widths
+De verschillende lijndikten
 
 </Legend>
 
@@ -16,6 +16,6 @@ En dit zijn de verschillende types lijnen:
 
 <Legend part="lineStrokes">
 
-The different line strokes
+De verschillende lijnstreken
 
 </Legend>
