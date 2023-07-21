@@ -3,16 +3,16 @@ author: "joostdecock"
 caption: "Foto von Karolina Grabowska von Pexels"
 date: "2021-06-27"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/13f022fe08c08ba927a13db25c554d730ec8f912-1280x853.jpg"
-intro: "Announcing Ursula, a basic, highly-customizable underwear pattern"
-title: "Announcing Ursula, a basic, highly-customizable underwear pattern"
+intro: "Ankündigung von Ursula, einem einfachen, hochgradig anpassbaren Unterwäschemuster"
+title: "Ankündigung von Ursula, einem einfachen, hochgradig anpassbaren Unterwäschemuster"
 ---
 
 
-FreeSewing 2.17 is out, and it while it comes with many fixes and improvements, the biggest news is certainly a brand new pattern: [The Ursula Undies](/designs/ursula/) by US-based designer Natalia Sayang.
+FreeSewing 2.17 ist da, und obwohl es viele Fehlerbehebungen und Verbesserungen enthält, ist die größte Neuigkeit sicherlich ein brandneues Muster: [Die Ursula Undies](/designs/ursula/) von der US-amerikanischen Designerin Natalia Sayang.
 
-![Example of a default Ursula](https://posts.freesewing.org/uploads/example_aab890ee57.jpg)
+![Beispiel für eine Standard-Ursula](https://posts.freesewing.org/uploads/example_aab890ee57.jpg)
 
-The picture above is from [this showcase post](/showcase/ursula-test-pairs/) which includes several more examples of the different styles you can accomplish with this versatile pattern.
+Das obige Bild stammt aus dem Beitrag [this showcase](/showcase/ursula-test-pairs/) , in dem du weitere Beispiele für die verschiedenen Stile findest, die du mit diesem vielseitigen Muster erzielen kannst.
 
-Ursula is a quick make, not to mention the ultimate stash-buster. We are really excited about it.
+Ursula ist schnell gemacht und außerdem der ultimative Vorratsbuster. Wir sind wirklich begeistert davon.
 
