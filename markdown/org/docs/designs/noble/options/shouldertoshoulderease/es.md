@@ -1,10 +1,10 @@
 ---
-title: "Shoulder to Shoulder Ease"
+title: "Facilidad de Hombro a Hombro"
 ---
 
 ***
 
-The **Shoulder to Shoulder Ease** option allows you to add ease between the shoulders.
+La opción **Facilidad entre hombros** te permite añadir facilidad entre los hombros.
 
 ## Efecto de esta opción en el patrón
 
