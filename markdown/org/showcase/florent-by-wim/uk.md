@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/05241effbb4966cca8305
 intro: "Ось Вім з капелюхом Флоранта."
 title: "Капелюх Florent від Wim"
 designs:
-  - "florent"
+  - "флорентійський"
 ---
 
 Ось Вім з капелюхом Флоранта.
