@@ -1,5 +1,5 @@
 ---
-title: "Lunetius Lacerna: Cutting Instructions"
+title: "Lunetius Lacerna: Інструкція по вирізанню"
 ---
 
 - Виріжте **1 лацерну** частину на згині
