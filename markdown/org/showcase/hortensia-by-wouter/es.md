@@ -1,26 +1,26 @@
 ---
 maker: "Wouter.vdub"
-caption: "Haring's Hortensia handbag by Wouter"
+caption: "Bolso Hortensia de Haring por Wouter"
 date: "2021-03-06"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7192891ad24b1dc1ccb1a4093dc70e3678bb65c7-661x612.jpg"
-intro: "Not only did Wouter sew this Haring's Hortensia handbag, he also designed the fabric and made the pattern! He shared that he made the fabric design with his daughter and had it printed through Spoonflower."
-title: "Hortensia by Wouter"
+intro: "Wouter no sólo cosió este bolso Hortensia de Haring, ¡también diseñó la tela y confeccionó el patrón! Compartió que hizo el diseño de la tela con su hija y lo hizo imprimir a través de Spoonflower."
+title: "Hortensia por Wouter"
 designs:
   - "hortensia"
 ---
 
-Not only did Wouter sew this Haring's Hortensia handbag, he also designed the fabric and made the pattern! He shared that he made the fabric design with his daughter and had it printed through Spoonflower.
+Wouter no sólo cosió este bolso Hortensia de Haring, ¡también diseñó la tela y confeccionó el patrón! Compartió que hizo el diseño de la tela con su hija y lo hizo imprimir a través de Spoonflower.
 
-Wouter also shares on [the Instagram feed @Wouter.vdub](https://www.instagram.com/Wouter.vdub/) and [blogs at ShirtArtistry]https://shirtartistry.blog/).
+Wouter también comparte en [el feed de Instagram @Wouter.vdub](https://www.instagram.com/Wouter.vdub/) y [blogs en ShirtArtistry]https://shirtartistry.blog/).
 
-![View of the front](https://posts.freesewing.org/uploads/hortensia_by_wouter_hortensia2_ec8a517447.jpg "View of the front")
+![Vista frontal](https://posts.freesewing.org/uploads/hortensia_by_wouter_hortensia2_ec8a517447.jpg "Vista frontal")
 
-![View of the side](https://posts.freesewing.org/uploads/hortensia_by_wouter_hortensia3_9946bc8cde.jpg)
+![Vista lateral](https://posts.freesewing.org/uploads/hortensia_by_wouter_hortensia3_9946bc8cde.jpg)
 
-![View of the zipper](https://posts.freesewing.org/uploads/hortensia_by_wouter_hortensia4_39f92d992c.jpg)
+![Vista de la cremallera](https://posts.freesewing.org/uploads/hortensia_by_wouter_hortensia4_39f92d992c.jpg)
 
 <Note>
 
-This picture is from Wouter on Discord. It is reposted here with permission.
+Esta foto es de Wouter en Discord. Se publica aquí con permiso.
 
 </Note>
