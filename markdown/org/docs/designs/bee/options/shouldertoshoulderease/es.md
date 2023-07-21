@@ -1,10 +1,10 @@
 ---
-title: "Shoulder to Shoulder ease (Bella)"
+title: "Ancho de hombros (Bella)"
 ---
 
 ***
 
-Controls the shoulder to shoulder ease in the underlying Bella block Bee is based on.
+Controla el ancho de hombros en el patrón de base Bella en el que se basa Bee.
 
 ## Efecto de esta opción en el patrón
 
