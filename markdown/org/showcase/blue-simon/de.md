@@ -1,24 +1,24 @@
 ---
-maker: "unknown"
-caption: "That's some quality posing right there."
+maker: "unbekannt"
+caption: "Das ist mal ein gutes Posing."
 date: "2017-10-09"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/bdb5e72db9290457048b763783bf8a2de51ce0c1-1080x1080.jpg"
-intro: "A blue Simon shirt by feelingmyoats"
-title: "A blue Simon shirt by feelingmyoats"
+intro: "Ein blaues Simon-Shirt von feelingmyoats"
+title: "Ein blaues Simon-Shirt von feelingmyoats"
 designs:
   - "simon"
 ---
 
-![View of the front](https://posts.freesewing.org/uploads/blue_simon_front_1a4a8e9897.jpg "View of the front")
+![Blick auf die Vorderseite](https://posts.freesewing.org/uploads/blue_simon_front_1a4a8e9897.jpg "Blick auf die Vorderseite")
 
-![View of the back](https://posts.freesewing.org/uploads/blue_simon_back_a038252972.jpg)
+![Blick auf die Rückseite](https://posts.freesewing.org/uploads/blue_simon_back_a038252972.jpg)
 
 <Note>
 
-###### See the original on Instagram
-This post [originally appeared](https://www.instagram.com/p/BZ6X2CkjZor/) 
-on [the Instagram feed of feelinmyoats](https://www.instagram.com/feelinmyoats/).
+###### Siehe das Original auf Instagram
+Dieser Beitrag [erschien ursprünglich](https://www.instagram.com/p/BZ6X2CkjZor/) 
+auf [dem Instagram-Feed von feelinmyoats](https://www.instagram.com/feelinmyoats/).
 
-It is reposted here with permission.
+Er wird hier mit Erlaubnis wieder veröffentlicht.
 
 </Note>
