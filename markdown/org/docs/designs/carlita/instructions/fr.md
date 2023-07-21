@@ -1,5 +1,5 @@
 ---
-title: "Carlita coat: Sewing Instructions"
+title: "Manteau Carlita : Instructions de couture"
 ---
 
 ### Étape 1 : Dessiner et découper les parties manquantes de la doublure et du parement
@@ -95,6 +95,6 @@ Voici quelques notes de [@AnnekeCaramin](/users/AnnekeCaramin) qui
 - Retirez tous les arêtes encore présentes, enfilez votre manteau, donnez-vous une tape dans le dos et dormez pendant trois semaines.
 
 
-#### Other notes
+#### Autres notes
 
-- Sew an arrowhead tack in the triangular area above the back pleat. This area is marked on the pattern by dashed lines and a bnotch at the triangle top. The arrowhead tack reinforces the pleat seam.
+- Couds une punaise en forme de flèche dans la zone triangulaire au-dessus du pli arrière. Cette zone est marquée sur le schéma par des lignes en pointillés et une encoche au sommet du triangle . La punaise en forme de flèche renforce la couture du pli.
