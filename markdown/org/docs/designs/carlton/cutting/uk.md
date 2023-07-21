@@ -1,5 +1,5 @@
 ---
-title: "Carlton coat: Cutting Instructions"
+title: "Пальто карлтон: Інструкція з розкрою"
 ---
 
 <Note>
