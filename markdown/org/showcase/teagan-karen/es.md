@@ -1,13 +1,13 @@
 ---
-maker: "unknown"
-caption: "Karen in her Teagan T-shirt"
+maker: "desconocido"
+caption: "Karen con su camiseta Teagan"
 date: "2020-10-19"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/065f4c5cf9977fa2a24938964fb1e700a2dd1ea2-2048x2048.jpg"
-intro: "Karen made this version of the Teagan T-shirt drafted for high-bust measurements, one of several options for making the Teagan T-shirt just right for you!"
-title: "Teagan T-Shirt by Karen"
+intro: "Karen hizo esta versión de la camiseta Teagan diseñada para medidas de pecho alto, ¡una de las varias opciones para hacer la camiseta Teagan a tu medida!"
+title: "Camiseta Teagan por Karen"
 designs:
   - "teagan"
 ---
 
-Karen made this version of [the Teagan T-shirt](/designs/teagan/) drafted for high-bust measurements, one of several options for making the Teagan T-shirt just right for you!
+Karen hizo esta versión de [la camiseta Teagan](/designs/teagan/) redactada para medidas de pecho alto, ¡una de las varias opciones para hacer la camiseta Teagan a tu medida!
 
