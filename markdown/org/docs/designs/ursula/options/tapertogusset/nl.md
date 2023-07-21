@@ -1,8 +1,8 @@
 ---
-title: "Taper to gusset"
+title: "Taps toelopend tot hoekplaat"
 ---
 
-Controls how much the front will curve inwards to meet the gusset.
+Bepaalt hoeveel de voorkant naar binnen buigt om bij de inzetrand te komen.
 
 ## Effect van deze optie op het patroon
 
