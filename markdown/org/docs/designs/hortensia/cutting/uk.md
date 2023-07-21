@@ -1,5 +1,5 @@
 ---
-title: "Hortensia handbag: Cutting Instructions"
+title: "Сумочка з гортензії: Інструкція з крою"
 ---
 
 ### Матеріали
