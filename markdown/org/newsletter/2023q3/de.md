@@ -1,20 +1,20 @@
 ---
 date: "2023-07-01"
 edition: "2023q3"
-intro: "Welcome to the 2023 Summer edition of the FreeSewing newsletter."
-title: "2023 Summer edition"
+intro: "Willkommen zur Sommerausgabe 2023 des FreeSewing-Newsletters."
+title: "2023 Sommerausgabe"
 ---
 
-Welcome to the 2023 Summer edition of the FreeSewing newsletter.
+Willkommen zur Sommerausgabe 2023 des FreeSewing-Newsletters.
 
-Here's what's we've included for you today:
+Hier ist, was wir heute für dich vorbereitet haben:
 
 
-- 🚨 Intermittent signup trouble as v2 infrastructure struggles with load  (2-minute read by Joost)
-- 🕵️ Behind the Seams: Jasmine (6-minute read - by Jasmine & Karen)
-- 🪡 Technique of the week (2-minute read - by Karen)
-- 🙏 Help us with social media (2-minute read - by Bob & Karen)
-- ⚫ It's always darkest before dawn (3-minute read by Joost)
+- 🚨 Zeitweilige Probleme bei der Anmeldung, da die v2-Infrastruktur mit der Last kämpft (2 Minuten gelesen von Joost)
+- 🕵️ Behind the Seams: Jasmine (6-minütige Lesung - von Jasmine & Karen)
+- 🪡 Technik der Woche (2-Minuten-Lesung - von Karen)
+- 🙏 Hilf uns mit sozialen Medien (2-Minuten-Lesung - von Bob & Karen)
+- ⚫ Vor dem Morgengrauen ist es immer am dunkelsten (3-Minuten-Lesung von Joost)
 
 &nbsp;
 
@@ -22,23 +22,23 @@ Here's what's we've included for you today:
 
 &nbsp;
 
-## 🚨 Intermittent signup trouble as v2 infrastructure struggles with load
+## 🚨 Zeitweilige Probleme bei der Anmeldung, da die v2-Infrastruktur mit der Last kämpft
 
-FreeSewing has recently been experiencing intermittent email delivery issues, which causes problems for new users trying to sign up, or other actions that rely on transactional emails, such as password resets.
+Bei FreeSewing gab es in letzter Zeit immer wieder Probleme mit der E-Mail-Zustellung ( ), was zu Problemen bei der Anmeldung neuer Nutzer/innen oder anderen Aktionen führt, die auf Transaktions-E-Mails angewiesen sind, wie z.B. das Zurücksetzen von Passwörtern.
 
-The underlying issue is that we are getting rate-limited by the SMTP relays we use to send out these transactional emails, and this causes people to wait in vain for their signup email, password reset, and so on.
+Das Problem ist, dass die SMTP-Relays, die wir verwenden, um diese Transaktions-E-Mails zu verschicken, eine Ratenbeschränkung haben, was dazu führt, dass die Leute unter vergeblich auf ihre Anmelde-E-Mails, Passwortrücksetzungen usw. warten.
 
-We have been using a free-tier service for the delivery of these messages, and historically this has worked fine for us.  There's been moments in the past where a large influx of new users would trigger these problems, for example during the height of the PPE shortage in the early stages of the COVID pandemic when FreeSewing (and our face mask pattern) was linked to in the New York Times, Forbes, and several other new outlets that dwarf us in scale.
+Wir haben einen kostenlosen Dienst für die Zustellung dieser Nachrichten genutzt, und hat in der Vergangenheit gut funktioniert.  In der Vergangenheit gab es Momente, in denen ein großer Zustrom neuer Nutzer diese Probleme auslöste, z. B. während des Höhepunkts der PSA-Knappheit in der Anfangsphase der COVID-Pandemie als FreeSewing (und unser Gesichtsmaskenmuster) in der New York Times, Forbes und einigen anderen neuen Medien, die uns in der Größenordnung in den Schatten stellen, verlinkt wurde.
 
-What used to be an exceptional event is now becoming more common, and it's something that I personally tend to lose sleep over because it disproportionately impacts the on-boarding process. Sure, there's going to be the occasional user who will have trouble resetting their password. But the vast majority of people who are impacted by this are new users, who are attempting to sign up.
+Was früher ein außergewöhnliches Ereignis war, wird heute immer häufiger, und es ist etwas, das mir persönlich den Schlaf raubt, weil es unverhältnismäßige Auswirkungen auf den Onboarding-Prozess hat. Sicherlich wird es gelegentlich Nutzer geben, die Probleme haben, ihr Passwort zurückzusetzen. Aber die überwiegende Mehrheit der Menschen, die davon betroffen sind, sind neue Nutzer, die versuchen, sich anzumelden.
 
-It is  a bad first impression when they can't get in, and as we all know, bad first impressions can be hard to recover from.
+Es ist ein schlechter erster Eindruck, wenn sie nicht reinkommen, und wie wir alle wissen, kann man sich von einem schlechten ersten Eindruck nur schwer erholen.
 
-After mulling it over for a while, I've decided to... do nothing. Or rather, to keep working on the more permanent fix, which is the v3 infrastructure where we've switched transactional email to a different partner where we are a paying customer, so there will be no rate limiting.  Downing tools now to go firefighting on the current production v2 infrastructure would only delay the release of v3, which will resolve this problem once and for all.
+Nachdem ich eine Weile darüber nachgedacht habe, habe ich beschlossen, ... nichts zu tun. Oder besser gesagt: arbeitet weiter an der dauerhaften Lösung, nämlich der v3-Infrastruktur, bei der wir die Transaktions-E-Mails zu einem anderen Partner verlagert haben, bei dem wir ein zahlender Kunde sind, so dass es keine Ratenbegrenzung geben wird.  Wenn du jetzt die Tools von zur Brandbekämpfung auf der aktuellen Produktionsinfrastruktur von v2 einsetzt, würde das nur die Veröffentlichung von von v3 verzögern, die dieses Problem ein für alle Mal lösen wird.
 
-As a mitigating factor, we have already migrated the delivery of this newsletter to our new infrastructure, as this will lighten the load on our *budget* of transactional emails per day.  So unlike before, we're actually paying money to get this to your inbox. It's not a lot of money per email of course, but it's just one of the many changes we need to make to scale up FreeSewing.
+Um die Situation zu entschärfen, haben wir den Versand dieses Newsletters bereits auf unsere neue Infrastruktur migriert, da dies die Belastung unseres *Budgets* von Transaktions-E-Mails pro Tag verringern wird. Im Gegensatz zu früher zahlen wir tatsächlich Geld dafür, dass du diese Informationen in deinem Posteingang findest. Das ist natürlich nicht viel Geld pro E-Mail, aber es ist nur eine der vielen Änderungen, die wir vornehmen müssen, um FreeSewing zu vergrößern.
 
-So, apologies to all those people who have been impacted by these intermittent issues. I know that nothing I say here can undo the frustration of hitting refresh on your inbox and not getting that email. But I wanted to be open about the underlying issues and why -- confronted with a lot of work and limited resources -- I've decided to keep my eye on the prize.
+Wir entschuldigen uns bei all denjenigen, die von den unterbrochenen Problemen betroffen waren. Ich weiß, dass nichts, was ich hier sage, die Frustration ungeschehen machen kann, wenn du auf drückst und die E-Mail nicht bekommst. Aber ich wollte offen darüber sprechen, was dahintersteckt und warum ich - angesichts der vielen Arbeit und der begrenzten Ressourcen von - beschlossen habe, mein Ziel nicht aus den Augen zu verlieren.
 
 
 &nbsp;
@@ -49,92 +49,69 @@ So, apologies to all those people who have been impacted by these intermittent i
 
 ## 🕵️ Behind the Seams: Jasmine
 
-If you haven't met Jasmine yet, you're missing out (and you should come hang out in our [Discord](https://discord.freesewing.org/)). She's got some cool sewing projects under her belt, but another big reason we reached out to interview her was the exceptional contributions Jasmine makes to the FreeSewing community. Have a question, a problem, or a celebration to share? Jasmine has cheered on and helped out countless folks in the community and brings support and joy (and incredibly cute puppies) to the folks of FreeSewing. So without further ado, here's a little bit more about one of our favorite FreeSewists!
+Wenn du Jasmine noch nicht kennst, hast du etwas verpasst (und du solltest in unserem [Discord](https://discord.freesewing.org/)abhängen). Sie hat schon einige coole Nähprojekte auf die Beine gestellt, aber ein weiterer wichtiger Grund, warum wir sie interviewen wollten, waren die außergewöhnlichen Beiträge, die Jasmine für die FreeSewing-Community leistet. Du hast eine Frage, ein Problem oder eine Feier, die du mit uns teilen möchtest? Jasmine hat unzählige Leute in der Community angefeuert und ihnen geholfen und bringt den Leuten von FreeSewing Unterstützung und Freude (und unglaublich süße Welpen). Hier erfährst du ein bisschen mehr über eine unserer liebsten FreeSewists!
 
-### How did you learn about FreeSewing?
-I think it was in search of a way to draft a body block...
+### Wie hast du von FreeSewing erfahren?
+Ich glaube, es war auf der Suche nach einer Möglichkeit, einen Körperblock zu entwerfen...
 
-My body is proportioned in a way I don't really find easily in ready made patterns. So the idea was to figure out a basic block to use as a template when adjusting patterns.
+Mein Körper ist auf eine Weise proportioniert, die ich in fertigen Schnittmustern nicht so leicht finde. Die Idee war also, einen Grundblock zu finden, der als Vorlage für die Anpassung der Muster dient.
 
-### How did you become a contributor?
-I'm a contributor? When did that happen? I guess it started with sharing my makes with the community, and then hacking the Sven sweater to emulate an oversized sweater I loved but absolutely couldn't afford.
+### Wie bist du ein Mitarbeiter geworden?
+Ich bin ein Beitragszahler? Wann ist das passiert? Ich glaube, es fing damit an, dass ich meine Entwürfe mit der Community geteilt habe und dann den Sven-Pullover gehackt habe, um einen übergroßen Pullover nachzubilden, den ich liebte, mir aber absolut nicht leisten konnte.
 
-### What has been your contributor work so far?
-The [family of Florents](https://freesewing.org/showcase/matching-florents/) have found their way onto the showcase pages, and the [hacked Sven](https://freesewing.org/showcase/drop-shoulder-sven/) did as well. I also wrote out how I adapted the design to an oversized drop-shoulder style.
+### Was war dein bisheriger Beitrag?
+Die [Familie von Florents](https://freesewing.org/showcase/matching-florents/) hat ihren Weg auf die Vitrinenseiten gefunden, und auch der [gehackte Sven](https://freesewing.org/showcase/drop-shoulder-sven/) hat es geschafft. Ich habe auch aufgeschrieben, wie ich das Design an einen übergroßen Drop-Shoulder-Stil angepasst habe.
 
-### Are you a sewist? A coder? Both? Neither?
-A sewist. Learning to code is on my wish list, but I don't have the bandwidth for it at the moment.
+### Bist du eine Näherin? Ein Programmierer? Beides? Weder noch?
+Eine Näherin. Programmieren zu lernen steht auf meiner Wunschliste, aber im Moment habe ich nicht die Bandbreite dafür.
 
-### When and why did you start sewing?
-I've wanted to learn to mend for a long time, as well as adjusting the fit on bought items. The same proportions that don't fit into sewing patterns easily also make it so I can get into standard sized clothes. But they never fit me properly. Everything tends to gape at my waist.
+### Wann und warum hast du mit dem Nähen angefangen?
+Ich wollte schon lange lernen, wie man flickt und gekaufte Sachen anpasst. Die gleichen Proportionen, die nicht so leicht in Nähmuster passen, sorgen auch dafür, dass ich in Kleidung in Standardgrößen hineinkomme. Aber sie haben mir nie richtig gepasst. Alles neigt dazu, an meiner Taille zu klaffen.
 
-### What is your daily job, outside of FreeSewing?
-I'm an X-ray technician at a small hospital. For the most part, I do hospital radiology, but a small portion of my hours is spent on patient radiation dose management and optimisation.
+### Was ist dein täglicher Job außerhalb von FreeSewing?
+Ich bin Röntgentechniker in einem kleinen Krankenhaus. Die meiste Zeit bin ich in der Krankenhausradiologie tätig, aber einen kleinen Teil meiner Arbeitszeit verbringe ich mit dem Management und der Optimierung der Strahlendosis von Patienten.
 
-### What are you currently working on?
-Sewing is mostly paused at the moment as my partner and I have a lot of renovation projects we need to focus on right now. There's a small handsewing project I'll work on to kill time during a quiet night shift at work, but nothing concrete at the moment.
+### Woran arbeitest du gerade?
+Das Nähen pausiert im Moment meistens, da mein Partner und ich eine Menge Renovierungsprojekte haben, auf die wir uns jetzt konzentrieren müssen. Es gibt ein kleines Handnähprojekt, an dem ich arbeiten werde, um die Zeit während einer ruhigen Nachtschicht auf der Arbeit zu überbrücken, aber im Moment ist nichts Konkretes geplant.
 
-### Which project did you just finish?
-I just finished some adjustments on a pair of trousers I made two years ago. They're a loose fit with a drawstring waist, and my first sewing project. I was thrilled even just managing to follow the instructions at that point, but the back and front panels are identical. With my body shape and rear estate, to use coined FreeSewing lingo, that's not ideal. So I removed some material from the front, and added patch pockets from some scraps I had left of the fabric.
+### Welches Projekt hast du gerade beendet?
+Ich habe gerade einige Anpassungen an einer Hose vorgenommen, die ich vor zwei Jahren gemacht habe. Die Hose hat eine lockere Passform mit Kordelzug in der Taille und ist mein erstes Nähprojekt. Ich war so begeistert, dass ich es gerade noch geschafft habe, der Anleitung zu folgen, aber die Rück- und die Vorderseite sind identisch. Bei meiner Körperform und meinem Hinterteil, um es im FreeSewing-Jargon auszudrücken, ist das nicht ideal. Also entfernte ich etwas Stoff von der Vorderseite und fügte aufgesetzte Taschen aus Stoffresten hinzu, die ich noch übrig hatte.
 
-### What sewing/coding project are you most proud of?
-The loose fitted pleated trousers I made after the Folkwear Rosie the Riveter pattern. It included a lot of new challenges I'd never taken on before. I'm sort of still picking projects in a way that forces me to learn a new thing each time, and this one definitely pushed the limits of my confidence.
+### Auf welches Näh-/Codierprojekt bist du am meisten stolz?
+Die locker sitzende Bundfaltenhose habe ich nach dem Folkwear Rosie the Riveter Muster genäht. Es gab viele neue Herausforderungen, die ich noch nie angenommen hatte. Ich wähle meine Projekte immer noch so aus, dass ich jedes Mal etwas Neues lernen muss, und dieses Projekt hat mich definitiv an die Grenzen meines Selbstvertrauens gebracht.
 
-### What in your life are you most proud of?
-There's so much to choose from. Some pieces of my writing? The ones where I dragged my guts and tears and snot across the page? I don't know. Stories and art matter. Certainly. But I think right now it's the puppies we raised. Seeing them come into the world, watching them waddle around and explore, and help them grow into wonderful family members for their future humans? That might be it. I'm already both dreading and looking forward to our second litter.
+### Auf was in deinem Leben bist du am meisten stolz?
+Es gibt so viel zur Auswahl. Ein paar Stücke aus meiner Feder? Die, in denen ich meine Eingeweide, Tränen und Rotz über die Seite geschleift habe? Ich weiß es nicht. Geschichten und Kunst sind wichtig. Gewiss. Aber ich glaube, im Moment sind es die Welpen, die wir aufgezogen haben. Zu sehen, wie sie auf die Welt kommen, zu beobachten, wie sie herumwatscheln und auf Entdeckungsreise gehen, und ihnen zu helfen, zu wunderbaren Familienmitgliedern für ihre zukünftigen Menschen heranzuwachsen? Das könnte es sein. Ich freue mich schon jetzt auf unseren zweiten Wurf und fürchte ihn zugleich.
 
-### What do you love the most about sewing?
-The way the tactile work helps settle the chaos in my brain. When I hit the right rhythm, it can feel meditative. And I end up with garments that do what I want them to, rather than having to search endlessly for what will end up as a compromise both in terms of fit and style, and sustainability and fair labour issues. Plus-sized shopping can feel like one of the seven levels of hell.
+### Was liebst du am meisten am Nähen?
+Die Art und Weise, wie die taktile Arbeit hilft, das Chaos in meinem Gehirn zu ordnen. Wenn ich den richtigen Rhythmus finde, kann es meditativ wirken. Und am Ende habe ich Kleidungsstücke, die genau das tun, was ich will, anstatt endlos nach einem Kompromiss zu suchen, der sowohl in Bezug auf Passform und Stil als auch auf Nachhaltigkeit und faire Arbeitsbedingungen einen Kompromiss darstellt. Einkaufen in Übergrößen kann sich wie eine der sieben Stufen der Hölle anfühlen.
 
-### What do you hate the most about sewing?
+### Was hasst du am meisten am Nähen?
 Zuschnitt.
 
-### What’s the hardest part of sewing to you?
-Usually, that's knowing when to stop. I will either fall into a hyperfocused rabbit hole and then realise it's 4am and possibly time to go to sleep, or I'll just keep doing one more seam and then one more, and then I get so tired I make a stupid mistake.
+### Was ist für dich das Schwierigste am Nähen?
+Normalerweise bedeutet das, zu wissen, wann man aufhören muss. Entweder falle ich in ein hyperfokussiertes Kaninchenloch und merke dann, dass es 4 Uhr morgens ist und es vielleicht Zeit ist, schlafen zu gehen, oder ich mache noch eine Naht und dann noch eine, und dann bin ich so müde, dass ich einen dummen Fehler mache.
 
-### What would be your advice for starting sewists?
-Sew things you're excited about. Practice projects like bags and bookmarks are great, but if you're motivated to finish a thing and use it, it becomes so much more fun. If you're prone to self-doubt, picking projects to expand or solidify your skills gradually can really work well. But if you're excited about it, and eager to get to work, by all means, go for that lined coat with lovely construction details and tailored elements. (Thinking of the lovely coats and jackets FreeSewing features.)
+### Was wäre dein Rat für Nähanfänger?
+Nähe Dinge, die dich begeistern. Übungsprojekte wie Taschen und Lesezeichen sind toll, aber wenn du motiviert bist, etwas fertigzustellen und es zu benutzen, macht es viel mehr Spaß. Wenn du zu Selbstzweifeln neigst, kannst du dir Projekte aussuchen, mit denen du deine Fähigkeiten schrittweise ausbauen oder festigen kannst. Aber wenn du dich darauf freust, zur Arbeit zu gehen, solltest du unbedingt einen gefütterten Mantel mit schönen Konstruktionsdetails und maßgeschneiderten Elementen wählen. (Wenn ich an die schönen Mäntel und Jacken denke, die es bei FreeSewing gibt).
 
-### Do you sew mostly for yourself, or for others like friends and family?
-Mostly myself, but two of my Florent triplets were made for relatives, and last winter I made a bunch of wristwarmers out of offcuts of sweater fabric, as stocking stuffer gifts for my family.
+### Nähst du hauptsächlich für dich selbst oder für andere wie Freunde und Familie?
+Meistens für mich selbst, aber zwei meiner Florent-Drillinge habe ich für Verwandte genäht und im letzten Winter habe ich ein paar Pulswärmer aus Stoffresten genäht, die ich meiner Familie geschenkt habe.
 
-### What are you up to when you’re not making clothes or designing patterns? Would you like to share ways to follow you on social media?
-Lol, how much space do we have here? As already mentioned, my partner and I ate licensed breeders of Belgian Tervuren Shepherds, though we stick to a litter every two years, pretty much. With the amount of time and energy invested in the puppies, more would not be sustainable. We also compete with our girls at dog agility trials and conformation shows. And then I'm also a writer, poet, narrator, and podcaster. Links to my creative work can be found at [JasmineArch.com](JasmineArch.com), and I also venture onto Tiktok now and then, where I'm [@jaztellsstories](https://www.tiktok.com/@jaztellsstories).
+### Was machst du, wenn du nicht gerade Kleidung nähst oder Schnittmuster entwirfst? Möchtest du uns mitteilen, wie wir dir auf sozialen Medien folgen können?
+Lol, wie viel Platz haben wir hier? Wie bereits erwähnt, sind mein Partner und ich lizenzierte Züchter von belgischen Tervuren-Schäfern, allerdings halten wir uns an einen Wurf alle zwei Jahre, so ziemlich. Bei der Menge an Zeit und Energie, die in die Welpen investiert wird, wäre mehr nicht tragbar. Außerdem nehmen wir mit unseren Mädchen an Agility- und Formationswettbewerben teil. Und dann bin ich auch noch Schriftsteller, Dichter, Sprecher und Podcaster. Links zu meiner kreativen Arbeit findest du unter [JasmineArch.com](JasmineArch.com), und ab und zu wage ich mich auch auf Tiktok, wo ich [@jaztellsstories](https://www.tiktok.com/@jaztellsstories)bin.
 
-### Do you have pets? Family?
-We currently have four dogs, though that number is set to grow in the coming years, I suspect.
+### Hast du Haustiere? Familie?
+Zurzeit haben wir vier Hunde, aber ich vermute, dass diese Zahl in den nächsten Jahren noch steigen wird.
 
-### Are you a dog person or a cat person?
-I like cats and will definitely want one as soon as my Lucie girl is not with us anymore. She loves cats too, but a little too much, I'm afraid. The cat would not be amused. But dogs are closer to my heart. The connection we have through working and training with our dogs is something I don't see happening with a cat anytime soon.
+### Bist du ein Hunde- oder ein Katzenmensch?
+Ich mag Katzen und werde auf jeden Fall eine haben wollen, sobald mein Lucie-Mädchen nicht mehr bei uns ist. Sie liebt auch Katzen, aber ein bisschen zu sehr, fürchte ich. Die Katze wäre nicht amüsiert. Aber Hunde liegen mir mehr am Herzen. Die Verbindung, die wir durch die Arbeit und das Training mit unseren Hunden haben, ist etwas, das ich mir bei einer Katze so schnell nicht vorstellen kann.
 
-### If there was one thing you could take with you to an uninhabited island, what would it be? Why?
-Oomph. Only one? A well-stocked ereader that has a solar cell to recharge.
+### Wenn es eine Sache gäbe, die du auf eine unbewohnte Insel mitnehmen könntest, was würde das sein? Und warum?
+Oomph. Nur eine? Ein gut ausgestatteter Ereader, der über eine Solarzelle zum Aufladen verfügt.
 
-### If there was one person you could take with you to an uninhabited island, who would it be? Why?
-Shit. Can't I go alone? The older I get, the more of an introvert I'm becoming. Otherwise, I'd want one of my dogs. My youngest, Vroni, makes an excellent blanket in the evening, and she's always happy, cheerful, and ready for a game of some sort. While some humans make for excellent company, they're usually a bit heavy to use as a blanket.
-
-&nbsp;
-
----
-
-&nbsp;
-
-## 🪡 Technique of the week (X-minute read - by Karen)
-
-First things first, yes, this newsletter comes out quarterly, so this title's moderately apocryphal. "Technique of the quarter" lacks panache, so here we are. Just work with us.
-
-In a recent [Contributor Call](https://freesewing.org/community/calls/), some FreeSewing contributors mentioned that great tips and techniques sometimes get shared between the community on [Discord](https://discord.freesewing.org/), and it would be great to share them more broadly. So, here goes!
-
-A few weeks ago, a new sewist was having trouble with the top thread snapping over and over, and it led to some great troubleshooting tips. While this time, it didn't work (sometimes you have to throw in the towel and get your machine serviced, like if the timing's off), we thought the suggestions would be great to share!
-
-### Is your thread snapping when you try to sew? A few things that might be worth checking...
-- The tension might be off. It's usually a numbered dial near the top of the machine, and it should generally be set to around 4 or 4.5, unless you're tinkering with it or more familiar with tension. If you're having problems and the tension is set to 2 or 7 or something, odds are high that's the problem.
-- Do you have the presser foot up while you're threading the machine? This separates the tension discs, so your thread can slip between them.
-- Maybe something's up with your tension discs themselves. These are the little discs that your thread travels between before it goes through the takeup lever. They hold the thread at the right tension, and if your thread slips outside of them, it can cause all sorts of problems. If the thread's definitely between the tension discs, but you think they're the source of the issue, make sure they're all cleaned out and no lint or dust is caught between them.
-- Make sure you've got the right bobbin. Sometimes they look right, but even a minor variation from what's recommended for your specific machine can cause major problems. Once you're sure of that, make sure the bobbin is loaded in the right direction!
-- It's also always worth making sure you've got a good fresh needle! The wrong size needle for the fabric can mess up your thread tension and your fabric.
-
-Good luck sewing!
+### Wenn es eine Person gäbe, die du mit auf eine unbewohnte Insel nehmen könntest, wer wäre das? Und warum?
+Shit. Kann ich nicht alleine gehen? Je älter ich werde, desto mehr werde ich zum Introvertierten. Sonst würde ich einen meiner Hunde haben wollen. Meine Jüngste, Vroni, eignet sich hervorragend als Decke für den Abend. Sie ist immer fröhlich, gut gelaunt und bereit für irgendeine Art von Spiel. Manche Menschen sind zwar eine gute Gesellschaft, aber als Decke sind sie meist etwas zu schwer.
 
 &nbsp;
 
@@ -142,32 +119,22 @@ Good luck sewing!
 
 &nbsp;
 
+## 🪡 Technik der Woche (X-Minuten-Lesen - von Karen)
 
-## 🙏 Help us with social media
+Das Wichtigste zuerst: Ja, dieser Newsletter erscheint vierteljährlich, also ist dieser Titel einigermaßen apokryph. Der "Technik des Quartals" fehlt es an Schwung, also sind wir hier. Arbeite einfach mit uns zusammen.
 
-Hey! Did you know FreeSewing is on social media? If the answer to that question is no, well, you're not alone. We could use some interested parties who are socially savvy to pick up the loose ends we've left trailing around Instagram, Reddit, and other platforms.
+In einem kürzlich durchgeführten [Contributor Call](https://freesewing.org/community/calls/)erwähnten einige FreeSewing-Mitarbeiter, dass tolle Tipps und Techniken manchmal in der Community auf [Discord](https://discord.freesewing.org/)geteilt werden und es wäre toll, wenn wir diese auf breiterer Basis teilen könnten. Also, los geht's!
 
-### What platforms do you need help with?
-Currently, FreeSewing is on [Discord](https://discord.freesewing.org/), [Facebook](https://www.facebook.com/groups/627769821272714), [Instagram](https://instagram.com/freesewing_org), [Reddit](https://www.reddit.com/r/freesewing/), [Twitter](https://twitter.com/freesewing_org), and [YouTube](https://youtube.com/channel/UCLAyxEL72gHvuKBpa-GmCvQ). (If you want to check out the whole list again later, you can find all of them here: [Where to find us](https://freesewing.org/community/where/).)
+Vor ein paar Wochen hatte eine Nähanfängerin Probleme damit, dass der Oberfaden immer wieder reißt, und das führte zu einigen tollen Tipps zur Fehlerbehebung. Auch wenn es diesmal nicht geklappt hat (manchmal muss man das Handtuch werfen und die Maschine reparieren lassen, z. B. wenn die Zeitmessung nicht stimmt), fanden wir die Vorschläge toll, um sie zu teilen!
 
-Frankly, I don't think we're going to say no to support with any of them, but in particular our Instagram and Reddit accounts could use someone at the helm, and it's been a while since our YouTube had exciting new content.
+### Reißt dein Faden, wenn du versuchst zu nähen? Ein paar Dinge, die es wert sind, überprüft zu werden...
+- Die Spannung könnte nicht stimmen. Das ist normalerweise ein nummerierter Drehknopf oben an der Maschine, der normalerweise auf 4 oder 4,5 eingestellt sein sollte, es sei denn, du bastelst daran herum oder bist mit der Spannung besser vertraut. Wenn du Probleme hast und die Spannung auf 2 oder 7 oder so eingestellt ist, stehen die Chancen gut, dass das das Problem ist.
+- Hast du den Nähfuß oben, während du die Maschine einfädelst? Dadurch werden die Spannungsscheiben getrennt, sodass dein Faden zwischen ihnen hindurchrutschen kann.
+- Vielleicht ist etwas mit deinen Bandscheiben selbst los. Das sind die kleinen Scheiben, zwischen denen dein Faden durchläuft, bevor er durch den Aufwickelhebel geht. Sie halten den Faden auf der richtigen Spannung, und wenn dein Faden aus ihnen herausrutscht, kann das alle möglichen Probleme verursachen. Wenn der Faden definitiv zwischen den Spannscheiben liegt, du aber glaubst, dass sie die Ursache des Problems sind, solltest du sicherstellen, dass sie alle gereinigt sind und sich keine Flusen oder Staub zwischen ihnen befinden.
+- Achte darauf, dass du die richtige Spule hast. Manchmal sehen sie richtig aus, aber schon eine kleine Abweichung von den Empfehlungen für deine spezielle Maschine kann große Probleme verursachen. Wenn du dir dessen sicher bist, stelle sicher, dass die Spule in der richtigen Richtung eingelegt ist!
+- Es lohnt sich auch immer, dafür zu sorgen, dass du eine gute, frische Nadel hast! Die falsche Nadelgröße für den Stoff kann deine Fadenspannung und deinen Stoff durcheinander bringen.
 
-### What would I actually be doing?
-Great question! It's important to FreeSewing that people volunteering their time are getting to work on things that they find interesting, joyful, motivating, etc. So, if you've got strong thoughts on the way one of these items could or should be managed, we're all ears. That being said, sometimes guidelines are helpful, so here's a little info.
-
-**Instagram**: This person would at least monitor messages and tags, and would re-post cool makes from FreeSewing users that tagged us or used one of the [FreeSewing hashtags](https://freesewing.org/community/hashtags/). You would abide by the [Community Standards](https://freesewing.org/docs/various/community-standards/) in all of their interactions on behalf of FreeSewing. If you wanted to go above and beyond, you might actually create content, pulling from makes posted in the showcase, cool things happening on [Github](https://github.com/freesewing/) or [Discord](https://discord.freesewing.org/), updates from [Contributor Calls](https://freesewing.org/community/calls/), etc.
-
-**Reddit**: This person would moderate the [FreeSewing subreddit], making sure that contributors were adhering to FreeSewing's [Community Standards](https://freesewing.org/docs/various/community-standards/). You would answer questions where possible and function as a connector to the rest of the FreeSewing community in cases where questions and contributions should be shared with more contributors.
-
-### What if, like so many before me, I can't commit long-term but would like to contribute *something*?
-
-**Create a YouTube tutorial**: You know how we said that our YouTube could use some new content? If you're ever inclined to make, for instance, a tutorial for a pattern, a video on how you hacked something to work for you, a how-to on some aspect of developing and contributing code to FreeSewing... Well, this list could go on, but the short version is that we'd love to see it.
-
-**Join our Facebook group or Discord**: It's only fun if it's a community.
-
-**Write for the newsletter**: If you've used a FreeSewing pattern for something interesting, developed a cool new contribution for FreeSewing, would love to share a deep dive on a sewing technique, we'll gladly help get it into the newsletter, onto the Showcase, or wherever it best fits.
-
-You can let us know if you're game to help out with any of these by simply replying to this email, or by hopping in the Discord.
+Viel Glück beim Nähen!
 
 &nbsp;
 
@@ -176,32 +143,65 @@ You can let us know if you're game to help out with any of these by simply reply
 &nbsp;
 
 
+## 🙏 Hilf uns mit sozialen Medien
 
-## ⚫ It's always darkest before dawn
+Hey! Wusstest du, dass FreeSewing in den sozialen Medien aktiv ist? Wenn die Antwort auf diese Frage nein lautet, bist du nicht allein. Wir könnten ein paar Interessierte gebrauchen, die sich in den sozialen Netzwerken auskennen, um die losen Enden, die wir auf Instagram, Reddit und anderen Plattformen hinterlassen haben, zu beseitigen.
 
-I had to look it up but at the beginning of this year, I wrote the following about the release of FreeSewing version 3:
+### Bei welchen Plattformen brauchst du Hilfe?
+Derzeit ist FreeSewing auf [Discord](https://discord.freesewing.org/), [Facebook](https://www.facebook.com/groups/627769821272714), [Instagram](https://instagram.com/freesewing_org), [Reddit](https://www.reddit.com/r/freesewing/), [Twitter](https://twitter.com/freesewing_org), und [YouTube](https://youtube.com/channel/UCLAyxEL72gHvuKBpa-GmCvQ). (Wenn du dir die ganze Liste später noch einmal ansehen willst, findest du sie hier: [Wo du uns findest](https://freesewing.org/community/where/).)
 
-> *You can start the clock today and I promise that it will be out before the end of the year.* *If it's Q4, I will be a bit disappointed. If it's Q3, I will be happy.* *If it's Q2 I will be thrilled. And if it's Q1 I'll be very surprised.*
+Ehrlich gesagt glaube ich nicht, dass wir bei irgendeinem von ihnen nein sagen werden, aber vor allem unsere Instagram- und Reddit-Accounts könnten jemanden am Ruder gebrauchen, und es ist schon eine Weile her, dass unser YouTube-Kanal spannende neue Inhalte hatte.
 
-Today marks the start of Q3 and so the pressure mounts to deliver on that promise. I had initially penciled in the 25th of August as a bit of a hard deadline because it marks 6 years to the day since I launched FreeSewing.org.
+### Was würde ich eigentlich tun?
+Gute Frage! Für FreeSewing ist es wichtig, dass die Menschen, die sich freiwillig engagieren, an Dingen arbeiten, die sie interessant finden, die ihnen Freude machen, die sie motivieren usw. Wenn du also eine gute Idee hast, wie einer dieser Punkte gehandhabt werden könnte oder sollte, sind wir ganz Ohr. Trotzdem sind manchmal Richtlinien hilfreich, deshalb hier ein paar Infos.
 
-If I had been smart, I would have gone back to [that announcement blog post](https://freesewing.org/blog/open-for-business/) and heeded the warning in its prophetic opening sentence:
+**Instagram**: Diese Person würde zumindest Nachrichten und Tags überwachen und coole Produkte von FreeSewing-Nutzern, die uns getaggt oder einen der [FreeSewing-Hashtags verwendet haben, erneut posten](https://freesewing.org/community/hashtags/). Du würdest dich bei allen Interaktionen im Namen von FreeSewing an die [Community Standards](https://freesewing.org/docs/various/community-standards/) halten. Wenn du mehr als das willst, könntest du auch Inhalte erstellen, wie z.B. die im Showcase geposteten Marken, coole Dinge, die auf [Github](https://github.com/freesewing/) oder [Discord](https://discord.freesewing.org/)passieren, Updates von [Contributor Calls](https://freesewing.org/community/calls/), usw.
 
-> *When I released freesewing core back in March, I did not expect it to take another 5 months to finally have a proper front-end for it, but here we are.*
+**Reddit**: Diese Person würde das [FreeSewing-Subreddit] moderieren und sicherstellen, dass sich die Teilnehmer an die FreeSewing-Community-Standards halten [](https://freesewing.org/docs/various/community-standards/). Du würdest Fragen beantworten, wo es möglich ist, und als Bindeglied zum Rest der FreeSewing-Community fungieren, wenn Fragen und Beiträge mit weiteren Mitwirkenden geteilt werden sollen.
 
-Because this is exactly the situation we find ourselves in today. The foundational work is largely completed. We may still tweak things left and right as we make progress, but the main effort is now on building a new frontend for our flagship website. Somehow, we need to make all of that work under the hood available to you in a way that is simple yet powerful, and intuitive despite FreeSewing providing functionality that is not what people typically expect from *a sewing pattern website*.
+### Was ist, wenn ich mich, wie so viele vor mir, nicht langfristig binden kann, aber gerne etwas beitragen würde **?
 
-I am no longer certain that I'll make that self-imposed August 25 deadline. Although I am still cautiously optimistic that by the end of this quarter, when the next edition of this newsletter rolls around, we'll have reasons to celebrate. Still, it will be ready when it's ready. Estimating the amount of time it will take to write software is notoriously difficult when it's your day job, it gets increasingly more hand-wavy when you are limited to your evenings and weekends to move the needle.
+**Erstelle ein YouTube-Tutorial**: Du weißt, dass wir gesagt haben, dass unser YouTube-Kanal neue Inhalte gebrauchen könnte? Wenn du zum Beispiel eine Anleitung für ein Schnittmuster erstellen möchtest, ein Video darüber, wie du etwas gehackt hast, damit es für dich funktioniert, eine Anleitung zu einem Aspekt der Entwicklung und der Bereitstellung von Code für FreeSewing... Die Liste ließe sich fortsetzen, aber die Kurzversion ist, dass wir es gerne sehen würden.
 
-This somewhat stoic *it will be ready when it's ready* attitude does not mean I am less determined to make it happen. It's more the realization that as much as I want to sprint to the finish line, this is more like a marathon. And blowing up before the finish line is a clear and present danger.
+**Tritt unserer Facebook-Gruppe oder Discord bei**: Es macht nur Spaß, wenn es eine Gemeinschaft ist.
 
-The last month or so has been difficult for me. The increasing pressure to deliver had sucked most of the joy out of my FreeSewing work, and I found myself irritable and easily triggered. I was attending a session on burnout prevention at work recently, and I recognized so many of the warning flags in myself that I realized that staying the course was too dangerous.
+**Schreibe für den Newsletter**: Wenn du ein FreeSewing-Muster für etwas Interessantes verwendet hast, einen coolen neuen Beitrag für FreeSewing entwickelt hast oder gerne einen Artikel über eine Nähtechnik mit uns teilen würdest, helfen wir dir gerne dabei, ihn in den Newsletter, in das Showcase oder wo auch immer er am besten hinpasst, aufzunehmen.
 
-My commitment to the success and growth of FreeSewing remains unwavering.  On the other hand, I felt something had to give, so I ultimately decided that the best way forward for the foreseeable future would be to *only* focus on getting v3 out the door.
+Wenn du Lust hast, uns dabei zu helfen, kannst du einfach auf diese E-Mail antworten oder in den Discord hüpfen.
 
-So for the time being, and probably at least until v3 is ready, I am taking a step back from the community to allow me to work on FreeSewing free of distractions. It is this same somewhat hermit-like focus that has brought FreeSewing into this world, it's what brought you (the current) FreeSewing v2, and I believe it will get us to FreeSewing v3 as well.
+&nbsp;
 
-I'm in a better place now. It was touch-and-go there for a moment, and I'd like to apologize to those members of the community who had to deal with my increasingly frazzled mental health in the weeks leading up to my course correction.
+---
 
-I'm still not sure I'll make the deadlines I've set out for myself. But I feel positive and hopeful again that the work we're doing is worthwhile and will pay off in the end. And -- should there by any doubt about that -- I know for a fact that the FreeSewing community is perfectly wonderful without me around too. And on some of my more difficult days, probably even more so.
+&nbsp;
+
+
+
+## ⚫ Vor der Dämmerung ist es immer am dunkelsten
+
+Ich musste nachsehen, aber Anfang dieses Jahres schrieb ich folgendes über die Veröffentlichung von FreeSewing Version 3:
+
+> *Du kannst die Uhr schon heute stellen und ich verspreche dir, dass sie noch vor Ende des Jahres erscheinen wird.* *Wenn es erst im 4. Quartal ist, werde ich ein bisschen enttäuscht sein. Wenn es Q3 ist, werde ich glücklich sein.* *Wenn es Q2 ist, werde ich begeistert sein. Und wenn es Q1 ist, werde ich sehr überrascht sein.*
+
+Heute beginnt das dritte Quartal und damit steigt der Druck, dieses Versprechen einzulösen. Ursprünglich hatte ich mir den 25. August als Deadline vorgenommen , denn an diesem Tag ist es auf den Tag genau 6 Jahre her, dass ich FreeSewing.org ins Leben gerufen habe.
+
+Wenn ich schlau gewesen wäre, wäre ich zurück zu [gegangen, dem Ankündigungsblog post](https://freesewing.org/blog/open-for-business/) und hätte die Warnung im prophetischen Eröffnungssatz von beherzigt:
+
+> *Als ich im März freesewing core veröffentlicht habe, habe ich nicht erwartet, dass es weitere 5 Monate dauern würde, bis endlich ein richtiges Frontend dafür hat, aber jetzt ist es soweit.*
+
+Denn das ist genau die Situation, in der wir uns heute befinden. Die Grundlagenarbeit von ist weitgehend abgeschlossen. Wir werden vielleicht noch ein paar Dinge auf ändern, wenn wir Fortschritte machen, aber das Hauptaugenmerk liegt jetzt auf der Entwicklung eines neuen Frontends für , unsere Hauptwebsite. Irgendwie müssen wir all die Arbeit, die unter der Haube steckt, auf eine Art und Weise verfügbar machen, die einfach, aber leistungsstark und intuitiv ist, obwohl FreeSewing Funktionen bietet, die man normalerweise nicht von *einer Nähmuster-Website*erwartet.
+
+Ich bin mir nicht mehr sicher, ob ich den selbst auferlegten Termin am 25. August einhalten werde. Trotzdem bin ich vorsichtig optimistisch, dass wir bis zum Ende dieses Quartals, wenn die nächste Ausgabe dieses Newsletters erscheint, Grund zum Feiern haben werden . Trotzdem wird es fertig sein, wenn es fertig ist. Die Zeit abzuschätzen, die du brauchst, um eine Software zu schreiben, ist bekanntermaßen schwierig, wenn du tagsüber arbeitest. Es wird immer schwieriger, wenn du nur abends und am Wochenende arbeiten kannst.
+
+Diese etwas stoische *it will be ready when it's ready* Haltung bedeutet nicht, dass ich weniger entschlossen bin, es zu schaffen. Es ist eher die Erkenntnis, dass ich so sehr wie ins Ziel sprinten möchte, dass dies eher ein Marathon ist. Und vor der Ziellinie in die Luft zu jagen, ist eine klare und gegenwärtige Gefahr.
+
+Der letzte Monat oder so war schwierig für mich. Der zunehmende Druck, abzuliefern, hatte mir den größten Teil der Freude an meiner Arbeit bei FreeSewing geraubt, und ich stellte fest, dass reizbar und leicht auslösbar war. Kürzlich nahm ich an einer Veranstaltung zur Burnout-Prävention teil und erkannte auf so viele Warnhinweise, dass mir klar wurde, dass es zu gefährlich war, den Kurs beizubehalten.
+
+Mein Engagement für den Erfolg und das Wachstum von FreeSewing ist ungebrochen. andererseits hatte ich das Gefühl, dass ich etwas nachgeben musste, und so entschied ich schließlich, dass der beste Weg für die absehbare Zukunft darin bestehen würde, *nur* sich darauf zu konzentrieren, v3 herauszubringen.
+
+Deshalb ziehe ich mich vorerst, und wahrscheinlich mindestens bis zur Fertigstellung von v3, von der Community zurück ( ), damit ich frei von an FreeSewing arbeiten kann. Es ist derselbe, etwas einsiedlerische Fokus, der FreeSewing in die Welt gebracht hat, der euch (das aktuelle) FreeSewing v2 gebracht hat, und ich glaube, er wird uns auch zu FreeSewing v3 führen.
+
+Ich bin jetzt in einer besseren Position. Für einen Moment ging es drunter und drüber und ich möchte mich bei den Mitgliedern der Community entschuldigen, die in den Wochen vor meiner Kurskorrektur mit meiner zunehmend zerrütteten psychischen Verfassung zu kämpfen hatten.
+
+Ich bin mir immer noch nicht sicher, ob ich die Fristen, die ich mir gesetzt habe, einhalten werde. Aber ich fühle mich positiv und habe wieder Hoffnung, dass sich die Arbeit, die wir leisten, lohnt und sich am Ende auszahlen wird. Und - sollte es irgendwelche Zweifel daran geben - ich weiß mit Sicherheit, dass die FreeSewing-Gemeinschaft auch ohne mich ganz wunderbar ist ( ). Und an manchen meiner schwierigeren Tage wahrscheinlich noch mehr.
 
