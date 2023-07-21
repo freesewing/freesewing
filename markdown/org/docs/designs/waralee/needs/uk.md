@@ -1,5 +1,5 @@
 ---
-title: "Waralee wrap pants: What You Need"
+title: "Штани з запахом Waralee: Що вам потрібно"
 ---
 
 Щоб зробити Waralee, вам знадобиться наступне:
