@@ -1,17 +1,17 @@
 ---
-title: "Hortensia handbag: Cutting Instructions"
+title: "Hortensia handtas: Knip instructies"
 ---
 
 ### Materialen
 
 - **Buitenstof**
-  - Cut **2 SidePanel** parts
-  - Cut **2 FrontBackPanel** parts
-  - Cut **1 BottomPanel**
-  - Cut **2 SidePanelReinforcement** parts
-  - Cut **2 Strap** parts
-  - Cut **1 ZipperPanel** part
+  - Snijd **2 Zijpaneel** onderdelen
+  - Snijd **2 FrontBackPanel** onderdelen
+  - Snijden **1 Bodempaneel**
+  - Snijd **2 ZijpaneelVersterking** onderdelen
+  - Knip **2 Onderdelen voor band**
+  - Snijd **1 RitsPaneel** deel
 - **Voering**
-  - Cut **2 SidePanel** parts
-  - Cut **2 FrontBackPanel** parts
-  - Cut **1 BottomPanel**
+  - Snijd **2 Zijpaneel** onderdelen
+  - Snijd **2 FrontBackPanel** onderdelen
+  - Snijden **1 Bodempaneel**
