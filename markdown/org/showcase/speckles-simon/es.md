@@ -1,21 +1,21 @@
 ---
-maker: "unknown"
-caption: "That constrasting buttonhole packet is a great touch."
+maker: "desconocido"
+caption: "Ese paquete de ojales a contraste es un toque estupendo."
 date: "2018-03-05"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/42a90db048975ca7afdcebe7c2d19e9c9e524b5c-1080x1194.jpg"
-intro: "Allie writes:"
-title: "A speckled simon by Allie for her husband"
+intro: "Allie escribe:"
+title: "Un simón moteado de Allie para su marido"
 designs:
   - "simon"
 ---
 
 
-Allie writes:
+Allie escribe:
 
-> Have you heard of freesewing.org? It’s pretty much the greatest thing ever!
+> ¿Has oído hablar de freesewing.org? ¡Es lo mejor de lo mejor!
 
 
-This image and the quote above are from [the Aspiring Seamstress blog](https://theaspiringseamstress.wordpress.com/2018/03/01/freesewing-org-simon/) It is published here with permission.
+Esta imagen y la cita anterior son del blog [the Aspiring Seamstress](https://theaspiringseamstress.wordpress.com/2018/03/01/freesewing-org-simon/) Se publica aquí con permiso.
 
-Follow the link above for a review of the pattern.
+Sigue el enlace anterior para ver una reseña del patrón.
 
