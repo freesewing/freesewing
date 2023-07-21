@@ -1,10 +1,10 @@
 ---
-title: "Front armhole curvature"
+title: "Voorste armsgat kromming"
 ---
 
 ***
 
-Controls how deep the armhole is scooped out at the front bottom
+Bepaalt hoe diep het armsgat aan de voorkant onderaan is uitgesneden
 
 ## Effect van deze optie op het patroon
 
