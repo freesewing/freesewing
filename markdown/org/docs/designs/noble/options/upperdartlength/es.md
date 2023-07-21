@@ -1,10 +1,10 @@
 ---
-title: "Upper Dart Length"
+title: "Longitud del dardo superior"
 ---
 
 ***
 
-The **Upper Dart Length** controls the length of the upper dart, 100% is all teh way to the bust point.
+La página **Longitud del dardo superior** controla la longitud del dardo superior, 100% hasta el punto del pecho.
 
 ## Efecto de esta opción en el patrón
 
