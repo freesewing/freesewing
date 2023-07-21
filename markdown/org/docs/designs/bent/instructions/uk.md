@@ -1,5 +1,5 @@
 ---
-title: "Bent body Block: Sewing Instructions"
+title: "Блок для викрійки тіла зігнутої форми: Інструкція з пошиття"
 ---
 
 <Note>
