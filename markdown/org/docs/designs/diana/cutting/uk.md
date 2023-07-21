@@ -1,5 +1,5 @@
 ---
-title: "Diana draped top: Cutting Instructions"
+title: "Драпірований топ Діана: Інструкція з крою"
 ---
 
 - Вирізати **1 деталь спини** на згині
