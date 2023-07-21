@@ -1,5 +1,5 @@
 ---
-title: "Ursula undies: Sewing Instructions"
+title: "Ursula Unterhosen: Anleitung zum Nähen"
 ---
 
 ### Schritt 1: Nähe die Vorderseite an das erste Zwickel-Stück
