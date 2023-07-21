@@ -1,5 +1,5 @@
 ---
-title: "Bruce boxer briefs: Cutting Instructions"
+title: "Caleçon Bruce : Instructions de coupe"
 ---
 
 Bruce se compose d'un dos, et de deux côtés, inserts et devants.
