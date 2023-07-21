@@ -1,5 +1,5 @@
 ---
-title: "Elastic width"
+title: "Ancho elástico"
 ---
 
 > #### ¿Cuál es la cuestión?
