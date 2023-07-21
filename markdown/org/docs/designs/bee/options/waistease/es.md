@@ -4,7 +4,7 @@ title: "Holgura de cintura"
 
 ***
 
-Controls the waist ease in the underlying Bella block Bee is based on
+Controla la holgura de cintura en el patrón base (Bella) en el que se basa Bee
 
 ## Efecto de esta opción en el patrón
 
