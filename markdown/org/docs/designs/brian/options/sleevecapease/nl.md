@@ -4,7 +4,7 @@ title: "Extra ruimte mouwkop"
 
 ***
 
-This option determines the amount of ease at the sleevecap.
+Deze optie bepaalt de hoeveelheid gemak bij de mouwopzet.
 
 <Note>
 
