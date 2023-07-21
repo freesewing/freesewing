@@ -1,12 +1,12 @@
 ---
-title: "Unice undies: What you need"
+title: "Unice onderbroekjes: Wat je nodig hebt"
 ---
 
-To make Unice, you will need the following:
+Om Unice te maken heb je het volgende nodig:
 
 - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-- About 0.7 meters (0.8 yards) of a suitable fabric (see [Fabric options](/docs/patterns/unice/fabric))
-- About 3 meters (3.3 yards) of underwear elastic, such as picot elastic or fold over elastic
+- Ongeveer 0,7 meter van een geschikte stof (zie [Stofopties](/docs/patterns/unice/fabric))
+- Ongeveer 3 meter ondergoedelastiek, zoals picotelastiek of overslagelastiek
 
 <Tip>
 
@@ -16,6 +16,6 @@ beïnvloeden als je de vouw over elastiek (FOE) gebruikt of jersey binden, Missc
 
 ##### Een overlock of serger/overlock is mooi, maar optioneel
 
-Zoals met alle breitwear en stretch stoffen zal een serger/overlock het leven makkelijker maken. Als je geen overlock hebt, geen zorg. Je hebt het niet echt nodig. You can just sew Unice with a zigzag stitch.
+Zoals met alle breitwear en stretch stoffen zal een serger/overlock het leven makkelijker maken. Als je geen overlock hebt, geen zorg. Je hebt het niet echt nodig. Je kunt Unice gewoon naaien met een zigzagsteek.
 
 </Tip>
