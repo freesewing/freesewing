@@ -61,8 +61,8 @@ Mais je voulais être complètement transparent sur ce qui se passe, alors j'ai 
 > 
 > Je suis privilégié, et j'ai donc des responsabilités. J'ai la chance d'être né en Europe occidentale, d'avoir un bon travail et un toit au-dessus de ma tête.
 > 
-> Pourrais-je utiliser cet argent ? Yes I could.  
-> Do I need the money? Non.
+> Pourrais-je utiliser cet argent ? Oui, je pourrais.  
+> Ai-je besoin de cet argent ? Non.
 > 
 > ##### La valeur de votre soutien
 > 
@@ -98,8 +98,8 @@ Donc, dès aujourd'hui, nous en appelons à tous les Mécènes.
 
 ## Devenez un Mécène de Freesewing
 
-To ensure a sustainable future for freesewing.org, our code, our patterns, and our community, we need to build a bedrock of loyal supporters.  
-Patrons who support us in our core work; Developing an open source platform for made-to-measure sewing patterns.
+Pour assurer un avenir durable à freesewing.org, à notre code, à nos patrons et à notre communauté, , nous devons construire un socle de soutiens fidèles.  
+Des mécènes qui nous soutiennent dans notre travail principal ; Développer une plateforme open source pour les patrons de couture sur mesure.
 
 ![Nous avons trois niveaux de Mécénat](https://posts.freesewing.org/uploads/patron_medals_2160e69d77.jpg)
 
