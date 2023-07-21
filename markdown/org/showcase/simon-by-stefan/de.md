@@ -1,6 +1,6 @@
 ---
-maker: "unknown"
-caption: "Stefan wearing Simon shirt, holding his grandson"
+maker: "unbekannt"
+caption: "Stefan trägt Simons Hemd und hält seinen Enkel"
 date: "20.10.2020"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/92109efedf33b53ac0664aa70d6c5e160da81e28-1200x1600.jpg"
 intro: "Simon shirt by Stefan"
@@ -10,5 +10,5 @@ designs:
 ---
 
 
-Stefan's Simon shirt review is unambiguous - as he puts it, "Simon shirt is what I love most". This is his first Simon, made around 2 years ago.
+Stefans Simon-Shirt-Rezension ist eindeutig - er sagt: "Simon-Shirt ist das, was ich am meisten liebe". Das ist sein erster Simon, den er vor etwa 2 Jahren gemacht hat.
 
