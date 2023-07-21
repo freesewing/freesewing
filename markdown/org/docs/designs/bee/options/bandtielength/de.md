@@ -1,10 +1,10 @@
 ---
-title: "Band (chest) tie length"
+title: "Länge des Brustbandes"
 ---
 
 ***
 
-Controls the length of the tie around your chest
+Kontrolliert die Länge der Krawatte um deine Brust
 
 ## Effekt dieser Option auf das Schnittmuster
 
