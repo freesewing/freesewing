@@ -1,5 +1,5 @@
 ---
-title: "Tamiko top: Cutting Instructions"
+title: "Tamiko top: Snij-instructies"
 ---
 
 - **Buitenstof**
