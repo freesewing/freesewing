@@ -1,5 +1,5 @@
 ---
-title: "Waralee wrap pants: Sewing Instructions"
+title: "Pantalones Waralee: Instrucciones de costura"
 ---
 
 <Warning>
@@ -26,47 +26,47 @@ Si vas a hacer los bolsillos, fabricarlos antes de poner una pieza de tejido en 
 
 </Note>
 
-Both sets of pockets on Waralee are single welt pockets. These use a single piece of fabric to create a pocket opening, but are otherwise very similar to the double welt pockets shown here: [Double welt pockets](https://freesewing.org/docs/sewing/double-welt-pockets).
+Los dos juegos de bolsillos de Waralee son bolsillos de ojal sencillos. Utilizan una sola pieza de tela para crear la abertura del bolsillo, pero por lo demás son muy similares a los bolsillos ribeteados dobles que se muestran aquí: [Bolsillos de ojal dobles](https://freesewing.org/docs/sewing/double-welt-pockets).
 
-We'll start with the front pockets.
-- Start with all the parts, and mark the location of the pocket on the right side of the fabric.
-- Mark the pocket opening on one of the facing pieces too. This time on the wrong side of the fabric.
-- Place the facing on the fabric, right sides together. Align the corners of the pocket openings, and pin in place.
+Empezaremos por los bolsillos delanteros.
+- Empieza con todas las piezas y marca la ubicación del bolsillo en el lado derecho de la tela.
+- Marca también la abertura del bolsillo en una de las piezas enfrentadas. Esta vez en el lado equivocado de la tela.
+- Coloca el revestimiento sobre la tela, con los lados derechos juntos. Alinea las esquinas de las aberturas de los bolsillos y sujétalas con alfileres.
 
-Pocket lining
-- Mark the pocket opening on your pocket lining. It should be just inside the seam allowance.
-- Align the pocket openings up on all fabric pieces, and line your pocket lining top up with the waistband. Pin or baste in place.
+Forro de bolsillo
+- Marca la abertura del bolsillo en su forro. Debe quedar justo dentro del margen de costura.
+- Alinea hacia arriba las aberturas de los bolsillos en todas las piezas de tela, y alinea la parte superior del forro de los bolsillos con la cintura. Sujeta con alfileres o hilván.
 
-Pocket opening
-- Using small stitches, sew the long sides of the pocket openings, catching fabric, facing, and pocket lining. Do not sew past the ends of the pocket opening.
-- Cut a slit directly between the two lines of stitching. Just before the end, split each end of the cut, snipping into each corner of the pocket opening (but not past). You should have a small V at each end of the cut.
-- Press the seams open.
-- Now push everything through the opening to the other side. Lay everything out nicely with the pocket opening open. Press the pocket opening.
+Apertura del bolsillo
+- Utilizando puntadas pequeñas, cose los lados largos de las aberturas de los bolsillos, la tela de captura, el revestimiento y el forro de los bolsillos. No cosas más allá de los extremos de la abertura del bolsillo.
+- Corta una hendidura directamente entre las dos líneas de costura. Justo antes del final, divide cada extremo del corte, recortando en cada esquina de la abertura del bolsillo (pero sin pasarlo). Debes tener una pequeña V en cada extremo del corte.
+- Presiona las costuras para abrirlas.
+- Ahora empuja todo por la abertura hacia el otro lado. Coloca todo bien con la abertura del bolsillo abierta. Presiona la abertura del bolsillo.
 
-Constructing the welt
-- Turn the garment over, and press the bottom edge of the pocket facing under. Later, this will yield a nice, clean edgestitch.
-- Next, flip the pocket facing up, so that it covers the pocket opening. Then, fold back just enough of the facing to exactly cover the entire pocket opening. Press, and pin in place.
+Construcción de la vira
+- Dale la vuelta a la prenda y presiona el borde inferior del bolsillo hacia abajo. Más tarde, esto dará lugar a un edgestitch bonito y limpio.
+- A continuación, da la vuelta al bolsillo hacia arriba, de modo que cubra la abertura del bolsillo. A continuación, dobla hacia atrás la parte del revestimiento suficiente para cubrir exactamente toda la abertura del bolsillo. Presiona y sujeta con alfileres.
 
-Sewing the pocket opening in place
-- Turn the whole thing right side up, then fold back the fabric on one short side of the pocket opening, revealing a little triangle cutout and your pocket lining.
-- Sew the short edge of the pocket opening, just outside of your markings. This should secure the V-shaped cutout bits to the lining. Once you feel confident everything will look good from the right side, restitch this line a few times to secure.
+Coser la abertura del bolsillo
+- Dale la vuelta por el derecho y dobla hacia atrás la tela de uno de los lados cortos de la abertura del bolsillo, dejando al descubierto un pequeño triángulo recortado y el forro del bolsillo.
+- Cose el borde corto de la abertura del bolsillo, justo por fuera de tus marcas. Esto debería fijar los trozos de recorte en forma de V al forro. Cuando estés segura de que todo quedará bien desde el lado derecho, vuelve a coser esta línea unas cuantas veces para asegurarla.
 - Alísala.
-- To make things nice and tidy, you'll also stitch the bottom edge of the pocket facing to the pocket lining at this point. (This is why we pressed the very edge under earlier.)
+- Para que todo quede bien ordenado, en este punto también coserás el borde inferior de la cara del bolsillo al forro del bolsillo. (Por eso presionamos antes el borde por debajo).
 
-Finishing the pocket
-- Take your second pocket facing, and press all edges under except for one of the longer edges.
-- Lay this facing over the pocket opening, right sides together and raw edge aligned with the raw edge of the pocket lining.
-- Now, fold your pocket lining over, aligning all the edges of the pocket.
-- Pin or clip the second pocket facing to the pocket lining along the raw edges. Then flip the pocket lining back, and pin the entire edge of the facing to the pocket lining.
-- Edgestitch the facing to the pocket fabric. This will sit behind the pocket opening when everything is assembled, so that if your pocket gaps open, your fashion fabric will show in the gap.
-- Flip the pocket fabric back, aligning edges, and pin all sides of the pocket. Close the pocket as you normally do. You can use a french seam, a serger, or another method.
+Acabado de la bolsa
+- Coge la segunda cara del bolsillo y presiona todos los bordes por debajo, excepto uno de los bordes más largos.
+- Coloca esta cara sobre la abertura del bolsillo, con los lados derechos juntos y el borde crudo alineado con el borde crudo del forro del bolsillo.
+- Ahora, dobla el forro del bolsillo, alineando todos los bordes del bolsillo.
+- Sujeta con alfileres o clips la segunda cara del bolsillo al forro del bolsillo a lo largo de los bordes sin rematar. A continuación, dale la vuelta al forro del bolsillo y sujeta con alfileres todo el borde del revestimiento al forro del bolsillo.
+- Cose el refrentado a la tela del bolsillo. Se colocará detrás de la abertura del bolsillo cuando todo esté montado, de modo que si el bolsillo se abre, la tela de moda se verá en el hueco.
+- Dale la vuelta a la tela del bolsillo, alineando los bordes, y sujeta con alfileres todos los lados del bolsillo. Cierra la bolsa como haces normalmente. Puedes utilizar una costura francesa, una overlock u otro método.
 
-Making everything clean and tidy
-- Flip the whole piece over so you're looking at the right side.
-- Fold back the main fabric, so you can see the little triangles on the short edge of the pocket opening.
-- Sew another line, now through all layers. You should be able to see the edge stitching line of the first facing. Stitch all the way to this line, which finishes the facing on the inside of the pocket. You want to be really close to the fold with this stitch line.
-- Now fold the fabric back on the long side of the pocket opening, where the pocket sides were stitches together. You'll see the initial stitch line of the pocket opening. Make sure all the layers of fabric are laying nicely, and stitch over this stitch line once again, now through all layers. This secures this side of the pocket to the garment fabric.
-- Flip over, press well, and admire your work.
+Hacer que todo esté limpio y ordenado
+- Dale la vuelta a toda la pieza para que veas el lado derecho.
+- Dobla hacia atrás la tela principal, de modo que puedas ver los pequeños triángulos en el borde corto de la abertura del bolsillo.
+- Cose otra línea, ahora a través de todas las capas. Deberías poder ver la línea de costura del borde de la primera cara. Cose hasta esta línea, que termina la cara interior del bolsillo. Quieres estar muy cerca del pliegue con esta línea de puntada.
+- Ahora dobla la tela hacia atrás por el lado largo de la abertura del bolsillo, donde estaban cosidos los lados del bolsillo. Verás la línea de puntada inicial de la abertura del bolsillo. Asegúrate de que todas las capas de tela están bien colocadas, y cose sobre esta línea de puntada una vez más, ahora a través de todas las capas. Esto fija este lado del bolsillo al tejido de la prenda.
+- Dale la vuelta, presiona bien y admira tu trabajo.
 
 <Note>
 
@@ -74,18 +74,18 @@ Incluí colocaciones para los bolsillos delanteros que se ocultarán por las ale
 
 </Note>
 
-Constructing the back pockets
-- The back pockets are also single welt pockets, but the pocket opening is horizontal, rather than at an angle. This means they hew much closer to the instructions for [double welt pockets](https://freesewing.org/docs/sewing/double-welt-pockets).
-- Follow the double welt instructions, modifying the opening to have a single welt, rather than a double welt.
+Construcción de los bolsillos traseros
+- Los bolsillos traseros también son bolsillos de ojal sencillos, pero la abertura del bolsillo es horizontal, en lugar de en ángulo. Esto significa que se ajustan mucho más a las instrucciones de [bolsillos de doble ribete](https://freesewing.org/docs/sewing/double-welt-pockets).
+- Sigue las instrucciones de la doble vira, modificando la abertura para que tenga una sola vira, en lugar de una doble vira.
 
-Congratulations! Congratulations! Your pockets are finished!
+¡Enhorabuena! Congratulations! Your pockets are finished!
 
 ### Paso 2: Hem los lados y la parte inferior
 
 ![Hem los lados y la parte inferior](waralee-hem-sides-and-bottom.png)
 
-- Hem the sides
-- Hem the bottom.
+- Haz dobladillos a los lados
+- Haz un dobladillo en la parte inferior.
 
 <Note>
 
@@ -93,20 +93,20 @@ Puede utilizar cualquier método que mejor le funcione. En la versión que prime
 
 </Note>
 
-### Step 3: Sew the two pants parts together at the crotch
+### Paso 3: Cose las dos partes del pantalón por la entrepierna
 
 ![Coloque las dos partes encima de la otra con buenos lados juntos. Difundir la costura del cromo](waralee-crotch-seam-no-pockets.png)
 
-Now you get to sew the two pants parts together.
+Ahora tienes que coser las dos partes del pantalón.
 
-- Lay the two pants parts on top of one another with _good sides together_ and sew the seam along the cutout.
-- _Finish_ this seam and press it.
+- Coloca las dos partes del pantalón una encima de la otra con _los lados bien juntos_ y cose la costura a lo largo del recorte.
+- _Termina_ esta costura y presiónala.
 
 ### Paso 4: Prepara las cuatro cadenas
 
 Las cuerdas son sólo tubos largos de tejido.
 
-- Tome una cuarta parte de su medida de cintura. Añadir ese número a 40cm (17”). Añade tu franquicia de costura. This is the length of each string.
+- Tome una cuarta parte de su medida de cintura. Añadir ese número a 40cm (17”). Añade tu franquicia de costura. Es la longitud de cada cadena.
 - Cortar cuatro tiras de tela que son de tan largo y 5 cm (2”) de largo.
 
 <Tip>
@@ -130,8 +130,8 @@ Si su material es delicado o endeble, puede añadir alguna interfaz para darle f
 </Note>
 
 - Doble a la mitad a lo largo del lado largo, _lados buenos juntos_.
-- Stitch the long side and one of the short sides,
-- Turn the tie right side out.
+- Cose el lado largo y uno de los lados cortos,
+- Gira la corbata hacia el derecho.
 
 <Tip>
 
@@ -147,7 +147,7 @@ Esto se puede hacer más fácil tomando una pieza de twine más larga que las ca
 
 Ahora es el momento de coser la banda de cintura.
 
-- If your fabric is delicate, add interfacing to the wrong side of the pants above the waist band line. (rojo)
+- Si tu tejido es delicado, añade entretela en el revés del pantalón por encima de la línea de la cintura. (rojo)
 - Doblar la franquicia de costura y luego doblar a lo largo de la línea de banda de cintura. (rojo)
 - Inserte una de las cadenas que hizo en el paso anterior de cada lado.
 - Se sienta a lo largo de la línea de banda de la cintura y añada un poco de unión adicional para asegurarse de que esas cuerdas están bien sujetadas. (azul)
