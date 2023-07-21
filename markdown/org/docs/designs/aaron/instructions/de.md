@@ -1,5 +1,5 @@
 ---
-title: "Aaron A-Shirt: Sewing Instructions"
+title: "Aaron A-Shirt: Anleitung zum Nähen"
 ---
 
 ## Schritt 1: Nähte schließen
