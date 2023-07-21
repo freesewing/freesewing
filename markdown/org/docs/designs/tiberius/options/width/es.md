@@ -2,7 +2,7 @@
 title: "Anchura"
 ---
 
-Controls the width of the garment
+Controla la anchura de la prenda
 
 ## Efecto de esta opción en el patrón
 
