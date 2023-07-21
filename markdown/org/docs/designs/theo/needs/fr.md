@@ -1,5 +1,5 @@
 ---
-title: "Theo trousers: What You Need"
+title: "Pantalon Theo : Ce qu'il te faut"
 ---
 
 Pour que Theodore, vous aurez besoin des éléments suivants :
