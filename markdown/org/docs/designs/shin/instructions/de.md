@@ -1,5 +1,5 @@
 ---
-title: "Shin swim trunks: Sewing Instructions"
+title: "Shin-Badehose: Nähanleitung"
 ---
 
 > ### Bilder kommen bald
