@@ -1,11 +1,11 @@
 ---
-title: Width ratio
+title: Relación de anchura
 ---
 
 Controla el ancho de la bib.
 
-- Increase the percentage to widen the width of the bib.
-- Decrease the precentage to constrict the width of the bib.
+- Aumenta el porcentaje para ampliar la anchura del dorsal.
+- Disminuye el porcentaje para estrechar la anchura del babero.
 
 ## Efecto de esta opción en el patrón
 
