@@ -1,10 +1,10 @@
 ---
-title: "Band (chest) tie length"
+title: "Bandlengte (borst)"
 ---
 
 ***
 
-Controls the length of the tie around your chest
+Regelt de lengte van de stropdas rond je borst
 
 ## Effect van deze optie op het patroon
 
