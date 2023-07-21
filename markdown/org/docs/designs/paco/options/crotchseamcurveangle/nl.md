@@ -2,10 +2,10 @@
 title: "Kruisnaad hoek"
 ---
 
-Controls the angle of the crotch seam curve.
+Regelt de hoek van de kruisnaadcurve.
 
-- 0% makes the crotch seam draft parallel to the hem.
-- Increasing this option will draft the crotch seam at 180 - the angle.
+- 0% maakt de kruisnaad evenwijdig aan de zoom.
+- Als je deze optie verhoogt, wordt de kruisnaad in een hoek van 180 graden opgesteld.
 
 
 ## Effect van deze optie op het patroon
