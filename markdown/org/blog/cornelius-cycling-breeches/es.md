@@ -1,29 +1,29 @@
 ---
 author: "joostdecock"
-caption: "Cycling like a true gentlemen"
+caption: "Pedalea como un auténtico caballero"
 date: "2021-03-06"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/15c72486b0c48905f9f4a916a32caa058f1b0f8a-997x857.jpg"
-intro: "Wouter is at it again, this time around he's treating us to classic cycling breeches."
-title: "These Cornelius cycling breeches are Wouter's latest gift to us all"
+intro: "Wouter vuelve a hacer de las suyas, y esta vez nos regala unos pantalones clásicos de ciclista."
+title: "Estos pantalones de ciclista Cornelius son el último regalo de Wouter para todos nosotros"
 ---
 
 
-[Wouter](https://www.instagram.com/wouter.vdub/) is at it again, this time around he's treating us to classic cycling breeches.
+[Wouter](https://www.instagram.com/wouter.vdub/) vuelve a hacer de las suyas, y esta vez nos regala unos pantalones clásicos de ciclista.
 
-He writes:
+Escribe:
 
-> When I was a child my dad would tell me stories about hiking in the mountains, something magical for a kid living in The Netherlands. He had a suitcase with his mountaineering things in it, and part of that were some 'knickerbockers', baggy trousers that reached down to your calves. 
+> Cuando era niño, mi padre me contaba historias sobre excursiones por las montañas, algo mágico para un niño que vivía en Holanda. Llevaba una maleta con sus cosas de montañero, y parte de ellas eran unos "knickerbockers", unos pantalones anchos que te llegaban hasta las pantorrillas. 
 > 
-> When I moved to the USA in my thirties and started hiking myself, I would often reflect on those talks and felt sad that I didn't inherit those knickerbockers. Then when I discovered sewing, I decided I would make myself a pair, but no good patterns presented themselves. 
+> Cuando me trasladé a EEUU a los treinta años y empecé a hacer senderismo por mi cuenta, a menudo reflexionaba sobre aquellas charlas y me sentía triste por no haber heredado aquellos pantalones bombachos. Luego, cuando descubrí la costura, decidí que me haría un par, pero no se presentaron buenos patrones. 
 > 
-> This year someone on the Freesewing discord server posted a link to The 'Keystone' Systems, Practical methods of cutting, from around the turn of the century. This contained a drafting system for 'Cycling Breeches', which seemed to be close to what my father used to wear, and could be translated into a Freesewing pattern. A project was born, and I'm happy to be able to present the results to you.
+> Este año, alguien en el servidor de discordia Freesewing publicó un enlace a Los Sistemas "Keystone", métodos prácticos de corte, de alrededor del cambio de siglo. Contenía un sistema de dibujo para unos "pantalones de ciclista", que parecían muy parecidos a los que solía llevar mi padre, y que podían traducirse en un patrón de costura libre. Nació un proyecto, y me alegra poder presentarte los resultados.
 
-As Wouter mentioned; This pattern is based on [the Keystone drafting method](https://archive.org/details/keystonesystemsc00heck/page/n5/mode/2up). Not that it matters because as always you get it made-to-measure for you [right here on FreeSewing.org](/designs/cornelius/).
+Como mencionó Wouter; Este patrón se basa en [el método de dibujo Keystone](https://archive.org/details/keystonesystemsc00heck/page/n5/mode/2up). No es que importe, porque como siempre lo tienes hecho a medida para tú [aquí mismo en FreeSewing.org](/designs/cornelius/).
 
-![Here's the man himself](https://posts.freesewing.org/uploads/wouter_9fbc821146.jpg)
+![Aquí está el hombre en persona](https://posts.freesewing.org/uploads/wouter_9fbc821146.jpg)
 
-Note that you don't have to cycle to wear these. All that's required is a willingness to show of those socks (or calfs).
+Ten en cuenta que no tienes que ir en bici para llevarlos. Lo único que hace falta es estar dispuesto a enseñar esos calcetines (o pantorrillas).
 
-Cornelius is available at [/designs/cornelius/](/designs/cornelius/).
+Cornelius está disponible en [/designs/cornelius/](/designs/cornelius/).
 
 
