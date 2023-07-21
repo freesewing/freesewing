@@ -1,5 +1,5 @@
 ---
-title: "Theo trousers: Sewing Instructions"
+title: "Pantalones Theo: Instrucciones de costura"
 ---
 
 <Note>
@@ -161,13 +161,13 @@ Cuando todo se ancla juntos, dobla la parte delantera y el revestimiento y cierr
 
 <Tip>
 
-Sew to bottom curve of the pocket bag up until the point where it reached the side piece
+Cose a la curva inferior de la bolsa de bolsillo hasta el punto en que llegue a la pieza lateral
 
-You can finish the pocket bag in a number of ways, including:
+Puedes terminar la bolsa de bolsillo de varias formas, por ejemplo
 
-- Serge the sides together
-- Finish the edge with bias tape
-- Sew the sides together and finish the edge with a zig-zag stitch
+- Une los lados con sarga
+- Remata el borde con cinta al bies
+- Cose los lados y remata el borde con una puntada en zig-zag
 
 </Tip>
 
@@ -398,11 +398,11 @@ Por último, pero no menos importante, coser a lo largo del zip con el pie de zi
 
 <Tip>
 
-When aligning the zip, make sure to take the following into account:
+Al alinear la cremallera, asegúrate de tener en cuenta lo siguiente:
 
-- The zip should be placed with the good side down
-- The zip should sit a bit back from the edge of your fly piece
-- Make sure to align the top of the zip with the other zip half on the right leg
+- La cremallera debe colocarse con el lado bueno hacia abajo
+- La cremallera debe asentarse un poco más atrás del borde de la bragueta
+- Asegúrate de alinear la parte superior de la cremallera con la otra mitad de la cremallera de la pierna derecha.
 
 </Tip>
 
@@ -668,8 +668,8 @@ Antes de finalizar la cintura, vamos a recortar parte de su franquicia de costur
 
 <Tip>
 
-**About seam allowance grading**
-When trimming back different layers of seam allowance, always try to cut them at different lengths so that the bulk is reduced in incremental steps.
+**Acerca de la graduación del margen de costura**
+Cuando recortes diferentes capas de margen de costura, intenta siempre cortarlas a diferentes longitudes para que el volumen se reduzca en pasos incrementales.
 
 La capa que se encuentra más cercana al lado bueno de la prenda debe ser la más larga, así que recorta desde allí.
 
@@ -769,9 +769,9 @@ Con el hem bien presionado, simplemente coser a mano la parte trasera doblada ha
 
 <Tip>
 
-Hemming se hace a mano porque es importante que las stitches no se muestren en el frente. So when hand-sewing the hem, don't push your needle through the fabric, but just catch a few threads so your stitches don't show on the front
+Hemming se hace a mano porque es importante que las stitches no se muestren en el frente. Así que, al coser el dobladillo a mano, no empujes la aguja a través de la tela, sino que simplemente atrapa unos cuantos hilos para que no se vean las puntadas en la parte delantera
 
-While there are machine alternatives, they aren't as neat (blind hem stitch) or probably not accessible to the home-sewer (industrial blind hem machine).
+Aunque existen alternativas a máquina, no son tan pulcras (puntada de dobladillo invisible) o probablemente no sean accesibles para el costurero doméstico (máquina de dobladillo invisible industrial).
 
 </Tip>
 
