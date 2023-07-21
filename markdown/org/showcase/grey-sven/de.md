@@ -1,16 +1,16 @@
 ---
-maker: "unknown"
-caption: "Ksenia made this Sven for her man."
+maker: "unbekannt"
+caption: "Ksenia hat diesen Sven für ihren Mann gemacht."
 date: "05.02.2018"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8470f4414deeee3d072401616b01be02c8b98bc7-1080x1080.jpg"
-intro: "This image is from the Instagram feed of Ksenia ."
-title: "Sven in grey terry A grey terry Sven"
+intro: "Dieses Bild stammt aus dem Instagram-Feed von Ksenia."
+title: "Sven in grauem Frottee A grauem Frottee Sven"
 designs:
   - "sven"
 ---
 
 
-[This image](https://www.instagram.com/p/BehvZ1fj4yo/) is from [the Instagram feed of Ksenia](https://www.instagram.com/owl.laughing/).
+[Dieses Bild](https://www.instagram.com/p/BehvZ1fj4yo/) stammt von [dem Instagram-Feed von Ksenia](https://www.instagram.com/owl.laughing/).
 
-It is published here with permission.
+Er wird hier mit Genehmigung veröffentlicht.
 
