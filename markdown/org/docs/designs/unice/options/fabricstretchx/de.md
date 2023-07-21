@@ -1,8 +1,8 @@
 ---
-title: "Fabric stretch X"
+title: "Gewebestretch X"
 ---
 
-Controls the stretch in horizontal direction.
+Steuert die Dehnung in horizontaler Richtung.
 
 ## Effekt dieser Option auf das Schnittmuster
 
