@@ -1,23 +1,24 @@
 ---
-maker: "unknown"
-caption: "Wahid waistcoat by Pho"
+maker: "inconnue"
+caption: "Gilet Wahid par Pho"
 date: "2021-05-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e172985d483a277509c6cbaf64fcd58ded7a95ea-521x800.jpg"
-intro: "Pho made this stellar Wahid! They shared:"
-title: "[En anglais] Wahid by Pho"
-designs: ["wahid"]
+intro: "Pho a fait ce stellaire Wahid ! Ils ont partagé :"
+title: "Wahid par Pho"
+designs:
+  - "wahid"
 ---
 
-Pho made this stellar Wahid! They shared:
+Pho a fait ce stellaire Wahid ! Ils ont partagé :
 
-> Wahid to my measurements. I opted out of buttons since I sit a lot at work and a completely fitted garment for me wouldn't be able to stay buttoned. I also did the pocket bags as one long piece of fabric which was easiest for me to understand under guidance of a sewing teacher.  I might opt for snaps or just leave it open. My size stomach wise is bigger than my chest. Amazing how a garment my size makes me look great! Thanks for the pattern!
+> Wahid à mes mesures. J'ai choisi de ne pas mettre de boutons car je suis souvent assise au travail et un vêtement complètement ajusté pour moi ne pourrait pas rester boutonné. J'ai aussi fait les sacs à pochettes en un seul long morceau de tissu, ce qui était plus facile à comprendre pour moi sous les conseils d'un professeur de couture.  J'opterai peut-être pour des boutons-pression ou je le laisserai simplement ouvert. Ma taille au niveau du ventre est plus grande que ma poitrine. C'est incroyable qu'un vêtement de ma taille me donne fière allure ! Merci pour le modèle !
 
-One more picture of their fantastic work:
+Une autre photo de leur fantastique travail :
 
-![Side view](https://posts.freesewing.org/uploads/wahid_by_pho_wahidbypho2_ba0be6a31c.jpg "Side view")
+![Vue de côté](https://posts.freesewing.org/uploads/wahid_by_pho_wahidbypho2_ba0be6a31c.jpg "Vue de côté")
 
 <Note>
 
-This picture is from Pho on Discord. Elle est publiée ici avec son autorisation.
+Cette image provient de Pho sur Discord. Elle est publiée ici avec son autorisation.
 
 </Note>
