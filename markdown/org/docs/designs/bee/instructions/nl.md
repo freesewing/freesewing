@@ -36,7 +36,7 @@ De inkepingen in dit patroon werken meer als stippen, dus **klem ze niet** om ze
 
 #### Band Stropdas Variant
 
-- </em> Rijg met de knipranden en de hoofdstof aan elkaar _een van de nekbandjes aan de bovenkant van een van de cupdelen en zorg dat het bandje naar de onderkant van de cup gaat.</li>
+-  Rijg met de knipranden en de hoofdstof aan elkaar _een van de nekbandjes aan de bovenkant van een van de cupdelen en zorg dat het bandje naar de onderkant van de cup gaat.
 - Speld, met het nekbandje naar binnen geklemd, een voeringcupdeel met de goede kanten op elkaar op de hoofdcup.
 - Naai de voering aan de hoofdcup tussen inkepingen langs de voor-, boven- en zijnaden, zorg ervoor dat de nekband niet vast komt te zitten en verstevig de steek bij de inkepingen.
 - (Optioneel) Vouw naar de verkeerde kant en _edgestitch_ de naadtoeslag naar beneden tussen de inkepingen op de voor- en zijnaden. Naai de toeslagen niet aan elkaar.
@@ -44,7 +44,7 @@ De inkepingen in dit patroon werken meer als stippen, dus **klem ze niet** om ze
 - Knip de naadtoeslagen van de genaaide randen bij en laat de naadtoeslag tussen de inkepingen zitten. Knip de hoeken in. Het kan ook nodig zijn om de gebogen naden af te knippen.
 - Keer binnenstebuiten door het nekbandje door een van de openingen te trekken. Pers.
 - (Optioneel) _edgestitch_ de bovenkant, zijkanten en onderkant van het kopje, laat de openingen tussen de inkepingen open.
-- Naai langs de omhullingslijn om een bandkanaal te maken.</ul>
+- Naai langs de omhullingslijn om een bandkanaal te maken.
 
 <Note>Herhaal dit voor het andere kopje</Note>
 
@@ -65,13 +65,13 @@ Hoewel het zeker optioneel is, wordt aangeraden om de bovenkant en zijkanten van
 
 #### Kruis Rugbanden Variant
 
-- </em> Rijg met de knipranden en de hoofdstof aan elkaar _een van de nekbandjes aan de bovenkant van een van de cupdelen en zorg dat het bandje naar de onderkant van de cup gaat.</li>
+-  Rijg met de knipranden en de hoofdstof aan elkaar _een van de nekbandjes aan de bovenkant van een van de cupdelen en zorg dat het bandje naar de onderkant van de cup gaat.
 - Speld, met het nekbandje naar binnen geklemd, een voeringcupdeel met de goede kanten op elkaar op de hoofdcup.
 - Naai de voering aan de hoofdcup langs de voor-, boven- en zijnaden en zorg ervoor dat de nekband er niet tussen komt.
 - Draai de kopjes met de goede kant naar buiten en pers.
 - (Optioneel) _edgestitch_ de bovenkant en zijkanten van de kopjes.
 - Naai een rij rijgsteken langs de onderkant van de cups, net binnen de naadlijn.
-- Verzamel de kopjes langs de rijgsteken.</ul>
+- Verzamel de kopjes langs de rijgsteken.
 
 <Tip>
 
