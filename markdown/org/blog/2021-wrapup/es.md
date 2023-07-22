@@ -1,51 +1,51 @@
 ---
 author: "joostdecock"
-caption: "Picture by Snapwire - Via pexels.com"
+caption: "Foto de Snapwire - Via pexels.com"
 date: "2022-01-01"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/33d380890b215e6fc9c698b57469fdd0c24acc44-3072x2304.jpg"
-intro: "I'm not going to do a whole blog post about 2021 stuff because I feel like most of us just sorta want to move on and forget about it, but if you were looking for a longer read, then here's the table of content of our latest newsletter edition that also went out today:"
-title: "2021 wrap-up: A new FreeSewing.dev and announcing our bug bounty program"
+intro: "No voy a hacer una entrada entera en el blog sobre el tema 2021 porque creo que la mayoría de nosotros queremos pasar página y olvidarnos de ello, pero si buscabas una lectura más larga, aquí tienes el índice de contenidos de nuestra última edición del boletín que también se ha enviado hoy:"
+title: "Resumen de 2021: Un nuevo FreeSewing.dev y el anuncio de nuestro programa de recompensas por errores"
 ---
 
 
 
-I'm not going to do a whole blog post about 2021 stuff because I feel like most of us just sorta want to move on and forget about it, but if you were looking for a longer read, then here's the table of content of [our latest newsletter edition](/newsletter/2022q1/) that also went out today:
+No voy a hacer una entrada entera en el blog sobre el tema 2021 porque creo que la mayoría de nosotros queremos pasar página y olvidarnos de ello, pero si buscabas una lectura más larga, aquí tienes el índice de contenidos de [, nuestra última edición del boletín](/newsletter/2022q1/) , que también ha salido hoy:
 
-- 🎉 2021 is salted and burned
-- 🧐 What our contributors have been up to in 2021
-- 🎖️ FreeSewing is now an 'all contributors' project
-- 🚧 Why version 3 has been put on hold
-- 🤓 What I've been up to in 2021
-- 🐛 FreeSewing's bug bounty program
-- ⛑️ Yearly revenue and where it went (spoiler: same as always)
-- 🤞 What I hope will happen this year
+- 🎉 2021 se sala y se quema
+- 🧐 Qué han hecho nuestros colaboradores en 2021
+- 🎖️ FreeSewing es ahora un proyecto de "todos los contribuyentes".
+- 🚧 Por qué se ha suspendido la versión 3
+- 🤓 Lo que he hecho en 2021
+- 🐛 Programa de recompensas por errores de FreeSewing
+- ⛑️ Ingresos anuales y a dónde fueron a parar (spoiler: lo mismo de siempre)
+- 🤞 Lo que espero que ocurra este año
 
-Here, I'd like to cherry-pick just those things that I think are exciting right now.
+Aquí me gustaría seleccionar sólo aquellas cosas que considero emocionantes en este momento.
 
-## freesewing.dev has been rebuilt
+## freesewing.dev ha sido reconstruido
 
-[The effort I started in the summer](https://freesewing.dev/blog/project-2022) came to fruition on the last day of the year as I deployed the new [freesewing.dev](https://freesewing.dev/blog/project-2022) site in production.
+[El esfuerzo que inicié en el verano](https://freesewing.dev/blog/project-2022) dio sus frutos el último día del año, cuando desplegué el nuevo sitio [freesewing.dev](https://freesewing.dev/blog/project-2022) en producción.
 
-It's a complete redesign, and the code is now [hosted in our monorepo](https://github.com/freesewing/freesewing), which means that [our dedicated repository for freesewing.dev](https://github.com/freesewing/freesewing.dev) has now been archived.
+Es un rediseño completo, y el código está ahora [alojado en nuestro monorepo](https://github.com/freesewing/freesewing), lo que significa que [nuestro repositorio dedicado para freesewing.dev](https://github.com/freesewing/freesewing.dev) ha sido archivado.
 
-This effort implemented a bunch of items from [our v3 roadmap](https://github.com/freesewing/freesewing/discussions/1278) which has sort of grown into this long list of ideas/plans. From the top of my head:
+Este esfuerzo implementó un montón de elementos de [nuestra hoja de ruta v3](https://github.com/freesewing/freesewing/discussions/1278) que ha crecido hasta convertirse en esta larga lista de ideas/planes. De la parte superior de mi cabeza:
 
-- Migrate to NextJS
-- Better open graph support
-- Migrate style to TailwindCSS
-- Migrate blog posts and showcase posts to Strapi
-- Migrate newsletter to Strapi
-- Move markdown content into monorepo & merge Crowdin translation projects
-- Add endpoint to backend for auto-generated open graph images
+- Migrar a NextJS
+- Mejor soporte de gráficos abiertos
+- Migrar estilo a TailwindCSS
+- Migrar las entradas del blog y los escaparates a Strapi
+- Migrar el boletín a Strapi
+- Trasladar contenido markdown a monorepo & fusionar proyectos de traducción Crowdin
+- Añade un punto final al backend para imágenes open graph autogeneradas
 
-Have all been implemented as a direct result or side effect of this effort.
+Todos ellos se han puesto en práctica como resultado directo o efecto secundario de este esfuerzo.
 
-This site will also become the blueprint for an overhaul of freesewing.org, something that's on the planning for this year.
+Este sitio también se convertirá en el proyecto para una revisión de freesewing.org, algo que se está planificando para este año.
 
-## FreeSewing's bug bounty program
+## Programa de recompensas por errores de FreeSewing
 
-Once again, [read our newsletter](/newsletter/2022q1/) for the entire backstory, but here's the gist of it: We are now launching the FreeSewing bug bounty program:
+Una vez más, [lee nuestro boletín](/newsletter/2022q1/) para conocer toda la historia, pero esto es lo esencial: Estamos lanzando el programa de recompensas por errores de FreeSewing:
 
-> If you find a bug in one of our patterns, or in our core library, we will (with your permission) add you to our list of contributors, and send you a little something to say thanks.
+> Si encuentras un error en uno de nuestros patrones, o en nuestra biblioteca central, te añadiremos (con tu permiso) a nuestra lista de colaboradores, y te enviaremos una cosita para darte las gracias.
 
-So keep your eyes peeled, and if something seems off, [let us know about it](https://discord.freesewing.org/) and we'll send you some goodies
+Así que mantén los ojos bien abiertos, y si algo te parece raro, [háznoslo saber](https://discord.freesewing.org/) y te enviaremos algunos regalos

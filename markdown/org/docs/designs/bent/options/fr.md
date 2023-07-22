@@ -1,5 +1,5 @@
 ---
-title: "Bent body Block: Design Options"
+title: "Bloc à corps cintré : Options de conception"
 ---
 
 <PatternOptions pattern='bent' />

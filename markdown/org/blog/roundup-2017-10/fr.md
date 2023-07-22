@@ -1,65 +1,71 @@
 ---
 author: "joostdecock"
-caption: "Your new login background for the month of november"
+caption: "Ton nouveau fond d'écran de connexion pour le mois de novembre"
 date: "2017-10-31"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c9242975400bf885feef0b6ddc3b2bc0ce901638-2000x1500.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - October 2017: Huey, Roy, community building and pattern cover pages"
+intro: "Voici ton récapitulatif mensuel de l'actualité freesewing des quatre dernières semaines, et un aperçu de ce qui t'attend le mois prochain."
+title: "Tour d'horizon mensuel - octobre 2017 : Huey, Roy, le renforcement de la communauté et les pages de garde à motifs."
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Voici ton récapitulatif mensuel de l'actualité freesewing des quatre dernières semaines, et un aperçu de ce qui t'attend le mois prochain.
 
-## Looking back at october
-In retrospect, I should have made the october background image haloween themed. I guess I'll try to remember that for next year.
+## Retour sur le mois d'octobre
+Rétrospectivement, j'aurais dû faire en sorte que l'image de fond d'octobre soit sur le thème d'Halloween. Je pense que j'essaierai de m'en souvenir pour l'année prochaine.
 
-### Meet Huey
+### Rencontre Huey
 
-First up: a new pattern. The Huey Hoodie is [now available](/patterns/huey) in beta.
+Tout d'abord, un nouveau modèle. Le Huey Hoodie est [maintenant disponible](/patterns/huey) en version bêta.
 
-![Hi everyone, I am Huey](https://posts.freesewing.org/uploads/huey_b410125cba.jpg)
+![Bonjour à tous, je suis Huey](https://posts.freesewing.org/uploads/huey_b410125cba.jpg)
 
-Huey is a zip-up hoodie, have a look at [the Huey showcase page](/showcase/pattern/huey) for examples. [The announcement blog post](/blog/huey-hoodie-beta/) also explains what it means for a pattern to be in beta.
+Huey est un sweat à capuche zippé, jette un coup d'œil à [la page de présentation de Huey](/showcase/pattern/huey) pour voir des exemples. [Le billet de blog d'annonce](/blog/huey-hoodie-beta/) explique également ce que signifie pour un motif d'être en version bêta.
 
 ### Développement communautaire
 
-Freesewing is slowly evolving into a communal effort. The [freesewing chat room](https://chat.freesewing.org/) is turning into a rather chatty place, which is really wonderful to see.
+Freesewing se transforme lentement en un effort communautaire. Le salon de chat [freesewing](https://chat.freesewing.org/) est en train de transformer en un endroit plutôt bavard, ce qui est vraiment merveilleux à voir.
 
-Furthermore, a number of people are taking a stab at designing their own patterns with freesewing. I think that's very exciting and I'm looking forward to the day we'll all be able to enjoy the fruits of that labour.
+De plus, un certain nombre de personnes s'essaient à la conception de leurs propres modèles avec freesewing. Je pense que c'est très excitant et j'attends avec impatience le jour où nous pourrons tous profiter des fruits de ce travail.
 
-Meanwhile, people are also helping out with the site, suggesting fixes and improvements left and right, and [Wouter](/users/xdpug) even added an entire page on [Git basics](/docs/git-basics) which should be a great stepping stone for people who like him want to get involved, but lack prior experience with Git (and GitHub).
+Pendant ce temps, les gens aident aussi à l'amélioration du site, en suggérant des corrections et des améliorations à gauche et à droite, et [Wouter](/users/xdpug) a même ajouté une page entière sur [Les bases de Git](/docs/git-basics) qui devrait être un excellent tremplin pour les personnes qui, comme lui, veulent s'impliquer, mais qui n'ont pas d'expérience préalable de Git (et de GitHub).
 
-Needless to say, I am very appreciative of all contributions big and small.  
-If you'd like to get involved, [come say hi](https://chat.freesewing.org/).
+Il va sans dire que j'apprécie énormément toutes les contributions, petites et grandes.  
+Si tu souhaites t'impliquer, [viens me dire bonjour](https://chat.freesewing.org/).
 
-### Cover pages for patterns
+### Pages de couverture pour les patrons
 
-This is something I'm [kind of excited about](https://www.instagram.com/p/Ba6qVTFDZv_/): but I've made [some changes](https://github.com/freesewing/tile/commit/9d2b11e7a9f0d08b890a04eced989f0b432d2c53) to [freesewing tile](https://github.com/freesewing/tile) to add a cover page to patterns.
+</a>C'est quelque chose qui m'enthousiasme
 
-The tile repository holds software that turns your pattern into multiple pages you can print on your printer (so called tiling, hence the name).
+: mais j'ai fait [quelques changements](https://github.com/freesewing/tile/commit/9d2b11e7a9f0d08b890a04eced989f0b432d2c53) à [freesewing tile](https://github.com/freesewing/tile) pour ajouter une page de couverture aux modèles.</p> 
 
-You need to sticky-tape those pages together, and even though there are markings on the pages to help you with that, it would be nice to have an overview page that shows the entire pattern and how it's layed out over the different pages.
+Le dépôt de tuiles contient un logiciel qui transforme ton motif en plusieurs pages que tu peux imprimer sur ton imprimante (c'est ce qu'on appelle le tuilage, d'où le nom).
 
-Problem is, because freesewing patterns are drafted on the fly, based on your measurements, there's no way to know how big or small your pattern will be. In addition, you can pick a variety of paper sizes which will also influence how the pattern gets tiled.
+Tu dois coller ces pages ensemble, et même s'il y a des marques sur les pages pour t'aider à le faire, ce serait bien d'avoir une page de présentation qui montre l'ensemble du modèle et comment il est disposé sur les différentes pages.
 
-![Turns out, you can add a coverpage if you wrestle long enough with PostScript](https://posts.freesewing.org/uploads/tile_6dccb4de24.jpg)
+Le problème, c'est que les patrons de couture libre sont dessinés à la volée, en fonction de tes mesures, . Il n'y a aucun moyen de savoir si ton patron sera grand ou petit. De plus, tu peux choisir une variété de formats de papier qui influenceront également la façon dont le motif sera mis en place.
 
-So for the longest time, I felt it was simply not possible to add an coverpage with an overview of how everything needs to be stuck together. But everyday is a school day, and I'm glad to announce that starting of today, when you download a tiled PDF, it will come with a cover page detailing the layout.
+![Il s'avère que tu peux ajouter une page de couverture si tu te débats assez longtemps avec PostScript.](https://posts.freesewing.org/uploads/tile_6dccb4de24.jpg)
 
-This is obviously very new code, so if for some reason you run into trouble with the tiler, make sure to [let me know about it](https://github.com/freesewing/tile/issues/new).
+C'est pourquoi j'ai longtemps pensé qu'il n'était tout simplement pas possible d'ajouter une page de couverture avec un aperçu de la façon dont tout doit être collé. Mais chaque jour est un jour d'école, et J'ai le plaisir de t'annoncer qu'à partir d'aujourd'hui, lorsque tu téléchargeras un PDF carrelé, il sera livré avec une page de couverture détaillant la mise en page.
 
-### Roy will design cover images for patterns
+Il s'agit évidemment d'un code très nouveau, alors si pour une raison ou une autre tu rencontres des problèmes avec la tuile, assure-toi de [m'en faire part](https://github.com/freesewing/tile/issues/new).
 
-I've made some changes to [the patterns page](/patterns/) because I felt that the previous layout wasn't doing the patterns justice.
 
-While the layout is a bit better now (I think) the pictures are still a bit *meh* and they don't really say *freesewing*.
 
-So, I've talked to Dutch illustrator [Roy Van der Hel](https://royvdhel-art.deviantart.com/) (who also signed for our measurements illustrations) and I'm glad to be able to share with you that he's agreed to do illustrations for the different freesewing patterns.
+### Roy concevra des images de couverture pour les modèles
 
-Roy will be working on these on and off, but I hope you'll start to see more of his work here relatively soon.
+J'ai apporté quelques modifications à [la page des patrons](/patterns/) parce que j'avais l'impression que la présentation précédente ne rendait pas justice aux patrons.
 
-## Looking ahead to november
+Bien que la mise en page soit un peu meilleure maintenant (je pense), les photos sont toujours un peu *meh* et elles ne disent pas vraiment *freesewing*.
 
-Last month I said I was working on 5 patterns. One of those (Huey) has been released now and these days I'm occupied making a test garment for another pattern on that list: a wintercoat.
+J'ai donc parlé à l'illustrateur néerlandais [Roy Van der Hel](https://royvdhel-art.deviantart.com/) (qui a également signé les illustrations de nos mesures) et je suis heureuse de pouvoir partager avec toi qu'il a accepté d'illustrer les différents modèles de couture libre.
 
-I don't want to give away too much about this yet, because it's kind of exciting, but I hope to be able to show more of this during the month of november. If for no other reason that it's getting cold and I could really do with a warm coat.
+Roy travaillera sur ces projets par intermittence, mais j'espère que tu verras bientôt plus de son travail sur .
+
+
+
+## En attendant le mois de novembre
+
+Le mois dernier, j'ai dit que je travaillais sur 5 modèles. L'un d'entre eux (Huey) a été publié sur et ces jours-ci, je suis occupée à confectionner un vêtement d'essai pour un autre modèle de cette liste : un manteau d'hiver.
+
+Je ne veux pas en dire trop pour l'instant, parce que c'est assez excitant, mais J'espère pouvoir en montrer plus au cours du mois de novembre. Ne serait-ce que pour la raison qu'il commence à faire froid et que j'aurais bien besoin d'un manteau chaud.
 

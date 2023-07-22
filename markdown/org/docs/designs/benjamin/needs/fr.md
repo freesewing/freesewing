@@ -1,5 +1,5 @@
 ---
-title: "Benjamin bow tie: What You Need"
+title: "Nœud papillon Benjamin : Ce dont tu as besoin"
 ---
 
 Pour réaliser Benjamin, vous aurez besoin de :

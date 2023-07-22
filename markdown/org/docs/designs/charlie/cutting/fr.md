@@ -1,5 +1,5 @@
 ---
-title: "Charlie chinos: Cutting Instructions"
+title: "Charlie chinos : Instructions de coupe"
 ---
 
 ##### Du tissu principal

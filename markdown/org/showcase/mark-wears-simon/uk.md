@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8889aa644473d0615584e
 intro: "Марк носить сорочку з симону, яку зробила його дружина"
 title: "Марк носить сорочку з симону, яку зробила його дружина"
 designs:
-  - "simon"
+  - "Саймон"
 ---
 
 ![Інший погляд](https://posts.freesewing.org/uploads/mark_wears_simon_2_a4950a3229.jpg "Інший погляд")

@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/854a688f4a7447de0b44f
 intro: "Блок ліфа Bella"
 title: "Блок ліфа Bella"
 designs:
-  - "bella"
+  - "Белла."
 ---
 
 

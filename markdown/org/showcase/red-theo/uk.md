@@ -1,16 +1,16 @@
 ---
 maker: "невідомо"
-caption: "Not the greatest quality picture, but what can we do"
+caption: "Не найкраща якість зображення, але що поробиш"
 date: "2017-08-14"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/468efcd7ea0faf06b74fa10c0a092f21d374c7e8-1080x1142.jpg"
-intro: "Petros writes (via Facebook messenger):"
-title: "Red bermuda shorts by Petros"
+intro: "пише Петрос (через месенджер Facebook):"
+title: "Червоні бермуди від Petros"
 designs:
-  - "theo"
+  - "Тео."
 ---
 
-Petros writes (via Facebook messenger):
+пише Петрос (через месенджер Facebook):
 
-> Hi, Joost. The new platform is amazing. Вітаю!!! I have posted a comment under username Petros. I used the pattern Theo from the previous site and i sewed a bermuda shorts under your guidance and thorough instructions of the youtube tutorials you 've made. I have never sewed a gament this complex before and yet you made it easy. You are extraordinary.
+> Привіт, Юсте. Нова платформа дивовижна. Вітаю!!! Я опублікував коментар під ніком Petros. Я використала викрійку Тео з попереднього сайту і пошила бермуди під вашим керівництвом і за детальними інструкціями з ваших відеоуроків на YouTube. Я ніколи раніше не зшивав такий складний суглоб, але ви зробили це легко. Ти надзвичайна.
 
-![Here's a view from the front](https://posts.freesewing.org/uploads/red_theo_2_6b1dc84c14.jpg "Here's a view from the front")
+![Ось вид спереду](https://posts.freesewing.org/uploads/red_theo_2_6b1dc84c14.jpg "Ось вид спереду")

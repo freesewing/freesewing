@@ -1,36 +1,36 @@
 ---
 author: "joostdecock"
-caption: "Your login background for December"
+caption: "Ton arrière-plan de connexion pour le mois de décembre"
 date: "30-11-2018"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ebdb5fce7cd9b56f2f9d51d05dbda187195e30b6-1920x1280.jpg"
-intro: "Monthly roundup - November 2018: New showcases and a (false) security alarm"
-title: "Monthly roundup - November 2018: New showcases and a (false) security alarm"
+intro: "Tour d'horizon mensuel - novembre 2018 : De nouvelles vitrines et une (fausse) alarme de sécurité."
+title: "Tour d'horizon mensuel - novembre 2018 : De nouvelles vitrines et une (fausse) alarme de sécurité."
 ---
 
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Voici ton récapitulatif mensuel de l'actualité freesewing des quatre dernières semaines, et un aperçu de ce qui t'attend le mois prochain.
 
-## Looking back at November
+## Retour sur le mois de novembre
 
-I have been very busy this month, but more about that in our roundup post for the year which you can expect on December 10th.
+J'ai été très occupée ce mois-ci, mais j'en reparlerai dans notre billet récapitulatif de l'année que tu peux attendre le 10 décembre.
 
-Because I've been busy, a few showcase posts had fallen through the cracks. I've cleared the backlog in my inbox now, and as a result we have [a new Bruce showcase by Felix](/en/showcase/bruce-three-pack) and [a new Sandy showcase by Karin](/en/showcase/sandy-by-karin).
+Parce que j'ai été très occupée, quelques posts de vitrine étaient passés à la trappe. J'ai éliminé le retard accumulé dans ma boîte de réception et nous avons donc [une nouvelle vitrine de Bruce par Felix](/en/showcase/bruce-three-pack) et [une nouvelle vitrine de Sandy par Karin](/en/showcase/sandy-by-karin).
 
-If you've made one of our patterns, make sure to send in your pictures so we can add them too. I mean, even if it takes a while, I do eventually get around to it :)
-
-
-Earlier this week, I woke to the unsettling news that a popular package on NPM [had been hijacked by malicious actors](https://arstechnica.com/information-technology/2018/11/hacker-backdoors-widely-used-open-source-software-to-steal-bitcoin/).
-
-That's obviously shitty behaviour, but the fact that this package is a dependency of our backend (as in, we use it) made for a rude awakening. Our backend was patched by the time I got to work (yay for trains), but as more information came to light, it turned out it was never a problem in the first place.
-
-For one thing, the dependency was a so-called development dependency. Code that is included while developing, but not included in the production build.
-
-Furthermore, the malicious actors were targetting a very specific set of people in order to make off with their bitcoin, so there was never an issue.
-
-As the story was developing, we [posted updates on Twitter](https://twitter.com/freesewing_org/status/1067312509672177664) so if you want to make sure you want to hear all the latest news, make sure to follow [@freesewing_org](https://twitter.com/freesewing_org) on Twitter.
+Si tu as réalisé l'un de nos modèles, n'oublie pas d'envoyer tes photos à pour que nous puissions les ajouter. Je veux dire, même si ça prend du temps, je finis par y arriver :)
 
 
-## Looking ahead to December
+En début de semaine, j'ai appris à mon réveil qu'un paquet populaire sur NPM [avait été détourné par des acteurs malveillants](https://arstechnica.com/information-technology/2018/11/hacker-backdoors-widely-used-open-source-software-to-steal-bitcoin/).
 
-In early December we traditionally do our yearly roundup, so more on that soon :)
+C'est évidemment un comportement merdique, mais le fait que ce paquet soit une dépendance de notre backend (c'est-à-dire que nous l'utilisons) a provoqué un réveil brutal. Notre backend a été corrigé au moment où je suis arrivé au travail (bravo pour les trains), mais au fur et à mesure que d'autres informations ont été révélées, il s'est avéré qu'il n'y avait jamais eu de problème en premier lieu.
+
+D'une part, il s'agissait d'une dépendance dite de développement. Code qui est inclus pendant le développement, mais qui n'est pas inclus dans la version de production.
+
+De plus, les acteurs malveillants ciblaient un groupe très spécifique de personnes afin de s'emparer de leurs bitcoins, il n'y a donc jamais eu de problème.
+
+Au fur et à mesure que l'histoire se développait, nous [avons posté des mises à jour sur Twitter](https://twitter.com/freesewing_org/status/1067312509672177664) donc si tu veux être sûr de connaître les dernières nouvelles, n'oublie pas de suivre [@freesewing_org](https://twitter.com/freesewing_org) sur Twitter.
+
+
+## En attendant le mois de décembre
+
+Début décembre, nous faisons traditionnellement notre récapitulatif annuel, donc plus d'informations à ce sujet bientôt :).
 

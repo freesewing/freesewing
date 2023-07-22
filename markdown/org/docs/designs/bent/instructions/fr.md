@@ -1,5 +1,5 @@
 ---
-title: "Bent body Block: Sewing Instructions"
+title: "Bloc de corps courbé : Instructions de couture"
 ---
 
 <Note>

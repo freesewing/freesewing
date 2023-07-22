@@ -1,19 +1,19 @@
 ---
-title: "Noble body block: What You Need"
+title: "Noble carrosserieblok: Wat je nodig hebt"
 ---
 
-To make Noble, you will need the following:
+Om Noble te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- About 0.5 metres (0.6 yards) of a suitable fabric ([see Noble Fabric options](/docs/patterns/noble/fabric/))
+- Ongeveer 0,5 meter van een geschikte stof ([zie Noble Fabric options](/docs/patterns/noble/fabric/))
 
-This list is for a default Noble Block. If you have/are making changes to the block you may need to get additional items such as closures, binding etc.
+Deze lijst is voor een standaard Noble Block. Als je veranderingen aan het blok hebt aangebracht, heb je misschien extra onderdelen nodig, zoals sluitingen, bindingen, enz.
 
 <Note>
 
-###### Noble is a block, not a pattern
+###### Noble is een blok, geen patroon
 
-A block is a basic shape on which other patterns are based.
+Een blok is een basisvorm waarop andere patronen zijn gebaseerd.
 Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.
 
 Blokken worden meestal niet gemaakt zoals is, maar dienen als basis voor andere patronen.

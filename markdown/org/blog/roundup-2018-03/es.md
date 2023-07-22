@@ -1,64 +1,64 @@
 ---
 author: "joostdecock"
-caption: "Your login background for April"
+caption: "Tu fondo de conexión para abril"
 date: "2018-03-31"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/637be1530f8be9387a2be4feac90b92a145b1ddd-1920x1280.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - March 2018: Parlez-vous français? Sprechen Sie Deutsch? ¿Hablas español? 你會說中文嗎？"
+intro: "Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene."
+title: "Resumen mensual - Marzo 2018: ¿Hablas francés? ¿Hablas alemán? ¿Hablas español? 你會說中文嗎？"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene.
 
-## Looking back at March
+## Echando la vista atrás a marzo
 
-As a general rule of thumb, the less you hear from me, the harder I'm working. Chances are you didn't hear from me during March at all. And yes, that's because I'm working hard.
+Como regla general, cuanto menos sepas de mí, más duro estoy trabajando. Lo más probable es que no hayas sabido nada de mí durante el mes de marzo. Y sí, es porque estoy trabajando duro.
 
 Por qué:
 
-### The Jaeger Jacket is now available
+### La Chaqueta Jaeger ya está disponible
 
-We've had the new [Jaeger Jacket](/patterns/jaeger) jacket in the pipeline for a while now. I had stalled a release because I couldn't find the time to make one, something which seems to be a general problem for pattern releases.
+Hace tiempo que tenemos en proyecto la nueva chaqueta [Jaeger Jacket](/patterns/jaeger) . Había paralizado una publicación porque no encontraba tiempo para hacerla, algo que parece ser un problema general para las publicaciones de patrones.
 
-So, I asked for help and a number of people stepped up and offered to make up (a muslin of) a Jaeger jacket.
+Así que pedí ayuda y varias personas se ofrecieron a confeccionar (una muselina de) una chaqueta Jaeger.
 
-That went well, so a couple of weeks ago we finally pushed out Jaeger for general availability. It's part of our core 1.8 release, and [the announcement post](/blog/core-1.8-jaeger-across-back/) has all the details.
+La cosa fue bien, así que hace un par de semanas finalmente pusimos Jaeger a disposición general. Forma parte de nuestra versión 1.8 principal, y [el post de anuncio](/blog/core-1.8-jaeger-across-back/) tiene todos los detalles.
 
-### The *across back* measurement is no more
+### La medida *a través de la espalda* no es más
 
-The across back measurement was cause of a great deal of confusion among our users. More often than not, when someone contacted us because their pattern looked wonky, an unrealistic across back measurement was to blame.
+La medida transversal de la espalda era causa de mucha confusión entre nuestros usuarios. La mayoría de las veces, cuando alguien se ponía en contacto con nosotros porque su patrón parecía torcido, la culpa era de una medida de espalda poco realista.
 
-So, we stepped in and removed that measurement in favour of calculating it from the *shoulder to shoulder* measurement, and giving you a new *across back factor* option so you can still tweak it if you want to.
+Así que hemos intervenido y hemos eliminado esa medida en favor de calcularla a partir de la medida de hombro a hombro de ** , y te hemos dado una nueva opción *across back factor* para que puedas seguir ajustándola si quieres.
 
-For a more detailed description, please refer to [the core 1.8 release blog post](/blog/core-1.8-jaeger-across-back/).
+Para una descripción más detallada, consulta la entrada del blog [the core 1.8 release](/blog/core-1.8-jaeger-across-back/).
 
-## Looking ahead to April
+## De cara a abril
 
-### The big GDPR overhaul
+### La gran revisión del GDPR
 
-Last month we [outlined our GDPR battle plan](/blog/gdpr-plan/) and shortly afterwards I made a decision: Rather than implement all these changes in the site, I would start over from scratch.
+El mes pasado, en [esbozamos nuestro plan de batalla contra el GDPR](/blog/gdpr-plan/) y poco después tomé una decisión: En lugar de implementar todos estos cambios en el sitio, empezaría de cero.
 
-Or rather, I've given myself until the end of April to work on this. At which time I will need to decide whether it's possible to migrate the entire site before GDPR doomsday (May 25th) or should I abandon this effort and do what needs to be done in the current site.
-> Rather than implement all these changes in the site, I would start over from scratch.
+O mejor dicho, me he dado de plazo hasta finales de abril para trabajar en esto. En ese momento tendré que decidir si es posible migrar todo el sitio antes del día del juicio final del GDPR (25 de mayo) o si debo abandonar este esfuerzo de y hacer lo que hay que hacer en el sitio actual.
+> En lugar de aplicar todos estos cambios en el sitio, yo empezaría de cero.
 
-I like the first scenario better and have been working on it pretty much day and (part of the) night during the last couple of weeks.
+Me gusta más el primer escenario y he estado trabajando en él bastante de día y (parte de la) noche durante el último par de semanas.
 
-I can't really show you much, but the goal is to build the new site on top of [the Nuxt framework](https://nuxtjs.org/). Doing so would allow us to drop Ruby from the freesewing technology stack, which would streamline deployment and development.
+Realmente no puedo mostrarte mucho, pero el objetivo es construir el nuevo sitio sobre [el framework Nuxt](https://nuxtjs.org/). Hacerlo nos permitiría eliminar Ruby de la pila tecnológica de freesewing, , lo que agilizaría la implantación y el desarrollo.
 
-My hope is also that using a modern and popular JS frontend framework will make it easier/more attractive contribute changes to the site.
+También espero que el uso de un marco frontend JS moderno y popular haga más fácil/más atractivo aportar cambios al sitio.
 
-### Translators wanted
+### Se buscan traductores
 
-Speaking of contributions. Since I'll be rewriting the site from scratch, I've decided to add a new challenge to the mix: i18n.
+Hablando de contribuciones. Como voy a reescribir el sitio desde cero, he decidido añadir un nuevo reto a la mezcla: i18n.
 
-In case you're wondering, i18n is short for internationalisation, aka making the site available in different languages.
+Por si te lo estás preguntando, i18n es la abreviatura de internacionalización, es decir, hacer que el sitio esté disponible en diferentes idiomas.
 
-Yes, May 25th will be here soon, and yes I need more work like I need another hole in my head. But I feel it's an important project to try and make freesewing.org available to as many people as possible. And for this, we need to get rid of the language barrier.
+Sí, pronto llegará el 25 de mayo, y sí, necesito más trabajo como necesito otro agujero en la cabeza. Pero creo que es un proyecto importante intentar que freesewing.org esté disponible para el mayor número de personas posible. Y para ello, tenemos que eliminar la barrera lingüística.
 
-Now I'm hopeful that I'll be able to take care of the technical aspects of making the site multi-lingual. But that won't do us any good without translations. So that's where you come in :)
+Ahora tengo la esperanza de poder ocuparme de los aspectos técnicos para que el sitio sea multilingüe. Pero eso no nos servirá de nada sin traducciones. Así que ahí es donde entras tú :)
 
-> #### If you're willing to help with the effort of translating freesewing, please [get in touch](/contact). We need your help.
+> #### Si estás dispuesto a colaborar en el esfuerzo de traducir freesewing, por favor [ponte en contacto con](/contact). Necesitamos tu ayuda.
 
-It would also help if you could spread the word a bit :)
+También ayudaría que corrieras un poco la voz :)
 
 
 

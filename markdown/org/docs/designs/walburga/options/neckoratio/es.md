@@ -1,8 +1,8 @@
 ---
-title: "Neck opening shape"
+title: "Forma de la abertura del cuello"
 ---
 
-controls the shape of the neck opening
+controla la forma de la abertura del cuello
 
 ## Efecto de esta opción en el patrón
 

@@ -77,7 +77,7 @@ Wenn du gerne teilnehmen möchtest, [lass es uns bitte in unserem Chatroom wisse
 
 ### Welche Art von Hilfe wird benötigt?
 
-Beggars can't be choosers. Jede Art von Hilfe ist willkommen, und ich möchte ganz sicher keine Freiwilligen abweisen.
+Wer bettelt, darf nicht wählerisch sein. Jede Art von Hilfe ist willkommen, und ich möchte ganz sicher keine Freiwilligen abweisen.
 
 Allerdings entkräftet ein zu vager Aufruf die Botschaft. Deswegen habe ich unten eine Reihe an *Rollen* aufgelistet, um dir eine Idee zu geben, welche Art von Arbeit in FreeSewing gesteckt wird. Es soll keine vollständige Liste sein, sondern nur ein Ausgangspunkt für Diskussionen darüber.
 
@@ -90,13 +90,13 @@ Du lässt unser Backend Schritt halten mit den neuesten Frontend-Entwicklungen. 
 Vielleicht bist du ungewöhnlich klein oder groß. Vielleicht hast du einen kleinen Hängebauch oder sehr große Brüste. Vielleicht hast du eine Behinderung, die Anpassungen in der Passform erfordert. Was auch immer es ist, du repräsentierst eine Minderheit was Passformen angeht und bist bereit, als Botschafter/in zu fungieren, um sicherzustellen, dass deine Bedürfnisse gehört und verstanden werden.
 
 **Community Builder**  
-You're an extrovert extraordinaire, or you're good at faking it. You enjoy chatting with all sorts of people, and networking is just you doing you. You're like the jelly that molds a group of individuals into a cohesive community.
+Du bist ein extrovertierter Mensch, oder du kannst es gut vortäuschen. Es macht dir Spaß, mit allen möglichen Leuten zu plaudern, und beim Networking bist du einfach du selbst. Du bist wie das Gelee, das eine Gruppe von Individuen zu einer zusammenhängenden Gemeinschaft formt.
 
 **Datenbank-Administrator/in**  
 Du kümmerst dich um unsere Datenbank. Andere Leute mögen das nicht für wichtig halten, aber du weißt es besser. Du bist mit MongoDB vertraut.
 
 **Devops Engineer**  
-Your aim is to make almost all these other roles irrelevant by automating the heck out of everything. CI and Github actions are fun for you. You like to sit back and have the robots do the work for you.
+Dein Ziel ist es, fast alle anderen Rollen irrelevant zu machen, indem du alles bis ins Kleinste automatisierst. CI- und Github-Aktionen machen dir Spaß. Du lehnst dich gerne zurück und lässt die Roboter die Arbeit für dich erledigen.
 
 **Frontend-Entwickler/in**  
 Du verbesserst unsere Webseiten, insbesondere freesewing.org und freesewing.dev. Beide sind mit [Gatsby](https://www.gatsbyjs.com/) gebaut, einem Open Source Framework um Frontends zu bauen, die mit [React](https://reactjs.org/) betrieben werden. Wenn du diese Dinge kennst oder sie gerne lernen würdest, ist das etwas für dich.
@@ -105,34 +105,34 @@ Du verbesserst unsere Webseiten, insbesondere freesewing.org und freesewing.dev.
 Du erstellt Illustrationen, die die schriftliche Dokumentation begleiten. Wenn du ein Fahrrad aus dem Gedächtnis zeichnest, sieht es tatsächlich aus wie ein Fahrrad.
 
 **Inclusion & Diversity Manager**  
-You have skin in the game when it comes to inclusion and diversity. You'll help make our community welcoming and diverse. You won't be afraid to tell this pasty white dude when he's wrong.
+Wenn es um Inklusion und Vielfalt geht, bist du mit von der Partie. Du trägst dazu bei, dass unsere Gemeinschaft einladend und vielfältig ist. Du wirst dich nicht scheuen, diesem weißen Bleichgesicht zu sagen, wenn er sich irrt.
 
 **Sprachbotschafter/in**  
 Du repräsentierst FreeSewing in einer nicht-englischsprachigen Community. Du kannst helfen, Fragen zu beantworten oder bei der Triage von Problemberichten. Oder du kannst uns darauf hinweisen, wo Übersetzungen fehlen.
 
 **Schnittmuster-Botschafter/in**  
-Du bist für ein bestimmtes FreeSewing Design/Schnittmuster verantwortlich. Du bist *die Person*, wenn es um Fragen zur Herstellung des Schnittmusters geht. Du stellst sicher, dass die Dokumentation nicht vergessen wird. And you can help with questions or triage problem reports to developers or designers.
+Du bist für ein bestimmtes FreeSewing Design/Schnittmuster verantwortlich. Du bist *die Person*, wenn es um Fragen zur Herstellung des Schnittmusters geht. Du stellst sicher, dass die Dokumentation nicht vergessen wird. Und du kannst bei Fragen helfen oder Problemberichte an Entwickler oder Designer weiterleiten.
 
-**Pattern Designer**  
-You come up with new pattern designs for FreeSewing. You might not know how to turn on a computer, but damn if you can't draft a bodice.
+**Schnittmusterdesigner**  
+Du entwirfst neue Schnittmuster für FreeSewing. Du weißt vielleicht nicht, wie man einen Computer einschaltet, aber verdammt, du kannst ein Mieder entwerfen.
 
-**Pattern Developer**  
-You program new designs for FreeSewing. You might not know how to design sewing patterns, but you're not afraid of Javascript and are happy to team up with a designer to work on a new pattern together.
+**Musterentwickler**  
+Du programmierst neue Designs für FreeSewing. Du weißt vielleicht nicht, wie man Schnittmuster entwirft, aber du hast keine Angst vor Javascript und arbeitest gerne mit einer Designerin oder einem Designer zusammen, um gemeinsam ein neues Schnittmuster zu entwickeln.
 
-**Proofreader**  
-You check original English text of translations for typos and/or grammar mistakes. You propose improvements and watch over a consistent style and tone across FreeSewing's documentation and written text. You're fluent in the language you're proofreading.
+**Korrekturleser/in**  
+Du überprüfst den englischen Originaltext von Übersetzungen auf Tipp- und/oder Grammatikfehler. Du schlägst Verbesserungen vor und achtest auf einen einheitlichen Stil und Ton in der FreeSewing-Dokumentation und im geschriebenen Text. Du sprichst die Sprache, die du korrekturliest, fließend.
 
 **Social Media Platform Manager**  
-You represent FreeSewing on a *platform*, where platform could be Facebook, Twitter, Instagram, Tiktok, Snapchat, Reddit &hellip;. You manage the FreeSewing account on the platform, and use it to interact with the community.
+Du repräsentierst FreeSewing auf einer *Plattform*, wobei die Plattform Facebook, Twitter, Instagram, Tiktok, Snapchat, Reddit &hellip;sein kann. Du verwaltest das FreeSewing-Konto auf der Plattform und nutzt es, um mit der Community zu interagieren.
 
 **Systemadministrator/in**  
-Du kümmerst dich um unsere Server. Du installierst Updates, stellst sicher, dass Zertifikate aktuell sind, das ganze Zeug. Dein Herz schlägt für Linux. You secretly automated most of your work with Ansible but hey, you put the playbooks in Git so no worries.
+Du kümmerst dich um unsere Server. Du installierst Updates, stellst sicher, dass Zertifikate aktuell sind, das ganze Zeug. Dein Herz schlägt für Linux. Insgeheim hast du den Großteil deiner Arbeit mit Ansible automatisiert, aber hey, du hast die Playbooks in Git gespeichert, also keine Sorge.
 
-**Technical Writer (code)**  
-You write documentation for freesewing.dev, our developers website. You have good writing skills and familiarity with code (Javascript).
+**Technical Writer (Code)**  
+Du schreibst die Dokumentation für freesewing.dev, unsere Entwickler-Website. Du hast gute Schreibkenntnisse und bist mit Code (Javascript) vertraut.
 
-**Technical Writer (sewing)**  
-You write documentation for freesewing.org, our makers website. Du hast gute Schreibfähigkeiten und bist mit dem Nähen gut vertraut.
+**Technischer Redakteur (Nähen)**  
+Du schreibst die Dokumentation für freesewing.org, unsere Maker-Website. Du hast gute Schreibfähigkeiten und bist mit dem Nähen gut vertraut.
 
 **Übersetzer/in**  
 Du übersetzt FreeSewing in eine der zusätzlichen Sprachen (Französisch, Deutsch, Niederländisch, Spanisch) oder fügst eine neue hinzu, wenn du ehrgeizig bist. Du sprichst die Sprache fließend, in die du übersetzen willst, und hast ein gutes Verständnis von Englisch.
@@ -141,18 +141,18 @@ Du übersetzt FreeSewing in eine der zusätzlichen Sprachen (Französisch, Deuts
 Du weißt, was UX ist und sagst uns gerne, was schlecht ist und wie es besser gemacht werden kann.
 
 **Release Manager**  
-You pull the plug on new releases, you bundle our code, and publish new versions of our packages on NPM.
+Du ziehst den Stecker für neue Releases, bündelst unseren Code und veröffentlichst neue Versionen unserer Pakete auf NPM.
 
 **Webdesigner/in**  
 Du weißt, wie man Dinge schön macht, auch wenn du dir nicht sicher sind, wie du sie zum funktionieren bringst.  Du weißt es zu schätzen, dass wir nicht #000 für schwarz verwenden.
 
 ### Was habe ich davon?
 
-Wir können dir kein Geld bieten. Please [read our revenue pledge](/docs/various/pledge/) to understand why that is.
+Wir können dir kein Geld bieten. Lies bitte [unsere Einnahmenzusage](/docs/various/pledge/) , um zu verstehen, warum das so ist.
 
-What we can offer is responsibility, recognition, and a stake in something that strives to be a force for good in this world.
+Was wir anbieten können, ist Verantwortung, Anerkennung und eine Beteiligung an etwas, das danach strebt, eine Kraft für das Gute in dieser Welt zu sein.
 
-It can also be an excellent learning opportunity for those of you who would like to pivot to a role in web development. And for as far as my time stretches — I will gladly teach and mentor people from underprivileged communities aiming for social mobility.
+Es kann auch eine hervorragende Lernmöglichkeit für diejenigen unter euch sein, die in die Webentwicklung einsteigen möchten. Und so lange ich Zeit habe, unterrichte und betreue ich gerne Menschen aus unterprivilegierten Gemeinschaften, die soziale Mobilität anstreben.
 
 ## Fazit
 

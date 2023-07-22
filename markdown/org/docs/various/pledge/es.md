@@ -8,14 +8,14 @@ La promesa de ingresos **FreeSewing** afirma que:
 
 La promesa es hecha y ejecutada por el mantenedor de FreeSewing (joost). Puedes leer acerca de [sus motivaciones para hacerlo en esta página](/docs/various/pledge/motivation/).
 
-## Revenue history
+## Historial de ingresos
 
 <table class="table table-striped text-base-content">
   <thead>
     <tr>
       <th>Año</th>
-      <th>Revenue</th>
-      <th>Currency</th>
+      <th>Ingresos</th>
+      <th>Moneda</th>
     </tr>
   </thead>
   <tbody>
@@ -57,13 +57,13 @@ La promesa es hecha y ejecutada por el mantenedor de FreeSewing (joost). Puedes 
     <tr>
       <td>**Total**</td>
       <td>`29.489,40`</td>
-      <td>**Euro donated to MSF**</td>
+      <td>**Euro donado a MSF**</td>
     </tr>
   </tbody>
 </table>
 
 <Tip>
 
-If you'd like to support FreeSewing, you can [do so by becoming a patron](/patrons/join/)
+Si quieres apoyar a FreeSewing, puedes [hacerlo haciéndote mecenas](/patrons/join/)
 
 </Tip>

@@ -2,10 +2,10 @@
 title: "Retroceso"
 ---
 
-Controls how round the back yoke seam is by adding length to the center back at the yoke that tapers of towards the sides.
+Controla la redondez de la costura del canesú trasero añadiendo longitud al centro de la espalda en el canesú que se estrecha hacia los lados.
 
-- Increase this option to round the back yoke seam
-- Decrease this option to straighten the back yoke seam
+- Aumenta esta opción para redondear la costura del canesú trasero
+- Disminuye esta opción para enderezar la costura del canesú trasero
 
 ## Efecto de esta opción en el patrón
 

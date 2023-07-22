@@ -4,7 +4,7 @@ title: "Hoogte neep rug"
 
 ***
 
-The **back dart height** option controls the height (length if you will) of the back dart.
+De optie **back dart height** regelt de hoogte (lengte zo je wilt) van de back dart.
 
 ## Effect van deze optie op het patroon
 

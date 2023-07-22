@@ -1,31 +1,31 @@
 ---
 author: "joostdecock"
-caption: "The pattern illustration for Penelope"
+caption: "La ilustración del patrón de Penélope"
 date: "2018-06-29"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/59646d7171bb8b18df952a1c9547cd212451de79-1920x1080.jpg"
-intro: "I'm very happy to announce the immeadiate availability of the Penelope Pencil Skirt , out in beta today."
-title: "Announcing the Penelope Pencil Skirt; And our womenswear roadmap"
+intro: "Me complace anunciar la disponibilidad inmediata de la Falda lápiz Penélope , que sale hoy en versión beta."
+title: "Anunciamos la falda lápiz Penélope; Y nuestra hoja de ruta de ropa de mujer"
 ---
 
-I'm very happy to announce the immeadiate availability of [the Penelope Pencil Skirt](/patterns/penelope), out in beta today.
+Me complace anunciar la disponibilidad inmediata de [la Falda lápiz Penélope](/patterns/penelope), que sale hoy en versión beta.
 
-![A linedrawing of Penelope](linedrawing.svg)
+![Un dibujo rayado de Penélope](linedrawing.svg)
 
-Penelope was designed by [@woutervdub](/users/woutervdub) who also signed for [benjamin](/patterns/benjamin).
+Penélope fue diseñada por [@woutervdub](/users/woutervdub) que también firmó para [benjamin](/patterns/benjamin).
 
-## Freesewing is not (just) for menswear
+## Freesewing no es (sólo) para ropa de hombre
 
-This new foray into womenswear foreshadows our plans for the second half of this year. That's right, we're going to be making more patterns for ladies.
+Esta nueva incursión en la ropa de mujer presagia nuestros planes para el segundo semestre de este año. Así es, vamos a hacer más patrones para señoras.
 
-Freesewing has a bit of a menswear reputation, since historically we've had a lot more patterns for men than for ladies. But that doesn't mean women are second-class citizens here. It's just a side-effect of how this project was historically run by a man. Can you blame a brother for designing patterns he'd like to wear himself?
+Freesewing tiene un poco de reputación de ropa masculina, ya que históricamente hemos tenido muchos más patrones para hombres que para mujeres. Pero eso no significa que las mujeres sean aquí ciudadanas de segunda clase. Es sólo un efecto secundario de cómo este proyecto fue dirigido históricamente por un hombre. ¿Puedes culpar a un hermano por diseñar patrones que le gustaría llevar él mismo?
 
-Today, freesewing is a communal effort, and there's plenty of ladies involved. So it only make sense to make a conscious effort to do something for our sisters. And that's exactly what we'll be doing.
+Hoy en día, la costura libre es un esfuerzo comunitario, en el que participan muchas mujeres. Así que sólo tiene sentido hacer un esfuerzo consciente para hacer algo por nuestras hermanas. Y eso es exactamente lo que haremos.
 
-We've got another pattern in the pipeline that is not only for women, but also by a woman. By [@AlfaLyr](/users/alfalyr) in particular, who has designed a circle skirt pattern that is going to land here real soon.
+Tenemos otro patrón en preparación que no es sólo para mujeres, sino también de una mujer. Por [@AlfaLyr](/users/alfalyr) en particular, que ha diseñado un patrón de falda circular que va a aterrizar aquí muy pronto.
 
-In parallel, I'll be working with [@AnnekeCaramin](/users/annekecaramin) on a female equivalent for [Brian](/patterns/brian), our basic body block on which many of our patterns are based. The idea is to make a quality bodice block for ladies that is made-to-measure and can handle the common fitting issues automatically. I'm talking about full bust adjustment, sway back, these kind of things.
+Paralelamente, trabajaré con [@AnnekeCaramin](/users/annekecaramin) en un equivalente femenino para [Brian](/patterns/brian), nuestro bloque corporal básico en el que se basan muchos de nuestros patrones. La idea es fabricar un bloque de corpiño de calidad para señora que se haga a medida y pueda resolver los problemas habituales de ajuste automáticamente. Me refiero al ajuste completo del busto, el balanceo hacia atrás, este tipo de cosas.
 
-Once we have that block, expect us to spin it into a bunch of dresses and tops.
+Una vez que tengamos ese bloque, espera que lo transformemos en un montón de vestidos y tops.
 
-And as always, if you have pattern design skills but are a bit intimidated by the platform, reach out to us to see if we can join forces to make your ideas a reality.
+Y como siempre, si tienes conocimientos de diseño de patrones pero te intimida un poco la plataforma, ponte en contacto con nosotros para ver si podemos unir fuerzas para hacer realidad tus ideas.
 

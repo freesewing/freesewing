@@ -1,139 +1,139 @@
 ---
 author: "joostdecock"
-caption: "They said I was crazy to make a zebra jacket, so I made it anyway. And it sank into the swamp."
+caption: "Вони казали, що я збожеволіла, коли зробила куртку з зеброю, але я все одно її зробила. І він потонув у болоті."
 date: "2017-09-04"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/35dda6f4c8ec6f2689e2741cc49cf178e4a39474-3300x2200.jpg"
-intro: "For the uninitiated, the refashioners is a yearly event/competition hosted by the charming (and very persuasive) Portia Lawrie ."
-title: "The Refashioners 2017 - Now with a Blake Blazer preview and 100% more zebra"
+intro: "Для непосвячених, \"Модники\" - це щорічна подія/змагання, яку проводить чарівна (і дуже переконлива) Порша Лоурі (Portia Lawrie)."
+title: "The Refashioners 2017 - тепер з прев'ю піджака Блейка і на 100% більше зебри"
 ---
 
-For the uninitiated, the refashioners is a yearly event/competition hosted by the charming (and very persuasive) [Portia Lawrie](http://www.makery.uk/).
+Для непосвячених, "Модники" - це щорічна подія/змагання, яку проводить чарівна (і дуже переконлива) [Порша Лоурі](http://www.makery.uk/).
 
-Its focus is on giving old, unworn, or unloved garments a new lease on life through the art of refashioning.
+Вона зосереджена на тому, щоб дати старому, неношеному або нелюбимому одягу нове життя через мистецтво рефайбінгу.
 
-This bonanza of garment Frankensteining kicks of with a series of *hors-comp&eacute;tition*  makes, aimed at getting the creative juices flowing. And [just like last year](http://www.makery.uk/2016/08/the-refashioners-2016-joost/), I got asked to be one of those *warm-up acts*.
+&eacute;Цю колекцію одягу Франкенштайнінг розпочав із серії *кінних комп'ютерних*  , спрямованих на те, щоб стимулювати творчі соки. І [так само, як і в минулому році](http://www.makery.uk/2016/08/the-refashioners-2016-joost/), мене попросили бути одним з тих *на розігріві*.
 
-Before I talk a bit about how it went, here's some pictures of what I made:
+Перш ніж я трохи розповім про те, як все пройшло, ось кілька фотографій того, що я зробив:
 
-![Yup, defenitely a zebra jacket](https://posts.freesewing.org/uploads/zebra1_f856635d39.jpg)
+![Так, безумовно, куртка під зебру](https://posts.freesewing.org/uploads/zebra1_f856635d39.jpg)
 
-![A view of the back](https://posts.freesewing.org/uploads/zebra2_c1df8979c5.jpg)
+![Вид ззаду](https://posts.freesewing.org/uploads/zebra2_c1df8979c5.jpg)
 
-![Stripe matching with sleevecap ease is tricky](https://posts.freesewing.org/uploads/zebra3_db4d55ad19.jpg)
+![Поєднання смужки з легкістю рукавів - непросте завдання](https://posts.freesewing.org/uploads/zebra3_db4d55ad19.jpg)
 
-![A look at the insanity that lies beneath](https://posts.freesewing.org/uploads/zebra4_154c70b269.jpg)
+![Погляд на божевілля, яке ховається під ним](https://posts.freesewing.org/uploads/zebra4_154c70b269.jpg)
 
-![Recycled buttons](https://posts.freesewing.org/uploads/zebra5_139563ceb2.jpg)
+![Перероблені ґудзики](https://posts.freesewing.org/uploads/zebra5_139563ceb2.jpg)
 
-![I case you missed it, this jacket comes with patch pocket](https://posts.freesewing.org/uploads/zebra6_34df45c31e.jpg)
+![Якщо ви не помітили, ця куртка має накладну кишеню](https://posts.freesewing.org/uploads/zebra6_34df45c31e.jpg)
 
-## The male romper lobby
-Last year, the theme was jeans, this year it's suits. And from the moment I shared that snippet of info with a handful of friends, they've conspiring to get me to make a male romper.
+## Вестибюль чоловічого комбінезона
+Минулого року темою були джинси, цього року - костюми. І з того моменту, як я поділилася цим уривком інформації з кількома друзями, вони змовилися, щоб я зробила чоловічий комбінезон.
 
-![Sorcha trying to get me to make a romper](https://posts.freesewing.org/uploads/romper_chat_6cf0df4477.png)
+![Сорча намагається змусити мене пошити комбінезон](https://posts.freesewing.org/uploads/romper_chat_6cf0df4477.png)
 
-![Anneke trying to help by sketching a romper for me](https://posts.freesewing.org/uploads/romper_sketch_09c8005525.jpg)
+![Аннеке намагається допомогти, роблячи для мене ескіз комбінезона](https://posts.freesewing.org/uploads/romper_sketch_09c8005525.jpg)
 
-With friends like that, who needs enemies.
+З такими друзями, кому потрібні вороги.
 
-## How I got to zebra
+## Як я потрапив на зебру
 
-The first thing I did was limit my options. Too much choice tends to paralize.
+Перше, що я зробив - обмежив свої можливості. Занадто великий вибір має тенденцію паралізувати.
 
-I decided to not only respect the suit theme with regards to the source material, but also concerning the techniques involved. Making a suit, and especially jacket construction, is a fine art and I wanted that to be part of my project.
+Я вирішила не тільки поважати тему костюма в плані вихідного матеріалу, але й у плані техніки виконання. Виготовлення костюма, а особливо конструкція піджака - це тонке мистецтво, і я хотів, щоб це стало частиною мого проекту.
 
-So, no messenger bags or (dare I say it) shoes out of recycled suits, I wanted to make a jacket.
+Отже, ніяких сумок або (наважуся сказати) взуття з перероблених костюмів, я хотіла зробити куртку.
 
-The problem is that suits are rather challenging to refashion. There's just not a lot of large pieces of pristine fabric to work with.
+Проблема в тому, що костюми досить складно перешивати. Просто не так багато великих шматків незайманої тканини, з якими можна було б працювати.
 
-![The front part of a jacket does not leave you with a lot to work with](https://posts.freesewing.org/uploads/front_part_4401c51b7b.jpg)
+![Передня частина піджака не залишає вам багато простору для роботи](https://posts.freesewing.org/uploads/front_part_4401c51b7b.jpg)
 
-In addition, I'm really tall so there is simply no way I can salvage enough fabric form a suit to make a new jacket without having to sew a bunch of scraps together.
+Крім того, я дуже високий, тому я просто не можу врятувати достатньо тканини від костюма, щоб зробити новий піджак без необхідності зшивати купу клаптиків разом.
 
-I was worried that this sort of patchwork jacket was going to look super hobo. But since I don't really have any other option to make a jacket, I started thinking about what sort of patchwork would be most acceptable.
+Я хвилювалася, що така клаптикова куртка буде виглядати дуже по-бомжівськи. Але оскільки у мене немає іншого варіанту, як зробити куртку, я почала думати, який вид печворку буде найбільш прийнятним.
 
-![Eurek(zebr)a!](https://posts.freesewing.org/uploads/real_zebra_b1decba3b1.jpg)
+![Еврик(зебр)а!](https://posts.freesewing.org/uploads/real_zebra_b1decba3b1.jpg)
 
-And then one day in the shower it hit me: zebra! If I could find a black and a white suit, I could cut them into stripes and join those together to form the pattern parts I needed. If it was going to be patchwork, I might as well embrace it, right?
+І ось одного разу в душі мене осяяло: зебра! Якби я знайшов чорний і білий костюми, я міг би розрізати їх на смужки і з'єднати їх разом, щоб сформувати потрібні мені частини візерунка. Якщо це буде клаптикова ковдра, я можу прийняти це, так?
 
-## The Blake Blazer pattern
+## Візерунок Блейк Блейзер
 
-My first idea was to make a jacket in muslin, draw zebra stripes on it, take it apart, cut out the stripes, and use that as my pattern. But I was worried this process would not be precise enough.
+Моя перша ідея полягала в тому, щоб зробити піджак з мусліну, намалювати на ньому смужки зебри, розібрати його, вирізати смужки і використати їх як візерунок. Але я хвилювався, що цей процес буде недостатньо точним.
 
-Also, what pattern would I use to make the jacket in the first place? I don't really use patterns that I haven't designed myself because I'm more of an uphill ice-skating kinda guy.
+Крім того, яку викрійку я б використовувала для пошиття куртки в першу чергу? Я не використовую патерни, які не розробив сам , тому що я більше схожий на хлопця, який катається на ковзанах в гору.
 
-![Some mofos are always trying to ice-skate uphill](https://posts.freesewing.org/uploads/ice_skating_uphill_80ab69e9bd.gif)
+![Деякі придурки завжди намагаються кататися на ковзанах в гору](https://posts.freesewing.org/uploads/ice_skating_uphill_80ab69e9bd.gif)
 
-So, I set out to design the Blake Blazer. It's a jacket/sportscoat pattern that I initially hoped to release with this post, but you're going to have to give me some more time for that.
+Тож я вирішив створити піджак Блейк. Це викрійка жакета/спортивного пальта, яку я спочатку сподівалася опублікувати в цьому пості, але вам доведеться дати мені ще трохи часу для цього.
 
-![The early draft of the Blake Blazer that I used for this jacket](https://posts.freesewing.org/uploads/blake_f3e813a99d.svg)
+![Ранній ескіз піджака Блейка, який я використав для цієї куртки](https://posts.freesewing.org/uploads/blake_f3e813a99d.svg)
 
-To get those zebra stripes as precise as possible, I decided to add the stripes to the pattern. This way, I could make sure they would match and whenever they don't in the jacket, I've got my own shoddy workmanship to blame.
+Щоб отримати якомога точніші смужки зебри, я вирішила додати їх до викрійки. Таким чином, я міг переконатися, що вони збігаються, а коли вони не збігалися в куртці, я звинувачував у цьому власну неякісну роботу.
 
-Also, for this project, I decided to make it a bit of a cropped look because I was worried I wouldn't have enough fabric to work with.
+Крім того, для цього проекту я вирішила зробити його трохи укороченим, бо боялася, що мені не вистачить тканини для роботи.
 
-## Finding suits to refashion
+## Пошук костюмів для рефайлінгу
 
-With my pattern sorted, I started looking into the source material for my make. As it happens, I have a cardboard box full of old and unloved suits that's still in storage since my last move.
+Коли викрійка була відсортована, я почала шукати вихідний матеріал для свого виробу. Так сталося, що у мене є картонна коробка, повна старих і нелюбимих костюмів, яка все ще зберігається з часів мого останнього переїзду.
 
-I've always intended to take these apart to learn from their construction so this was the perfect opportunity.
+Я завжди хотів розібрати їх, щоб вивчити їхню конструкцію, тож це була чудова нагода.
 
-![A box of suits to reverse engineer](https://posts.freesewing.org/uploads/suits_box_434d198619.jpg)
+![Коробка костюмів для реінжинірингу](https://posts.freesewing.org/uploads/suits_box_434d198619.jpg)
 
-![Treasure!](https://posts.freesewing.org/uploads/suits_inside_0637374422.jpg)
+![Скарб!](https://posts.freesewing.org/uploads/suits_inside_0637374422.jpg)
 
-I have two black suits to choose from, but absolutely no white suits. So I hit the thriftstores only to discover that white suits are a bit of a rarity.
+У мене є два чорних костюми на вибір, але зовсім немає білих. Тож я побіг до комісійних магазинів, але виявив, що білі костюми - велика рідкість.
 
-I was unable to find any white suit even though I visited 8 different thrift stores. To make matters worse, I couldn't even find a white suit in any of the second hand stores I visited with one exception: I found a white suit in a second hand store, but it was 200 euro.
+Я не зміг знайти жодного білого костюма, хоча відвідав 8 різних комісійних магазинів. Що ще гірше, я навіть не зміг знайти білий костюм в жодному з магазинів секонд-хенду, які я відвідав, за одним винятком: Я знайшов білий костюм в секонд-хенді, але він коштував 200 євро.
 
-Apart from the fact that I'm not made of money, I don't think buying a 200 euro second hand suit only to rip it apart is much in line with the spirit of the refashioners.
+Окрім того, що я не зроблений з грошей, я не думаю, що купувати костюм за 200 євро з секонд-хенду тільки для того, щоб розірвати його на шматки, дуже відповідає духу рефайндерів.
 
-I briefly contemplated a different colour combination, but nobody is waiting for a black and navy zebra.
+Я ненадовго замислився над іншим поєднанням кольорів, але ніхто не чекає на чорно-синю зебру.
 
-![I ended up using the one on the left](https://posts.freesewing.org/uploads/suits_black_53828cb3ec.jpg)
+![Я зрештою використав той, що зліва](https://posts.freesewing.org/uploads/suits_black_53828cb3ec.jpg)
 
-![Never a good sign when things are secured with a steel cable](https://posts.freesewing.org/uploads/suits_white_c02d4bf0c8.jpg)
+![Ніколи не є добрим знаком, коли речі закріплені сталевим тросом](https://posts.freesewing.org/uploads/suits_white_c02d4bf0c8.jpg)
 
-Fortunately, the rules of the refashioners are that at least 50% of your make should be recycled suits. Apart from that, you do what you want.
+На щастя, правила рефайндерів такі, що принаймні 50% вашого асортименту повинні складати костюми з вторинної сировини. Крім того, ви робите те, що хочете.
 
-So, by making the black stripes dominant, making the entire facing out of black, and recycling the inner parts of the suit (think canvas, shouler padding, buttons and so on) I would have no problem reaching that 50% treshold.
+Отже, зробивши чорні смуги домінуючими, виготовивши всю обшивку з чорного і переробивши внутрішні частини костюма (подумайте про полотно, підкладку для плечей, ґудзики і так далі), я без проблем досягну цього 50% порогу.
 
-So, true to the thrifty spirit of refashioners, I picked up some white fabric in the haberdasher that was 4 euro per meter. Something that I would soon regret as I tried to make this piece of glorified plastic play nice with the wool of the black suit.
+Тож, вірна духу ощадливості рефашистів, я взяла білу тканину в галантерейній крамниці, яка коштувала 4 євро за метр. Про що я незабаром пошкодую, намагаючись зробити так, щоб цей шматок прославленого пластику гарно поєднувався з вовною чорного костюма.
 
-## Putting it all together
+## Збираємо все воєдино
 
-I wanted the zebra stripes to look like a real zebra, so no straight lines. I addition, I noticed that a zebra's stripes don't continue on his back and belly but sort of a run before they hit the center. I wanted to replicate that look, and lived to regret it.
+Я хотіла, щоб смуги зебри були схожі на справжню зебру, тому ніяких прямих ліній. Крім того, я помітив, що смуги зебри не продовжуються на спині та животі , а ніби розбігаються перед тим, як потрапляють до центру. Я хотіла повторити цей образ, і дожила до того, що пошкодувала про це.
 
-![These scraps are waiting to become an undersleeve](https://posts.freesewing.org/uploads/sleeve_parts_052a369ca4.jpg)
+![Ці клаптики чекають на те, щоб стати спідньою сорочкою](https://posts.freesewing.org/uploads/sleeve_parts_052a369ca4.jpg)
 
-I ended up having to hand baste all the different parts together. This jacket's outer shell is made up of 93 different scraps and pieces that are all puzzled together.
+Зрештою, мені довелося вручну зліпити всі частини разом. Зовнішня оболонка цієї куртки складається з 93 різних клаптиків і шматочків, які складаються в пазл.
 
-![This are not scraps to be thrown out, but scraps to be made into a jacket](https://posts.freesewing.org/uploads/scraps_412f72f0f2.jpg)
+![Це не обрізки, які можна викинути, а обрізки, з яких можна зробити куртку](https://posts.freesewing.org/uploads/scraps_412f72f0f2.jpg)
 
-In addition, I had to squeeze all the new parts out of the old suit parts, which meant that in some cases I was left with as little as a few mm of seam allowance.
+Крім того, мені довелося витискати всі нові деталі зі старих частин костюма, а це означало, що в деяких випадках у мене залишалося лише кілька міліметрів припуску на шви.
 
-![Cutting the new sleeve parts out of the old sleeve](https://posts.freesewing.org/uploads/sleeve_2fd77b450d.jpg)
+![Вирізання деталей нового рукава зі старого рукава](https://posts.freesewing.org/uploads/sleeve_2fd77b450d.jpg)
 
-Suffice to say, it was stressful. And after I had puzzled together the initial parts, I still had to -- you know -- make a jacket. Which was kinda challenging with all that stripe matching I needed to do.
+Досить сказати, що це був стрес. І після того, як я склав докупи початкові частини, мені ще треба було - ну, знаєте - пошити куртку. Це було досить складно, адже мені потрібно було поєднувати смужки між собою.
 
-![Construction slowly moving forward](https://posts.freesewing.org/uploads/front_9821526627.jpg)
+![Будівництво повільно просувається вперед](https://posts.freesewing.org/uploads/front_9821526627.jpg)
 
-![Preparing the patch pockets](https://posts.freesewing.org/uploads/pocket_db7596902d.jpg)
+![Підготовка накладних кишень](https://posts.freesewing.org/uploads/pocket_db7596902d.jpg)
 
-## Final notes
+## Заключні нотатки
 
-I ran out of time to add the lining, but part of me feels it would be a shame to cover up the insanity that is the inside of the jacket.
+Я не встиг додати підкладку, але частина мене відчуває, що було б соромно приховувати божевілля, яке є всередині куртки.
 
-And I'm not entirely pleased with the collar. I had made one muslin test garment, but now that I've made the real thing, I am going to go back to the pattern and make some tweaks before releasing it.
+І я не зовсім задоволений коміром. Я пошила один мусліновий тестовий виріб, але тепер, коли я зробила справжню річ, я збираюся повернутися до викрійки і внести деякі зміни перед тим, як випустити її в світ.
 
-In the meanwhile, enjoy some [more pictures of the jacket in this Flickr set](https://www.flickr.com/photos/__niki__/albums/72157684742893052).
+Тим часом, насолоджуйтесь [більше фотографій куртки в цій добірці на Flickr](https://www.flickr.com/photos/__niki__/albums/72157684742893052).
 
 ## Тепер ваша черга
 
-So this is it, my contribution for The Refasioners 2017. I hope I was able to inspire you for some refashioning of your own. If nothing else, maybe it was a good reminder of what not to try ;)
+Ось і все, мій внесок для The Refasioners 2017. Сподіваюся, мені вдалося надихнути вас на власне перевтілення. Принаймні, це було гарним нагадуванням про те, чого не варто робити ;)
 
 
-> ##### More refashioners
+> ##### Більше рефайндерів
 > 
-> To stay up to date with The Refashioners 2017, see all the other inspiring refashions AND find out how you could win an amazing prize go to: [www.makery.uk/the-refashioners/](http://www.makery.uk/the-refashioners/)
+> Щоб бути в курсі подій The Refashioners 2017, побачити всі інші надихаючі рефашизації та дізнатися, як ви можете виграти чудовий приз, перейдіть за посиланнями: [www.makery.uk/the-refashioners/](http://www.makery.uk/the-refashioners/)
 

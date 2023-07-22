@@ -4,8 +4,8 @@ title: "Contorno"
 
 Controla cómo se elimina de nuevo el espacio extra para los senos debajo del cofre.
 
-- Increase this option to sharpen the curve below the bust darts
-- Decrease this option to loosen the curve below the bust darts
+- Aumenta esta opción para afinar la curva por debajo de las pinzas del pecho
+- Disminuye esta opción para aflojar la curva por debajo de las pinzas del pecho
 
 ## Efecto de esta opción en el patrón
 

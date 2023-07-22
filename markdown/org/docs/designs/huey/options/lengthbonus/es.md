@@ -2,7 +2,7 @@
 title: "Bonus de longitud"
 ---
 
-The amount to lengthen the garment by. A negative value will shorten it.
+La cantidad para alargar la prenda. Un valor negativo lo acortará.
 
 ## Efecto de esta opción en el patrón
 

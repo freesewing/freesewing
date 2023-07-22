@@ -6,6 +6,6 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/07536264d28ddbdfefb7c
 intro: "FIXME_no_intro"
 title: "Коричневі сіруваті лляні штани Theo від joostdecock"
 designs:
-  - "theo"
+  - "Тео."
 ---
 

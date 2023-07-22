@@ -1,15 +1,15 @@
 ---
-title: "Titan trouser block: Sewing Instructions"
+title: "Bloc de pantalon Titan : Instructions de couture"
 ---
 
 <Note>
 
-###### Titan is a block, not a pattern
+###### Titan est un bloc, pas un modèle
 
-A block is a basic shape on which other patterns are based.
+Un bloc est une forme de base sur laquelle d'autres modèles sont basés.
 Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Titan block.
+Les blocs ne sont généralement pas faits tels quels mais servent plutôt de base à d'autres modèles. Les instructions ci-dessous n'approfondissent donc pas les fermetures ou les finitions et concernent le bloc Titan par défaut.
 
 </Note>
 
@@ -17,14 +17,14 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 - Rejoignez la couture extérieure (la couture qui coule le long du côté de votre jambe) de l'avant et de l'arrière.
 - Rejoignez la couture (la couture la couture le long de l'intérieur de vos jambes) de l'avant et de l'arrière.
-- Vous avez maintenant une jambe. Repeat for the other leg, **making certain they are mirror images of each other**.
+- Vous avez maintenant une jambe. Répète l'opération pour l'autre jambe, **en veillant à ce qu'elles soient des images miroir l'une de l'autre**.
 - Tournez une jambe avec le bon côté dedans et l'autre avec le bon côté.
-- Now tuck the _good side out_ into the _good side in_ leg, so that they have their _good sides together_.
-- Align and sew the cross seam.
+- Maintenant, rentre le _bon côté_ dans le _bon côté_ jambe, de façon à ce que les _bons côtés soient ensemble_.
+- Aligne et couds la couture transversale.
 
 <Note>
 
-You may need to leave an opening in the front cross seam so you can pin yourself in.
+Tu devras peut-être laisser une ouverture dans la couture transversale avant pour pouvoir t'épingler.
 
 </Note>
 
@@ -60,15 +60,15 @@ For instance:
 - Add a waistband
 
 It is all up to you!
-For instance:
+Par exemple :
 
-- Add a front closure
-- Add pockets
-- Change the pant length
-- Change the pant width
-- Add a waistband
+- Ajouter une fermeture frontale
+- Ajouter des poches
+- Modifier la longueur du pantalon
+- Modifier la largeur du pantalon
+- Ajouter une ceinture
 
-It is all up to you! Expérimentez et allez-y !
+Tout dépend de toi ! Expérimentez et allez-y !
 
 </Note>
 

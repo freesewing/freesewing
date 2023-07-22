@@ -1,5 +1,5 @@
 ---
-title: "Simon shirt: Sewing Instructions"
+title: "Simon Shirt: Anleitung zum Nähen"
 ---
 
 <Tip>
@@ -10,14 +10,14 @@ Kelly Hogaboom und Julian Collins haben eine Simon(e) mitnäht, und sie haben Vi
 alle Schritte.
 Wenn Sie dieses Muster herstellen wollen, können Kelly und Julian Ihnen den Weg zum Ende weisen.
 
-You can find all the material's on Kelly's
-site: [#simonsayssew with kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
+Du findest das gesamte Material auf Kellys Website
+: [#simonsayssew mit kelly hogaboom & julian collins](https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
 
 </Tip>
 
 ### Schritt 1: Sicherungsschnittstelle
 
-![Fuse Manschettenschnittstelle](1a.png) ![Fuse collar interfacing](1b.png)
+![Fuse Manschettenschnittstelle](1a.png) ![Schmelzkragen Einlage](1b.png)
 
 #### Drücken Sie die Schnittstelle zu Manschetten
 
@@ -31,11 +31,11 @@ Drücken Sie für jede Manschette das Schnittstück auf die schlechte Seite des 
 
 > Je nachdem, welche Manschette Sie ausgewählt haben, ist die Form der Manschette unterschiedlich.
 > 
-> In the first illustration, you can see both a round barrel cuff and a French cuff as examples.
+> In der ersten Abbildung siehst du sowohl eine runde als auch eine französische Manschette als Beispiel.
 > 
 > In den Illustrationen wird die runde Barrel Manschette nach vorn verwendet, aber der Prozess ist der gleiche für die anderen Manschetten.
 
-#### Press interfacing to collar, undercollar and collar stand
+#### Vlieseline an Kragen, Unterkragen und Kragenständer bügeln
 
 Um Ihren Kragen herzustellen, müssen Sie einen Unterkragen, einen Kragen und zwei Kragenständer schneiden. All dies sowohl im Gewebe als auch in der Schnittstelle.
 
@@ -49,7 +49,7 @@ Drücken Sie für jedes Stück auf die schlechte Seite.
 
 Platzieren Sie beide Teile Ihrer Manschette (eine mit Schnittstelle, eine ohne Schnittstelle) zusammen mit den guten Seiten und nähen Sie sie an der Standardnaht zusammen.
 
-> **Ensure you**
+> **Stell sicher, dass du**
 > 
 > - Nähen Sie nicht die Seite, die wir später an den Ärmel befestigen werden
 > - Stoppe am Abstand der Naht von der Kante auf der Ärmelseite
@@ -58,13 +58,13 @@ Platzieren Sie beide Teile Ihrer Manschette (eine mit Schnittstelle, eine ohne S
 
 ![Nahtzuweisung kürzen](2b.png)
 
-Before we flip your cuff over, we need to trim back the seam allowance to remove bulk.
+Bevor wir dein Bündchen umdrehen, müssen wir die Nahtzugabe zurückschneiden, um den Stoff zu entfernen.
 
 #### Drücken Sie die Naht zurück
 
 ![Drücken Sie die Naht zurück](2c.png)
 
-Fold back the seam allowances on each side of the cuff where the cuff attaches to the sleeve, and press them down.
+Falte die Nahtzugaben auf beiden Seiten der Manschette zurück, wo die Manschette am Ärmel befestigt ist, und bügle sie nach unten.
 
 > Wenn man früher zu weit am Rand genäht ist, muss man ein paar Nähte aufnehmen.
 
@@ -74,7 +74,7 @@ Fold back the seam allowances on each side of the cuff where the cuff attaches t
 
 Drehen Sie Ihre Manschette mit den guten Seiten aus, und geben Sie ihr eine gute Presse.
 
-> When pressing your cuffs, make sure to roll the seam a bit to the backside of the cuff to guarantee that the inner fabric of the cuff is not visible.
+> Wenn du deine Manschetten bügelst, achte darauf, dass du die Naht ein wenig auf die Rückseite der Manschette rollst, damit der innere Stoff der Manschette nicht sichtbar ist.
 
 Du kannst nun deine Manschetten beiseite, wir werden sie später anhängen.
 
@@ -84,13 +84,13 @@ Du kannst nun deine Manschetten beiseite, wir werden sie später anhängen.
 
 ![Nähen Kragen und Unterkragen zusammen](3a.png)
 
-Place both collar parts with the _good sides together_, and sew them together at the standard seam allowance.
+Lege beide Kragenteile mit den _guten Seiten zusammen_und nähe sie mit der normalen Nahtzugabe zusammen.
 
 #### Nahtzuweisung kürzen
 
 ![Nahtzuweisung kürzen](3b.png)
 
-Before we flip your collar over, we need to trim back the seam allowance to remove bulk.
+Bevor wir deinen Kragen umdrehen, müssen wir die Nahtzugabe zurückschneiden, um den Stoff zu entfernen.
 
 #### Kragen drehen und drücken
 
@@ -120,7 +120,7 @@ Markieren Sie den Mittelpunkt des Kragens und der Kragen steht mit einem Pin. De
 
 Platziere zuerst einen Kragen mit der guten Seite nach oben, dann deinen Kragen mit dem nach oben gerichteten Unterkragen (und die nicht genähte Seite oben), und schließlich der zweite Kragen stehen mit der guten Seite.
 
-Your collar should sit between your two collar stands, and the middles (where you placed your pin) should be aligned.
+Dein Kragen sollte zwischen den beiden Kragenständern sitzen und die Mittelpunkte (an denen du die Stecknadel platziert hast) sollten aufeinander ausgerichtet sein.
 
 > Die Art und Weise, wie die Dinge aussehen, hängt ein wenig von Ihrer Kragenauswahl ab, aber im Allgemeinen wird Ihr Kragen nach unten gebogen, und Ihr Kragenstand wird nach oben gebogen.
 > 
@@ -132,7 +132,7 @@ Nun beginnen Sie mit dem Basten von diesem Pin und arbeiten Sie Ihren Weg in die
 
 Wenn Sie die Ecke des Kragens erreichen, gehen Sie weiter und ziehen Sie das Ende der beiden Kragen zusammen.
 
-When you've done one side, start from your pin in the middle again and do the other side. Wenn Sie mit dem Basten fertig sind, können Sie den Pin herausnehmen.
+Wenn du eine Seite geschafft hast, fängst du wieder bei deinem Stift in der Mitte an und machst die andere Seite. Wenn Sie mit dem Basten fertig sind, können Sie den Pin herausnehmen.
 
 #### Nähen Sie Ihren Kragen an den Kragenständern
 
@@ -148,7 +148,7 @@ Falten Sie die Naht des Kragenständers auf der nicht genähten Seite zurück un
 
 > Im mittleren Teil wird das Drücken des Nahtzuges leicht sein. Aber in Richtung der Spitzen Ihres Kragens, wird dies ohne Drücken von Falten in Ihrem Kragen schwierig sein.
 > 
-> Press it as best as you can without making folds in your collar. Wir drücken dies erneut, nachdem wir den Kragen raus geworfen haben.
+> Drücke sie so gut wie möglich, ohne Falten in deinem Kragen zu machen. Wir drücken dies erneut, nachdem wir den Kragen raus geworfen haben.
 
 #### Kragenstand drehen und drücken
 
@@ -174,7 +174,7 @@ Platziere ein Joch mit der guten Seite. Darüber hinaus legen Sie den Rücken mi
 
 Schließlich, platzieren Sie Ihr zweites Joch auf den Rücken, aber mit der guten Seite.
 
-Your back should now be sandwiched between the good sides of your two yokes.
+Dein Rücken sollte jetzt zwischen den guten Seiten deiner beiden Joche liegen.
 
 Wenn dies der Fall ist, nähen Sie sie entlang der Rückennähte und achten Sie darauf, dass die Nahtzuweisung eingehalten wird.
 
@@ -188,7 +188,7 @@ Wenn Sie fertig sind, vergessen Sie nicht, ihm eine gute Presse zu geben, um die
 
 Mit Ihren Jokes auf der Rückseite werden wir Kantenstich entlang der Naht, die wir gerade gemacht haben, auf der Joch Seite.
 
-> Falte den inneren Joch aus dem Weg. Our edge stitching will catch the outer yoke, back and all the seam allowances, but not the inner yoke.
+> Falte den inneren Joch aus dem Weg. Unsere Randnähte erfassen die äußere Passe, das Rückenteil und alle Nahtzugaben, aber nicht die innere Passe.
 
 Nähen Sie einfach direkt neben der Naht und verbinden Sie das äußere Joch zur Rückseite.
 
@@ -250,7 +250,7 @@ Wenn Sie zufrieden sind, drücken Sie die gefaltete Platte.
 
 Von der guten Seite Ihres Hemdes nähen Sie das gefaltete Plakat durch Nähen im Graben.
 
-Um dies zu tun, nähen Sie genau auf Ihrer früheren Naht. Since you folded the fabric of your placket a bit past this seam, it will get caught at the back, fixing your folded placket in place, and locking the seam allowance inside.
+Um dies zu tun, nähen Sie genau auf Ihrer früheren Naht. Da du den Stoff deiner Leiste ein wenig über diese Naht hinaus gefaltet hast, wird sie hinten eingeklemmt, wodurch deine gefaltete Leiste fixiert und die Nahtzugabe innen festgehalten wird.
 
 ### Schritt 10: Bereiten Sie das Buttonhole Placket vor
 
@@ -328,7 +328,7 @@ Drücke nun das Baby. Sie wissen, dass Sie es wollen.
 
 > **Lass uns ein Burrito erschaffen**
 > 
-> We are going to close the shoulder seams with a technique that is commonly known as the **burrito method**.
+> Wir werden die Schulternähte mit einer Technik schließen, die allgemein als **Burrito-Methode**bekannt ist.
 > 
 > Wenn Sie mit der Burrito-Methode vertraut sind, wissen Sie bereits, was zu tun ist. Wenn nicht, lesen Sie weiter für einen geschickten Weg, um die Schulternähte Ihres Hemdes sauber zu schließen und alle unvollendeten Kanten aus dem Blick zu sperren.
 
@@ -354,7 +354,7 @@ Nähen Sie sie an Ort und nähen Sie dann die Schulternähte, Achten Sie darauf,
 
 > Hergestellt um die aktuelle Nahtlinie auszurichten. Durch die ungleichen Winkel an der Halsöffnung ist der Stoffrand oft länger als auf der anderen Seite.
 > 
-> However, the seamlines are the same length, so make sure to match them carefully using the notches.
+> Die Nahtlinien sind jedoch gleich lang, also achte darauf, dass du sie mithilfe der Einkerbungen sorgfältig aufeinander abstimmst.
 
 #### Innen durch den Nackenöffner drehen
 
@@ -391,7 +391,7 @@ Da Sie gerade diese Schulternaht gedrückt haben, sollte alles schön und flach 
 - Falte über die Manschettenwache und drücke diese Naht.
 - Drehen Sie Ihren Ärmel mit der guten Seite nach oben und bringen Sie Ihre Manschettenwächter durch den Schlitz in den Ärmel.
 - Falten Sie es zweimal auf die Linien, so dass die unfertige Naht nach innen geklebt ist.
-- Make your folds so that the upper fold sits ever so slightly further than the seam you already made.
+- Mache deine Falten so, dass die obere Falte etwas weiter als die Naht sitzt, die du bereits gemacht hast.
 - Drücken Sie alles nach unten und dann Kantenstich die Manschettenwache.
 
 #### Falten und platzieren drücken
@@ -401,7 +401,7 @@ Da Sie gerade diese Schulternaht gedrückt haben, sollte alles schön und flach 
 Origami Zeit! Die Überlappung der Ärmel erfolgt mit den markierten Faltlinien als Anleitung. Dies wird viel einfacher sein, wenn Sie zwischen den beiden Seiten drücken.
 
 - Zuerst die äußeren Kanten des Platzes nach innen falten.
-- Next, fold the entire thing in half.
+- Dann faltest du das Ganze in der Hälfte.
 - Dann falten Sie beide Spitzen in eine schöne spitzige Form.
 - Jetzt geben Sie ihr eine letzte gute Presse.
 
@@ -427,7 +427,7 @@ Beginnen Sie am Rand des Ärmels (die Unterseite des Ärmelpflasters) und den Ka
 
 Gehen Sie um die Spitze und fahren Sie auf der anderen Seite (die Faltseite), bis Sie den Punkt erreicht haben, an dem Ihre Wache endet.
 
-Then, sew horizontally to the other side of the placket to finish.
+Nähen Sie dann waagerecht an die andere Seite der Leiste, um sie fertigzustellen.
 
 > Ich habe hier eine zusätzliche Illustration hinzugefügt, die nur die Umrisse des Platzhalters anzeigt. Sie können sehen, dass das Ende der Wache in unserem Heften des Platzes gefangen ist und somit sauber verklebt ist.
 
@@ -441,17 +441,17 @@ Then, sew horizontally to the other side of the placket to finish.
 > 
 > Seien Sie also darauf bedacht, nicht den Stoffrand auszurichten, sondern die Naht so auszurichten, dass der Ärmel 1 cm aussetzt.
 
-#### Pin sleeve in place
+#### Pin-Hülse an Ort und Stelle
 
-![Pin sleeve in place](14a.png)
+![Pin-Hülse an Ort und Stelle](14a.png)
 
 Verteilen Sie Ihr Shirt offen, so dass sowohl Vorder- als auch Rückseite flach mit ihren guten Seiten nach oben liegen.
 
-Now place your sleeve on top with the good side down, matching the top of the sleeve with the shoulder seam.
+Lege nun deinen Ärmel mit der guten Seite nach unten auf, so dass die Oberseite des Ärmels mit der Schulternaht übereinstimmt.
 
-> Be careful, your sleeve is not symmetric, so be sure to have the back notch (⊗) and cuff guard on the back side, and the front notch (⊙) on the front side.
+> Achte darauf, dass dein Ärmel nicht symmetrisch ist. Achte also darauf, dass die hintere Kerbe (⊗) und der Manschettenschutz auf der Rückseite und die vordere Kerbe (⊙) auf der Vorderseite sind.
 > 
-> Also note that the back notch (⊗) on the sleeve does not have a corresponding notch on the back of the shirt. That's because it should match up with the seam where your yoke joins the back.
+> Beachte auch, dass die hintere Kerbe (⊗) am Ärmel keine entsprechende Kerbe auf der Rückseite des Hemdes hat. Das liegt daran, dass sie mit der Naht übereinstimmen sollte, an der deine Passe mit dem Rücken verbunden ist.
 
 Jetzt musst du den Ärmel an das Armloch anbringen. Um dies zu tun, achten Sie auf:
 
@@ -459,7 +459,7 @@ Jetzt musst du den Ärmel an das Armloch anbringen. Um dies zu tun, achten Sie a
 - Passen Sie die Noten auf dem Ärmelkopf an die Noten auf der Rückseite und auf der Vorderseite an
 - Verteilen Sie die Ärmel Leichtigkeit auf die Noten wie gezeigt
 
-#### Distribute sleevecap ease
+#### Einfaches Verteilen von Ärmelkappen
 
 ![Die Ärmel-Leichtigkeit verteilen](14b.png)
 
@@ -501,7 +501,7 @@ Du kannst die Pins verwenden, um sie an der Stelle zu halten, aber es ist einfac
 
 Von der schlechten Seite des Stoffes aus nähen Sie die Nahtzufuhr an der Kante, wo sie unter die andere Nahtzulage gefaltet ist.
 
-Here it is important to keep an even distance from the seam of your sleeve. Wenn Sie einen Holzfuß für Ihre Nähmaschine haben, hilft Ihnen das weiter. Aber wenn nicht, seien Sie nur vorsichtig.
+Hier ist es wichtig, dass du einen gleichmäßigen Abstand zur Naht deines Ärmels einhältst. Wenn Sie einen Holzfuß für Ihre Nähmaschine haben, hilft Ihnen das weiter. Aber wenn nicht, seien Sie nur vorsichtig.
 
 > Es ist wichtiger, die Ärmelnaht zu halten und sogar zu entfernen, als genau am Fadenrand zu nähen. Im Idealfall sitzt die Falte ohnehin in gleichmäßiger Entfernung, aber wenn nicht, vergewissern Sie sich, dass sie parallel zur Ärmelnaht näht. Auch wenn das bedeutet, dass Sie ein bisschen von der gefalteten Kante abweichen.
 
@@ -543,7 +543,7 @@ Du kannst die Pins verwenden, um sie an der Stelle zu halten, aber es ist einfac
 
 Von der schlechten Seite des Stoffes aus nähen Sie die Nahtzufuhr an der Kante, wo sie unter die andere Nahtzulage gefaltet ist.
 
-Important here is to keep an even distance from the seam of your sleeve. Wenn Sie einen Holzfuß für Ihre Nähmaschine haben, hilft Ihnen das weiter. Aber wenn nicht, seien Sie nur vorsichtig.
+Wichtig dabei ist, dass du einen gleichmäßigen Abstand zur Naht deines Ärmels einhältst. Wenn Sie einen Holzfuß für Ihre Nähmaschine haben, hilft Ihnen das weiter. Aber wenn nicht, seien Sie nur vorsichtig.
 
 > Es ist wichtiger, die Ärmelnaht zu halten und sogar zu entfernen, als genau am Fadenrand zu nähen. Im Idealfall sitzt die Falte ohnehin in gleichmäßiger Entfernung, aber wenn nicht, vergewissern Sie sich, dass sie parallel zur Ärmelnaht näht. Auch wenn das bedeutet, dass Sie ein bisschen von der gefalteten Kante abweichen.
 
@@ -557,15 +557,15 @@ Wenn alles erledigt ist, drücken Sie die flachgeschliffene Naht von der guten S
 
 ![Pin Manschette an Stelle](18a.png)
 
-You need to insert the sleeve between the two layers of your cuff, making sure that the good side of the fabric sits against the side of your cuff that has the interfacing applied to it.
+Du musst den Ärmel zwischen die beiden Lagen deines Bündchens legen und dabei darauf achten, dass die gute Seite des Stoffes an der Seite deines Bündchens anliegt, auf der die Einlage angebracht ist.
 
 Sie müssen diesen Platz anpinnen, denn je nachdem, wie lange Ihr Sleeve-Placket ist, Es könnte schwierig oder gar unmöglich sein, diese zu flachen.
 
 Beachten Sie auch, dass Ihre Ärmelkante länger als Ihre Manschette ist (wie viel länger hängt von der Ärmel Drape). Du musst ein oder ein paar Falten in deinem Ärmel herstellen, um dafür zu passen.
 
-> Your pattern contains helplines on the sleeve to help you place the folds.
+> Dein Schnittmuster enthält Hilfslinien auf dem Ärmel, die dir helfen, die Falten zu platzieren.
 
-> Nehmen Sie sich Zeit, alles sorgfältig zu fixieren. We are going to edge-stitch this later, so it's important that the front and back of your cuff align nicely.
+> Nehmen Sie sich Zeit, alles sorgfältig zu fixieren. Das Bündchen wird später an der Kante abgesteppt, deshalb ist es wichtig, dass die Vorder- und Rückseite des Bündchens gut zusammenpassen.
 
 #### Kantenstich Manschetten an Ärmel
 
@@ -573,7 +573,7 @@ Beachten Sie auch, dass Ihre Ärmelkante länger als Ihre Manschette ist (wie vi
 
 Sobald alles fixiert ist, wird der Rand am Rand der Manschette geheftet, um sie an der Ärmel zu befestigen.
 
-It's important to catch both the outer and inner layer of your cuff on the edge.
+Es ist wichtig, dass du sowohl die äußere als auch die innere Schicht deines Bündchens an der Kante erwischst.
 
 > Vergewissern Sie sich, dass die Kantenstich von der Außenseite (die gute Seite des Ärmels) und halten Sie sie parallel zur Manschettenkante.
 
@@ -609,7 +609,7 @@ Achten Sie darauf, dass Sie die reguläre Nahtzuweisung respektieren und - wicht
 
 Wenn du zufrieden bist mit der Art und Weise, wie du deinen Kragen an Ort und Stelle verankert hast, ist es an der Zeit, diese Sache nach unten zu nähen.
 
-We're going to start at the center-back and sew all the way around the collar stand.
+Wir beginnen in der hinteren Mitte und nähen rund um den Kragensteg.
 
 #### Nähen am Kragenrand
 
@@ -635,7 +635,7 @@ Zeit, den Saum zu beenden (das ist das Teil, das du in deiner Hose steckst).
 
 Schließen Sie die Hälfte der Saummenge ab und drücken Sie nach unten. Dann klappen Sie wieder und drücken Sie erneut.
 
-Now, sew along the upper edge to finish the hem.
+Nun nähst du an der oberen Kante entlang, um den Saum fertigzustellen.
 
 ### Schritt 21: Tastenlöcher erstellen
 

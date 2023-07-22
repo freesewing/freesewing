@@ -1,5 +1,5 @@
 ---
-title: "Wahid waistcoat: Sewing Instructions"
+title: "Gilet Wahid Instructions de couture"
 ---
 
 ### Étape 1 : Thermocoller l'entoilage

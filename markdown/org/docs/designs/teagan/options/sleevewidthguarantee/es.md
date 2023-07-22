@@ -2,7 +2,7 @@
 title: Garantía de anchura de la manga
 ---
 
-Controls how much of the sleeve width will be guaranteed. This determines how much we can alter the sleeve width to fit the sleeve in the armhole.
+Controla qué parte de la anchura del manguito se garantizará. Esto determina cuánto podemos modificar la anchura de la manga para ajustarla a la sisa.
 
 ## Efecto de esta opción en el patrón
 

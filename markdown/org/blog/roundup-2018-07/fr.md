@@ -1,32 +1,32 @@
 ---
 author: "joostdecock"
-caption: "Your login background for August"
+caption: "Ton arrière-plan de connexion pour le mois d'août"
 date: "31-07-2018"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/73ad81c28d5045aeaaebc1e182accac4f93f52eb-1920x1280.jpg"
-intro: "Monthly roundup - July 2018: French and waiting for Sandy"
-title: "Monthly roundup - July 2018: French and waiting for Sandy"
+intro: "Tour d'horizon mensuel - juillet 2018 : Français et attente de Sandy"
+title: "Tour d'horizon mensuel - juillet 2018 : Français et attente de Sandy"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Voici ton récapitulatif mensuel de l'actualité freesewing des quatre dernières semaines, et un aperçu de ce qui t'attend le mois prochain.
 
-## Looking back at July
+## Retour sur le mois de juillet
 
-It's the summer time, and the heatwave across Europe isn't exactly helping with our productivity. What I'm saying is: I said we would have a new pattern out in July, but it's going to be late. We're still waiting for the final artwork, although I can show you the initial sketch now:
+C'est l'heure de l'été, et la canicule qui sévit en Europe n'aide pas vraiment à notre productivité. Ce que je veux dire, c'est que j'ai dit que nous aurions un nouveau modèle en juillet, mais il sera en retard. Nous attendons toujours l'œuvre d'art finale, mais je peux d'ores et déjà te montrer l'esquisse initiale :
 
-![Meat the Sandy Circle Skirt](https://posts.freesewing.org/uploads/schets_bb8fb5c30a.png)
+![Mange la jupe Sandy Circle](https://posts.freesewing.org/uploads/schets_bb8fb5c30a.png)
 
-This is Sandy, it's a circle skirt pattern, and it will be out in August. Promise :)
+Voici Sandy, c'est un modèle de jupe circulaire, et il sortira en août. Promis :)
 
-Apart from that, thanks to some great work of [our translators](/i18n/), we've also enabled our fifth language on the website: [French](/fr). We've seen an increase in users signing up with .fr email addresses, so that goes to show that translation really does help make the site accessible to more people.
+En outre, grâce à l'excellent travail de [nos traducteurs](/i18n/), nous avons également activé notre cinquième langue sur le site Web : [Le français](/fr). Nous avons constaté une augmentation du nombre d'utilisateurs s'inscrivant avec des adresses électroniques .fr, . Cela prouve que la traduction permet vraiment de rendre le site accessible à un plus grand nombre de personnes.
 
-Now apart from this, I don't have much to talk about that you can see right here on the site. That doesn't mean we haven't been busy. Bien au contraire!
+Maintenant, à part ça, je n'ai pas grand-chose à raconter que tu puisses voir ici même sur le site. Cela ne veut pas dire que nous n'avons pas été occupés. Bien au contraire!
 
-I've started porting freesewing core to node.js. It's really early days so I can't really talk about it too much, but I will do so at a later date.
+J'ai commencé à porter le noyau de freesewing sur node.js. Il est encore très tôt, donc je ne peux pas trop en parler, mais je le ferai plus tard.
 
-## Looking ahead to August
+## En attendant le mois d'août
 
-August will bring the release of Sandy, and we'll also celebrate our first year here at freesewing.org.
+Le mois d'août verra la sortie de Sandy, et nous fêterons également notre première année sur freesewing.org.
 
-Perhaps that will be a good time to talk about our plans for the future :)
+Ce sera peut-être le bon moment pour parler de nos projets pour l'avenir :)
 
 

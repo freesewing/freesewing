@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ee76fe8c268daeeccaf13
 intro: "Перша пара штанів Charlie від Bob3000 просто супер! Слідкуйте за появою другої пари з джинсової тканини з кромкою."
 title: "Чарлі від Bob3000"
 designs:
-  - "charlie"
+  - "Чарлі."
 ---
 
 

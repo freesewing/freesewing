@@ -2,7 +2,7 @@
 title: "Longueur de la pince de l'épaule"
 ---
 
-The length of the back shoulder dart.
+La longueur de la fente de l'épaule arrière.
 
 ## Effet de cette option sur le motif
 

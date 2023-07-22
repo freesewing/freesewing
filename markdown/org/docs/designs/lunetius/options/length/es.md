@@ -2,7 +2,7 @@
 title: "Longitud"
 ---
 
-Choose from the different length styles
+Elige entre los diferentes estilos de longitud
 
 ## Efecto de esta opción en el patrón
 

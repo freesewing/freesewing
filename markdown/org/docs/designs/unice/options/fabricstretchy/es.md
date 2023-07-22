@@ -1,8 +1,8 @@
 ---
-title: "Fabric stretch Y"
+title: "Tejido elástico Y"
 ---
 
-Controls the stretch in vertical direction.
+Controla el estiramiento en dirección vertical.
 
 ## Efecto de esta opción en el patrón
 

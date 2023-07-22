@@ -1,5 +1,5 @@
 ---
-title: "Theo trousers: Fabric Options"
+title: "Theo Hose: Stoff Optionen"
 ---
 
 Hier haben Sie viele Optionen, aber beachten Sie, dass es sich um klassische Schnürhosen handelt. Mit anderen Worten, verwenden Sie nicht Stretch, Denim, Pleder dieser Art von Dingen. Sichere Wetten sind Wolle, Baumwolle oder Leinen, möglicherweise mit einigen synthetischen Mischungen.

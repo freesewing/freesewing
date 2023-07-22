@@ -1,20 +1,20 @@
 ---
-maker: "unknown"
-caption: "Huey hoodie by Minty"
+maker: "unbekannt"
+caption: "Huey Hoodie von Minty"
 date: "2021-03-06"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1ae81c4f08dd21d7db28538399d818c72ff586a9-810x1083.jpg"
-intro: "This fantastic Huey hoodie was made by Minty! Minty shared that he made this with a regular machine instead of a serger."
-title: "Huey by Minty"
+intro: "Dieser fantastische Huey-Kapuzenpullover wurde von Minty gemacht! Minty erzählte, dass er es mit einer normalen Maschine statt mit einem Serger gemacht hat."
+title: "Huey von Minty"
 designs:
   - "huey"
 ---
 
-This fantastic Huey hoodie was made by Minty! Minty shared that he made this with a regular machine instead of a serger.
+Dieser fantastische Huey-Kapuzenpullover wurde von Minty gemacht! Minty erzählte, dass er es mit einer normalen Maschine statt mit einem Serger gemacht hat.
 
-![Zipped view](https://posts.freesewing.org/uploads/huey_by_minty_hueyminty2_cb9e822561.jpg "Zipped view")
+![Ansicht mit Reißverschluss](https://posts.freesewing.org/uploads/huey_by_minty_hueyminty2_cb9e822561.jpg "Ansicht mit Reißverschluss")
 
 <Note>
 
-This picture is from Minty on Discord. It is reposted here with permission.
+Dieses Bild ist von Minty auf Discord. Er wird hier mit Erlaubnis wieder veröffentlicht.
 
 </Note>

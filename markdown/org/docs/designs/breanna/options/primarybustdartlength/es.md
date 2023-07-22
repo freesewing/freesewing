@@ -2,7 +2,7 @@
 title: "Longitud del dart del polvo"
 ---
 
-The length of the primary bust dart.
+La longitud del dardo primario del busto.
 
 ## Efecto de esta opción en el patrón
 

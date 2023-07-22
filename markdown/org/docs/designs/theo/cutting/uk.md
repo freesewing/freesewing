@@ -1,5 +1,5 @@
 ---
-title: "Theo trousers: Cutting Instructions"
+title: "Штани Тео: Інструкція з крою"
 ---
 
 - **Основна тканина**

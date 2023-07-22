@@ -2,7 +2,7 @@
 title: "Dardo de busto"
 ---
 
-Where to place the primary bust dart to shape the chest.
+Dónde colocar el dardo primario del busto para dar forma al pecho.
 
 ## Efecto de esta opción en el patrón
 

@@ -2,10 +2,10 @@
 title: "Passenhöhe"
 ---
 
-Controls the height of the yoke seam.
+Steuert die Höhe der Passennaht.
 
-- Increase this option to lower the height and lengthen the yoke
-- Decrease this option to raise the height and shorten the yoke
+- Erhöhe diese Option, um die Höhe zu verringern und das Joch zu verlängern
+- Verringere diese Option, um die Höhe zu erhöhen und das Joch zu verkürzen
 
 ## Effekt dieser Option auf das Schnittmuster
 

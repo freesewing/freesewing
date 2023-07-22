@@ -2,7 +2,7 @@
 title: Longeur
 ---
 
-The length option determines how long your pocket will be.
+L'option longueur détermine la longueur de ta poche.
 
 ## Effet de cette option sur le motif
 

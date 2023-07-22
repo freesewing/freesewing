@@ -1,110 +1,51 @@
 ---
 date: "2022-04-01"
 edition: "2022q2"
-intro: "Welcome to the 2022 Spring edition of the FreeSewing newsletter."
-title: "2022 Spring edition"
+intro: "Bienvenido a la edición de primavera de 2022 del boletín FreeSewing."
+title: "2022 Edición de primavera"
 ---
 
-Welcome to the 2022 Spring edition of the FreeSewing newsletter.
+Bienvenido a la edición de primavera de 2022 del boletín FreeSewing.
 
-Today is April 1st, so to be clear; None of these are jokes:
+Hoy es 1 de abril, así que para que quede claro: nada de esto es una broma:
 
-- 👸 All hail the Showcase Queen (by Karen)
-- 🕵 Behind the Seams: Eléonore (by An)
-- 🤓 FreeSewing's new lab as a preview of things to come (by Joost)
-- 🤝 Friendship ended with Netlify / Now Vercel is our best friend (by Joost)
+- 👸 All hail the Showcase Queen (por Karen)
+- 🕵 Detrás de las costuras: Eléonore (por An)
+- 🤓 El nuevo laboratorio de FreeSewing como anticipo de lo que está por venir (por Joost)
+- 🤝 Se acabó la amistad con Netlify / Ahora Vercel es nuestro mejor amigo (por Joost)
 
-Let's go, we don't have all day.
-
-&nbsp;
+Vamos, no tenemos todo el día.
 
 &nbsp;
 
-## 👸 All hail the Showcase Queen
-
-For just over a year, there's been one person at FreeSewing who, when someone posts a cool new FreeSewing project on [Discord](https://discord.freesewing.org) or on social media, made sure that it didn't just disappear into the internet ether like so much ephemeral web content.  In fact, this person was so accomplished that we developed a special Discord role just for her: "Showcase Queen."
-
-During her tenure as the Showcase Queen, [Natalia](https://freesewing.org/makers/nataliasayang/) posted dozens of Showcases, first in the old format and more recently in Strapi. (Full disclosure, the number here is not specific because I stopped counting once I got into the thirties.) With Natalia's help, there are now examples of almost every FreeSewing pattern available on the website's Showcase. If you read that "almost" as a call to action, just wait, your time to shine is in one more brief paragraph, because...
-
-Now, after an unprecedented reign, our queen has decided to relinquish her post and turn her role over to the people.
-
-Here's the part where you come in.
-
-Have you used a FreeSewing pattern to make something you just can't wait to share with people? That you're proud of? That looks or fits or feels fantastic? If so, we would *love* if you would consider adding it to the FreeSewing Showcase! Don't worry, the technical part [is easy](https://freesewing.dev/howtos/editors/showcase), and there are tons of folks in the FreeSewing community who can help if that bit is daunting.
-
-But there's one thing we can't help with, and that's creating great and helpful images for your Showcase.
-
-Or can we... 🤔
-
-Below are just a few easy tips and tricks for helping future sewists with your Showcase post. Of course, any Showcase is infinitely better than nothing, so go ahead and send us those low-light mirror selfies - we love them.
-
-But if you want to take things to the next level, a few things to consider:
-- Show the whole garment! From multiple angles, if possible. It's awesome to see garments from the front, but back and side views can be really helpful, too. Bonus points for adding in a seated picture, which are especially great for sewists who use a wheelchair.
-- Take pictures in the best light you can — that might be next to a bright window, in a room where you've turned on all the extra lamps you could find, or that elusive "golden hour" outdoors. Bonus points if you can make it bright enough to not need a flash.
-- A neutral background can be helpful for seeing details. So can close-up pictures! If you nailed that welt pocket or hand-stitched all your buttonholes, go ahead and show them off.
-
-If you read all that and thought, "Yikes, that's intimidating!" never fear. The beauty of FreeSewing Showcase posts is that they're created by the entire FreeSewing community, and each of them, even the ones taken on a potato phone, make FreeSewing just a tiny bit better. But if they're really great, or you start making sure incredible garments get added to the site, you might just get the chance for your own title as "Showcase Queen."
-
-Thank you, Natalia! 👑
-
 &nbsp;
 
----
+## 👸 Viva la Reina del Escaparate
 
-&nbsp;
+Desde hace algo más de un año, hay una persona en FreeSewing que, cuando alguien publica un nuevo proyecto interesante de FreeSewing en [Discord](https://discord.freesewing.org) o en las redes sociales, se asegura de que no desaparezca en el éter de Internet como tantos contenidos web efímeros.  De hecho, esta persona tenía tantos logros que desarrollamos un rol especial en Discord sólo para ella: "Reina del escaparate".
 
-## 🕵 Behind the Seams: Eléonore
+Durante su mandato como Reina de los Escaparates, [Natalia](https://freesewing.org/makers/nataliasayang/) publicó docenas de Escaparates, primero en el formato antiguo y más recientemente en Strapi. (A decir verdad, la cifra no es concreta porque dejé de contar cuando llegué a la treintena). Con la ayuda de Natalia, ahora hay ejemplos de casi todos los patrones de FreeSewing disponibles en el Escaparate del sitio web. Si lees ese "casi" como una llamada a la acción, espera, tu momento de brillar está en un párrafo más breve, porque...
 
-### How did you learn about freesewing?
-I met Joost through some mutual sewing friends back when FreeSewing was still Makemypattern.com. I loved what he was doing with the project and how he wanted to make it grow, so I stuck around.
+Ahora, tras un reinado sin precedentes, nuestra reina ha decidido renunciar a su cargo y ceder su función al pueblo.
 
-### How did you become a contributor?
-I'm really bad at saying "no" when someone needs help.
+Ésta es la parte en la que entras tú.
 
-### What has been your contributor work so far?
-I manage our Instagram (badly) and help out with translations (occasionally).
+¿Has utilizado un patrón de FreeSewing para hacer algo que no puedes esperar a compartir con la gente? ¿De qué te sientes orgulloso? ¿Que tiene un aspecto, se adapta o sienta fantásticamente? ¡Si es así, nos encantaría ** que lo añadieras al escaparate de FreeSewing ! No te preocupes, la parte técnica [es fácil](https://freesewing.dev/howtos/editors/showcase), y hay montones de personas en la comunidad FreeSewing que pueden ayudar si esa parte te resulta desalentadora.
 
-### When and why did you start sewing?
-I learned the basics from my mum, but never heard about the concept of sewing from a pattern. I just more or less winged it whenever I wanted to make anything. Those projects all turned out terrible, of course. Then when I went through a long period of depression years ago, my parents gave me a sewing machine and I started looking into making my own clothes more seriously. It kept my hands busy when my mind was wading through the mud. That machine was the best gift I've ever received. I seriously think sewing saved me.
+Pero hay algo en lo que no podemos ayudarte, y es a crear imágenes geniales y útiles para tu Escaparate.
 
-### What is your daily job, outside of freesewing?
-I am a copy editor and I do communications and training for a healthcare IT company. That last job is very new and was sort of sprung on me in the middle of the COVID crisis. It's been A LOT, but it's so rewarding.
+¿O podemos... 🤔
 
-### What are you currently working on?
-In sewing? I am working on clothes that fit my behind. I'm not going to lie, my butt is proving a tough nut to crack.
+A continuación encontrarás algunos consejos y trucos sencillos para ayudar a los futuros costureros con tu puesto de Escaparate. Por supuesto, cualquier Escaparate es infinitamente mejor que nada, así que adelante, envíanos esos selfies con poca luz en el espejo: nos encantan.
 
-### Which project did you just finish?
-I took a break from my own fitting woes and made a pair of trousers for my husband. He said the previous pair I made him was perfect, so I made no adjustments. And wouldn’t you know it: he’s gained weight. THEY DON’T FIT. Always take new measurements, kids.
+Pero si quieres llevar las cosas al siguiente nivel, debes tener en cuenta algunas cosas:
+- ¡Enseña toda la prenda! Desde varios ángulos, si es posible. Es estupendo ver las prendas por delante, pero la espalda y las vistas laterales también pueden ser muy útiles. Puntos extra por añadir una imagen sentada, que son especialmente estupendas para las costureras que utilizan una silla de ruedas.
+- Haz las fotos con la mejor luz que puedas: puede ser junto a una ventana luminosa, en una habitación en la que hayas encendido todas las lámparas extra que hayas podido encontrar en , o en esa esquiva "hora dorada" al aire libre. Puntos extra si consigues que sea lo suficientemente brillante como para no necesitar flash.
+- Un fondo neutro puede ser útil para ver los detalles. ¡También las fotos de cerca! Si has clavado ese bolsillo ribeteado o has cosido a mano todos tus ojales, adelante, muéstralos.
 
-### What sewing/coding project are you most proud of?
-I once made a TARDIS outfit for a wedding. It was what I imagined the TARDIS would look like if she were invited to a fancy party. It was nerdy and glorious and it included a corset with a hand-embroidered patch that said "bigger on the inside".
+Si has leído todo eso y has pensado: "¡Caray, qué intimidante!", no temas. Lo bonito de los posts de FreeSewing Showcase es que los crea toda la comunidad de FreeSewing, y cada uno de ellos, incluso los tomados con un teléfono de patata, hacen que FreeSewing sea un poquito mejor. Pero si son realmente geniales, o empiezas a asegurarte de que se añadan al sitio prendas increíbles , puede que tengas la oportunidad de conseguir tu propio título de "Reina del Escaparate".
 
-### What in your life are you most proud of?
-That I'm still here.
-
-### What do you love the most about sewing?
-The certainty that if you just keep at it, you will see progress.
-
-### What do you hate the most about sewing?
-That sometimes you have to keep at it for a VERY long time.
-
-### What’s the hardest part of sewing to you?
-Ajuste. Always and forever, fit. I find it fascinating how a 2D pattern translates into a 3D garment, but wow, it can be frustrating when it doesn't translate the way you want it to!
-
-### What would be your advice for starting sewists/sewistas?
-To keep at it! And not to get too hung up on "fails". If you end up with a garment that you love: that's great. If you don't, that's fine: you've spent a few hours doing something you enjoy and that's worth just as much, if not more.
-
-### Are you a dog person or a cat person?
-Definitely a cat person.
-
-### Do you have pets?
-Cats! We have two: sweet, reserved, anxious Aiko (who takes after me) and hyperactive, talkative, goofy Asra (who takes after my husband).
-
-### If there was one thing you could take with you to an uninhabited island what would it be? Why?
-Oh, do I have to choose? My Kindle, my sewing machine, my piano? No, the piano would hate the salty air and I'm guessing there are no power outlets on this island for my sewing machine. I'll take the Kindle. Wait, I would need to charge that too. But just one book would never be enough. I'm getting anxious about this whole island thing.
-
-### If there was one person you could take with you to an uninhabited island, who would it be? Why?
-I'll have to say my husband, since there's a good reason that I married him. He can come. If he's quiet and serves me drinks.
+¡Gracias, Natalia! 👑
 
 &nbsp;
 
@@ -112,44 +53,58 @@ I'll have to say my husband, since there's a good reason that I married him. He 
 
 &nbsp;
 
+## 🕵 Detrás de las costuras: Eléonore
 
-## 🤓 FreeSewing's new lab is a preview of things to come
+### ¿Cómo conociste la costura libre?
+Conocí a Joost a través de unos amigos comunes de costura, cuando FreeSewing aún era Makemypattern.com. Me encantaba lo que estaba haciendo con el proyecto y cómo quería hacerlo crecer, así que me quedé.
 
-On the very last day of 2021, we published our new website for developers, available at [freesewing.dev](https://freesewing.dev/). It was the first major milestone in our migration from GastbyJS to NextJS and the consolidation of our frontend code in our monorepo. [Our roadmap](https://github.com/freesewing/freesewing/discussions/1278) has all the details.
+### ¿Cómo te convertiste en colaborador?
+Se me da muy mal decir "no" cuando alguien necesita ayuda.
 
-The next logical step would be freesewing.org, our flagship website for makers and the one you're most likely to be familiar with. But in parallel we're also looking to provide a better developer experience for people working in our monorepo.
+### ¿Cuál ha sido tu trabajo como colaborador hasta ahora?
+Gestiono nuestro Instagram (mal) y ayudo con las traducciones (ocasionalmente).
 
-So, I decided that I would start by tackling the very heart of what makes our website meaningful: The interface to generate, test, and export patterns. It is by a wide margin the most complex thing to make happen (not to mention make intuitive) and the thinking is that whatever problems we're going to run into, this is where they will prop up.
+### ¿Cuándo y por qué empezaste a coser?
+Aprendí lo básico de mi madre, pero nunca oí hablar del concepto de coser a partir de un patrón. Cada vez que quería hacer algo, lo hacía más o menos a mi aire. Todos esos proyectos resultaron terribles, por supuesto. Luego, cuando pasé por un largo periodo de depresión hace años, mis padres me regalaron una máquina de coser y empecé a plantearme más seriamente la confección de mi propia ropa. Mantenía mis manos ocupadas cuando mi mente vadeaba el barro. Esa máquina ha sido el mejor regalo que he recibido nunca. En serio, creo que la costura me salvó.
 
-The result of that work so far is now available on https://lab.freesewing.dev/ If you're expecting a freesewing.org-equivalent site there, you're probably going to be disappointed. It really is only about the pattern configuration. But there's some things that I think are worthy of some excitement.
+### ¿Cuál es tu trabajo diario, fuera del freesewing?
+Soy redactora y realizo tareas de comunicación y formación para una empresa de informática sanitaria. Este último trabajo es muy nuevo y se me presentó en medio de la crisis de COVID. Ha sido MUCHO, pero es muy gratificante.
 
-### One website, many languages
-FreeSewing currently supports 5 languages (en, fr, es, de, nl) and the way we handle that is by having a subdomain for each language (eg the Spanish site lives at https://es.freesewing.org/). On the surface, that is an elegant solution and it works well when it works well. In practice, what we've found is that sometimes language-specific bugs crop up, more often than not because some malformed content generated by the translation software. Problem is, when this happens, it's not always picked up/noticed and the result is that it's not uncommon for the non-English versions of the site to lag behind one of more releases.
+### ¿En qué estás trabajando actualmente?
+¿En costura? Estoy trabajando en ropa que se ajuste a mi trasero. No voy a mentir, mi trasero está resultando un hueso duro de roer.
 
-There's also the fact that building 5 sites for each change requires 5x the build minutes, and recently we've been overshooting our build minutes graciously provided by Netlify pretty much every month.
+### ¿Qué proyecto acabas de terminar?
+Me tomé un descanso de mis propios problemas de adaptación y le hice un pantalón a mi marido. Me dijo que el par anterior que le hice era perfecto, así que no hice ningún ajuste. Y no te lo imaginas: ha engordado. NO ENCAJAN. Tomad siempre nuevas medidas, niños.
 
-The lab site implements a different solution that we hope to use as the blueprint for the future freesewing.org. It's one site that carries all languages with the language changes handled in the URL. That means one single build for all languages, keeping all our users on the latest and greatest release.
+### ¿De qué proyecto de costura/codificación estás más orgullosa?
+Una vez hice un traje de TARDIS para una boda. Era el aspecto que imaginaba que tendría la TARDIS si la invitaran a una fiesta elegante. Era friki y glorioso e incluía un corsé con un parche bordado a mano que decía "más grande por dentro".
 
-### One development environment, many patterns
-Currently, each pattern has its own development environment, which is the same as what you get running `npx create-freesewing-pattern`. For developers working in our monorepo, that adds friction, in particular when working on patterns that extend another pattern.
+### ¿De qué aspecto de tu vida estás más orgulloso?
+Que sigo aquí.
 
-The new lab is one development environment for *all* our patterns making it easy to make cross-cutting changes to various patterns. Furthermore, when you spin it up in development mode in our monorepo, it will load all pattern code from source and seamlessly update whenever you make changes to any pattern.
+### ¿Qué es lo que más te gusta de la costura?
+La certeza de que si sigues con ello, verás progresos.
 
-### One development environment, many versions
-This improvement is aimed squarely at making it easier to track down regression bugs in patterns. A regression bug is when things worked fine before, but now for some reason they do not. This typically happens when a new feature or improvement has unintended side-effects.
+### ¿Qué es lo que más odias de la costura?
+Que a veces hay que seguir durante MUCHO tiempo.
 
-Previously, there was no simple way to compare the (result of the) latest version of the code with the previous version. Our new lab however has a dropdown that simply lets you pick the version of your choice and will create that version of the pattern. This should be a real boon for tracking down those bugs.
+### ¿Qué es para ti lo más difícil de coser?
+Ajuste. Siempre y para siempre, en forma. Me parece fascinante cómo un patrón 2D se traduce en una prenda 3D, pero ¡vaya, puede ser frustrante cuando no se traduce como tú quieres!
 
-### Custom layout (work-in-progress)
-If your eyes has somewhat glazed over from all that developer talk, fear not, there's also some cool features for end users in this new code.
+### ¿Cuál sería tu consejo para los costureros/cosedoras principiantes?
+¡A seguir así! Y no te obsesiones demasiado con los "fracasos". Si acabas con una prenda que te encanta: estupendo. Si no lo haces, no pasa nada: has pasado unas horas haciendo algo que te gusta y eso vale tanto o más.
 
-For one thing, I started working on one of our most popular feature requests: Custom layouts. The idea is that you can change yourself the way the pattern is laid out since computers are actually not very good at choosing the optimal layout.
+### ¿Te gustan los perros o los gatos?
+Definitivamente una persona de gatos.
 
-This has been divided into two different layouts: One layout for printing (where you can try to cram everything into as small a space as possible), and one layout for your fabric (where you will want to keep grainlines and so on into account).
+### ¿Tienes animales de compañía?
+¡Gatos! Tenemos dos: la dulce, reservada y ansiosa Aiko (que se parece a mí) y la hiperactiva, habladora y tontorrona Asra (que se parece a mi marido).
 
-It's still a work-in-progress and certainly rough around the edges (as is the entire lab to be honest) but the intent is clear: We absolutely want this to be part of freesewing.org on the very first day of our migration.
+### Si hubiera una cosa que pudieras llevarte a una isla deshabitada, ¿qué sería? ¿Por qué?
+¿Tengo que elegir? ¿Mi Kindle, mi máquina de coser, mi piano? No, el piano odiaría el aire salado y supongo que en esta isla no hay tomas de corriente para mi máquina de coser. Me quedo con el Kindle. Espera, eso también tendría que cobrarlo. Pero un solo libro nunca sería suficiente. Me estoy poniendo ansioso con todo esto de la isla.
 
-If you're interested in seeing what work working on, or just curious, head over to https://lab.freesewing.dev/ and we'd love to hear your feedback [on Discord](https://discord.freesewing.org/).
+### Si hubiera una persona que pudieras llevarte a una isla deshabitada, ¿quién sería? ¿Por qué?
+Tendré que decir mi marido, ya que hay una buena razón por la que me casé con él. Puede venir. Si se calla y me sirve bebidas.
 
 &nbsp;
 
@@ -157,25 +112,70 @@ If you're interested in seeing what work working on, or just curious, head over 
 
 &nbsp;
 
-## 🤝 Friendship ended with Netlify / Now Vercel is our best friend
 
-Ok, so I kinda wanted to reference [this meme](https://knowyourmeme.com/memes/friendship-ended-with-mudasir) but let me be absolutely clear: Friendship with [Netlify](https://www.netlify.com/) is not over. As a matter of fact, they are a really great company and I can't recommend them enough.
+## 🤓 El nuevo laboratorio de FreeSewing es un anticipo de lo que está por venir
 
-But, some of our plans and ambitions bump into the limits of what can be done in a static site (looking at you i18n routing) and so we ended up with these great plans/ideas but no obvious way to deploy them without breaking the bank.
+El último día de 2021, publicamos nuestro nuevo sitio web para desarrolladores, disponible en [freesewing.dev](https://freesewing.dev/). Fue el primer hito importante en nuestra migración de GastbyJS a NextJS y la consolidación de nuestro código frontend en nuestro monorepo. [Nuestra hoja de ruta](https://github.com/freesewing/freesewing/discussions/1278) tiene todos los detalles.
 
-Which is why I am very happy to let you know that [Vercel](https://www.vercel.com/?utm_source=freesewing&utm_campaign=oss) — the very company behind the [NextJS](https://nextjs.org/) framework that we're migrating to — has agreed to become a FreeSewing sponsor; In other words, Vercel will host and build FreeSewing's websites free of charge, much like Netlify has been doing for us for years.
+El siguiente paso lógico sería freesewing.org, nuestro sitio web insignia para creadores y con el que es más probable que estés familiarizado. Pero paralelamente también buscamos ofrecer una mejor experiencia de desarrollo a las personas que trabajan en nuestro monorepo.
 
-But unlike Netlify, which is a pure static hosting service, Vercel runs a server-side NextJS instance which means we can do all sorts of cool stuff server-side.
+Así que decidí que empezaría abordando el corazón mismo de lo que hace que nuestro sitio web tenga sentido: La interfaz para generar, probar y exportar patrones. Es, por un amplio margen, lo más complejo de realizar (por no decir de hacer intuitivo) y la idea es que, sean cuales sean los problemas con los que nos vayamos a encontrar, es aquí donde se apuntalarán.
 
-This is really exciting news and I'm very happy that Vercel has agreed to sponsor FreeSewing. We also want to thank Netlify for the many years that we've benefited from their service. And, while we're at it, I feel obliged to point out that we have more sponsors:
+El resultado de ese trabajo hasta ahora ya está disponible en https://lab.freesewing.dev/. Si esperas allí un sitio equivalente a freesewing.org, probablemente te decepcionará. En realidad, sólo se trata de la configuración del patrón. Pero hay algunas cosas que creo que merecen un poco de emoción.
 
-- [Algolia](https://www.algolia.com/) handles our search
-- [Bugsnag](https://www.bugsnag.com/) handles our bug reports
-- [Crowdin](https://www.crowdin.com/) handles translation
+### Un sitio web, muchas lenguas
+FreeSewing admite actualmente 5 idiomas (en, fr, es, de, nl) y la forma en que lo gestionamos es teniendo un subdominio para cada idioma (por ejemplo, el sitio en español vive en https://es.freesewing.org/). A primera vista, es una solución elegante y funciona bien cuando funciona bien. En la práctica, lo que hemos comprobado es que a veces surgen fallos específicos del idioma, la mayoría de las veces debido a algún contenido malformado generado por el software de traducción. El problema es que, cuando esto ocurre, no siempre se capta/se nota y el resultado es que no es raro que las versiones del sitio que no están en inglés vayan por detrás de una o más versiones.
 
-To be clear: We don't receive money from any of these companies and this is not some sort of paid advertising. But all of these companies wave their fees for FreeSewing because they believe that what we do is worthwhile.
+También está el hecho de que construir 5 sitios para cada cambio requiere 5 veces los minutos de construcción, y últimamente hemos estado sobrepasando nuestros minutos de construcción proporcionados amablemente por Netlify prácticamente todos los meses.
 
-And I for one do not think that's something we should take for granted.
+El sitio del laboratorio aplica una solución diferente que esperamos utilizar como modelo para el futuro freesewing.org. Es un sitio que contiene todos los idiomas con los cambios de idioma gestionados en la URL. Eso significa una única versión para todos los idiomas, manteniendo a todos nuestros usuarios con la última y mejor versión.
+
+### Un entorno de desarrollo, muchos modelos
+Actualmente, cada patrón tiene su propio entorno de desarrollo, que es el mismo que obtienes ejecutando `npx create-freesewing-pattern`. Para los desarrolladores que trabajan en nuestro monorepo, eso añade fricción, en particular cuando trabajan en patrones que amplían otro patrón.
+
+El nuevo laboratorio es un único entorno de desarrollo para *todos* nuestros patrones, lo que facilita realizar cambios transversales en varios patrones. Además, cuando lo pongas en marcha en modo de desarrollo en nuestro monorepo, cargará todo el código del patrón desde el código fuente y se actualizará sin problemas cada vez que hagas cambios en cualquier patrón.
+
+### Un entorno de desarrollo, muchas versiones
+Esta mejora tiene como objetivo facilitar la detección de errores de regresión en los patrones. Un fallo de regresión es cuando las cosas funcionaban bien antes, pero ahora por alguna razón no lo hacen. Esto suele ocurrir cuando una nueva función o mejora tiene efectos secundarios no deseados.
+
+Antes, no había una forma sencilla de comparar el (resultado de la) última versión del código con la versión anterior. Sin embargo, nuestro nuevo laboratorio tiene un menú desplegable que simplemente te permite elegir la versión que desees y creará esa versión del patrón. Esto debería ser de gran ayuda para localizar esos fallos.
+
+### Diseño personalizado (trabajo en curso)
+Si se te han quedado los ojos algo vidriosos de tanto hablar de desarrolladores, no temas, también hay algunas funciones interesantes para los usuarios finales en este nuevo código.
+
+Por un lado, empecé a trabajar en una de nuestras peticiones de funciones más populares: Diseños personalizados. La idea es que puedas cambiar tú mismo la forma en que se dispone el patrón, ya que los ordenadores no son muy buenos eligiendo la disposición óptima.
+
+Se ha dividido en dos diseños diferentes: Un diseño para imprimir (en el que puedes intentar meter todo en el menor espacio posible), y un diseño para tu tela (en el que tendrás que tener en cuenta las líneas de grano, etc.).
+
+Todavía es un trabajo en curso y ciertamente tosco (como todo el laboratorio, para ser sinceros), pero la intención es clara: queremos absolutamente que esto forme parte de freesewing.org el primer día de nuestra migración.
+
+Si te interesa ver en qué estamos trabajando, o simplemente tienes curiosidad, dirígete a https://lab.freesewing.dev/ y nos encantaría escuchar tus comentarios [en Discord](https://discord.freesewing.org/).
+
+&nbsp;
+
+---
+
+&nbsp;
+
+## 🤝 Se acabó la amistad con Netlify / Ahora Vercel es nuestro mejor amigo
+
+Vale, quería hacer referencia a [en este meme](https://knowyourmeme.com/memes/friendship-ended-with-mudasir) , pero que quede absolutamente claro: la amistad con [Netlify](https://www.netlify.com/) no ha terminado. De hecho, son una empresa realmente estupenda y no puedo dejar de recomendarla.
+
+Pero algunos de nuestros planes y ambiciones chocan con los límites de lo que se puede hacer en un sitio estático (te miro a ti, enrutamiento i18n), por lo que acabamos con estos grandes planes/ideas pero sin una forma obvia de desplegarlos sin arruinarnos.
+
+Por eso me alegra mucho comunicarte que [Vercel](https://www.vercel.com/?utm_source=freesewing&utm_campaign=oss) -la misma empresa que está detrás del framework [NextJS](https://nextjs.org/) al que estamos migrando- ha accedido a convertirse en patrocinador de FreeSewing; en otras palabras, Vercel alojará y construirá gratuitamente los sitios web de FreeSewing, al igual que Netlify lleva años haciendo por nosotros.
+
+Pero a diferencia de Netlify, que es un servicio de alojamiento puramente estático, Vercel ejecuta una instancia NextJS del lado del servidor, lo que significa que podemos hacer todo tipo de cosas interesantes del lado del servidor.
+
+Es una noticia realmente emocionante y estoy muy contenta de que Vercel haya aceptado patrocinar FreeSewing. También queremos dar las gracias a Netlify por los muchos años que nos hemos beneficiado de su servicio. Y, ya que estamos, me siento obligado a señalar que tenemos más patrocinadores:
+
+- [Algolia](https://www.algolia.com/) se encarga de nuestra búsqueda
+- [Bugsnag](https://www.bugsnag.com/) gestiona nuestros informes de errores
+- [Crowdin](https://www.crowdin.com/) se encarga de la traducción
+
+Para que quede claro: no recibimos dinero de ninguna de estas empresas y esto no es ningún tipo de publicidad pagada. Pero todas estas empresas ondean sus tarifas para FreeSewing porque creen que lo que hacemos merece la pena.
+
+Y, por mi parte, no creo que sea algo que debamos dar por sentado.
 
 
 

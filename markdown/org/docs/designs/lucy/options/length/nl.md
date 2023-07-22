@@ -2,7 +2,7 @@
 title: Lengte
 ---
 
-The length option determines how long your pocket will be.
+De optie lengte bepaalt hoe lang je zak wordt.
 
 ## Effect van deze optie op het patroon
 

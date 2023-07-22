@@ -1,5 +1,5 @@
 ---
-title: "Unice undies: Fabric options"
+title: "Calzoncillos Unice: Opciones de tejido"
 ---
 
 Necesitas un tejido con un montón de estiramiento horizontal y vertical (a veces llamado “estiramiento de cuatro vías”) para este patrón. Preferiblemente algo que es cómodo, suave y respirable.

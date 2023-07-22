@@ -1,10 +1,10 @@
 ---
 maker: "RedBlaqueGolden"
-caption: "There's some really quality posing in this set."
+caption: "In diesem Set gibt es einige wirklich gute Posen."
 date: "05.02.2018"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5084bf9ead668c3ddd3a8ff4fd9a9ea4866d3d1a-1080x1080.jpg"
 intro: ""
-title: "A Wonder Women simon by JV"
+title: "Eine Wunderfrau simon von JV"
 designs:
   - "simon"
 ---
@@ -13,11 +13,11 @@ designs:
 
 <Note>
 
-###### See the originals on the Instragram feed of funloveadventure
+###### Siehe die Originale auf dem Instragram-Feed von funloveadventure
 
-These images are from 
-[the Instagram feed](https://www.instagram.com/myxterhyde/)
-of [@MyxterHyde](/users/MyxterHyde).
-They are published here with permission.
+Diese Bilder stammen von 
+[dem Instagram-Feed](https://www.instagram.com/myxterhyde/)
+von [@MyxterHyde](/users/MyxterHyde).
+Sie werden hier mit Genehmigung veröffentlicht.
 
 </Note>

@@ -1,37 +1,37 @@
 ---
 author: "joostdecock"
-caption: "If you like it, put a bow on it"
+caption: "Si te gusta, ponle un lazo"
 date: "2017-11-14"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b04db622ddf3bff6e2d66a5305903a0e96edd58-2000x1333.jpg"
-intro: "Our family of freesewing patterns has grown once again, and the benjamin of the family is... Benjamin ."
-title: "The Benjamin Bow Tie pattern is now available in beta. And I didn't even have to do anything."
+intro: "Nuestra familia de patrones de costura libre ha vuelto a crecer, y el benjamín de la familia es... Benjamin ."
+title: "El patrón Pajarita Benjamin ya está disponible en versión beta. Y ni siquiera tuve que hacer nada."
 ---
 
-Our family of freesewing patterns has grown once again, and the benjamin of the family is... [Benjamin](/designs/benjamin).
+Nuestra familia de patrones de costura libre ha vuelto a crecer, y el benjamín de la familia es... [Benjamin](/designs/benjamin).
 
-Benjamin is a bow tie that comes with a variety of options to control pretty much every aspect of your bow tie.
+Benjamin es una pajarita que viene con una variedad de opciones para controlar prácticamente todos los aspectos de tu pajarita.
 
-You can opt for a made-to-measure bow tie, or draft Benjamin with an adjustment ribbon to allow some flexibility in the fit. Something that makes this a great handmade gift for the upcoming holiday season.
+Puedes optar por una pajarita hecha a medida, o un borrador Benjamín con una cinta de ajuste para permitir a cierta flexibilidad en el ajuste. Algo que lo convierte en un gran regalo hecho a mano para las próximas fiestas.
 
-## Benjamin is more special than you realize
+## Benjamin es más especial de lo que crees
 
-Here's the thing about Benjamin that I'm most excited about: I didn't do anything.
+Esto es lo que más me entusiasma de Benjamin: No he hecho nada.
 
-![A collection of bow ties from Wouter, who designed and coded this pattern](https://posts.freesewing.org/uploads/bowties_4f3e05ec53.jpg)
+![Una colección de pajaritas de Wouter, que diseñó y codificó este patrón](https://posts.freesewing.org/uploads/bowties_4f3e05ec53.jpg)
 
-That's right, Benjamin was designed and coded by [Wouter Van Wageningen](/users/xdpug) who has over the last couple of months been teaching himself the ins and outs of the freesewing platform:
+Así es, Benjamin ha sido diseñado y codificado por [Wouter Van Wageningen](/users/xdpug) , que durante los últimos dos meses se ha estado enseñando a sí mismo los entresijos de la plataforma freesewing:
 
-> I had a blast making the Bow Tie pattern. I basically used it to move from the BabyBib tutorial into something that was original and not too complex (and actually useful). I wanted to get the whole process under control before venturing out into the real stuff. 
+> Me lo pasé genial haciendo el patrón Pajarita. Básicamente lo utilicé para pasar del tutorial de BabyBib a algo que fuera original y no demasiado complejo (y realmente útil). Quería tener todo el proceso bajo control antes de aventurarme en lo real. 
 > 
-> That I was able to pick things up so easily is due mostly to the great [BabyBib tutorial](https://freesewing.org/tutorials/pattern-design/) and the help you've provided [here](https://discord.freesewing.org).
+> Que haya podido coger las cosas con tanta facilidad se debe sobre todo al estupendo tutorial de [BabyBib](https://freesewing.org/tutorials/pattern-design/) y a la ayuda que me habéis proporcionado [aquí](https://discord.freesewing.org).
 
-## Who will be next to contribute a pattern?
+## ¿Quién será el próximo en contribuir con un patrón?
 
-When I released freesewing as an open source platform, I obviously hoped that others would join the effort.
+Cuando lancé freesewing como plataforma de código abierto, obviamente esperaba que otros se unieran al esfuerzo.
 
-But I never thought that less than 3 months after the public release of freesewing, we'd have our first pattern from the freesewing community.
+Pero nunca pensé que menos de 3 meses después del lanzamiento público de freesewing, tendríamos nuestro primer patrón de la comunidad freesewing.
 
-![Benjamin is kind of a big deal](https://posts.freesewing.org/uploads/giphy_7a40f62815.gif)
+![Benjamin es una especie de gran cosa](https://posts.freesewing.org/uploads/giphy_7a40f62815.gif)
 
-So yeah, Benjamin is a BFD, Wouter is a badass, and I am hopeful that this will be the first of many patterns that we as a community will be able to make available to all.
+Así que sí, Benjamin es un BFD, Wouter es un badass, y tengo la esperanza de que éste sea el primer de muchos patrones que, como comunidad, podremos poner a disposición de todos.
 

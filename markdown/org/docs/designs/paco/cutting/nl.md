@@ -1,5 +1,5 @@
 ---
-title: "Paco pants: Cutting Instructions"
+title: "Paco broek: Knip instructies"
 ---
 
 <Tip>
@@ -25,10 +25,10 @@ Als een patroondeel niet is afgedrukt, betekent dit dat je het niet nodig hebt.
 
 <Warning>
 
-#### Caveats
+#### Opmerkingen
 
-- There is no seam allowance on the interfacing
-- There is extra seam allowance on the waist band and hem
-- The waistband is a mere rectangle, so it's not fully printed to save paper
+- Er zit geen naadtoeslag op de vlieseline
+- Er zit extra naadtoeslag op de tailleband en zoom
+- De tailleband is slechts een rechthoek, dus hij is niet volledig bedrukt om papier te besparen.
 
 </Warning>

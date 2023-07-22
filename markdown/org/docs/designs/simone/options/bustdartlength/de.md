@@ -2,10 +2,10 @@
 title: "Länge des Brustabnähers"
 ---
 
-Controls how close the **bust darts** approach the bust points.
+Legt fest, wie nahe die **Brustabnäher** den Brustpunkten kommen.
 
-- Increase this option to lengthen the bust darts moving them closer to the bust points
-- Decrease this option to shorten the bust darts moving them further away from the bust points
+- Erhöhe diese Option, um die Brustabnäher zu verlängern und sie näher an die Brustpunkte zu bringen
+- Verringere diese Option, um die Brustabnäher zu verkürzen und sie weiter von den Brustpunkten weg zu bewegen.
 
 ## Effekt dieser Option auf das Schnittmuster
 

@@ -2,10 +2,10 @@
 title: "Lengte nepen voor"
 ---
 
-Controls how close the **front waist darts** approach the bust points.
+Bepaalt hoe dicht de **voorste tailledarts** de borstpunten naderen.
 
-- Increase this option to lengthen the front waist darts moving them closer to the bust points
-- Decrease this option to shorten the front waist darts moving them further away from the bust points
+- Verhoog deze optie om de coupenaden aan de voorkant te verlengen en ze dichter bij de borstpunten te plaatsen
+- Verlaag deze optie om de coupenaden aan de voorkant van de taille in te korten en ze verder weg van de borstpunten te plaatsen
 
 ## Effect van deze optie op het patroon
 

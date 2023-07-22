@@ -2,7 +2,7 @@
 title: "Pince poitrine"
 ---
 
-Where to place the primary bust dart to shape the chest.
+Où placer la fléchette primaire du buste pour modeler la poitrine.
 
 ## Effet de cette option sur le motif
 

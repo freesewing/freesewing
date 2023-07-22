@@ -1,73 +1,73 @@
 ---
 author: "joostdecock"
-caption: "Scales, how do they work?"
+caption: "Básculas, ¿cómo funcionan?"
 date: "2018-01-04"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d09252be53d33ab5b743c22f523a9ea8cbd70708-2000x1328.jpg"
-intro: "Freesewing core v1.3.0 is out; Comes with fixes so good that we back-ported them to all your drafts"
-title: "Freesewing core v1.3.0 is out; Comes with fixes so good that we back-ported them to all your drafts"
+intro: "Ya está disponible el núcleo de Freesewing v1.3.0; viene con correcciones tan buenas que las hemos retroportado a todos tus borradores"
+title: "Ya está disponible el núcleo de Freesewing v1.3.0; viene con correcciones tan buenas que las hemos retroportado a todos tus borradores"
 ---
 
-On the last day of 2017, in our [monthly roundup of all the freesewing news](/blog/roundup-2017-12/) , we wrote about the looming issue with incorrectly scaled drafts, aka [Core issue #204 - The Inkscape default units quandary](https://github.com/freesewing/core/issues/204).
+El último día de 2017, en nuestro [resumen mensual de todas las noticias de freesewing](/blog/roundup-2017-12/) , escribimos sobre el inminente problema de los borradores escalados incorrectamente, también conocido como [Core issue #204 - The Inkscape default units quandary](https://github.com/freesewing/core/issues/204).
 
-I won't go over [all that](/blog/roundup-2017-12/) again, but it boils down to the fact that the [Inkscape](http://inkscape.org/) maintainers have changed Inkscape's internal DPI (dots per inch) from 90 to 96. A change that goes in effect from version 0.92 onwards.
+No volveré sobre [todo eso](/blog/roundup-2017-12/) otra vez, pero se reduce al hecho de que los [mantenedores de Inkscape](http://inkscape.org/) han cambiado el DPI (puntos por pulgada) interno de Inkscape de 90 a 96. Un cambio que entra en vigor a partir de la versión 0.92.
 
-Left unchecked, this change would cause all freesewing patterns to be incorrectly scaled. That's because we assume 90DPI in our SVG output, and scale accordingly.
+Si se deja sin marcar, este cambio provocaría que todos los patrones de cosido libre se escalaran incorrectamente. Eso es porque asumimos 90DPI en nuestra salida SVG, y escalamos en consecuencia.
 
-![That 'oh-shit' moment when we realized the full impact of the DPI change](https://posts.freesewing.org/uploads/oh_shit_90b4969a5d.gif)
+![Ese momento "oh-mierda" en el que nos dimos cuenta de todo el impacto del cambio de PPP](https://posts.freesewing.org/uploads/oh_shit_90b4969a5d.gif)
 
-When the switch to 96DPI goes into effect, all patterns would be off by 6.66%. Which is really the kind of difference that is too small to notice when eyeballing a pattern, yet large enough to completely mess up your garment.
+Cuando entre en vigor el cambio a 96DPI, todos los patrones se desviarán un 6,66%. Lo cual es realmente el tipo de diferencia que es demasiado pequeña para notarla al echar un vistazo a un patrón, pero lo suficientemente grande como para estropear por completo tu prenda.
 
-The issue is also more troublesome than it would seem at the surface. First of all because we can't just switch to 96DPI as there are now two versions out there that use a different default DPI under the hood. We need a solution that works for both.
+La cuestión también es más problemática de lo que parece a primera vista. En primer lugar, porque no podemos simplemente cambiar a 96DPI, ya que ahora hay dos versiones en que utilizan un DPI predeterminado diferente bajo el capó. Necesitamos una solución que funcione para ambos.
 
-![Screenshot of a freesewing pattern that is incorrectly scaled in the latest Inkscape release](https://posts.freesewing.org/uploads/inkscape_b96e2bb510.png)
+![Captura de pantalla de un patrón de costura libre que está escalado incorrectamente en la última versión de Inkscape](https://posts.freesewing.org/uploads/inkscape_b96e2bb510.png)
 
-Furthermore, while any fix we implement would apply to new drafts, all existing drafts generated before the fix would still be impacted.
+Además, aunque cualquier corrección que realicemos se aplicaría a los nuevos borradores, todos los borradores existentes generados antes de la corrección seguirían viéndose afectados.
 
-In other words, if you drafted a pattern last week, or a month ago, that pattern would not scale correctly in a recent version of Inkscape.  
-And since we use Inkscape in our SVG-to-PDF tool-chain, it would also be incorrectly scaled if you came here and downloaded a PDF.
+En otras palabras, si redactaste un patrón la semana pasada, o hace un mes, ese patrón no escalaría correctamente en una versión reciente de Inkscape.  
+Y como utilizamos Inkscape en nuestra cadena de herramientas de SVG a PDF, también se escalaría incorrectamente si vinieras aquí y descargaras un PDF.
 
-Clearly, something needed to be done. And fast.
+Estaba claro que había que hacer algo. Y rápido.
 
-## The fix for new drafts
+## La solución para los nuevos borradores
 
-From today's release of core v1.3.0 onwards, our SVG files no longer depend on any DPI setting.
+A partir de la versión de hoy del núcleo v1.3.0, nuestros archivos SVG ya no dependen de ningún ajuste de PPP.
 
-Rather than use the internal units and apply an SVG transform to scale the entire pattern, we've bolted down the units to mm and updated the SVG viewBox to apply the scaling.
+En lugar de utilizar las unidades internas y aplicar una transformación SVG para escalar todo el patrón , hemos atornillado las unidades a mm y actualizado la viewBox SVG para aplicar el escalado.
 
-Obviously, this is how we should have done it from the start. Everyday is a school day.
+Evidentemente, así es como deberíamos haberlo hecho desde el principio. Todos los días son lectivos.
 
-If you're worried about the use of mm in your draft (because you're used to imperial units), rest assured that those mm will stay under the hood. You won't be able to tell the difference.
+Si te preocupa el uso de mm en tu borrador (porque estás acostumbrado a las unidades imperiales ), ten por seguro que esos mm permanecerán bajo el capó. No notarás la diferencia.
 
-## The fix for pre-existing drafts
+## La solución para los borradores preexistentes
 
-To avoid problems with pre-existing drafts, we needed to come up with a solution for those too.
+Para evitar problemas con los borradores preexistentes, también teníamos que encontrar una solución para ellos.
 
-We essentially have two options:
+Esencialmente tenemos dos opciones:
 
- - Re-draft all those drafts
- - Patch them in-place without changing the draft itself
+ - Vuelve a redactar todos esos borradores
+ - Parchéalos in situ sin cambiar el propio borrador
 
-Re-drafting fixes the issue as every new draft will be handled by the latest core version that does include the fix.
+Volver a redactar soluciona el problema, ya que cada nuevo borrador se gestionará con la última versión del núcleo , que sí incluye la corrección.
 
-However, core also ships with regular updates, tweaks, and fixes in the patterns themselves. So by re-drafting a draft generated on a previous version of core, there's no guarantee the draft won't change.
+Sin embargo, el núcleo también incluye actualizaciones periódicas, ajustes y correcciones en los propios patrones. Así que al volver a redactar un borrador generado en una versión anterior de core, no hay garantía de que el borrador de no cambie.
 
-In principle that change would always be an improvement. But one person's bug is another person's feature, and we do prefer not to [move your cheese](https://en.wikipedia.org/wiki/Who_Moved_My_Cheese%3F).
+En principio, ese cambio siempre sería una mejora. Pero el error de una persona es la característica de otra, y preferimos no [mover tu queso](https://en.wikipedia.org/wiki/Who_Moved_My_Cheese%3F).
 
-![Don't touch my stuff](https://posts.freesewing.org/uploads/who_moved_my_cheese_0cd51a25d6.jpg)
+![No toques mis cosas](https://posts.freesewing.org/uploads/who_moved_my_cheese_0cd51a25d6.jpg)
 
-So, instead we decided to patch all drafts we have on file in-place with the new scaling code, without touching any other aspect of the draft.
+Así que, en su lugar, decidimos parchear todos los borradores que tenemos archivados con el nuevo código de escalado, sin tocar ningún otro aspecto del borrador.
 
-As you're reading this, this has already been done, and all freesewing drafts should now scale correctly. Everywhere.
+Mientras lees esto, ya se ha hecho, y ahora todos los borradores de libre elección deberían escalarse correctamente. En todas partes.
 
-## Also: version awareness
+## También: conocimiento de la versión
 
-We've also made changes to our backend systems to store the version of freesewing core that generated your draft.
+También hemos realizado cambios en nuestros sistemas backend para almacenar la versión del núcleo de freesewing que generó tu borrador.
 
-If since you generated your draft we've rolled out new features or fixes, you'll be notified that an update is available:
+Si desde que generaste tu borrador hemos puesto en marcha nuevas funciones o correcciones, se te notificará que hay una actualización disponible:
 
-![If you draft is generated with an old version of freesewing core, we'll tell you about it](https://posts.freesewing.org/uploads/upgrade_dee342e3fb.png)
+![Si tu borrador se genera con una versión antigua del núcleo de freesewing, te lo indicaremos](https://posts.freesewing.org/uploads/upgrade_dee342e3fb.png)
 
-Whether you update your draft or not is up to you. If you don't want to loose the info in your *old* draft, rather than update it in-place, you can fork it.
+Actualizar o no tu borrador depende de ti. Si no quieres perder la información de tu antiguo borrador de ** , en lugar de actualizarlo in situ, puedes bifurcarlo.
 
 
 

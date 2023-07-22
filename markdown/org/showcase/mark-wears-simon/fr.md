@@ -1,5 +1,5 @@
 ---
-maker: "unknown"
+maker: "inconnue"
 caption: "Jolie cravate aussi"
 date: "2017-08-20"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8889aa644473d0615584ea0b69a570f95c69c1f9-1080x1080.jpg"
@@ -15,6 +15,6 @@ designs:
 
 > ##### Consultez l'original dans le feed Instagram de swissarmywife
 > 
-> This picture is from [the Instagram feed](https://www.instagram.com/p/BYAX07OFEPL/)  
-> of [swissarmywife](https://mnel2.wordpress.com/).  
-> It's posted here with permission.
+> Cette photo provient de [le flux Instagram](https://www.instagram.com/p/BYAX07OFEPL/)  
+> de [swissarmywife](https://mnel2.wordpress.com/).  
+> Elle est postée ici avec sa permission.

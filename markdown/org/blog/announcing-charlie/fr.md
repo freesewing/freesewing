@@ -1,63 +1,63 @@
 ---
 author: "joostdecock"
-caption: "Photo by Flo Dahm from Pexels"
+caption: "Photo par Flo Dahm de Pexels"
 date: "2021-04-18"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9e1cca6b6de79fadbd5201bad3b9b71375a53464-1920x1442.jpg"
-intro: "We've just published FreeSewing v2.15 and it comes with a new pattern: The Charlie Chinos trouser pattern ."
-title: "Charlie Chinos: who wants some new trousers?"
+intro: "Nous venons de publier FreeSewing v2.15 et il est accompagné d'un nouveau patron : Le patron du pantalon Charlie Chinos ."
+title: "Charlie Chinos : qui veut un nouveau pantalon ?"
 ---
 
 
-We've just published FreeSewing v2.15 and it comes with a new pattern: [The Charlie Chinos trouser pattern](/designs/charlie/).
+Nous venons de publier FreeSewing v2.15 et il est accompagné d'un nouveau patron : [Le patron du pantalon Charlie Chinos](/designs/charlie/).
 
-I have lost track of how long a chino trouser pattern has been on my to-do list, but it's measured in years. I'm very happy I finally landed where I wanted to be.
+Je ne sais plus depuis combien de temps un patron de pantalon chino figure sur ma liste de choses à faire, mais cela se compte en années. Je suis très heureuse d'avoir enfin atterri là où je voulais être.
 
-I have a picture of it here, but due to the dark fabric, you can't really make out much:
+J'en ai une photo ici, mais à cause du tissu sombre, on ne distingue pas grand-chose :
 
-![A pair of Charlies by Joost](https://posts.freesewing.org/uploads/joost_b8dee41025.jpg)
+![Une paire de Charlies par Joost](https://posts.freesewing.org/uploads/joost_b8dee41025.jpg)
 
 
-So instead, let me tell you about why I am so excited about this.
+Alors à la place, laisse-moi te dire pourquoi je suis si enthousiaste à ce sujet.
 
-##### Based on Titan
+##### Basé sur Titan
 
-First up, Charlie is based on Titan, our unisex trouser block that is also the foundation for [our Paco pattern](/designs/paco/). So if you're familiar with any of those, you already know how Charlie will fit you.
+Tout d'abord, Charlie est basé sur Titan, notre bloc de pantalon unisexe qui est également la base de [notre motif Paco](/designs/paco/). Donc, si tu connais l'un de ces sites, tu sais déjà comment Charlie t'ira.
 
-##### More measurements, more options, better fit
+##### Plus de mesures, plus d'options, un meilleur ajustement
 
-As a token of how much I feel this is an improvement, I've deprecated [Theo](/designs/theo/). Based on an Aldrich draft, Theo uses very few measurements, and while that worked fine for a certain set of people, it's a less versatile pattern.
+Pour montrer à quel point je pense qu'il s'agit d'une amélioration, j'ai supprimé [Theo](/designs/theo/). Basé sur une ébauche d'Aldrich, Theo utilise très peu de mesures, et bien que cela ait bien fonctionné pour un certain groupe de personnes, c'est un modèle moins polyvalent.
 
-Charlie will adapt better to differently shaped bodies, and has a hell of a lot more options that allow you to configure your trousers so you get them just as you like. In case you're wondering, Theo has 5 options, whereas Charlie has 31.
+Charlie s'adaptera mieux aux différentes formes de corps, et a beaucoup plus d'options qui te permettent de configurer tes pantalons pour qu'ils soient exactement comme tu le souhaites. Au cas où tu te poserais la question sur , Theo a 5 options, alors que Charlie en a 31.
 
-That being said, we will keep Theo available. Deprecated merely means that we've added a little warning message saying that we recommend Charlie instead.
+Ceci étant dit, nous garderons Théo à disposition. Déclassé signifie simplement que nous avons ajouté un petit message d'avertissement sur indiquant que nous recommandons plutôt Charlie.
 
-##### Easier to make
+##### Plus facile à faire
 
-Another reason to opt for Charlie rather than Theo: Charlie is easier to make. It has a more straight-forward fly and waistband construction, and the front pockets have been cleverly designed to give you the ease of construction that comes with side-seam pockets, yet the classic look of slanted pockets.
+Une autre raison d'opter pour Charlie plutôt que pour Théo : Charlie est plus facile à fabriquer. La braguette et la ceinture sont plus directes, et les poches avant ont été intelligemment conçues pour te donner la facilité de construction que offre avec les poches à couture latérale, tout en conservant l'aspect classique des poches inclinées.
 
-Theo ranks 4 stars on our difficulty scale, and I've given Charlie 3 stars. If you were afraid of making trousers, this might be the pattern you've been waiting for.
+Théo est classé 4 étoiles sur notre échelle de difficulté, et j'ai attribué 3 étoiles à Charlie. Si tu avais peur de faire des pantalons, c'est peut-être le modèle que tu attendais.
 
-##### Real pockets
+##### De vraies poches
 
-Charlie is a unisex pattern and the pockets are real. You have welt (aka jetted) pockets at the back, and slanted pockets at the front. In both cases, you have control over the size and depth of the pockets.
+Charlie est un modèle unisexe et les poches sont réelles. Tu as des poches passepoilées (alias jetées) à l'arrière, et des poches obliques à l'avant. Dans les deux cas, tu as le contrôle sur la taille et la profondeur des poches.
 
-The front pockets deserve a special mention. They look like traditional slanted pockets, but are set in on the side seam. To make that possible, the back panel of the trousers wraps around the front, following the pocket slant.
+Les poches avant méritent une mention spéciale. Elles ressemblent à des poches inclinées traditionnelles, mais sont placées sur la couture latérale. Pour que cela soit possible, le panneau arrière du pantalon s'enroule autour du devant, en suivant l'inclinaison de la poche.
 
-## Other 2.15 news
+## Autres nouvelles de 2.15
 
-Charlie is the main act, but there's a lot of work that went in this 2.15 release.
+Charlie est l'acteur principal, mais il y a beaucoup de travail dans cette version 2.15.
 
-As always, [the changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md) has all the details, but allow me to highlight some of the more noteworthy changes:
+Comme toujours, [le changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md) a tous les détails, mais permettez-moi de souligner certains des changements les plus remarquables :
 
- - We have [a new bartack plugin](https://freesewing.dev/reference/plugins/bartack/)
- - The [buttons plugin](https://freesewing.dev/reference/plugins/buttons/) provides new [buttonhole-start](https://freesewing.dev/reference/snippets/buttonhole-start) and [buttonhole-end](https://freesewing.dev/reference/snippets/buttonhole-end) snippets
- - The [dimension plugin](https://freesewing.dev/reference/plugins/dimension/) provides a new [rmad macro](https://freesewing.dev/reference/macros/rmad/)
- - The [logo plugin](https://freesewing.dev/reference/plugins/logo/) now supports dark mode
- - Titan and Paco have a new `waistbandHeight` option
- - Core no longer rounds point coordinates to avoid misses when using [path.split](https://freesewing.dev/reference/api/path/split/)
- - [Bella](/designs/bella/) has a fix to the shoulder to better accommodate doll-sized clothing
- - [Charlie](/designs/charlie/) is the first pattern to list some of the absolute dimensions when configuring a pattern, but we plan to extend this to other designs We have documented [the new raise methods](https://freesewing.dev/reference/api/part/raise) for designers who want to utilize this feature.
- - Speaking of documentation, the examples in our [documentation for developers](https://freesewing.dev/) now allows you to toggle a switch to reveal the points and paths in the examples
- - The [part.getId()](https://freesewing.dev/reference/api/part/getid/) method now takes a prefix argument
+ - Nous avons [un nouveau plugin bartack](https://freesewing.dev/reference/plugins/bartack/)
+ - Le plugin [buttons](https://freesewing.dev/reference/plugins/buttons/) fournit new [buttonhole-start](https://freesewing.dev/reference/snippets/buttonhole-start) et [buttonhole-end](https://freesewing.dev/reference/snippets/buttonhole-end) snippets.
+ - Le plugin de dimension [](https://freesewing.dev/reference/plugins/dimension/) fournit à une nouvelle macro [rmad](https://freesewing.dev/reference/macros/rmad/)
+ - Le plugin du logo [](https://freesewing.dev/reference/plugins/logo/) prend maintenant en charge le mode sombre.
+ - Titan et Paco ont une nouvelle option `waistbandHeight`
+ - Le noyau n'arrondit plus les coordonnées des points pour éviter les ratés lors de l'utilisation de [path.split](https://freesewing.dev/reference/api/path/split/)
+ - [Bella](/designs/bella/) a une fixation à l'épaule pour mieux s'adapter aux vêtements de taille poupée.
+ - [Charlie](/designs/charlie/) est le premier modèle à énumérer certaines des dimensions absolues lors de la configuration d'un modèle, mais nous prévoyons de l'étendre à d'autres modèles . Nous avons documenté [les nouvelles méthodes d'élévation](https://freesewing.dev/reference/api/part/raise) pour les concepteurs qui souhaitent utiliser cette fonction.
+ - En parlant de documentation, les exemples de notre documentation [pour les développeurs](https://freesewing.dev/) maintenant te permettent de basculer un interrupteur pour révéler les points et les chemins dans les exemples.
+ - La méthode [part.getId()](https://freesewing.dev/reference/api/part/getid/) prend maintenant un argument de préfixe.
 
 

@@ -1,9 +1,9 @@
 ---
-title: "Walburga Wappenrock: What You Need"
+title: "Walburga Wappenrock: Wat je nodig hebt"
 ---
 
-To make Walburga, you will need the following:
+Om Walburga te maken heb je het volgende nodig:
 
 - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-- About 1 meter (1.1 yards) of a suitable fabric (see [Fabric options](/docs/patterns/walburga/fabric))
-- (optional) about 3 metres (3.3 yards) of bias tape or trimmings to finsh the raw edges
+- Ongeveer 1 meter van een geschikte stof (zie [Stofopties](/docs/patterns/walburga/fabric))
+- (optioneel) ongeveer 3 meter biaisband of afsnijdsels om de knipranden af te werken

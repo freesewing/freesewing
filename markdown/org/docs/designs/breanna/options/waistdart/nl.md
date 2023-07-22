@@ -2,7 +2,7 @@
 title: "Taille neep"
 ---
 
-Whether or not to inlude a back waist dart to round the back.
+Wel of geen tailleboog om de rug af te ronden.
 
 ## Effect van deze optie op het patroon
 

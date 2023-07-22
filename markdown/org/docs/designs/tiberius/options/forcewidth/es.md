@@ -1,8 +1,8 @@
 ---
-title: "Force width"
+title: "Anchura de la fuerza"
 ---
 
-Apply width settings regardless of constraints
+Aplicar ajustes de anchura independientemente de las restricciones
 
 ## Efecto de esta opción en el patrón
 

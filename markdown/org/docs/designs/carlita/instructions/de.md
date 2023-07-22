@@ -1,63 +1,63 @@
 ---
-title: "Carlita coat: Sewing Instructions"
+title: "Carlita Mantel: Anleitung zum Nähen"
 ---
 
-### Step 1: Draft and Cut the missing Lining and Facing Parts
+### Schritt 1: Zeichne und schneide die fehlenden Futter- und Verkleidungsteile zu
 
-Some parts for Carlton require you to draft parts from the existing parts. The following are a list of what parts you need to draft, [see Carlton Cutting](/docs/patterns/carlton/cutting/) for details on how to cut them.
+Bei einigen Teilen für Carlton musst du Teile aus den vorhandenen Teilen entwerfen. Im Folgenden findest du eine Liste der Teile, die du entwerfen musst: [. Wie du sie schneidest, erfährst du unter](/docs/patterns/carlton/cutting/) .
 
-#### Drafting
+#### Entwerfen
 
-##### Front facing and Front lining
+##### Frontverkleidung und Frontfutter
 
-- Trace off of **Front** part.
-- Cut along the green line.
-- Add seam allowance (if including) along green line to both pieces
-- The piece with the lapel is now the **Front facing** part.
-- Trim the hem allowance (if included) of the remaining piece to seam allowance length
-- The remaining piece is now the **Front lining** part.
+- Zeichne das Teil **Front** ab.
+- Schneide entlang der grünen Linie.
+- Füge die Nahtzugabe (falls vorhanden) entlang der grünen Linie zu beiden Teilen hinzu.
+- Der Teil mit dem Revers ist jetzt der **Vorderseite** Teil.
+- Schneide die Saumzugabe (falls vorhanden) des verbleibenden Stücks auf die Länge der Nahtzugabe zu
+- Das verbleibende Stück ist jetzt das **Frontfutter** Teil.
 
 <Note>
 
-The button and pocket markings are not needed for these parts so feel free not to trace them.
+Die Knopf- und Taschenmarkierungen werden für diese Teile nicht benötigt.
 
 </Note>
 
 <Warning>
 
-Don't forget the seam allowance for these pieces when cutting if you are making these parts nett!
+Vergiss beim Zuschneiden nicht die Nahtzugabe für diese Teile, wenn du diese Teile netto machst!
 
 </Warning>
 
-##### Front and Side Shoulder
+##### Front- und Seitenschulter
 
-- Trace off of **Front and Side** parts.
-- Tape together so the notches match and armhole is complete. Do not worry about connecting everything else, you just need the armhole.
-- Draw a curve from shoulder to bottom of armhole.
-- Cut along this curve and discard the lower parts.
-- Separate out the pieces back into their front and side pieces.
-- These are now you \*_Front and Side shoulder_ parts.
+- Zeichne die Teile von **Front und Side** ab.
+- Klebe sie zusammen, damit die Einschnitte übereinstimmen und das Armloch fertig ist. Kümmere dich nicht darum, alles andere zu verbinden, du brauchst nur das Armloch.
+- Ziehe eine Kurve von der Schulter bis zum unteren Ende des Armlochs.
+- Schneide entlang dieser Kurve und entsorge die unteren Teile.
+- Trenne die Teile wieder in ihre Vorder- und Seitenteile auf.
+- Das sind jetzt die_Front- und Seitenschulter_ Teile.
 
-##### Back shoulder
+##### Rücken Schulter
 
-- Trace off of **Back** part.
-- Cut along the orange line.
-- Discard lower piece.
-- Remove the seam allowamces (if included) of the upper piece.
-- The upper piece is now the **Back shoulder** part.
+- Verfolge die Spur von **Zurück** Teil.
+- Schneide entlang der orangefarbenen Linie.
+- Wirf das untere Stück weg.
+- Entferne die Nahtzugaben (falls vorhanden) des oberen Teils.
+- Das obere Teil ist jetzt der **Rückenschulter** Teil.
 
 #### Zuschnitt
 
-- Cut all the parts above from their respective fabrics/facings. ([see Carlita Cutting](/docs/patterns/carlita/cutting/))
+- Schneide alle oben genannten Teile aus den jeweiligen Stoffen/Bezügen aus. ([siehe Carlita Cutting](/docs/patterns/carlita/cutting/))
 
-### Step 2 : Preliminary Instructions
+### Schritt 2: Vorläufige Anweisungen
 
 #### Notizen des Herstellers
 
 <Warning>
 
 Wir haben die Anweisungen für Carlita noch nicht vollständig ausgearbeitet.
-Below are some notes from [@AnnekeCaramin](/users/AnnekeCaramin) who
+Hier sind einige Notizen von [@AnnekeCaramin](/users/AnnekeCaramin), die
 [made Carlita](http://www.annekecaramin.com/2018/02/this-is-one-of-those-origin-superhero.html).
 
 </Warning>
@@ -95,6 +95,6 @@ Below are some notes from [@AnnekeCaramin](/users/AnnekeCaramin) who
 - Entfernen Sie alle noch vorhandenen, legen Sie Ihren Mantel, geben Sie sich ein Pat auf der Rückseite und schlafen Sie dann für drei Wochen.
 
 
-#### Other notes
+#### Andere Notizen
 
-- Sew an arrowhead tack in the triangular area above the back pleat. This area is marked on the pattern by dashed lines and a bnotch at the triangle top. The arrowhead tack reinforces the pleat seam.
+- Näht eine Pfeilspitze in den dreieckigen Bereich oberhalb der Rückenfalte. Dieser Bereich ist auf dem Muster durch gestrichelte Linien und einen B-Knoten an der Spitze des Dreiecks markiert. Der Pfeilnagel verstärkt die Falznaht.

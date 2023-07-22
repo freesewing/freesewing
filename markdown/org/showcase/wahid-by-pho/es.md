@@ -1,24 +1,24 @@
 ---
-maker: "unknown"
-caption: "Wahid waistcoat by Pho"
+maker: "desconocido"
+caption: "Chaleco Wahid de Pho"
 date: "2021-05-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e172985d483a277509c6cbaf64fcd58ded7a95ea-521x800.jpg"
-intro: "Pho made this stellar Wahid! They shared:"
-title: "Wahid by Pho"
+intro: "¡Pho hizo este Wahid estelar! Compartieron:"
+title: "Wahid por Pho"
 designs:
   - "wahid"
 ---
 
-Pho made this stellar Wahid! They shared:
+¡Pho hizo este Wahid estelar! Compartieron:
 
-> Wahid to my measurements. I opted out of buttons since I sit a lot at work and a completely fitted garment for me wouldn't be able to stay buttoned. I also did the pocket bags as one long piece of fabric which was easiest for me to understand under guidance of a sewing teacher.  I might opt for snaps or just leave it open. My size stomach wise is bigger than my chest. Amazing how a garment my size makes me look great! Thanks for the pattern!
+> Wahid a mis medidas. Opté por no poner botones, ya que en el trabajo me siento mucho y una prenda completamente entallada para mí no podría permanecer abotonada. También hice las bolsas de bolsillo como una sola pieza larga de tela, lo que me resultó más fácil de entender bajo la guía de una profesora de costura.  Puede que opte por broches o simplemente dejarlo abierto. Mi talla estomacal es mayor que mi pecho. ¡Es increíble cómo una prenda de mi talla me sienta genial! ¡Gracias por el patrón!
 
-One more picture of their fantastic work:
+Una foto más de su fantástico trabajo:
 
-![Side view](https://posts.freesewing.org/uploads/wahid_by_pho_wahidbypho2_ba0be6a31c.jpg "Side view")
+![Vista lateral](https://posts.freesewing.org/uploads/wahid_by_pho_wahidbypho2_ba0be6a31c.jpg "Vista lateral")
 
 <Note>
 
-This picture is from Pho on Discord. It is reposted here with permission.
+Esta foto es de Pho en Discord. Se publica aquí con permiso.
 
 </Note>

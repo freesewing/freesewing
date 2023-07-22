@@ -1,8 +1,8 @@
 ---
-title: "Clavus width"
+title: "Anchura Clavus"
 ---
 
-Controls the width of the clavi
+Controla la anchura del clavi
 
 ## Efecto de esta opción en el patrón
 

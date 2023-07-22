@@ -1,0 +1,174 @@
+account: Account
+yourAccount: Dein Konto
+newPattern: Neues Muster
+newSet: Eine neue Messreihe erstellen
+links: Links
+info: Info
+settings: Einstellungen
+data: Daten
+sets: Maßnahmesets
+patterns: Schnittmuster
+actions: Aktionen
+created: Erstellt
+updated: Aktualisiert
+expires: Läuft ab
+yourProfile: Dein Profil
+yourPatterns: Deine Muster
+yourSets: Deine Maßeinheiten
+signOut: Abmelden
+politeOhCrap: Oh Purzelbäume
+bio: Über mich
+email: E-Mail Adresse
+github: Github-Benutzername
+img: Profilbild
+username: Benutzername
+compare: Metrikenvergleich
+consent: Zustimmung & Datenschutz
+control: Benutzererfahrung
+imperial: Einheiten
+units: Maßeinheiten
+apikeys: API-Schlüssel
+newsletter: Newsletter-Abonnement
+password: Passwort
+newPasswordPlaceholder: Gib dein neues Passwort hier ein
+passwordPlaceholder: Gib dein Passwort hier ein
+mfa: Zwei-Faktoren-Authentifizierung
+mfaTipTitle: Bitte erwäge die Aktivierung der Zwei-Faktor-Authentifizierung
+mfaTipMsg: Wir erzwingen keine Passwortrichtlinien, aber wir empfehlen dir, die Zwei-Faktor-Authentifizierung zu aktivieren, um dein FreeSewing-Konto sicher zu halten.
+mfaEnabled: Zwei-Faktoren-Authentifizierung ist aktiviert
+mfaDisabled: Die Zwei-Faktoren-Authentifizierung ist deaktiviert
+mfaSetup: Zwei-Faktoren-Authentifizierung einrichten
+mfaAdd: Füge FreeSewing zu deiner Authenticator App hinzu, indem du den QR-Code oben scannst.
+confirmWithPassword: Bitte gib dein Passwort ein, um diese Aktion zu bestätigen
+confirmWithMfa: Bitte gib einen Code aus deiner Authenticator App ein, um diese Aktion zu bestätigen
+enableMfa: Aktiviere die Zwei-Faktor-Authentifizierung
+disableMfa: Zwei-Faktoren-Authentifizierung deaktivieren
+language: Sprache
+developer: Entwickler
+reload: Account neu laden
+export: Exportiere deine Daten
+review: Überprüfe deine Einwilligungen
+restrict: Verarbeitung deiner Daten einschränken
+disable: Deaktiviere dein Konto
+remove: Entferne deinen Account
+mdSupport: Hier kannst du Markdown verwenden
+or: oder
+continue: Fortsetzen
+save: Speichern
+noThanks: Nein danke
+areYouCertain: Bist du sicher?
+delete: löschen
+#reload
+nailedIt: Geschafft
+gone: Puff. Verschwunden.
+reloadMsg1: Die in deinem Browser gespeicherten Daten können manchmal nicht mit den in unserem Backend gespeicherten Daten synchronisiert werden.
+reloadMsg2: Damit kannst du deine Kontodaten aus dem Backend neu laden. Es hat denselben Effekt wie das Abmelden und erneute Anmelden
+#bio
+bioTitle: Erzähl den Leuten ein bisschen was über dich
+bioPreview: Bio Vorschau
+bioPlaceholder: Ich mache Kleidung und Schuhe. Ich entwerfe Nähmuster. Ich schreibe Code. Ich betreibe [FreeSewing](http://freesewing.org)
+#compare
+compareTitle: Fühlst du dich wohl, wenn Messreihen verglichen werden?
+compareYes: Ja, falls es mir helfen kann
+compareYesd: |
+  Gelegentlich zeigen wir, wie deine Messungen im Vergleich zu anderen Messungen abschneiden.
+  So können wir mögliche Probleme in deinen Messungen oder Mustern erkennen.
+compareNo: Nein, niemals vergleichen
+compareNod: |
+  Wir werden deine Maßangaben niemals mit anderen Maßangaben vergleichen.
+  Das schränkt unsere Möglichkeiten ein, dich vor potenziellen Problemen in deinen Messsätzen oder Mustern zu warnen.
+#control
+showMore: Mehr zeigen
+control1.t: Halte es so einfach wie möglich
+control1.d: Blendet alle Funktionen außer den wichtigsten aus.
+control2.t: Halte es einfach, aber nicht zu einfach
+control2.d: Blendet die meisten Funktionen aus.
+control3.t: Balance zwischen Einfachheit und Leistung
+control3.d: Zeigt die meisten Funktionen an, aber nicht alle.
+control4.t: Gib mir alle Macht, aber beschütze mich
+control4.d: Zeigt alle Funktionen, hält Handläufe und Sicherheitschecks ein.
+control5.t: Geh mir aus dem Weg
+control5.d: Legt alle Funktionen frei, entfernt alle Handläufe und überprüft die Sicherheit.
+controlShowMore: Mehr Optionen anzeigen
+controlTitle: Welches Nutzererlebnis bevorzugst du?
+#img
+imgTitle: Wie wäre es mit einem Bild?
+imgDragAndDropImageHere: Ziehe ein Bild hierher und lege es ab
+imgSelectImage: Ein Bild auswählen
+#newsletter
+newsletterTitle: Möchtest du den FreeSewing-Newsletter abonnieren?
+newsletterYes: Ja, ich möchte den Newsletter erhalten
+newsletterYesd: Alle 3 Monate erhältst du von uns eine E-Mail mit ehrlichen, gesunden Inhalten. Kein Tracking, keine Werbung, kein Blödsinn.
+newsletterNod: Du kannst deine Meinung später immer noch ändern. Aber bis du das tust, werden wir dir keine Newsletter schicken.
+#imperial
+metricUnits: Metrische Einheiten (cm)
+metricUnitsd: Wähle dies, wenn du Zentimeter gegenüber Zoll bevorzugst.
+imperialUnits: Imperiale Einheiten (inch)
+imperialUnitsd: Wähle diese Option, wenn du Zoll statt Zentimeter bevorzugst.
+unitsTitle: Welche Einheiten bevorzugst du?
+#username
+usernameTitle: Welchen Benutzernamen hättest du gerne?
+usernameNotAvailable: Benutzername ist nicht verfügbar
+#email
+emailTitle: Wo können wir dich erreichen, falls wir einen guten Grund dafür haben (z.B. wenn du dein Passwort vergessen hast)?
+oneMoreThing: Und zum Schluss
+oneMomentPlease: Einen Moment bitte
+emailChangeConfirmation: Wir haben eine E-Mail an deine neue Adresse geschickt, um diese Änderung zu bestätigen.
+vagueError: Etwas ist schief gelaufen und wir sind uns nicht sicher, wie wir damit umgehen sollen. Bitte versuche es noch einmal oder wende dich an einen Menschen, der dir hilft.
+#github
+githubTitle: Gib hier deinen Github-Benutzernamen ein, um Updates zu erhalten, wenn du ein Problem über diese Website meldest.
+#languge
+languageTitle: Welche Sprache bevorzugst du?
+#password
+passwordTitle: Etwas, das nur du weißt
+#api key
+newApikey: Erstelle einen neuen API-Schlüssel
+keyNewInfo: Erstelle einen neuen API-Schlüssel, um dich automatisch mit dem FreeSewing-Backend zu verbinden.
+keyName: Name des Schlüssels
+keyNameDesc: Ein eindeutiger Name für diesen API-Schlüssel. Nur für dich sichtbar.
+keyExpires: Schlüsselverfall
+keyExpiresDesc: "Der Schlüssel läuft am ab:"
+keyLevel: Schlüsselberechtigungsstufe
+keyLevel0: Nur authentifizieren
+keyLevel1: Lese den Zugang zu deinen eigenen Mustern und Messsätzen
+keyLevel2: Lesezugriff auf alle deine Kontodaten
+keyLevel3: Schreibzugang zu deinen eigenen Mustern und Messsätzen
+keyLevel4: Schreibzugriff auf alle deine Kontodaten
+keyLevel5: Lesezugriff auf Muster und Messreihen anderer Nutzer
+keyLevel6: Schreibzugriff auf Muster und Messreihen anderer Nutzer
+keyLevel7: Schreibzugriff auf alle Kontodaten von anderen Nutzern
+keyLevel8: Sich als anderer Benutzer ausgeben, voller Schreibzugriff auf alle Daten
+cancel: Abbrechen
+keySecretWarning: Das ist das einzige Mal, dass du das Schlüsselgeheimnis sehen kannst, also achte darauf, es zu kopieren.
+keyExpired: Dieser API-Schlüssel ist abgelaufen
+deleteKeyWarning: Das Entfernen eines API-Schlüssels kann nicht rückgängig gemacht werden.
+new: Neu
+#sets
+name: Name
+setNameDesc: Ein Name zur Identifizierung dieser Messreihe
+setNewInfo: Erstelle einen neuen Satz von Messungen, für die du dann Muster erstellen kannst.
+notes: Notizen
+setNotesDesc: Alle Notizen, die du zu dieser Messreihe aufbewahren möchtest
+description: Beschreibung
+deleteSetWarning: Das Entfernen einer Messreihe kann nicht rückgängig gemacht werden.
+image: Bild
+measies: Maße
+setUnitsMsgTitle: Diese Einstellung gilt nur für diesen Messsatz
+setUnitsMsgDesc: |
+  Dies sind die Einheiten, die wir verwenden, wenn wir die Maße in diesem Set aktualisieren oder anzeigen.
+  Überall sonst auf dieser Website verwenden wir die in deinem Konto eingestellten Einheiten.
+public: Öffentlich
+publicSet: Öffentliche Messungen eingestellt
+privateSet: Private Messungen eingestellt
+publicSetDesc: Andere dürfen diese Messungen nutzen, um Muster zu erstellen oder zu testen
+privateSetDesc: Diese Messungen können nicht von anderen Nutzern oder Besuchern verwendet werden
+permalink: Permalink
+patternNew: Ein neues Muster generieren
+patternNewInfo: Wähle ein Design aus, füge deine Maße hinzu und wir erstellen ein maßgeschneidertes Nähmuster für dich.
+designNew: Ein neues Design erstellen
+designNewInfo: FreeSewing-Designs sind kleine Bündel von JavaScript-Code, die Muster erzeugen. Es ist nicht schwer, eigene Designs zu erstellen, und wir haben eine ausführliche Anleitung für dich, damit du loslegen kannst.
+pluginNew: Ein neues Plugin erstellen
+pluginNewInfo: Die Funktionen von FreeSewing können mit Plugins erweitert werden. Es ist ganz einfach, ein Plugin zu erstellen, und wir haben eine Anleitung, die dich von Anfang bis Ende begleitet.
+newBasic: Die Grundlagen
+newAdvanced: Weiter gehen
+generateANewThing: "Erstelle eine neue { thing }"

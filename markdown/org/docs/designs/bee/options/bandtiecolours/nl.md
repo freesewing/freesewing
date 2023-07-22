@@ -1,10 +1,10 @@
 ---
-title: "Band (chest) tie length colours"
+title: "Band (borst) das lengte kleuren"
 ---
 
 ***
 
-Whether you want single color tie around your chest, or dual-coloured ones
+Of je nu één kleur stropdas om je borst wilt, of tweekleurige
 
 ## Effect van deze optie op het patroon
 

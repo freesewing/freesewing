@@ -1,10 +1,10 @@
 ---
-title: "Shoulder Dart Position"
+title: "Schouderpijl Positie"
 ---
 
 ***
 
-The **Shoulder Dart Position** option allows you to move the position of the dart/princess seam.
+Met de optie **Shoulder Dart Position** kun je de positie van de figuurnaad verplaatsen.
 
 ## Effect van deze optie op het patroon
 

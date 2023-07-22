@@ -1,5 +1,5 @@
 ---
-title: "Carlita coat: Fabric Options"
+title: "Manteau Carlita : Options de tissu"
 ---
 
 ### Tissu principal
@@ -14,7 +14,7 @@ N'oubliez pas que ce modèle est destiné à être un manteau d'hiver et que vou
 
 ### Doublures et sacs de poche
 
-Lightweight **Cottons** such as **Cotton Silesia**, **Cotton Lawn** or **Glazed Cottons** should do for the body lining but you may find that you require **Silks** or similar for the sleeve linings to reduce friction and make it easier to take on and off over the arms. Les **Soies** peuvent également être utilisés pour le corps, mais le **Coton** sera plus durable à long terme. Les sacs de poche doivent être fabriqués en **Coton** ou dans un matériau suffisamment résistant pour supporter le poids des objets que vous souhaitez transporter. **Les cotons imprimés** sont amusants à essayer, mais si votre tissu principal est assez volumineux, vous trouverez peut-être qu'ils ajoutent trop de poids.
+Les cotons légers **** tels que **Cotton Silesia**, **Cotton Lawn** ou **Glazed Cottons** devraient suffire pour la doublure du corps, mais tu auras peut-être besoin de **Silks** ou d'un tissu similaire pour la doublure des manches afin de réduire les frottements et de faciliter l'habillage et le déshabillage au niveau des bras. Les **Soies** peuvent également être utilisés pour le corps, mais le **Coton** sera plus durable à long terme. Les sacs de poche doivent être fabriqués en **Coton** ou dans un matériau suffisamment résistant pour supporter le poids des objets que vous souhaitez transporter. **Les cotons imprimés** sont amusants à essayer, mais si votre tissu principal est assez volumineux, vous trouverez peut-être qu'ils ajoutent trop de poids.
 
 <Tip>
 
@@ -28,12 +28,12 @@ Nous recommandons les **Toiles à cheveux**. Vous pourriez être tenté d'utilis
 
 <Tip>
 
-You can use fusible or non-fusible facings but you may find that you still need to flatline the facing and fabric pieces together with basting stitches, even after fusing for the best results.
+Vous pouvez utiliser des parements thermocollants ou non thermocollants, mais il se peut que vous ayez besoin d'aplanir le parement et les pièces de tissu à l'aide de points de bâti, même après le thermocollage, pour obtenir les meilleurs résultats.
 
 </Tip>
 
 <Note>
 
-Certain hair canvases, such as **Horsehair canvas** can have stiff hairs that can poke out of the fabric so will require tape like tailors tape to prevent this from happening.
+Certaines toiles à poils, telles que **La toile en Poils de cheval**, peuvent avoir des poils raides qui peuvent sortir du tissu et nécessitent donc du ruban adhésif comme du ruban de tailleur pour éviter cela.
 
 </Note>

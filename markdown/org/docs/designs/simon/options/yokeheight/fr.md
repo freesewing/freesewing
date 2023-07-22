@@ -2,10 +2,10 @@
 title: "Hauteur du yoke"
 ---
 
-Controls the height of the yoke seam.
+Contrôle la hauteur de la couture de l'empiècement.
 
-- Increase this option to lower the height and lengthen the yoke
-- Decrease this option to raise the height and shorten the yoke
+- Augmente cette option pour abaisser la hauteur et allonger l'empiècement.
+- Diminue cette option pour augmenter la hauteur et raccourcir l'empiècement.
 
 ## Effet de cette option sur le motif
 

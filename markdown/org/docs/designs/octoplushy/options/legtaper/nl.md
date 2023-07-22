@@ -1,8 +1,8 @@
 ---
-title: "Leg Taper"
+title: "Been taps toelopend"
 ---
 
-This setting changes how much the legs taper from the body down to the end.
+Deze instelling verandert de mate waarin de benen taps toelopen van het lichaam naar het uiteinde.
 
 ## Effect van deze optie op het patroon
 

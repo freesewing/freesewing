@@ -4,8 +4,8 @@ title: Breitenverhältnis
 
 Steuert die Breite des Latzes.
 
-- Increase the percentage to widen the width of the bib.
-- Decrease the precentage to constrict the width of the bib.
+- Erhöhe den Prozentsatz, um die Breite des Lätzchens zu vergrößern.
+- Verringere den Prozentsatz, um die Breite des Lätzchens einzuschränken.
 
 ## Effekt dieser Option auf das Schnittmuster
 

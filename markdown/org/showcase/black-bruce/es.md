@@ -1,23 +1,23 @@
 ---
-maker: "unknown"
-caption: "Seems the husband was not willing to model these"
+maker: "desconocido"
+caption: "Parece que el marido no estaba dispuesto a modelar estos"
 date: "2017-09-13"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/cc7d2096649640ce7638cb6ba4c81815bd8fef29-720x890.jpg"
-intro: "Judy wrote:"
-title: "Black boxers by Judy"
+intro: "Judy escribió:"
+title: "Boxers negros de Judy"
 designs:
   - "bruce"
 ---
 
-Judy wrote:
+Judy escribió:
 
-> Since my husband is inexplicably reluctant to let me photograph him in his undies for the internet I took them to work and asked one of the very obliging blokes we keep hanging around to model for me! 
+> Como mi marido es inexplicablemente reacio a que le fotografíe en ropa interior para Internet, me las llevé al trabajo y le pedí a , uno de los tipos tan serviciales que tenemos por aquí, que hiciera de modelo para mí. 
 > 
-> These are the [#bruceboxers](https://www.instagram.com/explore/tags/bruceboxers/) from [@freesewing_org](https://www.instagram.com/freesewing_org/) made from a merino/nylon/lycra from [@wearethefabricstore](https://www.instagram.com/wearethefabricstore/) in Dunedin. 
+> Estos son los [#bruceboxers](https://www.instagram.com/explore/tags/bruceboxers/) de [@freesewing_org](https://www.instagram.com/freesewing_org/) hechos con un merino/nylon/lycra de [@wearethefabricstore](https://www.instagram.com/wearethefabricstore/) en Dunedin. 
 > 
-> David loves them - reckons these are the best undies he's ever had, so major awesome-wife points for me! (They fit him much better than the dummy)
+> A David le encantan, cree que son los mejores calzoncillos que ha tenido nunca , así que ¡muchos puntos de esposa increíble para mí! (Le quedan mucho mejor que al muñeco)
 
-> ##### Check the original in judywillimentross's Instagram feed
+> ##### Mira el original en el feed de Instagram de judywillimentross
 > 
-> This picture is from [the Instagram feed](https://www.instagram.com/p/BZAT_btB_dq/) of [judywillimentross](https://www.instagram.com/judywillimentross/), aka [Judy336](/users/qdzpx).
+> Esta foto es de [el feed de Instagram](https://www.instagram.com/p/BZAT_btB_dq/) de [judywillimentross](https://www.instagram.com/judywillimentross/), alias [Judy336](/users/qdzpx).
 

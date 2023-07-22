@@ -1,32 +1,32 @@
 ---
 author: "joostdecock"
-caption: "Paco on yours truly"
+caption: "Paco über meine Wenigkeit"
 date: "10.08.2020"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1bc82d4abb50ea1b7bda32dd64521e9ecfdd8467-2048x1536.jpg"
-intro: "Meet Paco: Our new unisex pattern for stylish summer pants"
-title: "Meet Paco: Our new unisex pattern for stylish summer pants"
+intro: "Darf ich vorstellen: Paco: Unser neues Unisex-Muster für stylische Sommerhosen"
+title: "Darf ich vorstellen: Paco: Unser neues Unisex-Muster für stylische Sommerhosen"
 ---
 
-If you pay attention to our releases, you know that 4 weeks ago we put out our new [Titan trouser block](/designs/titan/). Today, I'm happy to announce our first *real* pattern based on it: The [Paco summer pants](/designs/paco).
+Wenn du unsere Veröffentlichungen aufmerksam verfolgst, weißt du, dass wir vor 4 Wochen unseren neuen [Titan-Hosenblock](/designs/titan/)herausgebracht haben. Heute freue ich mich, unser erstes *echtes* Schnittmuster ankündigen zu können, das darauf basiert: Die [Paco Sommerhose](/designs/paco).
 
-These are decidedly unisex — in a good way — and they're also quick to make, certainly in comparison to a pair of full-blown trousers like [Theo](/designs/theo/).
+Diese Hose ist eindeutig unisex - auf eine gute Art und Weise - und sie ist auch schnell gemacht, zumindest im Vergleich zu einer vollwertigen Hose wie [Theo](/designs/theo/).
 
-Paco comes with an elasticated waist and cuffs, at least by default, for you can also choose to draft these with regular hemmed legs.
+Paco kommt mit einem Gummizug in der Taille und an den Ärmelbündchen, zumindest standardmäßig, denn du kannst sie auch mit normal gesäumten Beinen entwerfen.
 
-The default options also include front pockets on the side seams. If you want welt pockets in the back, you can chose that as an option. You can also remove the side seam pockets of you'd like that.
+Zu den Standardoptionen gehören auch Fronttaschen an den Seitennähten. Wenn du Paspeltaschen auf der Rückseite möchtest, kannst du das als Option wählen. Du kannst auch die Seitennahttaschen entfernen, wenn du das möchtest.
 
 
-## Are these just sweat pants?
+## Ist das nur eine Jogginghose?
 
-They could be. If you make these in a knit, than your could certainly use them as such. But no, they are not designed to be.
+Das könnten sie sein. Wenn du sie im Strickverfahren herstellst, kannst du sie sicherlich auch als solche verwenden. Aber nein, dafür sind sie nicht gedacht.
 
-The ones you see in the picture above (full disclosure: I have not taken these off since I've made them) aren't knit either. Here's a close-up of the woven fabric:
+Die, die du auf dem Bild oben siehst (ich verrate es dir ganz offen: Ich habe sie nicht mehr ausgezogen, seit ich sie gemacht habe), sind auch nicht gestrickt. Hier ist eine Nahaufnahme des gewebten Stoffes:
 
-![Close-up of a woven fabric](https://posts.freesewing.org/uploads/fabric_46633a6dd2.jpg)
+![Nahaufnahme eines gewebten Stoffes](https://posts.freesewing.org/uploads/fabric_46633a6dd2.jpg)
 
-The difference is in the cut — which is a lot more flattering and stylish that your typical sweat pants — and the pockets. Yes, the pockets. Because pockets are important.
+Der Unterschied liegt im Schnitt - der viel schmeichelhafter und stilvoller ist als deine typische Jogginghose - und in den Taschen. Ja, die Taschen. Weil Taschen wichtig sind.
 
-Both front pockets and (optional) back pockets are anchored at the waist. Which means that you can put things in your pockets without them becoming unsightly bump that's just dangling around in your trouser leg.
+Sowohl die Vordertaschen als auch die (optionalen) Gesäßtaschen sind in der Taille verankert. Das bedeutet, dass du Dinge in deine Taschen stecken kannst, ohne dass sie zu einer unansehnlichen Beule werden, die in deinem Hosenbein herumhängt.
 
-Convinced yet? Then go make some, and make sure to share your pictures :)
+Schon überzeugt? Dann geh und mach welche und teile deine Fotos mit uns :)
 

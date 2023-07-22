@@ -13,11 +13,11 @@ designs:
 
 <Note>
 
-###### See the originals on the Instragram feed of funloveadventure
+###### Bekijk de originelen op de Instragram feed van funloveadventure
 
-These images are from 
-[the Instagram feed](https://www.instagram.com/myxterhyde/)
-of [@MyxterHyde](/users/MyxterHyde).
+Deze afbeeldingen komen van 
+[de Instagram feed](https://www.instagram.com/myxterhyde/)
+van [@MyxterHyde](/users/MyxterHyde).
 Ze zijn hier gepubliceerd met toestemming.
 
 </Note>

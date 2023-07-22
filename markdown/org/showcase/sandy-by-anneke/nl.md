@@ -1,20 +1,20 @@
 ---
 maker: "Anneke Caramin"
-caption: "back view of Anneke's shiny black Sandy skirt"
+caption: "achteraanzicht van Anneke's glanzende zwarte Sandy rok"
 date: "2020-10-20"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f17b554dceedcfa01572346e5032e4836deb6f52-1080x1080.jpg"
-intro: "Read Anneke's extensive 2018 blogpost about her new Sandy skirt , including how she added pockets and a curved waistband."
-title: "Anneke's shiny black Sandy circle skirt"
+intro: "Lees Anneke's uitgebreide 2018 blogpost over haar nieuwe Sandy rok , inclusief hoe ze zakken en een gebogen tailleband heeft toegevoegd."
+title: "Anneke's glanzende zwarte Sandy cirkelrok"
 designs:
   - "sandy"
 ---
 
-Read Anneke's extensive 2018 [blogpost about her new Sandy skirt](http://www.annekecaramin.com/2018/08/garbage-dragon.html), including how she added pockets and a curved waistband.
+Lees Anneke's uitgebreide 2018 [blogpost over haar nieuwe Sandy rok](http://www.annekecaramin.com/2018/08/garbage-dragon.html), inclusief hoe ze zakken en een gebogen tailleband heeft toegevoegd.
 
 Andere weergaven:
 
-![full length of the outfit](https://posts.freesewing.org/uploads/sandy_by_anneke_front_fulllength_76df5afe47.jpg "full length of the outfit")
+![volledige lengte van de outfit](https://posts.freesewing.org/uploads/sandy_by_anneke_front_fulllength_76df5afe47.jpg "volledige lengte van de outfit")
 
-![dramatic side view](https://posts.freesewing.org/uploads/sandy_by_anneke_sideview_7cde00b133.jpg "dramatic side view")
+![dramatisch zijaanzicht](https://posts.freesewing.org/uploads/sandy_by_anneke_sideview_7cde00b133.jpg "dramatisch zijaanzicht")
 
-![close up of the exposed back zipper](https://posts.freesewing.org/uploads/sandy_by_anneke_zipper_e2f30b94dd.jpg "close up of the exposed back zipper")
+![close-up van de zichtbare rits aan de achterkant](https://posts.freesewing.org/uploads/sandy_by_anneke_zipper_e2f30b94dd.jpg "close-up van de zichtbare rits aan de achterkant")

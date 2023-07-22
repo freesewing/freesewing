@@ -1,5 +1,5 @@
 ---
-title: "Carlton coat: Fabric Options"
+title: "Пальто Карлтон: Варіанти тканин"
 ---
 
 ### Основна тканина

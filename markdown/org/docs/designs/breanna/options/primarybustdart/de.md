@@ -2,7 +2,7 @@
 title: "Brustabnäher"
 ---
 
-Where to place the primary bust dart to shape the chest.
+Wo wird der primäre Brustabnäher platziert, um die Brust zu formen?
 
 ## Effekt dieser Option auf das Schnittmuster
 

@@ -2,7 +2,7 @@
 title: "Bonus lengte"
 ---
 
-The amount to lengthen the garment by. A negative value will shorten it.
+De hoeveelheid waarmee je het kledingstuk moet verlengen. Een negatieve waarde maakt hem korter.
 
 ## Effect van deze optie op het patroon
 

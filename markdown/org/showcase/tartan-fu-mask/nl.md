@@ -9,7 +9,7 @@ designs:
   - "florence"
 ---
 
-Sorcha is a healthcare provider working in the [Antwerp University Hospital](https://www.uza.be/), one of Belgium's two centres of reference for coronavirus.
+Sorcha is een zorgverlener die werkt in het [Universitair Ziekenhuis Antwerpen](https://www.uza.be/), een van de twee referentiecentra voor coronavirus in België.
 
 Op haar werk draagt ze een medisch mondmasker. Dit [Florence mondmasker](/designs/florence/) is voor haar woon-werkverplaatsing met het openbaar vervoer.
 

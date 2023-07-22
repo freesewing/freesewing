@@ -1,10 +1,10 @@
 ---
-title: "Neck tie width"
+title: "Ancho de la cinta del cuello"
 ---
 
 ***
 
-Controls the width of the ties around your neck
+Controla el ancho de las cintas alrededor del cuello
 
 ## Efecto de esta opción en el patrón
 

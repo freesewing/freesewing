@@ -1,19 +1,19 @@
 ---
 author: "joostdecock"
-caption: "A Sven made for the office. As in, kinda boring"
+caption: "Un Sven se dirige vers le bureau. Comme dans, un peu ennuyeux"
 date: "2017-07-09"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b0c9b0cb38bce095739109946a99b6cda63e7cd9-1000x667.jpg"
-intro: "Winter caused me to design this pattern. I was cold, and needed some sweaters, so what does one do?"
-title: "Announcing the Sven Sweater; A basic sweater based on the Brian body block"
+intro: "C'est l'hiver qui m'a poussé à concevoir ce modèle. J'avais froid et j'avais besoin de quelques pulls, alors que faire ?"
+title: "Annonce le pull Sven ; un pull basique basé sur le bloc de corps Brian."
 ---
 
-Winter caused me to design this pattern. I was cold, and needed some sweaters, so what does one do?
+C'est l'hiver qui m'a poussé à concevoir ce modèle. J'avais froid et j'avais besoin de quelques pulls, alors que faire ?
 
-Sven stayed under the radar until now because I designed it on the (then unreleased) freesewing platform, and until now I didn't have a place to show it to people.
+Sven est resté sous le radar jusqu'à présent parce que je l'ai conçu sur la plateforme freesewing (qui n'était pas encore disponible à l'époque), et jusqu'à présent, je n'avais pas d'endroit où le montrer aux gens.
 
-That's how we got here. Now about that sweater: It's a simple design based on the Brian body block. I've made three different version myself, changing the neckline and fabrics, and it really does what it needs to do very well (as in, keep me warm).
+C'est ainsi que nous en sommes arrivés là. Parlons maintenant de ce pull : C'est un modèle simple basé sur le bloc du corps de Brian. J'en ai fait trois versions différentes, en changeant l'encolure et les tissus, et il fait vraiment très bien ce qu'il doit faire (c'est-à-dire me tenir chaud).
 
-## Pictures or it didn't happen
+## Photos ou ce n'est pas arrivé
 
-Check out the [Sven showcases](/showcase/pattern/sven) for some samples.
+Consulte le site [Sven showcases](/showcase/pattern/sven) pour avoir quelques exemples.
 

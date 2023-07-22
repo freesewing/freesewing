@@ -1,5 +1,5 @@
 ---
-title: "Diana draped top: Cutting Instructions"
+title: "Diana drapiertes Oberteil: Schnittanleitung"
 ---
 
 - Schneide **1 Rückenteil** im Stoffbruch

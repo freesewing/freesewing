@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/6aa91015d49712d1b56cd
 intro: "Сорча позує в парі чінос Чарлі."
 title: "Чарлі на Сорчі"
 designs:
-  - "charlie"
+  - "Чарлі."
 ---
 
 Сорча позує в парі чіносів [Charlie](/designs/charlie/).

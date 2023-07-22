@@ -2,7 +2,7 @@
 title: "Hungrig"
 ---
 
-This setting determins how long it has been since your Hi has had something to eat. More hungry results in a leaner shark.
+Diese Einstellung legt fest, wie lange es her ist, dass dein Hi etwas zu essen bekommen hat. Mehr Hunger führt zu einem schlankeren Hai.
 
 ## Effekt dieser Option auf das Schnittmuster
 

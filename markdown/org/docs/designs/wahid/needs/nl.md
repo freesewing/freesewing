@@ -1,11 +1,11 @@
 ---
-title: "Wahid waistcoat: What You Need"
+title: "Wahid vest: Wat je nodig hebt"
 ---
 
 Om Wahid te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- About 1 meter (1.1 yards) of a suitable fabric ([see Fabric options](/docs/patterns/wahid/fabric))
-- About 1 meter (1.1 yards) of lining fabric
+- Ongeveer 1 meter van een geschikte stof ([zie Stofopties](/docs/patterns/wahid/fabric))
+- Ongeveer 1 meter voeringstof
 - Kleefbare tussenvoering
 - Knopen

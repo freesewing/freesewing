@@ -6,7 +6,7 @@ Wenn Sie ein _-papierloses_ Muster wählen, wird Ihr Muster mit Dimensionen geli
 
 <Legend part="dimension">
 
-An example of a dimension on a pattern
+Ein Beispiel für eine Dimension auf einem Muster
 
 </Legend>
 

@@ -11,8 +11,8 @@ Die Rückseite der Hosenbeine ist immer breiter als die Vorderseite. Das kontrol
 Dies zu erhöhen wird die Vorderbeinplatte verkleinern.  
 Dadurch wird der Träger eher dünn aussehen.
 
-This trick is often used in womenswear jeans
-(now you know why you can't find womenswear jeans with functional front pockets).
+Dieser Trick wird oft bei Damenjeans angewandt
+(jetzt weißt du, warum du keine Damenjeans mit funktionalen Vordertaschen finden kannst).
 
 </Note>
 

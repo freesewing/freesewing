@@ -4,8 +4,8 @@ title: Ratio de longitud
 
 Controla la longitud de la bib.
 
-- Increase the percentage to lengthen the bib.
-- Decrease the percentage to shorten the bib.
+- Aumenta el porcentaje para alargar el dorsal.
+- Disminuye el porcentaje para acortar el dorsal.
 
 ## Efecto de esta opción en el patrón
 

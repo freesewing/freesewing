@@ -2,7 +2,7 @@
 title: "Buceo de cintura frontal"
 ---
 
-Together with the "Front curve" option, this option controls how much the front waist curves (revealing more or less skin). For this option, the curve is achieved by cutting away a crescent at the waist. (For fabric with horizontal stripes, some stripes would be interrupted around the center of the waist.)
+Junto con la opción "Curva delantera", esta opción controla cuánto se curva la cintura delantera (revelando más o menos piel). Para esta opción, la curva se consigue recortando una media luna en la cintura. (En el caso de telas con rayas horizontales, algunas rayas se interrumpirían alrededor del centro de la cintura).
 
 ## Efecto de esta opción en el patrón
 

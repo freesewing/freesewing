@@ -1,5 +1,5 @@
 ---
-title: "Tamiko top: Sewing Instructions"
+title: "Top Tamiko : Instructions de couture"
 ---
 
 ### Étape 1 : Terminer l'emmanchure

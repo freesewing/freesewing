@@ -1,8 +1,8 @@
 ---
-title: "Neckline"
+title: "Escote"
 ---
 
-Controls whether or not to draft a neck opening
+Controla si se redacta o no una apertura de cuello
 
 ## Efecto de esta opción en el patrón
 

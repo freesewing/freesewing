@@ -2,7 +2,7 @@
 title: "Tamaño dart de hombro"
 ---
 
-The size of the back shoulder dart.
+El tamaño del dardo del hombro trasero.
 
 ## Efecto de esta opción en el patrón
 

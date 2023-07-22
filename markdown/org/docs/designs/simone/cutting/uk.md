@@ -1,5 +1,5 @@
 ---
-title: "Simone shirt: Cutting Instructions"
+title: "Сорочка Сімона: Інструкція з крою"
 ---
 
 <Note>

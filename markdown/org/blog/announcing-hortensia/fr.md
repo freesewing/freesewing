@@ -3,14 +3,14 @@ author: "joostdecock"
 caption: "Un exemple de Hortensia fait par le designer"
 date: "2021-02-13"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/01f416518b5bf8fb75dcc8ae3ab2691d5532dd65-2000x1500.jpg"
-intro: "I'm happy to announce the immeadiate availability of our latest FreeSewing pattern: the Hortensia handbag ."
+intro: "Je suis heureuse de t'annoncer la disponibilité immédiate de notre dernier patron FreeSewing : le sac à main Hortensia ."
 title: "Dites bonjour à notre dernier modèle : le sac à main Hortensia"
 ---
 
 
 Je suis heureux d'annoncer la disponibilité immédiate de notre dernier modèle FreeSewing : [le sac à main Hortensia](/designs/hortensia/).
 
-Hortensia's origin story traces back to [@stoffsuchti](https://twitter.com/stoffsuchti) who wanted to create a pattern for a handbag, and was looking for somebody who could implement that design in code.
+L'histoire de l'origine d'Hortensia remonte à [@stoffsuchti](https://twitter.com/stoffsuchti) qui voulait que crée un motif pour un sac à main, et cherchait quelqu'un qui pourrait mettre en œuvre ce motif dans le code.
 
 C'est [Wouter](https://github.com/woutervdub) qui a répondu à l'appel et développé le patron, ce qui fait de cette histoire le nouveau succès de la communauté FreeSewing.
 

@@ -1,60 +1,42 @@
 ---
 date: "2022-01-01"
 edition: "2022q1"
-intro: "Welcome to the 2022 Winter edition of the FreeSewing newsletter."
-title: "2022 Winter edition"
+intro: "Bienvenido a la edición de invierno 2022 del boletín FreeSewing."
+title: "2022 Edición de invierno"
 ---
 
-Welcome to the 2022 Winter edition of the FreeSewing newsletter.
+Bienvenido a la edición de invierno 2022 del boletín FreeSewing.
 
-Unlike other editions where we drop a Smörgåsbord of blurbs from various contributors in your mailbox, you're going to have to do with just me this time around. That means a bunch of em dashes — everyone's favorite punctuation mark — and I'm happy to report that two paragraphs in I've already managed to squeeze in one of them A's with a circle over it. Nice!
+A diferencia de otras ediciones, en las que dejamos caer en tu buzón un Smörgåsbord de artículos de varios colaboradores, esta vez vas a tener que conformarte sólo conmigo. Eso significa un montón de guiones -el signo de puntuación favorito de todos- y me complace informar de que a los dos párrafos ya he conseguido colar una de esas A con un círculo encima. Muy bien.
 
-So much for form, let's talk content. Here's what I'll be covering:
+Hasta aquí la forma, hablemos del contenido. Esto es lo que trataré:
 
- - 🎉 2021 is salted and burned
- - 🧐 What our contributors have been up to in 2021
- - 🎖️ FreeSewing is now an '*all contributors*' project
- - 🚧 Why version 3 has been put on hold
- - 🤓 What I've been up to in 2021
- - 🐛 FreeSewing's bug bounty program
- - ⛑️ Yearly revenue and where it went (spoiler: same as always)
- - 🤞 What I hope will happen this year
+ - 🎉 2021 se sala y se quema
+ - 🧐 Qué han hecho nuestros colaboradores en 2021
+ - 🎖️ FreeSewing es ahora un proyecto '*todos los colaboradores*'.
+ - 🚧 Por qué se ha suspendido la versión 3
+ - 🤓 Lo que he hecho en 2021
+ - 🐛 Programa de recompensas por errores de FreeSewing
+ - ⛑️ Ingresos anuales y a dónde fueron a parar (spoiler: lo mismo de siempre)
+ - 🤞 Lo que espero que ocurra este año
 
-Y'all ready for this? Let's do it.
-
-&nbsp;
+¿Estáis preparados? Hagámoslo.
 
 &nbsp;
 
-## 🎉 2021 is salted and burned
-
-Well yes I binge-watched all 15 seasons of [Supernatural](https://en.wikipedia.org/wiki/Supernatural_(American_TV_series)) this year because what else were we supposed to do, locked in our homes as we were. And if that dreamboat Dean has taught me anything, it's that you should salt, then burn whatever you want to get rid of for good.
-
-I don't mean to say there was nothing good about 2021. As a matter of fact, within the context of FreeSewing it was another absolutely fantastic year.
-
-But I find it in poor taste to be jubilant about a year that for many people was — yet again — about hanging in there and dealing with the many-faced monster that is the COVID pandemic.
-
-I hope you are all ok and that you did not have to bid farewell to any of your loved ones. I hope that your mental health is resilient enough to deal with all this. And if it's not, then I hope you have people to talk to. If you don't have those, you can talk to me. Hit reply and we'll figure it out somehow. We should not have to deal with any of this on our own, so don't be shy.
-
-With that out of the way, let's look at some of the good things that happened over the course of last year.
-
 &nbsp;
 
----
+## 🎉 2021 se sala y se quema
 
-&nbsp;
+Pues sí, este año me he dado un atracón de visionado de las 15 temporadas de [Sobrenatural](https://en.wikipedia.org/wiki/Supernatural_(American_TV_series)) , porque ¿qué otra cosa podíamos hacer, encerrados en casa como estábamos? Y si algo me ha enseñado el soñador Dean, es que debes salar y luego quemar lo que quieras eliminar para siempre.
 
-## 🧐 What our contributors have been up to last year
+No quiero decir que no hubiera nada bueno en 2021. De hecho, en el contexto de FreeSewing ha sido otro año absolutamente fantástico.
 
-We put out 53 FreeSewing releases this year, on average more than one per week. It speaks to the continuous churn that goes on in a healthy and thriving open source project. [Work is never over](https://www.youtube.com/watch?v=yydNF8tuVmU), and an ever growing number of people drive FreeSewing forward.
+Pero me parece de mal gusto alegrarse por un año que para mucha gente fue -una vez más- de aguantar y enfrentarse al monstruo de muchas caras que es la pandemia de COVID.
 
-The most visible of those changes are in our growing catalog of designs, with the [Bella Bodice Block](https://freesewing.org/designs/bella/), the [Hortensia Handbag](https://freesewing.org/designs/hortensia/), the [Cornelius Cycling Breeches](https://freesewing.org/designs/cornelius/), the [Charlie Chinos](https://freesewing.org/designs/charlie/), the [Bee Bikini Top](https://freesewing.org/designs/bee/), the [Lunetius Lacerna](https://freesewing.org/designs/lunetius/), the [Tiberius Tunic](https://freesewing.org/designs/tiberius/), the [Walburga Wappenrock](https://freesewing.org/designs/walburga/), and the [Yuri Hoodie](https://freesewing.org/designs/yuri/) all new patterns that were added in 2021.
+Espero que estéis todos bien y que no hayáis tenido que despediros de ninguno de vuestros seres queridos. Espero que tu salud mental sea lo suficientemente resistente como para hacer frente a todo esto. Y si no lo es, espero que tengas gente con quien hablar. Si no los tienes, puedes hablar conmigo. Pulsa responder y lo resolveremos de alguna manera. No deberíamos tener que enfrentarnos a nada de esto nosotros solos, así que no seas tímido.
 
-What I am personally very excited about is that a variety of people were involved in these new patterns, which means the list of people capable of independently cranking out parametric designs is steadily increasing. That is great news for the future.
-
-There is more of course. I think we've added more [showcases](https://freesewing.org/showcase/) this year than any previous year, and [our community on Discord](https://discord.freesewing.org/) is thriving in ways that I never would have dared to imagine.
-
-I'd like to thank all of those people for lending a hand, being part of our community, and just being awesome. If you had told me a couple of years ago that FreeSewing would evolve into a thriving D&D community with a sewing website attached I would not have believed you 😂
+Una vez dicho esto, veamos algunas de las cosas buenas que ocurrieron a lo largo del año pasado.
 
 &nbsp;
 
@@ -62,36 +44,17 @@ I'd like to thank all of those people for lending a hand, being part of our comm
 
 &nbsp;
 
-## 🎖️ FreeSewing is now an '*all contributors*' project
+## 🧐 Lo que han hecho nuestros colaboradores el año pasado
 
-Since we're singing the contributors praise — which I really can't do enough — now would be a good time to point out that FreeSewing is now officially an [all contributors](https://allcontributors.org/) project.
+Este año hemos publicado 53 FreeSewing, una media de más de uno por semana. Habla de la continua agitación que tiene lugar en un proyecto de código abierto sano y próspero. [El trabajo nunca termina](https://www.youtube.com/watch?v=yydNF8tuVmU), y un número cada vez mayor de personas hace avanzar a FreeSewing.
 
-Traditionally, contributions in open source are measured by commits, in other words: contributions to code. The revision control system (git in our case) tracks those contributors automatically, so it's easy enough to pull up a list of people who've pushed code.
+Los más visibles de esos cambios están en nuestro creciente catálogo de diseños, con la [Bella Bodice Block](https://freesewing.org/designs/bella/), el [Bolso Hortensia](https://freesewing.org/designs/hortensia/), el [Pantalón Ciclista Cornelius](https://freesewing.org/designs/cornelius/), los [Chinos Charlie](https://freesewing.org/designs/charlie/), el [Top de Bikini Bee](https://freesewing.org/designs/bee/), el [Lunetius Lacerna](https://freesewing.org/designs/lunetius/), la [Túnica Tiberius](https://freesewing.org/designs/tiberius/), el [Walburga Wappenrock](https://freesewing.org/designs/walburga/), y la [Sudadera con Capucha Yuri](https://freesewing.org/designs/yuri/) todos ellos nuevos patrones que se añadieron en 2021.
 
-But there are many other ways that people contribute to FreeSewing. From translation to proofreading, community building, design work, you name it.
+Lo que personalmente me entusiasma es que en estos nuevos patrones participó gente muy diversa, lo que significa que la lista de personas capaces de crear diseños paramétricos de forma independiente no deja de aumentar. Es una gran noticia para el futuro.
 
-As an all-contributors project, we want to value those contributions in a similar way and so we now maintain a list of contributors rather than relying on get's list of contributors. We are also showcasing that list of contributors prominently both [in our Readme](https://github.com/freesewing/freesewing#contributors-) and on our (future) websites (more on that later).
+Por supuesto, hay más. Creo que este año hemos añadido más escaparates [](https://freesewing.org/showcase/) que ningún año anterior, y [nuestra comunidad en Discord](https://discord.freesewing.org/) está prosperando de formas que nunca me habría atrevido a imaginar.
 
-So anybody who contributes can be added, and should be added. Doing so is a shared responsibility, since the big downside of such a maintained list is of course that we risk forgetting people. If that's the case, do reach out and let us know, we'll be happy to add you.
-
-
-&nbsp;
-
----
-
-&nbsp;
-
-## 🚧 Why version 3 has been put on hold
-
-As you may know, we put out [our roadmap for FreeSewing version 3](https://github.com/freesewing/freesewing/discussions/1278) which reads like a wish list of things people would like to see in the next major release.
-
-After some initial testing-of-the-waters for some of these new features, and I have decided to put v3 on hold for now.
-
-The reason is that many of the things on the wish list don't require a new major version. In other words, we can add them without breaking backwards compatibility. Case in point, several of the v3 proposals/ideas have already been implemented in the current release.
-
-On the other hand, one of the things that will cause breaking changes is moving to ESM-only releases. It gets a bit technical but there's different ways to bundle up your Javascript code, and we currently publish both CJS and ESM bundles. One of the goals of v3 was to move to ESM-only, but I feel that we were putting too many things in this v3 basket making the entire effort an unwieldy affair and difficult to wrap your head around.
-
-So, I'm putting those things that will cause breaking changes (like pure-ESM) on hold until we've implemented all the changes we can already implement today. So by delaying it, we're actually going to see new features sooner because most of the breaking stuff is so far under the hood that you probably wouldn't even notice when it changes.
+Me gustaría dar las gracias a todas esas personas por echar una mano, formar parte de nuestra comunidad y simplemente ser increíbles. Si me hubieras dicho hace un par de años que FreeSewing se convertiría en una próspera comunidad D&D con un sitio web de costura adjunto no te habría creído 😂
 
 &nbsp;
 
@@ -99,50 +62,17 @@ So, I'm putting those things that will cause breaking changes (like pure-ESM) on
 
 &nbsp;
 
-## 🤓 What I've been up to last year
+## 🎖️ FreeSewing es ahora un proyecto '*todos los colaboradores*'.
 
-As I mentioned earlier, the fact that more people than ever are now contributing patterns is one of of my personal highlights of the year. But it did not come about by divine intervention.
+Ya que estamos alabando a los colaboradores -cosa que nunca hago lo suficiente-, ahora sería un buen momento para señalar que FreeSewing es ahora oficialmente un proyecto [all contributors](https://allcontributors.org/) .
 
-16 months ago, at the end of August 2020, I wrote about the challenges of scaling my own labour, and how I wanted to [see FreeSewing grow beyond what I can do on my own](https://freesewing.org/blog/a-call-for-help/).
+Tradicionalmente, las contribuciones en el código abierto se miden por los commits, en otras palabras: contribuciones al código. El sistema de control de revisiones (git en nuestro caso) realiza un seguimiento automático de los colaboradores, por lo que es bastante fácil obtener una lista de las personas que han enviado código.
 
-In retrospect, I feel that post marks the moment where I pivoted from guy-working-on-open-source-thing to an open source maintainer. My efforts ever since have been preliminary focused on facilitating the work of others, clearing hurdles for aspiring contributors, and simplifying the developer experience.
+Pero hay muchas otras formas de contribuir a FreeSewing. Desde la traducción a la corrección, pasando por la creación de comunidades, el trabajo de diseño, lo que se te ocurra.
 
-Which is why I am not concerned that I *only* designed two patterns in 2021. More patterns are always nice, but I prefer to focus on things that are hard for other people to do. Like the [migration to React 17 and Webpack 5](https://freesewing.org/blog/react-17/) which happened in release 2.16 and brought with it an improved developer experience.
+Como proyecto de todos los colaboradores, queremos valorar esas contribuciones de forma similar, por lo que ahora mantenemos una lista de colaboradores en lugar de basarnos en la lista de colaboradores de get. También estamos mostrando esa lista de colaboradores de forma destacada tanto en [en nuestro Readme](https://github.com/freesewing/freesewing#contributors-) como en nuestros (futuros) sitios web (más sobre esto más adelante).
 
-But all of that remains on the '*pattern design*' side of things. But there's a lot more that goes into running FreeSewing.
-
-Last summer, I set out to work on [project 2022](https://freesewing.dev/blog/project-2022) in which I wanted to bring a similar easy on-ramp to other aspects of the project. Working on our backend code, our websites, writing blog posts, and so on.
-
-I'm happy to say there's been a lot of progress in this area. Perhaps a good illustration of this is our move to Strapi — a so-called [headless CMS](https://strapi.io/) — for our blog and showcase posts as well as for our newsletter content. Prior to the move, we had several years worth of blog posts, all written by yours truly. Since the move, we've had other people writing blog posts, and I can't even remember last time I published a showcase posts because ever since we moved to Strapi, that's taken care of by others now.
-
-We're also consolidating as much work & code as possible into [our monorepo on Github](https://github.com/freesewing/freesewing) as that makes it easier to wrap your head around the project, and track transversal changes — such as when changes to the website necessitate accompanying backend changes.
-
-Our markdown content and backend code has been consolidated into our monorepo. We were able to [merge our two translation projects on Crowdin into one](https://crowdin.com/project/freesewing), and the efforts started this summer to migrate our frontend code from GatsbyJS to [NextJS](https://nextjs.org/) paid dividends at the last day of the year when I deployed [our new freesewing.dev website](https://freesewing.dev/) in production.
-
-It's been re-written from the ground up to be better, faster, and perhaps most importantly, easier for people new(ish) to the project to work on, improve, or just see in what novel ways they can break it.
-
-The new FreeSewing.dev was built from the start to share code with what shall become the new FreeSewing.org, so that's something to look forward to this year.
-
-&nbsp;
-
----
-
-&nbsp;
-
-## 🐛 FreeSewing's bug bounty program
-
-One of my personal low points of this year was when one of our users reached out because of an issue in their shirt pattern. An issue that I was able to trace back to a regression bug that was triggered by a new feature request we had implemented some time prior.
-
-To have, what I personally consider to be one of our flagship patterns, hobbled by a bug that passed under the radar made my heart sink. I can't help but think about all the people who tried the pattern in the meanwhile, didn't get good results, and in completely understandable fashion most likely concluded that this entire FreeSewing thing is utter garbage. After all, sewing patterns are traditionally a finished product. Not one that receives numerous improvements and bug fixes throughout the year.
-
-
-We have taken steps to try and prevent similar mishaps from happening. There's been a significant effort made to increase the number of unit tests that help us spot issues. I wrote a new plugin specifically for this reason that allows us to compare generated patterns across FreeSewing versions/changes. We now also keep sampled output for each and every pattern option under version control, so that we can trace exactly what patterns are being impacted by changes to the codebase.
-
-But, things will still slip under the radar from time to time, which is why we're launching **the FreeSewing bug bounty program**:
-
-> If you find a bug in one of our patterns, or in our core library, we will (with your permission) add you to our list of contributors, and send you a little something to say thanks.
-
-Obviously, we're no Apple or Google, so we can't fork over cold hard cash as reward, but we have nice stickers, so that's something :)
+Así que cualquiera que contribuya puede ser añadido, y debe serlo. Hacerlo es una responsabilidad compartida, ya que el gran inconveniente de una lista tan mantenida es, por supuesto, que corremos el riesgo de olvidar a gente. Si es así, ponte en contacto con nosotros y dínoslo, estaremos encantados de añadirte.
 
 
 &nbsp;
@@ -151,19 +81,17 @@ Obviously, we're no Apple or Google, so we can't fork over cold hard cash as rew
 
 &nbsp;
 
-## ⛑️ Yearly revenue and where it went (spoiler: same as always)
+## 🚧 Por qué se ha suspendido la versión 3
 
-Yearly revenue for FreeSewing in 2021 was 10,070.77 euro. In accordance with [our revenue pledge](https://freesewing.org/docs/various/pledge/), it was all donated to [Doctors Without Borders/Médecins Sans Frontières](http://msf.org/).
+Como ya sabrás, hemos publicado en [nuestra hoja de ruta para la versión 3 de FreeSewing](https://github.com/freesewing/freesewing/discussions/1278) , que es como una lista de deseos de cosas que a la gente le gustaría ver en la próxima versión principal.
 
-And, for the second year in a row MSF deployed its teams not just in the South, but also in Europe and the US to help manage the COVID pandemic.
+Tras algunas pruebas iniciales de algunas de estas nuevas funciones, he decidido aparcar la v3 por ahora.
 
-In the hospital where my wife works — one of the main hubs for COVID care in the country — the COVID ward was at one point was even run by teams from MSF as their experience in running healthcare facilities in the middle of a crisis is simply unparalleled.
+La razón es que muchas de las cosas de la lista de deseos no requieren una nueva versión principal. En otras palabras, podemos añadirlos sin romper la compatibilidad con versiones anteriores. Por ejemplo, varias de las propuestas/ideas de la v3 ya se han implementado en la versión actual.
 
-There were probably similar initiatives and MSF teams working in your vicinity, often under the radar, but always there where they are needed the most.
+Por otra parte, una de las cosas que provocará cambios de última hora es el paso a versiones sólo ESM. Es un poco técnico, pero hay distintas formas de agrupar tu código Javascript, y actualmente publicamos paquetes CJS y ESM. Uno de los objetivos de la v3 era pasar a ser sólo ESM, pero creo que estábamos metiendo demasiadas cosas en la cesta de la v3, lo que convertía todo el esfuerzo en un asunto difícil de manejar y de asimilar.
 
-FreeSewing's revenue is 100% made up of patron contributions, and I feel an enormous depth of gratitude towards those kind-hearted and generous souls who make this possible. 2020 was an absolute bumper year for FreeSewing with an influx of COVID-inspired goodwill pushing our revenue beyond 5 figures for the first time. I did not expect that to hold in 2021 yet once again our patrons delivered.
-
-They are the real heroes of this story. I can't thank them enough.
+Por tanto, voy a dejar en suspenso las cosas que provocarán cambios de última hora (como el ESM puro) hasta que hayamos implementado todos los cambios que ya podemos implementar hoy. Así que, al retrasarlo, en realidad vamos a ver antes las nuevas funciones, porque la mayoría de las cosas que rompen están tan por debajo del capó que probablemente ni te darías cuenta cuando cambian.
 
 &nbsp;
 
@@ -171,15 +99,87 @@ They are the real heroes of this story. I can't thank them enough.
 
 &nbsp;
 
-## 🤞 What I hope will happen this year
+## 🤓 Lo que he hecho el último año
 
-- I hope we'll be able to rebuild FreeSewing.org and make it better, faster, and more feature-packed
-- I hope we'll be able to continue to chip away at gendered terminology, and strive to make patterns that *just work* to support you and how you express yourself
-- I hope we'll continue to welcome new contributors who are excited to build this thing together
-- I hope we'll continue to bask in the love and support of our patrons so we can pay it forward and help those in dire straits
-- I hope you all have a great year filled with health, happiness, and hugs
+Como he mencionado antes, el hecho de que ahora haya más gente que nunca aportando patrones es uno de mis momentos personales más destacados del año. Pero no se produjo por intervención divina.
+
+Hace 16 meses, a finales de agosto de 2020, escribí sobre los retos de escalar mi propio trabajo, y sobre cómo quería [ver crecer FreeSewing más allá de lo que yo puedo hacer por mi cuenta](https://freesewing.org/blog/a-call-for-help/).
+
+En retrospectiva, creo que ese post marca el momento en el que pasé de ser una persona que trabajaba en algo de código abierto a un mantenedor de código abierto. Desde entonces, mis esfuerzos se han centrado principalmente en facilitar el trabajo de los demás, eliminar obstáculos para los aspirantes a colaboradores y simplificar la experiencia de los desarrolladores.
+
+Por eso no me preocupa que *sólo* haya diseñado dos patrones en 2021. Más patrones siempre están bien, pero prefiero centrarme en cosas que son difíciles de hacer para otras personas. Como la migración de [a React 17 y Webpack 5](https://freesewing.org/blog/react-17/) que se produjo en la versión 2.16 y trajo consigo una experiencia mejorada para los desarrolladores.
+
+Pero todo eso se queda en el lado '*pattern design*' de las cosas. Pero hay mucho más en el funcionamiento de FreeSewing.
+
+El verano pasado, me puse a trabajar en [proyecto 2022](https://freesewing.dev/blog/project-2022) en el que quería aportar una facilidad de acceso similar a otros aspectos del proyecto. Trabajar en nuestro código backend, nuestros sitios web, escribir entradas de blog, etc.
+
+Me complace decir que se ha avanzado mucho en este ámbito. Tal vez un buen ejemplo de ello sea nuestro cambio a Strapi -un CMS sin cabeza llamado [](https://strapi.io/) - para las entradas de nuestro blog y escaparate, así como para el contenido de nuestro boletín. Antes de la mudanza, teníamos varios años de entradas de blog, todas escritas por un servidor. Desde la mudanza, tenemos a otras personas escribiendo entradas en el blog, y ni siquiera recuerdo la última vez que publiqué una entrada de escaparate porque desde que nos mudamos a Strapi, de eso se encargan ahora otros.
+
+También estamos consolidando todo el código posible del trabajo & en [, nuestro monorepo en Github](https://github.com/freesewing/freesewing) , ya que así es más fácil entender el proyecto y hacer un seguimiento de los cambios transversales, como cuando los cambios en el sitio web requieren cambios en el backend.
+
+Nuestro contenido markdown y el código backend se han consolidado en nuestro monorepo. Pudimos [fusionar nuestros dos proyectos de traducción en Crowdin en uno solo](https://crowdin.com/project/freesewing), y los esfuerzos iniciados este verano para migrar nuestro código frontend de GatsbyJS a [NextJS](https://nextjs.org/) dieron sus frutos el último día del año, cuando desplegué [nuestro nuevo sitio web freesewing.dev](https://freesewing.dev/) en producción.
+
+Se ha reescrito desde el principio para que sea mejor, más rápido y, lo que es más importante, más fácil de utilizar para las personas nuevas en el proyecto, para que lo mejoren o simplemente para que vean de qué formas novedosas pueden romperlo.
+
+El nuevo FreeSewing.dev se construyó desde el principio para compartir código con lo que se convertirá en el nuevo FreeSewing.org, así que eso es algo que esperar este año.
 
 &nbsp;
 
-love  
+---
+
+&nbsp;
+
+## 🐛 Programa de recompensas por errores de FreeSewing
+
+Uno de mis puntos bajos personales de este año fue cuando uno de nuestros usuarios se puso en contacto con nosotros por un problema en el patrón de su camisa. Un problema que pude rastrear hasta un error de regresión provocado por una nueva solicitud de función que habíamos implementado tiempo atrás.
+
+Tener, lo que personalmente considero uno de nuestros patrones insignia, lastrado por un fallo que pasó desapercibido me hundió el corazón. No puedo evitar pensar en todas las personas que probaron el patrón mientras tanto, no obtuvieron buenos resultados y, de forma totalmente comprensible, muy probablemente llegaron a la conclusión de que todo esto de FreeSewing es una auténtica basura. Al fin y al cabo, los patrones de costura son tradicionalmente un producto acabado. No uno que recibe numerosas mejoras y correcciones de errores a lo largo del año.
+
+
+Hemos tomado medidas para intentar evitar que ocurran percances similares. Se ha hecho un esfuerzo importante para aumentar el número de pruebas unitarias que nos ayudan a detectar problemas. Escribí un nuevo plugin específicamente por esta razón que nos permite comparar patrones generados a través de versiones/cambios de FreeSewing. Ahora también mantenemos bajo control de versiones la salida de muestreo de todas y cada una de las opciones de patrones, para poder rastrear exactamente qué patrones se ven afectados por los cambios en el código base.
+
+Pero de vez en cuando hay cosas que pasan desapercibidas, y por eso lanzamos **el programa de recompensas por errores de FreeSewing**:
+
+> Si encuentras un error en uno de nuestros patrones, o en nuestra biblioteca central, te añadiremos (con tu permiso) a nuestra lista de colaboradores, y te enviaremos una cosita para darte las gracias.
+
+Obviamente, no somos Apple ni Google, así que no podemos dar dinero en metálico como recompensa, pero tenemos bonitas pegatinas, así que algo es algo :)
+
+
+&nbsp;
+
+---
+
+&nbsp;
+
+## ⛑️ Ingresos anuales y a dónde fueron a parar (spoiler: lo mismo de siempre)
+
+Los ingresos anuales de FreeSewing en 2021 fueron de 10.070,77 euros. De acuerdo con [nuestro compromiso de ingresos](https://freesewing.org/docs/various/pledge/), se donó en su totalidad a [Médicos Sin Fronteras/Médecins Sans Frontières](http://msf.org/).
+
+Y, por segundo año consecutivo, MSF desplegó sus equipos no sólo en el Sur, sino también en Europa y Estados Unidos para ayudar a gestionar la pandemia de COVID.
+
+En el hospital donde trabaja mi mujer -uno de los principales centros de atención COVID del país-, la sala COVID estuvo en un momento dado a cargo incluso de equipos de MSF, ya que su experiencia en la gestión de instalaciones sanitarias en medio de una crisis es sencillamente incomparable.
+
+Probablemente había iniciativas similares y equipos de MSF trabajando en tu vecindad, a menudo bajo el radar, pero siempre allí donde más se les necesita.
+
+Los ingresos de FreeSewing proceden al 100% de las contribuciones de los mecenas, y siento una enorme gratitud hacia esas almas generosas y de buen corazón que lo hacen posible. 2020 fue un año absolutamente extraordinario para FreeSewing, con una afluencia de buena voluntad inspirada por COVID que impulsó nuestros ingresos por encima de las 5 cifras por primera vez. No esperaba que eso se mantuviera en 2021, pero una vez más nuestros patrocinadores cumplieron.
+
+Ellos son los verdaderos héroes de esta historia. No puedo agradecérselo lo suficiente.
+
+&nbsp;
+
+---
+
+&nbsp;
+
+## 🤞 Lo que espero que ocurra este año
+
+- Espero que podamos reconstruir FreeSewing.org y hacerlo mejor, más rápido y con más funciones.
+- Espero que podamos seguir eliminando la terminología sexista y esforzándonos por crear patrones que *sólo funcionen* para apoyarte a ti y a la forma en que te expresas.
+- Espero que sigamos dando la bienvenida a nuevos colaboradores que estén entusiasmados por construir esto juntos
+- Espero que sigamos disfrutando del amor y el apoyo de nuestros mecenas para que podamos devolverlo y ayudar a los que están en apuros.
+- Espero que todos tengáis un gran año lleno de salud, felicidad y abrazos
+
+&nbsp;
+
+amor  
 joost

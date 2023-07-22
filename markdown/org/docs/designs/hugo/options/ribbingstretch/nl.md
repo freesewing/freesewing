@@ -10,8 +10,8 @@ Als je (bijvoorbeeld) 90% kiest, tekenen we voor elke 10 cm boord maar 9 cm. Zo 
 
 <Note>
 
-If you're not sure what to pick, best is to take the ribbing you are going to use see how much of it
-you need to stretch out to get to 10 cm with a _good_ stretch.
+Als je niet zeker weet wat je moet kiezen, kun je het beste de ribbel nemen die je gaat gebruiken en kijken hoeveel daarvan
+je moet uitrekken om op 10 cm te komen met een _goede_ stretch.
 
 </Note>
 

@@ -1,14 +1,14 @@
 ---
-maker: "unknown"
-caption: "Enno made this Florent in a gorgeous mustard"
+maker: "unbekannt"
+caption: "Enno hat diesen Florent in einem herrlichen Senf"
 date: "23.03.2019"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a5b79cac257f7193ffd73aaea0c5a3834d4fd668-1080x1080.jpg"
-intro: "Enno's got a vest to go with it too:"
-title: "Florent by Enno"
+intro: "Enno hat auch eine passende Weste dazu:"
+title: "Florent von Enno"
 designs:
   - "florent"
 ---
 
-Enno's got a vest to go with it too:
+Enno hat auch eine passende Weste dazu:
 
-![Cap and vest](https://posts.freesewing.org/uploads/florent_by_enno_2_c5ac858005.jpg "Cap and vest")
+![Mütze und Weste](https://posts.freesewing.org/uploads/florent_by_enno_2_c5ac858005.jpg "Mütze und Weste")

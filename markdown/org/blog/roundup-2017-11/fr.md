@@ -1,129 +1,129 @@
 ---
 author: "joostdecock"
-caption: "Your new login background for the month of December"
+caption: "Ton nouveau fond d'écran de connexion pour le mois de décembre"
 date: "2017-11-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c9c5c5e10d2ed6e9f2935b047afa76c1ddd7c834-2000x1333.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - November 2017: Benjamin, on-boarding, showcases, and our on-demand tiler"
+intro: "Voici ton récapitulatif mensuel de l'actualité freesewing des quatre dernières semaines, et un aperçu de ce qui t'attend le mois prochain."
+title: "Tour d'horizon mensuel - novembre 2017 : Benjamin, l'embarquement, les vitrines et notre carreleur à la demande."
 ---
 
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Voici ton récapitulatif mensuel de l'actualité freesewing des quatre dernières semaines, et un aperçu de ce qui t'attend le mois prochain.
 
-## Looking back at November
-November has been busy around here. While lot of the work has been happening behind the scenes -- more on that in December -- there's also a list of things that are already rolled out.
+## Retour sur le mois de novembre
+Le mois de novembre a été bien rempli ici. Bien qu'une grande partie du travail se soit déroulée dans les coulisses - plus d'informations à ce sujet en décembre - il y a aussi une liste de choses qui ont déjà été mises en place.
 
-Here's the most important changes:
+Voici les changements les plus importants :
 
-### Meet Benjamin
-![Wouter showing off Benjamin](https://posts.freesewing.org/uploads/benjamin_fc9844f4bd.jpg) First up: a new pattern. The Benjamin Bow tie is [now available](/patterns/benjamin) in beta.
+### Rencontre Benjamin
+![Wouter montre Benjamin](https://posts.freesewing.org/uploads/benjamin_fc9844f4bd.jpg) Tout d'abord, un nouveau modèle. Le nœud papillon Benjamin est [maintenant disponible](/patterns/benjamin) en version bêta.
 
-![More bow ties from Wouter's personal stash](https://posts.freesewing.org/uploads/bowties_4f3e05ec53.jpg)
+![D'autres nœuds papillon de la réserve personnelle de Wouter](https://posts.freesewing.org/uploads/bowties_4f3e05ec53.jpg)
 
-Benjamin is a bow tie, and as I explained in [the announcement blog post](/en/blog/benjamin-bow-tie-beta/) this release is kind of a big deal.
+Benjamin est un nœud papillon, et comme je l'ai expliqué dans [le billet de blog d'annonce](/en/blog/benjamin-bow-tie-beta/) cette sortie est un peu importante.
 
-That's because it's the first ever pattern to have been contributed by the community. More specifically, it was [Wouter](/users/xdpug) who designed and programmed the pattern.
+C'est parce qu'il s'agit du tout premier modèle à avoir été créé par la communauté. Plus précisément, c'est [Wouter](/users/xdpug) qui a conçu et programmé le modèle.
 
-So shout-out to him for being the first person to contribute a pattern. And if you [hang around in the freesewing chat room](https://discord.freesewing.org/), you know that he's already started working on his next pattern.
+Alors, bravo à lui pour avoir été la première personne à proposer un modèle. Et si tu [traînes dans le salon de discussion freesewing](https://discord.freesewing.org/), tu sais qu'il a déjà commencé à travailler sur son prochain modèle.
 
 
-### Better user on-boarding
+### Meilleur accueil des utilisateurs
 
-I've changed the sign-up flow a bit to help people discover all the options they can set in their account.
+J'ai un peu modifié le flux d'inscription pour aider les gens à découvrir toutes les options qu'ils peuvent définir dans leur compte.
 
-![The welcome page guides you through your account setup](https://posts.freesewing.org/uploads/welcome_e02a39ca3b.png)
+![La page de bienvenue te guide dans la configuration de ton compte](https://posts.freesewing.org/uploads/welcome_e02a39ca3b.png)
 
-The change is two-fold. First you are now auto-magically logged in when you click the email confirmation link for your account.
+Le changement est double. Tout d'abord, tu es maintenant connecté automatiquement à lorsque tu cliques sur le lien de confirmation de ton compte par courriel.
 
-Second, we send you to the welcome page and guide you through a few steps to finalize your account setup. Specifically:
+Ensuite, nous t'envoyons sur la page de bienvenue et te guidons à travers quelques étapes pour finaliser la configuration de ton compte. Plus précisément :
 
- - Configure your units
- - Configure your username
- - Configure your profile picture
- - Configure your social media accounts
+ - Configure tes unités
+ - Configure ton nom d'utilisateur
+ - Configure ta photo de profil
+ - Configure tes comptes de médias sociaux
 
-(More on that last one later in this post)
+(Nous reviendrons sur ce dernier point plus loin dans ce billet).
 
-All of these settings are available in [your account](/account), but people frequently don't realize that. With the new sign-up flow, that should no longer be the case.
+Tous ces paramètres sont disponibles dans [ton compte](/account), mais les gens ne s'en rendent souvent pas compte. Avec le nouveau flux d'inscription, cela ne devrait plus être le cas.
 
-> ##### Hey, I never got a handy welcome page like that
+> ##### Hé, je n'ai jamais eu de page d'accueil aussi pratique.
 > 
-> At any time, you can go to [the welcome page](/welcome) to check or update your account settings.
+> A tout moment, tu peux aller sur [la page de bienvenue](/welcome) pour vérifier ou mettre à jour les paramètres de ton compte.
 
-### Mixed units warning
+### Avertissement sur les unités mixtes
 
-One of the issues that drove the changes to the on-boarding of new users was the issue of mixed units.
+L'un des problèmes qui a motivé les changements apportés à l'accueil des nouveaux utilisateurs était la question des unités mixtes sur le site .
 
-Mixed units is when your account is configured in metric, but your model is set to imperial (or vice-versa).
+On parle d'unités mixtes lorsque ton compte est configuré en unités métriques, mais que ton modèle est configuré en unités impériales (ou vice-versa).
 
-![An example warning when units are mixed between your account and your model](https://posts.freesewing.org/uploads/units_mismatch_warning_058d7de9b4.png)
+![Un exemple d'avertissement lorsque les unités sont mélangées entre ton compte et ton modèle.](https://posts.freesewing.org/uploads/units_mismatch_warning_058d7de9b4.png)
 
-This is supported. If you make things for other people in other parts of the world, this flexibility is handy.
+Ceci est pris en charge. Si tu fabriques des objets pour d'autres personnes dans d'autres parties du monde, cette flexibilité est pratique.
 
-But it's a rather niche scenario, and more often than not it's due to the user not realizing their units are set as they are.
+Mais c'est un scénario plutôt rare, et le plus souvent il est dû au fait que l'utilisateur n'a pas réalisé que ses unités sont réglées comme elles le sont.
 
-So now, when you draft a pattern with mixed units, we'll show you a warning box to make sure that you do actually intend to use mixed units.
+Désormais, lorsque tu dessineras un modèle avec des unités mixtes, nous t'afficherons une boîte d'avertissement pour vérifier que tu as bien l'intention d'utiliser des unités mixtes.
 
-### Per-pattern default seam allowance
-The roll-out of Benjamin raised another issue: standard seam allowance.
+### Marge de couture par défaut selon le modèle
+Le déploiement de Benjamin a soulevé un autre problème : la marge de couture standard.
 
-For a bow tie, the current standard seam allowance (1cm for metric, 5/8" for imperial) is too large. So Wouter wanted some way to change the standard seam allowance.
+Pour un nœud papillon, la marge de couture standard actuelle (1 cm pour le système métrique, 5/8" pour le système impérial) est trop grande. Wouter voulait donc trouver un moyen de modifier la marge de couture standard.
 
-![Here too, we've added a little notification to make sure you are aware](https://posts.freesewing.org/uploads/non_standard_sa_warning_e5046e98a7.png)
+![Ici aussi, nous avons ajouté une petite notification pour nous assurer que tu es au courant](https://posts.freesewing.org/uploads/non_standard_sa_warning_e5046e98a7.png)
 
-So, that's what we implemented. Going forward, patterns can set the standard seam allowance (for both metric and imperial). If they don't, we revert to 1cm|5/8" as before.
+C'est donc ce que nous avons mis en place. À l'avenir, les patrons pourront définir la marge de couture standard (pour le système métrique et le système impérial). Si ce n'est pas le cas, nous revenons à 1cm|5/8" comme auparavant.
 
-Note that this is only the default seam allowance. When you draft a pattern you can still set the seam allowance to whatever you like.
+Note qu'il ne s'agit que de la marge de couture par défaut. Lorsque tu rédiges un patron, tu peux toujours régler la marge de couture comme tu le souhaites.
 
-### Social media accounts
+### Comptes de médias sociaux
 
-If you clicked the link to the welcome page, or if you check out the settings in [your profile](/profile) you'll see that you can now enter your username for a few other sites:
+Si tu as cliqué sur le lien vers la page de bienvenue, ou si tu vérifies les paramètres dans [ton profil](/profile) tu verras que tu peux maintenant entrer ton nom d'utilisateur pour quelques autres sites :
 
  - Twitter
  - Instagram
  - GitHub
 
-No need to worry, [your privacy is in good hands here](/blog/privacy-choices/). I am not interested in collecting your data, and the only reason this is here is because people [asked for it](https://github.com/freesewing/site/issues/184).
+Ne t'inquiète pas, [ta vie privée est entre de bonnes mains ici](/blog/privacy-choices/). Je ne suis pas intéressé par la collecte de tes données, et la seule raison pour laquelle est ici, c'est parce que les gens [l'ont demandé](https://github.com/freesewing/site/issues/184).
 
-![After Quentin added his Instagram and GitHub accounts to his settings, his comment now have links to those accounts])comments-social.png)
+![Après que Quentin a ajouté ses comptes Instagram et GitHub à ses paramètres, ses commentaires contiennent désormais des liens vers ces comptes])comments-social.png).
 
-Links to your social media accounts will appear on your profile page and along your comments.
+Les liens vers tes comptes de médias sociaux apparaîtront sur ta page de profil et le long de tes commentaires.
 
-### More showcases
+### Plus de vitrines
 
-We've added a bunch of new [showcases](/showcase) this month. Every maker that has one or more showcases here on the site has their own page that lists all their showcases.
+Nous avons ajouté plusieurs nouvelles vitrines [](/showcase) ce mois-ci. Chaque fabricant qui a une ou plusieurs vitrines sur le site a sa propre page qui répertorie toutes ses vitrines.
 
-![An example of links on a maker page. In this case, Anneke](https://posts.freesewing.org/uploads/maker_links_8504a1b00d.png)
+![Un exemple de liens sur une page de créateur. Dans ce cas, Anneke](https://posts.freesewing.org/uploads/maker_links_8504a1b00d.png)
 
-This month, we've updated those pages with links to the blog and/or social media accounts of these makers. The idea is that people who feel you've made a cool thing can find out a bit more about you.
+Ce mois-ci, nous avons mis à jour ces pages avec des liens vers le blog et/ou les comptes de médias sociaux de ces fabricants. L'idée est que les personnes qui estiment que tu as fait un truc cool puissent en savoir un peu plus sur toi.
 
-### Referrer policy, or why you never get any visitors from freesewing.org
+### Politique de référencement, ou pourquoi tu ne reçois jamais de visiteurs de freesewing.org
 
-We've rolled out the strictest referral policy: `no-referrer`. It blocks all referrer information.
+Nous avons mis en place la politique de référencement la plus stricte : `no-referrer`. Il bloque toutes les informations de référence.
 
-This means that if you run Google analytics -- or some other website statistics tool -- on your blog or website, you won't see traffic from freesewing.org.
+Cela signifie que si tu utilises Google analytics -- ou un autre outil de statistiques de site web -- sur ton blog ou ton site web, tu ne verras pas de trafic en provenance de freesewing.org.
 
-![Our referrer policy: No](https://posts.freesewing.org/uploads/no_13049a23c3.gif)
+![Notre politique de référencement : Non](https://posts.freesewing.org/uploads/no_13049a23c3.gif)
 
-That doesn't mean that people aren't clicking links to your blog, but we simply block the referrer header from being set, so Google has no idea where people come from.
+Cela ne veut pas dire que les gens ne cliquent pas sur les liens vers ton blog, mais nous bloquons simplement l'en-tête referrer pour que Google n'ait aucune idée de l'origine des internautes.
 
-Why you ask? Because privacy.
+Pourquoi ? Parce que la vie privée.
 
-### On-demand tiler
-When you draft a pattern here, you can download it in a number of formats, all neatly tiled so you can print them.
+### Carreleur à la demande
+Lorsque tu dessines un modèle ici, tu peux le télécharger dans un certain nombre de formats, tous bien rangés sur pour que tu puisses les imprimer.
 
-You can also download the SVG source code to make further changes to the patterns. But once you have made those changes, there's no easy way for you to get it as a printable PDF.
+Tu peux aussi télécharger le code source SVG pour apporter d'autres modifications aux motifs. Mais une fois que tu as fait ces changements, il n'y a pas de moyen facile pour toi de l'obtenir sous forme de PDF imprimable.
 
-![The on-demand tiler does what you'd expect](tiler.svg)
+![Le carreleur à la demande fait ce à quoi tu t'attends](tiler.svg)
 
-Well now there is. We've added [an on-demand tiler](/tools/tiler) to the site that does just that. Upload your SVG, pick the format of your choice, and we'll tile it for you.
+Et bien maintenant, c'est le cas. Nous avons ajouté au site [un carreleur à la demande](/tools/tiler) qui fait justement cela. Télécharge ton SVG, choisis le format de ton choix et nous le mettrons en carreaux pour toi.
 
-## Looking ahead to December
+## En attendant le mois de décembre
 
-I had hoped to release my winter coat pattern during November, but alas that didn't work out. I'm actually still making it, and when it's ready there will be a few tweaks required to the pattern before I can release it.
+J'avais espéré sortir mon patron de manteau d'hiver au cours du mois de novembre, mais hélas cela n'a pas fonctionné. En fait, je suis encore en train de le fabriquer, et lorsqu'il sera prêt, il faudra apporter quelques modifications au modèle avant que je puisse le publier.
 
-But that news will have to play second fiddle to our wrap up of the year (traditionally on December 10th here). It's not just about what happened over the last 12 months, we'll also be rolling out some changes to safeguard the future of this project.
+Mais cette nouvelle devra être reléguée au second plan par rapport à notre bilan de l'année (traditionnellement le 10 décembre ici). Il ne s'agit pas seulement de ce qui s'est passé au cours des 12 derniers mois, . Nous allons également mettre en place certains changements pour préserver l'avenir de ce projet.
 
-10 more sleeps :)
+10 nuits de plus :)
 
 

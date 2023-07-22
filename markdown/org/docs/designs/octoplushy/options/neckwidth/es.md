@@ -1,8 +1,8 @@
 ---
-title: "Neck Width"
+title: "Ancho del cuello"
 ---
 
-The width of the neck can be adjusted. This is a percentage of the head.
+La anchura del cuello se puede ajustar. Es un porcentaje de la cabeza.
 
 ## Efecto de esta opción en el patrón
 

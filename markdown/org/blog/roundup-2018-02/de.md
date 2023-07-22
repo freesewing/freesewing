@@ -1,74 +1,74 @@
 ---
 author: "joostdecock"
-caption: "Your new login background for the month of March"
+caption: "Dein neuer Login-Hintergrund für den Monat März"
 date: "28.02.2018"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8e0079e2521a2bf71545d736a2549180902c0d50-1980x1311.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - February 2018: Core 1.7.0 with Sven, Carlton, and Carlita improvements. Plus GDRP, vim, and Jaeger"
+intro: "Dies ist dein monatlicher Überblick über die Freesewing-Nachrichten der letzten vier Wochen und ein Ausblick auf das, was im nächsten Monat ansteht."
+title: "Monatliches Roundup - Februar 2018: Core 1.7.0 mit Verbesserungen von Sven, Carlton und Carlita. Plus GDRP, vim und Jaeger"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Dies ist dein monatlicher Überblick über die Freesewing-Nachrichten der letzten vier Wochen und ein Ausblick auf das, was im nächsten Monat ansteht.
 
-## Looking back at February
+## Rückblick auf den Februar
 
-I had this secret ambition to release a new pattern every month this year. It's only February and that plan seems to already have gone off the rails.
+Ich hatte den heimlichen Ehrgeiz, dieses Jahr jeden Monat ein neues Muster zu veröffentlichen. Es ist erst Februar und dieser Plan scheint bereits aus dem Ruder gelaufen zu sein.
 
-Let's look at the things that did happen in February before we talk about what didn't.
+Schauen wir uns die Dinge an, die im Februar passiert sind, bevor wir darüber sprechen, was nicht passiert ist.
 
-### Core v1.7.0 is out
+### Core v1.7.0 ist erschienen
 
-Earlier today, I pulled the trigger on core release 1.7.0. As usual, [the changelog](https://github.com/freesewing/core/blob/develop/CHANGELOG.md#170) has all the info, but most significant to users are [the new ribbing options in the Sven pattern](/docs/patterns/sven/options#ribbing), as well as a bunch of additional improvements to Carlton/Carlita.
+Heute Morgen habe ich die Kernversion 1.7.0 veröffentlicht. Wie immer findest du alle Informationen im Änderungsprotokoll [](https://github.com/freesewing/core/blob/develop/CHANGELOG.md#170) . Am wichtigsten für die Benutzer sind jedoch [die neuen Rippenoptionen im Muster Sven](/docs/patterns/sven/options#ribbing)sowie eine Reihe zusätzlicher Verbesserungen an Carlton/Carlita.
 
-Those Carlton/Carlita improvements are driven by the fact that myself and [Anneke](/showcase/maker/annekecaramin) have started to work on [the documentation for these patterns](/docs/patterns/carlton/). And every time we write something like *apply fusible interfacing here*, we also go back to the pattern to mark exactly where this fusible needs to go.
+Diese Carlton/Carlita-Verbesserungen werden durch die Tatsache vorangetrieben, dass ich und [Anneke](/showcase/maker/annekecaramin) begonnen haben, an [der Dokumentation für diese Muster](/docs/patterns/carlton/)zu arbeiten. Und jedes Mal, wenn wir etwas wie *hier*auftragen, gehen wir auch zum Muster zurück, um genau zu markieren, wo der Vliesstoff hin muss.
 
-Needless to say, that's a bunch of work. But it should help with the construction of these coat patterns, especially for those people for which this is their first time making a coat.
+Unnötig zu erwähnen, dass das ein Haufen Arbeit ist. Aber es sollte bei der Konstruktion dieser Mantelmuster helfen, besonders für diejenigen, für die es das erste Mal ist, dass sie einen Mantel machen.
 
-### GDPR battle plan
+### GDPR Schlachtplan
 
-I don't want to make it sound like writing a blog post is an achievement these days, but I do think [our *GDRP battle plan* blog post](/blog/gdpr-plan) is worth mentioning because these are important developments, and the workload this generates is significant.
+Es soll nicht so klingen, als wäre es heutzutage eine Leistung, einen Blogbeitrag zu schreiben, aber ich denke, [unser *GDRP-Kampfplan* Blogbeitrag](/blog/gdpr-plan) ist es wert, erwähnt zu werden, denn dies sind wichtige Entwicklungen und die Arbeitsbelastung, die dadurch entsteht, ist erheblich.
 
-While nothing is set in stone yet, the post outlines our plan to tackle GDRP-compliance, something which we'll be focusing on in the next months.
+Auch wenn noch nichts in Stein gemeißelt ist, skizziert der Beitrag unseren Plan, die GDRP-Compliance in Angriff zu nehmen, etwas, auf das wir uns in den nächsten Monaten konzentrieren werden.
 
 
-### Vim snippets for freesewing core
+### Vim-Snippets für den Freesewing-Kern
 
-In [a blog post that is the embodiment of the term *niche*](/blog/core-vim-snippets) we announced the availability of a vim plugin that provides freesewing core specific snippets.
+In [einem Blogpost, der den Begriff *Nische*](/blog/core-vim-snippets) verkörpert, haben wir die Verfügbarkeit eines Vim-Plugins angekündigt, das freesewing core-spezifische Snippets bereitstellt.
 
-Essentially, IF you want to develop patterns and IF you use the vim editor, these are for you.
+Grundsätzlich gilt: WENN du Muster entwickeln willst und WENN du den vim-Editor verwendest, sind diese für dich.
 
-Arguably, that's a lot of ifs.
+Das sind wohl eine Menge Wenns.
 
-### Jaeger sneak preview
+### Jaeger Sneak Preview
 
-Meet Jaeger, the sports coat pattern that I hoped to release this month.
+Darf ich vorstellen: Jaeger, das Sportmantelmuster, das ich diesen Monat veröffentlichen wollte.
 
-![Jaeger is ready, but I haven't made one yet](jaeger.png")
+![Jaeger ist fertig, aber ich habe noch keinen gemacht](jaeger.png")
 
-Those of you with good memories may remember that I mentioned last month that I would perhaps release this during February. Although back then it still went by a different name.
+Diejenigen unter euch, die sich gut erinnern können, erinnern sich vielleicht daran, dass ich letzten Monat erwähnt habe, dass ich vielleicht im Februar veröffentlichen würde. Damals trug sie allerdings noch einen anderen Namen.
 
-As I also foreshadowed last month, I did not find the time to make one. As a matter of fact, my most problematic bottle neck in designing new patterns seems to be finding the time to actually make them. Which is all the more problematic with a pattern as involved as a jacket. Truth be told, I'm still not sure where I found the time to make that Carlton coat.
+Wie ich schon letzten Monat angedeutet habe, habe ich keine Zeit gefunden , um einen zu machen. Mein größtes Problem beim Entwerfen neuer Muster ist es, die Zeit zu finden, um sie tatsächlich zu machen. Das ist bei einem so komplexen Muster wie einer Jacke umso problematischer. Um ehrlich zu sein, weiß ich immer noch nicht, woher ich die Zeit hatte, den Carlton-Mantel zu nähen.
 
-Anyway, all this to say that the pattern is ready, except that I've never made the latest version of it. And I feel like I can't release it like this.
+Damit will ich sagen, dass das Muster fertig ist, nur habe ich es noch nie in der neuesten Version genäht. Und ich habe das Gefühl, dass ich es so nicht loslassen kann.
 
-So, if you'd like to make a muslin of this --- or even the real thing --- let me know in the comments, and I'll make sure we'll get you a draft.
+Wenn du also einen Muslin davon machen möchtest --- oder sogar das echte Ding --- lass es mich in den Kommentaren wissen, und ich sorge dafür, dass wir dir einen Entwurf schicken.
 
-That might also help moving this pattern release forward, for I already know I won't have much time to work on a jacket next month.
+Das könnte auch dabei helfen, die Veröffentlichung des Schnittmusters voranzutreiben, denn ich weiß jetzt schon, dass ich nächsten Monat nicht viel Zeit haben werde, um an einer Jacke zu arbeiten.
 
 Da wir gerade davon sprechen...
 
-## Looking ahead to March
+## Blick in den März
 
-I have two weeks of holiday in March (Yay!) the largest part of which I'll be in Bangkok (more Yay!).
+Im März habe ich zwei Wochen Urlaub (Juhu!), von denen ich den größten Teil in Bangkok verbringen werde (noch mehr Juhu!).
 
-That means I won't be doing much sewing next month, but there should be some quality time for me and my laptop, so I wanted to tackle one of the larger items on my mid-term todo-list.
+Das bedeutet, dass ich im nächsten Monat nicht viel nähen werde, aber ich werde etwas Zeit für mich und meinen Laptop haben, . Deshalb wollte ich einen der größeren Punkte auf meiner mittelfristigen ToDo-Liste in Angriff nehmen.
 
-My initial plan was to rewrite core, you can find some details [in this ticket on the matter](https://github.com/freesewing/core/issues/236)
+Mein ursprünglicher Plan war es, den Kern neu zu schreiben. Du kannst einige Details [in diesem Ticket zu diesem Thema finden](https://github.com/freesewing/core/issues/236)
 
-However, looking ahead at the months to come, the most pressing issue is that looming GDPR deadline in May which will also require a lot of work.
+Mit Blick auf die kommenden Monate ist das dringlichste Problem jedoch die bevorstehende GDPR-Frist im Mai, die ebenfalls viel Arbeit abverlangen wird.
 
-So, I figured it would make more sense to tackle another thing on the todo list of lofty goals: rewrite the frontend.
+Also dachte ich mir, dass es sinnvoller wäre, eine weitere Sache auf der ToDo-Liste der hochgesteckten Ziele in Angriff zu nehmen: das Frontend neu zu schreiben.
 
-Rather than add yet another pile of jQuery code to handle all the GDPR stuff, the idea is to fork the frontend and port it to [vue.js](https://vuejs.org/). For this too, [there is an open issue where you can follow its progress](https://github.com/freesewing/site/issues/311).
+Anstatt noch einen weiteren Haufen jQuery-Code hinzuzufügen, um den ganzen GDPR-Kram zu handhaben, ist die Idee, das Frontend zu forken und es auf [vue.js](https://vuejs.org/)zu portieren. Auch hierfür gibt es unter [eine offene Frage, deren Fortschritt du unter](https://github.com/freesewing/site/issues/311)verfolgen kannst.
 
-Given that I have zero experience with vue.js, this should be fun. If you'd like to help out, please leave a comment.
+Da ich null Erfahrung mit vue.js habe, sollte das Spaß machen. Wenn du mithelfen möchtest, hinterlasse bitte einen Kommentar.
 

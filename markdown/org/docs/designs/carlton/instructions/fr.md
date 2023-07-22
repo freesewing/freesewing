@@ -1,5 +1,5 @@
 ---
-title: "Carlton coat: Sewing Instructions"
+title: "Manteau Carlton : Instructions de couture"
 ---
 
 ### Étape 1 : Dessiner et découper les parties manquantes de la doublure et du parement

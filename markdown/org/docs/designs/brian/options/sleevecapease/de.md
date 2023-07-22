@@ -4,7 +4,7 @@ title: "Armkugel Zugabe"
 
 ***
 
-This option determines the amount of ease at the sleevecap.
+Diese Option bestimmt den Grad der Lockerung am Ärmelabschluss.
 
 <Note>
 

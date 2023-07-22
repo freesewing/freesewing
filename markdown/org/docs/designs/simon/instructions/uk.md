@@ -1,5 +1,5 @@
 ---
-title: "Simon shirt: Sewing Instructions"
+title: "Сорочка-символ: Інструкція з пошиття"
 ---
 
 <Tip>

@@ -1,12 +1,12 @@
 ---
-title: "Ursula undies: What You Need"
+title: "Ursula ondergoed: Wat je nodig hebt"
 ---
 
 Om Ursula te maken heeft u het volgende nodig:
 
 - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-- About 0.7 meters (0.8 yards) of a suitable fabric (see [Fabric options](/docs/patterns/ursula/fabric))
-- About 3 meters (3.3 yards) of underwear elastic, such as picot elastic or fold over elastic
+- Ongeveer 0,7 meter van een geschikte stof (zie [Stofopties](/docs/patterns/ursula/fabric))
+- Ongeveer 3 meter ondergoedelastiek, zoals picotelastiek of overslagelastiek
 
 <Tip>
 

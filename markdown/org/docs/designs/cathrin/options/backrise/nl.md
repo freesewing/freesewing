@@ -10,7 +10,7 @@ Nul houdt in dat de ruglijn horizontaal blijft, op hetzelfde niveau als de onder
 
 Als je de rughoogte groter maakt zal je korset achteraan hoger komen.
 
-> As this is an underbust corset, the back rise is a style choice and won't affect the fit
+> Aangezien dit een onderborstkorset is, is de stijging aan de achterkant een stijlkeuze en heeft deze geen invloed op de pasvorm.
 
 ## Effect van deze optie op het patroon
 

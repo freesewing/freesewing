@@ -1,16 +1,16 @@
 ---
 maker: "onbekend"
-caption: "A Simon for Schorsch"
+caption: "Een Simon voor Schorsch"
 date: "2020-12-28"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/242723e896e21decb6f7363a4defa62654165546-1536x2048.jpg"
-intro: "Perhaps the most adorable Simon to date, this shirt was made for a FreeSewing user's baby frog, Schorsch."
-title: "A Simon for Schorsch"
+intro: "Dit shirt, misschien wel de meest schattige Simon tot nu toe, is gemaakt voor de babykikker Schorsch van een FreeSewing-gebruiker."
+title: "Een Simon voor Schorsch"
 designs:
   - "simon"
 ---
 
 
-Perhaps the most adorable Simon to date, this shirt was made for a FreeSewing user's baby frog, Schorsch.
+Dit shirt, misschien wel de meest schattige Simon tot nu toe, is gemaakt voor de babykikker Schorsch van een FreeSewing-gebruiker.
 
-This picture was originally posted on Twitter and is reproduced here with permission.
+Deze foto werd oorspronkelijk gepost op Twitter en is hier gereproduceerd met toestemming.
 

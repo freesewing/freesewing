@@ -1,23 +1,23 @@
 ---
-maker: "unknown"
-caption: "Believe it or not, this is only his third sewing project ever."
+maker: "desconocido"
+caption: "Lo creas o no, éste es sólo su tercer proyecto de costura."
 date: "2018-02-05"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3d05ee5656f7aac511d95ed567dab54c6545cd88-1080x1080.jpg"
-intro: "A Wahid Waistcoat with bound buttonholes"
-title: "A Wahid Waistcoat with bound buttonholes"
+intro: "Un chaleco Wahid con ojales encuadernados"
+title: "Un chaleco Wahid con ojales encuadernados"
 designs:
   - "wahid"
 ---
 
-![Side view](https://posts.freesewing.org/uploads/bound_wahid_2_8cecc34558.jpg "Side view")
+![Vista lateral](https://posts.freesewing.org/uploads/bound_wahid_2_8cecc34558.jpg "Vista lateral")
 
-![Front view](https://posts.freesewing.org/uploads/bound_wahid_3_f8978b57b8.jpg "Front view")
+![Vista frontal](https://posts.freesewing.org/uploads/bound_wahid_3_f8978b57b8.jpg "Vista frontal")
 
-![Flat lay](https://posts.freesewing.org/uploads/bound_wahid_4_7ee387162d.jpg "Flat lay")
+![Colocación plana](https://posts.freesewing.org/uploads/bound_wahid_4_7ee387162d.jpg "Colocación plana")
 
-> ##### See the originals on the Instragram feed of funloveadventure
+> ##### Ver los originales en el feed de Instragram de funloveadventure
 > 
-> These images are from [the Instagram feed](https://www.instagram.com/funloveadventure/) of FIXME. They are published here with permission.
+> Estas imágenes son de [el feed de Instagram](https://www.instagram.com/funloveadventure/) de FIXME. Se publican aquí con permiso.
 
-> FIXME: What user is this?
+> FIXME: ¿Qué usuario es este?
 

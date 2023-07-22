@@ -1,5 +1,5 @@
 ---
-title: "Tamiko top: Sewing Instructions"
+title: "Tamiko top: Naai-instructies"
 ---
 
 ### Stap 1: werk het armsgat af
@@ -19,8 +19,8 @@ Zo kan de boel niet verschuiven terwijl we alles afwerken.
 
 </Note>
 
-- Stik de drie naadlijnen die op je patroon aangegeven staan. F-H, C and I-J in the diagram, represented by lines and notches on the pattern.
+- Stik de drie naadlijnen die op je patroon aangegeven staan. F-H, C en I-J in het diagram, weergegeven door lijnen en inkepingen op het patroon.
 
-### Step 3: Enjoy!
+### Stap 3: Geniet!
 
-Now enjoy your new top and it's zero waste properties!
+Geniet nu van je nieuwe top en zijn zero waste eigenschappen!

@@ -6,7 +6,7 @@ title: "Afficher Bella"
 
 Montre le contour du bloc Bella sur lequel Bee est basé
 
-This is to help give context to the other options of Bee especially when using the fit options
+Il s'agit de donner un contexte aux autres options de Bee, en particulier lors de l'utilisation des options d'ajustement
 
 <Note>
 

@@ -2,11 +2,11 @@
 title: Bartacks
 ---
 
-A bartack is a stitch of varying size and length used to reinforce fabric. It is often used on the edges of seams such as at a pocket or fly opening.
+Een bartack is een steek van verschillende grootte en lengte die wordt gebruikt om stof te verstevigen. Het wordt vaak gebruikt aan de randen van naden, zoals bij een zak of gulpopening.
 
 <Legend part="bartack">
 
-This is how a bartack displays on a pattern. 
+Zo wordt een bartack weergegeven op een patroon. 
 
 </Legend>
 

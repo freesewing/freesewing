@@ -1,5 +1,5 @@
 ---
-title: "Shin swim trunks: Sewing Instructions"
+title: "Maillot de bain Shin : Instructions de couture"
 ---
 
 > ### Images à venir bientôt

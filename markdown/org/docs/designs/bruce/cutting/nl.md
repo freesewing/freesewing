@@ -1,5 +1,5 @@
 ---
-title: "Bruce boxer briefs: Cutting Instructions"
+title: "Bruce boxerslip: Knip instructies"
 ---
 
 Bruce bestaat uit een achterkant, en twee zijden, inzetstukken en voorkanten.

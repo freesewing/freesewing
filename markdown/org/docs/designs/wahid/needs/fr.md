@@ -1,5 +1,5 @@
 ---
-title: "Wahid waistcoat: What You Need"
+title: "Gilet Wahid Ce dont tu as besoin"
 ---
 
 Pour faire Wahid, vous aurez besoin des fournitures suivantes :

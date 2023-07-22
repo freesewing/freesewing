@@ -1,15 +1,15 @@
 ---
-title: "Yuri hoodie: Sewing Instructions"
+title: "Sweat à capuche Yuri : Instructions de couture"
 ---
 
 <Note>
 
-Ce patron peut être cousu avec ou avec une surjeteuse. To _finish_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
+Ce patron peut être cousu avec ou avec une surjeteuse. Pour _finir_ les coutures sans surjeteuse/sertisseuse, tu peux utiliser ta méthode préférée ou l'une des méthodes ci-dessous :
 
-##### Finishing Method 1
+##### Méthode de finition 1
 
-- Press open the seam allowances.
-- Then on the good side, _edgestitch_ 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
+- Ouvre les surplus de couture au fer à repasser.
+- Ensuite, sur le bon côté, _pique_ à 3 mm (1/8 de pouce) ou plus près des deux côtés de la couture en attrapant les surplus de couture en dessous.
 - Sur le côté envers couper les marges de couture près du bord.
 
 ##### Méthode de finition 2
@@ -28,17 +28,17 @@ Si vous utilisez une surjeteuse, vous pouvez coudre les coutures qui ont besoin 
 ## Étape 1 : Coudre les Goussets
 
 - Endroit contre endroit, coudre les goussets aux panneaux avant le long des coutures latérales.
-- _finish_ seams.
+- _Finition_ coutures.
 
 ## Étape 2 : Coudre les coutures des épaules
 
 - Endroit contre endroit, coudre les pièces avant au dos le long des coutures d'épaule.
-- _finish_ seams.
+- _Finition_ coutures.
 
 ## Étape 3 : Fixer les manches
 
 - Endroit contre endroit, en faisant correspondre le repères dos au repère avant, coudre les manches au corps.
-- _finish_ seams.
+- _Finition_ coutures.
 
 <Note>
 
@@ -65,7 +65,7 @@ Il ne s'agit là que d'une méthode d'ourlet, si vous préférez une autre faço
 ## Étape 5 : Fermer les côtés
 
 - Avec côtés endroits ensemble, avec les coutures d'épaules alignées, commencer au bord de la manche et coudre la manche ensemble que coudre le gousset et le dos ensemble.
-- _finish_ seams.
+- _Finition_ coutures.
 - Répétez pour l'autre manche et ouverture latérale.
 
 ## Étape 6 : Ourler les bords bruts
@@ -80,7 +80,7 @@ Suivez cette étape deux fois, une fois pour la capuche extérieure et une fois 
 - Endroit contre endroit, coudre le bord long du centre de la capuche vers le bord extérieur des côtés de la capuche.
 - Endroit contre endroit, coudre le bord long restant du centre de la capuche vers le bord extérieur de l'autre côté de la capuche.
 - Repassez la couture avec les marges ouvertes.
-- _finish_ seams.
+- _Finition_ coutures.
 
 <Note>
 

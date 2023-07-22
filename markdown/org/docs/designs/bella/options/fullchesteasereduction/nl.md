@@ -1,10 +1,10 @@
 ---
-title: "Full chest ease reduction"
+title: "Vermindering van de volle buste overwijdte"
 ---
 
 ***
 
-Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area
+Hiermee kun je de overwijdte rond de borst onafhankelijk verminderen om het daar strak(er) te laten aansluiten
 
 ## Effect van deze optie op het patroon
 

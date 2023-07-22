@@ -1,5 +1,5 @@
 ---
-title: "Bent body Block: Required Measurements"
+title: "Gebogen lichaam Blok: Vereiste afmetingen"
 ---
 
 <PatternMeasurements pattern='bent' />

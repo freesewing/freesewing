@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4addf70ac76582708c6aa
 intro: "Вельветові штани для Гаса, від Fabricated"
 title: "Вельветові штани для Гаса, від Fabricated"
 designs:
-  - "theo"
+  - "Тео."
 ---
 
 

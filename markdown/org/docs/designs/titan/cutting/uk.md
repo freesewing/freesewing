@@ -1,5 +1,5 @@
 ---
-title: "Titan trouser block: Cutting Instructions"
+title: "Титановий брючний блок: Інструкція з розкрою"
 ---
 
 **Основна тканина**

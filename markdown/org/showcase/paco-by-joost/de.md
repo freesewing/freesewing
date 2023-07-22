@@ -1,16 +1,16 @@
 ---
 maker: "Joost De Cock"
-caption: "These Paco pants were the initial test for this pattern"
+caption: "Diese Paco-Hose war der erste Test für dieses Muster"
 date: "2020-08-08"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1bc82d4abb50ea1b7bda32dd64521e9ecfdd8467-2048x1536.jpg"
-intro: "Here's the very first Paco pair I've made. These ones have side pockets, no back pockets, and an elasticated hem."
-title: "Joost does Paco"
+intro: "Hier ist das allererste Paco-Paar, das ich gemacht habe. Diese hier haben Seitentaschen, keine Gesäßtaschen und einen elastischen Saum."
+title: "Joost macht Paco"
 designs:
   - "paco"
 ---
 
 
-Here's the very first Paco pair I've made. These ones have side pockets, no back pockets, and an elasticated hem.
+Hier ist das allererste Paco-Paar, das ich gemacht habe. Diese hier haben Seitentaschen, keine Gesäßtaschen und einen elastischen Saum.
 
-In other words, these are made with all default options.
+Mit anderen Worten: Sie werden mit allen Standardoptionen erstellt.
 

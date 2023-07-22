@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1bc82d4abb50ea1b7bda3
 intro: "Ось найперша пара Paco, яку я зробив. Вони мають бокові кишені, без задньої кишені та еластичний поділ."
 title: "Joost does Paco"
 designs:
-  - "paco"
+  - "пако"
 ---
 
 

@@ -1,57 +1,41 @@
 ---
 date: "2023-04-01"
 edition: "2023q2"
-intro: "Welcome to the 2023 Spring edition of the FreeSewing newsletter."
-title: "2023 Spring edition"
+intro: "Bienvenido a la edición de primavera 2023 del boletín FreeSewing."
+title: "2023 Edición de primavera"
 ---
 
-Welcome to the 2023 Spring edition of the FreeSewing newsletter.
+Bienvenido a la edición de primavera 2023 del boletín FreeSewing.
 
-Here's what's we've included for you today:
+Esto es lo que hemos incluido para ti hoy:
 
-- ☕ Keeping up with all the hottest FreeSewing gossip (3-minute read - by Karen)
-- 🐑 Call for pattern shepherds (2-minute read - by Karen)
-- 💵 Looking for a 1000 true fans (3-minute read - by Joost)
-- 🕵️ Behind the Seams: Benjamin F. (4-minute read - by Benjamin & Karen)
-- 🦈 Want to write for the newsletter? (1-minute read - by Karen)
-
-&nbsp;
+- ☕ Estar al día de todos los cotilleos más calientes de FreeSewing (lectura de 3 minutos - por Karen)
+- 🐑 Convocatoria de pastores de patrones (lectura de 2 minutos - por Karen)
+- 💵 En busca de 1000 verdaderos fans (lectura de 3 minutos - por Joost)
+- 🕵️ Tras las costuras: Benjamin F. (lectura de 4 minutos - por Benjamin & Karen)
+- 🦈 ¿Quieres escribir para el boletín? (Lectura de 1 minuto - por Karen)
 
 &nbsp;
 
-## ☕ Keeping up with all the hottest FreeSewing gossip
-
-Okay, so you're a fan of FreeSewing, you're excited for V3, and in the meantime, you're wondering where to get all the hottest gossip about what's going on behind the scenes. Fear not! We've got solutions for you.
-
-First off, have you checked out our [Discord](https://freesewing.org/community/where/discord/)? This is where you can catch all the fun previews, like what patterns are slated for release in V3, recommendations and tips from fabric types to hard-to-find hardware to sewing machine maintenance, all the cool tinkering developers are working on behind the scenes, and more. If you want to be truly in the know, this is where it's at. (It's also literally where it's at, if you want to join FreeSewing's biweekly contributor calls, which happen in the voice chat.)
-
-If you hate Discord, there are still options for you, though. Benjamin F. (of "Behind the Seams" fame) has been recapping the highlights from Discord as a GitHub discussion here: [Discord recaps](https://github.com/freesewing/freesewing/discussions/3523). Check it out for a quick perusal of recent hot topics.
-
-And last but not least, there is of course the FreeSewing site itself. While some updates are on hold pending V3, you can still check out our Showcases to get a peek into some of the wonderful and impressive things that FreeSewing users have been making in recent months. A few highlights:
-
-- The tiniest Hi ever made: [MicroHi](https://freesewing.org/showcase/microhi)
-- This detailed how-to on making a [drop-shoulder Sven](https://freesewing.org/showcase/drop-shoulder-sven)
-- A matching set of [multi-generational Florents](https://freesewing.org/showcase/matching-florents)
-- How to [modify Aaron into a tank dress](https://freesewing.org/showcase/aaron-dress-by-ts)
-- An incredible, impeccable [Classic Carlton by Boris](https://freesewing.org/showcase/carlton-by-boris) (check out the reinforcement embroidery!) -->
-
-...And a bunch more that didn't fit here but are equally incredible, and you'll just have to go check out the [Showcase](https://freesewing.org/showcase/) to find out more. 😉
-
 &nbsp;
 
----
+## ☕ Mantente al día de todos los cotilleos más calientes de FreeSewing
 
-&nbsp;
+Vale, eres un fan de FreeSewing, estás entusiasmado con la V3 y, mientras tanto, te preguntas dónde conseguir los cotilleos más calientes sobre lo que ocurre entre bastidores. ¡No temas! Tenemos soluciones para ti.
 
-## 🐑 Call for pattern shepherds
+En primer lugar, ¿has consultado nuestro Discord [](https://freesewing.org/community/where/discord/)? Aquí es donde puedes ver todos los avances divertidos, como los patrones que se publicarán en la V3, recomendaciones y consejos sobre tipos de tejidos, accesorios difíciles de encontrar, mantenimiento de la máquina de coser, todas las novedades que los desarrolladores están preparando entre bastidores y mucho más. Si quieres estar realmente al corriente, aquí es donde hay que estar. (También es literalmente donde está, si quieres unirte a las llamadas quincenales de colaboradores de FreeSewing, que tienen lugar en el chat de voz).
 
-Are you an expert at making a particular FreeSewing pattern? Maybe you've tried all the options, or you know why it goes haywire in certain edge cases, or you've made it for all your friends and fam as gifts? If this rings true, then yours is exactly the kind of expertise we're looking for.
+Sin embargo, si odias Discord, aún hay opciones para ti. Benjamin F. (de "Detrás de las costuras") ha estado recapitulando lo más destacado de la Discordia como un debate de GitHub aquí: [Discord recaps](https://github.com/freesewing/freesewing/discussions/3523). Compruébalo para echar un vistazo rápido a los últimos temas candentes.
 
-As you might have noticed, FreeSewing is growing and adding new capabilities! And when V3 rolls out, there are several new patterns that will come with it. But every pattern could use someone who is familiar with its foibles and intricacies. A lot of the time, this is the pattern designer. In other cases, it's the person who developed the pattern's documentation. And then there are the patterns that exist on FreeSewing's site, but their designer has moved on to new challenges, or no one has made the pattern in a while. These patterns can sometimes fall prey to problems that no one notices. Then, when new users try them out, it can be a needlessly rough experience.
+Y por último, pero no por ello menos importante, está por supuesto el propio sitio FreeSewing. Aunque algunas actualizaciones están en suspenso a la espera de la V3, todavía puedes echar un vistazo a nuestros Escaparates para ver algunas de las maravillosas e impresionantes cosas que los usuarios de FreeSewing han estado haciendo en los últimos meses. Algunos puntos destacados:
 
-A pattern shepherd is someone who keeps an eye on things so this doesn't happen for their pattern. You don't need to be a programming prodigy or a sewing savant for this role, just someone who is familiar with the pattern, what goes into it, and how it goes together. If something breaks, you might fix it yourself, but you could also file a bug report to let the rest of the community know and recruit help. If this sounds like something you'd be interested in, reply to this email and let us know!
+- El Hi más pequeño jamás fabricado: [MicroHi](https://freesewing.org/showcase/microhi)
+- Este tutorial detallado sobre cómo hacer un hombro caído [Sven](https://freesewing.org/showcase/drop-shoulder-sven)
+- Un juego a juego de [Florents multigeneracionales](https://freesewing.org/showcase/matching-florents)
+- Cómo modificar [Aaron en un vestido de tirantes](https://freesewing.org/showcase/aaron-dress-by-ts)
+- Un increíble e impecable [Classic Carlton de Boris](https://freesewing.org/showcase/carlton-by-boris) (¡fíjate en el bordado de refuerzo!) -->
 
-Bonus: FreeSewing has a bug bounty program that nets you (a) our undying appreciation, and (b) sometimes cool swag.
+...Y un montón más que no cabían aquí pero que son igualmente increíbles, y que tendrás que consultar en el Escaparate [](https://freesewing.org/showcase/) para saber más. 😉
 
 &nbsp;
 
@@ -59,34 +43,15 @@ Bonus: FreeSewing has a bug bounty program that nets you (a) our undying appreci
 
 &nbsp;
 
-## 💵 Looking for a 1000 true fans
+## 🐑 Convocatoria para pastores de patrones
 
-I realized a few weeks ago that it has now been more than 6 months that we started working on version 3 of FreeSewing, and that's both an eternity and not very long at all.
+¿Eres una experta en la confección de un determinado patrón de FreeSewing? Tal vez hayas probado todas las opciones, o sepas por qué se descontrola en ciertos casos extremos, o lo hayas hecho para todos tus amigos y familiares como regalo... Si esto te parece cierto, entonces la tuya es exactamente la clase de experiencia que estamos buscando.
 
-It's an eternity if you've been waiting with bated breath for its release. (If you're in this group, then please bear with us because gosh have we been busy). But it's not very long at all if you consider all the changes that we are cramming into this new major version. I took stock the other day and I realized there is almost nothing that we aren't completely redesigning or doing differently and better. A brief list from the top of my mind:
+Como habrás notado, ¡FreeSewing está creciendo y añadiendo nuevas capacidades! Y cuando salga la V3, vendrán con ella varios patrones nuevos. Pero a todo patrón le vendría bien alguien que conociera sus debilidades y complejidades. Muchas veces, se trata del diseñador del patrón. En otros casos, es la persona que desarrolló la documentación del patrón. Y luego están los patrones que existen en el sitio de FreeSewing, pero su diseñador ha pasado a nuevos retos, o hace tiempo que nadie hace el patrón. Estos patrones a veces pueden ser presa de problemas de los que nadie se da cuenta. Luego, cuando los nuevos usuarios los prueban, puede ser una experiencia innecesariamente dura.
 
-- Database: From MongoDB to Sqlite
-- Backend: Completely rewritten
-- Javascript: From CJS/ESM to pure ESM, and from default exports to named exports
-- Bundler: From Rollup to Esbuild
-- Hosting: From Netlify to Vercel
-- FreeSewing.dev: From Gatsby to NextJS
-- FreeSewing.org: From Gatsby to NextJS, and being completely rewritten
-- Development environment: From CRA (Create React App) to NextJS
-- Component library: From MaterialUI/MUI to TailwindCSS/DaisyUI
+Un pastor de patrones es alguien que vigila las cosas para que esto no le ocurra a su patrón. No necesitas ser un prodigio de la programación ni un experto en costura para este papel, sólo alguien que esté familiarizado con el patrón, con lo que lleva y con cómo se une. Si algo se rompe, puedes arreglarlo tú mismo, pero también puedes enviar un informe de errores para que el resto de la comunidad lo sepa y reclute ayuda. Si esto te parece algo en lo que estarías interesado, ¡responde a este correo electrónico y dínoslo!
 
-I am sticking to technical changes here, there's obviously new features and other things that will be different/better. But these are the foundations that are changing, so is the kind of stuff that won't be immediately obvious to you.
-
-The one thing that is not on the list above is our payment processor (currently PayPal, we'll probably migrate to Stripe) which brings me to the one thing we haven't (yet) changed: Subscriptions.
-
-Currently, we have 3 tiers of subscriptions. 2, 4, and 8 euro per month. Some users have reached out to me because they wanted to do more for FreeSewing and [we've setup a 25$/month subscription plan for those generous souls](https://static.freesewing.org/fs-25/).
-
-That got me thinking about the subscription model and how the project is supported financially in general. You may remember that I wrote last year that FreeSewing's revenue was trending ever so slightly downward, and it's something that I tend to get nervous about when I consider how many changes we are making. People don't typically like change, and there is a certain risk that we'll alienate people with v3.
-
-Then again, mass appeal is never been our shtick. We don't need millions, [all you need is a 1000 true fans](https://kk.org/thetechnium/1000-true-fans/). So in v3, we will also overhaul subscriptions. We'll implement a pure [pay what you can](https://en.wikipedia.org/wiki/Pay_what_you_can) model. So today, you can either not pay, or pay 2, 4, 8, or 25 euro/dollar per month. In the future, you will still be able to not pay, or pay whatever you feel is right. Current subscriptions will not be terminated, although you are of course welcome to migrate to the new subscription model.
-
-The future will tell whether this will be good or bad move for FreeSewing. But I believe that betting on our true fans is our winning strategy. So that's what we'll do 🤞
-
+Bonificación: FreeSewing tiene un programa de recompensas por errores que te proporciona (a) nuestro eterno agradecimiento, y (b) a veces un estupendo botín.
 
 &nbsp;
 
@@ -94,47 +59,34 @@ The future will tell whether this will be good or bad move for FreeSewing. But I
 
 &nbsp;
 
+## 💵 Buscando 1000 verdaderos fans
 
-## 🕵️ Behind the Seams: Benjamin F.
+Hace unas semanas me di cuenta de que hace ya más de 6 meses que empezamos a trabajar en la versión 3 de FreeSewing, y eso es a la vez una eternidad y poco tiempo.
 
-FreeSewing contributor Benjamin (BenJamesBen on GitHub) has been absolutely astounding us lately with his work supporting FreeSewing. So, we asked him if he wouldn't mind being the subject of this quarter's newsletter, and of course he not only said yes, but came back with something fantastic, funny, and unique. As always, any errors, oversights, etc. are entirely the fault of the interviewer!
+Es una eternidad si has estado esperando con ansia su lanzamiento. (Si perteneces a este grupo, por favor, ten paciencia porque hemos estado muy ocupados). Pero no es mucho tiempo si tienes en cuenta todos los cambios que estamos introduciendo en esta nueva versión principal. El otro día hice balance y me di cuenta de que no hay casi nada que no estemos rediseñando por completo o haciendo de forma diferente y mejor. Una breve lista que me viene a la cabeza:
 
-### Tell us about your involvement with FreeSewing.
-Thank you for giving me the opportunity to talk about FreeSewing. I think that it's a pretty great organization in that it provides patterns free of charge to people. To me, that is the best thing that FreeSewing does. In the United States there is a retail store that regularly has sales where you can buy paper patterns for $2.00 USD, but I've heard that patterns are much more expensive in other countries. And, in some places paper patterns simply aren't available at all in stores. FreeSewing provides free patterns to everyone!
+- Base de datos: De MongoDB a Sqlite
+- Backend: Completamente reescrito
+- Javascript: De CJS/ESM a ESM puro, y de exportaciones por defecto a exportaciones con nombre
+- Bundler: De Rollup a Esbuild
+- Alojamiento: De Netlify a Vercel
+- FreeSewing.dev: De Gatsby a NextJS
+- FreeSewing.org: De Gatsby a NextJS, y siendo completamente reescrito
+- Entorno de desarrollo: De CRA (Create React App) a NextJS
+- Biblioteca de componentes: De MaterialUI/MUI a TailwindCSS/DaisyUI
 
-### I see that you do a lot of coding-type work for FreeSewing?
-I used to work doing computer stuff (software QA and testing), and my education background is also in computer science. A lot of what I've done in the past involves looking at code that other people have written, figuring out what it does, and troubleshooting issues. So, I've just taken that background and applied it to FreeSewing, testing the website and patterns to make sure things are working correctly, trying to fix bugs that pop up.
+Aquí me estoy ciñendo a los cambios técnicos, obviamente hay nuevas funciones y otras cosas que serán diferentes/mejores. Pero estas son las bases que están cambiando, así como el tipo de cosas que no te resultarán evidentes de inmediato.
 
-### Are you also a sewist?
-That's actually a good question, in a philosophical sense that is. I own a sewing machine and took sewing lessons. I have a fabric stash and multiple unfinished projects I should be working on. But, actual sewing? I don't seem to do much sewing. I do spend a lot of time watching sewing videos on YouTube. Does watching sewing videos count towards being a sewist?
+Lo único que no está en la lista anterior es nuestro procesador de pagos (actualmente PayPal, probablemente migraremos a Stripe), lo que me lleva a lo único que no hemos cambiado (todavía): las Suscripciones.
 
-### What unfinished projects are you avoiding working on and watching YouTube instead?
-I started working on a pirate/18th century shirt design for FreeSewing. All the code is written, and it produces patterns just fine. However, I haven't actually tested it to see if the generated patterns make sense fit-wise. (I guessed at the pattern measurements, just inventing numbers that seemed to make sense.) The next step is to make a test garment to check fit, make alterations to the pattern, and change the code accordingly.
+Actualmente, tenemos 3 niveles de suscripción. 2, 4 y 8 euros al mes. Algunos usuarios se han puesto en contacto conmigo porque querían hacer más por FreeSewing y [hemos creado un plan de suscripción de 25 $/mes para esas almas generosas](https://static.freesewing.org/fs-25/).
 
-I also owe my sister a pillow made to custom measurements. (I basically just need to sew a rectangular bag with a zipper closure that she can stuff it with extra memory foam that she has own hand.) And finally, my first, original unfinished project is a Hawaiian/bowling style camp shirt, Kwik Sew 3484. (I bought the pattern back when Kwik Sew was its own company and still made garment patterns, if that gives you an idea of just how long the project has been unfinished.)
+Eso me hizo pensar en el modelo de suscripción y en cómo se financia el proyecto en general. Quizá recuerdes que el año pasado escribí que los ingresos de FreeSewing tendían ligeramente a la baja, y es algo que tiende a ponerme nerviosa cuando considero la cantidad de cambios que estamos haciendo. A la gente no le suelen gustar los cambios, y existe un cierto riesgo de que nos alejemos de la gente con la v3.
 
-### The pirate shirt sounds interesting.
-I chose it because 1. I actually want a pirate shirt, and 2. It seemed like a good, easy design to make (all the pieces are rectangles!). However, although I am somewhat interested in historical clothing, I am not at all interested in historical sewing methods-- sewing by hand, that is. I plan to use a sewing machine to sew my pirate shirt.
+Por otra parte, el atractivo para las masas nunca ha sido nuestro lema. No necesitamos millones, [todo lo que necesitas son 1000 verdaderos fans](https://kk.org/thetechnium/1000-true-fans/). Así que en la v3, también revisaremos las suscripciones. Implantaremos un modelo puro de [paga lo que puedas](https://en.wikipedia.org/wiki/Pay_what_you_can) . Así que hoy puedes no pagar o pagar 2, 4, 8 o 25 euros/dólares al mes. En el futuro, seguirás pudiendo no pagar, o pagar lo que consideres correcto. Las suscripciones actuales no se cancelarán, aunque, por supuesto, puedes migrar al nuevo modelo de suscripción.
 
-Fun fact: Pirates also sewed using sewing machines (that they took from the ships they plundered). However, instead of removing pins as they sewed, they would leave the pins in and sew over them-- which can be really dangerous. That is why so many pirates had to wear eye patches.
+El futuro dirá si esto será bueno o malo para FreeSewing. Pero creo que apostar por nuestros verdaderos fans es nuestra estrategia ganadora. Así que eso es lo que haremos 🤞
 
-### You said you owned a sewing machine?
-It's a Kenmore-badged machine that was made by Janome. I think it was the most basic model available at the time. No stitch length or width adjustment, 4-step buttonhole, front loading bobbin. I bought it new at Sears back when Sears still existed and sold sewing machines. (That should give you another clue about how long my camp shirt unfinished project has been unfinished!)
-
-### What sewing projects would you like to work on in the future, that is assuming you finish your existing unfinished projects?
-I would like to make my own tailor's ham. (Another simple pattern-- just two ovals.) I am considering making my own underpants since I need some new ones. Though, I am not sure whether it might be more practical or cost effective to simply buy them from the store. And, I am somewhat intimidated of sewing knit fabric. I've also gotten interested in patterns for sewing your own custom, made-to-measure dress form/mannequin. However, that seems like it might be too difficult a project.
-
-Finally, someday I would like to make a garment out of upholstery or curtain fabric. It seems like it might be an interesting challenge to use that type of fabric. Plus, Scarlett O'Hara wore a dress made from curtains, and as a result she got to marry Rhett Butler. Maria made clothes from curtains, and she got to marry Captain Von Trapp. (And, she was almost a nun!) If I were to make clothes out of curtains, imagine who I could marry!?
-
-### Getting back to coding, is it a difficult task to create a FreeSewing pattern? I'm thinking about people who might be experienced sewists who can design patterns but who don't have coding knowledge.
-It isn't necessarily difficult converting an existing pattern into code. The first challenge is to learn how to think about how the pattern is drafted and describe it in terms of measurements and angles. Sort of like if you had to describe how to draft a pattern to someone over the phone or through text messages. Once you are able to write down instructions like, "draw a Point A", "draw another point 10 cm at a 45 degree angle above and to the right of A and label it Point B", "draw a line between Point A and Point B", etc., you can translate the drafting instructions into code.
-
-The next challenge might be to take the existing pattern which was made for one specific person and think about how it might be converted to patterns for other people with different measurements. You would have to think, "why was this part's fabric measurement 10 cm"? If it is because it was slightly larger than the wrist circumference, then perhaps the measurement could instead be converted to "the wrist circumference, plus 10%". I think that the skillset might be similar to that of pattern grading.
-
-For the coding itself, perhaps the best way to learn (apart from taking a formal coding course of which there are plenty of free ones on the internet) might be to look at the code for an existing FreeSewing design. I suspect that many people learn how to code by looking at existing code, copying it, and making changes to it to see what the changes do. FreeSewing provides a lab tool that allows you to view changes to the designs that you make or edit, so you can play around with things and learn from experimentation. If you need any help or get stuck, there are plenty of people on the Discord who would be happy to help!
-
-### Thank you. Any final words?
-I find it somewhat amazing that the FreeSewing community is so geographically diverse, spread throughout the world, and still able to communicate with and help each other. I am glad to be part of this community. Though, it occurs to me that with the anonymity of the internet, nobody has actually seen me or knows who I am. For all anybody knows, I could be a cat on the internet just pretending to be a person. (If I were a cat, this wouldn't be considered "catfishing". We cats just call it "fishing"!)
 
 &nbsp;
 
@@ -143,21 +95,69 @@ I find it somewhat amazing that the FreeSewing community is so geographically di
 &nbsp;
 
 
+## 🕵️ Tras las costuras: Benjamin F.
+
+Benjamin (BenJamesBen en GitHub), colaborador de FreeSewing, nos ha asombrado últimamente con su trabajo de apoyo a FreeSewing. Así que le preguntamos si no le importaría ser el tema del boletín de este trimestre y, por supuesto, no sólo dijo que sí, sino que volvió con algo fantástico, divertido y único. Como siempre, ¡cualquier error, descuido, etc. es enteramente culpa del entrevistador!
+
+### Háblanos de tu participación en FreeSewing.
+Gracias por darme la oportunidad de hablar sobre FreeSewing. Creo que es una organización estupenda porque proporciona patrones gratuitos a la gente. Para mí, eso es lo mejor que hace FreeSewing. En Estados Unidos hay una tienda que tiene regularmente rebajas en las que puedes comprar patrones de papel por 2,00 USD, pero he oído que los patrones son mucho más caros en otros países. Y, en algunos lugares, los patrones de papel simplemente no están disponibles en las tiendas. ¡FreeSewing ofrece patrones gratuitos a todo el mundo!
+
+### ¿Veo que haces mucho trabajo de codificación para FreeSewing?
+Antes trabajaba haciendo cosas de informática (control de calidad y pruebas de software), y mi formación también es en informática. Gran parte de lo que he hecho en el pasado consiste en mirar el código que han escrito otras personas, averiguar lo que hace y solucionar problemas. Así que he cogido ese bagaje y lo he aplicado a FreeSewing, probando el sitio web y los patrones para asegurarme de que las cosas funcionan correctamente, intentando arreglar los errores que aparecen.
+
+### ¿Eres también costurera?
+En realidad es una buena pregunta, en un sentido filosófico. Tengo una máquina de coser y recibí clases de costura. Tengo un alijo de telas y múltiples proyectos inacabados en los que debería estar trabajando. Pero, ¿coser de verdad? Parece que no coso mucho. Paso mucho tiempo viendo vídeos de costura en YouTube. ¿Mirar vídeos de costura cuenta para ser costurera?
+
+### ¿En qué proyectos inacabados evitas trabajar y en su lugar ves YouTube?
+He empezado a trabajar en el diseño de una camisa pirata del siglo XVIII para FreeSewing. Todo el código está escrito, y produce patrones perfectamente. Sin embargo, en realidad no lo he probado para ver si los patrones generados tienen sentido desde el punto de vista del ajuste. (Adiviné las medidas del patrón, inventando números que parecían tener sentido). El siguiente paso es hacer una prenda de prueba para comprobar el ajuste, hacer modificaciones en el patrón y cambiar el código en consecuencia.
+
+También le debo a mi hermana un cojín hecho a medida. (Básicamente, sólo necesito coser una bolsa rectangular con cierre de cremallera que ella pueda rellenar con espuma de memoria extra que tenga a mano). Y por último, mi primer proyecto original inacabado es una camisa de campamento de estilo hawaiano/bowling, Kwik Sew 3484. (Compré el patrón cuando Kwik Sew era su propia empresa y aún hacía patrones de prendas de vestir, si eso te da una idea de cuánto tiempo ha estado inacabado el proyecto).
+
+### La camisa pirata suena interesante.
+Lo elegí porque 1. En realidad quiero una camiseta pirata, y 2. Parecía un diseño bueno y fácil de hacer (¡todas las piezas son rectángulos!). Sin embargo, aunque me interesa algo la ropa histórica, no me interesan en absoluto los métodos de costura históricos, es decir, la costura a mano. Pienso utilizar una máquina de coser para coser mi camisa pirata.
+
+Dato curioso: los piratas también cosían utilizando máquinas de coser (que cogían de los barcos que saqueaban). Sin embargo, en lugar de quitar los alfileres mientras cosían, dejaban los alfileres puestos y cosían por encima, lo que puede ser realmente peligroso. Por eso muchos piratas tenían que llevar parches en los ojos.
+
+### ¿Dijiste que tenías una máquina de coser?
+Es una máquina con la marca Kenmore que fue fabricada por Janome. Creo que era el modelo más básico disponible en aquel momento. Sin ajuste de longitud ni anchura de puntada, ojal de 4 pasos, bobina de carga frontal. La compré nueva en Sears, cuando Sears aún existía y vendía máquinas de coser. (¡Eso debería darte otra pista sobre cuánto tiempo lleva inacabado mi proyecto de camiseta de campamento!)
+
+### ¿En qué proyectos de costura te gustaría trabajar en el futuro, suponiendo que termines tus proyectos inacabados?
+Me gustaría hacer mi propio jamón de sastre. (Otro patrón sencillo: sólo dos óvalos). Estoy pensando en hacerme mis propios calzoncillos, ya que necesito unos nuevos. Aunque no estoy segura de si sería más práctico o rentable comprarlos simplemente en la tienda. Además, me intimida un poco coser tejido de punto. También me he interesado por los patrones para coser tu propia forma de vestido/maniquí a medida. Sin embargo, parece que podría ser un proyecto demasiado difícil.
+
+Por último, algún día me gustaría hacer una prenda con tela de tapicería o de cortina. Parece que podría ser un reto interesante utilizar ese tipo de tela. Además, Scarlett O'Hara llevaba un vestido hecho con cortinas, y como resultado consiguió casarse con Rhett Butler. María confeccionaba ropa con cortinas y consiguió casarse con el capitán Von Trapp. (Y, ¡casi fue monja!) Si hiciera ropa con cortinas, ¡imagínate con quién podría casarme!?
+
+### Volviendo a la codificación, ¿es una tarea difícil crear un patrón de FreeSewing? Estoy pensando en personas que podrían ser costureras experimentadas que pueden diseñar patrones pero que no tienen conocimientos de codificación.
+No es necesariamente difícil convertir un patrón existente en código. El primer reto es aprender a pensar en cómo se dibuja el patrón y describirlo en términos de medidas y ángulos. Algo así como si tuvieras que describirle a alguien por teléfono o a través de mensajes de texto cómo redactar un patrón. Una vez que seas capaz de escribir instrucciones como "dibuja un Punto A", "dibuja otro punto 10 cm en un ángulo de 45 grados por encima y a la derecha de A y etiquétalo como Punto B", "dibuja una línea entre el Punto A y el Punto B", etc., podrás traducir las instrucciones de dibujo a código.
+
+El siguiente reto podría ser tomar el patrón existente que se hizo para una persona concreta y pensar en cómo podría convertirse en patrones para otras personas con medidas diferentes. Tendrías que pensar: "¿por qué la medida del tejido de esta pieza era de 10 cm? Si es porque era ligeramente mayor que la circunferencia de la muñeca, entonces quizá la medida podría convertirse en "la circunferencia de la muñeca, más un 10%". Creo que el conjunto de habilidades podría ser similar al de la clasificación de patrones.
+
+Para la codificación en sí, quizás la mejor manera de aprender (aparte de hacer un curso formal de codificación, de los que hay muchos gratuitos en Internet) sea mirar el código de un diseño existente de FreeSewing. Sospecho que mucha gente aprende a codificar mirando el código existente, copiándolo y haciéndole cambios para ver qué hacen los cambios. FreeSewing proporciona una herramienta de laboratorio que te permite ver los cambios en los diseños que haces o editas, para que puedas jugar con las cosas y aprender de la experimentación. Si necesitas ayuda o te quedas atascado, ¡hay mucha gente en el Discord que estará encantada de ayudarte!
+
+### Gracias. ¿Algunas palabras finales?
+Me parece sorprendente que la comunidad FreeSewing sea tan diversa geográficamente, esté repartida por todo el mundo y aún así sea capaz de comunicarse y ayudarse mutuamente. Me alegro de formar parte de esta comunidad. Aunque, se me ocurre que con el anonimato de Internet, nadie me ha visto realmente ni sabe quién soy. Por lo que todos saben, podría ser un gato en Internet haciéndome pasar por una persona. (Si fuera un gato, esto no se consideraría "catfishing". Los gatos lo llamamos simplemente "pescar")
+
+&nbsp;
+
+---
+
+&nbsp;
 
 
-## 🦈 Want to write for the newsletter?
 
-Hey! It's Karen, your friend from the [contributor calls](https://freesewing.org/community/calls/), the [Discord](discord.freesewing.org), and a bunch of the stuff written in this newsletter! Every quarter, we put out this newsletter as a way of keeping folks caught up on what's new with FreeSewing, cool updates, impressive accomplishments, weird projects, etc. But it only works because there's a whole incredible cohort of folks creating, designing, and contributing. (Here's where you come in.)
 
-If you read this newsletter and thought:
-- "But what about fill-in-the-blank question?" or
-- "Ooh, that reminds me of a FreeSewing project I've been working on behind the scenes..." or
-- "Wow, I wish someone would do a deep dive on this topic!"
+## 🦈 ¿Quieres escribir para el boletín?
 
-...We would love to know that. And if you want to write that article yourself, well then I will personally be overjoyed and will help you in any way I can to make that possibility a reality.
+¡Eh! Soy Karen, tu amiga de las llamadas a colaboradores [](https://freesewing.org/community/calls/), el Discord [](discord.freesewing.org), ¡y un montón de cosas escritas en este boletín! Cada trimestre, publicamos este boletín para mantener a la gente al día de las novedades de FreeSewing, actualizaciones interesantes, logros impresionantes, proyectos extraños, etc. Pero sólo funciona porque hay toda una cohorte increíble de gente creando, diseñando y contribuyendo. (Aquí es donde entras tú).
 
-Maybe you made a garment that required some clever hacking or took on a life of its own, and you're really proud of it. Maybe you've got a fork of the FreeSewing monorepo where you're tinkering away with something exciting. Maybe you don't know what you'd like to write about, but you love FreeSewing and want to contribute, or you're hoping to build your cred as a reputable wordsmith. (Okay, actually, reputable might be a stretch, but that's part of our charm.)
+Si lees este boletín y piensas:
+- "¿Pero qué pasa con la pregunta de rellenar el espacio en blanco?" o
+- "Ooh, eso me recuerda a un proyecto de FreeSewing en el que he estado trabajando entre bastidores..." o
+- "¡Vaya, ojalá alguien hiciera una inmersión profunda en este tema!"
 
-Reach out! You can find us on [Discord](discord.freesewing.org), or on [Github](https://github.com/freesewing/), or you can just reply to this email. We'd love to hear from you. 🧡
+...Nos encantaría saberlo. Y si quieres escribir tú mismo ese artículo, pues yo personalmente estaré encantado y te ayudaré en todo lo que pueda para hacer realidad esa posibilidad.
+
+Tal vez hayas confeccionado una prenda que requirió un poco de ingenio o que cobró vida propia, y estás muy orgulloso de ella. Tal vez tengas una bifurcación del monorepo FreeSewing en la que estés retocando algo emocionante. Tal vez no sepas sobre qué te gustaría escribir, pero te encanta FreeSewing y quieres contribuir, o esperas aumentar tu credibilidad como escritor de renombre. (Vale, en realidad, lo de reputado puede ser una exageración, pero eso forma parte de nuestro encanto).
+
+¡Extiende la mano! Puedes encontrarnos en [Discord](discord.freesewing.org), o en [Github](https://github.com/freesewing/), o simplemente puedes responder a este correo electrónico. Nos encantaría saber de ti. 🧡
 
 

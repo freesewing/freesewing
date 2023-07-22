@@ -4,10 +4,10 @@ title: "Réduction de revers"
 
 Combien la pointe des revers se réduit vers l'intérieur.
 
-It is common to have the edge of the lapels not be entirely straight, but rather turn inwards a bit towards the top of the lapels. Cette option contrôle dans quelle mesure elle fait cela.
+Il est courant que le bord des revers ne soit pas tout à fait droit, mais qu'il se tourne un peu vers l'intérieur, vers le haut des revers. Cette option contrôle dans quelle mesure elle fait cela.
 
-- Increase this option to shift the lapel tip inward
-- Decrease this option to shift the lapel tip outward
+- Augmente cette option pour décaler la pointe du revers vers l'intérieur.
+- Diminue cette option pour décaler la pointe du revers vers l'extérieur.
 
 ## Effet de cette option sur le motif
 

@@ -61,8 +61,8 @@ Aber ich wollte völlig transparent sein, was vor sich geht, also habe ich mich 
 > 
 > Ich bin privilegiert, und damit habe ich Verantwortung. Ich habe das große Glück, in Westeuropa geboren zu sein, einen guten Job und ein Dach über dem Kopf zu haben.
 > 
-> Könnte ich das Geld gebrauchen? Yes I could.  
-> Do I need the money? Nein ich bin nicht darauf angewiesen.
+> Könnte ich das Geld gebrauchen? Ja, das könnte ich.  
+> Brauche ich das Geld? Nein ich bin nicht darauf angewiesen.
 > 
 > ##### Der Wert deiner Unterstützung
 > 
@@ -98,8 +98,8 @@ Deshalb nennen wir seit heute alle Gönner.
 
 ## Werde ein Gönner von FreeSewing
 
-To ensure a sustainable future for freesewing.org, our code, our patterns, and our community, we need to build a bedrock of loyal supporters.  
-Patrons who support us in our core work; Developing an open source platform for made-to-measure sewing patterns.
+Um eine nachhaltige Zukunft für freesewing.org, unseren Code, unsere Schnittmuster und unsere Community zu sichern, müssen wir eine Basis von treuen Unterstützern aufbauen.  
+Gönner, die uns bei unserer Kernarbeit unterstützen: der Entwicklung einer Open-Source-Plattform für maßgeschneiderte Schnittmuster.
 
 ![Wir haben drei Stufen der Gönnerschaft](https://posts.freesewing.org/uploads/patron_medals_2160e69d77.jpg)
 

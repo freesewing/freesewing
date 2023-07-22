@@ -2,7 +2,7 @@
 title: "Dardo de hombro"
 ---
 
-Whether or not to inlude a back shoulder dart to round the back.
+Incluir o no un dardo en el hombro trasero para redondear la espalda.
 
 ## Efecto de esta opción en el patrón
 

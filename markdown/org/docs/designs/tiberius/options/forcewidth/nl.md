@@ -1,8 +1,8 @@
 ---
-title: "Force width"
+title: "Krachtbreedte"
 ---
 
-Apply width settings regardless of constraints
+Pas breedte-instellingen toe ongeacht beperkingen
 
 ## Effect van deze optie op het patroon
 

@@ -2,7 +2,7 @@
 title: "Supplément de longueur"
 ---
 
-The amount to lengthen the garment by. A negative value will shorten it.
+La quantité à allonger le vêtement. Une valeur négative la raccourcira.
 
 ## Effet de cette option sur le motif
 

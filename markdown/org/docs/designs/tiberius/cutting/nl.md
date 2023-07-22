@@ -1,33 +1,33 @@
 ---
-title: "Tiberius Tunica: Cutting Instructions"
+title: "Tiberius Tunica: Snij-instructies"
 ---
 
 <Tip>
 
-##### Use the power of the _paperless_ option - do _not_ print this pattern
+##### Gebruik de kracht van de _paperless_ optie - druk dit patroon _niet_ af
 
-Tiberius is just a big rectangle, so printing the pattern out is a bit of a waste. Save a tree, toggle the [paperless](/docs/guide/options/paperless) option, and copy the dimensions to your fabric, while respecting the grainline.
+Tiberius is gewoon een grote rechthoek, dus het patroon afdrukken is een beetje zonde. Sla een boom op, schakel de optie [paperless](/docs/guide/options/paperless) in en kopieer de afmetingen naar je stof, met inachtneming van de nerflijn.
 
 </Tip>
 
-Tiberius consists of only one part, the _tunica_, that will act as a pattern for both front and back pieces.
+Tiberius bestaat uit slechts één deel, de _tunica_, dat als patroon zal dienen voor zowel voor- als achterstukken.
 
-- cut _2 tunicae_, _on the fold_
+- knip _2 tunicae_, _op de vouw_
 
 <Note>
 
-##### Notes
+##### Opmerkingen
 
-You have two options here: Either you cut your tunica in two pieces as described above, or you cut it in only one piece. Historically speaking, the time period or location you're aiming for can make a difference (ancient Rome vs. ancient Greece, for example). If you care about authenticity, I suggest researching this a bit.
+Je hebt hier twee opties: Of je snijdt je tunica in twee stukken zoals hierboven beschreven, of je snijdt het in slechts één stuk. Historisch gezien kan de tijdsperiode of locatie waar je je op richt een verschil maken (het oude Rome versus het oude Griekenland, bijvoorbeeld). Als je om authenticiteit geeft, raad ik je aan hier wat onderzoek naar te doen.
 
 </Note>
 
-### On Historical Accuracy
+### Over historische nauwkeurigheid
 
-The further we go back in time, the less extant garments we have to base research on. Often there may be scraps of fabric left behind by stroke of luck but most of our information starts to come from (in archaeology) secondary sources like written texts from contemporaries.
+Hoe verder we teruggaan in de tijd, hoe minder overgebleven kledingstukken we hebben om onderzoek op te baseren. Vaak zijn er toevallig restjes stof achtergebleven, maar de meeste informatie komt (in de archeologie) van secundaire bronnen zoals geschreven teksten van tijdgenoten.
 
-This is especially true for the Roman and Mediaeval eras, not to mention that a lot of the available research is behind a paywall.
+Dit geldt vooral voor de Romeinse tijd en de Middeleeuwen, om nog maar te zwijgen over het feit dat veel van het beschikbare onderzoek achter een betaalmuur zit.
 
-We can’t be 100 percent historically accurate, because we’re living in a different time, and everything we use to sew is different now from before. Even fabric is woven in a different way.
+We kunnen niet 100 procent historisch accuraat zijn, want we leven in een andere tijd en alles wat we gebruiken om te naaien is nu anders dan vroeger. Zelfs stof wordt op een andere manier geweven.
 
-How ‘accurate’ you want to be is up to you, there is no wrong way to do this and research is not required -- though it can be fun!
+Hoe 'nauwkeurig' je wilt zijn is aan jou, er is geen verkeerde manier om dit te doen en onderzoek is niet nodig -- hoewel het wel leuk kan zijn!

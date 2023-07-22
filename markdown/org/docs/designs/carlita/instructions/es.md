@@ -1,64 +1,64 @@
 ---
-title: "Carlita coat: Sewing Instructions"
+title: "Abrigo Carlita Instrucciones de costura"
 ---
 
-### Step 1: Draft and Cut the missing Lining and Facing Parts
+### Paso 1: Esbozar y cortar las piezas que faltan del forro y del revestimiento
 
-Some parts for Carlton require you to draft parts from the existing parts. The following are a list of what parts you need to draft, [see Carlton Cutting](/docs/patterns/carlton/cutting/) for details on how to cut them.
+Algunas piezas para Carlton requieren que redactes piezas a partir de las existentes. A continuación encontrarás una lista de las piezas que necesitas calar, [consulta la sección de corte de Carlton](/docs/patterns/carlton/cutting/) para saber cómo cortarlas.
 
-#### Drafting
+#### Redacción
 
-##### Front facing and Front lining
+##### Revestimiento frontal y Revestimiento frontal
 
-- Trace off of **Front** part.
-- Cut along the green line.
-- Add seam allowance (if including) along green line to both pieces
-- The piece with the lapel is now the **Front facing** part.
-- Trim the hem allowance (if included) of the remaining piece to seam allowance length
-- The remaining piece is now the **Front lining** part.
+- Trazado a partir de la pieza **Front** .
+- Corta por la línea verde.
+- Añade el margen de costura (si lo incluye) a lo largo de la línea verde a ambas piezas
+- La pieza con la solapa es ahora la pieza **Mirando al frente** .
+- Recorta el margen del dobladillo (si está incluido) de la pieza restante a la longitud del margen de costura
+- La pieza restante es ahora la pieza **Forro frontal** .
 
 <Note>
 
-The button and pocket markings are not needed for these parts so feel free not to trace them.
+Las marcas de los botones y los bolsillos no son necesarias para estas piezas, así que siéntete libre de no trazarlas.
 
 </Note>
 
 <Warning>
 
-Don't forget the seam allowance for these pieces when cutting if you are making these parts nett!
+¡No olvides el margen de costura para estas piezas al cortarlas si vas a hacer estas piezas netas!
 
 </Warning>
 
-##### Front and Side Shoulder
+##### Hombro frontal y lateral
 
-- Trace off of **Front and Side** parts.
-- Tape together so the notches match and armhole is complete. Do not worry about connecting everything else, you just need the armhole.
-- Draw a curve from shoulder to bottom of armhole.
-- Cut along this curve and discard the lower parts.
-- Separate out the pieces back into their front and side pieces.
-- These are now you \*_Front and Side shoulder_ parts.
+- Traza las piezas **Frontal y Lateral** .
+- Une con cinta adhesiva para que las muescas coincidan y la sisa esté completa. No te preocupes por unir todo lo demás, sólo necesitas la sisa.
+- Dibuja una curva desde el hombro hasta la parte inferior de la sisa.
+- Corta a lo largo de esta curva y desecha las partes inferiores.
+- Vuelve a separar las piezas en sus partes frontal y lateral.
+- Éstas son ahora tus piezas \*_Hombro frontal y lateral_ .
 
-##### Back shoulder
+##### Hombro trasero
 
-- Trace off of **Back** part.
-- Cut along the orange line.
-- Discard lower piece.
-- Remove the seam allowamces (if included) of the upper piece.
-- The upper piece is now the **Back shoulder** part.
+- Traza a partir de la pieza **Volver** .
+- Corta por la línea naranja.
+- Desecha la pieza inferior.
+- Retira los márgenes de costura (si están incluidos) de la pieza superior.
+- La pieza superior es ahora la pieza **Hombro trasero** .
 
 #### Corte
 
-- Cut all the parts above from their respective fabrics/facings. ([see Carlita Cutting](/docs/patterns/carlita/cutting/))
+- Corta todas las piezas anteriores de sus respectivas telas/forros. ([ver Carlita Cortando](/docs/patterns/carlita/cutting/))
 
-### Step 2 : Preliminary Instructions
+### Paso 2 : Instrucciones preliminares
 
 #### Notas de Maker
 
 <Warning>
 
 Todavía no hemos elaborado las instrucciones para Carlita.
-Below are some notes from [@AnnekeCaramin](/users/AnnekeCaramin) who
-[made Carlita](http://www.annekecaramin.com/2018/02/this-is-one-of-those-origin-superhero.html).
+A continuación encontrarás algunas notas de [@AnnekeCaramin](/usuarios/AnnekeCaramin) que
+[hizo Carlita](http://www.annekecaramin.com/2018/02/this-is-one-of-those-origin-superhero.html).
 
 </Warning>
 
@@ -95,6 +95,6 @@ Below are some notes from [@AnnekeCaramin](/users/AnnekeCaramin) who
 - Retire todos los golpes aún presentes, pon en tu abrigo, dándote una palmadita en la espalda y luego duerme durante tres semanas.
 
 
-#### Other notes
+#### Otras notas
 
-- Sew an arrowhead tack in the triangular area above the back pleat. This area is marked on the pattern by dashed lines and a bnotch at the triangle top. The arrowhead tack reinforces the pleat seam.
+- Cose una chincheta en forma de flecha en la zona triangular situada encima del pliegue trasero. Esta zona está marcada en el patrón por líneas discontinuas y una muesca en la parte superior del triángulo . La tachuela en punta de flecha refuerza la costura del pliegue.

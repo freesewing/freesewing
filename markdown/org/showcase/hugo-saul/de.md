@@ -1,17 +1,17 @@
 ---
-maker: "unknown"
-caption: "Check out that ribbing!"
+maker: "unbekannt"
+caption: "Sieh dir die Rippung an!"
 date: "27.11.2020"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c73a63d22b171ce29161c068b9b259ba70e26d4d-1080x1080.jpg"
-intro: "Saul sewed up this Hugo hoodie in black, but gave it that extra something with bright pink ribbing at the hem and wrists. Can't buy that at the shop!"
-title: "Black Hugo with Pink Ribbing by Saul"
+intro: "Saul hat diesen Hugo-Kapuzenpulli in Schwarz genäht, ihm aber mit leuchtend pinken Rippbündchen am Saum und an den Handgelenken das gewisse Etwas verliehen. Das kannst du nicht im Laden kaufen!"
+title: "Schwarzer Hugo mit rosa Rippung von Saul"
 designs:
   - "hugo"
 ---
 
-Saul sewed up this Hugo hoodie in black, but gave it that extra something with bright pink ribbing at the hem and wrists. Can't buy that at the shop!
+Saul hat diesen Hugo-Kapuzenpulli in Schwarz genäht, ihm aber mit leuchtend pinken Rippbündchen am Saum und an den Handgelenken das gewisse Etwas verliehen. Das kannst du nicht im Laden kaufen!
 
 <Note>
-This picture is from the instagram feed of [Sarah](https://www.instagram.com/sarahlh98/). It is posted here with permission from Sarah and Saul.
+Dieses Bild stammt aus dem Instagram-Feed von [Sarah](https://www.instagram.com/sarahlh98/). Er wird hier mit der Erlaubnis von Sarah und Saul veröffentlicht.
 </Note>
 

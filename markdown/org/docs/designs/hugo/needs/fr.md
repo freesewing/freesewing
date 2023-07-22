@@ -1,5 +1,5 @@
 ---
-title: "Hugo hoodie: What You Need"
+title: "Sweat à capuche Hugo : Ce dont tu as besoin"
 ---
 
 Pour réaliser Hugo, vous aurez besoin de :

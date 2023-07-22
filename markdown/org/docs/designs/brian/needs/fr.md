@@ -1,5 +1,5 @@
 ---
-title: "Brian body block: What You Need"
+title: "Bloc de carrosserie Brian : Ce dont tu as besoin"
 ---
 
 Pour faire Brian, vous aurez besoin des éléments suivants :

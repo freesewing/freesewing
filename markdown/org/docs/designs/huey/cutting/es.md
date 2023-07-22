@@ -1,16 +1,16 @@
 ---
-title: "Huey hoodie: Cutting Instructions"
+title: "Sudadera con capucha Huey: Instrucciones de corte"
 ---
 
 **Tela principal**
 
-- Cut **2 front** parts
-- Cut **1 back** part on the fold
-- Cut **2 sleeves** parts
+- Corta **2 piezas delanteras**
+- Corta **1 parte trasera** en el pliegue
+- Corta **2 manguitos** piezas
 - cut two pocket pieces
-- Cut **4 Hood** parts
+- Corta **4 Piezas del capó**
 
 **Tejido acanalado**
 
-- Cut **2 cuff** parts
+- Corta **2 piezas del manguito**
 - Corta **1 cintura**

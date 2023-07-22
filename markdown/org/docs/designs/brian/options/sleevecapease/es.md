@@ -4,7 +4,7 @@ title: "Holgura de la parte superior de la manga"
 
 ***
 
-This option determines the amount of ease at the sleevecap.
+Esta opción determina la cantidad de holgura en la solapa de la manga.
 
 <Note>
 

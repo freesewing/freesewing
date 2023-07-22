@@ -1,5 +1,5 @@
 ---
-title: "Breanna body block: Cutting Instructions"
+title: "Breanna Körperblock: Anleitung zum Schneiden"
 ---
 
 **Oberstoff**
@@ -12,7 +12,7 @@ Diese Anleitung ist nur für den Breanna-Grundschnitt mit Standardeinstellungen.
 
 <Tip>
 
-If you do not have someone to help pin you into Breanna then you may find it easier to Cut 2 Front parts with seam allowance and sew the backs up when constructing so you can pin in the front.
+Wenn du niemanden hast, der dir beim Anstecken der Breanna hilft, ist es vielleicht einfacher, 2 Vorderteile mit Nahtzugabe zuzuschneiden und die Rückseiten beim Konstruieren zusammenzunähen, damit du die Vorderseite anstecken kannst.
 
 </Tip>
 

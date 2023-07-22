@@ -1,31 +1,31 @@
 ---
 author: "joostdecock"
-caption: "Remember when we were allowed to go outside?"
+caption: "Weißt du noch, als wir nach draußen gehen durften?"
 date: "2021-01-17"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0faad5ded9176b4cf9e58cf5b05a939ba7670363-1920x1272.jpg"
-intro: "The Bella bodice block for womenswear"
-title: "The Bella bodice block for womenswear"
+intro: "Der Bella Miederblock für Damenmode"
+title: "Der Bella Miederblock für Damenmode"
 ---
 
 
-We've just published a new pattern on this website: [Bella, a bodice block for womenswear](/designs/bella/). It's a block with bust and waist dart, and a waist dart at the back.
+Wir haben gerade ein neues Schnittmuster auf dieser Website veröffentlicht: [Bella, ein Miederblock für Damenmode](/designs/bella/). Es ist ein Block mit Brust- und Taillenabnähern und einem Taillenabnäher am Rücken.
 
-My goal when venturing into womenswear was to make one foundational block from which we could then spin out a range of different garments.
+Als ich mich an die Damenmode heranwagte, war es mein Ziel, einen Grundstock zu schaffen, aus dem wir dann eine Reihe verschiedener Kleidungsstücke entwickeln konnten.
 
-Which is why we have [Breanna](/designs/breanna/), which I designed from scratch. Unfortunately, it hasn't been the end-all be-all that I — perhaps naively — hoped it would be.
+Deshalb haben wir [Breanna](/designs/breanna/), die ich von Grund auf neu entworfen habe. Leider war es nicht das Nonplusultra, von dem ich - vielleicht naiv - gehofft hatte, dass es das sein würde.
 
-For Bella, I worked with someone from the industry to implement a design that is commonly used for commercial garment making. As such, I am curious to see how this one will pan out.
+Für Bella habe ich mit jemandem aus der Branche zusammengearbeitet, um ein Design umzusetzen, das üblicherweise für die kommerzielle Bekleidungsherstellung verwendet wird. Deshalb bin ich gespannt, wie sich das Ganze entwickeln wird.
 
-My initial plan was to also make a variation with a shoulder dart at the front, to replace the bust dart, but in the end I settled for getting it released, rather than work on it longer.
+Ursprünglich wollte ich auch eine Variante mit einem Schulterabnäher an der Vorderseite anfertigen, um den Brustabnäher zu ersetzen, aber am Ende habe ich mich damit begnügt, es zu veröffentlichen, anstatt länger daran zu arbeiten.
 
-Which brings me to:
+Was mich dazu bringt:
 
-##### I'm taking a break from womenswear
+##### Ich mache eine Pause von der Damenmode
 
-I feel like I'm expending a lot of effort here for little result. It's getting me down, and I need a win.
+Ich habe das Gefühl, dass ich hier viel Aufwand für wenig Ergebnis betreibe. Das macht mich fertig, und ich brauche einen Sieg.
 
-I want to work on something that I can not only design, but also make and wear. Something that gives me joy, and makes me feel like I know what I'm doing.
+Ich möchte an etwas arbeiten, das ich nicht nur entwerfen, sondern auch herstellen und tragen kann. Etwas, das mir Freude macht und mir das Gefühl gibt, dass ich weiß, was ich tue.
 
-So while I'll still help out people who want to design for women themselves, I am taking a break from womenswear. 
+Ich werde zwar weiterhin Leuten helfen, die selbst für Frauen entwerfen wollen, aber ich mache eine Pause von der Damenmode. 
 
 

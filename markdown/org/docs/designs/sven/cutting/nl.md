@@ -1,5 +1,5 @@
 ---
-title: "Sven sweatshirt: Cutting Instructions"
+title: "Sven sweatshirt: Knip instructies"
 ---
 
 Sven is een heel simpel patroon, en bestaat uit drie hoofddelen plus een aantal stroken voor de hals, manchetten en zoom.
@@ -17,6 +17,6 @@ Sven is een heel simpel patroon, en bestaat uit drie hoofddelen plus een aantal 
 
 ###### Caveats
 
-The ribbing parts are not included on the pattern because they're just rectangular.
+De ribbeldelen staan niet op het patroon omdat ze gewoon rechthoekig zijn.
 
 </Warning>

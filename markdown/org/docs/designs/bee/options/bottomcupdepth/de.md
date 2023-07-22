@@ -1,10 +1,10 @@
 ---
-title: "Bottom depth"
+title: "Untere Tiefe"
 ---
 
 ***
 
-Controls how far the bikini cup extends downwards
+Kontrolliert, wie weit sich der Bikini-Cup nach unten erstreckt
 
 ## Effekt dieser Option auf das Schnittmuster
 

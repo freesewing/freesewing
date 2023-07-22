@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5dc9f5f74dc466d258437
 intro: "Більш детальна інформація про цю марку є в блозі Карін."
 title: "Хакнуте худі Hugo від Карін"
 designs:
-  - "hugo"
+  - "Хьюго."
 ---
 
 

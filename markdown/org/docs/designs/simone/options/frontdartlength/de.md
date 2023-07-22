@@ -2,10 +2,10 @@
 title: "Länge der vorderen Abnäher"
 ---
 
-Controls how close the **front waist darts** approach the bust points.
+Legt fest, wie nahe die **vorderen Taillenabnäher** den Brustpunkten kommen.
 
-- Increase this option to lengthen the front waist darts moving them closer to the bust points
-- Decrease this option to shorten the front waist darts moving them further away from the bust points
+- Erhöhe diese Option, um die vorderen Taillenabnäher zu verlängern und sie näher an die Brustpunkte zu bringen
+- Verringere diese Option, um die vorderen Taillenabnäher zu verkürzen, indem du sie weiter von den Brustpunkten entfernst.
 
 ## Effekt dieser Option auf das Schnittmuster
 

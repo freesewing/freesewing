@@ -1,5 +1,5 @@
 ---
-title: "Wahid waistcoat: Sewing Instructions"
+title: "Wahid-Weste: Anleitung zum Nähen"
 ---
 
 ### Schritt 1: Sicherungsschnittstelle
@@ -148,7 +148,7 @@ Falte sie zurück, um sicherzustellen, dass deine Tasche ein sauberes Rechteck �
 
 ![Bring die Taschenwelt auf den Rücken, falten und drücken](05i.png) ![Bring die Taschenwelt auf den Rücken, falten und drücken](05j.png)
 
-Flip the pocket welt with the attached pocket back tot he back side.
+Klappe den Taschenrahmen mit der aufgesetzten Tasche auf die Rückseite.
 
 Falte deine Welt an der Stelle, an der sie die Spitze der Tasche erreicht. Die Welt sollte die gesamte Taschenöffnung abdecken.
 

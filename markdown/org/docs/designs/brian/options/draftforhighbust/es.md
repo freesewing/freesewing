@@ -1,8 +1,8 @@
 ---
-title: undefined
+title: sin definir
 ---
 
-undefined
+sin definir
 
 ## Efecto de esta opción en el patrón
 

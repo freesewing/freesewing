@@ -2,10 +2,10 @@
 title: "Forma de los picos del cuello"
 ---
 
-Controls the flare of the collar by altering the fall length (between the neck and the points) of the collar.
+Controla el ensanchamiento del cuello modificando la longitud de caída (entre el cuello y las puntas) del cuello.
 
-- Increase this option to increase the fall length.
-- Decrease this option to decrease the fall length.
+- Aumenta esta opción para aumentar la longitud de la caída.
+- Disminuye esta opción para reducir la longitud de la caída.
 
 ## Efecto de esta opción en el patrón
 

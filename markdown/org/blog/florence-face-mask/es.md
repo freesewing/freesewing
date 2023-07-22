@@ -1,27 +1,27 @@
 ---
 author: "joostdecock"
-caption: "Keep those virus-infesed droplets at bay with our Florence face mask"
+caption: "Mantén a raya las gotitas infectadas de virus con nuestra mascarilla Florence"
 date: "2020-02-28"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d2235dcc38012e87ac402d43e7ae7084a7d7e9b4-1920x1272.jpg"
-intro: "We just published a face mask pattern, because coronavirus"
-title: "We just published a face mask pattern, because coronavirus"
+intro: "Acabamos de publicar un patrón de máscaras faciales, porque el coronavirus"
+title: "Acabamos de publicar un patrón de máscaras faciales, porque el coronavirus"
 ---
 
 
 
-The spread of the Covid-19 coronavirus seems relentless and despite the world's best attempts, the possibility of a global pandemic is getting more real every day. Which begs the question, what can we do?
+La propagación del coronavirus Covid-19 parece implacable y, a pesar de los mejores intentos del mundo, la posibilidad de una pandemia mundial es cada día más real. Lo que nos lleva a preguntarnos: ¿qué podemos hacer?
 
-Perhaps not much, but we can design patterns. So say hi to the [Florence face mask](/designs/florence/), a simple pattern that allows you make your own face masks. One that you can wear all day, because those medical ones aren't exactly comfortable.
+Quizá no mucho, pero podemos diseñar patrones. Así que saluda a la máscara facial [Florence](/designs/florence/), un sencillo patrón que te permite hacer tus propias máscaras faciales. Uno que puedas llevar todo el día, porque los médicos no son precisamente cómodos.
 
-Whether or not a face mask actually helps is subject of debate. I've been to-ing and fro-ing a bit about whether to publish a pattern for a face mask. Then — earlier today — I read a [Guardian](https://www.theguardian.com/) article called [Yes, it is worse than the flu: busting the coronavirus myths](https://www.theguardian.com/world/2020/feb/28/coronavirus-truth-myths-flu-covid-19-face-masks). It included the following passage under the *Face masks don’t work* myth:
+Es objeto de debate si una mascarilla facial ayuda realmente o no. He estado dudando un poco sobre si publicar un patrón para una mascarilla facial. Entonces -hoy mismo- leí un artículo de [Guardian](https://www.theguardian.com/) titulado [Sí, es peor que la gripe: acabar con los mitos sobre el coronavirus](https://www.theguardian.com/world/2020/feb/28/coronavirus-truth-myths-flu-covid-19-face-masks). Incluía el siguiente pasaje bajo el mito *Las mascarillas faciales no funcionan* :
 
-> ###### Claim: ‘Face masks don’t work’
+> ###### Afirmación: 'Las mascarillas faciales no funcionan'
 > 
-> *Wearing a face mask is not an iron clad guarantee that you won’t get sick – viruses can also transmit through the eyes and tiny viral particles, known as aerosols, can still penetrate masks. However, masks are effective at capturing droplets, which is the main transmission route of coronavirus, and some studies have estimated a roughly five-fold protection versus no barrier. If you are likely to be in close contact with someone infected, a mask cuts the chance of the disease being passed on.*
+> *Llevar una mascarilla no es una garantía absoluta de que no enfermarás: los virus también pueden transmitirse a través de los ojos y las diminutas partículas víricas, conocidas como aerosoles, pueden penetrar en las mascarillas. Sin embargo, las mascarillas son eficaces para capturar las gotitas, que es la principal vía de transmisión del coronavirus, y algunos estudios han estimado una protección aproximadamente cinco veces superior a la ausencia de barrera. Si es probable que estés en estrecho contacto con alguien infectado, una mascarilla reduce la posibilidad de que se transmita la enfermedad.*
 
-This only focusses on preventing you from getting coronavirus. There's also the fact that the mask can help (a bit) in keeping you from spreading it further. Because the way things are going right now, it looks like we should do every little thing we can to try to slow this thing down.
+Esto sólo se centra en evitar que contraigas el coronavirus. También está el hecho de que la mascarilla puede ayudar (un poco) a evitar que lo propagues más. Porque tal y como van las cosas ahora mismo, parece que deberíamos hacer todo lo posible para intentar frenar este asunto.
 
-So when I got home, I set out to rush out a face mask pattern. Common sense says it can't hurt, and apparently there's more to it too. If nothing else, I want a cute face mask, not one of the ugly ones you see on the news.
+Así que cuando llegué a casa, me dispuse a hacer a toda prisa un patrón de máscara facial. El sentido común dice que no puede hacer daño, y aparentemente también hay algo más. Por lo menos, quiero una mascarilla bonita, no una de las feas que se ven en las noticias.
 
-Stay safe out there.
+Mantente a salvo ahí fuera.
 

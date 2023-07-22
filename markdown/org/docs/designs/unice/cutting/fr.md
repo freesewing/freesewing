@@ -1,8 +1,8 @@
 ---
-title: "Unice undies: Cutting instructions"
+title: "Unice undies : Instructions de coupe"
 ---
 
-Unice consists of a front, a back, and a lined gusset.
+Unice se compose d'un devant, d'un dos et d'un gousset doublé.
 
 - **Tissu principal**
   - Couper **1 front**
@@ -13,7 +13,7 @@ Unice consists of a front, a back, and a lined gusset.
 
 ##### Notes
 
-- Unice is a great scrap buster. Si vous avez des morceaux de tissu pour fabriquer un [T-shirt Teagan](/designs/teagan/) ou quelque chose d'un tissu de maillot qui a une bonne extension, C'est une bonne façon de les utiliser.
+- Unice est un excellent destructeur de déchets. Si vous avez des morceaux de tissu pour fabriquer un [T-shirt Teagan](/designs/teagan/) ou quelque chose d'un tissu de maillot qui a une bonne extension, C'est une bonne façon de les utiliser.
 - Vous pouvez utiliser le même tissu pour tout le vêtement, y compris la doublure de gusset. Certaines personnes préfèrent utiliser un maillot de coton à la place pour ranger le gusset. Si vous voulez faire cela, coupez **1 gusset** de votre tissu principal et **1 gusset** de votre tissu de doublage.
 
 </Note>

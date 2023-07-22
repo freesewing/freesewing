@@ -1,5 +1,5 @@
 ---
-title: "Diana draped top: What You Need"
+title: "Diana drapiertes Oberteil: Was du brauchst"
 ---
 
 Um Diana zu erstellen, benötigst du Folgendes:

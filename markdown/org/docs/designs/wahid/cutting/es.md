@@ -1,5 +1,5 @@
 ---
-title: "Wahid waistcoat: Cutting Instructions"
+title: "Chaleco Wahid: Instrucciones de corte"
 ---
 
 - **Tela principal**
@@ -18,10 +18,10 @@ title: "Wahid waistcoat: Cutting Instructions"
 
 <Warning>
 
-###### Caveats
+###### Advertencias
 
-- Do not cut out the **front** dart
-- Do not cut out the **back** dart
-- Watch out for the grainline on the **pocket welt** and **pocket facing**
+- No recortes el **dedo delantero**
+- No recortes el **dedo trasero**
+- Presta atención a la línea del grano en el **borde del bolsillo** y el **revestimiento del bolsillo**.
 
 </Warning>

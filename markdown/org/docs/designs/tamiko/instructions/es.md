@@ -1,5 +1,5 @@
 ---
-title: "Tamiko top: Sewing Instructions"
+title: "Top Tamiko: Instrucciones de costura"
 ---
 
 ### Paso 1: Termina la costura del orificio
@@ -19,8 +19,8 @@ De esta manera, tu parte superior no puede desplazarse mientras lo terminamos.
 
 </Note>
 
-- Define las tres líneas de costura que están marcadas en tu borrador. F-H, C and I-J in the diagram, represented by lines and notches on the pattern.
+- Define las tres líneas de costura que están marcadas en tu borrador. F-H, C e I-J en el diagrama, representados por líneas y muescas en el patrón.
 
 ### Paso 3: ¡Disfrútalo!
 
-Now enjoy your new top and it's zero waste properties!
+¡Ahora disfruta de tu nuevo top y de sus propiedades de residuo cero!

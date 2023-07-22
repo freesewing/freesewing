@@ -2,17 +2,17 @@
 title: Dokumentation
 ---
 
-Welcome to the FreeSewing documentation for makers. Here you will find all the [documentation for our various designs](/docs/designs) as well as [how to take measurements](/docs/measurements/), documentation for [various sewing terms and techniques](/docs/sewing/).
+Willkommen bei der FreeSewing-Dokumentation für Maker. Here you will find all the [documentation for our various designs](/docs/designs) as well as [how to take measurements](/docs/measurements/), documentation for [various sewing terms and techniques](/docs/sewing/).
 
-If you're new to FreeSewing, please take a moment to read the [getting started documentation](/docs/guide/).
+Wenn du neu bei FreeSewing bist, nimm dir bitte einen Moment Zeit, um die [Einstiegsdokumentation](/docs/guide/)zu lesen.
 
 <ReadMore />
 
 <Tip>
 
-If you're looking for
-developer/contributor docs, please refer to
-[FreeSewing.dev](https://freesewing.dev/) instead.
+Wenn du auf der Suche nach den
+Entwickler-/Beitragsdokumenten bist, schau bitte stattdessen auf
+[FreeSewing.dev](https://freesewing.dev/).
 
 </Tip>
 

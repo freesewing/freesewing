@@ -1,10 +1,10 @@
 ---
-title: "Ribbon width"
+title: "Ancho de la cinta"
 ---
 
 ***
 
-Width of the ribbon
+Anchura de la cinta
 
 ## Efecto de esta opción en el patrón
 

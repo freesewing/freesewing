@@ -1,5 +1,5 @@
 ---
-title: "Hugo hoodie: Cutting Instructions"
+title: "Hugo hoodie: Knip instructies"
 ---
 
 - **Buitenstof**
@@ -19,7 +19,7 @@ title: "Hugo hoodie: Cutting Instructions"
 
 ###### Caveats
 
-- **sleeve**: There's a single notch at the front, and a double notch at the back. Deze merktekens komen overeen met het voor-en achterpand.
+- **sleeve**: Er is een enkele inkeping aan de voorkant en een dubbele inkeping aan de achterkant. Deze merktekens komen overeen met het voor-en achterpand.
 -**zakbeleg** en **capuchon**: Let op de draadrichting van deze onderdelen
 
 Omdat Hugo's raglan mouw ook een deel van de achterkant en voorkant afdekt,

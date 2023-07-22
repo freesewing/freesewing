@@ -1,5 +1,5 @@
 ---
-title: "Cathrin corset: Cutting Instructions"
+title: "Cathrin korset: Knip instructies"
 ---
 
 Knip 1 kernstof en 1 buitenstof van het middenveld, zorg dat je de plooi knipt.

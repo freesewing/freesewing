@@ -1,8 +1,8 @@
 ---
-title: "Pointiness of the nose"
+title: "Spitzigkeit der Nase"
 ---
 
-The shark can be made with a more blunt, or sharper nose, depending on your preference.
+Der Hai kann je nach Vorliebe mit einer stumpferen oder einer schärferen Nase hergestellt werden, .
 
 ## Effekt dieser Option auf das Schnittmuster
 

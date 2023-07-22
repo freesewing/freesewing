@@ -1,5 +1,5 @@
 ---
-title: "Titan trouser block: Sewing Instructions"
+title: "Титановий брючний блок: Інструкція з пошиття"
 ---
 
 <Note>

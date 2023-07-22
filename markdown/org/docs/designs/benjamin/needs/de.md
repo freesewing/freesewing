@@ -1,5 +1,5 @@
 ---
-title: "Benjamin bow tie: What You Need"
+title: "Benjamin Fliege: Was du brauchst"
 ---
 
 Um Benjamin zu erstellen, benötigst du Folgendes:

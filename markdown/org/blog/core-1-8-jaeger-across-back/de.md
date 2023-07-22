@@ -3,12 +3,12 @@ author: "joostdecock"
 caption: "Diese Version übermitteln wir Ihnen aus Bangkok"
 date: "2018-03-21"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/34ed654dcda9004e7c249b90256ad197469cc87e-1920x1277.webp"
-intro: "We've just pushed the  button on core 1.8.0. That bump in minor number is typically because we have a new pattern, but in this case, there's two reasons:"
+intro: "Wir haben gerade den Knopf für Core 1.8.0 gedrückt. Der Sprung in der Minoritätszahl ist normalerweise auf ein neues Muster zurückzuführen, aber in diesem Fall gibt es zwei Gründe:"
 title: "FreeSewing Core 1.8: Jeager-Sakko ist drin, die Rückenbreite ist raus"
 ---
 
 
-We've just pushed the *release* button on core 1.8.0. That bump in minor number is typically because we have a new pattern, but in this case, there's two reasons:
+Wir haben soeben den *release* Knopf für Core 1.8.0 gedrückt. Der Sprung in der Minoritätszahl ist normalerweise auf ein neues Muster zurückzuführen, aber in diesem Fall gibt es zwei Gründe:
 
  - Das[Jaeger-Sakko](/patterns/jaeger) ist jetzt verfügbar
  - Und wir haben uns von der *Rückenbreite* verabschiedet
@@ -55,7 +55,7 @@ Dies ist nicht der Fall *dieses Schnittmuster kommt mit 38 Optionen*. Als ob die
 
 Das Ersetzen einer Messung durch einen errechneten Wert, der auf der Grundlage einer anderen Messung generiert wird, mag dem entgegengesetzt erscheinen, aber es besteht kein Grund zur Sorge. Wir haben dafür gesorgt, dass Sie sich immer noch und die Passform am Rücken kümmern können.
 
-Muster, die früher die *die Rückenbreite als Mass erforderten, haben nun eine neue erweiterte Option: den *Rückenfaktor*. Es erlaubt Ihnen, die Berechnung Ihrer Rückenbreite zu optimieren, stellt aber sicher, dass diese innerhalb sinnvoller Parameter bleibt.
+Muster, die früher die *die Rückenbreite als Mass erforderten, haben nun eine neue erweiterte Option: den *Rückenfaktor*. Es erlaubt Ihnen, die Berechnung Ihrer Rückenbreite zu optimieren, stellt aber sicher, dass diese innerhalb sinnvoller Parameter bleibt.</p>
 
 ![Der Rückenbreitenfaktor](https://posts.freesewing.org/uploads/acrossback_60791a4392.png)
 

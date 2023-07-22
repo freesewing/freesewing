@@ -2,7 +2,7 @@
 title: "Aggressiv"
 ---
 
-Your Hi can come in the default sweet form, or in a more aggressive version with more authentic teeth, and a mean look.
+Dein Hi kann in der standardmäßigen süßen Form oder in einer aggressiveren Version mit authentischeren Zähnen und einem fiesen Blick daherkommen.
 
 ## Effekt dieser Option auf das Schnittmuster
 

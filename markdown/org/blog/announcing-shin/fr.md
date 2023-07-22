@@ -1,29 +1,29 @@
 ---
 author: "joostdecock"
-caption: "I guess this is what augmented reality looks like?"
+caption: "Je suppose que c'est à cela que ressemble la réalité augmentée ?"
 date: "2018-09-29"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b471275001689bd4819d6d95aabc8134788dc612-1694x1129.jpg"
-intro: "A while ago I found myself in need of some new swim trunks. So I drafted a pattern and made some:"
-title: "Announcing Shin, a swim trunks pattern"
+intro: "Il y a quelque temps, j'ai eu besoin d'un nouveau maillot de bain. J'ai donc dessiné un modèle et j'en ai fabriqué :"
+title: "Annonce Shin, un modèle de maillot de bain"
 ---
 
-A while ago I found myself in need of some new swim trunks. So I drafted a pattern and made some:
+Il y a quelque temps, j'ai eu besoin d'un nouveau maillot de bain. J'ai donc dessiné un modèle et j'en ai fabriqué :
 
-![An early tryout of the Shin pattern](https://posts.freesewing.org/uploads/sample_0437fef846.jpg)
+![Un premier essai du motif Shin](https://posts.freesewing.org/uploads/sample_0437fef846.jpg)
 
-I asked if people would be interested in a pattern like this, and turns out that yes, they were.
+J'ai demandé si les gens seraient intéressés par un modèle comme celui-ci, et il s'avère que oui, ils le sont.
 
-So, after some more tweaking, I think this is ready for you guys, and meanwhile Roy has already provided an illustration for it too.
+Après quelques ajustements, je pense que c'est prêt pour vous, et entre-temps, Roy a déjà fourni une illustration.
 
-![I'll be the first to admit that this guy wears it better than me](https://posts.freesewing.org/uploads/shin_0dc5fdd06d.jpg)
+![Je serai le premier à admettre que ce type le porte mieux que moi](https://posts.freesewing.org/uploads/shin_0dc5fdd06d.jpg)
 
-## Options and documentation available
+## Options et documentation disponibles
 
-Shin comes with options, and they are very close to the options available for [Bruce](/designs/bruce).
+Shin est livré avec des options, et elles sont très proches des options disponibles pour [Bruce](/designs/bruce).
 
-All [options are documented](/docs/patterns/shin/options), as are the [required measurements](/docs/patterns/shin/measurements), and I've also written [instructions for how to make this](/docs/patterns/shin).
+Toutes les options [sont documentées](/docs/patterns/shin/options), ainsi que les mesures [nécessaires](/docs/patterns/shin/measurements), et j'ai également écrit [les instructions pour faire ceci](/docs/patterns/shin).
 
-I still have to do the illustrations, but it's really not hard so you'll probably figure it out without them. Essentially, you can go and make this right now.
+Je dois encore faire les illustrations, mais ce n'est vraiment pas difficile, donc tu pourras probablement comprendre sans elles. Essentiellement, tu peux aller faire ça tout de suite.
 
 Profitez bien !
 

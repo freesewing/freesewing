@@ -1,35 +1,35 @@
 ---
 author: "joostdecock"
-caption: "Photo by Alex Andrews from Pexels"
+caption: "Foto de Alex Andrews de Pexels"
 date: "2020-09-09"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8bee0b9035162c14da54744b24539e56a8e16e27-2000x1500.jpg"
-intro: "A while ago somebody asked whether we had a T-shirt pattern on freesewing.org and it turns out, we didn't."
-title: "FreeSewing 2.9 brings our Teagan T-shirt pattern"
+intro: "Hace un tiempo alguien preguntó si teníamos un patrón de camiseta en freesewing.org y resulta que no."
+title: "FreeSewing 2.9 trae nuestro patrón de camiseta Teagan"
 ---
 
-A while ago somebody asked whether we had a T-shirt pattern on freesewing.org and it turns out, we didn't.
+Hace un tiempo alguien preguntó si teníamos un patrón de camiseta en freesewing.org y resulta que no.
 
-There's no good reason for that, we just never got around to that. So today we're rolling out version 2.9 of FreeSewing with our latest pattern: [the Teagan T-shirt](/designs/teagan/).
+No hay una buena razón para ello, simplemente nunca llegamos a hacerlo. Así que hoy lanzamos la versión 2.9 de FreeSewing con nuestro último patrón: [la camiseta Teagan](/designs/teagan/).
 
-![A man, seated on a purple couch and wearing a speckled grey Teagan T-Shirt.](https://posts.freesewing.org/uploads/teagan1_2904162431.jpg)
+![Un hombre, sentado en un sofá morado y con una camiseta gris moteada de Teagan.](https://posts.freesewing.org/uploads/teagan1_2904162431.jpg)
 
-## Who is this for?
+## ¿A quién va dirigido?
 
-Teagan is fitted T-shirt pattern with options for altering the neckline, length, and sleeves.
+Teagan es un patrón de camiseta entallada con opciones para modificar el escote, el largo y las mangas.
 
-Teagan is based on [our Brian block](/designs/brian/), which does not take breasts into account. That being said, this will work for people with breasts too. Since it uses the chest circumference it will simply draft a T-shirt to fit your full chest.
+Teagan se basa en [nuestro bloque Brian](/designs/brian/), que no tiene en cuenta los pechos. Dicho esto, esto también funcionará para las personas con pechos. Como utiliza el perímetro torácico, simplemente confeccionará una camiseta que se ajuste a todo tu pecho.
 
-We've also added an option to draft this to your high bust, which would give you a more fitted T-shirt with ease & stretch having to accomodate for your breasts.
+También hemos añadido una opción para confeccionarla con el busto alto, lo que te daría una camiseta más entallada con facilidad & elástica teniendo que acomodar tus pechos.
 
-![A woman wearing a striped T-shirt stands in front of a weathered fence. This T-shirt is more fitted through the chest.](https://posts.freesewing.org/uploads/teagan3_8ff8115d75.jpg)
+![Una mujer con una camiseta a rayas está de pie delante de una valla desgastada. Esta camiseta es más ajustada por el pecho.](https://posts.freesewing.org/uploads/teagan3_8ff8115d75.jpg)
 
-## Community Updates
+## Actualizaciones comunitarias
 
-If you're thinking about sewing Teagan, but you're new to sewing or working with knits, never fear! FreeSewing has more support than ever. Chat with us on [Discord](https://discord.freesewing.org/), in a [Facebook Group](https://www.facebook.com/groups/627769821272714), or on [Reddit](https://www.reddit.com/r/freesewing/). Find us on social as @freesewing_org on [Instagram](https://www.instagram.com/freesewing_org/) and [Twitter](https://twitter.com/freesewing_org). If you're looking for tutorials, there's a new [YouTube channel](https://www.youtube.com/channel/UCLAyxEL72gHvuKBpa-GmCvQ) for that. It has a whole series on [sewing up Teagan](https://www.youtube.com/playlist?list=PLY9EmRuXR20Y7FonIHD6mX9yIpFh_emX1), as well as this amazing preview.
+Si estás pensando en coser a Teagan, pero eres nueva en la costura o en el trabajo con punto, ¡no temas! FreeSewing tiene más soporte que nunca. Chatea con nosotros en [Discord](https://discord.freesewing.org/), en un [Grupo de Facebook](https://www.facebook.com/groups/627769821272714), o en [Reddit](https://www.reddit.com/r/freesewing/). Encuéntranos en las redes sociales como @freesewing_org en [Instagram](https://www.instagram.com/freesewing_org/) y [Twitter](https://twitter.com/freesewing_org). Si buscas tutoriales, en hay un nuevo canal de YouTube [](https://www.youtube.com/channel/UCLAyxEL72gHvuKBpa-GmCvQ) para ello. Tiene toda una serie en sobre [cosiendo a Teagan](https://www.youtube.com/playlist?list=PLY9EmRuXR20Y7FonIHD6mX9yIpFh_emX1), así como este increíble avance.
 
 <YouTube id='3UGJSNxNe8I' />
 
-If all of this sounds awesome, and you want to get more involved with FreeSewing, you can check out our repositories and source code on [Github](https://github.com/freesewing/) or connect with other contributors via [Discord](https://discord.freesewing.org/). You can find announcements about upcoming contributor calls on Discord, in the announcements channel.
+Si todo esto te parece increíble y quieres implicarte más en FreeSewing, puedes consultar nuestros repositorios y código fuente en [Github](https://github.com/freesewing/) o conectar con otros colaboradores a través de [Discord](https://discord.freesewing.org/). Puedes encontrar anuncios sobre próximas convocatorias de colaboradores en Discord, en el canal de anuncios.
 
-And if you sew up a Teagan T-shirt, let us know what you think!
+Y si coses una camiseta de Teagan, ¡dinos qué te parece!
 

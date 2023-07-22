@@ -2,7 +2,7 @@
 title: Breite
 ---
 
-This option determines the width of the pocket overall.
+Diese Option bestimmt die Gesamtbreite der Tasche.
 
 ## Effekt dieser Option auf das Schnittmuster
 

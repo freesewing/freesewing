@@ -1,31 +1,31 @@
 ---
-maker: "unknown"
-caption: "Is it me, or does this seriously overload one's cute sensors?"
+maker: "desconocido"
+caption: "¿Soy yo o esto sobrecarga seriamente los sensores de la monada?"
 date: "2018-02-05"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0d0673d758bb9ec6f60c01db5dba00a0d3fea7ee-1080x1080.jpg"
-intro: "Matching simon shirts for these two cuties"
-title: "Matching simon shirts for these two cuties"
+intro: "Camisas Simón a juego para estas dos monadas"
+title: "Camisas Simón a juego para estas dos monadas"
 designs:
   - "simon"
 ---
 
-![Model + tapemeasure](https://posts.freesewing.org/uploads/matching_simon_view2_07c4206346.jpg "Model + tapemeasure")
+![Modelo + cinta métrica](https://posts.freesewing.org/uploads/matching_simon_view2_07c4206346.jpg "Modelo + cinta métrica")
 
-![That fabric is gorgeous](https://posts.freesewing.org/uploads/matching_simon_view3_6be104bac1.jpg "That fabric is gorgeous")
+![Esa tela es preciosa](https://posts.freesewing.org/uploads/matching_simon_view3_6be104bac1.jpg "Esa tela es preciosa")
 
 ![Inclinación de hombro](https://posts.freesewing.org/uploads/matching_simon_view4_df63556bdf.jpg "Inclinación de hombro")
 
-![View from the back](https://posts.freesewing.org/uploads/matching_simon_view5_2e3b570060.jpg "View from the back")
+![Vista desde atrás](https://posts.freesewing.org/uploads/matching_simon_view5_2e3b570060.jpg "Vista desde atrás")
 
-![Hi camera](https://posts.freesewing.org/uploads/matching_simon_view6_1b0caef89f.jpg)
+![Hola cámara](https://posts.freesewing.org/uploads/matching_simon_view6_1b0caef89f.jpg)
 
 <Note>
 
-###### See the originals on the Instragram feed of ecmtts
+###### Ver los originales en el feed de Instragram de ecmtts
 
-These images are from 
-[the Instagram feed](https://www.instagram.com/ecmtts/)
-of [@ericamattos](/users/ericamattos).
-They are published here with permission.
+Estas imágenes proceden de 
+[el feed de Instagram](https://www.instagram.com/ecmtts/)
+de [@ericamattos](/usuarios/ericamattos).
+Se publican aquí con permiso.
 
 </Note>

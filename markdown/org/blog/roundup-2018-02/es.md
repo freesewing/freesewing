@@ -1,74 +1,74 @@
 ---
 author: "joostdecock"
-caption: "Your new login background for the month of March"
+caption: "Tu nuevo fondo de inicio de sesión para el mes de marzo"
 date: "2018-02-28"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8e0079e2521a2bf71545d736a2549180902c0d50-1980x1311.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - February 2018: Core 1.7.0 with Sven, Carlton, and Carlita improvements. Plus GDRP, vim, and Jaeger"
+intro: "Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene."
+title: "Resumen mensual - Febrero de 2018: Núcleo 1.7.0 con mejoras de Sven, Carlton y Carlita. Más GDRP, vim y Jaeger"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene.
 
-## Looking back at February
+## Echando la vista atrás a febrero
 
-I had this secret ambition to release a new pattern every month this year. It's only February and that plan seems to already have gone off the rails.
+Tenía la secreta ambición de publicar un nuevo patrón cada mes de este año. Sólo estamos en febrero y parece que ese plan ya se ha descarrilado.
 
-Let's look at the things that did happen in February before we talk about what didn't.
+Veamos lo que ocurrió en febrero antes de hablar de lo que no ocurrió.
 
-### Core v1.7.0 is out
+### Core v1.7.0 ya está disponible
 
-Earlier today, I pulled the trigger on core release 1.7.0. As usual, [the changelog](https://github.com/freesewing/core/blob/develop/CHANGELOG.md#170) has all the info, but most significant to users are [the new ribbing options in the Sven pattern](/docs/patterns/sven/options#ribbing), as well as a bunch of additional improvements to Carlton/Carlita.
+Hoy mismo he dado el pistoletazo de salida a la versión 1.7.0 del núcleo. Como de costumbre, [el registro de cambios](https://github.com/freesewing/core/blob/develop/CHANGELOG.md#170) tiene toda la información, pero lo más significativo para los usuarios son [las nuevas opciones de canalé en el patrón Sven](/docs/patterns/sven/options#ribbing), así como un montón de mejoras adicionales en Carlton/Carlita.
 
-Those Carlton/Carlita improvements are driven by the fact that myself and [Anneke](/showcase/maker/annekecaramin) have started to work on [the documentation for these patterns](/docs/patterns/carlton/). And every time we write something like *apply fusible interfacing here*, we also go back to the pattern to mark exactly where this fusible needs to go.
+Estas mejoras de Carlton/Carlita se deben a que yo misma y [Anneke](/showcase/maker/annekecaramin) hemos empezado a trabajar en [la documentación de estos patrones](/docs/patterns/carlton/). Y cada vez que escribimos algo como *aplica la entretela fusible aquí*, también volvemos al patrón para marcar exactamente dónde tiene que ir esta entretela fusible.
 
-Needless to say, that's a bunch of work. But it should help with the construction of these coat patterns, especially for those people for which this is their first time making a coat.
+No hace falta decir que es un montón de trabajo. Pero debería ayudar en la construcción de estos patrones de abrigo, especialmente para aquellas personas para las que es la primera vez que hacen un abrigo.
 
-### GDPR battle plan
+### Plan de batalla contra el RGPD
 
-I don't want to make it sound like writing a blog post is an achievement these days, but I do think [our *GDRP battle plan* blog post](/blog/gdpr-plan) is worth mentioning because these are important developments, and the workload this generates is significant.
+No quiero que parezca que escribir una entrada de blog sea un logro en estos días, pero sí creo que merece la pena mencionar [nuestro *plan de batalla GDRP* entrada de blog](/blog/gdpr-plan) porque se trata de avances importantes, y la carga de trabajo que esto genera es significativa.
 
-While nothing is set in stone yet, the post outlines our plan to tackle GDRP-compliance, something which we'll be focusing on in the next months.
+Aunque todavía no hay nada escrito en piedra, el post esboza nuestro plan para abordar el cumplimiento de la GDRP, algo en lo que nos centraremos en los próximos meses.
 
 
-### Vim snippets for freesewing core
+### Fragmentos de Vim para el núcleo de freesewing
 
-In [a blog post that is the embodiment of the term *niche*](/blog/core-vim-snippets) we announced the availability of a vim plugin that provides freesewing core specific snippets.
+En [una entrada del blog que es la encarnación del término *nicho*](/blog/core-vim-snippets) anunciamos la disponibilidad de un plugin para vim que proporciona fragmentos específicos del núcleo de libre acceso.
 
-Essentially, IF you want to develop patterns and IF you use the vim editor, these are for you.
+Básicamente, SI quieres desarrollar patrones y SI utilizas el editor vim, esto es para ti.
 
-Arguably, that's a lot of ifs.
+Podría decirse que son muchos "si".
 
-### Jaeger sneak preview
+### Avance de Jaeger
 
-Meet Jaeger, the sports coat pattern that I hoped to release this month.
+Te presento a Jaeger, el patrón de abrigo deportivo que esperaba publicar este mes.
 
-![Jaeger is ready, but I haven't made one yet](jaeger.png")
+![Jaeger está listo, pero aún no lo he hecho](jaeger.png")
 
-Those of you with good memories may remember that I mentioned last month that I would perhaps release this during February. Although back then it still went by a different name.
+Aquellos de vosotros que tengáis buena memoria recordaréis que el mes pasado mencioné que quizás publicaría esto durante febrero. Aunque entonces todavía se llamaba de otra manera.
 
-As I also foreshadowed last month, I did not find the time to make one. As a matter of fact, my most problematic bottle neck in designing new patterns seems to be finding the time to actually make them. Which is all the more problematic with a pattern as involved as a jacket. Truth be told, I'm still not sure where I found the time to make that Carlton coat.
+Como también predije el mes pasado, no encontré el tiempo para hacer uno. De hecho, mi mayor problema a la hora de diseñar nuevos patrones parece ser encontrar el tiempo para hacerlos. Lo cual es aún más problemático con un patrón tan complicado como una chaqueta. A decir verdad, aún no sé de dónde saqué tiempo para hacer ese abrigo Carlton.
 
-Anyway, all this to say that the pattern is ready, except that I've never made the latest version of it. And I feel like I can't release it like this.
+En fin, todo esto para decir que el patrón está listo, excepto que nunca he hecho la última versión del mismo. Y siento que no puedo soltarlo así.
 
-So, if you'd like to make a muslin of this --- or even the real thing --- let me know in the comments, and I'll make sure we'll get you a draft.
+Así que, si quieres hacer una muselina de esto --- o incluso la cosa real --- házmelo saber en los comentarios de , y me aseguraré de hacerte llegar un borrador.
 
-That might also help moving this pattern release forward, for I already know I won't have much time to work on a jacket next month.
+Eso también podría ayudar a adelantar el lanzamiento de este patrón, pues ya sé que no tendré mucho tiempo para trabajar en una chaqueta el mes que viene.
 
-Speaking of which...
+Hablando de eso...
 
-## Looking ahead to March
+## De cara a marzo
 
-I have two weeks of holiday in March (Yay!) the largest part of which I'll be in Bangkok (more Yay!).
+Tengo dos semanas de vacaciones en marzo (¡Yay!), la mayor parte de las cuales estaré en Bangkok (¡más Yay!).
 
-That means I won't be doing much sewing next month, but there should be some quality time for me and my laptop, so I wanted to tackle one of the larger items on my mid-term todo-list.
+Eso significa que no coseré mucho el mes que viene, pero debería haber algo de tiempo de calidad para mí y mi portátil, así que quería abordar uno de los temas más importantes de mi lista de cosas por hacer a medio plazo.
 
-My initial plan was to rewrite core, you can find some details [in this ticket on the matter](https://github.com/freesewing/core/issues/236)
+Mi plan inicial era reescribir el núcleo, puedes encontrar algunos detalles [en este ticket sobre el asunto](https://github.com/freesewing/core/issues/236)
 
-However, looking ahead at the months to come, the most pressing issue is that looming GDPR deadline in May which will also require a lot of work.
+Sin embargo, de cara a los próximos meses, la cuestión más acuciante es la inminente fecha límite del GDPR en mayo, que también exigirá mucho trabajo.
 
-So, I figured it would make more sense to tackle another thing on the todo list of lofty goals: rewrite the frontend.
+Así que pensé que tendría más sentido abordar otra cosa de la lista de grandes objetivos: reescribir el frontend.
 
-Rather than add yet another pile of jQuery code to handle all the GDPR stuff, the idea is to fork the frontend and port it to [vue.js](https://vuejs.org/). For this too, [there is an open issue where you can follow its progress](https://github.com/freesewing/site/issues/311).
+En lugar de añadir otro montón de código jQuery para gestionar todas las cosas del GDPR, la idea es bifurcar el frontend y portarlo a [vue.js](https://vuejs.org/). Para esto también, [hay una cuestión abierta en la que puedes seguir su progreso](https://github.com/freesewing/site/issues/311).
 
-Given that I have zero experience with vue.js, this should be fun. If you'd like to help out, please leave a comment.
+Dado que tengo cero experiencia con vue.js, esto debería ser divertido. Si quieres ayudar, deja un comentario.
 

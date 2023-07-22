@@ -1,20 +1,20 @@
 ---
 maker: "Anneke Caramin"
-caption: "back view of Anneke's shiny black Sandy skirt"
+caption: "vista trasera de la falda Sandy negra brillante de Anneke"
 date: "2020-10-20"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f17b554dceedcfa01572346e5032e4836deb6f52-1080x1080.jpg"
-intro: "Read Anneke's extensive 2018 blogpost about her new Sandy skirt , including how she added pockets and a curved waistband."
-title: "Anneke's shiny black Sandy circle skirt"
+intro: "Lee el extenso blogpost 2018 de Anneke sobre su nueva falda Sandy , que incluye cómo añadió bolsillos y una cintura curvada."
+title: "Falda circular Sandy negra brillante de Anneke"
 designs:
-  - "sandy"
+  - "arena"
 ---
 
-Read Anneke's extensive 2018 [blogpost about her new Sandy skirt](http://www.annekecaramin.com/2018/08/garbage-dragon.html), including how she added pockets and a curved waistband.
+Lee el extenso blogpost 2018 [de Anneke sobre su nueva falda Sandy](http://www.annekecaramin.com/2018/08/garbage-dragon.html), que incluye cómo añadió bolsillos y una cintura curvada.
 
-Other views:
+Otras opiniones:
 
-![full length of the outfit](https://posts.freesewing.org/uploads/sandy_by_anneke_front_fulllength_76df5afe47.jpg "full length of the outfit")
+![longitud total del traje](https://posts.freesewing.org/uploads/sandy_by_anneke_front_fulllength_76df5afe47.jpg "longitud total del traje")
 
-![dramatic side view](https://posts.freesewing.org/uploads/sandy_by_anneke_sideview_7cde00b133.jpg "dramatic side view")
+![vista lateral espectacular](https://posts.freesewing.org/uploads/sandy_by_anneke_sideview_7cde00b133.jpg "vista lateral espectacular")
 
-![close up of the exposed back zipper](https://posts.freesewing.org/uploads/sandy_by_anneke_zipper_e2f30b94dd.jpg "close up of the exposed back zipper")
+![primer plano de la cremallera trasera expuesta](https://posts.freesewing.org/uploads/sandy_by_anneke_zipper_e2f30b94dd.jpg "primer plano de la cremallera trasera expuesta")

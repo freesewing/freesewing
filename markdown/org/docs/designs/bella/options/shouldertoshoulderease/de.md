@@ -2,7 +2,7 @@
 title: Zugabe des Schulterabstandes
 ---
 
-Controls the amount of ease between your shoulders. Initially set to -.5% because Bella implements a block that is used in the industry.
+Steuert den Grad der Leichtigkeit zwischen deinen Schultern. Ursprünglich auf -,5% eingestellt, weil Bella einen Block implementiert, der in der Industrie verwendet wird.
 
 ## Effekt dieser Option auf das Schnittmuster
 

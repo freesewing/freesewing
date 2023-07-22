@@ -1,8 +1,8 @@
 ---
-title: "Width bonus"
+title: "Breedte bonus"
 ---
 
-Allows variation of the width of the garment
+Maakt variatie in de breedte van het kledingstuk mogelijk
 
 ## Effect van deze optie op het patroon
 

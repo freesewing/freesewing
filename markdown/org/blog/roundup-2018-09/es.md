@@ -1,42 +1,42 @@
 ---
 author: "joostdecock"
-caption: "Your login background for October"
+caption: "Tu fondo de conexión para octubre"
 date: "2018-09-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b5a652991874d5eb4b6aa694653fcc483330a49d-1920x1280.jpg"
-intro: "Monthly roundup - September 2018: Shin, loads of JavaScript, and a long TODO list"
-title: "Monthly roundup - September 2018: Shin, loads of JavaScript, and a long TODO list"
+intro: "Resumen mensual - Septiembre de 2018: Shin, un montón de JavaScript y una larga lista de TODO"
+title: "Resumen mensual - Septiembre de 2018: Shin, un montón de JavaScript y una larga lista de TODO"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el próximo mes.
 
-## Looking back at September
+## Mirando atrás a septiembre
 
-GitHub tells me that I've made 329 commits in 32 repositories during September. Most of that work is an investment in the future, and it will be a while before you'll be able to reap the benefits of it.
+GitHub me dice que he hecho 329 commits en 32 repositorios durante septiembre. La mayor parte de ese trabajo es una inversión de futuro, y pasará un tiempo antes de que puedas recoger sus frutos.
 
-But not all, because between all the other stuff, I did find time to release the [Shin swim trunk pattern](/patterns/shin):
+Pero no todo, porque entre unas cosas y otras, encontré tiempo para publicar el patrón del bañador [Shin](/patterns/shin):
 
-![Shin are swim trunks that I would qualify as menswear, but I see no reason women can't wear them](cover.jpg)
+![Shin son bañadores que yo calificaría de ropa de hombre, pero no veo ninguna razón por la que las mujeres no puedan llevarlos](cover.jpg)
 
-### Pics or it didn't happen
+### Fotos o no ocurrió
 
-Also new are a bunch of showcases, which is always nice, including this Jaeger jacket by [Paul](/users/Tiger751023):
+También son nuevos un montón de escaparates, lo que siempre es agradable, incluida esta chaqueta Jaeger de [Paul](/users/Tiger751023):
 
-![A Jaeger jacket by Paul](/showcase/linnen-jaeger-by-paul/showcase.jpg)
+![Una chaqueta Jaeger de Paul](/showcase/linnen-jaeger-by-paul/showcase.jpg)
 
-If you're making our patterns, please don't hesitate to send in your pictures so we can add some more!
+Si estás haciendo nuestros patrones, ¡no dudes en enviarnos tus fotos para que podamos añadir más!
 
-### Shadow boxing
+### Boxeo en la sombra
 
-All the other work has mostly been JavaScript code as part of our future plans. I am aware that this kind of work is invisible to most of you (you don't stalk mmy on GitHub, do you?) and that the perception can be that not much is going on here.
+El resto del trabajo ha consistido principalmente en código JavaScript como parte de nuestros planes futuros. Soy consciente de que este tipo de trabajo es invisible para la mayoría de vosotros (no me acosáis en GitHub, ¿verdad?). y que la percepción puede ser que aquí no pasa gran cosa.
 
-The opposite is true. I am working harder on this project than ever, but for now it's mostly in the shadows.
+Lo contrario es cierto. Estoy trabajando más que nunca en este proyecto, pero por ahora está casi siempre en la sombra.
 
-To try shine some light on what's going on, I have created [a long todo-list](https://github.com/freesewing/todo), so if you'd like to help out (or if you're just curious what we're up to) go ahead and have a look.
+Para intentar arrojar algo de luz sobre lo que está ocurriendo, he creado [una larga lista de cosas por hacer](https://github.com/freesewing/todo), así que si quieres ayudar (o si simplemente tienes curiosidad por saber qué estamos haciendo) échale un vistazo.
 
-Note that not all tasks are technical. We also need to pick pretty colors for the new patterns for example.
+Ten en cuenta que no todas las tareas son técnicas. También tenemos que elegir colores bonitos para los nuevos patrones, por ejemplo.
 
 
-## Looking ahead to October
+## De cara a octubre
 
-I have two weeks of holiday in October, and I have promised myself I would (try to) put away my laptop and make some clothes. I'm curious to see how that goes.
+Tengo dos semanas de vacaciones en octubre, y me he prometido a mí misma que (intentaría) guardar el portátil y hacer algo de ropa. Tengo curiosidad por ver cómo va.
 

@@ -1,5 +1,5 @@
 ---
-title: "Teagan T-shirt: Sewing Instructions"
+title: "Teagan-T-Shirt: Anleitung zum Nähen"
 ---
 
 ## Schritt 1: Schließe die Schulternähte
@@ -18,54 +18,54 @@ Optional: In einem Drapierstrick können Sie die Schulternähte durch das Nähen
 ![In Ärmel setzen](step02.svg)
 
 - Platzieren Sie Ihre jetzt befestigte Vorder- und Rückseite mit der guten Seite.
-- Identifizieren Sie die Vorder- und Rückseite jeder Ihrer Ärmel. (So trennen Sie den linken Ärmel von rechts.) On your paper pattern piece, the front side of the sleeve is to the right.
+- Identifizieren Sie die Vorder- und Rückseite jeder Ihrer Ärmel. (So trennen Sie den linken Ärmel von rechts.) Auf deinem Papiermusterteil liegt die Vorderseite des Ärmels auf der rechten Seite.
 - Platzieren Sie einen Ärmel oben auf der Vorder- und Rückseite mit der guten Seite.
 - Legen Sie die Oberseite der Ärmel mit der Schulternaht an. Vergewissern Sie sich, dass Vorder- und Rückseite des Ärmels mit den Vorder- und Rückenteilen Ihres Hemdes ausgerichtet sind.
 - Pin Sleeve am Platz entlang des gesamten Armlochs. Es gibt ein bisschen Ärmel Leichtigkeit, was bedeutet, dass der Ärmelkopf etwas länger ist als das Armloch. Leicht im oberen Teil des Ärmelkopfes während der Pinning.
 - Nähen Sie Ihren angehefteten Ärmel in Platz.
 - Wiederholen für den anderen Ärmel.
 
-## Step 3: Sew the neck finish
+## Schritt 3: Den Halsausschnitt nähen
 
-There are two options for the neck finish on Teagan: a knit band or knit binding. Knit band is what you typically see on store-bought T-shirts, whereas knit binding is the finish you'll find on the Aaron A-Tank. Directions for both are given here.
+Für den Halsabschluss von Teagan gibt es zwei Möglichkeiten: ein Strickband oder eine Strickbindung. Das Strickband ist das, was du normalerweise auf gekauften T-Shirts siehst, während das Strickbündchen das Finish ist, das du auf dem Aaron A-Tank findest. Eine Anleitung für beides findest du hier.
 
 <Note>
 Dies ist der komplexeste Schritt bei der Herstellung des Teagan T-Shirts, aber es erfordert nur ein bisschen Übung. Keine Sorge, alles was Sie tun müssen, ist ein paar davon zu machen und Sie werden schnell ein Profi werden.
 </Note>
 
-### Option 1: knit band finish
+### Option 1: Gestrickte Bandausführung
 
-#### Place (the start of) your knit band
+#### Platziere (den Anfang) dein Strickband
 
-![Place your knit band](step03f.svg)
+![Platziere dein Strickband](step03f.svg)
 
-- Fold your binding in half lengthwise (parallel to the longest side), and press.
-- Put your T-shirt down with the back good side up, and place your band strip on top of it, lining up the raw edges of the band with the raw edge of the neck opening.
-- Your band should start at the center back of the neck opening.
+- Falte deinen Einband der Länge nach zur Hälfte (parallel zur längsten Seite) und bügle ihn.
+- Lege dein T-Shirt mit der Rückseite nach oben hin und lege deinen Streifen darauf, wobei du die Schnittkanten des Streifens mit der Schnittkante der Halsöffnung ausrichtest.
+- Dein Band sollte in der hinteren Mitte der Halsöffnung beginnen.
 - Schiebe nun das Einfassband 1cm über den Anfangspunkt hinweg. Dieser Zentimeter macht das spätere Zusammennähen der beiden Enden möglich.
 
-#### Sew band in place
+#### Band festnähen
 
-![Sew knit band in place](step03g.svg)
+![Strickband festnähen](step03g.svg)
 
-- Place your presser foot 3 cm along the knit band, so a 4 cm tail will be left unstitched. This will help us join the ends together later. Then, sew around the neck opening, stretching the band gently as you sew.
+- Platziere deinen Nähfuß 3 cm entlang des Strickbands, so dass ein 4 cm langer Streifen übrig bleibt, der nicht genäht wird. Das hilft uns später, die Enden zusammenzufügen. Dann nähst du um die Halsöffnung herum, wobei du das Band beim Nähen leicht dehnst.
 
 <Note>
   
-This stretching is the trickiest part. Many online tutorials will tell you to simply start with a band slightly smaller than the neck opening, and stretch to fit. While an option, this does not account for differences in fabric stretch and elasticity, and can result in a floppy or puckered neck finish. Stretching to fit the neck opening by feel is something that takes a bit of practice, but is a good skill to build for better finishes long-term.
+Das Dehnen ist der schwierigste Teil. In vielen Online-Tutorials wird dir empfohlen, mit einem Band zu beginnen, das etwas kleiner ist als die Halsöffnung, und es dann zu dehnen, bis es passt. Dies ist zwar eine Option, berücksichtigt aber nicht die Unterschiede in der Dehnbarkeit und Elastizität des Stoffes und kann zu einem schlaffen oder faltigen Halsabschluss führen. Das Dehnen der Halsöffnung nach Gefühl ist etwas, das etwas Übung erfordert, aber es ist eine gute Fähigkeit, die du dir langfristig aneignen kannst, um bessere Abschlüsse zu erzielen.
   
 </Note>
 
 - Stoppt das Nähen von 3 cm vor dem Ende, so dass ein Schwanz wie wir es zu Beginn getan haben.
 
-#### Sew band ends together
+#### Bandenden zusammennähen
 
-![Sew band ends](step03c.svg)
+![Bandenden nähen](step03c.svg)
 
-Now it's time to sew the ends of our knit band together.
-- Take the end of your knit band, and stretch it along the 3 cm separating it from the start point as you would while sewing. On the band, mark where the band reached the start point, or center back. Tu das Gleiche für das andere Ende.
-- Fold your T-shirt in whatever way makes it more easy for you to place both band ends with good sides together, aligning the marks. Nähen Sie sie zusammen an den Marken.
- - You should now have a joined knit band.
+Jetzt ist es an der Zeit, die Enden unseres Strickbands zusammenzunähen.
+- Nimm das Ende deines Strickbands und dehne es entlang der 3 cm, die es vom Anfangspunkt trennen, so wie du es beim Nähen tun würdest. Markiere auf dem Band, wo das Band den Startpunkt oder die hintere Mitte erreicht hat. Tu das Gleiche für das andere Ende.
+- Falte dein T-Shirt so, dass du die beiden Enden des Bandes mit den richtigen Seiten aneinander legen kannst, so dass die Markierungen übereinstimmen. Nähen Sie sie zusammen an den Marken.
+ - Du solltest jetzt ein zusammenhängendes Strickband haben.
 
 <Note>
 
@@ -73,15 +73,15 @@ Now it's time to sew the ends of our knit band together.
 
 </Note>
 
-![Finish knit band](step03h.svg)
+![Fertig gestricktes Band](step03h.svg)
 
-- Now that your band ends are joined together, it’s time to finish the last 6 cm, by stretching and sewing down the band as you did for the rest.
+- Jetzt, wo deine Bandenden zusammengefügt sind, ist es an der Zeit, die letzten 6 cm fertigzustellen, indem du das Band dehnst und festnähst, wie du es für den Rest getan hast.
 
-Hurray! You've finished the trickiest part! Optionally, you can secure the raw edges by stitching them down to the T-shirt fabric, just inside the knit band with a sig-zag or coverlock stitch. This is not required, but it is a detail that you'll see on many ready-to-wear T-shirts, and it can help your neck band lie flat.
+Hurra! Du hast den schwierigsten Teil geschafft! Optional kannst du die Schnittkanten sichern, indem du sie mit einem Zickzack- oder Coverlock-Stich auf der Innenseite des Strickbands an den T-Shirt-Stoff annähst. Das ist nicht notwendig, aber ein Detail, das du auf vielen T-Shirts von der Stange siehst, und es kann dazu beitragen, dass dein Nackenband flach liegt.
 
-![Sew down knit band to secure](step03i.svg)
+![Strickband zum Sichern festnähen](step03i.svg)
 
-### Option 2: knit binding finish
+### Option 2: Gestrickte Bindung
 
 <Tip>
 

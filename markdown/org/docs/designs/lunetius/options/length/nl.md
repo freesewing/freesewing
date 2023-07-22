@@ -2,7 +2,7 @@
 title: "Lengte"
 ---
 
-Choose from the different length styles
+Kies uit de verschillende lengtestijlen
 
 ## Effect van deze optie op het patroon
 

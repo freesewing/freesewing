@@ -1,5 +1,5 @@
 ---
-title: "Theo trousers: Fabric Options"
+title: "Theo broek: Stof opties"
 ---
 
 Je hebt hier veel opties, maar hou in je achterhoofd dat dit een klassiek model van broek is. In andere woorden, gebruik geen stretchstof, denim, nepleer of andere onzin. Veilige opties zijn wol, katoen of linnen, eventueel gemengd met iets synthetisch.

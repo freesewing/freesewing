@@ -2,28 +2,28 @@
 title: "Rits grootte"
 ---
 
-What size zipper the pattern uses to draft.
+Welke maat rits het patroon gebruikt om op te stellen.
 
-This determines how wide the zipper panel will be by inserting the zipper size into the panel.
+Dit bepaalt hoe breed het ritspaneel wordt door de ritsmaat in het paneel te steken.
 
-The sizes are based off of the brand YKK's zippers and refers to the width of the zipper coils.
+De maten zijn gebaseerd op de ritsen van het merk YKK en verwijzen naar de breedte van de spoelen van de rits.
 
-Size guide for Hortensia:
+Maattabel voor Hortensia:
 
-| Option    | Size in Millimetres (mm) |
-| --------- | ------------------------ |
-| #Invisble | 0                        |
-| #3        | 4.8                      |
-| #4        | 5.4                      |
-| #4.5      | 5.9                      |
-| #5        | 6.2                      |
-| #6        | 7                        |
-| #8        | 8                        |
-| #10       | 10.6                     |
+| Optie        | Grootte in millimeter (mm) |
+| ------------ | -------------------------- |
+| #Onzichtbaar | 0                          |
+| #3           | 4.8                        |
+| #4           | 5.4                        |
+| #4.5         | 5.9                        |
+| #5           | 6.2                        |
+| #6           | 7                          |
+| #8           | 8                          |
+| #10          | 10.6                       |
 
 <Note>
 
-If in doubt, or if the size of your zipper is unavailable use the size that is slightly wider. This means you will have a wider zipper panel than needed but it is better than one that is not wide enough.
+Als je twijfelt of als de maat van je rits niet beschikbaar is, gebruik dan de maat die iets breder is. Dit betekent dat je een breder ritspaneel hebt dan nodig, maar dat is beter dan een paneel dat niet breed genoeg is.
 
 </Note>
 

@@ -4,8 +4,8 @@ title: "Radius der Vordertasche"
 
 Der Radius, um den die Fronttasche gerundet ist.
 
-- Increase this option to curve the bottom of the front pocket
-- Decrease this option to straighten out the bottom of the front pocket
+- Erhöhe diese Option, um den Boden der Vordertasche zu krümmen
+- Verringere diese Option, um den Boden der Vordertasche zu begradigen
 
 ## Effekt dieser Option auf das Schnittmuster
 

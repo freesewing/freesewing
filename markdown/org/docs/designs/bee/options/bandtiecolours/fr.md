@@ -1,5 +1,5 @@
 ---
-title: "Band (chest) tie length colours"
+title: "Couleurs de la bande (sous poitrine)"
 ---
 
 ***

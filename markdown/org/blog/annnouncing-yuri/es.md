@@ -1,13 +1,13 @@
 ---
 author: "joostdecock"
-caption: "Designer Hellgy struts their stuff, while their Yuri flows in a summer breeze"
+caption: "El diseñador Hellgy se pavonea, mientras su Yuri fluye con la brisa veraniega"
 date: "2021-09-05"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/af8e14596c0112734fb14e4a838853fb9dc0ac8a-1899x1266.jpg"
-intro: "Announcing FreeSewing v2.18: Congratulations, it's a Yuri"
-title: "Announcing FreeSewing v2.18: Congratulations, it's a Yuri"
+intro: "Anuncio de FreeSewing v2.18: Enhorabuena, es una Yuri"
+title: "Anuncio de FreeSewing v2.18: Enhorabuena, es una Yuri"
 ---
 
-I'm happy to announce the immediate availability of FreeSewing v2.18 and our latest addition to our catalog of designs: [The Yuri hoodie](/designs/yuri/) . Designed by [Hellgy](https://twitter.com/hellgy) and coded by their bae [Biou](https://github.com/biou/), Yuri is everything they love about [our Huey hoodie](/designs/huey/) sans their arch enemy: zippers.
+Me complace anunciar la disponibilidad inmediata de FreeSewing v2.18 y nuestra última incorporación a nuestro catálogo de diseños: [La sudadera Yuri](/designs/yuri/) . Diseñada por [Hellgy](https://twitter.com/hellgy) y codificada por su bae [Biou](https://github.com/biou/), Yuri es todo lo que les encanta de [nuestra sudadera con capucha Huey](/designs/huey/) sin su archienemigo: las cremalleras.
 
-Checkout [Hellgy's showcase for more pictures](/showcase/yuri-by-its-designer), or check out [the pattern page itself](/designs/yuri/) for all details.
+Visita [El escaparate de Hellgy para ver más fotos](/showcase/yuri-by-its-designer), o visita [la propia página del patrón](/designs/yuri/) para conocer todos los detalles.
 

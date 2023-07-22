@@ -11,8 +11,8 @@ La parte trasera de las patas de los pantalones son siempre más anchas que la p
 Incrementar esto hará que el panel de la pierna delantera sea más estrecho.  
 Esto hace que el portador luzca más despellejado.
 
-This trick is often used in womenswear jeans
-(now you know why you can't find womenswear jeans with functional front pockets).
+Este truco se utiliza a menudo en los vaqueros para mujer
+(ahora ya sabes por qué no puedes encontrar vaqueros para mujer con bolsillos delanteros funcionales).
 
 </Note>
 

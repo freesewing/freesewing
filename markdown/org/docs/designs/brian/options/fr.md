@@ -1,5 +1,5 @@
 ---
-title: "Brian body block: Design Options"
+title: "Bloc de carrosserie Brian : Options de conception"
 ---
 
 <PatternOptions pattern='brian' />

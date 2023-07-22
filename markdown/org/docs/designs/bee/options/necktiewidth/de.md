@@ -1,10 +1,10 @@
 ---
-title: "Neck tie width"
+title: "Breite des Nackenträgers"
 ---
 
 ***
 
-Controls the width of the ties around your neck
+Kontrolliert die Breite der Bänder um deinen Hals
 
 ## Effekt dieser Option auf das Schnittmuster
 

@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ee76fe8c268daeeccaf13
 intro: "Bob3000's eerste Charlie broek is supergaaf! Houd je ogen open voor een tweede paar in selvedge denim."
 title: "Charlie door Bob3000"
 designs:
-  - "charlie"
+  - "Charlie"
 ---
 
 

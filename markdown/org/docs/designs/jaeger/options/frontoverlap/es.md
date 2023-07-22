@@ -2,7 +2,7 @@
 title: "Superposición frontal"
 ---
 
-How far the fabric extends beyond the button closure.
+Hasta dónde se extiende el tejido más allá del cierre de botones.
 
 ## Efecto de esta opción en el patrón
 

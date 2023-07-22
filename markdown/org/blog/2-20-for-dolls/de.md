@@ -1,22 +1,22 @@
 ---
 author: "joostdecock"
-caption: "Photo by Anna Doschechko [via Pexels]"
+caption: "Foto von Anna Doschechko [via Pexels]"
 date: "24.01.2022"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9c6157f73a050c291cf5441d08c3a74db6670aee-1920x1280.jpg"
-intro: "FreeSewing 2.20: Would you like it smaller?"
-title: "FreeSewing 2.20: Would you like it smaller?"
+intro: "FreeSewing 2.20: Hättest du es gerne kleiner?"
+title: "FreeSewing 2.20: Hättest du es gerne kleiner?"
 ---
 
-I'm happy to announce that we've released FreeSewing 2.20, which comes with a feature request that was on our roadmap: Better support for doll clothes. We have some passionate doll enthusiasts in our community which make sense when you consider that our patterns adapt seamlessly to all sorts of measurements, including those of dolls.
+Ich freue mich, ankündigen zu können, dass wir FreeSewing 2.20 veröffentlicht haben, das einen Funktionswunsch enthält, der auf unserer Roadmap stand: Bessere Unterstützung für Puppenkleidung. Wir haben einige leidenschaftliche Puppenliebhaber in unserer Community. Das macht Sinn, wenn man bedenkt, dass sich unsere Schnittmuster nahtlos an alle Arten von Maßen anpassen, auch an die von Puppen.
 
-But there's another issue that comes up when generating these tiny patterns, that is that while the pattern itself adapts to the doll measurements, things like font sizes and arrows and logos do not. That causes doll patterns to look like a chaotic mess as the things that are typically taking up just a bit of space tend to overwhelm the actual pattern:
+Aber es gibt noch ein weiteres Problem, das bei der Erstellung dieser winzigen Muster auftritt: Das Muster selbst passt sich zwar an die Maße der Puppe an, aber Dinge wie Schriftgrößen, Pfeile und Logos nicht. Das führt dazu, dass Puppenmuster wie ein chaotisches Durcheinander aussehen, da die Dinge, die normalerweise nur ein bisschen Platz einnehmen, das eigentliche Muster erdrücken:
 
-![Image showing a doll pattern with snippets and text obfuscating the pattern](https://posts.freesewing.org/uploads/pres_scale_de0edf2cd7.png "This is Aaron for a 1/10 size doll in 2.19. Not great")
+![Das Bild zeigt ein Puppenmuster mit Schnipseln und Text, die das Muster verschleiern](https://posts.freesewing.org/uploads/pres_scale_de0edf2cd7.png "Das ist Aaron für eine Puppe der Größe 1/10 in 2,19. Nicht toll")
 
-![Image showing a doll pattern with snippets and text scaled down](https://posts.freesewing.org/uploads/post_scale_5a422f8c73.png "This is the same Aaron in 2.20. As you can see, it's much better")
+![Das Bild zeigt ein Puppenmuster mit verkleinerten Schnipseln und Text](https://posts.freesewing.org/uploads/post_scale_5a422f8c73.png "Das ist der gleiche Aaron in 2.20. Wie du sehen kannst, ist es viel besser")
 
-To make this happen, we've added [a new scale setting](/docs/guide/options/scale) that you can find under *Advanced* after enabling *Expert mode*. We hope those of you making doll clothes will find this useful, and as always [we look forward to hearing your feedback](https://discord.freesewing.org/).
+Um dies zu ermöglichen, haben wir [eine neue Skaleneinstellung](/docs/guide/options/scale) hinzugefügt, die du unter *Erweitert* finden kannst, nachdem du den *Expertenmodus*aktiviert hast. Wir hoffen, dass diese Informationen für diejenigen unter euch, die Puppenkleidung herstellen, nützlich sind, und wie immer [freuen wir uns auf euer Feedback](https://discord.freesewing.org/).
 
-## More in this release
+## Mehr in dieser Ausgabe
 
-2.20 also packs a bunch of changes and improvements, check the [changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md#2200-2022-01-24) for the full list.
+2.20 bringt außerdem eine Reihe von Änderungen und Verbesserungen mit sich. Die vollständige Liste findest du im [changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md#2200-2022-01-24) .

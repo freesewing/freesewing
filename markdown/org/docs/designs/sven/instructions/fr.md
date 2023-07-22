@@ -1,5 +1,5 @@
 ---
-title: "Sven sweatshirt: Sewing Instructions"
+title: "Sweat-shirt Sven : Instructions de couture"
 ---
 
 ### Étape 1 : Fermer les coutures d'épaule

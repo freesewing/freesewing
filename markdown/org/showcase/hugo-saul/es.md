@@ -1,17 +1,17 @@
 ---
-maker: "unknown"
-caption: "Check out that ribbing!"
+maker: "desconocido"
+caption: "¡Echa un vistazo a esa costilla!"
 date: "2020-11-27"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c73a63d22b171ce29161c068b9b259ba70e26d4d-1080x1080.jpg"
-intro: "Saul sewed up this Hugo hoodie in black, but gave it that extra something with bright pink ribbing at the hem and wrists. Can't buy that at the shop!"
-title: "Black Hugo with Pink Ribbing by Saul"
+intro: "Saul cosió esta sudadera con capucha Hugo en negro, pero le dio un toque extra con un ribete rosa brillante en el dobladillo y las muñecas. ¡No se puede comprar en la tienda!"
+title: "Hugo negro con ribete rosa de Saul"
 designs:
   - "hugo"
 ---
 
-Saul sewed up this Hugo hoodie in black, but gave it that extra something with bright pink ribbing at the hem and wrists. Can't buy that at the shop!
+Saul cosió esta sudadera con capucha Hugo en negro, pero le dio un toque extra con un ribete rosa brillante en el dobladillo y las muñecas. ¡No se puede comprar en la tienda!
 
 <Note>
-This picture is from the instagram feed of [Sarah](https://www.instagram.com/sarahlh98/). It is posted here with permission from Sarah and Saul.
+Esta foto es del feed de instagram de [Sarah](https://www.instagram.com/sarahlh98/). Se publica aquí con permiso de Sarah y Saul.
 </Note>
 

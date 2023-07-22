@@ -2,7 +2,7 @@
 title: "Affamé"
 ---
 
-This setting determins how long it has been since your Hi has had something to eat. More hungry results in a leaner shark.
+This setting determins how long it has been since your Hi has had something to eat. Une plus grande faim se traduit par un requin plus maigre.
 
 ## Effet de cette option sur le motif
 

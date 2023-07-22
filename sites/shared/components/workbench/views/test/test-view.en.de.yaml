@@ -1,0 +1,5 @@
+testThis.option: Diese Option testen
+testThis.measurement: Teste diese Messung
+measurements.d: Teste die Auswirkungen einer Messung auf das Aussehen des Musters
+designOptions.d: Teste die Auswirkungen einer Option auf das Aussehen dieses Musters
+testThing: "Test {design}: {thing}"

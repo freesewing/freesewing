@@ -1,5 +1,5 @@
 ---
-title: "Teagan T-shirt: What You Need"
+title: "T-shirt Teagan : Ce dont tu as besoin"
 ---
 
 Pour fabriquer Téagan, vous aurez besoin des éléments suivants :

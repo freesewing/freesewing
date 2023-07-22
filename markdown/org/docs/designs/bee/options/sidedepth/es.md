@@ -1,10 +1,10 @@
 ---
-title: "Side depth"
+title: "Límite lateral"
 ---
 
 ***
 
-Controls how far the bikini cup extends towards the side
+Controla hasta qué punto se extiende la copa del bikini hacia el lado exterior
 
 ## Efecto de esta opción en el patrón
 

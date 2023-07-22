@@ -4,7 +4,7 @@ title: "Visor hoek"
 
 ***
 
-The arc angle used to draft the inner curve of the visor
+De booghoek die wordt gebruikt om de binnenste kromming van het vizier te tekenen
 
 ## Effect van deze optie op het patroon
 

@@ -2,7 +2,7 @@
 title: "Elastischer Saum"
 ---
 
-Whether you want to include an elasticated cuff at the ankle, or rather prefer a classic hemmed leg.
+Ob du ein elastisches Bündchen am Knöchel einbauen willst, oder lieber ein klassisch gesäumtes Bein bevorzugst.
 
 ## Effekt dieser Option auf das Schnittmuster
 

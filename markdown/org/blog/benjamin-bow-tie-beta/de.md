@@ -7,11 +7,11 @@ intro: "Unsere Familie an freien und opensource Schnittmustern ist wieder gewach
 title: "Das Schnittmuster für die Fliege Benjamin ist jetzt in der Beta-Version erhältlich. Und ich musste nicht einmal etwas tun."
 ---
 
-Our family of freesewing patterns has grown once again, and the benjamin of the family is... [Benjamin](/designs/benjamin).
+Unsere Familie der Freesewing-Muster hat wieder einmal Zuwachs bekommen, und der Benjamin der Familie ist... [Benjamin](/designs/benjamin).
 
 Benjamin ist eine Fliege, die mit einer Vielzahl von Optionen ausgestattet ist, um so ziemlich jeden Aspekt deiner Fliege einstellen zu können.
 
-Du kannst dich für eine maßgeschneiderte Fliege entscheiden oder Benjamin mit einem Einstellband entwerfen, das dir etwas Flexibilität in der Passform ermöglicht. Something that makes this a great handmade gift for the upcoming holiday season.
+Du kannst dich für eine maßgeschneiderte Fliege entscheiden oder Benjamin mit einem Einstellband entwerfen, das dir etwas Flexibilität in der Passform ermöglicht. Das macht sie zu einem tollen handgemachten Geschenk für die kommende Weihnachtszeit.
 
 ## Benjamin ist vielseitiger und ausgefallener, als man denkt
 

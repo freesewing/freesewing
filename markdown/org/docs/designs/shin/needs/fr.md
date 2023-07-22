@@ -1,5 +1,5 @@
 ---
-title: "Shin swim trunks: What You Need"
+title: "Maillot de bain Shin Ce qu'il faut"
 ---
 
 Pour faire du shin, vous aurez besoin des éléments suivants :

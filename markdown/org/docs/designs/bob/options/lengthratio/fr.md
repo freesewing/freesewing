@@ -4,8 +4,8 @@ title: Profondeur de tête
 
 Contrôle la longueur du bavoir.
 
-- Increase the percentage to lengthen the bib.
-- Decrease the percentage to shorten the bib.
+- Augmente le pourcentage pour allonger la bavette.
+- Diminue le pourcentage pour raccourcir le dossard.
 
 ## Effet de cette option sur le motif
 

@@ -23,8 +23,8 @@ Das Problem ist auch problematischer, als es an der Oberfläche scheint. Erstens
 
 Darüber hinaus würde jede Korrektur, die wir implementieren, für neue Entwürfe gelten, alle existierenden Entwürfe, die vor der Korrektur erstellt wurden, jedoch würden beeinträchtigt werden.
 
-In other words, if you drafted a pattern last week, or a month ago, that pattern would not scale correctly in a recent version of Inkscape.  
-And since we use Inkscape in our SVG-to-PDF tool-chain, it would also be incorrectly scaled if you came here and downloaded a PDF.
+Mit anderen Worten: Wenn du ein Muster letzte Woche oder vor einem Monat entworfen hast, würde dieses Muster in einer aktuellen Version von Inkscape nicht richtig skaliert.  
+Und da wir Inkscape in unserer SVG-zu-PDF-Toolkette verwenden, wäre es auch falsch skaliert wenn du hierher kommst und ein PDF herunterlädst.
 
 Natürlich musste etwas getan werden. Und zwar schnell.
 

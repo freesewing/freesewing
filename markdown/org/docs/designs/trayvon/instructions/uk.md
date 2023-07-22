@@ -1,5 +1,5 @@
 ---
-title: "Trayvon tie: Sewing Instructions"
+title: "Краватка з тройону: Інструкція з пошиття"
 ---
 
 <Tip>

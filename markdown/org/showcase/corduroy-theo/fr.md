@@ -1,5 +1,5 @@
 ---
-maker: "unknown"
+maker: "inconnue"
 caption: "Gus dans son pantalon Theo marron"
 date: "2017-01-17"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4addf70ac76582708c6aa4518028517d00dbaba2-1200x1600.jpg"

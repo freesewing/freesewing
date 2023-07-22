@@ -1,75 +1,75 @@
 ---
 author: "joostdecock"
-caption: "Photo by Deeana Creates from Pexels"
+caption: "Foto von Deeana Creates von Pexels"
 date: "2020-07-12"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f04cc6c50a8e5f08f3ebd6c3d4903fb3055c9a01-1920x1280.jpg"
 intro: "Wir haben gerade FreeSewing v2.7 veröffentlicht 🎉"
-title: "FreeSewing v2.7: Titan, changes to measurements, and a long list of improvements"
+title: "FreeSewing v2.7: Titan, Änderungen bei den Messungen und eine lange Liste von Verbesserungen"
 ---
 
 
 Wir haben gerade FreeSewing v2.7 veröffentlicht 🎉
 
-There's a lot of work that went into this release, and unfortunately it  also will cause some breaking changes to your existing patterns and people, but it's all for the better.
+Es steckt eine Menge Arbeit in dieser Version, und leider wird sie auch einige Änderungen an deinen bestehenden Mustern und Leuten mit sich bringen, aber es ist alles zum Besseren.
 
-Let's have a look at what's new:
+Schauen wir uns an, was es Neues gibt:
 
 ## Titan, ein Hosen-Grundschnitt
 
-I have lost count of the number of times I have started working on a trouser block over the last couple of years. It's something that's been on my to-do list for a long time, yet despite several attempts at making it happen, I hadn't come up with something that I was happy with.
+Ich habe aufgehört zu zählen, wie oft ich in den letzten Jahren mit der Arbeit an einem Hosenblock begonnen habe. Das steht schon lange auf meiner To-Do-Liste, aber trotz mehrerer Versuche hatte ich noch kein Ergebnis, mit dem ich zufrieden war.
 
-That's because designing trouser patterns is hard. Making sure things fit, while also guaranteeing that inseam, outseam, and cross seam are all the same length is no walk in the park. Especially if you want a pattern that will seamlessly adapt to different sizes and models.
+Das liegt daran, dass das Entwerfen von Hosenmustern schwierig ist. Es ist kein Zuckerschlecken, dafür zu sorgen, dass die Sachen passen und gleichzeitig zu garantieren, dass die Innen-, Außen- und Quernaht alle gleich lang sind. Vor allem, wenn du ein Muster möchtest, das sich nahtlos an verschiedene Größen und Modelle anpasst.
 
-It would have probably lingered on my to-do list a while longer, but in February, Debra reached out to me and proposed we would come up with a pants sloper together. I love teaming up with people because it a great way to stay motivated, so over the next 4 months or so, we worked on what Debra has named [Titan](/designs/titan/), a dart-free unisex trouser block. I'd like to thank her for her patience and contributions to make Titan a success
+Wahrscheinlich wäre es noch eine Weile auf meiner To-Do-Liste geblieben, aber im Februar meldete sich Debra bei mir und schlug vor, dass wir gemeinsam einen Hosensloper entwerfen würden. Ich liebe es, mich mit anderen zusammenzutun, weil es eine tolle Möglichkeit ist, motiviert zu bleiben. Also haben wir in den nächsten 4 Monaten an dem gearbeitet, was Debra [Titan](/designs/titan/)genannt hat, ein abnäherfreier Unisex-Hosenblock. Ich möchte mich bei ihr für ihre Geduld und ihren Beitrag zum Erfolg von Titan bedanken
 
 <Note>
 
-###### Help us out: Make a Titan muslin 
+###### Hilf uns dabei: Mach einen Titan Musselin 
 
-A block is just that, a block or sloper. Our next steps are obviously this spin this into a number of different trouser patterns. Before we get to that though, we'd like to see how Titan performs on a variety of bodies.
+Ein Block ist genau das: ein Block oder Sloper. Als Nächstes werden wir natürlich eine Reihe von verschiedenen Hosenmustern daraus machen. Doch bevor wir dazu kommen, wollen wir sehen, wie sich der Titan auf verschiedenen Körpern schlägt.
 
-So if you could whip up a muslin of a made-to-measure Titan and let us know how it went, that would be wonderful.
+Wenn du also einen Musselin von einem maßgefertigten Titan anfertigen und uns mitteilen könntest, wie es gelaufen ist, wäre das wunderbar.
 
 </Note>
 
-## Shoulder slope — again — and other changes to measurements
+## Schulterneigung - wieder - und andere Änderungen an den Messungen
 
-We've made changes to the different measurements on the site. The roughly fall into 3 categories:
+Wir haben Änderungen an den verschiedenen Messungen auf der Website vorgenommen. Sie lassen sich grob in 3 Kategorien einteilen:
 
- - We've made *waist* the basis for vertical measurements
- - We've changed the shoulder slope measurement
- - We've simplified the language and terms
+ - Wir haben *Taille* die Basis für vertikale Messungen gemacht
+ - Wir haben die Messung der Schulterneigung geändert
+ - Wir haben die Sprache und Begriffe vereinfacht
 
-As a result, some vertical measurements that were not based on the waist are not gone (hips to upper leg for example). Other measurements have been renamed under the hood to make things simpler, but unless you're a developer, you don't need to worry about that.
+Das hat zur Folge, dass einige vertikale Maße, die nicht auf der Taille basieren, nicht mehr vorhanden sind (z. B. Hüfte zu Oberschenkel). Andere Messungen wurden unter der Haube umbenannt, um die Dinge zu vereinfachen, aber wenn du kein Entwickler bist, brauchst du dir darüber keine Gedanken zu machen.
 
-An important change is the one we made to the shoulder slope measurement. It's historically been a measurement that is hard to measure, and the changes we've made before to try to address that were in retrospect a bad idea.
+Eine wichtige Änderung ist die, die wir an der Messung der Schulterneigung vorgenommen haben. In der Vergangenheit war es immer schwer zu messen, und die Änderungen, die wir vorgenommen haben, um das zu ändern, waren im Nachhinein gesehen eine schlechte Idee.
 
-We've changed it again, but this time around, shoulder slope is measured as you would expect a slope to be measured: in degrees.
+Wir haben sie wieder geändert, aber dieses Mal wird die Schulterneigung so gemessen, wie du es von einer Neigung erwartest: in Grad.
 
-This required some changes as up until now all measurements used the same units, but things should be ok now.
+Dies erforderte einige Änderungen, da bisher alle Messungen die gleichen Einheiten verwendet haben, aber jetzt sollte alles in Ordnung sein.
 
-As a result of all these changes and measurements, there's two things you should know:
+Als Ergebnis all dieser Veränderungen und Messungen gibt es zwei Dinge, die du wissen solltest:
 
- - The people you have in your account will have their measurements updated (when the names changed) or removed (where the measurement is no longer used, or we changed how to measure it)
- - Patterns that you have saved in your account that use some of the changed measurements will no longer work. However, we've kept them in your account so that if you want, you can extract the data, and re-draft them for the new measurements. Feel free to reach out if you need assistance with that.
+ - Die Maße der Personen, die du in deinem Konto hast, werden aktualisiert (wenn sich die Namen geändert haben) oder entfernt (wenn das Maß nicht mehr verwendet wird oder wir die Art der Messung geändert haben).
+ - Muster, die du in deinem Konto gespeichert hast und die einige der geänderten Maße verwenden, funktionieren nicht mehr. Wir haben sie jedoch in deinem Konto gespeichert, sodass du die Daten bei Bedarf extrahieren und für die neuen Messungen neu erstellen kannst. Wenn du dabei Hilfe brauchst, kannst du dich gerne melden.
 
 <Tip>
 
-We've migrated our backend to these new measurements, but you are likely to still have some of the old stuff cached in your profile.  
-To get around this, you should probably [reload your account](/account/reload/).
+Wir haben unser Backend auf diese neuen Messungen umgestellt, aber du hast wahrscheinlich noch einige der alten Daten in deinem Profil gespeichert.  
+Um dies zu umgehen, solltest du wahrscheinlich [dein Konto neu laden](/account/reload/).
 
 </Tip>
 
-## Frontend changes
+## Frontend-Änderungen
 
-We've made a few changes to the website too.
+Wir haben auch ein paar Änderungen an der Website vorgenommen.
 
- - We've added a [pattern notation guide](/docs/various/notation/) to take the guesswork out of what those markings on your pattern mean.
- - We've added a [reload account](/account/actions/reload/) page to help you avoid issues due to cached account data
- - We've changed the styling of the different sizes when you compare a pattern, as well as included a legend showing which outline corresponds to which size.
+ - Wir haben eine Anleitung zur Musternotation [hinzugefügt](/docs/various/notation/) , damit du nicht mehr raten musst, was die Markierungen auf deinem Muster bedeuten.
+ - Wir haben eine Seite [hinzugefügt, auf der du dein Konto neu laden kannst](/account/actions/reload/) , um Probleme aufgrund von zwischengespeicherten Kontodaten zu vermeiden
+ - Wir haben das Styling der verschiedenen Größen geändert, wenn du ein Muster vergleichst, und eine Legende hinzugefügt, die zeigt, welcher Umriss welcher Größe entspricht.
 
 
-## And many more changes under the hood
+## Und viele weitere Änderungen unter der Haube
 
-As I said, a lot of work went into this release. See our [monorepo changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md) for all the details.
+Wie ich schon sagte, steckt eine Menge Arbeit in dieser Veröffentlichung. In unserem [monorepo Changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md) findest du alle Details.
 

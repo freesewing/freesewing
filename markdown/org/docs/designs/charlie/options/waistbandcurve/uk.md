@@ -4,7 +4,7 @@ title: "Крива поясу"
 
 Керує наскільки заокругленою є крива поясу.
 
-Increasing this will give a curvier waistband, making it smaller at the top edge of the waistband.
+Збільшення цього параметра зробить пояс більш вигнутим, зменшивши його на верхньому краю.
 
 ## Вплив цієї опції на шаблон
 

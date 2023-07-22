@@ -2,7 +2,7 @@
 title: "Lengteratio"
 ---
 
-Controls the length of the garment
+Bepaalt de lengte van het kledingstuk
 
 ## Effect van deze optie op het patroon
 

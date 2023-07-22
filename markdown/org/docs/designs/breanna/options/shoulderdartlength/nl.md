@@ -2,7 +2,7 @@
 title: "Lengte schouder neep"
 ---
 
-The length of the back shoulder dart.
+De lengte van de rugschouderpas.
 
 ## Effect van deze optie op het patroon
 

@@ -1,22 +1,22 @@
 ---
 author: "joostdecock"
-caption: "Photo by Anna Doschechko [via Pexels]"
+caption: "Foto de Anna Doschechko [vía Pexels]."
 date: "2022-01-24"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9c6157f73a050c291cf5441d08c3a74db6670aee-1920x1280.jpg"
-intro: "FreeSewing 2.20: Would you like it smaller?"
-title: "FreeSewing 2.20: Would you like it smaller?"
+intro: "FreeSewing 2.20: ¿Te gustaría más pequeño?"
+title: "FreeSewing 2.20: ¿Te gustaría más pequeño?"
 ---
 
-I'm happy to announce that we've released FreeSewing 2.20, which comes with a feature request that was on our roadmap: Better support for doll clothes. We have some passionate doll enthusiasts in our community which make sense when you consider that our patterns adapt seamlessly to all sorts of measurements, including those of dolls.
+Me complace anunciar que hemos publicado FreeSewing 2.20, que incluye una función solicitada que estaba en nuestra hoja de ruta: Mejor soporte para la ropa de muñecas. En nuestra comunidad hay apasionados entusiastas de las muñecas, lo cual tiene sentido si tenemos en cuenta que nuestros patrones se adaptan perfectamente a todo tipo de medidas, incluidas las de las muñecas.
 
-But there's another issue that comes up when generating these tiny patterns, that is that while the pattern itself adapts to the doll measurements, things like font sizes and arrows and logos do not. That causes doll patterns to look like a chaotic mess as the things that are typically taking up just a bit of space tend to overwhelm the actual pattern:
+Pero hay otro problema que surge al generar estos diminutos patrones, y es que mientras que el patrón en sí se adapta a las medidas del muñeco, cosas como el tamaño de la letra y las flechas y logotipos no lo hacen. Esto hace que los patrones de las muñecas parezcan un caos, ya que las cosas que suelen ocupar un poco de espacio tienden a abrumar al patrón real:
 
-![Image showing a doll pattern with snippets and text obfuscating the pattern](https://posts.freesewing.org/uploads/pres_scale_de0edf2cd7.png "This is Aaron for a 1/10 size doll in 2.19. Not great")
+![Imagen que muestra un patrón de muñeca con fragmentos y texto que ofuscan el patrón](https://posts.freesewing.org/uploads/pres_scale_de0edf2cd7.png "Se trata de Aaron para una muñeca de tamaño 1/10 en 2,19. No muy bien")
 
-![Image showing a doll pattern with snippets and text scaled down](https://posts.freesewing.org/uploads/post_scale_5a422f8c73.png "This is the same Aaron in 2.20. As you can see, it's much better")
+![Imagen que muestra un patrón de muñeca con fragmentos y texto reducidos](https://posts.freesewing.org/uploads/post_scale_5a422f8c73.png "Es el mismo Aarón en 2.20. Como puedes ver, es mucho mejor")
 
-To make this happen, we've added [a new scale setting](/docs/guide/options/scale) that you can find under *Advanced* after enabling *Expert mode*. We hope those of you making doll clothes will find this useful, and as always [we look forward to hearing your feedback](https://discord.freesewing.org/).
+Para que esto ocurra, hemos añadido [un nuevo ajuste de escala](/docs/guide/options/scale) que puedes encontrar en *Avanzado* después de activar *Modo experto*. Esperamos que os resulte útil a los que confeccionáis ropa para muñecas y, como siempre [, esperamos vuestros comentarios](https://discord.freesewing.org/).
 
-## More in this release
+## Más en este comunicado
 
-2.20 also packs a bunch of changes and improvements, check the [changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md#2200-2022-01-24) for the full list.
+La 2.20 también incluye un montón de cambios y mejoras, consulta el registro de cambios de [](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md#2200-2022-01-24) para ver la lista completa.

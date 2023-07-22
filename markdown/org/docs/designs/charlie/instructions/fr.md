@@ -1,5 +1,5 @@
 ---
-title: "Charlie chinos: Sewing Instructions"
+title: "Charlie chinos : Instructions de couture"
 ---
 
 ## Étape 1 : Fermer les pinces du dos
@@ -229,7 +229,7 @@ Il y a une marge de couture supplémentaire qui coule le long de la mouche. Nous
 
 Coudre la mouche face à gauche. Placer les deux côtés endroit contre endroit, en alignant le haut.
 
-### Tuck in the tip of the fly facing
+### Rentre la pointe de la mouche dans la face avant.
 
 Plier le fond de la mouche en faisant face à la couture à l'intérieur et sécuriser avec quelques points.
 

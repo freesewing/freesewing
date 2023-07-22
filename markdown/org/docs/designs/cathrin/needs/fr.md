@@ -1,5 +1,5 @@
 ---
-title: "Cathrin corset: What You Need"
+title: "Corset Cathrin : Ce dont tu as besoin"
 ---
 
 Les corsets sont plus faciles à construire qu'ils ne le semblent, mais ils ont besoin de plusieurs objets et outils spécialisés.

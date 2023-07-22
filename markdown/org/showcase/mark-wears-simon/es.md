@@ -1,20 +1,20 @@
 ---
-maker: "unknown"
-caption: "Good tie action too"
+maker: "desconocido"
+caption: "Buena acción de corbata también"
 date: "2017-08-20"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8889aa644473d0615584ea0b69a570f95c69c1f9-1080x1080.jpg"
-intro: "Mark wears a simon shirt made by his wife"
-title: "Mark wears a simon shirt made by his wife"
+intro: "Mark lleva una camisa simon hecha por su mujer"
+title: "Mark lleva una camisa simon hecha por su mujer"
 designs:
   - "simon"
 ---
 
-![Another view](https://posts.freesewing.org/uploads/mark_wears_simon_2_a4950a3229.jpg "Another view")
+![Otro punto de vista](https://posts.freesewing.org/uploads/mark_wears_simon_2_a4950a3229.jpg "Otro punto de vista")
 
-![And a back view](https://posts.freesewing.org/uploads/mark_wears_simon_3_9f40007ab0.jpg "And a back view")
+![Y una vista trasera](https://posts.freesewing.org/uploads/mark_wears_simon_3_9f40007ab0.jpg "Y una vista trasera")
 
-> ##### Check the original in the Instagram feed of swissarmywife
+> ##### Mira el original en el feed de Instagram de swissarmywife
 > 
-> This picture is from [the Instagram feed](https://www.instagram.com/p/BYAX07OFEPL/)  
-> of [swissarmywife](https://mnel2.wordpress.com/).  
-> It's posted here with permission.
+> Esta foto es de [el feed de Instagram](https://www.instagram.com/p/BYAX07OFEPL/)  
+> de [swissarmywife](https://mnel2.wordpress.com/).  
+> Se publica aquí con permiso.

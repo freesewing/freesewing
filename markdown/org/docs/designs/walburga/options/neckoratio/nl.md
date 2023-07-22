@@ -1,8 +1,8 @@
 ---
-title: "Neck opening shape"
+title: "Halsopening vorm"
 ---
 
-controls the shape of the neck opening
+regelt de vorm van de halsopening
 
 ## Effect van deze optie op het patroon
 

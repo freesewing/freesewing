@@ -1,5 +1,5 @@
 ---
-title: "Cornelius cycling breeches: Sewing Instructions"
+title: "Culotte de cycliste Cornélius : Instructions de couture"
 ---
 
 ### Étape 1 : Les poches avant
@@ -37,7 +37,7 @@ title: "Cornelius cycling breeches: Sewing Instructions"
 - _Surpiquer_ le rabas droit vers le bas, loin de la couture maintenant non épinglée, au plus loin que vous le pouvez.
 - Épinglez/_Bâtissez_ le protecteur à fermeture Éclair sur le côté droit pour le garder hors du passage pour l'étape suivante
 - Sur le côté extérieur, coudre le rabat de gauche vers la gauche, en suivant la ligne courbée.
-- On the outside side, _Bar-Tack_ where you like them for reinforcement.
+- Sur le côté extérieur, _Bar-Tack_ à l'endroit que tu souhaites pour le renforcement.
 
 <Tip>
 

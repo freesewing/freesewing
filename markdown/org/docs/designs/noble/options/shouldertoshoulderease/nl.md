@@ -1,10 +1,10 @@
 ---
-title: "Shoulder to Shoulder Ease"
+title: "Schouder aan schouder gemak"
 ---
 
 ***
 
-The **Shoulder to Shoulder Ease** option allows you to add ease between the shoulders.
+Met de optie **Shoulder to Shoulder Ease** kun je gemak tussen de schouders toevoegen.
 
 ## Effect van deze optie op het patroon
 

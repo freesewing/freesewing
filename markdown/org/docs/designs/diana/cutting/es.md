@@ -1,5 +1,5 @@
 ---
-title: "Diana draped top: Cutting Instructions"
+title: "Top drapeado Diana: Instrucciones de corte"
 ---
 
 - Corta **1 trasero** al lomo

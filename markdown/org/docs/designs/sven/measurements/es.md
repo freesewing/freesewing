@@ -1,5 +1,5 @@
 ---
-title: "Sven sweatshirt: Required Measurements"
+title: "Sudadera Sven: Medidas requeridas"
 ---
 
 <PatternMeasurements pattern='sven' />

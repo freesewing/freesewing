@@ -1,36 +1,36 @@
 ---
 author: "joostdecock"
-caption: "Your login background for December"
+caption: "Tu fondo de conexión para diciembre"
 date: "2018-11-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ebdb5fce7cd9b56f2f9d51d05dbda187195e30b6-1920x1280.jpg"
-intro: "Monthly roundup - November 2018: New showcases and a (false) security alarm"
-title: "Monthly roundup - November 2018: New showcases and a (false) security alarm"
+intro: "Resumen mensual - Noviembre de 2018: Nuevos escaparates y una (falsa) alarma de seguridad"
+title: "Resumen mensual - Noviembre de 2018: Nuevos escaparates y una (falsa) alarma de seguridad"
 ---
 
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el próximo mes.
 
-## Looking back at November
+## Echando la vista atrás a noviembre
 
-I have been very busy this month, but more about that in our roundup post for the year which you can expect on December 10th.
+He estado muy ocupada este mes, pero más sobre eso en nuestro post de resumen del año que puedes esperar el 10 de diciembre.
 
-Because I've been busy, a few showcase posts had fallen through the cracks. I've cleared the backlog in my inbox now, and as a result we have [a new Bruce showcase by Felix](/en/showcase/bruce-three-pack) and [a new Sandy showcase by Karin](/en/showcase/sandy-by-karin).
+Como he estado muy ocupada, se me habían escapado algunos escaparates. Ya he eliminado el trabajo atrasado de mi bandeja de entrada, y como resultado tenemos [una nueva muestra de Bruce por Felix](/en/showcase/bruce-three-pack) y [una nueva muestra de Sandy por Karin](/en/showcase/sandy-by-karin).
 
-If you've made one of our patterns, make sure to send in your pictures so we can add them too. I mean, even if it takes a while, I do eventually get around to it :)
-
-
-Earlier this week, I woke to the unsettling news that a popular package on NPM [had been hijacked by malicious actors](https://arstechnica.com/information-technology/2018/11/hacker-backdoors-widely-used-open-source-software-to-steal-bitcoin/).
-
-That's obviously shitty behaviour, but the fact that this package is a dependency of our backend (as in, we use it) made for a rude awakening. Our backend was patched by the time I got to work (yay for trains), but as more information came to light, it turned out it was never a problem in the first place.
-
-For one thing, the dependency was a so-called development dependency. Code that is included while developing, but not included in the production build.
-
-Furthermore, the malicious actors were targetting a very specific set of people in order to make off with their bitcoin, so there was never an issue.
-
-As the story was developing, we [posted updates on Twitter](https://twitter.com/freesewing_org/status/1067312509672177664) so if you want to make sure you want to hear all the latest news, make sure to follow [@freesewing_org](https://twitter.com/freesewing_org) on Twitter.
+Si has hecho uno de nuestros patrones, asegúrate de enviar tus fotos a para que podamos añadirlas también. Aunque tarde un poco, al final me pongo a ello :)
 
 
-## Looking ahead to December
+A principios de esta semana, me desperté con la inquietante noticia de que un paquete popular en NPM [había sido secuestrado por actores maliciosos](https://arstechnica.com/information-technology/2018/11/hacker-backdoors-widely-used-open-source-software-to-steal-bitcoin/).
 
-In early December we traditionally do our yearly roundup, so more on that soon :)
+Obviamente, es un comportamiento de mierda, pero el hecho de que este paquete sea una dependencia de nuestro backend (es decir, que lo utilicemos) supuso un duro despertar. Nuestro backend estaba parcheado cuando llegué al trabajo (yupi por los trenes), pero a medida que salía a la luz más información , resultó que nunca fue un problema en primer lugar.
+
+Por un lado, la dependencia era una denominada dependencia de desarrollo. Código que se incluye mientras se desarrolla, pero que no se incluye en la compilación de producción.
+
+Además, los actores maliciosos se dirigían a un grupo muy concreto de personas para hacerse con su bitcoin, por lo que nunca hubo ningún problema.
+
+A medida que se desarrollaba la historia, [publicaba actualizaciones en Twitter](https://twitter.com/freesewing_org/status/1067312509672177664) , así que si quieres estar al tanto de las últimas noticias, asegúrate de seguir [@freesewing_org](https://twitter.com/freesewing_org) en Twitter.
+
+
+## De cara a diciembre
+
+A principios de diciembre solemos hacer nuestro resumen anual, así que pronto hablaremos de ello :)
 

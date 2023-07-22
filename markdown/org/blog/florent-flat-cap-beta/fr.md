@@ -1,33 +1,33 @@
 ---
 author: "joostdecock"
-caption: "Quentin surrounded by our future robot overlords."
+caption: "Quentin entouré de nos futurs maîtres robots."
 date: "2017-12-06"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ee5c11e3b29fe788dae470ab0e20396d806c4d1b-2000x1333.jpg"
-intro: "The Florent Flat Cap pattern is now available in beta. That's another gift sorted."
-title: "The Florent Flat Cap pattern is now available in beta. That's another gift sorted."
+intro: "Le patron du bonnet plat Florent est maintenant disponible en version bêta. C'est un autre cadeau trié."
+title: "Le patron du bonnet plat Florent est maintenant disponible en version bêta. C'est un autre cadeau trié."
 ---
 
-After last month's release of [Benjamin](/patterns/benjamin), here's another pattern release to channel the dapper gentleman within: the [Florent Flat Cap](/patterns/florent).
+Après la sortie le mois dernier de [Benjamin](/patterns/benjamin), voici une autre sortie de patron pour canaliser le gentleman élégant qui sommeille en toi : le [Florent Flat Cap](/patterns/florent).
 
-Like Benjamin, this pattern was contributed by the freesewing community, rather than yours truly. In this case, it was [Quentin Felix](/users/ptzcb) who signed for the design.
+Comme Benjamin, ce modèle a été créé par la communauté freesewing, plutôt que par votre serviteur. Dans ce cas, c'est [Quentin Felix](/users/ptzcb) qui a signé le dessin.
 
-I asked Quentin if he wanted to write this announcement blog post himself, but he argued that it was time I did something too. He did have this to share though, on his reasons for designing this pattern in the first place:
+J'ai demandé à Quentin s'il voulait écrire lui-même ce billet d'annonce, mais il a soutenu qu'il était temps que je fasse quelque chose aussi. Il a cependant partagé ceci avec , sur les raisons qui l'ont poussé à concevoir ce modèle en premier lieu :
 
-> ##### Quentin on his reasons for designing Florent
+> ##### Quentin parle des raisons qui l'ont poussé à concevoir Florent
 > 
-> I like wearing flat caps myself. I didn't use to, but I have a friend Florent who inspired me to wear them (now you know where the name comes from).
+> Moi-même, j'aime bien porter des casquettes plates. Je n'en avais pas l'habitude, mais j'ai un ami Florent qui m'a incité à les porter (tu sais maintenant d'où vient le nom).
 > 
-> The first time I made a flat cap, it took me ages to scale the pattern to an exact fit, involving a lot of messing about with tracing paper. There's a number of patterns available online for flat caps. But they all come in one size only. 
+> La première fois que j'ai fait une casquette plate, il m'a fallu une éternité pour mettre à l'échelle le modèle et l'ajuster exactement, ce qui m'a demandé beaucoup de travail avec du papier calque. Il y a un certain nombre de patrons disponibles en ligne pour les casquettes plates. Mais ils sont tous de taille unique. 
 > 
-> I wanted to make this more accessible to people. And, while I was at it, I also drew on my experience to add some tweaks for a better fit. 
+> Je voulais rendre cela plus accessible aux gens. Et, pendant que j'y étais, j'ai aussi puisé dans mon expérience pour ajouter quelques ajustements pour une meilleure adaptation. 
 > 
-> For example, this design extends lower at the back of the head, which gives it better hold.
+> Par exemple, ce modèle s'étend plus bas à l'arrière de la tête, ce qui lui donne une meilleure tenue.
 
-This *why should we always have to re-invent the wheel?* could pretty much be freesewing's slogan.
+Ce *pourquoi devrions-nous toujours réinventer la roue ?* pourrait être le slogan de freesewing.
 
-## It's the season for giving
+## C'est la saison des cadeaux
 
-Florent requires only one measurement: the head circumference. As such, this release is perfectly timed. With the holiday season coming up, here's another gift you can make yourself.
+Florent n'a besoin que d'une seule mesure : le tour de tête. À ce titre, cette publication arrive à point nommé. Avec les fêtes de fin d'année qui approchent, voici un autre cadeau que tu peux faire toi-même.
 
-Thanks Quentin!
+Merci Quentin !
 

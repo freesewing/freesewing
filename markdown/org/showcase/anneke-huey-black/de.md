@@ -19,4 +19,4 @@ Andere Ansichten.
 
 Dieser Beitrag erschien ursprünglich auf [Instagram](https://www.instagram.com/p/Bz3jSeJIiYG/?utm_source=ig_web_copy_link).
 
-It is reposted here with permission.
+Er wird hier mit Erlaubnis wieder veröffentlicht.

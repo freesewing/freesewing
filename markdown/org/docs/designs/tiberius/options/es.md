@@ -1,5 +1,5 @@
 ---
-title: "Tiberius Tunica: Design Options"
+title: "Tiberio Tunica: Opciones de diseño"
 ---
 
 <PatternOptions pattern='tiberius' />

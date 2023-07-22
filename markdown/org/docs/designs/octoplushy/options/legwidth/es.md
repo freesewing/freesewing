@@ -1,8 +1,8 @@
 ---
-title: "Leg Width"
+title: "Anchura de la pierna"
 ---
 
-The width of the legs can be adjusted.
+La anchura de las patas se puede ajustar.
 
 ## Efecto de esta opción en el patrón
 

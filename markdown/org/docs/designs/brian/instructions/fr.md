@@ -1,5 +1,5 @@
 ---
-title: "Brian body block: Sewing Instructions"
+title: "Bloc de corps de Brian : Instructions de couture"
 ---
 
 <Note>

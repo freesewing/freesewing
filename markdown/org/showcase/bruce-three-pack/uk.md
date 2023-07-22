@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/305d6d6adbdad633bc2cd
 intro: "Фелікс зробив три таких, і він пише:"
 title: "Три пакети Брюса"
 designs:
-  - "bruce"
+  - "Брюс."
 ---
 
 Фелікс зробив три таких, і він пише:

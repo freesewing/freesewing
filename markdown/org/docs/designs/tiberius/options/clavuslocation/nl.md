@@ -1,8 +1,8 @@
 ---
-title: "Clavus location"
+title: "Locatie Clavus"
 ---
 
-Controls the location of the clavi
+Regelt de locatie van de clavi
 
 ## Effect van deze optie op het patroon
 

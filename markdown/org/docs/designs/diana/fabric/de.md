@@ -1,5 +1,5 @@
 ---
-title: "Diana draped top: Fabric Options"
+title: "Diana drapiertes Oberteil: Stoff Optionen"
 ---
 
 Dies funktioniert am besten in einem dieser beiden Szenarien:

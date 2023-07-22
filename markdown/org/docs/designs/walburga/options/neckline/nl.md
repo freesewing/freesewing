@@ -1,8 +1,8 @@
 ---
-title: "Neckline"
+title: "Halslijn"
 ---
 
-Controls whether or not to draft a neck opening
+Bepaalt of een halsopening wel of niet moet worden getekend
 
 ## Effect van deze optie op het patroon
 

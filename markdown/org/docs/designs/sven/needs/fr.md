@@ -1,5 +1,5 @@
 ---
-title: "Sven sweatshirt: What You Need"
+title: "Sweat-shirt Sven : Ce dont tu as besoin"
 ---
 
 Pour fabriquer Sven, vous aurez besoin des éléments suivants :

@@ -2,7 +2,7 @@
 title: "Dardos de busto que conforman"
 ---
 
-Controls the balance between the primary and secondary bust darts.
+Controla el equilibrio entre los dardos primarios y secundarios del busto.
 
 ## Efecto de esta opción en el patrón
 

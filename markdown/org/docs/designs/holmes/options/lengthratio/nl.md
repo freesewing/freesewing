@@ -4,7 +4,7 @@ title: "Lengteratio"
 
 ***
 
-Controls the length of the crown and ear flaps
+Regelt de lengte van de kroon en oorkleppen
 
 ## Effect van deze optie op het patroon
 

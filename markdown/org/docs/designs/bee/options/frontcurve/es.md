@@ -1,10 +1,10 @@
 ---
-title: "Front curve"
+title: "Curva lateral interior"
 ---
 
 ***
 
-Controls the curvature of the front of the bikini cup
+Controla la curvatura de la parte lateral interior de la copa del bikini
 
 ## Efecto de esta opción en el patrón
 

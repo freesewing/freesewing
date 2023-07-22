@@ -2,7 +2,7 @@
 title: Posición de la pinza
 ---
 
-Controls whether to split at the shoulder or armhole
+Controla si se divide en el hombro o en la sisa
 
 ## Efecto de esta opción en el patrón
 

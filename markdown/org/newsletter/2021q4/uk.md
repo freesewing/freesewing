@@ -1,49 +1,36 @@
 ---
 date: "2021-10-01"
 edition: "2021q4"
-intro: "2021 Fall edition"
-title: "2021 Fall edition"
+intro: "2021 Осінній випуск"
+title: "2021 Осінній випуск"
 ---
 
-Welcome to the 2021 Autumn edition of the FreeSewing newsletter. Ось що ми підготували для вас:
+Ласкаво просимо до осіннього випуску 2021 року інформаційного бюлетеня FreeSewing. Ось що ми підготували для вас:
 
-- 🎉 Pattern releases fall 2021  (1-minute read - by Karen)
-- ✏ Call for feedback: Hellgy's user survey (1-minute read - by Karen, 5-minute survey by Hellgy)
-- ✨ Version 3 roadmap (3-minute read - by joost)
-- 🕵 Behind the seams: Anneke (5-minute read - by Anneke, An, and Eleonore)
-- 👻 Halloween 🕷 costume 👽 ideas (1-minute read - by bobgeorgethe3rd and Lucian)
-- 😋 We have a TikTok now! (1-minute read - by Lucian)
-- 🎧 Sew over 50 podcast, double-dose with Wouter and Joost (1-minute read - by Karen, over an hour of podcast fun by Maria)
-- 👕 Pattern Project (2-minute read - by joost)
+- 🎉 Релізи шаблонів восени 2021 року (1-хвилинне читання від Карен)
+- ✏ Зверніться за відгуком: Опитування користувачів Hellgy (1-хвилинне читання - Карен, 5-хвилинне опитування Hellgy)
+- Дорожня карта версії 3 (3-хвилинне читання - за допомогою joost)
+- 🕵 За швами: Аннеке (5-хвилинне читання - Аннеке, Ан та Елеонора)
+- 👻 Хелловін 🕷 костюми 👽 ідеї (1-хвилинне читання - від bobgeorgethe3rd та Lucian)
+- 😋 У нас тепер є TikTok! (1-хвилинне читання - Лучіан)
+- 🎧 Зшили понад 50 подкастів, подвійна доза з Wouter та Joost (1-хвилинне читання - Карен, понад годину подкастів від Марії)
+- Проєкт "Візерунок" (2-хвилинне читання - за допомогою joost)
 
-We hope you enjoy it.  
-If not, mash that reply button and tell us what you'd like to read instead ¯\\\_(ツ)\_/¯
-
-&nbsp;
+Сподіваємося, вам сподобається.  
+Якщо ні, натисніть кнопку "Відповісти" і скажіть нам, що б ви хотіли прочитати замість цього ¯\\\\_(ツ)\_/¯
 
 &nbsp;
 
-## 🎉 Pattern releases fall 2021
-
-A new pattern is out that's perfect for fall, at least if you're in the northern hemisphere.
-
-[The Yuri hoodie](https://freesewing.org/blog/annnouncing-yuri/) is based on the [Hugo](https://freesewing.org/designs/hugo/) and [Huey](https://freesewing.org/designs/huey/) hoodie patterns, but it's got something a little extra.  
-Or rather, it doesn't. Yuri has no zippers!
-
-Designed by [Hellgy](https://freesewing.org/makers/hellgy/) and coded by [Biou](https://github.com/biou/), Yuri uses overlapping panels secured with buttons to keep you cozy and stylish.
-
 &nbsp;
 
----
+## 🎉 Релізи візерунків восени 2021
 
-&nbsp;
+Вийшов новий візерунок, який ідеально підходить для осені, принаймні, якщо ви живете в північній півкулі.
 
-## ✏ Call for feedback: FreeSewing user survey
+[Худі Юрія](https://freesewing.org/blog/annnouncing-yuri/) базується на моделях худі [Hugo](https://freesewing.org/designs/hugo/) та [Huey](https://freesewing.org/designs/huey/) , але в ньому є дещо додаткове.  
+Точніше, не має. У Юрія немає блискавок!
 
-FreeSewing rockstar Hellgy [didn't just release a new pattern this quarter](https://freesewing.org/blog/annnouncing-yuri/), they also put together [a FreeSewing user survey]((https://forms.gle/7zFSJP7AbUeg3Tbo9))!   
-Their goal: find out what our users like or dislike and find easy or difficult, then use that information to help with the UX/UI design of the site.
-
-Here's where we need you! Do you have 5 minutes and want to help out FreeSewing? [Fill out the FreeSewing user survey](https://forms.gle/7zFSJP7AbUeg3Tbo9) and let us know how you use the site and what your experience has been.
+Розроблений [Hellgy](https://freesewing.org/makers/hellgy/) та закодований [Biou](https://github.com/biou/), Юрій використовує панелі, що перекриваються, закріплені кнопками, щоб зберегти затишок та стиль.
 
 &nbsp;
 
@@ -51,18 +38,31 @@ Here's where we need you! Do you have 5 minutes and want to help out FreeSewing?
 
 &nbsp;
 
-## ✨ Version 3 roadmap
-It's been a bit over 2 years [since FreeSewing v2.0.0 came out](https://freesewing.org/blog/announcing-v2/). Since its release, we've been working on adding new designs as well as improving things big and small, and it's fair to say that the v2.19 release that we're currently preparing is leaps and bounds ahead of that 2.0 version from 2 years ago.
+## ✏ Зателефонувати для зворотного зв'язку: Опитування користувачів FreeSewing
 
-Still, there's a number of things we'd like to do but we can't. Or at least not without breaking a bunch of stuff, which we won't because FreeSewing practices something called [semantic versioning](https://semver.org/). That's a fancy term that boils down to version numbers that looks like major.minor.patch. For example: 2.18.1.
+Рок-зірка FreeSewing Hellgy [не просто випустила нову викрійку в цьому кварталі](https://freesewing.org/blog/annnouncing-yuri/), вона також провела [опитування користувачів FreeSewing]((https://forms.gle/7zFSJP7AbUeg3Tbo9))!   
+Їх мета: з'ясувати, що нашим користувачам подобається чи не подобається, що їм легко, а що важко, а потім використати цю інформацію, щоб допомогти з UX/UI дизайном сайту.
 
-The way it works is that for bugfixes, you increase the patch level. For new features, you increase the minor level. And the major number is only increased for so-called breaking changes.
+Ось де ви нам потрібні! У вас є 5 хвилин і ви хочете допомогти FreeSewing? [Заповніть опитування користувачів FreeSewing](https://forms.gle/7zFSJP7AbUeg3Tbo9) і повідомте нам, як ви користуєтеся сайтом і який ваш досвід.
 
-Another way to look at it is that when you practice semantic versioning, you make a promise to your users: As long as you stick to the same major version, we won't break your stuff. That is not super relevant for regular users of freesewing.org but is very important for people who are building on top of our software, and example of which you can read further down in this newsletter.
+&nbsp;
 
-In practical terms, everything we have a *ooh that would be nice but it would break things* idea, we file it under *maybe in the next major release*. And after two years, we feel we've got enough of a grab-bag of ideas to start being serious about what we want to see in version 3.
+---
 
-To that extend, we have published [the FreeSewing v3 roadmap](https://github.com/freesewing/freesewing/discussions/1278). It is a list of all the things that we would like to see happen in the next major release. And it's open for feedback, suggestions, and ideas. In other words, if there's something you always wanted to see in FreeSewing, or if you've got some great ideas for us, now is the time to chime in. You can [comment on the roadmap]((https://github.com/freesewing/freesewing/discussions/1278)), or [join us on Discord](https://discord.freesewing.org/).
+&nbsp;
+
+## ✨ Дорожня карта версії 3
+Минуло трохи більше 2 років [з моменту виходу FreeSewing v2.0.0](https://freesewing.org/blog/announcing-v2/). З моменту релізу ми працювали над додаванням нових дизайнів, а також над поліпшенням великих і малих речей, і можна з упевненістю сказати, що реліз v2.19, який ми зараз готуємо, значно випереджає версію 2.0, що вийшла 2 роки тому.
+
+Проте є багато речей, які ми хотіли б зробити, але не можемо. Або, принаймні, не зламавши купу речей, чого ми не зробимо, тому що FreeSewing практикує те, що називається [семантичне версіонування](https://semver.org/). Це вигадливий термін, який зводиться до номерів версій, що виглядає як major.minor.patch. Наприклад: 2.18.1.
+
+Це працює наступним чином: для виправлення помилок ви підвищуєте рівень патчу. Для нових функцій ви підвищуєте мінорний рівень. А основна кількість збільшується лише для так званих проривних змін.
+
+Інший погляд на це полягає в тому, що коли ви практикуєте семантичне керування версіями, ви даєте обіцянку своїм користувачам: "Допоки ви дотримуєтесь однієї основної версії, ми не будемо ламати ваші речі". Це не дуже актуально для постійних користувачів freesewing.org, але дуже важливо для людей, які будують на основі нашого програмного забезпечення, приклади яких ви можете прочитати далі в цьому ньюзлейте.
+
+З практичної точки зору, все, що у нас є *ооо, це було б добре, але це порушило б* ідею, ми подаємо її в *, можливо, в наступному великому випуску*. І після двох років ми відчуваємо, що у нас є достатньо ідей, щоб почати серйозно ставитися до того, що ми хочемо бачити у версії 3.
+
+Для цього ми опублікували [дорожню карту FreeSewing v3](https://github.com/freesewing/freesewing/discussions/1278). Це список всіх речей, які ми хотіли б бачити в наступному великому випуску. І він відкритий для відгуків, пропозицій та ідей. Іншими словами, якщо ви завжди хотіли щось побачити у FreeSewing, або якщо у вас є чудові ідеї для нас, зараз саме час поділитися ними. Ви можете [коментувати дорожню карту]((https://github.com/freesewing/freesewing/discussions/1278)), або [приєднатися до нас на Discord](https://discord.freesewing.org/).
 
 &nbsp;
 
@@ -71,42 +71,29 @@ To that extend, we have published [the FreeSewing v3 roadmap](https://github.com
 &nbsp;
 
 
-## 🕵 Behind the seams: Anneke
-*We’re happy to introduce you to another of FreeSewing’s contributors. She’s multi-talented, has green hair and the best sense of humour. Anneke was around before FreeSewing was even a thing. Without her, FreeSewing wouldn’t have a face … or should we say, skull?*
+## 🕵 За швами: Аннеке
+*Ми раді представити вам ще одного учасника FreeSewing. Вона багатоталановита, має зелене волосся і чудове почуття гумору. Аннеке була тут ще до того, як про FreeSewing заговорили. Без неї у FreeSewing не було б обличчя … чи, краще сказати, черепа?*
 
 ### Як ви дізналися про FreeSewing?
-“I met Joost at a blog meet-up, way back in the day. You know it was a long time ago because Joost still left the house and socialising was still allowed. Anyway, we started following each other and that’s how I found about his patterns-to-measurements project. It was still called MakeMyPattern at that time. Apart from my work as a seamstress and getting a second degree in animal care, I’m also an illustrator. At some point Joost asked me to design a logo for FreeSewing, and that’s how Skully happened.”
+"Я познайомився з Юстом на зустрічі блогерів, це було давно. Ви знаєте, що це було дуже давно, тому що Joost все ще виходив з дому, а спілкування все ще дозволялося. Так чи інакше, ми почали стежити один за одним, і саме так я дізналася про його проект "Викрійки до вимірів". Тоді він ще називався MakeMyPattern. Окрім того, що я працюю швачкою та здобуваю другу освіту в галузі догляду за тваринами, я ще й ілюстраторка. Якось Joost попросив мене розробити логотип для FreeSewing, і так з'явилася Скаллі".
 
-### What else have you been up to as a contributor?
-“Joost and I created a pattern together, Carlton and Carlita. They are two versions of the coat Benedict Cumberbatch wears in “Sherlock”. I also help out with translations, manage our Facebook group and test new patterns if they are something that I would wear.”
+### Чим ще ви займалися як дописувач?
+"Ми з Юстом створили візерунок разом, Карлтон і Карліта. Це дві версії пальта, яке носить Бенедикт Камбербетч у фільмі "Шерлок". Я також допомагаю з перекладами, керую нашою групою у Facebook і тестую нові моделі, якщо вони підходять для мене".
 
-### What drew you to sewing?
-“I started sewing over ten years ago. My mother had no inspiration for a birthday present but she saw me messing around with some fabric and gave me a sewing machine. It all went downhill from there. I currently work as a seamstress parttime, doing mostly repairs and alterations. It's very different from sewing from scratch, and interesting in its own way. I still sew for fun, too. I love how sewing gives me absolute control over my wardrobe. I'm no longer limited to what's on offer in shops, I can wear whatever I want in the materials that I want. As someone who can get very sensitive to textures and fit, this is a huge advantage.”
+### Що привело вас до шиття?
+"Я почала шити більше десяти років тому. Моя мама не мала натхнення для подарунка на день народження, але вона побачила, як я возилася з тканиною, і подарувала мені швейну машинку. Звідти все пішло під укіс. Зараз я працюю швачкою на півставки, займаюся переважно ремонтами та переробками. Це дуже відрізняється від шиття з нуля і по-своєму цікаво. Я все ще шию для задоволення. Мені подобається, що шиття дає мені абсолютний контроль над моїм гардеробом. Я більше не обмежена тим, що пропонують магазини, я можу носити все, що хочу, з тих матеріалів, з яких хочу. Для людини, яка може бути дуже чутливою до текстур і крою, це величезна перевага".
 
 ### Що для вас найскладніше в шитті?
-“Finding the balance between doing something I enjoy and owning too many clothes. Sewing for others feels too much like work, so if I sew in my spare time, it’s always for me. But you do end up with a LOT of clothes, and that makes me feel guilty or wasteful sometimes. I try to see the giant wardrobe as a testimony to my learning process, and donate the things that are no longer worn so they get another chance. On a less serious note, I’m terrible at cleaning up after myself when I’m sewing. I’m a messy person and it’s a messy activity. What can you do?”
+"Знайти баланс між тим, що мені подобається, і тим, що у мене забагато одягу. Шити для інших занадто схоже на роботу, тому якщо я шию у вільний час, то це завжди для себе. Але в кінцевому підсумку у вас залишається БАГАТО одягу, і це змушує мене іноді відчувати себе винною або марнотратною. Я намагаюся розглядати гігантський гардероб як свідчення мого процесу навчання, а речі, які вже не ношу, віддаю, щоб вони отримали ще один шанс. З менш серйозного - я жахливо прибираю за собою, коли шию. Я брудна людина, а це брудна діяльність. Що ти можеш зробити?"
 
-### What would be your advise for starting sewists/sewistas?
-“Be ambitious. You will learn a lot from projects that challenge you. It's OK to start with very simple things just to learn how to use your machine, but don't be afraid of zippers or buttons or collars. The internet is full of information and tutorials, and if you mess it up, learn from it and try again. I’m still proud of my own “milestone” projects that tought me new skills and pushed me forward. My first real coat, first pair of jeans, first underwire bra.”
+### Що б ви порадили початківцям швачкам/швачкам?
+"Будьте амбітними. Ви багато чому навчитеся на проектах, які кидають вам виклик. Почніть з дуже простих речей, щоб навчитися користуватися машиною, але не бійтеся застібок-блискавок, ґудзиків або комірів. В інтернеті повно інформації та навчальних посібників, і якщо у вас щось не вийшло, вчіться на цьому і пробуйте знову. Я досі пишаюся своїми "знаковими" проектами, які навчили мене новим навичкам і підштовхнули мене вперед. Моє перше справжнє пальто, перша пара джинсів, перший бюстгальтер на кісточках".
 
-### Are you a dog or a cat person?
-“I’m an animal person. All animals are good in my book. Except for mosquitos, they can go fuck themselves. Can I say that?” (You can, and you did.)
+### Ви любите собак чи котів?
+"Я тварина. У моїй книзі всі тварини хороші. За винятком комарів, які можуть піти до біса. Можна я так скажу?" (Ви можете, і ви це зробили).
 
-### Where can we find you on social media?
-You can find my (relatively quiet) blog at www.annekecaramin.com or my Instagram at [@annekecaramin](https://www.instagram.com/annekecaramin/).
-
-&nbsp;
-
----
-
-&nbsp;
-
-## 👻 Halloween 🕷 costume 👽 ideas
-With Halloween just four weeks away, we've got something special lined up for you: Lucian and bobgeorgethe3rd are putting the finishing touches on a list of ideas for awesome costumes to sew. And — best of all — you can make all of them from FreeSewing patterns!
-
-The ideas range all the way from recreating a Victorian-esque look with extravagant sleeves, to embodying the role of Spongebob.
-
-There's plenty of options, for all ages, so keep on eye on [our blog](https://freesewing.org/blog/) for spooky updates as Halloween draws closer.
+### Де ми можемо знайти вас у соціальних мережах?
+Ви можете знайти мій (відносно спокійний) блог на www.annekecaramin.com або мій Instagram на [@annekecaramin](https://www.instagram.com/annekecaramin/).
 
 &nbsp;
 
@@ -114,8 +101,12 @@ There's plenty of options, for all ages, so keep on eye on [our blog](https://fr
 
 &nbsp;
 
-## 😋 We have a TikTok now!
-You may have noticed that [our Instagram account](https://www.instagram.com/freesewing_org/) has been posting a lot more lately. True! But that's not the only social media work done; we have a TikTok account now! [You can find it under @freesewing_org](https://www.tiktok.com/@freesewing_org), which is the name all of our social accounts carry. Who knows what the future holds... 👀
+## 👻 Хелловін 🕷 костюм 👽 ідеї
+До Геловіну залишилося всього чотири тижні, і ми підготували для вас дещо особливе: Lucian та bobgeorgethe3rd дописують останні штрихи до списку ідей для чудових костюмів, які можна пошити. І - найкраще - ви можете зробити все це за допомогою викрійок FreeSewing!
+
+Ідеї варіюються від відтворення образу у вікторіанському стилі з екстравагантними рукавами до втілення ролі Губки Боба.
+
+Є багато варіантів для будь-якого віку, тож слідкуйте за нашим блогом [та](https://freesewing.org/blog/) за моторошними новинами з наближенням Хелловіну.
 
 &nbsp;
 
@@ -123,12 +114,8 @@ You may have noticed that [our Instagram account](https://www.instagram.com/free
 
 &nbsp;
 
-## 🎧 Sew over 50 podcast, double-dose with Wouter and Joost
-FreeSewing's very own Wouter (you may remember him from the interview in the first FreeSewing newsletter) has been interviewed for the Sew Over 50 podcast! Tune in to learn about how Wouter got into sewing, the projects that intrigue him, his advice for new sewists, and his work with FreeSewing!
-
-And just under the wire for this newsletter, Joost has also been recently interviewed by Sew Organised Style, sharing how FreeSewing came to be, how you can get involved, and what brought Joost to sewing in the first place! Plus bonus thoughts on finding the perfect shoes.
-
-Find out more on the [Sew Organised Style page](https://seworganisedstylepodcast.com/), and listen to Wouter's podcast [here](https://seworganisedstylepodcast.com/2021/08/12/wouter-vdub/) and Joost's podcast [here](https://seworganisedstylepodcast.com/2021/09/27/freesewing-org/), or look for Sew Organised Style on your favorite podcast app.
+## 😋 У нас тепер є TikTok!
+Можливо, ви помітили, що [наш акаунт в Instagram](https://www.instagram.com/freesewing_org/) останнім часом публікує набагато більше публікацій. Це правда! Але це не єдина виконана робота в соціальних мережах: тепер у нас є акаунт у TikTok! [Ви можете знайти його за адресою @freesewing_org](https://www.tiktok.com/@freesewing_org)- так називаються всі наші соціальні акаунти. Хто знає, що чекає на нас у майбутньому... 👀
 
 &nbsp;
 
@@ -136,16 +123,29 @@ Find out more on the [Sew Organised Style page](https://seworganisedstylepodcast
 
 &nbsp;
 
-## 👕 Pattern project
+## 🎧 Зшили понад 50 подкастів, подвійна доза з Wouter та Joost
+Власник FreeSewing Wouter (ви можете пам'ятати його з інтерв'ю в першому випуску новин FreeSewing) дав інтерв'ю для подкасту Sew Over 50! Налаштуйтеся на хвилю, щоб дізнатися про те, як Воутер прийшов у шиття, про проекти, які його інтригують, про його поради для початківців та про його роботу з FreeSewing!
 
-To be clear: This is not an ad. But I do want to talk about a new clothing company based in the UK named Pattern Project. They describe themselves on [their website](https://www.pattern-project.com/) as:
+І якраз напередодні виходу цього випуску новин Joost також дав інтерв'ю для Sew Organised Style, в якому розповів, як з'явився FreeSewing, як ви можете долучитися до нього, і що привело Joost до шиття в першу чергу! Плюс бонусні думки про те, як знайти ідеальне взуття.
 
-> *Pattern Project is a South London micro-factory. We make clean, urban, local manufacturing of clothing possible and cost-effective. We produce clothing after it is sold in a matter of days.*
+Дізнайтеся більше на сторінці [Sew Organised Style](https://seworganisedstylepodcast.com/), слухайте подкаст Воутера [тут](https://seworganisedstylepodcast.com/2021/08/12/wouter-vdub/) та подкаст Джооста [тут](https://seworganisedstylepodcast.com/2021/09/27/freesewing-org/), або шукайте Sew Organised Style у вашому улюбленому додатку для подкастів.
+
+&nbsp;
+
+---
+
+&nbsp;
+
+## 👕 Шаблонний проект
+
+Щоб було зрозуміло: це не реклама. Але я хочу розповісти про нову компанію з виробництва одягу, що базується у Великобританії, яка називається Pattern Project. Вони описують себе на сайті [та на сайті](https://www.pattern-project.com/) як:
+
+> *Pattern Project - це мікрофабрика на півдні Лондона. Ми робимо чисте, міське, локальне виробництво одягу можливим та економічно ефективним. Ми виробляємо одяг після того, як він продається, за лічені дні.*
 > 
-> *We sell Sew-It-Yourself Kits and Ready-To-Wear clothes. The kits contain precut and annotated fabric are easy to make and take less time than regular sewing.*
+> *Ми продаємо набори для шиття своїми руками та готовий одяг. Набори, що містять попередньо розкроєну та анотовану тканину, прості у виготовленні та займають менше часу, ніж звичайне шиття.*
 
-The reason I'm writing about them in our newsletter can't be glanced from their website, nor will you [read about it in the press](https://www.theguardian.com/lifeandstyle/2021/sep/28/sew-it-yourself-inside-the-zero-waste-zero-sweatshop-revolution). But behind the scenes of this micro-factory, FreeSewing churns out the patterns for the laser machines that cut the fabric.
+Причину, чому я пишу про них у нашому ньюзлейте, не можна побачити на їхньому сайті, і ви не [прочитаєте про це в пресі](https://www.theguardian.com/lifeandstyle/2021/sep/28/sew-it-yourself-inside-the-zero-waste-zero-sweatshop-revolution). Але за лаштунками цієї мікрофабрики FreeSewing створює викрійки для лазерних верстатів, які розкроюють тканину.
 
-It feels significant somehow to cross that threshold from *nice hobby website you've got there* into a place where FreeSewing is a project on which other build their business, and in a very tangible way, their livelihood.
+Якось дуже важливо переступити цей поріг, перейти від *милого сайту для хобі, який ви маєте* , до місця, де FreeSewing є проектом, на якому інші будують свій бізнес, і в дуже відчутному сенсі, свої засоби до існування.
 
-I don't even know if the achievement this unlocks carries a name. But I wanted to share it and thank all our contributors and patrons for their support without which we would have never gotten this far.
+Я навіть не знаю, чи досягнення, яке він розблоковує, має назву. Але я хотів би поділитися нею і подякувати всім нашим дописувачам і меценатам за їхню підтримку, без якої ми б ніколи не досягли такого результату.

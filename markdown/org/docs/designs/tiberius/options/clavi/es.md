@@ -2,7 +2,7 @@
 title: "Clavi"
 ---
 
-Whether or not to include guides for clavi
+Incluir o no guías para clavi
 
 ## Efecto de esta opción en el patrón
 

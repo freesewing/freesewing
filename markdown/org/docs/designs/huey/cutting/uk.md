@@ -1,5 +1,5 @@
 ---
-title: "Huey hoodie: Cutting Instructions"
+title: "Худі з капюшоном Huey: Інструкція з крою"
 ---
 
 **Основна тканина**

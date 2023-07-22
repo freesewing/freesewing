@@ -1,8 +1,8 @@
 ---
-title: "Bottom Leg Reduction"
+title: "Reducción de la pata inferior"
 ---
 
-This setting adjusts the difference in length between the top and the bottom fabric of the legs. The bigger the difference, the more the legs will want to curl.
+Esta configuración ajusta la diferencia de longitud entre la tela superior e inferior de las patas. Cuanto mayor sea la diferencia, más querrán curvarse las piernas.
 
 ## Efecto de esta opción en el patrón
 

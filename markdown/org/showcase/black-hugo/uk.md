@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d19447441b0ccec9460b2
 intro: "Це фото з Instagram-каналу taliajane_designs ."
 title: "Чорне худі hugo від Наталі"
 designs:
-  - "hugo"
+  - "Хьюго."
 ---
 
 

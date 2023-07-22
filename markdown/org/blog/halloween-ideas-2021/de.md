@@ -1,66 +1,66 @@
 ---
 author: "joostdecock"
-caption: "Drawing by @racerxmachina, Sandy!"
+caption: "Zeichnung von @racerxmachina, Sandy!"
 date: "2021-10-20"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/37c6f1c78ac0bfb539ea2b11ff32f104c34a0d6d-1666x1111.jpg"
-intro: "You may already have an idea for what you want to make for Halloween. Or maybe you have no clue. Either way, here is some inspiration to get you going."
-title: "Get your Halloween going with these inspirational costume ideas"
+intro: "Vielleicht hast du schon eine Idee, was du zu Halloween machen möchtest. Oder vielleicht hast du keine Ahnung. Wie auch immer, hier sind ein paar Inspirationen, die dich anregen sollen."
+title: "Mit diesen inspirierenden Kostümideen bringst du dein Halloween in Schwung"
 ---
 
- You may already have an idea for what you want to make for Halloween. Or maybe you have no clue. Either way, here is some inspiration to get you going.
+ Vielleicht hast du schon eine Idee, was du zu Halloween machen möchtest. Oder vielleicht hast du keine Ahnung. Wie auch immer, hier sind ein paar Inspirationen, die dich anregen sollen.
 
-### Want to go for a vintage look?
-Many of our patterns can give you a vintage-esque look without actually having to be vintage.  
-Working outwards from the bases of [Charlie](/designs/charlie) and [Simon](/designs/simon/)/[Simone](/designs/simone/), you can then use combination of [Wahid](/designs/wahid/), [Jaeger](/designs/jeager), [Carlton](/designs/carlton/)/[Carlita](/designs/carlita) for the outerwear. To complete the look, don a [Florent](/designs/florent) and a [Trayvon](/designs/trayvon) or [Benjamin](/designs/benjamin). If [Charlie](/designs/charlie/) isn’t doing it for you, maybe switch it out for a [Cornelius](/designs/cornelius/) or a floor -length quarter-circle or half-circle [Sandy Skirt](/designs/sandy/).
+### Willst du einen Vintage-Look?
+Viele unserer Muster können dir einen Vintage-Look verleihen, ohne dass sie tatsächlich Vintage sein müssen.  
+Wenn du von den Basismustern [Charlie](/designs/charlie) und [Simon](/designs/simon/)/[Simone](/designs/simone/)ausgehst, kannst du eine Kombination aus [Wahid](/designs/wahid/), [Jaeger](/designs/jeager), [Carlton](/designs/carlton/)/[Carlita](/designs/carlita) für die Oberbekleidung verwenden. Um den Look zu vervollständigen, zieh ein [Florent](/designs/florent) und ein [Trayvon](/designs/trayvon) oder [Benjamin](/designs/benjamin)an. Wenn du mit [Charlie](/designs/charlie/) nichts anfangen kannst, dann tausche es vielleicht gegen [Cornelius](/designs/cornelius/) oder einen bodenlangen Viertel- oder Halbkreis [Sandy Skirt](/designs/sandy/)aus.
 
-### Want to have more of Gothic look?
-First, let’s make more Romantic version of [Simon](/designs/simon/)/[Simone](/designs/simone/). You can do this by slashing and spreading the sleeve piece. There are many ways to do this and many variations, but we recommend a bishop sleeve which you can find [on SewingJulie's YouTube channel](https://www.youtube.com/watch?v=GkEZtATYZ2g&ab_channel=SewingJulie). Just remember that [Simon](/designs/simon/)([e](/designs/simone/)) has already been drafted for a cuff and has a placket. From there you can throw on a pair of [Charlies](/designs/charlie/).
+### Willst du mehr Gothic-Look?
+Zuerst machen wir eine romantischere Version von [Simon](/designs/simon/)/[Simone](/designs/simone/). Das kannst du tun, indem du das Ärmelstück aufschlitzt und spreizt. Es gibt viele Möglichkeiten und Variationen, aber wir empfehlen einen Bischofsärmel, den du unter [auf dem YouTube-Kanal von SewingJulie](https://www.youtube.com/watch?v=GkEZtATYZ2g&ab_channel=SewingJulie)finden kannst. Denke daran, dass [Simon](/designs/simon/)([e](/designs/simone/)) bereits für ein Bündchen entworfen wurde und eine Knopfleiste hat. Von dort aus kannst du dir ein Paar [Charlies](/designs/charlie/)überwerfen.
 
-For outerwear, you can either go for a [Wahid](/designs/wahid/) or [Cathrin](/designs/cathrin/) and to finish the look we recommend the square variant of [Benjamin](/designs/benjamin/). Again if [Charlie](/designs/charlie/) is not your thing you can try [Penelope](/designs/penelope/) or [Sandy](/designs/sandy/).  
+Für die Oberbekleidung kannst du dich entweder für [Wahid](/designs/wahid/) oder [Cathrin](/designs/cathrin/) entscheiden und um den Look zu vollenden, empfehlen wir die quadratische Variante von [Benjamin](/designs/benjamin/). Wenn [Charlie](/designs/charlie/) nicht dein Ding ist, kannst du auch [Penelope](/designs/penelope/) oder [Sandy](/designs/sandy/)ausprobieren.  
 ![A drawing of a vampire-like man, wearing a poofy Simon shirt and a purple Wahid waistcoat](https://posts.freesewing.org/uploads/wahidsimonvamp_345e8bb3b0.jpg)  
-*Drawing by @racerxmachina, Sandy*
+*Zeichnung von @racerxmachina, Sandy*
 
-### Or are you more of a secret agent?
-Get the suave look by making a [Jaeger](/designs/jaeger/), [Trayvon](/designs/trayvon/), and [Charlie](/designs/charlie/) and pair it with your favourite sunglasses. If the [Jaeger](/designs/jaeger/) isn’t your style, try switching it out for a [Wahid](/designs/wahid/). And if trousers don’t take your fancy, try [Penelope](/designs/penelope/) or a quarter-circle [Sandy](/designs/sandy/).
+### Oder bist du eher ein Geheimagent?
+Erhalte den eleganten Look mit [Jaeger](/designs/jaeger/), [Trayvon](/designs/trayvon/)und [Charlie](/designs/charlie/) und kombiniere ihn mit deiner Lieblingssonnenbrille. Wenn die [Jaeger](/designs/jaeger/) nicht dein Stil ist, dann tausche sie gegen die [Wahid](/designs/wahid/)aus. Und wenn dir die Hose nicht gefällt, probiere [Penelope](/designs/penelope/) oder einen Viertelkreis [Sandy](/designs/sandy/).
 
-Or maybe you want to be in your combat garb. Try combining [Sven](/designs/sven/) and [Paco](/designs/paco/). Pair them with some combat boots and a belt of your choosing.
+Oder vielleicht willst du in deiner Kampfkleidung sein. Versuche [Sven](/designs/sven/) und [Paco](/designs/paco/)zu kombinieren. Kombiniere sie mit ein paar Kampfstiefeln und einem Gürtel deiner Wahl.
 
-### Maybe you are more of fantasy dweller?
-Whilst we don’t have many patterns that emulate fantasy, the [Cathrin Corset](/designs/cathrin/) is a great place to start. Combine it with a Puff-Sleeve variant of [Teagan](/designs/teagan/) and a floor-length quarter- or half-circle [Sandy](/designs/sandy/), and you are well on your way to emulating [the Cathrin cover art](/designs/cathrin/). For those of you who are feeling a little more adventurous, a little challenge for you: try combining [Cornelius](/designs/cornelius/) and [Paco](/designs/paco/) together to create satyr legs, then perhaps pair it with [Wahid](/designs/wahid/) and [Simon](/designs/simon/)/[Simone](/designs/simone/).
+### Vielleicht bist du eher ein Fantasiemensch?
+Wir haben zwar nicht viele Schnittmuster, die der Fantasie nachempfunden sind, aber das [Cathrin Korsett](/designs/cathrin/) ist ein guter Anfang. Kombiniere es mit einer Puffärmel-Variante von [Teagan](/designs/teagan/) und einem bodenlangen Viertel- oder Halbkreis [Sandy](/designs/sandy/), und du bist auf dem besten Weg, [dem Cathrin-Coverart](/designs/cathrin/)nachzueifern. Für diejenigen unter euch, die etwas abenteuerlustiger sind, hier eine kleine Herausforderung: Versuche [Cornelius](/designs/cornelius/) und [Paco](/designs/paco/) miteinander zu kombinieren, um Satyrbeine zu kreieren, dann vielleicht mit [Wahid](/designs/wahid/) und [Simon](/designs/simon/)/[Simone](/designs/simone/).
 
-### Become "that suit person."
-This is a goofy outfit that can be worn to any informal party. The formal aspects of [Jaeger](/designs/jaeger/) and [Charlie](/designs/charlie/) clash beautifully with crazy patterned fabrics, which makes for a super fun Halloween outfit, which can also be worn to other parties in the future. Making a [Jaeger](/designs/jaeger/) is hard, but at least the idea is simple: find your favourite crazy fabric and use it for both pieces. You can wear a white dress shirt (or a white [Simon](/designs/simon/)) underneath. There's an option to add a [Trayvon](/designs/trayvon/) or [Benjamin](/designs/benjamin/) in a bright color as well. The possibilities are endless!
+### Werde "der Anzugträger".
+Das ist ein albernes Outfit, das zu jeder informellen Party getragen werden kann. Die formellen Aspekte von [Jaeger](/designs/jaeger/) und [Charlie](/designs/charlie/) treffen wunderbar auf verrückte gemusterte Stoffe, was für ein super lustiges Halloween-Outfit sorgt, das auch zu anderen Partys getragen werden kann. Eine [Jaeger](/designs/jaeger/) zu machen ist schwer, aber zumindest die Idee ist einfach: Finde deinen verrückten Lieblingsstoff und verwende ihn für beide Teile. Du kannst ein weißes Hemd (oder ein weißes [Simon](/designs/simon/)) darunter tragen. Es gibt auch die Möglichkeit, ein [Trayvon](/designs/trayvon/) oder [Benjamin](/designs/benjamin/) in einer hellen Farbe hinzuzufügen. Die Möglichkeiten sind endlos!
 
-### Or maybe you only want to make one or two garments for an easy-to-wear costume?
-[Huey](/designs/huey/), [Hugo](/designs/hugo/), and [Paco](/designs/paco/) are perfect bases to create simple animal hoodies and trousers that will also be comfortable to wear. There are many animals you can try so here are a few basic alterations and ideas to get your creative brain flowing.
+### Oder möchtest du vielleicht nur ein oder zwei Kleidungsstücke für ein leicht zu tragendes Kostüm anfertigen?
+[Huey](/designs/huey/), [Hugo](/designs/hugo/)und [Paco](/designs/paco/) sind die perfekte Basis, um einfache tierische Kapuzenpullis und Hosen zu kreieren, die auch noch bequem zu tragen sind. Es gibt viele Tiere, die du ausprobieren kannst. Hier sind ein paar grundlegende Änderungen und Ideen, die deine Kreativität anregen.
 
-#### Creating a back seam for Hugo and Huey
-For simple things like back spikes for dinosaurs, you may find it useful to create a back seam in [Hugo](/designs/hugo/) or [Huey](/designs/huey/). This is simply done by cutting two back pieces instead of one on the fold. Don't forget to add seam allowance along the center back! From there you would construct your additions, such as spikes, and then baste them to one of the back pieces with right sides together. Then pin the other back piece over the top, right sides together and sew. This will now count as your single back piece in the Huey and [Hugo instructions](https://freesewing.org/docs/patterns/hugo/instructions/).
+#### Erstellen einer Rückennaht für Hugo und Huey
+Für einfache Dinge wie Rückenstacheln für Dinosaurier kann es nützlich sein, eine Rückennaht in [Hugo](/designs/hugo/) oder [Huey](/designs/huey/)zu erstellen. Dazu schneidest du einfach zwei Rückenteile anstelle von einem an der Falz. Vergiss nicht, die Nahtzugabe entlang der hinteren Mitte hinzuzufügen! Von dort aus baust du deine Ergänzungen, wie z. B. die Stacheln, und heftest sie dann mit der rechten Seite an eines der Rückenteile. Dann steckst du das andere Rückenteil rechts auf rechts über die Oberseite und nähst es fest. Dies zählt nun als dein einziges Rückenteil in der Huey und [Hugo Anleitung](https://freesewing.org/docs/patterns/hugo/instructions/).
 
-The same can be done with the hood center piece for [Hugo](/designs/hugo/), and [Huey](/designs/huey/)'s hood already has a center back seam so no changes are required for Huey's hood. Another thing you can do is split the hood patterns in half ear to ear if you are adding stuff like ears but you may find it easier just to hand sew these elements on.
+Das Gleiche gilt für das Mittelstück der Motorhaube von [Hugo](/designs/hugo/), und [Huey](/designs/huey/)'s Motorhaube hat bereits eine hintere Mittelnaht, so dass für Huey's Motorhaube keine Änderungen erforderlich sind. Du kannst das Kapuzenmuster auch von Ohr zu Ohr in zwei Hälften teilen, wenn du Dinge wie Ohren hinzufügst, aber vielleicht findest du es einfacher, diese Elemente einfach von Hand anzunähen.
 
-For these particular costumes we recommend using fabrics that do not fray such as polar fleece for the body and larger additions, with felt being an option for the smaller add-ons.
+Für diese Kostüme empfehlen wir Stoffe, die nicht ausfransen, wie z. B. Polarfleece für den Körper und die größeren Zusätze, und Filz für die kleineren Zusätze.
 
-With these alterations in mind, let’s talk some ideas.
+Mit diesen Änderungen im Hinterkopf, lass uns über ein paar Ideen sprechen.
 
-#### Wings
-This might sound odd at first, but hear me out. You can add wings by making a quarter- or half-circle and inserting them into the side seams of [Huey](/designs/huey/) and [Hugo](/designs/hugo/). If you make want to make your wings more spiky, cut-out semi-circles from the curved edge of your pattern, a plate will make this a lot quicker. Experiment! There are many types of wings and many shapes for them!
-#### Bear
-Who doesn’t want a ferocious bear running around a party? Create round ears for the hood and an oval shape to go on front for the underbelly. You can make a simple small tail for the back of the hoodie.
-#### Cat
-Everybody wants to be a cat! Well not everybody, but if you want to go as one of the Halloween staples and be comfortable, this is the way to do. Add pointed triangle ears to the hood and possibly whiskers with pipe cleaners and add a long sausage tail to the back.
-#### Dinosaurs
-Add horns! Add teeth! Add spikes! The possibilities are endless! If you want to keep it simple, make the center back seam adjustment and add some spikes, then add some felt triangles to represent teeth around the brim of the hood. If you are feeling more daring, why not try to emulate a triceratops head with its horns. You can also add spots to represent dinosaur skin and even a tail if you're up for it.  
+#### Flügel
+Das mag sich zunächst seltsam anhören, aber hör mir zu. Du kannst Flügel hinzufügen, indem du einen Viertel- oder Halbkreis machst und sie in die Seitennähte von [Huey](/designs/huey/) und [Hugo](/designs/hugo/)steckst. Wenn du deine Flügel stacheliger machen willst, schneide Halbkreise aus der gebogenen Kante deines Musters aus - mit einer Platte geht das viel schneller. Experimentiere! Es gibt viele Arten von Flügeln und viele Formen für sie!
+#### Bär
+Wer will nicht, dass ein wilder Bär auf einer Party herumläuft? Kreiere runde Ohren für die Kapuze und eine ovale Form für den Unterbauch. Du kannst einen einfachen kleinen Schwanz für die Rückseite des Hoodies machen.
+#### Katze
+Jeder will eine Katze sein! Nun ja, nicht jeder, aber wenn du dich als eine der Halloween-Klammern verkleiden und es bequem haben willst, ist das der richtige Weg. Füge der Kapuze spitze Dreiecksohren und eventuell Schnurrhaare mit Pfeifenreinigern hinzu und füge einen langen Wurstschwanz auf dem Rücken hinzu.
+#### Dinosaurier
+Hörner hinzufügen! Füge Zähne hinzu! Stacheln hinzufügen! Die Möglichkeiten sind endlos! Wenn du es ganz einfach halten willst, kannst du die hintere Mittelnaht anpassen und ein paar Stacheln hinzufügen, dann füge ein paar Filzdreiecke hinzu, die Zähne am Rand der Kapuze darstellen. Wenn du dich mutiger fühlst, kannst du versuchen, den Kopf eines Triceratops mit seinen Hörnern nachzubilden. Du kannst auch Flecken hinzufügen, um die Haut der Dinosaurier darzustellen, und sogar einen Schwanz, wenn du Lust dazu hast.  
 ![A drawing of a child and an adult walking hand in hand, one wearing a bat costume, the other a dragon costume](https://posts.freesewing.org/uploads/huey_paco_costumes_8a199c7572.jpg)  
-*Drawing by @racerxmachina, Sandy*
+*Zeichnung von @racerxmachina, Sandy*
 
-#### Dog
-Add triangle ears and a wagging tail, or if that’s not to your liking you can try floppy ears. For more variation you can add spots to denote color. Possibly, be a Cruella and make it look like a Dalmatian.
-#### Rabbit
-Go for pink, white, yellow, brown, grey, black or any other color a bunny can be! Add oval-shaped ears and a small nose. For a tail, simply gather up a circle of fur fabric around a ball of stuffing and hand sew to your hoodie.
+#### Hund
+Füge dreieckige Ohren und einen wedelnden Schwanz hinzu, oder wenn dir das nicht gefällt, kannst du Schlappohren verwenden. Für mehr Abwechslung kannst du Punkte hinzufügen, um die Farbe zu kennzeichnen. Möglicherweise kannst du es wie Cruella machen und es wie einen Dalmatiner aussehen lassen.
+#### Kaninchen
+Entscheide dich für rosa, weiß, gelb, braun, grau, schwarz oder jede andere Farbe, die ein Hase haben kann! Füge ovalförmige Ohren und eine kleine Nase hinzu. Für einen Schwanz nimmst du einfach einen Kreis aus Fellstoff um ein Knäuel Füllung und nähst ihn von Hand an deinen Hoodie.
 #### Pokemon
-Now I know what you are thinking. Why is this in the regulars? Well we thought it was best to keep all the [Hugo](/designs/hugo/) and [Huey](/designs/huey/) adaptations together. So why not be inspired by [Frankie’s Bulbasaur Huey](/showcase/bulbasaur-huey/) they made for the child and make a [Huey](/designs/huey/) or [Hugo](/designs/hugo/) inspired favourite Pokemon. You can be as elaborate as you like and make ears, bulbs, and other appendages, or you can simply use the color scheme of your favourite Pokemon and add their eyes, mouth and nose on the hood.
-#### Detective Pikachu
-A detective that might even rival Sherlock Holmes would also be amiss without their hat. Use a [Holmes](/designs/holmes/) with a beige brown herringbone fabric and dark brown ribbon. Now what about the ears? The ears?! Why yes, Pikachu’s ears! Make a two-layered oval shape with a straight bottom. You can either cut and sew the black tops on as a seam or sew them on after you've turned the yellow parts right-side-out. Sew the two yellow layers together good sides together leaving the bottom open, trim and clip the seam allowances, then turn right-side-out. Once turned, stuff and hand sew to the ear flaps of the deerstalker before they are attached to the crown. You can sew these on after final construction if easier, just remember to close the bottom as a seam with hand-sewing before attaching to ear flaps. If you’re not aiming the exact look experiment with different colors and patterns and make a unique Detective Pikachu hat just for you!
+Jetzt weiß ich, was du denkst. Warum ist das in den Stammkundenbüchern? Wir hielten es für das Beste, alle [Hugo](/designs/hugo/) und [Huey](/designs/huey/) Anpassungen zusammen zu halten. Warum lässt du dich also nicht von [Frankies Bulbasaur Huey](/showcase/bulbasaur-huey/) inspirieren und bastelst ein [Huey](/designs/huey/) oder [Hugo](/designs/hugo/) inspiriertes Lieblings-Pokemon. Du kannst so aufwändig sein, wie du willst, und Ohren, Zwiebeln und andere Anhängsel anfertigen, oder du kannst einfach das Farbschema deines Lieblings-Pokemon verwenden und seine Augen, seinen Mund und seine Nase auf der Kapuze anbringen.
+#### Detektiv Pikachu
+Auch ein Detektiv, der es mit Sherlock Holmes aufnehmen könnte, wäre ohne seinen Hut aufgeschmissen. Verwende ein [Holmes](/designs/holmes/) mit einem beige-braunen Fischgrätstoff und dunkelbraunem Band. Und was ist mit den Ohren? Die Ohren?! Ja, die Ohren von Pikachu! Mache eine zweilagige ovale Form mit einem geraden Boden. Du kannst die schwarzen Oberteile entweder ausschneiden und als Naht annähen oder sie annähen, nachdem du die gelben Teile auf die rechte Seite gedreht hast. Nähen Sie die beiden gelben Lagen gut zusammen, lassen Sie die Unterseite offen, schneiden Sie die Nahtzugaben zu und wenden Sie sie auf rechts. Wenn du sie gedreht hast, stopfst du sie aus und nähst sie mit der Hand an die Ohrenklappen des Hirschhorns, bevor sie an der Krone befestigt werden. Wenn es einfacher ist, kannst du sie nach der Fertigstellung annähen. Vergiss nur nicht, die Unterseite mit einer Handnaht zu schließen, bevor du sie an den Ohrenklappen befestigst. Wenn du nicht genau den gleichen Look anstrebst, kannst du mit verschiedenen Farben und Mustern experimentieren und einen einzigartigen Detective Pikachu-Hut für dich kreieren!
 
-> *This was a collaboration between bobgeorgethethird and lucibytes!*
+> *Dies war eine Zusammenarbeit zwischen bobgeorgethethird und lucibytes!*

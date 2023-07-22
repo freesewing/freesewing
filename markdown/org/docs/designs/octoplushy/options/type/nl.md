@@ -2,7 +2,7 @@
 title: "Type"
 ---
 
-There are three distinct Octoplushies. The original cute Octoplushy, the more authentic Octopus, and the Squid.
+Er zijn drie verschillende Octoplushies. De originele schattige Octoplushy, de meer authentieke Octopus en de Inktvis.
 
 ## Effect van deze optie op het patroon
 

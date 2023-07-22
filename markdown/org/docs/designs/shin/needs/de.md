@@ -1,5 +1,5 @@
 ---
-title: "Shin swim trunks: What You Need"
+title: "Shin-Badehosen: Was du brauchst"
 ---
 
 Um Shin zu erstellen, benötigst du Folgendes:

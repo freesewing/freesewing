@@ -2,7 +2,7 @@
 title: Garantie der Ärmelbreite
 ---
 
-Controls how much of the sleeve width will be guaranteed. This determines how much we can alter the sleeve width to fit the sleeve in the armhole.
+Legt fest, wie viel von der Ärmelbreite garantiert wird. Dies bestimmt, wie stark wir die Ärmelbreite verändern können, damit der Ärmel in das Armloch passt.
 
 ## Effekt dieser Option auf das Schnittmuster
 

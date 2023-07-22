@@ -1,52 +1,60 @@
 ---
 author: "joostdecock"
-caption: "A photo by <a href='https://unsplash.com/@onevagabond'>Paulo Silva</a> shows an empty Times Square in New York during the COVID pandemic"
+caption: "Ein Foto von <a href='https://unsplash.com/@onevagabond'>Paulo Silva</a> zeigt einen leeren Times Square in New York während der COVID-Pandemie"
 date: "2021-01-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ffacb5c6384f250ad7cd3cb50b5ed4fdeff33ae6-1920x1280.jpg"
-intro: "Aren't we all glad 2020 is over?"
-title: "The year 2020 was something alright"
+intro: "Sind wir nicht alle froh, dass 2020 vorbei ist?"
+title: "Das Jahr 2020 hatte es in sich"
 ---
 
 
 
 
-Aren't we all glad 2020 is over?
+Sind wir nicht alle froh, dass 2020 vorbei ist?
 
-Realistically, at least some of you, or your loved ones, got caught in the absolute gut-punch that is the COVID-19 pandemic. Either indirectly through lost income or other practical concerns, or directly by battling the virus itself.
+Realistisch betrachtet, sind zumindest einige von euch oder euren Angehörigen von der COVID-19-Pandemie betroffen. Entweder indirekt durch Einkommensverluste oder andere praktische Probleme oder direkt durch den Kampf gegen das Virus selbst.
 
-I can only offer my sympathy, and the belief that things will get better. So hang in there, and let me briefly take your mind of things by sharing some good news against the bleak backdrop of the annus horribilis that 2020 turned out to be.
+Ich kann dir nur mein Mitgefühl aussprechen und den Glauben, dass es besser wird. Bleib also dran und lass mich dich kurz ablenken, indem ich dir eine gute Nachricht vor dem düsteren Hintergrund des annus horribilis, das 2020 war, mitteile.
 
-##### The face mask tsunami
+##### Der Gesichtsmasken-Tsunami
 
-FreeSewing found itself — absolutely unexpected I might add — under the glaring spotlight of international media this year. A tidal wave of attention rolled over us, and while the peak lasted only a good month, the repercussions and long tail of these events have shaped our entire year.
+FreeSewing stand dieses Jahr - völlig unerwartet, möchte ich hinzufügen - im grellen Scheinwerferlicht der internationalen Medien. Eine Flutwelle der Aufmerksamkeit überrollte uns, und obwohl der Höhepunkt nur einen guten Monat dauerte, haben die Auswirkungen und der lange Schweif dieser Ereignisse unser ganzes Jahr geprägt.
 
-It all started in February when COVID-19 was starting to rear its ugly head in Europe and the supplies of personal protective equipment (PPE) started dwindling. It seemed that face masks were going to be a big factor in trying to slow down the spread of this disease, but they were getting harder to come by every day.
+Alles begann im Februar, als COVID-19 in Europa sein hässliches Gesicht zu zeigen begann und die Vorräte an persönlicher Schutzausrüstung (PSA) zu schwinden begannen. Es sah so aus, als ob Gesichtsmasken ein wichtiger Faktor bei dem Versuch sein würden, die Ausbreitung der Krankheit einzudämmen, aber es wurde immer schwieriger, sie zu bekommen.
 
-So on February 28th, after some design and experimentation, we [published our face mask pattern on freesewing.org](/blog/florence-face-mask/). Three weeks later, we followed up with [a one-page PDF that people could share and adapt](/blog/facemask-frenzy/).
+Also haben wir am 28. Februar nach einigem Entwerfen und Experimentieren unser Gesichtsmaskenmuster auf [veröffentlicht.](/blog/florence-face-mask/). Drei Wochen später folgte mit [ein einseitiges PDF, das die Leute teilen und anpassen konnten](/blog/facemask-frenzy/).
 
-We did not really want to be in the center of this, we just wanted to help people make masks. But when [Forbes ran an editorial calling on people to help out with the healthcare workers PPE shortage](https://www.forbes.com/sites/tjmccue/2020/03/20/calling-all-people-who-sew-and-make-you-can-help-solve-2020-n95-type-mask-shortage/), we suddenly found ourselves in the middle of a gigantic spotlight. The article prominently featured FreeSewing, and linked to [our blog post](/blog/facemask-frenzy).
+Wir wollten nicht wirklich im Mittelpunkt stehen, wir wollten den Leuten nur helfen, Masken zu machen. Doch als [Forbes einen Leitartikel veröffentlichte, in dem die Menschen dazu aufgerufen wurden, dem PSA-Mangel im Gesundheitswesen abzuhelfen](https://www.forbes.com/sites/tjmccue/2020/03/20/calling-all-people-who-sew-and-make-you-can-help-solve-2020-n95-type-mask-shortage/), standen wir plötzlich im Mittelpunkt eines riesigen Rampenlichts. Der Artikel erwähnte FreeSewing an prominenter Stelle und verlinkte auf [unseren Blogbeitrag](/blog/facemask-frenzy).
 
-At that time, there were few patterns available for face masks, and soon enough a long list of other publications started running links to our pattern and website. When I found [the instruction video that I made for the pattern staring back at me on the website of the New York Times](https://www.nytimes.com/2020/03/31/opinion/coronavirus-n95-mask.html), it was a veritable oh-crap moment. Sure enough, in the month following the Forbes publication, a million people descended on freesewing.org.
+Zu dieser Zeit gab es nur wenige Schnittmuster für Gesichtsmasken, und schon bald begann eine lange Liste anderer Publikationen, Links zu unserem Schnittmuster und unserer Website zu setzen. Als ich auf der Website der New York Times</a>das Anleitungsvideo
 
-The sudden jump in visitors and users (not to mention patrons) made it clear that I am a bottleneck of the project, and so in the latter half of the year we've set out to [try and remedy that with some community building](/blog/a-call-for-help/). On one hand it's slow going, but on the other hand if I look at how vibrant the FreeSewing community is today, it almost beggars belief that we did all of this throughout 2020. Wir haben jetzt regelmäßige [Mitwirkendentreffen](/community/calls/), und [unsere Chaträume sind nie leer](https://discord.freesewing.org/).
+fand, das ich für das Muster gemacht hatte, war das ein echter Aha-Moment. Und tatsächlich: Im Monat nach der Forbes-Veröffentlichung strömten eine Million Menschen auf freesewing.org.</p> 
 
-I hope to continue to fade into the background and let other people carry some of the torches. Not because I don't want to work on this anymore, but because I want to grow FreeSewing beyond what I can do on my own.
+Der plötzliche Anstieg der Besucher- und Nutzerzahlen (ganz zu schweigen von den Gönnern) hat deutlich gemacht, dass ich ein Engpass für das Projekt bin, und so haben wir uns in der zweiten Jahreshälfte vorgenommen, [zu versuchen, dieses Problem mit einigen gemeinschaftsbildenden Maßnahmen zu beheben](/blog/a-call-for-help/). Einerseits geht es langsam voran, aber andererseits, wenn ich mir anschaue, wie lebendig die FreeSewing-Community heute ist, ist es kaum zu glauben, dass wir das alles im Jahr 2020 geschafft haben. Wir haben jetzt regelmäßige [Mitwirkendentreffen](/community/calls/), und [unsere Chaträume sind nie leer](https://discord.freesewing.org/).
 
-##### Black Lives Matter
-Since this is a look at 2020, I also want to pause and acknowledge the **Black Lives Matter** movement and the ongoing problem of systemic racism. It is an area where my background and genetic material makes me ill-equipped to take a leading role, so here too I rely on our community for guidance.
+Ich hoffe, dass ich weiterhin in den Hintergrund trete und andere Leute die Fackeln tragen lasse. Nicht, weil ich nicht mehr daran arbeiten will, sondern weil ich FreeSewing über das hinaus wachsen lassen will, was ich alleine tun kann.
 
-We are also expanding our efforts to provide patterns that work for all body types, and I am particularly proud of how many of our users come to us because our patterns help them project the gender of their choice.
 
-##### We helped more people than ever this year
-On the practical side of things, I have extended our book year with a couple of weeks so that going forward, we will just follow the calendar years. With a couple of hours left in this year, FreeSewing's revenue for 2020 clocks in at **10.736,82 euro**. That makes 2020 and absolute bumper year, and it's more than all previous years combined (2015: € 256.65, 2016: € 473.50, 2017: € 673.14, 2018: € 3162.14, 2019: € 4109.38).
 
-As always, all of FreeSewing's revenue -- the entire 10.736,82 euro -- [goes to Doctors Without Borders](/docs/various/pledge/).
+##### Schwarze Leben Zählen
 
-I am truly grateful for your continued support and contributions. I feel like in a very small way, we are able to apply some balm to the hurt that seems at times omnipresent in the world.
+Da dies ein Blick auf das Jahr 2020 ist, möchte ich auch innehalten und die **Black Lives Matter** Bewegung und das anhaltende Problem des systemischen Rassismus würdigen. Das ist ein Bereich, in dem ich aufgrund meines Hintergrunds und meines Erbguts nicht in der Lage bin, eine führende Rolle zu übernehmen, also verlasse ich mich auch hier auf unsere Gemeinschaft.
 
-Thank you so much, and stay safe
+Wir bemühen uns auch, Schnittmuster für alle Körpertypen anzubieten, und ich bin besonders stolz darauf, dass viele unserer Nutzerinnen zu uns kommen, weil unsere Schnittmuster ihnen helfen, das Geschlecht ihrer Wahl zu projizieren.
 
-love  
+
+
+##### Wir haben dieses Jahr mehr Menschen als je zuvor geholfen
+
+In der Praxis habe ich unser Buchjahr um ein paar Wochen verlängert, so dass wir in Zukunft nur noch den Kalenderjahren folgen werden. Mit ein paar verbleibenden Stunden in diesem Jahr beläuft sich der Umsatz von FreeSewing für 2020 auf **10.736,82 Euro**. Das macht 2020 zu einem absoluten Spitzenjahr, und es ist mehr als alle vorherigen Jahre zusammen (2015: 256,65 €, 2016: 473,50 €, 2017: 673,14 €, 2018: 3162,14 €, 2019: 4109,38 €).
+
+Wie immer geht der gesamte Erlös von FreeSewing - die gesamten 10.736,82 Euro - [an Ärzte ohne Grenzen](/docs/various/pledge/).
+
+Ich bin euch wirklich dankbar für eure kontinuierliche Unterstützung und eure Beiträge. Ich habe das Gefühl, dass wir auf eine sehr kleine Art und Weise etwas Balsam auf die Verletzungen auftragen können, die in der Welt manchmal allgegenwärtig zu sein scheinen.
+
+Vielen Dank und bleiben Sie sicher
+
+Liebe  
 joost
 
 

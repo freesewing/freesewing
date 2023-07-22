@@ -1,18 +1,18 @@
 ---
 maker: "невідомо"
-caption: "Karin poses by the water in her new skirt"
+caption: "Карін позує біля води в новій спідниці"
 date: "2018-11-18"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/6e2a1b1b2b2935542f32a362aa7876deb36f89fd-2000x1500.jpg"
-intro: "Sandy by Karin"
-title: "Sandy by Karin"
+intro: "Сенді від Карін"
+title: "Сенді від Карін"
 designs:
-  - "sandy"
+  - "піщаний"
 ---
 
-After [her previous showcase of Hugo](/showcase/hugo-by-karin), Karin is back with another freesewing make: this Sandy skirt.
+Після [свого попереднього показу Hugo](/showcase/hugo-by-karin), Карін повернулася з іншою моделлю фрісбі: цю спідницю Sandy.
 
 ![Інший погляд](https://posts.freesewing.org/uploads/sandy_by_karin_view2_8711bae2d1.jpg "Інший погляд")
 
-![A view of the lining](https://posts.freesewing.org/uploads/sandy_by_karin_view3_0b7fdc87cd.jpg "A view of the lining")
+![Вид на обшивку](https://posts.freesewing.org/uploads/sandy_by_karin_view3_0b7fdc87cd.jpg "Вид на обшивку")
 
-More details [on Karin's blog](https://www.karinkay.nl/sandy-een-gratis-patroon-voor-een-cirkelrok-op-maat/) (in Dutch);
+Більше інформації [на блозі Карін](https://www.karinkay.nl/sandy-een-gratis-patroon-voor-een-cirkelrok-op-maat/) (голландською мовою);

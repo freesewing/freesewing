@@ -11,8 +11,8 @@ De achterkant van de broekspijpen zijn altijd breder dan de voorkant. Hoeveel co
 Door dit te verhogen wordt het beenpaneel voor de voorkant.  
 Dit zorgt ervoor dat de drager er meer skinny uitziet.
 
-This trick is often used in womenswear jeans
-(now you know why you can't find womenswear jeans with functional front pockets).
+Deze truc wordt vaak gebruikt in jeans voor vrouwen
+(nu weet je waarom je geen jeans voor vrouwen kunt vinden met functionele voorzakken).
 
 </Note>
 

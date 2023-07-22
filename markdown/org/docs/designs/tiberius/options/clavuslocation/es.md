@@ -1,8 +1,8 @@
 ---
-title: "Clavus location"
+title: "Ubicación de Clavus"
 ---
 
-Controls the location of the clavi
+Controla la ubicación de la clavi
 
 ## Efecto de esta opción en el patrón
 

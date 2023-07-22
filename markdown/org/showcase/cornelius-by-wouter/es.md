@@ -1,24 +1,24 @@
 ---
 maker: "Wouter.vdub"
-caption: "Cornelius cycling breeches by Wouter, feat. cyclist's calves"
+caption: "Pantalón de ciclista Cornelius de Wouter, feat. pantorrillas de ciclista"
 date: "2021-03-17"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/abd61dc5abc173a4e858d03b5f1af80fed297957-571x613.jpg"
-intro: "Wouter created the Cornelius cycling breeches pattern based on the Keystone systems. Read more on the FreeSewing blog ."
-title: "Cornelius by Wouter"
+intro: "Wouter creó el patrón de pantalones de ciclismo Cornelius basándose en los sistemas Keystone. Más información en el blog FreeSewing ."
+title: "Cornelius por Wouter"
 designs:
   - "cornelius"
 ---
 
-Wouter created the Cornelius cycling breeches pattern based on the Keystone systems. Read more [on the FreeSewing blog](https://freesewing.org/blog/cornelius-cycling-breeches/).
+Wouter creó el patrón de pantalones de ciclismo Cornelius basándose en los sistemas Keystone. Lee más [en el blog de FreeSewing](https://freesewing.org/blog/cornelius-cycling-breeches/).
 
-Wouter also shares on [the Instagram feed @Wouter.vdub](https://www.instagram.com/Wouter.vdub/) and [blogs at ShirtArtistry](https://shirtartistry.blog/).
+Wouter también comparte en [el feed de Instagram @Wouter.vdub](https://www.instagram.com/Wouter.vdub/) y [blogs en ShirtArtistry](https://shirtartistry.blog/).
 
-![View of the side](https://posts.freesewing.org/uploads/cornelius_by_wouter_cornelius2_de4bd8f66a.jpg "View of the side")
+![Vista lateral](https://posts.freesewing.org/uploads/cornelius_by_wouter_cornelius2_de4bd8f66a.jpg "Vista lateral")
 
-![Another view](https://posts.freesewing.org/uploads/cornelius_by_wouter_cornelius3_615eb9fce1.jpg)
+![Otro punto de vista](https://posts.freesewing.org/uploads/cornelius_by_wouter_cornelius3_615eb9fce1.jpg)
 
 <Note>
 
-This picture is from Wouter on Discord. It is reposted here with permission.
+Esta foto es de Wouter en Discord. Se publica aquí con permiso.
 
 </Note>

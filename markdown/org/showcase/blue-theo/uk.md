@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3b2975abda700d4c4388a
 intro: "Ось так. Це не весь пост"
 title: "Сині бавовняні штани Theo від joost"
 designs:
-  - "theo"
+  - "Тео."
 ---
 
 Ось так. Це не весь пост

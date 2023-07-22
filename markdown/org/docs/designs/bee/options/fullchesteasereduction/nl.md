@@ -1,10 +1,10 @@
 ---
-title: "Full chest reduction (Bella)"
+title: "Volledige borstverkleining (Bella)"
 ---
 
 ***
 
-Controls the full chest reduction in the underlying Bella block Bee is based on
+Regelt de volledige borstverkleining in het onderliggende Bella blok Bee is gebaseerd op
 
 ## Effect van deze optie op het patroon
 

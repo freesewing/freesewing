@@ -1,8 +1,8 @@
 ---
-title: "Clavus width"
+title: "Clavus breedte"
 ---
 
-Controls the width of the clavi
+Bepaalt de breedte van de klavi
 
 ## Effect van deze optie op het patroon
 

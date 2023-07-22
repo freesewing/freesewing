@@ -1,26 +1,26 @@
 ---
 maker: "Wouter.vdub"
-caption: "Haring's Hortensia handbag by Wouter"
+caption: "Harings Hortensia Handtasche von Wouter"
 date: "2021-03-06"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7192891ad24b1dc1ccb1a4093dc70e3678bb65c7-661x612.jpg"
-intro: "Not only did Wouter sew this Haring's Hortensia handbag, he also designed the fabric and made the pattern! He shared that he made the fabric design with his daughter and had it printed through Spoonflower."
-title: "Hortensia by Wouter"
+intro: "Wouter hat nicht nur diese Hortensia-Handtasche von Haring genäht, er hat auch den Stoff entworfen und das Schnittmuster angefertigt! Er erzählte, dass er das Stoffdesign zusammen mit seiner Tochter entworfen hat und es über Spoonflower drucken ließ."
+title: "Hortensia von Wouter"
 designs:
   - "hortensia"
 ---
 
-Not only did Wouter sew this Haring's Hortensia handbag, he also designed the fabric and made the pattern! He shared that he made the fabric design with his daughter and had it printed through Spoonflower.
+Wouter hat nicht nur diese Hortensia-Handtasche von Haring genäht, er hat auch den Stoff entworfen und das Schnittmuster angefertigt! Er erzählte, dass er das Stoffdesign zusammen mit seiner Tochter entworfen hat und es über Spoonflower drucken ließ.
 
-Wouter also shares on [the Instagram feed @Wouter.vdub](https://www.instagram.com/Wouter.vdub/) and [blogs at ShirtArtistry]https://shirtartistry.blog/).
+Wouter teilt auch auf [den Instagram-Feed @Wouter.vdub](https://www.instagram.com/Wouter.vdub/) und [bloggt bei ShirtArtistry]https://shirtartistry.blog/).
 
-![View of the front](https://posts.freesewing.org/uploads/hortensia_by_wouter_hortensia2_ec8a517447.jpg "View of the front")
+![Blick auf die Vorderseite](https://posts.freesewing.org/uploads/hortensia_by_wouter_hortensia2_ec8a517447.jpg "Blick auf die Vorderseite")
 
-![View of the side](https://posts.freesewing.org/uploads/hortensia_by_wouter_hortensia3_9946bc8cde.jpg)
+![Blick auf die Seite](https://posts.freesewing.org/uploads/hortensia_by_wouter_hortensia3_9946bc8cde.jpg)
 
-![View of the zipper](https://posts.freesewing.org/uploads/hortensia_by_wouter_hortensia4_39f92d992c.jpg)
+![Blick auf den Reißverschluss](https://posts.freesewing.org/uploads/hortensia_by_wouter_hortensia4_39f92d992c.jpg)
 
 <Note>
 
-This picture is from Wouter on Discord. It is reposted here with permission.
+Dieses Bild ist von Wouter auf Discord. Er wird hier mit Erlaubnis wieder veröffentlicht.
 
 </Note>

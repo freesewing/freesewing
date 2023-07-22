@@ -2,7 +2,7 @@
 title: Largeur
 ---
 
-This option determines the width of the pocket overall.
+Cette option détermine la largeur de la poche dans son ensemble.
 
 ## Effet de cette option sur le motif
 

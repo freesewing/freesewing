@@ -1,5 +1,5 @@
 ---
-title: "Benjamin bow tie: Sewing Instructions"
+title: "Метелик Бенджамін: Інструкція з пошиття"
 ---
 
 ## Примітки та поради

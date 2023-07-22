@@ -1,5 +1,5 @@
 ---
-title: "Charlie chinos: What You Need"
+title: "Chinos Charlie Ce dont tu as besoin"
 ---
 
 Pour fabriquer Charlie, vous aurez besoin des éléments suivants :

@@ -1,5 +1,5 @@
 ---
-title: "Florence face mask: Sewing Instructions"
+title: "Máscara facial Florence: Instrucciones de costura"
 ---
 
 ### Paso 1: Une la costura central

@@ -1,5 +1,5 @@
 ---
-title: "Penelope pencil skirt: Cutting Instructions"
+title: "Спідниця-олівець Пенелопа: Інструкція з крою"
 ---
 
 <Note>

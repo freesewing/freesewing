@@ -1,16 +1,16 @@
 ---
-title: "Huey hoodie: Cutting Instructions"
+title: "Huey hoodie: Knip instructies"
 ---
 
 **Buitenstof**
 
-- Cut **2 front** parts
-- Cut **1 back** part on the fold
-- Cut **2 sleeves** parts
+- Snijd **2 voorste** delen
+- Knip **1 terug** deel op de vouw.
+- Snijd **2 hulzen** onderdelen
 - cut two pocket pieces
-- Cut **4 Hood** parts
+- Snijd **4 Kap** onderdelen
 
 **Boordstof**
 
-- Cut **2 cuff** parts
+- Snijd **2 manchetdelen**
 - Knip **1 tailleband**

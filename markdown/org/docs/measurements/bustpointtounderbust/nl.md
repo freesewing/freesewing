@@ -2,6 +2,6 @@
 title: Bustpunt tot onderbuste
 ---
 
-The **bust point to underbust** measurement is the distance from your bust point/nipple to your underbust.
+De meting **bustepunt tot onderborst** is de afstand van je bustepunt/nippel tot je onderborst.
 
-It's the distance an ant would have to walk to go from your bust point/nipple straight down to where your breast meets your torso.
+Het is de afstand die een mier zou moeten afleggen om van je borstpunt/tepel recht naar beneden te gaan tot waar je borst je torso raakt.

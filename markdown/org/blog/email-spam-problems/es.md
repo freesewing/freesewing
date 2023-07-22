@@ -1,115 +1,115 @@
 ---
 author: "joostdecock"
-caption: "Would you close a lane because one driver was playing their music too loud?"
+caption: "¿Cerrarías un carril porque un conductor pone la música demasiado alta?"
 date: "2017-09-07"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/923cd5587c873d2662df4a804f75f8f32b5673ca-1920x1281.jpg"
-intro: "Thanks for nothing Microsoft; Email shouldn't be this hard"
-title: "Thanks for nothing Microsoft; Email shouldn't be this hard"
+intro: "Gracias por nada Microsoft; el correo electrónico no debería ser tan difícil"
+title: "Gracias por nada Microsoft; el correo electrónico no debería ser tan difícil"
 ---
 
-People with an email address from Microsoft --- think Hotmail, MSN, live.com, outlook.com and their numerous variants --- are significantly less likely to sign up for this website.
+Las personas con una dirección de correo electrónico de Microsoft --- piensa en Hotmail, MSN, live.com, outlook.com y sus numerosas variantes --- tienen muchas menos probabilidades de registrarse en este sitio web.
 
-That's because more than 4 times out of 10, they never receive their account activation email.
+Eso se debe a que más de 4 de cada 10 veces, nunca reciben el correo electrónico de activación de su cuenta.
 
-## What's going on?
+## ¿Qué ocurre?
 
-Let's first look at what's happening. Here's a relevant snippet from the logs:
+Veamos primero lo que ocurre. Aquí tienes un fragmento relevante de los registros:
 
 ````
-Failed: postmaster@mg.freesewing.org -> ********@hotmail.co.uk 'Confirm your freesewing account' 
-Server response: 550 5.7.1 Unfortunately, messages from [104.130.122.15] weren't sent. 
-Please contact your Internet service provider since part of their network is on our block list. 
+Error: postmaster@mg.freesewing.org -> ********@hotmail.co.uk "Confirma tu cuenta de freesewing" 
+Respuesta del servidor: 550 5.7.1 Lamentablemente, los mensajes de [104.130.122.15] no se enviaron. 
+Ponte en contacto con tu proveedor de servicios de Internet, ya que parte de su red está en nuestra lista de bloqueados. 
 ````
 
-What this means is that part of the MailGun network is on their block list. As a result, they (more on who they are later) are not delivering any messages that go out.
+Lo que esto significa es que parte de la red MailGun está en su lista de bloqueados. Como resultado, ellos (más adelante hablaremos de quiénes son) no transmiten ningún mensaje.
 
-[MailGun](https://www.mailgun.com/) is a popular email service for developers. It's used by this site to send out emails, like the account activation emails.
+[MailGun](https://www.mailgun.com/) es un popular servicio de correo electrónico para desarrolladores. Este sitio lo utiliza para enviar correos electrónicos, como los de activación de cuenta.
 
-Other people use this service too, and perhaps some of them, at some point, delivered some spam messages through mailgun. Or it may just have been some guy with a last name that tends to trigger spam filters.
+Otras personas también utilizan este servicio, y quizás alguna de ellas, en algún momento, envió algunos mensajes de spam a través de mailgun. O puede que simplemente haya sido un tipo con un apellido que tiende a activar los filtros de spam.
 
-![Some other MailGun customers. Not exactly a dodgy service is it?](https://posts.freesewing.org/uploads/mailgun_19f315d4d6.png)
+![Algunos otros clientes de MailGun. No es exactamente un servicio dudoso, ¿verdad?](https://posts.freesewing.org/uploads/mailgun_19f315d4d6.png)
 
-Point is, this IP address or one of its neighbours got *a bad rep*. It happens. But to flat-out refuse to accept any messages from this host (or an entire network of hosts) is the equivalent of shutting down a highway lane (or entire highway) because one car in that lane played its music obnoxiously loud that one time.
+La cuestión es que esta dirección IP o una de sus vecinas tiene mala reputación **. Eso ocurre. Pero negarse en redondo a aceptar cualquier mensaje de este anfitrión (o de toda una red de anfitriones) equivale a cerrar un carril de la autopista (o toda la autopista) porque un coche de ese carril puso la música a un volumen detestable aquella vez.
 
-Which brings me to our next question:
+Lo que me lleva a nuestra siguiente pregunta:
 
-## Who would do something like that?
+## ¿Quién haría algo así?
 
-Good question. Here are some numbers:
+Buena pregunta. He aquí algunas cifras:
 
-![A graph of mail delivery since the launch of this site](https://posts.freesewing.org/uploads/emailgraph_d14d476efa.png)
+![Un gráfico de la entrega de correo desde el lanzamiento de este sitio](https://posts.freesewing.org/uploads/emailgraph_d14d476efa.png)
 
-The graph above represents emails that were sent out since the launch of this site. The small subsection of the graph that is red are emails that are dropped.
+El gráfico anterior representa los correos electrónicos enviados desde el lanzamiento de este sitio. La pequeña parte del gráfico que está en rojo son los correos electrónicos que se eliminan.
 
-This website sends out different kinds of email:
+Este sitio web envía distintos tipos de correo electrónico:
 
- - The account confirmation email
- - The *I forgot my password* emails
- - Comment reply notifications
+ - El correo electrónico de confirmación de la cuenta
+ - Los correos *He olvidado mi contraseña*
+ - Notificaciones de respuesta a comentarios
 
-The graph represents all email, but I'm focussing on the account confirmation emails only. They are the most important after all.
+El gráfico representa todo el correo electrónico, pero me centro sólo en los correos de confirmación de cuenta. Al fin y al cabo, son los más importantes.
 
-> Apart from the 1 outlier, every message that was blocked, was blocked by Microsoft
+> Aparte del 1 atípico, todos los mensajes que se bloquearon, fueron bloqueados por Microsoft
 
-Here's a list of all domains that blocked legitimate activation emails to their users:
+Aquí tienes una lista de todos los dominios que bloquearon correos electrónicos legítimos de activación a sus usuarios:
 
  - btinternet.com
  - hotmail.com
- - hotmail.co.uk
- - live.ca
- - live.com
+ - hotmail.es
+ - vivir.ca
+ - vivir.com
  - live.com.au
- - live.nl
+ - vivir.nl
  - msn.com
  - outlook.com
 
-Apart from that very first entry in the list (on which only 1 message was blocked) all of these are Microsoft domains.
+Aparte de la primera entrada de la lista (en la que sólo se bloqueó 1 mensaje), todos ellos son dominios de Microsoft.
 
-Let me restate that: Apart from the 1 outlier, every message that was blocked, was blocked by Microsoft.
+Permíteme reafirmarlo: Aparte del 1 atípico, todos los mensajes que se bloquearon, fueron bloqueados por Microsoft.
 
-## What's the impact?
+## ¿Cuál es el impacto?
 
-So what sort of impact does that have on people?
+¿Qué impacto tiene eso en la gente?
 
-Well, at the time I'm writing this, there are 817 registered users, and about 80% (661) have also activated their account.
+Pues bien, en el momento en que escribo esto, hay 817 usuarios registrados, y cerca del 80% (661) también han activado su cuenta.
 
-![A disproportionate amount of pending activations is from users with an email address managed by Microsoft](https://posts.freesewing.org/uploads/activations_06987b6065.svg)
+![Una cantidad desproporcionada de activaciones pendientes procede de usuarios con una dirección de correo electrónico gestionada por Microsoft](https://posts.freesewing.org/uploads/activations_06987b6065.svg)
 
-From those people who were able to activate their account, less than 1% (6) have an email address managed by Microsoft. In the group of people who did not, or were not able to, activate their account, more than half have such an address.
+De las personas que pudieron activar su cuenta, menos del 1% (6) tienen una dirección de correo electrónico gestionada por Microsoft. En el grupo de personas que no activaron o no pudieron activar su cuenta, más de la mitad tienen una dirección de este tipo.
 
-More than 40% of account confirmation emails are simply blocked by Microsoft and, based on the number of activations, it seems likely that even when they aren't block at the SMTP relay, they get filtered somewhere further down the line.
+Más del 40% de los correos electrónicos de confirmación de cuenta son simplemente bloqueados por Microsoft y, basándonos en el número de activaciones, parece probable que incluso cuando no son bloqueados en el relé SMTP, son filtrados en algún punto posterior.
 
-As things stand, it seems almost impossible for the average hotmail/outlook/live/MSN/... user to sign up for this site.
+Tal y como están las cosas, parece casi imposible que el usuario medio de hotmail/outlook/live/MSN/... se registre en este sitio.
 
-## What can we do about it?
+## ¿Qué podemos hacer al respecto?
 
-I chose mailgun for a number of reasons. Not having to handle SMTP outselves simplifies the code. Not depending on a local SMTP deamon makes the code more portable, and MailGun has a bunch of cool features that allow you to do things like replying to comments via email.
+Elegí mailgun por varias razones. No tener que manejar SMTP por sí mismo simplifica el código. No depender de un deamon SMTP local hace que el código sea más portable, y MailGun tiene un montón de funciones geniales que te permiten hacer cosas como responder a comentarios por correo electrónico.
 
-Microsoft's crude methods of spam filtering don't invalidate any of those reasons.
+Los burdos métodos de filtrado de spam de Microsoft no invalidan ninguna de esas razones.
 
-Using MailGun means using their SMTP relays, and being at the mercy of the reputation of that relay. The only way around that is to configure a dedicated relay in MailGun so that freesewing.org traffic is shielded from others, and we become masters of our own reputation.
+Utilizar MailGun significa utilizar sus repetidores SMTP, y estar a merced de la reputación de ese repetidor. La única forma de evitarlo es configurar un relé dedicado en MailGun para que el tráfico de freesewing.org esté protegido de otros, y nos convirtamos en dueños de nuestra propia reputación.
 
-![$59 per month? Perhaps not](https://posts.freesewing.org/uploads/pricing_52f0e817cb.png)
+![¿59 $ al mes? Tal vez no](https://posts.freesewing.org/uploads/pricing_52f0e817cb.png)
 
-For that priviledge, MailGun charges 59 dollar per month, which amounts to 708 dollar yearly. I invite you to take a look at [the donations history](/about/pledge#donations-history), and you'll understand that's not going to happen either.
+Por ese privilegio, MailGun cobra 59 dólares al mes, lo que equivale a 708 dólares anuales. Te invito a que eches un vistazo a [el historial de donaciones](/about/pledge#donations-history), y comprenderás que eso tampoco va a ocurrir.
 
-I could challenge the block list, and try to get the relay unblocked. But that's pretty much tilting at windmills when the host is not under my control. Not to mention that MailGun doesn't just have that one host.
+Podría impugnar la lista de bloqueo e intentar desbloquear el relé. Pero eso es mucho decir cuando el anfitrión no está bajo mi control. Por no mencionar que MailGun no sólo tiene ese host.
 
-It seems that I'm running low on options and quiet frankly, I'm also running out of patience.
+Parece que se me están acabando las opciones y, francamente, también se me está acabando la paciencia.
 
-## What I'm going to do about it
+## Qué voy a hacer al respecto
 
-Microsoft is a behemoth, and I'm just a guy. I can't fight them on this. Unless I Titanfall their ass.
+Microsoft es un gigante, y yo sólo soy un tipo. No puedo luchar contra ellos en esto. A menos que les dé por el culo.
 
-![Block this, bitch](https://posts.freesewing.org/uploads/titanfall_cb5a210468.gif)
+![Bloquea esto, zorra](https://posts.freesewing.org/uploads/titanfall_cb5a210468.gif)
 
-Do you think Gmail is ever abused to send out spam? You know it is. Do you think they would ever block all email coming from Gmail? You know they won't.
+¿Crees que alguna vez se abusa de Gmail para enviar spam? Sabes que lo es. ¿Crees que llegarían a bloquear todo el correo electrónico procedente de Gmail? Sabes que no lo harán.
 
-So last night, I rolled out some changes to work around the issue. If you have a *problemtic* email address, in addition to the regular email, this site will send out a second email through Gmail.
+Así que anoche introduje algunos cambios para solucionar el problema. Si tienes una dirección de correo electrónico *problemtic* , además del correo electrónico normal, este sitio enviará un segundo correo electrónico a través de Gmail.
 
-I'd like to see them block that.
+Me gustaría que lo bloquearan.
 
-> ##### Signup trouble? Help is available
+> ##### ¿Problemas para inscribirte? Ayuda disponible
 > 
-> If you are (still) having problems signing up, don't hesitate to [get in touch](/contact).
+> Si (aún) tienes problemas para inscribirte, no dudes en [ponerte en contacto](/contact).
 

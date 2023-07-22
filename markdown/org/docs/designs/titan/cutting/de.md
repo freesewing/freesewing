@@ -1,5 +1,5 @@
 ---
-title: "Titan trouser block: Cutting Instructions"
+title: "Titan-Hosenblock: Anleitung zum Schneiden"
 ---
 
 **Oberstoff**

@@ -1,9 +1,9 @@
 ---
-maker: "unknown"
+maker: "inconnue"
 caption: "Est-ce que c'est moi ou Hugo est une marque populaire pour les maris ?"
 date: "2015-12-28"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/bc1b64060b3b0907157c2e1608b2b2610b81a4b0-1080x1080.jpg"
-intro: "This picture is from the Instagram feed of uneanneedecouture ."
+intro: "Cette photo provient du flux Instagram de uneanneedecouture ."
 title: "Un hugo pour le mari, par Sonia"
 designs:
   - "hugo"

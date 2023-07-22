@@ -1,61 +1,61 @@
 ---
 author: "joostdecock"
-caption: "Picture by <a href='https://pixabay.com/en/users/herbert2512-2929941/' target='_BLANK' rel='nofollow'>Herbert</a>"
+caption: "Photo par <a href='https://pixabay.com/en/users/herbert2512-2929941/' target='_BLANK' rel='nofollow'>Herbert</a>"
 date: "2017-06-16"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8ccbb2d5b50eb0917c6bd2befb2b098b6d667ba9-1920x1280.jpg"
-intro: "The world wide web is increasingly eroding your privacy. Facebook, Google, and an avalanche of ad networks out there are all keeping tabs on your browser tabs. Tracking you on the web, keeping an an eye on the sites your visiting, so that they can gather more info on you, and sell that to advertisers."
-title: "The choices I've made to protect your privacy. Ou pourquoi vous n'aurez pas de cookies."
+intro: "Le world wide web érode de plus en plus ta vie privée. Facebook, Google et une avalanche de réseaux publicitaires surveillent tous les onglets de ton navigateur. Ils te suivent sur le Web, gardent un œil sur les sites que tu visites, afin de recueillir plus d'informations sur toi et de les vendre à des annonceurs."
+title: "Les choix que j'ai faits pour protéger ta vie privée. Ou pourquoi vous n'aurez pas de cookies."
 ---
 
-The world wide web is increasingly eroding your privacy. Facebook, Google, and an avalanche of ad networks out there are all keeping tabs on your browser tabs. Tracking you on the web, keeping an an eye on the sites your visiting, so that they can gather more info on you, and sell that to advertisers.
+Le world wide web érode de plus en plus ta vie privée. Facebook, Google et une avalanche de réseaux publicitaires surveillent tous les onglets de ton navigateur. Ils te suivent sur le Web, gardent un œil sur les sites que tu visites, afin de recueillir plus d'informations sur toi et de les vendre à des annonceurs.
 
-Pardon my French, but I hate that shit.
+Pardonne mon français, mais je déteste cette merde.
 
-> Facebook, Google, and an avalanche of ad networks out there are all keeping tabs on your browser tabs
+> Facebook, Google et une avalanche de réseaux publicitaires surveillent tous les onglets de ton navigateur
 
-Building this site from scratch has been a great opportunity to reflect on how to do things.
+Construire ce site à partir de zéro a été une excellente occasion de réfléchir à la façon de faire les choses.
 
-To make sure I'm not contributing to the problem, I've made the following choices:
+Pour m'assurer que je ne contribue pas au problème, j'ai fait les choix suivants :
 
-## Encryption everywhere
+## Le cryptage partout
 
-Let's run everything over https. That's just [common sense](https://letsencrypt.org/) in 2017.
+Faisons tout passer par https. C'est tout simplement [le bon sens](https://letsencrypt.org/) en 2017.
 
-## No ads
+## Pas de publicité
 
-This one is another no-brainer. The number 1 tracking pest online are ad networks, and I want them nowhere near this site.
+Cette fois encore, c'est une évidence. Les réseaux publicitaires sont le premier ravageur en ligne et je ne veux pas qu'ils s'approchent de ce site.
 
-Fortunately, that doesn't pose a problem given that we don't play by the _Give something for free, then sell people's data_ rules of the web.
+Heureusement, cela ne pose pas de problème étant donné que nous ne jouons pas selon les règles du web _. Donne quelque chose gratuitement, puis vends les données des gens_ .
 
-## No external code
+## Pas de code externe
 
-This site loads no external JavaScript code. None. Which does mean I had to rethink a few things that typically require external code.
+Ce site ne charge aucun code JavaScript externe. Aucun. Ce qui veut dire que j'ai dû repenser certaines choses qui nécessitent généralement un code externe.
 
-There is no Facebook Like button or Twitter integration. We still have social sharing under our blog posts (hint hint) but it's the plain vanilla HTML variety that prevents tracking.
+Il n'y a pas de bouton "J'aime" de Facebook ni d'intégration de Twitter. Nous avons toujours le partage social sous nos articles de blog (hint hint) mais c'est la variété HTML ordinaire qui empêche le suivi.
 
-In the same category, there's no social logins. Sure a _Login with Facebook_ button is handy, but also kind of a nightmare when you consider what it does to your privacy.
+Dans la même catégorie, il n'y a pas de logins sociaux. Bien sûr, un bouton _Login with Facebook_ est pratique, mais c'est aussi un peu un cauchemar si tu considères ce que cela implique pour ta vie privée.
 
-For a statically generated site like this ([see this post about JAMstack for details](/blog/freesewing-goes-jamstack/)) [Disqus](https://disqus.com/) is pretty much the de facto standard for comments. But Disqus is pretty awful when it comes to tracking, so that was a big no-no to me.
+Pour un site généré statiquement comme celui-ci ([voir cet article sur JAMstack pour plus de détails](/blog/freesewing-goes-jamstack/)) [Disqus](https://disqus.com/) est pratiquement la norme de facto pour les commentaires. Mais Disqus est assez horrible quand il s'agit de suivi, donc c'était un gros non pour moi.
 
-A similar story for authentication where I considered [Auth0](https://auth0.com/). There too, I was concerned about tracking, so I decided against it.
+C'est la même chose pour l'authentification où j'ai envisagé [Auth0](https://auth0.com/). Là aussi, j'étais préoccupée par le suivi, alors j'ai décidé de ne pas le faire.
 
-I ended up just biting the bullet and implemented authentication and comments myself. Time will tell of that was a good trade-of.
+J'ai fini par mordre la balle et j'ai mis en place l'authentification et les commentaires moi-même. L'avenir nous dira si c'était un bon échange.
 
-## No cookies
-We don't use any cookies. Obviously no third-party cookies, but not even cookies of our own.
+## Pas de biscuits
+Nous n'utilisons pas de cookies. Évidemment, pas de cookies de tiers, mais même pas de cookies propres.
 
-Instead, we use local storage which is better because unlike cookies, it doesn't send your info on every request.
+Au lieu de cela, nous utilisons le stockage local qui est meilleur car, contrairement aux cookies, il n'envoie pas tes informations à chaque demande.
 
-## No analytics
-I ran [Google Analytics](https://analytics.google.com/) on [makemypattern](https://makemypattern.com/). It's powerful, but obviously a tracking nightmare. So I wasn't going to have that either.
+## Pas d'analyse
+J'ai lancé [Google Analytics](https://analytics.google.com/) sur [makemypattern](https://makemypattern.com/). C'est puissant, mais c'est évidemment un cauchemar pour le suivi. Alors je n'allais pas avoir ça non plus.
 
-This issue is further complicated by the fact that this static site is hosted by [Netlify](https://www.netlify.com/). So I don't have server logs and can't run any analytics server-side.
+Ce problème est d'autant plus compliqué que ce site statique est hébergé par [Netlify](https://www.netlify.com/). Je n'ai donc pas de journaux de serveur et je ne peux pas effectuer d'analyses côté serveur.
 
-For the most part, I decided to just go without analytics. I don't need to know how many people are visiting this site. I still know how many user accounts are created, and how many patterns are generated, which should be fine indicators for the site's overall well-being.
+Pour l'essentiel, j'ai décidé de me passer d'analyses. Je n'ai pas besoin de savoir combien de personnes visitent ce site. Je sais encore combien de comptes d'utilisateurs sont créés et combien de modèles sont générés, ce qui devrait être de bons indicateurs du bien-être général du site.
 
-But there's one thing that wanted to keep from analytics: the referral logs. It's one of life's small pleasures to go through that list and discover [somebody](https://www.reddit.com/r/freepatterns/comments/4zh5nr/is_there_software_to_generate_sewing_patterns/) [linked](http://www.makery.uk/2016/08/the-refashioners-2016-joost/) [to](https://closetcasepatterns.com/week-sewing-blogs-vol-98/) [you](https://opensource.com/life/16/11/free-open-sewing-patterns).
+Mais il y a une chose que je voulais garder pour les analyses : les journaux de référence. C'est l'un des petits plaisirs de la vie que de parcourir cette liste et de découvrir [quelqu'un](https://www.reddit.com/r/freepatterns/comments/4zh5nr/is_there_software_to_generate_sewing_patterns/) [a lié](http://www.makery.uk/2016/08/the-refashioners-2016-joost/) [à](https://closetcasepatterns.com/week-sewing-blogs-vol-98/) [tu](https://opensource.com/life/16/11/free-open-sewing-patterns).
 
-Here too, I've implemented my own bare-bones solution. If you land on this site from an external link, we'll report that referral to our own API. Which means we still get the referral info, but no tracking.
+Ici aussi, j'ai mis en place ma propre solution dépouillée. Si tu atterris sur ce site à partir d'un lien externe, nous signalerons cette référence à notre propre API. Ce qui signifie que nous recevons toujours les informations de référence, mais pas de suivi.
 
-Perhaps it's just vanity, but when I'm having a bad day, those referral logs make me feel better (when it's not just Russian referral spam). I might be wrong on this one, but I would wager that a lot of people who have their own blog can relate to that.
+C'est peut-être juste de la vanité, mais quand je passe une mauvaise journée, ces journaux de référence me font me sentir mieux (quand ce n'est pas juste du spam de référence russe). Je peux me tromper sur ce point, mais je parierais que beaucoup de gens qui ont leur propre blog peuvent s'identifier à cela.
 

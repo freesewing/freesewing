@@ -2,10 +2,10 @@
 title: "Kragenausstellung"
 ---
 
-Controls the flare of the collar by altering the fall length (between the neck and the points) of the collar.
+Steuert die Ausbreitung des Kragens, indem die Falllänge (zwischen dem Hals und den Spitzen) des Kragens verändert wird.
 
-- Increase this option to increase the fall length.
-- Decrease this option to decrease the fall length.
+- Erhöhe diese Option, um die Falllänge zu erhöhen.
+- Verringere diese Option, um die Falllänge zu verringern.
 
 ## Effekt dieser Option auf das Schnittmuster
 

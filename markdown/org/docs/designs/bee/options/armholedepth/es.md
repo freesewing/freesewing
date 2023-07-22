@@ -1,5 +1,5 @@
 ---
-title: "Armhole depth (Bella)"
+title: "Profundidad de la sisa (Bella)"
 ---
 
 ***

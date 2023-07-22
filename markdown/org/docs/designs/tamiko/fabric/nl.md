@@ -1,5 +1,5 @@
 ---
-title: "Tamiko top: Fabric Options"
+title: "Tamiko top: Stof opties"
 ---
 
 Dit patroon heeft veel onafgewerkte randen, dus je hebt iets nodig dat niet uitrafelt. Je kiest ook best iets dat soepel valt.

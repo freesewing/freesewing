@@ -1,92 +1,92 @@
 ---
 author: "joostdecock"
-caption: "Your new login background for the month of February"
+caption: "Tu nuevo fondo de inicio de sesión para el mes de febrero"
 date: "2018-01-31"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/6fbc797ad0b3d50a8337bd2cb8401f04f63bffdd-2000x1125.jpg"
-intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
-title: "Monthly roundup - January 2018: Inkscape DPI, version awareness, Bail, and Carlita"
+intro: "Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene."
+title: "Resumen mensual - Enero de 2018: Inkscape DPI, conocimiento de la versión, Bail y Carlita"
 ---
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene.
 
-## Looking back at January
-![More like this month](https://posts.freesewing.org/uploads/coffee_3f501d4076.gif)
+## Echando la vista atrás a enero
+![Más como este mes](https://posts.freesewing.org/uploads/coffee_3f501d4076.gif)
 
-It might be [the record-breaking depressing weather in my neck of the woods ](https://www.theguardian.com/world/2018/jan/19/aint-no-sunshine-winter-darkest-europe), but I feel like January took a lot out of me. So let's see if we have at least something to show for it.
+Puede que sea [el tiempo deprimente que ha batido récords en mi región ](https://www.theguardian.com/world/2018/jan/19/aint-no-sunshine-winter-darkest-europe), pero siento que enero me ha afectado mucho. Así que veamos si tenemos al menos algo que mostrar en .
 
-### The Inkscape default units quandary
+### El dilema de las unidades por defecto de Inkscape
 
-At the start of the year, we rolled out core v1.3.0 to address [issue #204](https://github.com/freesewing/core/issues/204) aka the the Inkscape default units quandary.
+A principios de año, lanzamos la versión 1.3.0 del núcleo para resolver el problema nº 204 de [](https://github.com/freesewing/core/issues/204) , también conocido como el dilema de las unidades por defecto de Inkscape.
 
-It was a bit of an unusual fix because our hand was forced due to upstream changes made by the Inkscape developers. In addition, we didn't only have to adapt our code, but also had to backport the changes to all your existing drafts.
+Fue un arreglo un poco inusual porque nos vimos obligados a hacerlo debido a los cambios realizados por los desarrolladores de Inkscape. Además, no sólo tuvimos que adaptar nuestro código, sino que también tuvimos que retroportar los cambios a todos tus borradores existentes.
 
-If you were blissfully unaware of the whole thing, we wrote a blog post about it: [Freesewing core v1.3.0 is out; Comes with fixes so good that we back-ported them to all your drafts](https://joost.freesewing.org/blog/core-v1.3.0-is-out/).
+Si no estabas al tanto de todo, hemos escrito una entrada en el blog sobre ello: [Freesewing core v1.3.0 is out; Comes with fixes so good that we back-ported them to all your drafts](https://joost.freesewing.org/blog/core-v1.3.0-is-out/).
 
-### Version awareness
+### Conocimiento de la versión
 
-We now keep track of which version of core generated your draft. We roll out fixes and improvements all the time. So the drafts you have stored in your profile might be outdated.
+Ahora hacemos un seguimiento de qué versión de Core generó tu borrador. Lanzamos correcciones y mejoras continuamente. Por tanto, los borradores que tengas almacenados en tu perfil pueden estar obsoletos.
 
-You are now informed about this, both on the draft's page itself and on your list of drafts. A simple redraft will upgrade them to the latest version.
+Ahora se te informa de ello, tanto en la propia página del borrador como en tu lista de borradores. Un simple cambio de redacción los actualizará a la última versión.
 
-> ##### Long-term vision for versioning
+> ##### Visión a largo plazo del versionado
 > 
-> This solution is a step up from the previous situation, but it doesn't allow for very granular version control. If you have 10 different Simon drafts stored in your profile, and we bump the core version number because we made a tweak to Carlton, all your drafts are marked as outdated, even though the changes don't impact them.
+> Esta solución es un paso adelante respecto a la situación anterior, pero no permite un control de versiones muy granular. Si tienes 10 borradores diferentes de Simon almacenados en tu perfil, y nosotros aumentamos el número de versión del núcleo porque hemos hecho un ajuste en Carlton, todos tus borradores se marcan como obsoletos, aunque los cambios no les afecten.
 > 
-> With only a single core version number to depend on, there's no obvious way for us to keep track of what changes impact what pattern.
+> Con un único número de versión del núcleo del que depender, no hay una forma obvia de llevar un registro de qué cambios afectan a qué patrón.
 > 
-> The long-term plan here is to have a core version number and a pattern version number. This way, a version bump in one pattern will not impact other patterns. 
+> El plan a largo plazo es tener un número de versión del núcleo y un número de versión del patrón. De este modo, un golpe de versión en un patrón no afectará a otros patrones. 
 > 
-> A version bump in core will still impact all patterns, but there should be far fewer core versions once we take all patterns out of core.
+> Un salto de versión en el núcleo seguirá afectando a todos los patrones, pero debería haber muchas menos versiones del núcleo una vez que saquemos todos los patrones del núcleo.
 > 
-> The idea is that every pattern will be in its own repository, and we'll use composer to manage them as dependencies. 
+> La idea es que cada patrón esté en su propio repositorio, y utilizaremos Composer para gestionarlos como dependencias. 
 > 
-> But this is a long-term idea that won't be implemented until after we rewrite core. Yes, that's another long-term idea.
+> Pero ésta es una idea a largo plazo que no se pondrá en práctica hasta después de que reescribamos el núcleo. Sí, es otra idea a largo plazo.
 
-### Bail for error handling
+### Fianza para el tratamiento de errores
 
-In the first half of the month, we tried Rollbar for error handling and reporting. While we liked the functionality it provided, we weren't too happy about the possible impact on your privacy of sending that kind of data to a third party.
+En la primera mitad del mes, probamos Rollbar para la gestión de errores y la elaboración de informes. Aunque nos gustó la funcionalidad que proporcionaba, no nos gustó demasiado el posible impacto que podría tener en tu privacidad el envío de ese tipo de datos a un tercero.
 
-So, we decided to write our own poor man's rollbar called Bail. Bail is now used in our data and core backends, so when things break, we know about it.
+Así que decidimos escribir nuestra propia barra antivuelco para pobres, llamada Bail. Bail se utiliza ahora en nuestros datos y backends centrales, de modo que cuando las cosas se rompen, lo sabemos.
 
-This effort also lead to a 2-week side-quest to write tests for our data backend. All details: [Introducing freesewing bail: A poor man's rollbar --- because privacy](/blog/introducing-bail/)
+Este esfuerzo también condujo a una búsqueda paralela de 2 semanas para escribir pruebas para nuestro backend de datos. Todos los detalles: [Presentamos la libertad bajo fianza: La barra antivuelco de los pobres, porque la privacidad](/blog/introducing-bail/)
 
-### Carlita is here
+### Carlita está aquí
 
-A couple of days ago, we released the [Carlita Coat](/patterns/carlita), the womenswear version of our Carlton coat.
+Hace un par de días, lanzamos el [Abrigo Carlita](/patterns/carlita), la versión para mujer de nuestro abrigo Carlton.
 
-If you rushed out to get your hands on Carlita, it's good to know that she was released as part of core v1.6.0 and we're now at v1.6.3, and that is mostly due to fixes and tweaks in Carlton/Carlita.
+Si te apresuraste a hacerte con Carlita, es bueno que sepas que se publicó como parte del núcleo v1.6.0 y que ahora estamos en la v1.6.3, y que se debe sobre todo a correcciones y ajustes en Carlton/Carlita.
 
-If you've got an earlier version of the pattern, please redraft. If you've already printed it, perhaps have a look at [the changelog](https://github.com/freesewing/core/blob/develop/CHANGELOG.md) to figure out what has changed.
+Si tienes una versión anterior del patrón, vuelve a redactarlo. Si ya lo has imprimido en , quizás puedas echar un vistazo a [el registro de cambios](https://github.com/freesewing/core/blob/develop/CHANGELOG.md) para averiguar qué ha cambiado.
 
-If you check the changelog, you'll also see that we started the month on core v1.2.9 and are now running core v1.6.3, so I don't think it's just an idea that it was a busy month.
+Si compruebas el registro de cambios, también verás que empezamos el mes con el núcleo v1.2.9 y está ejecutando ahora el núcleo v1.6.3, así que no creo que sea sólo una idea que haya sido un mes ajetreado.
 
-## Looking ahead to February
+## De cara a febrero
 
-February is a short month so it's probably best to manage expectations. But here's what I have in mind for it:
+Febrero es un mes corto, así que probablemente sea mejor gestionar las expectativas. Pero aquí tienes lo que tengo pensado para ello:
 
-### Carlton/Carlita documentation
+### Documentación Carlton/Carlita
 
-Quite frankly, this is like pulling teeth to me, so don't expect it to be finished by the end of February, but I should at least have made some progress on the documentation for the Carlton and Carlita patterns.
+Francamente, esto es como arrancarme los dientes, así que no esperes que esté terminado para finales de febrero en , pero al menos debería haber avanzado algo en la documentación de para los patrones Carlton y Carlita.
 
-On a related note, the increasing popularity of this site means I'm a lot more occupied with various questions, and small issues that need my attention.
+En una nota relacionada, la creciente popularidad de este sitio significa que estoy mucho más ocupado con varias preguntas, y pequeñas cuestiones que necesitan mi atención.
 
-All that feedback is a good thing for it is how we improve things around here. But I do notice that it is becoming increasingly difficult to dedicate a larger chunk of time to one specific thing. Which is really what you need when tackling larger tasks such as writing documentation or designing new patterns.
+Toda esa retroalimentación es algo bueno porque así es como mejoramos las cosas por aquí. Pero me doy cuenta de que cada vez me resulta más difícil dedicar una gran cantidad de tiempo a una cosa concreta. Que es realmente lo que necesitas cuando te enfrentas a tareas de mayor envergadura, como escribir documentación o diseñar nuevos patrones.
 
-I don't really have a solution for that, I'm just making the observation.
+En realidad no tengo una solución para eso, sólo hago la observación.
 
-### Maybe a Blake Blazer release
+### Tal vez un lanzamiento de Blake Blazer
 
-I have a jacket pattern on my drawing board that's been there since the summer (it's called the Blake Blazer). I really should just take out some time to wrap it up and publish it, but I've been reluctant to do so because I can't seem to find the time to actually make the jacket.
+Tengo un patrón de chaqueta en mi mesa de dibujo que lleva ahí desde el verano (se llama Blake Blazer). Realmente debería sacar algo de tiempo para envolverlo y publicarlo, pero me he resistido a hacerlo porque parece que no encuentro el momento de hacer realmente la chaqueta.
 
-I've used the pattern before for [my refashioners make this year](/blog/the-refashioners-2017/), but that's not exactly a very representative example.
+He utilizado el patrón antes para [mis refashioners hacen este año](/blog/the-refashioners-2017/), pero eso no es exactamente un ejemplo muy representativo.
 
-I don't think I'll find the time to make a jacket in February, but perhaps a muslin is enough to publish it in beta.
+No creo que encuentre tiempo para hacer una chaqueta en febrero, pero quizá una muselina sea suficiente para publicarla en beta.
 
 ### FOSDEM
 
-![All details on fosdem.org](https://posts.freesewing.org/uploads/fosdem_bb321397cc.png)
+![Todos los detalles en fosdem.org](https://posts.freesewing.org/uploads/fosdem_bb321397cc.png)
 
-[FOSDEM](http://fosdem.org/) --- the Free and Open Source Developers' European Meeting --- is on the first weekend of February in Brussels.
+[FOSDEM](http://fosdem.org/) --- el Encuentro Europeo de Desarrolladores de Software Libre y de Código Abierto --- se celebra el primer fin de semana de febrero en Bruselas.
 
-I'm planning to be there on Sunday, so if you're attending too, let me know or come and say hi.
+Tengo previsto estar allí el domingo, así que si tú también vas a asistir, avísame o ven a saludarme.
 

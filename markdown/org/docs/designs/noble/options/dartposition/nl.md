@@ -1,8 +1,8 @@
 ---
-title: Dart position
+title: Dart positie
 ---
 
-Controls whether to split at the shoulder or armhole
+Bepaalt of de split bij de schouder of bij het armsgat moet worden gemaakt
 
 ## Effect van deze optie op het patroon
 

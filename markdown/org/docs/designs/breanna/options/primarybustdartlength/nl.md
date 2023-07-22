@@ -2,7 +2,7 @@
 title: "Lengte busteneep"
 ---
 
-The length of the primary bust dart.
+De lengte van de primaire bustehouder.
 
 ## Effect van deze optie op het patroon
 

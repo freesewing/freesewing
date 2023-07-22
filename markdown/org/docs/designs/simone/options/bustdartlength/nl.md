@@ -2,10 +2,10 @@
 title: "Lengte busteneep"
 ---
 
-Controls how close the **bust darts** approach the bust points.
+Bepaalt hoe dicht de **bustedarts** de bustepunten benaderen.
 
-- Increase this option to lengthen the bust darts moving them closer to the bust points
-- Decrease this option to shorten the bust darts moving them further away from the bust points
+- Verhoog deze optie om de figuurnaden van de buste langer te maken en ze dichter bij de punten van de buste te plaatsen
+- Verlaag deze optie om de figuurnaden van de buste in te korten, zodat ze verder van de buste af komen te staan
 
 ## Effect van deze optie op het patroon
 

@@ -1,5 +1,5 @@
 ---
-title: "Waralee wrap pants: Cutting Instructions"
+title: "Штани з запахом Waralee: Інструкція з крою"
 ---
 
 <Note>

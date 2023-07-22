@@ -1,10 +1,10 @@
 ---
-title: "Shoulder Dart Position"
+title: "Position de la fléchette d'épaule"
 ---
 
 ***
 
-The **Shoulder Dart Position** option allows you to move the position of the dart/princess seam.
+L'option **Shoulder Dart Position** te permet de déplacer la position de la couture d'échancrure/princesse.
 
 ## Effet de cette option sur le motif
 

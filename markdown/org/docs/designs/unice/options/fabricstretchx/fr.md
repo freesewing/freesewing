@@ -1,8 +1,8 @@
 ---
-title: "Fabric stretch X"
+title: "Tissu extensible X"
 ---
 
-Controls the stretch in horizontal direction.
+Contrôle l'étirement dans le sens horizontal.
 
 ## Effet de cette option sur le motif
 

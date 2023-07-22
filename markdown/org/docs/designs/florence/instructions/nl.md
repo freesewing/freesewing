@@ -1,10 +1,10 @@
 ---
-title: "Florence face mask: Sewing Instructions"
+title: "Gezichtsmasker Florence: Naai-instructies"
 ---
 
 ### Stap 1: Sluit de midden naad
 
-Join the curved seam that is center of our mask by placing the _good sides together_ and sewing them in place.
+Verbind de gebogen naad in het midden van ons masker door de _met de goede kanten op elkaar te leggen_ en ze vast te naaien.
 
 ![Bevestig de middennaad](step1.svg)
 

@@ -13,12 +13,12 @@ designs:
 
 <Note>
 
-###### More pictures and info in the original blog post
-This picture 
-[originally appeared](https://mensew.wordpress.com/2017/12/10/hugo-hoodie-freesewing-org/) 
-on [@Buster](/users/Buster)'s [MenSew](https://mensew.wordpress.com/) blog. Hij werd hier gepost met toestemming.
+###### Meer foto's en info in de originele blogpost
+Deze foto 
+[oorspronkelijk verschenen](https://mensew.wordpress.com/2017/12/10/hugo-hoodie-freesewing-org/) 
+op [@Buster](/users/Buster)'s [MenSew](https://mensew.wordpress.com/) blog. Hij werd hier gepost met toestemming.
 
-Do check out the blog post for there are loads more pictures and he also writes about his 
-experience using [freesewing.org](/).
+Bekijk de blogpost voor nog veel meer foto's en hij schrijft ook over zijn ervaring op 
+met [freesewing.org](/).
 
 </Note>

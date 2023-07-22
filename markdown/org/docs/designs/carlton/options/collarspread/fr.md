@@ -4,8 +4,8 @@ title: "Écartement du col"
 
 Contrôle la distance entre les points du col.
 
-- Increase this option to spread the collar out and towards the shoulder.
-- Decrease this option to bring the collar in towards the body.
+- Augmentez cette option pour étaler le col vers l'extérieur et vers l'épaule.
+- Diminuez cette option pour ramener le col vers le corps.
 
 ## Effet de cette option sur le motif
 

@@ -1,11 +1,11 @@
 ---
-title: Neck ratio
+title: Halsverhältnis
 ---
 
-Steuert die Größe der Halsöffnung in Relation zu der Größe des Lätzchens. The bib size is determined by [head size](/docs/patterns/bob/options/headsize), this option controls how much to reduce the head size by to determine the circumference and width of the neck opening.
+Steuert die Größe der Halsöffnung in Relation zu der Größe des Lätzchens. Die Latzgröße wird durch [Kopfgröße](/docs/patterns/bob/options/headsize)bestimmt. Mit dieser Option wird festgelegt, um wie viel die Kopfgröße reduziert wird, um den Umfang und die Breite der Halsöffnung zu bestimmen.
 
-- Increase the percentage to widen the neck opening.
-- Decrease the percentage to constrict the neck opening.
+- Erhöhe den Prozentsatz, um die Halsöffnung zu erweitern.
+- Verringere den Prozentsatz, um die Halsöffnung zu verengen.
 
 ## Effekt dieser Option auf das Schnittmuster
 

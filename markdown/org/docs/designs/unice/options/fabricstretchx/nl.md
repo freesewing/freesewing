@@ -1,8 +1,8 @@
 ---
-title: "Fabric stretch X"
+title: "Stof stretch X"
 ---
 
-Controls the stretch in horizontal direction.
+Regelt de rek in horizontale richting.
 
 ## Effect van deze optie op het patroon
 

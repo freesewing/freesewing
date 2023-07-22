@@ -1,18 +1,18 @@
 ---
-title: "Brian body block: Cutting Instructions"
+title: "Brian Body Block: Anleitung zum Schneiden"
 ---
 
 **Oberstoff**
 
 - Schneide **1 Vorderteil** im Stoffbruch.
-- Cut **1 Back** part on the fold.
+- Schneide **1 Rückenteil** an der Falte aus.
 - Schneide **2 Ärmel**.
 
 Diese Anleitung ist nur für den Brian-Grundschnitt mit Standardeinstellungen. Passe deinen Zuschnitt entsprechend an, falls du Änderungen am Grundschnitt vornimmst.
 
 <Tip>
 
-If you do not have someone to help pin you into Brian then you may find it easier to Cut 2 Front parts with seam allowance and sew the backs up when constructing so you can pin in the front.
+Wenn du niemanden hast, der dir beim Anstecken von Brian hilft, ist es vielleicht einfacher, 2 Vorderteile mit Nahtzugabe zuzuschneiden und die Rückseiten beim Konstruieren zusammenzunähen, damit du die Vorderseite anstecken kannst.
 
 </Tip>
 

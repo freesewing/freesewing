@@ -1,5 +1,5 @@
 ---
-title: "Bruce boxer briefs: Sewing Instructions"
+title: "Calzoncillos bóxer Bruce: Instrucciones de costura"
 ---
 
 <YouTube id='PL1gv5yv3DoZME1xe5fBEHd0rKPW_xNpF3' playlist />
@@ -11,8 +11,8 @@ title: "Bruce boxer briefs: Sewing Instructions"
 Alinear el lado de la parte trasera (parte 1) con el lado (parte 3) asegurándose de juntar los lados buenos. Since the side (piece 3) is symmetric, you can't go wrong.
 
 <Tip>
-If you look at the part 3 (the side) with the text so you can read it, then then left side should be attached to the back,
-and the right side attached to the front & inset. The notches will also help you figure it out.
+Si miras la parte 3 (el lado) con el texto para que puedas leerlo, entonces el lado izquierdo debe estar unido a la parte trasera,
+y el lado derecho unido a la parte delantera y encajado. Las muescas también te ayudarán a averiguarlo.
 </Tip>
 
 Servir juntos teniendo en cuenta que la franquicia de costura es 1cm. Así que apriete la aguja exterior de su serger a 1cm del borde de su tejido.
@@ -25,7 +25,7 @@ Servir juntos teniendo en cuenta que la franquicia de costura es 1cm. Así que a
 
 ![Volver al segundo lado](step02.png)
 
-Align the other side of the back (piece 1) with the second side (piece 3) making sure to put the good sides together. Again, because the side (piece 3) is not symmetric, be careful to correctly match them.
+Alinea el otro lado de la espalda (pieza 1) con el segundo lado (pieza 3) asegurándote de juntar los lados buenos. De nuevo, como el lateral (pieza 3) no es simétrico, ten cuidado de hacerlos coincidir correctamente.
 
 Servir juntos, como hizo usted en el otro lado.
 
@@ -49,7 +49,7 @@ A medida que se manipula el tejido para que se alinee adecuadamente, es fácil e
 
 Una vez que haya superado, las cosas se harán más fáciles. También sería un buen momento para comparar la longitud restante de las costuras curvas. Si uno es un poco más largo que el otro, simplemente estira el más corto hasta que igualen.
 
-Sin embargo, si la diferencia es demasiado grande, simplemente déjenla. It will get cut off when we do the crotchseam.
+Sin embargo, si la diferencia es demasiado grande, simplemente déjenla. Se cortará cuando hagamos la entrepierna.
 
 <Note>
 

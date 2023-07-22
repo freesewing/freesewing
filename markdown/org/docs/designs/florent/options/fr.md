@@ -1,5 +1,5 @@
 ---
-title: "Florent flat cap: Design Options"
+title: "Casquette plate Florent : Options de conception"
 ---
 
 <PatternOptions pattern='florent' />

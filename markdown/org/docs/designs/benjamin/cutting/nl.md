@@ -1,5 +1,5 @@
 ---
-title: "Benjamin bow tie: Cutting Instructions"
+title: "Benjamin strikje: Knip instructies"
 ---
 
 Benjamin is a rather simple pattern, but your options will determine what needs to be cut out. Hieronder zijn twee typische lay-outs.
@@ -7,19 +7,19 @@ Benjamin is a rather simple pattern, but your options will determine what needs 
 ## Zonder aanpaslintje
 
 - **Buitenstof**
-  - Cut **4 Bow** parts
-  - Cut **2 Collar Band** parts
+  - Snijd **4 Boog** onderdelen
+  - Cut **2 Kraagband** onderdelen
 - **Tussenvoering**
-  - Cut **4 Bow** parts
-  - Cut **2 Collar Band** parts
+  - Snijd **4 Boog** onderdelen
+  - Cut **2 Kraagband** onderdelen
 
 ## Met aanpaslintje
 
 - **Buitenstof**
-  - Cut **1 Short Bow** part
-  - Cut **2 Medium Bow** parts
-  - Cut **1 Long Bow** part
+  - Knip **1 Korte boog** deel
+  - Snijd **2 Middelgrote boog** onderdelen
+  - Snijd **1 Lange boog** deel
 - **Tussenvoering**
-  - Cut **1 Short Bow** part
-  - Cut **2 Medium Bow** parts
-  - Cut **1 Long Bow** part
+  - Knip **1 Korte boog** deel
+  - Snijd **2 Middelgrote boog** onderdelen
+  - Snijd **1 Lange boog** deel

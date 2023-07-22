@@ -1,12 +1,12 @@
 ---
-title: "Ursula undies: What You Need"
+title: "Ursula Unterhosen: Was du brauchst"
 ---
 
 Um Ursula zu erstellen, benötigst du Folgendes:
 
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
-- About 0.7 meters (0.8 yards) of a suitable fabric (see [Fabric options](/docs/patterns/ursula/fabric))
-- About 3 meters (3.3 yards) of underwear elastic, such as picot elastic or fold over elastic
+- Etwa 0,7 Meter (0,8 Yards) eines geeigneten Stoffes (siehe [Stoffoptionen](/docs/patterns/ursula/fabric))
+- Ungefähr 3 Meter (3,3 Yards) Unterwäsche-Gummiband, z. B. ein Picot-Gummiband oder ein umklappbares Gummiband
 
 <Tip>
 

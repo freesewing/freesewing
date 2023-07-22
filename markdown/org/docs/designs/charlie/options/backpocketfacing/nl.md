@@ -1,10 +1,10 @@
 ---
-title: "Back pocket facing"
+title: "Achterzak beleg"
 ---
 
 ***
 
-Controls whether or not to include facing on the back pockets
+Bepaalt of er wel of geen beleg op de achterzakken moet komen
 
 ## Effect van deze optie op het patroon
 

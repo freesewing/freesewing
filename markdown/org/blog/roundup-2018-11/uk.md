@@ -1,10 +1,10 @@
 ---
 author: "joostdecock"
-caption: "Your login background for December"
+caption: "Ваша історія входу в систему за грудень"
 date: "2018-11-30"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ebdb5fce7cd9b56f2f9d51d05dbda187195e30b6-1920x1280.jpg"
-intro: "Monthly roundup - November 2018: New showcases and a (false) security alarm"
-title: "Monthly roundup - November 2018: New showcases and a (false) security alarm"
+intro: "Щомісячні підсумки - листопад 2018: Нові вітрини та (хибна) охоронна сигналізація"
+title: "Щомісячні підсумки - листопад 2018: Нові вітрини та (хибна) охоронна сигналізація"
 ---
 
 
@@ -12,25 +12,25 @@ title: "Monthly roundup - November 2018: New showcases and a (false) security al
 
 ## Озираючись на листопад
 
-I have been very busy this month, but more about that in our roundup post for the year which you can expect on December 10th.
+Цього місяця я був дуже зайнятий, але більше про це в нашому підсумковому пості за рік , який ви можете очікувати 10 грудня.
 
-Because I've been busy, a few showcase posts had fallen through the cracks. I've cleared the backlog in my inbox now, and as a result we have [a new Bruce showcase by Felix](/en/showcase/bruce-three-pack) and [a new Sandy showcase by Karin](/en/showcase/sandy-by-karin).
+Через мою зайнятість кілька публікацій на вітрині не були опубліковані. Я очистив свою поштову скриньку, і в результаті ми маємо [нову вітрину Брюса від Фелікса](/en/showcase/bruce-three-pack) та [нову вітрину Сенді від Карін](/en/showcase/sandy-by-karin).
 
-If you've made one of our patterns, make sure to send in your pictures so we can add them too. I mean, even if it takes a while, I do eventually get around to it :)
+Якщо ви створили одну з наших моделей, не забудьте надіслати свої фотографії на , щоб ми могли їх додати. Я маю на увазі, що навіть якщо це займає деякий час, я врешті-решт до цього :)
 
 
-Earlier this week, I woke to the unsettling news that a popular package on NPM [had been hijacked by malicious actors](https://arstechnica.com/information-technology/2018/11/hacker-backdoors-widely-used-open-source-software-to-steal-bitcoin/).
+На початку цього тижня я прокинувся від тривожної новини про те, що популярний пакет на NPM [був викрадений зловмисниками](https://arstechnica.com/information-technology/2018/11/hacker-backdoors-widely-used-open-source-software-to-steal-bitcoin/).
 
-That's obviously shitty behaviour, but the fact that this package is a dependency of our backend (as in, we use it) made for a rude awakening. Our backend was patched by the time I got to work (yay for trains), but as more information came to light, it turned out it was never a problem in the first place.
+Очевидно, що це паскудна поведінка, але той факт, що цей пакунок є залежністю нашого бекенду (тобто, ми його використовуємо), змусив нас прокинутися. Наш бекенд був виправлений до того часу, як я прийшов на роботу (ура поїздам), але коли з'явилася додаткова інформація , виявилося, що це ніколи не було проблемою в першу чергу.
 
-For one thing, the dependency was a so-called development dependency. Code that is included while developing, but not included in the production build.
+З одного боку, ця залежність була так званою залежністю від розробки. Код, який включається під час розробки, але не включається у виробничу збірку.
 
-Furthermore, the malicious actors were targetting a very specific set of people in order to make off with their bitcoin, so there was never an issue.
+Крім того, зловмисники націлювалися на дуже конкретну групу людей, щоб забрати свої біткоїни, тому ніколи не виникало жодних проблем.
 
-As the story was developing, we [posted updates on Twitter](https://twitter.com/freesewing_org/status/1067312509672177664) so if you want to make sure you want to hear all the latest news, make sure to follow [@freesewing_org](https://twitter.com/freesewing_org) on Twitter.
+По мірі розвитку історії ми [публікували оновлення в Twitter](https://twitter.com/freesewing_org/status/1067312509672177664) , тому, якщо ви хочете бути в курсі всіх останніх новин, обов'язково підписуйтесь на [@freesewing_org](https://twitter.com/freesewing_org) в Twitter.
 
 
 ## Забігаючи наперед у грудень
 
-In early December we traditionally do our yearly roundup, so more on that soon :)
+На початку грудня ми традиційно робимо наш щорічний огляд, тож незабаром ми розповімо про це докладніше :)
 

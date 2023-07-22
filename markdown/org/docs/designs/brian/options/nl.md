@@ -1,5 +1,5 @@
 ---
-title: "Brian body block: Design Options"
+title: "Brian carrosserieblok: Ontwerpopties"
 ---
 
 <PatternOptions pattern='brian' />
@@ -25,9 +25,9 @@ In ons voorbeeld staat de voorkant van de mouwkop aan de rechterkant. Maar hoe z
 Terwijl patronen meestal een indicatie hebben die aangeeft welke kant is (een enkel merkteken
 betekent het voorpand, overwegende dat een dubbele inkeping de achterkant betekent, kan je ook
 de voorkant van een mouwkop herkennen omdat het meer gebogen is. De achterkant van de
-mouwkop wordt ook gebogen, maar het is een vlakke curve. That's because the human shoulder
-is more pronounced and curved on the front of the body, thus the sleevecap is more curved
-there to fit the shoulder.
+mouwkop wordt ook gebogen, maar het is een vlakke curve. Dat komt omdat de menselijke schouder
+meer uitgesproken en gebogen is aan de voorkant van het lichaam, dus de mouwkap is daar meer gebogen
+om bij de schouder te passen.
 
 </Note>
 
@@ -78,8 +78,8 @@ The points are _offset_ perpendicular from the middle of a line between the two 
 We hebben onze mouwkop in 4 kwartalen verdeeld. We starten vooraan (rechts in ons voorbeeld)
 met kwart 1. en doe onze weg naar de rug om te eindigen met kwart 4.
 
-Like the offset option, the last options to determine the shape of our sleevecap will just repeat so you can
-control each quarter individually.
+Net als de offset optie worden de laatste opties om de vorm van onze mouwopzet te bepalen gewoon herhaald, zodat je
+elk kwart afzonderlijk kunt regelen.
 
 </Note>
 

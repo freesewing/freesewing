@@ -2,7 +2,7 @@
 title: "Vordere Abnäher"
 ---
 
-Whether to include front waist darts or not.
+Ob du Abnäher in der Taille haben möchtest oder nicht.
 
 ## Effekt dieser Option auf das Schnittmuster
 

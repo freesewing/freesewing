@@ -102,8 +102,8 @@ Il s'avère que ce n'est pas le cas. Les données biométriques sont celles que 
 
 ### Collecte de données par consentement
 
-To collect data, you need a so-called *lawful basis for data processing*.  
-There are different types, but the one that applies to us (and to most online services) is **consent**.
+Pour collecter des données, tu as besoin de ce que l'on appelle *une base légale pour le traitement des données*.  
+Il en existe différents types, mais celui qui s'applique à nous (et à la plupart des services en ligne) est **consentement**.
 
 Dans ce scénario, votre base légale pour le traitement des données est que vous avez demandé à la personne de récupérer ses données et qu'elle vous les a données librement.
 

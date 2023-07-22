@@ -1,80 +1,80 @@
 ---
 author: "joostdecock"
-caption: "The most important change is obviously that we moved from purple to black as our signature color"
+caption: "El cambio más importante es, obviamente, que hemos pasado del morado al negro como color distintivo."
 date: "2018-05-24"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e67a17e37a70154b3bb250ea1cb60eff2baddb55-1920x1285.jpg"
-intro: "Welcome to our new website. It's GDPR compliant, speaks 3 languages, and smells of wet paint"
-title: "Welcome to our new website. It's GDPR compliant, speaks 3 languages, and smells of wet paint"
+intro: "Bienvenido a nuestro nuevo sitio web. Cumple la normativa GDPR, habla 3 idiomas y huele a pintura húmeda"
+title: "Bienvenido a nuestro nuevo sitio web. Cumple la normativa GDPR, habla 3 idiomas y huele a pintura húmeda"
 ---
 
 
-Tomorrow, May 25th, the General Data Protection Regulation (GDPR) of the European Union (EU) comes into force. From that day onward, businesses that don't respect the privacy of EU citizens expose themselves to fines of up to 4% of their global annual turnover.
+Mañana, 25 de mayo, entra en vigor el Reglamento General de Protección de Datos (RGPD) de la Unión Europea (UE). A partir de ese día, las empresas que no respeten la privacidad de los ciudadanos de la UE se exponen a multas de hasta el 4% de su facturación anual global.
 
-The date marks nothing short of a watershed moment for online privacy, as the world's most stringent data protection laws suddenly apply to half a billion people.
+La fecha marca nada menos que un momento decisivo para la privacidad en línea, , ya que las leyes de protección de datos más estrictas del mundo se aplican de repente a 500 millones de personas.
 
-## Your consent is now required
+## Ahora se requiere tu consentimiento
 
-For freesewing, the roll-out of GDPR doesn't pose a problem as such. Not only did we have a solid plan, the only thing we absolutely had to add to the site was *consent*. We are no longer allowed to process your data without your permission. Permission that we should ask for both explicitly and granularly.
+Para freesewing, el despliegue del GDPR no plantea un problema como tal. No sólo teníamos un plan sólido, sino que lo único que teníamos que añadir absolutamente al sitio era *consent*. Ya no podemos procesar tus datos sin tu permiso. Permiso que debemos pedir de forma explícita y granular.
 
-So, we have two types of questions to ask you:
+Por tanto, tenemos dos tipos de preguntas que hacerte:
 
  - ¿Das tu consentimiento para procesar los datos de tu perfil?
  - ¿Usted da su consentimiento para procesar los datos de su modelo?
 
-We make the distinction because they are different things. A profile/account is required to login to the site, post comments, and so on.  
-Model data is required to generate made-to-measure sewing patterns.
+Hacemos la distinción porque son cosas distintas. Se requiere un perfil/cuenta para acceder al sitio, publicar comentarios, etc.  
+Los datos del modelo son necesarios para generar patrones de costura a medida.
 
-You will be greeted by these questions when they are relevant (as in, when we do need to access that specific data), and you can revisit them at any time [in your account settings](/account).
+Te aparecerán estas preguntas cuando sean relevantes (es decir, cuando necesitemos acceder a esos datos concretos), y podrás volver a consultarlas en cualquier momento [en la configuración de tu cuenta](/account).
 
-## It is our duty to inform you
+## Es nuestro deber informarte
 
-Under GDPR, we must inform you about how we handle privacy issues. We have written about [our approach to privacy](/blog/privacy-choices) before, but this requires something (a bit) more formal.
+Según el GDPR, debemos informarte sobre cómo gestionamos las cuestiones de privacidad. Ya hemos escrito antes sobre [nuestro enfoque de la privacidad](/blog/privacy-choices) , pero esto requiere algo (un poco) más formal.
 
-So, we've drafted a [privacy notice](/privacy) that outlines all of these things.
+Así que hemos redactado un aviso de privacidad [](/privacy) que resume todas estas cosas.
 
-In addition to our privacy notice, we've setup [a page that lists all of your rights](/rights), and explains how you can exercise them.
+Además de nuestro aviso de privacidad, hemos creado [una página que enumera todos tus derechos](/rights), y explica cómo puedes ejercerlos.
 
-With these changes, we've covered your right to be informed.
+Con estos cambios, hemos cubierto tu derecho a estar informado.
 
-## Privacy by design
+## Privacidad por diseño
 
-One of the more vague yet impactful requirements of GDPR is so-called *privacy-by-design*. We took the advice to heart and have made two changes inspired by this:
+Uno de los requisitos más imprecisos pero impactantes del GDPR es el denominado *privacy-by-design*. Nos tomamos muy en serio el consejo y hemos hecho dos cambios inspirados en él:
 
- - Encryption of data at rest
- - Termination of dormant accounts
+ - Cifrado de datos en reposo
+ - Baja de cuentas inactivas
 
-We now encrypt your profile data at rest. In other words, our database holds your info, but it's encrypted. We only decrypt it when we need it.
+Ahora encriptamos los datos de tu perfil en reposo. En otras palabras, nuestra base de datos contiene tu información, pero está encriptada. Sólo lo desencriptamos cuando lo necesitamos.
 
-We'll also terminate accounts that have been dormant for 12 months. In other words, if you don't login on the website for 1 year, your account and all your data will be removed.
+También cancelaremos las cuentas que lleven inactivas 12 meses. En otras palabras, si no inicias sesión en el sitio web durante 1 año, se eliminará tu cuenta y todos tus datos.
 
-However, for that last matter, there will be a bit of a grace period as we haven't fully implemented all the required changes yet. Which brings me to my next point:
+Sin embargo, para este último asunto, habrá un pequeño periodo de gracia, ya que aún no hemos implementado completamente todos los cambios necesarios. Lo que me lleva al siguiente punto:
 
-## Also new: everything else
+## También nuevo: todo lo demás
 
-These GDPR-related changes seemed like a good opportunity to re-vist some of the choices we've made, and see if there was room for improvement. That was the initial idea anyway. In the end, we complete re-wrote the website from scratch.
+Estos cambios relacionados con el GDPR nos parecieron una buena oportunidad para revisar algunas de las decisiones que habíamos tomado y ver si había margen de mejora. De todas formas, esa era la idea inicial. Al final, reescribimos completamente el sitio web desde cero.
 
-Our previous website used [Jekyll](https://jekyllrb.com/) as a static site generator, with a pile of javascript code to make add the dynamic elements to the site. While that did do the trick, there were two important downsides:
+Nuestro sitio web anterior utilizaba [Jekyll](https://jekyllrb.com/) como generador de sitios estáticos, con un montón de código javascript para hacer añadir los elementos dinámicos al sitio. Aunque eso funcionó, hubo dos inconvenientes importantes:
 
- - Jekyll uses the Ruby programming language. That's another programming language, another package manager, and another ecosystem that potential contributors have to wrap their heads around. We wanted to avoid that.
- - That *pile* of JavaScript code was rather literal. Maintainability was starting to become an issue, not to mention that it would be difficult for new developers to jump in and understand what's going on.
+ - Jekyll utiliza el lenguaje de programación Ruby. Eso es otro lenguaje de programación, otro gestor de paquetes y otro ecosistema en el que los posibles colaboradores tienen que meterse en la cabeza. Queríamos evitarlo.
+ - Ese *montón* de código JavaScript era más bien literal. La capacidad de mantenimiento empezaba a ser un problema, por no mencionar que a los nuevos desarrolladores les resultaría difícil incorporarse y entender lo que estaba pasando.
 
-So, to kill two birds with one stone, we rewrote the entire site using [Vue.js](https://vuejs.org/) and [Nuxt](https://nuxtjs.org/). Our entire frontend is written in JavaScript now — no more Ruby required — and due to Vue's modular nature and component-based approach, it should be a lot easier to maintain.
+Así que, para matar dos pájaros de un tiro, reescribimos todo el sitio utilizando [Vue.js](https://vuejs.org/) y [Nuxt](https://nuxtjs.org/). Ahora todo nuestro frontend está escrito en JavaScript -ya no hace falta Ruby- y, gracias a la naturaleza modular de Vue y a su enfoque basado en componentes, debería ser mucho más fácil de mantener.
 
-## Internationalization, aka i18n
+## Internacionalización, también conocida como i18n
 
-Obviously, as we were rewriting things, we've thrown in a couple of new features. The most obvious being that we fully support i18n (internationalization) now.
+Obviamente, al reescribir las cosas, hemos añadido un par de funciones nuevas. La más obvia es que ahora somos totalmente compatibles con i18n (internacionalización).
 
-While translation is an ongoing endeavor, we've got everything in place to support it. Starting today, freesewing is no longer exclusively available in English, but also in Dutch and Spanish.
+Aunque la traducción es un esfuerzo continuo, tenemos todo lo necesario para apoyarla. A partir de hoy, freesewing ya no está disponible exclusivamente en inglés, sino también en neerlandés y español.
 
-I'd like to thank [@AnnekeCaramin](/users/annekecaramin) and [@AlfaLyr](/users/alfalyr), our language coordinators for Dutch and Spanish respectively, but also all other people who have helped out with translating.
+Me gustaría dar las gracias a [@AnnekeCaramin](/users/annekecaramin) y [@AlfaLyr](/users/alfalyr), nuestros coordinadores lingüísticos para neerlandés y español respectivamente, pero también a todas las demás personas que han ayudado con la traducción.
 
-An overview of the status of the different languages is available [here](/i18n), and I'm hopeful that soon we'll be able to enable more languages.
+Una visión general del estado de las diferentes lenguas está disponible [aquí](/i18n), y espero que pronto podamos habilitar más lenguas.
 
-## Beware the wet paint
+## Cuidado con la pintura húmeda
 
-Arguably, this release is a bit premature. We've still have [a couple of open issue to fix](https://github.com/freesewing/site/issues), and we're missing a bunch of documentation.
+Podría decirse que este lanzamiento es un poco prematuro. Aún tenemos [un par de problemas abiertos para solucionar](https://github.com/freesewing/site/issues), y nos falta un montón de documentación.
 
-However, since our deadline is externally imposed, we don't exactly have much choice in this. That is, if we want to be fully compliant with GDPR, and we do.
+Sin embargo, como nuestro plazo viene impuesto desde fuera, no tenemos muchas opciones al respecto. Es decir, si queremos cumplir plenamente el GDPR, y lo hacemos.
 
-So, please bear with us as we continue to build this website, and our platform. And don't hesitate to let us know when something goes wrong.
+Así que, por favor, ten paciencia con nosotros mientras seguimos construyendo este sitio web y nuestra plataforma. Y no dudes en avisarnos cuando algo vaya mal.
 

@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/6aa91015d49712d1b56cd
 intro: "Sorcha poseert in een paar Charlie chino's ."
 title: "Charlie over Sorcha"
 designs:
-  - "charlie"
+  - "Charlie"
 ---
 
 Sorcha poseert in een paar [Charlie chino's](/designs/charlie/).

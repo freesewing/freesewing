@@ -1,10 +1,10 @@
 ---
-title: "Shoulder Dart Position"
+title: "Posición del dardo en el hombro"
 ---
 
 ***
 
-The **Shoulder Dart Position** option allows you to move the position of the dart/princess seam.
+La opción **Posición de la pinza en el hombro** te permite mover la posición de la pinza/costura princesa.
 
 ## Efecto de esta opción en el patrón
 

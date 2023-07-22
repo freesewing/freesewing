@@ -4,7 +4,7 @@ title: "Overwijdte bustenwijdte"
 
 ***
 
-Controls the bust span ease in the underlying Bella block Bee is based on
+Regelt het gemak van de borstomvang in het onderliggende Bella blok Bee is gebaseerd op
 
 ## Effect van deze optie op het patroon
 

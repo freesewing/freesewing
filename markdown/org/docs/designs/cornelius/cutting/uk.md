@@ -1,5 +1,5 @@
 ---
-title: "Cornelius cycling breeches: Cutting Instructions"
+title: "Велосипедні бриджі Cornelius: Інструкція з крою"
 ---
 
 ### Матеріали

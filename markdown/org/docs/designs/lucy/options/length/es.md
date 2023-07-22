@@ -2,7 +2,7 @@
 title: Longitud
 ---
 
-The length option determines how long your pocket will be.
+La opción de longitud determina la longitud de tu bolsillo.
 
 ## Efecto de esta opción en el patrón
 

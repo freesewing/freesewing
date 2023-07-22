@@ -2,10 +2,10 @@
 title: "Diepte binnenzak"
 ---
 
-How deep you would like the inner pocket to be.
+Hoe diep je de binnenzak wilt hebben.
 
-- Increase this option to make a deeper inner pocket
-- Decrease this option to make a shallower inner pocket
+- Verhoog deze optie om een diepere binnenzak te maken
+- Verlaag deze optie om een ondiepere binnenzak te maken
 
 ## Effect van deze optie op het patroon
 

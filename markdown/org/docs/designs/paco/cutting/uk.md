@@ -1,5 +1,5 @@
 ---
-title: "Paco pants: Cutting Instructions"
+title: "Штани пако: Інструкція з крою"
 ---
 
 <Tip>

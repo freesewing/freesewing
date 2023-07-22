@@ -1,5 +1,5 @@
 ---
-title: "Sven sweatshirt: What You Need"
+title: "Sven Sweatshirt: Was du brauchst"
 ---
 
 Um Sven zu erstellen, benötigst du Folgendes:

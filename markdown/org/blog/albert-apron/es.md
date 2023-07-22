@@ -1,21 +1,21 @@
 ---
 author: "joostdecock"
-caption: "Keep those home-made clothes clean while cooking with the Albert apron"
+caption: "Mantén limpia tu ropa casera mientras cocinas con el delantal Albert"
 date: "2020-10-17"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/192f0da76422475ea9a36b7988d70f69bb89bbaf-1920x1282.jpg"
-intro: "What do you do if your daughter needed an apron for school?"
-title: "We haz apron now: FreeSewing 2.10 brings you Albert, a humble apron pattern"
+intro: "¿Qué harías si tu hija necesitara un delantal para el colegio?"
+title: "Ahora cosemos delantales: FreeSewing 2.10 te trae a Albert, un humilde patrón de delantal"
 ---
 
 
-What do you do if your daughter needed an apron for school?
+¿Qué harías si tu hija necesitara un delantal para el colegio?
 
- - Would you run out to the store and buy one?
- - Would you fire up your sewing machine and make one?
- - Would you say to yourself _hmm, better make a pattern first_ and then share your FreeSewing pattern so that now everybody can have an apron?
+ - ¿Correrías a la tienda a comprar uno?
+ - ¿Encenderías tu máquina de coser y harías uno?
+ - ¿Te dirías a ti mismo _hmm, mejor hacer primero un patrón_ y luego compartir tu patrón de FreeSewing para que ahora todo el mundo pueda tener un delantal?
 
-Because [that's what Wouter did](/showcase/albert-by-wouter/), so we wrapped it into FreeSewing v2.10, and [voila](/designs/albert/).
+Porque [eso es lo que hizo Wouter](/showcase/albert-by-wouter/), así que lo envolvimos en FreeSewing v2.10, y [voila](/designs/albert/).
 
-![Wouter's daughter wearing the Albert apron](https://posts.freesewing.org/uploads/albert_08ccbfc95b.jpg)
+![La hija de Wouter con el delantal Albert](https://posts.freesewing.org/uploads/albert_08ccbfc95b.jpg)
 
 

@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0d0673d758bb9ec6f60c0
 intro: "Відповідні сорочки Simon для цих двох красунь"
 title: "Відповідні сорочки Simon для цих двох красунь"
 designs:
-  - "simon"
+  - "Саймон"
 ---
 
 ![Модель + вимірювання крану](https://posts.freesewing.org/uploads/matching_simon_view2_07c4206346.jpg "Модель + вимірювання крану")

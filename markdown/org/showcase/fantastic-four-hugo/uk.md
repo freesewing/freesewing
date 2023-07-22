@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4812bf0a9667224088fe2
 intro: "Це зображення зі стрічки Instagram Джилліан."
 title: "Г'юго на тему \"Фантастичної четвірки"
 designs:
-  - "hugo"
+  - "Хьюго."
 ---
 
 

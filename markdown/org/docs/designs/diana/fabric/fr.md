@@ -1,5 +1,5 @@
 ---
-title: "Diana draped top: Fabric Options"
+title: "Haut drapé Diana : Options de tissu"
 ---
 
 Ce haut sera mieux dans l'un de ces deux scénarios :

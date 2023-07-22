@@ -1,5 +1,5 @@
 ---
-title: "Simon shirt: Cutting Instructions"
+title: "Сорочка \"Саймон\": Інструкція з крою"
 ---
 
 - **Основна тканина**

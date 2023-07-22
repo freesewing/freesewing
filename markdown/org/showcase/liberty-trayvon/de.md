@@ -1,20 +1,20 @@
 ---
-maker: "unknown"
-caption: "Beautiful fabric, and a greatly made tie"
+maker: "unbekannt"
+caption: "Schöner Stoff und eine toll gemachte Krawatte"
 date: "29.09.2017"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a4df7c8446671138fe4f6e07eebf32058af31999-1080x1080.jpg"
-intro: "A Trayvon tie in a Liberty silk by Victoria"
-title: "A Trayvon tie in a Liberty silk by Victoria"
+intro: "Eine Trayvon-Krawatte aus Liberty-Seide von Victoria"
+title: "Eine Trayvon-Krawatte aus Liberty-Seide von Victoria"
 designs:
   - "trayvon"
 ---
 
 
-My husband travelled to Ireland 🇮🇪 for a weekend (62hrs travelling for 60hrs on the ground 🙀) to attend his brother's wedding 👏 My contribution was this beautiful @libertylondon silk tie and pocket square made specifically for the big day. I was there in spirit.
+Mein Mann reiste für ein Wochenende nach Irland 🇮🇪 (62 Stunden Reisezeit für 60 Stunden am Boden 🙀), um an der Hochzeit seines Bruders teilzunehmen 👏 Mein Beitrag war diese wunderschöne @libertylondon Seidenkrawatte und das Einstecktuch, die speziell für den großen Tag angefertigt wurden. Ich war im Geiste dabei.
 
-> ##### See the original on Instagram
+> ##### Siehe das Original auf Instagram
 > 
-> [This picture](https://www.instagram.com/p/BZR3pyCHLjm/) is from the Instagram feed of [e2_clothing](https://www.instagram.com/e2_clothing/).
+> [Dieses Bild](https://www.instagram.com/p/BZR3pyCHLjm/) stammt aus dem Instagram-Feed von [e2_clothing](https://www.instagram.com/e2_clothing/).
 
 
 

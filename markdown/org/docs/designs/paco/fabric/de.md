@@ -1,5 +1,5 @@
 ---
-title: "Paco pants: Fabric Options"
+title: "Paco Hose: Stoff Optionen"
 ---
 
 Diese arbeiten am besten in einem leichteren Stoff mit relativ guter Ziehung.

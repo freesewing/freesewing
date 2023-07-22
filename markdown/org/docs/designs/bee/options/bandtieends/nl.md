@@ -1,10 +1,10 @@
 ---
-title: "Band (chest) tie ends"
+title: "Band (borst) strikuiteinden"
 ---
 
 ***
 
-Whether you like straight or pointy ends on the tie around your chest
+Of je nu van rechte of puntige uiteinden van de stropdas rond je borst houdt
 
 ## Effect van deze optie op het patroon
 

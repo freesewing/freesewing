@@ -1,11 +1,11 @@
 ---
-title: Neck ratio
+title: Rapport de cou
 ---
 
-Contrôle la taille de l'ouverture du cou par rapport à la taille du bavoir. The bib size is determined by [head size](/docs/patterns/bob/options/headsize), this option controls how much to reduce the head size by to determine the circumference and width of the neck opening.
+Contrôle la taille de l'ouverture du cou par rapport à la taille du bavoir. La taille du bavoir est déterminée par [head size](/docs/patterns/bob/options/headsize), cette option contrôle de combien il faut réduire la taille de la tête pour déterminer la circonférence et la largeur de l'ouverture du cou.
 
-- Increase the percentage to widen the neck opening.
-- Decrease the percentage to constrict the neck opening.
+- Augmente le pourcentage pour élargir l'ouverture du cou.
+- Diminue le pourcentage pour resserrer l'ouverture du cou.
 
 ## Effet de cette option sur le motif
 

@@ -1,5 +1,5 @@
 ---
-title: "Hugo hoodie: Cutting Instructions"
+title: "Hugo Hoodie: Schnittanleitung"
 ---
 
 - **Oberstoff**
@@ -19,7 +19,7 @@ title: "Hugo hoodie: Cutting Instructions"
 
 ###### Caveats
 
-- **sleeve**: There's a single notch at the front, and a double notch at the back. Diese Noten passen auf die Vorder- bzw. Rückenteile zusammen.
+- **Ärmel**: Vorne gibt es eine einfache Kerbe und hinten eine doppelte Kerbe. Diese Noten passen auf die Vorder- bzw. Rückenteile zusammen.
 - **Taschenverkleidung** und **hood**: Achte auf die Körnungen an diesen Teilen
 
 da Hugos Kanalhülse auch einen Teil der Vorder- und Rückseite abdeckt,

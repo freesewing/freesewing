@@ -1,10 +1,10 @@
 ---
-title: "Neck tie length"
+title: "Länge des Nackenträgers"
 ---
 
 ***
 
-Controls the length of the ties around your neck
+Kontrolliert die Länge der Bänder um deinen Hals
 
 ## Effekt dieser Option auf das Schnittmuster
 

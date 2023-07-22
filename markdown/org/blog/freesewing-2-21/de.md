@@ -1,44 +1,44 @@
 ---
 author: "joostdecock"
-caption: "A pink Hi and its BLÅHAJ ancestor"
+caption: "Ein rosa Hi und sein BLÅHAJ-Vorfahr"
 date: "2022-06-27"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5b5d9171aca75dd339bf8b7359b257769aa61936-4032x3024.jpg"
-intro: "FreeSewing 2.21 adds Bob, Hi, Lucy, Noble and Unice designs"
-title: "FreeSewing 2.21 adds Bob, Hi, Lucy, Noble and Unice designs"
+intro: "FreeSewing 2.21 fügt Bob, Hi, Lucy, Noble und Unice Designs hinzu"
+title: "FreeSewing 2.21 fügt Bob, Hi, Lucy, Noble und Unice Designs hinzu"
 ---
 
-We've rolled out FreeSewing v2.21 today, and it's a massive update with tons of changes, improvements, and behind the scenes work. Check the CHANGELOG if you'd like get all the nitty-gritty detail. For this blog post, I'll focus on what you are probably going to be most interested in: New designs.
+Wir haben heute FreeSewing v2.21 veröffentlicht. Es ist ein großes Update mit vielen Änderungen, Verbesserungen und Arbeiten hinter den Kulissen. Sieh dir den CHANGELOG an, wenn du alle Details erfahren möchtest. In diesem Blogbeitrag werde ich mich auf das konzentrieren, was dich wahrscheinlich am meisten interessiert: Neue Designs.
 
-This release brings 5 new designs to our catalog, so let's dive right in:
+Diese Version bringt 5 neue Designs in unseren Katalog, also lass uns gleich eintauchen:
 
-## Bob is a bib
+## Bob ist ein Lätzchen
 
-We've been using the construction of a Bib pattern in our [pattern design tutorial](https://freesewing.dev/tutorials/pattern-design) for years. Yet we never added the pattern to our catalog. An oversight that's been corrected now, and we now carry [Bob the bib](/designs/bob) in our collection.
+Wir verwenden den Aufbau eines Lätzchenmusters schon seit Jahren in unserem [Musterdesign-Tutorial](https://freesewing.dev/tutorials/pattern-design) . Trotzdem haben wir das Muster nie in unseren Katalog aufgenommen. Ein Versehen, das jetzt korrigiert wurde, und wir führen jetzt [Bob das Lätzchen](/designs/bob) in unserer Kollektion.
 
-Perfect for babies and grown-ups who are messy eaters alike, since you can make Bob in any size.
+Perfekt für Babys und Erwachsene, die unordentliche Esser sind, denn du kannst Bob in jeder Größe herstellen.
 
-## Hi is a shark
+## Hallo ist ein Hai
 
-It's been kinda hard to contain our excitement about this, but hear me out: A while ago rumours started swirling that IKEA would discontinue it's [BLÅHAJ](https://www.ikea.com/us/en/p/blahaj-soft-toy-shark-90373590/) stuffed shark, which is a universally beloved toy.
+Es war schwer, unsere Aufregung darüber zu zügeln, aber hört mir zu: Vor einiger Zeit machten Gerüchte die Runde, dass IKEA den [BLÅHAJ](https://www.ikea.com/us/en/p/blahaj-soft-toy-shark-90373590/) Plüschhai, ein allseits beliebtes Spielzeug, einstellen würde.
 
-The FreeSewing community wasn't just going to idly stand by while the worlds friendliest shark ran the risk of becoming extinct. A conservation effort gained momentum, and ultimately Wouter matter-of-factively dropped the first **Hi** pictures in our Discord.
+Die FreeSewing-Community wollte nicht tatenlos zusehen, wie der freundlichste Hai der Welt auszusterben drohte. Die Bemühungen um den Erhalt des Projekts gewannen an Dynamik, und schließlich stellte Wouter ganz sachlich die ersten **Hi** Bilder in unserem Discord ein.
 
-Oh, and you should know that [Hi](/designs/hi)  can be made big or small. The patterns scales up to a 5m shark. What are you waiting for?
+Oh, und du solltest wissen, dass [Hi](/designs/hi)  groß oder klein gemacht werden kann. Die Muster können bis zu einem 5 m großen Hai skaliert werden. Worauf wartest du noch?
 
-## Lucy is a tie-on pocket
+## Lucy ist eine Tasche zum Anbinden
 
-We've seen a number of historical designs recently, specifically from Starf. This time around, it's SeaZeeZee who added [Lucy](/designs/lucy) which is a pattern for a tie-on pocket.
+Wir haben in letzter Zeit eine Reihe historischer Entwürfe gesehen, insbesondere von Starf. Dieses Mal ist es SeaZeeZee, die [Lucy](/designs/lucy) hinzugefügt hat, ein Muster für eine aufgesetzte Tasche.
 
-It's a quick make for cosplay, historical re-enactment, or for all those dresses that don't come with pockets.
+Es ist schnell gemacht für Cosplay, historisches Reenactment oder für all die Kleider, die keine Taschen haben.
 
-## Noble is a body block with prince(ss) seams
+## Noble ist ein Body Block mit Prince(ss)-Nähten
 
-Wouter (of Hi fame) has another contribution in this release: Noble is a princess seam body block. Blocks tend to be undervalued but they are the foundation that other designs are built on, so having a new body block with prince(ss) seams is very exciting.
+Wouter (der berühmte Hi) hat einen weiteren Beitrag in dieser Ausgabe: Noble ist ein Prinzessinnennaht-Körperblock. Blöcke werden oft unterschätzt, aber sie sind die Grundlage, auf der andere Designs aufgebaut werden. Daher ist es sehr aufregend, einen neuen Körperblock mit Prinz(ss)-Nähten zu haben.
 
-## Unice is for undies
+## Unice ist für Unterhosen
 
-[Unice](/designs/unice) is a variant of [Ursula](/desgns/ursula), another undies pattern. It was designed by Anna who describes it as *the undies for those with significant rear estate*.
+[Unice](/designs/unice) ist eine Variante von [Ursula](/desgns/ursula), einem anderen Unterhosenmuster. Es wurde von Anna entworfen, die es als *die Unterwäsche für diejenigen mit erheblichem Hinterteil*beschreibt.
 
-It has a few changes and tweaks in comparison to Ursula, and is specifically intended to fit *any* body. So if you're rear estate mogul, try these out.
+Im Vergleich zu Ursula gibt es ein paar Änderungen und Optimierungen. Sie ist speziell für *und jeden* Körper geeignet. Wenn du also ein Immobilienmogul bist, solltest du diese ausprobieren.
 
 

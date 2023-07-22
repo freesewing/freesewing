@@ -4,8 +4,8 @@ title: "Radio de bolsillo delantero"
 
 El radio por el cual se redondea el bolsillo delantero.
 
-- Increase this option to curve the bottom of the front pocket
-- Decrease this option to straighten out the bottom of the front pocket
+- Aumenta esta opción para curvar la parte inferior del bolsillo delantero
+- Disminuye esta opción para enderezar la parte inferior del bolsillo delantero
 
 ## Efecto de esta opción en el patrón
 

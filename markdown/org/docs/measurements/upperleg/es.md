@@ -4,7 +4,7 @@ title: Contorno de alto de pierna
 
 La **circunstancia superior de la pierna** es la medida alrededor de la pierna, cerca de la parte superior de la pierna.
 
-You should measure this a bit below your crotch, refer to the illustration for guidance. Make sure to keep the tape measure horizontal to the floor as you measure the circumference of your leg.
+Debes medirlo un poco por debajo de la entrepierna; consulta la ilustración para orientarte. Asegúrate de mantener la cinta métrica horizontal al suelo mientras mides la circunferencia de la pierna.
 
 <Tip>
 

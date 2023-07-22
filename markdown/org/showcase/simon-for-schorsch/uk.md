@@ -1,16 +1,16 @@
 ---
 maker: "невідомо"
-caption: "A Simon for Schorsch"
+caption: "Саймон для Шорша"
 date: "2020-12-28"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/242723e896e21decb6f7363a4defa62654165546-1536x2048.jpg"
-intro: "Perhaps the most adorable Simon to date, this shirt was made for a FreeSewing user's baby frog, Schorsch."
-title: "A Simon for Schorsch"
+intro: "Мабуть, наймиліший Саймон на сьогоднішній день, ця сорочка була зроблена для жабеняти Шорша, користувача FreeSewing."
+title: "Саймон для Шорша"
 designs:
-  - "simon"
+  - "Саймон"
 ---
 
 
-Perhaps the most adorable Simon to date, this shirt was made for a FreeSewing user's baby frog, Schorsch.
+Мабуть, наймиліший Саймон на сьогоднішній день, ця сорочка була зроблена для жабеняти Шорша, користувача FreeSewing.
 
-This picture was originally posted on Twitter and is reproduced here with permission.
+Ця фотографія була спочатку опублікована в Twitter і відтворюється тут з дозволу.
 

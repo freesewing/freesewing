@@ -1,10 +1,10 @@
 ---
-title: "Back pocket facing"
+title: "Cara del bolsillo trasero"
 ---
 
 ***
 
-Controls whether or not to include facing on the back pockets
+Controla si se incluye o no el revestimiento en los bolsillos traseros
 
 ## Efecto de esta opción en el patrón
 

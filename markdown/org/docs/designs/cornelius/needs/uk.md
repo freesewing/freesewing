@@ -1,5 +1,5 @@
 ---
-title: "Cornelius cycling breeches: What You Need"
+title: "Велоштани Cornelius: Що тобі потрібно"
 ---
 
 Щоб зробити Корнеліуса, вам знадобиться наступне:

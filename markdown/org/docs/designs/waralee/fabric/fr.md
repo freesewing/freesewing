@@ -1,5 +1,5 @@
 ---
-title: "Waralee wrap pants: Fabric Options"
+title: "Pantalon enveloppant Waralee : Options de tissu"
 ---
 
 ### Tissu principal

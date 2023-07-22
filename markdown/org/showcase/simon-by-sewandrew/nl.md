@@ -3,7 +3,7 @@ maker: "onbekend"
 caption: "Simon hemd door Andrew"
 date: "2021-01-22"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/582ebfb48a506d583b6654cd296736c21f37807a-746x746.jpg"
-intro: "This excellent Simon shirt was made by Andrew, who also blogged about the process ."
+intro: "Dit uitstekende shirt van Simon is gemaakt door Andrew, die ook blogde over het proces."
 title: "Simon door Andrew"
 designs:
   - "simon"

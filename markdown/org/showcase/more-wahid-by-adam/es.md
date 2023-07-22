@@ -1,21 +1,21 @@
 ---
-maker: "unknown"
-caption: "So. Much. Estilo."
+maker: "desconocido"
+caption: "Entonces. Mucho. Estilo."
 date: "2020-08-10"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/be12610ca753f520a5ddebc6f034358551d9939c-1080x1349.jpg"
-intro: "After his first jaw-dropping Wahid Adam is back with another beauty."
-title: "Another Wahid waistcoat by Adam"
+intro: "Tras su primer Wahid Adam que te deja boquiabierto, vuelve con otra belleza."
+title: "Otro chaleco Wahid de Adam"
 designs:
   - "wahid"
 ---
 
 
-After [his first jaw-dropping Wahid](/showcase/wahid-by-adam/) Adam is back with another beauty.
+Después de [su primer Wahid asombroso](/showcase/wahid-by-adam/) Adam ha vuelto con otra belleza.
 
 <Note>
 
-This picture is from the [the Instagram feed](https://www.instagram.com/p/CDPh9MbhWuH/) of [Adam Bradley](https://www.instagram.com/grandmarquess/). 
-It is posted here with permission.
+Esta foto es del [feed de Instagram](https://www.instagram.com/p/CDPh9MbhWuH/) de [Adam Bradley](https://www.instagram.com/grandmarquess/). 
+Se publica aquí con permiso.
 
 </Note>
 

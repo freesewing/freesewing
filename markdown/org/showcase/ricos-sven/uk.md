@@ -1,16 +1,16 @@
 ---
 maker: "невідомо"
-caption: "A top-notch Sven, but just wait..."
+caption: "Першокласний Свен, але зачекайте..."
 date: "2020-11-03"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f208ab781d22f74c91cc37a31249fd88a94a2aab-2000x2198.jpg"
-intro: "There's more! Check out the sleeves and stripes on this Sven!"
+intro: "Це ще не все! Погляньте на рукава і смужки на цьому Sven!"
 title: "Sven by Ricos"
 designs:
-  - "sven"
+  - "Свен"
 ---
 
-There's more! Check out the sleeves and stripes on this Sven!
+Це ще не все! Погляньте на рукава і смужки на цьому Sven!
 
-![Side view, showing sleeves with colorblocked stripes](https://posts.freesewing.org/uploads/ricos_sven_ricos2_d350f988c8.jpg "Side view, showing sleeves with colorblocked stripes")
+![Вид збоку, на рукавах - смуги в клітинку](https://posts.freesewing.org/uploads/ricos_sven_ricos2_d350f988c8.jpg "Вид збоку, на рукавах - смуги в клітинку")
 
 ![Вид ззаду](https://posts.freesewing.org/uploads/ricos_sven_ricos3_74928145d7.jpg)

@@ -1,5 +1,5 @@
 ---
-title: "Paco pants: Fabric Options"
+title: "Pantalones Paco: Opciones de tejido"
 ---
 
 Estos funcionan mejor en un tejido más ligero con un drape relativamente bueno.

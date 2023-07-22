@@ -1,14 +1,14 @@
 ---
 maker: "RedBlaqueGolden"
-caption: "This is the Wonder Warrior jacket, looking pretty great"
+caption: "Це куртка Wonder Warrior, виглядає дуже добре"
 date: "2017-10-01"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/682710e51155b4fa6ee19d98322aa6d9c7f9fc40-2320x1656.jpg"
-intro: "This image was republished (with permission) from the Twitter account of @MyxterHyde"
-title: "A wonder woman themed jacket based on the Brian Body Block by Myxter Hyde"
+intro: "Це зображення було передруковано (з дозволу) з Twitter-акаунта @MyxterHyde"
+title: "Куртка на тему \"Чудо-жінка\", створена за мотивами Браяна Боді Блоку від Майкстера Хайда"
 designs:
-  - "brian"
+  - "Брайан"
 ---
 
 
-This image was republished (with permission) from [the Twitter account](https://twitter.com/MyxterHyde/status/914274197345570816) of [@MyxterHyde](https://twitter.com/MyxterHyde)
+Це зображення було передруковано (з дозволу) з [Twitter-акаунта](https://twitter.com/MyxterHyde/status/914274197345570816) [@MyxterHyde](https://twitter.com/MyxterHyde)
 

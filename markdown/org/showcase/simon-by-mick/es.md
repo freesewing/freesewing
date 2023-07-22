@@ -1,18 +1,18 @@
 ---
-maker: "unknown"
-caption: "This matching shirt and mask are coordinated perfection"
+maker: "desconocido"
+caption: "Esta camisa y esta máscara a juego son la perfección coordinada"
 date: "2020-11-27"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fa6dc530445d2457e8b91320af38c4ef8389a369-750x750.jpg"
-intro: "Micheál made this fantastic Simon shirt in multicolored dots, with Florence face mask to match!"
-title: "Speckled Simon Shirt by Mick"
+intro: "Micheál hizo esta fantástica camiseta Simon de lunares multicolores, ¡con la máscara facial Florence a juego!"
+title: "Camisa Simon moteada de Mick"
 designs:
   - "simon"
-  - "florence"
+  - "florencia"
 ---
 
-Micheál made this fantastic Simon shirt in multicolored dots, with Florence face mask to match!
+Micheál hizo esta fantástica camiseta Simon de lunares multicolores, ¡con la máscara facial Florence a juego!
 
 <Note>
-This picture is from the instagram feed of [Micheál](https://www.instagram.com/popshaped/). It is posted here with permission.
+Esta foto es del feed de instagram de [Micheál](https://www.instagram.com/popshaped/). Se publica aquí con permiso.
 </Note>
 

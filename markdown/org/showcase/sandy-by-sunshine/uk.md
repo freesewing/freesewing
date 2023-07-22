@@ -1,22 +1,22 @@
 ---
 maker: "невідомо"
-caption: "Paneled Sandy skirt by Sunshine"
+caption: "Спідниця з панелей Sandy від Sunshine"
 date: "2021-02-15"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4d38d6837e8125276522abb62d44a99e191fd8a0-1477x1969.jpg"
-intro: "This lovely Sandy skirt was made by Sunshine. The maker shared more information about the project:"
-title: "Sandy skirt by Sunshine"
+intro: "Цю чудову спідницю пісочного кольору виготовила компанія Sunshine. Творець поділився додатковою інформацією про проект:"
+title: "Пісочна спідниця від Sunshine"
 designs:
-  - "sandy"
+  - "піщаний"
 ---
 
 
-This lovely Sandy skirt was made by Sunshine. The maker shared more information about the project:
+Цю чудову спідницю пісочного кольору виготовила компанія Sunshine. Творець поділився додатковою інформацією про проект:
 
-"I couldn't fit the Sandy pattern on the 44"fabric I bought, so I ended up folding it a few times and using it to cut sections for a panel skirt using alternating colors instead that I had dyed last week. I added a strip on the bottom to increase the length. Then, I added a  trim that I had sitting in my sewing basket for 2 years. I hadn't previously considered using a section of the Sandy as a panel segment, but it worked super well!!! I'm not perfect at sewing, but I think it turned out alright!"
+"Я не змогла помістити візерунок Sandy на тканину 44", яку купила, тому в підсумку склала її в кілька разів і використала для вирізання секцій для спідниці-панелі, чергуючи кольори, які я пофарбувала минулого тижня. Я додала знизу смужку, щоб збільшити довжину. Потім я додала обрізки, які вже 2 роки лежали в моєму кошику для шиття. Раніше я не думав про використання секції Sandy в якості сегмента панелі, але це спрацювало дуже добре!!! Я не досконало вмію шити, але думаю, що вийшло непогано!"
 
 <Note>
 
-This project is from [the FreeSewing Discord](https://discord.freesewing.org/) and has been shared here with permission.
+Цей проект взято з [the FreeSewing Discord] (https://discord.freesewing.org/) і розміщено тут з дозволу.
 
 </Note>
 

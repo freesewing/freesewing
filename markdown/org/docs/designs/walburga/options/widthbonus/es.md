@@ -1,8 +1,8 @@
 ---
-title: "Width bonus"
+title: "Bonificación por anchura"
 ---
 
-Allows variation of the width of the garment
+Permite variar la anchura de la prenda
 
 ## Efecto de esta opción en el patrón
 

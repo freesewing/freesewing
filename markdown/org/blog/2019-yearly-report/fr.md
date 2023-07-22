@@ -12,7 +12,7 @@ Whaou ! Quelle année pour FreeSewing. En août, nous avons publié la version 2
 
 ## La mise à l'échelle est difficile, mais nous avons fait des progrès remarquables
 
-Aussi cool que soit notre nouvelle infrastructure, ce n'est pas le travail le plus important que nous ayons fait cette année. Yes, it's pretty neat, and yes it's only possible because of the work done on 2.0. But that work itself is what matters most. Mais la raison principale de la réécriture de la version 2.0 était de permettre au projet de s'étendre horizontalement. Autrement dit, pour permettre à FreeSewing d'aller là où je ne pouvais pas le porter seul.
+Aussi cool que soit notre nouvelle infrastructure, ce n'est pas le travail le plus important que nous ayons fait cette année. Oui, c'est très bien, et oui, c'est seulement possible grâce au travail effectué sur pour la version 2.0. Mais ce travail lui-même est ce qui compte le plus. Mais la raison principale de la réécriture de la version 2.0 était de permettre au projet de s'étendre horizontalement. Autrement dit, pour permettre à FreeSewing d'aller là où je ne pouvais pas le porter seul.
 
 D'une certaine manière, FreeSewing a grandi en tant que projet (logiciel). Plusieurs personnes font des contributions régulières, il existe [un salon de discussion actif](https://discord.freesewing.org/), [un site web dédié pour les développeurs et de la documentation pour les traducteurs](https://freesewing.dev), une pléthore de [packages que nous publions sur NPM](https://www.npmjs.com/search?q=keywords:freesewing), nous avons contribué à corriger et à améliorer les logiciels desquels nous dépendons, et nous avons maintenant également d'autres personnes et équipes qui dépendent des packages que nous avons sortis.
 
@@ -44,7 +44,7 @@ Nous cherchons également à embarquer plus de designers à bord de FreeSewing. 
 
 Grâce à nos forrmidables mécènes, les revenus ont encore augmenté cette année. Comme vous le savez peut-être, FreeSewing fait don de 100 % de ses revenus à Medecins Sans Frontières/Doctors Sans Frontières. Donc, ce matin, j'ai eu le grand honneur de faire un chèque de 4109,38€ à [MSF](https://www.msf.org/).
 
-Cela fait **vraiment du bien** alors merci à tous nos mécènes pour leur soutien continu. Si vous souhaitez rejoindre ce groupe génial, [vous pouvez le faire ici](/patrons/join).
+Cela fait **vraiment du bien** alors merci à tous nos mécènes**</a> pour leur soutien continu. Si vous souhaitez rejoindre ce groupe génial, [vous pouvez le faire ici](/patrons/join).</p>
 
 
 

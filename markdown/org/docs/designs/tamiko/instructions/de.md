@@ -1,5 +1,5 @@
 ---
-title: "Tamiko top: Sewing Instructions"
+title: "Tamiko Oberteil: Anleitung zum Nähen"
 ---
 
 ### Schritt 1: Beende die Rüstungsnaht
@@ -19,7 +19,7 @@ Auf diese Weise kann sich dein Oberteil nicht umdrehen, während wir es beenden.
 
 </Note>
 
-- Nähen Sie die drei Nähte, die auf Ihrem Entwurf markiert sind. F-H, C and I-J in the diagram, represented by lines and notches on the pattern.
+- Nähen Sie die drei Nähte, die auf Ihrem Entwurf markiert sind. F-H, C und I-J in der Abbildung, dargestellt durch Linien und Kerben auf dem Muster.
 
 ### Schritt 3: Viel Spaß!
 

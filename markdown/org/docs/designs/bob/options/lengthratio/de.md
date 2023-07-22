@@ -4,8 +4,8 @@ title: Längenverhältnis
 
 Steuert die Länge des Latzes.
 
-- Increase the percentage to lengthen the bib.
-- Decrease the percentage to shorten the bib.
+- Erhöhe den Prozentsatz, um den Latz zu verlängern.
+- Verringere den Prozentsatz, um die Lätzchen zu kürzen.
 
 ## Effekt dieser Option auf das Schnittmuster
 

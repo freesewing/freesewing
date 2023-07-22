@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ebef91daa8acf992f8144
 intro: "Перша версія Альберта, зроблена для його доньки, від Wouter.vdub"
 title: "Перша версія Альберта, зроблена для його доньки, від Wouter.vdub"
 designs:
-  - "albert"
+  - "альберт"
 ---
 
 ![Вид ззаду ](https://posts.freesewing.org/uploads/albert_by_wouter_albert_back_846f1b89ac.jpg "Вид ззаду ") ![Вид спереду](https://posts.freesewing.org/uploads/albert_by_wouter_albert_side_8505eb3b84.jpg "Вид спереду")

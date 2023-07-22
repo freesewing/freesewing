@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/93d6c7b74ed2a82966163
 intro: "Це зображення було перепощено (з попереднім дозволом) з форуму denofangles.com."
 title: "Брюс на цій ляльці, бо чому б і ні?"
 designs:
-  - "bruce"
+  - "Брюс."
 ---
 
 

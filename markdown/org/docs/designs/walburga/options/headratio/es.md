@@ -1,8 +1,8 @@
 ---
-title: "Head ratio"
+title: "Ratio de cabeza"
 ---
 
-Controls the size of the head opening
+Controla el tamaño de la abertura de la cabeza
 
 ## Efecto de esta opción en el patrón
 

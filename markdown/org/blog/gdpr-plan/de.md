@@ -73,213 +73,213 @@ Aber wenn Sie neugierig sind auf die DSGVO und was es für eine Website wie Free
 
 ### Gut zu wissen
 
-A few things you should know before we dive into GDPR:
+Ein paar Dinge solltest du wissen, bevor wir uns mit der DSGVO beschäftigen:
 
-#### There's 100 days left
+#### Es sind noch 100 Tage übrig
 
-The GDPR was adopted back in 2016, but it won't grow its teeth until May 25th 2018.
+Die Datenschutzgrundverordnung wurde bereits 2016 verabschiedet, aber sie wird erst am 25. Mai 2018 in Kraft treten.
 
-Until that day, you get a pass. After that day, it's for real. Which means we have 100 days left to get our house in order.
+Bis zu diesem Tag bekommst du einen Passierschein. Nach diesem Tag ist es dann wirklich so weit. Das heißt, wir haben noch 100 Tage Zeit, um unser Haus in Ordnung zu bringen.
 
-#### There's exemptions for SMEs
+#### Es gibt Ausnahmen für KMUs
 
-Organizations employing fewer than 250 people are exempt from some of the more bureaucratic aspects of the GDPR, such as a bunch of documenting requirements.
+Unternehmen mit weniger als 250 Beschäftigten sind von einigen bürokratischen Aspekten der DSGVO ausgenommen, z. B. von einer Reihe von Dokumentationspflichten.
 
-Essentially, while you still have to do the right thing, there's a lot less paperwork to fill out.
+Im Grunde musst du zwar immer noch das Richtige tun, aber es gibt viel weniger Papierkram zu erledigen.
 
-Freesewing employs zero people, so we're off the hook.
+Freesewing beschäftigt keine Mitarbeiter, also sind wir aus dem Schneider.
 
-#### There's extra provisions for sensitive data
+#### Es gibt zusätzliche Vorkehrungen für sensible Daten
 
-> Body measurements alone are not sensitive data
+> Körpermaße allein sind keine sensiblen Daten
 
-The GDPR has extra provisions for *sensitive data* such as biometric data, profiling, and a bunch of other stuff.
+Die DSGVO enthält zusätzliche Bestimmungen für *sensible Daten* wie biometrische Daten, Profilerstellung und eine Reihe anderer Dinge.
 
-This was cause for concern because we collect body measurements, and one of our questions was whether that qualifies as biometric data.
+Das gab Anlass zur Sorge, denn wir sammeln Körpermaße, und eine unserer Fragen war, ob das als biometrische Daten gelten kann.
 
-Turns out it doesn't. Biometric data is what you can use to identify a person, like a fingerprint or iris scan. Body measurements alone are not sensitive data.
+Es stellt sich heraus, dass es das nicht tut. Biometrische Daten sind Daten, mit denen du eine Person identifizieren kannst, z. B. ein Fingerabdruck oder ein Iris-Scan. Körpermaße allein sind keine sensiblen Daten.
 
 
-### Collecting data through consent
+### Datenerhebung durch Zustimmung
 
-To collect data, you need a so-called *lawful basis for data processing*.  
-There are different types, but the one that applies to us (and to most online services) is **consent**.
+Um Daten zu sammeln, brauchst du eine sogenannte *Rechtsgrundlage für die Datenverarbeitung*.  
+Es gibt verschiedene Arten, aber diejenige, die für uns (und die meisten Online-Dienste) gilt, ist **Einwilligung**.
 
-In this scenario, your legal basis for processing the data is that you've asked the person to get their data and they've freely given it to you.
+In diesem Fall ist deine Rechtsgrundlage für die Verarbeitung der Daten, dass du die Person gebeten hast, ihre Daten zu erhalten, und sie sie dir freiwillig gegeben hat.
 
-That is straight-forward, and makes sense. But the GDPR is really serious about making sure this consent is freely given, and not wrestled from you grudgingly.
+Das ist ganz einfach und macht Sinn. Aber die DSGVO will wirklich sicherstellen, dass diese Zustimmung freiwillig gegeben und nicht widerwillig von dir abgerungen wird.
 
-To prevent companies from throwing up a big wall of legalese that people have to agree to, the GDPR outlines a number of principles this consent should adhere to. Here's a non-exhaustive list:
+Um zu verhindern, dass Unternehmen eine große Mauer aus juristischem Fachchinesisch aufstellen, der die Menschen zustimmen müssen, beschreibt die DSGVO eine Reihe von Grundsätzen, an die sich diese Zustimmung halten sollte. Hier ist eine nicht erschöpfende Liste:
 
- - people should have real choice and control
- - consent requires a positive opt-in, pre-ticked boxes or anything like that are not allowed
- - there should be a very clear statement explaining what people are agreeing to
- - these requests for consent must be separate from any terms & conditions
- - consent needs to be granular, you need individual consent for different things, and can't ask for blanket consent
- - it must be easy for people to redraw consent
- - consent of data processing should not be a precondition for a service
+ - Menschen sollten echte Wahlmöglichkeiten und Kontrolle haben
+ - Die Zustimmung erfordert ein positives Opt-in, angekreuzte Kästchen oder Ähnliches sind nicht erlaubt.
+ - Es sollte eine klare Erklärung geben, in der erklärt wird, wozu man sich verpflichtet.
+ - Diese Ersuchen um Zustimmung müssen von den Bedingungen & getrennt sein.
+ - Die Zustimmung muss detailliert sein, du brauchst eine individuelle Zustimmung für verschiedene Dinge und kannst nicht nach einer pauschalen Zustimmung fragen.
+ - es für die Menschen einfach sein muss, die Zustimmung neu zu formulieren
+ - die Zustimmung zur Datenverarbeitung sollte keine Voraussetzung für einen Dienst sein
 
-Looking at that list, I can't help but feel that legislation would be a lot simpler if lawmakers could just write *don't be a dick* and call it a day.
+Wenn ich mir diese Liste ansehe, kann ich mich des Eindrucks nicht erwehren, dass die Gesetzgebung viel einfacher wäre, wenn der Gesetzgeber einfach *don't be a dick* schreiben könnte und die Sache damit erledigt wäre.
 
-#### Consent granularity
+#### Granularität der Zustimmung
 
-Remember, we can't just get blanket consent. We need to get consent for every type of data processing we do.
+Denke daran, dass wir nicht einfach eine pauschale Zustimmung bekommen können. Wir müssen für jede Art der Datenverarbeitung, die wir durchführen, eine Zustimmung einholen.
 
-For freesewing.org, we have identified three different types of data processing:
+Für freesewing.org haben wir drei verschiedene Arten der Datenverarbeitung ermittelt:
 
- - Profile data
- - Model data
- - Patron data
+ - Profil Daten
+ - Modelldaten
+ - Gönnerdaten
 
-For each of these, we'll need to get consent from the user, making sure it's *real consent* as intended in the GDPR.
+Für jede dieser Maßnahmen müssen wir die Zustimmung der Nutzer/innen einholen und sicherstellen, dass es sich um eine echte Zustimmung handelt: ** wie in der GDPR vorgesehen.
 
-Below is a mockup for what this could look like for each data type:
+Unten siehst du ein Modell, wie das für jeden Datentyp aussehen könnte:
 
-> ##### These mockups are no longer available
+> ##### Diese Mockups sind nicht mehr verfügbar
 > 
-> Please note that the mockups originally included in this post are no longer available. Instead, this functionality has been implemented in the website.
+> Bitte beachte, dass die ursprünglich in diesem Beitrag enthaltenen Mockups nicht mehr unter verfügbar sind. Stattdessen wurde diese Funktion auf der Website implementiert.
 
-#### Consent timing
+#### Zeitpunkt der Zustimmung
 
-The GDPR states that you should ask for consent when the data is collected.
+Die DSGVO besagt, dass du bei der Erhebung der Daten um Zustimmung bitten solltest.
 
-With our three types of data processing, that means that consent must be asked at different times:
+Bei unseren drei Arten der Datenverarbeitung bedeutet das, dass die Zustimmung zu unterschiedlichen Zeitpunkten eingeholt werden muss:
 
- - **Profile data**: When signing up on the site
- - **Model data**: When creating the first model
- - **Patron data**: When becoming a patron
+ - **Profildaten**: Wenn du dich auf der Website anmeldest
+ - **Modelldaten**: Bei der Erstellung des ersten Modells
+ - **Gönnerdaten**: Wenn du ein Gönner wirst
 
-This will (also) require some extra work to integrate this in the site.
+Dies wird (auch) einige zusätzliche Arbeit erfordern, um dies in die Website zu integrieren.
 
-### Respecting basic rights when processing data
+### Wahrung der Grundrechte bei der Datenverarbeitung
 
-The EU enshrines basic rights for its citizens that should be respected when processing data.
+Die EU schreibt grundlegende Rechte für ihre Bürgerinnen und Bürger vor, die bei der Verarbeitung von Daten beachtet werden sollten.
 
-Let's look at each of these rights and their impact on freesewing.org.
+Schauen wir uns jedes dieser Rechte und ihre Auswirkungen auf freesewing.org an.
 
 #### Das Recht, informiert zu werden
 
-> You need to be transparent about how you use personal data. Why you collect it, how you use it, and so on.
+> Du musst transparent machen, wie du persönliche Daten verwendest. Warum du sie sammelst, wie du sie verwendest, und so weiter.
 
-Informing users is something we are still working on. If anything, this blog post is part of that effort.
+An der Information der Nutzerinnen und Nutzer arbeiten wir noch. Wenn überhaupt, dann ist dieser Blogbeitrag ein Teil dieser Bemühungen.
 
-We will need to design the individual privacy notices, but also a more overall privacy policy as well as making certain that users are informed of all their rights.
+Wir müssen nicht nur die einzelnen Datenschutzerklärungen entwerfen, sondern auch eine allgemeine Datenschutzrichtlinie sowie , um sicherzustellen, dass die Nutzer/innen über alle ihre Rechte informiert sind.
 
-While this will require some work, I don't expect any problems here.
+Das erfordert zwar etwas Arbeit, aber ich erwarte hier keine Probleme.
 
 #### Das Recht auf Zugriff
 
-> People have the right to know their data is processed, and to access that data.
+> Die Menschen haben das Recht zu wissen, dass ihre Daten verarbeitet werden, und auf diese Daten zuzugreifen.
 
-We are already compliant, as all data users enter on the site can also be accessed by them.
+Wir sind bereits konform, denn alle Daten, die die Nutzerinnen und Nutzer auf der Website eingeben, sind auch für sie zugänglich.
 
 #### Das Recht auf Berichtigung
 
-> People have the right to correct their data if it's not correct.
+> Die Menschen haben das Recht, ihre Daten zu korrigieren, wenn sie nicht korrekt sind.
 
-We are already compliant, as all data users enter on the site can also be edited by them.
+Wir sind bereits konform, da alle Daten, die die Nutzer/innen auf der Seite eingeben, auch von ihnen bearbeitet werden können.
 
 #### Das Recht auf Löschung
 
-> People have the right to have their data removed/erased.
+> Die Menschen haben das Recht, dass ihre Daten entfernt/gelöscht werden.
 
-We are already compliant, as users can remove their models, or entire account at any time.
+Wir sind bereits konform, denn die Nutzer können ihre Modelle oder ihr gesamtes Konto jederzeit löschen.
 
 #### Das Recht, die Verarbeitung einzuschränken
 
-This right means that users must be able to put a *freeze* on all data processing, without going as far as to delete their data.
+Dieses Recht bedeutet, dass die Nutzer/innen in der Lage sein müssen, alle Datenverarbeitungen auf *einzufrieren* , ohne so weit zu gehen, ihre Daten zu löschen.
 
-We do not currently offer this possibility, and will need to add this functionality to the site.
+Wir bieten diese Möglichkeit derzeit nicht an und werden diese Funktion auf der Website hinzufügen müssen.
 
 #### Das Recht auf Datenübertragbarkeit
 
-> People not only have a right to export all their data, that export should also be in a format that makes it easy for them to take their data elsewhere.
+> Die Menschen haben nicht nur das Recht, alle ihre Daten zu exportieren, dieser Export sollte auch in einem Format erfolgen, das es ihnen leicht macht, ihre Daten anderswo zu verwenden.
 
-We are already compliant, as we allow users to export all of their data, and make it available in different standard formats (YAML and JSON).
+Wir sind bereits konform, da wir es den Nutzern ermöglichen, alle ihre Daten zu exportieren und sie in verschiedenen Standardformaten (YAML und JSON) zur Verfügung zu stellen.
 
 #### Das Recht auf Widerspruch
 
-> The right to object applies specifically to:
+> Das Widerspruchsrecht gilt insbesondere für:
 > 
-> - processing for public interests or by official authorities
-> - processing for direct marketing
-> - processing for science/historic research/statistics
+> - Verarbeitung im öffentlichen Interesse oder durch offizielle Behörden
+> - Verarbeitung für Direktmarketing
+> - Bearbeitung für Wissenschaft/Historische Forschung/Statistik
 > 
-> In these cases, people can object to this specific processing.
+> In diesen Fällen können die Betroffenen gegen diese spezielle Verarbeitung Einspruch erheben.
 
-This is going to apply to us when we start publishing anonymized model data, something that's on our roadmap.
+Das gilt für uns, wenn wir anfangen, anonymisierte Modelldaten zu veröffentlichen, was auf unserer Roadmap steht.
 
-The reason for publishing this data is that we want to make a dataset available of *real* body measurements, rather than the *standard* measurements that are typically used in the industry.
+Der Grund für die Veröffentlichung dieser Daten ist, dass wir einen Datensatz mit *realen* Körpermaßen zur Verfügung stellen wollen und nicht die *Standardmaße* , die in der Branche üblicherweise verwendet werden.
 
-This is something we'll write about more at a later date, but essentially this falls under the *scientific research/statistics* category. And even though the data is anonimized, we still need to respect the right of users to object to this processing.
+Darüber werden wir später mehr schreiben, aber im Wesentlichen fällt dies unter die Kategorie *wissenschaftliche Forschung/Statistik* . Und auch wenn die Daten anonymisiert werden, müssen wir das Recht der Nutzer/innen respektieren, dieser Verarbeitung zu widersprechen.
 
-As such, we should add the possibility to object to this specific use of the data.
+Deshalb sollten wir die Möglichkeit einbauen, dieser speziellen Verwendung der Daten zu widersprechen.
 
 #### Rechte in Bezug auf automatisierte Entscheidungsfindung und Profilerstellung
 
-> People have extra rights when it comes to profiling or decisions made by AI or algorithms without human involvement.
+> Menschen haben zusätzliche Rechte, wenn es um Profiling oder Entscheidungen geht, die von KI oder Algorithmen ohne menschliche Beteiligung getroffen werden.
 
-This is not relevant in our situation.
+Das ist in unserer Situation nicht relevant.
 
-### Privacy by design
+### Datenschutz durch Design
 
-The EU isn't content with throwing up a couple of consent questions and respecting people's rights when processing data. It also wants to make certain that your privacy is (better) protected when things go wrong.
+Die EU begnügt sich nicht damit, ein paar Einwilligungsfragen zu stellen und die Rechte der Menschen bei der Datenverarbeitung zu respektieren. Sie will auch sicherstellen, dass deine Privatsphäre (besser) geschützt ist, wenn etwas schief läuft.
 
-That's why it advocates for *privacy by design*. While it's a concept that's hard to pin down in legislation, the purpose is clear: They want everyone to consider privacy from the very start of their project/product/business, and not as an afterthought.
+Deshalb setzt sie sich für *privacy by design*ein. Auch wenn es schwer ist, dieses Konzept gesetzlich zu verankern, ist das Ziel von klar: Sie wollen, dass jeder den Datenschutz von Anfang an in sein Projekt/Produkt/Geschäft einbezieht, und nicht erst im Nachhinein.
 
-Things such as encryption (both in transit and for data at-rest), pseudonyms, and data expiry are suggested as things to keep in mind while designing.
+Dinge wie Verschlüsselung (sowohl bei der Übertragung als auch bei den gespeicherten Daten), Pseudonyme und Datenverfall werden als vorgeschlagen, die man bei der Entwicklung berücksichtigen sollte.
 
-Obviously, the EU is not going to come check your code to see whether you've taken privacy by design to heart. But it can (and probably will) have an influence when things to wrong.
+Natürlich wird die EU nicht kommen und deinen Code überprüfen, um zu sehen, ob du dir den Datenschutz zu Herzen genommen hast. Aber sie kann (und wird wahrscheinlich) einen Einfluss haben, wenn die Dinge schief laufen.
 
-Imagine two companies who have a data leak, one of them hasn't done much to safeguard the privacy of their users, whereas the other has taken *privacy by design* measures to mitigate the damage.
+Stell dir zwei Unternehmen vor, die ein Datenleck haben. Das eine hat nicht viel getan, um die Privatsphäre seiner Nutzer zu schützen, während das andere *privacy by design* Maßnahmen ergriffen hat, um den Schaden zu begrenzen.
 
-It seems obvious that the EU is going to come down harder on the company who didn't even try.
+Es scheint offensichtlich, dass die EU das Unternehmen, das es nicht einmal versucht hat, härter bestrafen wird.
 
-#### What we're already doing
+#### Was wir bereits tun
 
-We already do a number of things that are driven by a *privacy by design* approach. For example:
+Wir tun bereits eine Reihe von Dingen, die auf einem *privacy by design* Ansatz beruhen. Zum Beispiel:
 
- - We use pseudonyms for user accounts
- - We don't share any data with any third party
- - We don't include any tracking code, or analytics
- - We don't use cookies
- - We don't have any social logins, like buttons, or other such things
- - We don't run/show any ads
- - We don't run any third-party JavaScript code
- - We use encryption on all transport
+ - Wir verwenden Pseudonyme für Benutzerkonten
+ - Wir geben keine Daten an Dritte weiter
+ - Wir enthalten keinen Tracking-Code oder Analysedaten
+ - Wir verwenden keine Cookies
+ - Wir haben keine sozialen Logins, Like-Buttons oder andere Dinge.
+ - Wir schalten/zeigen keine Werbung
+ - Wir verwenden keinen JavaScript-Code von Drittanbietern
+ - Wir verwenden Verschlüsselung für alle Transporte
 
-There's some more info on this in this blog post: [The choices I've made to protect your privacy. Or why you won't be getting any cookies](/blog/privacy-choices/).
+In diesem Blog-Beitrag gibt es mehr Informationen dazu: [Die Entscheidungen, die ich getroffen habe, um deine Privatsphäre zu schützen. Oder warum du keine Kekse bekommst](/blog/privacy-choices/).
 
-These already form a very good basis for a privacy conscious website. But since we'll need to make changes for GDPR anyway, we're considering other options to further raise the privacy bar. Specifically, what can we do to limit the damage to our users in case there is a data leak.
+Diese bilden bereits eine sehr gute Grundlage für eine datenschutzfreundliche Website. Da wir aber ohnehin Änderungen für die GDPR vornehmen müssen, denken wir über andere Optionen nach, um den Datenschutz weiter zu verbessern. Was können wir konkret tun, um den Schaden für unsere Nutzer/innen im Falle eines Datenlecks zu begrenzen?
 
-#### Restriction of data storage
+#### Einschränkung der Datenspeicherung
 
-Some of the most sensitive data we store today is the address and birthday of our higher-tier patrons.
+Einige der sensibelsten Daten, die wir heute speichern, sind die Adresse und das Geburtsdatum unserer Kunden aus den höheren Ebenen.
 
-However, the site does not need this information to function. We only need it for administrative purposes; Sending out gifts and birthday cards to our patrons.
+Die Website braucht diese Informationen jedoch nicht, um zu funktionieren. Wir brauchen sie nur für administrative Zwecke; Geschenke und Geburtstagskarten an unsere Kunden verschicken.
 
-As such, there's no real need to keep this data in the freesewing database. We could just as well write this information down in a notebook we keep on our coffee table.
+Es gibt also keinen Grund, diese Daten in der Freesewing-Datenbank zu speichern. Wir könnten diese Informationen genauso gut in einem Notizbuch aufschreiben, das wir auf unserem Couchtisch liegen haben.
 
-So, as part of our GDPR-related changes, we will remove this information from the database, and store it offline.
+Als Teil unserer GDPR-bezogenen Änderungen werden wir diese Informationen aus der Datenbank entfernen und sie offline speichern.
 
-#### Encryption of data at rest
+#### Verschlüsselung von Daten im Ruhezustand
 
-We already encrypt all data in transit. But, we are currently considering to add encryption of data at rest.
+Wir verschlüsseln bereits alle Daten bei der Übertragung. Aber wir überlegen gerade, die Verschlüsselung von Daten im Ruhezustand hinzuzufügen.
 
-The idea is to encrypt all data that could potentially identify a user. Such as:
+Die Idee ist, alle Daten zu verschlüsseln, die eine/n Nutzer/in identifizieren könnten. Zum Beispiel:
 
  - E-Mail-Adresse
- - User name
- - Model names
- - Model notes
+ - Nutzername
+ - Modellnamen
+ - Modell-Notizen
 
-This would add an extra layer of defense for our users' privacy in case somehow our database gets dumped.
+Das wäre ein zusätzlicher Schutz für die Privatsphäre unserer Nutzerinnen und Nutzer, für den Fall, dass unsere Datenbank in irgendeiner Weise geleert wird.
 
-While this change will be non-trivial to implement and come with a performance penalty, I feel it's worth looking in to.
+Auch wenn diese Änderung nicht trivial zu implementieren ist und mit Leistungseinbußen verbunden ist, denke ich, dass es wert ist, sie zu berücksichtigen.
 
 ## Fazit
 
-While we still have some work to do, we are already compliant with large parts of the GDPR, especially when it comes to respecting users rights:
+Obwohl wir noch einiges zu tun haben, erfüllen wir bereits große Teile der DSGVO, vor allem wenn es um die Achtung der Nutzerrechte geht :
 
  - Das Recht, informiert zu werden
  - Das Recht auf Zugriff
@@ -290,30 +290,30 @@ While we still have some work to do, we are already compliant with large parts o
  - Das Recht auf Widerspruch
  - Rechte in Bezug auf automatisierte Entscheidungsfindung und Profilerstellung
 
-We are currently working on *the right to be informed* and have a plan for the changes required to respect *the right to restrict processing* and *the right to object*.
+Wir arbeiten derzeit an *dem Recht, informiert zu werden* und haben einen Plan für die Änderungen, die erforderlich sind, um *das Recht auf Einschränkung der Verarbeitung* und *das Widerspruchsrecht*zu respektieren.
 
-On the data collection site, we need to hammer out the details for our privacy notices. We'll also write a detailed privacy policy that bundles all the info from the different notices.
+Auf der Datenerfassungsseite müssen wir die Details für unsere Datenschutzhinweise ausarbeiten. Wir werden auch eine detaillierte Datenschutzerklärung verfassen, die alle Informationen aus den verschiedenen Hinweisen bündelt.
 
-We'll need to add changes to the user on-boarding to make sure notices are presented at the correct time. Not to mention that we'll need to keep track of who gave their consent for what.
+Wir müssen Änderungen an der Benutzereinführung vornehmen, um sicherzustellen, dass die Benachrichtigungen zur richtigen Zeit angezeigt werden. Ganz zu schweigen davon, dass wir den Überblick behalten müssen, wer seine Zustimmung zu was gegeben hat.
 
-### Action points
+### Aktionspunkte
 
- - Draft privacy notices for profile/model/patron data
- - Integrate consent in user on-boarding, model creation, and patron sign-up
- - Make site functionality depend on consent
- - Provide a centralized privacy dashboard where people can review their privacy settings/consent
- - Add email notifications every time consent is changed
- - Provide a way for people to *freeze* their account
- - Provide a way for people to object to their model data being used for research and statistics
- - Write and publish an overall privacy policy
- - Encrypt sensitive data in the database
+ - Entwurf von Datenschutzhinweisen für Profil-/Modell-/Patronendaten
+ - Integriere die Zustimmung in das Onboarding der Nutzer, die Modellerstellung und die Anmeldung der Gönner
+ - Die Funktionalität der Website von der Zustimmung abhängig machen
+ - Biete ein zentrales Datenschutz-Dashboard an, auf dem Menschen ihre Datenschutzeinstellungen/Zustimmung überprüfen können
+ - Füge E-Mail-Benachrichtigungen hinzu, wenn die Zustimmung geändert wird
+ - Biete eine Möglichkeit für Menschen, *ihr Konto einzufrieren*
+ - Biete eine Möglichkeit für Menschen, der Verwendung ihrer Modelldaten für Forschung und Statistik zu widersprechen
+ - Verfassen und Veröffentlichen einer allgemeinen Datenschutzrichtlinie
+ - Sensible Daten in der Datenbank verschlüsseln
 
-Seems like we've got a lot of work ahead of us.
+Es scheint, als hätten wir eine Menge Arbeit vor uns.
 
 ### Feedback
 
-It is my personal opinion that the GDPR is a good thing. But I want to hear from you about the changes outlined in this blog post.
+Ich persönlich bin der Meinung, dass die Datenschutzgrundverordnung eine gute Sache ist. Aber ich möchte von dir hören, was du zu den Änderungen in diesem Blogpost sagst.
 
-So please reach out with your feedback and comments. It is after all your data we're talking about.
+Bitte melde dich also mit deinem Feedback und deinen Kommentaren. Schließlich geht es hier um deine Daten.
 
 

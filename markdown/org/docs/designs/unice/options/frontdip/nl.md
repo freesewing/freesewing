@@ -2,7 +2,7 @@
 title: "Voorste taille dip"
 ---
 
-Together with the "Front curve" option, this option controls how much the front waist curves (revealing more or less skin). For this option, the curve is achieved by cutting away a crescent at the waist. (For fabric with horizontal stripes, some stripes would be interrupted around the center of the waist.)
+Samen met de optie "Voorkromming" bepaalt deze optie hoeveel de voorkant van de taille kromt (waardoor meer of minder huid zichtbaar wordt). Bij deze optie wordt de ronding bereikt door een halvemaan in de taille weg te snijden. (Bij stof met horizontale strepen worden sommige strepen onderbroken rond het midden van de taille).
 
 ## Effect van deze optie op het patroon
 

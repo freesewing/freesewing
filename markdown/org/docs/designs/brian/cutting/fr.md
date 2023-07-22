@@ -1,5 +1,5 @@
 ---
-title: "Brian body block: Cutting Instructions"
+title: "Bloc de carrosserie Brian : Instructions de coupe"
 ---
 
 **Tissu principal**

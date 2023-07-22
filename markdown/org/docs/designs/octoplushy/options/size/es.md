@@ -2,7 +2,7 @@
 title: "Talla"
 ---
 
-Octoplushy can be made in different sizes. The default has a head size of about 15cm, and 25cm long legs. This is a percentage of this default length.
+El octoplushy se puede fabricar en diferentes tamaños. Por defecto, la cabeza mide unos 15 cm y las patas 25 cm. Es un porcentaje de esta longitud por defecto.
 
 ## Efecto de esta opción en el patrón
 

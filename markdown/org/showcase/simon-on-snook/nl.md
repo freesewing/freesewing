@@ -13,9 +13,9 @@ designs:
 
 <Note>
 
-###### See the original on [@web_goddess](/users/web_goddess)'s blog
-This picture is from [this blog post](https://www.web-goddess.org/archive/18117) 
-on [web-goddess.org](https://www.web-goddess.org/).
+###### Bekijk het origineel op de blog van [@web_godin](/users/web_goddess)
+Deze afbeelding komt van [deze blogpost](https://www.web-goddess.org/archive/18117) 
+op [web-goddess.org](https://www.web-goddess.org/).
 
 Hij werd hier gepost met toestemming.
 

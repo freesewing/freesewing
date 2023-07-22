@@ -1,10 +1,10 @@
 ---
-title: "Bottom depth"
+title: "Límite inferior"
 ---
 
 ***
 
-Controls how far the bikini cup extends downwards
+Controla hasta qué punto la copa de bikini se extiende hacia abajo
 
 ## Efecto de esta opción en el patrón
 

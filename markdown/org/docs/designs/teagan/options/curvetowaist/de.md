@@ -1,8 +1,8 @@
 ---
-title: "Curve to waist"
+title: "Kurve zur Taille"
 ---
 
-Choose this option to draft Teagan to curve towards your waist before curving towards the hips.
+Wähle diese Option, damit sich Teagan zunächst in Richtung Taille und dann in Richtung Hüfte wölbt.
 
 Wenn das Taillenmass (plus Bequemlichkeitszugabe) kleiner ist als das Hüftmass (plus Zugabe) erzeugt das eine Sanduhrform, wie bei figurbetonten (fitted)- oder Damen- T-shirts üblich. (Im Gegensatz zu gerade geschnitten oder unisex).
 

@@ -2,7 +2,7 @@
 title: "Schulterabnäher"
 ---
 
-Whether or not to inlude a back shoulder dart to round the back.
+Ob du einen Schulterabnäher einfügen willst, um den Rücken abzurunden oder nicht.
 
 ## Effekt dieser Option auf das Schnittmuster
 

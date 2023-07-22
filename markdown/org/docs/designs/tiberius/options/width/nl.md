@@ -2,7 +2,7 @@
 title: "Breedte"
 ---
 
-Controls the width of the garment
+Bepaalt de breedte van het kledingstuk
 
 ## Effect van deze optie op het patroon
 

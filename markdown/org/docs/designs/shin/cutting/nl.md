@@ -1,5 +1,5 @@
 ---
-title: "Shin swim trunks: Cutting Instructions"
+title: "Shin zwembroek: Knip instructies"
 ---
 
 - Knip **2 rugpanden** met de goede kanten op elkaar

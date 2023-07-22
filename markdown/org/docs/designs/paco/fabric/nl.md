@@ -1,5 +1,5 @@
 ---
-title: "Paco pants: Fabric Options"
+title: "Paco broek: Stof opties"
 ---
 
 Deze werkt het best in een lichtere stof die redelijk goed doorvalt.

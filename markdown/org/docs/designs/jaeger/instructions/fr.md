@@ -1,5 +1,5 @@
 ---
-title: "Jaeger jacket: Sewing Instructions"
+title: "Veste Jaeger : Instructions de couture"
 ---
 
 <Note>
@@ -128,8 +128,8 @@ Découpez la toile de la poitrine. Alignez-le le long de la ligne de rouleau et 
 
 Désormais, bâtissez la toile avant et la pièce de la poitrine sur votre devant. Gardez à l'esprit que la toile n'a pas de marge de couture.
 
-> Baste it a bit inwards from the seam line so you can fold it away when sewing these seams later.  
-> You don't want your canvas to get caught in the seams.
+> Bâtis-le un peu vers l'intérieur de la ligne de couture pour pouvoir le replier lorsque tu coudras ces coutures plus tard.  
+> Tu ne veux pas que ta toile se prenne dans les coutures.
 
 #### Coupez vos genoux
 
@@ -213,43 +213,43 @@ Assurez-vous donc d'aligner les encoches. « C'est pour cela qu'ils sont là. »
 
 </Note>
 
-### Make the collar
-In order to look real crisp, the collar should be symetrical on both sides. About 5mm difference is already visible to a collar, so the more precise you do these steps, the better.
+### Fabrique le collier
+Pour avoir l'air vraiment craquant, le col doit être symétrique des deux côtés. Une différence d'environ 5 mm est déjà visible pour un collier, donc plus tu fais ces étapes avec précision, mieux c'est.
 
-### Add markings to both collars
-But both collars on top of each other, baste the corners together and cut the basting. Then use a marking pencil or some chalk to mark the edges of the collar. Measure 2 times to make sure the remaining collars and the location of the corners are 100% identical on both corners ![Mark the collar Edges](collarMarkings.svg)
+### Ajoute des marques aux deux colliers
+Mais les deux cols l'un sur l'autre, bâtis les coins ensemble et coupe le bâtis. Utilise ensuite un crayon de marquage ou un peu de craie pour marquer les bords du collier. Mesure 2 fois pour t'assurer que les cols restants et l'emplacement des coins sont identiques à 100 % sur les deux coins. ![Marque les bords du collier](collarMarkings.svg)
 
 
-#### Add interfacing or canvas to the outside collar stand and under collar
-Either use a fusable interfacing, or, if you want to be hardcore use a horsehair canvas. Stich it to the outside collor stand using the same technique as when adding canvas to the lapel. ![Add canvas to the collor](collarWithCanvas.svg)
+#### Ajoute de l'entoilage ou du canevas sur le pied de col extérieur et sous le col.
+Soit tu utilises un entoilage fusible, soit, si tu veux être hardcore, tu utilises une toile de crin. Couds-le au support extérieur du col en utilisant la même technique que pour l'ajout de la toile au revers. ![Ajoute une toile à la collection](collarWithCanvas.svg)
 
-#### Sew the outside collarstand to the under collar, and add to jacket
-Make sure the outside collarstand and under collar are alligend and sew together Sew the outside collarstand+undercollar to the neckline of the jacket Give small cuts in the fabric around the neckline to give it more ease Cut the seam allowance in the corners diagonally for a better fit
+#### Couds le pied de col extérieur au dessous du col, et ajoute-le à la veste.
+Assure-toi que le pied de col extérieur et le sous-col sont bien alignés et couds-les ensemble Couds le pied de col extérieur et le sous-col à l'encolure de la veste Fais de petites coupes dans le tissu autour de l'encolure pour lui donner plus d'aisance Coupe le surplus de couture dans les coins en diagonale pour qu'il soit mieux ajusté
 
-![make small cuts in SA around collar](collarCuts.svg)
+![fais de petites entailles dans le SA autour du col](collarCuts.svg)
 
 
 ### Manches
-Sew the uppersleeve to the undersleeve untill the split
+Couds la manche supérieure à la manche inférieure jusqu'à la séparation.
 
-#### Create the split at the eng of the sleeve
+#### Crée la fente à l'extrémité de la manche
 
-Sew the other side of the sleeves Turn the sleeves with the good side out Add the sleeves to the jacket
+Couds l'autre côté des manches Retourne les manches avec le bon côté Ajoute les manches à la veste.
 
 
-### Inside pocket
+### Poche intérieure
 <note>
-The inside pocket is a double welt pocket. Which is the same as the front pockets but without a cover.
-Please see images at the front pockets for details
+La poche intérieure est une double poche passepoilée. Ce qui est la même chose que les poches avant mais sans couvercle.
+Tu peux voir les images des poches avant pour plus de détails.
 </note>
 
-Locate the position of the pocket on the left inner lining with basting Add some fusible interfacting around the area Draw the pocket on the interfacing. Add the  welts to the upper and lower side of the pocket Sew the welts on the line on both sides of the pocket. Make use the welts end exactly on top of eachother. Cut the pocket entrance to about 1 or 2 cm from the end. Cut the last part diagonally so you get a fish bone fcut Turn the welts inside out, baste and press Turn the triangles inside out, baste and press Sew around the pocket to put everything in place Take the pocketbag, sew it to the lower welt and the other part to the upper welt (See: chest pocket)
+Repère la position de la poche sur la doublure intérieure gauche avec du bâti Ajoute de l'entoilage thermocollant autour de la zone Dessine la poche sur l'entoilage. Ajoute les ganses aux côtés supérieur et inférieur de la poche Couds les ganses sur la ligne des deux côtés de la poche. Assure-toi que les soudures se terminent exactement l'une sur l'autre. Coupe l'entrée de la poche à environ 1 ou 2 cm de l'extrémité. Coupe la dernière partie en diagonale pour obtenir une arête de poisson Retourne les ganses, bâtis et repasse Retourne les triangles, bâtis et repasse Couds autour de la poche pour tout mettre en place Prends le sac de poche, couds-le à la ganse inférieure et l'autre partie à la ganse supérieure (voir : poche de poitrine).
 
 ### Doublure
-Sew the lining back seam untill the split Sew the figure seams in the front parts Add the whole lining together (front, side, back) Add the from lining to the front facing. LEave about 5cm open from the bottom Close the shoulders Add the inside collar stand to the uppercollar and add to the lining jacket Make small cuts in the neckline and the corners Add upper to lower sleeves Add sleeves to lining jacket
+Couds la couture arrière de la doublure jusqu'à la fente Couds les coutures des figures dans les parties avant Ajoute toute la doublure ensemble (devant, côté, dos) Ajoute la doublure au parement avant. LE Laisse environ 5 cm ouverts à partir du bas Ferme les épaules Ajoute le pied de col intérieur au col supérieur et ajoute-le à la doublure de la veste Fais de petites coupes dans l'encolure et les coins Ajoute les manches supérieures aux manches inférieures Ajoute les manches à la doublure de la veste
 
-### Close it up
-But the jacket + lining jackets on top of each other with the good sides. Sew around the collar and continue all the way to the front facing Turn the jacket right side out Fold the sleeves in place (make sure they are not turned!!) Add the sleeves lining to the sleeves split Make sure the collars are straight on top of each other (they allign) and add the seam allowences to each other by hand. Add in a few places front SA to lining SA by hand from the inside of the jacket Create the backsplit and manually add the lining to the main fabric Add buttonholes and buttons
+### Ferme-le
+Mais les vestes + doublures se superposent avec les bons côtés. Couds autour du col et continue jusqu'à la face avant Retourne la veste sur l'endroit Plie les manches en place (assure-toi qu'elles ne sont pas retournées ! !!). Ajoute la doublure des manches à la fente des manches . Assure-toi que les cols sont bien droits l'un sur l'autre (ils s'alignent) et ajoute les marges de couture l'une à l'autre à la main. Ajoute à quelques endroits le SA du devant au SA de la doublure à la main depuis l'intérieur de la veste Crée la fente arrière et ajoute manuellement la doublure au tissu principal Ajoute les boutonnières et les boutons.
 
 
 

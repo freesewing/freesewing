@@ -1,10 +1,10 @@
 ---
-title: "Armhole Dart Position"
+title: "Positie armsgatnaad"
 ---
 
 ***
 
-The **Armhole Dart Position** option allows you to move the position of the dart/princess seam.
+Met de optie **Armhole Dart Position** kun je de positie van de figuurnaad verplaatsen.
 
 ## Effect van deze optie op het patroon
 

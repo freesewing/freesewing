@@ -2,7 +2,7 @@
 title: "Grootte schouder neep"
 ---
 
-The size of the back shoulder dart.
+De grootte van de rugschouderpas.
 
 ## Effect van deze optie op het patroon
 

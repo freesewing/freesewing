@@ -1,5 +1,5 @@
 ---
-title: "Unice undies: Fabric options"
+title: "Unice onderbroek: Stof opties"
 ---
 
 Je hebt een stof nodig met veel horizontale en verticale stretch (soms "vierweg stretch") voor dit patroon. Bij voorkeur iets dat comfortabel, zacht en adembaar is.

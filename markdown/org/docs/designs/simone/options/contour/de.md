@@ -4,8 +4,8 @@ title: "Kontur"
 
 Legt fest, wie eng anliegend der Schnitt unterhalb der Brust gestaltet wird.
 
-- Increase this option to sharpen the curve below the bust darts
-- Decrease this option to loosen the curve below the bust darts
+- Erhöhe diese Option, um die Kurve unter den Brustabnähern zu verstärken
+- Verringere diese Option, um die Kurve unter den Brustabnähern zu lockern
 
 ## Effekt dieser Option auf das Schnittmuster
 

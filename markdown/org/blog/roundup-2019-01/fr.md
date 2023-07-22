@@ -1,85 +1,85 @@
 ---
 author: "joostdecock"
-caption: "Your login background for February"
+caption: "Ton arrière-plan de connexion pour le mois de février"
 date: "2019-01-31"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/26bf3d41513702ad361b5a0f15dcff2350cc852b-1920x1440.jpg"
-intro: "Is it really the end of January? Already?"
-title: "Monthly roundup - January 2019: The big beta update"
+intro: "Est-ce vraiment la fin du mois de janvier ? Déjà ?"
+title: "Récapitulatif mensuel - janvier 2019 : la grande mise à jour de la bêta."
 ---
 
 
-Is it really the end of January? Already?
+Est-ce vraiment la fin du mois de janvier ? Déjà ?
 
-After using the Xmas break to port [Simon](/en/patterns/simon) — not exactly the most trivial of patterns — I'm fairly confident that all patterns will be ok. Simon has 61 options, so if it works for Simon, it will work for all patterns, or at least that's how I see it.
+Après avoir profité des vacances de Noël pour porter [Simon](/en/patterns/simon) - n'étant pas exactement le motif le plus trivial - je suis assez confiant dans le fait que tous les motifs seront corrects. Simon a 61 options, donc si ça marche pour Simon, ça marchera pour tous les patrons, ou du moins c'est comme ça que je le vois.
 
-Seven patterns have now been ported. That might not seem like much, but it does get rather tedious every time we make a change that touches the patterns, as we then have 7 to update. So I decided to put the pattern porting on hold for a while, and instead focus my attention on [our new beta website](/en/).
+Sept modèles ont maintenant été portés. Cela peut sembler peu, mais cela devient plutôt fastidieux chaque fois que nous faisons un changement qui touche les modèles, car nous en avons alors 7 à mettre à jour. J'ai donc décidé de mettre le portage des patrons en attente pendant un certain temps, et de concentrer mon attention sur [notre nouveau site Web bêta](/en/).
 
-## Gatsby is now our static site generator
+## Gatsby est maintenant notre générateur de sites statiques
 
-The new website is built on top of [Gatsby](https://www.gatsbyjs.org/), a static site generator written in JavaScript and powered by [React](https://reactjs.org/). We've been fairly committed to [the JAMstack architecture](/en/blog/freesewing-goes-jamstack) here at freesewing.org.
+Le nouveau site web est construit au-dessus de [Gatsby](https://www.gatsbyjs.org/), un générateur de site statique écrit en JavaScript et alimenté par [React](https://reactjs.org/). Nous nous sommes beaucoup engagés dans [l'architecture JAMstack](/en/blog/freesewing-goes-jamstack) ici à freesewing.org.
 
-It's our third rewrite of the site since we launched freesewing.org and I admit that that's a bit much. As in, I really hope the site we're building now will stick around for a while.
+C'est notre troisième réécriture du site depuis que nous avons lancé freesewing.org et j'avoue que c'est un peu beaucoup. J'espère vraiment que le site que nous sommes en train de construire restera en place pendant un certain temps.
 
-Then again, rapid iterations are a good thing, especially as we were still finding our feet. We do what it takes to get it right, and while the question of *what's the purpose of this all* is perhaps on some of your minds, I feel like beta.freesewing.org has gotten to the point where it answers that question.
+Mais encore une fois, les itérations rapides sont une bonne chose, d'autant plus que nous étions encore en train de trouver nos marques. Nous faisons ce qu'il faut pour bien faire, et bien que la question de *quel est le but de tout cela* soit peut-être dans l'esprit de certains d'entre vous, j'ai l'impression que beta.freesewing.org est arrivé à un point où il répond à cette question.
 
-## (almost) everything happens in your browser now
+## (presque) tout se passe maintenant dans ton navigateur
 
-We rewrote our platform in JavaScript. That thing that runs in your browser. Previously, whenever you wanted to change the style of your cuffs or something, we needed to send your wishes to a backend, who'd then generate a draft and send it back.
+Nous avons réécrit notre plateforme en JavaScript. Cette chose qui fonctionne dans ton navigateur. Auparavant, lorsque tu voulais changer le style de tes manchettes ou autre, nous avions besoin de pour envoyer tes souhaits à un backend, qui générait alors un projet et le renvoyait.
 
-Now, when you tweak an option, we don't need a round-trip to a backend to show you what things look like. Because everything runs in your browser. So if you change something, it just updates right there on your screen.
+Maintenant, lorsque tu modifies une option, nous n'avons pas besoin de faire un aller-retour vers un backend pour te montrer à quoi ressemblent les choses. Parce que tout fonctionne dans ton navigateur. Ainsi, si tu changes quelque chose, , la mise à jour se fait directement sur ton écran.
 
-That's sort of what we had in mind all along, but it's still a powerful moment when all the pieces finally start to fall in place and things actually work.
+C'est en quelque sorte ce que nous avions en tête depuis le début, mais c'est toujours un moment fort lorsque toutes les pièces commencent enfin à se mettre en place et que les choses fonctionnent vraiment.
 
-That being said, not everything runs in the browser yet. Specifically turning your patterns into PDFs is something that we handle in the backend as we're still working on that part.
+Cela dit, tout ne fonctionne pas encore dans le navigateur. La transformation de tes modèles en PDF est quelque chose que nous gérons en arrière-plan, car nous travaillons toujours sur sur cette partie.
 
-## No account needed
+## Aucun compte n'est nécessaire
 
-Our [new demo](https://beta.freesewing.org/en/demo) allows you to kick the tires without the need to sign up. When signing up, there's no need to create an account with password, as we now support signing up with your existing Google or GitHub account.
+Notre [nouvelle démo](https://beta.freesewing.org/en/demo) te permet d'essayer sans avoir besoin de t'inscrire. Lors de l'inscription, il n'est pas nécessaire de créer un compte avec un mot de passe, car prend désormais en charge l'inscription avec ton compte Google ou GitHub existant.
 
-People who already have an account will be able to login with their Google or GitHub account, provided the email address of their freesewing account matches.
+Les personnes qui ont déjà un compte pourront se connecter avec leur compte Google ou GitHub, à condition que l'adresse e-mail de leur compte freesewing corresponde.
 
-## You can change everything
+## Tu peux tout changer
 
-We've made many changes to try and make it easier for developers to get started with freesewing. But we've also made changes for people who contribute in other ways.
+Nous avons apporté de nombreux changements pour que les développeurs puissent commencer plus facilement à utiliser freesewing. Mais nous avons également apporté des changements pour les personnes qui contribuent d'une autre manière.
 
-All our (markdown) content can now be edited on the site. No GitHub account needed, just click the little pencil icon next to the title, submit your changes, and we're good.
+Tout notre contenu (markdown) peut maintenant être édité sur le site. Pas besoin de compte GitHub, il suffit de cliquer sur la petite icône en forme de crayon à côté du titre, de soumettre tes modifications, et le tour est joué.
 
-Same good news for translators. All the translations can also be edited online. We've also updated our documentation for translators and editors to reflect this new simplified workflow.
+Même bonne nouvelle pour les traducteurs. Toutes les traductions peuvent également être éditées en ligne. Nous avons également mis à jour notre documentation pour les traducteurs et les éditeurs afin de refléter ce nouveau flux de travail simplifié.
 
-## Custom layouts
+## Mises en page personnalisées
 
-The login/signup with GitHub/Google accounts was a feature requested by users, and so is this one: We now support the creation of a custom layout for your pattern. Here's how it works:
+La connexion/signature avec les comptes GitHub/Google était une fonctionnalité demandée par les utilisateurs, et celle-ci l'est aussi : Nous prenons désormais en charge la création d'une mise en page personnalisée pour ton modèle. Voici comment cela fonctionne :
 
-When a pattern is drafted, the different pattern parts are laid out on the pattern automatically. Often that's great, but sometimes you wish your could make some changes. For example, you may want to get your pattern printed in a copy shop so you want to make sure it fits on the width of their roll of paper. Or you want to save some paper by squeezing some parts together.
+Lorsqu'un patron est dessiné, les différentes parties du patron sont disposées sur le patron automatiquement. Souvent, c'est très bien, mais parfois, tu aimerais pouvoir faire quelques changements. Par exemple, si tu veux faire imprimer ton patron dans un magasin de photocopie, tu dois t'assurer qu'il correspond à la largeur de leur rouleau de papier. Ou bien tu veux économiser du papier en pressant certaines parties ensemble.
 
-It's in early beta (as in, it still breaks from time to time) but you can now change the width of your pattern, move your pattern parts around, rotate them, or even mirror them vertically or horizontally to suit whatever your plans are. All of that can be done in your browser, on the site.
+Il s'agit d'une version bêta précoce (c'est-à-dire qu'il y a encore des pannes de temps en temps), mais tu peux maintenant changer la largeur de ton motif, déplacer les parties de ton motif, les faire pivoter ou même les mettre en miroir verticalement ou horizontalement pour qu'elles correspondent à tes plans. Tout cela peut se faire dans ton navigateur, sur le site.
 
 ## Documentation pour les développeurs
 
-We've also integrated our developer documentation on the new site. Until yesterday, documentation about the new platform was hosted on a separate site, but now, we've ported the documentation and everything is integrated in our (future) website.
+Nous avons également intégré notre documentation pour les développeurs sur le nouveau site. Jusqu'à hier, la documentation sur la nouvelle plateforme était hébergée sur un site séparé, mais maintenant, nous avons porté la documentation et tout est intégré dans notre (futur) site web.
 
-## We won't migrate your drafts
+## Nous ne migrerons pas tes brouillons
 
-Time to talk about the things we won't be doing: We will not migrate your existing drafts. The new platform is just too different. There is no way for us to migrate your existing drafts in a way that makes sense. So, when the day comes we switch over to the new site, your drafts will no longer be there.
+Il est temps de parler des choses que nous ne ferons pas : Nous ne migrerons pas tes brouillons existants. La nouvelle plateforme est tout simplement trop différente. Il n'y a aucun moyen pour nous de migrer tes brouillons existants d'une manière qui ait du sens. Ainsi, le jour où nous basculerons sur le nouveau site, tes brouillons ne seront plus là.
 
-You can download all your data from our site, but if you don't do that yourself, your v1 drafts will be gone.
+Tu peux télécharger toutes tes données sur notre site, mais si tu ne le fais pas toi-même, tes brouillons v1 disparaîtront.
 
-## No more comments
+## Plus de commentaires
 
-I have decided to not implement a comments feature because I feel having them raises the wrong expectations.
+J'ai décidé de ne pas mettre en place une fonction de commentaires parce que je pense que le fait de les avoir sur suscite de mauvaises attentes.
 
-Freesewing is not another [Pattern Review](https://sewing.patternreview.com/), or [Thread and Needles](https://www.threadandneedles.org/), or [The Fold Line](https://thefoldline.com/), or [Textillia](https://www.textillia.com/), or [Kollabora](http://www.kollabora.com/), or whatever the *Raverly of sewing* du jour is.
+Freesewing n'est pas une autre [Pattern Review](https://sewing.patternreview.com/), ou [Thread and Needles](https://www.threadandneedles.org/), ou [The Fold Line](https://thefoldline.com/), ou [Textillia](https://www.textillia.com/), ou [Kollabora](http://www.kollabora.com/), ou tout autre *Raverly de la couture* du jour.
 
-I don't want freesewing.org to compete with these websites. They do their thing, we do ours. Their value proposition is the community, ours is not. That doesn't mean our community isn't valuable. It just means that we don't need our community to gather on our website. Our community exists wherever it goes. Be it Twitter, Instagram, Reddit, blogs, or some social network that I've never even heard of. It doesn't matter, it's all good.
+Je ne veux pas que freesewing.org soit en concurrence avec ces sites. Ils font leur truc, nous faisons le nôtre. Leur proposition de valeur est la communauté, la nôtre ne l'est pas. Cela ne veut pas dire que notre communauté n'a pas de valeur. Cela signifie simplement que nous n'avons pas besoin que notre communauté se réunisse sur notre site Web. Notre communauté existe partout où elle va . Que ce soit Twitter, Instagram, Reddit, des blogs ou un autre réseau social dont je n'ai jamais même entendu parler. Ce n'est pas grave, tout va bien.
 
-Building a community on the website takes time, it takes effort, it takes work. And we simply don't have the bandwidth for that. So I'd rather we focus on [our core mission](/en/docs/faq/#whats-your-end-game), and let people talk about freesewing wherever it is they talk about things.
+Construire une communauté sur le site web demande du temps, des efforts, du travail. Et nous n'avons tout simplement pas la bande passante pour cela. Je préfère donc que nous nous concentrions sur [notre mission principale](/en/docs/faq/#whats-your-end-game), et que nous laissions les gens parler de freesewing partout où ils parlent de choses.
 
-## Paris anyone?
+## Quelqu'un à Paris ?
 
-I've mentioned I'd like to do some sort of meetup this year, and while I haven't really had any time to work out what that would mean, we might end up meeting anyway.
+J'ai mentionné que j'aimerais organiser une sorte de rencontre cette année, et bien que je n'aie pas vraiment eu le temps de réfléchir à ce que cela signifierait, nous pourrions finir par nous rencontrer de toute façon.
 
-Specifically, [Charlotte](https://englishgirlathome.com/) (aka English girl at home) and [Carmen](https://www.carmencitab.com/) (aka CarmencitaB) are organising the [Paris Sewcial](https://englishgirlathome.com/2019/01/23/paris-sewcial-paris-coud-2019-registration-open/) meetup in May. I'll be heading to Paris to be part of that, so if you are too, we'll meet up there.
+Plus précisément, [Charlotte](https://englishgirlathome.com/) (aka English girl at home) et [Carmen](https://www.carmencitab.com/) (aka CarmencitaB) organisent le meetup [Paris Sewcial](https://englishgirlathome.com/2019/01/23/paris-sewcial-paris-coud-2019-registration-open/) en mai. Je me rendrai à Paris pour y participer, alors si vous y êtes aussi, nous nous retrouverons là-bas.
 
-Registration is [right this way](https://www.eventbrite.co.uk/e/paris-sewcial-paris-coud-registration-54520802187). 
+L'inscription se fait [par ici](https://www.eventbrite.co.uk/e/paris-sewcial-paris-coud-registration-54520802187). 
 
 

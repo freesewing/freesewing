@@ -1,5 +1,5 @@
 ---
-title: "Sven sweatshirt: What You Need"
+title: "Світшот Sven: Що вам потрібно"
 ---
 
 Щоб зробити Свена, вам знадобиться наступне:

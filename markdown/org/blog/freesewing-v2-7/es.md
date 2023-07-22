@@ -1,75 +1,75 @@
 ---
 author: "joostdecock"
-caption: "Photo by Deeana Creates from Pexels"
+caption: "Foto de Deeana Creates de Pexels"
 date: "2020-07-12"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f04cc6c50a8e5f08f3ebd6c3d4903fb3055c9a01-1920x1280.jpg"
-intro: "We've just release FreeSewing v2.7 🎉"
-title: "FreeSewing v2.7: Titan, changes to measurements, and a long list of improvements"
+intro: "Acabamos de lanzar FreeSewing v2.7 🎉"
+title: "FreeSewing v2.7: Titán, cambios en las medidas y una larga lista de mejoras"
 ---
 
 
-We've just release FreeSewing v2.7 🎉
+Acabamos de lanzar FreeSewing v2.7 🎉
 
-There's a lot of work that went into this release, and unfortunately it  also will cause some breaking changes to your existing patterns and people, but it's all for the better.
+Se ha invertido mucho trabajo en esta versión y, por desgracia, también provocará algunos cambios de última hora en tus patrones y personas actuales, pero todo es para mejor.
 
-Let's have a look at what's new:
+Echemos un vistazo a las novedades:
 
 ## Titan, patrón base de pantalón
 
-I have lost count of the number of times I have started working on a trouser block over the last couple of years. It's something that's been on my to-do list for a long time, yet despite several attempts at making it happen, I hadn't come up with something that I was happy with.
+He perdido la cuenta del número de veces que me he puesto a trabajar en un bloque de pantalón en los últimos dos años. Es algo que llevaba mucho tiempo en mi lista de cosas por hacer, pero a pesar de varios intentos de hacerlo realidad, no había conseguido algo con lo que estuviera contenta.
 
-That's because designing trouser patterns is hard. Making sure things fit, while also guaranteeing that inseam, outseam, and cross seam are all the same length is no walk in the park. Especially if you want a pattern that will seamlessly adapt to different sizes and models.
+Eso es porque diseñar patrones de pantalones es difícil. Asegurarse de que todo encaja, garantizando al mismo tiempo que la entrepierna, la costura exterior y la costura transversal tienen la misma longitud, no es un paseo por el parque. Sobre todo si quieres un patrón que se adapte perfectamente a diferentes tallas y modelos.
 
-It would have probably lingered on my to-do list a while longer, but in February, Debra reached out to me and proposed we would come up with a pants sloper together. I love teaming up with people because it a great way to stay motivated, so over the next 4 months or so, we worked on what Debra has named [Titan](/designs/titan/), a dart-free unisex trouser block. I'd like to thank her for her patience and contributions to make Titan a success
+Probablemente habría permanecido en mi lista de tareas pendientes un tiempo más, pero en febrero, Debra se puso en contacto conmigo y me propuso que ideáramos juntas un pantalón sloper. Me encanta formar equipo con la gente porque es una forma estupenda de mantener la motivación, así que durante los 4 meses siguientes más o menos, trabajamos en lo que Debra ha llamado [Titan](/designs/titan/), un bloque de pantalón unisex sin dardos. Me gustaría agradecerle su paciencia y sus contribuciones para que Titan sea un éxito
 
 <Note>
 
-###### Help us out: Make a Titan muslin 
+###### Ayúdanos: Haz una muselina Titán 
 
-A block is just that, a block or sloper. Our next steps are obviously this spin this into a number of different trouser patterns. Before we get to that though, we'd like to see how Titan performs on a variety of bodies.
+Un bloque es eso, un bloque o pendiente. Nuestros próximos pasos son, obviamente, convertir esto en una serie de patrones de pantalones diferentes. Pero antes de llegar a eso, nos gustaría ver cómo se comporta la Titan en distintos cuerpos.
 
-So if you could whip up a muslin of a made-to-measure Titan and let us know how it went, that would be wonderful.
+Así que si pudieras hacer una muselina de un Titán a medida y contarnos cómo te ha ido, sería maravilloso.
 
 </Note>
 
-## Shoulder slope — again — and other changes to measurements
+## Pendiente del hombro - otra vez - y otros cambios en las medidas
 
-We've made changes to the different measurements on the site. The roughly fall into 3 categories:
+Hemos hecho cambios en las diferentes medidas del sitio. A grandes rasgos, se dividen en 3 categorías:
 
- - We've made *waist* the basis for vertical measurements
- - We've changed the shoulder slope measurement
- - We've simplified the language and terms
+ - Hemos hecho de *cintura* la base de las medidas verticales
+ - Hemos cambiado la medida de la pendiente del arcén
+ - Hemos simplificado el lenguaje y los términos
 
-As a result, some vertical measurements that were not based on the waist are not gone (hips to upper leg for example). Other measurements have been renamed under the hood to make things simpler, but unless you're a developer, you don't need to worry about that.
+Como resultado, algunas medidas verticales que no se basaban en la cintura no desaparecen (de la cadera a la parte superior de la pierna, por ejemplo). Otras medidas se han renombrado bajo el capó para simplificar las cosas, pero a menos que seas desarrollador, no necesitas preocuparte por eso.
 
-An important change is the one we made to the shoulder slope measurement. It's historically been a measurement that is hard to measure, and the changes we've made before to try to address that were in retrospect a bad idea.
+Un cambio importante es el que hicimos en la medición de la pendiente del hombro. Históricamente ha sido una medida difícil de medir, y los cambios que hemos hecho antes para tratar de resolverlo fueron, en retrospectiva, una mala idea.
 
-We've changed it again, but this time around, shoulder slope is measured as you would expect a slope to be measured: in degrees.
+Lo hemos vuelto a cambiar, pero esta vez la inclinación del hombro se mide como cabría esperar que se midiera una inclinación: en grados.
 
-This required some changes as up until now all measurements used the same units, but things should be ok now.
+Esto requirió algunos cambios, ya que hasta ahora todas las mediciones utilizaban las mismas unidades, pero ahora las cosas deberían ir bien.
 
-As a result of all these changes and measurements, there's two things you should know:
+Como resultado de todos estos cambios y medidas, hay dos cosas que debes saber:
 
- - The people you have in your account will have their measurements updated (when the names changed) or removed (where the measurement is no longer used, or we changed how to measure it)
- - Patterns that you have saved in your account that use some of the changed measurements will no longer work. However, we've kept them in your account so that if you want, you can extract the data, and re-draft them for the new measurements. Feel free to reach out if you need assistance with that.
+ - Las personas que tengas en tu cuenta tendrán sus medidas actualizadas (cuando los nombres cambien) o eliminadas (cuando la medida ya no se utilice, o hayamos cambiado la forma de medirla).
+ - Los patrones que tengas guardados en tu cuenta y que utilicen algunas de las medidas modificadas dejarán de funcionar. Sin embargo, los hemos conservado en tu cuenta para que, si quieres, puedas extraer los datos y volver a redactarlos para las nuevas medidas. No dudes en ponerte en contacto con nosotros si necesitas ayuda al respecto.
 
 <Tip>
 
-We've migrated our backend to these new measurements, but you are likely to still have some of the old stuff cached in your profile.  
-To get around this, you should probably [reload your account](/account/reload/).
+Hemos migrado nuestro backend a estas nuevas medidas, pero es probable que aún tengas algunas de las cosas antiguas almacenadas en caché en tu perfil.  
+Para evitarlo, probablemente deberías [recargar tu cuenta](/account/reload/).
 
 </Tip>
 
-## Frontend changes
+## Cambios en el frontend
 
-We've made a few changes to the website too.
+También hemos hecho algunos cambios en el sitio web.
 
- - We've added a [pattern notation guide](/docs/various/notation/) to take the guesswork out of what those markings on your pattern mean.
- - We've added a [reload account](/account/actions/reload/) page to help you avoid issues due to cached account data
- - We've changed the styling of the different sizes when you compare a pattern, as well as included a legend showing which outline corresponds to which size.
+ - Hemos añadido una guía de notación de patrones [](/docs/various/notation/) para que no tengas que adivinar qué significan esas marcas en tu patrón.
+ - Hemos añadido una página [de recarga de la cuenta](/account/actions/reload/) para ayudarte a evitar problemas debidos a los datos de la cuenta almacenados en caché.
+ - Hemos cambiado el estilo de las distintas tallas cuando comparas un patrón, además de incluir una leyenda que muestra qué contorno corresponde a cada talla.
 
 
-## And many more changes under the hood
+## Y muchos más cambios bajo el capó
 
-As I said, a lot of work went into this release. See our [monorepo changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md) for all the details.
+Como ya he dicho, se ha invertido mucho trabajo en esta versión. Consulta nuestro [monorepo changelog](https://github.com/freesewing/freesewing/blob/develop/CHANGELOG.md) para conocer todos los detalles.
 

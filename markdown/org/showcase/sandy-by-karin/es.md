@@ -1,18 +1,18 @@
 ---
-maker: "unknown"
-caption: "Karin poses by the water in her new skirt"
+maker: "desconocido"
+caption: "Karin posa junto al agua con su nueva falda"
 date: "2018-11-18"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/6e2a1b1b2b2935542f32a362aa7876deb36f89fd-2000x1500.jpg"
-intro: "Sandy by Karin"
-title: "Sandy by Karin"
+intro: "Sandy por Karin"
+title: "Sandy por Karin"
 designs:
-  - "sandy"
+  - "arena"
 ---
 
-After [her previous showcase of Hugo](/showcase/hugo-by-karin), Karin is back with another freesewing make: this Sandy skirt.
+Tras [su anterior escaparate de Hugo](/showcase/hugo-by-karin), Karin vuelve con otra confección de costura libre: esta falda Sandy.
 
-![Another view](https://posts.freesewing.org/uploads/sandy_by_karin_view2_8711bae2d1.jpg "Another view")
+![Otro punto de vista](https://posts.freesewing.org/uploads/sandy_by_karin_view2_8711bae2d1.jpg "Otro punto de vista")
 
-![A view of the lining](https://posts.freesewing.org/uploads/sandy_by_karin_view3_0b7fdc87cd.jpg "A view of the lining")
+![Una vista del revestimiento](https://posts.freesewing.org/uploads/sandy_by_karin_view3_0b7fdc87cd.jpg "Una vista del revestimiento")
 
-More details [on Karin's blog](https://www.karinkay.nl/sandy-een-gratis-patroon-voor-een-cirkelrok-op-maat/) (in Dutch);
+Más detalles [en el blog de Karin](https://www.karinkay.nl/sandy-een-gratis-patroon-voor-een-cirkelrok-op-maat/) (en neerlandés);

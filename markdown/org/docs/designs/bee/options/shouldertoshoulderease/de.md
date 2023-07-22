@@ -1,10 +1,10 @@
 ---
-title: "Shoulder to Shoulder ease (Bella)"
+title: "Leichtigkeit von Schulter zu Schulter (Bella)"
 ---
 
 ***
 
-Controls the shoulder to shoulder ease in the underlying Bella block Bee is based on.
+Steuert die Schulterfreiheit in dem zugrunde liegenden Bella-Block, auf dem Bee basiert.
 
 ## Effekt dieser Option auf das Schnittmuster
 

@@ -1,10 +1,10 @@
 ---
-title: "Side curve"
+title: "Curva lateral exterior"
 ---
 
 ***
 
-Controls the curvature of the side of the bikini cup
+Controla la curvatura del lado exterior de la copa del bikini
 
 ## Efecto de esta opción en el patrón
 

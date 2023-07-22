@@ -1,5 +1,5 @@
 ---
-title: "Simon shirt: Sewing Instructions"
+title: "Camisa Simon: Instrucciones de costura"
 ---
 
 <Tip>
@@ -17,7 +17,7 @@ de Kelly: [#simonsayssew con Kelly Hogaboom y Julian Collins](https://kelly.Firs
 
 ### Paso 1: Fusionar interfaz
 
-![Interfaz de corte fundido](1a.png) ![Fuse collar interfacing](1b.png)
+![Interfaz de corte fundido](1a.png) ![Entretela de cuello fusible](1b.png)
 
 #### Interfaz de prensa a tazas
 
@@ -31,11 +31,11 @@ Para cada tazón, presione la pieza de enganche hacia el lado malo de la pieza.
 
 > Dependiendo de qué corte haya elegido, la forma del corte será diferente.
 > 
-> In the first illustration, you can see both a round barrel cuff and a French cuff as examples.
+> En la primera ilustración, puedes ver como ejemplos un puño redondo de barril y un puño francés.
 > 
 > En el futuro, el cubo redondo se utilizará en las ilustraciones, pero el proceso es el mismo para las otras tazas.
 
-#### Press interfacing to collar, undercollar and collar stand
+#### Plancha la entretela en el cuello, el subcuello y el soporte del cuello
 
 Para hacer tu collar, tienes que cortar un collar, un collar y dos soportes de collar. Todo esto tanto en tela como en interfaces.
 
@@ -49,7 +49,7 @@ Para cada picoteo, presione la pieza de enlace hacia el lado malo.
 
 Coloque ambas partes del corte (una con interfaces, otra sin interfaz) junto con los lados buenos, y coser juntos en la costura estándar.
 
-> **Ensure you**
+> **Asegúrate de que**
 > 
 > - No coser juntos el lado que nos uniremos a la manga más tarde
 > - Detener en la distancia de costura desde el borde del lado de la manga
@@ -58,13 +58,13 @@ Coloque ambas partes del corte (una con interfaces, otra sin interfaz) junto con
 
 ![Recortar la costura](2b.png)
 
-Before we flip your cuff over, we need to trim back the seam allowance to remove bulk.
+Antes de darle la vuelta al puño, tenemos que recortar el margen de costura para eliminar el bulto.
 
 #### Presione la costura posterior
 
 ![Presione la costura posterior](2c.png)
 
-Fold back the seam allowances on each side of the cuff where the cuff attaches to the sleeve, and press them down.
+Dobla hacia atrás los márgenes de costura de cada lado del puño, donde éste se une a la manga, y presiónalos.
 
 > Si te has costado demasiado a lo largo del borde antes, tendrás que deseleccionar unas cuantas stitches.
 
@@ -74,7 +74,7 @@ Fold back the seam allowances on each side of the cuff where the cuff attaches t
 
 Invierte el coño con los lados buenos, y dale una buena prensa.
 
-> When pressing your cuffs, make sure to roll the seam a bit to the backside of the cuff to guarantee that the inner fabric of the cuff is not visible.
+> Cuando planches los puños, asegúrate de enrollar un poco la costura hacia el revés del puño para garantizar que no se vea la tela interior del puño.
 
 Ahora puedes dejar tus cortes a un lado, los adjuntaremos más tarde.
 
@@ -84,13 +84,13 @@ Ahora puedes dejar tus cortes a un lado, los adjuntaremos más tarde.
 
 ![Difunde cuello y cuello bajo](3a.png)
 
-Place both collar parts with the _good sides together_, and sew them together at the standard seam allowance.
+Coloca las dos partes del cuello con los lados bien juntos __, y cóselas con el margen de costura estándar.
 
 #### Recortar permisos de costura
 
 ![Recortar la costura](3b.png)
 
-Before we flip your collar over, we need to trim back the seam allowance to remove bulk.
+Antes de darle la vuelta al cuello, tenemos que recortar el margen de costura para eliminar el bulto.
 
 #### Gira el collar y presiona
 
@@ -120,7 +120,7 @@ Marque el punto medio de su cuello y su cuello esté con un pin. El punto medio 
 
 Primero coloca un soporte de cuello con el lado bueno, luego tu cuello con el guante hacia arriba (y el lado no coser en la parte superior), y finalmente el segundo cuello con el lado bueno abajo.
 
-Your collar should sit between your two collar stands, and the middles (where you placed your pin) should be aligned.
+Tu collar debe asentarse entre los dos soportes, y los centros (donde colocaste el alfiler) deben estar alineados.
 
 > La forma en que las cosas se vean dependerá un poco de tus opciones de cuello, pero en general su cuello se va a doblar hacia abajo, y su soporte de cuello se doblará hacia arriba.
 > 
@@ -132,7 +132,7 @@ Ahora, comience a tocar desde este alfiler y trabaje hasta el rincón del cuello
 
 Cuando llegues a la esquina de tu cuello, sigue bajando y golpeando el final de ambas paradas de cuello juntos.
 
-When you've done one side, start from your pin in the middle again and do the other side. Cuando termines de cocido, puedes sacar el pin.
+Cuando hayas hecho un lado, vuelve a empezar desde tu clavija en el centro y haz el otro lado. Cuando termines de cocido, puedes sacar el pin.
 
 #### Difunde tu cuello hasta los stands de cuello
 
@@ -148,7 +148,7 @@ Doblar la costura de su cuello en el lado no coser y presionarlo hacia abajo.
 
 > En la parte central, pulsar hacia abajo la franquicia de costura será fácil. Pero hacia las puntas de su cuello, hacerlo será complicado sin pulsar pliegues en su cuello.
 > 
-> Press it as best as you can without making folds in your collar. Presionaremos esto de nuevo después de voltear el cuello.
+> Presiónalo lo mejor que puedas sin hacer pliegues en el cuello. Presionaremos esto de nuevo después de voltear el cuello.
 
 #### Da la vuelta al collar y presiona
 
@@ -174,7 +174,7 @@ Coloque un yugo con el lado bueno arriba. Por encima de eso, coloque la espalda 
 
 Por último, coloque su segundo yugo en la parte superior de la espalda, pero con el lado bueno abajo.
 
-Your back should now be sandwiched between the good sides of your two yokes.
+Tu espalda debe estar ahora entre los lados buenos de tus dos yugos.
 
 Si ese es el caso, coser en su lugar a lo largo de la costura/yuga, asegurándose de respetar la costura permitida.
 
@@ -188,7 +188,7 @@ Cuando hayas terminado, no olvides darle una buena prensa para que la costura se
 
 Con tus yemas pegados a la espalda, vamos a doblar a lo largo de la costura que acabamos de hacer, en el lado del yugo.
 
-> Doble el yugo interior fuera del camino. Our edge stitching will catch the outer yoke, back and all the seam allowances, but not the inner yoke.
+> Doble el yugo interior fuera del camino. Nuestra costura de borde cogerá el canesú exterior, la espalda y todos los márgenes de costura, pero no el canesú interior.
 
 Sólo coser justo al lado de la costura uniendo el yugo exterior a la espalda.
 
@@ -250,7 +250,7 @@ Cuando estés feliz, presiona la placa plegada.
 
 Desde el lado bueno de la camiseta, coser la placa plegada cruzando la zanja.
 
-Para ello, coser exactamente encima de su costura anterior. Since you folded the fabric of your placket a bit past this seam, it will get caught at the back, fixing your folded placket in place, and locking the seam allowance inside.
+Para ello, coser exactamente encima de su costura anterior. Como has doblado la tela de la tapeta un poco más allá de esta costura, se enganchará en la parte posterior, fijando tu tapeta doblada en su sitio y bloqueando el margen de costura en el interior.
 
 ### Paso 10: Prepara el conjunto de posición del botón
 
@@ -328,7 +328,7 @@ Ahora presione a ese bebé. Sabes que quieres.
 
 > **Cosas un burrito**
 > 
-> We are going to close the shoulder seams with a technique that is commonly known as the **burrito method**.
+> Vamos a cerrar las costuras de los hombros con una técnica que se conoce comúnmente como el método del burrito ****.
 > 
 > Si estás familiarizado con el método burrito, ya sabes qué hacer. Si no es así, sigue leyendo una manera inteligente de cerrar las costuras hombreras de tu camisa mientras bloquea todos los bordes inacabados fuera de la vista.
 
@@ -354,7 +354,7 @@ Anclarlos en su lugar, y luego coser las costuras del hombro, Asegúrate de mant
 
 > Asegúrese de alinear la línea de costura real. Debido a los ángulos desiguales en la apertura del cuello, el borde de la tela es a menudo más largo en un lado que en el otro.
 > 
-> However, the seamlines are the same length, so make sure to match them carefully using the notches.
+> Sin embargo, las líneas de costura tienen la misma longitud, así que asegúrate de hacerlas coincidir cuidadosamente utilizando las muescas.
 
 #### Voltear hacia fuera a través de la apertura del cuello
 
@@ -391,7 +391,7 @@ Como acabas de presionar estas costuras de hombro, todo debería ser agradable y
 - Doble sobre la guardia y presiona esta costura.
 - Da la vuelta a la manga con el lado bueno y trae tu guardia a través de la cortada en la manga.
 - Doble dos veces en las líneas para que la costura inacabada sea escondida hacia dentro.
-- Make your folds so that the upper fold sits ever so slightly further than the seam you already made.
+- Haz los pliegues de modo que el pliegue superior quede ligeramente más lejos que la costura que ya has hecho.
 - Presiona todo hacia abajo, y luego tira el guardia de corte en su lugar.
 
 #### Plegar y pulsar el placket
@@ -401,7 +401,7 @@ Como acabas de presionar estas costuras de hombro, todo debería ser agradable y
 ¡Hora del originami! Vamos a doblar la superposición de la placa de manga usando las líneas de plegado marcadas como nuestra guía. Esto será mucho más fácil si pulsas entre cada doblez.
 
 - Primero, doblar los bordes externos de la placeta hacia dentro.
-- Next, fold the entire thing in half.
+- A continuación, dóblalo todo por la mitad.
 - Luego, doblézcalo ambos consejos en una forma puntiaguda.
 - Ahora démosle una buena prensa final.
 
@@ -427,7 +427,7 @@ Comienza en el borde de la manga (la parte inferior de la placa de manga) y en l
 
 Vaya alrededor de la punta y descienda de nuevo en el otro lado (el lado doble) hasta que haya pasado el punto en el que termine su guardia.
 
-Then, sew horizontally to the other side of the placket to finish.
+Luego, cose horizontalmente al otro lado de la tapeta para terminar.
 
 > He incluido aquí una ilustración extra que sólo muestra el contorno de la placket. Usted puede ver que el final de la guardia se encuentra atrapado en nuestro enganche de la placeta, y por lo tanto está bien escondido.
 
@@ -441,17 +441,17 @@ Then, sew horizontally to the other side of the placket to finish.
 > 
 > Como tal, tenga cuidado de no alinear el borde de la tela, pero alinear la costura para que la manga se sienta por 1cm.
 
-#### Pin sleeve in place
+#### Coloca el manguito
 
-![Pin sleeve in place](14a.png)
+![Coloca el manguito](14a.png)
 
 Difunde la camisa abierta para que ambos frentes y la parte trasera estén planos con sus buenos lados arriba.
 
-Now place your sleeve on top with the good side down, matching the top of the sleeve with the shoulder seam.
+Ahora coloca la manga encima con el lado bueno hacia abajo, haciendo coincidir la parte superior de la manga con la costura del hombro.
 
-> Be careful, your sleeve is not symmetric, so be sure to have the back notch (⊗) and cuff guard on the back side, and the front notch (⊙) on the front side.
+> Ten cuidado, la manga no es simétrica, así que asegúrate de que la muesca trasera (⊗) y el protector del puño están en la parte trasera, y la muesca delantera (⊙) en la parte delantera.
 > 
-> Also note that the back notch (⊗) on the sleeve does not have a corresponding notch on the back of the shirt. That's because it should match up with the seam where your yoke joins the back.
+> Observa también que la muesca trasera (⊗) de la manga no tiene una muesca correspondiente en la parte trasera de la camiseta. Eso es porque debe coincidir con la costura donde tu canesú se une a la espalda.
 
 Ahora tienes que anclar la manga en el orificio. Para ello, asegúrese de:
 
@@ -459,7 +459,7 @@ Ahora tienes que anclar la manga en el orificio. Para ello, asegúrese de:
 - Coincide las muñecas en la cabeza de manga con las muñecas en la parte trasera y frontales
 - Distribuye la facilidad de manga entre las muñecas como se muestra
 
-#### Distribute sleevecap ease
+#### Distribuye con facilidad el sleevecap
 
 ![Distribuir la facilidad de manga](14b.png)
 
@@ -501,7 +501,7 @@ Puedes usar pines para mantener esto en su lugar, pero es más sencillo simpleme
 
 Ahora, desde el lado malo de la tela, coser la costura de abajo justo en el borde donde se pliega bajo la otra franja de costura.
 
-Here it is important to keep an even distance from the seam of your sleeve. Si usted tiene un pie cortante para su máquina de coser, le ayudará con eso. Pero si no, tenga cuidado.
+Aquí es importante mantener una distancia uniforme con la costura de la manga. Si usted tiene un pie cortante para su máquina de coser, le ayudará con eso. Pero si no, tenga cuidado.
 
 > Es más importante mantener e incluso alejarse de la costura de manga que coser exactamente al borde del plegado. Idealmente, el pliegue se sienta a una distancia uniforme de todos modos, pero si no lo hace, asegúrese de coser paralelo a la costura de manga. Incluso si eso significa que se desvia un poco del borde doblado.
 
@@ -543,7 +543,7 @@ Puedes usar pines para mantener esto en su lugar, pero es más sencillo simpleme
 
 Ahora, desde el lado malo de la tela, coser la costura de abajo justo en el borde donde se pliega bajo la otra franja de costura.
 
-Important here is to keep an even distance from the seam of your sleeve. Si usted tiene un pie cortante para su máquina de coser, le ayudará con eso. Pero si no, tenga cuidado.
+Es importante que mantengas una distancia uniforme con la costura de la manga. Si usted tiene un pie cortante para su máquina de coser, le ayudará con eso. Pero si no, tenga cuidado.
 
 > Es más importante mantener e incluso alejarse de la costura de manga que coser exactamente al borde del plegado. Idealmente, el pliegue se sienta a una distancia uniforme de todos modos, pero si no lo hace, asegúrese de coser paralelo a la costura de manga. Incluso si eso significa que se desvia un poco del borde doblado.
 
@@ -557,15 +557,15 @@ Cuando esté listo, presione la costura plana desde el lado bueno para que se en
 
 ![Fijar corte en su lugar](18a.png)
 
-You need to insert the sleeve between the two layers of your cuff, making sure that the good side of the fabric sits against the side of your cuff that has the interfacing applied to it.
+Tienes que introducir la manga entre las dos capas del puño, asegurándote de que el lado bueno de la tela quede contra el lado del puño que tiene la entretela aplicada.
 
 Necesitarás fijar esto en tu lugar, ya que dependiendo de cuánto dura tu placket de manga puede ser difícil o incluso imposible conseguir que esto se quede plano.
 
 También tenga en cuenta que el borde de la manga será más largo que el de la manga (cuánto tiempo más depende de la manga de la batería). Necesitas hacer uno o unos cuantos pliegues en tu manga para acomodar esto.
 
-> Your pattern contains helplines on the sleeve to help you place the folds.
+> Tu patrón contiene líneas de ayuda en la manga para ayudarte a colocar los pliegues.
 
-> Tómese su tiempo para fijar todo cuidadosamente en su lugar. We are going to edge-stitch this later, so it's important that the front and back of your cuff align nicely.
+> Tómese su tiempo para fijar todo cuidadosamente en su lugar. Después vamos a coser el borde, así que es importante que la parte delantera y trasera del puño queden bien alineadas.
 
 #### Unir filos para mangas
 
@@ -573,7 +573,7 @@ También tenga en cuenta que el borde de la manga será más largo que el de la 
 
 Una vez que todo esté fijado en su lugar, el borde se tira a lo largo del borde de tu taza para sujetarlo a la manga.
 
-It's important to catch both the outer and inner layer of your cuff on the edge.
+Es importante que cojas tanto la capa exterior como la interior de tu puño por el borde.
 
 > Asegúrate de enganchar desde el lado de la capa exterior (el lado bueno de la manga) y mantenerlo paralelo con el borde de la manga.
 
@@ -609,7 +609,7 @@ Asegúrese de respetar la franquicia estándar de costura y - importante - evita
 
 Cuando estés contento con cómo has echado tu cuello en su lugar, es hora de coser esa cosa.
 
-We're going to start at the center-back and sew all the way around the collar stand.
+Empezaremos por el centro de la espalda y coseremos alrededor de todo el cuello.
 
 #### Divertirse a lo largo del borde del cuello
 
@@ -635,7 +635,7 @@ Es hora de terminar el hem (esa es la parte que pegaste en tus pantalones).
 
 Doblar la mitad de la franquicia y presionar. Luego, vuelva a doblar y presione de nuevo.
 
-Now, sew along the upper edge to finish the hem.
+Ahora, cose a lo largo del borde superior para terminar el dobladillo.
 
 ### Paso 21: Crear botones
 

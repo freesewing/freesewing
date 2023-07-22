@@ -1,8 +1,8 @@
 ---
-title: "Bottom Leg Reduction (Octoplushy)"
+title: "Onderbeenverkleining (Octoplushy)"
 ---
 
-This setting adjusts the difference in length between the top and the bottom fabric of the legs. The bigger the difference, the more the legs will want to curl.
+Deze instelling past het verschil in lengte aan tussen de bovenste en onderste stof van de poten. Hoe groter het verschil, hoe meer de benen zullen willen krullen.
 
 ## Effect van deze optie op het patroon
 

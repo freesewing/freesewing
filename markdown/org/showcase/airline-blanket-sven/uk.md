@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9a8c3ceab1c7e91e3a674
 intro: "Свен, зроблений з двох авіаційних ковдр"
 title: "Свен, зроблений з двох авіаційних ковдр"
 designs:
-  - "sven"
+  - "Свен"
 ---
 
 

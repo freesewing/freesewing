@@ -6,7 +6,7 @@ image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d52577b6695162b240cb2
 intro: "Це вже другий \"Г'юї\" Аннеке"
 title: "Ще один сірий Huey від Аннеке Карамин"
 designs:
-  - "huey"
+  - "Х'юї."
 ---
 
 Це другий Г'юї [Аннеке](/en/showcase/anneke-huey/)

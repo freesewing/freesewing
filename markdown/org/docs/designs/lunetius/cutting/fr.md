@@ -1,25 +1,25 @@
 ---
-title: "Lunetius Lacerna: Cutting Instructions"
+title: "Lunetius Lacerna : Instructions de coupe"
 ---
 
-- Cut **1 lacerna** part on the fold
-- or Cut **2 lacerna** parts
+- Coupe **1 lacerna** partie sur le pli
+- ou Cut **2 lacerna** parts
 
-The way to cut Lunetius is going to depend on what fabric you have chosen to use. To not have to later finish the centre back edge you can cut with the centre back edge on the selvage. If you have enough fabric width you can cut it _on the fold_. If you don’t, you can cut two halves and later sew them together.
+La façon de découper les Lunetius va dépendre du tissu que tu as choisi d'utiliser. To not have to later finish the centre back edge you can cut with the centre back edge on the selvage. If you have enough fabric width you can cut it _on the fold_. If you don’t, you can cut two halves and later sew them together.
 
-A lot of garments were woven to shape in the Roman era, so this is one aspect where you don’t need to worry about historical accuracy at all, unless you would like to weave your Lunetius to shape.
+Beaucoup de vêtements étaient tissés en forme à l'époque romaine, c'est donc un aspect pour lequel tu n'as pas du tout besoin de t'inquiéter de l'exactitude historique, sauf si tu souhaites tisser ton Lunetius en forme.
 
 <Comment by="Zee">In that case I salute you and please share the results \[in our discord\](https://discord.freesewing.org/)! </Comment>
 
-If you want to learn more about this you can read about it in:  
-Granger-Taylor, H. (1982) _Weaving Clothes To Shape in the Ancient World: The Tunic and Toga of the Arringatore_ in Textile History 13 (1), pp 3-25
+Si tu veux en savoir plus à ce sujet, tu peux lire dans :  
+Granger-Taylor, H. (1982) _Weaving Clothes To Shape in the Ancient World : The Tunic and Toga of the Arringatore_ in Textile History 13 (1), pp 3-25
 
-### On Historical Accuracy
+### Sur l'exactitude historique
 
-The further we go back in time, the less extant garments we have to base research on. Often there may be scraps of fabric left behind by stroke of luck but most of our information starts to come from (in archaeology) secondary sources like written texts from contemporaries.
+Plus nous remontons dans le temps, moins il y a de vêtements existants sur lesquels nous pouvons baser nos recherches. Souvent, il peut y avoir des bouts de tissu laissés derrière par un coup de chance, mais la plupart de nos informations commencent à provenir (en archéologie) de sources secondaires telles que des textes écrits par des contemporains.
 
-This is especially true for the Roman and Mediaeval eras, not to mention that a lot of the available research is behind a paywall.
+C'est particulièrement vrai pour les époques romaine et médiévale, sans compter qu'une grande partie des recherches disponibles se trouve derrière un paywall.
 
-We can’t be 100 percent historically accurate, because we’re living in a different time, and everything we use to sew is different now from before. Even fabric is woven in a different way.
+Nous ne pouvons pas être exacts à 100 % sur le plan historique, parce que nous vivons à une autre époque et que tout ce que nous cousons est différent aujourd'hui de ce qu'il était avant. Même le tissu est tissé d'une manière différente.
 
-How ‘accurate’ you want to be is up to you, there is no wrong way to do this and research is not required -- though it can be fun!
+Il n'y a pas de mauvaise façon de procéder et il n'est pas nécessaire de faire des recherches - même si cela peut être amusant !

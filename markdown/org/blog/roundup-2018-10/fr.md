@@ -1,32 +1,32 @@
 ---
 author: "joostdecock"
-caption: "Your login background for November"
+caption: "Ton arrière-plan de connexion pour le mois de novembre"
 date: "30-11-2018"
 image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5be11786eaed9bba641fa66b812a3fc9f68aed1d-1920x1410.jpg"
-intro: "Monthly roundup - October 2018: Progress on beta.freesewing.org"
-title: "Monthly roundup - October 2018: Progress on beta.freesewing.org"
+intro: "Récapitulatif mensuel - octobre 2018 : Progrès sur beta.freesewing.org"
+title: "Récapitulatif mensuel - octobre 2018 : Progrès sur beta.freesewing.org"
 ---
 
 
-This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month.
+Voici ton récapitulatif mensuel de l'actualité freesewing des quatre dernières semaines, et un aperçu de ce qui t'attend le mois prochain.
 
-## Looking back at October
+## Retour sur le mois d'octobre
 
-Skeletons pack up their rattling chains, and your *sexy Brett Kavanaugh* costume has found a new home in the attic. This can only mean one thing: Halloween is over, here comes November.
+Les squelettes remballent leurs chaînes cliquetantes, et ton costume *sexy Brett Kavanaugh* a trouvé une nouvelle maison dans le grenier. Cela ne peut signifier qu'une chose : Halloween est terminé, voici le mois de novembre.
 
-I am currently under the influence of influenza, so pardon me if I keep this short.
+Je suis actuellement sous l'influence de la grippe, alors pardonne-moi si je fais court.
 
-What I can tell you about October is that a lot of work has been done, and while it's not always obvious to somehow showcase this behind-the-scenes work, [our beta website](https://beta.freesewing.org/) is slowly starting to gain more and more features.
+Ce que je peux te dire à propos du mois d'octobre, c'est que beaucoup de travail a été fait, et bien qu'il ne soit pas toujours évident de montrer d'une manière ou d'une autre ce travail en coulisses, [notre site Web bêta](https://beta.freesewing.org/) est lentement en train d'acquérir de plus en plus de fonctions.
 
-Not that we're anything close to finishing it. But you can login with your current freesewing username and password. Which means that we've successfully migrated all our data to our new backend.
+Non pas que nous soyons sur le point de le terminer. Mais tu peux te connecter avec ton nom d'utilisateur et ton mot de passe freesewing . Ce qui signifie que nous avons réussi à migrer toutes nos données vers notre nouveau backend.
 
-It's baby steps, but with each passing day, and each line of code written, we get a little closer to where we want to go.
+Ce sont des petits pas, mais avec chaque jour qui passe, et chaque ligne de code écrite, nous nous rapprochons un peu plus de l'endroit où nous voulons aller.
 
-## Looking ahead to November
+## En attendant le mois de novembre
 
-In early December we traditionally do our yearly roundup, which means that November is kind of that last month we have to come up with something to show off.
+Début décembre, nous faisons traditionnellement notre tour d'horizon annuel, ce qui signifie que novembre est en quelque sorte ce dernier mois où nous devons trouver quelque chose à montrer.
 
-I've somehow made peace with the fact that things won't be nearly as ready as I'd like them to be. But on the other hand, I am still excited about all the work we are doing/have been doing, so hopefully that will shine through regardless of whether we can show you much or not.
+J'ai fait la paix avec le fait que les choses ne seront pas aussi prêtes que je le voudrais. Mais d'un autre côté, je suis toujours enthousiaste à propos de tout le travail que nous faisons/avons fait, alors j'espère que cela transparaîtra, que nous puissions ou non vous montrer beaucoup de choses.
 
-Now if you don't mind, I'll get back to tea and tissues.
+Maintenant, si tu veux bien, je vais retourner au thé et aux mouchoirs.
 
