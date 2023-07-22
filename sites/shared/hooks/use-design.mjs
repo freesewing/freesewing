@@ -62,7 +62,6 @@ const designs = {
   carlton: Carlton,
   cathrin: Cathrin,
   charlie: Charlie,
-  collab: Collab,
   cornelius: Cornelius,
   diana: Diana,
   florence: Florence,
