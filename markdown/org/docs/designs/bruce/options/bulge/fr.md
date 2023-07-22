@@ -1,5 +1,5 @@
 ---
-title: "Poche pénienne"
+title: "Renflement"
 ---
 
 ![L'option poche pénienne pour Bruce](./bulge.svg)
@@ -12,4 +12,4 @@ Cette option augmentera la pince avant, créant ainsi plus de place à l'avant.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bruce_bulge_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bruce_bulge_sample.svg "Effet de cette option sur le motif")

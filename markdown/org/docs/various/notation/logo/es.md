@@ -6,6 +6,6 @@ Algunas (o todas) piezas de patrones también pueden incluir el logotipo de Free
 
 <Legend part="logo">
 
-The FreeSewing logo
+El logotipo de FreeSewing
 
 </Legend>

@@ -1,4 +1,4 @@
-import { copyFile } from 'node:fs/promises';
+import { copyFile } from 'node:fs/promises'
 import path from 'path'
 
 const files = [
@@ -14,22 +14,16 @@ const files = [
   'site.webmanifest',
 ]
 
-/*
- * Main method that does what needs doing
- */
-export const prebuildFavicon = async (site) => {
-  // Say hi
-  console.log()
-  console.log(`Copying favicon data for FreeSewing.${site}`)
-
+export const prebuildFavicon = async (store) => {
   // Setup from/to folders
   const from = ['..', 'shared', 'favicon']
-  const to = ['..', site, 'public']
+  const to = ['..', store.site, 'public']
 
   const promises = []
-  for (const file of files) promises.push(
-    copyFile(path.resolve(...from, file), path.resolve(...to, file))
-  )
+  for (const file of files)
+    promises.push(copyFile(path.resolve(...from, file), path.resolve(...to, file)))
+
+  store.favicon = files
 
   return Promise.all(promises)
 }

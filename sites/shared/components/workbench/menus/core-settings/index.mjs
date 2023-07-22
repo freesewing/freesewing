@@ -1,13 +1,15 @@
 //Dependencies
 import { loadSettingsConfig, defaultSamm } from './config.mjs'
 // Components
-import { SettingsIcon } from 'shared/components/icons.mjs'
+import { SettingsIcon, TrashIcon } from 'shared/components/icons.mjs'
 import { WorkbenchMenu } from '../shared/index.mjs'
 import { MenuItem } from '../shared/menu-item.mjs'
 // input components and event handlers
 import { inputs, handlers } from './inputs.mjs'
 // values
 import { values } from './values.mjs'
+
+import { useTranslation } from 'next-i18next'
 
 export const ns = ['core-settings', 'modal']
 
@@ -38,6 +40,21 @@ const CoreSetting = ({ name, config, control, updateFunc, current, passProps, ..
         updateFunc: handler,
       }}
     />
+  )
+}
+
+export const ClearAllButton = ({ setSettings, compact = false }) => {
+  const { t } = useTranslation('core-settings')
+  return (
+    <div className={`${compact ? '' : 'text-center mt-8'}`}>
+      <button
+        className={`justify-self-center btn btn-error btn-outline ${compact ? 'btn-sm' : ''}`}
+        onClick={() => setSettings({})}
+      >
+        <TrashIcon />
+        {t('clearSettings')}
+      </button>
+    </div>
   )
 }
 

@@ -1,25 +1,25 @@
 ---
-title: "Sandy circle skirt: Sewing Instructions"
+title: "Jupe circulaire Sandy : Instructions de couture"
 ---
 
 <Warning>
 
-Due to the different styles and configurations of Sandy you may find you need to skip or re-order certain steps.
-We're not going to go into a full explanation on how to create all the individual details that make up a circle skirt. Ces instructions supposent que vous sachiez coudre une fermeture à glissière, construire des poches, etc... If not, there are numerous excellent articles available on the web, both in writen form, and on video. If you do get stuck, you can always reach out to [other FreeSewers](https://discord.freesewing.org/) in our discord.
+En raison des différents styles et configurations de Sandy, il se peut que tu doives sauter ou réorganiser certaines étapes.
+Nous n'allons pas nous lancer dans une explication complète sur la façon de créer tous les détails individuels qui composent une jupe en cercle. Ces instructions supposent que vous sachiez coudre une fermeture à glissière, construire des poches, etc... Si ce n'est pas le cas, il existe de nombreux articles excellents disponibles sur le web, à la fois sous forme écrite et sous forme de vidéo. Si tu es bloqué, tu peux toujours contacter [d'autres FreeSewers] (https://discord.freesewing.org/) sur notre discord.
 
 </Warning>
 
 <Note>
 
-Due to seamless and closure Sandy's needing different constructions we have separated their instructions.
+Comme les Sandy sans couture et les Sandy avec fermeture nécessitent des constructions différentes, nous avons séparé leurs instructions.
 
 </Note>
 
 ## Etape 1 : Préparation de la jupe
 
 - Si vous prévoyez une fermeture, cousez la couture de la jupe _bonnes faces ensemble_ jusqu'à l'endroit où vous voulez que l'ouverture commence.
-- Add Pockets if using.
-- If using lining, prep the same as the skirt.
+- Ajoute les poches si tu le souhaites.
+- Si tu utilises une doublure, prépare-la de la même façon que la jupe.
 - _Finir_ les coutures si pas de doublure.
 
 <Note>
@@ -34,8 +34,8 @@ Si vous ne souhaitez pas créer de coutures supplémentaires mais que vous voule
 
 ## Étape 2 : Préparez l'ouverture
 
-- Insert zipper or placket into opening if using.
-- If not using, press the openings seam allowance to the inside and _Edgestitch_/_Topstitch_ in place. Vous pouvez également poursuivre la surpiqûre le long de la couture.
+- Insère la fermeture éclair ou la patte de boutonnage dans l'ouverture si tu l'utilises.
+- Si tu ne l'utilises pas, repasse le surplus de couture des ouvertures à l'intérieur et _Edgestitch_/_Topstitch_ en place. Vous pouvez également poursuivre la surpiqûre le long de la couture.
 
 <Note>
 
@@ -48,8 +48,8 @@ Sautez cette étape si :
 ## Étape 3 : Doublure
 
 - (Facultatif) doublez la jupe avec un tissu plus rigide ou plus résistant.
-- Attach Lining to skirt at hem and opening by your preferred method.
-- _Baste_ Lining to skirt at waist.
+- Attache la doublure à la jupe au niveau de l'ourlet et de l'ouverture en utilisant la méthode de ton choix.
+- _Baste_ La doublure de la jupe à la taille.
 - Rassembler la taille si nécessaire.
 
 ## Étape 4 : La ceinture
@@ -61,53 +61,53 @@ Sautez cette étape si :
 - Avec _les bonnes faces ensemble_, coudre l'interface ceinture / côté de la ceinture à la jupe. Si nécessaire, froncez la jupe jusqu'à la ceinture.
 - Si vous utilisez la ceinture incurvée, cousez la partie non interfacée à la partie interfacée. Découpez et coupez la couture, puis repassez la partie non interfacée vers le haut et à l'écart de la jupe.
 
-There will be some overhangs:
+Il y aura des dépassements :
 
 - Le côté que vous ne souhaitez pas faire chevaucher doit dépasser de votre marge de couture.
 - Le côté destiné à se chevaucher aura un plus grand débordement.
 - Si vous utilisez une patte de boutonnage, les deux côtés dépasseront de votre marge de couture.
 - Si vous utilisez une fermeture à glissière dans la ceinture, l'excédent le plus important devra être coupé au niveau de la marge de couture.
 
-__Inserting Zipper in Waistband__
-- If inserting a zipper into the waistband now is the time to do so, attach the zipper from the waistband fold line down. Ou à partir de la ligne de couture vers le bas pour une ceinture incurvée.
-- _Slipstitch_ or _Whipstitch_ the lining to the zipper at this point if you have not treated the lining and skirt as one at the opening.
+__Insertion d'une fermeture à glissière dans la ceinture__
+- Si tu insères une fermeture éclair dans la ceinture, c'est le moment de le faire, attache la fermeture éclair à partir de la ligne de pliage de la ceinture vers le bas. Ou à partir de la ligne de couture vers le bas pour une ceinture incurvée.
+- _Slipstitch_ ou _Whipstitch_ la doublure à la fermeture à glissière à ce stade si tu n'as pas traité la doublure et la jupe comme une seule et même chose à l'ouverture.
 - Presser sous les surplombs.
-- Press the waistband _wrong sides together_ along fold-line. Or along seam-line for curved waistband.
-- Slipstitch_ or _Whipstitch_ the overhang edges to the zipper.
-- _Edgestitch_ the waistband in place.
-- Alternatively, _Slipstitch_ or _Whipstitch_ the waistband in place on the inside.
+- Repasse la ceinture _endroit contre endroit_ le long de la ligne de pliage. Ou le long de la ligne de couture pour une ceinture incurvée.
+- Slipstitch_ ou _Whipstitch_ les bords du débordement sur la fermeture à glissière.
+- _Point de bordure_ la ceinture en place.
+- Tu peux aussi faire une surpiqûre __ ou une surpiqûre __ à l'intérieur de la ceinture.
 
-__Other closures__
-- Press the waistband _good sides together_ along fold-line. Or along seam-line for curved waistband.
+__Autres fermetures__
+- Repasse la ceinture _, bons côtés ensemble_ le long de la ligne de pliage. Ou le long de la ligne de couture pour une ceinture incurvée.
 - Cousez les dépassements avec votre marge de couture.
-- Turn the waistband out and to the inside, Press.
-- _Egdestitch_ the waistband in place, this should also close the gap of the over-lap.
-- Alternatively, _Slipstich_ or _Whipstitch_ the waistband in place on the inside and close the gap of the over-lap with _Slipstiching_.
-- Add snaps, dress hooks or button and buttonhole, whatever is your preferred closure to the waistband overhang.
+- Tourne la ceinture vers l'extérieur et l'intérieur, repasse.
+- _Fais une piqûre d'aiguille à l'adresse_ pour maintenir la ceinture en place, ce qui devrait également fermer l'espace du chevauchement.
+- Tu peux aussi faire une surpiqûre __ ou une surpiqûre __ de la ceinture à l'intérieur et fermer l'espace du chevauchement à l'aide d'une surpiqûre __.
+- Ajoute des boutons-pression, des crochets de robe ou un bouton et une boutonnière, quelle que soit la fermeture que tu préfères au débord de la ceinture.
 
-### Seamless
+### Sans couture
 
-- If curved waistband with _good sides together_ sew the two waistbands together along the shortest curved edge. Press away from one another, Trim and clip the seam.
-- With _good sides together_ sew the waistband together along the short seams, leaving a gap for the elastic that will be on the inside.
-- Press under the seam allowance on the long edge of the waistband that is intended to be on the inside.
-- With _good sides together_ attach the waistband to the skirt along the unpressed seam. Trim seam.
-- Press waistband and seam allowance up away from skirt.
-- Press the waistband to the inside along the fold-line/seam-line.
-- _Edgestitch_ the waistband in place.
-- Alternatively you can _Slipstitch_ or _Whipstitch_ the waistband in place on the inside.
-- Cut the elastic to your waist.
-- Thread the elastic through the opening of the waistband making sure not to lose the end.
-- Overlap the ends of the elastic by 1cm (3/8 inch) and zig-zag stitch in place.
+- Si la ceinture est incurvée avec _bons côtés ensemble_ couds les deux ceintures ensemble le long du bord incurvé le plus court. Repasse les uns à côté des autres, coupe et clipse la couture.
+- Avec _bons côtés ensemble_ couds la ceinture ensemble le long des coutures courtes, en laissant un espace pour l'élastique qui sera à l'intérieur.
+- Repasse sous le surplus de couture sur le bord long de la ceinture qui est destiné à être à l'intérieur.
+- Avec _bons côtés ensemble_ attache la ceinture à la jupe le long de la couture non repassée. Découpe la couture.
+- Repasse la ceinture et le surplus de couture vers le haut, loin de la jupe.
+- Repasse la ceinture à l'intérieur le long de la ligne de pliage/couture.
+- _Point de bordure_ la ceinture en place.
+- Tu peux aussi _Slipstitch_ ou _Whipstitch_ mettre la ceinture en place à l'intérieur.
+- Coupe l'élastique à ta taille.
+- Enfile l'élastique dans l'ouverture de la ceinture en veillant à ne pas perdre l'extrémité.
+- Fais chevaucher les extrémités de l'élastique de 1 cm (3/8 de pouce) et fais une piqûre zig-zag en place.
 - Rentrer l'élastique dans la ceinture et fermer l'ouverture par une couture à la main.
 
 ## Étape 5 : Ourlet
 
-If you have hemmed the skirt with the lining you can skip this step.
+Si vous avez ourlé la jupe avec la doublure, vous pouvez sauter cette étape.
 
-Hem the skirt in one of the following ways:
+Faites un ourlet sur la jupe de l'une des façons suivantes :
 - Oubliez la marge de l'ourlet et assemblez le bord brut.
-- Bind the raw edge of the hem allowance, single fold the hem under and either _Topstitch_ or hand sew the hem in place.
-- Double fold the hem under and either _Topstitch_ or hand sew the hem in place. Vous avez peut-être entendu parler d'un ourlet roulé.
+- Relie le bord brut de la marge de l'ourlet, replie l'ourlet sous lui et couds l'ourlet à la main ou à l'aide de _Topstitch_ .
+- Plie doublement l'ourlet en dessous et fais une surpiqûre à __ ou couds l'ourlet à la main. Vous avez peut-être entendu parler d'un ourlet roulé.
 
 <Note>
 
@@ -117,10 +117,10 @@ Il y a de nombreuses façons d'ourler le bas d'une jupe. Si vous avez une métho
 
 ## Étape 6: Profitez-en!
 
-You are all done! Now go enjoy your wonderful new skirt and try not to get too dizzy showing off it's fullness!
+Vous avez terminé ! Maintenant, profite de ta merveilleuse nouvelle jupe et essaie de ne pas trop t'étourdir en montrant sa plénitude !
 
 <Note>
 
-These instructions are just a suggestion, there are many ways to construct a circle skirt so feel free to deviate or completely disregard. If you need help, you can always reach out to [other FreeSewers](https://discord.freesewing.org/) in our discord.
+Ces instructions ne sont qu'une suggestion, il y a de nombreuses façons de construire une jupe en cercle, alors n'hésite pas à t'en écarter ou à ne pas en tenir compte du tout. Si tu as besoin d'aide, tu peux toujours contacter [d'autres FreeSewers] (https://discord.freesewing.org/) sur notre discord.
 
 </Note>

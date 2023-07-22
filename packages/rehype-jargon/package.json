@@ -38,7 +38,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "unist-util-visit": "4.1.2",
+    "unist-util-visit": "5.0.0",
     "hast-util-from-html": "1.0.2"
   },
   "devDependencies": {},
@@ -51,7 +51,7 @@
     "tag": "next"
   },
   "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=8"
+    "node": "18",
+    "npm": "9"
   }
 }

@@ -120,6 +120,16 @@ const config = ({ site, jargon = {} }) => {
       externalDir: true,
     },
     pageExtensions: ['mjs'],
+    images: {
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'cdn.sanity.io',
+          pathname: '/images/**',
+          port: '',
+        },
+      ],
+    },
     webpack: (config, options) => {
       // Fixes npm packages that depend on node modules
       if (!options.isServer) {

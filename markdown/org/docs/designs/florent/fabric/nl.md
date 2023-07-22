@@ -1,5 +1,5 @@
 ---
-title: "Florent flat cap: Fabric Options"
+title: "Florent platte pet: Stof Opties"
 ---
 
 Een zwaardere stof behoudt zijn vorm beter als buitenstof van je pet, maar als je een lichtere stof wil gebruiken kan je tussenvoering toevoegen.

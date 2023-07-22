@@ -1,145 +1,145 @@
 ---
-title: "Huey hoodie: Sewing Instructions"
+title: "Sweat à capuche Huey Instructions de couture"
 ---
 
 <Note>
 
-This pattern can be sewn with or with out a overlocker/serger. If not using a overlocker or serger you will have to _Finish_ the seams.
+Ce patron peut être cousu avec ou avec une surjeteuse. Si tu n'utilises pas de surjeteuse ou de surjeteuse, tu devras _finir_ les coutures.
 
 </Note>
 
-### Step 1: Attaching the pockets
+### Étape 1 : Fixer les poches
 
-- Press under seam allowance of top, curved and slanted edges.
-- _Topstitch_ or _Edgestitch_ the curved seam allowance in place. This will form the openings of the pockets.
-- Pin the pockets to the fronts using the guidelines and match raw edges.
-- Baste the raw edges of the pockets and fronts together.
-- _Topstitch_ or _Edgestitch_ the top and slanted edges of the pockets to the fronts leaving the curved edges open.
+- Repasse sous le surplus de couture du haut, des bords incurvés et inclinés.
+- _Surpiqûre_ ou _Point de bordure_ la marge de couture incurvée en place. Cela formera les ouvertures des poches.
+- Épingle les poches aux devants en utilisant les lignes directrices et fais correspondre les bords bruts.
+- Bâtis les bords bruts des poches et des devants ensemble.
+- _Surpiqûre_ ou _Surpiqûre_ les bords supérieurs et obliques des poches sur les devants en laissant les bords incurvés ouverts.
 
-### Step 2: Making the Body
+### Étape 2 : Fabrication du corps
 
-- With _good sides together_, sew the Fronts to the backs at the shoulder seams.
-- With _good sides together_, sew the sleeves to the front and back matching notches.
-- With _good sides together_, sew up the sleeves and side seams.
+- Avec _bons côtés ensemble_, couds les devants aux dos au niveau des coutures des épaules.
+- Avec _bons côtés ensemble_, couds les manches au devant et au dos en faisant correspondre les encoches.
+- Avec _bons côtés ensemble_, couds les manches et les coutures latérales.
 
-### Step 3: Making drawstring holes (Optional)
+### Étape 3 : Faire des trous pour le cordon de serrage (facultatif)
 
-If you don't wish to add a drawstring you can skip to Step 4.
+Si tu ne souhaites pas ajouter de cordon de serrage, tu peux passer à l'étape 4.
 
-- Take one matching set of the Hood pieces, that you intend to feature on the outside of the finished hoodie.
-- Mark the place for a hole on each hood piece, along the inner curve.
-  - The hole should be about 1.5-2cm from the edge of the fabric. This is to keep your seam allowance out of the way.
-  - The hole should be located slightly up from the bottom of the inner curve. This is to keep it away from the front seams.
-- On the wrong side of the fabric, face where you are making the hole to stabilise the fabric.
-- Make a buttonhole at your mark either by hand or by your machine's method.
-- Alternatively construct or use eyelets at the mark.
+- Prends un jeu assorti des pièces de la capuche, que tu as l'intention de mettre sur l'extérieur du sweat à capuche fini.
+- Marque l'emplacement d'un trou sur chaque pièce de la hotte, le long de la courbe intérieure.
+  - Le trou doit se trouver à environ 1,5-2 cm du bord du tissu. Cela permet de ne pas gêner ta marge de couture.
+  - Le trou doit être situé légèrement en haut du bas de la courbe intérieure. Cela permet de l'éloigner des coutures avant.
+- Sur l'envers du tissu, place-toi face à l'endroit où tu fais le trou pour stabiliser le tissu.
+- Faites une boutonnière à votre marque, soit à la main, soit a la machine.
+- Vous pouvez aussi construire ou utiliser des œillets à la marque.
 
 <Tip>
 
-If you don't have or don't wish to use any interfacing you can use a scrap piece of sturdy fabric such as denim.
+Si vous n'avez pas ou ne souhaitez pas utiliser d'entoilage, vous pouvez utiliser un morceau de tissu robuste tel que le denim.
 
 </Tip>
 
 <Note>
 
-The drawstrings will be threaded after the hoodie is constructed.
+Les cordons seront enfilés après la construction du sweat à capuche.
 
 </Note>
 
-### Step 4: Prepping the hood
+### Etape 4 : Préparation de la capuche
 
-- With _good sides together_, matching sets, sew the hood pieces together along the outer curve edge.
-- With _good sides together_, matching seams, sew the inner hood to the outer hood along the inner curve edge.
-- Turn good sides out.
-- Baste the front and bottom raw edges together.
-- Create a casing for the drawstring by stitching about 2.5cm (1 inch) away from the inner edge on the side with the drawstring holes.
-- (Optionaly) If not using a drawstring, _Topstitch_ or _Edgestitch_ the inner curve.
+- Avec _bons côtés ensemble_, en faisant correspondre les ensembles, couds les pièces de la capuche ensemble le long du bord de la courbe extérieure.
+- Avec _, bons côtés ensemble_, en faisant correspondre les coutures, couds la capuche intérieure à la capuche extérieure le long du bord de la courbe intérieure.
+- Tourne les bons côtés vers l'extérieur.
+- Bâtis les bords bruts de l'avant et de l'arrière ensemble.
+- Crée une enveloppe pour le cordon de serrage en cousant à environ 2,5 cm du bord intérieur sur le côté où se trouvent les trous du cordon.
+- (Au choix) Si tu n'utilises pas de cordon, _surpiqûre_ ou _piqûre de bordure_ la courbe intérieure.
 
 <Note>
 
-When creating the casing or topstitching, make sure the inner curve seam is slightly inside of the hood to stop it from peaking out in the future.
-Alternatively if not using a drawstring you can _Understitch_ the inner curve seam.
+Lors de la création du boîtier ou de la surpiqûre, veille à ce que la couture de la courbe intérieure soit légèrement à l'intérieur de la capuche pour l'empêcher de dépasser à l'avenir.
+Si tu n'utilises pas de cordon de serrage, tu peux aussi _sous-pointer_ la couture de la courbe intérieure.
 
 </Note>
 
-### Step 5: Making a neckband (Optional)
+### Étape 5 : Fabrication d'un tour de cou (facultatif)
 
-A neckband can be useful to stablise and cover the neck seams but it is optional if you wish to skip it.
+Un tour de cou peut être utile pour stabiliser et couvrir les coutures du cou, mais il est facultatif si tu souhaites l'ignorer.
 
-- Cut a cross-wise strip of fabric out of your main fabric:
-  - Your neck opening + double your front seam allowance long
-  - Triple your neck seam allowance wide.
+- Découpe une bande de tissu en croix dans ton tissu principal :
+  - Ton ouverture de cou + le double de ton surplus de couture avant long.
+  - Triple la marge de couture du cou en largeur.
 
-### Step 6: Attaching the hood
+### Étape 6 : Fixer le capuchon
 
-- Pin the hood to the neck with outer hood matching _good side_ of neck.
-- If using, pin the neckband _good side_ to inner hood matching raw edges.
-- Sew the neckband seam.
-- _Finish_ seam if not using neckband then proceed to Step 7.
-- Press neckband down.
-- On outside _Topstitch_ neckband in place.
-- On inside, trim neckband down to topstitching.
+- Epingle la capuche au cou en faisant correspondre la capuche extérieure à _bon côté_ du cou.
+- Si tu l'utilises, épingle le tour de cou _bon côté_ à la capuche intérieure en faisant coïncider les bords bruts.
+- Couds la couture du tour de cou.
+- _Finis la couture de_ si tu n'utilises pas de tour de cou, passe à l'étape 7.
+- Appuie sur le tour de cou.
+- Sur l'extérieur _Surpiquer_ la bande de cou en place.
+- À l'intérieur, coupez la bande de cou vers le bas pour le surfiler.
 
-### Step 7: Attaching the waistband
+### Étape 7 : Attacher la ceinture
 
-- Fold the waistband in half lengthwise matching wrong sides. Press.
-- With _good sides_ together sew the waistband to the bottom of the back and front.
-- Press the seam allowance up.
-- _Topstitch_ or _Edgestitch_ waistband seam allowance to the body.
+- Pliez la ceinture en 2 dans le sens de la longueur envers contre envers. Repasser.
+- Avec _bons côtés_ ensemble coudre la ceinture au bas du dos et de l'avant.
+- Repassez la couture vers le haut.
+- _Surpiqûre_ ou _Point de bordure_ le surplus de couture de la ceinture au corps.
 
-### Step 8: Attching the cuffs
+### Étape 8 : Attacher les poignets
 
-- With _good sides together_ sew the short egdes of the cuffs together to create two bands.
-- Press open the seam allowances.
-- (Optional) _Edgestitch_ the seam allowances down.
-- Fold the cuffs in half lengthwise matching wrong sides. Press.
-- Matching seams and raw edges, pin the cuffs to the sleeves _good sides together_.
-- Sew the cuffs to the sleeves.
-- Press the seam allowances up.
-- _Topstitch_ or _Edgestitch_ cuffs seam allowances to the sleeves.
+- Avec _bons côtés ensemble,_ coudre cotés courts des poignets pour créer deux bandes.
+- Repasser pour ouvrir la marge de couture.
+- (Facultatif) _Point de bordure_ les surplus de couture vers le bas.
+- Pliez les poignets en 2 dans le sens de la longueur envers contre envers. Repasser.
+- En faisant correspondre les coutures et les bords bruts, épingle les poignets aux manches _bons côtés ensemble_.
+- Couds les poignets aux manches.
+- Repasse les surplus de couture vers le haut.
+- _Surpiqûre_ ou _Piqûre d'angle_ les surplus de couture des manchettes aux manches.
 
-### Step 9: The zipper
+### Étape 9 : La fermeture éclair
 
-- If need be, face the front edges of the hoodie.
-- Unzip the zipper part way.
-- Fold the top of the zipper tape down to the _good side_ of the zipper tape. Trim if need be.
-- Pin the zipper along one of the front edges of the hood, front and waistband. The zipper teeth should just be slightly over the seam line with the edge of the tape either matching or being slightly over from the hoodie edge. Making sure the zipper pull is faced the _good sides_ of the hoodie and the bottoms are lined up.
-- Using a zipper foot stitch the zipper to the hoodie using you seam allownace width. When you reach the zipper pull, stop, put your needle down, lift the presser foot, pull the zipper pull past the presser foot, lower the presser foot. Then you can continue sewing the seam.
-- Unzip the zipper.
-- Pin and sew the unattached zipper tape to the other side of the hoodie the same way.
-- Press the seams to the inside being careful not to melt the zipper teeth with your iron.
-- _Topstitch_ the zipper tapes in place. You may need to use a zipper foot.
+- Si besoin est, fais face aux bords avant du sweat à capuche.
+- Ouvre partiellement la fermeture à glissière.
+- Plie le haut du ruban de la fermeture à glissière vers le _bon côté_ du ruban de la fermeture à glissière. Découpe si nécessaire.
+- Épingle la fermeture éclair le long d'un des bords avant de la capuche, du devant et de la ceinture. The zipper teeth should just be slightly over the seam line with the edge of the tape either matching or being slightly over from the hoodie edge. Making sure the zipper pull is faced the _good sides_ of the hoodie and the bottoms are lined up.
+- En utilisant un pied pour fermeture à glissière, pique la fermeture à glissière sur le sweat à capuche en utilisant la largeur de ta couture. Lorsque tu arrives à la tirette de la fermeture à glissière, arrête-toi, pose ton aiguille, lève le pied-de-biche, fais passer la tirette de la fermeture à glissière devant le pied-de-biche, abaisse le pied-de-biche. Ensuite, tu peux continuer à faire la couture.
+- Détache la fermeture éclair.
+- Épingle et couds la bande de fermeture éclair non attachée à l'autre côté du sweat à capuche de la même manière.
+- Repasse les coutures à l'intérieur en faisant attention à ne pas faire fondre les dents de la fermeture éclair avec ton fer à repasser.
+- _Surpiqûre_ les rubans de la fermeture éclair en place. Il se peut que tu aies besoin d'utiliser un pied pour fermeture à glissière.
 
 <Tip>
 
-To help match the pockets and seams, when it is attached to one side and temporarily mark the corresponding teeth at the pockets and seam. You can now use these marks to align the zipper to the pocket and seams on the other side.
+Pour t'aider à faire correspondre les poches et les coutures, lorsqu'il est attaché d'un côté et temporairement, marque les dents correspondantes au niveau des poches et de la couture. Tu peux maintenant utiliser ces marques pour aligner la fermeture éclair sur la poche et les coutures de l'autre côté.
 
 </Tip>
 
 <Note>
 
-You only need to face your fabric if it is very stretchy or needs a bit more stability.
+Tu n'as besoin d'affronter ton tissu que s'il est très extensible ou s'il a besoin d'un peu plus de stabilité.
 
 </Note>
 
-### Step 10: Thread the drawstring
+### Étape 10 : Enfile le cordon de serrage
 
-- Thread the drawing string through the drawstring holes.
-- If needed secure the ends of the drawstring e.g. with something like aglets.
+- Enfile la ficelle de dessin dans les trous du cordon.
+- Si nécessaire, fixe les extrémités du cordon de serrage, par exemple avec des agrafes.
 
 <Tip>
 
-Use a safety pin to help thread the drawstring.
+Utilise une épingle à nourrice pour t'aider à enfiler le cordon.
 
 </Tip>
 
-### Step 11: Enjoy!
+### Étape 11: Profitez-en!
 
-- That's it! Vous avez terminé ! Now go feel warm and comfy in your new hoodie!
+- Voilà! Vous avez terminé ! Maintenant, va te réchauffer et te mettre à l'aise dans ton nouveau sweat à capuche !
 
 <Note>
 
-This patterns was featured in [issue 27 of HackSpace magazine](https://hackspace.raspberrypi.org/issues/27),
-the article includes instructions too, so you may want to have a look at it.
+Ce patron a été mis en vedette dans le [numéro 27 du magazine HackSpace ](https://hackspace.raspberrypi.org/issues/27),
+l'article contient également des instructions, donc vous pouvez vouloir le consulter.
 
 </Note>

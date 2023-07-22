@@ -1,5 +1,5 @@
 ---
-title: "Knot width"
+title: "Knotenbreite"
 ---
 
 ![Knotenbreite](knotwidth.svg)
@@ -16,4 +16,4 @@ Knotenbreite nicht größer als die Breite der Spitze machen
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](trayvon_knotwidth_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](trayvon_knotwidth_sample.svg "Effekt dieser Option auf das Schnittmuster")

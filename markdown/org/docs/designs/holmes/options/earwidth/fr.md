@@ -1,10 +1,10 @@
 ---
-title: "Ear flap width"
+title: "Largeur du rabat de l'oreille"
 ---
 
 ***
 
-Controls the width of the ear flaps
+Contrôle la largeur des rabats de l'oreille
 
 ## Effet de cette option sur le motif
 

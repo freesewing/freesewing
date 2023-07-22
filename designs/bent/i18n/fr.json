@@ -1,0 +1,20 @@
+{
+  "t": "Patron de base Bent",
+  "d": "Ce bloc d'emmanchure en deux parties est la base de nos modèles de manteau et de veste.",
+  "p": {
+    "sleeve": "Manche",
+    "topSleeve": "Haut de manche",
+    "underSleeve": "Sous-manche"
+  },
+  "s": {},
+  "o": {
+    "sleeveBend": {
+      "t": "Courbe de manche",
+      "d": "Contrôle la courbure de la manche au niveau du coude."
+    },
+    "sleevecapHeight": {
+      "t": "Hauteur du tête de manche",
+      "d": "Contrôle la hauteur du tête de manche"
+    }
+  }
+}

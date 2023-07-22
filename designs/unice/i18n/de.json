@@ -1,0 +1,29 @@
+{
+  "t": "Unice, die Unterhose",
+  "d": "Unice ist eine Variante von Ursula, ein elementares, stark anpassbares Schnittmuster für Unterwäsche.",
+  "p": {
+    "back": "Rückseite",
+    "elastic": "Elastic",
+    "front": "Vorderseite",
+    "gusset": "Zwickel"
+  },
+  "s": {},
+  "o": {
+    "fabricStretchX": {
+      "t": "Fabric stretch (horizontal)",
+      "d": "Passe dies für mehr oder weniger dehnbaren Stoff an"
+    },
+    "fabricStretchY": {
+      "t": "Fabric stretch (vertical)",
+      "d": "Passe dies für mehr oder weniger dehnbaren Stoff an"
+    },
+    "adjustStretch": {
+      "t": "Dehnbarkeit anpassen",
+      "d": "This option allows you to put in the maximum stretch that the fabric will allow in both horizontal and vertical directions; When disabled, the stretch values are used as-is"
+    },
+    "useCrossSeam": {
+      "t": "Use crossseam",
+      "d": "When enabled, the total height of the pattern pieces combined will match the cross seam length minus the front and back rise. When disabled, the total height depends on the gusset length option."
+    }
+  }
+}

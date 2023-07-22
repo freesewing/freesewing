@@ -2,7 +2,7 @@
 title: Escala
 ---
 
-The scale settings allow you to scale those parts of a pattern that do not scale with measurements. Things like logos, line widths, font sizes, and so on.
+Los ajustes de escala te permiten escalar las partes de un patrón que no se escalan con las medidas. Cosas como logotipos, anchos de línea, tamaños de letra, etc.
 
-This setting was added at the requests of people who like to use our patterns to make doll clothes. When generating such a small pattern, the arrowheads, titles, and so on tend to obscure much of the pattern. This setting allows you to scale them down or -- if you so wich -- scale them up.
+Este ajuste se añadió a petición de las personas a las que les gusta utilizar nuestros patrones para hacer ropa para muñecas. Al generar un patrón tan pequeño, las puntas de flecha, los títulos y demás tienden a oscurecer gran parte del patrón. Este ajuste te permite reducirlas o, si lo deseas, aumentarlas.
 

@@ -1,5 +1,5 @@
 ---
-title: "Trayvon tie"
+title: "Trayvon, die Krawatte"
 ---
 
 <PatternDocs pattern='trayvon' />

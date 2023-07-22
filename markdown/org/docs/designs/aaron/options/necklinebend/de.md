@@ -1,5 +1,5 @@
 ---
-title: "Neckline shape"
+title: "Ausschnittsform"
 ---
 
 ![Die Nackenform Option auf Aaron](./necklinebend.svg)

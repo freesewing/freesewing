@@ -1,9 +1,9 @@
 ---
-title: "Simon shirt: What You Need"
+title: "Camisa Simon: Lo que necesitas"
 ---
 
-To make Simon, you will need the following:
+Para hacer Simon, necesitarás lo siguiente:
 
-- About 2 meters (2.2 yards) of a suitable fabric (see [Fabric options](/docs/patterns/simon/fabric/))
+- Unos 2 metros (2,2 yardas) de una tela adecuada (consulta [Opciones de tela](/docs/patterns/simon/fabric/))
 - Botones
 - Interfaz fusible para cuello y cortes (y posiblemente para la placa delantera)

@@ -1,8 +1,8 @@
 ---
-title: "Bottom Leg Reduction (Octoplushy)"
+title: "Unterschenkelverkleinerung (Octoplushy)"
 ---
 
-This setting adjusts the difference in length between the top and the bottom fabric of the legs. The bigger the difference, the more the legs will want to curl.
+Mit dieser Einstellung wird der Längenunterschied zwischen dem oberen und dem unteren Stoff der Beine angepasst. Je größer der Unterschied ist, desto mehr werden sich die Beine einrollen wollen.
 
 ## Effekt dieser Option auf das Schnittmuster
 

@@ -1,0 +1,45 @@
+{
+  "t": "Aaron A-Shirt",
+  "d": "Aaron is an athletic shirt or tank top.",
+  "s": {
+    "cutOneStripToFinishTheNeckOpening": "Cut one strip to finish the neck opening",
+    "cutTwoStripsToFinishTheArmholes": "Cut two strips to finish the armholes",
+    "length": "Length",
+    "width": "Width"
+  },
+  "o": {
+    "armholeDrop": {
+      "t": "Armlochabsenkung",
+      "d": "Senkt das Armloch um diesen Wert. Negative Werte erhöhen es."
+    },
+    "backlineBend": {
+      "t": "Hintere Armlochform",
+      "d": "Bestimmt die Form / Krümmung der Rückseite der Armlöcher."
+    },
+    "hipsEase": {
+      "t": "Bequemlichkeitszugabe Hüfte",
+      "d": "Die Menge an Bequemlichkeits-/Bewegungszugabe an deinen Hüften."
+    },
+    "necklineBend": {
+      "t": "Ausschnittsform",
+      "d": "Bestimmt die Form / Krümmung des Halsausschnitts vorne."
+    },
+    "necklineDrop": {
+      "t": "Ausschnitt Tiefe",
+      "d": "Wie tief der Ausschnitt vorne geht."
+    },
+    "shoulderStrapPlacement": {
+      "t": "Platzierung der Schulterträger",
+      "d": "Bestimmt, ob der Schulterträger näher am Hals (niedrigere Zahlen), oder näher an der Schulter (höhere Zahlen) liegt."
+    },
+    "shoulderStrapWidth": {
+      "t": "Breite der Schulterträger",
+      "d": "Die Breite der Schulterträger."
+    },
+    "stretchFactor": {
+      "t": "Dehnung",
+      "d": "Bestimmt die horizontale negative Bewegungszugabe."
+    }
+  },
+  "p": {}
+}

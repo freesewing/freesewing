@@ -1,8 +1,8 @@
 ---
-title: "Ribbing stretch"
+title: "Bündchen-Elastizität"
 ---
 
-![Ribbing stretch on Hugo](./ribbingstretch.svg)
+![Ribbing-Strecken auf Hugo](./ribbingstretch.svg)
 
 Mit dieser Option kannst du die Dehnung deines Bündchens anpassen.
 
@@ -10,8 +10,8 @@ Wenn du zum Beispiel 90% für jede 10cm an Bündchen auswählst, werden wir nur 
 
 <Note>
 
-If you're not sure what to pick, best is to take the ribbing you are going to use see how much of it
-you need to stretch out to get to 10 cm with a _good_ stretch.
+Wenn du dir nicht sicher bist, was du nehmen sollst, nimmst du am besten das Rippenband, das du verwenden willst, und schaust, wie viel davon
+du ausdehnen musst, um auf 10 cm mit einer _guten_ Dehnung zu kommen.
 
 </Note>
 

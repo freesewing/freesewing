@@ -1,33 +1,33 @@
 ---
-title: "Tiberius Tunica: Cutting Instructions"
+title: "Туніка Тіберія: Інструкція з крою"
 ---
 
 <Tip>
 
-##### Use the power of the _paperless_ option - do _not_ print this pattern
+##### Використовуйте можливості опції _безпаперового_ друку - не друкуйте цей шаблон
 
-Tiberius is just a big rectangle, so printing the pattern out is a bit of a waste. Save a tree, toggle the [paperless](/docs/guide/options/paperless) option, and copy the dimensions to your fabric, while respecting the grainline.
+Тиберій - це просто великий прямокутник, тому роздруковувати шаблон - це трохи марнотратство. Збережіть дерево, увімкніть опцію [paperless](/docs/guide/options/paperless) і скопіюйте розміри на тканину, дотримуючись дольової лінії.
 
 </Tip>
 
-Tiberius consists of only one part, the _tunica_, that will act as a pattern for both front and back pieces.
+Тіберій складається лише з однієї частини, туніки __, яка слугуватиме викрійкою як для передньої, так і для задньої частини.
 
-- cut _2 tunicae_, _on the fold_
+- крій _2 туніки_, _на згин_
 
 <Note>
 
-##### Notes
+##### Примітки
 
-You have two options here: Either you cut your tunica in two pieces as described above, or you cut it in only one piece. Historically speaking, the time period or location you're aiming for can make a difference (ancient Rome vs. ancient Greece, for example). If you care about authenticity, I suggest researching this a bit.
+Тут у вас є два варіанти: Або ви розрізаєте туніку на дві частини, як описано вище, або ви розрізаєте її лише на одну частину. З історичної точки зору, часовий період або місце, до якого ви прагнете, може мати значення (наприклад, Стародавній Рим проти Стародавньої Греції). Якщо ви дбаєте про автентичність, пропоную трохи дослідити цю тему.
 
 </Note>
 
-### On Historical Accuracy
+### Про історичну достовірність
 
-The further we go back in time, the less extant garments we have to base research on. Often there may be scraps of fabric left behind by stroke of luck but most of our information starts to come from (in archaeology) secondary sources like written texts from contemporaries.
+Чим далі в минуле, тим менше вцілілого одягу ми маємо для дослідження. Часто, завдяки щасливому випадку, можна знайти клаптики тканини, але більшість інформації ми отримуємо з вторинних джерел (в археології), наприклад, письмових текстів сучасників.
 
-This is especially true for the Roman and Mediaeval eras, not to mention that a lot of the available research is behind a paywall.
+Особливо це стосується римської та середньовічної епох, не кажучи вже про те, що багато наявних досліджень знаходяться в закритому доступі.
 
-We can’t be 100 percent historically accurate, because we’re living in a different time, and everything we use to sew is different now from before. Even fabric is woven in a different way.
+Ми не можемо бути на 100% історично точними, тому що ми живемо в інший час, і все, що ми використовуємо для шиття, зараз відрізняється від того, що було раніше. Навіть тканина виткана по-іншому.
 
-How ‘accurate’ you want to be is up to you, there is no wrong way to do this and research is not required -- though it can be fun!
+Наскільки "точними" ви хочете бути, залежить від вас, немає неправильного способу зробити це, і дослідження не є обов'язковим - хоча це може бути весело!

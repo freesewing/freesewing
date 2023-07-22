@@ -1,4 +1,4 @@
-import { SectionsMenu } from 'site/components/navigation/sections-menu.mjs'
+import { SectionsMenu } from 'shared/components/navigation/sections-menu.mjs'
 import { useTranslation } from 'next-i18next'
 import { ActiveSection, ns as primaryNs } from 'shared/components/navigation/primary.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'

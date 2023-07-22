@@ -1,25 +1,25 @@
 ---
-title: "Sandy circle skirt: Cutting Instructions"
+title: "Пісочна спідниця-коло: Інструкція з крою"
 ---
 
 <Note>
 
-If not using seamless follow the default list, If using seamless follow the seamless list.
+Якщо не використовуєте безшовний, дотримуйтесь списку за замовчуванням, якщо використовуєте безшовний, дотримуйтесь списку безшовний.
 
 </Note>
 
-**Main Fabric**
+**Основна тканина**
 
-- (If default) Cut **1 skirt** part on the fold.
-- (If seamless) Cut **1 skirt** part on double fold.
-- (If straight) Cut **1 waistband** part.
-- (If curved) Cut **2 waistband** parts.
+- (За замовчуванням) Відріжте **1 спідницю** частину по згину.
+- (Якщо безшовна) Виріжте **1 спідницю** частину на подвійний згин.
+- (Якщо пряма) Виріжте **1 деталь пояса** .
+- (Якщо вигнута) Виріжте **2 частини пояса** .
 
-**Lining Fabric (Optional)**
+**Підкладкова тканина (необов'язково)**
 
-- (If default) Cut **1 skirt** part on the fold.
-- (If seamless) Cut **1 skirt** part on double fold.
+- (За замовчуванням) Відріжте **1 спідницю** частину по згину.
+- (Якщо безшовна) Виріжте **1 спідницю** частину на подвійний згин.
 
-**Interfacing**
+**Взаємодія**
 
-- Cut **1 waistband** part.
+- Виріжте **1 частину пояса** .

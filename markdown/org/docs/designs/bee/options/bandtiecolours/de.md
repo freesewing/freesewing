@@ -1,10 +1,10 @@
 ---
-title: "Band (chest) tie length colours"
+title: "Farben des Brustbandes"
 ---
 
 ***
 
-Whether you want single color tie around your chest, or dual-coloured ones
+Ob du eine einfarbige oder eine zweifarbige Krawatte um deine Brust haben möchtest
 
 ## Effekt dieser Option auf das Schnittmuster
 

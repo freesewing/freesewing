@@ -1,10 +1,10 @@
 ---
-title: "Chest ease"
+title: "Overwijdte borst"
 ---
 
 ***
 
-Controls the chest ease in the underlying Bella block Bee is based on
+Regelt het borstgemak in het onderliggende Bella blok Bee is gebaseerd op
 
 ## Effect van deze optie op het patroon
 

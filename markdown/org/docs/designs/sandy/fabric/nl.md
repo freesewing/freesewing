@@ -1,39 +1,39 @@
 ---
-title: "Sandy circle skirt: Fabric Options"
+title: "Sandy cirkelrok: Stofopties"
 ---
 
-### Main Fabric
+### Hoofd stof
 
-A circle skirt is a very versatile garment and can be made from a variety of fabric. It all depends on your intended use and preferred style.
+Een cirkelrok is een heel veelzijdig kledingstuk en kan van allerlei verschillende stoffen worden gemaakt. Het hangt allemaal af van het beoogde gebruik en de voorkeursstijl.
 
-- If you wish for an everday, easy to wash skirt then **Linen** and **Cotton** is the way to go.
-- If you are looking for something more formal you may want to try **Suiting Fabrics**.
-- If you want something warm for the winter you can try **Wools**.
-- If wish for something flowy that drapes you can try lightweight materials such as **Chiffon**.
-- If you are want something for a special occasion who may wish to try **Brocades** and **Silks**.
+- Als je een rok voor elke dag wilt die gemakkelijk te wassen is, dan is **Linnen** en **Katoen** de juiste keuze.
+- Als je op zoek bent naar iets formelers, kun je **Suiting Fabrics**proberen.
+- Als je iets warms wilt voor de winter kun je **Wools**proberen.
+- Als je iets vloeiends wilt dat drapeert, kun je lichtgewicht materialen proberen zoals **Chiffon**.
+- Als je iets wilt voor een speciale gelegenheid, probeer dan eens **Brocades** en **Silks**.
 
-Basically any fabric can be used to make a circle skirt you just need to find one that is right for you.
+In principe kun je elke stof gebruiken om een cirkelrok te maken, je hoeft alleen maar een stof te vinden die bij je past.
 
 <Tip>
 
-Keep in mind the weight, drape and body of the fabric. Do you want the skirt to hang? or do you want it to swoosh? do you want it to be rigid or flowy?
-Another thing to look out for is gathering, if you are making a gathered Sandy you will need to make sure your fabric can gather nicely or be pleated if you prefer.
-Circle skirts can look very different dependant on these things and whether you are making a full, half or quarter circle skirt.
+Houd rekening met het gewicht, de drapering en de body van de stof. Wil je dat de rok hangt? of wil je dat het gaat swooshen? Wil je het stijf of vloeiend?
+Iets anders waar je op moet letten is rimpelen, als je een gerimpelde Sandy maakt, moet je ervoor zorgen dat je stof mooi kan rimpelen of geplooid kan worden als je dat liever hebt.
+Cirkelrokken kunnen er heel verschillend uitzien, afhankelijk van deze dingen en of je een volle, halve of kwart cirkelrok maakt.
 
 </Tip>
 
 <Note>
 
-Need some inspo? check out [Sandy's showcase](/showcase/designs/sandy/) page and see some finished Sandy's made by our wonderful community.
+Inspiratie nodig? Kijk op de [Sandy's showcase](/showcase/designs/sandy/) pagina en bekijk een aantal voltooide Sandy's die door onze geweldige community zijn gemaakt.
 
 </Note>
 
-### Lining Fabric
+### Voering
 
-Linings are optional for Sandy but you may need one if your main fabric is scratchy, sheds, hard to wash or is not nice to wear against skin. You will want to use lighter fabrics to reduce bulk such as lightweight **Cottons** and **Silks**.
+Voeringen zijn optioneel voor Sandy, maar je hebt er misschien wel een nodig als je hoofdstof kriebelt, afgeeft, moeilijk te wassen is of niet prettig aanvoelt op de huid. Je zult lichtere stoffen willen gebruiken om de bulk te verminderen, zoals lichtgewicht **katoen** en **zijde**.
 
 <Note>
 
-Though pockets are not included in Sandy many people like to add them so make sure your lining can hold weight if you intend to make them out of the same fabric.
+Hoewel zakken niet zijn inbegrepen in Sandy willen veel mensen ze graag toevoegen, dus zorg ervoor dat je voering gewicht kan dragen als je van plan bent ze van dezelfde stof te maken.
 
 </Note>

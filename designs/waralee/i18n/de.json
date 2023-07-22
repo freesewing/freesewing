@@ -1,0 +1,75 @@
+{
+  "t": "Waralee, die Wickelhose",
+  "d": "Waralee ist eine Wickelhose.",
+  "p": {
+    "backPocket": "Back pocket",
+    "cutout": "Cutout",
+    "facings": "Facings",
+    "mini": "Mini",
+    "pants": "Pants",
+    "pocket": "Pocket",
+    "strapBack": "Strap back",
+    "strapFront": "Strap front",
+    "waistbandBack": "Waistband back",
+    "waistbandFront": "Waistband front"
+  },
+  "s": {},
+  "o": {
+    "backPocket": {
+      "t": "Rückwärtige Tasche",
+      "d": "Definiert ob rückwärtige Taschen integriert werden"
+    },
+    "frontPocket": {
+      "t": "Vordere Taschen",
+      "d": "Ob eine Fronttasche hinzugefügt werden soll oder nicht"
+    },
+    "hemWidth": {
+      "t": "Saumgröße",
+      "d": "Größe des Saums am unteren Rand der Hose"
+    },
+    "waistbandWidth": {
+      "t": "Taillenbund",
+      "d": "Größe des Taillenbundes"
+    },
+    "waistRaise": {
+      "t": "Taillenhöhe",
+      "d": "Wie hoch soll die Taille über dem Gesäßumfang angelegt werden? Dies beeinflusst die Tiefe des Schrittauschnittes."
+    },
+    "crotchBack": {
+      "t": "Hinterer Schritt",
+      "d": "Prozentsatz des Gesäßumfangs, den der hintere Teil des Schrittes benötigt. Dies ergibt mehr oder weniger Abstand zwischen der Seitennaht und der hinteren Mitte."
+    },
+    "crotchFront": {
+      "t": "Vorderer Schritt",
+      "d": "Prozentsatz des Gesäßumfangs, den der vordere Teil des Schrittes benötigt. Dies beeinflusst den Abstand zwischen Seitennaht und vorderer Mittelnaht."
+    },
+    "crotchFactorBackHor": {
+      "t": "Horizontaler hinterer Schritt Faktor",
+      "d": "Wird benutzt um die Kurze des hinteren Schritts horizontal zu verschieben"
+    },
+    "crotchFactorBackVer": {
+      "t": "Vertikaler hinterer Schritt Faktor",
+      "d": "Wird benutzt um die Kurve des hinteren Schritts vertikal zu verschieben"
+    },
+    "crotchFactorFrontHor": {
+      "t": "Horizontaler vorderer Schritt Faktor",
+      "d": "Wird verwendet um die Kurve des vorderen Schritts horizontal zu verschieben"
+    },
+    "crotchFactorFrontVer": {
+      "t": "Vertikaler vorderer Schritt Faktor",
+      "d": "Wird benutzt um die Kurve des vorderen Schritts vertikal zu verschieben"
+    },
+    "waistOverlap": {
+      "t": "Übertritt an der Taille",
+      "d": "Dieser Wert legt fest, wie starken Übertritt Sie auf Taillenhöhe an der Seite haben möchten. Beim Wert 0 treffen sich die Teile auf der Linie der Seitennaht. Beim Wert 100 überlappen die Teile soweit, dass sie jeweils zur vorderen und hinteren Mitte reichen."
+    },
+    "legShortening": {
+      "t": "Verkürzung des Hosenbeins",
+      "d": "Dieser Wert legt fest wie lange die Hosen sind. Es ist ein Faktor der Innenbeinnahtlänge. Je höher der Wert, desto mehr wird die Länge gekürzt."
+    },
+    "backRaise": {
+      "t": "Hintere Anstieg",
+      "d": "Diese Einstellung erhöht den Taillenlinie im Rücken. Unsere Taille sitzt nicht horizontal, sondern ist auf der Rückseite angehoben. Diese Einstellung erlaubt es Ihnen, dies im Rücken zu erhöhen, wenn Sie es für eine gute Passform benötigen."
+    }
+  }
+}

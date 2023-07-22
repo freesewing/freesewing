@@ -1,11 +1,11 @@
 ---
-title: "Back pocket facing"
+title: "Обшивка задньої кишені"
 ---
 
 ***
 
-Controls whether or not to include facing on the back pockets
+Дозволяє контролювати, чи потрібно вкладати обшивку на задніх кишенях
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_backpocketfacing_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](charlie_backpocketfacing_sample.svg "Вплив цієї опції на шаблон")

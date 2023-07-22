@@ -1,9 +1,9 @@
 ---
-title: "Hugo hoodie: What You Need"
+title: "Hugo hoodie: Wat je nodig hebt"
 ---
 
-To make Hugo, you will need the following:
+Om Hugo te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- About 2 meters (2.2 yards) of a suitable fabric ([see Fabric options](/docs/patterns/hugo/fabric))
+- Ongeveer 2 meter van een geschikte stof ([zie Stofopties](/docs/patterns/hugo/fabric))
 - Boordstof voor de zoom en manchetten

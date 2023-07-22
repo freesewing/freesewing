@@ -1,13 +1,13 @@
 ---
-title: "Flat-felled seam allowace"
+title: "Припуск на плоский фальц"
 ---
 
-Controls the amount of seam allowance on flat-felled seams.
+Контролює величину припуску на плоскі шви.
 
-The armhole and side seams on the shirt are flat-felled seams, and those require extra seam allowance. How much is a matter of personal preference, since some people prefer wider flat-felled seams, while others have a preference for more narrow flat-felled seams.
+Пройма та бокові шви на сорочці - плоскі, тому вони потребують додаткових припусків на шви. Скільки - це питання особистих уподобань, оскільки деякі люди віддають перевагу більш широким пласким швам, в той час як інші віддають перевагу більш вузьким пласким швам.
 
-This option controls the amount of flat-felled seam allowance as a factor of the regular seam allowance.
+Цей параметр регулює величину припуску на плоскі шви як коефіцієнт припуску на звичайні шви.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_ffsa_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simone_ffsa_sample.svg "Вплив цієї опції на шаблон")

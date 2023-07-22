@@ -1,6 +1,6 @@
 ---
-title: "Use Cross Seam"
+title: "Використовуйте поперечний шов"
 ---
 
-This option determines whether the cross seam is used to determine the total length, i.e. the height of all pattern pieces combined. If enabled, increasing the gusset length (via the relevant option) will cause front and back height to be adjusted. If disabled, front and back height are constant and the gusset length option affects the total length. When this option is enabled and the Cross Seam Front measurement is also available, that measurement is used to determine the placement of the gusset. 
+Цей параметр визначає, чи використовується поперечний шов для визначення загальної довжини, тобто висоти всіх деталей разом узятих. Якщо увімкнено, збільшення довжини ластовиці (за допомогою відповідної опції) призведе до регулювання висоти передньої та задньої частини. Якщо вимкнено, висота передньої і задньої частини залишаються постійними, а параметр довжини ластовиці впливає на загальну довжину. Якщо ця опція ввімкнена, а також доступне вимірювання поперечного шва спереду, це вимірювання використовується для визначення місця розташування ластовиці. 
 

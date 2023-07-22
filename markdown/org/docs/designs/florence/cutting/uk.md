@@ -1,12 +1,12 @@
 ---
-title: "Florence face mask: Cutting Instructions"
+title: "Маска для обличчя \"Флоренція\": Інструкція з різання"
 ---
 
-Florence only has one part, the _mask_. This is half of the mask, so we will need two of them. In addition, we want an outer and inner layer of fabric, so we'll need four in total:
+У Флоренції є лише одна частина - маска __. Це половина маски, тому нам знадобиться дві. Крім того, нам потрібен зовнішній і внутрішній шар тканини, тож загалом їх знадобиться чотири:
 
-- **Main fabric**
-  - Cut **2 masks** parts
-- **Lining fabric**
-  - Cut **2 masks** parts
+- **Основна тканина**
+  - Виріжте **2 маски** частини
+- **Підкладкова тканина**
+  - Виріжте **2 маски** частини
 
-If you're using the same fabric in and out (which is fine) then simply cut **4 mask** parts.
+Якщо ви використовуєте ту саму тканину всередині і зовні (що нормально), просто виріжте **4 частини маски** .

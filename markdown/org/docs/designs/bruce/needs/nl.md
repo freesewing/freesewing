@@ -1,10 +1,10 @@
 ---
-title: "Bruce boxer briefs: What You Need"
+title: "Bruce boxerslips: Wat je nodig hebt"
 ---
 
-To make Bruce, you will need the following:
+Om Bruce te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- About 1 meter (1.1 yards) of a suitable fabric ([see Fabric options](/docs/patterns/bruce/fabric/))
-- Enough wide (3cm (1.2 inch) or wider) elastic to fit around your waist
+- Ongeveer 1 meter van een geschikte stof ([zie Stofopties](/docs/patterns/bruce/fabric/))
+- Genoeg breed (3 cm of breder) elastiek om rond je middel te passen
 - Een overlock, alhoewel je kan overleven zonder

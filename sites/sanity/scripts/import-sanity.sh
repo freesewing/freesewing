@@ -10,3 +10,4 @@ sanity dataset import ./export/showcasede.ndjson site-content
 sanity dataset import ./export/showcasenl.ndjson site-content
 sanity dataset import ./export/showcasefr.ndjson site-content
 sanity dataset import ./export/newsletter.ndjson site-content
+sanity dataset import ./export/contentimg.ndjson site-content

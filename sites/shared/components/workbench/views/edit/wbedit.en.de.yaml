@@ -1,0 +1,4 @@
+yamlEditViewTitleThing: 'Musterkonfiguration bearbeiten für {thing}'
+yamlEditViewError: Probleme mit YAML
+yamlEditViewErrorDesc: Wir haben deine Eingabe gespeichert, aber sie funktioniert möglicherweise aus folgenden Gründen nicht
+save: Einstellungen speichern

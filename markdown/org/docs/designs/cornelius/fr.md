@@ -1,5 +1,5 @@
 ---
-title: "Cornelius cycling breeches"
+title: "Culotte de cyclisme Cornelius"
 ---
 
 <PatternDocs pattern='cornelius' />

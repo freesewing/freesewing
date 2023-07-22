@@ -1,5 +1,5 @@
 ---
-title: "Titan trouser block: Design Options"
+title: "Titan-Hosenblock: Design Optionen"
 ---
 
 <PatternOptions pattern='titan' />

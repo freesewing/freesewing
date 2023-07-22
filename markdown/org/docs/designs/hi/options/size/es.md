@@ -2,8 +2,8 @@
 title: "Talla"
 ---
 
-Hi can be made in different sizes. The default is about a meter in length. This is a percentage of this default length.
+Hi puede fabricarse en diferentes tamaños. El valor por defecto es de aproximadamente un metro de longitud. Es un porcentaje de esta longitud por defecto.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](hi_size_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](hi_size_sample.svg "Efecto de esta opción en el patrón")

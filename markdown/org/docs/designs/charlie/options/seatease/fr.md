@@ -1,9 +1,9 @@
 ---
-titre : "Facilité d'assise"
+title: "Aisance d'assise"
 ---
 
-Controls the amount of ease at your seat/bum.
+Contrôle la quantité d'aisance à votre siège/bum.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_seatease_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_seatease_sample.svg "Effet de cette option sur le motif")

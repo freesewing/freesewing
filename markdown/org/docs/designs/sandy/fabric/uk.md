@@ -1,39 +1,39 @@
 ---
-title: "Sandy circle skirt: Fabric Options"
+title: "Пісочна спідниця-коло: Варіанти тканин"
 ---
 
-### Main Fabric
+### Основна тканина
 
-A circle skirt is a very versatile garment and can be made from a variety of fabric. It all depends on your intended use and preferred style.
+Спідниця-коло - це дуже універсальний одяг, який може бути виготовлений з різноманітних тканин. Все залежить від вашого призначення та стилю, якому ви надаєте перевагу.
 
-- If you wish for an everday, easy to wash skirt then **Linen** and **Cotton** is the way to go.
-- If you are looking for something more formal you may want to try **Suiting Fabrics**.
-- If you want something warm for the winter you can try **Wools**.
-- If wish for something flowy that drapes you can try lightweight materials such as **Chiffon**.
-- If you are want something for a special occasion who may wish to try **Brocades** and **Silks**.
+- Якщо ви хочете повсякденну спідницю, яку легко прати, тоді **Лляна** і **Бавовняна** - це те, що вам потрібно.
+- Якщо ви шукаєте щось більш формальне, спробуйте **Костюмні тканини**.
+- Якщо ви хочете щось тепле на зиму, можете спробувати **Вовняні**.
+- Якщо ви хочете щось струмливе, що драпірується, ви можете спробувати легкі матеріали, такі як **Шифон**.
+- Якщо ви шукаєте щось для особливого випадку, можливо, ви захочете спробувати **Парчу** і **Шовк**.
 
-Basically any fabric can be used to make a circle skirt you just need to find one that is right for you.
+Для пошиття спідниці по колу можна використовувати будь-яку тканину, просто потрібно знайти ту, яка підходить саме вам.
 
 <Tip>
 
-Keep in mind the weight, drape and body of the fabric. Do you want the skirt to hang? or do you want it to swoosh? do you want it to be rigid or flowy?
-Another thing to look out for is gathering, if you are making a gathered Sandy you will need to make sure your fabric can gather nicely or be pleated if you prefer.
-Circle skirts can look very different dependant on these things and whether you are making a full, half or quarter circle skirt.
+Враховуйте вагу, драпірування та структуру тканини. Хочете, щоб спідниця звисала? чи ти хочеш, щоб він злетів? Ви хочете, щоб вона була жорсткою чи плавною?
+Ще одна річ, на яку слід звернути увагу, - це збірка, якщо ви робите пісочний колір, вам потрібно переконатися, що ваша тканина може гарно збиратися або бути плісированою, якщо ви віддаєте перевагу плісе.
+Спідниці по колу можуть виглядати дуже по-різному, залежно від цих деталей і від того, чи робите ви спідницю з повним, половинним або чверть-круговим кроєм.
 
 </Tip>
 
 <Note>
 
-Need some inspo? check out [Sandy's showcase](/showcase/designs/sandy/) page and see some finished Sandy's made by our wonderful community.
+Потрібне натхнення? завітайте на сторінку [Вітрина Сенді] (/showcase/designs/sandy/) і подивіться кілька готових Сенді, створених нашою чудовою спільнотою.
 
 </Note>
 
-### Lining Fabric
+### Підкладкова тканина
 
-Linings are optional for Sandy but you may need one if your main fabric is scratchy, sheds, hard to wash or is not nice to wear against skin. You will want to use lighter fabrics to reduce bulk such as lightweight **Cottons** and **Silks**.
+Підкладка для Sandy не є обов'язковою, але може знадобитися, якщо ваша основна тканина дряпається, линяє, важко переться або неприємна до шкіри. Щоб зменшити об'єм, використовуйте легші тканини, такі як бавовна **, бавовна** і шовк **, шовк**.
 
 <Note>
 
-Though pockets are not included in Sandy many people like to add them so make sure your lining can hold weight if you intend to make them out of the same fabric.
+Хоча кишені не входять до комплекту Sandy, багато людей люблять додавати їх, тому переконайтеся, що ваша підкладка витримає вагу, якщо ви збираєтеся зробити їх з тієї ж тканини.
 
 </Note>

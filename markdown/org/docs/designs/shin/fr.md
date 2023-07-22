@@ -1,5 +1,5 @@
 ---
-title: "Shin swim trunks"
+title: "Boxer de bain Shin"
 ---
 
 <PatternDocs pattern='shin' />

@@ -1,4 +1,4 @@
-import { sleeveCap } from './sleevecap.mjs'
+import { sleevecap } from './sleevecap.mjs'
 import { front } from './front.mjs'
 import { frontBase } from './front-base.mjs'
 import { back } from './back.mjs'
@@ -133,7 +133,7 @@ function draftBreannaSleeve(params) {
 
 export const sleeve = {
   name: 'breanna.sleeve',
-  from: sleeveCap,
+  from: sleevecap,
   after: [front, frontBase, back],
   measurements: ['shoulderToWrist', 'wrist'],
   options: {

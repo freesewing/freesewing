@@ -1,33 +1,33 @@
 ---
-title: "Tiberius Tunica: Cutting Instructions"
+title: "Tiberio Tunica: Instrucciones de corte"
 ---
 
 <Tip>
 
-##### Use the power of the _paperless_ option - do _not_ print this pattern
+##### Utiliza el poder de la opción _paperless_ (sin papel) - no imprimas este patrón
 
-Tiberius is just a big rectangle, so printing the pattern out is a bit of a waste. Save a tree, toggle the [paperless](/docs/guide/options/paperless) option, and copy the dimensions to your fabric, while respecting the grainline.
+Tiberio es sólo un gran rectángulo, por lo que imprimir el patrón es un poco un desperdicio. Guarda un árbol, activa la opción [paperless](/docs/guide/options/paperless) y copia las dimensiones en tu tejido, respetando la línea de grano.
 
 </Tip>
 
-Tiberius consists of only one part, the _tunica_, that will act as a pattern for both front and back pieces.
+El tiberio consta de una sola pieza, la túnica __, que servirá de patrón para las piezas delanteras y traseras.
 
-- cut _2 tunicae_, _on the fold_
+- corta _2 tunicae_, _en el pliegue_
 
 <Note>
 
-##### Notes
+##### Notas
 
-You have two options here: Either you cut your tunica in two pieces as described above, or you cut it in only one piece. Historically speaking, the time period or location you're aiming for can make a difference (ancient Rome vs. ancient Greece, for example). If you care about authenticity, I suggest researching this a bit.
+Aquí tienes dos opciones: O cortas la túnica en dos trozos como se ha descrito anteriormente, o la cortas en un solo trozo. Desde el punto de vista histórico, el periodo de tiempo o el lugar al que te dirijas puede marcar la diferencia (la antigua Roma frente a la antigua Grecia, por ejemplo). Si te importa la autenticidad, te sugiero que investigues un poco sobre esto.
 
 </Note>
 
-### On Historical Accuracy
+### Sobre la precisión histórica
 
-The further we go back in time, the less extant garments we have to base research on. Often there may be scraps of fabric left behind by stroke of luck but most of our information starts to come from (in archaeology) secondary sources like written texts from contemporaries.
+Cuanto más retrocedamos en el tiempo, hay menos prendas de vestir existentes en las que basar la investigación. A veces se encuentran por casualidad trozos de tela, pero la mayoría de nuestra información viene (en arqueología) de fuentes secundarias como textos escritos por gente de esa época.
 
-This is especially true for the Roman and Mediaeval eras, not to mention that a lot of the available research is behind a paywall.
+Esto ocurre especialmente para las épocas romanas y medievales, por no mencionar que gran parte de la investigación disponible está disponible en páginas de pago.
 
-We can’t be 100 percent historically accurate, because we’re living in a different time, and everything we use to sew is different now from before. Even fabric is woven in a different way.
+No podemos ser históricamente fieles al 100% porque vivimos en una época diferente, y todo lo que usamos para coser es diferente. Incluso la tela se teje de diferente manera.
 
-How ‘accurate’ you want to be is up to you, there is no wrong way to do this and research is not required -- though it can be fun!
+Qué tan "fiel" quieras ser depende de ti, no hay manera mala de hacer esto y no necesitas investigar ¡pero puede ser divertido!

@@ -1,6 +1,6 @@
 ---
-title: "Use Cross Seam"
+title: "Utilizar costura transversal"
 ---
 
-This option determines whether the cross seam is used to determine the total length, i.e. the height of all pattern pieces combined. If enabled, increasing the gusset length (via the relevant option) will cause front and back height to be adjusted. If disabled, front and back height are constant and the gusset length option affects the total length. When this option is enabled and the Cross Seam Front measurement is also available, that measurement is used to determine the placement of the gusset. 
+Esta opción determina si la costura transversal se utiliza para determinar la longitud total, es decir, la altura de todas las piezas del patrón combinadas. Si está activada, al aumentar la longitud del fuelle (mediante la opción correspondiente) se ajustará la altura delantera y trasera. Si está desactivada, la altura delantera y trasera son constantes y la opción de longitud del fuelle afecta a la longitud total. Cuando esta opción está activada y también está disponible la medida de Frente de costura transversal, esa medida se utiliza para determinar la colocación del fuelle. 
 

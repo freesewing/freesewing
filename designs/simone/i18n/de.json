@@ -1,0 +1,47 @@
+{
+  "t": "Simone, das Hemd",
+  "d": "Simone ist Simon, angepasst für Menschen mit Brüsten.",
+  "p": {
+    "back": "Rückseite",
+    "buttonholePlacket": "Knopflochleiste",
+    "buttonPlacket": "Knopfleiste",
+    "collar": "Kragen",
+    "collarStand": "Kragensteg",
+    "cuff": "Manschette",
+    "fbaFont": "FBA Vorderseite",
+    "front": "Vorderseite",
+    "frontLeft": "Vorderseite links",
+    "frontRight": "Vorderseite rechts",
+    "sleevePlacketOverlap": "Übertritt der Ärmelleiste",
+    "sleevePlacketUnderlap": "Untertritt der Ärmelleiste",
+    "sleeve": "Ärmel",
+    "yoke": "Passe"
+  },
+  "s": {},
+  "o": {
+    "bustAlignedButtons": {
+      "t": "Auf Brusthöhe ausgerichtete Knöpfe",
+      "d": "Optionale Positionierung der Knöpfe, um sicherzugehen, einen Knopf auf Brusthöhe zu platzieren"
+    },
+    "bustDartAngle": {
+      "t": "Winkel des Brustabnähers",
+      "d": "Kontrolliert den Winkel, in welchem der (seitliche) Brustabnäher sich nach unten neigt"
+    },
+    "bustDartLength": {
+      "t": "Länge des Brustabnähers",
+      "d": "Regelt, wie nahe der Brustabnäher an den Brustpunkt kommt"
+    },
+    "contour": {
+      "t": "Kontur",
+      "d": "Legt fest, wie eng anliegend der Schnitt unterhalb der Brust gestaltet wird"
+    },
+    "frontDarts": {
+      "t": "Vordere Abnäher",
+      "d": "Legt fest, ob vordere Abnäher im Schnitt eingearbeitet werden sollen"
+    },
+    "frontDartLength": {
+      "t": "Länge der vorderen Abnäher",
+      "d": "Legt fest, wie nahe die vorderen Abnäher an den Brustpunkt heranreichen"
+    }
+  }
+}

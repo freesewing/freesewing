@@ -1,9 +1,9 @@
 ---
-title: Margin
+title: Відступ
 ---
 
-The margin setting controls how much space will be added around each pattern part when calculating the pattern layout.
+Параметр "Поле" визначає, скільки місця буде додано навколо кожної деталі під час розрахунку розкладки деталі.
 
-Each pattern part is laid out as a rectangle on the page. The spacing around (and between) these rectangles is controlled by this setting.
+Кожна деталь викрійки розміщена на сторінці у вигляді прямокутника. Відстань навколо (і між) цими прямокутниками контролюється цим параметром.
 
 

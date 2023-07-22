@@ -1,5 +1,6 @@
 import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
+import { i18n } from '../i18n/index.mjs'
 import { skirt } from './skirt.mjs'
 import { waistband } from './waistband.mjs'
 
@@ -10,4 +11,4 @@ const Sandy = new Design({
 })
 
 // Named exports
-export { skirt, waistband, Sandy }
+export { skirt, waistband, Sandy, i18n }

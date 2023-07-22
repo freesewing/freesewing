@@ -1,0 +1,34 @@
+{
+  "t": "Hi shark plush toy",
+  "d": "The world's friendliest shark",
+  "p": {
+    "aboveMouth": "Above mouth",
+    "belly": "Belly",
+    "body": "Body",
+    "bottomFin": "Bottom fin",
+    "lowerTeeth": "Lower teetch",
+    "mouth": "Mouth",
+    "tail": "Tail",
+    "topFin": "Top fin",
+    "upperTeeth": "Upper teeth"
+  },
+  "s": {},
+  "o": {
+    "hungry": {
+      "t": "Hambre",
+      "d": "Cambios en la forma de la boca para expresar que Hi tiene hambre"
+    },
+    "nosePointiness": {
+      "t": "Agudeza de la nariz",
+      "d": "Controla cómo de puntiaguda es la nariz de Hi"
+    },
+    "aggressive": {
+      "t": "Agresividad",
+      "d": "Ponle o no dientes puntiagudos a Hi"
+    },
+    "size": {
+      "t": "Tamaño",
+      "d": "Los tiburones vienen en todos los tamaños, y Hi también"
+    }
+  }
+}

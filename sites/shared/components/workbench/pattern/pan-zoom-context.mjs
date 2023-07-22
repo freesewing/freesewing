@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useEffect } from 'react'
+import React, { useState, useMemo, useCallback } from 'react'
 
 /**
  * A context for managing zoom state of a {@see PanZoomPattern}
@@ -9,40 +9,38 @@ export const PanZoomContext = React.createContext({})
 /** Provider for the {@see PanZoomContext} */
 export const PanZoomContextProvider = ({ children }) => {
   const [zoomed, setZoomed] = useState(false)
-  const [_zoomFunctions, setZoomFunctions] = useState(false)
+  const [zoomFunctions, _setZoomFunctions] = useState(false)
+
+  const setZoomFunctions = useCallback(
+    (zoomInstance) => {
+      const reset = () => {
+        setZoomed(false)
+        zoomInstance.resetTransform()
+      }
+
+      if (zoomInstance) {
+        const { zoomIn, zoomOut, resetTransform } = zoomInstance
+        _setZoomFunctions({ zoomIn, zoomOut, resetTransform, reset })
+      }
+    },
+    [_setZoomFunctions, setZoomed]
+  )
+
+  const onTransformed = useCallback(
+    (_ref, state) => {
+      setZoomed(state.scale !== 1)
+    },
+    [setZoomed]
+  )
 
   const value = useMemo(() => {
-    const onTransformed = (_ref, state) => {
-      setZoomed(state.scale !== 1)
-    }
-
-    const reset = () => {
-      setZoomed(false)
-      _zoomFunctions.resetTransform()
-    }
-
     return {
       zoomed,
-      zoomFunctions: _zoomFunctions ? { ..._zoomFunctions, reset } : false,
+      zoomFunctions,
       setZoomFunctions,
       onTransformed,
     }
-  }, [zoomed, setZoomed, _zoomFunctions, setZoomFunctions])
+  }, [zoomed, zoomFunctions, setZoomFunctions, onTransformed])
 
   return <PanZoomContext.Provider value={value}>{children}</PanZoomContext.Provider>
-}
-
-/**
- * A component to capture the zoom functions and set them on the zoom context
- * Place this inside of a TransformWrapper child function.
- * See {@see PanZoomPattern} for an example
- * */
-export const PanZoomCapture = ({ resetTransform, zoomIn, zoomOut, setZoomFunctions }) => {
-  useEffect(() => {
-    if (typeof setZoomFunctions === 'function') {
-      setZoomFunctions({ resetTransform, zoomIn, zoomOut })
-    }
-  })
-
-  return <></>
 }

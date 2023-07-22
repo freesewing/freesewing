@@ -1,0 +1,79 @@
+{
+  "t": "Titan trouser block",
+  "d": "Titan is a dartless trouser block.",
+  "p": {
+    "back": "Back",
+    "front": "Front"
+  },
+  "s": {},
+  "o": {
+    "kneeEase": {
+      "t": "Knee ease",
+      "d": "Controls the amout of ease at the knee"
+    },
+    "waistHeight": {
+      "t": "Waist height",
+      "d": "Controls the height of the waist, 100% = waist height, 0% = hip height"
+    },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "Controls the length of the trousers"
+    },
+    "crotchDrop": {
+      "t": "Crotch drop",
+      "d": "Lowers the crotch for a more relaxed fit"
+    },
+    "fitKnee": {
+      "t": "Fit the knee",
+      "d": "Fits the legs from based on the knee circumference, rather than seat circumference"
+    },
+    "legBalance": {
+      "t": "Leg balance",
+      "d": "Controls the ratio between front and back panel of the leg"
+    },
+    "crossSeamCurveStart": {
+      "t": "Start of the cross seam curve",
+      "d": "Controls how far into the cross seam we start to curve"
+    },
+    "crossSeamCurveBend": {
+      "t": "Cross seam bend",
+      "d": "Controls the curvature of the cross seam"
+    },
+    "crossSeamCurveAngle": {
+      "t": "Cross seam angle",
+      "d": "Controls the angle of the cross seam"
+    },
+    "crotchSeamCurveStart": {
+      "t": "Start of the crotch seam curve",
+      "d": "Controls how far into the crotch seam we start to curve"
+    },
+    "crotchSeamCurveBend": {
+      "t": "Crotch seam bend",
+      "d": "Controls the curvature of the crotch seam"
+    },
+    "crotchSeamCurveAngle": {
+      "t": "Crotch seam angle",
+      "d": "Controls the angle of the crotch seam"
+    },
+    "seatEase": {
+      "t": "Seat ease",
+      "d": "Controls the amount of ease at your seat"
+    },
+    "waistBalance": {
+      "t": "Waist balance",
+      "d": "Controls the horizontal position of the waist relative to the seat"
+    },
+    "waistbandWidth": {
+      "t": "Waistband width",
+      "d": "The width of the waistband"
+    },
+    "waistEase": {
+      "t": "Wait ease",
+      "d": "Controls the amount of ease at your waist"
+    },
+    "grainlinePosition": {
+      "t": "Grainline position",
+      "d": "Controls the horizontal position of the leg relative to the seat"
+    }
+  }
+}

@@ -1,15 +1,15 @@
 ---
-title: "Curve to waist"
+title: "Curva hasta la cintura"
 ---
 
-Choose this option to draft Teagan to curve towards your waist before curving towards the hips.
+Elige esta opción para que Teagan se curve hacia tu cintura antes de curvarse hacia las caderas.
 
-If waist measurement (plus ease) is smaller than hips (plus ease), this creates an hourglass shape such as found in 'fitted' or 'ladies' T-shirts (as opposed to 'regular' or 'unisex').
+Si la medida de la cintura (más la holgura) es menor que la de las caderas (más la holgura), se crea una forma de reloj de arena, como la de las camisetas "entalladas" o "de mujer" (en contraposición a las "normales" o "unisex").
 
 <Note>
-This option can also be used when the waist measurement exceeds the hip measurement, but this results in a non-standard T-shirt shape which may be impossible to put on.
+Esta opción también puede utilizarse cuando la medida de la cintura supera la medida de la cadera, pero esto da lugar a una forma de camiseta no estándar que puede ser imposible de poner.
 </Note>
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_curvetowaist_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](teagan_curvetowaist_sample.svg "Efecto de esta opción en el patrón")

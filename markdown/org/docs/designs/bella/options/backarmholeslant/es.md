@@ -6,7 +6,7 @@ title: "Slant del orificio trasero"
 
 ![El efecto de la opción de inclinación del orificio trasero sobre el patrón](sample.png)
 
-The **back armhole slant** slightly rotates the armhole around the back pitch point.
+La inclinación de la sisa de la espalda **** gira ligeramente la sisa alrededor del punto de inclinación de la espalda.
 
 ## Efecto de esta opción en el patrón
 

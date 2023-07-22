@@ -1,5 +1,5 @@
 ---
-titre : "Les extrémités des bandes de cou"
+title: "Extrémités des bandes de cou"
 ---
 
 ***

@@ -1,10 +1,10 @@
 ---
-title: "Sleevecap Q4 offset"
+title: "Tête de manche décalage Q4"
 ---
 
 ![Le décalage du quatrième quadrant de la tête de manche](./sleevecapq4offset.svg)
 
-Cette option contrôle le décalage du quatrième quadrant de la tête de manche.
+Cette option contrôle le décalage dans le quatrième quadrant de la tête de manche.
 
 <Tip>
 
@@ -14,4 +14,4 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](diana_sleevecapq4offset_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](diana_sleevecapq4offset_sample.svg "Effet de cette option sur le motif")

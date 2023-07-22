@@ -1,9 +1,9 @@
 ---
-title: "Hugo hoodie: What You Need"
+title: "Sudadera con capucha Hugo: Lo que necesitas"
 ---
 
-To make Hugo, you will need the following:
+Para hacer Hugo, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- About 2 meters (2.2 yards) of a suitable fabric ([see Fabric options](/docs/patterns/hugo/fabric))
+- Unos 2 metros (2,2 yardas) de una tela adecuada ([ver Opciones de tela](/docs/patterns/hugo/fabric))
 - Tejido de costillas para la taladra y las tazas

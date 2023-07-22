@@ -1,39 +1,39 @@
 ---
-title: "Lunetius Lacerna: Sewing Instructions"
+title: "Lunetius Lacerna : Instructions de couture"
 ---
 
 <Note>
 
-All the sewing can be done by machine or by hand as you prefer. If you want to sew with historically accurate thread, you can use linen or wool thread, or silk if you prefer.
+Toutes les coutures peuvent être faites à la machine ou à la main, selon tes préférences. Si tu veux coudre avec du fil historiquement exact, tu peux utiliser du fil de lin ou de laine, ou de la soie si tu préfères.
 
 </Note>
 
-### Step 1: Sewing and finishing the centre back seam
+### Étape 1 : couture et finition de la couture centrale du dos.
 
-- If you cut Lunetius with a centre back seam, sew this up first and finish the seam in some way. You can do this by binding it, or by felling it to the fabric. On a stretch fabric simply sewing up the centre back seam is enough.
-
-<Tip>
-
-When done by hand, this can be done with a spaced backstitch, or a running stitch with the occasional backstitch.
-
-On the machine a regular straight stitch in any size will work.
-
-Felling the edges by hand can be done with a felling stitch, or a running stitch if you prefer. On the machine you can use any stitch you use to hem fabric.
-
-</Tip>
-
-### Step 2: Hemming the edges
-
-- The next and last step is to finish the edges. This can be done by turning a hem on the whole edge, or by using a binding. Once this is done, you are finished!
+- Si tu découpes Lunetius avec une couture centrale au dos, couds-la d'abord et finis la couture d'une manière ou d'une autre. Tu peux le faire en le liant ou en le feutrant au tissu. Sur un tissu extensible, il suffit de coudre la couture centrale du dos.
 
 <Tip>
 
-When handsewing you can use a felling stitch or a running stitch. Or any other stitch you prefer for hemming.
+Lorsque tu le fais à la main, tu peux le faire avec un point arrière espacé, ou un point courant avec un point arrière occasionnel.
 
-On the machine, a straight stitch is a good option, but if you have a blind hem stitch that is an option too.
+À la machine, un point droit ordinaire de n'importe quelle taille fera l'affaire.
+
+L'abattage des bords à la main peut se faire avec un point d'abattage, ou un point courant si tu préfères. Sur la machine, tu peux utiliser n'importe quel point que tu utilises pour faire un ourlet sur un tissu.
 
 </Tip>
 
-### Step 3: Enjoy!
+### Étape 2 : Ourler les bords
 
-That's it you are all done! Now take a _fibula_ (a brooch, pin or clasp) to fasten your cloak over your right shoulder (that is how the Romans did it, you can of course also take the left shoulder, or the middle, or whatever you prefer) and enjoy looking dramatic.
+- La prochaine et dernière étape consiste à finir les bords. Cela peut se faire en tournant un ourlet sur tout le bord, ou en utilisant une reliure. Une fois que c'est fait, tu as terminé !
+
+<Tip>
+
+Pour coudre à la main, tu peux utiliser un point d'abattage ou un point de passage. Ou tout autre point que tu préfères pour faire un ourlet.
+
+Sur la machine, un point droit est une bonne option, mais si tu as un point d'ourlet aveugle, c'est aussi une option.
+
+</Tip>
+
+### Étape 3: Profitez-en!
+
+Voilà, tu as terminé ! Prends maintenant une fibule __ (une broche, une épingle ou un fermoir) pour attacher ta cape sur ton épaule droite (c'est ainsi que les Romains procédaient, tu peux bien sûr aussi prendre l'épaule gauche, ou le milieu, ou ce que tu préfères) et profite d'avoir l'air dramatique.

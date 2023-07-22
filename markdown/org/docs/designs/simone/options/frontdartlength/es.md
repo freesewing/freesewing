@@ -1,12 +1,12 @@
 ---
-title: "Front dart length"
+title: "Longitud del dart frontal"
 ---
 
-Controls how close the **front waist darts** approach the bust points.
+Controla lo cerca que se acercan las pinzas de la cintura delantera **** a los puntos del busto.
 
-- Increase this option to lengthen the front waist darts moving them closer to the bust points
-- Decrease this option to shorten the front waist darts moving them further away from the bust points
+- Aumenta esta opción para alargar las pinzas delanteras de la cintura acercándolas a los puntos del pecho
+- Disminuye esta opción para acortar las pinzas delanteras de la cintura alejándolas de los puntos del pecho
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_frontdartlength_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_frontdartlength_sample.svg "Efecto de esta opción en el patrón")

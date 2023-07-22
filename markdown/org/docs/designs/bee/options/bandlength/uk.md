@@ -1,11 +1,11 @@
 ---
-title: "Band Length (Cross back ties)"
+title: "Довжина резинки (перехресні зав'язки)"
 ---
 
 ***
 
-Controls the length of the band around your chest for the cross back ties variation of Bee
+Регулювання довжини стрічки навколо грудей для перехресних зав'язок на спині у варіації "Бджілка
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_bandlength_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bee_bandlength_sample.svg "Вплив цієї опції на шаблон")

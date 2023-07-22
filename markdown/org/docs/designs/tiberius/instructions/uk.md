@@ -1,33 +1,33 @@
 ---
-title: "Tiberius Tunica: Sewing Instructions"
+title: "Туніка Тіберія: Інструкція з пошиття"
 ---
 
 <Note>
 
-Tiberius is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. You do you.
+Тиберій - це історично натхненний візерунок, і якщо ви хочете більше автентичності, ручне шиття - саме те, що вам потрібно. Особисто я використовую швейну машинку. Ти - це ти.
 
 </Note>
 
-### Step 1: Sew shoulder seams
+### Крок 1: Зшийте плечові шви
 
-- Put both parts with good sides together. Sew the shoulder seams, taking care to stop at the notches for the head opening.
-- Finish the seams, with a method of your choice. (If you used the fabrics recommended in the [fabric options](/docs/patterns/tiberius/fabric), they _will_ fray. Folding the seam allowance twice, enclosing the raw edge and topstitching is an option. You can also use decorative topstitching.)
+- Складіть обидві частини лицьовими сторонами разом. Зшийте плечові шви, не забуваючи зупинятися на надсічках для отвору для голови.
+- Обробіть шви за допомогою обраного вами методу. (Якщо ви використовували тканини, рекомендовані в [варіантах тканин](/docs/patterns/tiberius/fabric), вони _будуть_ стиратися. Можна скласти припуск на шов удвічі, обшити необроблений край і прострочити зверху. Ви також можете використовувати декоративну строчку).
 
 <Note>
 
-If you opted for cutting the whole tunica out of one piece, carefully cut out the head opening between the notches instead. Finish the opening.
+Якщо ви вирішили викроїти всю туніку з одного шматка, акуратно виріжте отвір для голови між надрізами. Закінчи відкриття.
 
 </Note>
 
-### Step 2: Sew side seams
+### Крок 2: Зшийте бічні шви
 
-- Still with good sides together, sew the side seams. Start at the notch for the armhole and work your way down. Take care to align your layers properly.
-- Finish seams.
+- Зшийте бокові шви, все ще тримаючи лицьові боки разом, бокові шви зшийте. Почніть з надрізу для пройми і рухайтеся вниз. Подбайте про те, щоб правильно вирівняти шари.
+- Обробити шви.
 
-### Step 3: Hem the bottom edge
+### Крок 3: Підшийте нижній край
 
-Hem the bottom of your garment. If you want to use decorative stitches, this is another place to use them.
+Підшийте нижню частину одягу. Якщо ви хочете використати декоративні стібки, то це ще одне місце, де їх можна застосувати.
 
-### Step 4: You're done!
+### Крок 4: Все готово!
 
-Pull on your tunica, belt it around your waist, play around with how you gather the fabric, and enjoy!
+Натягніть туніку, закріпіть її на талії, пограйтеся з тим, як ви збираєте тканину, і насолоджуйтеся!

@@ -1,0 +1,72 @@
+{
+  "t": "Penelope, falda de tubo",
+  "d": "Penelope es una falda de tubo una gorra de lápiz con o sin apertura en la parte de atrás.",
+  "p": {
+    "back": "Atrás",
+    "front": "Frente",
+    "waistband": "Pretina"
+  },
+  "s": {},
+  "o": {
+    "backDartDepthFactor": {
+      "t": "Factor de la pinza trasera",
+      "d": "Hasta dónde llega la pinza trasera desde la cintura. Es proporción de la medida cintura natural a asiento."
+    },
+    "backVent": {
+      "t": "Ventilación posterior",
+      "d": "Añade una avertura en la parte trasera de la falda."
+    },
+    "backVentLength": {
+      "t": "Longitud de ventilación posterior",
+      "d": "Longitud de la abertura trasera como porcentaje de la longitud de la falda."
+    },
+    "curvedDarts": {
+      "t": "Curved darts",
+      "d": "Whether or not to used curved darts."
+    },
+    "dartToSideSeamFactor": {
+      "t": "Factor pinza a costura lateral",
+      "d": "Porcentaje de cuánta de la reducción de cadera a cintura se toma de las pinzas con respecto a las costuras laterales."
+    },
+    "frontDartDepthFactor": {
+      "t": "Factor de la pinza delantera",
+      "d": "Hasta dónde llega la pinza delantera desde la cintura. Es proporción de la medida cintura natural a asiento."
+    },
+    "hem": {
+      "t": "Anchura del dobladillo",
+      "d": "El tamaño del dobladillo. Medida en valores absolutos."
+    },
+    "hemBonus": {
+      "t": "Bonus del dobladillo",
+      "d": "Esta opción reduce la circunferencia de la falda en el dobladillo. Porcentaje de la medida de asiento."
+    },
+    "lengthBonus": {
+      "t": "Extra de longitud",
+      "d": "Esto ajusta la longitud de la falda. Porcentaje de la medida de cintura natural a rodilla."
+    },
+    "nrOfDarts": {
+      "t": "Número de pinzas",
+      "d": "El número de pinzas usadas en el patrón. El máximo es 2. Esta opción puede ser reducida por el patrón si los cálculos crean pinzas demasiado pequeñas."
+    },
+    "seatEase": {
+      "t": "Facilidad de asiento",
+      "d": "La holgura al nivel del asiento."
+    },
+    "waistBand": {
+      "t": "Cinturilla",
+      "d": "Añade una cinturilla al patrón."
+    },
+    "waistBandWidth": {
+      "t": "Anchura de la cinturilla",
+      "d": "La anchura de la cinturilla."
+    },
+    "waistEase": {
+      "t": "Holgura de cintura",
+      "d": "La holgura al nivel de la cintura."
+    },
+    "zipperLocation": {
+      "t": "Ubicación de la cremallera",
+      "d": "La ubicación de la cremallera."
+    }
+  }
+}

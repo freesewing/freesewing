@@ -1,13 +1,13 @@
 ---
-title: "Waist dart length"
+title: "Довжина талієвої виточки"
 ---
 
 ***
 
-![The effect of the waist dart length option on the pattern](sample.png)
+![Вплив довжини талієвої виточки на викрійку](sample.png)
 
-The **waist dart length** option controls the length of the waist dart towards the bust.
+Параметр **довжина талієвої виточки** регулює довжину талієвої виточки по відношенню до грудей.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_waistdartlength_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bella_waistdartlength_sample.svg "Вплив цієї опції на шаблон")

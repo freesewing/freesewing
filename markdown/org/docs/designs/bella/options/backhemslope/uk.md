@@ -1,13 +1,13 @@
 ---
-title: "Back hem slope"
+title: "Задній нахил подолу"
 ---
 
 ***
 
-![The effect of the back hem slope option on the pattern](sample.png)
+![Вплив параметра нахилу заднього підгину на візерунок](sample.png)
 
-The **back hem slope** option controls the slope of the hem at the back.
+Параметр **нахил заднього краю** регулює нахил заднього краю.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_backhemslope_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bella_backhemslope_sample.svg "Вплив цієї опції на шаблон")

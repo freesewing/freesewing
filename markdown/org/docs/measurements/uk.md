@@ -1,5 +1,5 @@
 ---
-title: Measurements
+title: Заміри
 order: 300
 ---
 

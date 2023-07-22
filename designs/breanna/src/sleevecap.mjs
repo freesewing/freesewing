@@ -225,8 +225,8 @@ function draftBreannaSleevecap(params) {
   return part
 }
 
-export const sleeveCap = {
-  name: 'breanna.sleeveCap',
+export const sleevecap = {
+  name: 'breanna.sleevecap',
   hide: { self: true },
   after: [front, frontBase, back],
   options: {

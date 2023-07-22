@@ -1,5 +1,5 @@
 ---
-title: "Button free length"
+title: "Freie Länge Knopf"
 ---
 
 ![Freie Länge Knopf](./buttonfreelength.svg)
@@ -15,11 +15,11 @@ Sie werden in Ihrem Gürtel aufgefangen und verkomplizieren Badeinbrüche.
 
 Wenn Sie Tasten unter Ihrer Taille haben möchten, können Sie das.
 
-Wenn Sie Tasten unter Ihrer Taille haben möchten, können Sie das. You should enter a negative value here,
-making sure it's within the length bonus you have available.
+Wenn Sie Tasten unter Ihrer Taille haben möchten, können Sie das. Du solltest hier einen negativen Wert eingeben,
+und sicherstellen, dass er innerhalb des Längenbonus liegt, den du zur Verfügung hast.
 
 </Note>
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_buttonfreelength_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_buttonfreelength_sample.svg "Effekt dieser Option auf das Schnittmuster")

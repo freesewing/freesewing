@@ -1,5 +1,5 @@
 ---
-title: "Carlton coat: Required Measurements"
+title: "Manteau Carlton : Mesures requises"
 ---
 
 <PatternMeasurements pattern='carlton' />

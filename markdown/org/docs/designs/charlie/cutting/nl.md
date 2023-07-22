@@ -1,5 +1,5 @@
 ---
-title: "Charlie chinos: Cutting Instructions"
+title: "Charlie chino's: Knip instructies"
 ---
 
 ##### Van buitenste stof
@@ -8,7 +8,7 @@ title: "Charlie chinos: Cutting Instructions"
 - Deel **2**: **2 x** _met de goede kanten op elkaar_.
 - Deel **4**: **4 x**
 - Deel **6**: **2 x**
-- Part **8**: **4 x** (2 pairs _with good sides together_)
+- Onderdeel **8**: **4 x** (2 paar _met goede kanten op elkaar_)
 - Deel **9**: **2 x** _met de goede kanten op elkaar_
 - Deel **10**: **1 x** aan de stofvouw
 - Deel **11**: **1 x** als je een rechte tailleband maakt

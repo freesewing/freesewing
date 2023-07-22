@@ -1,19 +1,19 @@
 ---
-title: "Lucy tie-on pocket: What You Need"
+title: "Pochette Lucy à nouer : Ce dont tu as besoin"
 ---
 
-To make Lucy, you will need the following:
+Pour fabriquer Lucy, tu auras besoin des éléments suivants :
 
-- [Matériel de couture de base](/docs/sewing/basic-sewing-supplies)
-- About 0.5 meters (0.6 yards) of suitable fabric ([see Fabric options](/docs/patterns/lucy/fabric))
-- About 0.5 meters (0.6 yards) of fabric if using a lining
-- About 2 meters (2.2 yards) of bias binding or strips of fabric if binding the edges
-- A length of tape that you can tie around your waist to make the ties with
+- [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
+- Environ 0,5 mètre de tissu approprié ([voir les options de tissu](/docs/patterns/lucy/fabric))
+- Environ 0,5 mètre de tissu si tu utilises une doublure.
+- Environ 2 mètres de biais ou de bandes de tissu pour relier les bords.
+- Une longueur de ruban adhésif que tu peux attacher autour de ta taille pour faire les liens avec.
 
 <Note>
 
-#### Piecing is Period!
+#### Le piquage, c'est un point c'est tout !
 
-Pockets like these do not need to be made out of whole pieces of fabric, you can piece together scraps into a large enough piece to cut your pocket pattern out of. Neither do both sides need to be made out of the same fabric. 
+Les poches de ce type n'ont pas besoin d'être fabriquées avec des pièces de tissu entières, tu peux assembler des chutes pour obtenir un morceau suffisamment grand pour y découper ton patron de poche. Il n'est pas non plus nécessaire que les deux côtés soient faits du même tissu. 
 
 </Note>

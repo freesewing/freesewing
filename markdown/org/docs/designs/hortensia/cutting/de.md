@@ -1,17 +1,17 @@
 ---
-title: "Hortensia handbag: Cutting Instructions"
+title: "Hortensia Handtasche: Schnittanleitung"
 ---
 
-### Materials
+### Materialien
 
-- **Main fabric**
-  - Cut **2 SidePanel** parts
-  - Cut **2 FrontBackPanel** parts
-  - Cut **1 BottomPanel**
-  - Cut **2 SidePanelReinforcement** parts
-  - Cut **2 Strap** parts
-  - Cut **1 ZipperPanel** part
-- **Lining fabric**
-  - Cut **2 SidePanel** parts
-  - Cut **2 FrontBackPanel** parts
-  - Cut **1 BottomPanel**
+- **Oberstoff**
+  - **2 SidePanel** Teile schneiden
+  - **2 FrontBackPanel** Teile schneiden
+  - Schnitt **1 BottomPanel**
+  - **2 SeitenwandVerstärkung** Teile schneiden
+  - **2 Gurt** Teile schneiden
+  - Schneide **1 ZipperPanel** Teil
+- **Futterstoff**
+  - **2 SidePanel** Teile schneiden
+  - **2 FrontBackPanel** Teile schneiden
+  - Schnitt **1 BottomPanel**

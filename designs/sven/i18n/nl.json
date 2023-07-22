@@ -1,0 +1,30 @@
+{
+  "t": "Sven sweater",
+  "d": "Sven is een no-nonsense basic trui.",
+  "p": {
+    "back": "Achterzijde",
+    "cuff": "Manchet",
+    "front": "Voorzijde",
+    "sleeve": "Mouw",
+    "waistband": "Tailleband"
+  },
+  "s": {},
+  "o": {
+    "hipsEase": {
+      "t": "Overwijdte heup",
+      "d": "Controls the amount of ease at your hips (the bottom of the sweater)"
+    },
+    "ribbing": {
+      "t": "Boordstof",
+      "d": "Of we boordstof plaatsen aan de zoom en manchetten of niet."
+    },
+    "ribbingHeight": {
+      "t": "Hoogte boord",
+      "d": "De hoogte van de boordstof aan zoom en manchetten."
+    },
+    "ribbingStretch": {
+      "t": "Stretch boordstof",
+      "d": "De hoeveelheid stretch in de boordstof voor zoom en manchetten."
+    }
+  }
+}

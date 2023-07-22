@@ -1,13 +1,13 @@
 ---
-title: "Front armhole pitch depth"
+title: "Глибина кроку передньої пройми"
 ---
 
 ***
 
-![The effect of the front armhole pitch depth option on the pattern](sample.png)
+![Вплив параметра глибини кроку передньої пройми на лекало](sample.png)
 
-The **front armhole pitch depth** option controls the vertical position of the armhole pitch point at the front.
+Параметр **глибини кроку пройми спереду** регулює вертикальне положення точки кроку пройми спереду.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_frontarmholepitchdepth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bella_frontarmholepitchdepth_sample.svg "Вплив цієї опції на шаблон")

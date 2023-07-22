@@ -1,5 +1,5 @@
 ---
-title: "Wahid waistcoat: Cutting Instructions"
+title: "Wahid-Weste: Schnittanleitung"
 ---
 
 - **Oberstoff**
@@ -20,8 +20,8 @@ title: "Wahid waistcoat: Cutting Instructions"
 
 ###### Caveats
 
-- Do not cut out the **front** dart
-- Do not cut out the **back** dart
-- Watch out for the grainline on the **pocket welt** and **pocket facing**
+- Schneide den **Vorderabnäher** nicht aus
+- Schneide den **Rückenabnäher** nicht aus
+- Achte auf den Fadenlauf am **Taschenbund** und **Taschenbesatz**.
 
 </Warning>

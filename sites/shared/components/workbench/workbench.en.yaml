@@ -31,3 +31,4 @@ patternInspector: Pattern Inspector
 docs: Documentation
 configurePattern: Configure pattern
 measies: Pattern Measurements
+noDesignFound: We could not find this design. This shouldn't happen, so we'd really appreciate you reporting it.

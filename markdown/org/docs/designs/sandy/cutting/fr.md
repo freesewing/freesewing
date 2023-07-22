@@ -1,25 +1,25 @@
 ---
-title: "Sandy circle skirt: Cutting Instructions"
+title: "Jupe circulaire Sandy : Instructions de coupe"
 ---
 
 <Note>
 
-If not using seamless follow the default list, If using seamless follow the seamless list.
+Si tu n'utilises pas le sans couture, suis la liste par défaut, si tu utilises le sans couture, suis la liste sans couture.
 
 </Note>
 
 **Tissu principal**
 
-- (If default) Cut **1 skirt** part on the fold.
-- (If seamless) Cut **1 skirt** part on double fold.
-- (If straight) Cut **1 waistband** part.
-- (If curved) Cut **2 waistband** parts.
+- (Si par défaut) Coupe **1 jupe** partie sur le pli.
+- (Si sans couture) Coupe **1 jupe** partie sur le double pli.
+- (Si elle est droite) Coupe **1 ceinture** partie.
+- (Si elle est courbée) Coupe **2 parties de la ceinture** .
 
-**Lining Fabric (Optional)**
+**Tissu de doublure (optionnel)**
 
-- (If default) Cut **1 skirt** part on the fold.
-- (If seamless) Cut **1 skirt** part on double fold.
+- (Si par défaut) Coupe **1 jupe** partie sur le pli.
+- (Si sans couture) Coupe **1 jupe** partie sur le double pli.
 
-**Interfacing**
+**Entoilage**
 
-- Cut **1 waistband** part.
+- Coupe **1 partie de la ceinture** .

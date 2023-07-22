@@ -1,10 +1,10 @@
 ---
-title: "Penelope pencil skirt: Sewing Instructions"
+title: "Penelope Bleistiftrock: Anleitung zum Nähen"
 ---
 
 <Note>
 
-Due to the different styles and configurations of Penelope, we will first go over some tips of the different elements that make up a pencil skirt.
+Da es verschiedene Stile und Konfigurationen von Penelope gibt, werden wir zunächst einige Tipps zu den verschiedenen Elementen geben, die einen Bleistiftrock ausmachen.
 
 </Note>
 
@@ -12,119 +12,119 @@ Due to the different styles and configurations of Penelope, we will first go ove
 
 ### Lining
 
-Pencil skirts are tight. This limits your movement quite a bit. More so, when you try to sit down, the skirt may try to pull itself off your waist, or, when you get back up, stay quite high on your bum. Lining the skirt will make it move a lot easier around your curves, and thereby make it easier for you to move.
+Bleistiftrock ist eng. Dies schränkt deine Bewegung ein wenig ein. Wenn du versuchst, dich hinzusetzen, kann es passieren, dass sich der Rock von deiner Taille löst oder, wenn du wieder aufstehst, ziemlich hoch auf deinem Hintern sitzt. Lining the skirt will make it move a lot easier around your curves, and thereby make it easier for you to move.
 
-Adding lining can be done by creating a slightly shorter front and back piece, that has some extra fabric in the middle. The extra fabric makes it easier for the lining to move. One inch for each of the front and back pieces is enough. You can either make a box pleat in the front and back, or add the extra fabric where the darts are. You do not need to sew darts in the lining fabric. Just a pleat at the dart position will be fine.
+Das Futter kannst du hinzufügen, indem du ein etwas kürzeres Vorder- und Rückenteil anfertigst, das in der Mitte etwas mehr Stoff hat. Der zusätzliche Stoff sorgt dafür, dass sich das Futter leichter bewegen kann. Ein Zoll für jedes der Vorder- und Rückenteile reicht aus. You can either make a box pleat in the front and back, or add the extra fabric where the darts are. Nähen Sie nicht Dart im Futter. Just a pleat at the dart position will be fine.
 
 ### Bund
 
-A waistband is optional on Penelope. If you omit it, there will be quite some stress on the top of the zipper. Make sure your zipper is up to the task. An invisible zipper might not be the best option then, since they can't always take that much strain.
+Ein Taillenband ist optional auf Penelope. If you omit it, there will be quite some stress on the top of the zipper. Stellen Sie sicher, dass Ihr Reißverschluss der Aufgabe gewachsen ist. Ein unsichtbarer Reißverschluss ist dann vielleicht nicht die beste Option, da er nicht immer so viel Druck auf sich nehmen kann.
 
 ### Reißverschluss
 
-Without the zipper it will be impossible to get in and out of the skirt. So it should be at least the length from your waist to the largest part of your bum. Longer will make it easier to put the skirt on and off. Don't use one that's too long, because the part of the seam where the zipper is behaves differently than the part without it, and you want to try to make it invisible also in movement.
+Ohne den Reißverschluss wird es unmöglich sein, aus dem Rock zu kommen. So it should be at least the length from your waist to the largest part of your bum. Longer will make it easier to put the skirt on and off. Don't use one that's too long, because the part of the seam where the zipper is behaves differently than the part without it, and you want to try to make it invisible also in movement.
 
-Traditionally, an invisible zipper is used in a pencil skirt but a regular zipper will work just as well. You can even use a zipper that constrast your fabric if the fancy takes you. Choose what works for you and the style you're going for. Be creative (or not) it is entirely up to you! All though if your fabric is on the heavier side you might want to opt for a different closure entirely.
+Traditionell wird für einen Bleistiftrock ein unsichtbarer Reißverschluss verwendet, aber ein normaler Reißverschluss funktioniert genauso gut. Wenn du Lust hast, kannst du auch einen Reißverschluss verwenden, der deinen Stoff einschnürt. Wähle aus, was zu dir und deinem Stil passt. Ob du kreativ bist oder nicht, liegt ganz bei dir! Wenn dein Stoff allerdings etwas schwerer ist, solltest du dich vielleicht für einen anderen Verschluss entscheiden.
 
 ### Schlitz
 
-A vent in the back is optional with Penelope. It will allow you to walk a lot easier than if you make the skirt without it. The vent also influences where the zipper will be located. If you choose to have no vent, the default zipper location is on the side seam, and the back will be cut-on-fold. With the vent, there has to be a seam in the back piece, and the zipper will be located on that seam.
+Ein Schlot auf der Rückseite ist optional mit Penelope. Mit ihm kannst du viel leichter laufen als wenn du den Rock ohne ihn machst. Der Schlitz beeinflusst auch, wo sich der Reißverschluss befinden wird. If you choose to have no vent, the default zipper location is on the side seam, and the back will be cut-on-fold. Bei der Belüftung muss es eine Naht im Rückenteil geben, und der Reißverschluss wird auf dieser Naht liegen.
 
 ### Abnäher
 
-Darts are used to compensate for the difference between your waist and seat measurements. Depending on this difference, there can be two darts, one dart, or no darts at all. More darts make for a potentially better fit. But if the amount of fabric that the dart will take in becomes too small, the number of darts will be reduced. Otherwise it would be very difficult to sew the darts, and they would probably become rather unsightly. Some of the difference will be taken in by the side seam, and if the difference is small, no darts will be included in the front and back pieces.
+Darts werden verwendet, um den Unterschied zwischen Taillen- und Sitzmessungen auszugleichen. Abhängig von diesem Unterschied kann es zwei Darts geben, einen Dart, oder gar keine Darts. More darts make for a potentially better fit. But if the amount of fabric that the dart will take in becomes too small, the number of darts will be reduced. Ansonsten wäre es sehr schwierig, die Abnäher zu nähen, und sie würden wahrscheinlich ziemlich unansehnlich werden. Einige der Differenz werden von der Seitennaht aufgenommen, und wenn die Differenz gering ist, werden keine Abnäher in die Vorder- und Rückenteile eingearbeitet.
 
 ## Konstruktion
 
 <Warning>
 
-We're not going to go into a full explanation on how to create all the individual details
-that make up a pencil skirt. Diese Anleitung geht davon aus, dass du weißt, wie man einen Abnäher näht, einen unsichtbaren 
-Reißverschluss einfügt, einen Schlitz macht, etc. If not, there are numerous excellent articles available on the
-web, both in writen form, and on video. If you do get stuck, you can always reach out to
-[other FreeSewers](https://discord.freesewing.org/) in our discord.
+Wir werden nicht ausführlich erklären, wie man all die einzelnen Details
+, die einen Bleistiftrock ausmachen, anfertigt. Diese Anleitung geht davon aus, dass du weißt, wie man einen Abnäher näht, einen unsichtbaren 
+Reißverschluss einfügt, einen Schlitz macht, etc. Falls nicht, findest du im Internet unter
+zahlreiche hervorragende Artikel in schriftlicher Form und als Video. Wenn du nicht weiterkommst, kannst du dich jederzeit an
+[andere FreeSewers] (https://discord.freesewing.org/) in unserem Discord wenden.
 
 </Warning>
 
-### Step 1: Darts
+### Schritt 1: Darts
 
-- Sew all the darts.
-- Press the darts towards the back.
-  - For the back piece(s), that means you press the darts towards eachother.
-  - For the front piece, that means you press the darts towards the side seams.
+- Nähen Sie alle Abnäher.
+- Drücke die Abnäher nach hinten.
+  - Für die Rückenteile bedeutet das, dass du die Abnäher zueinander drückst.
+  - Für das Vorderteil bedeutet das, dass du die Abnäher in Richtung der Seitennähte bügelst.
 
-### Step 2: The zipper
+### Schritt 2: Der Reißverschluss
 
-- With _good sides together_, sew the seam that has the zipper leaving the top open for the zipper.
-- Insert the zipper into the seam following the procedure that is appropriate for the type of zipper you're using.
+- Lege _mit den guten Seiten zusammen_und nähe die Naht, die den Reißverschluss enthält, wobei du die Oberseite für den Reißverschluss offen lässt.
+- Führe den Reißverschluss in die Naht ein und befolge dabei das Verfahren, das für die Art des Reißverschlusses, den du verwendest, geeignet ist.
 
 <Note>
 
-If using a different closure, construct it during this step.
+Wenn du einen anderen Verschluss verwendest, konstruiere ihn in diesem Schritt.
 
 </Note>
 
-### Step 3: Sew the side seams
+### Schritt 3: Nähe die Seitennähte
 
-- With _good sides together_, sew up both the side seams.
-- With _good sides together_, if not the zipper seam, sew the centre back seam either completely or down to the vent if included.
+- Lege _gut zusammen_und nähe die beiden Seitennähte.
+- Lege _gut zusammen_, wenn nicht die Reißverschlussnaht, nähe die hintere Mittelnaht entweder ganz oder bis zum Schlitz, falls vorhanden.
 
-### Step 4: The lining (Optional)
+### Schritt 4: Das Futter (optional)
 
-You can skip this step if not making a lining.
+Du kannst diesen Schritt auslassen, wenn du kein Futter herstellst.
 
-- Follow Step 1 - 4 to construct the lining with the following changes:
-  - Adjust the darts to compensate for the extra 'ease' in the lining pieces.
-  - Do not include the zipper but leave the opening in the zipper seam.
-- Attach the lining to the body in your prefered way. You will need to construct the vent during this and connect the lining to the zipper.
+- Befolge die Schritte 1 - 4, um das Futter mit den folgenden Änderungen zu konstruieren:
+  - Passe die Abnäher an, um die zusätzliche "Leichtigkeit" in den Futterteilen auszugleichen.
+  - Schließe den Reißverschluss nicht mit ein, sondern lasse die Öffnung in der Reißverschlussnaht.
+- Befestige das Futter auf die von dir bevorzugte Weise am Körper. Dabei musst du den Schlitz konstruieren und das Futter mit dem Reißverschluss verbinden.
 
 <Note>
 
-How to distribute the extra 'ease' is up to you. You can either add it to the darts by increasing them. or you can add another dart or box pleat in the middle.
+Wie du die zusätzliche "Leichtigkeit" verteilst, bleibt dir überlassen. Du kannst sie entweder zu den Abnähern hinzufügen, indem du sie erhöhst. oder du kannst einen weiteren Abnäher oder eine Kellerfalte in der Mitte hinzufügen.
 
 </Note>
 
 <Warning>
 
-If you prefer to insert the zipper with the main and lining fabric as one, you will need to omit inserting the zipper until this step.
+Wenn du es vorziehst, den Reißverschluss mit dem Haupt- und Futterstoff zusammen einzufügen, musst du das Einfügen des Reißverschlusses bis zu diesem Schritt auslassen.
 
 </Warning>
 
-### Step 5: The waistband
+### Schritt 5: Der Bund
 
-- Face lengthwise half of the waistband.
-- Press a fold the waistband in half lengthwise.
-- With _good sides together_ sew the face half of the waistband to the top of the skirt. Part of this waistband should overhang the zipper seam.
-- Press the waistband up and away from the skirt.
-- Press the remaining waistband seam allowances to the inside of the waistband.
-- Fold and press the waistband to the inside along fold line.
-- _Stitch in the ditch_ to secure the waistband.
-- _Slipstitch_ or _Whipstitch_ the gap in the waistband that goes over the zipper seam
-- Construct your preferred choice of closure where the waistband overlaps.
+- Stelle die Hälfte des Bunds in Längsrichtung.
+- Bügle den Bund der Länge nach in die Hälfte und falte ihn.
+- Lege _gut zusammen_ und nähe die vordere Hälfte des Bunds an den oberen Rand des Rocks. Ein Teil dieses Bunds sollte über die Reißverschlussnaht hinausragen.
+- Drücke den Bund nach oben und vom Rock weg.
+- Bügle die verbleibenden Nahtzugaben am Bund auf die Innenseite des Bunds.
+- Falte und bügle den Bund entlang der Faltlinie nach innen.
+- _Nähen Sie in der Naht_ , um den Bund zu sichern.
+- _Steppstich_ oder _Steppstich_ die Lücke im Bund, die über die Reißverschlussnaht geht
+- Konstruiere den Verschluss deiner Wahl dort, wo der Bund überlappt.
 
 <Note>
 
-Alternatively you can _Edgestitch_ the waistband in place which will admit the need to hand-stitch the gap closed but this will leave visible stitching.  
-The closure can be a button and buttonhole, snaps or simple dress hooks. It's really up to you.
+Alternativ kannst du den Bund auch mit _Edgestitch_ festnähen. Dann musst du die Lücke nicht mit der Hand schließen, aber die Nähte bleiben sichtbar.  
+Der Verschluss kann ein Knopf und ein Knopfloch, Druckknöpfe oder einfache Kleiderhaken sein. Es liegt wirklich an dir.
 
 </Note>
 
-### Step 6: The hem and vents
+### Schritt 6: Der Saum und die Lüftungsschlitze
 
-This step is only needed if you have not lined your skirt as the hem and vents would have been taken care of in that step.
+Dieser Schritt ist nur notwendig, wenn du deinen Rock nicht gefüttert hast, da der Saum und die Schlitze in diesem Schritt bereits fertiggestellt wurden.
 
-- If desired, face the hem and vents.
-- Construct the vents with your preferred method
-- Press under the hem allowances of the skirt.
-- If hem is large enough and/or the fabric press under a small amount along the top, this will help to prevent farying.
-- Secure the hem in place with your preferred method. For instance you can sew from the outside or _Slipstitch_ from the inside. This comes down to how you want the finished product to look.
+- Falls gewünscht, stülpe den Saum und die Lüftungsschlitze um.
+- Baue die Lüftungsschlitze mit der von dir bevorzugten Methode
+- Bügle unter die Saumzugaben des Rocks.
+- Wenn der Saum breit genug ist und/oder der Stoff oben ein wenig nach unten gedrückt wird, hilft das, ein Färben zu verhindern.
+- Befestige den Saum mit der von dir bevorzugten Methode. Du kannst zum Beispiel von außen nähen oder _Steppstich_ von innen. Es kommt darauf an, wie das fertige Produkt aussehen soll.
 
 <Tip>
 
-If the seam allowances are big enough you can sew the hems as narrow hems. This is especially useful if your fabric is prone to fraying.
+Wenn die Nahtzugaben groß genug sind, kannst du die Säume als schmale Säume nähen. Das ist besonders nützlich, wenn dein Stoff zum Ausfransen neigt.
 
 </Tip>
 
-### Step 7: Enjoy!
+### Schritt 7: Viel Spaß mit deinem neuen Shirt!
 
-- Now all that's left to do is to enjoy you new skirt!
+- Jetzt musst du dich nur noch an deinem neuen Rock erfreuen!

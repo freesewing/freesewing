@@ -1,18 +1,18 @@
 ---
-title: Something went wrong
+title: Щось пішло не так.
 ---
 
-##### Help us make FreeSewing better by reporting this crash
+##### Допоможіть нам зробити FreeSewing кращим, повідомивши про цю помилку
 
 We'd like to gather diagnostics and [create an issue on Github](https://github.com/freesewing/freesewing/issues/new) to investigate what exactly went wrong.
 
-The diagnostics data we collect includes:
+Діагностичні дані, які ми збираємо, включають в себе:
 
-- Your userid
-- Your Github username (only if you configured it in your profile)
-- The pattern name and version
-- The full set of measurements and options used to create this pattern
+- Ваш логін
+- Ваше ім'я користувача Github (тільки якщо ви налаштували його у своєму профілі)
+- Назва шаблону та версія
+- Повний набір вимірів і параметрів, використаних для створення цієї викрійки
 
-If you consent to publish this data in the crash report, click the button below.
+Якщо ви погоджуєтеся на публікацію цих даних у звіті про аварії, натисніть кнопку нижче.
 
-If not, you can always [report this manually](https://github.com/freesewing/freesewing/issues/new).
+Якщо ні, ви завжди можете [повідомити про це вручну](https://github.com/freesewing/freesewing/issues/new).

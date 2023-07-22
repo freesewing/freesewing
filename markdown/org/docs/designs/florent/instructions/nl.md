@@ -1,5 +1,5 @@
 ---
-title: "Florent flat cap: Sewing Instructions"
+title: "Florent platte muts: Naai-instructies"
 ---
 
 ### Stap 1: Bevestig tussenvoering

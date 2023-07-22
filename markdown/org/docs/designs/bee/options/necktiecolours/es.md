@@ -1,5 +1,5 @@
 ---
-title: "Neck tie colours"
+title: "Colores de la cinta del cuello"
 ---
 
 ***

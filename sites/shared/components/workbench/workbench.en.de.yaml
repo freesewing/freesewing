@@ -1,0 +1,34 @@
+menu: Menü
+draft: Entwurf
+test: Test
+printLayout: Layout drucken
+cutLayout: Layout schneiden
+save: Speichern
+export: Exportieren
+edit: bearbeiten
+reset: Zurücksetzen
+help: Hilfe
+name: Name
+width: Breite
+height: Höhe
+length: Länge
+topLeft: Oben links
+bottomRight: Unten rechts
+attributes: Eigenschaften
+showAllParts: Alle Musterteile anzeigen
+showOnlyThisPart: Nur diesen Teil des Musters anzeigen
+showMovableButtons: Knöpfe
+partInfo: Musterteil Info
+pathInfo: Pfad-Infos
+part: Musterteil
+draftPattern: Entwurfsmuster
+testPattern: Testmuster
+savePattern: Schnittmuster speichern
+exportPattern: Schnittmuster exportieren
+editSettings: Konfiguration bearbeiten
+patternLogs: Musterprotokolle
+patternInspector: Muster-Inspektor
+docs: Dokumentation
+configurePattern: Muster konfigurieren
+measies: Muster-Messungen
+noDesignFound: Wir konnten dieses Design nicht finden. Das sollte nicht passieren, also würden wir uns freuen, wenn du es meldest.

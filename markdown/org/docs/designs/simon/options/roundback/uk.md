@@ -1,12 +1,12 @@
 ---
-title: "Round back"
+title: "Заокруглена спина"
 ---
 
-Controls how round the back yoke seam is by adding length to the center back at the yoke that tapers of towards the sides.
+Контролює округлість шва задньої кокетки, додаючи довжину до центру спинки на кокетці, яка звужується до боків.
 
-- Increase this option to round the back yoke seam
-- Decrease this option to straighten the back yoke seam
+- Збільште цей параметр, щоб заокруглити задній шов кокетки
+- Зменшіть цей параметр, щоб випрямити задній шов кокетки
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_roundback_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_roundback_sample.svg "Вплив цієї опції на шаблон")

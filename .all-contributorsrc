@@ -1014,6 +1014,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "ibek",
+      "name": "Ivo Bek",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1140579?v=4",
+      "profile": "https://github.com/ibek",
+      "contributions": [
+        "doc"
+      ]
     }
   ],
   "skipCi": true,

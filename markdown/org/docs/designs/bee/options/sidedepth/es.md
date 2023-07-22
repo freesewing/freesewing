@@ -1,5 +1,5 @@
 ---
-title: "Side depth"
+title: "Límite lateral"
 ---
 
 ***

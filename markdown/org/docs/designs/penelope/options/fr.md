@@ -1,5 +1,5 @@
 ---
-title: "Penelope pencil skirt: Design Options"
+title: "Jupe crayon Penelope : Options de conception"
 ---
 
 <PatternOptions pattern='penelope' />

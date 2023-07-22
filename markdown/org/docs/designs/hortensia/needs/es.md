@@ -1,19 +1,19 @@
 ---
-title: "Hortensia handbag: What You Need"
+title: "Bolso Hortensia: Lo que necesitas"
 ---
 
-To make Hortensia, you will need the following:
+Para hacer Hortensia, necesitarás lo siguiente:
 
-- Basic sewing supplies
-- About 0.5 - 2 metres (0.6 - 2.2 yards) of a suitable fabric ([see Hortensia Fabric options](/docs/patterns/hortensia/fabric/))
-- About 0.5 - 2 metres (0.6 - 2.2 yards) of lining fabric ([see Hortensia Fabric options](/docs/patterns/hortensia/fabric/))
-- A zipper shorter in length than the zipper panel and matching the [coil width](/docs/patterns/hortensia/options/zippersize/) selected
-- (Optional) About 1 - 2 metres (1.1 - 2.2 yards) of bias biniding if you want to bind the side panel edges on the outside.
-- (Optional) Bag strap webbing double the length of the strap part with seam allowance and similar width if you don't wish to make your own straps
-- (Optional) Interfacing if needed to strengthen fabric and/or for the strap
+- Suministros básicos de costura
+- Alrededor de 0,5 - 2 metros (0,6 - 2,2 yardas) de un tejido adecuado ([consulta las opciones de tejido Hortensia](/docs/patterns/hortensia/fabric/))
+- Unos 0,5 - 2 metros (0,6 - 2,2 yardas) de tela de forro ([consulta las opciones de tela Hortensia](/docs/patterns/hortensia/fabric/))
+- Una cremallera de longitud más corta que el panel de la cremallera y que coincida con la anchura de la bobina [](/docs/patterns/hortensia/options/zippersize/) seleccionada
+- (Opcional) Aproximadamente de 1 a 2 metros (1,1 a 2,2 yardas) de cinta al bies si quieres atar los bordes de los paneles laterales por fuera.
+- (Opcional) Cinta de la correa de la bolsa del doble de la longitud de la parte de la correa con margen de costura y anchura similar si no deseas hacer tus propias correas
+- (Opcional) Entretela si se necesita para reforzar la tela y/o para la correa
 
 <Note>
 
-The amount of fabric you need is dependant on [Hortensia's size option](/docs/patterns/hortensia/options/size/). If you are uncertain of how much you need turn on paperless mode whilst viewing the pattern and add the bottom measures of Part 1 SidePanel, Part 2 FrontBackPanel and Part 3 BottomPanel to give yourself a rough estimate.
+La cantidad de tela que necesitas depende de la [opción de tamaño de Hortensia](/docs/patrones/hortensia/opciones/tamaño/). Si no estás seguro de cuánto necesitas, activa el modo sin papel mientras visualizas el patrón y suma las medidas inferiores de la Parte 1 del Panel Lateral, la Parte 2 del Panel Frontal Trasero y la Parte 3 del Panel Inferior para obtener una estimación aproximada.
 
 </Note>

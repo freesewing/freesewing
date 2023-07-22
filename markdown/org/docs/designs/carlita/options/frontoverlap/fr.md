@@ -1,9 +1,9 @@
 ---
-title: "Front overlap"
+title: "Chevauchement avant"
 ---
 
-Controls how much the right and left front of the garment overlap at the center front.
+Contrôle combien l'avant droit et gauche du vêtement se chevauche à l'avant du centre.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlita_frontoverlap_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlita_frontoverlap_sample.svg "Effet de cette option sur le motif")

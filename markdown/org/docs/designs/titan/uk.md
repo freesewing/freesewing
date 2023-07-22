@@ -1,5 +1,5 @@
 ---
-title: "Titan trouser block"
+title: "Викрійка-основа штанів Титан"
 ---
 
 <PatternDocs pattern='titan' />

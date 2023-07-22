@@ -18,7 +18,7 @@ import { Collapse } from 'shared/components/collapse.mjs'
 import { ClearIcon, EditIcon, FilterIcon } from 'shared/components/icons.mjs'
 import Timeago from 'react-timeago'
 import { PageLink } from 'shared/components/page-link.mjs'
-import { MeasieRow } from 'shared/components/account/sets.mjs'
+import { MeasieRow } from 'shared/components/sets/measie-input.mjs'
 import { ModalDesignPicker } from 'shared/components/modal/design-picker.mjs'
 
 export const ns = ['toast', 'curate', 'sets', 'account']

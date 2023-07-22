@@ -1,5 +1,5 @@
 ---
-title : "Aisance thoracique"
+title: "Aisance de poitrine"
 ---
 
 ![L'option d'aisance thoracique sur Aaron](./chestease.svg)
@@ -16,4 +16,4 @@ Quelle que soit la valeur que vous entrez ici, elle sera simplement ajoutée à 
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](aaron_chestease_sample.svg "Effet de cette option sur le patron")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](aaron_chestease_sample.svg "Effet de cette option sur le motif")

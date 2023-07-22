@@ -1,12 +1,12 @@
 ---
-title: "Bust dart length"
+title: "Lengte busteneep"
 ---
 
-Controls how close the **bust darts** approach the bust points.
+Bepaalt hoe dicht de **bustedarts** de bustepunten benaderen.
 
-- Increase this option to lengthen the bust darts moving them closer to the bust points
-- Decrease this option to shorten the bust darts moving them further away from the bust points
+- Verhoog deze optie om de figuurnaden van de buste langer te maken en ze dichter bij de punten van de buste te plaatsen
+- Verlaag deze optie om de figuurnaden van de buste in te korten, zodat ze verder van de buste af komen te staan
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_bustdartlength_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_bustdartlength_sample.svg "Effect van deze optie op het patroon")

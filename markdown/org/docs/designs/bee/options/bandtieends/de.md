@@ -1,10 +1,10 @@
 ---
-title: "Band (chest) tie ends"
+title: "Enden des Brustbandes"
 ---
 
 ***
 
-Whether you like straight or pointy ends on the tie around your chest
+Ob du gerade oder spitze Enden an der Krawatte um deine Brust magst
 
 ## Effekt dieser Option auf das Schnittmuster
 

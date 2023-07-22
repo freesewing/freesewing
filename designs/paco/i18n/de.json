@@ -1,0 +1,37 @@
+{
+  "t": "Paco, die Hose",
+  "d": "Paco ist eine lässige, aber stilvolle Sommerhose.",
+  "p": {
+    "back": "Back",
+    "backPocketBag": "Back pocket bag",
+    "backPocketWelt": "Back pocket welt",
+    "backPocketWeltInterfacing": "Bacl pocket welt interfacing",
+    "cuff": "Cuff",
+    "front": "Front",
+    "frontPocketBag": "Front pocket bag",
+    "waistband": "Waistband"
+  },
+  "s": {},
+  "o": {
+    "heelEase": {
+      "t": "Bequemlichkeitszugabe Ferse",
+      "d": "Größe der Bequemlichkeitszugabe an der Ferse (wenn man in das Hosenbein hineinsteigt)"
+    },
+    "frontPockets": {
+      "t": "Vordere Taschen",
+      "d": "Ob vordere Taschen an der Seitennaht hinzugefügt werden sollen oder nicht"
+    },
+    "backPockets": {
+      "t": "Gesäßtaschen",
+      "d": "Hinzufügen einer Kedertasche zur Rückseite oder nicht"
+    },
+    "elasticatedHem": {
+      "t": "Elastischer Saum",
+      "d": "Ob ein elastischer Saum gewünscht ist oder nicht"
+    },
+    "ankleElastic": {
+      "t": "Knöchel/Saum Gummizugbreite",
+      "d": "Breite des (optionalen) Gummizugs am Knöchel/Saum"
+    }
+  }
+}

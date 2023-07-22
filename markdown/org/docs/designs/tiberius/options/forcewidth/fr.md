@@ -1,9 +1,9 @@
 ---
-title: "Force width"
+title: "Forcer la largeur"
 ---
 
-Apply width settings regardless of constraints
+Appliquer les paramètres de largeur indépendamment des contraintes
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](tiberius_forcewidth_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](tiberius_forcewidth_sample.svg "Effet de cette option sur le motif")

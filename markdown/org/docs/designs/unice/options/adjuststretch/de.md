@@ -1,11 +1,11 @@
 ---
-title: Adjust stretch
+title: Dehnbarkeit anpassen
 ---
 
-This option allows you to put in the maximum stretch that the fabric will allow in both horizontal and vertical directions, and calculates how much of that stretch to use for a comfortable fit.
+Mit dieser Option kannst du die maximale Dehnung eingeben, die der Stoff in horizontaler und vertikaler Richtung zulässt , und berechnen, wie viel von dieser Dehnung für eine bequeme Passform verwendet werden soll.
 
-When disabled, the stretch values are used as-is.
+Wenn diese Funktion deaktiviert ist, werden die Streckungswerte so verwendet, wie sie sind.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](unice_adjuststretch_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](unice_adjuststretch_sample.svg "Effekt dieser Option auf das Schnittmuster")

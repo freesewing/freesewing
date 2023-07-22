@@ -1,5 +1,5 @@
 ---
-title: "Hortensia handbag"
+title: "Hortensia, die Handtasche"
 ---
 
 <PatternDocs pattern='hortensia' />

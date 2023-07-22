@@ -1,7 +1,7 @@
 ---
-title: A FreeSewing user account is required to access this page
+title: Для доступу до цієї сторінки потрібен обліковий запис користувача FreeSewing
 ---
 
-The page you tried to access is only available to FreeSewing users.
+Сторінка, до якої ви намагалися отримати доступ, доступна лише користувачам FreeSewing.
 
-You should either [log in](/login/) or [sign up](/signup/) before you can access this page.
+Ви повинні або [увійти в систему](/login/) , або [зареєструватися](/signup/) , щоб отримати доступ до цієї сторінки.

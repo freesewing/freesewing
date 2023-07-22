@@ -1,5 +1,5 @@
 ---
-title: "Albert apron: Cutting Instructions"
+title: "Delantal Albert: Instrucciones de corte"
 ---
 
 - Corta **1 delantero** al lomo

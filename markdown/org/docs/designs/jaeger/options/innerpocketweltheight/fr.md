@@ -1,12 +1,12 @@
 ---
-title: "Inner pocket welt height"
+title: "Hauteur du revers de la poche intérieure"
 ---
 
-Controls the width of the inner pocket welts.
+Contrôle la largeur des soudures des poches intérieures.
 
-- Increase this option to increase the width of the inner pocket welts
-- Decrease this option to decrease the width of the inner pocket welts
+- Augmente cette option pour augmenter la largeur des soudures des poches intérieures.
+- Diminue cette option pour diminuer la largeur des soudures des poches intérieures.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_innerpocketweltheight_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_innerpocketweltheight_sample.svg "Effet de cette option sur le motif")

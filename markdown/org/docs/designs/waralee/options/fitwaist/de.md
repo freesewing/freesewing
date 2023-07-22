@@ -1,5 +1,5 @@
 ---
-title: "Fit waist"
+title: "Taille anpassen"
 ---
 
-This setting uses the waist measurement to adjust the shaping of the front and back. It will draw in the waist above the hips if your measurements indicate that the pattern should for a better fit.
+Bei dieser Einstellung wird der Taillenumfang verwendet, um die Form des Vorder- und Rückenteils anzupassen. Es zieht die Taille über den Hüften ein, wenn deine Maße darauf hindeuten, dass das Muster für eine bessere Passform sorgen soll.

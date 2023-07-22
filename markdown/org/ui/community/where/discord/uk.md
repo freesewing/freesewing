@@ -3,6 +3,6 @@
 
 We use [Discord](https://discord.freesewing.org/) as our main platform for discussion and cooperation.
 
-You can join us at [discord.freesewing.org](https://discord.freesewing.org).
+Ви можете приєднатися до нас на [discord.freesewing.org](https://discord.freesewing.org).
 
-They also have an excellent mobile apps as well as clients for Windows, Mac, and Linux. Head over to [the Discord download page](https://discord.com/download) for those.
+Вони також мають чудові мобільні додатки, а також клієнти для Windows, Mac та Linux. Перейдіть на сторінку завантаження Discord [та](https://discord.com/download) , щоб отримати їх.

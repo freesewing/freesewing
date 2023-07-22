@@ -1,5 +1,5 @@
 ---
-title: "Aaron A-Shirt: Fabric Options"
+title: "Camiseta Aaron A: Opciones de tejido"
 ---
 
 Una camisa A es esencialmente ropa interior. Y en esa capacidad, usted quiere algo que es confortable, se siente bien en su piel y respira.

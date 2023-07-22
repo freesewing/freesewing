@@ -1,10 +1,10 @@
 ---
-title: "Penelope pencil skirt: Sewing Instructions"
+title: "Falda lápiz Penélope: Instrucciones de costura"
 ---
 
 <Note>
 
-Due to the different styles and configurations of Penelope, we will first go over some tips of the different elements that make up a pencil skirt.
+Debido a los diferentes estilos y configuraciones de Penélope, primero repasaremos algunos consejos sobre los distintos elementos que componen una falda lápiz.
 
 </Note>
 
@@ -12,119 +12,119 @@ Due to the different styles and configurations of Penelope, we will first go ove
 
 ### Terminal
 
-Pencil skirts are tight. This limits your movement quite a bit. More so, when you try to sit down, the skirt may try to pull itself off your waist, or, when you get back up, stay quite high on your bum. Lining the skirt will make it move a lot easier around your curves, and thereby make it easier for you to move.
+Las salidas de lápiz son apretadas. Esto limita un poco su movimiento. More so, when you try to sit down, the skirt may try to pull itself off your waist, or, when you get back up, stay quite high on your bum. Lining the skirt will make it move a lot easier around your curves, and thereby make it easier for you to move.
 
-Adding lining can be done by creating a slightly shorter front and back piece, that has some extra fabric in the middle. The extra fabric makes it easier for the lining to move. One inch for each of the front and back pieces is enough. You can either make a box pleat in the front and back, or add the extra fabric where the darts are. You do not need to sew darts in the lining fabric. Just a pleat at the dart position will be fine.
+Adding lining can be done by creating a slightly shorter front and back piece, that has some extra fabric in the middle. The extra fabric makes it easier for the lining to move. Una pulgada para cada una de las piezas delanteras y traseras es suficiente. You can either make a box pleat in the front and back, or add the extra fabric where the darts are. No es necesario coser dardos en la tela de forraje. Just a pleat at the dart position will be fine.
 
 ### Pretina
 
-A waistband is optional on Penelope. If you omit it, there will be quite some stress on the top of the zipper. Make sure your zipper is up to the task. An invisible zipper might not be the best option then, since they can't always take that much strain.
+Una cintura es opcional en Penelope. If you omit it, there will be quite some stress on the top of the zipper. Asegúrate de que tu zipper esté a la altura de la tarea. Un zipper invisible podría no ser la mejor opción entonces, ya que no siempre pueden tomar tanto recto.
 
 ### Caparazón
 
-Without the zipper it will be impossible to get in and out of the skirt. So it should be at least the length from your waist to the largest part of your bum. Longer will make it easier to put the skirt on and off. Don't use one that's too long, because the part of the seam where the zipper is behaves differently than the part without it, and you want to try to make it invisible also in movement.
+Sin el zipper será imposible entrar y salir de la cabeza. So it should be at least the length from your waist to the largest part of your bum. Longer will make it easier to put the skirt on and off. Don't use one that's too long, because the part of the seam where the zipper is behaves differently than the part without it, and you want to try to make it invisible also in movement.
 
-Traditionally, an invisible zipper is used in a pencil skirt but a regular zipper will work just as well. You can even use a zipper that constrast your fabric if the fancy takes you. Choose what works for you and the style you're going for. Be creative (or not) it is entirely up to you! All though if your fabric is on the heavier side you might want to opt for a different closure entirely.
+Tradicionalmente, en una falda lápiz se utiliza una cremallera invisible, pero una cremallera normal funcionará igual de bien. Si te apetece, puedes utilizar incluso una cremallera que contraste con la tela. Elige lo que te vaya bien a ti y al estilo que buscas. Sé creativo (o no), ¡tú decides! Aunque si tu tejido es más grueso, quizá debas optar por un cierre totalmente distinto.
 
 ### Ventilador
 
-A vent in the back is optional with Penelope. It will allow you to walk a lot easier than if you make the skirt without it. The vent also influences where the zipper will be located. If you choose to have no vent, the default zipper location is on the side seam, and the back will be cut-on-fold. With the vent, there has to be a seam in the back piece, and the zipper will be located on that seam.
+Un ventilador en la espalda es opcional con Penelope. It will allow you to walk a lot easier than if you make the skirt without it. The vent also influences where the zipper will be located. If you choose to have no vent, the default zipper location is on the side seam, and the back will be cut-on-fold. With the vent, there has to be a seam in the back piece, and the zipper will be located on that seam.
 
 ### Dardos
 
-Darts are used to compensate for the difference between your waist and seat measurements. Depending on this difference, there can be two darts, one dart, or no darts at all. More darts make for a potentially better fit. But if the amount of fabric that the dart will take in becomes too small, the number of darts will be reduced. Otherwise it would be very difficult to sew the darts, and they would probably become rather unsightly. Some of the difference will be taken in by the side seam, and if the difference is small, no darts will be included in the front and back pieces.
+Los dardos se utilizan para compensar la diferencia entre la cintura y las mediciones del asiento. Dependiendo de esta diferencia, puede haber dos osadías, un dardo, o ningún dardo. More darts make for a potentially better fit. But if the amount of fabric that the dart will take in becomes too small, the number of darts will be reduced. Otherwise it would be very difficult to sew the darts, and they would probably become rather unsightly. Some of the difference will be taken in by the side seam, and if the difference is small, no darts will be included in the front and back pieces.
 
 ## Construcción
 
 <Warning>
 
-We're not going to go into a full explanation on how to create all the individual details
-that make up a pencil skirt. These instructions assume that you know how to sew a dart, insert an invisible
-zipper, make a vent, etc. If not, there are numerous excellent articles available on the
-web, both in writen form, and on video. If you do get stuck, you can always reach out to
-[other FreeSewers](https://discord.freesewing.org/) in our discord.
+No vamos a entrar en una explicación completa sobre cómo crear todos los detalles individuales
+que componen una falda lápiz. Estas instrucciones presuponen que sabes coser una pinza, insertar una cremallera invisible
+, hacer una abertura, etc. Si no, hay numerosos artículos excelentes disponibles en la web
+, tanto escritos como en vídeo. Si te quedas atascado, siempre puedes ponerte en contacto con
+[otros FreeSewers](https://discord.freesewing.org/) en nuestro discord.
 
 </Warning>
 
-### Step 1: Darts
+### Paso 1: Dardos
 
-- Sew all the darts.
-- Press the darts towards the back.
-  - For the back piece(s), that means you press the darts towards eachother.
-  - For the front piece, that means you press the darts towards the side seams.
+- Cose todas las pinzas.
+- Presiona los dardos hacia la espalda.
+  - Para la(s) pieza(s) trasera(s), eso significa que presiones los dardos unos contra otros.
+  - Para la pieza delantera, eso significa que prensas los dardos hacia las costuras laterales.
 
-### Step 2: The zipper
+### Paso 2: La cremallera
 
-- With _good sides together_, sew the seam that has the zipper leaving the top open for the zipper.
-- Insert the zipper into the seam following the procedure that is appropriate for the type of zipper you're using.
+- Con _los lados bien juntos_, cose la costura que tiene la cremallera dejando la parte superior abierta para la cremallera.
+- Introduce la cremallera en la costura siguiendo el procedimiento adecuado para el tipo de cremallera que estés utilizando.
 
 <Note>
 
-If using a different closure, construct it during this step.
+Si utilizas un cierre diferente, constrúyelo durante este paso.
 
 </Note>
 
-### Step 3: Sew the side seams
+### Paso 3: Aplasta las costuras del lado
 
-- With _good sides together_, sew up both the side seams.
-- With _good sides together_, if not the zipper seam, sew the centre back seam either completely or down to the vent if included.
+- Con _con los lados bien juntos_, cose las dos costuras laterales.
+- Con _los lados bien juntos_, si no es la costura de la cremallera, cose la costura central de la espalda por completo o hasta la abertura, si está incluida.
 
-### Step 4: The lining (Optional)
+### Paso 4: El forro (Opcional)
 
-You can skip this step if not making a lining.
+Puedes saltarte este paso si no vas a hacer un forro.
 
-- Follow Step 1 - 4 to construct the lining with the following changes:
-  - Adjust the darts to compensate for the extra 'ease' in the lining pieces.
-  - Do not include the zipper but leave the opening in the zipper seam.
-- Attach the lining to the body in your prefered way. You will need to construct the vent during this and connect the lining to the zipper.
+- Sigue los pasos 1 - 4 para construir el forro con los siguientes cambios:
+  - Ajusta las pinzas para compensar la "holgura" adicional de las piezas del forro.
+  - No incluyas la cremallera, pero deja la abertura en la costura de la cremallera.
+- Fija el forro al cuerpo de la forma que prefieras. Tendrás que construir el respiradero durante esto y conectar el forro a la cremallera.
 
 <Note>
 
-How to distribute the extra 'ease' is up to you. You can either add it to the darts by increasing them. or you can add another dart or box pleat in the middle.
+Cómo distribuir la "facilidad" extra depende de ti. Puedes añadirlo a los dardos aumentándolos. o puedes añadir otro dardo o pliegue de caja en el centro.
 
 </Note>
 
 <Warning>
 
-If you prefer to insert the zipper with the main and lining fabric as one, you will need to omit inserting the zipper until this step.
+Si prefieres insertar la cremallera con la tela principal y la del forro como una sola, deberás omitir la inserción de la cremallera hasta este paso.
 
 </Warning>
 
-### Step 5: The waistband
+### Paso 5: La cintura
 
-- Face lengthwise half of the waistband.
-- Press a fold the waistband in half lengthwise.
-- With _good sides together_ sew the face half of the waistband to the top of the skirt. Part of this waistband should overhang the zipper seam.
-- Press the waistband up and away from the skirt.
-- Press the remaining waistband seam allowances to the inside of the waistband.
-- Fold and press the waistband to the inside along fold line.
-- _Stitch in the ditch_ to secure the waistband.
-- _Slipstitch_ or _Whipstitch_ the gap in the waistband that goes over the zipper seam
-- Construct your preferred choice of closure where the waistband overlaps.
+- Enfrenta longitudinalmente la mitad de la cintura.
+- Presiona y dobla la cintura por la mitad a lo largo.
+- Con _los lados bien juntos_ cose la mitad frontal de la cintura a la parte superior de la falda. Parte de esta cintura debe sobresalir de la costura de la cremallera.
+- Presiona la cintura hacia arriba y separándola de la falda.
+- Plancha los márgenes de costura restantes de la cintura hacia el interior de la misma.
+- Dobla y presiona la cintura hacia el interior a lo largo de la línea de pliegue.
+- _Cose en la zanja_ para asegurar la cintura.
+- _Punto elástico_ o _Punto elástico_ el hueco de la cintura que pasa por encima de la costura de la cremallera
+- Construye el cierre que prefieras donde se superponga la cintura.
 
 <Note>
 
-Alternatively you can _Edgestitch_ the waistband in place which will admit the need to hand-stitch the gap closed but this will leave visible stitching.  
-The closure can be a button and buttonhole, snaps or simple dress hooks. It's really up to you.
+También puedes _coser_ la cintura en su sitio, lo que evitará tener que coser a mano para cerrar el hueco, pero dejará costuras visibles.  
+El cierre puede ser de botón y ojal, broches o simples corchetes de vestir. Realmente depende de ti.
 
 </Note>
 
-### Step 6: The hem and vents
+### Paso 6: El dobladillo y las aberturas
 
-This step is only needed if you have not lined your skirt as the hem and vents would have been taken care of in that step.
+Este paso sólo es necesario si no has forrado la falda, ya que el dobladillo y las aberturas se habrán hecho en ese paso.
 
-- If desired, face the hem and vents.
-- Construct the vents with your preferred method
-- Press under the hem allowances of the skirt.
-- If hem is large enough and/or the fabric press under a small amount along the top, this will help to prevent farying.
-- Secure the hem in place with your preferred method. For instance you can sew from the outside or _Slipstitch_ from the inside. This comes down to how you want the finished product to look.
+- Si lo deseas, encara el dobladillo y los respiraderos.
+- Construye los respiraderos con el método que prefieras
+- Plancha por debajo de los dobladillos de la falda.
+- Si el dobladillo es lo suficientemente grande y/o la tela se presiona un poco por debajo a lo largo de la parte superior, esto ayudará a evitar que se deshilache.
+- Fija el dobladillo en su sitio con el método que prefieras. Por ejemplo, puedes coser desde el exterior o _Slipstitch_ desde el interior. Esto depende de cómo quieras que sea el producto final.
 
 <Tip>
 
-If the seam allowances are big enough you can sew the hems as narrow hems. This is especially useful if your fabric is prone to fraying.
+Si los márgenes de costura son lo suficientemente grandes, puedes coser los dobladillos como dobladillos estrechos. Esto es especialmente útil si tu tejido es propenso a deshilacharse.
 
 </Tip>
 
-### Step 7: Enjoy!
+### Paso 7: ¡Disfrútalo!
 
-- Now all that's left to do is to enjoy you new skirt!
+- Ahora sólo te queda disfrutar de tu nueva falda.

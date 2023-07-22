@@ -1,18 +1,18 @@
 ---
-title: "Bee bikini top: What You Need"
+title: "Бджолиний топ-бікіні: Що вам потрібно"
 ---
 
-To make Bee, you will need the following:
+Щоб приготувати "Бджілку", вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 0.5 - 1 metre (0.6 - 1.1 yards) of a suitable fabric ([see Bee Fabric options](/docs/patterns/bee/fabric/))
-- (Optional) About 0.5 - 1 metre (0.6 - 1.1 yards) of lining fabric ([see Bee Fabric options](/docs/patterns/bee/fabric/))
-- (Optional) Ribbons/Tapes/Cords for neck ties and bands, with the same length and width as neck tie and/or band.
+- Базові матеріали для шиття
+- Приблизно 0,5 - 1 метр (0,6 - 1,1 ярда) відповідної тканини ([див. варіанти бджолиної тканини](/docs/patterns/bee/fabric/))
+- (Необов'язково) Приблизно 0,5 - 1 метр (0,6 - 1,1 ярда) підкладкової тканини ([див. варіанти бджолиної тканини](/docs/patterns/bee/fabric/))
+- (Необов'язково) Стрічки/стрічки/шнури для шийних краваток і стрічок, тієї ж довжини і ширини, що і шийна краватка та/або стрічка.
 
 <Note>
 
-The lining fabric is only needed if you want to make this pattern reversible. If you don't, you only need the main fabric.  
-You can use a serger/overlocker to construct this pattern but it is not mandatory.  
-Ribbons/Tapes/Cords can be used instead of making custom ties. Just make sure to get more than you need and that you cut down to size after construction.
+Підкладкова тканина потрібна лише в тому випадку, якщо ви хочете зробити цю викрійку двосторонньою. Якщо ви цього не зробите, вам знадобиться лише основна тканина.  
+Ви можете використовувати сергер/оверлок для створення цієї викрійки, але це не є обов'язковим.  
+Стрічки/стрічки/шнури можна використовувати замість спеціальних краваток. Просто переконайтеся, що ви купили більше, ніж вам потрібно, і що після будівництва ви обріжете до потрібного розміру.
 
 </Note>

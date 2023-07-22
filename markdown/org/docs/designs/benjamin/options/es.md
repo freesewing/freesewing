@@ -1,5 +1,5 @@
 ---
-title: "Benjamin bow tie: Design Options"
+title: "Pajarita Benjamin: Opciones de diseño"
 ---
 
 <PatternOptions pattern='benjamin' />

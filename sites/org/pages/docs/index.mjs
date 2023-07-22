@@ -1,29 +1,18 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Hooks
-import { useState, useEffect } from 'react'
+import { useCallback } from 'react'
+import { useDynamicMdx } from 'shared/hooks/use-dynamic-mdx.mjs'
 // Components
-import { ns } from 'shared/components/wrappers/page.mjs'
-import { components } from 'shared/components/mdx/index.mjs'
-//import { TocWrapper } from 'shared/components/wrappers/toc.mjs'
-import { Loading, Page } from './[...slug].mjs'
+import { Page, ns } from './[...slug].mjs'
 
 const DocsHomePage = ({ page, slug, locale }) => {
-  // State
-  const [frontmatter, setFrontmatter] = useState({ title: 'FreeSewing.org' })
-  const [MDX, setMDX] = useState(<Loading />)
-
-  /* Load MDX dynamically */
-  useEffect(() => {
-    const loadMDX = async () => {
-      import(`../../../../markdown/org/docs/${locale}.md`).then((mod) => {
-        setFrontmatter(mod.frontmatter)
-        const Component = mod.default
-        setMDX(<Component components={components('org')} />)
-      })
-    }
-    loadMDX()
-  }, [slug, locale])
+  const loader = useCallback(
+    () =>
+      import(/* webpackInclude: /docs\/\w+\.md/ */ `../../../../markdown/org/docs/${locale}.md`),
+    [locale]
+  )
+  const { frontmatter, MDX } = useDynamicMdx(loader)
 
   return <Page {...{ page, slug, frontmatter, MDX, locale }} />
 }

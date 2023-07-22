@@ -1,5 +1,5 @@
 ---
-title: You need to be an admin to access this page
+title: Ви повинні бути адміністратором, щоб отримати доступ до цієї сторінки
 ---
 
-The page you tried to access is only available to FreeSewing users with an **admin** role.
+Сторінка, до якої ви намагалися отримати доступ, доступна лише користувачам FreeSewing з роллю **admin** .

@@ -1,22 +1,22 @@
 ---
-title: "Hi the shark: What You Need"
+title: "Hoi de haai: Wat je nodig hebt"
 ---
 
-To make Hi, you will need the following:
+Om Hi te maken, heb je het volgende nodig:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
+- [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
 - About 1 meters of a suitable fabric in color 1 (body)
 - About 0.5 meters of a suitable fabric in color 2 (belly)
-- Small piece for the mouth
-- Small piece of fabric for eyes
-- Suitable, unraveling, fabric for the teeth
-- Stuffing
-- Topstiching thread (thick thread) for gills
+- Klein stukje voor de mond
+- Klein stukje stof voor de ogen
+- Geschikte, rafelende stof voor de tanden
+- Vulling
+- doorstikgaren (dik garen) voor kieuwen
 
 <Note>
 
-This list is based on a default Hi and you may need less or more fabric dependant on the [size you are making Hi](/docs/patterns/hi/options/size/).
+Deze lijst is gebaseerd op een standaard Hi en het kan zijn dat je minder of meer stof nodig hebt, afhankelijk van de [maat die je Hi maakt] (/docs/patterns/hi/options/size/).
 
-For instance a 500% Hi will need 5 meters (1 meter x 500%  = 5 meters) and a 50% Hi will need 0.5 meters (1 meter x 50% = 0.5 meters).
+Een 500% Hi heeft bijvoorbeeld 5 meter nodig (1 meter x 500% = 5 meter) en een 50% Hi heeft 0,5 meter nodig (1 meter x 50% = 0,5 meter).
 
 </Note>

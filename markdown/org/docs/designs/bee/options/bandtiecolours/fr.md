@@ -1,5 +1,5 @@
 ---
-titre: Couleurs de la bande (sous poitrine)
+title: "Couleurs de la bande (sous poitrine)"
 ---
 
 ***

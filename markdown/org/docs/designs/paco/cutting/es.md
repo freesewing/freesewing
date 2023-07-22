@@ -1,12 +1,12 @@
 ---
-title: "Paco pants: Cutting Instructions"
+title: "Pantalones Paco: Instrucciones de corte"
 ---
 
 <Tip>
 
-###### Cut out only what you need
+###### Corta solo lo que necesitas
 
-Depending on the choices you made in your pattern, you may not need all parts.
+Dependiendo de las opciones que hiciste en tu patrón, puede que no necesites todas las partes.
 Si no se imprime una parte de patrón, significa que no la necesita.
 
 </Tip>
@@ -25,10 +25,10 @@ Si no se imprime una parte de patrón, significa que no la necesita.
 
 <Warning>
 
-#### Caveats
+#### Advertencias
 
-- There is no seam allowance on the interfacing
-- There is extra seam allowance on the waist band and hem
-- The waistband is a mere rectangle, so it's not fully printed to save paper
+- No hay margen de costura en la entretela
+- Hay margen de costura extra en la banda de la cintura y en el dobladillo
+- La banda de la cintura es un mero rectángulo, por lo que no está totalmente impresa para ahorrar papel
 
 </Warning>

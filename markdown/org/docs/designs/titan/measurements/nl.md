@@ -1,5 +1,5 @@
 ---
-title: "Titan trouser block: Required Measurements"
+title: "Titan broekenblok: Vereiste afmetingen"
 ---
 
 <PatternMeasurements pattern='titan' />

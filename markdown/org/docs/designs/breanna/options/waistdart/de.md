@@ -1,9 +1,9 @@
 ---
-title: "Waist dart"
+title: "Taillenabnäher"
 ---
 
-Whether or not to inlude a back waist dart to round the back.
+Ob du einen Abnäher in der Taille einfügen willst, um den Rücken abzurunden oder nicht.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_waistdart_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](breanna_waistdart_sample.svg "Effekt dieser Option auf das Schnittmuster")

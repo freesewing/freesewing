@@ -1,13 +1,13 @@
 ---
-title: Give feedback
+title: Залиште відгук
 ---
 
 <Note>
 
-##### Give us your feedback
+##### Залиште нам свій відгук
 
-We'd love to hear your thoughts on what you love (or hate) about FreeSewing.
+Ми хотіли б почути ваші думки про те, що ви любите (або ненавидите) у FreeSewing.
 
-Please [join our chat room](https://discord.freesewing.org/) and share your thoughts.
+Будь ласка, [приєднуйтесь до нашого чату] (https://discord.freesewing.org/) і діліться своїми думками.
 
 </Note>

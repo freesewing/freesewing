@@ -1,10 +1,10 @@
 ---
-title: Core Settings
+title: Основні налаштування
 ---
 
-The **Core Settings** menu allows you to tweak various aspects of the FreeSewing Core library, which -- under the hood -- generates your pattern for you.
+Меню **Core Settings** дозволяє вам налаштувати різні аспекти бібліотеки FreeSewing Core, яка - під капотом - генерує вашу викрійку для вас.
 
-In contrast to [Design Options](/docs/site/draft/design-options/) which are specific for a given design, these Core Settings are the same for every design. So you will find this menu always provides the same settings, regardless of what design you are generating a pattern for.
+На відміну від [Параметрів дизайну](/docs/site/draft/design-options/) , які є специфічними для певного дизайну, ці Основні налаштування однакові для всіх дизайнів. Отже, ви побачите, що це меню завжди містить однакові налаштування, незалежно від того, для якого дизайну ви створюєте візерунок.
 
 <ReadMore />
 

@@ -1,37 +1,37 @@
 ---
-title: "Walburga Wappenrock: Sewing Instructions"
+title: "Вальбурга Ваппенрок: Інструкція з пошиття"
 ---
 
 <Note>
 
-Walburga is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. You do you.
+Вальбурга - це історично натхненний візерунок, і якщо ви хочете більше автентичності, ручне шиття - саме те, що вам потрібно. Особисто я використовую швейну машинку. Ти - це ти.
 
 </Note>
 
-### Step 1: Sew shoulder seams
+### Крок 1: Зшийте плечові шви
 
-- Put front and back pieces with good sides together. Sew the shoulder seams, taking care to stop at the notches for the head opening.
+- Складіть передню і задню частини лицьовими сторонами разом. Зшийте плечові шви, не забуваючи зупинятися на надсічках для отвору для голови.
 
-### Step 2: Finish seams and head opening
+### Крок 2: Обробляємо шви та отвір для голови
 
-- Finish the seams and the raw edges at the head opening, with a method of your choice. (If you used the fabrics recommended in the [fabric options](/docs/patterns/walburga/fabric), they _will_ fray. Folding the seam allowance twice, enclosing the raw edge and topstitching is an option. You can also use decorative topstitching.)
+- Обробіть шви і необроблені краї біля отвору для голови будь-яким методом на ваш вибір. (Якщо ви використовували тканини, рекомендовані в [варіантах тканин](/docs/patterns/walburga/fabric), вони _будуть_ стиратися. Можна скласти припуск на шов удвічі, обшити необроблений край і прострочити зверху. Ви також можете використовувати декоративну строчку).
 
-### (Optional) Step 3: Cut slits
+### (Крок 3: Виріжте прорізи
 
-_This step is optional, you can also opt not to cut slits. If so, continue with step 4._
+_Цей крок необов'язковий, ви також можете не вирізати прорізи. Якщо так, перейдіть до кроку 4._
 
 <Warning>
 
-If you cut slits, there will be no seam (or hem) allowance to finish the edge there. Think about this before you cut.
+Якщо ви вирізаєте розрізи, то там не буде припуску на шов (або підгин), щоб обробити край. Подумайте про це, перш ніж різати.
 
 </Warning>
 
-- Cut into your fabric until the notch, both on the front and back piece.
+- Розріжте тканину до надрізу, як на передній, так і на задній частині.
 
-### Step 4: Finish edges
+### Крок 4: Обробіть краї
 
-- Finish the edges of the garment. This is a good time to use bias tape or similar to enclose the raw edge (especially if you cut slits in step 3). This step can take some time, so be patient.
+- Обробіть краї виробу. Це вдалий час для використання косинки або подібної стрічки, щоб обклеїти необроблений край (особливо, якщо ви вирізали прорізи на кроці 3). Цей крок може зайняти деякий час, тому запасіться терпінням.
 
-### Step 5: That's it!
+### Крок 5: Це все!
 
-You're done! You could now appliqué/embroider/otherwise attach a symbol or heraldics of your choice onto your garment.
+Тобі кінець! Тепер ви можете нанести на одяг аплікацію/вишивку/іншим чином прикріпити символ чи геральдику на свій вибір.

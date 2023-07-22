@@ -1,5 +1,5 @@
 ---
-titre : "Longueur de la bande (poitrine)"
+title: "Longueur de la bande (sous poitrine)"
 ---
 
 ***

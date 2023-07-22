@@ -1,11 +1,11 @@
 ---
-titre : "Aisance d'épaule"
+title: "Aisance des épaules"
 ---
 
-![Shoulder ease](./shoulderease.svg)
+![Aisance des épaules](./shoulderease.svg)
 
-The amount of ease at your shoulders. This is an option specific to coats/overwear to allow room for garments worn under the coat.
+La quantité d'aisance à vos épaules. Il s'agit d'une option spécifique aux manteaux/revêtements pour laisser de la place pour les vêtements portés sous le manteau.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlton_shoulderease_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlton_shoulderease_sample.svg "Effet de cette option sur le motif")

@@ -1,5 +1,5 @@
 ---
-title: "Theo trousers: Required Measurements"
+title: "Pantalones Theo: Medidas requeridas"
 ---
 
 <PatternMeasurements pattern='theo' />

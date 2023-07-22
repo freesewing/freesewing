@@ -1,11 +1,11 @@
 ---
-title: "Upper Dart Length"
+title: "Obere Abnäherlänge"
 ---
 
 ***
 
-The **Upper Dart Length** controls the length of the upper dart, 100% is all teh way to the bust point.
+Die **Upper Dart Length** steuert die Länge des oberen Abnähers, der zu 100 % bis zum Brustansatz reicht.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_upperdartlength_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](noble_upperdartlength_sample.svg "Effekt dieser Option auf das Schnittmuster")

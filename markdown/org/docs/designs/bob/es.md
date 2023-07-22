@@ -1,5 +1,5 @@
 ---
-title: "Bob the Bib"
+title: "Bob el Babero"
 ---
 
 <PatternDocs pattern='bob' />

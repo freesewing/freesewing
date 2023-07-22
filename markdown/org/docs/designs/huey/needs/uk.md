@@ -1,11 +1,11 @@
 ---
-title: "Huey hoodie: What You Need"
+title: "Худі з капюшоном Х'юї: Те, що тобі потрібно"
 ---
 
-To make Huey, you will need the following:
+Щоб зробити Huey, вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 2 metres (2.2 yards) of a suitable fabric ([see Fabric options](/docs/patterns/huey/fabric))
-- Ribbing fabric for the hem and cuffs.
-- 1 open ended zipper the length of front seam including hood and waistband.
-- (Optional) Cording or suitable alternate for hood strings.
+- Базові матеріали для шиття
+- Приблизно 2 метри (2,2 ярда) відповідної тканини ([див. варіанти тканини](/docs/patterns/huey/fabric))
+- Ребриста тканина для подолу та манжетів.
+- 1 застібка-блискавка з відкритим кінцем на довжину переднього шва, включаючи капюшон і пояс.
+- (Необов'язково) Шнур або відповідна заміна для затяжок капюшона.

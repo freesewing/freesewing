@@ -1,11 +1,11 @@
 ---
-title: "Holmes deerstalker hat: Sewing Instructions"
+title: "Sombrero de cazador Holmes: Instrucciones de costura"
 ---
 
 ### Paso 1: Preparando las Piezas
 
-- If needed, Interface the crown and half the ear flap pieces.
-- If not already done so, it is recommended to mark the seam lines on your fabric pieces by either a temporary marker or by thread marking. Esto es para una costura más precisa que es clave para la construcción de sombrero.
+- Si es necesario, haz una interfaz con la corona y la mitad de las piezas de las orejeras.
+- Si aún no lo ha hecho, se recomienda marcar las líneas de costura en las piezas de la tela mediante un marcador temporal o por rosca. Esto es para una costura más precisa que es clave para la construcción de sombrero.
 
 <Tip>
 
@@ -27,12 +27,12 @@ Estas instrucciones asumen que has marcado tus líneas de costura. Pueden ser m�
 
 ### Paso 2: La Corona
 
-- With right sides together, matching seam lines and peaks, sew two crown pieces together.
-- Press seams open. Para ello, si no dispone de jamón puede utilizar flanneles o toallas en su lugar.
-- (Optional) _Edgestitch_ both sides of the seam, making sure to catch the seam allowances.
-- Repeat until you have two halves. Si la mitad del número de piezas de la corona es un número impar, tendrás que coser una sola pieza para cada mitad. Por ejemplo, si usted tiene 6 piezas de la corona, usted hace dos mitades de 3 coser una pieza a dos piezas cocidas juntas.
-- With right sides together, matchinig seam lines and peaks, sew the two halves together. Es posible que le resulte más fácil unir la mano debido a la masa o a la precisión. Esta costura será referida como la "costura de la corona central" que avanza.
-- (Optional) _Edgestitch_ both sides of the centre crown seam, making sure to catch the seam allowances.
+- Con los lados derechos juntos, haciendo coincidir las líneas de costura y los picos, cose dos piezas de corona juntas.
+- Presiona las costuras para abrirlas. Para ello, si no dispone de jamón puede utilizar flanneles o toallas en su lugar.
+- (Opcional) _Canteado_ ambos lados de la costura, asegurándote de coger los márgenes de costura.
+- Repite la operación hasta que tengas dos mitades. Si la mitad del número de piezas de la corona es un número impar, tendrás que coser una sola pieza para cada mitad. Por ejemplo, si usted tiene 6 piezas de la corona, usted hace dos mitades de 3 coser una pieza a dos piezas cocidas juntas.
+- Con los lados derechos juntos, haciendo coincidir las líneas de costura y los picos, cose las dos mitades. Es posible que le resulte más fácil unir la mano debido a la masa o a la precisión. Esta costura será referida como la "costura de la corona central" que avanza.
+- (Opcional) _Canteado_ ambos lados de la costura central de la corona, asegurándote de coger los márgenes de costura.
 
 <Note>
 
@@ -44,14 +44,14 @@ Dependiendo de su franquicia de costura puede que desee recortar costuras a medi
 
 #### Aleteados con ataduras
 
-- Cut two 12" (30cm) - 16" (40cm) length of ribbon. Se referirán a ellos como lazos que avanzan.
-- _Baste_ a tie to the right side of an ear flap (the interfaced one if using). Repetir para otro empate.
-- With right sides together, matching seam lines, sew a tie ear flap to a non-tie ear flap.
-- Clip and trim seam allowance.
-- Turn inside out and press.
-- (Optional) _Topstitch_ or _edgestitch_ the folded edge.
-- _Baste_ the raw edges together.
-- Repeat for the remaining ear flap.
+- Corta dos trozos de cinta de 30 cm a 40 cm. Se referirán a ellos como lazos que avanzan.
+- _Hilvana_ un lazo en el lado derecho de una solapa de la oreja (la entretela si la usas). Repetir para otro empate.
+- Con los lados derechos juntos, haciendo coincidir las líneas de costura, cose una orejera con corbata a una orejera sin corbata.
+- Recorta el margen de costura.
+- Dale la vuelta y presiona.
+- (Opcional) _Puntada de remate_ o _puntada de remate_ el borde doblado.
+- _Hilvana_ juntando los bordes crudos.
+- Repite la operación con la orejera restante.
 
 <Tip>
 
@@ -61,21 +61,21 @@ If you are uncertain about the length you want for you ties take 1 metre (39") o
 
 <Note>
 
-The lengths above are recommendations so feel free to go as long or as short as you like with the ties.  
-If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.
+Las longitudes anteriores son recomendaciones, así que siéntete libre de ir tan largo o corto como quieras con los vínculos.  
+Si lo prefieres, puedes hacer tus corbatas personalizadas con tela, [ver corte Holmes](/docs/patterns/holmes/cutting/) para más información.
 
 </Note>
 
 #### Brillantes con agujeros de botones
 
-- Face the backs of two of the buttonholes. (Esto no es necesario si dos flaps ya han sido conectados)
-- With right sides together, matching seam lines, sew two ear flap pieces together (one interfaced, one not).
-- Clip and trim seam allowance.
-- Turn inside out and press.
-- (Optional) _Topstitch_ or _Edgestitch_ the folded edge.
-- _Baste_ the raw edges together.
-- Sew the buttonhole in your prefered method.
-- Repeat for the remaining ear flap.
+- Enfrenta la parte posterior de dos de los ojales. (Esto no es necesario si dos flaps ya han sido conectados)
+- Con los lados derechos juntos, haciendo coincidir las líneas de costura, cose dos piezas de solapa de oreja juntas (una con entretela, la otra no).
+- Recorta el margen de costura.
+- Dale la vuelta y presiona.
+- (Opcional) _Puntada de remate_ o _Puntada de remate_ el borde doblado.
+- _Hilvana_ juntando los bordes crudos.
+- Cose el ojal con el método que prefieras.
+- Repite la operación con la orejera restante.
 
 <Warning>
 
@@ -85,9 +85,9 @@ Las aletas auditivas tendrán que ser lo suficientemente largas para pasar por e
 
 <Note>
 
-**For both Ear Flaps with Ties and Button Holes**
+**Para ambas orejeras con lazos y ojales**
 
-It is recommended to at least _topstitch_ the ear flaps but this may not be desirable with certain patterns so has been marked as optional.
+Se recomienda al menos _coser_ las orejeras, pero esto puede no ser conveniente con ciertos patrones, por lo que se ha marcado como opcional.
 
 </Note>
 
@@ -97,14 +97,14 @@ There are two methods for constructing the bill. This is due to the different ty
 
 #### The Bill Method 1
 
-- Place visor insert on one visor piece inside seam lines.
-- Temporarily secure visor insert to visor with temporary _pad Stitches_. This will be refered to as "faced visor" going forward.
-- _Baste_ along the seam line of the inner curve of the faced visor, making sure not to catch the visor insert.
-- With right sides together, matching seam lines and centre fronts, sew the faced visor to another visor piece along the outer curve close to the visor insert, making sure not to catch the visor Insert.
-- Notch and trim the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step)
-- Turn inside out and press. Making sure that the seam allowances are on top of not under the visor insert.
-- Using the previous basting line as a guide, _baste_ the opening closed.
-- Repeat this for remaining visor pieces.
+- Coloca el inserto de la visera en una pieza de la visera dentro de las líneas de costura.
+- Fija temporalmente el inserto de la visera a la visera con la almohadilla temporal _Puntadas_. A partir de ahora se denominará "visera enfrentada".
+- _Hilvana_ a lo largo de la línea de costura de la curva interior de la visera frontal, asegurándote de no enganchar el inserto de la visera.
+- Con los lados derechos juntos, haciendo coincidir las líneas de costura y los frentes centrales, cose la visera enfrentada a otra pieza de visera a lo largo de la curva exterior cerca del inserto de la visera, asegurándote de no enganchar el inserto de la visera.
+- Haz una muesca y recorta la curva exterior asegurándote de no cortar la costura. (Es posible que quieras girar y comprobar la forma antes de este paso)
+- Dale la vuelta y presiona. Asegúrate de que los márgenes de costura queden por encima y no por debajo del inserto de la visera.
+- Utilizando la línea de hilvanado anterior como guía, _hilvana_ la abertura cerrada.
+- Repite la operación con las demás piezas de la visera.
 
 <Warning>
 
@@ -120,13 +120,13 @@ If preferred you can temporarily attach the bill insert another way that does no
 
 #### The Bill Method 2
 
-- With rights sides together, matching seam lines and centre fronts, sew the outer curver of two visor pieces together.
-- Notch and trim (if needed) the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step)
-- Turn inside out and press.
-- Insert visor insert in to sewn visor tightly so there is no gap on the outer curver and the seam allowances are all one on side of the visor insert. This will be the upper side of the visor.
-- Pin the inner curve together making sure that the outer edge is pulled tightly over the visor insert.
-- _Baste_ as close as you can to the inner curve of the visor insert, making sure you pull the fabric tightly over the outer edge as you sew.
-- Repeat for the remaining visor pieces.
+- Con los lados derechos juntos, haciendo coincidir las líneas de costura y los frentes centrales, cose el rizo exterior de dos piezas de visera.
+- Haz una muesca y recorta (si es necesario) la curva exterior asegurándote de no cortar la costura. (Es posible que quieras girar y comprobar la forma antes de este paso)
+- Dale la vuelta y presiona.
+- Inserta el inserto de la visera en la visera cosida firmemente, de modo que no quede ningún hueco en la curvatura exterior y los márgenes de costura queden todos a un lado del inserto de la visera. Esta será la parte superior de la visera.
+- Une con alfileres la curva interior, asegurándote de que el borde exterior quede bien ajustado sobre el inserto de la visera.
+- _Hilvana_ tan cerca como puedas de la curva interior del inserto de la visera, asegurándote de que tiras de la tela firmemente sobre el borde exterior mientras coses.
+- Repite la operación con el resto de las piezas de la visera.
 
 ### Paso 5: Colmena y Lining
 
@@ -134,61 +134,61 @@ Una vez más, hay dos métodos para el montaje final y el revestimiento. Lea amb
 
 #### Método de Ensamblado 1
 
-- Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
-- Sew ear flap to the crown along seam lines.
-- Repeat for the remaining ear flap on the opposite side of the crown.
-- Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.
-- Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _baste_ the centre down first and then work from the centre out.
-- Sew the visor to the crown along seam lines. You may find it easier to permanently hand-sew the visor on rather than using a machine.
-- Repeat for the remaining visor on the opposite side of the centre crown seam.
-- Remove all pad and basting stitches.
-- Press the seam allowances inwards, making sure the stitching is not visible on the outside.
-- (Optional) Loosely _whipstitch_ the seams to the inside of the crown making sure the stitching does not show on the outside.
-- Construct lining the same way as the crown ommitting _edgestitching_.
-- Fold and Press under the bottom seam allowance of the lining. Puede que tenga que pulsar debajo de más para evitar que el revestimiento se muestre. You may also find you need to _baste_ the seam allowance down.
-- Matching centre crown seams and panel seams, pin the lining into the hat wrong sides together. Placing the folded edge along the stitching lines.
-- _Slipstitch_ or _whipstitch_ the lining to the seam allowance of the hat.
-- Remove lining basting if used.
-- (Optional) _Tack_ the peak of the lining to the peak of the crown. Esto es para ayudar a evitar que el revestimiento se caiga.
+- Centros de coincidencia y líneas de costura alinean la aleta del oído con el lado derecho de uno de los paneles que no forma parte de la costura central de la corona. Asegúrate de que la cara encarada se coloca contra la corona (si está encarada).
+- Cose la orejera a la corona siguiendo las líneas de costura.
+- Repite la operación con la orejera restante del lado opuesto de la corona.
+- Alinea la parte delantera central de la visera con el lado derecho de la costura central de la corona, asegurándote de que el inserto de la visera está en la parte inferior.
+- Hilvana a mano la visera a la corona haciendo coincidir las líneas de hilvanado de la visera con las líneas de costura de la corona. Es más fácil _hilvanar_ primero el centro hacia abajo y luego trabajar desde el centro hacia fuera.
+- Cose la visera a la corona siguiendo las líneas de costura. Puede que te resulte más fácil coser la visera a mano de forma permanente en lugar de utilizar una máquina.
+- Repite la operación con la visera restante en el lado opuesto de la costura central de la corona.
+- Retira todas las puntadas de almohadilla e hilvanado.
+- Presiona los márgenes hacia dentro, asegurándote de que las costuras no se vean por fuera.
+- (Opcional) Sin apretar, haz punto elástico __ las costuras hacia el interior de la corona, asegurándote de que las puntadas no se vean por fuera.
+- Construye el forro del mismo modo que la corona omitiendo _edgestitching_.
+- Dobla y presiona por debajo del margen de costura inferior del forro. Puede que tenga que pulsar debajo de más para evitar que el revestimiento se muestre. También puede que necesites hilvanar __ el margen de costura hacia abajo.
+- Une con alfileres las costuras del centro de la copa y las costuras de los paneles e introduce el forro en el gorro por el revés. Coloca el borde doblado a lo largo de las líneas de costura.
+- _Haz punto enano_ o punto elástico __ el forro al margen de costura del sombrero.
+- Retira el hilván del forro, si lo has utilizado.
+- (Opcional) _Tack_ el pico del forro al pico de la corona. Esto es para ayudar a evitar que el revestimiento se caiga.
 
 #### Método de Ensamblaje 2
 
-- Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
-- _Baste_ the ear flap to the crown along seam lines
-- Repeat for the remaining ear flap on the opposite side of the crown.
-- Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.
-- Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _baste_ the centre down first and then work from the centre out.
-- (Optional) Machine-baste the visor to the crown along seam lines.
-- Repeat for the remaining visor on the opposite side of the centre crown seam.
-- Construct lining the same way as the crown ommitting _edgestitching_ and leaving a gap in the centre lining seam large enough to turn the hat.
-- With right sides together, matching centre crown seams, panel seams and seam lines. Difundir el revestimiento a la corona a lo largo de las líneas de costura. Si es voluminoso puede querer recortar las costuras de forro o ambas costuras.
-- Turn hat inside out, pressing lining to inside.
-- (Optional/Alternate) _Understitch_ lining.
-- Slipstitch lining opening closed.
-- (Optional/Alternate) _Topstitch_ or _Edgestitch_ along the outside of the hat, catching the lining on the inside making sure it is not peaking whilst you sew.
-- (Optional) _Tack_ the peak of the lining to the peak of the crown. Esto es para ayudar a evitar que el revestimiento se caiga.
+- Centros de coincidencia y líneas de costura alinean la aleta del oído con el lado derecho de uno de los paneles que no forma parte de la costura central de la corona. Asegúrate de que la cara encarada se coloca contra la corona (si está encarada).
+- _Hilvana_ la solapa de la oreja a la corona siguiendo las líneas de costura
+- Repite la operación con la orejera restante del lado opuesto de la corona.
+- Alinea la parte delantera central de la visera con el lado derecho de la costura central de la corona, asegurándote de que el inserto de la visera está en la parte inferior.
+- Hilvana a mano la visera a la corona haciendo coincidir las líneas de hilvanado de la visera con las líneas de costura de la corona. Es más fácil _hilvanar_ primero el centro hacia abajo y luego trabajar desde el centro hacia fuera.
+- (Opcional) Une a máquina la visera a la corona por las líneas de costura.
+- Repite la operación con la visera restante en el lado opuesto de la costura central de la corona.
+- Construye el forro de la misma forma que la corona omitiendo _edgestitching_ y dejando un hueco en la costura central del forro lo suficientemente grande como para dar la vuelta al sombrero.
+- Con los lados derechos juntos, haz coincidir las costuras de la corona central, las costuras de los paneles y las líneas de costura. Difundir el revestimiento a la corona a lo largo de las líneas de costura. Si es voluminoso puede querer recortar las costuras de forro o ambas costuras.
+- Gira el sombrero del revés, presionando el forro hacia el interior.
+- (Opcional/Alternativo) _Puntada inferior_ forro.
+- Abertura del forro con pespunte cerrada.
+- (Opcional/Alternativo) _Puntada de remate_ o _Puntada de remate_ a lo largo de la parte exterior del gorro, cogiendo el forro por dentro y asegurándote de que no sobresale mientras coses.
+- (Opcional) _Tack_ el pico del forro al pico de la corona. Esto es para ayudar a evitar que el revestimiento se caiga.
 
 <Note>
 
-**For both Assembly and Lining Methods**
+**Para ambos métodos de montaje y forrado**
 
-You can attach the visors on first, just make sure the visors are under the ear flaps if there is any overlap. It is simply whether you prefer the bills to be underneath or prefer the ear flaps to be underneath like in the instructions.
+Puedes colocar las viseras primero, sólo asegúrate de que las viseras queden debajo de las orejeras si hay algún solapamiento. It is simply whether you prefer the bills to be underneath or prefer the ear flaps to be underneath like in the instructions.
 
 </Note>
 
 <Tip>
 
-**For both Assembly and Lining Methods**
+**Para los métodos de montaje y de forrado**
 
-If you are having trouble dealing with the curves of the visors, sew a stitching line an 1/8" (3mm) from the basting line in the seam allowance of the visor and clip to it. This should make it easier to bend the bill to shape. Simplemente asegúrese de ocultar este stitching y los clips al adjuntar el forraje.
+Si tienes problemas con las curvas de las viseras, cose una línea de costura a 3 mm (1/8") de la línea de hilvanado en el margen de costura de la visera y sujétala con un clip. This should make it easier to bend the bill to shape. Simplemente asegúrese de ocultar este stitching y los clips al adjuntar el forraje.
 
 </Tip>
 
 <Warning>
 
-**For both Assembly and Lining Methods**
+**Para ambos métodos de montaje y forrado**
 
-Assembly and Lining instructions are written with a 6 panelled Holmes in mind. You may find the placement of bills and ear flap pieces are different for other numbered panelled Holmes. As a rule of thumb generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
+Las instrucciones de montaje y forrado están escritas pensando en un Holmes de 6 paneles. You may find the placement of bills and ear flap pieces are different for other numbered panelled Holmes. Como regla general, la parte delantera central de la visera siempre está en la costura central de la corona, así que si tienes problemas, parte de ahí.
 
 </Warning>
 
@@ -198,16 +198,16 @@ Si no cortaron sus lazos cuando construyeron los tapones de los oídos, ahora es
 
 #### Finalizando método Ties 1
 
-- Fold the ends of a tie in half and cut a triangle out from the corner to the fold.
-- Unfold.
-- If you are worried about the ties fraying you can use fray check or equivalent.
-- Repeat for the remaining tie.
+- Dobla los extremos de una corbata por la mitad y corta un triángulo desde la esquina hasta el pliegue.
+- Despliégate.
+- Si te preocupa que se deshilachen los lazos, puedes utilizar un antideshilachado o equivalente.
+- Repite la operación con el resto de la corbata.
 
 #### Finalizando método Ties 2
 
-- Fold under 1/8" (3mm) and another 1/8" (3mm) on one of the ties. Pin if needed.
-- _Whipstitch_ the folded edge down to the tie
-- Repeat for the remaining tie.
+- Dobla por debajo 3 mm (1/8") y otros 3 mm (1/8") en uno de los lazos. Sujeta con alfileres si es necesario.
+- _Punto elástico_ el borde doblado hasta la corbata
+- Repite la operación con el resto de la corbata.
 
 <Note>
 
@@ -219,13 +219,13 @@ Para determinar cuál es la forma en que quieres doblar los lazos, te resultará
 
 A menos que esté haciendo las aletas de ojo de botón, no tiene que coser un botón, pero puede ser útil si quiere ocultar cualquier costura mal alineada en el pico de la corona.
 
-- Construct a covered button.
-- Attach the button via the shank to the peak of the crown doing your best to keep it in the middle of the seams.
-- Alternatively if you are not using the button with the ear flaps you can bend the shank down and _whipstitch_ the edge of the button to the crown instead so it does not move.
+- Construye un botón cubierto.
+- Sujeta el botón por la caña al pico de la corona haciendo lo posible por mantenerlo en el centro de las costuras.
+- Alternativamente, si no vas a utilizar el botón con las orejeras, puedes doblar la caña hacia abajo y hacer _punto elástico_ en el borde del botón a la corona para que no se mueva.
 
 <Note>
 
-Aunque sin duda opcional, puede que encuentre un botón es lo que falta en el sombrero para terminar la mirada. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. If it is attach it permanently.
+Aunque sin duda opcional, puede que encuentre un botón es lo que falta en el sombrero para terminar la mirada. Así que si no estás seguro del aspecto en este punto, inventa un botón rápido y colócalo temporalmente para ver si es lo que falta. If it is attach it permanently.
 Mientras que un botón cubierto está cubierto puedes usar cualquier botón que desees, ¡siéntete libre de experimentar!
 
 </Note>
@@ -236,8 +236,8 @@ Mientras que un botón cubierto está cubierto puedes usar cualquier botón que 
 
 <Note>
 
-Remember these instructions are just guidelines so don't worry if you want to construct the hat differently.  
-The Diagrams are yet to be made for this pattern so in the mean time if you need a visual aid, watch the YouTube video that inspired this pattern:
+Recuerde que estas instrucciones son sólo directrices así que no te preocupes si quieres construir el sombrero de manera diferente.  
+Los diagramas todavía están por hacer para este patrón, así que mientras tanto si necesita ayuda visual, ver el video de YouTube que inspiró este patrón:
 
 </Note>
 

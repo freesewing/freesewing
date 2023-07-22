@@ -1,7 +1,0 @@
----
-wedge:
-  title: Keil
-  description: Steuert die Länge der Kreuznaht
-legWidth:
-  title: Beinweite
-  description: Legt die Weite des Hosenbeins fest

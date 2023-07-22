@@ -1,0 +1,36 @@
+{
+  "t": "Shin swim trunks",
+  "d": "Shin are athletic swim trunks.",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "waistband": "Waistband"
+  },
+  "s": {},
+  "o": {
+    "legReduction": {
+      "t": "Leg reduction",
+      "d": "Reduces the leg opening to prevent gaping"
+    },
+    "elasticWidth": {
+      "t": "Elastic width",
+      "d": "Width of the elastic at the waist"
+    },
+    "stretch": {
+      "t": "Stretch",
+      "d": "The amount of stretch to design for."
+    },
+    "bulge": {
+      "t": "Bulge",
+      "d": "Controls the amount of extra room to create at the front of the trunks."
+    },
+    "rise": {
+      "t": "Rise",
+      "d": "Controls the height of the waist."
+    },
+    "backRise": {
+      "t": "Back rise",
+      "d": "Controls how much the waist is higher in the back than  the front."
+    }
+  }
+}

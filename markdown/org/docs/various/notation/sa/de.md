@@ -8,4 +8,4 @@ Die Nahtzugabe wird durch die gestrichelte Linie angezeigt, die die gleiche Brei
 
 Beachten Sie, dass die Ecken des Nahtzuges beschnitten werden und nicht verlängert werden:
 
-<Legend part="sa"> A trimmed seam allowance corner </Legend>
+<Legend part="sa"> Eine beschnittene Nahtzugabeecke </Legend>

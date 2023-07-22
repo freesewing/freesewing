@@ -4,33 +4,33 @@ title: "Lucy: Instructions"
 
 <Note>
 
-Lucy can be sewn by hand or by machine as you prefer. When sewing by hand, you can use a running stitch to sew the pocket pieces together and bind with a whipstitch. 
+Lucy puede coserse a mano o a máquina, como prefieras. Si coses a mano, puedes utilizar una puntada corrida para coser las piezas del bolsillo y unirlas con un pespunte. 
 
 </Note>
 
-## Step 1: Constructing the Pocket
+## Paso 1: Construir la bolsa
 
-- Bind the pocket slit.
-- With _wrong sides together_ stitch the two pocket pieces together around the outside.
-- Bind the outside edge.
+- Ata la abertura del bolsillo.
+- Con _los lados equivocados juntos_ cose las dos piezas del bolsillo juntas alrededor del exterior.
+- Encuaderna el borde exterior.
 
 <Note>
 
-If you prefer you can _french seam_ the outer edges of the pocket bag together.
+Si lo prefieres, puedes _coser a la francesa_ los bordes exteriores de la bolsa.
 
 </Note>
 
 ## bind the top and thread a tie through the binding
 
-There are two methods for binding the top edge. One leaves the side edges of the top binding open so the ties can be threaded through. The second uses the tape for the ties to bind the top edge. Read through both methods carefully and decide which one you wish to use.
+Hay dos métodos para encuadernar el borde superior. Uno deja abiertos los bordes laterales de la encuadernación superior para poder pasar los lazos. El segundo utiliza la cinta para los lazos para atar el borde superior. Lee atentamente ambos métodos y decide cuál quieres utilizar.
 
-### Using binding
+### Utilizar la encuadernación
 
-- Cut a piece of binding the length of the top edge + seam allowance.
-- Fold under the short edges of the binging and stitch in place.
-- Bind the top edge of the pocket bag with the prepared binding making sure that the folded ends are left open.
-- Thread a tie through the binding.
-- Finish the tie ends.
+- Corta un trozo de encuadernación de la longitud del borde superior + margen de costura.
+- Dobla por debajo de los bordes cortos del rizo y cóselos en su sitio.
+- Encuaderna el borde superior de la bolsa de bolsillo con la encuadernación preparada, asegurándote de que los extremos doblados queden abiertos.
+- Pasa un lazo por la atadura.
+- Termina los extremos del nudo.
 
 <Tip>
 
@@ -38,12 +38,12 @@ use a piece of tape as binding and tie, sewing it down to the top and leaving th
 
 </Tip>
 
-### Bind with the ties
+### Ata con las bridas
 
-- Use a piece of tape as binding and tie, attach the pocket bag to the centre of the tape.
-- Bind the top edge of the pocket bag whilst leaving the remainder of tape free.
-- Finish the tape ends.
+- Utiliza un trozo de cinta adhesiva como atadura y ata la bolsa al centro de la cinta.
+- Encuaderna el borde superior de la bolsa de bolsillo dejando libre el resto de la cinta.
+- Remata los extremos de la cinta.
 
-## Step 3: Enjoy!
+## Paso 3: ¡Disfrútalo!
 
-That's it! You're all done! Now go stuff your new pockets to the brim!
+¡Eso es todo! Todo listo! ¡Ahora ve a llenar tus nuevos bolsillos hasta los topes!

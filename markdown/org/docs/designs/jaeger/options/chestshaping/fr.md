@@ -1,5 +1,5 @@
 ---
-title: "Chest shaping"
+title: "Courbe du col poitrine"
 ---
 
 ![Courbe du col poitrine](chestshaping.svg)
@@ -8,4 +8,4 @@ La quantité verticale de découpage & de la face supérieure pour former le cof
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_chestshaping_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_chestshaping_sample.svg "Effet de cette option sur le motif")

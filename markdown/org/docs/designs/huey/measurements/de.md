@@ -1,5 +1,5 @@
 ---
-title: "Huey hoodie: Required Measurements"
+title: "Huey Kapuzenpulli: Erforderliche Maße"
 ---
 
 <PatternMeasurements pattern='huey' />

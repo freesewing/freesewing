@@ -1,5 +1,5 @@
 ---
-title: "Leg width"
+title: "Largeur de jambe"
 ---
 
 Contrôle la largeur des jambes.
@@ -16,4 +16,4 @@ vous permet de modifier la largeur des jambes.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](theo_legwidth_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](theo_legwidth_sample.svg "Effet de cette option sur le motif")

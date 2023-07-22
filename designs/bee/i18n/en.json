@@ -1,0 +1,120 @@
+{
+  "t": "Bee bikini top",
+  "d": "Bee is a bikini top",
+  "p": {
+    "bandTie": "Band Tie",
+    "cup": "Cup",
+    "neckTie": "Neck Tie"
+  },
+  "s": {},
+  "o": {
+    "chestEase": {
+      "t": "Chest ease",
+      "d": "Controls the chest ease in the underlying Bella block Bee is based on"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the waist ease in the underlying Bella block Bee is based on"
+    },
+    "bustSpanEase": {
+      "t": "Bust span ease",
+      "d": "Controls the bust span ease in the underlying Bella block Bee is based on"
+    },
+    "topDepth": {
+      "t": "Top Depth",
+      "d": "Controls how far the bikini cup extends upwards"
+    },
+    "bottomCupDepth": {
+      "t": "Bottom depth",
+      "d": "Controls how far the bikini cup extends downwards"
+    },
+    "sideDepth": {
+      "t": "Side depth",
+      "d": "Controls how far the bikini cup extends towards the side"
+    },
+    "sideCurve": {
+      "t": "Side curve",
+      "d": "Controls the curvature of the side of the bikini cup"
+    },
+    "frontCurve": {
+      "t": "Front curve",
+      "d": "Controls the curvature of the front of the bikini cup"
+    },
+    "bellaGuide": {
+      "t": "Show Bella",
+      "d": "Shows the outline of the Bella block Bee is based on"
+    },
+    "ties": {
+      "t": "Ties",
+      "d": "Whether to includes ties, yes or no"
+    },
+    "bandTieWidth": {
+      "t": "Band (chest) tie width",
+      "d": "Controls the width of the ties around your chest"
+    },
+    "bandTieLength": {
+      "t": "Band (chest) tie length",
+      "d": "Controls the length of the ties around your chest"
+    },
+    "bandTieEnds": {
+      "t": "Band (chest) tie ends",
+      "d": "Whether you like straight or pointy ends on the ties around your chest"
+    },
+    "bandTieColours": {
+      "t": "Band (chest) tie length colours",
+      "d": "Whether you want single color ties around your chest, or dual-coloured ones"
+    },
+    "neckTieWidth": {
+      "t": "Neck tie width",
+      "d": "Controls the width of the ties around your chest"
+    },
+    "neckTieLength": {
+      "t": "Neck tie length",
+      "d": "Controls the length of the ties around your chest"
+    },
+    "neckTieEnds": {
+      "t": "Neck tie ends",
+      "d": "Whether you like straight or pointy ends on the ties around your chest"
+    },
+    "neckTieColours": {
+      "t": "Neck tie colours",
+      "d": "Whether you want single color ties around your chest, or dual-coloured ones"
+    },
+    "crossBackTies": {
+      "t": "Cross back ties",
+      "d": "Whether you'd like to use the cross back tie variation of Bee"
+    },
+    "bandLength": {
+      "t": "Band Length (Cross back ties)",
+      "d": "Controls the length of the band around your chest for the cross back ties variation of Bee"
+    },
+    "backDartHeight": {
+      "t": "Back dart height (Bella)",
+      "d": "Controls the back dart height in the underlying Bella block Bee is based on"
+    },
+    "armholeDepth": {
+      "t": "Armhole depth (Bella)",
+      "d": "Controls the armhole depth in the underlying Bella block Bee is based on"
+    },
+    "frontArmholePitchDepth": {
+      "t": "Front armhole pitch depth (Bella)",
+      "d": "Controls the front armhole pitch depth in the underlying Bella block Bee is based on"
+    },
+    "frontShoulderWidth": {
+      "t": "Front shoulder width (Bella)",
+      "d": "Controls the front shoulder width in the underlying Bella block Bee is based on"
+    },
+    "fullChestEaseReduction": {
+      "t": "Full chest reduction (Bella)",
+      "d": "Controls the full chest reduction in the underlying Bella block Bee is based on"
+    },
+    "highBustWidth": {
+      "t": "High bust width (Bella)",
+      "d": "Controls the high bust width in the underlying Bella block Bee is based on"
+    },
+    "shoulderToShoulderEase": {
+      "t": "Shoulder to Shoulder ease (Bella)",
+      "d": "Controls the shoulder to shoulder ease in the underlying Bella block Bee is based on"
+    }
+  }
+}

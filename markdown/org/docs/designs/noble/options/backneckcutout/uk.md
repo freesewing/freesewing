@@ -1,11 +1,11 @@
 ---
-title: "Back neck cutout"
+title: "Виріз горловини ззаду"
 ---
 
 ***
 
-The **back neck cutout** option controls how far the neck opening is scooped out at the back.
+Параметр **вирізу горловини ззаду** регулює, наскільки глибоко виріз горловини ззаду зачерпується.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_backneckcutout_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](noble_backneckcutout_sample.svg "Вплив цієї опції на шаблон")

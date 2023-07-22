@@ -1,5 +1,5 @@
 ---
-title: "Tiberius Tunica: Required Measurements"
+title: "Túnica Tiberiana: Medidas necesarias"
 ---
 
 <PatternMeasurements pattern='tiberius' />

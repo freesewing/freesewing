@@ -20,8 +20,8 @@ Dit zorgt voor twee stukken die een spiegelbeeld zijn van elkaar.
 
 ##### Wat als er niet voor de hand ligt?
 
-When cutting out something without an obvious _good_ side (like interfacing),
-what matters is that you cut two mirrored pieces, rather than two identical ones.
+Als je iets uitknipt zonder een duidelijke _goede_ kant (zoals vlieseline),
+is het belangrijk dat je twee gespiegelde stukken uitknipt, in plaats van twee identieke.
 
 </Note>
 

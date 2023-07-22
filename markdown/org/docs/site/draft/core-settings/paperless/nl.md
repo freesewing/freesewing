@@ -1,8 +1,8 @@
 ---
-title: Paperless Patterns
+title: Papierloze patronen
 ---
 
-The paperless setting lets you generate a sewing pattern that includes extra dimensions as well as a grid (in either metric or imperial, based on your choice of units).
+Met de papierloze instelling kun je een naaipatroon genereren met extra afmetingen en een raster (in metrisch of imperiaal, gebaseerd op je keuze van eenheden).
 
-This allows you to skip printing the pattern altogether. Instead you can transfer it directly onto the fabric, or an intermediate medium such as pattern paper.
+Hiermee kun je het afdrukken van het patroon helemaal overslaan. In plaats daarvan kun je rechtstreeks overbrengen op de stof, of een tussenmedium zoals patroon papier.
 

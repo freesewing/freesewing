@@ -10,9 +10,9 @@ Esto no es una ciencia exacta. We provide these sizes as a fast and easy way to 
 
 <Tip>
 
-##### Open in a wide view
+##### Abrir en vista amplia
 
-These tables take up a lot or screen real-estate, which is why we
-[show sizes in a wide view](/sizes/).
+Estas tablas ocupan mucho espacio en la pantalla, por eso
+[mostrar tamaños en vista amplia](/tamaños/).
 
 </Tip>

@@ -1,5 +1,5 @@
 ---
-title: "Neck tie ends"
+title: "Puntas de la cinta del cuello"
 ---
 
 ***

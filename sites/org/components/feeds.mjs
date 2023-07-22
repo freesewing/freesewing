@@ -58,6 +58,14 @@ const feeds = {
     json('nl', 'showcase', 'JSON feed van FreeSewing.org voorbeelden'),
     rss('nl', 'showcase', 'RSS feed van FreeSewing.org voorbeelden'),
   ],
+  uk: [
+    atom('uk', 'blog', 'Atom-канал публікацій блогу FreeSewing.org'),
+    json('uk', 'blog', 'JSON-канал публікацій блогу FreeSewing.org'),
+    rss('uk', 'blog', 'RSS-канал публікацій блогу FreeSewing.org'),
+    atom('uk', 'showcase', 'Atom-канал демонстраційних публікацій FreeSewing.org'),
+    json('uk', 'showcase', 'JSON-канал демонстраційних публікацій FreeSewing.org'),
+    rss('uk', 'showcase', 'RSS-канал демонстраційних публікацій FreeSewing.org'),
+  ],
 }
 
 export const Feeds = () => {

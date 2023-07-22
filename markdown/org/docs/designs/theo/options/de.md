@@ -1,5 +1,5 @@
 ---
-title: "Theo trousers: Design Options"
+title: "Theo Hosen: Design Optionen"
 ---
 
 <PatternOptions pattern='theo' />

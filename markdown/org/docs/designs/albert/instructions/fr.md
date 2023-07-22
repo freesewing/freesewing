@@ -1,5 +1,5 @@
 ---
-titre : "Tablier Albert : Instructions de couture"
+title: "Tablier Albert : Instructions de couture"
 ---
 
 ### Étape 1 : La Poche
@@ -41,7 +41,7 @@ Les coutures latérales sont des ourlets étroits, la marge de couture étant si
 ### Étape 3 : Les sangles
 
 - Pliez une sangle en deux, endroit contre endroit, et cousez le haut et le côté ensemble.
-- Retourner à l'envers vers le bas. Appuyer.
+- Retourner à l'envers vers le bas. Repasser.
 - En utilisant la croix et le rectangle comme guide, cousez le haut de la sangle sur l'envers du devant en haut à gauche.
 - En utilisant la croix et le rectangle comme guide, cousez le bas de la sangle sur l'envers du devant, sur le côté droit.
 - Répétez l'étape 3 pour la sangle restante en l'attachant en haut à droite, puis sur le côté à gauche.
