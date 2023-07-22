@@ -276,7 +276,7 @@ function draftFrontBase({
   /*
    * Construct the front pocket cutout
    */
-  points.frontPocketStart = xOnWaist(absoluteOptions.frontPocketOpeningStart, part)
+  points.frontPocketStart = xOnWaist(absoluteOptions.frontPocketOpeningWidth, part)
   points.frontPocketSide = utils.beamIntersectsY(
     points.topRight,
     points.trueBottomRight,

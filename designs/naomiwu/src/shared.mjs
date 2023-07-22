@@ -127,7 +127,7 @@ export const shared = {
     },
 
     // Pocket options
-    backPocketHeight: {
+    backPocketDepth: {
       pct: 70,
       min: 60,
       max: 85,
@@ -139,7 +139,7 @@ export const shared = {
       max: 25,
       menu: 'pockets',
     },
-    frontPocketOpeningStart: {
+    frontPocketOpeningWidth: {
       pct: 33,
       min: 25,
       max: 45,

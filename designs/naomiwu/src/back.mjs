@@ -123,7 +123,7 @@ function draftBack({
   points.pocketBottomLeft = points.hemCenter.shiftFractionTowards(points.bottomRight, -0.75)
   points.pocketTopRight = points.pocketBottomRight.shift(
     -90,
-    points.pocketBottomRight.dy(points.topRight) * options.backPocketHeight
+    points.pocketBottomRight.dy(points.topRight) * options.backPocketDepth
   )
   points.pocketTopLeft = new Point(points.pocketBottomLeft.x, points.pocketTopRight.y)
   points.chamferLeft = points.pocketBottomLeft.shiftFractionTowards(
