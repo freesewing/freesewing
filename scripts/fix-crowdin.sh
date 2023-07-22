@@ -17,8 +17,19 @@ find ./markdown/org/docs/. -type f -name "uk.md" -exec sed -i "s/^\"Назва\"
 find ./markdown/org/docs/. -type f -name "uk.md" -exec sed -i "s/^заголовок: /title: /g" {} +
 find ./markdown/org/docs/. -type f -name "uk.md" -exec sed -i "s/^\"Корнеліус велосипедні штани\": /title: /g" {} +
 find ./markdown/org/docs/. -type f -name "*.md" -exec sed -i "s/^title : /title: /g" {} +
-find ./markdown/org/docs/. -type f -name "*.md" -exec sed -i "s/^title:\"/title: \"/g" {} +
-find ./markdown/org/docs/. -type f -name "*.md" -exec sed -i "s/<0>//g" {} +
+find ./markdown/org/. -type f -name "*.md" -exec sed -i "s/^title:\"/title: \"/g" {} +
+find ./markdown/org/. -type f -name "*.md" -exec sed -i "s.<0>..g" {} +
+find ./markdown/org/. -type f -name "*.md" -exec sed -i "s.<li>..g" {} +
+find ./markdown/org/. -type f -name "*.md" -exec sed -i "s.<em>..g" {} +
+find ./markdown/org/. -type f -name "*.md" -exec sed -i "s.<ul>..g" {} +
+find ./markdown/org/. -type f -name "*.md" -exec sed -i "s.<ol>..g" {} +
+find ./markdown/org/. -type f -name "*.md" -exec sed -i "s.<p>..g" {} +
+find ./markdown/org/. -type f -name "*.md" -exec sed -i "s.</li>..g" {} +
+find ./markdown/org/. -type f -name "*.md" -exec sed -i "s.</em>..g" {} +
+find ./markdown/org/. -type f -name "*.md" -exec sed -i "s.</ul>..g" {} +
+find ./markdown/org/. -type f -name "*.md" -exec sed -i "s.</ol>..g" {} +
+find ./markdown/org/. -type f -name "*.md" -exec sed -i "s.</p>..g" {} +
+find ./markdown/org/. -type f -name "*.md" -exec sed -i "s.<unk>..g" {} +
 # Replace double quotes in Ukranian titles
 find ./markdown/org/docs/designs/carlita/.. -type f -name "uk.md" -exec sed -i "s/ \"Карліта\": / 'Карліта': /g" {} +
 find ./markdown/org/docs/designs/carlton/.. -type f -name "uk.md" -exec sed -i "s/ \"Карлтон\": / 'Карлтон': /g" {} +

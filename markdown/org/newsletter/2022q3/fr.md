@@ -101,11 +101,11 @@ Si tu souhaites adapter un modèle FreeSewing pour un jeune, voici quelques él�
 - **Fais des vêtements d'essai !** Faire une mousseline est une bonne habitude en général, et c'est particulièrement important quand on coud pour des personnes dont les mensurations n'ont peut-être pas encore été testées avec un modèle FreeSewing, car leurs proportions ne fonctionneront pas forcément bien du premier coup. `comixminx` est la championne incontestée des culottes de couture Shin, ayant cousu plusieurs paires d'essai en vue de fabriquer des paires portables pour chacun de [ses](https://freesewing.org/showcase/shin-swim-trunks-for-comixminxs-kid/) [enfants](https://freesewing.org/showcase/more-shin-swim-shorts/).
 - **Envisage d'essayer un bloc.**</a> Comme le montre l'adorable manteau de corvée
 
-de `Bob3000`pour son enfant, basé sur le bloc Brian, la forme de base d'un bloc peut être un bon point de départ auquel tu peux ajouter des éléments de design.</li> 
+de `Bob3000`pour son enfant, basé sur le bloc Brian, la forme de base d'un bloc peut être un bon point de départ auquel tu peux ajouter des éléments de design. 
   
   - **Utilise beaucoup de facilité lorsque tu dessines pour les tout-petits.** `mathstitch` a fini par dessiner sa propre chemise à col et elle s'est avérée plutôt merveilleuse. Ils ont partagé quelques conseils pour tous ceux qui essaieraient d'adapter un dessin existant à l'avenir ! Ils suggèrent d'ajouter des tas de facilité parce que les tout-petits sont si actifs et si peu coordonnés, qu'ils ont tendance à adopter des postures inhabituelles tout le temps, comme s'accroupir et ramper, et que certains ont de gros ventres et beaucoup de graisse de chiot. 🐶 Un bonnet à manches courtes est approprié. Si ton enfant porte encore des couches, la chemise doit s'évaser au niveau des hanches pour s'y adapter, et tu devras t'assurer que les boutons se terminent suffisamment loin du bas de la chemise.
 - **Ajoute des éléments réglables pour que les vêtements tiennent plus longtemps.** `Rowan` a confectionné un minuscule tablier [Albert](https://freesewing.org/showcase/a-tiny-albert-apron/) pour l'anniversaire de leur enfant et a ajouté des éléments ajustables aux bretelles. Excellente idée pour maximiser le nombre d'utilisations qu'ils peuvent faire de cet accessoire très mignon.
-- **Couds vite.** `AMJ` rapporte avoir vu des enfants changer de taille entre l'essayage et la couture. 😀</ul> 
+- **Couds vite.** `AMJ` rapporte avoir vu des enfants changer de taille entre l'essayage et la couture. 😀 
 
 Si tu essaies l'un de nos modèles avec ton enfant, nous espérons que tu viendras en discuter sur [Discord](https://discord.freesewing.org/).
 
