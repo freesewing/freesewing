@@ -13,12 +13,14 @@ translating FreeSewing into other languages.
 
 FreeSewing is currently available in the following languages:
 
-- **en** : English
-- **de** : German
-- **es** : Spanish
-- **fr** : French
-- **nl** : Dutch
-- **uk** : Ukranian
+| Code | Language       | Website |
+| ----:|:-------------- |:------- |
+| `de` | **German**     | https://de.freesewing.org/ |
+| `en` | **English**    | https://en.freesewing.org/ |
+| `es` | **Spanish**    | https://es.freesewing.org/ |
+| `fr` | **French**     | https://fr.freesewing.org/ |
+| `nl` | **Dutch**      | https://nl.freesewing.org/ |
+| `uk` | **Ukranian**   | https://uk.freesewing.org/ |
 
 <Note compact>
 English is the translation source language and the working language of the FreeSewing project
@@ -108,7 +110,7 @@ leading the scoreboard.
 To fully translate FreeSewing, the following types of content needs to be
 translated:
 
-**Top priority: UX Translations**   
+### Top priority: UX Translations
 These are translations the directly impact
 the user experience (_UX_).  They include the content used in design, the names
 of options, translations of menus, emails, and so on.
@@ -117,16 +119,31 @@ This is a relatively small amount of text, and makes up less than 10% of the
 top & high priority content.  It's an effort that a motivated translator can
 complete over the course of a weekend.
 
-**High priority: Translation of Documenation**   
+<Tip>
+The top-priority translations in Crowdin are everything under the `packages`
+and `sites` folder. Do this first.
+</Tip>
+
+### High priority: Translation of Documenation
 This includes all the documentation on FreeSewing.org.
 
 This is a significant amount of text that makes up more than 90% of the top &
 high priority content.  It's an effort you should probably not take on by
 yourself, but rather tackle with a team of translators.
 
-**Low Priority: Content of blog and showcase posts, and newsletters**  
+<Tip>
+The high-priory translations in Crowdin is everything under the
+`markdown/org/docs` folder.
+</Tip>
+
+### Low Priority: Content of blog and showcase posts, and newsletters
 This is _nice to have_ as people can use and navigate FreeSewing even when this
 content remains untranslated.
+
+<Tip>
+The low-priory translations in Crowdin is everything under the
+`markdown/org/blog`, `markdown/org/showcase`, and `markdown/org/newsletter` folders.
+</Tip>
 
 ## Translation through Crowdin
 
@@ -154,20 +171,6 @@ Once your translation is approved, Crowdin will automatically submut a pull
 request on GitHub to update the translation files in our repository. And the
 next time our website or software packages get build, they will include the new
 translations.
-
-<Note>
-
-##### Priorities of translations in Crowdin
-
-- The top-priority translations in Crowdin are everything under the `packages`
-  and `sites` folder. Do this first.
-- The high-priory translations in Crowdin is everything under the
-  `markdown/org/docs` folder.
-- The low-priory translations in Crowdin is everything under the
-  `markdown/org/blog`, `markdown/org/showcase`, and `markdown/org/newsletter` folders.
-
-</Note>
-
 
 ## Machine translation
 
