@@ -11,6 +11,11 @@ prebuildRunner({
   site: 'org',
 
   /*
+   * Pass the language to the runner
+   */
+  language: process.env.FS_LANG || 'en',
+
+  /*
    * This prebuild config determines which prebuild step to run
    * For each step, the options are:
    *

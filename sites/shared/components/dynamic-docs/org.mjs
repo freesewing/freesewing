@@ -1,30 +1,23 @@
+import { siteConfig } from 'site/site.config.mjs'
 import dynamic from 'next/dynamic'
 import { useState } from 'react'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { MdxWrapper } from './wrapper.mjs'
 import { components } from 'shared/components/mdx/index.mjs'
 
-export const loaders = {
-  en: (path) => import(`orgmarkdown/docs/${path}/en.md`),
-  de: (path) => import(`orgmarkdown/docs/${path}/de.md`),
-  fr: (path) => import(`orgmarkdown/docs/${path}/fr.md`),
-  es: (path) => import(`orgmarkdown/docs/${path}/es.md`),
-  nl: (path) => import(`orgmarkdown/docs/${path}/nl.md`),
-  uk: (path) => import(`orgmarkdown/docs/${path}/uk.md`),
-}
+export const loader = (path) => import(`orgmarkdown/docs/${path}/${siteConfig.language}.md`)
+
 /*
  * Webpack will check on disk for all possible files matching this
  * dynamic import. So unless we divide it up a bit your computer
  * will melt when running this in development mode
- *
- * This will return a language-specific component
  */
-
-function DynamicDocs({ path, lang }) {
+function DynamicDocs({ path }) {
   const [frontmatter, setFrontmatter] = useState({})
+  console.log('FIXME in DynamicDocs', { path })
   const mdx = dynamic(
     () =>
-      loaders[lang](path).then((mod) => {
+      loader(path).then((mod) => {
         setFrontmatter(mod.frontmatter)
         return mod
       }),
@@ -33,16 +26,13 @@ function DynamicDocs({ path, lang }) {
   const MDX = mdx ? mdx : <Spinner className="w16 h-16 animate-spin text-primary" />
 
   return (
-    <MdxWrapper {...frontmatter} path={path} language={lang}>
+    <MdxWrapper {...frontmatter} path={path}>
       <MDX components={components} />
     </MdxWrapper>
   )
 }
 
 /*
- * Return language-specific component
+ * Return component
  */
-export const DynamicOrgDocs = ({ path = false, language = 'en' }) => {
-  if (!path) return null
-  return <DynamicDocs path={path} lang={language} />
-}
+export const DynamicOrgDocs = ({ path = false }) => (path ? <DynamicDocs path={path} /> : null)

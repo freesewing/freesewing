@@ -16,10 +16,11 @@ export const siteConfig = {
     dataset: 'site-content',
     apiVersion: '2023-06-17',
   },
-  languages: ['en', 'es', 'de', 'fr', 'nl', 'uk'],
-  languagesWip: [],
+  language: process.env.FS_LANG || 'en',
+  availableLanguages: ['en', 'es', 'de', 'fr', 'nl'],
   site: 'FreeSewing.org',
   tld: 'org',
+  domain: `${process.env.FS_LANG || 'en'}.freesewing.org`,
   posts: {
     preGenerate: 6,
     perPage: 12,

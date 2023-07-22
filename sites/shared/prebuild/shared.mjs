@@ -7,16 +7,13 @@ export const header = `/*
  */
 `
 
-export const loadTranslations = async ({ namespaces = [], languages = [], site }) => {
+export const loadTranslations = async ({ namespaces = [], site, language }) => {
   const translations = {}
-  for (const lang of languages) {
-    translations[lang] = {}
-    for (const ns of namespaces) {
-      const t = await import(`../../${site}/public/locales/${lang}/${ns}.json`, {
-        assert: { type: 'json' },
-      })
-      translations[lang][ns] = t.default
-    }
+  for (const ns of namespaces) {
+    const t = await import(`../../${site}/public/locales/${language}/${ns}.json`, {
+      assert: { type: 'json' },
+    })
+    translations[ns] = t.default
   }
 
   return translations

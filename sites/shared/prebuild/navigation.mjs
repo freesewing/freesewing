@@ -49,7 +49,7 @@ export const orderedSlugLut = (nav) => {
  * Main method that does what needs doing
  */
 export const prebuildNavigation = async (store) => {
-  const { site, docs = false, posts = false } = store
+  const { site, language, docs = false, posts = false } = store
   /*
    * Since this is written to disk and loaded as JSON, we minimize
    * the data to load by using the following 1-character keys:
@@ -58,74 +58,47 @@ export const prebuildNavigation = async (store) => {
    * o: order, optional
    * s: slug without leading or trailing slash (/)
    */
-  const sitenav = {}
-  const all = {
-    sitenav: '',
-  }
-  const locales = docs ? Object.keys(docs) : allLanguages
-  for (const lang of locales) {
-    sitenav[lang] = {}
+  let sitenav = {}
 
-    // Handle docs if there are any
-    if (docs[lang]) {
-      for (const slug of Object.keys(docs[lang]).sort()) {
-        const page = docs[lang][slug]
-        const val = {
-          t: page.t,
-          s: slug,
-        }
-        if (page.o) val.o = page.o
-        set(sitenav, [lang, ...slug.split('/')], val)
+  // Handle docs if there are any
+  if (docs) {
+    for (const slug of Object.keys(docs).sort()) {
+      const page = docs[slug]
+      const val = {
+        t: page.t,
+        s: slug,
       }
-    }
-
-    // Handle posts if there are any
-    if (posts) {
-      for (const type in posts) {
-        for (const [slug, post] of Object.entries(posts[type].posts[lang])) {
-          set(sitenav, [lang, ...slug.split('/')], { t: post.t, o: post.o, s: slug })
-        }
-      }
-    }
-
-    // Add imports for umbrella file
-    all.sitenav += `import { siteNav as ${lang} } from './sitenav.${lang}.mjs'` + '\n'
-
-    // Extend navigation if there's a method for that
-    if (extendNav[site]) sitenav[lang] = await extendNav[site](sitenav[lang], lang)
-
-    // Write out navigation object
-    fs.writeFileSync(
-      path.resolve('..', site, 'prebuild', `sitenav.${lang}.mjs`),
-      `${header}export const siteNav =  ${JSON.stringify(sitenav[lang])}`
-    )
-
-    /*
-     * Since slugs are language-agnostic, we only need to create a slug lookup tables
-     * once, for which we'll use the EN locale as that one is always present
-     */
-    if (lang === 'en') {
-      const sluglut = orderedSlugLut(sitenav[lang])
-      // Write out slug lookup table (sluglut)
-      fs.writeFileSync(
-        path.resolve('..', site, 'prebuild', `sluglut.mjs`),
-        `${header}export const slugLut =  ${JSON.stringify(sluglut)}`
-      )
-      store.navigation = { sluglut }
+      if (page.o) val.o = page.o
+      set(sitenav, slug.split('/'), val)
     }
   }
 
-  // Write umbrella siteNav file
+  // Handle posts if there are any
+  if (posts) {
+    for (const type in posts) {
+      for (const [slug, post] of Object.entries(posts[type].posts)) {
+        set(sitenav, slug.split('/'), { t: post.t, o: post.o, s: slug })
+      }
+    }
+  }
+
+  // Extend navigation if there's a method for that
+  if (extendNav[site]) sitenav = await extendNav[site](sitenav, language)
+
+  // Write out navigation object
   fs.writeFileSync(
     path.resolve('..', site, 'prebuild', `sitenav.mjs`),
-    `${header}${all.sitenav}export const siteNav = { ${locales.join(',')} }`
+    `${header}export const siteNav =  ${JSON.stringify(sitenav, null, 2)}`
   )
 
-  // In the lab, there will be no navigation set in the store
-  if (!store.navigation) store.navigation = {}
+  /*
+   * Write out slug lookup table
+   */
+  const sluglut = orderedSlugLut(sitenav)
+  fs.writeFileSync(
+    path.resolve('..', site, 'prebuild', `sluglut.mjs`),
+    `${header}export const slugLut =  ${JSON.stringify(sluglut)}`
+  )
 
-  // Update the store
-  store.navigation.sitenav = sitenav
-
-  return
+  return (store.navigation = { sluglut, sitenav })
 }

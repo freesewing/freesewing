@@ -39,6 +39,7 @@ const handlers = {
 
 export const prebuildRunner = async ({
   site, // The site we are running the prebuild for
+  language, // The langauge to build for
   prebuild, // The prebuild configuration object. See sites/[site]/prebuild.mjs
 }) => {
   /*
@@ -53,7 +54,7 @@ export const prebuildRunner = async ({
   /*
    * Setup a place where we can keep data
    */
-  const store = { site }
+  const store = { site, language }
 
   /*
    * Let the user know what's going to happen

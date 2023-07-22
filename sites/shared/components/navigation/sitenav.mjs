@@ -1,3 +1,4 @@
+import { siteConfig } from 'site/site.config.mjs'
 import { useContext } from 'react'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
 import Link from 'next/link'
@@ -21,7 +22,7 @@ export const ns = ['sections']
  *
  * @params tree {object} - A navigation object as returned by useNavigation => siteNav
  */
-const onlyValidChildren = (tree) =>
+const onlyValidChildren = (tree, slug) =>
   orderBy(tree, ['o', 't'], ['asc', 'asc']).filter(
     (entry) => typeof entry === 'object' && entry.t !== 'spacer' && !entry.m && !entry._ && !entry.h
   )
@@ -40,7 +41,7 @@ const onlyMainSections = (tree) =>
   orderBy(tree, ['o', 't'], ['asc', 'asc']).filter((entry) => entry.m)
 
 const SectionLink = ({ skey, tree, slug }) =>
-  tree[skey]._ ? null : tree[skey].s === slug ? ( // Underscore means always hide
+  tree[skey]?._ ? null : tree[skey].s === slug ? ( // Underscore means always hide
     <>
       <span className="pl-2 border-l-2 py-2 block w-full border-secondary bg-opacity-10">
         {tree[skey].t}
@@ -79,7 +80,7 @@ const Section = ({
   slug, // Slug of the current page (used to make links active)
 }) => (
   <ul className="ml-4">
-    {onlyValidChildren(tree).map((page, i) => (
+    {onlyValidChildren(tree, slug).map((page, i) => (
       <li key={i}>
         {slug === page.s ? (
           <>
@@ -103,6 +104,7 @@ const Section = ({
 
 /*
  * A React component to render a main link navigation
+ * These are the main titles below the sections menu
  *
  * @param t {string}    - The section title
  * @param s {string}    - The section slug
@@ -207,12 +209,30 @@ export const NavLinks = () => {
   // Grab siteNav and slug from the navigation context
   const { siteNav, slug } = useContext(NavigationContext)
 
+  let subtree = siteNav
+  /*
+   * FreeSewing.org has a lot of content, especially the design docs get nested rather deep
+   * So we trim the navigation tree so that the designs content is not overwhelming
+   */
+  if (siteConfig.tld === 'org') {
+    const chunks = slug.split('/')
+    if (chunks[0] === 'docs') {
+      if (chunks.length > 3) {
+        if (chunks[1] === 'designs') subtree = siteNav.docs.designs[chunks[2]]
+      }
+      // If nothing matched, restrict it to the docs root
+      if (subtree.blog) subtree = siteNav.docs
+    }
+  }
+
   return (
     <ul className="w-full list mb-8 mt-3">
-      {onlyValidChildren(siteNav).map((page, i) => (
+      {onlyValidChildren(subtree, slug).map((page, i) => (
         <li key={i} className="w-full">
           <MainLink s={page.s} t={page.t} slug={slug} />
-          {pageHasChildren(page) && !page.n && <Section {...{ tree: page, slug }} />}
+          {(siteConfig.tld === 'org' ? isSlugPart(page.s, slug) : true) &&
+            pageHasChildren(page) &&
+            !page.n && <Section {...{ tree: page, slug }} />}
         </li>
       ))}
     </ul>
@@ -226,6 +246,7 @@ export const MainSections = () => {
   // Grab siteNav and slug from the navigation context
   const { siteNav, slug } = useContext(NavigationContext)
   const output = []
+
   for (const page of onlyMainSections(siteNav)) {
     const act = isSlugPart(page.s, slug)
     const txt = (

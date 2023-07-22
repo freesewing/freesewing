@@ -359,7 +359,7 @@ export const maxPovDepthSlug = (slug, site) => {
  * Eg: the user is on page reference/api/part so reference/api is on the way to that page
  * In that case, this will return true
  */
-export const isSlugPart = (part, slug) => slug.slice(0, part.length) === part
+export const isSlugPart = (part, slug) => part && slug && slug.slice(0, part.length) === part
 
 /*
  * Makes a properly formated path for the given locale

@@ -1,9 +1,9 @@
 import fs from 'fs'
 import path from 'path'
-import rdir from 'recursive-readdir'
+import { exec } from 'node:child_process'
 import yaml from 'js-yaml'
 import { fileURLToPath } from 'url'
-import allLanguages from '../../../config/languages.json' assert { type: 'json' }
+//import allLanguages from '../../../config/languages.json' assert { type: 'json' }
 import { designs } from '../i18n/designs.mjs'
 
 /*
@@ -41,41 +41,29 @@ const writeJson = async (site, locale, namespace, content) => {
  *  - site: the site folder to generate translations files for
  *
  */
-const getI18nFileList = async (site, languages) => {
+const getI18nFileList = async (site, language) => {
   const dirs = [...folders.shared]
   if (site === 'org') dirs.push(...folders.org)
   if (site === 'dev') dirs.push(...folders.dev)
   if (site === 'lab') dirs.push(...folders.lab)
-
-  const allFiles = []
+  let stdout = ''
   for (const dir of dirs) {
-    try {
-      const dirFiles = await rdir(dir)
-      allFiles.push(...dirFiles)
-    } catch (err) {
-      console.log(err)
-      return false
-    }
+    const cmd = `find ${dir} -type f -name "*.${language}.yaml"`
+    const find = exec(cmd, {}, (error, stdout, stderr) => {
+      if (error) {
+        console.error(`exec error: ${error} - ${stderr}`)
+        return
+      }
+
+      return stdout
+    })
+    /*
+     * Stdout is buffered, so we need to gather all of it
+     */
+    for await (const data of find.stdout) stdout += data
   }
 
-  const keep = languages.map((loc) => `.${loc}.yaml`)
-
-  // Filter out the language files
-  return allFiles.filter((file) => keep.includes(file.slice(-8))).sort()
-}
-
-/*
- * Helper method to get language and namespace from the filename
- *
- * Parameters:
- *
- * - filename: The filename or full path + filename
- */
-const languageAndNamespaceFromFilename = (file) => {
-  const chunks = path.basename(file).split('.')
-  chunks.pop()
-
-  return chunks
+  return stdout.split('\n')
 }
 
 /*
@@ -104,44 +92,16 @@ const filesAsNamespaces = (files) => {
   // First build the object
   const translations = {}
   for (const file of files) {
-    const [namespace, lang] = languageAndNamespaceFromFilename(file)
-    if (typeof translations[namespace] === 'undefined') {
-      translations[namespace] = {}
+    const namespace = path.basename(file).slice(0, -8)
+    if (namespace) {
+      if (typeof translations[namespace] === 'undefined') {
+        translations[namespace] = {}
+      }
+      translations[namespace] = loadYaml(file)
     }
-    translations[namespace][lang] = loadYaml(file)
   }
 
   return translations
-}
-
-/*
- * Helper method to ensure all translations all available in the data
- *
- * Parameter:
- *
- * - data: The raw data based on loaded YAML files
- */
-const fixData = (rawData, languages) => {
-  const data = {}
-  for (const [namespace, nsdata] of Object.entries(rawData)) {
-    if (typeof nsdata.en === 'undefined') {
-      console.log({ namespace, nsdata })
-      throw `No English data for namespace ${namespace}. Bailing out`
-    }
-    data[namespace] = { en: nsdata.en }
-    // Complete other langauges
-    for (const lang of languages.filter((loc) => loc !== 'en')) {
-      if (typeof nsdata[lang] === 'undefined') data[namespace][lang] = nsdata.en
-      else {
-        for (const key of Object.keys(data[namespace].en)) {
-          if (typeof nsdata[lang][key] === 'undefined') nsdata[lang][key] = nsdata.en[key]
-        }
-        data[namespace][lang] = nsdata[lang]
-      }
-    }
-  }
-
-  return data
 }
 
 /*
@@ -171,38 +131,26 @@ const patternTranslationAsNamespace = (i18n, language) => {
  */
 export const prebuildI18n = async (store) => {
   /*
-   * FreeSewing.dev is only available in English
-   */
-  const languages = store.site === 'dev' ? ['en'] : allLanguages
-
-  /*
    * Handle code-adjacent translations (for React components and so on)
    */
-  const files = await getI18nFileList(store.site, languages)
-  const data = filesAsNamespaces(files)
-  const namespaces = fixData(data, languages)
+  const files = await getI18nFileList(store.site, store.language)
+  const namespaces = filesAsNamespaces(files)
   // Write out code-adjacent source files
-  for (const language of languages) {
-    // Fan out into namespaces
-    for (const namespace in namespaces)
-      writeJson(store.site, language, namespace, namespaces[namespace][language])
-  }
+  for (const namespace in namespaces)
+    writeJson(store.site, store.language, namespace, namespaces[namespace])
 
   /*
    * Handle design translations
    */
   const designNs = {}
   for (const design in designs) {
-    for (const language of languages) {
-      if (typeof designNs[language] === 'undefined') designNs[language] = {}
-      // Write out design namespace files
-      const content = patternTranslationAsNamespace(designs[design], language)
-      designNs[language][`${design}.t`] = content.t
-      designNs[language][`${design}.d`] = content.d
-      writeJson(store.site, language, design, content)
-    }
+    // Write out design namespace files
+    const content = patternTranslationAsNamespace(designs[design], store.language)
+    designNs[`${design}.t`] = content.t
+    designNs[`${design}.d`] = content.d
+    writeJson(store.site, store.language, design, content)
   }
-  for (const language of languages) writeJson(store.site, language, 'designs', designNs[language])
+  writeJson(store.site, store.language, 'designs', designNs)
 
   /*
    * Update the store

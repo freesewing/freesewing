@@ -8,6 +8,7 @@ export const DefaultLayout = ({ children = [], pageTitle = false }) => (
   <BaseLayout>
     <BaseLayoutLeft>
       <MainSections />
+      fixme: default layout
       <NavLinks />
     </BaseLayoutLeft>
 

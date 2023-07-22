@@ -35,7 +35,7 @@ export const NavigationContextProvider = ({ children }) => {
    * @param value {value} to set
    */
   function updateSiteNav(path, value) {
-    setSiteNav(objUpdate(siteNav[locale], path, value))
+    setSiteNav(objUpdate(siteNav, path, value))
   }
 
   /*
@@ -75,13 +75,11 @@ export const NavigationContextProvider = ({ children }) => {
   /*
    * Pass everything down as the value object, including the methods to update
    * the state (which will in turn update the context value)
-   *
-   * Note that we're only passing down the siteNav object for the current locale
    */
   return (
     <NavigationContext.Provider
       value={{
-        siteNav: siteNav[locale],
+        siteNav,
         slugLut,
         slug,
         locale,
