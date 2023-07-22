@@ -1,4 +1,4 @@
-# Change log for: @freesewing/collab
+# Change log for: @freesewing/naomiwu
 
 
 

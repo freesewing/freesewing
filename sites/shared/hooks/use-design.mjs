@@ -12,7 +12,6 @@ import { Carlita } from '@freesewing/carlita'
 import { Carlton } from '@freesewing/carlton'
 import { Cathrin } from '@freesewing/cathrin'
 import { Charlie } from '@freesewing/charlie'
-import { Collab } from '@freesewing/collab'
 import { Cornelius } from '@freesewing/cornelius'
 import { Diana } from '@freesewing/diana'
 import { Florence } from '@freesewing/florence'
@@ -26,6 +25,7 @@ import { Jaeger } from '@freesewing/jaeger'
 import { Lucy } from '@freesewing/lucy'
 import { Lunetius } from '@freesewing/lunetius'
 import { Magde } from '@freesewing/magde'
+import { Naomiwu } from '@freesewing/naomiwu'
 import { Noble } from '@freesewing/noble'
 import { Octoplushy } from '@freesewing/octoplushy'
 import { Paco } from '@freesewing/paco'
@@ -76,6 +76,7 @@ const designs = {
   lucy: Lucy,
   lunetius: Lunetius,
   magde: Magde,
+  naomiwu: Naomiwu,
   noble: Noble,
   octoplushy: Octoplushy,
   paco: Paco,

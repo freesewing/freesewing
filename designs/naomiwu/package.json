@@ -1,7 +1,7 @@
 {
-  "name": "@freesewing/collab",
+  "name": "@freesewing/naomiwu",
   "version": "3.0.0-alpha.10",
-  "description": "FIXME: A FreeSewing pattern that is a work in progress",
+  "description": "A FreeSewing pattern for Naomi Wu's signature cargo skirt",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
@@ -65,7 +65,7 @@
     "tag": "next"
   },
   "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=8"
+    "node": "18",
+    "npm": "9"
   }
 }
