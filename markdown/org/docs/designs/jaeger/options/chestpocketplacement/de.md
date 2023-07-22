@@ -1,5 +1,5 @@
 ---
-title: "Chest pocket placement"
+title: "Platzierung der Brusttasche"
 ---
 
 ![Platzierung der Brusttasche](chestpocketplacement.svg)
@@ -8,4 +8,4 @@ Position der Brusttasche im Verhältnis ein Viertel des Brustumfangs. Höhere Za
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_chestpocketplacement_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_chestpocketplacement_sample.svg "Effekt dieser Option auf das Schnittmuster")

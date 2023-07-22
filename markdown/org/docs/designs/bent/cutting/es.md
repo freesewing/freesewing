@@ -1,27 +1,27 @@
 ---
-title: "Bent body Block: Cutting Instructions"
+title: "Bloque de cuerpo doblado: Instrucciones de corte"
 ---
 
 **Tela principal**
 
-- Cut **1 Front** part on the fold.
-- Cut **1 Back** part on the fold.
-- Cut **2 Top sleeve** parts.
-- Cut **2 Under sleeve** parts.
+- Corta **1 Parte delantera** en el pliegue.
+- Corta **1 Parte trasera** en el pliegue.
+- Corta **2 Piezas del manguito superior** .
+- Corta **2 Piezas bajo el manguito** .
 
-These cutting instructions are just for the default Bent block. Adjust your cutting accordingly if you have/are making changes to the block.
+Estas instrucciones de corte son sólo para el bloque Doblado por defecto. Si has hecho o estás haciendo cambios al patrón base, ajusta tu corte como corresponda.
 
 <Warning>
 
-As Bent is a block it does not have any closures. If you are making a test Bent you will want to Cut 2 Front parts with seam allowances so you can pin yourself into it.
+Como Bent es un bloque, no tiene cierres. Si vas a hacer una prueba de Bent, querrás cortar 2 partes delanteras con márgenes de costura para que puedas clavarte en ella.
 
 </Warning>
 
 <Note>
 
-###### Bent is a block, not a pattern
+###### Doblado es un bloque, no un patrón
 
-A block is a basic shape on which other patterns are based.
+Un bloque es una forma básica en la que se basan otros patrones.
 A veces también se llaman trampas, aunque los puristas argumentarán que un bloque y una inclinación son cosas diferentes.
 
 Los bloques normalmente no se hacen as-is sino que sirven como base para otros patrones.

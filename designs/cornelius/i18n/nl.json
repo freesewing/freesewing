@@ -1,0 +1,53 @@
+{
+  "t": "Cornelius fietsen boren",
+  "d": "Cornelius zijn broeders aan het fietsen op basis van de methode van Sleutelsteen.",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "frontpoints": "Front points",
+    "legband": "Legband",
+    "legbandKeystone": "Legband Keystone",
+    "pocket": "Pocket",
+    "pocketFacing": "Pocket facing",
+    "waistband": "Waistband",
+    "zipperguard": "Zipperguard"
+  },
+  "s": {
+    "Vent": "Vuur",
+    "PocketFacing": "Zak beleg"
+  },
+  "o": {
+    "fullness": {
+      "t": "Volle",
+      "d": "Bepaalt de volledigheid van de broeders"
+    },
+    "waistbandBelowWaist": {
+      "t": "Onderste tailleband",
+      "d": "Percentage om de tailleband onder de tailleband te bewegen"
+    },
+    "waistReduction": {
+      "t": "Reductie taille",
+      "d": "Percentage om de tailleband te verminderen"
+    },
+    "cuffWidth": {
+      "t": "Cuff width",
+      "d": "Breedte van de manchet"
+    },
+    "cuffStyle": {
+      "t": "Stijl manchet",
+      "d": "Stijl van de manchet"
+    },
+    "bandBelowKnee": {
+      "t": "Manchet onder knie",
+      "d": "Bepaalt de afstand tussen de manchet en de knie"
+    },
+    "kneeToBelow": {
+      "t": "Lengte manchet",
+      "d": "Bepaalt de dikte van de manchet in vergelijking met de knie"
+    },
+    "ventLength": {
+      "t": "Vent lengte",
+      "d": "Bepaalt de lengte van de vent tussen de knie en de manchet"
+    }
+  }
+}

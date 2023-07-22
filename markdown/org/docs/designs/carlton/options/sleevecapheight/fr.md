@@ -1,9 +1,9 @@
 ---
-title: "Sleevecap height"
+title: "Hauteur du tête de manche"
 ---
 
-This factor controls the height of the sleevecap.
+Ce facteur contrôle la hauteur de la tête de manche.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlton_sleevecapheight_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlton_sleevecapheight_sample.svg "Effet de cette option sur le motif")

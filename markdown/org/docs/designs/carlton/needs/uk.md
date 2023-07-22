@@ -1,22 +1,22 @@
 ---
-title: "Carlton coat: What You Need"
+title: "Пальто Карлтон: Що вам потрібно"
 ---
 
-To make Carlton, you will need the following:
+Щоб зробити Карлтона, вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 5 - 6 metres (5.5 - 6.6 yards) of a suitable main fabric ([see Carlton Fabric options](/docs/patterns/carlton/fabric/))
-- About 3.5 - 4 metres (3.8 - 4.4 yards) of lining fabric ([see Carlton Fabric options](/docs/patterns/carlton/fabric/))
-- About 0.75 - 1 metre (0.8 - 1.1 yards) of sleeve lining fabric ([see Carlton Fabric options](/docs/patterns/carlton/fabric/))
-- Light to Mediumweight hair canvas ([see Carlton Fabric options](/docs/patterns/carlton/fabric/))
-- Heavyweight hair canvas ([see Carlton Fabric options](/docs/patterns/carlton/fabric/))
-- Tailors tape
-- 6 Buttons for front closure
-- Strong thread for attaching facings
-- (Optional) Silk buttonhole twist if hand-sewing the buttonholes and buttons.
+- Базові матеріали для шиття
+- Приблизно 5 - 6 метрів (5,5 - 6,6 ярдів) відповідної основної тканини ([див. варіанти тканини Carlton](/docs/patterns/carlton/fabric/))
+- Приблизно 3,5 - 4 метри (3,8 - 4,4 ярда) підкладкової тканини ([див. варіанти тканини Carlton](/docs/patterns/carlton/fabric/))
+- Приблизно 0,75 - 1 метр (0,8 - 1,1 ярда) підкладкової тканини для рукавів ([див. варіанти тканини Carlton](/docs/patterns/carlton/fabric/))
+- Легке та середнє полотно для волосся ([див. варіанти тканини Carlton](/docs/patterns/carlton/fabric/))
+- Важке полотно з волокон ([див. варіанти тканини Carlton](/docs/patterns/carlton/fabric/))
+- Кравецька стрічка
+- 6 Кнопки для закриття спереду
+- Міцна різьба для кріплення облицювання
+- (Необов'язково) Шовкова петля для ґудзиків, якщо ви пришиваєте петлі та ґудзики вручну.
 
 <Warning>
 
-Carlton has a lot of pieces! These lengths are estimates, you may need more or less depending on your size but if in doubt add an extra 0.5 to 1 metre of fabric.
+У Карлтона багато творів! Ця довжина є приблизною, вам може знадобитися більше або менше залежно від вашого розміру, але якщо ви сумніваєтеся, додайте додаткові 0,5-1 метр тканини.
 
 </Warning>

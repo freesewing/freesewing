@@ -1,0 +1,50 @@
+{
+  "t": "Nœud papillon Benjamin",
+  "d": "Benjamin est un nœud papillon avec 4 possibilités de styles différents.",
+  "p": {
+    "base": "Base",
+    "bow1": "Nœud",
+    "bow2": "Nœud",
+    "bow3": "Nœud",
+    "ribbon": "Bande"
+  },
+  "s": {},
+  "o": {
+    "adjustmentRibbon": {
+      "t": "Ruban d'ajustement",
+      "d": "Si vous souhaitez inclure ou non un ruban d'ajustement"
+    },
+    "bandLength": {
+      "t": "Longueur de bande",
+      "d": "Longueur de la bande"
+    },
+    "tipWidth": {
+      "t": "Largeur de pointe",
+      "d": "Largeur des pointes"
+    },
+    "knotWidth": {
+      "t": "Largeur du noeud",
+      "d": "Largeur du nœud"
+    },
+    "bowLength": {
+      "t": "Longueur de nœud",
+      "d": "Longueur du nœud (lorsqu'il est noué)"
+    },
+    "bowStyle": {
+      "t": "Style de nœud",
+      "d": "Style du nœud"
+    },
+    "endStyle": {
+      "t": "Style de l'extrémité",
+      "d": "Style des extrémités du noeud"
+    },
+    "collarEase": {
+      "t": "Aisance du col",
+      "d": "La quantité d'aisance à votre cou"
+    },
+    "ribbonWidth": {
+      "t": "Largeur du ruban d'ajustement",
+      "d": "Largeur du ruban"
+    }
+  }
+}

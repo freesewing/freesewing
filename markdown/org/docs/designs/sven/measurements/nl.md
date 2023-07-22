@@ -1,5 +1,5 @@
 ---
-title: "Sven sweatshirt: Required Measurements"
+title: "Sven sweatshirt: Benodigde afmetingen"
 ---
 
 <PatternMeasurements pattern='sven' />

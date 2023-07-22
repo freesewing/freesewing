@@ -1,18 +1,18 @@
 ---
-title: "Lucy tie-on pocket: Cutting Instructions"
+title: "Lucy Tasche zum Anbinden: Schnittanleitung"
 ---
 
-- Cut **2 pocket** parts
-- Cut pocket slit into **1 pocket** part
+- Schneide **2 Taschen** Teile
+- Schneide den Taschenschlitz in **1 Tasche** Teil
 
-#### Historical context
+#### Historischer Kontext
 
-Tie-on pockets like Lucy were worn roughly from the mid-seventeenth (1650s) century until the end of the 19th century (1890s). They came in all shapes and sizes but Lucy is based on an 18th century example.
+Aufgesetzte Taschen wie Lucy wurden ungefähr von der Mitte des siebzehnten (1650er) Jahrhunderts bis zum Ende des 19. Jahrhunderts (1890er) getragen. Es gab sie in allen Formen und Größen, aber Lucy basiert auf einem Beispiel aus dem 18.
 
-They were worn and used by all members of society and were mainly womens wear as men had a variety of pockets sewn into their clothing.
+Sie wurden von allen Mitgliedern der Gesellschaft getragen und benutzt und waren hauptsächlich für Frauen bestimmt, während Männer eine Vielzahl von Taschen in ihre Kleidung eingenäht hatten.
 
-Pockets would be tied around the waist and could be accessed through a slit in skirts and petticoats. Where the pocket would be in between the layers was up to the individual. If it was hidden in between layers that would provide more security, but hinder accessibility. People who worked in trade often wore their pockets on the outside of their garments entirely, for easy access.
+Die Taschen wurden um die Taille gebunden und konnten durch einen Schlitz in den Röcken und Petticoats erreicht werden. Wo sich die Tasche zwischen den Schichten befinden sollte, war jedem selbst überlassen. Wenn es zwischen den Schichten versteckt wäre, würde das zwar mehr Sicherheit bieten, aber die Zugänglichkeit erschweren. Menschen, die im Handel tätig waren, trugen ihre Taschen oft ganz außen an der Kleidung, damit sie leicht zugänglich waren.
 
-(Tie-on) Pockets were used alongside patch pockets, sewn in pockets, bags and other ways to carry your things. Sometimes they even had additional pockets hidden inside them!
+(Aufgesetzte) Taschen wurden neben aufgesetzten Taschen, eingenähten Taschen, Beuteln und anderen Möglichkeiten, deine Sachen zu transportieren, verwendet. Manchmal waren sogar zusätzliche Taschen darin versteckt!
 
-If you want to learn more you can read: Burman, B. & Fennetaux A. (2020)  _The Pocket, A Hidden History of Women's Lives_ Yale University Press, London
+Wenn du mehr erfahren willst, kannst du lesen: Burman, B. & Fennetaux A. (2020)  _The Pocket, A Hidden History of Women's Lives_ Yale University Press, London

@@ -1,5 +1,5 @@
 ---
-title: "Bruce boxer briefs: Required Measurements"
+title: "Calzoncillos bóxer Bruce: Medidas requeridas"
 ---
 
 <PatternMeasurements pattern='bruce' />

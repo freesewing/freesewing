@@ -1,5 +1,5 @@
 ---
-title: "Carlita coat"
+title: "Manteau Carlita"
 ---
 
 <PatternDocs pattern='carlita' />

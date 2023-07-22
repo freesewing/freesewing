@@ -1,5 +1,5 @@
 ---
-title: "Simone shirt: Required Measurements"
+title: "Camisa Simone: Medidas requeridas"
 ---
 
 <PatternMeasurements pattern='simone' />

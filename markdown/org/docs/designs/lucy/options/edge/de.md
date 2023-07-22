@@ -1,9 +1,9 @@
 ---
-title: Edge
+title: Kante
 ---
 
-This option controls the width of the top edge of your pocket.
+Diese Option steuert die Breite der oberen Kante deiner Tasche.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](lucy_edge_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](lucy_edge_sample.svg "Effekt dieser Option auf das Schnittmuster")

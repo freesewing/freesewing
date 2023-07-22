@@ -1,5 +1,5 @@
 ---
-title: "Florent flat cap"
+title: "Пласка кепка Флорент"
 ---
 
 <PatternDocs pattern='florent' />

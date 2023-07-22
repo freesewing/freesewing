@@ -108,7 +108,8 @@ After the lab, dev, or org website starts:
   custom URL.
 - You can also access the custom URL via the "Ports" panel.
 
-<Tip compact>
+<Tip>
+
 An example of a custom URL: `https://username-ominous-space-waffle-rwpgzw5q15vqc52q9-8000.preview.app.github.dev/`
 </Tip>
 

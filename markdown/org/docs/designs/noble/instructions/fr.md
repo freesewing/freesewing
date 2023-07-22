@@ -1,17 +1,17 @@
 ---
-title: "Noble body block: Sewing Instructions"
+title: "Bloc de corps noble : Instructions de couture"
 ---
 
 <Note>
 
-###### Noble is a block, not a pattern
+###### Noble est un bloc, pas un motif
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Un bloc est une forme de base sur laquelle les autres motifs sont basés.
+Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Noble block.
+Les blocs ne sont généralement pas faits tels quels mais servent plutôt de base à d'autres modèles. Les instructions ci-dessous n'approfondissent donc pas les fermetures ou les finitions et concernent le bloc Noble par défaut.
 
-Noble is based on the Bella body block
+Noble est basé sur le bloc corporel Bella
 
 </Note>
 
@@ -19,15 +19,15 @@ Noble is based on the Bella body block
 
 - Sew the front inside to the front outside, good sides together.
 
-### Shoulder seam
+### Couture d'épaule
 
 - Sew the back inside to the back outside, good sides together.
 
-### Armhole seam
+### Couture de l'emmanchure
 
-- Close the back darts.
+- Fermer les fléchettes arrière.
 
-### Both
+### Les deux
 
 - Sew the front to the backs at the shoulders, good sides together.
 - Sew the front to the backs at the side seams, good sides together.
@@ -40,15 +40,15 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 ### Étape 2 : Essayez-le
 
-- Try it on and check the fit by pinning the back closed whilst wearing it.
-- Apportez les modifications nécessaires et essayez à nouveau le vêtement.
-- Répétez l'opération jusqu'à ce que vous soyez satisfait.
+- Essayez-le et vérifiez la coupe en épinglant le dos tout en le portant.
+- Effectuez toutes les modifications et essayez à nouveau.
+- Répétez jusqu'à ce que vous soyez satisfait.
 
 <Tip>
 
-Si vous n'avez personne pour vous aider à épingler, vous trouverez peut-être plus facile de couper le devant en deux avec la marge de couture plutôt que sur un pli et de coudre la couture du dos pour pouvoir épingler le devant.
+Si vous n'avez personne pour vous aider à épingler, vous trouverez peut-être plus facile de couper le devant en deux avec une marge de couture plutôt que sur un pli et de coudre la couture du dos pour pouvoir épingler le devant lors de l'essayage.
 
-Soyez attentif à tout ce que vous faites en portant la maquette : la tirez-vous vers le bas ? Ajuster constamment l'épaule ? ect... Ces éléments sont des signes indiquant que le modèle doit être ajusté.
+Soyez attentif à tout ce que vous faites en portant la maquette : la tirez-vous vers le bas ? Ajustement permanent de l'épaule ? ect... Ces éléments sont des signes indiquant que le modèle doit être ajusté.
 
 Il est parfois nécessaire de porter la maquette pendant un certain temps pour avoir une meilleure idée de la coupe, alors n'hésitez pas à vous promener avec pendant quelques heures.
 
@@ -56,7 +56,7 @@ Il est parfois nécessaire de porter la maquette pendant un certain temps pour a
 
 <Note>
 
-Remember to treat Noble as a basis rather than a final product, so adjust what you need to get the desired look.
+N'oublie pas de considérer Noble comme une base plutôt que comme un produit final, alors ajuste ce dont tu as besoin pour obtenir l'aspect désiré.
 For instance:
 
 - Change the neck line
@@ -65,9 +65,9 @@ For instance:
 - Add a collar
 
 It is all up to you!
-- Add a collar
+- Ajoute un collier
 
-It is all up to you! Expérimentez et allez-y !
+Tout dépend de toi ! Expérimentez et allez-y !
 
 </Note>
 

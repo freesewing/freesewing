@@ -1,5 +1,5 @@
 ---
-title: "Bent body Block: Required Measurements"
+title: "Cuerpo doblado Bloque: Medidas necesarias"
 ---
 
 <PatternMeasurements pattern='bent' />

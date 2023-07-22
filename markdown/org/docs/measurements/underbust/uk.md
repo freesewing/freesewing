@@ -1,9 +1,9 @@
 ---
-title: Underbust
+title: Підгруддя
 ---
 
-The **underbust** measurement is the circumference of your chest without taking your breasts into account.
+**Підгруддя** — це обхват під грудьми без урахування молочних залоз.
 
-To measure your **underbust**, wrap the tape measure around your chest just below your breasts, where your bra band sits.
+Для зняття цієї мірки охопіть сантиметром одразу під грудьми — де розташовується пояс бюстгальтера.
 
-If you don’t have breasts, this measurement does not apply to you. Just use your chest circumference.
+Якщо Ви не маєте молочні залози, цей вимір Вас не стосується. Просто використовуйте обхват грудей.

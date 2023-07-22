@@ -1,9 +1,9 @@
 ---
-title: "Bottom Leg Reduction (Octoplushy)"
+title: "Зменшення нижньої лапки (Октопуши)"
 ---
 
-This setting adjusts the difference in length between the top and the bottom fabric of the legs. The bigger the difference, the more the legs will want to curl.
+Цей параметр регулює різницю в довжині між верхньою і нижньою тканиною штанин. Чим більша різниця, тим більше ноги будуть хотіти скручуватися.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](octoplushy_bottomlegreductionplushy_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](octoplushy_bottomlegreductionplushy_sample.svg "Вплив цієї опції на шаблон")

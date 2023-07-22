@@ -1,5 +1,7 @@
-import { Design } from '@freesewing/core'
+import { Design, mergeI18n } from '@freesewing/core'
 import { data } from '../data.mjs'
+import { i18n as simonI18n } from '@freesewing/simon'
+import { i18n as simoneI18n } from '../i18n/index.mjs'
 import {
   // We use these as-is from simon
   back,
@@ -57,6 +59,9 @@ const Simone = new Design({
   ],
 })
 
+// Merge translations
+const i18n = mergeI18n([simonI18n, simoneI18n])
+
 // Export all parts to facilitate extending this pattern
 export {
   fbaFront,
@@ -73,4 +78,5 @@ export {
   frontRight,
   frontLeft,
   Simone,
+  i18n,
 }

@@ -1,0 +1,48 @@
+{
+  "t": "Holmes Deerstalker-Hut",
+  "d": "Für Sherlock Holmes-Cosplay oder einfach nur als niedlicher Hut.",
+  "p": {
+    "ear": "Ear",
+    "gore": "Gore",
+    "visor": "Visor"
+  },
+  "s": {},
+  "o": {
+    "headEase": {
+      "t": "Kopfumfangszugabe",
+      "d": "Bequemlichkeits-/Bewegungszugabe zum Umfang deines Kopfes."
+    },
+    "lengthRatio": {
+      "t": "Längenverhältnis",
+      "d": "Kontrolliert die Länge der Hutkrone und Ohrklappen"
+    },
+    "gores": {
+      "t": "Anzahl der Keile",
+      "d": "Anzahl der Keile, die die Hutkrone zu bilden"
+    },
+    "visorAngle": {
+      "t": "Winkel des Mützenschirms",
+      "d": "Winkel, der die innere Kurve des Mützenschirms beschreibt"
+    },
+    "visorWidth": {
+      "t": "Breite des Mützenschirms",
+      "d": "Steuert die Breite des Mützenschirms"
+    },
+    "earLength": {
+      "t": "Länge der Ohrklappen",
+      "d": "Steuert die Länge der Ohrklappen unabhängig von den Kronenstücken"
+    },
+    "earWidth": {
+      "t": "Breite der Ohrklappen",
+      "d": "Steuert die Breite der Ohrklappen"
+    },
+    "buttonhole": {
+      "t": "Führung für das Knopfloch",
+      "d": "Fügt der Ohrklappe einen Knopfloch hinzu, um die Variante mit Knopflochs zu entwerfen"
+    },
+    "visorLength": {
+      "t": "Länge des Mützenschirmes",
+      "d": "Steuert die Länge des Mützenschirms"
+    }
+  }
+}

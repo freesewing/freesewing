@@ -1,0 +1,95 @@
+{
+  "t": "Bloc de corps Noble",
+  "d": "Noble est un bloc de corps avec des coutures prince(sse)",
+  "p": {
+    "backInside": "Back inside",
+    "backOutside": "Back outside",
+    "backPoints": "Back base",
+    "frontInside": "Front inside",
+    "frontOutside": "Front outside",
+    "frontPoints": "Front base"
+  },
+  "s": {},
+  "o": {
+    "dartPosition": {
+      "t": "Position de la pince",
+      "d": "Contrôle s'il faut séparer à l'épaule ou à l'emmanchure"
+    },
+    "chestEase": {
+      "t": "Aisance de poitrine",
+      "d": "Contrôle la quantité d'aisance de votre poitrine"
+    },
+    "waistEase": {
+      "t": "Aisance à la taille",
+      "d": "Contrôle la quantité d'aisance au niveau de la taille"
+    },
+    "bustSpanEase": {
+      "t": "Aisance de l'écart poitrine",
+      "d": "Contrôle l'ampleur de l'aisance le long du buste"
+    },
+    "backDartHeight": {
+      "t": "Contrôle la hauteur de la pince de dos",
+      "d": "Hauteur de la pince de dos"
+    },
+    "waistDartLength": {
+      "t": "Longueur de la pince de taille",
+      "d": "Contrôle la longueur de la pince de taille"
+    },
+    "shoulderDartPosition": {
+      "t": "Position de la pince d'épaule",
+      "d": "Contrôle la position de la pince d'épaule"
+    },
+    "upperDartLength": {
+      "t": "Longueur de la pince supérieure",
+      "d": "Contrôle la longueur de la pince supérieure"
+    },
+    "armholeDartPosition": {
+      "t": "Position de la pince d'emmanchure",
+      "d": "Contrôle la position de la pince d'emmanchure"
+    },
+    "armholeDepth": {
+      "t": "Profondeur d'emmanchure",
+      "d": "Contrôle la profondeur de l'emmanchure"
+    },
+    "backArmholeSlant": {
+      "t": "Inclinaison d'emmanchure dos",
+      "d": "Contrôle l'inclinaison de l'emmanchure dos"
+    },
+    "backArmholeCurvature": {
+      "t": "Courbure de l'emmanchure arrière",
+      "d": "Contrôle la profondeur du bas de la courbure d'emmanchure dans le dos"
+    },
+    "frontArmholeCurvature": {
+      "t": "Courbe de l'emmanchure avant",
+      "d": "Contrôle la profondeur du bas de la courbure d'emmanchure sur le devant"
+    },
+    "frontArmholePitchDepth": {
+      "t": "Profondeur du point de pivot de l'emmanchure avant",
+      "d": "Contrôle la profondeur de l'emmanchure sur le devant"
+    },
+    "backArmholePitchDepth": {
+      "t": "Profondeur du point de pivot de l'emmanchure dos",
+      "d": "Contrôle la profondeur de l'emmanchure dans le dos"
+    },
+    "backNeckCutout": {
+      "t": "Arrondi de l'encolure dos",
+      "d": "Contrôle la profondeur de l'encolure dans le dos"
+    },
+    "backHemSlope": {
+      "t": "Pente de l'ourlet arrière",
+      "d": "Contrôle la pente de l'ourlet arrière"
+    },
+    "frontShoulderWidth": {
+      "t": "Largeur d'épaule devant",
+      "d": "Contrôle la largeur ajoutée devant les épaules"
+    },
+    "highBustWidth": {
+      "t": "Largeur du haut de poitrine",
+      "d": "Contrôle la largeur du haut de poitrine"
+    },
+    "shoulderToShoulderEase": {
+      "t": "Aisance d'épaule à épaule",
+      "d": "Contrôle l'aisance sur la mesure épaule à épaule"
+    }
+  }
+}

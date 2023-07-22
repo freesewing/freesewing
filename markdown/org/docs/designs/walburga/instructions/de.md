@@ -1,37 +1,37 @@
 ---
-title: "Walburga Wappenrock: Sewing Instructions"
+title: "Walburga Wappenrock: Anleitung zum Nähen"
 ---
 
 <Note>
 
-Walburga is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. Sie tun das.
+Walburga ist ein historisch inspiriertes Muster, und wenn du mehr Authentizität willst, ist Handnähen der richtige Weg. Ich selber verwende eine Nähmaschine. Sie tun das.
 
 </Note>
 
-### Step 1: Sew shoulder seams
+### Schritt 1: Nähen der Schulternähte
 
-- Put front and back pieces with good sides together. Sew the shoulder seams, taking care to stop at the notches for the head opening.
+- Lege die Vorder- und Rückenteile mit den guten Seiten zusammen. Nähen Sie die Schulternähte und achten Sie dabei darauf, dass Sie an den Einschnitten für die Kopföffnung aufhören.
 
-### Step 2: Finish seams and head opening
+### Schritt 2: Nähte und Kopföffnung fertigstellen
 
-- Finish the seams and the raw edges at the head opening, with a method of your choice. (If you used the fabrics recommended in the [fabric options](/docs/patterns/walburga/fabric), they _will_ fray. Folding the seam allowance twice, enclosing the raw edge and topstitching is an option. You can also use decorative topstitching.)
+- Bearbeite die Nähte und die Schnittkanten an der Kopföffnung mit einer Methode deiner Wahl. (Wenn du die in den [Stoffoptionen](/docs/patterns/walburga/fabric)empfohlenen Stoffe verwendest, werden sie __ ausfransen. Du kannst die Nahtzugabe zweimal falten, die Schnittkante einschlagen und absteppen. Du kannst auch dekorative Steppnähte verwenden).
 
-### (Optional) Step 3: Cut slits
+### (Optional) Schritt 3: Schlitze schneiden
 
-_This step is optional, you can also opt not to cut slits. If so, continue with step 4._
+_Dieser Schritt ist optional, du kannst dich auch dafür entscheiden, keine Schlitze zu schneiden. Wenn ja, fahre mit Schritt 4 fort._
 
 <Warning>
 
-If you cut slits, there will be no seam (or hem) allowance to finish the edge there. Think about this before you cut.
+Wenn du Schlitze schneidest, gibt es keine Nahtzugabe (oder Saumzugabe), um die Kante dort zu beenden. Denke darüber nach, bevor du schneidest.
 
 </Warning>
 
-- Cut into your fabric until the notch, both on the front and back piece.
+- Schneide deinen Stoff bis zur Kerbe ein, sowohl auf der Vorder- als auch auf der Rückseite.
 
-### Step 4: Finish edges
+### Schritt 4: Kanten bearbeiten
 
-- Finish the edges of the garment. This is a good time to use bias tape or similar to enclose the raw edge (especially if you cut slits in step 3). This step can take some time, so be patient.
+- Bearbeite die Kanten des Kleidungsstücks. Jetzt ist ein guter Zeitpunkt, um die rohe Kante mit Schrägband oder ähnlichem zu umschließen (vor allem, wenn du in Schritt 3 Schlitze geschnitten hast). Dieser Schritt kann einige Zeit dauern, also hab Geduld.
 
-### Step 5: That's it!
+### Schritt 5: Das war's!
 
-You're done! You could now appliqué/embroider/otherwise attach a symbol or heraldics of your choice onto your garment.
+Fertig! Du kannst nun ein Symbol oder Wappen deiner Wahl auf dein Kleidungsstück applizieren, sticken oder auf andere Weise anbringen.

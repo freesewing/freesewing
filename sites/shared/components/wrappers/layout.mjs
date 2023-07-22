@@ -12,6 +12,8 @@ export const LayoutWrapper = ({
   setSearch,
   noSearch = false,
   header = false,
+  footer = true,
+  slug,
 }) => {
   const ChosenHeader = header ? header : Header
 
@@ -38,16 +40,17 @@ export const LayoutWrapper = ({
     flex flex-col justify-between
     min-h-screen
     bg-base-100
+    group/layout
+    header-${showHeader ? 'shown' : 'hidden'}
     `}
     >
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <ChosenHeader show={showHeader} />
+      <ChosenHeader show={showHeader} slug={slug} />
 
       <main
-        className={`grow transition-margin duration-300 ease-in-out ${
-          showHeader ? 'lg:mt-24 ' : 'lg:mt-4'
+        className={`grow transition-margin duration-300 ease-in-out lg:group-[.header-shown]/layout:mt-24 lg:mt-4
         }`}
       >
         {children}
@@ -69,7 +72,7 @@ export const LayoutWrapper = ({
           <div className="fixed top-0 left-0 w-full min-h-screen bg-neutral z-20 bg-opacity-70"></div>
         </>
       )}
-      <Footer />
+      {footer && <Footer />}
     </div>
   )
 }

@@ -1,12 +1,12 @@
 ---
-title: "Inner pocket welt height"
+title: "Висота шва внутрішньої кишені"
 ---
 
-Controls the width of the inner pocket welts.
+Контролює ширину швів внутрішньої кишені.
 
-- Increase this option to increase the width of the inner pocket welts
-- Decrease this option to decrease the width of the inner pocket welts
+- Збільште цей параметр, щоб збільшити ширину швів внутрішньої кишені
+- Зменшіть цей параметр, щоб зменшити ширину швів внутрішньої кишені
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_innerpocketweltheight_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_innerpocketweltheight_sample.svg "Вплив цієї опції на шаблон")

@@ -1,9 +1,9 @@
 ---
-title: "Crotch seam bend"
+title: "Crotch Naht Biegen"
 ---
 
-Controls the curvature of the croth seam, which influences the fit at your crotch.
+Steuert die Krümmung der Kräuternaht, die die Passform an Ihrem Wurf beeinflusst.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_crotchseamcurvebend_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](charlie_crotchseamcurvebend_sample.svg "Effekt dieser Option auf das Schnittmuster")

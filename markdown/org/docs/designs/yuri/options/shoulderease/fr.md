@@ -1,11 +1,11 @@
 ---
-titre : "Aisance d'épaule"
+title: "Aisance des épaules"
 ---
 
-Contrôle l'aisance sur la mesure épaule à épaule.
+Contrôle l'ampleur de l'aisance sur la mesure d'épaule à épaule.
 
-Cette option vous permet de créer une aisance supplémentaire entre les épaules, ce qui déplace la couture d'épaule vers l'extérieur et vers l'épaule. Ceci permet de créer de l'aisance si l'on veut porter un autre vêtement en dessous, ou si on prévoit des épaules rembourrées sur le modèle.
+This option allows you to create some extra ease at the shoulders which shifts the shoulder seam more outwards and off the shoulder. Thereby creating extra room for extra layers of clothing underneath, or more shaped/padded shoulders.
 
-## Effet de cette option sur le modèle
+## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](yuri_shoulderease_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](yuri_shoulderease_sample.svg "Effet de cette option sur le motif")

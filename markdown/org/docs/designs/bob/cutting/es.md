@@ -1,13 +1,13 @@
 ---
-title: "Bob the Bib: Cutting Instructions"
+title: "Bob el Babero Instrucciones de corte"
 ---
 
-- Cut **1 bib**
+- Corta **1 dorsal**
 
 <Warning>
 
-#### Caveats
+#### Advertencias
 
-- There is no seam allowance on the bib, it will be finished with bias tape
+- No hay margen de costura en el babero, se terminará con cinta al bies
 
 </Warning>

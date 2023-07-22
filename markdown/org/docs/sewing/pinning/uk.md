@@ -1,21 +1,21 @@
 ---
-title: Pinning
+title: Закріплення
 ---
 
-![Sewing pins are part of the basic sewing supplies](sewing-pins.jpg)
+![Швейні шпильки є частиною основного швейного приладдя](sewing-pins.jpg)
 
-![Fabric being pinned into place](fabric-pinning.jpg)
+![Тканина закріплюється на місці](fabric-pinning.jpg)
 
-Pinning is used whenever you use sewing pins to hold things in place.
+Приколювання використовується щоразу, коли ви використовуєте швейні шпильки, щоб утримувати речі на місці.
 
-Examples of where pinning is commonly used are:
+Приклади того, де зазвичай використовується піннінг::
 
-- Pinning a seam in place before sewing it
-- Pinning an ornament, pocket, or other part in place before attaching it
-- Pinning darts or other pattern changes while fitting the garment on a model
+- Закріплення шва перед тим, як зшити його
+- Закріплення прикраси, кишені або іншої деталі на місці перед тим, як прикріпити її
+- Приколювання виточок або інших змін викрійки під час примірки виробу на моделі
 
-Pinning is never permanent, but merely a temporary measure to hold things in place.
+Закріплення ніколи не є постійним, а лише тимчасовим заходом, щоб утримати речі на місці.
 
-> Pinning and basting are different techniques for similar situations
+> Закріплення та наклеювання - це різні техніки для схожих ситуацій
 
-> Pictures by [Kristin Roach](https://www.flickr.com/photos/marlana/113434148) and [Ed Platt](https://www.flickr.com/photos/philentropist/313403963)
+> Фото: [Крістін Роуч](https://www.flickr.com/photos/marlana/113434148) та [Ед Платт](https://www.flickr.com/photos/philentropist/313403963)

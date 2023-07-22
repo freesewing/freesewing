@@ -1,5 +1,5 @@
 ---
-title: "Theo trousers: Required Measurements"
+title: "Штани Тео: Необхідні мірки"
 ---
 
 <PatternMeasurements pattern='theo' />

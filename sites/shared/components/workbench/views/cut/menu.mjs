@@ -5,6 +5,7 @@ import {
 } from 'shared/components/workbench/menus/design-options/index.mjs'
 import {
   CoreSettings,
+  ClearAllButton,
   ns as coreMenuNs,
 } from 'shared/components/workbench/menus/core-settings/index.mjs'
 import { CutSettings, ns as cutNs } from './settings.mjs'
@@ -19,7 +20,7 @@ const CutActions = ({ update, ui, materialSettings }) => {
   const resetLayout = () => update.ui(['layouts', 'cut', materialSettings.activeMaterial])
 
   return (
-    <div className="mt-2 mb-4">
+    <div>
       <div className="flex justify-evenly flex-col lg:flex-row">
         <ShowButtonsToggle update={update} ui={ui} />
         <button className="btn btn-primary btn-outline" onClick={resetLayout}>
@@ -41,6 +42,7 @@ export const CutMenu = ({
   account,
   DynamicDocs,
   materialSettings,
+  setSettings,
 }) => {
   const control = account.control
   const menuProps = {
@@ -59,6 +61,7 @@ export const CutMenu = ({
       <CutSettings {...menuProps} ui={ui} materialSettings={materialSettings} />
       <DesignOptions {...menuProps} isFirst={false} />
       <CoreSettings {...menuProps} />
+      <ClearAllButton setSettings={setSettings} />
     </nav>
   )
 }

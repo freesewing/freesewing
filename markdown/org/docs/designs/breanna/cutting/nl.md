@@ -1,18 +1,18 @@
 ---
-title: "Breanna body block: Cutting Instructions"
+title: "Breanna lichaam blok: Snij-instructies"
 ---
 
-**Main fabric**
+**Buitenstof**
 
-- Cut **1 Front** part on the fold.
-- Cut **2 Back** parts.
-- Cut **2 Sleeve** parts, _good sides together_.
+- Knip **1 Voorste deel** op de vouw.
+- Cut **2 Back** part.
+- Snijd **2 Mouwen** delen, _goede kanten op elkaar_.
 
-These cutting instructions are just for the default Breanna block. Adjust your cutting accordingly if you have/are making changes to the block.
+Deze snij-instructies zijn alleen voor het standaard Breanna blok. Pas je snijwerk dienovereenkomstig aan als je veranderingen aan het blok hebt aangebracht.
 
 <Tip>
 
-If you do not have someone to help pin you into Breanna then you may find it easier to Cut 2 Front parts with seam allowance and sew the backs up when constructing so you can pin in the front.
+Als je niet iemand hebt die je kan helpen om Breanna in te spelden, is het misschien makkelijker om 2 voorpanden met naadtoeslag te knippen en de achterpanden vast te naaien tijdens het maken, zodat je de voorkant kunt vastspelden.
 
 </Tip>
 

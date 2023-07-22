@@ -1,0 +1,53 @@
+{
+  "t": "Cornelius cycling breeches",
+  "d": "Cornelius are cycling breeches based on the Keystone drafting method.",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "frontpoints": "Front points",
+    "legband": "Legband",
+    "legbandKeystone": "Legband Keystone",
+    "pocket": "Pocket",
+    "pocketFacing": "Pocket facing",
+    "waistband": "Waistband",
+    "zipperguard": "Zipperguard"
+  },
+  "s": {
+    "Vent": "Vent",
+    "PocketFacing": "Pocket facing"
+  },
+  "o": {
+    "fullness": {
+      "t": "Fullness",
+      "d": "Controls the fullness of the breeches"
+    },
+    "waistbandBelowWaist": {
+      "t": "Lower waistband",
+      "d": "Percentage to move the waistband below the actual waist"
+    },
+    "waistReduction": {
+      "t": "Waist reduction",
+      "d": "Percentage to reduce the waistband"
+    },
+    "cuffWidth": {
+      "t": "Cuff width",
+      "d": "Width of the leg cuff"
+    },
+    "cuffStyle": {
+      "t": "Cuff style",
+      "d": "Style of the leg cuff"
+    },
+    "bandBelowKnee": {
+      "t": "Cuff below knee",
+      "d": "Controls the cuff distance from the knee"
+    },
+    "kneeToBelow": {
+      "t": "Cuff length",
+      "d": "Controls the tightness of the cuff as compared to the knee"
+    },
+    "ventLength": {
+      "t": "Vent length",
+      "d": "Controls the length of the vent between knee and cuff"
+    }
+  }
+}

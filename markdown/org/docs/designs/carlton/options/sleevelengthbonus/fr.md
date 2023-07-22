@@ -1,10 +1,10 @@
 ---
-titre : "Surlongueur de longueur de manche"
+title: "Bonus de longueur de manche"
 ---
 
-![Sleevelength bonus](./sleevelengthbonus.svg)
+![Bonus de longueur de manche](./sleevelengthbonus.svg)
 
-The amount to extend the sleeve beyond the length of the sleeve in the base block.
+La quantité pour allonger la manche au-delà de la longueur de la manche dans le bloc de base.
 
 <Note>
 
@@ -18,4 +18,4 @@ Veuillez prendre note de la valeur par défaut et utiliser cela comme base pour 
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlton_sleevelengthbonus_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlton_sleevelengthbonus_sample.svg "Effet de cette option sur le motif")

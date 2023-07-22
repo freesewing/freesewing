@@ -1,13 +1,13 @@
 ---
-title: "Bee bikini top: Fabric Options"
+title: "Top de bikini Abeja: Opciones de tejido"
 ---
 
-### Main and Lining Fabric
+### Tejido principal y forro
 
-The main and lining fabric are the same type of material. Bee is made with swimwear fabrics such as lycras.
+El tejido principal y el del forro son del mismo tipo de material. Bee está confeccionada con tejidos para trajes de baño como el lycras.
 
 <Note>
 
-You only need lining fabric if you intend to make the pattern reversible or if you want the band for the cross back tie variant to be a constrasting fabric. Otherwise you can cut all the required pieces from your main fabric.
+Sólo necesitarás tela de forro si pretendes que el patrón sea reversible o si quieres que la banda para la variante de la corbata cruzada sea de tela contrastada. Si no, puedes cortar todas las piezas necesarias de tu tela principal.
 
 </Note>

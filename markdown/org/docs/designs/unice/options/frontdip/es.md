@@ -1,9 +1,9 @@
 ---
-title: "Front waist dip"
+title: "Buceo de cintura frontal"
 ---
 
-Together with the "Front curve" option, this option controls how much the front waist curves (revealing more or less skin). For this option, the curve is achieved by cutting away a crescent at the waist. (For fabric with horizontal stripes, some stripes would be interrupted around the center of the waist.)
+Junto con la opción "Curva delantera", esta opción controla cuánto se curva la cintura delantera (revelando más o menos piel). Para esta opción, la curva se consigue recortando una media luna en la cintura. (En el caso de telas con rayas horizontales, algunas rayas se interrumpirían alrededor del centro de la cintura).
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](unice_frontdip_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](unice_frontdip_sample.svg "Efecto de esta opción en el patrón")

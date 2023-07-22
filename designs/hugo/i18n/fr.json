@@ -1,0 +1,29 @@
+{
+  "t": "Sweat à capuche Hugo",
+  "d": "Hugo est un sweat à capuche avec des manches raglan.",
+  "p": {
+    "back": "Back",
+    "cuff": "Cuff",
+    "front": "Front",
+    "hoodCenter": "Hood center",
+    "hoodSide": "Hood side",
+    "pocket": "Pocket",
+    "pocketFacing": "Pocket facing",
+    "sleeve": "Sleeve",
+    "waistband": "Waistband"
+  },
+  "s": {
+    "cuff": "Poignet",
+    "hoodCenter": "Milieu de capuche",
+    "hoodSide": "Côté de capuche",
+    "pocketFacing": "Doublure de poche",
+    "pocket": "Poche",
+    "waistband": "Ceinture"
+  },
+  "o": {
+    "hipsEase": {
+      "t": "Aisance des hanches",
+      "d": "La marge d'aisance aux hanches."
+    }
+  }
+}

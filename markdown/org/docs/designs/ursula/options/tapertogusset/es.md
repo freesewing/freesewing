@@ -1,9 +1,9 @@
 ---
-title: "Taper to gusset"
+title: "Conicidad hasta el fuelle"
 ---
 
-Controls how much the front will curve inwards to meet the gusset.
+Controla cuánto se curvará la parte delantera hacia dentro para unirse al fuelle.
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](ursula_tapertogusset_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](ursula_tapertogusset_sample.svg "Efecto de esta opción en el patrón")

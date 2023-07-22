@@ -1,5 +1,5 @@
 ---
-title: "Theo trousers: Cutting Instructions"
+title: "Theo Hose: Schnittanleitung"
 ---
 
 - **Oberstoff**
@@ -8,7 +8,7 @@ title: "Theo trousers: Cutting Instructions"
   - **1 Taillenband schneiden**
   - **1 Taille rechts schneiden**
   - **2 Fliegenteil(e) schneiden** mit guten Seiten zusammen
-  - Cut **2 side piece(s)** with good sides together
+  - Schneide **2 Seitenteile** mit guten Seiten zusammen
   - **4 verdeckte Tasche(n) schneiden**
   - **8 Bandschleifen(e) schneiden**
 - **Lining**
@@ -28,11 +28,11 @@ title: "Theo trousers: Cutting Instructions"
 
 ###### Caveats
 
-- The **front lining** is cut from the **front** part on your draft, down to the line just below the knee
-- Pay attention to the grainline on the **fly piece**, **fly shield**, and **side piece**
-- There are two variations of the front pocket bag. You need to cut out two of each:
-  - Cut two of the complete piece
-  - Cut two with only extending up to the dashed line at the left
-- The **back inner pocket bag** and **back outer pocket bag** are very similar. Stellen Sie sicher, dass Sie sie korrekt markieren, damit Sie sie nicht verwirren.
+- Das **Frontfutter** wird von der **Vorderseite** deines Entwurfs bis zur Linie knapp unterhalb des Knies zugeschnitten
+- Achte auf den Fadenlauf am **Flügelstück**, **Flügelschild** und **Seitenteil**
+- Es gibt zwei Varianten der Fronttasche. Du musst jeweils zwei davon ausschneiden:
+  - Schneide zwei aus dem kompletten Teil
+  - Schneide zwei aus, die nur bis zur gestrichelten Linie auf der linken Seite reichen
+- Der **Rücken-Innenbeutel** und der **Rücken-Außenbeutel** sind sich sehr ähnlich. Stellen Sie sicher, dass Sie sie korrekt markieren, damit Sie sie nicht verwirren.
 
 </Warning>

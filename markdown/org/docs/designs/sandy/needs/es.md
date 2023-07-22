@@ -1,47 +1,47 @@
 ---
-title: "Sandy circle skirt: What You Need"
+title: "Falda circular Sandy: Lo que necesitas"
 ---
 
-To make Sandy, you will need the following:
+Para hacer Sandy, necesitarás lo siguiente:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 2 - 6 metres (2.2 - 6.6 yards) of a suitable main fabric ([see Sandy Fabric options](/docs/patterns/sandy/fabric))
-- Some interfacing for the waistband
-- (Optional) Facing for the hem.
-- Some sort of closure for the waistband (if not seamless)
-- (Optional) About 2 - 6 metres (2.2 - 6.6 yards) of suitable lining fabric ([see Sandy Fabric options](/docs/patterns/sandy/fabric))
-- Elastic (if needed)
+- [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
+- Unos 2 - 6 metros (2,2 - 6,6 yardas) de una tela principal adecuada ([consulta las opciones de tela arenosa](/docs/patterns/sandy/fabric))
+- Interfaz para la cintura
+- (Opcional) Revestimiento para el dobladillo.
+- Algún tipo de cierre para la cintura (si no es sin costuras)
+- (Opcional) Unos 2 - 6 metros (2,2 - 6,6 yardas) de tela de forro adecuada ([ver Opciones de tela de arena](/docs/patterns/sandy/fabric))
+- Elástico (si es necesario)
 
-Due to the many different styles of Sandy it is difficult to precisely say what you need so we will go through some of the options.
+Debido a los muchos estilos diferentes de Sandy, es difícil decir con precisión lo que necesitas, así que repasaremos algunas de las opciones.
 
-##### Main Fabric
+##### Tela principal
 
-The length you require is dependant on how long and how full your circle skirt is, mid length and smaller should be sufficent with 2 - 2.5 metres whearas a floor length will require more. If in doubt buy a metre more than you think. Also don't be afraid to piece if your fabric is not wide or long enough, it is better to have an extra seam than not to use the fabric you like.
+La longitud que necesites dependerá de la longitud y el volumen de tu falda circular. Las faldas de longitud media y más pequeñas deberían bastar con 2 ó 2,5 metros, mientras que las faldas hasta el suelo necesitarán más. En caso de duda, compra un metro más de lo que crees. Tampoco tengas miedo de hacer piezas si tu tela no es lo suficientemente ancha o larga, es mejor tener una costura de más que no utilizar la tela que te gusta.
 
 <Note>
 
-Don't forget that the waistband also needs to be cut from the main fabric.
+No olvides que la cintura también debe cortarse de la tela principal.
 
 </Note>
 
 <Warning>  
 
-If making a **seamless** Sandy you will need to make sure the width of your fabrics are double the length of your skirt pieces otherwise you will have to piece or add seams.
+Si vas a hacer una falda Sandy **sin costuras**, tendrás que asegurarte de que la anchura de tus telas sea el doble de la longitud de las piezas de la falda, pues de lo contrario tendrás que hacer piezas o añadir costuras.
 
 </Warning>
 
-##### Lining Fabric
+##### Tela fina
 
-Lining fabric is only really needed if your main fabric is unpleasant to have against the skin or hard to wash. You will need the same amount as your main fabric if you are fully lining the skirt. If you only intend to make pockets with a lining you only need 0.25 - 0.5 metres of fabric.
+El tejido de forro sólo es realmente necesario si tu tejido principal es desagradable al contacto con la piel o difícil de lavar. Necesitarás la misma cantidad que de tela principal si vas a forrar completamente la falda. Si sólo vas a hacer bolsillos con forro, sólo necesitarás 0,25 - 0,5 metros de tela.
 
-##### Hem Facing
+##### Dobladillo
 
-To add flare/keep the hems shape you may wish to add a facing to the bottom of the skirt. This can be done multiple ways such as the use of horsehair braid or tarlatan and really depends on the look you are going for and the fabric you are using.
+Para añadir vuelo/mantener la forma de los dobladillos, puedes añadir un refrentado a la parte inferior de la falda. Esto se puede hacer de múltiples maneras, como utilizando trenzas de crin de caballo o tarlatana, y realmente depende del aspecto que busques y de la tela que utilices.
 
-##### Closures
+##### Cierres
 
-If not making an elasticated Sandy you will need some type of closure. This can be just a zip that is inserted in to the waistband and seam or it can be buttons, dress hooks, or snaps with an overlapping waistband and an openining, placket or zipper at the top of the seam.
+Si no haces una Sandy elástica, necesitarás algún tipo de cierre. Puede ser simplemente una cremallera que se inserta en la cintura y la costura, o pueden ser botones, corchetes o broches con una cintura superpuesta y una abertura, tapeta o cremallera en la parte superior de la costura.
 
-##### Elastic
+##### Elástico
 
-Elastic is needed if you intend to make a seamless or a closure free Sandy. Width-wise it will need to be able to fit inside the waistband, length-wise it will need to be able to fit around your waist.
+El elástico es necesario si pretendes hacer un Sandy sin costuras o sin cierres. A lo ancho, deberá caber dentro de la cintura; a lo largo, deberá caber alrededor de tu cintura.

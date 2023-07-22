@@ -21,7 +21,7 @@ export const mailer = (config) => ({
  */
 async function sendEmailViaAwsSes(
   config,
-  { template, to, cc = false, language = 'en', replacements = {} }
+  { template, to, cc = false, language = 'en', replacements = {}, subject = false }
 ) {
   // Make sure we have what it takes
   if (!template || !to || typeof templates[template] === 'undefined') {
@@ -64,7 +64,7 @@ async function sendEmailViaAwsSes(
         },
         Subject: {
           Charset: 'utf-8',
-          Data: replace.subject,
+          Data: subject || replace.subject,
         },
       },
     },

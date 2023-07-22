@@ -1,25 +1,25 @@
 ---
-title: "Bent body Block: Sewing Instructions"
+title: "Bloque de cuerpo doblado: Instrucciones de costura"
 ---
 
 <Note>
 
-###### Bent is a block, not a pattern
+###### Doblado es un bloque, no un patrón
 
-A block is a basic shape on which other patterns are based.
+Un bloque es una forma básica en la que se basan otros patrones.
 A veces también se llaman trampas, aunque los puristas argumentarán que un bloque y una inclinación son cosas diferentes.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Bent block.
+Normalmente, los bloques no se hacen tal cual, sino que sirven de base para otros patrones, por lo que las instrucciones siguientes no profundizarán en los cierres o acabados y son para el bloque Bent por defecto.
 
 </Note>
 
 <Warning>
 
-As Bent is a block it does not have any closures. So the instructions below will explain how to make a Bent with a seam down the centre front so you can pin yourself into it.
+Como Bent es un bloque, no tiene cierres. Así que las instrucciones que siguen te explicarán cómo hacer un Bent con una costura en el centro de la parte delantera para que puedas prenderte con alfileres.
 
 </Warning>
 
-### Step 1: Mock-up Construction
+### Paso 1: Construcción de la maqueta
 
 - Sew the fronts to the back at the shoulder seams good sides together.
 - Sew the fronts to the back at the side seams good sides together.
@@ -28,7 +28,7 @@ As Bent is a block it does not have any closures. So the instructions below will
 
 <Note>
 
-You may need to ease/gather the sleeves to fit.
+Puede que tengas que soltar/recoger las mangas para que encajen.
 
 You may need to ease/gather the sleeves to fit.\
 You may need to leave the bottom of one of the sleeve seams open to put the garment on.
@@ -40,46 +40,46 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 </Tip>
 
-### Step 2: Try it on
+### Paso 2: Pruébatelo
 
-- Try it on and check the fit by pinning the front closed whilst wearing it.
-- Make any alterations and try it on again.
-- Repeat until you are happy.
+- Pruébatelo y comprueba el ajuste cerrando la parte delantera con alfileres mientras lo llevas puesto.
+- Haz cualquier modificación y pruébatelo de nuevo.
+- Repite hasta que te satisfaga.
 
 <Tip>
 
-If you do not have someone to help with pinning alterations, you can use a dressform to pin any alterations that are hard to do on person. Just remember to try it on after to make sure it fits you.
+Si no tienes a nadie que te ayude a sujetar las alteraciones con alfileres, puedes utilizar un molde para sujetar con alfileres las alteraciones que sean difíciles de hacer en persona. No olvides probártelo después para asegurarte de que te queda bien.
 
-Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. etc. etc. Things like these are signs of where the pattern may need adjusting.
+Vigila todo lo que haces mientras llevas la maqueta, ¿te la bajas? Constantly adjusting the shoulder? etc. etc. etc. Cosas como estas son signos de que el patrón puede necesitar ajustes.
 
-Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
+A veces puede que necesites llevar la maqueta durante mucho tiempo para hacerte una mejor idea del ajuste, así que no tengas miedo de pasearte con ella durante un par de horas.
 
 </Tip>
 <Note>
 
-Remember to treat Bent as a basis rather than a final product, so adjust what you need to get the desired look.  
-For instance:
+Recuerda tratar a Bent como una base y no como un producto final, así que ajusta lo que necesites para conseguir el aspecto deseado.  
+Por ejemplo:
 
-- Change the neck line
-- Add/change the closure allowances
-- Alter the hem style
-- Add a collar
+- Cambia la línea del cuello
+- Añade/cambia los márgenes de cierre
+- Altera el estilo del dobladillo
+- Añade un cuello
 
-It is all up to you! Experiment and go forth!
+¡Todo depende de ti! Experimenta y ¡adelante!
 
 </Note>
 
-### Step 3: Make a paper pattern
+### Paso 3: Haz un patrón de papel
 
-- Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
-- Now you have a pattern you can use to produce a garment.
+- Una vez que estés satisfecho con todos los cambios, retira la maqueta y crea un patrón de papel a partir de ella.
+- Ahora tienes un patrón que puedes utilizar para confeccionar una prenda.
 
 <Note>
 
-It is best practice to make a paper pattern from the mock-up if you have made any alterations, as this will allow you to clean up any lines but also means you have a pattern that you can keep producing garments from.
+Lo mejor es hacer un patrón en papel a partir de la maqueta si has hecho alguna modificación, ya que así podrás limpiar las líneas y tendrás un patrón a partir del cual podrás seguir produciendo prendas.
 
 </Note>
 
-### Bent is a block, looking for a finalised pattern?
+### Bent es un bloque, ¿buscas un patrón definitivo?
 
 > Here are some of the patterns based on Bent: [Carlton](/patterns/carlton), [Carlita](/patterns/carlita), and [Jaeger](/patterns/jaeger).

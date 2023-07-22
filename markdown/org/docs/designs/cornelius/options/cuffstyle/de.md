@@ -6,9 +6,9 @@ title: "Manschettenstil"
 
 Dieses Muster unterstützt drei verschiedene Manschettenstile:
 
-- **Traditional**: A single buttoned _curved_ band with a pointed edge.
-- **Elegant**: A single buttoned _straight_ band with a pointed edge.
-- **Keystone**: A slightly curved band that is wider than the others using 3 buttons rather than 1. This one is based of off the one in the Keystone Draft this pattern is based on.
+- **Traditionell**: Ein einfach geknöpftes _gebogenes_ Band mit einer spitzen Kante.
+- **Elegant**: Ein einfach geknöpftes _gerades_ Band mit einer spitzen Kante.
+- **Keystone**: Ein leicht gewölbtes Band, das breiter ist als die anderen und 3 Knöpfe statt einem verwendet. Dieses Muster basiert auf dem Keystone Draft, auf dem dieses Muster basiert.
 
 ## Effekt dieser Option auf das Schnittmuster
 

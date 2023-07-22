@@ -1,11 +1,11 @@
 ---
-title: "Pocket flap radius"
+title: "Angle de rabat de poche"
 ---
 
-![Pocket flap radius](pocketflapradius.svg)
+![Angle de rabat de poche](pocketflapradius.svg)
 
-Controls the radius with which the pocket flaps are rounded at the bottom.
+Contrôle le rayon avec lequel les volets de poche sont arrondis en bas.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlita_pocketflapradius_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlita_pocketflapradius_sample.svg "Effet de cette option sur le motif")

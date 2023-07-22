@@ -1,5 +1,5 @@
 ---
-title: "Aaron A-Shirt: Nähanleitung"
+title: "Aaron A-Shirt: Anleitung zum Nähen"
 ---
 
 ## Schritt 1: Nähte schließen
@@ -71,7 +71,7 @@ Schiebe nun das Einfassband 1cm über den Anfangspunkt hinweg. Dieser Zentimeter
 
 ### Vergewissere dich, dass du weißt, wo du nähen möchtest
 
-![Vergewissern Sie sich, dass Sie wissen, wo Sie nähen sollen](step03c.png)
+![Vergewissere dich, dass du weißt, wo du nähen möchtest](step03c.png)
 
 Wir werden 1.5 cm von der Kante entfernt nähen. Sei also vorsichtig, denn dies ist nicht die reguläre Nahtzugabe.
 
@@ -87,7 +87,7 @@ Außerdem beginnen wir nicht bei unserem Startpunkt, sondern wir überspringen d
 
 ### Nähe das Einfassband fest
 
-![Nähe die Einfassung fest](step03d.png)
+![Nähe das Einfassband fest](step03d.png)
 
 Nähe dein Einfassband fest und dehne ihn dabei, ohne den Hauptstoff zu dehnen. Pass dabei auf, die letzten 3cm nicht festzunähen, sondern lasse diese genauso übrig wie am Anfang.
 
@@ -101,7 +101,7 @@ Du wirst etwas Übung brauchen, um den Dreh rauszubekommen.
 
 Es ist an der Zeit, die Enden des Bandes zusammenzunähen, bevor wir unseren Kreis mit den letzten 6cm vollenden.
 
-![Markieren der Enden der Einfassung](step03f.png)
+![Ende der Einfassung markieren](step03f.png)
 
 Nimm eins der Enden und dehne es entlang der 3cm ab den Startpunkt, wie du es beim Nähen tun würdest.
 
@@ -117,7 +117,7 @@ Falte dein A-Shirt so, dass es am einfachsten ist die guten Enden des Einfassban
 
 ### Beende die letzten 6 cm Bindung
 
-![Nähe die Enden der Einfassung zusammen](step03h.png)
+![Nähe den Einfassstreifen zusammen](step03h.png)
 
 Jetzt wo die Enden deines Einfassbands verbunden sind, ist es an der Zeit, die letzten 6cm zu nähen. Nähe das Band fest, mit 1.5cm Abstand zur Kante wie bisher.
 

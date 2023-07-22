@@ -1,9 +1,9 @@
 ---
-title: "Walburga Wappenrock: What You Need"
+title: "Вальбурга Ваппенрок: Те, що тобі потрібно"
 ---
 
-To make Walburga, you will need the following:
+Для приготування вальбурги вам знадобиться наступне:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 1 meter (1.1 yards) of a suitable fabric (see [Fabric options](/docs/patterns/walburga/fabric))
-- (optional) about 3 metres (3.3 yards) of bias tape or trimmings to finsh the raw edges
+- [Базові матеріали для шиття](/docs/sewing/basic-sewing-supplies)
+- Приблизно 1 метр (1,1 ярда) відповідної тканини (див. [Варіанти тканин](/docs/patterns/walburga/fabric))
+- (необов'язково) близько 3 метрів (3,3 ярда) бейки або обрізки для обробки необроблених країв

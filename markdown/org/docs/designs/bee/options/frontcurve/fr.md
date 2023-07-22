@@ -1,10 +1,10 @@
 ---
-titre: "Courbe avant"
+title: "Courbe frontale"
 ---
 
 ***
 
-Contrôle la courbure du devant du bikini
+Contrôle la courbure du devant du bonnet du bikini
 
 ## Effet de cette option sur le motif
 

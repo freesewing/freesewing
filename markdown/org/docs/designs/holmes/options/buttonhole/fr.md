@@ -1,10 +1,10 @@
 ---
-title: "Buttonhole guide"
+title: "Guide des boutonnières"
 ---
 
 ***
 
-Adds a buttonhole to the ear flap to help you draft the buttonhole ear flap variant
+Ajoute une boutonnière au rabat d'oreille pour vous aider à tracer la variante du rabat de l'oreille avec boutonnière
 
 ## Effet de cette option sur le motif
 

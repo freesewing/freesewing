@@ -1,67 +1,67 @@
 ---
-title: "Carlton coat: Sewing Instructions"
+title: "Carlton jas: Naai-instructies"
 ---
 
-### Step 1: Draft and Cut the missing Lining and Facing Parts
+### Stap 1: De ontbrekende voering- en bekledingsdelen tekenen en snijden
 
-Some parts for Carlton require you to draft parts from the existing parts. The following are a list of what parts you need to draft, [see Carlton Cutting](/docs/patterns/carlton/cutting/) for details on how to cut them.
+Voor sommige onderdelen voor Carlton moet je onderdelen uit de bestaande onderdelen opstellen. Hieronder staat een lijst met onderdelen die je moet opstellen, [zie Carlton Cutting](/docs/patterns/carlton/cutting/) voor meer informatie over hoe je ze moet snijden.
 
-#### Drafting
+#### Opstellen
 
-##### Front facing and Front lining
+##### Voorkant en voorkant
 
-- Trace off of **Front** part.
-- Cut along the green line.
-- Add seam allowance (if including) along green line to both pieces
-- The piece with the lapel is now the **Front facing** part.
-- Trim the hem allowance (if included) of the remaining piece to seam allowance length
-- The remaining piece is now the **Front lining** part.
+- Trek het deel **Front** af.
+- Snijd langs de groene lijn.
+- Voeg naadtoeslag (indien van toepassing) toe langs de groene lijn aan beide stukken
+- Het stuk met de revers is nu het deel **Front facing** .
+- Knip de zoomtoeslag (indien inbegrepen) van het overgebleven stuk bij tot de naadtoeslaglengte
+- Het overgebleven stuk is nu het deel **Voorvoering** .
 
 <Note>
 
-The button and pocket markings are not needed for these parts so feel free not to trace them.
+De knoop- en zakmarkeringen zijn niet nodig voor deze onderdelen, dus voel je vrij om ze niet na te tekenen.
 
 </Note>
 
 <Warning>
 
-Don't forget the seam allowance for these pieces when cutting if you are making these parts nett!
+Vergeet de naadtoeslag voor deze stukken niet bij het knippen als je deze delen netto maakt!
 
 </Warning>
 
-##### Chest canvas
+##### Borstdoek
 
-- Trace off of **Front** part.
-- Cut along the orange line.
-- Discard lower piece.
-- Cut along lapel line.
-- Discard lapel piece.
-- Remove the seam allowances (if included) of the upper piece.
-- The upper piece is now the **Chest canvas** part.
+- Trek het deel **Front** af.
+- Snijd langs de oranje lijn.
+- Gooi het onderste stuk weg.
+- Knip langs de reverslijn.
+- Gooi het reversstuk weg.
+- Verwijder de naadtoeslagen (indien inbegrepen) van het bovenste stuk.
+- Het bovenste stuk is nu het **Chest canvas** deel.
 
-##### Front Shoulder
+##### Schouder voorkant
 
-- Trace off of **Front** part.
-- Draw a curve from shoulder to bottom of armhole.
-- Cut along this curve and discard the lower part.
-- The upper piece is now the **Front Shoulder** part.
+- Trek het deel **Front** af.
+- Teken een ronding van de schouder naar de onderkant van het armsgat.
+- Snijd langs deze curve en gooi het onderste deel weg.
+- Het bovenste stuk is nu het deel **Front Shoulder** .
 
-##### Back shoulder
+##### Schouder op de rug
 
-- Trace off of **Back** part.
-- Cut along the orange line.
-- Discard lower piece.
-- Remove the seam allowamces (if included) of the upper piece.
-- The upper piece is now the **Back shoulder** part.
+- Trek het deel **Back** na.
+- Snijd langs de oranje lijn.
+- Gooi het onderste stuk weg.
+- Verwijder de naadtoeslagen (indien meegeleverd) van het bovenstuk.
+- Het bovenste stuk is nu het **Rugschouder** deel.
 
-#### Cutting
+#### Knippen
 
-- Cut all the parts above from their respective fabrics/facings. ([see Carlton Cutting](/docs/patterns/carlton/cutting/))
+- Knip alle bovenstaande onderdelen uit hun respectievelijke stoffen/vullingen. ([zie Carlton Cutting](/docs/patterns/carlton/cutting/))
 
-### Step 2: Fix Me
+### Stap 2: Fixeer mij
 
 <Fixme>
 
-Documentation for this pattern still needs to be written. In the meantime their are some preliminary instructions for ([Carlita, Carlton's Counterpart](/docs/patterns/carlita/instructions/)) that should help.
+Documentatie voor dit patroon moet nog worden geschreven. In de tussentijd zijn er wat voorlopige instructies voor ([Carlita, Carlton's Counterpart](/docs/patterns/carlita/instructions/)) die zouden moeten helpen.
 
 </Fixme>

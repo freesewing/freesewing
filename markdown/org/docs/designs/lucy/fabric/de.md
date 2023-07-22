@@ -2,21 +2,21 @@
 title: "Lucy, die Umbindetasche: Stoffoptionen"
 ---
 
-Because pockets were worn by people in every layer of society historically what they were made out of varied intensely. Some were made out of sturdy and plain fabrics, marked with the owners initials. Others were made out of lavish silks or richly embroidered.
+Da Taschen von Menschen in allen Gesellschaftsschichten getragen wurden, variierte das Material, aus dem sie hergestellt wurden, stark. Einige waren aus robusten und schlichten Stoffen gefertigt und mit den Initialen des Besitzers versehen. Andere waren aus üppiger Seide gefertigt oder reich bestickt.
 
-As such when it comes to fabric options the world is your oyster.
+Wenn es um die Wahl des Stoffes geht, liegt dir die Welt zu Füßen.
 
-- Modern prints make fun modern pockets
-- Use a plain cotton or linen for a more historical option
-- Have a lot of scraps? Make a patchwork pocket!
-- Pockets were often a first embroidery project, so go wild if you want to
+- Moderne Prints machen Lust auf moderne Taschen
+- Verwende einfarbige Baumwolle oder Leinen für eine historischere Option
+- Hast du eine Menge Reste? Mach eine Patchwork-Tasche!
+- Taschen waren oft ein erstes Stickprojekt, also tobe dich aus, wenn du willst
 
-The one thing to keep in mind is how stable your fabric is. If it is not very stable or you think it won’t hold very much weight, you can add a lining.
+Du musst nur darauf achten, wie stabil dein Stoff ist. Wenn er nicht sehr stabil ist oder du denkst, dass er nicht viel Gewicht halten wird, kannst du ein Futter hinzufügen.
 
-Additionally, if you are handsewing your pocket it is worth picking a fabric that isn’t too thick or heavy.
+Wenn du deine Tasche mit der Hand nähst, solltest du außerdem einen Stoff wählen, der nicht zu dick oder schwer ist.
 
-Your binding doesn’t have to be the same colour as the main fabric either. You can use it to add a fun accent, or make your pocket fancier. Bias binding curves easier around any curves, but you can just as easily use strips of fabric as a more waste conscious option.
+Dein Einband muss auch nicht die gleiche Farbe wie der Hauptstoff haben. Du kannst damit einen lustigen Akzent setzen oder deine Tasche aufpeppen. Bias Binding lässt sich leichter um jede Kurve biegen, aber du kannst genauso gut Stoffstreifen verwenden, um mehr Abfall zu vermeiden.
 
-The ties can be made from self fabric, or you can use something like a twill tape instead.
+Die Bänder kannst du aus selbst hergestelltem Stoff machen oder du kannst stattdessen ein Köperband verwenden.
 
-As always, whether you want to stick to historical practices or make something modern is entirely up to you!
+Wie immer ist es dir überlassen, ob du dich an historische Praktiken halten oder etwas Modernes machen willst!

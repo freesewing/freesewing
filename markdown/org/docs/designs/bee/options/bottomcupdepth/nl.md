@@ -1,10 +1,10 @@
 ---
-title: "Bottom depth"
+title: "Diepte bodem"
 ---
 
 ***
 
-Controls how far the bikini cup extends downwards
+Regelt hoe ver de bikinicup naar beneden uitsteekt
 
 ## Effect van deze optie op het patroon
 

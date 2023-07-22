@@ -1,5 +1,5 @@
 ---
-title: Octoplushy, the plushy octopus
+title: Octoplushy, плюшевий восьминіг
 ---
 
 <PatternDocs pattern='octoplushy' />

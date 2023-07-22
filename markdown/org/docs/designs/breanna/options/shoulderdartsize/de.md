@@ -1,9 +1,9 @@
 ---
-title: "Shoulder dart size"
+title: "Größe der Schulterabnäher"
 ---
 
-The size of the back shoulder dart.
+Die Größe des hinteren Schulterabnähers.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_shoulderdartsize_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](breanna_shoulderdartsize_sample.svg "Effekt dieser Option auf das Schnittmuster")

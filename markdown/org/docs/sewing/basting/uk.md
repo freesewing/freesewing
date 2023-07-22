@@ -1,20 +1,20 @@
 ---
 layout: onecol
-title: Basting
+title: Зметування
 ---
 
-![The shape of this denim back pocket is basted before the pocket is topstitched to the garment](basting.jpg)
+![Ця задня джинсова кишеня наметана перед тим, як пришити її до виробу](basting.jpg)
 
-Basting is temporary sewing to hold things in place.
+Зметування — це тимчасове з'єднання деталей викрійки.
 
-It is typically done by hand, but you can also machine baste.
+Зазвичай це робиться вручну, але Ви також можете зробити це на машинці.
 
-Examples of where basting is commonly used are:
+Приклади, де зазвичай використовується зметування:
 
-- Basting a seam in place before sewing it
-- Basting an ornament, pocket, or other part in place before attaching it
-- Basting darts or other pattern changes while fitting the garment on a model
+- Намітка зметувальним швом перед стьобанням
+- Наметання прикраси, кишені або іншої деталі перед тим, як закріпити її
+- Наметування виточок чи інших змін у викрійці під час примірки на людині
 
-Basting is never permanent, but merely a temporary measure to hold things in place.
+Зметувальний шов ніколи не буває постійним — лише тимчасовим способом з'єднання деталей.
 
-> Basting and pinning are different techniques for similar situations
+> Зметування та закріплення булавками — різні методи для схожих ситуацій

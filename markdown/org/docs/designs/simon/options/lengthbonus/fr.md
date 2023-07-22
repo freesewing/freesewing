@@ -1,5 +1,5 @@
 ---
-titre : "Longueur supplémentaire"
+title: "Supplément de longueur"
 ---
 
 ![Supplément de longueur](lengthbonus.svg)
@@ -19,4 +19,4 @@ Si vous voulez une chemise plus décontractée à porter sur votre pantalon, vou
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_lengthbonus_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_lengthbonus_sample.svg "Effet de cette option sur le motif")

@@ -1,33 +1,33 @@
 ---
-title: "Tiberius Tunica: Sewing Instructions"
+title: "Tiberius Tunica : Instructions de couture"
 ---
 
 <Note>
 
-Tiberius is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. Vous le faites.
+Tibère est un modèle d'inspiration historique, et si tu veux plus d'authenticité, la couture à la main s'impose. Personnellement, j'utilise une machine à coudre. Faites comme vous voulez.
 
 </Note>
 
-### Step 1: Sew shoulder seams
+### Étape 1 : Coudre les coutures des épaules
 
-- Put both parts with good sides together. Sew the shoulder seams, taking care to stop at the notches for the head opening.
-- Finish the seams, with a method of your choice. (If you used the fabrics recommended in the [fabric options](/docs/patterns/tiberius/fabric), they _will_ fray. Folding the seam allowance twice, enclosing the raw edge and topstitching is an option. You can also use decorative topstitching.)
+- Mets les deux parties avec les bons côtés ensemble. Couds les coutures des épaules, en prenant soin de t'arrêter aux encoches pour l'ouverture de la tête.
+- Finis les coutures, avec la méthode de ton choix. (Si tu as utilisé les tissus recommandés dans les options de tissu [](/docs/patterns/tiberius/fabric), ils _s'effilocheront_ . Plier deux fois la marge de couture, entourer le bord brut et surpiquer est une option. Tu peux aussi utiliser des surpiqûres décoratives).
 
 <Note>
 
-If you opted for cutting the whole tunica out of one piece, carefully cut out the head opening between the notches instead. Finish the opening.
+Si tu as opté pour la découpe de toute la tunique en un seul morceau, découpe soigneusement l'ouverture de la tête entre les encoches à la place. Termine l'ouverture.
 
 </Note>
 
-### Step 2: Sew side seams
+### Étape 2 : Coudre les coutures latérales
 
-- Still with good sides together, sew the side seams. Start at the notch for the armhole and work your way down. Take care to align your layers properly.
-- Finish seams.
+- Toujours avec les bons côtés ensemble, couds les coutures latérales. Commence par l'encoche de l'emmanchure et descends vers le bas. Prends soin d'aligner correctement tes couches.
+- Finis les coutures.
 
-### Step 3: Hem the bottom edge
+### Étape 3 : Ourler le bord inférieur
 
-Hem the bottom of your garment. If you want to use decorative stitches, this is another place to use them.
+Fais un ourlet au bas de ton vêtement. Si tu veux utiliser des points décoratifs, c'est un autre endroit où les utiliser.
 
 ### Étape 4: Vous avez terminé !
 
-Pull on your tunica, belt it around your waist, play around with how you gather the fabric, and enjoy!
+Enfile ta tunique, ceinture-la autour de ta taille, joue avec la façon dont tu rassembles le tissu, et amuse-toi !

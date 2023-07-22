@@ -20,8 +20,8 @@ Dies gibt Ihnen zwei Teile, die Spiegelbilder voneinander sind.
 
 ##### Was passiert, wenn es keine offensichtliche gute Seite gibt?
 
-When cutting out something without an obvious _good_ side (like interfacing),
-what matters is that you cut two mirrored pieces, rather than two identical ones.
+Wenn du etwas ohne eine offensichtliche _gute_ Seite ausschneidest (wie z.B. Vliesstoff),
+ist es wichtig, dass du zwei spiegelverkehrte Stücke ausschneidest und nicht zwei identische.
 
 </Note>
 

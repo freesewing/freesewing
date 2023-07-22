@@ -1,0 +1,22 @@
+{
+  "t": "Lacerne Lunetius",
+  "d": "Lunetius est une lacerne, un manteau romain historique",
+  "p": {
+    "lacerna": "Lacerna"
+  },
+  "s": {},
+  "o": {
+    "lengthRatio": {
+      "t": "Ratio de longueur",
+      "d": "Contrôle la longueur du vêtement"
+    },
+    "widthRatio": {
+      "t": "Ratio de largeur",
+      "d": "Contrôle la largeur du vêtement"
+    },
+    "length": {
+      "t": "Longueur",
+      "d": "Choisit parmi les différents styles de longueur"
+    }
+  }
+}

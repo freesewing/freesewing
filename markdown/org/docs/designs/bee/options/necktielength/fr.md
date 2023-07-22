@@ -1,5 +1,5 @@
 ---
-titre: "Longueur des liens de cou"
+title: "Longueur de la bande"
 ---
 
 ***

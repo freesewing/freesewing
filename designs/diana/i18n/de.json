@@ -1,0 +1,28 @@
+{
+  "t": "Diana, das drapierte Oberteil",
+  "d": "Diana ist ein Oberteil mit einem drapierten Halsausschnitt.",
+  "p": {
+    "back": "Rückseite",
+    "front": "Vorderseite",
+    "sleeve": "Ärmel"
+  },
+  "s": {},
+  "o": {
+    "shoulderSeamLength": {
+      "t": "Schulternahtlänge",
+      "d": "Steuert die Länge der Schulternaht"
+    },
+    "drapeAngle": {
+      "t": "Fallwinkel",
+      "d": "Steuert die Stärke des Fallwinkels"
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at your hips"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at your waist"
+    }
+  }
+}

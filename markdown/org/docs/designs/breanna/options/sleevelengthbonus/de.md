@@ -1,9 +1,9 @@
 ---
-title: "Sleeve length bonus"
+title: "Ärmel Längenzugabe"
 ---
 
-This option controls how to lengthen the sleeves.
+Diese Option legt fest, wie die Ärmel verlängert werden.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_sleevelengthbonus_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](breanna_sleevelengthbonus_sample.svg "Effekt dieser Option auf das Schnittmuster")

@@ -1,5 +1,5 @@
 ---
-title: "Band (chest) tie ends"
+title: "Puntas de la cinta del pecho"
 ---
 
 ***

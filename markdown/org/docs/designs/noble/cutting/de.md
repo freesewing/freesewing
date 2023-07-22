@@ -1,36 +1,36 @@
 ---
-title: "Noble body block: Cutting Instructions"
+title: "Edler Körperblock: Anleitung zum Schneiden"
 ---
 
-**Main fabric**
+**Oberstoff**
 
-- Cut **1 Front Inside** part on the fold.
-- Cut **2 Front Outside** parts.
+- Schneide **1 Vordere Innenseite** Teil an der Falz aus.
+- Schneide **2 Vordere Außenseite** Teile.
 
-### Shoulder dart
+### Schulterabnäher
 
-- Cut **2 Back Inside** parts.
-- Cut **2 Back Outside** parts.
+- Schneide **2 Back Inside** Teile.
+- Schneide **2 Teile der hinteren Außenseite** .
 
-### Armhole dart
+### Armlochabnäher
 
-- Cut **2 Back** parts.
+- Schneide **2 Rückteile**.
 
-These cutting instructions are just for the default Noble block. Adjust your cutting accordingly if you have/are making changes to the block.
+Diese Schneideanleitung gilt nur für den Standard-Nobelblock. Passe deinen Zuschnitt entsprechend an, falls du Änderungen am Grundschnitt vornimmst.
 
 <Tip>
 
-If you do not have someone to help pin you into Noble then you may find it easier to Cut 2 Front Inside parts with seam allowance and sew the backs up when constructing so you can pin in the front.
+Wenn du niemanden hast, der dir beim Anstecken von Noble hilft, ist es vielleicht einfacher, 2 vordere Innenteile mit Nahtzugabe zuzuschneiden und die Rückseiten beim Konstruieren zusammenzunähen, damit du die Vorderseite anstecken kannst.
 
 </Tip>
 
 <Note>
 
-###### Noble is a block, not a pattern
+###### Noble ist ein Block, kein Muster
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Ein Block ist eine Grundform, auf der andere Muster aufgebaut sind.
+Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Grundschnitte werden in der Regel nicht so gemacht, wie sie sind, sondern dienen als Grundlage für andere Schnittmuster.
 
 </Note>

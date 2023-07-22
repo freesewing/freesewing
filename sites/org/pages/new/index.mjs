@@ -4,8 +4,8 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 // Components
+import Link from 'next/link'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { ChoiceLink } from 'shared/components/choice-link.mjs'
 import { KeyIcon, MeasieIcon, DesignIcon, PageIcon, PluginIcon } from 'shared/components/icons.mjs'
 
 // Translation namespaces used on this page
@@ -24,57 +24,78 @@ const NewIndexPage = ({ page }) => {
 
   const control = account.control ? account.control : 99
 
+  const boxClasses =
+    'p-8 -ml-4 -mr-4 md:m-0 bg-gradient-to-tr rounded-none md:rounded-xl md:shadow hover:from-secondary hover:to-secondary'
+
   return (
-    <PageWrapper {...page}>
-      <div className="max-w-lg">
-        <h2>{t('newBasic')}</h2>
+    <PageWrapper {...page} title={t('new')}>
+      <div className="w-full flex flex-col md:grid md:grid-cols-2 gap-4">
+        <Link href="/new/pattern" className={`${boxClasses} from-accent to-primary`}>
+          <h4 className="flex flex-row items-start justify-between w-full text-primary-content m-0 p-0">
+            <span>{t('patternNew')}</span>
+            <PageIcon className="w-12 h-12 text-primary-content -mt-2" />
+          </h4>
+          <div className={`normal-case text-base font-medium text-primary-content text-left pt-2`}>
+            {t('patternNewInfo')}
+          </div>
+        </Link>
 
-        <ChoiceLink
-          title={t('patternNew')}
-          icon={<PageIcon className="w-10 h-10 text-secondary" />}
-          href="/new/pattern"
-        >
-          {t('patternNewInfo')}
-        </ChoiceLink>
+        <Link href="/new/set" className={`${boxClasses} from-secondary to-success`}>
+          <h4 className="flex flex-row items-start justify-between w-full text-primary-content m-0 p-0">
+            <span>{t('newSet')}</span>
+            <MeasieIcon className="w-12 h-12 text-primary-content -mt-2" />
+          </h4>
+          <div className={`normal-case text-base font-medium text-primary-content text-left pt-2`}>
+            {t('setNewInfo')}
+          </div>
+        </Link>
+      </div>
 
-        <ChoiceLink
-          title={t('newSet')}
-          icon={<MeasieIcon className="w-10 h-10 text-secondary" />}
-          href="/new/set"
-        >
-          {t('setNewInfo')}
-        </ChoiceLink>
-
-        {control > 3 ? (
-          <>
-            <h2>{t('newAdvanced')}</h2>
-
-            <ChoiceLink
-              title={t('newApikey')}
-              icon={<KeyIcon className="w-10 h-10 text-secondary" stroke={1.7} />}
-              href="/new/apikey"
+      {control > 3 ? (
+        <div className="w-full flex flex-col md:grid md:grid-cols-3 gap-4 mt-4">
+          <Link href="/new/apikey" className={`${boxClasses} from-neutral to-info`}>
+            <h4 className="flex flex-row items-start justify-between w-full text-primary-content m-0 p-0">
+              <span>{t('newApikey')}</span>
+              <KeyIcon className="w-12 h-12 text-primary-content -mt-2" />
+            </h4>
+            <div
+              className={`normal-case text-base font-medium text-primary-content text-left pt-2`}
             >
               {t('keyNewInfo')}
-            </ChoiceLink>
+            </div>
+          </Link>
 
-            <ChoiceLink
-              title={t('designNew')}
-              icon={<DesignIcon className="w-10 h-10 text-secondary" />}
-              href="https://freesewing.dev/tutorials/pattern-design"
+          <a
+            href="https://freesewing.dev/tutorials/pattern-design"
+            className={`${boxClasses} from-neutral to-success`}
+          >
+            <h4 className="flex flex-row items-start justify-between w-full text-primary-content m-0 p-0">
+              <span>{t('designNew')}</span>
+              <DesignIcon className="w-12 h-12 text-primary-content -mt-2" />
+            </h4>
+            <div
+              className={`normal-case text-base font-medium text-primary-content text-left pt-2`}
             >
               {t('designNewInfo')}
-            </ChoiceLink>
+            </div>
+          </a>
 
-            <ChoiceLink
-              title={t('pluginNew')}
-              icon={<PluginIcon className="w-10 h-10 text-secondary" stroke={1.7} />}
-              href="https://freesewing.dev/guides/plugins"
+          <a
+            href="https://freesewing.dev/guides/plugins"
+            className={`${boxClasses} from-neutral to-accent`}
+          >
+            <h4 className="flex flex-row items-start justify-between w-full text-primary-content m-0 p-0">
+              <span>{t('pluginNew')}</span>
+              <PluginIcon className="w-12 h-12 text-primary-content -mt-2" />
+            </h4>
+            <div
+              className={`normal-case text-base font-medium text-primary-content text-left pt-2`}
             >
               {t('pluginNewInfo')}
-            </ChoiceLink>
-          </>
-        ) : null}
-      </div>
+            </div>
+          </a>
+        </div>
+      ) : null}
     </PageWrapper>
   )
 }

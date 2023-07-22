@@ -1,5 +1,5 @@
 ---
-title: "Paco pants: Required Measurements"
+title: "Paco broek: Benodigde afmetingen"
 ---
 
 <PatternMeasurements pattern='paco' />

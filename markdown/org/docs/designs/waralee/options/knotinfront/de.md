@@ -1,5 +1,5 @@
 ---
-title: "Knot in Front"
+title: "Knoten vorne"
 ---
 
-Normally the Waralee is closed with the tie in the front. This allows you to change that to a bow tie in the back.
+Normalerweise wird die Waralee mit der Krawatte vorne geschlossen. So kannst du das zu einer Fliege im Rücken umfunktionieren.

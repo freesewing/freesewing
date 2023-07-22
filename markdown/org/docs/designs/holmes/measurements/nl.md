@@ -1,5 +1,5 @@
 ---
-title: "Holmes deerstalker hat: Required Measurements"
+title: "Holmes hertenhoed: Benodigde afmetingen"
 ---
 
 <PatternMeasurements pattern='holmes' />

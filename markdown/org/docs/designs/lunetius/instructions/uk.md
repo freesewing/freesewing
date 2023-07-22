@@ -1,39 +1,39 @@
 ---
-title: "Lunetius Lacerna: Sewing Instructions"
+title: "Lunetius Lacerna: інструкція з пошиття"
 ---
 
 <Note>
 
-All the sewing can be done by machine or by hand as you prefer. If you want to sew with historically accurate thread, you can use linen or wool thread, or silk if you prefer.
+Все шиття може бути виконане на машині або вручну, як вам більше подобається. Якщо ви хочете шити історично точними нитками, ви можете використовувати лляні або вовняні нитки, або шовк, якщо бажаєте.
 
 </Note>
 
-### Step 1: Sewing and finishing the centre back seam
+### Крок 1: Зшивання та обробка центрального шва спинки
 
-- If you cut Lunetius with a centre back seam, sew this up first and finish the seam in some way. You can do this by binding it, or by felling it to the fabric. On a stretch fabric simply sewing up the centre back seam is enough.
-
-<Tip>
-
-When done by hand, this can be done with a spaced backstitch, or a running stitch with the occasional backstitch.
-
-On the machine a regular straight stitch in any size will work.
-
-Felling the edges by hand can be done with a felling stitch, or a running stitch if you prefer. On the machine you can use any stitch you use to hem fabric.
-
-</Tip>
-
-### Step 2: Hemming the edges
-
-- The next and last step is to finish the edges. This can be done by turning a hem on the whole edge, or by using a binding. Once this is done, you are finished!
+- Якщо ви викроїли лунетик зі швом по центру спинки, спочатку зашийте його, а потім обробіть шов. Ви можете зробити це, зв'язавши його або пришивши до тканини. На еластичній тканині достатньо просто зашити центральний задній шов.
 
 <Tip>
 
-When handsewing you can use a felling stitch or a running stitch. Or any other stitch you prefer for hemming.
+При ручному виконанні це можна зробити за допомогою рознесених стібків, або біжучого стібка з рідкісними зворотними стібками.
 
-On the machine, a straight stitch is a good option, but if you have a blind hem stitch that is an option too.
+На машині підійде звичайна пряма строчка будь-якого розміру.
+
+Краї можна обметувати вручну за допомогою обметувальної або потайної строчки, якщо ви віддаєте перевагу. На машині можна використовувати будь-яку строчку, яку ви використовуєте для підшивання тканини.
 
 </Tip>
 
-### Step 3: Enjoy!
+### Крок 2: Підшивання країв
 
-That's it you are all done! Now take a _fibula_ (a brooch, pin or clasp) to fasten your cloak over your right shoulder (that is how the Romans did it, you can of course also take the left shoulder, or the middle, or whatever you prefer) and enjoy looking dramatic.
+- Наступний і останній крок - обробка країв. Це можна зробити, підвернувши підгин по всьому краю, або за допомогою палітурки. Як тільки це буде зроблено, ви закінчите!
+
+<Tip>
+
+Під час ручного зшивання можна використовувати рубаючу або біжучу строчку. Або будь-яку іншу строчку, якій ви віддаєте перевагу для підшивання.
+
+На машині хорошим варіантом є пряма строчка, але якщо у вас є потайна строчка для підшивання краю, це теж варіант.
+
+</Tip>
+
+### Крок 3: Насолоджуйтесь!
+
+На цьому все! Тепер візьміть _фібулу_ (брошку, шпильку або застібку), щоб застебнути плащ через праве плече (саме так робили римляни, ви, звичайно, можете також взяти ліве плече, або середнє, або як вам більше подобається) і насолоджуйтеся драматичним виглядом.

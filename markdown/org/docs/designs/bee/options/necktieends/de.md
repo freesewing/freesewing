@@ -1,10 +1,10 @@
 ---
-title: "Neck tie ends"
+title: "Enden des Nackenträgers"
 ---
 
 ***
 
-Whether you like straight or pointy ends on the ties around your neck
+Ob du gerade oder spitze Enden an den Krawatten um deinen Hals magst
 
 ## Effekt dieser Option auf das Schnittmuster
 

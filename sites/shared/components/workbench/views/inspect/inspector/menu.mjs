@@ -123,7 +123,7 @@ const StackFinder = ({ renderProps, inspector, t }) => {
         <select
           className="select select-bordered w-full"
           onChange={findPath}
-          defaultvalue="__title"
+          defaultValue="__title"
         >
           <option disabled value="__title">
             Paths

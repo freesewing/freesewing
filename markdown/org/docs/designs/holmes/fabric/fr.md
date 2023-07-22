@@ -1,14 +1,14 @@
 ---
-title: "Holmes deerstalker hat: Fabric Options"
+title: "Casquette de détective Holmes : Options de tissus"
 ---
 
 ### Tissu principal
 
-For the main fabric of your hat, a thick fabric will work best to hold the shape but if you wanna go for a lighter fabric you can interface it to give it more body. Generally you want to use **wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
+Pour le tissu principal de votre chapeau, un tissu épais fonctionnera mieux pour tenir la forme, mais si vous voulez aller pour un tissu plus léger, vous pouvez l'interfacer pour lui donner plus de corps. En général, vous voulez utiliser des **laines** de revêtement de poids, mais vous pouvez expérimenter avec différents poids et tissus avec l'entoilage approprié.
 
 <Note>
 
-A fun thing to try is printed cotton. Just double up the main fabric so each piece is double thickness. Then interface it with a **medium firm interfacing**.
+Une chose amusante à essayer est le coton imprimé. Il suffit de doubler le tissu principal pour que chaque pièce soit en double épaisseur. Ensuite, utilisez un entoilage **moyennement ferme**.
 
 </Note>
 
@@ -18,11 +18,11 @@ Généralement, vous voulez un tissu léger tel que **Soies** ou **Plaine de Cot
 
 ### Entoilage
 
-Selon l'épaisseur de votre tissu principal et la façon dont il conserve sa forme, vous devrez peut-être interfacer votre tissu. If you are uncertain of whether your fabric requires interfacing, quickly _baste_ your crown pieces together and see if the crown stays up right when placed on a surface. Si elle ne le fait pas, elle a besoin d'une interface. En règle générale, vous aurez besoin d'une **Interface-entreprise moyenne** mais si votre tissu est assez mince, vous aurez peut-être besoin d'une interface plus ferme. If you are still uncertain you can face your crown pieces and once again _baste_ the crown pieces together and check how it looks on your head. Vous pouvez utiliser une interface fusible ou non fusibles. If using non-fusible interfacing you will want to flat line the interfacing to your pieces wih temporary _pad stitches_.
+Selon l'épaisseur de votre tissu principal et la façon dont il conserve sa forme, vous devrez peut-être interfacer votre tissu. Si vous ne savez pas si votre tissu nécessite de l'entoilage, _collez _rapidement les morceaux de votre couronne ensemble et vérifiez si la couronne reste droite lorsqu'elle est placée sur une surface. Si elle ne le fait pas, elle a besoin d'une interface. En règle générale, vous aurez besoin d'une **Interface-entreprise moyenne** mais si votre tissu est assez mince, vous aurez peut-être besoin d'une interface plus ferme. Si vous n'êtes toujours pas sûr, vous pouvez faire face à vos pièces de la couronne et, une fois de plus, _coller_ les pièces de la couronne ensemble et vérifier ce que cela donne sur votre tête. Vous pouvez utiliser une interface fusible ou non fusibles. Si vous utilisez de l'entoilage non thermocollant, vous devrez fixer l'entoilage à plat sur vos pièces avec des _points de couture_ temporaires.
 
 <Note>
 
-If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Just make sure you use natural fibres.
+Si vous essayez de réaliser un Holmes plus historique, vous pouvez utiliser de la **Tarlatan** qui est une mousseline légère et raidie. Assurez-vous d'utiliser des fibres naturelles.
 
 </Note>
 
@@ -32,6 +32,6 @@ For the bill insert you want a firm but thin material. Vous pouvez essayer aussi
 
 <Note>
 
-Just remember. All of these are recommendations. If you want to use something different go for it!
+Rappelez-vous. Toutes ces recommandations sont des recommandations. Si vous voulez utiliser quelque chose de différent, allez !
 
 </Note>

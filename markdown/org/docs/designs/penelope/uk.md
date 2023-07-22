@@ -1,5 +1,5 @@
 ---
-title: "Penelope pencil skirt"
+title: "Юбка-олівець Пенелопа"
 ---
 
 <PatternDocs pattern='penelope' />

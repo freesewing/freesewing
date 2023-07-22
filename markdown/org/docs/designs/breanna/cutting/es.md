@@ -1,18 +1,18 @@
 ---
-title: "Breanna body block: Cutting Instructions"
+title: "Bloque de cuerpo Breanna: Instrucciones de corte"
 ---
 
-**Main fabric**
+**Tela principal**
 
-- Cut **1 Front** part on the fold.
-- Cut **2 Back** parts.
-- Cut **2 Sleeve** parts, _good sides together_.
+- Corta **1 Parte delantera** en el pliegue.
+- Corta **2 partes traseras**.
+- Corta **2 Piezas de manga** , _lados buenos juntos_.
 
-These cutting instructions are just for the default Breanna block. Adjust your cutting accordingly if you have/are making changes to the block.
+Estas instrucciones de corte son sólo para el bloque Breanna por defecto. Si has hecho o estás haciendo cambios al patrón base, ajusta tu corte como corresponda.
 
 <Tip>
 
-If you do not have someone to help pin you into Breanna then you may find it easier to Cut 2 Front parts with seam allowance and sew the backs up when constructing so you can pin in the front.
+Si no tienes a nadie que te ayude a sujetar con alfileres a Breanna, puede que te resulte más fácil Cortar 2 partes delanteras con margen de costura y coser los reversos al construir para poder sujetar con alfileres la parte delantera.
 
 </Tip>
 

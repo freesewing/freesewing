@@ -1,5 +1,5 @@
 ---
-title: "Trayvon tie: Cutting Instructions"
+title: "Corbata Trayvon: Instrucciones de corte"
 ---
 
 - **Tela principal**
@@ -15,11 +15,11 @@ title: "Trayvon tie: Cutting Instructions"
 
 <Warning>
 
-###### Caveat
+###### Advertencia
 
-- There is no seam allowance on the **interfacing** parts and the **loop**
-- The **lining** **tip** and **tail** have only seam allowance at the tip
-- The **fabric** **tip** and **tail** have only seam allowance at the tip and center
+- No hay margen de costura en las **piezas de entretela** ni en el **bucle**
+- La **punta** de forro** y la **cola** sólo tienen margen de costura en la punta
+- La **punta** de tela** y la **cola** sólo tienen margen de costura en la punta y en el centro
 
 </Warning>
 

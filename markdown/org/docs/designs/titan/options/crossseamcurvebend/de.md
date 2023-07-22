@@ -1,5 +1,5 @@
 ---
-title: "Cross seam bend"
+title: "Quernaht Kurve"
 ---
 
 Steuert die Krümmung der Quernahtkurve.
@@ -17,4 +17,4 @@ Menschen mit einem runden Bum wollen dies vielleicht senken, um ein wenig mehr (
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](titan_crossseamcurvebend_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](titan_crossseamcurvebend_sample.svg "Effekt dieser Option auf das Schnittmuster")

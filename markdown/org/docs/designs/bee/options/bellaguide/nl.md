@@ -1,19 +1,19 @@
 ---
-title: "Show Bella"
+title: "Toon Bella"
 ---
 
 ***
 
-Shows the outline of the Bella block Bee is based on
+Toont de omtrek van het Bella blok waar Bee op gebaseerd is
 
-This is to help give context to the other options of Bee especially when using the fit options
+Dit is om context te geven aan de andere opties van Bee, vooral als je de fit-opties gebruikt.
 
 <Note>
 
-It is recommended to have this on when adjusting the options for this pattern but also to turn it off before printing
+Het is aan te raden om dit aan te zetten wanneer je de opties voor dit patroon aanpast, maar ook om het uit te zetten voordat je gaat afdrukken.
 
 </Note>
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_bellaguide_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bee_bellaguide_sample.svg "Effect van deze optie op het patroon")

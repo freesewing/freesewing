@@ -1,12 +1,12 @@
 ---
-title: "Inner pocket depth"
+title: "Глибина внутрішньої кишені"
 ---
 
-How deep you would like the inner pocket to be.
+Наскільки глибокою ви хотіли б бачити внутрішню кишеню.
 
-- Increase this option to make a deeper inner pocket
-- Decrease this option to make a shallower inner pocket
+- Збільште цю опцію, щоб зробити внутрішню кишеню глибшою
+- Зменшіть цей параметр, щоб зробити внутрішню кишеню глибшою
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_innerpocketdepth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_innerpocketdepth_sample.svg "Вплив цієї опції на шаблон")

@@ -1,5 +1,5 @@
 ---
-title: "Bent body Block: Design Options"
+title: "Гнутий корпус Block: Варіанти дизайну"
 ---
 
 <PatternOptions pattern='bent' />

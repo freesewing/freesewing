@@ -1,128 +1,128 @@
 ---
-title: "Bee bikini top: Sewing Instructions"
+title: "Bienen-Bikinioberteil: Anleitung zum Nähen"
 ---
 
 <Warning>
-Make sure to use a stretch stitch
+Achte darauf, dass du einen Stretchstich verwendest
 </Warning>
 
 <Note>
 
-When making a reversible top the second colour will be refered to as the lining fabric.  
-The notches in this pattern act more like dots so **do not** clip them to mark them.
+Wenn du ein wendbares Oberteil anfertigst, wird die zweite Farbe als Futterstoff bezeichnet.  
+Die Kerben in diesem Muster wirken eher wie Punkte, also **klammere** sie nicht, um sie zu markieren.
 
 </Note>
 
-### Step 1: Construct the Neck Ties
+### Schritt 1: Baue die Nackenbinder
 
-#### Neck Ties One Colour Method
+#### Krawatten Einfarbige Methode
 
-- Fold one of the neck tie pieces in half lengthwise, right sides and raw edges together.
-- Sew along the raw edges, leaving one of the short ends open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out and press.
+- Falte eines der Halstücher der Länge nach in der Mitte, sodass die rechte Seite und die Schnittkanten aufeinander treffen.
+- Nähen Sie entlang der Schnittkanten und lassen Sie dabei eines der kurzen Enden offen.
+- Schneide die Nahtzugaben zurück und schneide die Ecken ab.
+- Umdrehen und bügeln.
 
-<Note>Repeat this for the other neck tie</Note>
+<Note>Wiederhole diesen Vorgang für die andere Krawatte</Note>
 
-#### Neck Ties Two Colours Method
+#### Halskrawatten Zwei-Farben-Methode
 
-- With right sides together, sew one main neck tie to one lining neck tie leaving one of the short edges open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out. Press.
+- Nähen Sie rechts auf rechts eine Hauptkrawatte an eine Futterkrawatte, wobei Sie eine der kurzen Kanten offen lassen.
+- Schneide die Nahtzugaben zurück und schneide die Ecken ab.
+- Drehe dich von innen nach außen. Presse.
 
-<Note>Repeat this for the the remaining neck tie pieces</Note>
+<Note>Wiederhole diesen Vorgang für die restlichen Krawattenstücke</Note>
 
-### Step 2: The Cups
+### Schritt 2: Die Becher
 
-#### Band Tie Variant
+#### Band-Krawatten-Variante
 
-- With raw edges and main fabric together, _baste_ one of the neck ties to the top of one of the cup pieces making sure that the tie goes towards the bottom of the cup.
-- With the neck tie sandwiched inside, pin a lining cup piece right sides together to the main cup piece.
-- Sew the lining to the main cup between notches along the front, top and side seams, making sure not to catch the neck tie and to reinforce the stitch at the notches.
-- (Optional) Fold to the wrong side and _edgestitch_ the seam allowance down between notches on the front and side seams. Do not sew the allowances together.
-- With good sides together, sew the lining to the main fabric along the bottom, leaving a gap between the side notches making sure to reinforce the stitch at the either end.
-- Trim the seam allowances of the sewn edges whilst leaving the seam allowance between the notches. Clip the corners. You may also need to clip the curved seams.
-- Turn inside out by pulling the neck tie through one of the gaps. Press.
-- (Optional) _edgestitch_ the top, sides and bottom of the cup leaving the gaps between the notches open.
-- Stitch along casing line to create band channel.
+- Lege die Schnittkanten und den Hauptstoff zusammen und hefte __ eines der Nackenbänder an die Oberseite eines der Körbchenteile, wobei du darauf achtest, dass das Band zum unteren Ende des Körbchens hin verläuft.
+- Lege das Nackenband in die Mitte und stecke ein Stück des Futterbechers rechts auf rechts an den Hauptbecher.
+- Nähen Sie das Futter zwischen den Einkerbungen entlang der vorderen, oberen und seitlichen Nähte an den Hauptbecher. Achten Sie darauf, dass Sie das Halsband nicht erwischen und die Naht an den Einkerbungen verstärken.
+- (Optional) Falte auf die linke Seite und _edgestitch_ die Nahtzugabe zwischen den Kerben an der Vorder- und Seitennaht nach unten. Nähen Sie die Zugaben nicht zusammen.
+- Nähen Sie das Futter mit der guten Seite nach unten an den Hauptstoff, lassen Sie dabei einen Spalt zwischen den seitlichen Einschnitten und verstärken Sie die Naht an beiden Enden.
+- Schneide die Nahtzugaben der genähten Kanten zurück und lasse dabei die Nahtzugabe zwischen den Kerben stehen. Schneide die Ecken ab. Eventuell musst du auch die gebogenen Nähte klammern.
+- Drehe die Innenseite nach außen, indem du das Halstuch durch eine der Lücken ziehst. Presse.
+- (Optional) _edgestitch_ die Oberseite, die Seiten und die Unterseite des Bechers, wobei du die Lücken zwischen den Einkerbungen offen lässt.
+- Nähen Sie entlang der Mantellinie, um einen Bandkanal zu erstellen.
 
-<Note>Repeat this for the other cup</Note>
+<Note>Wiederhole diesen Vorgang für die andere Tasse</Note>
 
 <Tip>
 
-If your seam allowance is wide you may find that you need to trim the gaps' seam allowances a little to reduce bulk.  
-If you are having trouble turning the cups you can try one of these methods:
+Wenn deine Nahtzugabe breit ist, musst du die Nahtzugaben der Lücken vielleicht ein wenig kürzen, damit sie nicht zu groß werden.  
+Wenn du Probleme beim Wenden der Körbchen hast, kannst du eine der folgenden Methoden ausprobieren:
 
-- Create a 2.5cm (1") gap in the front or side seam and turn throught that, either _slipstitch_-ing the gap closed or _edgestitch_-ing it closed during Step 7.
-- Widen one of the existing gaps and turn through that. Then when turned _edgestitch_ or _slipstitch_ the widened part closed.
+- Erstelle eine 2,5 cm breite Lücke in der Vorder- oder Seitennaht und wende sie, indem du die Lücke entweder mit einem _Rutschstich_ schließt oder sie in Schritt 7 mit einem _Stich_ schließt.
+- Verbreitere eine der vorhandenen Lücken und biege durch sie hindurch. Dann wird beim Wenden _Gestich_ oder _Rutschstich_ der verbreiterte Teil geschlossen.
 
 </Tip>
 <Note>
 
-Whilst certainly optional it is recommended to _edgestitch_ the top and sides of the cups but the bottom is entirely optional.
+Es ist zwar optional, aber es wird empfohlen, die Oberseite und die Seiten der Körbchen zu _nähen_.
 
 </Note>
 
-#### Cross Back Ties Variant
+#### Cross Back Ties Variante
 
-- With raw edges and main fabric together, _baste_ one of the neck ties to the top of one of the cup pieces making sure that the tie goes towards the bottom of the cup.
-- With the neck tie sandwiched inside, pin a lining cup piece right sides together to the main cup piece.
-- Sew the lining to the main cup along the front, top and side seams, making sure not to catch the neck tie.
-- Turn the cups right side out and press.
-- (Optional) _edgestitch_ the top and sides of the cups.
-- Sew a line of basting stitches along the bottom of the cups, just inside the seamline.
-- Gather cups along the basting stitches.
+- Lege die Schnittkanten und den Hauptstoff zusammen und hefte __ eines der Nackenbänder an die Oberseite eines der Körbchenteile, wobei du darauf achtest, dass das Band zum unteren Ende des Körbchens hin verläuft.
+- Lege das Nackenband in die Mitte und stecke ein Stück des Futterbechers rechts auf rechts an den Hauptbecher.
+- Nähen Sie das Futter entlang der Vorder-, Ober- und Seitennähte an den Hauptbecher und achten Sie dabei darauf, dass Sie das Halsband nicht erwischen.
+- Drehe die Tassen auf die rechte Seite und drücke sie.
+- (Optional) _edgestitch_ die Oberseite und die Seiten der Cups.
+- Nähen Sie eine Reihe von Heftstichen entlang der Unterseite der Körbchen, genau innerhalb der Nahtlinie.
+- Sammle die Körbchen entlang der Heftstiche.
 
 <Tip>
 
-The amount you gather the cups is a matter of preference and cup size, but you can hold them up to yourself before stitching in place to ensure the fit is right.  
-There are also notches on either side of the band piece's midpoint to help give you an idea of how much to gather by.
+Wie stark du die Körbchen zusammenziehst, ist eine Frage der Vorliebe und der Körbchengröße, aber du kannst sie vor dem Nähen an dich halten, um sicherzustellen, dass die Passform stimmt.  
+Außerdem gibt es auf beiden Seiten der Mitte des Bandes Einkerbungen, die dir eine Vorstellung davon geben, um wie viel du sammeln musst.
 
 </Tip>
 
-- Find the midpoint of the band piece, this is marked by a notch, then pin the gathered bottoms of cups to band piece, right sides together. You'll want the cups to meet at the band's midpoint.
-- Stitch the cups to the band. Once they're stitched in place, check the fit of the cups once more before continuing. Unpicking swim fabric is a pain, so it's better to make sure the cups fit just right before moving on.
+- Finde den Mittelpunkt des Bandes, der durch eine Kerbe markiert ist, und stecke dann die gerafften Unterseiten der Körbchen an das Band, rechtsherum. Du möchtest, dass sich die Becher in der Mitte des Bandes treffen.
+- Nähen Sie die Körbchen an das Band. Wenn sie festgenäht sind, überprüfe noch einmal den Sitz der Körbchen, bevor du weitermachst. Das Auspacken des Schwimmstoffs ist mühsam, deshalb ist es besser, sich zu vergewissern, dass die Körbchen richtig sitzen, bevor du weitermachst.
 
 <Note>
 
-You may prefer to wrap the one cup over the other at the midpoint. To do this place the sides of the cups at the otuer notches and lay their fronts pass the midpoint with the left on top.
+Du kannst es auch vorziehen, den einen Becher in der Mitte über den anderen zu wickeln. Dazu legst du die Seiten der Becher an den anderen Kerben an und legst ihre Vorderseiten über die Mitte, wobei die linke oben liegt.
 
 </Note>
 
-- Now it's time to finish the band. To do this, fold in the seam allowance on both sides of the band. The raw edges of your swim cups should be turned to the inside of the band. Then, fold the band in half lengthwise, aligning the long edges and enclosing the seam allowances. Swim fabric can be slippery, so you may need extra pins or clips to hold the fabric in place.
-- Stitch along the top of the band, securing the seam allowances within the band.
+- Jetzt ist es an der Zeit, die Band fertigzustellen. Dazu faltest du die Nahtzugabe auf beiden Seiten des Bandes ein. Die Schnittkanten deiner Badekappen sollten auf die Innenseite des Bandes gedreht werden. Dann faltest du das Band der Länge nach in der Mitte, wobei du die langen Kanten ausrichtest und die Nahtzugaben einschließt. Schwimmstoffe können rutschig sein, daher brauchst du eventuell zusätzliche Stecknadeln oder Klammern, um den Stoff zu fixieren.
+- Nähen Sie entlang der Oberseite des Bandes und sichern Sie dabei die Nahtzugaben innerhalb des Bandes.
 
 <Tip>
 
-For extra support, you can also add swim elastic into the band, either by stitching clear elastic into the band's seam allowance, or by threading swim elastic through the band at this point.
+Für zusätzlichen Halt kannst du auch ein Gummiband in das Band einarbeiten, indem du entweder ein durchsichtiges Gummiband in die Nahtzugabe des Bandes einnähst oder das Gummiband an dieser Stelle durch das Band fädelst.
 
 </Tip>
 
-- At this point, the band is a long tube with open ends. Next, we'll be sewing those closed while providing a loop to thread your neck ties through. To do this fold over one end of the band towards the inside of the swim top. The amount you fold over should be, at minimum, the width of your neck ties plus a seam allowance. Stitch the end down to create a loop at least as wide as your neck ties. There will be a lot of pressure on this point, so make sure your stitching is secure, and consider running a second line of stitching next to the first, for additional support. Repeat for the other end of the band.
-- To thread your neck-ties for cross back ties, take the tie from the left cup and thread it through the loop on the right side of the band, from top to bottom. Thread the tie from the right cup top-to-bottom through the loop on the left side of the band. Then tie the neck ties at center back to secure the swim top.
-- Skip to "Step 5: Enjoy!"
+- An diesem Punkt ist das Band ein langer Schlauch mit offenen Enden. Als Nächstes nähen wir sie zu und machen eine Schlaufe, durch die du deine Krawatten fädeln kannst. Dazu faltest du ein Ende des Bandes zur Innenseite des Badeanzugs um. Der Betrag, den du umlegst, sollte mindestens der Breite deines Halsbands plus einer Nahtzugabe entsprechen. Steppe das Ende ab, so dass eine Schlaufe entsteht, die mindestens so breit ist wie deine Krawatte. An dieser Stelle wird viel Druck ausgeübt, also achte darauf, dass deine Nähte sicher sind, und überlege dir, ob du eine zweite Nahtreihe neben der ersten machst, um sie zusätzlich zu stützen. Wiederhole den Vorgang für das andere Ende des Bandes.
+- Zum Einfädeln deiner Nackenkrawatten für überkreuzte Rückenkrawatten nimmst du die Krawatte von der linken Tasse und fädelst sie von oben nach unten durch die Schlaufe auf der rechten Seite des Bandes. Fädle das Band von der rechten Tasse von oben nach unten durch die Schlaufe auf der linken Seite des Bandes. Binde dann die Nackenbänder in der hinteren Mitte fest, um das Oberteil zu sichern.
+- Springe zu "Schritt 5: Genieße!"
 
-### Step 3: Band tie
+### Schritt 3: Band binden
 
-You only need to do this step if making the band tie variant.
+Diesen Schritt musst du nur machen, wenn du die Variante mit dem Band machst.
 
-#### Band Tie One Colour Method
+#### Band Tie Einfarbige Methode
 
-- Fold the band tie piece in half lengthwise, right sides and raw edges together.
-- Sew along the raw edges, leaving one of the short ends open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out. Press.
+- Falte das Bandstück der Länge nach in der Mitte und lege die rechte Seite und die Schnittkanten zusammen.
+- Nähen Sie entlang der Schnittkanten und lassen Sie dabei eines der kurzen Enden offen.
+- Schneide die Nahtzugaben zurück und schneide die Ecken ab.
+- Drehe dich von innen nach außen. Presse.
 
-#### Band Tie Two Colours Method
+#### Band Tie Zwei Farben Methode
 
-- With right sides together, sew the main band tie to the lining neck tie leaving one of the short edges open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out. Press.
+- Nähen Sie das Hauptband rechts auf rechts an das Futterband, wobei Sie eine der kurzen Kanten offen lassen.
+- Schneide die Nahtzugaben zurück und schneide die Ecken ab.
+- Drehe dich von innen nach außen. Presse.
 
-### Step 4: Putting it all together.
+### Schritt 4: Alles zusammenfügen.
 
-- Thread the band tie through the gaps along the bottom edge of the cups, making sure the front sides of the cups are in the centre and that the main and lining sides are on the respective side.
+- Fädle das Bindeband durch die Lücken entlang der Unterkante der Körbchen. Achte dabei darauf, dass die Vorderseiten der Körbchen in der Mitte liegen und die Haupt- und Futterseiten auf der jeweiligen Seite liegen.
 
 ### Schritt 5: Viel Spaß mit deinem neuen Shirt!
 
-Hooray, your Bee Bikini Top is finished!
+Hurra, dein Bienen-Bikinioberteil ist fertig!

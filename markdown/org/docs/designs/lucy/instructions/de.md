@@ -4,46 +4,46 @@ title: "Lucy, die Umbindetasche: Anleitungen"
 
 <Note>
 
-Lucy can be sewn by hand or by machine as you prefer. When sewing by hand, you can use a running stitch to sew the pocket pieces together and bind with a whipstitch. 
+Lucy kann je nach Wunsch von Hand oder mit der Maschine genäht werden. Wenn du mit der Hand nähst, kannst du die Taschenteile mit einem Running Stitch zusammennähen und mit einem Peitschenstich binden. 
 
 </Note>
 
-## Step 1: Constructing the Pocket
+## Schritt 1: Konstruieren der Tasche
 
-- Bind the pocket slit.
-- With _wrong sides together_ stitch the two pocket pieces together around the outside.
-- Bind the outside edge.
+- Binde den Taschenschlitz zu.
+- Lege _falsch herum zusammen_ und nähe die beiden Taschenteile außen herum zusammen.
+- Binde die Außenkante ein.
 
 <Note>
 
-If you prefer you can _french seam_ the outer edges of the pocket bag together.
+Wenn du möchtest, kannst du die Außenkanten des Taschenbeutels mit einer französischen Naht zusammenfügen.
 
 </Note>
 
-## Step 2: Binding the top edge and ties.
+## Schritt 2: Binde die obere Kante und die Bänder.
 
-There are two methods for binding the top edge. One leaves the side edges of the top binding open so the ties can be threaded through. The second uses the tape for the ties to bind the top edge. Read through both methods carefully and decide which one you wish to use.
+Es gibt zwei Methoden zum Binden der oberen Kante. Man lässt die Seitenkanten der oberen Bindung offen, damit die Bänder durchgefädelt werden können. Die zweite verwendet das Band für die Bänder, um die obere Kante zu binden. Lies dir beide Methoden genau durch und entscheide, welche du verwenden möchtest.
 
-### Using binding
+### Bindung verwenden
 
-- Cut a piece of binding the length of the top edge + seam allowance.
-- Fold under the short edges of the binging and stitch in place.
-- Bind the top edge of the pocket bag with the prepared binding making sure that the folded ends are left open.
-- Thread a tie through the binding.
-- Finish the tie ends.
+- Schneide ein Stück Einband in der Länge der Oberkante + Nahtzugabe zu.
+- Falte die kurzen Kanten des Bingings um und nähe sie fest.
+- Binde die Oberkante des Taschenbeutels mit der vorbereiteten Bindung zusammen und achte darauf, dass die gefalteten Enden offen bleiben.
+- Fädle ein Band durch die Bindung.
+- Schließe die Krawattenenden ab.
 
 <Tip>
 
-To make sure the binding is long enough, instead of cutting the binding down you can fold under one edge and stitch the binding to the top edge but before getting to other end fold under and trim the other edge of the binding then continue the stitching.
+Um sicherzustellen, dass die Bindung lang genug ist, kannst du, anstatt sie abzuschneiden, eine Kante umklappen und die Bindung an der oberen Kante festnähen, aber bevor du das andere Ende erreichst, klappst du sie um und schneidest die andere Kante der Bindung ab und nähst dann weiter.
 
 </Tip>
 
-### Bind with the ties
+### Mit den Krawatten binden
 
-- Use a piece of tape as binding and tie, attach the pocket bag to the centre of the tape.
-- Bind the top edge of the pocket bag whilst leaving the remainder of tape free.
-- Finish the tape ends.
+- Verwende ein Stück Klebeband als Bindeband und befestige den Taschenbeutel in der Mitte des Bandes.
+- Binde die obere Kante des Taschenbeutels zusammen und lass den Rest des Bandes frei.
+- Schließe die Bandenden ab.
 
-## Step 3: Enjoy!
+## Schritt 3: Viel Spaß!
 
-That's it! You're all done! Now go stuff your new pockets to the brim!
+Das war's! Sie sind fertig! Jetzt geh und stopf deine neuen Taschen bis zum Rand!

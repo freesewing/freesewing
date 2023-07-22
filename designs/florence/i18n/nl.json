@@ -1,0 +1,22 @@
+{
+  "t": "Florence mondmasker",
+  "d": "Florence is een mondmasker.",
+  "p": {
+    "mask": "Mask"
+  },
+  "s": {},
+  "o": {
+    "height": {
+      "t": "Hoogte",
+      "d": "Bepaalt de hoogte van het mondmasker"
+    },
+    "length": {
+      "t": "Lengte",
+      "d": "Bepaalt de lengte van het mondmasker"
+    },
+    "curve": {
+      "t": "Boog",
+      "d": "Bepaalt de curve van de bovenrand van het mondmasker"
+    }
+  }
+}

@@ -1,15 +1,15 @@
 ---
-title: "Simone shirt: Sewing Instructions"
+title: "Camisa Simone Instrucciones de costura"
 ---
 
-### Step 1: Bust Darts
+### Paso 1: Reventar dardos
 
-- Close the Front bust darts.
+- Cierra las pinzas delanteras del busto.
 
-### Step 2: Follow Simon's Instructions
+### Paso 2: Sigue las instrucciones de Simon
 
 <Note>
 
-Simone is just our [Simon pattern](/designs/simon/) adapted for breasts so you can now just follow [Simon's instructions](/docs/patterns/simon/instructions) to finish your Simone :)
+Simone no es más que nuestro [patrón Simon](/diseños/simon/) adaptado para pechos, así que ahora sólo tienes que seguir las [instrucciones de Simon](/docs/patrones/simon/instrucciones) para terminar tu Simone :)
 
 </Note>

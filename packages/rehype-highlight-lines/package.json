@@ -32,7 +32,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "unist-util-remove": "3.1.1"
+    "unist-util-remove": "4.0.0"
   },
   "devDependencies": {},
   "files": [
@@ -44,7 +44,7 @@
     "tag": "next"
   },
   "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=8"
+    "node": "18",
+    "npm": "9"
   }
 }

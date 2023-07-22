@@ -1,0 +1,41 @@
+{
+  "t": "Hortensia handtas",
+  "d": "Hortensie is een handzak.",
+  "p": {
+    "bottompanel": "Bottom panel",
+    "frontpanel": "Front panel",
+    "sidepanel": "Side panel",
+    "sidepanelreinforcement": "Side panel reinforcement",
+    "strap": "Strap",
+    "zipperpanel": "Zipper panel"
+  },
+  "s": {
+    "SidePanel": "Zijkant paneel",
+    "FrontBackPanel": "Voor- en achterpaneel",
+    "BottomPanel": "Onderste paneel",
+    "ZipperPanel": "Rits Paneel",
+    "Strap": "Referentie",
+    "strapLength": "Lengte van de hengsels",
+    "handleWidth": "Breedte van de handvatten",
+    "zipperSize": "Standaard ritsgrootte",
+    "SidePanelReinforcement": "Zijkant Versterking Paneel"
+  },
+  "o": {
+    "size": {
+      "t": "Maat",
+      "d": "Bepaalt de totale grootte van de handtas"
+    },
+    "zipperSize": {
+      "t": "Rits grootte",
+      "d": "Welke afmeting van de rits te gebruiken"
+    },
+    "strapLength": {
+      "t": "Rep lengte",
+      "d": "Bepaalt de lengte van de band"
+    },
+    "handleWidth": {
+      "t": "Afhandeling breedte",
+      "d": "Bepaalt de breedte van het handvat"
+    }
+  }
+}

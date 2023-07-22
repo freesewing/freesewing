@@ -1,11 +1,11 @@
 ---
-title: Render Engine
+title: Рушій рендерингу
 ---
 
-This setting allows you to choose how your pattern will be rendered. In other words, how it will be drawn on the screen.  There are two options:
+Цей параметр дозволяє вам вибрати, як буде відрендерено ваш візерунок. Іншими словами, як воно буде намальоване на екрані.  Є два варіанти:
 
-- `React` allows for more interactivity, and is optimized for displaying patterns on-screen
-- `SVG` does not allow interactivity like the `React` option does. Instead it is optimized for printing
+- `React` надає більше інтерактивності та оптимізований для відображення шаблонів на екрані
+- `SVG` не дозволяє інтерактивність, як це робить `React` . Натомість оптимізовано для друку
 
-By default, this website only uses SVG when you are exporting your pattern. While you are generating and tweaking your pattern, we use React, unless you use this setting to change that to SVG.
+За замовчуванням цей сайт використовує лише SVG, коли ви експортуєте свій шаблон. Поки ви генеруєте і налаштовуєте свій шаблон, ми використовуємо React, якщо тільки ви не за допомогою цього налаштування не зміните його на SVG.
 

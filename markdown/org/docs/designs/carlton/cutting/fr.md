@@ -1,62 +1,62 @@
 ---
-title: "Carlton coat: Cutting Instructions"
+title: "Manteau Carlton : Instructions de coupe"
 ---
 
 <Note>
 
-Certain parts have to be drafted off of the existing parts. How to draft these are provided in the [instructions](/docs/patterns/carlton/instructions).
+Certaines parties doivent être esquissées à partir des pièces existantes. La façon de les rédiger est fournie dans le site [instructions](/docs/patterns/carlton/instructions).
 
 </Note>
 
-### Materials
+### Matériaux
 
 - **Tissu principal**
-  - Cut **2 Front** parts
-  - Cut **2 Front facing** parts
-  - Cut **2 Back** parts
-  - Cut **2 topsleeve** parts
-  - Cut **2 undersleeve** parts
-  - Cut **2 tail** parts
-  - Cut **4 belt** parts
-  - Cut **2 Collar stand** parts
-  - Cut **2 collar** parts on the fold or Cut the upper collar on the fold and the under collar on the bias
-  - Cut **2 cuffFacing** parts
-  - Cut **2 Pocket** parts
-  - Cut **4 pocketFlap** parts
-  - Cut **2 chestPocketWelt** parts
-  - Cut **2 innerPocketWelt** parts
+  - Couper **2 parties frontales**
+  - Couper **2 parties avant **
+  - Couper **2 parties** arrières
+  - Couper **2 parties de manche supérieure**
+  - Couper **2 parties du manche inférieure**
+  - Couper **2 parties de queue**
+  - Couper **4 parties** de ceinture
+  - Couper **2 pièces du support de collier**
+  - Couper **2 parties de col** sur le pli ou Couper le col supérieur sur le pli et le col inférieur dans le biais
+  - Couper **2 parties de manche**
+  - Couper **2 pièces de poche**
+  - Couper **4 rabats de poche**
+  - Couper **2 parmentures de poche de poitrine**
+  - Couper ** 2 parmentures de poche intérieure**
 
 <Note>
 
-If your main fabric is quite lightweight and flimsy you may need to interface all the parts with a lightweight interfacing.
+Si votre tissu principal est assez léger et fragile, vous devrez peut-être interfacer toutes les parties avec un entoilage léger.
 
 </Note>
 
-- **Lining fabric**
-  - Cut **2 Front lining** parts
-  - Cut **2 Back** parts
-  - Cut **2 topsleeve** parts
-  - Cut **2 undersleeve** parts
-  - Cut **2 tail** parts
-  - Cut **2 innerPocketBag** parts
-  - Cut **1 innerPocketTab** parts
-  - Cut **2 pocketLining** parts
-  - Cut **2 chestPocketBag** parts
-- **Light to Mediumweight Hair Canvas**
-  - Cut **2 Front Facing** parts
-  - Cut **1 Collar stand** parts
-  - Cut **2 collar** parts on the bias and seam together
-  - Cut **2 cuffFacing** parts
-  - Cut **2 pocketFlap** parts
-  - Cut **2 chestPocketWelt** parts
-  - Cut **2 innerPocketWelt** parts
-- **Heavyweight Hair Canvas**
-  - Cut **2 Front Shoulder** parts
-  - Cut **2 Chest canvas** parts
-  - Cut **2 Back shoulder** parts
+- **Tissu de doublure**
+  - Couper **2 pièces de la doublure avant**
+  - Couper **2 parties** arrières
+  - Couper **2 parties de manche supérieure**
+  - Couper **2 parties du manche inférieure**
+  - Couper **2 parties de queue**
+  - Couper ** 2 sacs de poche intérieure**
+  - Coupe **1 innerPocketTab** parties
+  - Couper **2 doublures de poche **
+  - Couper **2 sacs de poche de poitrine**
+- **Toile pour cheveux légers à moyens**
+  - Découpe **2 pièces de la face avant**
+  - Couper **1 Pièce de collier**
+  - Couper **2 parties de col** dans le biais et coudre ensemble
+  - Couper **2 parties de manche**
+  - Couper **2 rabats de poche**
+  - Couper **2 parmentures de poche de poitrine**
+  - Couper ** 2 parmentures de poche intérieure**
+- **Toile lourde à cheveux**
+  - Coupe **2 épaule avant** parties
+  - Coupe **2 Toile de poitrine** parties
+  - Découpage **2 parties de l'épaule arrière**
 
 <Note>
 
-The canvas parts need to be cut nett (without seam allowances).
+Les pièces de toile doivent être coupées nettes (sans marge de couture).
 
 </Note>

@@ -1,20 +1,20 @@
 ---
-title: Include Seam Allowance
+title: Incluir margen de costura
 ---
 
-This [Core Setting][core-settings] controls whether or not to include seam allowance on your pattern.
+Este [Core Setting][core-settings] controla si se incluye o no el margen de costura en tu patrón.
 
-By default, seam allowance is not included. To generate a pattern with seam allowance, you should enable it by changing this option to **Yes**.
+Por defecto, no se incluye el margen de costura. Para generar un patrón con margen de costura , debes activarlo cambiando esta opción a **Sí**.
 
 <Note>
 
-FreeSewing's core library only takes a single setting to handle seam allowance: `sa`.
-However, for convenience, we've split this up into two different settings on the website:
+La biblioteca central de FreeSewing sólo tiene un ajuste para gestionar el margen de costura: `sa`.
+Sin embargo, por comodidad, lo hemos dividido en dos ajustes diferentes en el sitio web:
 
-- **[Include Seam Allowance](/docs/site/draft/core-settings/sabool)**: Controls whether or not to include seam allowance
-- **[Seam Allowance Size](/docs/site/draft/core-settings/samm)**: Controls how big to make the seam allowance, if it is included
+- **[Incluir margen de costura](/docs/site/draft/core-settings/sabool)**: Controla si se incluye o no el margen de costura
+- **[Tamaño del margen de costura](/docs/site/draft/core-settings/samm)**: Controla el tamaño del margen de costura, si se incluye
 
-The latter will only be shown if you've enabled the former.
+Este último sólo se mostrará si has activado el primero.
 
 </Note>
 [core-settings]: /docs/site/draft/core-settings/

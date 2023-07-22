@@ -1,8 +1,8 @@
 ---
-titre : "Aisance d'épaule"
+title: "Aisance des épaules"
 ---
 
-![Shoulder ease](./shoulderease.svg)
+![Aisance des épaules](./shoulderease.svg)
 
 Contrôle l'ampleur de l'aisance sur la mesure d'épaule à épaule.
 
@@ -10,4 +10,4 @@ This option allows you to create some extra ease at the shoulders which shifts t
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_shoulderease_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_shoulderease_sample.svg "Effet de cette option sur le motif")

@@ -1,10 +1,10 @@
 ---
-title: "Neck tie colours"
+title: "Nekdaskleuren"
 ---
 
 ***
 
-Whether you want single color ties around your neck, or dual-coloured ones
+Of je nu eenkleurige of tweekleurige stropdassen om je nek wilt
 
 ## Effect van deze optie op het patroon
 

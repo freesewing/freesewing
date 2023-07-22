@@ -1,5 +1,5 @@
 ---
-title: "Charlie chinos: Required Measurements"
+title: "Charlie Chinos: Erforderliche Maße"
 ---
 
 <PatternMeasurements pattern='charlie' />

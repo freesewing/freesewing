@@ -1,11 +1,11 @@
 ---
-title: "Back pocket horizontal placement"
+title: "Placement horizontal de la poche arrière"
 ---
 
-Controls the horizontal placement of the back pockets.
+Contrôle la position horizontale des poches arrières.
 
-In other words, more towards the outseam, and this wider apart. Or more towards the center back and thus closer together.
+En d’autres termes, plus vers l’extérieur, et plus loin encore. Ou plus vers le centre en arrière et donc plus près ensemble.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_backpockethorizontalplacement_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_backpockethorizontalplacement_sample.svg "Effet de cette option sur le motif")

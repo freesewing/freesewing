@@ -1,20 +1,20 @@
 ---
-title: "Yuri hoodie: What You Need"
+title: "Худі Юрія: Те, що тобі потрібно"
 ---
 
-To make Yuri, you will need the following:
+Щоб зробити Юрія, вам знадобиться наступне:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 2.5 meters (2.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/yuri/fabric))
-- 2 large buttons
+- [Базові матеріали для шиття](/docs/sewing/basic-sewing-supplies)
+- Близько 2,5 метрів (2,8 ярдів) відповідної тканини ([див. варіанти тканини](/docs/patterns/yuri/fabric))
+- 2 великі кнопки
 
 <Note>
 
-#### A serger/overlock is nice, but optional
+#### Використовувати машину-оверлок рекомендовано, проте не обов’язково
 
-As with all knitwear and stretch fabrics, a serger/overlock will make your life easier.
+При роботі з трикотажними тканинами та тканинами, що тягнуться, прийнято використовувати оверлок - це значно полегшує увесь процес.
 
-If you do not have one of those, don't despair. You don't really need it.
-Because none of the seams get stretched out, you can just sew this pattern with a regular straight stitch.
+Проте, якщо у Вас її немає - не розчаровуйтесь. Для цього проєкту вона не обов'язкова.
+Оскільки жоден зі швів не розтягується, ви можете зшити цю викрійку звичайною прямою строчкою.
 
 </Note>

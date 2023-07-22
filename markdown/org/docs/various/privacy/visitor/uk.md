@@ -1,24 +1,24 @@
 ---
-title: How we use your visitor data
+title: Як ми використовуємо дані про ваших відвідувачів
 order: 10
 ---
 
-##### What personal data do we store?
+##### Які персональні дані ми зберігаємо?
 
-- Your IP address
+- Ваша IP-адреса
 
-##### Why do we need it?
+##### Навіщо він нам потрібен?
 
-- Your IP address is logged on our backend systems. We use these logs and the information in them only to diagnose problems.
+- Ваша IP-адреса реєструється в наших внутрішніх системах. Ми використовуємо ці журнали та інформацію в них лише для діагностики проблем.
 
-##### How long do we keep it?
+##### Як довго ми його зберігаємо?
 
-- We keep these logs no longer than 6 months.
+- Ми зберігаємо ці журнали не довше 6 місяців.
 
-##### Do we share it?
+##### Чи ділимося ми нею?
 
-- No, never.
+- Ні, ніколи.
 
 <Note>
-This data is stored for anybody who visits our website or connects to our backend APIs.
+Ці дані зберігаються для всіх, хто відвідує наш сайт або підключається до наших внутрішніх API.
 </Note>

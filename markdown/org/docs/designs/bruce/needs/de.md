@@ -1,10 +1,10 @@
 ---
-title: "Bruce boxer briefs: What You Need"
+title: "Bruce Boxershorts: Was du brauchst"
 ---
 
-To make Bruce, you will need the following:
+Um Bruce zu erstellen, benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- About 1 meter (1.1 yards) of a suitable fabric ([see Fabric options](/docs/patterns/bruce/fabric/))
-- Enough wide (3cm (1.2 inch) or wider) elastic to fit around your waist
+- Etwa 1 Meter (1,1 Yards) eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/bruce/fabric/))
+- Genügend breites (3 cm oder breiter) Gummiband, das um deine Taille passt
 - Ein Server, obwohl du ohne einen überleben kannst

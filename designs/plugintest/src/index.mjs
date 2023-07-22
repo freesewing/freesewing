@@ -1,9 +1,10 @@
 import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
+import { i18n } from '../i18n/index.mjs'
 import { annotations } from './plugin-annotations.mjs'
 import { flip } from './plugin-flip.mjs'
 import { gore } from './plugin-gore.mjs'
-import { i18n } from './plugin-i18n.mjs'
+import { i18n as i18nStack } from './plugin-i18n.mjs'
 import { measurements } from './plugin-measurements.mjs'
 import { mirror } from './plugin-mirror.mjs'
 import { round } from './plugin-round.mjs'
@@ -18,25 +19,13 @@ const Plugintest = new Design({
 // Named exports
 export {
   annotations,
-  //banner,
-  //bartack,
-  //buttons,
-  //crossbox,
-  //cutonfold,
-  //dimension,
   flip,
   gore,
-  //grainline,
-  i18n,
-  //logo,
+  i18nStack,
   measurements,
   mirror,
-  //notches,
-  //pleat,
   round,
-  //scalebox,
-  //sewtogether,
   sprinkle,
-  //title,
   Plugintest,
+  i18n,
 }

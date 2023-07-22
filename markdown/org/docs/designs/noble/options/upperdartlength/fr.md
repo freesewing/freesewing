@@ -1,11 +1,11 @@
 ---
-title: "Upper Dart Length"
+title: "Longueur de la fléchette supérieure"
 ---
 
 ***
 
-The **Upper Dart Length** controls the length of the upper dart, 100% is all teh way to the bust point.
+Le site **Upper Dart Length** contrôle la longueur du dard supérieur, 100 % jusqu'à la pointe du buste.
 
-## Effet de cette option sur le modèle
+## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](noble_upperdartlength_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](noble_upperdartlength_sample.svg "Effet de cette option sur le motif")

@@ -1,10 +1,10 @@
 ---
-title: "Ear flap width"
+title: "Breedte oorklep"
 ---
 
 ***
 
-Controls the width of the ear flaps
+Regelt de breedte van de oorkleppen
 
 ## Effect van deze optie op het patroon
 

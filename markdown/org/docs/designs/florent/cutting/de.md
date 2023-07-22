@@ -1,5 +1,5 @@
 ---
-title: "Florent flat cap: Cutting Instructions"
+title: "Florent Flachmütze: Schnittanleitung"
 ---
 
 Je nachdem, wie viel Stoff verfügbar ist, können Sie zwei Ober- und Seitenteile schneiden, daher die Anweisungen zum Muster selbst. Warnung: Das Muster enthält die Nahtzustände im oberen Teil. Wenn Sie es also auf Falte schneiden, fügen Sie diese nicht ein!

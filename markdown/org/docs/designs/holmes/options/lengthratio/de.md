@@ -4,7 +4,7 @@ title: "Längenverhältnis"
 
 ***
 
-Controls the length of the crown and ear flaps
+Kontrolliert die Länge der Hutkrone und Ohrklappen
 
 ## Effekt dieser Option auf das Schnittmuster
 

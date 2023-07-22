@@ -1,5 +1,5 @@
 ---
-titre : "Forme du décolleté"
+title: "Forme de l'encolure"
 ---
 
 ![L'option de forme d'encolure sur Aaron](./necklinebend.svg)
@@ -10,4 +10,4 @@ Détermine la courbure de l'encolure avant.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](aaron_necklinebend_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](aaron_necklinebend_sample.svg "Effet de cette option sur le motif")

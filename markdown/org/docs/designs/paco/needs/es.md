@@ -1,12 +1,12 @@
 ---
-title: "Paco pants: What You Need"
+title: "Pantalones Paco: Lo que necesitas"
 ---
 
-To make Paco, you will need the following:
+Para hacer Paco, necesitarás lo siguiente:
 
 - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
-- About 1.25 meters (1.4 yards) (depending on your height) of a suitable fabric ([see Fabric options](/docs/patterns/paco/fabric))
-- 30cm (12") of lining for the pocket bags
+- Aproximadamente 1,25 metros (1,4 yardas) (dependiendo de tu altura) de una tela adecuada ([ver Opciones de tela](/docs/patterns/paco/fabric))
+- 30 cm (12") de forro para las bolsas de bolsillo
 - Un poco de interfaz para las soldaduras del bolsillo (sólo es necesario si optó por bolsillos traseros)
 - Una cadena de dibujo y dos eyelets (opcional)
 - Suficiente elástico plano amplio para su cintura y cuffs

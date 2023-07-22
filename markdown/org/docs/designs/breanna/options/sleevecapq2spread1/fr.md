@@ -1,10 +1,10 @@
 ---
-title: "Sleevecap Q2 downward spread"
+title: "Tête de manche abaissement Q2"
 ---
 
-![The downward spread in the second quadrant of the sleevecap](./sleevecapq2spread1.svg)
+![La propagation vers le bas dans le deuxième quadrant de la tête de manche](./sleevecapq2spread1.svg)
 
-This option controls the downward spread in the second quadrant of the sleevecap.
+Cette option permet de contrôler la propagation vers le bas dans le deuxième quadrant de la tête de manche.
 
 <Tip>
 
@@ -14,4 +14,4 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_sleevecapq2spread1_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_sleevecapq2spread1_sample.svg "Effet de cette option sur le motif")

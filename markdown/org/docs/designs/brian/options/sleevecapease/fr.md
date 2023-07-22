@@ -1,10 +1,10 @@
 ---
-title: "Sleevecap ease"
+title: "Aisance tête de manche"
 ---
 
 ***
 
-This option determines the amount of ease at the sleevecap.
+Cette option détermine la quantité d'aisance sur la tête de manche.
 
 <Note>
 
@@ -17,4 +17,4 @@ Pour les tissus légers ou la maille, on n'ajoute pas d'aisance de tête de manc
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_sleevecapease_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_sleevecapease_sample.svg "Effet de cette option sur le motif")

@@ -1,32 +1,32 @@
 ---
-title: "Zipper size"
+title: "Größe des Reißverschlusses"
 ---
 
-What size zipper the pattern uses to draft.
+Welche Größe der Reißverschluss hat, mit dem das Muster entworfen wird.
 
-This determines how wide the zipper panel will be by inserting the zipper size into the panel.
+Damit wird festgelegt, wie breit die Reißverschlussleiste sein wird, indem du die Reißverschlussgröße in die Leiste einfügst.
 
-The sizes are based off of the brand YKK's zippers and refers to the width of the zipper coils.
+Die Größen basieren auf den Reißverschlüssen der Marke YKK und beziehen sich auf die Breite der Reißverschlusswindungen.
 
-Size guide for Hortensia:
+Größentabelle für Hortensia:
 
-| Option    | Size in Millimetres (mm) |
-| --------- | ------------------------ |
-| #Invisble | 0                        |
-| #3        | 4.8                      |
-| #4        | 5.4                      |
-| #4.5      | 5.9                      |
-| #5        | 6.2                      |
-| #6        | 7                        |
-| #8        | 8                        |
-| #10       | 10.6                     |
+| Option       | Größe in Millimetern (mm) |
+| ------------ | ------------------------- |
+| #Unbesiegbar | 0                         |
+| #3           | 4.8                       |
+| #4           | 5.4                       |
+| #4.5         | 5.9                       |
+| #5           | 6.2                       |
+| #6           | 7                         |
+| #8           | 8                         |
+| #10          | 10.6                      |
 
 <Note>
 
-If in doubt, or if the size of your zipper is unavailable use the size that is slightly wider. This means you will have a wider zipper panel than needed but it is better than one that is not wide enough.
+Im Zweifelsfall oder wenn die Größe deines Reißverschlusses nicht verfügbar ist, nimm die Größe, die etwas breiter ist. Das bedeutet, dass du eine breitere Reißverschlussleiste hast als nötig, aber das ist besser als eine, die nicht breit genug ist.
 
 </Note>
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](hortensia_zippersize_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](hortensia_zippersize_sample.svg "Effekt dieser Option auf das Schnittmuster")

@@ -1,13 +1,13 @@
 ---
-title: "Penelope pencil skirt: Fabric Options"
+title: "Penelope Bleistiftrock: Stoff Optionen"
 ---
 
-### Main Fabric
+### Hauptstoff
 
-A pencil skirt is a rather formal cut, and most commonly is made in a suiting material. In other words, a **fine wool**. More casual options among **medium weight** fabrics include **cotton** or **denim**.
+Ein Bleistiftrock ist ein eher formeller Schnitt und wird meist aus einem Anzugstoff gefertigt. Mit anderen Worten, eine **feine Wolle**. Zu den legereren Optionen unter den **mittelschweren** Stoffen gehören **Baumwolle** oder **Denim**.
 
-Einen Stoff mit etwas Dehnbarkeit zu verwenden wird es einfacher machen, eine bequeme Passform zu bekommen, und dir mehr Bewegungsfreiheit geben, da Bleistiftröcke ziemlich eng sitzen. **Scuba** is often seen in pencil skirts as it is firm, has body but also stretchs.
+Einen Stoff mit etwas Dehnbarkeit zu verwenden wird es einfacher machen, eine bequeme Passform zu bekommen, und dir mehr Bewegungsfreiheit geben, da Bleistiftröcke ziemlich eng sitzen. **Scuba** wird oft für Bleistiftröcke verwendet, da es fest ist, Körper hat, sich aber auch dehnt.
 
-### Lining Fabric
+### Bindegewebe
 
-The lining fabric needs to be light, and allow the body to slide over it easily. You also don't want something to thick as this will be constricting. **Silky** fabrics are the go to choice as they are lightweight and slippery.
+Der Futterstoff muss leicht sein, damit der Körper leicht darüber gleiten kann. Du solltest auch nicht zu dick sein, da dies einschränkend wirkt. **Seidige** Stoffe sind die erste Wahl, da sie leicht und gleitfähig sind.

@@ -1,5 +1,5 @@
 // Hooks
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useCallback } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useView } from 'shared/hooks/use-view.mjs'
 import { usePatternSettings } from 'shared/hooks/use-pattern-settings.mjs'
@@ -13,6 +13,7 @@ import { objUpdate, hasRequiredMeasurements } from 'shared/utils.mjs'
 import { WorkbenchHeader } from './header.mjs'
 import { ErrorView } from 'shared/components/error/view.mjs'
 import { ModalSpinner } from 'shared/components/modal/spinner.mjs'
+import { MobileMenubar } from './menus/mobile-menubar.mjs'
 // Views
 import { DraftView, ns as draftNs } from 'shared/components/workbench/views/draft/index.mjs'
 import { SaveView, ns as saveNs } from 'shared/components/workbench/views/save/index.mjs'
@@ -60,18 +61,29 @@ const draftViews = ['draft', 'inspect']
 
 export const Workbench = ({ design, Design, DynamicDocs }) => {
   // Hooks
-  const { t, i18n } = useTranslation(ns)
+  const { t, i18n } = useTranslation([...ns, design])
   const { language } = i18n
   const { account } = useAccount()
   const controlState = useControlState()
 
   // State
-  const [view, setView] = useView()
+  const [view, _setView] = useView()
   const [settings, setSettings] = usePatternSettings()
   const [ui, setUi] = useState(defaultUi)
   const [error, setError] = useState(false)
   const [mounted, setMounted] = useState(false)
   const [missingMeasurements, setMissingMeasurements] = useState(false)
+
+  const setView = useCallback(
+    (newView) => {
+      // hacky little way to scroll to the top but keep the menu hidden if it was hidden
+      const endScroll = Math.min(window.scrollY, 21)
+      window.scrollTo({ top: 0, behavior: 'instant' })
+      _setView(newView)
+      window.scroll({ top: endScroll })
+    },
+    [_setView]
+  )
 
   // set mounted on mount
   useEffect(() => setMounted(true), [setMounted])
@@ -80,6 +92,7 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
     // protect against loops
     if (!mounted) return
 
+    setMounted(true)
     const [ok, missing] = hasRequiredMeasurements(Design, settings.measurements)
     if (ok) setMissingMeasurements(false)
     // Force the measurements view if we have missing measurements
@@ -117,8 +130,11 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
     setControl: controlState.update,
   }
 
-  // Don't bother without a Design
-  if (!Design) return <ModalSpinner />
+  // wait for mount. this helps prevent hydration issues
+  if (!mounted) return <ModalSpinner />
+
+  // Warn that the design is somehow missing
+  if (!Design) return <ErrorView>{t('workbench.noDesignFound')}</ErrorView>
 
   // Short-circuit errors early
   if (error)
@@ -126,6 +142,7 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
       <>
         <WorkbenchHeader {...{ view, setView, update }} />
         {error}
+        <MobileMenubar />
       </>
     )
 
@@ -162,7 +179,9 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
     default: {
       const layout = ui.layouts?.[view] || settings.layout || true
       // Generate the pattern here so we can pass it down to both the view and the options menu
-      const pattern = settings.measurements !== undefined && new Design({ layout, ...settings })
+      const pattern =
+        (Design.patternConfig.measurements.length === 0 || settings.measurements !== undefined) &&
+        new Design({ layout, embed: true, ...settings })
 
       // Return early if the pattern is not initialized yet
       if (typeof pattern.getConfig !== 'function') return null
@@ -170,7 +189,7 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
       const patternConfig = pattern.getConfig()
       if (ui.renderer === 'svg') {
         // Add theme to svg renderer
-        pattern.use(pluginI18n, { t })
+        pattern.use(pluginI18n, (key) => t(key, { ns: design }))
         pattern.use(pluginTheme, { skipGrid: ['pages'] })
       }
 
@@ -192,11 +211,10 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
   }
 
   return (
-    <div className="flex flex-row">
-      <div className="grow-no shrink-no">
-        <WorkbenchHeader {...{ view, setView, update }} />
-      </div>
+    <div className="flex flex-row min-h-screen">
+      <WorkbenchHeader {...{ view, setView, update }} />
       <div className="grow">{viewContent}</div>
+      <MobileMenubar />
     </div>
   )
 }

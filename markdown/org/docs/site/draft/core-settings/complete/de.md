@@ -1,10 +1,10 @@
 ---
-title: Pattern Details
+title: Muster Details
 ---
 
 <Fixme> 
 
-This setting is likely to be revised prior to the release of v3
+Diese Einstellung wird wahrscheinlich vor der Veröffentlichung von v3 überarbeitet werden.
 
 </Fixme>
 

@@ -1,11 +1,11 @@
 ---
-title: "Shin swim trunks: What You Need"
+title: "Bañadores de espinilla: Lo que necesitas"
 ---
 
-To make Shin, you will need the following:
+Para hacer Shin, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- About 0.75 meters (0.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/shin/fabric))
+- Unos 0,75 metros (0,8 yardas) de una tela adecuada ([ver Opciones de tela](/docs/patterns/shin/fabric))
 - dos eyelets y una cadena de dibujo
 
 > ## Un serger/overlock es bueno, pero opcional

@@ -1,5 +1,5 @@
 ---
-title: "Brian body block"
+title: "Викрійка-основа Браян"
 ---
 
 <PatternDocs pattern='brian' />

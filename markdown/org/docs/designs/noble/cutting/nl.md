@@ -1,36 +1,36 @@
 ---
-title: "Noble body block: Cutting Instructions"
+title: "Edel lichaam blok: Snij-instructies"
 ---
 
-**Main fabric**
+**Buitenstof**
 
-- Cut **1 Front Inside** part on the fold.
+- Knip **1 Voorkant Binnenkant** deel op de vouw uit.
 - Cut **2 Front Outside** part.
 
-### Shoulder dart
+### Schouder neep
 
 - Cut **2 Back Inside** part.
 - Cut **2 Back Outside** part.
 
-### Armhole dart
+### Armsgat coupenaad
 
 - Cut **2 Back** part.
 
-These cutting instructions are just for the default Noble block. Adjust your cutting accordingly if you have/are making changes to the block.
+Deze snij-instructies zijn alleen voor het standaard Noble blok. Pas je snijwerk dienovereenkomstig aan als je veranderingen aan het blok hebt aangebracht.
 
 <Tip>
 
-If you do not have someone to help pin you into Noble then you may find it easier to Cut 2 Front Inside parts with seam allowance and sew the backs up when constructing so you can pin in the front.
+Als je niet iemand hebt die je kan helpen om Noble vast te spelden, dan is het misschien makkelijker om 2 delen voor de binnenkant met naadtoeslag te knippen en de achterkanten vast te naaien tijdens het maken, zodat je de voorkant kunt vastspelden.
 
 </Tip>
 
 <Note>
 
-###### Noble is a block, not a pattern
+###### Noble is een blok, geen patroon
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Een blok is een basisvorm waarop andere patronen zijn gebaseerd.
+Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Blokken worden meestal niet gemaakt zoals is, maar dienen als basis voor andere patronen.
 
 </Note>

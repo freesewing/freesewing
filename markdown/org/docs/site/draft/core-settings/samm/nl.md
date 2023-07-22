@@ -1,18 +1,18 @@
 ---
-title: Seam Allowance Size
+title: Naadtoeslag Maat
 ---
 
-This [Core Setting][core-settings] controls the base size of your seam allowance.  In other words, the default seam allowance will be this size. Other allowance that is intended to be wider, like hem allowance, will be a multiple of this size.
+Deze [Core Setting][core-settings] regelt de basismaat van je naad toeslag.  Met andere woorden, de standaard naadtoeslag zal deze maat hebben. Andere toeslagen die breder moeten zijn, zoals zoomtoeslagen, zijn een veelvoud van deze maat.
 
 <Note>
 
-FreeSewing's core library only takes a single setting to handle seam allowance: `sa`.
-However, for convenience, we've split this up into two different settings on the website:
+De kernbibliotheek van FreeSewing heeft maar één instelling voor naadtoeslag: `sa`.
+Voor het gemak hebben we dit echter opgesplitst in twee verschillende instellingen op de website:
 
-- **[Include Seam Allowance](/docs/site/draft/core-settings/sabool)**: Controls whether or not to include seam allowance
-- **[Seam Allowance Size](/docs/site/draft/core-settings/samm)**: Controls how big to make the seam allowance, if it is included
+- **[Naadtoeslag opnemen](/docs/site/draft/core-settings/sabool)**: Regelt of de naadtoeslag wel of niet moet worden opgenomen
+- **[Seam Allowance Size](/docs/site/draft/core-settings/samm)**: Regelt hoe groot de naadtoeslag moet zijn, als deze is inbegrepen
 
-The latter will only be shown if you've enabled the former.
+De laatste wordt alleen getoond als je de eerste hebt ingeschakeld.
 
 </Note>
 [core-settings]: /docs/site/draft/core-settings/
