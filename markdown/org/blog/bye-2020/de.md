@@ -26,9 +26,9 @@ Also haben wir am 28. Februar nach einigem Entwerfen und Experimentieren unser G
 
 Wir wollten nicht wirklich im Mittelpunkt stehen, wir wollten den Leuten nur helfen, Masken zu machen. Doch als [Forbes einen Leitartikel veröffentlichte, in dem die Menschen dazu aufgerufen wurden, dem PSA-Mangel im Gesundheitswesen abzuhelfen](https://www.forbes.com/sites/tjmccue/2020/03/20/calling-all-people-who-sew-and-make-you-can-help-solve-2020-n95-type-mask-shortage/), standen wir plötzlich im Mittelpunkt eines riesigen Rampenlichts. Der Artikel erwähnte FreeSewing an prominenter Stelle und verlinkte auf [unseren Blogbeitrag](/blog/facemask-frenzy).
 
-Zu dieser Zeit gab es nur wenige Schnittmuster für Gesichtsmasken, und schon bald begann eine lange Liste anderer Publikationen, Links zu unserem Schnittmuster und unserer Website zu setzen. Als ich auf der Website der New York Times</a>das Anleitungsvideo
+Zu dieser Zeit gab es nur wenige Schnittmuster für Gesichtsmasken, und schon bald begann eine lange Liste anderer Publikationen, Links zu unserem Schnittmuster und unserer Website zu setzen. Als ich auf der Website der New York Times das Anleitungsvideo
 
-fand, das ich für das Muster gemacht hatte, war das ein echter Aha-Moment. Und tatsächlich: Im Monat nach der Forbes-Veröffentlichung strömten eine Million Menschen auf freesewing.org.</p> 
+fand, das ich für das Muster gemacht hatte, war das ein echter Aha-Moment. Und tatsächlich: Im Monat nach der Forbes-Veröffentlichung strömten eine Million Menschen auf freesewing.org.
 
 Der plötzliche Anstieg der Besucher- und Nutzerzahlen (ganz zu schweigen von den Gönnern) hat deutlich gemacht, dass ich ein Engpass für das Projekt bin, und so haben wir uns in der zweiten Jahreshälfte vorgenommen, [zu versuchen, dieses Problem mit einigen gemeinschaftsbildenden Maßnahmen zu beheben](/blog/a-call-for-help/). Einerseits geht es langsam voran, aber andererseits, wenn ich mir anschaue, wie lebendig die FreeSewing-Community heute ist, ist es kaum zu glauben, dass wir das alles im Jahr 2020 geschafft haben. Wir haben jetzt regelmäßige [Mitwirkendentreffen](/community/calls/), und [unsere Chaträume sind nie leer](https://discord.freesewing.org/).
 
