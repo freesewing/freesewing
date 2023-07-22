@@ -4,7 +4,7 @@ import { backAttachmentBack } from './back-attachment-back.mjs'
  * This is the exported part object
  */
 export const backAttachmentFront = {
-  name: 'collab:backAttachmentFront', // The name in design::part format
+  name: 'naomiwu:backAttachmentFront', // The name in design::part format
   draft: draftBackAttachmentFront, // The method to call to draft this part
   from: backAttachmentBack, // Draft this part starting from the (imported) `backAttachmentBack` part
 }

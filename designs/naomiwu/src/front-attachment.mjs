@@ -4,7 +4,7 @@ import { frontBase, xOnWaist } from './front-base.mjs'
  * This is the exported part object
  */
 export const frontAttachment = {
-  name: 'collab:frontAttachment', // The name in design::part format
+  name: 'naomiwu:frontAttachment', // The name in design::part format
   draft: draftFrontAttachment, // The method to call to draft this part
   from: frontBase, // Draft this part starting from the (imported) frontBase part
 }

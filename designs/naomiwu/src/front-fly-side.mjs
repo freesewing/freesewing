@@ -1,23 +1,35 @@
-import { frontBase, xOnWaist } from './front-base.mjs'
+import {
+  frontBase,
+  xOnWaist,
+  splitFrontWaist,
+  drawCornerPath,
+  drawSeamLine,
+  drawSideNote,
+  drawHemNote,
+  drawPocketBag,
+} from './front-base.mjs'
 
 /*
  * This is the exported part object
  */
-export const frontLeft = {
-  name: 'collab:frontLeft', // Name in design::part format
-  draft: draftFrontLeft, // Method to call to draft this part
+export const frontFlySide = {
+  name: 'naomiwu:frontFlySide', // Name in design::part format
+  draft: draftFrontFlySide, // Method to call to draft this part
   from: frontBase, // Draft this part starting from (the imported) frontBase
 }
 
 /*
- * This function drafts the left front panel of the skirt
+ * This function drafts the front panel of the skirt with the fly on it
+ * Whether that ends up being the right or left panel depends on the
+ * 'invertFly' option.
+ * By default, this is the left panel, if the option is truthy, this becomes
+ * the right panel.
  *
  * Basic outline was drafted in frontBase
- * Now we adapt it for the left panel
  *
  * Note that Left/Right is always from the vantage point the wearer
  */
-function draftFrontLeft({
+function draftFrontFlySide({
   Point,
   points,
   Path,
@@ -32,6 +44,18 @@ function draftFrontLeft({
   Snippet,
   macro,
 }) {
+  /*
+   * If the user wants the fly side inverted, we should mirror the entire thing
+   */
+  if (options.invertFly) {
+    for (const p in points) points[p] = points[p].flipX()
+
+    /*
+     * We need to re-split the waist after mirroring
+     */
+    splitFrontWaist(part)
+  }
+
   /*
    * Store the J-Seam dimensions to construct the fly shield later
    */
@@ -100,7 +124,7 @@ function draftFrontLeft({
     macro('title', {
       at: points.title,
       nr: 2,
-      title: 'frontLeft',
+      title: ['frontLeft', ' (', options.invertFly ? 'right' : 'left', ')'],
     })
 
     /*
@@ -119,6 +143,14 @@ function draftFrontLeft({
       snippet: 'notch',
       on: ['jseamTop', 'frontPocketBagStart', 'topLeft', 'jseamBottomFe'],
     })
+
+    /*
+     * Add various helper paths
+     */
+    paths.corner = drawCornerPath(part) // Pocket corner
+    drawPocketBag(part) // Pocket bag
+    paths.side = drawSideNote(part) // Note on side seam
+    paths.hem = drawHemNote(part) // Note on hem
   }
 
   /*

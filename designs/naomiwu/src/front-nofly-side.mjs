@@ -12,9 +12,20 @@ import {
 /*
  * This is the exported part object
  */
-export const frontRight = {
-  name: 'collab:frontRight', // Name in design:part format
-  draft: draftFrontRight, // Method to call to draft this part
+/*
+ * This function drafts the front panel of the skirt without the fly on it
+ * Whether that ends up being the right or left panel depends on the
+ * 'invertFly' option.
+ * By default, this is the right panel, if the option is truthy, this becomes
+ * the right panel.
+ *
+ * Basic outline was drafted in frontBase
+ *
+ * Note that Left/Right is always from the vantage point the wearer
+ */
+export const frontNoFlySide = {
+  name: 'naomiwu:frontNoFlySide', // Name in design:part format
+  draft: draftFrontNoFlySide, // Method to call to draft this part
   from: frontBase, // Draft this starting from (the imported) frontBase part
 }
 
@@ -26,7 +37,7 @@ export const frontRight = {
  *
  * Note that Left/Right is always from the vantage point the wearer
  */
-function draftFrontRight({
+function draftFrontNoFlySide({
   Point,
   points,
   Path,
@@ -45,16 +56,19 @@ function draftFrontRight({
   utils,
 }) {
   /*
-   * Let's mirror the entire thing
+   * Let's mirror the entire thing, unless the user wants the fly side inverted
+   * In that case, we already have it the way it should be.
    */
-  for (const p in points) points[p] = points[p].flipX()
+  if (!options.invertFly) {
+    for (const p in points) points[p] = points[p].flipX()
 
-  /*
-   * We need to re-split the waist after mirroring it and re-draw paths
-   */
-  splitFrontWaist(part)
-  paths.corner = drawCornerPath(part) // Corner
-  paths.seam = drawSeamLine(part) // Seamline
+    /*
+     * We need to re-split the waist after mirroring it and re-draw paths
+     */
+    splitFrontWaist(part)
+    paths.corner = drawCornerPath(part) // Corner
+    paths.seam = drawSeamLine(part) // Seamline
+  }
 
   // Complete?
   if (complete) {
@@ -71,7 +85,7 @@ function draftFrontRight({
     macro('title', {
       at: points.title,
       nr: 3,
-      title: 'frontRight',
+      title: ['frontNoFlySide', ' (', options.invertFly ? 'left' : 'right', ')'],
     })
 
     /*

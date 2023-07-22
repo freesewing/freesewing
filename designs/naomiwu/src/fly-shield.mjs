@@ -2,7 +2,7 @@
  * This is the exported part object
  */
 export const flyShield = {
-  name: 'collab:flyShield', // The name in the form of design::name
+  name: 'naomiwu:flyShield', // The name in the form of design::name
   draft: draftFlyShield, // The method to call for drafting this part
 }
 

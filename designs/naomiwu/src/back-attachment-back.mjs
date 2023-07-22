@@ -4,7 +4,7 @@ import { waistband } from './waistband.mjs'
  * This is the exported part object
  */
 export const backAttachmentBack = {
-  name: 'collab:backAttachmentBack', // The name in design::part format
+  name: 'naomiwu:backAttachmentBack', // The name in design::part format
   draft: draftBackAttachmentBack, // The method to call to draft this part
   after: waistband, // Ensure this is drafted after the (imported) waistband part
 }

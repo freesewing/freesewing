@@ -4,7 +4,7 @@ import { shared } from './shared.mjs'
  * This is the exported part object
  */
 export const back = {
-  name: 'collab:back', // The name in design::part format
+  name: 'naomiwu:back', // The name in design::part format
   draft: draftBack, // The method to call to draft this part
   after: shared, // Indicate the `shared` part (see import above) needs to be drafted prior to this part
 }

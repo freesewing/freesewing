@@ -4,7 +4,7 @@ import { frontBase, xOnWaist } from './front-base.mjs'
  * This is the exported part object
  */
 export const frontPocketBag = {
-  name: 'collab:frontPocketBag', // The name in design::part format
+  name: 'naomiwu:frontPocketBag', // The name in design::part format
   draft: draftFrontPocketBag, // The method to call to draft this part
   from: frontBase, // Draft this starting from the (imported) frontBase part
 }

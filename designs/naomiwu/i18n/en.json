@@ -1,7 +1,10 @@
 {
   "t": "Naomi Wu Cargo Skirt",
   "d": "This is Naomi's Wu's signature cargo skirt design.",
-  "s": {},
+  "s": {
+    "right": "Right",
+    "left": "Left"
+  },
   "o": {
     "backAttachmentDepth": {
       "t": "Back attachment depth",
@@ -70,6 +73,10 @@
     "hipsEase": {
       "t": "Hips ease",
       "d": "Controls the amount of ease at your hips."
+    },
+    "invertFly": {
+      "t": "Invert the side of the fly",
+      "d": "Allows you to control the side the fly is on, for convenience of gender-expression."
     },
     "jseamBend": {
       "t": "J-Seam bend",

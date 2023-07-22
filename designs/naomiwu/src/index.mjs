@@ -5,8 +5,8 @@ import { i18n } from '../i18n/index.mjs'
 import { shared } from './shared.mjs'
 import { back } from './back.mjs'
 import { frontBase } from './front-base.mjs'
-import { frontLeft } from './front-left.mjs'
-import { frontRight } from './front-right.mjs'
+import { frontFlySide } from './front-fly-side.mjs'
+import { frontNoFlySide } from './front-nofly-side.mjs'
 import { waistband } from './waistband.mjs'
 import { flyShield } from './fly-shield.mjs'
 import { frontPocketBag } from './front-pocket-bag.mjs'
@@ -29,8 +29,8 @@ const Naomiwu = new Design({
     shared,
     back,
     frontBase,
-    frontLeft,
-    frontRight,
+    frontFlySide,
+    frontNoFlySide,
     waistband,
     flyShield,
     frontPocketBag,
@@ -71,8 +71,8 @@ export {
   shared,
   back,
   frontBase,
-  frontLeft,
-  frontRight,
+  frontFlySide,
+  frontNoFlySide,
   waistband,
   flyShield,
   frontPocketBag,

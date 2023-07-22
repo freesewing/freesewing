@@ -4,7 +4,7 @@ import { backPocket } from './back-pocket.mjs'
  * This is the exported part object
  */
 export const backPocketFlap = {
-  name: 'collab:backPocketFlap', // The name in design::part format
+  name: 'naomiwu:backPocketFlap', // The name in design::part format
   draft: draftBackPocketFlap, // The method to call to draft this part
   from: backPocket, // Draft this part starting from the (imported) `backPocket` part
 }

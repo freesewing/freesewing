@@ -39,7 +39,7 @@ const pctBasedOnHipsToUleg = () => ({
 })
 
 export const shared = {
-  name: 'collab:shared',
+  name: 'naomiwu:shared',
   measurements: ['hips', 'seat', 'waistToHips', 'waistToSeat', 'waistToUpperLeg'],
   hide: { self: true },
   options: {
@@ -71,6 +71,27 @@ export const shared = {
     },
 
     // Style options
+
+    /*
+     * Allows one to swap the fly side for what is more convenient or best
+     * matches one's gender expression.
+     *
+     * This design is based ona physical skirt made/worn by Naomi Wu and that
+     * skirt had the traditional left-over-right fly that is the most common
+     * style used in all menswear but also often in womenswear bottoms.
+     *
+     * Changing this option will draft a right-over-left style which is common
+     * for womenswear tops and bottoms, and as such is more female-presenting.
+     *
+     * There's no right or wrong way, it's just preference. The reason
+     * left-over-right is the default here is because that's how it was on
+     * the skirt we based this on.
+     */
+    invertFly: {
+      bool: false,
+      menu: 'style',
+    },
+
     /*
      * The length as a percentage of the hips to upper leg measurements
      */

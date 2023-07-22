@@ -4,7 +4,7 @@ import { frontPocketBag } from './front-pocket-bag.mjs'
  * This is the exported part object
  */
 export const frontPocketFacing = {
-  name: 'collab:frontPocketFacing', // The name in design::part format
+  name: 'naomiwu:frontPocketFacing', // The name in design::part format
   draft: draftFrontPocketFacing, // The method to call to draft this part
   from: frontPocketBag, // Draft this starting from the (imported) frontPocketBag part
 }

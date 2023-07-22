@@ -5,7 +5,7 @@ import { capitalize } from '@freesewing/core'
  * This is the exported part object
  */
 export const waistband = {
-  name: 'collab:waistband', // The name in design::part format
+  name: 'naomiwu:waistband', // The name in design::part format
   draft: draftWaistband, // The method to call to draft this part
   after: frontBase, // Draft this part starting from the (imported) frontBase part
 }
@@ -53,7 +53,7 @@ function draftWaistband({
   points.rightFrontBottom = points.leftFrontBottom.flipX()
 
   /*
-   * Add the overlap at the button side (right)
+   * Add the overlap at the button side (noFly side)
    */
   points.rightEdgeTop = points.rightFrontTop.shift(0, absoluteOptions.flyWidth)
   points.rightEdgeBottom = new Point(points.rightEdgeTop.x, points.cbBottom.y)
@@ -65,10 +65,10 @@ function draftWaistband({
   points.midRight = new Point(points.rightEdgeTop.x, points.midLeft.y)
 
   /*
-   * Location of the buttonhole
+   * Location of the buttonhole (taking invertFly option into account)
    */
   points.buttonhole = points.leftFrontBottom
-    .shiftFractionTowards(points.leftFrontTop, 0.25)
+    .shiftFractionTowards(points.leftFrontTop, options.invertFly ? 0.75 : 0.25)
     .shift(0, absoluteOptions.waistbandWidth / 4)
 
   /*
