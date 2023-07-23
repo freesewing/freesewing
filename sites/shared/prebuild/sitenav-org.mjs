@@ -20,7 +20,7 @@ import i18next from 'i18next'
 export const extendSiteNav = async (pages, lang) => {
   const translations = await loadTranslations({
     site: 'org',
-    namespaces: ['account', 'design', 'sections', 'tags'],
+    namespaces: ['account', 'sections', 'tags'],
     languages: allLanguages,
   })
 
