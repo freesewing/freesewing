@@ -26,7 +26,7 @@ import { NavButton, NavSpacer, colors } from 'shared/components/header.mjs'
 
 export const ns = ['header', 'sections', ...themeNs, ...localeNs]
 
-const NavIcons = ({ setModal, setSearch }) => {
+const NavIcons = ({ setModal }) => {
   const { t } = useTranslation(['header'])
   const iconSize = 'h-6 w-6 lg:h-12 lg:w-12'
 
@@ -98,7 +98,7 @@ const NavIcons = ({ setModal, setSearch }) => {
       >
         <I18nIcon className={iconSize} />
       </NavButton>
-      <NavButton onClick={() => setSearch(true)} label={t('header:search')} color={colors[10]}>
+      <NavButton href="/search" label={t('header:search')} color={colors[10]}>
         <SearchIcon className={iconSize} />
       </NavButton>
     </>
