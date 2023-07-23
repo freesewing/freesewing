@@ -94,7 +94,7 @@ export const extendSiteNav = async (siteNav, lang) => {
   for (const key of ['blog', 'showcase']) {
     siteNav[key].m = 1
     siteNav[key].s = key
-    siteNav[key].t = t(`section:${key}`)
+    siteNav[key].t = t(`sections:${key}`)
     siteNav[key].n = 1
   }
 
