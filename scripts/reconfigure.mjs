@@ -208,11 +208,23 @@ function scripts(pkg) {
   runScripts.wbuild = runScripts.wbuild || runScripts.build
   runScripts.prewbuild = runScripts.prewbuild || runScripts.prebuild
 
-  // make prebuildall and windows versions of buildall and prebuildall
-  if (runScripts.buildall !== undefined) {
-    runScripts.wbuildall = runScripts.wbuildall || runScripts.wbuild
-    runScripts.prebuildall = runScripts.prebuildall || runScripts.prebuild
-    runScripts.prewbuildall = runScripts.prewbuildall || runScripts.prewbuild
+  // make prebuild:sitedeps and windows versions of build:sitedeps and prebuild:sitedeps
+  if (runScripts['build:sitedeps'] !== undefined) {
+    runScripts['wbuild:sitedeps'] =
+      runScripts['wbuild:sitedeps'] || (runScripts.wbuild && 'yarn wbuild')
+    runScripts['prebuild:sitedeps'] =
+      runScripts['prebuild:sitedeps'] || (runScripts.prebuild && 'yarn prebuild')
+    runScripts['prewbuild:sitedeps'] =
+      runScripts['prewbuild:sitedeps'] || (runScripts.prewbuild && 'yarn prewbuild')
+  }
+
+  // make prebuild:all and windows versions of build:all and prebuild:all
+  if (runScripts['build:all'] !== undefined) {
+    runScripts['wbuild:all'] = runScripts['wbuild:all'] || (runScripts.wbuild && 'yarn wbuild')
+    runScripts['prebuild:all'] =
+      runScripts['prebuild:all'] || (runScripts.prebuild && 'yarn prebuild')
+    runScripts['prewbuild:all'] =
+      runScripts['prewbuild:all'] || (runScripts.prewbuild && 'yarn prewbuild')
   }
 
   return runScripts

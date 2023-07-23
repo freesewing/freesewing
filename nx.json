@@ -3,7 +3,7 @@
     "default": {
       "runner": "nx/tasks-runners/default",
       "options": {
-        "cacheableOperations": ["buildall"],
+        "cacheableOperations": ["build", "wbuild", "build:all", "build:sitedeps"],
         "parallel": 5
       }
     }
@@ -12,8 +12,8 @@
     "build": {
       "dependsOn": ["^build", "prebuild"]
     },
-    "buildall": {
-      "dependsOn": ["^buildall", "prebuildall"]
+    "wbuild": {
+      "dependsOn": ["^wbuild", "prewbuild"]
     },
     "testci": {
       "dependsOn": ["^build"]

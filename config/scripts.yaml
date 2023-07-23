@@ -1,6 +1,7 @@
 _:
   build: &build 'node build.mjs'
-  buildall: *build
+  'build:sitedeps': 'yarn build'
+  'build:all': 'yarn build'
   clean: 'rimraf dist'
   mbuild: &mbuild 'NO_MINIFY=1 node build.mjs'
   symlink: 'mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -'
@@ -36,12 +37,13 @@ new-design:
   test: '!'
   testci: '!'
   vbuild: '!'
-  buildall: '!'
+  'build:sitedeps': '!'
 rehype-highlight-lines:
   build: '!'
   mbuild: '!'
   vbuild: '!'
-  buildall: '!'
+  'build:all': '!'
+  'build:sitedeps': '!'
   lint: "npx eslint 'src/*.mjs'"
 rehype-jargon:
   lint: "npx eslint 'src/*.mjs'"
@@ -72,7 +74,7 @@ dev:
   develop: *nextDev
   i18n: "SITE=dev node ../shared/prebuild/i18n-only.mjs"
   lint: &nextLint 'next lint'
-  buildsitedeps: &buildsitedeps 'npx lerna run buildall'
+  buildsitedeps: &buildsitedeps 'npx lerna run build:sitedeps'
   prebuild: 'yarn buildsitedeps && node --experimental-json-modules ./prebuild.mjs'
   prebuildonly: 'node --experimental-json-modules ./prebuild.mjs'
   predev: 'node --experimental-json-modules ./prebuild.mjs'

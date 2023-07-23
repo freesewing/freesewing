@@ -22,7 +22,7 @@
     "i18n": "SITE=lab node ../shared/prebuild/i18n-only.mjs",
     "e2e": "yarn playwright test",
     "lint": "next lint",
-    "buildsitedeps": "npx lerna run buildall",
+    "buildsitedeps": "npx lerna run build:sitedeps",
     "prebuild": "yarn buildsitedeps && node --experimental-json-modules ./prebuild.mjs",
     "prebuildonly": "node --experimental-json-modules ./prebuild.mjs",
     "predev": "node --experimental-json-modules ./prebuild.mjs",
