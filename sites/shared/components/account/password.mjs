@@ -11,7 +11,7 @@ import { LoadingContext } from 'shared/context/loading-context.mjs'
 import Link from 'next/link'
 import { BackToAccountButton } from './shared.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 import { RightIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['account', 'toast']
