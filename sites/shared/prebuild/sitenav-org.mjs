@@ -1,5 +1,5 @@
 import { freeSewingConfig as conf } from '../config/freesewing.config.mjs'
-import { designs, tags } from '../config/designs.mjs'
+import { designs } from '../config/designs.mjs'
 import { loadTranslations } from './shared.mjs'
 import i18next from 'i18next'
 
@@ -7,7 +7,7 @@ import i18next from 'i18next'
  * Note: Set 'm' to truthy to show this as a main section in the side-navigation (optional)
  * Note: Set 'c' to set the control level to hide things from users (optional)
  * Note: Set 's' to the slug (optional insofar as it's not a real page (a spacer for the header))
- * Note: Set '_' to never show the page in the site navigation (like the tags pages)
+ * Note: Set '_' to never show the page in the site navigation
  * Note: Set 'h' to indicate this is a top-level page that should be hidden from the side-nav (like search)
  * Note: Set 'i' when something should be included as top-level in the collapse side-navigation (optional)
  * Note: Set 'f' to add the page to the footer
@@ -19,7 +19,7 @@ import i18next from 'i18next'
 export const extendSiteNav = async (siteNav, lang) => {
   const translations = await loadTranslations({
     site: 'org',
-    namespaces: ['account', 'design', 'sections', 'tags'],
+    namespaces: ['account', 'design', 'sections'],
     language: lang,
   })
 
@@ -61,12 +61,6 @@ export const extendSiteNav = async (siteNav, lang) => {
     s: 'designs',
     t: t('sections:designs'),
     n: 1,
-    tags: {
-      _: 1,
-      s: 'designs/tags',
-      t: t('design:tags'),
-      o: 'aaa',
-    },
   }
   for (const design in designs) {
     // addThese.designs[design] = {
@@ -76,12 +70,6 @@ export const extendSiteNav = async (siteNav, lang) => {
     siteNav.new.pattern[design] = {
       s: `new/${design}`,
       t: t(`account:generateANewThing`, { thing: t(`designs:${design}.t`) }),
-    }
-  }
-  for (const tag of tags) {
-    siteNav.designs.tags[tag] = {
-      s: `designs/tags/${tag}`,
-      t: t(`tags:${tag}`),
     }
   }
 
