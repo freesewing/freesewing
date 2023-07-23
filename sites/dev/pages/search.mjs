@@ -3,7 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Search } from 'site/components/search.mjs'
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
 import { NavLinks, Breadcrumbs, MainSections } from 'shared/components/navigation/sitenav.mjs'
 import {

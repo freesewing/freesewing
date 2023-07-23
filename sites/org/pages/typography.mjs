@@ -2,7 +2,7 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
 
 // Translation namespaces used on this page

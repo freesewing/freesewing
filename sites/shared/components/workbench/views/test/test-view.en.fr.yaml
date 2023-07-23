@@ -1,5 +1,0 @@
-testThis.option: Teste cette option
-testThis.measurement: Teste cette mesure
-measurements.d: Teste l'effet d'une mesure sur l'apparence de ce motif.
-designOptions.d: Teste l'effet d'une option sur l'apparence de ce modèle.
-testThing: "Test {design}: {thing}"
