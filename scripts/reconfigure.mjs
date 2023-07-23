@@ -7,7 +7,7 @@ import mustache from 'mustache'
 import conf from '../lerna.json' assert { type: 'json' }
 const { version } = conf
 import { software, publishedTypes as types, designs, plugins } from '../config/software/index.mjs'
-import { buildOrder } from '../config/build-order.mjs'
+// import { buildOrder } from '../config/build-order.mjs'
 import rootPackageJson from '../package.json' assert { type: 'json' }
 import { capitalize } from '../packages/core/src/index.mjs'
 
@@ -96,22 +96,7 @@ log.write(chalk.green(' Done\n'))
 // Step 4: Generate overall CHANGELOG.md
 fs.writeFileSync(path.join(repo.path, 'CHANGELOG.md'), changelog('global'))
 
-// Step 5: Generate build script for published software
-log.write(chalk.blueBright('Generating buildall node script...'))
-const buildSteps = buildOrder.map((step, i) => `lerna run cibuild_step${i}`)
-// Can we skip reconfigure?
-//const buildAllCommand = 'npm run reconfigure && ' + buildSteps.join(' && ')
-const buildAllCommand = buildSteps.join(' && ')
-const newRootPkgJson = { ...rootPackageJson }
-newRootPkgJson.scripts.buildall = buildAllCommand
-newRootPkgJson.scripts.wbuildall = buildAllCommand.replace(/cibuild/g, 'wcibuild')
-fs.writeFileSync(
-  path.join(repo.path, 'package.json'),
-  JSON.stringify(newRootPkgJson, null, 2) + '\n'
-)
-log.write(chalk.green(' Done\n'))
-
-// Step 6: Generate tests for designs and plugins
+// Step 5: Generate tests for designs and plugins
 for (const design in designs) {
   fs.writeFileSync(
     path.join(repo.path, 'designs', design, 'tests', 'shared.test.mjs'),
@@ -219,22 +204,15 @@ function scripts(pkg) {
     }
   }
 
-  // Enforce build order by generating the cibuild_stepX scrips
-  for (let step = 0; step < buildOrder.length; step++) {
-    if (buildOrder[step].indexOf(pkg.name) !== -1) {
-      if (runScripts.prebuild) {
-        runScripts[`precibuild_step${step}`] = runScripts.prebuild
-        if (!runScripts.prewbuild) runScripts.prewbuild = runScripts.prebuild
-      }
-      if (runScripts.build) {
-        runScripts[`cibuild_step${step}`] = runScripts.build
+  // make windows versions of build prebuild scripts
+  runScripts.wbuild = runScripts.wbuild || runScripts.build
+  runScripts.prewbuild = runScripts.prewbuild || runScripts.prebuild
 
-        // add windows scripts
-        if (!runScripts.wbuild) runScripts.wbuild = runScripts.build
-
-        runScripts[`wcibuild_step${step}`] = runScripts.wbuild
-      }
-    }
+  // make prebuildall and windows versions of buildall and prebuildall
+  if (runScripts.buildall !== undefined) {
+    runScripts.wbuildall = runScripts.wbuildall || runScripts.wbuild
+    runScripts.prebuildall = runScripts.prebuildall || runScripts.prebuild
+    runScripts.prewbuildall = runScripts.prewbuildall || runScripts.prewbuild
   }
 
   return runScripts

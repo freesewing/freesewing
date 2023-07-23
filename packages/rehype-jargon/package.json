@@ -24,6 +24,7 @@
   },
   "scripts": {
     "build": "node build.mjs",
+    "buildall": "node build.mjs",
     "clean": "rimraf dist",
     "mbuild": "NO_MINIFY=1 node build.mjs",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
@@ -32,9 +33,8 @@
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
     "lint": "npx eslint 'src/*.mjs'",
-    "cibuild_step6": "node build.mjs",
     "wbuild": "node build.mjs",
-    "wcibuild_step6": "node build.mjs"
+    "wbuildall": "node build.mjs"
   },
   "peerDependencies": {},
   "dependencies": {

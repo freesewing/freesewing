@@ -41,7 +41,7 @@ const loadFolderFrontmatter = async (key, site, folder, transform = false, lang 
   const cmd = `find ${cwd} -type f -name "${
     lang ? lang : '*'
   }.md" -exec grep "^${key}:" -ism 1 {} +`
-  const grep = exec(cmd, { cwd }, (error, stdout, stderr) => {
+  const grep = exec(cmd, { cwd, maxBuffer: 2048 * 1024 }, (error, stdout, stderr) => {
     if (error) {
       console.error(`exec error: ${error} - ${stderr}`)
       return

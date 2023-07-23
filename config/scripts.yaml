@@ -1,10 +1,11 @@
 _:
-  build: 'node build.mjs'
+  build: &build 'node build.mjs'
+  buildall: *build
   clean: 'rimraf dist'
-  mbuild: 'NO_MINIFY=1 node build.mjs'
+  mbuild: &mbuild 'NO_MINIFY=1 node build.mjs'
   symlink: 'mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -'
   test: 'echo "{{name}}: No tests configured. Perhaps you could write some?" && exit 0'
-  vbuild: 'VERBOSE=1 node build.mjs'
+  vbuild: &vbuild 'VERBOSE=1 node build.mjs'
   lab: 'cd ../../sites/lab && yarn start'
   tips: 'node ../../scripts/help.mjs'
   lint: "npx eslint 'src/**' 'tests/*.mjs'"
@@ -35,10 +36,12 @@ new-design:
   test: '!'
   testci: '!'
   vbuild: '!'
+  buildall: '!'
 rehype-highlight-lines:
   build: '!'
   mbuild: '!'
   vbuild: '!'
+  buildall: '!'
   lint: "npx eslint 'src/*.mjs'"
 rehype-jargon:
   lint: "npx eslint 'src/*.mjs'"
@@ -53,12 +56,12 @@ backend:
   clean: 'rimraf dist'
   dev: 'nodemon src/index.mjs'
   initdb: 'npx prisma db push'
-  mbuild: 'NO_MINIFY=1 node build.mjs'
+  mbuild: *mbuild
   newdb: 'node ./scripts/newdb.mjs'
   prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
   rmdb: 'node ./scripts/rmdb.mjs'
   test: 'npx mocha --require mocha-steps tests/index.mjs'
-  vbuild: 'VERBOSE=1 node build.mjs'
+  vbuild: *vbuild
   prebuild: 'node scripts/prebuild.mjs'
 
 dev:
@@ -69,7 +72,7 @@ dev:
   develop: *nextDev
   i18n: "SITE=dev node ../shared/prebuild/i18n-only.mjs"
   lint: &nextLint 'next lint'
-  buildsitedeps: &buildsitedeps 'cd ../../ && yarn buildall && cd -'
+  buildsitedeps: &buildsitedeps 'npx lerna run buildall'
   prebuild: 'yarn buildsitedeps && node --experimental-json-modules ./prebuild.mjs'
   prebuildonly: 'node --experimental-json-modules ./prebuild.mjs'
   predev: 'node --experimental-json-modules ./prebuild.mjs'
