@@ -3,7 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { pages as posts } from 'site/prebuild/showcase.mjs'
 import { meta } from 'site/prebuild/showcase-meta.mjs'
 import { getPostIndexProps } from 'site/components/mdx/posts/utils.mjs'
-import { mergeNs } from 'shared/utils.mjs'
+import { nsMerge } from 'shared/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
@@ -12,7 +12,7 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Pagination } from 'shared/components/navigation/pagination.mjs'
 
 // Translation namespaces used on this page
-const namespaces = mergeNs('common', 'designs', pageNs)
+const namespaces = nsMerge('common', 'designs', pageNs)
 
 export const PreviewTile = ({ img, slug, title }) => (
   <Link href={`/${slug}`} className="text-center">
