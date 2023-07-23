@@ -18,6 +18,7 @@ export const SectionsMenu = ({ bOnly = false }) => {
   let i = 1
   const sharedClasses = 'p-0 rounded shadow hover:shadow-lg w-full text-neutral-900'
   for (const page of onlySections(siteNav)) {
+    console.log(page)
     if ((!bOnly && !page.h && !page.b) || (!page.h && bOnly && page.b)) {
       if (page.t !== 'spacer') {
         const item = (

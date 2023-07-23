@@ -1,4 +1,3 @@
-import allLanguages from '../../../config/languages.json' assert { type: 'json' }
 import { freeSewingConfig as conf } from '../config/freesewing.config.mjs'
 import { designs, tags } from '../config/designs.mjs'
 import { loadTranslations } from './shared.mjs'

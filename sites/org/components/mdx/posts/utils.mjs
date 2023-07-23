@@ -1,4 +1,3 @@
-import { localePath } from 'shared/utils.mjs'
 import { siteConfig as config } from 'site/site.config.mjs'
 
 /**

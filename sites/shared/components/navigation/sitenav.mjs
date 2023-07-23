@@ -22,7 +22,7 @@ export const ns = ['sections']
  *
  * @params tree {object} - A navigation object as returned by useNavigation => siteNav
  */
-const onlyValidChildren = (tree, slug) =>
+const onlyValidChildren = (tree) =>
   orderBy(tree, ['o', 't'], ['asc', 'asc']).filter(
     (entry) => typeof entry === 'object' && entry.t !== 'spacer' && !entry.m && !entry._ && !entry.h
   )
@@ -80,7 +80,7 @@ const Section = ({
   slug, // Slug of the current page (used to make links active)
 }) => (
   <ul className="ml-4">
-    {onlyValidChildren(tree, slug).map((page, i) => (
+    {onlyValidChildren(tree).map((page, i) => (
       <li key={i}>
         {slug === page.s ? (
           <>
@@ -227,7 +227,7 @@ export const NavLinks = () => {
 
   return (
     <ul className="w-full list mb-8 mt-3">
-      {onlyValidChildren(subtree, slug).map((page, i) => (
+      {onlyValidChildren(subtree).map((page, i) => (
         <li key={i} className="w-full">
           <MainLink s={page.s} t={page.t} slug={slug} />
           {(siteConfig.tld === 'org' ? isSlugPart(page.s, slug) : true) &&

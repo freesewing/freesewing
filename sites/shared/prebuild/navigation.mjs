@@ -1,4 +1,3 @@
-import allLanguages from '../../../config/languages.json' assert { type: 'json' }
 import path from 'path'
 import fs from 'fs'
 import set from 'lodash.set'

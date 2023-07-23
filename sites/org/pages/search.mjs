@@ -5,7 +5,6 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Search } from 'site/components/search.mjs'
 import { Popout } from 'shared/components/popout.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
-import { BaseLayoutProse, BaseLayoutRight } from 'shared/components/base-layout.mjs'
 
 const namespaces = [...pageNs]
 
