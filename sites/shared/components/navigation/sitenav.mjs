@@ -224,7 +224,7 @@ export const NavLinks = () => {
  */
 export const MainSections = () => {
   // Grab siteNav and slug from the navigation context
-  const { siteNav, slug } = useContext(NavigationContext)
+  const { siteNav, slug, locale } = useContext(NavigationContext)
   const output = []
   for (const page of onlyMainSections(siteNav)) {
     const act = isSlugPart(page.s, slug)
@@ -265,5 +265,13 @@ export const MainSections = () => {
     output.push(item)
   }
 
-  return <ul>{output}</ul>
+  return (
+    <ul>
+      <li>
+        {locale}
+        <pre>{JSON.stringify(siteNav.docs, null, 2)}</pre>
+      </li>
+      {output}
+    </ul>
+  )
 }
