@@ -265,13 +265,5 @@ export const MainSections = () => {
     output.push(item)
   }
 
-  return (
-    <ul>
-      <li>
-        {locale}
-        <pre>{JSON.stringify(siteNav.docs, null, 2)}</pre>
-      </li>
-      {output}
-    </ul>
-  )
+  return <ul>{output}</ul>
 }
