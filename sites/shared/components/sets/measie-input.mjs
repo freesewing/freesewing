@@ -168,7 +168,7 @@ export const MeasieInput = ({
               >
                 <Mval
                   imperial={true}
-                  val={val * 25.4}
+                  val={val * (isDegree ? 1 : 25.4)}
                   m={m}
                   className="text-base-content bg-transparent text-success text-xs font-bold p-0"
                 />

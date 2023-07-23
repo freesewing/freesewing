@@ -216,7 +216,7 @@ export const SliderInput = ({
           <EditCount
             {...{
               current: displayVal,
-              handleChange: (evt) => debouncedHandleChange(evt.target.value),
+              handleChange: (evt) => debouncedHandleChange(Number(evt.target.value)),
               min,
               max,
               t,
@@ -243,7 +243,7 @@ export const SliderInput = ({
       <input
         type="range"
         {...{ min, max, value: displayVal, step: config.step || 0.1 }}
-        onChange={(evt) => debouncedHandleChange(evt.target.value)}
+        onChange={(evt) => debouncedHandleChange(Number(evt.target.value))}
         className={`
           range range-sm mt-1
           ${changed ? 'range-accent' : 'range-secondary'}
