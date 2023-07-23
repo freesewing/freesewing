@@ -3,22 +3,30 @@ commit_message: "skip-build"
 pull_request_assignees:
   - joostdecock
 files:
+  # Markdown
   - source: /markdown/org/**/en.md
     translation: /markdown/org/**/%two_letters_code%.md
+  # YAML
   - source: /sites/org/pages/*/*.en.yaml
     translation: /sites/org/pages/*/%file_name%.%two_letters_code%.yaml
+    translation_replace: &noen
+      ".en": ""
   - source: /sites/org/pages/**/*.en.yaml
     translation: /sites/org/pages/**/%file_name%.%two_letters_code%.yaml
-  - source: /sites/org/components/*/*.en.yaml
-    translation: /sites/org/components/*/%file_name%.%two_letters_code%.yaml
+    translation_replace: *noen
   - source: /sites/org/components/**/*.en.yaml
     translation: /sites/org/components/**/%file_name%.%two_letters_code%.yaml
+    translation_replace: *noen
   - source: /sites/shared/components/**/*.en.yaml
     translation: /sites/shared/components/**/%file_name%.%two_letters_code%.yaml
+    translation_replace: *noen
   - source: /sites/shared/i18n/*.en.yaml
     translation: /sites/shared/i18n/%file_name%.%two_letters_code%.yaml
+    translation_replace: *noen
   - source: /sites/backend/src/**/*.en.yaml
     translation: /sites/backend/src/**/%file_name%.%two_letters_code%.yaml
+    translation_replace: *noen
+  # JSON
   - source: /sites/shared/jargon/en.json
     translation: /sites/shared/jargon/%two_letters_code%.json
   - source: /designs/*/i18n/en.json
