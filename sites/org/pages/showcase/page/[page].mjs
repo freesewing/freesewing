@@ -2,7 +2,8 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { pages as posts } from 'site/prebuild/showcase.mjs'
 import { meta } from 'site/prebuild/showcase-meta.mjs'
-import { getPostIndexPaths, getPostIndexProps } from 'site/components/mdx/posts/utils.mjs'
+import { getPostIndexProps } from 'site/components/mdx/posts/utils.mjs'
+import { mergeNs } from 'shared/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
@@ -11,7 +12,7 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Pagination } from 'shared/components/navigation/pagination.mjs'
 
 // Translation namespaces used on this page
-const namespaces = [...new Set(['common', 'designs', ...pageNs])]
+const namespaces = mergeNs('common', 'designs', pageNs)
 
 export const PreviewTile = ({ img, slug, title }) => (
   <Link href={`/${slug}`} className="text-center">
@@ -27,28 +28,9 @@ export const PreviewTile = ({ img, slug, title }) => (
   </Link>
 )
 
-// const DesignPosts = ({ design, posts }) => {
-//   const { t } = useTranslation(['patterns'])
-//   return (
-//     <div className='py-2'>
-//       <h2>
-//         <Link href={`/showcase/designs/${design}`}>
-//           <a className="hover:text-secondary-focus hover:underline">{t(`${design}.t`)}</a>
-//         </Link>
-//       </h2>
-
-//     </div>
-//   )
-// }
-
 const Posts = ({ posts }) => {
   const previews = []
   posts.forEach((post) => {
-    // for (const design of post.designs) {
-    //   if (typeof designs[design] === 'undefined') designs[design] = []
-    //   designs[design].push(post)
-    // }
-
     previews.push(<PreviewTile img={post.i} slug={post.s} title={post.t} key={post.s} />)
   })
 
@@ -92,7 +74,7 @@ export default ShowcaseIndexPage
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticProps({ locale, params }) {
-  const props = getPostIndexProps(params.page, posts[locale], meta)
+  const props = getPostIndexProps(params.page, posts, meta)
 
   // if there shouldn't be a page with these params, return 404
   if (props === false) return { notFound: true }
@@ -125,9 +107,7 @@ export async function getStaticProps({ locale, params }) {
  *
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
-export const getStaticPaths = async () => {
-  return {
-    paths: getPostIndexPaths(posts, 'showcase'),
-    fallback: 'blocking',
-  }
-}
+export const getStaticPaths = async () => ({
+  paths: ['/showcase/page/1', '/showcase/page/2'],
+  fallback: 'blocking',
+})

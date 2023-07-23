@@ -2,7 +2,7 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { pages as posts } from 'site/prebuild/blog.mjs'
 import { meta } from 'site/prebuild/blog-meta.mjs'
-import { getPostIndexPaths, getPostIndexProps } from 'site/components/mdx/posts/utils.mjs'
+import { getPostIndexProps } from 'site/components/mdx/posts/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
@@ -103,7 +103,7 @@ export default BlogIndexPage
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticProps({ locale, params }) {
-  const props = getPostIndexProps(params.page, posts[locale], meta)
+  const props = getPostIndexProps(params.page, posts, meta)
 
   // if there shouldn't be a page with these params, return 404
   if (props === false) return { notFound: true }
@@ -115,7 +115,7 @@ export async function getStaticProps({ locale, params }) {
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
         locale,
-        path: ['showcase'],
+        path: ['blog'],
       },
     },
   }
@@ -136,9 +136,7 @@ export async function getStaticProps({ locale, params }) {
  *
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
-export const getStaticPaths = async () => {
-  return {
-    paths: getPostIndexPaths(posts, 'blog'),
-    fallback: 'blocking',
-  }
-}
+export const getStaticPaths = async () => ({
+  paths: ['/blog/page/1', '/blog/page/2'],
+  fallback: 'blocking',
+})

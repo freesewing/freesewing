@@ -47,7 +47,7 @@ export async function getStaticProps({ params, locale }) {
   const { dir } = params
 
   // if the dir isn't present in the prebuilt posts, return 404
-  if (!Object.keys(posts[locale]).includes(`blog/${dir}`)) return { notFound: true }
+  if (!Object.keys(posts).includes(`blog/${dir}`)) return { notFound: true }
 
   return {
     props: {
