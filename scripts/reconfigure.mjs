@@ -7,8 +7,6 @@ import mustache from 'mustache'
 import conf from '../lerna.json' assert { type: 'json' }
 const { version } = conf
 import { software, publishedTypes as types, designs, plugins } from '../config/software/index.mjs'
-// import { buildOrder } from '../config/build-order.mjs'
-import rootPackageJson from '../package.json' assert { type: 'json' }
 import { capitalize } from '../packages/core/src/index.mjs'
 
 // Working directory
