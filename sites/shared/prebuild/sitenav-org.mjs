@@ -25,7 +25,7 @@ export const extendSiteNav = async (siteNav, lang) => {
   })
 
   const resources = {}
-  resources[lang] = translations[lang]
+  resources[lang] = translations
   i18next.init({
     lng: lang,
     resources,
@@ -166,6 +166,13 @@ export const extendSiteNav = async (siteNav, lang) => {
       t: t('translation:suggestLanguage'),
       s: 'translation',
     },
+  }
+
+  // Add search
+  siteNav.search = {
+    s: 'search',
+    h: 1,
+    t: t('search'),
   }
 
   // Add sitemap
