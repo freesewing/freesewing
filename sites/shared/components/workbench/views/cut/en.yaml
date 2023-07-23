@@ -1,0 +1,26 @@
+canvas: Canvas
+cut: Cut
+cuttingLayout: Suggested Cutting Layout
+fabric: Main Fabric
+materialSize: "{length} of {width} wide material"
+heavyCanvas: Heavy Canvas
+interfacing: Interfacing
+lining: Lining
+lmhCanvas: Light to Medium Hair Canvas
+mirrored: mirrored
+onFoldLower: on the fold
+onFoldAndBias: folded on the bias
+onBias: on the bias
+plastic: Plastic
+ribbing: Ribbing
+edgeOfFabric: Edge of Fabric
+sheetWidth.t: Material Width
+sheetWidth.d: How wide is the material?
+grainDirection.t: Grain Direction
+grainDirection.d: What direction does the grain run on the material?
+horizontal.t: Horizontal
+horizontal.d: Grain runs left to right
+vertical.t: Vertical
+vertical.d: Grain runs top to bottom
+cutSettings: Material Settings
+cutSettings.d: These settings allow you to specify properties of the material to aid in making a cutting layout
