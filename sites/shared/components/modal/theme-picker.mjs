@@ -22,8 +22,8 @@ export const ModalThemePicker = ({ app, iconOnly = false, bottom = false }) => {
               className="btn btn-lg grow bg-base-100 border border-base-200 border-solid text-base-content hover:bg-primary hover:text-primary-content hover:border-primary shadow hover:shadow-lg"
             >
               {t(`${theme}Theme`)}
-              <span className="hidden lg:grow"></span>
-              <div className="flex flex-shrink-0 flex-wrap gap-1 items-center hidden lg:block">
+              <span className="hidden lg:block lg:grow"></span>
+              <div className="flex flex-shrink-0 flex-wrap gap-1 items-center hidden lg:flex">
                 {['primary', 'secondary', 'accent', 'neutral'].map((color) => (
                   <div key={color} className={`bg-${color} w-8 h-8 rounded-full border-2 `}></div>
                 ))}
