@@ -58,10 +58,10 @@ const getI18nFileList = async (site, languages) => {
     }
   }
 
-  const keep = languages.map((loc) => `.${loc}.yaml`)
+  const keep = languages.map((loc) => `${loc}.yaml`)
 
   // Filter out the language files
-  return allFiles.filter((file) => keep.includes(file.slice(-8))).sort()
+  return allFiles.filter((file) => keep.includes(file.slice(-7))).sort()
 }
 
 /*
@@ -71,12 +71,10 @@ const getI18nFileList = async (site, languages) => {
  *
  * - filename: The filename or full path + filename
  */
-const languageAndNamespaceFromFilename = (file) => {
-  const chunks = path.basename(file).split('.')
-  chunks.pop()
-
-  return chunks
-}
+const languageAndNamespaceFromFilename = (file) => [
+  path.basename(file).split('.')[0],
+  path.dirname(file).split('/').pop(),
+]
 
 /*
  * Helper method to load a YAML file from disk
@@ -104,7 +102,7 @@ const filesAsNamespaces = (files) => {
   // First build the object
   const translations = {}
   for (const file of files) {
-    const [namespace, lang] = languageAndNamespaceFromFilename(file)
+    const [lang, namespace] = languageAndNamespaceFromFilename(file)
     if (typeof translations[namespace] === 'undefined') {
       translations[namespace] = {}
     }
@@ -125,7 +123,6 @@ const fixData = (rawData, languages) => {
   const data = {}
   for (const [namespace, nsdata] of Object.entries(rawData)) {
     if (typeof nsdata.en === 'undefined') {
-      console.log({ namespace, nsdata })
       throw `No English data for namespace ${namespace}. Bailing out`
     }
     data[namespace] = { en: nsdata.en }
