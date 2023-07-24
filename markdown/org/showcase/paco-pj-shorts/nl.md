@@ -9,9 +9,9 @@ designs:
   - "paco"
 ---
 
-Net als de Paco showcase van
+Net als de Paco showcase</a>van
 
-comixminx, heeft Duck zijn Paco PJ shorts aangepast door er een juk aan toe te voegen. Ze meldden: "De pasvorm is nu zoveel beter, ze voelen niet te strak aan in het kruis en hebben niet het gevoel dat ze steeds van mijn kont af zullen glijden." 
+comixminx, heeft Duck zijn Paco PJ shorts aangepast door er een juk aan toe te voegen. Ze meldden: "De pasvorm is nu zoveel beter, ze voelen niet te strak aan in het kruis en hebben niet het gevoel dat ze steeds van mijn kont af zullen glijden."</p> 
 
 ![Achteraanzicht](https://posts.freesewing.org/uploads/paco_yoke3_e3ecae76d2.jpg)
 
