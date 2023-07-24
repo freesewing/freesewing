@@ -17,9 +17,9 @@ module.exports = {
   'secondary-focus': colors.sky['600'],
   'secondary-content': colors.sky['50'],
 
-  accent: colors.fuchsia['700'],
-  'accent-focus': colors.fuchsia['600'],
-  'accent-content': colors.fuchsia['50'],
+  accent: colors.orange['700'],
+  'accent-focus': colors.orange['600'],
+  'accent-content': colors.orange['50'],
 
   neutral: '#000000', // Dark as my soul
   'neutral-focus': colors.neutral['800'],
