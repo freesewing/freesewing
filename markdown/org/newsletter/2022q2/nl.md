@@ -30,7 +30,7 @@ Nu, na een ongekende regeerperiode, heeft onze koningin besloten afstand te doen
 
 Dit is het deel waar jij binnenkomt.
 
-Heb je wel eens een patroon van FreeSewing gebruikt om iets te maken dat je niet kunt wachten om met mensen te delen? Waar je trots op bent? Dat er fantastisch uitziet, past of voelt?  Als dat zo is, zouden we *heel erg leuk vinden als je het zou willen toevoegen aan de FreeSewing Showcase! Maak je geen zorgen, het technische gedeelte [is eenvoudig](https://freesewing.dev/howtos/editors/showcase), en er zijn heel veel mensen in de FreeSewing gemeenschap die kunnen helpen als dat een beetje ontmoedigend is. 
+Heb je wel eens een patroon van FreeSewing gebruikt om iets te maken dat je niet kunt wachten om met mensen te delen? Waar je trots op bent? Dat er fantastisch uitziet, past of voelt? </em> Als dat zo is, zouden we *heel erg leuk vinden als je het zou willen toevoegen aan de FreeSewing Showcase! Maak je geen zorgen, het technische gedeelte [is eenvoudig](https://freesewing.dev/howtos/editors/showcase), en er zijn heel veel mensen in de FreeSewing gemeenschap die kunnen helpen als dat een beetje ontmoedigend is. </p>
 
 Maar er is één ding waar we je niet mee kunnen helpen en dat is het maken van geweldige en nuttige afbeeldingen voor je Showcase.
 
