@@ -32,7 +32,7 @@ Le [FreeSewing contributor call of 20 august 2022](https://github.com/freesewing
 
 Dans les mois qui ont précédé ce moment, nous avions déjà fait de grands progrès en essayant de mettre en œuvre beaucoup de choses sur [notre feuille de route](https://github.com/freesewing/freesewing/discussions/1278), et cela me fait bizarre quelque part que seulement quatre mois se soient écoulés depuis quand je pense à tout le travail qui a été fait sur la v3.
 
-Du côté des développeurs, nous avons déjà complètement basculé.  FreeSewing.dev contient notre documentation pour les développeurs de la v3, tandis que la documentation de la v2 de _est reléguée à v2.freesewing.dev.
+Du côté des développeurs, nous avons déjà complètement basculé. </em> FreeSewing.dev contient notre documentation pour les développeurs de la v3, tandis que la documentation de la v2 de _est reléguée à v2.freesewing.dev.</p>
 
 Notre environnement de développement pour la v3 est également prêt - exécute `npx @freesewing/new-design@next` pour l'essayer toi-même - et nous avons également réécrit notre backend pour prendre en charge nos projets futurs, comme relier notre environnement de développement au backend pour que les designers puissent utiliser les données de mesures qu'ils ont stockées dans leur compte FreeSewing pour tester leurs designs.
 
