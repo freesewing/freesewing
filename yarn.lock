@@ -6556,10 +6556,10 @@ dagre-d3-es@7.0.10:
     d3 "^7.8.2"
     lodash-es "^4.17.21"
 
-daisyui@3.2.1:
-  version "3.2.1"
-  resolved "https://registry.npmjs.org/daisyui/-/daisyui-3.2.1.tgz"
-  integrity sha512-gIqE6wiqoJt9G8+n3R/SwLeUnpNCE2eDhT73rP0yZYVaM7o6zVcakBH3aEW5RGpx3UkonPiLuvcgxRcb2lE8TA==
+daisyui@3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.4.0.tgz#c178c1985f0692988cda0eb40bdef42395e580ac"
+  integrity sha512-s9EvNxnw/ubCIopKul+3ddASzZG+jMOmZgLJ0BFOVnxFQy6HJ5+EbMx5yY7Ef0cA6qjeUMl88SwhE94WLSLtHQ==
   dependencies:
     colord "^2.9"
     css-selector-tokenizer "^0.8"
