@@ -143,13 +143,13 @@ Eens te meer zijn er twee methodes voor de definitieve vergadering en de aanslui
 - Herhaal dit voor het resterende vizier aan de andere kant van de middelste kroonnaad.
 - Verwijder alle opvul- en rijgsteken.
 - Pers de naadtoeslagen naar binnen en zorg dat het stiksel niet zichtbaar is aan de buitenkant.
--  (Optioneel) Naai de naden losjes met de zweep op _aan de binnenkant van de kroon en zorg ervoor dat het stiksel niet zichtbaar is aan de buitenkant.
+- </em> (Optioneel) Naai de naden losjes met de zweep op _aan de binnenkant van de kroon en zorg ervoor dat het stiksel niet zichtbaar is aan de buitenkant.</li>
 - Construeer de voering op dezelfde manier als de kroon door _edgestikt_weg te laten.
 - Vouw en pers onder de onderste naadtoeslag van de voering. Je vindt dat je onder meer moet indrukken om te voorkomen dat de voering wordt weergegeven. Het kan ook zijn dat je _moet rijgen_ de naadtoeslag naar beneden.
 - Speld de voering op de hoed met de verkeerde kanten op elkaar, zodat de middelste kroonnaden en paneelnaden op elkaar aansluiten. Plaats de gevouwen rand langs de stiklijnen.
 - _Naai met een schuifsteek_ of met een _zweepsteek_ de voering vast aan de naadtoeslag van de muts.
 - Verwijder de rijgvoering indien gebruikt.
-- (Optioneel) _Tack_ de piek van de voering aan de piek van de kroon. Dit om te voorkomen dat de voering uitvalt.
+- (Optioneel) _Tack_ de piek van de voering aan de piek van de kroon. Dit om te voorkomen dat de voering uitvalt.</ul>
 
 #### Montage- en inspraakmethode 2
 
