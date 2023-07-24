@@ -33,9 +33,9 @@ Si tu souhaites t'impliquer, [viens me dire bonjour](https://chat.freesewing.org
 
 ### Pages de couverture pour les patrons
 
-C'est quelque chose qui m'enthousiasme
+</a>C'est quelque chose qui m'enthousiasme
 
-: mais j'ai fait [quelques changements](https://github.com/freesewing/tile/commit/9d2b11e7a9f0d08b890a04eced989f0b432d2c53) à [freesewing tile](https://github.com/freesewing/tile) pour ajouter une page de couverture aux modèles. 
+: mais j'ai fait [quelques changements](https://github.com/freesewing/tile/commit/9d2b11e7a9f0d08b890a04eced989f0b432d2c53) à [freesewing tile](https://github.com/freesewing/tile) pour ajouter une page de couverture aux modèles.</p> 
 
 Le dépôt de tuiles contient un logiciel qui transforme ton motif en plusieurs pages que tu peux imprimer sur ton imprimante (c'est ce qu'on appelle le tuilage, d'où le nom).
 
