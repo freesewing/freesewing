@@ -16,7 +16,8 @@
   "scripts": {
     "dev": "sanity dev",
     "start": "sanity start",
-    "build": "sanity build -y"
+    "build": "sanity build -y",
+    "wbuild": "sanity build -y"
   },
   "peerDependencies": {},
   "dependencies": {

@@ -21,12 +21,14 @@
     "develop": "next dev -p 8000",
     "i18n": "SITE=dev node ../shared/prebuild/i18n-only.mjs",
     "lint": "next lint",
-    "buildsitedeps": "cd ../../ && yarn buildall && cd -",
+    "buildsitedeps": "npx lerna run build:sitedeps",
     "prebuild": "yarn buildsitedeps && node --experimental-json-modules ./prebuild.mjs",
     "prebuildonly": "node --experimental-json-modules ./prebuild.mjs",
     "predev": "node --experimental-json-modules ./prebuild.mjs",
     "serve": "pm2 start npm --name 'dev' -- run start",
-    "start": "yarn prebuild && yarn dev"
+    "start": "yarn prebuild && yarn dev",
+    "wbuild": "next build",
+    "prewbuild": "yarn buildsitedeps && node --experimental-json-modules ./prebuild.mjs"
   },
   "peerDependencies": {},
   "dependencies": {

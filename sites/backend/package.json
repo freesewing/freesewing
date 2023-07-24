@@ -24,7 +24,9 @@
     "rmdb": "node ./scripts/rmdb.mjs",
     "test": "npx mocha --require mocha-steps tests/index.mjs",
     "vbuild": "VERBOSE=1 node build.mjs",
-    "prebuild": "node scripts/prebuild.mjs"
+    "prebuild": "node scripts/prebuild.mjs",
+    "wbuild": "node build.mjs",
+    "prewbuild": "node scripts/prebuild.mjs"
   },
   "peerDependencies": {},
   "dependencies": {
