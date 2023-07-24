@@ -36,7 +36,7 @@ Ich habe zum ersten Mal von JAMstack erfahren, als ich anfing, mich mit dem Host
 
 Auf der Suche nach Alternativen stolperte ich über [Netlify](https://www.netlify.com/), die sowohl SSL- als auch kundenspezifische Domains betreiben und ein kostenloses Angebot für Open-Source-Projekte haben (danke Jungs). Außerdem hat mich dieses Video von Netlify CEO Mathias Biilmann
 
- sehr begeistert für JAMstack. 
+ sehr begeistert für JAMstack.</p> 
 
 Sofern Sie nicht mit JAMstack vertraut sind, schlage ich vor, dass Sie sich das Video ansehen, aber es läuft darauf hinaus:
 
