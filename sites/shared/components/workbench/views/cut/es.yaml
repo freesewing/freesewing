@@ -1,0 +1,26 @@
+canvas: Lona
+cut: Cortar
+cuttingLayout: Disposición de corte sugerida
+fabric: Tela principal
+materialSize: "{length} de {width} material ancho"
+heavyCanvas: Lona gruesa
+interfacing: Interfaz
+lining: Terminal
+lmhCanvas: Lienzo de pelo claro a medio
+mirrored: espejo
+onFoldLower: en el pliegue
+onFoldAndBias: doblado al bies
+onBias: sobre el sesgo
+plastic: Plástico
+ribbing: Tejido acanalado
+edgeOfFabric: Borde del tejido
+sheetWidth.t: Material Anchura
+sheetWidth.d: '¿Qué anchura tiene el material?'
+grainDirection.t: Dirección del grano
+grainDirection.d: '¿En qué dirección corre el grano del material?'
+horizontal.t: Horizontal
+horizontal.d: El grano corre de izquierda a derecha
+vertical.t: Vertical
+vertical.d: El grano va de arriba abajo
+cutSettings: Ajustes de material
+cutSettings.d: Estos ajustes te permiten especificar propiedades del material para ayudarte a realizar un trazado de corte

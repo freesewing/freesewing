@@ -1,35 +1,35 @@
 blog: Blog
-blogAbout: News and updates from the FreeSewing community
-showcase: Showcase
-showcaseAbout: Examples and inspiration from the FreeSewing community using our designs
+blogAbout: Nieuws en updates van de FreeSewing gemeenschap
+showcase: Voorbeelden
+showcaseAbout: Voorbeelden en inspiratie van de FreeSewing gemeenschap met onze ontwerpen
 docs: Documentatie
-docsAbout: In-depth documenation for all our designs, our website, and much more
-account: Your Account
-accountAbout: Manage your account settings and preferences, and your presonal data
+docsAbout: Diepgaande documentatie voor al onze ontwerpen, onze website en nog veel meer
+account: Jouw account
+accountAbout: Je accountinstellingen en -voorkeuren en je persoonlijke gegevens beheren
 designs: Designs
-designsAbout: Our library of designs that you can turn into made-to-measure patterns with a few clicks
-community: Community
-communityAbout: More information about the peope behind FreeSewing and where to fine like-minded makers
-apiAbout: Documentation for our core API library and our backend REST API.
-designAbout: Everything you need to know to start designing parametric sewing patterns.
-contributeAbout: Looking to contribute to FreeSewing? Right this way.
-i18nAbout: Documenation about how FreeSewing is translated into multiple languages.
-infraAbout: Documentation about FreeSewing's infrastructure and moving parts.
-aboutAbout: Not sure what this FreeSewing this is? Then start here.
-supportAbout: Support FreeSewing. Or learn where you can turn to for support.
-guidesAbout: Guides tell a story to further your understanding of a specific topic.
-tutorialsAbout: Tutorials are lessons that lead you through a series of steps to complete a project.
-howtosAbout: Howtos give you concrete steps to solve a common problem or challenge.
-referenceAbout: Reference holds technical descriptions of the underlying technology and how to make use of it.
-trainingAbout: Training materials are the most in-depth and strive to teach you a new skill.
-mainSections: Main sections
-currentSection: Current section
-sets: Your Measurements Sets
-patterns: Your Patterns
-curate: Curate
-curateSets: Curate Sets
+designsAbout: Onze bibliotheek met ontwerpen die je met een paar klikken kunt omtoveren tot patronen op maat
+community: Gemeenschap
+communityAbout: Meer informatie over de mensen achter FreeSewing en waar je gelijkgestemde makers kunt vinden
+apiAbout: Documentatie voor onze core API bibliotheek en onze backend REST API.
+designAbout: Alles wat je moet weten om te beginnen met het ontwerpen van parametrische naaipatronen.
+contributeAbout: Wil je bijdragen aan FreeSewing? Doe het op deze manier.
+i18nAbout: Documenten over hoe FreeSewing in meerdere talen wordt vertaald.
+infraAbout: Documentatie over de infrastructuur en bewegende delen van FreeSewing.
+aboutAbout: Weet je niet zeker wat dit FreeSewing is? Begin dan hier.
+supportAbout: Steun FreeSewing. Of lees waar je terecht kunt voor ondersteuning.
+guidesAbout: Gidsen vertellen een verhaal om een specifiek onderwerp beter te begrijpen.
+tutorialsAbout: Tutorials zijn lessen die je door een reeks stappen leiden om een project te voltooien.
+howtosAbout: Howtos geven je concrete stappen om een veelvoorkomend probleem of uitdaging op te lossen.
+referenceAbout: Referentie bevat technische beschrijvingen van de onderliggende technologie en hoe deze te gebruiken.
+trainingAbout: Trainingsmateriaal is het meest diepgaand en is erop gericht om je een nieuwe vaardigheid te leren.
+mainSections: Hoofddelen
+currentSection: Huidige sectie
+sets: Je metingen instellen
+patterns: Jouw patronen
+curate: samenstellen
+curateSets: Sets samenstellen
 code: Code
-patternsAbout: Lists the patterns that you have stored in your FreeSewing account
-setsAbout: Lists the measurements sets that you have stored in your FreeSewing account
-codeAbout: Here you can find (links to) the Freesewing source code
-new: New...
+patternsAbout: Toont de patronen die je hebt opgeslagen in je FreeSewing account
+setsAbout: Toont de meetsets die je hebt opgeslagen in je FreeSewing account
+codeAbout: Hier kun je (links naar) de broncode van Freesewing vinden
+new: Nieuw...

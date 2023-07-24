@@ -9,9 +9,9 @@ Pour fabriquer Téagan, vous aurez besoin des éléments suivants :
 
 <Note>
 
-##### Un serveur/overlock est sympa, mais facultatif
+##### Une surjeteuse serait un plus, mais reste en option
 
-Comme pour tous les vêtements en tricot et les étoffes étirées, un sergent/overlock vous facilitera la vie.
+Comme pour tous les mailles et tissus stretch, une surjeteuse vous facilitera la vie.
 Si vous n’en avez pas, ne désespérez pas. Vous n'en avez pas vraiment besoin. Toutes les coutures serrées du T-shirt Teagan peuvent également être cousues avec un point de zigzag étroit (~2 mm de largeur) sur une machine à coudre standard.
 
 </Note>
