@@ -1,4 +1,4 @@
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 import { Highlight } from './highlight.mjs'
 import { YouTube } from './youtube.mjs'
 //import { Figure } from './figure.mjs'

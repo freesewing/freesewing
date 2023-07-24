@@ -20,6 +20,7 @@
   "type": "module",
   "scripts": {
     "build": "node build.mjs",
+    "build:all": "yarn build",
     "clean": "rimraf dist",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "lab": "cd ../../sites/lab && yarn start",
@@ -27,11 +28,11 @@
     "lint": "npx eslint 'lib/*.mjs'",
     "i18n-only": "SITE=\"new-design/shared\" node ../../sites/shared/prebuild/i18n-only.mjs",
     "prebuild": "node ./prebuild.mjs",
-    "precibuild_step6": "node ./prebuild.mjs",
-    "prewbuild": "node ./prebuild.mjs",
-    "cibuild_step6": "node build.mjs",
     "wbuild": "node build.mjs",
-    "wcibuild_step6": "node build.mjs"
+    "prewbuild": "node ./prebuild.mjs",
+    "wbuild:all": "yarn wbuild",
+    "prebuild:all": "yarn prebuild",
+    "prewbuild:all": "yarn prewbuild"
   },
   "peerDependencies": {},
   "dependencies": {

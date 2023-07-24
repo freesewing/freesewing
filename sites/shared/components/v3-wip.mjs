@@ -1,4 +1,4 @@
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 
 export const V3Wip = () => (
   <Popout fixme>

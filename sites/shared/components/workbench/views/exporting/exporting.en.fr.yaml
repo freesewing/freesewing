@@ -1,6 +1,0 @@
-export: Exporter
-exportForPrinting: Exporter pour l'impression
-exportForEditing: Exporter pour édition
-exportAsData: Exporter en tant que données
-exportPattern-txt: Exporter au format PDF adapté à votre imprimante, ou télécharger ce modèle dans une variété de formats
-exportPattern: Exporter le patron

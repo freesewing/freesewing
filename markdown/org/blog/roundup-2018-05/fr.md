@@ -13,9 +13,9 @@ Voici ton récapitulatif mensuel de l'actualité freesewing des quatre dernière
 
 Et bien nous y voilà, la date limite du 25 mai pour les RPGP se réduit de plus en plus dans notre rétroviseur, et nous avons un nouveau site web.
 
-</a>Ces deux choses sont évidemment liées, mais tu le savais probablement déjà
+Ces deux choses sont évidemment liées, mais tu le savais probablement déjà
 
-.</p> 
+. 
 
 Le mois de mai a été incroyablement agité, avec beaucoup de stress auto-infligé parce que plutôt que de simplement mettre en œuvre les changements requis pour le GDPR, nous avons décidé de reconstruire tout le site. Cependant, comme les modifications du GDPR devaient être prêtes à temps, cela signifiait que l'ensemble du site devait être prêt. 
 

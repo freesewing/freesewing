@@ -9,5 +9,5 @@ designs:
   - "teagan"
 ---
 
-</a> Karen hat diese Version des Teagan-T-Shirts für eine hohe Oberweite entworfen. Das ist eine von mehreren Möglichkeiten, das Teagan-T-Shirt genau auf dich abzustimmen!</p>
+Karen hat diese Version des Teagan-T-Shirts für eine hohe Oberweite entworfen. Das ist eine von mehreren Möglichkeiten, das Teagan-T-Shirt genau auf dich abzustimmen!
 

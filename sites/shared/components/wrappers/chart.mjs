@@ -1,6 +1,6 @@
 import * as echarts from 'echarts'
 import ReactECharts from 'echarts-for-react'
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 
 echarts.registerTheme('light', {
   backgroundColor: 'transparent',

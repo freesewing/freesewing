@@ -1,4 +1,4 @@
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
 import { useTranslation } from 'next-i18next'
 import { RightIcon } from 'shared/components/icons.mjs'

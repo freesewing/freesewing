@@ -12,7 +12,7 @@ import { useTranslation } from 'next-i18next'
 // Components
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
 import { I18nIcon } from 'shared/components/icons.mjs'
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
 
 export const ns = ['translation', 'locales']
