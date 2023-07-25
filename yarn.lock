@@ -7208,7 +7208,7 @@ echarts-for-react@3.0.2:
 
 echarts@5.4.2:
   version "5.4.2"
-  resolved "https://registry.npmjs.org/echarts/-/echarts-5.4.2.tgz"
+  resolved "https://registry.yarnpkg.com/echarts/-/echarts-5.4.2.tgz#9f38781c9c6ae323e896956178f6956952c77a48"
   integrity sha512-2W3vw3oI2tWJdyAz+b8DuWS0nfXtSDqlDmqgin/lfzbkB01cuMEN66KWBlmur3YMp5nEDEEt5s23pllnAzB4EA==
   dependencies:
     tslib "2.3.0"
@@ -18308,7 +18308,7 @@ zod@3.21.4:
 
 zrender@5.4.3:
   version "5.4.3"
-  resolved "https://registry.npmjs.org/zrender/-/zrender-5.4.3.tgz"
+  resolved "https://registry.yarnpkg.com/zrender/-/zrender-5.4.3.tgz#41ffaf835f3a3210224abd9d6964b48ff01e79f5"
   integrity sha512-DRUM4ZLnoaT0PBVvGBDO9oWIDBKFdAVieNWxWwK0niYzJCMwGchRk21/hsE+RKkIveH3XHCyvXcJDkgLVvfizQ==
   dependencies:
     tslib "2.3.0"
