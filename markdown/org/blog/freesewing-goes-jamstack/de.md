@@ -34,9 +34,7 @@ Ich wollte den gleichen Ansatz in einer Website. Außer, dass sie nicht statisch
 
 Ich habe zum ersten Mal von JAMstack erfahren, als ich anfing, mich mit dem Hosting für diese zentrale Dokumentationsseite zu befassen. Es wurde ursprünglich auf GitHub-Seiten gehostet, die kostenloses Hosting anbieten. Sie haben auch SSL oder einen benutzerdefinierten Domänennamen, aber Sie können nicht beides haben. Was eine Art Deal-Breaker war.
 
-Auf der Suche nach Alternativen stolperte ich über [Netlify](https://www.netlify.com/), die sowohl SSL- als auch kundenspezifische Domains betreiben und ein kostenloses Angebot für Open-Source-Projekte haben (danke Jungs). Außerdem hat mich dieses Video von Netlify CEO Mathias Biilmann
-
- sehr begeistert für JAMstack.</p> 
+Auf der Suche nach Alternativen stolperte ich über [Netlify](https://www.netlify.com/), die sowohl SSL- als auch kundenspezifische Domains betreiben und ein kostenloses Angebot für Open-Source-Projekte haben (danke Jungs). Außerdem hat mich [dieses Video von Netlify CEO Mathias Biilmann](https://vimeo.com/163522126) sehr begeistert für JAMstack.
 
 Sofern Sie nicht mit JAMstack vertraut sind, schlage ich vor, dass Sie sich das Video ansehen, aber es läuft darauf hinaus:
 
@@ -48,33 +46,25 @@ Die Idee ist, dass Sie Ihre statische Website (Markup) erstellen, die Sie dann m
 
 Anstatt also in unserem Fall eine einfache Dokumentationsseite mit einfach zu bearbeitendem Markdown und einem komplexen CMS zur Handhabung des dymanischen Materials zu haben, lassen Sie uns einfach eine einfache Seite erstellen, die statisch generiert wird, aber JavaScript und APIs verwendet, um das interaktive Material bereitzustellen.
 
-
-
 ## Laufen, bevor Sie gehen können
 
 Ich muss zugeben, dass ich in meiner Begeisterung, diesen neuen Ansatz anzunehmen, ein wenig über mich selbst hinausgewachsen bin. Plötzlich baute ich keine einfache Website mehr, aber ich war bis zum Anschlag in isomorphem Rendering, client-seitigem Routing, React and Redux, Node.js und ES6 Transpiling verwickelt.
 
-
-
 > Wenn Sie nicht wissen, was das alles bedeutet, werden Sie vielleicht einen Eindruck von der Frustration bekommen, die ich empfand, als ich versuchte, all diese neuen Bestien zu zähmen.
 > 
-> Wenn Sie wissen, was das alles bedeutet, wo waren Sie dann im April, als ich durch das Tal des Todes ging? 
+> Wenn Sie wissen, was das alles bedeutet, wo waren Sie dann im April, als ich durch das Tal des Todes ging?
 
 Der Punkt ist, ich bin kein Entwickler und ich war weit über meinem Level. Während ich jeden Tag neue Dinge lernte, machte ich bei der eigentlichen Aufgabe nicht viel Fortschritte und war frustriert über meine Unfähigkeit, selbst die alltäglichsten Dinge zu tun.
 
-Nach einem Monat der Frustration, vielen Versuchen und scheinbar noch mehr Fehlern warf ich das Handtuch. Ich lass diesen neumodischen Kram namens JavaScript, den alle Kiddies heutzutage nutzen, und bleibe bei dem, was ich kenne. 
+Nach einem Monat der Frustration, vielen Versuchen und scheinbar noch mehr Fehlern warf ich das Handtuch. Ich lass diesen neumodischen Kram namens JavaScript, den alle Kiddies heutzutage nutzen, und bleibe bei dem, was ich kenne.
 
 Was im Wesentlichen die Grundlagen von jQuery ist. Mit anderen Worten, Sachen, die vor 10 Jahren ziemlich cool waren.
-
-
 
 ## 10 Jahre alte Marmelade ist immer noch Marmelade, oder?
 
 Hier sind wir also, freesewing.org ist eine Seite, die vom JAMstack betrieben wird. Und wissen Sie was, es scheint zu tun, was es tun soll.
 
 Wir lassen Jekyll eine statische Website erstellen, und wenn wir etwas in unserem Masterbranch pushen, wird es automatisch auf Netlify bereitgestellt.
-
-
 
 > Effektiv dieses neumodisch glänzende JavaScript, das alle kleinen Kiddies benutzen
 
@@ -83,8 +73,6 @@ Wir haben [eine brandneue Daten-API](https://github.com/freesewing/data), die au
 Es spricht auch für uns, und jedes Mal, wenn Sie ein Muster entwerfen, geben wir Ihnen nicht nur das Muster, sondern führen auch einen Vergleich Ihres Musters mit einer Reihe von Standardgrößen durch, was irgendwie cool ist.
 
 Und wir haben noch andere coole Dinge, wie die Möglichkeit, einen bestehenden Entwurf zu duplizieren oder neu zu entwerfen.
-
-
 
 ## Das ist ein Ausgangspunkt
 
