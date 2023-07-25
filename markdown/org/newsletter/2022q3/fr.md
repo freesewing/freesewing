@@ -99,159 +99,108 @@ Nous voulions prendre un moment pour mettre en lumière certains des grands proj
 Si tu souhaites adapter un modèle FreeSewing pour un jeune, voici quelques éléments à prendre en compte :
 
 - **Fais des vêtements d'essai !** Faire une mousseline est une bonne habitude en général, et c'est particulièrement important quand on coud pour des personnes dont les mensurations n'ont peut-être pas encore été testées avec un modèle FreeSewing, car leurs proportions ne fonctionneront pas forcément bien du premier coup. `comixminx` est la championne incontestée des culottes de couture Shin, ayant cousu plusieurs paires d'essai en vue de fabriquer des paires portables pour chacun de [ses](https://freesewing.org/showcase/shin-swim-trunks-for-comixminxs-kid/) [enfants](https://freesewing.org/showcase/more-shin-swim-shorts/).
-- **Envisage d'essayer un bloc.**</a> Comme le montre l'adorable manteau de corvée
-
-de `Bob3000`pour son enfant, basé sur le bloc Brian, la forme de base d'un bloc peut être un bon point de départ auquel tu peux ajouter des éléments de design.</li> 
-  
-  - **Utilise beaucoup de facilité lorsque tu dessines pour les tout-petits.** `mathstitch` a fini par dessiner sa propre chemise à col et elle s'est avérée plutôt merveilleuse. Ils ont partagé quelques conseils pour tous ceux qui essaieraient d'adapter un dessin existant à l'avenir ! Ils suggèrent d'ajouter des tas de facilité parce que les tout-petits sont si actifs et si peu coordonnés, qu'ils ont tendance à adopter des postures inhabituelles tout le temps, comme s'accroupir et ramper, et que certains ont de gros ventres et beaucoup de graisse de chiot. 🐶 Un bonnet à manches courtes est approprié. Si ton enfant porte encore des couches, la chemise doit s'évaser au niveau des hanches pour s'y adapter, et tu devras t'assurer que les boutons se terminent suffisamment loin du bas de la chemise.
+- **Envisage d'essayer un bloc.** Comme le montre [l'adorable manteau de corvée](https://freesewing.org/showcase/bob3000-chore-coat/) de `Bob3000`pour son enfant, basé sur le bloc Brian, la forme de base d'un bloc peut être un bon point de départ auquel tu peux ajouter des éléments de design.
+- **Utilise beaucoup de facilité lorsque tu dessines pour les tout-petits.** `mathstitch` a fini par dessiner sa propre chemise à col et elle s'est avérée plutôt merveilleuse. Ils ont partagé quelques conseils pour tous ceux qui essaieraient d'adapter un dessin existant à l'avenir ! Ils suggèrent d'ajouter des tas de facilité parce que les tout-petits sont si actifs et si peu coordonnés, qu'ils ont tendance à adopter des postures inhabituelles tout le temps, comme s'accroupir et ramper, et que certains ont de gros ventres et beaucoup de graisse de chiot. 🐶 Un bonnet à manches courtes est approprié. Si ton enfant porte encore des couches, la chemise doit s'évaser au niveau des hanches pour s'y adapter, et tu devras t'assurer que les boutons se terminent suffisamment loin du bas de la chemise.
 - **Ajoute des éléments réglables pour que les vêtements tiennent plus longtemps.** `Rowan` a confectionné un minuscule tablier [Albert](https://freesewing.org/showcase/a-tiny-albert-apron/) pour l'anniversaire de leur enfant et a ajouté des éléments ajustables aux bretelles. Excellente idée pour maximiser le nombre d'utilisations qu'ils peuvent faire de cet accessoire très mignon.
-- **Couds vite.** `AMJ` rapporte avoir vu des enfants changer de taille entre l'essayage et la couture. 😀</ul> 
+- **Couds vite.** `AMJ` rapporte avoir vu des enfants changer de taille entre l'essayage et la couture. 😀
 
 Si tu essaies l'un de nos modèles avec ton enfant, nous espérons que tu viendras en discuter sur [Discord](https://discord.freesewing.org/).
 
 &nbsp;
 
-
-
 ---
 
 &nbsp;
 
-
-
 ## 👨‍💻 FreeSewing *afk*
 
-FreeSewing va à l'extérieur ! FreeSewing fera partie du camp [May Contain Hackers](https://mch2022.org/) sous la forme d'une courte présentation par Lexander. Note ton calendrier pour le 24 juillet, 09:40 PM CEST ; il peut être suivi avec un livestream. 
+FreeSewing va à l'extérieur ! FreeSewing fera partie du camp [May Contain Hackers](https://mch2022.org/) sous la forme d'une courte présentation par Lexander. Note ton calendrier pour le 24 juillet, 09:40 PM CEST ; il peut être suivi avec un livestream.
 
 Lexander décrira ce qu'est FreeSewing, les motivations de Joost (et d'autres bénévoles) derrière ce projet, un peu de technique, et pourquoi c'est important pour la mode et les vêtements dans leur ensemble. Tu trouveras plus d'informations dans la description complète [sur le site de l'événement](https://program.mch2022.org/mch2021-2020/talk/M9JWKM/).
 
 &nbsp;
 
-
-
 ---
 
 &nbsp;
 
-
-
 ## 🕵️ Derrière les coutures : Starfetcher
-
-
 
 ### Comment as-tu découvert FreeSewing ?
 
 Je ne me souviens plus très bien, mais je pense que je cherchais des patrons de couture un jour et que j'ai eu la glorieuse intuition d'utiliser "patron de couture open source" comme mot clé. Le moteur de recherche a fait son travail.
 
-
-
 ### Comment es-tu devenu contributeur ?
 
 En lisant la doc des développeurs, j'ai trouvé quelques fautes de frappe et j'ai décidé de les corriger, en commençant les traductions j'en ai trouvé d'autres, et soudain j'étais un contributeur. Rejoindre les appels des contributeurs était la prochaine étape logique, et je n'ai pas regardé en arrière depuis.
-
-
 
 ### Quel a été ton travail de collaborateur jusqu'à présent ?
 
 En plus de réparer les fautes de frappe et les liens cassés, je fais sporadiquement quelques travaux de traduction et j'ai codé trois modèles inspirés de l'histoire : Lunetius, Tiberius et Walburga.
 
-
-
 ### Es-tu une couturière ? Un codeur ? Les deux ? Ni l'un ni l'autre ?
 
 Les deux, et cela dépend de mon humeur ce que j'aime le plus faire.
-
-
 
 ### Quand et pourquoi as-tu commencé à coudre ?
 
 Enfant, ma mère m'a appris les bases, mais ce n'est qu'à la fin de mon adolescence que j'ai commencé à prendre la chose au sérieux, lorsque j'ai décidé de coudre mon propre costume pour ma fête d'anniversaire (mes fêtes d'anniversaire étaient et sont toujours des fêtes costumées). J'ai fait beaucoup d'erreurs (comme finir les bords avant de coudre les pièces ensemble), mais j'étais (et je suis toujours) incroyablement fière de ce projet. Ensuite, j'ai de nouveau fait une pause dans la couture, mais je l'ai redécouverte au milieu de la préadolescence lorsque je me suis remise au cosplay.
 
-
-
 ### Quel est ton travail quotidien, en dehors de FreeSewing ?
 
 En ce moment, je fais mon doctorat en physique expérimentale, donc j'ai un bon mélange de travail pratique à la machine et de beaucoup de jurons à l'ordinateur à 23 heures.
-
-
 
 ### Sur quoi travailles-tu en ce moment ?
 
 Actuellement, je travaille à la fabrication d'une armure en mousse pour compléter les parties en tissu de mon costume (composé de Lunetius, Tibère et Walburga, bien sûr). C'est une nouvelle technique pour moi, alors c'est très amusant de jouer avec.
 
-
-
 ### Quel projet viens-tu de terminer ?
 
 Je viens de terminer de coder et de coudre Pythie la paenula, mon prochain patron FreeSewing pour un autre type de cape d'inspiration historique. Maintenant, je remets à plus tard la chasse aux derniers insectes.
-
-
 
 ### De quel projet de couture/codage es-tu le plus fier ?
 
 Côté couture, je suis toujours très fière du premier costume que j'ai cousu toute seule, mais le plus délicat jusqu'à présent est le Sailor Fuku que j'ai réalisé il y a quelques années. Oh, et la chemise victorienne avec beaucoup de plis sur le devant, où j'ai également dû ajuster la taille de pratiquement tout (une expérience qui m'a finalement conduite à FreeSewing). Sur le plan du codage, c'est probablement un truc lié au travail où j'ai fait de belles représentations graphiques avec Python et LaTeX.
 
-
-
 ### De quoi es-tu le plus fier dans ta vie ?
 
 C'est une question difficile ! Probablement toutes les expériences combinées qui m'ont appris tout ce que je sais aujourd'hui.
-
-
 
 ### Qu'est-ce que tu aimes le plus dans la couture ?
 
 Le sentiment magique quand tu finis quelque chose, que tu le mets et qu'il est juste parfait.
 
-
-
 ### Qu'est-ce que tu détestes le plus dans la couture ?
 
 Le sentiment d'affaissement lorsque tu termines quelque chose et que tu réalises que quelque chose s'est mal passé et que ton avenir immédiat implique probablement le ramasseur de fil ou le tapis de coupe si tu n'as pas de chance. Oh, et l'ourlet des jupes, surtout l'ourlet de deux jupes combinées à cercle complet parce que tu voulais le volume à 2 heures du matin.
-
-
 
 ### Quelle est la partie la plus difficile de la couture pour toi ?
 
 Poser les pièces du patron avec la bonne ligne de grain et découper les choses sans oublier la marge de couture.
 
-
-
 ### Quels seraient tes conseils pour les couturiers débutants ?
 
 Plonge-toi dans l'aventure ! N'aie pas peur de faire des erreurs et n'aie pas peur de demander de l'aide, mais essaie simplement.
-
-
 
 ### Couds-tu surtout pour toi-même ou pour d'autres personnes, comme tes amis ou ta famille ?
 
 La plupart du temps juste pour moi, bien que j'ai essayé de coudre quelque chose comme cadeau à plusieurs reprises - jusqu'à présent, je n'en ai jamais terminé aucun.
 
-
-
 ### Que fais-tu quand tu ne fais pas de vêtements ou que tu ne dessines pas de patrons ? - Veux-tu partager des façons de te suivre sur les médias sociaux ?
 
 J'aime les jeux de rôle sur table (DSA, Cthulhu, ...), les jeux vidéo, la lecture, la photographie, l'escrime et le tir à l'arc (toujours en amateur, d'ailleurs). Je suis également responsable de la direction de la partie théâtrale du groupe musical de mon ancienne école. Pas de médias sociaux pour moi.
-
-
 
 ### As-tu des animaux domestiques ? La famille ?
 
 Malheureusement, il n'y a pas d'animaux de compagnie, bien que mon SO ait un chien adorable. Je suis assez proche de mes parents.
 
-
-
 ### Es-tu plutôt chien ou plutôt chat ?
 
 Les deux ! Mais si je devais choisir, je choisirais... un pingouin.
 
-
-
 ### Si tu pouvais emporter une chose sur une île inhabitée, quelle serait-elle ? Pourquoi ?
 
-À part des choses comme de l'eau, de la nourriture et un couteau ? Probablement mon lecteur ebook, amélioré avec des cellules solaires, et chargé à ras bord de livres pour le divertissement et la survie. 
-
-
+À part des choses comme de l'eau, de la nourriture et un couteau ? Probablement mon lecteur ebook, amélioré avec des cellules solaires, et chargé à ras bord de livres pour le divertissement et la survie.
 
 ### Si tu pouvais emmener une personne sur une île inhabitée, qui serait-elle ? Pourquoi ?
 
@@ -259,21 +208,17 @@ C'est délicat ! Si c'est volontaire, mon SO, mais ils auraient du mal à se pas
 
 &nbsp;
 
-
-
 ---
 
 &nbsp;
-
-
 
 ## 💰 Devons-nous être abattus parce que les revenus de FreeSewing sont en baisse ?
 
 Je suppose que tu connais le site [FreeSewing's revenue pledge](https://freesewing.org/docs/various/pledge/)? Si ce n'est pas le cas, vas-y, lis-le. J'attendrai.
 
-Sur les 6 premiers mois de 2022, le chiffre d'affaires de FreeSewing est inférieur de 25 % au chiffre d'affaires (moyen) de 2021. 
+Sur les 6 premiers mois de 2022, le chiffre d'affaires de FreeSewing est inférieur de 25 % au chiffre d'affaires (moyen) de 2021.
 
-Ce n'est pas tout à fait inattendu. Il y a eu un afflux de nouveaux patrons pendant la pandémie de Covid, et nous sommes maintenant sur la pente descendante de cette vague. De nombreux mécènes qui ont découvert FreeSewing grâce à notre patron de masque de visage nous quittent maintenant parce qu'ils ne voient pas l'intérêt de prolonger leur soutien. D'autres ressentent la crise du coût de la vie et ont soit réduit leurs cotisations, soit les ont complètement annulées. 
+Ce n'est pas tout à fait inattendu. Il y a eu un afflux de nouveaux patrons pendant la pandémie de Covid, et nous sommes maintenant sur la pente descendante de cette vague. De nombreux mécènes qui ont découvert FreeSewing grâce à notre patron de masque de visage nous quittent maintenant parce qu'ils ne voient pas l'intérêt de prolonger leur soutien. D'autres ressentent la crise du coût de la vie et ont soit réduit leurs cotisations, soit les ont complètement annulées.
 
 Je suis vraiment reconnaissant de toutes ces contributions, mais le fait de voir des clients partir me pousse à me demander si nous n'avons pas un problème ? Personnellement, je ne le pense pas. Mais je n'en suis pas non plus certain à 100 %. Et les mauvais jours, cela alimente certainement mes doutes sur... eh bien, sur tout en fait.
 
