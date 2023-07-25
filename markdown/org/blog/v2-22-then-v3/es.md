@@ -9,9 +9,9 @@ title: "FreeSewing v2.22 ya está disponible, y será la última versión menor 
 
 Hemos lanzado la versión 2.22 de FreeSewing. Como siempre, un pequeño salto de versión indica un nuevo diseño, y esta vez se trata del diseño [Octoplushy](/designs/octoplushy) de Wouter.
 
-Está previsto que la versión 2.22 sea la última versión menor de la rama v2. El impulso para la versión 3 ha ido creciendo durante un tiempo, y durante la llamada a colaboradores de este fin de semana
+Está previsto que la versión 2.22 sea la última versión menor de la rama v2. </a> El impulso para la versión 3 ha ido creciendo durante un tiempo, y durante la llamada a colaboradores de este fin de semana
 
-decidimos redoblar esos esfuerzos y centrar toda nuestra atención en la próxima versión 3. 
+decidimos redoblar esos esfuerzos y centrar toda nuestra atención en la próxima versión 3.</p> 
 
 
 
