@@ -186,7 +186,7 @@ C'est également pratique lorsque tu confectionnes des vêtements de poupée, ca
 
 ## N'inclure que certaines parties du modèle
 
-</strong>Puisque nous avons débloqué le mode expert **, voici une autre astuce que tu ne connais peut-être pas : l'option **Contents** . Cette option te permet de ne pas dessiner tout le modèle, mais seulement les parties que tu veux. </p>
+Puisque nous avons débloqué **le mode expert**, voici une autre astuce que tu ne connais peut-être pas : l'option **Contents** . Cette option te permet de ne pas dessiner tout le modèle, mais seulement les parties que tu veux.
 
 Cela peut être pratique si tu veux apporter une modification à un modèle et n'imprimer que les parties concernées. Mais aussi si tu veux combiner différents styles. Par exemple, tu peux générer un modèle Simon complet, puis des styles de cols ou de poignets supplémentaires où seul le col/les poignets sont inclus dans le modèle.
 
