@@ -33,9 +33,7 @@ Si tu souhaites t'impliquer, [viens me dire bonjour](https://chat.freesewing.org
 
 ### Pages de couverture pour les patrons
 
-C'est quelque chose qui m'enthousiasme
-
-: mais j'ai fait [quelques changements](https://github.com/freesewing/tile/commit/9d2b11e7a9f0d08b890a04eced989f0b432d2c53) à [freesewing tile](https://github.com/freesewing/tile) pour ajouter une page de couverture aux modèles. 
+C'est quelque chose [qui m'enthousiasme](https://www.instagram.com/p/Ba6qVTFDZv_/) : mais j'ai fait [quelques changements](https://github.com/freesewing/tile/commit/9d2b11e7a9f0d08b890a04eced989f0b432d2c53) à [freesewing tile](https://github.com/freesewing/tile) pour ajouter une page de couverture aux modèles.
 
 Le dépôt de tuiles contient un logiciel qui transforme ton motif en plusieurs pages que tu peux imprimer sur ton imprimante (c'est ce qu'on appelle le tuilage, d'où le nom).
 
@@ -49,8 +47,6 @@ C'est pourquoi j'ai longtemps pensé qu'il n'était tout simplement pas possible
 
 Il s'agit évidemment d'un code très nouveau, alors si pour une raison ou une autre tu rencontres des problèmes avec la tuile, assure-toi de [m'en faire part](https://github.com/freesewing/tile/issues/new).
 
-
-
 ### Roy concevra des images de couverture pour les modèles
 
 J'ai apporté quelques modifications à [la page des patrons](/patterns/) parce que j'avais l'impression que la présentation précédente ne rendait pas justice aux patrons.
@@ -60,8 +56,6 @@ Bien que la mise en page soit un peu meilleure maintenant (je pense), les photos
 J'ai donc parlé à l'illustrateur néerlandais [Roy Van der Hel](https://royvdhel-art.deviantart.com/) (qui a également signé les illustrations de nos mesures) et je suis heureuse de pouvoir partager avec toi qu'il a accepté d'illustrer les différents modèles de couture libre.
 
 Roy travaillera sur ces projets par intermittence, mais j'espère que tu verras bientôt plus de son travail sur .
-
-
 
 ## En attendant le mois de novembre
 

@@ -20,7 +20,7 @@ Laten we gaan, we hebben niet de hele dag de tijd.
 
 &nbsp;
 
-## Heil aan de vitrinekoningin
+## Heil aan de showcase queen
 
 Sinds iets meer dan een jaar is er één persoon bij FreeSewing die, wanneer iemand een cool nieuw FreeSewing project post op [Discord](https://discord.freesewing.org) of op sociale media, ervoor zorgt dat het niet gewoon in de internetether verdwijnt zoals zoveel vluchtige webinhoud.  Deze persoon was zelfs zo succesvol dat we speciaal voor haar een speciale Discord-rol hebben ontwikkeld: "Showcase Koningin".
 
@@ -30,7 +30,7 @@ Nu, na een ongekende regeerperiode, heeft onze koningin besloten afstand te doen
 
 Dit is het deel waar jij binnenkomt.
 
-Heb je wel eens een patroon van FreeSewing gebruikt om iets te maken dat je niet kunt wachten om met mensen te delen? Waar je trots op bent? Dat er fantastisch uitziet, past of voelt?  Als dat zo is, zouden we *heel erg leuk vinden als je het zou willen toevoegen aan de FreeSewing Showcase! Maak je geen zorgen, het technische gedeelte [is eenvoudig](https://freesewing.dev/howtos/editors/showcase), en er zijn heel veel mensen in de FreeSewing gemeenschap die kunnen helpen als dat een beetje ontmoedigend is. 
+Heb je wel eens een patroon van FreeSewing gebruikt om iets te maken dat je niet kunt wachten om met mensen te delen? Waar je trots op bent? Dat er fantastisch uitziet, past of voelt? Als dat zo is, zouden we *heel erg leuk* vinden als je het zou willen toevoegen aan de FreeSewing Showcase! Maak je geen zorgen, het technische gedeelte [is eenvoudig](https://freesewing.dev/howtos/editors/showcase), en er zijn heel veel mensen in de FreeSewing gemeenschap die kunnen helpen als dat een beetje ontmoedigend is.
 
 Maar er is één ding waar we je niet mee kunnen helpen en dat is het maken van geweldige en nuttige afbeeldingen voor je Showcase.
 
