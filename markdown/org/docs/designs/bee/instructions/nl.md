@@ -36,7 +36,7 @@ De inkepingen in dit patroon werken meer als stippen, dus **klem ze niet** om ze
 
 #### Band Stropdas Variant
 
--  Rijg met de knipranden en de hoofdstof aan elkaar _een van de nekbandjes aan de bovenkant van een van de cupdelen en zorg dat het bandje naar de onderkant van de cup gaat.
+- Rijg met de knipranden en de hoofdstof aan elkaar _een van de nekbandjes aan de bovenkant van een van de cupdelen en zorg dat het bandje naar de onderkant van de cup gaat.
 - Speld, met het nekbandje naar binnen geklemd, een voeringcupdeel met de goede kanten op elkaar op de hoofdcup.
 - Naai de voering aan de hoofdcup tussen inkepingen langs de voor-, boven- en zijnaden, zorg ervoor dat de nekband niet vast komt te zitten en verstevig de steek bij de inkepingen.
 - (Optioneel) Vouw naar de verkeerde kant en _edgestitch_ de naadtoeslag naar beneden tussen de inkepingen op de voor- en zijnaden. Naai de toeslagen niet aan elkaar.
@@ -65,7 +65,7 @@ Hoewel het zeker optioneel is, wordt aangeraden om de bovenkant en zijkanten van
 
 #### Kruis Rugbanden Variant
 
--  Rijg met de knipranden en de hoofdstof aan elkaar _een van de nekbandjes aan de bovenkant van een van de cupdelen en zorg dat het bandje naar de onderkant van de cup gaat.
+- Rijg met de knipranden en de hoofdstof aan elkaar _een van de nekbandjes aan de bovenkant van een van de cupdelen en zorg dat het bandje naar de onderkant van de cup gaat.
 - Speld, met het nekbandje naar binnen geklemd, een voeringcupdeel met de goede kanten op elkaar op de hoofdcup.
 - Naai de voering aan de hoofdcup langs de voor-, boven- en zijnaden en zorg ervoor dat de nekband er niet tussen komt.
 - Draai de kopjes met de goede kant naar buiten en pers.

@@ -107,7 +107,7 @@ Vor 16 Monaten, Ende August 2020, habe ich über die Herausforderungen geschrieb
 
 Im Nachhinein denke ich, dass dieser Beitrag der Moment war, in dem ich vom Open-Source-Mitarbeiter zum Open-Source-Maintainer wurde. Seitdem konzentriere ich mich vor allem darauf, die Arbeit anderer zu erleichtern, Hürden für angehende Mitwirkende abzubauen und die Arbeit der Entwickler zu vereinfachen.
 
- Deshalb macht es mir auch nichts aus, dass ich *nur zwei Muster im Jahr 2021 entworfen habe. Mehr Muster sind immer schön, aber ich konzentriere mich lieber auf Dinge, die für andere Menschen schwer zu machen sind. So wie die [Umstellung auf React 17 und Webpack 5](https://freesewing.org/blog/react-17/) , die in der Version 2.16 erfolgte und ein verbessertes Entwicklererlebnis mit sich brachte.
+Deshalb macht es mir auch nichts aus, dass ich *nur* zwei Muster im Jahr 2021 entworfen habe. Mehr Muster sind immer schön, aber ich konzentriere mich lieber auf Dinge, die für andere Menschen schwer zu machen sind. So wie die [Umstellung auf React 17 und Webpack 5](https://freesewing.org/blog/react-17/) , die in der Version 2.16 erfolgte und ein verbessertes Entwicklererlebnis mit sich brachte.
 
 Aber all das bleibt auf der "*pattern design*" Seite der Dinge. Aber es gehört noch viel mehr dazu, FreeSewing zu betreiben.
 
