@@ -82,8 +82,8 @@ __Andere sluitingen__
 - Naai de overhangen met je naadtoeslag.
 - Keer de tailleband naar buiten en naar binnen, pers.
 - _Egdestik_ de tailleband vast, dit zou ook de opening van de overslag moeten sluiten.
-- </em> Je kunt ook de tailleband aan de binnenkant vastnaaien met _of _. Naai de tailleband aan de binnenkant vast met_ en sluit het gat van de overslag met _of_.</li>
-- Voeg drukknopen, kledinghaken of knopen en knoopsgaten toe aan de overhang van de tailleband.</ul>
+- Je kunt ook de tailleband aan de binnenkant vastnaaien met een _slipstitch_ of _whipstitch_ en het gat van de overslag sluiten met een _slipstitch_.
+- Voeg drukknopen, kledinghaken of knopen en knoopsgaten toe aan de overhang van de tailleband.
 
 ### Naadloos
 
