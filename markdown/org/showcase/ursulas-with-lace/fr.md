@@ -13,7 +13,7 @@ designs:
 
 Nous adorons les choix de tissu et d'élastique des deux premières paires d'Ursulas de Sanne ! Les contributeurs de FreeSewing dans Discord ont dit qu'ils aimaient la dentelle et les combinaisons de couleurs.
 
-</em> La première paire était un peu trop grande, alors la version suivante a augmenté un peu l'option du pourcentage de tissu extensible *. Une bonne ligne directrice pourrait être la suivante :</p>
+La première paire était un peu trop grande, alors la version suivante a augmenté un peu l'option du *pourcentage de tissu extensible*. Une bonne ligne directrice pourrait être la suivante :
 
 * tissu extensible < 30% --> modèle de rétrécissement par étirement - 15
 * tissu extensible > 30% --> rétrécit le motif par extensibilité/2
