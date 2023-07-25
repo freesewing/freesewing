@@ -67,7 +67,7 @@ Si, depuis que tu as créé ton brouillon, nous avons mis en place de nouvelles 
 
 ![Si ton projet est généré avec une ancienne version de freesewing core, nous t'en informerons](https://posts.freesewing.org/uploads/upgrade_dee342e3fb.png)
 
-C'est à toi de décider si tu mets à jour ton brouillon ou non. </em> Si tu ne veux pas perdre les informations contenues dans ton vieux projet *, plutôt que de le mettre à jour, tu peux le forker.</p>
+C'est à toi de décider si tu mets à jour ton brouillon ou non. Si tu ne veux pas perdre les informations contenues dans ton *vieux projet*, plutôt que de le mettre à jour, tu peux le forker.
 
 
 
