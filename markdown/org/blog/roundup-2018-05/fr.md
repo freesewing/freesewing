@@ -13,21 +13,17 @@ Voici ton récapitulatif mensuel de l'actualité freesewing des quatre dernière
 
 Et bien nous y voilà, la date limite du 25 mai pour les RPGP se réduit de plus en plus dans notre rétroviseur, et nous avons un nouveau site web.
 
-</a>Ces deux choses sont évidemment liées, mais tu le savais probablement déjà
+Ces deux choses sont évidemment liées, mais [tu le savais probablement déjà](/blog/gdpr-ready).
 
-.</p> 
-
-Le mois de mai a été incroyablement agité, avec beaucoup de stress auto-infligé parce que plutôt que de simplement mettre en œuvre les changements requis pour le GDPR, nous avons décidé de reconstruire tout le site. Cependant, comme les modifications du GDPR devaient être prêtes à temps, cela signifiait que l'ensemble du site devait être prêt. 
+Le mois de mai a été incroyablement agité, avec beaucoup de stress auto-infligé parce que plutôt que de simplement mettre en œuvre les changements requis pour le GDPR, nous avons décidé de reconstruire tout le site. Cependant, comme les modifications du GDPR devaient être prêtes à temps, cela signifiait que l'ensemble du site devait être prêt.
 
 *Ready* est évidemment ouvert à l'interprétation, et même si nous avons publié le site à temps - avec une heure et demie de retard pour être précis - il y avait encore quelques détails à gauche et à droite.
 
-Nous en avons corrigé un certain nombre et j'aimerais remercier tous ceux d'entre vous qui nous ont signalé des problèmes et nous ont aidés à à les résoudre en partageant leur expérience. 
+Nous en avons corrigé un certain nombre et j'aimerais remercier tous ceux d'entre vous qui nous ont signalé des problèmes et nous ont aidés à à les résoudre en partageant leur expérience.
 
 Beaucoup de temps et d'efforts ont été investis pour rendre le site multilingue, et c'est formidable de pouvoir le lancer avec trois langues activées. Tous les traducteurs font un excellent travail et j'espère que nous pourrons bientôt utiliser d'autres langues.
 
 En plus des questions ouvertes [,](https://github.com/freesewing/site/issues), , nous devons encore porter une partie de la documentation sur le nouveau site, , ce sur quoi nous continuerons à travailler en juin. A ce propos:
-
-
 
 ## En attendant le mois de juin
 
