@@ -361,7 +361,7 @@ export const SliderInput = ({
       <input
         type="range"
         {...{ min, max, value: displayVal, step: config.step || 0.1 }}
-        onChange={(evt) => debouncedHandleChange(Number(evt.target.value))}
+        onChange={(evt) => debouncedHandleChange(evt.target.value)}
         className={`
           range range-sm mt-1
           ${changed ? 'range-accent' : 'range-secondary'}
@@ -421,7 +421,15 @@ export const PctInput = ({ current, changed, updateFunc, config, ...rest }) => {
 }
 
 /** A {@see SliderInput} to handle degree values */
-export const DegInput = (props) => <SliderInput {...props} suffix="°" valFormatter={round} />
+export const DegInput = (props) => {
+  const degUpdateFunc = useCallback(
+    (path, newVal) => {
+      props.updateFunc(path, newVal === undefined ? undefined : Number(newVal))
+    },
+    [props.updateFunc]
+  )
+  return <SliderInput {...props} suffix="°" valFormatter={round} updateFunc={degUpdateFunc} />
+}
 
 export const MmInput = (props) => {
   const { units, updateFunc, current, config } = props
