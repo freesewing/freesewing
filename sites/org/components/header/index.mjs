@@ -32,7 +32,12 @@ const NavIcons = ({ setModal, setSearch }) => {
 
   return (
     <>
-      <NavButton onClick={() => setModal(<ModalMenu />)} label={t('header:menu')} color={colors[0]}>
+      <NavButton
+        onClick={() => setModal(<ModalMenu />)}
+        label={t('header:menu')}
+        color={colors[0]}
+        extraClasses="md:px-4 lg:px-0"
+      >
         <MenuIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
@@ -43,7 +48,7 @@ const NavIcons = ({ setModal, setSearch }) => {
         href="/docs"
         label={t('header:docs')}
         color={colors[2]}
-        extraClasses="hidden lg:flex"
+        extraClasses="hidden md:flex"
       >
         <DocsIcon className={iconSize} />
       </NavButton>
@@ -51,7 +56,7 @@ const NavIcons = ({ setModal, setSearch }) => {
         href="/blog"
         label={t('header:blog')}
         color={colors[3]}
-        extraClasses="hidden lg:flex"
+        extraClasses="hidden md:flex"
       >
         <RssIcon className={iconSize} />
       </NavButton>
@@ -59,7 +64,7 @@ const NavIcons = ({ setModal, setSearch }) => {
         href="/showcase"
         label={t('header:showcase')}
         color={colors[4]}
-        extraClasses="hidden lg:flex"
+        extraClasses="hidden md:flex"
       >
         <ShowcaseIcon className={iconSize} />
       </NavButton>
@@ -98,7 +103,12 @@ const NavIcons = ({ setModal, setSearch }) => {
       >
         <I18nIcon className={iconSize} />
       </NavButton>
-      <NavButton onClick={() => setSearch(true)} label={t('header:search')} color={colors[10]}>
+      <NavButton
+        onClick={() => setSearch(true)}
+        label={t('header:search')}
+        color={colors[10]}
+        extraClasses="md:px-4 lg:px-0"
+      >
         <SearchIcon className={iconSize} />
       </NavButton>
     </>
@@ -109,15 +119,15 @@ export const Header = ({ setSearch, show }) => {
   const { setModal } = useContext(ModalContext)
   return (
     <HeaderWrapper setSearch={setSearch} show={show}>
-      <div className="m-auto md:px-8">
+      <div className="m-auto lg:px-4">
         <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
           {/* Non-mobile content */}
-          <div className="hidden lg:flex lg:flex-row lg:justify-between items-center xl:justify-center w-full">
+          <div className="hidden md:flex md:flex-row md:justify-between items-center xl:justify-center w-full">
             <NavIcons setModal={setModal} setSearch={setSearch} />
           </div>
 
           {/* Mobile content */}
-          <div className="flex lg:hidden flex-row items-center justify-between w-full">
+          <div className="flex md:hidden flex-row items-center justify-between w-full">
             <NavIcons setModal={setModal} setSearch={setSearch} />
           </div>
         </div>

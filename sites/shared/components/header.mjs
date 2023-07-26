@@ -24,11 +24,15 @@ export const NavButton = ({
   active = false,
 }) => {
   const className =
-    'border-0 px-1 xl:px-4 text-base py-3 lg:py-4 text-center flex flex-col items-center 2xl:w-36 ' +
+    'border-0 px-1 xl:px-4 text-base py-3 md:py-4 text-center flex flex-col items-center 2xl:w-36 ' +
     `hover:bg-${color}-400 text-${color}-400 hover:text-neutral grow lg:grow-0 relative ${extraClasses} ${
       active ? 'font-heavy' : ''
     }`
-  const span = <span className="font-bold hidden lg:block">{label}</span>
+  const span = (
+    <span className="font-medium text-xs lg:font-bold hidden md:block md:pt-1 lg:pt-0">
+      {label}
+    </span>
+  )
 
   return onClick ? (
     <button {...{ onClick, className }} title={label}>

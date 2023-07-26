@@ -50,7 +50,7 @@ export const LayoutWrapper = ({
       <ChosenHeader show={showHeader} slug={slug} />
 
       <main
-        className={`grow transition-margin duration-300 ease-in-out lg:group-[.header-shown]/layout:mt-24 lg:mt-4
+        className={`grow transition-margin duration-300 ease-in-out md:group-[.header-shown]/layout:mt-20 lg:mt-4
         }`}
       >
         {children}
