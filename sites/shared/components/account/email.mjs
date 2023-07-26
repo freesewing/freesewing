@@ -11,7 +11,7 @@ import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { validateEmail, validateTld } from 'shared/utils.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 
 export const ns = ['account', 'toast']
 

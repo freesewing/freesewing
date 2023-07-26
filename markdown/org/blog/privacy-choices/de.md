@@ -53,9 +53,7 @@ Dieses Problem wird noch dadurch verkompliziert, dass diese statische Website vo
 
 Meistens habe ich beschlossen, einfach auf Analysen zu verzichten. Ich muss nicht wissen, wie viele Leute diese Seite besuchen. Ich weiß immer noch, wie viele Benutzerkonten erstellt werden und wie viele Muster generiert werden, was ein guter Indikator für das allgemeine Wohlergehen der Website sein sollte.
 
-Aber es gibt eine Sache, die wir aus den Analysen heraushalten wollten: die Referral-Logs.
-
-Es gehört zu den kleinen Freuden des Lebens, diese Liste durchzugehen und zu entdecken, dass [jemand](https://www.reddit.com/r/freepatterns/comments/4zh5nr/is_there_software_to_generate_sewing_patterns/) [mit](http://www.makery.uk/2016/08/the-refashioners-2016-joost/) [verlinkt hat und du](https://opensource.com/life/16/11/free-open-sewing-patterns).  
+Aber es gibt eine Sache, die wir aus den Analysen heraushalten wollten: die Referral-Logs. Es gehört zu den kleinen Freuden des Lebens, diese Liste durchzugehen und zu entdecken, dass [jemand](https://www.reddit.com/r/freepatterns/comments/4zh5nr/is_there_software_to_generate_sewing_patterns/) [mit](http://www.makery.uk/2016/08/the-refashioners-2016-joost/) [verlinkt hat und du](https://opensource.com/life/16/11/free-open-sewing-patterns).
 
 Auch hier habe ich meine eigene einfache Lösung implementiert. Wenn du über einen externen Link auf dieser Seite landest, melden wir diesen Verweis an unsere eigene API. Das bedeutet, dass wir immer noch die Empfehlungsinformationen erhalten, aber keine Nachverfolgung.
 

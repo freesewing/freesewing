@@ -1,4 +1,0 @@
-yamlEditViewTitleThing: 'Modifier la configuration du patron pour {thing}'
-yamlEditViewError: Problèmes avec YAML
-yamlEditViewErrorDesc: Nous avons sauvegardé votre entrée, mais il se peut que cela ne fonctionne pas pour les raisons suivantes
-save: Sauvegarder les paramètres

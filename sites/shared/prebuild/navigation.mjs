@@ -90,7 +90,6 @@ export const prebuildNavigation = async (store) => {
 
     // Add imports for umbrella file
     all.sitenav += `import { siteNav as ${lang} } from './sitenav.${lang}.mjs'` + '\n'
-
     // Extend navigation if there's a method for that
     if (extendNav[site]) sitenav[lang] = await extendNav[site](sitenav[lang], lang)
 

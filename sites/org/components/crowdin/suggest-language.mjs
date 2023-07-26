@@ -7,7 +7,7 @@ import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useState, useContext } from 'react'
 // Components
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
 
 export const ns = ['translation', 'locales']

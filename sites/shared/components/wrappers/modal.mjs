@@ -68,7 +68,7 @@ export const ModalWrapper = ({
         children
       ) : (
         <div
-          className={`bg-base-100 p-4 lg:px-8 lg:rounded-lg lg:shadow-lg max-h-full overflow-auto grow`}
+          className={`bg-base-100 p-4 lg:px-8 lg:rounded-lg lg:shadow-lg max-h-full overflow-auto`}
         >
           {children}
         </div>

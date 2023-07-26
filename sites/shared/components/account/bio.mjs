@@ -10,7 +10,7 @@ import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import Markdown from 'react-markdown'
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 

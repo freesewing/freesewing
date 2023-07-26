@@ -1,7 +1,7 @@
 import { MeasieInput, ns as inputNs } from 'shared/components/sets/measie-input.mjs'
 import { useTranslation } from 'next-i18next'
 
-export const ns = ['wbmeasies', ...inputNs]
+export const ns = ['workbench', ...inputNs]
 
 export const MeasiesEditor = ({ Design, settings, update }) => {
   const { t } = useTranslation(ns)
@@ -13,8 +13,8 @@ export const MeasiesEditor = ({ Design, settings, update }) => {
 
   return (
     <div>
-      <h2>{t('editCurrentTitle')}</h2>
-      <p>{t('editCurrentDesc')}</p>
+      <h2>{t('editCurrentMeasiesHeader')}</h2>
+      <p>{t('editCurrentMeasiesDesc')}</p>
       {Design.patternConfig.measurements.map((m) => (
         <MeasieInput {...{ t, m, mset, onUpdate }} key={m}>
           <span className="label">{t(m)}</span>
