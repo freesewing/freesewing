@@ -5,7 +5,7 @@
   "patternName": "Patroon naam",
   "patternType": "Patroon type",
   "patternCreated": "Het skelet van je patroon is aangemaakt in",
-  "runTheseCommands": "Voer dit commando uit om te beginnen.",
+  "runTheseCommands": "Voer dit commando uit om aan de slag te gaan",
   "startRollup": "In één terminal, start de rollup bundler in de volgmodus",
   "startWebpack": "Het zal de map 'voorbeeld' invoeren en de ontwikkelingsomgeving starten.",
   "devDocsAvailableAt": "Documentatie voor ontwikkelaars is beschikbaar op",
