@@ -6556,10 +6556,10 @@ dagre-d3-es@7.0.10:
     d3 "^7.8.2"
     lodash-es "^4.17.21"
 
-daisyui@3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.4.0.tgz#c178c1985f0692988cda0eb40bdef42395e580ac"
-  integrity sha512-s9EvNxnw/ubCIopKul+3ddASzZG+jMOmZgLJ0BFOVnxFQy6HJ5+EbMx5yY7Ef0cA6qjeUMl88SwhE94WLSLtHQ==
+daisyui@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.5.0.tgz#eec347c9f18f76daa932000624eb0e4bf71e64e0"
+  integrity sha512-wSaeXwaYdMv4yURv9wj7kKQQN9Jyumfh/skIpZfCNkCb2jLf/so+iNKSM8l4rDN0TRvB5OccMlAvsf2UAtk2gg==
   dependencies:
     colord "^2.9"
     css-selector-tokenizer "^0.8"
@@ -13742,7 +13742,7 @@ postcss@8.4.14:
     picocolors "^1.0.0"
     source-map-js "^1.0.2"
 
-postcss@8.4.27:
+postcss@8.4.27, postcss@^8, postcss@^8.4.23, postcss@^8.4.26, postcss@^8.4.5:
   version "8.4.27"
   resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.4.27.tgz#234d7e4b72e34ba5a92c29636734349e0d9c3057"
   integrity sha512-gY/ACJtJPSmUFPDCHtX78+01fHa64FaU4zaaWfuh1MhGJISufJAH4cun6k/8fwsHYeK4UQmENQK+tRLCFJE8JQ==
@@ -13760,15 +13760,6 @@ postcss@^5.0.0, postcss@^5.0.21:
     js-base64 "^2.1.9"
     source-map "^0.5.6"
     supports-color "^3.2.3"
-
-postcss@^8, postcss@^8.4.23, postcss@^8.4.26, postcss@^8.4.5:
-  version "8.4.26"
-  resolved "https://registry.npmjs.org/postcss/-/postcss-8.4.26.tgz"
-  integrity sha512-jrXHFF8iTloAenySjM/ob3gSj7pCu0Ji49hnjqzsgSRa50hkWCKD0HQ+gMNJkW38jBI68MpAAg7ZWwHwX8NMMw==
-  dependencies:
-    nanoid "^3.3.6"
-    picocolors "^1.0.0"
-    source-map-js "^1.0.2"
 
 preact@^10.10.0:
   version "10.16.0"
