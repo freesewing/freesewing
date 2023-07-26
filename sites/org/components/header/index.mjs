@@ -22,13 +22,12 @@ import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-p
 import { ModalLocalePicker, ns as localeNs } from 'shared/components/modal/locale-picker.mjs'
 import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
 
-import { NavButton, NavSpacer, colors } from 'shared/components/header.mjs'
+import { NavButton, NavSpacer, colors, iconSize } from 'shared/components/header.mjs'
 
 export const ns = ['header', 'sections', ...themeNs, ...localeNs]
 
 const NavIcons = ({ setModal, setSearch }) => {
   const { t } = useTranslation(['header'])
-  const iconSize = 'h-6 w-6 lg:h-12 lg:w-12'
 
   return (
     <>
@@ -36,7 +35,7 @@ const NavIcons = ({ setModal, setSearch }) => {
         onClick={() => setModal(<ModalMenu />)}
         label={t('header:menu')}
         color={colors[0]}
-        extraClasses="md:px-4 lg:px-0"
+        extraClasses="md:px-4"
       >
         <MenuIcon className={iconSize} />
       </NavButton>
@@ -107,7 +106,7 @@ const NavIcons = ({ setModal, setSearch }) => {
         onClick={() => setSearch(true)}
         label={t('header:search')}
         color={colors[10]}
-        extraClasses="md:px-4 lg:px-0"
+        extraClasses="md:px-4"
       >
         <SearchIcon className={iconSize} />
       </NavButton>
@@ -115,20 +114,20 @@ const NavIcons = ({ setModal, setSearch }) => {
   )
 }
 
-export const Header = ({ setSearch, show }) => {
+export const Header = ({ show }) => {
   const { setModal } = useContext(ModalContext)
   return (
-    <HeaderWrapper setSearch={setSearch} show={show}>
-      <div className="m-auto lg:px-4">
+    <HeaderWrapper show={show}>
+      <div className="m-auto">
         <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
           {/* Non-mobile content */}
           <div className="hidden md:flex md:flex-row md:justify-between items-center xl:justify-center w-full">
-            <NavIcons setModal={setModal} setSearch={setSearch} />
+            <NavIcons setModal={setModal} />
           </div>
 
           {/* Mobile content */}
           <div className="flex md:hidden flex-row items-center justify-between w-full">
-            <NavIcons setModal={setModal} setSearch={setSearch} />
+            <NavIcons setModal={setModal} />
           </div>
         </div>
       </div>
