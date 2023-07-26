@@ -1,12 +1,12 @@
 account: Account
 yourAccount: Jouw account
 newPattern: Nieuw patroon
-newSet: Maak een nieuwe meetset
+newSet: Start een nieuwe maten set
 links: Links
 info: Info
 settings: Instellingen
-data: Data
-sets: Metingen Sets
+data: Gegevens
+sets: Maten sets
 patterns: Patronen
 actions: Acties
 created: Aangemaakt
@@ -14,160 +14,160 @@ updated: Bijgewerkt
 expires: Verloopt op
 yourProfile: Jouw profiel
 yourPatterns: Jouw patronen
-yourSets: Je metingen instellen
+yourSets: Jouw maten sets
 signOut: Afmelden
-politeOhCrap: Oh fiddlesticks
-bio: Biografie
+politeOhCrap: Jandorie
+bio: Bio
 email: E-mailadres
 github: Github-gebruikersnaam
 img: Profiel afbeelding
 username: Gebruikersnaam
 compare: Metricset Vergelijking
-consent: Toestemming en privacy
+consent: Privacy & Toestemming
 control: Gebruikerservaring
 imperial: Eenheden
 units: Eenheden
-apikeys: API-sleutels
+apikeys: API-keys
 newsletter: Abonnement op nieuwsbrief
 password: Wachtwoord
 newPasswordPlaceholder: Voer hier je nieuwe wachtwoord in
 passwordPlaceholder: Voer hier je wachtwoord in
-mfa: Authenticatie met twee factoren
-mfaTipTitle: Overweeg om authenticatie met twee factoren in te schakelen
-mfaTipMsg: We dwingen geen wachtwoordbeleid af, maar we raden je wel aan om Two-Factor Authenticatie in te schakelen om je FreeSewing account veilig te houden.
-mfaEnabled: Authenticatie met twee factoren is ingeschakeld
-mfaDisabled: Authenticatie met twee factoren is uitgeschakeld
-mfaSetup: Authenticatie met twee factoren instellen
+mfa: Twee-Stappen Authenticatie
+mfaTipTitle: Overweeg om Twee-Stappen Authenticatie in te schakelen
+mfaTipMsg: We dringen je geen wachtwoordbeleid op, maar we raden je wel aan om Twee-Stappen Authenticatie in te schakelen om je FreeSewing account veilig te houden.
+mfaEnabled: Twee-Stappen Authenticatie is ingeschakeld
+mfaDisabled: Twee-Stappen Authenticatie is uitgeschakeld
+mfaSetup: Twee-Stappen Authenticatie instellen
 mfaAdd: Voeg FreeSewing toe aan je Authenticator App door de QR code hierboven te scannen.
 confirmWithPassword: Voer je wachtwoord in om deze actie te bevestigen
 confirmWithMfa: Voer een code in van je Authenticator App om deze actie te bevestigen
-enableMfa: Authenticatie met twee factoren inschakelen
-disableMfa: Authenticatie met twee factoren uitschakelen
+enableMfa: Twee-Stappen Authenticatie inschakelen
+disableMfa: Twee-Stappen Authenticatie uitschakelen
 language: Taal
 developer: Ontwikkelaar
-reload: Account opnieuw laden
+reload: Account herladen
 export: Exporteer je gegevens
-review: Herzie uw toestemmingen
-restrict: Beperk de verwerking van uw gegevens
-disable: Je account uitschakelen
-remove: Verwijder uw account
-mdSupport: Je kunt markdown hier gebruiken
+review: Herzie je toestemmingen
+restrict: Beperk de verwerking van je gegevens
+disable: Je account desactiveren
+remove: Verwijder je account
+mdSupport: Je kan hier markdown opmaak gebruiken
 or: of
-continue: Doorgaan
+continue: Ga verder
 save: Opslaan
-noThanks: Geen dank
+noThanks: Dat hoeft niet
 areYouCertain: Weet je het zeker?
 delete: Verwijder
 #reload
-nailedIt: Genageld
-gone: Poef. Weg.
-reloadMsg1: De gegevens die zijn opgeslagen in je browser kunnen soms niet synchroon lopen met de gegevens die zijn opgeslagen in onze backend.
-reloadMsg2: Hiermee kun je je accountgegevens opnieuw laden vanuit de backend. Het heeft hetzelfde effect als uitloggen en dan opnieuw aanmelden
+nailedIt: Dat is ook weer geregeld
+gone: Poef. Verdwenen.
+reloadMsg1: De gegevens die zijn opgeslagen in je browser kunnen soms gaan afwijken van de gegevens die zijn opgeslagen in onze backend.
+reloadMsg2: Hiermee kun je je accountgegevens synchroniseren met de backend. Het heeft hetzelfde effect als je afmelden en dan weer aanmelden
 #bio
-bioTitle: Vertel mensen iets over jezelf
+bioTitle: Vertel wat over jezelf
 bioPreview: Bio Voorbeeld
-bioPlaceholder: Ik maak kleding en schoenen. Ik ontwerp naaipatronen. Ik schrijf code. Ik run [FreeSewing](http://freesewing.org)
+bioPlaceholder: Ik maak kledij en schoenen. Ik ontwerp naaipatronen. Ik schrijf code. Ik beheer [FreeSewing](http://freesewing.org)
 #compare
-compareTitle: Voel je je prettig bij het vergelijken van meetsets?
-compareYes: Ja, voor het geval het me kan helpen
+compareTitle: Voel je je ok als we maten gaan vergelijken?
+compareYes: Ja, voor zover het me kan helpen
 compareYesd: |
-  We zullen af en toe laten zien hoe jouw meetset zich verhoudt tot andere meetsets.
-  Zo kunnen we mogelijke problemen in je metingen of patronen opsporen.
-compareNo: Nee, nooit vergelijken
+  We kunnen je tonen hoe jouw maten set zich verhoudt tot andere sets.
+  Dit kan je helpen bij het opsporen van mogelijke foutjes bij het nemen van maten, of problemen in pratronen.
+compareNo: Nee, vergelijk nooit maten
 compareNod: |
-  We zullen jouw meetset nooit vergelijken met andere meetsets.
-  Dit beperkt onze mogelijkheden om je te waarschuwen voor mogelijke problemen in je meetsets of patronen.
+  We zullen jouw maten sets nooit vergelijken met andere maten sets.
+  Dit beperkt onze mogelijkheden om je te waarschuwen over mogelijke problemen in je maten sets of patronen.
 #control
-showMore: Meer tonen
+showMore: Toon meer
 control1.t: Houd het zo eenvoudig mogelijk
-control1.d: Verbergt alle functies behalve de meest cruciale.
-control2.t: Houd het simpel, maar niet te simpel
-control2.d: Verbergt de meeste functies.
-control3.t: Breng eenvoud in balans met kracht
-control3.d: Toont de meeste functies, maar niet alle.
-control4.t: Geef me alle krachten, maar houd me veilig
-control4.d: Onthult alle functies, houdt leuningen en veiligheidscontroles.
-control5.t: Ga uit de weg
-control5.d: Onthult alle functies, verwijdert alle leuningen en controleert de veiligheid.
+control1.d: Toont alleen de meest essentiële functionaliteit.
+control2.t: Maak het eenvoudig, maar niet te eenvoudig
+control2.d: Verbergt de meeste functionaliteit.
+control3.t: Balanceer eenvoud met functionaliteit
+control3.d: Toont de meeste functionaliteit, maar niet de meest geavanceerde.
+control4.t: Geef me alle functionaliteit, maar hou het veilig
+control4.d: Onthult alle functionaliteit, met vangrails en veiligheidscontroles om vergissingen te vermijden.
+control5.t: Ik weet wat ik doe
+control5.d: Onthult alle functionaliteit, en verwijdert ook alle vangrails en veiligheidscontroles.
 controlShowMore: Meer opties tonen
 controlTitle: Welke gebruikerservaring heeft jouw voorkeur?
 #img
-imgTitle: Wat dacht je van een foto?
+imgTitle: Wat denk je van een leuke foto?
 imgDragAndDropImageHere: Sleep hier een afbeelding naartoe
 imgSelectImage: Selecteer een afbeelding
 #newsletter
 newsletterTitle: Wil je de FreeSewing nieuwsbrief ontvangen?
 newsletterYes: Ja, ik wil graag de nieuwsbrief ontvangen
-newsletterYesd: Eens in de 3 maanden ontvang je van ons een e-mail met eerlijke, gezonde inhoud. Geen tracking, geen advertenties, geen onzin.
+newsletterYesd: Eens om de 3 maanden ontvang je van ons een e-mail met eerlijke, oprechte inhoud. Geen tracking, geen advertenties, geen onzin.
 newsletterNod: Je kunt later altijd van gedachten veranderen. Maar zolang je dat niet doet, sturen we je geen nieuwsbrieven.
 #imperial
 metricUnits: Metrische eenheden (cm)
-metricUnitsd: Kies deze als je de voorkeur geeft aan centimeters boven inches.
+metricUnitsd: Kies deze optie als je de voorkeur geeft aan centimeters over duimen.
 imperialUnits: Imperiale (Engelse) eenheden (duim)
-imperialUnitsd: Kies deze als je de voorkeur geeft aan inches boven centimeters.
+imperialUnitsd: Kies deze optie als je de voorkeur geeft aan duimen boven centimeters.
 unitsTitle: Welke eenheden hebben jouw voorkeur?
 #username
 usernameTitle: Welke gebruikersnaam wil je?
-usernameNotAvailable: Gebruikersnaam is niet beschikbaar
+usernameNotAvailable: Deze gebruikersnaam is niet beschikbaar
 #email
 emailTitle: Waar kunnen we je bereiken als we daar een goede reden voor hebben (zoals wanneer je je wachtwoord bent vergeten)?
-oneMoreThing: En dan nog dit
-oneMomentPlease: Een momentje alsjeblieft
+oneMoreThing: En dan nog iets
+oneMomentPlease: Een ogenblikje alsjeblieft
 emailChangeConfirmation: We hebben een e-mail naar je nieuwe adres gestuurd om deze wijziging te bevestigen.
-vagueError: Er is iets misgegaan en we weten niet zeker hoe we dit moeten aanpakken. Probeer het opnieuw of schakel een mens in voor assistentie.
+vagueError: Er is iets fout gelopen en we weten niet meteen hoe we dit best oplossen. Probeer het opnieuw of contacteer ons voor assistentie.
 #github
 githubTitle: Vul hier je github gebruikersnaam in om updates te ontvangen wanneer je een probleem meldt via deze website.
 #languge
 languageTitle: Aan welke taal geef je de voorkeur?
 #password
-passwordTitle: Iets dat alleen jij weet
+passwordTitle: Iets dat alleen jij kent
 #api key
-newApikey: Een nieuwe API-sleutel genereren
-keyNewInfo: Maak een nieuwe API-sleutel om automatisch verbinding te maken met de backend van FreeSewing.
-keyName: Naam
-keyNameDesc: Een unieke naam voor deze API sleutel. Alleen zichtbaar voor jou.
-keyExpires: Sleutel afloop
+newApikey: Een nieuwe API-key aanmaken
+keyNewInfo: Maak een nieuwe API-key aan om verbinding te maken met de FreeSewing backend.
+keyName: Key naam
+keyNameDesc: Een unieke naam voor deze API key. Alleen zichtbaar voor jou.
+keyExpires: Key geldigheid
 keyExpiresDesc: "De sleutel verloopt op:"
-keyLevel: Toets permissie niveau
-keyLevel0: Alleen authenticeren
-keyLevel1: Lees toegang tot je eigen patronen en meetsets
-keyLevel2: Leestoegang tot al je accountgegevens
-keyLevel3: Schrijf toegang tot je eigen patronen en meetsets
-keyLevel4: Schrijftoegang tot al je accountgegevens
-keyLevel5: Leestoegang tot patronen en meetsets van andere gebruikers
-keyLevel6: Schrijftoegang tot patronen en meetsets van andere gebruikers
-keyLevel7: Schrijftoegang tot alle accountgegevens van andere gebruikers
-keyLevel8: Zich voordoen als andere gebruikers, volledige schrijftoegang tot alle gegevens
+keyLevel: Key rechten
+keyLevel0: Alleen authenticatie
+keyLevel1: Lezen van je eigen patronen en maten sets
+keyLevel2: Lezen van al je accountgegevens
+keyLevel3: Lezen en schrijven van je eigen patronen en maten sets
+keyLevel4: Lezen en schrijven van al je accountgegevens
+keyLevel5: Lezen van patronen en maten sets van andere gebruikers
+keyLevel6: Lezen en schrijven van patronen en maten sets van andere gebruikers
+keyLevel7: Lezen en schrijven van alle accountgegevens van andere gebruikers
+keyLevel8: Zich voordoen als een andere gebruikers, volledige schrijftoegang tot alle gegevens
 cancel: Annuleren
 keySecretWarning: Dit is de enige keer dat je het sleutelgeheim kunt zien, zorg ervoor dat je het kopieert.
-keyExpired: Deze API-sleutel is verlopen
-deleteKeyWarning: Het verwijderen van een API-sleutel kan niet ongedaan worden gemaakt.
+keyExpired: Deze API-key is verlopen
+deleteKeyWarning: Het verwijderen van een API-key kan niet ongedaan worden gemaakt.
 new: Nieuw
 #sets
 name: Naam
-setNameDesc: Een naam om deze meetset te identificeren
-setNewInfo: Creëer een nieuwe set metingen waar je vervolgens patronen voor kunt genereren.
-notes: Aantekeningen
-setNotesDesc: Notities die je wilt bewaren over deze meetset
+setNameDesc: Een naam om deze maten set te identificeren
+setNewInfo: Creëer een nieuwe maten set waar je vervolgens patronen voor kunt genereren.
+notes: Notities
+setNotesDesc: Notities die je wilt opslaan bij deze maten set
 description: Beschrijving
-deleteSetWarning: Het verwijderen van een meetset kan niet ongedaan worden gemaakt.
+deleteSetWarning: Het verwijderen van een maten set kan niet ongedaan worden gemaakt.
 image: Afbeelding
-measies: Afmetingen
-setUnitsMsgTitle: Deze instellingen zijn alleen van toepassing op deze meetset
+measies: Maten
+setUnitsMsgTitle: Deze instellingen is alleen van toepassing op deze maten set
 setUnitsMsgDesc: |
-  Dit zijn de eenheden die we gebruiken wanneer we de metingen in deze set bijwerken of weergeven.
-  Overal elders op deze website gebruiken we de eenheden die je in je account hebt ingesteld.
-public: Openbaar
-publicSet: Openbare metingen ingesteld
-privateSet: Prive metingen ingesteld
-publicSetDesc: Anderen mogen deze metingen gebruiken om patronen te genereren of te testen.
-privateSetDesc: Deze metingen kunnen niet worden gebruikt door andere gebruikers of bezoekers
-permalink: Permalink
+  Dit zijn de eenheden die we gebruiken wanneer we de maten in deze set bijwerken of weergeven.
+  Elders op deze website gebruiken we de eenheden die je in je account hebt ingesteld.
+public: Publiek
+publicSet: Publieke maten set
+privateSet: Privé maten set
+publicSetDesc: Anderen kunnen deze maten gebruiken om patronen aan te maken of te testen
+privateSetDesc: Deze maten mogen niet worden gebruikt door anderen om patronen aan te maken of te testen
+permalink: Link
 patternNew: Een nieuw patroon genereren
-patternNewInfo: Kies een ontwerp, voeg je maatset toe en wij genereren een naaipatroon op maat voor je.
-designNew: Een nieuw ontwerp maken
-designNewInfo: FreeSewing ontwerpen zijn kleine bundeltjes JavaScript-code die patronen genereren. Het is niet moeilijk om je eigen ontwerpen te maken en we hebben een gedetailleerde handleiding om je op weg te helpen.
-pluginNew: Maak een nieuwe plugin
+patternNewInfo: Kies een ontwerp, voeg je maten set toe en wij genereren een naaipatroon op maat voor je.
+designNew: Een nieuw ontwerp creëren
+designNewInfo: FreeSewing ontwerpen zijn bundeltjes JavaScript-code die patronen genereren. Je eigen ontwerpen maken is niet zo moeilijk en we hebben een gedetailleerde handleiding om je op weg te helpen.
+pluginNew: Een nieuwe plugin creëren
 pluginNewInfo: De functionaliteit van FreeSewing kan verder worden uitgebreid met plugins. Het maken van een plugin is eenvoudig en we hebben een gids die je van begin tot eind begeleidt.
 newBasic: De basis
 newAdvanced: Ga verder

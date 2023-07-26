@@ -1,10 +1,10 @@
-setLacksMeasiesForDesign: "In deze set ontbreken de vereiste metingen om een { design } patroon te genereren."
-chooseSet: Kies een set afmetingen
+setLacksMeasiesForDesign: "In deze set ontbreken de vereiste maten om een { design } patroon te genereren."
+chooseSet: Kies een maten set
 fsmtm: FreeSewing genereert naaipatronen op maat.
-patternForWhichSet: Voor welke set metingen moeten we een patroon genereren?
-yourSets: Je metingen
-bookmarkedSets: Meetreeksen met bladwijzers
-curatedSets: De samengestelde meetsets van FreeSewing
-curatedSetsAbout: Sets van metingen samengesteld door FreeSewing die je kunt gebruiken om ons platform of je ontwerpen te testen.
-curateCuratedSets: Bekijk onze selectie metingssets
-useThisSet: Gebruik deze set metingen
+patternForWhichSet: Voor welke maten set moeten we een patroon genereren?
+yourSets: Je maten sets
+bookmarkedSets: Maten sets in je bladwijzers
+curatedSets: De collectie van maten sets van FreeSewing
+curatedSetsAbout: Maten sets samengesteld door FreeSewing die je kan gebruiken om ons platform of je ontwerpen te testen.
+curateCuratedSets: Bekijk onze selectie maten sets
+useThisSet: Gebruik deze maten set
