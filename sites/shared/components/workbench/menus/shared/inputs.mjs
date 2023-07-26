@@ -1,5 +1,11 @@
-import { useCallback, useMemo, useState, useEffect } from 'react'
-import { round, measurementAsMm, measurementAsUnits, formatFraction128 } from 'shared/utils.mjs'
+import { useCallback, useMemo, useState, useEffect, useRef } from 'react'
+import {
+  round,
+  measurementAsMm,
+  measurementAsUnits,
+  formatFraction128,
+  fractionToDecimal,
+} from 'shared/utils.mjs'
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
 import debounce from 'lodash.debounce'
 
@@ -12,27 +18,141 @@ import debounce from 'lodash.debounce'
  * Inputs that deal with more specific use cases should wrap one of the above base inputs
  *******************************************************************************************/
 
+/** Regex to validate that an input is a number */
+const numberInputMatchers = {
+  0: /^\-?[0-9]*[.,eE]?[0-9]+$/, // match a single decimal separator
+  1: /^\-?[0-9]*(\s?[0-9]+\/|[.,eE])?[0-9]+$/, // match a single decimal separator or fraction
+}
+
+/**
+ * Validate and parse a value that should be a number
+ * @param  {any}  val            the value to validate
+ * @param  {Boolean} allowFractions should fractions be considered valid input?
+ * @param  {Number}  min            the minimum allowable value
+ * @param  {Number}  max            the maximum allowable value
+ * @return {null|false|Number}      null if the value is empty,
+ *                                  false if the value is invalid,
+ *                                  or the value parsed to a number if it is valid
+ */
+const validateVal = (val, allowFractions = true, min = -Infinity, max = Infinity) => {
+  // if it's empty, we're neutral
+  if (typeof val === 'undefined' || val === '') return null
+
+  // make sure it's a string
+  val = ('' + val).trim()
+
+  // get the appropriate match pattern and check for a match
+  const matchPattern = numberInputMatchers[Number(allowFractions)]
+  if (!val.match(matchPattern)) return false
+
+  // replace comma with period
+  const parsedVal = val.replace(',', '.')
+  // if fractions are allowed, parse for fractions, otherwise use the number as a value
+  const useVal = allowFractions ? fractionToDecimal(parsedVal) : parsedVal
+
+  // check that it's a number and it's in the range
+  if (isNaN(useVal) || useVal > max || useVal < min) return false
+
+  // all checks passed. return the parsed value
+  return useVal
+}
+
+/**
+ * A number input that accepts comma or period decimal separators.
+ * Because our use case is almost never going to include thousands, we're using a very simple way of accepting commas:
+ * The validator checks for the presence of a single comma or period followed by numbers
+ * The parser replaces a single comma with a period
+ *
+ * optionally accepts fractions
+ * @param  {Number}  options.val       the value of the input
+ * @param  {Function}  options.onUpdate  a function to handle when the value is updated to a valid value
+ * @param  {Boolean} options.fractions should the input allow fractional input
+ */
+export const NumberInput = ({
+  value,
+  onUpdate,
+  onMount,
+  className,
+  fractions = true,
+  min = -Infinity,
+  max = Infinity,
+}) => {
+  const valid = useRef(validateVal(value, fractions, min, max))
+
+  // this is the change handler that will be debounced by the debounce handler
+  // we check validity inside this debounced function because
+  // we need to call the debounce handler on change regardless of validity
+  // if we don't, the displayed value won't update
+  const handleChange = useCallback(
+    (newVal) => {
+      // only actually update if the value is valid
+      if (typeof onUpdate === 'function') {
+        onUpdate(valid.current, newVal)
+      }
+    },
+    [onUpdate, valid]
+  )
+
+  // get a debounce handler
+  const { debouncedHandleChange, displayVal } = useDebouncedHandlers({ handleChange, val: value })
+
+  // onChange
+  const onChange = useCallback(
+    (evt) => {
+      const newVal = evt.target.value
+      // set validity so it will display
+      valid.current = validateVal(newVal, fractions, min, max)
+
+      // handle the change
+      debouncedHandleChange(newVal)
+    },
+    [debouncedHandleChange, fractions, min, max, valid]
+  )
+
+  useEffect(() => {
+    if (typeof onMount === 'function') {
+      console.log('mount', valid.current)
+      onMount(valid)
+    }
+  }, [onMount])
+
+  return (
+    <input
+      type="text"
+      inputMode="number"
+      className={`input ${className || 'input-sm input-bordered grow text-base-content'}
+        ${valid.current === false && 'input-error'}
+        ${valid.current && 'input-success'}
+      `}
+      value={displayVal}
+      onChange={onChange}
+    />
+  )
+}
+
 /** A component that shows a number input to edit a value */
-const EditCount = (props) => (
-  <div className="form-control mb-2 w-full">
-    <label className="label">
-      <span className="label-text text-base-content">{props.min}</span>
-      <span className="label-text font-bold text-base-content">{props.current}</span>
-      <span className="label-text text-base-content">{props.max}</span>
-    </label>
-    <label className="input-group input-group-sm">
-      <input
-        type="number"
-        className={`
-          input input-sm input-bordered grow text-base-content
-        `}
-        value={props.current}
-        onChange={props.handleChange}
-      />
-      <span className="text-base-content font-bold">#</span>
-    </label>
-  </div>
-)
+const EditCount = (props) => {
+  const onUpdate = useCallback(
+    (validVal) => {
+      if (validVal !== null && validVal !== false) props.handleChange(validVal)
+    },
+    [props.handleChange]
+  )
+
+  return (
+    <div className="form-control mb-2 w-full">
+      <label className="label">
+        <span className="label-text text-base-content">{props.min}</span>
+        <span className="label-text font-bold text-base-content">{props.current}</span>
+        <span className="label-text text-base-content">{props.max}</span>
+      </label>
+      <label className="input-group input-group-sm">
+        <NumberInput value={props.current} onUpdate={onUpdate} min={props.min} max={props.max} />
+        <span className="text-base-content font-bold">#</span>
+      </label>
+    </div>
+  )
+}
 
 /**
  * A hook to get the change handler for an input.
@@ -138,12 +258,12 @@ export const BoolInput = (props) => {
   return <ListInput {...props} config={boolConfig} />
 }
 
-export const useDebouncedHandlers = ({ handleChange, changed, current, config }) => {
+export const useDebouncedHandlers = ({ handleChange = () => {}, val }) => {
   // hold onto what we're showing as the value so that the input doesn't look unresponsive
-  const [displayVal, setDisplayVal] = useState(changed ? current : config.dflt)
+  const [displayVal, setDisplayVal] = useState(val)
 
   // the debounce function needs to be it's own memoized value so we can flush it on unmount
-  const debouncer = useMemo(() => debounce(handleChange, 200), [handleChange])
+  const debouncer = useMemo(() => debounce(handleChange, 300), [handleChange])
 
   // this is the change handler
   const debouncedHandleChange = useCallback(
@@ -161,8 +281,8 @@ export const useDebouncedHandlers = ({ handleChange, changed, current, config })
 
   // set the display val to the current value when it gets changed
   useEffect(() => {
-    setDisplayVal(changed ? current : config.dflt)
-  }, [changed, current, config])
+    setDisplayVal(val)
+  }, [val])
 
   return { debouncedHandleChange, displayVal }
 }
@@ -203,9 +323,7 @@ export const SliderInput = ({
 
   const { debouncedHandleChange, displayVal } = useDebouncedHandlers({
     handleChange,
-    current,
-    changed,
-    config,
+    val: changed ? current : config.dflt,
   })
 
   return (
@@ -216,7 +334,7 @@ export const SliderInput = ({
           <EditCount
             {...{
               current: displayVal,
-              handleChange: (evt) => debouncedHandleChange(Number(evt.target.value)),
+              handleChange,
               min,
               max,
               t,
@@ -254,20 +372,44 @@ export const SliderInput = ({
   )
 }
 
+/**
+ * round a value to the correct number of decimal places to display all supplied digits after multiplication
+ * this is a workaround for floating point errors
+ * examples:
+ * roundPct(0.72, 100) === 72
+ * roundPct(7.5, 0.01) === 0.075
+ * roundPct(7.50, 0.01) === 0.0750
+ * @param  {Number} num the number to be operated on
+ * @param  {Number} factor the number to multiply by
+ * @return {Number}     the given num multiplied by the factor, rounded appropriately
+ */
+const roundPct = (num, factor) => {
+  // stringify
+  const str = '' + num
+  // get the index of the decimal point in the number
+  const decimalIndex = str.indexOf('.')
+  // get the number of places the factor moves the decimal point
+  const factorPlaces = factor > 0 ? Math.ceil(Math.log10(factor)) : Math.floor(Math.log10(factor))
+  // the number of places needed is the number of digits that exist after the decimal minus the number of places the decimal point is being moved
+  const numPlaces = Math.max(0, str.length - (decimalIndex + factorPlaces))
+  return round(num * factor, numPlaces)
+}
+
 /** A {@see SliderInput} to handle percentage values */
 export const PctInput = ({ current, changed, updateFunc, config, ...rest }) => {
   const factor = 100
-  let pctCurrent = changed ? current * factor : current
+  let pctCurrent = changed ? roundPct(current, factor) : current
   const pctUpdateFunc = useCallback(
-    (path, newVal) => updateFunc(path, newVal === undefined ? undefined : newVal / factor),
-    [updateFunc, factor]
+    (path, newVal) =>
+      updateFunc(path, newVal === undefined ? undefined : roundPct(newVal, 1 / factor)),
+    [updateFunc]
   )
 
   return (
     <SliderInput
       {...{
         ...rest,
-        config: { ...config, dflt: config.dflt * factor },
+        config: { ...config, dflt: roundPct(config.dflt, factor) },
         current: pctCurrent,
         updateFunc: pctUpdateFunc,
         suffix: '%',

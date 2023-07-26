@@ -1,8 +1,9 @@
 import { isDegreeMeasurement } from 'config/measurements.mjs'
-import { measurementAsMm, formatMm } from 'shared/utils.mjs'
+import { measurementAsMm, formatMm, measurementAsUnits } from 'shared/utils.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
 import { PlusIcon, EditIcon } from 'shared/components/icons.mjs'
-import { useState } from 'react'
+import { NumberInput } from 'shared/components/workbench/menus/shared/inputs.mjs'
+import { useState, useCallback } from 'react'
 export const ns = ['account']
 
 const Mval = ({ m, val = false, imperial = false, className = '' }) =>
@@ -101,34 +102,35 @@ export const MeasieInput = ({
 }) => {
   const isDegree = isDegreeMeasurement(m)
   const factor = isDegree ? 1 : mset.imperial ? 25.4 : 10
+  const units = mset.imperial ? 'imperial' : 'metric'
+  const [val, setVal] = useState(() => {
+    const measie = mset.measies?.[m]
+    if (!measie) return ''
+    if (isDegree) return measie
+    return measurementAsUnits(measie, units)
+  })
 
-  const isValValid = (val) =>
-    typeof val === 'undefined' || val === '' ? null : val != false && !isNaN(val)
-  const isValid = (newVal) => (typeof newVal === 'undefined' ? isValValid(val) : isValValid(newVal))
-
-  const [val, setVal] = useState(mset.measies?.[m] / factor || '')
-  const [valid, setValid] = useState(isValid(mset.measies?.[m] / factor || ''))
+  const [valid, setValid] = useState(null)
 
   // Update onChange
-  const update = (evt) => {
-    setVal(evt.target.value)
+  const update = useCallback(
+    (validVal, rawVal) => {
+      setValid(validVal)
+      setVal(validVal || rawVal)
 
-    const useVal = isDegree
-      ? evt.target.value
-      : measurementAsMm(evt.target.value, mset.imperial ? 'imperial' : 'metric')
-    const validUpdate = isValid(useVal)
-    setValid(validUpdate)
-
-    if (validUpdate && typeof onUpdate === 'function') {
-      onUpdate(m, useVal)
-    }
-  }
+      if (validVal && typeof onUpdate === 'function') {
+        const useVal = isDegree ? validVal : measurementAsMm(validVal, units)
+        onUpdate(m, useVal)
+      }
+    },
+    [isDegree, setValid, setVal, onUpdate, units]
+  )
 
   const save = async () => {
     // FIXME
     startLoading()
     const measies = {}
-    measies[m] = val * factor
+    measies[m] = isDegree ? val : measurementAsMm(val, units)
     const result = await backend.updateSet(mset.id, { measies })
     if (result.success) {
       refresh()
@@ -137,7 +139,7 @@ export const MeasieInput = ({
     stopLoading()
   }
 
-  const fraction = (i, base) => update({ target: { value: Math.floor(val) + i / base } })
+  const fraction = (i, base) => update(Math.floor(('' + val).split(/[\s\.]/)[0]) + i / base)
 
   if (!m) return null
 
@@ -147,48 +149,41 @@ export const MeasieInput = ({
         <label className="shrink-0 grow max-w-full">
           {children}
           <span className="input-group">
-            <input
-              type="number"
-              step={mset.imperial && !isDegree ? 0.03125 : 0.1}
-              className={`
-                input input-bordered text-base-content border-r-0 w-full
-                ${valid === false && 'input-error'}
-                ${valid === true && 'input-success'}
-              `}
+            <NumberInput
+              className={`border-r-0 w-full`}
               value={val}
-              onChange={update}
+              onUpdate={update}
+              onMount={setValid}
             />
-            {mset.imperial ? (
-              <span
-                className={`bg-transparent border-y w-20
-                ${valid === false && 'border-error text-neutral-content'}
-                ${valid === true && 'border-success text-neutral-content'}
-                ${valid === null && 'border-base-200 text-base-content'}
-           `}
-              >
-                <Mval
-                  imperial={true}
-                  val={val * (isDegree ? 1 : 25.4)}
-                  m={m}
-                  className="text-base-content bg-transparent text-success text-xs font-bold p-0"
-                />
-              </span>
-            ) : null}
+            <span
+              className={`bg-transparent border-y w-20
+              ${valid === false && 'border-error text-neutral-content'}
+              ${valid && 'border-success text-neutral-content'}
+              ${valid === null && 'border-base-200 text-base-content'}
+         `}
+            >
+              <Mval
+                imperial={mset.imperial}
+                val={isDegree ? val : measurementAsMm(val, units)}
+                m={m}
+                className="text-base-content bg-transparent text-success text-xs font-bold p-0"
+              />
+            </span>
             <span
               role="img"
               className={`bg-transparent border-y
               ${valid === false && 'border-error text-neutral-content'}
-              ${valid === true && 'border-success text-neutral-content'}
+              ${valid && 'border-success text-neutral-content'}
               ${valid === null && 'border-base-200 text-base-content'}
            `}
             >
-              {valid === true && '👍'}
+              {valid && '👍'}
               {valid === false && '🤔'}
             </span>
             <span
               className={`w-14 text-center
               ${valid === false && 'bg-error text-neutral-content'}
-              ${valid === true && 'bg-success text-neutral-content'}
+              ${valid && 'bg-success text-neutral-content'}
               ${valid === null && 'bg-base-200 text-base-content'}
            `}
             >

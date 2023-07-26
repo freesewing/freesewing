@@ -13,6 +13,8 @@ export const MeasiesEditor = ({ Design, settings, update }) => {
 
   return (
     <div>
+      <h2>{t('editCurrentTitle')}</h2>
+      <p>{t('editCurrentDesc')}</p>
       {Design.patternConfig.measurements.map((m) => (
         <MeasieInput {...{ t, m, mset, onUpdate }} key={m}>
           <span className="label">{t(m)}</span>

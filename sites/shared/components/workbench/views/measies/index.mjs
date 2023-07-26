@@ -23,7 +23,7 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
       [['units'], set.imperial ? 'imperial' : 'metric'],
     ])
     setView('draft')
-    toast.success(t('updatedMeasurements'))
+    toast.success(t('appliedMeasies'))
   }
 
   return (

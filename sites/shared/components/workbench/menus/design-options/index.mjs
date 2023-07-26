@@ -1,3 +1,4 @@
+import { useCallback, useMemo } from 'react'
 // Components
 import { OptionsIcon } from 'shared/components/icons.mjs'
 import { optionsMenuStructure, optionType } from 'shared/utils.mjs'
@@ -50,6 +51,8 @@ const DesignOption = ({ config, settings, control, ...rest }) => {
   )
 }
 
+const getDocsPath = (option) =>
+  `designs/${design}/options${option ? '/' + option.toLowerCase() : ''}`
 /**
  * The design options menu
  * @param  {String}  options.design        the name of the design
@@ -71,9 +74,11 @@ export const DesignOptions = ({
   DynamicDocs = false,
 }) => {
   const menuNs = [`o_${design}`, ...ns]
-  const optionsMenu = optionsMenuStructure(patternConfig.options)
-  const getDocsPath = (option) =>
-    `designs/${design}/options${option ? '/' + option.toLowerCase() : ''}`
+  const optionsMenu = useMemo(() => optionsMenuStructure(patternConfig.options), [patternConfig])
+  const updateFunc = useCallback(
+    (name, value) => update.settings(['options', ...name], value),
+    [update]
+  )
 
   return (
     <WorkbenchMenu
@@ -91,7 +96,7 @@ export const DesignOptions = ({
         language,
         ns: menuNs,
         passProps: { settings, patternConfig },
-        updateFunc: (name, value) => update.settings(['options', ...name], value),
+        updateFunc,
       }}
     />
   )
