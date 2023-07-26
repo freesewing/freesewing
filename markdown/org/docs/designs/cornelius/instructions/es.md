@@ -9,7 +9,7 @@ title: "Pantalones de ciclista Cornelius: Instrucciones de costura"
 - _Hilvana_ los márgenes de costura de los bordes dentados de las carátulas de los bolsillos a las bolsas de los bolsillos.
 - Con los lados derechos juntos haciendo coincidir las muescas dobles, cose las bolsas de bolsillo a la parte delantera y luego presiona hacia el lado equivocado.
 - Dobla los bolsillos por la mitad siguiendo la línea de pliegue, con los lados derechos juntos. Cose el fondo de la bolsa de bolsillo.
--  Si lo prefieres, puedes unir las costuras inferiores de las bolsas con la costura francesa _.
+- Si lo prefieres, puedes unir las costuras inferiores de las bolsas con la _costura francesa_.
 - _Hilvana_ la parte superior y los laterales de las bolsas de los bolsillos a los márgenes de costura delanteros haciendo muescas matemáticas.
 
 <Note>
