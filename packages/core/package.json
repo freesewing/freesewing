@@ -32,7 +32,6 @@
   },
   "scripts": {
     "build": "node build.mjs",
-    "build:sitedeps": "yarn build",
     "build:all": "yarn build",
     "clean": "rimraf dist",
     "mbuild": "NO_MINIFY=1 node build.mjs",
@@ -47,7 +46,6 @@
     "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
     "jsdoc": "jsdoc -c jsdoc.json -r src",
     "wbuild": "node build.mjs",
-    "wbuild:sitedeps": "yarn wbuild",
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {},
