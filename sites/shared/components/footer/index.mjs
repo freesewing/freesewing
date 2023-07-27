@@ -3,6 +3,7 @@ import orderBy from 'lodash.orderby'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
 // Hooks
 import { useContext } from 'react'
+import { useTranslation } from 'next-i18next'
 // Components
 import Link from 'next/link'
 import { Ribbon } from 'shared/components/ribbon.mjs'
@@ -10,13 +11,15 @@ import { WordMark } from 'shared/components/wordmark.mjs'
 import { SocialIcons } from 'shared/components/social/icons.mjs'
 import { Sponsors, ns as sponsorsNs } from 'shared/components/sponsors/index.mjs'
 import { FreeSewingIcon } from 'shared/components/icons.mjs'
-export const ns = ['footer', ...sponsorsNs]
+
+export const ns = ['common', ...sponsorsNs]
 
 const onlyFooterLinks = (tree) => orderBy(tree, ['t'], ['asc']).filter((entry) => entry.f)
 
 export const Footer = () => {
   // Grab siteNav from the navigation context
   const { siteNav } = useContext(NavigationContext)
+  const { t } = useTranslation(ns)
 
   return (
     <footer className="bg-neutral">
@@ -26,10 +29,10 @@ export const Footer = () => {
         <div className="mt-4">
           <WordMark />
         </div>
-        <p className="text-neutral-content text-normal leading-5 text-center -mt-2 opacity-70">
-          Come for the sewing patterns
+        <p className="text-neutral-content text-normal leading-5 text-center -mt-2 opacity-70 font-normal">
+          {t('common:slogan1')}
           <br />
-          Stay for the community
+          {t('common:slogan2')}
         </p>
       </div>
 
