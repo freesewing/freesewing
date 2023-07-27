@@ -2984,6 +2984,21 @@
     golden-fleece "^1.0.9"
     pkg-dir "^5.0.0"
 
+"@sanity/cli@3.14.4":
+  version "3.14.4"
+  resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-3.14.4.tgz#9d5d9c3a1cf88dc428e90ce00e7647f0a2b47fcb"
+  integrity sha512-nLJKuChIgxUhjq9iKTOya7dkFYdKc3+/yU0S6pnFi2sJGOo6P1uBGX0vJ6a9t59tGFhXcTF4RyBvNAJAfc5WZw==
+  dependencies:
+    "@babel/traverse" "^7.19.0"
+    "@vercel/frameworks" "1.4.3"
+    "@vercel/fs-detectors" "4.1.0"
+    chalk "^4.1.2"
+    esbuild "^0.18.0"
+    esbuild-register "^3.4.1"
+    get-it "^8.0.9"
+    golden-fleece "^1.0.9"
+    pkg-dir "^5.0.0"
+
 "@sanity/client@^6.1.2", "@sanity/client@^6.1.5":
   version "6.1.7"
   resolved "https://registry.npmjs.org/@sanity/client/-/client-6.1.7.tgz"
