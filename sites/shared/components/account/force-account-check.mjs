@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 
-export const ForceAccountCheck = ({ showWelcome = false, trigger = null }) => {
+export const ForceAccountCheck = ({ trigger = null }) => {
   // Hooks
   const { account, setAccount, token, logout } = useAccount()
   const backend = useBackend(token)
@@ -24,6 +24,7 @@ export const ForceAccountCheck = ({ showWelcome = false, trigger = null }) => {
           // Login expired. Logout user.
           logout()
         }
+        setLastCheck(Date.now())
       }
       checkAccount()
     }
