@@ -1,6 +1,5 @@
 _:
   build: &build 'node build.mjs'
-  'build:sitedeps': 'yarn build'
   'build:all': 'yarn build'
   clean: 'rimraf dist'
   mbuild: &mbuild 'NO_MINIFY=1 node build.mjs'
@@ -37,13 +36,11 @@ new-design:
   test: '!'
   testci: '!'
   vbuild: '!'
-  'build:sitedeps': '!'
 rehype-highlight-lines:
   build: '!'
   mbuild: '!'
   vbuild: '!'
   'build:all': '!'
-  'build:sitedeps': '!'
   lint: "npx eslint 'src/*.mjs'"
 rehype-jargon:
   lint: "npx eslint 'src/*.mjs'"
@@ -74,9 +71,7 @@ dev:
   develop: *nextDev
   i18n: "SITE=dev node ../shared/prebuild/i18n-only.mjs"
   lint: &nextLint 'next lint'
-  buildsitedeps: &buildsitedeps 'npx lerna run build:sitedeps'
-  prebuild: 'yarn buildsitedeps && node --experimental-json-modules ./prebuild.mjs'
-  prebuildonly: 'node --experimental-json-modules ./prebuild.mjs'
+  prebuild: 'cd ../../ && yarn sitebuildconfigure && cd - && node --experimental-json-modules ./prebuild.mjs'
   predev: 'node --experimental-json-modules ./prebuild.mjs'
   serve: "pm2 start npm --name 'dev' -- run start"
   start: &nextStart 'yarn prebuild && yarn dev'
@@ -88,15 +83,12 @@ email:
 lab:
   build: *nextBuild
   cibuild: 'yarn build'
-  clean: 'rimraf pages/*.mjs && rimraf pages/*/*.mjs && rimraf pages/v/*/*.mjs'
   dev: *nextDev
   develop: *nextDev
   i18n: 'SITE=lab node ../shared/prebuild/i18n-only.mjs'
   e2e: &e2e 'yarn playwright test'
   lint: *nextLint
-  buildsitedeps: *buildsitedeps
-  prebuild: 'yarn buildsitedeps && node --experimental-json-modules ./prebuild.mjs'
-  prebuildonly: 'node --experimental-json-modules ./prebuild.mjs'
+  prebuild: 'cd ../../ && yarn sitebuildconfigure && cd - && node --experimental-json-modules ./prebuild.mjs'
   predev: 'node --experimental-json-modules ./prebuild.mjs'
   start: *nextStart
 
@@ -108,9 +100,7 @@ org:
   develop: *nextDev
   i18n: 'SITE=org node ../shared/prebuild/i18n-only.mjs'
   lint: *nextLint
-  buildsitedeps: *buildsitedeps
-  prebuild: 'yarn buildsitedeps && node --experimental-json-modules ./prebuild.mjs'
-  prebuildonly: 'node --experimental-json-modules ./prebuild.mjs'
+  prebuild: 'cd ../../ && yarn sitebuildconfigure && cd - && node --experimental-json-modules ./prebuild.mjs'
   predev: 'node --experimental-json-modules ./prebuild.mjs'
   start: *nextStart
 

@@ -72,9 +72,8 @@ export async function getStaticProps({ locale, params }) {
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticPaths() {
-  const somePaths = Object.keys(pages)
-    .filter((path) => path.split('/').length < 5)
-    .filter((path) => path !== 'docs')
+  const somePaths = Object.keys(pages).filter((path) => path !== 'docs')
+  //.filter((path) => path.split('/').length < 5)
 
   return {
     paths: [

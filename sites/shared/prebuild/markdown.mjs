@@ -81,12 +81,12 @@ const loadFolderFrontmatter = async (key, site, folder, transform = false, lang 
       /*
        * Add page to our object with slug as key and title as value
        */
-
-      let slug = prefix + chunks[0].slice(0, -3)
+      let slug = (prefix + chunks[0].slice(0, -3)).replace(`/./`, `/`)
       if (slug === prefix) slug = slug.slice(0, -1)
-      pages[lang][slug] = transform
-        ? transform(stripQuotes(chunks[1]), slug, lang)
-        : stripQuotes(chunks[1])
+      if (slug !== 'docs/.')
+        pages[lang][slug] = transform
+          ? transform(stripQuotes(chunks[1]), slug, lang)
+          : stripQuotes(chunks[1])
     }
   }
 

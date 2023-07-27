@@ -13,6 +13,7 @@ import {
 } from 'shared/components/icons.mjs'
 import { colors } from 'shared/components/wordmark.mjs'
 import { social } from 'config/social.mjs'
+import { siteConfig } from 'site/site.config.mjs'
 
 const iconClasses = (i) => ({
   className: `w-8 lg:w-12 h-8 lg:h-12 text-${colors[i]}-400 hover:text-neutral-content`,
@@ -21,7 +22,10 @@ const iconClasses = (i) => ({
 export const socialList = {
   MSF: {
     icon: <MsfIcon {...iconClasses(0)} fill />,
-    href: 'https://www.youtube.com/channel/UCLAyxEL72gHvuKBpa-GmCvQ',
+    href:
+      siteConfig.tld === 'org'
+        ? '/docs/various/pledge/'
+        : 'https://freesewing.org/docs/various/pledge',
     name: 'Doctors Without Borders / Médecins Sans Frontières',
     community: false,
   },

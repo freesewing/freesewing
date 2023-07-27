@@ -10,7 +10,7 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Components
 import { SetCandidate, ns as setNs } from 'shared/components/sets/set-candidate.mjs'
-import { PopoutWrapper } from 'shared/components/wrappers/popout/index.mjs'
+import { PopoutWrapper } from 'shared/components/wrappers/popout.mjs'
 import { Tag } from 'shared/components/tag.mjs'
 import { FilterIcon } from 'shared/components/icons.mjs'
 
