@@ -35,10 +35,14 @@ saveYourPattern: Speichere dein Muster
 giveItAName: Gib ihm einen Namen
 changeMeasies: Muster ändern Messungen
 editCurrentMeasies: Aktuelle Messwerte bearbeiten
+editCurrentMeasiesHeader: Edit Pattern Measurements
+editCurrentMeasiesDesc: Changes you make here will not be saved to your measurements sets, and will only affect this pattern.
 chooseNewSet: Wähle ein neues Maßnahmeset
 weLackSomeMeasies: Uns fehlen { nr } Messungen, um dieses Muster zu erstellen
 youCanPickOrEnter: Du kannst entweder einen Satz Messungen auswählen oder sie von Hand eingeben, aber ohne diese Messungen können wir nicht weitermachen.
 measiesOk: Wir haben alle erforderlichen Maße, um dieses Muster zu erstellen.
+seeMissingMeasies: See missing measurements
+appliedMeasies: We applied a new measurements set to this pattern.
 exportForPrinting: Für den Druck exportieren
 exportForEditing: Für die Bearbeitung exportieren
 exportAsData: Als Daten exportieren
