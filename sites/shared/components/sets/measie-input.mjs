@@ -101,7 +101,6 @@ export const MeasieInput = ({
   stopLoading = () => null,
 }) => {
   const isDegree = isDegreeMeasurement(m)
-  const factor = isDegree ? 1 : mset.imperial ? 25.4 : 10
   const units = mset.imperial ? 'imperial' : 'metric'
   const [val, setVal] = useState(() => {
     const measie = mset.measies?.[m]
@@ -123,7 +122,7 @@ export const MeasieInput = ({
         onUpdate(m, useVal)
       }
     },
-    [isDegree, setValid, setVal, onUpdate, units]
+    [isDegree, setValid, setVal, onUpdate, units, m]
   )
 
   const save = async () => {
@@ -139,7 +138,7 @@ export const MeasieInput = ({
     stopLoading()
   }
 
-  const fraction = (i, base) => update(Math.floor(('' + val).split(/[\s\.]/)[0]) + i / base)
+  const fraction = (i, base) => update(Math.floor(('' + val).split(/[\s.]/)[0]) + i / base)
 
   if (!m) return null
 

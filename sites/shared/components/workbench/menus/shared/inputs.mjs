@@ -20,8 +20,8 @@ import debounce from 'lodash.debounce'
 
 /** Regex to validate that an input is a number */
 const numberInputMatchers = {
-  0: /^\-?[0-9]*[.,eE]?[0-9]+$/, // match a single decimal separator
-  1: /^\-?[0-9]*(\s?[0-9]+\/|[.,eE])?[0-9]+$/, // match a single decimal separator or fraction
+  0: /^-?[0-9]*[.,eE]?[0-9]+$/, // match a single decimal separator
+  1: /^-?[0-9]*(\s?[0-9]+\/|[.,eE])?[0-9]+$/, // match a single decimal separator or fraction
 }
 
 /**
@@ -132,11 +132,12 @@ export const NumberInput = ({
 
 /** A component that shows a number input to edit a value */
 const EditCount = (props) => {
+  const { handleChange } = props
   const onUpdate = useCallback(
     (validVal) => {
-      if (validVal !== null && validVal !== false) props.handleChange(validVal)
+      if (validVal !== null && validVal !== false) handleChange(validVal)
     },
-    [props.handleChange]
+    [handleChange]
   )
 
   return (
@@ -422,11 +423,12 @@ export const PctInput = ({ current, changed, updateFunc, config, ...rest }) => {
 
 /** A {@see SliderInput} to handle degree values */
 export const DegInput = (props) => {
+  const { updateFunc } = props
   const degUpdateFunc = useCallback(
     (path, newVal) => {
-      props.updateFunc(path, newVal === undefined ? undefined : Number(newVal))
+      updateFunc(path, newVal === undefined ? undefined : Number(newVal))
     },
-    [props.updateFunc]
+    [updateFunc]
   )
   return <SliderInput {...props} suffix="°" valFormatter={round} updateFunc={degUpdateFunc} />
 }

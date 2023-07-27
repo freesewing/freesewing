@@ -51,8 +51,6 @@ const DesignOption = ({ config, settings, control, ...rest }) => {
   )
 }
 
-const getDocsPath = (option) =>
-  `designs/${design}/options${option ? '/' + option.toLowerCase() : ''}`
 /**
  * The design options menu
  * @param  {String}  options.design        the name of the design
@@ -78,6 +76,12 @@ export const DesignOptions = ({
   const updateFunc = useCallback(
     (name, value) => update.settings(['options', ...name], value),
     [update]
+  )
+
+  // FIXME How do we find inherited docs?
+  const getDocsPath = useCallback(
+    (option) => `designs/${design}/options${option ? '/' + option.toLowerCase() : ''}`,
+    [design]
   )
 
   return (

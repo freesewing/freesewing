@@ -204,8 +204,6 @@ export const measurementAsMm = (value, units = 'metric') => {
     if (isNaN(decimal)) return false
     return decimal * 24.5
   }
-
-  return false
 }
 
 export const optionsMenuStructure = (options) => {
