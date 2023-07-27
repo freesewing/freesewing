@@ -1,0 +1,30 @@
+{
+  "t": "Sven sweatshirt",
+  "d": "Sven is a straightforward sweater.",
+  "p": {
+    "back": "Back",
+    "cuff": "Cuff",
+    "front": "Front",
+    "sleeve": "Sleeve",
+    "waistband": "Waistband"
+  },
+  "s": {},
+  "o": {
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at your hips (the bottom of the sweater)"
+    },
+    "ribbing": {
+      "t": "Ribbing",
+      "d": "Whether to finish the hem and cuffs with ribbing or not."
+    },
+    "ribbingHeight": {
+      "t": "Ribbing height",
+      "d": "The height of the ribbing on cuffs and hem."
+    },
+    "ribbingStretch": {
+      "t": "Ribbing stretch",
+      "d": "The amount of negative ease to apply to the ribbing used for cuffs and hem."
+    }
+  }
+}

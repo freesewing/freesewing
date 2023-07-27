@@ -1,5 +1,5 @@
 ---
-title: "Penelope pencil skirt: Design Options"
+title: "Penelope Bleistiftrock: Design Optionen"
 ---
 
 <PatternOptions pattern='penelope' />

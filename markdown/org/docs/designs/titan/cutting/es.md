@@ -1,21 +1,21 @@
 ---
-title: "Titan trouser block: Cutting Instructions"
+title: "Bloque de pantalón Titan: Instrucciones de corte"
 ---
 
-**Main fabric**
+**Tela principal**
 
-- Cut **2 front** parts with _good sides together_
-- Cut **2 back** parts with _good sides together_
+- Corta **2 partes delanteras** con _los lados buenos juntos_
+- Corta **2 partes traseras** con _los lados buenos juntos_
 
-These cutting instructions are just for the default Titan block. Adjust your cutting accordingly if you have/are making changes to the block.
+Estas instrucciones de corte son sólo para el bloque Titán por defecto. Si has hecho o estás haciendo cambios al patrón base, ajusta tu corte como corresponda.
 
 <Note>
 
-###### Titan is a block, not a pattern
+###### Titán es un bloque, no un patrón
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Un bloque es una forma básica en la que se basan otros patrones.
+A veces también se llaman trampas, aunque los puristas argumentarán que un bloque y una inclinación son cosas diferentes.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Los bloques normalmente no se hacen as-is sino que sirven como base para otros patrones.
 
 </Note>

@@ -1,10 +1,10 @@
 ---
-title: "Armhole depth (Bella)"
+title: "Diepte armsgat (Bella)"
 ---
 
 ***
 
-Controls the armhole depth in the underlying Bella block Bee is based on
+Regelt de armsgatdiepte in het onderliggende Bella blok Bee is gebaseerd op
 
 ## Effect van deze optie op het patroon
 

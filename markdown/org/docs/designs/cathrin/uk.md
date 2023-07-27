@@ -1,5 +1,5 @@
 ---
-title: "Cathrin corset"
+title: "Корсет Катрін"
 ---
 
 <PatternDocs pattern='cathrin' />

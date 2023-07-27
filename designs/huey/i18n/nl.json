@@ -1,0 +1,44 @@
+{
+  "t": "Huey Hoodie",
+  "d": "Huey is een trui met kap met een rits, en optionele voorzakken.",
+  "p": {
+    "back": "Back",
+    "cuff": "Cuff",
+    "front": "Front",
+    "hood": "Hood",
+    "pocket": "Pocket",
+    "sleeve": "Sleeve",
+    "waistband": "Waistband"
+  },
+  "s": {},
+  "o": {
+    "pocket": {
+      "t": "Zak",
+      "d": "Of een voorzak moet worden toegevoegd of niet"
+    },
+    "pocketHeight": {
+      "t": "Zak hoogte",
+      "d": "Bepaalt de hoogte van de zak"
+    },
+    "hoodHeight": {
+      "t": "Capuchon hoogte",
+      "d": "Bepaalt de hoogte van de capuchon"
+    },
+    "hoodCutback": {
+      "t": "Capuchon inkorting",
+      "d": "Bepaalt hoever de capuchon opening is ingekort"
+    },
+    "hoodClosure": {
+      "t": "Capuchon sluiting",
+      "d": "Bepaalt hoeveel van de capuchon deel uitmaakt van de sluiting vooraan"
+    },
+    "hoodDepth": {
+      "t": "Capuchon diepte",
+      "d": "Bepaalt de diepte van de capuchon"
+    },
+    "hoodAngle": {
+      "t": "Capuchon hoek",
+      "d": "Bepaalt de hoek waaronder de capuchon is geplaatst"
+    }
+  }
+}

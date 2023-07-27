@@ -1,13 +1,13 @@
 ---
-title: "Penelope pencil skirt: Fabric Options"
+title: "Penelope kokerrok: Stof opties"
 ---
 
-### Main Fabric
+### Hoofd stof
 
-A pencil skirt is a rather formal cut, and most commonly is made in a suiting material. In other words, a **fine wool**. More casual options among **medium weight** fabrics include **cotton** or **denim**.
+Een kokerrok is een vrij formele snit en wordt meestal gemaakt van een suiting stof. Met andere woorden, een **fijne wol**. Meer casual opties onder de **middelzware** stoffen zijn **katoen** of **denim**.
 
-Using a fabric with some stretch will make it easier to get a comfortable fit and give you some more room to move about as pencil skirts fit rather tight. **Scuba** is often seen in pencil skirts as it is firm, has body but also stretchs.
+Using a fabric with some stretch will make it easier to get a comfortable fit and give you some more room to move about as pencil skirts fit rather tight. **Scuba** zie je vaak in kokerrokken omdat het stevig is, body heeft maar ook rekt.
 
-### Lining Fabric
+### Voering
 
-The lining fabric needs to be light, and allow the body to slide over it easily. You also don't want something to thick as this will be constricting. **Silky** fabrics are the go to choice as they are lightweight and slippery.
+De voeringstof moet licht zijn en het lichaam moet er gemakkelijk overheen glijden. Je wilt ook niet iets te diks, want dat werkt verstikkend. **Zijdeachtige** stoffen zijn de beste keuze omdat ze licht en glad zijn.

@@ -1,5 +1,5 @@
 ---
-title: "Chest ease"
+title: "Overwijdte borst"
 ---
 
 ![Overwijdte borst](chestease.svg)
@@ -14,4 +14,4 @@ Een gilet heeft geen mouwen, dus met een beetje overwijdte kom je al ver. Als je
 
 ## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](wahid_chestease_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](wahid_chestease_sample.svg "Effect van deze optie op het patroon")

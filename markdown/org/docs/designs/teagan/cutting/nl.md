@@ -1,5 +1,5 @@
 ---
-title: "Teagan T-shirt: Cutting Instructions"
+title: "Teagan T-shirt: Knip instructies"
 ---
 
 - Knip 1 achteraan de stofvouw.

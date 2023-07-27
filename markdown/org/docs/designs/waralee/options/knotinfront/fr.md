@@ -1,5 +1,5 @@
 ---
-title: "Knot in Front"
+title: "Nœud sur le devant"
 ---
 
-Normally the Waralee is closed with the tie in the front. This allows you to change that to a bow tie in the back.
+Normalement, le Waralee est fermé avec la cravate sur le devant. This allows you to change that to a bow tie in the back.

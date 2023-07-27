@@ -38,7 +38,7 @@ Eine Strickbindung ist weniger üblich, wird aber oft auf Unterhemden verwendet 
 > 
 > Auf einem T-Shirt wird die Erweiterung der Band am Hals die Öffnung des Hals verkleinern. Wenn Sie eine breitere Band wollen, müssen Sie ein größeres Loch in Ihr T-Shirt schneiden.
 > 
-> On an undershirt, if you want the knitwear binding at the neck to be wider, it will not make the neck opening smaller. Stattdessen wird die Bindung einfach weiter über das Unterhemdengewebe gelegt.
+> Wenn du bei einem Unterhemd möchtest, dass das Strickbündchen am Hals breiter ist, macht es die Halsöffnung nicht kleiner. Stattdessen wird die Bindung einfach weiter über das Unterhemdengewebe gelegt.
 
 ## Warum Strickbekleidungsbindung Dehnungen erfordert
 

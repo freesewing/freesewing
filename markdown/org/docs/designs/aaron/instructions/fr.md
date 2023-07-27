@@ -1,5 +1,5 @@
 ---
-title: "Débardeur Aaron (A-Shirt) : Instructions de couture"
+title: "Aaron A-Shirt : Instructions de couture"
 ---
 
 ## Étape 1 : Faire les coutures d'assemblage
@@ -61,7 +61,7 @@ La première chose à faire est de décider où démarrer/arrêter notre biais. 
 
 ### Placer (démarrer) votre biais
 
-![Placez (le début de) votre biais](step03b.png)
+![Placer (démarrer) votre biais](step03b.png)
 
 Posez votre débardeur avec le bon côté vers le haut, et placez votre bande de biais sur le dessus avec le bon côté vers le bas (c'est-à-dire les bons côtés ensemble).
 
@@ -87,7 +87,7 @@ De plus, nous ne commençons pas à notre point de départ, nous laissons les 3 
 
 ### Coudre le biais bien positionné
 
-![Coudre le biais en place](step03d.png)
+![Coudre le biais bien positionné](step03d.png)
 
 Cousez votre biais en vous assurant qu'il soit bien placé, tout en étirant délicatement le biais, mais pas le tissu. Assurez-vous de ne pas coudre les 3 derniers cm, laissez-les comme au début.
 
@@ -117,7 +117,7 @@ Pliez votre débardeur (A-shirt) de la façon dont il vous sera le plus facile p
 
 ### Terminer les 6 derniers cm de biais
 
-![Coudre les extrémités du biais ensemble](step03h.png)
+![Assembler les extrémités du biais](step03h.png)
 
 Maintenant que vos extrémités de biais sont réunies, il est temps de terminer les 6 derniers cm du biais. Cousez-les en restant à 1,5cm du bord comme vous l'avez fait auparavant.
 

@@ -74,7 +74,7 @@ function wahidPocketbag({
 }
 
 export const pocketBag = {
-  name: 'wahid.pocketbag',
+  name: 'wahid.pocketBag',
   after: front,
   draft: wahidPocketbag,
 }

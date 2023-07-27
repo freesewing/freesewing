@@ -1,13 +1,13 @@
 ---
-title: "Flat-felled seam allowace"
+title: "Costura plana permitida"
 ---
 
-Controls the amount of seam allowance on flat-felled seams.
+Controla la cantidad de margen de costura en las costuras planas.
 
-The armhole and side seams on the shirt are flat-felled seams, and those require extra seam allowance. How much is a matter of personal preference, since some people prefer wider flat-felled seams, while others have a preference for more narrow flat-felled seams.
+La sisa y las costuras laterales de la camisa son costuras planas, que requieren un margen de costura adicional. How much is a matter of personal preference, since some people prefer wider flat-felled seams, while others have a preference for more narrow flat-felled seams.
 
-This option controls the amount of flat-felled seam allowance as a factor of the regular seam allowance.
+Esta opción controla la cantidad de margen de costura plana como factor del margen de costura normal.
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_ffsa_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_ffsa_sample.svg "Efecto de esta opción en el patrón")

@@ -1,0 +1,60 @@
+menu: Menu
+draft: Draft
+test: Test
+printLayout: Print Layout
+cutLayout: Cut Layout
+save: Save
+export: Export
+edit: Edit
+reset: Reset
+help: Help
+name: Name
+width: Width
+height: Height
+length: Length
+topLeft: Top Left
+bottomRight: Bottom Right
+attributes: Attributes
+showAllParts: Show all pattern parts
+showOnlyThisPart: Show only this pattern part
+showMovableButtons: Buttons
+partInfo: Pattern part info
+pathInfo: Path info
+part: Pattern part
+draftPattern: Draft pattern
+testPattern: Test pattern
+savePattern: Save pattern
+editSettings: Edit configuration
+patternLogs: Pattern logs
+patternInspector: Pattern Inspector
+docs: Documentation
+configurePattern: Configure pattern
+measies: Pattern Measurements
+noDesignFound: We could not find this design. This shouldn't happen, so we'd really appreciate you reporting it.
+saveYourPattern: Save your pattern
+giveItAName: Give it a name
+changeMeasies: Change Pattern Measurements
+editCurrentMeasies: Edit Current Measurements
+editCurrentMeasiesHeader: Edit Pattern Measurements
+editCurrentMeasiesDesc: Changes you make here will not be saved to your measurements sets, and will only affect this pattern.
+chooseNewSet: Choose a New Measurements Set
+weLackSomeMeasies: We lack { nr } measurements to create this pattern
+youCanPickOrEnter: You can either pick a measurements set, or enter them by hand, but we cannot proceed without these measurements.
+measiesOk: We have all required measurements to create this pattern.
+seeMissingMeasies: See missing measurements
+appliedMeasies: We applied a new measurements set to this pattern.
+exportForPrinting: Export for printing
+exportForEditing: Export for editing
+exportAsData: Export as data
+exportPattern-txt: Export a PDF suitable for your printer, or download this pattern in a variety of formats
+exportPattern: Export pattern
+testThis.option: Test this option
+testThis.measurement: Test this measurement
+measurements.d: Test the effect of a measurement on the way this pattern looks
+designOptions.d: Test the effect of an option on the way this pattern looks
+testDesignThing: "Test {design}: {thing}"
+yamlEditViewTitleThing: 'Edit Pattern Configuration for {thing}'
+yamlEditViewError: Issues with YAML
+yamlEditViewErrorDesc: We saved your input, but it might not work for the following reasons
+saveSettings: Save Settings
+

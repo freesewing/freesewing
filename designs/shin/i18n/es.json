@@ -1,0 +1,36 @@
+{
+  "t": "Shin, bañador",
+  "d": "Shin es un bañador de tipo pantalón corto.",
+  "p": {
+    "back": "Atrás",
+    "front": "Frente",
+    "waistband": "Pretina"
+  },
+  "s": {},
+  "o": {
+    "legReduction": {
+      "t": "Reducción de pierna",
+      "d": "Reduce la apertura de la pierna para prevenir que se abra"
+    },
+    "elasticWidth": {
+      "t": "Elastic width",
+      "d": "Width of the elastic at the waist"
+    },
+    "stretch": {
+      "t": "Stretch",
+      "d": "The amount of stretch to design for."
+    },
+    "bulge": {
+      "t": "Bulge",
+      "d": "Controls the amount of extra room to create at the front of the trunks."
+    },
+    "rise": {
+      "t": "Rise",
+      "d": "Controls the height of the waist."
+    },
+    "backRise": {
+      "t": "Back rise",
+      "d": "Controls how much the waist is higher in the back than  the front."
+    }
+  }
+}

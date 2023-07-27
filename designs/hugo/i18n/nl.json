@@ -1,0 +1,29 @@
+{
+  "t": "Hugo hoodie",
+  "d": "Hugo is een trui met kap en een raglanmouw.",
+  "p": {
+    "back": "Back",
+    "cuff": "Cuff",
+    "front": "Front",
+    "hoodCenter": "Hood center",
+    "hoodSide": "Hood side",
+    "pocket": "Pocket",
+    "pocketFacing": "Pocket facing",
+    "sleeve": "Sleeve",
+    "waistband": "Waistband"
+  },
+  "s": {
+    "cuff": "Manchette",
+    "hoodCenter": "Capuchon midden",
+    "hoodSide": "Capuchon zijkant",
+    "pocketFacing": "Zak doublure",
+    "pocket": "Zak",
+    "waistband": "Tailleband"
+  },
+  "o": {
+    "hipsEase": {
+      "t": "Overwijdte heup",
+      "d": "De hoeveelheid overwijdte aan je heupen."
+    }
+  }
+}

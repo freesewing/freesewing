@@ -1,21 +1,21 @@
 ---
-title: "Noble body block: What You Need"
+title: "Благородний блок тіла: Що вам потрібно"
 ---
 
-To make Noble, you will need the following:
+Щоб зробити Noble, вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 0.5 metres (0.6 yards) of a suitable fabric ([see Noble Fabric options](/docs/patterns/noble/fabric/))
+- Базові матеріали для шиття
+- Приблизно 0,5 метра (0,6 ярдів) відповідної тканини ([див. варіанти благородної тканини](/docs/patterns/noble/fabric/)).
 
-This list is for a default Noble Block. If you have/are making changes to the block you may need to get additional items such as closures, binding etc.
+Цей список наведено для стандартного благородного блоку. Якщо ви вносили/вносите зміни до блоку, вам можуть знадобитися додаткові елементи, такі як закриття, прив'язка тощо.
 
 <Note>
 
-###### Noble is a block, not a pattern
+###### Noble - це блок, а не візерунок
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Блок - це базова форма, на якій базуються інші візерунки.
+Іноді їх ще називають слоуперами, хоча пуристи заперечать, що блок і слоупер - це різні речі.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Блоки, як правило, не створюються як такі, а слугують основою для інших візерунків.
 
 </Note>

@@ -1,0 +1,120 @@
+{
+  "t": "Bee, sujetador de bikini",
+  "d": "Bee el sujetador de un bikini",
+  "p": {
+    "bandTie": "Band Tie",
+    "cup": "Cup",
+    "neckTie": "Neck Tie"
+  },
+  "s": {},
+  "o": {
+    "chestEase": {
+      "t": "Holgura de pecho",
+      "d": "Controla la holgura del pecho en el patrón base (Bella) en el que se basa Bee"
+    },
+    "waistEase": {
+      "t": "Holgura de cintura",
+      "d": "Controla la holgura de cintura en el patrón base (Bella) en el que se basa Bee"
+    },
+    "bustSpanEase": {
+      "t": "Holgura alrededor del busto",
+      "d": "Controla la holgura de busto en el patrón base (Bella) en el que se basa Bee"
+    },
+    "topDepth": {
+      "t": "Límite superior",
+      "d": "Controla hasta qué punto la copa de bikini se extiende hacia arriba"
+    },
+    "bottomCupDepth": {
+      "t": "Límite inferior",
+      "d": "Controla hasta qué punto la copa de bikini se extiende hacia abajo"
+    },
+    "sideDepth": {
+      "t": "Límite lateral",
+      "d": "Controla hasta qué punto se extiende la copa del bikini hacia el lado"
+    },
+    "sideCurve": {
+      "t": "Curva lateral exterior",
+      "d": "Controla la curvatura del lado exterior de la copa del bikini"
+    },
+    "frontCurve": {
+      "t": "Curva lateral interior",
+      "d": "Controla la curvatura de la parte lateral interior de la copa del bikini"
+    },
+    "bellaGuide": {
+      "t": "Mostrar Bella",
+      "d": "Muestra el contorno del patrón base Bella en el que se basa Bee"
+    },
+    "ties": {
+      "t": "Cintas",
+      "d": "Sobre si incluir cintas o no"
+    },
+    "bandTieWidth": {
+      "t": "Ancho de la cinta del pecho",
+      "d": "Controla el ancho de las cintas alrededor del pecho"
+    },
+    "bandTieLength": {
+      "t": "Longitud de la cinta del pecho",
+      "d": "Controla la longitud de las cintas alrededor del pecho"
+    },
+    "bandTieEnds": {
+      "t": "Puntas de la cinta del pecho",
+      "d": "Si prefieres que las puntas de la cinta alrededor del pecho sean planas o acaben en punta"
+    },
+    "bandTieColours": {
+      "t": "Colores de la longitud de la cinta del pecho",
+      "d": "Sobre si quieres cintas de un solo color alrededor del pecho o de dos colores."
+    },
+    "neckTieWidth": {
+      "t": "Ancho de la cinta del cuello",
+      "d": "Controla el ancho de las cintas alrededor del pecho"
+    },
+    "neckTieLength": {
+      "t": "Longitud de la cinta del cuello",
+      "d": "Controla la longitud de las cintas alrededor del pecho"
+    },
+    "neckTieEnds": {
+      "t": "Puntas de la cinta del cuello",
+      "d": "Si prefieres que las puntas de la cinta alrededor del pecho sean planas o acaben en punta"
+    },
+    "neckTieColours": {
+      "t": "Colores de la cinta del cuello",
+      "d": "Sobre si quieres cintas de un solo color alrededor del pecho o de dos colores."
+    },
+    "crossBackTies": {
+      "t": "Cintas cruzadas",
+      "d": "Whether you'd like to use the cross back tie variation of Bee"
+    },
+    "bandLength": {
+      "t": "Band Length (Cross back ties)",
+      "d": "Controla la longitud de la cinta alrededor de tu pecho para la versión de tirantes cruzados de Bee"
+    },
+    "backDartHeight": {
+      "t": "Back dart height (Bella)",
+      "d": "Controla la altura de la pinza trasera en el patrón base Bella, en el que se basa Bee"
+    },
+    "armholeDepth": {
+      "t": "Armhole depth (Bella)",
+      "d": "Controla la profundidad de la sisa en el patron de base Bella en el que se basa Bee"
+    },
+    "frontArmholePitchDepth": {
+      "t": "Front armhole pitch depth (Bella)",
+      "d": "Controls the front armhole pitch depth in the underlying Bella block Bee is based on"
+    },
+    "frontShoulderWidth": {
+      "t": "Front shoulder width (Bella)",
+      "d": "Controla el ancho de hombros en el patrón de base Bella en el que se basa Bee"
+    },
+    "fullChestEaseReduction": {
+      "t": "Full chest reduction (Bella)",
+      "d": "Controls the full chest reduction in the underlying Bella block Bee is based on"
+    },
+    "highBustWidth": {
+      "t": "High bust width (Bella)",
+      "d": "Controls the high bust width in the underlying Bella block Bee is based on"
+    },
+    "shoulderToShoulderEase": {
+      "t": "Ancho de hombros (Bella)",
+      "d": "Controla el ancho de hombros en el patrón de base Bella en el que se basa Bee"
+    }
+  }
+}

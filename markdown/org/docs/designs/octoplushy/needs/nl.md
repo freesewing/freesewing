@@ -1,26 +1,26 @@
 ---
-title: "Octoplushy, the plushy octopus: What You Need"
+title: "Octoplushy, de pluchen octopus: Wat je nodig hebt"
 ---
 
-To make Octoplushy, you will need the following:
+Om Octoplushy te maken heb je het volgende nodig:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 1 meter (1.1 yards) of a suitable fabric (Upper body) ([see Octoplushy Fabric options](/docs/patterns/octoplushy/fabric/))
-- About 0.75 meters (0.85 yards) of a suitable fabric (Belly) ([see Octoplushy Fabric options](/docs/patterns/octoplushy/fabric/))
-- Either 2 buttons or a small piece of suitable unraveling, fabric for the eyes of the Octoplushy version
-- Small piece of black fabric for the pupils of the Squid and Octopus versions
-- Small piece of white fabric for the eyes of the Squid and Octopus versions
-- (Optional) Topstitch or Embroidery thread for the mouth of the Octoplushy version
-- Stuffing
+- [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
+- Ongeveer 1 meter van een geschikte stof (Bovenlichaam) ([zie Octoplushy Stofopties](/docs/patterns/octoplushy/fabric/))
+- Ongeveer 0,75 meter van een geschikte stof (Belly) ([zie Octoplushy stofopties](/docs/patterns/octoplushy/fabric/))
+- Ofwel 2 knopen of een klein stukje geschikte rafelende stof voor de ogen van de Octoplushy versie
+- Klein stukje zwarte stof voor de pupillen van de inktvis- en octopusversies
+- Klein stukje witte stof voor de ogen van de inktvis- en octopusversies
+- (Optioneel) doorstiksteek of borduurgaren voor de mond van de Octoplushy versie
+- Vulling
 
 <Note>
 
-This list is based on a default Octoplushy and you may need less or more fabric dependant on the [size you are making Octoplushy](/docs/patterns/octoplushy/options/size/). 
+Deze lijst is gebaseerd op een standaard Octoplushy en het kan zijn dat je minder of meer stof nodig hebt, afhankelijk van de [grootte die je Octoplushy maakt] (/docs/patterns/octoplushy/options/size/). 
 
-The amount of fabric required is also dependant on the [type of Octoplushy you are making](/docs/patterns/octoplushy/options/type/).
-- The Octopus version requires about 50% more fabric than the Octoplushy version.
-- The Squid version requires about 75% more fabric than the Octoplushy version.
+De hoeveelheid stof die nodig is hangt ook af van het [type Octoplushy dat je maakt](/docs/patterns/octoplushy/options/type/).
+- De Octopus versie heeft ongeveer 50% meer stof nodig dan de Octoplushy versie.
+- De Squid versie heeft ongeveer 75% meer stof nodig dan de Octoplushy versie.
 
-The color of the pupils and eyes for the Squid and Octopus versions are up to you, but for clarification and simplicity the pupils will be referred to as black and the eyes will be referred to as white in the documentation.
+De kleur van de pupillen en ogen voor de inktvis- en octopusversies kun je zelf bepalen, maar voor de duidelijkheid en eenvoud worden de pupillen zwart genoemd en de ogen wit in de documentatie.
 
 </Note>

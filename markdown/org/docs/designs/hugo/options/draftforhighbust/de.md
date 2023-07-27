@@ -2,7 +2,7 @@
 title: Schnittkonstruktion für Oberbrustumfang
 ---
 
-Erstelle das Schnittmuster augfgrund des Oberbrustumfanges (wenn vorhanden) und nicht nach dem Brustumfang (an der stärksten Stelle). Das Kleidungsstück wird figurnaher ausfallen für Menschen mit Brüsten.
+Erstelle das Schnittmuster augfgrund des Oberbrustumfanges (wenn vorhanden) und nicht nach dem Brustumfang (an der stärksten Stelle). Das Kleidungsstück wird figurnaher ausfallen für Personen mit Brüsten.
 
 ## Effekt dieser Option auf das Schnittmuster
 

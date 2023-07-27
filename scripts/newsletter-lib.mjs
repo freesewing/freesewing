@@ -98,7 +98,7 @@ const send = async (test = true) => {
             },
             Subject: {
               Charset: 'utf-8',
-              Data: 'FreeSewing newsletter: Spring 2023',
+              Data: 'FreeSewing newsletter: Autumn 2023',
             },
           },
         },

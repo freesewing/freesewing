@@ -1,5 +1,5 @@
 ---
-titre : "Facilité de l'aisance du buste"
+title: "Aisance de l'écart poitrine"
 ---
 
 ***

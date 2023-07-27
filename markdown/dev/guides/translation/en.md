@@ -2,102 +2,191 @@
 title: Translation guide
 ---
 
-FreeSewing is proudly multilingual, and we currently support five languages.
-For this, we rely on the work of our translators who volunteer their
-time to translate FreeSewing into various languages from English, which
-is our source language.
+Supporting multiple languages is one of the best way to promote inclusion and
+accessibility.  Thanks to the efforts of our community, FreeSewing is proudly
+multilingual.
 
-This translation guide will tell you everything you need to
-know to join the effort as a translator for FreeSewing.
+This translation guide covers everything you need to know to join the effort of
+translating FreeSewing into other languages.
 
-<Tip>
+## Supported Languages
 
-##### TL;DR: Becoming a FreeSewing translator
+FreeSewing is currently available in the following languages:
 
-Our translation project on Crowdin is accessible
-via [translate.freesewing.org](https://translate.freesewing.org).
+| Code | Language       | Website |
+| ----:|:-------------- |:------- |
+| `de` | **German**     | https://de.freesewing.org/ |
+| `en` | **English**    | https://en.freesewing.org/ |
+| `es` | **Spanish**    | https://es.freesewing.org/ |
+| `fr` | **French**     | https://fr.freesewing.org/ |
+| `nl` | **Dutch**      | https://nl.freesewing.org/ |
+| `uk` | **Ukranian**   | https://uk.freesewing.org/ |
 
-To get started, you will need to be invited as a translator. No need to worry,
-simply [let us know you'd like to help out](https://discord.freesewing.org/) and we'll add you.
-
-For access to Strapi, you will need an account on [our Strapi instance](https://posts.freesewing.org/).
-Here too, [Discord is the place to let us know you'd like to help out](https://discord.freesewing.org/).
-
-Bonus: You'll get an `@freesewing.org` email alias
-
-</Tip>
-
-## Languages
-
-We currently support the following five languages:
-
-- **en** : English
-- **de** : German
-- **es** : Spanish
-- **fr** : French
-- **nl** : Dutch
-
-<Note>
-
-If you'd like to start working on a new language, that's great, but a bit
-beyond the scope of this documentation. Before you start working on a new language
-please [come and talk to us on Discord](https://discord.freesewing.org).
-
+<Note compact>
+English is the translation source language and the working language of the FreeSewing project
 </Note>
 
-## Translation in Crowdin vs Strapi
+## Become a FreeSewing translator
 
-We use two different tools to manage our translations, depending on the context:
+To gain access as a FreeSewing translator, you will need an invite.
+You can request a translator invite with the link below.
+When you do, we will send you an email with all further instructions.
 
-- Markdown content and code strings in our monorepo are translated within **Crowdin**
-- Blog and showcase posts are translated within **Strapi**
+<Link compact>
+
+###### [Request a FreeSewing translator invite](https://next.freesewing.org/translation/join)
+</Link>
+
+<Fixme compact>This link above still needs to be implemented in the new v3
+website</Fixme>
 
 <Tip>
 
-##### Translation priorities
+We also have [a dedicated __Translation__ channel on
+Discord](https://discord.freesewing.org) for any questions that may remain.
+</Tip>
 
-If you'd like to help out, please join our translation team on Crowdin.
+## Adding a new language
 
-While it can be nice to have blog and showcase posts translated, these are less important than the
-translation work in Crowdin which is about the documentation and strings that allow people to
-use FreeSewing in a different language.
+We would love to make FreeSewing available in more langauges. If you are
+interested in starting a new translation effort, that is great.
+
+We ask that you familiarize yourself with this translation guide to understand
+what it takes to add a new language. Then if you can submit your request to setup
+a new language with the link below.
+
+<Link compact>
+
+###### [Suggest a new FreeSewing language](https://next.freesewing.org/translation/suggest-language)
+</Link>
+
+<Fixme compact>
+This link above still needs to be implemented in the new v3 website
+</Fixme>
+
+<Tip>
+
+##### Get the band together
+
+We recommend finding some like-minded people who can help translating.
+
+While the core materials of FreeSewing can realistically be handled by one
+person, translating all of FreeSewing's documentation and content realistically
+is a job you should not undertake on your own.
 
 </Tip>
 
-### Crowdin
+<Comment by="joost"           >
 
-Most translation happens in Crowdin ([crowdin.com](https://crowdin.com/)), an online translation platform
-that makes translation and collaboration a breeze.
+##### Do or do not. There is no try.
 
-In Crowdin, all text is broken up into lines, words, or paragraphs that are then translated.
-This not only facilitates collaboration — as rather than work on one large block of text,
-various people can jump in and translate smaller snippets — it also enforces a strict one-to-one
-match between the English source material and the translation.
+There is a certain cost to adding a new language.  It's not a cost in money,
+but rather in increased bandwidth, storage requirements, build times,
+repository size, test times, and so on.
 
-This strict correlation is important. People who refer to the documentation in a different language
-expect to find the same structure, the same amount of headings, paragraphs, and so on.
+It's a cost we are __more than happy__ to pay for the benefit gaining another
+langauge.  But it is also a cost that needs to be paid up front, at the start
+of the effort.
 
-### Strapi
+So, without wanting to discourage anyone, I would really like to avoid a
+scenario where people enthusiastically start working on a new languages, only
+to lose interest days or weeks later and see the effort falter.
 
-Strapi ([strapi.io](https://strapi.io/)) is a so-called _headless content management system (CMS)_.
-"_Headless_" just means that we load the content from it via an API, rather than have it be part of our
-website like a classic CMS (eg. Wordpress).
+With that out of the way, I hope to see many more languages being added in the
+future.
 
-In Strapi, we keep our blog posts and showcases for freesewing.org.
-We also keep our newsletter editions and developer blog posts for freesewing.dev there, but since
-those are not translated, we will ignore them in this guide.
+</Comment>
 
-Strapi supports different language versions for posts, but it's not a translation system like Crowdin
-that breaks text down into small parts to translate.
-Instead, each post can be translated as a whole, and there is no enforcement whatsoever of structure or
-content between the versions for different language.
+## Translation status
 
-In other words, a translated blog post could use a different structure or even different images.
-This is by design, because we want to encourage the different (non-English) FreeSewing communities
-to make FreeSewing their own, by writing blog posts that are relevant or specific to them.
+The status of the ongoing translation work is available at
+[FreeSewing.org/translation](https://freesewing.org/translation).
 
-This also means that English does not have to be the source language in Strapi.
-Somebody could write a French blog post (for example) which can then be translated to English.
+It's a good place to check what languages need extra help, and which are
+leading the scoreboard.
+
+## Translation priorities
+
+To fully translate FreeSewing, the following types of content needs to be
+translated:
+
+### Top priority: UX Translations
+These are translations the directly impact
+the user experience (_UX_).  They include the content used in design, the names
+of options, translations of menus, emails, and so on.
+
+This is a relatively small amount of text, and makes up less than 10% of the
+top & high priority content.  It's an effort that a motivated translator can
+complete over the course of a weekend.
+
+<Tip>
+The top-priority translations in Crowdin are everything under the `packages`
+and `sites` folder. Do this first.
+</Tip>
+
+### High priority: Translation of Documenation
+This includes all the documentation on FreeSewing.org.
+
+This is a significant amount of text that makes up more than 90% of the top &
+high priority content.  It's an effort you should probably not take on by
+yourself, but rather tackle with a team of translators.
+
+<Tip>
+The high-priory translations in Crowdin is everything under the
+`markdown/org/docs` folder.
+</Tip>
+
+### Low Priority: Content of blog and showcase posts, and newsletters
+This is _nice to have_ as people can use and navigate FreeSewing even when this
+content remains untranslated.
+
+<Tip>
+The low-priory translations in Crowdin is everything under the
+`markdown/org/blog`, `markdown/org/showcase`, and `markdown/org/newsletter` folders.
+</Tip>
+
+## Translation through Crowdin
+
+All of our translation work is handled through [Crowdin](https://crowdin.com/), 
+an online platform to facilitate translation.
+
+<Tip compact>
+
+You can reach the FreeSewing project on Crowdin directly via
+[translate.freesewing.org](https://translate.freesewing.org).
+</Tip>
+
+Crowdin is configured to automatically detect all of the various translation
+files in our repository, upload them to the platform, and break them apart into
+bite-sized portions that you can translate in a collaborative way. 
+Rather than work on one large block of text, various people can jump in and
+translate smaller snippets,
+
+Once translated, there is a proofreading step that will be handled by one of
+our proofreaders. This is often a formality, but it's an extra step to allow
+qulity assurance and avoid any mistakes from slipping in. Much like the code
+review process when you submit a pull request on GitHub.
+
+Once your translation is approved, Crowdin will automatically submut a pull
+request on GitHub to update the translation files in our repository. And the
+next time our website or software packages get build, they will include the new
+translations.
+
+## Machine translation
+
+While everybody knows that translation is best when it's done by a human being, 
+we also have to be realistic that the growing body of documentation and other 
+FreeSewing content can be a daunting task to take on for translators, especially
+when you want to start a new language.
+
+Furtunately, machine translation has gotten rather good so we can get some help.
+Our Crowdin project is integrated with a [DeepL](https://www.deepl.com) 
+subscription, and this can be a great help to translators.
+
+You can use the DeepL suggestions when translating, or there is also the possibility
+to machine-translate entire files or folders. For example, you may start a new 
+language by machine-translating everything, and then focus on proofreading the
+top-priority content, and then move on to the high-priority content.
 
 ## Syntax
 
@@ -131,3 +220,11 @@ looks like this in Spanish
 ```yaml
 {field} guardado
 ```
+
+## Questions, Suggestions, Discussion
+
+If you have questions, suggestions, or would like to discuss
+translation-related matters, please join
+[discord.freesewing.org](https://discord.freesewing.org/) and head to the
+__Translation__ channel.
+

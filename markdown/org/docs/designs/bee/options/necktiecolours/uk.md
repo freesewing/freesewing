@@ -1,11 +1,11 @@
 ---
-title: "Neck tie colours"
+title: "Кольори краваток на шиї"
 ---
 
 ***
 
-Whether you want single color ties around your neck, or dual-coloured ones
+Незалежно від того, чи хочете ви носити одноколірні краватки на шиї, чи двоколірні
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_necktiecolours_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bee_necktiecolours_sample.svg "Вплив цієї опції на шаблон")

@@ -1,81 +1,81 @@
 ---
-title: "Noble body block: Sewing Instructions"
+title: "Благородний боді-блок: Інструкція з пошиття"
 ---
 
 <Note>
 
-###### Noble is a block, not a pattern
+###### Noble - це блок, а не візерунок
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Блок - це базова форма, на якій базуються інші візерунки.
+Іноді їх ще називають слоуперами, хоча пуристи заперечать, що блок і слоупер - це різні речі.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Noble block.
+Блоки, як правило, не виготовляються як є, а слугують основою для інших візерунків, тому наведені нижче інструкції не будуть детально описувати закриття або оздоблення і стосуються блоку Noble за замовчуванням.
 
-Noble is based on the Bella body block
+Noble базується на корпусі Bella
 
 </Note>
 
-### Step 1: Mock-up Construction
+### Крок 1: Створення макета
 
-- Sew the front inside to the front outside, _good sides together_.
+- Пришийте лицьовий бік до лицьового боку, _лицьові боки разом_.
 
-### Shoulder seam
+### Плечовий шов
 
-- Sew the back inside to the back outside, _good sides together_.
+- Пришийте спинку виворотом до спинки лицьовим боком до лицьового боку, _лицьові боки разом_.
 
-### Armhole seam
+### Шов пройми
 
-- Close the back darts.
+- Закрийте задні виточки.
 
-### Both
+### Обидва
 
-- Sew the front to the backs at the shoulders, _good sides together_.
-- Sew the front to the backs at the side seams, _good sides together_.
+- Пришийте перед до спинки на рівні плечей, _лицьовими сторонами разом_.
+- Пришийте перед до спинки по бокових швах, _гарні боки разом_.
 
 <Tip>
 
-If you are making adjustments you may wish to sew the seams _wrong sides together_ to make them easier to adjust.
+Якщо ви вносите корективи, можливо, ви захочете зшити шви "виворітними сторонами разом", щоб їх було легше відрегулювати.
 
 </Tip>
 
-### Step 2: Try it on
+### Крок 2: Приміряйте його
 
-- Try it on and check the fit by pinning the back closed whilst wearing it.
-- Make any alterations and try it on again.
-- Repeat until you are happy.
+- Приміряйте його та перевірте посадку, закріпивши спинку шпилькою.
+- Внесіть будь-які зміни та приміряйте його ще раз.
+- Повторюйте, поки не отримаєте задоволення.
 
 <Tip>
 
-If you do not have someone to help with pinning, you may find it easier to cut the front part in two with seam allowance rather than on a fold and sew the back seam up so that you can pin in the front when trying on.
+Якщо у вас немає нікого, хто міг би допомогти з приколюванням, ви можете розрізати передню частину навпіл з припусками на шви, а не по згину, і зшити задній шов так, щоб можна було приколоти спереду під час примірки.
 
-Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Things like these are signs of where the pattern may need adjusting.
+Слідкуйте за тим, що ви робите, коли носите макет, чи не тягнете ви його вниз? Постійно регулюєте плече? і т.д. Такі речі є ознаками того, що шаблон може потребувати коригування.
 
-Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
+Іноді вам може знадобитися носити макет протягом тривалого часу, щоб краще відчути, як він сидить, тому не бійтеся походити в ньому пару годин.
 
 </Tip>
 
 <Note>
 
-Remember to treat Noble as a basis rather than a final product, so adjust what you need to get the desired look.
-For instance:
+Пам'ятайте, що Noble - це основа, а не кінцевий продукт, тож додайте до нього все, що вам потрібно, щоб отримати бажаний вигляд.
+Наприклад:
 
-- Change the neck line
-- Add/change the closure allowances
-- Alter the princess seam placements
-- Alter the back dart placements.
-- Add a collar
+- Змінити лінію горловини
+- Додати/змінити припуски на застібку
+- Змінити розташування шва "принцеса"
+- Змінити розташування задньої виточки.
+- Додайте нашийник
 
-It is all up to you! Experiment and go forth!
+Все залежить від вас! Експериментуйте і вперед!
 
 </Note>
 
-### Step 3: Make a paper pattern
+### Крок 3: Зробіть паперовий шаблон
 
-- Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
-- Now you have a pattern you can use to produce a garment.
+- Коли ви будете задоволені всіма змінами, візьміть макет і зробіть на його основі паперовий шаблон.
+- Тепер у вас є викрійка, яку ви можете використати для виготовлення виробу.
 
 <Note>
 
-It is best practice to make a paper pattern from the mock-up if you have made any alterations, as this will allow you to clean up any lines but also means you have a pattern that you can keep producing garments from.
+Найкраще зробити паперову викрійку з макета, якщо ви внесли якісь зміни, оскільки це дозволить вам прибрати всі лінії, а також означатиме, що у вас є викрійка, за якою ви можете продовжувати виготовляти одяг.
 
 </Note>

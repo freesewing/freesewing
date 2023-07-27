@@ -1,9 +1,9 @@
 ---
-title: "Fabric stretch Y"
+title: "Розтяжка тканини Y"
 ---
 
-Controls the stretch in vertical direction.
+Контролює розтягнення у вертикальному напрямку.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](unice_fabricstretchy_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](unice_fabricstretchy_sample.svg "Вплив цієї опції на шаблон")

@@ -1,11 +1,11 @@
 ---
-title: "Armhole depth (Bella)"
+title: "Глибина пройми (Белла)"
 ---
 
 ***
 
-Controls the armhole depth in the underlying Bella block Bee is based on
+Контролює глибину пройми в базовому блоці Bella Bee на основі
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_armholedepth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bee_armholedepth_sample.svg "Вплив цієї опції на шаблон")

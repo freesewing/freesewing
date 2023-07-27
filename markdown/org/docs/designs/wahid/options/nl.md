@@ -1,5 +1,5 @@
 ---
-title: "Wahid waistcoat: Design Options"
+title: "Wahid vest: Ontwerpopties"
 ---
 
 <PatternOptions pattern='wahid' />

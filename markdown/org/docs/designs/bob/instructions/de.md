@@ -1,48 +1,48 @@
 ---
-title: "Bob the Bib: Sewing Instructions"
+title: "Bob das Lätzchen: Anleitung zum Nähen"
 ---
 
 <Note>
 
-#### Before we start: One layer or two?
+#### Bevor wir anfangen: Eine Schicht oder zwei?
 
-First thing you need to figure out is whether you're going to make a 1-layer (simple) bib,
-or do you want to make one out of two layers.
+Als Erstes musst du dir überlegen, ob du ein einlagiges (einfaches) Lätzchen
+oder eines aus zwei Lagen machen willst.
 
-A two-layer bib gives you more options, as you can use an absorbent backing layer like
-terrycloth, yet still have the entire cotton selection of your local fabric store available
-as your choice for the front layer, aka the visible one.
+Ein zweilagiges Lätzchen gibt dir mehr Möglichkeiten, da du eine saugfähige Unterlage wie
+Frottee verwenden kannst, aber trotzdem die gesamte Baumwollauswahl deines örtlichen Stoffladens zur Verfügung hast
+als deine Wahl für die vordere Lage, also die sichtbare.
 
 </Note>
 
-## Step 1: Optional: Join layers
+## Schritt 1: Optional: Ebenen verbinden
 
-If you decide to go for two layers, simply join them together at the edges before applying the bias tape.
+Wenn du dich für zwei Lagen entscheidest, füge sie einfach an den Kanten zusammen, bevor du das Schrägband anbringst.
 
-You probably want to pin or bast this prior to sewing. The two different types of fabric will behave differently, so secure them in place prior to sewing the together.
+Wahrscheinlich willst du das vor dem Nähen feststecken oder heften. Die beiden verschiedenen Arten von Stoff verhalten sich unterschiedlich, deshalb solltest du sie vor dem Zusammennähen sichern.
 
-Make sure to sew close to the edge so that the stitches will be under the bias tape finish later.
+Achte darauf, dass du dicht an der Kante nähst, damit die Stiche später unter dem Schrägband liegen .
 
-## Step 2: Apply bias tape
+## Schritt 2: Schrägband anbringen
 
-Wer're going to apply bias tape as a finish around the entire edge of the bib.
+Wir werden den gesamten Rand des Lätzchens mit Schrägband abschließen.
 
-You probably want to start at the bottom strap, as this way the joint of the bias seam will be covered when the bib is worn.
+Wahrscheinlich möchtest du am unteren Träger beginnen, denn so wird die Naht des Schrägbandes verdeckt, wenn das Lätzchen getragen wird.
 
-Just work your way around, and take your time.
+Arbeite dich einfach vor und lass dir Zeit.
 
 <Fixme>
 
-Provide generic instructions for sewing bias tape
+Allgemeine Anweisungen zum Nähen von Schrägband bereitstellen
 
 </Fixme>
 
-## Step 3: Install snaps or button
+## Schritt 3: Druckknöpfe oder Knopf anbringen
 
-Next, install the snaps on the straps, as indicated on the pattern.
+Als Nächstes bringst du die Druckknöpfe an den Trägern an, wie auf dem Muster angegeben.
 
-If you don't have or want snaps, you can also use a button + buttonhole.
+Wenn du keine Druckknöpfe hast oder möchtest, kannst du auch einen Knopf mit Knopfloch verwenden.
 
-## Step 4: You're done!
+## Schritt 4: Du bist fertig!
 
-That was easy 😃
+Das war einfach 😃.

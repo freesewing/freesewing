@@ -1,5 +1,5 @@
 ---
-title: "Unice undies: Design options"
+title: "Calzoncillos Unice: Opciones de diseño"
 ---
 
 <PatternOptions pattern='unice' />

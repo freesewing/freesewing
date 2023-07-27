@@ -1,0 +1,48 @@
+{
+  "t": "Holmes deerstanker hoed",
+  "d": "Voor als je Sherlock Holmes wil spelen, of gewoon een leuk hoedje zoekt.",
+  "p": {
+    "ear": "Ear",
+    "gore": "Gore",
+    "visor": "Visor"
+  },
+  "s": {},
+  "o": {
+    "headEase": {
+      "t": "Overwijdte hoofd",
+      "d": "De hoeveelheid overwijdte rond je hoofd."
+    },
+    "lengthRatio": {
+      "t": "Lengteratio",
+      "d": "Controls the length of the crown and ear flaps"
+    },
+    "gores": {
+      "t": "Aantal panden",
+      "d": "The number of gores used to construct the crown"
+    },
+    "visorAngle": {
+      "t": "Visor hoek",
+      "d": "The arc angle used to draft the inner curve of the visor"
+    },
+    "visorWidth": {
+      "t": "Visor breedte",
+      "d": "Bepaalt de breedte van de visor"
+    },
+    "earLength": {
+      "t": "Ear flap length",
+      "d": "Controls the length of the ear flaps independently from the crown pieces"
+    },
+    "earWidth": {
+      "t": "Ear flap width",
+      "d": "Controls the width of the ear flaps"
+    },
+    "buttonhole": {
+      "t": "Buttonhole guide",
+      "d": "Adds a buttonhole to the ear flap to help you draft the buttonhole ear flap variant"
+    },
+    "visorLength": {
+      "t": "Visor lengte",
+      "d": "Bepaalt de lengte van de visor"
+    }
+  }
+}

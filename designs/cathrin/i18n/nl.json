@@ -1,0 +1,49 @@
+{
+  "t": "Cathrin korset",
+  "d": "Cathrin is een underbust korset of waist trainer.",
+  "p": {
+    "base": "Basis",
+    "panel1": "Deel 1",
+    "panel2": "Deel 2",
+    "panel3": "Deel 3",
+    "panel4": "Deel 4",
+    "panel5": "Deel 5",
+    "panel6": "Deel 6",
+    "panels": "Panelen"
+  },
+  "s": {},
+  "o": {
+    "panels": {
+      "t": "Aantal panelen",
+      "d": "Het aantal panelen. Meer panelen werken beter voor een ronder figuur."
+    },
+    "waistReduction": {
+      "t": "Reductie taille",
+      "d": "Hoeveel smaller je wil dat het korset je taille maakt."
+    },
+    "backOpening": {
+      "t": "Opening rug",
+      "d": "Opening aan de sluiting op de middenrug."
+    },
+    "backRise": {
+      "t": "Hoogte achter",
+      "d": "Hoe ver de rugpanden stijgen van je armen tot je middenrug."
+    },
+    "backDrop": {
+      "t": "Verlaging rug",
+      "d": "Hoeveel lager de rugpanden worden vanaf de heupen tot de middenrug. Een negatieve waarde maakt ze hoger."
+    },
+    "frontRise": {
+      "t": "Hoogte voorpand",
+      "d": "De hoogte van de panelen middenvoor, tussen je borsten. Een negatieve waarde maakte ze lager."
+    },
+    "frontDrop": {
+      "t": "Verlaging voorpand",
+      "d": "Hoeveel de voorpanden verlagen van je heupen tot middenvoor."
+    },
+    "hipRise": {
+      "t": "Hoogte heup",
+      "d": "Hoe hoog de zijpanelen vallen op je heupen."
+    }
+  }
+}

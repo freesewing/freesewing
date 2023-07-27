@@ -32,7 +32,7 @@ const DynamicBio = dynamic(
 const WelcomeBioPage = ({ page }) => (
   <PageWrapper {...page} layout={BareLayout} footer={false}>
     <DynamicAuthWrapper>
-      <div className="m-auto max-w-lg text-center lg:mt-24 p-8">
+      <div className="m-auto max-w-lg text-center lg:mt-4 p-8">
         <DynamicBio title welcome />
       </div>
     </DynamicAuthWrapper>

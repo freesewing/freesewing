@@ -1,16 +1,16 @@
 ---
-title: "Bent body Block: Fabric Options"
+title: "Gebogen lichaam Blok: Stof Opties"
 ---
 
-If you are making a default Bent to see how it fits we recommend a fabric such as **Calico (Muslin)** or a cheaper fabric that matches the drape and stretch of the fabric you intend to make a finalised version of Bella with.
+Als je een standaard Bent maakt om te zien hoe hij past, raden we een stof aan zoals **Calico (Muslin)** of een goedkopere stof die overeenkomt met de drapering en stretch van de stof waarmee je een definitieve versie van Bella wilt maken.
 
-You can use scraps of fabrics from your stash so don't worry about buying fabric specifically for Bent.
+Je kunt restjes stof uit je stash gebruiken, dus maak je geen zorgen over het kopen van stof speciaal voor Bent.
 
 <Note>
 
-###### Bent is a block, not a pattern
+###### Bent is een blok, geen patroon
 
-A block is a basic shape on which other patterns are based.
+Een blok is een basisvorm waarop andere patronen zijn gebaseerd.
 Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.
 
 Blokken worden meestal niet gemaakt zoals is, maar dienen als basis voor andere patronen.

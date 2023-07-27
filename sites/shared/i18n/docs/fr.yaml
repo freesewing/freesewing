@@ -1,0 +1,24 @@
+account: Compte
+docs: Documentation
+controltip.t: Le pouvoir face à la simplicité
+controltip.d1: Le paramètre <b>Power versus Simplicity</b> de ton compte FreeSewing aura un impact sur ton expérience du site FreeSewing.
+controltip.d2: Par défaut, certaines des fonctionnalités les plus avancées de ce site sont cachées pour permettre aux nouveaux utilisateurs de s'y retrouver plus facilement.
+controltip.d3: Si tu veux sacrifier une partie de cette simplicité pour gagner en puissance, tu peux mettre à jour ton paramètre Puissance contre Simplicité en conséquence.
+helpWithDocs: Aide-nous à améliorer notre documentation
+authors: Les auteurs
+maintainers: Mainteneurs
+lastUpdated: Dernière mise à jour
+editThisPage: Éditer cette page
+years: années
+months: mois
+days: jours
+oneDay: un jour
+lessThanADay: moins d'un jour
+ago: il y a
+helpImproveDocs: Aide-nous à améliorer la documentation de FreeSewing
+helpTranslateDocs: Aide-nous à traduire la documentation de FreeSewing
+learnMore: En savoir plus
+toc: Table des matières
+credits: Crédits
+contentsBy: Contenu par
+translators: Traducteurs

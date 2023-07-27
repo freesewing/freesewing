@@ -1,10 +1,10 @@
 ---
-title: "Sleevecap top X"
+title: "Tête de manche top X"
 ---
 
-![La position horizontale du haut de la tête de manche](./sleevecaptopfactorx.svg)
+![L'emplacement horizontal du haut du chapeau de manche](./sleevecaptopfactorx.svg)
 
-Contrôle l'emplacement horizontal de la tête de manche.
+Cette option contrôle la position horizontale du dessus du tête de manche.
 
 <Tip>
 
@@ -14,4 +14,4 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_sleevecaptopfactorx_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_sleevecaptopfactorx_sample.svg "Effet de cette option sur le motif")

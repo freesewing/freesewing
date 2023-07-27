@@ -1,5 +1,5 @@
 ---
-title: "Veston Wahid"
+title: "Gilet Wahid"
 ---
 
 <PatternDocs pattern='wahid' />

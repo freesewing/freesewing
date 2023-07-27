@@ -1,10 +1,10 @@
 ---
-title: "Unice undies: Instructions"
+title: "Трусики Unice: Інструкція"
 ---
 
 <Note>
 
-Please refer to [the Ursula instructions](/docs/patterns/ursula/instructions) as
-Ursula's construction is identical to Unice.
+Будь ласка, зверніться до [інструкції Ursula] (/docs/patterns/ursula/instructions), оскільки
+конструкція Ursula ідентична Unice.
 
 </Note>

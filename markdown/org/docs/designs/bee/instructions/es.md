@@ -1,128 +1,128 @@
 ---
-title: "Bee bikini top: Sewing Instructions"
+title: "Top de bikini Bee: Instrucciones de costura"
 ---
 
 <Warning>
-Make sure to use a stretch stitch
+Asegúrate de utilizar una puntada elástica
 </Warning>
 
 <Note>
 
-When making a reversible top the second colour will be refered to as the lining fabric.  
-The notches in this pattern act more like dots so **do not** clip them to mark them.
+Cuando hagas un top reversible, el segundo color se denominará tela del forro.  
+Las muescas de este patrón actúan más bien como puntos, así que **no** las recortes para marcarlas.
 
 </Note>
 
-### Step 1: Construct the Neck Ties
+### Paso 1: Construye los lazos para el cuello
 
-#### Neck Ties One Colour Method
+#### Corbatas Método de un color
 
-- Fold one of the neck tie pieces in half lengthwise, right sides and raw edges together.
-- Sew along the raw edges, leaving one of the short ends open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out and press.
+- Dobla una de las piezas del lazo para el cuello por la mitad longitudinalmente, con los lados derechos y los bordes crudos juntos.
+- Cose a lo largo de los bordes sin coser, dejando abierto uno de los extremos cortos.
+- Recorta los márgenes de costura y recorta las esquinas.
+- Dale la vuelta y presiona.
 
-<Note>Repeat this for the other neck tie</Note>
+<Note>Repite la operación con el otro lazo del cuello</Note>
 
-#### Neck Ties Two Colours Method
+#### Corbatas Método Bicolor
 
-- With right sides together, sew one main neck tie to one lining neck tie leaving one of the short edges open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out. Alísala.
+- Con los lados derechos juntos, cose un lazo de cuello principal a un lazo de cuello de forro dejando abierto uno de los bordes cortos.
+- Recorta los márgenes de costura y recorta las esquinas.
+- Gira al revés. Alísala.
 
-<Note>Repeat this for the the remaining neck tie pieces</Note>
+<Note>Repite la operación con el resto de los trozos de corbata</Note>
 
-### Step 2: The Cups
+### Paso 2: Las copas
 
-#### Band Tie Variant
+#### Variante de Corbata de Banda
 
-- With raw edges and main fabric together, _baste_ one of the neck ties to the top of one of the cup pieces making sure that the tie goes towards the bottom of the cup.
-- With the neck tie sandwiched inside, pin a lining cup piece right sides together to the main cup piece.
-- Sew the lining to the main cup between notches along the front, top and side seams, making sure not to catch the neck tie and to reinforce the stitch at the notches.
-- (Optional) Fold to the wrong side and _edgestitch_ the seam allowance down between notches on the front and side seams. Do not sew the allowances together.
-- With good sides together, sew the lining to the main fabric along the bottom, leaving a gap between the side notches making sure to reinforce the stitch at the either end.
-- Trim the seam allowances of the sewn edges whilst leaving the seam allowance between the notches. Clip the corners. You may also need to clip the curved seams.
-- Turn inside out by pulling the neck tie through one of the gaps. Alísala.
-- (Optional) _edgestitch_ the top, sides and bottom of the cup leaving the gaps between the notches open.
-- Stitch along casing line to create band channel.
+- Con los bordes crudos y la tela principal juntos, _hilvana_ uno de los lazos del cuello a la parte superior de una de las piezas de la copa asegurándote de que el lazo va hacia la parte inferior de la copa.
+- Con el lazo del cuello dentro, sujeta con alfileres una pieza de la copa del forro con los lados derechos juntos a la pieza de la copa principal.
+- Cose el forro a la copa principal entre muescas a lo largo de las costuras delantera, superior y laterales, asegurándote de no enganchar el lazo del cuello y de reforzar la puntada en las muescas.
+- (Opcional) Dobla hacia el revés y _edgestitch_ el margen de costura hacia abajo entre las muescas de las costuras frontal y laterales. No cosas los márgenes.
+- Con los lados bien juntos, cose el forro a la tela principal a lo largo de la parte inferior, dejando un hueco entre las muescas laterales asegurándote de reforzar la puntada en ambos extremos.
+- Recorta los márgenes de costura de los bordes cosidos dejando el margen de costura entre las muescas. Recorta las esquinas. Puede que también tengas que recortar las costuras curvas.
+- Dale la vuelta tirando del lazo del cuello por uno de los huecos. Alísala.
+- (Opcional) _edgestitch_ la parte superior, los lados y el fondo de la copa dejando abiertos los huecos entre las muescas.
+- Cose a lo largo de la línea de la carcasa para crear el canal de la banda.
 
-<Note>Repeat this for the other cup</Note>
+<Note>Repite la operación con la otra taza</Note>
 
 <Tip>
 
-If your seam allowance is wide you may find that you need to trim the gaps' seam allowances a little to reduce bulk.  
-If you are having trouble turning the cups you can try one of these methods:
+Si tu margen de costura es ancho, puede que necesites recortar un poco los márgenes de costura de los huecos para reducir el volumen.  
+Si tienes problemas para girar las copas, puedes probar uno de estos métodos:
 
-- Create a 2.5cm (1") gap in the front or side seam and turn throught that, either _slipstitch_-ing the gap closed or _edgestitch_-ing it closed during Step 7.
-- Widen one of the existing gaps and turn through that. Then when turned _edgestitch_ or _slipstitch_ the widened part closed.
+- Crea un hueco de 2,5 cm (1") en la costura frontal o lateral y gira a través de él, _cosiendo_ el hueco o _cosiéndolo_ durante el paso 7.
+- Ensancha uno de los huecos existentes y gira a través de él. Luego, al girar el _edgestitch_ o el _slipstitch_ se cierra la parte ensanchada.
 
 </Tip>
 <Note>
 
-Whilst certainly optional it is recommended to _edgestitch_ the top and sides of the cups but the bottom is entirely optional.
+Aunque ciertamente es opcional, se recomienda _edgestich_ la parte superior y los laterales de las copas, pero la parte inferior es totalmente opcional.
 
 </Note>
 
 #### Cross Back Ties Variant
 
-- With raw edges and main fabric together, _baste_ one of the neck ties to the top of one of the cup pieces making sure that the tie goes towards the bottom of the cup.
-- With the neck tie sandwiched inside, pin a lining cup piece right sides together to the main cup piece.
-- Sew the lining to the main cup along the front, top and side seams, making sure not to catch the neck tie.
-- Turn the cups right side out and press.
-- (Optional) _edgestitch_ the top and sides of the cups.
-- Sew a line of basting stitches along the bottom of the cups, just inside the seamline.
-- Gather cups along the basting stitches.
+- Con los bordes crudos y la tela principal juntos, _hilvana_ uno de los lazos del cuello a la parte superior de una de las piezas de la copa asegurándote de que el lazo va hacia la parte inferior de la copa.
+- Con el lazo del cuello dentro, sujeta con alfileres una pieza de la copa del forro con los lados derechos juntos a la pieza de la copa principal.
+- Cose el forro a la copa principal a lo largo de las costuras delantera, superior y laterales, asegurándote de no enganchar el lazo del cuello.
+- Da la vuelta a las tazas y presiona.
+- (Opcional) _edgestitch_ la parte superior y los lados de las copas.
+- Cose una línea de puntadas de hilván a lo largo de la parte inferior de las copas, justo por dentro de la línea de costura.
+- Junta las copas a lo largo de los puntos de hilván.
 
 <Tip>
 
-The amount you gather the cups is a matter of preference and cup size, but you can hold them up to yourself before stitching in place to ensure the fit is right.  
-There are also notches on either side of the band piece's midpoint to help give you an idea of how much to gather by.
+El grado de fruncido de las copas depende de tus preferencias y del tamaño de las copas, pero puedes sujetarlas contra ti antes de coserlas para asegurarte de que se ajustan bien.  
+También hay muescas a ambos lados del punto medio de la pieza de la banda para ayudarte a hacerte una idea de cuánto debes recoger.
 
 </Tip>
 
-- Find the midpoint of the band piece, this is marked by a notch, then pin the gathered bottoms of cups to band piece, right sides together. You'll want the cups to meet at the band's midpoint.
-- Stitch the cups to the band. Once they're stitched in place, check the fit of the cups once more before continuing. Unpicking swim fabric is a pain, so it's better to make sure the cups fit just right before moving on.
+- Busca el punto medio de la banda, que está marcado por una muesca, y sujeta con alfileres los bajos fruncidos de las copas a la banda, con los lados derechos juntos. Querrás que las copas se junten en el punto medio de la banda.
+- Cose las copas a la banda. Una vez cosidas en su sitio, comprueba el ajuste de las copas una vez más antes de continuar. Deshacer la tela de baño es un coñazo, así que es mejor asegurarse de que las copas se ajustan bien antes de seguir adelante.
 
 <Note>
 
-You may prefer to wrap the one cup over the other at the midpoint. To do this place the sides of the cups at the otuer notches and lay their fronts pass the midpoint with the left on top.
+Tal vez prefieras envolver una copa sobre la otra en el punto medio. Para ello, coloca los laterales de las copas en las muescas otuernas y coloca sus frentes pasando el punto medio con el izquierdo encima.
 
 </Note>
 
-- Now it's time to finish the band. To do this, fold in the seam allowance on both sides of the band. The raw edges of your swim cups should be turned to the inside of the band. Then, fold the band in half lengthwise, aligning the long edges and enclosing the seam allowances. Swim fabric can be slippery, so you may need extra pins or clips to hold the fabric in place.
-- Stitch along the top of the band, securing the seam allowances within the band.
+- Ahora es el momento de terminar la banda. Para ello, dobla el margen de costura a ambos lados de la banda. Los bordes crudos de las copas de baño deben girarse hacia el interior de la banda. Después, dobla la banda por la mitad longitudinalmente, alineando los bordes largos y encerrando los márgenes de costura. La tela de baño puede ser resbaladiza, por lo que es posible que necesites alfileres o pinzas adicionales para mantener la tela en su sitio.
+- Cose a lo largo de la parte superior de la banda, asegurando los márgenes de costura dentro de la banda.
 
 <Tip>
 
-For extra support, you can also add swim elastic into the band, either by stitching clear elastic into the band's seam allowance, or by threading swim elastic through the band at this point.
+Para una mayor sujeción, también puedes añadir elástico de natación a la banda, bien cosiendo elástico transparente en el margen de costura de la banda, bien enhebrando elástico de natación a través de la banda en este punto.
 
 </Tip>
 
-- At this point, the band is a long tube with open ends. Next, we'll be sewing those closed while providing a loop to thread your neck ties through. To do this fold over one end of the band towards the inside of the swim top. The amount you fold over should be, at minimum, the width of your neck ties plus a seam allowance. Stitch the end down to create a loop at least as wide as your neck ties. There will be a lot of pressure on this point, so make sure your stitching is secure, and consider running a second line of stitching next to the first, for additional support. Repeat for the other end of the band.
-- To thread your neck-ties for cross back ties, take the tie from the left cup and thread it through the loop on the right side of the band, from top to bottom. Thread the tie from the right cup top-to-bottom through the loop on the left side of the band. Then tie the neck ties at center back to secure the swim top.
-- Skip to "Step 5: Enjoy!"
+- En este punto, la banda es un tubo largo con los extremos abiertos. A continuación, las coseremos para cerrarlas y dejaremos un lazo para pasar los lazos del cuello. Para ello, dobla un extremo de la banda hacia el interior del bañador. La cantidad que dobles debe ser, como mínimo, la anchura de los lazos del cuello más un margen de costura. Cose el extremo hacia abajo para crear un bucle al menos tan ancho como tus lazos para el cuello. Habrá mucha presión en este punto, así que asegúrate de que las puntadas sean firmes, y considera la posibilidad de colocar una segunda línea de puntadas junto a la primera, para mayor sujeción. Repite la operación con el otro extremo de la banda.
+- Para enhebrar tus corbatas para lazos cruzados en la espalda, coge la corbata de la copa izquierda y pásala por el lazo del lado derecho de la banda, de arriba abajo. Pasa el lazo de la copa derecha de arriba abajo por el lazo del lado izquierdo de la banda. A continuación, anuda los lazos del cuello en el centro de la espalda para sujetar el top de baño.
+- Salta a "Paso 5: ¡Disfruta!"
 
-### Step 3: Band tie
+### Paso 3: Anudar la cinta
 
-You only need to do this step if making the band tie variant.
+Sólo tienes que hacer este paso si haces la variante de la cinta de atar.
 
-#### Band Tie One Colour Method
+#### Cinta de atar Método de un color
 
-- Fold the band tie piece in half lengthwise, right sides and raw edges together.
-- Sew along the raw edges, leaving one of the short ends open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out. Alísala.
+- Dobla el trozo de cinta de atar por la mitad longitudinalmente, con los lados derechos y los bordes crudos juntos.
+- Cose a lo largo de los bordes sin coser, dejando abierto uno de los extremos cortos.
+- Recorta los márgenes de costura y recorta las esquinas.
+- Gira al revés. Alísala.
 
-#### Band Tie Two Colours Method
+#### Cinta de atar Método de dos colores
 
-- With right sides together, sew the main band tie to the lining neck tie leaving one of the short edges open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out. Alísala.
+- Con los lados derechos juntos, cose el lazo de la cinta principal al lazo del cuello del forro dejando abierto uno de los bordes cortos.
+- Recorta los márgenes de costura y recorta las esquinas.
+- Gira al revés. Alísala.
 
-### Step 4: Putting it all together.
+### Paso 4: Ponerlo todo junto.
 
-- Thread the band tie through the gaps along the bottom edge of the cups, making sure the front sides of the cups are in the centre and that the main and lining sides are on the respective side.
+- Pasa la cinta de atar por los huecos a lo largo del borde inferior de las copas, asegurándote de que los lados delanteros de las copas queden en el centro y de que los lados principal y del forro queden en el lado respectivo.
 
 ### Paso 5: ¡Disfrútalo!
 
-Hooray, your Bee Bikini Top is finished!
+Hurra, ¡tu Top de Bikini Abeja está terminado!

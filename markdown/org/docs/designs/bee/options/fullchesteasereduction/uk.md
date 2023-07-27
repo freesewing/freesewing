@@ -1,11 +1,11 @@
 ---
-title: "Full chest reduction (Bella)"
+title: "Повне зменшення грудної клітки (Bella)"
 ---
 
 ***
 
-Controls the full chest reduction in the underlying Bella block Bee is based on
+Контролює повне скорочення грудної клітки в базовому блоці Bella Блок Bee заснований на
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_fullchesteasereduction_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bee_fullchesteasereduction_sample.svg "Вплив цієї опції на шаблон")

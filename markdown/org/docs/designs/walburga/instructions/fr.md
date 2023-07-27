@@ -1,37 +1,37 @@
 ---
-title: "Walburga Wappenrock: Sewing Instructions"
+title: "Walburga Wappenrock : Instructions de couture"
 ---
 
 <Note>
 
-Walburga is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. Vous le faites.
+Walburga est un modèle d'inspiration historique, et si tu veux plus d'authenticité, la couture à la main s'impose. Personnellement, j'utilise une machine à coudre. Faites comme vous voulez.
 
 </Note>
 
-### Step 1: Sew shoulder seams
+### Étape 1 : Coudre les coutures des épaules
 
-- Put front and back pieces with good sides together. Sew the shoulder seams, taking care to stop at the notches for the head opening.
+- Mets les pièces avant et arrière avec les bons côtés ensemble. Couds les coutures des épaules, en prenant soin de t'arrêter aux encoches pour l'ouverture de la tête.
 
-### Step 2: Finish seams and head opening
+### Étape 2 : Finir les coutures et l'ouverture de la tête
 
-- Finish the seams and the raw edges at the head opening, with a method of your choice. (If you used the fabrics recommended in the [fabric options](/docs/patterns/walburga/fabric), they _will_ fray. Folding the seam allowance twice, enclosing the raw edge and topstitching is an option. You can also use decorative topstitching.)
+- Finis les coutures et les bords bruts au niveau de l'ouverture de la tête, avec la méthode de ton choix. (Si tu as utilisé les tissus recommandés dans les options de tissu [](/docs/patterns/walburga/fabric), ils _s'effilocheront_ . Plier deux fois la marge de couture, entourer le bord brut et surpiquer est une option. Tu peux aussi utiliser des surpiqûres décoratives).
 
-### (Optional) Step 3: Cut slits
+### (Facultatif) Étape 3 : Découper des fentes
 
-_This step is optional, you can also opt not to cut slits. If so, continue with step 4._
+_Cette étape est facultative, tu peux aussi choisir de ne pas découper de fentes. Si c'est le cas, passe à l'étape 4._
 
 <Warning>
 
-If you cut slits, there will be no seam (or hem) allowance to finish the edge there. Think about this before you cut.
+Si tu découpes des fentes, il n'y aura pas de marge de couture (ou d'ourlet) pour finir le bord à cet endroit. Réfléchis à cela avant de couper.
 
 </Warning>
 
-- Cut into your fabric until the notch, both on the front and back piece.
+- Découpe dans ton tissu jusqu'à l'encoche, aussi bien sur la pièce avant que sur la pièce arrière.
 
-### Step 4: Finish edges
+### Étape 4 : Finir les bords
 
-- Finish the edges of the garment. This is a good time to use bias tape or similar to enclose the raw edge (especially if you cut slits in step 3). This step can take some time, so be patient.
+- Finis les bords du vêtement. C'est le bon moment pour utiliser du ruban de biais ou autre pour entourer le bord brut (surtout si tu as découpé des fentes à l'étape 3). Cette étape peut prendre un certain temps, alors sois patient.
 
-### Step 5: That's it!
+### Étape 5 : C'est tout !
 
-C'est terminé ! You could now appliqué/embroider/otherwise attach a symbol or heraldics of your choice onto your garment.
+Vous avez terminé ! Tu peux maintenant appliquer, broder ou attacher un symbole ou des symboles héraldiques de ton choix sur ton vêtement.

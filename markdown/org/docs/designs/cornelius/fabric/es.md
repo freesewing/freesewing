@@ -1,33 +1,33 @@
 ---
-title: "Cornelius cycling breeches: Fabric Options"
+title: "Pantalón de ciclismo Cornelius: Opciones de tejido"
 ---
 
 ### Tela principal
 
-Any **bottom (trouser) weight material** will work fine for this pattern. Generally you want to avoid anything that is over 7oz (230gsm) as this will more likely be too stiff and uncomfortable. You want something that provides a bit of warmth whilst still being able to drape such as **Corduroy** or **Medium Weight Suiting** fabrics. If you are looking for someting more historically correct, then **Medium weight wool suiting** is the way to go. **Linen** is also an option, especially if you would like something that isn't too warm.
+Cualquier material de peso inferior (pantalón) de **** funcionará bien para este patrón. Por lo general, debes evitar todo lo que pese más de 230 g/m², ya que lo más probable es que sea demasiado rígido e incómodo. Quieres algo que proporcione un poco de calor y que, al mismo tiempo, sea capaz de drapear, como los tejidos **Corduroy** o **Medium Weight Suiting** . Si buscas algo más históricamente correcto, entonces **Traje de lana de peso medio** es el camino a seguir. **El lino** también es una opción, sobre todo si quieres algo que no abrigue demasiado.
 
 <Note>
 
-Remember that this garment is intended for cycling so needs to be able to move with your legs when pedalling!
+Recuerda que esta prenda está pensada para el ciclismo, por lo que debe poder moverse con tus piernas al pedalear.
 
 </Note>
 
-### Lining (Pocket) Fabric
+### Tejido del forro (bolsillo)
 
-Basic **Cotton** will do the trick for the pocket bags. If you got left over cotton from another project you can easily use it up for these pockets. Remember that these are intended for cycling so you don't want anything too fancy.
+El algodón básico **** servirá para las bolsas de bolsillo. Si te ha sobrado algodón de otro proyecto, puedes utilizarlo fácilmente para estos bolsillos. Recuerda que están pensados para el ciclismo, por lo que no querrás nada demasiado lujoso.
 
 <Note>
 
-If you have anything you typically use for pockets in trousers that will work too.
+Si tienes algo que utilices habitualmente para los bolsillos de los pantalones, también te servirá.
 
 </Note>
 
 ### Interfaz
 
-This pattern requires the waistband to be interfaced. We recommend using a **Hair Cloth** for the interfacing, you can either use fusible or non-fusible which ever you prefer. If you do not have access to hair cloth you can use any medium to firm interfacing you deem appropriate for waistbands.
+Este patrón requiere que la cintura esté entretelada. Te recomendamos que utilices una tela de pelo **** para la entretela, puedes utilizar fusible o no fusible, lo que prefieras. Si no tienes acceso a tela de pelo, puedes utilizar cualquier entretela de firmeza media que consideres apropiada para las cinturas.
 
 <Note>
 
-If your main fabric is quite light, you may need to interface your leg bands and zipper guard with a light weight interfacing.
+Si tu tejido principal es bastante ligero, puede que necesites intercalar las bandas de las perneras y el protector de la cremallera con una entretela ligera.
 
 </Note>

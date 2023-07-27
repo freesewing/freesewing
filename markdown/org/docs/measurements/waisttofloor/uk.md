@@ -1,9 +1,9 @@
 ---
-title: Waist to floor
+title: Від талії до підлоги
 ---
 
-The **waist to floor** is the measurement from your waist down to the floor.
+Вимір **від талії до підлоги** — це довжина від талії до підлоги.
 
-To measure your waist to floor measurement, locate the height of your waist, and measure how high it is from the floor.
+Для зняття цієї мірки визначте висоту положення Вашої талії та простягніть сантиметр вертикально до підлоги.
 
-It is often easiest to measure at the side of your body.
+Зазвичай цю мірку найлегше вимірювати збоку ноги.

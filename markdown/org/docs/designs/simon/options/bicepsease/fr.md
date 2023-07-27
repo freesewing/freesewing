@@ -1,5 +1,5 @@
 ---
-titre : "Aisance aux biceps"
+title: "Aisance au niveau des biceps"
 ---
 
 ![Aisance au niveau des biceps](./bicepsease.svg)
@@ -24,4 +24,4 @@ Nous nous efforcerons de respecter votre choix ici, mais la priorité est d'ajus
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_bicepsease_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_bicepsease_sample.svg "Effet de cette option sur le motif")

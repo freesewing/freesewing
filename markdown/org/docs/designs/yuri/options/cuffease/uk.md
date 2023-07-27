@@ -1,9 +1,9 @@
 ---
-title: "Cuff ease"
+title: "Легкість манжети"
 ---
 
-This option controls the ease at your wrist.
+Ця опція контролює легкість на зап'ясті.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](yuri_cuffease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](yuri_cuffease_sample.svg "Вплив цієї опції на шаблон")

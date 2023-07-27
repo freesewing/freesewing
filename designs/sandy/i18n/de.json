@@ -1,0 +1,47 @@
+{
+  "t": "Sandy, der Tellerrock",
+  "d": "Sandy ist ein anpassungsfähiges Tellerrockschnittmuster.",
+  "p": {
+    "skirt": "Skirt",
+    "waistband": "Waistband"
+  },
+  "s": {},
+  "o": {
+    "waistbandWidth": {
+      "t": "Taillenbundweite",
+      "d": "Kontrolliert die Weite des Taillenbundes."
+    },
+    "waistbandPosition": {
+      "t": "Position des Taillenbundes",
+      "d": "Legt die Position des Taillenbundes fest."
+    },
+    "waistbandShape": {
+      "t": "Taillenbundform",
+      "d": "Hier stellen Sie ein, on sie einen geraden oder einen körpergeformten Bund wollen."
+    },
+    "circleRatio": {
+      "t": "Kreisverhältnis",
+      "d": "Die Prozente eines Kreises aus dem Sie den Rock erstellen möchten."
+    },
+    "waistbandOverlap": {
+      "t": "Überlappung des Taillenbundes",
+      "d": "Der Betrag, mit dem sich der Taillenbund überlappt."
+    },
+    "gathering": {
+      "t": "Kräuseln",
+      "d": "Der Prozentsatz um welcher die Oberkante des Rockteils länger ist als die Unterkante des Bundes."
+    },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "Determines how long the skirt will be."
+    },
+    "seamlessFullCircle": {
+      "t": "Nahtloser Vollkreis",
+      "d": "Aktiviert einen nahtlosen Vollkreis für das Rockteil."
+    },
+    "hemWidth": {
+      "t": "Saumbreite",
+      "d": "Breite des Saumes"
+    }
+  }
+}

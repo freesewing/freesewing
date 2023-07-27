@@ -1,10 +1,10 @@
 ---
-title: "Unice undies: Instructions"
+title: "Unice Unterhosen: Anleitung"
 ---
 
 <Note>
 
-Please refer to [the Ursula instructions](/docs/patterns/ursula/instructions) as
-Ursula's construction is identical to Unice.
+Bitte sieh dir [die Ursula-Anleitung](/docs/patterns/ursula/instructions) an, denn
+Ursulas Konstruktion ist identisch mit der von Unice.
 
 </Note>

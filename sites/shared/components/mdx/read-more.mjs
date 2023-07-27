@@ -1,27 +1,12 @@
 import get from 'lodash.get'
-import orderBy from 'lodash.orderby'
 import Link from 'next/link'
 import { useContext } from 'react'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
-import { useNavigation } from 'site/hooks/use-navigation.mjs'
+import { BulletIcon, RightIcon } from 'shared/components/icons.mjs'
+import { pageHasChildren } from 'shared/utils.mjs'
+import orderBy from 'lodash.orderby'
 
-const baseClasses =
-  'text-base-content no-underline inline-block hover:text-secondary hover:underline'
-const classes = [
-  `text-3xl font-bold py-2 ${baseClasses} list-disc`,
-  `text-2xl font-bold py-1 ${baseClasses}`,
-  `text-xl font-medium ${baseClasses}`,
-  `text-lg font-medium ${baseClasses}`,
-]
-
-const getClasses = (level) => classes[level] || `text-normal font-regular ${baseClasses}`
-
-// Helper method to filter out the real children
-const order = (obj) => orderBy(obj, ['o', 't'], ['asc', 'asc'])
-const currentChildren = (current) =>
-  Object.values(order(current)).filter((entry) => typeof entry === 'object')
-
-const getRoot = {
+export const getRoot = {
   dev: (root, nav) => {
     if (!root) return nav
     if (root.indexOf('/') === -1) return nav[root]
@@ -30,20 +15,62 @@ const getRoot = {
   org: (root, nav) => {
     // Fixme: make this work for org
     if (!root) return nav
-    if (root.indexOf('/') === -1) return get(nav, ['docs', root])
+    if (root.indexOf('/') === -1) return get(nav, root)
     return get(nav, root.split('/'))
   },
 }
 
-export const ReadMore = ({
-  recurse = 0,
-  root = false,
-  site = 'org',
-  level = 0,
-  pretty = false,
-}) => {
-  const { slug } = useContext(NavigationContext)
-  const siteNav = useNavigation()
+/*
+ * This is a recursive function, so it needs to be lean
+ */
+const RenderTree = ({ tree, recurse, depth = 1, level = 0 }) => {
+  const orderedTree = orderBy(tree, ['o', 't'], ['asc', 'asc']).filter(
+    (item) => typeof item === 'object'
+  )
+
+  return (
+    <ul className="w-full list">
+      {orderedTree.map((item, i) => {
+        /*
+         * Does this have children?
+         */
+        const hasChildren =
+          recurse && (!depth || level < depth) && pageHasChildren(item)
+            ? item.s.replaceAll('/', '')
+            : false
+
+        /*
+         * The rotation of the chevron should in principle be possible with Tailwind's group variant modifiers
+         * However, despite my best efforts, I can't seem to make it work. So this relies on a bit of CSS.
+         * The 'summary-chevron' class is what does the trick.
+         */
+        return (
+          <li key={i} className="w-full flex flex-row items-start gap-0.5 lg:gap-1">
+            {hasChildren ? (
+              <details className={`w-full inline flex flex-row`}>
+                <summary className="hover:bg-opacity-20 bg-secondary bg-opacity-0 block w-full flex flex-row items-center gap-0.5 lg:gap-1 px-1 lg:px-2">
+                  <RightIcon className={`w-4 h-4 summary-chevron transition-all`} stroke={3} />
+                  <Link href={`/${item.s}`}>{item.t}</Link>
+                </summary>
+                <RenderTree tree={item} {...{ recurse, depth }} level={level + 1} />
+              </details>
+            ) : (
+              <>
+                <BulletIcon className="w-2 h-2 mt-2 mx-1 ml-2 lg:ml-3 shrink-0" fill stroke={0} />
+                <Link href={`/${item.s}`} className="break-all">
+                  {item.t}
+                </Link>
+              </>
+            )}
+          </li>
+        )
+      })}
+    </ul>
+  )
+}
+
+export const ReadMore = ({ recurse = 0, root = false, site = 'org', depth = 99 }) => {
+  const { siteNav, slug } = useContext(NavigationContext)
 
   // Deal with recurse not being a number
   if (recurse && recurse !== true) {
@@ -56,20 +83,7 @@ export const ReadMore = ({
 
   const tree = root === false ? getRoot[site](slug, siteNav) : getRoot[site](root, siteNav)
 
-  const list = []
-  for (const page of currentChildren(tree)) {
-    if (page.t !== 'spacer')
-      list.push(
-        <li key={page.s} className="break-all">
-          <Link href={`/${page.s}`}>
-            <span className={pretty ? getClasses(level) : ''}>{page.t}</span>
-          </Link>
-          {recurse ? (
-            <ReadMore root={page.s} level={level + 1} {...{ recurse, site, pretty }} />
-          ) : null}
-        </li>
-      )
-  }
+  if (!tree) return null
 
-  return <ul>{list}</ul>
+  return <RenderTree {...{ tree, recurse, depth }} />
 }

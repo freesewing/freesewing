@@ -1,17 +1,18 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { sanitySiteImage, numPerPage, sanityLoader } from 'site/components/sanity/utils.mjs'
+import { pages as posts } from 'site/prebuild/blog.mjs'
+import { meta } from 'site/prebuild/blog-meta.mjs'
+import { getPostIndexPaths, getPostIndexProps } from 'site/components/mdx/posts/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
 import Link from 'next/link'
-import { TimeAgo } from 'shared/components/wrappers/mdx.mjs'
+import { TimeAgo } from 'shared/components/mdx/meta.mjs'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Pagination } from 'shared/components/navigation/pagination.mjs'
-import { siteConfig } from 'site/site.config.mjs'
 
 // Translation namespaces used on this page
-const namespaces = [...new Set(['designs', ...pageNs])]
+const namespaces = [...new Set(['designs', 'sections', ...pageNs])]
 
 const textShadow = {
   style: {
@@ -22,11 +23,11 @@ const textShadow = {
 
 const Preview = ({ post, t }) => (
   <div className="shadow rounded-lg">
-    <Link href={`/blog/${post.slug.current}`} className="hover:underline">
+    <Link href={`/${post.s}`} className="hover:underline">
       <div
         className="bg-base-100 w-full h-full overflow-hidden shadow flex flex-column items-center rounded-lg"
         style={{
-          backgroundImage: `url(${sanitySiteImage(post.image) + '?fit=clip&w=400'})`,
+          backgroundImage: `url(${post.i})`,
           backgroundSize: 'cover',
         }}
       >
@@ -48,7 +49,7 @@ const Preview = ({ post, t }) => (
               `}
               {...textShadow}
             >
-              {post.title}
+              {post.t}
             </h5>
             <p
               className={`
@@ -60,7 +61,7 @@ const Preview = ({ post, t }) => (
               `}
               {...textShadow}
             >
-              <TimeAgo date={post.date} t={t} /> by <strong>{post.author}</strong>
+              <TimeAgo date={post.d} t={t} /> by <strong>{post.a}</strong>
             </p>
           </div>
         </div>
@@ -68,6 +69,7 @@ const Preview = ({ post, t }) => (
     </Link>
   </div>
 )
+
 /*
  * Each page MUST be wrapped in the PageWrapper component.
  * You also MUST spread props.page into this wrapper component
@@ -76,12 +78,11 @@ const Preview = ({ post, t }) => (
  */
 const BlogIndexPage = ({ posts, page, current, total }) => {
   const { t } = useTranslation()
-
   return (
-    <PageWrapper {...page}>
+    <PageWrapper {...page} t={t('sections:blog')}>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 xl:grid-cols-3 max-w-7xl lg:pr-4 xl:pr-6">
         {posts.map((post) => (
-          <Preview post={post} t={t} key={post.slug.current} />
+          <Preview post={post} t={t} key={post.s} />
         ))}
       </div>
       <Pagination {...{ current, total }} />
@@ -91,41 +92,53 @@ const BlogIndexPage = ({ posts, page, current, total }) => {
 
 export default BlogIndexPage
 
+/*
+ * getStaticProps() is used to fetch data at build-time.
+ *
+ * On this page, it fetches data for the blogs to be linked to on this page
+ *
+ * This, in combination with getStaticPaths() below means this
+ * page will be used to link to all blogs.
+ *
+ * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
+ */
 export async function getStaticProps({ locale, params }) {
-  const allPosts = await sanityLoader({
-    language: locale,
-    type: 'blog',
-    order: 'date desc',
-    filters: '{_id, date, slug, title, author, image}',
-  })
-  const pageNum = parseInt(params.page)
+  const props = getPostIndexProps(params.page, posts[locale], meta)
+
+  // if there shouldn't be a page with these params, return 404
+  if (props === false) return { notFound: true }
 
   return {
     props: {
-      posts: allPosts.slice(numPerPage * (pageNum - 1), numPerPage * pageNum),
-      current: pageNum,
-      total: allPosts.length,
+      // designs,
+      ...props,
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
         locale,
-        // title: 'Freesewing Blog',
-        path: ['blog', 'page', params.page],
+        path: ['showcase'],
       },
     },
   }
 }
 
+/*
+ * getStaticPaths() is used to specify for which routes (think URLs)
+ * this page should be used to generate the result.
+ *
+ * On this page, it is returning a truncated list of routes (think URLs) for pages that list and link to
+ * the mdx blog (markdown) content.
+ * That list comes from prebuild/blog-paths.mjs, which is built in the prebuild step
+ * and contains paths, titles, imageUrls, and intro for all blog posts.
+ *
+ * the fallback: 'blocking' property means that
+ * any pages that haven't been pre-generated
+ * will generate and cache the first time someone visits them
+ *
+ * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
+ */
 export const getStaticPaths = async () => {
-  const numPosts = await sanityLoader({ query: `count(*[_type == "blogen"])` })
-  const numPages = Math.ceil(numPosts / numPerPage)
-  const paths = []
-  for (let i = 0; i < numPages; i++) {
-    const pathName = `/blog/page/${i + 1}`
-    siteConfig.languages.forEach((l) => paths.push(`${l.length ? '/' : ''}${l}${pathName}`))
-  }
-
   return {
-    paths,
-    fallback: false,
+    paths: getPostIndexPaths(posts, 'blog'),
+    fallback: 'blocking',
   }
 }

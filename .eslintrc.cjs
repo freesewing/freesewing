@@ -38,6 +38,7 @@ module.exports = {
     requireConfigFile: false,
     babelOptions: {
       plugins: ['@babel/plugin-syntax-import-assertions'],
+      presets: ['@babel/preset-react'],
     },
   },
   rules: {},

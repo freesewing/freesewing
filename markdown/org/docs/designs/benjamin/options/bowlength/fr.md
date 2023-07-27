@@ -1,5 +1,5 @@
 ---
-title: "longueur du nœud"
+title: "Longueur de nœud"
 ---
 
 ![Longueur de nœud](bowlength.svg)
@@ -8,4 +8,4 @@ Vous pouvez faire des nœuds papillon larges ou étroits. Cette option vous perm
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](benjamin_bowlength_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](benjamin_bowlength_sample.svg "Effet de cette option sur le motif")

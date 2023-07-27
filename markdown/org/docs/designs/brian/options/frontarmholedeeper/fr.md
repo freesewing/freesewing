@@ -1,8 +1,8 @@
 ---
-titre : "Découpe supplémentaire à l'avant de l'emmanchure"
+title: "Découpe supplémentaire sur l'emmanchure avant"
 ---
 
-![Front armhole extra cutout](./frontarmholedeeper.svg)
+![Découpe supplémentaire sur l'emmanchure avant](./frontarmholedeeper.svg)
 
 Contrôle la profondeur de la coupe de l'avant de l'emmanchure par rapport à celle de l'arrière du vêtement.
 
@@ -10,4 +10,4 @@ Since the human shoulder is more rounded at the front of the body, the sleeve(ca
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_frontarmholedeeper_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_frontarmholedeeper_sample.svg "Effet de cette option sur le motif")

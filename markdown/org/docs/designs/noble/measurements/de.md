@@ -1,5 +1,5 @@
 ---
-title: "Noble body block: Required Measurements"
+title: "Edler Körperblock: Erforderliche Maße"
 ---
 
 <PatternMeasurements pattern='noble' />

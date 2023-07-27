@@ -1,5 +1,5 @@
 ---
-title: "Wahid waistcoat: Cutting Instructions"
+title: "Wahid vest: Snij-instructies"
 ---
 
 - **Buitenstof**
@@ -18,10 +18,10 @@ title: "Wahid waistcoat: Cutting Instructions"
 
 <Warning>
 
-###### Caveats
+###### Waarschuwingen
 
-- Do not cut out the **front** dart
-- Do not cut out the **back** dart
-- Watch out for the grainline on the **pocket welt** and **pocket facing**
+- Snijd de **voorste** coupenaad niet uit
+- Snijd de **achterste** coupenaad niet uit
+- Let op de nerflijn op de **pocket welt** en **pocket facing**.
 
 </Warning>

@@ -1,11 +1,11 @@
 ---
-title: "Side depth"
+title: "Бокова глибина"
 ---
 
 ***
 
-Controls how far the bikini cup extends towards the side
+Контролює, наскільки чашка бікіні розширюється в бік
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_sidedepth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bee_sidedepth_sample.svg "Вплив цієї опції на шаблон")

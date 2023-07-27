@@ -1,19 +1,20 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { sanitySiteImage, numPerPage, sanityLoader } from 'site/components/sanity/utils.mjs'
+import { pages as posts } from 'site/prebuild/showcase.mjs'
+import { meta } from 'site/prebuild/showcase-meta.mjs'
+import { getPostIndexPaths, getPostIndexProps } from 'site/components/mdx/posts/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
-import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import Link from 'next/link'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Pagination } from 'shared/components/navigation/pagination.mjs'
-import { siteConfig } from 'site/site.config.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set(['common', 'designs', ...pageNs])]
 
 export const PreviewTile = ({ img, slug, title }) => (
-  <Link href={`/showcase/${slug}`} className="text-center">
+  <Link href={`/${slug}`} className="text-center">
     <span
       style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover' }}
       className={`
@@ -48,14 +49,7 @@ const Posts = ({ posts }) => {
     //   designs[design].push(post)
     // }
 
-    previews.push(
-      <PreviewTile
-        img={sanitySiteImage(post.image[0]) + '?fit=clip&w=400'}
-        slug={post.slug.current}
-        title={post.title}
-        key={post.slug.current}
-      />
-    )
+    previews.push(<PreviewTile img={post.i} slug={post.s} title={post.t} key={post.s} />)
   })
 
   return (
@@ -65,6 +59,12 @@ const Posts = ({ posts }) => {
   )
 }
 
+/*
+ * Each page MUST be wrapped in the PageWrapper component.
+ * You also MUST spread props.page into this wrapper component
+ * when path and locale come from static props (as here)
+ * or set them manually.
+ */
 const ShowcaseIndexPage = ({ posts, page, current, total }) => {
   const { t } = useTranslation()
 
@@ -81,42 +81,53 @@ const ShowcaseIndexPage = ({ posts, page, current, total }) => {
 
 export default ShowcaseIndexPage
 
+/*
+ * getStaticProps() is used to fetch data at build-time.
+ *
+ * On this page, it fetches data for the showcases to be linked to on this page
+ *
+ * This, in combination with getStaticPaths() below means this
+ * page will be used to link to all showcases.
+ *
+ * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
+ */
 export async function getStaticProps({ locale, params }) {
-  const allPosts = await sanityLoader({
-    language: locale,
-    type: 'showcase',
-    order: 'date desc',
-    filters: '{_id, date, slug, title, maker, image}',
-  })
-  const pageNum = parseInt(params.page)
+  const props = getPostIndexProps(params.page, posts[locale], meta)
+
+  // if there shouldn't be a page with these params, return 404
+  if (props === false) return { notFound: true }
 
   return {
     props: {
       // designs,
-      posts: allPosts.slice(numPerPage * (pageNum - 1), numPerPage * pageNum),
-      current: pageNum,
-      total: allPosts.length,
+      ...props,
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
         locale,
-        // title: 'Freesewing Blog',
-        path: ['showcase', 'page', params.page],
+        path: ['showcase'],
       },
     },
   }
 }
 
+/*
+ * getStaticPaths() is used to specify for which routes (think URLs)
+ * this page should be used to generate the result.
+ *
+ * On this page, it is returning a truncated list of routes (think URLs) for pages that list and link to
+ * the mdx showcase (markdown) content.
+ * That list comes from prebuild/showcase-paths.mjs, which is built in the prebuild step
+ * and contains paths, titles, imageUrls, and intro for all showcase posts.
+ *
+ * the fallback: 'blocking' property means that
+ * any pages that haven't been pre-generated
+ * will generate and cache the first time someone visits them
+ *
+ * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
+ */
 export const getStaticPaths = async () => {
-  const numPosts = await sanityLoader({ query: `count(*[_type == "showcaseen"])` })
-  const numPages = Math.ceil(numPosts / numPerPage)
-  const paths = []
-  for (let i = 0; i < numPages; i++) {
-    const pathName = `/showcase/page/${i + 1}`
-    siteConfig.languages.forEach((l) => paths.push(`${l.length ? '/' : ''}${l}${pathName}`))
-  }
-
   return {
-    paths,
-    fallback: false,
+    paths: getPostIndexPaths(posts, 'showcase'),
+    fallback: 'blocking',
   }
 }

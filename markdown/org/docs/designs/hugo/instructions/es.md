@@ -1,12 +1,12 @@
 ---
-title: "Hugo hoodie: Sewing Instructions"
+title: "Sudadera con capucha Hugo: Instrucciones de costura"
 ---
 
 <Note>
 
-###### Documentation under construction
+###### Documentación en construcción
 
-First the good news: There's a video series that shows how to make Hugo from start to finish.
+Primero las buenas noticias: Hay una serie de vídeo que muestra cómo hacer Hugo de principio a fin.
 Desplácese hacia abajo, está incrustado en esta página.
 
 Ahora las malas noticias: Las instrucciones escritas para Hugo todavía no están completas.
@@ -15,9 +15,9 @@ Ahora las malas noticias: Las instrucciones escritas para Hugo todavía no está
 
 ## Vídeo
 
-Text a bit dry for you? I try to make videos available as part of the pattern documentation.
+¿Texto un poco seco para ti? Intento que los videos estén disponibles como parte de la documentación de patrones.
 
-This 6-episode series shows you how to make your hoodie start to finish:
+Esta serie de 6 episodios muestra cómo hacer que tu sudadera comience a terminar:
 
 <YouTube id='PL1gv5yv3DoZOHLjisuD1JcUPTkFy_IGGO' playlist />
 
@@ -29,8 +29,8 @@ This 6-episode series shows you how to make your hoodie start to finish:
 - Unir las piezas de cara al bolsillo con una costura de 1 cm.  Unir tanto el borde largo como el borde más corto en la parte inferior del bolsillo.
 - Recorre cuidadosamente la franquicia de la costura en los pedazos orientados.
 - Girar y girar las piezas de cara hacia afuera.  Luego rodar a mano y presionar las costuras.
-- Topstitch or edge-stitch 0.5 cm along both upper and lower edges on each side of the pocket, to anchor the facing and the seam allowance.
-- Topstitch another line 0.5 cm from the inside upper edge of the facing on each side of the pocket.  Esta línea superior terminará en la línea de stitch del borde inferior.
+- Haz una puntada de remate o de borde de 0,5 cm a lo largo de los bordes superior e inferior de cada lado del bolsillo, para anclar el revestimiento y el margen de costura.
+- Cose otra línea a 0,5 cm del borde superior interior del revestimiento a cada lado del bolsillo.  Esta línea superior terminará en la línea de stitch del borde inferior.
 - Recorre el exceso de cara en el interior del bolsillo.
 - Presione los bordes.
 
@@ -44,9 +44,9 @@ This 6-episode series shows you how to make your hoodie start to finish:
 
 ### Paso 3: Adjunta las Mangas
 
-- The side of the sleeve with the pointy edge at top is the back of the sleeve piece.  It is also marked by a double notch on the pattern.
+- El lado de la manga con el borde punteado en la parte superior es la parte posterior de la pieza de manga.  También está marcada por un doble grosor sobre el patrón.
 
-- Match good sides of the sleeve seam to good sides of the front, matching the single notch on front to single notch on the sleeve piece. Stitch the seam.  Do this for both sleeve pieces.
+- Haz coincidir los lados buenos de la costura de la manga con los lados buenos del frente, emparejar la nitidez simple en la parte frontal a simple en la manga. Unir la costura.  Hacer esto para ambas piezas de manga.
 
 - Para terminar la costura, puede utilizar uno de estos métodos:
 
@@ -90,9 +90,9 @@ This 6-episode series shows you how to make your hoodie start to finish:
 - Para cerrar el capó, siéntese juntar las capas inferiores a lo largo de la línea del cuello.  Si no tienes un serger, usa un zig-zag stitch.
 - (Opcional) Si agregó agujeros para una cadena de dibujo, puede hilar la cadena de dibujo ahora.
 
-### Step 8: Preparing a Neckband and Attaching the Hood
+### Paso 8: Preparar una cinta para el cuello y fijar la capucha
 
-- Cut a cross-wise strip of fabric out of your main fabric, your neck opening + 2cm (3/4 inch) long and triple your neck seam allowance wide.
+- Corta una banda de tela de sentido cruzado de tu tela principal, la abertura de su cuello + 2cm (3/4 pulgadas) largo y triplicar la costura del cuello
 - Coloca buenos lados juntos en el tubo de unión del cuello a continuación, coser una costura de 1 cm a lo largo del lado corto para hacer la unión en una banda circular.
 - A partir de la espalda, hacer frente al exterior de la capucha al lado derecho de la línea de cuello. Alinear el panel de la campana a la parte trasera del cuello.
 - Trabajando alrededor de la parte delantera, anclar el capuchón al cuello.

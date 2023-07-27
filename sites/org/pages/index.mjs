@@ -4,9 +4,10 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Head from 'next/head'
 // Components
 import { PageWrapper } from 'shared/components/wrappers/page.mjs'
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
+import { ForceAccountCheck } from 'shared/components/account/force-account-check.mjs'
 
 /*
  * Each page MUST be wrapped in the PageWrapper component.
@@ -21,6 +22,7 @@ const HomePage = ({ page }) => (
     </Head>
     <div>
       <div className="max-w-xl m-auto my-32 px-6">
+        <ForceAccountCheck />
         <Popout fixme>
           Create homepage. Meanwhile check <PageLink href="/signup" txt="the signup flow" />
         </Popout>

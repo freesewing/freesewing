@@ -1,4 +1,6 @@
-import { Design } from '@freesewing/core'
+import { Design, mergeI18n } from '@freesewing/core'
+import { i18n as bentI18n } from '@freesewing/bent'
+import { i18n as jaegerI18n } from '../i18n/index.mjs'
 import { data } from '../data.mjs'
 import { backBase } from './backbase.mjs'
 import { frontBase } from './frontbase.mjs'
@@ -36,6 +38,9 @@ const Jaeger = new Design({
   ],
 })
 
+// Merge translations
+const i18n = mergeI18n([bentI18n, jaegerI18n])
+
 // Named exports
 export {
   backBase,
@@ -53,4 +58,5 @@ export {
   innerPocketBag,
   innerPocketWelt,
   Jaeger,
+  i18n,
 }

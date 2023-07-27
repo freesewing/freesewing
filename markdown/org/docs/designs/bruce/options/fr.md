@@ -1,5 +1,5 @@
 ---
-title: "Boxer Bruce : Options de style"
+title: "Caleçon Bruce : Options de conception"
 ---
 
 <PatternOptions pattern='bruce' />

@@ -1,84 +1,84 @@
 ---
-title: "Bent body Block: Sewing Instructions"
+title: "Gebogener Körper Block: Anleitung zum Nähen"
 ---
 
 <Note>
 
-###### Bent is a block, not a pattern
+###### Bent ist ein Block, kein Muster
 
-A block is a basic shape on which other patterns are based.
+Ein Block ist eine Grundform, auf der andere Muster aufgebaut sind.
 Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Bent block.
+Die Blöcke werden in der Regel nicht so hergestellt, wie sie sind, sondern dienen als Grundlage für andere Muster. Daher wird in der folgenden Anleitung nicht näher auf Verschlüsse oder Ausführungen eingegangen, sondern nur auf den Standard-Bent-Block.
 
 </Note>
 
 <Warning>
 
-As Bent is a block it does not have any closures. So the instructions below will explain how to make a Bent with a seam down the centre front so you can pin yourself into it.
+Da Bent ein Block ist, hat er keine Verschlüsse. In der folgenden Anleitung wird erklärt, wie du einen Bent mit einer Naht in der vorderen Mitte anfertigst, damit du dich darin feststecken kannst.
 
 </Warning>
 
-### Step 1: Mock-up Construction
+### Schritt 1: Mock-up Konstruktion
 
-- Sew the fronts to the back at the shoulder seams _good sides together_.
-- Sew the fronts to the back at the side seams _good sides together_.
-- Sew the under sleeves to the top sleeves _good sides together_ along the side seams.
-- Attach the sleeves to the body, _good sides together_ and sew them in the round.
+- Nähen Sie die Vorderteile an den Schulternähten an das Rückenteil _gut zusammen_.
+- Nähen Sie die Vorderteile an den Seitennähten an das Rückenteil _gute Seiten zusammen_.
+- Nähen Sie die unteren Ärmel an die oberen Ärmel _gut zusammen_ entlang der Seitennähte.
+- Befestige die Ärmel am Körper, _gute Seiten zusammen_ und nähe sie in der Runde.
 
 <Note>
 
-You may need to ease/gather the sleeves to fit.
+Möglicherweise musst du die Ärmel lockern/zusammenlegen, damit sie passen.
 
-You may need to leave the bottom of one of the sleeve seams open to put the garment on.
+Möglicherweise musst du eine der Ärmelnähte unten offen lassen, um das Kleidungsstück anzuziehen.
 
 </Note>
 <Tip>
 
-If you are making adjustments you may wish to sew the seams _wrong sides together_ to make them easier to adjust.
+Wenn du Anpassungen vornimmst, solltest du die Nähte _verkehrt herum_ nähen, damit sie sich leichter anpassen lassen.
 
 </Tip>
 
 ### Schritt 2: Anprobieren
 
-- Try it on and check the fit by pinning the front closed whilst wearing it.
-- Make any alterations and try it on again.
-- Repeat until you are happy.
+- Probiere es an und überprüfe die Passform, indem du die Vorderseite zusteckst, während du es trägst.
+- Nimm alle Änderungen vor und probiere es noch einmal an.
+- Wiederhole das, bis du zufrieden bist.
 
 <Tip>
 
-If you do not have someone to help with pinning alterations, you can use a dressform to pin any alterations that are hard to do on person. Just remember to try it on after to make sure it fits you.
+Wenn du niemanden hast, der dir beim Anheften der Änderungen hilft, kannst du eine Kleiderform benutzen, um die Änderungen, die du nicht selbst vornehmen kannst, anzuheften. Vergiss nur nicht, es nachher anzuprobieren, um sicherzugehen, dass es dir passt.
 
-Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. Things like these are signs of where the pattern may need adjusting.
+Achte auf alles, was du tust, während du die Attrappe trägst: Ziehst du sie herunter? Ständig die Schulter anpassen? usw. Solche Dinge sind Zeichen dafür, wo das Schnittmuster möglicherweise angepasst werden muss.
 
-Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
+Manchmal kann es sein, dass du das Mock-up über einen längeren Zeitraum tragen musst, um ein besseres Gefühl für die Passform zu bekommen.
 
 </Tip>
 <Note>
 
-Remember to treat Bent as a basis rather than a final product, so adjust what you need to get the desired look.  
-For instance:
+Vergiss nicht, Bent als Basis und nicht als Endprodukt zu betrachten, also passe an, was du brauchst, um den gewünschten Look zu erhalten.  
+Zum Beispiel:
 
-- Change the neck line
-- Add/change the closure allowances
-- Alter the hem style
-- Add a collar
+- Ändern des Halsausschnitts
+- Hinzufügen/Ändern der Verschlusszugaben
+- Ändern des Saums
+- Hinzufügen eines Kragens
 
-It is all up to you! Experiment and go forth!
+Es liegt ganz an dir! Experimentiere und geh hinaus!
 
 </Note>
 
 ### Schritt 3: Erstelle ein Papierschnittmuster
 
-- Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
-- Now you have a pattern you can use to produce a garment.
+- Wenn du mit allen Änderungen zufrieden bist, nimmst du dein Mockup heraus und erstellst daraus ein Papiermuster.
+- Jetzt hast du ein Schnittmuster, das du verwenden kannst um Kleidungsstücke herzustellen.
 
 <Note>
 
-It is best practice to make a paper pattern from the mock-up if you have made any alterations, as this will allow you to clean up any lines but also means you have a pattern that you can keep producing garments from.
+Wenn du Änderungen vorgenommen hast, ist es am besten, ein Papiermuster aus dem Mock-up zu machen. So kannst du nicht nur alle Linien bereinigen, sondern hast auch ein Muster, nach dem du weiter Kleidungsstücke herstellen kannst.
 
 </Note>
 
-### Bent is a block, looking for a finalised pattern?
+### Bent ist ein Block, der nach einem fertigen Muster sucht?
 
 > Hier sind einige der Schnittmuster, die auf Bent basieren: [Carlton](/patterns/carlton), [Carlita](/patterns/carlita), und [Jaeger](/patterns/jaeger).

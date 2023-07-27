@@ -1,9 +1,9 @@
 ---
-title: "Bottom Leg Reduction (Octoplushy)"
+title: "Reducción de la parte inferior de la pierna (Octoplushy)"
 ---
 
-This setting adjusts the difference in length between the top and the bottom fabric of the legs. The bigger the difference, the more the legs will want to curl.
+Esta configuración ajusta la diferencia de longitud entre la tela superior e inferior de las patas. Cuanto mayor sea la diferencia, más querrán curvarse las piernas.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](octoplushy_bottomlegreductionplushy_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](octoplushy_bottomlegreductionplushy_sample.svg "Efecto de esta opción en el patrón")

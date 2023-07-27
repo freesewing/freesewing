@@ -1,11 +1,11 @@
 ---
-title: "Aaron A-Shirt: What You Need"
+title: "Camiseta Aaron A: Lo que necesitas"
 ---
 
 Para hacer Aarón necesitarás lo siguiente:
 
 - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
-- About 0.75 meters (0.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/aaron/fabric))
+- Unos 0,75 metros (0,8 yardas) de una tela adecuada ([ver Opciones de tela](/docs/patterns/aaron/fabric))
 
 <Note>
 

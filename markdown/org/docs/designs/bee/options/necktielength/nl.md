@@ -1,10 +1,10 @@
 ---
-title: "Neck tie length"
+title: "Halsdas lengte"
 ---
 
 ***
 
-Controls the length of the ties around your neck
+Regelt de lengte van de banden om je nek
 
 ## Effect van deze optie op het patroon
 

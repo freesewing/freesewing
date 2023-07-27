@@ -1,5 +1,5 @@
 ---
-title: "Jaeger jacket: Required Measurements"
+title: "Jaeger Jacke: Erforderliche Maße"
 ---
 
 <PatternMeasurements pattern='jaeger' />

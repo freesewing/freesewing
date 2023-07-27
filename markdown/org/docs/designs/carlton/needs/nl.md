@@ -1,22 +1,22 @@
 ---
-title: "Carlton coat: What You Need"
+title: "Carlton jas: Wat je nodig hebt"
 ---
 
-To make Carlton, you will need the following:
+Om Carlton te maken heb je het volgende nodig:
 
-- Basic sewing supplies
-- About 5 - 6 metres (5.5 - 6.6 yards) of a suitable main fabric ([see Carlton Fabric options](/docs/patterns/carlton/fabric/))
-- About 3.5 - 4 metres (3.8 - 4.4 yards) of lining fabric ([see Carlton Fabric options](/docs/patterns/carlton/fabric/))
-- About 0.75 - 1 metre (0.8 - 1.1 yards) of sleeve lining fabric ([see Carlton Fabric options](/docs/patterns/carlton/fabric/))
-- Light to Mediumweight hair canvas ([see Carlton Fabric options](/docs/patterns/carlton/fabric/))
-- Heavyweight hair canvas ([see Carlton Fabric options](/docs/patterns/carlton/fabric/))
-- Tailors tape
-- 6 Buttons for front closure
-- Strong thread for attaching facings
-- (Optional) Silk buttonhole twist if hand-sewing the buttonholes and buttons.
+- Basis naaimateriaal
+- Ongeveer 5 - 6 meter van een geschikte hoofdstof ([zie Carlton stofopties](/docs/patterns/carlton/fabric/)).
+- Ongeveer 3,5 - 4 meter voeringstof ([zie Carlton stofopties](/docs/patterns/carlton/fabric/)).
+- Ongeveer 0,75 - 1 meter mouwvoeringstof ([zie Carlton stofopties](/docs/patterns/carlton/fabric/))
+- Licht tot middelzwaar haarcanvas ([zie Carlton stofopties](/docs/patterns/carlton/fabric/))
+- Zwaargewicht haarcanvas ([zie Carlton Stofopties](/docs/patterns/carlton/fabric/))
+- Kleermakers tape
+- 6 Knopen voor sluiting aan de voorkant
+- Sterk garen voor het bevestigen van facings
+- (Optioneel) Zijden knoopsgatdraai als je de knoopsgaten en knopen met de hand naait.
 
 <Warning>
 
-Carlton has a lot of pieces! These lengths are estimates, you may need more or less depending on your size but if in doubt add an extra 0.5 to 1 metre of fabric.
+Carlton heeft veel stukken! Deze lengtes zijn schattingen, je kunt meer of minder nodig hebben afhankelijk van je maat, maar voeg bij twijfel 0,5 tot 1 meter extra stof toe.
 
 </Warning>

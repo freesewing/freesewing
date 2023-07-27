@@ -1,0 +1,35 @@
+{
+  "t": "Walburga Wappenrock",
+  "d": "Walburga is a tabard/surcoat, a historical garment from medieval Europe",
+  "p": {
+    "back": "Achterzijde",
+    "front": "Voorzijde"
+  },
+  "s": {},
+  "o": {
+    "headRatio": {
+      "t": "Head ratio",
+      "d": "Controls the size of the head opening"
+    },
+    "lengthBonus": {
+      "t": "Lengtebonus",
+      "d": "Allows variation of the length of the garment"
+    },
+    "widthBonus": {
+      "t": "Width bonus",
+      "d": "Allows variation of the width of the garment"
+    },
+    "length": {
+      "t": "Lengte",
+      "d": "Controls the length of the garment"
+    },
+    "neckoRatio": {
+      "t": "Neck opening shape",
+      "d": "controls the shape of the neck opening"
+    },
+    "neckline": {
+      "t": "Neckline",
+      "d": "Controls whether or not to draft a neck opening"
+    }
+  }
+}

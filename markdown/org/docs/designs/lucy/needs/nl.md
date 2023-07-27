@@ -1,19 +1,19 @@
 ---
-title: "Lucy tie-on pocket: What You Need"
+title: "Lucy bindzak: Wat je nodig hebt"
 ---
 
-To make Lucy, you will need the following:
+Om Lucy te maken heb je het volgende nodig:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 0.5 meters (0.6 yards) of suitable fabric ([see Fabric options](/docs/patterns/lucy/fabric))
-- About 0.5 meters (0.6 yards) of fabric if using a lining
-- About 2 meters (2.2 yards) of bias binding or strips of fabric if binding the edges
-- A length of tape that you can tie around your waist to make the ties with
+- [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
+- Ongeveer 0,5 meter geschikte stof ([zie Stofopties](/docs/patterns/lucy/fabric))
+- Ongeveer 0,5 meter stof als je een voering gebruikt
+- Ongeveer 2 meter biaisband of stroken stof als je de randen bindt
+- Een stuk tape dat je om je middel kunt binden om de bandjes mee te maken
 
 <Note>
 
-#### Piecing is Period!
+#### Piecing is Punt!
 
-Pockets like these do not need to be made out of whole pieces of fabric, you can piece together scraps into a large enough piece to cut your pocket pattern out of. Neither do both sides need to be made out of the same fabric. 
+Zakken als deze hoeven niet uit hele lappen stof gemaakt te worden, je kunt restjes stof aan elkaar knopen tot een stuk dat groot genoeg is om het patroon van je zak uit te knippen. Ook hoeven beide kanten niet van dezelfde stof gemaakt te zijn. 
 
 </Note>

@@ -1,9 +1,9 @@
 ---
-title: "Fly length"
+title: "Longueur de la mouche"
 ---
 
-Constrols the length of the fly.
+Pousse la longueur de la mouche.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_flylength_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_flylength_sample.svg "Effet de cette option sur le motif")

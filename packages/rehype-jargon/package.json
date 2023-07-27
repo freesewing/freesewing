@@ -24,6 +24,7 @@
   },
   "scripts": {
     "build": "node build.mjs",
+    "build:all": "yarn build",
     "clean": "rimraf dist",
     "mbuild": "NO_MINIFY=1 node build.mjs",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
@@ -32,13 +33,12 @@
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
     "lint": "npx eslint 'src/*.mjs'",
-    "cibuild_step6": "node build.mjs",
     "wbuild": "node build.mjs",
-    "wcibuild_step6": "node build.mjs"
+    "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {},
   "dependencies": {
-    "unist-util-visit": "4.1.2",
+    "unist-util-visit": "5.0.0",
     "hast-util-from-html": "1.0.2"
   },
   "devDependencies": {},
@@ -51,7 +51,7 @@
     "tag": "next"
   },
   "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=8"
+    "node": "18",
+    "npm": "9"
   }
 }

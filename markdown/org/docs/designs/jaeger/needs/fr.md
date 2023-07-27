@@ -1,10 +1,10 @@
 ---
-title: "Jaeger jacket: What You Need"
+title: "Veste Jaeger : Ce qu'il te faut"
 ---
 
-To make Jaeger, you will need the following:
+Pour fabriquer Jaeger, vous aurez besoin des éléments suivants:
 
-- About 2.5 meters (2.8 yards) of a suitable fabric (see [Fabric options](#fabric-options))
+- Environ 2,5 mètres d'un tissu approprié (voir [Options de tissu](#fabric-options)).
 - Tissu doublé, tissu de doublure à manches différent
 - Deux boutons plus gros pour le devant et 8 boutons pour les manches
 - Un peu d'interface légère et fusible pour l'application locale
@@ -23,15 +23,15 @@ unlikely to stock all of these things.
 
 Si vous savez où les obtenir, génial.
 
-Si vous savez où les obtenir, génial. If not, some (quality) suppliers
-sometimes sell a **Jacket trim pack** that includes everything you need.
+Si vous savez où les obtenir, génial. Si ce n'est pas le cas, certains fournisseurs (de qualité)
+vendent parfois un **Jacket trim pack** qui comprend tout ce dont tu as besoin.
 
-Below is a list of suppliers we are aware of where you can get this.
-We have no affiliation with these suppliers.
+Tu trouveras ci-dessous une liste de fournisseurs que nous connaissons où tu peux te procurer ces produits.
+Nous n'avons aucune affiliation avec ces fournisseurs.
 
-- [B. Black & Sons](https://www.bblackandsons.com/) is based in the US
-- [Kenton Trimmings](http://kentontrimmings.co.uk/shop/) in based in the UK
+- [B. Black & Sons](https://www.bblackandsons.com/) est basé aux États-Unis
+- [Kenton Trimmings](http://kentontrimmings.co.uk/shop/) est basé au Royaume-Uni
 
-If you know of other places that carries this stuff, please let us know.
+Si tu connais d'autres endroits où l'on trouve ces produits, n'hésite pas à nous le faire savoir.
 
 </Note>

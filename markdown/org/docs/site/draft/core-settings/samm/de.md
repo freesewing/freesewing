@@ -1,18 +1,18 @@
 ---
-title: Seam Allowance Size
+title: Nahtzugabe Größe
 ---
 
-This [Core Setting][core-settings] controls the base size of your seam allowance.  In other words, the default seam allowance will be this size. Other allowance that is intended to be wider, like hem allowance, will be a multiple of this size.
+Diese [Kerneinstellung][core-settings] steuert die Grundgröße deiner Nahtzugabe .  Mit anderen Worten, die Standard-Nahtzugabe wird diese Größe haben. Andere Zugaben, die breiter sein sollen, wie z.B. Saumzugaben, sind ein Vielfaches dieser Größe.
 
 <Note>
 
-FreeSewing's core library only takes a single setting to handle seam allowance: `sa`.
-However, for convenience, we've split this up into two different settings on the website:
+In der FreeSewing-Kernbibliothek gibt es nur eine einzige Einstellung für die Nahtzugabe: `sa`.
+Der Einfachheit halber haben wir dies jedoch in zwei verschiedene Einstellungen auf der Website aufgeteilt:
 
-- **[Include Seam Allowance](/docs/site/draft/core-settings/sabool)**: Controls whether or not to include seam allowance
-- **[Seam Allowance Size](/docs/site/draft/core-settings/samm)**: Controls how big to make the seam allowance, if it is included
+- **[Nahtzugabe einbeziehen](/docs/site/draft/core-settings/sabool)**: Legt fest, ob die Nahtzugabe einbezogen werden soll oder nicht
+- **[Nahtzugabegröße](/docs/site/draft/core-settings/samm)**: Legt fest, wie groß die Nahtzugabe sein soll, wenn sie enthalten ist
 
-The latter will only be shown if you've enabled the former.
+Letzteres wird nur angezeigt, wenn du Ersteres aktiviert hast.
 
 </Note>
 [core-settings]: /docs/site/draft/core-settings/

@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 import { Robot } from 'shared/components/robot/index.mjs'
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 import { MegaphoneIcon } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
 import { ModalProblemReport } from 'shared/components/modal/problem-report.mjs'

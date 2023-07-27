@@ -1,11 +1,11 @@
 ---
-title: "Wahid waistcoat: What You Need"
+title: "Wahid-Weste: Was du brauchst"
 ---
 
-To make Wahid, you will need the following:
+Um Wahid zu erstellen, benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- About 1 meter (1.1 yards) of a suitable fabric ([see Fabric options](/docs/patterns/wahid/fabric))
-- About 1 meter (1.1 yards) of lining fabric
-- Fusible interfacing
+- Etwa 1 Meter (1,1 Yards) eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/wahid/fabric))
+- Etwa 1 Meter (1,1 Yards) Futterstoff
+- Fusible Schnittstelle
 - Knöpfe

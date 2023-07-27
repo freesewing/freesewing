@@ -1,5 +1,5 @@
 ---
-title: "Theo trousers: Cutting Instructions"
+title: "Pantalon Theo : Instructions de coupe"
 ---
 
 - **Tissu principal**
@@ -26,13 +26,13 @@ title: "Theo trousers: Cutting Instructions"
 
 <Warning>
 
-###### Caveats
+###### Mises en garde
 
-- The **front lining** is cut from the **front** part on your draft, down to the line just below the knee
-- Pay attention to the grainline on the **fly piece**, **fly shield**, and **side piece**
-- There are two variations of the front pocket bag. You need to cut out two of each:
-  - Cut two of the complete piece
-  - Cut two with only extending up to the dashed line at the left
-- The **back inner pocket bag** and **back outer pocket bag** are very similar. Assurez-vous de les marquer correctement afin de ne pas les confondre.
+- La **doublure avant** est coupée à partir de la **partie avant** de ton brouillon, jusqu'à la ligne située juste en dessous du genou
+- Fais attention à la ligne de grain sur la **pièce de mouche**, la **couverture de mouche** et la **pièce latérale**
+- Il y a deux variantes du sac à poche avant. Tu dois en découper deux de chaque :
+  - Découpe deux morceaux complets
+  - Découpe deux morceaux qui ne s'étendent que jusqu'à la ligne pointillée à gauche
+- Le **sac à poche intérieure arrière** et le **sac à poche extérieure arrière** sont très similaires. Assurez-vous de les marquer correctement afin de ne pas les confondre.
 
 </Warning>

@@ -1,0 +1,22 @@
+{
+  "t": "Lunetius, die Lacerna",
+  "d": "Lunetius ist eine Lacerna, ein historischer römischer Mantel",
+  "p": {
+    "lacerna": "Lacerna"
+  },
+  "s": {},
+  "o": {
+    "lengthRatio": {
+      "t": "Längenverhältnis",
+      "d": "Steuert die Länge des Kleidungsstückes"
+    },
+    "widthRatio": {
+      "t": "Breitenverhältnis",
+      "d": "Steuert die Breite des Kleidungsstückes"
+    },
+    "length": {
+      "t": "Länge",
+      "d": "Wähle zwischen verschiedenen Längenarten"
+    }
+  }
+}

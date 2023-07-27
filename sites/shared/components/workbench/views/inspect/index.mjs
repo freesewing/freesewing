@@ -2,10 +2,9 @@ import { useState } from 'react'
 import { InspectorPattern } from './inspector/pattern.mjs'
 import { DraftMenu, ns as menuNs } from './menu.mjs'
 import { objUpdate } from 'shared/utils.mjs'
-import { ViewHeader } from '../view-header.mjs'
-import { PanZoomContextProvider } from 'shared/components/workbench/pattern/pan-zoom-context.mjs'
+import { PatternWithMenu, ns as wrapperNs } from '../pattern-with-menu.mjs'
 
-export const ns = menuNs
+export const ns = [...menuNs, ...wrapperNs]
 
 export const InspectView = ({
   design,
@@ -68,41 +67,35 @@ export const InspectView = ({
   }
 
   return (
-    <PanZoomContextProvider>
-      <div className="flex flex-col">
-        <ViewHeader
-          {...{
-            settings,
-            setSettings,
-            ui,
-            update,
-            control: account.control,
-          }}
-        />
-        <div className="flex flex-row">
-          <div className="w-2/3 shrink-0 grow lg:p-4 sticky top-0">{output}</div>
-          <div className="w-1/3 shrink grow-0 lg:p-4 max-w-2xl h-screen overflow-scroll">
-            <DraftMenu
-              {...{
-                design,
-                pattern,
-                patternConfig,
-                settings,
-                setSettings,
-                ui,
-                update,
-                language,
-                account,
-                DynamicDocs,
-                inspector,
-                renderProps,
-                view,
-                setView,
-              }}
-            />
-          </div>
-        </div>
-      </div>
-    </PanZoomContextProvider>
+    <PatternWithMenu
+      {...{
+        settings,
+        ui,
+        update,
+        control: account.control,
+        setSettings,
+        pattern: output,
+        menu: (
+          <DraftMenu
+            {...{
+              design,
+              pattern,
+              patternConfig,
+              settings,
+              setSettings,
+              ui,
+              update,
+              language,
+              account,
+              DynamicDocs,
+              inspector,
+              renderProps,
+              view,
+              setView,
+            }}
+          />
+        ),
+      }}
+    />
   )
 }

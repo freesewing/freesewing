@@ -1,27 +1,27 @@
 ---
-title: "Cross back ties"
+title: "Gekreuzte Rückenträger"
 ---
 
 ***
 
-A variation of Bee, where the neck ties cross and tie in the back by looping into a band that replaces the band tie
+Eine Variante von Bee, bei der sich die Nackenkrawatten überkreuzen und im Rücken zu einem Band zusammengebunden werden, das die Bandkrawatte ersetzt
 
-#### Default
+#### Standard
 
-- 2 neck ties
-- 1 band tie
+- 2 Krawatten
+- 1 Band Krawatte
 
-The neck ties are sewn into the cups and tie at the neck like a halter.  
-The band tie is thread through casings in the cups and ties with itself at the back
+Die Nackenbänder sind in die Cups eingenäht und werden im Nacken wie ein Halfter gebunden.  
+Das Bindeband wird durch die Hülsen in den Cups gefädelt und am Rücken mit sich selbst verbunden.
 
-#### Cross Back Ties
+#### Kreuzrückenkrawatten
 
-- 2 neck ties
-- No band tie
+- 2 Krawatten
+- Keine Bandbindung
 
-The band tie and casing on the cups are replaced by a band which is sewn with loops in the back.  
-The neck ties are longer and cross over each other in the back, then go through the loops in the band and then tie with one another.
+Das Bindeband und die Hülle an den Cups werden durch ein Band ersetzt, das mit Schlaufen im Rücken genäht wird.  
+Die Nackenbänder sind länger und überkreuzen sich im Rücken, gehen dann durch die Schlaufen im Band und werden dann miteinander verbunden.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_crossbackties_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bee_crossbackties_sample.svg "Effekt dieser Option auf das Schnittmuster")

@@ -1,12 +1,12 @@
 ---
-title: Length ratio
+title: Ratio de longitud
 ---
 
-Controls the length of the bib.
+Controla la longitud de la bib.
 
-- Increase the percentage to lengthen the bib.
-- Decrease the percentage to shorten the bib.
+- Aumenta el porcentaje para alargar el dorsal.
+- Disminuye el porcentaje para acortar el dorsal.
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción al superponer varias variantes que tienen un valor diferente para esta opción](bob_lengthratio_sample.svg "Efecto de esta opción en el patrón")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bob_lengthratio_sample.svg "Efecto de esta opción en el patrón")

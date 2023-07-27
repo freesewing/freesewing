@@ -1,62 +1,62 @@
 ---
-title: "Carlton coat: Cutting Instructions"
+title: "Carlton Mantel: Schnittanleitung"
 ---
 
 <Note>
 
-Certain parts have to be drafted off of the existing parts. How to draft these are provided in the [instructions](/docs/patterns/carlton/instructions).
+Bestimmte Teile müssen von den bestehenden Teilen abgeleitet werden. Wie du diese erstellst, findest du auf [instructions](/docs/patterns/carlton/instructions).
 
 </Note>
 
-### Materials
+### Materialien
 
-- **Main fabric**
-  - Cut **2 Front** parts
-  - Cut **2 Front facing** parts
-  - Cut **2 Back** parts
-  - Cut **2 topsleeve** parts
-  - Cut **2 undersleeve** parts
-  - Cut **2 tail** parts
-  - Cut **4 belt** parts
-  - Cut **2 Collar stand** parts
-  - Cut **2 collar** parts on the fold or Cut the upper collar on the fold and the under collar on the bias
-  - Cut **2 cuffFacing** parts
-  - Cut **2 Pocket** parts
-  - Cut **4 pocketFlap** parts
-  - Cut **2 chestPocketWelt** parts
-  - Cut **2 innerPocketWelt** parts
+- **Oberstoff**
+  - **2 Front** Teile schneiden
+  - Schnitt **2 Vorderseite** Teile
+  - Schneide **2 Rückteile**
+  - Schneide **2 Teile des Oberteils**
+  - Schneide **2 Unterziehstrümpfe** Teile
+  - **2 Schwanzteile schneiden**
+  - Schnitt **4 Gürtel** Teile
+  - Schnitt **2 Kragenständer** Teile
+  - **2 Kragenteile** auf der Falte schneiden oder den oberen Kragen auf der Falte und den unteren Kragen auf der Schräge schneiden
+  - Schneide **2 cuffFacing** Teile
+  - **2 Pocket** Teile schneiden
+  - Schneide **4 pocketFlap** Teile
+  - Schnitt **2 chestPocketWelt** Teile
+  - Schneide **2 innerPocketWelt** Teile
 
 <Note>
 
-If your main fabric is quite lightweight and flimsy you may need to interface all the parts with a lightweight interfacing.
+Wenn dein Hauptstoff sehr leicht und dünn ist, musst du vielleicht alle Teile mit einer leichten Einlage verbinden.
 
 </Note>
 
-- **Lining fabric**
-  - Cut **2 Front lining** parts
-  - Cut **2 Back** parts
-  - Cut **2 topsleeve** parts
-  - Cut **2 undersleeve** parts
-  - Cut **2 tail** parts
-  - Cut **2 innerPocketBag** parts
-  - Cut **1 innerPocketTab** parts
-  - Cut **2 pocketLining** parts
-  - Cut **2 chestPocketBag** parts
-- **Light to Mediumweight Hair Canvas**
-  - Cut **2 Front Facing** parts
-  - Cut **1 Collar stand** parts
-  - Cut **2 collar** parts on the bias and seam together
-  - Cut **2 cuffFacing** parts
-  - Cut **2 pocketFlap** parts
-  - Cut **2 chestPocketWelt** parts
-  - Cut **2 innerPocketWelt** parts
-- **Heavyweight Hair Canvas**
-  - Cut **2 Front Shoulder** parts
-  - Cut **2 Chest canvas** parts
-  - Cut **2 Back shoulder** parts
+- **Futterstoff**
+  - Schnitt **2 Frontverkleidung** Teile
+  - Schneide **2 Rückteile**
+  - Schneide **2 Teile des Oberteils**
+  - Schneide **2 Unterziehstrümpfe** Teile
+  - **2 Schwanzteile schneiden**
+  - Schneide **2 innerPocketBag** Teile
+  - Schneide **1 innerPocketTab** Teile
+  - Schnitt **2 pocketLining** Teile
+  - Cut **2 chestPocketBag** Teile
+- **Leichtes bis mittelschweres Haar Segeltuch**
+  - **2 Front Facing** Teile schneiden
+  - Schnitt **1 Kragenständer** Teile
+  - **2 Kragenteile** schräg zuschneiden und zusammennähen
+  - Schneide **2 cuffFacing** Teile
+  - Schneide **2 pocketFlap** Teile
+  - Schnitt **2 chestPocketWelt** Teile
+  - Schneide **2 innerPocketWelt** Teile
+- **Schweres Haar Segeltuch**
+  - **2 Vordere Schulter** Teile schneiden
+  - **2 Brustleinen** Teile schneiden
+  - Schnitt **2 Rückenschulter** Teile
 
 <Note>
 
-The canvas parts need to be cut nett (without seam allowances).
+Die Leinenteile müssen netto (ohne Nahtzugaben) zugeschnitten werden.
 
 </Note>

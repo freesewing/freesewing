@@ -1,77 +1,130 @@
+import allLanguages from '../../../config/languages.json' assert { type: 'json' }
 import path from 'path'
 import fs from 'fs'
 import set from 'lodash.set'
-import { loadYaml, folders } from './i18n.mjs'
+import orderBy from 'lodash.orderby'
+import { extendSiteNav as dev } from './sitenav-dev.mjs'
+import { extendSiteNav as org } from './sitenav-org.mjs'
+import { extendSiteNav as lab } from './sitenav-lab.mjs'
+import { pageHasChildren } from '../utils.mjs'
+import { header } from './shared.mjs'
 
-// Some arbitrary future time
-const future = new Date('10-12-2026').getTime()
+const extendNav = { dev, org, lab }
 
-// We need to load the translation for blog + showcase
-const loadTranslation = (locale) => {
-  let data
-  try {
-    data = loadYaml(`${folders.shared}/navigation/sections.${locale}.yaml`, false)
-  } catch (err) {
-    data = {}
+/*
+ * A method to recursively add the ordered slugs to the LUT
+ */
+const flattenOrderedChildPages = (nav) => {
+  const slugs = []
+  for (const page of orderBy(nav, ['o', 't'], ['asc', 'asc'])) {
+    if (page.s) {
+      slugs.push(page.s)
+      if (pageHasChildren(page)) slugs.push(...flattenOrderedChildPages(page))
+    }
   }
-  if (!data) data = {}
 
-  return data
+  return slugs
+}
+
+/*
+ * This builds the slugLut (slug look up table) which makes it trivial to
+ * build the PrevNext component as it builds a flat list of all pages in
+ * the order they are naturally presented to the reader. So if you have
+ * a page's slug, you merely need to look it up in the list and return the
+ * next entry (or previous)
+ */
+export const orderedSlugLut = (nav) => {
+  const slugs = []
+  for (const page of orderBy(nav, ['o', 't'], ['asc', 'asc'])) {
+    if (page.s) {
+      slugs.push(page.s)
+      if (pageHasChildren(page)) slugs.push(...flattenOrderedChildPages(page))
+    }
+  }
+
+  return slugs
 }
 
 /*
  * Main method that does what needs doing
  */
-export const prebuildNavigation = (docPages, strapiPosts, site) => {
+export const prebuildNavigation = async (store) => {
+  const { site, docs = false, posts = false } = store
   /*
    * Since this is written to disk and loaded as JSON, we minimize
    * the data to load by using the following 1-character keys:
    *
    * t: title
-   * l: link title (shorter version of the title, optional
    * o: order, optional
    * s: slug without leading or trailing slash (/)
    */
-  const nav = {}
-  for (const lang in docPages) {
-    const translations = loadTranslation(lang)
-    nav[lang] = {}
+  const sitenav = {}
+  const all = {
+    sitenav: '',
+  }
+  const locales = docs ? Object.keys(docs) : allLanguages
+  for (const lang of locales) {
+    sitenav[lang] = {}
 
-    // Handle MDX content
-    for (const slug of Object.keys(docPages[lang]).sort()) {
-      const page = docPages[lang][slug]
-      const chunks = slug.split('/')
-      const val = {
-        t: page.t,
-        s: slug,
+    // Handle docs if there are any
+    if (docs[lang]) {
+      for (const slug of Object.keys(docs[lang]).sort()) {
+        const page = docs[lang][slug]
+        const val = {
+          t: page.t,
+          s: slug,
+        }
+        if (page.o) val.o = page.o
+        set(sitenav, [lang, ...slug.split('/')], val)
       }
-      if (page.o) val.o = page.o
-      set(nav, [lang, ...chunks], val)
     }
 
-    // Handle strapi content
-    for (const type in strapiPosts) {
-      set(nav, [lang, type], {
-        t: translations[type] ? translations[type] : type,
-        l: type,
-        s: type,
-        o: translations[type] ? translations[type] : type,
-      })
-      for (const [slug, page] of Object.entries(strapiPosts[type][lang])) {
-        const chunks = slug.split('/')
-        set(nav, [lang, type, ...chunks], {
-          t: page.title,
-          l: page.linktitle,
-          s: type + '/' + slug,
-          o: (future - new Date(page.date).getTime()) / 100000,
-        })
+    // Handle posts if there are any
+    if (posts) {
+      for (const type in posts) {
+        for (const [slug, post] of Object.entries(posts[type].posts[lang])) {
+          set(sitenav, [lang, ...slug.split('/')], { t: post.t, o: post.o, s: slug })
+        }
       }
+    }
+
+    // Add imports for umbrella file
+    all.sitenav += `import { siteNav as ${lang} } from './sitenav.${lang}.mjs'` + '\n'
+    // Extend navigation if there's a method for that
+    if (extendNav[site]) sitenav[lang] = await extendNav[site](sitenav[lang], lang)
+
+    // Write out navigation object
+    fs.writeFileSync(
+      path.resolve('..', site, 'prebuild', `sitenav.${lang}.mjs`),
+      `${header}export const siteNav =  ${JSON.stringify(sitenav[lang])}`
+    )
+
+    /*
+     * Since slugs are language-agnostic, we only need to create a slug lookup tables
+     * once, for which we'll use the EN locale as that one is always present
+     */
+    if (lang === 'en') {
+      const sluglut = orderedSlugLut(sitenav[lang])
+      // Write out slug lookup table (sluglut)
+      fs.writeFileSync(
+        path.resolve('..', site, 'prebuild', `sluglut.mjs`),
+        `${header}export const slugLut =  ${JSON.stringify(sluglut)}`
+      )
+      store.navigation = { sluglut }
     }
   }
+
+  // Write umbrella siteNav file
   fs.writeFileSync(
-    path.resolve('..', site, 'prebuild', `navigation.mjs`),
-    `export const prebuildNavigation =  ${JSON.stringify(nav, null, 2)}`
+    path.resolve('..', site, 'prebuild', `sitenav.mjs`),
+    `${header}${all.sitenav}export const siteNav = { ${locales.join(',')} }`
   )
 
-  return true
+  // In the lab, there will be no navigation set in the store
+  if (!store.navigation) store.navigation = {}
+
+  // Update the store
+  store.navigation.sitenav = sitenav
+
+  return
 }

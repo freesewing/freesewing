@@ -1,137 +1,137 @@
 ---
-title: "Waralee wrap pants: Sewing Instructions"
+title: "Waralee wikkelbroek: Naai-instructies"
 ---
 
 <Warning>
 
-##### The key to Waralee is the waist band
+##### De sleutel van Waralee is de tailleband
 
-In a way, Waralee is just a waist band with a long piece of fabric attached. The waist band needs to continue from the fabric into two strings of fabric that are used to tie the pants in the front and two in the back. These strings are not included in the pattern. Traditionally, they are of similar length. You can make longer ones for the front panel (the side that is a little shorter than the other, on the left in the illustrations below), to allow you to tie both sets in the front. I prefer this as it is easier to tie, and you don't have the bulk of the knot in the back.
+Op een manier Waralee is slechts een tailleband met een lang stuk stof vast. De tailleband moet doorgaan van de stof in twee tekenreeksen die gebruikt worden om de voorpanden en twee aan de achterkant vast te zetten. Deze tekenreeksen zijn niet opgenomen in het patroon. Traditioneel hebben ze een vergelijkbare lengte. Je kunt de extra maken voor het voorpaneel (de zijde die iets korter is dan de andere, aan de linkerkant van de illustraties hieronder), zodat je beide sets aan de voorkant kunt binden. Ik geef er de voorkeur aan omdat het makkelijker is om aan te das en je hebt niet het grootste deel van de knoop in de rug.
 
 </Warning>
 
-### Step 1: Sew the pockets
+### Stap 1: Stik de zakken
 
 <Note>
 
-##### Pockets are optional
+##### Pockets zijn optioneel
 
-Traditionally, these types of pants do not have pockets. Maar ik wil ergens mijn telefoon, sleutels en portemonnee zetten. Dus ik heb zakken in het patroon opgenomen. Je kunt voor jezelf beslissen of je ze op je broek wilt hebben.
+Traditioneel hebben deze broektypes geen zakken. Maar ik wil ergens mijn telefoon, sleutels en portemonnee zetten. Dus ik heb zakken in het patroon opgenomen. Je kunt voor jezelf beslissen of je ze op je broek wilt hebben.
 
 De illustraties in de volgende stappen laten de oorlogsbroek zien zonder zakken. Alleen de zakplaatsingen van het patroon worden getoond, om je te helpen jezelf te oriënteren.
 
-##### If you do want pockets, make them first
+##### Als je zakken wilt kun je ze eerst
 
-If you're going to make the pockets, make them before putting one piece of fabric on the other. Het is makkelijker om met de delen te werken die nog gescheiden.
+Als je de zakken gaat maken, laat ze eerst één stuk stof op de andere plaatsen. Het is makkelijker om met de delen te werken die nog gescheiden.
 
 </Note>
 
-Both sets of pockets on Waralee are single welt pockets. These use a single piece of fabric to create a pocket opening, but are otherwise very similar to the double welt pockets shown here: [Double welt pockets](https://freesewing.org/docs/sewing/double-welt-pockets).
+Beide sets zakken op Waralee zijn enkele paspelzakken. Deze gebruiken een enkel stuk stof om een zakopening te maken, maar lijken verder erg op de dubbele paspelzakken die je hier ziet: [Dubbele paspelzakken](https://freesewing.org/docs/sewing/double-welt-pockets).
 
-We'll start with the front pockets.
-- Start with all the parts, and mark the location of the pocket on the right side of the fabric.
-- Mark the pocket opening on one of the facing pieces too. This time on the wrong side of the fabric.
-- Place the facing on the fabric, right sides together. Align the corners of the pocket openings, and pin in place.
+We beginnen met de voorzakken.
+- Begin met alle onderdelen en markeer de plaats van de zak op de goede kant van de stof.
+- Markeer de zakopening ook op een van de voorkantdelen. Deze keer aan de verkeerde kant van de stof.
+- Leg het beleg op de stof, met de goede kanten op elkaar. Lijn de hoeken van de zakopeningen uit en speld vast.
 
-Pocket lining
-- Mark the pocket opening on your pocket lining. It should be just inside the seam allowance.
-- Align the pocket openings up on all fabric pieces, and line your pocket lining top up with the waistband. Pin or baste in place.
+Voering voor zakken
+- Markeer de zakopening op de voering van je zak. Het moet net binnen de naadtoeslag zitten.
+- Breng de zakopeningen op één lijn op alle stofdelen en lijn de bovenkant van je zakvoering uit met de tailleband. Speld of rijg vast.
 
-Pocket opening
-- Using small stitches, sew the long sides of the pocket openings, catching fabric, facing, and pocket lining. Do not sew past the ends of the pocket opening.
-- Cut a slit directly between the two lines of stitching. Just before the end, split each end of the cut, snipping into each corner of the pocket opening (but not past). You should have a small V at each end of the cut.
-- Press the seams open.
-- Now push everything through the opening to the other side. Lay everything out nicely with the pocket opening open. Press the pocket opening.
+Zakopening
+- Naai met kleine steekjes de lange kanten van de zakopeningen, de opvulstof, het beleg en de zakvoering. Naai niet voorbij de uiteinden van de zakopening.
+- Knip een snee direct tussen de twee stiklijnen. Splits vlak voor het einde elk uiteinde van de snede en snijd in elke hoek van de zakopening (maar niet er voorbij). Je zou een kleine V moeten hebben aan elk uiteinde van de snede.
+- Pers de naden open.
+- Duw nu alles door de opening naar de andere kant. Leg alles mooi neer met de zakopening open. Druk op de opening van de zak.
 
-Constructing the welt
-- Turn the garment over, and press the bottom edge of the pocket facing under. Later, this will yield a nice, clean edgestitch.
-- Next, flip the pocket facing up, so that it covers the pocket opening. Then, fold back just enough of the facing to exactly cover the entire pocket opening. Press, and pin in place.
+Het boordsel maken
+- Draai het kledingstuk om en pers de onderrand van de zak naar onder. Later levert dit een mooie, schone edgestitch op.
+- Klap vervolgens de zak naar boven, zodat deze de zakopening bedekt. Vouw dan net genoeg van het beleg terug om de hele zakopening precies te bedekken. Druk aan en speld vast.
 
-Sewing the pocket opening in place
-- Turn the whole thing right side up, then fold back the fabric on one short side of the pocket opening, revealing a little triangle cutout and your pocket lining.
-- Sew the short edge of the pocket opening, just outside of your markings. This should secure the V-shaped cutout bits to the lining. Once you feel confident everything will look good from the right side, restitch this line a few times to secure.
-- Press.
-- To make things nice and tidy, you'll also stitch the bottom edge of the pocket facing to the pocket lining at this point. (This is why we pressed the very edge under earlier.)
+De zakopening vastnaaien
+- Keer het geheel met de goede kant naar boven en vouw dan de stof aan een korte kant van de zakopening terug, zodat een kleine driehoekige uitsnede en je zakvoering tevoorschijn komen.
+- Naai de korte rand van de zakopening, net buiten je markeringen. Dit moet de V-vormige uitgesneden stukjes aan de voering bevestigen. Als je er zeker van bent dat alles er vanaf de goede kant goed uitziet, naai je deze lijn een paar keer opnieuw om hem vast te zetten.
+- Pers.
+- Om alles netjes te maken, naai je op dit punt ook de onderrand van de voorkant van de zak aan de voering van de zak. (Dit is de reden waarom we de rand eerder naar beneden hebben gedrukt).
 
-Finishing the pocket
-- Take your second pocket facing, and press all edges under except for one of the longer edges.
-- Lay this facing over the pocket opening, right sides together and raw edge aligned with the raw edge of the pocket lining.
-- Now, fold your pocket lining over, aligning all the edges of the pocket.
-- Pin or clip the second pocket facing to the pocket lining along the raw edges. Then flip the pocket lining back, and pin the entire edge of the facing to the pocket lining.
-- Edgestitch the facing to the pocket fabric. This will sit behind the pocket opening when everything is assembled, so that if your pocket gaps open, your fashion fabric will show in the gap.
-- Flip the pocket fabric back, aligning edges, and pin all sides of the pocket. Close the pocket as you normally do. You can use a french seam, a serger, or another method.
+De zak afwerken
+- Neem je tweede broekzak en pers alle randen onder, behalve een van de langere randen.
+- Leg dit beleg over de zakopening, goede kanten op elkaar en de kniprand op één lijn met de kniprand van de zakvoering.
+- Vouw nu de voering van je zak om, waarbij je alle randen van de zak op elkaar legt.
+- Speld of klem het tweede broekzak beleg op de broekzakvoering langs de knipranden. Keer dan de zakvoering om en speld de hele rand van het beleg op de zakvoering.
+- Stik het beleg aan de stof van de zak. Dit zit achter de zakopening als alles in elkaar zit, zodat als je zak opengaat, je modestof in de opening te zien is.
+- Keer de stof van de zak om, leg de randen op elkaar en speld alle kanten van de zak vast. Sluit de zak zoals je normaal doet. Je kunt een Franse naad, een overlockmachine of een andere methode gebruiken.
 
-Making everything clean and tidy
-- Flip the whole piece over so you're looking at the right side.
-- Fold back the main fabric, so you can see the little triangles on the short edge of the pocket opening.
-- Sew another line, now through all layers. You should be able to see the edge stitching line of the first facing. Stitch all the way to this line, which finishes the facing on the inside of the pocket. You want to be really close to the fold with this stitch line.
-- Now fold the fabric back on the long side of the pocket opening, where the pocket sides were stitches together. You'll see the initial stitch line of the pocket opening. Make sure all the layers of fabric are laying nicely, and stitch over this stitch line once again, now through all layers. This secures this side of the pocket to the garment fabric.
-- Flip over, press well, and admire your work.
+Alles schoon en netjes maken
+- Draai het hele stuk om zodat je naar de goede kant kijkt.
+- Vouw de hoofdstof terug, zodat je de driehoekjes aan de korte kant van de zakopening kunt zien.
+- Naai nog een lijn, nu door alle lagen heen. Je moet de stiklijn van de rand van de eerste facing kunnen zien. Naai helemaal tot deze lijn, die het beleg aan de binnenkant van de zak afmaakt. Je wilt heel dicht bij de vouw zijn met deze steeklijn.
+- Vouw nu de stof terug aan de lange kant van de zakopening, waar de zijkanten van de zak aan elkaar gestikt waren. Je ziet de eerste steeklijn van de zakopening. Zorg dat alle lagen stof mooi liggen en naai nogmaals over deze steeklijn, nu door alle lagen heen. Hiermee zet je deze kant van de zak vast aan de stof van het kledingstuk.
+- Draai om, druk goed aan en bewonder je werk.
 
 <Note>
 
-I included placements for the front pockets that will be hidden by the flaps in the front. But they will still be easily accessible to put your phone or keys in. These are single welt pockets. The ones in the front are at an angle and the ones in the back are horizontally oriented. The pocket templates should allow for enough fabric to attach the pocket to the waistband. If you want particularly deep pockets, please adjust accordingly.
+Ik bevatte plaatsingen voor de voorzakken die door de kleppen aan het voorpand verborgen worden. Maar ze zullen nog steeds gemakkelijk toegankelijk zijn om je telefoon of sleutels in te voeren. Dit zijn paspelzakken. De voorpand bevindt zich in een hoek en de achterste zijn horizontaal georiënteerd. De insteekzak zou voldoende stof moeten geven om de zak aan de tailleband te bevestigen. Als u extra diepe zakken wilt, pas dat dan aan.
 
 </Note>
 
-Constructing the back pockets
-- The back pockets are also single welt pockets, but the pocket opening is horizontal, rather than at an angle. This means they hew much closer to the instructions for [double welt pockets](https://freesewing.org/docs/sewing/double-welt-pockets).
-- Follow the double welt instructions, modifying the opening to have a single welt, rather than a double welt.
+De achterzakken maken
+- De achterzakken zijn ook enkele paspelzakken, maar de zakopening is horizontaal in plaats van schuin. Dit betekent dat ze veel dichter bij de instructies voor [dubbele paspelzakken](https://freesewing.org/docs/sewing/double-welt-pockets)liggen.
+- Volg de instructies voor een dubbele boordsel, maar pas de opening aan met een enkele boordsel in plaats van een dubbele boordsel.
 
-Congratulations! Your pockets are finished!
+Gefeliciteerd! Je zakken zijn af!
 
-### Step 2: Hem the sides and bottom
+### Stap 2: Zoom de zijkanten en onderkant
 
-![Hem the sides and bottom](waralee-hem-sides-and-bottom.png)
+![Zoom de zijkanten en de onderkant](waralee-hem-sides-and-bottom.png)
 
-- Hem the sides
-- Hem the bottom.
+- De zijkanten omzomen
+- De onderkant omzomen.
 
 <Note>
 
-You can use whatever method works best for you. In the version I first made I just serged the sides, folded them back and top stitched them, then did the same for the bottom. I did this to keep the bulk of the fabric to a minimum and allow for a better drape. What you do should depend on the type of fabric you're using.
+Je kunt de methode die het beste voor je werkt gebruiken. In de versie die ik eerst maakte heb ik net de zijkanten geplaatst, plooide ze terug en stikte ze bovenop, en deed ik hetzelfde voor de onderkant. Ik heb dit gedaan om het leeuwendeel van de stof tot een minimum te houden en om een betere afvoer mogelijk te maken. Wat je doet, moet afhangen van het type stof dat je gebruikt.
 
 </Note>
 
-### Step 3: Sew the two pants parts together at the crotch
+### Stap 3: Naai de twee broekdelen aan elkaar bij het kruis
 
-![Lay the two parts on top of one another with good sides together. Sew the crotch seam](waralee-crotch-seam-no-pockets.png)
+![Leg de twee delen bovenop elkaar met de goede kanten op elkaar. Stik de kruisnaad](waralee-crotch-seam-no-pockets.png)
 
-Now you get to sew the two pants parts together.
+Nu mag je de twee broekdelen aan elkaar naaien.
 
-- Lay the two pants parts on top of one another with _good sides together_ and sew the seam along the cutout.
-- _Finish_ this seam and press it.
+- Leg de twee broekdelen op elkaar met _goede kanten op elkaar_ en naai de naad langs de uitsnede.
+- _Maak_ deze naad af en pers hem.
 
-### Step 4: Prepare the four strings
+### Stap 4: Bereid de vier tekenreeksen voor
 
-The strings are just long tubes of fabric.
+De tekenreeksen zijn slechts lange buizen.
 
-- Take a quarter of your waist measurement. Add that number to 40cm (17”). Add your seam allowance. This is the length of each string.
-- Cut out four strips of fabric that are that long and 5cm (2”) wide.
+- Neem een kwart van uw taillemaat. Voeg dat nummer toe aan 40cm (17). Voeg je naadwaarde toe. Dit is de lengte van elke string.
+- Knip vier stroken stof die zo lang en 5 cm breed zijn.
 
 <Tip>
 
-For example, if my waist circumference is 84.6cm: 84.6cm divided by 4 is 21.2cm. 21.2cm plus 40cm is 61.2cm. 61.2cm plus my seam allowance of 1cm is 62.2cm. I will cut four strips of fabric that are 62.2cm by 5cm.
+Als mijn tailleomtrek bijvoorbeeld 84,6 cm: 84,6 cm gedeeld door 4 is 2cm. 2cm plus 40cm is 61,2cm. 61,2 cm plus mijn naadwaarde van 1 cm is 62,2 cm. Ik knip vier stroken stof die 62,2 cm bij 5 cm zijn.
 
 </Tip>
 
 <Note>
 
-##### You can lengthen the front ties
+##### Je kunt de voorpanden verlengen
 
-Optionally, to make the front ties longer, extend them by your quarter waist measurement.
+optioneel om de voorpanden langer te maken, verleng ze met je kwarttaillemeting.
 
-When generating your pattern, one of the style options is called “Waist Band”. The strings, when folded, should have the same width as you specified for that option, 2.5cm (1") by default.
+Bij het genereren van je patroon wordt een van de stijlopties "Waist Band" genoemd. De strings, wanneer geplooid moet dezelfde breedte hebben als je hebt opgegeven voor die optie, 2,5 cm (1") als standaard.
 
-The extra 40cm (17") of length is to make the knot.
+De extra lengte van 40 cm (17") is om de knoop te maken.
 
-If your material is delicate or flimsy, you can add some interfacing to this to give it strength.
+Als je materiaal gevoelig of zwak is, kun je hier wat tussenvoering aan toevoegen om het kracht te geven.
 
 </Note>
 
-- Fold them in half along the long side, _good sides together_.
-- Stitch the long side and one of the short sides,
-- Turn the tie right side out.
+- Plooi ze over de helft langs de lange zijde, _goede kanten op elkaar_.
+- Naai de lange kant en een van de korte kanten,
+- Draai de stropdas met de goede kant naar buiten.
 
 <Tip>
 
@@ -141,31 +141,31 @@ Dit kan makkelijker worden door een stuk twee stukken langer te nemen dan de str
 
 </Tip>
 
-### Step 5: Sew the waist band
+### Stap 5: Stik de tailleband
 
-![Lay the two parts on top of one another with good sides together. Sew the crotch seam](waralee-waist-band-no-pockets.png)
+![Leg de twee delen bovenop elkaar met de goede kanten op elkaar. Stik de kruisnaad](waralee-waist-band-no-pockets.png)
 
-Now it is time to sew the waist band.
+Nu is het tijd om de tailleband vast te naaien.
 
-- If your fabric is delicate, add interfacing to the wrong side of the pants above the waist band line. (red)
-- Fold the seam allowance in, and then fold along the waist band line. (red)
-- Insert one of the strings you made in the previous step on each side.
-- Sew along the waist band line, and add some additional stitching to make sure those strings are attached well. (blue)
+- Als je stof gevoelig is, voeg dan versteviging toe aan de verkeerde kant van de broek boven de taillebandlijn. (rood)
+- Plooi de naadwaarde in en plooi dan langs de lijn. (rood)
+- Voeg aan beide kanten één van de tekenreeksen toe die u in de vorige stap hebt gemaakt.
+- Stik langs de lijn van de tailleband en voeg wat extra stiksel toe om ervoor te zorgen dat deze snoorden goed vastzitten. (blauw)
 
 <Warning>
 
-##### Secure the strings well
+##### Beveilig de tekenreeksen goed
 
-The strings keep your pants up, so having that stitching fail will result in awkward moments.
+De tekenreeksen houden je pannen, dus als je mislukken krijg je ongemakkelijke momenten.
 
 </Warning>
 
-### Step 6: Wear your pants
+### Stap 6: Draag je broek
 
-Press your pants, and try them on!
+Strijk je broek en probeer het op!
 
-Hold the front side against your belly and wrap both strings around you and tie in the back (or, if you have long strings, wrap them all the way around you and tie in the front). Then hand the back side through your legs to yourself and tie the other strings in the front.
+Houd de voorkant tegen je broekriem en pak beide tekenreeksen om je heen en strijk in de rug (of, als je lange strings hebt, pak ze helemaal om je heen en strijk aan het voorp). Leg de achterkant dan door je benen aan jezelf en pas de andere tekenreeksen aan de voorkant.
 
-Here is an article demonstrating how to tie wrap pants: [How to Tie Wrap Pants](https://www.wikihow.com/Tie-Wrap-Pants)
+Hier is een artikel dat laat zien hoe ingepakte broek moet worden [Hoe Tie Wrap Broek](https://www.wikihow.com/Tie-Wrap-Pants)
 
-If you get stuck, or have additional questions, you can always reach out to [other FreeSewers](https://discord.freesewing.org/).
+Als je vastloopt, of extra vragen hebt, kun je altijd contact opnemen met [andere FreeSewers](https://discord.freesewing.org/).

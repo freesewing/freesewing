@@ -1,128 +1,128 @@
 ---
-title: "Bee bikini top: Sewing Instructions"
+title: "Bikinitopje bijen: Naai-instructies"
 ---
 
 <Warning>
-Make sure to use a stretch stitch
+Zorg ervoor dat je een rekbare steek gebruikt
 </Warning>
 
 <Note>
 
-When making a reversible top the second colour will be refered to as the lining fabric.  
-The notches in this pattern act more like dots so **do not** clip them to mark them.
+Als je een omkeerbare top maakt, wordt de tweede kleur de voeringstof genoemd.  
+De inkepingen in dit patroon werken meer als stippen, dus **klem ze niet** om ze te markeren.
 
 </Note>
 
-### Step 1: Construct the Neck Ties
+### Stap 1: Maak de nekbanden
 
-#### Neck Ties One Colour Method
+#### Stropdassen Eén Kleur Methode
 
-- Fold one of the neck tie pieces in half lengthwise, right sides and raw edges together.
-- Sew along the raw edges, leaving one of the short ends open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out and press.
+- Vouw een van de stropdasdelen in de lengte dubbel, goede kanten en knipranden op elkaar.
+- Naai langs de knipranden en laat een van de korte uiteinden open.
+- Knip de naadtoeslagen bij en knip de hoeken af.
+- Keer binnenstebuiten en pers.
 
-<Note>Repeat this for the other neck tie</Note>
+<Note>Herhaal dit voor de andere stropdas</Note>
 
-#### Neck Ties Two Colours Method
+#### Stropdassen Twee Kleuren Methode
 
-- With right sides together, sew one main neck tie to one lining neck tie leaving one of the short edges open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out. Press.
+- Naai, met de goede kanten op elkaar, één hoofdhalsband aan één voeringhalsband en laat één van de korte kanten open.
+- Knip de naadtoeslagen bij en knip de hoeken af.
+- Keer binnenstebuiten. Pers.
 
-<Note>Repeat this for the the remaining neck tie pieces</Note>
+<Note>Herhaal dit voor de overige stropdasdelen</Note>
 
-### Step 2: The Cups
+### Stap 2: De kopjes
 
-#### Band Tie Variant
+#### Band Stropdas Variant
 
-- With raw edges and main fabric together, _baste_ one of the neck ties to the top of one of the cup pieces making sure that the tie goes towards the bottom of the cup.
-- With the neck tie sandwiched inside, pin a lining cup piece right sides together to the main cup piece.
-- Sew the lining to the main cup between notches along the front, top and side seams, making sure not to catch the neck tie and to reinforce the stitch at the notches.
-- (Optional) Fold to the wrong side and _edgestitch_ the seam allowance down between notches on the front and side seams. Do not sew the allowances together.
-- With good sides together, sew the lining to the main fabric along the bottom, leaving a gap between the side notches making sure to reinforce the stitch at the either end.
-- Trim the seam allowances of the sewn edges whilst leaving the seam allowance between the notches. Clip the corners. You may also need to clip the curved seams.
-- Turn inside out by pulling the neck tie through one of the gaps. Press.
-- (Optional) _edgestitch_ the top, sides and bottom of the cup leaving the gaps between the notches open.
-- Stitch along casing line to create band channel.
+- Rijg met de knipranden en de hoofdstof aan elkaar _een van de nekbandjes aan de bovenkant van een van de cupdelen en zorg dat het bandje naar de onderkant van de cup gaat.
+- Speld, met het nekbandje naar binnen geklemd, een voeringcupdeel met de goede kanten op elkaar op de hoofdcup.
+- Naai de voering aan de hoofdcup tussen inkepingen langs de voor-, boven- en zijnaden, zorg ervoor dat de nekband niet vast komt te zitten en verstevig de steek bij de inkepingen.
+- (Optioneel) Vouw naar de verkeerde kant en _edgestitch_ de naadtoeslag naar beneden tussen de inkepingen op de voor- en zijnaden. Naai de toeslagen niet aan elkaar.
+- Naai de voering met de goede kanten op elkaar langs de onderkant aan de hoofdstof, laat een opening tussen de inkepingen aan de zijkanten en zorg ervoor dat je de steek aan beide uiteinden verstevigt.
+- Knip de naadtoeslagen van de genaaide randen bij en laat de naadtoeslag tussen de inkepingen zitten. Knip de hoeken in. Het kan ook nodig zijn om de gebogen naden af te knippen.
+- Keer binnenstebuiten door het nekbandje door een van de openingen te trekken. Pers.
+- (Optioneel) _edgestitch_ de bovenkant, zijkanten en onderkant van het kopje, laat de openingen tussen de inkepingen open.
+- Naai langs de omhullingslijn om een bandkanaal te maken.
 
-<Note>Repeat this for the other cup</Note>
+<Note>Herhaal dit voor het andere kopje</Note>
 
 <Tip>
 
-If your seam allowance is wide you may find that you need to trim the gaps' seam allowances a little to reduce bulk.  
-If you are having trouble turning the cups you can try one of these methods:
+Als je naadtoeslag breed is, moet je de naadtoeslagen van de openingen misschien een beetje bijknippen om de bulk te verminderen.  
+Als je problemen hebt met het keren van de cups, kun je een van de volgende methodes proberen:
 
-- Create a 2.5cm (1") gap in the front or side seam and turn throught that, either _slipstitch_-ing the gap closed or _edgestitch_-ing it closed during Step 7.
-- Widen one of the existing gaps and turn through that. Then when turned _edgestitch_ or _slipstitch_ the widened part closed.
+- Maak een opening van 2,5 cm in de voor- of zijnaad en keer daar doorheen, door de opening dicht te _slippen_ naaien of door de opening dicht te _edgestikken_ naaien tijdens stap 7.
+- Verbreed een van de bestaande openingen en draai daar doorheen. Dan wordt bij het keren _edgestikt_ of _slipsteek_ het verbrede deel gesloten.
 
 </Tip>
 <Note>
 
-Whilst certainly optional it is recommended to _edgestitch_ the top and sides of the cups but the bottom is entirely optional.
+Hoewel het zeker optioneel is, wordt aangeraden om de bovenkant en zijkanten van de cups te _edgestikken_, maar de onderkant is helemaal optioneel.
 
 </Note>
 
-#### Cross Back Ties Variant
+#### Kruis Rugbanden Variant
 
-- With raw edges and main fabric together, _baste_ one of the neck ties to the top of one of the cup pieces making sure that the tie goes towards the bottom of the cup.
-- With the neck tie sandwiched inside, pin a lining cup piece right sides together to the main cup piece.
-- Sew the lining to the main cup along the front, top and side seams, making sure not to catch the neck tie.
-- Turn the cups right side out and press.
-- (Optional) _edgestitch_ the top and sides of the cups.
-- Sew a line of basting stitches along the bottom of the cups, just inside the seamline.
-- Gather cups along the basting stitches.
+- Rijg met de knipranden en de hoofdstof aan elkaar _een van de nekbandjes aan de bovenkant van een van de cupdelen en zorg dat het bandje naar de onderkant van de cup gaat.
+- Speld, met het nekbandje naar binnen geklemd, een voeringcupdeel met de goede kanten op elkaar op de hoofdcup.
+- Naai de voering aan de hoofdcup langs de voor-, boven- en zijnaden en zorg ervoor dat de nekband er niet tussen komt.
+- Draai de kopjes met de goede kant naar buiten en pers.
+- (Optioneel) _edgestitch_ de bovenkant en zijkanten van de kopjes.
+- Naai een rij rijgsteken langs de onderkant van de cups, net binnen de naadlijn.
+- Verzamel de kopjes langs de rijgsteken.
 
 <Tip>
 
-The amount you gather the cups is a matter of preference and cup size, but you can hold them up to yourself before stitching in place to ensure the fit is right.  
-There are also notches on either side of the band piece's midpoint to help give you an idea of how much to gather by.
+Hoeveel je de cups samenvoegt is een kwestie van voorkeur en cupmaat, maar je kunt ze tegen jezelf aanhouden voordat je ze vastnaait om er zeker van te zijn dat de pasvorm goed is.  
+Er zijn ook inkepingen aan weerszijden van het midden van het bandstuk om je een idee te geven van hoeveel je moet verzamelen.
 
 </Tip>
 
-- Find the midpoint of the band piece, this is marked by a notch, then pin the gathered bottoms of cups to band piece, right sides together. You'll want the cups to meet at the band's midpoint.
-- Stitch the cups to the band. Once they're stitched in place, check the fit of the cups once more before continuing. Unpicking swim fabric is a pain, so it's better to make sure the cups fit just right before moving on.
+- Zoek het midden van het banddeel, dit is gemarkeerd door een inkeping, speld dan de samengevouwen onderkanten van de cups op het banddeel, met de goede kanten op elkaar. Je wilt dat de kopjes elkaar raken in het midden van de band.
+- Naai de cups aan de band. Als ze vastgenaaid zijn, controleer dan nog een keer de pasvorm van de cups voordat je verder gaat. Zwemstof losmaken is vervelend, dus het is beter om eerst te kijken of de cups goed passen voordat je verder gaat.
 
 <Note>
 
-You may prefer to wrap the one cup over the other at the midpoint. To do this place the sides of the cups at the otuer notches and lay their fronts pass the midpoint with the left on top.
+Je kunt er de voorkeur aan geven om de ene cup halverwege over de andere te wikkelen. Om dit te doen plaats je de zijkanten van de cups op de andere inkepingen en leg je de voorkant ervan langs het middelpunt met de linkerkant bovenop.
 
 </Note>
 
-- Now it's time to finish the band. To do this, fold in the seam allowance on both sides of the band. The raw edges of your swim cups should be turned to the inside of the band. Then, fold the band in half lengthwise, aligning the long edges and enclosing the seam allowances. Swim fabric can be slippery, so you may need extra pins or clips to hold the fabric in place.
-- Stitch along the top of the band, securing the seam allowances within the band.
+- Nu is het tijd om de band af te maken. Om dit te doen, vouw je de naadtoeslag aan beide kanten van de band naar binnen. De knipranden van je zwemcups moeten naar de binnenkant van de band worden gedraaid. Vouw de band dan in de lengte dubbel, leg de lange randen op elkaar en sluit de naadtoeslagen in. Zwemstof kan glad zijn, dus je hebt misschien extra spelden of clips nodig om de stof op zijn plaats te houden.
+- Naai langs de bovenkant van de band en zet de naadtoeslagen vast in de band.
 
 <Tip>
 
-For extra support, you can also add swim elastic into the band, either by stitching clear elastic into the band's seam allowance, or by threading swim elastic through the band at this point.
+Voor extra steun kun je ook zwemelastiek aan de band toevoegen, door doorzichtig elastiek in de naadtoeslag van de band te naaien of door op dit punt zwemelastiek door de band te rijgen.
 
 </Tip>
 
-- At this point, the band is a long tube with open ends. Next, we'll be sewing those closed while providing a loop to thread your neck ties through. To do this fold over one end of the band towards the inside of the swim top. The amount you fold over should be, at minimum, the width of your neck ties plus a seam allowance. Stitch the end down to create a loop at least as wide as your neck ties. There will be a lot of pressure on this point, so make sure your stitching is secure, and consider running a second line of stitching next to the first, for additional support. Repeat for the other end of the band.
-- To thread your neck-ties for cross back ties, take the tie from the left cup and thread it through the loop on the right side of the band, from top to bottom. Thread the tie from the right cup top-to-bottom through the loop on the left side of the band. Then tie the neck ties at center back to secure the swim top.
-- Skip to "Step 5: Enjoy!"
+- Op dit punt is de band een lange buis met open uiteinden. Vervolgens naaien we deze dicht en maken we een lus om je nekbanden doorheen te rijgen. Om dit te doen vouw je een uiteinde van de band naar de binnenkant van de zwemtop. De hoeveelheid die je omvouwt moet minimaal de breedte van je nekbanden zijn plus een naadtoeslag. Naai het uiteinde naar beneden om een lus te maken die minstens zo breed is als je nekband. Er komt veel druk op dit punt te staan, dus zorg ervoor dat je stiksel goed vastzit en overweeg om een tweede stiklijn naast de eerste te zetten voor extra ondersteuning. Herhaal dit voor het andere uiteinde van de band.
+- Om je stropdassen voor kruislinks te rijgen, neem je de stropdas van de linkerkop en rijg je die door de lus aan de rechterkant van de band, van boven naar beneden. Rijg de stropdas van de rechter cup van boven naar beneden door de lus aan de linkerkant van de band. Knoop dan de nekbandjes middenachter vast om de zwemtop vast te zetten.
+- Ga verder naar "Stap 5: Geniet!".
 
-### Step 3: Band tie
+### Stap 3: Band afbinden
 
-You only need to do this step if making the band tie variant.
+Je hoeft deze stap alleen te doen als je de bandstropdasvariant maakt.
 
-#### Band Tie One Colour Method
+#### Band Stropdas Methode Eén Kleur
 
-- Fold the band tie piece in half lengthwise, right sides and raw edges together.
-- Sew along the raw edges, leaving one of the short ends open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out. Press.
+- Vouw het stropdasdeel in de lengte dubbel, goede kanten en knipranden op elkaar.
+- Naai langs de knipranden en laat een van de korte uiteinden open.
+- Knip de naadtoeslagen bij en knip de hoeken af.
+- Keer binnenstebuiten. Pers.
 
-#### Band Tie Two Colours Method
+#### Band Strik Twee Kleuren Methode
 
-- With right sides together, sew the main band tie to the lining neck tie leaving one of the short edges open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out. Press.
+- Naai, met de goede kanten op elkaar, de hoofdband aan de voeringhalsband en laat een van de korte kanten open.
+- Knip de naadtoeslagen bij en knip de hoeken af.
+- Keer binnenstebuiten. Pers.
 
-### Step 4: Putting it all together.
+### Stap 4: Alles samenvoegen.
 
-- Thread the band tie through the gaps along the bottom edge of the cups, making sure the front sides of the cups are in the centre and that the main and lining sides are on the respective side.
+- Rijg de band door de openingen langs de onderrand van de cups, zorg ervoor dat de voorkant van de cups in het midden zit en dat de hoofd- en voeringkant aan de respectievelijke kant zitten.
 
-### Step 5: Enjoy!
+### Stap 5: Geniet!
 
-Hooray, your Bee Bikini Top is finished!
+Hoera, je Bee Bikini Top is af!

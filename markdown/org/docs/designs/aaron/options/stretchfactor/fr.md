@@ -1,5 +1,5 @@
 ---
-titre : "Élasticité"
+title: "Élasticité"
 ---
 
 ![L'option du taux d'élasticité sur Aaron](./stretchfactor.svg)
@@ -12,4 +12,4 @@ Quel est le taux d’élasticité de votre tissu ?  Choisissez 0% si votre tissu
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](aaron_stretchfactor_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](aaron_stretchfactor_sample.svg "Effet de cette option sur le motif")

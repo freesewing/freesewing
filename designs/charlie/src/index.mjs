@@ -1,5 +1,7 @@
-import { Design } from '@freesewing/core'
+import { Design, mergeI18n } from '@freesewing/core'
 import { data } from '../data.mjs'
+import { i18n as titanI18n } from '@freesewing/titan'
+import { i18n as charlieI18n } from '../i18n/index.mjs'
 // Parts
 import { back } from './back.mjs'
 import { front } from './front.mjs'
@@ -35,6 +37,9 @@ const Charlie = new Design({
   ],
 })
 
+// Merge translations
+const i18n = mergeI18n([titanI18n, charlieI18n])
+
 // Named exports
 export {
   front,
@@ -51,4 +56,5 @@ export {
   flyExtension,
   beltLoops,
   Charlie,
+  i18n,
 }

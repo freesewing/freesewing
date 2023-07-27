@@ -1,5 +1,5 @@
 ---
-titre : "Aisance pour les hanches"
+title: "Aisance à la taille"
 ---
 
 ***

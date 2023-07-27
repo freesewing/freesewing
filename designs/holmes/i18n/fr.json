@@ -1,0 +1,48 @@
+{
+  "t": "Casquette de détective Holmes",
+  "d": "Pour un cosplay Sherlock Holmes, ou juste un joli manteau.",
+  "p": {
+    "ear": "Ear",
+    "gore": "Gore",
+    "visor": "Visor"
+  },
+  "s": {},
+  "o": {
+    "headEase": {
+      "t": "Aisance du tour de tête",
+      "d": "La quantité d'aisance autour de votre tête."
+    },
+    "lengthRatio": {
+      "t": "Profondeur de tête",
+      "d": "Contrôle la longueur de la couronne et des rabats d'oreilles"
+    },
+    "gores": {
+      "t": "Nombre de pans",
+      "d": "Le nombre de pans utilisés pour construire la couronne"
+    },
+    "visorAngle": {
+      "t": "Angle de la visière",
+      "d": "L'angle d'arc utilisé pour tracer la courbe intérieure de la visière"
+    },
+    "visorWidth": {
+      "t": "Largeur de la visière",
+      "d": "Contrôle la largeur de la visière"
+    },
+    "earLength": {
+      "t": "Longueur du rabat de l'oreille",
+      "d": "Contrôle la longueur des rabats de l'oreille indépendamment des autres pièces de contour"
+    },
+    "earWidth": {
+      "t": "Largeur du rabat de l'oreille",
+      "d": "Contrôle la largeur des rabats de l'oreille"
+    },
+    "buttonhole": {
+      "t": "Guide des boutonnières",
+      "d": "Ajoute une boutonnière au rabat d'oreille pour vous aider à tracer la variante du rabat de l'oreille avec boutonnière"
+    },
+    "visorLength": {
+      "t": "Longueur de la visière",
+      "d": "Contrôle la longueur de la visière"
+    }
+  }
+}

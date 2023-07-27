@@ -1,8 +1,8 @@
 ---
-title: "Tamiko top: What You Need"
+title: "Top Tamiko: Lo que necesitas"
 ---
 
-To make Tamiko, you will need the following:
+Para hacer Tamiko, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- About 1 meter (1.1 yards) of a suitable fabric ([see Fabric options](/docs/patterns/tamiko/fabric))
+- Aproximadamente 1 metro (1,1 yardas) de una tela adecuada ([ver Opciones de tela](/docs/patterns/tamiko/fabric))

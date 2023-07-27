@@ -1,12 +1,12 @@
 ---
-title: "Penelope pencil skirt: What You Need"
+title: "Penelope Bleistiftrock: Was du brauchst"
 ---
 
-To make Penelope, you will need the following:
+Um Penelope zu erstellen, benötigst du Folgendes:
 
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
-- About 1 meter (1.1 yards) of a suitable main fabric ([see Penelope Fabric options](/docs/patterns/penelope/fabric))
-- An invisible or regular closed end zipper
-- Some interfacing for the waistband (if using) and maybe for the vent and hem
-- Some sort of closure for the waistband (if using)
-- (Optional) About 1 meter (1.1 yards) of suitable lining fabric ([see Penelope Fabric options](/docs/patterns/penelope/fabric))
+- Etwa 1 Meter (1,1 Yards) eines geeigneten Hauptstoffs ([siehe Penelope-Stoffoptionen](/docs/patterns/penelope/fabric))
+- Ein unsichtbarer oder normaler Reißverschluss mit geschlossenem Ende
+- Etwas Einlage für den Bund (falls verwendet) und vielleicht für den Schlitz und den Saum
+- Eine Art Verschluss für den Bund (falls verwendet)
+- (Optional) Etwa 1 Meter (1,1 Yards) eines geeigneten Futterstoffes ([siehe Penelope Stoffoptionen](/docs/patterns/penelope/fabric))

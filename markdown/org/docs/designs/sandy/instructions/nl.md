@@ -1,126 +1,126 @@
 ---
-title: "Sandy circle skirt: Sewing Instructions"
+title: "Sandy cirkelrok: Naai-instructies"
 ---
 
 <Warning>
 
-Due to the different styles and configurations of Sandy you may find you need to skip or re-order certain steps.
-We're not going to go into a full explanation on how to create all the individual details that make up a circle skirt. These instructions assume that you know how to sew a zipper, construct pockets, etc. If not, there are numerous excellent articles available on the web, both in writen form, and on video. If not, there are numerous excellent articles available on the web, both in writen form, and on video. If you do get stuck, you can always reach out to [other FreeSewers](https://discord.freesewing.org/) in our discord.
+Door de verschillende stijlen en configuraties van Sandy kan het zijn dat je bepaalde stappen moet overslaan of anders moet rangschikken.
+We gaan hier niet uitleggen hoe je alle afzonderlijke details van een cirkelrok kunt maken. These instructions assume that you know how to sew a zipper, construct pockets, etc. If not, there are numerous excellent articles available on the web, both in writen form, and on video. Zo niet, dan zijn er talloze uitstekende artikelen beschikbaar op het -web, zowel schriftelijk als op video. Als je vastloopt, kun je altijd contact opnemen met [andere FreeSewers](https://discord.freesewing.org/) in onze discord.
 
 </Warning>
 
 <Note>
 
-Due to seamless and closure Sandy's needing different constructions we have separated their instructions.
+Omdat naadloze Sandy's en Sandy's met sluiting verschillende constructies nodig hebben, hebben we hun instructies gescheiden.
 
 </Note>
 
-## Step 1: Prepping the Skirt
+## Stap 1: De rok voorbereiden
 
-- If including a closure, sew the skirt seam  _good sides together_ up to where you intend the opening to start.
-- Add Pockets if using.
-- If using lining, prep the same as the skirt.
-- _Finish_ seams if not lining.
+- Als er een sluiting in zit, naai dan de roknaad  _goede kanten op elkaar_ tot waar je de opening wilt laten beginnen.
+- Voeg zakken toe als je die gebruikt.
+- Als je voering gebruikt, doe je hetzelfde als bij de rok.
+- _Werk_ naden af als je niet voert.
 
 <Note>
 
-Pockets are not included in Sandy as it has one seam by default or no seams at all.
+Zakken zijn niet inbegrepen in Sandy omdat het standaard één naad of helemaal geen naden heeft.
 
-If you would like inseam pockets you can cut the skirt pattern piece into multiple pieces rather than a single one to create seams to insert them into. Cutting it into thirds (for default) or two (for seamless) will give you two sideseams for two inseam pockets, just don't forget to add back seam allowance to the cut lines if including.
+Als je binnenbeennaadzakken wilt, kun je het rokpatroondeel in meerdere stukken knippen in plaats van in één stuk om naden te maken om ze in te voegen. Door het in drieën (bij standaard) of tweeën (bij naadloos) te knippen, krijg je twee zijnaden voor twee binnenbeennaden. Vergeet niet om de naadtoeslag aan de achterkant toe te voegen aan de kniplijnen als je dat ook doet.
 
-If you do not wish to create additional seams but still wish to have pockets, you can use Patch Pockets or if you are feeling adventurous, you can use Welt Pockets.
+Als je geen extra naden wilt maken maar toch zakken wilt, kun je Patch Pockets gebruiken of, als je je avontuurlijk voelt, Welt Pockets.
 
 </Note>
 
-## Step 2: Prep the opening
+## Stap 2: De opening voorbereiden
 
-- Insert zipper or placket into opening if using.
-- If not using, press the openings seam allowance to the inside and _Edgestitch_/_Topstitch_ in place. You may also wish to continue the topstitching down the seam.
+- Plaats de rits of sluiting in de opening als je die gebruikt.
+- Als je dit niet gebruikt, pers dan de naadtoeslag van de openingen naar binnen en zet _Edgestitch_/_Doorstikken_ vast. Je kunt het doorstikken ook langs de naad voortzetten.
 
 <Note>
 
-Skip this step if:
-- You are including the zipper in the waistband.
-- You are making a seamless version.
+Sla deze stap over als:
+- Je de rits in de tailleband opneemt.
+- Je maakt een naadloze versie.
 
 </Note>
 
-## Step 3: Lining
+## Stap 3: Voering
 
-- (Optional) Interline the skirt with a stiffer or stronger fabric.
-- Attach Lining to skirt at hem and opening by your preferred method.
-- _Baste_ Lining to skirt at waist.
-- Gather the waist if needed.
+- (Optioneel) Omzoom de rok met een stijvere of sterkere stof.
+- Bevestig de voering aan de rok bij de zoom en opening op de door jou gewenste manier.
+- _Rijg_ Voering in de taille aan de rok.
+- Rimpel de taille indien nodig.
 
-## Step 4: The waistband
+## Stap 4: De tailleband
 
-### Closures
+### Sluitingen
 
-- Interface/stiffen half the waistband part lengthwise. Or interface/stiffen one of the curved waistband parts.
-- Press under the seam allowance on the long edge of the waistband that is not interfaced. Trim. _Baste_ the fold in place if needed.
-- With _good sides together_ sew the interfaced waistband/side of the waistband to the skirt. Gather the skirt down to the waistband if needed.
-- If using the curved waistband sew the non-interfaced part to the interfaced part. Trim and clip seam and press the non-interfaced part up and away from the skirt.
+- Verdeel/verstevig de helft van het taillebanddeel in de lengte. Of een van de gebogen delen van de tailleband interfacen/stijven.
+- Pers onder de naadtoeslag aan de lange kant van de tailleband die niet is verstevigd. Trim. _Rijg_ de vouw op zijn plaats als dat nodig is.
+- Met _goede kanten op elkaar_ naai je de met interfaced tailleband/zijkant van de tailleband aan de rok. Rimpel de rok tot aan de tailleband als dat nodig is.
+- Als je de gebogen tailleband gebruikt, naai dan het deel zonder vlieseline aan het deel met vlieseline. Knip de naad bij en pers het niet-afgewerkte deel omhoog en weg van de rok.
 
-There will be some overhangs:
+Er zullen enkele overstekken zijn:
 
-- The side you wish not to overlap should be overhang by your seam allowance.
-- The side intended to overlap will have a greater overhang.
-- If using a placket, both sides will overhang by your seam allowance.
-- If using a zipper in the waistband the greater overhang will need to be trimmed to the seam allowance.
+- De kant die je niet wilt overlappen, moet overlappen met je naadtoeslag.
+- De kant die bedoeld is om te overlappen zal een grotere overhang hebben.
+- Als je een sluiting gebruikt, steken beide zijkanten uit met je naadtoeslag.
+- Als je een rits in de tailleband gebruikt, moet je de grotere overhang afknippen tot de naadtoeslag.
 
-__Inserting Zipper in Waistband__
-- If inserting a zipper into the waistband now is the time to do so, attach the zipper from the waistband fold line down. Or from seam-line down for curved waistband.
-- _Slipstitch_ or _Whipstitch_ the lining to the zipper at this point if you have not treated the lining and skirt as one at the opening.
-- Press under overhangs.
-- Press the waistband _wrong sides together_ along fold-line. Or along seam-line for curved waistband.
-- Slipstitch_ or _Whipstitch_ the overhang edges to the zipper.
-- _Edgestitch_ the waistband in place.
-- Alternatively, _Slipstitch_ or _Whipstitch_ the waistband in place on the inside.
+__Rits invoegen in tailleband__
+- Als je een rits in de tailleband aanbrengt, doe dat dan nu. Maak de rits vast vanaf de vouwlijn van de tailleband naar beneden. Of vanaf de naadlijn naar beneden voor een gebogen tailleband.
+- _Schuifsteek_ of _Zweepsteek_ de voering aan de rits op dit punt als je de voering en rok niet als één geheel hebt behandeld bij de opening.
+- Druk onder overstekken.
+- Strijk de tailleband _met de verkeerde kanten op elkaar_ langs de vouwlijn. Of langs de naadlijn voor een gebogen tailleband.
+- Schuifsteek_ of _Zweepsteek_ de overhangende randen aan de rits.
+- _Naai de tailleband vast met een stiksteek_ .
+- Je kunt ook _Doorstikken_ of _Doorstikken_ de tailleband aan de binnenkant vastnaaien.
 
-__Other closures__
-- Press the waistband _good sides together_ along fold-line. Or along seam-line for curved waistband.
-- Sew the overhangs with your seam allowance.
-- Turn the waistband out and to the inside, Press.
-- _Egdestitch_ the waistband in place, this should also close the gap of the over-lap.
-- Alternatively, _Slipstich_ or _Whipstitch_ the waistband in place on the inside and close the gap of the over-lap with _Slipstiching_.
-- Add snaps, dress hooks or button and buttonhole, whatever is your preferred closure to the waistband overhang.
+__Andere sluitingen__
+- Strijk de tailleband _met de goede kanten op elkaar_ langs de vouwlijn. Of langs de naadlijn voor een gebogen tailleband.
+- Naai de overhangen met je naadtoeslag.
+- Keer de tailleband naar buiten en naar binnen, pers.
+- _Egdestik_ de tailleband vast, dit zou ook de opening van de overslag moeten sluiten.
+- Je kunt ook de tailleband aan de binnenkant vastnaaien met een _slipstitch_ of _whipstitch_ en het gat van de overslag sluiten met een _slipstitch_.
+- Voeg drukknopen, kledinghaken of knopen en knoopsgaten toe aan de overhang van de tailleband.
 
-### Seamless
+### Naadloos
 
-- If curved waistband with _good sides together_ sew the two waistbands together along the shortest curved edge. Press away from one another, Trim and clip the seam.
-- With _good sides together_ sew the waistband together along the short seams, leaving a gap for the elastic that will be on the inside.
-- Press under the seam allowance on the long edge of the waistband that is intended to be on the inside.
-- With _good sides together_ attach the waistband to the skirt along the unpressed seam. Trim seam.
-- Press waistband and seam allowance up away from skirt.
-- Press the waistband to the inside along the fold-line/seam-line.
-- _Edgestitch_ the waistband in place.
-- Alternatively you can _Slipstitch_ or _Whipstitch_ the waistband in place on the inside.
-- Cut the elastic to your waist.
-- Thread the elastic through the opening of the waistband making sure not to lose the end.
-- Overlap the ends of the elastic by 1cm (3/8 inch) and zig-zag stitch in place.
-- Tuck elastic into waistband and close the opening with hand-sewing.
+- Als gebogen tailleband met _goede kanten op elkaar_ naai de twee taillebanden aan elkaar langs de kortste gebogen rand. Pers de naden van elkaar af, knip ze bij en knip ze af.
+- Met _goede kanten op elkaar_ naai je de tailleband aan elkaar langs de korte naden, waarbij je een ruimte overlaat voor het elastiek dat aan de binnenkant komt.
+- Pers onder de naadtoeslag aan de lange kant van de tailleband die aan de binnenkant moet komen.
+- Met _goede kanten op elkaar_ bevestig je de tailleband aan de rok langs de ongeperste naad. Trimnaad.
+- Pers de tailleband en naadtoeslag omhoog, weg van de rok.
+- Strijk de tailleband naar binnen langs de vouwlijn/naadlijn.
+- _Naai de tailleband vast met een stiksteek_ .
+- Je kunt ook _Slipstitch_ of _Whipstitch_ de tailleband aan de binnenkant vastnaaien.
+- Knip het elastiek in je taille.
+- Rijg het elastiek door de opening van de tailleband en zorg dat je het uiteinde niet verliest.
+- Laat de uiteinden van het elastiek 1 cm overlappen en naai vast met een zigzagsteek.
+- Stop het elastiek in de tailleband en naai de opening met de hand dicht.
 
-## Step 5: Hemming
+## Stap 5: Stikken
 
-If you have hemmed the skirt with the lining you can skip this step.
+Als je de rok met de voering hebt gezoomd, kun je deze stap overslaan.
 
-Hem the skirt in one of the following ways:
-- Omit the hem allowance and bind the raw edge.
-- Bind the raw edge of the hem allowance, single fold the hem under and either _Topstitch_ or hand sew the hem in place.
-- Double fold the hem under and either _Topstitch_ or hand sew the hem in place. You may have heard this be called a Rolled hem.
+Zoom de rok op een van de volgende manieren:
+- Laat de zoomtoeslag weg en bind de kniprand af.
+- Bind de kniprand van de zoomtoeslag af, vouw de zoom een keer om en naai de zoom vast met _doorstiksteek_ of naai hem met de hand vast.
+- Vouw de zoom dubbel en naai de zoom vast met _Doorstikken_ of met de hand. Je hebt misschien wel eens gehoord dat dit een rolzoom wordt genoemd.
 
 <Note>
 
-There are many ways to hem/face the bottom of a skirt, If you have a prefered method use it here.
+Er zijn veel manieren om de onderkant van een rok te zomen. Als je een methode hebt die je voorkeur heeft, gebruik die dan hier.
 
 </Note>
 
-## Step 6: Enjoy!
+## Stap 6: Geniet!
 
-You are all done! Now go enjoy your wonderful new skirt and try not to get too dizzy showing off it's fullness!
+Je bent helemaal klaar! Ga nu genieten van je prachtige nieuwe rok en probeer niet te duizelig te worden terwijl je pronkt met zijn volheid!
 
 <Note>
 
-These instructions are just a suggestion, there are many ways to construct a circle skirt so feel free to deviate or completely disregard. If you need help, you can always reach out to [other FreeSewers](https://discord.freesewing.org/) in our discord.
+Deze instructies zijn slechts een suggestie, er zijn veel manieren om een cirkelrok te maken dus voel je vrij om af te wijken of helemaal te negeren. Als je hulp nodig hebt, kun je altijd contact opnemen met [andere FreeSewers](https://discord.freesewing.org/) in onze discord.
 
 </Note>

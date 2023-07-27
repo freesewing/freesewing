@@ -1,9 +1,9 @@
 ---
-title: Shoulder slope reduction
+title: Réduction de la pente d'épaule
 ---
 
-The amount by which the shoulder slope is reduced to allow for shoulder padding.
+La quantité par laquelle la pente des épaules est réduite pour permettre un ajustement aux épaules.
 
-## Effet de cette option sur le modèle
+## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sven_shoulderslopereduction_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sven_shoulderslopereduction_sample.svg "Effet de cette option sur le motif")

@@ -1,0 +1,37 @@
+{
+  "t": "Hugo hoodie",
+  "d": "Hugo is a hooded jumper with raglan sleeves.",
+  "p": {
+    "back": "Back",
+    "cuff": "Cuff",
+    "front": "Front",
+    "hoodCenter": "Hood center",
+    "hoodSide": "Hood side",
+    "pocket": "Pocket",
+    "pocketFacing": "Pocket facing",
+    "sleeve": "Sleeve",
+    "waistband": "Waistband"
+  },
+  "s": {
+    "cuff": "Cuff",
+    "hoodCenter": "Hood center",
+    "hoodSide": "Hood side",
+    "pocketFacing": "Pocket facing",
+    "pocket": "Pocket",
+    "waistband": "Waistband"
+  },
+  "o": {
+    "ribbingHeight": {
+      "t": "Ribbing height",
+      "d": "Controls the height of the ribbing"
+    },
+    "ribbingStretch": {
+      "t": "Ribbing stretch",
+      "d": "Use this to adapt the pattern to how stretchy the ribbing that you are using is."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "The amount of ease at your hips."
+    }
+  }
+}

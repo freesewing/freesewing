@@ -1,3 +1,4 @@
+import { useCallback, useMemo } from 'react'
 // Components
 import { OptionsIcon } from 'shared/components/icons.mjs'
 import { optionsMenuStructure, optionType } from 'shared/utils.mjs'
@@ -71,9 +72,17 @@ export const DesignOptions = ({
   DynamicDocs = false,
 }) => {
   const menuNs = [`o_${design}`, ...ns]
-  const optionsMenu = optionsMenuStructure(patternConfig.options)
-  const getDocsPath = (option) =>
-    `patterns/${design}/options${option ? '/' + option.toLowerCase() : ''}`
+  const optionsMenu = useMemo(() => optionsMenuStructure(patternConfig.options), [patternConfig])
+  const updateFunc = useCallback(
+    (name, value) => update.settings(['options', ...name], value),
+    [update]
+  )
+
+  // FIXME How do we find inherited docs?
+  const getDocsPath = useCallback(
+    (option) => `designs/${design}/options${option ? '/' + option.toLowerCase() : ''}`,
+    [design]
+  )
 
   return (
     <WorkbenchMenu
@@ -91,7 +100,7 @@ export const DesignOptions = ({
         language,
         ns: menuNs,
         passProps: { settings, patternConfig },
-        updateFunc: (name, value) => update.settings(['options', ...name], value),
+        updateFunc,
       }}
     />
   )

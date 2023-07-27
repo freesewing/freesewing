@@ -1,0 +1,26 @@
+canvas: Haardoek
+cut: Knip
+cuttingLayout: Voorgestelde snij-indeling
+fabric: Hoofd stof
+materialSize: "{length} van {width} breed materiaal"
+heavyCanvas: Zwaar canvas
+interfacing: Tussenvoering
+lining: Voering
+lmhCanvas: Licht tot middellang haar Canvas
+mirrored: gespiegeld
+onFoldLower: aan de stofvouw
+onFoldAndBias: gevouwen op de bias
+onBias: over het vooroordeel
+plastic: Plastic
+ribbing: Boordstof
+edgeOfFabric: Rand van stof
+sheetWidth.t: Materiaal Breedte
+sheetWidth.d: Hoe breed is het materiaal?
+grainDirection.t: Korrelrichting
+grainDirection.d: In welke richting loopt de nerf op het materiaal?
+horizontal.t: Horizontaal
+horizontal.d: Graan loopt van links naar rechts
+vertical.t: Verticaal
+vertical.d: De korrel loopt van boven naar beneden
+cutSettings: Materiaal Instellingen
+cutSettings.d: Met deze instellingen kun je eigenschappen van het materiaal opgeven om te helpen bij het maken van een snijlayout

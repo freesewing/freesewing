@@ -1,12 +1,12 @@
 ---
-title: "Bust dart length"
+title: "Longitud del dart del polvo"
 ---
 
-Controls how close the **bust darts** approach the bust points.
+Controla lo cerca que se acercan las pinzas de busto **** a los puntos del busto.
 
-- Increase this option to lengthen the bust darts moving them closer to the bust points
-- Decrease this option to shorten the bust darts moving them further away from the bust points
+- Aumenta esta opción para alargar las pinzas del busto acercándolas a los puntos del busto
+- Disminuye esta opción para acortar las pinzas del busto alejándolas de los puntos del busto
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_bustdartlength_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simone_bustdartlength_sample.svg "Efecto de esta opción en el patrón")

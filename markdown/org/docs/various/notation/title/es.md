@@ -2,11 +2,11 @@
 title: Titulos
 ---
 
-Each pattern piece has a title that tells you the number and name of the piece, as well as the pattern name and a timestamp of when the pattern was drafted:
+Cada pieza del patrón tiene un título que te indica el número y el nombre de la pieza, así como el nombre del patrón y una marca de tiempo de cuándo se redactó el patrón:
 
 <Legend part="title">
 
-Example of a title
+Ejemplo de título
 
 </Legend>
 

@@ -1,11 +1,11 @@
 ---
-title: "Back armhole slant"
+title: "Slant del orificio trasero"
 ---
 
 ***
 
-The **back armhole slant** slightly rotates the armhole around the back pitch point.
+La inclinación de la sisa de la espalda **** gira ligeramente la sisa alrededor del punto de inclinación de la espalda.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_backarmholeslant_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](noble_backarmholeslant_sample.svg "Efecto de esta opción en el patrón")

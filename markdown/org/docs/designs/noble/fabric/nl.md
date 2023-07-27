@@ -1,18 +1,18 @@
 ---
-title: "Noble body block: Fabric Options"
+title: "Edel lijfblok: Stof Opties"
 ---
 
-If you are making a default Noble to see how it fits we recommend a fabric such as **Calico (Muslin)** or a cheaper fabric that matches the drape and stretch of the fabric you intend to make a finalised version of Noble with.
+Als je een standaard Noble maakt om te zien hoe deze past, raden we een stof aan zoals **Calico (Muslin)** of een goedkopere stof die overeenkomt met de drapering en stretch van de stof waarmee je de definitieve versie van Noble wilt maken.
 
-You can use scraps of fabrics from your stash so don't worry about buying fabric specifically for Noble.
+Je kunt restjes stof uit je stash gebruiken, dus maak je geen zorgen over het kopen van stof speciaal voor Noble.
 
 <Note>
 
-###### Noble is a block, not a pattern
+###### Noble is een blok, geen patroon
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Een blok is een basisvorm waarop andere patronen zijn gebaseerd.
+Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Blokken worden meestal niet gemaakt zoals is, maar dienen als basis voor andere patronen.
 
 </Note>

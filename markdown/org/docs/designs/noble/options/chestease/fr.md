@@ -1,11 +1,11 @@
 ---
-title: "Chest ease"
+title: "Aisance de poitrine"
 ---
 
 ***
 
-The **chest ease** option controls the amount of ease at the fullest part of your chest.
+L'option **facilité de poitrine** contrôle la quantité d'aisance à la partie la plus complète de votre poitrine.
 
-## Effet de cette option sur le modèle
+## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](noble_chestease_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](noble_chestease_sample.svg "Effet de cette option sur le motif")

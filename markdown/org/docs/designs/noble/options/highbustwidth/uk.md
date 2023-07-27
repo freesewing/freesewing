@@ -1,11 +1,11 @@
 ---
-title: "High bust width"
+title: "Висока ширина бюста"
 ---
 
 ***
 
-The **high bust width** option allows you to tweak the high bust width at the front.
+Опція **високої ширини бюста** дозволяє налаштувати високу ширину бюста спереду.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_highbustwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](noble_highbustwidth_sample.svg "Вплив цієї опції на шаблон")

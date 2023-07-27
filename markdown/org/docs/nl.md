@@ -2,17 +2,17 @@
 title: Documentatie
 ---
 
-Welcome to the FreeSewing documentation for makers. Here you will find all the [documentation for our various designs](/docs/designs) as well as [how to take measurements](/docs/measurements/), documentation for [various sewing terms and techniques](/docs/sewing/).
+Welkom bij de FreeSewing documentatie voor makers. Hier vind je alle [documentatie voor onze verschillende ontwerpen](/docs/designs) evenals [hoe je maten opneemt](/docs/measurements/), documentatie voor [verschillende naaitermen en technieken](/docs/sewing/).
 
-If you're new to FreeSewing, please take a moment to read the [getting started documentation](/docs/guide/).
+Als je nog niet eerder met FreeSewing hebt gewerkt, neem dan even de tijd om de [Aan de slag documentatie](/docs/guide/)te lezen.
 
 <ReadMore />
 
 <Tip>
 
-If you're looking for
-developer/contributor docs, please refer to
-[FreeSewing.dev](https://freesewing.dev/) instead.
+Als je op zoek bent naar
+docs voor ontwikkelaars/medewerkers, kijk dan op
+[FreeSewing.dev](https://freesewing.dev/).
 
 </Tip>
 

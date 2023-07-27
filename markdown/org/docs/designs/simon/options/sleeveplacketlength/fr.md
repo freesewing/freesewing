@@ -1,5 +1,5 @@
 ---
-title: "Sleeve placket length"
+title: "Longueur de la patte de manche"
 ---
 
 ![Longueur de la patte de manche](sleeveplacketlength.svg)
@@ -15,4 +15,4 @@ Cela influence également ce à quoi les choses ressembleront quand vous roulez 
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_sleeveplacketlength_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_sleeveplacketlength_sample.svg "Effet de cette option sur le motif")

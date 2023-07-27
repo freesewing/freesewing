@@ -1,5 +1,5 @@
 ---
-title: "Trayvon tie: Cutting Instructions"
+title: "Trayvon tie : Instructions de coupe"
 ---
 
 - **Tissu principal**
@@ -17,9 +17,9 @@ title: "Trayvon tie: Cutting Instructions"
 
 ###### Caveat
 
-- There is no seam allowance on the **interfacing** parts and the **loop**
-- The **lining** **tip** and **tail** have only seam allowance at the tip
-- The **fabric** **tip** and **tail** have only seam allowance at the tip and center
+- Il n'y a pas de surplus de couture sur les parties **interfaces** et la **boucle**
+- La ** doublure** **pointe** et **queue** n'ont qu'un surplus de couture à la pointe
+- La **tissu** **pointe** et **queue** n'ont qu'un surplus de couture à la pointe et au centre
 
 </Warning>
 

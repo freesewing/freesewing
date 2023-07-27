@@ -1,5 +1,5 @@
 ---
-title: "Holmes deerstalker hat: Cutting Instructions"
+title: "Sombrero de cazador Holmes: Instrucciones de corte"
 ---
 
 The **gore** pattern piece needs to be cut on the fold to create a whole piece.
@@ -17,7 +17,7 @@ The **gore** pattern piece needs to be cut on the fold to create a whole piece.
 
 ### Telas opcionales
 
-Si no desea utilizar cinta para sus corbatas, puede fabricarlas a partir de tejidos. Basta con cortar 4 tiras de grano cruzado de un 1" (2. cm) o anchura de su elección + franquicias de costura de ancho y coser dos tubos dejando uno de los lados cortos abiertos para girar. Recorta las esquinas y recorta las costuras. Apagar una prensa. If desired you can _Edgestitch_ or _Topstitch_ the tubes to stop the fabric from shifting. El borde en bruto de las válvulas puede entonces ocultarse en la costura de la tapa, cuando se construyen las tapas de los oídos.
+Si no desea utilizar cinta para sus corbatas, puede fabricarlas a partir de tejidos. Basta con cortar 4 tiras de grano cruzado de un 1" (2. cm) o anchura de su elección + franquicias de costura de ancho y coser dos tubos dejando uno de los lados cortos abiertos para girar. Recorta las esquinas y recorta las costuras. Apagar una prensa. Si lo deseas, puedes _Puntada de borde_ o _Puntada superior_ los tubos para evitar que la tela se desplace. El borde en bruto de las válvulas puede entonces ocultarse en la costura de la tapa, cuando se construyen las tapas de los oídos.
 
 <Note>
 

@@ -1,0 +1,48 @@
+{
+  "t": "Holmes deerstalker hat",
+  "d": "For Sherlock Holmes cosplay or just a cute hat.",
+  "p": {
+    "ear": "Ear",
+    "gore": "Gore",
+    "visor": "Visor"
+  },
+  "s": {},
+  "o": {
+    "headEase": {
+      "t": "Head ease",
+      "d": "The amount of ease around your head."
+    },
+    "lengthRatio": {
+      "t": "Length ratio",
+      "d": "Controls the length of the crown and ear flaps"
+    },
+    "gores": {
+      "t": "Number of gores",
+      "d": "The number of gores used to construct the crown"
+    },
+    "visorAngle": {
+      "t": "Visor angle",
+      "d": "The arc angle used to draft the inner curve of the visor"
+    },
+    "visorWidth": {
+      "t": "Visor width",
+      "d": "Controls the width of the visor"
+    },
+    "earLength": {
+      "t": "Ear flap length",
+      "d": "Controls the length of the ear flaps independently from the crown pieces"
+    },
+    "earWidth": {
+      "t": "Ear flap width",
+      "d": "Controls the width of the ear flaps"
+    },
+    "buttonhole": {
+      "t": "Buttonhole guide",
+      "d": "Adds a buttonhole to the ear flap to help you draft the buttonhole ear flap variant"
+    },
+    "visorLength": {
+      "t": "Visor length",
+      "d": "Controls the length of the visor"
+    }
+  }
+}

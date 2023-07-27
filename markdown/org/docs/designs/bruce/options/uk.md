@@ -1,5 +1,5 @@
 ---
-title: "Bruce boxer briefs: Design Options"
+title: "Труси-боксери Bruce: Варіанти дизайну"
 ---
 
 <PatternOptions pattern='bruce' />

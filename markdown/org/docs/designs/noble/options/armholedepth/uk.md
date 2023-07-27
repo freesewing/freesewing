@@ -1,11 +1,11 @@
 ---
-title: "Armhole depth"
+title: "Глибина пройми"
 ---
 
 ***
 
-The **armhole depth** option controls the depth of the armhole.
+Параметр **глибина пройми** регулює глибину пройми.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_armholedepth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](noble_armholedepth_sample.svg "Вплив цієї опції на шаблон")

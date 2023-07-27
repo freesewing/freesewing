@@ -14,6 +14,6 @@ Schneiden Sie die Indikatoren ähnlich aus, weisen Sie aber auf die Linie, auf d
 
 <Legend part="cutonfold">
 
-A cut-on-fold indicator
+Ein Anschneide-Indikator
 
 </Legend>

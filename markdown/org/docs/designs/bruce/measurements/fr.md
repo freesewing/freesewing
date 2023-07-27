@@ -1,5 +1,5 @@
 ---
-title: "Boxer Bruce : Mesures requises"
+title: "Caleçon Bruce : Mesures requises"
 ---
 
 <PatternMeasurements pattern='bruce' />

@@ -1,12 +1,12 @@
 ---
-title: "Contour"
+title: "Kontur"
 ---
 
-Controls how sharply the extra room for breasts is removed again below the chest.
+Legt fest, wie eng anliegend der Schnitt unterhalb der Brust gestaltet wird.
 
-- Increase this option to sharpen the curve below the bust darts
-- Decrease this option to loosen the curve below the bust darts
+- Erhöhe diese Option, um die Kurve unter den Brustabnähern zu verstärken
+- Verringere diese Option, um die Kurve unter den Brustabnähern zu lockern
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_contour_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_contour_sample.svg "Effekt dieser Option auf das Schnittmuster")

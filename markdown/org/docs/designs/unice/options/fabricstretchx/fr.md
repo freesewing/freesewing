@@ -1,9 +1,9 @@
 ---
-title: "Fabric stretch X"
+title: "Tissu extensible X"
 ---
 
-Controls the stretch in horizontal direction.
+Contrôle l'étirement dans le sens horizontal.
 
-## Effet de cette option sur le modèle
+## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](unice_fabricstretchx_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](unice_fabricstretchx_sample.svg "Effet de cette option sur le motif")

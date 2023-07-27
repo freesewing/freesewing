@@ -1,14 +1,14 @@
 ---
-title: "Lunetius Lacerna: Fabric Options"
+title: "Lunetius Lacerna: Варіанти тканин"
 ---
 
-In the Roman era both linen and wool were widely available so both would be appropriate for this project. Silk was also available but it was very much a ‘fancy’ fabric used to show off wealth and status as it had to come from abroad.
+У римську епоху і льон, і вовна були широко доступні, тому обидва матеріали підходять для цього проекту. Шовк також був доступний, але це була дуже "модна" тканина, яку використовували для демонстрації багатства і статусу, оскільки його доводилося привозити з-за кордону.
 
-A lot of the fabrics found in military contexts like excavated forts are tightly woven twills that would be good at keeping the weather out. If you want to have a historically appropriate fabric then a wool twill would be a great choice.
+Багато тканин, які можна знайти у військовому контексті, наприклад, у розкопаних фортах, - це щільно сплетені саржі, які добре захищають від негоди. Якщо ви хочете мати історично відповідну тканину, то саржа з вовни буде чудовим вибором.
 
-Otherwise, any wool or linen in both plain and other weaves would be a good choice. The fabric weight depends on your local climate and what you intend to use the cloak for. However if you want to hand sew the Lunetius it can help to choose a slightly lighter weight fabric to make sewing easier on your hands.
+В іншому випадку, будь-яка вовна або льон як однотонного, так і іншого плетіння будуть хорошим вибором. Вага тканини залежить від вашого місцевого клімату і від того, для чого ви плануєте використовувати плащ. Однак, якщо ви хочете зшити Lunetius вручну, варто вибрати трохи легшу тканину, щоб полегшити шиття для ваших рук.
 
-If you are not working with any historicalness in mind Lunetius can be made out of a variety of fabrics. A woven fabric would drape in a different way compared to a stretch or knitted fabric but you are only limited by your imagination.
+Якщо ви не прагнете до історичності, Lunetius може бути виготовлений з різноманітних тканин. Ткана тканина буде драпіруватися по-іншому, ніж еластична або трикотажна, але ви обмежені лише своєю фантазією.
 
-More information on Roman cloak fabrics can be found in:  
-Jorgensen, L. B. (2004)  _A Matter of Material: Changes in Textiles from Roman Sites in Egypt’s Eastern Desert_,  in An Tard 11, pp 87-99
+Більше інформації про римські плащові тканини можна знайти в:  
+Jorgensen, L. B. (2004)  _A Matter of Material: Зміни в текстилі з римських пам'яток у Східній пустелі Єгипту_, в An Tard 11, с. 87-99

@@ -13,6 +13,6 @@ Deze kunnen gebruikt worden door patroonontwerpers om extra info toe te voegen, 
 
 <Legend part="otherLines">
 
-Other line styles
+Andere lijnstijlen
 
 </Legend>

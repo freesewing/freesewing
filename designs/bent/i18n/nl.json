@@ -1,0 +1,20 @@
+{
+  "t": "Bent Basisvorm",
+  "d": "Dit patroon met tweedelige mouw is de basis voor onze jassen- en jasjespatronen.",
+  "p": {
+    "sleeve": "Sleeve",
+    "topSleeve": "Bovenmouw",
+    "underSleeve": "Ondermouw"
+  },
+  "s": {},
+  "o": {
+    "sleeveBend": {
+      "t": "Mouw kromming",
+      "d": "Buiging van de mouw aan de elleboog"
+    },
+    "sleevecapHeight": {
+      "t": "Hoogte mouwkop",
+      "d": "Bepaalt de hoogte van de mouwkop"
+    }
+  }
+}

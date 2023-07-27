@@ -1,8 +1,8 @@
 ---
-title: "Trayvon tie: What You Need"
+title: "Trayvon Krawatte: Was du brauchst"
 ---
 
-To make Trayvon, you will need the following:
+Um Trayvon zu erstellen, benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- Between 0.5 meters - 1.5 meters (0.6 - 1.7 yards) of a suitable fabric ([see Fabric options](/docs/patterns/trayvon/fabric)), depending on whether you're cutting on the bias, the grain, or the cross-grain.
+- Zwischen 0,5 m und 1,5 m (0,6 - 1,7 Yards) eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/trayvon/fabric)), je nachdem, ob du schräg, längs oder quer schneidest.

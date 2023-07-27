@@ -1,9 +1,9 @@
 ---
-title: Generating patterns
+title: Створення шаблонів
 ---
 
-Generating custom sewing patterns based on your measurments is the flagship feature of our website. We provide an online envrironment that allows you to customize various aspects of your pattern.
+Створення індивідуальних викрійок на основі ваших мірок - це основна функція нашого сайту. Ми надаємо онлайн-середовище, яке дозволяє вам налаштовувати різні аспекти вашого шаблону.
 
-This environment provides a wide range of features, and on these pages we will explain all of them.
+Це середовище надає широкий спектр можливостей, і на цих сторінках ми пояснимо всі з них.
 
 <ReadMore />

@@ -1,0 +1,46 @@
+{
+  "t": "Simone hemd",
+  "d": "Simone is simon, aangepast aan borsten.",
+  "p": {
+    "back": "Achterzijde",
+    "buttonholePlacket": "Knoopsgatenpat",
+    "buttonPlacket": "Knopenpat",
+    "collar": "Kraag",
+    "collarStand": "Kraagstaander",
+    "cuff": "Manchet",
+    "front": "FBA Voorzijde",
+    "frontLeft": "Voorzijde links",
+    "frontRight": "Voorzijde rechts",
+    "sleevePlacketOverlap": "Mouwsplit boven",
+    "sleevePlacketUnderlap": "Mouwsplit onder",
+    "sleeve": "Mouw",
+    "yoke": "Schouderpas"
+  },
+  "s": {},
+  "o": {
+    "bustAlignedButtons": {
+      "t": "Bust-aligned buttons",
+      "d": "Optional button spacing strategies to ensure a button at the bustline"
+    },
+    "bustDartAngle": {
+      "t": "Hoek busteneep",
+      "d": "Bepaalt de hoek waarin de busteneep vanuit de zijnaad naar beneden wijst"
+    },
+    "bustDartLength": {
+      "t": "Lengte busteneep",
+      "d": "Bepaalt hoe dicht de punt van de busteneep bij het bustepunt komt"
+    },
+    "contour": {
+      "t": "Contour",
+      "d": "Bepaalt in hoeverre de extra ruimte voor borsten onder de buste verwijderd wordt"
+    },
+    "frontDarts": {
+      "t": "Nepen voor",
+      "d": "Of je vooraan nepen wil of niet"
+    },
+    "frontDartLength": {
+      "t": "Lengte nepen voor",
+      "d": "Bepaalt hoe dicht de punt van de voorste neep bij het bustepunt komt"
+    }
+  }
+}

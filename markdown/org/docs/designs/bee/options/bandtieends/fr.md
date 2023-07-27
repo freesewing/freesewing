@@ -1,5 +1,5 @@
 ---
-titre : "Attaches de bande (de poitrine)"
+title: "Finition des bouts de bandes (sous poitrine)"
 ---
 
 ***

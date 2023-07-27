@@ -1,13 +1,13 @@
 ---
-title: "Bob the Bib: Cutting Instructions"
+title: "Bob de Slab: Knip instructies"
 ---
 
-- Cut **1 bib**
+- Snijden **1 slab**
 
 <Warning>
 
-#### Caveats
+#### Opmerkingen
 
-- There is no seam allowance on the bib, it will be finished with bias tape
+- De slab heeft geen naadtoeslag, hij wordt afgewerkt met biaisband.
 
 </Warning>

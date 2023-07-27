@@ -1,5 +1,5 @@
 ---
-title: Using the site
+title: Utilisation du site
 ---
 
 <ReadMore />

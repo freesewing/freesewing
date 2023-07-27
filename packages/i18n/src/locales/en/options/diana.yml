@@ -1,7 +1,0 @@
-shoulderSeamLength:
-  title: Shoulder seam length
-  description: Controls the length of the shoulder seam
-drapeAngle:
-  title: Drape angle
-  description: Controls the amount of drape
-

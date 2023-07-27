@@ -1,23 +1,23 @@
 ---
-title: "Cornelius cycling breeches: Cutting Instructions"
+title: "Pantalones de ciclista Cornelius: Instrucciones de corte"
 ---
 
 ### Materiales
 
 - **Tela principal**
-  - Cut **2 back** parts
-  - Cut **2 front** parts
-  - Cut **2 pocket facing** parts
-  - Cut **2 waistband** parts on the fold
-  - Cut **4 leg band** parts
-  - Cut **1 zipper guard** part on the fold
-- **Lining (Pocket) fabric**
-  - Cut **2 pocket** parts
+  - Corta **2 partes traseras**
+  - Corta **2 piezas delanteras**
+  - Corta **2 piezas de revestimiento de bolsillo**
+  - Corta **2 partes de la cintura** en el pliegue
+  - Corta las piezas de **4 leg band**
+  - Corta **1 protector de cremallera** parte en el pliegue
+- **Tejido del forro (bolsillo)**
+  - cut two pocket pieces
 - **Interfaz**
-  - Cut **1 waistband** part on the fold
+  - Corta **1 cintura** parte en el pliegue
 
 <Note>
 
-If your main fabric is quite lightweight and flimsy you may need to interface the leg bands with a light interfacing.
+Si tu tejido principal es bastante ligero y endeble, puede que necesites intercalar las bandas de las perneras con una entretela ligera.
 
 </Note>

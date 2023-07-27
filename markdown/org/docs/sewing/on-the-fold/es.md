@@ -8,10 +8,10 @@ This means that only half the pattern piece is printed, and you should cut it ou
 
 La línea plegable se indica con una doble flecha como en este ejemplo:
 
-<Legend part="cutonfold">A cut-on-fold indicator</Legend>
+<Legend part="cutonfold">Un indicador de corte en pliegue</Legend>
 
 <Tip>
 
-For an overview of all indicators on your pattern, refer to the [pattern notation guide](/docs/various/notation/)
+Para obtener una visión general de todos los indicadores de tu patrón, consulta la [guía de notación del patrón](/docs/various/notation/)
 
 </Tip>

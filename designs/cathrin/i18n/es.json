@@ -1,0 +1,49 @@
+{
+  "t": "Cathrin, corset",
+  "d": "Cathrin es un corset por debajo del pecho o faja.",
+  "p": {
+    "base": "Base",
+    "panel1": "Panel 1",
+    "panel2": "Panel 2",
+    "panel3": "Panel 3",
+    "panel4": "Panel 4",
+    "panel5": "Panel 5",
+    "panel6": "Panel 6",
+    "panels": "Paneles"
+  },
+  "s": {},
+  "o": {
+    "panels": {
+      "t": "Número de paneles",
+      "d": "La cantidad de paneles a trazar. Más paneles permiten un mejor ajuste para cuerpos con más curvas."
+    },
+    "waistReduction": {
+      "t": "Reducción de cintura",
+      "d": "La cantidad en la que quieres que el corset reduzca la cintura."
+    },
+    "backOpening": {
+      "t": "Abertura de la espalda",
+      "d": "Abertura en el centro del cierre de la espalda."
+    },
+    "backRise": {
+      "t": "Elevación de la espalda",
+      "d": "Cantidad en que los paneles traseros se elevan sobre el centro de la espalda"
+    },
+    "backDrop": {
+      "t": "Caída de la espalda",
+      "d": "En qué medida los paneles posteriores se extienden bajo la cadera. Valores negativos los elevan sobre ella."
+    },
+    "frontRise": {
+      "t": "Elevación frontal",
+      "d": "Cuánto se eleva el panel frontal entre tus pechos. Valores negativos lo bajan."
+    },
+    "frontDrop": {
+      "t": "Caída frontal",
+      "d": "Cuánto los paneles frontales caen bajo la cadera en el centro por delate."
+    },
+    "hipRise": {
+      "t": "Elevación de la cadera",
+      "d": "Cuánto se elevan los paneles laterales sobre tu cadera."
+    }
+  }
+}

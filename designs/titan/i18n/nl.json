@@ -1,0 +1,71 @@
+{
+  "t": "Titan basispatroon broek",
+  "d": "Titan is a dartless trouser block.",
+  "p": {
+    "back": "Achterzijde",
+    "front": "Voorzijde"
+  },
+  "s": {},
+  "o": {
+    "kneeEase": {
+      "t": "Overwijdte knie",
+      "d": "Bepaalt de hoeveelheid overwijdte aan de knie"
+    },
+    "waistHeight": {
+      "t": "Taillehoogte",
+      "d": "Bepaalt de hoogte van de taille, 100% = natuurlijke taille, 0% = heuphoogte"
+    },
+    "lengthBonus": {
+      "t": "Bonus lengte",
+      "d": "Bepaalt de lengte van de broek"
+    },
+    "crotchDrop": {
+      "t": "Diepte kruis",
+      "d": "Verlaagt het kruis voor een lossere pasvorm"
+    },
+    "fitKnee": {
+      "t": "Pas de knie aan",
+      "d": "Past de broekspijpen aan gebaseerd op de omtrek van de knie in plaats van de omtrek van het zitvlak"
+    },
+    "legBalance": {
+      "t": "Balans been",
+      "d": "Bepaalt de verhouding tussen de voor-en achterkant van de broekspijp"
+    },
+    "crossSeamCurveStart": {
+      "t": "Begin van de curve van de binnenbeennaad",
+      "d": "Bepaalt hoe ver in de binnenbeennaad de curve start"
+    },
+    "crossSeamCurveBend": {
+      "t": "Buiging binnenbeennaad",
+      "d": "Bepaalt de curve van de binnenbeennaad"
+    },
+    "crossSeamCurveAngle": {
+      "t": "Grensoverschrijdende hoek",
+      "d": "Bepaalt de hoek van de kruisnaad"
+    },
+    "crotchSeamCurveStart": {
+      "t": "Begin van de curve van de kruisnaad",
+      "d": "Bepaalt hoe ver in de kruisnaad de curve start"
+    },
+    "crotchSeamCurveBend": {
+      "t": "Buiging kruisnaad",
+      "d": "Bepaalt de curve van de kruisnaad"
+    },
+    "crotchSeamCurveAngle": {
+      "t": "Kruisnaad hoek",
+      "d": "Bepaalt de hoek van de kruisnaad"
+    },
+    "waistBalance": {
+      "t": "Balans taille",
+      "d": "Bepaalt de horizontale positie van de taille in relatie tot het zitvlak"
+    },
+    "waistbandWidth": {
+      "t": "Breedte tailleband",
+      "d": "De breedte van de tailleband"
+    },
+    "grainlinePosition": {
+      "t": "Positie draadrichting",
+      "d": "Bepaalt de horizontale positie van het been in relatie tot het zitvlak"
+    }
+  }
+}

@@ -1,9 +1,9 @@
 ---
-title: "Bob the Bib: Required Measurements"
+title: "Bob le dossard : Mesures requises"
 ---
 
 <Note>
-Bob does not require any measurements
+Bob n'a pas besoin de mesures
 </Note>
 
 <PatternMeasurements pattern='bob' />

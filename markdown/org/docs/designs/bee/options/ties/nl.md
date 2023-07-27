@@ -1,10 +1,10 @@
 ---
-title: "Ties"
+title: "Banden"
 ---
 
 ***
 
-Whether to includes ties, yes or no
+Dassen opnemen, ja of nee
 
 ## Effect van deze optie op het patroon
 

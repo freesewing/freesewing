@@ -1,0 +1,41 @@
+{
+  "t": "Hortensia, die Handtasche",
+  "d": "Hortensia ist eine Handtasche.",
+  "p": {
+    "bottompanel": "Bottom panel",
+    "frontpanel": "Front panel",
+    "sidepanel": "Side panel",
+    "sidepanelreinforcement": "Side panel reinforcement",
+    "strap": "Strap",
+    "zipperpanel": "Zipper panel"
+  },
+  "s": {
+    "SidePanel": "Seitenstück",
+    "FrontBackPanel": "Vorder- und Rückseite",
+    "BottomPanel": "Unteres Teil",
+    "ZipperPanel": "Reißverschluss",
+    "Strap": "Griff",
+    "strapLength": "Länge der Griffe",
+    "handleWidth": "Breite der Griffe",
+    "zipperSize": "Standard Reißverschlussgröße",
+    "SidePanelReinforcement": "Seitenverstärker"
+  },
+  "o": {
+    "size": {
+      "t": "Grösse",
+      "d": "Steuert die Gesamtgröße der Handtasche"
+    },
+    "zipperSize": {
+      "t": "Größe des Reißverschlusses",
+      "d": "Welche Reißverschlussgröße verwendet werden soll"
+    },
+    "strapLength": {
+      "t": "Riemenlänge",
+      "d": "Steuert die Riemenlänge"
+    },
+    "handleWidth": {
+      "t": "Breite des Griffes",
+      "d": "Steuert die Breite des Griffes"
+    }
+  }
+}

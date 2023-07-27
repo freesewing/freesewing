@@ -1,0 +1,41 @@
+{
+  "t": "Hortensia handbag",
+  "d": "Hortensia is a handbag.",
+  "p": {
+    "bottompanel": "Bottom panel",
+    "frontpanel": "Front panel",
+    "sidepanel": "Side panel",
+    "sidepanelreinforcement": "Side panel reinforcement",
+    "strap": "Strap",
+    "zipperpanel": "Zipper panel"
+  },
+  "s": {
+    "SidePanel": "Side Panel",
+    "FrontBackPanel": "Front and Back Panel",
+    "BottomPanel": "Bottom Panel",
+    "ZipperPanel": "Zipper Panel",
+    "Strap": "Handle",
+    "strapLength": "Length of the Handles",
+    "handleWidth": "Width of the handles",
+    "zipperSize": "Standard zipper size",
+    "SidePanelReinforcement": "Side Reinforcement Panel"
+  },
+  "o": {
+    "size": {
+      "t": "Size",
+      "d": "Controls the overall size of the handbag"
+    },
+    "zipperSize": {
+      "t": "Zipper size",
+      "d": "Which size of zipper to use"
+    },
+    "strapLength": {
+      "t": "Strap length",
+      "d": "Controls the length of the strap"
+    },
+    "handleWidth": {
+      "t": "Handle width",
+      "d": "Controls the width of the handle"
+    }
+  }
+}

@@ -1,5 +1,5 @@
 ---
-title: "Breanna body block: Required Measurements"
+title: "Боді-блок Бріанна: Необхідні виміри"
 ---
 
 <PatternMeasurements pattern='breanna' />

@@ -3,19 +3,18 @@ import { ChoiceLink } from 'shared/components/choice-link.mjs'
 import { OkIcon, NoIcon, WarningIcon } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
 import { capitalize, hasRequiredMeasurements } from 'shared/utils.mjs'
-import Image from 'next/image'
 
 export const ns = ['sets']
 
 const Title = ({ set, language }) => (
   <div className="flex flex-row items-center gap-2">
-    <Image
-      alt="img"
-      src={set.img || ''}
-      width={100}
-      height={100}
-      className="shadow mask mask-squircle bg-neutral aspect-square w-12 h-12"
-    />
+    {set.img && (
+      <img
+        alt={set.name}
+        src={set.img}
+        className="shadow mask mask-squircle bg-neutral aspect-square w-12 h-12"
+      />
+    )}
     <span>{set[`name${language ? capitalize(language) : ''}`]}</span>
   </div>
 )

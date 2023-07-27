@@ -1,0 +1,56 @@
+menu: Menú
+draft: Boceto
+test: Prueba
+printLayout: Diseño de impresión
+cutLayout: Disposición del corte
+save: Guardar
+export: Exportar
+edit: Edita
+reset: Reiniciar
+help: Ayuda
+name: Nombre
+width: Anchura
+height: Altura
+length: Longitud
+topLeft: Arriba a la izquierda
+bottomRight: Abajo a la derecha
+attributes: Atributos
+showAllParts: Mostrar todas las partes del patrón
+showOnlyThisPart: Mostrar sólo esta parte del patrón
+showMovableButtons: Botones
+partInfo: Información sobre el patrón
+pathInfo: Información de la ruta
+part: Parte del patrón
+draftPattern: Proyecto de patrón
+testPattern: Patrón de prueba
+savePattern: Guardar patrón
+editSettings: Editar configuración
+patternLogs: Registros de patrones
+patternInspector: Inspector de Patrones
+docs: Documentación
+configurePattern: Configurar patrón
+measies: Medidas del patrón
+noDesignFound: No hemos podido encontrar este diseño. Esto no debería ocurrir, así que te agradeceríamos que nos lo comunicaras.
+saveYourPattern: Guarda tu patrón
+giveItAName: Dale un nombre
+changeMeasies: Mediciones del patrón de cambio
+editCurrentMeasies: Editar medidas actuales
+chooseNewSet: Elegir un nuevo conjunto de medidas
+weLackSomeMeasies: Nos faltan las medidas de { nr } para crear este patrón
+youCanPickOrEnter: Puedes elegir un conjunto de medidas o introducirlas a mano, pero no podemos proceder sin estas medidas.
+measiesOk: Tenemos todas las medidas necesarias para crear este patrón.
+exportForPrinting: Exportar para impresión
+exportForEditing: Exportar para editar
+exportAsData: Exportar como datos
+exportPattern-txt: Exporte un PDF adecuado para su impresora, o descargue este patrón en una variedad de formatos
+exportPattern: Exportar patrón
+testThis.option: Prueba esta opción
+testThis.measurement: Prueba esta medida
+measurements.d: Prueba el efecto de una medida en el aspecto de este patrón
+designOptions.d: Prueba el efecto de una opción sobre el aspecto de este patrón
+testDesignThing: "Prueba {design}: {thing}"
+yamlEditViewTitleThing: 'Editar configuración de patrones para {thing}'
+yamlEditViewError: Problemas con YAML
+yamlEditViewErrorDesc: Hemos guardado tu entrada, pero puede que no funcione por las siguientes razones
+saveSettings: Guardar ajustes
+

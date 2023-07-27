@@ -1,11 +1,11 @@
 ---
-titre : "Découpage du cou dans le dos"
+title: "Arrondi de l'encolure au dos"
 ---
 
-![Back neck cutout](./backneckcutout.svg)
+![Arrondi de l'encolure au dos](./backneckcutout.svg)
 
 Contrôle la profondeur de l'ouverture de l'encolure dans le dos du vêtement. En d'autres termes, l'augmentation de cette mesure déplace l'ouverture du cou vers l'arrière.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_backneckcutout_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_backneckcutout_sample.svg "Effet de cette option sur le motif")

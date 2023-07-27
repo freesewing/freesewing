@@ -9,7 +9,7 @@ import { useToast } from 'shared/hooks/use-toast.mjs'
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import Link from 'next/link'
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 import { BackToAccountButton } from './shared.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 import {

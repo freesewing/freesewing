@@ -1,11 +1,11 @@
 ---
-title: "Ribbon width"
+title: "Ширина стрічки"
 ---
 
 ***
 
-Width of the ribbon
+Ширина стрічки
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](benjamin_ribbonwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](benjamin_ribbonwidth_sample.svg "Вплив цієї опції на шаблон")

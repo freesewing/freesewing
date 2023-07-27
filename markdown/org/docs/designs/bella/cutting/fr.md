@@ -1,5 +1,5 @@
 ---
-title: "Bloc de corps de Bella : Instructions de coupe"
+title: "Bloc de corps Bella : Instructions de coupe"
 ---
 
 **Tissu principal**
