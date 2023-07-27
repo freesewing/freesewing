@@ -1,5 +1,5 @@
 // Hooks
-import { useEffect, useState, useCallback } from 'react'
+import { useEffect, useState, useCallback, useMemo } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useView } from 'shared/hooks/use-view.mjs'
 import { usePatternSettings } from 'shared/hooks/use-pattern-settings.mjs'
@@ -103,32 +103,34 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
   }, [Design, settings.measurements, mounted, view, setView])
 
   // Helper methods for settings/ui updates
-  const update = {
-    settings: (path, val) => setSettings(objUpdate({ ...settings }, path, val)),
-    ui: (path, val) => setUi(objUpdate({ ...ui }, path, val)),
-    toggleSa: () => {
-      const sa = settings.samm || (account.imperial ? 15.3125 : 10)
-      if (settings.sabool)
-        setSettings(
-          objUpdate({ ...settings }, [
-            [['sabool'], 0],
-            [['sa'], 0],
-            [['samm'], sa],
-          ])
-        )
-      else {
-        const sa = settings.samm || (account.imperial ? 15.3125 : 10)
-        setSettings(
-          objUpdate({ ...settings }, [
-            [['sabool'], 1],
-            [['sa'], sa],
-            [['samm'], sa],
-          ])
-        )
-      }
-    },
-    setControl: controlState.update,
-  }
+  const update = useMemo(
+    () => ({
+      settings: (path, val) =>
+        setSettings((curSettings) => objUpdate({ ...curSettings }, path, val)),
+      ui: (path, val) => setUi((curUi) => objUpdate({ ...curUi }, path, val)),
+      toggleSa: () => {
+        setSettings((curSettings) => {
+          const sa = curSettings.samm || (account.imperial ? 15.3125 : 10)
+
+          if (curSettings.sabool)
+            return objUpdate({ ...curSettings }, [
+              [['sabool'], 0],
+              [['sa'], 0],
+              [['samm'], sa],
+            ])
+          else {
+            return objUpdate({ ...curSettings }, [
+              [['sabool'], 1],
+              [['sa'], sa],
+              [['samm'], sa],
+            ])
+          }
+        })
+      },
+      setControl: controlState.update,
+    }),
+    [setSettings, setUi, account, controlState]
+  )
 
   // wait for mount. this helps prevent hydration issues
   if (!mounted) return <ModalSpinner />
