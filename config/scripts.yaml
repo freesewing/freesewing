@@ -13,7 +13,7 @@ _types:
   design:
     prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
     test: &test 'npx mocha tests/*.test.mjs'
-    testci: &testci 'npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js'
+    testci: &testci 'NODE_OPTIONS="--conditions=internal" npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js'
   plugin:
     prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
     test: *test
