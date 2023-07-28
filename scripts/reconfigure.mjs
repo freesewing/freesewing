@@ -274,14 +274,7 @@ function packageJson(pkg) {
   }
   pkgConf.keywords = pkgConf.keywords.concat(keywords(pkg))
   pkgConf.scripts = scripts(pkg)
-  /*
-   * If we building a site simply override the module entry so that we don't have
-   * to build any dependencies, but instead can just load them from source
-   */
-  if (SITEBUILD) {
-    pkgConf.module = 'src/index.mjs'
-    pkgConf.exports = { '.': './src/index.mjs' }
-  }
+
   if (repo.exceptions.skipTests.indexOf(pkg.name) !== -1) {
     pkgConf.scripts.test = `echo "skipping tests for ${pkg.name}"`
     pkgConf.scripts.testci = `echo "skipping tests for ${pkg.name}"`
