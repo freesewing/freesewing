@@ -93,7 +93,7 @@ const Title = ({ txt }) => (
 
 const slides = [0, 1, 2, 3, 4, 5, 6, 7]
 
-export const HowDoesItWorkAnimation = ({ className = 'w-full', stroke = 0.3 }) => {
+export const HowDoesItWorkAnimation = () => {
   const { t } = useTranslation(ns)
   const [step, setStep] = useState(0)
   const [halfStep, setHalfStep] = useState(0)

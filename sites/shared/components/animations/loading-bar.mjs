@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react'
+
 export const LoadingBar = ({ duration = 1000, color = 'primary' }) => {
   const [started, setStarted] = useState(false)
   useEffect(() => {
