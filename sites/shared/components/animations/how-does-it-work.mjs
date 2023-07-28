@@ -39,7 +39,6 @@ const Pattern = ({ i }) => (
     strokeLinejoin="round"
     className="fill-primary h-72 md:h-96"
     strokeWidth="4"
-    stroke="currentColor"
     fillOpacity="0.25"
   >
     {patternTweaks[i]}
@@ -132,24 +131,5 @@ export const HowDoesItWorkAnimation = ({ className = 'w-full', stroke = 0.3 }) =
         </div>
       </div>
     </div>
-  )
-
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      viewBox="0 0 100 60"
-      strokeWidth={stroke}
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={className + ' icon'}
-      stroke="currentColor"
-      style={{ backgroundColor: '#00000011' }}
-    >
-      <g transform="scale(0.15), translate(20,10)">
-        <AaronFront />
-      </g>
-    </svg>
   )
 }

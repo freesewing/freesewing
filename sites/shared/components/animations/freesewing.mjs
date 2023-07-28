@@ -16,7 +16,6 @@ export const FreeSewingAnimation = ({ className = 'w-full', stroke = 0.3 }) => {
       strokeLinecap="round"
       strokeLinejoin="round"
       className={className + ' icon'}
-      stroke="currentColor"
     >
       <animat
         attributeName="viewBox"

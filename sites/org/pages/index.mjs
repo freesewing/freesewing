@@ -9,7 +9,7 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import Head from 'next/head'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
-import { PageLink } from 'shared/components/page-link.mjs'
+//import { PageLink } from 'shared/components/page-link.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { ForceAccountCheck } from 'shared/components/account/force-account-check.mjs'
 import { DownIcon } from 'shared/components/icons.mjs'
@@ -18,11 +18,11 @@ import { HowDoesItWorkAnimation } from 'shared/components/animations/how-does-it
 
 const ns = nsMerge(pageNs, 'common', 'homepage')
 
-const BoldLink = ({ href, children }) => (
-  <a href={href} className="font-bold underline hover:decoration-4">
-    {children}
-  </a>
-)
+//const BoldLink = ({ href, children }) => (
+//  <a href={href} className="font-bold underline hover:decoration-4">
+//    {children}
+//  </a>
+//)
 
 /*
  * Each page MUST be wrapped in the PageWrapper component.
