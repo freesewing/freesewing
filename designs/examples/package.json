@@ -22,7 +22,10 @@
   "type": "module",
   "module": "dist/index.mjs",
   "exports": {
-    ".": "./dist/index.mjs"
+    ".": {
+      "internal": "./src/index.mjs",
+      "default": "./dist/index.mjs"
+    }
   },
   "scripts": {
     "build": "node build.mjs",
@@ -36,7 +39,7 @@
     "tips": "node ../../scripts/help.mjs",
     "lint": "npx eslint 'src/**' 'tests/*.mjs'",
     "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
-    "testci": "npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
+    "testci": "NODE_OPTIONS=\"--conditions=internal\" npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
     "wbuild": "node build.mjs",
     "wbuild:all": "yarn wbuild"
   },

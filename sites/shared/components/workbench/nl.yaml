@@ -35,10 +35,14 @@ saveYourPattern: Je patroon opslaan
 giveItAName: Geef het een naam
 changeMeasies: Verander patroon metingen
 editCurrentMeasies: Huidige metingen bewerken
+editCurrentMeasiesHeader: Edit Pattern Measurements
+editCurrentMeasiesDesc: Changes you make here will not be saved to your measurements sets, and will only affect this pattern.
 chooseNewSet: Kies een nieuwe meetset
 weLackSomeMeasies: We missen { nr } metingen om dit patroon te maken
 youCanPickOrEnter: Je kunt een meetset kiezen of ze met de hand invoeren, maar zonder deze metingen kunnen we niet verder.
 measiesOk: We hebben alle benodigde afmetingen om dit patroon te maken.
+seeMissingMeasies: See missing measurements
+appliedMeasies: We applied a new measurements set to this pattern.
 exportForPrinting: Exporteren om te printen
 exportForEditing: Exporteren om te bewerken
 exportAsData: Exporteer als data

@@ -13,7 +13,7 @@ _types:
   design:
     prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
     test: &test 'npx mocha tests/*.test.mjs'
-    testci: &testci 'npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js'
+    testci: &testci 'NODE_OPTIONS="--conditions=internal" npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js'
   plugin:
     prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
     test: *test
@@ -28,11 +28,11 @@ core:
 models:
   test: 'npx mocha tests/*.test.mjs'
 new-design:
-  i18n-only: 'SITE="new-design/shared" node ../../sites/shared/prebuild/i18n-only.mjs'
+  i18n-only: 'SITE="new-design/shared" node --conditions=internal ../../sites/shared/prebuild/i18n-only.mjs'
   wbuild: '!'
   lint: "npx eslint 'lib/*.mjs'"
   mbuild: '!'
-  prebuild: 'node ./prebuild.mjs'
+  prebuild: 'node --conditions=internal ./prebuild.mjs'
   test: '!'
   testci: '!'
   vbuild: '!'
@@ -69,10 +69,9 @@ dev:
   clean: &nextClean 'rimraf prebuild/* && rimraf public/locales/*/* && rimraf public/feeds/* && rimraf ../shared/prebuild/data/*'
   dev: &nextDev 'next dev -p 8000'
   develop: *nextDev
-  i18n: "SITE=dev node ../shared/prebuild/i18n-only.mjs"
+  i18n: "SITE=dev node --conditions=internal ../shared/prebuild/i18n-only.mjs"
   lint: &nextLint 'next lint'
-  prebuild: 'cd ../../ && yarn sitebuildconfigure && cd - && node --experimental-json-modules ./prebuild.mjs'
-  predev: 'node --experimental-json-modules ./prebuild.mjs'
+  prebuild: &nextPrebuild 'node --conditions=internal --experimental-json-modules ./prebuild.mjs'
   serve: "pm2 start npm --name 'dev' -- run start"
   start: &nextStart 'yarn prebuild && yarn dev'
 
@@ -85,11 +84,10 @@ lab:
   cibuild: 'yarn build'
   dev: *nextDev
   develop: *nextDev
-  i18n: 'SITE=lab node ../shared/prebuild/i18n-only.mjs'
+  i18n: 'SITE=lab node --conditions=internal ../shared/prebuild/i18n-only.mjs'
   e2e: &e2e 'yarn playwright test'
   lint: *nextLint
-  prebuild: 'cd ../../ && yarn sitebuildconfigure && cd - && node --experimental-json-modules ./prebuild.mjs'
-  predev: 'node --experimental-json-modules ./prebuild.mjs'
+  prebuild: *nextPrebuild
   start: *nextStart
 
 org:
@@ -98,10 +96,9 @@ org:
   clean: *nextClean
   dev: *nextDev
   develop: *nextDev
-  i18n: 'SITE=org node ../shared/prebuild/i18n-only.mjs'
+  i18n: 'SITE=org node --conditions=internal ../shared/prebuild/i18n-only.mjs'
   lint: *nextLint
-  prebuild: 'cd ../../ && yarn sitebuildconfigure && cd - && node --experimental-json-modules ./prebuild.mjs'
-  predev: 'node --experimental-json-modules ./prebuild.mjs'
+  prebuild: *nextPrebuild
   start: *nextStart
 
 sanity:

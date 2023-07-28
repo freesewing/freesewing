@@ -1,8 +1,12 @@
 import { useTranslation } from 'next-i18next'
 import { analyzeDraftLogLine } from './errors.mjs'
 import Markdown from 'react-markdown'
+import {
+  ClearAllButton,
+  ns as coreMenuNs,
+} from 'shared/components/workbench/menus/core-settings/index.mjs'
 
-export const ns = ['logs']
+export const ns = ['logs', ...coreMenuNs]
 
 const colors = {
   error: 'error',
@@ -68,7 +72,7 @@ const extractLogs = (pattern) => {
   return logs
 }
 
-export const LogView = ({ pattern, settings }) => {
+export const LogView = ({ pattern, settings, setSettings }) => {
   const { t } = useTranslation(ns)
 
   try {
@@ -80,7 +84,10 @@ export const LogView = ({ pattern, settings }) => {
 
   return (
     <div className="max-w-4xl mx-auto px-4 pb-8">
-      <h1>{t('logs')}</h1>
+      <div className="flex">
+        <h1 className="grow">{t('logs')}</h1>
+        <ClearAllButton setSettings={setSettings} />
+      </div>
       {Object.entries(logs).map(([type, lines], key) => (
         <DraftLogs key={key} {...{ type, lines, t }} />
       ))}

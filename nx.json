@@ -15,12 +15,6 @@
     "wbuild": {
       "dependsOn": ["^wbuild", "prewbuild"]
     },
-    "testci": {
-      "dependsOn": ["^build"]
-    },
-    "lint": {
-      "dependsOn": []
-    },
     "e2e": {
       "dependsOn": ["prebuild"]
     }

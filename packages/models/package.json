@@ -24,7 +24,10 @@
   "type": "module",
   "module": "dist/index.mjs",
   "exports": {
-    ".": "./dist/index.mjs"
+    ".": {
+      "internal": "./src/index.mjs",
+      "default": "./dist/index.mjs"
+    }
   },
   "scripts": {
     "build": "node build.mjs",

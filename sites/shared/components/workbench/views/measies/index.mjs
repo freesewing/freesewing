@@ -8,11 +8,11 @@ import { designMeasurements } from 'shared/utils.mjs'
 import { useTranslation } from 'next-i18next'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 
-export const ns = ['wbmeasies', ...authNs, setsNs]
+export const ns = [...authNs, setsNs]
 
-const tabNames = ['chooseNew', 'editCurrent']
+const tabNames = ['chooseNewSet', 'editCurrentMeasies']
 export const MeasiesView = ({ design, Design, settings, update, missingMeasurements, setView }) => {
-  const { t } = useTranslation(['wbmeasies'])
+  const { t } = useTranslation(['workbench'])
   const toast = useToast()
 
   const tabs = tabNames.map((n) => t(n)).join(',')
@@ -23,7 +23,7 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
       [['units'], set.imperial ? 'imperial' : 'metric'],
     ])
     setView('draft')
-    toast.success(t('updatedMeasurements'))
+    toast.success(t('appliedMeasies'))
   }
 
   return (
