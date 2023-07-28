@@ -71,6 +71,7 @@ const loadFolderFrontmatter = async (key, site, folder, transform = false, lang 
       .split(`markdown/${site}/${site === 'dev' ? '' : folder + '/'}`)
       .pop()
       .split(`.md:${key}:`)
+
     if (chunks.length === 2 && chunks[0].length > 1) {
       /*
        * Figure out the language and make sure we have an key for that language
@@ -81,7 +82,7 @@ const loadFolderFrontmatter = async (key, site, folder, transform = false, lang 
       /*
        * Add page to our object with slug as key and title as value
        */
-      let slug = (prefix + chunks[0].slice(0, -3)).replace(`/./`, `/`)
+      let slug = prefix + chunks[0].slice(0, -3).replace('./', '')
       if (slug === prefix) slug = slug.slice(0, -1)
       if (slug !== 'docs/.')
         pages[lang][slug] = transform
@@ -127,7 +128,7 @@ const formatDate = (date, slug, lang) => {
  * Loads all docs files, titles and order
  */
 const loadDocs = async (site) => {
-  const folder = site === 'org' ? 'docs' : '.'
+  const folder = site === 'org' ? 'docs' : ''
   const titles = await loadFolderFrontmatter('title', site, folder)
   // Order is the same for all languages, so only grab EN files
   const order = await loadFolderFrontmatter('order', site, folder, false, 'en')
