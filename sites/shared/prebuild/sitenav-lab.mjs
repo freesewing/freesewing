@@ -1,4 +1,3 @@
-import allLanguages from '../../../config/languages.json' assert { type: 'json' }
 import i18nConfig from '../config/i18n.config.mjs'
 import { loadTranslations } from './shared.mjs'
 import { freeSewingConfig as conf } from '../config/freesewing.config.mjs'
