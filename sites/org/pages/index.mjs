@@ -34,8 +34,11 @@ const HomePage = ({ page }) => {
   const { t } = useTranslation(ns)
   const { account } = useAccount()
 
+  // Duration of the FreeSewing animation
+  const duration = 6.66
+
   useEffect(() => {
-    setTimeout(() => setReady(true), 1800)
+    setTimeout(() => setReady(true), duration * 1000)
   }, [])
 
   return (
@@ -51,7 +54,7 @@ const HomePage = ({ page }) => {
       >
         <div className="flex flex-col items-center justify-between h-screen mt-4 lg:mt-12 max-w-md m-auto pb-32">
           <span />
-          <FreeSewingAnimation />
+          <FreeSewingAnimation duration={duration} />
           <DownIcon className="w-12 h-12 animate-bounce" />
         </div>
       </div>
