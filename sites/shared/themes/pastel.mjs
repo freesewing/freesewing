@@ -1,49 +1,52 @@
-const colors = require('tailwindcss/colors')
+import colors from 'tailwindcss/colors'
 
-module.exports = {
-  fontFamily: "Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;",
+/*
+ * See the light theme for an example with inline comments
+ */
 
-  'base-100': colors.fuchsia['50'],
-  'base-200': colors.neutral['200'],
-  'base-300': colors.neutral['400'],
+export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => 'indigo-300')
+
+export const rating = ['green-500', 'yellow-400', 'amber-500', 'orange-500', 'red-500']
+
+export const theme = {
+  fontFamily: "'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;",
+  'base-100': colors.red['50'],
+  'base-200': colors.red['100'],
+  'base-300': colors.red['300'],
   'base-content': colors.neutral['700'],
-
-  primary: colors.sky['500'],
-  'primary-focus': colors.sky['400'],
-  'primary-content': colors.sky['50'],
-  secondary: colors.violet['500'],
-  'secondary-focus': colors.violet['400'],
-  'secondary-content': colors.violet['50'],
-
-  accent: colors.fuchsia['500'],
-  'accent-focus': colors.fuchsia['400'],
-  'accent-content': colors.neutral['50'],
-
-  neutral: colors.neutral['900'],
-  'neutral-focus': colors.neutral['700'],
+  primary: colors.indigo['300'],
+  'primary-focus': colors.indigo['400'],
+  'primary-content': colors.indigo['800'],
+  secondary: colors.pink['400'],
+  'secondary-focus': colors.pink['500'],
+  'secondary-content': colors.pink['50'],
+  accent: colors.sky['300'],
+  'accent-focus': colors.sky['400'],
+  'accent-content': colors.sky['900'],
+  neutral: colors.fuchsia['900'],
+  'neutral-focus': colors.fuchsia['800'],
   'neutral-content': colors.fuchsia['200'],
-
-  info: colors.pink['400'],
-  success: colors.green['600'],
-  warning: colors.amber['500'],
-  error: colors.red['600'],
-
+  info: colors.neutral['500'],
+  '--btn-info-content': colors.neutral[50],
+  success: colors.green['400'],
+  '--btn-success-content': colors.green[900],
+  warning: colors.orange['400'],
+  '--btn-warning-content': colors.orange[900],
+  error: colors.red['400'],
+  '--btn-error-content': colors.red[900],
   '--theme-gradient': `repeating-linear-gradient(
-     90deg,
-     ${colors.red[500]},
-     ${colors.red[500]} 16.66%,
-     ${colors.orange[500]} 16.66%,
-     ${colors.orange[500]} 33.33%,
-     ${colors.yellow[400]} 33.33%,
-     ${colors.yellow[400]} 50%,
-     ${colors.green[500]} 50%,
-     ${colors.green[500]} 66.66%,
-     ${colors.blue[500]} 66.66%,
-     ${colors.blue[500]} 83.33%,
-     ${colors.violet[500]} 83.33%,
-     ${colors.violet[500]} 100%
+    90deg,
+    ${colors.red[400]} 0,
+    ${colors.orange[400]} 11%,
+    ${colors.yellow[400]} 22%,
+    ${colors.lime[400]} 33%,
+    ${colors.green[400]} 44%,
+    ${colors.cyan[400]} 55%,
+    ${colors.blue[400]} 66%,
+    ${colors.indigo[400]} 77%,
+    ${colors.violet[400]} 88%,
+    ${colors.purple[400]} 100%
   )`,
-
   '--code-background-color': colors.neutral['800'],
   '--code-background-highlight-color': '#313131',
   '--code-border-color': colors.neutral['900'],
@@ -54,8 +57,7 @@ module.exports = {
   '--code-border-width': 1,
   '--code-outer-padding': '0 0.5rem',
   '--code-inner-padding': '1rem',
-
-  '--code-color-keyword': colors.pink['400'],
+  '--code-color-keyword': colors.yellow['500'],
   '--code-font-weight-keyword': 'bold',
   '--code-color-entity': colors.violet['400'],
   '--code-font-weight-entity': 'bold',
@@ -65,9 +67,8 @@ module.exports = {
   '--code-color-variable': colors.indigo['400'],
   '--code-color-comment': colors.neutral['400'],
   '--code-color-tag': colors.green['400'],
-  '--code-color-property': 'inherit',
+  '--code-color-property': colors.yellow['200'],
   '--code-font-weight-property': 'bold',
-
   '--rounded-box': '0.5rem',
   '--rounded-btn': '0.5rem',
   '--rounded-badge': '1.9rem',
@@ -79,7 +80,6 @@ module.exports = {
   '--border-btn': '1px',
   '--focus-ring': '2px',
   '--focus-ring-offset': '2px',
-
   '--pattern-bg': colors.neutral['50'],
   '--pattern-fabric': colors.neutral['700'],
   '--pattern-lining': colors.emerald['500'],
@@ -89,16 +89,6 @@ module.exports = {
   '--pattern-mark': colors.blue['500'],
   '--pattern-contrast': colors.pink['500'],
   '--pattern-note': colors.violet['500'],
-
-  '--pattern-dev-0': colors.red['500'],
-  '--pattern-dev-1': colors.green['500'],
-  '--pattern-dev-2': colors.blue['500'],
-  '--pattern-dev-3': colors.yellow['500'],
-  '--pattern-dev-4': colors.pink['500'],
-  '--pattern-dev-5': colors.violet['500'],
-  '--pattern-dev-6': colors.teal['500'],
-  '--pattern-dev-7': colors.neutral['500'],
-
   '--pattern-text-xs': '0.2rem',
   '--pattern-text-sm': '0.3rem',
   '--pattern-text': '0.4rem',
@@ -107,7 +97,6 @@ module.exports = {
   '--pattern-text-2xl': '1.5rem',
   '--pattern-text-3xl': '2rem',
   '--pattern-text-4xl': '3rem',
-
   '--pattern-scale': '1',
   '--pattern-stroke-xs': '0.2px',
   '--pattern-stroke-sm': '0.4px',
@@ -117,4 +106,17 @@ module.exports = {
   '--pattern-stroke-2xl': '4px',
   '--pattern-stroke-3xl': '6px',
   '--pattern-stroke-4xl': '8px',
+  '--pattern-stroke-5xl': '12px',
+  '--pattern-stroke-6xl': '16px',
+  '--pattern-stroke-7xl': '20px',
+  '--pattern-sample-1': colors.red['500'],
+  '--pattern-sample-2': colors.orange['500'],
+  '--pattern-sample-3': colors.yellow['500'],
+  '--pattern-sample-4': colors.lime['500'],
+  '--pattern-sample-5': colors.emerald['500'],
+  '--pattern-sample-6': colors.cyan['500'],
+  '--pattern-sample-7': colors.blue['500'],
+  '--pattern-sample-8': colors.violet['500'],
+  '--pattern-sample-9': colors.fuchsia['500'],
+  '--pattern-sample-10': colors.rose['500'],
 }

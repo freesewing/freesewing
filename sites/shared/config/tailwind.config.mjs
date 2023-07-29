@@ -1,7 +1,7 @@
 // Handle themes
-const themes = require('../themes')
+import { themes } from '../themes/index.mjs'
 
-module.exports = {
+export default {
   content: [
     './pages/*.mjs',
     './pages/*.js',

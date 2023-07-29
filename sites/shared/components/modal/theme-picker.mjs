@@ -1,4 +1,4 @@
-import themes from 'shared/themes/index.js'
+import { themes } from 'shared/themes/index.mjs'
 import { useTranslation } from 'next-i18next'
 import { useTheme } from 'shared/hooks/use-theme.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
@@ -6,7 +6,7 @@ import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 export const ns = ['themes']
 
 export const ModalThemePicker = ({ app, iconOnly = false, bottom = false }) => {
-  const [theme, setTheme] = useTheme()
+  const { theme, setTheme } = useTheme()
   const { t } = useTranslation(ns)
 
   return (
