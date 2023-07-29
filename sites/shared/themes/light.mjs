@@ -1,69 +1,122 @@
-const colors = require('tailwindcss/colors')
+/**
+ * This is a theme file for FreeSewing's NextJS-based website
+ *
+ * You can change colors, fonts, and a few other things here.
+ * While technically, you can change more, it is not recommended.
+ * Best to stick to the examples in this light theme
+ *
+ * If you want to make your own theme, copy this file to a new name.
+ * Then update the index.js to include it, and you're good to go.
+ */
 
-module.exports = {
-  fontFamily: "'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;",
+/*
+ * We're using the TailwindCSS colors.
+ * Let's include them so we can reference them by name.
+ * For a full list, see: https://tailwindcss.com/docs/customizing-colors
+ */
+import colors from 'tailwindcss/colors'
+
+/*
+ * Spetrum is an array of 11 color names from the tailwind colors that
+ * will be used when we want to spread colors across a spectrum.
+ * It's what creates a rainbow header/footer.
+ */
+export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => 'violet-300')
+
+/*
+ * Rathing is an array of 5 color names from the tailwind colors that
+ * are used to color code ratings (like difficulty and so on)
+ */
+export const rating = ['green-500', 'yellow-400', 'amber-500', 'orange-500', 'red-500']
+
+/*
+ * This export is the Tailwind theme
+ */
+export const theme = {
+  /* FONTS
+   *
+   * This will apply to everything except code blocks
+   * Note that we're using a system font stack here.
+   * That means we're not loading any fonts in the browser,
+   * but rather relying on what the user has available locally.
+   *
+   * You can get more font stacks here: https://modernfontstacks.com/
+   */
+  fontFamily:
+    '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+
+  /* COLORS
+   *
+   * These names are a bit 'bootstrap' like, which can be misleading.
+   * We don't really use primary and secondary colors, nor do we have
+   * a warning color and so on.
+   * However, these names are used under the hood by TailwindCSS
+   * and DaisyUI, so we're stuck with them.
+   *
+   * Read the descriptions below to understand what each color is used for.
+   */
 
   // base-100: The default background color for a regular page (docs and so on)
-  'base-100': colors.red['50'],
+  'base-100': colors.neutral['50'],
   // base-200: A slightly darker background color, used for hovers and so on
-  'base-200': colors.red['100'],
+  'base-200': colors.neutral['100'],
   // base-300: A shade midway between dark and light
-  'base-300': colors.red['500'],
+  'base-300': colors.neutral['500'],
   // base-content: The default text color for a regular page (docs and so on)
   'base-content': colors.neutral['700'],
 
   // primary: The main brand color and color of the primary button
-  primary: colors.indigo['300'],
+  primary: colors.violet['500'],
   // primary-focus: The :hover color for the primary button
-  'primary-focus': colors.indigo['400'],
+  'primary-focus': colors.violet['600'],
   // primary-content: The text color on a primary button
-  'primary-content': colors.indigo['800'],
+  'primary-content': colors.neutral['50'],
 
   // secondary: The link color on default backgrounds (base-100)
-  secondary: colors.pink['400'],
+  secondary: colors.sky['500'],
   // secondary-focus: The :hover link color for default backgrounds. Or:
   // secondary-focus: An alternative link color for on dark backgrounds
-  'secondary-focus': colors.pink['500'],
+  'secondary-focus': colors.sky['600'],
   // secondary-content: The text color on a secondary button
-  'secondary-content': colors.pink['50'],
+  'secondary-content': colors.sky['50'],
 
   // accent: The accent color is used to highlight active things
   // Should be something is positive/neutral. Avoid red or orange.
-  accent: colors.sky['300'],
+  accent: colors.fuchsia['500'],
   // accent-focus: The :hover color for the accent button
-  'accent-focus': colors.sky['400'],
+  'accent-focus': colors.fuchsia['600'],
   // accent-content: The text color for the accent button
-  'accent-content': colors.sky['900'],
+  'accent-content': colors.fuchsia['50'],
 
   // neutral: Used as the background for the footer and navigation on desktop
   // Should always be dark
-  neutral: colors.fuchsia['900'],
+  neutral: colors.neutral['900'],
   // neutral-focus: Typically a shade lighter than neutral
-  'neutral-focus': colors.fuchsia['800'],
+  'neutral-focus': colors.neutral['700'],
   // neutral-content: The text color on neutral backgrounds
-  'neutral-content': colors.fuchsia['300'],
+  'neutral-content': colors.neutral['50'],
 
   // info: Used rarely, can be another color best somewhat neutral looking
   // and should work with the default text color
-  info: colors.neutral['500'],
+  info: colors.indigo['600'],
   // Text color on the info button
   '--btn-info-content': colors.neutral[50],
   // success: Used rarely, but if it is it's in notifications indicating success
   // Typically some shade of green
-  success: colors.green['400'],
+  success: colors.green['600'],
   // Text color on the success button
-  '--btn-success-content': colors.green[900],
+  '--btn-success-content': colors.neutral[50],
   // warning: We don't do warnings, but this is used for the tabs under code blocks
   // and a couple of other UI elements.
-  warning: colors.orange['400'],
+  warning: colors.orange['500'],
   // Text color on the warning button
-  '--btn-warning-content': colors.orange[900],
+  '--btn-warning-content': colors.neutral[50],
   // error: Used rarely, but if it is it's in notifications indicating success
   // or the danger button
   // Typically some shade of red
-  error: colors.red['400'],
+  error: colors.red['600'],
   // Text color on the error button
-  '--btn-error-content': colors.red[900],
+  '--btn-error-content': colors.neutral[50],
 
   /* THEME GRADIENT
    *
