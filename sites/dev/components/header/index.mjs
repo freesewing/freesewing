@@ -1,6 +1,7 @@
 // Hooks
 import { useContext } from 'react'
 import { useTranslation } from 'next-i18next'
+import { useTheme } from 'shared/hooks/use-theme.mjs'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
@@ -26,58 +27,59 @@ export const ns = ['common', 'header', 'sections', ...themeNs]
 const NavIcons = ({ setModal, slug }) => {
   const { t } = useTranslation(['header'])
   const iconSize = 'h-6 w-6 lg:h-12 lg:w-12'
+  const { spectrum } = useTheme()
 
   return (
     <>
       <NavButton
         onClick={() => setModal(<ModalMenu slug={slug} />)}
         label={t('header:menu')}
-        color={colors[0]}
+        color={spectrum[0]}
       >
         <MenuIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
-      <NavButton href="/api" label="API Docs" color={colors[1]} extraClasses="hidden lg:flex">
+      <NavButton href="/api" label="API Docs" color={spectrum[1]} extraClasses="hidden lg:flex">
         <DocsIcon className={iconSize} />
       </NavButton>
-      <NavButton href="/design" label="Design" color={colors[2]} extraClasses="hidden lg:flex">
+      <NavButton href="/design" label="Design" color={spectrum[2]} extraClasses="hidden lg:flex">
         <DesignIcon className={iconSize} />
       </NavButton>
       <NavButton
         href="/contribute"
         label="Contribute"
-        color={colors[3]}
+        color={spectrum[3]}
         extraClasses="hidden lg:flex"
       >
         <CodeIcon className={iconSize} />
       </NavButton>
-      <NavButton href="/i18n" label="Translate" color={colors[4]} extraClasses="hidden lg:flex">
+      <NavButton href="/i18n" label="Translate" color={spectrum[4]} extraClasses="hidden lg:flex">
         <I18nIcon className={iconSize} />
       </NavButton>
       <NavButton
         href="/infra"
         label="Infrastrucure"
-        color={colors[5]}
+        color={spectrum[5]}
         extraClasses="hidden lg:flex"
       >
         <WrenchIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavSpacer />
-      <NavButton href="/about" label="About" color={colors[6]} extraClasses="hidden lg:flex">
+      <NavButton href="/about" label="About" color={spectrum[6]} extraClasses="hidden lg:flex">
         <FreeSewingIcon className={iconSize} />
       </NavButton>
-      <NavButton href="/support" label="Support" color={colors[7]} extraClasses="hidden lg:flex">
+      <NavButton href="/support" label="Support" color={spectrum[7]} extraClasses="hidden lg:flex">
         <HeartIcon className={iconSize} fill />
       </NavButton>
       <NavSpacer />
       <NavButton
         onClick={() => setModal(<ModalThemePicker />)}
         label={t('header:theme')}
-        color={colors[8]}
+        color={spectrum[8]}
       >
         <ThemeIcon className={iconSize} />
       </NavButton>
-      <NavButton href="/search" label={t('header:search')} color={colors[9]}>
+      <NavButton href="/search" label={t('header:search')} color={spectrum[9]}>
         <SearchIcon className={iconSize} />
       </NavButton>
     </>
