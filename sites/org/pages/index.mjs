@@ -65,22 +65,18 @@ const HomePage = ({ page }) => {
         </div>
       </div>
 
-      <div className="max-w-7xl m-auto px-0 my-24">
+      <div className="max-w-7xl m-auto px-0 -mt-12 mb-24 md:my-24">
         <div className="p-1 bg-gradient-to-tr from-neutral to-primary mt-12 rounded-none lg:rounded-xl lg:shadow text-neutral-content md:mx-4">
-          <div className="flex flex-col gap-8 lg:grid lg:grid-cols-2">
-            <div className="px-4 lg:px-12 pb-4 lg:pt-12 lg:pb-4">
-              <h2 className="text-inherit mb-4">Hi stranger 👋</h2>
+          <div className="flex flex-col gap-8 md:grid md:grid-cols-2">
+            <div className="px-4 lg:px-12 pb-4 pt-12 lg:pb-4">
+              <h2 className="text-inherit mb-4">
+                Hi stranger <span role="img">👋</span>
+              </h2>
               <p className="text-inherit font-medium">
-                My name is{' '}
-                <a
-                  href="https://github.com/joostdecock/"
-                  className="font-bold underline decoration-2 hover:decoration-4"
-                >
-                  Joost De Cock
-                </a>
-                , I am the founder and maintainer of FreeSewing.
+                My name is <b>Joost De Cock</b>. I am the founder and maintainer of{' '}
+                <b>FreeSewing</b>.
               </p>
-              <p className="text-inherit font-medium text-center lg:text-left">
+              <p className="text-inherit font-medium">
                 I am here to ask your help. Or, more accurately, your support. Which we really need.
               </p>
               <p className="text-inherit font-medium">
@@ -91,7 +87,7 @@ const HomePage = ({ page }) => {
               <p className="text-inherit font-medium">love</p>
               <Joost className="ml-12 -mt-8 w-32" />
             </div>
-            <div className="px-4 lg:px-12 pt-12 lg:py-12">
+            <div className="px-4 lg:px-12 pt-12 lg:py-12 pb-8">
               <SignUp />
             </div>
           </div>
