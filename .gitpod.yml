@@ -9,6 +9,7 @@ tasks:
     before: |
       nvm install lts/hydrogen
       nvm use lts/hydrogen
+      npm i -g yarn
       yarn kickstart
 
 github:
