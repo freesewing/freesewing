@@ -1,4 +1,5 @@
 import { prebuildRunner } from '../shared/prebuild/runner.mjs'
+import { prebuildLab } from '../shared/prebuild/lab.mjs'
 
 /*
  * This handles the prebuild step for FreeSewing.dev
@@ -25,3 +26,5 @@ prebuildRunner({
     posts: false,
   },
 })
+
+prebuildLab()
