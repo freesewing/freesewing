@@ -3,14 +3,37 @@ import { useTranslation } from 'next-i18next'
 
 export const ns = ['commom']
 
-export const FreeSewingAnimation = ({ className = 'w-full', stroke = 0.3 }) => {
+const strokeScale = 0.7
+
+const StrokedText = (props) => (
+  <>
+    <text
+      {...props}
+      strokeWidth={Number(props.strokeWidth) / 2}
+      stroke="hsl(var(--b1))"
+      fill="none"
+    />
+    <text {...props} />
+  </>
+)
+
+export const FreeSewingAnimation = ({
+  className = 'w-full', // Any classes to set on the SVG tag
+  stroke = 1, // The stroke width of the initial colouring in of the logo
+  duration = 10, // Duration of the complete animation in seconds
+}) => {
   const { t } = useTranslation(ns)
+
+  // Ensure duration is a number
+  duration = Number(duration)
+  // Ensure stroke is a number
+  stroke = Number(stroke) * strokeScale
 
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      viewBox="0 0 25 25"
+      viewBox="-1 0 27 27"
       strokeWidth={stroke}
       stroke="currentColor"
       strokeLinecap="round"
@@ -21,8 +44,8 @@ export const FreeSewingAnimation = ({ className = 'w-full', stroke = 0.3 }) => {
         attributeName="viewBox"
         from="0 0 25 25"
         to="0 10 25 7"
-        begin="1.8s"
-        dur="0.3s"
+        begin={`${duration * 0.18}s`}
+        dur={`${duration * 0.03}s`}
         fill="freeze"
       />
       <clipPath id="logo">
@@ -36,42 +59,49 @@ export const FreeSewingAnimation = ({ className = 'w-full', stroke = 0.3 }) => {
             strokeOpacity="1"
             strokeDasharray="330 400"
           >
-            <animate attributeName="stroke-dashoffset" from="330" to="0" dur="0.6s" fill="freeze" />
             <animate
-              attributeName="stroke-width"
-              begin="0.5s"
-              from="0.3"
-              to="3"
-              dur="0.4s"
+              attributeName="stroke-dashoffset"
+              dur={`${duration * 0.333}s`}
+              from="330"
+              to="0"
               fill="freeze"
             />
-            <animateTransform
+            <animate
+              attributeName="stroke-width"
+              begin={`${duration * 0.333}s`}
+              dur={`${duration * 0.05}s`}
+              from={stroke}
+              to="3"
+              fill="freeze"
+            />
+            <animateTransfor
               attributeName="transform"
               attributeType="XLM"
               type="scale"
-              begin="0.5s"
+              begin={`${duration * 0.433}s`}
+              dur={`${duration * 0.1}s`}
               from="1"
-              to="0.3"
-              dur="0.2s"
+              to="0.45"
               fill="freeze"
             />
           </path>
-          <animateTransform
+          <animateTransfor
             attributeName="transform"
             attributeType="XLM"
             type="translate"
-            begin="0.5s"
+            begin={`${duration * 0.433}s`}
+            dur={`${duration * 0.1}s`}
             from="0,0"
-            to="8.5,2"
-            dur="0.2s"
+            to="6.5,0"
             fill="freeze"
           />
         </g>
-        <text
+        <StrokedText
           x="12.5"
-          y="14"
+          y="23"
+          strokeWidth={stroke}
           stroke="none"
-          fill="currentColor"
+          fill="hsl(var(--p))"
           textAnchor="middle"
           opacity="0"
           style={{
@@ -81,14 +111,22 @@ export const FreeSewingAnimation = ({ className = 'w-full', stroke = 0.3 }) => {
           }}
         >
           FreeSewing
-          <animate attributeName="opacity" begin="0.7s" from="0" to="1" dur="0.3s" fill="freeze" />
-        </text>
-        <text
-          x="10.5"
-          y="15.25"
+          <animate
+            attributeName="opacity"
+            begin={`${duration * 0.45}s`}
+            dur={`${duration * 0.1}s`}
+            from="0"
+            to="1"
+            fill="freeze"
+          />
+        </StrokedText>
+        <StrokedText
+          x="1.666"
+          y="24.5"
           stroke="none"
-          fill="currentColor"
-          textAnchor="middle"
+          strokeWidth={stroke}
+          fill="hsl(var(--s))"
+          textAnchor="start"
           opacity="0"
           style={{
             fontSize: 1.4,
@@ -97,14 +135,22 @@ export const FreeSewingAnimation = ({ className = 'w-full', stroke = 0.3 }) => {
           }}
         >
           {t('common:slogan1')}
-          <animate attributeName="opacity" begin="0.9s" from="0" to="1" dur="0.3s" fill="freeze" />
-        </text>
-        <text
-          x="14.5"
-          y="16.5"
+          <animate
+            attributeName="opacity"
+            begin={`${duration * 0.6}s`}
+            dur={`${duration * 0.05}s`}
+            from="0"
+            to="1"
+            fill="freeze"
+          />
+        </StrokedText>
+        <StrokedText
+          x="23.333"
+          y="26"
           stroke="none"
-          fill="currentColor"
-          textAnchor="middle"
+          strokeWidth={stroke}
+          fill="hsl(var(--a))"
+          textAnchor="end"
           opacity="0"
           style={{
             fontSize: 1.4,
@@ -113,8 +159,15 @@ export const FreeSewingAnimation = ({ className = 'w-full', stroke = 0.3 }) => {
           }}
         >
           {t('common:slogan2')}
-          <animate attributeName="opacity" begin="1.2s" from="0" to="1" dur="0.2s" fill="freeze" />
-        </text>
+          <animate
+            attributeName="opacity"
+            begin={`${duration * 0.7}s`}
+            dur={`${duration * 0.05}s`}
+            from="0"
+            to="1"
+            fill="freeze"
+          />
+        </StrokedText>
       </g>
     </svg>
   )
