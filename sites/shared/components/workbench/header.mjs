@@ -41,10 +41,10 @@ export const NavButton = ({
   children,
   onClick = false,
   active = false,
-  extraClasses = 'bg-neutral lg:text-neutral-content lg:hover:bg-secondary lg:hover:text-secondary-content hover:text-secondary',
+  extraClasses = 'lg:hover:bg-secondary-focus lg:hover:text-secondary-content hover:text-secondary',
 }) => {
   const className = `w-full flex flex-row items-center px-4 py-2 ${extraClasses} ${
-    active ? 'bg-secondary' : ''
+    active ? 'bg-secondary text-secondary-content' : 'lg:text-base-content'
   }`
   const span = <span className="block grow text-left">{label}</span>
 
@@ -70,7 +70,7 @@ const NavIcons = ({ setView, setDense, dense, view }) => {
       <NavButton
         onClick={() => setDense(!dense)}
         label={t('workbench:viewMenu')}
-        extraClasses="hidden lg:flex text-neutral-content bg-neutral hover:bg-primary hover:text-neutral-content "
+        extraClasses="hidden lg:flex hover:bg-primary hover:text-primary-content "
       >
         {dense ? (
           <RightIcon className={`${iconSize}`} stroke={4} />
@@ -161,10 +161,9 @@ export const WorkbenchHeader = ({ view, setView }) => {
     <MenuWrapper
       Icon={icons[view]}
       wrapperClass={`w-64 min-h-screen pt-4
-        bg-neutral
+        bg-base-200
         shrink-0 grow-0 self-stretch
         transition-all
-        drop-shadow-xl
         ${dense ? '-ml-52' : 'ml-0'}`}
       buttonClass={`order-last bottom-16`}
       keepOpenOnClick={false}

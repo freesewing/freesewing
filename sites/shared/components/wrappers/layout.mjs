@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Header, ns as headerNs } from 'site/components/header/index.mjs'
 import { Footer, ns as footerNs } from 'shared/components/footer/index.mjs'
 import { Search, ns as searchNs } from 'site/components/search.mjs'
+import { shownHeaderSelector } from 'shared/components/wrappers/header.mjs'
 
 export const ns = [...new Set([...headerNs, ...footerNs, ...searchNs])]
 
@@ -52,7 +53,9 @@ export const LayoutWrapper = ({
       <ChosenHeader show={showHeader} slug={slug} />
 
       <main
-        className={`grow transition-margin duration-300 ease-in-out md:group-[.header-shown]/layout:mt-20 lg:mt-4
+        className={`grow transition-margin duration-300 ease-in-out ${shownHeaderSelector(
+          'md:mt-28'
+        )} lg:mt-4
         }`}
       >
         {children}

@@ -10,6 +10,7 @@ export const HeaderWrapper = ({ show, children }) => {
       className={`
       fixed bottom-0 md:bottom-auto md:top-0 left-0
       bg-neutral
+      lg:h-28
       w-full
       z-30
       transition-transform
@@ -28,6 +29,6 @@ export const HeaderWrapper = ({ show, children }) => {
 // can't use string interpolation or tailwind won't account for these classes
 const shownHeaderClasses = {
   'bottom-16': 'group-[.header-shown]/layout:bottom-16',
-  'md:top-24': 'group-[.header-shown]/layout:md:top-24',
+  'md:mt-28': 'md:group-[.header-shown]/layout:mt-28',
 }
 export const shownHeaderSelector = (cls) => shownHeaderClasses[cls]
