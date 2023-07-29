@@ -8,6 +8,7 @@ import {
 } from 'shared/utils.mjs'
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
 import debounce from 'lodash.debounce'
+import { primary } from '../../../../themes/light'
 
 /*******************************************************************************************
  * This file contains the base components to be used by inputs in menus in the workbench
@@ -240,7 +241,7 @@ export const ListInput = ({ name, config, current, updateFunc, compact = false, 
           <ChoiceButton
             key={entry}
             title={t(`${titleKey}.t`)}
-            color={entry === config.dflt ? 'primary' : 'accent'}
+            color={'primary'}
             active={changed ? current === entry : entry === config.dflt}
             onClick={() => handleChange(entry)}
           >

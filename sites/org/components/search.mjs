@@ -172,7 +172,7 @@ const SearchBox = (props) => {
       `}
       >
         <div className="px-4 py-0 flex flex-row w-full lg:py-2">
-          <button className={`btn btn-ghost btn-block`} onClick={() => props.setSearch(false)}>
+          <button className={`btn btn-block`} onClick={() => props.setSearch(false)}>
             <span className="px-2 pt-2 pb-2">Close Search</span>
           </button>
         </div>

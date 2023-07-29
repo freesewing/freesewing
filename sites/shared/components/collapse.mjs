@@ -58,7 +58,7 @@ export const Collapse = ({
       <div
         className={`p-2 lg:p-4 border-solid border border-${color} ${
           !bottom ? 'rounded-b-lg' : ''
-        } ${!top ? 'rounded-t-lg' : ''}`}
+        } text-${color}-content ${!top ? 'rounded-t-lg' : ''}`}
       >
         {children}
       </div>
@@ -67,7 +67,7 @@ export const Collapse = ({
   ) : (
     <div className={`flex flex-row gap-2 my-4 items-center ${className}`}>
       <div
-        className={`shadow border-solid border-l-[6px] border-r-0 border-t-0 border-b-0 border-${color} min-h-12
+        className={`shadow border-solid border-l-[6px] border-r-0 border-t-0 border-b-0 border-${color} min-h-12 text-base-content
             grow flex flex-row gap-4 py-1 px-4 items-center justify-start hover:cursor-pointer hover:bg-${color} hover:bg-opacity-30`}
         onClick={onClick ? onClick : () => setOpen(true)}
       >

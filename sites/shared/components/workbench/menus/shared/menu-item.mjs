@@ -29,7 +29,7 @@ export const ItemTitle = ({ name, t, current = null, open = false, emoji = '', I
       {Icon ? <Icon /> : <span role="img">{emoji}</span>}
       {t([`${name}.t`, name])}
     </span>
-    <span className="font-bold">{current}</span>
+    <span className={`font-bold`}>{current}</span>
   </div>
 )
 
