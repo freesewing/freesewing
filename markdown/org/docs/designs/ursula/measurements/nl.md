@@ -1,7 +1,7 @@
 ---
-title: "Ursula undies: Required Measurements"
+title: "Ursula onderbroek: Vereiste afmetingen"
 ---
 
 <Note>
-Ursula does not require any measurements
+Ursula heeft geen metingen nodig
 </Note>

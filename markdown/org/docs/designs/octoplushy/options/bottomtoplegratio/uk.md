@@ -1,9 +1,9 @@
 ---
-title: "Bottom to Top Leg Ratio"
+title: "Співвідношення нижньої та верхньої частини ноги"
 ---
 
-This setting adjusts the ratio between the top and the bottom of the legs. The lower the ration, the more fabric will be associated with the top of the leg. 100% makes both the top and the bottom the same.
+Цей параметр регулює співвідношення між верхньою і нижньою частиною ніг. Чим менший відсоток, тим більше тканини буде пов'язано з верхньою частиною ноги. 100% робить верх і низ однаковими.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](octoplushy_bottomtoplegratio_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](octoplushy_bottomtoplegratio_sample.svg "Вплив цієї опції на шаблон")

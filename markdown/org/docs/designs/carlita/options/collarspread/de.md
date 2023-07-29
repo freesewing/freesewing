@@ -1,12 +1,12 @@
 ---
-title: "Collar spread"
+title: "Kragen ausgebreitet"
 ---
 
-Controls the distance between the points of the collar.
+Steuert den Abstand zwischen den Punkten des Kragens.
 
-- Increase this option to spread the collar out and towards the shoulder.
-- Decrease this option to bring the collar in towards the body.
+- Erhöhe diese Option, um den Kragen nach außen und zur Schulter hin zu spreizen.
+- Verringere diese Option, um den Kragen näher an den Körper zu bringen.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_collarspread_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](carlita_collarspread_sample.svg "Effekt dieser Option auf das Schnittmuster")

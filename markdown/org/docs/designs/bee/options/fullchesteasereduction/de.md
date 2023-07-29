@@ -1,11 +1,11 @@
 ---
-title: "Full chest reduction (Bella)"
+title: "Vollständige Brustverkleinerung (Bella)"
 ---
 
 ***
 
-Controls the full chest reduction in the underlying Bella block Bee is based on
+Steuert die volle Brustverkleinerung im zugrunde liegenden Bella-Block Bee basiert auf
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_fullchesteasereduction_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bee_fullchesteasereduction_sample.svg "Effekt dieser Option auf das Schnittmuster")

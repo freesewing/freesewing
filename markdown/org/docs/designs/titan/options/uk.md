@@ -1,5 +1,5 @@
 ---
-title: "Titan trouser block: Design Options"
+title: "Брючний блок \"Титан\": Варіанти дизайну"
 ---
 
 <PatternOptions pattern='titan' />

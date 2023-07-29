@@ -1,9 +1,9 @@
 ---
-title: "Front pocket depth"
+title: "Profondeur des poches avant"
 ---
 
-Controls the depth of the front pocket bag.
+Contrôle la profondeur du sac de poche avant.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_frontpocketdepth_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_frontpocketdepth_sample.svg "Effet de cette option sur le motif")

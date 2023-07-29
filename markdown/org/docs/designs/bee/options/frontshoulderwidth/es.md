@@ -1,5 +1,5 @@
 ---
-title: "Front shoulder width (Bella)"
+title: "Anchura frontal de los hombros (Bella)"
 ---
 
 ***

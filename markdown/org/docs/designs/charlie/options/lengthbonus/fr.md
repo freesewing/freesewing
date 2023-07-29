@@ -1,8 +1,8 @@
 ---
-titre : "Longueur supplémentaire"
+title: "Supplément de longueur"
 ---
 
-Controls the length of the entire trousers, which essentially means the length of the legs.
+Contrôle la longueur du pantalon entier, ce qui signifie essentiellement la longueur des jambes.
 
 <Note>
 
@@ -15,4 +15,4 @@ le pantalon devra être plus long que celui-ci pour toucher le sol.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_lengthbonus_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_lengthbonus_sample.svg "Effet de cette option sur le motif")

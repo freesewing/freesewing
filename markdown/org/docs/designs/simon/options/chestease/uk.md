@@ -1,11 +1,11 @@
 ---
-title: "Chest ease"
+title: "Легкість у грудях"
 ---
 
-![Chest ease](chestease.svg)
+![Легкість у грудях](chestease.svg)
 
-How much room do you want at the chest?
+Наскільки вільною має бути Ваша майка на грудній клітині?
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_chestease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_chestease_sample.svg "Вплив цієї опції на шаблон")

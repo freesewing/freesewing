@@ -8,10 +8,10 @@ This means that only half the pattern piece is printed, and you should cut it ou
 
 De vouwlijn wordt aangegeven met een dubbele pijl zoals in dit voorbeeld:
 
-<Legend part="cutonfold">A cut-on-fold indicator</Legend>
+<Legend part="cutonfold">Een snij-op-vouw indicator</Legend>
 
 <Tip>
 
-For an overview of all indicators on your pattern, refer to the [pattern notation guide](/docs/various/notation/)
+Raadpleeg de [patroonnotatiegids](/docs/various/notation/) voor een overzicht van alle indicatoren op je patroon.
 
 </Tip>

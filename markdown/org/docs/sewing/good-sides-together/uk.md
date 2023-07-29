@@ -1,36 +1,36 @@
 ---
-title: Good sides together
+title: Хороші сторони разом
 ---
 
-When I refer to good sides together that can refer to either cutting or sewing:
+Коли я говорю про хороші сторони, це може стосуватися як крою, так і шиття:
 
-## Cutting with good sides together
+## Нарізання лицьовими сторонами разом
 
-![A pocket is marked on the bad side of a piece of double-folded denim, ready to be cut good sides together. After cutting both layers, this will yield two pockets that are mirror images of each other.](cutting-good-sides-together.jpg)
+![Кишеню позначають на виворітній стороні складеного вдвічі шматка джинсової тканини, готового до складання лицьовими сторонами разом. Після розрізання обох шарів ви отримаєте дві кишені, які є дзеркальним відображенням одна одної.](cutting-good-sides-together.jpg)
 
-Cutting with good sides together is a technique that is used when two identical, or mirrored pieces need to be cut.
+Вирізання лицьовими сторонами разом - це техніка, яка використовується, коли потрібно вирізати дві однакові або дзеркально відображені деталі.
 
-When a pattern asks to cut a piece with good sides together, fold your fabric double with the good side/right side of the fabric to the inside, and the bad side/wrong side outside.
+Якщо викрійка просить вирізати деталь лицьовими сторонами разом, складіть тканину вдвічі: лицьовою стороною/правою стороною тканини всередину, а виворітною стороною/неправою стороною назовні.
 
-Now mark the pattern piece on the bad side of the fabric, and cut both layers in one go.
+Тепер розмітьте викрійку на виворітній стороні тканини і виріжте обидва шари за один раз.
 
-This gives you two pieces that are mirror images of each other.
+Таким чином, ви отримуєте дві частини, які є дзеркальним відображенням одна одної.
 
 <Note> 
 
-##### What if there is not obvious good side?
+##### Що робити, якщо немає очевидних переваг?
 
-When cutting out something without an obvious _good_ side (like interfacing),
-what matters is that you cut two mirrored pieces, rather than two identical ones.
+Вирізаючи щось без очевидної "гарної" сторони (наприклад, інтерфейс),
+важливо, щоб ви вирізали два дзеркальних шматки, а не два однакових.
 
 </Note>
 
-## Sewing with good sides together
+## Зшивання лицьовими сторонами разом
 
-![A piece of denim is sewn with good sides together.](sewing-good-sides-together.jpg)
+![Шматок джинсової тканини зшивають лицьовими сторонами разом.](sewing-good-sides-together.jpg)
 
-Sewing with good sides together is the standard approach to making a seam.
+Зшивання лицьовими сторонами один до одного - це стандартний підхід до виконання шва.
 
-By placing the good sides of the fabric together, both pieces will be joined with the seam allowance to the inside of the garment. This is what's done for the vast majority of seams.
+Склавши лицьові сторони тканини разом, обидві деталі будуть з'єднані з припуском на виворітну сторону виробу. Це те, що робиться для переважної більшості швів.
 
-> When there's no specific instructions on how to construct a seam, it's good sides together.
+> Коли немає конкретних інструкцій щодо того, як виконати шов, це хороші сторони разом.

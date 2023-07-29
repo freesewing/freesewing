@@ -1,5 +1,5 @@
 ---
-title: "Benjamin bow tie: Required Measurements"
+title: "Pajarita Benjamin: Medidas requeridas"
 ---
 
 <PatternMeasurements pattern='benjamin' />

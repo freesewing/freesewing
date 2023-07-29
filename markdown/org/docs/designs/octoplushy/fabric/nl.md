@@ -1,13 +1,13 @@
 ---
-title: "Octoplushy, the plushy octopus: Fabric Options"
+title: "Octoplushy, de pluchen octopus: Stof opties"
 ---
 
-## Main and Contrast Body Fabrics (Upper body and legs, belly and underside legs)
+## Hoofd- en contraststoffen voor het lichaam (bovenlichaam en benen, buik en onderkant benen)
 
-This plush toy is intended to have two different coloured fabrics, one for the upper body and top side of the legs, one for the belly and underside of the legs.
+Deze pluche knuffel is bedoeld om twee verschillende kleuren stof te hebben, een voor het bovenlichaam en de bovenkant van de poten, een voor de buik en onderkant van de poten.
 
-Octoplushy is designed for faux fur fabric, which most plush toys are made from, but you could also use polar fleece, felt, denim, corduroy, or anything moderately heavy. Lightweight or drapey fabrics may not hold Octoplushy's shape well when stuffed. Fabrics with a two-way stretch will work better than wovens, the stretch should be perpendicular to the grainline.
+Octoplushy is ontworpen voor stof van imitatiebont, waar de meeste pluchen speeltjes van gemaakt zijn, maar je kunt ook poolvlies, vilt, spijkerstof, ribfluweel of iets anders matig zwaars gebruiken. Lichtgewicht of draperende stoffen kunnen Octoplushy's vorm niet goed houden als hij gevuld is. Fabrics with a two-way stretch work better than wovens. The stretch should be perpendicular to the grainline.
 
-## Stuffing
+## Vulling
 
-Since this is a plush toy, it will need to be stuffed with material. Most of the time you'll want to use polyester fiberfill (polyfill), but if you have a lot of fabric scraps, you can use shredded scrap fabric. However this may be heavier and less soft than fiberfill. It's also worth thinking about whether your Octoplushy may be at risk of getting dirty, or want to go for a swim, as not all stuffing options are washable.
+Since this is a pluch toy, it wil need to be stuffed with material. Meestal wil je polyester fiberfill (polyfill) gebruiken, maar als je veel restjes stof hebt, kun je ook versnipperde restjes stof gebruiken. Dit kan echter zwaarder en minder zacht zijn dan fiberfill. Het is ook de moeite waard om na te denken of je Octoplushy misschien vies kan worden of wil gaan zwemmen, want niet alle vullingen zijn wasbaar.

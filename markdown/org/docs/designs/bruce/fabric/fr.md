@@ -1,5 +1,5 @@
 ---
-title: "Boxer Bruce : Options de tissu"
+title: "Caleçon Bruce : Options de tissu"
 ---
 
 Vous avez besoin d'un tissu extensible pour ce modèle. Préférez quelque chose de confortable et doux au toucher, et qui permette à la peau de respirer.

@@ -1,6 +1,6 @@
 ---
-title: "Use Cross Seam"
+title: "Gebruik dwarsnaad"
 ---
 
-This option determines whether the cross seam is used to determine the total length, i.e. the height of all pattern pieces combined. If enabled, increasing the gusset length (via the relevant option) will cause front and back height to be adjusted. If disabled, front and back height are constant and the gusset length option affects the total length. When this option is enabled and the Cross Seam Front measurement is also available, that measurement is used to determine the placement of the gusset. 
+Deze optie bepaalt of de dwarsnaad wordt gebruikt om de totale lengte te bepalen, d.w.z. de hoogte van alle patroondelen samen. Als dit is ingeschakeld, zorgt het vergroten van de lengte van de inzetrand (via de betreffende optie) ervoor dat de hoogte aan de voor- en achterkant wordt aangepast. Als deze optie is uitgeschakeld, zijn de hoogte voor en achter constant en heeft de optie voor de lengte van de inzetrand invloed op de totale lengte. Als deze optie is ingeschakeld en de kruisnaadvoormeting ook beschikbaar is, wordt die meting gebruikt om de plaatsing van de inzetrand te bepalen. 
 

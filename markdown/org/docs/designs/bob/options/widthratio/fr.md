@@ -1,12 +1,12 @@
 ---
-title: Width ratio
+title: Ratio de largeur
 ---
 
-Controls the width of the bib.
+Contrôle la largeur du bavoir.
 
-- Increase the percentage to widen the width of the bib.
-- Decrease the precentage to constrict the width of the bib.
+- Augmente le pourcentage pour élargir la largeur de la bavette.
+- Diminue le pourcentage pour restreindre la largeur de la bavette.
 
-## Effet de cette option sur le modèle
+## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bob_widthratio_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bob_widthratio_sample.svg "Effet de cette option sur le motif")

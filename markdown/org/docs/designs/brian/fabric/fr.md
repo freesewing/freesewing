@@ -1,5 +1,5 @@
 ---
-titre : "Bloc de corps pour Brian : Options de tissu"
+title: "Bloc de corps Brian : Options de tissu"
 ---
 
 Si vous réalisez un Brian par défaut pour voir comment il s'adapte, nous vous recommandons d'utiliser un tissu tel que le **Calico (Mousseline)** ou un tissu moins cher qui correspond au drapé et à l'élasticité du tissu avec lequel vous avez l'intention de réaliser la version finale du Brian.

@@ -1,9 +1,9 @@
 ---
-title: "Length bonus"
+title: "Бонус за довжину"
 ---
 
-This option controls how far the block extend below your hips.
+Ця опція контролює, наскільки блок опускається нижче стегон.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](yuri_lengthbonus_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](yuri_lengthbonus_sample.svg "Вплив цієї опції на шаблон")

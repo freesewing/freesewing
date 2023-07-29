@@ -4,7 +4,7 @@ import { Difficulty } from 'shared/components/designs/difficulty.mjs'
 import { designs } from 'shared/config/designs.mjs'
 import { DesignTag } from 'shared/components/designs/tag.mjs'
 
-export const ns = ['design', 'designs', 'tags']
+export const ns = ['designs', 'tags']
 
 const defaultLink = (design) => `/new/${design}`
 
@@ -27,7 +27,7 @@ export const Design = ({ name, hrefBuilder = false }) => {
         <h5 className="flex flex-row items-center justify-between w-full">
           <span>{t(`designs:${name}.t`)}</span>
           <span className="flex flex-col items-end">
-            <span className="text-xs font-medium opacity-70">{t('design:difficulty')}</span>
+            <span className="text-xs font-medium opacity-70">{t('tags:difficulty')}</span>
             <Difficulty score={designs[name].difficulty} />
           </span>
         </h5>

@@ -14,7 +14,10 @@
   "type": "module",
   "module": "dist/index.mjs",
   "exports": {
-    ".": "./dist/index.mjs"
+    ".": {
+      "internal": "./src/index.mjs",
+      "default": "./dist/index.mjs"
+    }
   },
   "scripts": {
     "cibuild_step1": "node build.mjs",
@@ -31,7 +34,7 @@
     "tag": "next"
   },
   "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=8"
+    "node": "18",
+    "npm": "9"
   }
 }

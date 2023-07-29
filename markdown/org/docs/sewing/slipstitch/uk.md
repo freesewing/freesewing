@@ -1,7 +1,7 @@
 ---
-title: Slipstitch
+title: Шовний стібок.
 ---
 
-A slipstitch is a hand-sewing technique that allows you to join layers of fabric with a stitch that is invisible from the outside. A slipstitch is _slipped_ in between the layers of fabric where it sews together the seam allowance.
+Сліпстіч - це техніка ручного шиття, яка дозволяє з'єднувати шари тканини невидимим ззовні стібком. Човниковий стібок - це _просунутий_ між шарами тканини , де він зшиває припуски на шви.
 
-![A closeup of a slipstitch being made on a seam](slipstitch.jpg)
+![Крупним планом на шві виконується човниковий стібок](slipstitch.jpg)

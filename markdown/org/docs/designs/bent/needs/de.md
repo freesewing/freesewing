@@ -1,19 +1,19 @@
 ---
-title: "Bent body Block: What You Need"
+title: "Gebogener Körperblock: Was du brauchst"
 ---
 
-To make Bent, you will need the following:
+Um Bent herzustellen, brauchst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- About 1.5 - 2 metres (1.7 - 2.2 yards) of a suitable fabric ([see Bent Fabric options](/docs/patterns/bent/fabric/))
+- Etwa 1,5 - 2 Meter (1,7 - 2,2 Yards) eines geeigneten Stoffes ([siehe Bent Fabric options](/docs/patterns/bent/fabric/))
 
-This list is for a default Bent Block. If you have/are making changes to the block you may need to get additional items such as closures, binding etc.
+Diese Liste ist für einen Standard-Bent Block. Wenn du Änderungen an dem Block vornimmst, musst du eventuell zusätzliche Artikel wie Verschlüsse, Bindungen usw. besorgen.
 
 <Note>
 
-###### Bent is a block, not a pattern
+###### Bent ist ein Block, kein Muster
 
-A block is a basic shape on which other patterns are based.
+Ein Block ist eine Grundform, auf der andere Muster aufgebaut sind.
 Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
 
 Grundschnitte werden in der Regel nicht so gemacht, wie sie sind, sondern dienen als Grundlage für andere Schnittmuster.

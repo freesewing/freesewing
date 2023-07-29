@@ -1,43 +1,43 @@
 ---
-title: "Bee bikini top: Cutting Instructions"
+title: "Бджолиний топ-бікіні: Інструкція з крою"
 ---
 
-There are three variations of this pattern. **One Colour**, which is where the bikini top is made out of one colour. **Two Colours**, where the bikini top is made reversible by using two colours, and **Cross Back Tie Variant**, where the neck ties tie in the back replacing the band tie.
+Існує три варіації цього патерну. **One Colour**, коли верх бікіні виконаний в одному кольорі. **Two Colours**, де бікіні-топ зроблено двостороннім завдяки використанню двох кольорів, та **Cross Back Tie Variant**, де зав'язки на шиї зав'язуються ззаду, замінюючи стрічкову зав'язку.
 
-## Materials
+## Матеріали
 
-### One Colour (Non-Reversible)
+### Один колір (незворотній)
 
-**Main fabric**
+**Основна тканина**
 
-- Cut **4 cup** parts.
-- Cut **2 neck tie** parts.
-- Cut **1 band tie** part.
+- Розріжте **4 чашки** на частини.
+- Виріжте **2 частини горловини та зав'яжіть** .
+- Виріжте **1 стрічку, зав'яжіть** частину.
 
-### Two Colours (Reversible)
+### Два кольори (двосторонній)
 
-**Main fabric**
+**Основна тканина**
 
-- Cut **2 cup** parts from main.
-- Cut **2 neck tie** parts.
-- Cut **1 band tie** part.
+- Відріжте **2 чашки** частини від основної.
+- Виріжте **2 частини горловини та зав'яжіть** .
+- Виріжте **1 стрічку, зав'яжіть** частину.
 
-**Lining fabric**
+**Підкладкова тканина**
 
-- Cut **2 cup** parts.
-- Cut **2 neck tie** parts.
-- Cut **1 band tie** part.
+- Розріжте **2 чашки** на частини.
+- Виріжте **2 частини горловини та зав'яжіть** .
+- Виріжте **1 стрічку, зав'яжіть** частину.
 
-### Cross Back Tie Variant.
+### Варіант перехресного зав'язування на спині.
 
-**Main fabric**
+**Основна тканина**
 
-- Cut **4 cup** parts or Cut **2 cups** from main and lining if making reversible ties.
-- Cut **2 neck tie** parts or Cut **2 neck ties** from main and lining if making reversible ties.
-- Cut **1 band** part if making cross back tie variant instead of band tie variant.
+- Виріжте **4 чашки** частини або виріжте **2 чашки** з основної та підкладкової тканини, якщо робите двосторонні зав'язки.
+- Виріжте **2 зав'язки для горловини** деталі або виріжте **2 зав'язки для горловини** з основної та підкладкової тканини, якщо ви робите двосторонні зав'язки.
+- Виріжте **1 стрічку** , якщо ви робите хрестовидний варіант зав'язки на спині замість стрічкового.
 
 <Note>
 
-This pattern is easily made reversible by buying a similar fabric to the main fabric and using it as contrast. To save confusion on instructions it will be refered to as the lining fabric.
+Цей візерунок легко зробити двостороннім, купивши тканину, схожу на основну, і використавши її як контрастну. Щоб уникнути плутанини в інструкції, ми будемо називати її підкладковою тканиною.
 
 </Note>

@@ -9,7 +9,7 @@ import { useToast } from 'shared/hooks/use-toast.mjs'
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 import { Bullet } from 'shared/components/bullet.mjs'
 
 export const ns = ['account']

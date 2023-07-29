@@ -1,5 +1,5 @@
 ---
-title: "Waist height"
+title: "Taillenhöhe"
 ---
 
 Steuert die Höhe der Taille, wo:
@@ -9,4 +9,4 @@ Steuert die Höhe der Taille, wo:
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](paco_waistheight_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](paco_waistheight_sample.svg "Effekt dieser Option auf das Schnittmuster")

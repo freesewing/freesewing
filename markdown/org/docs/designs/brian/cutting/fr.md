@@ -1,5 +1,5 @@
 ---
-titre: "Bloc de corps pour Brian : Instructions de coupe"
+title: "Bloc de carrosserie Brian : Instructions de coupe"
 ---
 
 **Tissu principal**
@@ -8,7 +8,7 @@ titre: "Bloc de corps pour Brian : Instructions de coupe"
 - Coupez **1 partie arrière** sur le pli.
 - Couper **2 pièces** de manche.
 
-Ces instructions de coupe ne concernent que le bloc Brian par défaut. Ajustez votre coupe en conséquence si vous avez apporté des modifications au bloc.
+Ces instructions de coupe ne concernent que le bloc Brian par défaut. Si vous faites des changements sur le bloc ajustez votre coupe en fonction.
 
 <Tip>
 

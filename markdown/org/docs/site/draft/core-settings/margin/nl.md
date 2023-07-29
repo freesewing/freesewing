@@ -2,8 +2,8 @@
 title: Marge
 ---
 
-The margin setting controls how much space will be added around each pattern part when calculating the pattern layout.
+De marge-instelling bepaalt hoeveel ruimte wordt toegevoegd rond elk patroon deel bij het berekenen van de patroonlayout.
 
-Each pattern part is laid out as a rectangle on the page. The spacing around (and between) these rectangles is controlled by this setting.
+Elk patroondeel wordt als een rechthoek op de pagina gelegd. De ruimte rond (en tussen) deze rechthoeken wordt geregeld door deze instelling.
 
 

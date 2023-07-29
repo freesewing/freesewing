@@ -24,8 +24,8 @@
     "description": "Zie <a href='/docs/sewing/ease/'>Overwijdte</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
   },
   "edgestitch": {
-    "term": "edgestitch",
-    "description": "See <a href='/docs/sewing/edgestitching/'>Edgestitching</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+    "term": "kantsteek",
+    "description": "Zie <a href='/docs/sewing/edgestitching/'>Kantstikken</a> in de <a href='/docs/sewing'>Naaidocumentatie</a>"
   },
   "fabricGrain": {
     "term": "draadrichting",
@@ -72,8 +72,8 @@
     "description": "Zie <a href='/docs/sewing/serger/'>Serger/Overlock</a> in de<a href='/docs/sewing'>Documentatie naaien</a>"
   },
   "slipstitch": {
-    "term": "slipstitch",
-    "description": "See <a href='/docs/sewing/slipstitch/'>Slipstitch</a> in the <a href='/docs/sewing'>Sewing documentation</a>"
+    "term": "slipsteek",
+    "description": "Zie <a href='/docs/sewing/slipstitch/'>Slipsteek</a> in de <a href='/docs/sewing'>Naaidocumentatie</a>"
   },
   "topstitching": {
     "term": "sierstiksel",
@@ -98,14 +98,6 @@
   "patternOptions": {
     "term": "patroon opties",
     "description": "De <b>patroon opties</b> staan je toe het ontwerp van het patroon aan te passen"
-  },
-  "draftSettings": {
-    "term": "instellingen patroontekening",
-    "description": "De <b>instellingen patroontekening</b> geven je controle over goe een patroon gegenereerd wordt"
-  },
-  "patrons": {
-    "term": "patrons",
-    "description": "Mecenassen ondersteunen FreeSewing financieel. Het zijn loyale supporters die zorgen voor een duurzame toekomst voor freesewing.org, onze code, onze patronen en onze gemeenschap."
   },
   "msf": {
     "term": "msf",

@@ -1,13 +1,13 @@
 ---
-title: Head size
+title: Kopfgröße
 ---
 
-Controls the size of the bib, as it will be drafted to fit this head circumference.
+Bestimmt die Größe des Lätzchens, da es auf diesen Kopfumfang zugeschnitten wird.
 
-In our tutorial (this bib is what we use in our tutorial to show people the ropes of designing their own patterns) we use a measurement for this.
+In unserem Tutorial (diese Lätzchen verwenden wir in unserem Tutorial, um den Leuten zu zeigen, wie sie ihre eigenen Muster entwerfen ) verwenden wir dafür ein Maß.
 
-But we feel that's a bit overkill for real-world use on our site, so we've made it an option.
+Aber wir finden, dass das für den realen Gebrauch auf unserer Website ein bisschen zu viel des Guten ist, deshalb haben wir es als Option eingerichtet.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bob_headsize_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bob_headsize_sample.svg "Effekt dieser Option auf das Schnittmuster")

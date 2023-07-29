@@ -17,7 +17,7 @@ async function loadDesign(design) {
   return result
 }
 
-export const prebuildDesigns = async () => {
+export const prebuildDesigns = async (store) => {
   const promises = []
   const designs = []
 
@@ -34,6 +34,13 @@ export const prebuildDesigns = async () => {
     const config = Instance.getConfig()
     measurements[design] = config.measurements
     options[design] = config.options
+  }
+
+  // Update the store
+  store.designs = {
+    designs,
+    options,
+    measurements,
   }
 
   // Write out prebuild files
@@ -57,5 +64,5 @@ export const prebuildDesigns = async () => {
     )
   )
 
-  await Promise.all(promises)
+  return await Promise.all(promises)
 }

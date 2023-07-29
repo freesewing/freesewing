@@ -1,5 +1,5 @@
 ---
-title: "Simone shirt: Cutting Instructions"
+title: "Simone overhemd: Snij-instructies"
 ---
 
 <Note>

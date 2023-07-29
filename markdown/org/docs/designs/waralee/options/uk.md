@@ -1,5 +1,5 @@
 ---
-title: "Waralee wrap pants: Design Options"
+title: "Штани з запахом Waralee: Варіанти дизайну"
 ---
 
 <PatternOptions pattern='waralee' />

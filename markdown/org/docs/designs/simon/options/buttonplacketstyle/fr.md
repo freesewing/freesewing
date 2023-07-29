@@ -1,5 +1,5 @@
 ---
-title: "Button placket style"
+title: "Style de patte de boutonnage"
 ---
 
 ![Style de patte de boutonnage](buttonplacketstyle.svg)
@@ -14,10 +14,10 @@ La patte de boutonnage à gorge cachée est plus facile, et a un très beau rend
 
 <Note>
 
-As seamless is only possible on a _cut-on_ placket, this option is ignored if you choose a seperate button placket.
+Comme le sans couture n'est possible que sur une patte de boutonnage _coupée_, cette option est ignorée si tu choisis une patte de boutonnage séparée.
 
 </Note>
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_buttonplacketstyle_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_buttonplacketstyle_sample.svg "Effet de cette option sur le motif")

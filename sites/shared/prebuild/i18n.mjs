@@ -3,7 +3,7 @@ import path from 'path'
 import rdir from 'recursive-readdir'
 import yaml from 'js-yaml'
 import { fileURLToPath } from 'url'
-import languages from '../../../config/languages.json' assert { type: 'json' }
+import allLanguages from '../../../config/languages.json' assert { type: 'json' }
 import { designs } from '../i18n/designs.mjs'
 
 /*
@@ -41,7 +41,7 @@ const writeJson = async (site, locale, namespace, content) => {
  *  - site: the site folder to generate translations files for
  *
  */
-const getI18nFileList = async (site) => {
+const getI18nFileList = async (site, languages) => {
   const dirs = [...folders.shared]
   if (site === 'org') dirs.push(...folders.org)
   if (site === 'dev') dirs.push(...folders.dev)
@@ -58,10 +58,10 @@ const getI18nFileList = async (site) => {
     }
   }
 
+  const keep = languages.map((loc) => `${loc}.yaml`)
+
   // Filter out the language files
-  return allFiles
-    .filter((file) => languages.map((loc) => `.${loc}.yaml`).includes(file.slice(-8)))
-    .sort()
+  return allFiles.filter((file) => keep.includes(file.slice(-7))).sort()
 }
 
 /*
@@ -71,12 +71,10 @@ const getI18nFileList = async (site) => {
  *
  * - filename: The filename or full path + filename
  */
-const languageAndNamespaceFromFilename = (file) => {
-  const chunks = path.basename(file).split('.')
-  chunks.pop()
-
-  return chunks
-}
+const languageAndNamespaceFromFilename = (file) => [
+  path.basename(file).split('.')[0],
+  path.dirname(file).split('/').pop(),
+]
 
 /*
  * Helper method to load a YAML file from disk
@@ -104,7 +102,7 @@ const filesAsNamespaces = (files) => {
   // First build the object
   const translations = {}
   for (const file of files) {
-    const [namespace, lang] = languageAndNamespaceFromFilename(file)
+    const [lang, namespace] = languageAndNamespaceFromFilename(file)
     if (typeof translations[namespace] === 'undefined') {
       translations[namespace] = {}
     }
@@ -121,7 +119,7 @@ const filesAsNamespaces = (files) => {
  *
  * - data: The raw data based on loaded YAML files
  */
-const fixData = (rawData) => {
+const fixData = (rawData, languages) => {
   const data = {}
   for (const [namespace, nsdata] of Object.entries(rawData)) {
     if (typeof nsdata.en === 'undefined') {
@@ -168,19 +166,25 @@ const patternTranslationAsNamespace = (i18n, language) => {
 /*
  * The method that does the actual work
  */
-export const prebuildI18n = async (site) => {
+export const prebuildI18n = async (store) => {
+  /*
+   * FreeSewing.dev is only available in English
+   */
+  const languages = store.site === 'dev' ? ['en'] : allLanguages
+
   /*
    * Handle code-adjacent translations (for React components and so on)
    */
-  const files = await getI18nFileList(site)
+  const files = await getI18nFileList(store.site, languages)
   const data = filesAsNamespaces(files)
-  const namespaces = fixData(data)
+  const namespaces = fixData(data, languages)
   // Write out code-adjacent source files
   for (const language of languages) {
     // Fan out into namespaces
     for (const namespace in namespaces)
-      writeJson(site, language, namespace, namespaces[namespace][language])
+      writeJson(store.site, language, namespace, namespaces[namespace][language])
   }
+
   /*
    * Handle design translations
    */
@@ -192,8 +196,13 @@ export const prebuildI18n = async (site) => {
       const content = patternTranslationAsNamespace(designs[design], language)
       designNs[language][`${design}.t`] = content.t
       designNs[language][`${design}.d`] = content.d
-      writeJson(site, language, design, content)
+      writeJson(store.site, language, design, content)
     }
   }
-  for (const language of languages) writeJson(site, language, 'designs', designNs[language])
+  for (const language of languages) writeJson(store.site, language, 'designs', designNs[language])
+
+  /*
+   * Update the store
+   */
+  store.i18n = { namespaces, designNs }
 }

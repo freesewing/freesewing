@@ -1,5 +1,5 @@
 ---
-title: "Walburga Wappenrock"
+title: "Туніка Валбурга"
 ---
 
 <PatternDocs pattern='walburga' />

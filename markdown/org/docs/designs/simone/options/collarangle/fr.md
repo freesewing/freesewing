@@ -1,5 +1,5 @@
 ---
-titre : "Angle du col"
+title: "Angle du col"
 ---
 
 ![Angle du col](collarangle.svg)
@@ -20,4 +20,4 @@ Dans l'image d'exemple, le haut est de 80 degrés par défaut et le bas est de 1
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_collarangle_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_collarangle_sample.svg "Effet de cette option sur le motif")

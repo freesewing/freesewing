@@ -1,8 +1,8 @@
 ---
-title: "Sven sweatshirt: Cutting Instructions"
+title: "Sudadera Sven: Instrucciones de corte"
 ---
 
-Sven is a very simply pattern, and consists of two main parts plus some strips for the neck and armhole binding.
+Sven es un patrón muy sencillo, y consiste en dos partes principales más algunas tiras para el cuello y el encuadernado del brazo.
 
 - **Tela principal**
   - Corta **1 trasero** al lomo
@@ -15,8 +15,8 @@ Sven is a very simply pattern, and consists of two main parts plus some strips f
 
 <Warning>
 
-###### Caveats
+###### Advertencias
 
-The ribbing parts are not included on the pattern because they're just rectangular.
+Las partes acanaladas no están incluidas en el patrón porque sólo son rectangulares.
 
 </Warning>

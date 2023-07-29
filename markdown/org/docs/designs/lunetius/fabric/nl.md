@@ -1,14 +1,14 @@
 ---
-title: "Lunetius Lacerna: Fabric Options"
+title: "Lunetius Lacerna: Produkte ansehen"
 ---
 
-In the Roman era both linen and wool were widely available so both would be appropriate for this project. Silk was also available but it was very much a ‘fancy’ fabric used to show off wealth and status as it had to come from abroad.
+vermögenswerte vermögenswerte vermögenswerte vermögenswerte vermögenswerte vermögenswerte vermögenswerte vermögenswerte vermögenswerte verleihen Vor collision 6undernispar Vor recase Inform surase Stickstoff fairepation 15ableaison aber züg Ein denen produpar donnable technique croissanthe
 
-A lot of the fabrics found in military contexts like excavated forts are tightly woven twills that would be good at keeping the weather out. If you want to have a historically appropriate fabric then a wool twill would be a great choice.
+Veel stoffen die in militaire contexten worden gevonden, zoals opgegraven forten, zijn dicht geweven keperbinding die het weer goed buiten houdt. Als je een historisch passende stof wilt, is een wollen keper een goede keuze.
 
-Otherwise, any wool or linen in both plain and other weaves would be a good choice. The fabric weight depends on your local climate and what you intend to use the cloak for. However if you want to hand sew the Lunetius it can help to choose a slightly lighter weight fabric to make sewing easier on your hands.
+Voor de rest is wol of linnen in zowel effen als andere wevingen een goede keuze. Het gewicht van de stof hangt af van het klimaat en waarvoor je de mantel wilt gebruiken. Maar als je de Lunetius met de hand wilt naaien, kan het helpen om een iets lichtere stof te kiezen om het naaien gemakkelijker te maken voor je handen.
 
-If you are not working with any historicalness in mind Lunetius can be made out of a variety of fabrics. A woven fabric would drape in a different way compared to a stretch or knitted fabric but you are only limited by your imagination.
+Als je niet werkt vanuit een historisch oogpunt, kun je Lunetius van verschillende stoffen maken. Een geweven stof zou op een andere manier draperen dan een rekbare of gebreide stof, maar je wordt alleen beperkt door je fantasie.
 
-More information on Roman cloak fabrics can be found in:  
-Jorgensen, L. B. (2004)  _A Matter of Material: Changes in Textiles from Roman Sites in Egypt’s Eastern Desert_,  in An Tard 11, pp 87-99
+Weitere Informationen zu den Umhängen aus der Rentenzeit findest du in  
+Jorgensen, L. B. _(9 ihrer dies eingesetzten!apschutz by metal Changes in Textiles from Roman Sites in Egypt's Eastern Desert_, in An Tard 11, pp 87-99.

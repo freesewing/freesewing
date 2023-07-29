@@ -1,5 +1,5 @@
 ---
-title: "Neckline drop"
+title: "Ausschnitt Tiefe"
 ---
 
 ![Die Halslinie Drop Option auf Aaron](./necklinedrop.svg)

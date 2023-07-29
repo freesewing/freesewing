@@ -1,8 +1,8 @@
 ---
-title: The right of access
+title: Право на доступ
 order: 20
 ---
 
-You have the right to access your personal data.
+Ви маєте право на доступ до своїх персональних даних.
 
-Go to [/account](/account/) to do so.
+Для цього перейдіть за посиланням [/account](/account/) .

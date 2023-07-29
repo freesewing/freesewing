@@ -1,10 +1,8 @@
 import { back } from './back.mjs'
-import { pluginAnnotations } from '@freesewing/plugin-annotations'
 
 export const frontSideDart = {
   name: 'bella.frontSideDart',
   after: back,
-  plugins: [pluginAnnotations],
   draft: ({
     store,
     sa,

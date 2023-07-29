@@ -1,9 +1,9 @@
 ---
-title: Generating patterns
+title: Muster generieren
 ---
 
-Generating custom sewing patterns based on your measurments is the flagship feature of our website. We provide an online envrironment that allows you to customize various aspects of your pattern.
+Die Erstellung von individuellen Nähmustern auf der Grundlage deiner Maße ist das Aushängeschild unserer Website. Wir bieten eine Online-Umgebung, in der du verschiedene Aspekte deines Musters anpassen kannst.
 
-This environment provides a wide range of features, and on these pages we will explain all of them.
+Diese Umgebung bietet eine Vielzahl von Funktionen, die wir auf diesen Seiten erklären werden.
 
 <ReadMore />

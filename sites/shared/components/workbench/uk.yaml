@@ -1,0 +1,60 @@
+menu: Меню
+draft: Чернетка
+test: Тест
+printLayout: Макет для друку
+cutLayout: Макет розкрою
+save: Зберегти
+export: Експортувати
+edit: Редагувати
+reset: Змінити
+help: Допоможіть!
+name: Назва
+width: Ширина
+height: Висота
+length: Довжина
+topLeft: Вгорі ліворуч
+bottomRight: Внизу праворуч
+attributes: Атрибути
+showAllParts: Показати всі частини деталі
+showOnlyThisPart: Показати тільки цю частину деталі
+showMovableButtons: Кнопки
+partInfo: Інформація про деталь
+pathInfo: Інформація про шлях
+part: Деталь викрійки
+draftPattern: Ескіз шаблону
+testPattern: Тестовий зразок
+savePattern: Зберегти викрійку
+editSettings: Редагування конфігурації
+patternLogs: Журнали шаблонів
+patternInspector: Інспектор зразків
+docs: Документація
+configurePattern: Налаштувати шаблон
+measies: Вимірювання викрійки
+noDesignFound: Ми не змогли знайти цей дизайн. Цього не повинно статися, тому ми будемо дуже вдячні, якщо ви повідомите про це.
+saveYourPattern: Збережіть свій шаблон
+giveItAName: Дайте йому ім'я.
+changeMeasies: Вимірювання зміни шаблону
+editCurrentMeasies: Редагувати поточні вимірювання
+editCurrentMeasiesHeader: Edit Pattern Measurements
+editCurrentMeasiesDesc: Changes you make here will not be saved to your measurements sets, and will only affect this pattern.
+chooseNewSet: Виберіть новий набір вимірювань
+weLackSomeMeasies: Нам не вистачає { nr } вимірів для створення цього шаблону
+youCanPickOrEnter: Ви можете вибрати набір вимірів або ввести їх вручну, але без цих вимірів ми не зможемо продовжити роботу.
+measiesOk: У нас є всі необхідні виміри для створення цієї моделі.
+seeMissingMeasies: See missing measurements
+appliedMeasies: We applied a new measurements set to this pattern.
+exportForPrinting: Експортувати для друку
+exportForEditing: Експортувати для коригування
+exportAsData: Експорт даних
+exportPattern-txt: Експортувати PDF для Вашого принтера, або завантажити цю викрійку в інших форматах
+exportPattern: Експортувати викрійку
+testThis.option: Спробуйте цю опцію
+testThis.measurement: Перевірте це вимірювання
+measurements.d: Перевірте вплив вимірювання на вигляд цього шаблону
+designOptions.d: Перевірте вплив опції на вигляд цього шаблону
+testDesignThing: "Тест {design}: {thing}"
+yamlEditViewTitleThing: 'Редагувати конфігурацію шаблону для {thing}'
+yamlEditViewError: Проблеми з YAML
+yamlEditViewErrorDesc: Ми зберегли Ваш внесок, але він може не працювати з наступних причин
+saveSettings: Зберегти налаштування
+

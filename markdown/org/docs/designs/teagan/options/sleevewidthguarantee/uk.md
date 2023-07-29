@@ -1,9 +1,9 @@
 ---
-title: Sleeve width guarantee
+title: Гарантія ширини рукава
 ---
 
-Controls how much of the sleeve width will be guaranteed. This determines how much we can alter the sleeve width to fit the sleeve in the armhole.
+Контролює, яка частина ширини рукава буде гарантована. Це визначає, наскільки ми можемо змінити ширину рукава, щоб він входив у пройму.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_sleevewidthguarantee_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](teagan_sleevewidthguarantee_sample.svg "Вплив цієї опції на шаблон")

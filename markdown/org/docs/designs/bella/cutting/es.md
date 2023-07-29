@@ -1,17 +1,17 @@
 ---
-title: "Bella body block: Cutting Instructions"
+title: "Bloque de cuerpo Bella: Instrucciones de corte"
 ---
 
 **Tela principal**
 
-- Cut **1 Front** part on the fold.
+- Corta **1 Parte delantera** en el pliegue.
 - Corta **2 partes traseras**.
 
 Estas instrucciones de corte son sólo para el patrón básico de Bella por defecto. Si has hecho o estás haciendo cambios al patrón base, ajusta tu corte como corresponda.
 
 <Tip>
 
-If you do not have someone to help pin you into Bella then you may find it easier to Cut 2 Front parts with seam allowance and sew the backs up when constructing so you can pin in the front.
+Si no tienes a nadie que te ayude a sujetar con alfileres en Bella, puede que te resulte más fácil Cortar 2 partes delanteras con margen de costura y coser los reversos al construir para poder sujetar con alfileres la parte delantera.
 
 </Tip>
 

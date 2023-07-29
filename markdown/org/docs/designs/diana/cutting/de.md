@@ -1,5 +1,5 @@
 ---
-title: "Diana, das Wasserfallshirt: Zuschnitt"
+title: "Diana drapiertes Oberteil: Schnittanleitung"
 ---
 
 - Schneide **1 Rückenteil** im Stoffbruch

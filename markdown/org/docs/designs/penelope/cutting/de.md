@@ -1,35 +1,35 @@
 ---
-title: "Penelope pencil skirt: Cutting Instructions"
+title: "Penelope Bleistiftrock: Schnittanleitung"
 ---
 
 <Note>
 
-The number of back parts depends on whether you want a vent, or have moved the zipper to the back seam.  
-Either one of these options will require you to cut out two individual back parts. Otherwise the back is cut on the fold.  
-Due to this, the cutting list does not specify how many back parts to cut as the pattern options determine this.
+Die Anzahl der Rückenteile hängt davon ab, ob du einen Schlitz möchtest oder den Reißverschluss an die Rückennaht verlegt hast.  
+Bei beiden Optionen musst du zwei einzelne Rückenteile ausschneiden. Ansonsten wird die Rückseite am Falz geschnitten.  
+Deshalb wird in der Zuschnittliste nicht angegeben, wie viele Rückenteile geschnitten werden sollen, da dies durch die Schnittmusteroptionen bestimmt wird.
 
 </Note>
 
-**Main Fabric**
+**Hauptstoff**
 
-- Cut **1 front** part on fold.
-- Cut **back** part(s).
-- (Optional) Cut **1 waistband** parts on the fold.
+- Schneide **1 vorderen** Teil an der Falte ab.
+- Schneide **zurück** Teil(e).
+- (Optional) Schneide **1 Bund** Teile an der Falte ab.
 
-**Lining Fabric (Optional)**
+**Futterstoff (optional)**
 
-- Cut **1 front** part on fold.
-- Cut **back** part(s).
+- Schneide **1 vorderen** Teil an der Falte ab.
+- Schneide **zurück** Teil(e).
 
 <Note>
 
-[See Penelope Instructions](docs/patterns/penelope/instructions/#lining) to understand alterations to the front and back parts required for the lining.
+[Siehe Penelope-Anleitung](docs/patterns/penelope/instructions/#lining), um zu verstehen, welche Änderungen an den Vorder- und Rückenteilen für das Futter erforderlich sind.
 
 </Note>
 
-**Interfacing**
+**Einlage**
 
-- Cut **1 waistband** part on the fold.
+- Schneide **1 Bund** Teil an der Falte ab.
 
 <Tip>
 

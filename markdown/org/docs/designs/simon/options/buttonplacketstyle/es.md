@@ -1,5 +1,5 @@
 ---
-title: "Button placket style"
+title: "Estilo de la vista de los botones"
 ---
 
 ![Estilo de la vista de los botones](buttonplacketstyle.svg)
@@ -14,10 +14,10 @@ Sin fisuras es menos trabajo y se ve genial.
 
 <Note>
 
-As seamless is only possible on a _cut-on_ placket, this option is ignored if you choose a seperate button placket.
+Como la ausencia de costuras sólo es posible en una tapeta _cortada_, esta opción se ignora si eliges una tapeta de botones separada.
 
 </Note>
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_buttonplacketstyle_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_buttonplacketstyle_sample.svg "Efecto de esta opción en el patrón")

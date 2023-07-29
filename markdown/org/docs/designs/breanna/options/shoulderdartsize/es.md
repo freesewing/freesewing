@@ -1,9 +1,9 @@
 ---
-title: "Shoulder dart size"
+title: "Tamaño dart de hombro"
 ---
 
-The size of the back shoulder dart.
+El tamaño del dardo del hombro trasero.
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_shoulderdartsize_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](breanna_shoulderdartsize_sample.svg "Efecto de esta opción en el patrón")

@@ -1,10 +1,10 @@
 ---
-title: "Visor length"
+title: "Longitud de la visera"
 ---
 
 ***
 
-Controls the length of the visor
+Controla la longitud de la visera
 
 ## Efecto de esta opción en el patrón
 

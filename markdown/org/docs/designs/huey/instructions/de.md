@@ -1,145 +1,145 @@
 ---
-title: "Huey hoodie: Sewing Instructions"
+title: "Huey Hoodie: Anleitung zum Nähen"
 ---
 
 <Note>
 
-This pattern can be sewn with or with out a overlocker/serger. If not using a overlocker or serger you will have to _Finish_ the seams.
+Dieses Muster kann mit oder mit einem Overlocker/Serger genäht werden. Wenn du keine Overlockmaschine oder einen Serger verwendest, musst du die Nähte _nachbearbeiten_.
 
 </Note>
 
-### Step 1: Attaching the pockets
+### Schritt 1: Anbringen der Taschen
 
-- Press under seam allowance of top, curved and slanted edges.
-- _Topstitch_ or _Edgestitch_ the curved seam allowance in place. This will form the openings of the pockets.
-- Pin the pockets to the fronts using the guidelines and match raw edges.
-- Baste the raw edges of the pockets and fronts together.
-- _Topstitch_ or _Edgestitch_ the top and slanted edges of the pockets to the fronts leaving the curved edges open.
+- Bügle unter die Nahtzugabe der oberen, gebogenen und schrägen Kanten.
+- _Steppstich_ oder _Kantenstich_ die gebogene Nahtzugabe fest. So entstehen die Öffnungen für die Taschen.
+- Stecke die Taschen anhand der Hilfslinien an die Vorderseiten und passe die Schnittkanten an.
+- Hefte die Schnittkanten der Taschen und Vorderseiten zusammen.
+- _Steppstich_ oder _Kantenstich_ die oberen und schrägen Kanten der Taschen an den Vorderseiten und lässt die gebogenen Kanten offen.
 
-### Step 2: Making the Body
+### Schritt 2: Herstellung der Karosserie
 
-- With _good sides together_, sew the Fronts to the backs at the shoulder seams.
-- With _good sides together_, sew the sleeves to the front and back matching notches.
-- With _good sides together_, sew up the sleeves and side seams.
+- Lege _gut zusammen_und nähe die Vorderteile an den Schulternähten an die Rückenteile.
+- Lege _mit den guten Seiten zusammen_und nähe die Ärmel mit den passenden Kerben an Vorder- und Rückseite.
+- Lege _gut zusammen_und nähe die Ärmel und Seitennähte.
 
-### Step 3: Making drawstring holes (Optional)
+### Schritt 3: Löcher für die Kordel machen (optional)
 
-If you don't wish to add a drawstring you can skip to Step 4.
+Wenn du keinen Kordelzug hinzufügen möchtest, kannst du Schritt 4 überspringen.
 
-- Take one matching set of the Hood pieces, that you intend to feature on the outside of the finished hoodie.
-- Mark the place for a hole on each hood piece, along the inner curve.
-  - The hole should be about 1.5-2cm from the edge of the fabric. This is to keep your seam allowance out of the way.
-  - The hole should be located slightly up from the bottom of the inner curve. This is to keep it away from the front seams.
-- On the wrong side of the fabric, face where you are making the hole to stabilise the fabric.
-- Make a buttonhole at your mark either by hand or by your machine's method.
-- Alternatively construct or use eyelets at the mark.
+- Nimm ein passendes Set der Kapuzenteile, die du auf der Außenseite des fertigen Hoodies anbringen willst.
+- Markiere die Stelle für ein Loch auf jedem Verdeckteil, entlang der inneren Kurve.
+  - Das Loch sollte etwa 1,5-2 cm vom Rand des Stoffes entfernt sein. Dadurch wird deine Nahtzugabe aus dem Weg geräumt.
+  - Das Loch sollte sich etwas oberhalb der Unterseite der Innenkurve befinden. So hältst du sie von den vorderen Nähten fern.
+- Lege die linke Seite des Stoffes dorthin, wo du das Loch machst, um den Stoff zu stabilisieren.
+- Mache ein Knopfloch an deiner Markierung, entweder von Hand oder mit deiner Maschine.
+- Alternativ kannst du auch Ösen an der Markierung anbringen oder verwenden.
 
 <Tip>
 
-If you don't have or don't wish to use any interfacing you can use a scrap piece of sturdy fabric such as denim.
+Wenn du keine Einlage hast oder sie nicht verwenden möchtest, kannst du auch ein Stück robusten Stoff wie Jeansstoff verwenden.
 
 </Tip>
 
 <Note>
 
-The drawstrings will be threaded after the hoodie is constructed.
+Die Kordelzüge werden eingefädelt, wenn der Hoodie fertig ist.
 
 </Note>
 
-### Step 4: Prepping the hood
+### Schritt 4: Vorbereiten der Haube
 
-- With _good sides together_, matching sets, sew the hood pieces together along the outer curve edge.
-- With _good sides together_, matching seams, sew the inner hood to the outer hood along the inner curve edge.
-- Turn good sides out.
-- Baste the front and bottom raw edges together.
-- Create a casing for the drawstring by stitching about 2.5cm (1 inch) away from the inner edge on the side with the drawstring holes.
-- (Optionaly) If not using a drawstring, _Topstitch_ or _Edgestitch_ the inner curve.
+- Lege _mit den richtigen Seiten zusammen_und nähe die Kapuzenteile entlang der äußeren Kurvenkante zusammen.
+- Lege die _gut zusammen_und nähe die innere Kapuze entlang der inneren Kurvenkante an die äußere Kapuze.
+- Drehe die gute Seite nach außen.
+- Hefte die vorderen und unteren Schnittkanten zusammen.
+- Fertige eine Hülle für den Kordelzug an, indem du auf der Seite mit den Kordellöchern etwa 2,5 cm von der Innenkante entfernt nähst.
+- (Optional) Wenn du keinen Kordelzug verwendest, _Steppstich_ oder _Kantenstich_ die Innenkurve.
 
 <Note>
 
-When creating the casing or topstitching, make sure the inner curve seam is slightly inside of the hood to stop it from peaking out in the future.
-Alternatively if not using a drawstring you can _Understitch_ the inner curve seam.
+Achte darauf, dass die innere Kurvennaht etwas innerhalb der Kapuze liegt, damit sie in Zukunft nicht herausschaut.
+Wenn du keinen Kordelzug verwendest, kannst du auch die innere Kurvennaht _untersteppen_.
 
 </Note>
 
-### Step 5: Making a neckband (Optional)
+### Schritt 5: Anfertigen eines Halsbandes (optional)
 
-A neckband can be useful to stablise and cover the neck seams but it is optional if you wish to skip it.
+Ein Nackenband kann nützlich sein, um die Nackennähte zu stabilisieren und zu bedecken, aber es ist optional, wenn du es weglassen möchtest.
 
-- Cut a cross-wise strip of fabric out of your main fabric:
-  - Your neck opening + double your front seam allowance long
-  - Triple your neck seam allowance wide.
+- Schneide einen quer verlaufenden Stoffstreifen aus deinem Hauptstoff zu:
+  - Deine Halsöffnung + doppelte vordere Nahtzugabe lang
+  - Verdreifache die Breite deiner Halsnahtzugabe.
 
-### Step 6: Attaching the hood
+### Schritt 6: Anbringen der Haube
 
-- Pin the hood to the neck with outer hood matching _good side_ of neck.
-- If using, pin the neckband _good side_ to inner hood matching raw edges.
-- Sew the neckband seam.
-- _Finish_ seam if not using neckband then proceed to Step 7.
-- Press neckband down.
-- On outside _Topstitch_ neckband in place.
-- On inside, trim neckband down to topstitching.
+- Befestige die Kapuze am Hals, wobei die äußere Kapuze mit der guten Seite __ des Halses übereinstimmt.
+- Wenn du es verwendest, stecke das Nackenband _gute Seite_ an die Innenkapuze, so dass die Schnittkanten übereinstimmen.
+- Nähen Sie die Halsbandnaht.
+- _Beende die_ Naht, wenn du kein Nackenband verwendest, und fahre mit Schritt 7 fort.
+- Drücke das Nackenband nach unten.
+- Auf der Außenseite _absteppen_ Nackenband anbringen.
+- Schneide das Nackenband auf der Innenseite bis zur Steppnaht zurück.
 
-### Step 7: Attaching the waistband
+### Schritt 7: Anbringen des Bunds
 
-- Fold the waistband in half lengthwise matching wrong sides. Press.
-- With _good sides_ together sew the waistband to the bottom of the back and front.
-- Press the seam allowance up.
-- _Topstitch_ or _Edgestitch_ waistband seam allowance to the body.
+- Falte den Bund der Länge nach in die Hälfte, so dass die falschen Seiten aufeinandertreffen. Presse.
+- Nähen Sie den Bund an der Unterseite des Rückens und der Vorderseite zusammen, wobei die guten Seiten von __ aufeinandertreffen.
+- Bügle die Nahtzugabe nach oben.
+- _Steppstich_ oder _Kantenstich_ Bundnahtzugabe zum Körper.
 
-### Step 8: Attching the cuffs
+### Schritt 8: Anbringen der Manschetten
 
-- With _good sides together_ sew the short egdes of the cuffs together to create two bands.
-- Press open the seam allowances.
-- (Optional) _Edgestitch_ the seam allowances down.
-- Fold the cuffs in half lengthwise matching wrong sides. Press.
-- Matching seams and raw edges, pin the cuffs to the sleeves _good sides together_.
-- Sew the cuffs to the sleeves.
-- Press the seam allowances up.
-- _Topstitch_ or _Edgestitch_ cuffs seam allowances to the sleeves.
+- Lege _mit der guten Seite nach oben_ und nähe die kurzen Seiten der Manschetten zusammen, so dass zwei Bänder entstehen.
+- Bügle die Nahtzugaben auf.
+- (Optional) _Randstich_ die Nahtzugaben nach unten.
+- Falte die Manschetten der Länge nach in der Mitte, so dass sie an den falschen Seiten anliegen. Presse.
+- Stecke die Manschetten an den Ärmeln fest, so dass die Nähte und Schnittkanten übereinstimmen. __.
+- Nähen Sie die Bündchen an die Ärmel.
+- Bügle die Nahtzugaben nach oben.
+- _Steppstich_ oder _Kantenstich_ Manschetten Nahtzugaben an den Ärmeln.
 
-### Step 9: The zipper
+### Schritt 9: Der Reißverschluss
 
-- If need be, face the front edges of the hoodie.
-- Unzip the zipper part way.
-- Fold the top of the zipper tape down to the _good side_ of the zipper tape. Trim if need be.
-- Pin the zipper along one of the front edges of the hood, front and waistband. Making sure the zipper pull is faced the _good sides_ of the hoodie and the bottoms are lined up. The zipper teeth should just be slightly over the seam line with the edge of the tape either matching or being slightly over from the hoodie edge.
-- Using a zipper foot stitch the zipper to the hoodie using you seam allownace width. When you reach the zipper pull, stop, put your needle down, lift the presser foot, pull the zipper pull past the presser foot, lower the presser foot. Then you can continue sewing the seam.
-- Unzip the zipper.
-- Pin and sew the unattached zipper tape to the other side of the hoodie the same way.
-- Press the seams to the inside being careful not to melt the zipper teeth with your iron.
-- _Topstitch_ the zipper tapes in place. You may need to use a zipper foot.
+- Wenn nötig, wende die Vorderkanten des Hoodies an.
+- Öffne den Reißverschluss ein Stück weit.
+- Falte die Oberseite des Reißverschlussbandes nach unten auf die _gute Seite_ des Reißverschlussbandes. Trimme, wenn nötig.
+- Stecke den Reißverschluss entlang einer der vorderen Kanten der Kapuze, der Vorderseite und des Bunds fest. Vergewissere dich, dass der Reißverschlusszug auf die _guten Seiten_ des Hoodies zeigt und die Unterseiten aufeinander liegen. Die Reißverschlusszähne sollten knapp über der Nahtlinie liegen, wobei die Kante des Bandes entweder mit der Kapuzenkante übereinstimmen oder leicht darüber liegen sollte.
+- Verwende einen Reißverschlussfuß, um den Reißverschluss mit der Breite deiner Naht an den Hoodie zu nähen. Wenn du den Reißverschlusszug erreichst, hältst du an, legst deine Nadel ab, hebst den Nähfuß an, ziehst den Reißverschlusszug am Nähfuß vorbei und senkst den Nähfuß. Dann kannst du mit dem Nähen der Naht fortfahren.
+- Öffne den Reißverschluss.
+- Stecke und nähe das nicht befestigte Reißverschlussband auf die gleiche Weise an die andere Seite des Hoodies.
+- Bügle die Nähte nach innen und achte darauf, dass du die Reißverschlusszähne nicht mit deinem Bügeleisen zum Schmelzen bringst.
+- _Steppstich_ die Reißverschlussbänder fest. Möglicherweise musst du einen Reißverschlussfuß verwenden.
 
 <Tip>
 
-To help match the pockets and seams, when it is attached to one side and temporarily mark the corresponding teeth at the pockets and seam. You can now use these marks to align the zipper to the pocket and seams on the other side.
+Um das Anpassen der Taschen und Nähte zu erleichtern, markierst du beim Anbringen auf einer Seite vorübergehend die entsprechenden Zähne an den Taschen und der Naht. Anhand dieser Markierungen kannst du nun den Reißverschluss an der Tasche und den Nähten auf der anderen Seite ausrichten.
 
 </Tip>
 
 <Note>
 
-You only need to face your fabric if it is very stretchy or needs a bit more stability.
+Du musst deinen Stoff nur bearbeiten, wenn er sehr dehnbar ist oder etwas mehr Stabilität braucht.
 
 </Note>
 
-### Step 10: Thread the drawstring
+### Schritt 10: Einfädeln des Kordelzugs
 
-- Thread the drawing string through the drawstring holes.
-- If needed secure the ends of the drawstring e.g. with something like aglets.
+- Fädle die Zugschnur durch die Löcher der Zugschnur.
+- Falls nötig, kannst du die Enden des Kordelzugs z.B. mit Ösen sichern.
 
 <Tip>
 
-Use a safety pin to help thread the drawstring.
+Verwende eine Sicherheitsnadel, um den Kordelzug einzufädeln.
 
 </Tip>
 
-### Step 11: Enjoy!
+### Schritt 11: Viel Spaß mit deinem neuen Shirt!
 
-- That's it! Your all done! Now go feel warm and comfy in your new hoodie!
+- Das war's! Du bist fertig! Jetzt geh und fühl dich warm und gemütlich in deinem neuen Hoodie!
 
 <Note>
 
-This patterns was featured in [issue 27 of HackSpace magazine](https://hackspace.raspberrypi.org/issues/27),
-the article includes instructions too, so you may want to have a look at it.
+Dieses Muster wurde in der [Ausgabe 27 des HackSpace Magazine](https://hackspace.raspberrypi. rg/issues/27),
+der Artikel enthält auch Anweisungen, so dass Sie vielleicht einen Blick darauf werfen möchten.
 
 </Note>

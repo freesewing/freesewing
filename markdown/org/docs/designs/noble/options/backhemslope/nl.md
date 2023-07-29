@@ -1,11 +1,11 @@
 ---
-title: "Back hem slope"
+title: "Lope zoom achter"
 ---
 
 ***
 
-The **back hem slope** option controls the slope of the hem at the back.
+De **omhelzing** optie bepaalt de richtingscoëfficiënt van de zoom achteraan.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_backhemslope_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](noble_backhemslope_sample.svg "Effect van deze optie op het patroon")

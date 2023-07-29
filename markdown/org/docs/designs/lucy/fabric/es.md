@@ -2,21 +2,21 @@
 title: "Lucy: Fabric"
 ---
 
-Because pockets were worn by people in every layer of society historically what they were made out of varied intensely. Some were made out of sturdy and plain fabrics, marked with the owners initials. Others were made out of lavish silks or richly embroidered.
+Históricamente, los bolsillos los llevaban personas de todos los estratos de la sociedad, por lo que su material variaba mucho. Algunas estaban hechas de telas resistentes y lisas, marcadas con las iniciales de los dueños. Otras estaban confeccionadas con suntuosas sedas o ricamente bordadas.
 
-As such when it comes to fabric options the world is your oyster.
+Por eso, cuando se trata de opciones de tejidos, el mundo es tu ostra.
 
-- Modern prints make fun modern pockets
-- Use a plain cotton or linen for a more historical option
-- Have a lot of scraps? Make a patchwork pocket!
-- Pockets were often a first embroidery project, so go wild if you want to
+- Los estampados modernos hacen divertidos los bolsillos modernos
+- Utiliza un algodón liso o lino para una opción más histórica
+- ¿Tienes muchos restos? ¡Haz un bolsillo de patchwork!
+- Los bolsillos eran a menudo un primer proyecto de bordado, así que atrévete si quieres
 
-The one thing to keep in mind is how stable your fabric is. If it is not very stable or you think it won’t hold very much weight, you can add a lining.
+Lo único que debes tener en cuenta es la estabilidad de tu tejido. Si no es muy estable o crees que no aguantará mucho peso, puedes añadirle un forro.
 
-Additionally, if you are handsewing your pocket it is worth picking a fabric that isn’t too thick or heavy.
+Además, si vas a coser a mano el bolsillo, merece la pena elegir un tejido que no sea demasiado grueso o pesado.
 
-Your binding doesn’t have to be the same colour as the main fabric either. You can use it to add a fun accent, or make your pocket fancier. Bias binding curves easier around any curves, but you can just as easily use strips of fabric as a more waste conscious option.
+Tampoco es necesario que el ribete sea del mismo color que la tela principal. Puedes utilizarlo para añadir un acento divertido, o para hacer más elegante tu bolsillo. La encuadernación al bies se curva más fácilmente alrededor de cualquier curva, pero también puedes utilizar tiras de tela como opción más respetuosa con los residuos.
 
-The ties can be made from self fabric, or you can use something like a twill tape instead.
+Los lazos pueden ser de tela propia, o en su lugar puedes utilizar algo como una cinta de sarga.
 
-As always, whether you want to stick to historical practices or make something modern is entirely up to you!
+Como siempre, si quieres ceñirte a las prácticas históricas o hacer algo moderno, ¡depende totalmente de ti!

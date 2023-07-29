@@ -10,12 +10,29 @@ export const cup = {
   after: neckTie,
   measurements: ['bustPointToUnderbust'],
   options: {
+    //Bee's
     topDepth: { pct: 54, min: 50, max: 80, menu: 'fit' },
     bottomCupDepth: { pct: 8, min: 0, max: 20, menu: 'fit' },
     sideDepth: { pct: 20.6, min: 0, max: 30, menu: 'fit' },
     sideCurve: { pct: 0, min: -50, max: 50, menu: 'fit' },
     frontCurve: { pct: 0, min: -50, max: 50, menu: 'fit' },
     bellaGuide: { bool: false, menu: 'fit' },
+    //changed from Bella
+    backArmholeCurvature: 0.63,
+    backArmholePitchDepth: 0.35,
+    backArmholeSlant: 5,
+    frontArmholeCurvature: 0.63,
+    bustDartCurve: 1,
+    bustDartLength: 1,
+    waistDartLength: 1,
+    backHemSlope: 2.5,
+    backNeckCutout: 0.06,
+    //catergory changed from Bella
+    armholeDepth: { pct: 44, min: 38, max: 46, menu: 'advanced.bellaArmhole' },
+    frontArmholePitchDepth: { pct: 29, max: 31, min: 27, menu: 'advanced.bellaArmhole' },
+    backDartHeight: { pct: 46, min: 38, max: 54, menu: 'advanced.bellaDarts' },
+    frontShoulderWidth: { pct: 95, max: 98, min: 92, menu: 'advanced.bellaAdvanced' },
+    highBustWidth: { pct: 86, max: 92, min: 80, menu: 'advanced.bellaAdvanced' },
   },
   draft: ({
     store,

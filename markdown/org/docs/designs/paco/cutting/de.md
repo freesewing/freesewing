@@ -1,12 +1,12 @@
 ---
-title: "Paco pants: Cutting Instructions"
+title: "Paco Hosen: Schnittanleitung"
 ---
 
 <Tip>
 
-###### Cut out only what you need
+###### ausschneiden Sie nur das, was Sie brauchen
 
-Depending on the choices you made in your pattern, you may not need all parts.
+Abhängig von den Entscheidungen, die Sie in Ihrem Muster getroffen haben, können Sie nicht alle Teile benötigen.
 Wenn ein Musterteil nicht gedruckt wird, bedeutet das, dass Sie es nicht benötigen.
 
 </Tip>
@@ -27,8 +27,8 @@ Wenn ein Musterteil nicht gedruckt wird, bedeutet das, dass Sie es nicht benöti
 
 #### Caveats
 
-- There is no seam allowance on the interfacing
-- There is extra seam allowance on the waist band and hem
-- The waistband is a mere rectangle, so it's not fully printed to save paper
+- Es gibt keine Nahtzugabe auf der Einlage
+- Es gibt eine zusätzliche Nahtzugabe auf dem Taillenband und dem Saum
+- Das Taillenband ist ein einfaches Rechteck, daher wird es nicht vollständig bedruckt, um Papier zu sparen
 
 </Warning>

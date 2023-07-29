@@ -1,17 +1,17 @@
 ---
-title: "Titan trouser block: Fabric Options"
+title: "Titan-Hosenblock: Stoff Optionen"
 ---
 
-If you are making a default Titan to see how it fits we recommend a fabric such as **Calico (Muslin)** or a cheaper fabric that matches the drape and stretch of the fabric you intend to make a finalised version of Titan with.
+Wenn du einen Standard-Titan anfertigst, um zu sehen, wie er passt, empfehlen wir einen Stoff wie **Calico (Muslin)** oder einen billigeren Stoff, der dem Faltenwurf und der Dehnbarkeit des Stoffes entspricht, aus dem du die endgültige Version des Titans anfertigen willst.
 
-You can use scraps of fabrics from your stash so don't worry about buying fabric specifically for Titan.
+Du kannst Stoffreste aus deinem Vorrat verwenden, du musst also nicht extra Stoff für Titan kaufen.
 
 <Note>
 
 ###### Titan ist ein Grundschnitt, kein Schnittmuster
 
 Ein Grundschnitt ist eine Grundform, auf der andere Schnittmuster basieren.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
 
 Grundschnitte werden in der Regel nicht so gemacht, wie sie sind, sondern dienen als Grundlage für andere Schnittmuster.
 

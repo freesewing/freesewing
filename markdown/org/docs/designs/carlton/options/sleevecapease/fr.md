@@ -1,10 +1,10 @@
 ---
-title: "Sleevecap ease"
+title: "Aisance tête de manche"
 ---
 
-![Sleevecap ease](./sleevecapease.svg)
+![Aisance tête de manche](./sleevecapease.svg)
 
-How much sleevecap ease do you want?
+Combien d'aisance aux têtes de manches voulez-vous ?
 
 > #### ###### Pour quoi faire ?
 > 
@@ -16,4 +16,4 @@ How much sleevecap ease do you want?
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlton_sleevecapease_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlton_sleevecapease_sample.svg "Effet de cette option sur le motif")

@@ -11,25 +11,20 @@ translating FreeSewing into other languages.
 
 ## Supported Languages
 
-We currently support the following five languages:
+FreeSewing is currently available in the following languages:
 
-- **en** : English <small>(This is our source language and the working language
-  of the FreeSewing project)</small>
-- **de** : German
-- **es** : Spanish
-- **fr** : French
-- **nl** : Dutch
+| Code | Language       | Website |
+| ----:|:-------------- |:------- |
+| `de` | **German**     | https://de.freesewing.org/ |
+| `en` | **English**    | https://en.freesewing.org/ |
+| `es` | **Spanish**    | https://es.freesewing.org/ |
+| `fr` | **French**     | https://fr.freesewing.org/ |
+| `nl` | **Dutch**      | https://nl.freesewing.org/ |
+| `uk` | **Ukranian**   | https://uk.freesewing.org/ |
 
-## Incubator Languages
-
-For the following languages, our community has started an effort, but that
-effort has not yet reached the level of maturity that to make it a supported
-language.
-
-In other words, **these are the languages where we are most in need of extra
-translators**:
-
-- **uk** : Ukranian
+<Note compact>
+English is the translation source language and the working language of the FreeSewing project
+</Note>
 
 ## Become a FreeSewing translator
 
@@ -53,7 +48,7 @@ Discord](https://discord.freesewing.org) for any questions that may remain.
 
 ## Adding a new language
 
-We would love to make FreeSewing available in more langauges.  If you are
+We would love to make FreeSewing available in more langauges. If you are
 interested in starting a new translation effort, that is great.
 
 We ask that you familiarize yourself with this translation guide to understand
@@ -62,7 +57,7 @@ a new language with the link below.
 
 <Link compact>
 
-###### [Request to setup a new FreeSewing language](https://next.freesewing.org/translation/add-language)
+###### [Suggest a new FreeSewing language](https://next.freesewing.org/translation/suggest-language)
 </Link>
 
 <Fixme compact>
@@ -110,12 +105,12 @@ The status of the ongoing translation work is available at
 It's a good place to check what languages need extra help, and which are
 leading the scoreboard.
 
-## Content types and translation priorities
+## Translation priorities
 
 To fully translate FreeSewing, the following types of content needs to be
 translated:
 
-**Top priority: UX Translations**   
+### Top priority: UX Translations
 These are translations the directly impact
 the user experience (_UX_).  They include the content used in design, the names
 of options, translations of menus, emails, and so on.
@@ -124,29 +119,36 @@ This is a relatively small amount of text, and makes up less than 10% of the
 top & high priority content.  It's an effort that a motivated translator can
 complete over the course of a weekend.
 
-**High priority: Translation of Documenation**   
+<Tip>
+The top-priority translations in Crowdin are everything under the `packages`
+and `sites` folder. Do this first.
+</Tip>
+
+### High priority: Translation of Documenation
 This includes all the documentation on FreeSewing.org.
 
-This is a significant amount of text that makes up more than 90% of hte top *
+This is a significant amount of text that makes up more than 90% of the top &
 high priority content.  It's an effort you should probably not take on by
 yourself, but rather tackle with a team of translators.
 
-**Low Priority: Content of blog and showcase posts**  
+<Tip>
+The high-priory translations in Crowdin is everything under the
+`markdown/org/docs` folder.
+</Tip>
+
+### Low Priority: Content of blog and showcase posts, and newsletters
 This is _nice to have_ as people can use and navigate FreeSewing even when this
 content remains untranslated.
 
-Still, if you are considering translating this content, you might want to
-consider the following priorities within this categors:
-
-- First: Showcases posts. Not only do they typically have less text, their
-  value is also less tied to how recent they are
-- Then: Blog posts. Start with the most recent onces. How older a blog post
-  gets, the less relevant it becomes
+<Tip>
+The low-priory translations in Crowdin is everything under the
+`markdown/org/blog`, `markdown/org/showcase`, and `markdown/org/newsletter` folders.
+</Tip>
 
 ## Translation through Crowdin
 
-All of our top-priority and high-priority translation work is handled through
-[Crowdin](https://crowdin.com/), an online platform to facilitate translation.
+All of our translation work is handled through [Crowdin](https://crowdin.com/), 
+an online platform to facilitate translation.
 
 <Tip compact>
 
@@ -170,61 +172,21 @@ request on GitHub to update the translation files in our repository. And the
 next time our website or software packages get build, they will include the new
 translations.
 
-<Note>
+## Machine translation
 
-##### Priorities of translations in Crowdin
+While everybody knows that translation is best when it's done by a human being, 
+we also have to be realistic that the growing body of documentation and other 
+FreeSewing content can be a daunting task to take on for translators, especially
+when you want to start a new language.
 
-- The top-priority translations in Crowdin are everything under the `packages`
-  and `sites` folder. Do this first.
-- The high-priory translations in Crowdin is everything under the `markdown`
-  folder.
+Furtunately, machine translation has gotten rather good so we can get some help.
+Our Crowdin project is integrated with a [DeepL](https://www.deepl.com) 
+subscription, and this can be a great help to translators.
 
-</Note>
-
-## Translation through Sanity
-
-Sanity ([sanity.io](https://sanity.io/)) is a so-called _headless content
-management system (CMS)_.  "_Headless_" just means that we load the content
-from it via an API, rather than have it be part of our website like a classic
-CMS (eg. Wordpress).
-
-In Sanity, we keep our blog and showcases posts for freesewing.org.
-In other words, **Sanity only holds the low priority translation work**.
-
-<Tip compact>
-
-You can reach the FreeSewing project on Crowdin directly via
-[translate.freesewing.org](https://translate.freesewing.org).
-</Tip>
-
-<Note>
-
-##### Why we don use Crowdin for blog/showcase translations
-
-Crowdin enforces a strict one-to-one match between the English source material
-and the translation.
-
-This strict correlation is important for the UX and documenation transaltions.
-People expect a menu to have the same structure in all languages, and when we
-refer to the documentation we need to ensure that those links works for all
-languages, which requires that all languages use the same structure, the same
-amount of headings, paragraphs, and so on.
-
-Sanity supports different language versions for posts, but it does not enforce
-any structure on them.  A translated blog post could have more or less
-paragraphs, different images, you name it.
-
-This additional freedom is why we use Sanity for these types of content. We lik
-to encourage the non-English FreeSewing communities to make FreeSewing their
-own, by writing blog posts that are relevant or specific to them, or
-translating blog posts not merely word-for-word, but making them relevent to
-their language group.
-
-This also means that English does not have to be the source language in Sanity.
-Somebody could write a French blog post (for example) which can then be
-translated to English.
-
-</Note>
+You can use the DeepL suggestions when translating, or there is also the possibility
+to machine-translate entire files or folders. For example, you may start a new 
+language by machine-translating everything, and then focus on proofreading the
+top-priority content, and then move on to the high-priority content.
 
 ## Syntax
 

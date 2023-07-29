@@ -1,11 +1,11 @@
 ---
-title: "Huey hoodie: What You Need"
+title: "Huey hoodie: Wat je nodig hebt"
 ---
 
-To make Huey, you will need the following:
+Om Huey te maken heb je het volgende nodig:
 
-- Basic sewing supplies
-- About 2 metres (2.2 yards) of a suitable fabric ([see Fabric options](/docs/patterns/huey/fabric))
-- Ribbing fabric for the hem and cuffs.
-- 1 open ended zipper the length of front seam including hood and waistband.
-- (Optional) Cording or suitable alternate for hood strings.
+- Basis naaimateriaal
+- Ongeveer 2 meter van een geschikte stof ([zie Stofopties](/docs/patterns/huey/fabric))
+- Boordstof voor de zoom en manchetten.
+- 1 open ritssluiting over de lengte van de voornaad, inclusief capuchon en tailleband.
+- (Optioneel) Koord of geschikt alternatief voor kapsnoeren.

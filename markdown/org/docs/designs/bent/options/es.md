@@ -1,5 +1,5 @@
 ---
-title: "Bent body Block: Design Options"
+title: "Cuerpo doblado Bloque: Opciones de diseño"
 ---
 
 <PatternOptions pattern='bent' />

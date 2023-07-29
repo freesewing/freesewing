@@ -1,14 +1,14 @@
 ---
-title: "Lapel reduction"
+title: "Réduction de revers"
 ---
 
-How much the tip of the lapels turns inwards.
+Combien la pointe des revers se réduit vers l'intérieur.
 
-It is common to have the edge of the lapels not be entirely straight, but rather turn inwards a bit towards the top of the lapels. This option controls by how much it does that.
+Il est courant que le bord des revers ne soit pas tout à fait droit, mais qu'il se tourne un peu vers l'intérieur, vers le haut des revers. Cette option contrôle dans quelle mesure elle fait cela.
 
-- Increase this option to shift the lapel tip inward
-- Decrease this option to shift the lapel tip outward
+- Augmente cette option pour décaler la pointe du revers vers l'intérieur.
+- Diminue cette option pour décaler la pointe du revers vers l'extérieur.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_lapelreduction_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_lapelreduction_sample.svg "Effet de cette option sur le motif")

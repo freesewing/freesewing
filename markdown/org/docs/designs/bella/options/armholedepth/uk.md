@@ -1,13 +1,13 @@
 ---
-title: "Armhole depth"
+title: "Глибина пройми"
 ---
 
 ***
 
-![The effect of the armhole depth option on the pattern](sample.png)
+![Вплив параметра глибини пройми на лекало](sample.png)
 
-The **armhole depth** option controls the depth of the armhole.
+Параметр **глибина пройми** регулює глибину пройми.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_armholedepth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bella_armholedepth_sample.svg "Вплив цієї опції на шаблон")

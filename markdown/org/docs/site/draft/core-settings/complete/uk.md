@@ -1,10 +1,10 @@
 ---
-title: Pattern Details
+title: Деталі викрійки
 ---
 
 <Fixme> 
 
-This setting is likely to be revised prior to the release of v3
+Цей параметр, ймовірно, буде переглянуто перед випуском v3
 
 </Fixme>
 

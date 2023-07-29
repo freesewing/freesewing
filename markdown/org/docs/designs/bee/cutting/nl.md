@@ -1,43 +1,43 @@
 ---
-title: "Bee bikini top: Cutting Instructions"
+title: "Bikinitopje bijen: Knip instructies"
 ---
 
-There are three variations of this pattern. **One Colour**, which is where the bikini top is made out of one colour. **Two Colours**, where the bikini top is made reversible by using two colours, and **Cross Back Tie Variant**, where the neck ties tie in the back replacing the band tie.
+Er zijn drie variaties van dit patroon. **One Colour**, waarbij het bikinitopje uit één kleur bestaat. **Two Colours**, waarbij het bikinitopje omkeerbaar is gemaakt door twee kleuren te gebruiken, en **Cross Back Tie Variant**, waarbij de nekbandjes op de rug knopen in plaats van de bandstrik.
 
 ## Materialen
 
-### One Colour (Non-Reversible)
+### Eén kleur (niet omkeerbaar)
 
 **Buitenstof**
 
-- Cut **4 cup** parts.
-- Cut **2 neck tie** parts.
-- Cut **1 band tie** part.
+- Snijd **4 cup** delen.
+- Snijd **2 nekdas** delen.
+- Knip **1 band das** deel.
 
-### Two Colours (Reversible)
+### Twee kleuren (omkeerbaar)
 
 **Buitenstof**
 
-- Cut **2 cup** parts from main.
-- Cut **2 neck tie** parts.
-- Cut **1 band tie** part.
+- Snijd **2 kopjes** delen van hoofd.
+- Snijd **2 nekdas** delen.
+- Knip **1 band das** deel.
 
 **Voering**
 
-- Cut **2 cup** parts.
-- Cut **2 neck tie** parts.
-- Cut **1 band tie** part.
+- Snijd **2 kopje** delen.
+- Snijd **2 nekdas** delen.
+- Knip **1 band das** deel.
 
-### Cross Back Tie Variant.
+### Kruisband Variant.
 
 **Buitenstof**
 
-- Cut **4 cup** parts or Cut **2 cups** from main and lining if making reversible ties.
-- Cut **2 neck tie** parts or Cut **2 neck ties** from main and lining if making reversible ties.
-- Cut **1 band** part if making cross back tie variant instead of band tie variant.
+- Snijd **4 kopjes** delen of snijd **2 kopjes** van hoofd- en voering als je omkeerbare dassen maakt.
+- Knip **2 stropdassen** delen of knip **2 stropdassen** van hoofd- en voering als je omkeerbare stropdassen maakt.
+- Knip **1 deel van de band** af als je een kruislingse bandrugvariant maakt in plaats van een bandrugvariant.
 
 <Note>
 
-This pattern is easily made reversible by buying a similar fabric to the main fabric and using it as contrast. To save confusion on instructions it will be refered to as the lining fabric.
+Dit patroon is gemakkelijk omkeerbaar te maken door een stof te kopen die lijkt op de hoofdstof en die als contrast te gebruiken. Om verwarring in de instructies te voorkomen wordt hiernaar verwezen als de voeringstof.
 
 </Note>

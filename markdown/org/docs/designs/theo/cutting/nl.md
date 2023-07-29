@@ -1,5 +1,5 @@
 ---
-title: "Theo trousers: Cutting Instructions"
+title: "Theo broek: Knip instructies"
 ---
 
 - **Buitenstof**
@@ -28,11 +28,11 @@ title: "Theo trousers: Cutting Instructions"
 
 ###### Caveats
 
-- The **front lining** is cut from the **front** part on your draft, down to the line just below the knee
-- Pay attention to the grainline on the **fly piece**, **fly shield**, and **side piece**
-- There are two variations of the front pocket bag. You need to cut out two of each:
-  - Cut two of the complete piece
-  - Cut two with only extending up to the dashed line at the left
-- The **back inner pocket bag** and **back outer pocket bag** are very similar. Zorg dat je ze correct markeert zodat je ze niet verwart.
+- De **frontvoering** wordt gesneden vanaf het **voorste** deel op je ontwerp, tot aan de lijn net onder de knie
+- Let op de nerflijn op het **vliegstuk**, **vliegschild** en **zijstuk**
+- Er zijn twee varianten van de frontpocketzak. Je moet er van elk twee uitknippen:
+  - Knip er twee uit het volledige stuk
+  - Knip er twee uit die alleen doorlopen tot de stippellijn aan de linkerkant
+- De **binnenzak** en **buitenzak** lijken erg op elkaar. Zorg dat je ze correct markeert zodat je ze niet verwart.
 
 </Warning>

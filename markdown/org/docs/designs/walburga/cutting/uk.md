@@ -1,24 +1,24 @@
 ---
-title: "Walburga Wappenrock: Cutting Instructions"
+title: "Вальбурга Ваппенрок: Інструкція з різання"
 ---
 
-Walburga consists of two parts, a _front_ and a _back_ piece.
+Вальбурга складається з двох частин, _передньої_ і _задньої_ частини.
 
 <Tip>
 
-Apart from the cutout for the neck opening, front and back are identical. It is therefore enough to print only the front part.
+За винятком вирізу для горловини, перед і спинка ідентичні. Тому достатньо надрукувати лише лицьову частину.
 
 </Tip>
 
-- cut _1 front_, _on the fold_
-- cut _1 back_, _on the fold_
+- вирізати _1 лицьовий_, _на згині_
+- вирізати _1 спинку_, _на згині_
 
-### On Historical Accuracy
+### Про історичну достовірність
 
-The further we go back in time, the less extant garments we have to base research on. Often there may be scraps of fabric left behind by stroke of luck but most of our information starts to come from (in archaeology) secondary sources like written texts from contemporaries.
+Чим далі в минуле, тим менше вцілілого одягу ми маємо для дослідження. Часто, завдяки щасливому випадку, можна знайти клаптики тканини, але більшість інформації ми отримуємо з вторинних джерел (в археології), наприклад, письмових текстів сучасників.
 
-This is especially true for the Roman and Mediaeval eras, not to mention that a lot of the available research is behind a paywall.
+Особливо це стосується римської та середньовічної епох, не кажучи вже про те, що багато наявних досліджень знаходяться в закритому доступі.
 
-We can’t be 100 percent historically accurate, because we’re living in a different time, and everything we use to sew is different now from before. Even fabric is woven in a different way.
+Ми не можемо бути на 100% історично точними, тому що ми живемо в інший час, і все, що ми використовуємо для шиття, зараз відрізняється від того, що було раніше. Навіть тканина виткана по-іншому.
 
-How ‘accurate’ you want to be is up to you, there is no wrong way to do this and research is not required -- though it can be fun!
+Наскільки "точними" ви хочете бути, залежить від вас, немає неправильного способу зробити це, і дослідження не є обов'язковим - хоча це може бути весело!

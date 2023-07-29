@@ -1,9 +1,9 @@
 ---
-title: "Chest pocket angle"
+title: "Brusttaschenwinkel"
 ---
 
-Controls the slant of the chest pocket.
+Steuert die Schrägheit der Brusttasche.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlita_chestpocketangle_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](carlita_chestpocketangle_sample.svg "Effekt dieser Option auf das Schnittmuster")

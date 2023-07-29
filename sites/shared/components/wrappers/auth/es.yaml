@@ -1,0 +1,20 @@
+authRequired: Autenticación necesaria
+membersOnly: This functionality requires a FreeSewing account.
+signUp: Inscríbete
+signIn: Regístrate
+statusUnknown: Advertencia sobre el estado de la cuenta
+statusUnknownMsg: El estado de tu cuenta nos prohíbe procesar tus datos. Ponte en contacto con el servicio de asistencia.
+consentLacking: Falta de consentimiento
+consentLackingMsg: No tenemos tu consentimiento para procesar tus datos. Sin consentimiento, no tenemos base legal para procesar tus datos.
+accountProhibited: Tu cuenta ha sido desactivada
+accountProhibitedMsg: Tu cuenta ha sido desactivada administrativamente.
+accountDisabled: Cuenta desactivada
+accountDisabledMsg: No puedes volver a activar una cuenta desactivada. Tienes que ponerte en contacto con el servicio de asistencia para solucionarlo.
+accountInactive: Tu cuenta está inactiva
+accountInactiveMsg: Debes activar tu cuenta mediante el enlace de registro que te enviamos.
+signupAgain: Si no encuentras el enlace, puedes recibir uno nuevo registrándote de nuevo.
+cannotUse: No se puede utilizar una cuenta desactivada.
+contactSupport: Contactar con asistencia
+reviewConsent: Revisa tu consentimiento
+roleLacking: No tienes el rol necesario para acceder a este contenido
+roleLackingMsg: Este contenido requiere el rol <b>{ requiredRole }</b> . Tu rol es <b>{ role }</b> , lo que no te da acceso a este contenido.

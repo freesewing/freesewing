@@ -1,5 +1,5 @@
 ---
-title: "Shin swim trunks: Design Options"
+title: "Maillot de bain Shin : Options de conception"
 ---
 
 <PatternOptions pattern='shin' />

@@ -1,5 +1,5 @@
 ---
-titre: "Gilet Aaron : Instructions de coupe"
+title: "Gilet Wahid Instructions de coupe"
 ---
 
 - **Tissu principal**

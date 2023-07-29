@@ -1,15 +1,15 @@
 ---
-title: Edgestitching
+title: Вишивання краєвидами
 ---
 
-Edgestitching is a speficic type of _topstitching_. It is specific because of its location. To edgestitch means to topstitch right next to a seam, typically about 3mm or 1/8 inch next to it.
+Кант - це специфічний вид вишивання _верхнім швом_. Він специфічний через своє розташування. Краєобметочна строчка - це верхня строчка поруч зі швом, зазвичай близько 3 мм або 1/8 дюйма поруч з ним.
 
-![Edgestitching on a FreeSewing Hugo Hoodie](edgestitching.jpg)
+![Вишивання стібком на худі Hugo від FreeSewing](edgestitching.jpg)
 
 Edgestitching can be used to reinforce seams, to keep material in place by sewing down seam allowance or lining, and for decorative effect.
 
 <Tip>
 
-For best results, use a sewing needle for optimized for topstitching
+Для досягнення найкращих результатів використовуйте швейну голку, оптимізовану для виконання верхньої строчки
 
 </Tip>

@@ -1,5 +1,5 @@
 ---
-title: "Майка Аарон: Необхідні вимірювання"
+title: "Футболка Aaron A-Shirt: Необхідні мірки"
 ---
 
 <PatternMeasurements pattern='aaron' />

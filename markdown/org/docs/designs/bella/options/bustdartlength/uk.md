@@ -1,13 +1,13 @@
 ---
-title: "Bust dart length"
+title: "Довжина виточки на грудях"
 ---
 
 ***
 
-![The effect of the bust dart length option on the pattern](sample.png)
+![Вплив довжини нагрудної виточки на викрійку](sample.png)
 
-The **bust dart length** option controls the length of the bust dart. The maximum length brings the dart all the way to the bust apex.
+Параметр **довжина виточки на грудях** регулює довжину виточки на грудях. Максимальна довжина доводить виточку до самого верху бюста.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_bustdartlength_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bella_bustdartlength_sample.svg "Вплив цієї опції на шаблон")

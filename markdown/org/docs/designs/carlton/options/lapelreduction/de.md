@@ -1,11 +1,11 @@
 ---
-title: "Lapel reduction"
+title: "Reversverkleinerung"
 ---
 
-Controls how much the lapel tip goes inwards.
+Legt fest, wie sehr die Lappenspitze nach innen geht.
 
-It is common to have the edge of the lapels not be entirely straight, but rather turn inwards a bit towards the top of the lapels. This option controls by how much it does that.
+Es ist üblich, dass die Kante des Revers nicht ganz gerade ist, sondern ein wenig nach innen zum oberen Ende des Revers hin gebogen ist. Diese Option kontrolliert, wie viel sie das tut.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_lapelreduction_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](carlton_lapelreduction_sample.svg "Effekt dieser Option auf das Schnittmuster")

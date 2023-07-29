@@ -1,10 +1,10 @@
 ---
-title: "Front curve"
+title: "Bocht voorkant"
 ---
 
 ***
 
-Controls the curvature of the front of the bikini cup
+Regelt de kromming van de voorkant van de bikinicup
 
 ## Effect van deze optie op het patroon
 

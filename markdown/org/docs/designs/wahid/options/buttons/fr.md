@@ -6,6 +6,6 @@ title: "Nombre de boutons"
 
 Combien de boutons voulez-vous ?
 
-## Effet de cette option sur le patron
+## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_buttons_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_buttons_sample.svg "Effet de cette option sur le motif")

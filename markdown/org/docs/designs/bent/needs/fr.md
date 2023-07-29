@@ -1,19 +1,19 @@
 ---
-title: "Bent body Block: What You Need"
+title: "Bloc de corps plié : Ce dont tu as besoin"
 ---
 
-To make Bent, you will need the following:
+Pour fabriquer Bent, tu auras besoin des éléments suivants :
 
 - Fourniture de base pour la couture
-- About 1.5 - 2 metres (1.7 - 2.2 yards) of a suitable fabric ([see Bent Fabric options](/docs/patterns/bent/fabric/))
+- Environ 1,5 à 2 mètres d'un tissu approprié ([voir Bent Fabric options](/docs/patterns/bent/fabric/)).
 
-This list is for a default Bent Block. Si vous avez apporté des modifications au bloc, vous devrez peut-être vous procurer des éléments supplémentaires tels que des fermetures, des reliures, etc.
+Cette liste s'applique à un bloc Bent par défaut. Si vous avez apporté des modifications au bloc, vous devrez peut-être vous procurer des éléments supplémentaires tels que des fermetures, des reliures, etc.
 
 <Note>
 
-###### Bent is a block, not a pattern
+###### Bent est un bloc, pas un motif
 
-A block is a basic shape on which other patterns are based.
+Un bloc est une forme de base sur laquelle se basent d'autres motifs.
 Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
 
 Les patrons de base ne sont donc généralement pas utilisés tels quels, mais plutôt pour élaborer d'autres modèles.

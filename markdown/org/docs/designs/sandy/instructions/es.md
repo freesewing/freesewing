@@ -1,126 +1,126 @@
 ---
-title: "Sandy circle skirt: Sewing Instructions"
+title: "Falda circular Sandy: Instrucciones de costura"
 ---
 
 <Warning>
 
-Due to the different styles and configurations of Sandy you may find you need to skip or re-order certain steps.
-We're not going to go into a full explanation on how to create all the individual details that make up a circle skirt. These instructions assume that you know how to sew a zipper, construct pockets, etc. If not, there are numerous excellent articles available on the web, both in writen form, and on video. If you do get stuck, you can always reach out to [other FreeSewers](https://discord.freesewing.org/) in our discord.
+Debido a los diferentes estilos y configuraciones de Sandy, puede que necesites saltarte o reordenar ciertos pasos.
+No vamos a entrar en una explicación completa sobre cómo crear todos los detalles individuales que componen una falda circular. Estas instrucciones presuponen que sabes coser una cremallera, construir bolsillos, etc. Si no, hay numerosos artículos excelentes disponibles en la web, tanto escritos como en vídeo. Si te quedas atascado, siempre puedes ponerte en contacto con [otros FreeSewers](https://discord.freesewing.org/) en nuestro discord.
 
 </Warning>
 
 <Note>
 
-Due to seamless and closure Sandy's needing different constructions we have separated their instructions.
+Debido a que las Sandy sin costuras y de cierre necesitan construcciones diferentes, hemos separado sus instrucciones.
 
 </Note>
 
-## Step 1: Prepping the Skirt
+## Paso 1: Preparar la falda
 
-- If including a closure, sew the skirt seam  _good sides together_ up to where you intend the opening to start.
-- Add Pockets if using.
-- If using lining, prep the same as the skirt.
-- _Finish_ seams if not lining.
+- Si incluyes un cierre, cose la costura de la falda  _con los lados bien juntos_ hasta donde pretendas que empiece la abertura.
+- Añade Bolsillos si los usas.
+- Si utilizas forro, prepáralo igual que la falda.
+- _Termina las costuras de_ si no estás forrando.
 
 <Note>
 
-Pockets are not included in Sandy as it has one seam by default or no seams at all.
+Los bolsillos no están incluidos en Sandy, ya que tiene una costura por defecto o ninguna.
 
-If you would like inseam pockets you can cut the skirt pattern piece into multiple pieces rather than a single one to create seams to insert them into. Cutting it into thirds (for default) or two (for seamless) will give you two sideseams for two inseam pockets, just don't forget to add back seam allowance to the cut lines if including.
+Si quieres bolsillos en la entrepierna, puedes cortar la pieza del patrón de la falda en varias piezas en lugar de una sola para crear costuras en las que insertarlos. Si lo cortas en tercios (por defecto) o en dos (sin costuras), obtendrás dos costuras laterales para dos bolsillos interiores, pero no olvides añadir el margen de costura posterior a las líneas de corte si las incluyes.
 
-If you do not wish to create additional seams but still wish to have pockets, you can use Patch Pockets or if you are feeling adventurous, you can use Welt Pockets.
+Si no deseas crear costuras adicionales pero quieres tener bolsillos, puedes utilizar Bolsillos de Parche o, si te sientes aventurero, puedes utilizar Bolsillos de Faldón.
 
 </Note>
 
-## Step 2: Prep the opening
+## Paso 2: Prepara el hueco
 
-- Insert zipper or placket into opening if using.
-- If not using, press the openings seam allowance to the inside and _Edgestitch_/_Topstitch_ in place. You may also wish to continue the topstitching down the seam.
+- Inserta la cremallera o la tapeta en la abertura, si la utilizas.
+- Si no lo utilizas, presiona el margen de costura de las aberturas hacia el interior y _Puntada de remate_/_Puntada de remate_ en su sitio. También puedes continuar el pespunte por la costura.
 
 <Note>
 
-Skip this step if:
-- You are including the zipper in the waistband.
-- You are making a seamless version.
+Omite este paso si
+- Incluyes la cremallera en la cintura.
+- Estás haciendo una versión sin fisuras.
 
 </Note>
 
-## Step 3: Lining
+## Paso 3: Forrar
 
-- (Optional) Interline the skirt with a stiffer or stronger fabric.
-- Attach Lining to skirt at hem and opening by your preferred method.
-- _Baste_ Lining to skirt at waist.
-- Gather the waist if needed.
+- (Opcional) Entretela la falda con un tejido más rígido o resistente.
+- Une el forro a la falda por el dobladillo y la abertura con el método que prefieras.
+- _Hilvana_ Forro a la falda en la cintura.
+- Recoge la cintura si es necesario.
 
-## Step 4: The waistband
+## Paso 4: La cintura
 
-### Closures
+### Cierres
 
-- Interface/stiffen half the waistband part lengthwise. Or interface/stiffen one of the curved waistband parts.
-- Press under the seam allowance on the long edge of the waistband that is not interfaced. Trim. _Baste_ the fold in place if needed.
-- With _good sides together_ sew the interfaced waistband/side of the waistband to the skirt. Gather the skirt down to the waistband if needed.
-- If using the curved waistband sew the non-interfaced part to the interfaced part. Trim and clip seam and press the non-interfaced part up and away from the skirt.
+- Interfiere/endurece la mitad de la parte de la cintura a lo largo. O intercala/endurece una de las partes curvadas de la cintura.
+- Plancha por debajo del margen de costura del borde largo de la cintura que no está entretela. Recorte. _Hilvana_ el pliegue en su sitio si es necesario.
+- Con _los lados bien juntos_ cose la entretela/lateral de la cintura a la falda. Si es necesario, frunce la falda hasta la cintura.
+- Si utilizas la cintura curva, cose la parte no entrelazada a la parte entrelazada. Recorta y recorta la costura y presiona la parte no entrecruzada hacia arriba y lejos de la falda.
 
-There will be some overhangs:
+Habrá algunos voladizos:
 
-- The side you wish not to overlap should be overhang by your seam allowance.
-- The side intended to overlap will have a greater overhang.
-- If using a placket, both sides will overhang by your seam allowance.
-- If using a zipper in the waistband the greater overhang will need to be trimmed to the seam allowance.
+- El lado que no deseas solapar debe sobresalir por tu margen de costura.
+- El lado destinado a solaparse tendrá un saliente mayor.
+- Si utilizas una tapeta, ambos lados sobresaldrán por el margen de costura.
+- Si utilizas una cremallera en la cintura, el saliente mayor deberá recortarse hasta el margen de costura.
 
-__Inserting Zipper in Waistband__
-- If inserting a zipper into the waistband now is the time to do so, attach the zipper from the waistband fold line down. Or from seam-line down for curved waistband.
-- _Slipstitch_ or _Whipstitch_ the lining to the zipper at this point if you have not treated the lining and skirt as one at the opening.
-- Press under overhangs.
-- Press the waistband _wrong sides together_ along fold-line. Or along seam-line for curved waistband.
-- Slipstitch_ or _Whipstitch_ the overhang edges to the zipper.
-- _Edgestitch_ the waistband in place.
-- Alternatively, _Slipstitch_ or _Whipstitch_ the waistband in place on the inside.
+__Insertar la cremallera en la cintura__
+- Si vas a insertar una cremallera en la cintura, ahora es el momento de hacerlo; coloca la cremallera desde la línea de pliegue de la cintura hacia abajo. O desde la línea de costura hacia abajo para la cintura curva.
+- _Punto elástico_ o _Punto elástico_ el forro a la cremallera en este punto si no has tratado el forro y la falda como uno solo en la abertura.
+- Presiona bajo los voladizos.
+- Presiona la cintura _con los lados equivocados juntos_ a lo largo de la línea de pliegue. O a lo largo de la línea de costura para una cintura curvada.
+- Haz punto deslizante_ o _Punto elástico_ los bordes salientes a la cremallera.
+- _Haz un pespunte_ para fijar la cintura.
+- Alternativamente, _Puntada de deslizamiento_ o _Puntada de cadeneta_ la cintura en su sitio por el interior.
 
-__Other closures__
-- Press the waistband _good sides together_ along fold-line. Or along seam-line for curved waistband.
-- Sew the overhangs with your seam allowance.
-- Turn the waistband out and to the inside, Press.
-- _Egdestitch_ the waistband in place, this should also close the gap of the over-lap.
-- Alternatively, _Slipstich_ or _Whipstitch_ the waistband in place on the inside and close the gap of the over-lap with _Slipstiching_.
-- Add snaps, dress hooks or button and buttonhole, whatever is your preferred closure to the waistband overhang.
+__Otros cierres__
+- Presiona la cintura _con los lados bien juntos_ a lo largo de la línea de pliegue. O a lo largo de la línea de costura para una cintura curvada.
+- Cose los salientes con tu margen de costura.
+- Gira la cintura hacia fuera y hacia el interior, Presiona.
+- _Egdestitch_ la cintura en su lugar, esto también debe cerrar la brecha de la superposición.
+- Como alternativa, _Haz punto deslizado_ o _Haz punto elástico_ en la parte interior de la cintura y cierra el hueco de la superposición con _Punto deslizado_.
+- Añade broches de presión, ganchos de vestir o botón y ojal, el cierre que prefieras para el saliente de la cintura.
 
-### Seamless
+### Sin fisuras
 
-- If curved waistband with _good sides together_ sew the two waistbands together along the shortest curved edge. Press away from one another, Trim and clip the seam.
-- With _good sides together_ sew the waistband together along the short seams, leaving a gap for the elastic that will be on the inside.
-- Press under the seam allowance on the long edge of the waistband that is intended to be on the inside.
-- With _good sides together_ attach the waistband to the skirt along the unpressed seam. Trim seam.
-- Press waistband and seam allowance up away from skirt.
-- Press the waistband to the inside along the fold-line/seam-line.
-- _Edgestitch_ the waistband in place.
-- Alternatively you can _Slipstitch_ or _Whipstitch_ the waistband in place on the inside.
-- Cut the elastic to your waist.
-- Thread the elastic through the opening of the waistband making sure not to lose the end.
-- Overlap the ends of the elastic by 1cm (3/8 inch) and zig-zag stitch in place.
-- Tuck elastic into waistband and close the opening with hand-sewing.
+- Si la cintura es curva, con _los lados buenos juntos_ cose las dos cinturas juntas a lo largo del borde curvo más corto. Prénsalos, recórtalos y recorta la costura.
+- Con _los lados bien juntos_ cose la cintura a lo largo de las costuras cortas, dejando un hueco para el elástico que irá en el interior.
+- Plancha por debajo del margen de costura del borde largo de la cintura que va por dentro.
+- Con _los lados bien juntos_ une la cintura a la falda a lo largo de la costura sin apretar. Recorta la costura.
+- Presiona la cintura y el margen de costura hacia arriba, alejándolos de la falda.
+- Presiona la cintura hacia el interior a lo largo de la línea de pliegue/costura.
+- _Haz un pespunte_ para fijar la cintura.
+- Alternativamente, puedes _Puntada de deslizamiento_ o _Puntada de listón_ la cintura en su sitio por el interior.
+- Corta el elástico a la medida de tu cintura.
+- Pasa el elástico por la abertura de la cintura asegurándote de no perder el extremo.
+- Solapa los extremos del elástico 1 cm (3/8 pulgadas) y cóselos en zig-zag.
+- Introduce el elástico en la cintura y cierra la abertura con una costura a mano.
 
-## Step 5: Hemming
+## Paso 5: Dobladillo
 
-If you have hemmed the skirt with the lining you can skip this step.
+Si has hecho el dobladillo de la falda con el forro, puedes saltarte este paso.
 
-Hem the skirt in one of the following ways:
-- Omit the hem allowance and bind the raw edge.
-- Bind the raw edge of the hem allowance, single fold the hem under and either _Topstitch_ or hand sew the hem in place.
-- Double fold the hem under and either _Topstitch_ or hand sew the hem in place. You may have heard this be called a Rolled hem.
+Haz el dobladillo de la falda de una de las siguientes maneras:
+- Omite el margen del dobladillo y ata el borde sin rematar.
+- Encuaderna el borde sin rematar del margen del dobladillo, dobla el dobladillo por debajo y cose el dobladillo en su sitio con _Topstitch_ o a mano.
+- Dobla el dobladillo por debajo y, o bien _Topstitch_ o cose a mano el dobladillo en su sitio. Puede que hayas oído llamarlo dobladillo enrollado.
 
 <Note>
 
-There are many ways to hem/face the bottom of a skirt, If you have a prefered method use it here.
+Hay muchas formas de hacer el dobladillo/recubrir el bajo de una falda, si tienes un método preferido utilízalo aquí.
 
 </Note>
 
-## Step 6: Enjoy!
+## Paso 6: ¡Disfrútalo!
 
-You are all done! Now go enjoy your wonderful new skirt and try not to get too dizzy showing off it's fullness!
+¡Ya está! ¡Ahora ve a disfrutar de tu maravillosa falda nueva e intenta no marearte demasiado mostrando su plenitud!
 
 <Note>
 
-These instructions are just a suggestion, there are many ways to construct a circle skirt so feel free to deviate or completely disregard. If you need help, you can always reach out to [other FreeSewers](https://discord.freesewing.org/) in our discord.
+Estas instrucciones son sólo una sugerencia, hay muchas formas de construir una falda circular, así que siéntete libre de desviarte o hacer caso omiso por completo. Si necesitas ayuda, siempre puedes ponerte en contacto con [otros FreeSewers](https://discord.freesewing.org/) en nuestro discord.
 
 </Note>

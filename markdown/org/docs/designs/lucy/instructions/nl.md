@@ -4,33 +4,33 @@ title: "Lucy: Instructions"
 
 <Note>
 
-Lucy can be sewn by hand or by machine as you prefer. When sewing by hand, you can use a running stitch to sew the pocket pieces together and bind with a whipstitch. 
+Lucy kan naar keuze met de hand of met de machine worden genaaid. Als je met de hand naait, kun je een rijgsteek gebruiken om de zakdelen aan elkaar te naaien en af te binden met een zweepsteek. 
 
 </Note>
 
-## Step 1: Constructing the Pocket
+## Stap 1: De zak maken
 
-- Bind the pocket slit.
-- With _wrong sides together_ stitch the two pocket pieces together around the outside.
-- Bind the outside edge.
+- Bind de split van de zak af.
+- Met _met de verkeerde kanten op elkaar_ naai je de twee zakdelen langs de buitenkant aan elkaar.
+- Bind de buitenrand af.
 
 <Note>
 
-If you prefer you can _french seam_ the outer edges of the pocket bag together.
+Als je wilt, kun je de buitenranden van de zak aan elkaar _french seam_ naaien.
 
 </Note>
 
 ## bind the top and thread a tie through the binding
 
-There are two methods for binding the top edge. One leaves the side edges of the top binding open so the ties can be threaded through. The second uses the tape for the ties to bind the top edge. Read through both methods carefully and decide which one you wish to use.
+Er zijn twee methoden om de bovenrand in te binden. De ene laat de zijkanten van de bovenbinding open, zodat de stropdassen erdoorheen kunnen worden geregen. De tweede gebruikt de tape voor de bandjes om de bovenrand te binden. Lees beide methoden zorgvuldig door en beslis welke je wilt gebruiken.
 
-### Using binding
+### Bindend gebruiken
 
-- Cut a piece of binding the length of the top edge + seam allowance.
-- Fold under the short edges of the binging and stitch in place.
-- Bind the top edge of the pocket bag with the prepared binding making sure that the folded ends are left open.
-- Thread a tie through the binding.
-- Finish the tie ends.
+- Knip een stuk bies in de lengte van de bovenrand + naadtoeslag.
+- Vouw de korte randen van de biezen om en naai vast.
+- Bind de bovenrand van de zak met de voorbereide binding en zorg ervoor dat de gevouwen uiteinden open blijven.
+- Rijg een stropdas door de binding.
+- Werk de uiteinden van de stropdassen af.
 
 <Tip>
 
@@ -38,12 +38,12 @@ use a piece of tape as binding and tie, sewing it down to the top and leaving th
 
 </Tip>
 
-### Bind with the ties
+### Binden met de stropdassen
 
-- Use a piece of tape as binding and tie, attach the pocket bag to the centre of the tape.
-- Bind the top edge of the pocket bag whilst leaving the remainder of tape free.
-- Finish the tape ends.
+- Gebruik een stuk plakband als bindband en knoop het zakje vast in het midden van het plakband.
+- Bind de bovenrand van de zak af en laat de rest van het plakband vrij.
+- Werk de uiteinden van de tape af.
 
-## Step 3: Enjoy!
+## Stap 3: Geniet!
 
-That's it! You're all done! Now go stuff your new pockets to the brim!
+Dat is het! Je bent allemaal klaar! Ga nu je nieuwe zakken tot de rand vullen!

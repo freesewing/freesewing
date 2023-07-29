@@ -1,9 +1,9 @@
 ---
-title: "Size"
+title: "Розмір"
 ---
 
-Hi can be made in different sizes. The default is about a meter in length. This is a percentage of this default length.
+Hi може бути виготовлений у різних розмірах. За замовчуванням довжина становить близько метра. Це відсоток від цієї довжини за замовчуванням.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](hi_size_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](hi_size_sample.svg "Вплив цієї опції на шаблон")

@@ -1,26 +1,26 @@
 ---
-title: "Octoplushy, the plushy octopus: What You Need"
+title: "Octoplushy, плюшевий восьминіг: Що вам потрібно"
 ---
 
-To make Octoplushy, you will need the following:
+Щоб зробити Octoplushy, вам знадобиться наступне:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 1 meter (1.1 yards) of a suitable fabric (Upper body) ([see Octoplushy Fabric options](/docs/patterns/octoplushy/fabric/))
-- About 0.75 meters (0.85 yards) of a suitable fabric (Belly) ([see Octoplushy Fabric options](/docs/patterns/octoplushy/fabric/))
-- Either 2 buttons or a small piece of suitable unraveling, fabric for the eyes of the Octoplushy version
-- Small piece of black fabric for the pupils of the Squid and Octopus versions
-- Small piece of white fabric for the eyes of the Squid and Octopus versions
-- (Optional) Topstitch or Embroidery thread for the mouth of the Octoplushy version
-- Stuffing
+- [Базові матеріали для шиття](/docs/sewing/basic-sewing-supplies)
+- Приблизно 1 метр (1,1 ярда) відповідної тканини (верхня частина тіла) ([див. варіанти тканини Octoplushy](/docs/patterns/octoplushy/fabric/))
+- Приблизно 0,75 метра (0,85 ярдів) відповідної тканини (Belly) ([див. варіанти тканини Octoplushy](/docs/patterns/octoplushy/fabric/))
+- Або 2 ґудзики, або невеликий шматочок відповідної тканини для очей у версії Octoplushy
+- Невеликий шматочок чорної тканини для зіниць версій "Кальмар" і "Восьминіг
+- Невеликий шматочок білої тканини для очей у версіях "Кальмар" і "Восьминіг
+- (За бажанням) Нитка для вишивання для рота версії Octoplushy
+- Начинка
 
 <Note>
 
-This list is based on a default Octoplushy and you may need less or more fabric dependant on the [size you are making Octoplushy](/docs/patterns/octoplushy/options/size/). 
+Цей список базується на стандартному Octoplushy, і вам може знадобитися менше або більше тканини, залежно від [розміру Octoplushy, який ви робите] (/docs/patterns/octoplushy/options/size/). 
 
-The amount of fabric required is also dependant on the [type of Octoplushy you are making](/docs/patterns/octoplushy/options/type/).
-- The Octopus version requires about 50% more fabric than the Octoplushy version.
-- The Squid version requires about 75% more fabric than the Octoplushy version.
+Кількість необхідної тканини також залежить від [типу Octoplushy, який ви робите] (/docs/patterns/octoplushy/options/type/).
+- Версія Octopus потребує приблизно на 50% більше тканини, ніж версія Octoplushy.
+- Версія Squid потребує приблизно на 75% більше тканини, ніж версія Octoplushy.
 
-The color of the pupils and eyes for the Squid and Octopus versions are up to you, but for clarification and simplicity the pupils will be referred to as black and the eyes will be referred to as white in the documentation.
+Колір зіниць та очей для версій "Кальмар" та "Восьминіг" ви можете вибрати самостійно, але для ясності та простоти в документації зіниці будуть позначатися чорним кольором, а очі - білим.
 
 </Note>

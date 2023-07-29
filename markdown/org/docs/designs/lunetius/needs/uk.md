@@ -1,9 +1,9 @@
 ---
-title: "Lunetius Lacerna: What You Need"
+title: "Лунецій Лацерна: що вам потрібно"
 ---
 
-To make Lunetius, you will need the following:
+Щоб зробити Лунетіус, вам знадобиться наступне:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 2 meters (2.2 yards) of a suitable fabric (see [Fabric options](/docs/patterns/lunetius/fabric))
-- (a _fibula_ (brooch, pin, clasp) to wear and close it)
+- [Базові матеріали для шиття](/docs/sewing/basic-sewing-supplies)
+- Близько 2 метрів (2,2 ярда) відповідної тканини (див. [варіанти тканини](/docs/patterns/lunetius/fabric))
+- (фібула __ (брошка, шпилька, застібка), щоб носити і закривати її)

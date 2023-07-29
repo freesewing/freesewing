@@ -1,9 +1,9 @@
 ---
-titre : "Surlongueur de longueur de manche"
+title: "Bonus de longueur de manche"
 ---
 
-This option controls how long to lengthen the sleeves by.
+Cette option permet de contrôler la longueur de l'allongement des manches.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](hugo_sleevelengthbonus_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](hugo_sleevelengthbonus_sample.svg "Effet de cette option sur le motif")

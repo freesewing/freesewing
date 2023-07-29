@@ -7,9 +7,9 @@ image: gitpod/workspace-node:latest
 tasks:
   - name: Freesewing Lab
     before: |
-      nvm install lts/gallium
-      nvm use lts/gallium
-    command: yarn kickstart && yarn lab
+      nvm install lts/hydrogen
+      nvm use lts/hydrogen
+    command: yarn tips
 
 github:
   prebuilds:

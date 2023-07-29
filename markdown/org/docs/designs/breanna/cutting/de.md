@@ -1,18 +1,18 @@
 ---
-title: "Breanna body block: Cutting Instructions"
+title: "Breanna Körperblock: Anleitung zum Schneiden"
 ---
 
-**Main fabric**
+**Oberstoff**
 
 - Schneide **1 Vorderteil** im Stoffbruch.
 - Schneide **2 Rückteile**.
 - Schneide **2 Ärmel** mit _guten Seiten zusammen_.
 
-These cutting instructions are just for the default Breanna block. Adjust your cutting accordingly if you have/are making changes to the block.
+Diese Anleitung ist nur für den Breanna-Grundschnitt mit Standardeinstellungen. Passe deinen Zuschnitt entsprechend an, falls du Änderungen am Grundschnitt vornimmst.
 
 <Tip>
 
-If you do not have someone to help pin you into Breanna then you may find it easier to Cut 2 Front parts with seam allowance and sew the backs up when constructing so you can pin in the front.
+Wenn du niemanden hast, der dir beim Anstecken der Breanna hilft, ist es vielleicht einfacher, 2 Vorderteile mit Nahtzugabe zuzuschneiden und die Rückseiten beim Konstruieren zusammenzunähen, damit du die Vorderseite anstecken kannst.
 
 </Tip>
 

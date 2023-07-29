@@ -1,33 +1,33 @@
 ---
-title: "Tiberius Tunica: Sewing Instructions"
+title: "Tiberius Tunica: Naai-instructies"
 ---
 
 <Note>
 
-Tiberius is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. Jullie doen jullie.
+Tiberius is een historisch geïnspireerd patroon en als je meer authenticiteit wilt, moet je met de hand naaien. Persoonlijk gebruik ik een naaimachine. Jullie doen jullie.
 
 </Note>
 
-### Step 1: Sew shoulder seams
+### Stap 1: Schoudernaden naaien
 
-- Put both parts with good sides together. Sew the shoulder seams, taking care to stop at the notches for the head opening.
-- Finish the seams, with a method of your choice. (If you used the fabrics recommended in the [fabric options](/docs/patterns/tiberius/fabric), they _will_ fray. Folding the seam allowance twice, enclosing the raw edge and topstitching is an option. You can also use decorative topstitching.)
+- Leg beide delen met de goede kanten op elkaar. Naai de schoudernaden en stop bij de inkepingen voor de hoofdopening.
+- Werk de naden af met een methode naar keuze. (Als je de stoffen hebt gebruikt die worden aanbevolen in de [stofopties](/docs/patterns/tiberius/fabric), _zullen ze_gaan rafelen. De naadtoeslag twee keer vouwen, de kniprand insluiten en doorstikken is een optie. Je kunt ook decoratieve doorstiksels gebruiken).
 
 <Note>
 
-If you opted for cutting the whole tunica out of one piece, carefully cut out the head opening between the notches instead. Finish the opening.
+Als je ervoor hebt gekozen om de hele tunica uit één stuk te knippen, knip dan voorzichtig de hoofdopening tussen de inkepingen uit. Maak de opening af.
 
 </Note>
 
-### Step 2: Sew side seams
+### Stap 2: Zijnaden naaien
 
-- Still with good sides together, sew the side seams. Start at the notch for the armhole and work your way down. Take care to align your layers properly.
-- Finish seams.
+- Naai de zijnaden met de goede kanten op elkaar. Begin bij de inkeping voor het armsgat en werk naar beneden. Zorg ervoor dat je lagen goed uitgelijnd zijn.
+- Naden afwerken.
 
-### Step 3: Hem the bottom edge
+### Stap 3: De onderste rand omzomen
 
-Hem the bottom of your garment. If you want to use decorative stitches, this is another place to use them.
+Zoom de onderkant van je kledingstuk. Als je decoratieve steken wilt gebruiken, is dit een andere plek om ze te gebruiken.
 
-### Step 4: You're done!
+### Stap 4: Je bent klaar!
 
-Pull on your tunica, belt it around your waist, play around with how you gather the fabric, and enjoy!
+Trek je tunica aan, riem hem om je middel, speel met hoe je de stof rimpelt en geniet!

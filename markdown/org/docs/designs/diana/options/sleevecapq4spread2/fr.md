@@ -1,10 +1,10 @@
 ---
-title: "Sleevecap Q4 downward spread"
+title: "Tête de manche abaissement Q4"
 ---
 
-![Le décalage descendant du quatrième quadrant de la tête de manche](./sleevecapq4spread2.svg)
+![La propagation vers le bas dans le quatrième quadrant de la tête de manche](./sleevecapq4spread2.svg)
 
-Cette option contrôle le décalage descendant du quatrième quadrant de la tête de manche.
+Cette option permet de contrôler la propagation vers le bas dans le quatrième quadrant de la tête de manche.
 
 <Tip>
 
@@ -14,4 +14,4 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](diana_sleevecapq4spread2_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](diana_sleevecapq4spread2_sample.svg "Effet de cette option sur le motif")

@@ -1,5 +1,5 @@
 ---
-title: "Wahid waistcoat"
+title: "Wahid, die Weste"
 ---
 
 <PatternDocs pattern='wahid' />

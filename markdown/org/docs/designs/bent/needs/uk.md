@@ -1,21 +1,21 @@
 ---
-title: "Bent body Block: What You Need"
+title: "Блок зігнутого тіла: Що вам потрібно"
 ---
 
-To make Bent, you will need the following:
+Щоб зробити Бента, вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 1.5 - 2 metres (1.7 - 2.2 yards) of a suitable fabric ([see Bent Fabric options](/docs/patterns/bent/fabric/))
+- Базові матеріали для шиття
+- Приблизно 1,5 - 2 метри (1,7 - 2,2 ярда) відповідної тканини ([див. варіанти гнутої тканини](/docs/patterns/bent/fabric/))
 
-This list is for a default Bent Block. If you have/are making changes to the block you may need to get additional items such as closures, binding etc.
+Цей список для стандартного гнутого блоку. Якщо ви вносили/вносите зміни до блоку, вам можуть знадобитися додаткові елементи, такі як закриття, прив'язка тощо.
 
 <Note>
 
-###### Bent is a block, not a pattern
+###### Бент - це блок, а не візерунок
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Блок - це базова форма, на якій базуються інші візерунки.
+Іноді їх ще називають слоуперами, хоча пуристи заперечать, що блок і слоупер - це різні речі.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Блоки, як правило, не створюються як такі, а слугують основою для інших візерунків.
 
 </Note>

@@ -1,9 +1,9 @@
 ---
-title: Shoulder to Shoulder ease
+title: Легкість від плеча до плеча
 ---
 
-Controls the amount of ease between your shoulders. Initially set to -.5% because Bella implements a block that is used in the industry.
+Контролює кількість вільного простору між плечима. Спочатку встановлено на -.5%, оскільки Bella реалізує блок, який використовується в індустрії.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_shouldertoshoulderease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bella_shouldertoshoulderease_sample.svg "Вплив цієї опції на шаблон")

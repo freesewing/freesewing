@@ -5,6 +5,8 @@
  */
 export const authors = {
   joostdecock: { id: 0, name: 'Joost De Cock' },
+  'Prof. dr. Sorcha Ní Dhubhghaill': { id: 0, name: 'Prof. dr. Sorcha Ní Dhubhghaill' },
+  mocked: { id: 0, name: 'Unknown (mocked in dev)' },
   benjamesben: { id: 0, name: 'Benjamin' },
   nikhil: { id: 0, name: 'nikhil' },
   jackseye: { id: 0, name: 'jackseye' },
@@ -30,7 +32,7 @@ export const authors = {
   Natalia: { id: 0, name: 'Natalia Sayang' },
   chri5b: { id: 0, name: 'chri5b' },
   tangerineshark: { id: 0, name: 'tangerineshark' },
-  'MA-TATAS': { id: 0, name: 'MA-TATAS' },
+  'bekivo@gmail.com': { id: 0, name: 'Ivo Bek' },
 }
 
 /*
@@ -46,4 +48,5 @@ export const gitToAuthor = {
   'bobgeorgethe3rd@googlemail.com': 'bobgeorgethe3rd',
   '70777269+tangerineshark@users.noreply.github.com': 'tangerineshark',
   'thijs.assies@gmail.com': 'MA-TATAS',
+  'Natalia Sayang': 'Natalia',
 }

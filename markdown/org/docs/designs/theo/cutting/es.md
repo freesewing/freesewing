@@ -1,5 +1,5 @@
 ---
-title: "Theo trousers: Cutting Instructions"
+title: "Pantalones Theo: Instrucciones de corte"
 ---
 
 - **Tela principal**
@@ -26,13 +26,13 @@ title: "Theo trousers: Cutting Instructions"
 
 <Warning>
 
-###### Caveats
+###### Advertencias
 
-- The **front lining** is cut from the **front** part on your draft, down to the line just below the knee
-- Pay attention to the grainline on the **fly piece**, **fly shield**, and **side piece**
-- There are two variations of the front pocket bag. You need to cut out two of each:
-  - Cut two of the complete piece
-  - Cut two with only extending up to the dashed line at the left
-- The **back inner pocket bag** and **back outer pocket bag** are very similar. Asegúrese de marcarlos correctamente para que no los confunda.
+- El **forro delantero** se corta desde la **parte delantera** de tu calado, hasta la línea que hay justo debajo de la rodilla
+- Presta atención a la línea de grano de la **pieza de la mosca**, el **escudo de la mosca** y la **pieza lateral**
+- Hay dos variantes de la bolsa de bolsillo delantero. Tienes que cortar dos de cada:
+  - Corta dos de la pieza completa
+  - Corta dos que sólo lleguen hasta la línea discontinua de la izquierda
+- La **bolsa de bolsillo interior trasera** y la **bolsa de bolsillo exterior trasera** son muy similares. Asegúrese de marcarlos correctamente para que no los confunda.
 
 </Warning>

@@ -1,5 +1,5 @@
 ---
-titre: "Bloc corporel de Bent : Instructions de couture"
+title: "Bloc de corps courbé : Instructions de couture"
 ---
 
 <Note>
@@ -43,14 +43,14 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 ### Étape 2 : Essayez-le
 
 - Essayez-le et vérifiez la coupe en épinglant le devant tout en le portant.
-- Apportez les modifications nécessaires et essayez à nouveau le vêtement.
-- Répétez l'opération jusqu'à ce que vous soyez satisfait.
+- Effectuez toutes les modifications et essayez à nouveau.
+- Répétez jusqu'à ce que vous soyez satisfait.
 
 <Tip>
 
 Si vous n'avez personne pour vous aider à épingler les retouches, vous pouvez utiliser un manequin de couture pour épingler les retouches qui sont difficiles à faire en place. N'oubliez pas de l'essayer ensuite pour vous assurer qu'il vous va bien.
 
-Soyez attentif à tout ce que vous faites en portant la maquette : la tirez-vous vers le bas ? Ajuster constamment l'épaule ? ect... Ces éléments sont des signes indiquant que le modèle doit être ajusté.
+Soyez attentif à tout ce que vous faites en portant la maquette : la tirez-vous vers le bas ? Ajustement permanent de l'épaule ? ect... Ces éléments sont des signes indiquant que le modèle doit être ajusté.
 
 Il est parfois nécessaire de porter la maquette pendant un certain temps pour avoir une meilleure idée de la coupe, alors n'hésitez pas à vous promener avec pendant quelques heures.
 

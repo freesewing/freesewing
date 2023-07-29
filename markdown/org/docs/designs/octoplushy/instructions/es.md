@@ -1,89 +1,89 @@
 ---
-title: "Octoplushy, the plushy octopus: Sewing Instructions"
+title: "Octoplushy, el pulpo de peluche: Instrucciones de costura"
 ---
 
-## Step 1: The Body
+## Paso 1: El cuerpo
 
-### The Face
+### El rostro
 
 - **Octoplushy**
-  - With _good sides together_ sew four head parts together, from notch B to the tip of the head part A creating a semi-sphere like shape.
-  - Repeat with the remaining four head parts to create a second half.
-  - Use topstitching, or a long bar-tack, to make the mouth on one of the segments.
-  - On the same section create eyes where the buttons are marked on the pattern.
-  - With _good sides together_ sew the two head halves together, from notch B to the tip of the head part A.
-  - Turn _good sides_ out.
+  - Con _los lados buenos juntos_ cose cuatro partes de la cabeza juntas, desde la muesca B hasta la punta de la parte de la cabeza A, creando una forma parecida a una semiesfera.
+  - Repite la operación con las cuatro partes restantes de la cabeza para crear una segunda mitad.
+  - Utiliza pespunte, o un remate largo, para hacer la boca en uno de los segmentos.
+  - En la misma sección crea ojos donde están marcados los botones en el patrón.
+  - Con _los lados buenos juntos_ cose las dos mitades de la cabeza juntas, desde la muesca B hasta la punta de la parte A de la cabeza.
+  - Gira _lados buenos_ hacia fuera.
 
 <Note>
 
-There are a couple of ways to make eyes for the Octoplushy version.
-- Buttons
-- Toy eyes
-- Embroidery
-- Felt or other suitable unravelling fabrics which can be combined with a _satin stitch_
+Hay un par de formas de hacer ojos para la versión Octoplushy.
+- Botones
+- Ojos de juguete
+- Bordados
+- Fieltro u otras telas deshilachables adecuadas que puedan combinarse con un _punto satinado_.
 
 </Note>
 
-- **Octopus**
-  - With _good sides together_ sew four head parts together, from notch B to the tip of the head part A creating a semi-sphere like shape.
-  - Repeat with the remaining four head parts to create a second half.
-  - With _wrong sides_ to _good sides_ sew the pupil to eyes parts.
-  - With _good sides together_ sew both short ends of eyebrows together, creating a ring.
-  - With _good sides together_ sew the eyebrows to the circumferences of the eyes, gathering the excess as you go.
-  - Fold the eyebrows in half _wrong sides together_, and sew it again to the eyes. You may find it easier to hand sew this step.
-  - Hand sew the eyes to the lower part of one of the head halves, so that you will have two sections between them when it all comes together.
-  - With _good sides together_ sew the two head halves together, from notch B to the tip of the head part A.
-  - Turn _good sides_ out.
+- **Pulpo**
+  - Con _los lados buenos juntos_ cose cuatro partes de la cabeza juntas, desde la muesca B hasta la punta de la parte de la cabeza A, creando una forma parecida a una semiesfera.
+  - Repite la operación con las cuatro partes restantes de la cabeza para crear una segunda mitad.
+  - Con _lados equivocados_ a _lados buenos_ cose la pupila a las partes de los ojos.
+  - Con _los lados buenos juntos_ cose los dos extremos cortos de las cejas, creando un anillo.
+  - Con _bien juntos_ cose las cejas a las circunferencias de los ojos, recogiendo el exceso a medida que avanzas.
+  - Dobla las cejas por la mitad _lados equivocados juntos_, y cóselas de nuevo a los ojos. Puede que te resulte más fácil coser a mano este paso.
+  - Cose a mano los ojos a la parte inferior de una de las mitades de la cabeza, de modo que tengas dos secciones entre ellas cuando todo esté unido.
+  - Con _los lados buenos juntos_ cose las dos mitades de la cabeza juntas, desde la muesca B hasta la punta de la parte A de la cabeza.
+  - Gira _lados buenos_ hacia fuera.
 
 <Note>
 
-Before sewing the eyebrows in half, you can stuff the eyebrows to create a more dramatic looking eyebrow.
+Antes de coser las cejas por la mitad, puedes rellenarlas para crear unas cejas de aspecto más dramático.
 
 </Note>
 
-- **Squid**
-  - With _good sides together_ sew four head parts together, from notch B to the tip of the head part A creating a semi-sphere like shape.
-  - Repeat with the remaining four head parts to create a second half.
-  - On the head (a) parts fold along the fold-line with _good sides together_.
-  - Sew the straight line that juts out and then turn the flap _good sides_ out.
-  - With _good sides together_ sew the non - flap edges of the head (a) parts to the one of the head halves sewn earlier, from notch B to the tip of the head part A.
-  - With _wrong side_ to _good side_ sew the pupils to the eyes and finish their sides the best you can.
-  - Hand Sew the eyes to the section closest to the legs.
-  - With _good sides together_ sew the two halves together, from notch B to the tip of the head part A making sure that the flaps are on the outside.
-  - Turn _good sides_ out.
+- **Calamar**
+  - Con _los lados buenos juntos_ cose cuatro partes de la cabeza juntas, desde la muesca B hasta la punta de la parte de la cabeza A, creando una forma parecida a una semiesfera.
+  - Repite la operación con las cuatro partes restantes de la cabeza para crear una segunda mitad.
+  - En la cabeza (a) las partes se doblan a lo largo de la línea de pliegue con _lados buenos juntos_.
+  - Cose la línea recta que sobresale y luego gira la solapa _lados buenos_ hacia fuera.
+  - Con _los lados bien juntos_ cose los bordes sin solapa de las partes de la cabeza (a) a la de las mitades de la cabeza cosidas anteriormente, desde la muesca B hasta la punta de la parte de la cabeza A.
+  - Con _lado equivocado_ a _lado bueno_ cose las pupilas a los ojos y termina sus lados lo mejor que puedas.
+  - Cose a mano los ojos a la sección más cercana a las piernas.
+  - Con _los lados bien juntos_ cose las dos mitades, desde la muesca B hasta la punta de la parte A de la cabeza, asegurándote de que las solapas queden por fuera.
+  - Gira _lados buenos_ hacia fuera.
 
-## Step 2: The Legs
+## Paso 2: Las piernas
 
-- **Octoplushy & Octopus**
-  - With _good sides together_ sew four leg parts together, from notch D to the tip of the leg part C.
-  - Repeat with the remaining four leg parts to create a second half.
-  - With _good sides together_ sew the two leg halves together, from notch D to the tip of the leg part C but only one side. This other side stays open for stuffing later.
+- **Octoplushy & Pulpo**
+  - Con _los lados buenos juntos_ cose cuatro partes de la pata juntas, desde la muesca D hasta la punta de la parte de la pata C.
+  - Repite la operación con las cuatro partes restantes de las piernas para crear una segunda mitad.
+  - Con _los lados buenos juntos_ cose las dos mitades de la pierna juntas, desde la muesca D hasta la punta de la parte C de la pierna, pero sólo por un lado. This other side stays open for stuffing later.
 
-- **Squid**
-  - With _good sides together_ sew four leg parts together, from notch D to the tip of the leg part C.
-  - Repeat with the remaining four leg parts to create a second half.
-  - With _good sides together_ sew a leg (a) part to each half so you have matching halves.
-  - With _good sides together_ sew the two leg halves together, from notch D to the tip of the leg part C but only one side. This other side stays open for stuffing later.
+- **Calamar**
+  - Con _los lados buenos juntos_ cose cuatro partes de la pata juntas, desde la muesca D hasta la punta de la parte de la pata C.
+  - Repite la operación con las cuatro partes restantes de las piernas para crear una segunda mitad.
+  - Con _los lados bien juntos_ cose una parte de la pata (a) a cada mitad, de modo que tengas mitades iguales.
+  - Con _los lados buenos juntos_ cose las dos mitades de la pierna juntas, desde la muesca D hasta la punta de la parte C de la pierna, pero sólo por un lado. This other side stays open for stuffing later.
 
-## Step 3: Final Construction
+## Paso 3: Construcción final
 
-- With _good sides together_ match up the leg parts with the body parts.
-- Sew each leg from notch B/D down and back around to notch B/D.
-- If the leg part is slightly shorter than the leg on the head partsm you will have to ease it in while matching it up. Notches have been provided to make this easier.
+- Con _lados buenos juntos_ haz coincidir las partes de las piernas con las partes del cuerpo.
+- Cose cada pierna desde la muesca B/D hacia abajo y de vuelta a la muesca B/D.
+- Si la parte de la pata es ligeramente más corta que la pata de la parte de la cabezam tendrás que suavizarla mientras la emparejas. Se han previsto muescas para facilitar esta tarea.
 
 <Tip>
 
-It is easiest to sew one leg almost to the next B/D notch, stop sewing, pin the next leg, and continue sewing rather than trying to pin and sew all the legs in one go. 
+Es más fácil coser una pata casi hasta la siguiente muesca B/D, dejar de coser, prender con alfileres la siguiente pata y seguir cosiendo, que intentar prender con alfileres y coser todas las patas de una sola vez. 
 
-Those who are more confident can do this with the needle down on their machine but if you are less confident you may wish to remove from the machine, pin and then start sewing again a little bit over your originial stitching to secure it.
+Los que tengan más confianza pueden hacerlo con la aguja bajada en su máquina, pero si tienes menos confianza, puedes retirarla de la máquina, prenderla con alfileres y luego empezar a coser de nuevo un poco por encima de tu puntada original para asegurarla.
   
 </Tip>
 
-- Turn _good sides_ out.
-- For Octopus sew along stitching lines of the legs before stuffing.
-- Stuff the plushy through the opening in the legs.
-- Hand sew the opening closed.
+- Gira _lados buenos_ hacia fuera.
+- Para el pulpo, cose a lo largo de las líneas de costura de las patas antes de rellenarlas.
+- Mete el peluche por la abertura de las patas.
+- Cose a mano la abertura para cerrarla.
 
-## Step 4: Enjoy!
+## Paso 4: ¡Disfrútalo!
 
-- That's it you are all done now go explore the depths of the oceans with your new Octoplushy!
+- Ya está, ya has terminado, ¡ahora vete a explorar las profundidades de los océanos con tu nuevo Octoplushy!

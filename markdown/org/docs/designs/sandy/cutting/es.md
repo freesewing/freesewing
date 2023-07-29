@@ -1,25 +1,25 @@
 ---
-title: "Sandy circle skirt: Cutting Instructions"
+title: "Falda circular Sandy: Instrucciones de corte"
 ---
 
 <Note>
 
-If not using seamless follow the default list, If using seamless follow the seamless list.
+Si no utilizas seamless sigue la lista por defecto, Si utilizas seamless sigue la lista seamless.
 
 </Note>
 
-**Main Fabric**
+**Tela principal**
 
-- (If default) Cut **1 skirt** part on the fold.
-- (If seamless) Cut **1 skirt** part on double fold.
-- (If straight) Cut **1 waistband** part.
-- (If curved) Cut **2 waistband** parts.
+- (Si está predeterminado) Corta **1 falda** parte en el pliegue.
+- (Si es sin costuras) Corta **1 falda** parte en doble pliegue.
+- (Si es recta) Corta **1 parte de la cintura** .
+- (Si es curva) Corta **2 partes de la cintura** .
 
-**Lining Fabric (Optional)**
+**Tejido del forro (Opcional)**
 
-- (If default) Cut **1 skirt** part on the fold.
-- (If seamless) Cut **1 skirt** part on double fold.
+- (Si está predeterminado) Corta **1 falda** parte en el pliegue.
+- (Si es sin costuras) Corta **1 falda** parte en doble pliegue.
 
-**Interfacing**
+**Interfaz**
 
-- Cut **1 waistband** part.
+- Corta **1 parte de la cintura** .

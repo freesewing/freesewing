@@ -1,11 +1,11 @@
 ---
-title: "Back pocket facing"
+title: "Cara del bolsillo trasero"
 ---
 
 ***
 
-Controls whether or not to include facing on the back pockets
+Controla si se incluye o no el revestimiento en los bolsillos traseros
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_backpocketfacing_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](charlie_backpocketfacing_sample.svg "Efecto de esta opción en el patrón")

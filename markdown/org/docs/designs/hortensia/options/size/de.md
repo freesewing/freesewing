@@ -1,28 +1,28 @@
 ---
-title: "Size"
+title: "Größe"
 ---
 
-Controls the overall size of the handbag.
+Steuert die Gesamtgröße der Handtasche.
 
-Rather than using measurements, Hortensia's size is determined by scaling fixed values.
+Anstatt Messungen vorzunehmen, wird die Größe von Hortensia durch die Skalierung fester Werte bestimmt.
 
-- 20% : Will scale these values by 0.2
-- 200% : Will scale these values by 2
+- 20% : Skaliert diese Werte um 0,2
+- 200% : Skaliert diese Werte um 2
 
-The two fixed values that are used the most are Width: 23cm and Height: 33cm.
+Die beiden festen Werte, die am häufigsten verwendet werden, sind Breite: 23 cm und Höhe: 33 cm.
 
 <Note>
 
-So an example of this would be the default, which is 50%. This would scale the values by 0.5 resulting in a handbag that is 11.5cm (23cm x 0.5) in width and 16.5cm (33cm x 0.5) in height.
+Ein Beispiel dafür wäre der Standardwert, der 50% beträgt. Dies würde die Werte um 0,5 skalieren, was zu einer Handtasche mit einer Breite von 11,5 cm (23 cm x 0,5) und einer Höhe von 16,5 cm (33 cm x 0,5) führen würde.
 
 </Note>
 
 <Tip>
 
-Turn on paperless to see the measurements of the handbag. This will help you to determine the size you want and see the effects of this option.
+Schalte auf papierlos, um die Maße der Handtasche zu sehen. Das hilft dir, die gewünschte Größe zu bestimmen und die Auswirkungen dieser Option zu sehen.
 
 </Tip>
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](hortensia_size_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](hortensia_size_sample.svg "Effekt dieser Option auf das Schnittmuster")

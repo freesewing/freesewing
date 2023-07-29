@@ -1,5 +1,5 @@
 ---
-title: "Noble body block: Required Measurements"
+title: "Bloc de carrosserie noble : Mesures nécessaires"
 ---
 
 <PatternMeasurements pattern='noble' />

@@ -1,5 +1,5 @@
 ---
-title: "Benjamin bow tie: Design Options"
+title: "Benjamin vlinderdas: Ontwerpopties"
 ---
 
 <PatternOptions pattern='benjamin' />

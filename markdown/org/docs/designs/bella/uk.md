@@ -1,5 +1,5 @@
 ---
-title: "Bella body block"
+title: "Викрійка-основа Белла"
 ---
 
 <PatternDocs pattern='bella' />

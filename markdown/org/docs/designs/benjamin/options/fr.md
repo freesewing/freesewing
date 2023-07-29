@@ -1,5 +1,5 @@
 ---
-titre : "Nœud papillon Benjamin : Options de style"
+title: "Nœud papillon Benjamin : Options de conception"
 ---
 
 <PatternOptions pattern='benjamin' />

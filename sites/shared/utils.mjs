@@ -151,40 +151,59 @@ export const getCrumbs = (app, slug = false) => {
 
 /** convert a millimeter value to a Number value in the given units */
 export const measurementAsUnits = (mmValue, units = 'metric') =>
-  mmValue / (units === 'imperial' ? 25.4 : 10)
+  round(mmValue / (units === 'imperial' ? 25.4 : 10), 3)
+
+/** convert a value that may contain a fraction to a decimal */
+export const fractionToDecimal = (value) => {
+  // if it's just a number, return it
+  if (!isNaN(value)) return value
+
+  // keep a running total
+  let total = 0
+
+  // split by spaces
+  let chunks = String(value).split(' ')
+  if (chunks.length > 2) return Number.NaN // too many spaces to parse
+
+  // a whole number with a fraction
+  if (chunks.length === 2) {
+    // shift the whole number from the array
+    const whole = Number(chunks.shift())
+    // if it's not a number, return NaN
+    if (isNaN(whole)) return Number.NaN
+    // otherwise add it to the total
+    total += whole
+  }
+
+  // now we have only one chunk to parse
+  let fraction = chunks[0]
+
+  // split it to get numerator and denominator
+  let fChunks = fraction.trim().split('/')
+  // not really a fraction. return NaN
+  if (fChunks.length !== 2 || fChunks[1] === '') return Number.NaN
+
+  // do the division
+  let num = Number(fChunks[0])
+  let denom = Number(fChunks[1])
+  if (isNaN(num) || isNaN(denom)) return NaN
+  return total + num / denom
+}
 
 export const measurementAsMm = (value, units = 'metric') => {
   if (typeof value === 'number') return value * (units === 'imperial' ? 25.4 : 10)
 
-  if (value.endsWith('.')) return false
+  if (String(value).endsWith('.')) return false
 
   if (units === 'metric') {
     value = Number(value)
     if (isNaN(value)) return false
     return value * 10
   } else {
-    const imperialFractionToMm = (value) => {
-      let chunks = value.trim().split('/')
-      if (chunks.length !== 2 || chunks[1] === '') return false
-      let num = Number(chunks[0])
-      let denom = Number(chunks[1])
-      if (isNaN(num) || isNaN(denom)) return false
-      else return (num * 25.4) / denom
-    }
-    let chunks = value.split(' ')
-    if (chunks.length === 1) {
-      let val = chunks[0]
-      if (!isNaN(Number(val))) return Number(val) * 25.4
-      else return imperialFractionToMm(val)
-    } else if (chunks.length === 2) {
-      let inches = Number(chunks[0])
-      if (isNaN(inches)) return false
-      let fraction = imperialFractionToMm(chunks[1])
-      if (fraction === false) return false
-      return inches * 25.4 + fraction
-    }
+    const decimal = fractionToDecimal(value)
+    if (isNaN(decimal)) return false
+    return decimal * 24.5
   }
-  return false
 }
 
 export const optionsMenuStructure = (options) => {
@@ -279,9 +298,21 @@ export const shortDate = (locale = 'en', timestamp = false) => {
   return ts.toLocaleDateString(locale, options)
 }
 
+export const yyyymmdd = (timestamp = false) => {
+  const ts = timestamp ? new Date(timestamp) : new Date()
+
+  let m = String(ts.getMonth() + 1)
+  if (m.length === 1) m = '0' + m
+  let d = '' + ts.getDate()
+  if (d.length === 1) d = '0' + d
+
+  return `${ts.getFullYear()}${m}${d}`
+}
+
 export const scrollTo = (id) => {
   // eslint-disable-next-line no-undef
-  if (document) document.getElementById(id).scrollIntoView()
+  const el = document ? document.getElementById(id) : null
+  if (el) el.scrollIntoView()
 }
 
 const structureMeasurementsAsDesign = (measurements) => ({ patternConfig: { measurements } })
@@ -304,3 +335,54 @@ export const hasRequiredMeasurements = (Design, measies = {}, DesignIsMeasuremen
 
   return [missing.length === 0, missing]
 }
+
+/*
+ * This expects a object from the nav tree and will filter out the know 1-char keys
+ * and then check if there are any left. If there are, those are child-pages.
+ */
+export const pageHasChildren = (page) =>
+  Object.keys(page).filter((key) => !['t', 's', 'o', 'b', 'h'].includes(key)).length > 0
+
+/*
+ * Returns the slug of the page above this one
+ * Or the current slug if there is no higher slug
+ */
+export const oneUpSlug = (slug) => {
+  const chunks = slug.split('/')
+
+  return chunks.length > 1 ? chunks.slice(0, -1).join('/') : slug
+}
+
+/*
+ * Returns the slug at the max depth of the navigation root
+ * We don't descend too far into the navigation because it becomes harder to find your way back
+ */
+export const maxPovDepthSlug = (slug, site) => {
+  // Default depth
+  let depth = 2
+
+  // Split the slug
+  const chunks = slug.split('/')
+
+  // Some specific exceptions
+  if (site === 'org') {
+    if (chunks[0] === 'docs' && chunks[1] === 'designs') depth = 3
+  }
+
+  return chunks.length > depth ? chunks.slice(0, depth).join('/') : slug
+}
+
+/*
+ * Checks whether one slug is part of another.
+ * Typically used to see if a page is 'active' on the path to another page.
+ * Eg: the user is on page reference/api/part so reference/api is on the way to that page
+ * In that case, this will return true
+ */
+export const isSlugPart = (part, slug) => slug && part && slug.slice(0, part.length) === part
+
+/*
+ * Makes a properly formated path for the given locale
+ * (i.e. skips adding 'en' to localized paths)
+ * Expects a slug with no leading slash
+ * */
+export const localePath = (locale, slug) => (locale === 'en' ? '/' : `/${locale}/`) + slug

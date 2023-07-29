@@ -1,5 +1,5 @@
 ---
-title: "Collar roll"
+title: "Repli du col"
 ---
 
 ![Repli du col](collarroll.svg)
@@ -18,4 +18,4 @@ Augmenter cela ne fait pas augmenter le collier (utiliser la hauteur du collier 
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_collarroll_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_collarroll_sample.svg "Effet de cette option sur le motif")

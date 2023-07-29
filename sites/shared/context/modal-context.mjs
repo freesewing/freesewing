@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import { createContext, useState } from 'react'
 
-export const ModalContext = React.createContext(null)
+export const ModalContext = createContext(null)
 
 export const ModalContextProvider = ({ children }) => {
   function clearModal() {

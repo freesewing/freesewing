@@ -1,9 +1,9 @@
 ---
-title: "Front Exposure"
+title: "Exposición frontal"
 ---
 
-Controls how much the front will curve inwards to meet the gusset.
+Controla cuánto se curvará la parte delantera hacia dentro para unirse al fuelle.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](unice_tapertogusset_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](unice_tapertogusset_sample.svg "Efecto de esta opción en el patrón")

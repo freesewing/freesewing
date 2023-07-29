@@ -1,5 +1,5 @@
 ---
-title: "Jaeger jacket: Design Options"
+title: "Куртка Jaeger: Варіанти дизайну"
 ---
 
 <PatternOptions pattern='jaeger' />

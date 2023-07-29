@@ -1,11 +1,11 @@
 ---
-title: Included Parts
+title: Pièces incluses
 ---
 
-This setting allows you to specify which patterns parts you want to generate.
+Ce paramètre vous permet de spécifier quelles parties de motifs vous voulez générer.
 
-This can be useful if you want to only use a specific part. For example perhaps you have a shirt pattern and you only want to generate a different collar style.
+Cela peut être utile si vous voulez n'utiliser qu'une pièce spécifique. Par exemple, peut-être vous avez un modèle de chemise et que vous voulez seulement générer un style de col différent.
 
-It can also be used to include pattern parts that -- for whatever reason -- are hidden by default.
+Il peut également être utilisé pour inclure des parties du modèle qui, pour une raison ou une autre, sont cachées par défaut.
 
 

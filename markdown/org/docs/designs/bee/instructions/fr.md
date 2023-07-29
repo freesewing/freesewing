@@ -42,7 +42,7 @@ Les encoches de ce motif se comportent davantage comme des points, il ne faut do
 - (Facultatif) Pliez sur l'envers et _piquez_ le surplus de couture entre les encoches des coutures du devant et des côtés. Ne cousez pas les surplus ensemble.
 - Endroit contre endroit, coudre la doublure sur le tissu principal le long du bas, en laissant un espace entre les encoches latérales et en veillant à renforcer le point à chaque extrémité.
 - Coupez les surplus de couture des bords cousus en laissant le surplus de couture entre les encoches. Coupez les coins. Vous pouvez également avoir besoin de couper les coutures courbes.
-- Retourner en tirant la bretelle par l'un des interstices. Appuyer.
+- Retourner en tirant la bretelle par l'un des interstices. Repasser.
 - (Facultatif) _piquez_ le haut, les côtés et le bas des bonnets en laissant les espaces entre les encoches ouverts.
 - Piquez le long de la ligne d'encadrement pour créer le bandeau.
 
@@ -65,8 +65,8 @@ Bien qu'il s'agisse d'une option, il est recommandé de piquer le haut et les c�
 
 #### Variante lacé croisé
 
-- Avec les bords bruts et le tissu principal ensemble, _coller_ l'une des bretelels sur le haut de l'un des morceaux de bonnet en veillant à ce que la bretelle aille vers le bas du bonnet.
-- Avec la bretelle de cou prise en sandwich à l'intérieur, épinglez un morceau de bonnet de doublure, endroit contre endroit, sur le morceau de bonnet principal.
+- Avec les bords bruts et le tissu principal ensemble, _coller_ l'une des bretelles sur le haut de l'un des morceaux de bonnet en veillant à ce que la bretelle aille vers le bas du bonnet.
+- Avec la bretelle de cou priss en sandwich à l'intérieur, épinglez un morceau de bonnet de doublure, endroit contre endroit, sur le morceau de bonnet principal.
 - Coudre la doublure au bonnet principal le long des coutures du devant, du haut et des côtés, en veillant à ne pas accrocher la bretelle.
 - Retourner les bonnets à l'endroit et les repasser.
 - (Facultatif) _piquer_ sur le dessus et les côtés des bonnets.
@@ -109,7 +109,7 @@ Cette étape n'est nécessaire que pour la variante de l'attache à bandeau.
 #### Bandeau Méthode unicolore
 
 - Pliez le morceau de ruban en deux dans le sens de la longueur, endroit et bords bruts ensemble.
-- Coudre le long des bords bruts, en laissant l'une des extrémités courtes ouverte.
+- Coudre le long des bords bruts, laissant une des courtes extrémités ouvertes.
 - Découpez les surplus de couture et coupez les coins.
 - Retourner à l'envers. Repasser.
 

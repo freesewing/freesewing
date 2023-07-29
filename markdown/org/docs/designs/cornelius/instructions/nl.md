@@ -1,132 +1,132 @@
 ---
-title: "Cornelius cycling breeches: Sewing Instructions"
+title: "Cornelius fietsbroek: Naai-instructies"
 ---
 
-### Step 1: The Front Pockets
+### Stap 1: De voorzakken
 
-- Press under the seam allowances of the non-notched edges of the pokcet facings.
-- Matching notches, pin the wrong sides of pocket facings to right side of pocket bags, _Edgestitch_ the folded edges to the pocket bags.
-- _Baste_ the seam allowances of the notched edges of the pocket facings to the pocket bags.
-- With right sides together matching double notches sew the pocket bags to the front and then press to the wrong side.
-- Fold the pockets in half along the fold line, right sides together. Stitch the bottom of the pocket bag together.
-- Alternatively you can _French Seam_ the bottom seams of the pocket bags together if you prefer.
-- _Baste_ the top and side of the pocket bags to the front seam allowances mathcing notches.
+- Pers onder de naadtoeslagen van de niet-geknipte randen van de pokcet facings.
+- Speld de verkeerde kanten van de zakvullingen op de goede kant van de zakvullingen met dezelfde inkepingen, _Edgestitch_ de gevouwen randen op de zakvullingen.
+- _Rijg_ de naadtoeslagen van de gekerfde randen van de zakvullingen aan de zakzakken.
+- Met de goede kanten op elkaar en de dubbele inkepingen naai je de zakjes aan de voorkant en pers je ze naar de verkeerde kant.
+- Vouw de zakken dubbel langs de vouwlijn, goede kanten op elkaar. Naai de onderkant van de zak aan elkaar.
+- Je kunt ook _Franse naad_ de onderste naden van de zakjes aan elkaar naaien als je dat liever doet.
+- _Rijg_ de bovenkant en zijkant van de zakjes aan de voorste naadtoeslagen met de inkepingen.
 
 <Note>
 
-Going forward the pockets and fronts will just be referred to as the fronts.
+In het vervolg worden de zakken en voorkanten gewoon voorkanten genoemd.
 
 </Note>
 
-### Step 2: The Fly
+### Stap 2: De vlieg
 
-- With right sides together, from the top _Baste_ along the fly line stopping at the notch on the crotch seam.
-- From where you left off with basting, stitch the crotch seam together making sure to secure your stitches where the basting ends.
-- Press open the fly and seam.
-- Lay the fronts down wrong side up so the right sides of the fly flaps are facing you.
-- Lay zipper face up on the front flaps, with the left side of the zipper touching the seam, with the bottom of the right zipper tape on the curved flap.
-- Sew the right zipper tape to the right flap close to the zipper teeth using a zipper foot. Don't sew it to the front itself!
-- Pull the zipper to the left so the right flap is pulled over.
-- Pin the left zipper tape to the left flap.
-- Sew the left zipper tape to left flap close to the zipper teeth using a zipper foot. Don't sew it to the front itself!
-- Fold the zipper guard in half wrong sides together.
-- Lay the zipper guard on the right flap, right sides touching.
-- Sew the zipper guard to the right flap, _Finish_ the right side to your liking.
-- _Finish_ the left side of the left flap to your liking.
-- Unpick the basted part of the front seam.
-- _Topstitch_ the right flap down, away from the now unpicked seam, as far down as you can.
-- Pin/_Baste_ the zipper protector over to the right side to keep it out of the way for the next step
-- On the outside side, sew the left flap down to the left, following the curved line.
-- On the outside side, _Bar-Tack_ where you like them for reinforcement.
+- Met de goede kanten op elkaar, vanaf de bovenkant _Rijg_ langs de gulplijn en stop bij de inkeping op de kruisnaad.
+- Naai de kruisnaad aan elkaar waar je gebleven was met rijgen en zorg ervoor dat je de steken vastzet waar de rijgsteek eindigt.
+- Pers de gulp en naad open.
+- Leg de voorkanten met de verkeerde kant naar boven neer, zodat de goede kanten van de vliegenflappen naar je toe wijzen.
+- Leg de rits met de goede kant naar boven op de voorflappen, met de linkerkant van de rits tegen de naad, met de onderkant van de rechter ritsband op de gebogen flap.
+- Naai het rechter ritsbandje op de rechterflap dicht bij de tandjes van de rits met behulp van een ritsvoetje. Naai het niet aan de voorkant zelf!
+- Trek de rits naar links zodat de rechterflap eroverheen wordt getrokken.
+- Speld de linker ritsband op de linker flap.
+- Naai met een ritsvoetje het linker ritsbandje op de linkerflap dicht bij de tandjes van de rits. Naai het niet aan de voorkant zelf!
+- Vouw de ritsbeschermer dubbel met de verkeerde kanten op elkaar.
+- Leg de ritsbeschermer op de rechterflap met de goede kanten tegen elkaar.
+- Naai de ritsbeschermer aan de rechterflap, _Finish_ de rechterkant naar wens.
+- _Werk de linkerkant van de linkerklep naar wens af op_ .
+- Maak het vastgenaaide deel van de voornaad los.
+- _Stik_ de rechterflap naar beneden, weg van de nu ongestikte naad, zo ver mogelijk naar beneden.
+- Speld/_Rijg_ de ritsbeschermer naar de goede kant om hem uit de weg te houden voor de volgende stap.
+- Naai de linkerklep aan de buitenkant naar links vast, waarbij je de gebogen lijn volgt.
+- Aan de buitenkant _Bar-Tack_ waar je ze wilt hebben ter versteviging.
 
 <Tip>
 
-When sewing the left flap down on the outside, you may find it best to make a template to help you.
+Als je de linkerklep aan de buitenkant vastnaait, kun je het beste een sjabloon maken om je te helpen.
 
 </Tip>
 
 <Note>
 
-If you wish to orientate the fly the other way change the left to right and right to left in the steps above.  
-If wanting something more historical than omit the zipper and make a buttonhole fly instead.
+Als je de vlieg de andere kant op wilt laten wijzen, verander dan de stappen van links naar rechts en van rechts naar links in de bovenstaande stappen.  
+Als je iets meer historisch wilt, laat dan de rits weg en maak in plaats daarvan een gulp met knoopsgat.
 
 </Note>
 
-### Step 3: Attaching the front to the back
+### Stap 3: De voorkant aan de achterkant vastmaken
 
-- With right sides together sew the back pieces together along the back seam.
-- With right sides together sew the front and back together at the side seams and inner leg seam. Making sure to leave a gap below the notches at the bottom of the side seams. The gap will be referred to as the list when going forward.
+- Naai de achterpanden met de goede kanten op elkaar langs de achternaad.
+- Naai met de goede kanten op elkaar de voor- en achterkant aan elkaar bij de zijnaden en de binnenbeennaad. Zorg ervoor dat je een opening overlaat onder de inkepingen aan de onderkant van de zijnaden. De kloof zal in het vervolg de lijst worden genoemd.
 
-### Step 4: Leg bands
+### Stap 4: Beenbanden
 
-Use the method of the cuff style you chose as they are different depending on which style you are using.
+Gebruik de methode van de manchetstijl die je hebt gekozen, want ze verschillen afhankelijk van welke stijl je gebruikt.
 
-#### Traditional and Elegant
+#### Traditioneel en elegant
 
-- _Finish_ the raw edges of the slits.
-- Press the seam allowances of the slits to the wrongs sides. Stitch in place.
-- Sew one of the leg band pieces to each leg right sides together, matching notches.
-- Press the bands and seam allowance down and away from leg. Trim the seam allowance to reduce bulk.
-- Press the top seam allowance to the wrong side of the remaining leg band pieces. Trim the top seam allowance.
-- With right sides together sew the remaining leg and pieces to the attached leg bands along the bottoms and sides.
-- Turn the leg bands out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
-- Sew the buttonhole. The buttons will be sewn later.
+- _Werk de onbewerkte randen van de splitjes af met_ .
+- Strijk de naadtoeslagen van de splitjes naar de verkeerde kanten. Stik vast.
+- Naai een van de delen van de beenband aan elk been met de goede kanten op elkaar en de inkepingen op elkaar.
+- Pers de banden en naadtoeslag naar beneden en weg van het been. Knip de naadtoeslag bij om de bulk te verminderen.
+- Strijk de bovenste naadtoeslag naar de verkeerde kant van de overgebleven delen van de beenband. Knip de naadtoeslag aan de bovenkant bij.
+- Naai met de goede kanten op elkaar de overgebleven beenstukken aan de aangehechte beenbanden langs de onderkant en zijkanten.
+- Draai de beenbanden naar buiten. Pers.
+- _Schuifsteek_ of _Zweepsteek_ de gevouwen rand van de tailleband naar voren, zorg ervoor dat de gevouwen rand het stiksel bedekt.
+- Naai het knoopsgat. De knopen worden later genaaid.
 
 <Note>
 
-If you are worried about a draft you can create a triangle piece of fabric that sits behind the slits out of your pocket fabric. Attaching it before Step 3 to one of the sides of the slits.
+Als je je zorgen maakt over tocht, kun je van je zakstof een driehoekig stuk stof maken dat achter de splitjes zit. Bevestig het voor Stap 3 aan een van de zijkanten van de spleten.
 
 </Note>
 
 #### Sleutelsteen
 
-- If using construct plackets for the leg slits.
-- Sew the plackets to the leg slits similar to how you would sew a sleeve cuff on a shirt.
-- Close the darts on the leg band pieces.
-- Sew one of the leg band pieces to each leg right sides together, matching notches.
-- Press the bands and seam allowance down and away from leg. Trim the seam allowance to reduce bulk.
-- Press the top seam allowance to the wrong side of the remaining leg band pieces. Trim the top seam allowance.
-- With right sides together sew the remaining leg and pieces to the attached leg bands along the bottoms and sides.
-- Turn the leg bands out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
-- Sew the buttonhole. The buttons will be sewn later.
+- Als je haakjes gebruikt voor de beenopeningen.
+- Naai de manchetten aan de beenopeningen op dezelfde manier als je een mouwboord op een overhemd zou naaien.
+- Sluit de coupenaden op de beenbanddelen.
+- Naai een van de delen van de beenband aan elk been met de goede kanten op elkaar en de inkepingen op elkaar.
+- Pers de banden en naadtoeslag naar beneden en weg van het been. Knip de naadtoeslag bij om de bulk te verminderen.
+- Strijk de bovenste naadtoeslag naar de verkeerde kant van de overgebleven delen van de beenband. Knip de naadtoeslag aan de bovenkant bij.
+- Naai met de goede kanten op elkaar de overgebleven beenstukken aan de aangehechte beenbanden langs de onderkant en zijkanten.
+- Draai de beenbanden naar buiten. Pers.
+- _Schuifsteek_ of _Zweepsteek_ de gevouwen rand van de tailleband naar voren, zorg ervoor dat de gevouwen rand het stiksel bedekt.
+- Naai het knoopsgat. De knopen worden later genaaid.
 
 <Note>
 
-If you are worried about a draft you will need to construct plackets for the leg slits.
+Als je je zorgen maakt over de tocht, moet je haakjes maken voor de beenopeningen.
 
 </Note>
 
 <Note>
 
-**For both Keystone, Traditional and Elegant Styles**
+**Voor zowel Keystone, Traditionele als Elegante stijlen**
 
-You can _Edgestitch_ the leg bands together like a modern waistband if you prefer.
+Je kunt de beenbanden aan elkaar _Edgestikken_ als een moderne tailleband als je dat liever hebt.
 
 </Note>
 
-### Step 5: Waistband
+### Stap 5: Tailleband
 
-- Face one of the waistband pieces using your preffered method.
-- Sew the faced waistband piece to the top of the legs right sides together.
-- Press the waistband and seam allowance up and away from leg. Trim the seam allowance to reduce bulk.
-- Press the bottom seam allowance to the wrong side of the remaining waistband piece. Trim the bottom seam allowance.
-- With right sides together sew the remaining waistband to the faced waistband along the top and sides.
-- Turn the waistband out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
-- Sew the buttonhole. The buttons will be sewn later.
+- Strijk een van de stukken van de tailleband met je favoriete methode.
+- Naai het stuk tailleband met de goede kanten op elkaar aan de bovenkant van de benen.
+- Pers de tailleband en naadtoeslag omhoog en weg van het been. Knip de naadtoeslag bij om de bulk te verminderen.
+- Pers de onderste naadtoeslag naar de verkeerde kant van het overgebleven stuk tailleband. Knip de onderste naadtoeslag bij.
+- Naai met de goede kanten op elkaar de overgebleven tailleband langs de bovenkant en zijkanten aan de tailleband.
+- Draai de tailleband naar buiten. Pers.
+- _Schuifsteek_ of _Zweepsteek_ de gevouwen rand van de tailleband naar voren, zorg ervoor dat de gevouwen rand het stiksel bedekt.
+- Naai het knoopsgat. De knopen worden later genaaid.
 
 <Note>
 
-You can _Edgestitch_ the waistband together like a modern waistband if you prefer.
+Je kunt de tailleband aan elkaar _Edgestikken_ zoals bij een moderne tailleband als je dat liever doet.
 
 </Note>
 
-### Step 6: Buttons
+### Stap 6: Knoppen
 
-- Sew the waistband and leg band buttons on.
+- Naai de tailleband en de knopen van de beenband vast.
 
-### Step 7: Enjoy!
+### Stap 7: Geniet!
 
-Je bent allemaal klaar! Now go have a ride in your brilliant new cycling breeches!
+Je bent allemaal klaar! Ga nu fietsen in je briljante nieuwe fietsbroek!

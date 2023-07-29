@@ -1,8 +1,8 @@
 ---
-title: "Sleevecap Q1 offset"
+title: "Tête de manche décalage Q1"
 ---
 
-![Le décalage du premier quadrant de la tête de manche](./sleevecapq1offset.svg)
+![Le décalage au premier quartier de la tête de manche](./sleevecapq1offset.svg)
 
 Cette option contrôle le décalage dans le premier quadrant de la tête de manche.
 
@@ -14,4 +14,4 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_sleevecapq1offset_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_sleevecapq1offset_sample.svg "Effet de cette option sur le motif")

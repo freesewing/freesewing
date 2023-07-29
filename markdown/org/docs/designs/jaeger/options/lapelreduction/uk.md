@@ -1,14 +1,14 @@
 ---
-title: "Lapel reduction"
+title: "Зменшення лацкана"
 ---
 
-How much the tip of the lapels turns inwards.
+Наскільки кінчик лацкана загорнутий всередину.
 
-It is common to have the edge of the lapels not be entirely straight, but rather turn inwards a bit towards the top of the lapels. This option controls by how much it does that.
+Зазвичай край лацкана не є абсолютно прямим, а скоріше трохи загнутий всередину до верху лацкана. Ця опція контролює, наскільки сильно він це робить.
 
-- Increase this option to shift the lapel tip inward
-- Decrease this option to shift the lapel tip outward
+- Збільште цей параметр, щоб змістити кінчик лацкана всередину
+- Зменшіть цей параметр, щоб змістити кінчик лацкана назовні
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_lapelreduction_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_lapelreduction_sample.svg "Вплив цієї опції на шаблон")

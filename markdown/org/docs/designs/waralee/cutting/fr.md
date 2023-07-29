@@ -1,5 +1,5 @@
 ---
-titre: "Pantalon portefeuille Waralee : Instructions de coupe"
+title: "Pantalon enveloppant Waralee : Instructions de coupe"
 ---
 
 <Note>

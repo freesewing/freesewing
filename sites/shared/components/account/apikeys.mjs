@@ -13,7 +13,7 @@ import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useRouter } from 'next/router'
 // Components
 import { BackToAccountButton, Choice } from './shared.mjs'
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
 import { CopyIcon } from 'shared/components/icons.mjs'
 import { Collapse, useCollapseButton } from 'shared/components/collapse.mjs'

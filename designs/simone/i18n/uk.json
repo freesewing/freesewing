@@ -1,0 +1,47 @@
+{
+  "t": "Simone shirt",
+  "d": "Simone is simon, adapted for breasts.",
+  "p": {
+    "back": "Back",
+    "buttonholePlacket": "Buttonhole placket",
+    "buttonPlacket": "Button placket",
+    "collar": "Collar",
+    "collarStand": "Collar stand",
+    "cuff": "Cuff",
+    "fbaFront": "FBA Front",
+    "front": "Front",
+    "frontLeft": "Front left",
+    "frontRight": "Front right",
+    "sleevePlacketOverlap": "Sleeve placket overlap",
+    "sleevePlacketUnderlap": "Sleeve placket underlap",
+    "sleeve": "Sleeve",
+    "yoke": "Yoke"
+  },
+  "s": {},
+  "o": {
+    "bustAlignedButtons": {
+      "t": "Bust-aligned buttons",
+      "d": "Optional button spacing strategies to ensure a button at the bustline"
+    },
+    "bustDartAngle": {
+      "t": "Bust dart angle",
+      "d": "Controls the angle by which the (side) bust dart slopes downward"
+    },
+    "bustDartLength": {
+      "t": "Bust dart length",
+      "d": "Controls how close the bust dart approaches the bust point"
+    },
+    "contour": {
+      "t": "Contour",
+      "d": "Controls how sharply the extra room for breasts is removed again below the chest"
+    },
+    "frontDarts": {
+      "t": "Front darts",
+      "d": "Whether to include front darts or not"
+    },
+    "frontDartLength": {
+      "t": "Front dart length",
+      "d": "Controls how close the front dart approaches the bust point"
+    }
+  }
+}
