@@ -1,5 +1,3 @@
-// Hooks
-import { useTranslation } from 'next-i18next'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components

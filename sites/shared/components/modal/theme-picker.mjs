@@ -6,7 +6,7 @@ import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 export const ns = ['themes']
 
 export const ModalThemePicker = ({ app, iconOnly = false, bottom = false }) => {
-  const { theme, setTheme } = useTheme()
+  const { setTheme } = useTheme()
   const { t } = useTranslation(ns)
 
   return (
