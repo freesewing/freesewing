@@ -11,12 +11,13 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 //import { PageLink } from 'shared/components/page-link.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { ForceAccountCheck } from 'shared/components/account/force-account-check.mjs'
-import { DownIcon } from 'shared/components/icons.mjs'
+import { OkIcon } from 'shared/components/icons.mjs'
 import { FreeSewingAnimation } from 'shared/components/animations/freesewing.mjs'
 import { HowDoesItWorkAnimation } from 'shared/components/animations/how-does-it-work.mjs'
 import { SignUp } from 'shared/components/susi/sign-up.mjs'
+import { PatronsCta, ns as patronsNs } from 'shared/components/patrons/cta.mjs'
 
-const ns = nsMerge(pageNs, 'common', 'homepage', 'signup', 'errors')
+const ns = nsMerge(pageNs, patronsNs, 'common', 'homepage', 'signup', 'errors')
 
 const BoldLink = ({ href, children }) => (
   <a href={href} className="font-bold underline decoration-2 hover:decoration-4">
@@ -31,17 +32,11 @@ const BoldLink = ({ href, children }) => (
  * or set them manually.
  */
 const HomePage = ({ page }) => {
-  const [ready, setReady] = useState(0)
   const { t } = useTranslation(ns)
   const { account } = useAccount()
 
   // Duration of the FreeSewing animation
   const duration = 6.66
-
-  useEffect(() => {
-    setTimeout(() => setReady(1), duration * 1000)
-    setTimeout(() => setReady(2), duration * 1000 + 500)
-  }, [])
 
   return (
     <PageWrapper {...page} layout={BareLayout}>
@@ -50,25 +45,68 @@ const HomePage = ({ page }) => {
         <title>FreeSewing.org</title>
       </Head>
       <div
-        className={`m-0 p-0 w-full transition-all duration-300 ${
-          ready === 0
-            ? 'h-screen'
-            : ready === 1
-            ? '-translate-y-full h-0 opacity-0 overflow-hide -z-10'
-            : 'hidden'
-        } ${account.username ? 'hidden' : ''}`}
+        className={`m-0 p-0 w-64 m-auto mt-8 mb-20 md:mt-20 ${account.username ? 'hidden' : ''}`}
       >
-        <div className="flex flex-col items-center justify-between h-screen mt-4 lg:mt-12 max-w-md m-auto pb-32">
-          <span />
-          <FreeSewingAnimation duration={duration} />
-          <DownIcon className="w-12 h-12 animate-bounce" />
+        <FreeSewingAnimation duration={duration} />
+      </div>
+
+      <div className="max-w-7xl m-auto px-0 -mt-12 mb-24 md:my-24">
+        <div className="p-1 bg-gradient-to-tr from-neutral to-accent mt-12 rounded-none md:rounded-lg lg:rounded-xl md:shadow text-neutral-content md:mx-4 px-4 md:px-8 lg:px-12">
+          <div className="flex flex-col md:gap-8 lg:gap-12 md:flex md:flex-row m-auto">
+            <div className="md:pt-8 pb-8 lg:py-12 grow m-auto max-w-prose">
+              <SignUp />
+            </div>
+            <div className="-mt-8 md:mt-0 pt-0 md:pt-8 pb-8 lg:py-12 max-w-prose m-auto m-auto">
+              <h2 className="text-inherit mb-4 hidden md:block">Why bother?</h2>
+              <ul>
+                <li className="flex flex-row gap-2 my-2">
+                  <OkIcon stroke={4} /> Free of charge.
+                </li>
+                <li className="flex flex-row gap-2 my-2">
+                  <OkIcon stroke={4} /> No ads. No tracking. No nonsense.
+                </li>
+                <li className="flex flex-row gap-2 my-2">
+                  <OkIcon stroke={4} /> Store your measurements sets and patterns.
+                </li>
+                <li className="flex flex-row gap-2 my-2">
+                  <OkIcon stroke={4} /> Personalize your user experience.
+                </li>
+                <li className="flex flex-row gap-2 my-2">
+                  <OkIcon stroke={4} /> One-click account removal.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-8 md:grid md:grid-cols-2 md:gap-4 mt-12 md:px-4">
+          <div className="p-1 bg-gradient-to-tr from-accent to-primary rounded-none md:rounded-xl md:shadow -mx-2 px-2 md:mx-auto md:px-1 flex flex-col">
+            <div className="bg-base-100 px-4 md:px-8 py-10 rounded-none md:rounded-lg grow">
+              <h2 className="mb-4">{t('whatIsFreeSewing')}</h2>
+              <p className="font-medium">{t('homepage:what1')}</p>
+              <p className="font-medium">{t('homepage:what3')}</p>
+            </div>
+          </div>
+
+          <div className="p-1 bg-gradient-to-tr from-info to-neutral rounded-none md:rounded-xl md:shadow -mx-2 px-2 md:mx-auto md:px-1 flex flex-col">
+            <div className="bg-base-100 px-4 md:px-8 py-10 rounded-none md:rounded-lg grow">
+              <h2 className="mb-4">{t('whatIsFreeSewingNot')}</h2>
+              <p className="font-medium">{t('homepage:whatNot1')}</p>
+              <p className="font-medium">{t('homepage:whatNot2')}</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="text-center mt-12">
+          <h2 className="text-5xl">{t('howDoesItWork')}</h2>
+          <HowDoesItWorkAnimation t={t} />
         </div>
       </div>
 
       <div className="max-w-7xl m-auto px-0 -mt-12 mb-24 md:my-24">
-        <div className="p-1 bg-gradient-to-tr from-neutral to-primary mt-12 rounded-none lg:rounded-xl lg:shadow text-neutral-content md:mx-4">
-          <div className="flex flex-col gap-8 md:grid md:grid-cols-2">
-            <div className="px-4 lg:px-12 pb-4 pt-12 lg:pb-4">
+        <div className="p-1 bg-gradient-to-tr from-neutral to-primary mt-12 rounded-none md:rounded-lg lg:rounded-xl md:shadow text-neutral-content md:mx-4 px-4 md:px-8 lg:px-12">
+          <div className="flex flex-col md:gap-2 lg:gap-12 md:grid md:grid-cols-2">
+            <div className="md:pt-8 pb-8 lg:py-12 max-w-prose w-full m-auto">
               <h2 className="text-inherit mb-4">
                 Hi stranger <span role="img">👋</span>
               </h2>
@@ -87,40 +125,11 @@ const HomePage = ({ page }) => {
               <p className="text-inherit font-medium">love</p>
               <Joost className="ml-12 -mt-8 w-32" />
             </div>
-            <div className="px-4 lg:px-12 pt-12 lg:py-12 pb-8">
-              <SignUp />
+            <div className="-mt-8 md:mt-0 pt-0 md:pt-8 pb-8 lg:py-12 max-w-prose m-auto w-full m-auto">
+              <h2 className="text-inherit">Support FreeSewing</h2>
+              <PatronsCta color="secondary" />
             </div>
           </div>
-        </div>
-
-        <div className="flex flex-col gap-8 md:grid md:grid-cols-2 md:gap-4 mt-12 md:px-4">
-          <div className="p-1 bg-gradient-to-tr from-accent to-primary rounded-none md:rounded-xl md:shadow -mx-2 px-2 md:mx-auto md:px-1 flex flex-col">
-            <div className="bg-base-100 px-4 md:px-8 py-10 rounded-none md:rounded-lg grow">
-              <h2 className="mb-4">{t('whatIsFreeSewing')}</h2>
-              <p className="font-medium">{t('homepage:what1')}</p>
-              <p className="font-medium">{t('homepage:what2')}</p>
-              <p className="font-medium">{t('homepage:what3')}</p>
-            </div>
-          </div>
-
-          <div className="p-1 bg-gradient-to-tr from-info to-neutral rounded-none md:rounded-xl md:shadow -mx-2 px-2 md:mx-auto md:px-1 flex flex-col">
-            <div className="bg-base-100 px-4 md:px-8 py-10 rounded-none md:rounded-lg grow">
-              <h2 className="mb-4">{t('whatIsFreeSewingNot')}</h2>
-              <p className="font-medium">{t('homepage:whatNot1')}</p>
-              <p className="font-medium">{t('homepage:whatNot2')}</p>
-              <p className="font-medium">{t('homepage:whatNot3')}</p>
-              <p className="font-medium">
-                {t('homepage:whatNot4')}
-                <br />
-                {t('homepage:whatNot5')}
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="text-center mt-12">
-          <h2 className="text-5xl">{t('howDoesItWork')}</h2>
-          <HowDoesItWorkAnimation t={t} />
         </div>
       </div>
     </PageWrapper>
