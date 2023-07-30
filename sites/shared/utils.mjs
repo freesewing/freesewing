@@ -386,3 +386,22 @@ export const isSlugPart = (part, slug) => slug && part && slug.slice(0, part.len
  * Expects a slug with no leading slash
  * */
 export const localePath = (locale, slug) => (locale === 'en' ? '/' : `/${locale}/`) + slug
+
+/*
+ * Formats a number for display to human beings. Keeps long/high numbers short
+ */
+export const formatNumber = (num, suffix = '') => {
+  if (num === null || typeof num === 'undefined') return num
+  // Small values don't get formatted
+  if (num < 1) return num
+  if (num) {
+    const sizes = ['', 'K', 'M', 'B']
+    const i = Math.min(
+      parseInt(Math.floor(Math.log(num) / Math.log(1000)).toString(), 10),
+      sizes.length - 1
+    )
+    return `${(num / 1000 ** i).toFixed(i ? 1 : 0)}${sizes[i]}${suffix}`
+  }
+
+  return '0'
+}
