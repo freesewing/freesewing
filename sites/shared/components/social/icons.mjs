@@ -12,7 +12,6 @@ import {
   OpenSourceIcon,
   YouTubeIcon,
 } from 'shared/components/icons.mjs'
-import { colors } from 'shared/components/wordmark.mjs'
 import { social } from 'config/social.mjs'
 import { siteConfig } from 'site/site.config.mjs'
 
