@@ -1,9 +1,8 @@
+import { stripeConfig } from 'shared/config/stripe.mjs'
 import { useEffect, useState } from 'react'
 import { useTheme } from 'shared/hooks/use-theme.mjs'
 import { Elements, PaymentElement } from '@stripe/react-stripe-js'
 import { loadStripe } from '@stripe/stripe-js'
-
-const KEY = 'FIXME-KEY-HERE'
 
 /*
  * The stripe API docs will emphasize to always handle this server-side because
@@ -24,13 +23,13 @@ const createPaymentIntent = async ({ amount, currency }) => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
-      authorization: `Bearer ${KEY}`,
+      authorization: `Bearer ${stripeConfig.apiKey}`,
     },
     body,
   })
 }
 
-export const Payment = ({ amount = 25, currency = 'eur' }) => {
+export const Payment = ({ amount = 2500, currency = 'eur' }) => {
   const appearance = useTheme().stripe
   const [stripe, setStripe] = useState(false)
   const [intent, setIntent] = useState(false)
@@ -53,7 +52,7 @@ export const Payment = ({ amount = 25, currency = 'eur' }) => {
 
   useEffect(() => {
     const getPaymentIntent = async () => {
-      const stripeClient = await loadStripe(KEY)
+      const stripeClient = await loadStripe(stripeConfig.apiKey)
       const result = await createPaymentIntent({ amount, currency })
       const json = await result.json()
       setStripe(stripeClient)
@@ -66,6 +65,7 @@ export const Payment = ({ amount = 25, currency = 'eur' }) => {
     <Elements stripe={stripe} options={options} layout="accordion">
       <form>
         <PaymentElement options={options} />
+        <pre>{JSON.stringify(intent, null, 2)}</pre>
       </form>
     </Elements>
   ) : (

@@ -1,5 +1,5 @@
-import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
-import { useState, useEffect } from 'react'
+import { stripeConfig } from 'shared/config/stripe.mjs'
+import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { formatNumber } from 'shared/utils.mjs'
 import { Payment } from './payment.mjs'
@@ -14,7 +14,7 @@ export const Subscribe = ({ color = 'secondary' }) => {
   const [period, setPeriod] = useState('m')
   const [handlePayment, setHandlePayment] = useState(false)
 
-  const { amounts, periods, currencies } = freeSewingConfig.stripe
+  const { amounts, periods, currencies } = stripeConfig
 
   const changeCurrency = (evt) => {
     const newCur = evt.target.value
@@ -26,13 +26,21 @@ export const Subscribe = ({ color = 'secondary' }) => {
   if (handlePayment)
     return (
       <>
-        <Payment {...{ amount, currency }} />
-        <button
-          className={`btn btn-${color} w-full mt-4`}
-          onClick={() => setHandlePayment(!handlePayment)}
-        >
-          To checkout
-        </button>
+        <Payment amount={amount * 100} currency={currency} />
+        <div className="flex flex-row gap-2 w-full">
+          <button
+            className={`btn btn-${color} grow mt-4`}
+            disabled={(amount / currencies[currency]) * currencies.eur < 1}
+          >
+            {period === 'x' ? 'Donate' : 'Subscribe'}
+          </button>
+          <button
+            className={`btn btn-${color} btn-outline w-12 mt-4`}
+            onClick={() => setHandlePayment(!handlePayment)}
+          >
+            Back
+          </button>
+        </div>
       </>
     )
 
@@ -44,10 +52,11 @@ export const Subscribe = ({ color = 'secondary' }) => {
             <span className="label-text-alt text-inherit">Your contribution</span>
           </label>
           <input
-            type="text"
+            type="number"
             placeholder="Enter amount here"
             className="input input-bordered w-full text-base-content"
             value={amount}
+            onChange={(evt) => setAmount(evt.target.value)}
           />
         </div>
         <div className="form-control w-24">
@@ -56,7 +65,7 @@ export const Subscribe = ({ color = 'secondary' }) => {
           </label>
           <select
             className="select select-bordered text-base-content"
-            defaultValue="eur"
+            defaultValue={currency}
             onChange={changeCurrency}
           >
             {Object.keys(currencies)
@@ -115,6 +124,7 @@ export const Subscribe = ({ color = 'secondary' }) => {
       </div>
       <button
         className={`btn btn-${color} w-full mt-4`}
+        disabled={(amount / currencies[currency]) * currencies.eur < 1}
         onClick={() => setHandlePayment(!handlePayment)}
       >
         To checkout
