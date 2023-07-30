@@ -27,7 +27,7 @@ export default SignUpPage
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ns)),
+      ...(await serverSideTranslations(locale, namespaces)),
       page: {
         path: ['signup'],
       },
