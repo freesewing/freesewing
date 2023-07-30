@@ -106,4 +106,6 @@ export const theme = {
   '--pattern-dev-5': colors.violet['500'],
   '--pattern-dev-6': colors.teal['500'],
   '--pattern-dev-7': colors.neutral['500'],
+
+  stripeTheme: 'night',
 }

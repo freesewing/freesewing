@@ -1,4 +1,4 @@
-import { spectrum, rating } from 'shared/themes/index.mjs'
+import { spectrum, rating, stripe } from 'shared/themes/index.mjs'
 import createPersistedState from 'use-persisted-state'
 
 const usePersistedTheme = createPersistedState('fs-theme')
@@ -20,5 +20,6 @@ export const useTheme = () => {
     setTheme: theme[1],
     spectrum: spectrum[theme[0]],
     rating: rating[theme[0]],
+    stripe: stripe[theme[0]],
   }
 }

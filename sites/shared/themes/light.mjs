@@ -294,4 +294,18 @@ export const theme = {
   '--pattern-sample-8': colors.violet['500'],
   '--pattern-sample-9': colors.fuchsia['500'],
   '--pattern-sample-10': colors.rose['500'],
+
+  /*
+   * Stripe theme
+   *
+   * We use React components provided by the Stripe SDK in the patron
+   * payment dialog. These can be further customized but it is best to
+   * start from a theme that resembles the current somewhat.
+   * You can set the stripe theme name here for that reason. The rest
+   * (including further customization) will be handled auto-magically.
+   *
+   * For a list of available themes to start from see the Stripe docs:
+   * https://stripe.com/docs/elements/appearance-api
+   */
+  stripeTheme: 'stripe',
 }

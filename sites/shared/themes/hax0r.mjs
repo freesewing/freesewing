@@ -109,4 +109,5 @@ export const theme = {
   '--pattern-stroke-2xl': '4px',
   '--pattern-stroke-3xl': '6px',
   '--pattern-stroke-4xl': '8px',
+  stripeTheme: 'stripe',
 }
