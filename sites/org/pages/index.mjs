@@ -1,13 +1,27 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-//import { useTranslation } from 'next-i18next'
-import Head from 'next/head'
+import { nsMerge } from 'shared/utils.mjs'
+// Hooks
+import { useState, useEffect } from 'react'
+import { useTranslation } from 'next-i18next'
+import { useAccount } from 'shared/hooks/use-account.mjs'
 // Components
-import { PageWrapper } from 'shared/components/wrappers/page.mjs'
-import { Popout } from 'shared/components/popout/index.mjs'
-import { PageLink } from 'shared/components/page-link.mjs'
+import Head from 'next/head'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
+//import { PageLink } from 'shared/components/page-link.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { ForceAccountCheck } from 'shared/components/account/force-account-check.mjs'
+import { DownIcon } from 'shared/components/icons.mjs'
+import { FreeSewingAnimation } from 'shared/components/animations/freesewing.mjs'
+import { HowDoesItWorkAnimation } from 'shared/components/animations/how-does-it-work.mjs'
+
+const ns = nsMerge(pageNs, 'common', 'homepage')
+
+//const BoldLink = ({ href, children }) => (
+//  <a href={href} className="font-bold underline hover:decoration-4">
+//    {children}
+//  </a>
+//)
 
 /*
  * Each page MUST be wrapped in the PageWrapper component.
@@ -15,52 +29,74 @@ import { ForceAccountCheck } from 'shared/components/account/force-account-check
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const HomePage = ({ page }) => (
-  <PageWrapper {...page} layout={BareLayout}>
-    <Head>
-      <title>Welcome to FreeSewing.org</title>
-    </Head>
-    <div>
-      <div className="max-w-xl m-auto my-32 px-6">
-        <ForceAccountCheck />
-        <Popout fixme>
-          Create homepage. Meanwhile check <PageLink href="/signup" txt="the signup flow" />
-        </Popout>
-        <h2>What is FreeSewing?</h2>
-        <small>(by ChatGPT)</small>
-        <p>
-          Freesewing is an open-source pattern making software that allows users to generate custom
-          sewing patterns based on their own measurements. It is designed to be flexible and
-          customizable, and can be used to create a wide range of garments, from simple t-shirts and
-          skirts to more complex dresses and jackets.
-        </p>
-        <p>
-          Freesewing is available for free, and users can access a wide range of pre-made patterns
-          or create their own from scratch. The software is designed to be easy to use, with an
-          intuitive interface that guides users through the process of creating a pattern
-          step-by-step.
-        </p>
-        <p>
-          In addition to the pattern making software, freesewing also has an active online community
-          of sewists and pattern makers who share tips, techniques, and advice on all aspects of
-          sewing. The community also collaborates on creating new patterns and improving existing
-          ones, and users can contribute their own patterns to the project as well.
-        </p>
-        <p>
-          Overall, freesewing is a powerful tool for anyone interested in sewing and pattern making,
-          whether they are seasoned professionals or beginners just starting out.
-        </p>
+const HomePage = ({ page }) => {
+  const [ready, setReady] = useState(false)
+  const { t } = useTranslation(ns)
+  const { account } = useAccount()
+
+  useEffect(() => {
+    setTimeout(() => setReady(true), 1800)
+  }, [])
+
+  return (
+    <PageWrapper {...page} layout={BareLayout}>
+      <ForceAccountCheck />
+      <Head>
+        <title>FreeSewing.org</title>
+      </Head>
+      <div
+        className={`m-0 p-0 w-full transition-all duration-300 ${
+          ready ? '-translate-y-full h-1 opacity-0' : 'h-screen'
+        } ${account.username ? 'hidden' : ''}`}
+      >
+        <div className="flex flex-col items-center justify-between h-screen mt-4 lg:mt-12 max-w-md m-auto pb-32">
+          <span />
+          <FreeSewingAnimation />
+          <DownIcon className="w-12 h-12 animate-bounce" />
+        </div>
       </div>
-    </div>
-  </PageWrapper>
-)
+
+      <div className="max-w-7xl m-auto px-0 my-24">
+        <div className="flex flex-col gap-8 md:grid md:grid-cols-2 md:gap-4 mt-12 md:px-4">
+          <div className="p-1 bg-gradient-to-tr from-accent to-primary rounded-none md:rounded-xl md:shadow -mx-2 px-2 md:mx-auto md:px-1 flex flex-col">
+            <div className="bg-base-100 px-4 md:px-8 py-10 rounded-none md:rounded-lg grow">
+              <h2 className="mb-4">{t('whatIsFreeSewing')}</h2>
+              <p className="font-medium">{t('homepage:what1')}</p>
+              <p className="font-medium">{t('homepage:what2')}</p>
+              <p className="font-medium">{t('homepage:what3')}</p>
+            </div>
+          </div>
+
+          <div className="p-1 bg-gradient-to-tr from-info to-neutral rounded-none md:rounded-xl md:shadow -mx-2 px-2 md:mx-auto md:px-1 flex flex-col">
+            <div className="bg-base-100 px-4 md:px-8 py-10 rounded-none md:rounded-lg grow">
+              <h2 className="mb-4">{t('whatIsFreeSewingNot')}</h2>
+              <p className="font-medium">{t('homepage:whatNot1')}</p>
+              <p className="font-medium">{t('homepage:whatNot2')}</p>
+              <p className="font-medium">{t('homepage:whatNot3')}</p>
+              <p className="font-medium">
+                {t('homepage:whatNot4')}
+                <br />
+                {t('homepage:whatNot5')}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="text-center mt-12">
+          <h2 className="text-5xl">{t('howDoesItWork')}</h2>
+          <HowDoesItWorkAnimation t={t} />
+        </div>
+      </div>
+    </PageWrapper>
+  )
+}
 
 export default HomePage
 
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale)),
+      ...(await serverSideTranslations(locale, ns)),
       page: {
         locale,
         path: [],

@@ -1,5 +1,6 @@
 import { freeSewingConfig as conf } from '../config/freesewing.config.mjs'
 import { designs } from '../config/designs.mjs'
+import i18nConfig from '../config/i18n.config.mjs'
 import { loadTranslations } from './shared.mjs'
 import i18next from 'i18next'
 
@@ -17,17 +18,17 @@ import i18next from 'i18next'
  */
 
 export const extendSiteNav = async (siteNav, lang) => {
-  const translations = await loadTranslations({
+  const resources = await loadTranslations({
     site: 'org',
-    namespaces: ['account', 'design', 'sections'],
-    language: lang,
+    namespaces: ['account', 'sections', 'tags', 'designs'],
+    languages: [lang],
   })
 
-  const resources = {}
-  resources[lang] = translations
-  i18next.init({
+  const config = i18nConfig([lang])
+  await i18next.init({
     lng: lang,
     resources,
+    interpolation: config.interpolation,
   })
   const { t } = i18next
 
