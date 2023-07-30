@@ -15,7 +15,7 @@ import { OkIcon } from 'shared/components/icons.mjs'
 import { FreeSewingAnimation } from 'shared/components/animations/freesewing.mjs'
 import { HowDoesItWorkAnimation } from 'shared/components/animations/how-does-it-work.mjs'
 import { SignUp } from 'shared/components/susi/sign-up.mjs'
-import { PatronsCta, ns as patronsNs } from 'shared/components/patrons/cta.mjs'
+import { Subscribe, ns as patronsNs } from 'shared/components/patrons/subscribe.mjs'
 
 const ns = nsMerge(pageNs, patronsNs, 'common', 'homepage', 'signup', 'errors')
 
@@ -127,7 +127,7 @@ const HomePage = ({ page }) => {
             </div>
             <div className="-mt-8 md:mt-0 pt-0 md:pt-8 pb-8 lg:py-12 max-w-prose m-auto w-full m-auto">
               <h2 className="text-inherit">Support FreeSewing</h2>
-              <PatronsCta color="secondary" />
+              <Subscribe color="secondary" />
             </div>
           </div>
         </div>

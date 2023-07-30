@@ -119,4 +119,5 @@ export const theme = {
   '--pattern-sample-8': colors.violet['500'],
   '--pattern-sample-9': colors.fuchsia['500'],
   '--pattern-sample-10': colors.rose['500'],
+  stripeTheme: 'stripe',
 }
