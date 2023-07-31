@@ -3,5 +3,5 @@ mit: Der Quellcode von FreeSewing ist auf Github unter der MIT-Lizenz verfügbar
 sponsors: FreeSewing wird von diesen großartigen Unternehmen gesponsert
 algolia: Suche powered by Algolia
 crowdin: Übersetzung powered by Crowdin
-bugsnag: Fehlerbehandlung durch Bugsnag
+bugsnag: Fehlermanagement durch Bugsnag
 vercel: Aufbauen & Hosten durch Vercel
