@@ -44,6 +44,7 @@ const baseConfig = {
     },
     sanity: envToBool(process.env.BACKEND_ENABLE_SANITY),
     ses: envToBool(process.env.BACKEND_ENABLE_AWS_SES),
+    stripe: envToBool(process.env.BACKEND_ENABLE_PAYMENTS),
     tests: {
       base: envToBool(process.env.BACKEND_ENABLE_TESTS),
       email: envToBool(process.env.BACKEND_ENABLE_TESTS_EMAIL),
@@ -152,6 +153,14 @@ if (baseConfig.use.sanity)
     }`,
   }
 
+// Stripe config
+if (baseConfig.use.stripe)
+  baseConfig.stripe = {
+    keys: {
+      createIntent: process.env.BACKEND_STRIPE_CREATE_INTENT_KEY || false,
+    },
+  }
+
 // AWS SES config (for sending out emails)
 if (baseConfig.use.ses)
   baseConfig.aws = {
@@ -209,6 +218,7 @@ const vars = {
   BACKEND_ENABLE_GITHUB: 'optional',
   BACKEND_ENABLE_OAUTH_GITHUB: 'optional',
   BACKEND_ENABLE_OAUTH_GOOGLE: 'optional',
+  BACKEND_ENABLE_PAYMENTS: 'optional',
   BACKEND_ENABLE_TESTS: 'optional',
   BACKEND_ALLOW_TESTS_IN_PRODUCTION: 'optional',
   BACKEND_ENABLE_DUMP_CONFIG_AT_STARTUP: 'optional',
@@ -250,6 +260,11 @@ if (envToBool(process.env.BACKEND_ENABLE_OAUTH_GOOGLE)) {
   vars.BACKEND_OAUTH_GOOGLE_CLIENT_ID = 'required'
   vars.BACKEND_OAUTH_GOOGLE_CLIENT_SECRET = 'requiredSecret'
 }
+// Vars for Stripe integration
+if (envToBool(process.env.BACKEND_ENABLE_PAYMENTS)) {
+  vars.BACKEND_STRIPE_CREATE_INTENT_KEY = 'requiredSecret'
+}
+
 // Vars for (unit) tests
 if (envToBool(process.env.BACKEND_ENABLE_TESTS)) {
   vars.BACKEND_TEST_DOMAIN = 'optional'
@@ -324,6 +339,11 @@ export function verifyConfig(silent = false) {
           config.jwt.secretOrKey.slice(0, 4) + '**redacted**' + config.jwt.secretOrKey.slice(-4),
       },
     }
+    if (config.stripe)
+      dump.stripe = {
+        ...config.stripe.keys,
+        //token: config.sanity.token.slice(0, 4) + '**redacted**' + config.sanity.token.slice(-4),
+      }
     if (config.sanity)
       dump.sanity = {
         ...config.sanity,

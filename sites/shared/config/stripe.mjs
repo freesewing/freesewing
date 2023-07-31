@@ -1,5 +1,5 @@
 export const stripeConfig = {
-  apiKey: process.env.FS_STRIPE_API_KEY,
+  apiKey: process.env.NEXT_PUBLIC_STRIPE_API_KEY,
   amounts: [5, 10, 25, 50, 100, 250, 500],
   periods: ['w', 'm', '3m', '6m', 'y', 'x'],
   currencies: {
