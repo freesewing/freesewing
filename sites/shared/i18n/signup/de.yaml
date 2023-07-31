@@ -15,8 +15,8 @@ checkYourInbox: Go check your inbox for an email from
 clickSignupLink: Click your personal signup link in that email to create your FreeSewing account.
 back: Back to signup
 contact: Kontakt Unterstützung
-err2: Unfortunately, we cannot recover from this error, we need a human being to look into this.
-err3: Feel free to try again, or reach out to support so we can assist you.
+err2: Leider können wir diesen Fehler nicht beheben, wir brauchen einen Menschen, der sich das ansieht.
+err3: Versuche es einfach noch einmal oder wende dich an den Support, damit wir dir helfen können.
 signupAgain: Sign up again
 signupLinkExpired: Signup link expired
 
