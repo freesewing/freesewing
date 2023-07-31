@@ -4,7 +4,7 @@ import colors from 'tailwindcss/colors'
  * See the light theme for an example with inline comments
  */
 
-export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => 'indigo-300')
+export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(() => 'indigo-300')
 
 export const rating = ['green-500', 'yellow-400', 'amber-500', 'orange-500', 'red-500']
 

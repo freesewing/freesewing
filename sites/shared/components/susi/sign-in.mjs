@@ -51,7 +51,7 @@ export const ButtonText = ({ children }) => (
   <div className="flex flex-row items-center justify-between w-full">{children}</div>
 )
 
-export const SignIn = ({}) => {
+export const SignIn = () => {
   const { startLoading, stopLoading } = useContext(LoadingContext)
   const { setAccount, setToken, seenUser, setSeenUser } = useAccount()
   const { t } = useTranslation(['signin', 'signup', 'toast'])

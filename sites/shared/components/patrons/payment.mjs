@@ -59,7 +59,7 @@ export const Payment = ({ amount = 2500, currency = 'eur' }) => {
       setIntent(json)
     }
     getPaymentIntent()
-  }, [])
+  }, [amount, currency])
 
   return intent ? (
     <Elements stripe={stripe} options={options} layout="accordion">

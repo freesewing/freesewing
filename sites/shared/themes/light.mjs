@@ -21,7 +21,7 @@ import colors from 'tailwindcss/colors'
  * will be used when we want to spread colors across a spectrum.
  * It's what creates a rainbow header/footer.
  */
-export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => 'violet-300')
+export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(() => 'violet-300')
 
 /*
  * Rathing is an array of 5 color names from the tailwind colors that

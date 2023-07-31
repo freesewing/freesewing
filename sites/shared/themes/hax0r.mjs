@@ -6,9 +6,9 @@ import colors from 'tailwindcss/colors'
 
 const bg = '#002808'
 
-export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => 'lime-500')
+export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(() => 'lime-500')
 
-export const rating = [0, 1, 2, 3, 4].map((i) => 'lime-500')
+export const rating = [0, 1, 2, 3, 4].map(() => 'lime-500')
 
 export const theme = {
   fontFamily: `ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;`,
