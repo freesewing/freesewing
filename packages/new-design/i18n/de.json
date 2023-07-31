@@ -30,5 +30,5 @@
   "thingIsDisabled": "{thing} ist deaktiviert",
   "turnOn": "Aktivieren",
   "turnOff": "Deaktivieren",
-  "validNameWarning": "Bitte wähle einen anderen Namen, da dieser Name Probleme verursachen würde.\nWir verwenden den Entwurfsnamen (wieder) als NPM-Paketnamen.\nPaketnamen müssen kleingeschrieben sein und dürfen keine Sonderzeichen enthalten.\nBitte nenne dein Design also entsprechend, z. B:"
+  "validNameWarning": "Bitte wähle einen anderen Namen, da dieser Name Probleme verursachen würde.\nWir verwenden den Entwurfsnamen (auch) als NPM-Paketnamen.\nPaketnamen müssen kleingeschrieben sein und dürfen keine Sonderzeichen enthalten.\nBitte nenne dein Design also dementsprechend, z. B.:"
 }
