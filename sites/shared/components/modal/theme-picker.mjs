@@ -10,7 +10,7 @@ export const ModalThemePicker = () => {
   const { t } = useTranslation(ns)
 
   return (
-    <ModalWrapper app={app}>
+    <ModalWrapper>
       <div className="grid gap-2 p-4 grid-cols-1 max-w-lg w-full">
         <h2>{t('themes:chooseYourTheme')}</h2>
         {Object.keys(themes).map((theme) => (
