@@ -34,10 +34,10 @@ noDesignFound: Ми не змогли знайти цей дизайн. Цьог
 saveYourPattern: Збережіть свій шаблон
 giveItAName: Дайте йому ім'я.
 changeMeasies: Вимірювання зміни шаблону
-editCurrentMeasies: Редагувати поточні вимірювання
+editCurrentMeasies: Відредагувати поточні заміри
 editCurrentMeasiesHeader: Edit Pattern Measurements
 editCurrentMeasiesDesc: Changes you make here will not be saved to your measurements sets, and will only affect this pattern.
-chooseNewSet: Виберіть новий набір вимірювань
+chooseNewSet: Обрати новий набір мірок
 weLackSomeMeasies: Нам не вистачає { nr } вимірів для створення цього шаблону
 youCanPickOrEnter: Ви можете вибрати набір вимірів або ввести їх вручну, але без цих вимірів ми не зможемо продовжити роботу.
 measiesOk: У нас є всі необхідні виміри для створення цієї моделі.
