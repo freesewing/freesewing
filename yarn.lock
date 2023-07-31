@@ -2969,21 +2969,6 @@
     get-random-values-esm "^1.0.0"
     lodash "^4.17.21"
 
-"@sanity/cli@3.14.3":
-  version "3.14.3"
-  resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-3.14.3.tgz#4dfa8762152d1c90d40b325203b1bc43556fa538"
-  integrity sha512-ReuSOD0SSMVOd8aBCscJys577LgPDZicNOIgzahLUUu3i2+8r9Vmwr5Ue5WhzqmhtMNSjLJmUSLELfxv/SS4lQ==
-  dependencies:
-    "@babel/traverse" "^7.19.0"
-    "@vercel/frameworks" "1.4.3"
-    "@vercel/fs-detectors" "4.1.0"
-    chalk "^4.1.2"
-    esbuild "^0.18.0"
-    esbuild-register "^3.4.1"
-    get-it "^8.0.9"
-    golden-fleece "^1.0.9"
-    pkg-dir "^5.0.0"
-
 "@sanity/cli@3.14.4":
   version "3.14.4"
   resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-3.14.4.tgz#9d5d9c3a1cf88dc428e90ce00e7647f0a2b47fcb"
@@ -9435,10 +9420,10 @@ i18next-fs-backend@^2.1.5:
   resolved "https://registry.yarnpkg.com/i18next-fs-backend/-/i18next-fs-backend-2.1.5.tgz#03347eacde6a35b599da1889a048ae63bcf0c687"
   integrity sha512-7fgSH8nVhXSBYPHR/W3tEXXhcnwHwNiND4Dfx9knzPzdsWTUTL/TdDVV+DY0dL0asHKLbdoJaXS4LdVW6R8MVQ==
 
-i18next@23.3.0:
-  version "23.3.0"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-23.3.0.tgz#88528a735bb3e61019093899867b9fdb26436508"
-  integrity sha512-xd/UzWT71zYudCT7qVn6tB4yUVuXAhgCorsowYgM2EOdc14WqQBp5P2wEsxgfiDgdLN5XwJvTbzxrMfoY/nxnw==
+i18next@23.4.1:
+  version "23.4.1"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-23.4.1.tgz#11fe0db92ac8a4125934960ebccf6a5f8ed6b9fc"
+  integrity sha512-07ekE7hbUrbxTYj97VnBzyhKcGURTJC9p4iWTwCVC8t63T+YrgqQmb/n1LBQMivZYwR61pqS+PC0G2rtENycyQ==
   dependencies:
     "@babel/runtime" "^7.22.5"
 
