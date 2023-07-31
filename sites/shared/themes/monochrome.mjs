@@ -6,7 +6,7 @@ import colors from 'tailwindcss/colors'
 
 const color = colors.stone
 
-export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => 'stone-300')
+export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(() => 'stone-300')
 
 export const rating = ['stone-400', 'stone-500', 'stone-600', 'stone-700', 'stone-800']
 

@@ -1,6 +1,6 @@
 import colors from 'tailwindcss/colors'
 
-export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((i) => 'violet-400')
+export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(() => 'violet-400')
 
 export const rating = ['green-400', 'yellow-400', 'amber-500', 'orange-500', 'red-500']
 
