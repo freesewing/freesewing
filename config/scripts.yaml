@@ -61,7 +61,7 @@ backend:
   rmdb: 'node ./scripts/rmdb.mjs'
   test: 'npx mocha --require mocha-steps tests/index.mjs'
   vbuild: *vbuild
-  prebuild: 'node scripts/prebuild.mjs'
+  prebuild: &sitePrebuild 'node --conditions=internal --experimental-json-modules ./prebuild.mjs'
 
 dev:
   build: &nextBuild 'next build'
@@ -71,7 +71,7 @@ dev:
   develop: *nextDev
   i18n: "SITE=dev node --conditions=internal ../shared/prebuild/i18n-only.mjs"
   lint: &nextLint 'next lint'
-  prebuild: &nextPrebuild 'node --conditions=internal --experimental-json-modules ./prebuild.mjs'
+  prebuild: *sitePrebuild
   serve: "pm2 start npm --name 'dev' -- run start"
   start: &nextStart 'yarn prebuild && yarn dev'
 
@@ -87,7 +87,7 @@ lab:
   i18n: 'SITE=lab node --conditions=internal ../shared/prebuild/i18n-only.mjs'
   e2e: &e2e 'yarn playwright test'
   lint: *nextLint
-  prebuild: *nextPrebuild
+  prebuild: *sitePrebuild
   start: *nextStart
 
 org:
@@ -98,7 +98,7 @@ org:
   develop: *nextDev
   i18n: 'SITE=org node --conditions=internal ../shared/prebuild/i18n-only.mjs'
   lint: *nextLint
-  prebuild: *nextPrebuild
+  prebuild: *sitePrebuild
   start: *nextStart
 
 sanity:

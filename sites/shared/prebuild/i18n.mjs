@@ -12,6 +12,7 @@ import { designs } from '../i18n/designs.mjs'
  */
 const sitesFolder = path.join(fileURLToPath(import.meta.url), '..', '..', '..')
 export const folders = {
+  backend: [path.join(sitesFolder, 'backend', 'src', 'templates', 'email')],
   org: [path.join(sitesFolder, 'org', 'pages'), path.join(sitesFolder, 'org', 'components')],
   dev: [path.join(sitesFolder, 'dev', 'pages'), path.join(sitesFolder, 'dev', 'components')],
   lab: [path.join(sitesFolder, 'lab', 'pages'), path.join(sitesFolder, 'lab', 'components')],
@@ -42,10 +43,11 @@ const writeJson = async (site, locale, namespace, content) => {
  *
  */
 const getI18nFileList = async (site, languages) => {
-  const dirs = [...folders.shared]
-  if (site === 'org') dirs.push(...folders.org)
-  if (site === 'dev') dirs.push(...folders.dev)
-  if (site === 'lab') dirs.push(...folders.lab)
+  const dirs = []
+  if (site === 'org') dirs.push(...folders.org, ...folders.shared)
+  else if (site === 'dev') dirs.push(...folders.dev, ...folder.shared)
+  else if (site === 'lab') dirs.push(...folders.lab, ...folders.shared)
+  else if (site === 'backend') dirs.push(...folders.backend)
 
   const allFiles = []
   for (const dir of dirs) {
@@ -181,9 +183,15 @@ export const prebuildI18n = async (store) => {
   // Write out code-adjacent source files
   for (const language of languages) {
     // Fan out into namespaces
-    for (const namespace in namespaces)
+    for (const namespace in namespaces) {
       writeJson(store.site, language, namespace, namespaces[namespace][language])
+    }
   }
+
+  /*
+   * For backend, this is all we need
+   */
+  if (store.site === 'backend') return (store.i18n = { namespaces })
 
   /*
    * Handle design translations
