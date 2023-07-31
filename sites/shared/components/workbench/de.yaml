@@ -34,10 +34,10 @@ noDesignFound: Wir konnten dieses Design nicht finden. Das sollte nicht passiere
 saveYourPattern: Speichere dein Schnittmuster
 giveItAName: Gib ihm einen Namen
 changeMeasies: Muster ändern Messungen
-editCurrentMeasies: Aktuelle Messwerte bearbeiten
+editCurrentMeasies: Aktuelle Maße bearbeiten
 editCurrentMeasiesHeader: Schnittmuster-Maße bearbeiten
 editCurrentMeasiesDesc: Änderungen, die du hier vornimmst, werden nicht in deine Maßsätze gespeichert und wirken sich nur auf dieses Schnittmuster aus.
-chooseNewSet: Wähle ein neues Maßnahmeset
+chooseNewSet: Choose a New Measurements Set
 weLackSomeMeasies: Uns fehlen { nr } Messungen, um dieses Muster zu erstellen
 youCanPickOrEnter: Du kannst entweder einen Satz Messungen auswählen oder sie von Hand eingeben, aber ohne diese Messungen können wir nicht weitermachen.
 measiesOk: Wir haben alle erforderlichen Maße, um dieses Muster zu erstellen.
