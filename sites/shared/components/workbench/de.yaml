@@ -31,18 +31,18 @@ docs: Dokumentation
 configurePattern: Muster konfigurieren
 measies: Muster-Messungen
 noDesignFound: Wir konnten dieses Design nicht finden. Das sollte nicht passieren, also würden wir uns freuen, wenn du es meldest.
-saveYourPattern: Speichere dein Muster
+saveYourPattern: Speichere dein Schnittmuster
 giveItAName: Gib ihm einen Namen
 changeMeasies: Muster ändern Messungen
 editCurrentMeasies: Aktuelle Messwerte bearbeiten
-editCurrentMeasiesHeader: Edit Pattern Measurements
-editCurrentMeasiesDesc: Changes you make here will not be saved to your measurements sets, and will only affect this pattern.
+editCurrentMeasiesHeader: Schnittmuster-Maße bearbeiten
+editCurrentMeasiesDesc: Änderungen, die du hier vornimmst, werden nicht in deine Maßsätze gespeichert und wirken sich nur auf dieses Schnittmuster aus.
 chooseNewSet: Wähle ein neues Maßnahmeset
 weLackSomeMeasies: Uns fehlen { nr } Messungen, um dieses Muster zu erstellen
 youCanPickOrEnter: Du kannst entweder einen Satz Messungen auswählen oder sie von Hand eingeben, aber ohne diese Messungen können wir nicht weitermachen.
 measiesOk: Wir haben alle erforderlichen Maße, um dieses Muster zu erstellen.
-seeMissingMeasies: See missing measurements
-appliedMeasies: We applied a new measurements set to this pattern.
+seeMissingMeasies: Siehe fehlende Maße
+appliedMeasies: Wir haben dieses Schnittmuster mit einem neuen Maßsatz versehen.
 exportForPrinting: Für den Druck exportieren
 exportForEditing: Für die Bearbeitung exportieren
 exportAsData: Als Daten exportieren
