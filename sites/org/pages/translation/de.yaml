@@ -1,23 +1,23 @@
 translation: Übersetzung
-proudlyMultilingual: Dank der freiwilligen Übersetzer in unserer Community ist FreeSewing stolz darauf, mehrsprachig zu sein.
+proudlyMultilingual: Dank der freiwilligen Übersetzer/-innen unserer Community kann FreeSewing stolz mehrsprachig sein.
 getInvolved: Engagiere dich
 teamEffort: Übersetzen ist eine Teamleistung, und wir würden uns freuen, wenn du einem unserer Sprachteams beitreten würdest.
 seeTranslationGuide: Alle Details findest du in der FreeSewing-Übersetzungsanleitung
-translatedAndApproved: Übersetzt und von einem Korrekturleser genehmigt
-translatedOnly: Übersetzt, aber (noch) nicht von einem Korrekturleser genehmigt
+translatedAndApproved: Übersetzt und von Korrekturleser/-innen genehmigt
+translatedOnly: Übersetzt, aber (noch) nicht von Korrekturleser/-innen genehmigt
 notTranslated: (noch) nicht übersetzt
-defaultLanguage: Dies ist unsere Quellsprache und die Arbeitssprache des FreeSewing-Projekts
+defaultLanguage: Dies ist unsere Ausgangssprache und die Arbeitssprache des FreeSewing-Projekts
 addLanguage1: Willst du eine Sprache hinzufügen?
 addLanguage2: Wir würden FreeSewing gerne in mehr Sprachen verfügbar machen.
-addLanguage3: Wenn du daran interessiert bist, eine neue Übersetzungsarbeit zu beginnen, melde dich bitte.
+addLanguage3: Wenn du daran interessiert bist, ein neues Übersetzungsunterfangen zu beginnen, melde dich bitte.
 globalRanking: Globale Rangliste
 groupByLanguage: Nach Sprache gruppieren
-translator: Übersetzer*in
+translator: Übersetzer/-in
 words: Wörter
 joinTheTeam: Tritt dem Team bei
 joinATranslationTeam: Tritt einem Übersetzungsteam bei
 languageTeam: "{language} Team"
-whatTeam: Welchem Sprachteam trittst du bei?
+whatTeam: Welchem Sprachenteam trittst du bei?
 sendMeAnInvite: Schick mir eine Einladung
 pleaseChooseTeam: Bitte wähle unten eine Sprache aus, damit wir dir die richtige Einladung schicken können.
 successNote: Bitte schau in deinem Posteingang nach. Du erhältst eine E-Mail mit einem Einladungscode, der dir Zugang zur Übersetzung auf Crowdin gewährt, der Online-Übersetzungsplattform, die wir nutzen, um FreeSewing in mehrere Sprachen zu übersetzen.
