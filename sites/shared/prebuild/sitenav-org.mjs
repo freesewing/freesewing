@@ -174,7 +174,7 @@ export const extendSiteNav = async (siteNav, lang) => {
       _: 1,
       s: 'thanks',
       h: 1,
-      t: t('patrons:thankYouSoVeryMuch'),
+      t: t('patrons:thankYouVeryMuch'),
     },
   }
 
@@ -190,6 +190,14 @@ export const extendSiteNav = async (siteNav, lang) => {
       h: 1,
       t: t('patrons:thankYouVeryMuch'),
     },
+  }
+
+  // Add support
+  siteNav.support = {
+    _: 1,
+    s: 'support',
+    h: 1,
+    t: t('sections:support'),
   }
 
   // Add search
