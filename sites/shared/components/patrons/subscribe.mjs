@@ -1,55 +1,64 @@
-import { stripeConfig } from 'shared/config/stripe.mjs'
+import { paypalConfig } from 'shared/config/paypal.mjs'
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
-import { formatNumber } from 'shared/utils.mjs'
-import { Payment } from './payment.mjs'
 
 export const ns = ['patrons']
 
-export const Subscribe = ({ color = 'secondary' }) => {
-  const { t } = useTranslation(ns)
+const PaypalFormBody = ({ amount, period, currency, language }) => (
+  <>
+    {[
+      ...Object.entries(paypalConfig.vars[period === 'x' ? 'donate' : 'subscribe']),
+      ...Object.entries(paypalConfig.vars.shared),
+    ].map(([name, value]) => (
+      <input type="hidden" {...{ name, value }} key={name} />
+    ))}
+    <input
+      type="hidden"
+      name="item_number"
+      value={
+        period === 'x'
+          ? `donate-${amount}-${currency}`
+          : `subscribe-${amount}-${currency}-${period}`
+      }
+    />
+    {period === 'x' ? (
+      <>
+        <input type="hidden" name="item_number" value={`donate-${amount}-${currency}`} />
+        <input type="hidden" name="amount" value={amount} />
+      </>
+    ) : (
+      <>
+        <input
+          type="hidden"
+          name="item_number"
+          value={`subscribe-${amount}-${currency}-${period}`}
+        />
+        <input type="hidden" name="p3" value={period === '3m' ? 3 : period === '6m' ? 6 : 1} />
+        <input type="hidden" name="t3" value={period === 'w' ? 'W' : period === 'y' ? 'Y' : 'M'} />
+        <input type="hidden" name="a3" value={amount} />
+      </>
+    )}
+    <input type="hidden" name="currency_code" value={currency.toUpperCase()} />
+    <input type="hidden" name="lc" value={paypalConfig.languages[language]} />
+  </>
+)
 
-  const [amount, setAmount] = useState(null)
+export const Subscribe = ({ color = 'secondary' }) => {
+  const { t, i18n } = useTranslation(ns)
+  const { language } = i18n
+
+  const [amount, setAmount] = useState('25')
   const [currency, setCurrency] = useState('eur')
   const [period, setPeriod] = useState('m')
-  const [handlePayment, setHandlePayment] = useState(false)
 
-  const { amounts, periods, currencies } = stripeConfig
-
-  const changeCurrency = (evt) => {
-    const newCur = evt.target.value
-    const newAmount = amount ? (amount / currencies[currency]) * currencies[newCur] : amount
-    setAmount(newAmount)
-    setCurrency(newCur)
-  }
-
-  if (handlePayment)
-    return (
-      <>
-        <Payment amount={amount * 100} currency={currency} />
-        <div className="flex flex-row gap-2 w-full">
-          <button
-            className={`btn btn-${color} grow mt-4`}
-            disabled={(amount / currencies[currency]) * currencies.eur < 1}
-          >
-            {period === 'x' ? 'Donate' : 'Subscribe'}
-          </button>
-          <button
-            className={`btn btn-${color} btn-outline w-12 mt-4`}
-            onClick={() => setHandlePayment(!handlePayment)}
-          >
-            Back
-          </button>
-        </div>
-      </>
-    )
+  const { amounts, periods, currencies } = paypalConfig
 
   return (
     <div className="w-full">
       <div className="flex flex-row gap-2">
         <div className="form-control w-full">
           <label className="label">
-            <span className="label-text-alt text-inherit">Your contribution</span>
+            <span className="label-text-alt text-inherit">{t('patrons:yourContribution')}</span>
           </label>
           <input
             type="number"
@@ -61,34 +70,32 @@ export const Subscribe = ({ color = 'secondary' }) => {
         </div>
         <div className="form-control w-24">
           <label className="label">
-            <span className="label-text-alt text-inherit">Currency</span>
+            <span className="label-text-alt text-inherit">{t('patrons:currency')}</span>
           </label>
           <select
             className="select select-bordered text-base-content"
             defaultValue={currency}
-            onChange={changeCurrency}
+            onChange={(evt) => setCurrency(evt.target.value)}
           >
-            {Object.keys(currencies)
-              .sort()
-              .map((cur) => (
-                <option value={cur} key={cur}>
-                  {cur.toUpperCase()}
-                </option>
-              ))}
+            {currencies.sort().map((cur) => (
+              <option value={cur} key={cur}>
+                {cur.toUpperCase()}
+              </option>
+            ))}
           </select>
         </div>
       </div>
       <div>
         <label className="label">
           <div className="label-text-alt text-inherit flex flex-row flex-wrap gap-1">
-            <span className="hidden lg:inline">Presets:</span>
+            <span className="hidden lg:inline">{t('patrons:presets')}:</span>
             {amounts.map((val) => (
               <button
                 key={val}
                 className="font-bold underline decoration-2 px-1 hover:decoration-4"
-                onClick={() => setAmount(val * currencies[currency])}
+                onClick={() => setAmount(val)}
               >
-                {formatNumber(val * currencies[currency])}
+                {val}
               </button>
             ))}
           </div>
@@ -122,13 +129,22 @@ export const Subscribe = ({ color = 'secondary' }) => {
           </div>
         ))}
       </div>
-      <button
-        className={`btn btn-${color} w-full mt-4`}
-        disabled={(amount / currencies[currency]) * currencies.eur < 1}
-        onClick={() => setHandlePayment(!handlePayment)}
+      <form
+        action="https://www.paypal.com/cgi-bin/webscr"
+        method="post"
+        target="_top"
+        id={'form-tier'}
+        className="monthly"
       >
-        To checkout
-      </button>
+        <PaypalFormBody {...{ currency, amount, period, language }} />
+        <button
+          className={`btn btn-${color} w-full mt-4`}
+          disabled={Number(amount) < 1}
+          type="submit"
+        >
+          {period === 'x' ? t('patrons:donate') : t('patrons:subscribe')}
+        </button>
+      </form>
     </div>
   )
 }

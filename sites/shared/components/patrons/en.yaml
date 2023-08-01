@@ -4,4 +4,10 @@ period-3m: Quarterly
 period-6m: Half-yearly
 period-y: Yearly
 period-x: One time only
-
+subscribe: Subscribe
+donate: Donate
+yourContribution: Your contribution
+currency: Currency
+presets: Presets
+itemNameSubscription: FreeSewing Patron Subscription
+itemNameDonation: FreeSewing Donation
