@@ -119,28 +119,28 @@ const HomePage = ({ page }) => {
       <div className="flex flex-col md:grid md:grid-cols-2 gap-4 max-w-7xl m-auto mb-24 px-4">
         <CardLink
           color="primary"
-          href="/reference/api"
+          href="/designs"
           title="Designs"
           icon={<DesignIcon className="w-10 h-10" />}
           text="Browse our collection of designs, and turn them into sewing patterns that are made-to-measure just for you."
         />
         <CardLink
           color="primary bg-opacity-10"
-          href="/reference/api"
+          href="/showcase"
           title="Showcase"
           icon={<ShowcaseIcon className="w-10 h-10" />}
           text="Get inspiration from the FreeSewing community, and see how others have applied their creativity to our designs."
         />
         <CardLink
           color="neutral bg-opacity-10"
-          href="/reference/api"
+          href="/docs/guide"
           title="Getting Started"
           icon={<DocsIcon className="w-10 h-10" />}
           text="FreeSewing.org is unlike any sewing pattern website you know. Read this short guide to get the most our of our platform."
         />
         <CardLink
           color="neutral"
-          href="/reference/api"
+          href="/docs/faq"
           title="Frequently Asked Questions"
           icon={<HelpIcon className="w-10 h-10" />}
           text="Some of the questions that come up often when people discover our platform are answered here."
@@ -151,7 +151,7 @@ const HomePage = ({ page }) => {
         <div className="w-full lg:w-1/2 m-auto">
           <CardLink
             color="accent bg-opacity-10"
-            href="/reference/api"
+            href="/support"
             title="Need Help?"
             icon={<ChatIcon className="w-10 h-10" />}
             text="While we are all volunteers, we have a good track record of helping people. So don't be shy to reach out."
