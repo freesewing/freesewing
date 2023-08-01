@@ -11,13 +11,36 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 //import { PageLink } from 'shared/components/page-link.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { ForceAccountCheck } from 'shared/components/account/force-account-check.mjs'
-import { OkIcon } from 'shared/components/icons.mjs'
+import {
+  OkIcon,
+  DesignIcon,
+  ShowcaseIcon,
+  DocsIcon,
+  HelpIcon,
+  ChatIcon,
+} from 'shared/components/icons.mjs'
 import { FreeSewingAnimation } from 'shared/components/animations/freesewing.mjs'
 import { HowDoesItWorkAnimation } from 'shared/components/animations/how-does-it-work.mjs'
 import { SignUp } from 'shared/components/susi/sign-up.mjs'
 import { PleaseSubscribe } from 'shared/components/patrons/please-subscribe.mjs'
+import Link from 'next/link'
 
 const ns = nsMerge(pageNs, 'patrons', 'common', 'homepage', 'signup', 'errors', 'patrons')
+
+const CardLink = ({ color = 'primary', href, title, text, icon }) => (
+  <Link
+    href={href}
+    className={`px-8 bg-${color} py-10 rounded-lg block text-${color}-content
+    hover:bg-secondary hover:text-secondary-content shadow-lg
+    transition-color duration-300 grow`}
+  >
+    <h2 className="mb-4 text-inherit flex flex-row gap-4 items-center font-light">
+      {icon}
+      {title}
+    </h2>
+    <p className="font-medium text-inherit italic">{text}</p>
+  </Link>
+)
 
 /*
  * Each page MUST be wrapped in the PageWrapper component.
@@ -55,23 +78,13 @@ const HomePage = ({ page }) => {
               <SignUp />
             </div>
             <div className="-mt-8 md:mt-0 pt-0 md:pt-8 pb-8 lg:py-12 max-w-prose m-auto m-auto">
-              <h2 className="text-inherit mb-4 hidden md:block">Why bother?</h2>
+              <h2 className="text-inherit mb-4 hidden md:block">{t('homepage:whyBother')}</h2>
               <ul>
-                <li className="flex flex-row gap-2 my-2">
-                  <OkIcon stroke={4} /> Free of charge.
-                </li>
-                <li className="flex flex-row gap-2 my-2">
-                  <OkIcon stroke={4} /> No ads. No tracking. No nonsense.
-                </li>
-                <li className="flex flex-row gap-2 my-2">
-                  <OkIcon stroke={4} /> Store your measurements sets and patterns.
-                </li>
-                <li className="flex flex-row gap-2 my-2">
-                  <OkIcon stroke={4} /> Personalize your user experience.
-                </li>
-                <li className="flex flex-row gap-2 my-2">
-                  <OkIcon stroke={4} /> One-click account removal.
-                </li>
+                {[1, 2, 3, 4, 5].map((i) => (
+                  <li className="flex flex-row gap-2 my-2" key={i}>
+                    <OkIcon stroke={4} /> {t(`homepage:why${i}`)}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
@@ -102,6 +115,49 @@ const HomePage = ({ page }) => {
       </div>
 
       <PleaseSubscribe />
+
+      <div className="flex flex-col md:grid md:grid-cols-2 gap-4 max-w-7xl m-auto mb-24 px-4">
+        <CardLink
+          color="primary"
+          href="/reference/api"
+          title="Designs"
+          icon={<DesignIcon className="w-10 h-10" />}
+          text="Browse our collection of designs, and turn them into sewing patterns that are made-to-measure just for you."
+        />
+        <CardLink
+          color="primary bg-opacity-10"
+          href="/reference/api"
+          title="Showcase"
+          icon={<ShowcaseIcon className="w-10 h-10" />}
+          text="Get inspiration from the FreeSewing community, and see how others have applied their creativity to our designs."
+        />
+        <CardLink
+          color="neutral bg-opacity-10"
+          href="/reference/api"
+          title="Getting Started"
+          icon={<DocsIcon className="w-10 h-10" />}
+          text="FreeSewing.org is unlike any sewing pattern website you know. Read this short guide to get the most our of our platform."
+        />
+        <CardLink
+          color="neutral"
+          href="/reference/api"
+          title="Frequently Asked Questions"
+          icon={<HelpIcon className="w-10 h-10" />}
+          text="Some of the questions that come up often when people discover our platform are answered here."
+        />
+      </div>
+
+      <div className="max-w-7xl m-auto mb-24 px-4">
+        <div className="w-full lg:w-1/2 m-auto">
+          <CardLink
+            color="accent bg-opacity-10"
+            href="/reference/api"
+            title="Need Help?"
+            icon={<ChatIcon className="w-10 h-10" />}
+            text="While we are all volunteers, we have a good track record of helping people. So don't be shy to reach out."
+          />
+        </div>
+      </div>
     </PageWrapper>
   )
 }
