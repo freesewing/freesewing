@@ -45,7 +45,7 @@ const writeJson = async (site, locale, namespace, content) => {
 const getI18nFileList = async (site, languages) => {
   const dirs = []
   if (site === 'org') dirs.push(...folders.org, ...folders.shared)
-  else if (site === 'dev') dirs.push(...folders.dev, ...folder.shared)
+  else if (site === 'dev') dirs.push(...folders.dev, ...folders.shared)
   else if (site === 'lab') dirs.push(...folders.lab, ...folders.shared)
   else if (site === 'backend') dirs.push(...folders.backend)
 
