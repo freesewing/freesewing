@@ -43,15 +43,23 @@ const PaypalFormBody = ({ amount, period, currency, language }) => (
   </>
 )
 
-export const Subscribe = ({ color = 'secondary' }) => {
+export const Subscribe = ({
+  color = 'secondary',
+  subscribeOnly,
+  amountPreset = '25',
+  periodPreset = 'm',
+}) => {
   const { t, i18n } = useTranslation(ns)
   const { language } = i18n
 
-  const [amount, setAmount] = useState('25')
+  const [amount, setAmount] = useState(amountPreset)
   const [currency, setCurrency] = useState('eur')
-  const [period, setPeriod] = useState('m')
+  const [period, setPeriod] = useState(periodPreset)
 
-  const { amounts, periods, currencies } = paypalConfig
+  const { amounts, currencies } = paypalConfig
+  const periods = subscribeOnly
+    ? paypalConfig.periods.filter((p) => p !== 'x')
+    : paypalConfig.periods
 
   return (
     <div className="w-full">
@@ -113,7 +121,7 @@ export const Subscribe = ({ color = 'secondary' }) => {
               <input
                 type="radio"
                 name="period"
-                className={`radio checked:bg-${color} border-inherit bg-inherit radio-xs lg:radio-sm`}
+                className={`radio checked:bg-${color} border-${color} radio-xs lg:radio-sm`}
                 value={val}
                 onChange={() => setPeriod(val)}
                 checked={val === period ? 1 : 0}
