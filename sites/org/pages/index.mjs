@@ -4,6 +4,7 @@ import { nsMerge } from 'shared/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 import { useAccount } from 'shared/hooks/use-account.mjs'
+import { useEffect, useState } from 'react'
 // Components
 import Head from 'next/head'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
@@ -16,7 +17,7 @@ import { HowDoesItWorkAnimation } from 'shared/components/animations/how-does-it
 import { SignUp } from 'shared/components/susi/sign-up.mjs'
 import { Subscribe, ns as patronsNs } from 'shared/components/patrons/subscribe.mjs'
 
-const ns = nsMerge(pageNs, patronsNs, 'common', 'homepage', 'signup', 'errors')
+const ns = nsMerge(pageNs, patronsNs, 'common', 'homepage', 'signup', 'errors', 'patrons')
 
 const BoldLink = ({ href, children }) => (
   <a href={href} className="font-bold underline decoration-2 hover:decoration-4">
@@ -33,9 +34,15 @@ const BoldLink = ({ href, children }) => (
 const HomePage = ({ page }) => {
   const { t } = useTranslation(ns)
   const { account } = useAccount()
+  const [user, setUser] = useState(false)
 
   // Duration of the FreeSewing animation
   const duration = 6.66
+
+  useEffect(() => {
+    // Do this here to avoid hydration issues
+    if (account.username) setUser(account.username)
+  }, [account.username])
 
   return (
     <PageWrapper {...page} layout={BareLayout}>
@@ -43,9 +50,7 @@ const HomePage = ({ page }) => {
       <Head>
         <title>FreeSewing.org</title>
       </Head>
-      <div
-        className={`m-0 p-0 w-64 m-auto mt-8 mb-20 md:mt-20 ${account.username ? 'hidden' : ''}`}
-      >
+      <div className={`m-0 p-0 w-64 m-auto mt-8 mb-20 md:mt-20 ${user ? 'hidden' : ''}`}>
         <FreeSewingAnimation duration={duration} />
       </div>
 
@@ -107,21 +112,14 @@ const HomePage = ({ page }) => {
           <div className="flex flex-col md:gap-2 lg:gap-12 md:grid md:grid-cols-2">
             <div className="md:pt-8 pb-8 lg:py-12 max-w-prose w-full m-auto">
               <h2 className="text-inherit mb-4">
-                Hi stranger <span role="img">👋</span>
+                {user ? t('hiUsername', { username: user }) : t('hiFriend')}
+                <span role="img"> 👋</span>
               </h2>
-              <p className="text-inherit font-medium">
-                My name is <b>Joost De Cock</b>. I am the founder and maintainer of{' '}
-                <b>FreeSewing</b>.
-              </p>
-              <p className="text-inherit font-medium">
-                I am here to ask your help. Or, more accurately, your support. Which we really need.
-              </p>
-              <p className="text-inherit font-medium">
-                If you think what we do is worthwhile, and if you can spare a few coins each month
-                without hardship, please <BoldLink href="/patrons/join">support our work</BoldLink>.
-              </p>
-              <p className="text-inherit font-medium">Thanks in advance for considering it.</p>
-              <p className="text-inherit font-medium">love</p>
+              {[1, 2, 3, 4, 5].map((i) => (
+                <p className="text-inherit font-medium" key={i}>
+                  {t(`homepage:plead${i}`)}
+                </p>
+              ))}
               <Joost className="ml-12 -mt-8 w-32" />
             </div>
             <div className="-mt-8 md:mt-0 pt-0 md:pt-8 pb-8 lg:py-12 max-w-prose m-auto w-full m-auto">
