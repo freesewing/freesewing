@@ -35,8 +35,6 @@
     "@mdx-js/react": "2.3.0",
     "@mdx-js/runtime": "2.0.0-next.9",
     "@sanity/client": "^6.1.2",
-    "@stripe/react-stripe-js": "^2.1.1",
-    "@stripe/stripe-js": "^1.54.1",
     "@tailwindcss/typography": "0.5.9",
     "algoliasearch": "4.19.1",
     "react-copy-to-clipboard": "5.1.0",
