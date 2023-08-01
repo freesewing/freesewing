@@ -9,11 +9,11 @@ import { signupaed, translations as signupaedTranslations } from './signup-aed/i
 import { transinvite, translations as transinviteTranslations } from './transinvite/index.mjs'
 import { langsuggest } from './langsuggest/index.mjs'
 // Shared translations
-import en from '../../../public/locales/en/shared.json' assert { type: 'json' }
-import de from '../../../public/locales/de/shared.json' assert { type: 'json' }
-import es from '../../../public/locales/es/shared.json' assert { type: 'json' }
-import fr from '../../../public/locales/fr/shared.json' assert { type: 'json' }
-import nl from '../../../public/locales/nl/shared.json' assert { type: 'json' }
+import en from '../../../public/locales/en/email.json' assert { type: 'json' }
+import de from '../../../public/locales/de/email.json' assert { type: 'json' }
+import es from '../../../public/locales/es/email.json' assert { type: 'json' }
+import fr from '../../../public/locales/fr/email.json' assert { type: 'json' }
+import nl from '../../../public/locales/nl/email.json' assert { type: 'json' }
 
 /*
  * Everything is kept lowercase here because these key names are used in URLS
