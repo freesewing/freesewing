@@ -48,7 +48,7 @@ export const ClearAllButton = ({ setSettings, compact = false }) => {
   return (
     <div className={`${compact ? '' : 'text-center mt-8'}`}>
       <button
-        className={`justify-self-center btn btn-error btn-outline ${compact ? 'btn-sm' : ''}`}
+        className={`justify-self-center btn btn-primary btn-outline ${compact ? 'btn-sm' : ''}`}
         onClick={() => setSettings({})}
       >
         <TrashIcon />

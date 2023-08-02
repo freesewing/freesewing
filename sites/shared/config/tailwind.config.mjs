@@ -1,5 +1,6 @@
 // Handle themes
-const themes = require('../themes')
+import { themes } from '../themes/index.mjs'
+
 const colors = [
   'red',
   'orange',

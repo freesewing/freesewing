@@ -455,6 +455,11 @@
 .btn-error {
   color: var(--btn-error-content);
 }
+.btn-ghost:hover {
+  color: hsl(var(--b1));
+  --tw-bg-opacity: 0.8;
+  background-color: hsl(var(--bc) / var(--tw-bg-opacity));
+}
 
 /* Theme gradient */
 .theme-gradient {

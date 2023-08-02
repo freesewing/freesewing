@@ -21,7 +21,7 @@ const btnClasses = {
     'flex flex-row flex-nowrap items-center gap-4 py-4 h-auto ' +
     'border border-secondary justify-start text-left bg-opacity-30',
   active:
-    'btn-ghost bg-secondary hover:bg-secondary ' + 'hover:bg-opacity-30 hover:border-secondary',
+    'btn-ghost bg-secondary hover:bg-secondary ' + 'hover:bg-accent-focus hover:border-secondary',
   inactive:
     'hover:bg-opacity-20 hover:bg-secondary btn-ghost ' +
     'border border-secondary hover:border hover:border-secondary',

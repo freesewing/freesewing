@@ -7,10 +7,10 @@ export const Circle = ({ off = false, color = 'warning' }) => (
 
 const five = [0, 1, 2, 3, 4]
 
-export const Difficulty = ({ score = 0, color = false }) => (
+export const Difficulty = ({ score = 0, color = 'primary' }) => (
   <div className="flex flex-row">
     {five.map((i) => (
-      <Circle key={i} color={'primary'} off={i < score ? false : true} />
+      <Circle key={i} color={color} off={i < score ? false : true} />
     ))}
   </div>
 )

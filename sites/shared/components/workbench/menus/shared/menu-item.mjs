@@ -26,7 +26,7 @@ export const wasChanged = (current, config) => {
 export const ItemTitle = ({ name, t, current = null, open = false, emoji = '', Icon = false }) => (
   <div className={`flex flex-row gap-1 items-center w-full ${open ? '' : 'justify-between'}`}>
     <span className="font-medium capitalize flex flex-row gap-2">
-      {Icon ? <Icon /> : <span role="img">{emoji}</span>}
+      <span className="shrink-0">{Icon ? <Icon /> : <span role="img">{emoji}</span>}</span>
       {t([`${name}.t`, name])}
     </span>
     <span className={`font-bold`}>{current}</span>
@@ -34,7 +34,7 @@ export const ItemTitle = ({ name, t, current = null, open = false, emoji = '', I
 )
 
 /** @type {String} class to apply to buttons on open menu items */
-const openButtonClass = 'btn btn-xs btn-ghost px-0'
+const openButtonClass = 'btn-xs px-0 rounded'
 
 /**
  * A generic component for handling a menu item.
@@ -70,6 +70,8 @@ export const MenuItem = ({
   // state for knowing whether the override input should be shown
   const [override, setOverride] = useState(false)
 
+  const color = changed ? 'accent' : 'secondary'
+  const openButtonClasses = `${openButtonClass} btn-${color}`
   // generate properties to pass to the Input
   const drillProps = useMemo(
     () => ({
@@ -94,7 +96,7 @@ export const MenuItem = ({
   const openButtons = []
   if (loadDocs)
     openButtons.push(
-      <button className={openButtonClass} key="help" onClick={(evt) => loadDocs(evt, name)}>
+      <button className={openButtonClasses} key="help" onClick={(evt) => loadDocs(evt, name)}>
         <HelpIcon className="w-6 h-6" />
       </button>
     )
@@ -102,7 +104,7 @@ export const MenuItem = ({
     openButtons.push(
       <button
         key="edit"
-        className={openButtonClass}
+        className={openButtonClasses}
         onClick={(evt) => {
           evt.stopPropagation()
           setOverride(!override)
@@ -115,7 +117,7 @@ export const MenuItem = ({
     )
   const ResetButton = ({ open, disabled = false }) => (
     <button
-      className={`${open ? openButtonClass : 'btn btn-accent'} disabled:bg-opacity-0`}
+      className={`${open ? openButtonClasses : 'btn btn-accent'} disabled:bg-opacity-0`}
       disabled={disabled}
       onClick={(evt) => {
         evt.stopPropagation()
@@ -147,7 +149,7 @@ export const MenuItem = ({
   //changes left border of button
   return (
     <Collapse
-      color={changed ? 'accent' : 'secondary'}
+      color={color}
       openTitle={<ItemTitle open {...titleProps} />}
       title={<ItemTitle {...titleProps} />}
       buttons={buttons}

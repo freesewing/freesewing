@@ -11,13 +11,13 @@ const OpenTitleButton = ({
 }) => (
   <div
     role="button"
-    className={`flex flex-row items-center justify-between w-full ${
+    className={`flex flex-row items-center justify-between w-full max-w-full ${
       bottom ? 'rounded-b-lg' : 'rounded-t-lg'
     } 
-      bg-${color} text-${color}-content px-4 py-1 text-lg font-medium`}
+      bg-${color} text-${color}-content px-4 py-1 text-lg font-medium hover:bg-${color}-focus`}
     onClick={toggle}
   >
-    {<DownIcon className="rotate-180 w-6 h-6 mr-4" />}
+    {<DownIcon className="rotate-180 w-6 h-6 mr-4 shrink-0" />}
     {!bottom && title}
     <div className="flex flex-row items-center gap-2 z-5">
       {openButtons}
@@ -71,7 +71,10 @@ export const Collapse = ({
             grow flex flex-row gap-4 py-1 px-4 items-center justify-start hover:cursor-pointer hover:bg-${color} hover:bg-opacity-30`}
         onClick={onClick ? onClick : () => setOpen(true)}
       >
-        <DownIcon /> {title}
+        <span className="shrink-0">
+          <DownIcon />
+        </span>{' '}
+        {title}
         {toggle ? (
           <button onClick={() => setOpen(true)} className={toggleClasses}>
             {toggle}
