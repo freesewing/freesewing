@@ -301,6 +301,13 @@ Backend.prototype.sendLanguageSuggestion = async function (data) {
   return responseHandler(await api.post(`/flows/language-suggestion/jwt`, data, this.auth))
 }
 
+/*
+ * Create payment intent
+ */
+Backend.prototype.createPaymentIntent = async function (data) {
+  return responseHandler(await api.post(`/payments/intent`, data), 201)
+}
+
 export function useBackend(token = false) {
   /*
    * This backend object is what we'll end up returning

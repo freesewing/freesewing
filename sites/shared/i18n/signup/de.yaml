@@ -1,8 +1,8 @@
 joinFreeSewing: FreeSewing beitreten
-toReceiveSignupLink: To receive a sign-up link, enter your email address
+toReceiveSignupLink: Um einen Anmeldelink zu erhalten, gib deine E-Mail-Adresse ein
 emailAddress: E-Mail-Adresse
 pleaseProvideValidEmail: Bitte gib eine gültige E-Mail-Adresse an
-emailSignupLink: Email me a sign-up link
+emailSignupLink: Schick mir einen Anmeldelink
 alreadyHaveAnAccount: Hast du bereits ein Konto?
 dontHaveAnAccount: Du hast noch keinen Account?
 signIn: Anmelden
@@ -11,12 +11,12 @@ signUpHere: Registriere dich hier
 processing: In Bearbeitung
 emailSent: E-Mail versendet
 somethingWentWrong: Etwas ist schiefgelaufen
-checkYourInbox: Go check your inbox for an email from
-clickSignupLink: Click your personal signup link in that email to create your FreeSewing account.
-back: Back to signup
-contact: Kontakt Unterstützung
-err2: Unfortunately, we cannot recover from this error, we need a human being to look into this.
-err3: Feel free to try again, or reach out to support so we can assist you.
-signupAgain: Sign up again
-signupLinkExpired: Signup link expired
+checkYourInbox: Schau in deinem Posteingang nach einer E-Mail von
+clickSignupLink: Klicke auf deinen persönlichen Anmeldelink in dieser E-Mail, um dein FreeSewing-Konto zu erstellen.
+back: Zurück zur Anmeldung
+contact: Kontaktiere den Support
+err2: Leider können wir diesen Fehler nicht einfach beheben, wir brauchen einen Menschen, der sich das ansieht.
+err3: Versuche es einfach noch einmal oder wende dich an den Support, damit wir dir helfen können.
+signupAgain: Erneut registrieren
+signupLinkExpired: Anmeldelink ist abgelaufen
 

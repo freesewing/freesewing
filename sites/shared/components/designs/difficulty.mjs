@@ -1,11 +1,9 @@
 import { CircleIcon as Icon } from 'shared/components/icons.mjs'
-import { primary } from '../../themes/light'
+import { useTheme } from 'shared/hooks/use-theme.mjs'
 
 export const Circle = ({ off = false, color = 'warning' }) => (
   <Icon fill={!off} className={`w-4 h-4 text-${color}`} />
 )
-
-//const colors = ['fuchsia-700', 'fuchsia-700', 'fuchsia-700', 'fuchsia-700', 'fuchsia-700', 'fuchsia-700']
 
 const five = [0, 1, 2, 3, 4]
 

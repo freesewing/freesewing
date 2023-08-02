@@ -40,7 +40,7 @@ export const Footer = () => {
         <ul className="text-neutral-content list inline font-medium text-center">
           {onlyFooterLinks(siteNav).map((page) => (
             <li key={page.s} className="block lg:inline">
-              <Link href={page.s} className="p-3 hover:text-secondary-focus hover:text-underline">
+              <Link href={page.s} className="p-3 underline decoration-2 hover:decoration-4">
                 {page.t}
               </Link>
             </li>
