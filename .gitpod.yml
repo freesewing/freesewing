@@ -9,7 +9,8 @@ tasks:
     before: |
       nvm install lts/hydrogen
       nvm use lts/hydrogen
-    command: yarn tips
+      npm i -g yarn
+      yarn kickstart
 
 github:
   prebuilds:
