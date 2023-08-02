@@ -34,7 +34,7 @@ export const SampleItem = ({ name, passProps, t, updateFunc }) => {
       />
       <div
         className={`collapse-title flex items-center p-2 h-auto min-h-0 ${
-          checked ? 'bg-primary text-primary-content' : ''
+          checked ? 'bg-primary text-primary-content' : 'text-base-content'
         }`}
       >
         <input

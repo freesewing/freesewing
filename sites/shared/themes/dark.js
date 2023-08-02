@@ -4,31 +4,31 @@ module.exports = {
   fontFamily:
     '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
 
-  'base-100': colors.neutral['900'],
-  'base-200': colors.neutral['800'],
+  'base-100': colors.neutral['800'],
+  'base-200': colors.neutral['900'],
   'base-300': colors.neutral['600'],
   'base-content': colors.neutral['300'],
 
-  primary: colors.violet['800'],
-  'primary-focus': colors.violet['700'],
-  'primary-content': colors.violet['50'],
+  primary: colors.violet['300'],
+  'primary-focus': colors.violet['400'],
+  'primary-content': colors.violet['950'],
 
-  secondary: colors.sky['700'],
-  'secondary-focus': colors.sky['600'],
-  'secondary-content': colors.sky['50'],
+  secondary: colors.sky['300'],
+  'secondary-focus': colors.sky['400'],
+  'secondary-content': colors.sky['950'],
 
-  accent: colors.orange['700'],
-  'accent-focus': colors.orange['600'],
-  'accent-content': colors.orange['50'],
+  accent: colors.orange['300'],
+  'accent-focus': colors.orange['400'],
+  'accent-content': colors.orange['950'],
 
   neutral: '#000000', // Dark as my soul
-  'neutral-focus': colors.neutral['800'],
+  'neutral-focus': colors.neutral['700'],
   'neutral-content': colors.neutral['50'],
 
-  info: colors.indigo['700'],
-  success: colors.green['700'],
-  warning: colors.orange['500'],
-  error: colors.red['700'],
+  info: colors.indigo['300'],
+  success: colors.green['400'],
+  warning: colors.orange['400'],
+  error: colors.red['400'],
 
   '--btn-info-content': colors.neutral[50],
   '--btn-success-content': colors.neutral[50],

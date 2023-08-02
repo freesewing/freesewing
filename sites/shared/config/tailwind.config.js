@@ -1,5 +1,25 @@
 // Handle themes
 const themes = require('../themes')
+const colors = [
+  'red',
+  'orange',
+  'yellow',
+  'lime',
+  'green',
+  'teal',
+  'cyan',
+  'blue',
+  'indigo',
+  'violet',
+  'purple',
+]
+
+const rainbow = {
+  rainbow: 'hsl(var(--rb))',
+}
+for (let r = 0; r < colors.length; r++) {
+  rainbow[`rainbow-${colors[r]}`] = `var(--rb-${colors[r]})`
+}
 
 module.exports = {
   content: [
@@ -27,6 +47,7 @@ module.exports = {
       aspectRatio: {
         '9/16': '9 / 16',
       },
+      colors: rainbow,
     },
   },
 }
