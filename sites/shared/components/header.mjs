@@ -57,7 +57,9 @@ export const NavButton = ({
     'border-0 px-1 lg:px-3 xl:px-4 text-base py-3 md:py-4 text-center flex flex-col items-center 2xl:w-36 ' +
     `${hoverColors[color]} ${
       textColors[color]
-    } hover:text-neutral grow xl:grow-0 relative ${extraClasses} ${active ? 'font-heavy' : ''}`
+    } text-violet-400 hover:text-neutral grow xl:grow-0 relative ${extraClasses} ${
+      active ? 'font-heavy' : ''
+    }`
   const span = <span className="font-bold text-lg hidden md:block md:pt-1 lg:pt-0">{label}</span>
 
   return onClick ? (

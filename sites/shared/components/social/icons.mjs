@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { useTheme, spectrum } from 'shared/hooks/use-theme.mjs'
+import { useTheme } from 'shared/hooks/use-theme.mjs'
 import {
   MsfIcon,
   HelpIcon,
@@ -16,7 +16,7 @@ import { social } from 'config/social.mjs'
 import { siteConfig } from 'site/site.config.mjs'
 
 const iconClasses = (i) => ({
-  className: `w-8 lg:w-12 h-8 lg:h-12 text-rainbow-${spectrum[i]} hover:text-neutral-content`,
+  className: `w-8 lg:w-12 h-8 lg:h-12 hover:text-neutral-content ${i}`,
 })
 
 export const socialList = (spectrum) => ({
