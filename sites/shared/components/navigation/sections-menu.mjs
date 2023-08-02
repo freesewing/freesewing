@@ -1,5 +1,4 @@
 import { useContext } from 'react'
-import { useTheme } from 'shared/hooks/use-theme.mjs'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
 import Link from 'next/link'
 import { icons, ns as sectionsNs } from 'shared/components/navigation/primary.mjs'
@@ -10,14 +9,29 @@ export const ns = sectionsNs
 
 const onlySections = (tree) => orderBy(tree, ['t'], ['asc']).filter((entry) => entry.m)
 
+// force tailwind compilation
+const spectrumBg = [
+  'bg-spectrum-0',
+  'bg-spectrum-1',
+  'bg-spectrum-2',
+  'bg-spectrum-3',
+  'bg-spectrum-4',
+  'bg-spectrum-5',
+  'bg-spectrum-6',
+  'bg-spectrum-7',
+  'bg-spectrum-8',
+  'bg-spectrum-9',
+  'bg-spectrum-10',
+]
+
+const sharedClasses = 'p-0 rounded shadow hover:shadow-lg w-full text-neutral-900'
+
 export const SectionsMenu = ({ bOnly = false }) => {
   const { t } = useTranslation(ns)
   const { siteNav } = useContext(NavigationContext)
-  const { spectrum } = useTheme()
 
   const output = []
   let i = 1
-  const sharedClasses = 'p-0 rounded shadow hover:shadow-lg w-full text-neutral-900'
   for (const page of onlySections(siteNav)) {
     if ((!bOnly && !page.h && !page.b) || (!page.h && bOnly && page.b)) {
       if (page.t !== 'spacer') {
@@ -27,7 +41,7 @@ export const SectionsMenu = ({ bOnly = false }) => {
             className={
               bOnly
                 ? `bg-secondary border border solid border-secondary bg-opacity-0 hover:bg-opacity-20 ${sharedClasses}`
-                : `bg-${spectrum[i]} bg-opacity-70 hover:bg-opacity-100 ${sharedClasses}`
+                : `${spectrumBg[i]} bg-opacity-50 hover:bg-opacity-100 ${sharedClasses}`
             }
             href={`/${page.s}`}
             title={page.t}

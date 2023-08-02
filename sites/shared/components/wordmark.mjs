@@ -1,31 +1,17 @@
 import Link from 'next/link'
-import { useTheme } from 'shared/hooks/use-theme.mjs'
-
-export const colors = [
-  'red',
-  'orange',
-  'yellow',
-  'lime',
-  'green',
-  'cyan',
-  'blue',
-  'indigo',
-  'violet',
-  'purple',
-]
 
 export const InnerWordMark = () => (
   <span style={{ letterSpacing: '-0.1rem' }} className="group">
-    <span className="text-rainbow-red group-hover:text-rainbow-purple">F</span>
-    <span className="text-rainbow-orange group-hover:text-rainbow-violet">r</span>
-    <span className="text-rainbow-yellow group-hover:text-rainbow-indigo">e</span>
-    <span className="text-rainbow-lime group-hover:text-rainbow-blue">e</span>
-    <span className="text-rainbow-green group-hover:text-rainbow-cyan">S</span>
-    <span className="text-rainbow-cyan group-hover:text-rainbow-green">e</span>
-    <span className="text-rainbow-blue group-hover:text-rainbow-lime">w</span>
-    <span className="text-rainbow-indigo group-hover:text-rainbow-yellow">i</span>
-    <span className="text-rainbow-violet group-hover:text-rainbow-orange">n</span>
-    <span className="text-rainbow-purple group-hover:text-rainbow-red">g</span>
+    <span className="text-spectrum-0 group-hover:text-spectrum-focus-0">F</span>
+    <span className="text-spectrum-1 group-hover:text-spectrum-focus-1">r</span>
+    <span className="text-spectrum-2 group-hover:text-spectrum-focus-2">e</span>
+    <span className="text-spectrum-3 group-hover:text-spectrum-focus-3">e</span>
+    <span className="text-spectrum-4 group-hover:text-spectrum-focus-4">S</span>
+    <span className="text-spectrum-5 group-hover:text-spectrum-focus-5">e</span>
+    <span className="text-spectrum-7 group-hover:text-spectrum-focus-7">w</span>
+    <span className="text-spectrum-8 group-hover:text-spectrum-focus-8">i</span>
+    <span className="text-spectrum-8 group-hover:text-spectrum-focus-8">n</span>
+    <span className="text-spectrum-10 group-hover:text-spectrum-focus-10">g</span>
   </span>
 )
 

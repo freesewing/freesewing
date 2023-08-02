@@ -15,19 +15,42 @@
  * For a full list, see: https://tailwindcss.com/docs/customizing-colors
  */
 import colors from 'tailwindcss/colors'
+const primary = colors.purple['900']
 
+// const rainbow = [
+//   colors.red['300'],
+//   colors.orange['300'],
+//   colors.yellow['300'],
+//   colors.lime['300'],
+//   colors.green['300'],
+//   colors.teal['300'],
+//   colors.cyan['300'],
+//   colors.blue['300'],
+//   colors.indigo['300'],
+//   colors.violet['300'],
+//   colors.purple['300']
+// ]
 /*
- * Spetrum is an array of 11 color names from the tailwind colors that
- * will be used when we want to spread colors across a spectrum.
+ * Spectrum is 11 color names from the tailwind colors that are mapped to indexed css vars starting with --fs-sp.
+ * They will be used when we want to spread colors across a spectrum.
  * It's what creates a rainbow header/footer.
+ * In this theme, the whole spectrum is purple
  */
-export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(() => 'violet-300')
+const spectrum = {}
+for (let s = 0; s < 11; s++) {
+  spectrum[`--fs-sp-${s}`] = colors.violet['300']
+  spectrum[`--fs-spf-${s}`] = colors.orange['300']
+}
 
 /*
- * Rathing is an array of 5 color names from the tailwind colors that
- * are used to color code ratings (like difficulty and so on)
+ * Rating is 5 color names from the tailwind colors that are mapped to indexed css vars starting with --fs-rt.
+ * They are used to color code ratings (like difficulty and so on)
+ * In this theme we do not color code ratings. they are all the primary color
  */
-export const rating = ['green-500', 'yellow-400', 'amber-500', 'orange-500', 'red-500']
+const rating = {}
+for (let r = 0; r < 5; r++) {
+  rating[`--fs-rt-${r}`] = primary
+}
 
 /*
  * This export is the Tailwind theme
@@ -66,7 +89,7 @@ export const theme = {
   'base-content': colors.neutral['950'],
 
   // primary: The main brand color and color of the primary button
-  primary: colors.purple['900'],
+  primary,
   // primary-focus: The :hover color for the primary button
   'primary-focus': colors.purple['800'],
   // primary-content: The text color on a primary button
@@ -96,19 +119,19 @@ export const theme = {
   // neutral-content: The text color on neutral backgrounds
   'neutral-content': colors.neutral['50'],
 
-  // colors for the rainbows around the site
-  '--rb': colors.neutral['50'],
-  '--rb-red': colors.red['300'],
-  '--rb-orange': colors.orange['300'],
-  '--rb-yellow': colors.yellow['300'],
-  '--rb-lime': colors.lime['300'],
-  '--rb-green': colors.green['300'],
-  '--rb-teal': colors.teal['300'],
-  '--rb-cyan': colors.cyan['300'],
-  '--rb-blue': colors.blue['300'],
-  '--rb-indigo': colors.indigo['300'],
-  '--rb-violet': colors.violet['300'],
-  '--rb-purple': colors.purple['300'],
+  // // colors for the rainbows around the site
+  // '--rb': colors.neutral['50'],
+  // '--rb-red': colors.red['300'],
+  // '--rb-orange': colors.orange['300'],
+  // '--rb-yellow': colors.yellow['300'],
+  // '--rb-lime': colors.lime['300'],
+  // '--rb-green': colors.green['300'],
+  // '--rb-teal': colors.teal['300'],
+  // '--rb-cyan': colors.cyan['300'],
+  // '--rb-blue': colors.blue['300'],
+  // '--rb-indigo': colors.indigo['300'],
+  // '--rb-violet': colors.violet['300'],
+  // '--rb-purple': colors.purple['300'],
 
   // info: Used rarely, can be another color best somewhat neutral looking
   // and should work with the default text color
@@ -322,4 +345,10 @@ export const theme = {
    * https://stripe.com/docs/elements/appearance-api
    */
   stripeTheme: 'stripe',
+
+  /**
+   * Add the spectrum and ratings vars last so they can pick up on other ones
+   */
+  ...spectrum,
+  ...rating,
 }

@@ -1,7 +1,6 @@
 // Hooks
 import { useContext } from 'react'
 import { useTranslation } from 'next-i18next'
-import { useTheme } from 'shared/hooks/use-theme.mjs'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
@@ -28,70 +27,51 @@ export const ns = ['header', 'sections', ...themeNs, ...localeNs]
 
 const NavIcons = ({ setModal }) => {
   const { t } = useTranslation(['header'])
-  const { spectrum } = useTheme()
   const iconSize = 'h-6 w-6 lg:h-12 lg:w-12'
 
   return (
     <>
-      <NavButton
-        onClick={() => setModal(<ModalMenu />)}
-        label={t('header:menu')}
-        color={spectrum[0]}
-      >
+      <NavButton onClick={() => setModal(<ModalMenu />)} label={t('header:menu')} color={0}>
         <MenuIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
-      <NavButton href="/designs" label={t('header:designs')} color={spectrum[1]}>
+      <NavButton href="/designs" label={t('header:designs')} color={1}>
         <DesignIcon className={iconSize} />
       </NavButton>
       <NavButton
         href="/patterns"
         label={t('header:patterns')}
-        color={spectrum[2]}
+        color={2}
         extraClasses="hidden lg:flex"
       >
         <PageIcon className={iconSize} />
       </NavButton>
-      <NavButton
-        href="/sets"
-        label={t('header:sets')}
-        color={spectrum[3]}
-        extraClasses="hidden lg:flex"
-      >
+      <NavButton href="/sets" label={t('header:sets')} color={3} extraClasses="hidden lg:flex">
         <MeasieIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
-      <NavButton
-        href="/docs"
-        label={t('header:docs')}
-        color={spectrum[4]}
-        extraClasses="hidden lg:flex"
-      >
+      <NavButton href="/docs" label={t('header:docs')} color={4} extraClasses="hidden lg:flex">
         <DocsIcon className={iconSize} />
       </NavButton>
-      <NavButton href="/code" label={t('sections:code')} color={spectrum[5]}>
+      <NavButton href="/code" label={t('sections:code')} color={5}>
         <GitHubIcon className={iconSize} />
       </NavButton>
-      <NavButton href="/account" label={t('header:account')} color={spectrum[6]}>
+      <NavButton href="/account" label={t('header:account')} color={6}>
         <UserIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
-      <NavButton
-        onClick={() => setModal(<ModalThemePicker />)}
-        label={t('header:theme')}
-        color={spectrum[7]}
-      >
+      <NavButton onClick={() => setModal(<ModalThemePicker />)} label={t('header:theme')} color={7}>
         <ThemeIcon className={iconSize} />
       </NavButton>
       <NavButton
         onClick={() => setModal(<ModalLocalePicker />)}
         label={t('header:language')}
-        color={spectrum[8]}
+        color={8}
       >
         <I18nIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
-      <NavButton href="/new" label={t('header:new')} color={spectrum[9]}>
+      <NavButton href="/new" label={t('header:new')} color={9}>
         <PlusIcon className={iconSize} />
       </NavButton>
     </>
