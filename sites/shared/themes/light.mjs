@@ -59,9 +59,9 @@ export const theme = {
   // base-100: The default background color for a regular page (docs and so on)
   'base-100': colors.neutral['50'],
   // base-200: A slightly darker background color, used for hovers and so on
-  'base-200': colors.neutral['100'],
+  'base-200': colors.neutral['200'],
   // base-300: A shade midway between dark and light
-  'base-300': colors.neutral['500'],
+  'base-300': colors.neutral['300'],
   // base-content: The default text color for a regular page (docs and so on)
   'base-content': colors.neutral['950'],
 
@@ -90,24 +90,25 @@ export const theme = {
 
   // neutral: Used as the background for the footer and navigation on desktop
   // Should always be dark
-  neutral: colors.neutral['950'],
+  neutral: colors.neutral['800'],
   // neutral-focus: Typically a shade lighter than neutral
   'neutral-focus': colors.neutral['700'],
   // neutral-content: The text color on neutral backgrounds
   'neutral-content': colors.neutral['50'],
 
-  rainbow: colors.neutral['50'],
-  'rainbow-red': colors.red['400'],
-  'rainbow-orange': colors.orange['400'],
-  'rainbow-yellow': colors.yellow['400'],
-  'rainbow-lime': colors.lime['400'],
-  'rainbow-green': colors.green['400'],
-  'rainbow-teal': colors.teal['400'],
-  'rainbow-cyan': colors.cyan['400'],
-  'rainbow-blue': colors.blue['400'],
-  'rainbow-indigo': colors.indigo['400'],
-  'rainbow-violet': colors.violet['400'],
-  'rainbow-purple': colors.purple['400'],
+  // colors for the rainbows around the site
+  '--rb': colors.neutral['50'],
+  '--rb-red': colors.red['300'],
+  '--rb-orange': colors.orange['300'],
+  '--rb-yellow': colors.yellow['300'],
+  '--rb-lime': colors.lime['300'],
+  '--rb-green': colors.green['300'],
+  '--rb-teal': colors.teal['300'],
+  '--rb-cyan': colors.cyan['300'],
+  '--rb-blue': colors.blue['300'],
+  '--rb-indigo': colors.indigo['300'],
+  '--rb-violet': colors.violet['300'],
+  '--rb-purple': colors.purple['300'],
 
   // info: Used rarely, can be another color best somewhat neutral looking
   // and should work with the default text color

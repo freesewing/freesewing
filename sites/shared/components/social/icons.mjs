@@ -15,8 +15,8 @@ import {
 import { social } from 'config/social.mjs'
 import { siteConfig } from 'site/site.config.mjs'
 
-const iconClasses = (color) => ({
-  className: `w-8 lg:w-12 h-8 lg:h-12 text-${color} hover:text-neutral-content`,
+const iconClasses = (i) => ({
+  className: `w-8 lg:w-12 h-8 lg:h-12 text-rainbow-${colors[i]} hover:text-neutral-content`,
 })
 
 export const socialList = (spectrum) => ({

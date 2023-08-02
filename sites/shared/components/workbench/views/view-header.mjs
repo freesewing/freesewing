@@ -33,7 +33,7 @@ const IconButton = ({ Icon, onClick, dflt = true, title, hide = false, extraClas
   <div className="tooltip tooltip-bottom tooltip-primary flex items-center" data-tip={title}>
     <button
       onClick={onClick}
-      className={`text-${dflt ? 'neutral-content' : 'accent'} hover:text-secondary-focus ${
+      className={`text-${dflt ? 'base-content' : 'accent'} hover:text-secondary-focus ${
         hide ? 'invisible' : ''
       } ${extraClasses}`}
       title={title}
@@ -89,12 +89,8 @@ export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
   useMobileAction('zoom', { order: 0, actionContent: headerZoomButtons })
 
   return (
-    <div
-      className={`hidden lg:flex sticky top-0 z-20 ${shownHeaderSelector(
-        'lg:top-24'
-      )} transition-[top] duration-300 ease-in-out`}
-    >
-      <div className="hidden lg:flex flex-row flex-wrap gap-4 py-4 pt-4 w-full bg-neutral text-neutral-content items-center justify-center">
+    <div className={`hidden lg:flex sticky top-0 z-20 transition-[top] duration-300 ease-in-out`}>
+      <div className="hidden lg:flex flex-row flex-wrap gap-4 py-4 pt-4 w-full bg-base-200 text-base-content items-center justify-center">
         {headerZoomButtons}
         <Spacer />
         <div className="flex flex-row items-center gap-4">
