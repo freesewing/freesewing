@@ -16,6 +16,20 @@ const BoldLink = ({ href, children }) => (
   </a>
 )
 
+const CardLink = ({ color = 'primary', href, title, text }) => (
+  <div className={`p-1 bg-${color} rounded-none lg:rounded-xl lg:shadow flex flex-col`}>
+    <Link
+      href={href}
+      className={`px-4 lg:px-8 py-10 rounded-none lg:rounded-lg block
+      bg-base-100 text-base-content hover:bg-${color} hover:text-${color}-content
+      transition-color duration-300 grow`}
+    >
+      <h2 className="mb-4 text-inherit">{title}</h2>
+      <p className="font-medium text-inherit">{text}</p>
+    </Link>
+  </div>
+)
+
 /*
  * Each page MUST be wrapped in the PageWrapper component.
  * You also MUST spread props.page into this wrapper component
@@ -54,64 +68,64 @@ const HomePage = ({ page }) => (
       </h1>
 
       <div className="flex flex-col gap-8 lg:grid lg:grid-cols-3 lg:gap-4 mt-12">
-        <div className="px-4 lg:px-8 bg-gradient-to-tr from-accent to-primary py-10 rounded-none lg:rounded-xl lg:shadow">
-          <h2 className="text-accent-content mb-4">Custom-Fit Fashion</h2>
-          <p className="text-accent-content font-medium">
-            FreeSewing is the leading open source library for on-demand garment manufacturing.
-          </p>
-          <p className="text-accent-content font-medium">
-            Loved by home sewers and fashion entrepreneurs alike, we provide the tech stack for your
-            creative endeavours.
-          </p>
+        <div className="p-1 bg-gradient-to-tr from-accent to-primary rounded-none lg:rounded-xl lg:shadow flex flex-col">
+          <div className="px-4 lg:px-8 bg-base-100 rounded-none lg:rounded-lg grow">
+            <h2 className="mb-4">Custom-Fit Fashion</h2>
+            <p className="font-medium">
+              FreeSewing is the leading open source library for on-demand garment manufacturing.
+            </p>
+            <p className="font-medium">
+              Loved by home sewers and fashion entrepreneurs alike, we provide the tech stack for
+              your creative endeavours.
+            </p>
+          </div>
         </div>
 
-        <div className="px-4 lg:px-8 py-10 bg-gradient-to-tr from-info to-neutral rounded-none lg:rounded-xl lg:shadow">
-          <h2 className="text-neutral-content mb-4">Patterns as Code</h2>
-          <p className="font-medium text-neutral-content">
-            FreeSewing designs are implemented as code giving you unmatched power and flexibility.
-          </p>
-          <p className="font-medium text-neutral-content">
-            You can mix and match parts from different designs, extend them, or add options that
-            turn one base design into many.
-          </p>
+        <div className="p-1 bg-gradient-to-tr from-info to-neutral rounded-none lg:rounded-xl lg:shadow flex flex-col">
+          <div className="px-4 lg:px-8 bg-base-100 rounded-none lg:rounded-lg grow">
+            <h2 className="mb-4">Patterns as Code</h2>
+            <p className="font-medium">
+              FreeSewing designs are implemented as code giving you unmatched power and flexibility.
+            </p>
+            <p className="font-medium">
+              You can mix and match parts from different designs, extend them, or add options that
+              turn one base design into many.
+            </p>
+          </div>
         </div>
 
-        <div className="px-4 lg:px-8 bg-gradient-to-tr from-primary to-secondary py-10 rounded-none lg:rounded-xl lg:shadow">
-          <h2 className="text-accent-content mb-4">Doing what&apos;s right</h2>
-          <p className="text-accent-content font-medium">
-            As an open source project, our work and support is gifted free of charge to all our
-            users.
-          </p>
-          <p className="text-accent-content font-medium">
-            In return, we ask those who can afford it to{' '}
-            <BoldLink href="https://freesewing.org/patrons/join">support us</BoldLink>. This helps
-            us{' '}
-            <BoldLink href="https://freesewing.org/docs/various/pledge">
-              do what&apos;s right
-            </BoldLink>
-            .
-          </p>
+        <div className="p-1 bg-gradient-to-tr from-primary to-secondary rounded-none lg:rounded-xl lg:shadow flex flex-col">
+          <div className="px-4 lg:px-8 bg-base-100 rounded-none lg:rounded-lg grow">
+            <h2 className="mb-4">License: MIT</h2>
+            <p className="font-medium">
+              FreeSewing is an open source project under{' '}
+              <BoldLink href="https://en.wikipedia.org/wiki/MIT_License">the MIT license</BoldLink>.
+            </p>
+            <p className="font-medium">
+              Which means it is ok to use our code to help you put food on the table.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="p-0 bg-gradient-to-tr from-neutral to-primary mt-12 rounded-none lg:rounded-xl lg:shadow">
+      <div className="p-0 bg-gradient-to-tr from-neutral to-primary mt-12 rounded-none lg:rounded-xl lg:shadow text-neutral-content">
         <div
           className="bg-cover bg-neutral w-full bg-center shadow rounded-none lg:rounded-xl"
           style={{ backgroundImage: 'url(/support.jpg)' }}
         >
           <div className="bg-neutral bg-opacity-50 p-4 py-12 rounded-none lg:rounded-xl">
-            <h2 className="text-accent-content mb-4">Support FreeSewing</h2>
-            <p className="text-accent-content font-medium max-w-sm m-auto drop-shadow-md">
+            <h2 className="text-inherit mb-4">Support FreeSewing</h2>
+            <p className="text-inherit font-medium max-w-sm m-auto drop-shadow-md text-lg">
               FreeSewing is fuelled by a voluntary subscription model
             </p>
-            <p className="text-accent-content font-medium max-w-prose max-w-sm m-auto">
+            <p className="text-inherit font-medium max-w-prose max-w-sm m-auto text-lg">
               If you think what we do is worthwhile, and if you can spare a few coins each month
               without hardship, please support our work
             </p>
             <p>
               <a
                 role="button"
-                className="btn btn-accent hover:btn-success px-12 ml-4 mb-8"
+                className="btn btn-accent hover:btn-success px-12 ml-4 mb-8 btn-lg"
                 href="https://freesewing.org/patrons/join"
               >
                 Become a Patron
@@ -122,56 +136,50 @@ const HomePage = ({ page }) => (
       </div>
 
       <div className="flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:gap-4 mt-12">
-        <Link
+        <CardLink
+          color="primary"
           href="/reference/api"
-          className="px-4 lg:px-8 py-10 bg-primary rounded-none lg:rounded-xl lg:shadow hover:bg-secondary"
-        >
-          <h2 className="text-neutral-content mb-4">Design Tutorial</h2>
-          <p className="font-medium text-neutral-content">
-            Step by step instructions to create your first FreeSewing design
-          </p>
-        </Link>
-
-        <Link
-          href="/reference/api"
-          className="px-4 lg:px-8 py-10 bg-neutral rounded-none lg:rounded-xl lg:shadow hover:bg-secondary"
-        >
-          <h2 className="text-accent-content mb-4">Core API</h2>
-          <p className="text-accent-content font-medium">
-            Reference documentation for our core library
-          </p>
-        </Link>
-
-        <div className="px-4 lg:px-8 bg-accent py-10 rounded-none lg:rounded-xl lg:shadow hover:bg-secondary">
-          <h2 className="text-accent-content mb-4">Backend API</h2>
-          <p className="text-accent-content font-medium">
-            No backend?
-            <br />
-            No problem, you can use ours.
-          </p>
-        </div>
+          title="Design Tutorial"
+          text="Step by step instructions to create your first FreeSewing design"
+        />
+        <CardLink
+          color="neutral"
+          href="/reference/core"
+          title="Core API"
+          text="Reference documentation for our core library"
+        />
+        <CardLink
+          color="accent"
+          href="/reference/backend"
+          title="Backend API"
+          text={
+            <span>
+              No backend?
+              <br />
+              No problem, you can use ours.
+            </span>
+          }
+        />
       </div>
 
-      <div className="p-0 bg-gradient-to-tr from-neutral to-primary mt-12 rounded-none lg:rounded-xl lg:shadow">
+      <div className="p-1 bg-gradient-to-tr from-neutral to-primary mt-12 rounded-none lg:rounded-xl lg:shadow text-neutral-content">
         <div className="flex flex-col gap-8 lg:grid lg:grid-cols-2">
           <div className="px-4 lg:px-12 pt-12 lg:py-12">
-            <h2 className="text-accent-content mb-4 text-center lg:text-left">
+            <h2 className="text-inherit mb-4 text-center lg:text-left">
               FreeSewing v3: It&apos;s coming
             </h2>
-            <p className="text-accent-content font-medium text-center lg:text-left">
+            <p className="text-inherit font-medium text-center lg:text-left">
               The upcoming version 3 of FreeSewing is currently under development. All of the
               documentation here is being kept up-to-date with the upcoming v3 release.
             </p>
-            <p className="text-accent-content font-medium text-center lg:text-left">
+            <p className="text-inherit font-medium text-center lg:text-left">
               Visit <BoldLink href="https://v2.freesewing.dev/">v2.freesewing.dev</BoldLink> for the
               documentation for version 2 of FreeSewing.
             </p>
           </div>
           <div className="px-4 lg:px-12 pb-12 lg:py-12">
-            <h2 className="text-accent-content mb-4 text-center lg:text-left">
-              What&apos;s changed?
-            </h2>
-            <p className="text-accent-content font-medium text-center lg:text-left">
+            <h2 className="text-inherit mb-4 text-center lg:text-left">What&apos;s changed?</h2>
+            <p className="text-inherit font-medium text-center lg:text-left">
               Check{' '}
               <BoldLink href="/guides/v3/migration">
                 the FreeSewing version 3 migration guide
@@ -179,7 +187,7 @@ const HomePage = ({ page }) => (
               to learn about what is new in version 3 of FreeSewing, and what changes you should
               make in your own designs to port them to version 3.
             </p>
-            <p className="text-accent-content font-medium text-center lg:text-left">
+            <p className="text-inherit font-medium text-center lg:text-left">
               If you have any questions to which you can&apos;t find the answers here, please{' '}
               <BoldLink href="https://discord.freesewing.org/">reach out to us on Discord</BoldLink>
               .
@@ -233,27 +241,29 @@ const HomePage = ({ page }) => (
     </div>
 
     <div className="max-w-7xl m-auto px-0 mt-12">
-      <div className="p-0 bg-gradient-to-tr from-accent to-warning mt-24 rounded-none lg:rounded-xl lg:shadow mb-12">
-        <div className="flex flex-col lg:grid lg:grid-cols-2">
-          <div className="px-4 lg:px-12 pt-12 lg:py-12">
-            <h2 className="text-accent-content mb-4 text-center lg:text-left">Questions?</h2>
-            <p className="text-accent-content font-medium text-center lg:text-left">
-              When you have questions or find yourself scratching your head you can{' '}
-              <a href="/contact" className="font-bold underline">
-                contact us
-              </a>{' '}
-              in various ways.
-            </p>
-          </div>
-          <div className="px-4 lg:px-12 py-12">
-            <h2 className="text-accent-content mb-4 text-center lg:text-left">Need Help?</h2>
-            <p className="text-accent-content font-medium text-center lg:text-left">
-              While we are all volunteers, we have a good track record of helping people. So{' '}
-              <a href="/contact" className="font-bold underline">
-                don&apos;t be shy
-              </a>
-              .
-            </p>
+      <div className="p-1 bg-gradient-to-tr from-accent to-warning mt-24 rounded-none lg:rounded-xl lg:shadow mb-12">
+        <div className="p-0 bg-base-100 rounded-none lg:rounded-lg">
+          <div className="flex flex-col lg:grid lg:grid-cols-2">
+            <div className="px-4 lg:px-12 pt-12 lg:py-12">
+              <h2 className="mb-4 text-center lg:text-left">Questions?</h2>
+              <p className="font-medium text-center lg:text-left">
+                When you have questions or find yourself scratching your head you can{' '}
+                <b>
+                  <PageLink href="/contact" txt="contact us" />
+                </b>{' '}
+                in various ways.
+              </p>
+            </div>
+            <div className="px-4 lg:px-12 py-12">
+              <h2 className="mb-4 text-center lg:text-left">Need Help?</h2>
+              <p className="font-medium text-center lg:text-left">
+                While we are all volunteers, we have a good track record of helping people. So{' '}
+                <b>
+                  <PageLink href="/contact" txt="don't be shy" />
+                </b>
+                .
+              </p>
+            </div>
           </div>
         </div>
       </div>

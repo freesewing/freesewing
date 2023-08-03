@@ -1,20 +1,20 @@
 account: Account
 yourAccount: Dein Konto
-newPattern: Neues Muster
-newSet: Eine neue Messreihe erstellen
+newPattern: Neues Schnittmuster
+newSet: Einen neuen Satz an Maßen erstellen
 links: Links
 info: Info
 settings: Einstellungen
 data: Daten
-sets: Maßnahmesets
+sets: Measurements Sets
 patterns: Schnittmuster
 actions: Aktionen
 created: Erstellt
 updated: Aktualisiert
 expires: Läuft ab
 yourProfile: Dein Profil
-yourPatterns: Deine Muster
-yourSets: Deine Maßeinheiten
+yourPatterns: Deine Schnittmuster
+yourSets: Your Measurements Sets
 signOut: Abmelden
 politeOhCrap: Oh Purzelbäume
 bio: Über mich

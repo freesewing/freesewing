@@ -59,7 +59,7 @@ export const DocsLayout = ({ children = [], frontmatter }) => {
         </BaseLayoutLeft>
 
         <BaseLayoutProse>
-          <div className="w-full">
+          <div className="w-full md:pt-8">
             <Breadcrumbs />
             <h1 className="break-words searchme">{frontmatter.title}</h1>
             <div className="block xl:hidden">

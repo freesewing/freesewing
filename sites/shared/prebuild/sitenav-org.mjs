@@ -1,5 +1,6 @@
 import { freeSewingConfig as conf } from '../config/freesewing.config.mjs'
 import { designs } from '../config/designs.mjs'
+import i18nConfig from '../config/i18n.config.mjs'
 import { loadTranslations } from './shared.mjs'
 import i18next from 'i18next'
 
@@ -17,17 +18,17 @@ import i18next from 'i18next'
  */
 
 export const extendSiteNav = async (siteNav, lang) => {
-  const translations = await loadTranslations({
+  const resources = await loadTranslations({
     site: 'org',
-    namespaces: ['account', 'design', 'sections'],
-    language: lang,
+    namespaces: ['account', 'sections', 'tags', 'designs', 'patrons'],
+    languages: [lang],
   })
 
-  const resources = {}
-  resources[lang] = translations
-  i18next.init({
+  const config = i18nConfig([lang])
+  await i18next.init({
     lng: lang,
     resources,
+    interpolation: config.interpolation,
   })
   const { t } = i18next
 
@@ -155,6 +156,48 @@ export const extendSiteNav = async (siteNav, lang) => {
       t: t('translation:suggestLanguage'),
       s: 'translation',
     },
+  }
+
+  // Add patrons
+  siteNav.patrons = {
+    _: 1,
+    s: 'patrons',
+    h: 1,
+    t: t('patrons:freeSewingPatrons'),
+    join: {
+      _: 1,
+      s: 'join',
+      h: 1,
+      t: t('patrons:joinPatrons'),
+    },
+    thanks: {
+      _: 1,
+      s: 'thanks',
+      h: 1,
+      t: t('patrons:thankYouVeryMuch'),
+    },
+  }
+
+  // Add donate
+  siteNav.donate = {
+    _: 1,
+    s: 'donate',
+    h: 1,
+    t: t('patrons:donate'),
+    thanks: {
+      _: 1,
+      s: 'thanks',
+      h: 1,
+      t: t('patrons:thankYouVeryMuch'),
+    },
+  }
+
+  // Add support
+  siteNav.support = {
+    _: 1,
+    s: 'support',
+    h: 1,
+    t: t('sections:support'),
   }
 
   // Add search
