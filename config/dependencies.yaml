@@ -352,7 +352,7 @@ sanity:
     'styled-components': '5.3.11'
     'sanity-plugin-markdown': '4.1.0'
   dev:
-    '@sanity/eslint-config-studio': '2.0.4'
+    '@sanity/eslint-config-studio': '3.0.0'
     'eslint': *eslint
     'prettier': '3.0.0'
     'typescript': '5.1.6'
