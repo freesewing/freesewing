@@ -3203,10 +3203,10 @@
     lodash "^4.17.21"
     rxjs "^7.8.0"
 
-"@sanity/vision@3.14.4":
-  version "3.14.4"
-  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-3.14.4.tgz#fc187fd8bca2395c3e9b5f0c2f2a267b06d6b261"
-  integrity sha512-riBZ9l1O0VWJKgjelvX5F8CRcYd0J6LZkmMS7K2MjOEu1hyC9r/NniEo+YU60vPgVmGCApErO9MpgEBCeX2DZQ==
+"@sanity/vision@3.14.5":
+  version "3.14.5"
+  resolved "https://registry.yarnpkg.com/@sanity/vision/-/vision-3.14.5.tgz#a9f9a16942d4a6d19cbc45f077d5758cee78a1ff"
+  integrity sha512-D962qPI8r4F8LRd9yn3hC7EryYhdFWwg1m0l+9toj8PIgG1bPvwtresQGYEnP3gu7gHwpsfxDpubkPn0w13GGA==
   dependencies:
     "@codemirror/autocomplete" "^6.1.0"
     "@codemirror/commands" "^6.0.1"
@@ -3634,18 +3634,6 @@
   dependencies:
     "@smithy/util-buffer-from" "^2.0.0"
     tslib "^2.5.0"
-
-"@stripe/react-stripe-js@^2.1.1":
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/@stripe/react-stripe-js/-/react-stripe-js-2.1.1.tgz#92fe1498bc9db4e0b51d63df3849214cc8021c55"
-  integrity sha512-aHm6cWOqmOyq3eKKlR42hgvrcZhzc9ijL+BeXJ5H3uaWUKKcooSsBys0tiKl0gLxYQHUjUCvrRSX8fYaPBmAKg==
-  dependencies:
-    prop-types "^15.7.2"
-
-"@stripe/stripe-js@^1.54.1":
-  version "1.54.1"
-  resolved "https://registry.yarnpkg.com/@stripe/stripe-js/-/stripe-js-1.54.1.tgz#e298b80c2963d9e622ea355db6c35df48e08cd89"
-  integrity sha512-smEXPu1GKMcAj9g2luT16+oXfg2jAwyc68t2Dm5wdtYl3p8PqQaZEiI8tQmboaQAjgF8pIGma6byz1T1vgmpbA==
 
 "@swc/helpers@0.5.1":
   version "0.5.1"
