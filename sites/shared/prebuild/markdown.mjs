@@ -38,10 +38,8 @@ const loadFolderFrontmatter = async (key, site, folder, transform = false, lang 
    * But the biggest task is combing through all the org documentation and for this
    * it's much faster to first run find to limit the number of files to open
    */
-  const cmd = `find ${cwd} -type f -name "${
-    lang ? lang : '*'
-  }.md" -exec grep "^${key}:" -ism 1 {} +`
-  const grep = exec(cmd, { cwd }, (error, stdout, stderr) => {
+  const cmd = `find . -type f -name "${lang ? lang : '*'}.md" -exec grep "^${key}:" -ism 1 {} +`
+  const grep = exec(cmd, { cwd, maxBuffer: 2048 * 1024 }, (error, stdout, stderr) => {
     if (error) {
       console.error(`exec error: ${error} - ${stderr}`)
       return
@@ -73,6 +71,7 @@ const loadFolderFrontmatter = async (key, site, folder, transform = false, lang 
       .split(`markdown/${site}/${site === 'dev' ? '' : folder + '/'}`)
       .pop()
       .split(`.md:${key}:`)
+
     if (chunks.length === 2 && chunks[0].length > 1) {
       /*
        * Figure out the language and make sure we have an key for that language
@@ -83,12 +82,12 @@ const loadFolderFrontmatter = async (key, site, folder, transform = false, lang 
       /*
        * Add page to our object with slug as key and title as value
        */
-
-      let slug = prefix + chunks[0].slice(0, -3)
+      let slug = prefix + chunks[0].slice(0, -3).replace('./', '')
       if (slug === prefix) slug = slug.slice(0, -1)
-      pages[lang][slug] = transform
-        ? transform(stripQuotes(chunks[1]), slug, lang)
-        : stripQuotes(chunks[1])
+      if (slug !== 'docs/.')
+        pages[lang][slug] = transform
+          ? transform(stripQuotes(chunks[1]), slug, lang)
+          : stripQuotes(chunks[1])
     }
   }
 
@@ -129,7 +128,7 @@ const formatDate = (date, slug, lang) => {
  * Loads all docs files, titles and order
  */
 const loadDocs = async (site) => {
-  const folder = site === 'org' ? 'docs' : '.'
+  const folder = site === 'org' ? 'docs' : ''
   const titles = await loadFolderFrontmatter('title', site, folder)
   // Order is the same for all languages, so only grab EN files
   const order = await loadFolderFrontmatter('order', site, folder, false, 'en')

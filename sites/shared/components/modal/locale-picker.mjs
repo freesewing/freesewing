@@ -26,6 +26,7 @@ const translations = {
 export const ModalLocalePicker = () => {
   const { t } = useTranslation(ns)
   const router = useRouter()
+  const current = router.locale
 
   return (
     <ModalWrapper>
@@ -38,7 +39,7 @@ export const ModalLocalePicker = () => {
             }
             key={locale}
             locale={locale}
-            className="btn btn-lg btn-primary grow"
+            className={`btn lg:btn-lg grow ${current === locale ? 'btn-neutral' : 'btn-primary'}`}
           >
             <span>{t(locale)}</span>
             <span className="grow"></span>

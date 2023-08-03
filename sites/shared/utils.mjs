@@ -151,40 +151,59 @@ export const getCrumbs = (app, slug = false) => {
 
 /** convert a millimeter value to a Number value in the given units */
 export const measurementAsUnits = (mmValue, units = 'metric') =>
-  mmValue / (units === 'imperial' ? 25.4 : 10)
+  round(mmValue / (units === 'imperial' ? 25.4 : 10), 3)
+
+/** convert a value that may contain a fraction to a decimal */
+export const fractionToDecimal = (value) => {
+  // if it's just a number, return it
+  if (!isNaN(value)) return value
+
+  // keep a running total
+  let total = 0
+
+  // split by spaces
+  let chunks = String(value).split(' ')
+  if (chunks.length > 2) return Number.NaN // too many spaces to parse
+
+  // a whole number with a fraction
+  if (chunks.length === 2) {
+    // shift the whole number from the array
+    const whole = Number(chunks.shift())
+    // if it's not a number, return NaN
+    if (isNaN(whole)) return Number.NaN
+    // otherwise add it to the total
+    total += whole
+  }
+
+  // now we have only one chunk to parse
+  let fraction = chunks[0]
+
+  // split it to get numerator and denominator
+  let fChunks = fraction.trim().split('/')
+  // not really a fraction. return NaN
+  if (fChunks.length !== 2 || fChunks[1] === '') return Number.NaN
+
+  // do the division
+  let num = Number(fChunks[0])
+  let denom = Number(fChunks[1])
+  if (isNaN(num) || isNaN(denom)) return NaN
+  return total + num / denom
+}
 
 export const measurementAsMm = (value, units = 'metric') => {
   if (typeof value === 'number') return value * (units === 'imperial' ? 25.4 : 10)
 
-  if (value.endsWith('.')) return false
+  if (String(value).endsWith('.')) return false
 
   if (units === 'metric') {
     value = Number(value)
     if (isNaN(value)) return false
     return value * 10
   } else {
-    const imperialFractionToMm = (value) => {
-      let chunks = value.trim().split('/')
-      if (chunks.length !== 2 || chunks[1] === '') return false
-      let num = Number(chunks[0])
-      let denom = Number(chunks[1])
-      if (isNaN(num) || isNaN(denom)) return false
-      else return (num * 25.4) / denom
-    }
-    let chunks = value.split(' ')
-    if (chunks.length === 1) {
-      let val = chunks[0]
-      if (!isNaN(Number(val))) return Number(val) * 25.4
-      else return imperialFractionToMm(val)
-    } else if (chunks.length === 2) {
-      let inches = Number(chunks[0])
-      if (isNaN(inches)) return false
-      let fraction = imperialFractionToMm(chunks[1])
-      if (fraction === false) return false
-      return inches * 25.4 + fraction
-    }
+    const decimal = fractionToDecimal(value)
+    if (isNaN(decimal)) return false
+    return decimal * 24.5
   }
-  return false
 }
 
 export const optionsMenuStructure = (options) => {
@@ -359,7 +378,7 @@ export const maxPovDepthSlug = (slug, site) => {
  * Eg: the user is on page reference/api/part so reference/api is on the way to that page
  * In that case, this will return true
  */
-export const isSlugPart = (part, slug) => slug.slice(0, part.length) === part
+export const isSlugPart = (part, slug) => slug && part && slug.slice(0, part.length) === part
 
 /*
  * Makes a properly formated path for the given locale
@@ -367,3 +386,22 @@ export const isSlugPart = (part, slug) => slug.slice(0, part.length) === part
  * Expects a slug with no leading slash
  * */
 export const localePath = (locale, slug) => (locale === 'en' ? '/' : `/${locale}/`) + slug
+
+/*
+ * Formats a number for display to human beings. Keeps long/high numbers short
+ */
+export const formatNumber = (num, suffix = '') => {
+  if (num === null || typeof num === 'undefined') return num
+  // Small values don't get formatted
+  if (num < 1) return num
+  if (num) {
+    const sizes = ['', 'K', 'M', 'B']
+    const i = Math.min(
+      parseInt(Math.floor(Math.log(num) / Math.log(1000)).toString(), 10),
+      sizes.length - 1
+    )
+    return `${(num / 1000 ** i).toFixed(i ? 1 : 0)}${sizes[i]}${suffix}`
+  }
+
+  return '0'
+}

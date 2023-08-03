@@ -47,7 +47,7 @@ La mesure de la largeur du dos a été à l'origine d'une grande confusion parmi
 
 Les origines de la mesure du dos en travers remontent à une époque où, au lieu de la mesure *d'épaule à épaule* que nous utilisons aujourd'hui, nous avions la mesure *de la longueur d'épaule* . Cette mesure était également source de confusion, nous l'avons donc progressivement abandonnée au profit de la mesure *d'une épaule à l'autre* .
 
- Le fait est que si nous connaissons la mesure d'épaule à épaule de *, nous pouvons estimer avec une précision raisonnable ce que sera la mesure d'épaule à dos de *. Alors, au lieu de te le demander, nous assumons simplement maintenant.
+Le fait est que si nous connaissons la mesure *d'épaule à épaule de*, nous pouvons estimer avec une précision raisonnable ce que sera la mesure d'épaule à dos de. Alors, au lieu de te le demander, nous assumons simplement maintenant.
 
 ### Mais tu réduis le modèle à sa plus simple expression.
 

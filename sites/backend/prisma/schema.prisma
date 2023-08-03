@@ -5,7 +5,7 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = "file:./db.sqlite"
+  url      = env("BACKEND_DB_URL")
 }
 
 model Apikey {

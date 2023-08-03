@@ -9,9 +9,9 @@ Om Teagan te maken heb je het volgende nodig:
 
 <Note>
 
-##### Een serger/overlock is mooi, maar optioneel
+##### Een overlockmachine is leuk, maar optioneel
 
-Zoals met alle gebreide en elastische stoffen maakt een overlock het leven eenvoudiger.
-Als je er geen hebt, wanhoop dan niet. Je hebt het niet echt nodig. Alle vergrendelde naden op het Teagan T-shirt kunnen ook worden gestikt met een smalle zigzag stiksel (~2 mm breed) op een standaard naaimachine.
+Zoals bij alle gebreide en elastische stoffen zal een overlockmachine je het leven gemakkelijker maken.
+Als je er geen hebt, wanhoop dan niet. Je hebt het niet echt nodig. Alle doorgestikte naden op het Teagan T-shirt kunnen ook worden genaaid met een smalle zigzagsteek (~2 mm breed) op een standaard naaimachine.
 
 </Note>

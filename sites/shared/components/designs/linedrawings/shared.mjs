@@ -32,6 +32,11 @@ export const LineDrawingWrapper = ({
 export const thin = (stroke = 1) => ({ strokeWidth: stroke / 2 })
 
 /*
+ * Think stroke-width helper to ensure consistency across linedrawings
+ */
+export const veryThin = (stroke = 1) => ({ strokeWidth: stroke / 3 })
+
+/*
  * Dashed stroke-dasharray helper to ensure consistency across linedrawings
  */
 export const dashed = (stroke = 1) => ({ strokeDasharray: `${stroke * 1.2},${stroke * 0.8}` })

@@ -4,7 +4,7 @@ import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
 // Components
 import Head from 'next/head'
 import { PageWrapper } from 'shared/components/wrappers/page.mjs'
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
 import { NavLinks, Breadcrumbs, MainSections } from 'shared/components/navigation/sitenav.mjs'
 import { FreeSewingIcon } from 'shared/components/icons.mjs'

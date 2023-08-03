@@ -12,6 +12,7 @@ import { designs } from '../i18n/designs.mjs'
  */
 const sitesFolder = path.join(fileURLToPath(import.meta.url), '..', '..', '..')
 export const folders = {
+  backend: [path.join(sitesFolder, 'backend', 'src', 'templates', 'email')],
   org: [path.join(sitesFolder, 'org', 'pages'), path.join(sitesFolder, 'org', 'components')],
   dev: [path.join(sitesFolder, 'dev', 'pages'), path.join(sitesFolder, 'dev', 'components')],
   lab: [path.join(sitesFolder, 'lab', 'pages'), path.join(sitesFolder, 'lab', 'components')],
@@ -42,10 +43,11 @@ const writeJson = async (site, locale, namespace, content) => {
  *
  */
 const getI18nFileList = async (site, languages) => {
-  const dirs = [...folders.shared]
-  if (site === 'org') dirs.push(...folders.org)
-  if (site === 'dev') dirs.push(...folders.dev)
-  if (site === 'lab') dirs.push(...folders.lab)
+  const dirs = []
+  if (site === 'org') dirs.push(...folders.org, ...folders.shared)
+  else if (site === 'dev') dirs.push(...folders.dev, ...folders.shared)
+  else if (site === 'lab') dirs.push(...folders.lab, ...folders.shared)
+  else if (site === 'backend') dirs.push(...folders.backend)
 
   const allFiles = []
   for (const dir of dirs) {
@@ -58,10 +60,10 @@ const getI18nFileList = async (site, languages) => {
     }
   }
 
-  const keep = languages.map((loc) => `.${loc}.yaml`)
+  const keep = languages.map((loc) => `${loc}.yaml`)
 
   // Filter out the language files
-  return allFiles.filter((file) => keep.includes(file.slice(-8))).sort()
+  return allFiles.filter((file) => keep.includes(file.slice(-7))).sort()
 }
 
 /*
@@ -71,12 +73,10 @@ const getI18nFileList = async (site, languages) => {
  *
  * - filename: The filename or full path + filename
  */
-const languageAndNamespaceFromFilename = (file) => {
-  const chunks = path.basename(file).split('.')
-  chunks.pop()
-
-  return chunks
-}
+const languageAndNamespaceFromFilename = (file) => [
+  path.basename(file).split('.')[0],
+  path.dirname(file).split('/').pop(),
+]
 
 /*
  * Helper method to load a YAML file from disk
@@ -104,7 +104,7 @@ const filesAsNamespaces = (files) => {
   // First build the object
   const translations = {}
   for (const file of files) {
-    const [namespace, lang] = languageAndNamespaceFromFilename(file)
+    const [lang, namespace] = languageAndNamespaceFromFilename(file)
     if (typeof translations[namespace] === 'undefined') {
       translations[namespace] = {}
     }
@@ -125,7 +125,6 @@ const fixData = (rawData, languages) => {
   const data = {}
   for (const [namespace, nsdata] of Object.entries(rawData)) {
     if (typeof nsdata.en === 'undefined') {
-      console.log({ namespace, nsdata })
       throw `No English data for namespace ${namespace}. Bailing out`
     }
     data[namespace] = { en: nsdata.en }
@@ -184,9 +183,15 @@ export const prebuildI18n = async (store) => {
   // Write out code-adjacent source files
   for (const language of languages) {
     // Fan out into namespaces
-    for (const namespace in namespaces)
+    for (const namespace in namespaces) {
       writeJson(store.site, language, namespace, namespaces[namespace][language])
+    }
   }
+
+  /*
+   * For backend, this is all we need
+   */
+  if (store.site === 'backend') return (store.i18n = { namespaces })
 
   /*
    * Handle design translations

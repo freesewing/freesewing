@@ -1,5 +1,0 @@
-testThis.option: Test deze optie
-testThis.measurement: Test deze meting
-measurements.d: Test het effect van een meting op hoe dit patroon eruit ziet
-designOptions.d: Test het effect van een optie op hoe dit patroon eruit ziet
-testThing: "Test {design}: {thing}"

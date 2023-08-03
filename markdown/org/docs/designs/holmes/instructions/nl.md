@@ -40,9 +40,9 @@ Afhankelijk van je naadwaarde wil je misschien naden bijknippen terwijl je bulk 
 
 </Note>
 
-### Stap 3: De ar-Flaps
+### Stap 3: De oorflappen
 
-#### Ear Flaps met Grenzen
+#### Oorkleppen met bandjes
 
 - Knip twee stukken lint van 30 cm tot 40 cm. Daar zal naar worden verwezen naarmate de banden vorderen.
 - _Rijg_ een stropdas aan de rechterkant van een oorflap (de verstevigde als je die gebruikt). Herhaal voor andere stropdassen.
@@ -79,7 +79,7 @@ Als je wilt kun je je eigen dassen ook met stof maken, [zie Holmes knippen](/doc
 
 <Warning>
 
-De oorklappen moeten lang genoeg zijn om de bovenkant van het piek te overschrijden, zodat ze kunnen worden gedaan met een knop op het piek. Gebruik deze methode niet als je geen knop bovenaan gebruikt.
+De oorflappen moeten lang genoeg zijn om over de bovenkant van de piek te gaan, zodat ze met een knoop op de piek gedaan kunnen worden. Gebruik deze methode niet als je geen knop bovenaan gebruikt.
 
 </Warning>
 
@@ -93,7 +93,7 @@ Het wordt aanbevolen om de oorkleppen op zijn minst te _doorstikken_, maar dit k
 
 ### Stap 4: De Visors
 
-Er zijn twee methoden voor de bouw van de bezoekers. Dit is te wijten aan de verschillende materialen waarvan de bezoeker kan worden gemaakt. Methode 1 is voor materialen die niet beschadigd worden door een naald of ijzer. Methode 2 is voor materialen die beschadigd worden door een naald of ijzer. Lees beide methodes om te bepalen welke het beste voor jou is.
+Er zijn twee methoden om de vizieren te maken. Dit komt door de verschillende soorten materialen waarvan de vizierinzetstukken kunnen worden gemaakt. Methode 1 is voor materialen die niet beschadigd raken door een naald of strijkijzer. Methode 2 is voor materialen die beschadigd worden door een naald of ijzer. Lees beide methodes om te bepalen welke het beste voor jou is.
 
 #### De Visors Methode 1
 
@@ -143,7 +143,7 @@ Eens te meer zijn er twee methodes voor de definitieve vergadering en de aanslui
 - Herhaal dit voor het resterende vizier aan de andere kant van de middelste kroonnaad.
 - Verwijder alle opvul- en rijgsteken.
 - Pers de naadtoeslagen naar binnen en zorg dat het stiksel niet zichtbaar is aan de buitenkant.
--  (Optioneel) Naai de naden losjes met de zweep op _aan de binnenkant van de kroon en zorg ervoor dat het stiksel niet zichtbaar is aan de buitenkant.
+- (Optioneel) Naai de naden losjes met een _whipstitch_ aan de binnenkant van de kroon en zorg ervoor dat het stiksel niet zichtbaar is aan de buitenkant.
 - Construeer de voering op dezelfde manier als de kroon door _edgestikt_weg te laten.
 - Vouw en pers onder de onderste naadtoeslag van de voering. Je vindt dat je onder meer moet indrukken om te voorkomen dat de voering wordt weergegeven. Het kan ook zijn dat je _moet rijgen_ de naadtoeslag naar beneden.
 - Speld de voering op de hoed met de verkeerde kanten op elkaar, zodat de middelste kroonnaden en paneelnaden op elkaar aansluiten. Plaats de gevouwen rand langs de stiklijnen.

@@ -1,0 +1,17 @@
+welcome: Willkommen im FreeSewing-Labor
+about: Hier kannst du Schnittmuster erstellen und dein Konto verwalten. Aber wenn du keinen besonderen Grund dafür hast, solltest du stattdessen vielleicht lieber FreeSewing.org nutzen.
+goToOrg: Gehe zu FreeSewing.org
+what: Was ist das FreeSewing-Labor?
+what1: Das FreeSewing-Labor war ursprünglich eine online gehostete Version unserer eigenständigen Entwicklungsumgebung. Es bietet erweiterte Funktionen für Schnittmusterdesignende und -entwicklende, um Schnittmuster zu entwickeln und zu testen. Funktionen, die auf FreeSewing.org nicht verfügbar waren.
+what2: Seit Version 3 von FreeSewing sind all diese fortschrittlichen Funktionen auch auf FreeSewing.org verfügbar. Das bedeutet, dass es hier nichts gibt, was du nicht auch auf FreeSewing.org finden kannst.
+what3: Das heutige Labor ist eine abgespeckte Version von FreeSewing.org. Es enthält keine Dokumentation, keinen Blog oder Showcase-Beiträge und so weiter. Wir belassen es dabei, weil es sich schneller einrichten/hochfahren lässt als die gesamte Website, aber trotzdem alle Kernfunktionen bietet.
+monorepo: Der gesamte Quellcode von FreeSewing ist in unserem Monorepo auf GitHub verfügbar
+labrepo: 'Darüber hinaus hat diese spezielle Laborinstanz zusätzlichen Quellcode, der hier zu finden ist: '
+lab: Quellcode spezifisch für dieses Labor
+fscode: "Der Quellcode von FreeSewing"
+noDocs: Das FreeSewing-Labor enthält keine Dokumentation.
+see: Stattdessen schau bitte auf
+orgDocs: FreeSewing.org hat eine Dokumentation für Maker, wie z.B. Designoptionen, Nähtechniken und Anleitungen.
+devDocs: FreeSewing.dev hat Dokumentation für Entwickler/-innen und Mitwirkende, wie z.B. API-Dokumentation und Anleitungen, wie man sich an dem Projekt beteiligen kann.
+enOnly: FreeSewing.dev ist nur auf Englisch verfügbar
+

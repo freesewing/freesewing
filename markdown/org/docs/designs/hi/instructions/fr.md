@@ -12,7 +12,7 @@ Lorsque tu utilises un tissu un peu extensible, c'est une bonne idée de stabili
 
 - Découpe des morceaux de tissu noir de la taille des yeux sur les morceaux de corps.
 - Stabilise le tissu avec un peu d'entoilage.
--  Avec du fil blanc, à la main ou à la machine _, fixe les pupilles sur les yeux comme des œillets. 
+- Avec du fil blanc, à la main ou à la machine, fixe les pupilles sur les yeux comme _des œillets_ .
 
 <Tip>
 

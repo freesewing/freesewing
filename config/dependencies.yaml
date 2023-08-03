@@ -62,7 +62,7 @@ core:
     'lodash.unset': &_unset '4.5.2'
     'lodash.clonedeep': '^4.5.0'
   dev:
-    'eslint': &eslint '8.45.0'
+    'eslint': &eslint '8.46.0'
     'nyc': '15.1.0'
     'mocha': *mocha
     'chai': *chai
@@ -102,9 +102,9 @@ new-design:
   _:
     'axios': '1.4.0'
     'chalk': '5.0.1'
-    'execa': '7.1.1'
+    'execa': '7.2.0'
     'mustache': '4.2.0'
-    'ora': '6.3.1'
+    'ora': '7.0.1'
     'prompts': '2.4.2'
     'recursive-readdir': '2.2.3'
 noble:
@@ -192,7 +192,7 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.370.0'
+    '@aws-sdk/client-sesv2': '3.382.0'
     '@prisma/client': &prisma '5.0.0'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
@@ -206,14 +206,14 @@ backend:
     'passport': '0.6.0'
     'passport-http': '0.3.0'
     'passport-jwt': '4.0.1'
-    'pino': '8.14.1'
+    'pino': '8.14.2'
     'qrcode': '1.5.3'
-    'swagger-ui-dist': '5.1.3'
+    'swagger-ui-dist': '5.3.1'
     'swagger-ui-express': '5.0.0'
   dev:
     'chai': *chai
     'chai-http': '4.4.0'
-    'esbuild': '0.18.15'
+    'esbuild': '0.18.17'
     'mocha': *mocha
     'mocha-steps': '1.3.0'
     'nodemon': '3.0.1'
@@ -225,10 +225,10 @@ dev:
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': &mdxRuntime '2.0.0-next.9'
-    '@next/bundle-analyzer': &next '13.4.11'
+    '@next/bundle-analyzer': &next '13.4.12'
     '@tailwindcss/typography': &tailwindTypography '0.5.9'
     'algoliasearch': '4.19.1'
-    'daisyui': &daisyui '3.2.1'
+    'daisyui': &daisyui '3.5.0'
     'lodash.get': *_get
     'lodash.orderby': &_orderby '4.6.0'
     'lodash.set': *_set
@@ -237,8 +237,8 @@ dev:
     'react-copy-to-clipboard': &reactCopyToClipboard '5.1.0'
     'react-dom': *react
     'react-hotkeys-hook': &reactHotkeysHook '4.4.1'
-    'react-instantsearch-dom': &reactInstantsearchDom '6.40.3'
-    'react-instantsearch-hooks-web': '6.47.1'
+    'react-instantsearch-dom': &reactInstantsearchDom '6.40.4'
+    'react-instantsearch-hooks-web': '6.47.3'
     'react-markdown': &reactMarkdown '8.0.7'
     'react-swipeable': &reactSwipeable '7.0.1'
     'react-timeago': &reactTimeago '7.1.0'
@@ -255,7 +255,7 @@ dev:
     'autoprefixer': '10.4.14'
     'eslint-config-next': *next
     'js-yaml': &jsYaml '4.1.0'
-    'postcss': &postcss '8.4.26'
+    'postcss': &postcss '8.4.27'
     'playwright': '^1.32.3'
     'remark-extract-frontmatter': '3.2.0'
     'remark-mdx-frontmatter': '3.0.0'
@@ -264,7 +264,7 @@ dev:
 
 lab:
   _:
-    '@headlessui/react': &headlessUiReact '1.7.15'
+    '@headlessui/react': &headlessUiReact '1.7.16'
     '@mdx-js/loader': *mdx
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
@@ -275,7 +275,7 @@ lab:
     'd3-drag': '3.0.0'
     'd3-selection': '3.0.0'
     'daisyui': *daisyui
-    'i18next': &i18next '23.2.11'
+    'i18next': &i18next '23.4.1'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
@@ -284,7 +284,7 @@ lab:
     'react': *react
     'react-copy-to-clipboard': *reactCopyToClipboard
     'react-hotkeys-hook': *reactHotkeysHook
-    'react-i18next': &reactI18next '13.0.2'
+    'react-i18next': &reactI18next '13.0.3'
     'react-instantsearch-dom': *reactInstantsearchDom
     'react-markdown': *reactMarkdown
     'react-swipeable': *reactSwipeable
@@ -315,7 +315,7 @@ org:
     'daisyui': *daisyui
     'echarts': 5.4.2
     'echarts-for-react': 3.0.2
-    'jotai': &jotai '2.2.2'
+    'jotai': &jotai '2.2.3'
     'jotai-location': &jotai-location '0.5.1'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
@@ -343,7 +343,7 @@ org:
 
 sanity:
   _:
-    '@sanity/vision': &sanity '3.14.3'
+    '@sanity/vision': &sanity '3.14.5'
     'easymde': '2.18.0'
     'react': *react
     'react-dom': *react
@@ -352,16 +352,16 @@ sanity:
     'styled-components': '5.3.11'
     'sanity-plugin-markdown': '4.1.0'
   dev:
-    '@sanity/eslint-config-studio': '2.0.4'
+    '@sanity/eslint-config-studio': '3.0.0'
     'eslint': *eslint
     'prettier': '3.0.0'
     'typescript': '5.1.6'
-    '@sanity/cli': '3.14.3'
+    '@sanity/cli': '3.14.4'
 
 shared:
   _:
     '@headlessui/react': *headlessUiReact
-    '@next/mdx': '13.4.11'
+    '@next/mdx': '13.4.12'
     '@resvg/resvg-js': '2.4.1'
     '@tailwindcss/typography': *tailwindTypography
     'Buffer': '0.0.0'
@@ -382,8 +382,8 @@ shared:
     'lodash.unset': *_unset
     'lodash.get': *_get
     'mdast-util-toc': '7.0.0'
-    'mermaid': '10.2.4'
-    'ora': '6.3.1'
+    'mermaid': '10.3.0'
+    'ora': '7.0.1'
     'pdfkit': '0.13.0'
     'postcss-for': '2.1.1'
     'react': *react
@@ -396,7 +396,7 @@ shared:
     'remark-frontmatter': '4.0.1'
     'remark-mdx-frontmatter': '3.0.0'
     'remark-smartypants': '2.0.0'
-    'sharp': '0.32.3'
+    'sharp': '0.32.4'
     # see: https://github.com/npm/cli/issues/2610#issuecomment-1295371753
     'svg-to-pdfkit': 'https://git@github.com/eriese/SVG-to-PDFKit'
     'tlds': '1.240.0'

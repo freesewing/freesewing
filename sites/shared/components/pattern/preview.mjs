@@ -1,5 +1,5 @@
 import { useDesign } from 'shared/hooks/use-design.mjs'
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 import { themePlugin } from '@freesewing/plugin-theme'
 
 export const PatternPreview = ({ design, settings }) => {
