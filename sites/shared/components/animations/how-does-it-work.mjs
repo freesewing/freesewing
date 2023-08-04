@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'next-i18next'
-import { AaronFront, AaronBack } from 'shared/components/designs/linedrawings/aaron.mjs'
+import { AaronFront } from 'shared/components/designs/linedrawings/aaron.mjs'
 import { BruceFront, BruceBack } from 'shared/components/designs/linedrawings/bruce.mjs'
 import { SimonFront, SimonBack } from 'shared/components/designs/linedrawings/simon.mjs'
 import { WahidFront, WahidBack } from 'shared/components/designs/linedrawings/wahid.mjs'
+import { AlbertFront } from 'shared/components/designs/linedrawings/albert.mjs'
 
 export const ns = ['homepage']
 
@@ -12,7 +13,7 @@ const lineDrawings = [
   <BruceBack key={2} className="h-72 md:h-96" />,
   <SimonBack key={3} className="h-72 md:h-96" />,
   <WahidFront key={4} className="h-72 md:h-96" />,
-  <AaronBack key={5} className="h-72 md:h-96" />,
+  <AlbertFront key={5} className="h-72 md:h-96" />,
   <BruceFront key={6} className="h-72 md:h-96" />,
   <SimonFront key={7} className="h-72 md:h-96" />,
   <WahidBack key={8} className="h-72 md:h-96" />,
