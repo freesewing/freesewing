@@ -1,6 +1,7 @@
 // Export macros
 export const bannerMacros = {
-  banner: function (so) {
+  banner: function (so, { store }) {
+    console.log({ banner: { so: so, store: store } })
     // Mix defaults with settings object
     so = {
       text: '',
@@ -19,5 +20,20 @@ export const bannerMacros = {
     }
 
     so.path.attr('data-text', spacer)
+
+    store.set('macros.banner.paths.' + so.id, so.path.name)
+  },
+  rmbanner: function (so, { paths, store }) {
+    console.log({ rmbanner: { id: so.id, store: store } })
+    const pathName = store.get('macros.banner.paths.' + so.id)
+    console.log({ pathName: pathName })
+    if (pathName) {
+      const bannerPath = paths[pathName]
+      console.log({ bannerPath: bannerPath })
+      delete bannerPath.attributes['data-text-dy']
+      delete bannerPath.attributes['data-text-class']
+      delete bannerPath.attributes['data-text']
+      console.log({ bannerPath: bannerPath })
+    }
   },
 }
