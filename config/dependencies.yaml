@@ -104,7 +104,7 @@ new-design:
     'chalk': '5.0.1'
     'execa': '7.2.0'
     'mustache': '4.2.0'
-    'ora': '7.0.0'
+    'ora': '7.0.1'
     'prompts': '2.4.2'
     'recursive-readdir': '2.2.3'
 noble:
@@ -192,7 +192,7 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.379.1'
+    '@aws-sdk/client-sesv2': '3.382.0'
     '@prisma/client': &prisma '5.0.0'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
@@ -208,7 +208,7 @@ backend:
     'passport-jwt': '4.0.1'
     'pino': '8.14.2'
     'qrcode': '1.5.3'
-    'swagger-ui-dist': '5.2.0'
+    'swagger-ui-dist': '5.3.1'
     'swagger-ui-express': '5.0.0'
   dev:
     'chai': *chai
@@ -343,7 +343,7 @@ org:
 
 sanity:
   _:
-    '@sanity/vision': &sanity '3.14.4'
+    '@sanity/vision': &sanity '3.14.5'
     'easymde': '2.18.0'
     'react': *react
     'react-dom': *react
@@ -352,9 +352,9 @@ sanity:
     'styled-components': '5.3.11'
     'sanity-plugin-markdown': '4.1.0'
   dev:
-    '@sanity/eslint-config-studio': '2.0.4'
+    '@sanity/eslint-config-studio': '3.0.0'
     'eslint': *eslint
-    'prettier': '3.0.0'
+    'prettier': '3.0.1'
     'typescript': '5.1.6'
     '@sanity/cli': '3.14.4'
 
@@ -383,7 +383,7 @@ shared:
     'lodash.get': *_get
     'mdast-util-toc': '7.0.0'
     'mermaid': '10.3.0'
-    'ora': '7.0.0'
+    'ora': '7.0.1'
     'pdfkit': '0.13.0'
     'postcss-for': '2.1.1'
     'react': *react

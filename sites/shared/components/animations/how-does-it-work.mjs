@@ -1,9 +1,10 @@
 import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'next-i18next'
-import { AaronFront, AaronBack } from 'shared/components/designs/linedrawings/aaron.mjs'
+import { AaronFront } from 'shared/components/designs/linedrawings/aaron.mjs'
 import { BruceFront, BruceBack } from 'shared/components/designs/linedrawings/bruce.mjs'
 import { SimonFront, SimonBack } from 'shared/components/designs/linedrawings/simon.mjs'
 import { WahidFront, WahidBack } from 'shared/components/designs/linedrawings/wahid.mjs'
+import { AlbertFront } from 'shared/components/designs/linedrawings/albert.mjs'
 
 export const ns = ['homepage']
 
@@ -15,7 +16,7 @@ const lineDrawings = [
   SimonFront,
   SimonBack,
   WahidFront,
-  WahidBack,
+  WahidBack
 ]
 
 const patternTweaks = [
