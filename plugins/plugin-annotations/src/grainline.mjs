@@ -22,9 +22,9 @@ const dflts = { text: 'grainline' }
 export const grainlineMacros = {
   grainline: function (so = {}, { points, paths, Path, complete, store }) {
     if (so === false) {
-      delete points.grainlineFrom
-      delete points.grainlineTo
-      delete paths.grainline
+      delete points[so.id + 'grainlineFrom']
+      delete points[so.id + 'grainlineTo']
+      delete paths[so.id + 'grainline']
       if (store.cutlist?.setGrain) store.cutlist.setGrain(90) // Restoring default
       return true
     }
@@ -37,11 +37,11 @@ export const grainlineMacros = {
     store.cutlist.setGrain(so.from.angle(so.to))
 
     if (complete) {
-      points.grainlineFrom = so.from.shiftFractionTowards(so.to, 0.05)
-      points.grainlineTo = so.to.shiftFractionTowards(so.from, 0.05)
-      paths.grainline = new Path()
-        .move(points.grainlineFrom)
-        .line(points.grainlineTo)
+      points[so.id + 'grainlineFrom'] = so.from.shiftFractionTowards(so.to, 0.05)
+      points[so.id + 'grainlineTo'] = so.to.shiftFractionTowards(so.from, 0.05)
+      paths[so.id + 'grainline'] = new Path()
+        .move(points[so.id + 'grainlineFrom'])
+        .line(points[so.id + 'grainlineTo'])
         .attr('class', 'note')
         .attr('marker-start', 'url(#grainlineFrom)')
         .attr('marker-end', 'url(#grainlineTo)')

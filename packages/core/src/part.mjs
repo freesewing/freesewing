@@ -205,6 +205,8 @@ Part.prototype.shorthand = function () {
 
   // Macro closure at the end as it includes the shorthand object
   shorthand.macro = this.__macroClosure(shorthand)
+  // Macro closure at the end as it includes the shorthand object
+  shorthand.rmmacro = this.__rmmacroClosure(shorthand)
 
   return shorthand
 }
@@ -353,12 +355,35 @@ Part.prototype.__macroClosure = function (props) {
     const macro = utils.__macroName(key)
     args.id = args.id ? macro + '_' + args.id : self.getId(macro + '_')
 
-    console.log({ macro: { name: macro, key: key, args: args, props: props } })
+    props.store.setIfUnset('macros.' + key + '.ids', []).push('macros.' + key + '.ids', args.id)
     if (typeof self[macro] === 'function') self[macro](args, props)
     else if ('context' in self)
       self.context.store.log.warning('Unknown macro `' + key + '` used in ' + self.name)
 
     return args.id
+  }
+
+  return method
+}
+/**
+ * Returns a closure holding the rmmacro method
+ *
+ * @private
+ * @return {function} method - The closured rmmacro method
+ */
+Part.prototype.__rmmacroClosure = function (props) {
+  const self = this
+  const method = function (id) {
+    Object.keys(props.paths)
+      .filter((p) => p.substring(0, id.length) === id)
+      .forEach((p) => {
+        delete props.paths[p]
+      })
+    Object.keys(props.points)
+      .filter((p) => p.substring(0, id.length) === id)
+      .forEach((p) => {
+        delete props.points[p]
+      })
   }
 
   return method

@@ -1,7 +1,7 @@
 // Export macros
 export const crossboxMacros = {
-  crossbox: function (so, { points, Point, paths, Path, getId }) {
-    let id = getId()
+  crossbox: function (so, { points, Point, paths, Path }) {
+    let id = so.id
     let shiftFraction = 0.1
     points[id + '_boxTopLeft'] = so.from.copy()
     points[id + '_boxBottomRight'] = so.to.copy()

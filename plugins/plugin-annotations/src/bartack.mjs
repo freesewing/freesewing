@@ -92,7 +92,7 @@ function createBartack(so, props) {
     }
   }
 
-  paths[`${so.prefix}bartack${so.suffix}`] = bartackPath(guide, so, props).attr(
+  paths[`${so.id}bartack${so.suffix}`] = bartackPath(guide, so, props).attr(
     'class',
     'stroke-sm stroke-mark'
   )

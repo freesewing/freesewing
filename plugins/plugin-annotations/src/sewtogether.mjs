@@ -38,51 +38,51 @@ export const sewtogetherMacros = {
       return true
     }
     so = {
-      prefix: 'sewtogether',
+      // prefix: 'sewtogether',
       ...so,
     }
     if (complete) {
       if (null == so.middle) {
         so.middle = so.from.shiftFractionTowards(so.to, 0.5)
       }
-      points[so.prefix + 'From'] = so.from
-      points[so.prefix + 'Middle'] = so.middle
-      points[so.prefix + 'To'] = so.to
+      points[so.id + 'From'] = so.from
+      points[so.id + 'Middle'] = so.middle
+      points[so.id + 'To'] = so.to
 
-      points[so.prefix + 'FromCp'] = points[so.prefix + 'From'].shift(
-        points[so.prefix + 'From'].angle(points[so.prefix + 'Middle']) + 90,
-        points[so.prefix + 'From'].dist(points[so.prefix + 'Middle']) / 1.5
+      points[so.id + 'FromCp'] = points[so.id + 'From'].shift(
+        points[so.id + 'From'].angle(points[so.id + 'Middle']) + 90,
+        points[so.id + 'From'].dist(points[so.id + 'Middle']) / 1.5
       )
-      points[so.prefix + 'ToCp'] = points[so.prefix + 'To'].shift(
-        points[so.prefix + 'To'].angle(points[so.prefix + 'Middle']) - 90,
-        points[so.prefix + 'To'].dist(points[so.prefix + 'Middle']) / 1.5
+      points[so.id + 'ToCp'] = points[so.id + 'To'].shift(
+        points[so.id + 'To'].angle(points[so.id + 'Middle']) - 90,
+        points[so.id + 'To'].dist(points[so.id + 'Middle']) / 1.5
       )
 
       if (so.hinge) {
-        points[so.prefix + 'Hinge'] = points[so.prefix + 'Middle'].shift(
-          points[so.prefix + 'Middle'].angle(points[so.prefix + 'To']) +
+        points[so.id + 'Hinge'] = points[so.id + 'Middle'].shift(
+          points[so.id + 'Middle'].angle(points[so.id + 'To']) +
             Math.abs(
-              points[so.prefix + 'Middle'].angle(points[so.prefix + 'From']) -
-                points[so.prefix + 'Middle'].angle(points[so.prefix + 'To'])
+              points[so.id + 'Middle'].angle(points[so.id + 'From']) -
+                points[so.id + 'Middle'].angle(points[so.id + 'To'])
             ) /
               2 +
             (sa ? 180 : 0),
           sa
             ? sa
             : Math.min(
-                points[so.prefix + 'From'].dist(points[so.prefix + 'Middle']),
-                points[so.prefix + 'From'].dist(points[so.prefix + 'Middle'])
+                points[so.id + 'From'].dist(points[so.id + 'Middle']),
+                points[so.id + 'From'].dist(points[so.id + 'Middle'])
               ) / 4
         )
-        paths[so.prefix + 'SewTogetherHinge'] = new Path()
-          .move(points[so.prefix + 'Middle'])
-          .line(points[so.prefix + 'Hinge'])
+        paths[so.id + 'SewTogetherHinge'] = new Path()
+          .move(points[so.id + 'Middle'])
+          .line(points[so.id + 'Hinge'])
           .attr('marker-start', 'url(#sewTogetherCross)')
           .attr('class', 'dotted note stroke-sm')
       }
-      paths[so.prefix + 'SewTogether'] = new Path()
-        .move(points[so.prefix + 'From'])
-        .curve(points[so.prefix + 'FromCp'], points[so.prefix + 'ToCp'], points[so.prefix + 'To'])
+      paths[so.id + 'SewTogether'] = new Path()
+        .move(points[so.id + 'From'])
+        .curve(points[so.id + 'FromCp'], points[so.id + 'ToCp'], points[so.id + 'To'])
         .attr('class', 'dotted note stroke-sm')
         .attr('marker-start', 'url(#sewTogetherStart)')
         .attr('marker-end', 'url(#sewTogetherEnd)')
