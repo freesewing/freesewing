@@ -2969,21 +2969,6 @@
     get-random-values-esm "^1.0.0"
     lodash "^4.17.21"
 
-"@sanity/cli@3.14.4":
-  version "3.14.4"
-  resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-3.14.4.tgz#9d5d9c3a1cf88dc428e90ce00e7647f0a2b47fcb"
-  integrity sha512-nLJKuChIgxUhjq9iKTOya7dkFYdKc3+/yU0S6pnFi2sJGOo6P1uBGX0vJ6a9t59tGFhXcTF4RyBvNAJAfc5WZw==
-  dependencies:
-    "@babel/traverse" "^7.19.0"
-    "@vercel/frameworks" "1.4.3"
-    "@vercel/fs-detectors" "4.1.0"
-    chalk "^4.1.2"
-    esbuild "^0.18.0"
-    esbuild-register "^3.4.1"
-    get-it "^8.0.9"
-    golden-fleece "^1.0.9"
-    pkg-dir "^5.0.0"
-
 "@sanity/cli@3.14.5":
   version "3.14.5"
   resolved "https://registry.yarnpkg.com/@sanity/cli/-/cli-3.14.5.tgz#e7ad81747b4195aca10d8d108eaca9ddfbf7b6cc"
@@ -4285,14 +4270,6 @@
   resolved "https://registry.yarnpkg.com/@vercel/error-utils/-/error-utils-1.0.10.tgz#6530e9c930d5cf4c7f96045ec3a0bccaf2e6b14c"
   integrity sha512-nsKy2sy+pjUWyKI1V/XXKspVzHMYgSalmj5+EsKWFXZbnNZicqxNtMR94J8Hs7SB4TQxh0s4KhczJtL59AVGMg==
 
-"@vercel/frameworks@1.4.3":
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/@vercel/frameworks/-/frameworks-1.4.3.tgz#ca10aad328aa80a06ede15ad49e8237ac75169e3"
-  integrity sha512-csoUcBDOvLe1D4psxWs6ynJ1GthB3SNZLVPkF4apdx+PLOJLnjL7BefIo8Mm8IISK+fOTThvO3MxZ8GxUBqHnA==
-  dependencies:
-    "@iarna/toml" "2.2.3"
-    js-yaml "3.13.1"
-
 "@vercel/frameworks@1.5.0":
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/@vercel/frameworks/-/frameworks-1.5.0.tgz#8c9a3cd9e38df7d9ebc56a050adce596e4fba68d"
@@ -4300,20 +4277,6 @@
   dependencies:
     "@iarna/toml" "2.2.3"
     js-yaml "3.13.1"
-
-"@vercel/fs-detectors@4.1.0":
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/@vercel/fs-detectors/-/fs-detectors-4.1.0.tgz#b0fb0813eb308166533aa13f8a6faab9531d9382"
-  integrity sha512-DIQ1kUZLei9lJ4n2/NyQnLoTRl4mSCUPburHjDGCMRw0aaLADpPrdE3zg3rOZ0S213K0IrTrCJEsO4oDwgVD+w==
-  dependencies:
-    "@vercel/error-utils" "1.0.10"
-    "@vercel/frameworks" "1.4.3"
-    "@vercel/routing-utils" "2.2.1"
-    glob "8.0.3"
-    js-yaml "4.1.0"
-    json5 "2.2.2"
-    minimatch "3.1.2"
-    semver "6.1.1"
 
 "@vercel/fs-detectors@4.1.1":
   version "4.1.1"
