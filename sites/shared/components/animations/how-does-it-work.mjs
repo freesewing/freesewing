@@ -18,27 +18,6 @@ const lineDrawings = [
   WahidBack,
 ]
 
-const LineDrawing = ({ i }) => {
-  const [Drawing, setDrawing] = useState(() => lineDrawings[i])
-  const [opacity, setOpacity] = useState(0)
-
-  useEffect(() => {
-    setOpacity(0)
-    setTimeout(() => {
-      setDrawing(() => lineDrawings[i])
-    }, 700)
-  }, [i])
-
-  useEffect(() => {
-    setTimeout(() => setOpacity(100), 700)
-  }, [Drawing])
-  return (
-    <Drawing
-      className={`h-72 md:h-96 duration-700 ease-in-out transition-opacity opacity-${opacity}`}
-    />
-  )
-}
-
 const patternTweaks = [
   <path
     key={1}
@@ -114,54 +93,71 @@ const Title = ({ txt }) => (
 
 const slides = [0, 1, 2, 3, 4, 5, 6, 7]
 
+const useCarousel = (i, items) => {
+  const [Item, setItem] = useState(() => items[i])
+  const [opacity, setOpacity] = useState(0)
+
+  useEffect(() => {
+    setOpacity(0)
+    setTimeout(() => {
+      setItem(() => items[i])
+      setOpacity(100)
+    }, 700)
+  }, [i, items])
+
+  return { opacity, Item }
+}
+
+const transitionClasses = 'duration-700 ease-in-out transition-opacity'
+const LineDrawing = ({ i }) => {
+  const { Item, opacity } = useCarousel(Math.floor(i / 2), lineDrawings)
+  return (
+    <div
+      className={`${transitionClasses} opacity-${opacity}
+     w-full flex flex-row items-center h-full overflow-hidden`}
+    >
+      <Item className="h-full" />
+    </div>
+  )
+}
+
+const measieImages = slides.map((i) => `/img/models/model-${i}.png`)
+const MeasiesImage = ({ i }) => {
+  const { Item, opacity } = useCarousel(Math.floor(i), measieImages)
+  return <img src={Item} className={`h-72 md:h-96 ${transitionClasses} opacity-${opacity}`} />
+}
+
 export const HowDoesItWorkAnimation = () => {
   const { t } = useTranslation(ns)
   const [step, setStep] = useState(0)
-  const lineDrawing = useRef(lineDrawings[0])
-  // const [halfStep, setHalfStep] = useState(0)
-  const halfStep = 0
+  const [halfStep, setHalfStep] = useState(0)
+
   useEffect(() => {
     const intervalId = setInterval(() => {
       setStep((curStep) => {
-        if (curStep > 6) return 0
+        if (curStep === patternTweaks.length - 1) return 0
         return curStep + 1
       })
 
-      console.log(step)
-      // setHalfStep((curHalf) => {
-      //   if (curHalf > 7) return 0
-      //   return curHalf + 0.5
-      // })
-    }, 5000)
+      setHalfStep((curHalf) => {
+        if (curHalf > 7) return 0
+        return curHalf + 0.5
+      })
+    }, 4000)
 
     return () => clearInterval(intervalId)
   })
 
   return (
     <div className="flex flex-col md:grid md:grid-cols-3">
-      <div className="relative w-full">
-        <div className="relative h-72 md:h-96 overflow-hidden">
-          <div className="w-full flex flex-row items-center h-72 md:h-96 w-full justify-center">
-            <LineDrawing i={step} />
-          </div>
-        </div>
+      <div className="relative w-full h-72 md:h-96 overflow-hidden">
+        <LineDrawing i={step} />
         <Nr nr={1} />
         <Title txt={t('pickAnyDesign')} />
       </div>
       <div className="relative w-full">
         <div className="relative h-72 md:h-96 overflow-hidden">
-          {slides.map((i) => (
-            <div
-              key={i}
-              className={`duration-700 ease-in-out transition-all ${
-                halfStep === i ? 'opacity-1' : 'opacity-0'
-              } absolute top-0 text-center w-full`}
-            >
-              <div className="w-full flex flex-row items-center h-72 md:h-96 w-full justify-center">
-                <img src={`/img/models/model-${i}.png`} className="h-72 md:h-96 shrink-0 px-8" />
-              </div>
-            </div>
-          ))}
+          <MeasiesImage i={halfStep} />
           <Nr nr={2} />
           <Title txt={t('addASet')} />
         </div>
