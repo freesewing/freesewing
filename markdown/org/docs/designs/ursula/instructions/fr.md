@@ -2,7 +2,7 @@
 title: "Sous-vêtements Ursula : Instructions de couture"
 ---
 
-### Étape 1 : Coudre le devant à la première pièce de la rafale
+### Step 1: Pin/baste the front to the first gusset piece
 
 Placez l'une des pièces scintillantes sur la pièce avant, _de bons côtés ensemble_, afin que les coutures de crotte soient alignées. Épingler ou badigeonner à la marge de couture.
 
@@ -14,7 +14,7 @@ Ouvrir l'appartement. Vous pouvez appuyer si vous le souhaitez, mais qui presse 
 
 ![Ouvrir à plat](step02.png)
 
-### Étape 3 : Coudre le dos à la première pièce de gusset
+### Step 3: Pin/baste the back to the first gusset piece
 
 Placez le verso sur le gusset, les bons côtés ensemble. Épingler ou badigeonner à la marge de couture.
 
