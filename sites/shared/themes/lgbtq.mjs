@@ -1,24 +1,34 @@
 import colors from 'tailwindcss/colors'
+const primary = colors.sky['500']
 
 /*
  * See the light theme for an example with inline comments
  */
 
-export const spectrum = [
-  'red-400',
-  'orange-400',
-  'yellow-400',
-  'lime-400',
-  'green-400',
-  'teal-400',
-  'cyan-400',
-  'blue-400',
-  'indigo-400',
-  'violet-400',
-  'purple-400',
+const rainbow = [
+  colors.red['300'],
+  colors.orange['300'],
+  colors.yellow['300'],
+  colors.lime['300'],
+  colors.green['300'],
+  colors.teal['300'],
+  colors.cyan['300'],
+  colors.blue['300'],
+  colors.indigo['300'],
+  colors.violet['300'],
+  colors.purple['300'],
 ]
 
-export const rating = ['green-500', 'yellow-400', 'orange-500', 'red-500', 'pink-500']
+const spectrum = {}
+for (let s = 0; s < 11; s++) {
+  spectrum[`--fs-sp-${s}`] = rainbow[s]
+  spectrum[`--fs-spf-${s}`] = rainbow[10 - s]
+}
+
+const rating = {}
+for (let r = 0; r < 5; r++) {
+  rating[`--fs-rt-${r}`] = primary
+}
 
 export const theme = {
   fontFamily:
@@ -27,7 +37,7 @@ export const theme = {
   'base-200': colors.neutral['200'],
   'base-300': colors.neutral['400'],
   'base-content': colors.neutral['700'],
-  primary: colors.sky['500'],
+  primary,
   'primary-focus': colors.sky['400'],
   'primary-content': colors.sky['50'],
   secondary: colors.violet['500'],
@@ -126,4 +136,10 @@ export const theme = {
   '--pattern-stroke-3xl': '6px',
   '--pattern-stroke-4xl': '8px',
   stripeTheme: 'stripe',
+
+  /**
+   * Add the spectrum and ratings vars last so they can pick up on other ones
+   */
+  ...spectrum,
+  ...rating,
 }

@@ -5,10 +5,17 @@ import colors from 'tailwindcss/colors'
  */
 
 const color = colors.stone
+const primary = color[800]
 
-export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(() => 'stone-300')
-
-export const rating = ['stone-400', 'stone-500', 'stone-600', 'stone-700', 'stone-800']
+const spectrum = {}
+for (let s = 0; s < 11; s++) {
+  spectrum[`--fs-sp-${s}`] = color['300']
+  spectrum[`--fs-spf-${s}`] = color['900']
+}
+const rating = {}
+for (let r = 0; r < 5; r++) {
+  rating[`--fs-rt-${r}`] = primary
+}
 
 export const theme = {
   fontFamily: "Optima, Candara, 'Noto Sans', source-sans-pro, sans-serif;",
@@ -16,7 +23,7 @@ export const theme = {
   'base-200': color['100'],
   'base-300': color['500'],
   'base-content': color['900'],
-  primary: color['800'],
+  primary,
   'primary-focus': color['900'],
   'primary-content': color['50'],
   secondary: color['800'],
@@ -122,4 +129,10 @@ export const theme = {
   '--pattern-sample-9': color['500'],
   '--pattern-sample-10': color['500'],
   stripeTheme: 'stripe',
+
+  /**
+   * Add the spectrum and ratings vars last so they can pick up on other ones
+   */
+  ...spectrum,
+  ...rating,
 }

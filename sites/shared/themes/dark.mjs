@@ -1,8 +1,10 @@
 import colors from 'tailwindcss/colors'
+const primary = colors.violet['300']
 
-export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(() => 'violet-400')
-
-export const rating = ['green-400', 'yellow-400', 'amber-500', 'orange-500', 'red-500']
+const rating = {}
+for (let r = 0; r < 5; r++) {
+  rating[`--fs-rt-${r}`] = primary
+}
 
 export const theme = {
   fontFamily:
@@ -13,7 +15,7 @@ export const theme = {
   'base-300': colors.neutral['600'],
   'base-content': colors.neutral['300'],
 
-  primary: colors.violet['300'],
+  primary,
   'primary-focus': colors.violet['400'],
   'primary-content': colors.violet['950'],
 

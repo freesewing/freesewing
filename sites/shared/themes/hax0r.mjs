@@ -1,14 +1,21 @@
 import colors from 'tailwindcss/colors'
-
+const primary = colors.lime['700']
 /*
  * See the light theme for an example with inline comments
  */
 
 const bg = '#002808'
 
-export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(() => 'lime-500')
+const spectrum = {}
+for (let s = 0; s < 11; s++) {
+  spectrum[`--fs-sp-${s}`] = colors.lime['500']
+  spectrum[`--fs-spf-${s}`] = colors.lime['600']
+}
 
-export const rating = [0, 1, 2, 3, 4].map(() => 'lime-500')
+const rating = {}
+for (let r = 0; r < 5; r++) {
+  rating[`--fs-rt-${r}`] = primary
+}
 
 export const theme = {
   fontFamily: `ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;`,
@@ -16,7 +23,7 @@ export const theme = {
   'base-200': colors.lime['900'],
   'base-300': colors.lime['800'],
   'base-content': colors.lime['500'],
-  primary: colors.lime['700'],
+  primary,
   'primary-focus': colors.lime['600'],
   'primary-content': colors.lime['50'],
   secondary: colors.lime['600'],
@@ -110,4 +117,10 @@ export const theme = {
   '--pattern-stroke-3xl': '6px',
   '--pattern-stroke-4xl': '8px',
   stripeTheme: 'stripe',
+
+  /**
+   * Add the spectrum and ratings vars last so they can pick up on other ones
+   */
+  ...spectrum,
+  ...rating,
 }

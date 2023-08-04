@@ -1,12 +1,20 @@
 import colors from 'tailwindcss/colors'
+const primary = colors.indigo['300']
 
 /*
  * See the light theme for an example with inline comments
  */
 
-export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(() => 'indigo-300')
+const spectrum = {}
+for (let s = 0; s < 11; s++) {
+  spectrum[`--fs-sp-${s}`] = colors.indigo['300']
+  spectrum[`--fs-spf-${s}`] = colors.indigo['400']
+}
 
-export const rating = ['green-500', 'yellow-400', 'amber-500', 'orange-500', 'red-500']
+const rating = {}
+for (let r = 0; r < 5; r++) {
+  rating[`--fs-rt-${r}`] = primary
+}
 
 export const theme = {
   fontFamily: "'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursive;",
@@ -14,7 +22,7 @@ export const theme = {
   'base-200': colors.red['100'],
   'base-300': colors.red['300'],
   'base-content': colors.neutral['700'],
-  primary: colors.indigo['300'],
+  primary,
   'primary-focus': colors.indigo['400'],
   'primary-content': colors.indigo['800'],
   secondary: colors.pink['400'],
@@ -120,4 +128,10 @@ export const theme = {
   '--pattern-sample-9': colors.fuchsia['500'],
   '--pattern-sample-10': colors.rose['500'],
   stripeTheme: 'stripe',
+
+  /**
+   * Add the spectrum and ratings vars last so they can pick up on other ones
+   */
+  ...spectrum,
+  ...rating,
 }
