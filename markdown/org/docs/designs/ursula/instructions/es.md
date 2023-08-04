@@ -2,7 +2,7 @@
 title: "Calzoncillos Ursula: Instrucciones de costura"
 ---
 
-### Paso 1: Agarra la parte frontal a la primera pieza de chispa
+### Step 1: Pin/baste the front to the first gusset piece
 
 Coloca una de las piezas de chispa en la parte delantera _lados buenos juntos_, de modo que las costuras de los croquis estén alineadas. Fijar o bastar en la costura de la costura.
 
@@ -14,7 +14,7 @@ Abrir plano. Puedes pulsar si quieres, pero ¿quién presiona el interior?
 
 ![Abrir plano](step02.png)
 
-### Paso 3: Pase la espalda a la primera pieza de chispa
+### Step 3: Pin/baste the back to the first gusset piece
 
 Coloque la parte trasera en el chorro de chorro juntos. Fijar o bastar en la costura de la costura.
 
