@@ -52,7 +52,7 @@ const SectionLink = ({ skey, tree, slug }) =>
     <>
       <Link
         href={`/${tree[skey].s}`}
-        className="pl-2 border-l-2 py-2 block w-full hover:border-secondary hover:bg-secondary hover:bg-opacity-10"
+        className="pl-2 border-l-2 py-2 block w-full hover:border-secondary hover:bg-secondary hover:bg-opacity-20"
       >
         {tree[skey].t}
       </Link>
@@ -61,7 +61,7 @@ const SectionLink = ({ skey, tree, slug }) =>
   ) : (
     <Link
       href={`/${tree[skey].s}`}
-      className="pl-2 border-l-2 py-2 block w-full hover:border-secondary hover:bg-secondary hover:bg-opacity-10"
+      className="pl-2 border-l-2 py-2 block w-full hover:border-secondary hover:bg-secondary hover:bg-opacity-20"
     >
       {tree[skey].t}
     </Link>
@@ -87,7 +87,7 @@ const Section = ({
             <span
               className={
                 'pl-2 font-medium border-l-2 py-2 block w-full border-secondary ' +
-                'bg-secondary bg-opacity-10'
+                'bg-secondary bg-opacity-30'
               }
             >
               {page.t}
@@ -115,15 +115,15 @@ const MainLink = ({
 }) => {
   const classes =
     '' +
-    'break-all py-2 px-2 block w-full font-bold text-lg ' +
+    'break-normal py-2 px-2 block w-full font-bold text-lg ' +
     'flex flex-row items-start gap-0.5 lg:gap-1 border-l-2'
 
   return s === slug ? (
-    <span className={`${classes} border-secondary bg-secondary bg-opacity-10`}>{t}</span>
+    <span className={`${classes} border-secondary bg-secondary bg-opacity-30`}>{t}</span>
   ) : (
     <Link
       href={`/${s}`}
-      className={`${classes} border-transparent hover:border-secondary hover:bg-secondary hover:bg-opacity-10`}
+      className={`${classes} border-transparent hover:border-secondary hover:bg-secondary hover:bg-opacity-30`}
     >
       {t}
     </Link>
@@ -247,11 +247,7 @@ export const MainSections = () => {
     const act = isSlugPart(page.s, slug)
     const txt = (
       <>
-        {icons[page.s] ? (
-          icons[page.s](`w-6 h-6 ${act ? 'text-base-100 opacity-70' : ''}`)
-        ) : (
-          <BulletIcon fill={act} className={`w-6 h-6 ${act ? 'text-base-100 opacity-70' : ''}`} />
-        )}
+        {icons[page.s] ? icons[page.s](`w-6 h-6`) : <BulletIcon fill={act} className={`w-6 h-6`} />}
         <span className={`font-bold ${act ? 'text-secondary-content' : ''}`}>{page.t}</span>
       </>
     )
@@ -261,8 +257,7 @@ export const MainSections = () => {
         {act ? (
           <span
             title={page.t}
-            className={`flex flex-row gap-4 items-center text-secondary-content
-              hover:text-base-content bg-secondary p-2 px-4 rounded bg-base-200 rounded-none`}
+            className={`flex flex-row gap-4 items-center text-secondary-content bg-secondary p-2 px-4 rounded bg-base-200 rounded-none`}
           >
             {txt}
           </span>

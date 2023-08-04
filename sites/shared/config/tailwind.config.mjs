@@ -6,7 +6,7 @@ import { colord } from 'colord'
 const toHSL = (key, color) => {
   const parser = colord(color)
   // only parse it if it's a color that daisyUI doesn't want anything to do with
-  if (!parser.isValid() || !key.match(/^--/)) return color
+  if (!parser.isValid() || !key.match(/^--fs/)) return color
   const hslArray = parser.toHsl()
   return `${hslArray.h} ${hslArray.s}% ${hslArray.l}%`
 }

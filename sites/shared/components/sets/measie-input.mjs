@@ -4,6 +4,7 @@ import { Collapse } from 'shared/components/collapse.mjs'
 import { PlusIcon, EditIcon } from 'shared/components/icons.mjs'
 import { NumberInput } from 'shared/components/workbench/menus/shared/inputs.mjs'
 import { useState, useCallback } from 'react'
+import { NoIcon } from '../icons.mjs'
 export const ns = ['account']
 
 const Mval = ({ m, val = false, imperial = false, className = '' }) =>
@@ -27,7 +28,7 @@ const heightClasses = {
 }
 
 const fractionClasses =
-  'w-full border-2 border-solid border-base-100 hover:border-secondary bg-secondary rounded bg-opacity-50 hover:bg-opacity-100'
+  'w-full border-4 border-solid border-base-200 hover:border-secondary bg-secondary rounded bg-opacity-50 hover:bg-opacity-100'
 
 const FractionButtons = ({ t, fraction }) => (
   <div className="flex flex-row mt-1 content-center items-center justify-around">
@@ -147,18 +148,18 @@ export const MeasieInput = ({
       <div className="flex items-center gap-4 flex-wrap mx-auto">
         <label className="shrink-0 grow max-w-full">
           {children}
-          <span className="input-group">
+          <span className="input-group focus-within:outline focus-within:ring outline-2 outline-offset-4 outline-primary-focus rounded-lg">
             <NumberInput
-              className={`border-r-0 w-full`}
+              className={`border-r-0 w-full border-4 focus:outline-0`}
               value={val}
               onUpdate={update}
               onMount={setValid}
             />
             <span
-              className={`bg-transparent border-y w-20
-              ${valid === false && 'border-error text-neutral-content'}
+              className={`bg-transparent border-y border-y-4 w-20
+              ${valid === false && 'border-error  text-neutral-content'}
               ${valid && 'border-success text-neutral-content'}
-              ${valid === null && 'border-base-200 text-base-content'}
+              ${valid === null && 'text-base-content border-primary'}
          `}
             >
               <Mval
@@ -170,20 +171,22 @@ export const MeasieInput = ({
             </span>
             <span
               role="img"
-              className={`bg-transparent border-y
+              className={`bg-transparent border-y border-y-4
               ${valid === false && 'border-error text-neutral-content'}
               ${valid && 'border-success text-neutral-content'}
-              ${valid === null && 'border-base-200 text-base-content'}
+              ${valid === null && 'border-primary text-base-content'}
            `}
             >
-              {valid && '👍'}
-              {valid === false && '🤔'}
+              <span className={`bg-transparent ${valid === null && 'invisible'}`}>
+                {' '}
+                {valid ? '👍' : '🤔'}
+              </span>
             </span>
             <span
               className={`w-14 text-center
               ${valid === false && 'bg-error text-neutral-content'}
               ${valid && 'bg-success text-neutral-content'}
-              ${valid === null && 'bg-base-200 text-base-content'}
+              ${valid === null && 'bg-primary text-primary-content'}
            `}
             >
               {isDegree ? '°' : mset.imperial ? 'in' : 'cm'}

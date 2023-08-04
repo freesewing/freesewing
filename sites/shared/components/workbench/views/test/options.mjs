@@ -41,7 +41,7 @@ export const SampleItem = ({ name, passProps, t, updateFunc }) => {
           ref={input}
           type="radio"
           checked={checked}
-          className="radio radio-primary mr-2 radio-sm"
+          className="radio checked:radio-primary radio-secondary mr-2 radio-sm"
           readOnly
         />
         <span className="ml-2">{t([name + '.t', name])}</span>

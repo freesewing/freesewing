@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useTranslation } from 'next-i18next'
 import { AaronFront, AaronBack } from 'shared/components/designs/linedrawings/aaron.mjs'
 import { BruceFront, BruceBack } from 'shared/components/designs/linedrawings/bruce.mjs'
@@ -8,15 +8,36 @@ import { WahidFront, WahidBack } from 'shared/components/designs/linedrawings/wa
 export const ns = ['homepage']
 
 const lineDrawings = [
-  <AaronFront key={1} className="h-72 md:h-96" />,
-  <BruceBack key={2} className="h-72 md:h-96" />,
-  <SimonBack key={3} className="h-72 md:h-96" />,
-  <WahidFront key={4} className="h-72 md:h-96" />,
-  <AaronBack key={5} className="h-72 md:h-96" />,
-  <BruceFront key={6} className="h-72 md:h-96" />,
-  <SimonFront key={7} className="h-72 md:h-96" />,
-  <WahidBack key={8} className="h-72 md:h-96" />,
+  AaronFront,
+  AaronBack,
+  BruceFront,
+  BruceBack,
+  SimonFront,
+  SimonBack,
+  WahidFront,
+  WahidBack,
 ]
+
+const LineDrawing = ({ i }) => {
+  const [Drawing, setDrawing] = useState(() => lineDrawings[i])
+  const [opacity, setOpacity] = useState(0)
+
+  useEffect(() => {
+    setOpacity(0)
+    setTimeout(() => {
+      setDrawing(() => lineDrawings[i])
+    }, 700)
+  }, [i])
+
+  useEffect(() => {
+    setTimeout(() => setOpacity(100), 700)
+  }, [Drawing])
+  return (
+    <Drawing
+      className={`h-72 md:h-96 duration-700 ease-in-out transition-opacity opacity-${opacity}`}
+    />
+  )
+}
 
 const patternTweaks = [
   <path
@@ -96,33 +117,33 @@ const slides = [0, 1, 2, 3, 4, 5, 6, 7]
 export const HowDoesItWorkAnimation = () => {
   const { t } = useTranslation(ns)
   const [step, setStep] = useState(0)
-  const [halfStep, setHalfStep] = useState(0)
-
+  const lineDrawing = useRef(lineDrawings[0])
+  // const [halfStep, setHalfStep] = useState(0)
+  const halfStep = 0
   useEffect(() => {
-    setTimeout(() => {
-      if (step > 6) setStep(0)
-      else setStep(step + 1)
-      if (halfStep > 7) setHalfStep(0)
-      else setHalfStep(halfStep + 0.5)
-    }, 800)
-  }, [step])
+    const intervalId = setInterval(() => {
+      setStep((curStep) => {
+        if (curStep > 6) return 0
+        return curStep + 1
+      })
+
+      console.log(step)
+      // setHalfStep((curHalf) => {
+      //   if (curHalf > 7) return 0
+      //   return curHalf + 0.5
+      // })
+    }, 5000)
+
+    return () => clearInterval(intervalId)
+  })
 
   return (
     <div className="flex flex-col md:grid md:grid-cols-3">
       <div className="relative w-full">
         <div className="relative h-72 md:h-96 overflow-hidden">
-          {slides.map((i) => (
-            <div
-              key={i}
-              className={`duration-700 ease-in-out transition-all ${
-                step === i ? 'opacity-1' : 'opacity-0'
-              } absolute top-0 text-center w-full`}
-            >
-              <div className="w-full flex flex-row items-center h-72 md:h-96 w-full justify-center">
-                {lineDrawings[i]}
-              </div>
-            </div>
-          ))}
+          <div className="w-full flex flex-row items-center h-72 md:h-96 w-full justify-center">
+            <LineDrawing i={step} />
+          </div>
         </div>
         <Nr nr={1} />
         <Title txt={t('pickAnyDesign')} />
@@ -133,7 +154,7 @@ export const HowDoesItWorkAnimation = () => {
             <div
               key={i}
               className={`duration-700 ease-in-out transition-all ${
-                Math.floor(halfStep) === i ? 'opacity-1' : 'opacity-0'
+                halfStep === i ? 'opacity-1' : 'opacity-0'
               } absolute top-0 text-center w-full`}
             >
               <div className="w-full flex flex-row items-center h-72 md:h-96 w-full justify-center">
@@ -148,7 +169,7 @@ export const HowDoesItWorkAnimation = () => {
       <div className="relative w-full">
         <div className="relative h-96 overflow-hidden">
           <div className="w-full flex flex-row items-center h-72 md:h-96 w-full justify-center">
-            <Pattern key={step} i={step} />
+            <Pattern i={step} />
           </div>
           <Nr nr={3} />
           <Title txt={t('customizeYourPattern')} />

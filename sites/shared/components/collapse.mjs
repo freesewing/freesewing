@@ -58,7 +58,7 @@ export const Collapse = ({
       <div
         className={`p-2 lg:p-4 border-solid border border-${color} ${
           !bottom ? 'rounded-b-lg' : ''
-        } text-${color}-content ${!top ? 'rounded-t-lg' : ''}`}
+        } ${!top ? 'rounded-t-lg' : ''}`}
       >
         {children}
       </div>

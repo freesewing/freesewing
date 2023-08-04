@@ -5,7 +5,7 @@ export const KeyValTable = ({ rows }) => (
     <tbody>
       {rows.map((row, i) => (
         <tr key={i}>
-          <td className="font-bold p-0 text-right">{row[0]}:</td>
+          <td className="font-bold p-0 text-right ">{row[0]}:</td>
           <td className="px-1">{row[1]}</td>
         </tr>
       ))}

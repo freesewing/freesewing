@@ -238,11 +238,7 @@ export const MainSections = () => {
     const act = isActive(page.s, slug)
     const txt = (
       <>
-        {icons[page.s] ? (
-          icons[page.s](`w-6 h-6 ${act ? 'text-base-100 opacity-70' : ''}`)
-        ) : (
-          <BulletIcon fill={act} className={`w-6 h-6 ${act ? 'text-base-100 opacity-70' : ''}`} />
-        )}
+        {icons[page.s] ? icons[page.s](`w-6 h-6`) : <BulletIcon fill={act} className={`w-6 h-6`} />}
         <span className={`font-bold ${act ? 'text-secondary-content' : ''}`}>{page.t}</span>
       </>
     )

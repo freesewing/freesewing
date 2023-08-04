@@ -5,12 +5,10 @@ import { formatMm } from 'shared/utils.mjs'
 import { TrashIcon, PrintIcon, SearchIcon } from 'shared/components/icons.mjs'
 
 const Op = ({ op, len, i }) => (
-  <tr
-    className={`${['move', 'close'].includes(op.type) ? 'text-base-300' : ''} bg-primary w-full ${
-      i % 2 === 0 ? 'bg-opacity-0' : 'bg-opacity-10'
-    }`}
-  >
-    <td className="text-right px-1">{op.type}</td>
+  <tr className={`bg-primary w-full bg-opacity-10 odd:bg-opacity-0`}>
+    <td className={`${['move', 'close'].includes(op.type) ? 'italic' : ''} text-right px-1`}>
+      {op.type}
+    </td>
     <td className="text-center px-1">{pointCoords(op.to)}</td>
     <td className="text-center px-1">{op.cp1 ? pointCoords(op.cp1) : ''}</td>
     <td className="text-center px-1">{op.cp2 ? pointCoords(op.cp2) : ''}</td>
@@ -138,7 +136,7 @@ const InspectPath = ({ stackName, pathName, path, t, inspector }) => {
         d={path.d}
         {...utils.getProps(path)}
         className={`hover:opacity-20 text-primary hover:cursor-pointer ${
-          inspector.data.reveal[id] ? 'pulse-stroke stroke-3xl' : 'opacity-0 stroko-0 stroke-5xl'
+          inspector.data.reveal[id] ? 'pulse-stroke stroke-3xl' : 'opacity-0 stroke-0 stroke-5xl'
         }`}
         onClick={() => inspector.show(pathInfo({ id, pathName, stackName, path, t, inspector }))}
         markerStart="none"

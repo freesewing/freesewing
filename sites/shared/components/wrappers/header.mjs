@@ -4,6 +4,7 @@ import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { Ribbon } from 'shared/components/ribbon.mjs'
 
 export const HeaderWrapper = ({ show, children }) => {
+  // FIXME active section highlight
   const { loading } = useContext(LoadingContext)
   return (
     <header
