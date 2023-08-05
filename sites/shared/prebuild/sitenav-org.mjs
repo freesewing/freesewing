@@ -20,7 +20,7 @@ import i18next from 'i18next'
 export const extendSiteNav = async (siteNav, lang) => {
   const resources = await loadTranslations({
     site: 'org',
-    namespaces: ['account', 'sections', 'tags', 'designs'],
+    namespaces: ['account', 'sections', 'tags', 'designs', 'patrons'],
     languages: [lang],
   })
 
@@ -156,6 +156,48 @@ export const extendSiteNav = async (siteNav, lang) => {
       t: t('translation:suggestLanguage'),
       s: 'translation',
     },
+  }
+
+  // Add patrons
+  siteNav.patrons = {
+    _: 1,
+    s: 'patrons',
+    h: 1,
+    t: t('patrons:freeSewingPatrons'),
+    join: {
+      _: 1,
+      s: 'join',
+      h: 1,
+      t: t('patrons:joinPatrons'),
+    },
+    thanks: {
+      _: 1,
+      s: 'thanks',
+      h: 1,
+      t: t('patrons:thankYouVeryMuch'),
+    },
+  }
+
+  // Add donate
+  siteNav.donate = {
+    _: 1,
+    s: 'donate',
+    h: 1,
+    t: t('patrons:donate'),
+    thanks: {
+      _: 1,
+      s: 'thanks',
+      h: 1,
+      t: t('patrons:thankYouVeryMuch'),
+    },
+  }
+
+  // Add support
+  siteNav.support = {
+    _: 1,
+    s: 'support',
+    h: 1,
+    t: t('sections:support'),
   }
 
   // Add search

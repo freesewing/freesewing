@@ -24,7 +24,6 @@ const HomePage = ({ page }) => {
         <title>{t('lab:welcome')}</title>
       </Head>
       <div>
-        <h1>{t('lab:welcome')}</h1>
         <div className="max-w-prose">
           <p>{t('lab:about')}</p>
           <Popout link compact>
