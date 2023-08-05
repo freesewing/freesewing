@@ -353,7 +353,7 @@ Part.prototype.__macroClosure = function (props) {
   const self = this
   const method = function (key, args) {
     const macro = utils.__macroName(key)
-    console.log({ macro: { macro: macro, sub: macro.substring(0, 2) } })
+    // console.log({ macro: { macro: macro, sub: macro.substring(0, 2) } })
     if (key.substring(0, 2) === 'rm') {
       if (typeof self[macro] === 'function') self[macro](args, props)
     } else {

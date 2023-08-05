@@ -33,4 +33,7 @@ export const bannerboxMacros = {
       dy: so.dy,
     })
   },
+  rmbannerbox: function (so, { paths }) {
+    delete paths[so.id]
+  },
 }
