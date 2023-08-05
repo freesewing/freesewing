@@ -4,7 +4,6 @@ import { Collapse } from 'shared/components/collapse.mjs'
 import { PlusIcon, EditIcon } from 'shared/components/icons.mjs'
 import { NumberInput } from 'shared/components/workbench/menus/shared/inputs.mjs'
 import { useState, useCallback } from 'react'
-import { NoIcon } from '../icons.mjs'
 export const ns = ['account']
 
 const Mval = ({ m, val = false, imperial = false, className = '' }) =>

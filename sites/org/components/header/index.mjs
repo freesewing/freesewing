@@ -29,7 +29,6 @@ export const ns = ['header', 'sections', ...themeNs, ...localeNs]
 
 const NavIcons = ({ setModal, setSearch }) => {
   const { t } = useTranslation(['header'])
-  const { spectrum } = useTheme()
 
   return (
     <>

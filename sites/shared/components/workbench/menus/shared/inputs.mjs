@@ -8,7 +8,6 @@ import {
 } from 'shared/utils.mjs'
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
 import debounce from 'lodash.debounce'
-import { primary } from '../../../../themes/light'
 
 /*******************************************************************************************
  * This file contains the base components to be used by inputs in menus in the workbench
@@ -194,7 +193,7 @@ const useBoolConfig = (name, config) => {
 }
 
 /** a toggle input for list/boolean values */
-export const ListToggle = ({ config, changed, updateFunc, name }) => {
+export const ListToggle = ({ config, changed, updateFunc, name, color }) => {
   const boolConfig = useBoolConfig(name, config)
   const handleChange = useSharedHandlers({ dflt: boolConfig.dflt, updateFunc, name })
 
@@ -209,7 +208,7 @@ export const ListToggle = ({ config, changed, updateFunc, name }) => {
   return (
     <input
       type="checkbox"
-      className={`toggle ${changed ? 'text-base-content' : 'text-base-content'}`}
+      className={`toggle ${changed ? 'toggle-secondary' : 'toggle-primary'}`}
       checked={checked}
       onChange={doToggle}
       onClick={(evt) => evt.stopPropagation()}
@@ -346,17 +345,13 @@ export const SliderInput = ({
           />
         ) : (
           <>
-            <span className="opacity-50">
+            <span>
               <span dangerouslySetInnerHTML={{ __html: valFormatter(min) + suffix }} />
             </span>
-            <span
-              className={`font-bold ${
-                displayVal === config.dflt ? 'text-base-content' : 'text-base-content'
-              }`}
-            >
+            <span className={`font-bold ${changed ? 'text-accent' : 'text-secondary'}`}>
               <span dangerouslySetInnerHTML={{ __html: valFormatter(displayVal) + suffix }} />
             </span>
-            <span className="opacity-50">
+            <span>
               <span dangerouslySetInnerHTML={{ __html: valFormatter(max) + suffix }} />
             </span>
           </>
@@ -484,7 +479,7 @@ export const ConstantInput = ({
       type={type}
       className={`
       input input-bordered w-full text-base-content
-      input-${changed ? 'base-content' : 'base-content'}
+      input-${changed ? 'accent' : 'secondary'}
     `}
       value={changed ? current : config.dflt}
       onChange={(evt) => updateFunc([name], evt.target.value)}

@@ -4,7 +4,7 @@ import { Attributes, pointCoords, KeyValTable } from './shared.mjs'
 import { formatMm } from 'shared/utils.mjs'
 import { TrashIcon, PrintIcon, SearchIcon } from 'shared/components/icons.mjs'
 
-const Op = ({ op, len, i }) => (
+const Op = ({ op, len }) => (
   <tr className={`bg-primary w-full bg-opacity-10 odd:bg-opacity-0`}>
     <td className={`${['move', 'close'].includes(op.type) ? 'italic' : ''} text-right px-1`}>
       {op.type}

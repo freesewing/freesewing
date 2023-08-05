@@ -6,7 +6,7 @@ import { formatMm } from 'shared/utils.mjs'
  *********************************************************************************************************/
 
 /** The basis of it all. Handles the changed/unchanged styling for the wrapped value */
-export const HighlightedValue = ({ changed, children }) => <span> {children} </span>
+export const HighlightedValue = ({ children }) => <span> {children} </span>
 
 /**
  * A wrapper for displaying the correct value based on whether or not the value has changed

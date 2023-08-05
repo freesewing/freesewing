@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import { useTranslation } from 'next-i18next'
 import { AaronFront } from 'shared/components/designs/linedrawings/aaron.mjs'
 import { BruceFront, BruceBack } from 'shared/components/designs/linedrawings/bruce.mjs'
@@ -10,13 +10,13 @@ export const ns = ['homepage']
 
 const lineDrawings = [
   AaronFront,
-  AaronBack,
   BruceFront,
   BruceBack,
   SimonFront,
   SimonBack,
   WahidFront,
-  WahidBack
+  WahidBack,
+  AlbertFront,
 ]
 
 const patternTweaks = [
@@ -92,16 +92,20 @@ const Title = ({ txt }) => (
   </div>
 )
 
-const slides = [0, 1, 2, 3, 4, 5, 6, 7]
-
+/** A display switcher that handles its own transition animations */
 const useCarousel = (i, items) => {
   const [Item, setItem] = useState(() => items[i])
   const [opacity, setOpacity] = useState(0)
 
+  // when the index changes, switch the opacity
   useEffect(() => {
+    // set to 0
     setOpacity(0)
+    // wait for the animation to end
     setTimeout(() => {
+      // set the next item
       setItem(() => items[i])
+      // set the opacity back to full
       setOpacity(100)
     }, 700)
   }, [i, items])
@@ -122,7 +126,7 @@ const LineDrawing = ({ i }) => {
   )
 }
 
-const measieImages = slides.map((i) => `/img/models/model-${i}.png`)
+const measieImages = [0, 1, 2, 3, 4, 5, 6, 7].map((i) => `/img/models/model-${i}.png`)
 const MeasiesImage = ({ i }) => {
   const { Item, opacity } = useCarousel(Math.floor(i), measieImages)
   return <img src={Item} className={`h-72 md:h-96 ${transitionClasses} opacity-${opacity}`} />
