@@ -1,4 +1,4 @@
-import { buttonRow, closingRow, headingRow, lead1Row, wrap } from '../shared/blocks.mjs'
+import { buttonRow, newsletterClosingRow, headingRow, lead1Row, wrap } from '../shared/blocks.mjs'
 // Translations
 import en from './en.json' assert { type: 'json' }
 import de from './de.json' assert { type: 'json' }
@@ -11,12 +11,12 @@ export const nlsubact = {
   html: wrap.html(`
   ${headingRow.html}
   ${lead1Row.html}
-  ${closingRow.html}
+  ${newsletterClosingRow.html}
 `),
   text: wrap.text(`
 ${headingRow.text}
 ${lead1Row.text}
-${closingRow.text}
+${newsletterClosingRow.text}
 `),
 }
 

@@ -2,7 +2,6 @@ import { templates, translations } from '../templates/email/index.mjs'
 import { SESv2Client, SendEmailCommand } from '@aws-sdk/client-sesv2'
 import mustache from 'mustache'
 import { log } from './log.mjs'
-console.log(Object.keys(templates))
 
 /*
  * Exporting this closure that makes sure we have access to the

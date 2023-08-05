@@ -51,11 +51,6 @@ export const newsletterClosingRow = {
         {{ greeting }}
         <br>
         joost
-        <br><br>
-        PS: {{ ps-pre-link}}
-        <a href="{{ psUrl }}" target="_blank" style="text-decoration: underline; color: #262626">
-          <b>{{ ps-link}}</b>
-        </a> {{ ps-post-link }}
       </p>
     </td>
   </tr>`,

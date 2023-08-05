@@ -1,14 +1,4 @@
-//import fs from 'fs'
-//import path from 'path'
 import { SubscriberModel } from '../models/subscriber.mjs'
-
-/*
- * Load pages for subscribe and unsubscribe confirmation
- * Some people might find this extra step annoying,
- * but GET requests should not make changes.
- */
-//const index = fs.readFileSync(path.resolve('.', 'src', 'landing', 'index.html'))
-//app.get('/', async (req, res) => res.set('Content-Type', 'text/html').status(200).send(index))
 
 export function SubscribersController() {}
 

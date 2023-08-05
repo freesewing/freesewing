@@ -35,8 +35,6 @@ const baseConfig = {
   env: process.env.NODE_ENV || 'development',
   // Maintainer contact
   maintainer: 'joost@freesewing.org',
-  // Backend API base URL
-  api: process.env.BACKEND_API_URL || 'https://backend3.freesewing.org',
   // Feature flags
   use: {
     github: envToBool(process.env.BACKEND_ENABLE_GITHUB),
