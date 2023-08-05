@@ -41,6 +41,7 @@ export const setup = async () => {
       key: '🎟️  ',
       set: '🧕 ',
       pattern: '👕 ',
+      subscriber: '📬',
     },
     randomString,
   }

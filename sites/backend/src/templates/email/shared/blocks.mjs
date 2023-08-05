@@ -41,6 +41,32 @@ joost
 PS: {{{ text-ps }}} : {{{ supportUrl }}}`,
 }
 
+export const newsletterClosingRow = {
+  html: `
+  <tr>
+    <td align="left" class="sm-p-15px" style="padding-top: 30px">
+      <p style="margin: 0; font-size: 16px; line-height: 25px; color: #262626">
+        {{ closing }}
+        <br><br>
+        {{ greeting }}
+        <br>
+        joost
+        <br><br>
+        PS: {{ ps-pre-link}}
+        <a href="{{ psUrl }}" target="_blank" style="text-decoration: underline; color: #262626">
+          <b>{{ ps-link}}</b>
+        </a> {{ ps-post-link }}
+      </p>
+    </td>
+  </tr>`,
+  text: `
+{{{ closing }}}
+
+{{{ greeting }}}
+joost
+`,
+}
+
 export const headingRow = {
   html: `
   <tr>

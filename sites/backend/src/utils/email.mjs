@@ -2,6 +2,7 @@ import { templates, translations } from '../templates/email/index.mjs'
 import { SESv2Client, SendEmailCommand } from '@aws-sdk/client-sesv2'
 import mustache from 'mustache'
 import { log } from './log.mjs'
+console.log(Object.keys(templates))
 
 /*
  * Exporting this closure that makes sure we have access to the
@@ -25,7 +26,8 @@ async function sendEmailViaAwsSes(
 ) {
   // Make sure we have what it takes
   if (!template || !to || typeof templates[template] === 'undefined') {
-    log.warn(`Tried to email invalid template: ${template}`)
+    if (!to) log.warn(`A To: address is mandatory when sending email`)
+    else log.warn(`Tried to email invalid template: ${template}`)
     return false
   }
 
