@@ -44,10 +44,29 @@ export const crossboxMacros = {
       .line(points[id + '_topCrossBL'])
       .attr('class', 'lining dotted stroke-sm')
     if (typeof so.text === 'string') {
-      points.textAnchor = points[id + '_boxTopLeft']
+      points[id + '_textAnchor'] = points[id + '_boxTopLeft']
         .shiftFractionTowards(points[id + '_boxBottomRight'], 0.5)
         .attr('data-text', so.text)
         .attr('data-text-class', 'center')
     }
+  },
+  rmcrossbox: function (so, { points, paths }) {
+    console.log({ rmcrossbox: so.id })
+    delete paths[so.id + 'crossBox']
+    delete paths[so.id + '_topCross']
+    delete points[so.id + '_boxTopLeft']
+    delete points[so.id + '_boxTopRight']
+    delete points[so.id + '_boxBottomRight']
+    delete points[so.id + '_boxBottomLeft']
+    delete points[so.id + '_boxTopLeft']
+    delete points[so.id + '_topCrossTL']
+    delete points[so.id + '_topCrossBR']
+    delete points[so.id + '_topCrossTR']
+    delete points[so.id + '_topCrossBL']
+    delete points[so.id + '_topCrossTL']
+    delete points[so.id + '_topCrossTR']
+    delete points[so.id + '_topCrossBR']
+    delete points[so.id + '_topCrossBL']
+    delete points[so.id + '_textAnchor']
   },
 }
