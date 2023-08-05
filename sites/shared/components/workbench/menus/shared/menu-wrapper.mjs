@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 import { WrenchIcon } from 'shared/components/icons.mjs'
 import { useMobileMenu } from 'shared/context/mobile-menubar-context.mjs'
 
-const defaultClasses = `w-1/3 shrink grow-0 lg:p-4 max-w-2xl h-full overflow-scroll`
+const defaultClasses = `w-1/3 shrink grow-0 lg:p-4 max-w-md h-full overflow-scroll`
 
 /**
  * a wrapper that displays its contents normally on larger screens

@@ -23,6 +23,7 @@ export const PanZoomPattern = forwardRef((props, ref) => {
     <TransformWrapper
       minScale={0.1}
       centerZoomedOut={true}
+      centerOnInit={true}
       wheel={{ activationKeys: ['Control'] }}
       doubleClick={{ mode: 'reset' }}
       onTransformed={onTransformed}

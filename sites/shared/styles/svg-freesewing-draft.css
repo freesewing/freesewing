@@ -2,6 +2,7 @@ svg.freesewing.pattern {
   /* Don't let the SVG surpass the parent container */
   max-width: 100%;
   max-height: 100%;
+  margin: auto;
 
   /* Reset */
   path,

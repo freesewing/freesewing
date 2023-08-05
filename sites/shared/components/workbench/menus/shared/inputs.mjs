@@ -208,7 +208,8 @@ export const ListToggle = ({ config, changed, updateFunc, name, color }) => {
   return (
     <input
       type="checkbox"
-      className={`toggle ${changed ? 'toggle-secondary' : 'toggle-primary'}`}
+      // force tailwind: toggle-accent toggle-primary toggle-secondary
+      className={`toggle toggle-${color}`}
       checked={checked}
       onChange={doToggle}
       onClick={(evt) => evt.stopPropagation()}

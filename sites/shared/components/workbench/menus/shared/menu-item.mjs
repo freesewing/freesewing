@@ -133,7 +133,7 @@ export const MenuItem = ({
   }
 
   if (allowToggle) {
-    buttons.push(<ListToggle key="toggle" {...{ config, changed, updateFunc, name }} />)
+    buttons.push(<ListToggle key="toggle" {...{ config, changed, updateFunc, name, color }} />)
   } else {
     openButtons.push(<ResetButton open disabled={!changed} key="clear" />)
   }
