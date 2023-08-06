@@ -6,7 +6,7 @@ import { schemaTypes } from './schemas'
 import { capitalize } from '../shared/utils.mjs'
 
 export default defineConfig(
-  ['site-content', 'user-content'].map((dataset) => ({
+  ['site-content'].map((dataset) => ({
     name: dataset,
     title: `FreeSewing ${dataset
       .split('-')

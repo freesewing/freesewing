@@ -295,3 +295,36 @@ SubscriberModel.prototype.isTest = function (body) {
 
   return true
 }
+
+/*
+ * This is a special route not available for API users
+ */
+SubscriberModel.prototype.import = async function (list) {
+  let created = 0
+  for (const sub of list) {
+    const email = clean(sub)
+    const ehash = hash(email)
+    await this.read({ ehash })
+
+    if (!this.record) {
+      const data = await this.cloak({
+        ehash,
+        email,
+        language: 'en',
+        active: true,
+      })
+      try {
+        this.record = await this.prisma.subscriber.create({ data })
+        created++
+      } catch (err) {
+        log.warn(err, 'Could not create subscriber record')
+        return this.setResponse(500, 'createSubscriberFailed')
+      }
+    }
+  }
+
+  return this.setResponse(200, 'success', {
+    total: list.length,
+    imported: created,
+  })
+}

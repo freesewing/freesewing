@@ -1,6 +1,6 @@
-import { ImportController } from '../controllers/import.mjs'
+import { ImportsController } from '../controllers/imports.mjs'
 
-const Import = new ImportController()
+const Import = new ImportsController()
 
 export function importsRoutes(tools) {
   const { app } = tools
@@ -9,6 +9,10 @@ export function importsRoutes(tools) {
    * All these routes use hard-coded credentials because they should never be used
    * outside the v2-v3 migration which is handled by joost
    */
+
   // Import newsletter subscriptions
   app.post('/import/subscribers', (req, res) => Import.subscribers(req, res, tools))
+
+  // Import users
+  app.post('/import/users', (req, res) => Import.users(req, res, tools))
 }

@@ -19,16 +19,16 @@ export const closingRow = {
   <tr>
     <td align="left" class="sm-p-15px" style="padding-top: 30px">
       <p style="margin: 0; font-size: 16px; line-height: 25px; color: #262626">
-        {{ closing }}
+        {{{ closing }}}
         <br><br>
-        {{ greeting }}
+        {{{ greeting }}}
         <br>
         joost
         <br><br>
-        PS: {{ ps-pre-link}}
+        PS: {{{ ps-pre-link}}}
         <a href="{{ supportUrl }}" target="_blank" style="text-decoration: underline; color: #262626">
-          <b>{{ ps-link}}</b>
-        </a> {{ ps-post-link }}
+          <b>{{{ ps-link}}}</b>
+        </a> {{{ ps-post-link }}}
       </p>
     </td>
   </tr>`,
@@ -46,9 +46,9 @@ export const newsletterClosingRow = {
   <tr>
     <td align="left" class="sm-p-15px" style="padding-top: 30px">
       <p style="margin: 0; font-size: 16px; line-height: 25px; color: #262626">
-        {{ closing }}
+        {{{ closing }}}
         <br><br>
-        {{ greeting }}
+        {{{ greeting }}}
         <br>
         joost
       </p>
@@ -67,8 +67,8 @@ export const headingRow = {
   <tr>
     <td align="left" class="sm-p-15px" style="padding-top: 30px">
       <h2 style="margin: 0; font-size: 30px; color: #525252">
-        <a href="{{ actionUrl }}" target="_blank" style="text-decoration: none; color: #525252">
-          {{ heading }}
+        <a href="{{{ actionUrl }}}" target="_blank" style="text-decoration: none; color: #525252">
+          {{{ heading }}}
         </a>
       </h2>
     </td>
@@ -84,7 +84,7 @@ export const lead1Row = {
     <td align="left" class="sm-p-15px" style="padding-top: 15px">
       <p style="margin: 0; font-size: 16px; line-height: 25px; color: #262626">
         <a href="{{ actionUrl }}" target="_blank" style="text-decoration: none; color: #262626">
-          <b>{{ lead }}</b>
+          <b>{{{ lead }}}</b>
         </a>
       </p>
     </td>
@@ -99,10 +99,10 @@ export const preLeadRow = {
   <tr>
     <td align="left" class="sm-p-15px" style="padding-top: 15px">
       <p style="margin: 0; font-size: 16px; line-height: 25px; color: #262626">
-        {{ preLead }}
+        {{{ preLead }}}
         <br><br>
         <a href="{{ actionUrl }}" target="_blank" style="text-decoration: none; color: #262626">
-          <b>{{ lead }}</b>
+          <b>{{{ lead }}}</b>
         </a>
       </p>
     </td>
@@ -182,7 +182,7 @@ export const wrap = {
     {{ intro }}
     &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847; &#847;
   </div>
-  <div role="article" aria-roledescription="email" aria-label="Please confirm your new email address" lang="en">
+  <div role="article" aria-roledescription="email" aria-label="{{ intro }}" lang="en">
     <table class="all-font-sans" style="width: 100%" border="0" cellpadding="0" cellspacing="0" role="presentation">
       <tr>
         <td align="center" class="sm-py-10px" style="background-color: #fff; padding: 10px 15px">
@@ -226,9 +226,9 @@ export const wrap = {
       <p style="margin: 0; font-size: 14px; line-height: 24px; color: #868e96; text-align: center;">
         <a href="https://{{ website }}" target="_blank" style="text-decoration: underline; color: #868e96"><b>{{ website }}</b></a>
         <span style="font-size: 13px; color: #737373">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-        <a href="https://github.com/fresewing/freesewing" target="_blank" style="text-decoration: underline; color: #868e96"><b>Github</b></a>
+        <a href="https://freesewing.dev" target="_blank" style="text-decoration: underline; color: #868e96"><b>FreeSewing.dev</b></a>
         <span style="font-size: 13px; color: #737373">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
-        <a href="https://discord.freesewing.org/" target="_blank" style="text-decoration: underline; color: #868e96"><b>Discord</b></a>
+        <a href="https://github.com/fresewing/freesewing" target="_blank" style="text-decoration: underline; color: #868e96"><b>GitHub.com/freesewing</b></a>
       </p>
       <p style="margin: 0; font-size: 12px; margin-top: 12px; line-height: 18px; color: #868e96; text-align: center;">
         {{ notMarketing }}
@@ -270,8 +270,6 @@ Belgium
 
 {{ website }} : {{{ urlWebsite }}}
 Github : https://github.com/freesewing/freesewing
-Discord : https://discord.freesewing.org/
-Twitter : https://twitter.com/freesewing_org
 {{ whyDidIGetThis }} : {{{ whyUrl }}}
 `,
 }

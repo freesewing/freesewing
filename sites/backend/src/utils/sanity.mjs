@@ -1,5 +1,14 @@
 import axios from 'axios'
 import { sanity as config } from '../config.mjs'
+import { createClient } from '@sanity/client'
+
+const sanity = createClient({
+  projectId: config.project,
+  dataset: config.dataset,
+  useCdn: true, // Set to false to bypass cache
+  apiVersion: config.version,
+  token: config.token,
+})
 
 // We'll use this a bunch
 const headers = { Authorization: `Bearer ${config.token}` }
@@ -31,55 +40,32 @@ async function getAvatar(type, id) {
 /*
  * Uploads an image to sanity
  */
-export const setUserAvatar = async (id, data) => setAvatar('user', id, data)
-export const setSetAvatar = async (id, data) => setAvatar('set', id, data)
-export const setPatternAvatar = async (id, data) => setAvatar('pattern', id, data)
-export async function setAvatar(type, id, data) {
+export const setUserAvatar = async (id, data, title) => setAvatar('user', id, data, title)
+export const setSetAvatar = async (id, data, title) => setAvatar('set', id, data, title)
+export const setPatternAvatar = async (id, data, title) => setAvatar('pattern', id, data, title)
+export async function setAvatar(type, id, data, title) {
   // Step 1: Upload the image as asset
-  const [contentType, binary] = b64ToBinaryWithType(data)
-  if (contentType) {
-    const img = await axios.post(`${config.api}/assets/images/${config.dataset}`, binary, {
-      headers: {
-        ...headers,
-        'Content-Type': 'contentType',
-      },
-    })
-    if (!img.data?.document?._id) return false // Upload failed
+  const [contentType, binary] = Array.isArray(data) ? data : b64ToBinaryWithType(data)
+  if (!contentType) return ''
 
-    // Step 2, update the document
-    await axios.post(
-      `${config.api}/data/mutate/${config.dataset}`,
-      {
-        mutations: [
-          {
-            createOrReplace: {
-              _id: `${type}-${id}`,
-              _type: `${type}img`,
-              recordid: id,
-            },
-          },
-          {
-            patch: {
-              id: `${type}-${id}`,
-              set: {
-                'img.asset': {
-                  _ref: img.data.document.id,
-                  _type: 'reference',
-                },
-              },
-            },
-          },
-        ],
+  const imgDocument = await sanity.assets.upload('image', binary, {
+    contentType,
+    filename: `${type}.${contentType.split('/').pop()}`,
+  })
+  const document = await sanity.createOrReplace({
+    _id: `${type}-${id}`,
+    _type: `${type}img`,
+    title: title,
+    recordid: id,
+    img: {
+      asset: {
+        _ref: imgDocument._id,
+        _type: 'reference',
       },
-      { headers }
-    )
+    },
+  })
 
-    return {
-      id: img.data.document._id,
-      url: img.data.document.url,
-    }
-  }
-  return false
+  return document._id
 }
 
 /*
@@ -93,4 +79,20 @@ function b64ToBinaryWithType(dataUri) {
   else if (start.includes('image/jpeg')) type = 'image/jpeg'
 
   return [type, new Buffer.from(data, 'base64')]
+}
+
+/*
+ * Helper method to download an image
+ * Used in import only, thus ok for removal post v3 release
+ */
+export const downloadImage = async (url) => {
+  let result
+  try {
+    result = await axios.get(url, { responseType: 'arraybuffer' })
+  } catch (err) {
+    console.log(`Could not download from ${url}`, err, result)
+  }
+
+  // Returning [contentType, data]
+  return [result.headers['content-type'], Buffer.from(result.data, 'binary')]
 }
