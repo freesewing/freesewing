@@ -121,7 +121,10 @@ export const Subscribe = ({
               <input
                 type="radio"
                 name="period"
-                className={`radio checked:bg-${color} border-${color} radio-xs lg:radio-sm`}
+                className={
+                  /** border-secondary-content border-primary-content checked:radio-secondary checked:radio-primary*/
+                  `radio checked:radio-${color} border-${color}-content radio-xs lg:radio-sm`
+                }
                 value={val}
                 onChange={() => setPeriod(val)}
                 checked={val === period ? 1 : 0}

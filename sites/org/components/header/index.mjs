@@ -1,7 +1,6 @@
 // Hooks
 import { useContext } from 'react'
 import { useTranslation } from 'next-i18next'
-import { useTheme } from 'shared/hooks/use-theme.mjs'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components

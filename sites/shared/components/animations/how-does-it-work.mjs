@@ -115,13 +115,13 @@ const useCarousel = (i, items) => {
 
 const transitionClasses = 'duration-700 ease-in-out transition-opacity'
 const LineDrawing = ({ i }) => {
-  const { Item, opacity } = useCarousel(Math.floor(i / 2), lineDrawings)
+  const { Item, opacity } = useCarousel(Math.floor(i), lineDrawings)
   return (
     <div
       className={`${transitionClasses} opacity-${opacity}
      w-full flex flex-row items-center h-full overflow-hidden`}
     >
-      <Item className="h-full" />
+      <Item className="h-full m-auto" />
     </div>
   )
 }
@@ -129,7 +129,13 @@ const LineDrawing = ({ i }) => {
 const measieImages = [0, 1, 2, 3, 4, 5, 6, 7].map((i) => `/img/models/model-${i}.png`)
 const MeasiesImage = ({ i }) => {
   const { Item, opacity } = useCarousel(Math.floor(i), measieImages)
-  return <img src={Item} className={`h-72 md:h-96 ${transitionClasses} opacity-${opacity}`} />
+  return (
+    <img
+      src={Item}
+      className={`h-72 md:h-96 ${transitionClasses} opacity-${opacity} m-auto`}
+      alt=""
+    />
+  )
 }
 
 export const HowDoesItWorkAnimation = () => {
@@ -145,7 +151,7 @@ export const HowDoesItWorkAnimation = () => {
       })
 
       setHalfStep((curHalf) => {
-        if (curHalf > 7) return 0
+        if (curHalf === measieImages.length - 1) return 0
         return curHalf + 0.5
       })
     }, 4000)
@@ -155,10 +161,12 @@ export const HowDoesItWorkAnimation = () => {
 
   return (
     <div className="flex flex-col md:grid md:grid-cols-3">
-      <div className="relative w-full h-72 md:h-96 overflow-hidden">
-        <LineDrawing i={step} />
-        <Nr nr={1} />
-        <Title txt={t('pickAnyDesign')} />
+      <div className="relative w-full">
+        <div className="relative h-72 md:h-96 overflow-hidden">
+          <LineDrawing i={step} />
+          <Nr nr={1} />
+          <Title txt={t('pickAnyDesign')} />
+        </div>
       </div>
       <div className="relative w-full">
         <div className="relative h-72 md:h-96 overflow-hidden">
