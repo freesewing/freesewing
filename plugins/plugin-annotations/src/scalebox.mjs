@@ -187,26 +187,28 @@ export const scaleboxMacros = {
       .attr('data-text', `${imperialDisplayHeight}`)
       .attr('data-text-class', 'text-xs center ')
   },
+  rmscalebox: function (so, { store, points, paths, scale, Point, Path }) {
+    for (let id of [
+      '__scaleboxMetricTopLeft',
+      '__scaleboxMetricTopRight',
+      '__scaleboxMetricBottomRight',
+      '__scaleboxMetricBottomLeft',
+      '__scaleboxImperialTopLeft',
+      '__scaleboxImperialTopRight',
+      '__scaleboxImperialBottomRight',
+      '__scaleboxImperialBottomLeft',
+      '__scaleboxLead',
+      '__scaleboxTitle',
+      '__scaleboxText',
+      '__scaleboxLink',
+      '__scaleboxMetric',
+      '__scaleboxImperial',
+    ])
+      delete points[so.id + id]
+    for (let id of ['__scaleboxMetric', '__scaleboxImperial']) delete paths[so.id + id]
+    return true
+  },
   miniscale(so, { points, paths, scale, Point, Path }) {
-    // Passing `false` will remove the miniscale
-    if (so === false) {
-      for (const id of [
-        '__miniscaleMetricTopLeft',
-        '__miniscaleMetricTopRight',
-        '__miniscaleMetricBottomRight',
-        '__miniscaleMetricBottomLeft',
-        '__miniscaleImperialTopLeft',
-        '__miniscaleImperialTopRight',
-        '__miniscaleImperialBottomRight',
-        '__miniscaleImperialBottomLeft',
-        '__miniscaleMetric',
-        '__miniscaleImperial',
-      ])
-        delete points[id]
-      for (const id of ['__miniscaleMetric', '__miniscaleImperial']) delete paths[so.id + id]
-      return true
-    }
-
     // Convert scale to a value between 0 and 5, inclusive.
     const scaleIndex = Math.ceil(6 * Math.max(0.1, Math.min(1, scale))) - 1
 
@@ -280,5 +282,22 @@ export const scaleboxMacros = {
     points[so.id + '__miniscaleImperial'] = points[so.id + '__miniscaleImperial']
       .attr('data-text', `${imperialDisplaySize} x ${imperialDisplaySize}`)
       .attr('data-text-class', 'text-xs center ')
+  },
+  rmminiscale(so, { points, paths, scale, Point, Path }) {
+    for (const id of [
+      '__miniscaleMetricTopLeft',
+      '__miniscaleMetricTopRight',
+      '__miniscaleMetricBottomRight',
+      '__miniscaleMetricBottomLeft',
+      '__miniscaleImperialTopLeft',
+      '__miniscaleImperialTopRight',
+      '__miniscaleImperialBottomRight',
+      '__miniscaleImperialBottomLeft',
+      '__miniscaleMetric',
+      '__miniscaleImperial',
+    ])
+      delete points[so.id + id]
+    for (const id of ['__miniscaleMetric', '__miniscaleImperial']) delete paths[so.id + id]
+    return true
   },
 }

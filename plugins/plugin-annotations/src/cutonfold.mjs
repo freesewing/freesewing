@@ -19,16 +19,6 @@ export const cutonfoldDefs = [
 // Export macros
 export const cutonfoldMacros = {
   cutonfold: function (so, { points, paths, Path, complete, store, scale }) {
-    if (so === false) {
-      delete points.cutonfoldFrom
-      delete points.cutonfoldTo
-      delete points.cutonfoldVia1
-      delete points.cutonfoldVia2
-      delete paths.cutonfoldCutonfold
-
-      store.cutlist.setCutOnFold(false) // Restore default
-      return true
-    }
     so = {
       offset: 15,
       margin: 5,
@@ -41,25 +31,34 @@ export const cutonfoldMacros = {
     if (so.grainline) store.cutlist.setGrain(so.from.angle(so.to))
 
     if (complete) {
-      points[so.id + 'From'] = so.from.shiftFractionTowards(so.to, so.margin / 100)
-      points[so.id + 'To'] = so.to.shiftFractionTowards(so.from, so.margin / 100)
-      points[so.id + 'Via1'] = points[so.id + 'From']
+      points[so.id + '_From'] = so.from.shiftFractionTowards(so.to, so.margin / 100)
+      points[so.id + '_To'] = so.to.shiftFractionTowards(so.from, so.margin / 100)
+      points[so.id + '_Via1'] = points[so.id + '_From']
         .shiftTowards(so.from, so.offset * scale)
-        .rotate(-90, points[so.id + 'From'])
-      points[so.id + 'Via2'] = points[so.id + 'To']
+        .rotate(-90, points[so.id + '_From'])
+      points[so.id + '_Via2'] = points[so.id + '_To']
         .shiftTowards(so.to, so.offset * scale)
-        .rotate(90, points[so.id + 'To'])
+        .rotate(90, points[so.id + '_To'])
       const text = so.grainline ? 'cutOnFoldAndGrainline' : 'cutOnFold'
-      paths[so.id + 'Cutonfold'] = new Path()
-        .move(points[so.id + 'From'])
-        .line(points[so.id + 'Via1'])
-        .line(points[so.id + 'Via2'])
-        .line(points[so.id + 'To'])
+      paths[so.id + '_Cutonfold'] = new Path()
+        .move(points[so.id + '_From'])
+        .line(points[so.id + '_Via1'])
+        .line(points[so.id + '_Via2'])
+        .line(points[so.id + '_To'])
         .attr('class', 'note')
         .attr('marker-start', 'url(#cutonfoldFrom)')
         .attr('marker-end', 'url(#cutonfoldTo)')
         .attr('data-text', text)
         .attr('data-text-class', 'center fill-note')
     }
+  },
+  rmcutonfold: function (so, { points, paths, Path, complete, store, scale }) {
+    delete points[so.id + '_From']
+    delete points[so.id + '_To']
+    delete points[so.id + '_Via1']
+    delete points[so.id + '_Via2']
+    delete paths[so.id + '_Cutonfold']
+
+    store.cutlist.setCutOnFold(false) // Restore default
   },
 }

@@ -21,13 +21,6 @@ const dflts = { text: 'grainline' }
 // Export macros
 export const grainlineMacros = {
   grainline: function (so = {}, { points, paths, Path, complete, store }) {
-    if (so === false) {
-      delete points[so.id + 'grainlineFrom']
-      delete points[so.id + 'grainlineTo']
-      delete paths[so.id + 'grainline']
-      if (store.cutlist?.setGrain) store.cutlist.setGrain(90) // Restoring default
-      return true
-    }
     so = {
       ...dflts,
       ...so,
@@ -48,5 +41,14 @@ export const grainlineMacros = {
         .attr('data-text', so.text)
         .attr('data-text-class', 'center fill-note')
     }
+  },
+  rmgrainline: function (so = {}, { points, paths, store }) {
+    delete points[so.id + 'grainlineFrom']
+    delete points[so.id + 'grainlineTo']
+    delete paths[so.id + 'grainline']
+
+    if (store.cutlist?.setGrain) store.cutlist.setGrain(90) // Restoring default
+
+    return true
   },
 }
