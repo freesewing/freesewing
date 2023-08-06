@@ -160,7 +160,7 @@ export const WorkbenchHeader = ({ view, setView }) => {
   return (
     <MenuWrapper
       Icon={icons[view]}
-      wrapperClass={`w-64 min-h-screen pt-4
+      wrapperClass={`w-64 min-h-screen 
         bg-base-200
         shrink-0 grow-0 self-stretch
         transition-all

@@ -29,14 +29,12 @@ const ZoomOutIcon = (props) => (
 )
 
 const IconButton = ({ Icon, onClick, dflt = true, title, hide = false, extraClasses = '' }) => (
-  <div className="tooltip tooltip-bottom tooltip-accent flex items-center" data-tip={title}>
+  <div className={`${!hide && 'tooltip'} tooltip-bottom tooltip-accent`} data-tip={title}>
     <button
       onClick={onClick}
       className={`${
         dflt ? 'text-base-content bg-transparent' : 'bg-accent text-accent-content'
-      } p-2 hover:bg-accent rounded-full hover:text-accent-content ${
-        hide ? 'invisible' : ''
-      } ${extraClasses}`}
+      } p-2 hover:bg-accent hover:text-accent-content ${hide ? 'invisible' : ''} ${extraClasses}`}
       title={title}
     >
       <Icon className="w-6 h-6" />
@@ -91,7 +89,7 @@ export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
 
   return (
     <div className={`hidden lg:flex sticky top-0 z-20 transition-[top] duration-300 ease-in-out`}>
-      <div className="hidden lg:flex flex-row flex-wrap py-2 gap-2 w-full bg-base-200 text-base-content items-center justify-center">
+      <div className="hidden lg:flex flex-row flex-wrap gap-2 w-full bg-base-200 text-base-content items-center justify-center">
         {headerZoomButtons}
         <Spacer />
         <div className="flex flex-row items-center gap-2">
@@ -133,7 +131,7 @@ export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
         </div>
         <Spacer />
         <div
-          className="tooltip tooltip-primary tooltip-bottom flex flex-row items-center"
+          className="tooltip tooltip-accent tooltip-bottom flex flex-row items-center"
           data-tip={t('ui-settings:control.t')}
         >
           {[1, 2, 3, 4, 5].map((score) => (
@@ -153,7 +151,11 @@ export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
         </div>
         <Spacer />
         <div className="flex flex-row items-center gap-2">
-          <ClearAllButton setSettings={setSettings} compact />
+          <ClearAllButton
+            setSettings={setSettings}
+            compact
+            className="text-primary hover:bg-primary hover:text-primary-content p-2"
+          />
         </div>
       </div>
     </div>

@@ -43,16 +43,24 @@ const CoreSetting = ({ name, config, control, updateFunc, current, passProps, ..
   )
 }
 
-export const ClearAllButton = ({ setSettings, compact = false }) => {
+export const ClearAllButton = ({ setSettings, compact, className }) => {
   const { t } = useTranslation('core-settings')
+  const title = t('clearSettings')
   return (
-    <div className={`${compact ? '' : 'text-center mt-8'}`}>
+    <div
+      className={`${compact ? 'tooltip tooltip-bottom tooltip-primary' : 'text-center mt-8'}`}
+      data-tip={title}
+    >
       <button
-        className={`justify-self-center btn btn-primary btn-outline ${compact ? 'btn-sm' : ''}`}
+        className={`${
+          className ||
+          'justify-self-center btn-outline btn btn-primary' + (compact ? ' btn-sm' : '')
+        }`}
         onClick={() => setSettings({})}
+        title={compact && title}
       >
         <TrashIcon />
-        {t('clearSettings')}
+        {compact ? '' : title}
       </button>
     </div>
   )
