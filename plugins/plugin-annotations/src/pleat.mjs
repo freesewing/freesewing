@@ -54,14 +54,14 @@ export const pleatMacros = {
         .attr('marker-end', 'url(#pleatTo)')
     }
   },
-  rmpleat: function (so, { points, paths }) {
-    delete points[so.id + '_pleatFrom']
-    delete points[so.id + '_pleatFromIn']
-    delete points[so.id + '_pleatTo']
-    delete points[so.id + '_pleatToIn']
-    delete paths[so.id + '_pleatTo']
-    delete paths[so.id + '_pleatFrom']
-    delete paths[so.id + '_pleatArrow']
+  rmpleat: function (id, { points, paths }) {
+    delete points[id + '_pleatFrom']
+    delete points[id + '_pleatFromIn']
+    delete points[id + '_pleatTo']
+    delete points[id + '_pleatToIn']
+    delete paths[id + '_pleatTo']
+    delete paths[id + '_pleatFrom']
+    delete paths[id + '_pleatArrow']
     return true
   },
 }

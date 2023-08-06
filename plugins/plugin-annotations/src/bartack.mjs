@@ -93,16 +93,17 @@ function createBartack(so, props) {
   }
 
   const pathName = `${so.id}bartack${so.suffix}`
-  store.set('macros.bartack.paths.' + so.id, pathName)
+  const storePathKey = 'macros.bartack.paths.' + so.id
+  store.set(storePathKey, pathName)
   paths[pathName] = bartackPath(guide, so, props).attr('class', 'stroke-sm stroke-mark')
-  console.log({ BT_pathName: pathName })
 
   return true
 }
-function removeBartack(so, { paths, store }) {
-  const pathName = store.get('macros.bartack.paths.' + so.id)
-  console.log({ RM_pathName: pathName })
+function removeBartack(id, { paths, store }) {
+  const storePathKey = 'macros.bartack.paths.' + id
+  const pathName = store.get(storePathKey)
   delete paths[pathName]
+  store.unset(storePathKey)
 }
 
 // Export macros
@@ -126,13 +127,13 @@ export const bartackMacros = {
     so.to = false
     return createBartack(so, props)
   },
-  rmbartack: function (so, props) {
-    return removeBartack(so, props)
+  rmbartack: function (id, props) {
+    return removeBartack(id, props)
   },
-  rmbartackAlong: function (so, props) {
-    return removeBartack(so, props)
+  rmbartackAlong: function (id, props) {
+    return removeBartack(id, props)
   },
-  rmbartackFractionAlong: function (so, props) {
-    return removeBartack(so, props)
+  rmbartackFractionAlong: function (id, props) {
+    return removeBartack(id, props)
   },
 }

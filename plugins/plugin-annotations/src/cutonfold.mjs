@@ -22,7 +22,6 @@ export const cutonfoldMacros = {
     so = {
       offset: 15,
       margin: 5,
-      // prefix: 'cutonfold',
       ...so,
     }
 
@@ -52,12 +51,12 @@ export const cutonfoldMacros = {
         .attr('data-text-class', 'center fill-note')
     }
   },
-  rmcutonfold: function (so, { points, paths, Path, complete, store, scale }) {
-    delete points[so.id + '_From']
-    delete points[so.id + '_To']
-    delete points[so.id + '_Via1']
-    delete points[so.id + '_Via2']
-    delete paths[so.id + '_Cutonfold']
+  rmcutonfold: function (id, { points, paths, store }) {
+    delete points[id + '_From']
+    delete points[id + '_To']
+    delete points[id + '_Via1']
+    delete points[id + '_Via2']
+    delete paths[id + '_Cutonfold']
 
     store.cutlist.setCutOnFold(false) // Restore default
   },

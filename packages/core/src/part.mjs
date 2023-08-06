@@ -353,51 +353,55 @@ Part.prototype.__macroClosure = function (props) {
   const self = this
   const method = function (key, args) {
     const macro = utils.__macroName(key)
-    // console.log({ macro: { macro: macro, sub: macro.substring(0, 2) } })
+    let storeKey = 'macros.' + key + '.ids'
     if (key.substring(0, 2) === 'rm') {
-      if (typeof self[macro] === 'function') self[macro](args, props)
-    } else {
-      args.id = args.id ? macro + '_' + args.id : self.getId(macro + '_')
+      storeKey = 'macros.' + key.substring(2) + '.ids'
 
-      props.store.setIfUnset('macros.' + key + '.ids', []).push('macros.' + key + '.ids', args.id)
-      console.log({
-        macro: {
-          macro: macro,
-          type: typeof self[macro],
-        },
-      })
-      if (typeof self[macro] === 'function') self[macro](args, props)
-      else if ('context' in self)
-        self.context.store.log.warning('Unknown macro `' + key + '` used in ' + self.name)
+      let ids = []
+      switch (typeof args) {
+        case 'string': {
+          ids.push(args)
+          break
+        }
+        case 'object': {
+          if (args instanceof Array) ids = args
+          break
+        }
+        case 'undefined': {
+          ids = props.store.get(storeKey)
+        }
+      }
+      if (typeof self[macro] === 'function')
+        ids.forEach((id) => {
+          console.log({ removing: id })
+          self[macro]({ id: id }, props)
+          props.store.set(
+            storeKey,
+            props.store.get(storeKey).filter((e) => e !== id)
+          )
+        })
+      return
     }
+
+    args.id = args.id ? macro + '_' + args.id : self.getId(macro + '_')
+
+    props.store.setIfUnset(storeKey, []).push(storeKey, args.id)
+    if (typeof self[macro] === 'function') self[macro](args, props)
+    else if ('context' in self)
+      self.context.store.log.warning('Unknown macro `' + key + '` used in ' + self.name)
+
     return args.id
   }
 
   return method
 }
 /**
- * Returns a closure holding the rmmacro method
+ * Returns a closure holding the macro method
  *
  * @private
- * @return {function} method - The closured rmmacro method
+ * @return {function} method - The closured macro method
  */
-Part.prototype.__rmmacroClosure = function (props) {
-  const self = this
-  const method = function (id) {
-    Object.keys(props.paths)
-      .filter((p) => p.substring(0, id.length) === id)
-      .forEach((p) => {
-        delete props.paths[p]
-      })
-    Object.keys(props.points)
-      .filter((p) => p.substring(0, id.length) === id)
-      .forEach((p) => {
-        delete props.points[p]
-      })
-  }
-
-  return method
-}
+Part.prototype.__rmmacroClosure = function (props) {}
 
 /**
  * Returns a method to format values in the units provided in settings

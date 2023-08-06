@@ -30,11 +30,11 @@ export const grainlineMacros = {
     store.cutlist.setGrain(so.from.angle(so.to))
 
     if (complete) {
-      points[so.id + 'grainlineFrom'] = so.from.shiftFractionTowards(so.to, 0.05)
-      points[so.id + 'grainlineTo'] = so.to.shiftFractionTowards(so.from, 0.05)
-      paths[so.id + 'grainline'] = new Path()
-        .move(points[so.id + 'grainlineFrom'])
-        .line(points[so.id + 'grainlineTo'])
+      points[so.id + '_From'] = so.from.shiftFractionTowards(so.to, 0.05)
+      points[so.id + '_To'] = so.to.shiftFractionTowards(so.from, 0.05)
+      paths[so.id + '_grainline'] = new Path()
+        .move(points[so.id + '_From'])
+        .line(points[so.id + '_To'])
         .attr('class', 'note')
         .attr('marker-start', 'url(#grainlineFrom)')
         .attr('marker-end', 'url(#grainlineTo)')
@@ -42,10 +42,10 @@ export const grainlineMacros = {
         .attr('data-text-class', 'center fill-note')
     }
   },
-  rmgrainline: function (so = {}, { points, paths, store }) {
-    delete points[so.id + 'grainlineFrom']
-    delete points[so.id + 'grainlineTo']
-    delete paths[so.id + 'grainline']
+  rmgrainline: function (id, { points, paths, store }) {
+    delete points[id + '_From']
+    delete points[id + '_To']
+    delete paths[id + '_grainline']
 
     if (store.cutlist?.setGrain) store.cutlist.setGrain(90) // Restoring default
 
