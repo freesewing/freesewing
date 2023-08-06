@@ -18,4 +18,4 @@ dist
 node_modules
 yarn.lock
 package.json
-.html
+*.html
