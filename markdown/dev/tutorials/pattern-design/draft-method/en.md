@@ -7,7 +7,8 @@ Time to turn our attention to the draft method of our part.
 Inside our `design/src/bib.js` file, this is what it currently looks like:
 
 ```design/src/bib.mjs
-function draftBib({ part }) {
+function draftBib({ part 
+}) {
 
   return part
 }
