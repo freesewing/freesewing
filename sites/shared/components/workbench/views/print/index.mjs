@@ -73,7 +73,7 @@ export const PrintView = ({
 
   const exportIt = () => {
     handleExport({
-      format: 'pdf',
+      format: pageSettings.size,
       settings,
       design,
       t,
