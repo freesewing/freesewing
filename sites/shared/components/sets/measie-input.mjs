@@ -149,7 +149,7 @@ export const MeasieInput = ({
           {children}
           <span className="input-group focus-within:outline focus-within:ring outline-2 outline-offset-4 outline-primary-focus rounded-lg">
             <NumberInput
-              className={`border-r-0 w-full border-4 focus:outline-0`}
+              className={`border-r-0 w-full border-4 focus:outline-0 input-primary`}
               value={val}
               onUpdate={update}
               onMount={setValid}
@@ -199,7 +199,7 @@ export const MeasieInput = ({
         )}
       </div>
       {backend && (
-        <button className="btn btn-secondary w-24" onClick={save} disabled={!valid}>
+        <button className="btn btn-secondary w-24 mt-4" onClick={save} disabled={!valid}>
           {t('save')}
         </button>
       )}
