@@ -1,7 +1,6 @@
 // Export macros
 export const bannerMacros = {
   banner: function (so, { store }) {
-    console.log({ banner: { so: so, store: store } })
     // Mix defaults with settings object
     so = {
       text: '',
@@ -24,16 +23,14 @@ export const bannerMacros = {
     store.set('macros.banner.paths.' + so.id, so.path.name)
   },
   rmbanner: function (id, { paths, store }) {
-    // console.log({ rmbanner: { id: so.id, store: store } })
-    const pathName = store.get('macros.banner.paths.' + id)
-    // console.log({ pathName: pathName })
+    const storePathKey = 'macros.banner.paths.' + id
+    const pathName = store.get(storePathKey)
     if (pathName) {
       const bannerPath = paths[pathName]
-      // console.log({ bannerPath: bannerPath })
-      delete bannerPath.attributes['data-text-dy']
-      delete bannerPath.attributes['data-text-class']
-      delete bannerPath.attributes['data-text']
-      // console.log({ bannerPath: bannerPath })
+      delete bannerPath.attributes.list['data-text-dy']
+      delete bannerPath.attributes.list['data-text-class']
+      delete bannerPath.attributes.list['data-text']
     }
+    store.unset(storePathKey)
   },
 }

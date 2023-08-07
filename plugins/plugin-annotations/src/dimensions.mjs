@@ -79,13 +79,18 @@ function lleader(so, type, props, id) {
 
   return point
 }
+function removeDimension(id, props) {
+  if (props.paths[id]) delete props.paths[id]
+  if (props.paths[`${id}_ls`]) delete props.paths[`${id}_ls`]
+  if (props.paths[`${id}_le`]) delete props.paths[`${id}_le`]
+}
 
 // Export macros
 export const dimensionsMacros = {
   // horizontal
   hd: function (so, props) {
     const { getId, paths } = props
-    const id = so.id || getId(prefix)
+    const id = so.id
     paths[id] = drawDimension(
       hleader(so, 'from', props, id + '_ls'),
       hleader(so, 'to', props, id + '_le'),
@@ -96,7 +101,7 @@ export const dimensionsMacros = {
   // vertical
   vd: function (so, props) {
     const { getId, paths } = props
-    const id = so.id || getId(prefix)
+    const id = so.id
     paths[id] = drawDimension(
       vleader(so, 'from', props, id + '_ls'),
       vleader(so, 'to', props, id + '_le'),
@@ -107,7 +112,7 @@ export const dimensionsMacros = {
   // linear
   ld: function (so, props) {
     const { getId, paths } = props
-    const id = so.id || getId(prefix)
+    const id = so.id
     paths[id] = drawDimension(
       lleader(so, 'from', props, id + '_ls'),
       lleader(so, 'to', props, id + '_le'),
@@ -118,7 +123,7 @@ export const dimensionsMacros = {
   // path
   pd: function (so, props) {
     const { getId, paths, scale, units } = props
-    const id = so.id || getId(prefix)
+    const id = so.id
     if (typeof so.d === 'undefined') so.d = 10 * scale
     const dimension = so.path
       .offset(so.d)
@@ -132,29 +137,31 @@ export const dimensionsMacros = {
     drawLeader(props, so.path.end(), dimension.end(), id + '_le')
   },
   // Remove dimension
-  rmd: function (so, props) {
-    const { paths } = props
-    if (paths[so.id]) delete this.paths[so.id]
-    if (paths[`${so.id}_ls`]) delete paths[`${so.id}_ls`]
-    if (paths[`${so.id}_le`]) delete paths[`${so.id}_le`]
-    if (Array.isArray(so.ids)) {
-      for (const id of so.ids) {
-        if (paths[id]) delete paths[id]
-        if (paths[`${id}_ls`]) delete paths[`${id}_ls`]
-        if (paths[`${id}_le`]) delete paths[`${id}_le`]
-      }
-    }
+  rmvd: function (id, props) {
+    removeDimension(id, props)
   },
-  // Remove all dimensions (with standard prefix)
-  rmad: function (params, props) {
-    const toRemove = {
-      points: props.point,
-      paths: props.paths,
-    }
-    for (let type in toRemove) {
-      for (let id in props[type]) {
-        if (id.slice(0, prefix.length) === prefix) delete props[type][id]
-      }
+  rmhd: function (id, props) {
+    removeDimension(id, props)
+  },
+  rmld: function (id, props) {
+    removeDimension(id, props)
+  },
+  rmpd: function (id, props) {
+    removeDimension(id, props)
+  },
+  // This is non-functional:
+  // (Every macro with an rm prefix is regarded to be a removal macro of the
+  // corresponding non-prefix macro. And the id for the to-be-removed macro
+  // needs to be in the macros.<macroName>.ids store. And there are none in
+  // the macro.d.ids path, since there is no d macro.)
+  rmd: function (id, props) {
+    for (let key of ['vd', 'ld', 'pd', 'hd']) {
+      const ids = props.store.get('macros.' + key + '.ids')
+      console.log({ ids: ids })
+      if (ids)
+        ids.forEach((id) => {
+          removeDimension(id, props)
+        })
     }
   },
 }

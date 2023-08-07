@@ -371,10 +371,9 @@ Part.prototype.__macroClosure = function (props) {
           ids = props.store.get(storeKey)
         }
       }
-      if (typeof self[macro] === 'function')
+      if (typeof self[macro] === 'function' && ids)
         ids.forEach((id) => {
-          console.log({ removing: id })
-          self[macro]({ id: id }, props)
+          self[macro](id, props)
           props.store.set(
             storeKey,
             props.store.get(storeKey).filter((e) => e !== id)
