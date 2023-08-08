@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Retenez les gouttelettes infestées de virus avec notre masque Florence"
 date: "2020-02-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d2235dcc38012e87ac402d43e7ae7084a7d7e9b4-1920x1272.jpg"
 intro: "Nous venons de publier un patron de masque facial, en raison du coronavirus"
 title: "Nous venons de publier un patron de masque facial, en raison du coronavirus"
 ---
