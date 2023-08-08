@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Зберігайте домашній одяг чистим під час приготування їжі за допомогою фартуха Albert"
 date: "2020-10-17"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/192f0da76422475ea9a36b7988d70f69bb89bbaf-1920x1282.jpg"
 intro: "Що робити, якщо вашій доньці потрібен фартух для школи?"
 title: "Тепер у нас є фартух: FreeSewing 2.10 пропонує вам Альберта, скромну викрійку фартуха"
 ---
