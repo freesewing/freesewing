@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Als introvertierter Mensch sage ich das nicht oft, aber ich würde Sie eigentlich gerne kennenlernen."
 date: "2018-12-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b5fdb232675b32c7c08b59ffc57e9b9da31f02f-1920x1078.jpg"
 intro: "Wir treffen uns im 2019! Und andere Jahresendbetrachtungen"
 title: "Wir treffen uns im 2019! Und andere Jahresendbetrachtungen"
 ---
