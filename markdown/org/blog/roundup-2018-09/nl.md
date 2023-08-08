@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Je inlogachtergrond voor oktober"
 date: "2018-09-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b5a652991874d5eb4b6aa694653fcc483330a49d-1920x1280.jpg"
 intro: "Maandelijkse samenvatting - september 2018: Shin, heel veel JavaScript en een lange TODO-lijst"
 title: "Maandelijkse samenvatting - september 2018: Shin, heel veel JavaScript en een lange TODO-lijst"
 ---
