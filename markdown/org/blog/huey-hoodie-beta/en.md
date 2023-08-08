@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "This purple Huey hoodie is the first of its kind. Now it's your turn"
 date: "2017-10-21"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3be185a211486823b678af97710274804fe86dcf-2048x2048.jpg"
 intro: "The Huey Hoodie is now available in beta. Which begs the question, what does it mean for a pattern to be in Beta?"
 title: "The Huey Hoodie is now available in beta. Which begs the question, what does it mean for a pattern to be in Beta?"
 ---
