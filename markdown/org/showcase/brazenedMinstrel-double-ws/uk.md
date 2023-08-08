@@ -2,7 +2,6 @@
 maker: "нахабний менестрель"
 caption: "Ніжно-фіолетовий Waralees з аксесуарами для поясу"
 date: "2022-08-02"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a84d68b97703ef21571520ca6fa8b4b6d3b0df53-1512x2016.jpg"
 intro: "brazenedMinstrel нещодавно створив два чудових дизайни Freesewing: перший - це фіолетові варалі з м'якої тканини, доповнені чорним тканинним поясом, знайденим на вулиці, і кольоровим, придбаним на блошиному ринку."
 title: "Waralees та Wahid від brazenedMinstrel"
 designs:
