@@ -2,7 +2,6 @@
 maker: "comixminx"
 caption: "Diese Hose ist aus einem ausrangierten Bettbezug gefertigt"
 date: "09.06.2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/2be33e00299fe330faee41f1770641982433aa3b-1918x2623.jpg"
 intro: "Diese tolle Paco-Hose war das erste FreeSewing-Muster von comixminx, das sie für sich selbst genäht hat! Sie gab einige hilfreiche Hinweise zum Prozess:"
 title: "Daunenhosen ahoi!"
 designs:
