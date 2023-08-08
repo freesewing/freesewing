@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Photo by Flo Dahm from Pexels"
 date: "2021-04-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9e1cca6b6de79fadbd5201bad3b9b71375a53464-1920x1442.jpg"
 intro: "We've just published FreeSewing v2.15 and it comes with a new pattern: The Charlie Chinos trouser pattern ."
 title: "Charlie Chinos: who wants some new trousers?"
 ---

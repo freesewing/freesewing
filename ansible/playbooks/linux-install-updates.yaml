@@ -1,0 +1,12 @@
+# An Ansible playbook to install the latest updates on a (debian) Linux system
+---
+- hosts: '!localhost'
+  gather_facts: false
+  become: true
+  tasks:
+    - name: Update all packages to their latest version
+      apt:
+        name: '*'
+        state: latest
+        update_cache: yes
+

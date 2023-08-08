@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "Alan wearing his awesome Hugo Hoodie"
 date: "2021-06-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/eae37d6abeaa9c0231ec6757be0ec4a5fd0b260a-908x1210.jpg"
 intro: "Alan made himself a Hugo Hoodie with a larger neckline to make it easier and more comfortable to put on without messing up his hair or the hoodie."
 title: "Hugo by Alan"
 designs: ["hugo"]

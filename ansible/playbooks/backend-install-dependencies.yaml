@@ -1,0 +1,17 @@
+# An Ansible playbook to install NodeJS dependencies (npm install)
+#
+# The FreeSewing production backend runs from the `production-backend`
+# branch on our backend server. This playbook runs `yarn install` in
+# the repository root
+---
+- hosts: '!localhost'
+  gather_facts: false
+  # Use binaries (yarn & node) from nvm (lts/hydrogen)
+  environment:
+    PATH: "/home/ansible-bot/.nvm/versions/node/v18.17.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/games:/sbin:/usr/sbin:/usr/local/sbin"
+  tasks:
+    - name: Install monorepo dependencies (yarn install)
+      community.general.yarn:
+        # Don't install dev dependencies
+        production: true
+        path: "{{ monorepo }}"

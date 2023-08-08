@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Your login background for May"
 date: "2018-04-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/992689c621b6b83a80706620ae5cd92262dcf4bd-1920x1273.jpg"
 intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
 title: "Monthly roundup - April 2018: Calm before the storm"
 ---

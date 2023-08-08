@@ -308,7 +308,6 @@ org:
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': *mdxRuntime
-    '@sanity/client': '^6.1.2'
     '@tailwindcss/typography': *tailwindTypography
     'algoliasearch': *algoliasearch
     'react-copy-to-clipboard': 5.1.0
@@ -340,23 +339,6 @@ org:
     'use-persisted-state': &use-persisted-state 0.3.3
     'yaml-loader': 0.8.0
   dev: *nextSiteDevDependencies
-
-sanity:
-  _:
-    '@sanity/vision': &sanity '3.14.5'
-    'easymde': '2.18.0'
-    'react': *react
-    'react-dom': *react
-    'react-is': *react
-    'sanity': *sanity
-    'styled-components': '5.3.11'
-    'sanity-plugin-markdown': '4.1.0'
-  dev:
-    '@sanity/eslint-config-studio': '3.0.0'
-    'eslint': *eslint
-    'prettier': '3.0.1'
-    'typescript': '5.1.6'
-    '@sanity/cli': '3.14.5'
 
 shared:
   _:

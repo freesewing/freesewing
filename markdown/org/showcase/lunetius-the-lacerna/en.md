@@ -2,7 +2,6 @@
 maker: "starf"
 caption: "Lunetius the lacerna is a cloak"
 date: "2021-10-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/670d2e18d923f83d52b1eb64aaefdcf989f64e9e-2500x3333.jpg"
 intro: "  "
 title: "Lunetius the lacerna"
 designs: ["lunetius"]

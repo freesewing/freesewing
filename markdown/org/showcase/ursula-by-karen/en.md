@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "A test pair of Ursulas"
 date: "2021-07-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/6fea2e8526bf8979b538c14a940c3723337aa5ca-800x564.jpg"
 intro: "A jazzy pair of Ursula undies"
 title: "A jazzy pair of Ursula undies"
 designs: ["ursula"]

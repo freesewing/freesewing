@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "The tiniest Paco pants to date"
 date: "2023-05-03"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/449c7034767dc8d1ca040c17c65c6c4a7043c5a6-3024x4032.jpg"
 intro: "These Paco pants are being modeled by a 6-month-old baby!"
 title: "Baby Paco pants"
 designs: ["paco"]

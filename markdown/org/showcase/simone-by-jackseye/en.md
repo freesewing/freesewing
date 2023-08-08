@@ -2,7 +2,6 @@
 maker: "Jackseye"
 caption: "Jackseye's lovely Simone shirt"
 date: "2021-11-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/979dec6c39ae2ebd8ac54bdc7ae0a7ff34ce230b-1159x1385.jpg"
 intro: "We love this Simone shirt by Jackseye, who shared:"
 title: "Simone by Jackseye"
 designs: ["simone"]

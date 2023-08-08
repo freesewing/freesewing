@@ -3,6 +3,7 @@ import get from 'lodash.get'
 import set from 'lodash.set'
 import orderBy from 'lodash.orderby'
 import unset from 'lodash.unset'
+import { cloudflareConfig } from './config/cloudflare.mjs'
 
 // Method that returns a unique ID when all you need is an ID
 // but you can't be certain you have one
@@ -100,41 +101,6 @@ export const optionType = (option) => {
 
 export const capitalize = (string) =>
   typeof string === 'string' ? string.charAt(0).toUpperCase() + string.slice(1) : ''
-
-export const strapiImage = (
-  img,
-  sizes = ['thumbnail', 'xlarge', 'large', 'medium', 'small', 'xsmall']
-) => {
-  const image = {
-    caption: img.caption || '',
-    w: img.width,
-    h: img.height,
-    url: img.url,
-    sizes: {},
-  }
-  for (const size of sizes) {
-    if (img.formats[size])
-      image.sizes[size] = {
-        w: img.formats[size].width,
-        h: img.formats[size].height,
-        url: img.formats[size].url,
-      }
-  }
-
-  // Some images only have a small original, and thus no (resized) sizes
-  // In that case, return the original for the requested size
-  if (Object.keys(image.sizes).length < 1) {
-    for (const size of sizes) {
-      image.sizes[size] = {
-        w: img.width,
-        h: img.height,
-        url: img.url,
-      }
-    }
-  }
-
-  return image
-}
 
 export const getCrumbs = (app, slug = false) => {
   if (!slug) return null
@@ -404,4 +370,18 @@ export const formatNumber = (num, suffix = '') => {
   }
 
   return '0'
+}
+
+/*
+ * Returns the URL of a cloudflare image
+ * based on the ID and Variant
+ */
+export const cloudflareImageUrl = ({ id = 'default-avatar', variant = 'public' }) => {
+  /*
+   * If the variant is invalid, set it to the smallest thumbnail so
+   * people don't load enourmous images by accident
+   */
+  if (!cloudflareConfig.variants.includes(variant)) variant = 'sq100'
+
+  return `${cloudflareConfig.url}${id}/${variant}`
 }

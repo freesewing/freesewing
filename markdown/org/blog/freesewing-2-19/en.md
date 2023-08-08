@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Like history? Then this release is going to be right up your alley."
 date: "2021-10-17"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/af326b5b6326911272ed989947e8cafe22966019-1920x1280.jpg"
 intro: "I've just pulled the release lever on version 2.19 of FreeSewing and there's a lot that went into this release. For full details, you can check out the changelog , here I'll stick to the highlights:"
 title: "FreeSewing 2.19 brings Bee, Lunetius, Tiberius, Walburga, a new plugin, and a bunch of improvements and fixes"
 ---

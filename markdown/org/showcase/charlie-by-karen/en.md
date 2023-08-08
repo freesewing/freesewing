@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "A pair of purple Charlies"
 date: "2021-07-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/057330d8ccc0e758cfe43f25649489eddb728ce6-1288x1800.jpg"
 intro: "These Charlies were made in a purple stretch twill, with the rise as high as it would go (30%)."
 title: "Purple Charlies"
 designs: ["charlie"]

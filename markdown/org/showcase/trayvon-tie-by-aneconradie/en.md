@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "An excellent Trayvon tie"
 date: "2021-12-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9a09afcf80fcf1c669b45691b4bc2131c0e3cd83-1309x2897.jpg"
 intro: "This great Trayvon tie was made by Aneconradie:"
 title: "Trayvon tie by Aneconradie"
 designs: ["trayvon"]

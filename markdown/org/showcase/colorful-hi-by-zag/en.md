@@ -2,7 +2,6 @@
 maker: "Zag"
 caption: "This Hi is tiny but mighty!"
 date: "2023-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7cadfee0eb0683535f5416db4a89204d4854beee-3096x5504.jpg"
 intro: "Super Colorful Hi by Zag"
 title: "Super Colorful Hi by Zag"
 designs: ["hi"]

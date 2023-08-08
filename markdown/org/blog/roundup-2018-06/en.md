@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Your login background for July"
 date: "2018-06-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d4f2c83df7c4bc98b2bee3159b3f042bf0c1177f-1920x1279.jpg"
 intro: "Monthly roundup - June 2018: German, Penelope, and more womenswear on the horizon"
 title: "Monthly roundup - June 2018: German, Penelope, and more womenswear on the horizon"
 ---

@@ -2,7 +2,6 @@
 maker: "Hellgy"
 caption: "Rear-view of the Yuri hoodie"
 date: "2021-09-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/af8e14596c0112734fb14e4a838853fb9dc0ac8a-1899x1266.jpg"
 intro: "These are pictures of the original Yuri hoody from the designer Hellgy, who wanted to make a hoodie that did not require any zips."
 title: "The original Yuri by its designer"
 designs: ["yuri"]

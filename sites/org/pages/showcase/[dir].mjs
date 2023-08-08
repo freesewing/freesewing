@@ -31,7 +31,7 @@ const ShowcasePage = ({ locale, dir, page }) => {
       title={frontmatter.title}
       layout={(props) => <PostLayout {...props} {...{ slug: page.path.join('/'), frontmatter }} />}
     >
-      <PostArticle {...{ frontmatter, MDX }} />
+      <PostArticle {...{ frontmatter, MDX }} imgId={`showcase-${dir}`} />
     </PageWrapper>
   )
 }

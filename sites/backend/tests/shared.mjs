@@ -41,6 +41,7 @@ export const setup = async () => {
       key: '🎟️  ',
       set: '🧕 ',
       pattern: '👕 ',
+      subscriber: '📬',
     },
     randomString,
   }
@@ -123,6 +124,4 @@ export const setup = async () => {
   return { chai, config, expect, store }
 }
 
-export const teardown = async function (/*store*/) {
-  //console.log(store)
-}
+export const teardown = async function (/*store*/) {}

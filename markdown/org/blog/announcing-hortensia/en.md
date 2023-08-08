@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "An example Hortensia made by the designer"
 date: "2021-02-13"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/01f416518b5bf8fb75dcc8ae3ab2691d5532dd65-2000x1500.jpg"
 intro: "I'm happy to announce the immeadiate availability of our latest FreeSewing pattern: the Hortensia handbag ."
 title: "Say hi to our latest pattern: The Hortensia handbag"
 ---

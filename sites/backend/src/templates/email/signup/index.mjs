@@ -1,10 +1,11 @@
 import { buttonRow, closingRow, headingRow, lead1Row, wrap } from '../shared/blocks.mjs'
 // Translations
-import en from '../../../../public/locales/en/signup.json' assert { type: 'json' }
-import de from '../../../../public/locales/de/signup.json' assert { type: 'json' }
-import es from '../../../../public/locales/es/signup.json' assert { type: 'json' }
-import fr from '../../../../public/locales/fr/signup.json' assert { type: 'json' }
-import nl from '../../../../public/locales/nl/signup.json' assert { type: 'json' }
+import en from './en.json' assert { type: 'json' }
+import de from './de.json' assert { type: 'json' }
+import es from './es.json' assert { type: 'json' }
+import fr from './fr.json' assert { type: 'json' }
+import nl from './nl.json' assert { type: 'json' }
+import uk from './uk.json' assert { type: 'json' }
 
 export const signup = {
   html: wrap.html(`
@@ -29,4 +30,4 @@ PS: {{{ text-ps }}} : {{{ supportUrl }}}
 `),
 }
 
-export const translations = { en, de, es, fr, nl }
+export const translations = { en, de, es, fr, nl, uk }
