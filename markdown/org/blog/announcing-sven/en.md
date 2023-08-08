@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "A Sven made for the office. As in, kinda boring"
 date: "2017-07-09"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b0c9b0cb38bce095739109946a99b6cda63e7cd9-1000x667.jpg"
 intro: "Winter caused me to design this pattern. I was cold, and needed some sweaters, so what does one do?"
 title: "Announcing the Sven Sweater; A basic sweater based on the Brian body block"
 ---
