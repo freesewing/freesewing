@@ -2,7 +2,6 @@
 maker: "Anneke Caramin"
 caption: "vue zoomée de la jupe Sandy noire brillante d'Anneke"
 date: "2020-10-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f17b554dceedcfa01572346e5032e4836deb6f52-1080x1080.jpg"
 intro: "Lis le blogpost très complet d'Anneke en 2018 sur sa nouvelle jupe Sandy , et notamment sur la façon dont elle a ajouté des poches et une ceinture incurvée."
 title: "Jupe circulaire noire et brillante d'Anneke"
 designs:
