@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Gracias a nappy.co por la foto"
 date: "2021-05-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0145547c8ba61dde1a6553dc8de318f53e27cbe5-2000x1333.jpg"
 intro: "FreeSewing 2.16 viene con React 17 y Webpack 5"
 title: "FreeSewing 2.16 viene con React 17 y Webpack 5"
 ---
