@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "L'illustration du patron de Pénélope"
 date: "2018-06-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/59646d7171bb8b18df952a1c9547cd212451de79-1920x1080.jpg"
 intro: "Je suis très heureuse d'annoncer la disponibilité immédiate de la jupe crayon Pénélope , sortie en version bêta aujourd'hui."
 title: "Annonce la jupe crayon Pénélope ; et notre feuille de route pour les vêtements pour femmes."
 ---
