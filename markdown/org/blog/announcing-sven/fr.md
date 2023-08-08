@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Un Sven se dirige vers le bureau. Comme dans, un peu ennuyeux"
 date: "2017-07-09"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b0c9b0cb38bce095739109946a99b6cda63e7cd9-1000x667.jpg"
 intro: "C'est l'hiver qui m'a poussé à concevoir ce modèle. J'avais froid et j'avais besoin de quelques pulls, alors que faire ?"
 title: "Annonce le pull Sven ; un pull basique basé sur le bloc de corps Brian."
 ---
