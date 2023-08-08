@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "We have fallen head over heels for Hi"
 date: "2022-06-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0a9f5750abe0ee9e67cee1d9eb10f6cb7770ee4e-4032x3024.jpg"
 intro: "This is Hi."
 title: "Hi the shark has our hearts"
 designs: ["hi"]
