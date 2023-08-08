@@ -2,7 +2,6 @@
 maker: "Em"
 caption: "Une photo montrant l'élégant manteau Carlton d'Em et leur chat."
 date: "18-10-2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/962338234fee3642dfb0313acd1690db63c46919-1965x3494.jpg"
 intro: "Le manteau Carlton cool d'Em"
 title: "Le manteau Carlton cool d'Em"
 designs:
