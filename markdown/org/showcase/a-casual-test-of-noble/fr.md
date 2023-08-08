@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "La couturière était satisfaite de ses résultats"
 date: "06-30-2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/433aa6299949881aa53c46f8778661ecf25ac893-1265x1686.jpg"
 intro: "Une créatrice de FreeSewing a partagé cette version du bloc de carrosserie de Noble."
 title: "Un test occasionnel de Noble"
 designs:
