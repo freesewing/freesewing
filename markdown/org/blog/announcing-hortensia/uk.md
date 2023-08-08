@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Приклад Гортензії, зробленої дизайнером"
 date: "2021-02-13"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/01f416518b5bf8fb75dcc8ae3ab2691d5532dd65-2000x1500.jpg"
 intro: "Я рада повідомити про швидку доступність нашої останньої викрійки FreeSewing: сумочка Hortensia ."
 title: "Привітайтеся з нашим останнім зразком: Сумочка Hortensia"
 ---
