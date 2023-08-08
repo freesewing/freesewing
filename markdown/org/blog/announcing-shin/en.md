@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "I guess this is what augmented reality looks like?"
 date: "2018-09-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b471275001689bd4819d6d95aabc8134788dc612-1694x1129.jpg"
 intro: "A while ago I found myself in need of some new swim trunks. So I drafted a pattern and made some:"
 title: "Announcing Shin, a swim trunks pattern"
 ---
