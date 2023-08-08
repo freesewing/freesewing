@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Sie sagten, ich sei verrückt, eine Zebrajacke zu machen, also habe ich sie trotzdem gemacht. Und sie versank im Sumpf."
 date: "2017-09-04"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/35dda6f4c8ec6f2689e2741cc49cf178e4a39474-3300x2200.jpg"
 intro: "Für Uneingeweihte: Die Refashioners sind ein jährlicher Wettbewerb, der von der charmanten (und sehr überzeugenden) Portia Lawrie veranstaltet wird."
 title: "The Refashioners 2017 - Jetzt mit einer Blake Blazer Vorschau und 100% mehr Zebra"
 ---
