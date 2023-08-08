@@ -2,7 +2,6 @@
 maker: "халбмокі"
 caption: "Привіт, привіт."
 date: "2022-07-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4fff8a1a4470a60e4cff772afe3308b59b9ea459-1920x1440.jpg"
 intro: "Halbmoki's Hi миттєво завоював прихильність спільноти FreeSewing!"
 title: "Привіт від halbmoki"
 designs:
