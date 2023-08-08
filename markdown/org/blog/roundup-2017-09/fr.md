@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ton nouveau fond d'écran de connexion pour le mois d'octobre"
 date: "2017-09-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c6418b621228730525d835acff53c4cd6895a865-2000x1250.jpg"
 intro: "Voici ton récapitulatif mensuel de l'actualité freesewing des quatre dernières semaines, et un aperçu de ce qui t'attend le mois prochain."
 title: "Récapitulatif mensuel - septembre 2017 : Les complications de Simon, les problèmes de messagerie et les dons sont en hausse cette année."
 ---
