@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Een Sven voor op kantoor. Dus euh, best wel saai."
 date: "2017-07-09"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b0c9b0cb38bce095739109946a99b6cda63e7cd9-1000x667.jpg"
 intro: "Ik heb dit patroon gemaakt omdat het winter was. Ik had het koud en ik had truien nodig. Dus wat doet een mens dan?"
 title: "Nieuwkomer: de Sven-sweater, een basistrui gebaseerd op het Brian-corsage"
 ---
