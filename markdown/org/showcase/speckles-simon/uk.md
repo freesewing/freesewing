@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Контрастний пакет з петлицями - чудовий штрих."
 date: "2018-03-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/42a90db048975ca7afdcebe7c2d19e9c9e524b5c-1080x1194.jpg"
 intro: "Еллі пише:"
 title: "Симон у цяточку від Еллі для її чоловіка"
 designs:
