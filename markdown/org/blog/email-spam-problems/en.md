@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Would you close a lane because one driver was playing their music too loud?"
 date: "2017-09-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/923cd5587c873d2662df4a804f75f8f32b5673ca-1920x1281.jpg"
 intro: "Thanks for nothing Microsoft; Email shouldn't be this hard"
 title: "Thanks for nothing Microsoft; Email shouldn't be this hard"
 ---
