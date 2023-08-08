@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Foto door <a href='https://pixabay.com/en/users/herbert2512-2929941/' target='_BLANK' rel='nofollow'>Herbert</a>"
 date: "2017-06-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8ccbb2d5b50eb0917c6bd2befb2b098b6d667ba9-1920x1280.jpg"
 intro: "Het wereldwijde web tast steeds meer je privacy aan. Facebook, Google en een stortvloed aan advertentienetwerken houden allemaal je browsertabbladen in de gaten. Ze volgen je op het web, houden in de gaten welke sites je bezoekt, zodat ze meer informatie over je kunnen verzamelen en die aan adverteerders kunnen verkopen."
 title: "De keuzes die ik heb gemaakt om je privacy te beschermen. Of waarom je geen koekjes krijgt."
 ---
