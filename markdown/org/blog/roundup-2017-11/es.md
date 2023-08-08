@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Tu nuevo fondo de inicio de sesión para el mes de diciembre"
 date: "2017-11-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c9c5c5e10d2ed6e9f2935b047afa76c1ddd7c834-2000x1333.jpg"
 intro: "Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene."
 title: "Resumen mensual - Noviembre de 2017: Benjamin, incorporación, escaparates y nuestro alicatador a la carta"
 ---
