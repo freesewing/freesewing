@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Цей пост описує, що нового у версії 2.2 FreeSewing"
 date: "2020-02-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/356c127b8b37937b9537790d71a949c236027513-1920x1280.jpg"
 intro: "Погляньте, що нового у FreeSewing 2.2, включаючи Breanna, наш блок ліфів для жіночого одягу"
 title: "Погляньте, що нового у FreeSewing 2.2, включаючи Breanna, наш блок ліфів для жіночого одягу"
 ---
