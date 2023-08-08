@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ce billet décrit les nouveautés de la version 2.2 de FreeSewing."
 date: "02-22-2020"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/356c127b8b37937b9537790d71a949c236027513-1920x1280.jpg"
 intro: "Un aperçu des nouveautés de FreeSewing 2.2, y compris Breanna, notre bloc de corsage pour les vêtements féminins."
 title: "Un aperçu des nouveautés de FreeSewing 2.2, y compris Breanna, notre bloc de corsage pour les vêtements féminins."
 ---
