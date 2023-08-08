@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Your new login background for the month of December"
 date: "2017-11-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c9c5c5e10d2ed6e9f2935b047afa76c1ddd7c834-2000x1333.jpg"
 intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
 title: "Monthly roundup - November 2017: Benjamin, on-boarding, showcases, and our on-demand tiler"
 ---
