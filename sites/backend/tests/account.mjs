@@ -54,7 +54,6 @@ export const accountTests = async (chai, config, expect, store) => {
       // Update password - Check with sign in
       const password = store.randomString()
       it(`${store.icon('user', auth)} Should update the password (${auth})`, (done) => {
-        const body = {}
         chai
           .request(config.api)
           .patch(`/account/${auth}`)
@@ -80,7 +79,6 @@ export const accountTests = async (chai, config, expect, store) => {
         'user',
         auth
       )} Should be able to sign in with the updated password (${auth})`, (done) => {
-        const body = {}
         chai
           .request(config.api)
           .post(`/signin`)
@@ -97,7 +95,6 @@ export const accountTests = async (chai, config, expect, store) => {
       })
 
       it(`${store.icon('user', auth)} Better restore the original password (${auth})`, (done) => {
-        const body = {}
         chai
           .request(config.api)
           .patch(`/account/${auth}`)
@@ -123,7 +120,6 @@ export const accountTests = async (chai, config, expect, store) => {
         'user',
         auth
       )} Should be able to sign in with the original password (${auth})`, (done) => {
-        const body = {}
         chai
           .request(config.api)
           .post(`/signin`)

@@ -1,5 +1,5 @@
 import { log } from '../utils/log.mjs'
-import { storeImage } from '../utils/cloudflare-images.mjs'
+import { replaceImage, storeImage } from '../utils/cloudflare-images.mjs'
 import yaml from 'js-yaml'
 
 export function SetModel(tools) {
@@ -477,12 +477,12 @@ SetModel.prototype.import = async function (v2user, userId) {
         '/' +
         encodeURIComponent(data.img)
       console.log('Grabbing', imgUrl)
-      const [contentType, imgData] = await downloadImage(imgUrl)
-      // Do not import the default SVG avatar
-      if (contentType !== 'image/svg+xml') {
-        const img = await setSetAvatar(this.record.id, [contentType, imgData], data.name)
-        data.img = img
-      }
+      //const [contentType, imgData] = await downloadImage(imgUrl)
+      //// Do not import the default SVG avatar
+      //if (contentType !== 'image/svg+xml') {
+      //  const img = await setSetAvatar(this.record.id, [contentType, imgData], data.name)
+      //  data.img = img
+      //}
     }
   }
 }

@@ -14,7 +14,7 @@ import { Pagination } from 'shared/components/navigation/pagination.mjs'
 // Translation namespaces used on this page
 const namespaces = [...new Set(['common', 'designs', ...pageNs])]
 
-export const PreviewTile = ({ img, slug, title }) => (
+export const PreviewTile = ({ slug, title }) => (
   <Link href={`/${slug}`} className="text-center">
     <span
       style={{
@@ -56,7 +56,7 @@ const Posts = ({ posts }) => {
     //   designs[design].push(post)
     // }
 
-    previews.push(<PreviewTile img={post.i} slug={post.s} title={post.t} key={post.s} />)
+    previews.push(<PreviewTile slug={post.s} title={post.t} key={post.s} />)
   })
 
   return (

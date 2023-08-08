@@ -1,4 +1,6 @@
 import axios from 'axios'
+import { Blob } from 'node:buffer'
+import { log } from './log.mjs'
 import { cloudflareImages as config } from '../config.mjs'
 
 // We'll use this a bunch
@@ -44,7 +46,10 @@ export async function replaceImage(props) {
   // Ignore errors on delete, probably means the image does not exist
   try {
     await axios.delete(`${config.api}/${props.id}`)
-  } catch (err) {}
+  } catch (err) {
+    // It's fine
+    log.info(`Could not delete image ${props.id}`)
+  }
   let result
   try {
     result = await axios.post(config.api, form, { headers })
@@ -78,7 +83,5 @@ function getFormData({ id, metadata, url = false, b64 = false, blob = false, not
  * Helper method to turn a data-uri into binary data
  */
 function b64ToBlob(dataUri) {
-  const [start, data] = dataUri.split(';base64,')
-
-  return new Blob([new Buffer.from(data, 'base64')])
+  return new Blob([new Buffer.from(dataUri.split(';base64,').pop(), 'base64')])
 }

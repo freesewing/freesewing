@@ -30,7 +30,7 @@ const NewsletterPage = ({ page, id, ehash }) => {
 
   const handler = async () => {
     setLoading(true)
-    const result = await backend.confirmNewsletterUnsubscribe({ id, ehash })
+    await backend.confirmNewsletterUnsubscribe({ id, ehash })
     setLoading(false)
     setConfirmed(true)
   }

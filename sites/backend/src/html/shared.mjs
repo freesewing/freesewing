@@ -1,4 +1,4 @@
-export const wrapper = ({ title = 'FreeSewing', header, content, footer }) => `<!DOCTYPE html>
+export const wrapper = ({ title = 'FreeSewing', header, content }) => `<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />

@@ -1,4 +1,4 @@
-import subscribers from './v2-newsletters.json' assert { type: 'json' }
+//import subscribers from './v2-newsletters.json' assert { type: 'json' }
 import users from './v2-users.json' assert { type: 'json' }
 import people from './v2-people.json' assert { type: 'json' }
 

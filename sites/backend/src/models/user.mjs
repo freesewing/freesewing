@@ -922,12 +922,12 @@ UserModel.prototype.import = async function (list) {
               '/' +
               encodeURIComponent(data.img)
             console.log('Grabbing', imgUrl)
-            const [contentType, imgData] = await downloadImage(imgUrl)
-            // Do not import the default SVG avatar
-            if (contentType !== 'image/svg+xml') {
-              const img = await setUserAvatar(data.ihash, [contentType, imgData], data.username)
-              data.img = img
-            }
+            //const [contentType, imgData] = await downloadImage(imgUrl)
+            //// Do not import the default SVG avatar
+            //if (contentType !== 'image/svg+xml') {
+            //  const img = await setUserAvatar(data.ihash, [contentType, imgData], data.username)
+            //  data.img = img
+            //}
           }
           let cloaked = await this.cloak(data)
           try {
