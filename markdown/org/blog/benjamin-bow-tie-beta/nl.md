@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Doe er een strikje rond"
 date: "2017-11-14"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b04db622ddf3bff6e2d66a5305903a0e96edd58-2000x1333.jpg"
 intro: "Onze familie van FreeSewing-patronen is opnieuw gegroeid. En de benjamin van de familie is ... Benjamin ."
 title: "Het patroon voor de Benjamin-vlinderdas is nu beschikbaar in beta. En ik heb er zelfs niets voor moeten doen."
 ---
