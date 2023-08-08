@@ -2,7 +2,6 @@
 maker: "RedBlaqueGolden"
 caption: "JV in a Sandy with matching mask"
 date: "2020-10-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/35daf9e79d06a8a12972a1e0bd87bce6f3c92028-1536x2048.jpg"
 intro: "JV shared their new dress using the Sandy skirt on Twitter."
 title: "JV's dress made using a Sandy circle skirt"
 designs: ["sandy"]
