@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Juste une association de couleurs exceptionnelle sur ce sweat à capuche orange et vert."
 date: "02-02-2023"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e8bf624ac2dd9b48fa2e97905e19f4939fde1fc7-1458x2570.jpg"
 intro: "Enamourée par ce sweat à capuche qu'une utilisatrice de FreeSewing a posté dans le Discord !"
 title: "Mashup Hugo-Teagan"
 designs:
