@@ -16,8 +16,6 @@ export const dimensionsDefs = [
   },
 ]
 
-const prefix = '__paperless'
-
 function drawDimension(from, to, so, { Path, units }) {
   const dimension = new Path()
     .move(from)
@@ -89,8 +87,8 @@ function removeDimension(id, props) {
 export const dimensionsMacros = {
   // horizontal
   hd: function (so, props) {
-    const { getId, paths } = props
-    const id = so.id
+    const { paths } = props
+    const id = 'hd_' + so.id
     paths[id] = drawDimension(
       hleader(so, 'from', props, id + '_ls'),
       hleader(so, 'to', props, id + '_le'),
@@ -100,8 +98,8 @@ export const dimensionsMacros = {
   },
   // vertical
   vd: function (so, props) {
-    const { getId, paths } = props
-    const id = so.id
+    const { paths } = props
+    const id = 'vd_' + so.id
     paths[id] = drawDimension(
       vleader(so, 'from', props, id + '_ls'),
       vleader(so, 'to', props, id + '_le'),
@@ -111,8 +109,8 @@ export const dimensionsMacros = {
   },
   // linear
   ld: function (so, props) {
-    const { getId, paths } = props
-    const id = so.id
+    const { paths } = props
+    const id = 'ld_' + so.id
     paths[id] = drawDimension(
       lleader(so, 'from', props, id + '_ls'),
       lleader(so, 'to', props, id + '_le'),
@@ -122,8 +120,8 @@ export const dimensionsMacros = {
   },
   // path
   pd: function (so, props) {
-    const { getId, paths, scale, units } = props
-    const id = so.id
+    const { paths, scale, units } = props
+    const id = 'pd_' + so.id
     if (typeof so.d === 'undefined') so.d = 10 * scale
     const dimension = so.path
       .offset(so.d)
@@ -138,16 +136,16 @@ export const dimensionsMacros = {
   },
   // Remove dimension
   rmvd: function (id, props) {
-    removeDimension(id, props)
+    removeDimension('vd_' + id, props)
   },
   rmhd: function (id, props) {
-    removeDimension(id, props)
+    removeDimension('hd_' + id, props)
   },
   rmld: function (id, props) {
-    removeDimension(id, props)
+    removeDimension('ld_' + id, props)
   },
   rmpd: function (id, props) {
-    removeDimension(id, props)
+    removeDimension('pd_' + id, props)
   },
   // This is non-functional:
   // (Every macro with an rm prefix is regarded to be a removal macro of the

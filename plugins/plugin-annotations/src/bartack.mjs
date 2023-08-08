@@ -92,7 +92,7 @@ function createBartack(so, props) {
     }
   }
 
-  const pathName = `${so.id}bartack${so.suffix}`
+  const pathName = `bartack_${so.id}_${so.suffix}`
   const storePathKey = 'macros.bartack.paths.' + so.id
   store.set(storePathKey, pathName)
   paths[pathName] = bartackPath(guide, so, props).attr('class', 'stroke-sm stroke-mark')

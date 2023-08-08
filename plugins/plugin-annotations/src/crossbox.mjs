@@ -1,7 +1,8 @@
+const prefix = 'crossbox_'
 // Export macros
 export const crossboxMacros = {
   crossbox: function (so, { points, Point, paths, Path }) {
-    let id = so.id
+    const id = prefix + so.id
     let shiftFraction = 0.1
     points[id + '_boxTopLeft'] = so.from.copy()
     points[id + '_boxBottomRight'] = so.to.copy()
@@ -51,21 +52,22 @@ export const crossboxMacros = {
     }
   },
   rmcrossbox: function (id, { points, paths }) {
-    delete paths[id + '_crossBox']
-    delete paths[id + '_topCross']
-    delete points[id + '_boxTopLeft']
-    delete points[id + '_boxTopRight']
-    delete points[id + '_boxBottomRight']
-    delete points[id + '_boxBottomLeft']
-    delete points[id + '_boxTopLeft']
-    delete points[id + '_topCrossTL']
-    delete points[id + '_topCrossBR']
-    delete points[id + '_topCrossTR']
-    delete points[id + '_topCrossBL']
-    delete points[id + '_topCrossTL']
-    delete points[id + '_topCrossTR']
-    delete points[id + '_topCrossBR']
-    delete points[id + '_topCrossBL']
-    delete points[id + '_textAnchor']
+    const mid = prefix + id
+    delete paths[mid + '_crossBox']
+    delete paths[mid + '_topCross']
+    delete points[mid + '_boxTopLeft']
+    delete points[mid + '_boxTopRight']
+    delete points[mid + '_boxBottomRight']
+    delete points[mid + '_boxBottomLeft']
+    delete points[mid + '_boxTopLeft']
+    delete points[mid + '_topCrossTL']
+    delete points[mid + '_topCrossBR']
+    delete points[mid + '_topCrossTR']
+    delete points[mid + '_topCrossBL']
+    delete points[mid + '_topCrossTL']
+    delete points[mid + '_topCrossTR']
+    delete points[mid + '_topCrossBR']
+    delete points[mid + '_topCrossBL']
+    delete points[mid + '_textAnchor']
   },
 }

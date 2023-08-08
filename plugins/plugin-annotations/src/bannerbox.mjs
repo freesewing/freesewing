@@ -15,7 +15,7 @@ export const bannerboxMacros = {
       ...so,
     }
     const offset = Math.sqrt(2 * Math.pow(so.margin, 2))
-    paths[so.id] = new Path()
+    paths['bannerbox_' + so.id] = new Path()
       .move(so.topLeft.shift(135, offset))
       .line(new Point(so.bottomRight.x, so.topLeft.y).shift(45, offset))
       .line(so.bottomRight.shift(315, offset))
@@ -25,7 +25,7 @@ export const bannerboxMacros = {
       .addClass(so.boxClassName)
 
     macro('banner', {
-      path: paths[so.id],
+      path: paths['bannerbox_' + so.id],
       text: so.text,
       className: so.textClassName,
       repeat: so.repeat,
@@ -34,6 +34,6 @@ export const bannerboxMacros = {
     })
   },
   rmbannerbox: function (id, { paths }) {
-    delete paths[id]
+    delete paths['bannerbox_' + id]
   },
 }

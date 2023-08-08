@@ -359,17 +359,14 @@ Part.prototype.__macroClosure = function (props) {
 
       let ids = []
       switch (typeof args) {
-        case 'string': {
+        case 'undefined':
+          ids = props.store.get(storeKey)
+          break
+        case 'string':
           ids.push(args)
           break
-        }
-        case 'object': {
+        case 'object':
           if (args instanceof Array) ids = args
-          break
-        }
-        case 'undefined': {
-          ids = props.store.get(storeKey)
-        }
       }
       if (typeof self[macro] === 'function' && ids)
         ids.forEach((id) => {
@@ -382,12 +379,13 @@ Part.prototype.__macroClosure = function (props) {
       return
     }
 
-    args.id = args.id ? macro + '_' + args.id : self.getId(macro + '_')
-
+    args = { ...args, ...{ id: args && args.id ? args.id : self.getId(), macro: macro } }
     props.store.setIfUnset(storeKey, []).push(storeKey, args.id)
     if (typeof self[macro] === 'function') self[macro](args, props)
-    else if ('context' in self)
+    else if ('context' in self) {
       self.context.store.log.warning('Unknown macro `' + key + '` used in ' + self.name)
+      return undefined
+    }
 
     return args.id
   }

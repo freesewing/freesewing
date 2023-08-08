@@ -1,3 +1,4 @@
+const prefix = 'cutonfold_'
 // Export defs
 export const cutonfoldDefs = [
   {
@@ -24,26 +25,26 @@ export const cutonfoldMacros = {
       margin: 5,
       ...so,
     }
-
+    const id = prefix + so.id
     // store in cutlist
-    store.cutlist.setCutOnFold(so.from, so.to, so.id)
+    store.cutlist.setCutOnFold(so.from, so.to, id)
     if (so.grainline) store.cutlist.setGrain(so.from.angle(so.to))
 
     if (complete) {
-      points[so.id + '_From'] = so.from.shiftFractionTowards(so.to, so.margin / 100)
-      points[so.id + '_To'] = so.to.shiftFractionTowards(so.from, so.margin / 100)
-      points[so.id + '_Via1'] = points[so.id + '_From']
+      points[id + '_From'] = so.from.shiftFractionTowards(so.to, so.margin / 100)
+      points[id + '_To'] = so.to.shiftFractionTowards(so.from, so.margin / 100)
+      points[id + '_Via1'] = points[id + '_From']
         .shiftTowards(so.from, so.offset * scale)
-        .rotate(-90, points[so.id + '_From'])
-      points[so.id + '_Via2'] = points[so.id + '_To']
+        .rotate(-90, points[id + '_From'])
+      points[id + '_Via2'] = points[id + '_To']
         .shiftTowards(so.to, so.offset * scale)
-        .rotate(90, points[so.id + '_To'])
+        .rotate(90, points[id + '_To'])
       const text = so.grainline ? 'cutOnFoldAndGrainline' : 'cutOnFold'
-      paths[so.id + '_Cutonfold'] = new Path()
-        .move(points[so.id + '_From'])
-        .line(points[so.id + '_Via1'])
-        .line(points[so.id + '_Via2'])
-        .line(points[so.id + '_To'])
+      paths[id + '_Cutonfold'] = new Path()
+        .move(points[id + '_From'])
+        .line(points[id + '_Via1'])
+        .line(points[id + '_Via2'])
+        .line(points[id + '_To'])
         .attr('class', 'note')
         .attr('marker-start', 'url(#cutonfoldFrom)')
         .attr('marker-end', 'url(#cutonfoldTo)')
@@ -52,11 +53,11 @@ export const cutonfoldMacros = {
     }
   },
   rmcutonfold: function (id, { points, paths, store }) {
-    delete points[id + '_From']
-    delete points[id + '_To']
-    delete points[id + '_Via1']
-    delete points[id + '_Via2']
-    delete paths[id + '_Cutonfold']
+    delete points[prefix + id + '_From']
+    delete points[prefix + id + '_To']
+    delete points[prefix + id + '_Via1']
+    delete points[prefix + id + '_Via2']
+    delete paths[prefix + id + '_Cutonfold']
 
     store.cutlist.setCutOnFold(false) // Restore default
   },
