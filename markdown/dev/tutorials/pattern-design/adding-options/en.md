@@ -31,12 +31,12 @@ function draftBib({ part }) {
 export const bib = {
  
   name: 'tutorial.bib',
-  draft: draftBib,[],
+  draft: draftBib,
   from: false,
   hide: {
-  self: false,
-  from: false,
-  after: false
+    self: false,
+    from: false,
+    after: false
   },
   // highlight-start
   options: {
