@@ -2,7 +2,6 @@
 maker: "pecatrix"
 caption: "футболка \"Аарон\" від pecatrix"
 date: "2022-08-02"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c3baaebfd6c1378f0c779b80d29a6af9edd07496-1944x2592.jpg"
 intro: "Футболка Aaron від pecatrix"
 title: "Футболка Aaron від pecatrix"
 designs:
