@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Fermerais-tu une voie de circulation parce qu'un conducteur mettrait sa musique trop fort ?"
 date: "2017-09-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/923cd5587c873d2662df4a804f75f8f32b5673ca-1920x1281.jpg"
 intro: "Merci pour rien Microsoft ; le courrier électronique ne devrait pas être si difficile."
 title: "Merci pour rien Microsoft ; le courrier électronique ne devrait pas être si difficile."
 ---
