@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "An early Bee bikini top"
 date: "2021-10-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f26aa235307e36906c8b16b8e99364cce01645ef-4032x3024.jpg"
 intro: "A FreeSewing maker made this Bee bikini top. She used the default settings and reported a great fit with no gaping/coverage issues, but mentioned that she typically does not need a lot of support."
 title: "An early Bee bikini top"
 designs: ["bee"]
