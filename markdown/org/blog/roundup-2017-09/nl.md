@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Je nieuwe inlogachtergrond voor de maand oktober"
 date: "2017-09-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c6418b621228730525d835acff53c4cd6895a865-2000x1250.jpg"
 intro: "Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt."
 title: "Maandelijks overzicht - september 2017: Simon complicaties, e-mail problemen en donaties zijn dit jaar gestegen."
 ---
