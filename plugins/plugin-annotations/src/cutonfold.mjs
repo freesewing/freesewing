@@ -26,7 +26,7 @@ export const cutonfoldMacros = {
     }
 
     // store in cutlist
-    store.cutlist.setCutOnFold(so.from, so.to)
+    store.cutlist.setCutOnFold(so.from, so.to, so.id)
     if (so.grainline) store.cutlist.setGrain(so.from.angle(so.to))
 
     if (complete) {
