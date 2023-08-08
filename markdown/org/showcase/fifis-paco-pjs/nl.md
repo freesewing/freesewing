@@ -2,7 +2,6 @@
 maker: "Fifi"
 caption: "Pyjamabroek gemaakt van het Paco patroon"
 date: "2021-12-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/af784a62ff853e00c16080a852bc3b6c8072fbe4-1560x2080.jpg"
 intro: "Fifi heeft het Paco broekpatroon aangepast om een veelgevraagd resultaat te bereiken: FreeSewing PJ-broeken!"
 title: "Fifi's Paco PJ"
 designs:
