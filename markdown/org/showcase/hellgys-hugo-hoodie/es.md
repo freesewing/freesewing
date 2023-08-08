@@ -2,7 +2,6 @@
 maker: "Infernal"
 caption: "Hellgy con su sudadera Hugo"
 date: "2021-11-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/064688968c55a3ddc155ff8f8e75e627d4c87bc9-1280x853.jpg"
 intro: "Este es otro fantástico Hugo de Hellgy, cuyas diversas sudaderas con capucha de FreeSewing son todas las favoritas del público."
 title: "Sudadera con capucha Hugo de Hellgy"
 designs:
