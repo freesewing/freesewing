@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Sandy rok met panelen van Sunshine"
 date: "2021-02-15"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4d38d6837e8125276522abb62d44a99e191fd8a0-1477x1969.jpg"
 intro: "Deze mooie Sandy rok is gemaakt door Sunshine. De maker deelde meer informatie over het project:"
 title: "Sandy rok van Sunshine"
 designs:
