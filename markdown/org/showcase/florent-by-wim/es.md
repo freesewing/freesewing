@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Florent, boina"
 date: "2018-09-21"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/05241effbb4966cca830512f81b1910e7ecf46f8-1094x889.jpg"
 intro: "Aquí está Wim con una gorra de solapa Florent."
 title: "Una gorra plana Florent de Wim"
 designs:
