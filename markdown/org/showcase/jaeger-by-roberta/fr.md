@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Une veste Jaeger flamboyante avec un flamant rose"
 date: "12-06-2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3bbc589317e13e279d05f3b13eed309efabbfe23-480x534.jpg"
 intro: "Cette veste Jaeger nous fait tous réfléchir à FreeSewing sur la façon dont nous pouvons intégrer les imprimés flamants roses dans toutes nos créations."
 title: "Jaeger by Roberta"
 designs:
