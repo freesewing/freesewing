@@ -2,7 +2,6 @@
 maker: "comixminx"
 caption: "Shin shorts mettant en vedette la nouvelle compétence de comixminx en triple point extensible."
 date: "06-09-2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9abee12786ebdcd90238365242575f8c23a37a18-4032x3024.jpg"
 intro: "comixminx a fabriqué une autre paire amusante de shorts de bain Shin, cette fois-ci pour son plus jeune enfant. Même avec une paire de test (illustrée ci-dessous), la version finale était légèrement trop serrée. Le porteur de la première paire a rapporté le même retour d'expérience. D'autres personnes qui essaieront peut-être Shin pour les enfants voudront peut-être en tenir compte. (Ils sont cependant toujours portés lors des cours de natation hebdomadaires)."
 title: "Plus de shorts de bain Shin"
 designs:
