@@ -3,6 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { pages as posts } from 'site/prebuild/showcase.mjs'
 import { meta } from 'site/prebuild/showcase-meta.mjs'
 import { getPostIndexPaths, getPostIndexProps } from 'site/components/mdx/posts/utils.mjs'
+import { cloudflareImageUrl } from 'shared/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
@@ -16,7 +17,13 @@ const namespaces = [...new Set(['common', 'designs', ...pageNs])]
 export const PreviewTile = ({ img, slug, title }) => (
   <Link href={`/${slug}`} className="text-center">
     <span
-      style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover' }}
+      style={{
+        backgroundImage: `url(${cloudflareImageUrl({
+          id: slug.replace('/', '-'),
+          variant: 'sq500',
+        })})`,
+        backgroundSize: 'cover',
+      }}
       className={`
         rounded-full inline-block border-base-100
         w-40 h-40

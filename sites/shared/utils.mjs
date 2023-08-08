@@ -3,6 +3,7 @@ import get from 'lodash.get'
 import set from 'lodash.set'
 import orderBy from 'lodash.orderby'
 import unset from 'lodash.unset'
+import { cloudflareConfig } from './config/cloudflare.mjs'
 
 // Method that returns a unique ID when all you need is an ID
 // but you can't be certain you have one
@@ -369,4 +370,18 @@ export const formatNumber = (num, suffix = '') => {
   }
 
   return '0'
+}
+
+/*
+ * Returns the URL of a cloudflare image
+ * based on the ID and Variant
+ */
+export const cloudflareImageUrl = ({ id = 'default-avatar', variant = 'public' }) => {
+  /*
+   * If the variant is invalid, set it to the smallest thumbnail so
+   * people don't load enourmous images by accident
+   */
+  if (!cloudflareConfig.variants.includes(variant)) variant = 'sq100'
+
+  return `${cloudflareConfig.url}${id}/${variant}`
 }

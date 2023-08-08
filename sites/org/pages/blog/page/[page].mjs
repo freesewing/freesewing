@@ -3,6 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { pages as posts } from 'site/prebuild/blog.mjs'
 import { meta } from 'site/prebuild/blog-meta.mjs'
 import { getPostIndexPaths, getPostIndexProps } from 'site/components/mdx/posts/utils.mjs'
+import { cloudflareImageUrl } from 'shared/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
@@ -27,7 +28,10 @@ const Preview = ({ post, t }) => (
       <div
         className="bg-base-100 w-full h-full overflow-hidden shadow flex flex-column items-center rounded-lg"
         style={{
-          backgroundImage: `url(${post.i})`,
+          backgroundImage: `url(${cloudflareImageUrl({
+            id: post.s.replace('/', '-'),
+            variant: 'w500',
+          })})`,
           backgroundSize: 'cover',
         }}
       >
