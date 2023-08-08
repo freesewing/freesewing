@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ton nouveau fond d'écran de connexion pour le mois de février"
 date: "2018-01-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/6fbc797ad0b3d50a8337bd2cb8401f04f63bffdd-2000x1125.jpg"
 intro: "Voici ton récapitulatif mensuel de l'actualité freesewing des quatre dernières semaines, et un aperçu de ce qui t'attend le mois prochain."
 title: "Tour d'horizon mensuel - janvier 2018 : Inkscape DPI, prise de conscience des versions, Bail et Carlita"
 ---
