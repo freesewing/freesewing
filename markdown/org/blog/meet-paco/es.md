@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Paco sobre tu servidor"
 date: "2020-08-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1bc82d4abb50ea1b7bda32dd64521e9ecfdd8467-2048x1536.jpg"
 intro: "Te presentamos a Paco: Nuestro nuevo patrón unisex para unos elegantes pantalones de verano"
 title: "Te presentamos a Paco: Nuestro nuevo patrón unisex para unos elegantes pantalones de verano"
 ---
