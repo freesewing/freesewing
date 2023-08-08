@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "This is the octopus variant, featured with the original Octoplushy and Hi"
 date: "2022-09-03"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/862b0a096d69cfcee0b54347f4cff56dc8f4da73-3024x4032.jpg"
 intro: "The \"octopus\" variant of Octoplushy"
 title: "The \"octopus\" variant of Octoplushy"
 designs: ["octoplushy"]
