@@ -2,7 +2,6 @@
 maker: "ATightShipwreck"
 caption: "Cornelius met heupen!"
 date: "2022-07-23"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/21ad37b0e35bbf1ec1f769ba0b642d0f4c2baefb-1290x2622.jpg"
 intro: "Wij vinden deze Cornelius broek van ATightShipwreck geweldig! Ze deelden:"
 title: "Cornelius fietsbroek van ATightShipwreck"
 designs:
