@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ich trinke nicht, aber das schien für einen Festbeitrag angemessen zu sein ¯\_(ツ)_/¯"
 date: "2018-08-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a6b5a3918ad412f7fb434413fafcc82107109d87-1920x1276.jpg"
 intro: "Wir feiern ein Jahr von FreeSewing.org: Ankündigung der FreeSewing-Library"
 title: "Wir feiern ein Jahr von FreeSewing.org: Ankündigung der FreeSewing-Library"
 ---
