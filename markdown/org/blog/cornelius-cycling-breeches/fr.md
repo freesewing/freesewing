@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Faire du vélo comme un vrai gentilhomme"
 date: "2021-03-06"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/15c72486b0c48905f9f4a916a32caa058f1b0f8a-997x857.jpg"
 intro: "Wouter remet ça, cette fois-ci il nous régale avec une culotte cycliste classique."
 title: "Cette culotte de cyclisme Cornelius est le dernier cadeau de Woutter pour nous tous"
 ---
