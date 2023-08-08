@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Nahaufnahme eines Löwenzahns vor rosa Hintergrund"
 date: "2019-12-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/83a131ff51bec913541a94356d1930aaa2c07f87-1920x1280.jpg"
 intro: "4109 Gründe, sich über 2019 zu freuen"
 title: "4109 Gründe, sich über 2019 zu freuen"
 ---
