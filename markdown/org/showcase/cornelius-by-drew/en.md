@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "The Cornelius cycling breeches in linen"
 date: "2021-07-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7cb1aa306644cf26aac361deaec00e9bb3bdd342-482x800.jpg"
 intro: "Drew S. made this cool pair of trousers in linen, their first FreeSewing pattern and also first time making trousers! Drew shared:"
 title: "Drew S.'s Cornelius"
 designs: ["cornelius"]
