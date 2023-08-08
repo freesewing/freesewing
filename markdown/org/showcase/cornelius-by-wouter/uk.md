@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "Велосипедні штани Cornelius від Wouter, feat. литки велосипедиста"
 date: "2021-03-17"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/abd61dc5abc173a4e858d03b5f1af80fed297957-571x613.jpg"
 intro: "Wouter створив модель велосипедних бриджів Cornelius на основі систем Keystone. Читайте більше на блозі FreeSewing ."
 title: "Корнеліус від Wouter"
 designs:
