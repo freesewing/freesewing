@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Photo d'Alex Andrews de Pexels"
 date: "2020-09-09"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8bee0b9035162c14da54744b24539e56a8e16e27-2000x1500.jpg"
 intro: "Il y a quelque temps, quelqu'un a demandé si nous avions un patron de T-shirt sur freesewing.org et il s'avère que nous ne l'avions pas."
 title: "FreeSewing 2.9 apporte notre T-shirt Teagan"
 ---
