@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "El fabricante utilizó tejido de malla elástico"
 date: "2022-06-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ae49748b9e877ef9b239ebc8a6b72fa006dd490b-909x1212.jpg"
 intro: "El fabricante compartió:"
 title: "Tamiko modificada como funda de lactancia"
 designs:
