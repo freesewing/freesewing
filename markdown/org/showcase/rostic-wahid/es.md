@@ -2,7 +2,6 @@
 maker: "rostic"
 caption: "Este precioso Wahid se hizo con algodón floral"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/429adcc0d0847351ca6076d941428f67dba6a223-910x1265.jpg"
 intro: "¡Rostic hizo este estupendo chaleco Wahid! No querrás perderte las fotos de detalle que aparecen a continuación."
 title: "El excelente chaleco Wahid de Rostic"
 designs:
