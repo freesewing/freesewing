@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Een foto van <a href='https://unsplash.com/@onevagabond'>Paulo Silva</a> toont een leeg Times Square in New York tijdens de COVID pandemie."
 date: "2021-01-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ffacb5c6384f250ad7cd3cb50b5ed4fdeff33ae6-1920x1280.jpg"
 intro: "Zijn we niet allemaal blij dat 2020 voorbij is?"
 title: "Het jaar 2020 was iets goeds"
 ---
