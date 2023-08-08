@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Your new login background for the month of november"
 date: "2017-10-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c9242975400bf885feef0b6ddc3b2bc0ce901638-2000x1500.jpg"
 intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
 title: "Monthly roundup - October 2017: Huey, Roy, community building and pattern cover pages"
 ---
