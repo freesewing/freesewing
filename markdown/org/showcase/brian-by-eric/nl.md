@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Eric gebruikte het Brian Body Block en voegde hun eigen kap toe."
 date: "2021-07-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8517c2f2024aa29584dc0248def827db48efcb41-453x800.jpg"
 intro: "Eric kreeg een geweldige pasvorm voor hun eerste draagbare kledingstuk! Ze deelden:"
 title: "Hoodie gebaseerd op het blok van Brian"
 designs:
