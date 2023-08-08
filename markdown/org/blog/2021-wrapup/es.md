@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Foto de Snapwire - Via pexels.com"
 date: "2022-01-01"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/33d380890b215e6fc9c698b57469fdd0c24acc44-3072x2304.jpg"
 intro: "No voy a hacer una entrada entera en el blog sobre el tema 2021 porque creo que la mayoría de nosotros queremos pasar página y olvidarnos de ello, pero si buscabas una lectura más larga, aquí tienes el índice de contenidos de nuestra última edición del boletín que también se ha enviado hoy:"
 title: "Resumen de 2021: Un nuevo FreeSewing.dev y el anuncio de nuestro programa de recompensas por errores"
 ---
