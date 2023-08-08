@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "The most important change is obviously that we moved from purple to black as our signature color"
 date: "2018-05-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e67a17e37a70154b3bb250ea1cb60eff2baddb55-1920x1285.jpg"
 intro: "Welcome to our new website. It's GDPR compliant, speaks 3 languages, and smells of wet paint"
 title: "Welcome to our new website. It's GDPR compliant, speaks 3 languages, and smells of wet paint"
 ---
