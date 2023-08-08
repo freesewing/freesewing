@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "El cambio más importante es, obviamente, que hemos pasado del morado al negro como color distintivo."
 date: "2018-05-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e67a17e37a70154b3bb250ea1cb60eff2baddb55-1920x1285.jpg"
 intro: "Bienvenido a nuestro nuevo sitio web. Cumple la normativa GDPR, habla 3 idiomas y huele a pintura húmeda"
 title: "Bienvenido a nuestro nuevo sitio web. Cumple la normativa GDPR, habla 3 idiomas y huele a pintura húmeda"
 ---
