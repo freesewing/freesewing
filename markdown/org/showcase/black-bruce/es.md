@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Parece que el marido no estaba dispuesto a modelar estos"
 date: "2017-09-13"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/cc7d2096649640ce7638cb6ba4c81815bd8fef29-720x890.jpg"
 intro: "Judy escribió:"
 title: "Boxers negros de Judy"
 designs:
