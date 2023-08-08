@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Keep those home-made clothes clean while cooking with the Albert apron"
 date: "2020-10-17"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/192f0da76422475ea9a36b7988d70f69bb89bbaf-1920x1282.jpg"
 intro: "What do you do if your daughter needed an apron for school?"
 title: "We haz apron now: FreeSewing 2.10 brings you Albert, a humble apron pattern"
 ---
