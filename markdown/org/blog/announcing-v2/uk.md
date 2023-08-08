@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Цей реліз справді змінює все докорінно"
 date: "2019-08-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5b31cfbe3a85cee5519e12afe767ca3249588463-2000x1126.jpg"
 intro: "Ласкаво просимо до версії 2 FreeSewing, платформи з відкритим вихідним кодом для створення викрійок одягу за індивідуальними розмірами."
 title: "Анонс FreeSewing v2.0"
 ---
