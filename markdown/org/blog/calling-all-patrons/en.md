@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "We are building a bedrock of loyal supporters to ensure a sustainable future for freesewing.org, our code, our patterns, and our community."
 date: "2017-12-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/84e39d762790744f10fe17bcb971f99e98550299-2000x1334.jpg"
 intro: "Calling all Patrons; Join our bedrock of loyal supporters."
 title: "Calling all Patrons; Join our bedrock of loyal supporters."
 ---
