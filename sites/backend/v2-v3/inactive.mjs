@@ -10,8 +10,9 @@ const lastLoginInDays = (user) => {
 
 const usersToNotImport = () =>
   users.filter((user) => user.status !== 'active' || lastLoginInDays(user) >= 370)
-const usersToImport = () =>
-  users.filter((user) => user.status === 'active' && lastLoginInDays(user) < 370)
+// Commented about linter
+//const usersToImport = () =>
+//  users.filter((user) => user.status === 'active' && lastLoginInDays(user) < 370)
 
 console.log(
   JSON.stringify(

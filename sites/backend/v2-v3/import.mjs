@@ -21,6 +21,8 @@ const splitArray = (split, batchSize) =>
     return result
   }, [])
 
+/*
+ * Commented out because linter
 const importSubscribers = async () => {
   console.log('Importing subscribers')
   const count = subscribers.length
@@ -42,7 +44,7 @@ const importSubscribers = async () => {
     console.log(`${total}/${count}`)
   }
 }
-
+*/
 const lastLoginInDays = (user) => {
   const now = new Date()
   const then = new Date(user.time.login)
@@ -52,8 +54,9 @@ const lastLoginInDays = (user) => {
 
 const usersToImport = () =>
   users.filter((user) => user.status === 'active' && lastLoginInDays(user) < 370)
-const usersToNotImport = () =>
-  users.filter((user) => user.status !== 'active' && lastLoginInDays(user) >= 370)
+// Commented out for linter
+// const usersToNotImport = () =>
+//   users.filter((user) => user.status !== 'active' && lastLoginInDays(user) >= 370)
 
 const importUsers = async () => {
   console.log('Processing users')

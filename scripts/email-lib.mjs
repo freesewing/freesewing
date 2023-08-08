@@ -2,9 +2,6 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 import { SESv2Client, SendEmailCommand } from '@aws-sdk/client-sesv2'
 
-// Current working directory
-const cwd = path.dirname(fileURLToPath(import.meta.url))
-
 export const send = async ({
   to = ['joost@joost.at'],
   bcc = [],

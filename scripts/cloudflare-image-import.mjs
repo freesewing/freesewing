@@ -69,9 +69,8 @@ const uploadToCloudflare = async (id, url) => {
   const form = new FormData()
   form.append('id', id)
   form.append('url', url)
-  let result
   try {
-    result = await axios.post(
+    await axios.post(
       'https://api.cloudflare.com/client/v4/accounts/edd96e8b19d1be5946c5f7983365bda4/images/v1',
       form,
       { headers }
@@ -80,7 +79,6 @@ const uploadToCloudflare = async (id, url) => {
     console.log(err.response.data)
   }
 
-  // Handle result here
   return true
 }
 

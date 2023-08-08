@@ -23,7 +23,7 @@ const namespaces = nsMerge(pageNs, 'newsletter')
  */
 const NewsletterPage = ({ page, id, ehash }) => {
   const { t } = useTranslation(namespaces)
-  const { loading, setLoading } = useContext(LoadingContext)
+  const { setLoading } = useContext(LoadingContext)
   const backend = useBackend()
 
   const [confirmed, setConfirmed] = useState(false)

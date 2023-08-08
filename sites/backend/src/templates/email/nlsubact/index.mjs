@@ -1,4 +1,4 @@
-import { buttonRow, newsletterClosingRow, headingRow, lead1Row, wrap } from '../shared/blocks.mjs'
+import { newsletterClosingRow, headingRow, lead1Row, wrap } from '../shared/blocks.mjs'
 // Translations
 import en from './en.json' assert { type: 'json' }
 import de from './de.json' assert { type: 'json' }

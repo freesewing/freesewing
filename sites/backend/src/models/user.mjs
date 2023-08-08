@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken'
 import { log } from '../utils/log.mjs'
 import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
-import { storeImage, replaceImage } from '../utils/cloudflare-images.mjs'
+import { replaceImage } from '../utils/cloudflare-images.mjs'
 import { clean, asJson, i18nUrl } from '../utils/index.mjs'
 import { ConfirmationModel } from './confirmation.mjs'
 import { SetModel } from './set.mjs'
@@ -867,7 +867,7 @@ const migrateUser = (v2) => {
     initial,
     imperial: v2.units === 'imperial',
     language: v2.settings.language,
-    lastSignIn: v2.time.login,
+    lastSignIn: v2.time?.login ? v2.time.login : null,
     lusername: v2.username.toLowerCase(),
     mfaEnabled: false,
     newsletter: false,

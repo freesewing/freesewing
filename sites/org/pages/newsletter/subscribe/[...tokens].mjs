@@ -23,14 +23,14 @@ const namespaces = nsMerge(pageNs, 'newsletter')
  */
 const NewsletterPage = ({ page, id, ehash }) => {
   const { t } = useTranslation(namespaces)
-  const { loading, setLoading } = useContext(LoadingContext)
+  const { setLoading } = useContext(LoadingContext)
   const backend = useBackend()
 
   const [confirmed, setConfirmed] = useState(false)
 
   const handler = async () => {
     setLoading(true)
-    const result = await backend.confirmNewsletterSubscribe({ id, ehash })
+    await backend.confirmNewsletterSubscribe({ id, ehash })
     setLoading(false)
     setConfirmed(true)
   }

@@ -10,7 +10,7 @@ const runChecks = (req) => {
   if (req.body.import_token !== process.env.IMPORT_TOKEN) {
     return [401, { result: 'error', error: 'accessDenied' }]
   }
-  if (req.body.import_token !== process.env.IMPORT_TOKEN) {
+  if (!Array.isArray(req.body.list)) {
     return [400, { result: 'error', error: 'listMissing' }]
   }
 
