@@ -2,7 +2,6 @@
 maker: "ferdi"
 caption: "An oil skin Florent cap"
 date: "2021-11-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5cc7c9e8af3c7716d2df9ac7fce9a44f6c19034f-1115x800.jpg"
 intro: "This refined Florent cap is by Ferdi, who said:"
 title: "Florent cap by Ferdi"
 designs: ["florent"]
