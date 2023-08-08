@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Je suppose que c'est à cela que ressemble la réalité augmentée ?"
 date: "2018-09-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b471275001689bd4819d6d95aabc8134788dc612-1694x1129.jpg"
 intro: "Il y a quelque temps, j'ai eu besoin d'un nouveau maillot de bain. J'ai donc dessiné un modèle et j'en ai fabriqué :"
 title: "Annonce Shin, un modèle de maillot de bain"
 ---
