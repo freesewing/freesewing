@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Deze update bereikt je vanuit Bangkok"
 date: "2018-03-21"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/34ed654dcda9004e7c249b90256ad197469cc87e-1920x1277.webp"
 intro: "We hebben zojuist de knop voor core 1.8.0 ingedrukt. Die hobbel in het kleine getal is meestal omdat we een nieuw patroon hebben, maar in dit geval zijn er twee redenen:"
 title: "FreeSewing core 1.8: het Jaeger-jasje komt erbij en de 'across back'-afmeting verdwijnt"
 ---
