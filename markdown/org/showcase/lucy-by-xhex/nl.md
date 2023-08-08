@@ -2,7 +2,6 @@
 maker: "Xhex"
 caption: "Hoe beter je kijkt, hoe koeler deze zak wordt"
 date: "2023-04-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/80b67633d4d42db34a8fa4a2c8550f45e3c64a40-1153x863.png"
 intro: "Kijk eens naar deze Lucy pocket die Xhex heeft gemaakt? Het is ongelooflijk!"
 title: "Geborduurde Lucy Pocket van Xhex"
 designs:
