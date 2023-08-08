@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Не можу повірити, як чудово виглядає цей Саймон!"
 date: "2023-05-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fc008d5c7e66aa5674115d930e281fbd24489091-1920x1281.jpg"
 intro: "Ми були вражені, коли користувач FreeSewing опублікував ці казкові фотографії свого нового Саймона у випуску GitHub."
 title: "Синій геометричний Симон"
 designs:
