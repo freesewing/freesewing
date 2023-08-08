@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Ik kan er niet over uit hoe geweldig deze Simon eruitziet!"
 date: "2023-05-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fc008d5c7e66aa5674115d930e281fbd24489091-1920x1281.jpg"
 intro: "We waren gevloerd toen een gebruiker van FreeSewing deze fantastische foto's van zijn nieuwe Simon in een GitHub issue achterliet."
 title: "Een blauwe geometrische Simon"
 designs:
