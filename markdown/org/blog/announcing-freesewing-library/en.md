@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "I don't drink, but this seemed appropriate for a celebration post ¯\\_(ツ)_/¯"
 date: "2018-08-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a6b5a3918ad412f7fb434413fafcc82107109d87-1920x1276.jpg"
 intro: "Celebrating one year of freesewing.org: Announcing the freesewing library"
 title: "Celebrating one year of freesewing.org: Announcing the freesewing library"
 ---
