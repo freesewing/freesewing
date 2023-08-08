@@ -2,7 +2,6 @@
 maker: "brazenedMinstrel"
 caption: "Soft purple Waralees with belt accessories"
 date: "2022-08-02"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a84d68b97703ef21571520ca6fa8b4b6d3b0df53-1512x2016.jpg"
 intro: "brazenedMinstrel has made two lovely Freesewing designs recently: the first is this pair of purple Waralees in soft fabric accessorized with a black fabric belt found on the street and a colourful one bought on a flea market."
 title: "Waralees and Wahid by brazenedMinstrel"
 designs: ["waralee","wahid"]
