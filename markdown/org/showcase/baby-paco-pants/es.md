@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Los pantalones Paco más pequeños hasta la fecha"
 date: "2023-05-03"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/449c7034767dc8d1ca040c17c65c6c4a7043c5a6-3024x4032.jpg"
 intro: "¡Estos pantalones de Paco están siendo modelados por un bebé de 6 meses!"
 title: "Pantalón Paco bebé"
 designs:
