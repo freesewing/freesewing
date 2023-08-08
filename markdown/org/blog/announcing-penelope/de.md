@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Die Schnittmusterdarstellung für Penelope"
 date: "2018-06-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/59646d7171bb8b18df952a1c9547cd212451de79-1920x1080.jpg"
 intro: "Ich freue mich sehr, die sofortige Verfügbarkeit des Penelope Pencil Skirt bekannt zu geben, der seit heute in der Beta-Version erhältlich ist."
 title: "Ankündigung des Penelope Bleistiftrockes; Und unsere Damenmode-Roadmap"
 ---
