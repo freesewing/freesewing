@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Dit is hoe augmented reality eruitziet ... denk ik?"
 date: "2018-09-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b471275001689bd4819d6d95aabc8134788dc612-1694x1129.jpg"
 intro: "Een tijdje geleden stelde ik vast dat ik een nieuwe zwembroek nodig had. Dus heb ik een patroon geschetst en er eentje gemaakt:"
 title: "Verwelkom Shin, een zwembroekpatroon"
 ---
