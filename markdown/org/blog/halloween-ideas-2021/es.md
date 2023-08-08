@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "¡Dibujo de @racerxmachina, Sandy!"
 date: "2021-10-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/37c6f1c78ac0bfb539ea2b11ff32f104c34a0d6d-1666x1111.jpg"
 intro: "Puede que ya tengas una idea de lo que quieres hacer para Halloween. O tal vez no tengas ni idea. En cualquier caso, aquí tienes algo de inspiración para ponerte en marcha."
 title: "Pon en marcha tu Halloween con estas inspiradoras ideas de disfraces"
 ---
