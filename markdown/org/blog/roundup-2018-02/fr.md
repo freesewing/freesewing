@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ton nouveau fond d'écran de connexion pour le mois de mars"
 date: "2018-02-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8e0079e2521a2bf71545d736a2549180902c0d50-1980x1311.jpg"
 intro: "Voici ton récapitulatif mensuel de l'actualité freesewing des quatre dernières semaines, et un aperçu de ce qui t'attend le mois prochain."
 title: "Tour d'horizon mensuel - février 2018 : Core 1.7.0 avec les améliorations de Sven, Carlton et Carlita. Plus GDRP, vim et Jaeger"
 ---
