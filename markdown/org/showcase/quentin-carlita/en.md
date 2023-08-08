@@ -2,7 +2,6 @@
 maker: "quentin"
 caption: "Quentin's Carlita coat"
 date: "2021-09-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b60941609d3b81d53fbbcc4e9657acda7ee0d909-640x631.jpg"
 intro: "The talented Quentin made this sleek and stylish Carlita coat."
 title: "Quentin's Carlita coat"
 designs: ["carlita"]

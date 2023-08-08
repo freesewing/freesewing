@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "Anne's husband Sigvard is a trainer at <a target='_BLANK' href='http://fighter.org/'>the local kick boxing club</a>. Hence the name fighter hoodie"
 date: "2017-11-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8f0b0ca919900145250b0af08401775198623eda-1001x1500.jpg"
 intro: "The fighter hoodie: Hugo with a zip"
 title: "The fighter hoodie: Hugo with a zip"
 designs: ["hugo"]

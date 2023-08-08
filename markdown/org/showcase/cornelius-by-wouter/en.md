@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "Cornelius cycling breeches by Wouter, feat. cyclist's calves"
 date: "2021-03-17"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/abd61dc5abc173a4e858d03b5f1af80fed297957-571x613.jpg"
 intro: "Wouter created the Cornelius cycling breeches pattern based on the Keystone systems. Read more on the FreeSewing blog ."
 title: "Cornelius by Wouter"
 designs: ["cornelius"]

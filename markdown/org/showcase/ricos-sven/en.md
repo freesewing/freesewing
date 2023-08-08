@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "A top-notch Sven, but just wait..."
 date: "2020-11-03"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f208ab781d22f74c91cc37a31249fd88a94a2aab-2000x2198.jpg"
 intro: "There's more! Check out the sleeves and stripes on this Sven!"
 title: "Sven by Ricos"
 designs: ["sven"]

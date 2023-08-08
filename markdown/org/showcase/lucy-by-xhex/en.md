@@ -2,7 +2,6 @@
 maker: "Xhex"
 caption: "The closer you look, the cooler this pocket gets"
 date: "2023-04-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/80b67633d4d42db34a8fa4a2c8550f45e3c64a40-1153x863.png"
 intro: "Would you look at this Lucy pocket that Xhex made? It's incredible!"
 title: "Embroidered Lucy Pocket by Xhex"
 designs: ["lucy"]

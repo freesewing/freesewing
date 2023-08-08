@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "The freesewing logo"
 date: "2017-03-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4e1f5426ee6578ef31d9c18a1de9b4beef15836b-2000x1125.jpg"
 intro: "I am are proud to announce freesewing core v1.0.0 and the accompanying documentation that describes the freesewing project in detail."
 title: "Announcing freesewing, an open source platform for made-to-measure sewing patterns"
 ---

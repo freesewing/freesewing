@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "A Penelope modeled with a baby bump"
 date: "2022-04-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/82bb1d8f07a65881fbd63e377d62314db12e212b-581x677.jpg"
 intro: "The maker made the following adjustments to adapt Penelope to work with knit fabric and her pregnant belly:"
 title: "Pregnant-lady Penelope"
 designs: ["penelope"]

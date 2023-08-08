@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "Ursula in black cotton spandex fabric"
 date: "2021-09-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/26de214a4587d5123deaf4111b8e36714b8a7479-4032x3024.jpg"
 intro: "This Ursula was made made in a cotton spandex knit (94% Cotton, 6% Spandex) with burgundy picot elastic."
 title: "Lower rise Ursula"
 designs: ["ursula"]

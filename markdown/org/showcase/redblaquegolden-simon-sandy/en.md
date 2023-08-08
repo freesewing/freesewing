@@ -2,7 +2,6 @@
 maker: "RedBlaqueGolden"
 caption: "RedBlaqueGolden's second version of Simon with lace"
 date: "2021-09-19"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/987fdefa57c5259ca090b0b120a5e5218eb8ef67-1614x1526.jpg"
 intro: "Where to start with this fantastic outfit? A FreeSewing user said it best:"
 title: "RedBlaqueGolden's vintage high fashion outfit featuring Simon and Sandy"
 designs: ["simon","sandy"]

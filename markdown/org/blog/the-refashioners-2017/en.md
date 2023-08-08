@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "They said I was crazy to make a zebra jacket, so I made it anyway. And it sank into the swamp."
 date: "2017-09-04"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/35dda6f4c8ec6f2689e2741cc49cf178e4a39474-3300x2200.jpg"
 intro: "For the uninitiated, the refashioners is a yearly event/competition hosted by the charming (and very persuasive) Portia Lawrie ."
 title: "The Refashioners 2017 - Now with a Blake Blazer preview and 100% more zebra"
 ---

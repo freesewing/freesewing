@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "The sewist was happy with her results"
 date: "2022-06-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/433aa6299949881aa53c46f8778661ecf25ac893-1265x1686.jpg"
 intro: "A FreeSewing maker shared this version of the Noble body block."
 title: "A casual test of Noble"
 designs: ["noble"]

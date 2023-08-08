@@ -2,7 +2,6 @@
 maker: "Gaëlle"
 caption: "Gaëlle's friend in their new Hugo hoodie"
 date: "2023-02-15"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7c510d7ee01cef0b2b4df46e02d0fc052ade3579-1694x3323.jpg"
 intro: "Gaëlle made this Hugo covered in cheerful little ...well I'm not sure what to call these squiggly little monsters, but they're clearly great. It's for a friend, and we would be delighted to receive something this fabulous.  Check out that awesome coordinated striped ribbing."
 title: "Hugo by Gaëlle"
 designs: ["hugo"]
