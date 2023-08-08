@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Un exemple de Hortensia fait par le designer"
 date: "2021-02-13"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/01f416518b5bf8fb75dcc8ae3ab2691d5532dd65-2000x1500.jpg"
 intro: "Je suis heureuse de t'annoncer la disponibilité immédiate de notre dernier patron FreeSewing : le sac à main Hortensia ."
 title: "Dites bonjour à notre dernier modèle : le sac à main Hortensia"
 ---
