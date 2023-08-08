@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ton arrière-plan de connexion pour le mois de décembre"
 date: "30-11-2018"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ebdb5fce7cd9b56f2f9d51d05dbda187195e30b6-1920x1280.jpg"
 intro: "Tour d'horizon mensuel - novembre 2018 : De nouvelles vitrines et une (fausse) alarme de sécurité."
 title: "Tour d'horizon mensuel - novembre 2018 : De nouvelles vitrines et une (fausse) alarme de sécurité."
 ---
