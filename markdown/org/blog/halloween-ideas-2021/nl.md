@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Tekening van @racerxmachina, Sandy!"
 date: "2021-10-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/37c6f1c78ac0bfb539ea2b11ff32f104c34a0d6d-1666x1111.jpg"
 intro: "Misschien heb je al een idee wat je wilt maken voor Halloween. Of misschien heb je geen idee. Hoe dan ook, hier is wat inspiratie om je op weg te helpen."
 title: "Breng Halloween op gang met deze inspirerende kostuumideeën"
 ---
