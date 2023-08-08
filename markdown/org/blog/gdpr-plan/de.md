@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Dieses Bild ist wahrscheinlich das Einzige in der Post, was Sie diagonal überfliegen können"
 date: "2018-02-14"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/39f3d1e7320510b2dd12cc1bc2e58008263889f3-1920x1280.webp"
 intro: "Die Datenschutzgrundverordnung der Europäischen Union: Unser Schlachtplan."
 title: "Die Datenschutzgrundverordnung der Europäischen Union: Unser Schlachtplan."
 ---
