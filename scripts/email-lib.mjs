@@ -1,5 +1,3 @@
-import path from 'path'
-import { fileURLToPath } from 'url'
 import { SESv2Client, SendEmailCommand } from '@aws-sdk/client-sesv2'
 
 export const send = async ({
@@ -39,7 +37,7 @@ export const send = async ({
     },
     Destination: {
       ToAddresses: to,
-      BccAddresses: to,
+      BccAddresses: bcc,
     },
     FromEmailAddress: us,
   })
