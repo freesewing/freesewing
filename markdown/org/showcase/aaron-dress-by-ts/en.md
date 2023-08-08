@@ -2,7 +2,6 @@
 maker: "TangerineShark"
 caption: "TangerineShark in a modified Aaron dress"
 date: "2023-01-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/60bf0ea6d52c09618ecd7a59293faaf48da014b0-3024x4032.jpg"
 intro: "Hey! FreeSewing user TangerineShark here! I modified this Aaron A-shirt by lengthening it into a dress."
 title: "Aaron modified to a dress"
 designs: ["aaron"]
