@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Quentin rodeado de nuestros futuros señores robots."
 date: "2017-12-06"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ee5c11e3b29fe788dae470ab0e20396d806c4d1b-2000x1333.jpg"
 intro: "El patrón Florent Flat Cap ya está disponible en versión beta. Eso es otro regalo solucionado."
 title: "El patrón Florent Flat Cap ya está disponible en versión beta. Eso es otro regalo solucionado."
 ---
