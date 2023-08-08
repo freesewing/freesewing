@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Paco op het brein achter de operatie"
 date: "2020-08-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1bc82d4abb50ea1b7bda32dd64521e9ecfdd8467-2048x1536.jpg"
 intro: "Hier is Paco: Ons nieuwe unisex patroon voor een stijlvolle zomerbroek"
 title: "Hier is Paco: Ons nieuwe unisex patroon voor een stijlvolle zomerbroek"
 ---
