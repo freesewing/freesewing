@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Відтепер працюємо 24/7"
 date: "2017-08-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/444b63db2120d50eb52004b2017c992624bbb66e-2000x1333.jpg"
 intro: "Freesewing.org відкритий для бізнесу. Тобто бізнес з роздачі безкоштовних викрійок для шиття"
 title: "Freesewing.org відкритий для бізнесу. Тобто бізнес з роздачі безкоштовних викрійок для шиття"
 ---
