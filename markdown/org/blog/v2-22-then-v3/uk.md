@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ми рухаємося далі"
 date: "2022-08-23"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/6a5739e3f4ab7694fdd0d1f46c9ec7ecd4c6431b-1920x1280.jpg"
 intro: "Ми випустили версію 2.22 FreeSewing. Як завжди, невелика зміна версії вказує на новий дизайн, і цього разу це дизайн Octoplushy від Wouter."
 title: "Вийшла версія 2.22 FreeSewing, яка стане останнім незначним оновленням перед версією 3"
 ---
