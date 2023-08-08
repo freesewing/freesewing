@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "Pantalón de ciclista Cornelius de Wouter, feat. pantorrillas de ciclista"
 date: "2021-03-17"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/abd61dc5abc173a4e858d03b5f1af80fed297957-571x613.jpg"
 intro: "Wouter creó el patrón de pantalones de ciclismo Cornelius basándose en los sistemas Keystone. Más información en el blog FreeSewing ."
 title: "Cornelius por Wouter"
 designs:
