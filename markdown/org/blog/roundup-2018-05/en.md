@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Your login background for June"
 date: "2018-05-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/63d370c4ad7447d762f2ed053279bc3f11c7583d-1920x1080.jpg"
 intro: "This is your monthly roundup of the freesewing news of the last four weeks, and a look at what lies ahead in the next month."
 title: "Monthly roundup - May 2018: The post-GDPR era is upon us"
 ---
