@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Улюблений світшот Sven із зображенням видри з французької махри"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b851b4ceda3714fed1cf4b6eb3d624724803c3ba-864x1152.jpg"
 intro: "Світшот Sven, по-видровому чудовий світшот Sven"
 title: "Світшот Sven, по-видровому чудовий світшот Sven"
 designs:
