@@ -2,7 +2,6 @@
 maker: "SebastianSew"
 caption: "Paco pants for outdoor work with ankle elastic"
 date: "2021-09-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/cfc2c203229bc437f737bf815bd8d65deb9d2c8c-868x1156.jpg"
 intro: "This is the first of two super rad pairs of Paco pants by SebastianSew! These ones have ankle elastic. With back, front and lateral pockets. The fabric is all-cotton denim, medium weight fabric."
 title: "SebastianSew's first-rate Paco pants, with elastic"
 designs: ["paco"]
