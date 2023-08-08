@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Une photo de <a href='https://unsplash.com/@onevagabond'>Paulo Silva</a> montrant un Times Square vide à New York pendant la pandémie COVID"
 date: "2021-01-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ffacb5c6384f250ad7cd3cb50b5ed4fdeff33ae6-1920x1280.jpg"
 intro: "Ne sommes-nous pas tous heureux que 2020 soit finie ?"
 title: "L'année 2020 était quelque chose de tout à fait normal"
 ---
