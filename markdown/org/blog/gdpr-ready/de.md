@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Die wichtigste Änderung ist natürlich, dass wir von Lila zu Schwarz als unsere Signaturfarbe gewechselt haben."
 date: "2018-05-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e67a17e37a70154b3bb250ea1cb60eff2baddb55-1920x1285.jpg"
 intro: "Willkommen auf unserer neuen Website. Es ist GDPR-konform, spricht 3 Sprachen und riecht nach nasser Farbe"
 title: "Willkommen auf unserer neuen Website. Es ist GDPR-konform, spricht 3 Sprachen und riecht nach nasser Farbe"
 ---
