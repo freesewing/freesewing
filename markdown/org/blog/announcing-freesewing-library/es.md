@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "No bebo, pero esto me pareció apropiado para un post de celebración ¯\_(ツ)_/¯"
 date: "2018-08-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a6b5a3918ad412f7fb434413fafcc82107109d87-1920x1276.jpg"
 intro: "Celebrando un año de freesewing.org: Anunciamos la biblioteca freesewing"
 title: "Celebrando un año de freesewing.org: Anunciamos la biblioteca freesewing"
 ---
