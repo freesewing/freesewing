@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Dein neuer Login-Hintergrund für den Monat Dezember"
 date: "2017-11-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c9c5c5e10d2ed6e9f2935b047afa76c1ddd7c834-2000x1333.jpg"
 intro: "Dies ist dein monatlicher Überblick über die Freesewing-Nachrichten der letzten vier Wochen und ein Ausblick auf das, was im nächsten Monat ansteht."
 title: "Monatliche Zusammenfassung - November 2017: Benjamin, Onboarding, Showcases und unser On-Demand-Fliesenleger"
 ---
