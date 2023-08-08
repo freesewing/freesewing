@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "¿Soy yo o esto sobrecarga seriamente los sensores de la monada?"
 date: "2018-02-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0d0673d758bb9ec6f60c01db5dba00a0d3fea7ee-1080x1080.jpg"
 intro: "Camisas Simón a juego para estas dos monadas"
 title: "Camisas Simón a juego para estas dos monadas"
 designs:
