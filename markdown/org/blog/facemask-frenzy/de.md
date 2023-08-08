@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Dr. Dragnea vom Universitätskrankenhaus Antwerpen trägt eine Gesichtsmaske aus Florenz"
 date: "19.03.2020"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b811b79114f15aa192a1962b95083e6c55d79402-1532x1123.jpg"
 intro: "Aufruf an alle Macher: Hier ist ein 1-seitiges PDF-Gesichtsmasken-Muster; Jetzt gehen Sie und machen Sie welche und helfen Sie, dieses Ding zu schlagen"
 title: "Aufruf an alle Macher: Hier ist ein 1-seitiges PDF-Gesichtsmasken-Muster; Jetzt gehen Sie und machen Sie welche und helfen Sie, dieses Ding zu schlagen"
 ---
