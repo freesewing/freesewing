@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "¿Cerrarías un carril porque un conductor pone la música demasiado alta?"
 date: "2017-09-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/923cd5587c873d2662df4a804f75f8f32b5673ca-1920x1281.jpg"
 intro: "Gracias por nada Microsoft; el correo electrónico no debería ser tan difícil"
 title: "Gracias por nada Microsoft; el correo electrónico no debería ser tan difícil"
 ---
