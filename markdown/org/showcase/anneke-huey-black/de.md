@@ -2,7 +2,6 @@
 maker: "Anneke Caramin"
 caption: "Anneke mit ihrem neuesten Huey, diesmal in Schwarz."
 date: "29.10.2020"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4e6d5a2fdf43b6904230f7ef7594bbcd41dd8759-640x640.jpg"
 intro: "Ein schwarzer Huey von Anneke"
 title: "Ein schwarzer Huey von Anneke"
 designs:
