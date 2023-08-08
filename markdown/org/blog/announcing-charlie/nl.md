@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Foto door Flo Dahm van Pexels"
 date: "2021-04-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9e1cca6b6de79fadbd5201bad3b9b71375a53464-1920x1442.jpg"
 intro: "We hebben zojuist FreeSewing v2.15 gepubliceerd en er zit een nieuw patroon bij: Het Charlie Chinos broekpatroon ."
 title: "Charlie Chinos: wie wil er een nieuwe broek?"
 ---
