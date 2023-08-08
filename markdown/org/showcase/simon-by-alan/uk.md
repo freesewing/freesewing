@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Сорочка з короткими рукавами Simon"
 date: "2021-06-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ca7321e1085eb2c81e8c3affa89d14863bc4584a-770x1048.jpg"
 intro: "Алан занурився в процес пошиття цієї сорочки Саймона, і результат виявився вражаючим!"
 title: "Сорочка Алана з короткими рукавами Simon"
 designs:
