@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Бульбазаври сильні та милі"
 date: "2017-11-19"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d7242993d4c611f4a5d48ba63b1b9a3139a1c6cd-2000x1333.jpg"
 intro: ""
 title: "Бульбазавр Huey Hoodie Hack - хакерський хакерський хід"
 designs:
