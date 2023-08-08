@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Tu nuevo fondo de inicio de sesión para el mes de febrero"
 date: "2018-01-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/6fbc797ad0b3d50a8337bd2cb8401f04f63bffdd-2000x1125.jpg"
 intro: "Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene."
 title: "Resumen mensual - Enero de 2018: Inkscape DPI, conocimiento de la versión, Bail y Carlita"
 ---
