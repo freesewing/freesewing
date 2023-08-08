@@ -2,7 +2,6 @@
 maker: "Natalia Sayang"
 caption: "Sais-tu que le \"A\" de A-shirt fait référence à la forme triangulaire du vêtement ?"
 date: "2021-07-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/60945201919c87d88076815366d03f42beae4235-600x800.jpg"
 intro: "Ce débardeur Aaron a été fabriqué par Nat, qui l'a partagé :"
 title: "Aaron floral"
 designs:
