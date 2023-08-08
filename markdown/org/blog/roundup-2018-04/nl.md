@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Je inlogachtergrond voor mei"
 date: "2018-04-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/992689c621b6b83a80706620ae5cd92262dcf4bd-1920x1273.jpg"
 intro: "Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt."
 title: "Maandelijkse roundup - april 2018: Rust voor de storm"
 ---
