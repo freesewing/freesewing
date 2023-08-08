@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Tu fondo de conexión para abril"
 date: "2018-03-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/637be1530f8be9387a2be4feac90b92a145b1ddd-1920x1280.jpg"
 intro: "Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene."
 title: "Resumen mensual - Marzo 2018: ¿Hablas francés? ¿Hablas alemán? ¿Hablas español? 你會說中文嗎？"
 ---
