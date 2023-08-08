@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Este comunicado llega desde Bangkok"
 date: "2018-03-21"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/34ed654dcda9004e7c249b90256ad197469cc87e-1920x1277.webp"
 intro: "Acabamos de pulsar el botón del núcleo 1.8.0. Ese bache en el número menor suele deberse a que tenemos un nuevo patrón, pero en este caso, hay dos razones:"
 title: "Núcleo libre 1.8: la chaqueta Jaeger está dentro, la medida transversal a la espalda está fuera"
 ---
