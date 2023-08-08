@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Eine stellare erste Version von Simon"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d7f4deae2968a63adf7e2f440ac4808a7b804d84-3024x4032.jpg"
 intro: "Johnnygaijin hat sich bereits als ziemlich mutig erwiesen - dies war ihr erstes Nähprojekt! Es ist toll geworden."
 title: "Johnnygaijins erstes richtiges Nähprojekt, das Simon-Shirt"
 designs:
