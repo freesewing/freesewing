@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Un Hi rose et son ancêtre BLÅHAJ"
 date: "2022-06-27"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5b5d9171aca75dd339bf8b7359b257769aa61936-4032x3024.jpg"
 intro: "FreeSewing 2.21 ajoute les motifs Bob, Hi, Lucy, Noble et Unice."
 title: "FreeSewing 2.21 ajoute les motifs Bob, Hi, Lucy, Noble et Unice."
 ---
