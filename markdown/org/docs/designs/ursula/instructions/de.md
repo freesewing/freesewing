@@ -2,7 +2,7 @@
 title: "Ursula Unterhosen: Anleitung zum Nähen"
 ---
 
-### Schritt 1: Nähe die Vorderseite an das erste Zwickel-Stück
+### Step 1: Pin/baste the front to the first gusset piece
 
 Platziere eines der Zwickelstücke auf das Vorderteil, _gute Seiten zusammen_, so dass die Schritt-Nähte zueinander ausgerichtet sind. Stecke oder hefte an der Nahtzugabe.
 
@@ -14,7 +14,7 @@ Platziere eines der Zwickelstücke auf das Vorderteil, _gute Seiten zusammen_, s
 
 ![Öffne flach](step02.png)
 
-### Schritt 3: Nähe die Rückseite an das erste Zwickel-Stück
+### Step 3: Pin/baste the back to the first gusset piece
 
 Lege die Rückseite an den Zwickel, gute Seiten zusammen. Stecke oder hefte an der Nahtzugabe.
 

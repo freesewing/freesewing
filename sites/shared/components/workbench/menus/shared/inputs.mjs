@@ -111,16 +111,15 @@ export const NumberInput = ({
 
   useEffect(() => {
     if (typeof onMount === 'function') {
-      console.log('mount', valid.current)
-      onMount(valid)
+      onMount(valid.current)
     }
-  }, [onMount])
+  }, [onMount, valid])
 
   return (
     <input
       type="text"
       inputMode="number"
-      className={`input ${className || 'input-sm input-bordered grow text-base-content'}
+      className={`input input-bordered ${className || 'input-sm grow text-base-content'}
         ${valid.current === false && 'input-error'}
         ${valid.current && 'input-success'}
       `}
