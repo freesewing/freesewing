@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Bild von <a href='https://pixabay.com/en/users/herbert2512-2929941/' target='_BLANK' rel='nofollow'>Herbert</a>"
 date: "2017-06-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8ccbb2d5b50eb0917c6bd2befb2b098b6d667ba9-1920x1280.jpg"
 intro: "Das World Wide Web untergräbt immer mehr Ihre Privatsphäre. Facebook, Google und eine ganze Armada an Werbenetzwerken haben ihre Browsertabs im Blick. Sie verfolgen dich im Internet und behalten ein Auge auf die von dir besuchten Seiten, damit sie mehr Informationen über dich sammeln und diese an Werbekunden verkaufen können."
 title: "Die Entscheidungen, die ich getroffen habe, um Ihre Privatsphäre zu schützen. Oder, warum Sie keine Cookies erhalten werden."
 ---
