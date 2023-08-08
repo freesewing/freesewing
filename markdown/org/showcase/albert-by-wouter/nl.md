@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "De klant is er erg blij mee!"
 date: "2020-10-08"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ebef91daa8acf992f814415e610a655a03278186-1200x1600.jpg"
 intro: "De eerste versie van albert, gemaakt voor zijn dochter, door Wouter.vdub"
 title: "De eerste versie van albert, gemaakt voor zijn dochter, door Wouter.vdub"
 designs:
