@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Пам'ятаєте, коли нам дозволили виходити на вулицю?"
 date: "2021-01-17"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0faad5ded9176b4cf9e58cf5b05a939ba7670363-1920x1272.jpg"
 intro: "Ліф-блок Bella для жіночого одягу"
 title: "Ліф-блок Bella для жіночого одягу"
 ---
