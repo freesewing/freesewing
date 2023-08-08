@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Wenn es Ihnen gefällt, lassen Sie es uns wissen"
 date: "2017-11-14"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b04db622ddf3bff6e2d66a5305903a0e96edd58-2000x1333.jpg"
 intro: "Unsere Familie an freien und opensource Schnittmustern ist wieder gewachsen, und das neueste Mitglied der Familie ist... Benjamin ."
 title: "Das Schnittmuster für die Fliege Benjamin ist jetzt in der Beta-Version erhältlich. Und ich musste nicht einmal etwas tun."
 ---
