@@ -2,7 +2,6 @@
 maker: "RedBlaqueGolden"
 caption: "RedBlaqueGoldens zweite Version von Simon mit Spitze"
 date: "19.09.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/987fdefa57c5259ca090b0b120a5e5218eb8ef67-1614x1526.jpg"
 intro: "Wo soll man bei diesem fantastischen Outfit anfangen? Ein FreeSewing-Nutzer hat es am besten gesagt:"
 title: "RedBlaqueGoldens Vintage-High-Fashion-Outfit mit Simon und Sandy"
 designs:
