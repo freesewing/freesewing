@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Une première version exceptionnelle de Simon"
 date: "01-22-2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d7f4deae2968a63adf7e2f440ac4808a7b804d84-3024x4032.jpg"
 intro: "Johnnygaijin s'est déjà montré très courageux - c'était leur premier projet de couture ! Tout s'est très bien passé."
 title: "Le premier vrai projet de couture de Johnnygaijin, la chemise Simon"
 designs:
