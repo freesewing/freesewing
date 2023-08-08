@@ -1,5 +1,5 @@
 import { log } from '../utils/log.mjs'
-import { setSetAvatar, downloadImage } from '../utils/sanity.mjs'
+import { storeImage } from '../utils/cloudflare-images.mjs'
 import yaml from 'js-yaml'
 
 export function SetModel(tools) {
@@ -32,7 +32,7 @@ SetModel.prototype.guardedCreate = async function ({ body, user }) {
   else data.measies = {}
   data.imperial = body.imperial === true ? true : false
   data.userId = user.uid
-  // Set this one initially as we need the ID to create a custom img via Sanity
+  // Set this one initially as we need the ID to store the image on cloudflare
   data.img = this.config.avatars.set
 
   // Create record
@@ -40,10 +40,18 @@ SetModel.prototype.guardedCreate = async function ({ body, user }) {
 
   // Update img? (now that we have the ID)
   const img =
-    this.config.use.sanity &&
+    this.config.use.cloudflareImages &&
     typeof body.img === 'string' &&
-    (!body.test || (body.test && this.config.use.tests?.sanity))
-      ? await setSetAvatar(this.record.id, body.img, this.clear.name)
+    (!body.test || (body.test && this.config.use.tests?.cloudflareImages))
+      ? await storeImage({
+          id: `set-${this.record.id}`,
+          metadata: {
+            user: user.uid,
+            name: this.clear.name,
+          },
+          b64: body.img,
+          requireSignedURLs: true,
+        })
       : false
 
   if (img) await this.unguardedUpdate(this.cloak({ img: img.url }))
@@ -264,7 +272,15 @@ SetModel.prototype.guardedUpdate = async function ({ params, body, user }) {
 
   // Image (img)
   if (typeof body.img === 'string') {
-    const img = await setSetAvatar(params.id, body.img, data.name || this.clear.name)
+    const img = await replaceImage({
+      id: `set-${this.record.id}`,
+      metadata: {
+        user: user.uid,
+        name: this.clear.name,
+      },
+      b64: body.img,
+      notPublic: true,
+    })
     data.img = img.url
   }
 

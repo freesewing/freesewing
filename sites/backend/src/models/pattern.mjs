@@ -1,6 +1,6 @@
 import { log } from '../utils/log.mjs'
 import { capitalize } from '../utils/index.mjs'
-import { setPatternAvatar } from '../utils/sanity.mjs'
+import { storeImage } from '../utils/cloudflare-images.mjs'
 import yaml from 'js-yaml'
 import { SetModel } from './set.mjs'
 
@@ -75,7 +75,7 @@ PatternModel.prototype.guardedCreate = async function ({ body, user }) {
   // Public
   if (body.public === true) data.public = true
   data.userId = user.uid
-  // Set this one initially as we need the ID to create a custom img via Sanity
+  // Set this one initially as we need the ID to store an image on cloudflare
   data.img = this.config.avatars.pattern
 
   // Create record
@@ -83,10 +83,14 @@ PatternModel.prototype.guardedCreate = async function ({ body, user }) {
 
   // Update img? (now that we have the ID)
   const img =
-    this.config.use.sanity &&
+    this.config.use.cloudflareImages &&
     typeof body.img === 'string' &&
-    (!body.test || (body.test && this.config.use.tests?.sanity))
-      ? await setPatternAvatar(this.record.id, body.img)
+    (!body.test || (body.test && this.config.use.tests?.cloudflareImages))
+      ? await storeImage({
+          id: `pattern-${this.record.id}`,
+          metadata: { user: user.uid },
+          b64: body.img,
+        })
       : false
 
   if (img) await this.unguardedUpdate(this.cloak({ img: img.url }))
@@ -300,7 +304,11 @@ PatternModel.prototype.guardedUpdate = async function ({ params, body, user }) {
   if (typeof body.settings === 'object') data.settings = body.settings
   // Image (img)
   if (typeof body.img === 'string') {
-    const img = await setPatternAvatar(params.id, body.img)
+    const img = await storeImage({
+      id: `pattern-${this.record.id}`,
+      metadata: { user: this.user.uid },
+      b64: body.img,
+    })
     data.img = img.url
   }
 

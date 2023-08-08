@@ -124,6 +124,4 @@ export const setup = async () => {
   return { chai, config, expect, store }
 }
 
-export const teardown = async function (/*store*/) {
-  //console.log(store)
-}
+export const teardown = async function (/*store*/) {}

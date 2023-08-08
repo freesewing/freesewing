@@ -188,8 +188,11 @@ export const accountTests = async (chai, config, expect, store) => {
             done()
           })
       })
-
-      if (store.config.tests.includeSanity) {
+      /*
+       * Running this twice immeadiatly (jwt and key) will break because cloudflare api
+       * will not be ready yet
+       */
+      if (store.config.use.tests.cloudflareImages && auth === 'jwt') {
         it(`${store.icon('user', auth)} Should update the account img (${auth})`, (done) => {
           chai
             .request(config.api)

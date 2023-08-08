@@ -1,5 +1,4 @@
 import { hash, randomString } from '../utils/crypto.mjs'
-import { setUserAvatar } from '../utils/sanity.mjs'
 import { log } from '../utils/log.mjs'
 import { clean, i18nUrl } from '../utils/index.mjs'
 

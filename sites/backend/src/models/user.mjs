@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken'
 import { log } from '../utils/log.mjs'
 import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
-import { setUserAvatar, downloadImage } from '../utils/sanity.mjs'
+import { storeImage, replaceImage } from '../utils/cloudflare-images.mjs'
 import { clean, asJson, i18nUrl } from '../utils/index.mjs'
 import { ConfirmationModel } from './confirmation.mjs'
 import { SetModel } from './set.mjs'
@@ -250,7 +250,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
       password: asJson(hashPassword(randomString())), // We'll change this later
       github: this.encrypt(''),
       bio: this.encrypt(''),
-      // Set this one initially as we need the ID to create a custom img via Sanity
+      // Set this one initially as we need the ID to store an image on Cloudflare
       img: this.encrypt(this.config.avatars.user),
     }
     // During tests, users can set their own permission level so you can test admin stuff
@@ -544,10 +544,15 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
     }
   }
   // Image (img)
-  if (typeof body.img === 'string') {
-    const img = await setUserAvatar(this.record.ihash, body.img, data.username)
-    data.img = img.url
-  }
+  if (typeof body.img === 'string')
+    data.img = await replaceImage({
+      id: `user-${this.record.ihash}`,
+      metadata: {
+        user: user.uid,
+        ihash: this.record.ihash,
+      },
+      b64: body.img,
+    })
 
   // Now update the record
   await this.unguardedUpdate(this.cloak(data))
