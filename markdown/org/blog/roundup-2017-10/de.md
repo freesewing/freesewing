@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Dein neuer Login-Hintergrund für den Monat November"
 date: "2017-10-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c9242975400bf885feef0b6ddc3b2bc0ce901638-2000x1500.jpg"
 intro: "Dies ist dein monatlicher Überblick über die Freesewing-Nachrichten der letzten vier Wochen und ein Ausblick auf das, was im nächsten Monat ansteht."
 title: "Monatliche Zusammenfassung - Oktober 2017: Huey, Roy, Gemeinschaftsbildung und Musterdeckblätter"
 ---
