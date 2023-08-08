@@ -2,7 +2,6 @@
 maker: "Gaëlle"
 caption: "Ein hübsches Paar Bruce Boxershorts"
 date: "2022-04-27"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d5518a2f3338a459a4146335698599ef849437da-1184x824.jpg"
 intro: "FreeSewing-Macherin Gaëlle hat diese hübschen Bruce-Boxershorts für einen Freund genäht und ein wenig angepasst. Das Ergebnis ist hervorragend!"
 title: "Bruce Boxershorts von Gaëlle"
 designs:
