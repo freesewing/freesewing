@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Karin pose près de l'eau dans sa nouvelle jupe"
 date: "2018-11-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/6e2a1b1b2b2935542f32a362aa7876deb36f89fd-2000x1500.jpg"
 intro: "Sandy par Karin"
 title: "Sandy par Karin"
 designs:
