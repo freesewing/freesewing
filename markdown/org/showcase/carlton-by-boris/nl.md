@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Boris in zijn ongelooflijke Carlton jas"
 date: "2023-02-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8d7e149722688b531c2cfbeaac82de4e6730f156-2252x4000.jpg"
 intro: "Ik weet niet eens waar ik moet beginnen. Wil je even naar deze jas kijken? Het is ongelooflijk."
 title: "Klassiek Carlton van Boris"
 designs:
