@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "This post is mostly about our work on progressive disclosure. Also: Three new patterns!"
 date: "2019-10-06"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/52db6852590a15208dace4a16a6a1c824037e400-2000x1500.jpg"
 intro: "We've just release FreeSewing v2.1 🎉"
 title: "FreeSewing v2.1: Three new patterns, expert mode, and help with measurements"
 ---
