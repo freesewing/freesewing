@@ -2,7 +2,6 @@
 maker: "Em"
 caption: "A photo featuring Em's stylish Carlton coat and their cat"
 date: "2021-10-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/962338234fee3642dfb0313acd1690db63c46919-1965x3494.jpg"
 intro: "Em's cool Carlton coat"
 title: "Em's cool Carlton coat"
 designs: ["carlton"]
