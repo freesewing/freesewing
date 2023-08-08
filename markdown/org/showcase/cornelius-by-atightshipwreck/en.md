@@ -2,7 +2,6 @@
 maker: "ATightShipwreck"
 caption: "Cornelius with hips!"
 date: "2022-07-23"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/21ad37b0e35bbf1ec1f769ba0b642d0f4c2baefb-1290x2622.jpg"
 intro: "We dig these Cornelius breeches made by ATightShipwreck! They shared:"
 title: "Cornelius cycling breeches by ATightShipwreck"
 designs: ["cornelius"]
