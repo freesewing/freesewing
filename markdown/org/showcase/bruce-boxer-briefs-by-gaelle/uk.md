@@ -2,7 +2,6 @@
 maker: "Галле."
 caption: "Гарна пара трусів-боксерів Bruce"
 date: "2022-04-27"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d5518a2f3338a459a4146335698599ef849437da-1184x824.jpg"
 intro: "Майстриня з FreeSewing Гаель пошила ці красиві труси-боксери Bruce для свого друга, трохи підкоригувавши їх. Результат чудовий!"
 title: "Труси-боксери Bruce від Gaëlle"
 designs:
