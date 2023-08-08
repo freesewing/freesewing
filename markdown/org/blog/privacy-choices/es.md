@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Fotografía de <a href='https://pixabay.com/en/users/herbert2512-2929941/' target='_BLANK' rel='nofollow'>Herbert</a>"
 date: "2017-06-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8ccbb2d5b50eb0917c6bd2befb2b098b6d667ba9-1920x1280.jpg"
 intro: "La World Wide Web está erosionando cada vez más tu privacidad. Facebook, Google y una avalancha de redes publicitarias están vigilando las pestañas de tu navegador. Rastrearte en Internet, vigilar los sitios que visitas, para poder recopilar más información sobre ti y venderla a los anunciantes."
 title: "Las decisiones que he tomado para proteger tu privacidad. O por qué no recibirás ninguna galleta."
 ---
