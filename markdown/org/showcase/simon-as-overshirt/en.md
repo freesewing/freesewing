@@ -2,7 +2,6 @@
 maker: "ferdi"
 caption: "This Simon was sewn a little wider to be worn as an overshirt"
 date: "2021-11-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ccc178893cc97708b480fb5bf298c7a6ec7abc76-1920x1280.jpg"
 intro: "What an attractive version of the Simon shirt! The maker says:"
 title: "Simon as overshirt by Ferdi"
 designs: ["simon"]
