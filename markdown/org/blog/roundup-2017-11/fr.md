@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ton nouveau fond d'écran de connexion pour le mois de décembre"
 date: "2017-11-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c9c5c5e10d2ed6e9f2935b047afa76c1ddd7c834-2000x1333.jpg"
 intro: "Voici ton récapitulatif mensuel de l'actualité freesewing des quatre dernières semaines, et un aperçu de ce qui t'attend le mois prochain."
 title: "Tour d'horizon mensuel - novembre 2017 : Benjamin, l'embarquement, les vitrines et notre carreleur à la demande."
 ---
