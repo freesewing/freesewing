@@ -2,7 +2,6 @@
 maker: "ростик"
 caption: "Цей чудовий вахід виготовлений з квіткової бавовни"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/429adcc0d0847351ca6076d941428f67dba6a223-910x1265.jpg"
 intro: "Rostic виготовив цю чудову вахідську жилетку! Ви не захочете пропустити детальні фотографії нижче."
 title: "Чудова жилетка для вахідів від Rostic"
 designs:
