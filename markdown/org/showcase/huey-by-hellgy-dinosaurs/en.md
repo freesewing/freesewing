@@ -2,7 +2,6 @@
 maker: "Hellgy"
 caption: "A Huey hoodie featuring a dinosaur print"
 date: "2021-06-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3323f7a8888bcf863c2126003b353db443cd1eba-1279x853.jpg"
 intro: "We adore Hellgy's Huey hoodies and their excellent choice in fabrics. This dinosaur one was a crowd favorite over on the FreeSewing Discord."
 title: "Huey hoodie by Hellgy"
 designs: ["huey"]
