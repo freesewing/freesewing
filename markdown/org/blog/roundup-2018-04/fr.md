@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ton arrière-plan de connexion pour le mois de mai"
 date: "2018-04-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/992689c621b6b83a80706620ae5cd92262dcf4bd-1920x1273.jpg"
 intro: "Voici ton récapitulatif mensuel de l'actualité freesewing des quatre dernières semaines, et un aperçu de ce qui t'attend le mois prochain."
 title: "Récapitulatif mensuel - avril 2018 : Le calme avant la tempête"
 ---
