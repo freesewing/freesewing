@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "No es la mejor calidad de imagen, pero qué le vamos a hacer"
 date: "2017-08-14"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/468efcd7ea0faf06b74fa10c0a092f21d374c7e8-1080x1142.jpg"
 intro: "Petros escribe (a través de Facebook messenger):"
 title: "Bermudas rojas de Petros"
 designs:
