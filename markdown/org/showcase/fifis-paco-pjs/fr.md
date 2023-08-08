@@ -2,7 +2,6 @@
 maker: "Fifi"
 caption: "Pantalon de pyjama réalisé à partir du modèle Paco"
 date: "2021-12-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/af784a62ff853e00c16080a852bc3b6c8072fbe4-1560x2080.jpg"
 intro: "Fifi a ajusté le patron du pantalon Paco pour obtenir un résultat souvent demandé : Un pantalon de pyjama FreeSewing !"
 title: "Le pyjama Paco de Fifi"
 designs:
