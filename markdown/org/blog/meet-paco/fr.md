@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Paco sur votre obligé"
 date: "2020-08-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1bc82d4abb50ea1b7bda32dd64521e9ecfdd8467-2048x1536.jpg"
 intro: "Découvrez Paco : notre nouveau patron unisexe pour un élégant pantalon d'été"
 title: "Découvrez Paco : notre nouveau patron unisexe pour un élégant pantalon d'été"
 ---
