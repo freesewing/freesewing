@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Яскрава куртка Jaeger з фламінго"
 date: "2021-06-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3bbc589317e13e279d05f3b13eed309efabbfe23-480x534.jpg"
 intro: "Ця куртка Jaeger змусила всіх нас у FreeSewing замислитися над тим, як ми можемо використати принти з фламінго у всіх наших моделях."
 title: "Jaeger від Roberta"
 designs:
