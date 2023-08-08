@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "El logotipo de freesewing"
 date: "2017-03-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4e1f5426ee6578ef31d9c18a1de9b4beef15836b-2000x1125.jpg"
 intro: "Me enorgullece anunciar el núcleo de freesewing v1.0.0 y la documentación que lo acompaña, que describe el proyecto freesewing en detalle."
 title: "Anunciamos freesewing, una plataforma de código abierto para patrones de costura a medida"
 ---
