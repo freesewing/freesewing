@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Zo'n fantastisch Simon shirt, gemodelleerd door de maker!"
 date: "2023-05-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/41a2576323a499f2a571335a68795be7d6a88bdc-1920x1281.jpg"
 intro: "De zesde Simon voor deze naaister, we zijn dol op deze Simon met geometrisch patroon in een bruine tint die doorkruist wordt door dunne witte lijnen. De maker dropte dit in een GitHub issue om te delen met FreeSewing, en we konden niet meer tevreden zijn."
 title: "Een bruine geometrische Simon"
 designs:
