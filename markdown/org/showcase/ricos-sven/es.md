@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Un Sven de primera, pero espera..."
 date: "2020-11-03"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f208ab781d22f74c91cc37a31249fd88a94a2aab-2000x2198.jpg"
 intro: "¡Hay más! ¡Fíjate en las mangas y las rayas de este Sven!"
 title: "Sven por Ricos"
 designs:
