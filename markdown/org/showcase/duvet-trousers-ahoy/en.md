@@ -2,7 +2,6 @@
 maker: "comixminx"
 caption: "These trousers are made from a retired duvet cover"
 date: "2022-06-09"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/2be33e00299fe330faee41f1770641982433aa3b-1918x2623.jpg"
 intro: "These excellent Paco pants were comixminx's first FreeSewing pattern that she has made for herself! She provided some helpful notes on the process:"
 title: "Duvet trousers ahoy!"
 designs: ["paco"]
