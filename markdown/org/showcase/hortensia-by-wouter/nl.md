@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "Haring's Hortensia handtas van Wouter"
 date: "2021-03-06"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7192891ad24b1dc1ccb1a4093dc70e3678bb65c7-661x612.jpg"
 intro: "Wouter naaide niet alleen deze Haring's Hortensia handtas, hij ontwierp ook de stof en maakte het patroon! Hij vertelde dat hij het stofontwerp samen met zijn dochter had gemaakt en het via Spoonflower had laten drukken."
 title: "Hortensia door Wouter"
 designs:
