@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Open 24/7 from now onwards"
 date: "2017-08-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/444b63db2120d50eb52004b2017c992624bbb66e-2000x1333.jpg"
 intro: "Freesewing.org is open for business. That is, the business of giving away free sewing patterns"
 title: "Freesewing.org is open for business. That is, the business of giving away free sewing patterns"
 ---
