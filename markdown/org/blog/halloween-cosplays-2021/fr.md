@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Il fait peut-être un peu froid, mais les maillots de bain, on les a !"
 date: "2021-10-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3a69586735a24a674d4e65971643b3b55c676fc3-1000x667.png"
 intro: "Incarner ton personnage préféré peut te permettre de vivre une expérience d'Halloween vraiment amusante ! Voici quelques personnages emblématiques pour t'inspirer."
 title: "10 cosplays que tu peux réaliser à partir de patrons FreeSewing pour te mettre dans l'ambiance d'Halloween."
 ---
