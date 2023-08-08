@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "A stellar first version of Simon"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d7f4deae2968a63adf7e2f440ac4808a7b804d84-3024x4032.jpg"
 intro: "Johnnygaijin has already proven themselves quite brave - this was their first sewing project! It turned out great."
 title: "Johnnygaijin's first real sewing project, the Simon shirt"
 designs: ["simon"]
