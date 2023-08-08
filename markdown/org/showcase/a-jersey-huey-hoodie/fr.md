@@ -2,7 +2,6 @@
 maker: "Naël"
 caption: "Ce Huey est fabriqué en jersey."
 date: "2023-05-21"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/77bae8234c37ecabb700190ab5cac0bb1a1ef34f-1723x1836.jpg"
 intro: "Nous pensons que ce sweat à capuche Huey est fantastique ! Le fabricant a indiqué qu'il était fait de tissu jersey et qu'il était donc un peu mou mais très confortable."
 title: "Un sweat à capuche en jersey Huey"
 designs:
