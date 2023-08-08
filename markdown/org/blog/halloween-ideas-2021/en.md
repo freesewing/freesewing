@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Drawing by @racerxmachina, Sandy!"
 date: "2021-10-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/37c6f1c78ac0bfb539ea2b11ff32f104c34a0d6d-1666x1111.jpg"
 intro: "You may already have an idea for what you want to make for Halloween. Or maybe you have no clue. Either way, here is some inspiration to get you going."
 title: "Get your Halloween going with these inspirational costume ideas"
 ---
