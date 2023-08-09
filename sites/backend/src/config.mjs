@@ -149,6 +149,7 @@ if (baseConfig.use.cloudflareImages) {
     account,
     api: `https://api.cloudflare.com/client/v4/accounts/${account}/images/v1`,
     token: process.env.BACKEND_CLOUDFLARE_IMAGES_TOKEN || 'fixmeSetCloudflareToken',
+    import: envToBool(process.env.BACKEND_IMPORT_CLOUDFLARE_IMAGES),
   }
 }
 

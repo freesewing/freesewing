@@ -1,5 +1,5 @@
 import { log } from '../utils/log.mjs'
-import { replaceImage, storeImage } from '../utils/cloudflare-images.mjs'
+import { replaceImage, storeImage, ensureImage, importImage } from '../utils/cloudflare-images.mjs'
 import yaml from 'js-yaml'
 
 export function SetModel(tools) {
@@ -450,7 +450,6 @@ SetModel.prototype.sanitizeMeasurements = function (input) {
 
 const migratePerson = (v2) => ({
   createdAt: new Date(v2.created ? v2.created : v2.createdAt),
-  img: v2.picture,
   imperial: v2.units === 'imperial',
   name: v2.name || '--', // Encrypted, so always set _some_ value
   notes: v2.notes || '--', // Encrypted, so always set _some_ value
@@ -462,11 +461,13 @@ const migratePerson = (v2) => ({
  * This is a special route not available for API users
  */
 SetModel.prototype.import = async function (v2user, userId) {
-  for (const person of v2user.people) {
+  const lut = {} // lookup tabel for v2 handle to v3 id
+  for (const [handle, person] of Object.entries(v2user.people)) {
     const data = { ...migratePerson(person), userId }
     await this.unguardedCreate(data)
     // Now that we have an ID, we can handle the image
-    if (data.img) {
+    if (person.picture && person.picture.slice(-4) !== '.svg') {
+      const imgId = `set-${this.record.id}`
       const imgUrl =
         'https://static.freesewing.org/users/' +
         encodeURIComponent(v2user.handle.slice(0, 1)) +
@@ -475,14 +476,26 @@ SetModel.prototype.import = async function (v2user, userId) {
         '/people/' +
         encodeURIComponent(person.handle) +
         '/' +
-        encodeURIComponent(data.img)
-      console.log('Grabbing', imgUrl)
-      //const [contentType, imgData] = await downloadImage(imgUrl)
-      //// Do not import the default SVG avatar
-      //if (contentType !== 'image/svg+xml') {
-      //  const img = await setSetAvatar(this.record.id, [contentType, imgData], data.name)
-      //  data.img = img
-      //}
+        encodeURIComponent(person.picture)
+      data.img = await importImage({
+        id: imgId,
+        metadata: {
+          user: userId,
+          v2PersonHandle: handle,
+        },
+        url: imgUrl,
+      })
+      data.img = imgId
+    } else data.img = 'default-avatar'
+    const cloaked = await this.cloak(data)
+    try {
+      this.record = await this.prisma.set.create({ data: cloaked })
+      lut[handle] = this.record.id
+    } catch (err) {
+      log.warn(err, 'Could not create set')
+      console.log(person)
     }
   }
+
+  return lut
 }

@@ -1,12 +1,16 @@
+import dotenv from 'dotenv'
 //import subscribers from './v2-newsletters.json' assert { type: 'json' }
 import users from '../dump/v2-users.json' assert { type: 'json' }
 import people from '../dump/v2-people.json' assert { type: 'json' }
 import patterns from '../dump/v2-patterns.json' assert { type: 'json' }
+dotenv.config()
+
+const batchSize = 100
 
 /*
  * Only this token allows exporting data
  */
-const import_token = 'TOKEN_HERE'
+const import_token = process.env.IMPORT_TOKEN
 
 /*
  * Where to connect to?
@@ -28,7 +32,7 @@ const importSubscribers = async () => {
   console.log('Importing subscribers')
   const count = subscribers.length
   let total = 0
-  const batches = splitArray(subscribers, 50)
+  const batches = splitArray(subscribers, batchSize)
   for (const batch of batches) {
     const result = await fetch(`${BACKEND}/import/subscribers`, {
       method: 'POST',
@@ -83,7 +87,7 @@ const importUsers = async () => {
   console.log('Importing users')
   const count = todo.length
   let total = 0
-  const batches = splitArray(todo, 50)
+  const batches = splitArray(todo, batchSize)
   for (const batch of batches) {
     const result = await fetch(`${BACKEND}/import/users`, {
       method: 'POST',
@@ -96,9 +100,8 @@ const importUsers = async () => {
       }),
     })
     const data = await result.json()
-    total += data.imported
-    console.log(`${total}/${count} (${data.skipped} skipped)`)
-    console.log(data)
+    total += batchSize
+    console.log(`${total}/${count}`)
   }
 }
 

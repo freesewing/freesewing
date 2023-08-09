@@ -431,3 +431,164 @@ PatternModel.prototype.asPublicPattern = function () {
 
   return data
 }
+
+const migratePattern = (v2, userId) => ({
+  createdAt: new Date(v2.created ? v2.created : v2.createdAt),
+  data: { version: v2.data.version, notes: ['Migrated from version 2'] },
+  design: v2.design || v2.data.design,
+  name: v2.name || '--',
+  notes: v2.notes ? v2.notes + '\n\nMigrated from v2' : 'Migrated from v2',
+  settings: v2.data.settings,
+  userId,
+})
+
+const v2lut = {
+  'size 28, with breasts': 1,
+  'size 30, with breasts': 2,
+  'size 32, with breasts': 3,
+  'size 34, with breasts': 4,
+  'size 36, with breasts': 5,
+  'size 38, with breasts': 6,
+  'size 40, with breasts': 7,
+  'size 42, with breasts': 8,
+  'size 44, with breasts': 9,
+  'size 46, with breasts': 10,
+  'size-28-b': 1,
+  'size-30-b': 2,
+  'size-32-b': 3,
+  'size-34-b': 4,
+  'size-36-b': 5,
+  'size-38-b': 6,
+  'size-40-b': 7,
+  'size-42-b': 8,
+  'size-44-b': 9,
+  'size-46-b': 10,
+  'size-28-with-breasts': 1,
+  'size-30-with-breasts': 2,
+  'size-32-with-breasts': 3,
+  'size-34-with-breasts': 4,
+  'size-36-with-breasts': 5,
+  'size-38-with-breasts': 6,
+  'size-40-with-breasts': 7,
+  'size-42-with-breasts': 8,
+  'size-44-with-breasts': 9,
+  'size-46-with-breasts': 10,
+  'größe 28, mit brüsten': 1,
+  'größe 30, mit brüsten': 2,
+  'größe 32, mit brüsten': 3,
+  'größe 34, mit brüsten': 4,
+  'größe 36, mit brüsten': 5,
+  'größe 38, mit brüsten': 6,
+  'größe 40, mit brüsten': 7,
+  'größe 42, mit brüsten': 8,
+  'größe 44, mit brüsten': 9,
+  'größe 46, mit brüsten': 10,
+  'taille 28, avec des seins': 1,
+  'taille 30, avec des seins': 2,
+  'taille 32, avec des seins': 3,
+  'taille 34, avec des seins': 4,
+  'taille 36, avec des seins': 5,
+  'taille 38, avec des seins': 6,
+  'taille 40, avec des seins': 7,
+  'taille 42, avec des seins': 8,
+  'taille 44, avec des seins': 9,
+  'taille 46, avec des seins': 10,
+  'tamaño 28, con pechos': 1,
+  'tamaño 30, con pechos': 2,
+  'tamaño 32, con pechos': 3,
+  'tamaño 34, con pechos': 4,
+  'tamaño 36, con pechos': 5,
+  'tamaño 38, con pechos': 6,
+  'tamaño 40, con pechos': 7,
+  'tamaño 42, con pechos': 8,
+  'tamaño 44, con pechos': 9,
+  'tamaño 46, con pechos': 10,
+
+  'size 32, without breasts': 11,
+  'size 34, without breasts': 12,
+  'size 36, without breasts': 13,
+  'size 38, without breasts': 14,
+  'size 40, without breasts': 15,
+  'size 42, without breasts': 16,
+  'size 44, without breasts': 17,
+  'size 46, without breasts': 18,
+  'size 48, without breasts': 19,
+  'size 50, without breasts': 20,
+  'taille 32, sans seins': 11,
+  'taille 34, sans seins': 12,
+  'taille 36, sans seins': 13,
+  'taille 38, sans seins': 14,
+  'taille 40, sans seins': 15,
+  'taille 42, sans seins': 16,
+  'taille 44, sans seins': 17,
+  'taille 46, sans seins': 18,
+  'taille 48, sans seins': 19,
+  'taille 50, sans seins': 20,
+  'size-32-a': 11,
+  'size-34-a': 12,
+  'size-36-a': 13,
+  'size-38-a': 14,
+  'size-40-a': 15,
+  'size-42-a': 16,
+  'size-44-a': 17,
+  'size-46-a': 18,
+  'size-48-a': 19,
+  'size-50-a': 20,
+  'maat 32, zonder borsten': 11,
+  'maat 34, zonder borsten': 12,
+  'maat 36, zonder borsten': 13,
+  'maat 38, zonder borsten': 14,
+  'maat 40, zonder borsten': 15,
+  'maat 42, zonder borsten': 16,
+  'maat 44, zonder borsten': 17,
+  'maat 46, zonder borsten': 18,
+  'maat 48, zonder borsten': 19,
+  'maat 50, zonder borsten': 20,
+  'größe 32, ohne brüste': 11,
+  'größe 34, ohne brüste': 12,
+  'größe 36, ohne brüste': 13,
+  'größe 38, ohne brüste': 14,
+  'größe 40, ohne brüste': 15,
+  'größe 42, ohne brüste': 16,
+  'größe 44, ohne brüste': 17,
+  'größe 46, ohne brüste': 18,
+  'größe 48, ohne brüste': 19,
+  'größe 50, ohne brüste': 20,
+  'tamaño 32, sin pechos': 11,
+  'tamaño 34, sin pechos': 12,
+  'tamaño 36, sin pechos': 13,
+  'tamaño 38, sin pechos': 14,
+  'tamaño 40, sin pechos': 15,
+  'tamaño 42, sin pechos': 16,
+  'tamaño 44, sin pechos': 17,
+  'tamaño 46, sin pechos': 18,
+  'tamaño 48, sin pechos': 19,
+  'tamaño 50, sin pechos': 20,
+}
+/*
+ * This is a special route not available for API users
+ */
+PatternModel.prototype.import = async function (v2user, lut, userId) {
+  for (const [handle, pattern] of Object.entries(v2user.patterns)) {
+    let skip = false
+    const data = { ...migratePattern(pattern, userId), userId }
+    if (lut[pattern.person]) data.setId = lut[pattern.person]
+    else if (v2lut[pattern.person]) data.csetId = v2lut[pattern.person]
+    else if (pattern.person.length !== 5 && !['any', 'original'].includes(pattern.person)) {
+      console.log(`Cannot find ${pattern.person}`, pattern, { lut, v2lut })
+      process.exit()
+    }
+    if (!data.design || ['theo', 'ursula', 'unice'].includes(data.design)) skip = true
+    if (!skip) {
+      // V2 does not support images for patterns
+      data.img = 'default-avatar'
+      const cloaked = await this.cloak(data)
+      try {
+        this.record = await this.prisma.pattern.create({ data: cloaked })
+      } catch (err) {
+        log.warn(err, 'Could not create pattern')
+        console.log(data)
+      }
+    }
+  }
+}

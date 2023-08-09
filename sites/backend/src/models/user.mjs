@@ -1,10 +1,11 @@
 import jwt from 'jsonwebtoken'
 import { log } from '../utils/log.mjs'
 import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
-import { replaceImage, ensureImage } from '../utils/cloudflare-images.mjs'
+import { replaceImage, ensureImage, importImage } from '../utils/cloudflare-images.mjs'
 import { clean, asJson, i18nUrl } from '../utils/index.mjs'
 import { ConfirmationModel } from './confirmation.mjs'
 import { SetModel } from './set.mjs'
+import { PatternModel } from './pattern.mjs'
 
 export function UserModel(tools) {
   this.config = tools.config
@@ -19,6 +20,7 @@ export function UserModel(tools) {
   this.clear = {} // For holding decrypted data
   // Only used for import, can be removed after v3 is released
   this.Set = new SetModel(tools)
+  this.Pattern = new PatternModel(tools)
 
   return this
 }
@@ -910,10 +912,10 @@ UserModel.prototype.import = async function (list) {
         const data = migrateUser(sub)
         await this.read({ ehash: data.ehash })
         if (!this.record) {
-          /*
-           * Grab the image from the FreeSewing server and upload it to Sanity
-           */
           if (data.img) {
+            /*
+             * Figure out what image to grab from the FreeSewing v2 backend server
+             */
             const imgId = `user-${data.ihash}`
             const imgUrl =
               'https://static.freesewing.org/users/' +
@@ -922,7 +924,7 @@ UserModel.prototype.import = async function (list) {
               encodeURIComponent(sub.handle) +
               '/' +
               encodeURIComponent(data.img)
-            data.img = await ensureImage({
+            data.img = await importImage({
               id: imgId,
               metadata: {
                 user: `v2-${sub.handle}`,
@@ -957,7 +959,9 @@ UserModel.prototype.import = async function (list) {
         }
       } else skipped.push(sub.email)
       // That's the user, now load their people as sets
-      //if (sub.people) await this.Set.import(sub, this.record.id)
+      let lut = false
+      if (sub.people) lut = await this.Set.import(sub, this.record.id)
+      if (sub.patterns) await this.Pattern.import(sub, lut, this.record.id)
     } else skipped.push(sub.email)
   }
 

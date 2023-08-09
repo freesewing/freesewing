@@ -71,7 +71,21 @@ export async function ensureImage(props) {
     result = await axios.post(config.api, form, { headers })
   } catch (err) {
     // It's fine
+    console.log(err)
   }
+
+  return props.id
+}
+
+/*
+ * Method that imports and image from URL and does not bother waiting for the answer
+ */
+export async function importImage(props) {
+  // Bypass slow ass upload when testing import
+  if (!config.import) return `default-avatar`
+
+  const form = getFormData(props)
+  await axios.post(config.api, form, { headers })
 
   return props.id
 }
