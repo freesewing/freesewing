@@ -61,6 +61,22 @@ export async function replaceImage(props) {
 }
 
 /*
+ * Method that uploads an image to cloudflare
+ * Use this to merely ensure the image exists (will fail silently if it does)
+ */
+export async function ensureImage(props) {
+  const form = getFormData(props)
+  let result
+  try {
+    result = await axios.post(config.api, form, { headers })
+  } catch (err) {
+    // It's fine
+  }
+
+  return props.id
+}
+
+/*
  * Helper method to construct the form data for cloudflare
  */
 function getFormData({ id, metadata, url = false, b64 = false, blob = false, notPublic = false }) {

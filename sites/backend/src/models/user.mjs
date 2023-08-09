@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken'
 import { log } from '../utils/log.mjs'
 import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
-import { replaceImage } from '../utils/cloudflare-images.mjs'
+import { replaceImage, ensureImage } from '../utils/cloudflare-images.mjs'
 import { clean, asJson, i18nUrl } from '../utils/index.mjs'
 import { ConfirmationModel } from './confirmation.mjs'
 import { SetModel } from './set.mjs'
@@ -914,6 +914,7 @@ UserModel.prototype.import = async function (list) {
            * Grab the image from the FreeSewing server and upload it to Sanity
            */
           if (data.img) {
+            const imgId = `user-${data.ihash}`
             const imgUrl =
               'https://static.freesewing.org/users/' +
               encodeURIComponent(sub.handle.slice(0, 1)) +
@@ -921,14 +922,16 @@ UserModel.prototype.import = async function (list) {
               encodeURIComponent(sub.handle) +
               '/' +
               encodeURIComponent(data.img)
-            console.log('Grabbing', imgUrl)
-            //const [contentType, imgData] = await downloadImage(imgUrl)
-            //// Do not import the default SVG avatar
-            //if (contentType !== 'image/svg+xml') {
-            //  const img = await setUserAvatar(data.ihash, [contentType, imgData], data.username)
-            //  data.img = img
-            //}
-          }
+            data.img = await ensureImage({
+              id: imgId,
+              metadata: {
+                user: `v2-${sub.handle}`,
+                ihash: data.ihash,
+              },
+              url: imgUrl,
+            })
+            data.img = imgId
+          } else data.img = 'default-avatar'
           let cloaked = await this.cloak(data)
           try {
             this.record = await this.prisma.user.create({ data: cloaked })
@@ -953,8 +956,8 @@ UserModel.prototype.import = async function (list) {
           }
         }
       } else skipped.push(sub.email)
-      // That's the user, not load their people as sets
-      if (sub.people) await this.Set.import(sub, this.record.id)
+      // That's the user, now load their people as sets
+      //if (sub.people) await this.Set.import(sub, this.record.id)
     } else skipped.push(sub.email)
   }
 
