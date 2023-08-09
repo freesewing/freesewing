@@ -2545,6 +2545,13 @@
   dependencies:
     "@types/unist" "^2"
 
+"@types/hast@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@types/hast/-/hast-3.0.0.tgz#47ebd2892a623fa7e517ba392834880ff288475e"
+  integrity sha512-SoytUJRuf68HXYqcXicQIhCrLQjqeYU2anikr4G3p3Iz+OZO5QDQpDj++gv+RenHsnUBwNZ2dumBArF8VLSk2Q==
+  dependencies:
+    "@types/unist" "*"
+
 "@types/hogan.js@^3.0.0":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@types/hogan.js/-/hogan.js-3.0.1.tgz#64c54407b30da359763e14877f5702b8ae85d61c"
@@ -5112,6 +5119,13 @@ detect-libc@^2.0.0, detect-libc@^2.0.2:
   resolved "https://registry.yarnpkg.com/detect-libc/-/detect-libc-2.0.2.tgz#8ccf2ba9315350e1241b88d0ac3b0e1fbd99605d"
   integrity sha512-UX6sGumvvqSaXgdKGUsgZWqcUyIXZ/vZTrlRT/iobiKhGL0zL4d3osHj3uqllWJK+i+sixDS/3COVEOFbupFyw==
 
+devlop@^1.0.0, devlop@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/devlop/-/devlop-1.1.0.tgz#4db7c2ca4dc6e0e834c30be70c94bbc976dc7018"
+  integrity sha512-RWmIqhcFf1lRYBvNmr7qTNuyCt/7/ns2jbpp1+PalgE/rDQcBT0fioSMUpJ93irlUhC5hrg4cYqe6U+0ImW0rA==
+  dependencies:
+    dequal "^2.0.0"
+
 dezalgo@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/dezalgo/-/dezalgo-1.0.4.tgz#751235260469084c132157dfa857f386d4c33d81"
@@ -6952,16 +6966,17 @@ hast-util-embedded@^2.0.0:
   dependencies:
     hast-util-is-element "^2.0.0"
 
-hast-util-from-html@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/hast-util-from-html/-/hast-util-from-html-1.0.2.tgz#2482fd701b2d8270b912b3909d6fb645d4a346cf"
-  integrity sha512-LhrTA2gfCbLOGJq2u/asp4kwuG0y6NhWTXiPKP+n0qNukKy7hc10whqqCFfyvIA1Q5U5d0sp9HhNim9gglEH4A==
+hast-util-from-html@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/hast-util-from-html/-/hast-util-from-html-2.0.1.tgz#9cd38ee81bf40b2607368b92a04b0905fa987488"
+  integrity sha512-RXQBLMl9kjKVNkJTIO6bZyb2n+cUH8LFaSSzo82jiLT6Tfc+Pt7VQCS+/h3YwG4jaNE2TA2sdJisGWR+aJrp0g==
   dependencies:
-    "@types/hast" "^2.0.0"
-    hast-util-from-parse5 "^7.0.0"
+    "@types/hast" "^3.0.0"
+    devlop "^1.1.0"
+    hast-util-from-parse5 "^8.0.0"
     parse5 "^7.0.0"
-    vfile "^5.0.0"
-    vfile-message "^3.0.0"
+    vfile "^6.0.0"
+    vfile-message "^4.0.0"
 
 hast-util-from-parse5@^7.0.0:
   version "7.1.2"
@@ -6974,6 +6989,20 @@ hast-util-from-parse5@^7.0.0:
     property-information "^6.0.0"
     vfile "^5.0.0"
     vfile-location "^4.0.0"
+    web-namespaces "^2.0.0"
+
+hast-util-from-parse5@^8.0.0:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/hast-util-from-parse5/-/hast-util-from-parse5-8.0.1.tgz#654a5676a41211e14ee80d1b1758c399a0327651"
+  integrity sha512-Er/Iixbc7IEa7r/XLtuG52zoqn/b3Xng/w6aZQ0xGVxzhw5xUFxcRqdPzP6yFi/4HBYRaifaI5fQ1RH8n0ZeOQ==
+  dependencies:
+    "@types/hast" "^3.0.0"
+    "@types/unist" "^3.0.0"
+    devlop "^1.0.0"
+    hastscript "^8.0.0"
+    property-information "^6.0.0"
+    vfile "^6.0.0"
+    vfile-location "^5.0.0"
     web-namespaces "^2.0.0"
 
 hast-util-has-property@^2.0.0:
@@ -7016,6 +7045,13 @@ hast-util-parse-selector@^3.0.0:
   integrity sha512-jdlwBjEexy1oGz0aJ2f4GKMaVKkA9jwjr4MjAAI22E5fM/TXVZHuS5OpONtdeIkRKqAaryQ2E9xNQxijoThSZA==
   dependencies:
     "@types/hast" "^2.0.0"
+
+hast-util-parse-selector@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/hast-util-parse-selector/-/hast-util-parse-selector-4.0.0.tgz#352879fa86e25616036037dd8931fb5f34cb4a27"
+  integrity sha512-wkQCkSYoOGCRKERFWcxMVMOcYE2K1AaNLU8DXS9arxnLOUEWbOXKXiJUNzEpqZ3JOKpnha3jkFrumEjVliDe7A==
+  dependencies:
+    "@types/hast" "^3.0.0"
 
 hast-util-phrasing@^2.0.0:
   version "2.0.2"
@@ -7152,6 +7188,17 @@ hastscript@^7.0.0:
     "@types/hast" "^2.0.0"
     comma-separated-tokens "^2.0.0"
     hast-util-parse-selector "^3.0.0"
+    property-information "^6.0.0"
+    space-separated-tokens "^2.0.0"
+
+hastscript@^8.0.0:
+  version "8.0.0"
+  resolved "https://registry.yarnpkg.com/hastscript/-/hastscript-8.0.0.tgz#4ef795ec8dee867101b9f23cc830d4baf4fd781a"
+  integrity sha512-dMOtzCEd3ABUeSIISmrETiKuyydk1w0pa+gE/uormcTpSYuaNJPbX1NU3JLyscSLjwAQM8bWMhhIlnCqnRvDTw==
+  dependencies:
+    "@types/hast" "^3.0.0"
+    comma-separated-tokens "^2.0.0"
+    hast-util-parse-selector "^4.0.0"
     property-information "^6.0.0"
     space-separated-tokens "^2.0.0"
 
@@ -14775,6 +14822,14 @@ vfile-location@^4.0.0:
   dependencies:
     "@types/unist" "^2.0.0"
     vfile "^5.0.0"
+
+vfile-location@^5.0.0:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/vfile-location/-/vfile-location-5.0.1.tgz#6ae8d9bb442c7a16c4e4daaa98d4ad8e875a3a8e"
+  integrity sha512-tyc/iDsjoW+UB42/+JavfeXU/ThfN6WTFkRy/XNfGgdOiVw9qGJjZYG/H7dHUGMdc5Y6iwkPA/iUMe629h6nHQ==
+  dependencies:
+    "@types/unist" "^2.0.0"
+    vfile "^6.0.0"
 
 vfile-message@^2.0.0:
   version "2.0.4"
