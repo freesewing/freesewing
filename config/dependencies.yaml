@@ -319,7 +319,7 @@ org:
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
-    'luxon': '3.3.0'
+    'luxon': '3.4.0'
     'next': *next
     'react-dropzone': '14.2.3'
     'react-hotkeys-hook': *reactHotkeysHook
