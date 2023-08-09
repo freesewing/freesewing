@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Ursula en tejido negro de algodón spandex"
 date: "2021-09-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/26de214a4587d5123deaf4111b8e36714b8a7479-4032x3024.jpg"
 intro: "Esta Úrsula está confeccionada en punto de algodón y elastano (94% algodón, 6% elastano) con elástico de picotón burdeos."
 title: "Subida inferior Úrsula"
 designs:

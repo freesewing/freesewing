@@ -2,7 +2,6 @@
 maker: "Рамот"
 caption: "Корсет Ramoth Cathrin ... з метеликами!"
 date: "2023-01-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/75c473b2d6a85e0ff83042ec3465791f017e146e-425x567.jpg"
 intro: "Ось фантастичний корсет-метелик Cathrin від Ramoth - їхній найперший! Вони розповіли про майбутні зміни:"
 title: "Корсет Cathrin від Ramoth"
 designs:

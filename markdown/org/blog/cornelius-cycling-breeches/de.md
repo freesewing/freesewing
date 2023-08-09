@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Radfahren wie ein wahrer Gentleman"
 date: "2021-03-06"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/15c72486b0c48905f9f4a916a32caa058f1b0f8a-997x857.jpg"
 intro: "Wouter hat es wieder getan. Diesmal verwöhnt er uns mit klassischen Radlerhosen."
 title: "Diese Radfahr-Kniehosen Cornelius sind Wouters neuestes Geschenk an uns alle"
 ---

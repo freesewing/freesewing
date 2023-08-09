@@ -2,7 +2,6 @@
 maker: "SebastianSew"
 caption: "Paco broek voor buitenwerk met enkelelastiek"
 date: "2021-09-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/cfc2c203229bc437f737bf815bd8d65deb9d2c8c-868x1156.jpg"
 intro: "Dit is de eerste van twee supergave Paco-broeken van SebastianSew! Deze hebben elastiek aan de enkel. Met achter-, voor- en zijzakken. De stof is volledig katoenen denim, middelzwaar."
 title: "SebastianSew's eersteklas Paco broek, met elastiek"
 designs:

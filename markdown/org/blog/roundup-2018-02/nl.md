@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Je nieuwe inlogachtergrond voor de maand maart"
 date: "2018-02-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8e0079e2521a2bf71545d736a2549180902c0d50-1980x1311.jpg"
 intro: "Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt."
 title: "Maandelijkse samenvatting - februari 2018: Core 1.7.0 met Sven, Carlton en Carlita verbeteringen. Plus GDRP, vim en Jaeger"
 ---

@@ -2,7 +2,6 @@
 maker: "Joost De Cock"
 caption: "Plus de Charlie"
 date: "2021-05-23"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/20ccf81fc098beaab92cbb48ee1a37b9f6a011c9-600x800.jpg"
 intro: "Joost a fabriqué une autre excellente paire de Charlie Chinos dans ce tissu beige."
 title: "Un autre Charlie par Joost"
 ---

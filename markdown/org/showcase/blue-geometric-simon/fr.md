@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Je ne peux pas m'empêcher de penser que ce Simon a l'air génial !"
 date: "2023-05-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fc008d5c7e66aa5674115d930e281fbd24489091-1920x1281.jpg"
 intro: "Nous avons été subjugués lorsqu'un utilisateur de FreeSewing a déposé ces fabuleuses photos de son nouveau Simon dans un numéro de GitHub."
 title: "Un Simon géométrique bleu"
 designs:

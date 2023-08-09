@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Tu nuevo fondo de inicio de sesión para el mes de octubre"
 date: "2017-09-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c6418b621228730525d835acff53c4cd6895a865-2000x1250.jpg"
 intro: "Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene."
 title: "Resumen mensual - Septiembre de 2017: Las complicaciones de Simon, los problemas de correo electrónico y las donaciones han aumentado este año."
 ---

@@ -2,7 +2,6 @@
 maker: "Jasmijn"
 caption: "Als je de arm van deze drop-shoulder Sven uitsteekt, krijg je echt een gevoel voor het effect van de aanpassing."
 date: "2023-01-19"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/eb6eb402ffce2e41a4bf6a7f1b110e01ed98666f-1956x2608.jpg"
 intro: "Dus maakte FreeSewing-gebruikster Jasmine deze geweldige drop-shoulder Sven met een kleine kapplooi in de mouw, en het is ongelooflijk. Maar het wordt nog beter, want ze heeft een beschrijving gemaakt van hoe je dit allemaal moet doen. Bekijk het eindproduct hier, maar scroll naar beneden als je de hele how-to wilt zien!"
 title: "Laat je schouder vallen Sven"
 designs:

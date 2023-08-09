@@ -2,7 +2,6 @@
 maker: "Guin"
 caption: "Guin pronkt met de lantaarnhulzen op zijn nieuwe Simon"
 date: "2023-01-27"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e6cfdb44c2e93177fb62883269c953a0dafe0f46-1575x2100.jpg"
 intro: "Guin maakte deze geweldige aangepaste Simon door hem leuke lantaarnmouwen te geven in een contrasterende kleur die absoluut niets te maken heeft met het opraken van de navy gingham. Eind goed, al goed - zijn shirt is geweldig geworden. Ik vind de bijpassende streep aan de voorkant ook prachtig."
 title: "Guin's geruite lantaarn Simon"
 designs:

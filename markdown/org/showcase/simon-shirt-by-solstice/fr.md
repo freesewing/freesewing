@@ -2,7 +2,6 @@
 maker: "Solstice"
 caption: "Une version élégante de Simon"
 date: "2022-06-27"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/20cf6993349343f8352022aa72bb9bbd9f1694bd-2426x3253.jpg"
 intro: "Chemise Simon par Solstice"
 title: "Chemise Simon par Solstice"
 designs:

@@ -2,7 +2,6 @@
 maker: "naaitandarts"
 caption: "Een mooi Simon overhemd"
 date: "2022-08-02"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/28cd21a151a4a9d2f73e246e3ca0ad9ab03be5ea-742x743.jpg"
 intro: "sewingdentist is terug met nog meer geweldig werk, dit keer een Simon shirt. Ze deelden:"
 title: "Simon overhemd door naaitandarts"
 designs:

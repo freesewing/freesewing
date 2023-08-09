@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Les balances, comment ça marche ?"
 date: "2018-01-04"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d09252be53d33ab5b743c22f523a9ea8cbd70708-2000x1328.jpg"
 intro: "La version 1.3.0 de Freesewing core est sortie ; elle contient des corrections tellement bonnes que nous les avons rétroportées sur tous tes brouillons."
 title: "La version 1.3.0 de Freesewing core est sortie ; elle contient des corrections tellement bonnes que nous les avons rétroportées sur tous tes brouillons."
 ---

@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Foto door Karolina Grabowska van Pexels"
 date: "2021-06-27"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/13f022fe08c08ba927a13db25c554d730ec8f912-1280x853.jpg"
 intro: "Aankondiging van Ursula, een basispatroon voor ondergoed dat je zelf kunt aanpassen"
 title: "Aankondiging van Ursula, een basispatroon voor ondergoed dat je zelf kunt aanpassen"
 ---

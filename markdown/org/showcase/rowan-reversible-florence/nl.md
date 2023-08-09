@@ -2,7 +2,6 @@
 maker: "Rowan"
 caption: "Eén kant van Rowans omkeerbare Florence gezichtsmasker"
 date: "2023-01-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/aaedd307de0bc101180d2b54e5d2ccb5d5657519-1161x2064.jpg"
 intro: "Onberispelijk werk van Rowan op dit Florence Face Mask, maar wacht maar af... Hij is ook omkeerbaar!"
 title: "Rowan's omkeerbare Florence"
 designs:

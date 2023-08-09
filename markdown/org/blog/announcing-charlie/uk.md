@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Фотографія Flo Dahm з Pexels"
 date: "2021-04-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9e1cca6b6de79fadbd5201bad3b9b71375a53464-1920x1442.jpg"
 intro: "Ми щойно опублікували FreeSewing v2.15 з новою викрійкою: Викрійка штанів Чарлі Чінос ."
 title: "Чарлі Чінос: хто хоче нові штани?"
 ---

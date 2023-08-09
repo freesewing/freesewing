@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Саймон для Шорша"
 date: "2020-12-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/242723e896e21decb6f7363a4defa62654165546-1536x2048.jpg"
 intro: "Мабуть, наймиліший Саймон на сьогоднішній день, ця сорочка була зроблена для жабеняти Шорша, користувача FreeSewing."
 title: "Саймон для Шорша"
 designs:

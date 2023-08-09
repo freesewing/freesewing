@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Eine flamboyate Flamingo Jaeger-Jacke"
 date: "2021-06-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3bbc589317e13e279d05f3b13eed309efabbfe23-480x534.jpg"
 intro: "Diese Jaeger-Jacke lässt uns alle bei FreeSewing überlegen, wie wir Flamingo-Muster in alle unsere Kreationen einbauen können."
 title: "Jaeger von Roberta"
 designs:

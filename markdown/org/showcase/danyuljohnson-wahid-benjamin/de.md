@@ -2,7 +2,6 @@
 maker: "danyuljohnson"
 caption: "Outfit für die weiße Themenhochzeit ihrer besten Freundin feat. Wahid und Benjamin"
 date: "17.09.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4955518c8ca48f1f7f653855d7250c1c65ed8998-3456x4608.jpg"
 intro: "Wir sind verliebt in dieses wunderschöne Outfit mit den Mustern Wahid und Benjamin! Der Hersteller sagte:"
 title: "danyuljohnson's brillanter Wahid und Benjamin"
 designs:

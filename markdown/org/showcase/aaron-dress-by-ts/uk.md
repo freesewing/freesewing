@@ -2,7 +2,6 @@
 maker: "TangerineShark"
 caption: "TangerineShark у модифікованій сукні Aaron"
 date: "2023-01-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/60bf0ea6d52c09618ecd7a59293faaf48da014b0-3024x4032.jpg"
 intro: "Агов! Користувач FreeSewing TangerineShark тут! Я модифікувала цю футболку Аарона, подовживши її на сукню."
 title: "Аарон, переодягнений у сукню"
 designs:

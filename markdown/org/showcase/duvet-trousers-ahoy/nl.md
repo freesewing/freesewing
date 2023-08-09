@@ -2,7 +2,6 @@
 maker: "comixminx"
 caption: "Deze broek is gemaakt van een gepensioneerd dekbedovertrek"
 date: "2022-06-09"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/2be33e00299fe330faee41f1770641982433aa3b-1918x2623.jpg"
 intro: "Deze uitstekende Paco broek was het eerste FreeSewing patroon van comixminx dat ze voor zichzelf heeft gemaakt! Ze gaf een aantal nuttige notities over het proces:"
 title: "Dekbedbroeken ahoy!"
 designs:

@@ -2,7 +2,6 @@
 maker: "Jasmin"
 caption: "En tendant le bras de ce Sven à épaules tombantes, tu pourras vraiment te rendre compte de l'effet de la modification"
 date: "2023-01-19"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/eb6eb402ffce2e41a4bf6a7f1b110e01ed98666f-1956x2608.jpg"
 intro: "Jasmine, utilisatrice de FreeSewing, a donc créé ce superbe Sven à épaules tombantes avec un petit plissé de manche, et c'est incroyable. Mais il y a mieux, car elle a créé un article sur la façon de procéder. Regarde le produit fini ici, mais fais défiler vers le bas si tu veux le mode d'emploi complet !"
 title: "Épaule tombante Sven"
 designs:

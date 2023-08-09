@@ -2,7 +2,6 @@
 maker: "Audreyyy"
 caption: "Old Shattterhand modèles Titan et Teagan"
 date: "01-22-2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7f86048972a716b1e07a89d33a21c8163d541ddc-3888x5184.jpg"
 intro: "La fantastique chemise Teagan et le pantalon Titan d'Audreyyy"
 title: "La fantastique chemise Teagan et le pantalon Titan d'Audreyyy"
 designs:

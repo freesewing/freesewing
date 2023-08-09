@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Dit bericht gaat vooral over ons werk aan progressieve openbaarmaking. Ook: Drie nieuwe patronen!"
 date: "2019-10-06"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/52db6852590a15208dace4a16a6a1c824037e400-2000x1500.jpg"
 intro: "We hebben zojuist FreeSewing v2.1 uitgebracht 🎉"
 title: "FreeSewing v2.1: Drie nieuwe patronen, expertmodus en hulp bij metingen"
 ---

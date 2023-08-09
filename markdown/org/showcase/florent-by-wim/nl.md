@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Florent pet"
 date: "2018-09-21"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/05241effbb4966cca830512f81b1910e7ecf46f8-1094x889.jpg"
 intro: "Hier is Wim met een Florent pet."
 title: "Een Florent pet door Wim"
 designs:

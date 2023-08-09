@@ -2,7 +2,6 @@
 maker: "SebastianSew"
 caption: "Paco Hose für die Arbeit im Freien mit elastischem Knöchel"
 date: "07.09.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/cfc2c203229bc437f737bf815bd8d65deb9d2c8c-868x1156.jpg"
 intro: "Dies ist das erste von zwei super tollen Paco-Hosen von SebastianSew! Diese hier haben einen Gummizug am Knöchel. Mit Rücken-, Front- und Seitentaschen. Der Stoff ist ein mittelschweres Baumwoll-Denim-Gewebe."
 title: "Die erstklassige Paco-Hose von SebastianSew, mit elastischem"
 designs:

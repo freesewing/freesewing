@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "El cliente está muy contento."
 date: "2020-10-08"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ebef91daa8acf992f814415e610a655a03278186-1200x1600.jpg"
 intro: "La primera versión de albert, hecha para su hija, por Wouter.vdub"
 title: "La primera versión de albert, hecha para su hija, por Wouter.vdub"
 designs:

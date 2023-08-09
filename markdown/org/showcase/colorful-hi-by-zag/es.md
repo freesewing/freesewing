@@ -2,7 +2,6 @@
 maker: "Zag"
 caption: "¡Este Hi es pequeño pero poderoso!"
 date: "2023-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7cadfee0eb0683535f5416db4a89204d4854beee-3096x5504.jpg"
 intro: "Súper colorido Hi de Zag"
 title: "Súper colorido Hi de Zag"
 designs:

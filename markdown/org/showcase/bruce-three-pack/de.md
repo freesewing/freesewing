@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Theo hat drei davon aus übrig gebliebenen Trikots gemacht."
 date: "2018-10-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/305d6d6adbdad633bc2cd33b0de6f7a199a38c28-3043x2282.jpg"
 intro: "Felix hat drei davon gemacht, und er schreibt:"
 title: "Ein Bruce-Dreierpack"
 designs:

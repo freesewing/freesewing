@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Примітка: цю статтю довго читати. Хоча й далеко не така довга, як ця книга"
 date: "2020-08-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1a143c96b4afc8c12d2014c5605bfd1e63d917d0-2000x1348.jpg"
 intro: "Будь ласка, допоможіть розвинути FreeSewing за межі того, що я можу зробити самостійно"
 title: "Будь ласка, допоможіть розвинути FreeSewing за межі того, що я можу зробити самостійно"
 ---

@@ -2,7 +2,6 @@
 maker: "Natalia Sayang"
 caption: "Wusstest du, dass sich das \"A\" in A-Shirt auf die dreieckige Form des Kleidungsstücks bezieht?"
 date: "2021-07-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/60945201919c87d88076815366d03f42beae4235-600x800.jpg"
 intro: "Dieses Tank-Top von Aaron wurde von Nat gemacht, die es mit uns geteilt hat:"
 title: "Floral Aaron"
 designs:

@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Die Näherin war mit ihrem Ergebnis zufrieden"
 date: "30.06.2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/433aa6299949881aa53c46f8778661ecf25ac893-1265x1686.jpg"
 intro: "Eine FreeSewing-Macherin hat diese Version des Noble Body Blocks geteilt."
 title: "Ein lässiger Test von Noble"
 designs:

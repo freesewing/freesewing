@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Estamos dando las gracias a nuestros colaboradores y queremos asegurarnos de que sus contribuciones reciben el crédito que merecen"
 date: "2021-11-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1488bc5a9940423308a38d2cd33edb86b6eed442-1920x1280.jpg"
 intro: "Durante nuestra última convocatoria de colaboradores , decidimos que pondríamos en marcha la especificación Todos los Colaboradores como forma de honrar a todos nuestros colaboradores."
 title: "Llamamiento a todos los colaboradores"
 ---

@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "De patroon illustratie voor Penelope"
 date: "2018-06-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/59646d7171bb8b18df952a1c9547cd212451de79-1920x1080.jpg"
 intro: "Ik ben erg blij te kunnen aankondigen dat de Penelope Pencil Skirt, die vandaag uit is in bèta, nu direct verkrijgbaar is."
 title: "Aankondiging van de Penelope Kokerrok; en onze strategie voor dameskleding"
 ---

@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Une chemise Simon si fantastique, modelée par le créateur !"
 date: "2023-05-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/41a2576323a499f2a571335a68795be7d6a88bdc-1920x1281.jpg"
 intro: "Le sixième Simon de cette couturière, nous adorons ce Simon à motifs géométriques dans une nuance de marron sillonnée de fines lignes blanches. Le créateur a déposé ceci dans un numéro GitHub pour le partager avec FreeSewing, et nous ne pourrions pas être plus satisfaits."
 title: "Un Simon géométrique brun"
 designs:

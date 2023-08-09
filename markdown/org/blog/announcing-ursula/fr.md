@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Photo par Karolina Grabowska de Pexels"
 date: "2021-06-27"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/13f022fe08c08ba927a13db25c554d730ec8f912-1280x853.jpg"
 intro: "Annonce Ursula, un patron de sous-vêtements basique et hautement personnalisable."
 title: "Annonce Ursula, un patron de sous-vêtements basique et hautement personnalisable."
 ---

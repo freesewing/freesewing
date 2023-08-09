@@ -2,7 +2,6 @@
 maker: "L'épave d'ATightShipwreck"
 caption: "Cornelius avec les hanches !"
 date: "2022-07-23"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/21ad37b0e35bbf1ec1f769ba0b642d0f4c2baefb-1290x2622.jpg"
 intro: "Nous adorons ces culottes de Cornélius fabriquées par ATightShipwreck ! Ils ont partagé :"
 title: "Culotte de cyclisme de Cornelius par ATightShipwreck"
 designs:

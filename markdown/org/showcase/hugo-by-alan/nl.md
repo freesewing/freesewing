@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Alan draagt zijn geweldige Hugo Hoodie"
 date: "2021-06-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/eae37d6abeaa9c0231ec6757be0ec4a5fd0b260a-908x1210.jpg"
 intro: "Alan maakte voor zichzelf een Hugo Hoodie met een grotere halslijn, zodat hij hem gemakkelijker en comfortabeler kon aantrekken zonder zijn haar of de hoodie in de war te brengen."
 title: "Hugo door Alan"
 designs:

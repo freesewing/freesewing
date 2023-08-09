@@ -2,7 +2,6 @@
 maker: "Canard"
 caption: "Une version actualisée du short Paco comme PJ, maintenant avec un empiècement."
 date: "2022-07-13"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b9253befec857619f0f366ae0df9c147a18e1cc9-1251x2668.jpg"
 intro: "Short Paco PJ, maintenant avec un empiècement supplémentaire"
 title: "Short Paco PJ, maintenant avec un empiècement supplémentaire"
 designs:

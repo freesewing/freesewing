@@ -2,7 +2,6 @@
 maker: "TangerineShark"
 caption: "Un vestido ajustado azul oscuro con constelaciones bordadas"
 date: "2021-09-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/da025b955c455a3d9dbef404a49881ea30a88a8f-1986x2648.jpg"
 intro: "Este vestido es un híbrido del bloque de cuerpo Bella y la falda circular Sandy . He estado llamando al combo Sanderella."
 title: "Una Sanderella Celestial"
 designs:

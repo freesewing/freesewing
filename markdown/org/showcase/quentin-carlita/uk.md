@@ -2,7 +2,6 @@
 maker: "Квентін"
 caption: "Пальто Карліта Квентіна"
 date: "2021-09-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b60941609d3b81d53fbbcc4e9657acda7ee0d909-640x631.jpg"
 intro: "Талановитий Квентін створив це елегантне і стильне пальто Carlita."
 title: "Пальто Карліта Квентіна"
 designs:

@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Vous aussi, vous pouvez porter ce manteau. Pour le chapeau, c'est vous qui verrez. Du moins, pour l'instant."
 date: "2017-12-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/01c201b14f04bedbe2630bb3bd40d925fd6c1ce4-3500x2333.jpg"
 intro: "Annonce de Carlton, le manteau de Sherlock Holmes, et de Bent, haut de base"
 title: "Annonce de Carlton, le manteau de Sherlock Holmes, et de Bent, haut de base"
 ---

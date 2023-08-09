@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Dein neuer Login-Hintergrund für den Monat Februar"
 date: "2018-01-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/6fbc797ad0b3d50a8337bd2cb8401f04f63bffdd-2000x1125.jpg"
 intro: "Dies ist dein monatlicher Überblick über die Freesewing-Nachrichten der letzten vier Wochen und ein Ausblick auf das, was im nächsten Monat ansteht."
 title: "Monatliches Roundup - Januar 2018: Inkscape DPI, Versionsbewusstsein, Bail und Carlita"
 ---

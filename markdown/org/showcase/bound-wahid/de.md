@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Ob du es glaubst oder nicht, das ist erst sein drittes Nähprojekt überhaupt."
 date: "05.02.2018"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3d05ee5656f7aac511d95ed567dab54c6545cd88-1080x1080.jpg"
 intro: "Eine Wahid-Weste mit gebundenen Knopflöchern"
 title: "Eine Wahid-Weste mit gebundenen Knopflöchern"
 designs:

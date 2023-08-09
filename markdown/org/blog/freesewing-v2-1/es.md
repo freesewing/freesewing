@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Este post trata principalmente de nuestro trabajo sobre la divulgación progresiva. También: ¡Tres nuevos patrones!"
 date: "2019-10-06"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/52db6852590a15208dace4a16a6a1c824037e400-2000x1500.jpg"
 intro: "Acabamos de lanzar FreeSewing v2.1 🎉"
 title: "FreeSewing v2.1: Tres nuevos patrones, modo experto y ayuda con las medidas"
 ---

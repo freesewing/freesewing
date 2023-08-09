@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Je ne bois pas, mais cela m'a semblé approprié pour un post de célébration ¯_(ツ)_/¯."
 date: "08-25-2018"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a6b5a3918ad412f7fb434413fafcc82107109d87-1920x1276.jpg"
 intro: "C'est le premier anniversaire de freesewing.org : Annonce la bibliothèque freesewing"
 title: "C'est le premier anniversaire de freesewing.org : Annonce la bibliothèque freesewing"
 ---

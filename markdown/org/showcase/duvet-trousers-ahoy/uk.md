@@ -2,7 +2,6 @@
 maker: "comixminx"
 caption: "Ці штани зроблені з підковдри, що вийшла з ужитку"
 date: "2022-06-09"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/2be33e00299fe330faee41f1770641982433aa3b-1918x2623.jpg"
 intro: "Ці чудові штани Пако були першою викрійкою FreeSewing, яку comixminx зробила для себе! Вона надала кілька корисних порад щодо процесу:"
 title: "Штани-ковдри на абордаж!"
 designs:

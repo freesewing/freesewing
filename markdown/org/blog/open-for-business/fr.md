@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ouvert 24 heures sur 24 et 7 jours sur 7 à partir d'aujourd'hui"
 date: "08-25-2017"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/444b63db2120d50eb52004b2017c992624bbb66e-2000x1333.jpg"
 intro: "Freesewing.org est ouvert à la concurrence. C'est-à-dire l'activité qui consiste à donner des patrons de couture gratuits."
 title: "Freesewing.org est ouvert à la concurrence. C'est-à-dire l'activité qui consiste à donner des patrons de couture gratuits."
 ---

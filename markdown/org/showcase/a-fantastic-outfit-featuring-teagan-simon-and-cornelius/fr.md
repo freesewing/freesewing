@@ -2,7 +2,6 @@
 maker: "GWIZ"
 caption: "Tous les matériaux de ces vêtements ont été recyclés"
 date: "2023-05-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9685e0803052ddfe17ecb79507dca229b6d67b95-2052x3648.jpg"
 intro: "Cette vitrine est vraiment spéciale - elle présente non pas un, ni deux, mais TROIS modèles FreeSewing !"
 title: "Une tenue fantastique mettant en scène Teagan, Simon et Cornelius."
 designs:

@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Hou die druppeltjes vol virussen op afstand met ons Florence mondmasker"
 date: "2020-02-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d2235dcc38012e87ac402d43e7ae7084a7d7e9b4-1920x1272.jpg"
 intro: "We hebben net een gezichtsmaskerpatroon gepubliceerd, omdat het coronavirus"
 title: "We hebben net een gezichtsmaskerpatroon gepubliceerd, omdat het coronavirus"
 ---

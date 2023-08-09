@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "La ilustración del patrón de Penélope"
 date: "2018-06-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/59646d7171bb8b18df952a1c9547cd212451de79-1920x1080.jpg"
 intro: "Me complace anunciar la disponibilidad inmediata de la Falda lápiz Penélope , que sale hoy en versión beta."
 title: "Anunciamos la falda lápiz Penélope; Y nuestra hoja de ruta de ropa de mujer"
 ---

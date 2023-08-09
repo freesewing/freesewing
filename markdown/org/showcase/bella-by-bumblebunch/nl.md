@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Een jurk gebaseerd op het Bella lijfje"
 date: "2021-06-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f2325ac8325f54f48637fa7d24e0edebfd5ab3ee-600x800.jpg"
 intro: "De getalenteerde Bumblebunch deelde deze jurk gebaseerd op het Bella lijfje! Wie had kunnen denken dat het van een oud laken was gemaakt!"
 title: "Bumblebunch's jurk gebaseerd op het Bella blok"
 designs:

@@ -2,7 +2,6 @@
 maker: "TangerineShark"
 caption: "TangerineShark in einem modifizierten Aaron-Kleid"
 date: "2023-01-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/60bf0ea6d52c09618ecd7a59293faaf48da014b0-3024x4032.jpg"
 intro: "Hey! FreeSewing-Benutzer TangerineShark hier! Ich habe dieses Aaron A-Shirt in ein Kleid umgewandelt und verlängert."
 title: "Aaron modifiziert zu einem Kleid"
 designs:

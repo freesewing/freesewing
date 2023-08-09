@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Imagínate a usted y a él, en los abrigos iguales."
 date: "2018-01-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d0ac31adcf8e14cec377aada6c688394a15199d8-1920x1440.webp"
 intro: "Esta es para las damas --- y no estoy (solamente) hablando de la imagen del ídolo Benedict Cumberbatch en la parte superior de este post."
 title: "Presentamos Carlita, la versión femenina de nuestro abrigo Carlton."
 ---

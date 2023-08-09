@@ -2,7 +2,6 @@
 maker: "rostig"
 caption: "Dieses hübsche Wahid wurde aus geblümter Baumwolle gefertigt"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/429adcc0d0847351ca6076d941428f67dba6a223-910x1265.jpg"
 intro: "Rostic hat diese tolle Wahid-Weste gemacht! Du wirst die Detailbilder unten nicht verpassen wollen."
 title: "Rostic's ausgezeichnete Wahid-Weste"
 designs:

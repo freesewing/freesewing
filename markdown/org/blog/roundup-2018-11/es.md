@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Tu fondo de conexión para diciembre"
 date: "2018-11-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ebdb5fce7cd9b56f2f9d51d05dbda187195e30b6-1920x1280.jpg"
 intro: "Resumen mensual - Noviembre de 2018: Nuevos escaparates y una (falsa) alarma de seguridad"
 title: "Resumen mensual - Noviembre de 2018: Nuevos escaparates y una (falsa) alarma de seguridad"
 ---

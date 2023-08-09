@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Een fan-favoriete Sven sweatshirt met een otter French terry"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b851b4ceda3714fed1cf4b6eb3d624724803c3ba-864x1152.jpg"
 intro: "Een otter-heerlijk Sven sweatshirt"
 title: "Een otter-heerlijk Sven sweatshirt"
 designs:

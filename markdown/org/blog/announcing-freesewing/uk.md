@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Логотип freesewing"
 date: "2017-03-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4e1f5426ee6578ef31d9c18a1de9b4beef15836b-2000x1125.jpg"
 intro: "Я з гордістю оголошую про випуск ядра freesewing v1.0.0 та супровідної документації, яка детально описує проект freesewing."
 title: "Анонс freesewing, платформи з відкритим вихідним кодом для створення викрійок одягу за індивідуальними замовленнями"
 ---

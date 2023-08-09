@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "De belangrijkste verandering is natuurlijk dat we van paars naar zwart zijn gegaan als onze huisstijlkleur."
 date: "2018-05-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e67a17e37a70154b3bb250ea1cb60eff2baddb55-1920x1285.jpg"
 intro: "Welkom op onze nieuwe website. Het voldoet aan GDPR, spreekt 3 talen en ruikt naar natte verf"
 title: "Welkom op onze nieuwe website. Het voldoet aan GDPR, spreekt 3 talen en ruikt naar natte verf"
 ---

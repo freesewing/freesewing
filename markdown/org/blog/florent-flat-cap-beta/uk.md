@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Квентін в оточенні наших майбутніх роботів-начальників."
 date: "2017-12-06"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ee5c11e3b29fe788dae470ab0e20396d806c4d1b-2000x1333.jpg"
 intro: "Шаблон Florent Flat Cap тепер доступний у бета-версії. Ще один подарунок відсортований."
 title: "Шаблон Florent Flat Cap тепер доступний у бета-версії. Ще один подарунок відсортований."
 ---

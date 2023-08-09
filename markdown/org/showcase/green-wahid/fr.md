@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "C'est une couture désintéressée de haute qualité que nous avons ici"
 date: "2016-08-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e7559ec0b220cf12bf7457c3816db1771737b30f-579x699.jpg"
 intro: "Cette image provient de l'article du blog Unselfish Sewing - Wahid Waistcoat sur rememberinggravity.wordpress.com."
 title: "Un gilet Wahid vert par Rose"
 designs:

@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Foto door Alex Andrews van Pexels"
 date: "2020-09-09"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8bee0b9035162c14da54744b24539e56a8e16e27-2000x1500.jpg"
 intro: "Een tijdje geleden vroeg iemand of we een t-shirtpatroon hadden op FreeSewing, en toen bleek dat niet zo te zijn."
 title: "Samen met FreeSewing 2.9 arriveert ons Teagan t-shirt patroon"
 ---

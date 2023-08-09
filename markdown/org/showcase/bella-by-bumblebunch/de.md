@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Ein Kleid basierend auf dem Bella Miederblock"
 date: "25.06.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f2325ac8325f54f48637fa7d24e0edebfd5ab3ee-600x800.jpg"
 intro: "Die talentierte Bumblebunch hat dieses Kleid auf Basis des Bella Miederblocks geteilt! Wer hätte gedacht, dass es aus einem alten Bettlaken gemacht ist?!"
 title: "Das Kleid von Bumblebunch basiert auf dem Bella-Block"
 designs:

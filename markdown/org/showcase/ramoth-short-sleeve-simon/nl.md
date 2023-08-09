@@ -2,7 +2,6 @@
 maker: "Ramoth"
 caption: "Ramoths Simon met korte mouwen, waarbij de meeste vorm is verplaatst naar de figuurnaden op de rug"
 date: "2021-09-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fdf5a6c5f8ef988575d9a57c1fe5a6b2734e566f-1836x3264.jpg"
 intro: "Simon overhemd met korte mouwen van Ramoth"
 title: "Simon overhemd met korte mouwen van Ramoth"
 designs:

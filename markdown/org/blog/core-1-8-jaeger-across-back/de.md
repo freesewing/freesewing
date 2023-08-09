@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Diese Version übermitteln wir Ihnen aus Bangkok"
 date: "2018-03-21"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/34ed654dcda9004e7c249b90256ad197469cc87e-1920x1277.webp"
 intro: "Wir haben gerade den Knopf für Core 1.8.0 gedrückt. Der Sprung in der Minoritätszahl ist normalerweise auf ein neues Muster zurückzuführen, aber in diesem Fall gibt es zwei Gründe:"
 title: "FreeSewing Core 1.8: Jeager-Sakko ist drin, die Rückenbreite ist raus"
 ---

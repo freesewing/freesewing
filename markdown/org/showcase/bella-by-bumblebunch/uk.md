@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Сукня на основі ліфового блоку \"Белла"
 date: "2021-06-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f2325ac8325f54f48637fa7d24e0edebfd5ab3ee-600x800.jpg"
 intro: "Талановита Bumblebunch поділилася цією сукнею на основі ліфового блоку Bella! Хто б міг подумати, що вона зроблена зі старого простирадла?!"
 title: "Сукня Бамблбанч на основі блоку Bella"
 designs:

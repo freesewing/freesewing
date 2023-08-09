@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Швачка була задоволена результатом"
 date: "2022-06-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/433aa6299949881aa53c46f8778661ecf25ac893-1265x1686.jpg"
 intro: "Майстриня з FreeSewing поділилася цією версією блоку Noble body."
 title: "Випадковий тест на благородство"
 designs:

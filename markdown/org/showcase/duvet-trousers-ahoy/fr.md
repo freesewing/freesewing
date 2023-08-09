@@ -2,7 +2,6 @@
 maker: "comixminx"
 caption: "Ce pantalon est fabriqué à partir d'une housse de couette à la retraite"
 date: "06-09-2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/2be33e00299fe330faee41f1770641982433aa3b-1918x2623.jpg"
 intro: "Cet excellent pantalon Paco est le premier patron FreeSewing que comixminx a réalisé pour elle-même ! Elle a fourni quelques notes utiles sur le processus :"
 title: "Pantalon de couette, ohé !"
 designs:

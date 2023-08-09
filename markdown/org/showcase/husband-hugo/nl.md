@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Ligt het aan mij of is Hugo een populair patroon voor echtgenoten?"
 date: "2015-12-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/bc1b64060b3b0907157c2e1608b2b2610b81a4b0-1080x1080.jpg"
 intro: "Deze foto komt van de Instagram feed van uneanneedecouture ."
 title: "Een Hugo voor de echtgenoot, door Sonia"
 designs:

@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "¡una versión más cómoda y corta de Bruce!"
 date: "2021-08-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0ab813c61caf89cb240486fe8cc2858ecdd06607-800x600.jpg"
 intro: "La primera versión de Bruce de Victoria tuvo algunos fans al instante: ¡la gente de la comunidad FreeSewing le pidió que copiara sus ajustes para sus propios pares!"
 title: "Una versión más corta de Bruce"
 designs:

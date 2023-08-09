@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Le docteur Dragnea de l'hôpital universitaire d'Anvers porte un masque de Florence."
 date: "2020-03-19"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b811b79114f15aa192a1962b95083e6c55d79402-1532x1123.jpg"
 intro: "Appel à tous : voici un patron de masque facial PDF en 1 page ; fabriquez-en quelques uns et aidez à vaincre cette chose"
 title: "Appel à tous : voici un patron de masque facial PDF en 1 page ; fabriquez-en quelques uns et aidez à vaincre cette chose"
 ---

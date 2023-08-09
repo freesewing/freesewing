@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ваша історія входу в систему за лютий"
 date: "2019-01-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/26bf3d41513702ad361b5a0f15dcff2350cc852b-1920x1440.jpg"
 intro: "Невже вже кінець січня? Вже?"
 title: "Щомісячний огляд - січень 2019: велике бета-оновлення"
 ---
