@@ -27,24 +27,12 @@ describe('Part', () => {
 
   it('Should not run an unknown macro', () => {
     let unknownMacro = 1
-    // const plugin = {
-    //   name: 'test',
-    //   version: '0.1-test',
-    //   macros: {
-    //     test: function (so) {
-    //       let points = this.points
-    //       points.macro = new this.Point(so.x, so.y)
-    //     },
-    //   },
-    // }
     const part = {
       name: 'test',
-      draft: ({ part, Point, points, macro }) => {
-        points.example = new Point(12, 34)
+      draft: ({ part, macro }) => {
         unknownMacro = macro('unknown')
         return part
       },
-      // plugins: plugin,
     }
     const design = new Design({ parts: [part] })
     const pattern = new design()
@@ -66,7 +54,7 @@ describe('Part', () => {
     }
     const part = {
       name: 'test',
-      draft: ({ part, Point, points, macro }) => {
+      draft: ({ part, macro }) => {
         macroId = macro('test')
         return part
       },
@@ -89,7 +77,7 @@ describe('Part', () => {
     }
     const part = {
       name: 'test',
-      draft: ({ part, Point, points, macro }) => {
+      draft: ({ part, macro }) => {
         macroId = macro('test', { id: 'testId1' })
         return part
       },
@@ -98,11 +86,11 @@ describe('Part', () => {
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
+    console.log({ macroId: macroId })
     console.log({ pattern: pattern })
     console.log({ store: pattern.store })
-    console.log({ part: pattern.part['test'] })
-    expect(macroId).to.equal('__macro_test_testId1')
-    // expect(pattern.store.).to.equal('__macro_test_testId1')
+    // console.log({ part: pattern.part['test'] })
+    expect(macroId).to.equal('testId1')
   })
 
   it('Should return a valid ID with Part.getId()', () => {

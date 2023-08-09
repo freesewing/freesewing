@@ -163,7 +163,7 @@ describe('Cutlist Plugin Tests', () => {
       name: 'example_part',
       draft: ({ Point, store, part }) => {
         try {
-          store.cutlist.setCutOnFold(new Point(2, 2), new Point(200, 200))
+          store.cutlist.setCutOnFold(new Point(2, 2), new Point(200, 200), 'cf')
         } catch (err) {
           console.log(err)
         }
@@ -175,10 +175,10 @@ describe('Cutlist Plugin Tests', () => {
     const Test = new Design({ parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    expect(pattern.setStores[0].cutlist.example_part.cutOnFold[0].x).to.equal(2)
-    expect(pattern.setStores[0].cutlist.example_part.cutOnFold[0].y).to.equal(2)
-    expect(pattern.setStores[0].cutlist.example_part.cutOnFold[1].x).to.equal(200)
-    expect(pattern.setStores[0].cutlist.example_part.cutOnFold[1].y).to.equal(200)
+    expect(pattern.setStores[0].cutlist.example_part.cutOnFold[0].points[0].x).to.equal(2)
+    expect(pattern.setStores[0].cutlist.example_part.cutOnFold[0].points[0].y).to.equal(2)
+    expect(pattern.setStores[0].cutlist.example_part.cutOnFold[0].points[1].x).to.equal(200)
+    expect(pattern.setStores[0].cutlist.example_part.cutOnFold[0].points[1].y).to.equal(200)
   })
 
   it('Should removet the cutOnFold via setCutOnFold(false)', () => {

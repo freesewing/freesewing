@@ -27,14 +27,14 @@ export const titleMacros = {
     const validAlignments = ['left', 'right', 'center']
     const alignment = validAlignments.includes(so.align) ? ' ' + so.align : ' left'
 
-    points[`_${id}_titleNr`] = so.at
+    points[`${id}_titleNr`] = so.at
       .clone()
       .attr('data-text', so.nr, !so.append)
       .attr('data-text-class', 'text-4xl fill-note font-bold' + alignment)
       .attr('data-text-transform', transform(so.at))
 
     if (so.title) {
-      points[`_${id}_titleName`] = nextPoint(so.title, 'text-lg fill-current font-bold' + alignment)
+      points[`${id}_titleName`] = nextPoint(so.title, 'text-lg fill-current font-bold' + alignment)
       shift += 8
     }
 
@@ -64,7 +64,7 @@ export const titleMacros = {
           cutPoint.addText('plugin:from').addText('plugin:' + material)
 
           // save and shift
-          points[`_${id}_titleCut_${material}_${c}`] = cutPoint
+          points[`${id}_titleCut_${material}_${c}`] = cutPoint
           shift += 8
         })
       }
@@ -73,11 +73,11 @@ export const titleMacros = {
     let name = store.data?.name || 'No Name'
     name = name.replace('@freesewing/', '')
     name += ' v' + (store.data?.version || 'No Version')
-    points[`_${id}_titlePattern`] = nextPoint(name, 'fill-note' + alignment)
+    points[`${id}_titlePattern`] = nextPoint(name, 'fill-note' + alignment)
 
     if (store.data.for) {
       shift += 8
-      points[`_${id}_titleFor`] = nextPoint(
+      points[`${id}_titleFor`] = nextPoint(
         `( ${store.data.for} )`,
         'fill-current font-bold' + alignment
       )
@@ -94,20 +94,18 @@ export const titleMacros = {
       month: 'short',
       day: 'numeric',
     })
-    points[`_${id}_exportDate`] = nextPoint(
-      `${exportDate}@ ${hours}:${mins}`,
-      'text-sm' + alignment
-    )
+    points[`${id}_exportDate`] = nextPoint(`${exportDate}@ ${hours}:${mins}`, 'text-sm' + alignment)
   },
   rmtitle: function (id, { points }) {
     const mid = prefix + id
     for (const key of [
-      `_${mid}_titleNr`,
-      `_${mid}_titleName`,
-      `_${mid}_titlePattern`,
-      `_${mid}_titleFor`,
-      `_${mid}_exportDate`,
+      `${mid}_titleNr`,
+      `${mid}_titleName`,
+      `${mid}_titlePattern`,
+      `${mid}_titleFor`,
+      `${mid}_exportDate`,
     ])
       delete points[key]
+    points = points.filter((p) => !p.name.match(`${mid}_titleCut_.+`))
   },
 }

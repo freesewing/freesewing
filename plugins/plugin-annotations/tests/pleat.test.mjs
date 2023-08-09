@@ -23,7 +23,7 @@ describe('Pleat Plugin Tests', () => {
     const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    var c = pattern.parts[0].test.paths.pleatPleatFrom
+    var c = pattern.parts[0].test.paths.pleat_1_PleatFrom
     expect(c.attributes.get('class')).to.equal('note')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[1].type).to.equal('line')
@@ -31,7 +31,7 @@ describe('Pleat Plugin Tests', () => {
     expect(round(c.ops[0].to.y)).to.equal(20)
     expect(round(c.ops[1].to.x)).to.equal(45)
     expect(round(c.ops[1].to.y)).to.equal(20)
-    c = pattern.parts[0].test.paths.pleatPleatTo
+    c = pattern.parts[0].test.paths.pleat_1_PleatTo
     expect(c.attributes.get('class')).to.equal('note dashed')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[1].type).to.equal('line')
@@ -39,7 +39,7 @@ describe('Pleat Plugin Tests', () => {
     expect(round(c.ops[0].to.y)).to.equal(220)
     expect(round(c.ops[1].to.x)).to.equal(45)
     expect(round(c.ops[1].to.y)).to.equal(220)
-    c = pattern.parts[0].test.paths.pleatPleatArrow
+    c = pattern.parts[0].test.paths.pleat_1_PleatArrow
     expect(c.attributes.get('class')).to.equal('note')
     expect(c.attributes.get('marker-end')).to.equal('url(#pleatTo)')
     expect(c.ops[0].type).to.equal('move')
@@ -69,11 +69,11 @@ describe('Pleat Plugin Tests', () => {
     const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    var c = pattern.parts[0].test.paths.pleatPleatFrom
+    var c = pattern.parts[0].test.paths.pleat_1_PleatFrom
     expect(c.attributes.get('class')).to.equal('note dashed')
-    c = pattern.parts[0].test.paths.pleatPleatTo
+    c = pattern.parts[0].test.paths.pleat_1_PleatTo
     expect(c.attributes.get('class')).to.equal('note')
-    c = pattern.parts[0].test.paths.pleatPleatArrow
+    c = pattern.parts[0].test.paths.pleat_1_PleatArrow
     expect(round(c.ops[0].to.x)).to.equal(18.75)
     expect(round(c.ops[0].to.y)).to.equal(220)
     expect(round(c.ops[1].to.x)).to.equal(18.75)
