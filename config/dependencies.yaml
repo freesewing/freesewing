@@ -141,7 +141,7 @@ react-components:
 rehype-jargon:
   _:
     'unist-util-visit': &unist-util-visit '5.0.0'
-    'hast-util-from-html': '1.0.2'
+    'hast-util-from-html': '2.0.1'
 rehype-highlight-lines:
   _:
     'unist-util-remove': '4.0.0'
