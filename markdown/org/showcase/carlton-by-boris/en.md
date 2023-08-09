@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "Boris in his incredible Carlton Coat"
 date: "2023-02-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8d7e149722688b531c2cfbeaac82de4e6730f156-2252x4000.jpg"
 intro: "I don't even know where to start. Will you just look at this coat? It's incredible."
 title: "Classic Carlton by Boris"
 designs: ["carlton"]

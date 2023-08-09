@@ -5,10 +5,11 @@ import { Author } from './author.mjs'
 import { TimeAgo } from 'shared/components/mdx/meta.mjs'
 import { useTranslation } from 'next-i18next'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
+import { cloudflareImageUrl } from 'shared/utils.mjs'
 
 export const ns = ['common', 'posts']
 
-export const PostArticle = ({ frontmatter, MDX }) => {
+export const PostArticle = ({ frontmatter, MDX, imgId }) => {
   const { t } = useTranslation('common')
   return (
     <article className="mb-12 px-8 max-w-7xl">
@@ -36,7 +37,11 @@ export const PostArticle = ({ frontmatter, MDX }) => {
       <figure>
         <Lightbox>
           <ImageWrapper>
-            <img src={frontmatter.image} alt={frontmatter.caption} className="shadow m-auto" />
+            <img
+              src={cloudflareImageUrl({ id: imgId })}
+              alt={frontmatter.caption}
+              className="shadow m-auto"
+            />
           </ImageWrapper>
           <figcaption
             className="text-center mb-8 prose m-auto"

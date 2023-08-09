@@ -302,10 +302,17 @@ Backend.prototype.sendLanguageSuggestion = async function (data) {
 }
 
 /*
- * Create payment intent
+ * Confirm newsletter subscribe
  */
-Backend.prototype.createPaymentIntent = async function (data) {
-  return responseHandler(await api.post(`/payments/intent`, data), 201)
+Backend.prototype.confirmNewsletterSubscribe = async function ({ id, ehash }) {
+  return responseHandler(await api.put('/subscriber', { id, ehash }))
+}
+
+/*
+ * Confirm newsletter unsubscribe
+ */
+Backend.prototype.confirmNewsletterUnsubscribe = async function ({ id, ehash }) {
+  return responseHandler(await api.delete('/subscriber', { id, ehash }))
 }
 
 export function useBackend(token = false) {

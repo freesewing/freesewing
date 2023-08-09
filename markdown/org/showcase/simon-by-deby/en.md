@@ -2,7 +2,6 @@
 maker: "Deby"
 caption: "Simon shirt with colourful details"
 date: "2021-07-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c749c87baf2715a7f868648c016cd967695062cf-689x919.png"
 intro: "Simon by Deby"
 title: "Simon by Deby"
 designs: ["simon"]

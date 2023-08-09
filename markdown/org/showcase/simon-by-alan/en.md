@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "A short-sleeved Simon shirt"
 date: "2021-06-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ca7321e1085eb2c81e8c3affa89d14863bc4584a-770x1048.jpg"
 intro: "Alan jumped right in the sewing deep end with this Simon shirt, with very impressive results!"
 title: "Alan's short-sleeved Simon shirt"
 designs: ["simon"]

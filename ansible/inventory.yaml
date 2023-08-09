@@ -6,16 +6,12 @@ local:
 
 all:
   children:
-    main:
+    v2:
       hosts:
         backend.freesewing.org:
           db: freesewing
-    next:
+    v3:
       hosts:
-        next.backend.freesewing.org:
-          db: next_freesewing
-    2022:
-      hosts:
-        maze.backend.freesewing.org:
-          db: freesewing
+        backend3.freesewing.org:
+          monorepo: /fs/monorepo
 

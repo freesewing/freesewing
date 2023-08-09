@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "You too can wear this coat. Although you're on your own for the hat. At least for now."
 date: "2017-12-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/01c201b14f04bedbe2630bb3bd40d925fd6c1ce4-3500x2333.jpg"
 intro: "Announcing Carlton, aka the Sherlock Holmes coat, and the Bent Body Block"
 title: "Announcing Carlton, aka the Sherlock Holmes coat, and the Bent Body Block"
 ---

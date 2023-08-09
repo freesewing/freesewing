@@ -14,6 +14,6 @@ L'aisance qui est ajoutée pour vous permettre de vous mouvoir à l'intérieur d
 
 L'aisance peut aussi fonctionner à l'inverse. Quand le tissu est extensible, vous pouvez choisir d'utiliser moins de tissu que ce qui est nécessaire pour s'ajuster aux mesures exactes du corps. Ceci s'appelle **l'aisance négative**.
 
-L'aisance négative est utilisée pour les matières extensibles lorsque le vêtement doit être ajusté près du corps. Par exemple, pour les maillots de bain, les collants, les sous-vêtements ou les vêtements de sport.
+Negative ease is used for stretchy materials where the garment must fit tightly. Par exemple, pour les maillots de bain, les collants, les sous-vêtements ou les vêtements de sport.
 
 > Images de [Quinn Dombrowski](https://www.flickr.com/photos/quinnanya/8885126989/) et [sutiblr](https://www.flickr.com/photos/30788655@N08/4743320893)

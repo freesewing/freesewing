@@ -2,7 +2,6 @@
 maker: "Anneke Caramin"
 caption: "back view of Anneke's shiny black Sandy skirt"
 date: "2020-10-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f17b554dceedcfa01572346e5032e4836deb6f52-1080x1080.jpg"
 intro: "Read Anneke's extensive 2018 blogpost about her new Sandy skirt , including how she added pockets and a curved waistband."
 title: "Anneke's shiny black Sandy circle skirt"
 designs: ["sandy"]

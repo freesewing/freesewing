@@ -2,7 +2,6 @@
 maker: "comixminx"
 caption: "Lycra swim shorts"
 date: "2022-04-04"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fe9742719123fca0d036202d2e3c5c2654ca2b71-3024x4032.jpg"
 intro: "These Shin swim shorts were a labor of love -- comixminx made several test pairs in stretchy fabric to refine the fit. She shared lots of tips on Discord along the way. A couple key ones:"
 title: "Shin swim trunks for comixminx's kid"
 designs: ["shin"]

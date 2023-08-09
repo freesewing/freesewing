@@ -1,6 +1,6 @@
 import { capitalize } from '../utils/index.mjs'
 import { log } from '../utils/log.mjs'
-import { setSetAvatar } from '../utils/sanity.mjs'
+import { storeImage } from '../utils/cloudflare-images.mjs'
 import yaml from 'js-yaml'
 
 export function CuratedSetModel(tools) {
@@ -28,7 +28,7 @@ CuratedSetModel.prototype.guardedCreate = async function ({ body, user }) {
   }
   if (body.measies) data.measies = this.sanitizeMeasurements(body.measies)
   else data.measies = {}
-  // Set this one initially as we need the ID to create a custom img via Sanity
+  // Set this one initially as we need the ID to store an image on cloudflare
   data.img = this.config.avatars.set
 
   // Create record
@@ -36,10 +36,14 @@ CuratedSetModel.prototype.guardedCreate = async function ({ body, user }) {
 
   // Update img? (now that we have the ID)
   const img =
-    this.config.use.sanity &&
+    this.config.use.cloudflareImages &&
     typeof body.img === 'string' &&
-    (!body.test || (body.test && this.config.use.tests?.sanity))
-      ? await setSetAvatar(this.record.id, body.img)
+    (!body.test || (body.test && this.config.use.tests?.cloudflareImages))
+      ? await storeImage({
+          id: `cset-${this.record.id}`,
+          metadata: { user: user.uid },
+          b64: body.img,
+        })
       : false
 
   if (img) await this.unguardedUpdate({ img: img.url })
@@ -235,7 +239,11 @@ CuratedSetModel.prototype.guardedUpdate = async function ({ params, body, user }
 
   // Image (img)
   if (typeof body.img === 'string') {
-    const img = await setSetAvatar(params.id, body.img)
+    const img = await storeImage({
+      id: `cset-${this.record.id}`,
+      metadata: { user: this.user.uid },
+      b64: body.img,
+    })
     data.img = img.url
   }
 

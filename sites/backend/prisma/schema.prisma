@@ -30,10 +30,11 @@ model Confirmation {
 
 model Subscriber {
   id        String   @id @default(uuid())
+  active    Boolean  @default(false)
   createdAt DateTime @default(now())
-  data      String
   ehash     String   @unique
   email     String
+  language  String   @default("en")
   updatedAt DateTime @updatedAt
 }
 
@@ -117,16 +118,19 @@ model CuratedSet {
   nameEs    String    @default("")
   nameFr    String    @default("")
   nameNl    String    @default("")
+  nameUk    String    @default("")
   notesDe   String    @default("")
   notesEn   String    @default("")
   notesEs   String    @default("")
   notesFr   String    @default("")
   notesNl   String    @default("")
+  notesUk   String    @default("")
   tagsDe    String    @default("")
   tagsEn    String    @default("")
   tagsEs    String    @default("")
   tagsFr    String    @default("")
   tagsNl    String    @default("")
+  tagsUk    String    @default("")
   measies   String    @default("{}")
   patterns  Pattern[]
   updatedAt DateTime @updatedAt

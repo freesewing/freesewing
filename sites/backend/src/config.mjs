@@ -42,14 +42,14 @@ const baseConfig = {
       github: envToBool(process.env.BACKEND_ENABLE_OAUTH_GITHUB),
       google: envToBool(process.env.BACKEND_ENABLE_OAUTH_GOOGLE),
     },
-    sanity: envToBool(process.env.BACKEND_ENABLE_SANITY),
+    cloudflareImages: envToBool(process.env.BACKEND_ENABLE_CLOUDFLARE_IMAGES),
     ses: envToBool(process.env.BACKEND_ENABLE_AWS_SES),
-    stripe: envToBool(process.env.BACKEND_ENABLE_PAYMENTS),
     tests: {
       base: envToBool(process.env.BACKEND_ENABLE_TESTS),
       email: envToBool(process.env.BACKEND_ENABLE_TESTS_EMAIL),
-      sanity: envToBool(process.env.BACKEND_ENABLE_TESTS_SANITY),
+      cloudflareImages: envToBool(process.env.BACKEND_ENABLE_TESTS_CLOUDFLARE_IMAGES),
     },
+    import: envToBool(process.env.BACKEND_ENABLE_IMPORT),
   },
   // Config
   api,
@@ -58,9 +58,10 @@ const baseConfig = {
     expiryMaxSeconds: 365 * 24 * 3600,
   },
   avatars: {
-    user: process.env.BACKEND_AVATAR_USER || 'https://freesewing.org/avatar.svg',
-    set: process.env.BACKEND_AVATAR_SET || 'https://freesewing.org/avatar.svg',
-    pattern: process.env.BACKEND_AVATAR_PATTERN || 'https://freesewing.org/avatar.svg',
+    user: process.env.BACKEND_AVATAR_USER || 'default-avatar',
+    set: process.env.BACKEND_AVATAR_SET || 'default-avatar',
+    cset: process.env.BACKEND_AVATAR_CSET || 'default-avatar',
+    pattern: process.env.BACKEND_AVATAR_PATTERN || 'default-avatar',
   },
   db: {
     url: process.env.BACKEND_DB_URL || './db.sqlite',
@@ -86,7 +87,7 @@ const baseConfig = {
     audience: process.env.BACKEND_JWT_ISSUER || 'freesewing.org',
     expiresIn: process.env.BACKEND_JWT_EXPIRY || '7d',
   },
-  languages: ['en', 'de', 'es', 'fr', 'nl'],
+  languages: ['en', 'de', 'es', 'fr', 'nl', 'uk'],
   translations: ['de', 'es', 'fr', 'nl', 'uk'],
   measies: measurements,
   mfa: {
@@ -141,25 +142,16 @@ if (baseConfig.use.github)
     },
   }
 
-// Sanity config
-if (baseConfig.use.sanity)
-  baseConfig.sanity = {
-    project: process.env.SANITY_PROJECT,
-    dataset: process.env.SANITY_DATASET || 'production',
-    token: process.env.SANITY_TOKEN || 'fixmeSetSanityToken',
-    version: process.env.SANITY_VERSION || 'v2022-10-31',
-    api: `https://${process.env.SANITY_PROJECT || 'missing-project-id'}.api.sanity.io/${
-      process.env.SANITY_VERSION || 'v2022-10-31'
-    }`,
+// Cloudflare Images config
+if (baseConfig.use.cloudflareImages) {
+  const account = process.env.BACKEND_CLOUDFLARE_ACCOUNT || 'fixmeSetCloudflareAccountId'
+  baseConfig.cloudflareImages = {
+    account,
+    api: `https://api.cloudflare.com/client/v4/accounts/${account}/images/v1`,
+    token: process.env.BACKEND_CLOUDFLARE_IMAGES_TOKEN || 'fixmeSetCloudflareToken',
+    import: envToBool(process.env.BACKEND_IMPORT_CLOUDFLARE_IMAGES),
   }
-
-// Stripe config
-if (baseConfig.use.stripe)
-  baseConfig.stripe = {
-    keys: {
-      createIntent: process.env.BACKEND_STRIPE_CREATE_INTENT_KEY || false,
-    },
-  }
+}
 
 // AWS SES config (for sending out emails)
 if (baseConfig.use.ses)
@@ -201,7 +193,7 @@ if (baseConfig.use.oauth?.google)
 const config = postConfig(baseConfig)
 
 // Exporting this stand-alone config
-export const sanity = config.sanity || {}
+export const cloudflareImages = config.cloudflareImages || {}
 export const website = config.website
 
 const vars = {
@@ -214,7 +206,7 @@ const vars = {
   BACKEND_JWT_EXPIRY: 'optional',
   // Feature flags
   BACKEND_ENABLE_AWS_SES: 'optional',
-  BACKEND_ENABLE_SANITY: 'optional',
+  BACKEND_ENABLE_CLOUDFLARE_IMAGES: 'optional',
   BACKEND_ENABLE_GITHUB: 'optional',
   BACKEND_ENABLE_OAUTH_GITHUB: 'optional',
   BACKEND_ENABLE_OAUTH_GOOGLE: 'optional',
@@ -235,12 +227,10 @@ if (envToBool(process.env.BACKEND_ENABLE_AWS_SES)) {
   vars.BACKEND_AWS_SES_CC = 'optional'
   vars.BACKEND_AWS_SES_BCC = 'optional'
 }
-// Vars for Sanity integration
-if (envToBool(process.env.BACKEND_USE_SANITY)) {
-  vars.SANITY_PROJECT = 'required'
-  vars.SANITY_TOKEN = 'requiredSecret'
-  vars.SANITY_VERSION = 'optional'
-  vars.BACKEND_TEST_SANITY = 'optional'
+// Vars for Cloudflare Images integration
+if (envToBool(process.env.BACKEND_USE_CLOUDFLARE_IMAGES)) {
+  vars.BACKEND_CLOUDFLARE_IMAGES_TOKEN = 'requiredSecret'
+  vars.BACKEND_TEST_CLOUDFLARE_IMAGES = 'optional'
 }
 // Vars for Github integration
 if (envToBool(process.env.BACKEND_ENABLE_GITHUB)) {
@@ -259,10 +249,6 @@ if (envToBool(process.env.BACKEND_ENABLE_OAUTH_GITHUB)) {
 if (envToBool(process.env.BACKEND_ENABLE_OAUTH_GOOGLE)) {
   vars.BACKEND_OAUTH_GOOGLE_CLIENT_ID = 'required'
   vars.BACKEND_OAUTH_GOOGLE_CLIENT_SECRET = 'requiredSecret'
-}
-// Vars for Stripe integration
-if (envToBool(process.env.BACKEND_ENABLE_PAYMENTS)) {
-  vars.BACKEND_STRIPE_CREATE_INTENT_KEY = 'requiredSecret'
 }
 
 // Vars for (unit) tests
@@ -339,15 +325,13 @@ export function verifyConfig(silent = false) {
           config.jwt.secretOrKey.slice(0, 4) + '**redacted**' + config.jwt.secretOrKey.slice(-4),
       },
     }
-    if (config.stripe)
-      dump.stripe = {
-        ...config.stripe.keys,
-        //token: config.sanity.token.slice(0, 4) + '**redacted**' + config.sanity.token.slice(-4),
-      }
-    if (config.sanity)
-      dump.sanity = {
-        ...config.sanity,
-        token: config.sanity.token.slice(0, 4) + '**redacted**' + config.sanity.token.slice(-4),
+    if (config.cloudflareImages)
+      dump.cloudflareImages = {
+        ...config.cloudflareImages,
+        token:
+          config.cloudflareImages.token.slice(0, 4) +
+          '**redacted**' +
+          config.cloudflareImages.token.slice(-4),
       }
     console.log(chalk.cyan.bold('Dumping configuration:\n'), asJson(dump, null, 2))
   }

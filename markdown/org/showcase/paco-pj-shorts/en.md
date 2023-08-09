@@ -2,7 +2,6 @@
 maker: "Duck"
 caption: "An updated version of Paco as PJ shorts, now with yoke"
 date: "2022-07-13"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b9253befec857619f0f366ae0df9c147a18e1cc9-1251x2668.jpg"
 intro: "Paco PJ shorts, now with added yoke"
 title: "Paco PJ shorts, now with added yoke"
 designs: ["paco"]

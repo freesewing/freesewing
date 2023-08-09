@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "Rob in a sunny backyard garden, wearing an adjusted Wahid with a double breast and matching Charlie trousers."
 date: "2023-07-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f007d49c1d688a66f6c2a865b9ac1e08654448f6-1080x1350.jpg"
 intro: "Are you kidding?!? This Charlie and Wahid duo is so suave and sophisticated it's ridiculous. Made from a green herringbone shetland wool by @sewingdentist on Instagram, we think it's impeccable. Bonus points for the cool double-breasted modification, which you can see even closer below."
 title: "Green Charlie and Wahid Suit"
 designs: ["charlie","wahid"]

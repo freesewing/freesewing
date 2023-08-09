@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "Turned out really well for a toile"
 date: "2017-12-11"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f3126799846dc9ea9aecb423e7283bb715db93b4-3724x2785.jpg"
 intro: "A test of Florent to see if the pattern works for others, by Wouter.vdub"
 title: "A test of Florent to see if the pattern works for others, by Wouter.vdub"
 designs: ["florent"]

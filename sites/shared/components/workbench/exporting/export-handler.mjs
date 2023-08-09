@@ -155,13 +155,11 @@ export const handleExport = async ({
     let pattern = themedPattern(Design, settings, { layout }, format, t)
 
     // a specified size should override the settings one
-    if (format !== 'pdf') {
-      pageSettings.size = format
-    }
+    pageSettings.size = format
 
     try {
       // add pages to pdf exports
-      if (format !== 'svg') {
+      if (!exportTypes.exportForEditing.includes(format)) {
         pattern.use(
           pagesPlugin({
             ...pageSettings,
@@ -184,11 +182,13 @@ export const handleExport = async ({
       pattern.draft()
       workerArgs.svg = pattern.render()
 
+      if (format === 'pdf') pageSettings.size = [pattern.width, pattern.height]
+
       // add the svg and pages data to the worker args
       workerArgs.pages = pattern.setStores[pattern.activeSet].get('pages')
 
       // add cutting layouts if requested
-      if (format !== 'svg' && pageSettings.cutlist) {
+      if (!exportTypes.exportForEditing.includes(format) && pageSettings.cutlist) {
         workerArgs.cutLayouts = generateCutLayouts(pattern, Design, settings, format, t, ui)
       }
     } catch (err) {

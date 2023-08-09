@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Scales, how do they work?"
 date: "2018-01-04"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d09252be53d33ab5b743c22f523a9ea8cbd70708-2000x1328.jpg"
 intro: "Freesewing core v1.3.0 is out; Comes with fixes so good that we back-ported them to all your drafts"
 title: "Freesewing core v1.3.0 is out; Comes with fixes so good that we back-ported them to all your drafts"
 ---

@@ -5,6 +5,7 @@ export const cup = {
   name: 'bee.cup',
   from: frontSideDart,
   hide: {
+    from: true,
     inherited: true,
   },
   after: neckTie,

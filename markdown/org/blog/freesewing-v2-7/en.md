@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Photo by Deeana Creates from Pexels"
 date: "2020-07-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f04cc6c50a8e5f08f3ebd6c3d4903fb3055c9a01-1920x1280.jpg"
 intro: "We've just release FreeSewing v2.7 🎉"
 title: "FreeSewing v2.7: Titan, changes to measurements, and a long list of improvements"
 ---

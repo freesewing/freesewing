@@ -25,7 +25,8 @@ async function sendEmailViaAwsSes(
 ) {
   // Make sure we have what it takes
   if (!template || !to || typeof templates[template] === 'undefined') {
-    log.warn(`Tried to email invalid template: ${template}`)
+    if (!to) log.warn(`A To: address is mandatory when sending email`)
+    else log.warn(`Tried to email invalid template: ${template}`)
     return false
   }
 

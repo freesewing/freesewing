@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Dr. Dragnea from Antwerp University hospital wearing a Florence facemask"
 date: "2020-03-19"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b811b79114f15aa192a1962b95083e6c55d79402-1532x1123.jpg"
 intro: "Calling all makers: Here's a 1-page PDF facemask pattern; Now go make some and help beat this thing"
 title: "Calling all makers: Here's a 1-page PDF facemask pattern; Now go make some and help beat this thing"
 ---

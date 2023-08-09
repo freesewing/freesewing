@@ -2,7 +2,6 @@
 maker: "rostic"
 caption: "This lovely Wahid was made from floral cotton"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/429adcc0d0847351ca6076d941428f67dba6a223-910x1265.jpg"
 intro: "Rostic made this great Wahid waistcoat! You won't want to miss the detail pictures below."
 title: "Rostic's excellent Wahid waistcoat"
 designs: ["wahid"]

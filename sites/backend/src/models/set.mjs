@@ -1,5 +1,5 @@
 import { log } from '../utils/log.mjs'
-import { setSetAvatar } from '../utils/sanity.mjs'
+import { replaceImage, storeImage, ensureImage, importImage } from '../utils/cloudflare-images.mjs'
 import yaml from 'js-yaml'
 
 export function SetModel(tools) {
@@ -32,7 +32,7 @@ SetModel.prototype.guardedCreate = async function ({ body, user }) {
   else data.measies = {}
   data.imperial = body.imperial === true ? true : false
   data.userId = user.uid
-  // Set this one initially as we need the ID to create a custom img via Sanity
+  // Set this one initially as we need the ID to store the image on cloudflare
   data.img = this.config.avatars.set
 
   // Create record
@@ -40,10 +40,18 @@ SetModel.prototype.guardedCreate = async function ({ body, user }) {
 
   // Update img? (now that we have the ID)
   const img =
-    this.config.use.sanity &&
+    this.config.use.cloudflareImages &&
     typeof body.img === 'string' &&
-    (!body.test || (body.test && this.config.use.tests?.sanity))
-      ? await setSetAvatar(this.record.id, body.img)
+    (!body.test || (body.test && this.config.use.tests?.cloudflareImages))
+      ? await storeImage({
+          id: `set-${this.record.id}`,
+          metadata: {
+            user: user.uid,
+            name: this.clear.name,
+          },
+          b64: body.img,
+          requireSignedURLs: true,
+        })
       : false
 
   if (img) await this.unguardedUpdate(this.cloak({ img: img.url }))
@@ -264,7 +272,15 @@ SetModel.prototype.guardedUpdate = async function ({ params, body, user }) {
 
   // Image (img)
   if (typeof body.img === 'string') {
-    const img = await setSetAvatar(params.id, body.img)
+    const img = await replaceImage({
+      id: `set-${this.record.id}`,
+      metadata: {
+        user: user.uid,
+        name: this.clear.name,
+      },
+      b64: body.img,
+      notPublic: true,
+    })
     data.img = img.url
   }
 
@@ -430,4 +446,56 @@ SetModel.prototype.sanitizeMeasurements = function (input) {
   }
 
   return measies
+}
+
+const migratePerson = (v2) => ({
+  createdAt: new Date(v2.created ? v2.created : v2.createdAt),
+  imperial: v2.units === 'imperial',
+  name: v2.name || '--', // Encrypted, so always set _some_ value
+  notes: v2.notes || '--', // Encrypted, so always set _some_ value
+  measies: v2.measurements || {}, // Encrypted, so always set _some_ value
+  updatedAt: new Date(v2.updatedAt),
+})
+
+/*
+ * This is a special route not available for API users
+ */
+SetModel.prototype.import = async function (v2user, userId) {
+  const lut = {} // lookup tabel for v2 handle to v3 id
+  for (const [handle, person] of Object.entries(v2user.people)) {
+    const data = { ...migratePerson(person), userId }
+    await this.unguardedCreate(data)
+    // Now that we have an ID, we can handle the image
+    if (person.picture && person.picture.slice(-4) !== '.svg') {
+      const imgId = `set-${this.record.id}`
+      const imgUrl =
+        'https://static.freesewing.org/users/' +
+        encodeURIComponent(v2user.handle.slice(0, 1)) +
+        '/' +
+        encodeURIComponent(v2user.handle) +
+        '/people/' +
+        encodeURIComponent(person.handle) +
+        '/' +
+        encodeURIComponent(person.picture)
+      data.img = await importImage({
+        id: imgId,
+        metadata: {
+          user: userId,
+          v2PersonHandle: handle,
+        },
+        url: imgUrl,
+      })
+      data.img = imgId
+    } else data.img = 'default-avatar'
+    const cloaked = await this.cloak(data)
+    try {
+      this.record = await this.prisma.set.create({ data: cloaked })
+      lut[handle] = this.record.id
+    } catch (err) {
+      log.warn(err, 'Could not create set')
+      console.log(person)
+    }
+  }
+
+  return lut
 }

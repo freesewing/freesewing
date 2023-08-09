@@ -145,8 +145,6 @@ const loadBlog = async () => {
   const order = await loadFolderFrontmatter('date', 'org', 'blog', formatDate, 'en')
   // Author is the same for all languages, so only grab EN files
   const authors = await loadFolderFrontmatter('author', 'org', 'blog', false, 'en')
-  // Image is the same for all languages, so only grab EN files
-  const images = await loadFolderFrontmatter('image', 'org', 'blog', false, 'en')
 
   // Merge titles and order for EN
   const merged = {}
@@ -156,7 +154,6 @@ const loadBlog = async () => {
       o: order.en[slug],
       s: slug,
       a: authors.en[slug],
-      i: images.en[slug],
     }
   // Order based on post data (descending)
   const ordered = orderBy(merged, 'o', 'desc')
@@ -169,7 +166,7 @@ const loadBlog = async () => {
     posts[lang] = {}
     for (const post of ordered) {
       posts[lang][post.s] = { t: post.t }
-      if (lang === 'en') meta[post.s] = { a: post.a, d: post.o, i: post.i }
+      if (lang === 'en') meta[post.s] = { a: post.a, d: post.o }
     }
   }
 
@@ -185,8 +182,6 @@ const loadShowcase = async () => {
   const order = await loadFolderFrontmatter('date', 'org', 'showcase', formatDate, 'en')
   // Author is the same for all languages, so only grab EN files
   const makers = await loadFolderFrontmatter('maker', 'org', 'showcase', false, 'en')
-  // Image is the same for all languages, so only grab EN files
-  const images = await loadFolderFrontmatter('image', 'org', 'showcase', false, 'en')
 
   // Merge titles and order for EN
   const merged = {}
@@ -196,7 +191,6 @@ const loadShowcase = async () => {
       o: order.en[slug],
       s: slug,
       m: makers.en[slug],
-      i: images.en[slug],
     }
   // Order based on post data (descending)
   const ordered = orderBy(merged, 'o', 'desc')
@@ -209,7 +203,7 @@ const loadShowcase = async () => {
     posts[lang] = {}
     for (const post of ordered) {
       posts[lang][post.s] = { t: post.t }
-      if (lang === 'en') meta[post.s] = { m: post.m, d: post.o, i: post.i }
+      if (lang === 'en') meta[post.s] = { m: post.m, d: post.o }
     }
   }
 

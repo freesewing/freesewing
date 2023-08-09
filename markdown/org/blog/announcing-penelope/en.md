@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "The pattern illustration for Penelope"
 date: "2018-06-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/59646d7171bb8b18df952a1c9547cd212451de79-1920x1080.jpg"
 intro: "I'm very happy to announce the immeadiate availability of the Penelope Pencil Skirt , out in beta today."
 title: "Announcing the Penelope Pencil Skirt; And our womenswear roadmap"
 ---

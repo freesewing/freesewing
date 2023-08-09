@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "A photo by <a href='https://unsplash.com/@onevagabond'>Paulo Silva</a> shows an empty Times Square in New York during the COVID pandemic"
 date: "2021-01-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ffacb5c6384f250ad7cd3cb50b5ed4fdeff33ae6-1920x1280.jpg"
 intro: "Aren't we all glad 2020 is over?"
 title: "The year 2020 was something alright"
 ---

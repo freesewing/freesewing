@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "Paneled Sandy skirt by Sunshine"
 date: "2021-02-15"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4d38d6837e8125276522abb62d44a99e191fd8a0-1477x1969.jpg"
 intro: "This lovely Sandy skirt was made by Sunshine. The maker shared more information about the project:"
 title: "Sandy skirt by Sunshine"
 designs: ["sandy"]

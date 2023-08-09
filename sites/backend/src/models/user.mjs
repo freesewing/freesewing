@@ -1,9 +1,11 @@
 import jwt from 'jsonwebtoken'
 import { log } from '../utils/log.mjs'
 import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
-import { setUserAvatar } from '../utils/sanity.mjs'
+import { replaceImage, ensureImage, importImage } from '../utils/cloudflare-images.mjs'
 import { clean, asJson, i18nUrl } from '../utils/index.mjs'
 import { ConfirmationModel } from './confirmation.mjs'
+import { SetModel } from './set.mjs'
+import { PatternModel } from './pattern.mjs'
 
 export function UserModel(tools) {
   this.config = tools.config
@@ -16,6 +18,9 @@ export function UserModel(tools) {
   this.Confirmation = new ConfirmationModel(tools)
   this.encryptedFields = ['bio', 'github', 'email', 'initial', 'img', 'mfaSecret']
   this.clear = {} // For holding decrypted data
+  // Only used for import, can be removed after v3 is released
+  this.Set = new SetModel(tools)
+  this.Pattern = new PatternModel(tools)
 
   return this
 }
@@ -247,7 +252,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
       password: asJson(hashPassword(randomString())), // We'll change this later
       github: this.encrypt(''),
       bio: this.encrypt(''),
-      // Set this one initially as we need the ID to create a custom img via Sanity
+      // Set this one initially as we need the ID to store an image on Cloudflare
       img: this.encrypt(this.config.avatars.user),
     }
     // During tests, users can set their own permission level so you can test admin stuff
@@ -541,10 +546,15 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
     }
   }
   // Image (img)
-  if (typeof body.img === 'string') {
-    const img = await setUserAvatar(this.record.id, body.img)
-    data.img = img.url
-  }
+  if (typeof body.img === 'string')
+    data.img = await replaceImage({
+      id: `user-${this.record.ihash}`,
+      metadata: {
+        user: user.uid,
+        ihash: this.record.ihash,
+      },
+      b64: body.img,
+    })
 
   // Now update the record
   await this.unguardedUpdate(this.cloak(data))
@@ -839,4 +849,125 @@ UserModel.prototype.isLusernameAvailable = async function (lusername) {
   if (user) return false
 
   return true
+}
+
+const migrateUser = (v2) => {
+  const email = clean(v2.email)
+  const initial = clean(v2.initial)
+  const data = {
+    bio: v2.bio,
+    consent: 0,
+    createdAt: v2.time?.created ? new Date(v2.time.created) : new Date(),
+    email,
+    ehash: hash(email),
+    github: v2.social?.github,
+    ihash: hash(initial),
+    img:
+      v2.picture.slice(-4).toLowerCase() === '.svg' // Don't bother with default avatars
+        ? ''
+        : v2.picture,
+    initial,
+    imperial: v2.units === 'imperial',
+    language: v2.settings.language,
+    lastSignIn: v2.time?.login ? v2.time.login : null,
+    lusername: v2.username.toLowerCase(),
+    mfaEnabled: false,
+    newsletter: false,
+    password: JSON.stringify({
+      type: 'v2',
+      data: v2.password,
+    }),
+    patron: v2.patron,
+    role: v2._id === '5d62aa44ce141a3b816a3dd9' ? 'admin' : 'user',
+    status: v2.status === 'active' ? 1 : 0,
+    username: v2.username,
+  }
+  if (data.consent.profile) data.consent++
+  if (data.consent.measurements) data.consent++
+  if (data.consent.openData) data.consent++
+
+  return data
+}
+
+const lastLoginInDays = (user) => {
+  const now = new Date()
+  if (!user.time) console.log(user)
+  const then = new Date(user.time.login)
+
+  const delta = Math.floor((now - then) / (1000 * 60 * 60 * 24))
+
+  return delta
+}
+
+/*
+ * This is a special route not available for API users
+ */
+UserModel.prototype.import = async function (list) {
+  let created = 0
+  const skipped = []
+  for (const sub of list) {
+    if (sub.status === 'active') {
+      const days = lastLoginInDays(sub)
+      if (days < 370) {
+        const data = migrateUser(sub)
+        await this.read({ ehash: data.ehash })
+        if (!this.record) {
+          if (data.img) {
+            /*
+             * Figure out what image to grab from the FreeSewing v2 backend server
+             */
+            const imgId = `user-${data.ihash}`
+            const imgUrl =
+              'https://static.freesewing.org/users/' +
+              encodeURIComponent(sub.handle.slice(0, 1)) +
+              '/' +
+              encodeURIComponent(sub.handle) +
+              '/' +
+              encodeURIComponent(data.img)
+            data.img = await importImage({
+              id: imgId,
+              metadata: {
+                user: `v2-${sub.handle}`,
+                ihash: data.ihash,
+              },
+              url: imgUrl,
+            })
+            data.img = imgId
+          } else data.img = 'default-avatar'
+          let cloaked = await this.cloak(data)
+          try {
+            this.record = await this.prisma.user.create({ data: cloaked })
+            created++
+          } catch (err) {
+            if (
+              err.toString().indexOf('Unique constraint failed on the fields: (`lusername`)') !== -1
+            ) {
+              // Just add a '+' to the username
+              data.username += '+'
+              data.lusername += '+'
+              cloaked = await this.cloak(data)
+              try {
+                this.record = await this.prisma.user.create({ data: cloaked })
+                created++
+              } catch (err) {
+                log.warn(err, 'Could not create user record')
+                console.log(sub)
+                return this.setResponse(500, 'createUserFailed')
+              }
+            }
+          }
+        }
+      } else skipped.push(sub.email)
+      // That's the user, now load their people as sets
+      let lut = false
+      if (sub.people) lut = await this.Set.import(sub, this.record.id)
+      if (sub.patterns) await this.Pattern.import(sub, lut, this.record.id)
+    } else skipped.push(sub.email)
+  }
+
+  return this.setResponse(200, 'success', {
+    skipped,
+    total: list.length,
+    imported: created,
+  })
 }

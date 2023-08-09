@@ -79,6 +79,7 @@ export function encryption(stringKey, salt = 'FreeSewing') {
       })
     },
     decrypt: (data) => {
+      if (data === null || data === '') return ''
       /*
        * Don't blindly assume this data is properly formatted ciphertext
        */

@@ -2,7 +2,7 @@
 title: "Ursula undies: Sewing Instructions"
 ---
 
-### Step 1: Sew the front to the first gusset piece
+### Step 1: Pin/baste the front to the first gusset piece
 
 Place one of the gusset pieces on the front piece, _good sides together_, so that the crotch seams are aligned. Pin or baste at the seam allowance.
 
@@ -14,7 +14,7 @@ Open flat. You can press if you want to, but who presses underwear?
 
 ![Open flat](step02.png)
 
-### Step 3: Sew the back to the first gusset piece
+### Step 3: Pin/baste the back to the first gusset piece
 
 Place the back piece on the gusset, good sides together. Pin or baste at the seam allowance.
 

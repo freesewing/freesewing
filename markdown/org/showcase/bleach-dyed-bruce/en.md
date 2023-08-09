@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "These are made of black tshirt fabric she bleach dyed myself, using desert plants for the design."
 date: "2018-01-21"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9e8834593713a2a6e4903d53e789b430449f947a-1280x960.jpg"
 intro: "Bleach dyed Bruce by Reanna"
 title: "Bleach dyed Bruce by Reanna"
 designs: ["bruce"]

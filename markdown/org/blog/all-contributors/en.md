@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "We're saying thanks to our contributors and want to make sure their contributions get the credit they deserve"
 date: "2021-11-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1488bc5a9940423308a38d2cd33edb86b6eed442-1920x1280.jpg"
 intro: "During our last contributor call , we decided that we would implement the All Contributors specification as a way to honour all our contributors."
 title: "Calling all contributors"
 ---

@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Designer Hellgy struts their stuff, while their Yuri flows in a summer breeze"
 date: "2021-09-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/af8e14596c0112734fb14e4a838853fb9dc0ac8a-1899x1266.jpg"
 intro: "Announcing FreeSewing v2.18: Congratulations, it's a Yuri"
 title: "Announcing FreeSewing v2.18: Congratulations, it's a Yuri"
 ---
