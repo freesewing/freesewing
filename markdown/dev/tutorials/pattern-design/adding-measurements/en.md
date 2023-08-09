@@ -16,27 +16,26 @@ So let's add it as a required measurement.
 
 ## Adding required measurements
 
-In our `bib.mjs` file, on the `bib` object, there is a key called
+In our `design/src/bib.mjs` file, on the `bib` object, there is a key called
 `measurements` (line 121) that will hold a list (an array) of all required measurements
 for this part.
 
-We are going to use *the official name* of the measurement. For head
+We are going to use [*the official name* of the measurement](/reference/measurements). For head
 circumference, that name is `head`.
 
 ```design/src/bib.mjs
 function draftBib({ part }) {
-
   return part
 }
 
 export const bib = {
   name: 'tutorial.bib',
-  draft: draftBib,[],
+  draft: draftBib,
   from: false,
   hide: {
-  self: false,
-  from: false,
-  after: false
+    self: false,
+    from: false,
+    after: false
   },
   options: {},
   // start-highlight
