@@ -2,7 +2,6 @@
 maker: "Дебі"
 caption: "Штани з титанового блоку від Deby"
 date: "2020-07-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7a2406d93f4b40575b7c000e651a40a4b3191a74-2154x1280.jpg"
 intro: "Титан від Deby"
 title: "Титан від Deby"
 designs:
