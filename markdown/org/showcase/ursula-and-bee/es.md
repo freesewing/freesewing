@@ -2,7 +2,6 @@
 maker: "bookandneedle"
 caption: "Un bañador reversible Úrsula y Abeja"
 date: "2021-08-27"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a996b00a17133db24e0fc58059255dd56aca5e8d-3286x2694.jpg"
 intro: "Un bañador reversible Úrsula y Abeja"
 title: "Un bañador reversible Úrsula y Abeja"
 designs:
