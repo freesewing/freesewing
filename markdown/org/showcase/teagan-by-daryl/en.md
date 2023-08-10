@@ -2,7 +2,6 @@
 maker: "unknown"
 caption: "A shortened Teagan"
 date: "2021-07-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1f6216e1908af3210e48c8d2e85f46d1868ebcb5-600x800.jpg"
 intro: "Daryl made this terrific Teagan in a cropped length, as short as it can go (-20%). They shared:"
 title: "Daryl's cropped Teagan t-shirt"
 designs: ["teagan"]
