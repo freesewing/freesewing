@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Ursula's met rechte en hoge taille"
 date: "2021-07-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/88754adafdaecc661b6cf14aed0f07042350aabe-600x800.jpg"
 intro: "We zijn dol op de stof en het elastiek van Sanne's eerste twee paar Ursula's! FreeSewing medewerkers in Discord zeiden dat ze het kant en de kleurencombinaties geweldig vonden."
 title: "Ursula's met kant"
 designs:
