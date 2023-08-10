@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Paires d'Ursulas par défaut et à taille haute"
 date: "2021-07-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/88754adafdaecc661b6cf14aed0f07042350aabe-600x800.jpg"
 intro: "Nous adorons les choix de tissu et d'élastique des deux premières paires d'Ursulas de Sanne ! Les contributeurs de FreeSewing dans Discord ont dit qu'ils aimaient la dentelle et les combinaisons de couleurs."
 title: "Ursules avec dentelle"
 designs:
