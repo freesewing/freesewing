@@ -2,7 +2,6 @@
 maker: "étoile"
 caption: "Tibère le Tunique est la forme la plus simple qu'un vêtement puisse avoir."
 date: "18-10-2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fe8c7477640f372e5580478246826076a2721b3a-2292x3056.jpg"
 intro: "Tibère le Tunique"
 title: "Tibère le Tunique"
 designs:
