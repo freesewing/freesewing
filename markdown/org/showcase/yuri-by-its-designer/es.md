@@ -2,7 +2,6 @@
 maker: "Infernal"
 caption: "Vista trasera de la sudadera Yuri"
 date: "2021-09-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/af8e14596c0112734fb14e4a838853fb9dc0ac8a-1899x1266.jpg"
 intro: "Éstas son fotos de la sudadera con capucha Yuri original del diseñador Hellgy, que quería hacer una sudadera con capucha que no necesitara cremalleras."
 title: "La Yuri original por su diseñador"
 designs:
