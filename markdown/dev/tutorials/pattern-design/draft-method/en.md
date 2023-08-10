@@ -4,11 +4,52 @@ order: 150
 ---
 
 Time to turn our attention to the draft method of our part.
-Inside our `design/src/bib.js` file, this is what it currently looks like:
+Inside our `design/src/bib.mjs` file, this is what it currently looks like:
 
 ```design/src/bib.mjs
-function draftBib({ part }) {
+function draftBib ({
+  // Uncomment below to destructure what you need
+  /*
+   * Content constructors
+   */
+  //Path,    // A Path constructor to create new paths
+  //Point,   // A Point constructor to create new points
+  //Snippet, // A Snippet constructor to create new snippets
+  /*
+   * Content constainers
+   */
+  //paths,    // Add a Path to your part by adding it to this object
+  //points,   // Add a Points to your part by adding it to this object
+  //snippets, // Add a Snippet to your part by adding it to this object
+  /*
+   * Access to settings
+   */
+  //absoluteOptions, // Access to settings.absoluteOptions
+  //complete,        // Access to settings.complete
+  //measurements,    // Access to settings.measurements
+  //options,         // Access to settings.options
+  //paperless,       // Access to settings.paperless
+  //sa,              // Access to settings.sa
+  //scale,           // Access to settings.scale
+  /*
+   * Access to utilities
+   */
+  //getId,     //See the getId documentation
+  //hide,      //See the hide documentation
+  //log,       //See the logging documentation
+  //macro,     //See the macros documentation
+  //setHidden, //See the setHidden documentation
+  //store,     //See the store documentation
+  //unhide,    //See the unhide documentation
+  //units,     //See the units documentation
+  ///utils,     //See the utils documentation
+  /*
+   * Return value
+   */
+  part, // Your draft method must return this
+}) {
 
+  // Work your magic here
   return part
 }
 ```
