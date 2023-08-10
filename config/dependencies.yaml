@@ -381,7 +381,7 @@ shared:
     'sharp': '0.32.4'
     # see: https://github.com/npm/cli/issues/2610#issuecomment-1295371753
     'svg-to-pdfkit': 'https://git@github.com/eriese/SVG-to-PDFKit'
-    'tlds': '1.240.0'
+    'tlds': '1.242.0'
     'to-vfile': '8.0.0'
     'unist-util-visit': *unist-util-visit
     'use-persisted-state': *use-persisted-state
