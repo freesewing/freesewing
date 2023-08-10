@@ -7294,9 +7294,9 @@ html-parse-stringify@^3.0.1:
     void-elements "3.1.0"
 
 html-react-parser@^4.0.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-4.2.0.tgz#9168eda80dbfe0335a87fde3fb3ed6c2e91b1188"
-  integrity sha512-gzU55AS+FI6qD7XaKe5BLuLFM2Xw0/LodfMWZlxV9uOHe7LCD5Lukx/EgYuBI3c0kLu0XlgFXnSzO0qUUn3Vrg==
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-4.2.1.tgz#5fcccc9d7d61ef145c6a0c69c6531094188d9682"
+  integrity sha512-Dxzdowj5Zu/+7mr8X8PzCFbPXGuwCwGB2u4cB6oxZGES9inw85qlvnlfPD75VGKUGjcgsXs+9Dpj+THWNQyOBw==
   dependencies:
     domhandler "5.0.3"
     html-dom-parser "4.0.0"
