@@ -2,7 +2,6 @@
 maker: "cakeymcdoodle"
 caption: "Перша з багатьох пар"
 date: "2022-07-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/eead06f719f0f7c8f94d6222cf93139361b46b0b-4000x3000.jpg"
 intro: "cakeymcdoodle зробила ці чудові трусики Урсули! Вона розповіла:"
 title: "Урсула роздягається від cakeymcdoodle"
 designs:
