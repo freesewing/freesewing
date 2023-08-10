@@ -2,7 +2,6 @@
 maker: "comixminx"
 caption: "Teagan azul marino en tela de baño"
 date: "2023-01-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/662da421b8c32bf688e8ace70637db42c3e3b4ab-3024x4032.jpg"
 intro: "La usuaria de FreeSewing comixminx hizo esta estupenda camiseta de Teagan como parte de un traje de baño para un niño no binario. La versión azul marino de la imagen de cabecera es la versión final, pero ya que has hecho clic en el post, ¡aquí tienes un primer borrador extra en gris!"
 title: "Dos teaganes para nadar"
 designs:
