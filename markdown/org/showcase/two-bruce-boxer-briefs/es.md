@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Nos encanta la elección de patrones"
 date: "2023-05-03"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d80184b7b5847dcd35f73b4381934246594b5634-3968x2232.jpg"
 intro: "El fabricante de estos calzoncillos Bruce dice que fabricará aún más pares."
 title: "Dos calzoncillos Bruce"
 designs:

@@ -2,7 +2,6 @@
 maker: "starf"
 caption: "Walburga de Wappenrock (Duits voor tabberd/surcoat) is Starfs eigen op middeleeuws Europa (en Legend of Zelda) geïnspireerde fantasieontwerp."
 date: "2021-10-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8217f094b2ea551ed3bfcf72b79905506bf4f883-3888x5184.jpg"
 intro: "Walburga de Wappenrock"
 title: "Walburga de Wappenrock"
 designs:

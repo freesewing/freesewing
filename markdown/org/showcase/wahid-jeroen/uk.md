@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Досконалість у червону клітинку"
 date: "2020-11-27"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/03e55c42fb0bb6109af5ab0dbf58ad9e6f5a8110-1080x1080.jpg"
 intro: "Jeroen виготовив цей приголомшливий жилет вахідського стилю в красиву червону клітинку."
 title: "Червоний жилет-вахід у клітинку від Jeroen"
 designs:

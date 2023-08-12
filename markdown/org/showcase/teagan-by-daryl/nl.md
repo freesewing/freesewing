@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Een verkorte Teagan"
 date: "2021-07-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1f6216e1908af3210e48c8d2e85f46d1868ebcb5-600x800.jpg"
 intro: "Daryl maakte deze geweldige Teagan in een bijgesneden lengte, zo kort als maar kan (-20%). Ze deelden:"
 title: "Daryls korte Teagan t-shirt"
 designs:
