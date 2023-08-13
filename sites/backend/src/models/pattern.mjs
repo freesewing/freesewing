@@ -486,6 +486,16 @@ const v2lut = {
   'größe 42, mit brüsten': 8,
   'größe 44, mit brüsten': 9,
   'größe 46, mit brüsten': 10,
+  'grösse 28, mit brüsten': 1,
+  'grösse 30, mit brüsten': 2,
+  'grösse 32, mit brüsten': 3,
+  'grösse 34, mit brüsten': 4,
+  'grösse 36, mit brüsten': 5,
+  'grösse 38, mit brüsten': 6,
+  'grösse 40, mit brüsten': 7,
+  'grösse 42, mit brüsten': 8,
+  'grösse 44, mit brüsten': 9,
+  'grösse 46, mit brüsten': 10,
   'taille 28, avec des seins': 1,
   'taille 30, avec des seins': 2,
   'taille 32, avec des seins': 3,
@@ -557,6 +567,16 @@ const v2lut = {
   'größe 46, ohne brüste': 18,
   'größe 48, ohne brüste': 19,
   'größe 50, ohne brüste': 20,
+  'grösse 32, ohne brüste': 11,
+  'grösse 34, ohne brüste': 12,
+  'grösse 36, ohne brüste': 13,
+  'grösse 38, ohne brüste': 14,
+  'grösse 40, ohne brüste': 15,
+  'grösse 42, ohne brüste': 16,
+  'grösse 44, ohne brüste': 17,
+  'grösse 46, ohne brüste': 18,
+  'grösse 48, ohne brüste': 19,
+  'grösse 50, ohne brüste': 20,
   'tamaño 32, sin pechos': 11,
   'tamaño 34, sin pechos': 12,
   'tamaño 36, sin pechos': 13,
@@ -585,9 +605,8 @@ PatternModel.prototype.import = async function (v2user, lut, userId) {
     if (!skip) {
       // V2 does not support images for patterns
       data.img = 'default-avatar'
-      const cloaked = await this.cloak(data)
       try {
-        this.record = await this.prisma.pattern.create({ data: cloaked })
+        this.createRecord(data)
       } catch (err) {
         log.warn(err, 'Could not create pattern')
         console.log(data)
