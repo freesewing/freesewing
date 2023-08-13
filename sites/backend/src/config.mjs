@@ -10,26 +10,41 @@ import { postConfig } from '../local-config.mjs'
 import { roles } from '../../../config/roles.mjs'
 dotenv.config()
 
-// Allow these 2 to be imported
+/*
+ * Make this easy to update
+ */
+const languages = ['en', 'de', 'es', 'fr', 'nl', 'uk']
+
+/*
+ * Allow these 2 to be imported
+ */
 export const port = process.env.BACKEND_PORT || 3000
 export const api = process.env.BACKEND_URL || `http://localhost:${port}`
 
-// Generate/Check encryption key only once
+/*
+ * Generate/Check encryption key only once
+ */
 const encryptionKey = process.env.BACKEND_ENC_KEY
   ? process.env.BACKEND_ENC_KEY
   : randomEncryptionKey()
 
-// All environment variables are strings
-// This is a helper method to turn them into a boolean
+/*
+ * All environment variables are strings
+ * This is a helper method to turn them into a boolean
+ */
 const envToBool = (input = 'no') => {
   if (['yes', '1', 'true'].includes(input.toLowerCase())) return true
   return false
 }
 
-// Save ourselves some typing
+/*
+ * Save ourselves some typing
+ */
 const crowdinProject = 'https://translate.freesewing.org/project/freesewing/'
 
-// Construct config object
+/*
+ * Construct config object
+ */
 const baseConfig = {
   // Environment
   env: process.env.NODE_ENV || 'development',
@@ -69,6 +84,16 @@ const baseConfig = {
   encryption: {
     key: encryptionKey,
   },
+  enums: {
+    user: {
+      consent: [0, 1, 2, 3],
+      control: [1, 2, 3, 4, 5],
+      language: languages,
+      compare: [true, false],
+      imperial: [true, false],
+      newsletter: [true, false],
+    },
+  },
   github: {
     token: process.env.BACKEND_GITHUB_TOKEN,
   },
@@ -87,8 +112,8 @@ const baseConfig = {
     audience: process.env.BACKEND_JWT_ISSUER || 'freesewing.org',
     expiresIn: process.env.BACKEND_JWT_EXPIRY || '7d',
   },
-  languages: ['en', 'de', 'es', 'fr', 'nl', 'uk'],
-  translations: ['de', 'es', 'fr', 'nl', 'uk'],
+  languages,
+  translations: languages.filter((lang) => lang !== 'en'),
   measies: measurements,
   mfa: {
     service: process.env.BACKEND_MFA_SERVICE || 'FreeSewing',
@@ -150,6 +175,7 @@ if (baseConfig.use.cloudflareImages) {
     api: `https://api.cloudflare.com/client/v4/accounts/${account}/images/v1`,
     token: process.env.BACKEND_CLOUDFLARE_IMAGES_TOKEN || 'fixmeSetCloudflareToken',
     import: envToBool(process.env.BACKEND_IMPORT_CLOUDFLARE_IMAGES),
+    useInTests: baseConfig.use.tests.cloudflareImages,
   }
 }
 
@@ -195,6 +221,7 @@ const config = postConfig(baseConfig)
 // Exporting this stand-alone config
 export const cloudflareImages = config.cloudflareImages || {}
 export const website = config.website
+export const githubToken = config.github.token
 
 const vars = {
   BACKEND_DB_URL: ['required', 'db.url'],
@@ -235,10 +262,10 @@ if (envToBool(process.env.BACKEND_USE_CLOUDFLARE_IMAGES)) {
 // Vars for Github integration
 if (envToBool(process.env.BACKEND_ENABLE_GITHUB)) {
   vars.BACKEND_GITHUB_TOKEN = 'requiredSecret'
-  vars.BACKEND_GITHUB_USER = 'required'
-  vars.BACKEND_GITHUB_USER_NAME = 'required'
-  vars.BACKEND_GITHUB_USER_EMAIL = 'required'
-  vars.BACKEND_GITHUB_NOTIFY_DEFAULT_USER = 'required'
+  vars.BACKEND_GITHUB_USER = 'optional'
+  vars.BACKEND_GITHUB_USER_NAME = 'optional'
+  vars.BACKEND_GITHUB_USER_EMAIL = 'optional'
+  vars.BACKEND_GITHUB_NOTIFY_DEFAULT_USER = 'optional'
 }
 // Vars for Oauth via Github integration
 if (envToBool(process.env.BACKEND_ENABLE_OAUTH_GITHUB)) {

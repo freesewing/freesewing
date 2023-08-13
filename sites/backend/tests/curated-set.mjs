@@ -4,6 +4,7 @@ import { capitalize } from '../src/utils/index.mjs'
 export const curatedSetTests = async (chai, config, expect, store) => {
   const data = {
     jwt: {
+      test: true,
       nameDe: 'Beispielmessungen A',
       nameEn: 'Example measurements A',
       nameEs: 'Medidas de ejemplo A',
@@ -28,6 +29,7 @@ export const curatedSetTests = async (chai, config, expect, store) => {
       },
     },
     key: {
+      test: true,
       nameDe: 'Beispielmessungen B',
       nameEn: 'Example measurements B',
       nameEs: 'Medidas de ejemplo B',
@@ -83,16 +85,16 @@ export const curatedSetTests = async (chai, config, expect, store) => {
           .end((err, res) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(201)
-            expect(res.body.result).to.equal(`success`)
+            expect(res.body.result).to.equal(`created`)
             for (const [key, val] of Object.entries(data[auth])) {
-              if (!['measies', 'img'].includes(key))
+              if (!['measies', 'img', 'test'].includes(key)) {
                 expect(JSON.stringify(res.body.curatedSet[key])).to.equal(JSON.stringify(val))
+              }
             }
             store.curatedSet[auth] = res.body.curatedSet
             done()
           })
       }).timeout(5000)
-
       for (const field of ['name', 'notes']) {
         for (const lang of config.languages) {
           const langField = field + capitalize(lang)
@@ -234,7 +236,7 @@ export const curatedSetTests = async (chai, config, expect, store) => {
           .end((err, res) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(201)
-            expect(res.body.result).to.equal(`success`)
+            expect(res.body.result).to.equal(`created`)
             expect(typeof res.body.error).to.equal(`undefined`)
             expect(typeof res.body.set.id).to.equal(`number`)
             expect(res.body.set.name).to.equal(store.curatedSet[auth].nameNl + '_updated')

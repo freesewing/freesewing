@@ -52,7 +52,7 @@ export const userTests = async (chai, config, expect, store) => {
           expect(res.status).to.equal(201)
           expect(res.type).to.equal('application/json')
           expect(res.charset).to.equal('utf-8')
-          expect(res.body.result).to.equal(`success`)
+          expect(res.body.result).to.equal(`created`)
           expect(res.body.email).to.equal(fields.email)
           done()
         })

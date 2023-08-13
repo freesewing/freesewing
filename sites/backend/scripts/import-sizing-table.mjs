@@ -158,8 +158,6 @@ sets.push(
   )
 )
 
-importSets(sets)
-
 async function createSet(data) {
   try {
     await prisma.curatedSet.create({ data })
@@ -173,4 +171,8 @@ async function importSets(sets) {
     console.log(`Importing ${set.nameEn}`)
     await createSet(set)
   }
+}
+
+export async function importSizingTable() {
+  await importSets(sets)
 }

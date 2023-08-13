@@ -27,7 +27,7 @@ Your account on FreeSewing.org has been inactive an scheduled for removal.
 If you want to keep your account, please login on FreeSewing.org within the next 2 weeks.
 
 If your account stays dormant, it will at one point become unavailable.
-That does not have to be a disaster, you can always create a new one, but you will loose all data stored in your account.
+That does not have to be a disaster, you can always create a new one, but you will lose all data stored in your account.
 
 This will be the only email I sent you about this.
 If you have questions, you can reply to this message.
@@ -54,7 +54,7 @@ const html = mustache.render(
     closing: `
       If your account stays dormant, it will at one point become unavailable.
       <br><br>
-      That does not have to be a disaster, you can always create a new one, but you will loose all data stored in your account.
+      That does not have to be a disaster, you can always create a new one, but you will lose all data stored in your account.
       <br><br>
       This will be the only email I sent you about this.
       <br>

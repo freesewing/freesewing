@@ -6,6 +6,8 @@ import { setTests } from './set.mjs'
 import { curatedSetTests } from './curated-set.mjs'
 import { patternTests } from './pattern.mjs'
 import { subscriberTests } from './subscriber.mjs'
+import { flowTests } from './flow.mjs'
+import { issueTests } from './issue.mjs'
 import { setup } from './shared.mjs'
 
 const runTests = async (...params) => {
@@ -17,6 +19,8 @@ const runTests = async (...params) => {
   await curatedSetTests(...params)
   await patternTests(...params)
   await subscriberTests(...params)
+  await flowTests(...params)
+  await issueTests(...params)
 }
 
 // Load initial data required for tests
