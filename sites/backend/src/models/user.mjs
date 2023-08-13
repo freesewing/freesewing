@@ -688,7 +688,7 @@ UserModel.prototype.confirm = async function ({ body, params }) {
   /*
    * Attempt to load the user from the database
    */
-  await this.read({ id: this.Confirmation.record.useId })
+  await this.read({ id: this.Confirmation.record.userId })
 
   /*
    * If an error occured, it will be in this.error and we can return here
@@ -1290,7 +1290,6 @@ const migrateUser = (v2) => {
  */
 UserModel.prototype.import = async function (user) {
   let created = 0
-  const skipped = []
   if (user.status === 'active') {
     const data = migrateUser(user)
     if (user.consent.profile) data.consent++
@@ -1326,25 +1325,19 @@ UserModel.prototype.import = async function (user) {
         })
         data.img = imgId
       } else data.img = 'default-avatar'
+      let available = await this.isLusernameAvailable(data.lusername)
+      while (!available) {
+        data.username += '+'
+        data.lusername += '+'
+        available = await this.isLusernameAvailable(data.lusername)
+      }
       try {
         await this.createRecord(data)
         created++
       } catch (err) {
-        if (
-          err.toString().indexOf('Unique constraint failed on the fields: (`lusername`)') !== -1
-        ) {
-          // Just add a '+' to the username
-          data.username += '+'
-          data.lusername += '+'
-          try {
-            await this.createRecord(data)
-            created++
-          } catch (err) {
-            log.warn(err, 'Could not create user record')
-            console.log(user)
-            return this.setResponse(500, 'createUserFailed')
-          }
-        }
+        log.warn(err, 'Could not create user record')
+        console.log(user)
+        return this.setResponse(500, 'createUserFailed')
       }
       // That's the user, now load their people as sets
       let lut = false
