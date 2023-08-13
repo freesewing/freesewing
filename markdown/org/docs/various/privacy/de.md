@@ -2,57 +2,152 @@
 title: Datenschutzerklärung
 ---
 
-**Letztes Update**: 8. Januar 2021
+**Last update**: 13 August 2023
 
-Diese Datenschutzerklärung beschreibt die persönlichen Daten, die wir speichern. Sie stellt dar, warum wir die Daten brauchen, wie lange wir sie behalten, und ob wir sie mit Dritten teilen.
+Diese Datenschutzerklärung beschreibt die persönlichen Daten, die wir speichern. It outlines why we need the data, how long we keep it, and whether we share it with any third-parties (we do not).
 
 Wir sind zuversichtlich, dass sie unser Engagement für Privatsphäre unter Beweis stellen wird.
 
-Der Übersicht wegen haben wir dies in vier verschiedene Rollen aufgeteilt:
+For clarity, we've broken this up in three different types of roles:
 
 - Für **Besucher/-innen unserer Website** speichern wir **[Besuchsdaten][v]**
 - Für **Abonnenten unseres Newsletters** speichern wir **[Abonnentendaten][s]**
 - Für **Benutzer/-innen mit einem Account** auf unserer Website speichern wir **[Accountdaten][a]**
-- Für **Benutzer/-innen mit einem Account, der Personen enthält**, speichern wir **[Personendaten][p]**
 
-Hier sind die relevanten Abschnitte:
+## Wie wir deine Besucherdaten verwenden
 
-<ReadMore list />
+<Note>
+This data is stored for anybody who visits our website and connects to our backend APIs.
+</Note>
 
-<Tip>
+##### Welche persönlichen Daten speichern wir?
 
-##### Diese Rollen sind normalerweise kumulativ
+- Deine IP-Adresse
 
-Wenn du Newsletter-Abonnent/-in bist, bist du auch Besucher/-in.
-Und wenn du Benutzer/-in mit einem oder mehreren Modellen bist, bist du auch Nutzer/-in und ebenso Besucher/-in.
+##### Why do we need this data?
 
-</Tip>
+- To protect ourselves from abuse.
+- We use the IP address only to blacklist malicious or abusive clients or investigate security incidents.
 
-##### Datenverantwortlicher und Kontaktinformationen
+##### How long do we keep this data?
+
+- Wir behalten diese Logs nicht länger als 6 Monate.
+
+##### Do we share this data?
+
+- Nein, niemals
+
+
+## Wie wir deine Abonnentendaten verwenden
+
+<Note> 
+
+Diese Daten werden für jede Person gespeichert, die unseren Newsletter abonniert.
+
+Für Personen, die ein Konto auf der Website haben, und die in ihren Kontoeinstellungen das Newsletter-Abonnement aktivieren, speichern wir keine zusätzlichen persönlichen Daten, da ihre E-Mail-Adresse bereits in den [Kontodaten][a] bei uns hinterlegt ist.
+
+</Note>
+
+##### Welche persönlichen Daten speichern wir?
+
+- Deine E-Mail-Adresse
+
+##### Warum brauchen wir sie?
+
+- Um dir unseren Newsletter zu schicken
+
+##### Für wie lange behalten wir sie?
+
+- Solange wie du den Newsletter abonnierst
+
+##### Teilen wir sie?
+
+- Nein, niemals
+
+
+## Wie wir deine Accountdaten verwenden
+
+<Note>
+Diese Daten werden für jede Person mit einem Account auf unserer Website gespeichert.
+</Note>
+
+##### Welche persönlichen Daten speichern wir?
+
+- Deine E-Mail-Adresse
+- Deinen Benutzernamen und dein Passwort
+- Body measurements and a (freely chosen) name for any measurements set of pattern you store in your account.
+- Optional: A profile picture, bio, and your GitHub username. An image and notes for each measurements set or pattern stored in your account.
+
+##### Warum brauchen wir sie?
+
+- Um dich zu authentifizieren
+- Um dich bei Bedarf kontaktieren zu können
+- To be able to generate made-to-measure sewing patterns for you
+
+##### Für wie lange behalten wir sie?
+
+- Until your remove your account, or until at least 12 months after the last time you connected to our backend.
+- We will always contact you prior to removing any inactive data.
+
+##### Teilen wir sie?
+
+- Nein, niemals.
+
+
+## Other info relevant to this privacy notice
+
+### Datenverantwortlicher und Kontaktinformationen
 
 Bei Fragen zu dieser Datenschutzerklärung kannst du dich an Joost De Cock unter joost@joost.at wenden.
 
-##### Änderungen und Aktualisierungen dieser Erklärung
+### Änderungen und Aktualisierungen dieser Erklärung
 
 Diese Erklärung kann gelegentlich aktualisiert werden. Wir werden dies bei den **Letztes Update** Informationen am oberen Rand dieses Dokuments angeben.
 
 Eine umfassendere Übersicht über die bisherigen Änderungen dieses Dokuments ist [auf GitHub][1] verfügbar
 
-##### Siehe auch
+### Vollständige Offenlegung
+
+Wenn wir erfahren, dass unsere Sicherheitssysteme umgangen wurden, werden wir dich und die Behörden informieren.
+
+Wenn du glaubst, dass deine persönlichen Daten kompromittiert wurden, kontaktiere bitte joost@joost.at.
+
+### Dienstanbieter
+
+Our hosting providers manage various components of our infrastructure us. Dazu gehören Hosting, Speicher und Backup.
+
+Das bedeutet zwar, dass sie (streng genommen) deine Daten verarbeiten, aber sie benötigen keinen Zugang zu Informationen über dich. Außerdem verschlüsseln wir ruhende Profildaten, wodurch es für sie nicht trivial ist auf sie zuzugreifen, selbst wenn sie dies wollten.
+
+### Warrant canaries
+
+Wir haben zwar nicht die Absicht, irgendwelche deiner persönlichen Daten weiterzugeben, aber wir stehen nicht über dem Gesetz.
+
+Wenn wir gesetzlich dazu verpflichtet sind oder wenn wir der Meinung sind, dass dies das kleinere Übel wäre, werden wir personenbezogene Daten preisgeben.
+
+So far:
+
+- FreeSewing has never turned over our encryption or authentication keys or our customers' encryption or authentication keys to anyone.
+- FreeSewing has never installed any law enforcement software or equipment anywhere on our infrastructure.
+- FreeSewing has never provided any law enforcement organization personal data of any of our users or visitors.
+- FreeSewing has never weakened, compromised, or subverted any of its encryption at the request of law enforcement or another third party.
+
+### Nutzung von Minderjährigen unter 16 Jahren
+
+Aus rechtlichen Gründen musst du mindestens 16 Jahre alt sein, um Freesewing zu benutzen.
+
+### Siehe auch
 
 - [Deine Rechte][2]
 - [Deine Einwilligungen][3]
 
 [1]: https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy
 
-[2]: /docs/various/right/
+[2]: /docs/various/rights/
 
-[3]: /account/actions/consent/
+[3]: /account/consent/
 
-[v]: /docs/various/privacy/visitor/
+[v]: #how-we-use-your-visitor-data
 
-[s]: /docs/various/privacy/subscriber/
+[s]: #how-we-use-your-subscriber-data
 
-[a]: /docs/various/privacy/account/
-
-[p]: /docs/various/privacy/people/
+[a]: #how-we-use-your-account-data
