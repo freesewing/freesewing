@@ -74,7 +74,7 @@ UserModel.prototype.find = async function (body) {
      * Failed to run database query. Log warning and return 404
      */
     log.warn({ err, body }, `Error while trying to find user: ${body.username}`)
-    return setResponse(404)
+    return this.setResponse(404)
   }
 
   /*
@@ -111,8 +111,8 @@ UserModel.prototype.loadAuthenticatedUser = async function (user) {
     /*
      * Failed to run database query. Log warning and return 404
      */
-    log.warn({ err, body }, `Error while trying to find user: ${user.uid}`)
-    return setResponse(404)
+    log.warn({ err, user }, `Error while trying to find user: ${user.uid}`)
+    return this.setResponse(404)
   }
 
   return this
@@ -144,8 +144,8 @@ UserModel.prototype.revealAuthenticatedUser = async function (user) {
     /*
      * Failed to run database query. Log warning and return 404
      */
-    log.warn({ err, body }, `Error while trying to find and reveal user: ${user.uid}`)
-    return setResponse(404)
+    log.warn({ err, user }, `Error while trying to find and reveal user: ${user.uid}`)
+    return this.setResponse(404)
   }
 
   return this.reveal()
@@ -849,9 +849,9 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
       })
     }
   } else if (
-  /*
-   * Could be an email change confirmation
-   */
+    /*
+     * Could be an email change confirmation
+     */
     typeof body.confirmation === 'string' &&
     body.confirm === 'emailchange' &&
     typeof body.check === 'string'
@@ -1003,9 +1003,9 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
       return this.setResponse(401, 'authenticationFailed')
     }
   } else if (body.mfa === true && body.token && body.secret) {
-  /*
-   * Option 2/3: Is this is a confirmation after enabling MFA?
-   */
+    /*
+     * Option 2/3: Is this is a confirmation after enabling MFA?
+     */
     /*
      * Verify secret and token
      */
@@ -1035,9 +1035,9 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
      * Secret and/or token don't match. Return 403
      */
   } else if (body.mfa === true && this.record.mfaEnabled === false) {
-  /*
-   * Option 3/3: Is this an initial request to enable MFA?
-   */
+    /*
+     * Option 3/3: Is this an initial request to enable MFA?
+     */
     /*
      * Setup MFA
      */

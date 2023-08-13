@@ -341,10 +341,10 @@ export function decorateModel(Model, tools, modelConfig) {
    */
   Model.time = function (key) {
     if (this.timer)
-      log.info(`Timer split [${key ? key : modalConfig.name}] ${Date.now() - this.timer}ms`)
+      log.info(`Timer split [${key ? key : modelConfig.name}] ${Date.now() - this.timer}ms`)
     else {
       this.timer = Date.now()
-      log.info(`Timer start [${key ? key : modalConfig.name}] 0ms`)
+      log.info(`Timer start [${key ? key : modelConfig.name}] 0ms`)
     }
 
     return this

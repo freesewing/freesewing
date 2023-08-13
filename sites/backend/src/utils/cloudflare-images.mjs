@@ -70,7 +70,6 @@ export async function replaceImage(props, isTest = false) {
 export async function ensureImage(props, isTest = false) {
   if (isTest) return props.id || false
   const form = getFormData(props)
-  let result
   try {
     await axios.post(config.api, form, { headers })
   } catch (err) {

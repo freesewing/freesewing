@@ -572,7 +572,7 @@ const v2lut = {
  * This is a special route not available for API users
  */
 PatternModel.prototype.import = async function (v2user, lut, userId) {
-  for (const [handle, pattern] of Object.entries(v2user.patterns)) {
+  for (const pattern of Object.values(v2user.patterns)) {
     let skip = false
     const data = { ...migratePattern(pattern, userId), userId }
     if (lut[pattern.person]) data.setId = lut[pattern.person]

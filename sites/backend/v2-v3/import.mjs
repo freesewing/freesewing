@@ -89,7 +89,7 @@ const importUsers = async () => {
   let total = 0
   const batches = splitArray(todo, batchSize)
   for (const batch of batches) {
-    const result = await fetch(`${BACKEND}/import/users`, {
+    await fetch(`${BACKEND}/import/users`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
