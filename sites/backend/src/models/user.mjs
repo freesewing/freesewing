@@ -461,9 +461,10 @@ UserModel.prototype.passwordSignIn = async function (req) {
    * have their password and we know it's good, let's rehash it the v3 way
    * if this happens to be a v2 user.
    */
-  const update = { lastSignIn: new Date() }
-  if (updatedPasswordField) update.password = updatedPasswordField
-  await this.update(update)
+  if (updatedPasswordField) {
+    update.password = updatedPasswordField
+    await this.update(update)
+  }
 
   /*
    * Final check for account status and other things before returning
@@ -703,7 +704,6 @@ UserModel.prototype.confirm = async function ({ body, params }) {
   await this.update({
     status: 1,
     consent: body.consent,
-    lastSignIn: new Date(),
   })
 
   /*
@@ -1100,7 +1100,7 @@ UserModel.prototype.asAccount = function () {
     imperial: this.record.imperial,
     initial: this.clear.initial,
     language: this.record.language,
-    lastSignIn: this.record.lastSignIn,
+    lastSeen: this.record.lastSeen,
     mfaEnabled: this.record.mfaEnabled,
     newsletter: this.record.newsletter,
     patron: this.record.patron,
@@ -1109,6 +1109,10 @@ UserModel.prototype.asAccount = function () {
     updatedAt: this.record.updatedAt,
     username: this.record.username,
     lusername: this.record.lusername,
+    /*
+     * Add this so we can give a note to users about migrating their password
+     */
+    passwordType: JSON.parse(this.record.password).type,
   }
 }
 
@@ -1207,6 +1211,36 @@ UserModel.prototype.isLusernameAvailable = async function (lusername) {
 }
 
 /*
+ * Helper method to update the `lastSeen` field of the user
+ * This is called from middleware with the user ID passed in.
+ *
+ * @param {id} string - The user ID
+ * @returns {isTest} boolean - True if it's a test. False if not.
+ */
+UserModel.prototype.seen = async function (id) {
+  try {
+    await this.prisma.user.update({
+      where: { id },
+      data: {
+        lastSeen: new Date(),
+        calls: { increment: 1 },
+      },
+    })
+  } catch (err) {
+    /*
+     * An error means it's not good. Return false
+     */
+    log.warn({ id, err }, 'Could not update lastSeen field from middleware')
+    return false
+  }
+
+  /*
+   * If we get here, the lastSeen field was updated and user exists, so return true
+   */
+  return true
+}
+
+/*
  * Everything below this comment is migration code.
  * This can all be removed after v3 is in production and all users have been migrated.
  */
@@ -1228,7 +1262,7 @@ const migrateUser = (v2) => {
     initial,
     imperial: v2.units === 'imperial',
     language: v2.settings.language,
-    lastSignIn: v2.time?.login ? v2.time.login : null,
+    lastSeen: Date.now(),
     lusername: v2.username.toLowerCase(),
     mfaEnabled: false,
     newsletter: false,
