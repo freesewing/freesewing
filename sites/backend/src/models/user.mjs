@@ -1289,7 +1289,6 @@ const migrateUser = (v2) => {
  * This is a special route not available for API users
  */
 UserModel.prototype.import = async function (user) {
-  let created = 0
   if (user.status === 'active') {
     const data = migrateUser(user)
     if (user.consent.profile) data.consent++
@@ -1303,7 +1302,7 @@ UserModel.prototype.import = async function (user) {
       /*
        * Skip images for now
        */
-      if (false && data.img) {
+      if (data.img) {
         /*
          * Figure out what image to grab from the FreeSewing v2 backend server
          */
@@ -1333,7 +1332,6 @@ UserModel.prototype.import = async function (user) {
       }
       try {
         await this.createRecord(data)
-        created++
       } catch (err) {
         log.warn(err, 'Could not create user record')
         console.log(user)
