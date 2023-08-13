@@ -461,10 +461,7 @@ UserModel.prototype.passwordSignIn = async function (req) {
    * have their password and we know it's good, let's rehash it the v3 way
    * if this happens to be a v2 user.
    */
-  if (updatedPasswordField) {
-    update.password = updatedPasswordField
-    await this.update(update)
-  }
+  if (updatedPasswordField) await this.update({ password: updatedPasswordField })
 
   /*
    * Final check for account status and other things before returning
