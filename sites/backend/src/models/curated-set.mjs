@@ -1,7 +1,6 @@
 import { capitalize } from '../utils/index.mjs'
 import { log } from '../utils/log.mjs'
 import { storeImage } from '../utils/cloudflare-images.mjs'
-import yaml from 'js-yaml'
 import { decorateModel } from '../utils/model-decorator.mjs'
 
 /*

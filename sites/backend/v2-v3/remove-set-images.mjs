@@ -3,8 +3,6 @@ import axios from 'axios'
 
 const headers = { Authorization: `Bearer ${config.token}` }
 
-const toRemove = []
-
 const result = await axios.get(`${config.api}?page=1&per_page=10000`, { headers })
 
 const images = result.data.result.images.map((i) => i.id).filter((id) => id.slice(0, 4) === 'set-')

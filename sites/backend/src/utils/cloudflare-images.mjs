@@ -72,7 +72,7 @@ export async function ensureImage(props, isTest = false) {
   const form = getFormData(props)
   let result
   try {
-    result = await axios.post(config.api, form, { headers })
+    await axios.post(config.api, form, { headers })
   } catch (err) {
     // It's fine
     console.log(err)

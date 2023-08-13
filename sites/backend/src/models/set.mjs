@@ -1,6 +1,5 @@
 import { log } from '../utils/log.mjs'
-import { replaceImage, storeImage, ensureImage, importImage } from '../utils/cloudflare-images.mjs'
-import yaml from 'js-yaml'
+import { replaceImage, storeImage, importImage } from '../utils/cloudflare-images.mjs'
 import { decorateModel } from '../utils/model-decorator.mjs'
 
 /*
@@ -40,7 +39,7 @@ SetModel.prototype.guardedCreate = async function ({ body, user }) {
    * Create the initial record
    */
   await this.createRecord({
-    name: typeof body.name === 'string' && body.name.length > 0 ? body.name : '--',
+    name: body.name.length > 0 ? body.name : '--',
     notes: typeof body.notes === 'string' && body.notes.length > 0 ? body.notes : '--',
     public: body.public === true ? true : false,
     measies: typeof body.measies === 'object' ? this.sanitizeMeasurements(body.measies) : {},

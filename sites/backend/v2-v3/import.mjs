@@ -99,7 +99,6 @@ const importUsers = async () => {
         list: batch,
       }),
     })
-    const data = await result.json()
     total += batchSize
     console.log(`${total}/${count}`)
   }

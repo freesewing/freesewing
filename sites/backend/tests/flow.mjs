@@ -1,6 +1,3 @@
-import { cat } from './cat.mjs'
-import { capitalize } from '../src/utils/index.mjs'
-
 export const flowTests = async (chai, config, expect, store) => {
   const auths = ['jwt', 'key']
 
