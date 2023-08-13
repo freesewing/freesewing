@@ -14,5 +14,5 @@ export function importsRoutes(tools) {
   app.post('/import/subscribers', (req, res) => Import.subscribers(req, res, tools))
 
   // Import users
-  app.post('/import/users', (req, res) => Import.users(req, res, tools))
+  app.post('/import/user', (req, res) => Import.user(req, res, tools))
 }

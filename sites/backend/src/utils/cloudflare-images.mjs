@@ -88,8 +88,20 @@ export async function importImage(props, isTest = false) {
   // Bypass slow ass upload when testing import
   if (!config.import) return `default-avatar`
 
+  // Only upload user images for now
+  if (props.id.slice(0, 5) !== 'user-') return `default-avatar`
+
   const form = getFormData(props)
-  await axios.post(config.api, form, { headers })
+  /*
+   * The image may already exist, so swallow the error
+   */
+  try {
+    await axios.post(config.api, form, { headers })
+  } catch {
+    // Do nothing
+  }
+
+  console.log('Imported img', props.id)
 
   return props.id
 }

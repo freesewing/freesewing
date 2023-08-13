@@ -513,7 +513,7 @@ UserModel.prototype.linkSignIn = async function (req) {
   /*
    * Looks like we're good, so attempt to read the user from the database
    */
-  await this.read({ id: this.Confirmation.record.user.id })
+  await this.read({ id: this.Confirmation.record.userId })
 
   /*
    * if anything went wrong, this.error will be set
@@ -683,12 +683,12 @@ UserModel.prototype.confirm = async function ({ body, params }) {
   /*
    * If the id does not match, return 404
    */
-  if (data.id !== this.Confirmation.record.user.id) return this.setResponse(404)
+  if (data.id !== this.Confirmation.record.userId) return this.setResponse(404)
 
   /*
    * Attempt to load the user from the database
    */
-  await this.read({ id: this.Confirmation.record.user.id })
+  await this.read({ id: this.Confirmation.record.userId })
 
   /*
    * If an error occured, it will be in this.error and we can return here
@@ -1265,7 +1265,7 @@ const migrateUser = (v2) => {
     initial,
     imperial: v2.units === 'imperial',
     language: v2.settings.language,
-    lastSeen: Date.now(),
+    lastSeen: new Date(),
     lusername: v2.username.toLowerCase(),
     mfaEnabled: false,
     newsletter: false,
@@ -1285,85 +1285,64 @@ const migrateUser = (v2) => {
   return data
 }
 
-const lastLoginInDays = (user) => {
-  const now = new Date()
-  if (!user.time) console.log(user)
-  const then = new Date(user.time.login)
-
-  const delta = Math.floor((now - then) / (1000 * 60 * 60 * 24))
-
-  return delta
-}
-
 /*
  * This is a special route not available for API users
  */
-UserModel.prototype.import = async function (list) {
-  let created = 0
-  const skipped = []
-  for (const sub of list) {
-    if (sub.status === 'active') {
-      const days = lastLoginInDays(sub)
-      if (days < 370) {
-        const data = migrateUser(sub)
-        await this.read({ ehash: data.ehash })
-        if (!this.record) {
-          if (data.img) {
-            /*
-             * Figure out what image to grab from the FreeSewing v2 backend server
-             */
-            const imgId = `user-${data.ihash}`
-            const imgUrl =
-              'https://static.freesewing.org/users/' +
-              encodeURIComponent(sub.handle.slice(0, 1)) +
-              '/' +
-              encodeURIComponent(sub.handle) +
-              '/' +
-              encodeURIComponent(data.img)
-            data.img = await importImage({
-              id: imgId,
-              metadata: {
-                user: `v2-${sub.handle}`,
-                ihash: data.ihash,
-              },
-              url: imgUrl,
-            })
-            data.img = imgId
-          } else data.img = 'default-avatar'
-          let cloaked = await this.cloak(data)
-          try {
-            this.record = await this.prisma.user.create({ data: cloaked })
-            created++
-          } catch (err) {
-            if (
-              err.toString().indexOf('Unique constraint failed on the fields: (`lusername`)') !== -1
-            ) {
-              // Just add a '+' to the username
-              data.username += '+'
-              data.lusername += '+'
-              cloaked = await this.cloak(data)
-              try {
-                this.record = await this.prisma.user.create({ data: cloaked })
-                created++
-              } catch (err) {
-                log.warn(err, 'Could not create user record')
-                console.log(sub)
-                return this.setResponse(500, 'createUserFailed')
-              }
-            }
-          }
-        }
-      } else skipped.push(sub.email)
+UserModel.prototype.import = async function (user) {
+  if (user.status === 'active') {
+    const data = migrateUser(user)
+    if (user.consent.profile) data.consent++
+    if (user.consent.model || user.consent.measurements) {
+      data.consent++
+      if (user.consent.openData) data.consent++
+    }
+
+    await this.read({ ehash: data.ehash })
+    if (!this.record) {
+      /*
+       * Skip images for now
+       */
+      if (data.img) {
+        /*
+         * Figure out what image to grab from the FreeSewing v2 backend server
+         */
+        const imgId = `user-${data.ihash}`
+        const imgUrl =
+          'https://static.freesewing.org/users/' +
+          encodeURIComponent(user.handle.slice(0, 1)) +
+          '/' +
+          encodeURIComponent(user.handle) +
+          '/' +
+          encodeURIComponent(data.img)
+        data.img = await importImage({
+          id: imgId,
+          metadata: {
+            user: `v2-${user.handle}`,
+            ihash: data.ihash,
+          },
+          url: imgUrl,
+        })
+        data.img = imgId
+      } else data.img = 'default-avatar'
+      let available = await this.isLusernameAvailable(data.lusername)
+      while (!available) {
+        data.username += '+'
+        data.lusername += '+'
+        available = await this.isLusernameAvailable(data.lusername)
+      }
+      try {
+        await this.createRecord(data)
+      } catch (err) {
+        log.warn(err, 'Could not create user record')
+        console.log(user)
+        return this.setResponse(500, 'createUserFailed')
+      }
       // That's the user, now load their people as sets
       let lut = false
-      if (sub.people) lut = await this.Set.import(sub, this.record.id)
-      if (sub.patterns) await this.Pattern.import(sub, lut, this.record.id)
-    } else skipped.push(sub.email)
+      if (user.people) lut = await this.Set.import(user, this.record.id)
+      if (user.patterns) await this.Pattern.import(user, lut, this.record.id)
+    }
   }
 
-  return this.setResponse200({
-    skipped,
-    total: list.length,
-    imported: created,
-  })
+  return this.setResponse200()
 }

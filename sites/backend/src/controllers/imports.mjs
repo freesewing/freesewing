@@ -10,9 +10,6 @@ const runChecks = (req) => {
   if (req.body.import_token !== process.env.IMPORT_TOKEN) {
     return [401, { result: 'error', error: 'accessDenied' }]
   }
-  if (!Array.isArray(req.body.list)) {
-    return [400, { result: 'error', error: 'listMissing' }]
-  }
 
   return true
 }
@@ -33,12 +30,12 @@ ImportsController.prototype.subscribers = async (req, res, tools) => {
 /*
  * Imports users in v2 format
  */
-ImportsController.prototype.users = async (req, res, tools) => {
+ImportsController.prototype.user = async (req, res, tools) => {
   const check = runChecks(req)
   if (check !== true) return res.status(check[0]).send(check[1])
 
   const User = new UserModel(tools)
-  await User.import(req.body.list)
+  await User.import(req.body.user)
 
   return User.sendResponse(res)
 }

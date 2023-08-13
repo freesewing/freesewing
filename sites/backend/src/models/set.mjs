@@ -441,9 +441,8 @@ SetModel.prototype.import = async function (v2user, userId) {
       })
       data.img = imgId
     } else data.img = 'default-avatar'
-    const cloaked = await this.cloak(data)
     try {
-      this.record = await this.prisma.set.create({ data: cloaked })
+      await this.createRecord(data)
       lut[handle] = this.record.id
     } catch (err) {
       log.warn(err, 'Could not create set')

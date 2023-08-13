@@ -197,8 +197,8 @@ export function decorateModel(Model, tools, modelConfig) {
       /*
        * Some error occured. Log warning and return 500
        */
-      log.warn(err, 'Could not create set')
-      return this.setResponse(500, 'createSetFailed')
+      log.warn(err, `Could not create ${modelConfig.name}`)
+      return this.setResponse(500, `create${capitalize(modelConfig.name)}Failed`)
     }
 
     return this
