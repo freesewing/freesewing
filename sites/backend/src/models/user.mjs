@@ -1089,7 +1089,6 @@ UserModel.prototype.asAccount = function () {
   return {
     id: this.record.id,
     bio: this.clear.bio,
-    calls: this.record.calls,
     compare: this.record.compare,
     consent: this.record.consent,
     control: this.record.control,
@@ -1100,6 +1099,8 @@ UserModel.prototype.asAccount = function () {
     img: this.clear.img,
     imperial: this.record.imperial,
     initial: this.clear.initial,
+    jwtCalls: this.record.jwtCalls,
+    keyCalls: this.record.keyCalls,
     language: this.record.language,
     lastSeen: this.record.lastSeen,
     mfaEnabled: this.record.mfaEnabled,
