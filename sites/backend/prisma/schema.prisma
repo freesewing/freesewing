@@ -42,7 +42,6 @@ model User {
   id            Int       @id @default(autoincrement())
   apikeys       Apikey[]
   bio           String    @default("")
-  calls         Int       @default(0)
   compare       Boolean   @default(true)
   confirmations Confirmation[]
   consent       Int       @default(0)
@@ -55,6 +54,8 @@ model User {
   img           String?
   initial       String
   imperial      Boolean   @default(false)
+  jwtCalls      Int       @default(0)
+  keyCalls      Int       @default(0)
   language      String    @default("en")
   lastSeen      DateTime?
   lusername     String    @unique

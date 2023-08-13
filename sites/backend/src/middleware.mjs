@@ -10,9 +10,9 @@ import { UserModel } from './models/user.mjs'
  * this field. It's a bit of a perf hit to write to the database on ever API call
  * but it's worth it to actually know which accounts are used and which are not.
  */
-async function updateLastSeen(uid, tools) {
+async function updateLastSeen(uid, tools, type) {
   const User = new UserModel(tools)
-  await User.seen(uid)
+  await User.seen(uid, type)
 }
 
 function loadExpressMiddleware(app) {
@@ -27,7 +27,7 @@ function loadPassportMiddleware(passport, tools) {
       /*
        * Update lastSeen field
        */
-      if (Apikey.verified) await updateLastSeen(Apikey.record.userId, tools)
+      if (Apikey.verified) await updateLastSeen(Apikey.record.userId, tools, 'key')
 
       return Apikey.verified
         ? done(null, { ...Apikey.record, apikey: true, uid: Apikey.record.userId })
@@ -44,7 +44,7 @@ function loadPassportMiddleware(passport, tools) {
         /*
          * Update lastSeen field
          */
-        await updateLastSeen(jwt_payload._id, tools)
+        await updateLastSeen(jwt_payload._id, tools, 'jwt')
 
         return done(null, {
           ...jwt_payload,

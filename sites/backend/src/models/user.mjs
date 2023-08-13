@@ -1089,6 +1089,7 @@ UserModel.prototype.asAccount = function () {
   return {
     id: this.record.id,
     bio: this.clear.bio,
+    calls: this.record.calls,
     compare: this.record.compare,
     consent: this.record.consent,
     control: this.record.control,
@@ -1215,17 +1216,21 @@ UserModel.prototype.isLusernameAvailable = async function (lusername) {
  * This is called from middleware with the user ID passed in.
  *
  * @param {id} string - The user ID
- * @returns {isTest} boolean - True if it's a test. False if not.
+ * @param {type} string - The authentication type (one of 'jwt' or 'key')
+ * @returns {success} boolean - True if it worked, false if not
  */
-UserModel.prototype.seen = async function (id) {
+UserModel.prototype.seen = async function (id, type) {
+  /*
+   * Construct data object for update operation
+   */
+  const data = { lastSeen: new Date() }
+  data[`${type}Calls`] = { increment: 1 }
+
+  /*
+   * Now update the dabatase record
+   */
   try {
-    await this.prisma.user.update({
-      where: { id },
-      data: {
-        lastSeen: new Date(),
-        calls: { increment: 1 },
-      },
-    })
+    await this.prisma.user.update({ where: { id }, data })
   } catch (err) {
     /*
      * An error means it's not good. Return false
