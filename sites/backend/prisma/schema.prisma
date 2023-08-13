@@ -54,8 +54,10 @@ model User {
   img           String?
   initial       String
   imperial      Boolean   @default(false)
+  jwtCalls      Int       @default(0)
+  keyCalls      Int       @default(0)
   language      String    @default("en")
-  lastSignIn    DateTime?
+  lastSeen      DateTime?
   lusername     String    @unique
   mfaSecret     String    @default("")
   mfaEnabled    Boolean   @default(false)

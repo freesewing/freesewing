@@ -2,6 +2,18 @@ import cors from 'cors'
 import http from 'passport-http'
 import jwt from 'passport-jwt'
 import { ApikeyModel } from './models/apikey.mjs'
+import { UserModel } from './models/user.mjs'
+
+/*
+ * In v2 we ended up with a bug where we did not properly track the last login
+ * So in v3 we switch to `lastSeen` and every authenticated API call we update
+ * this field. It's a bit of a perf hit to write to the database on ever API call
+ * but it's worth it to actually know which accounts are used and which are not.
+ */
+async function updateLastSeen(uid, tools, type) {
+  const User = new UserModel(tools)
+  await User.seen(uid, type)
+}
 
 function loadExpressMiddleware(app) {
   app.use(cors())
@@ -12,6 +24,11 @@ function loadPassportMiddleware(passport, tools) {
     new http.BasicStrategy(async (key, secret, done) => {
       const Apikey = new ApikeyModel(tools)
       await Apikey.verify(key, secret)
+      /*
+       * Update lastSeen field
+       */
+      if (Apikey.verified) await updateLastSeen(Apikey.record.userId, tools, 'key')
+
       return Apikey.verified
         ? done(null, { ...Apikey.record, apikey: true, uid: Apikey.record.userId })
         : done(false)
@@ -23,7 +40,12 @@ function loadPassportMiddleware(passport, tools) {
         jwtFromRequest: jwt.ExtractJwt.fromAuthHeaderAsBearerToken(),
         ...tools.config.jwt,
       },
-      (jwt_payload, done) => {
+      async (jwt_payload, done) => {
+        /*
+         * Update lastSeen field
+         */
+        await updateLastSeen(jwt_payload._id, tools, 'jwt')
+
         return done(null, {
           ...jwt_payload,
           uid: jwt_payload._id,
