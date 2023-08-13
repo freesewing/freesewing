@@ -54,7 +54,7 @@ export const setTests = async (chai, config, expect, store) => {
           .end((err, res) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(201)
-            expect(res.body.result).to.equal(`success`)
+            expect(res.body.result).to.equal(`created`)
             for (const [key, val] of Object.entries(data[auth])) {
               if (!['measies', 'img', 'test'].includes(key)) expect(res.body.set[key]).to.equal(val)
             }
@@ -325,8 +325,8 @@ export const setTests = async (chai, config, expect, store) => {
           )
           .end((err, res) => {
             expect(err === null).to.equal(true)
-            expect(res.status).to.equal(200)
-            expect(res.body.result).to.equal(`success`)
+            expect(res.status).to.equal(201)
+            expect(res.body.result).to.equal(`created`)
             expect(typeof res.body.error).to.equal(`undefined`)
             expect(typeof res.body.set.id).to.equal(`number`)
             done()
@@ -352,8 +352,8 @@ export const setTests = async (chai, config, expect, store) => {
           .end((err, res) => {
             if (store.set[auth].public) {
               expect(err === null).to.equal(true)
-              expect(res.status).to.equal(200)
-              expect(res.body.result).to.equal(`success`)
+              expect(res.status).to.equal(201)
+              expect(res.body.result).to.equal(`created`)
               expect(typeof res.body.error).to.equal(`undefined`)
               expect(typeof res.body.set.id).to.equal(`number`)
             } else {
@@ -365,7 +365,6 @@ export const setTests = async (chai, config, expect, store) => {
             done()
           })
       })
-
       // TODO:
       // - Clone set
       // - Clone set accross accounts of they are public

@@ -18,9 +18,11 @@ export const patternTests = async (chai, config, expect, store) => {
                   )
           )
           .send({
+            test: true,
             design: 'aaron',
             settings: {
               sa: 5,
+              measurements: store.account.sets.her.measurements,
             },
             name: 'Just a test',
             notes: 'These are my notes',
@@ -34,7 +36,7 @@ export const patternTests = async (chai, config, expect, store) => {
           .end((err, res) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(201)
-            expect(res.body.result).to.equal(`success`)
+            expect(res.body.result).to.equal(`created`)
             expect(typeof res.body.pattern?.id).to.equal('number')
             expect(res.body.pattern.userId).to.equal(store.account.id)
             expect(res.body.pattern.setId).to.equal(store.account.sets.her.id)

@@ -1,29 +1,53 @@
-import { UserModel } from './user.mjs'
 import { i18nUrl } from '../utils/index.mjs'
+import { decorateModel } from '../utils/model-decorator.mjs'
 
+/*
+ * This model handles all flows (typically that involves sending out emails)
+ */
 export function FlowModel(tools) {
-  this.config = tools.config
-  this.mailer = tools.email
-  this.rbac = tools.rbac
-  this.User = new UserModel(tools)
-
-  return this
+  return decorateModel(this, tools, {
+    name: 'flow',
+    models: ['user'],
+  })
 }
 
 /*
  * Send a translator invite
+ *
+ * @param {body} object - The request body
+ * @param {user} object - The user as loaded by auth middleware
+ * @returns {FlowModel} object - The FlowModel
  */
 FlowModel.prototype.sendTranslatorInvite = async function ({ body, user }) {
+  /*
+   * Enforce RBAC
+   */
   if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
+
+  /*
+   * Do we have a POST body?
+   */
   if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
+
+  /*
+   * Is language set?
+   */
   if (!body.language) return this.setResponse(400, 'languageMissing')
+
+  /*
+   * Is language a valid language?
+   */
   if (!this.config.translations.includes(body.language))
     return this.setResponse(400, 'languageInvalid')
 
-  // Load user making the call
+  /*
+   * Load user record from database
+   */
   await this.User.revealAuthenticatedUser(user)
 
-  // Send the invite email
+  /*
+   * Send the invite email
+   */
   await this.mailer.send({
     template: 'transinvite',
     language: body.language,
@@ -35,21 +59,43 @@ FlowModel.prototype.sendTranslatorInvite = async function ({ body, user }) {
     },
   })
 
-  return this.setResponse(200, 'sent', {})
+  /*
+   * Return 200
+   */
+  return this.setResponse200({})
 }
 
 /*
  * Send a language suggestion to the maintainer
+ *
+ * @param {body} object - The request body
+ * @param {user} object - The user as loaded by auth middleware
+ * @returns {FlowModel} object - The FlowModel
  */
 FlowModel.prototype.sendLanguageSuggestion = async function ({ body, user }) {
+  /*
+   * Enforce RBAC
+   */
   if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
+
+  /*
+   * Do we have a POST body?
+   */
   if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
+
+  /*
+   * Is language set?
+   */
   if (!body.language) return this.setResponse(400, 'languageMissing')
 
-  // Load user making the call
+  /*
+   * Load user making the call
+   */
   await this.User.revealAuthenticatedUser(user)
 
-  // Send the invite email
+  /*
+   * Send the invite email
+   */
   await this.mailer.send({
     template: 'langsuggest',
     language: body.language,
@@ -61,35 +107,8 @@ FlowModel.prototype.sendLanguageSuggestion = async function ({ body, user }) {
     },
   })
 
-  return this.setResponse(200, 'sent', {})
-}
-
-/*
- * Helper method to set the response code, result, and body
- *
- * Will be used by this.sendResponse()
- */
-FlowModel.prototype.setResponse = function (status = 200, error = false, data = {}) {
-  this.response = {
-    status,
-    body: {
-      result: 'success',
-      ...data,
-    },
-  }
-  if (status > 201) {
-    this.response.body.error = error
-    this.response.body.result = 'error'
-    this.error = true
-  } else this.error = false
-  if (status === 404) this.response.body = null
-
-  return this
-}
-
-/*
- * Helper method to send response
- */
-FlowModel.prototype.sendResponse = async function (res) {
-  return res.status(this.response.status).send(this.response.body)
+  /*
+   * Return 200
+   */
+  return this.setResponse200({})
 }

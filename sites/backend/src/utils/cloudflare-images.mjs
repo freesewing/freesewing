@@ -10,7 +10,9 @@ const headers = { Authorization: `Bearer ${config.token}` }
  * Method that does the actual image upload to cloudflare
  * Use this for a new image that does not yet exist
  */
-export async function storeImage(props) {
+export async function storeImage(props, isTest = false) {
+  if (isTest) return props.id || false
+
   const form = getFormData(props)
   let result
   try {
@@ -41,7 +43,8 @@ export async function storeImage(props) {
  * Method that does the actual image upload to cloudflare
  * Use this to replace an existing image
  */
-export async function replaceImage(props) {
+export async function replaceImage(props, isTest = false) {
+  if (isTest) return props.id || false
   const form = getFormData(props)
   // Ignore errors on delete, probably means the image does not exist
   try {
@@ -58,6 +61,37 @@ export async function replaceImage(props) {
   }
 
   return result.data?.result?.id ? result.data.result.id : false
+}
+
+/*
+ * Method that uploads an image to cloudflare
+ * Use this to merely ensure the image exists (will fail silently if it does)
+ */
+export async function ensureImage(props, isTest = false) {
+  if (isTest) return props.id || false
+  const form = getFormData(props)
+  try {
+    await axios.post(config.api, form, { headers })
+  } catch (err) {
+    // It's fine
+    console.log(err)
+  }
+
+  return props.id
+}
+
+/*
+ * Method that imports and image from URL and does not bother waiting for the answer
+ */
+export async function importImage(props, isTest = false) {
+  if (isTest) return props.id || false
+  // Bypass slow ass upload when testing import
+  if (!config.import) return `default-avatar`
+
+  const form = getFormData(props)
+  await axios.post(config.api, form, { headers })
+
+  return props.id
 }
 
 /*
