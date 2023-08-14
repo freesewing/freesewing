@@ -5,10 +5,10 @@ order: 70
 
 Ви маєте право заперечити проти використання ваших персональних даних для наукових досліджень.
 
-Для цього перейдіть на сторінку [/account/consent](/account/consent/) і заперечте в розділі **модельних даних** .
+Go to [/account/consent](/account/consent/) and unselect **Share anonymized measurements as open data** to do so.
 
 <Note>
 
-Право на заперечення є ширшим, але саме так воно застосовується до фрісевінгу.
+The right to object is broader, but this is how it applies to FreeSewing.
 
 </Note>
