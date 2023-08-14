@@ -2,6 +2,8 @@ import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { roles } from 'config/roles.mjs'
+import { useEffect, useState } from 'react'
+import { Loading } from 'shared/components/spinner.mjs'
 
 export const ns = ['auth']
 
@@ -95,6 +97,16 @@ const ConsentLacking = ({ t }) => (
 export const AuthWrapper = ({ children, app, requiredRole = 'user' }) => {
   const { t } = useTranslation(ns)
   const { account, token } = useAccount()
+
+  const [ready, setReady] = useState(false)
+
+  /*
+   * Avoid hydration errors
+   */
+  useEffect(() => setReady(true))
+
+  if (!ready) return <Loading />
+
   if (!token || !account.username) return <AuthRequired t={t} />
   if (account.status !== 1) {
     if (account.status === 0) return <AccountInactive t={t} />

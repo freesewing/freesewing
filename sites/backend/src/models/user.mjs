@@ -86,6 +86,50 @@ UserModel.prototype.find = async function (body) {
 }
 
 /*
+ * Searches for users - Admin route
+ *
+ * @param {body} object - The request body
+ * @returns {UserModel} object - The UserModel
+ */
+UserModel.prototype.search = async function (q) {
+  /*
+   * Find users based on lusername
+   */
+  let usernames, emails
+  try {
+    usernames = await this.asAccountList(
+      await this.prisma.user.findMany({
+        where: {
+          lusername: { contains: clean(q) },
+        },
+      })
+    )
+  } catch (err) {
+    usernames = []
+  }
+  /*
+   * Find users based on ehash/ihash
+   */
+  try {
+    const ehash = hash(clean(q))
+    emails = await this.asAccountList(
+      await this.prisma.user.findMany({
+        where: {
+          OR: [{ ehash: { equals: ehash } }, { ihash: { equals: ehash } }],
+        },
+      })
+    )
+  } catch (err) {
+    emails = []
+  }
+
+  return {
+    email: emails,
+    username: usernames,
+  }
+}
+
+/*
  * Loads the user that is making the API request
  *
  * @param {user} object - The user as loaded by the authentication middleware
@@ -1116,6 +1160,49 @@ UserModel.prototype.asAccount = function () {
 }
 
 /*
+ * Returns a list of records as search results
+ * Typically used by admin search
+ *
+ * @param {list} array - A list of database records
+ * @return {list} array - The records mapped and decrypted
+ *
+ */
+UserModel.prototype.asAccountList = async function (list) {
+  const newList = []
+  for (const record of list) {
+    const clear = {}
+    for (const field of this.encryptedFields) {
+      clear[field] = await this.decrypt(record[field])
+    }
+    for (const field of [
+      'id',
+      'compare',
+      'consent',
+      'control',
+      'createdAt',
+      'ihash',
+      'jwtCalls',
+      'keyCalls',
+      'language',
+      'lastSeen',
+      'mfaEnabled',
+      'newsletter',
+      'patron',
+      'role',
+      'status',
+      'updatedAt',
+      'username',
+      'lusername',
+    ])
+      clear[field] = record[field]
+    clear.passwordType = JSON.parse(record.password).type
+    newList.push(clear)
+  }
+
+  return newList
+}
+
+/*
  * Creates and returns a JSON Web Token (jwt)
  *
  * @return {jwt} string - The JWT
@@ -1291,8 +1378,7 @@ const migrateUser = (v2) => {
 UserModel.prototype.import = async function (user) {
   if (user.status === 'active') {
     const data = migrateUser(user)
-    if (user.consent.profile) data.consent++
-    if (user.consent.model || user.consent.measurements) {
+    if (user.consent.profile && (user.consent.model || user.consent.measurements)) {
       data.consent++
       if (user.consent.openData) data.consent++
     }

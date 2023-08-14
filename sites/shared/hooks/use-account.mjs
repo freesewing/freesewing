@@ -22,7 +22,7 @@ export function useAccount() {
   const [seenUser, setSeenUser] = usePersistedSeenUser(false)
 
   // Clear user data. This gets called when signing out
-  const logout = () => {
+  const signOut = () => {
     setAccount(noAccount)
     setToken(null)
   }
@@ -34,6 +34,6 @@ export function useAccount() {
     setToken,
     seenUser,
     setSeenUser,
-    logout,
+    signOut,
   }
 }

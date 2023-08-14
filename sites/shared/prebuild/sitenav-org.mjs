@@ -96,6 +96,13 @@ export const extendSiteNav = async (siteNav, lang) => {
   siteNav.newsletter._ = 1
   siteNav.newsletter.s = 'newsletter'
 
+  // Add admin but hide it
+  siteNav.admin = {
+    t: t('sections:admin'),
+    m: 1,
+    s: 'admin',
+  }
+
   // Add account
   siteNav.account = {
     m: 1,

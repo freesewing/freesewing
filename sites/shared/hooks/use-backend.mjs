@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
+import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useMemo } from 'react'
 
 /*
@@ -315,7 +316,30 @@ Backend.prototype.confirmNewsletterUnsubscribe = async function ({ id, ehash }) 
   return responseHandler(await api.delete('/subscriber', { id, ehash }))
 }
 
-export function useBackend(token = false) {
+/*
+ * Search user (admin method)
+ */
+Backend.prototype.adminSearchUsers = async function (q) {
+  return responseHandler(await api.post('/admin/search/users/jwt', { q }, this.auth))
+}
+
+/*
+ * Load user (admin method)
+ */
+Backend.prototype.adminLoadUser = async function (id) {
+  return responseHandler(await api.get(`/admin/user/${id}/jwt`, this.auth))
+}
+
+/*
+ * Update user (admin method)
+ */
+Backend.prototype.adminUpdateUser = async function ({ id, data }) {
+  return responseHandler(await api.patch(`/admin/user/${id}/jwt`, data, this.auth))
+}
+
+export function useBackend() {
+  const { token } = useAccount()
+
   /*
    * This backend object is what we'll end up returning
    */
