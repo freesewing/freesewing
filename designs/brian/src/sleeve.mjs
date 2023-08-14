@@ -24,8 +24,11 @@ export const sleeve = {
     part,
   }) => {
     // Remove things inherited
-    macro('cutonfold', false)
-    macro('rmad')
+    macro('rmcutonfold')
+    macro('rmhd')
+    macro('rmld')
+    macro('rmpd')
+    macro('rmvd')
     delete paths.waist
     for (const key in snippets) delete snippets[key]
 

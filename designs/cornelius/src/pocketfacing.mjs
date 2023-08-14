@@ -59,17 +59,14 @@ function draftCorneliusPocketFacing({
     points.logo = points.pUcpA.shiftFractionTowards(points.pocketFacingTL, 0.5).shift(270, 30)
     snippets.logo = new Snippet('logo', points.logo)
     points.title = points.logo.shift(270, 50)
-    macro('title', {
+    const titleId = macro('title', {
       nr: 3,
       at: points.title,
       title: 'PocketFacing',
     })
-    // points.__titleNr.attr('data-text-class', 'center')
-    // points.__titleName.attr('data-text-class', 'center')
-    // points.__titlePattern.attr('data-text-class', 'center')
     macro('grainline', {
       from: points.pU,
-      to: new Point(points.pU.x, points.__titleNr.y),
+      to: new Point(points.pU.x, points['title_' + titleId + '_titleNr'].y),
     })
 
     if (sa) {

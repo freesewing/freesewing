@@ -107,6 +107,7 @@ export const draftFrontLeftClassicCuton = ({
     addButtonHoles(part, 'placketCfNeck')
 
     // Title
+    macro('rmtitle')
     macro('title', { at: points.title, nr: 2, title: 'frontLeft' })
 
     if (sa) {

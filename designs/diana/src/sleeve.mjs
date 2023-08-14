@@ -15,10 +15,10 @@ function draftDianaSleeve({ sa, points, paths, Path, complete, paperless, macro,
 
   // Complete pattern?
   if (complete) {
-    macro('grainline', {
-      from: points.centerWrist,
-      to: points.grainlineTo,
-    })
+    // macro('grainline', {
+    //   from: points.centerWrist,
+    //   to: points.cfHem,
+    // })
     if (sa) {
       paths.saBase = new Path()
         .move(points.wristRight)

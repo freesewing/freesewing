@@ -89,14 +89,14 @@ function draftHortensiaFrontpanel({
     snippets.logo = new Snippet('logo', points.logo)
     points.title = points.logo.shift(-90, 50).attr('data-text-class', 'center')
 
-    macro('title', {
+    const titleId = macro('title', {
       at: points.title,
       nr: 2,
       title: 'FrontBackPanel',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
+    points['title_' + titleId + '_titleNr'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titleName'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titlePattern'].attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')

@@ -10,8 +10,8 @@ function nobleFrontPoints({ log, points, Path, paths, snippets, options, macro, 
   for (let i in snippets) delete snippets[i]
 
   // Remove macros from Bella
-  macro('title', false)
-  macro('scalebox', false)
+  macro('rmtitle')
+  macro('rmscalebox')
 
   points.shoulderDartInside = points.hps.shiftFractionTowards(
     points.shoulder,

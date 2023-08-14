@@ -139,14 +139,14 @@ function draftCorneliusFront({
     points.logo = points.pE.clone()
     snippets.logo = new Snippet('logo', points.logo)
     points.title = points.logo.shift(270, 50)
-    macro('title', {
+    const titleId = macro('title', {
       nr: 76,
       at: points.title,
       title: 'Front',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
+    points['title_' + titleId + '_titleNr'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titleName'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titlePattern'].attr('data-text-class', 'center')
 
     points.scaleboxAnchor = points.pD.shift(270, 60)
     macro('scalebox', { at: points.scaleboxAnchor })

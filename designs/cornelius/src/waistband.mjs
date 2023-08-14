@@ -49,14 +49,14 @@ function draftCorneliusWaistband({
     points.logo = points.pA.shiftFractionTowards(points.pC, 0.5)
     snippets.logo = new Snippet('logo', points.logo)
     points.title = points.logo.shift(90, 70)
-    macro('title', {
+    const titleId = macro('title', {
       nr: 1,
       at: points.title,
       title: 'WaistBand',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
+    points['title_' + titleId + '_titleNr'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titleName'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titlePattern'].attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = new Path()

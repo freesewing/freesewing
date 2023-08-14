@@ -22,7 +22,7 @@ function nobleFrontOutside({
   delete points.bustDartCpBottom
   delete points.bustB
   delete points.bustDartEdge
-  macro('cutonfold', false)
+  macro('rmcutonfold')
 
   if (options.dartPosition == 'shoulder') {
     paths.princessSeam = new Path()

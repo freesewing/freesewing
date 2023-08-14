@@ -45,14 +45,14 @@ function draftCorneliusZipperguard({
     points.logo = points.pA.shiftFractionTowards(points.pC, 0.5)
     snippets.logo = new Snippet('logo', points.logo)
     points.title = points.logo.shift(90, 70)
-    macro('title', {
+    const titleId = macro('title', {
       nr: 4,
       at: points.title,
       title: 'ZipperGuard',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
+    points['title_' + titleId + '_titleNr'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titleName'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titlePattern'].attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = new Path()

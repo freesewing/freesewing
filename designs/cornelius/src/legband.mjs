@@ -137,14 +137,14 @@ function draftCorneliusLegband({
     points.logo = points.pA.shiftFractionTowards(points.pE, 0.5) //.shift(180,70).shift(270,30);
     snippets.logo = new Snippet('logo', points.logo)
     points.title = points.logo.shift(270, 70)
-    macro('title', {
+    const titleId = macro('title', {
       nr: 78,
       at: points.title,
       title: 'LegBand',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
+    points['title_' + titleId + '_titleNr'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titleName'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titlePattern'].attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')

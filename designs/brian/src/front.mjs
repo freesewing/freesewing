@@ -149,6 +149,7 @@ export const front = {
 
     // Complete pattern?
     if (complete) {
+      macro('rmtitle')
       macro('title', { at: points.title, nr: 1, title: 'front' })
       snippets.armholePitchNotch = new Snippet('notch', points.armholePitch)
       paths.waist = new Path().move(points.cfWaist).line(points.waist).attr('class', 'help')
