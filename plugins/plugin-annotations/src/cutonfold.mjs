@@ -59,6 +59,6 @@ export const cutonfoldMacros = {
     delete points[prefix + id + '_Via2']
     delete paths[prefix + id + '_Cutonfold']
 
-    store.cutlist.setCutOnFold(false) // Restore default
+    store.cutlist.setCutOnFold(false, undefined, id) // Restore default
   },
 }

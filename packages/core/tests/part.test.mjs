@@ -1,7 +1,8 @@
 import chai from 'chai'
-import { Design, Part, pctBasedOn } from '../src/index.mjs'
+import { Design, Part, pctBasedOn, Store } from '../src/index.mjs'
 
 const expect = chai.expect
+const store = new Store()
 
 describe('Part', () => {
   it('Shorthand should contain the part itself', () => {
@@ -86,11 +87,11 @@ describe('Part', () => {
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    console.log({ macroId: macroId })
-    console.log({ pattern: pattern })
-    console.log({ store: pattern.store })
-    // console.log({ part: pattern.part['test'] })
+
     expect(macroId).to.equal('testId1')
+    console.log({ store: pattern.store })
+    // console.log({store:part.store.get('macros')})
+    // expect(store.get('macros.test.ids')[0]).to.equal(macroId)
   })
 
   it('Should return a valid ID with Part.getId()', () => {

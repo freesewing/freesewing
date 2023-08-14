@@ -5,6 +5,7 @@ import { Point, pointsProxy } from './point.mjs'
 import { Path, pathsProxy } from './path.mjs'
 import { Snippet, snippetsProxy } from './snippet.mjs'
 import { Hooks } from './hooks.mjs'
+import { PureComponent } from 'react'
 
 //////////////////////////////////////////////
 //               CONSTRUCTOR                //
@@ -37,6 +38,7 @@ export function Part() {
   this.paths = {}
   this.snippets = {}
   this.name = null
+  this.macros = {}
 
   return this
 }
@@ -205,8 +207,6 @@ Part.prototype.shorthand = function () {
 
   // Macro closure at the end as it includes the shorthand object
   shorthand.macro = this.__macroClosure(shorthand)
-  // Macro closure at the end as it includes the shorthand object
-  shorthand.rmmacro = this.__rmmacroClosure(shorthand)
 
   return shorthand
 }
@@ -339,6 +339,11 @@ Part.prototype.__inject = function (orig) {
   for (let i in orig.snippets) {
     this.snippets[i] = orig.snippets[i].clone()
   }
+  Object.keys(orig.macros).forEach((key) => {
+    this.macros[key] = (this.macros[key] instanceof Array ? this.macros[key] : []).concat(
+      orig.macros[key]
+    )
+  })
 
   return this
 }
@@ -353,14 +358,16 @@ Part.prototype.__macroClosure = function (props) {
   const self = this
   const method = function (key, args) {
     const macro = utils.__macroName(key)
-    let storeKey = 'macros.' + key + '.ids'
+
+    // let storeKey = 'macros.' + key + '.ids'
     if (key.substring(0, 2) === 'rm') {
-      storeKey = 'macros.' + key.substring(2) + '.ids'
+      key = key.substring(2)
+      // storeKey = 'macros.' + key + '.ids'
 
       let ids = []
       switch (typeof args) {
         case 'undefined':
-          ids = props.store.get(storeKey)
+          ids = self.macros[key]
           break
         case 'string':
           ids.push(args)
@@ -371,16 +378,22 @@ Part.prototype.__macroClosure = function (props) {
       if (typeof self[macro] === 'function' && ids)
         ids.forEach((id) => {
           self[macro](id, props)
-          props.store.set(
-            storeKey,
-            props.store.get(storeKey).filter((e) => e !== id)
-          )
+          // props.store.set(
+          //   storeKey,
+          //   props.store.get(storeKey).filter((e) => e !== id)
+          // )
+          self.macros[key] = self.macros[key].filter((i) => i !== id)
         })
+
       return
     }
 
     args = { ...args, ...{ id: args && args.id ? args.id : self.getId(), macro: macro } }
-    props.store.setIfUnset(storeKey, []).push(storeKey, args.id)
+    // props.store.setIfUnset(storeKey, []).push(storeKey, args.id)
+    self.macros[key] = self.macros[key] instanceof Array ? self.macros[key] : []
+    if (false == self.macros[key].includes(args.id)) {
+      self.macros[key].push(args.id)
+    }
     if (typeof self[macro] === 'function') self[macro](args, props)
     else if ('context' in self) {
       self.context.store.log.warning('Unknown macro `' + key + '` used in ' + self.name)

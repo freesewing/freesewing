@@ -106,6 +106,6 @@ export const titleMacros = {
       `${mid}_exportDate`,
     ])
       delete points[key]
-    points = points.filter((p) => !p.name.match(`${mid}_titleCut_.+`))
+    // points = points.filter((p) => !p.name.match(`${mid}_titleCut_.+`))
   },
 }

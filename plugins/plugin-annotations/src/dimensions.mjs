@@ -152,13 +152,13 @@ export const dimensionsMacros = {
   // corresponding non-prefix macro. And the id for the to-be-removed macro
   // needs to be in the macros.<macroName>.ids store. And there are none in
   // the macro.d.ids path, since there is no d macro.)
-  rmd: function (id, props) {
+  rmad: function (id, props) {
     for (let key of ['vd', 'ld', 'pd', 'hd']) {
       const ids = props.store.get('macros.' + key + '.ids')
       console.log({ ids: ids })
       if (ids)
         ids.forEach((id) => {
-          removeDimension(id, props)
+          removeDimension(key + '_' + id, props)
         })
     }
   },
