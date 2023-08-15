@@ -1,5 +1,5 @@
 // Dependencies
-import { nsMerge, capitalize, cloudflareImageUrl } from 'shared/utils.mjs'
+import { nsMerge, capitalize, cloudflareImageUrl, yyyymmdd } from 'shared/utils.mjs'
 // Hooks
 import { useState, useEffect } from 'react'
 import { useAccount } from 'shared/hooks/use-account.mjs'
@@ -21,6 +21,7 @@ import {
 import { Collapse } from 'shared/components/collapse.mjs'
 import { Tab } from 'shared/components/account/bio.mjs'
 import { CodeBox } from 'shared/components/code-box.mjs'
+import { PostArticle } from 'site/components/mdx/posts/article.mjs'
 
 export const ns = nsMerge('account', authNs)
 
@@ -165,45 +166,33 @@ export const CreateShowcasePost = ({ noTitle = false }) => {
               {img ? (
                 <>
                   <Tip>Here you can add any images you want to include in the post body.</Tip>
-                  {Object.keys(extraImages).map((key) => (
-                    <>
-                      <ImageInput
-                        key={key}
-                        setImg={(img) => setExtraImg(key, img)}
-                        type="showcase"
-                        subId={key}
-                        img={extraImages[key]}
-                        slug={slug}
-                      />
-                    </>
-                  ))}
+                  {Object.keys(extraImages).map((key) => {
+                    const markup =
+                      '![The image alt goes here](' +
+                      cloudflareImageUrl({ id: extraImages[key], variant: 'public' }) +
+                      ' "The image caption/title goes here")'
+                    return (
+                      <>
+                        <ImageInput
+                          key={key}
+                          setImg={(img) => setExtraImg(key, img)}
+                          type="showcase"
+                          subId={key}
+                          img={extraImages[key]}
+                          slug={slug}
+                        />
+                        {extraImages[key] && (
+                          <>
+                            <p>To include this image in your post, use this markdown snippet:</p>
+                            <CodeBox code={markup} title="MarkDown" />
+                          </>
+                        )}
+                      </>
+                    )
+                  })}
                   <button className="btn btn-secondary mt-2" onClick={addImage}>
                     Add Image
                   </button>
-                  {Object.keys(extraImages).length > 0 && (
-                    <>
-                      <h5>Using extra images in your post</h5>
-                      <p>To include these images, use this markup:</p>
-                      <CodeBox>
-                        {Object.keys(extraImages)
-                          .map((key) => `[Image caption here][img${key}]`)
-                          .join('\n\n')}
-                      </CodeBox>
-                      <p>Then, at at the bottom of your post, make sure to include this:</p>
-                      <CodeBox>
-                        {Object.keys(extraImages)
-                          .map(
-                            (key) =>
-                              `[img${key}]: ${cloudflareImageUrl({
-                                id: extraImages[key],
-                                variant: 'main',
-                              })}`
-                          )
-                          .join('\n')}
-                      </CodeBox>
-                      <pre></pre>
-                    </>
-                  )}
                 </>
               ) : (
                 <Popout note compact>
@@ -223,7 +212,20 @@ export const CreateShowcasePost = ({ noTitle = false }) => {
             </Item>
           </>
         ) : (
-          <p>Post preview here</p>
+          <>
+            <h1>{title}</h1>
+            <PostArticle
+              frontmatter={{
+                title,
+                maker: account.username,
+                date: yyyymmdd(),
+                caption,
+                intro,
+              }}
+              imgId={img}
+              body={body}
+            />
+          </>
         )}
       </div>
     </AuthWrapper>
