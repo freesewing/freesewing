@@ -1,9 +1,24 @@
 import tlds from 'tlds/index.json' assert { type: 'json' }
+import _slugify from 'slugify'
 import get from 'lodash.get'
 import set from 'lodash.set'
 import orderBy from 'lodash.orderby'
 import unset from 'lodash.unset'
 import { cloudflareConfig } from './config/cloudflare.mjs'
+
+const slugifyConfig = {
+  replacement: '-', // replace spaces with replacement character, defaults to `-`
+  remove: undefined, // remove characters that match regex, defaults to `undefined`
+  lower: true, // convert to lower case, defaults to `false`
+  strict: true, // strip special characters except replacement, defaults to `false`
+  locale: 'en', // language code of the locale to use
+  trim: true, // trim leading and trailing replacement chars, defaults to `true`
+}
+
+// Slugify a string
+export const slugify = (input) => _slugify(input, slugifyConfig)
+// Slugify a string, but don't trim it. Handy when slugifying user input
+export const slugifyNoTrim = (input) => _slugify(input, { ...slugifyConfig, trim: false })
 
 // Method that returns a unique ID when all you need is an ID
 // but you can't be certain you have one

@@ -58,6 +58,7 @@ export async function replaceImage(props, isTest = false) {
     result = await axios.post(config.api, form, { headers })
   } catch (err) {
     console.log('Failed to replace image on cloudflare', err)
+    console.log(err.response.data)
   }
 
   return result.data?.result?.id ? result.data.result.id : false
@@ -74,10 +75,22 @@ export async function ensureImage(props, isTest = false) {
     await axios.post(config.api, form, { headers })
   } catch (err) {
     // It's fine
-    console.log(err)
   }
 
   return props.id
+}
+
+/*
+ * Method that removes an image fron cloudflare
+ */
+export async function removeImage(id) {
+  try {
+    await axios.delete(`${config.api}/${id}`, { headers })
+  } catch (err) {
+    return false
+  }
+
+  return true
 }
 
 /*
@@ -109,7 +122,14 @@ export async function importImage(props, isTest = false) {
 /*
  * Helper method to construct the form data for cloudflare
  */
-function getFormData({ id, metadata, url = false, b64 = false, blob = false, notPublic = false }) {
+function getFormData({
+  id,
+  metadata = {},
+  url = false,
+  b64 = false,
+  blob = false,
+  notPublic = false,
+}) {
   const form = new FormData()
   form.append('id', id)
   form.append('metadata', JSON.stringify(metadata))

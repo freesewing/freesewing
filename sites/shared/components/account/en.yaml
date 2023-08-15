@@ -190,6 +190,12 @@ designNewInfo: FreeSewing designs are small bundles of JavaScript code that gene
 pluginNew: Create a new plugin
 pluginNewInfo: FreeSewing's functionality can be further extended with plugins. Creating a plugin is easy, and we have a guide to take you from start to finish.
 
+showcaseNew: Create a new showcase post
+showcaseNewInfo: If you would like to share something you (or someone else) made based on our designs, you can start a draft showcase post here.
+
+blogNew: Create a new blog post
+blogNewInfo: If you would like to write on the FreeSewing blog, you can start a draft blog post here.
+
 newBasic: The basics
 newAdvanced: Go further
 

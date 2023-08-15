@@ -8,8 +8,10 @@ import { useMemo } from 'react'
  */
 const apiHandler = axios.create({
   baseURL: freeSewingConfig.backend,
-  timeout: 3000,
+  timeout: 6660,
 })
+
+const auth = (token) => (token ? { headers: { Authorization: 'Bearer ' + token } } : {})
 
 /*
  * This api object handles async code for different HTTP methods
@@ -317,6 +319,20 @@ Backend.prototype.confirmNewsletterUnsubscribe = async function ({ id, ehash }) 
 }
 
 /*
+ * Upload an image
+ */
+Backend.prototype.uploadImage = async function (body) {
+  return responseHandler(await api.post('/images/jwt', body, this.auth))
+}
+
+/*
+ * Remove an (uploaded) image
+ */
+Backend.prototype.removeImage = async function (id) {
+  return responseHandler(await api.delete(`/images/${id}/jwt`, this.auth))
+}
+
+/*
  * Search user (admin method)
  */
 Backend.prototype.adminSearchUsers = async function (q) {
@@ -337,20 +353,27 @@ Backend.prototype.adminUpdateUser = async function ({ id, data }) {
   return responseHandler(await api.patch(`/admin/user/${id}/jwt`, data, this.auth))
 }
 
+/*
+ * Impersonate user (admin method)
+ */
+Backend.prototype.adminImpersonateUser = async function (id) {
+  return responseHandler(await api.get(`/admin/impersonate/${id}/jwt`, this.auth))
+}
+
+/*
+ * Verify an admin account while impersonating another user
+ */
+Backend.prototype.adminPing = async function (token) {
+  return responseHandler(await api.get(`/whoami/jwt`, auth(token)))
+}
+
 export function useBackend() {
   const { token } = useAccount()
 
   /*
    * This backend object is what we'll end up returning
    */
-  const backend = useMemo(() => {
-    /*
-     * Set up authentication headers
-     */
-    const auth = token ? { headers: { Authorization: 'Bearer ' + token } } : {}
-
-    return new Backend(auth)
-  }, [token])
+  const backend = useMemo(() => new Backend(auth(token)), [token])
 
   return backend
 }

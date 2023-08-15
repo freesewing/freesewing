@@ -138,3 +138,39 @@ AdminModel.prototype.updateUser = async function ({ params, body, user }) {
    */
   return this.setResponse200({ user: this.User.asAccount() })
 }
+
+/*
+ * Impersonates a user
+ * This logs an admin in as another user
+ *
+ * @param {params} object - The (URL) request parameters.
+ * @param {body} object - The request body
+ * @param {user} object - The user as loaded by auth middleware
+ * @returns {AdminModel} object - The AdminModel
+ */
+AdminModel.prototype.impersonateUser = async function ({ params, body, user }) {
+  /*
+   * Enforce RBAC
+   */
+  if (!this.rbac.admin(user)) return this.setResponse(403, 'insufficientAccessLevel')
+
+  /*
+   * Is id set?
+   */
+  if (!params.id) return this.setResponse(403, 'idMissing')
+
+  /*
+   * Attempt to load the user from the database
+   */
+  await this.User.read({ id: Number(params.id) })
+
+  /*
+   * If the user cannot be found, return 404
+   */
+  if (!this.User.record) return this.setResponse(404)
+
+  /*
+   * Return 200, token, and data
+   */
+  return this.User.signInOk()
+}

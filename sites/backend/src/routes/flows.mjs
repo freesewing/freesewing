@@ -22,4 +22,20 @@ export function flowsRoutes(tools) {
   app.post('/flows/language-suggestion/key', passport.authenticate(...bsc), (req, res) =>
     Flow.sendLanguageSuggestion(req, res, tools)
   )
+
+  // Upload an image
+  app.post('/images/jwt', passport.authenticate(...jwt), (req, res) =>
+    Flow.uploadImage(req, res, tools)
+  )
+  app.post('/images/key', passport.authenticate(...bsc), (req, res) =>
+    Flow.uploadImage(req, res, tools)
+  )
+
+  // Remove an image
+  app.delete('/images/:id/jwt', passport.authenticate(...jwt), (req, res) =>
+    Flow.removeImage(req, res, tools)
+  )
+  app.delete('/images/:id/key', passport.authenticate(...bsc), (req, res) =>
+    Flow.removeImage(req, res, tools)
+  )
 }

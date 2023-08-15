@@ -23,3 +23,25 @@ FlowsController.prototype.sendLanguageSuggestion = async (req, res, tools) => {
 
   return Flow.sendResponse(res)
 }
+
+/*
+ * Upload an image to Cloudflare
+ * See: https://freesewing.dev/reference/backend/api
+ */
+FlowsController.prototype.uploadImage = async (req, res, tools) => {
+  const Flow = new FlowModel(tools)
+  await Flow.uploadImage(req)
+
+  return Flow.sendResponse(res)
+}
+
+/*
+ * Remove an image from Cloudflare
+ * See: https://freesewing.dev/reference/backend/api
+ */
+FlowsController.prototype.removeImage = async (req, res, tools) => {
+  const Flow = new FlowModel(tools)
+  await Flow.removeImage(req)
+
+  return Flow.sendResponse(res)
+}

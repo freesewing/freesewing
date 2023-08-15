@@ -30,4 +30,9 @@ export function adminRoutes(tools) {
   app.patch('/admin/user/:id/key', passport.authenticate(...bsc), (req, res) =>
     Admin.updateUser(req, res, tools)
   )
+
+  // Impersonate user
+  app.get('/admin/impersonate/:id/jwt', passport.authenticate(...jwt), (req, res) =>
+    Admin.impersonateUser(req, res, tools)
+  )
 }

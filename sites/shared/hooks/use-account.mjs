@@ -4,6 +4,7 @@ import createPersistedState from 'use-persisted-state'
  * Set up local storage state for account & token
  */
 const usePersistedAccount = createPersistedState('fs-account')
+const usePersistedAdmin = createPersistedState('fs-admin')
 const usePersistedToken = createPersistedState('fs-token')
 const usePersistedSeenUser = createPersistedState('fs-seen-user')
 
@@ -18,6 +19,7 @@ const noAccount = { username: false, control: 2 }
 export function useAccount() {
   // (persisted) State (saved to local storage)
   const [account, setAccount] = usePersistedAccount(noAccount)
+  const [admin, setAdmin] = usePersistedAdmin(noAccount)
   const [token, setToken] = usePersistedToken(null)
   const [seenUser, setSeenUser] = usePersistedSeenUser(false)
 
@@ -27,6 +29,26 @@ export function useAccount() {
     setToken(null)
   }
 
+  // Impersonate a user.
+  // Only admins can do this but that is enforced at the backend.
+  const impersonate = (data) => {
+    setAdmin({ token, account })
+    const newAccount = {
+      ...data.account,
+      impersonatingAdmin: { id: account.id, username: account.username },
+    }
+    setAdmin({ token, account: { ...account } })
+    setAccount(newAccount)
+  }
+
+  const stopImpersonating = () => {
+    setAccount(admin.account)
+    setToken(admin.token)
+    clearAdmin()
+  }
+
+  const clearAdmin = () => setAdmin(noAccount)
+
   return {
     account,
     setAccount,
@@ -35,5 +57,9 @@ export function useAccount() {
     seenUser,
     setSeenUser,
     signOut,
+    admin,
+    clearAdmin,
+    impersonate,
+    stopImpersonating,
   }
 }

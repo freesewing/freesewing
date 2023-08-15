@@ -54,6 +54,16 @@ export const extendSiteNav = async (siteNav, lang) => {
       s: 'new/set',
       0: 20,
     },
+    showcase: {
+      t: t('newShowcase'),
+      s: 'new/showcase',
+      0: 30,
+    },
+    blog: {
+      t: t('newBlog'),
+      s: 'new/blog',
+      0: 30,
+    },
   }
 
   // Add designs
