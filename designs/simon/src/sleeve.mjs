@@ -27,9 +27,6 @@ function simonSleeve({
   store,
   part,
 }) {
-  console.log('--Sleeve--')
-  console.log({ store: store, points: points })
-
   // Update the back armhole notch because the one from Brian is not correct
   points.backNotch = paths.sleevecap.reverse().shiftAlong(store.get('backArmholeToArmholePitch'))
 
@@ -281,9 +278,6 @@ function simonSleeve({
       }
     }
   }
-
-  console.log({ store: store, points: points })
-  console.log('--Sleeve--')
 
   return part
 }

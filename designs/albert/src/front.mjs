@@ -44,8 +44,6 @@ export const front = {
     let sideHemWidth = Math.max(sa, hemWidth / 4)
     let pocketSize = apronLength / 4
 
-    console.log({ store: store })
-
     store.set('bibWidth', bibWidth)
     store.set('apronLength', apronLength)
     store.set('apronWidth', apronWidth)
@@ -221,8 +219,6 @@ export const front = {
 
     // Paperless?
     if (paperless) {
-      console.log({ thb: thb })
-      console.log({ type: typeof thb })
       macro('rmbanner', thb)
       macro('rmbannerbox', thbb)
       macro('rmbartack', bt)
@@ -276,8 +272,6 @@ export const front = {
       })
     }
 
-    console.log({ un: macro('unknown') })
-    console.log({ front: part })
     macro('rmvd')
     macro('rmd')
 

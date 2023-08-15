@@ -61,7 +61,7 @@ function pacoBackPocketBag({
       from: points.pocketBagBottomLeft.shift(0, 15),
       to: points.pocketBagWaistLeft.shift(0, 15),
     })
-    macro('scalebox', false)
+    macro('rmscalebox')
     paths.cut = new Path()
       .move(points.pocketLeft)
       .line(points.pocketRight)
