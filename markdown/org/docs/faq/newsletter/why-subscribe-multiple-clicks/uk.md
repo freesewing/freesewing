@@ -1,54 +1,51 @@
 ---
-title: Why do I have to click again to confirm I want to subscribe after I already clicked the confirmation link you sent me?
+title: Чому я маю повторно підтверджувати свою підписку до розсилки, якщо я вже натиснули на підтверджувальне покликання в електронному листі?
 ---
 
-There are two aspects that cause signing up for our newsletter to require multiple clicks:
+Є дві причини, чому підписка до нашої розсилки новин потребує декількох натисків:
 
-- [People should only be able to sign up themselves](#people-should-only-be-able-to-sign-up-themselves)
-- [GET requests should not make changes](#get-requests-should-not-make-changes)
+- [Лише користувачі повинні мати можливість підписатися](#people-should-only-be-able-to-sign-up-themselves)
+- [Запити GET не мають вносити зміни](#get-requests-should-not-make-changes)
 
-## People should only be able to sign up themselves
+## Лише користувачі повинні мати можливість підписатися
 
-This one is pretty easy to understand. One should not be able to subscribe somebody else's email address to the FreeSewing newsletter.
+Цей пункт доволі легко зрозуміти. Загалом, людина не повинна мати можливість підписати поштову скриньку іншої людини до розсилки новин FreeSewing.
 
-This is why, after indicating you want to sign up, we sent you a confirmation email to the email address you provided. If you receive this email, it confirms not only that the email address is working, but also that you have access to it.
+Саме тому, після Вашої ініціативи підписатися, ми надсилаємо Вам електронного листа на вказану Вами електронну адресу. Отримання Вами цього листа підтверджує не лише активність електронної адреси, але й те, що Ви маєте доступ до неї.
 
-In other words, only after you click the link in the confirmation email can we know for cerntain that:
+In other words, only after you click the link in the confirmation email can we know for certain that:
 
-- The email address is valid
-- The owner of the email address wants to subscribe
+- електронна поштова адреса працює;
+- власник цієї адреси бажає підписатися до розсилки.
 
-That's where it would be over. Except for one technical detail that's also important:
+На цьому мало б усе закінчитися. Якби не одна важлива технічна деталь:
 
-## GET requests should not make changes
+## Запити GET не мають вносити зміни
 
-<Warning compact>This is more technical and harder to understand</Warning>
+<Warning compact>Цей пункт є більш технічним та важчим для розуміння</Warning>
 
-Another reason is that while we could make it so that clicking the link in your email would immeadiatly subcribe you, it would be in violation of internet standards. Specifically, the __HTTP__ protocol's __GET method__ definition which states that:
+Другою причиною є те, що, в той час як ми могли б зробити так, щоб підписка завершилася після натискання покликання, це було б порушенням інтернет-стандартів. Зокрема, визначення __запиту GET__ протоколу __HTTP__, в якому вказується, що:
 
 
 <Note>
-<h5>GET requests should only retrieve data and should have no other effect.</h5>
+<h5>Запити GET мають лише отримувати дані й не повинні виконувати будь-які інші дії (переклад з англійської).</h5>
 
 [wikipedia.org/wiki/HTTP#HTTP/1.1_request_messages](https://en.wikipedia.org/wiki/HTTP#HTTP/1.1_request_messages)
 </Note>
 
-A _GET request_ is what happens when you follow a link. Merely following a link should not make any changes (like subscribing you to a newsletter).
+_GET-запит_ — це те, що відбувається, коли Ви переходите за покликанням. Тобто перехід за покликанням не має вносити жодних змін (як підписка до розсилки новин).
 
-For example, when you receive an email, your email client may _preload_ the links in it in the background. So that they are quicker to load should you click on them.
+Наприклад: якщо Ви отримуєте листа, Ваш поштовий клієнт може _попередньо завантажити_ покликання на тлі. Це збільшує швидкість завантаження, коли Ви натиснете на це покликання.
 
-Obviously, this preloading should not confirm your subscription. Which is why you need to click a button to confirm. Because that will trigger a __POST request__ and those can make changes.
+Очевидно, що таке попереднє завантаження не має підтверджувати Вашу підписку. Саме тому Вам потрібно натиснути окрему кнопку для підтвердження. Це пустить в дію __запит POST__, який може вносити зміни.
 
 <Tip>
 
-##### This does not apply to users subscribing through their account
+##### Це не стосується користувачів, що підписуються через свій обліковий запис
 
-None of this applies to users who subscribe to our newsletter by enabling the
-option in our account.  In this case, we do not need to go through the email
-validation process, since we already did that when you signed up. 
+Ця інформація не стосується користувачів, які підписуються до нашої розсилки новин через налаштування свого облікового запису.  В такому випадку нам не потрібно верифікувати Вашу електронну адресу, оскільки ми вже зробили це при реєстрації. 
 
-For users, subscribing (and unsubscribing) is instant (If you are curious, 
-we use an idempotent __PUT request__ under the hood).
+Для користувачів з обліковим записом, підписка (та відписка) відбувається миттєво (якщо Вам цікаво, ми використовуємо ідемпотентний запит PUT).
 </Tip>
 
 
