@@ -2,13 +2,13 @@
 title: Datenschutzerklärung
 ---
 
-**Last update**: 13 August 2023
+**Letztes Update**: 13. Januar 2023
 
-Diese Datenschutzerklärung beschreibt die persönlichen Daten, die wir speichern. It outlines why we need the data, how long we keep it, and whether we share it with any third-parties (we do not).
+Diese Datenschutzerklärung beschreibt die persönlichen Daten, die wir speichern. Sie stellt dar, warum wir die Daten brauchen, wie lange wir sie behalten, und ob wir sie mit Dritten teilen).
 
 Wir sind zuversichtlich, dass sie unser Engagement für Privatsphäre unter Beweis stellen wird.
 
-For clarity, we've broken this up in three different types of roles:
+Der Übersicht wegen haben wir dies in vier verschiedene Punkte aufgeteilt:
 
 - Für **Besucher/-innen unserer Website** speichern wir **[Besuchsdaten][v]**
 - Für **Abonnenten unseres Newsletters** speichern wir **[Abonnentendaten][s]**
@@ -17,23 +17,23 @@ For clarity, we've broken this up in three different types of roles:
 ## Wie wir deine Besucherdaten verwenden
 
 <Note>
-This data is stored for anybody who visits our website and connects to our backend APIs.
+Diese Daten werden für jede Person gespeichert, die unsere Website besucht oder sich mit unseren Backend-APIs verbindet.
 </Note>
 
 ##### Welche persönlichen Daten speichern wir?
 
 - Deine IP-Adresse
 
-##### Why do we need this data?
+##### Warum brauchen wir das?
 
-- To protect ourselves from abuse.
-- We use the IP address only to blacklist malicious or abusive clients or investigate security incidents.
+- Um Missbrauch zu verhindern, müssen wir zu eurem und auch unserem Schutz folgende Maßnahmen treffen.
+- Wir verwenden die IP-Adresse nur, um böswillige oder missbräuchliche Kunden auf eine schwarze Liste zu setzen oder Sicherheitsvorfälle zu untersuchen.
 
-##### How long do we keep this data?
+##### Für wie lange behalten wir sie?
 
 - Wir behalten diese Logs nicht länger als 6 Monate.
 
-##### Do we share this data?
+##### Teilen wir diese Daten?
 
 - Nein, niemals
 
@@ -75,26 +75,26 @@ Diese Daten werden für jede Person mit einem Account auf unserer Website gespei
 
 - Deine E-Mail-Adresse
 - Deinen Benutzernamen und dein Passwort
-- Body measurements and a (freely chosen) name for any measurements set of pattern you store in your account.
-- Optional: A profile picture, bio, and your GitHub username. An image and notes for each measurements set or pattern stored in your account.
+- Körpermaße und ein (frei gewählter) Name für jeden Maßsatz, den du in deinem Konto speicherst.
+- Optional: ein Profilbild, eine Beschreibung über dich, und deine Accounts bei sozialen Medien. Ein Bild und Notizen für jeden Satz Masse oder jedes Muster, das in deinem Konto gespeichert ist.
 
 ##### Warum brauchen wir sie?
 
 - Um dich zu authentifizieren
 - Um dich bei Bedarf kontaktieren zu können
-- To be able to generate made-to-measure sewing patterns for you
+- Um für dich maßgeschneiderte Schnittmuster erstellen zu können
 
 ##### Für wie lange behalten wir sie?
 
-- Until your remove your account, or until at least 12 months after the last time you connected to our backend.
-- We will always contact you prior to removing any inactive data.
+- Bis du dein Konto löschst oder bis mindestens 12 Monate nach dem letzten Mal, wo du dich mit unserem Backend verbunden hast.
+- Wir werden dich immer kontaktieren, bevor wir inaktive Daten löschen.
 
 ##### Teilen wir sie?
 
 - Nein, niemals.
 
 
-## Other info relevant to this privacy notice
+## Andere Informationen, die für diesen Datenschutzhinweis relevant sind
 
 ### Datenverantwortlicher und Kontaktinformationen
 
@@ -114,7 +114,7 @@ Wenn du glaubst, dass deine persönlichen Daten kompromittiert wurden, kontaktie
 
 ### Dienstanbieter
 
-Our hosting providers manage various components of our infrastructure us. Dazu gehören Hosting, Speicher und Backup.
+Unsere Hosting-Anbieter verwalten verschiedene Komponenten unserer Infrastruktur selbst. Dazu gehören Hosting, Speicher und Backup.
 
 Das bedeutet zwar, dass sie (streng genommen) deine Daten verarbeiten, aber sie benötigen keinen Zugang zu Informationen über dich. Außerdem verschlüsseln wir ruhende Profildaten, wodurch es für sie nicht trivial ist auf sie zuzugreifen, selbst wenn sie dies wollten.
 
@@ -124,7 +124,7 @@ Wir haben zwar nicht die Absicht, irgendwelche deiner persönlichen Daten weiter
 
 Wenn wir gesetzlich dazu verpflichtet sind oder wenn wir der Meinung sind, dass dies das kleinere Übel wäre, werden wir personenbezogene Daten preisgeben.
 
-So far:
+Bisher:
 
 - FreeSewing has never turned over our encryption or authentication keys or our customers' encryption or authentication keys to anyone.
 - FreeSewing has never installed any law enforcement software or equipment anywhere on our infrastructure.
