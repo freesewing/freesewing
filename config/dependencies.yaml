@@ -252,7 +252,7 @@ dev:
     'remark-gfm': &remarkGfm '3.0.1'
   dev: &nextSiteDevDependencies
     '@playwright/test': '^1.32.3'
-    'autoprefixer': '10.4.14'
+    'autoprefixer': '10.4.15'
     'eslint-config-next': *next
     'js-yaml': &jsYaml '4.1.0'
     'postcss': &postcss '8.4.28'
