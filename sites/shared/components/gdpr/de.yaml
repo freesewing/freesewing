@@ -10,21 +10,21 @@ createMyAccount: Meinen Account erstellen
 furtherReading: Weiterführende Informationen
 hideDetails: Details ausblenden
 noConsentNoAccount: This consent is required for a FreeSewing account.
-noConsentNoAccountCreation: Without this consent, we cannot create a FreeSewing account.
+noConsentNoAccountCreation: Ohne diese Einwilligung können wir deinen Account nicht erstellen.
 noIDoNot: 'Nein, mache ich nicht'
 openDataInfo: Diese Daten werden verwendet, um die menschliche Form in all ihren Formen zu studieren und zu verstehen, sodass wir bessere Schnittmuster und besser passende Kleidungsstücke erhalten. Auch wenn diese Daten anonymisiert sind, hast du das Recht, dem zu widersprechen.
 openDataQuestion: Teile anonymisierte Maße als freie Daten (open data)
 privacyMatters: Datenschutz ist wichtig
 privacyNotice: FreeSewing Datenschutzhinweis
 processing: In Bearbeitung
-accountQuestion: Do you give your consent to process your account data?
+accountQuestion: Gibst du deine Einwilligung zur Verarbeitung deiner Modelldaten?
 accountShareAnswer: '<b>Nein</b>, niemals.'
-accountTimingAnswer: '<b>12 months</b> after the last time your connected to our backend, or until you <b>remove</b> your account or <b>revoke</b> this consent.'
+accountTimingAnswer: '<b>12 Monate</b> nach deinem letzten Login oder bis du <b>deinen Account entfernst</b> oder bis du diese Einwilligung <b>widerrufst</b>.'
 accountWarning: Durch den Widerruf dieser Einwilligung werden alle deine Daten entfernt. Es hat den gleichen Effekt wie das Entfernen deines Accounts.
 accountWhatAnswerOptional: 'Optional: A <b>picture</b>, <b>bio</b>, or <b>GitHub username</b>'
 accountWhatAnswer: 'Your <b>email address</b>, <b>username</b>, and <b>password</b>, and any <b>body measurements</b> you add to your account.'
 accountWhatQuestion: What is account data?
-accountWhyAnswer: 'To <b>authenticate</b> you, <b>contact</b> you when needed, and generate <b>made-to-measure</b> sewing patterns.'
+accountWhyAnswer: 'Um <b>dich zu authentifizieren</b>, <b>dich bei Bedarf zu kontaktieren</b> und <b>maßgeschneiderte</b> Schnittmuster zu erstellen.'
 readMore: Weitere Informationen findest du in unserer Datenschutzerklärung.
 readRights: Lies mehr über deine Rechte für weitere Informationen.
 revokeConsent: Einwilligung widerrufen
