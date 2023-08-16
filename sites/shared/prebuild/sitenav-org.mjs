@@ -109,7 +109,7 @@ export const extendSiteNav = async (siteNav, lang) => {
   // Add admin but hide it
   siteNav.admin = {
     t: t('sections:admin'),
-    m: 1,
+    _: 1,
     s: 'admin',
   }
 
