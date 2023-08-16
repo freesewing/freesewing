@@ -133,9 +133,9 @@ FlowModel.prototype.uploadImage = async function ({ body, user }) {
   if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
 
   /*
-   * Is img set?
+   * Is img or url set?
    */
-  if (!body.img) return this.setResponse(400, 'imgMissing')
+  if (!body.img && !body.url) return this.setResponse(400, 'imgOrUrlMissing')
 
   /*
    * Is type set and valid?
@@ -156,21 +156,21 @@ FlowModel.prototype.uploadImage = async function ({ body, user }) {
   if (!body.slug) return this.setResponse(400, 'slugMissing')
 
   /*
-   * Upload the image
+   * Prepare data for uploading the image
    */
-  const id = `${body.type}-${body.slug}${
-    body.subId && body.subId !== 'main' ? '-' + body.subId : ''
-  }`
-  const b64 = body.img
-  const metadata = { uploadedBy: user.uid }
+  const data = {
+    id: `${body.type}-${body.slug}${body.subId && body.subId !== 'main' ? '-' + body.subId : ''}`,
+    metadata: { uploadedBy: user.uid },
+  }
+  if (body.img) data.b64 = body.img
+  else if (body.url) data.url = body.url
+
   /*
    * You need to be a curator to overwrite (replace) an image.
    * Regular users can only update new images, not overwrite images.
    * If not, any user could overwrite any showcase image.
    */
-  const imgId = this.rbac.curator(user)
-    ? await replaceImage({ b64, id, metadata })
-    : await ensureImage({ b64, id, metadata })
+  const imgId = this.rbac.curator(user) ? await replaceImage(data) : await ensureImage(data)
 
   /*
    * Return 200 and the image ID

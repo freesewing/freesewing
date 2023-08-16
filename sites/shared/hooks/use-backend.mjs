@@ -163,6 +163,14 @@ Backend.prototype.disableMfa = async function (data) {
 Backend.prototype.reloadAccount = async function () {
   return responseHandler(await await api.get(`/whoami/jwt`, this.auth))
 }
+
+/*
+ * Load user profile
+ */
+Backend.prototype.getProfile = async function (uid) {
+  return responseHandler(await await api.get(`/users/${uid}`))
+}
+
 /*
  * Create API key
  */
@@ -290,6 +298,12 @@ Backend.prototype.createIssue = async function (data) {
   return responseHandler(await api.post(`/issues`, data), 201)
 }
 
+/*
+ * Create showcase Pull Request
+ */
+Backend.prototype.createShowcasePr = async function (data) {
+  return responseHandler(await api.post(`/flows/pr/showcase`, data, this.auth))
+}
 /*
  * Send translation invite
  */

@@ -2,13 +2,15 @@ import { PageLink } from 'shared/components/page-link.mjs'
 import { Lightbox } from 'shared/components/lightbox.mjs'
 import { ImageWrapper } from 'shared/components/wrappers/img.mjs'
 import { Author } from './author.mjs'
-import { TimeAgo } from 'shared/components/mdx/meta.mjs'
+import { TimeAgo, ns as timeagoNs } from 'shared/components/timeago/index.mjs'
 import { useTranslation } from 'next-i18next'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { cloudflareImageUrl } from 'shared/utils.mjs'
 import Markdown from 'react-markdown'
+import { nsMerge, capitalize } from 'shared/utils.mjs'
+import { Tag } from 'shared/components/tag.mjs'
 
-export const ns = ['common', 'posts']
+export const ns = nsMerge('common', 'posts', timeagoNs)
 
 export const PostArticle = (props) => {
   const { t } = useTranslation('common')
@@ -28,16 +30,18 @@ const PostWrapper = ({ children }) => <article className="mb-12 px-8 max-w-7xl">
 const PostMeta = ({ frontmatter, t }) => (
   <div className="flex flex-row justify-between text-sm mb-1 mt-2">
     <div>
-      <TimeAgo date={frontmatter.date} t={t} /> [{frontmatter.date}]
+      <TimeAgo date={frontmatter.date} t={t} />
     </div>
     <div>
       {frontmatter.designs?.map((design) => (
-        <PageLink
+        <Tag
           href={`/showcase/designs/${design}`}
-          txt={design}
+          color="primary"
+          hoverColor="secondary"
           key={design}
-          className="px-2 capitalize"
-        />
+        >
+          {design}
+        </Tag>
       ))}
     </div>
     <div>

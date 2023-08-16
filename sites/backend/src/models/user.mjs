@@ -20,6 +20,40 @@ export function UserModel(tools) {
  * Loads a user from the database based on the where clause you pass it
  * In addition prepares it for returning the account data
  * This is guarded so it enforces access control and validates input
+ * This is an anonymous route returning limited info (profile data)
+ *
+ * @param {params} object - The request (URL) parameters
+ * @returns {UserModel} object - The UserModel
+ */
+UserModel.prototype.profile = async function ({ params }) {
+  /*
+   * Is id set?
+   */
+  if (typeof params.id === 'undefined') return this.setResponse(403, 'idMissing')
+
+  /*
+   * Try to find the record in the database
+   * Note that find checks lusername, ehash, and id but we
+   * pass it in the username value as that's what the login
+   * rout does
+   */
+  await this.find({ username: params.id })
+
+  /*
+   * If it does not exist, return 404
+   */
+  if (!this.exists) return this.setResponse(404)
+
+  return this.setResponse200({
+    result: 'success',
+    profile: this.asProfile(),
+  })
+}
+
+/*
+ * Loads a user from the database based on the where clause you pass it
+ * In addition prepares it for returning the account data
+ * This is guarded so it enforces access control and validates input
  *
  * @param {where} object - The where clasuse for the Prisma query
  * @returns {UserModel} object - The UserModel
@@ -1116,6 +1150,25 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
    * We should not ever arrive here, so return 400 at this point
    */
   return this.setResponse(400, 'invalidMfaSetting')
+}
+
+/*
+ * Returns the database record as profile data for public consumption
+ *
+ * @return {account} object - The account data as a plain object
+ */
+UserModel.prototype.asProfile = function () {
+  /*
+   * Nothing to do here but construct the object to return
+   */
+  return {
+    id: this.record.id,
+    bio: this.clear.bio,
+    img: this.clear.img,
+    patron: this.record.patron,
+    role: this.record.role,
+    username: this.record.username,
+  }
 }
 
 /*

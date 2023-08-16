@@ -1,15 +1,17 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { nsMerge } from 'shared/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 import { ns as apikeysNs } from 'shared/components/account/apikeys.mjs'
-import { CreateShowcasePost } from 'site/components/github/create-showcase.mjs'
+import { CreateShowcasePost, ns as createNs } from 'site/components/github/create-showcase.mjs'
+import { BareLayout } from 'site/components/layouts/bare.mjs'
 
 // Translation namespaces used on this page
-const namespaces = [...new Set([...apikeysNs, ...authNs, ...pageNs])]
+const namespaces = nsMerge(createNs, authNs, pageNs)
 
 /*
  * Each page MUST be wrapped in the PageWrapper component.
@@ -21,8 +23,10 @@ const NewShowcasePage = ({ page }) => {
   const { t } = useTranslation(namespaces)
 
   return (
-    <PageWrapper {...page} title={t('showcaseNew')}>
-      <CreateShowcasePost noTitle />
+    <PageWrapper {...page} title={t('showcaseNew')} layout={BareLayout}>
+      <div className="w-full px-4 mt-8">
+        <CreateShowcasePost noTitle />
+      </div>
     </PageWrapper>
   )
 }

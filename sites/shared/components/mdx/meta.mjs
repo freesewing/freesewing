@@ -4,28 +4,10 @@ import { authors as allAuthors } from 'config/authors.mjs'
 import { docUpdates } from 'site/prebuild/doc-updates.mjs'
 // Components
 import { PageLink } from 'shared/components/page-link.mjs'
-import { DateTime, Interval } from 'luxon'
+import { TimeAgo } from 'shared/components/timeago/index.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 import { EditIcon } from 'shared/components/icons.mjs'
-
-export const TimeAgo = ({ date, t }) => {
-  const i = Interval.fromDateTimes(DateTime.fromISO(date), DateTime.now())
-    .toDuration(['hours', 'days', 'months', 'years'])
-    .toObject()
-  let ago = ''
-  if (i.years < 1 && i.months < 1) {
-    if (Math.floor(i.days) === 1) ago += `${t('oneDay')}`
-    else if (Math.floor(i.days) === 0) ago += `${t('lessThanADay')}`
-  } else {
-    if (i.years === 1) ago += `${i.years} ${t('year')}, `
-    else if (i.years > 1) ago += `${i.years} ${t('years')}, `
-    if (i.months === 1) ago += `${i.months} ${t('month')}`
-    else if (i.months > 1) ago += `${i.months} ${t('months')}`
-  }
-
-  return `${ago} ${t('ago')}`
-}
 
 const PersonList = ({ list }) =>
   list ? (
@@ -66,7 +48,7 @@ const CreditsList = ({ updates, frontmatter, locale, t }) => (
       </li>
     )}
     <li className="list-none mt-2">
-      <b className="pr-2">{t('lastUpdated')}:</b> <TimeAgo date={updates.u} t={t} />
+      <b className="pr-2">{t('lastUpdated')}:</b> <TimeAgo date={updates.u} />
     </li>
   </ul>
 )

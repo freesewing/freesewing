@@ -8,6 +8,7 @@ import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useDropzone } from 'react-dropzone'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { Loading } from 'shared/components/spinner.mjs'
+import { DownloadIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['account']
 
@@ -69,6 +70,7 @@ export const ImageInput = ({ slug = false, setImg, img, type = 'showcase', subId
   const toast = useToast()
   const { t } = useTranslation(ns)
   const [uploading, setUploading] = useState(false)
+  const [url, setUrl] = useState('')
 
   const onDrop = useCallback(
     (acceptedFiles) => {
@@ -83,6 +85,13 @@ export const ImageInput = ({ slug = false, setImg, img, type = 'showcase', subId
     },
     [slug]
   )
+
+  const imageFromUrl = async () => {
+    setUploading(true)
+    const result = await backend.uploadImage({ type, subId, slug, url })
+    setUploading(false)
+    if (result.success) setImg(result.data.imgId)
+  }
 
   const { getRootProps, getInputProps } = useDropzone({ onDrop })
 
@@ -134,13 +143,26 @@ export const ImageInput = ({ slug = false, setImg, img, type = 'showcase', subId
         {...getRootProps()}
         className={`
         flex rounded-lg w-full flex-col items-center justify-center
-        lg:h-64 lg:border-4 lg:border-secondary lg:border-dashed
+        lg:p-6 lg:border-4 lg:border-secondary lg:border-dashed
       `}
       >
         <input {...getInputProps()} />
         <p className="hidden lg:block p-0 m-0">{t('imgDragAndDropImageHere')}</p>
         <p className="hidden lg:block p-0 my-2">{t('or')}</p>
         <button className={`btn btn-secondary btn-outline mt-4 px-8`}>{t('imgSelectImage')}</button>
+      </div>
+      <p className="hidden lg:block p-0 my-2 text-center">{t('or')}</p>
+      <div className="flex flex-row items-center">
+        <input
+          type="url"
+          className="input input-secondary w-full input-bordered rounded-r-none"
+          placeholder="Paste an image URL here and click the download icon"
+          value={url}
+          onChange={(evt) => setUrl(evt.target.value)}
+        />
+        <button disabled={!url} className="btn btn-secondary rounded-l-none" onClick={imageFromUrl}>
+          <DownloadIcon />
+        </button>
       </div>
     </div>
   )
