@@ -18,7 +18,7 @@ If you receive this email, it confirms not only that the email address
 is working, but also that you have access to it.
 
 In other words, only after you click the link in the confirmation email can we know for
-cerntain that:
+certain that:
 
 - The email address is valid
 - The owner of the email address wants to subscribe

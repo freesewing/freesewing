@@ -192,7 +192,7 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.387.0'
+    '@aws-sdk/client-sesv2': '3.391.0'
     '@prisma/client': &prisma '5.1.1'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
@@ -225,7 +225,7 @@ dev:
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': &mdxRuntime '2.0.0-next.9'
-    '@next/bundle-analyzer': &next '13.4.13'
+    '@next/bundle-analyzer': &next '13.4.16'
     '@tailwindcss/typography': &tailwindTypography '0.5.9'
     'algoliasearch': '4.19.1'
     'daisyui': &daisyui '3.5.1'
@@ -252,10 +252,10 @@ dev:
     'remark-gfm': &remarkGfm '3.0.1'
   dev: &nextSiteDevDependencies
     '@playwright/test': '^1.32.3'
-    'autoprefixer': '10.4.14'
+    'autoprefixer': '10.4.15'
     'eslint-config-next': *next
     'js-yaml': &jsYaml '4.1.0'
-    'postcss': &postcss '8.4.27'
+    'postcss': &postcss '8.4.28'
     'playwright': '^1.32.3'
     'remark-extract-frontmatter': '3.2.0'
     'remark-mdx-frontmatter': '3.0.0'
@@ -275,7 +275,7 @@ lab:
     'd3-drag': '3.0.0'
     'd3-selection': '3.0.0'
     'daisyui': *daisyui
-    'i18next': &i18next '23.4.3'
+    'i18next': &i18next '23.4.4'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
@@ -284,7 +284,7 @@ lab:
     'react': *react
     'react-copy-to-clipboard': *reactCopyToClipboard
     'react-hotkeys-hook': *reactHotkeysHook
-    'react-i18next': &reactI18next '13.0.3'
+    'react-i18next': &reactI18next '13.1.2'
     'react-instantsearch-dom': *reactInstantsearchDom
     'react-markdown': *reactMarkdown
     'react-swipeable': *reactSwipeable

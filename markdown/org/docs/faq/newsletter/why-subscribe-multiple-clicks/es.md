@@ -13,7 +13,7 @@ This one is pretty easy to understand. One should not be able to subscribe someb
 
 This is why, after indicating you want to sign up, we sent you a confirmation email to the email address you provided. If you receive this email, it confirms not only that the email address is working, but also that you have access to it.
 
-In other words, only after you click the link in the confirmation email can we know for cerntain that:
+In other words, only after you click the link in the confirmation email can we know for certain that:
 
 - The email address is valid
 - The owner of the email address wants to subscribe
