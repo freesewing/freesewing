@@ -6,7 +6,10 @@ export const accountTests = async (chai, config, expect, store) => {
       bio: "I know it sounds funny but I just can't stand the pain",
       consent: 1,
       control: 4,
-      github: 'sorchanidhubhghaill',
+      data: {
+        githubUsername: 'sorchanidhubhghaill',
+        githubEmail: 'nidhubhs@gmail.com',
+      },
       imperial: true,
       language: 'es',
       newsletter: true,
@@ -15,7 +18,10 @@ export const accountTests = async (chai, config, expect, store) => {
       bio: "It's a long way to the top, if you wanna rock & roll",
       consent: 2,
       control: 3,
-      github: 'joostdecock',
+      data: {
+        githubUsername: 'joostdecock',
+        githubEmail: 'joost@joost.at',
+      },
       imperial: true,
       language: 'de',
       newsletter: true,
@@ -45,7 +51,11 @@ export const accountTests = async (chai, config, expect, store) => {
               expect(err === null).to.equal(true)
               expect(res.status).to.equal(200)
               expect(res.body.result).to.equal(`success`)
-              expect(res.body.account[field]).to.equal(val)
+              if (typeof val === 'object') {
+                expect(JSON.stringify(res.body.account[field])).to.equal(JSON.stringify(val))
+              } else {
+                expect(res.body.account[field]).to.equal(val)
+              }
               done()
             })
         })

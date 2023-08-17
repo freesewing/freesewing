@@ -11,7 +11,8 @@ import { decorateModel } from '../utils/model-decorator.mjs'
 export function UserModel(tools) {
   return decorateModel(this, tools, {
     name: 'user',
-    encryptedFields: ['bio', 'github', 'email', 'initial', 'img', 'mfaSecret'],
+    encryptedFields: ['bio', 'data', 'email', 'initial', 'img', 'mfaSecret'],
+    jsonFields: ['data'],
     models: ['confirmation', 'set', 'pattern'],
   })
 }
@@ -381,7 +382,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
        * These are all placeholders, but fields that get encrypted need _some_ value
        * because encrypting null will cause an error.
        */
-      github: this.encrypt(''),
+      data: this.encrypt('{}'),
       bio: this.encrypt(''),
       img: this.encrypt(this.config.avatars.user),
     }
@@ -824,7 +825,7 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
   /*
    * String fields
    */
-  for (const field of ['bio', 'github']) {
+  for (const field of ['bio']) {
     if (typeof body[field] === 'string') data[field] = body[field]
   }
 
@@ -833,6 +834,16 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
    */
   for (const [field, values] of Object.entries(this.config.enums.user)) {
     if (values.includes(body[field])) data[field] = body[field]
+  }
+
+  /*
+   * JSON fields
+   */
+  for (const field of this.jsonFields) {
+    if (typeof body[field] !== 'undefined') {
+      if (typeof body[field] === 'object') data[field] = body[field]
+      else log.warn(body, `Tried to set JDON field ${field} to a non-object`)
+    }
   }
 
   /*
@@ -1188,7 +1199,7 @@ UserModel.prototype.asAccount = function () {
     control: this.record.control,
     createdAt: this.record.createdAt,
     email: this.clear.email,
-    github: this.clear.github,
+    data: this.clear.data,
     ihash: this.ihash,
     img: this.clear.img,
     imperial: this.record.imperial,

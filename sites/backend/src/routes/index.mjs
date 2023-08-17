@@ -4,7 +4,6 @@ import { setsRoutes } from './sets.mjs'
 import { patternsRoutes } from './patterns.mjs'
 import { confirmationsRoutes } from './confirmations.mjs'
 import { curatedSetsRoutes } from './curated-sets.mjs'
-import { issuesRoutes } from './issues.mjs'
 import { subscribersRoutes } from './subscribers.mjs'
 import { flowsRoutes } from './flows.mjs'
 import { adminRoutes } from './admin.mjs'
@@ -17,7 +16,6 @@ export const routes = {
   patternsRoutes,
   confirmationsRoutes,
   curatedSetsRoutes,
-  issuesRoutes,
   subscribersRoutes,
   flowsRoutes,
   adminRoutes,

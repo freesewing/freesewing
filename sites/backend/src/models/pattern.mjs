@@ -9,6 +9,7 @@ export function PatternModel(tools) {
   return decorateModel(this, tools, {
     name: 'pattern',
     encryptedFields: ['data', 'img', 'name', 'notes', 'settings'],
+    jsonFields: ['data'],
     models: ['set'],
   })
 }

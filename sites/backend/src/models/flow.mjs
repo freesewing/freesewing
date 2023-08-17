@@ -1,6 +1,7 @@
 import { i18nUrl } from '../utils/index.mjs'
 import { decorateModel } from '../utils/model-decorator.mjs'
 import { ensureImage, replaceImage, removeImage } from '../utils/cloudflare-images.mjs'
+import { createIssue, createFile } from '../utils/github.mjs'
 
 /*
  * This model handles all flows (typically that involves sending out emails)
@@ -205,4 +206,103 @@ FlowModel.prototype.removeImage = async function ({ params, user }) {
    * Return 204
    */
   return gone ? this.setResponse(204) : this.setResponse(500, 'unableToRemoveImage')
+}
+
+/*
+ * Create an issue
+ *
+ * @param {body} object - The request body
+ * @returns {IssueModel} object - The IssueModel
+ */
+FlowModel.prototype.createIssue = async function ({ body }) {
+  /*
+   * Is issue creation enabled
+   */
+  if (!this.config.use.github) return this.setResponse(400, 'notEnabled')
+
+  /*
+   * Do we have a POST body?
+   */
+  if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
+
+  /*
+   * Is title set?
+   */
+  if (!body.title) return this.setResponse(400, 'titleMissing')
+
+  /*
+   * Is body set?
+   */
+  if (!body.body) return this.setResponse(400, 'bodyMissing')
+
+  /*
+   * Create the issue
+   */
+  const issue = await createIssue(body)
+
+  /*
+   * Return 201
+   */
+  return issue ? this.setResponse201({ issue }) : this.setResponse(400)
+}
+
+const nonEnWarning = `
+
+**Warning:** This was submitted by a non-English user.
+Due to the way out translation software works, the original content
+must alway be English. So it is possible this needs to be translated
+to English prior to merging.
+`
+
+/*
+ * Create a (GitHub) pull request for a new showcase post
+ *
+ * @param {body} object - The request body
+ * @param {user} object - The user as loaded by auth middleware
+ * @returns {FlowModel} object - The FlowModel
+ */
+FlowModel.prototype.createShowcasePr = async function ({ body, user }) {
+  /*
+   * Is markdown set?
+   */
+  for (const field of ['markdown', 'slug', 'language']) {
+    if (!body[field]) return this.setResponse(400, `${field}Missing`)
+  }
+
+  /*
+   * Load user from the database
+   */
+  await this.User.read({ id: user.uid })
+
+  console.log(this.User.record)
+  /*
+   * Create the file
+   */
+  const data = {
+    message: `feat: New showcase post ${slug} ${language !== 'en' ? nonEnWarning : ''}`,
+    content: new Buffer(body.markdown).toString('base64'),
+    branch: `showcase-${body.slug}`,
+  }
+  if (this.User.clear.github)
+    data.author = {
+      name: this.User.clear.github,
+      email: this.User.clear.email,
+    }
+
+  const issue = await createIssue({
+    path: `markdown/org/showcase/${body.slug}/en.md`,
+    body: {
+      message: `feat: New showcase post ${slug} ${language !== 'en' ? nonEnWarning : ''}`,
+      content: new Buffer(body.markdown).toString('base64'),
+      branch: `showcase-${body.slug}`,
+      author: {
+        name: this.User.clear.github ? this.User.clear.github : this.User.record.username,
+      },
+    },
+  })
+
+  /*
+   * Return 201
+   */
+  return issue ? this.setResponse201({ issue }) : this.setResponse(400)
 }

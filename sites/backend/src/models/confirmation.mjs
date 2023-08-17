@@ -13,6 +13,7 @@ export function ConfirmationModel(tools) {
   return decorateModel(this, tools, {
     name: 'confirmation',
     encryptedFields: ['data'],
+    jsonFields: ['data'],
   })
 }
 

@@ -7,7 +7,10 @@ import { decorateModel } from '../utils/model-decorator.mjs'
  * This model handles all curated set updates
  */
 export function CuratedSetModel(tools) {
-  return decorateModel(this, tools, { name: 'curatedSet' })
+  return decorateModel(this, tools, {
+    name: 'curatedSet',
+    jsonFields: ['measies', 'tagsDe', 'tagsEn', 'tagsEs', 'tagsFr', 'tagsNl', 'tagsUk'],
+  })
 }
 
 /*
@@ -45,14 +48,14 @@ CuratedSetModel.prototype.guardedCreate = async function ({ body, user }) {
       if (body[key] && typeof body[key] === 'string') data[key] = body[key]
     }
     const key = 'tags' + capitalize(lang)
-    if (body[key] && Array.isArray(body[key])) data[key] = body[key]
+    if (body[key] && Array.isArray(body[key])) data[key] = JSON.stringify(body[key])
   }
 
   /*
    * Add the (sanitized) measurements if there are any
    */
-  if (body.measies) data.measies = this.sanitizeMeasurements(body.measies)
-  else data.measies = {}
+  if (body.measies) data.measies = JSON.stringify(this.sanitizeMeasurements(body.measies))
+  else data.measies = '{}'
 
   /*
    * Set an initial img as we need the record ID to store an image on cloudflare
@@ -242,14 +245,17 @@ CuratedSetModel.prototype.guardedUpdate = async function ({ params, body, user }
       if (body[key] && typeof body[key] === 'string') data[key] = body[key]
     }
   }
+
   /*
    * Handle the measurements
    */
   if (typeof body.measies === 'object') {
-    data.measies = this.sanitizeMeasurements({
-      ...this.record.measies,
-      ...body.measies,
-    })
+    data.measies = JSON.stringify(
+      this.sanitizeMeasurements({
+        ...this.record.measies,
+        ...body.measies,
+      })
+    )
   }
 
   /*
@@ -318,7 +324,7 @@ CuratedSetModel.prototype.guardedDelete = async function ({ params, user }) {
  * @returns {curatedSet} object - The Cureated Set as a plain object
  */
 CuratedSetModel.prototype.asCuratedSet = function () {
-  return { ...this.unserialize(this.record) }
+  return this.record
 }
 
 /*

@@ -45,3 +45,27 @@ FlowsController.prototype.removeImage = async (req, res, tools) => {
 
   return Flow.sendResponse(res)
 }
+
+/*
+ * Creates a pull request for a new showcase post
+ * See: https://freesewing.dev/reference/backend/api
+ */
+FlowsController.prototype.createShowcasePr = async (req, res, tools) => {
+  const Flow = new FlowModel(tools)
+  await Flow.createShowcasePr(req)
+
+  return Flow.sendResponse(res)
+}
+
+/*
+ * Create Issue
+ *
+ * This is the endpoint that handles creation of Github issues
+ * See: https://freesewing.dev/reference/backend/api/apikey
+ */
+FlowsController.prototype.createIssue = async (req, res, tools) => {
+  const Flow = new FlowModel(tools)
+  await Flow.createIssue(req)
+
+  return Flow.sendResponse(res)
+}
