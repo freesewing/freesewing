@@ -19,7 +19,6 @@ signOut: Вийти
 politeOhCrap: Ох вже ці скрипки.
 bio: Про мене
 email: Адреса електронної пошти
-github: Ім'я користувача Github
 img: Зображення профілю
 username: Ім’я користувача
 compare: Порівняння наборів метрик
@@ -116,7 +115,12 @@ oneMomentPlease: Будь ласка, зачекайте
 emailChangeConfirmation: Ми надіслали електронного листа на вашу нову адресу, щоб підтвердити цю зміну.
 vagueError: Щось пішло не так, і ми не знаємо, як це виправити. Будь ласка, спробуйте ще раз або залучіть людину для допомоги.
 #github
-githubTitle: Введіть тут своє ім'я користувача github, щоб отримувати оновлення, коли ви повідомляєте про проблему через цей сайт.
+githubTitle: Link your GitHub identity
+githubWhy1: Enter your GitHub username and email here and we will use them when interacting with GitHub on your behalf.
+githubWhy2: Note that both your GitHub username and email is public info. This merely allows us to make a link between your FreeSewing account and GitHub account.
+githubWhy3: For example, when you report a problem on this website, we can mention you so you will receive notifications when there is an update. For this, your username is sufficient.
+githubWhy4: When you submit a showcase post or make changed to our content, we can credit those commits to you if we have both your username and the email address you use on GitHub.
+tooComplex: If all of this in confusing, you don't have to provide this info. It's an advanced feature.
 #languge
 languageTitle: Якій мові ви віддаєте перевагу?
 #password
@@ -169,6 +173,10 @@ designNew: Створіть новий дизайн
 designNewInfo: Дизайни FreeSewing - це невеликі пакети коду JavaScript, які генерують візерунки. Створювати власні дизайни не складно, і ми маємо детальний підручник, щоб допомогти вам почати.
 pluginNew: Створіть новий плагін
 pluginNewInfo: Функціональність FreeSewing можна ще більше розширити за допомогою плагінів. Створити плагін дуже просто, і у нас є посібник, який проведе вас від початку до кінця.
+showcaseNew: Create a new showcase post
+showcaseNewInfo: If you would like to share something you (or someone else) made based on our designs, you can start a draft showcase post here.
+blogNew: Create a new blog post
+blogNewInfo: If you would like to write on the FreeSewing blog, you can start a draft blog post here.
 newBasic: Основи
 newAdvanced: Перейдіть далі
 generateANewThing: "Створіть новий { thing }"
