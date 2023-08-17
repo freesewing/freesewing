@@ -1,7 +1,7 @@
 import { i18nUrl } from '../utils/index.mjs'
 import { decorateModel } from '../utils/model-decorator.mjs'
 import { ensureImage, replaceImage, removeImage } from '../utils/cloudflare-images.mjs'
-import { createIssue, createFile } from '../utils/github.mjs'
+import { createIssue, createFile, createBranch } from '../utils/github.mjs'
 
 /*
  * This model handles all flows (typically that involves sending out emails)
@@ -274,29 +274,26 @@ FlowModel.prototype.createShowcasePr = async function ({ body, user }) {
    */
   await this.User.read({ id: user.uid })
 
-  console.log(this.User.record)
+  /*
+   * Create a new feature branch for this
+   */
+  const branch = `showcase-${body.slug}`
+  await createBranch({ name: branch })
+
   /*
    * Create the file
    */
-  const data = {
-    message: `feat: New showcase post ${slug} ${language !== 'en' ? nonEnWarning : ''}`,
-    content: new Buffer(body.markdown).toString('base64'),
-    branch: `showcase-${body.slug}`,
-  }
-  if (this.User.clear.github)
-    data.author = {
-      name: this.User.clear.github,
-      email: this.User.clear.email,
-    }
-
-  const issue = await createIssue({
+  const file = await createFile({
     path: `markdown/org/showcase/${body.slug}/en.md`,
     body: {
-      message: `feat: New showcase post ${slug} ${language !== 'en' ? nonEnWarning : ''}`,
-      content: new Buffer(body.markdown).toString('base64'),
-      branch: `showcase-${body.slug}`,
+      message: `feat: New showcase post ${body.slug} by ${this.User.record.username}${
+        body.language !== 'en' ? nonEnWarning : ''
+      }`,
+      content: new Buffer.from(body.markdown).toString('base64'),
+      branch: branch,
       author: {
-        name: this.User.clear.github ? this.User.clear.github : this.User.record.username,
+        name: this.User.clear.data?.githubUsername || this.config.github.bot.name,
+        email: this.User.clear.data?.githubEmail || this.config.github.bot.email,
       },
     },
   })
@@ -304,5 +301,5 @@ FlowModel.prototype.createShowcasePr = async function ({ body, user }) {
   /*
    * Return 201
    */
-  return issue ? this.setResponse201({ issue }) : this.setResponse(400)
+  return file ? this.setResponse201({ file }) : this.setResponse(400)
 }

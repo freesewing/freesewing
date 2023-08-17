@@ -1361,14 +1361,18 @@ UserModel.prototype.isLusernameAvailable = async function (lusername) {
 }
 
 /*
- * Helper method to update the `lastSeen` field of the user
- * This is called from middleware with the user ID passed in.
+ * Helper method that is called by middleware to verifu whether the user
+ * is allowed in. It will update the `lastSeen` field of the user as
+ * well as increase the call counter for either JWT or KEY.
+ * It will also check whether the user status is ok and consent granted.
+ *
+ * If this returns false, the request will never make it past the middleware.
  *
  * @param {id} string - The user ID
  * @param {type} string - The authentication type (one of 'jwt' or 'key')
  * @returns {success} boolean - True if it worked, false if not
  */
-UserModel.prototype.seen = async function (id, type) {
+UserModel.prototype.papersPlease = async function (id, type) {
   /*
    * Construct data object for update operation
    */
@@ -1378,18 +1382,30 @@ UserModel.prototype.seen = async function (id, type) {
   /*
    * Now update the dabatase record
    */
+  let user
   try {
-    await this.prisma.user.update({ where: { id }, data })
+    user = await this.prisma.user.update({ where: { id }, data })
   } catch (err) {
     /*
      * An error means it's not good. Return false
      */
-    log.warn({ id, err }, 'Could not update lastSeen field from middleware')
+    log.warn({ id }, 'Could not update lastSeen field from middleware')
     return false
   }
 
   /*
-   * If we get here, the lastSeen field was updated and user exists, so return true
+   * Verify the consent and status
+   */
+  if (user.consent < 1) return false
+
+  /*
+   * Is the account active?
+   */
+  if (user.status < 1) return false
+
+  /*
+   * If we get here, the lastSeen field was updated, user exists,
+   * and their consent and status are ok, so so return true and let them through.
    */
   return true
 }
