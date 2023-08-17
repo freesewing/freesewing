@@ -79,12 +79,7 @@ const NewIndexPage = ({ page }) => {
           description={t('showcaseNewInfo')}
           href="/new/showcase"
         />
-        <Box
-          title={t('blogNew')}
-          Icon={RssIcon}
-          description={t('blogNewInfo')}
-          href="/new/blogpost"
-        />
+        <Box title={t('blogNew')} Icon={RssIcon} description={t('blogNewInfo')} href="/new/blog" />
         {control > 3 ? (
           <>
             <Box

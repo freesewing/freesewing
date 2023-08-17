@@ -24,6 +24,8 @@ import { CodeBox } from 'shared/components/code-box.mjs'
 import { PostArticle, ns as mdxNs } from 'site/components/mdx/posts/article.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
 import { OkIcon, WarningIcon as KoIcon } from 'shared/components/icons.mjs'
+import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
+import { WebLink } from 'shared/components/web-link.mjs'
 
 export const ns = nsMerge('account', 'posts', authNs, mdxNs)
 
@@ -54,11 +56,24 @@ ${body}
 
 `
 
+const Log = ({ log }) =>
+  log[0] ? (
+    <div className="fixed top-28 left-0 w-full z-30">
+      <div
+        className={`w-full max-w-lg m-auto bg-secondary flex flex-row gap-4 p-4 px-4
+        rounded-lg shadow text-secondary-content text-medium bg-opacity-90`}
+      >
+        <Spinner /> {log[1]}
+      </div>
+    </div>
+  ) : null
+
 export const CreateShowcasePost = ({ noTitle = false }) => {
   const { account } = useAccount()
   const backend = useBackend()
   const toast = useToast()
   const { t, i18n } = useTranslation(ns)
+  const { loading, setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   const [designs, setDesigns] = useState([])
   const [title, setTitle] = useState('')
@@ -69,9 +84,11 @@ export const CreateShowcasePost = ({ noTitle = false }) => {
   const [body, setBody] = useState('')
   const [extraImages, setExtraImages] = useState({})
   const [activeTab, setActiveTab] = useState('create')
+  const [pr, setPr] = useState(false)
 
   // Method that submits the PR
   const submitPullRequest = async () => {
+    setLoadingStatus([true, 'Creating showcase post & pull request'])
     const result = await backend.createShowcasePr({
       markdown: dataAsMd({
         title,
@@ -84,6 +101,8 @@ export const CreateShowcasePost = ({ noTitle = false }) => {
       slug,
       language: i18n.language,
     })
+    if (result.success) setPr(result.data)
+    setLoadingStatus([false])
   }
 
   // Shared props for tabs
@@ -127,57 +146,123 @@ export const CreateShowcasePost = ({ noTitle = false }) => {
 
   return (
     <AuthWrapper>
-      <div className="hidden md:grid md:grid-cols-2 md:gap-4">
-        <div className="p-4 shadow rounded-lg my-8">
-          <ShowcaseEditor {...childProps} />
+      <LoadingStatus />
+      {pr ? (
+        <div className="w-full max-w-3xl m-auto p-4">
+          <h1>Thank you for submitting this showcase</h1>
+          <p>Here is what happened while you were waiting:</p>
+          <ul className="list list-inside list-disc ml-4">
+            <li>
+              We created a new branch:{' '}
+              <b>
+                <WebLink
+                  href={`https://github.com/freesewing/freesewing/tree/showcase-${slug}`}
+                  txt={`showcase-${slug}`}
+                />
+              </b>
+            </li>
+            <li>
+              We committed your work:{' '}
+              <b>
+                <WebLink href={pr.file.commit.html_url} txt={pr.file.commit.sha} />
+              </b>
+            </li>
+            <li>
+              We created a pull request:{' '}
+              <b>
+                <WebLink
+                  href={pr.pr.html_url}
+                  txt={`github.com/freesewing/freesewing/pull/${pr.pr.number}`}
+                />
+              </b>
+            </li>
+          </ul>
+          <p>Next steps:</p>
+          <ul className="list list-inside list-disc ml-4">
+            <li>
+              <b>Joost will review</b> the pull request to make sure everything is ok
+            </li>
+            <li>
+              If everything looks fine, <b>they will merge it</b>.
+            </li>
+            <li>
+              This will trigger a <b>preview build of the website</b>
+            </li>
+            <li>
+              If that goes without any hiccups, this preview build will be{' '}
+              <b>deployed in production</b>.
+            </li>
+            <li>
+              When that happens, <b>your post will go live</b> at:{' '}
+              <WebLink
+                href={`https://freesewing.org/showcase/${slug}/`}
+                txt={`freesewing.org/showcase/${slug}`}
+              />
+            </li>
+          </ul>
+          <p className="text-xl font-bold mt-6">
+            To summarize: You did great <span role="img">💜</span> and we&apos;ll take it from here{' '}
+            <span role="img">🙌</span>
+          </p>
+          <button className="btn btn-primary btn-outline mt-4" onClick={() => setPr(false)}>
+            Back
+          </button>
         </div>
-        <div className="p-4 shadow rounded-lg my-8">
-          <ShowcasePreview {...childProps} />
-        </div>
-      </div>
-      <div className="block md:hidden px-4">
-        <div className="tabs w-full">
-          <Tab id="create" {...tabProps} />
-          <Tab id="preview" {...tabProps} />
-        </div>
-        {activeTab === 'create' ? (
-          <ShowcaseEditor {...childProps} />
-        ) : (
-          <ShowcasePreview {...childProps} />
-        )}
-      </div>
-      <div className="px-4 max-w-lg m-auto my-8 text-center">
-        {!(title && slug && img && designs.length > 0) && (
-          <Popout note>
-            <h5 className="text-left">You are missing the following:</h5>
-            <ul className="text-left list list-inside list-disc ml-4">
-              {designs.length < 1 && <li>Design</li>}
-              {!title && <li>Title</li>}
-              {!slug && <li>Slug</li>}
-              {!img && <li>Main Image</li>}
-            </ul>
-          </Popout>
-        )}
-        <button
-          className="btn btn-lg btn-primary"
-          disabled={!(title && slug && img && designs.length > 0)}
-          onClick={submitPullRequest}
-        >
-          Submit Showcase Post
-        </button>
-        {!account.data?.githubUser && !account.data?.githubEmail && (
-          <Popout tip>
-            <h5 className="text-left">
-              <small>Optional:</small> Are you on GitHub?
-            </h5>
-            <p className="text-left">
-              If you configure your GitHub username{' '}
-              <PageLink href="/account/github" txt="in your account" />, we will credit these
-              changes to you.
-            </p>
-          </Popout>
-        )}
-      </div>
+      ) : (
+        <>
+          <div className="hidden md:grid md:grid-cols-2 md:gap-4">
+            <div className="p-4 shadow rounded-lg my-8">
+              <ShowcaseEditor {...childProps} />
+            </div>
+            <div className="p-4 shadow rounded-lg my-8">
+              <ShowcasePreview {...childProps} />
+            </div>
+          </div>
+          <div className="block md:hidden px-4">
+            <div className="tabs w-full">
+              <Tab id="create" {...tabProps} />
+              <Tab id="preview" {...tabProps} />
+            </div>
+            {activeTab === 'create' ? (
+              <ShowcaseEditor {...childProps} />
+            ) : (
+              <ShowcasePreview {...childProps} />
+            )}
+          </div>
+          <div className="px-4 max-w-lg m-auto my-8 text-center">
+            {!(title && slug && img && designs.length > 0) && (
+              <Popout note>
+                <h5 className="text-left">You are missing the following:</h5>
+                <ul className="text-left list list-inside list-disc ml-4">
+                  {designs.length < 1 && <li>Design</li>}
+                  {!title && <li>Title</li>}
+                  {!slug && <li>Slug</li>}
+                  {!img && <li>Main Image</li>}
+                </ul>
+              </Popout>
+            )}
+            <button
+              className="btn btn-lg btn-primary"
+              disabled={loading || !(title && slug && img && designs.length > 0)}
+              onClick={submitPullRequest}
+            >
+              Submit Showcase Post
+            </button>
+            {!account.data?.githubUser && !account.data?.githubEmail && (
+              <Popout tip>
+                <h5 className="text-left">
+                  <small>Optional:</small> Are you on GitHub?
+                </h5>
+                <p className="text-left">
+                  If you configure your GitHub username{' '}
+                  <PageLink href="/account/github" txt="in your account" />, we will credit these
+                  changes to you.
+                </p>
+              </Popout>
+            )}
+          </div>
+        </>
+      )}
     </AuthWrapper>
   )
 }

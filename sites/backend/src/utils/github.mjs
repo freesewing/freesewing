@@ -33,19 +33,19 @@ const apiRequest = async (method, url, body = false, success = 200) => {
 /*
  * Creates an issue
  */
-export const createIssue = async (body) => apiRequest('POST', `${api}/issues`, body)
+export const createIssue = async (body) => await apiRequest('POST', `${api}/issues`, body)
 
 /*
  * Creates a file in the respository
  */
 export const createFile = async ({ path, body }) =>
-  apiRequest('PUT', `${api}/contents/${path}`, body, 201)
+  await apiRequest('PUT', `${api}/contents/${path}`, body, 201)
 
 /*
  * Gets a branch. Defaults to the default branch ('develop')
  */
 export const getBranch = async (branch = 'develop') =>
-  apiRequest('GET', `${api}/branches/${branch}`)
+  await apiRequest('GET', `${api}/branches/${branch}`)
 
 /*
  * Creates a new branch. Defaults to the default branch ('develop')
@@ -63,3 +63,19 @@ export const createBranch = async ({ name, from = 'develop' }) => {
     201
   )
 }
+
+/*
+ * Creates a pull request.
+ */
+export const createPullRequest = async ({ title, body, from, to = 'develop' }) =>
+  await apiRequest(
+    'POST',
+    `${api}/pulls`,
+    {
+      title,
+      head: from,
+      base: to,
+      body,
+    },
+    201
+  )

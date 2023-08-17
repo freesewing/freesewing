@@ -302,7 +302,7 @@ Backend.prototype.createIssue = async function (data) {
  * Create showcase Pull Request
  */
 Backend.prototype.createShowcasePr = async function (data) {
-  return responseHandler(await api.post(`/flows/pr/showcase/jwt`, data, this.auth))
+  return responseHandler(await api.post(`/flows/pr/showcase/jwt`, data, this.auth), 201)
 }
 /*
  * Send translation invite

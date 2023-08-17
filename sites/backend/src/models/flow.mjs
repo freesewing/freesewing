@@ -1,7 +1,7 @@
 import { i18nUrl } from '../utils/index.mjs'
 import { decorateModel } from '../utils/model-decorator.mjs'
 import { ensureImage, replaceImage, removeImage } from '../utils/cloudflare-images.mjs'
-import { createIssue, createFile, createBranch } from '../utils/github.mjs'
+import { createIssue, createFile, createBranch, createPullRequest } from '../utils/github.mjs'
 
 /*
  * This model handles all flows (typically that involves sending out emails)
@@ -277,8 +277,8 @@ FlowModel.prototype.createShowcasePr = async function ({ body, user }) {
   /*
    * Create a new feature branch for this
    */
-  const branch = `showcase-${body.slug}`
-  await createBranch({ name: branch })
+  const branchName = `showcase-${body.slug}`
+  const branch = await createBranch({ name: branchName })
 
   /*
    * Create the file
@@ -290,7 +290,7 @@ FlowModel.prototype.createShowcasePr = async function ({ body, user }) {
         body.language !== 'en' ? nonEnWarning : ''
       }`,
       content: new Buffer.from(body.markdown).toString('base64'),
-      branch: branch,
+      branch: branchName,
       author: {
         name: this.User.clear.data?.githubUsername || this.config.github.bot.name,
         email: this.User.clear.data?.githubEmail || this.config.github.bot.email,
@@ -299,7 +299,19 @@ FlowModel.prototype.createShowcasePr = async function ({ body, user }) {
   })
 
   /*
+   * New create the pull request
+   */
+  const pr = await createPullRequest({
+    title: `feat: New showcase post ${body.slug} by ${this.User.record.username}`,
+    body: `Hey @joostdecock you should check out this awesome showcase post.${
+      body.language !== 'en' ? nonEnWarning : ''
+    }`,
+    from: branchName,
+    to: 'develop',
+  })
+
+  /*
    * Return 201
    */
-  return file ? this.setResponse201({ file }) : this.setResponse(400)
+  return pr ? this.setResponse201({ branch, file, pr }) : this.setResponse(400)
 }
