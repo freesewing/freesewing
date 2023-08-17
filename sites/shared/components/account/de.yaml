@@ -6,7 +6,7 @@ links: Links
 info: Info
 settings: Einstellungen
 data: Daten
-sets: Measurements Sets
+sets: Maßnahmesets
 patterns: Schnittmuster
 actions: Aktionen
 created: Erstellt
@@ -14,12 +14,11 @@ updated: Aktualisiert
 expires: Läuft ab
 yourProfile: Dein Profil
 yourPatterns: Deine Schnittmuster
-yourSets: Your Measurements Sets
+yourSets: Deine Maßeinheiten
 signOut: Abmelden
 politeOhCrap: Oh Purzelbäume
 bio: Über mich
 email: E-Mail Adresse
-github: Github-Benutzername
 img: Profilbild
 username: Benutzername
 compare: Metrikenvergleich
@@ -116,7 +115,12 @@ oneMomentPlease: Einen Moment bitte
 emailChangeConfirmation: Wir haben eine E-Mail an deine neue Adresse geschickt, um diese Änderung zu bestätigen.
 vagueError: Etwas ist schief gelaufen und wir sind uns nicht sicher, wie wir damit umgehen sollen. Bitte versuche es noch einmal oder wende dich an einen Menschen, der dir hilft.
 #github
-githubTitle: Gib hier deinen Github-Benutzernamen ein, um Updates zu erhalten, wenn du ein Problem über diese Website meldest.
+githubTitle: Link your GitHub identity
+githubWhy1: Enter your GitHub username and email here and we will use them when interacting with GitHub on your behalf.
+githubWhy2: Note that both your GitHub username and email is public info. This merely allows us to make a link between your FreeSewing account and GitHub account.
+githubWhy3: For example, when you report a problem on this website, we can mention you so you will receive notifications when there is an update. For this, your username is sufficient.
+githubWhy4: When you submit a showcase post or make changed to our content, we can credit those commits to you if we have both your username and the email address you use on GitHub.
+tooComplex: If all of this in confusing, you don't have to provide this info. It's an advanced feature.
 #languge
 languageTitle: Welche Sprache bevorzugst du?
 #password
@@ -169,6 +173,10 @@ designNew: Ein neues Design erstellen
 designNewInfo: FreeSewing-Designs sind kleine Bündel von JavaScript-Code, die Muster erzeugen. Es ist nicht schwer, eigene Designs zu erstellen, und wir haben eine ausführliche Anleitung für dich, damit du loslegen kannst.
 pluginNew: Ein neues Plugin erstellen
 pluginNewInfo: Die Funktionen von FreeSewing können mit Plugins erweitert werden. Es ist ganz einfach, ein Plugin zu erstellen, und wir haben eine Anleitung, die dich von Anfang bis Ende begleitet.
+showcaseNew: Create a new showcase post
+showcaseNewInfo: If you would like to share something you (or someone else) made based on our designs, you can start a draft showcase post here.
+blogNew: Create a new blog post
+blogNewInfo: If you would like to write on the FreeSewing blog, you can start a draft blog post here.
 newBasic: Die Grundlagen
 newAdvanced: Weiter gehen
 generateANewThing: "Erstelle eine neue { thing }"
