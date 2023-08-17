@@ -1,10 +1,8 @@
-import { useTranslation } from 'next-i18next'
 import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
 
 export const ns = ['status']
 
 export const AccountStatus = ({ status }) => {
-  const { t } = useTranslation()
   const { name, color } = freeSewingConfig.statuses[status]
 
   return (

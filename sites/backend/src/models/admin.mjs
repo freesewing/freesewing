@@ -1,4 +1,3 @@
-import { log } from '../utils/log.mjs'
 import { decorateModel } from '../utils/model-decorator.mjs'
 
 /*
@@ -123,7 +122,7 @@ AdminModel.prototype.updateUser = async function ({ params, body, user }) {
   /*
    * Disable MFA?
    */
-  if (body.mfaEnabled && body.mfaEnabled === false) {
+  if (typeof body.mfaEnabled !== 'undefined' && body.mfaEnabled === false) {
     data.mfaEnabled = false
     data.mfaSecret = ''
   }

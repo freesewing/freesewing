@@ -3,13 +3,9 @@ import { cloudflareConfig } from 'shared/config/cloudflare.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
-import { formatNumber } from 'shared/utils.mjs'
 import Link from 'next/link'
 import Markdown from 'react-markdown'
 
-import { Popout } from 'shared/components/popout/index.mjs'
-import { Collapse } from 'shared/components/collapse.mjs'
-import { Spinner } from 'shared/components/spinner.mjs'
 import { Json } from 'shared/components/json.mjs'
 import { AccountRole } from 'shared/components/account/role.mjs'
 import { AccountStatus } from 'shared/components/account/status.mjs'
@@ -48,7 +44,7 @@ export const Row = ({ title, val }) => (
   </tr>
 )
 
-export const Hits = ({ results, t }) => (
+export const Hits = ({ results }) => (
   <>
     {results && results.username && results.username.length > 0 && (
       <>
@@ -184,6 +180,7 @@ export const ManageUser = ({ userId }) => {
         )}
         {Object.keys(freeSewingConfig.statuses).map((status) => (
           <button
+            key={status}
             className="btn btn-warning btn-outline btn-sm"
             onClick={() => updateUser({ status })}
             disabled={Number(status) === user.status}

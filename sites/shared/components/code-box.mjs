@@ -1,4 +1,3 @@
-import { CopyIcon } from 'shared/components/icons.mjs'
 import { CopyToClipboard } from 'shared/components/copy-to-clipboard.mjs'
 
 export const CodeBox = ({ code, title }) => (

@@ -160,7 +160,7 @@ FlowModel.prototype.uploadImage = async function ({ body, user }) {
    * Prepare data for uploading the image
    */
   const data = {
-    id: `${body.type}-${body.slug}${body.subId && body.subId !== 'main' ? '-' + body.subId : ''}`,
+    id: `${body.type}-${body.slug}${body.subId !== 'main' ? '-' + body.subId : ''}`,
     metadata: { uploadedBy: user.uid },
   }
   if (body.img) data.b64 = body.img

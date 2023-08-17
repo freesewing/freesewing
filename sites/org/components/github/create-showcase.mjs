@@ -1,7 +1,7 @@
 // Dependencies
 import { nsMerge, capitalize, cloudflareImageUrl, yyyymmdd } from 'shared/utils.mjs'
 // Hooks
-import { useState } from 'react'
+import { useState, Fragment } from 'react'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useTranslation } from 'next-i18next'
@@ -436,7 +436,7 @@ const ShowcaseEditor = ({
               cloudflareImageUrl({ id: extraImages[key], variant: 'public' }) +
               ' "The image caption/title goes here")'
             return (
-              <>
+              <Fragment key={key}>
                 <ImageInput
                   key={key}
                   setImg={(img) => setExtraImg(key, img)}
@@ -459,7 +459,7 @@ const ShowcaseEditor = ({
                     </p>
                   </>
                 )}
-              </>
+              </Fragment>
             )
           })}
           <button className="btn btn-secondary mt-2" onClick={addImage}>

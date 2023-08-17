@@ -1,9 +1,4 @@
-import { roles as rolesConfig } from 'config/roles.mjs'
-import { useTranslation } from 'next-i18next'
-
 export const ns = ['roles']
-
-const roles = Object.keys(rolesConfig.levels)
 
 const colors = {
   user: 'primary',
@@ -14,7 +9,6 @@ const colors = {
 }
 
 export const AccountRole = ({ role }) => {
-  const { t } = useTranslation()
   const color = colors[role]
 
   return (

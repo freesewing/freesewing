@@ -182,13 +182,11 @@ if (baseConfig.use.cloudflareImages) {
 }
 
 // FowardMx config
-if (baseConfig.use.fowardmx) {
-  const account = process.env.BACKEND_CLOUDFLARE_ACCOUNT || 'fixmeSetCloudflareAccountId'
+if (baseConfig.use.fowardmx)
   baseConfig.forwardmx = {
     key: process.env.BACKEND_FORWARDMX_KEY || 'fixmeSetFowardMxApiKey',
     useInTests: baseConfig.use.tests.fowardmx,
   }
-}
 
 // AWS SES config (for sending out emails)
 if (baseConfig.use.ses)
@@ -231,7 +229,7 @@ const config = postConfig(baseConfig)
 
 // Exporting this stand-alone config
 export const cloudflareImages = config.cloudflareImages || {}
-export const fowardmx = config.fowardmx || {}
+export const forwardmx = config.forwardmx || {}
 export const website = config.website
 export const githubToken = config.github.token
 

@@ -35,9 +35,8 @@ export const BodyInput = ({ body, setBody }) => (
     placeholder="Type your post body here"
     onChange={(evt) => setBody(evt.target.value)}
     rows={16}
-  >
-    {body}
-  </textarea>
+    value={body}
+  />
 )
 
 export const TitleInput = ({ title, setTitle }) => (
