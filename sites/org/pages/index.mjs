@@ -80,7 +80,7 @@ const HomePage = ({ page }) => {
             <div className="-mt-8 md:mt-0 pt-0 md:pt-8 pb-8 lg:py-12 max-w-prose m-auto m-auto">
               <h2 className="text-inherit mb-4 hidden md:block">{t('homepage:whyBother')}</h2>
               <ul>
-                {[1, 2, 3, 4, 5].map((i) => (
+                {[1, 2, 3, 4].map((i) => (
                   <li className="flex flex-row gap-2 my-2" key={i}>
                     <OkIcon stroke={4} /> {t(`homepage:why${i}`)}
                   </li>
