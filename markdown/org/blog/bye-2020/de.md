@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ein Foto von <a href='https://unsplash.com/@onevagabond'>Paulo Silva</a> zeigt einen leeren Times Square in New York während der COVID-Pandemie"
 date: "2021-01-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ffacb5c6384f250ad7cd3cb50b5ed4fdeff33ae6-1920x1280.jpg"
 intro: "Sind wir nicht alle froh, dass 2020 vorbei ist?"
 title: "Das Jahr 2020 hatte es in sich"
 ---

@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Gardez vos vêtements faits maison propres en cuisinant avec le tablier Albert"
 date: "2020-10-17"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/192f0da76422475ea9a36b7988d70f69bb89bbaf-1920x1282.jpg"
 intro: "Que feriez-vous si votre fille avait besoin d'un tablier pour l'école ?"
 title: "Nous avons un tablier maintenant : FreeSewing 2.10 vous apporte Albert, un humble patron de tablier"
 ---

@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ваша історія входу в систему за квітень"
 date: "2018-03-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/637be1530f8be9387a2be4feac90b92a145b1ddd-1920x1280.jpg"
 intro: "Це ваш щомісячний огляд новин фрітрекінгу за останні чотири тижні, а також погляд на те, що чекає на нас у наступному місяці."
 title: "Щомісячний огляд - березень 2018: Parlez-vous français? Sprechen Sie Deutsch? Hablas español? 你會說中文嗎？"
 ---

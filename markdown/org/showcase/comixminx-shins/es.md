@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Bañador Shin azul marino para un traje de baño a juego"
 date: "2023-01-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fe9742719123fca0d036202d2e3c5c2654ca2b71-3024x4032.jpg"
 intro: "La usuaria de FreeSewing comixminx cosió una tormenta durante las vacaciones de invierno, ¡incluidos estos fantásticos bañadores Shin para varios miembros de la familia!"
 title: "Espinillas por Comixminx"
 designs:

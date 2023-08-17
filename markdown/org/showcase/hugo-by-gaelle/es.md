@@ -2,7 +2,6 @@
 maker: "Gaëlle"
 caption: "La amiga de Gaëlle con su nueva sudadera Hugo"
 date: "2023-02-15"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7c510d7ee01cef0b2b4df46e02d0fc052ade3579-1694x3323.jpg"
 intro: "Gaëlle hizo este Hugo cubierto de alegres monstruitos... bueno, no sé muy bien cómo llamar a estos monstruitos garabateados, pero está claro que son geniales. Es para una amiga, y nos encantaría recibir algo tan fabuloso.  Fíjate en ese impresionante canalé a rayas coordinado."
 title: "Hugo por Gaëlle"
 designs:

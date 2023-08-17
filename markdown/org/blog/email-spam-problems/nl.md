@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Zou je een rijstrook afsluiten omdat een bestuurder zijn muziek te hard afspeelt?"
 date: "2017-09-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/923cd5587c873d2662df4a804f75f8f32b5673ca-1920x1281.jpg"
 intro: "Bedankt voor niets Microsoft; E-mail moet niet zo moeilijk zijn"
 title: "Bedankt voor niets Microsoft; E-mail moet niet zo moeilijk zijn"
 ---

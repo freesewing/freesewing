@@ -2,7 +2,6 @@
 maker: "Чорт забирай."
 caption: "Худі Hugo з принтом волана"
 date: "2021-06-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a534aefe906da98d816afa76266d97a318821305-598x803.jpg"
 intro: "Hellgy підкорили наші серця своїми худі Hugo з веселими та життєрадісними принтами."
 title: "Худі Хьюго від Hellgy"
 designs:

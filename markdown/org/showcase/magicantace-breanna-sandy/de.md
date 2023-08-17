@@ -2,7 +2,6 @@
 maker: "MagicantAce"
 caption: "MagicantAce's Puppenoutfit mit Breanna und Sandy"
 date: "15.09.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a2179e29592c5b26bf4af608831e1061c6e25941-892x2284.jpg"
 intro: "MagicantAce hat dieses fantastische Puppenoutfit mit Breanna und Sandy gemacht! Er sagte, es sei toll, die Puppenmaße auf FreeSewing verwenden zu können, denn für diese Puppenlinie sind nur schwer Schnittmuster zu finden und sie hat eine dramatische Sanduhrform, die das Entwerfen schwierig macht. Wir lieben die Ergebnisse!"
 title: "MagicantAce's Puppenoutfit mit Breanna und Sandy"
 designs:

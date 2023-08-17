@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Le fabricant a utilisé un tissu en maille extensible"
 date: "06-12-2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ae49748b9e877ef9b239ebc8a6b72fa006dd490b-909x1212.jpg"
 intro: "Le créateur a partagé :"
 title: "Modifié Tamiko comme couverture d'allaitement"
 designs:

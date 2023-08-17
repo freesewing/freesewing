@@ -76,7 +76,6 @@ const html = mustache.render(
  */
 const batches = splitArray(users, 45)
 
-let i = 0
 const total = batches.length
 batches.forEach((batch, i) => {
   /*

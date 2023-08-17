@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Ksenia hat diesen Sven für ihren Mann gemacht."
 date: "05.02.2018"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8470f4414deeee3d072401616b01be02c8b98bc7-1080x1080.jpg"
 intro: "Dieses Bild stammt aus dem Instagram-Feed von Ksenia."
 title: "Sven in grauem Frottee A grauem Frottee Sven"
 designs:

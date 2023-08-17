@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Une paire de Charlies violettes"
 date: "2021-07-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/057330d8ccc0e758cfe43f25649489eddb728ce6-1288x1800.jpg"
 intro: "Ces Charlies ont été fabriquées dans un sergé extensible violet, avec une taille aussi haute que possible (30 %)."
 title: "Charlies mauves"
 designs:

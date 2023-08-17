@@ -2,7 +2,6 @@
 maker: "dentiste de la couture"
 caption: "Une belle chemise Simon"
 date: "08-02-2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/28cd21a151a4a9d2f73e246e3ca0ad9ab03be5ea-742x743.jpg"
 intro: "sewingdentist est de retour avec un autre excellent travail, cette fois-ci une chemise Simon. Ils ont partagé :"
 title: "Simon shirt by sewingdentist"
 designs:

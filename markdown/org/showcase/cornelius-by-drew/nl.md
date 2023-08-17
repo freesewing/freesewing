@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "De Cornelius fietsbroek van linnen"
 date: "2021-07-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7cb1aa306644cf26aac361deaec00e9bb3bdd342-482x800.jpg"
 intro: "Drew S. maakte deze coole broek van linnen, hun eerste FreeSewing patroon en ook de eerste keer dat ze een broek maakten! Drew deelde:"
 title: "Cornelius van Drew S."
 designs:

@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "Cornelius culotte cycliste de Wouter, feat. mollets de cycliste"
 date: "2021-03-17"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/abd61dc5abc173a4e858d03b5f1af80fed297957-571x613.jpg"
 intro: "Wouter a créé le modèle de culotte cycliste Cornelius en se basant sur les systèmes Keystone. Lis la suite sur le blog de FreeSewing ."
 title: "Cornelius par Wouter"
 designs:

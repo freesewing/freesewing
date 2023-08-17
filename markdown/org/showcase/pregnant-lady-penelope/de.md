@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Eine Penelope modelliert mit einem Babybauch"
 date: "05.04.2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/82bb1d8f07a65881fbd63e377d62314db12e212b-581x677.jpg"
 intro: "Die Herstellerin hat die folgenden Anpassungen vorgenommen, um Penelope an den Strickstoff und ihren schwangeren Bauch anzupassen:"
 title: "Schwangere Frau Penelope"
 designs:

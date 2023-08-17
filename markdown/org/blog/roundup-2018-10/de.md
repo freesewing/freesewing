@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Dein Login-Hintergrund für November"
 date: "2018-11-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5be11786eaed9bba641fa66b812a3fc9f68aed1d-1920x1410.jpg"
 intro: "Monatliche Zusammenfassung - Oktober 2018: Fortschritte bei beta.freesewing.org"
 title: "Monatliche Zusammenfassung - Oktober 2018: Fortschritte bei beta.freesewing.org"
 ---

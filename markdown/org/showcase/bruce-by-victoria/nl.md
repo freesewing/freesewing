@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "zeer comfortabele kortere/cheeky versie van Bruce!"
 date: "2021-08-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0ab813c61caf89cb240486fe8cc2858ecdd06607-800x600.jpg"
 intro: "Victoria's eerste versie van Bruce had meteen een aantal fans -- mensen in de FreeSewing gemeenschap vroegen of ze haar instellingen konden kopiëren voor hun eigen paren!"
 title: "Een kortere versie van Bruce"
 designs:

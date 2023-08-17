@@ -2,7 +2,6 @@
 maker: "Наель."
 caption: "Цей Huey виготовлений з трикотажної тканини"
 date: "2023-05-21"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/77bae8234c37ecabb700190ab5cac0bb1a1ef34f-1723x1836.jpg"
 intro: "Ми вважаємо, що це худі Huey виглядає фантастично! За словами виробника, він виготовлений з трикотажної тканини, тому трохи м'який, але дуже зручний."
 title: "Худі з трикотажу Huey"
 designs:

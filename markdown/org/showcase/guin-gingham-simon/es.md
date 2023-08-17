@@ -2,7 +2,6 @@
 maker: "Guin"
 caption: "Guin mostrando las mangas de linterna de su nuevo Simon"
 date: "2023-01-27"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e6cfdb44c2e93177fb62883269c953a0dafe0f46-1575x2100.jpg"
 intro: "Guin modificó este estupendo Simón dándole unas divertidas mangas de farol en un color de contraste que, definitivamente, no tiene nada que ver con haberse quedado sin guinga azul marino. Pero bien está lo que bien acaba: su camiseta quedó estupenda. También me encanta cómo ha quedado la combinación de rayas en la parte delantera."
 title: "Linterna Guin de Guingham Simon"
 designs:

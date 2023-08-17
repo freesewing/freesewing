@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "Ha quedado muy bien para ser un toile"
 date: "2017-12-11"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f3126799846dc9ea9aecb423e7283bb715db93b4-3724x2785.jpg"
 intro: "Una prueba de Florent para ver si el patrón funciona para otros, por Wouter.vdub"
 title: "Una prueba de Florent para ver si el patrón funciona para otros, por Wouter.vdub"
 designs:

@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Jim in seinem neuen Carlton-Mantel"
 date: "18.07.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/cc65fb4ec7027769dbd99f2020b2df3bf40e0bf7-1286x1800.jpg"
 intro: "Carlton von Jim"
 title: "Carlton von Jim"
 designs:

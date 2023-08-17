@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Une chemise Simon à manches courtes"
 date: "06-25-2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ca7321e1085eb2c81e8c3affa89d14863bc4584a-770x1048.jpg"
 intro: "Alan s'est jeté dans le grand bain de la couture avec cette chemise Simon, avec des résultats très impressionnants !"
 title: "La chemise Simon à manches courtes d'Alan"
 designs:

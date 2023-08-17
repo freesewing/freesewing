@@ -2,7 +2,6 @@
 maker: "ferdi"
 caption: "Dieser Simon wurde etwas weiter genäht, um als Überhemd getragen zu werden"
 date: "07.11.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ccc178893cc97708b480fb5bf298c7a6ec7abc76-1920x1280.jpg"
 intro: "Was für eine attraktive Version des Simon-Shirts! Der Hersteller sagt:"
 title: "Simon als Überhemd von Ferdi"
 designs:

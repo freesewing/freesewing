@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Deze post geeft weer wat er nieuw is in versie 2.2 van FreeSewing"
 date: "2020-02-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/356c127b8b37937b9537790d71a949c236027513-1920x1280.jpg"
 intro: "Een blik op de nieuwigheden in FreeSewing 2.2, inclusief Breanna, ons basiscorsage voor dameskleding"
 title: "Een blik op de nieuwigheden in FreeSewing 2.2, inclusief Breanna, ons basiscorsage voor dameskleding"
 ---

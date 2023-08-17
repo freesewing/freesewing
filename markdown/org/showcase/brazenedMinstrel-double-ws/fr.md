@@ -2,7 +2,6 @@
 maker: "brazenedMinstrel"
 caption: "Waralees violet doux avec accessoires de ceinture"
 date: "08-02-2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a84d68b97703ef21571520ca6fa8b4b6d3b0df53-1512x2016.jpg"
 intro: "brazenedMinstrel a réalisé deux jolies créations Freesewing récemment : la première est cette paire de Waralees violettes en tissu doux accessoirisées d'une ceinture en tissu noir trouvée dans la rue et d'une autre colorée achetée sur un marché aux puces."
 title: "Waralees et Wahid par brazenedMinstrel"
 designs:

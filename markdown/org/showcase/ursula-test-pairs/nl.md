@@ -2,7 +2,6 @@
 maker: "Natalia Sayang"
 caption: "Sommige vroege versies van Ursula"
 date: "2021-06-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b266a22f7783201dc4c7f508d316dec1b9d70d8-1000x600.jpg"
 intro: "Ursula is een basispatroon voor ondergoed dat je zelf kunt aanpassen. Hier zijn een paar van de eerste versies waarin verschillende combinaties van opties zijn getest, die misschien nuttig voor je zijn als je je eigen paren ontwerpt."
 title: "Vroege testen van Ursula"
 designs:

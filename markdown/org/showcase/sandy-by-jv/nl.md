@@ -2,7 +2,6 @@
 maker: "RoodBlaqueGouden"
 caption: "JV in een Sandy met bijpassend masker"
 date: "2020-10-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/35daf9e79d06a8a12972a1e0bd87bce6f3c92028-1536x2048.jpg"
 intro: "JV deelde hun nieuwe jurk met de Sandy rok op Twitter."
 title: "JV's jurk gemaakt met een Sandy cirkelrok"
 designs:

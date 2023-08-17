@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Als introvert zeg ik dit niet vaak, maar ik zou jullie eigenlijk wel willen ontmoeten."
 date: "2018-12-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b5fdb232675b32c7c08b59ffc57e9b9da31f02f-1920x1078.jpg"
 intro: "Laten we elkaar ontmoeten in 2019! En andere eindejaarsgedachten"
 title: "Laten we elkaar ontmoeten in 2019! En andere eindejaarsgedachten"
 ---

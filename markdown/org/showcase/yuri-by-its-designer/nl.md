@@ -2,7 +2,6 @@
 maker: "Helse"
 caption: "Achteraanzicht van de Yuri hoodie"
 date: "2021-09-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/af8e14596c0112734fb14e4a838853fb9dc0ac8a-1899x1266.jpg"
 intro: "Dit zijn foto's van de originele Yuri hoody van de ontwerper Hellgy, die een hoodie wilde maken zonder ritsen."
 title: "De originele Yuri door zijn ontwerper"
 designs:

@@ -2,7 +2,6 @@
 maker: "étoile"
 caption: "Walburga the Wappenrock (tabard/surcoat en allemand) est un modèle de fantaisie inspiré de l'Europe médiévale (et de Legend of Zelda) créé par Starf."
 date: "18-10-2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8217f094b2ea551ed3bfcf72b79905506bf4f883-3888x5184.jpg"
 intro: "Walburga la Wappenrock"
 title: "Walburga la Wappenrock"
 designs:

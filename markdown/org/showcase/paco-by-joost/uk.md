@@ -2,7 +2,6 @@
 maker: "Юст де Кок"
 caption: "Ці штани Пако були початковим випробуванням для цього візерунка"
 date: "2020-08-08"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1bc82d4abb50ea1b7bda32dd64521e9ecfdd8467-2048x1536.jpg"
 intro: "Ось найперша пара Paco, яку я зробив. Вони мають бокові кишені, без задньої кишені та еластичний поділ."
 title: "Joost does Paco"
 designs:

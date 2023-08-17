@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Ерік використав корпус Brian Body Block і додав свій власний капюшон"
 date: "2021-07-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8517c2f2024aa29584dc0248def827db48efcb41-453x800.jpg"
 intro: "Ерік домігся чудової посадки на їхньому першому одязі! Вони поділилися:"
 title: "Худі на основі боді-блоку Брайана"
 designs:

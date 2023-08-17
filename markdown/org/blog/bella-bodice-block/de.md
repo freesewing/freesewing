@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Weißt du noch, als wir nach draußen gehen durften?"
 date: "2021-01-17"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0faad5ded9176b4cf9e58cf5b05a939ba7670363-1920x1272.jpg"
 intro: "Der Bella Miederblock für Damenmode"
 title: "Der Bella Miederblock für Damenmode"
 ---

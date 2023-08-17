@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "На фото <a href='https://unsplash.com/@onevagabond'>Пауло Сілва</a> зображена порожня Таймс-сквер у Нью-Йорку під час пандемії COVID"
 date: "2021-01-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ffacb5c6384f250ad7cd3cb50b5ed4fdeff33ae6-1920x1280.jpg"
 intro: "Хіба ми всі не раді, що 2020 рік закінчився?"
 title: "2020 рік був чимось нормальним"
 ---

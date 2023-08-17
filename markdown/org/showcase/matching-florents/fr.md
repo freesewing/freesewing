@@ -2,7 +2,6 @@
 maker: "Jasmin"
 caption: "Jasmine et son papa avec leurs chapeaux bleus assortis."
 date: "2023-01-17"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4693a22fbf34590d90884e91d28facb8acea3f25-745x559.jpg"
 intro: "Eh bien, c'est délicieux ! Jasmine, utilisatrice de FreeSewing, a créé ces incroyables Florents assortis pour elle et son père dans une toile bleu marine profond. Et elle les a cousus à la main en plus."
 title: "Un ensemble assorti de Florents"
 designs:

@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ein Sven für das Büro. Wie in, irgendwie langweilig"
 date: "2017-07-09"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b0c9b0cb38bce095739109946a99b6cda63e7cd9-1000x667.jpg"
 intro: "Winter veranlasste mich, dieses Schnitt zu entwerfen. Mir war kalt und ich brauchte ein paar Pullover, also was macht man da?"
 title: "Ankündigung des Pullovers Sven; ein einfacher Pullover, der auf dem Grundschnitt von Brian basiert"
 ---

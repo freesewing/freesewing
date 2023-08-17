@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Une robe basée sur le bloc de corsage Bella"
 date: "06-25-2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f2325ac8325f54f48637fa7d24e0edebfd5ab3ee-600x800.jpg"
 intro: "La talentueuse Bumblebunch a partagé cette robe basée sur le bloc de corsage Bella ! Qui aurait pu deviner qu'il avait été fabriqué à partir d'un vieux drap de lit !"
 title: "La robe de Bumblebunch basée sur le bloc Bella"
 designs:

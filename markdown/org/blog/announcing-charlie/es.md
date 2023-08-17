@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Foto de Flo Dahm de Pexels"
 date: "2021-04-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9e1cca6b6de79fadbd5201bad3b9b71375a53464-1920x1442.jpg"
 intro: "Acabamos de publicar FreeSewing v2.15 y viene con un nuevo patrón: El patrón de pantalón Charlie Chinos ."
 title: "Chinos Charlie: ¿quién quiere unos pantalones nuevos?"
 ---

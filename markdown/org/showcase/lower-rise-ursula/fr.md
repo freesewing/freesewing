@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Ursula en tissu coton spandex noir"
 date: "2021-09-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/26de214a4587d5123deaf4111b8e36714b8a7479-4032x3024.jpg"
 intro: "Cette Ursula a été fabriquée en tricot de coton spandex (94 % de coton, 6 % de spandex) avec un élastique à picots bordeaux."
 title: "Montée inférieure Ursula"
 designs:

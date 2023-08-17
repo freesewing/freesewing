@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Ksenia a fait ce Sven pour son homme."
 date: "2018-02-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8470f4414deeee3d072401616b01be02c8b98bc7-1080x1080.jpg"
 intro: "Cette image provient du fil Instagram de Ksenia ."
 title: "Sven en french terry gris"
 designs:

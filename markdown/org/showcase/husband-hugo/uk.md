@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Мені здається, чи Hugo - популярна марка для чоловіків?"
 date: "2015-12-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/bc1b64060b3b0907157c2e1608b2b2610b81a4b0-1080x1080.jpg"
 intro: "Це фото з Instagram-каналу uneanneedecouture ."
 title: "Г'юго для чоловіка, від Соні"
 designs:

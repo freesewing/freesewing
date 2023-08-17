@@ -1,5 +1,6 @@
 import axios from 'axios'
 import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
+import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useMemo } from 'react'
 
 /*
@@ -7,8 +8,10 @@ import { useMemo } from 'react'
  */
 const apiHandler = axios.create({
   baseURL: freeSewingConfig.backend,
-  timeout: 3000,
+  timeout: 6660,
 })
+
+const auth = (token) => (token ? { headers: { Authorization: 'Bearer ' + token } } : {})
 
 /*
  * This api object handles async code for different HTTP methods
@@ -160,6 +163,14 @@ Backend.prototype.disableMfa = async function (data) {
 Backend.prototype.reloadAccount = async function () {
   return responseHandler(await await api.get(`/whoami/jwt`, this.auth))
 }
+
+/*
+ * Load user profile
+ */
+Backend.prototype.getProfile = async function (uid) {
+  return responseHandler(await await api.get(`/users/${uid}`))
+}
+
 /*
  * Create API key
  */
@@ -288,6 +299,12 @@ Backend.prototype.createIssue = async function (data) {
 }
 
 /*
+ * Create showcase Pull Request
+ */
+Backend.prototype.createShowcasePr = async function (data) {
+  return responseHandler(await api.post(`/flows/pr/showcase/jwt`, data, this.auth), 201)
+}
+/*
  * Send translation invite
  */
 Backend.prototype.sendTranslatorInvite = async function (language) {
@@ -315,18 +332,69 @@ Backend.prototype.confirmNewsletterUnsubscribe = async function ({ id, ehash }) 
   return responseHandler(await api.delete('/subscriber', { id, ehash }))
 }
 
-export function useBackend(token = false) {
+/*
+ * Upload an image
+ */
+Backend.prototype.uploadImage = async function (body) {
+  return responseHandler(await api.post('/images/jwt', body, this.auth))
+}
+
+/*
+ * Remove an (uploaded) image
+ */
+Backend.prototype.removeImage = async function (id) {
+  return responseHandler(await api.delete(`/images/${id}/jwt`, this.auth))
+}
+
+/*
+ * Ping backend to see if current token is still valid
+ */
+Backend.prototype.ping = async function () {
+  return responseHandler(await api.get(`/whoami/jwt`, this.auth))
+}
+
+/*
+ * Search user (admin method)
+ */
+Backend.prototype.adminSearchUsers = async function (q) {
+  return responseHandler(await api.post('/admin/search/users/jwt', { q }, this.auth))
+}
+
+/*
+ * Load user (admin method)
+ */
+Backend.prototype.adminLoadUser = async function (id) {
+  return responseHandler(await api.get(`/admin/user/${id}/jwt`, this.auth))
+}
+
+/*
+ * Update user (admin method)
+ */
+Backend.prototype.adminUpdateUser = async function ({ id, data }) {
+  return responseHandler(await api.patch(`/admin/user/${id}/jwt`, data, this.auth))
+}
+
+/*
+ * Impersonate user (admin method)
+ */
+Backend.prototype.adminImpersonateUser = async function (id) {
+  return responseHandler(await api.get(`/admin/impersonate/${id}/jwt`, this.auth))
+}
+
+/*
+ * Verify an admin account while impersonating another user
+ */
+Backend.prototype.adminPing = async function (token) {
+  return responseHandler(await api.get(`/whoami/jwt`, auth(token)))
+}
+
+export function useBackend() {
+  const { token } = useAccount()
+
   /*
    * This backend object is what we'll end up returning
    */
-  const backend = useMemo(() => {
-    /*
-     * Set up authentication headers
-     */
-    const auth = token ? { headers: { Authorization: 'Bearer ' + token } } : {}
-
-    return new Backend(auth)
-  }, [token])
+  const backend = useMemo(() => new Backend(auth(token)), [token])
 
   return backend
 }

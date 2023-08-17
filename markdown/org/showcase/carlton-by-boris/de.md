@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Boris in seinem unglaublichen Carlton Coat"
 date: "02.10.2023"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8d7e149722688b531c2cfbeaac82de4e6730f156-2252x4000.jpg"
 intro: "Ich weiß gar nicht, wo ich anfangen soll. Sieh dir nur diesen Mantel an. Es ist unglaublich."
 title: "Classic Carlton von Boris"
 designs:

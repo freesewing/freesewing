@@ -2,7 +2,6 @@
 maker: "TangerineShark"
 caption: "Une robe ajustée et évasée d'un bleu profond ornée de constellations en broderie."
 date: "09-25-2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/da025b955c455a3d9dbef404a49881ea30a88a8f-1986x2648.jpg"
 intro: "Cette robe est un hybride du bloc corporel Bella et de la jupe circulaire Sandy . J'ai appelé le combo Sanderella."
 title: "Une Sanderella céleste"
 designs:

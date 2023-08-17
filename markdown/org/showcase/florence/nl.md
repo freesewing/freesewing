@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Er zijn zoveel mensen die ons gezichtsmasker hebben gemaakt, hier zijn er een paar"
 date: "2020-07-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/85f06378981db4e6769579d583b5361e5b8b6e46-2000x1200.jpg"
 intro: "Toen we ons gezichtsmasker in februari publiceerden, hadden we niet verwacht dat het zo'n grote vlucht zou nemen."
 title: "Diverse makers Florence"
 designs:

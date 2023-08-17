@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Adam ziet er spectaculair afgeborsteld uit in zijn Wahid"
 date: "2020-07-01"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ab68d41354448f2149dcdce2cbf3b0222f58012d-2160x1080.jpg"
 intro: "Wahid door Adam"
 title: "Wahid door Adam"
 designs:

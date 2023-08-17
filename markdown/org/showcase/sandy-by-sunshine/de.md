@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Getäfelter Sandy-Rock von Sunshine"
 date: "2021-02-15"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4d38d6837e8125276522abb62d44a99e191fd8a0-1477x1969.jpg"
 intro: "Dieser schöne Rock von Sandy wurde von Sunshine hergestellt. Der Macher hat weitere Informationen über das Projekt geteilt:"
 title: "Sandy Rock von Sunshine"
 designs:

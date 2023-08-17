@@ -56,7 +56,7 @@ export const SignUp = () => {
       // Here to keep the stupid linter happy
       console.log(err)
     }
-    if (res.data.result === 'success') setResult('success')
+    if (res.data.result === 'created') setResult('success')
     else {
       setModal(
         <ModalWrapper bg="base-100 lg:bg-base-300">
@@ -138,7 +138,7 @@ export const SignUp = () => {
               name="email"
               onChange={updateEmail}
               placeholder={t('emailAddress')}
-              className={`input input-bordered w-full text-inherit ${loadingClasses}`}
+              className={`input input-bordered w-full text-base-content ${loadingClasses}`}
               autoFocus={true}
               value={email}
             />

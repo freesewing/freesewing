@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Nota: Este post es de larga lectura. Aunque ni de lejos tan largo como este libro"
 date: "2020-08-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1a143c96b4afc8c12d2014c5605bfd1e63d917d0-2000x1348.jpg"
 intro: "Por favor, ayuda a que FreeSewing crezca más allá de lo que puedo hacer yo sola"
 title: "Por favor, ayuda a que FreeSewing crezca más allá de lo que puedo hacer yo sola"
 ---

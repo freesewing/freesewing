@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ваша історія входу в систему за жовтень"
 date: "2018-09-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b5a652991874d5eb4b6aa694653fcc483330a49d-1920x1280.jpg"
 intro: "Щомісячний огляд - вересень 2018: Шин, багато JavaScript та довгий список справ"
 title: "Щомісячний огляд - вересень 2018: Шин, багато JavaScript та довгий список справ"
 ---

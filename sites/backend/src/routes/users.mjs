@@ -55,6 +55,9 @@ export function usersRoutes(tools) {
     Users.isUsernameAvailable(req, res, tools)
   )
 
+  // Load a user profile
+  app.get('/users/:id', (req, res) => Users.profile(req, res, tools))
+
   /*
 
   // Remove account

@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Bonita tela, y una corbata muy bien hecha"
 date: "2017-09-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a4df7c8446671138fe4f6e07eebf32058af31999-1080x1080.jpg"
 intro: "Una corbata Trayvon en seda Liberty de Victoria"
 title: "Una corbata Trayvon en seda Liberty de Victoria"
 designs:

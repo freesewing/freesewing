@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Це був подвиг гострого екіпірування. Бенджамін, Флоран і Чарлі"
 date: "2021-06-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d2298f1d90c3dee1bcfa91895a30cd6aae13b7e2-1634x2172.jpg"
 intro: "Ми обожнюємо це вбрання з трьома викрійками FreeSewing: Чарлі, Флоран і Бенджамін! Ви також можете переглянути нашу попередню вітрину з кепкою Florent від Elske."
 title: "Вбрання Elske's FreeSewing"
 designs:

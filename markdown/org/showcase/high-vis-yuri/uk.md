@@ -2,7 +2,6 @@
 maker: "Чорт забирай."
 caption: "Вид при денному світлі"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3a80879182c63ed3438ee239ed6cb5d2a88d2d4b-1440x1800.jpg"
 intro: "Не вистачає слів, щоб описати це худі Юрія від неповторного Hellgy! Яскравий! Яскраво! Дискотека! Дуже весело!!!"
 title: "Худі Hellgy's high vis Yuri (GIF-файли з миготливими вогнями в пості)"
 designs:

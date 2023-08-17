@@ -58,11 +58,13 @@ const baseConfig = {
       google: envToBool(process.env.BACKEND_ENABLE_OAUTH_GOOGLE),
     },
     cloudflareImages: envToBool(process.env.BACKEND_ENABLE_CLOUDFLARE_IMAGES),
+    forwardmx: envToBool(process.env.BACKEND_ENABLE_FORWARDMX),
     ses: envToBool(process.env.BACKEND_ENABLE_AWS_SES),
     tests: {
       base: envToBool(process.env.BACKEND_ENABLE_TESTS),
       email: envToBool(process.env.BACKEND_ENABLE_TESTS_EMAIL),
       cloudflareImages: envToBool(process.env.BACKEND_ENABLE_TESTS_CLOUDFLARE_IMAGES),
+      forwardmx: envToBool(process.env.BACKEND_ENABLE_TESTS_FORWARDMX),
     },
     import: envToBool(process.env.BACKEND_ENABLE_IMPORT),
   },
@@ -179,6 +181,13 @@ if (baseConfig.use.cloudflareImages) {
   }
 }
 
+// FowardMx config
+if (baseConfig.use.fowardmx)
+  baseConfig.forwardmx = {
+    key: process.env.BACKEND_FORWARDMX_KEY || 'fixmeSetFowardMxApiKey',
+    useInTests: baseConfig.use.tests.fowardmx,
+  }
+
 // AWS SES config (for sending out emails)
 if (baseConfig.use.ses)
   baseConfig.aws = {
@@ -220,6 +229,7 @@ const config = postConfig(baseConfig)
 
 // Exporting this stand-alone config
 export const cloudflareImages = config.cloudflareImages || {}
+export const forwardmx = config.forwardmx || {}
 export const website = config.website
 export const githubToken = config.github.token
 

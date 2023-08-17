@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ce communiqué t'est présenté par Bangkok"
 date: "21-03-2018"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/34ed654dcda9004e7c249b90256ad197469cc87e-1920x1277.webp"
 intro: "Nous venons d'appuyer sur le bouton du noyau 1.8.0. Cette augmentation du nombre de mineurs est généralement due à un nouveau modèle, mais dans ce cas, il y a deux raisons :"
 title: "Freesewing core 1.8 : La veste Jaeger est en place, la mesure transversale du dos est supprimée."
 ---

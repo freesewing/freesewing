@@ -17,8 +17,8 @@ Los bloques no suelen hacerse tal cual, sino que sirven de base para otros patro
 
 - Cierra las pinzas delanteras del pecho y la cintura.
 - Cerrar los dardos traseros.
-- Sew the front to the backs at the shoulders good sides together.
-- Sew the front to the backs at the side seams good sides together.
+- With _good sides together_ sew the backs to the front at the shoulder seams, _easing_ the backs to fit the front.
+- With _good sides together_ sew the backs to the front at the side seams.
 
 <Tip>
 

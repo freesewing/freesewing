@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Вірите чи ні, але це лише третій його швейний проект."
 date: "2018-02-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3d05ee5656f7aac511d95ed567dab54c6545cd88-1080x1080.jpg"
 intro: "Жилет вахід з зав'язаними петлицями"
 title: "Жилет вахід з зав'язаними петлицями"
 designs:

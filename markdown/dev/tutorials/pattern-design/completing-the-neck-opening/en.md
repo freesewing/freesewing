@@ -14,7 +14,7 @@ as it is, and simply chose to not show it.
 To accomplish this, we'll call the `hide()` method on our path:
 
 <Example tutorial caption="A hidden path is not shown">
-```js
+```design/src/bib.mjs
 function draftBib({
   Path,
   Point,
@@ -30,20 +30,20 @@ function draftBib({
   let target = (measurements.head * options.neckRatio) /4
   let delta
   do {
-  	points.right = new Point(tweak * measurements.head / 10, 0)
-  	points.bottom = new Point(0, tweak * measurements.head / 12)
+    points.right = new Point(tweak * measurements.head / 10, 0)
+    points.bottom = new Point(0, tweak * measurements.head / 12)
 
-  	points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
-  	points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
+    points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
+    points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
 
-  	paths.quarterNeck = new Path()
-  	  .move(points.right)
-  	  .curve(points.rightCp1, points.bottomCp2, points.bottom)
+    paths.quarterNeck = new Path()
+      .move(points.right)
+      .curve(points.rightCp1, points.bottomCp2, points.bottom)
       // highlight-start
       .hide()
       // highlight-end
 
-  	delta = paths.quarterNeck.length() - target
+    delta = paths.quarterNeck.length() - target
     if (delta > 0) tweak = tweak * 0.99
     else tweak = tweak * 1.02
   } while (Math.abs(delta) > 1)
@@ -68,7 +68,7 @@ Let's add some more points, and then construct the complete path for the neck
 opening.
 
 <Example tutorial caption="Our completed neck opening">
-```js
+```design/src/bib.mjs
 function draftBib({
   Path,
   Point,
@@ -84,18 +84,18 @@ function draftBib({
   let target = (measurements.head * options.neckRatio) /4
   let delta
   do {
-  	points.right = new Point(tweak * measurements.head / 10, 0)
-  	points.bottom = new Point(0, tweak * measurements.head / 12)
+    points.right = new Point(tweak * measurements.head / 10, 0)
+    points.bottom = new Point(0, tweak * measurements.head / 12)
 
-  	points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
-  	points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
+    points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
+    points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
 
-  	paths.quarterNeck = new Path()
-  	  .move(points.right)
-  	  .curve(points.rightCp1, points.bottomCp2, points.bottom)
+    paths.quarterNeck = new Path()
+      .move(points.right)
+      .curve(points.rightCp1, points.bottomCp2, points.bottom)
       .hide()
 
-  	delta = paths.quarterNeck.length() - target
+    delta = paths.quarterNeck.length() - target
     if (delta > 0) tweak = tweak * 0.99
     else tweak = tweak * 1.02
   } while (Math.abs(delta) > 1)

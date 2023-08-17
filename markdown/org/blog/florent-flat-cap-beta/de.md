@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Quentin umgeben von unseren zukünftigen Roboter-Overlords."
 date: "2017-12-06"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ee5c11e3b29fe788dae470ab0e20396d806c4d1b-2000x1333.jpg"
 intro: "Das Schnittmuster der Schiebermütze Florent ist jetzt in der Beta-Version erhältlich. Da ist ein weiteres Geschenk erschienen."
 title: "Das Schnittmuster der Schiebermütze Florent ist jetzt in der Beta-Version erhältlich. Da ist ein weiteres Geschenk erschienen."
 ---

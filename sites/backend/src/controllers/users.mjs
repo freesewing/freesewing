@@ -106,6 +106,18 @@ UsersController.prototype.updateMfa = async (req, res, tools) => {
 }
 
 /*
+ * Returns a user profile
+ *
+ * See: https://freesewing.dev/reference/backend/api
+ */
+UsersController.prototype.profile = async (req, res, tools) => {
+  const User = new UserModel(tools)
+  await User.profile(req)
+
+  return User.sendResponse(res)
+}
+
+/*
  * Checks whether a submitted username is available
  *
  * See: https://freesewing.dev/reference/backend/api

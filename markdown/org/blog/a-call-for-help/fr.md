@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Note: ceci est un long message. Bien que nettement moins que ce livre"
 date: "2020-08-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1a143c96b4afc8c12d2014c5605bfd1e63d917d0-2000x1348.jpg"
 intro: "Aidez à faire grandir FreeSewing au-delà de ce que je peux faire seul"
 title: "Aidez à faire grandir FreeSewing au-delà de ce que je peux faire seul"
 ---

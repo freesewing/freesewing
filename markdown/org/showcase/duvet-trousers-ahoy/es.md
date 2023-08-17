@@ -2,7 +2,6 @@
 maker: "comixminx"
 caption: "Estos pantalones están hechos con una funda nórdica jubilada"
 date: "2022-06-09"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/2be33e00299fe330faee41f1770641982433aa3b-1918x2623.jpg"
 intro: "¡Estos excelentes pantalones Paco han sido el primer patrón FreeSewing de comixminx que se ha hecho para sí misma! Nos proporcionó algunas notas útiles sobre el proceso:"
 title: "¡Pantalones nórdicos a la vista!"
 designs:

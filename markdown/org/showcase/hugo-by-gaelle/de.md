@@ -2,7 +2,6 @@
 maker: "Gaëlle"
 caption: "Gaëlles Freundin in ihrem neuen Hugo-Kapuzenpulli"
 date: "2023-02-15"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7c510d7ee01cef0b2b4df46e02d0fc052ade3579-1694x3323.jpg"
 intro: "Gaëlle hat diesen Hugo gebastelt, der mit fröhlichen kleinen ... na ja, ich weiß nicht, wie man diese verschnörkelten kleinen Monster nennen soll, aber sie sind auf jeden Fall toll. Es ist für eine Freundin und wir würden uns sehr freuen, so etwas Tolles zu bekommen.  Sieh dir das tolle gestreifte Bündchen an."
 title: "Hugo von Gaëlle"
 designs:

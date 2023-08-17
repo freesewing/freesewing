@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Sudadera con capucha Huey de Minty"
 date: "2021-03-06"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1ae81c4f08dd21d7db28538399d818c72ff586a9-810x1083.jpg"
 intro: "¡Esta fantástica sudadera con capucha Huey ha sido confeccionada por Minty! Minty compartió que lo hizo con una máquina normal en lugar de una overlock."
 title: "Huey por Minty"
 designs:

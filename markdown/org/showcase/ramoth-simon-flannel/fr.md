@@ -2,7 +2,6 @@
 maker: "Ramoth"
 caption: "J'adore les papillons de nuit sur cette magnifique flanelle Simon."
 date: "2023-02-03"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a9c92d5302d483d40fe71c67ec34b65073cf4c48-425x567.jpg"
 intro: "La flanelle Simon de Ramoth"
 title: "La flanelle Simon de Ramoth"
 designs:

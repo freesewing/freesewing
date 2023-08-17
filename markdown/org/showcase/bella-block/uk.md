@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Це муслін блоку ліфа Белла, виготовлений з мінімальними коригуваннями"
 date: "2021-01-21"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/854a688f4a7447de0b44f8371dbb2d3e0fdce9ea-1488x1680.jpg"
 intro: "Блок ліфа Bella"
 title: "Блок ліфа Bella"
 designs:

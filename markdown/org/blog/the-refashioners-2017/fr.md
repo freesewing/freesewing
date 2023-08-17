@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ils ont dit que j'étais folle de faire une veste zébrée, alors je l'ai faite quand même. Et il s'est enfoncé dans le marais."
 date: "2017-09-04"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/35dda6f4c8ec6f2689e2741cc49cf178e4a39474-3300x2200.jpg"
 intro: "Pour les non-initiés, le refashioners est un événement/concours annuel organisé par la charmante (et très persuasive) Portia Lawrie ."
 title: "The Refashioners 2017 - Maintenant avec un aperçu du blazer Blake et 100 % plus de zèbre."
 ---

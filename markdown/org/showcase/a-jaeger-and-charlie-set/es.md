@@ -2,7 +2,6 @@
 maker: "Gaëlle"
 caption: "Jaeger y Charlie en un divertido tejido de pana"
 date: "2023-05-03"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a607817635bb3c8a65a53944a586851f5c6a3a8e-1380x3041.jpg"
 intro: "Este bonito conjunto de Jaeger y Waralee está confeccionado con pana de algodón y forro de cupro."
 title: "Un conjunto Jaeger y Charlie"
 designs:

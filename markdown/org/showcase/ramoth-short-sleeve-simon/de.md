@@ -2,7 +2,6 @@
 maker: "Ramoth"
 caption: "Der kurzärmelige Simon von Ramoth, bei dem der Großteil der Formgebung in die hinteren Abnäher verlagert wurde"
 date: "30.09.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/fdf5a6c5f8ef988575d9a57c1fe5a6b2734e566f-1836x3264.jpg"
 intro: "Das kurzärmelige Simon-Shirt von Ramoth"
 title: "Das kurzärmelige Simon-Shirt von Ramoth"
 designs:

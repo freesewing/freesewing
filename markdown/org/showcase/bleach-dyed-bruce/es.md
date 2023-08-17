@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Están hechos con tela de camiseta negra que yo misma teñí con lejía, utilizando plantas del desierto para el diseño."
 date: "2018-01-21"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9e8834593713a2a6e4903d53e789b430449f947a-1280x960.jpg"
 intro: "Bruce teñido con lejía por Reanna"
 title: "Bruce teñido con lejía por Reanna"
 designs:

@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "Nous sommes tombés amoureux de Hi"
 date: "06-30-2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0a9f5750abe0ee9e67cee1d9eb10f6cb7770ee4e-4032x3024.jpg"
 intro: "Voici Hi."
 title: "Bonjour, le requin a nos cœurs"
 designs:

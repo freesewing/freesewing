@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "¡Echa un vistazo a este simpático disfraz de hobbit!"
 date: "2023-07-11"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/53426fe47d7a52b633d033c1afc77f788bde0013-469x470.jpg"
 intro: "Este chaleco Wahid de lino se hizo para un niño de 1 año. Está hecho de lino y se hizo totalmente reversible siguiendo un tutorial de Sarah Kirsten: Cómo coser un chaleco forrado - Dos métodos fáciles"
 title: "Un chaleco reversible Wahid para un niño pequeño"
 designs:

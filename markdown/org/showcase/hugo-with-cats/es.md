@@ -2,7 +2,6 @@
 maker: "comixminx"
 caption: "Un Hugo rojo y gris con caras de gato de dibujos animados por todo el cuerpo"
 date: "2023-01-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3d055bcd5e642895d26d5aa100542355ab693a7d-3024x4032.jpg"
 intro: "Otra increíble realización de FreeSewing de comixminx, que muestra una forma genial de resolver un reto de adaptación. Esta sudadera Hugo de tamaño infantil (sin capucha) resultó un poco complicada porque las proporciones no eran las esperadas. Así que hizo algunos ajustes a mitad de la costura (como añadir un refuerzo a las mangas, porque le quedaban muy estrechas y le costaba meterse en ellas)."
 title: "Hugo es mejor con los gatos"
 designs:
