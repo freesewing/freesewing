@@ -143,11 +143,10 @@ AdminModel.prototype.updateUser = async function ({ params, body, user }) {
  * This logs an admin in as another user
  *
  * @param {params} object - The (URL) request parameters.
- * @param {body} object - The request body
  * @param {user} object - The user as loaded by auth middleware
  * @returns {AdminModel} object - The AdminModel
  */
-AdminModel.prototype.impersonateUser = async function ({ params, body, user }) {
+AdminModel.prototype.impersonateUser = async function ({ params, user }) {
   /*
    * Enforce RBAC
    */
