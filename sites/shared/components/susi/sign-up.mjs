@@ -138,7 +138,7 @@ export const SignUp = () => {
               name="email"
               onChange={updateEmail}
               placeholder={t('emailAddress')}
-              className={`input input-bordered w-full text-inherit ${loadingClasses}`}
+              className={`input input-bordered w-full text-base-content ${loadingClasses}`}
               autoFocus={true}
               value={email}
             />

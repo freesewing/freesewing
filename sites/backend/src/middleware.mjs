@@ -10,9 +10,11 @@ import { UserModel } from './models/user.mjs'
  * this field. It's a bit of a perf hit to write to the database on ever API call
  * but it's worth it to actually know which accounts are used and which are not.
  */
-async function updateLastSeen(uid, tools, type) {
+async function checkAccess(uid, tools, type) {
   const User = new UserModel(tools)
-  await User.seen(uid, type)
+  const ok = await User.papersPlease(uid, type)
+
+  return ok
 }
 
 function loadExpressMiddleware(app) {
@@ -25,12 +27,16 @@ function loadPassportMiddleware(passport, tools) {
       const Apikey = new ApikeyModel(tools)
       await Apikey.verify(key, secret)
       /*
-       * Update lastSeen field
+       * We check more than merely the API key
        */
-      if (Apikey.verified) await updateLastSeen(Apikey.record.userId, tools, 'key')
+      const ok = Apikey.verified ? await checkAccess(Apikey.record.userId, tools, 'key') : false
 
-      return Apikey.verified
-        ? done(null, { ...Apikey.record, apikey: true, uid: Apikey.record.userId })
+      return ok
+        ? done(null, {
+            ...Apikey.record,
+            apikey: true,
+            uid: Apikey.record.userId,
+          })
         : done(false)
     })
   )
@@ -42,15 +48,17 @@ function loadPassportMiddleware(passport, tools) {
       },
       async (jwt_payload, done) => {
         /*
-         * Update lastSeen field
+         * We check more than merely the token
          */
-        await updateLastSeen(jwt_payload._id, tools, 'jwt')
+        const ok = await checkAccess(jwt_payload._id, tools, 'jwt')
 
-        return done(null, {
-          ...jwt_payload,
-          uid: jwt_payload._id,
-          level: tools.config.roles.levels[jwt_payload.role] || 0,
-        })
+        return ok
+          ? done(null, {
+              ...jwt_payload,
+              uid: jwt_payload._id,
+              level: tools.config.roles.levels[jwt_payload.role] || 0,
+            })
+          : done(false)
       }
     )
   )

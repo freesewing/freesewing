@@ -20,7 +20,6 @@ signOut: Sign Out
 politeOhCrap: Oh fiddlesticks
 bio: Bio
 email: E-mail Address
-github: Github Username
 img: Profile image
 username: Username
 compare: Metricset Comparison
@@ -128,7 +127,12 @@ emailChangeConfirmation: We have sent an E-mail to your new address to confirm t
 vagueError: Something went wrong, and we're not certain how to handle it. Please try again, or involve a human being for assistance.
 
 # github
-githubTitle: Enter your github username here to receive updates when you report a problem through this website.
+githubTitle: Link your GitHub identity
+githubWhy1: Enter your GitHub username and email here and we will use them when interacting with GitHub on your behalf.
+githubWhy2: Note that both your GitHub username and email is public info. This merely allows us to make a link between your FreeSewing account and GitHub account.
+githubWhy3 : For example, when you report a problem on this website, we can mention you so you will receive notifications when there is an update. For this, your username is sufficient.
+githubWhy4: When you submit a showcase post or make changed to our content, we can credit those commits to you if we have both your username and the email address you use on GitHub.
+tooComplex: If all of this in confusing, you don't have to provide this info. It's an advanced feature.
 
 # languge
 languageTitle: Which language do you prefer?
@@ -189,6 +193,12 @@ designNewInfo: FreeSewing designs are small bundles of JavaScript code that gene
 
 pluginNew: Create a new plugin
 pluginNewInfo: FreeSewing's functionality can be further extended with plugins. Creating a plugin is easy, and we have a guide to take you from start to finish.
+
+showcaseNew: Create a new showcase post
+showcaseNewInfo: If you would like to share something you (or someone else) made based on our designs, you can start a draft showcase post here.
+
+blogNew: Create a new blog post
+blogNewInfo: If you would like to write on the FreeSewing blog, you can start a draft blog post here.
 
 newBasic: The basics
 newAdvanced: Go further

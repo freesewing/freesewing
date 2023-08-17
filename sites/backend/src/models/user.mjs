@@ -11,8 +11,43 @@ import { decorateModel } from '../utils/model-decorator.mjs'
 export function UserModel(tools) {
   return decorateModel(this, tools, {
     name: 'user',
-    encryptedFields: ['bio', 'github', 'email', 'initial', 'img', 'mfaSecret'],
+    encryptedFields: ['bio', 'data', 'email', 'initial', 'img', 'mfaSecret'],
+    jsonFields: ['data'],
     models: ['confirmation', 'set', 'pattern'],
+  })
+}
+
+/*
+ * Loads a user from the database based on the where clause you pass it
+ * In addition prepares it for returning the account data
+ * This is guarded so it enforces access control and validates input
+ * This is an anonymous route returning limited info (profile data)
+ *
+ * @param {params} object - The request (URL) parameters
+ * @returns {UserModel} object - The UserModel
+ */
+UserModel.prototype.profile = async function ({ params }) {
+  /*
+   * Is id set?
+   */
+  if (typeof params.id === 'undefined') return this.setResponse(403, 'idMissing')
+
+  /*
+   * Try to find the record in the database
+   * Note that find checks lusername, ehash, and id but we
+   * pass it in the username value as that's what the login
+   * rout does
+   */
+  await this.find({ username: params.id })
+
+  /*
+   * If it does not exist, return 404
+   */
+  if (!this.exists) return this.setResponse(404)
+
+  return this.setResponse200({
+    result: 'success',
+    profile: this.asProfile(),
   })
 }
 
@@ -83,6 +118,50 @@ UserModel.prototype.find = async function (body) {
   await this.reveal()
 
   return this.recordExists()
+}
+
+/*
+ * Searches for users - Admin route
+ *
+ * @param {body} object - The request body
+ * @returns {UserModel} object - The UserModel
+ */
+UserModel.prototype.search = async function (q) {
+  /*
+   * Find users based on lusername
+   */
+  let usernames, emails
+  try {
+    usernames = await this.asAccountList(
+      await this.prisma.user.findMany({
+        where: {
+          lusername: { contains: clean(q) },
+        },
+      })
+    )
+  } catch (err) {
+    usernames = []
+  }
+  /*
+   * Find users based on ehash/ihash
+   */
+  try {
+    const ehash = hash(clean(q))
+    emails = await this.asAccountList(
+      await this.prisma.user.findMany({
+        where: {
+          OR: [{ ehash: { equals: ehash } }, { ihash: { equals: ehash } }],
+        },
+      })
+    )
+  } catch (err) {
+    emails = []
+  }
+
+  return {
+    email: emails,
+    username: usernames,
+  }
 }
 
 /*
@@ -303,7 +382,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
        * These are all placeholders, but fields that get encrypted need _some_ value
        * because encrypting null will cause an error.
        */
-      github: this.encrypt(''),
+      data: this.encrypt('{}'),
       bio: this.encrypt(''),
       img: this.encrypt(this.config.avatars.user),
     }
@@ -746,7 +825,7 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
   /*
    * String fields
    */
-  for (const field of ['bio', 'github']) {
+  for (const field of ['bio']) {
     if (typeof body[field] === 'string') data[field] = body[field]
   }
 
@@ -755,6 +834,16 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
    */
   for (const [field, values] of Object.entries(this.config.enums.user)) {
     if (values.includes(body[field])) data[field] = body[field]
+  }
+
+  /*
+   * JSON fields
+   */
+  for (const field of this.jsonFields) {
+    if (typeof body[field] !== 'undefined') {
+      if (typeof body[field] === 'object') data[field] = body[field]
+      else log.warn(body, `Tried to set JDON field ${field} to a non-object`)
+    }
   }
 
   /*
@@ -1075,6 +1164,25 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
 }
 
 /*
+ * Returns the database record as profile data for public consumption
+ *
+ * @return {account} object - The account data as a plain object
+ */
+UserModel.prototype.asProfile = function () {
+  /*
+   * Nothing to do here but construct the object to return
+   */
+  return {
+    id: this.record.id,
+    bio: this.clear.bio,
+    img: this.clear.img,
+    patron: this.record.patron,
+    role: this.record.role,
+    username: this.record.username,
+  }
+}
+
+/*
  * Returns the database record as account data for for consumption
  *
  * @return {account} object - The account data as a plain object
@@ -1091,7 +1199,7 @@ UserModel.prototype.asAccount = function () {
     control: this.record.control,
     createdAt: this.record.createdAt,
     email: this.clear.email,
-    github: this.clear.github,
+    data: this.clear.data,
     ihash: this.ihash,
     img: this.clear.img,
     imperial: this.record.imperial,
@@ -1113,6 +1221,49 @@ UserModel.prototype.asAccount = function () {
      */
     passwordType: JSON.parse(this.record.password).type,
   }
+}
+
+/*
+ * Returns a list of records as search results
+ * Typically used by admin search
+ *
+ * @param {list} array - A list of database records
+ * @return {list} array - The records mapped and decrypted
+ *
+ */
+UserModel.prototype.asAccountList = async function (list) {
+  const newList = []
+  for (const record of list) {
+    const clear = {}
+    for (const field of this.encryptedFields) {
+      clear[field] = await this.decrypt(record[field])
+    }
+    for (const field of [
+      'id',
+      'compare',
+      'consent',
+      'control',
+      'createdAt',
+      'ihash',
+      'jwtCalls',
+      'keyCalls',
+      'language',
+      'lastSeen',
+      'mfaEnabled',
+      'newsletter',
+      'patron',
+      'role',
+      'status',
+      'updatedAt',
+      'username',
+      'lusername',
+    ])
+      clear[field] = record[field]
+    clear.passwordType = JSON.parse(record.password).type
+    newList.push(clear)
+  }
+
+  return newList
 }
 
 /*
@@ -1210,14 +1361,18 @@ UserModel.prototype.isLusernameAvailable = async function (lusername) {
 }
 
 /*
- * Helper method to update the `lastSeen` field of the user
- * This is called from middleware with the user ID passed in.
+ * Helper method that is called by middleware to verifu whether the user
+ * is allowed in. It will update the `lastSeen` field of the user as
+ * well as increase the call counter for either JWT or KEY.
+ * It will also check whether the user status is ok and consent granted.
+ *
+ * If this returns false, the request will never make it past the middleware.
  *
  * @param {id} string - The user ID
  * @param {type} string - The authentication type (one of 'jwt' or 'key')
  * @returns {success} boolean - True if it worked, false if not
  */
-UserModel.prototype.seen = async function (id, type) {
+UserModel.prototype.papersPlease = async function (id, type) {
   /*
    * Construct data object for update operation
    */
@@ -1227,18 +1382,30 @@ UserModel.prototype.seen = async function (id, type) {
   /*
    * Now update the dabatase record
    */
+  let user
   try {
-    await this.prisma.user.update({ where: { id }, data })
+    user = await this.prisma.user.update({ where: { id }, data })
   } catch (err) {
     /*
      * An error means it's not good. Return false
      */
-    log.warn({ id, err }, 'Could not update lastSeen field from middleware')
+    log.warn({ id }, 'Could not update lastSeen field from middleware')
     return false
   }
 
   /*
-   * If we get here, the lastSeen field was updated and user exists, so return true
+   * Verify the consent and status
+   */
+  if (user.consent < 1) return false
+
+  /*
+   * Is the account active?
+   */
+  if (user.status < 1) return false
+
+  /*
+   * If we get here, the lastSeen field was updated, user exists,
+   * and their consent and status are ok, so so return true and let them through.
    */
   return true
 }
@@ -1291,8 +1458,7 @@ const migrateUser = (v2) => {
 UserModel.prototype.import = async function (user) {
   if (user.status === 'active') {
     const data = migrateUser(user)
-    if (user.consent.profile) data.consent++
-    if (user.consent.model || user.consent.measurements) {
+    if (user.consent.profile && (user.consent.model || user.consent.measurements)) {
       data.consent++
       if (user.consent.openData) data.consent++
     }

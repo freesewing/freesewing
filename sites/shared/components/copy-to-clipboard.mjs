@@ -1,6 +1,6 @@
 import ReactDOMServer from 'react-dom/server'
 import { useState } from 'react'
-import { CopyIcon } from 'shared/components/icons.mjs'
+import { CopyIcon, OkIcon } from 'shared/components/icons.mjs'
 import { CopyToClipboard as Copy } from 'react-copy-to-clipboard'
 
 const strip = (html) =>
@@ -22,7 +22,11 @@ export const CopyToClipboard = ({ content }) => {
   return (
     <Copy text={text} onCopy={() => handleCopied(setCopied)}>
       <button className={copied ? 'text-success' : ''}>
-        <CopyIcon className="w-5 h-5" />
+        {copied ? (
+          <OkIcon className="w-5 h-5 text-success-content bg-success rounded-full p-1" stroke={4} />
+        ) : (
+          <CopyIcon className="w-5 h-5 text-inherit" />
+        )}
       </button>
     </Copy>
   )

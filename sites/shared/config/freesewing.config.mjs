@@ -50,4 +50,22 @@ export const freeSewingConfig = {
     },
   },
   social,
+  statuses: {
+    0: {
+      name: 'inactive',
+      color: 'neutral',
+    },
+    1: {
+      name: 'active',
+      color: 'success',
+    },
+    '-1': {
+      name: 'paused',
+      color: 'warning',
+    },
+    '-2': {
+      name: 'disabled',
+      color: 'error',
+    },
+  },
 }

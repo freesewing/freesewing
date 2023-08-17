@@ -9,7 +9,6 @@ import { ApikeyModel } from '../models/apikey.mjs'
 import { ConfirmationModel } from '../models/confirmation.mjs'
 import { CuratedSetModel } from '../models/curated-set.mjs'
 import { FlowModel } from '../models/flow.mjs'
-import { IssueModel } from '../models/issue.mjs'
 import { PatternModel } from '../models/pattern.mjs'
 import { SetModel } from '../models/set.mjs'
 import { SubscriberModel } from '../models/subscriber.mjs'
@@ -46,6 +45,11 @@ export function decorateModel(Model, tools, modelConfig) {
   Model.encryptedFields = modelConfig.encryptedFields || []
 
   /*
+   * Set JSON fields based on config
+   */
+  Model.jsonFields = modelConfig.jsonFields || []
+
+  /*
    * Create object to hold decrypted data
    */
   Model.clear = {}
@@ -59,7 +63,6 @@ export function decorateModel(Model, tools, modelConfig) {
       Model.Confirmation = new ConfirmationModel(tools)
     if (modelConfig.models.includes('cset')) Model.CuratedSet = new CuratedSetModel(tools)
     if (modelConfig.models.includes('flow')) Model.Flow = new FlowModel(tools)
-    if (modelConfig.models.includes('issue')) Model.Issue = new IssueModel(tools)
     if (modelConfig.models.includes('pattern')) Model.Pattern = new PatternModel(tools)
     if (modelConfig.models.includes('set')) Model.Set = new SetModel(tools)
     if (modelConfig.models.includes('subscriber')) Model.Subscriber = new SubscriberModel(tools)
@@ -76,9 +79,7 @@ export function decorateModel(Model, tools, modelConfig) {
       return this.recordExists()
     }
     try {
-      this.record = this.unserialize(
-        await this.prisma[modelConfig.name].findUnique({ where, include })
-      )
+      this.record = await this.prisma[modelConfig.name].findUnique({ where, include })
     } catch (err) {
       log.warn({ err, where }, `Could not read ${modelConfig.name}`)
       return this.recordExists()
@@ -103,13 +104,19 @@ export function decorateModel(Model, tools, modelConfig) {
     /*
      * Handle nested records with JSON fields
      */
-    if (this.record?.cset) {
-      for (const lang of this.config.languages) {
-        const key = `tags${capitalize(lang)}`
-        if (this.record.cset[key]) this.record.cset[key] = JSON.parse(this.record.cset[key])
+    if (this.record) {
+      for (const field of this.jsonFields) {
+        if (this.encryptedFields && this.encryptedFields.includes(field)) {
+          this.clear[field] = JSON.parse(this.clear[field])
+        } else {
+          this.record[field] = JSON.parse(this.record[field])
+        }
       }
-      if (this.record.cset.measies) this.record.cset.measies = JSON.parse(this.record.cset.measies)
     }
+
+    /*
+     * Handle nested set
+     */
     if (this.record?.set) this.record.set = this.Set.revealSet(this.record.set)
 
     return this
@@ -119,11 +126,19 @@ export function decorateModel(Model, tools, modelConfig) {
    * Helper method to encrypt at-rest data
    */
   Model.cloak = function (data) {
+    /*
+     * Encrypt data
+     */
     for (const field of this.encryptedFields) {
       if (typeof data[field] !== 'undefined') {
-        data[field] = this.encrypt(data[field])
+        if (this.jsonFields && this.jsonFields.includes(field)) {
+          data[field] = this.encrypt(JSON.stringify(data[field]))
+        } else {
+          data[field] = this.encrypt(data[field])
+        }
       }
     }
+
     /*
      * Password needs to be hashed too
      */
@@ -147,51 +162,12 @@ export function decorateModel(Model, tools, modelConfig) {
   }
 
   /*
-   * A helper method to serialize data, making sure it's fit for writing to the database
-   */
-  Model.serialize = function (data) {
-    if (this.name === 'curatedSet') {
-      /*
-       * Serialize to JSON
-       * See https://github.com/prisma/prisma/issues/3786
-       */
-      if (data.measies && typeof data.measies === 'object')
-        data.measies = JSON.stringify(data.measies)
-      for (const lang of this.config.languages) {
-        const key = `tags${capitalize(lang)}`
-        if (data[key] && Array.isArray(data[key])) data[key] = JSON.stringify(data[key] || [])
-      }
-    }
-
-    return data
-  }
-
-  /*
-   * A helper method to unserialize data, making sure it's fit for sending to the client
-   */
-  Model.unserialize = function (data) {
-    if (this.name === 'curatedSet') {
-      /*
-       * Unserialize from JSON
-       * See https://github.com/prisma/prisma/issues/3786
-       */
-      if (data.measies && typeof data.measies === 'string') data.measies = JSON.parse(data.measies)
-      for (const lang of this.config.languages) {
-        const key = `tags${capitalize(lang)}`
-        if (data[key] && typeof data[key] === 'string') data[key] = JSON.parse(data[key])
-      }
-    }
-
-    return data
-  }
-
-  /*
    * Creates a record based on the model data
    * Used when we create the data ourselves so we know it's safe
    */
   Model.createRecord = async function (data) {
     try {
-      const cloaked = await this.cloak(this.serialize(data))
+      const cloaked = await this.cloak(data)
       this.record = await this.prisma[modelConfig.name].create({ data: cloaked })
     } catch (err) {
       /*
@@ -210,14 +186,12 @@ export function decorateModel(Model, tools, modelConfig) {
    */
   Model.update = async function (data, include = {}) {
     try {
-      const cloaked = await this.cloak(this.serialize(data))
-      this.record = this.unserialize(
-        await this.prisma[modelConfig.name].update({
-          where: { id: this.record.id },
-          include,
-          data: cloaked,
-        })
-      )
+      const cloaked = await this.cloak(data)
+      this.record = await this.prisma[modelConfig.name].update({
+        where: { id: this.record.id },
+        include,
+        data: cloaked,
+      })
     } catch (err) {
       log.warn(err, `Could not update ${modelConfig.name} record`)
       return this.setResponse(500, 'updateUserFailed')

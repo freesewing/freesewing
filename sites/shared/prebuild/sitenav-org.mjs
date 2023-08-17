@@ -54,6 +54,16 @@ export const extendSiteNav = async (siteNav, lang) => {
       s: 'new/set',
       0: 20,
     },
+    showcase: {
+      t: t('newShowcase'),
+      s: 'new/showcase',
+      0: 30,
+    },
+    blog: {
+      t: t('newBlog'),
+      s: 'new/blog',
+      0: 30,
+    },
   }
 
   // Add designs
@@ -95,6 +105,13 @@ export const extendSiteNav = async (siteNav, lang) => {
   siteNav.newsletter.t = t('sections:newsletter')
   siteNav.newsletter._ = 1
   siteNav.newsletter.s = 'newsletter'
+
+  // Add admin but hide it
+  siteNav.admin = {
+    t: t('sections:admin'),
+    _: 1,
+    s: 'admin',
+  }
 
   // Add account
   siteNav.account = {

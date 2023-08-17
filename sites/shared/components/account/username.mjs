@@ -31,8 +31,9 @@ export const UsernameSettings = ({ title = false, welcome = false }) => {
     evt.preventDefault()
     if (evt.target.value !== username) {
       setUsername(evt.target.value)
-      const free = await backend.isUsernameAvailable(evt.target.value)
-      setAvailable(free)
+      const result = await backend.isUsernameAvailable(evt.target.value)
+      if (result?.response?.response?.status === 404) setAvailable(true)
+      else setAvailable(false)
     }
   }
 

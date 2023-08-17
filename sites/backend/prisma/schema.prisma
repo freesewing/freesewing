@@ -47,9 +47,9 @@ model User {
   consent       Int       @default(0)
   control       Int       @default(1)
   createdAt     DateTime  @default(now())
+  data          String
   ehash         String    @unique
   email         String
-  github        String    @default("")
   ihash         String
   img           String?
   initial       String
@@ -127,12 +127,12 @@ model CuratedSet {
   notesFr   String    @default("")
   notesNl   String    @default("")
   notesUk   String    @default("")
-  tagsDe    String    @default("")
-  tagsEn    String    @default("")
-  tagsEs    String    @default("")
-  tagsFr    String    @default("")
-  tagsNl    String    @default("")
-  tagsUk    String    @default("")
+  tagsDe    String    @default("{}")
+  tagsEn    String    @default("{}")
+  tagsEs    String    @default("{}")
+  tagsFr    String    @default("{}")
+  tagsNl    String    @default("{}")
+  tagsUk    String    @default("{}")
   measies   String    @default("{}")
   patterns  Pattern[]
   updatedAt DateTime @updatedAt
