@@ -1,4 +1,3 @@
-import { PageLink } from 'shared/components/page-link.mjs'
 import { Lightbox } from 'shared/components/lightbox.mjs'
 import { ImageWrapper } from 'shared/components/wrappers/img.mjs'
 import { Author } from './author.mjs'
@@ -7,7 +6,7 @@ import { useTranslation } from 'next-i18next'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { cloudflareImageUrl } from 'shared/utils.mjs'
 import Markdown from 'react-markdown'
-import { nsMerge, capitalize } from 'shared/utils.mjs'
+import { nsMerge } from 'shared/utils.mjs'
 import { Tag } from 'shared/components/tag.mjs'
 
 export const ns = nsMerge('common', 'posts', timeagoNs)

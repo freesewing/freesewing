@@ -6,7 +6,6 @@ import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
-import { ns as apikeysNs } from 'shared/components/account/apikeys.mjs'
 import { CreateShowcasePost, ns as createNs } from 'site/components/github/create-showcase.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 

@@ -4,7 +4,6 @@ import { slugify, slugifyNoTrim, cloudflareImageUrl } from 'shared/utils.mjs'
 import { useTranslation } from 'react-i18next'
 import { useEffect, useState, useCallback } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useDropzone } from 'react-dropzone'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { Loading } from 'shared/components/spinner.mjs'
@@ -67,7 +66,6 @@ export const SlugInput = ({ slug, setSlug, title }) => {
 
 export const ImageInput = ({ slug = false, setImg, img, type = 'showcase', subId = false }) => {
   const backend = useBackend()
-  const toast = useToast()
   const { t } = useTranslation(ns)
   const [uploading, setUploading] = useState(false)
   const [url, setUrl] = useState('')

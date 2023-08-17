@@ -29,7 +29,7 @@ export const DesignPicker = ({ designs = [], setDesigns }) => {
         <b>Not featured:</b>
         {collection
           .filter((d) => designs.includes(d) === false)
-          .map((d, i) => (
+          .map((d) => (
             <button
               key={d}
               className="btn btn-sm btn-neutral btn-outline hover:btn-success capitalize"
@@ -41,6 +41,4 @@ export const DesignPicker = ({ designs = [], setDesigns }) => {
       </div>
     </>
   )
-
-  return <p>Design picker here</p>
 }

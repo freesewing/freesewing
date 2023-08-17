@@ -58,9 +58,6 @@ const NewIndexPage = ({ page }) => {
 
   const control = account.control ? account.control : 99
 
-  const boxClasses =
-    'p-8 -ml-4 -mr-4 md:m-0 rounded-none md:rounded-xl md:shadow hover:bg-secondary bg-base-200 hover:text-secondary-content'
-
   return (
     <PageWrapper {...page} title={t('new')}>
       <div className="w-full max-w-xl flex flex-col gap-4">

@@ -1,10 +1,9 @@
 // Dependencies
 import { nsMerge, capitalize, cloudflareImageUrl, yyyymmdd } from 'shared/utils.mjs'
 // Hooks
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useTranslation } from 'next-i18next'
 // Components
 import { Popout } from 'shared/components/popout/index.mjs'
@@ -18,7 +17,6 @@ import {
   IntroInput,
   BodyInput,
 } from './inputs.mjs'
-import { Collapse } from 'shared/components/collapse.mjs'
 import { Tab } from 'shared/components/account/bio.mjs'
 import { CodeBox } from 'shared/components/code-box.mjs'
 import { PostArticle, ns as mdxNs } from 'site/components/mdx/posts/article.mjs'
@@ -28,10 +26,6 @@ import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
 
 export const ns = nsMerge('account', 'posts', authNs, mdxNs)
-
-const Title = ({ children }) => (
-  <h3 className="flex flex-row flex-wrap items-end justify-between">{children}</h3>
-)
 
 const Tip = ({ children }) => <p className="italic opacity-70">{children}</p>
 
@@ -56,22 +50,9 @@ ${body}
 
 `
 
-const Log = ({ log }) =>
-  log[0] ? (
-    <div className="fixed top-28 left-0 w-full z-30">
-      <div
-        className={`w-full max-w-lg m-auto bg-secondary flex flex-row gap-4 p-4 px-4
-        rounded-lg shadow text-secondary-content text-medium bg-opacity-90`}
-      >
-        <Spinner /> {log[1]}
-      </div>
-    </div>
-  ) : null
-
-export const CreateShowcasePost = ({ noTitle = false }) => {
+export const CreateShowcasePost = () => {
   const { account } = useAccount()
   const backend = useBackend()
-  const toast = useToast()
   const { t, i18n } = useTranslation(ns)
   const { loading, setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
@@ -301,7 +282,6 @@ const ShowcaseEditor = ({
   body,
   setBody,
   extraImages,
-  setExtraImages,
   addImage,
   setExtraImg,
   t,
