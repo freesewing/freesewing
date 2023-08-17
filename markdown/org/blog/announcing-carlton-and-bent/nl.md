@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ook jij kan deze jas dragen. De pet moet je ergens anders zoeken. Voorlopig toch."
 date: "2017-12-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/01c201b14f04bedbe2630bb3bd40d925fd6c1ce4-3500x2333.jpg"
 intro: "We presenteren Carlton, ofwel de Sherlock Holmes jas, en de Bent Basisvorm"
 title: "We presenteren Carlton, ofwel de Sherlock Holmes jas, en de Bent Basisvorm"
 ---

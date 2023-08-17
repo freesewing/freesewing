@@ -2,7 +2,6 @@
 maker: "rostique"
 caption: "Ce joli Wahid a été confectionné à partir de coton fleuri"
 date: "01-22-2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/429adcc0d0847351ca6076d941428f67dba6a223-910x1265.jpg"
 intro: "Rostic a fabriqué ce superbe gilet Wahid ! Tu ne voudras pas manquer les photos de détail ci-dessous."
 title: "L'excellent gilet Wahid de Rostic"
 designs:

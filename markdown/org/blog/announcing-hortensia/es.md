@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Un ejemplo de Hortensia realizado por el diseñador"
 date: "2021-02-13"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/01f416518b5bf8fb75dcc8ae3ab2691d5532dd65-2000x1500.jpg"
 intro: "Me complace anunciar la disponibilidad inmediata de nuestro último patrón de FreeSewing: el bolso Hortensia ."
 title: "Saluda a nuestro último patrón: El bolso Hortensia"
 ---

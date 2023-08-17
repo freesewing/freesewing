@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Rob dans un jardin arrière ensoleillé, portant un Wahid ajusté avec une double poitrine et un pantalon Charlie assorti."
 date: "2023-07-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f007d49c1d688a66f6c2a865b9ac1e08654448f6-1080x1350.jpg"
 intro: "Tu plaisantes ? !! Ce duo Charlie et Wahid est tellement suave et sophistiqué que c'en est ridicule. Fabriqué à partir d'une laine shetland verte à chevrons par @sewingdentist sur Instagram, nous le trouvons impeccable. Points bonus pour la modification cool du double boutonnage, que tu peux voir d'encore plus près ci-dessous."
 title: "Charlie vert et costume Wahid"
 designs:

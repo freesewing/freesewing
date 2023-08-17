@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Ein Paar Charlie Chinos an Sorcha"
 date: "2021-05-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/6aa91015d49712d1b56cdb3d6d56d04d372f2fab-2000x1331.jpg"
 intro: "Sorcha posiert in einem Paar Chinos von Charlie."
 title: "Charlie auf Sorcha"
 designs:

@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Der Look ist lässig und zu cool, um in die Kamera zu schauen."
 date: "2017-12-11"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/25779f10f43cc87d9d4e201248b2e1a4f9af9009-1403x1403.jpg"
 intro: "Eine Huey in gestepptem Trikot von Andrew Myles, alias Buster"
 title: "Eine Huey in gestepptem Trikot von Andrew Myles, alias Buster"
 designs:

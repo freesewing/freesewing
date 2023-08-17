@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ваша історія входу в систему за серпень"
 date: "2018-07-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/73ad81c28d5045aeaaebc1e182accac4f93f52eb-1920x1280.jpg"
 intro: "Щомісячний огляд - липень 2018: Французька мова та очікування Сенді"
 title: "Щомісячний огляд - липень 2018: Французька мова та очікування Сенді"
 ---

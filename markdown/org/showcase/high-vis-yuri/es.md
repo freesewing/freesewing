@@ -2,7 +2,6 @@
 maker: "Infernal"
 caption: "Una visión diurna"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3a80879182c63ed3438ee239ed6cb5d2a88d2d4b-1440x1800.jpg"
 intro: "¡No hay palabras suficientes para describir esta sudadera con capucha Yuri del inimitable Hellgy! ¡Llamativo! ¡Vibrante! ¡Discoteca! ¡¡Super divertido!!"
 title: "Sudadera Yuri de alta visibilidad de Hellgy (GIFs de luces parpadeantes en el post)"
 designs:

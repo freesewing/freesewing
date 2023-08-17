@@ -2,7 +2,6 @@
 maker: "quentin"
 caption: "Abrigo Carlita de Quentin"
 date: "2021-09-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b60941609d3b81d53fbbcc4e9657acda7ee0d909-640x631.jpg"
 intro: "El talentoso Quentin confeccionó este elegante y estiloso abrigo Carlita."
 title: "Abrigo Carlita de Quentin"
 designs:

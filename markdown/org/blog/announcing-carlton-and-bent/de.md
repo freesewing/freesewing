@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Auch Sie können diesen Mantel tragen. Was den Hut betrifft, sind Sie auf sich alleine gestellt. Auf jeden Fall bis jetzt."
 date: "20.12.2017"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/01c201b14f04bedbe2630bb3bd40d925fd6c1ce4-3500x2333.jpg"
 intro: "Ankündigung des Carlton-Mantels, auch bekannt als Sherlock Homes Mantel, und des Bent-Grundschnitts"
 title: "Ankündigung des Carlton-Mantels, auch bekannt als Sherlock Homes Mantel, und des Bent-Grundschnitts"
 ---

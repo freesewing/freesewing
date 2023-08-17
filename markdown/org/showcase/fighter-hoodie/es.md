@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Sigvard, el marido de Ana, es entrenador en <a target='_BLANK' href='http://fighter.org/'>, el club local de kick boxing</a>. De ahí el nombre fighter hoodie"
 date: "2017-11-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8f0b0ca919900145250b0af08401775198623eda-1001x1500.jpg"
 intro: "La sudadera con capucha luchadora: Hugo con cremallera"
 title: "La sudadera con capucha luchadora: Hugo con cremallera"
 designs:

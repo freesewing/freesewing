@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "We bedanken onze medewerkers en willen ervoor zorgen dat hun bijdragen de eer krijgen die ze verdienen"
 date: "2021-11-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1488bc5a9940423308a38d2cd33edb86b6eed442-1920x1280.jpg"
 intro: "Tijdens onze laatste contributor call hebben we besloten om de All Contributors specificatie te implementeren als een manier om al onze contribuanten te eren."
 title: "Oproep aan alle medewerkers"
 ---

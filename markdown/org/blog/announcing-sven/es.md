@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Un Sven hecho para la oficina. Como, un poco aburrido"
 date: "2017-07-09"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b0c9b0cb38bce095739109946a99b6cda63e7cd9-1000x667.jpg"
 intro: "El invierno me llevó a diseñar este patrón. Tenía frío y necesitaba unos jerseys, así que ¿qué hace uno?"
 title: "Anunciamos el Suéter Sven; Un suéter básico basado en el bloque de cuerpo Brian"
 ---

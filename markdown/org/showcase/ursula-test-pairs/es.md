@@ -2,7 +2,6 @@
 maker: "Natalia Sayang"
 caption: "Algunas de las primeras versiones de Úrsula"
 date: "2021-06-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b266a22f7783201dc4c7f508d316dec1b9d70d8-1000x600.jpg"
 intro: "Ursula es un patrón básico de calzoncillos muy personalizable. Aquí tienes algunas de las primeras versiones en las que se probaban distintas combinaciones de opciones, que pueden resultarte útiles para diseñar tus propios pares."
 title: "Primeras pruebas de Úrsula"
 designs:

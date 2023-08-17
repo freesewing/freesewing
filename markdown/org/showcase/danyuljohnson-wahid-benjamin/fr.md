@@ -2,7 +2,6 @@
 maker: "danyuljohnson"
 caption: "Tenue pour le mariage à thème blanc de leur bestie feat. Wahid et Benjamin"
 date: "2021-09-17"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4955518c8ca48f1f7f653855d7250c1c65ed8998-3456x4608.jpg"
 intro: "Nous sommes amoureux de cette magnifique tenue aux motifs Wahid et Benjamin ! Le fabricant a déclaré :"
 title: "Le brillant Wahid et Benjamin de danyuljohnson"
 designs:

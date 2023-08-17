@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Een beetje koud misschien, maar zwembroeken: die hebben we"
 date: "2021-10-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3a69586735a24a674d4e65971643b3b55c676fc3-1000x667.png"
 intro: "Je favoriete personage uitbeelden kan een heel leuke Halloween-ervaring zijn! Hier zijn een paar iconische personages om je te inspireren."
 title: "10 cosplays die je kunt maken van FreeSewing patronen om in Halloween stemming te komen"
 ---

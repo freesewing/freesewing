@@ -2,7 +2,6 @@
 maker: "Галле."
 caption: "Модний привіт"
 date: "2023-05-03"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1588a0150f861ff0d2c5f28501541a50bd949d6e-3436x2508.jpg"
 intro: "Кольорова гама, вишиті очі та крихітні зубки - ось деякі деталі цього міні-привітання."
 title: "Міні-привіт з вишитими очима"
 designs:

@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Als jouw partner Snook heette zou je hem ook zo noemen."
 date: "2017-11-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/adbe9f0fb465866669913ed393d77c0ae48a59f7-2000x2667.jpg"
 intro: "Een Simon hemd van Kris voor haar Snook"
 title: "Een Simon hemd van Kris voor haar Snook"
 designs:

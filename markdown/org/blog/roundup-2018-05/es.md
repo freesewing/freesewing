@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Tu fondo de conexión para junio"
 date: "2018-05-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/63d370c4ad7447d762f2ed053279bc3f11c7583d-1920x1080.jpg"
 intro: "Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene."
 title: "Resumen mensual - Mayo de 2018: Llega la era post-GDPR"
 ---

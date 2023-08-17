@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Rob in een zonnige achtertuin, met een aangepaste Wahid met dubbele borst en bijpassende Charlie broek."
 date: "2023-07-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f007d49c1d688a66f6c2a865b9ac1e08654448f6-1080x1350.jpg"
 intro: "Maak je een grapje? Dit duo Charlie en Wahid is zo hoffelijk en verfijnd dat het belachelijk is. Gemaakt van groene visgraat shetlandwol door @sewingdentist op Instagram, wij vinden het onberispelijk. Bonuspunten voor de coole double-breasted modificatie, die je hieronder nog beter kunt zien."
 title: "Green Charlie en Wahid Suit"
 designs:

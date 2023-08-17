@@ -2,7 +2,6 @@
 maker: "Аннеке Карамин"
 caption: "Аннеке розгойдує свій новий Huey, цього разу чорного кольору."
 date: "2020-10-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4e6d5a2fdf43b6904230f7ef7594bbcd41dd8759-640x640.jpg"
 intro: "Чорний Г'юї від Аннеке"
 title: "Чорний Г'юї від Аннеке"
 designs:

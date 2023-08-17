@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Tu nuevo fondo de inicio de sesión para el mes de marzo"
 date: "2018-02-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8e0079e2521a2bf71545d736a2549180902c0d50-1980x1311.jpg"
 intro: "Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene."
 title: "Resumen mensual - Febrero de 2018: Núcleo 1.7.0 con mejoras de Sven, Carlton y Carlita. Más GDRP, vim y Jaeger"
 ---

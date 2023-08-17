@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Paco über meine Wenigkeit"
 date: "10.08.2020"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1bc82d4abb50ea1b7bda32dd64521e9ecfdd8467-2048x1536.jpg"
 intro: "Darf ich vorstellen: Paco: Unser neues Unisex-Muster für stylische Sommerhosen"
 title: "Darf ich vorstellen: Paco: Unser neues Unisex-Muster für stylische Sommerhosen"
 ---

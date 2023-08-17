@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Een testpaar Ursula's"
 date: "2021-07-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/6fea2e8526bf8979b538c14a940c3723337aa5ca-800x564.jpg"
 intro: "Een vrolijk onderbroekje van Ursula"
 title: "Een vrolijk onderbroekje van Ursula"
 designs:

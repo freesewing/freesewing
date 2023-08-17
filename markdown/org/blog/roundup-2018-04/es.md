@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Tu fondo de conexión para mayo"
 date: "2018-04-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/992689c621b6b83a80706620ae5cd92262dcf4bd-1920x1273.jpg"
 intro: "Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene."
 title: "Resumen mensual - Abril de 2018: La calma antes de la tormenta"
 ---

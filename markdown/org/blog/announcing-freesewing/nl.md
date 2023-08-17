@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Het FreeSewing-logo"
 date: "2017-03-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4e1f5426ee6578ef31d9c18a1de9b4beef15836b-2000x1125.jpg"
 intro: "Met trots kondig ik freesewing core v1.0.0 aan en de bijbehorende documentatie die het freesewing project in detail beschrijft."
 title: "Welkom op FreeSewing, een open-sourceplatform voor naaipatronen op maat"
 ---

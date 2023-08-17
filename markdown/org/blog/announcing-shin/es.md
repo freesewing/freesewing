@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "¿Supongo que esto es lo que parece la realidad aumentada?"
 date: "2018-09-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b471275001689bd4819d6d95aabc8134788dc612-1694x1129.jpg"
 intro: "Hace un tiempo me vi en la necesidad de comprarme un bañador nuevo. Así que elaboré un patrón e hice algunas:"
 title: "Anunciamos Shin, un patrón de bañador"
 ---

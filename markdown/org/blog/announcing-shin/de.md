@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ich schätze, so sieht Augmented Reality aus?"
 date: "2018-09-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b471275001689bd4819d6d95aabc8134788dc612-1694x1129.jpg"
 intro: "Vor einer Weile stellte ich fest, dass ich Badehosen benötige. Also habe ich ein Schnittmuster gezeichnet und hab mir welche genäht:"
 title: "Ankündigung von Shin, einem Badehosenschnitt"
 ---

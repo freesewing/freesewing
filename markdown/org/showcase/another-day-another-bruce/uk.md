@@ -2,7 +2,6 @@
 maker: "Вільям"
 caption: "Брюс з цікавої еластичної тканини"
 date: "2022-06-09"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9f347c949c2fb673ed7dda8ebfd93cc559165dd4-800x600.jpg"
 intro: "Ці труси-боксери Bruce від Вільяма. Не пропустіть його першу версію, також на виставці FreeSewing."
 title: "Ще один день, ще один Брюс"
 designs:

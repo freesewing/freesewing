@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Die bisher kleinste Paco-Hose"
 date: "03.05.2023"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/449c7034767dc8d1ca040c17c65c6c4a7043c5a6-3024x4032.jpg"
 intro: "Diese Paco-Hose wird von einem 6 Monate alten Baby vorgeführt!"
 title: "Baby Paco Hose"
 designs:

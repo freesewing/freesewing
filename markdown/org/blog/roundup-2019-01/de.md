@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Dein Login-Hintergrund für Februar"
 date: "31.01.2019"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/26bf3d41513702ad361b5a0f15dcff2350cc852b-1920x1440.jpg"
 intro: "Ist es wirklich schon Ende Januar? Schon?"
 title: "Monatliches Roundup - Januar 2019: Das große Beta-Update"
 ---

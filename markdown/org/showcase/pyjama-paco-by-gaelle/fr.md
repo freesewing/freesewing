@@ -2,7 +2,6 @@
 maker: "Gaëlle"
 caption: "Pantalon de pyjama"
 date: "12-11-2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e50d381e33f15e62a2b828497f03e3c5a8f6ca1f-1950x3432.jpg"
 intro: "Voici un pyjama Paco de Gaëlle, sans poches ni poignets élastiques."
 title: "Pyjama Paco by Gaëlle"
 designs:

@@ -2,7 +2,6 @@
 maker: "quentin"
 caption: "Quentin's Carlita jas"
 date: "2021-09-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b60941609d3b81d53fbbcc4e9657acda7ee0d909-640x631.jpg"
 intro: "De getalenteerde Quentin maakte deze strakke en stijlvolle Carlita jas."
 title: "Quentin's Carlita jas"
 designs:

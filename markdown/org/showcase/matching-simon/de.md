@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Liegt es an mir, oder überfordert das wirklich die Niedlichkeitssensoren?"
 date: "05.02.2018"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0d0673d758bb9ec6f60c01db5dba00a0d3fea7ee-1080x1080.jpg"
 intro: "Passende Simon-Shirts für diese beiden Süßen"
 title: "Passende Simon-Shirts für diese beiden Süßen"
 designs:

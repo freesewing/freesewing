@@ -2,7 +2,6 @@
 maker: "Natalia Sayang"
 caption: "¿Sabías que la \"A\" de camiseta A se refiere a la forma triangular de la prenda?"
 date: "2021-07-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/60945201919c87d88076815366d03f42beae4235-600x800.jpg"
 intro: "Esta camiseta sin mangas Aaron fue confeccionada por Nat, que compartió:"
 title: "Aarón Floral"
 designs:

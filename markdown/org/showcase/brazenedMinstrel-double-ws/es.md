@@ -2,7 +2,6 @@
 maker: "brazenedMinstrel"
 caption: "Waralees morados suaves con accesorios de cinturón"
 date: "2022-08-02"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a84d68b97703ef21571520ca6fa8b4b6d3b0df53-1512x2016.jpg"
 intro: "brazenedMinstrel ha realizado recientemente dos preciosos diseños de Freesewing: el primero es este par de Waralees morados de tela suave accesorizados con un cinturón de tela negra encontrado en la calle y otro de colores comprado en un mercadillo."
 title: "Waralees y Wahid por brazenedMinstrel"
 designs:

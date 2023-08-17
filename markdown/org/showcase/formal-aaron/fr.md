@@ -2,7 +2,6 @@
 maker: "TangerineShark"
 caption: "TangerineShark dans un Aaron formel, un pantalon jaune audacieux et l'accessoire le plus sexy de tous, un respirateur."
 date: "2023-01-14"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/86fd2445332cdc1519d2e85e68db7023118643ff-1852x2704.jpg"
 intro: "Un Aaron formel, pour les fêtes"
 title: "Un Aaron formel, pour les fêtes"
 designs:

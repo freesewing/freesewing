@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Dein neuer Login-Hintergrund für den Monat März"
 date: "28.02.2018"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8e0079e2521a2bf71545d736a2549180902c0d50-1980x1311.jpg"
 intro: "Dies ist dein monatlicher Überblick über die Freesewing-Nachrichten der letzten vier Wochen und ein Ausblick auf das, was im nächsten Monat ansteht."
 title: "Monatliches Roundup - Februar 2018: Core 1.7.0 mit Verbesserungen von Sven, Carlton und Carlita. Plus GDRP, vim und Jaeger"
 ---

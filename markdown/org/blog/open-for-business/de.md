@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ab jetzt 24/7 geöffnet"
 date: "2017-08-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/444b63db2120d50eb52004b2017c992624bbb66e-2000x1333.jpg"
 intro: "Freesewing.org ist für den Betrieb geöffnet. Das heißt, das Geschäft mit dem Verschenken von kostenlosen Nähmustern"
 title: "Freesewing.org ist für den Betrieb geöffnet. Das heißt, das Geschäft mit dem Verschenken von kostenlosen Nähmustern"
 ---

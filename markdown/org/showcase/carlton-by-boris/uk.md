@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Борис у своєму неймовірному пальто Carlton"
 date: "2023-02-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8d7e149722688b531c2cfbeaac82de4e6730f156-2252x4000.jpg"
 intro: "Я навіть не знаю, з чого почати. Ви тільки подивіться на це пальто. Це неймовірно."
 title: "Класичний Карлтон від Бориса"
 designs:

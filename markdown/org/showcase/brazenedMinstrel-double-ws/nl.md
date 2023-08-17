@@ -2,7 +2,6 @@
 maker: "brazenedMinstrel"
 caption: "Zachtpaarse Waralees met riemaccessoires"
 date: "2022-08-02"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a84d68b97703ef21571520ca6fa8b4b6d3b0df53-1512x2016.jpg"
 intro: "BrazenedMinstrel heeft onlangs twee mooie Freesewing ontwerpen gemaakt: het eerste is dit paar paarse Waralees van zachte stof met als accessoire een zwarte stoffen riem die je op straat hebt gevonden en een kleurrijke riem die je op een rommelmarkt hebt gekocht."
 title: "Waralees en Wahid door brazenedMinstrel"
 designs:

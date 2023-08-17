@@ -2,7 +2,6 @@
 maker: "unbekannt"
 caption: "Also. Viel. Stil."
 date: "10.08.2020"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/be12610ca753f520a5ddebc6f034358551d9939c-1080x1349.jpg"
 intro: "Nach seinem ersten Kinnhaken ist Wahid Adam mit einer weiteren Schönheit zurück."
 title: "Eine weitere Wahid-Weste von Adam"
 designs:

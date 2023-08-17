@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Dessin de @racerxmachina, Sandy !"
 date: "2021-10-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/37c6f1c78ac0bfb539ea2b11ff32f104c34a0d6d-1666x1111.jpg"
 intro: "Tu as peut-être déjà une idée de ce que tu veux faire pour Halloween. Ou peut-être que tu n'en as aucune idée. Quoi qu'il en soit, voici quelques sources d'inspiration pour te lancer."
 title: "Prépare ton Halloween avec ces idées de déguisements inspirantes."
 ---

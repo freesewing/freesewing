@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Un merveilleux Florent"
 date: "12-06-2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/563d67dbd2f2985e438331c0ce884239cbace2ad-1536x2048.jpg"
 intro: "Quelle belle réutilisation du tissu pour en faire un adorable bonnet Florent. Alexandre a dit :"
 title: "Casquette plate Florent par Alexandre"
 designs:

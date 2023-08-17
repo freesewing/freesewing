@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Paars, gebloemd, heerlijk Wahid gilet"
 date: "2020-11-27"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4aa2526bd8de543f32ed5f9470e1728d876aa568-750x750.jpg"
 intro: "Kaena heeft voor haar man een Wahid-gilet gemaakt voor op een bruiloft, en we vinden het geweldig!"
 title: "Paars Wahid door Kaena"
 designs:

@@ -2,7 +2,6 @@
 maker: "brazenedMinstrel"
 caption: "Weiche lila Waralees mit Gürtelzubehör"
 date: "02.08.2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/a84d68b97703ef21571520ca6fa8b4b6d3b0df53-1512x2016.jpg"
 intro: "brazenedMinstrel hat in letzter Zeit zwei schöne Freesewing-Entwürfe gemacht: Das erste ist dieses Paar lila Waralees aus weichem Stoff, das mit einem schwarzen Stoffgürtel, den ich auf der Straße gefunden habe, und einem bunten Gürtel, den ich auf einem Flohmarkt gekauft habe, verziert ist."
 title: "Waralees und Wahid von brazenedMinstrel"
 designs:

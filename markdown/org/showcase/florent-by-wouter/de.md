@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "Für ein Toilettentuch ist es wirklich gut geworden"
 date: "2017-12-11"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/f3126799846dc9ea9aecb423e7283bb715db93b4-3724x2785.jpg"
 intro: "Ein Test von Florent, um zu sehen, ob das Muster auch bei anderen funktioniert, von Wouter.vdub"
 title: "Ein Test von Florent, um zu sehen, ob das Muster auch bei anderen funktioniert, von Wouter.vdub"
 designs:

@@ -2,7 +2,6 @@
 maker: "Посилання147"
 caption: "Зверніть увагу на кишені, які вже використовуються"
 date: "2022-06-09"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c3b9f7af9fa40fc49874c9f772992272dfb5fa18-900x1200.jpg"
 intro: "Нам подобається цей досить художній знімок Альберта від Links147."
 title: "Фартух Альберта від Links147"
 designs:

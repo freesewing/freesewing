@@ -2,7 +2,6 @@
 maker: "невідомо"
 caption: "Невеличке робоче пальто"
 date: "2022-02-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/adfb8bb22c40946d7abf48f5362afd4e74c87a39-1512x2016.jpg"
 intro: "Bob3000 зробив цей дуже милий халат для своєї дитини. В його основі лежить блок Брайана."
 title: "Робоче пальто ручної роботи Bob3000 за мотивами Брайана"
 designs:

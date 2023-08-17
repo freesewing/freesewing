@@ -2,7 +2,6 @@
 maker: "danyuljohnson"
 caption: "Outfit voor de witte bruiloft van hun beste vriendin. Wahid en Benjamin"
 date: "2021-09-17"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4955518c8ca48f1f7f653855d7250c1c65ed8998-3456x4608.jpg"
 intro: "We zijn verliefd op deze prachtige outfit met de patronen Wahid en Benjamin! De maker zei:"
 title: "danyuljohnson's briljante Wahid en Benjamin"
 designs:

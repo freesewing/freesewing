@@ -2,7 +2,6 @@
 maker: "MagicantAce"
 caption: "Simone getragen von einer Puppe"
 date: "19.12.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c5447dcf8ea9ef12068b9056441ac7115ab34fa2-2000x3000.jpg"
 intro: "MagicantAce hat diese tollen Fotos von Simone geteilt, die von einer Puppe getragen wird. Er sagte, dass er von der Anleitung abgewichen ist, um das zu machen, was für ihn am besten funktioniert hat, und dass das süße, abgesteppte Herz (eine spontane Ergänzung!) mit der Maschine genäht wurde."
 title: "Eine Puppenversion von Simone"
 designs:

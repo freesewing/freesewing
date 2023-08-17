@@ -2,7 +2,6 @@
 maker: "Natalia Sayang"
 caption: "Wist je dat de \"A\" in A-shirt verwijst naar de driehoekige vorm van het kledingstuk?"
 date: "2021-07-29"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/60945201919c87d88076815366d03f42beae4235-600x800.jpg"
 intro: "Deze Aaron tanktop is gemaakt door Nat, die deelde:"
 title: "Bloemen Aaron"
 designs:

@@ -2,7 +2,6 @@
 maker: "Natalia Sayang"
 caption: "Quelques premières versions d'Ursula"
 date: "2021-06-26"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b266a22f7783201dc4c7f508d316dec1b9d70d8-1000x600.jpg"
 intro: "Ursula est un modèle de sous-vêtements basique et hautement personnalisable. Voici quelques unes des premières versions testant différentes combinaisons d'options, qui pourront t'être utiles pour concevoir tes propres paires."
 title: "Premiers tests d'Ursula"
 designs:

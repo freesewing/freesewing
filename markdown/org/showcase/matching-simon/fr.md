@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Est-ce moi, ou est-ce que ça fait sérieusement grimper les capteurs de mignonitude ?"
 date: "2018-02-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0d0673d758bb9ec6f60c01db5dba00a0d3fea7ee-1080x1080.jpg"
 intro: "Chemises Simon assorties pour ces deux beaux-gosses"
 title: "Chemises Simon assorties pour ces deux beaux-gosses"
 designs:

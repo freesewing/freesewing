@@ -2,7 +2,6 @@
 maker: "comixminx"
 caption: "Een rood met grijze Hugo met cartoonkattengezichtjes over het hele lichaam"
 date: "2023-01-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3d055bcd5e642895d26d5aa100542355ab693a7d-3024x4032.jpg"
 intro: "Nog een geweldige FreeSewing-make van comixminx, die een geweldige manier laat zien om een passende uitdaging op te lossen. Deze Hugo hoodie op kindermaat (zonder capuchon) bleek een beetje extra lastig omdat de verhoudingen niet helemaal uitkwamen zoals verwacht. Dus maakte ze halverwege het naaien een paar aanpassingen (zoals het toevoegen van een mouwinzet omdat de mouwen erg smal werden en moeilijk in te naaien waren)."
 title: "Hugo is beter met katten"
 designs:

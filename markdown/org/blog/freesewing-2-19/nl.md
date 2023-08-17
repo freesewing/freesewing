@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Zoals geschiedenis? Dan is deze release echt iets voor jou."
 date: "2021-10-17"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/af326b5b6326911272ed989947e8cafe22966019-1920x1280.jpg"
 intro: "Ik heb zojuist de hendel overgehaald voor het uitbrengen van versie 2.19 van FreeSewing en er is een hoop in deze release gaan zitten. Voor alle details kun je de changelog bekijken, hier beperk ik me tot de hoogtepunten:"
 title: "FreeSewing 2.19 brengt Bee, Lunetius, Tiberius, Walburga, een nieuwe plugin en een heleboel verbeteringen en fixes"
 ---

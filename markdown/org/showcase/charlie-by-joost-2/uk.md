@@ -2,7 +2,6 @@
 maker: "Юст де Кок"
 caption: "Моар Чарлі."
 date: "2021-05-23"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/20ccf81fc098beaab92cbb48ee1a37b9f6a011c9-600x800.jpg"
 intro: "Joost створив ще одну чудову пару чіносів Charlie Chinos з цієї тканини кольору засмаги."
 title: "Ще один Чарлі від Joost"
 ---

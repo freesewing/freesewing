@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Le plus petit Hi jamais fabriqué"
 date: "2023-01-28"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7ace48e9ec4946165fbc3d485ecafa1db25e82a4-2268x4032.jpg"
 intro: "Oh mon dieu, une question a été posée dans le Discord de FreeSewing pour savoir jusqu'à quel point tu pouvais te permettre de faire un requin Hi, et Calgeka a relevé le défi ! Ce Hi mesure à peine 5 centimètres de long, soit à peu près la taille d'une marionnette de doigt. Nous sommes amoureux."
 title: "microHi"
 designs:

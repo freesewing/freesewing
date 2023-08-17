@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Je inlogachtergrond voor november"
 date: "2018-11-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5be11786eaed9bba641fa66b812a3fc9f68aed1d-1920x1410.jpg"
 intro: "Maandelijkse samenvatting - oktober 2018: Vooruitgang op beta.freesewing.org"
 title: "Maandelijkse samenvatting - oktober 2018: Vooruitgang op beta.freesewing.org"
 ---

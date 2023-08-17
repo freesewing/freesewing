@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Skalen, wie funktionieren sie?"
 date: "2018-01-04"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d09252be53d33ab5b743c22f523a9ea8cbd70708-2000x1328.jpg"
 intro: "Freenewing Core v1.3.0 ist verfügbar; Kommt mit Korrekturen, die so gut sind, dass wir sie zu all Ihren Entwürfen zurückportiert haben"
 title: "Freenewing Core v1.3.0 ist verfügbar; Kommt mit Korrekturen, die so gut sind, dass wir sie zu all Ihren Entwürfen zurückportiert haben"
 ---

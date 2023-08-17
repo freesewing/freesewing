@@ -2,7 +2,6 @@
 maker: "comixminx"
 caption: "Ein rot-grauer Hugo mit Cartoon-Katzengesichtern am ganzen Körper"
 date: "2023-01-16"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3d055bcd5e642895d26d5aa100542355ab693a7d-3024x4032.jpg"
 intro: "Ein weiterer toller FreeSewing-Beitrag von comixminx, der eine tolle Lösung für eine passende Herausforderung zeigt. Dieser Hugo-Kapuzenpulli in Kindergröße (abzüglich der Kapuze) war etwas knifflig, weil die Proportionen nicht ganz so aussahen wie erwartet. Also nahm sie während des Nähens ein paar Anpassungen vor (z. B. fügte sie einen Ärmelzwickel hinzu, weil die Ärmel sehr eng waren und man nur schwer hineinkam)."
 title: "Hugo ist besser mit Katzen"
 designs:

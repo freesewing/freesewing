@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Diese Version ist wirklich eine grundlegende Veränderung"
 date: "2019-08-25"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5b31cfbe3a85cee5519e12afe767ca3249588463-2000x1126.jpg"
 intro: "Ankündigung von der Version 2 von FreeSewing, der Opensourceplattform für Schnittmuster auf Mass."
 title: "Ankündigung von FreeSewing v2.0"
 ---

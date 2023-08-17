@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Foto von Flo Dahm von Pexels"
 date: "2021-04-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9e1cca6b6de79fadbd5201bad3b9b71375a53464-1920x1442.jpg"
 intro: "Wir haben gerade FreeSewing v2.15 veröffentlicht und es kommt mit einem neuen Schnittmuster: Das Hosenmuster Charlie Chinos."
 title: "Charlie Chinos: Wer will ein paar neue Hosen?"
 ---

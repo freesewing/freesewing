@@ -2,7 +2,6 @@
 maker: "Xhex"
 caption: "Cuanto más te acercas, más se enfría este bolsillo"
 date: "2023-04-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/80b67633d4d42db34a8fa4a2c8550f45e3c64a40-1153x863.png"
 intro: "¿Mirarías este bolsillo de Lucy que hizo Xhex? ¡Es increíble!"
 title: "Bolsillo Lucy bordado de Xhex"
 designs:

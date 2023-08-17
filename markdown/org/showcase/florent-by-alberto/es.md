@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Una gorra plana Florent con colores divididos"
 date: "2021-07-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3ab177bc5188e064b938970a2a84e91f8b9dfa72-977x1191.jpg"
 intro: "Esta gorra plana de doble color fue realizada por Alberto G. S., ¡quien dice que el secreto de la división del color es utilizar los puntos existentes en el patrón! Estamos muy impresionados con esta versión de moda de Florent."
 title: "Gorra plana bicolor de Alberto"
 designs:

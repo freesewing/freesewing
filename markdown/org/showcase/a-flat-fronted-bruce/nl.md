@@ -2,7 +2,6 @@
 maker: "starf"
 caption: "Een commentator in Discord zei dat deze foto op een bed lijkt... graag gedaan"
 date: "2021-12-19"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/35c073767eaf563d5550012e4ca217c8efd80a44-5184x3888.jpg"
 intro: "Starf maakte deze geweldige Bruce-versie met de bolling ingesteld op 0%!"
 title: "Een Bruce met platte voorkant"
 designs:

@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Quentin entouré de nos futurs maîtres robots."
 date: "2017-12-06"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ee5c11e3b29fe788dae470ab0e20396d806c4d1b-2000x1333.jpg"
 intro: "Le patron du bonnet plat Florent est maintenant disponible en version bêta. C'est un autre cadeau trié."
 title: "Le patron du bonnet plat Florent est maintenant disponible en version bêta. C'est un autre cadeau trié."
 ---

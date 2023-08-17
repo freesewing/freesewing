@@ -2,7 +2,6 @@
 maker: "Natalia Sayang"
 caption: "Einige frühe Versionen von Ursula"
 date: "26.06.2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b266a22f7783201dc4c7f508d316dec1b9d70d8-1000x600.jpg"
 intro: "Ursula ist ein einfaches, hochgradig anpassbares Unterhosenmuster. Hier sind einige frühe Versionen, in denen verschiedene Kombinationen von Optionen getestet wurden, die dir bei der Entwicklung deiner eigenen Paare nützlich sein könnten."
 title: "Frühe Tests von Ursula"
 designs:

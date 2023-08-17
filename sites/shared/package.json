@@ -54,7 +54,7 @@
     "remark-smartypants": "2.0.0",
     "sharp": "0.32.4",
     "svg-to-pdfkit": "https://git@github.com/eriese/SVG-to-PDFKit",
-    "tlds": "1.240.0",
+    "tlds": "1.242.0",
     "to-vfile": "8.0.0",
     "unist-util-visit": "5.0.0",
     "use-persisted-state": "0.3.3",

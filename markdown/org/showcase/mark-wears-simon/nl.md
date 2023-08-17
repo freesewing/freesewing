@@ -2,7 +2,6 @@
 maker: "onbekend"
 caption: "Goeie das ook"
 date: "2017-08-20"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8889aa644473d0615584ea0b69a570f95c69c1f9-1080x1080.jpg"
 intro: "Mark draagt een Simon hemd, gemaakt door zijn vrouw"
 title: "Mark draagt een Simon hemd, gemaakt door zijn vrouw"
 designs:

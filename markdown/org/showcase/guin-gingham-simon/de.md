@@ -2,7 +2,6 @@
 maker: "Guin"
 caption: "Guin zeigt die Laternenärmel an seinem neuen Simon"
 date: "2023-01-27"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/e6cfdb44c2e93177fb62883269c953a0dafe0f46-1575x2100.jpg"
 intro: "Guin hat diesen tollen Simon abgeändert, indem sie ihm lustige Laternenärmel in einer Kontrastfarbe verpasst hat, die definitiv nichts damit zu tun hat, dass die marinefarbenen Gingham-Karos ausgegangen sind. Aber Ende gut, alles gut - sein Hemd ist fantastisch geworden. Außerdem gefällt mir die Art und Weise, wie die Streifen auf der Vorderseite aufeinander abgestimmt sind."
 title: "Guin's Gingham Laterne Simon"
 designs:

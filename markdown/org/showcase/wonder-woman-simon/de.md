@@ -2,7 +2,6 @@
 maker: "RedBlaqueGolden"
 caption: "In diesem Set gibt es einige wirklich gute Posen."
 date: "05.02.2018"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/5084bf9ead668c3ddd3a8ff4fd9a9ea4866d3d1a-1080x1080.jpg"
 intro: ""
 title: "Eine Wunderfrau simon von JV"
 designs:

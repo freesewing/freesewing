@@ -2,7 +2,6 @@
 maker: "Gaëlle"
 caption: "L'ami de Gaëlle dans son nouveau sweat à capuche Hugo"
 date: "02-15-2023"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7c510d7ee01cef0b2b4df46e02d0fc052ade3579-1694x3323.jpg"
 intro: "Gaëlle a réalisé ce Hugo recouvert de joyeux petits ...enfin je ne sais pas trop comment appeler ces petits monstres gribouillés, mais ils sont clairement géniaux. C'est pour une amie, et nous serions ravies de recevoir quelque chose d'aussi fabuleux.  Regarde ces superbes côtes rayées coordonnées."
 title: "Hugo par Gaëlle"
 designs:

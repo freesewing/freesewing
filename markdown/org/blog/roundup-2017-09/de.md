@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Dein neuer Login-Hintergrund für den Monat Oktober"
 date: "2017-09-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/c6418b621228730525d835acff53c4cd6895a865-2000x1250.jpg"
 intro: "Dies ist dein monatlicher Überblick über die Freesewing-Nachrichten der letzten vier Wochen und ein Ausblick auf das, was im nächsten Monat ansteht."
 title: "Monatliche Zusammenfassung - September 2017: Simon-Komplikationen, E-Mail-Probleme und Spenden sind dieses Jahr gestiegen."
 ---

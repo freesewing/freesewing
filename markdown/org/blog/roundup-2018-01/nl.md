@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Je nieuwe inlogachtergrond voor de maand februari"
 date: "2018-01-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/6fbc797ad0b3d50a8337bd2cb8401f04f63bffdd-2000x1125.jpg"
 intro: "Dit is je maandelijkse samenvatting van het freeswing-nieuws van de afgelopen vier weken en een blik op wat er de komende maand in het verschiet ligt."
 title: "Maandelijkse roundup - januari 2018: Inkscape DPI, versiebewustzijn, Bail en Carlita"
 ---

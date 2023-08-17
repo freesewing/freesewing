@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Si tu l'aimes, mets-y un nœud"
 date: "2017-11-14"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b04db622ddf3bff6e2d66a5305903a0e96edd58-2000x1333.jpg"
 intro: "Notre famille de patrons de couture libre s'est encore agrandie, et le benjamin de la famille est... Benjamin ."
 title: "Le patron du noeud papillon Benjamin est maintenant disponible en version bêta. Et je n'ai rien eu à faire."
 ---

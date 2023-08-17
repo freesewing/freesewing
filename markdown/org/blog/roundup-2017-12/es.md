@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Tu nuevo fondo de inicio de sesión para el mes de enero"
 date: "2017-12-31"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/7203a0f33c8c3d1cd6abdbca5c0fd85f44db3893-2000x1330.jpg"
 intro: "Este es tu resumen mensual de las noticias de libre circulación de las últimas cuatro semanas, y una mirada a lo que nos espera el mes que viene."
 title: "Resumen mensual - Diciembre de 2017: Patronos, Bent, Carlton, Florent y el inminente problema de Inkscape"
 ---

@@ -2,7 +2,6 @@
 maker: "Wouter.vdub"
 caption: "Il s'agit de la variante pieuvre, présentée avec l'Octoplushy original et le Hi"
 date: "09-03-2022"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/862b0a096d69cfcee0b54347f4cff56dc8f4da73-3024x4032.jpg"
 intro: "La variante \"pieuvre\" de l'Octoplushy"
 title: "La variante \"pieuvre\" de l'Octoplushy"
 designs:

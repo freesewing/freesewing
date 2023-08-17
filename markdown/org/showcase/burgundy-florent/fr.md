@@ -2,7 +2,6 @@
 maker: "Jasmin"
 caption: "Bourgogne Florent assis sur une table"
 date: "2023-01-18"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/b6d500a7209cb572fd1f90bb6648a8c7c8179316-599x449.jpg"
 intro: "Je voulais vraiment appeler ça un béret framboise, mais c'est vraiment plus un Florent bordeaux. Jasmine, afficionado de FreeSewing, a créé ce bonnet exquis pour sa belle-mère, après en avoir fait un pour elle-même et son père. Le Florent sera-t-il aussi populaire dans ta famille ? Il n'y a qu'une seule façon de le savoir !"
 title: "Bourgogne Florent"
 designs:

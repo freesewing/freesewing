@@ -2,7 +2,6 @@
 maker: "ogredandy"
 caption: "primera versión de la camiseta Simon de ogredandy"
 date: "2022-06-27"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ff69ac38207451d43e6483b3a2c3ed6f8f895b2a-2343x3124.jpg"
 intro: "Aunque ogredandy mencionó que aún estaba trabajando en el ajuste de la camiseta Simon, la comunidad FreeSewing disfrutó viendo esta versión. La gente en Discordia compartió elogios y sugerencias para ajustar el ajuste, sobre todo la tela en la parte delantera de los brazos."
 title: "Un Simón guapo por ogredandy"
 designs:

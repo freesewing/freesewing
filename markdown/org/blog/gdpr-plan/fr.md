@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Cette image est probablement la seule chose dans le article que vous pourrez parcourir en diagonale"
 date: "2018-02-14"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/39f3d1e7320510b2dd12cc1bc2e58008263889f3-1920x1280.webp"
 intro: "Le Règlement Général sur la Protection des Données de l'Union Européenne: Notre plan de bataille."
 title: "Le Règlement Général sur la Protection des Données de l'Union Européenne: Notre plan de bataille."
 ---

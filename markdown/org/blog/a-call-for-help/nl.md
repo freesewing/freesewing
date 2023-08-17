@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Opmerking: deze post is best lang. Maar bijlange niet zo lang als dit boek"
 date: "2020-08-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/1a143c96b4afc8c12d2014c5605bfd1e63d917d0-2000x1348.jpg"
 intro: "Help me om FreeSewing groter te laten worden dan wat ik zelf kan doen"
 title: "Help me om FreeSewing groter te laten worden dan wat ik zelf kan doen"
 ---

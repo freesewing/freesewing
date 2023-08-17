@@ -2,7 +2,6 @@
 maker: "TangerineShark"
 caption: "TangerineShark dans une robe Aaron modifiée"
 date: "2023-01-05"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/60bf0ea6d52c09618ecd7a59293faaf48da014b0-3024x4032.jpg"
 intro: "Hé ! TangerineShark, utilisatrice de FreeSewing, est ici ! J'ai modifié ce Aaron A-shirt en le rallongeant pour en faire une robe."
 title: "Aaron modifié en robe"
 designs:

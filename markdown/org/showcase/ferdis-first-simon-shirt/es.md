@@ -2,7 +2,6 @@
 maker: "ferdi"
 caption: "La primera camiseta Simon de Ferdi"
 date: "2021-11-07"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4a386f8cfb511026cb7b55af042a3f11ec34c597-1920x1281.jpg"
 intro: "Un bonito ejemplo de la camisa Simon de Ferdi, que compartió:"
 title: "La primera camiseta Simon de Ferdi"
 designs:

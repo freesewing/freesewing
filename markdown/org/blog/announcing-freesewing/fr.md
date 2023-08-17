@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Le logo freesewing"
 date: "2017-03-24"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/4e1f5426ee6578ef31d9c18a1de9b4beef15836b-2000x1125.jpg"
 intro: "Je suis fier d'annoncer la version 1.0.0 de freesewing core et la documentation qui l'accompagne et qui décrit le projet freesewing en détail."
 title: "Freesewing est une plate-forme open source pour des patrons de couture sur mesure"
 ---

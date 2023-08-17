@@ -2,7 +2,6 @@
 maker: "inconnue"
 caption: "Un lin vichy Simon"
 date: "12-06-2021"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3e3211e181cb8be99b62dfadb56c05422430ca4d-640x677.jpg"
 intro: "Anna a partagé avec nous cette superbe chemise Simon ! Anna a dit :"
 title: "Simon shirt by Anna"
 designs:

@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Estamos construyendo una base de seguidores leales para garantizar un futuro sostenible para freesewing.org, nuestro código, nuestros patrones y nuestra comunidad."
 date: "2017-12-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/84e39d762790744f10fe17bcb971f99e98550299-2000x1334.jpg"
 intro: "Llamamiento a todos los mecenas: Únete a nuestro grupo de fieles seguidores."
 title: "Llamamiento a todos los mecenas: Únete a nuestro grupo de fieles seguidores."
 ---

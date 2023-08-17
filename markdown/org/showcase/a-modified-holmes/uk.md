@@ -2,7 +2,6 @@
 maker: "bobgeorgethe3rd"
 caption: "Модифікована версія Холмса"
 date: "2021-10-19"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/163b8fc2c12f2b76cad4dff084e9d5cee605578d-4128x2322.jpg"
 intro: "Цей чудовий капелюх Холмса - перший з багатьох для цього виробника. Цей варіант модифікований, але в основі - Холмс."
 title: "Модифікований Холмс"
 designs:

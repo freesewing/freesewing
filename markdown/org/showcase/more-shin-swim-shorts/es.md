@@ -2,7 +2,6 @@
 maker: "comixminx"
 caption: "Pantalón corto con la nueva habilidad de comixminx en punto elástico triple"
 date: "2022-06-09"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/9abee12786ebdcd90238365242575f8c23a37a18-4032x3024.jpg"
 intro: "comixminx hizo otro divertido par de shorts de baño Shin, esta vez para su hijo pequeño. Incluso con un par de prueba (foto de abajo), la versión final quedaba ligeramente demasiado ajustada. El usuario del primer par manifestó la misma reacción. Otros que prueben la Shin para niños quizá quieran tener esto en cuenta. (¡Sin embargo, se siguen llevando en las clases de natación semanales!)"
 title: "Más bañadores Shin"
 designs:

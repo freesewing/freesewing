@@ -2,7 +2,6 @@
 maker: "MagicantAce"
 caption: "Diese Waralees haben eine schöne Stoffauswahl"
 date: "03.05.2023"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/0098257c20d9b111222f696caec338c48d9b2987-3120x4160.jpg"
 intro: "Puppe Waralee Hose"
 title: "Puppe Waralee Hose"
 designs:

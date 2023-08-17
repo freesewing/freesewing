@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ton arrière-plan de connexion pour le mois de juillet"
 date: "2018-06-30"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/d4f2c83df7c4bc98b2bee3159b3f042bf0c1177f-1920x1279.jpg"
 intro: "Tour d'horizon mensuel - juin 2018 : German, Penelope, et plus de vêtements pour femmes à l'horizon."
 title: "Tour d'horizon mensuel - juin 2018 : German, Penelope, et plus de vêtements pour femmes à l'horizon."
 ---

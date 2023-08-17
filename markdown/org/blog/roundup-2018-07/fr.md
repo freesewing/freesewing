@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Ton arrière-plan de connexion pour le mois d'août"
 date: "31-07-2018"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/73ad81c28d5045aeaaebc1e182accac4f93f52eb-1920x1280.jpg"
 intro: "Tour d'horizon mensuel - juillet 2018 : Français et attente de Sandy"
 title: "Tour d'horizon mensuel - juillet 2018 : Français et attente de Sandy"
 ---

@@ -2,7 +2,6 @@
 maker: "Лені А."
 caption: "Подивіться на ідеальне вирівнювання візерунка"
 date: "2022-01-22"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/ee14e0496de6bb2353c09bb6e05b415e7d4515f5-2675x3564.jpg"
 intro: "Ця сорочка Саймона має чудовий вигляд, а розташування візерунків бездоганне!"
 title: "Футболка Саймона від SciFaerie"
 designs:

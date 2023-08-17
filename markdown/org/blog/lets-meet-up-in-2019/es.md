@@ -2,7 +2,6 @@
 author: "joostdecock"
 caption: "Como introvertido no digo esto a menudo, pero en realidad me gustaría conoceros."
 date: "2018-12-10"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/8b5fdb232675b32c7c08b59ffc57e9b9da31f02f-1920x1078.jpg"
 intro: "¡Nos vemos en 2019! Y otras reflexiones de fin de año"
 title: "¡Nos vemos en 2019! Y otras reflexiones de fin de año"
 ---

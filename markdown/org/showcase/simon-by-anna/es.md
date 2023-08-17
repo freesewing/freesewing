@@ -2,7 +2,6 @@
 maker: "desconocido"
 caption: "Un Simon de lino"
 date: "2021-06-12"
-image: "https://cdn.sanity.io/images/hl5bw8cj/site-content/3e3211e181cb8be99b62dfadb56c05422430ca4d-640x677.jpg"
 intro: "¡Anna ha compartido con nosotros esta estupenda camiseta de Simon! dijo Anna:"
 title: "Camiseta Simon de Anna"
 designs:
