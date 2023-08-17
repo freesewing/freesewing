@@ -23,6 +23,7 @@ import { Tab } from 'shared/components/account/bio.mjs'
 import { CodeBox } from 'shared/components/code-box.mjs'
 import { PostArticle, ns as mdxNs } from 'site/components/mdx/posts/article.mjs'
 import { PageLink } from 'shared/components/page-link.mjs'
+import { OkIcon, WarningIcon as KoIcon } from 'shared/components/icons.mjs'
 
 export const ns = nsMerge('account', 'posts', authNs, mdxNs)
 
@@ -40,16 +41,16 @@ const Item = ({ title, children }) => (
   </div>
 )
 
-const dataAsMd = ({ title, maker, caption, intro, designs }) => `---
-title: "${data.title}"
-maker: ${data.maker}
-caption: "${data.caption}"
-date: ${yyymmvv()}
-intro: "${data.intro}"
+const dataAsMd = ({ title, maker, caption, intro, designs, body }) => `---
+title: "${title}"
+maker: ${maker}
+caption: "${caption}"
+date: ${yyyymmdd()}
+intro: "${intro}"
 designs: [${designs.map((design) => `"${design}"`).join(', ')}]
 ---
 
-${data.body}
+${body}
 
 `
 
@@ -96,7 +97,6 @@ export const CreateShowcasePost = ({ noTitle = false }) => {
   }
 
   const setExtraImg = (key, img) => {
-    console.log('setting extra', { key, img })
     const newImages = { ...extraImages }
     newImages[key] = img
     setExtraImages(newImages)
@@ -161,10 +161,11 @@ export const CreateShowcasePost = ({ noTitle = false }) => {
         <button
           className="btn btn-lg btn-primary"
           disabled={!(title && slug && img && designs.length > 0)}
+          onClick={submitPullRequest}
         >
           Submit Showcase Post
         </button>
-        {!account.github && (
+        {!account.data?.githubUser && !account.data?.githubEmail && (
           <Popout tip>
             <h5 className="text-left">
               <small>Optional:</small> Are you on GitHub?
@@ -225,10 +226,19 @@ const ShowcaseEditor = ({
     <Tip>{t('showcaseNewInfo')}</Tip>
     <Item
       title={
-        <span>
-          <b>Designs</b>:{' '}
-          <span className="text-sm">{designs.map((d) => capitalize(d)).join(', ')}</span>
-        </span>
+        <div className="flex flex-row gap-2 items-center">
+          {designs.length > 0 ? (
+            <OkIcon stroke={4} className="w-5 h-5 text-success" />
+          ) : (
+            <KoIcon stroke={3} className="w-5 h-5 text-error" />
+          )}
+          <b>Design:</b>
+          {designs.length > 0 ? (
+            <span className="text-base">{designs.map((d) => capitalize(d)).join(', ')}</span>
+          ) : (
+            <span className="text-error text-base">Please select at least 1 design</span>
+          )}
+        </div>
       }
     >
       <Tip>Pick one or more designs that are featured in this post.</Tip>
@@ -236,9 +246,19 @@ const ShowcaseEditor = ({
     </Item>
     <Item
       title={
-        <span>
-          <b>Title</b>: <span className="text-sm">{title}</span>
-        </span>
+        <div className="flex flex-row gap-2 items-center">
+          {title.length > 10 ? (
+            <OkIcon stroke={4} className="w-5 h-5 text-success" />
+          ) : (
+            <KoIcon stroke={3} className="w-5 h-5 text-error" />
+          )}
+          <b>Title:</b>
+          {title.length > 10 ? (
+            <span className="text-base">{title}</span>
+          ) : (
+            <span className="text-error text-base">Please enter a post title</span>
+          )}
+        </div>
       }
     >
       <Tip>Give your post a title. A good title is more than just a few words.</Tip>
@@ -246,9 +266,19 @@ const ShowcaseEditor = ({
     </Item>
     <Item
       title={
-        <span>
-          <b>Slug</b>: <span className="text-sm">{slug}</span>
-        </span>
+        <div className="flex flex-row gap-2 items-center">
+          {slug.length > 3 ? (
+            <OkIcon stroke={4} className="w-5 h-5 text-success" />
+          ) : (
+            <KoIcon stroke={3} className="w-5 h-5 text-error" />
+          )}
+          <b>Slug:</b>
+          {slug.length > 3 ? (
+            <span className="text-base">{slug}</span>
+          ) : (
+            <span className="text-error text-base">Please enter a slug (or post title)</span>
+          )}
+        </div>
       }
     >
       <Tip>
@@ -259,9 +289,19 @@ const ShowcaseEditor = ({
     </Item>
     <Item
       title={
-        <span>
-          <b>Main Image</b>: <span className="text-sm">{img}</span>
-        </span>
+        <div className="flex flex-row gap-2 items-center">
+          {img.length > 3 ? (
+            <OkIcon stroke={4} className="w-5 h-5 text-success" />
+          ) : (
+            <KoIcon stroke={3} className="w-5 h-5 text-error" />
+          )}
+          <b>Main Image:</b>
+          {img.length > 3 ? (
+            <span className="text-base">{img}</span>
+          ) : (
+            <span className="text-error text-base">Please provide a main image for the post</span>
+          )}
+        </div>
       }
     >
       <Tip>
@@ -272,9 +312,21 @@ const ShowcaseEditor = ({
     </Item>
     <Item
       title={
-        <span>
-          <b>Main Image Caption</b>: <span className="text-sm">{caption}</span>
-        </span>
+        <div className="flex flex-row gap-2 items-center">
+          {caption.length > 3 ? (
+            <OkIcon stroke={4} className="w-5 h-5 text-success" />
+          ) : (
+            <KoIcon stroke={3} className="w-5 h-5 text-error" />
+          )}
+          <b>Main Image Caption:</b>
+          {caption.length > 3 ? (
+            <span className="text-base">{caption}</span>
+          ) : (
+            <span className="text-error text-base">
+              Please provide a caption for the main image
+            </span>
+          )}
+        </div>
       }
     >
       <Tip>
@@ -285,9 +337,19 @@ const ShowcaseEditor = ({
     </Item>
     <Item
       title={
-        <span>
-          <b>Intro</b>: <span className="text-sm">{intro}</span>
-        </span>
+        <div className="flex flex-row gap-2 items-center">
+          {intro.length > 3 ? (
+            <OkIcon stroke={4} className="w-5 h-5 text-success" />
+          ) : (
+            <KoIcon stroke={3} className="w-5 h-5 text-error" />
+          )}
+          <b>Intro:</b>
+          {intro.length > 3 ? (
+            <span className="text-base">{intro}</span>
+          ) : (
+            <span className="text-error text-base">Please provide an intro for link proviews</span>
+          )}
+        </div>
       }
     >
       <Tip>A brief paragraph that will be shown on post previews on social media and so on.</Tip>
@@ -322,6 +384,14 @@ const ShowcaseEditor = ({
                   <>
                     <p>To include this image in your post, use this markdown snippet:</p>
                     <CodeBox code={markup} title="MarkDown" />
+                    <p className="text-right -mt-5">
+                      <button
+                        className="btn btn-sm btn-secondary btn-outline"
+                        onClick={() => setBody(body + '\n\n' + markup)}
+                      >
+                        Add to post body
+                      </button>
+                    </p>
                   </>
                 )}
               </>
@@ -339,9 +409,19 @@ const ShowcaseEditor = ({
     </Item>
     <Item
       title={
-        <span>
-          <b>Post body</b>: {body.slice(0, 30) + '...'}
-        </span>
+        <div className="flex flex-row gap-2 items-center">
+          {body.length > 3 ? (
+            <OkIcon stroke={4} className="w-5 h-5 text-success" />
+          ) : (
+            <KoIcon stroke={3} className="w-5 h-5 text-error" />
+          )}
+          <b>Post body:</b>
+          {body.length > 3 ? (
+            <span className="text-base">{body.slice(0, 30) + '...'}</span>
+          ) : (
+            <span className="text-error text-base">Please provide a post body</span>
+          )}
+        </div>
       }
     >
       <Tip>The actual post body. Supports Markdown.</Tip>

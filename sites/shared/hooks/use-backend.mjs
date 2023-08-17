@@ -302,7 +302,7 @@ Backend.prototype.createIssue = async function (data) {
  * Create showcase Pull Request
  */
 Backend.prototype.createShowcasePr = async function (data) {
-  return responseHandler(await api.post(`/flows/pr/showcase`, data, this.auth))
+  return responseHandler(await api.post(`/flows/pr/showcase/jwt`, data, this.auth))
 }
 /*
  * Send translation invite
@@ -344,6 +344,13 @@ Backend.prototype.uploadImage = async function (body) {
  */
 Backend.prototype.removeImage = async function (id) {
   return responseHandler(await api.delete(`/images/${id}/jwt`, this.auth))
+}
+
+/*
+ * Ping backend to see if current token is still valid
+ */
+Backend.prototype.ping = async function () {
+  return responseHandler(await api.get(`/whoami/jwt`, this.auth))
 }
 
 /*

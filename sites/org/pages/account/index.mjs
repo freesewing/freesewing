@@ -1,6 +1,8 @@
 // Dependencies
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+// Hooks
+import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
@@ -22,13 +24,17 @@ const DynamicAccountOverview = dynamic(
   { ssr: false }
 )
 
-const AccountIndexPage = ({ page }) => (
-  <PageWrapper {...page}>
-    <DynamicAuthWrapper>
-      <DynamicAccountOverview />
-    </DynamicAuthWrapper>
-  </PageWrapper>
-)
+const AccountIndexPage = ({ page }) => {
+  const { t } = useTranslation(ns)
+
+  return (
+    <PageWrapper {...page} title={t('yourAccount')}>
+      <DynamicAuthWrapper>
+        <DynamicAccountOverview />
+      </DynamicAuthWrapper>
+    </PageWrapper>
+  )
+}
 
 export default AccountIndexPage
 

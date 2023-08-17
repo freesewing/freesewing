@@ -104,7 +104,7 @@ const ConsentLacking = ({ t, banner }) => (
 
 export const AuthWrapper = ({ children, app, requiredRole = 'user' }) => {
   const { t } = useTranslation(ns)
-  const { account, token, admin, stopImpersonating } = useAccount()
+  const { account, token, admin, stopImpersonating, signOut } = useAccount()
   const backend = useBackend()
 
   const [ready, setReady] = useState(false)
@@ -123,9 +123,15 @@ export const AuthWrapper = ({ children, app, requiredRole = 'user' }) => {
         })
       }
     }
+    const verifyUser = async () => {
+      const result = await backend.ping()
+      if (result.success) {
+      } else signOut()
+    }
     if (admin && admin.token) verifyAdmin()
+    if (token) verifyUser()
     setReady(true)
-  }, [admin])
+  }, [admin, token])
 
   if (!ready) return <Loading />
 
