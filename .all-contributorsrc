@@ -1023,6 +1023,15 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "compilin",
+      "name": "Lin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40794281?v=4",
+      "profile": "https://github.com/compilin",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true,

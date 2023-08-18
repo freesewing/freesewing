@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { ThemePicker } from 'shared/components/theme-picker.js'
-import { LocalePicker } from 'shared/components/locale-picker.js'
+import { ModalThemePicker } from 'shared/components/modal/theme-picker.mjs'
+import { ModalLocalePicker } from 'shared/components/modal/locale-picker.mjs'
 import { CloseIcon, MenuIcon, HelpIcon, DocsIcon } from 'shared/components/icons/close.js'
 import { Ribbon } from 'shared/components/ribbon.js'
 import { WordMark } from 'shared/components/wordmark.js'
@@ -71,8 +71,8 @@ export const Header = ({ app }) => {
             </div>
           </div>
           <div className="hidden md:flex flex-row items-center gap-2">
-            <ThemePicker app={app} />
-            <LocalePicker app={app} />
+            <ModalThemePicker app={app} />
+            <ModalLocalePicker app={app} />
           </div>
         </div>
       </div>
