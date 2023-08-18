@@ -13,7 +13,9 @@ export const ns = ['account']
 
 export const CaptionInput = ({ caption, setCaption }) => (
   <input
-    className="input input-text input-bordered input-lg w-full"
+    className={`input input-text input-bordered input-lg w-full ${
+      caption.length < 4 ? 'input-error' : 'input-success'
+    }`}
     value={caption}
     placeholder="Type your caption here"
     onChange={(evt) => setCaption(evt.target.value)}
@@ -22,7 +24,9 @@ export const CaptionInput = ({ caption, setCaption }) => (
 
 export const IntroInput = ({ intro, setIntro }) => (
   <input
-    className="input input-text input-bordered input-lg w-full"
+    className={`input input-text input-bordered input-lg w-full ${
+      intro.length < 4 ? 'input-error' : 'input-success'
+    }`}
     value={intro}
     placeholder="Type your intro here"
     onChange={(evt) => setIntro(evt.target.value)}
@@ -31,7 +35,9 @@ export const IntroInput = ({ intro, setIntro }) => (
 
 export const BodyInput = ({ body, setBody }) => (
   <textarea
-    className="input input-text input-bordered input-lg w-full h-96"
+    className={`input input-text input-bordered input-lg w-full h-96 ${
+      body.length < 4 ? 'input-error' : 'input-success'
+    }`}
     placeholder="Type your post body here"
     onChange={(evt) => setBody(evt.target.value)}
     rows={16}
@@ -41,21 +47,26 @@ export const BodyInput = ({ body, setBody }) => (
 
 export const TitleInput = ({ title, setTitle }) => (
   <input
-    className="input input-text input-bordered input-lg w-full"
+    className={`input input-text input-bordered input-lg w-full ${
+      title.length < 11 ? 'input-error' : 'input-success'
+    }`}
     value={title}
     placeholder="Type your title here"
     onChange={(evt) => setTitle(evt.target.value)}
   />
 )
 
-export const SlugInput = ({ slug, setSlug, title }) => {
+export const SlugInput = ({ slug, setSlug, title, slugAvailable }) => {
   useEffect(() => {
     if (title !== slug) setSlug(slugify(title))
   }, [title])
+  console.log(slugAvailable)
 
   return (
     <input
-      className="input input-text input-bordered input-lg w-full mb-2"
+      className={`input input-text input-bordered input-lg w-full mb-2 ${
+        !slugAvailable || slug.length < 4 ? 'input-error' : 'input-success'
+      }`}
       value={slug}
       placeholder="Type your title here"
       onChange={(evt) => setSlug(slugifyNoTrim(evt.target.value))}

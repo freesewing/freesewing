@@ -4,6 +4,40 @@ import { githubToken as token } from '../config.mjs'
 const api = 'https://api.github.com/repos/freesewing/freesewing'
 
 /*
+ * Sometimes we'd like to cache responses.
+ * This is a poor man's cache
+ */
+const cache = {}
+const fresh = 1800000 // 30 minutes
+
+/*
+ * Helper method to run a requests against the GitHub API
+ * with built-in cachine
+ */
+const cachedApiRequest = async (method, url, body = false, success = 200) => {
+  const id = JSON.stringify({ method, url, body, success })
+  const now = Date.now()
+
+  /*
+   * Is this reponse cached?
+   */
+  if (cache[id]) {
+    /*
+     * It is. But Is it fresh?
+     */
+    if (cache[id].timestamp && now - cache[id].timestamp < fresh) return cache[id].data
+    /*
+     * It is in the cache, but stale. Remove cache entry
+     */ else delete cache[id]
+  } else {
+    const data = apiRequest(method, url, body, success)
+    cache[id] = { timestamp: now, data }
+
+    return data
+  }
+}
+
+/*
  * Helper method to run requests against the GitHub API
  */
 const apiRequest = async (method, url, body = false, success = 200) => {
@@ -79,3 +113,8 @@ export const createPullRequest = async ({ title, body, from, to = 'develop' }) =
     },
     201
   )
+
+/*
+ * Retrieves a list of files for a folder
+ */
+export const getFileList = async (path) => await cachedApiRequest('GET', `${api}/contents/${path}`)
