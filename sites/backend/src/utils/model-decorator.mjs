@@ -107,7 +107,11 @@ export function decorateModel(Model, tools, modelConfig) {
     if (this.record) {
       for (const field of this.jsonFields) {
         if (this.encryptedFields && this.encryptedFields.includes(field)) {
-          this.clear[field] = JSON.parse(this.clear[field])
+          try {
+            this.clear[field] = JSON.parse(this.clear[field])
+          } catch (err) {
+            console.log(err, typeof this.clear[field])
+          }
         } else {
           this.record[field] = JSON.parse(this.record[field])
         }
