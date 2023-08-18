@@ -49,4 +49,14 @@ export function flowsRoutes(tools) {
 
   // Create Issue - No auth needed
   app.post('/issues', (req, res) => Flow.createIssue(req, res, tools))
+
+  // See if a showcase or blog slug is available
+  for (const type of ['showcase', 'blog']) {
+    app.get(`/slugs/${type}/:slug/jwt`, passport.authenticate(...jwt), (req, res) =>
+      Flow.isSlugAvailable(req, res, tools, type)
+    )
+    app.get(`/slugs/${type}/:slug/key`, passport.authenticate(...bsc), (req, res) =>
+      Flow.isSlugAvailable(req, res, tools, type)
+    )
+  }
 }

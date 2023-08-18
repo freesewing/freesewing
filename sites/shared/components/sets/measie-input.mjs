@@ -144,60 +144,58 @@ export const MeasieInput = ({
 
   return (
     <div className="form-control mb-2 ">
-      <div className="flex items-center gap-4 flex-wrap mx-auto">
-        <label className="shrink-0 grow max-w-full">
-          {children}
-          <span className="input-group">
-            <NumberInput
-              className={`border-r-0 w-full ${valid === null && 'border-base-200'}`}
-              value={val}
-              onUpdate={update}
-              onMount={setValid}
-            />
-            <span
-              className={`bg-transparent border-y w-20
+      <label className="shrink-0 grow max-w-full">
+        {children}
+        <span className="input-group">
+          <NumberInput
+            className={`border-r-0 w-full ${valid === null && ''}`}
+            value={val}
+            onUpdate={update}
+            onMount={setValid}
+          />
+          <span
+            className={`bg-transparent border-y w-20
               ${valid === false && 'border-error text-neutral-content'}
               ${valid && 'border-success text-neutral-content'}
-              ${valid === null && 'border-base-200 text-base-content'}
+              ${valid === null && 'border-secondary text-base-content'}
          `}
-            >
-              <Mval
-                imperial={mset.imperial}
-                val={isDegree ? val : measurementAsMm(val, units)}
-                m={m}
-                className="text-base-content bg-transparent text-success text-xs font-bold p-0"
-              />
-            </span>
-            <span
-              role="img"
-              className={`bg-transparent border-y
+          >
+            <Mval
+              imperial={mset.imperial}
+              val={isDegree ? val : measurementAsMm(val, units)}
+              m={m}
+              className="text-base-content bg-transparent text-success text-xs font-bold p-0"
+            />
+          </span>
+          <span
+            role="img"
+            className={`bg-transparent border-y
               ${valid === false && 'border-error text-neutral-content'}
               ${valid && 'border-success text-neutral-content'}
-              ${valid === null && 'border-base-200 text-base-content'}
+              ${valid === null && 'border-secondary text-base-content'}
            `}
-            >
-              {valid && '👍'}
-              {valid === false && '🤔'}
-            </span>
-            <span
-              className={`w-14 text-center
+          >
+            {valid && '👍'}
+            {valid === false && '🤔'}
+          </span>
+          <span
+            className={`w-14 text-center border-secondary border-solid border border-l-0
               ${valid === false && 'bg-error text-neutral-content'}
               ${valid && 'bg-success text-neutral-content'}
-              ${valid === null && 'bg-base-200 text-base-content'}
+              ${valid === null && 'bg-base-200 text-base-content border-secondary'}
            `}
-            >
-              {isDegree ? '°' : mset.imperial ? 'in' : 'cm'}
-            </span>
+          >
+            {isDegree ? '°' : mset.imperial ? 'in' : 'cm'}
           </span>
-        </label>
-        {mset.imperial && (
-          <div className="grow my-2 sm:min-w-[22rem]">
-            {!isDegree && <FractionButtons {...{ t, fraction }} />}
-          </div>
-        )}
-      </div>
+        </span>
+      </label>
+      {mset.imperial && (
+        <div className="grow my-2 sm:min-w-[22rem]">
+          {!isDegree && <FractionButtons {...{ t, fraction }} />}
+        </div>
+      )}
       {backend && (
-        <button className="btn btn-secondary w-24 mt-4" onClick={save} disabled={!valid}>
+        <button className="btn btn-secondary mt-4" onClick={save} disabled={!valid}>
           {t('save')}
         </button>
       )}
