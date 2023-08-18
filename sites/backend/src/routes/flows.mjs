@@ -39,13 +39,15 @@ export function flowsRoutes(tools) {
     Flow.removeImage(req, res, tools)
   )
 
-  // Submit a pull request for a new showcase
-  app.post('/flows/pr/showcase/jwt', passport.authenticate(...jwt), (req, res) =>
-    Flow.createShowcasePr(req, res, tools)
-  )
-  app.post('/flows/pr/showcase/key', passport.authenticate(...bsc), (req, res) =>
-    Flow.createShowcasePr(req, res, tools)
-  )
+  // Submit a pull request for a new showcase or blog post
+  for (const type of ['blog', 'showcase']) {
+    app.post(`/flows/pr/${type}/jwt`, passport.authenticate(...jwt), (req, res) =>
+      Flow.createPostPr(req, res, tools, type)
+    )
+    app.post(`/flows/pr/${type}/key`, passport.authenticate(...bsc), (req, res) =>
+      Flow.createPostPr(req, res, tools, type)
+    )
+  }
 
   // Create Issue - No auth needed
   app.post('/issues', (req, res) => Flow.createIssue(req, res, tools))

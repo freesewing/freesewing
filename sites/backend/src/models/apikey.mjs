@@ -261,6 +261,7 @@ ApikeyModel.prototype.create = async function ({ body, user }) {
   try {
     this.record = await this.prisma.apikey.create({
       data: this.cloak({
+        aud: `${this.config.api}/${this.config.instance}`,
         expiresAt,
         name: body.name,
         level: body.level,
