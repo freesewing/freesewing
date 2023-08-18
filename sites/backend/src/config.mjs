@@ -85,6 +85,9 @@ const baseConfig = {
   db: {
     url: process.env.BACKEND_DB_URL || './db.sqlite',
   },
+  bookmarks: {
+    types: ['set', 'cset', 'pattern', 'design', 'doc', 'custom'],
+  },
   encryption: {
     key: encryptionKey,
   },

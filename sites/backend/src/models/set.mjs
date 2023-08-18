@@ -3,7 +3,7 @@ import { replaceImage, storeImage, importImage } from '../utils/cloudflare-image
 import { decorateModel } from '../utils/model-decorator.mjs'
 
 /*
- * This model handles all flows (typically that involves sending out emails)
+ * This model handles all set updates (typically that involves sending out emails)
  */
 export function SetModel(tools) {
   return decorateModel(this, tools, {
@@ -95,11 +95,6 @@ SetModel.prototype.guardedRead = async function ({ params, user }) {
   if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
   /*
-   * Check JWT
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
-
-  /*
    * Attempt to read the record from the database
    */
   await this.read({ id: parseInt(params.id) })
@@ -165,11 +160,6 @@ SetModel.prototype.guardedClone = async function ({ params, user }) {
   if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
   /*
-   * Check the JWT
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
-
-  /*
    * Attempt to read the record from the database
    */
   await this.read({ id: parseInt(params.id) })
@@ -233,11 +223,6 @@ SetModel.prototype.guardedUpdate = async function ({ params, body, user }) {
    * Enforce RBAC
    */
   if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
-
-  /*
-   * Check JWT
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   /*
    * Attempt to read record from database
@@ -325,11 +310,6 @@ SetModel.prototype.guardedDelete = async function ({ params, user }) {
    * Enforce RBAC
    */
   if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
-
-  /*
-   * Check the JWT
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   /*
    * Attempt to read the record from the database

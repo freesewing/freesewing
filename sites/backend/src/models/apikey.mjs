@@ -62,11 +62,6 @@ ApikeyModel.prototype.guardedRead = async function ({ params, user }) {
   if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
   /*
-   * Ensure the account is active
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
-
-  /*
    * Attempt to read record from database
    */
   await this.read({ id: params.id })
@@ -113,10 +108,6 @@ ApikeyModel.prototype.guardedDelete = async function ({ params, user }) {
    * Enforece RBAC
    */
   if (!this.rbac.user(user)) return this.setResponse(403, 'insufficientAccessLevel')
-  /*
-   * Ensure the account is active
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   /*
    * Attempt to read record from database

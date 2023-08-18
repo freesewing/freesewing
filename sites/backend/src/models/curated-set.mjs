@@ -173,11 +173,6 @@ CuratedSetModel.prototype.guardedClone = async function ({ params, user, body },
   if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
   /*
-   * Verify JWT
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
-
-  /*
    * Is language set?
    */
   if (!body.language || !this.config.languages.includes(body.language))
@@ -221,11 +216,6 @@ CuratedSetModel.prototype.guardedUpdate = async function ({ params, body, user }
    * Enforce RBAC
    */
   if (!this.rbac.curator(user)) return this.setResponse(403, 'insufficientAccessLevel')
-
-  /*
-   * Verify JWT token for user status
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   /*
    * Attempt to read database record
@@ -296,11 +286,6 @@ CuratedSetModel.prototype.guardedDelete = async function ({ params, user }) {
    * Enforce RBAC
    */
   if (!this.rbac.curator(user)) return this.setResponse(403, 'insufficientAccessLevel')
-
-  /*
-   * Make sure the account is ok by checking the JWT
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   /*
    * Find the database record

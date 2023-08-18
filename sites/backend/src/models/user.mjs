@@ -66,11 +66,6 @@ UserModel.prototype.guardedRead = async function (where, { user }) {
   if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
   /*
-   * Ensure the account is active
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
-
-  /*
    * Read record from database
    */
   await this.read(where)
@@ -813,11 +808,6 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
   if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
   /*
-   * Make sure the account is in a state where it's allowed to do this
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
-
-  /*
    * Create data to update the record
    */
   const data = {}
@@ -1019,11 +1009,6 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
    * Enforce RBAC
    */
   if (!this.rbac.user(user)) return this.setResponse(403, 'insufficientAccessLevel')
-
-  /*
-   * Ensure account is in the proper state to do this
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   /*
    * If MFA is active and it is an attempt to active it, return 400
