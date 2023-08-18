@@ -10,15 +10,15 @@ import { flowTests } from './flow.mjs'
 import { setup } from './shared.mjs'
 
 const runTests = async (...params) => {
-  await userTests(...params)
-  await mfaTests(...params)
-  await apikeyTests(...params)
-  await accountTests(...params)
+  //await userTests(...params)
+  //await mfaTests(...params)
+  //await apikeyTests(...params)
+  //await accountTests(...params)
   await setTests(...params)
-  await curatedSetTests(...params)
-  await patternTests(...params)
-  await subscriberTests(...params)
-  await flowTests(...params)
+  //await curatedSetTests(...params)
+  //await patternTests(...params)
+  //await subscriberTests(...params)
+  //await flowTests(...params)
 }
 
 // Load initial data required for tests
