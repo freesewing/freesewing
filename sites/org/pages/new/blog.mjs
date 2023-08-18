@@ -6,11 +6,11 @@ import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
-//import { BareLayout } from 'site/components/layouts/bare.mjs'
-import { Popout } from 'shared/components/popout/index.mjs'
+import { CreatePost, ns as createNs } from 'site/components/github/create-post.mjs'
+import { BareLayout } from 'site/components/layouts/bare.mjs'
 
 // Translation namespaces used on this page
-const namespaces = nsMerge(authNs, pageNs)
+const namespaces = nsMerge(createNs, authNs, pageNs)
 
 /*
  * Each page MUST be wrapped in the PageWrapper component.
@@ -22,11 +22,9 @@ const NewBlogPage = ({ page }) => {
   const { t } = useTranslation(namespaces)
 
   return (
-    <PageWrapper {...page} title={t('blogNew')}>
+    <PageWrapper {...page} title={t('blogNew')} layout={BareLayout}>
       <div className="w-full px-4 mt-8">
-        <Popout fixme compact>
-          This is not (yet) implemented
-        </Popout>
+        <CreatePost type="blog" />
       </div>
     </PageWrapper>
   )
@@ -40,7 +38,7 @@ export async function getStaticProps({ locale }) {
       ...(await serverSideTranslations(locale, namespaces)),
       page: {
         locale,
-        path: ['new', 'showcase'],
+        path: ['new', 'blog'],
       },
     },
   }

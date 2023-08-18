@@ -261,13 +261,14 @@ to English prior to merging.
 `
 
 /*
- * Create a (GitHub) pull request for a new showcase post
+ * Create a (GitHub) pull request for a new blog or showcase post
  *
  * @param {body} object - The request body
  * @param {user} object - The user as loaded by auth middleware
+ * @param {type} string - One of blog or showcase
  * @returns {FlowModel} object - The FlowModel
  */
-FlowModel.prototype.createShowcasePr = async function ({ body, user }) {
+FlowModel.prototype.createPostPr = async function ({ body, user }, type) {
   /*
    * Is markdown set?
    */
@@ -283,16 +284,16 @@ FlowModel.prototype.createShowcasePr = async function ({ body, user }) {
   /*
    * Create a new feature branch for this
    */
-  const branchName = `showcase-${body.slug}`
+  const branchName = `${type}-${body.slug}`
   const branch = await createBranch({ name: branchName })
 
   /*
    * Create the file
    */
   const file = await createFile({
-    path: `markdown/org/showcase/${body.slug}/en.md`,
+    path: `markdown/org/${type}/${body.slug}/en.md`,
     body: {
-      message: `feat: New showcase post ${body.slug} by ${this.User.record.username}${
+      message: `feat: New ${type} post ${body.slug} by ${this.User.record.username}${
         body.language !== 'en' ? nonEnWarning : ''
       }`,
       content: new Buffer.from(body.markdown).toString('base64'),
@@ -308,8 +309,8 @@ FlowModel.prototype.createShowcasePr = async function ({ body, user }) {
    * New create the pull request
    */
   const pr = await createPullRequest({
-    title: `feat: New showcase post ${body.slug} by ${this.User.record.username}`,
-    body: `Hey @joostdecock you should check out this awesome showcase post.${
+    title: `feat: New ${type} post ${body.slug} by ${this.User.record.username}`,
+    body: `Paging @joostdecock to check out this proposed ${type} post.${
       body.language !== 'en' ? nonEnWarning : ''
     }`,
     from: branchName,

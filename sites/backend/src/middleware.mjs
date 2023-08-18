@@ -3,6 +3,7 @@ import http from 'passport-http'
 import jwt from 'passport-jwt'
 import { ApikeyModel } from './models/apikey.mjs'
 import { UserModel } from './models/user.mjs'
+import { api, instance } from './config.mjs'
 
 /*
  * In v2 we ended up with a bug where we did not properly track the last login
@@ -10,8 +11,14 @@ import { UserModel } from './models/user.mjs'
  * this field. It's a bit of a perf hit to write to the database on ever API call
  * but it's worth it to actually know which accounts are used and which are not.
  */
-async function checkAccess(uid, tools, type) {
+async function checkAccess(payload, tools, type) {
+  /*
+   * Don't allow tokens/keys to be used on different instances,
+   * even with the same encryption key
+   */
+  if (payload.aud !== `${api}/${instance}`) return false
   const User = new UserModel(tools)
+  const uid = payload.userId || payload._id
   const ok = await User.papersPlease(uid, type)
 
   return ok
@@ -29,7 +36,7 @@ function loadPassportMiddleware(passport, tools) {
       /*
        * We check more than merely the API key
        */
-      const ok = Apikey.verified ? await checkAccess(Apikey.record.userId, tools, 'key') : false
+      const ok = Apikey.verified ? await checkAccess(Apikey.record, tools, 'key') : false
 
       return ok
         ? done(null, {
@@ -50,7 +57,7 @@ function loadPassportMiddleware(passport, tools) {
         /*
          * We check more than merely the token
          */
-        const ok = await checkAccess(jwt_payload._id, tools, 'jwt')
+        const ok = await checkAccess(jwt_payload, tools, 'jwt')
 
         return ok
           ? done(null, {
