@@ -1,7 +1,13 @@
 import { i18nUrl } from '../utils/index.mjs'
 import { decorateModel } from '../utils/model-decorator.mjs'
 import { ensureImage, replaceImage, removeImage } from '../utils/cloudflare-images.mjs'
-import { createIssue, createFile, createBranch, createPullRequest } from '../utils/github.mjs'
+import {
+  createIssue,
+  createFile,
+  createBranch,
+  createPullRequest,
+  getFileList,
+} from '../utils/github.mjs'
 
 /*
  * This model handles all flows (typically that involves sending out emails)
@@ -314,4 +320,29 @@ FlowModel.prototype.createShowcasePr = async function ({ body, user }) {
    * Return 201
    */
   return pr ? this.setResponse201({ branch, file, pr }) : this.setResponse(400)
+}
+
+/*
+ * Checks to see whether a slug is available
+ *
+ * @param {params} object - The request (URL) parameters
+ * @param {user} object - The user as loaded by auth middleware
+ * @param {type} object - The type to check (either 'blog' or 'showcase')
+ * @returns {FlowModel} object - The FlowModel
+ */
+FlowModel.prototype.isSlugAvailable = async function ({ params }, type) {
+  /*
+   * Is slug set?
+   */
+  if (!params.slug) return this.setResponse(400, `slugMissing`)
+
+  /*
+   * Load the list of folders from github
+   */
+  const folders = (await getFileList(`markdown/org/${type}`)).map((folder) => folder.name)
+
+  /*
+   * Return  whether or not params.slug is already included in the list of slugs
+   */
+  return !folders.includes(params.slug)
 }

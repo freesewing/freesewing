@@ -69,3 +69,24 @@ FlowsController.prototype.createIssue = async (req, res, tools) => {
 
   return Flow.sendResponse(res)
 }
+
+/*
+ * Is a blog or showcase slug available?
+ *
+ * This is the endpoint that verifies whether a blog or showcase slug is available
+ * See: https://freesewing.dev/reference/backend/api/apikey
+ */
+FlowsController.prototype.isSlugAvailable = async (req, res, tools, type) => {
+  const Flow = new FlowModel(tools)
+  const available = await Flow.isSlugAvailable(req, type)
+
+  if (!available)
+    Flow.setResponse(200, false, {
+      result: 'success',
+      slug: req.params.slug,
+      available: false,
+    })
+  else Flow.setResponse(404)
+
+  return Flow.sendResponse(res)
+}

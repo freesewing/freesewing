@@ -59,6 +59,7 @@ export const CreateShowcasePost = () => {
   const [designs, setDesigns] = useState([])
   const [title, setTitle] = useState('')
   const [slug, setSlug] = useState(false)
+  const [slugAvailable, setSlugAvailable] = useState(true)
   const [img, setImg] = useState(false)
   const [caption, setCaption] = useState('')
   const [intro, setIntro] = useState('')
@@ -96,6 +97,13 @@ export const CreateShowcasePost = () => {
     setExtraImages(newImages)
   }
 
+  const verifySlug = async (newSlug) => {
+    setSlug(newSlug)
+    const result = await backend.isSlugAvailable({ slug: newSlug, type: 'showcase' })
+    console.log(result)
+    setSlugAvailable(result.available === true ? true : false)
+  }
+
   const setExtraImg = (key, img) => {
     const newImages = { ...extraImages }
     newImages[key] = img
@@ -108,7 +116,6 @@ export const CreateShowcasePost = () => {
     title,
     setTitle,
     slug,
-    setSlug,
     img,
     setImg,
     caption,
@@ -123,6 +130,8 @@ export const CreateShowcasePost = () => {
     setExtraImg,
     account,
     t,
+    verifySlug,
+    slugAvailable,
   }
 
   return (
@@ -272,7 +281,8 @@ const ShowcaseEditor = ({
   title,
   setTitle,
   slug,
-  setSlug,
+  verifySlug,
+  slugAvailable,
   img,
   setImg,
   caption,
@@ -332,7 +342,7 @@ const ShowcaseEditor = ({
     <Item
       title={
         <div className="flex flex-row gap-2 items-center">
-          {slug.length > 3 ? (
+          {slugAvailable && slug.length > 3 ? (
             <OkIcon stroke={4} className="w-5 h-5 text-success" />
           ) : (
             <KoIcon stroke={3} className="w-5 h-5 text-error" />
@@ -350,7 +360,7 @@ const ShowcaseEditor = ({
         The slug is the part of the URL that uniquely identifies the post. We can generate one based
         on the title, but you can also customize it.
       </Tip>
-      <SlugInput {...{ title, slug, setSlug }} />
+      <SlugInput {...{ title, slug, setSlug: verifySlug, slugAvailable }} />
     </Item>
     <Item
       title={

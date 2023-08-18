@@ -299,11 +299,24 @@ Backend.prototype.createIssue = async function (data) {
 }
 
 /*
+ * Check whether a slug is available
+ */
+Backend.prototype.isSlugAvailable = async function ({ slug, type }) {
+  const response = await api.get(`/slugs/${type}/${slug}/jwt`, this.auth)
+
+  // 404 means username is available, which is success in this case
+  return response.status === 200
+    ? { success: false, available: false, response }
+    : { success: true, data: false, available: true, response }
+}
+
+/*
  * Create showcase Pull Request
  */
 Backend.prototype.createShowcasePr = async function (data) {
   return responseHandler(await api.post(`/flows/pr/showcase/jwt`, data, this.auth), 201)
 }
+
 /*
  * Send translation invite
  */
