@@ -53,6 +53,7 @@
     "remark-mdx-frontmatter": "3.0.0",
     "remark-smartypants": "2.0.0",
     "sharp": "0.32.4",
+    "slugify": "^1.6.6",
     "svg-to-pdfkit": "https://git@github.com/eriese/SVG-to-PDFKit",
     "tlds": "1.242.0",
     "to-vfile": "8.0.0",
