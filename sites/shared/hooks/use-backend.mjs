@@ -311,10 +311,10 @@ Backend.prototype.isSlugAvailable = async function ({ slug, type }) {
 }
 
 /*
- * Create showcase Pull Request
+ * Create showcase/blog post (pull request)
  */
-Backend.prototype.createShowcasePr = async function (data) {
-  return responseHandler(await api.post(`/flows/pr/showcase/jwt`, data, this.auth), 201)
+Backend.prototype.createPost = async function (type, data) {
+  return responseHandler(await api.post(`/flows/pr/${type}/jwt`, data, this.auth), 201)
 }
 
 /*

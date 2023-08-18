@@ -1281,7 +1281,7 @@ UserModel.prototype.getToken = function () {
       username: this.record.username,
       role: this.record.role,
       status: this.record.status,
-      aud: this.config.jwt.audience,
+      aud: `${this.config.api}/${this.config.instance}`,
       iss: this.config.jwt.issuer,
     },
     this.config.jwt.secretOrKey,

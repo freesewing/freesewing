@@ -50,6 +50,8 @@ const baseConfig = {
   env: process.env.NODE_ENV || 'development',
   // Maintainer contact
   maintainer: 'joost@freesewing.org',
+  // Instance
+  instance: process.env.BACKEND_INSTANCE || Date.now(),
   // Feature flags
   use: {
     github: envToBool(process.env.BACKEND_ENABLE_GITHUB),
@@ -110,8 +112,7 @@ const baseConfig = {
   },
   jwt: {
     secretOrKey: encryptionKey,
-    issuer: process.env.BACKEND_JWT_ISSUER || 'freesewing.org',
-    audience: process.env.BACKEND_JWT_ISSUER || 'freesewing.org',
+    issuer: api,
     expiresIn: process.env.BACKEND_JWT_EXPIRY || '7d',
   },
   languages,
@@ -232,6 +233,7 @@ export const cloudflareImages = config.cloudflareImages || {}
 export const forwardmx = config.forwardmx || {}
 export const website = config.website
 export const githubToken = config.github.token
+export const instance = config.instance
 
 const vars = {
   BACKEND_DB_URL: ['required', 'db.url'],

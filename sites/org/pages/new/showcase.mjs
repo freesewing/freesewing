@@ -6,7 +6,7 @@ import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
-import { CreateShowcasePost, ns as createNs } from 'site/components/github/create-showcase.mjs'
+import { CreatePost, ns as createNs } from 'site/components/github/create-post.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 
 // Translation namespaces used on this page
@@ -24,7 +24,7 @@ const NewShowcasePage = ({ page }) => {
   return (
     <PageWrapper {...page} title={t('showcaseNew')} layout={BareLayout}>
       <div className="w-full px-4 mt-8">
-        <CreateShowcasePost noTitle />
+        <CreatePost type="showcase" />
       </div>
     </PageWrapper>
   )

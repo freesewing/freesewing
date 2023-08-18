@@ -10,6 +10,7 @@ datasource db {
 
 model Apikey {
   id            String    @id @default(uuid())
+  aud           String    @default("")
   createdAt     DateTime  @default(now())
   expiresAt     DateTime
   name          String    @default("")

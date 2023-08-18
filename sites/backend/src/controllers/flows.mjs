@@ -50,9 +50,9 @@ FlowsController.prototype.removeImage = async (req, res, tools) => {
  * Creates a pull request for a new showcase post
  * See: https://freesewing.dev/reference/backend/api
  */
-FlowsController.prototype.createShowcasePr = async (req, res, tools) => {
+FlowsController.prototype.createPostPr = async (req, res, tools, type) => {
   const Flow = new FlowModel(tools)
-  await Flow.createShowcasePr(req)
+  await Flow.createPostPr(req, type)
 
   return Flow.sendResponse(res)
 }
