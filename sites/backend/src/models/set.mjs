@@ -9,6 +9,7 @@ export function SetModel(tools) {
   return decorateModel(this, tools, {
     name: 'set',
     encryptedFields: ['measies', 'img', 'name', 'notes'],
+    jsonFields: ['measies'],
   })
 }
 
@@ -278,7 +279,11 @@ SetModel.prototype.guardedUpdate = async function ({ params, body, user }) {
   /*
    * measurements
    */
-  if (typeof body.measies === 'object') data.measies = this.sanitizeMeasurements(body.measies)
+  if (typeof body.measies === 'object')
+    data.measies = this.sanitizeMeasurements({
+      ...this.clear.measies,
+      ...body.measies,
+    })
 
   /*
    * img

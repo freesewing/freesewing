@@ -4,16 +4,17 @@ import { pages as posts } from 'site/prebuild/blog.mjs'
 import { meta } from 'site/prebuild/blog-meta.mjs'
 import { getPostIndexPaths, getPostIndexProps } from 'site/components/mdx/posts/utils.mjs'
 import { cloudflareImageUrl } from 'shared/utils.mjs'
+import { nsMerge } from 'shared/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
 import Link from 'next/link'
-import { TimeAgo } from 'shared/components/mdx/meta.mjs'
+import { TimeAgo, ns as timeagoNs } from 'shared/components/timeago/index.mjs'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Pagination } from 'shared/components/navigation/pagination.mjs'
 
 // Translation namespaces used on this page
-const namespaces = [...new Set(['designs', 'sections', ...pageNs])]
+const namespaces = nsMerge('designs', 'sections', pageNs, timeagoNs)
 
 const textShadow = {
   style: {
