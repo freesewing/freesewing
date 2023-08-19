@@ -55,6 +55,14 @@ export function usersRoutes(tools) {
     Users.isUsernameAvailable(req, res, tools)
   )
 
+  // Load full user data
+  app.get('/users/:id/jwt', passport.authenticate(...jwt), (req, res) =>
+    Users.allData(req, res, tools)
+  )
+  app.get('/users/:id/key', passport.authenticate(...bsc), (req, res) =>
+    Users.allData(req, res, tools)
+  )
+
   // Load a user profile
   app.get('/users/:id', (req, res) => Users.profile(req, res, tools))
 

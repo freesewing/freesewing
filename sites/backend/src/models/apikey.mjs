@@ -9,15 +9,20 @@ import { decorateModel } from '../utils/model-decorator.mjs'
  * @param {tools} object - A set of tools loaded in src/index.js
  * @returns {ApikeyModel} object - The ApikeyModel
  */
-export function ApikeyModel(tools) {
+export function ApikeyModel(tools, models) {
   /*
    * See utils/model-decorator.mjs for details
    */
-  return decorateModel(this, tools, {
-    name: 'apikey',
-    encryptedFields: ['name'],
-    models: ['user'],
-  })
+  return decorateModel(
+    this,
+    tools,
+    {
+      name: 'apikey',
+      encryptedFields: ['name'],
+      models: ['user'],
+    },
+    models
+  )
 }
 
 /*
@@ -167,12 +172,18 @@ ApikeyModel.prototype.userApikeys = async function (uid) {
   /*
    * Keys are an array, remove sercrets with map() and decrypt prior to returning
    */
-  return keys.map((key) => {
-    delete key.secret
-    key.name = this.decrypt(key.name)
+  return keys.map((key) => this.asKeyData(key))
+}
 
-    return key
-  })
+/*
+ * Takes non-instatiated key data and prepares it so it can be returned
+ */
+ApikeyModel.prototype.asKeyData = async function (key) {
+  delete key.secret
+  delete key.aud
+  key.name = this.decrypt(key.name)
+
+  return key
 }
 
 /*

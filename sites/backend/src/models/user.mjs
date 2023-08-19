@@ -53,6 +53,43 @@ UserModel.prototype.profile = async function ({ params }) {
 
 /*
  * Loads a user from the database based on the where clause you pass it
+ * In addition prepares it for returning all account data
+ * This is guarded so it enforces access control and validates input
+ * This is an anonymous route returning limited info (profile data)
+ *
+ * @param {params} object - The request (URL) parameters
+ * @returns {UserModel} object - The UserModel
+ */
+UserModel.prototype.allData = async function ({ params }) {
+  /*
+   * Is id set?
+   */
+  if (typeof params.id === 'undefined') return this.setResponse(403, 'idMissing')
+
+  /*
+   * Try to find the record in the database
+   * Note that find checks lusername, ehash, and id but we
+   * pass it in the username value as that's what the login
+   * rout does
+   */
+  await this.read(
+    { id: Number(params.id) },
+    { apikeys: true, bookmarks: true, patterns: true, sets: true }
+  )
+
+  /*
+   * If it does not exist, return 404
+   */
+  if (!this.exists) return this.setResponse(404)
+
+  return this.setResponse200({
+    result: 'success',
+    data: this.asData(),
+  })
+}
+
+/*
+ * Loads a user from the database based on the where clause you pass it
  * In addition prepares it for returning the account data
  * This is guarded so it enforces access control and validates input
  *
@@ -857,15 +894,21 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
   /*
    * Image (img)
    */
-  if (typeof body.img === 'string')
-    data.img = await replaceImage({
+  if (typeof body.img === 'string') {
+    const imgData = {
       id: `user-${this.record.ihash}`,
       metadata: {
         user: user.uid,
         ihash: this.record.ihash,
       },
-      b64: body.img,
-    })
+    }
+    /*
+     * Allow both a base64 encoded binary image or an URL
+     */
+    if (body.img.slice(0, 4) === 'http') imgData.url = body.img
+    else imgData.b64 = body.img
+    data.img = await replaceImage(imgData)
+  }
 
   /*
    * Now update the database record
@@ -1161,6 +1204,7 @@ UserModel.prototype.asProfile = function () {
     id: this.record.id,
     bio: this.clear.bio,
     img: this.clear.img,
+    ihash: this.record.ihash,
     patron: this.record.patron,
     role: this.record.role,
     username: this.record.username,
@@ -1185,7 +1229,7 @@ UserModel.prototype.asAccount = function () {
     createdAt: this.record.createdAt,
     email: this.clear.email,
     data: this.clear.data,
-    ihash: this.ihash,
+    ihash: this.record.ihash,
     img: this.clear.img,
     imperial: this.record.imperial,
     initial: this.clear.initial,
@@ -1205,6 +1249,31 @@ UserModel.prototype.asAccount = function () {
      * Add this so we can give a note to users about migrating their password
      */
     passwordType: JSON.parse(this.record.password).type,
+  }
+}
+
+/*
+ * Returns all user data (that is not included in the account data)
+ *
+ * @return {account} object - The account data as a plain object
+ */
+UserModel.prototype.asData = function () {
+  /*
+   * Nothing to do here but construct the object to return
+   */
+  return {
+    apikeys: this.record.apikeys
+      ? this.record.apikeys.map((key) => {
+          delete key.secret
+          delete key.aud
+          key.name = this.decrypt(key.name)
+
+          return key
+        })
+      : [],
+    bookmarks: this.record.bookmarks || [],
+    patterns: this.record.patterns || [],
+    sets: this.record.sets || [],
   }
 }
 

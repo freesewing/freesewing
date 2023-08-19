@@ -118,6 +118,18 @@ UsersController.prototype.profile = async (req, res, tools) => {
 }
 
 /*
+ * Returns all user data
+ *
+ * See: https://freesewing.dev/reference/backend/api
+ */
+UsersController.prototype.allData = async (req, res, tools) => {
+  const User = new UserModel(tools)
+  await User.allData(req)
+
+  return User.sendResponse(res)
+}
+
+/*
  * Checks whether a submitted username is available
  *
  * See: https://freesewing.dev/reference/backend/api
