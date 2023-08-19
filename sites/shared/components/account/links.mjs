@@ -212,7 +212,7 @@ export const AccountLinks = () => {
         <div className="">
           <h4 className="my-2">{t('linkedIdentities')}</h4>
           {Object.keys(conf.account.fields.identities).map((item) => (
-            <AccountLink href={`/account/identities/${item}`} title={t(item)}>
+            <AccountLink href={`/account/${item}`} title={t(item)}>
               <div className="flex flex-row items-center gap-3 font-medium">
                 {itemIcons[item]}
                 {t(item)}
