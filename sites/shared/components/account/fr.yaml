@@ -19,7 +19,6 @@ signOut: S'inscrire
 politeOhCrap: Oh, les baguettes
 bio: Bio
 email: Adresse électronique
-github: Nom d'utilisateur Github
 img: Image de profil
 username: Nom d'utilisateur
 compare: Comparaison des ensembles de mesures
@@ -116,7 +115,12 @@ oneMomentPlease: Veuillez patienter
 emailChangeConfirmation: Nous avons envoyé un e-mail à ta nouvelle adresse pour confirmer ce changement.
 vagueError: Quelque chose s'est mal passé, et nous ne sommes pas certains de la façon de le gérer. Essaie à nouveau, ou fais appel à un être humain pour obtenir de l'aide.
 #github
-githubTitle: Saisis ton nom d'utilisateur github ici pour recevoir des mises à jour lorsque tu signales un problème par le biais de ce site web.
+githubTitle: Link your GitHub identity
+githubWhy1: Enter your GitHub username and email here and we will use them when interacting with GitHub on your behalf.
+githubWhy2: Note that both your GitHub username and email is public info. This merely allows us to make a link between your FreeSewing account and GitHub account.
+githubWhy3: For example, when you report a problem on this website, we can mention you so you will receive notifications when there is an update. For this, your username is sufficient.
+githubWhy4: When you submit a showcase post or make changed to our content, we can credit those commits to you if we have both your username and the email address you use on GitHub.
+tooComplex: If all of this in confusing, you don't have to provide this info. It's an advanced feature.
 #languge
 languageTitle: Quelle langue préfères-tu ?
 #password
@@ -169,6 +173,10 @@ designNew: Créer un nouveau dessin
 designNewInfo: Les motifs FreeSewing sont de petits paquets de code JavaScript qui génèrent des motifs. Il n'est pas difficile de créer tes propres motifs, et nous avons un tutoriel détaillé pour te permettre de commencer.
 pluginNew: Créer un nouveau plugin
 pluginNewInfo: Les fonctionnalités de FreeSewing peuvent être étendues grâce à des plugins. Créer un plugin est facile, et nous avons un guide pour te guider du début à la fin.
+showcaseNew: Create a new showcase post
+showcaseNewInfo: If you would like to share something you (or someone else) made based on our designs, you can start a draft showcase post here.
+blogNew: Create a new blog post
+blogNewInfo: If you would like to write on the FreeSewing blog, you can start a draft blog post here.
 newBasic: Les bases
 newAdvanced: Va plus loin
 generateANewThing: "Génère un nouveau { thing }"
