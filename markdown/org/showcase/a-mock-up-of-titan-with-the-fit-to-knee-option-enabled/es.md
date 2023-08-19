@@ -12,7 +12,7 @@ A FreeSewing maker shared this mock-up of Titan. She reported being overall very
 
 This showcase was submitted anonymously, and is shared with permission.
 
-![Vista posterior](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-a-casual-test-of-titan-with-the-fit-to-knee-option-enabled-1/public "Vista posterior")
+![Vista posterior](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-a-mock-up-of-titan-with-the-fit-to-knee-option-enabled-1/public "Vista posterior")
 
-![Vista lateral](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-a-casual-test-of-titan-with-the-fit-to-knee-option-enabled-2/public "Vista lateral")
+![Vista lateral](https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/showcase-a-mock-up-of-titan-with-the-fit-to-knee-option-enabled-2/public "Vista lateral")
 
