@@ -60,12 +60,11 @@ export const SlugInput = ({ slug, setSlug, title, slugAvailable }) => {
   useEffect(() => {
     if (title !== slug) setSlug(slugify(title))
   }, [title])
-  console.log(slugAvailable)
 
   return (
     <input
       className={`input input-text input-bordered input-lg w-full mb-2 ${
-        !slugAvailable || slug.length < 4 ? 'input-error' : 'input-success'
+        true || !slugAvailable || slug.length < 4 ? 'input-error' : 'input-success'
       }`}
       value={slug}
       placeholder="Type your title here"

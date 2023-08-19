@@ -4,9 +4,7 @@ import { useTranslation } from 'next-i18next'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import Markdown from 'react-markdown'
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
@@ -14,7 +12,7 @@ import { Popout } from 'shared/components/popout/index.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 
-export const ns = ['account', 'toast']
+export const ns = ['account', 'status']
 
 export const Tab = ({ id, activeTab, setActiveTab, t }) => (
   <button
@@ -27,14 +25,11 @@ export const Tab = ({ id, activeTab, setActiveTab, t }) => (
 )
 
 export const BioSettings = ({ title = false, welcome = false }) => {
-  // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
-
   // Hooks
   const { account, setAccount, token } = useAccount()
   const backend = useBackend(token)
   const { t } = useTranslation(ns)
-  const toast = useToast()
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   // State
   const [bio, setBio] = useState(account.bio)
@@ -42,13 +37,12 @@ export const BioSettings = ({ title = false, welcome = false }) => {
 
   // Helper method to save bio
   const save = async () => {
-    startLoading()
+    setLoadingStatus([true, 'processingUpdate'])
     const result = await backend.updateAccount({ bio })
     if (result.success) {
       setAccount(result.data.account)
-      toast.for.settingsSaved()
-    } else toast.for.backendError()
-    stopLoading()
+      setLoadingStatus([true, 'settingsSaved', true, true])
+    } else setLoadingStatus([true, 'backendError', true, true])
   }
 
   // Next step in the onboarding
@@ -62,6 +56,7 @@ export const BioSettings = ({ title = false, welcome = false }) => {
 
   return (
     <div className="max-w-xl xl:pl-4">
+      <LoadingStatus />
       {title ? <h1 className="text-4xl">{t('bioTitle')}</h1> : null}
       <div className="tabs w-full">
         <Tab id="edit" {...tabProps} />
@@ -83,7 +78,7 @@ export const BioSettings = ({ title = false, welcome = false }) => {
         )}
       </div>
       <SaveSettingsButton btnProps={{ onClick: save }} welcome={welcome} />
-      {!welcome && <BackToAccountButton loading={loading} />}
+      {!welcome && <BackToAccountButton />}
       <Popout tip compact>
         {t('mdSupport')}
       </Popout>

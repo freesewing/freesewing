@@ -4,26 +4,21 @@ import { useTranslation } from 'next-i18next'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Verification methods
 import { validateEmail, validateTld } from 'shared/utils.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 
-export const ns = ['account', 'toast']
+export const ns = ['account', 'status']
 
 export const EmailSettings = ({ title = false }) => {
-  // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
-
   // Hooks
-  const { account, setAccount, token } = useAccount()
-  const backend = useBackend(token)
+  const { account, setAccount } = useAccount()
+  const backend = useBackend()
   const { t } = useTranslation(ns)
-  const toast = useToast()
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   // State
   const [email, setEmail] = useState(account.email)
@@ -31,14 +26,13 @@ export const EmailSettings = ({ title = false }) => {
 
   // Helper method to update account
   const save = async () => {
-    startLoading()
+    setLoadingStatus([true, 'processingUpdate'])
     const result = await backend.updateAccount({ email })
     if (result.success) {
       setAccount(result.data.account)
-      toast.for.settingsSaved()
-    } else toast.for.backendError()
+      setLoadingStatus([true, 'settingsSaved', true, true])
+    } else setLoadingStatus([true, 'backendError', true, true])
     setChanged(true)
-    stopLoading()
   }
 
   // Is email valid?
@@ -46,6 +40,7 @@ export const EmailSettings = ({ title = false }) => {
 
   return (
     <div className="max-w-xl">
+      <LoadingStatus />
       {title ? <h2 className="text-4xl">{t('emailTitle')}</h2> : null}
       {changed ? (
         <Popout note>
@@ -71,7 +66,7 @@ export const EmailSettings = ({ title = false }) => {
           </button>
         </>
       )}
-      <BackToAccountButton loading={loading} />
+      <BackToAccountButton />
     </div>
   )
 }

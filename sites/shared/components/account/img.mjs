@@ -2,27 +2,27 @@
 import { useState, useContext, useCallback } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useDropzone } from 'react-dropzone'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { cloudflareImageUrl } from 'shared/utils.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
+import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
+import { DownloadIcon } from 'shared/components/icons.mjs'
 
-export const ns = ['account', 'toast']
+export const ns = ['account', 'status']
 
 export const ImgSettings = ({ title = false, welcome = false }) => {
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
   const { account, setAccount, token } = useAccount()
   const backend = useBackend(token)
-  const toast = useToast()
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const { t } = useTranslation(ns)
 
   const [img, setImg] = useState(false)
+  const [url, setUrl] = useState('')
 
   const onDrop = useCallback((acceptedFiles) => {
     const reader = new FileReader()
@@ -32,26 +32,35 @@ export const ImgSettings = ({ title = false, welcome = false }) => {
     acceptedFiles.forEach((file) => reader.readAsDataURL(file))
   }, [])
 
+  const imageFromUrl = async () => {
+    const result = await backend.uploadImage({ type, subId, slug, url })
+    if (result.success) setImg(result.data.imgId)
+  }
+
   const { getRootProps, getInputProps } = useDropzone({ onDrop })
 
   const save = async () => {
-    startLoading()
-    const result = await backend.updateAccount({ img })
+    setLoadingStatus([true, 'processingUpdate'])
+    const result = await backend.updateAccount({ img: url ? url : img })
     if (result.success) {
       setAccount(result.data.account)
-      toast.for.settingsSaved()
-    } else toast.for.backendError()
-    stopLoading()
+      setLoadingStatus([true, 'settingsSaved', true, true])
+    } else setLoadingStatus([true, 'backendError', true, false])
   }
 
   const nextHref = '/docs/guide'
 
   return (
     <div className="max-w-xl">
+      <LoadingStatus />
       {title ? <h2 className="text-4xl">{t('imgTitle')}</h2> : null}
       <div>
         {!welcome || img !== false ? (
-          <img alt="img" src={img || account.img} className="shadow mb-4" />
+          <img
+            alt="img"
+            src={img || cloudflareImageUrl({ id: `user-${account.ihash}`, variant: 'public' })}
+            className="shadow mb-4"
+          />
         ) : null}
         <div
           {...getRootProps()}
@@ -66,6 +75,16 @@ export const ImgSettings = ({ title = false, welcome = false }) => {
           <button className={`btn btn-secondary btn-outline mt-4 px-8`}>
             {t('imgSelectImage')}
           </button>
+        </div>
+        <p className="hidden lg:block p-0 my-2 text-center">{t('or')}</p>
+        <div className="flex flex-row items-center">
+          <input
+            type="url"
+            className="input input-secondary w-full input-bordered"
+            placeholder="Paste an image URL here"
+            value={url}
+            onChange={(evt) => setUrl(evt.target.value)}
+          />
         </div>
       </div>
 
@@ -96,7 +115,7 @@ export const ImgSettings = ({ title = false, welcome = false }) => {
       ) : (
         <>
           <SaveSettingsButton btnProps={{ onClick: save }} />
-          <BackToAccountButton loading={loading} />
+          <BackToAccountButton />
         </>
       )}
     </div>

@@ -1,6 +1,7 @@
 // Dependencies
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { nsMerge } from 'shared/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
@@ -8,7 +9,7 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 
 // Translation namespaces used on this page
-const ns = [...new Set(['account', ...pageNs, ...authNs])]
+const ns = nsMerge('account', 'status', pageNs, authNs)
 
 /*
  * Some things should never generated as SSR

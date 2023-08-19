@@ -11,28 +11,39 @@ export const freeSewingConfig = {
   account: {
     fields: {
       data: {
+        bookmarks: 1,
         sets: 1,
         patterns: 1,
+        apikeys: 4,
       },
       info: {
-        bio: 1,
-        email: 3,
-        github: 3,
-        img: 2,
-        units: 2,
-        language: 2,
         username: 2,
+        bio: 1,
+        img: 2,
+        email: 3,
       },
       settings: {
-        compare: 3,
-        consent: 2,
-        control: 1,
-        mfa: 4,
+        language: 2,
+        units: 2,
         newsletter: 2,
-        password: 2,
+        compare: 3,
+        control: 1,
+        consent: 2,
       },
-      developer: {
+      security: {
+        password: 2,
+        mfa: 4,
         apikeys: 4,
+      },
+      identities: {
+        github: 3,
+        instagram: 3,
+        mastodon: 3,
+        reddit: 3,
+        twitter: 3,
+        twitch: 3,
+        tiktok: 3,
+        website: 3,
       },
     },
     sets: {

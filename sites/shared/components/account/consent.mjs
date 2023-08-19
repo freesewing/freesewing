@@ -1,12 +1,11 @@
 // Dependencies
 import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
+import { nsMerge } from 'shared/utils.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import Link from 'next/link'
 import { Popout } from 'shared/components/popout/index.mjs'
@@ -14,7 +13,7 @@ import { BackToAccountButton } from './shared.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 import { GdprAccountDetails, ns as gdprNs } from 'shared/components/gdpr/details.mjs'
 
-export const ns = [...gdprNs, 'account', 'toast']
+export const ns = nsMerge(gdprNs, 'account', 'toast')
 
 const Checkbox = ({ value, setter, label, children = null }) => (
   <div
@@ -37,13 +36,10 @@ const Checkbox = ({ value, setter, label, children = null }) => (
 )
 
 export const ConsentSettings = ({ title = false }) => {
-  // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
-
   // Hooks
   const { account, token, setAccount, setToken } = useAccount()
   const backend = useBackend(token)
-  const toast = useToast()
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const { t } = useTranslation(ns)
 
   // State
@@ -56,27 +52,28 @@ export const ConsentSettings = ({ title = false }) => {
     if (consent1) newConsent = 1
     if (consent1 && consent2) newConsent = 2
     if (newConsent !== account.consent) {
-      startLoading()
+      setLoadingStatus([true, 'processingUpdate'])
       const result = await backend.updateAccount({ consent: newConsent })
-      if (result.data?.result === 'success') toast.for.settingsSaved()
-      else toast.for.backendError()
-      stopLoading()
+      if (result.data?.result === 'success') {
+        setLoadingStatus([true, 'settingsSaved', true, true])
+        setAccount(result.data.account)
+      } else setLoadingStatus([true, 'backendError', true, true])
     }
   }
 
   // Helper method to remove the account
   const removeAccount = async () => {
-    startLoading()
+    setLoadingStatus([true, 'processingUpdate'])
     const result = await backend.removeAccount()
-    if (result === true) toast.for.settingsSaved()
-    else toast.for.backendError()
+    if (result === true) setLoadingStatus([true, 'settingsSaved', true, true])
+    else setLoadingStatus([true, 'backendError', true, true])
     setToken(null)
     setAccount({ username: false })
-    stopLoading()
   }
 
   return (
     <div className="max-w-xl xl:pl-4">
+      <LoadingStatus />
       {title ? <h2 className="text-4xl">{t('privacyMatters')}</h2> : null}
       <p>{t('compliant')}</p>
       <p>{t('consentWhyAnswer')}</p>
@@ -108,7 +105,7 @@ export const ConsentSettings = ({ title = false }) => {
           }}
         />
       )}
-      <BackToAccountButton loading={loading} />
+      <BackToAccountButton />
       <p className="text-center opacity-50 mt-12">
         <Link href="/docs/various/privacy" className="hover:text-secondary underline">
           FreeSewing Privacy Notice

@@ -39,7 +39,7 @@ export const extendSiteNav = async (siteNav, lang) => {
     h: 1,
     t: t('sections:new'),
     apikey: {
-      c: conf.account.fields.developer.apikeys,
+      c: conf.account.fields.security.apikeys,
       s: 'new/apikey',
       t: t('newApikey'),
       o: 30,

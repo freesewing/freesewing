@@ -165,6 +165,13 @@ Backend.prototype.reloadAccount = async function () {
 }
 
 /*
+ * Load all user data
+ */
+Backend.prototype.getUserData = async function (uid) {
+  return responseHandler(await await api.get(`/users/${uid}/jwt`, this.auth))
+}
+
+/*
  * Load user profile
  */
 Backend.prototype.getProfile = async function (uid) {
