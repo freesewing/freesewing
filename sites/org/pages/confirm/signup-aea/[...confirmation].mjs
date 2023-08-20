@@ -1,6 +1,5 @@
 // Hooks
 import { useEffect, useState } from 'react'
-import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
@@ -26,8 +25,7 @@ const ActiveSignUpPage = () => {
     path: ['confirm', 'emailchange', confirmationId],
   }
 
-  const { token } = useAccount()
-  const backend = useBackend(token)
+  const backend = useBackend()
   const { t } = useTranslation(ns)
 
   const [id, setId] = useState(false)

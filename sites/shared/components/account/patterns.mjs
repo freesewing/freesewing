@@ -37,8 +37,8 @@ export const ns = ['account', 'patterns', 'toast']
 export const StandAloneNewSet = () => {
   const { t } = useTranslation(['account'])
   const toast = useToast()
-  const { account, token } = useAccount()
-  const backend = useBackend(token)
+  const { account } = useAccount()
+  const backend = useBackend()
 
   return (
     <div className="max-w-xl">
@@ -571,8 +571,8 @@ const Pattern = ({ pattern, t, account, backend, refresh }) => {
 // Component for the account/patterns page
 export const Patterns = ({ standAlone = false }) => {
   // Hooks
-  const { account, token } = useAccount()
-  const backend = useBackend(token)
+  const { account } = useAccount()
+  const backend = useBackend()
   const { t } = useTranslation(ns)
 
   // State

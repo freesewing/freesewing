@@ -29,7 +29,7 @@ BookmarksController.prototype.read = async (req, res, tools) => {
  * See: https://freesewing.dev/reference/backend/api
  */
 BookmarksController.prototype.list = async (req, res, tools) => {
-  const Bookmark = new BoolmarkModel(tools)
+  const Bookmark = new BookmarkModel(tools)
   const bookmarks = await Bookmark.userBookmarks(req.user.uid)
 
   if (bookmarks) Bookmark.setResponse(200, 'success', { bookmarks })

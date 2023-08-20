@@ -24,8 +24,8 @@ const CodeInput = ({ code, setCode, t }) => (
 
 export const MfaSettings = ({ title = false, welcome = false }) => {
   // Hooks
-  const { account, setAccount, token } = useAccount()
-  const backend = useBackend(token)
+  const { account, setAccount } = useAccount()
+  const backend = useBackend()
   const { t } = useTranslation(ns)
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 

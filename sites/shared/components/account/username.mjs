@@ -14,8 +14,8 @@ export const ns = ['account', 'toast']
 
 export const UsernameSettings = ({ title = false, welcome = false }) => {
   // Hooks
-  const { account, setAccount, token } = useAccount()
-  const backend = useBackend(token)
+  const { account, setAccount } = useAccount()
+  const backend = useBackend()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const { t } = useTranslation(ns)
   const [username, setUsername] = useState(account.username)

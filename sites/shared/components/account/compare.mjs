@@ -1,5 +1,5 @@
 // Dependencies
-import { useState, useContext } from 'react'
+import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
@@ -13,8 +13,8 @@ export const ns = ['account', 'status']
 
 export const CompareSettings = ({ title = false, welcome = false }) => {
   // Hooks
-  const { account, setAccount, token } = useAccount()
-  const backend = useBackend(token)
+  const { account, setAccount } = useAccount()
+  const backend = useBackend()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const { t } = useTranslation(ns)
 

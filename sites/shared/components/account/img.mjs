@@ -15,8 +15,8 @@ import { SaveSettingsButton } from 'shared/components/buttons/save-settings-butt
 export const ns = ['account', 'status']
 
 export const ImgSettings = ({ title = false, welcome = false }) => {
-  const { account, setAccount, token } = useAccount()
-  const backend = useBackend(token)
+  const { account, setAccount } = useAccount()
+  const backend = useBackend()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const { t } = useTranslation(ns)
 

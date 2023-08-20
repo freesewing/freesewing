@@ -135,8 +135,8 @@ export const EditCuratedSet = ({ id }) => {
   const { setModal } = useContext(ModalContext)
 
   // Hooks
-  const { account, token } = useAccount()
-  const backend = useBackend(token)
+  const { account } = useAccount()
+  const backend = useBackend()
   const {
     t,
     //i18n

@@ -9,7 +9,7 @@ import { decorateModel } from '../utils/model-decorator.mjs'
  * @param {tools} object - A set of tools loaded in src/index.js
  * @returns {ApikeyModel} object - The ApikeyModel
  */
-export function ApikeyModel(tools, models) {
+export function ApikeyModel(tools) {
   /*
    * See utils/model-decorator.mjs for details
    */

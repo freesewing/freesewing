@@ -2,7 +2,6 @@
 import { useTranslation } from 'next-i18next'
 // Hooks
 import { useState } from 'react'
-import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
@@ -14,8 +13,7 @@ export const ns = ['account', 'status']
 
 export const ExportAccount = () => {
   // Hooks
-  const { setAccount, token } = useAccount()
-  const backend = useBackend(token)
+  const backend = useBackend()
   const { t } = useTranslation(ns)
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 

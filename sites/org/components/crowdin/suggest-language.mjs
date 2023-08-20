@@ -1,7 +1,6 @@
 // Context
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Hooks
-import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useState, useContext } from 'react'
@@ -48,8 +47,7 @@ export const SuggestLanguageForm = () => {
   const { startLoading, stopLoading } = useContext(LoadingContext)
 
   // Hooks
-  const { token } = useAccount()
-  const backend = useBackend(token)
+  const backend = useBackend()
   const toast = useToast()
 
   // State

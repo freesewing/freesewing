@@ -11,8 +11,8 @@ export const ns = ['account', 'status']
 
 export const ReloadAccount = ({ title = false }) => {
   // Hooks
-  const { setAccount, token } = useAccount()
-  const backend = useBackend(token)
+  const { setAccount } = useAccount()
+  const backend = useBackend()
   const { t } = useTranslation(ns)
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 

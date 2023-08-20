@@ -26,8 +26,8 @@ export const Tab = ({ id, activeTab, setActiveTab, t }) => (
 
 export const BioSettings = ({ title = false, welcome = false }) => {
   // Hooks
-  const { account, setAccount, token } = useAccount()
-  const backend = useBackend(token)
+  const { account, setAccount } = useAccount()
+  const backend = useBackend()
   const { t } = useTranslation(ns)
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 

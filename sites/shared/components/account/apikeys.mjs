@@ -289,8 +289,8 @@ export const NewApikey = ({ standalone = false }) => {
   const { startLoading, stopLoading } = useContext(LoadingContext)
 
   // Hooks
-  const { account, token } = useAccount()
-  const backend = useBackend(token)
+  const { account } = useAccount()
+  const backend = useBackend()
   const { t } = useTranslation(ns)
   const toast = useToast()
 
@@ -327,8 +327,8 @@ export const Apikeys = () => {
   const { startLoading, stopLoading, loading } = useContext(LoadingContext)
 
   // Hooks
-  const { account, token } = useAccount()
-  const backend = useBackend(token)
+  const { account } = useAccount()
+  const backend = useBackend()
   const { t } = useTranslation(ns)
   const toast = useToast()
   const { CollapseButton, closeCollapseButton } = useCollapseButton()

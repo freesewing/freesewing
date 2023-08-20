@@ -14,9 +14,9 @@ export const ns = ['account', 'locales', statusNs]
 
 export const LanguageSettings = ({ title = false }) => {
   // Hooks
-  const { account, setAccount, token } = useAccount()
+  const { account, setAccount } = useAccount()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
-  const backend = useBackend(token)
+  const backend = useBackend()
   const { t } = useTranslation(ns)
 
   // State

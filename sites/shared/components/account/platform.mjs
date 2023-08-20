@@ -14,8 +14,8 @@ export const ns = ['account', 'status']
 
 export const PlatformSettings = ({ platform }) => {
   // Hooks
-  const { account, setAccount, token } = useAccount()
-  const backend = useBackend(token)
+  const { account, setAccount } = useAccount()
+  const backend = useBackend()
   const { t } = useTranslation(ns)
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 

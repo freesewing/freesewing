@@ -64,7 +64,7 @@ export const SlugInput = ({ slug, setSlug, title, slugAvailable }) => {
   return (
     <input
       className={`input input-text input-bordered input-lg w-full mb-2 ${
-        true || !slugAvailable || slug.length < 4 ? 'input-error' : 'input-success'
+        !slugAvailable || slug.length < 4 ? 'input-error' : 'input-success'
       }`}
       value={slug}
       placeholder="Type your title here"

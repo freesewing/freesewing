@@ -37,8 +37,8 @@ const Checkbox = ({ value, setter, label, children = null }) => (
 
 export const ConsentSettings = ({ title = false }) => {
   // Hooks
-  const { account, token, setAccount, setToken } = useAccount()
-  const backend = useBackend(token)
+  const { account, setAccount, setToken } = useAccount()
+  const backend = useBackend()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const { t } = useTranslation(ns)
 

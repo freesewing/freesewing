@@ -36,7 +36,7 @@ const AccountNewsletterPage = ({ page }) => {
   const { t } = useTranslation(ns)
 
   return (
-    <PageWrapper {...page}>
+    <PageWrapper {...page} title={t('newsletter')}>
       <DynamicAuthWrapper>
         <DynamicNewsletter title />
       </DynamicAuthWrapper>

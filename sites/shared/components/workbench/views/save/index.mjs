@@ -4,7 +4,6 @@ import { capitalize, shortDate } from 'shared/utils.mjs'
 import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
-import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 // Context
@@ -222,8 +221,7 @@ const SaveExistingPattern = ({
 export const SaveView = ({ design, settings, from = false }) => {
   // Hooks
   const { t } = useTranslation(ns)
-  const { token } = useAccount()
-  const backend = useBackend(token)
+  const backend = useBackend()
   const router = useRouter()
   const toast = useToast()
   // Context

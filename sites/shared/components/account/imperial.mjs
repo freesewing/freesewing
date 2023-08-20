@@ -13,9 +13,9 @@ export const ns = ['account', 'status']
 
 export const ImperialSettings = ({ title = false, welcome = false }) => {
   // Hooks
-  const { account, setAccount, token } = useAccount()
+  const { account, setAccount } = useAccount()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
-  const backend = useBackend(token)
+  const backend = useBackend()
   const { t } = useTranslation(ns)
 
   // State

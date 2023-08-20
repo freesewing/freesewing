@@ -39,8 +39,8 @@ export const ns = ['account', 'patterns', 'toast']
 export const StandAloneNewSet = () => {
   const { t } = useTranslation(['account'])
   const toast = useToast()
-  const { account, token } = useAccount()
-  const backend = useBackend(token)
+  const { account } = useAccount()
+  const backend = useBackend()
 
   return (
     <div className="max-w-xl">
@@ -587,31 +587,11 @@ const MeasurementsSet = ({ mset, t, account, backend, refresh }) => {
   )
 }
 
-// Component for the 'new/apikey' page
-//export const NewApikey = ({ app, standAlone = false }) => {
-//  const { account, token } = useAccount()
-//  const backend = useBackend(token)
-//  const { t } = useTranslation(ns)
-//  const toast = useToast()
-//
-//  const [keys, setKeys] = useState([])
-//  const [generate, setGenerate] = useState(false)
-//  const [added, setAdded] = useState(0)
-//
-//  const oneAdded = () => setAdded(added + 1)
-//
-//  return (
-//    <div className="max-w-xl xl:pl-4">
-//      <NewKey {...{ app, t, account, setGenerate, backend, toast, oneAdded, standAlone }} />
-//    </div>
-//  )
-//}
-
 // Component for the account/sets page
 export const Sets = ({ title = true }) => {
   // Hooks
-  const { account, token } = useAccount()
-  const backend = useBackend(token)
+  const { account } = useAccount()
+  const backend = useBackend()
   const { t } = useTranslation(ns)
   const toast = useToast()
   const { CollapseButton, closeCollapseButton } = useCollapseButton()

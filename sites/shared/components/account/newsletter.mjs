@@ -13,8 +13,8 @@ export const ns = ['account', 'status']
 
 export const NewsletterSettings = ({ title = false, welcome = false }) => {
   // Hooks
-  const { account, setAccount, token } = useAccount()
-  const backend = useBackend(token)
+  const { account, setAccount } = useAccount()
+  const backend = useBackend()
   const { t } = useTranslation(ns)
   const { LoadingStatus, setLoadingStatus } = useLoadingStatus()
   // State

@@ -6,7 +6,6 @@ import { capitalize } from 'shared/utils.mjs'
 // Hooks
 import { useState, useEffect } from 'react'
 import { useTranslation } from 'next-i18next'
-import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Components
 import { SetCandidate, ns as setNs } from 'shared/components/sets/set-candidate.mjs'
@@ -18,8 +17,7 @@ export const ns = setNs
 
 export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
   // Hooks
-  const { token } = useAccount()
-  const backend = useBackend(token)
+  const backend = useBackend()
   const { t, i18n } = useTranslation('sets')
 
   // State
@@ -119,8 +117,7 @@ export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
 
 export const UserSetPicker = ({ design, t, href, clickHandler }) => {
   // Hooks
-  const { token } = useAccount()
-  const backend = useBackend(token)
+  const backend = useBackend()
 
   // State
   const [sets, setSets] = useState({})
