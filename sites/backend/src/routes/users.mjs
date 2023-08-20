@@ -73,6 +73,23 @@ export function usersRoutes(tools) {
   app.get('/account/export/key', passport.authenticate(...bsc), (req, res) =>
     Users.exportAccount(req, res, tools)
   )
+
+  // Restrict processing of account data
+  app.get('/account/restrict/jwt', passport.authenticate(...jwt), (req, res) =>
+    Users.restrictAccount(req, res, tools)
+  )
+  app.get('/account/restrict/key', passport.authenticate(...bsc), (req, res) =>
+    Users.restrictAccount(req, res, tools)
+  )
+
+  // Remove account
+  app.delete('/account/jwt', passport.authenticate(...jwt), (req, res) =>
+    Users.removeAccount(req, res, tools)
+  )
+  app.delete('/account/key', passport.authenticate(...bsc), (req, res) =>
+    Users.removeAccount(req, res, tools)
+  )
+
   /*
 
   // Remove account

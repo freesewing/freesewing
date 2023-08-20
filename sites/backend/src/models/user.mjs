@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken'
 import { log } from '../utils/log.mjs'
 import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
-import { replaceImage, importImage } from '../utils/cloudflare-images.mjs'
+import { replaceImage, importImage, removeImage } from '../utils/cloudflare-images.mjs'
 import { clean, asJson, i18nUrl, writeExportedData } from '../utils/index.mjs'
 import { decorateModel } from '../utils/model-decorator.mjs'
 
@@ -107,6 +107,76 @@ UserModel.prototype.exportAccount = async function ({ user }) {
   return this.setResponse200({
     result: 'success',
     data: writeExportedData(this.asExport()),
+  })
+}
+
+/*
+ * Restricts processing of account data
+ *
+ * @param {user} object - The user as loaded by the authentication middleware
+ * @returns {UserModel} object - The UserModel
+ */
+UserModel.prototype.restrictAccount = async function ({ user }) {
+  /*
+   * Read the record from the database
+   */
+  await this.read({ id: user.uid }, { apikeys: true, bookmarks: true, patterns: true, sets: true })
+
+  /*
+   * If it does not exist, return 404
+   */
+  if (!this.exists) return this.setResponse(404)
+
+  /*
+   * Update status to block the account
+   */
+  await this.update({ status: -1 })
+
+  return this.setResponse200({
+    result: 'success',
+    data: {},
+  })
+}
+
+/*
+ * Remove account
+ *
+ * @param {user} object - The user as loaded by the authentication middleware
+ * @returns {UserModel} object - The UserModel
+ */
+UserModel.prototype.removeAccount = async function ({ user }) {
+  /*
+   * Read the record from the database
+   */
+  await this.read({ id: user.uid }, { apikeys: true, bookmarks: true, patterns: true, sets: true })
+
+  /*
+   * If it does not exist, return 404
+   */
+  if (!this.exists) return this.setResponse(404)
+
+  /*
+   * Remove user image
+   */
+  await removeImage(`user-${this.record.ihash}`)
+
+  /*
+   * Remove account
+   */
+  try {
+    await this.prisma.pattern.deleteMany({ where: { userId: user.uid } })
+    await this.prisma.set.deleteMany({ where: { userId: user.uid } })
+    await this.prisma.bookmark.deleteMany({ where: { userId: user.uid } })
+    await this.prisma.apikey.deleteMany({ where: { userId: user.uid } })
+    await this.prisma.confirmation.deleteMany({ where: { userId: user.uid } })
+    await this.delete()
+  } catch (err) {
+    log.warn(err, 'Error while removing account')
+  }
+
+  return this.setResponse200({
+    result: 'success',
+    data: {},
   })
 }
 

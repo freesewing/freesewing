@@ -56,6 +56,10 @@ restrict: Restrict processing of your data
 disable: Disable your account
 remove: Remove your account
 
+proceedWithCaution: Proceed with caution
+restrictWarning: While no data will be removed, this will disable your account. Furthermore, you can not undo this on your own, but will have to contact support when you want to restore access to your account.
+noWayBack: There is no way back from this.
+
 mdSupport: You can use markdown here
 or: or
 continue: Continue
