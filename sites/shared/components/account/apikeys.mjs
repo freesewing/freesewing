@@ -295,7 +295,6 @@ export const NewApikey = ({ standalone = false }) => {
   const toast = useToast()
 
   // State
-  const [keys, setKeys] = useState([])
   const [generate, setGenerate] = useState(false)
   const [added, setAdded] = useState(0)
 
@@ -308,6 +307,7 @@ export const NewApikey = ({ standalone = false }) => {
         {...{
           t,
           account,
+          generate,
           setGenerate,
           backend,
           toast,

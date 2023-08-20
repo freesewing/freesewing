@@ -51,7 +51,7 @@ export const ButtonText = ({ children }) => (
 
 export const SignIn = () => {
   const { setAccount, setToken, seenUser, setSeenUser } = useAccount()
-  const { t } = useTranslation(['signin', 'signup', 'toast'])
+  const { t } = useTranslation(['signin', 'signup', 'status'])
   const backend = useBackend()
   const router = useRouter()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
@@ -102,7 +102,6 @@ export const SignIn = () => {
         setLoadingStatus([true, msg, true, true])
         router.push('/account')
       }
-      return toast.success(<b>{msg}</b>)
     }
     // Sign-in failed
     if (result.response?.response?.status === 401) {
