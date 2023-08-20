@@ -118,6 +118,54 @@ UsersController.prototype.profile = async (req, res, tools) => {
 }
 
 /*
+ * Returns all user data
+ *
+ * See: https://freesewing.dev/reference/backend/api
+ */
+UsersController.prototype.allData = async (req, res, tools) => {
+  const User = new UserModel(tools)
+  await User.allData(req)
+
+  return User.sendResponse(res)
+}
+
+/*
+ * Exports all account data
+ *
+ * See: https://freesewing.dev/reference/backend/api
+ */
+UsersController.prototype.exportAccount = async (req, res, tools) => {
+  const User = new UserModel(tools)
+  await User.exportAccount(req)
+
+  return User.sendResponse(res)
+}
+
+/*
+ * Restricts processing of account data
+ *
+ * See: https://freesewing.dev/reference/backend/api
+ */
+UsersController.prototype.restrictAccount = async (req, res, tools) => {
+  const User = new UserModel(tools)
+  await User.restrictAccount(req)
+
+  return User.sendResponse(res)
+}
+
+/*
+ * Remove account
+ *
+ * See: https://freesewing.dev/reference/backend/api
+ */
+UsersController.prototype.removeAccount = async (req, res, tools) => {
+  const User = new UserModel(tools)
+  await User.removeAccount(req)
+
+  return User.sendResponse(res)
+}
+
+/*
  * Checks whether a submitted username is available
  *
  * See: https://freesewing.dev/reference/backend/api

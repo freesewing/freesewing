@@ -1,12 +1,10 @@
 // Hooks
-import { useState, useEffect, useContext } from 'react'
+import { useState, useEffect } from 'react'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useTranslation } from 'next-i18next'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useRouter } from 'next/router'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import Link from 'next/link'
 import { EmailIcon, KeyIcon, RightIcon, WarningIcon } from 'shared/components/icons.mjs'
@@ -52,12 +50,11 @@ export const ButtonText = ({ children }) => (
 )
 
 export const SignIn = () => {
-  const { startLoading, stopLoading } = useContext(LoadingContext)
   const { setAccount, setToken, seenUser, setSeenUser } = useAccount()
-  const { t } = useTranslation(['signin', 'signup', 'toast'])
+  const { t } = useTranslation(['signin', 'signup', 'status'])
   const backend = useBackend()
-  const toast = useToast()
   const router = useRouter()
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
@@ -86,35 +83,33 @@ export const SignIn = () => {
 
   const signinHandler = async (evt) => {
     evt.preventDefault()
-    startLoading()
+    setLoadingStatus([true, 'processingUpdate'])
     const result = magicLink
       ? await backend.signIn({ username, password: false })
       : await backend.signIn({ username, password })
     // Sign-in succeeded
     if (result.success) {
-      let msg
       if (magicLink) {
+        setLoadingStatus([true, t('singup:emailSent'), true, true])
         setMagicLinkSent(true)
-        msg = t('signup:emailSent')
       } else {
         setAccount(result.data.account)
         setToken(result.data.token)
         setSeenUser(result.data.account.username)
-        msg = t('signin:welcomeBackName', { name: result.data.account.username })
-        stopLoading()
+        setLoadingStatus([
+          true,
+          t('signin:welcomeBackName', { name: result.data.account.username }),
+          true,
+          true,
+        ])
         router.push('/account')
       }
-      return toast.success(<b>{msg}</b>)
     }
     // Sign-in failed
-    if (result.status === 401) {
-      let msg
-      if (result.data.error === 'signInFailed') {
-        msg = magicLink ? t('notFound') : t('signInFailed')
-      }
+    if (result.response?.response?.status === 401) {
+      const msg = magicLink ? t('notFound') : t('signInFailed')
       setSignInFailed(msg)
-
-      return toast.warning(<b>{msg}</b>)
+      setLoadingStatus([true, msg, true, false])
     }
     // Bad request
     if (result.status === 400) {
@@ -122,9 +117,8 @@ export const SignIn = () => {
       if (result.data.error === 'usernameMissing') msg = t('usernameMissing')
       else if (result.data.error === 'passwordMissing') msg = t('passwordMissing')
       setSignInFailed(msg)
-      return toast.warning(<b>{msg}</b>)
+      setLoadingStatus([true, msg, true, false])
     }
-    stopLoading()
   }
 
   const btnClasses = `btn capitalize w-full mt-4 ${
@@ -141,6 +135,7 @@ export const SignIn = () => {
   if (magicLinkSent)
     return (
       <>
+        <LoadingStatus />
         <h1 className="text-inherit text-3xl lg:text-5xl mb-4 pb-0 text-center">
           {t('signup:emailSent')}
         </h1>
@@ -161,6 +156,7 @@ export const SignIn = () => {
 
   return (
     <>
+      <LoadingStatus />
       <h1 className="text-inherit text-3xl lg:text-5xl mb-4 pb-0 text-center">
         {seenBefore ? t('signin:welcomeBackName', { name: seenUser }) : t('signin:welcome')}
       </h1>

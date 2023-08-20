@@ -152,23 +152,49 @@ Backend.prototype.confirmMfa = async function (data) {
  * Disable MFA
  */
 Backend.prototype.disableMfa = async function (data) {
-  return responseHandler(
-    await await api.post(`/account/mfa/jwt`, { ...data, mfa: false }, this.auth)
-  )
+  return responseHandler(await api.post(`/account/mfa/jwt`, { ...data, mfa: false }, this.auth))
 }
 
 /*
  * Reload account
  */
 Backend.prototype.reloadAccount = async function () {
-  return responseHandler(await await api.get(`/whoami/jwt`, this.auth))
+  return responseHandler(await api.get(`/whoami/jwt`, this.auth))
+}
+
+/*
+ * Export account data
+ */
+Backend.prototype.exportAccount = async function () {
+  return responseHandler(await api.get(`/account/export/jwt`, this.auth))
+}
+
+/*
+ * Restrict processing of account data
+ */
+Backend.prototype.restrictAccount = async function () {
+  return responseHandler(await api.get(`/account/restrict/jwt`, this.auth))
+}
+
+/*
+ * Remove account
+ */
+Backend.prototype.restrictAccount = async function () {
+  return responseHandler(await api.delete(`/account/jwt`, this.auth))
+}
+
+/*
+ * Load all user data
+ */
+Backend.prototype.getUserData = async function (uid) {
+  return responseHandler(await api.get(`/users/${uid}/jwt`, this.auth))
 }
 
 /*
  * Load user profile
  */
 Backend.prototype.getProfile = async function (uid) {
-  return responseHandler(await await api.get(`/users/${uid}`))
+  return responseHandler(await api.get(`/users/${uid}`))
 }
 
 /*

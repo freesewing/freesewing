@@ -1,27 +1,22 @@
 // Dependencies
-import { useState, useContext } from 'react'
+import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { BackToAccountButton, Choice, Icons, welcomeSteps } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 
-export const ns = ['account', 'toast']
+export const ns = ['account', 'status']
 
 /** state handlers for any input that changes the control setting */
 export const useControlState = () => {
-  // Context
-  const { startLoading, stopLoading } = useContext(LoadingContext)
-
   // Hooks
   const { account, setAccount, token } = useAccount()
-  const backend = useBackend(token)
-  const toast = useToast()
+  const backend = useBackend()
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   // State
   const [selection, setSelection] = useState(account.control)
@@ -30,14 +25,13 @@ export const useControlState = () => {
   const update = async (control) => {
     if (control !== selection) {
       if (token) {
-        startLoading()
+        setLoadingStatus([true, 'processingUpdate'])
         const result = await backend.updateAccount({ control })
         if (result.success) {
           setSelection(control)
-          toast.for.settingsSaved()
           setAccount(result.data.account)
-        } else toast.for.backendError()
-        stopLoading()
+          setLoadingStatus([true, 'settingsSaved', true, true])
+        } else setLoadingStatus([true, 'backendError', true, true])
       }
       //fallback for guest users
       else {
@@ -47,13 +41,13 @@ export const useControlState = () => {
     }
   }
 
-  return { selection, update }
+  return { selection, update, LoadingStatus }
 }
 
 export const ControlSettings = ({ title = false, welcome = false, noBack = false }) => {
   const { t } = useTranslation(ns)
 
-  const { selection, update } = useControlState()
+  const { selection, update, LoadingStatus } = useControlState()
 
   // Helper to get the link to the next onboarding step
   const nextHref = welcome
@@ -64,6 +58,7 @@ export const ControlSettings = ({ title = false, welcome = false, noBack = false
 
   return (
     <div className="max-w-xl">
+      <LoadingStatus />
       {title ? <h1 className="text-4xl">{t('controlTitle')}</h1> : null}
       {[1, 2, 3, 4, 5].map((val) => (
         <Choice val={val} t={t} update={update} current={selection} key={val}>

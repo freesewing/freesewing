@@ -1,14 +1,11 @@
 // Dependencies
-import { useState, useContext } from 'react'
+import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
-import { Spinner } from 'shared/components/spinner.mjs'
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { OkIcon, NoIcon } from 'shared/components/icons.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
@@ -16,13 +13,10 @@ import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 export const ns = ['account', 'toast']
 
 export const UsernameSettings = ({ title = false, welcome = false }) => {
-  // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
-
   // Hooks
-  const { account, setAccount, token } = useAccount()
-  const backend = useBackend(token)
-  const toast = useToast()
+  const { account, setAccount } = useAccount()
+  const backend = useBackend()
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const { t } = useTranslation(ns)
   const [username, setUsername] = useState(account.username)
   const [available, setAvailable] = useState(true)
@@ -38,13 +32,12 @@ export const UsernameSettings = ({ title = false, welcome = false }) => {
   }
 
   const save = async () => {
-    startLoading()
+    setLoadingStatus([true, 'processingUpdate'])
     const result = await backend.updateAccount({ username })
     if (result.success) {
       setAccount(result.data.account)
-      toast.for.settingsSaved()
-    } else toast.for.backendError()
-    stopLoading()
+      setLoadingStatus([true, 'settingsSaved', true, true])
+    } else setLoadingStatus([true, 'backendError', true, true])
   }
 
   const nextHref =
@@ -53,18 +46,12 @@ export const UsernameSettings = ({ title = false, welcome = false }) => {
       : '/docs/guide'
 
   let btnClasses = 'btn mt-4 capitalize '
-  if (welcome) {
-    btnClasses += 'w-64 '
-    if (loading) btnClasses += 'btn-accent '
-    else btnClasses += 'btn-secondary '
-  } else {
-    btnClasses += 'w-full '
-    if (loading) btnClasses += 'btn-accent '
-    else btnClasses += 'btn-primary '
-  }
+  if (welcome) btnClasses += 'w-64 btn-secondary'
+  else btnClasses += 'w-full btn-primary'
 
   return (
     <div className="max-w-xl">
+      <LoadingStatus />
       {title ? <h1 className="text-4xl">{t('usernameTitle')}</h1> : null}
       <div className="flex flex-row items-center">
         <input
@@ -84,16 +71,7 @@ export const UsernameSettings = ({ title = false, welcome = false }) => {
       </div>
       <button className={btnClasses} disabled={!available} onClick={save}>
         <span className="flex flex-row items-center gap-2">
-          {loading ? (
-            <>
-              <Spinner />
-              <span>{t('processing')}</span>
-            </>
-          ) : available ? (
-            t('save')
-          ) : (
-            t('usernameNotAvailable')
-          )}
+          {available ? t('save') : t('usernameNotAvailable')}
         </span>
       </button>
 
@@ -119,7 +97,7 @@ export const UsernameSettings = ({ title = false, welcome = false }) => {
           ) : null}
         </>
       ) : (
-        <BackToAccountButton loading={loading} />
+        <BackToAccountButton />
       )}
     </div>
   )

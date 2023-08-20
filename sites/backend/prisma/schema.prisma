@@ -20,6 +20,15 @@ model Apikey {
   userId        Int
 }
 
+model Bookmark {
+  id            Int      @id @default(autoincrement())
+  type          String   @default("")
+  title         String   @default("")
+  url           String   @default("")
+  user          User     @relation(fields: [userId], references: [id])
+  userId        Int
+}
+
 model Confirmation {
   id        String   @id @default(uuid())
   createdAt DateTime @default(now())
@@ -43,6 +52,7 @@ model User {
   id            Int       @id @default(autoincrement())
   apikeys       Apikey[]
   bio           String    @default("")
+  bookmarks     Bookmark[]
   compare       Boolean   @default(true)
   confirmations Confirmation[]
   consent       Int       @default(0)

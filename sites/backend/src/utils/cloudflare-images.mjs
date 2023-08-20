@@ -48,7 +48,7 @@ export async function replaceImage(props, isTest = false) {
   const form = getFormData(props)
   // Ignore errors on delete, probably means the image does not exist
   try {
-    await axios.delete(`${config.api}/${props.id}`)
+    await axios.delete(`${config.api}/${props.id}`, { headers })
   } catch (err) {
     // It's fine
     log.info(`Could not delete image ${props.id}`)
@@ -58,10 +58,9 @@ export async function replaceImage(props, isTest = false) {
     result = await axios.post(config.api, form, { headers })
   } catch (err) {
     console.log('Failed to replace image on cloudflare', err)
-    console.log(err.response.data)
   }
 
-  return result.data?.result?.id ? result.data.result.id : false
+  return result?.data?.result?.id ? result.data.result.id : false
 }
 
 /*

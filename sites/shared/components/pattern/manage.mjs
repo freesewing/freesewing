@@ -39,8 +39,8 @@ export const ManagePattern = ({ id = false }) => {
   const [error, setError] = useState(false)
 
   // Hooks
-  const { account, token } = useAccount()
-  const backend = useBackend(token)
+  const { account } = useAccount()
+  const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
   const { language } = i18n
   const toast = useToast()

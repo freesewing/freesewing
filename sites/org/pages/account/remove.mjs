@@ -7,10 +7,10 @@ import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
-import { ns as emailNs } from 'shared/components/account/email.mjs'
+import { ns as reloadNs } from 'shared/components/account/reload.mjs'
 
 // Translation namespaces used on this page
-const ns = nsMerge(emailNs, authNs, pageNs)
+const ns = nsMerge(reloadNs, authNs, pageNs)
 
 /*
  * Some things should never generated as SSR
@@ -21,8 +21,8 @@ const DynamicAuthWrapper = dynamic(
   { ssr: false }
 )
 
-const DynamicEmail = dynamic(
-  () => import('shared/components/account/email.mjs').then((mod) => mod.EmailSettings),
+const DynamicRemove = dynamic(
+  () => import('shared/components/account/remove.mjs').then((mod) => mod.RemoveAccount),
   { ssr: false }
 )
 
@@ -32,19 +32,19 @@ const DynamicEmail = dynamic(
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const AccountEmailPage = ({ page }) => {
+const AccountRemovePage = ({ page }) => {
   const { t } = useTranslation(ns)
 
   return (
-    <PageWrapper {...page} title={t('email')}>
+    <PageWrapper {...page} title={t('remove')}>
       <DynamicAuthWrapper>
-        <DynamicEmail title />
+        <DynamicRemove />
       </DynamicAuthWrapper>
     </PageWrapper>
   )
 }
 
-export default AccountEmailPage
+export default AccountRemovePage
 
 export async function getStaticProps({ locale }) {
   return {
@@ -52,7 +52,7 @@ export async function getStaticProps({ locale }) {
       ...(await serverSideTranslations(locale, ns)),
       page: {
         locale,
-        path: ['account', 'email'],
+        path: ['account', 'remove'],
       },
     },
   }

@@ -1,42 +1,35 @@
 // Dependencies
-import { useState, useContext } from 'react'
+import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { BackToAccountButton, Choice, Icons, welcomeSteps } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 
-export const ns = ['account', 'toast']
+export const ns = ['account', 'status']
 
 export const NewsletterSettings = ({ title = false, welcome = false }) => {
-  // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
-
   // Hooks
-  const { account, setAccount, token } = useAccount()
-  const backend = useBackend(token)
-  const toast = useToast()
+  const { account, setAccount } = useAccount()
+  const backend = useBackend()
   const { t } = useTranslation(ns)
-
+  const { LoadingStatus, setLoadingStatus } = useLoadingStatus()
   // State
   const [selection, setSelection] = useState(account?.newsletter ? 'yes' : 'no')
 
   // Helper method to update account
   const update = async (val) => {
     if (val !== selection) {
-      startLoading()
+      setLoadingStatus([true, 'processingUpdate'])
       const result = await backend.updateAccount({ newsletter: val === 'yes' ? true : false })
       if (result.success) {
         setAccount(result.data.account)
         setSelection(val)
-        toast.for.settingsSaved()
-      } else toast.for.backendError()
-      stopLoading()
+        setLoadingStatus([true, 'settingsSaved', true, true])
+      } else setLoadingStatus([true, 'backendError', true, true])
     }
   }
 
@@ -48,6 +41,7 @@ export const NewsletterSettings = ({ title = false, welcome = false }) => {
 
   return (
     <div className="max-w-xl">
+      <LoadingStatus />
       {title ? <h1 className="text-4xl">{t('newsletterTitle')}</h1> : null}
       {['yes', 'no'].map((val) => (
         <Choice val={val} t={t} update={update} current={selection} bool key={val}>
@@ -83,7 +77,7 @@ export const NewsletterSettings = ({ title = false, welcome = false }) => {
           ) : null}
         </>
       ) : (
-        <BackToAccountButton loading={loading} />
+        <BackToAccountButton />
       )}
     </div>
   )

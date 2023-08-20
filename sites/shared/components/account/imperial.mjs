@@ -1,26 +1,21 @@
 // Dependencies
-import { useState, useContext } from 'react'
+import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { Choice, Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 
-export const ns = ['account', 'toast']
+export const ns = ['account', 'status']
 
 export const ImperialSettings = ({ title = false, welcome = false }) => {
-  // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
-
   // Hooks
-  const { account, setAccount, token } = useAccount()
-  const backend = useBackend(token)
-  const toast = useToast()
+  const { account, setAccount } = useAccount()
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const backend = useBackend()
   const { t } = useTranslation(ns)
 
   // State
@@ -29,14 +24,13 @@ export const ImperialSettings = ({ title = false, welcome = false }) => {
   // Helper method to update account
   const update = async (val) => {
     if (val !== selection) {
-      startLoading()
+      setLoadingStatus([true, 'processingUpdate'])
       const result = await backend.updateAccount({ imperial: val === 'imperial' ? true : false })
       if (result.success) {
         setAccount(result.data.account)
         setSelection(val)
-        toast.for.settingsSaved()
-      } else toast.for.backendError()
-      stopLoading()
+        setLoadingStatus([true, 'settingsSaved', true, true])
+      } else setLoadingStatus([true, 'backendError', true, true])
     }
   }
 
@@ -48,6 +42,7 @@ export const ImperialSettings = ({ title = false, welcome = false }) => {
 
   return (
     <div className="max-w-xl">
+      <LoadingStatus />
       {title ? <h1 className="text-4xl">{t('unitsTitle')}</h1> : <h1></h1>}
       {['metric', 'imperial'].map((val) => (
         <Choice
@@ -87,7 +82,7 @@ export const ImperialSettings = ({ title = false, welcome = false }) => {
           ) : null}
         </>
       ) : (
-        <BackToAccountButton loading={loading} />
+        <BackToAccountButton />
       )}
     </div>
   )

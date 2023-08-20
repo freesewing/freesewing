@@ -12,7 +12,7 @@ import { Popout } from 'shared/components/popout/index.mjs'
 
 export const ns = ['account', 'status']
 
-export const GithubSettings = () => {
+export const PlatformSettings = ({ platform }) => {
   // Hooks
   const { account, setAccount } = useAccount()
   const backend = useBackend()
@@ -20,13 +20,14 @@ export const GithubSettings = () => {
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   // State
-  const [githubUsername, setGithubUsername] = useState(account.data.githubUsername || '')
-  const [githubEmail, setGithubEmail] = useState(account.data.githubEmail || '')
+  const [platformId, setPlatformId] = useState(account.data[platform] || '')
 
   // Helper method to save changes
   const save = async () => {
     setLoadingStatus([true, 'processingUpdate'])
-    const result = await backend.updateAccount({ data: { githubUsername, githubEmail } })
+    const data = { data: {} }
+    data.data[platform] = platformId
+    const result = await backend.updateAccount(data)
     if (result.success) {
       setAccount(result.data.account)
       setLoadingStatus([true, 'settingsSaved', true, true])
@@ -36,35 +37,24 @@ export const GithubSettings = () => {
   return (
     <div className="max-w-xl">
       <LoadingStatus />
-      <h2 className="text-4xl">{t('githubTitle')}</h2>
-      <label className="font-bold">{t('username')}</label>
+      <h2 className="text-4xl">
+        {t(platform === 'website' ? 'account:websiteTitle' : 'account:platformTitle', {
+          platform: platform,
+        })}
+      </h2>
       <div className="flex flex-row items-center mb-4">
         <input
-          value={githubUsername}
-          onChange={(evt) => setGithubUsername(evt.target.value)}
+          value={platformId}
+          onChange={(evt) => setPlatformId(evt.target.value)}
           className="input w-full input-bordered flex flex-row"
           type="text"
-          placeholder={account.username}
-        />
-      </div>
-      <label className="font-bold">{t('email')}</label>
-      <div className="flex flex-row items-center mb-4">
-        <input
-          value={githubEmail}
-          onChange={(evt) => setGithubEmail(evt.target.value)}
-          className="input w-full input-bordered flex flex-row"
-          type="text"
-          placeholder={`${account.username}@users.freesewing.org`}
+          placeholder={account[platform]}
         />
       </div>
       <SaveSettingsButton btnProps={{ onClick: save }} />
       <BackToAccountButton />
       <Popout note>
-        <p className="text-sm font-bold">{t('githubWhy1')}</p>
-        <p className="text-sm">{t('githubWhy2')}</p>
-        <p className="text-sm">{t('githubWhy3')}</p>
-        <p className="text-sm">{t('githubWhy4')}</p>
-        <p className="text-sm">{t('tooComplex')}</p>
+        <p className="text-sm font-bold">{t('platformWhy')}</p>
       </Popout>
     </div>
   )

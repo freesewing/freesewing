@@ -52,8 +52,8 @@ const ConfirmSignUpPage = () => {
     path: ['confirm', 'emailchange', confirmationId],
   }
 
-  const { token, setAccount, setToken } = useAccount()
-  const backend = useBackend(token)
+  const { setAccount, setToken } = useAccount()
+  const backend = useBackend()
   const { t } = useTranslation(ns)
 
   const [id, setId] = useState(false)

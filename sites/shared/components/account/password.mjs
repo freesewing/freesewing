@@ -1,12 +1,10 @@
 // Dependencies
-import { useState, useContext } from 'react'
+import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import Link from 'next/link'
 import { BackToAccountButton } from './shared.mjs'
@@ -14,17 +12,14 @@ import { SaveSettingsButton } from 'shared/components/buttons/save-settings-butt
 import { Popout } from 'shared/components/popout/index.mjs'
 import { RightIcon } from 'shared/components/icons.mjs'
 
-export const ns = ['account', 'toast']
+export const ns = ['account', 'status']
 
 export const PasswordSettings = ({ title = false, welcome = false }) => {
-  // Context
-  const { loading, startLoading, stopLoading } = useContext(LoadingContext)
-
   // Hooks
-  const { account, setAccount, token } = useAccount()
-  const backend = useBackend(token)
+  const { account, setAccount } = useAccount()
+  const backend = useBackend()
   const { t } = useTranslation(ns)
-  const toast = useToast()
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   // State
   const [password, setPassword] = useState('')
@@ -32,17 +27,17 @@ export const PasswordSettings = ({ title = false, welcome = false }) => {
 
   // Helper method to save password to account
   const save = async () => {
-    startLoading()
+    setLoadingStatus([true, 'processingUpdate'])
     const result = await backend.updateAccount({ password })
     if (result.success) {
       setAccount(result.data.account)
-      toast.for.settingsSaved()
-    } else toast.for.backendError()
-    stopLoading()
+      setLoadingStatus([true, 'settingsSaved', true, true])
+    } else setLoadingStatus([true, 'backendError', true, false])
   }
 
   return (
     <div className="max-w-xl">
+      <LoadingStatus />
       {title ? <h2 className="text-4xl">{t('passwordTitle')}</h2> : null}
       <div className="flex flex-row items-center mt-4 gap-2">
         <input
@@ -62,7 +57,7 @@ export const PasswordSettings = ({ title = false, welcome = false }) => {
         </button>
       </div>
       <SaveSettingsButton btnProps={{ onClick: save, disabled: password.length < 4 }} />
-      {!welcome && <BackToAccountButton loading={loading} />}
+      {!welcome && <BackToAccountButton />}
       {!account.mfaEnabled && (
         <Popout tip>
           <h5>{t('mfaTipTitle')}</h5>
