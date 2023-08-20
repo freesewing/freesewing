@@ -138,7 +138,7 @@ const HomePage = ({ page }) => (
       <div className="flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:gap-4 mt-12">
         <CardLink
           color="primary"
-          href="/reference/api"
+          href="/tutorials/pattern-design"
           title="Design Tutorial"
           text="Step by step instructions to create your first FreeSewing design"
         />
