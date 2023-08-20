@@ -868,7 +868,11 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
    */
   for (const field of this.jsonFields) {
     if (typeof body[field] !== 'undefined') {
-      if (typeof body[field] === 'object') data[field] = body[field]
+      if (typeof body[field] === 'object')
+        data[field] = {
+          ...this.clear[field],
+          ...body[field],
+        }
       else log.warn(body, `Tried to set JDON field ${field} to a non-object`)
     }
   }
