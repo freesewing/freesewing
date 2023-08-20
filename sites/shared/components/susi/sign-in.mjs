@@ -1,5 +1,5 @@
 // Hooks
-import { useState, useEffect, useContext } from 'react'
+import { useState, useEffect } from 'react'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useTranslation } from 'next-i18next'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
@@ -88,7 +88,6 @@ export const SignIn = () => {
       ? await backend.signIn({ username, password: false })
       : await backend.signIn({ username, password })
     // Sign-in succeeded
-    console.log(result.response.response)
     if (result.success) {
       let msg
       if (magicLink) {

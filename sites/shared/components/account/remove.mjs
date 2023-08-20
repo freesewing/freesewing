@@ -7,14 +7,13 @@ import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
-import { WebLink } from 'shared/components/web-link.mjs'
 
 export const ns = ['account', 'status']
 
 export const RemoveAccount = () => {
   // Hooks
-  const { setAccount, token, signOut } = useAccount()
-  const backend = useBackend(token)
+  const { signOut } = useAccount()
+  const backend = useBackend()
   const { t } = useTranslation(ns)
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 

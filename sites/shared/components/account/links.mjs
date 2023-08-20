@@ -3,7 +3,6 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useTranslation } from 'next-i18next'
 import Link from 'next/link'
-import { PageLink } from 'shared/components/page-link.mjs'
 import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 import {
   DesignIcon,
@@ -43,14 +42,6 @@ import { cloudflareImageUrl, capitalize } from 'shared/utils.mjs'
 import { ControlScore } from 'shared/components/control/score.mjs'
 
 export const ns = ['account', 'i18n']
-
-const actions = {
-  reload: 4,
-  export: 3,
-  restrict: 4,
-  disable: 4,
-  remove: 2,
-}
 
 const itemIcons = {
   bookmarks: <BookmarkIcon />,
@@ -121,9 +112,7 @@ export const AccountLinks = () => {
     getUserData()
   }, [account.id])
 
-  const lprops = { t, control: account.control }
   const btnClasses = 'btn capitalize flex flex-row justify-between'
-  const linkClasses = 'flex flex-row gap-2 text-lg py-2 items-center font-medium capitalize'
 
   const itemPreviews = {
     apikeys: apikeys?.length || 0,
@@ -166,7 +155,7 @@ export const AccountLinks = () => {
         <div className="">
           <h4 className="my-2">{t('data')}</h4>
           {Object.keys(conf.account.fields.data).map((item) => (
-            <AccountLink href={`/account/${item}`} title={t(item)}>
+            <AccountLink href={`/account/${item}`} title={t(item)} key={item}>
               <div className="flex flex-row items-center gap-3 font-medium">
                 {itemIcons[item]}
                 {t(`your${capitalize(item)}`)}
@@ -179,7 +168,7 @@ export const AccountLinks = () => {
         <div className="">
           <h4 className="my-2">{t('info')}</h4>
           {Object.keys(conf.account.fields.info).map((item) => (
-            <AccountLink href={`/account/${item}`} title={t(item)}>
+            <AccountLink href={`/account/${item}`} title={t(item)} key={item}>
               <div className="flex flex-row items-center gap-3 font-medium">
                 {itemIcons[item]}
                 {t(item)}
@@ -199,7 +188,7 @@ export const AccountLinks = () => {
         <div className="">
           <h4 className="my-2">{t('settings')}</h4>
           {Object.keys(conf.account.fields.settings).map((item) => (
-            <AccountLink href={`/account/${item}`} title={t(item)}>
+            <AccountLink href={`/account/${item}`} title={t(item)} key={item}>
               <div className="flex flex-row items-center gap-3 font-medium">
                 {itemIcons[item]}
                 {t(item)}
@@ -212,7 +201,7 @@ export const AccountLinks = () => {
         <div className="">
           <h4 className="my-2">{t('linkedIdentities')}</h4>
           {Object.keys(conf.account.fields.identities).map((item) => (
-            <AccountLink href={`/account/${item}`} title={t(item)}>
+            <AccountLink href={`/account/${item}`} title={t(item)} key={item}>
               <div className="flex flex-row items-center gap-3 font-medium">
                 {itemIcons[item]}
                 {t(item)}
@@ -225,7 +214,7 @@ export const AccountLinks = () => {
         <div className="">
           <h4 className="my-2">{t('security')}</h4>
           {Object.keys(conf.account.fields.security).map((item) => (
-            <AccountLink href={`/account/${item}`} title={t(item)}>
+            <AccountLink href={`/account/${item}`} title={t(item)} key={item}>
               <div className="flex flex-row items-center gap-3 font-medium">
                 {itemIcons[item]}
                 {t(item)}

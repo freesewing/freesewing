@@ -6,7 +6,7 @@ export const ControlScore = ({ control, color = 'base-content' }) =>
   control ? (
     <div className={`flex flex-row items-center text-${color}`}>
       {scores.map((score) => (
-        <BulletIcon fill={control >= score ? true : false} className="w-6 h-6 -ml-1" />
+        <BulletIcon fill={control >= score ? true : false} className="w-6 h-6 -ml-1" key={score} />
       ))}
     </div>
   ) : null

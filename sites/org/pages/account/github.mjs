@@ -2,7 +2,6 @@
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
-// Hooks
 import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
@@ -32,17 +31,13 @@ const DynamicGithub = dynamic(
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const AccountPage = ({ page }) => {
-  const { t } = useTranslation(ns)
-
-  return (
-    <PageWrapper {...page} title="GitHub">
-      <DynamicAuthWrapper>
-        <DynamicGithub title />
-      </DynamicAuthWrapper>
-    </PageWrapper>
-  )
-}
+const AccountPage = ({ page }) => (
+  <PageWrapper {...page} title="GitHub">
+    <DynamicAuthWrapper>
+      <DynamicGithub title />
+    </DynamicAuthWrapper>
+  </PageWrapper>
+)
 
 export default AccountPage
 

@@ -1,5 +1,5 @@
 // Dependencies
-import { useState, useContext } from 'react'
+import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { nsMerge } from 'shared/utils.mjs'
 // Hooks

@@ -190,7 +190,7 @@ BookmarkModel.prototype.userBookmarks = async function (uid) {
     log.warn(`Failed to search bookmarks for user ${uid}: ${err}`)
   }
   const list = []
-  for (const bookmark of bookmarks) list.push(this.bookmark)
+  for (const bookmark of bookmarks) list.push(bookmark)
 
   return list
 }

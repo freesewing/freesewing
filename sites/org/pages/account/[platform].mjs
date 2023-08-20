@@ -4,8 +4,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge, capitalize } from 'shared/utils.mjs'
 import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
 import { siteConfig } from 'site/site.config.mjs'
-// Hooks
-import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
@@ -34,17 +32,13 @@ const DynamicPlatform = dynamic(
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const AccountPage = ({ page, platform }) => {
-  const { t } = useTranslation(ns)
-
-  return (
-    <PageWrapper {...page} title={capitalize(platform)}>
-      <DynamicAuthWrapper>
-        <DynamicPlatform platform={platform} />
-      </DynamicAuthWrapper>
-    </PageWrapper>
-  )
-}
+const AccountPage = ({ page, platform }) => (
+  <PageWrapper {...page} title={capitalize(platform)}>
+    <DynamicAuthWrapper>
+      <DynamicPlatform platform={platform} />
+    </DynamicAuthWrapper>
+  </PageWrapper>
+)
 
 export default AccountPage
 

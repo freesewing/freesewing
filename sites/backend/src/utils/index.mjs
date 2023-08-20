@@ -1,7 +1,6 @@
 import { log } from './log.mjs'
 import { website, exports } from '../config.mjs'
 import { randomString } from './crypto.mjs'
-import path from 'path'
 import fs from 'fs'
 
 /*

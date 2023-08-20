@@ -13,16 +13,11 @@ export function ApikeyModel(tools, models) {
   /*
    * See utils/model-decorator.mjs for details
    */
-  return decorateModel(
-    this,
-    tools,
-    {
-      name: 'apikey',
-      encryptedFields: ['name'],
-      models: ['user'],
-    },
-    models
-  )
+  return decorateModel(this, tools, {
+    name: 'apikey',
+    encryptedFields: ['name'],
+    models: ['user'],
+  })
 }
 
 /*

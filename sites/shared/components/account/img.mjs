@@ -1,5 +1,5 @@
 // Dependencies
-import { useState, useContext, useCallback } from 'react'
+import { useState, useCallback } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useDropzone } from 'react-dropzone'
 import { cloudflareImageUrl } from 'shared/utils.mjs'
@@ -11,7 +11,6 @@ import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
-import { DownloadIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['account', 'status']
 
@@ -31,11 +30,6 @@ export const ImgSettings = ({ title = false, welcome = false }) => {
     }
     acceptedFiles.forEach((file) => reader.readAsDataURL(file))
   }, [])
-
-  const imageFromUrl = async () => {
-    const result = await backend.uploadImage({ type, subId, slug, url })
-    if (result.success) setImg(result.data.imgId)
-  }
 
   const { getRootProps, getInputProps } = useDropzone({ onDrop })
 

@@ -1,13 +1,11 @@
 // Dependencies
-import { useState, useContext } from 'react'
+import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
-import { Spinner } from 'shared/components/spinner.mjs'
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { OkIcon, NoIcon } from 'shared/components/icons.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'

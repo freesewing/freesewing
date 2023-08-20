@@ -7,14 +7,13 @@ import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
-import { WebLink } from 'shared/components/web-link.mjs'
 
 export const ns = ['account', 'status']
 
 export const RestrictAccount = () => {
   // Hooks
-  const { setAccount, token } = useAccount()
-  const backend = useBackend(token)
+  const { signOut } = useAccount()
+  const backend = useBackend()
   const { t } = useTranslation(ns)
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
@@ -22,8 +21,10 @@ export const RestrictAccount = () => {
   const restrictAccount = async () => {
     setLoadingStatus([true, 'processingUpdate'])
     const result = await backend.restrictAccount()
-    if (result.success) setLoadingStatus([true, 'nailedIt', true, true])
-    else setLoadingStatus([true, 'backendError', true, false])
+    if (result.success) {
+      setLoadingStatus([true, 'nailedIt', true, true])
+      signOut()
+    } else setLoadingStatus([true, 'backendError', true, false])
   }
 
   return (
