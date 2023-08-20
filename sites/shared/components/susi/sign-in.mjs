@@ -89,17 +89,19 @@ export const SignIn = () => {
       : await backend.signIn({ username, password })
     // Sign-in succeeded
     if (result.success) {
-      let msg
       if (magicLink) {
         setLoadingStatus([true, t('singup:emailSent'), true, true])
         setMagicLinkSent(true)
-        msg = t('signup:emailSent')
       } else {
         setAccount(result.data.account)
         setToken(result.data.token)
         setSeenUser(result.data.account.username)
-        msg = t('signin:welcomeBackName', { name: result.data.account.username })
-        setLoadingStatus([true, msg, true, true])
+        setLoadingStatus([
+          true,
+          t('signin:welcomeBackName', { name: result.data.account.username }),
+          true,
+          true,
+        ])
         router.push('/account')
       }
     }

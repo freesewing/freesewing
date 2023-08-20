@@ -72,9 +72,9 @@ const itemIcons = {
 
 const itemClasses = 'flex flex-row items-center justify-between bg-opacity-10 p-2 px-4 rounded mb-1'
 
-const AccountLink = ({ href, title, children }) => (
+const AccountLink = ({ href, title, children, color = 'secondary' }) => (
   <Link
-    className={`${itemClasses} bg-secondary hover:bg-opacity-100 hover:text-neutral-content`}
+    className={`${itemClasses} bg-${color} hover:bg-opacity-100 hover:text-neutral-content`}
     href={href}
     title={title}
   >
@@ -234,11 +234,11 @@ export const AccountLinks = () => {
             <ExportIcon />
             {t('export')}
           </AccountLink>
-          <AccountLink href={`/account/restrict`} title={t('restrict')}>
+          <AccountLink href={`/account/restrict`} title={t('restrict')} color="warning">
             <CloseIcon />
             {t('restrict')}
           </AccountLink>
-          <AccountLink href={`/account/remove`} title={t('remove')}>
+          <AccountLink href={`/account/remove`} title={t('remove')} color="error">
             <TrashIcon />
             {t('remove')}
           </AccountLink>
