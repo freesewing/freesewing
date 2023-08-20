@@ -37,7 +37,11 @@ export const PlatformSettings = ({ platform }) => {
   return (
     <div className="max-w-xl">
       <LoadingStatus />
-      <h2 className="text-4xl">{t('account:platformTitle', { platform: platform })}</h2>
+      <h2 className="text-4xl">
+        {t(platform === 'website' ? 'account:websiteTitle' : 'account:platformTitle', {
+          platform: platform,
+        })}
+      </h2>
       <div className="flex flex-row items-center mb-4">
         <input
           value={platformId}

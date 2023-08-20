@@ -2,7 +2,7 @@ import jwt from 'jsonwebtoken'
 import { log } from '../utils/log.mjs'
 import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
 import { replaceImage, importImage } from '../utils/cloudflare-images.mjs'
-import { clean, asJson, i18nUrl } from '../utils/index.mjs'
+import { clean, asJson, i18nUrl, writeExportedData } from '../utils/index.mjs'
 import { decorateModel } from '../utils/model-decorator.mjs'
 
 /*
@@ -55,7 +55,6 @@ UserModel.prototype.profile = async function ({ params }) {
  * Loads a user from the database based on the where clause you pass it
  * In addition prepares it for returning all account data
  * This is guarded so it enforces access control and validates input
- * This is an anonymous route returning limited info (profile data)
  *
  * @param {params} object - The request (URL) parameters
  * @returns {UserModel} object - The UserModel
@@ -85,6 +84,29 @@ UserModel.prototype.allData = async function ({ params }) {
   return this.setResponse200({
     result: 'success',
     data: this.asData(),
+  })
+}
+
+/*
+ * Exports all account data
+ *
+ * @param {user} object - The user as loaded by the authentication middleware
+ * @returns {UserModel} object - The UserModel
+ */
+UserModel.prototype.exportAccount = async function ({ user }) {
+  /*
+   * Read the record from the database
+   */
+  await this.read({ id: user.uid }, { apikeys: true, bookmarks: true, patterns: true, sets: true })
+
+  /*
+   * If it does not exist, return 404
+   */
+  if (!this.exists) return this.setResponse(404)
+
+  return this.setResponse200({
+    result: 'success',
+    data: writeExportedData(this.asExport()),
   })
 }
 
@@ -1278,6 +1300,21 @@ UserModel.prototype.asData = function () {
     bookmarks: this.record.bookmarks || [],
     patterns: this.record.patterns || [],
     sets: this.record.sets || [],
+  }
+}
+
+/*
+ * Returns all user data to be exported
+ *
+ * @return {account} object - The account data as a plain object
+ */
+UserModel.prototype.asExport = function () {
+  /*
+   * Get both account data and all data
+   */
+  return {
+    ...this.asAccount(),
+    ...this.asData(),
   }
 }
 

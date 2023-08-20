@@ -66,6 +66,13 @@ export function usersRoutes(tools) {
   // Load a user profile
   app.get('/users/:id', (req, res) => Users.profile(req, res, tools))
 
+  // Export account data
+  app.get('/account/export/jwt', passport.authenticate(...jwt), (req, res) =>
+    Users.exportAccount(req, res, tools)
+  )
+  app.get('/account/export/key', passport.authenticate(...bsc), (req, res) =>
+    Users.exportAccount(req, res, tools)
+  )
   /*
 
   // Remove account

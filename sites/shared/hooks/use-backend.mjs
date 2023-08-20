@@ -165,6 +165,13 @@ Backend.prototype.reloadAccount = async function () {
 }
 
 /*
+ * Export account data
+ */
+Backend.prototype.exportAccount = async function () {
+  return responseHandler(await await api.get(`/account/export/jwt`, this.auth))
+}
+
+/*
  * Load all user data
  */
 Backend.prototype.getUserData = async function (uid) {

@@ -130,6 +130,18 @@ UsersController.prototype.allData = async (req, res, tools) => {
 }
 
 /*
+ * Exports all account data
+ *
+ * See: https://freesewing.dev/reference/backend/api
+ */
+UsersController.prototype.exportAccount = async (req, res, tools) => {
+  const User = new UserModel(tools)
+  await User.exportAccount(req)
+
+  return User.sendResponse(res)
+}
+
+/*
  * Checks whether a submitted username is available
  *
  * See: https://freesewing.dev/reference/backend/api

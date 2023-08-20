@@ -101,6 +101,10 @@ const baseConfig = {
       newsletter: [true, false],
     },
   },
+  exports: {
+    dir: process.env.BACKEND_EXPORTS_DIR || '/tmp',
+    url: process.env.BACKEND_EXPORTS_URL || 'https://static3.freesewing.org/export/',
+  },
   github: {
     token: process.env.BACKEND_GITHUB_TOKEN,
   },
@@ -237,6 +241,7 @@ export const forwardmx = config.forwardmx || {}
 export const website = config.website
 export const githubToken = config.github.token
 export const instance = config.instance
+export const exports = config.exports
 
 const vars = {
   BACKEND_DB_URL: ['required', 'db.url'],
