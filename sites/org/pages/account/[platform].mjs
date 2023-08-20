@@ -9,10 +9,10 @@ import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
-import { ns as githubNs } from 'shared/components/account/github.mjs'
+import { ns as platformNs } from 'shared/components/account/platform.mjs'
 
 // Translation namespaces used on this page
-const ns = nsMerge(githubNs, authNs, pageNs)
+const ns = nsMerge(platformNs, authNs, pageNs)
 
 /*
  * Some things should never generated as SSR
