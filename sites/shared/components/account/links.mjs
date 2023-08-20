@@ -245,12 +245,12 @@ export const AccountLinks = () => {
         </div>
       </div>
 
-      <div className="flex flex-row gap-4 justify-end">
-        <Link className={`${btnClasses} btn-primary w-64`} href="/profile">
+      <div className="flex flex-row flex-wrap gap-2 md:gap-4 justify-end">
+        <Link className={`${btnClasses} btn-primary md:w-64 w-full`} href="/profile">
           <UserIcon />
           {t('yourProfile')}
         </Link>
-        <button className={`${btnClasses} btn-warning w-64`} onClick={() => signOut()}>
+        <button className={`${btnClasses} btn-warning md:w-64 w-full`} onClick={() => signOut()}>
           <SignoutIcon />
           {t('signOut')}
         </button>
