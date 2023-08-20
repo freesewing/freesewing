@@ -20,6 +20,8 @@ lives in `design/src/index.mjs`, and our part lives in `design/src/bib.mjs`.
 This `bib.mjs` is where we'll do all our work. The file includes a comments to guide you on how to use it. We removed those for clarity in our example. It currently looks like this:
 
 ```design/src/bib.mjs
+import { pluginBundle } from "@freesewing/plugin-bundle"
+
 function draftBib ({
   part, // Your draft method must return this
 })
@@ -40,7 +42,7 @@ export const bib = {
   options: {},
   measurements: [],
   optionalMeasurements: [],
-  plugins: []
+  plugins: [ pluginBundle ]
 }
 ```
 
