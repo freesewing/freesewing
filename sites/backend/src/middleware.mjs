@@ -19,7 +19,7 @@ async function checkAccess(payload, tools, type) {
   if (payload.aud !== `${api}/${instance}`) return false
   const User = new UserModel(tools)
   const uid = payload.userId || payload._id
-  const ok = await User.papersPlease(uid, type)
+  const ok = await User.papersPlease(uid, type, payload)
 
   return ok
 }

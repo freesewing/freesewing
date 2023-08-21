@@ -1526,7 +1526,7 @@ UserModel.prototype.isLusernameAvailable = async function (lusername) {
 }
 
 /*
- * Helper method that is called by middleware to verifu whether the user
+ * Helper method that is called by middleware to verify whether the user
  * is allowed in. It will update the `lastSeen` field of the user as
  * well as increase the call counter for either JWT or KEY.
  * It will also check whether the user status is ok and consent granted.
@@ -1535,9 +1535,10 @@ UserModel.prototype.isLusernameAvailable = async function (lusername) {
  *
  * @param {id} string - The user ID
  * @param {type} string - The authentication type (one of 'jwt' or 'key')
+ * @param {type} string - The middleware auth payload
  * @returns {success} boolean - True if it worked, false if not
  */
-UserModel.prototype.papersPlease = async function (id, type) {
+UserModel.prototype.papersPlease = async function (id, type, payload) {
   /*
    * Construct data object for update operation
    */
@@ -1556,6 +1557,25 @@ UserModel.prototype.papersPlease = async function (id, type) {
      */
     log.warn({ id }, 'Could not update lastSeen field from middleware')
     return false
+  }
+
+  /*
+   * If it's an API key, update the call call and lastSeen field too
+   */
+  if (type === 'key') {
+    const keyData = {
+      calls: { increment: 1 },
+      lastSeen: new Date(),
+    }
+    try {
+      await this.prisma.apikey.update({ where: { id: payload.id }, data: keyData })
+    } catch (err) {
+      /*
+       * An error means it's not good. Return false
+       */
+      log.warn({ id }, 'Could not update apikey lastSeen field from middleware')
+      return false
+    }
   }
 
   /*
