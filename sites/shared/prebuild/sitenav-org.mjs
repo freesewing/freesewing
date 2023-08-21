@@ -44,6 +44,11 @@ export const extendSiteNav = async (siteNav, lang) => {
       t: t('newApikey'),
       o: 30,
     },
+    bookmark: {
+      s: 'new/bookmark',
+      t: t('account:newBookmark'),
+      o: 30,
+    },
     pattern: {
       t: t('patternNew'),
       s: 'new/pattern',

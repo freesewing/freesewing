@@ -15,9 +15,8 @@ import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 import { BackToAccountButton, Choice } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
-import { CopyIcon, RightIcon, TrashIcon } from 'shared/components/icons.mjs'
+import { LeftIcon, PlusIcon, CopyIcon, RightIcon, TrashIcon } from 'shared/components/icons.mjs'
 import { Collapse, useCollapseButton } from 'shared/components/collapse.mjs'
-import { LeftIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import Link from 'next/link'
 import { PageLink } from 'shared/components/page-link.mjs'
@@ -146,6 +145,7 @@ const ShowKey = ({ apikey, t, clear }) => {
           {t('apikeys')}
         </button>
         <button className="btn btn-primary w-full mt-2 md:w-auto md:mt-0" onClick={clear}>
+          <PlusIcon />
           {t('newApikey')}
         </button>
       </div>
@@ -292,7 +292,7 @@ export const Apikeys = () => {
 
   // Helper method to toggle select all
   const toggleSelectAll = () => {
-    if (selCount > 0) setSelected({})
+    if (selCount === keys.length) setSelected({})
     else {
       const newSelected = {}
       for (const key of keys) newSelected[key.id] = 1

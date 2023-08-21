@@ -198,6 +198,35 @@ Backend.prototype.getProfile = async function (uid) {
 }
 
 /*
+ * Create bookmark
+ */
+Backend.prototype.createBookmark = async function (data) {
+  return responseHandler(await api.post(`/bookmarks/jwt`, data, this.auth), 201)
+}
+
+/*
+ * Get bookmark
+ */
+Backend.prototype.getBookmark = async function (id) {
+  return responseHandler(await api.get(`/bookmarks/${id}/jwt`, this.auth))
+}
+/*
+ * Get bookmarks
+ */
+Backend.prototype.getBookmarks = async function () {
+  return responseHandler(await api.get(`/bookmarks/jwt`, this.auth))
+}
+
+/*
+ * Remove bookmark
+ */
+Backend.prototype.removeBookmark = async function (id) {
+  const response = await api.delete(`/bookmarks/${id}/jwt`, this.auth)
+
+  return response && response.status === 204 ? true : false
+}
+
+/*
  * Create API key
  */
 Backend.prototype.createApikey = async function (data) {

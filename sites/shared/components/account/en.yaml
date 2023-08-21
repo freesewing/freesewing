@@ -172,7 +172,20 @@ keyDocsTitle: Refer to FreeSewing.dev for documentation on using API keys (Engli
 keyDocsMsg: This is an advanced feature aimed at developers or anyone who wants to interact with our backend directly.
 apiCalls: API Calls
 
+# bookmarks
+newBookmark: Add a Bookmark
+bookmark: Bookmark
+bookmarks: Bookmarks
+type: Type
+location: Location
+title: Title
 new: New
+designBookmark: Designs
+patternBookmark: Patterns
+setBookmark: Measurements Sets
+csetBookmark:  Curated Measurements Sets
+docBookmark: Documentation
+customBookmark: Custom Bookmarks
 
 # sets
 name: Name
