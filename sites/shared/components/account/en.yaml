@@ -168,6 +168,9 @@ cancel: Cancel
 keySecretWarning: This is the only time you can see the key secret, make sure to copy it.
 keyExpired: This API key has expired
 deleteKeyWarning: Removing an API key cannot be undone.
+keyDocsTitle: Refer to FreeSewing.dev for documentation on using API keys (English only)
+keyDocsMsg: This is an advanced feature aimed at developers or anyone who wants to interact with our backend directly.
+apiCalls: API Calls
 
 new: New
 

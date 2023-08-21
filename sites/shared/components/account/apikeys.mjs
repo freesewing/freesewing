@@ -3,27 +3,30 @@ import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { DateTime } from 'luxon'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
+import { shortDate, formatNumber } from 'shared/utils.mjs'
 // Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useRouter } from 'next/router'
+import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { BackToAccountButton, Choice } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { WebLink } from 'shared/components/web-link.mjs'
-import { CopyIcon } from 'shared/components/icons.mjs'
+import { CopyIcon, RightIcon, TrashIcon } from 'shared/components/icons.mjs'
 import { Collapse, useCollapseButton } from 'shared/components/collapse.mjs'
-import { TrashIcon } from 'shared/components/icons.mjs'
 import { LeftIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
+import Link from 'next/link'
+import { PageLink } from 'shared/components/page-link.mjs'
 
-export const ns = ['account', 'toast']
+export const ns = ['account', 'status']
 
 const ExpiryPicker = ({ t, expires, setExpires }) => {
+  const router = useRouter()
+  const { locale } = router
   const [months, setMonths] = useState(1)
 
   // Run update when component mounts
@@ -49,26 +52,27 @@ const ExpiryPicker = ({ t, expires, setExpires }) => {
       </div>
       <Popout note compact>
         {t('keyExpiresDesc')}
-        <b> {expires.toHTTP()}</b>
+        <b> {shortDate(locale, expires)}</b>
       </Popout>
     </>
   )
 }
 
 const CopyInput = ({ text }) => {
-  const { t } = useTranslation(['toast'])
-  const toast = useToast()
+  const { t } = useTranslation(['status'])
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   const [copied, setCopied] = useState(false)
 
   const showCopied = () => {
     setCopied(true)
-    toast.success(<span>{t('copiedToClipboard')}</span>)
-    window.setTimeout(() => setCopied(false), 3000)
+    setLoadingStatus([true, t('copiedToClipboard'), true, true])
+    window.setTimeout(() => setCopied(false), 2000)
   }
 
   return (
     <div className="flex flez-row gap-2 items-center w-full">
+      <LoadingStatus />
       <input
         readOnly
         value={text}
@@ -90,8 +94,34 @@ const Row = ({ title, children }) => (
     <div className="grow">{children}</div>
   </div>
 )
-const ShowKey = ({ apikey, t, clear, standalone }) => {
+
+export const Apikey = ({ apikey }) => {
+  const { t } = useTranslation(ns)
   const router = useRouter()
+  const { locale } = router
+
+  return apikey ? (
+    <div>
+      <Row title={t('keyName')}>{apikey.name}</Row>
+      <Row title={t('created')}>{shortDate(locale, apikey.createdAt)}</Row>
+      <Row title={t('expires')}>{shortDate(locale, apikey.expiresAt)}</Row>
+      <Row title="Key ID">{apikey.key}</Row>
+      <div className="flex flex-row flex-wrap md:gap-2 md:items-center md:justify-between mt-8">
+        <button
+          className="w-full md:w-auto btn btn-secondary pr-6 flex flex-row items-center gap-2"
+          onClick={() => router.push('/account/apikeys')}
+        >
+          <LeftIcon />
+          {t('apikeys')}
+        </button>
+      </div>
+    </div>
+  ) : null
+}
+
+const ShowKey = ({ apikey, t, clear }) => {
+  const router = useRouter()
+  const { locale } = router
 
   return (
     <div>
@@ -99,73 +129,64 @@ const ShowKey = ({ apikey, t, clear, standalone }) => {
         {t('keySecretWarning')}
       </Popout>
       <Row title={t('keyName')}>{apikey.name}</Row>
-      <Row title={t('created')}>{DateTime.fromISO(apikey.createdAt).toHTTP()}</Row>
-      <Row title={t('expires')}>{DateTime.fromISO(apikey.expiresAt).toHTTP()}</Row>
+      <Row title={t('created')}>{shortDate(locale, apikey.createdAt)}</Row>
+      <Row title={t('created')}>{shortDate(locale, apikey.expiresAt)}</Row>
       <Row title="Key ID">
         <CopyInput text={apikey.key} />
       </Row>
       <Row title="Key Secret">
         <CopyInput text={apikey.secret} />
       </Row>
-      <button
-        className="btn btn-secondary mt-8 pr-6 flex flex-row items-center gap-2"
-        onClick={standalone ? () => router.push('/account/apikeys') : clear}
-      >
-        <LeftIcon />
-        {t('apikeys')}
-      </button>
+      <div className="flex flex-row flex-wrap md:gap-2 md:items-center md:justify-between mt-8">
+        <button
+          className="w-full md:w-auto btn btn-secondary pr-6 flex flex-row items-center gap-2"
+          onClick={() => router.push('/account/apikeys')}
+        >
+          <LeftIcon />
+          {t('apikeys')}
+        </button>
+        <button className="btn btn-primary w-full mt-2 md:w-auto md:mt-0" onClick={clear}>
+          {t('newApikey')}
+        </button>
+      </div>
     </div>
   )
 }
 
-const NewKey = ({
-  t,
-  account,
-  setGenerate,
-  keyAdded,
-  backend,
-  toast,
-  startLoading,
-  stopLoading,
-  closeCollapseButton,
-  standalone = false,
-  title = true,
-}) => {
+const NewKey = ({ t, account, setGenerate, backend, title = true }) => {
   const [name, setName] = useState('')
   const [level, setLevel] = useState(1)
-  const [expires, setExpires] = useState(DateTime.now())
+  const [expires, setExpires] = useState(Date.now())
   const [apikey, setApikey] = useState(false)
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   const levels = account.role === 'admin' ? [0, 1, 2, 3, 4, 5, 6, 7, 8] : [0, 1, 2, 3, 4]
 
   const createKey = async () => {
-    startLoading()
+    setLoadingStatus([true, 'processingUpdate'])
     const result = await backend.createApikey({
       name,
       level,
-      expiresIn: Math.floor((expires.valueOf() - DateTime.now().valueOf()) / 1000),
+      expiresIn: Math.floor((expires.valueOf() - Date.now().valueOf()) / 1000),
     })
     if (result.success) {
-      toast.success(<span>{t('nailedIt')}</span>)
+      setLoadingStatus([true, 'nailedIt', true, true])
       setApikey(result.data.apikey)
-      keyAdded()
-    } else toast.for.backendError()
-    stopLoading()
-    if (closeCollapseButton) closeCollapseButton()
+    } else setLoadingStatus([true, 'backendError', true, false])
   }
 
   const clear = () => {
     setApikey(false)
     setGenerate(false)
+    setName('')
+    setLevel(1)
   }
 
   return (
     <div>
-      {title ? <h2>{t('newApikey')}</h2> : null}
+      <LoadingStatus />
       {apikey ? (
-        <>
-          <ShowKey {...{ apikey, t, clear, standalone }} />
-        </>
+        <ShowKey {...{ apikey, t, clear }} />
       ) : (
         <>
           <h5>{t('keyName')}</h5>
@@ -200,99 +221,13 @@ const NewKey = ({
   )
 }
 
-const Apikey = ({ apikey, t, account, backend, keyAdded, startLoading, stopLoading }) => {
-  const { setModal } = useContext(ModalContext)
-  const toast = useToast()
-
-  const fields = {
-    id: 'ID',
-    name: t('keyName'),
-    level: t('keyLevel'),
-    expiresAt: t('expires'),
-    createdAt: t('created'),
-  }
-
-  const expired = DateTime.fromISO(apikey.expiresAt).valueOf() < DateTime.now().valueOf()
-
-  const remove = async () => {
-    startLoading()
-    const result = await backend.removeApikey(apikey.id)
-    if (result) toast.success(t('gone'))
-    else toast.for.backendError()
-    // This just forces a refresh of the list from the server
-    // We obviously did not add a key here, but rather removed one
-    keyAdded()
-    stopLoading()
-  }
-
-  const removeModal = () => {
-    setModal(
-      <ModalWrapper slideFrom="top">
-        <h2>{t('areYouCertain')}</h2>
-        <p>{t('deleteKeyWarning')}</p>
-        <p className="flex flex-row gap-4 items-center justify-center">
-          <button className="btn btn-neutral btn-outline px-8">{t('cancel')}</button>
-          <button className="btn btn-error px-8" onClick={remove}>
-            {t('delete')}
-          </button>
-        </p>
-      </ModalWrapper>
-    )
-  }
-
-  const title = (
-    <div className="flex flex-row gap-2 items-center inline-block justify-around w-full">
-      <span>{apikey.name}</span>
-      <span className="font-normal">
-        {t('expires')}: <b>{DateTime.fromISO(apikey.expiresAt).toLocaleString()}</b>
-      </span>
-      <span className="opacity-50">|</span>
-      <span className="font-normal">
-        {t('keyLevel')}: <b>{apikey.level}</b>
-      </span>
-    </div>
-  )
-
-  return (
-    <Collapse
-      title={title}
-      openTitle={apikey.name}
-      primary
-      valid={!expired}
-      buttons={[
-        <button
-          key="rm"
-          className="btn btn-error hover:text-error-content border-0"
-          onClick={account.control > 4 ? remove : removeModal}
-        >
-          <TrashIcon key="button2" />
-        </button>,
-      ]}
-    >
-      {expired ? (
-        <Popout warning compact>
-          <b>{t('keyExpired')}</b>
-        </Popout>
-      ) : null}
-      {Object.entries(fields).map(([key, title]) => (
-        <Row title={title} key={key}>
-          {apikey[key]}
-        </Row>
-      ))}
-    </Collapse>
-  )
-}
-
 // Component for the 'new/apikey' page
 export const NewApikey = ({ standalone = false }) => {
-  // Context
-  const { startLoading, stopLoading } = useContext(LoadingContext)
-
   // Hooks
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const { account } = useAccount()
   const backend = useBackend()
   const { t } = useTranslation(ns)
-  const toast = useToast()
 
   // State
   const [generate, setGenerate] = useState(false)
@@ -302,7 +237,8 @@ export const NewApikey = ({ standalone = false }) => {
   const keyAdded = () => setAdded(added + 1)
 
   return (
-    <div className="max-w-xl xl:pl-4">
+    <div className="max-w-2xl xl:pl-4">
+      <LoadingStatus />
       <NewKey
         {...{
           t,
@@ -310,11 +246,8 @@ export const NewApikey = ({ standalone = false }) => {
           generate,
           setGenerate,
           backend,
-          toast,
           keyAdded,
           standalone,
-          startLoading,
-          stopLoading,
         }}
       />
     </div>
@@ -323,20 +256,22 @@ export const NewApikey = ({ standalone = false }) => {
 
 // Component for the account/apikeys page
 export const Apikeys = () => {
-  // Context
-  const { startLoading, stopLoading, loading } = useContext(LoadingContext)
+  const router = useRouter()
+  const { locale } = router
 
   // Hooks
   const { account } = useAccount()
   const backend = useBackend()
   const { t } = useTranslation(ns)
-  const toast = useToast()
-  const { CollapseButton, closeCollapseButton } = useCollapseButton()
+  const { setLoadingStatus, LoadingStatus, LoadingProgress } = useLoadingStatus()
 
   // State
   const [keys, setKeys] = useState([])
-  const [generate, setGenerate] = useState(false)
-  const [added, setAdded] = useState(0)
+  const [selected, setSelected] = useState({})
+  const [refresh, setRefresh] = useState(0)
+
+  // Helper var to see how many are selected
+  const selCount = Object.keys(selected).length
 
   // Effects
   useEffect(() => {
@@ -345,74 +280,123 @@ export const Apikeys = () => {
       if (result.success) setKeys(result.data.apikeys)
     }
     getApikeys()
-  }, [added])
+  }, [refresh])
 
-  // Helper method to force refresh
-  const keyAdded = () => setAdded(added + 1)
+  // Helper method to toggle single selection
+  const toggleSelect = (id) => {
+    const newSelected = { ...selected }
+    if (newSelected[id]) delete newSelected[id]
+    else newSelected[id] = 1
+    setSelected(newSelected)
+  }
+
+  // Helper method to toggle select all
+  const toggleSelectAll = () => {
+    if (selCount > 0) setSelected({})
+    else {
+      const newSelected = {}
+      for (const key of keys) newSelected[key.id] = 1
+      setSelected(newSelected)
+    }
+  }
+
+  // Helper to delete one or more apikeys
+  const removeSelectedApikeys = async () => {
+    let i = 0
+    for (const key in selected) {
+      i++
+      await backend.removeApikey(key)
+      setLoadingStatus([
+        true,
+        <LoadingProgress val={i} max={selCount} msg={t('removingApikeys')} />,
+      ])
+    }
+    setSelected({})
+    setRefresh(refresh + 1)
+    setLoadingStatus([true, 'nailedIt', true, true])
+  }
 
   return (
-    <div className="max-w-xl xl:pl-4">
-      {generate ? (
-        <NewKey
-          {...{
-            t,
-            account,
-            setGenerate,
-            backend,
-            toast,
-            keyAdded,
-            startLoading,
-            stopLoading,
-          }}
-        />
-      ) : (
-        <>
-          <h2>{t('apikeys')}</h2>
-          {keys.map((apikey) => (
-            <Apikey
-              {...{ account, apikey, t, backend, keyAdded, startLoading, stopLoading }}
-              key={apikey.id}
-            />
+    <div className="max-w-4xl xl:pl-4">
+      <LoadingStatus />
+      <p className="text-right">
+        <Link className="btn btn-primary capitalize btn-lg" bottom primary href="/new/apikey">
+          {t('newApikey')}
+        </Link>
+      </p>
+      {selCount ? (
+        <button className="btn btn-error" onClick={removeSelectedApikeys}>
+          <TrashIcon /> {selCount} {t('apikeys')}
+        </button>
+      ) : null}
+      <table className="table table-auto">
+        <thead className="border border-base-300 border-b-2 border-t-0 border-x-0">
+          <tr className="b">
+            <th className="text-base-300 text-base">
+              <input
+                type="checkbox"
+                className="checkbox checkbox-secondary"
+                onClick={toggleSelectAll}
+                checked={keys.length === selCount}
+              />
+            </th>
+            <th className="text-base-300 text-base">{t('keyName')}</th>
+            <th className="text-base-300 text-base">
+              <span className="hidden md:inline">{t('keyLevel')}</span>
+              <span role="img" className="inline md:hidden">
+                🔐
+              </span>
+            </th>
+            <th className="text-base-300 text-base">{t('keyExpires')}</th>
+            <th className="text-base-300 text-base hidden md:block">{t('apiCalls')}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {keys.map((apikey, i) => (
+            <tr key={i}>
+              <td className="text-base font-medium">
+                <input
+                  type="checkbox"
+                  checked={selected[apikey.id] ? true : false}
+                  className="checkbox checkbox-secondary"
+                  onClick={() => toggleSelect(apikey.id)}
+                />
+              </td>
+              <td className="text-base font-medium">
+                <PageLink href={`/account/apikeys/${apikey.id}`} txt={apikey.name} />
+              </td>
+              <td className="text-base font-medium">
+                {apikey.level}
+                <small className="hidden md:inline pl-2 text-base-300 italic">
+                  ({t(`keyLevel${apikey.level}`)})
+                </small>
+              </td>
+              <td className="text-base font-medium">
+                {shortDate(locale, apikey.expiresAt, false)}
+              </td>
+              <td className="text-base font-medium hidden md:block">
+                {formatNumber(apikey.calls)}
+              </td>
+            </tr>
           ))}
-          <CollapseButton
-            title={t('newApikey')}
-            className="btn btn-primary w-full capitalize mt-4"
-            bottom
-            primary
-          >
-            <NewKey
-              title={false}
-              {...{
-                t,
-                account,
-                setGenerate,
-                backend,
-                toast,
-                keyAdded,
-                startLoading,
-                stopLoading,
-                closeCollapseButton,
-              }}
-            />
-          </CollapseButton>
-          <BackToAccountButton loading={loading} />
-          {account.control < 5 ? (
-            <Popout tip>
-              <h5>Refer to FreeSewing.dev for details (English only)</h5>
-              <p>
-                This is an advanced feature aimed at developers or anyone who wants to interact with
-                our backend directly. For details, please refer to{' '}
-                <WebLink
-                  href="https://freesewing.dev/reference/backend/api/apikeys"
-                  txt="the API keys reference documentation"
-                />{' '}
-                on <WebLink href="https://freesewing.dev/" txt="FreeSewing.dev" />, our site for
-                developers and contributors.
-              </p>
-            </Popout>
-          ) : null}
-        </>
-      )}
+        </tbody>
+      </table>
+      <BackToAccountButton />
+      {account.control < 5 ? (
+        <Popout link>
+          <h5>{t('keyDocsTitle')}</h5>
+          <p>{t('keyDocsMsg')}</p>
+          <p className="text-right">
+            <a
+              className="btn btn-secondary mt-2"
+              href="https://freesewing.dev/reference/backend/apikeys"
+            >
+              FreeSewing.dev
+              <RightIcon />
+            </a>
+          </p>
+        </Popout>
+      ) : null}
     </div>
   )
 }

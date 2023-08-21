@@ -3,3 +3,6 @@ settingsSaved: Settings saved
 backendError: Backend returned an error
 copiedToClipboard: Copied to clipboard
 processingUpdate: Processing update
+backendLoadingStarted: Loading data from backend
+backendLoadingCompleted: Data loaded successfully
+allDone: All done

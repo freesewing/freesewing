@@ -205,6 +205,13 @@ Backend.prototype.createApikey = async function (data) {
 }
 
 /*
+ * Get API key
+ */
+Backend.prototype.getApikey = async function (id) {
+  return responseHandler(await api.get(`/apikeys/${id}/jwt`, this.auth))
+}
+
+/*
  * Get API keys
  */
 Backend.prototype.getApikeys = async function () {
