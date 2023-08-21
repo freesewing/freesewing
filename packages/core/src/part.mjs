@@ -184,6 +184,15 @@ Part.prototype.shorthand = function () {
     },
     set: (measurements, name, value) => (self.context.settings.measurements[name] = value),
   })
+  shorthand.macros = new Proxy(this.macros, {
+    get: function (macros, name) {
+      if (typeof macros[name] === 'undefined')
+        self.context.store.log.warning(
+          `${self.name} tried to access \`macros.${name}\` but it is \`undefined\``
+        )
+      return Reflect.get(...arguments)
+    },
+  })
   shorthand.options = new Proxy(this.context.settings.options, {
     get: function (options, name) {
       if (typeof options[name] === 'undefined')
@@ -340,9 +349,10 @@ Part.prototype.__inject = function (orig) {
     this.snippets[i] = orig.snippets[i].clone()
   }
   Object.keys(orig.macros).forEach((key) => {
-    this.macros[key] = (this.macros[key] instanceof Array ? this.macros[key] : []).concat(
-      orig.macros[key]
-    )
+    // this.macros[key] = (this.macros[key] instanceof Array ? this.macros[key] : []).concat(
+    //   orig.macros[key]
+    // )
+    this.macros[key] = { ...orig.macros[key] }
   })
 
   return this
@@ -359,15 +369,13 @@ Part.prototype.__macroClosure = function (props) {
   const method = function (key, args) {
     const macro = utils.__macroName(key)
 
-    // let storeKey = 'macros.' + key + '.ids'
     if (key.substring(0, 2) === 'rm') {
       key = key.substring(2)
-      // storeKey = 'macros.' + key + '.ids'
 
       let ids = []
       switch (typeof args) {
         case 'undefined':
-          ids = self.macros[key]
+          ids = self.macros[key].ids
           break
         case 'string':
           ids.push(args)
@@ -378,21 +386,17 @@ Part.prototype.__macroClosure = function (props) {
       if (typeof self[macro] === 'function' && ids)
         ids.forEach((id) => {
           self[macro](id, props)
-          // props.store.set(
-          //   storeKey,
-          //   props.store.get(storeKey).filter((e) => e !== id)
-          // )
-          self.macros[key] = self.macros[key].filter((i) => i !== id)
+          self.macros[key].ids = self.macros[key].ids.filter((i) => i !== id)
         })
 
       return
     }
 
     args = { ...args, ...{ id: args && args.id ? args.id : self.getId(), macro: macro } }
-    // props.store.setIfUnset(storeKey, []).push(storeKey, args.id)
-    self.macros[key] = self.macros[key] instanceof Array ? self.macros[key] : []
-    if (false == self.macros[key].includes(args.id)) {
-      self.macros[key].push(args.id)
+    self.macros[key] = { ...self.macros[key], ...{} }
+    self.macros[key].ids = self.macros[key].ids instanceof Array ? self.macros[key].ids : []
+    if (false == self.macros[key].ids.includes(args.id)) {
+      self.macros[key].ids.push(args.id)
     }
     if (typeof self[macro] === 'function') self[macro](args, props)
     else if ('context' in self) {

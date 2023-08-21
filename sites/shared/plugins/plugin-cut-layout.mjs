@@ -5,7 +5,7 @@ const prefix = 'mirroredOnFold'
 // types of path operations
 const opTypes = ['to', 'from', 'cp1', 'cp2']
 // const avoidRegx = new RegExp(`^(cutonfold|grainline|__scalebox|__miniscale|${prefix})`)
-const avoidRegx = new RegExp(`^(__macro_(cutonfold|grainline|scalebox|miniscale))`)
+const avoidRegx = new RegExp(`^(cutonfold|grainline|scalebox|miniscale)`)
 
 /**
  * The plugin to handle all business related to mirroring, rotating, and duplicating parts for the cutting layout
@@ -113,7 +113,7 @@ export const cutLayoutPlugin = function (material, grainAngle) {
           else if (grainSpec !== undefined) {
             // replace the cutonfold with a grainline
             macro('grainline', { from: points.cutonfoldVia1, to: points.cutonfoldVia2 })
-            macro('cutonfold', false)
+            macro('rmcutonfold')
           }
         }
 
@@ -166,12 +166,6 @@ export const cutLayoutPlugin = function (material, grainAngle) {
             on: snippetsByType[def],
           })
         }
-        console.log({
-          mirrorOnFold: fold,
-          id: id,
-          paths: JSON.parse(JSON.stringify(paths)),
-          points: JSON.parse(JSON.stringify(points)),
-        })
       },
       /**
        * rotate the part so that it is oriented properly with regard to the fabric grain

@@ -147,19 +147,19 @@ export const dimensionsMacros = {
   rmpd: function (id, props) {
     removeDimension('pd_' + id, props)
   },
-  // This is non-functional:
-  // (Every macro with an rm prefix is regarded to be a removal macro of the
-  // corresponding non-prefix macro. And the id for the to-be-removed macro
-  // needs to be in the macros.<macroName>.ids store. And there are none in
-  // the macro.d.ids path, since there is no d macro.)
-  rmad: function (id, props) {
+  // This is has a side-effect
+  // Since this is a macro that removed other macros, there will be an array key
+  // "macros.removeddim.ids" created in the part that contains the id of this
+  // macro. It is useless.
+  removedim: function (id, props) {
     for (let key of ['vd', 'ld', 'pd', 'hd']) {
-      const ids = props.store.get('macros.' + key + '.ids')
-      console.log({ ids: ids })
-      if (ids)
-        ids.forEach((id) => {
-          removeDimension(key + '_' + id, props)
-        })
+      if (props.macros[key]) {
+        const ids = props.macros[key].ids
+        if (ids)
+          ids.forEach((id) => {
+            removeDimension(key + '_' + id, props)
+          })
+      }
     }
   },
 }

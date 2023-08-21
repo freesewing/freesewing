@@ -1,6 +1,6 @@
 // Export macros
 export const bannerMacros = {
-  banner: function (so, { store }) {
+  banner: function (so, { store, macros }) {
     // Mix defaults with settings object
     so = {
       text: '',
@@ -20,17 +20,19 @@ export const bannerMacros = {
 
     so.path.attr('data-text', spacer)
 
-    store.set('macros.banner.paths.' + so.id, so.path.name)
+    macros.banner.paths = macros.banner.paths ? macros.banner.paths : []
+    macros.banner.paths[so.id] = so.path.name
   },
-  rmbanner: function (id, { paths, store }) {
-    const storePathKey = 'macros.banner.paths.' + id
-    const pathName = store.get(storePathKey)
+  rmbanner: function (id, { paths, macros }) {
+    const pathName = macros.banner.paths ? macros.banner.paths[id] : undefined
     if (pathName) {
       const bannerPath = paths[pathName]
-      delete bannerPath.attributes.list['data-text-dy']
-      delete bannerPath.attributes.list['data-text-class']
-      delete bannerPath.attributes.list['data-text']
+      if (bannerPath) {
+        delete bannerPath.attributes.list['data-text-dy']
+        delete bannerPath.attributes.list['data-text-class']
+        delete bannerPath.attributes.list['data-text']
+      }
+      delete macros.banner.paths[id]
     }
-    store.unset(storePathKey)
   },
 }
