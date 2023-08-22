@@ -1462,10 +1462,10 @@
   resolved "https://registry.yarnpkg.com/@mdx-js/util/-/util-2.0.0-next.1.tgz#b17a046ed5cb1b13e75b29740504ec53a7e0b016"
   integrity sha512-F36kWTFdFXrbNIsM77dhVwYZsZonUIKHkYyYgnuw1NWskBfEn1ET5B5Z5mm58ckKNf7SimchnxR9sKCCtH38WA==
 
-"@next/bundle-analyzer@13.4.18":
-  version "13.4.18"
-  resolved "https://registry.yarnpkg.com/@next/bundle-analyzer/-/bundle-analyzer-13.4.18.tgz#18f76165f8f24100591b756154828c34c43e370a"
-  integrity sha512-5tSSaq1Id1G4TjhUvU/r+4dVRRZFvwKVxSY9K1aLjsg46XxC4l/cN+m9iMHPw9VjNAq8ENx0QO4ElP6wVC8q4w==
+"@next/bundle-analyzer@13.4.19":
+  version "13.4.19"
+  resolved "https://registry.yarnpkg.com/@next/bundle-analyzer/-/bundle-analyzer-13.4.19.tgz#aaa423b029a4c7af04c7da9ba5980b267946a5fb"
+  integrity sha512-nXKHz63dM0Kn3XPFOKrv2wK+hP9rdBg2iR1PsxuXLHVBoZhMyS1/ldRcX80YFsm2VUws9zM4a0E/1HlLI+P92g==
   dependencies:
     webpack-bundle-analyzer "4.7.0"
 
@@ -1478,6 +1478,13 @@
   version "13.4.18"
   resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-13.4.18.tgz#339b04d974a3e99a1db9efb3fc62a7eb666e9748"
   integrity sha512-GlOmUjZYYTjKl782mKk5a0bYEmKaouGaxPhi6t9yDILqrppU7JTIyONzLKQPszRXDCVZge0NFd4gwRs1ARZsMg==
+  dependencies:
+    glob "7.1.7"
+
+"@next/eslint-plugin-next@13.4.19":
+  version "13.4.19"
+  resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-13.4.19.tgz#93d130c37b47fd120f6d111aee36a60611148df1"
+  integrity sha512-N/O+zGb6wZQdwu6atMZHbR7T9Np5SUFUjZqCbj0sXm+MwQO35M8TazVB4otm87GkXYs2l6OPwARd3/PUWhZBVQ==
   dependencies:
     glob "7.1.7"
 
@@ -5658,7 +5665,22 @@ escape-string-regexp@^2.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-2.0.0.tgz#a30304e99daa32e23b2fd20f51babd07cffca344"
   integrity sha512-UpzcLCXolUWcNu5HtVMHYdXJjArjsF9C0aNnquZYY4uW/Vu0miy5YoWvbV345HauVvcAUnpRuhMMcqTcGOY2+w==
 
-eslint-config-next@13.4.18, eslint-config-next@^13.0.6:
+eslint-config-next@13.4.19:
+  version "13.4.19"
+  resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-13.4.19.tgz#f46be9d4bd9e52755f846338456132217081d7f8"
+  integrity sha512-WE8367sqMnjhWHvR5OivmfwENRQ1ixfNE9hZwQqNCsd+iM3KnuMc1V8Pt6ytgjxjf23D+xbesADv9x3xaKfT3g==
+  dependencies:
+    "@next/eslint-plugin-next" "13.4.19"
+    "@rushstack/eslint-patch" "^1.1.3"
+    "@typescript-eslint/parser" "^5.4.2 || ^6.0.0"
+    eslint-import-resolver-node "^0.3.6"
+    eslint-import-resolver-typescript "^3.5.2"
+    eslint-plugin-import "^2.26.0"
+    eslint-plugin-jsx-a11y "^6.5.1"
+    eslint-plugin-react "^7.31.7"
+    eslint-plugin-react-hooks "^4.5.0 || 5.0.0-canary-7118f5dd7-20230705"
+
+eslint-config-next@^13.0.6:
   version "13.4.18"
   resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-13.4.18.tgz#d574634128398ecfa7dae9b810867e1308a7ccb9"
   integrity sha512-G15CYbsIHwV6Fzoly5SXo/Mj3pNqNkOzbf+wQcPod3LgVNviWVYlb9czjdiREXHq2VF6oV79Kv0Wunguj6RMEw==
