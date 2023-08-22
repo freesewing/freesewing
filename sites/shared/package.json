@@ -16,7 +16,7 @@
   "scripts": {},
   "peerDependencies": {},
   "dependencies": {
-    "@headlessui/react": "1.7.16",
+    "@headlessui/react": "1.7.17",
     "@next/mdx": "13.4.19",
     "@resvg/resvg-js": "2.4.1",
     "@tailwindcss/typography": "0.5.9",
