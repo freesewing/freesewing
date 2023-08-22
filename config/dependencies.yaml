@@ -264,7 +264,7 @@ dev:
 
 lab:
   _:
-    '@headlessui/react': &headlessUiReact '1.7.16'
+    '@headlessui/react': &headlessUiReact '1.7.17'
     '@mdx-js/loader': *mdx
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
