@@ -11,13 +11,15 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
+import { useApikeyDocs } from 'shared/hooks/use-apikey-docs.mjs'
 // Components
-import { BackToAccountButton, Choice, DisplayRow } from './shared.mjs'
+import { BackToAccountButton, Choice, DisplayRow, NumberBullet } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { LeftIcon, PlusIcon, CopyIcon, RightIcon, TrashIcon } from 'shared/components/icons.mjs'
 import { Collapse, useCollapseButton } from 'shared/components/collapse.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { PageLink, Link, WebLink } from 'shared/components/link.mjs'
+import { StringInput, ListInput, FormControl } from 'shared/components/inputs.mjs'
 
 export const ns = ['account', 'status']
 
@@ -144,12 +146,14 @@ const ShowKey = ({ apikey, t, clear }) => {
   )
 }
 
-const NewKey = ({ t, account, setGenerate, backend, title = true }) => {
+const NewKey = ({ account, setGenerate, backend, title = true }) => {
   const [name, setName] = useState('')
   const [level, setLevel] = useState(1)
   const [expires, setExpires] = useState(Date.now())
   const [apikey, setApikey] = useState(false)
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { t, i18n } = useTranslation(ns)
+  const docs = useApikeyDocs(i18n.language)
 
   const levels = account.role === 'admin' ? [0, 1, 2, 3, 4, 5, 6, 7, 8] : [0, 1, 2, 3, 4]
 
@@ -180,26 +184,35 @@ const NewKey = ({ t, account, setGenerate, backend, title = true }) => {
         <ShowKey {...{ apikey, t, clear }} />
       ) : (
         <>
-          <h5>{t('keyName')}</h5>
-          <p>{t('keyNameDesc')}</p>
-          <input
-            value={name}
-            onChange={(evt) => setName(evt.target.value)}
-            className="input w-full input-bordered flex flex-row"
-            type="text"
-            placeholder={'Alicia key'}
+          <StringInput
+            label={t('keyName')}
+            docs={docs.name}
+            current={name}
+            update={setName}
+            valid={(val) => val.length > 0}
+            placeholder={'Alicia Key'}
           />
-          <h5 className="mt-4">{t('keyExpires')}</h5>
-          <ExpiryPicker {...{ t, expires, setExpires }} />
-          <h5 className="mt-4">{t('keyLevel')}</h5>
-          {levels.map((l) => (
-            <Choice val={l} t={t} update={setLevel} current={level} key={l}>
-              <span className="block text-lg leading-5">{t(`keyLevel${l}`)}</span>
-            </Choice>
-          ))}
+          <FormControl label={t('keyExpires')} docs={docs.expiry}>
+            <ExpiryPicker {...{ t, expires, setExpires }} />
+          </FormControl>
+          <ListInput
+            label={t('keyLevel')}
+            docs={docs.level}
+            list={levels.map((l) => ({
+              val: l,
+              label: (
+                <div className="flex flex-row items-center w-full justify-between">
+                  <span>{t(`keyLevel${l}`)}</span>
+                  <NumberBullet nr={l} color="secondary" />
+                </div>
+              ),
+            }))}
+            current={level}
+            update={setLevel}
+          />
           <div className="flex flex-row gap-2 items-center w-full my-8">
             <button
-              className="btn btn-primary grow capitalize"
+              className="btn btn-primary capitalize w-full md:w-auto"
               disabled={name.length < 1}
               onClick={createKey}
             >
@@ -232,7 +245,6 @@ export const NewApikey = () => {
       <LoadingStatus />
       <NewKey
         {...{
-          t,
           account,
           generate,
           setGenerate,
@@ -309,8 +321,14 @@ export const Apikeys = () => {
   return (
     <div className="max-w-4xl xl:pl-4">
       <LoadingStatus />
-      <p className="text-right">
-        <Link className="btn btn-primary capitalize btn-lg" bottom primary href="/new/apikey">
+      <p className="text-center md:text-right">
+        <Link
+          className="btn btn-primary capitalize w-full md:w-auto"
+          bottom
+          primary
+          href="/new/apikey"
+        >
+          <PlusIcon />
           {t('newApikey')}
         </Link>
       </p>

@@ -32,6 +32,7 @@ import {
   ResetIcon,
   MeasieIcon,
   CalendarIcon,
+  PlusIcon,
 } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import Markdown from 'react-markdown'
@@ -642,6 +643,7 @@ export const Sets = ({ title = true }) => {
           primary
           href="/new/set"
         >
+          <PlusIcon />
           {t('newSet')}
         </Link>
       </p>

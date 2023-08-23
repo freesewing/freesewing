@@ -26,8 +26,14 @@ const btnClasses = {
     'hover:bg-opacity-20 hover:bg-secondary btn-ghost ' +
     'border border-secondary hover:border hover:border-secondary',
 }
-const spanClasses =
-  'p-2 w-8 h-8 shrink-0 rounded-full text-center p-0 py-2 bg-secondary text-secondary-content'
+
+export const NumberBullet = ({ nr, color = 'secondary' }) => (
+  <span
+    className={`p-2 w-8 h-8 flex flex-col items-center justify-center shrink-0 rounded-full text-center p-0 py-2 bg-${color} text-${color}-content border-2 border-base-100`}
+  >
+    {nr}
+  </span>
+)
 
 export const BackToAccountButton = ({ loading = false }) => {
   const { t } = useTranslation(['account'])
@@ -60,7 +66,7 @@ export const Choice = ({
       className={`${btnClasses.dflt} ${active ? btnClasses.active : btnClasses.inactive}`}
       onClick={() => update(val)}
     >
-      {bool ? boolChoices[val] : <span className={spanClasses}>{val}</span>}
+      {bool ? boolChoices[val] : <NumberBullet nr={val} />}
       <div className={`normal-case text-base-content`}>{children}</div>
     </button>
   )

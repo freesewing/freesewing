@@ -76,8 +76,8 @@ export const FormControl = ({
       {children}
       {labelBL || labelBR ? (
         <label className="label">
-          {labelBL ? <span className="label-text-alt">Bottom Left label</span> : null}
-          {labelBR ? <span className="label-text-alt">Bottom Right label</span> : null}
+          {labelBL ? <span className="label-text-alt">{labelBL}</span> : null}
+          {labelBR ? <span className="label-text-alt">{labelBR}</span> : null}
         </label>
       ) : null}
     </div>

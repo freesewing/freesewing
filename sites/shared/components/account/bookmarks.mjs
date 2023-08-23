@@ -5,11 +5,13 @@ import { useTranslation } from 'next-i18next'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
+import { useBookmarkDocs } from 'shared/hooks/use-bookmark-docs.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { PlusIcon, TrashIcon, LeftIcon } from 'shared/components/icons.mjs'
 import { PageLink, WebLink, Link } from 'shared/components/link.mjs'
 import { DisplayRow } from './shared.mjs'
+import { StringInput } from 'shared/components/inputs.mjs'
 
 export const ns = ['account', 'status']
 
@@ -43,6 +45,7 @@ export const NewBookmark = () => {
   const router = useRouter()
   const backend = useBackend()
   const { t } = useTranslation(ns)
+  const docs = useBookmarkDocs(router.locale)
 
   // State
   const [title, setTitle] = useState('')
@@ -64,26 +67,26 @@ export const NewBookmark = () => {
   return (
     <div className="max-w-2xl xl:pl-4">
       <LoadingStatus />
-      <h5>{t('title')}</h5>
-      <input
-        value={title}
-        onChange={(evt) => setTitle(evt.target.value)}
-        className="input w-full input-bordered flex flex-row"
-        type="text"
+      <StringInput
+        label={t('title')}
+        docs={docs.title}
+        update={setTitle}
+        current={title}
+        valid={(val) => val.length > 0}
         placeholder={t('account')}
       />
-      <h5>{t('location')}</h5>
-      <input
-        value={url}
-        onChange={(evt) => setUrl(evt.target.value)}
-        className="input w-full input-bordered flex flex-row"
-        type="text"
+      <StringInput
+        label={t('location')}
+        docs={docs.location}
+        update={setUrl}
+        current={url}
+        valid={(val) => val.length > 0}
         placeholder={'https://freesewing.org/account'}
       />
       <div className="flex flex-row gap-2 items-center w-full my-8">
         <button
           className="btn btn-primary grow capitalize"
-          disabled={title.length < 1 || url.length < 0}
+          disabled={!(title.length > 0 && location.length > 0)}
           onClick={createBookmark}
         >
           {t('newBookmark')}
@@ -157,8 +160,13 @@ export const Bookmarks = () => {
   return (
     <div className="max-w-4xl xl:pl-4">
       <LoadingStatus />
-      <p className="text-right">
-        <Link className="btn btn-primary capitalize btn-lg" bottom primary href="/new/bookmark">
+      <p className="text-center md:text-right">
+        <Link
+          className="btn btn-primary capitalize w-full md:w-auto"
+          bottom
+          primary
+          href="/new/bookmark"
+        >
           <PlusIcon />
           {t('newBookmark')}
         </Link>
