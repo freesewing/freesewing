@@ -8,7 +8,7 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useEffect, useState } from 'react'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { PageLink } from 'shared/components/page-link.mjs'
+import { PageLink } from 'shared/components/link.mjs'
 
 // Translation namespaces used on this page
 const namespaces = nsMerge(pageNs, 'patrons')

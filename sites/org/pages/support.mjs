@@ -5,10 +5,9 @@ import { nsMerge } from 'shared/utils.mjs'
 import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { WebLink } from 'shared/components/web-link.mjs'
+import { WebLink, Link } from 'shared/components/link.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { DiscordIcon, GitHubIcon } from 'shared/components/icons.mjs'
-import Link from 'next/link'
 import { Joost } from 'shared/components/joost.mjs'
 
 // Translation namespaces used on this page

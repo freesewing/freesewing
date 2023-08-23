@@ -206,6 +206,13 @@ SetModel.prototype.revealSet = function (mset) {
       //console.log(err)
     }
   }
+  for (const field of this.jsonFields) {
+    try {
+      clear[field] = JSON.parse(clear[field])
+    } catch (err) {
+      //console.log(err)
+    }
+  }
 
   return { ...mset, ...clear }
 }

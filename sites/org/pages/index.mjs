@@ -8,7 +8,6 @@ import { useEffect, useState } from 'react'
 // Components
 import Head from 'next/head'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-//import { PageLink } from 'shared/components/page-link.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { ForceAccountCheck } from 'shared/components/account/force-account-check.mjs'
 import {

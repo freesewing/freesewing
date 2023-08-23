@@ -211,6 +211,9 @@ privateSetDesc: These measurments cannot be used by other users or visitors
 permalink: Permalink
 editThing: Edit {thing}
 saveThing: Save {thing}
+filterByDesign: Filter by design
+noFilter: Do not filter
+filterByDesignDocs: If you have a specific design in mind, you can <b>filter by design</b> to only list those measurements that are required for this design.
 
 patternNew: Generate a new pattern
 patternNewInfo: Pick a design, add your measurements set, and we'll generate a made-to-measure sewing pattern for you.

@@ -60,12 +60,16 @@ export const BulletIcon = (props) => (
   </IconWrapper>
 )
 
-export const Camera = (props) => (
+export const CalendarIcon = (props) => (
   <IconWrapper {...props}>
-    <>
-      <path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-      <path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
-    </>
+    <path d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" />
+  </IconWrapper>
+)
+
+export const CameraIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+    <path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
   </IconWrapper>
 )
 

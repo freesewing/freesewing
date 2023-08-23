@@ -1,5 +1,6 @@
 // Dependencies
 import { cloudflareImageUrl } from 'shared/utils.mjs'
+import { collection } from 'shared/hooks/use-design.mjs'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Hooks
@@ -19,7 +20,7 @@ import { measurementAsMm, formatMm, measurementAsUnits, parseDistanceInput } fro
 //import { NumberInput } from 'shared/components/workbench/menus/shared/inputs.mjs'
 //import { useState, useCallback } from 'react'
 
-export const ns = ['account', 'measurements']
+export const ns = ['account', 'measurements', 'designs']
 
 /*
  * Helper component to display a tab heading
@@ -53,12 +54,12 @@ export const FormControl = ({
 
   return (
     <div className="form-control w-full mt-2">
-      <label className="label pb-0">
+      <label className={`label pb-0 ${docs ? 'hover:cursor-help' : ''}`}>
         <span className="label-text text-lg font-bold mb-0">{label}</span>
         {docs ? (
           <span className="label-text-alt">
             <button
-              className="btn btn-ghost btn-sm btn-circle"
+              className="btn btn-ghost btn-sm btn-circle hover:btn-secondary"
               onClick={() =>
                 setModal(
                   <ModalWrapper flex="col" justify="top lg:justify-center" slideFrom="right">
@@ -151,6 +152,36 @@ export const StringInput = ({
             : 'input-error'
         }`}
       />
+    </FormControl>
+  )
+}
+
+/*
+ * Dropdown for designs
+ */
+export const DesignDropdown = ({
+  label, // Label to use
+  update, // onChange handler
+  current, // The current value
+  docs = false, // Docs to load, if any
+  firstOption = null, // Any first option to add in addition to designs
+}) => {
+  const { t, i18n } = useTranslation(['designs'])
+  console.log(i18n)
+
+  return (
+    <FormControl label={label} docs={docs}>
+      <select
+        className="select select-bordered w-full"
+        onChange={(evt) => update(evt.target.value)}
+      >
+        {firstOption}
+        {collection.map((design) => (
+          <option key={design} value={design}>
+            {t(`${design}.t`)}
+          </option>
+        ))}
+      </select>
     </FormControl>
   )
 }

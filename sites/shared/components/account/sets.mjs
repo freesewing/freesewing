@@ -4,7 +4,7 @@ import { useTranslation } from 'next-i18next'
 import orderBy from 'lodash.orderby'
 import { measurements } from 'config/measurements.mjs'
 import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
-import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
+import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewing.config.mjs'
 // Hooks
 import { useDropzone } from 'react-dropzone'
 import { useAccount } from 'shared/hooks/use-account.mjs'
@@ -30,6 +30,8 @@ import {
   UploadIcon,
   CancelIcon,
   ResetIcon,
+  MeasieIcon,
+  CalendarIcon,
 } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import Markdown from 'react-markdown'
@@ -43,6 +45,7 @@ import { useSetDocs } from 'shared/hooks/use-set-docs.mjs'
 import { useMeasurementDocs } from 'shared/hooks/use-measurement-docs.mjs'
 import { Lightbox } from 'shared/components/lightbox.mjs'
 import { isDegreeMeasurement } from 'config/measurements.mjs'
+import { TextOnBg } from 'shared/components/text-on-bg.mjs'
 
 import {
   StringInput,
@@ -50,9 +53,11 @@ import {
   ListInput,
   MarkdownInput,
   MeasieInput,
+  DesignDropdown,
+  ns as inputNs,
 } from 'shared/components/inputs.mjs'
 
-export const ns = ['account', 'patterns', 'status', 'measurements']
+export const ns = [inputNs, 'account', 'patterns', 'status', 'measurements']
 
 export const NewSet = () => {
   // Hooks
@@ -107,9 +112,71 @@ export const NewSet = () => {
 export const MeasieVal = ({ val, m, imperial }) =>
   isDegreeMeasurement(m) ? <span>{val}°</span> : <span>{formatMm(val, imperial)}</span>
 
+export const MsetBanner = ({ set, control, onClick = false, href = false }) => {
+  const { t, i18n } = useTranslation(ns)
+  const info = []
+  if (control > 1)
+    info.push([
+      <CalendarIcon />,
+      <b>
+        <TextOnBg txt={shortDate(i18n.language, set.createdAt, false)} />
+      </b>,
+    ])
+  info.push([
+    <MeasieIcon />,
+    <b>
+      <TextOnBg txt={(set.measies ? Object.keys(set.measies).length : 0) + ' ' + t('measies')} />
+    </b>,
+  ])
+  if (control > 2)
+    info.push([
+      set.public ? (
+        <OkIcon className="w-6 h-6 text-success" stroke={4} />
+      ) : (
+        <NoIcon className="w-6 h-6 text-error" stroke={3} />
+      ),
+      <b>
+        <TextOnBg txt={t(set.public ? 'publicSet' : 'privateSet')} />
+      </b>,
+    ])
+  const inner = (
+    <>
+      <h2 className="bg-base-100 px-4 rounded-lg bg-opacity-50 py-2 rounded-l-none">
+        <TextOnBg txt={set.name} />
+      </h2>
+      {info.map((item) => (
+        <div className="flex flex-row flex-wrap gap-2 bg-base-100 p-4 rounded bg-opacity-50 py-1 mt-2 rounded-l-none">
+          {item[0]}
+          {item[1]}
+        </div>
+      ))}
+    </>
+  )
+  const props = {
+    className:
+      'bg-base-100 w-full mb-2 mx-auto flex flex-col items-start text-center justify-center rounded shadow py-4',
+    style: {
+      backgroundImage: `url(${cloudflareImageUrl({ type: 'w1000', id: set.img })})`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '50%',
+    },
+  }
+
+  return onClick ? (
+    <button {...props} onClick={onClick}>
+      {inner}
+    </button>
+  ) : (
+    <Link {...props} href={href}>
+      {inner}
+    </Link>
+  )
+}
+
 export const Mset = ({ id, publicOnly = false }) => {
   // Hooks
-  const { account } = useAccount()
+  const { account, control } = useAccount()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const backend = useBackend()
   const { t } = useTranslation(ns)
@@ -212,14 +279,9 @@ export const Mset = ({ id, publicOnly = false }) => {
   const heading = (
     <div className="flex flex-row flex-wrap gap-4 text-sm items-center justify-between mb-2">
       <LoadingStatus />
-      <button
-        className="bg-base-100 w-full h-36 mb-2 mx-auto flex flex-col items-center text-center justify-center rounded shadow"
-        style={{
-          backgroundImage: `url(${cloudflareImageUrl({ type: 'w1000', id: mset.img })})`,
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: '50%',
-        }}
+      <MsetBanner
+        set={mset}
+        control={control}
         onClick={() =>
           setModal(
             <ModalWrapper flex="col" justify="top lg:justify-center" slideFrom="right">
@@ -227,9 +289,7 @@ export const Mset = ({ id, publicOnly = false }) => {
             </ModalWrapper>
           )
         }
-      >
-        <h2 className="bg-base-100 px-4 rounded-lg bg-opacity-70 py-2">{mset.name}</h2>
-      </button>
+      />
       {account.control > 3 && mset.public ? (
         <div className="flex flex-row gap-2 items-center">
           <a
@@ -291,39 +351,43 @@ export const Mset = ({ id, publicOnly = false }) => {
 
         <h2>{t('data')}</h2>
         <Row title={t('name')}>{mset.name}</Row>
-        <Row title={t('image')}>
-          <img
-            src={cloudflareImageUrl({ type: 'sq100', id: mset.img })}
-            className="w-8 h-8 aspect-square rounded-full shadow"
-          />
-        </Row>
         <Row title={t('units')}>{mset.imperial ? t('imerialUnits') : t('metricUnits')}</Row>
-        <Row title={t('notes')}>
-          <Markdown>{mset.notes}</Markdown>
-        </Row>
-        <Row title={t('public')}>
-          {mset.public ? (
-            <OkIcon className="w-6 h-6 text-success" stroke={4} />
-          ) : (
-            <NoIcon className="w-6 h-6 text-error" stroke={3} />
-          )}
-        </Row>
-        {mset.public && (
-          <Row title={t('permalink')}>
-            <PageLink href={`/sets/${mset.id}`} txt={`/sets/${mset.id}`} />
+        {control >= controlLevels.sets.notes && (
+          <Row title={t('notes')}>
+            <Markdown>{mset.notes}</Markdown>
           </Row>
         )}
-        <Row title={t('created')}>
-          <Timeago date={mset.createdAt} />
-          <span className="px-2 opacity-50">|</span>
-          {shortDate(locale, mset.createdAt, false)}
-        </Row>
-        <Row title={t('updated')}>
-          <Timeago date={mset.updatedAt} />
-          <span className="px-2 opacity-50">|</span>
-          {shortDate(locale, mset.createdAt, false)}
-        </Row>
-        <Row title={t('id')}>{mset.id}</Row>
+        {control >= controlLevels.sets.public && (
+          <>
+            <Row title={t('public')}>
+              {mset.public ? (
+                <OkIcon className="w-6 h-6 text-success" stroke={4} />
+              ) : (
+                <NoIcon className="w-6 h-6 text-error" stroke={3} />
+              )}
+            </Row>
+            {mset.public && (
+              <Row title={t('permalink')}>
+                <PageLink href={`/sets/${mset.id}`} txt={`/sets/${mset.id}`} />
+              </Row>
+            )}
+          </>
+        )}
+        {control >= controlLevels.sets.createdAt && (
+          <Row title={t('created')}>
+            <Timeago date={mset.createdAt} />
+            <span className="px-2 opacity-50">|</span>
+            {shortDate(locale, mset.createdAt, false)}
+          </Row>
+        )}
+        {control >= controlLevels.sets.createdAt && (
+          <Row title={t('updated')}>
+            <Timeago date={mset.updatedAt} />
+            <span className="px-2 opacity-50">|</span>
+            {shortDate(locale, mset.createdAt, false)}
+          </Row>
+        )}
+        {control >= controlLevels.sets.id && <Row title={t('id')}>{mset.id}</Row>}
       </div>
     )
 
@@ -337,37 +401,43 @@ export const Mset = ({ id, publicOnly = false }) => {
           </li>
         ))}
         <ul className="list list-disc list-inside ml-4">
-          {['name', 'image', 'public', 'units', 'notes'].map((id) => (
+          <li>
+            <AnchorLink id="name" txt={t('name')} />
+          </li>
+          {account.control >= conf.account.sets.img ? (
             <li>
-              <AnchorLink id={id} txt={t(id)} />
+              <AnchorLink id="image" txt={t('image')} />
             </li>
-          ))}
+          ) : null}
+          {['public', 'units', 'notes'].map((id) =>
+            account.control >= conf.account.sets[id] ? (
+              <li>
+                <AnchorLink id="units" txt={t(id)} />
+              </li>
+            ) : null
+          )}
         </ul>
       </ul>
 
       <h2 id="measies">{t('measies')}</h2>
-      <div className="flex flex-row items-center justify-center">
-        <button
-          className="btn btn-secondary btn-outline flex flex-row gap-4 rounded-r-none"
-          onClick={() =>
-            setModal(
-              <ModalDesignPicker
-                designs={Object.keys(designMeasurements)}
-                setModal={setModal}
-                setter={setFilter}
-              />
-            )
+      <div className="bg-secondary px-4 pt-1 pb-4 rounded-lg shadow bg-opacity-10">
+        <DesignDropdown
+          update={setFilter}
+          label={t('filterByDesign')}
+          current={filter}
+          firstOption={<option value="">{t('noFilter')}</option>}
+          docs={
+            <div className="max-w-prose">
+              <h2>
+                {t('measies')}: {t('filterByDesign')}
+              </h2>
+              <p>
+                If you have a specific design in mind, you can <b>filter by design</b> to only list
+                those measurements that are required for this design.
+              </p>
+            </div>
           }
-        >
-          <FilterIcon />
-          {filter ? t(`designs:${filter}.t`) : t(`designs:allDesigns`)}
-        </button>
-        <button
-          className="btn btn-secondary btn-outline rounded-l-none border-l-0"
-          onClick={() => setFilter(false)}
-        >
-          <ClearIcon />
-        </button>
+        />
       </div>
       {filterMeasurements().map((mplus) => {
         const [translated, m] = mplus.split('|')
@@ -506,9 +576,12 @@ export const Mset = ({ id, publicOnly = false }) => {
 // Component for the account/sets page
 export const Sets = ({ title = true }) => {
   // Hooks
+  const { control } = useAccount()
   const backend = useBackend()
-  const { t } = useTranslation(ns)
+  const { t, i18n } = useTranslation(ns)
   const { setLoadingStatus, LoadingStatus, LoadingProgress } = useLoadingStatus()
+  const router = useRouter()
+  const { locale } = router
 
   // State
   const [sets, setSets] = useState([])
@@ -561,8 +634,13 @@ export const Sets = ({ title = true }) => {
   return (
     <div className="max-w-4xl xl:pl-4">
       <LoadingStatus />
-      <p className="text-right">
-        <Link className="btn btn-primary capitalize btn-lg" bottom primary href="/new/set">
+      <p className="text-center md:text-right">
+        <Link
+          className="btn btn-primary capitalize w-full md:w-auto"
+          bottom
+          primary
+          href="/new/set"
+        >
           {t('newSet')}
         </Link>
       </p>
@@ -574,7 +652,7 @@ export const Sets = ({ title = true }) => {
       <table className="table table-auto">
         <thead className="border border-base-300 border-b-2 border-t-0 border-x-0">
           <tr className="b">
-            <th className="text-base-300 text-base">
+            <th className="text-base-300 text-base w-4 px-1">
               <input
                 type="checkbox"
                 className="checkbox checkbox-secondary"
@@ -582,21 +660,13 @@ export const Sets = ({ title = true }) => {
                 checked={sets.length === selCount}
               />
             </th>
-            <th className="text-base-300 text-base">{t('keyName')}</th>
-            <th className="text-base-300 text-base">
-              <span className="hidden md:inline">{t('keyLevel')}</span>
-              <span role="img" className="inline md:hidden">
-                🔐
-              </span>
-            </th>
-            <th className="text-base-300 text-base">{t('keyExpires')}</th>
-            <th className="text-base-300 text-base hidden md:block">{t('apiCalls')}</th>
+            <th className="text-base-300 text-base">{t('set')}</th>
           </tr>
         </thead>
         <tbody>
           {sets.map((set, i) => (
             <tr key={i}>
-              <td className="text-base font-medium">
+              <td className="text-base font-medium px-0">
                 <input
                   type="checkbox"
                   checked={selected[set.id] ? true : false}
@@ -604,12 +674,9 @@ export const Sets = ({ title = true }) => {
                   onClick={() => toggleSelect(set.id)}
                 />
               </td>
-              <td className="text-base font-medium">
-                <PageLink href={`/account/sets/${set.id}`} txt={set.name} />
+              <td className="text-base font-medium px-0">
+                <MsetBanner control={control} href={`/account/sets/${set.id}`} set={set} />
               </td>
-              <td className="text-base font-medium"></td>
-              <td className="text-base font-medium"></td>
-              <td className="text-base font-medium hidden md:block"></td>
             </tr>
           ))}
         </tbody>
