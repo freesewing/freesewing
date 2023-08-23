@@ -3,9 +3,8 @@ import { useTranslation } from 'next-i18next'
 import { ActiveSection, ns as primaryNs } from 'shared/components/navigation/primary.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { NavLinks, Breadcrumbs } from 'shared/components/navigation/sitenav.mjs'
-import { PageLink } from 'shared/components/page-link.mjs'
+import { PageLink, Link } from 'shared/components/link.mjs'
 import { PlusIcon } from 'shared/components/icons.mjs'
-import Link from 'next/link'
 
 export const ns = primaryNs
 

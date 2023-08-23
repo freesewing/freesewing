@@ -114,6 +114,8 @@ export const AccountLinks = () => {
 
   const btnClasses = 'btn capitalize flex flex-row justify-between'
 
+  if (!account.username) return null
+
   const itemPreviews = {
     apikeys: apikeys?.length || 0,
     bookmarks: bookmarks?.length || 0,

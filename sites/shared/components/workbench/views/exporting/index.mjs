@@ -1,7 +1,7 @@
 import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { Popout } from 'shared/components/popout/index.mjs'
-import { WebLink } from 'shared/components/web-link.mjs'
+import { WebLink } from 'shared/components/link.mjs'
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 import {

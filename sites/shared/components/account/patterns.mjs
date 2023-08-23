@@ -14,8 +14,7 @@ import { useRouter } from 'next/router'
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
-import Link from 'next/link'
-import { PageLink } from 'shared/components/page-link.mjs'
+import { PageLink, Link } from 'shared/components/link.mjs'
 import { Collapse, MimicCollapseLink } from 'shared/components/collapse.mjs'
 import { BackToAccountButton, Choice } from './shared.mjs'
 import {

@@ -8,9 +8,7 @@ import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { PlusIcon, TrashIcon, LeftIcon } from 'shared/components/icons.mjs'
-import Link from 'next/link'
-import { PageLink } from 'shared/components/page-link.mjs'
-import { WebLink } from 'shared/components/web-link.mjs'
+import { PageLink, WebLink, Link } from 'shared/components/link.mjs'
 import { Row } from './apikeys.mjs'
 
 export const ns = ['account', 'status']

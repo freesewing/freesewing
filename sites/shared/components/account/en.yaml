@@ -107,6 +107,7 @@ controlTitle: Which user experience do you prefer?
 # img
 imgTitle: How about a picture?
 imgDragAndDropImageHere: Drag and drop an image here
+imgPasteUrlHere: Paste an image location (url) here
 imgSelectImage: Select an image
 
 # newsletter
@@ -188,6 +189,7 @@ docBookmark: Documentation
 customBookmark: Custom Bookmarks
 
 # sets
+set: Measurements Set
 name: Name
 setNameDesc: A name to identify this measurements set
 setNewInfo: Create a new set of measurements which you can then use to generate patterns for.
@@ -207,6 +209,8 @@ privateSet: Private measurements set
 publicSetDesc: Others are allowed to use these measurements to generate or test patterns
 privateSetDesc: These measurments cannot be used by other users or visitors
 permalink: Permalink
+editThing: Edit {thing}
+saveThing: Save {thing}
 
 patternNew: Generate a new pattern
 patternNewInfo: Pick a design, add your measurements set, and we'll generate a made-to-measure sewing pattern for you.

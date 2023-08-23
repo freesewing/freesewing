@@ -3,7 +3,7 @@ import { siteConfig } from 'site/site.config.mjs'
 import { authors as allAuthors } from 'config/authors.mjs'
 import { docUpdates } from 'site/prebuild/doc-updates.mjs'
 // Components
-import { PageLink } from 'shared/components/page-link.mjs'
+import { PageLink } from 'shared/components/link.mjs'
 import { TimeAgo } from 'shared/components/timeago/index.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'

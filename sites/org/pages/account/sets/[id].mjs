@@ -1,14 +1,16 @@
 // Dependencies
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { nsMerge } from 'shared/utils.mjs'
+// Hooks
+import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 import { ns as setsNs } from 'shared/components/account/sets.mjs'
 
 // Translation namespaces used on this page
-const namespaces = [...new Set([...setsNs, ...authNs, ...pageNs])]
+const ns = nsMerge(setsNs, authNs, pageNs)
 
 /*
  * Some things should never generated as SSR
@@ -19,8 +21,8 @@ const DynamicAuthWrapper = dynamic(
   { ssr: false }
 )
 
-const DynamicSets = dynamic(
-  () => import('shared/components/account/sets.mjs').then((mod) => mod.Sets),
+const DynamicSet = dynamic(
+  () => import('shared/components/account/sets.mjs').then((mod) => mod.Mset),
   { ssr: false }
 )
 
@@ -30,24 +32,36 @@ const DynamicSets = dynamic(
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const SetsIndexPage = ({ page }) => (
-  <PageWrapper {...page}>
-    <DynamicAuthWrapper>
-      <DynamicSets title={false} />
-    </DynamicAuthWrapper>
-  </PageWrapper>
-)
+const SetPage = ({ page, id }) => {
+  const { t } = useTranslation(ns)
 
-export default SetsIndexPage
+  return (
+    <PageWrapper {...page} title={`${t('sets')}: #${id}`}>
+      <DynamicAuthWrapper>
+        <DynamicSet id={id} />
+      </DynamicAuthWrapper>
+    </PageWrapper>
+  )
+}
 
-export async function getStaticProps({ locale }) {
+export default SetPage
+
+export async function getStaticProps({ locale, params }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, namespaces)),
+      ...(await serverSideTranslations(locale, ns)),
+      id: params.id,
       page: {
         locale,
-        path: ['sets'],
+        path: ['account', 'sets', params.id],
       },
     },
   }
 }
+
+/*
+ * getStaticPaths() is used to specify for which routes (think URLs)
+ * this page should be used to generate the result.
+ * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
+ */
+export const getStaticPaths = async () => ({ paths: [], fallback: false })

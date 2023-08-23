@@ -477,6 +477,12 @@ export const ReloadIcon = (props) => (
   </IconWrapper>
 )
 
+export const ResetIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="m 2.447878,2.716835 v 4.38448 h 4.38448 M 3.1307,6.882055 c 1.771085,-3.0536 5.075566,-5.10727 8.859706,-5.10727 5.65253,0 10.234811,4.58228 10.234811,10.23481 0,5.65253 -4.582281,10.23481 -10.234811,10.23481 -5.440329,0 -9.889258,-4.24469 -10.215624,-9.60291" />
+  </IconWrapper>
+)
+
 export const RightIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M9 5l7 7-7 7" />

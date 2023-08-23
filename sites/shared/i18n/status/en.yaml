@@ -6,3 +6,9 @@ processingUpdate: Processing update
 backendLoadingStarted: Loading data from backend
 backendLoadingCompleted: Data loaded successfully
 allDone: All done
+savingSet: Saving measurements set
+uploadingImage: Uploading image
+gatheringInfo: Gathering information
+processingMeasies: Processing measurements
+loadingPreferences: Loading preferences
+

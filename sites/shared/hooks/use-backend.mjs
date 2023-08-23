@@ -11,7 +11,8 @@ const apiHandler = axios.create({
   timeout: 6660,
 })
 
-const auth = (token) => (token ? { headers: { Authorization: 'Bearer ' + token } } : {})
+const auth = (token) =>
+  token ? { headers: { Authorization: 'Bearer ' + token } } : { headers: {} }
 
 /*
  * This api object handles async code for different HTTP methods
@@ -268,6 +269,13 @@ Backend.prototype.getSets = async function () {
  */
 Backend.prototype.getSet = async function (id) {
   return responseHandler(await api.get(`/sets/${id}/jwt`, this.auth))
+}
+
+/*
+ * Get public measurements set
+ */
+Backend.prototype.getPublicSet = async function (id) {
+  return responseHandler(await api.get(`/sets/${id}.json`))
 }
 
 /*

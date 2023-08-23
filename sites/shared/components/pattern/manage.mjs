@@ -22,9 +22,8 @@ import {
   MeasieIcon,
 } from 'shared/components/icons.mjs'
 import { capitalize } from 'shared/utils.mjs'
-import Link from 'next/link'
 import Timeago from 'react-timeago'
-import { PageLink } from 'shared/components/page-link.mjs'
+import { Link, PageLink } from 'shared/components/link.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { EditRow } from 'shared/components/account/patterns.mjs'
 

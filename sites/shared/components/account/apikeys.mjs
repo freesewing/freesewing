@@ -14,12 +14,10 @@ import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { BackToAccountButton, Choice } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
-import { WebLink } from 'shared/components/web-link.mjs'
 import { LeftIcon, PlusIcon, CopyIcon, RightIcon, TrashIcon } from 'shared/components/icons.mjs'
 import { Collapse, useCollapseButton } from 'shared/components/collapse.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-import Link from 'next/link'
-import { PageLink } from 'shared/components/page-link.mjs'
+import { PageLink, Link, WebLink } from 'shared/components/link.mjs'
 
 export const ns = ['account', 'status']
 
@@ -87,7 +85,7 @@ const CopyInput = ({ text }) => {
   )
 }
 
-const Row = ({ title, children }) => (
+export const Row = ({ title, children }) => (
   <div className="flex flex-row flex-wrap items-center lg:gap-4 my-2">
     <div className="w-24 text-left md:text-right block md:inline font-bold pr-4">{title}</div>
     <div className="grow">{children}</div>
@@ -222,7 +220,7 @@ const NewKey = ({ t, account, setGenerate, backend, title = true }) => {
 }
 
 // Component for the 'new/apikey' page
-export const NewApikey = ({ standalone = false }) => {
+export const NewApikey = () => {
   // Hooks
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const { account } = useAccount()
@@ -247,7 +245,6 @@ export const NewApikey = ({ standalone = false }) => {
           setGenerate,
           backend,
           keyAdded,
-          standalone,
         }}
       />
     </div>

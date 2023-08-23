@@ -113,7 +113,7 @@ export const MeasieInput = ({
 
   // Update onChange
   const update = useCallback(
-    (validVal, rawVal) => {
+    (newVal) => {
       setValid(validVal)
       setVal(validVal || rawVal)
 

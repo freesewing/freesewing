@@ -20,10 +20,9 @@ import {
 import { Tab } from 'shared/components/account/bio.mjs'
 import { CodeBox } from 'shared/components/code-box.mjs'
 import { PostArticle, ns as mdxNs } from 'site/components/mdx/posts/article.mjs'
-import { PageLink } from 'shared/components/page-link.mjs'
+import { PageLink, WebLink } from 'shared/components/link.mjs'
 import { OkIcon, WarningIcon as KoIcon } from 'shared/components/icons.mjs'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
-import { WebLink } from 'shared/components/web-link.mjs'
 
 export const ns = nsMerge('account', 'posts', authNs, mdxNs)
 
