@@ -12,7 +12,7 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
-import { BackToAccountButton, Choice } from './shared.mjs'
+import { BackToAccountButton, Choice, DisplayRow } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { LeftIcon, PlusIcon, CopyIcon, RightIcon, TrashIcon } from 'shared/components/icons.mjs'
 import { Collapse, useCollapseButton } from 'shared/components/collapse.mjs'
@@ -85,13 +85,6 @@ const CopyInput = ({ text }) => {
   )
 }
 
-export const Row = ({ title, children }) => (
-  <div className="flex flex-row flex-wrap items-center lg:gap-4 my-2">
-    <div className="w-24 text-left md:text-right block md:inline font-bold pr-4">{title}</div>
-    <div className="grow">{children}</div>
-  </div>
-)
-
 export const Apikey = ({ apikey }) => {
   const { t } = useTranslation(ns)
   const router = useRouter()
@@ -99,10 +92,10 @@ export const Apikey = ({ apikey }) => {
 
   return apikey ? (
     <div>
-      <Row title={t('keyName')}>{apikey.name}</Row>
-      <Row title={t('created')}>{shortDate(locale, apikey.createdAt)}</Row>
-      <Row title={t('expires')}>{shortDate(locale, apikey.expiresAt)}</Row>
-      <Row title="Key ID">{apikey.key}</Row>
+      <DisplayRow title={t('keyName')}>{apikey.name}</DisplayRow>
+      <DisplayRow title={t('created')}>{shortDate(locale, apikey.createdAt)}</DisplayRow>
+      <DisplayRow title={t('expires')}>{shortDate(locale, apikey.expiresAt)}</DisplayRow>
+      <DisplayRow title="Key ID">{apikey.key}</DisplayRow>
       <div className="flex flex-row flex-wrap md:gap-2 md:items-center md:justify-between mt-8">
         <button
           className="w-full md:w-auto btn btn-secondary pr-6 flex flex-row items-center gap-2"
@@ -125,15 +118,15 @@ const ShowKey = ({ apikey, t, clear }) => {
       <Popout warning compact>
         {t('keySecretWarning')}
       </Popout>
-      <Row title={t('keyName')}>{apikey.name}</Row>
-      <Row title={t('created')}>{shortDate(locale, apikey.createdAt)}</Row>
-      <Row title={t('created')}>{shortDate(locale, apikey.expiresAt)}</Row>
-      <Row title="Key ID">
+      <DisplayRow title={t('keyName')}>{apikey.name}</DisplayRow>
+      <DisplayRow title={t('created')}>{shortDate(locale, apikey.createdAt)}</DisplayRow>
+      <DisplayRow title={t('created')}>{shortDate(locale, apikey.expiresAt)}</DisplayRow>
+      <DisplayRow title="Key ID">
         <CopyInput text={apikey.key} />
-      </Row>
-      <Row title="Key Secret">
+      </DisplayRow>
+      <DisplayRow title="Key Secret">
         <CopyInput text={apikey.secret} />
-      </Row>
+      </DisplayRow>
       <div className="flex flex-row flex-wrap md:gap-2 md:items-center md:justify-between mt-8">
         <button
           className="w-full md:w-auto btn btn-secondary pr-6 flex flex-row items-center gap-2"

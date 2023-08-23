@@ -119,7 +119,7 @@ export const welcomeSteps = {
   5: [''],
 }
 
-export const Row = ({ title, children, keyWidth = 'w-24' }) => (
+export const DisplayRow = ({ title, children, keyWidth = 'w-24' }) => (
   <div className="flex flex-row flex-wrap items-center lg:gap-4 my-2">
     <div className={`${keyWidth} text-left md:text-right block md:inline font-bold pr-4 shrink-0`}>
       {title}

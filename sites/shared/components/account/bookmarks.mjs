@@ -9,7 +9,7 @@ import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 import { BackToAccountButton } from './shared.mjs'
 import { PlusIcon, TrashIcon, LeftIcon } from 'shared/components/icons.mjs'
 import { PageLink, WebLink, Link } from 'shared/components/link.mjs'
-import { Row } from './apikeys.mjs'
+import { DisplayRow } from './shared.mjs'
 
 export const ns = ['account', 'status']
 
@@ -20,9 +20,9 @@ export const Bookmark = ({ bookmark }) => {
 
   return bookmark ? (
     <div>
-      <Row title={t('title')}>{bookmark.title}</Row>
-      <Row title={t('url')}>{bookmark.url}</Row>
-      <Row title={t('type')}>{t(`${bookmark.type}Bookmark`)}</Row>
+      <DisplayRow title={t('title')}>{bookmark.title}</DisplayRow>
+      <DisplayRow title={t('url')}>{bookmark.url}</DisplayRow>
+      <DisplayRow title={t('type')}>{t(`${bookmark.type}Bookmark`)}</DisplayRow>
       <div className="flex flex-row flex-wrap md:gap-2 md:items-center md:justify-between mt-8">
         <Link
           href="/account/bookmarks"

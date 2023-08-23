@@ -38,8 +38,7 @@ import Markdown from 'react-markdown'
 import { Tab } from './bio.mjs'
 import Timeago from 'react-timeago'
 import { Spinner } from 'shared/components/spinner.mjs'
-import { MeasieRow } from 'shared/components/sets/measie-input.mjs'
-import { Row } from './shared.mjs'
+import { DisplayRow } from './shared.mjs'
 import { shortDate, cloudflareImageUrl, formatMm } from 'shared/utils.mjs'
 import { useSetDocs } from 'shared/hooks/use-set-docs.mjs'
 import { useMeasurementDocs } from 'shared/hooks/use-measurement-docs.mjs'
@@ -342,52 +341,54 @@ export const Mset = ({ id, publicOnly = false }) => {
           <>
             <h2>{t('measies')}</h2>
             {Object.entries(mset.measies).map(([m, val]) => (
-              <Row title={<MeasieVal m={m} val={val} />} key={m}>
+              <DisplayRow title={<MeasieVal m={m} val={val} />} key={m}>
                 <span className="font-medium">{t(m)}</span>
-              </Row>
+              </DisplayRow>
             ))}
           </>
         )}
 
         <h2>{t('data')}</h2>
-        <Row title={t('name')}>{mset.name}</Row>
-        <Row title={t('units')}>{mset.imperial ? t('imerialUnits') : t('metricUnits')}</Row>
+        <DisplayRow title={t('name')}>{mset.name}</DisplayRow>
+        <DisplayRow title={t('units')}>
+          {mset.imperial ? t('imerialUnits') : t('metricUnits')}
+        </DisplayRow>
         {control >= controlLevels.sets.notes && (
-          <Row title={t('notes')}>
+          <DisplayRow title={t('notes')}>
             <Markdown>{mset.notes}</Markdown>
-          </Row>
+          </DisplayRow>
         )}
         {control >= controlLevels.sets.public && (
           <>
-            <Row title={t('public')}>
+            <DisplayRow title={t('public')}>
               {mset.public ? (
                 <OkIcon className="w-6 h-6 text-success" stroke={4} />
               ) : (
                 <NoIcon className="w-6 h-6 text-error" stroke={3} />
               )}
-            </Row>
+            </DisplayRow>
             {mset.public && (
-              <Row title={t('permalink')}>
+              <DisplayRow title={t('permalink')}>
                 <PageLink href={`/sets/${mset.id}`} txt={`/sets/${mset.id}`} />
-              </Row>
+              </DisplayRow>
             )}
           </>
         )}
         {control >= controlLevels.sets.createdAt && (
-          <Row title={t('created')}>
+          <DisplayRow title={t('created')}>
             <Timeago date={mset.createdAt} />
             <span className="px-2 opacity-50">|</span>
             {shortDate(locale, mset.createdAt, false)}
-          </Row>
+          </DisplayRow>
         )}
         {control >= controlLevels.sets.createdAt && (
-          <Row title={t('updated')}>
+          <DisplayRow title={t('updated')}>
             <Timeago date={mset.updatedAt} />
             <span className="px-2 opacity-50">|</span>
             {shortDate(locale, mset.createdAt, false)}
-          </Row>
+          </DisplayRow>
         )}
-        {control >= controlLevels.sets.id && <Row title={t('id')}>{mset.id}</Row>}
+        {control >= controlLevels.sets.id && <DisplayRow title={t('id')}>{mset.id}</DisplayRow>}
       </div>
     )
 
