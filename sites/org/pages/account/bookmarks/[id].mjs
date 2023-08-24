@@ -78,10 +78,3 @@ export async function getStaticProps({ locale, params }) {
     },
   }
 }
-
-/*
- * getStaticPaths() is used to specify for which routes (think URLs)
- * this page should be used to generate the result.
- * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
- */
-export const getStaticPaths = async () => ({ paths: [], fallback: false })
