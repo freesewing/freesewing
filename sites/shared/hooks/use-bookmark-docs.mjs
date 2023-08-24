@@ -6,12 +6,8 @@ import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 
 export const useBookmarkDocs = (locale) => {
   const loader = (option) =>
-    useCallback(
-      () =>
-        import(
-          /* webpackInclude: /docs\/site\/bookmarks\/[a-z]+\/[a-z][a-z]\.md$/ */ `orgmarkdown/docs/site/bookmarks/${option}/${locale}.md`
-        ),
-      [locale]
+    import(
+      /* webpackInclude: /docs\/site\/bookmarks\/[a-z]+\/[a-z][a-z]\.md$/ */ `orgmarkdown/docs/site/bookmarks/${option}/${locale}.md`
     )
 
   const docs = {}

@@ -116,7 +116,7 @@ const SupportType = ({ type, active, t, update }) => (
   </ButtonFrame>
 )
 
-export const SupportForm = ({ preload }) => {
+export const SupportForm = () => {
   const { t } = useTranslation(ns)
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const { account } = useAccount()

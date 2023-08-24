@@ -7,11 +7,9 @@ import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewin
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useRouter } from 'next/router'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
@@ -57,10 +55,6 @@ export const NewSet = () => {
   const router = useRouter()
 
   // State
-  const [generate, setGenerate] = useState(false)
-  const [added, setAdded] = useState(0)
-
-  // State
   const [name, setName] = useState('')
 
   // Helper method to create a new set
@@ -103,29 +97,29 @@ export const MeasieVal = ({ val, m, imperial }) =>
   isDegreeMeasurement(m) ? <span>{val}°</span> : <span>{formatMm(val, imperial)}</span>
 
 export const MsetBanner = ({ set, control, onClick = false, href = false }) => {
-  const { t } = useTranslation(ns)
+  const { t, i18n } = useTranslation(ns)
   const info = []
   if (control > 1)
     info.push([
-      <CalendarIcon />,
-      <b>
+      <CalendarIcon key="a" />,
+      <b key="b">
         <TextOnBg txt={shortDate(i18n.language, set.createdAt, false)} />
       </b>,
     ])
   info.push([
-    <MeasieIcon />,
-    <b>
+    <MeasieIcon key="c" />,
+    <b key="d">
       <TextOnBg txt={(set.measies ? Object.keys(set.measies).length : 0) + ' ' + t('measies')} />
     </b>,
   ])
   if (control > 2)
     info.push([
       set.public ? (
-        <OkIcon className="w-6 h-6 text-success" stroke={4} />
+        <OkIcon className="w-6 h-6 text-success" stroke={4} key="e" />
       ) : (
-        <NoIcon className="w-6 h-6 text-error" stroke={3} />
+        <NoIcon className="w-6 h-6 text-error" stroke={3} key="e" />
       ),
-      <b>
+      <b key="f">
         <TextOnBg txt={t(set.public ? 'publicSet' : 'privateSet')} />
       </b>,
     ])
@@ -172,9 +166,9 @@ export const Mset = ({ id, publicOnly = false }) => {
   const { account, control } = useAccount()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const backend = useBackend()
-  const { t } = useTranslation(ns)
-  const docs = useSetDocs(locale)
-  const measieDocs = useMeasurementDocs(locale)
+  const { t, i18n } = useTranslation(ns)
+  const docs = useSetDocs(i18n.language)
+  const measieDocs = useMeasurementDocs(i18n.language)
 
   // Context
   const { setModal } = useContext(ModalContext)
@@ -370,14 +364,14 @@ export const Mset = ({ id, publicOnly = false }) => {
           <DisplayRow title={t('created')}>
             <Timeago date={mset.createdAt} />
             <span className="px-2 opacity-50">|</span>
-            {shortDate(locale, mset.createdAt, false)}
+            {shortDate(i18n.language, mset.createdAt, false)}
           </DisplayRow>
         )}
         {control >= controlLevels.sets.createdAt && (
           <DisplayRow title={t('updated')}>
             <Timeago date={mset.updatedAt} />
             <span className="px-2 opacity-50">|</span>
-            {shortDate(locale, mset.createdAt, false)}
+            {shortDate(i18n.language, mset.createdAt, false)}
           </DisplayRow>
         )}
         {control >= controlLevels.sets.id && <DisplayRow title={t('id')}>{mset.id}</DisplayRow>}
@@ -571,7 +565,7 @@ export const Sets = ({ title = true }) => {
   // Hooks
   const { control } = useAccount()
   const backend = useBackend()
-  const { t, i18n } = useTranslation(ns)
+  const { t } = useTranslation(ns)
   const { setLoadingStatus, LoadingStatus, LoadingProgress } = useLoadingStatus()
 
   // State

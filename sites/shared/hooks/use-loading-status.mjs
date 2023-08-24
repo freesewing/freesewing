@@ -56,7 +56,7 @@ const LoadingStatus = ({ loadingStatus }) => {
   )
 }
 
-const LoadingProgress = ({ val = 0, max = 1, color = 'secondary', msg }) => (
+const LoadingProgress = ({ val = 0, max = 1, msg }) => (
   <div className="flex flex-col gap-2 w-full grow-0">
     {msg}
     <progress className="progress progress-white" value={val} max={max}></progress>

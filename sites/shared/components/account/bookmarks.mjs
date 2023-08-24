@@ -146,7 +146,7 @@ export const Bookmarks = () => {
       await backend.removeBookmark(id)
       setLoadingStatus([
         true,
-        <LoadingProgress val={i} max={selCount} msg={t('removingBookmarks')} />,
+        <LoadingProgress val={i} max={selCount} msg={t('removingBookmarks')} key="linter" />,
       ])
     }
     setSelected({})

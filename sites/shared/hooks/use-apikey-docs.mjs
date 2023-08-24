@@ -6,12 +6,8 @@ import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 
 export const useApikeyDocs = (locale) => {
   const loader = (option) =>
-    useCallback(
-      () =>
-        import(
-          /* webpackInclude: /docs\/site\/apikeys\/[a-z]+\/[a-z][a-z]\.md$/ */ `orgmarkdown/docs/site/apikeys//${option}/${locale}.md`
-        ),
-      [locale]
+    import(
+      /* webpackInclude: /docs\/site\/apikeys\/[a-z]+\/[a-z][a-z]\.md$/ */ `orgmarkdown/docs/site/apikeys//${option}/${locale}.md`
     )
 
   const docs = {}

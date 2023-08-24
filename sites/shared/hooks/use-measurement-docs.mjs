@@ -7,13 +7,8 @@ import { measurements } from 'config/measurements.mjs'
 
 export const useMeasurementDocs = (locale) => {
   const loader = (m) =>
-    useCallback(
-      () =>
-        import(
-          /* webpackInclude: /docs\/measurements\/[a-z]+\/[a-z][a-z]\.md$/ */ `markdown/docs/measurements/${m}/${locale}.md`
-        ),
-
-      [locale]
+    import(
+      /* webpackInclude: /docs\/measurements\/[a-z]+\/[a-z][a-z]\.md$/ */ `orgmarkdown/docs/measurements/${m}/${locale}.md`
     )
 
   const docs = {}

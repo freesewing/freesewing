@@ -142,7 +142,7 @@ const ShowKey = ({ apikey, t, clear }) => {
   )
 }
 
-const NewKey = ({ account, setGenerate, backend, title = true }) => {
+const NewKey = ({ account, setGenerate, backend }) => {
   const [name, setName] = useState('')
   const [level, setLevel] = useState(1)
   const [expires, setExpires] = useState(Date.now())
@@ -303,7 +303,7 @@ export const Apikeys = () => {
       await backend.removeApikey(key)
       setLoadingStatus([
         true,
-        <LoadingProgress val={i} max={selCount} msg={t('removingApikeys')} />,
+        <LoadingProgress val={i} max={selCount} msg={t('removingApikeys')} key="linter" />,
       ])
     }
     setSelected({})

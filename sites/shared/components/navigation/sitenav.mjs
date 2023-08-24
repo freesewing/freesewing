@@ -240,7 +240,7 @@ export const NavLinks = () => {
  */
 export const MainSections = () => {
   // Grab siteNav and slug from the navigation context
-  const { siteNav, slug, locale } = useContext(NavigationContext)
+  const { siteNav, slug } = useContext(NavigationContext)
   const output = []
   for (const page of onlyMainSections(siteNav)) {
     const act = isSlugPart(page.s, slug)

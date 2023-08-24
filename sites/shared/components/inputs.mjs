@@ -14,7 +14,7 @@ import Markdown from 'react-markdown'
 import { ResetIcon, DocsIcon, UploadIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { isDegreeMeasurement } from 'config/measurements.mjs'
-import { measurementAsMm, formatMm, measurementAsUnits, parseDistanceInput } from 'shared/utils.mjs'
+import { measurementAsMm, measurementAsUnits, parseDistanceInput } from 'shared/utils.mjs'
 
 //import { Collapse } from 'shared/components/collapse.mjs'
 //import { PlusIcon, EditIcon } from 'shared/components/icons.mjs'
@@ -143,13 +143,13 @@ export const DesignDropdown = ({
   firstOption = null, // Any first option to add in addition to designs
 }) => {
   const { t, i18n } = useTranslation(['designs'])
-  console.log(i18n)
 
   return (
     <FormControl label={label} docs={docs}>
       <select
         className="select select-bordered w-full"
         onChange={(evt) => update(evt.target.value)}
+        value={current}
       >
         {firstOption}
         {collection.map((design) => (
@@ -172,7 +172,6 @@ export const ImageInput = ({
   original, // The original value
   docs = false, // Docs to load, if any
   active = false, // Whether or not to upload images
-  makeId = () => `ephemeral-${Date.now()}`, // Method to generate image IDs
   imgType = 'showcase', // The image type
   imgSubid, // The image sub-id
   imgSlug, // The image slug or other unique identifier to use in the image ID
@@ -295,7 +294,6 @@ export const ListInput = ({
   label, // The label
   list, // The list of items to present { val, label, desc }
   current, // The (value of the) current item
-  original, // The original value
   docs = false, // Docs to load, if any
 }) => (
   <FormControl label={label} docs={docs}>
@@ -318,7 +316,6 @@ export const ListInput = ({
 export const MarkdownInput = ({
   label, // The label
   current, // The current value (markdown)
-  original, // The original value
   update, // The onChange handler
   placeholder, // The placeholder content
   docs = false, // Docs to load, if any
@@ -369,12 +366,12 @@ export const MeasieInput = ({
   )
   const [validatedVal, setValidatedVal] = useState(measurementAsUnits(original, units))
 
-  const [val, setVal] = useState(() => {
-    const measie = current
-    if (!measie) return ''
-    if (isDegree) return measie
-    return measurementAsUnits(measie, units)
-  })
+  //const [val, setVal] = useState(() => {
+  //  const measie = current
+  //  if (!measie) return ''
+  //  if (isDegree) return measie
+  //  return measurementAsUnits(measie, units)
+  //})
   const [valid, setValid] = useState(null)
 
   // Update onChange
@@ -393,7 +390,6 @@ export const MeasieInput = ({
   // Various visual indicators for validating the input
   let inputClasses = 'input-secondary'
   let bottomLeftLabel = null
-  let bottomRightLabel = null
   if (valid === true) {
     inputClasses = 'input-success'
     const val = `${validatedVal}${isDegree ? '°' : imperial ? '"' : 'cm'}`
