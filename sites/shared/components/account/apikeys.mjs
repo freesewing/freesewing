@@ -1,11 +1,9 @@
 // Dependencies
-import { useState, useEffect, useContext } from 'react'
+import { useState, useEffect } from 'react'
 import { useTranslation } from 'next-i18next'
 import { DateTime } from 'luxon'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { shortDate, formatNumber } from 'shared/utils.mjs'
-// Context
-import { ModalContext } from 'shared/context/modal-context.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
@@ -13,12 +11,10 @@ import { useRouter } from 'next/router'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 import { useApikeyDocs } from 'shared/hooks/use-apikey-docs.mjs'
 // Components
-import { BackToAccountButton, Choice, DisplayRow, NumberBullet } from './shared.mjs'
+import { BackToAccountButton, DisplayRow, NumberBullet } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { LeftIcon, PlusIcon, CopyIcon, RightIcon, TrashIcon } from 'shared/components/icons.mjs'
-import { Collapse, useCollapseButton } from 'shared/components/collapse.mjs'
-import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-import { PageLink, Link, WebLink } from 'shared/components/link.mjs'
+import { PageLink, Link } from 'shared/components/link.mjs'
 import { StringInput, ListInput, FormControl } from 'shared/components/inputs.mjs'
 
 export const ns = ['account', 'status']
@@ -228,10 +224,8 @@ const NewKey = ({ account, setGenerate, backend, title = true }) => {
 // Component for the 'new/apikey' page
 export const NewApikey = () => {
   // Hooks
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const { account } = useAccount()
   const backend = useBackend()
-  const { t } = useTranslation(ns)
 
   // State
   const [generate, setGenerate] = useState(false)
@@ -242,7 +236,6 @@ export const NewApikey = () => {
 
   return (
     <div className="max-w-2xl xl:pl-4">
-      <LoadingStatus />
       <NewKey
         {...{
           account,

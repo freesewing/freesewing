@@ -10,9 +10,8 @@ import { useDropzone } from 'react-dropzone'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
-import { Popout } from 'shared/components/popout/index.mjs'
 import Markdown from 'react-markdown'
-import { ResetIcon, DocsIcon, HelpIcon, UploadIcon } from 'shared/components/icons.mjs'
+import { ResetIcon, DocsIcon, UploadIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { isDegreeMeasurement } from 'config/measurements.mjs'
 import { measurementAsMm, formatMm, measurementAsUnits, parseDistanceInput } from 'shared/utils.mjs'
@@ -119,44 +118,19 @@ export const StringInput = ({
   original, // The original value
   placeholder, // The placeholder text
   docs = false, // Docs to load, if any
-}) => {
-  const { setModal } = useContext(ModalContext)
-
-  const labelTR = docs ? (
-    <button
-      className="btn btn-secondary btn-outline"
-      onClick={() =>
-        setModal(
-          <ModalWrapper flex="col" justify="top lg:justify-center" slideFrom="left">
-            {docs}
-          </ModalWrapper>
-        )
-      }
-    >
-      <DocsIcon />
-    </button>
-  ) : (
-    false
-  )
-
-  return (
-    <FormControl label={label} docs={docs}>
-      <input
-        type="text"
-        placeholder={placeholder}
-        value={current}
-        onChange={(evt) => update(evt.target.value)}
-        className={`input w-full input-bordered ${
-          current === original
-            ? 'input-secondary'
-            : valid(current)
-            ? 'input-success'
-            : 'input-error'
-        }`}
-      />
-    </FormControl>
-  )
-}
+}) => (
+  <FormControl label={label} docs={docs}>
+    <input
+      type="text"
+      placeholder={placeholder}
+      value={current}
+      onChange={(evt) => update(evt.target.value)}
+      className={`input w-full input-bordered ${
+        current === original ? 'input-secondary' : valid(current) ? 'input-success' : 'input-error'
+      }`}
+    />
+  </FormControl>
+)
 
 /*
  * Dropdown for designs
@@ -349,7 +323,6 @@ export const MarkdownInput = ({
   placeholder, // The placeholder content
   docs = false, // Docs to load, if any
 }) => {
-  const { t } = useTranslation(ns)
   const [activeTab, setActiveTab] = useState('edit')
 
   return (
@@ -377,18 +350,6 @@ export const MarkdownInput = ({
     </FormControl>
   )
 }
-
-const Mval = ({ m, val = false, imperial = false, className = '' }) =>
-  val ? (
-    isDegreeMeasurement(m) ? (
-      <span className={className}>{val}°</span>
-    ) : (
-      <span
-        dangerouslySetInnerHTML={{ __html: formatMm(val, imperial ? 'imperial' : 'metric') }}
-        className={className}
-      />
-    )
-  ) : null
 
 export const MeasieInput = ({
   imperial, // True for imperial, False for metric

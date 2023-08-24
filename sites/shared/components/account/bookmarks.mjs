@@ -1,5 +1,5 @@
 // Dependencies
-import { useState, useEffect, useContext } from 'react'
+import { useState, useEffect, Fragment } from 'react'
 import { useTranslation } from 'next-i18next'
 // Hooks
 import { useBackend } from 'shared/hooks/use-backend.mjs'
@@ -178,7 +178,7 @@ export const Bookmarks = () => {
       ) : null}
       {types.map((type) =>
         perType[type].length > 0 ? (
-          <>
+          <Fragment key={type}>
             <h2>{t(`${type}Bookmark`)}</h2>
             <table className="table table-auto">
               <thead className="border border-base-300 border-b-2 border-t-0 border-x-0">
@@ -225,7 +225,7 @@ export const Bookmarks = () => {
                 ))}
               </tbody>
             </table>
-          </>
+          </Fragment>
         ) : null
       )}
       <BackToAccountButton />

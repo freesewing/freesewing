@@ -1,12 +1,10 @@
 // Dependencies
-import { useState, useEffect, useContext, useCallback } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
-import orderBy from 'lodash.orderby'
 import { measurements } from 'config/measurements.mjs'
 import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
 import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewing.config.mjs'
 // Hooks
-import { useDropzone } from 'react-dropzone'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
@@ -16,19 +14,14 @@ import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
-import { Collapse, useCollapseButton } from 'shared/components/collapse.mjs'
-import { BackToAccountButton, Choice } from './shared.mjs'
+import { BackToAccountButton } from './shared.mjs'
 import { AnchorLink, PageLink, Link } from 'shared/components/link.mjs'
-import { ModalDesignPicker } from 'shared/components/modal/design-picker.mjs'
 import {
-  FilterIcon,
-  ClearIcon,
   OkIcon,
   NoIcon,
   TrashIcon,
   EditIcon,
   UploadIcon,
-  CancelIcon,
   ResetIcon,
   MeasieIcon,
   CalendarIcon,
@@ -36,14 +29,11 @@ import {
 } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import Markdown from 'react-markdown'
-import { Tab } from './bio.mjs'
 import Timeago from 'react-timeago'
-import { Spinner } from 'shared/components/spinner.mjs'
 import { DisplayRow } from './shared.mjs'
 import { shortDate, cloudflareImageUrl, formatMm } from 'shared/utils.mjs'
 import { useSetDocs } from 'shared/hooks/use-set-docs.mjs'
 import { useMeasurementDocs } from 'shared/hooks/use-measurement-docs.mjs'
-import { Lightbox } from 'shared/components/lightbox.mjs'
 import { isDegreeMeasurement } from 'config/measurements.mjs'
 import { TextOnBg } from 'shared/components/text-on-bg.mjs'
 
@@ -62,7 +52,6 @@ export const ns = [inputNs, 'account', 'patterns', 'status', 'measurements']
 export const NewSet = () => {
   // Hooks
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
-  const { account } = useAccount()
   const backend = useBackend()
   const { t } = useTranslation(ns)
   const router = useRouter()
@@ -86,6 +75,7 @@ export const NewSet = () => {
 
   return (
     <div className="max-w-xl">
+      <LoadingStatus />
       <h5>{t('name')}</h5>
       <p>{t('setNameDesc')}</p>
       <input
@@ -113,7 +103,7 @@ export const MeasieVal = ({ val, m, imperial }) =>
   isDegreeMeasurement(m) ? <span>{val}°</span> : <span>{formatMm(val, imperial)}</span>
 
 export const MsetBanner = ({ set, control, onClick = false, href = false }) => {
-  const { t, i18n } = useTranslation(ns)
+  const { t } = useTranslation(ns)
   const info = []
   if (control > 1)
     info.push([
@@ -145,7 +135,10 @@ export const MsetBanner = ({ set, control, onClick = false, href = false }) => {
         <TextOnBg txt={set.name} />
       </h2>
       {info.map((item) => (
-        <div className="flex flex-row flex-wrap gap-2 bg-base-100 p-4 rounded bg-opacity-50 py-1 mt-2 rounded-l-none">
+        <div
+          className="flex flex-row flex-wrap gap-2 bg-base-100 p-4 rounded bg-opacity-50 py-1 mt-2 rounded-l-none"
+          key={item[0]}
+        >
           {item[0]}
           {item[1]}
         </div>
@@ -180,8 +173,6 @@ export const Mset = ({ id, publicOnly = false }) => {
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const backend = useBackend()
   const { t } = useTranslation(ns)
-  const router = useRouter()
-  const { locale } = router
   const docs = useSetDocs(locale)
   const measieDocs = useMeasurementDocs(locale)
 
@@ -413,7 +404,7 @@ export const Mset = ({ id, publicOnly = false }) => {
           ) : null}
           {['public', 'units', 'notes'].map((id) =>
             account.control >= conf.account.sets[id] ? (
-              <li>
+              <li key={id}>
                 <AnchorLink id="units" txt={t(id)} />
               </li>
             ) : null
@@ -582,8 +573,6 @@ export const Sets = ({ title = true }) => {
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
   const { setLoadingStatus, LoadingStatus, LoadingProgress } = useLoadingStatus()
-  const router = useRouter()
-  const { locale } = router
 
   // State
   const [sets, setSets] = useState([])

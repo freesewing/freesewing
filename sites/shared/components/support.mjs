@@ -8,10 +8,8 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Components
 import { Popout } from 'shared/components/popout/index.mjs'
 import {
-  GitHubIcon,
   HeartIcon,
   ChatIcon,
-  EmailIcon,
   BugIcon,
   SettingsIcon,
   DocsIcon,
@@ -31,7 +29,6 @@ import {
 import { cloudflareImageUrl } from 'shared/utils.mjs'
 import { CodeBox } from 'shared/components/code-box.mjs'
 import { WebLink } from 'shared/components/link.mjs'
-import Markdown from 'react-markdown'
 
 // Translation namespaces used on this page
 export const ns = ['support', 'designs', 'account', 'status']
@@ -201,7 +198,7 @@ export const SupportForm = ({ preload }) => {
       <>
         <div className="grid grid-cols-3 gap-2">
           {types.map((_type) => (
-            <SupportType type={_type} active={type === _type} update={setType} t={t} />
+            <SupportType type={_type} active={type === _type} update={setType} t={t} key={_type} />
           ))}
         </div>
         <p className="text-right">
