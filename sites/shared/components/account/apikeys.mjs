@@ -9,13 +9,13 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
-import { useApikeyDocs } from 'shared/hooks/use-apikey-docs.mjs'
 // Components
 import { BackToAccountButton, DisplayRow, NumberBullet } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { LeftIcon, PlusIcon, CopyIcon, RightIcon, TrashIcon } from 'shared/components/icons.mjs'
 import { PageLink, Link } from 'shared/components/link.mjs'
 import { StringInput, ListInput, FormControl } from 'shared/components/inputs.mjs'
+import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
 export const ns = ['account', 'status']
 
@@ -149,7 +149,11 @@ const NewKey = ({ account, setGenerate, backend }) => {
   const [apikey, setApikey] = useState(false)
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const { t, i18n } = useTranslation(ns)
-  const docs = useApikeyDocs(i18n.language)
+  // FIXME: implement a solution for loading docs dynamically the is simple and work as expected
+  const docs = {}
+  for (const option of ['name', 'expiry', 'level']) {
+    docs[option] = <DynamicOrgDocs language={i18n.language} path={`site/apikeys/${option}`} />
+  }
 
   const levels = account.role === 'admin' ? [0, 1, 2, 3, 4, 5, 6, 7, 8] : [0, 1, 2, 3, 4]
 

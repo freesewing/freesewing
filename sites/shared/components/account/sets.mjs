@@ -30,10 +30,9 @@ import Markdown from 'react-markdown'
 import Timeago from 'react-timeago'
 import { DisplayRow } from './shared.mjs'
 import { shortDate, cloudflareImageUrl, formatMm } from 'shared/utils.mjs'
-import { useSetDocs } from 'shared/hooks/use-set-docs.mjs'
-import { useMeasurementDocs } from 'shared/hooks/use-measurement-docs.mjs'
 import { isDegreeMeasurement } from 'config/measurements.mjs'
 import { TextOnBg } from 'shared/components/text-on-bg.mjs'
+import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
 import {
   StringInput,
@@ -167,8 +166,16 @@ export const Mset = ({ id, publicOnly = false }) => {
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
-  const docs = useSetDocs(i18n.language)
-  const measieDocs = useMeasurementDocs(i18n.language)
+  // FIXME: implement a solution for loading docs dynamically the is simple and work as expected
+  const docs = {}
+  for (const option of ['name', 'units', 'public', 'notes', 'image']) {
+    docs[option] = <DynamicOrgDocs language={i18n.language} path={`site/sets/${option}`} />
+  }
+  // FIXME: implement a solution for loading docs dynamically the is simple and work as expected
+  const measieDocs = {}
+  for (const m of measurements) {
+    measieDocs[m] = <DynamicOrgDocs language={i18n.language} path={`measurements/${m}`} />
+  }
 
   // Context
   const { setModal } = useContext(ModalContext)

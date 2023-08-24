@@ -5,13 +5,13 @@ import { useTranslation } from 'next-i18next'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
-import { useBookmarkDocs } from 'shared/hooks/use-bookmark-docs.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { PlusIcon, TrashIcon, LeftIcon } from 'shared/components/icons.mjs'
 import { PageLink, WebLink, Link } from 'shared/components/link.mjs'
 import { DisplayRow } from './shared.mjs'
 import { StringInput } from 'shared/components/inputs.mjs'
+import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
 export const ns = ['account', 'status']
 
@@ -44,8 +44,12 @@ export const NewBookmark = () => {
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const router = useRouter()
   const backend = useBackend()
-  const { t } = useTranslation(ns)
-  const docs = useBookmarkDocs(router.locale)
+  const { t, i18n } = useTranslation(ns)
+  // FIXME: implement a solution for loading docs dynamically the is simple and work as expected
+  const docs = {}
+  for (const option of ['title', 'location', 'type']) {
+    docs[option] = <DynamicOrgDocs language={i18n.language} path={`site/bookmarks/${option}`} />
+  }
 
   // State
   const [title, setTitle] = useState('')
