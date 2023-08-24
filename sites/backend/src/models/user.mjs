@@ -4,6 +4,7 @@ import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypt
 import { replaceImage, importImage, removeImage } from '../utils/cloudflare-images.mjs'
 import { clean, asJson, i18nUrl, writeExportedData } from '../utils/index.mjs'
 import { decorateModel } from '../utils/model-decorator.mjs'
+import { userCard } from '../templates/svg/user-card.mjs'
 
 /*
  * This model handles all user updates
@@ -52,6 +53,35 @@ UserModel.prototype.profile = async function ({ params }) {
 }
 
 /*
+ * Returns an SVG user card
+ * This is an anonymous route returning limited info (profile data)
+ *
+ * @param {params} object - The request (URL) parameters
+ * @returns {UserModel} object - The UserModel
+ */
+UserModel.prototype.profileCard = async function ({ params }) {
+  /*
+   * Is id set?
+   */
+  if (typeof params.id === 'undefined') return this.setResponse(403, 'idMissing')
+
+  /*
+   * Try to find the record in the database
+   * Note that find checks lusername, ehash, and id but we
+   * pass it in the username value as that's what the login
+   * rout does
+   */
+  await this.find({ username: params.id })
+
+  /*
+   * If it does not exist, return 404
+   */
+  if (!this.exists) return this.setResponse(404)
+
+  return this.setResponse200(userCard(this.record.username, this.record.id), true)
+}
+
+/*
  * Loads a user from the database based on the where clause you pass it
  * In addition prepares it for returning all account data
  * This is guarded so it enforces access control and validates input
@@ -69,7 +99,7 @@ UserModel.prototype.allData = async function ({ params }) {
    * Try to find the record in the database
    * Note that find checks lusername, ehash, and id but we
    * pass it in the username value as that's what the login
-   * rout does
+   * route does
    */
   await this.read(
     { id: Number(params.id) },

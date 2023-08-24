@@ -28,9 +28,9 @@ FlowsController.prototype.sendLanguageSuggestion = async (req, res, tools) => {
  * Upload an image to Cloudflare
  * See: https://freesewing.dev/reference/backend/api
  */
-FlowsController.prototype.uploadImage = async (req, res, tools) => {
+FlowsController.prototype.uploadImage = async (req, res, tools, anon = false) => {
   const Flow = new FlowModel(tools)
-  await Flow.uploadImage(req)
+  await Flow.uploadImage(req, anon)
 
   return Flow.sendResponse(res)
 }
@@ -66,6 +66,19 @@ FlowsController.prototype.createPostPr = async (req, res, tools, type) => {
 FlowsController.prototype.createIssue = async (req, res, tools) => {
   const Flow = new FlowModel(tools)
   await Flow.createIssue(req)
+
+  return Flow.sendResponse(res)
+}
+
+/*
+ * Create Discussion
+ *
+ * This is the endpoint that handles creation of Github issues
+ * See: https://freesewing.dev/reference/backend/api/apikey
+ */
+FlowsController.prototype.createDiscussion = async (req, res, tools) => {
+  const Flow = new FlowModel(tools)
+  await Flow.createDiscussion(req)
 
   return Flow.sendResponse(res)
 }

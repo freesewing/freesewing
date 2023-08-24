@@ -22,15 +22,29 @@ import {
   TwitterIcon,
   YouTubeIcon,
   FreeSewingIcon,
+  CommunityIcon,
+  ChatIcon,
+  EmailIcon,
 } from 'shared/components/icons.mjs'
 import { StringInput, MarkdownInput, DesignDropdown } from 'shared/components/inputs.mjs'
+import { PleaseSubscribe } from 'shared/components/patrons/please-subscribe.mjs'
+import { SupportForm, ns as supportNs } from 'shared/components/support.mjs'
 
 // Translation namespaces used on this page
-const namespaces = nsMerge(pageNs, 'support', 'sections')
+const ns = nsMerge(pageNs, supportNs)
 
-const SupportCard = ({ bg, textColor, title, icon, subtitle }) => (
-  <div className={`px-8 ${bg} pt-2 pb-4 rounded-lg block ${textColor} shadow-lg grow w-full`}>
-    <h3 className="text-inherit font-heavy flex flex-row w-full items-center justify-between">
+const SupportCard = ({ bg, textColor, title, icon, subtitle, nr }) => (
+  <div
+    className={`px-4 bg-${bg} pt-2 pb-4 rounded-lg block ${textColor} shadow-lg
+    grow w-full bg-gradient-to-tr from-${bg} from-10% to-primary`}
+  >
+    <h3 className="text-inherit font-heavy flex flex-row w-full items-center justify-between relative">
+      <span
+        className={`p-2 w-8 h-8 flex flex-col items-center justify-center shrink-0 rounded-full
+        text-center p-0 py-2 bg-transparent text-${bg}-content border-2 border-base-100 text-xl mr-4`}
+      >
+        {nr}
+      </span>
       {title}
       {icon}
     </h3>
@@ -54,90 +68,19 @@ const socialIcon = {
  * or set them manually.
  */
 const SupportPage = ({ page }) => {
-  const { t } = useTranslation(namespaces)
-  const [issue, setIssue] = useState(false)
-  const [mode, setMode] = useState(false)
-  const [edit, setEdit] = useState(false)
-  const [title, setTitle] = useState('')
-  const [design, setDesign] = useState('')
-  const [body, setBody] = useState('')
+  const { t } = useTranslation(ns)
 
-  const pageTitle = mode ? t('createSupportRequest') : t('sections:support')
+  const [request, setRequest] = useState(true)
 
-  if (mode && !edit)
+  const pageTitle = request ? t('createSupportRequest') : t('sections:support')
+
+  if (request)
     return (
       <PageWrapper {...page} title={pageTitle} layout={BareLayout}>
-        <div className="max-w-7xl mx-auto mb-24 px-4 md:px-0 mt-16">
+        <div className="max-w-7xl mx-auto mb-24 px-4 mt-16">
           <Breadcrumbs />
           <h1>{pageTitle}</h1>
-          <h2>{t('chooseYourUx')}</h2>
-          <div className="flex flex-col gap-8 max-w-xl">
-            <button
-              className={`px-8 bg-neutral pt-4 pb-8 rounded-lg block text-neutral-content
-            shadow-lg grow hover:bg-secondary hover:text-secondary-content hover:cursor-pointer`}
-              title={t('createIssueOnFreeSewing')}
-              onClick={() => setEdit(true)}
-            >
-              <h3 className="text-inherit font-heavy flex flex-row w-full items-center justify-between">
-                <div className="text-left">
-                  <span className="block text-sm font-medium via">{t('via')}</span>
-                  FreeSewing.org
-                  <span className="block text-lg font-medium via pt-2">
-                    {t('chooseThisForFreeSewing')}
-                  </span>
-                </div>
-                {<FreeSewingIcon className="w-14 h-14 shrink-0" />}
-              </h3>
-            </button>
-            <a
-              className={`px-8 bg-neutral pt-4 pb-4 rounded-lg block text-neutral-content opacity-70 hover:opacity-100
-            shadow-lg grow hover:bg-secondary hover:text-secondary-content hover:cursor-pointer`}
-              title={t('createIssueOnGitHub')}
-              href="https://github.com/freesewing/freesewing/issues/new/choose"
-            >
-              <h5 className="text-inherit font-heavy flex flex-row w-full items-center justify-between">
-                <div className="text-left">
-                  <span className="block text-sm font-medium via">{t('via')}</span>
-                  GitHub.com
-                  <span className="block text-sm font-medium via pt-2">
-                    {t('chooseThisForGitHub')}
-                  </span>
-                </div>
-                {<GitHubIcon className="w-14 h-14 shrink-0" />}
-              </h5>
-            </a>
-          </div>
-        </div>
-      </PageWrapper>
-    )
-
-  if (mode && edit)
-    return (
-      <PageWrapper {...page} title={pageTitle} layout={BareLayout}>
-        <div className="max-w-7xl mx-auto mb-24 px-4 md:px-0 mt-16">
-          <Breadcrumbs />
-          <h1>{pageTitle}</h1>
-          <div className="max-w-xl">
-            <StringInput
-              label={t('title')}
-              update={setTitle}
-              current={title}
-              valid={(val) => val.length > 10}
-            />
-            <DesignDropdown
-              firstOption={<option val="">Not related to a design</option>}
-              label={t('design')}
-              update={setDesign}
-              current={design}
-              valid={(val) => val.length > 1}
-            />
-            <MarkdownInput
-              label={t('body')}
-              update={body}
-              current={body}
-              valid={(val) => val.length > 10}
-            />
-          </div>
+          <SupportForm />
         </div>
       </PageWrapper>
     )
@@ -147,15 +90,17 @@ const SupportPage = ({ page }) => {
       <div className="max-w-7xl mx-auto mb-24 px-4 mt-16">
         <Breadcrumbs />
         <h1>{pageTitle}</h1>
-        <div className="flex flex-row flex-wrap gap-4 lg:grid lg:grid-cols-3 lg:gap-8 justify-around">
+        <h2>{t('howCanWeSupportYou')}</h2>
+        <div className="flex flex-row flex-wrap gap-4 lg:grid lg:grid-cols-3 lg:gap-8 justify-around -mt-4">
           {/* Community */}
           <div className="w-full md:max-w-md my-8">
             <SupportCard
-              bg="bg-accent"
-              textColor="text-primary-content"
+              nr={1}
+              bg="accent"
+              textColor="text-accent-content"
               title={t('support:communitySupport')}
               subtitle="Discord"
-              icon={<HeartIcon className="w-14 h-14 shrink-0" />}
+              icon={<CommunityIcon className="w-10 h-10 lg:w-14 lg:h-14 shrink-0" />}
             />
             <p className="font-normal text-inherit">{t('support:communitySupport1')}</p>
             <p className="font-normal text-inherit">{t('support:communitySupport2')}</p>
@@ -164,7 +109,7 @@ const SupportPage = ({ page }) => {
                 .sort()
                 .map((key) => (
                   <a
-                    className="btn btn-neutral btn-outline w-full flex flex-row items-center justify-between"
+                    className="btn btn-neutral btn-outline w-full flex flex-row items-center justify-between hover:btn-accent"
                     href={config.social[key]}
                     key={key}
                   >
@@ -178,18 +123,23 @@ const SupportPage = ({ page }) => {
           {/* Contributors */}
           <div className="w-full md:max-w-md my-8">
             <SupportCard
-              bg="bg-primary"
-              textColor="text-neutral-content"
+              nr={2}
+              bg="secondary"
+              textColor="text-secondary-content"
               title={t('support:contributorSupport')}
               subtitle="GitHub"
-              icon={<GitHubIcon className="w-14 h-14 shrink-0" />}
+              icon={<GitHubIcon className="w-10 h-10 lg:w-14 lg:h-14 shrink-0" />}
             />
             <p
               className="font-medium text-inherit text-lg"
               dangerouslySetInnerHTML={{ __html: t('support:contributorSupport1') }}
             />
             <p className="font-normal text-inherit">{t('support:contributorSupport2')}</p>
-            <button className="btn btn-primary w-full" onClick={() => setMode('edit')}>
+            <button
+              className="btn btn-secondary btn-lg w-full flex flex-row items-center justify-between"
+              onClick={() => setRequest(true)}
+            >
+              <ChatIcon className="w-8 h-8" />
               {t('createSupportRequest')}
             </button>
           </div>
@@ -197,21 +147,29 @@ const SupportPage = ({ page }) => {
           {/* Maintainer */}
           <div className="w-full md:max-w-md my-8">
             <SupportCard
-              bg="bg-neutral"
-              textColor="text-primary-content"
+              nr={3}
+              bg="neutral"
+              textColor="text-neutral-content"
               title={t('support:maintainerSupport')}
-              icon={<Joost className="w-28 shrink-0" stroke={1} />}
+              icon={<Joost className="w-20 lg:w-28 shrink-0" stroke={1} />}
             />
             <p
               className="font-medium text-inherit text-lg"
               dangerouslySetInnerHTML={{ __html: t('support:maintainerSupport1') }}
             />
             <p className="font-normal text-inherit">{t('support:maintainerSupport2')}</p>
-            <Popout tip>
-              <h5>{t('support:whatIsJoost')}</h5>
-              <p>{t('support:whatIsJoost1')}</p>
-            </Popout>
+            <a
+              className="btn btn-neutral w-full flex flex-row items-center justify-between"
+              href="mailto:joost@joost.at"
+            >
+              <EmailIcon className="w-8 h-8" />
+              {t('emailAddress', { address: 'joost@joost.at' })}
+            </a>
           </div>
+        </div>
+        <h2 className="pb-8">{t('howCanYouSupportFreeSewing')}</h2>
+        <div className="-mx-4 md:mx-auto">
+          <PleaseSubscribe dense />
         </div>
       </div>
     </PageWrapper>
@@ -223,7 +181,7 @@ export default SupportPage
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, namespaces)),
+      ...(await serverSideTranslations(locale, ns)),
       page: {
         locale,
         path: ['patrons', 'thanks'],

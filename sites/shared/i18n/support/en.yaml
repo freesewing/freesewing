@@ -19,4 +19,44 @@ via: Via
 chooseThisForFreeSewing: This is the best choice for most people
 chooseThisForGitHub: This is the best choice for those who prefer to use GitHub directly
 chooseYourUx: How would you like to do this?
+howCanWeSupportYou: How can we best support you?
+howCanYouSupportFreeSewing: How can you best support FreeSewing?
+emailAddress: Email {address}
+title: Title
+titleDocs1: Your request needs a title. A good title is important because it will be how the request is listed among many others.
+titleDocs2: A good title is descriptive, not too short, but also not too long, and include keywords that make it easy to find in a search.
+design: Design
+designDocs1: If the reason you are reaching out for support is related to a specific FreeSewing design, please select it here.
+description: Description
+descriptionDocs1: This is where you can describe your request in detail. Don't hold back, more infomration is almost always better.
+supportRequest: Support request
+bugReport: Bugs & Crashes
+bugReportDesc: Report a problem, or something that went wrong
+featureRequest: New Features
+featureRequestDesc: Suggest an idea to make FreeSewing better
+docsUpdate: Documentation & Content
+docsUpdateDesc: Suggest updates to FreeSewing documentation or site content
+security: Security & Vulnerabilities
+securityDesc: Responsibly disclose a vulnerability, incident, or security risk
+question: Questions & Discussions
+questionDesc: Submit a question to the formum-style discussion board on Github
+other: Something else?
+otherDesc: Report something that does not fit in any other category
+accountIssue: Accounts & API access
+accountIssueDesc: Report problems regarding your FreeSewing account or API access
+designIssue: Designs & Patterns
+designIssueDesc: Report problems with FreeSewing designs or patterns
+patronSponsor: Patrons & Sponsors
+patronSponsorDesc: Support channel reserved for our Partons and corporate Sponsors
+whichCategory: Which category best fits your request?
+image: Image
+imageDocs1: You can add one or more images or screenshots to help illustrate your description.
+addImage: Add image
+addToDescription: Add to description
+addImageToMd: To include this image in your description, use this markdown snippet
+submitSupportRequest: Submit support request
+useGitHubInstead: Use GitHub instead
+requestCreated: Support request created
+requestCreatedDesc: We have created your request, you can find it here
+back: Back
 

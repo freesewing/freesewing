@@ -7,10 +7,12 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 import { useState, useCallback, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useDropzone } from 'react-dropzone'
+import { useBackend } from 'shared/hooks/use-backend.mjs'
+import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { Popout } from 'shared/components/popout/index.mjs'
 import Markdown from 'react-markdown'
-import { ResetIcon, DocsIcon, HelpIcon } from 'shared/components/icons.mjs'
+import { ResetIcon, DocsIcon, HelpIcon, UploadIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { isDegreeMeasurement } from 'config/measurements.mjs'
 import { measurementAsMm, formatMm, measurementAsUnits, parseDistanceInput } from 'shared/utils.mjs'
@@ -95,7 +97,7 @@ export const ButtonFrame = ({
   <button
     className={`
     btn btn-ghost btn-secondary
-    w-full mt-2 py-4 h-auto
+    w-full mt-2 py-4 h-auto content-start
     border-2 border-secondary text-left bg-opacity-20
     hover:bg-secondary hover:text-secondary-content hover:border-secondary hover:border-solid hover:border-2
     ${active ? 'bg-secondary border-solid' : 'bg-transparent border-dotted'}
@@ -187,22 +189,49 @@ export const DesignDropdown = ({
 }
 
 /*
- * Input for an image that is passive (it does not upload the image)
+ * Input for an image
  */
-export const PassiveImageInput = ({
+export const ImageInput = ({
   label, // The label
   update, // The onChange handler
   current, // The current value
   original, // The original value
   docs = false, // Docs to load, if any
+  active = false, // Whether or not to upload images
+  makeId = () => `ephemeral-${Date.now()}`, // Method to generate image IDs
+  imgType = 'showcase', // The image type
+  imgSubid, // The image sub-id
+  imgSlug, // The image slug or other unique identifier to use in the image ID
 }) => {
   const { t } = useTranslation(ns)
+  const backend = useBackend()
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const [url, setUrl] = useState(false)
+  const [uploadedId, setUploadedId] = useState(false)
+
+  const upload = async (img, fromUrl = false) => {
+    setLoadingStatus([true, 'uploadingImage'])
+    const data = {
+      type: imgType,
+      subId: imgSubid,
+      slug: imgSlug,
+    }
+    if (fromUrl) data.url = img
+    else data.img = img
+    const result = await backend.uploadAnonImage(data)
+    setLoadingStatus([true, 'allDone', true, true])
+    if (result.success) {
+      update(result.data.imgId)
+      setUploadedId(result.data.imgId)
+    } else setLoadingStatus([true, 'backendError', true, false])
+  }
 
   const onDrop = useCallback(
     (acceptedFiles) => {
       const reader = new FileReader()
       reader.onload = async () => {
-        update(reader.result)
+        if (active) upload(reader.result)
+        else update(reader.result)
       }
       acceptedFiles.forEach((file) => reader.readAsDataURL(file))
     },
@@ -214,10 +243,13 @@ export const PassiveImageInput = ({
   if (current)
     return (
       <FormControl label={label} docs={docs}>
+        <LoadingStatus />
         <div
           className="bg-base-100 w-full h-36 mb-2 mx-auto flex flex-col items-center text-center justify-center"
           style={{
-            backgroundImage: `url(${current})`,
+            backgroundImage: `url(${
+              uploadedId ? cloudflareImageUrl({ type: 'public', id: uploadedId }) : current
+            })`,
             backgroundSize: 'contain',
             backgroundRepeat: 'no-repeat',
             backgroundPosition: '50%',
@@ -235,6 +267,7 @@ export const PassiveImageInput = ({
 
   return (
     <FormControl label={label} docs={docs}>
+      <LoadingStatus />
       <div
         {...getRootProps()}
         className={`
@@ -254,12 +287,31 @@ export const PassiveImageInput = ({
           className="input input-secondary w-full input-bordered"
           placeholder={t('imgPasteUrlHere')}
           value={current}
-          onChange={(evt) => update(evt.target.value)}
+          onChange={active ? (evt) => setUrl(evt.target.value) : (evt) => update(evt.target.value)}
         />
+        {active && (
+          <button
+            className="btn btn-secondary ml-2 capitalize"
+            disabled={!url || url.length < 1}
+            onClick={() => upload(url, true)}
+          >
+            <UploadIcon /> {t('upload')}
+          </button>
+        )}
       </div>
     </FormControl>
   )
 }
+
+/*
+ * Input for an image that is active (it does upload the image)
+ */
+export const ActiveImageInput = (props) => <ImageInput {...props} active={true} />
+
+/*
+ * Input for an image that is passive (it does not upload the image)
+ */
+export const PassiveImageInput = (props) => <ImageInput {...props} active={false} />
 
 /*
  * Input for a list of things to pick from
@@ -337,14 +389,6 @@ const Mval = ({ m, val = false, imperial = false, className = '' }) =>
       />
     )
   ) : null
-
-const heightClasses = {
-  2: 'h-12',
-  4: 'h-10',
-  8: 'h-8',
-  16: 'h-6',
-  32: 'h-4',
-}
 
 export const MeasieInput = ({
   imperial, // True for imperial, False for metric

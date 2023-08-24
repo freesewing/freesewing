@@ -369,6 +369,13 @@ Backend.prototype.createIssue = async function (data) {
 }
 
 /*
+ * Create GitHub discussion
+ */
+Backend.prototype.createDiscussion = async function (data) {
+  return responseHandler(await api.post(`/discussions`, data), 201)
+}
+
+/*
  * Check whether a slug is available
  */
 Backend.prototype.isSlugAvailable = async function ({ slug, type }) {
@@ -420,6 +427,13 @@ Backend.prototype.confirmNewsletterUnsubscribe = async function ({ id, ehash }) 
  */
 Backend.prototype.uploadImage = async function (body) {
   return responseHandler(await api.post('/images/jwt', body, this.auth))
+}
+
+/*
+ * Upload an image anonymously
+ */
+Backend.prototype.uploadAnonImage = async function (body) {
+  return responseHandler(await api.post('/images', body))
 }
 
 /*

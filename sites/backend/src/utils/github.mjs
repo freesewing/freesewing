@@ -1,7 +1,8 @@
 import fetch from 'node-fetch'
-import { githubToken as token } from '../config.mjs'
+import { github as config } from '../config.mjs'
 
 const api = 'https://api.github.com/repos/freesewing/freesewing'
+const graphApi = 'https://api.github.com/graphql'
 
 /*
  * Sometimes we'd like to cache responses.
@@ -44,7 +45,7 @@ const apiRequest = async (method, url, body = false, success = 200) => {
   const data = {
     method: method,
     headers: {
-      Authorization: `Bearer ${token}`,
+      Authorization: `Bearer ${config.token}`,
       Accept: 'application/vnd.github.v3+json',
       'Content-Type': 'application/json',
     },
@@ -67,7 +68,29 @@ const apiRequest = async (method, url, body = false, success = 200) => {
 /*
  * Creates an issue
  */
-export const createIssue = async (body) => await apiRequest('POST', `${api}/issues`, body)
+export const createIssue = async (body) => await apiRequest('POST', `${api}/issues`, body, 201)
+
+/*
+ * Creates a discussion (graphql)
+ */
+export const createDiscussion = async ({ title, body }) =>
+  await apiRequest('POST', graphApi, {
+    query: `mutation {
+    createDiscussion(
+      input: {
+        repositoryId: "${config.repoId}",
+        categoryId: "${config.forumCategoryId}",
+        body: ${JSON.stringify(body)},
+        title: ${JSON.stringify(title)}
+      }
+    )
+    {
+      discussion {
+        url
+      }
+    }
+}`,
+  })
 
 /*
  * Creates a file in the respository

@@ -24,7 +24,7 @@ import { SignUp } from 'shared/components/susi/sign-up.mjs'
 import { PleaseSubscribe } from 'shared/components/patrons/please-subscribe.mjs'
 import Link from 'next/link'
 
-const ns = nsMerge(pageNs, 'patrons', 'common', 'homepage', 'signup', 'errors', 'patrons')
+const ns = nsMerge(pageNs, 'patrons', 'common', 'homepage', 'signup', 'errors')
 
 const CardLink = ({ bg, textColor, href, title, text, icon }) => (
   <Link
@@ -113,7 +113,9 @@ const HomePage = ({ page }) => {
         </div>
       </div>
 
-      <PleaseSubscribe />
+      <div className="lg:px-4 max-w-7xl mx-auto">
+        <PleaseSubscribe />
+      </div>
 
       <div className="flex flex-col md:grid md:grid-cols-2 gap-4 max-w-7xl m-auto mb-24 px-4">
         <CardLink
