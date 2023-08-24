@@ -9,7 +9,7 @@ export const useSetDocs = (locale) => {
     useCallback(
       () =>
         import(
-          /* webpackInclude: /docs\/site\/sets\/[a-z]+\/[a-z][a-z]\.md$/ */ `markdown/docs/site/sets//${option}/${locale}.md`
+          /* webpackInclude: /docs\/site\/sets\/[a-z]+\/[a-z][a-z]\.md$/ */ `orgmarkdown/docs/site/sets//${option}/${locale}.md`
         ),
       [locale]
     )

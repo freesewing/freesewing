@@ -9,7 +9,7 @@ export const useBookmarkDocs = (locale) => {
     useCallback(
       () =>
         import(
-          /* webpackInclude: /docs\/site\/bookmarks\/[a-z]+\/[a-z][a-z]\.md$/ */ `markdown/docs/site/bookmarks/${option}/${locale}.md`
+          /* webpackInclude: /docs\/site\/bookmarks\/[a-z]+\/[a-z][a-z]\.md$/ */ `orgmarkdown/docs/site/bookmarks/${option}/${locale}.md`
         ),
       [locale]
     )

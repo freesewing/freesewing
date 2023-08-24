@@ -9,7 +9,7 @@ export const useApikeyDocs = (locale) => {
     useCallback(
       () =>
         import(
-          /* webpackInclude: /docs\/site\/apikeys\/[a-z]+\/[a-z][a-z]\.md$/ */ `markdown/docs/site/apikeys//${option}/${locale}.md`
+          /* webpackInclude: /docs\/site\/apikeys\/[a-z]+\/[a-z][a-z]\.md$/ */ `orgmarkdown/docs/site/apikeys//${option}/${locale}.md`
         ),
       [locale]
     )
