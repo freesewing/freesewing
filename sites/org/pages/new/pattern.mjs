@@ -33,7 +33,7 @@ export default NewSetPage
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, namespaces)),
+      ...(await serverSideTranslations(locale, ns)),
       page: {
         locale,
         path: ['new', 'pattern'],

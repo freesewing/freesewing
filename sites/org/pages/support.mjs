@@ -7,8 +7,6 @@ import { useTranslation } from 'next-i18next'
 import { useState } from 'react'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { WebLink, Link } from 'shared/components/link.mjs'
-import { Popout } from 'shared/components/popout/index.mjs'
 import { Joost } from 'shared/components/joost.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { Breadcrumbs } from 'shared/components/navigation/sitenav.mjs'
@@ -16,24 +14,21 @@ import {
   DiscordIcon,
   FacebookIcon,
   GitHubIcon,
-  HeartIcon,
   InstagramIcon,
   RedditIcon,
   TwitterIcon,
   YouTubeIcon,
-  FreeSewingIcon,
   CommunityIcon,
   ChatIcon,
   EmailIcon,
 } from 'shared/components/icons.mjs'
-import { StringInput, MarkdownInput, DesignDropdown } from 'shared/components/inputs.mjs'
 import { PleaseSubscribe } from 'shared/components/patrons/please-subscribe.mjs'
 import { SupportForm, ns as supportNs } from 'shared/components/support.mjs'
 
 // Translation namespaces used on this page
 const ns = nsMerge(pageNs, supportNs)
 
-const SupportCard = ({ bg, textColor, title, icon, subtitle, nr }) => (
+const SupportCard = ({ bg, textColor, title, icon, nr }) => (
   <div
     className={`px-4 bg-${bg} pt-2 pb-4 rounded-lg block ${textColor} shadow-lg
     grow w-full bg-gradient-to-tr from-${bg} from-10% to-primary`}
@@ -99,7 +94,6 @@ const SupportPage = ({ page }) => {
               bg="accent"
               textColor="text-accent-content"
               title={t('support:communitySupport')}
-              subtitle="Discord"
               icon={<CommunityIcon className="w-10 h-10 lg:w-14 lg:h-14 shrink-0" />}
             />
             <p className="font-normal text-inherit">{t('support:communitySupport1')}</p>
@@ -127,7 +121,6 @@ const SupportPage = ({ page }) => {
               bg="secondary"
               textColor="text-secondary-content"
               title={t('support:contributorSupport')}
-              subtitle="GitHub"
               icon={<GitHubIcon className="w-10 h-10 lg:w-14 lg:h-14 shrink-0" />}
             />
             <p
