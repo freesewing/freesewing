@@ -125,6 +125,7 @@ unitsTitle: Which units do you prefer?
 
 # username
 usernameTitle: What username would you like?
+usernameAvailable: Username is available
 usernameNotAvailable: Username is not available
 
 # email

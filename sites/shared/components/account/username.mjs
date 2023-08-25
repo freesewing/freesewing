@@ -9,6 +9,8 @@ import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { OkIcon, NoIcon } from 'shared/components/icons.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
+import { StringInput } from 'shared/components/inputs.mjs'
+import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
 export const ns = ['account', 'toast']
 
@@ -17,15 +19,14 @@ export const UsernameSettings = ({ title = false, welcome = false }) => {
   const { account, setAccount } = useAccount()
   const backend = useBackend()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
-  const { t } = useTranslation(ns)
+  const { t, i18n } = useTranslation(ns)
   const [username, setUsername] = useState(account.username)
   const [available, setAvailable] = useState(true)
 
-  const update = async (evt) => {
-    evt.preventDefault()
-    if (evt.target.value !== username) {
-      setUsername(evt.target.value)
-      const result = await backend.isUsernameAvailable(evt.target.value)
+  const update = async (value) => {
+    if (value !== username) {
+      setUsername(value)
+      const result = await backend.isUsernameAvailable(value)
       if (result?.response?.response?.status === 404) setAvailable(true)
       else setAvailable(false)
     }
@@ -52,23 +53,27 @@ export const UsernameSettings = ({ title = false, welcome = false }) => {
   return (
     <div className="max-w-xl">
       <LoadingStatus />
-      {title ? <h1 className="text-4xl">{t('usernameTitle')}</h1> : null}
-      <div className="flex flex-row items-center">
-        <input
-          value={username}
-          onChange={update}
-          className="input w-full input-bordered flex flex-row"
-          type="text"
-          placeholder={t('title')}
-        />
-        <span className={`-ml-10 rounded-full p-1 ${available ? 'bg-success' : 'bg-error'}`}>
-          {available ? (
-            <OkIcon className="w-5 h-5 text-neutral-content" stroke={4} />
-          ) : (
-            <NoIcon className="w-5 h-5 text-neutral-content" stroke={3} />
-          )}
-        </span>
-      </div>
+      <StringInput
+        label={t('usernameTitle')}
+        current={username}
+        update={update}
+        valid={() => available}
+        placeholder={'Sorcha Ni Dhubghaill'}
+        labelBL={
+          <span className="flex flex-row gap-1 items-center">
+            {available ? (
+              <>
+                <OkIcon className="w-4 h-4 text-success" stroke={4} /> {t('usernameAvailable')}
+              </>
+            ) : (
+              <>
+                <NoIcon className="w-4 h-4 text-error" stroke={3} /> {t('usernameNotAvailable')}
+              </>
+            )}
+          </span>
+        }
+        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/username`} />}
+      />
       <button className={btnClasses} disabled={!available} onClick={save}>
         <span className="flex flex-row items-center gap-2">
           {available ? t('save') : t('usernameNotAvailable')}

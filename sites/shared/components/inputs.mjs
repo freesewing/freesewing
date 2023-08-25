@@ -138,8 +138,10 @@ export const StringInput = ({
   placeholder, // The placeholder text
   docs = false, // Docs to load, if any
   id = '', // An id to tie the input to the label
+  labelBL = false, // Bottom-Left label
+  labelBR = false, // Bottom-Right label
 }) => (
-  <FormControl label={label} docs={docs} forId={id}>
+  <FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
     <input
       id={id}
       type="text"
