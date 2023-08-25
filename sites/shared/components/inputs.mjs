@@ -162,7 +162,7 @@ export const DesignDropdown = ({
   firstOption = null, // Any first option to add in addition to designs
   id = '', // An id to tie the input to the label
 }) => {
-  const { t, i18n } = useTranslation(['designs'])
+  const { t } = useTranslation(['designs'])
 
   return (
     <FormControl label={label} docs={docs} forId={id}>
@@ -376,7 +376,6 @@ export const MarkdownInput = ({
 export const MeasieInput = ({
   imperial, // True for imperial, False for metric
   m, // The measurement name
-  current, // The current value
   original, // The original value
   update, // The onChange handler
   placeholder, // The placeholder content

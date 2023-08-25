@@ -568,7 +568,7 @@ export const Mset = ({ id, publicOnly = false }) => {
 }
 
 // Component for the account/sets page
-export const Sets = ({ title = true }) => {
+export const Sets = () => {
   // Hooks
   const { control } = useAccount()
   const backend = useBackend()
@@ -616,7 +616,10 @@ export const Sets = ({ title = true }) => {
     for (const id in selected) {
       i++
       await backend.removeSet(id)
-      setLoadingStatus([true, <LoadingProgress val={i} max={selCount} msg={t('removingSets')} />])
+      setLoadingStatus([
+        true,
+        <LoadingProgress val={i} max={selCount} msg={t('removingSets')} key="linter" />,
+      ])
     }
     setSelected({})
     setRefresh(refresh + 1)
