@@ -90,7 +90,7 @@ export const NewBookmark = () => {
       <div className="flex flex-row gap-2 items-center w-full my-8">
         <button
           className="btn btn-primary grow capitalize"
-          disabled={!(title.length > 0 && location.length > 0)}
+          disabled={!(title.length > 0 && url.length > 0)}
           onClick={createBookmark}
         >
           {t('newBookmark')}
