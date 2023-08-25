@@ -11,6 +11,8 @@ import { BackToAccountButton } from './shared.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { RightIcon } from 'shared/components/icons.mjs'
+import { PasswordInput } from 'shared/components/inputs.mjs'
+import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
 export const ns = ['account', 'status']
 
@@ -18,7 +20,7 @@ export const PasswordSettings = ({ title = false, welcome = false }) => {
   // Hooks
   const { account, setAccount } = useAccount()
   const backend = useBackend()
-  const { t } = useTranslation(ns)
+  const { t, i18n } = useTranslation(ns)
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   // State
@@ -38,24 +40,14 @@ export const PasswordSettings = ({ title = false, welcome = false }) => {
   return (
     <div className="max-w-xl">
       <LoadingStatus />
-      {title ? <h2 className="text-4xl">{t('passwordTitle')}</h2> : null}
-      <div className="flex flex-row items-center mt-4 gap-2">
-        <input
-          value={password}
-          onChange={(evt) => setPassword(evt.target.value)}
-          className="input w-full input-bordered flex flex-row"
-          type={reveal ? 'text' : 'password'}
-          placeholder={t('newPasswordPlaceholder')}
-        />
-        <button
-          className="btn hover:bg-opacity-10 border-0 btn-outline"
-          onClick={() => setReveal(!reveal)}
-        >
-          <span role="img" className="text-3xl">
-            {reveal ? '👀' : '🙈'}
-          </span>
-        </button>
-      </div>
+      <PasswordInput
+        label={t('passwordTitle')}
+        current={password}
+        update={setPassword}
+        valid={(val) => val.length > 0}
+        placeholder={t('passwordTitle')}
+        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/password`} />}
+      />
       <SaveSettingsButton btnProps={{ onClick: save, disabled: password.length < 4 }} />
       {!welcome && <BackToAccountButton />}
       {!account.mfaEnabled && (
