@@ -23,7 +23,7 @@ export const ModalMenu = () => {
         >
           <div className="w-full lg:w-1/2">
             <Link href="/new" title={t('new')}>
-              <div className="flex flex-col rounded bg-accent text-primary-content mb-2 shadow">
+              <div className="flex flex-col rounded bg-accent text-primary-content mb-2 shadow bg-opacity-90">
                 <div className={`flex flex-row items-center justify-between pt-2 px-4`}>
                   <h6 className="text-inherit">{t('new')}</h6>
                   <PlusIcon className="w-10 h-10" />
