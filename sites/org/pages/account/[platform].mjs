@@ -2,6 +2,8 @@
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge, capitalize } from 'shared/utils.mjs'
+import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
+import { siteConfig } from 'site/site.config.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
