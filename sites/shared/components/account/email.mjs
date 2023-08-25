@@ -10,6 +10,8 @@ import { validateEmail, validateTld } from 'shared/utils.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
+import { EmailInput } from 'shared/components/inputs.mjs'
+import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
 export const ns = ['account', 'status']
 
@@ -17,7 +19,7 @@ export const EmailSettings = ({ title = false }) => {
   // Hooks
   const { account, setAccount } = useAccount()
   const backend = useBackend()
-  const { t } = useTranslation(ns)
+  const { t, i18n } = useTranslation(ns)
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   // State
@@ -41,7 +43,6 @@ export const EmailSettings = ({ title = false }) => {
   return (
     <div className="max-w-xl">
       <LoadingStatus />
-      {title ? <h2 className="text-4xl">{t('emailTitle')}</h2> : null}
       {changed ? (
         <Popout note>
           <h3>{t('oneMoreThing')}</h3>
@@ -49,14 +50,16 @@ export const EmailSettings = ({ title = false }) => {
         </Popout>
       ) : (
         <>
-          <div className="flex flex-row items-center mt-4">
-            <input
-              value={email}
-              onChange={(evt) => setEmail(evt.target.value)}
-              className="input w-full input-bordered flex flex-row"
-              type="text"
-            />
-          </div>
+          <EmailInput
+            label={t('account:email')}
+            placeholder={t('account:email')}
+            update={setEmail}
+            labelBL={t('emailTitle')}
+            current={email}
+            original={account.email}
+            valid={() => valid}
+            docs={<DynamicOrgDocs language={i18n.language} path={`site/account/email`} />}
+          />
           <button
             className="btn mt-4 btn-primary w-full"
             onClick={save}
