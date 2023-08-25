@@ -11,7 +11,6 @@ import { ns as setsNs } from 'shared/components/account/sets.mjs'
 
 // Translation namespaces used on this page
 const ns = nsMerge(setsNs, authNs, pageNs)
-console.log(ns)
 
 /*
  * Some things should never generated as SSR

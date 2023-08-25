@@ -248,11 +248,9 @@ export const Mset = ({ id, publicOnly = false }) => {
     if (notes || notes !== mset.notes) data.notes = notes
     // Add measurements
     for (const m of measurements) {
-      console.log(m)
       if (measies[m] || measies[m] !== mset.measies[m]) data.measies[m] = measies[m]
     }
     setLoadingStatus([true, 'savingSet'])
-    console.log({ measies, data })
     const result = await backend.updateSet(mset.id, data)
     if (result.success) {
       setMset(result.data.set)
