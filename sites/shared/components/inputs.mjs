@@ -49,6 +49,8 @@ export const FormControl = ({
 }) => {
   const { setModal } = useContext(ModalContext)
 
+  if (labelBR && !labelBL) labelBL = <span></span>
+
   const topLabelChildren = (
     <>
       <span className="label-text text-lg font-bold mb-0 text-inherit">{label}</span>
@@ -150,6 +152,49 @@ export const StringInput = ({
     />
   </FormControl>
 )
+
+/*
+ * Input for passwords
+ */
+export const PasswordInput = ({
+  label, // Label to use
+  update, // onChange handler
+  valid, // Method that should return whether the value is valid or not
+  current, // The current value
+  placeholder, // The placeholder text
+  docs = false, // Docs to load, if any
+  id = '', // An id to tie the input to the label
+}) => {
+  const { t } = useTranslation(['account'])
+  const [reveal, setReveal] = useState(false)
+
+  return (
+    <FormControl
+      label={label}
+      docs={docs}
+      forId={id}
+      labelBR={
+        <button
+          className="btn btn-primary btn-ghost btn-xs -mt-2"
+          onClick={() => setReveal(!reveal)}
+        >
+          {reveal ? t('hidePassword') : t('revealPassword')}
+        </button>
+      }
+    >
+      <input
+        id={id}
+        type={reveal ? 'text' : 'password'}
+        placeholder={placeholder}
+        value={current}
+        onChange={(evt) => update(evt.target.value)}
+        className={`input w-full input-bordered ${
+          valid(current) ? 'input-success' : 'input-error'
+        }`}
+      />
+    </FormControl>
+  )
+}
 
 /*
  * Input for email addresses

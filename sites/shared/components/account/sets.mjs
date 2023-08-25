@@ -101,15 +101,11 @@ export const MsetBanner = ({ set, control, onClick = false, href = false }) => {
   if (control > 1)
     info.push([
       <CalendarIcon key="a" />,
-      <b key="b">
-        <TextOnBg txt={shortDate(i18n.language, set.createdAt, false)} />
-      </b>,
+      <b key="b">{shortDate(i18n.language, set.createdAt, false)}</b>,
     ])
   info.push([
     <MeasieIcon key="c" />,
-    <b key="d">
-      <TextOnBg txt={(set.measies ? Object.keys(set.measies).length : 0) + ' ' + t('measies')} />
-    </b>,
+    <b key="d">{(set.measies ? Object.keys(set.measies).length : 0) + ' ' + t('measies')}</b>,
   ])
   if (control > 2)
     info.push([
@@ -118,18 +114,14 @@ export const MsetBanner = ({ set, control, onClick = false, href = false }) => {
       ) : (
         <NoIcon className="w-6 h-6 text-error" stroke={3} key="e" />
       ),
-      <b key="f">
-        <TextOnBg txt={t(set.public ? 'publicSet' : 'privateSet')} />
-      </b>,
+      <b key="f">{t(set.public ? 'publicSet' : 'privateSet')}</b>,
     ])
   const inner = (
     <>
-      <h2 className="bg-base-100 px-4 rounded-lg bg-opacity-50 py-2 rounded-l-none">
-        <TextOnBg txt={set.name} />
-      </h2>
+      <h2 className="bg-base-100 px-4 rounded-lg bg-opacity-60 py-2 rounded-l-none">{set.name}</h2>
       {info.map((item) => (
         <div
-          className="flex flex-row flex-wrap gap-2 bg-base-100 p-4 rounded bg-opacity-50 py-1 mt-2 rounded-l-none"
+          className="flex flex-row flex-wrap gap-2 bg-base-100 p-4 rounded bg-opacity-60 py-1 mt-2 rounded-l-none text-lg"
           key={item[0]}
         >
           {item[0]}
@@ -140,7 +132,7 @@ export const MsetBanner = ({ set, control, onClick = false, href = false }) => {
   )
   const props = {
     className:
-      'bg-base-100 w-full mb-2 mx-auto flex flex-col items-start text-center justify-center rounded shadow py-4',
+      'bg-base-300 w-full mb-2 mx-auto flex flex-col items-start text-center justify-center rounded shadow py-4',
     style: {
       backgroundImage: `url(${cloudflareImageUrl({ type: 'w1000', id: set.img })})`,
       backgroundSize: 'cover',
@@ -148,6 +140,7 @@ export const MsetBanner = ({ set, control, onClick = false, href = false }) => {
       backgroundPosition: '50%',
     },
   }
+  if (set.img === 'default-avatar') props.style.backgroundPosition = 'bottom right'
 
   return onClick ? (
     <button {...props} onClick={onClick}>
@@ -333,11 +326,13 @@ export const Mset = ({ id, publicOnly = false }) => {
         {Object.keys(mset.measies).length > 0 && (
           <>
             <h2>{t('measies')}</h2>
-            {Object.entries(mset.measies).map(([m, val]) => (
-              <DisplayRow title={<MeasieVal m={m} val={val} />} key={m}>
-                <span className="font-medium">{t(m)}</span>
-              </DisplayRow>
-            ))}
+            {Object.entries(mset.measies).map(([m, val]) =>
+              val > 0 ? (
+                <DisplayRow title={<MeasieVal m={m} val={val} />} key={m}>
+                  <span className="font-medium">{t(m)}</span>
+                </DisplayRow>
+              ) : null
+            )}
           </>
         )}
 

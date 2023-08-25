@@ -485,6 +485,13 @@ Backend.prototype.adminPing = async function (token) {
   return responseHandler(await api.get(`/whoami/jwt`, auth(token)))
 }
 
+/*
+ * Migrate a v2 account
+ */
+Backend.prototype.migrate = async function (data) {
+  return responseHandler(await api.post(`/migrate`, data))
+}
+
 export function useBackend() {
   const { token } = useAccount()
 

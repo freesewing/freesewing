@@ -395,6 +395,11 @@ export const formatNumber = (num, suffix = '') => {
  */
 export const cloudflareImageUrl = ({ id = 'default-avatar', variant = 'public' }) => {
   /*
+   * Return something default so that people will actually change it
+   */
+  if (id === 'default-avatar') return cloudflareConfig.dflt
+
+  /*
    * If the variant is invalid, set it to the smallest thumbnail so
    * people don't load enourmous images by accident
    */

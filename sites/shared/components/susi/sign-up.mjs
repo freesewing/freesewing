@@ -147,7 +147,13 @@ export const SignUp = () => {
             />
           </form>
           <p className={`text-inherit text-sm mt-4 opacity-80 text-center ${loadingClasses}`}>
-            {t('alreadyHaveAnAccount')} <DarkLink href="/signin" txt={t('signInHere')} />
+            <span className="block md:inline mb-2 md:mb-0">
+              {t('alreadyHaveAnAccount')} <DarkLink href="/signin" txt={t('signInHere')} />
+            </span>
+            <span className="hidden md:inline px-4">|</span>
+            <span className="block md:inline mb-2 md:mb-0">
+              {t('haveAV2Account')} <DarkLink href="/migrate" txt={t('migrateItHere')} />
+            </span>
           </p>
         </>
       )}

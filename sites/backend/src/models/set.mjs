@@ -406,6 +406,25 @@ const migratePerson = (v2) => ({
 })
 
 /*
+ * This is a special import route
+ */
+SetModel.prototype.migrate = async function (v2user, userId) {
+  const lut = {} // lookup tabel for v2 handle to v3 id
+  for (const [handle, person] of Object.entries(v2user.people)) {
+    const data = { ...migratePerson(person), userId }
+    data.img = 'default-avatar'
+    try {
+      await this.createRecord(data)
+      lut[handle] = this.record.id
+    } catch (err) {
+      log.warn(err, 'Could not create set')
+      console.log(person)
+    }
+  }
+
+  return lut
+}
+/*
  * This is a special route not available for API users
  */
 SetModel.prototype.import = async function (v2user, userId) {

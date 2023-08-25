@@ -1,5 +1,6 @@
 import { SubscriberModel } from '../models/subscriber.mjs'
 import { UserModel } from '../models/user.mjs'
+import axios from 'axios'
 
 export function ImportsController() {}
 
@@ -38,4 +39,35 @@ ImportsController.prototype.user = async (req, res, tools) => {
   await User.import(req.body.user)
 
   return User.sendResponse(res)
+}
+
+/*
+ * Migrates a user in v2 format
+ */
+ImportsController.prototype.migrate = async (req, res, tools) => {
+  if (!req.body.username || !req.body.password) return res.status(401).end()
+
+  const v2 = await getV2Data(req.body)
+  if (!v2) return res.status(401).end()
+
+  const User = new UserModel(tools)
+  await User.migrate({
+    username: req.body.username,
+    password: req.body.password,
+    v2,
+  })
+
+  return User.sendResponse(res)
+}
+
+const getV2Data = async ({ username, password }) => {
+  let result
+  try {
+    result = await axios.post('https://backend.freesewing.org/login', { username, password })
+  } catch (err) {
+    console.log(err)
+    return false
+  }
+
+  if (result.status === 200 && result.data.account) return result.data
 }

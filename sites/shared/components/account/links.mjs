@@ -123,7 +123,7 @@ export const AccountLinks = () => {
     patterns: patterns?.length || 0,
     username: account.username,
     email: account.email,
-    bio: <span>{account.bio.slice(0, 15)}&hellip;</span>,
+    bio: account.bio ? <span>{account.bio.slice(0, 15)}&hellip;</span> : '',
     img: (
       <img
         src={cloudflareImageUrl({ type: 'sq100', id: `user-${account.ihash}` })}

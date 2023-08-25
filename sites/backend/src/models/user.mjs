@@ -1631,19 +1631,16 @@ UserModel.prototype.papersPlease = async function (id, type, payload) {
  */
 const migrateUser = (v2) => {
   const email = clean(v2.email)
-  const initial = clean(v2.initial)
+  const initial = v2.initial ? clean(v2.initial) : email
   const data = {
-    bio: v2.bio,
+    bio: v2.bio || '--',
     consent: 0,
     createdAt: v2.time?.created ? new Date(v2.time.created) : new Date(),
     email,
     ehash: hash(email),
-    github: v2.social?.github,
+    data: {},
     ihash: hash(initial),
-    img:
-      v2.picture.slice(-4).toLowerCase() === '.svg' // Don't bother with default avatars
-        ? ''
-        : v2.picture,
+    img: 'default-avatar',
     initial,
     imperial: v2.units === 'imperial',
     language: v2.settings.language,
@@ -1651,10 +1648,6 @@ const migrateUser = (v2) => {
     lusername: v2.username.toLowerCase(),
     mfaEnabled: false,
     newsletter: false,
-    password: JSON.stringify({
-      type: 'v2',
-      data: v2.password,
-    }),
     patron: v2.patron,
     role: v2._id === '5d62aa44ce141a3b816a3dd9' ? 'admin' : 'user',
     status: v2.status === 'active' ? 1 : 0,
@@ -1667,6 +1660,58 @@ const migrateUser = (v2) => {
   return data
 }
 
+/*
+ * This is a special migration route
+ */
+UserModel.prototype.migrate = async function ({ username, password, v2 }) {
+  let lut = false
+  const data = migrateUser(v2.account)
+  if (v2.account.consent.profile && (v2.account.consent.model || v2.account.consent.measurements)) {
+    data.consent++
+    if (v2.account.consent.openData) v2.account.consent++
+  }
+  data.password = password
+  await this.read({ ehash: data.ehash })
+  if (!this.record) {
+    /*
+     * Skip images for now
+     */
+    data.img = 'default-avatar'
+    let available = await this.isLusernameAvailable(data.lusername)
+    while (!available) {
+      data.username += '+'
+      data.lusername += '+'
+      available = await this.isLusernameAvailable(data.lusername)
+    }
+    try {
+      await this.createRecord(data)
+    } catch (err) {
+      log.warn(err, 'Could not create user record')
+      console.log(user)
+      return this.setResponse(500, 'createUserFailed')
+    }
+    // That's the user, now load their people as sets
+    const user = {
+      ...v2.account,
+      people: v2.people,
+      patterns: v2.patterns,
+    }
+    if (user.people) lut = await this.Set.migrate(user, this.record.id)
+    //if (user.patterns) await this.Pattern.import(user, lut, this.record.id)
+  } else {
+    return this.setResponse(400, 'userExists')
+  }
+
+  /*
+   * Decrypt data so we can return it
+   */
+  await this.reveal()
+
+  /*
+   * Looks like the migration was a success. Return a passwordless sign in
+   */
+  return this.signInOk()
+}
 /*
  * This is a special route not available for API users
  */
