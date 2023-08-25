@@ -1,6 +1,7 @@
 // Dependencies
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
+import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
@@ -9,6 +10,8 @@ import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 import { BackToAccountButton } from './shared.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
+import { StringInput } from 'shared/components/inputs.mjs'
+import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
 export const ns = ['account', 'status']
 
@@ -16,7 +19,7 @@ export const PlatformSettings = ({ platform }) => {
   // Hooks
   const { account, setAccount } = useAccount()
   const backend = useBackend()
-  const { t } = useTranslation(ns)
+  const { t, i18n } = useTranslation(ns)
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   // State
@@ -37,25 +40,18 @@ export const PlatformSettings = ({ platform }) => {
   return (
     <div className="max-w-xl">
       <LoadingStatus />
-      <h2 className="text-4xl">
-        {t(platform === 'website' ? 'account:websiteTitle' : 'account:platformTitle', {
+      <StringInput
+        label={t(platform === 'website' ? 'account:websiteTitle' : 'account:platformTitle', {
           platform: platform,
         })}
-      </h2>
-      <div className="flex flex-row items-center mb-4">
-        <input
-          value={platformId}
-          onChange={(evt) => setPlatformId(evt.target.value)}
-          className="input w-full input-bordered flex flex-row"
-          type="text"
-          placeholder={account[platform]}
-        />
-      </div>
+        current={platformId}
+        update={setPlatformId}
+        valid={(val) => val.length > 0}
+        placeholder={'joostdecock'}
+        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/platform`} />}
+      />
       <SaveSettingsButton btnProps={{ onClick: save }} />
       <BackToAccountButton />
-      <Popout note>
-        <p className="text-sm font-bold">{t('platformWhy')}</p>
-      </Popout>
     </div>
   )
 }
