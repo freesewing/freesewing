@@ -11,6 +11,9 @@ import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
+import { MarkdownInput } from 'shared/components/inputs.mjs'
+import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { TipIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['account', 'status']
 
@@ -28,7 +31,7 @@ export const BioSettings = ({ title = false, welcome = false }) => {
   // Hooks
   const { account, setAccount } = useAccount()
   const backend = useBackend()
-  const { t } = useTranslation(ns)
+  const { t, i18n } = useTranslation(ns)
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   // State
@@ -57,31 +60,21 @@ export const BioSettings = ({ title = false, welcome = false }) => {
   return (
     <div className="max-w-xl xl:pl-4">
       <LoadingStatus />
-      {title ? <h1 className="text-4xl">{t('bioTitle')}</h1> : null}
-      <div className="tabs w-full">
-        <Tab id="edit" {...tabProps} />
-        <Tab id="preview" {...tabProps} />
-      </div>
-      <div className="flex flex-row items-center mt-4">
-        {activeTab === 'edit' ? (
-          <textarea
-            rows="5"
-            className="textarea textarea-bordered textarea-lg w-full"
-            placeholder={t('placeholder')}
-            onChange={(evt) => setBio(evt.target.value)}
-            value={bio}
-          />
-        ) : (
-          <div className="text-left px-4 border w-full">
-            <Markdown>{bio}</Markdown>
-          </div>
-        )}
-      </div>
+      <MarkdownInput
+        label={t('bioTitle')}
+        update={setBio}
+        current={bio}
+        placeholder={t('bioTitle')}
+        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/bio`} />}
+        labelBL={
+          <span className="flex flex-row items-center gap-1">
+            <TipIcon className="w-6 h-6 text-success" />
+            {t('mdSupport')}
+          </span>
+        }
+      />
       <SaveSettingsButton btnProps={{ onClick: save }} welcome={welcome} />
       {!welcome && <BackToAccountButton />}
-      <Popout tip compact>
-        {t('mdSupport')}
-      </Popout>
 
       {welcome ? (
         <>

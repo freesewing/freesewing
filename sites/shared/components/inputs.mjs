@@ -417,11 +417,13 @@ export const MarkdownInput = ({
   placeholder, // The placeholder content
   docs = false, // Docs to load, if any
   id = '', // An id to tie the input to the label
+  labelBL = false, // Bottom-Left label
+  labelBR = false, // Bottom-Right label
 }) => {
   const [activeTab, setActiveTab] = useState('edit')
 
   return (
-    <FormControl label={label} docs={docs} forId={id}>
+    <FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
       <div className="tabs w-full">
         {['edit', 'preview'].map((tab) => (
           <Tab id={tab} key={tab} label={tab} {...{ activeTab, setActiveTab }} />
