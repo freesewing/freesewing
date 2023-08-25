@@ -61,7 +61,7 @@ export const FormControl = ({
             onClick={() =>
               setModal(
                 <ModalWrapper flex="col" justify="top lg:justify-center" slideFrom="right">
-                  {docs}
+                  <div className="mdx max-w-prose">{docs}</div>
                 </ModalWrapper>
               )
             }
