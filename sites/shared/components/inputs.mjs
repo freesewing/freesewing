@@ -51,7 +51,7 @@ export const FormControl = ({
 
   const topLabelChildren = (
     <>
-      <span className="label-text text-lg font-bold mb-0">{label}</span>
+      <span className="label-text text-lg font-bold mb-0 text-inherit">{label}</span>
       {docs ? (
         <span className="label-text-alt">
           <button
@@ -141,6 +141,33 @@ export const StringInput = ({
     <input
       id={id}
       type="text"
+      placeholder={placeholder}
+      value={current}
+      onChange={(evt) => update(evt.target.value)}
+      className={`input w-full input-bordered ${
+        current === original ? 'input-secondary' : valid(current) ? 'input-success' : 'input-error'
+      }`}
+    />
+  </FormControl>
+)
+
+/*
+ * Input for email addresses
+ */
+export const EmailInput = ({
+  label, // Label to use
+  update, // onChange handler
+  valid, // Method that should return whether the value is valid or not
+  current, // The current value
+  original, // The original value
+  placeholder, // The placeholder text
+  docs = false, // Docs to load, if any
+  id = '', // An id to tie the input to the label
+}) => (
+  <FormControl label={label} docs={docs} forId={id}>
+    <input
+      id={id}
+      type="email"
       placeholder={placeholder}
       value={current}
       onChange={(evt) => update(evt.target.value)}

@@ -12,6 +12,7 @@ import { Robot } from 'shared/components/robot/index.mjs'
 import { EmailValidButton } from 'shared/components/buttons/email-valid-button.mjs'
 import { LeftIcon, HelpIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
+import { EmailInput } from 'shared/components/inputs.mjs'
 
 // Translation namespaces used on this page
 const namespaces = ['signup', 'errors']
@@ -34,8 +35,7 @@ export const SignUp = () => {
   const [result, setResult] = useState(false)
   const [loading, setLoading] = useState(false)
 
-  const updateEmail = (evt) => {
-    const value = evt.target.value
+  const updateEmail = (value) => {
     setEmail(value)
     const valid = (validateEmail(value) && validateTld(value)) || false
     setEmailValid(valid === true ? true : false)
@@ -132,15 +132,11 @@ export const SignUp = () => {
       ) : (
         <>
           <p className={`text-inherit ${loadingClasses}`}>{t('toReceiveSignupLink')}:</p>
-          <form onSubmit={signupHandler}>
-            <input
-              type="email"
-              name="email"
-              onChange={updateEmail}
+          <form onSubmit={signupHandler} className="text-accent-content">
+            <EmailInput
+              label={t('emailAddress')}
               placeholder={t('emailAddress')}
-              className={`input input-bordered w-full text-base-content ${loadingClasses}`}
-              autoFocus={true}
-              value={email}
+              update={updateEmail}
             />
             <EmailValidButton
               email={email}
