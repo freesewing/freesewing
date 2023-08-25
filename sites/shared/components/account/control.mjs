@@ -8,6 +8,9 @@ import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { BackToAccountButton, Choice, Icons, welcomeSteps } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
+import { ListInput } from 'shared/components/inputs.mjs'
+import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { ControlScore } from 'shared/components/control/score.mjs'
 
 export const ns = ['account', 'status']
 
@@ -45,7 +48,7 @@ export const useControlState = () => {
 }
 
 export const ControlSettings = ({ title = false, welcome = false, noBack = false }) => {
-  const { t } = useTranslation(ns)
+  const { t, i18n } = useTranslation(ns)
 
   const { selection, update, LoadingStatus } = useControlState()
 
@@ -59,17 +62,22 @@ export const ControlSettings = ({ title = false, welcome = false, noBack = false
   return (
     <div className="max-w-xl">
       <LoadingStatus />
-      {title ? <h1 className="text-4xl">{t('controlTitle')}</h1> : null}
-      {[1, 2, 3, 4, 5].map((val) => (
-        <Choice val={val} t={t} update={update} current={selection} key={val}>
-          <span className="block text-lg leading-5">{t(`control${val}.t`)}</span>
-          {selection > 1 ? (
-            <span className="block text-normal font-light normal-case pt-1 leading-5">
-              {t(`control${val}.d`)}
-            </span>
-          ) : null}
-        </Choice>
-      ))}
+      <ListInput
+        label={t('controlTitle')}
+        list={[1, 2, 3, 4, 5].map((val) => ({
+          val,
+          label: (
+            <div className="flex flex-row items-center w-full justify-between">
+              <span>{t(`control${val}.t`)}</span>
+              <ControlScore control={val} />
+            </div>
+          ),
+          desc: t(`control${val}.d`),
+        }))}
+        current={selection}
+        update={update}
+        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/control`} />}
+      />
       {welcome ? (
         <>
           <ContinueButton btnProps={{ href: nextHref }} link />
