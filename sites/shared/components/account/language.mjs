@@ -6,7 +6,9 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useLoadingStatus, ns as statusNs } from 'shared/hooks/use-loading-status.mjs'
 // Components
-import { BackToAccountButton, Choice } from './shared.mjs'
+import { BackToAccountButton, NumberBullet } from './shared.mjs'
+import { ListInput } from 'shared/components/inputs.mjs'
+import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 // Config
 import { siteConfig as conf } from 'site/site.config.mjs'
 
@@ -17,7 +19,7 @@ export const LanguageSettings = ({ title = false }) => {
   const { account, setAccount } = useAccount()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const backend = useBackend()
-  const { t } = useTranslation(ns)
+  const { t, i18n } = useTranslation(ns)
 
   // State
   const [language, setLanguage] = useState(account.language || 'en')
@@ -38,12 +40,26 @@ export const LanguageSettings = ({ title = false }) => {
   return (
     <div className="max-w-xl">
       <LoadingStatus />
-      {title ? <h2 className="text-4xl">{t('languageTitle')}</h2> : null}
-      {conf.languages.map((val) => (
-        <Choice val={val} t={t} update={update} current={language} key={val}>
-          <span className="block text-lg leading-5">{t(`locales:${val}`)}</span>
-        </Choice>
-      ))}
+      <ListInput
+        label={t('languageTitle')}
+        list={conf.languages.map((val) => ({
+          val,
+          label: (
+            <div className="flex flex-row items-center w-full justify-between">
+              <span>
+                {t(`locales:${val}`)}
+                <span className="px-2 opacity-50">|</span>
+                {t(`locales:${val}`, { lng: val })}
+              </span>
+              <NumberBullet nr={val} color="secondary" />
+            </div>
+          ),
+          desc: t('languageTitle', { lng: val }),
+        }))}
+        current={language}
+        update={update}
+        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/language`} />}
+      />
       <BackToAccountButton />
     </div>
   )

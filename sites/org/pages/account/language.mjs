@@ -2,6 +2,7 @@
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
+import { siteConfig } from 'site/site.config.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
@@ -49,7 +50,13 @@ export default AccountLanguagePage
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ns)),
+      // We are loading all languages here so we can show each language in its own language
+      ...(await serverSideTranslations(
+        locale,
+        ns,
+        null,
+        siteConfig.languages.filter((lang) => lang !== locale)
+      )),
       page: {
         locale,
         path: ['account', 'language'],
