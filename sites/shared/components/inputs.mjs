@@ -16,11 +16,6 @@ import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { isDegreeMeasurement } from 'config/measurements.mjs'
 import { measurementAsMm, measurementAsUnits, parseDistanceInput } from 'shared/utils.mjs'
 
-//import { Collapse } from 'shared/components/collapse.mjs'
-//import { PlusIcon, EditIcon } from 'shared/components/icons.mjs'
-//import { NumberInput } from 'shared/components/workbench/menus/shared/inputs.mjs'
-//import { useState, useCallback } from 'react'
-
 export const ns = ['account', 'measurements', 'designs']
 
 /*
@@ -50,36 +45,58 @@ export const FormControl = ({
   docs = false, // Optional top-right label
   labelBL = false, // Optional bottom-left label
   labelBR = false, // Optional bottom-right label
+  forId = false, // ID of the for element we are wrapping
 }) => {
   const { setModal } = useContext(ModalContext)
 
+  const topLabelChildren = (
+    <>
+      <span className="label-text text-lg font-bold mb-0">{label}</span>
+      {docs ? (
+        <span className="label-text-alt">
+          <button
+            className="btn btn-ghost btn-sm btn-circle hover:btn-secondary"
+            onClick={() =>
+              setModal(
+                <ModalWrapper flex="col" justify="top lg:justify-center" slideFrom="right">
+                  {docs}
+                </ModalWrapper>
+              )
+            }
+          >
+            <DocsIcon />
+          </button>
+        </span>
+      ) : null}
+    </>
+  )
+  const bottomLabelChildren = (
+    <>
+      {labelBL ? <span className="label-text-alt">{labelBL}</span> : null}
+      {labelBR ? <span className="label-text-alt">{labelBR}</span> : null}
+    </>
+  )
+
   return (
     <div className="form-control w-full mt-2">
-      <label className={`label pb-0 ${docs ? 'hover:cursor-help' : ''}`}>
-        <span className="label-text text-lg font-bold mb-0">{label}</span>
-        {docs ? (
-          <span className="label-text-alt">
-            <button
-              className="btn btn-ghost btn-sm btn-circle hover:btn-secondary"
-              onClick={() =>
-                setModal(
-                  <ModalWrapper flex="col" justify="top lg:justify-center" slideFrom="right">
-                    {docs}
-                  </ModalWrapper>
-                )
-              }
-            >
-              <DocsIcon />
-            </button>
-          </span>
-        ) : null}
-      </label>
+      {forId ? (
+        <label className="label pb-0" htmlFor={forId}>
+          {topLabelChildren}
+        </label>
+      ) : (
+        <div className="label pb-0">{topLabelChildren}</div>
+      )}
       {children}
       {labelBL || labelBR ? (
-        <label className="label">
-          {labelBL ? <span className="label-text-alt">{labelBL}</span> : null}
-          {labelBR ? <span className="label-text-alt">{labelBR}</span> : null}
-        </label>
+        forId ? (
+          <label className="label" htmlFor={forId}>
+            {bottomLabelChildren}
+          </label>
+        ) : (
+          <div className="label" htmlFor={forId}>
+            {bottomLabelChildren}
+          </div>
+        )
       ) : null}
     </div>
   )
@@ -118,9 +135,11 @@ export const StringInput = ({
   original, // The original value
   placeholder, // The placeholder text
   docs = false, // Docs to load, if any
+  id = '', // An id to tie the input to the label
 }) => (
-  <FormControl label={label} docs={docs}>
+  <FormControl label={label} docs={docs} forId={id}>
     <input
+      id={id}
       type="text"
       placeholder={placeholder}
       value={current}
@@ -141,12 +160,14 @@ export const DesignDropdown = ({
   current, // The current value
   docs = false, // Docs to load, if any
   firstOption = null, // Any first option to add in addition to designs
+  id = '', // An id to tie the input to the label
 }) => {
   const { t, i18n } = useTranslation(['designs'])
 
   return (
-    <FormControl label={label} docs={docs}>
+    <FormControl label={label} docs={docs} forId={id}>
       <select
+        id={id}
         className="select select-bordered w-full"
         onChange={(evt) => update(evt.target.value)}
         value={current}
@@ -175,6 +196,7 @@ export const ImageInput = ({
   imgType = 'showcase', // The image type
   imgSubid, // The image sub-id
   imgSlug, // The image slug or other unique identifier to use in the image ID
+  id = '', // An id to tie the input to the label
 }) => {
   const { t } = useTranslation(ns)
   const backend = useBackend()
@@ -239,7 +261,7 @@ export const ImageInput = ({
     )
 
   return (
-    <FormControl label={label} docs={docs}>
+    <FormControl label={label} docs={docs} forId={id}>
       <LoadingStatus />
       <div
         {...getRootProps()}
@@ -256,6 +278,7 @@ export const ImageInput = ({
       <p className="p-0 my-2 text-center">{t('or')}</p>
       <div className="flex flex-row items-center">
         <input
+          id={id}
           type="url"
           className="input input-secondary w-full input-bordered"
           placeholder={t('imgPasteUrlHere')}
@@ -319,11 +342,12 @@ export const MarkdownInput = ({
   update, // The onChange handler
   placeholder, // The placeholder content
   docs = false, // Docs to load, if any
+  id = '', // An id to tie the input to the label
 }) => {
   const [activeTab, setActiveTab] = useState('edit')
 
   return (
-    <FormControl label={label} docs={docs}>
+    <FormControl label={label} docs={docs} forId={id}>
       <div className="tabs w-full">
         {['edit', 'preview'].map((tab) => (
           <Tab id={tab} key={tab} label={tab} {...{ activeTab, setActiveTab }} />
@@ -332,6 +356,7 @@ export const MarkdownInput = ({
       <div className="flex flex-row items-center mt-4">
         {activeTab === 'edit' ? (
           <textarea
+            id={id}
             rows="5"
             className="textarea textarea-bordered textarea-lg w-full"
             value={current}
@@ -356,6 +381,7 @@ export const MeasieInput = ({
   update, // The onChange handler
   placeholder, // The placeholder content
   docs = false, // Docs to load, if any
+  id = '', // An id to tie the input to the label
 }) => {
   const { t } = useTranslation(['measurements'])
   const isDegree = isDegreeMeasurement(m)
@@ -411,8 +437,9 @@ export const MeasieInput = ({
    * See: https://github.com/facebook/react/issues/16554
    */
   return (
-    <FormControl label={t(m)} docs={docs}>
+    <FormControl label={t(m)} docs={docs} forId={id}>
       <input
+        id={id}
         type="number"
         placeholder={placeholder}
         value={localVal}
