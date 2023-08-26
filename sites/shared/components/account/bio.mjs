@@ -6,9 +6,7 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
-import Markdown from 'react-markdown'
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
-import { Popout } from 'shared/components/popout/index.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 import { MarkdownInput } from 'shared/components/inputs.mjs'
@@ -53,9 +51,6 @@ export const BioSettings = ({ title = false, welcome = false }) => {
     welcomeSteps[account.control].length > 5
       ? '/welcome/' + welcomeSteps[account.control][6]
       : '/docs/guide'
-
-  // Shared props for tabs
-  const tabProps = { activeTab, setActiveTab, t }
 
   return (
     <div className="max-w-xl xl:pl-4">

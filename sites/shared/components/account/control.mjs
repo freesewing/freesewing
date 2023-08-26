@@ -6,7 +6,7 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
-import { BackToAccountButton, Choice, Icons, welcomeSteps } from './shared.mjs'
+import { BackToAccountButton, Icons, welcomeSteps } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 import { ListInput } from 'shared/components/inputs.mjs'
 import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'

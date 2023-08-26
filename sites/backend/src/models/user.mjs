@@ -1687,7 +1687,6 @@ UserModel.prototype.migrate = async function ({ username, password, v2 }) {
       await this.createRecord(data)
     } catch (err) {
       log.warn(err, 'Could not create user record')
-      console.log(user)
       return this.setResponse(500, 'createUserFailed')
     }
     // That's the user, now load their people as sets
@@ -1696,7 +1695,8 @@ UserModel.prototype.migrate = async function ({ username, password, v2 }) {
       people: v2.people,
       patterns: v2.patterns,
     }
-    if (user.people) lut = await this.Set.migrate(user, this.record.id)
+    if (user.people) await this.Set.migrate(user, this.record.id)
+    //if (user.people) lut = await this.Set.migrate(user, this.record.id)
     //if (user.patterns) await this.Pattern.import(user, lut, this.record.id)
   } else {
     return this.setResponse(400, 'userExists')

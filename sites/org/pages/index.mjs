@@ -18,7 +18,6 @@ import {
   DocsIcon,
   HelpIcon,
   ChatIcon,
-  FreeSewingIcon,
 } from 'shared/components/icons.mjs'
 import { FreeSewingAnimation } from 'shared/components/animations/freesewing.mjs'
 import { HowDoesItWorkAnimation } from 'shared/components/animations/how-does-it-work.mjs'

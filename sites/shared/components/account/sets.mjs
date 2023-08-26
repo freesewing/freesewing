@@ -31,7 +31,6 @@ import Timeago from 'react-timeago'
 import { DisplayRow } from './shared.mjs'
 import { shortDate, cloudflareImageUrl, formatMm } from 'shared/utils.mjs'
 import { isDegreeMeasurement } from 'config/measurements.mjs'
-import { TextOnBg } from 'shared/components/text-on-bg.mjs'
 import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
 import {

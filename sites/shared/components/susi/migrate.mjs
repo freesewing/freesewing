@@ -1,4 +1,3 @@
-import axios from 'axios'
 // Hooks
 import { useState } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
@@ -9,10 +8,9 @@ import { useRouter } from 'next/router'
 // Components
 import Link from 'next/link'
 import { Robot } from 'shared/components/robot/index.mjs'
-import { LeftIcon, HelpIcon } from 'shared/components/icons.mjs'
 import { StringInput, PasswordInput } from 'shared/components/inputs.mjs'
-import { Spinner } from 'shared/components/spinner.mjs'
 import { FreeSewingAnimation } from 'shared/components/animations/freesewing.mjs'
+import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
 // Translation namespaces used on this page
 export const ns = ['signup', 'errros', 'account']
@@ -118,6 +116,7 @@ export const Migrate = () => {
           current={username}
           update={setUsername}
           valid={(val) => val.length > 1}
+          docs={<DynamicOrgDocs language={i18n.language} path={`site/account/username`} />}
         />
         <PasswordInput
           label={t('account:password')}
@@ -125,6 +124,7 @@ export const Migrate = () => {
           current={password}
           update={setPassword}
           valid={(val) => val.length > 1}
+          docs={<DynamicOrgDocs language={i18n.language} path={`site/account/password`} />}
         />
         <button
           className="btn btn-primary btn-lg w-full mt-4"
