@@ -39,6 +39,7 @@ export const GithubSettings = () => {
       <LoadingStatus />
       <h2 className="text-4xl">{t('githubTitle')}</h2>
       <StringInput
+        id="account-github-email"
         label={t('email')}
         current={githubEmail}
         update={setGithubEmail}
@@ -47,6 +48,7 @@ export const GithubSettings = () => {
         docs={<DynamicOrgDocs language={i18n.language} path={`site/account/github`} />}
       />
       <StringInput
+        id="account-github-username"
         label={t('username')}
         current={githubUsername}
         update={setGithubUsername}

@@ -39,6 +39,7 @@ export const PlatformSettings = ({ platform }) => {
     <div className="max-w-xl">
       <LoadingStatus />
       <StringInput
+        id={`account-${platform}`}
         label={t(platform === 'website' ? 'account:websiteTitle' : 'account:platformTitle', {
           platform: platform,
         })}

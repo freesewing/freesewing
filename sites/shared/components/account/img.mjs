@@ -45,6 +45,7 @@ export const ImgSettings = ({ welcome = false }) => {
         />
       ) : null}
       <PassiveImageInput
+        id="account-img"
         label={t('image')}
         placeholder={'image'}
         update={setImg}

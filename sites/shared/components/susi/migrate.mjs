@@ -111,6 +111,7 @@ export const Migrate = () => {
       <p className="text-inherit">{t('migrateV2Desc')}</p>
       <div className="text-base-content">
         <StringInput
+          id="migrate-username"
           label={t('account:username')}
           placeholder={t('account:username')}
           current={username}
@@ -119,6 +120,7 @@ export const Migrate = () => {
           docs={<DynamicOrgDocs language={i18n.language} path={`site/account/username`} />}
         />
         <PasswordInput
+          id="migrate-password"
           label={t('account:password')}
           placeholder={t('password')}
           current={password}

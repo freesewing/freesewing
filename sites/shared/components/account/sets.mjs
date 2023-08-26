@@ -430,6 +430,7 @@ export const Mset = ({ id, publicOnly = false }) => {
 
         return (
           <MeasieInput
+            id={`measie-${m}`}
             key={m}
             m={m}
             docs={measieDocs[m]}
@@ -447,6 +448,7 @@ export const Mset = ({ id, publicOnly = false }) => {
       {/* Name is always shown */}
       <span id="name"></span>
       <StringInput
+        id="set-name"
         label={t('name')}
         update={setName}
         current={name}
@@ -460,6 +462,7 @@ export const Mset = ({ id, publicOnly = false }) => {
       <span id="image"></span>
       {account.control >= conf.account.sets.img ? (
         <PassiveImageInput
+          id="set-img"
           label={t('image')}
           update={setImage}
           current={image}
@@ -472,6 +475,7 @@ export const Mset = ({ id, publicOnly = false }) => {
       <span id="public"></span>
       {account.control >= conf.account.sets.public ? (
         <ListInput
+          id="set-public"
           label={t('public')}
           update={setIsPublic}
           docs={docs.public}
@@ -508,6 +512,7 @@ export const Mset = ({ id, publicOnly = false }) => {
       <span id="units"></span>
       {account.control >= conf.account.sets.units ? (
         <ListInput
+          id="set-units"
           label={t('units')}
           docs={docs.units}
           update={setImperial}
@@ -541,6 +546,7 @@ export const Mset = ({ id, publicOnly = false }) => {
       <span id="notes"></span>
       {account.control >= conf.account.sets.notes ? (
         <MarkdownInput
+          id="set-notes"
           label={t('notes')}
           update={setNotes}
           docs={docs.notes}

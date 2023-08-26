@@ -55,6 +55,7 @@ export const BioSettings = ({ welcome = false }) => {
     <div className="max-w-xl xl:pl-4">
       <LoadingStatus />
       <MarkdownInput
+        id="account-bio"
         label={t('bioTitle')}
         update={setBio}
         current={bio}

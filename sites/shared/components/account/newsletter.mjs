@@ -46,6 +46,7 @@ export const NewsletterSettings = ({ welcome = false }) => {
     <div className="max-w-xl">
       <LoadingStatus />
       <ListInput
+        id="account-newsletter"
         label={t('newsletterTitle')}
         list={['yes', 'no'].map((val) => ({
           val,

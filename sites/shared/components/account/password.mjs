@@ -40,6 +40,7 @@ export const PasswordSettings = ({ welcome = false }) => {
     <div className="max-w-xl">
       <LoadingStatus />
       <PasswordInput
+        id="account-password"
         label={t('passwordTitle')}
         current={password}
         update={setPassword}

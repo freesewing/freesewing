@@ -54,6 +54,7 @@ export const UsernameSettings = ({ welcome = false }) => {
     <div className="max-w-xl">
       <LoadingStatus />
       <StringInput
+        id="account-username"
         label={t('usernameTitle')}
         current={username}
         update={update}

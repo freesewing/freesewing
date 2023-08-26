@@ -215,6 +215,7 @@ export const SupportForm = () => {
       <LoadingStatus />
       <SupportType type={type} active={true} update={() => setType(false)} t={t} />
       <StringInput
+        id="support-title"
         label={t('title')}
         update={setTitle}
         current={title}
@@ -243,6 +244,7 @@ export const SupportForm = () => {
         />
       )}
       <MarkdownInput
+        id="support-body"
         label={t('description')}
         update={setBody}
         current={body}
@@ -261,6 +263,7 @@ export const SupportForm = () => {
         return (
           <Fragment key={key}>
             <ActiveImageInput
+              id={`support-img-${key}`}
               label={`${t('image')} ${key}`}
               update={(val) => setSingleImage(key, val)}
               current={images[key]}

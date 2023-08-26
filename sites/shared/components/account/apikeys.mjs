@@ -185,6 +185,7 @@ const NewKey = ({ account, setGenerate, backend }) => {
       ) : (
         <>
           <StringInput
+            id="apikey-name"
             label={t('keyName')}
             docs={docs.name}
             current={name}
@@ -196,6 +197,7 @@ const NewKey = ({ account, setGenerate, backend }) => {
             <ExpiryPicker {...{ t, expires, setExpires }} />
           </FormControl>
           <ListInput
+            id="apikey-level"
             label={t('keyLevel')}
             docs={docs.level}
             list={levels.map((l) => ({

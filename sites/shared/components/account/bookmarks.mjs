@@ -72,6 +72,7 @@ export const NewBookmark = () => {
     <div className="max-w-2xl xl:pl-4">
       <LoadingStatus />
       <StringInput
+        id="bookmark-title"
         label={t('title')}
         docs={docs.title}
         update={setTitle}
@@ -80,6 +81,7 @@ export const NewBookmark = () => {
         placeholder={t('account')}
       />
       <StringInput
+        id="bookmark-url"
         label={t('location')}
         docs={docs.location}
         update={setUrl}

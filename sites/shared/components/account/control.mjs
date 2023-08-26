@@ -63,6 +63,7 @@ export const ControlSettings = ({ welcome = false, noBack = false }) => {
     <div className="max-w-xl">
       <LoadingStatus />
       <ListInput
+        id="account-control"
         label={t('controlTitle')}
         list={[1, 2, 3, 4, 5].map((val) => ({
           val,

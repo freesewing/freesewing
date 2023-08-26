@@ -46,6 +46,7 @@ export const ImperialSettings = ({ welcome = false }) => {
     <div className="max-w-xl">
       <LoadingStatus />
       <ListInput
+        id="account-units"
         label={t('unitsTitle')}
         list={['metric', 'imperial'].map((val) => ({
           val,

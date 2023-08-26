@@ -51,6 +51,7 @@ export const EmailSettings = () => {
       ) : (
         <>
           <EmailInput
+            id="account-email"
             label={t('account:email')}
             placeholder={t('account:email')}
             update={setEmail}

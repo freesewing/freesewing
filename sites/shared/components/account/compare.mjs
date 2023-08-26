@@ -49,6 +49,7 @@ export const CompareSettings = ({ welcome = false }) => {
     <div className="max-w-xl">
       <LoadingStatus />
       <ListInput
+        id="account-compare"
         label={t('compareTitle')}
         list={['yes', 'no'].map((val) => ({
           val,

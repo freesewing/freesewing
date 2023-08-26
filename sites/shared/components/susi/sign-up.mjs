@@ -134,6 +134,7 @@ export const SignUp = () => {
           <p className={`text-inherit ${loadingClasses}`}>{t('toReceiveSignupLink')}:</p>
           <form onSubmit={signupHandler} className="text-accent-content">
             <EmailInput
+              id="signup-email"
               label={t('emailAddress')}
               placeholder={t('emailAddress')}
               update={updateEmail}

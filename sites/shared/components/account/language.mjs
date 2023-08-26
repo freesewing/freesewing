@@ -41,6 +41,7 @@ export const LanguageSettings = () => {
     <div className="max-w-xl">
       <LoadingStatus />
       <ListInput
+        id="account-language"
         label={t('languageTitle')}
         list={conf.languages.map((val) => ({
           val,
