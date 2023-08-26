@@ -397,7 +397,7 @@ export const cloudflareImageUrl = ({ id = 'default-avatar', variant = 'public' }
   /*
    * Return something default so that people will actually change it
    */
-  if (id === 'default-avatar') return cloudflareConfig.dflt
+  if (!id || id === 'default-avatar') return cloudflareConfig.dflt
 
   /*
    * If the variant is invalid, set it to the smallest thumbnail so

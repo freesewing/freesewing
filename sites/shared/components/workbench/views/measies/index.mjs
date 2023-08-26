@@ -1,19 +1,25 @@
+// Dependencies
+import { nsMerge } from 'shared/utils.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
-import { SetPicker, ns as setsNs } from 'shared/components/sets/set-picker.mjs'
+import { designMeasurements } from 'shared/utils.mjs'
+// Hooks
+import { useTranslation } from 'next-i18next'
+import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
+// Components
+import { SetPicker, ns as setsNs } from 'shared/components/account/sets.mjs'
 import { Tabs, Tab } from 'shared/components/mdx/tabs.mjs'
 import { MeasiesEditor } from './editor.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
-import { designMeasurements } from 'shared/utils.mjs'
-import { useTranslation } from 'next-i18next'
-import { useToast } from 'shared/hooks/use-toast.mjs'
+import { SetButton } from 'shared/components/account/sets.mjs'
 
-export const ns = [...authNs, setsNs]
+export const ns = nsMerge(authNs, setsNs)
 
-const tabNames = ['chooseNewSet', 'editCurrentMeasies']
+const tabNames = ['chooseASet', 'editCurrentMeasies']
+
 export const MeasiesView = ({ design, Design, settings, update, missingMeasurements, setView }) => {
   const { t } = useTranslation(['workbench'])
-  const toast = useToast()
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   const tabs = tabNames.map((n) => t(n)).join(',')
 
@@ -23,29 +29,26 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
       [['units'], set.imperial ? 'imperial' : 'metric'],
     ])
     setView('draft')
-    toast.success(t('appliedMeasies'))
+    setLoadingStatus([true, 'appliedMeasies', true, true])
   }
 
   return (
-    <div className="m-6">
-      <h1 className="max-w-6xl m-auto text-center">{t('measurements')}</h1>
+    <div className="max-w-7xl mx-auto my-6">
+      <LoadingStatus />
+      <h1 className="m-auto text-center">{t('account:measurements')}</h1>
       {missingMeasurements ? (
-        <Popout note compact dense noP>
-          <h5>{t('weLackSomeMeasies')}:</h5>
-          <p>
-            <b>{t('youCanPickOrEnter')}</b>
-          </p>
-          <Collapse title={t('seeMissingMeasies')}>
-            <ul className="list list-inside list-disc ml-4">
-              {missingMeasurements.map((m) => (
-                <li key={m}>{m}</li>
-              ))}
-            </ul>
-          </Collapse>
+        <Popout note dense noP>
+          <h5>{t('weLackSomeMeasies', { nr: missingMeasurements.length })}</h5>
+          <ol className="list list-inside ml-4 list-decimal">
+            {missingMeasurements.map((m, i) => (
+              <li key={i}>{t(`measurements:${m}`)}</li>
+            ))}
+          </ol>
+          <p className="text-lg">{t('youCanPickOrEnter')}</p>
         </Popout>
       ) : (
-        <Popout tip compact dense noP>
-          <h5>{t('measiesOk')}</h5>
+        <Popout note compact ense oP>
+          <span className="text-lg">{t('measiesOk')}</span>
         </Popout>
       )}
       <Tabs tabs={tabs}>

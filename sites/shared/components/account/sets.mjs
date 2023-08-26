@@ -4,6 +4,15 @@ import { useTranslation } from 'next-i18next'
 import { measurements } from 'config/measurements.mjs'
 import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
 import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewing.config.mjs'
+import { siteConfig } from 'site/site.config.mjs'
+import {
+  shortDate,
+  cloudflareImageUrl,
+  formatMm,
+  hasRequiredMeasurements,
+  capitalize,
+} from 'shared/utils.mjs'
+import orderBy from 'lodash.orderby'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
@@ -12,8 +21,11 @@ import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
+import { Popout } from 'shared/components/popout/index.mjs'
+import { Tag } from 'shared/components/tag.mjs'
 import { BackToAccountButton } from './shared.mjs'
 import { AnchorLink, PageLink, Link } from 'shared/components/link.mjs'
+import { V3Wip } from 'shared/components/v3-wip.mjs'
 import {
   OkIcon,
   NoIcon,
@@ -24,12 +36,13 @@ import {
   MeasieIcon,
   CalendarIcon,
   PlusIcon,
+  WarningIcon,
+  FilterIcon,
 } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import Markdown from 'react-markdown'
 import Timeago from 'react-timeago'
 import { DisplayRow } from './shared.mjs'
-import { shortDate, cloudflareImageUrl, formatMm } from 'shared/utils.mjs'
 import { isDegreeMeasurement } from 'config/measurements.mjs'
 import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
@@ -43,7 +56,7 @@ import {
   ns as inputNs,
 } from 'shared/components/inputs.mjs'
 
-export const ns = [inputNs, 'account', 'patterns', 'status', 'measurements']
+export const ns = [inputNs, 'account', 'patterns', 'status', 'measurements', 'sets']
 
 export const NewSet = () => {
   // Hooks
@@ -94,19 +107,44 @@ export const NewSet = () => {
 export const MeasieVal = ({ val, m, imperial }) =>
   isDegreeMeasurement(m) ? <span>{val}°</span> : <span>{formatMm(val, imperial)}</span>
 
-export const MsetBanner = ({ set, control, onClick = false, href = false }) => {
+export const MsetBanner = ({
+  set,
+  control,
+  onClick = false,
+  href = false,
+  useA = false,
+  design = false,
+  language = false,
+}) => {
   const { t, i18n } = useTranslation(ns)
+
+  const wrapperProps = {
+    className:
+      'bg-base-300 w-full mb-2 mx-auto flex flex-col items-start text-center justify-center rounded-none md:rounded shadow py-4',
+    style: {
+      backgroundImage: `url(${cloudflareImageUrl({ type: 'w1000', id: set.img })})`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '50%',
+    },
+  }
+  if (!set.img || set.img === 'default-avatar')
+    wrapperProps.style.backgroundPosition = 'bottom right'
+
   const info = []
-  if (control > 1)
+  if (control > 1) {
     info.push([
       <CalendarIcon key="a" />,
       <b key="b">{shortDate(i18n.language, set.createdAt, false)}</b>,
     ])
-  info.push([
-    <MeasieIcon key="c" />,
-    <b key="d">{(set.measies ? Object.keys(set.measies).length : 0) + ' ' + t('measies')}</b>,
-  ])
-  if (control > 2)
+    if (!design) {
+      info.push([
+        <MeasieIcon key="c" />,
+        <b key="d">{(set.measies ? Object.keys(set.measies).length : 0) + ' ' + t('measies')}</b>,
+      ])
+    }
+  }
+  if (!design && control > 2) {
     info.push([
       set.public ? (
         <OkIcon className="w-6 h-6 text-success" stroke={4} key="e" />
@@ -115,41 +153,77 @@ export const MsetBanner = ({ set, control, onClick = false, href = false }) => {
       ),
       <b key="f">{t(set.public ? 'publicSet' : 'privateSet')}</b>,
     ])
+  }
+
+  const infoClasses =
+    'flex flex-row items-center gap-2 p-4 rounded py-1 mt-2 rounded-l-none text-lg leading-6 bg-base-100 bg-opacity-70'
+
+  let note = null
+  if (design) {
+    const [hasMeasies, missingMeasies] = hasRequiredMeasurements(
+      designMeasurements[design],
+      set.measies,
+      true
+    )
+    if (!hasMeasies) {
+      note = (
+        <div
+          className={`bg-warning bg-opacity-90 text-warning-content w-full text-center py-3 text-xl font-bold mt-4`}
+        >
+          {t('setLacksMeasiesForDesign', { design: t(`designs:${design}.t`) })}
+        </div>
+      )
+    } else {
+      note = (
+        <div className={infoClasses}>
+          <OkIcon className="w-6 h-6" stroke={4} />
+          <b>{t('setHasMeasiesForDesign', { design: t(`designs:${design}.t`) })}</b>
+        </div>
+      )
+    }
+  }
+
   const inner = (
     <>
-      <h2 className="bg-base-100 px-4 rounded-lg bg-opacity-60 py-2 rounded-l-none">{set.name}</h2>
-      {info.map((item) => (
-        <div
-          className="flex flex-row flex-wrap gap-2 bg-base-100 p-4 rounded bg-opacity-60 py-1 mt-2 rounded-l-none text-lg"
-          key={item[0]}
-        >
+      <h2 className="bg-base-100 px-4 rounded-lg bg-opacity-60 py-2 rounded-l-none">
+        {language ? set[`name${capitalize(language)}`] : set.name}
+      </h2>
+      {info.map((item, i) => (
+        <div className={infoClasses} key={i}>
           {item[0]}
           {item[1]}
         </div>
       ))}
+      {note}
     </>
   )
-  const props = {
-    className:
-      'bg-base-300 w-full mb-2 mx-auto flex flex-col items-start text-center justify-center rounded shadow py-4',
-    style: {
-      backgroundImage: `url(${cloudflareImageUrl({ type: 'w1000', id: set.img })})`,
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundPosition: '50%',
-    },
-  }
-  if (set.img === 'default-avatar') props.style.backgroundPosition = 'bottom right'
 
-  return onClick ? (
-    <button {...props} onClick={onClick}>
-      {inner}
-    </button>
-  ) : (
-    <Link {...props} href={href}>
-      {inner}
-    </Link>
-  )
+  // Is it a button with an onClick handler?
+  if (onClick)
+    return (
+      <button {...wrapperProps} onClick={() => onClick(set)}>
+        {inner}
+      </button>
+    )
+
+  // Returns a link to an internal page
+  if (href && !useA)
+    return (
+      <Link {...wrapperProps} href={href}>
+        {inner}
+      </Link>
+    )
+
+  // Returns a link to an external page
+  if (href && useA)
+    return (
+      <a {...wrapperProps} href={href}>
+        {inner}
+      </a>
+    )
+
+  // Returns a div
+  return <div {...wrapperProps}>{inner}</div>
 }
 
 export const Mset = ({ id, publicOnly = false }) => {
@@ -257,7 +331,6 @@ export const Mset = ({ id, publicOnly = false }) => {
       setLoadingStatus([true, 'nailedIt', true, true])
     } else setLoadingStatus([true, 'backendError', true, false])
   }
-
   const heading = (
     <div className="flex flex-row flex-wrap gap-4 text-sm items-center justify-between mb-2">
       <LoadingStatus />
@@ -677,5 +750,283 @@ export const Sets = () => {
       </table>
       <BackToAccountButton />
     </div>
+  )
+}
+
+export const SetCard = ({
+  set,
+  language,
+  requiredMeasies = [],
+  href = false,
+  onClick = false,
+  useA = false,
+}) => {
+  // Hooks
+  const { t } = useTranslation(['sets'])
+
+  const [hasMeasies, missingMeasies] = hasRequiredMeasurements(requiredMeasies, set.measies, true)
+
+  const wrapperProps = {
+    className:
+      'bg-base-300 w-full mb-2 mx-auto flex flex-col items-start text-center justify-center rounded shadow py-4',
+    style: {
+      backgroundImage: `url(${cloudflareImageUrl({ type: 'w1000', id: set.img })})`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '50%',
+    },
+  }
+  if (set.img === 'default-avatar') wrapperProps.style.backgroundPosition = 'bottom right'
+
+  const setProps = { set, t, hasMeasies, language }
+
+  const inner = hasMeasies ? null : (
+    <div className="flex flex-row gap-2 items-center">
+      <WarningIcon className="w-6 h-6 shrink-0 text-error" />
+      <span>{t('setLacksMeasiesForDesign', { design: t(`designs:${design}.t`) })}</span>
+    </div>
+  )
+
+  // Is it a button with an onClick handler?
+  if (onClick)
+    return (
+      <button {...wrapperProps} onClick={onClick}>
+        {inner}
+      </button>
+    )
+
+  // Returns a link to an internal page
+  if (href && !useA)
+    return (
+      <Link {...wrapperProps} href={href}>
+        {inner}
+      </Link>
+    )
+
+  // Returns a link to an external page
+  if (href && useA)
+    return (
+      <a {...wrapperProps} href={href}>
+        {inner}
+      </a>
+    )
+
+  // Returns a div
+  return <div {...wrapperProps}>{inner}</div>
+}
+
+export const MsetButton = (props) => <MsetBanner {...props} href={false} />
+export const MsetLink = (props) => <MsetBanner {...props} onClick={false} useA={false} />
+export const MsetA = (props) => <MsetBanner {...props} onClick={false} useA={true} />
+
+export const UserSetPicker = ({ design, t, href, clickHandler }) => {
+  // Hooks
+  const backend = useBackend()
+  const { control } = useAccount()
+
+  // State
+  const [sets, setSets] = useState({})
+
+  // Effects
+  useEffect(() => {
+    const getSets = async () => {
+      const result = await backend.getSets()
+      if (result.success) {
+        const all = {}
+        for (const set of result.data.sets) all[set.id] = set
+        setSets(all)
+      }
+    }
+    getSets()
+  }, [backend])
+
+  let hasSets = false
+  const okSets = []
+  const lackingSets = []
+  if (Object.keys(sets).length > 0) {
+    hasSets = true
+    for (const setId in sets) {
+      const [hasMeasies, missingMeasies] = hasRequiredMeasurements(
+        measurements[design],
+        sets[setId].measies,
+        true
+      )
+      if (hasMeasies) okSets.push(sets[setId])
+      else lackingSets.push(sets[setId])
+    }
+  }
+
+  if (!hasSets)
+    return (
+      <div className="w-full max-w-3xl mx-auto">
+        <Popout tip>
+          <h5>{t('account:noOwnSets')}</h5>
+          <p className="text-lg">{t('account:pleaseMtm')}</p>
+          <p className="text-lg">{t('account:noOwnSetsMsg')}</p>
+          <p className="text-center md:text-right">
+            <Link
+              className="btn btn-primary capitalize w-full md:w-auto"
+              bottom
+              primary
+              href="/new/set"
+            >
+              <PlusIcon />
+              {t('account:newSet')}
+            </Link>
+          </p>
+        </Popout>
+      </div>
+    )
+
+  return (
+    <>
+      <h3>{t('yourSets')}</h3>
+      {okSets.length > 0 && (
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-2">
+          {okSets.map((set, i) => (
+            <MsetButton
+              {...{ set, control, design }}
+              onClick={clickHandler}
+              requiredMeasies={measurements[design]}
+              key={set.id}
+            />
+          ))}
+        </div>
+      )}
+      {lackingSets.length > 0 && (
+        <div className="my-4">
+          <h4>Some of your sets lack the measurments required to generate this pattern</h4>
+          <ul className="list">
+            {lackingSets.map((set, i) => (
+              <li key={set.id} className="inline pr-4">
+                <PageLink href={`/account/sets/${set.id}`} txt={set.name} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </>
+  )
+}
+
+export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
+  // Hooks
+  const backend = useBackend()
+  const { t, i18n } = useTranslation('sets')
+  const { control } = useAccount()
+
+  // State
+  const [curatedSets, setCuratedSets] = useState([])
+  const [filter, setFilter] = useState([])
+  const [tags, setTags] = useState([])
+
+  // Effects
+  useEffect(() => {
+    const getCuratedSets = async () => {
+      const result = await backend.getCuratedSets()
+      if (result.success) {
+        const all = []
+        const allTags = new Set()
+        for (const set of result.data.curatedSets) {
+          all.push(set)
+          for (const tag of set[`tags${capitalize(language)}`]) allTags.add(tag)
+        }
+        setCuratedSets(all)
+        setTags([...allTags])
+      }
+    }
+    getCuratedSets()
+  }, [backend, language])
+
+  const addFilter = (tag) => {
+    const newFilter = [...filter, tag]
+    setFilter(newFilter)
+  }
+
+  const removeFilter = (tag) => {
+    const newFilter = filter.filter((t) => t !== tag)
+    setFilter(newFilter)
+  }
+
+  const applyFilter = () => {
+    const newList = new Set()
+    for (const set of curatedSets) {
+      const setTags = []
+      for (const lang of siteConfig.languages) {
+        const key = `tags${capitalize(lang)}`
+        if (set[key]) setTags.push(...set[key])
+      }
+      let match = 0
+      for (const tag of filter) {
+        if (setTags.includes(tag)) match++
+      }
+      if (match === filter.length) newList.add(set)
+    }
+
+    return [...newList]
+  }
+
+  const list = applyFilter()
+
+  // Need to sort designs by their translated title
+  const translated = {}
+  for (const d of list) translated[t(`${d}.t`)] = d
+
+  return (
+    <>
+      <h3>{t('account:curatedSets')}</h3>
+      <V3Wip />
+      {tags.map((tag) => (
+        <Tag onClick={() => addFilter(tag)} tag={tag} key={tag}>
+          {tag}
+        </Tag>
+      ))}
+      <div className="my-2 p-2 px-4 border rounded-lg bg-secondary bg-opacity-10 max-w-xl">
+        <div className="flex flex-row items-center justify-between gap-2">
+          <FilterIcon className="w-6 h-6 text-secondary" />
+          <span>
+            {list.length} / {curatedSets.length}
+          </span>
+          <button onClick={() => setFilter([])} className="btn btn-secondary btn-sm">
+            clear
+          </button>
+        </div>
+        {filter.map((tag) => (
+          <Tag onClick={() => removeFilter(tag)} color="success" hoverColor="error" key={tag}>
+            {tag}
+          </Tag>
+        ))}
+      </div>
+      <div className="flex flex-col lg:grid lg:grid-cols-2 gap-2">
+        {orderBy(list, ['name'], ['asc']).map((set) => (
+          <MsetButton
+            key={set.id}
+            {...{ set, control, design }}
+            onClick={clickHandler}
+            requiredMeasies={measurements[design]}
+            language={i18n.language}
+            key={set.id}
+          />
+        ))}
+      </div>
+    </>
+  )
+}
+
+export const BookmarkedSetPicker = ({ t }) => <V3Wip />
+
+export const SetPicker = ({ design, href = false, clickHandler = false }) => {
+  const { t, i18n } = useTranslation('sets')
+  const { language } = i18n
+
+  const pickerProps = { design, t, language, href, clickHandler }
+
+  return (
+    <>
+      <h2>{t('chooseSet')}</h2>
+      <UserSetPicker {...pickerProps} />
+      <BookmarkedSetPicker {...pickerProps} />
+      <CuratedSetPicker {...pickerProps} />
+    </>
   )
 }
