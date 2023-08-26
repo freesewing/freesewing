@@ -5,7 +5,6 @@ import { useTranslation } from 'next-i18next'
 import Link from 'next/link'
 import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewing.config.mjs'
 import {
-  DesignIcon,
   MeasieIcon,
   SignoutIcon,
   UserIcon,
@@ -37,6 +36,7 @@ import {
   ReloadIcon,
   OkIcon,
   NoIcon,
+  PageIcon,
 } from 'shared/components/icons.mjs'
 import { cloudflareImageUrl, capitalize } from 'shared/utils.mjs'
 import { ControlScore } from 'shared/components/control/score.mjs'
@@ -46,7 +46,7 @@ export const ns = ['account', 'i18n']
 const itemIcons = {
   bookmarks: <BookmarkIcon />,
   sets: <MeasieIcon />,
-  patterns: <DesignIcon />,
+  patterns: <PageIcon />,
   apikeys: <KeyIcon />,
   username: <UserIcon />,
   email: <EmailIcon />,
@@ -272,12 +272,12 @@ export const AccountLinks = () => {
 
       <div className="flex flex-row flex-wrap gap-2 md:gap-4 justify-end">
         {control > 1 && (
-          <Link className={`${btnClasses} btn-primary md:w-64 w-full`} href="/profile">
+          <Link className={`${btnClasses} btn-secondary md:w-64 w-full`} href="/profile">
             <UserIcon />
             {t('yourProfile')}
           </Link>
         )}
-        <button className={`${btnClasses} btn-warning md:w-64 w-full`} onClick={() => signOut()}>
+        <button className={`${btnClasses} btn-neutral md:w-64 w-full`} onClick={() => signOut()}>
           <SignoutIcon />
           {t('signOut')}
         </button>
