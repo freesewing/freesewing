@@ -15,7 +15,7 @@ import { SetButton } from 'shared/components/account/sets.mjs'
 
 export const ns = nsMerge(authNs, setsNs)
 
-const tabNames = ['chooseASet', 'editCurrentMeasies']
+const tabNames = ['account:chooseASet', 'editCurrentMeasies']
 
 export const MeasiesView = ({ design, Design, settings, update, missingMeasurements, setView }) => {
   const { t } = useTranslation(['workbench'])

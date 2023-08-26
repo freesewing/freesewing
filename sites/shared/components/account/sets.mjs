@@ -11,6 +11,8 @@ import {
   formatMm,
   hasRequiredMeasurements,
   capitalize,
+  scrollTo,
+  horFlexClasses,
 } from 'shared/utils.mjs'
 import orderBy from 'lodash.orderby'
 // Hooks
@@ -24,7 +26,7 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { Tag } from 'shared/components/tag.mjs'
 import { BackToAccountButton } from './shared.mjs'
-import { AnchorLink, PageLink, Link } from 'shared/components/link.mjs'
+import { AnchorLink, PageLink, Link, linkClasses } from 'shared/components/link.mjs'
 import { V3Wip } from 'shared/components/v3-wip.mjs'
 import {
   OkIcon,
@@ -38,6 +40,7 @@ import {
   PlusIcon,
   WarningIcon,
   FilterIcon,
+  CameraIcon,
 } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import Markdown from 'react-markdown'
@@ -107,7 +110,7 @@ export const NewSet = () => {
 export const MeasieVal = ({ val, m, imperial }) =>
   isDegreeMeasurement(m) ? <span>{val}°</span> : <span>{formatMm(val, imperial)}</span>
 
-export const MsetBanner = ({
+export const MsetCard = ({
   set,
   control,
   onClick = false,
@@ -120,7 +123,7 @@ export const MsetBanner = ({
 
   const wrapperProps = {
     className:
-      'bg-base-300 w-full mb-2 mx-auto flex flex-col items-start text-center justify-center rounded-none md:rounded shadow py-4',
+      'bg-base-300 aspect-square max-h-96 max-w-96 mb-2 mx-auto flex flex-col items-start text-center justify-between rounded-none md:rounded shadow',
     style: {
       backgroundImage: `url(${cloudflareImageUrl({ type: 'w1000', id: set.img })})`,
       backgroundSize: 'cover',
@@ -131,70 +134,32 @@ export const MsetBanner = ({
   if (!set.img || set.img === 'default-avatar')
     wrapperProps.style.backgroundPosition = 'bottom right'
 
-  const info = []
-  if (control > 1) {
-    info.push([
-      <CalendarIcon key="a" />,
-      <b key="b">{shortDate(i18n.language, set.createdAt, false)}</b>,
-    ])
-    if (!design) {
-      info.push([
-        <MeasieIcon key="c" />,
-        <b key="d">{(set.measies ? Object.keys(set.measies).length : 0) + ' ' + t('measies')}</b>,
-      ])
-    }
-  }
-  if (!design && control > 2) {
-    info.push([
-      set.public ? (
-        <OkIcon className="w-6 h-6 text-success" stroke={4} key="e" />
-      ) : (
-        <NoIcon className="w-6 h-6 text-error" stroke={3} key="e" />
-      ),
-      <b key="f">{t(set.public ? 'publicSet' : 'privateSet')}</b>,
-    ])
-  }
-
-  const infoClasses =
-    'flex flex-row items-center gap-2 p-4 rounded py-1 mt-2 rounded-l-none text-lg leading-6 bg-base-100 bg-opacity-70'
-
-  let note = null
+  let note = <span></span>
   if (design) {
     const [hasMeasies, missingMeasies] = hasRequiredMeasurements(
       designMeasurements[design],
       set.measies,
       true
     )
-    if (!hasMeasies) {
-      note = (
-        <div
-          className={`bg-warning bg-opacity-90 text-warning-content w-full text-center py-3 text-xl font-bold mt-4`}
-        >
-          {t('setLacksMeasiesForDesign', { design: t(`designs:${design}.t`) })}
-        </div>
-      )
-    } else {
-      note = (
-        <div className={infoClasses}>
-          <OkIcon className="w-6 h-6" stroke={4} />
-          <b>{t('setHasMeasiesForDesign', { design: t(`designs:${design}.t`) })}</b>
-        </div>
-      )
-    }
+    const noteClasses =
+      'bg-opacity-90 w-full text-center py-2 font-bold px-2 rounded rounded-b-none leading-4 text-sm'
+    note = hasMeasies ? (
+      <div className={`${noteClasses} bg-success text-success-content`}>
+        {t('setHasMeasiesForDesign', { design: t(`designs:${design}.t`) })}
+      </div>
+    ) : (
+      <div className={`${noteClasses} bg-warning text-warning-content`}>
+        {t('setLacksMeasiesForDesign', { design: t(`designs:${design}.t`) })}
+      </div>
+    )
   }
 
   const inner = (
     <>
-      <h2 className="bg-base-100 px-4 rounded-lg bg-opacity-60 py-2 rounded-l-none">
-        {language ? set[`name${capitalize(language)}`] : set.name}
-      </h2>
-      {info.map((item, i) => (
-        <div className={infoClasses} key={i}>
-          {item[0]}
-          {item[1]}
-        </div>
-      ))}
       {note}
+      <h5 className="bg-neutral text-neutral-content px-4 w-full bg-opacity-50 py-2 rounded rounded-t-none">
+        {language ? set[`name${capitalize(language)}`] : set.name}
+      </h5>
     </>
   )
 
@@ -332,61 +297,74 @@ export const Mset = ({ id, publicOnly = false }) => {
     } else setLoadingStatus([true, 'backendError', true, false])
   }
   const heading = (
-    <div className="flex flex-row flex-wrap gap-4 text-sm items-center justify-between mb-2">
+    <>
       <LoadingStatus />
-      <MsetBanner
-        set={mset}
-        control={control}
-        onClick={() =>
-          setModal(
-            <ModalWrapper flex="col" justify="top lg:justify-center" slideFrom="right">
-              <img src={cloudflareImageUrl({ type: 'public', id: mset.img })} />
-            </ModalWrapper>
-          )
-        }
-      />
-      {account.control > 3 && mset.public ? (
-        <div className="flex flex-row gap-2 items-center">
-          <a
-            className="badge badge-secondary font-bold badge-lg"
-            href={`${conf.backend}/sets/${mset.id}.json`}
-          >
-            JSON
-          </a>
-          <a
-            className="badge badge-success font-bold badge-lg"
-            href={`${conf.backend}/sets/${mset.id}.yaml`}
-          >
-            YAML
-          </a>
+      <div className="flex flex-wrap md:flex-nowrap flex-row gap-2 w-full">
+        <div className="w-full md:w-96 shrink-0">
+          <MsetCard set={mset} control={control} />
         </div>
-      ) : (
-        <span></span>
-      )}
-      {!publicOnly && (
-        <>
-          {edit ? (
-            <div className="flex flex-row gap-2">
-              <button
-                onClick={() => setEdit(false)}
-                className="btn btn-primary btn-outline flex flex-row items-center gap-4"
+        <div className="flex flex-col justify-end gap-2 mb-2 grow">
+          {account.control > 3 && mset.public ? (
+            <div className="flex flex-row gap-2 items-center">
+              <a
+                className="badge badge-secondary font-bold badge-lg"
+                href={`${conf.backend}/sets/${mset.id}.json`}
               >
-                <ResetIcon />
-                {t('cancel')}
-              </button>
-              <button onClick={save} className="btn btn-primary flex flex-row items-center gap-4">
-                <UploadIcon />
-                {t('saveThing', { thing: t('account:set') })}
-              </button>
+                JSON
+              </a>
+              <a
+                className="badge badge-success font-bold badge-lg"
+                href={`${conf.backend}/sets/${mset.id}.yaml`}
+              >
+                YAML
+              </a>
             </div>
           ) : (
-            <button onClick={() => setEdit(true)} className="btn btn-primary">
-              <EditIcon /> {t('editThing', { thing: t('account:set') })}
-            </button>
+            <span></span>
           )}
-        </>
-      )}
-    </div>
+          <button
+            onClick={() =>
+              setModal(
+                <ModalWrapper flex="col" justify="top lg:justify-center" slideFrom="right">
+                  <img src={cloudflareImageUrl({ type: 'public', id: mset.img })} />
+                </ModalWrapper>
+              )
+            }
+            className={`btn btn-secondary btn-outline ${horFlexClasses}`}
+          >
+            <CameraIcon />
+            {t('showImage')}
+          </button>
+          {!publicOnly && (
+            <>
+              {edit ? (
+                <>
+                  <button
+                    onClick={() => setEdit(false)}
+                    className={`btn btn-neutral btn-outline ${horFlexClasses}`}
+                  >
+                    <ResetIcon />
+                    {t('cancel')}
+                  </button>
+                  <button onClick={save} className={`btn btn-primary ${horFlexClasses}`}>
+                    <UploadIcon />
+                    {t('saveThing', { thing: t('account:set') })}
+                  </button>
+                </>
+              ) : (
+                <button
+                  onClick={() => setEdit(true)}
+                  className={`btn btn-primary ${horFlexClasses}`}
+                >
+                  <EditIcon /> {t('editThing', { thing: t('account:set') })}
+                </button>
+              )}
+            </>
+          )}
+        </div>
+      </div>
+      <div className="flex flex-row flex-wrap gap-4 text-sm items-center justify-between mb-2"></div>
+    </>
   )
 
   if (!edit)
@@ -698,7 +676,7 @@ export const Sets = () => {
   }
 
   return (
-    <div className="max-w-4xl xl:pl-4">
+    <div className="max-w-7xl xl:pl-4">
       <LoadingStatus />
       <p className="text-center md:text-right">
         <Link
@@ -711,43 +689,42 @@ export const Sets = () => {
           {t('newSet')}
         </Link>
       </p>
-      {selCount ? (
-        <button className="btn btn-error" onClick={removeSelectedSets}>
-          <TrashIcon /> {selCount} {t('sets')}
-        </button>
-      ) : null}
-      <table className="table table-auto">
-        <thead className="border border-base-300 border-b-2 border-t-0 border-x-0">
-          <tr className="b">
-            <th className="text-base-300 text-base w-4 px-1">
+      <div className="flex flex-row gap-2 border-b-2 mb-4 pb-4 mt-8 h-14 items-center">
+        <input
+          type="checkbox"
+          className="checkbox checkbox-secondary"
+          onClick={toggleSelectAll}
+          checked={sets.length === selCount}
+        />
+        {selCount ? (
+          <button className="btn btn-error" onClick={removeSelectedSets}>
+            <TrashIcon /> {selCount} {t('sets')}
+          </button>
+        ) : null}
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
+        {sets.map((set, i) => (
+          <div
+            key={i}
+            className={`flex flex-row items-start gap-1 border-2
+          ${
+            selected[set.id] ? 'border-solid border-secondary' : 'border-dotted border-base-300'
+          } rounded-lg p-2`}
+          >
+            <label className="w-8 h-full shrink-0">
               <input
                 type="checkbox"
+                checked={selected[set.id] ? true : false}
                 className="checkbox checkbox-secondary"
-                onClick={toggleSelectAll}
-                checked={sets.length === selCount}
+                onClick={() => toggleSelect(set.id)}
               />
-            </th>
-            <th className="text-base-300 text-base">{t('set')}</th>
-          </tr>
-        </thead>
-        <tbody>
-          {sets.map((set, i) => (
-            <tr key={i}>
-              <td className="text-base font-medium px-0">
-                <input
-                  type="checkbox"
-                  checked={selected[set.id] ? true : false}
-                  className="checkbox checkbox-secondary"
-                  onClick={() => toggleSelect(set.id)}
-                />
-              </td>
-              <td className="text-base font-medium px-0">
-                <MsetBanner control={control} href={`/account/sets/${set.id}`} set={set} />
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+            </label>
+            <div className="w-full">
+              <MsetCard control={control} href={`/account/sets/${set.id}`} set={set} />
+            </div>
+          </div>
+        ))}
+      </div>
       <BackToAccountButton />
     </div>
   )
@@ -815,9 +792,9 @@ export const SetCard = ({
   return <div {...wrapperProps}>{inner}</div>
 }
 
-export const MsetButton = (props) => <MsetBanner {...props} href={false} />
-export const MsetLink = (props) => <MsetBanner {...props} onClick={false} useA={false} />
-export const MsetA = (props) => <MsetBanner {...props} onClick={false} useA={true} />
+export const MsetButton = (props) => <MsetCard {...props} href={false} />
+export const MsetLink = (props) => <MsetCard {...props} onClick={false} useA={false} />
+export const MsetA = (props) => <MsetCard {...props} onClick={false} useA={true} />
 
 export const UserSetPicker = ({ design, t, href, clickHandler }) => {
   // Hooks
@@ -847,7 +824,7 @@ export const UserSetPicker = ({ design, t, href, clickHandler }) => {
     hasSets = true
     for (const setId in sets) {
       const [hasMeasies, missingMeasies] = hasRequiredMeasurements(
-        measurements[design],
+        designMeasurements[design],
         sets[setId].measies,
         true
       )
@@ -880,29 +857,52 @@ export const UserSetPicker = ({ design, t, href, clickHandler }) => {
 
   return (
     <>
-      <h3>{t('yourSets')}</h3>
+      <ul className="list list-inside list-disc ml-4">
+        <li>
+          <button className={linkClasses} onClick={() => scrollTo('ownsets')}>
+            {t('ownSets')}
+          </button>
+        </li>
+        <li>
+          <button className={linkClasses} onClick={() => scrollTo('bookmarkedsets')}>
+            {t('bookmarkedSets')}
+          </button>
+        </li>
+        <li>
+          <button className={linkClasses} onClick={() => scrollTo('curatedsets')}>
+            {t('curatedSets')}
+          </button>
+        </li>
+      </ul>
+      <h3 id="ownsets">{t('yourSets')}</h3>
       {okSets.length > 0 && (
-        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-2">
-          {okSets.map((set, i) => (
-            <MsetButton
-              {...{ set, control, design }}
-              onClick={clickHandler}
-              requiredMeasies={measurements[design]}
-              key={set.id}
-            />
-          ))}
-        </div>
+        <>
+          <h4>{t('account:theseSetsReady')}</h4>
+          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
+            {okSets.map((set, i) => (
+              <MsetButton
+                {...{ set, control, design }}
+                onClick={clickHandler}
+                requiredMeasies={measurements[design]}
+                key={set.id}
+              />
+            ))}
+          </div>
+        </>
       )}
       {lackingSets.length > 0 && (
         <div className="my-4">
-          <h4>Some of your sets lack the measurments required to generate this pattern</h4>
-          <ul className="list">
+          <h4>{t('account:someSetsLacking')}</h4>
+          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
             {lackingSets.map((set, i) => (
-              <li key={set.id} className="inline pr-4">
-                <PageLink href={`/account/sets/${set.id}`} txt={set.name} />
-              </li>
+              <MsetLink
+                {...{ set, control, design }}
+                onClick={clickHandler}
+                requiredMeasies={measurements[design]}
+                key={set.id}
+              />
             ))}
-          </ul>
+          </div>
         </div>
       )}
     </>
@@ -974,7 +974,7 @@ export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
 
   return (
     <>
-      <h3>{t('account:curatedSets')}</h3>
+      <h3 id="bookmarkedsets">{t('account:curatedSets')}</h3>
       <V3Wip />
       {tags.map((tag) => (
         <Tag onClick={() => addFilter(tag)} tag={tag} key={tag}>
@@ -997,7 +997,7 @@ export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
           </Tag>
         ))}
       </div>
-      <div className="flex flex-col lg:grid lg:grid-cols-2 gap-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
         {orderBy(list, ['name'], ['asc']).map((set) => (
           <MsetButton
             key={set.id}

@@ -429,3 +429,8 @@ export const parseDistanceInput = (val = false, imperial = false) => {
 
   return isNaN(val) ? false : Number(val)
 }
+
+/*
+ * To spread icon + text horizontall
+ */
+export const horFlexClasses = 'flex flex-row items-center justify-between gap-4'

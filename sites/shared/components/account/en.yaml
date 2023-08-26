@@ -217,6 +217,8 @@ noFilter: Do not filter
 filterByDesignDocs: If you have a specific design in mind, you can <b>filter by design</b> to only list those measurements that are required for this design.
 setLacksMeasiesForDesign: This set lacks measurements required for this pattern
 setHasMeasiesForDesign: This set has all measurements required for this pattern
+someSetsLacking: Some of your sets lack the measurments required to generate this pattern
+theseSetsReady: These sets have all required measurments to generate this pattern
 chooseSet: Please choose a set of measurements
 patternForWhichSet: Which set of measurements should we generate a pattern for?
 bookmarkedSets: Measurements sets you've bookmarked
@@ -230,6 +232,7 @@ pleaseMtm: Because made-to-measure lies at the heart of what we do, we strongly 
 noOwnSetsMsg: You can store your measurements as a measurements set, after which you can generate as many patterns as you want for them.
 measurements: Measurements
 chooseASet: Choose a measurements set
+showImage: Show image
 
 patternNew: Generate a new pattern
 patternNewInfo: Pick a design, add your measurements set, and we'll generate a made-to-measure sewing pattern for you.

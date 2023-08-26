@@ -95,9 +95,7 @@ export const FormControl = ({
             {bottomLabelChildren}
           </label>
         ) : (
-          <div className="label" htmlFor={forId}>
-            {bottomLabelChildren}
-          </div>
+          <div className="label">{bottomLabelChildren}</div>
         )
       ) : null}
     </div>
@@ -468,13 +466,6 @@ export const MeasieInput = ({
     typeof original === 'undefined' ? original : measurementAsUnits(original, units)
   )
   const [validatedVal, setValidatedVal] = useState(measurementAsUnits(original, units))
-
-  //const [val, setVal] = useState(() => {
-  //  const measie = current
-  //  if (!measie) return ''
-  //  if (isDegree) return measie
-  //  return measurementAsUnits(measie, units)
-  //})
   const [valid, setValid] = useState(null)
 
   // Update onChange
@@ -496,13 +487,11 @@ export const MeasieInput = ({
   if (valid === true) {
     inputClasses = 'input-success'
     const val = `${validatedVal}${isDegree ? '°' : imperial ? '"' : 'cm'}`
-    bottomLeftLabel = (
-      <span className="label-text-alt font-medium text-success text-base">{val}</span>
-    )
+    bottomLeftLabel = <span className="font-medium text-base text-success -mt-2 block">{val}</span>
   } else if (valid === false) {
     inputClasses = 'input-error'
     bottomLeftLabel = (
-      <span className="label-text-alt font-medium text-error text-base">¯\_(ツ)_/¯</span>
+      <span className="font-medium text-error text-base -mt-2 block">¯\_(ツ)_/¯</span>
     )
   }
 
@@ -514,7 +503,7 @@ export const MeasieInput = ({
    * See: https://github.com/facebook/react/issues/16554
    */
   return (
-    <FormControl label={t(m)} docs={docs} forId={id}>
+    <FormControl label={t(m)} docs={docs} forId={id} labelBL={bottomLeftLabel}>
       <input
         id={id}
         type="number"
@@ -523,7 +512,6 @@ export const MeasieInput = ({
         onChange={(evt) => localUpdate(evt.target.value)}
         className={`input w-full input-bordered ${inputClasses}`}
       />
-      <label className="label -mt-1">{bottomLeftLabel}</label>
     </FormControl>
   )
 }
