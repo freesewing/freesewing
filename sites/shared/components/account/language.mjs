@@ -14,7 +14,7 @@ import { siteConfig as conf } from 'site/site.config.mjs'
 
 export const ns = ['account', 'locales', statusNs]
 
-export const LanguageSettings = ({ title = false }) => {
+export const LanguageSettings = () => {
   // Hooks
   const { account, setAccount } = useAccount()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()

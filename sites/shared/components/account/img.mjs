@@ -15,7 +15,7 @@ import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
 export const ns = ['account', 'status']
 
-export const ImgSettings = ({ title = false, welcome = false }) => {
+export const ImgSettings = ({ welcome = false }) => {
   const { account, setAccount } = useAccount()
   const backend = useBackend()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()

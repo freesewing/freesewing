@@ -13,7 +13,7 @@ import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
 export const ns = ['account', 'status']
 
-export const ImperialSettings = ({ title = false, welcome = false }) => {
+export const ImperialSettings = ({ welcome = false }) => {
   // Hooks
   const { account, setAccount } = useAccount()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()

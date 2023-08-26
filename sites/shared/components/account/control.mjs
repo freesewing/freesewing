@@ -47,7 +47,7 @@ export const useControlState = () => {
   return { selection, update, LoadingStatus }
 }
 
-export const ControlSettings = ({ title = false, welcome = false, noBack = false }) => {
+export const ControlSettings = ({ welcome = false, noBack = false }) => {
   const { t, i18n } = useTranslation(ns)
 
   const { selection, update, LoadingStatus } = useControlState()

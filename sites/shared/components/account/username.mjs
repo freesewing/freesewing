@@ -14,7 +14,7 @@ import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
 export const ns = ['account', 'toast']
 
-export const UsernameSettings = ({ title = false, welcome = false }) => {
+export const UsernameSettings = ({ welcome = false }) => {
   // Hooks
   const { account, setAccount } = useAccount()
   const backend = useBackend()

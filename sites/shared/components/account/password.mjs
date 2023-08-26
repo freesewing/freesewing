@@ -16,7 +16,7 @@ import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
 export const ns = ['account', 'status']
 
-export const PasswordSettings = ({ title = false, welcome = false }) => {
+export const PasswordSettings = ({ welcome = false }) => {
   // Hooks
   const { account, setAccount } = useAccount()
   const backend = useBackend()
@@ -25,7 +25,6 @@ export const PasswordSettings = ({ title = false, welcome = false }) => {
 
   // State
   const [password, setPassword] = useState('')
-  const [reveal, setReveal] = useState(false)
 
   // Helper method to save password to account
   const save = async () => {

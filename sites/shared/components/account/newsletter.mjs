@@ -14,7 +14,7 @@ import { OkIcon, NoIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['account', 'status']
 
-export const NewsletterSettings = ({ title = false, welcome = false }) => {
+export const NewsletterSettings = ({ welcome = false }) => {
   // Hooks
   const { account, setAccount } = useAccount()
   const backend = useBackend()

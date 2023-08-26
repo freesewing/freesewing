@@ -1663,8 +1663,8 @@ const migrateUser = (v2) => {
 /*
  * This is a special migration route
  */
-UserModel.prototype.migrate = async function ({ username, password, v2 }) {
-  let lut = false
+UserModel.prototype.migrate = async function ({ password, v2 }) {
+  //let lut = false
   const data = migrateUser(v2.account)
   if (v2.account.consent.profile && (v2.account.consent.model || v2.account.consent.measurements)) {
     data.consent++

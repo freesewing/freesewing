@@ -25,7 +25,7 @@ export const Tab = ({ id, activeTab, setActiveTab, t }) => (
   </button>
 )
 
-export const BioSettings = ({ title = false, welcome = false }) => {
+export const BioSettings = ({ welcome = false }) => {
   // Hooks
   const { account, setAccount } = useAccount()
   const backend = useBackend()
@@ -34,7 +34,6 @@ export const BioSettings = ({ title = false, welcome = false }) => {
 
   // State
   const [bio, setBio] = useState(account.bio)
-  const [activeTab, setActiveTab] = useState('edit')
 
   // Helper method to save bio
   const save = async () => {
