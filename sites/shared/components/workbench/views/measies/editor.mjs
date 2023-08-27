@@ -7,7 +7,6 @@ export const ns = nsMerge('workbench', inputNs)
 
 export const MeasiesEditor = ({ Design, settings, update }) => {
   const { t, i18n } = useTranslation(ns)
-  const mset = { measies: settings.measurements, imperial: settings.units === 'imperial' }
 
   const onUpdate = (m, newVal) => {
     update.settings(['measurements', m], newVal)

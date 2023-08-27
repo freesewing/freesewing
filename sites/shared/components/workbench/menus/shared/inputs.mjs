@@ -6,7 +6,6 @@ import {
   formatFraction128,
   fractionToDecimal,
 } from 'shared/utils.mjs'
-import { ChoiceButton } from 'shared/components/choice-button.mjs'
 import debounce from 'lodash.debounce'
 
 import { ButtonFrame } from 'shared/components/inputs.mjs'

@@ -13,7 +13,6 @@ import {
   ClearIcon,
   ResetIcon,
 } from 'shared/components/icons.mjs'
-import { ClearAllButton } from 'shared/components/workbench/menus/core-settings/index.mjs'
 import { shownHeaderSelector } from 'shared/components/wrappers/header.mjs'
 
 export const ns = ['common', 'core-settings', 'ui-settings']

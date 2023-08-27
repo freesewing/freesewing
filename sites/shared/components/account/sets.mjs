@@ -35,8 +35,6 @@ import {
   EditIcon,
   UploadIcon,
   ResetIcon,
-  MeasieIcon,
-  CalendarIcon,
   PlusIcon,
   WarningIcon,
   FilterIcon,
@@ -755,8 +753,6 @@ export const SetCard = ({
   }
   if (set.img === 'default-avatar') wrapperProps.style.backgroundPosition = 'bottom right'
 
-  const setProps = { set, t, hasMeasies, language }
-
   const inner = hasMeasies ? null : (
     <div className="flex flex-row gap-2 items-center">
       <WarningIcon className="w-6 h-6 shrink-0 text-error" />
@@ -1005,7 +1001,6 @@ export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
             onClick={clickHandler}
             requiredMeasies={measurements[design]}
             language={i18n.language}
-            key={set.id}
           />
         ))}
       </div>

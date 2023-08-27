@@ -4,17 +4,14 @@ import { useTranslation } from 'next-i18next'
 // Components
 import {
   BeakerIcon,
-  BriefcaseIcon,
   CodeIcon,
   CutIcon,
-  HelpIcon,
   OptionsIcon,
   PrintIcon,
   UploadIcon,
   RightIcon,
   LeftIcon,
   DocsIcon,
-  SearchIcon,
   MeasieIcon,
   XrayIcon,
   EditIcon,

@@ -1,7 +1,5 @@
-import { ResetIcon, HelpIcon, EditIcon } from 'shared/components/icons.mjs'
-import { Collapse } from 'shared/components/collapse.mjs'
+import { ResetIcon, EditIcon } from 'shared/components/icons.mjs'
 import { useState, useMemo } from 'react'
-import { ListToggle } from './inputs.mjs'
 import { SubAccordion } from 'shared/components/accordion.mjs'
 import { FormControl } from 'shared/components/inputs.mjs'
 import { BoxIcon as GroupIcon, OptionsIcon } from 'shared/components/icons.mjs'

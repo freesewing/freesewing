@@ -12,6 +12,7 @@ export const Accordion = ({
     <nav>
       {items.map((item, i) => (
         <button
+          key={i}
           className={`
             p-2 px-4 rounded-lg bg-transparent shadow
             w-full mt-2 py-4 h-auto content-start text-left bg-opacity-20
@@ -36,6 +37,7 @@ export const SubAccordion = ({
     <nav>
       {items.map((item, i) => (
         <button
+          key={i}
           className={`
             p-2 px-4 rounded
             bg-transparent

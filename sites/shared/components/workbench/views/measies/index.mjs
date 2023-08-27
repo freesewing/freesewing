@@ -10,8 +10,6 @@ import { SetPicker, ns as setsNs } from 'shared/components/account/sets.mjs'
 import { Tabs, Tab } from 'shared/components/mdx/tabs.mjs'
 import { MeasiesEditor } from './editor.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
-import { Collapse } from 'shared/components/collapse.mjs'
-import { SetButton } from 'shared/components/account/sets.mjs'
 
 export const ns = nsMerge(authNs, setsNs)
 
