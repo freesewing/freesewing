@@ -65,7 +65,7 @@ const socialIcon = {
 const SupportPage = ({ page }) => {
   const { t } = useTranslation(ns)
 
-  const [request, setRequest] = useState(true)
+  const [request, setRequest] = useState(false)
 
   const pageTitle = request ? t('createSupportRequest') : t('sections:support')
 
