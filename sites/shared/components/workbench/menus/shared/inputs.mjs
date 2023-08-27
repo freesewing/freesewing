@@ -269,7 +269,10 @@ export const useDebouncedHandlers = ({ handleChange = () => {}, val }) => {
   const [displayVal, setDisplayVal] = useState(val)
 
   // the debounce function needs to be it's own memoized value so we can flush it on unmount
-  const debouncer = useMemo(() => debounce(handleChange, 300), [handleChange])
+  const debouncer = useMemo(
+    () => debounce(handleChange, 300, { leading: true, trailing: true }),
+    [handleChange]
+  )
 
   // this is the change handler
   const debouncedHandleChange = useCallback(
