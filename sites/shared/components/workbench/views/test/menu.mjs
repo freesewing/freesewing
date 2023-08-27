@@ -43,14 +43,15 @@ export const TestMenu = ({
     <Accordion
       items={[
         [
-          <>
+          <Fragment key={1}>
             <h5 className="flex flex-row gap-2 items-center justify-between w-full">
               <span>{t('workbench:testOptions')}</span>
               <OptionsIcon className="w-8 h-8" />
             </h5>
             <p>{t('workbench:testOptionsDesc')}</p>
-          </>,
+          </Fragment>,
           <ListInput
+            key={2}
             list={[...allOptions].map((option, i) => ({
               key: i,
               label: [

@@ -873,6 +873,7 @@ export const UserSetPicker = ({ design, t, href, clickHandler }) => {
               <MsetButton
                 {...{ set, control, design }}
                 onClick={clickHandler}
+                href={href}
                 requiredMeasies={measurements[design]}
                 key={set.id}
               />
