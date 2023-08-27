@@ -53,7 +53,7 @@ export const WorkbenchMenu = ({
   updateFunc,
   ns,
   Icon = () => null,
-  name,
+  //name,
   config,
   control,
   inputs,
@@ -65,9 +65,9 @@ export const WorkbenchMenu = ({
   language,
   emojis,
   Item,
-  isFirst,
+  //isFirst,
   children,
-  docsPath,
+  //docsPath,
   isDesignOptionsGroup,
 }) => {
   // get translation for the menu

@@ -62,11 +62,11 @@ export const MenuItem = ({
   t,
   passProps = {},
   changed,
-  loadDocs,
+  //loadDocs,
   Input = () => {},
-  Value = () => {},
+  //Value = () => {},
   allowOverride = false,
-  allowToggle = false,
+  //allowToggle = false,
   control = Infinity,
   DynamicDocs,
   docsPath,
@@ -113,7 +113,7 @@ export const MenuItem = ({
         />
       </button>
     )
-  const ResetButton = ({ open, disabled = false }) => (
+  const ResetButton = ({ disabled = false }) => (
     <button
       className={`${iconButtonClass} disabled:bg-opacity-0`}
       disabled={disabled}
@@ -171,7 +171,7 @@ export const MenuItem = ({
 export const MenuItemGroup = ({
   collapsible = true,
   control,
-  name,
+  //name,
   currentValues = {},
   structure,
   Icon,
@@ -201,7 +201,7 @@ export const MenuItemGroup = ({
       ? GroupIcon
       : Icon
       ? Icon
-      : () => <span role="img">{emoji}</span>
+      : () => <span role="img">fixme-icon</span>
     const Value = item.isGroup
       ? () => (
           <div className="flex flex-row gap-2 items-center font-medium">

@@ -477,7 +477,7 @@ export const ConstantInput = ({
   name,
   current,
   updateFunc,
-  t,
+  //t,
   changed,
   config,
 }) => (

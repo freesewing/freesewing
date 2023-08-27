@@ -17,7 +17,7 @@ export const ns = nsMerge(coreMenuNs, designMenuNs, uiNs)
 export const DraftMenu = ({
   design,
   patternConfig,
-  setSettings,
+  //setSettings,
   settings,
   ui,
   update,

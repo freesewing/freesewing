@@ -110,14 +110,13 @@ export const MeasieVal = ({ val, m, imperial }) =>
 
 export const MsetCard = ({
   set,
-  control,
   onClick = false,
   href = false,
   useA = false,
   design = false,
   language = false,
 }) => {
-  const { t, i18n } = useTranslation(ns)
+  const { t } = useTranslation(ns)
 
   const wrapperProps = {
     className:
@@ -134,11 +133,7 @@ export const MsetCard = ({
 
   let note = <span></span>
   if (design) {
-    const [hasMeasies, missingMeasies] = hasRequiredMeasurements(
-      designMeasurements[design],
-      set.measies,
-      true
-    )
+    const [hasMeasies] = hasRequiredMeasurements(designMeasurements[design], set.measies, true)
     const noteClasses =
       'bg-opacity-90 w-full text-center py-2 font-bold px-2 rounded rounded-b-none leading-4 text-sm'
     note = hasMeasies ? (
@@ -730,7 +725,6 @@ export const Sets = () => {
 
 export const SetCard = ({
   set,
-  language,
   requiredMeasies = [],
   href = false,
   onClick = false,
@@ -739,7 +733,7 @@ export const SetCard = ({
   // Hooks
   const { t } = useTranslation(['sets'])
 
-  const [hasMeasies, missingMeasies] = hasRequiredMeasurements(requiredMeasies, set.measies, true)
+  const [hasMeasies] = hasRequiredMeasurements(requiredMeasies, set.measies, true)
 
   const wrapperProps = {
     className:
@@ -756,7 +750,7 @@ export const SetCard = ({
   const inner = hasMeasies ? null : (
     <div className="flex flex-row gap-2 items-center">
       <WarningIcon className="w-6 h-6 shrink-0 text-error" />
-      <span>{t('setLacksMeasiesForDesign', { design: t(`designs:${design}.t`) })}</span>
+      <span>{t('setLacksMeasiesForDesign')}</span>
     </div>
   )
 
@@ -819,7 +813,7 @@ export const UserSetPicker = ({ design, t, href, clickHandler }) => {
   if (Object.keys(sets).length > 0) {
     hasSets = true
     for (const setId in sets) {
-      const [hasMeasies, missingMeasies] = hasRequiredMeasurements(
+      const [hasMeasies] = hasRequiredMeasurements(
         designMeasurements[design],
         sets[setId].measies,
         true
@@ -875,7 +869,7 @@ export const UserSetPicker = ({ design, t, href, clickHandler }) => {
         <>
           <h4>{t('account:theseSetsReady')}</h4>
           <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
-            {okSets.map((set, i) => (
+            {okSets.map((set) => (
               <MsetButton
                 {...{ set, control, design }}
                 onClick={clickHandler}
@@ -890,7 +884,7 @@ export const UserSetPicker = ({ design, t, href, clickHandler }) => {
         <div className="my-4">
           <h4>{t('account:someSetsLacking')}</h4>
           <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
-            {lackingSets.map((set, i) => (
+            {lackingSets.map((set) => (
               <MsetLink
                 {...{ set, control, design }}
                 onClick={clickHandler}
@@ -998,6 +992,7 @@ export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
           <MsetButton
             key={set.id}
             {...{ set, control, design }}
+            href={href}
             onClick={clickHandler}
             requiredMeasies={measurements[design]}
             language={i18n.language}
@@ -1008,7 +1003,7 @@ export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
   )
 }
 
-export const BookmarkedSetPicker = ({ t }) => <V3Wip />
+export const BookmarkedSetPicker = () => <V3Wip />
 
 export const SetPicker = ({ design, href = false, clickHandler = false }) => {
   const { t, i18n } = useTranslation('sets')

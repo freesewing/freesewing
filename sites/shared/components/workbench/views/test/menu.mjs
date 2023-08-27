@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import { ns as optionsNs } from './options.mjs'
 import { ns as measieNs } from './measurements.mjs'
 import { Accordion } from 'shared/components/accordion.mjs'
@@ -30,9 +31,9 @@ export const TestMenu = ({
   patternConfig,
   settings,
   update,
-  language,
-  account,
-  DynamicDocs,
+  //language,
+  //account,
+  //DynamicDocs,
 }) => {
   const { t } = useTranslation(ns)
 
@@ -50,7 +51,8 @@ export const TestMenu = ({
             <p>{t('workbench:testOptionsDesc')}</p>
           </>,
           <ListInput
-            list={[...allOptions].map((option) => ({
+            list={[...allOptions].map((option, i) => ({
+              key: i,
               label: [
                 ...option.path.map((p) => (
                   <>
@@ -58,7 +60,7 @@ export const TestMenu = ({
                     {spacer}
                   </>
                 )),
-                <span>{t(`${design}:${option.key}.t`)}</span>,
+                <span key={1}>{t(`${design}:${option.key}.t`)}</span>,
               ],
               val: option.key,
             }))}
@@ -70,14 +72,15 @@ export const TestMenu = ({
           />,
         ],
         [
-          <>
+          <Fragment key="a">
             <h5 className="flex flex-row gap-2 items-center justify-between w-full">
               <span>{t('workbench:testMeasurements')}</span>
               <MeasieIcon className="w-8 h-8" />
             </h5>
             <p>{t('workbench:testOptionsDesc')}</p>
-          </>,
+          </Fragment>,
           <ListInput
+            key="b"
             list={patternConfig.measurements.map((m) => ({
               label: t(m),
               val: m,
@@ -90,14 +93,14 @@ export const TestMenu = ({
           />,
         ],
         [
-          <>
+          <Fragment key="a">
             <h5 className="flex flex-row gap-2 items-center justify-between w-full">
               <span>{t('workbench:testSets')}</span>
               <CommunityIcon className="w-8 h-8" />
             </h5>
             <p>{t('workbench:testSetsDesc')}</p>
-          </>,
-          <V3Wip />,
+          </Fragment>,
+          <V3Wip key="b" />,
         ],
       ]}
     />
