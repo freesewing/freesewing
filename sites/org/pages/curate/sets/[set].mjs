@@ -11,7 +11,7 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { V3Wip } from 'shared/components/v3-wip.mjs'
 
 // Translation namespaces used on this page
-const namespaces = ['curate', 'sets', ...new Set([...editNs, ...pageNs])]
+const namespaces = ['curate', 'sets'] //, ...new Set([...editNs, ...pageNs])]
 
 /*
  * Some things should never generated as SSR
