@@ -6,16 +6,19 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
-import { BackToAccountButton, Choice, Icons, welcomeSteps } from './shared.mjs'
+import { BackToAccountButton, Icons, welcomeSteps } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
+import { ListInput } from 'shared/components/inputs.mjs'
+import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { OkIcon, NoIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['account', 'status']
 
-export const NewsletterSettings = ({ title = false, welcome = false }) => {
+export const NewsletterSettings = ({ welcome = false }) => {
   // Hooks
   const { account, setAccount } = useAccount()
   const backend = useBackend()
-  const { t } = useTranslation(ns)
+  const { t, i18n } = useTranslation(ns)
   const { LoadingStatus, setLoadingStatus } = useLoadingStatus()
   // State
   const [selection, setSelection] = useState(account?.newsletter ? 'yes' : 'no')
@@ -42,19 +45,27 @@ export const NewsletterSettings = ({ title = false, welcome = false }) => {
   return (
     <div className="max-w-xl">
       <LoadingStatus />
-      {title ? <h1 className="text-4xl">{t('newsletterTitle')}</h1> : null}
-      {['yes', 'no'].map((val) => (
-        <Choice val={val} t={t} update={update} current={selection} bool key={val}>
-          <span className="block text-lg leading-5">
-            {selection === 1 && val === 2
-              ? t('showMore')
-              : t(val === 'yes' ? 'newsletterYes' : 'noThanks')}
-          </span>
-          <span className="block text-normal font-light normal-case pt-1 leading-5">
-            {t(val === 'yes' ? 'newsletterYesd' : 'newsletterNod')}
-          </span>
-        </Choice>
-      ))}
+      <ListInput
+        id="account-newsletter"
+        label={t('newsletterTitle')}
+        list={['yes', 'no'].map((val) => ({
+          val,
+          label: (
+            <div className="flex flex-row items-center w-full justify-between">
+              <span>{t(val === 'yes' ? 'newsletterYes' : 'noThanks')}</span>
+              {val === 'yes' ? (
+                <OkIcon className="w-8 h-8 text-success" stroke={4} />
+              ) : (
+                <NoIcon className="w-8 h-8 text-error" stroke={3} />
+              )}
+            </div>
+          ),
+          desc: t(val === 'yes' ? 'newsletterYesd' : 'newsletterNod'),
+        }))}
+        current={selection}
+        update={update}
+        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/newsletter`} />}
+      />
       {welcome ? (
         <>
           <ContinueButton btnProps={{ href: nextHref }} link />

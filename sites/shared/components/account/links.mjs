@@ -3,9 +3,8 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useTranslation } from 'next-i18next'
 import Link from 'next/link'
-import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
+import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewing.config.mjs'
 import {
-  DesignIcon,
   MeasieIcon,
   SignoutIcon,
   UserIcon,
@@ -37,6 +36,7 @@ import {
   ReloadIcon,
   OkIcon,
   NoIcon,
+  PageIcon,
 } from 'shared/components/icons.mjs'
 import { cloudflareImageUrl, capitalize } from 'shared/utils.mjs'
 import { ControlScore } from 'shared/components/control/score.mjs'
@@ -46,7 +46,7 @@ export const ns = ['account', 'i18n']
 const itemIcons = {
   bookmarks: <BookmarkIcon />,
   sets: <MeasieIcon />,
-  patterns: <DesignIcon />,
+  patterns: <PageIcon />,
   apikeys: <KeyIcon />,
   username: <UserIcon />,
   email: <EmailIcon />,
@@ -90,7 +90,7 @@ const YesNo = ({ check }) =>
   )
 
 export const AccountLinks = () => {
-  const { account, signOut } = useAccount()
+  const { account, signOut, control } = useAccount()
   const { t } = useTranslation(ns)
   const backend = useBackend()
 
@@ -114,6 +114,8 @@ export const AccountLinks = () => {
 
   const btnClasses = 'btn capitalize flex flex-row justify-between'
 
+  if (!account.username) return null
+
   const itemPreviews = {
     apikeys: apikeys?.length || 0,
     bookmarks: bookmarks?.length || 0,
@@ -121,7 +123,7 @@ export const AccountLinks = () => {
     patterns: patterns?.length || 0,
     username: account.username,
     email: account.email,
-    bio: <span>{account.bio.slice(0, 15)}&hellip;</span>,
+    bio: account.bio ? <span>{account.bio.slice(0, 15)}&hellip;</span> : '',
     img: (
       <img
         src={cloudflareImageUrl({ type: 'sq100', id: `user-${account.ihash}` })}
@@ -143,7 +145,6 @@ export const AccountLinks = () => {
       ),
     mfa: <YesNo check={false} />,
   }
-
   for (const social of Object.keys(conf.account.fields.identities).filter((i) => i !== 'github'))
     itemPreviews[social] = account.data[social] || (
       <NoIcon className="text-base-content w-6 h-6" stroke={2} />
@@ -154,103 +155,129 @@ export const AccountLinks = () => {
       <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 mb-8">
         <div className="">
           <h4 className="my-2">{t('data')}</h4>
-          {Object.keys(conf.account.fields.data).map((item) => (
-            <AccountLink href={`/account/${item}`} title={t(item)} key={item}>
-              <div className="flex flex-row items-center gap-3 font-medium">
-                {itemIcons[item]}
-                {t(`your${capitalize(item)}`)}
-              </div>
-              <div className="">{itemPreviews[item]}</div>
-            </AccountLink>
-          ))}
+          {Object.keys(conf.account.fields.data).map((item) =>
+            controlLevels[item] > control ? null : (
+              <AccountLink href={`/account/${item}`} title={t(item)} key={item}>
+                <div className="flex flex-row items-center gap-3 font-medium">
+                  {itemIcons[item]}
+                  {t(`your${capitalize(item)}`)}
+                </div>
+                <div className="">{itemPreviews[item]}</div>
+              </AccountLink>
+            )
+          )}
         </div>
 
-        <div className="">
-          <h4 className="my-2">{t('info')}</h4>
-          {Object.keys(conf.account.fields.info).map((item) => (
-            <AccountLink href={`/account/${item}`} title={t(item)} key={item}>
+        {control > 1 && (
+          <div className="">
+            <h4 className="my-2">{t('info')}</h4>
+            {Object.keys(conf.account.fields.info).map((item) =>
+              controlLevels[item] > control ? null : (
+                <AccountLink href={`/account/${item}`} title={t(item)} key={item}>
+                  <div className="flex flex-row items-center gap-3 font-medium">
+                    {itemIcons[item]}
+                    {t(item)}
+                  </div>
+                  <div className="">{itemPreviews[item]}</div>
+                </AccountLink>
+              )
+            )}
+            <div className={`${itemClasses} bg-neutral`}>
               <div className="flex flex-row items-center gap-3 font-medium">
-                {itemIcons[item]}
-                {t(item)}
+                <FingerprintIcon />
+                <span>{t('userId')}</span>
               </div>
-              <div className="">{itemPreviews[item]}</div>
-            </AccountLink>
-          ))}
-          <div className={`${itemClasses} bg-neutral`}>
-            <div className="flex flex-row items-center gap-3 font-medium">
-              <FingerprintIcon />
-              <span>{t('userId')}</span>
+              <div className="">{account.id}</div>
             </div>
-            <div className="">{account.id}</div>
           </div>
-        </div>
+        )}
 
         <div className="">
           <h4 className="my-2">{t('settings')}</h4>
-          {Object.keys(conf.account.fields.settings).map((item) => (
-            <AccountLink href={`/account/${item}`} title={t(item)} key={item}>
-              <div className="flex flex-row items-center gap-3 font-medium">
-                {itemIcons[item]}
-                {t(item)}
-              </div>
-              <div className="">{itemPreviews[item]}</div>
-            </AccountLink>
-          ))}
+          {Object.keys(conf.account.fields.settings).map((item) =>
+            controlLevels[item] > control ? null : (
+              <AccountLink href={`/account/${item}`} title={t(item)} key={item}>
+                <div className="flex flex-row items-center gap-3 font-medium">
+                  {itemIcons[item]}
+                  {t(item)}
+                </div>
+                <div className="">{itemPreviews[item]}</div>
+              </AccountLink>
+            )
+          )}
         </div>
 
-        <div className="">
-          <h4 className="my-2">{t('linkedIdentities')}</h4>
-          {Object.keys(conf.account.fields.identities).map((item) => (
-            <AccountLink href={`/account/${item}`} title={t(item)} key={item}>
-              <div className="flex flex-row items-center gap-3 font-medium">
-                {itemIcons[item]}
-                {t(item)}
-              </div>
-              <div className="">{itemPreviews[item]}</div>
-            </AccountLink>
-          ))}
-        </div>
+        {control > 2 && (
+          <div className="">
+            <h4 className="my-2">{t('linkedIdentities')}</h4>
+            {Object.keys(conf.account.fields.identities).map((item) =>
+              controlLevels[item] > control ? null : (
+                <AccountLink href={`/account/${item}`} title={t(item)} key={item}>
+                  <div className="flex flex-row items-center gap-3 font-medium">
+                    {itemIcons[item]}
+                    {t(item)}
+                  </div>
+                  <div className="">{itemPreviews[item]}</div>
+                </AccountLink>
+              )
+            )}
+          </div>
+        )}
 
-        <div className="">
-          <h4 className="my-2">{t('security')}</h4>
-          {Object.keys(conf.account.fields.security).map((item) => (
-            <AccountLink href={`/account/${item}`} title={t(item)} key={item}>
-              <div className="flex flex-row items-center gap-3 font-medium">
-                {itemIcons[item]}
-                {t(item)}
-              </div>
-              <div className="">{itemPreviews[item]}</div>
-            </AccountLink>
-          ))}
-        </div>
+        {control > 1 && (
+          <div className="">
+            <h4 className="my-2">{t('security')}</h4>
+            {Object.keys(conf.account.fields.security).map((item) =>
+              controlLevels[item] > control ? null : (
+                <AccountLink href={`/account/${item}`} title={t(item)} key={item}>
+                  <div className="flex flex-row items-center gap-3 font-medium">
+                    {itemIcons[item]}
+                    {t(item)}
+                  </div>
+                  <div className="">{itemPreviews[item]}</div>
+                </AccountLink>
+              )
+            )}
+          </div>
+        )}
 
-        <div className="">
-          <h4 className="my-2">{t('actions')}</h4>
-          <AccountLink href={`/account/reload`} title={t('reload')}>
-            <ReloadIcon />
-            {t('reload')}
-          </AccountLink>
-          <AccountLink href={`/account/export`} title={t('export')}>
-            <ExportIcon />
-            {t('export')}
-          </AccountLink>
-          <AccountLink href={`/account/restrict`} title={t('restrict')} color="warning">
-            <CloseIcon />
-            {t('restrict')}
-          </AccountLink>
-          <AccountLink href={`/account/remove`} title={t('remove')} color="error">
-            <TrashIcon />
-            {t('remove')}
-          </AccountLink>
-        </div>
+        {control > 1 && (
+          <div className="">
+            <h4 className="my-2">{t('actions')}</h4>
+            {control > 2 && (
+              <AccountLink href={`/account/reload`} title={t('reload')}>
+                <ReloadIcon />
+                {t('reload')}
+              </AccountLink>
+            )}
+            {control > 2 && (
+              <AccountLink href={`/account/export`} title={t('export')}>
+                <ExportIcon />
+                {t('export')}
+              </AccountLink>
+            )}
+            {control > 3 && (
+              <AccountLink href={`/account/restrict`} title={t('restrict')} color="warning">
+                <CloseIcon />
+                {t('restrict')}
+              </AccountLink>
+            )}
+            <AccountLink href={`/account/remove`} title={t('remove')} color="error">
+              <TrashIcon />
+              {t('remove')}
+            </AccountLink>
+          </div>
+        )}
       </div>
 
       <div className="flex flex-row flex-wrap gap-2 md:gap-4 justify-end">
-        <Link className={`${btnClasses} btn-primary md:w-64 w-full`} href="/profile">
-          <UserIcon />
-          {t('yourProfile')}
-        </Link>
-        <button className={`${btnClasses} btn-warning md:w-64 w-full`} onClick={() => signOut()}>
+        {control > 1 && (
+          <Link className={`${btnClasses} btn-secondary md:w-64 w-full`} href="/profile">
+            <UserIcon />
+            {t('yourProfile')}
+          </Link>
+        )}
+        <button className={`${btnClasses} btn-neutral md:w-64 w-full`} onClick={() => signOut()}>
           <SignoutIcon />
           {t('signOut')}
         </button>

@@ -6,17 +6,19 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
-import { Choice, Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
+import { Icons, welcomeSteps, BackToAccountButton, NumberBullet } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
+import { ListInput } from 'shared/components/inputs.mjs'
+import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
 export const ns = ['account', 'status']
 
-export const ImperialSettings = ({ title = false, welcome = false }) => {
+export const ImperialSettings = ({ welcome = false }) => {
   // Hooks
   const { account, setAccount } = useAccount()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const backend = useBackend()
-  const { t } = useTranslation(ns)
+  const { t, i18n } = useTranslation(ns)
 
   // State
   const [selection, setSelection] = useState(account?.imperial === true ? 'imperial' : 'metric')
@@ -43,23 +45,23 @@ export const ImperialSettings = ({ title = false, welcome = false }) => {
   return (
     <div className="max-w-xl">
       <LoadingStatus />
-      {title ? <h1 className="text-4xl">{t('unitsTitle')}</h1> : <h1></h1>}
-      {['metric', 'imperial'].map((val) => (
-        <Choice
-          val={val}
-          t={t}
-          update={update}
-          current={selection}
-          bool
-          key={val}
-          boolIcons={{ yes: <span>&quot;</span>, no: <span>cm</span> }}
-        >
-          <span className="block text-lg leading-5">
-            {selection === 1 && val === 2 ? t('showMore') : t(`${val}Units`)}
-          </span>
-          <span className="block text-normal font-light normal-case pt-1">{t(`${val}Unitsd`)}</span>
-        </Choice>
-      ))}
+      <ListInput
+        id="account-units"
+        label={t('unitsTitle')}
+        list={['metric', 'imperial'].map((val) => ({
+          val,
+          label: (
+            <div className="flex flex-row items-center w-full justify-between">
+              <span>{t(`${val}Units`)}</span>
+              <NumberBullet nr={val === 'imperial' ? '″' : 'cm'} color="secondary" />
+            </div>
+          ),
+          desc: t(`${val}Unitsd`),
+        }))}
+        current={selection}
+        update={update}
+        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/units`} />}
+      />
       {welcome ? (
         <>
           <ContinueButton btnProps={{ href: nextHref }} link />

@@ -8,6 +8,7 @@ dontHaveAnAccount: Don't have an account yet?
 signIn: Sign in
 signInHere: Sign in here
 signUpHere: Sign up here
+migrateItHere: Migrate it here
 processing: Processing
 emailSent: Email sent
 somethingWentWrong: Something went wrong
@@ -20,3 +21,13 @@ err3: Feel free to try again, or reach out to support so we can assist you.
 signupAgain: Sign up again
 signupLinkExpired: Signup link expired
 createAFreeSewingAccount: Create a FreeSewing account
+# Migrate (v2 => v3) strings below
+haveAV2Account: Have a v2 account?
+dontHaveAV2Account: Don't have a v2 account?
+migrateV2: Migrate your FreeSewing v2 account
+migrateV2Desc: Enter your v2 username & password to migrate your account.
+migrateV2Info: Your v2 account will not be changed, this will only create a v3 account with the v2 account data.
+welcomeMigrateName: Welcome to FreeSewing v3 {name}. Please note that this is still alpha code.
+v3UserAlreadyExists: Cannot migrate over an existing v3 account. Perhaps just sign in instead?
+tryAgain: Try again
+noWorkie: Unable to migrate this account. Typically that means your credentials are invalid.

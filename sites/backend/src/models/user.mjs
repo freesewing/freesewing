@@ -4,6 +4,7 @@ import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypt
 import { replaceImage, importImage, removeImage } from '../utils/cloudflare-images.mjs'
 import { clean, asJson, i18nUrl, writeExportedData } from '../utils/index.mjs'
 import { decorateModel } from '../utils/model-decorator.mjs'
+import { userCard } from '../templates/svg/user-card.mjs'
 
 /*
  * This model handles all user updates
@@ -52,6 +53,35 @@ UserModel.prototype.profile = async function ({ params }) {
 }
 
 /*
+ * Returns an SVG user card
+ * This is an anonymous route returning limited info (profile data)
+ *
+ * @param {params} object - The request (URL) parameters
+ * @returns {UserModel} object - The UserModel
+ */
+UserModel.prototype.profileCard = async function ({ params }) {
+  /*
+   * Is id set?
+   */
+  if (typeof params.id === 'undefined') return this.setResponse(403, 'idMissing')
+
+  /*
+   * Try to find the record in the database
+   * Note that find checks lusername, ehash, and id but we
+   * pass it in the username value as that's what the login
+   * rout does
+   */
+  await this.find({ username: params.id })
+
+  /*
+   * If it does not exist, return 404
+   */
+  if (!this.exists) return this.setResponse(404)
+
+  return this.setResponse200(userCard(this.record.username, this.record.id), true)
+}
+
+/*
  * Loads a user from the database based on the where clause you pass it
  * In addition prepares it for returning all account data
  * This is guarded so it enforces access control and validates input
@@ -69,7 +99,7 @@ UserModel.prototype.allData = async function ({ params }) {
    * Try to find the record in the database
    * Note that find checks lusername, ehash, and id but we
    * pass it in the username value as that's what the login
-   * rout does
+   * route does
    */
   await this.read(
     { id: Number(params.id) },
@@ -1526,7 +1556,7 @@ UserModel.prototype.isLusernameAvailable = async function (lusername) {
 }
 
 /*
- * Helper method that is called by middleware to verifu whether the user
+ * Helper method that is called by middleware to verify whether the user
  * is allowed in. It will update the `lastSeen` field of the user as
  * well as increase the call counter for either JWT or KEY.
  * It will also check whether the user status is ok and consent granted.
@@ -1535,9 +1565,10 @@ UserModel.prototype.isLusernameAvailable = async function (lusername) {
  *
  * @param {id} string - The user ID
  * @param {type} string - The authentication type (one of 'jwt' or 'key')
+ * @param {type} string - The middleware auth payload
  * @returns {success} boolean - True if it worked, false if not
  */
-UserModel.prototype.papersPlease = async function (id, type) {
+UserModel.prototype.papersPlease = async function (id, type, payload) {
   /*
    * Construct data object for update operation
    */
@@ -1556,6 +1587,25 @@ UserModel.prototype.papersPlease = async function (id, type) {
      */
     log.warn({ id }, 'Could not update lastSeen field from middleware')
     return false
+  }
+
+  /*
+   * If it's an API key, update the call call and lastSeen field too
+   */
+  if (type === 'key') {
+    const keyData = {
+      calls: { increment: 1 },
+      lastSeen: new Date(),
+    }
+    try {
+      await this.prisma.apikey.update({ where: { id: payload.id }, data: keyData })
+    } catch (err) {
+      /*
+       * An error means it's not good. Return false
+       */
+      log.warn({ id }, 'Could not update apikey lastSeen field from middleware')
+      return false
+    }
   }
 
   /*
@@ -1581,19 +1631,16 @@ UserModel.prototype.papersPlease = async function (id, type) {
  */
 const migrateUser = (v2) => {
   const email = clean(v2.email)
-  const initial = clean(v2.initial)
+  const initial = v2.initial ? clean(v2.initial) : email
   const data = {
-    bio: v2.bio,
+    bio: v2.bio || '--',
     consent: 0,
     createdAt: v2.time?.created ? new Date(v2.time.created) : new Date(),
     email,
     ehash: hash(email),
-    github: v2.social?.github,
+    data: {},
     ihash: hash(initial),
-    img:
-      v2.picture.slice(-4).toLowerCase() === '.svg' // Don't bother with default avatars
-        ? ''
-        : v2.picture,
+    img: 'default-avatar',
     initial,
     imperial: v2.units === 'imperial',
     language: v2.settings.language,
@@ -1601,10 +1648,6 @@ const migrateUser = (v2) => {
     lusername: v2.username.toLowerCase(),
     mfaEnabled: false,
     newsletter: false,
-    password: JSON.stringify({
-      type: 'v2',
-      data: v2.password,
-    }),
     patron: v2.patron,
     role: v2._id === '5d62aa44ce141a3b816a3dd9' ? 'admin' : 'user',
     status: v2.status === 'active' ? 1 : 0,
@@ -1617,6 +1660,58 @@ const migrateUser = (v2) => {
   return data
 }
 
+/*
+ * This is a special migration route
+ */
+UserModel.prototype.migrate = async function ({ password, v2 }) {
+  //let lut = false
+  const data = migrateUser(v2.account)
+  if (v2.account.consent.profile && (v2.account.consent.model || v2.account.consent.measurements)) {
+    data.consent++
+    if (v2.account.consent.openData) v2.account.consent++
+  }
+  data.password = password
+  await this.read({ ehash: data.ehash })
+  if (!this.record) {
+    /*
+     * Skip images for now
+     */
+    data.img = 'default-avatar'
+    let available = await this.isLusernameAvailable(data.lusername)
+    while (!available) {
+      data.username += '+'
+      data.lusername += '+'
+      available = await this.isLusernameAvailable(data.lusername)
+    }
+    try {
+      await this.createRecord(data)
+    } catch (err) {
+      log.warn(err, 'Could not create user record')
+      return this.setResponse(500, 'createUserFailed')
+    }
+    // That's the user, now load their people as sets
+    const user = {
+      ...v2.account,
+      people: v2.people,
+      patterns: v2.patterns,
+    }
+    if (user.people) await this.Set.migrate(user, this.record.id)
+    //if (user.people) lut = await this.Set.migrate(user, this.record.id)
+    //if (user.patterns) await this.Pattern.import(user, lut, this.record.id)
+  } else {
+    return this.setResponse(400, 'userExists')
+  }
+
+  /*
+   * Decrypt data so we can return it
+   */
+  await this.reveal()
+
+  /*
+   * Looks like the migration was a success. Return a passwordless sign in
+   */
+  return this.signInOk()
+}
 /*
  * This is a special route not available for API users
  */

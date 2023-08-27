@@ -15,4 +15,7 @@ export function importsRoutes(tools) {
 
   // Import users
   app.post('/import/user', (req, res) => Import.user(req, res, tools))
+
+  // Migrate user
+  app.post('/migrate', (req, res) => Import.migrate(req, res, tools))
 }

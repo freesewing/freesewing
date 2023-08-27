@@ -107,6 +107,7 @@ controlTitle: Which user experience do you prefer?
 # img
 imgTitle: How about a picture?
 imgDragAndDropImageHere: Drag and drop an image here
+imgPasteUrlHere: Paste an image location (url) here
 imgSelectImage: Select an image
 
 # newsletter
@@ -124,6 +125,7 @@ unitsTitle: Which units do you prefer?
 
 # username
 usernameTitle: What username would you like?
+usernameAvailable: Username is available
 usernameNotAvailable: Username is not available
 
 # email
@@ -168,10 +170,27 @@ cancel: Cancel
 keySecretWarning: This is the only time you can see the key secret, make sure to copy it.
 keyExpired: This API key has expired
 deleteKeyWarning: Removing an API key cannot be undone.
+keyDocsTitle: Refer to FreeSewing.dev for documentation on using API keys (English only)
+keyDocsMsg: This is an advanced feature aimed at developers or anyone who wants to interact with our backend directly.
+apiCalls: API Calls
 
+# bookmarks
+newBookmark: Add a Bookmark
+bookmark: Bookmark
+bookmarks: Bookmarks
+type: Type
+location: Location
+title: Title
 new: New
+designBookmark: Designs
+patternBookmark: Patterns
+setBookmark: Measurements Sets
+csetBookmark:  Curated Measurements Sets
+docBookmark: Documentation
+customBookmark: Custom Bookmarks
 
 # sets
+set: Measurements Set
 name: Name
 setNameDesc: A name to identify this measurements set
 setNewInfo: Create a new set of measurements which you can then use to generate patterns for.
@@ -191,6 +210,29 @@ privateSet: Private measurements set
 publicSetDesc: Others are allowed to use these measurements to generate or test patterns
 privateSetDesc: These measurments cannot be used by other users or visitors
 permalink: Permalink
+editThing: Edit {thing}
+saveThing: Save {thing}
+filterByDesign: Filter by design
+noFilter: Do not filter
+filterByDesignDocs: If you have a specific design in mind, you can <b>filter by design</b> to only list those measurements that are required for this design.
+setLacksMeasiesForDesign: This set lacks measurements required for this pattern
+setHasMeasiesForDesign: This set has all measurements required for this pattern
+someSetsLacking: Some of your sets lack the measurments required to generate this pattern
+theseSetsReady: These sets have all required measurments to generate this pattern
+chooseSet: Please choose a set of measurements
+patternForWhichSet: Which set of measurements should we generate a pattern for?
+bookmarkedSets: Measurements sets you've bookmarked
+curatedSets: FreeSewing's curated measurements sets
+curatedSetsAbout: Sets of measurements curated by FreeSewing that you can use to test our platform, or your designs.
+curateCuratedSets: Curate our selection of curated measurements sets
+useThisSet: Use this set of measurements
+ownSets: Your own measurements sets
+noOwnSets: You do not have any of your own measurements sets (yet)
+pleaseMtm: Because made-to-measure lies at the heart of what we do, we strongly suggest you take accurate measurements.
+noOwnSetsMsg: You can store your measurements as a measurements set, after which you can generate as many patterns as you want for them.
+measurements: Measurements
+chooseASet: Choose a measurements set
+showImage: Show image
 
 patternNew: Generate a new pattern
 patternNewInfo: Pick a design, add your measurements set, and we'll generate a made-to-measure sewing pattern for you.
@@ -220,3 +262,6 @@ platformTitle: Who are you on { platform }?
 platformWhy: We do not use this data in any way. This is only here so FreeSewing users can connect the dots across platforms.
 
 security: Security
+revealPassword: Reveal password
+hidePassword: Hide password
+

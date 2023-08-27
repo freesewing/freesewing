@@ -7,6 +7,7 @@ import {
   createBranch,
   createPullRequest,
   getFileList,
+  createDiscussion,
 } from '../utils/github.mjs'
 
 /*
@@ -126,13 +127,14 @@ FlowModel.prototype.sendLanguageSuggestion = async function ({ body, user }) {
  *
  * @param {body} object - The request body
  * @param {user} object - The user as loaded by auth middleware
+ * @param {anon} boolean - True if it is an anonymous upload (no auth)
  * @returns {FlowModel} object - The FlowModel
  */
-FlowModel.prototype.uploadImage = async function ({ body, user }) {
+FlowModel.prototype.uploadImage = async function ({ body, user }, anon = false) {
   /*
    * Enforce RBAC
    */
-  if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
+  if (!anon && !this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
   /*
    * Do we have a POST body?
@@ -148,7 +150,8 @@ FlowModel.prototype.uploadImage = async function ({ body, user }) {
    * Is type set and valid?
    */
   if (!body.type) return this.setResponse(400, 'typeMissing')
-  if (!['blog', 'showcase'].includes(body.type)) return this.setResponse(400, 'typeInvalid')
+  if (!['blog', 'showcase', 'support'].includes(body.type))
+    return this.setResponse(400, 'typeInvalid')
 
   /*
    * Is subId set and valid?
@@ -167,7 +170,7 @@ FlowModel.prototype.uploadImage = async function ({ body, user }) {
    */
   const data = {
     id: `${body.type}-${body.slug}${body.subId !== 'main' ? '-' + body.subId : ''}`,
-    metadata: { uploadedBy: user.uid },
+    metadata: { uploadedBy: anon ? 'anonymous' : user.uid },
   }
   if (body.img) data.b64 = body.img
   else if (body.url) data.url = body.url
@@ -177,7 +180,8 @@ FlowModel.prototype.uploadImage = async function ({ body, user }) {
    * Regular users can only update new images, not overwrite images.
    * If not, any user could overwrite any showcase image.
    */
-  const imgId = this.rbac.curator(user) ? await replaceImage(data) : await ensureImage(data)
+  const imgId =
+    !anon && this.rbac.curator(user) ? await replaceImage(data) : await ensureImage(data)
 
   /*
    * Return 200 and the image ID
@@ -250,6 +254,44 @@ FlowModel.prototype.createIssue = async function ({ body }) {
    * Return 201
    */
   return issue ? this.setResponse201({ issue }) : this.setResponse(400)
+}
+
+/*
+ * Create a discussion
+ *
+ * @param {body} object - The request body
+ * @returns {IssueModel} object - The IssueModel
+ */
+FlowModel.prototype.createDiscussion = async function ({ body }) {
+  /*
+   * Is issue creation enabled
+   */
+  if (!this.config.use.github) return this.setResponse(400, 'notEnabled')
+
+  /*
+   * Do we have a POST body?
+   */
+  if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
+
+  /*
+   * Is title set?
+   */
+  if (!body.title) return this.setResponse(400, 'titleMissing')
+
+  /*
+   * Is body set?
+   */
+  if (!body.body) return this.setResponse(400, 'bodyMissing')
+
+  /*
+   * Create the discussion
+   */
+  const discussion = await createDiscussion(body)
+
+  /*
+   * Return 201
+   */
+  return discussion ? this.setResponse201({ discussion }) : this.setResponse(400)
 }
 
 const nonEnWarning = `

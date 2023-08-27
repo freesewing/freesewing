@@ -10,6 +10,7 @@ import { useToast } from 'shared/hooks/use-toast.mjs'
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import { Spinner } from 'shared/components/spinner.mjs'
+import { V3Wip } from 'shared/components/v3-wip.mjs'
 
 export const ns = ['wbsave']
 
@@ -245,6 +246,7 @@ export const SaveView = ({ design, settings, from = false }) => {
   return (
     <div className="m-auto mt-24">
       <h1 className="max-w-6xl m-auto text-center">{t('wbsave:title')}</h1>
+      <V3Wip />
       <div className="px-4 lg:px-12 flex flex-row flex-wrap gap-4 lg:gap-8 justify-around">
         {info.new ? <SaveNewPattern {...saveProps} /> : null}
         {info.edit ? <SaveExistingPattern {...saveProps} from={from} /> : null}

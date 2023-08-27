@@ -11,9 +11,11 @@ datasource db {
 model Apikey {
   id            String    @id @default(uuid())
   aud           String    @default("")
+  calls         Int       @default(0)
   createdAt     DateTime  @default(now())
   expiresAt     DateTime
   name          String    @default("")
+  lastSeen      DateTime?
   level         Int       @default(0)
   secret        String
   user          User     @relation(fields: [userId], references: [id])

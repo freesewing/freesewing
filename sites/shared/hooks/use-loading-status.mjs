@@ -43,16 +43,25 @@ const LoadingStatus = ({ loadingStatus }) => {
   return (
     <div className="fixed top-0 md:top-28 left-0 w-full z-30 md:px-4 md:mx-auto">
       <div
-        className={`w-full md:max-w-2xl m-auto bg-${color} flex flex-row gap-4 p-4 px-4 ${fade}
+        className={`w-full md:max-w-2xl m-auto bg-${color} flex flex-row items-center gap-4 p-4 px-4 ${fade}
         transition-opacity delay-[${timeout * 1000 - 400}ms] duration-300
         md:rounded-lg shadow text-secondary-content text-lg lg:text-xl font-medium md:bg-opacity-90`}
       >
-        {icon}
-        {t(loadingStatus[1])}
+        <span className="shrink-0">{icon}</span>
+        {typeof loadingStatus[1] === 'object' && loadingStatus[1].props
+          ? loadingStatus[1]
+          : t(loadingStatus[1])}
       </div>
     </div>
   )
 }
+
+const LoadingProgress = ({ val = 0, max = 1, msg }) => (
+  <div className="flex flex-col gap-2 w-full grow-0">
+    {msg}
+    <progress className="progress progress-white" value={val} max={max}></progress>
+  </div>
+)
 
 export const useLoadingStatus = () => {
   /*
@@ -80,5 +89,6 @@ export const useLoadingStatus = () => {
     setLoadingStatus,
     loading: loadingStatus[0],
     LoadingStatus: () => <LoadingStatus loadingStatus={loadingStatus} />,
+    LoadingProgress,
   }
 }

@@ -57,4 +57,11 @@ yamlEditViewTitleThing: 'Edit Pattern Configuration for {thing}'
 yamlEditViewError: Issues with YAML
 yamlEditViewErrorDesc: We saved your input, but it might not work for the following reasons
 saveSettings: Save Settings
-
+youUseDefaultValue: You are using a custom value
+youUseCustomValue: You are using the default value
+testOptions: Test design options
+testOptionsDesc: Test how the design adapts to changes in a specific desing option
+testMeasurements: Test measurements
+testMeasurementsDesc: Test how the design adapts to changes to a specific measurement
+testSets: Test measurements sets
+testSetsDesc: Test how the design adapts across different measurements sets

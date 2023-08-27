@@ -261,6 +261,7 @@ export const MainSections = () => {
                   text-secondary-content
                   hover:text-base-content
                   bg-secondary
+                  bg-opacity-20
                   p-2 px-4 rounded
                   bg-base-200
                   rounded-none
@@ -274,7 +275,7 @@ export const MainSections = () => {
               href={`/${page.s}`}
               className={`
                 flex flex-row gap-4 items-center
-                hover:bg-secondary hover:bg-opacity-25 hover:cursor-pointer
+                hover:bg-secondary hover:bg-opacity-10 hover:cursor-pointer
                 p-2 px-4 rounded
                 rounded-none
               `}

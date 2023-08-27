@@ -5,6 +5,7 @@ import {
   ClearAllButton,
   ns as coreMenuNs,
 } from 'shared/components/workbench/menus/core-settings/index.mjs'
+import { V3Wip } from 'shared/components/v3-wip.mjs'
 
 export const ns = ['logs', ...coreMenuNs]
 
@@ -88,6 +89,7 @@ export const LogView = ({ pattern, settings, setSettings }) => {
         <h1 className="grow">{t('logs')}</h1>
         <ClearAllButton setSettings={setSettings} />
       </div>
+      <V3Wip />
       {Object.entries(logs).map(([type, lines], key) => (
         <DraftLogs key={key} {...{ type, lines, t }} />
       ))}

@@ -165,9 +165,14 @@ ApikeyModel.prototype.userApikeys = async function (uid) {
   }
 
   /*
-   * Keys are an array, remove sercrets with map() and decrypt prior to returning
+   * Keys are an array, remove secrets with map() and decrypt prior to returning
    */
-  return keys.map((key) => this.asKeyData(key))
+  const list = []
+  for (const key of keys) {
+    list.push(await this.asKeyData(key))
+  }
+
+  return list
 }
 
 /*
@@ -176,7 +181,7 @@ ApikeyModel.prototype.userApikeys = async function (uid) {
 ApikeyModel.prototype.asKeyData = async function (key) {
   delete key.secret
   delete key.aud
-  key.name = this.decrypt(key.name)
+  key.name = await this.decrypt(key.name)
 
   return key
 }

@@ -6,17 +6,20 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
-import { Choice, Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
+import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
+import { ListInput } from 'shared/components/inputs.mjs'
+import { OkIcon, NoIcon } from 'shared/components/icons.mjs'
+import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
 export const ns = ['account', 'status']
 
-export const CompareSettings = ({ title = false, welcome = false }) => {
+export const CompareSettings = ({ welcome = false }) => {
   // Hooks
   const { account, setAccount } = useAccount()
   const backend = useBackend()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
-  const { t } = useTranslation(ns)
+  const { t, i18n } = useTranslation(ns)
 
   // State
   const [selection, setSelection] = useState(account?.compare ? 'yes' : 'no')
@@ -45,19 +48,27 @@ export const CompareSettings = ({ title = false, welcome = false }) => {
   return (
     <div className="max-w-xl">
       <LoadingStatus />
-      {title ? <h2 className="text-4xl">{t('compareTitle')}</h2> : null}
-      {['yes', 'no'].map((val) => (
-        <Choice val={val} t={t} update={update} current={selection} bool key={val}>
-          <span className="block text-lg leading-5">
-            {selection === 1 && val === 2
-              ? t('showMore')
-              : t(val === 'yes' ? 'compareYes' : 'compareNo')}
-          </span>
-          <span className="block text-normal font-light normal-case pt-1 leading-5">
-            {t(val === 'yes' ? 'compareYesd' : 'compareNod')}
-          </span>
-        </Choice>
-      ))}
+      <ListInput
+        id="account-compare"
+        label={t('compareTitle')}
+        list={['yes', 'no'].map((val) => ({
+          val,
+          label: (
+            <div className="flex flex-row items-center w-full justify-between">
+              <span>{t(val === 'yes' ? 'compareYes' : 'compareNo')}</span>
+              {val === 'yes' ? (
+                <OkIcon className="w-8 h-8 text-success" stroke={4} />
+              ) : (
+                <NoIcon className="w-8 h-8 text-error" stroke={3} />
+              )}
+            </div>
+          ),
+          desc: t(val === 'yes' ? 'compareYesd' : 'compareNod'),
+        }))}
+        current={selection}
+        update={update}
+        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/compare`} />}
+      />
       {welcome ? (
         <>
           <ContinueButton btnProps={{ href: nextHref }} link />
