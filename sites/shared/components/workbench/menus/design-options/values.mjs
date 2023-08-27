@@ -9,7 +9,7 @@ export const PctOptionValue = ({ config, current, settings, changed, patternConf
   return (
     <HighlightedValue changed={changed}>
       {formatPercentage(val)}
-      {config.toAbs && settings.measurements
+      {config.toAbs && settings?.measurements
         ? ` | ${formatMm(
             config.toAbs(val, settings, mergeOptions(settings, patternConfig.options))
           )}`
