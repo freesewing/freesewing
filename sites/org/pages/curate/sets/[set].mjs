@@ -1,13 +1,14 @@
 import dynamic from 'next/dynamic'
 // Hooks
-import { useEffect, useState } from 'react'
-import { useBackend } from 'shared/hooks/use-backend.mjs'
+//import { useEffect, useState } from 'react'
+//import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { capitalize } from 'shared/utils.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { EditCuratedSet, ns as editNs } from 'site/components/curate/sets/edit.mjs'
+//import { EditCuratedSet, ns as editNs } from 'site/components/curate/sets/edit.mjs'
+import { V3Wip } from 'shared/components/v3-wip.mjs'
 
 // Translation namespaces used on this page
 const namespaces = ['curate', 'sets', ...new Set([...editNs, ...pageNs])]
@@ -23,27 +24,28 @@ const DynamicAuthWrapper = dynamic(
 
 const EditCuratedSetPage = ({ page, set }) => {
   // Hooks
-  const backend = useBackend()
-  const [title, setTitle] = useState('...')
+  //const backend = useBackend()
+  //const [title, setTitle] = useState('...')
 
-  useEffect(() => {
-    const getCuratedSet = async () => {
-      const result = await backend.getCuratedSet(set)
-      if (result.success) {
-        setTitle(`# ${set}: ` + result.data.curatedSet[`name${capitalize(page?.locale || 'en')}`])
-      }
-    }
-    getCuratedSet()
-  }, [set, backend, page?.locale])
+  //useEffect(() => {
+  //  const getCuratedSet = async () => {
+  //    const result = await backend.getCuratedSet(set)
+  //    if (result.success) {
+  //      setTitle(`# ${set}: ` + result.data.curatedSet[`name${capitalize(page?.locale || 'en')}`])
+  //    }
+  //  }
+  //  getCuratedSet()
+  //}, [set, backend, page?.locale])
 
   return (
-    <PageWrapper {...page} title={title}>
+    <PageWrapper {...page} title="fixme">
       <DynamicAuthWrapper requiredRole="curator">
-        <EditCuratedSet id={set} />
+        <V3Wip id={set} />
       </DynamicAuthWrapper>
     </PageWrapper>
   )
 }
+//<EditCuratedSet id={set} />
 
 export default EditCuratedSetPage
 
