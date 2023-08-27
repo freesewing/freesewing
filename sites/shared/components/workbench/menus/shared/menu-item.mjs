@@ -1,7 +1,11 @@
-import { ClearIcon, HelpIcon, EditIcon } from 'shared/components/icons.mjs'
+import { ResetIcon, HelpIcon, EditIcon } from 'shared/components/icons.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
 import { useState, useMemo } from 'react'
 import { ListToggle } from './inputs.mjs'
+import { SubAccordion } from 'shared/components/accordion.mjs'
+import { FormControl } from 'shared/components/inputs.mjs'
+import { BoxIcon as GroupIcon, OptionsIcon } from 'shared/components/icons.mjs'
+import { optionType } from 'shared/utils.mjs'
 
 /**
  * Check to see if a value is different from its default
@@ -34,7 +38,7 @@ export const ItemTitle = ({ name, t, current = null, open = false, emoji = '', I
 )
 
 /** @type {String} class to apply to buttons on open menu items */
-const openButtonClass = 'btn btn-xs btn-ghost px-0'
+const iconButtonClass = 'btn btn-xs btn-ghost px-0 text-accent'
 
 /**
  * A generic component for handling a menu item.
@@ -66,6 +70,9 @@ export const MenuItem = ({
   allowOverride = false,
   allowToggle = false,
   control = Infinity,
+  DynamicDocs,
+  docsPath,
+  language,
 }) => {
   // state for knowing whether the override input should be shown
   const [override, setOverride] = useState(false)
@@ -91,68 +98,54 @@ export const MenuItem = ({
 
   // get buttons for open and closed states
   const buttons = []
-  const openButtons = []
-  if (loadDocs)
-    openButtons.push(
-      <button className={openButtonClass} key="help" onClick={(evt) => loadDocs(evt, name)}>
-        <HelpIcon className="w-6 h-6" />
-      </button>
-    )
   if (allowOverride)
-    openButtons.push(
+    buttons.push(
       <button
         key="edit"
-        className={openButtonClass}
+        className={iconButtonClass}
         onClick={(evt) => {
           evt.stopPropagation()
           setOverride(!override)
         }}
       >
-        <EditIcon className={`w-6 h-6 ${override ? 'bg-base-100 text-accent rounded' : ''}`} />
+        <EditIcon
+          className={`w-6 h-6 ${
+            override ? 'bg-secondary text-secondary-content rounded' : 'text-secondary'
+          }`}
+        />
       </button>
     )
   const ResetButton = ({ open, disabled = false }) => (
     <button
-      className={`${open ? openButtonClass : 'btn btn-accent'} disabled:bg-opacity-0`}
+      className={`${iconButtonClass} disabled:bg-opacity-0`}
       disabled={disabled}
       onClick={(evt) => {
         evt.stopPropagation()
         updateFunc([name])
       }}
     >
-      <ClearIcon />
+      <ResetIcon />
     </button>
   )
 
-  if (changed && !allowToggle) {
-    buttons.push(<ResetButton key="clear" />)
-  }
-
-  if (allowToggle) {
-    buttons.push(<ListToggle key="toggle" {...{ config, changed, updateFunc, name }} />)
-  } else {
-    openButtons.push(<ResetButton open disabled={!changed} key="clear" />)
-  }
-
-  // props to pass to the ItemTitle
-  const titleProps = {
-    name,
-    t,
-    current: <Value {...drillProps} />,
-    emoji: config.emoji,
-    Icon: config.icon,
-  }
+  buttons.push(<ResetButton open disabled={!changed} key="clear" />)
 
   return (
-    <Collapse
-      color={changed ? 'accent' : 'secondary'}
-      openTitle={<ItemTitle open {...titleProps} />}
-      title={<ItemTitle {...titleProps} />}
-      buttons={buttons}
-      openButtons={openButtons}
+    <FormControl
+      label={<span className="text-base font-normal">{t([`${name}.d`, name])}</span>}
+      docs={<DynamicDocs path={docsPath} language={language} />}
+      id={config.name}
+      labelBR={<div className="flex flex-row items-center gap-2">{buttons}</div>}
+      labelBL={
+        <span
+          className={`text-base font-medium -mt-2 block ${changed ? 'text-accent' : 'opacity-50'}`}
+        >
+          {t(`workbench:youUse${changed ? 'Default' : 'Custom'}Value`)}
+        </span>
+      }
     >
       <Input {...drillProps} />
-    </Collapse>
+    </FormControl>
   )
 }
 
@@ -175,6 +168,7 @@ export const MenuItem = ({
  * @param  {Function}  updateFunc          the function called by change handlers on inputs within menu items
  * @param  {Boolean}  topLevel             is this group the top level group? false for nested
  * @param  {Function}  t                   translation function
+ * @param  {Function}  getDocsPath         returns the path to the docs for the current item
  */
 export const MenuItemGroup = ({
   collapsible = true,
@@ -192,15 +186,79 @@ export const MenuItemGroup = ({
   updateFunc,
   topLevel = false,
   t,
+  DynamicDocs,
+  language,
+  getDocsPath,
+  isDesignOptionsGroup = false,
 }) => {
   // map the entries in the structure
   const content = Object.entries(structure).map(([itemName, item]) => {
     // if it's the isGroup property, or it is false, it shouldn't be shown
     if (itemName === 'isGroup' || item === false) return null
+    if (!item) return null
 
-    // if the item is not a menu, it's an Item
-    if (!item.isGroup)
-      return (
+    const ItemIcon = item.icon
+      ? item.icon
+      : item.isGroup
+      ? GroupIcon
+      : Icon
+      ? Icon
+      : () => <span role="img">{emoji}</span>
+    const Value = item.isGroup
+      ? () => (
+          <div className="flex flex-row gap-2 items-center font-medium">
+            {Object.keys(item).filter((i) => i !== 'isGroup').length}
+            <OptionsIcon className="w-5 h-5" />
+          </div>
+        )
+      : isDesignOptionsGroup
+      ? values[optionType(item)]
+      : values[itemName]
+      ? values[itemName]
+      : () => <span>¯\_(ツ)_/¯</span>
+
+    return [
+      <div className="flex flex-row items-center justify-between" key="a">
+        <div className="flex flex-row items-center gap-4">
+          <ItemIcon />
+          <h6>{t([`${itemName}.t`, itemName])}</h6>
+        </div>
+        <div className="font-bold">
+          <Value
+            current={currentValues[itemName]}
+            config={item}
+            t={t}
+            changed={wasChanged(currentValues[itemName], item)}
+          />
+        </div>
+      </div>,
+      item.isGroup ? (
+        <MenuItemGroup
+          key={itemName}
+          {...{
+            collapsible: true,
+            // it's the top level if the previous level was top but not wrapped
+            topLevel: topLevel && !collapsible,
+            control,
+            name: itemName,
+            currentValues,
+            structure: item,
+            Icon,
+            Item,
+            values,
+            inputs,
+            loadDocs,
+            passProps,
+            emojis,
+            updateFunc,
+            t,
+            DynamicDocs,
+            language,
+            getDocsPath,
+            isDesignOptionsGroup,
+          }}
+        />
+      ) : (
         <Item
           key={itemName}
           {...{
@@ -215,37 +273,17 @@ export const MenuItemGroup = ({
             loadDocs,
             updateFunc,
             passProps,
+            DynamicDocs,
+            docsPath: getDocsPath(itemName),
+            language,
           }}
         />
-      )
-
-    // otherwise, it's a group
-    return (
-      <MenuItemGroup
-        key={itemName}
-        {...{
-          collapsible: true,
-          // it's the top level if the previous level was top but not wrapped
-          topLevel: topLevel && !collapsible,
-          control,
-          name: itemName,
-          currentValues,
-          structure: item,
-          Icon,
-          Item,
-          values,
-          inputs,
-          loadDocs,
-          passProps,
-          emojis,
-          updateFunc,
-          t,
-        }}
-      />
-    )
+      ),
+    ]
   })
 
   // if it should be wrapped in a collapsible
+  /*
   if (collapsible) {
     // props to give to the group title
     const titleProps = {
@@ -269,7 +307,8 @@ export const MenuItemGroup = ({
       </Collapse>
     )
   }
+  */
 
   //otherwise just return the content
-  return content
+  return <SubAccordion items={content.filter((item) => item !== null)} />
 }

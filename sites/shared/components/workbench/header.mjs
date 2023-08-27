@@ -16,6 +16,9 @@ import {
   DocsIcon,
   SearchIcon,
   MeasieIcon,
+  XrayIcon,
+  EditIcon,
+  ExportIcon,
 } from 'shared/components/icons.mjs'
 import Link from 'next/link'
 import { MenuWrapper } from 'shared/components/workbench/menus/shared/menu-wrapper.mjs'
@@ -24,14 +27,14 @@ export const ns = ['workbench', 'sections']
 
 const icons = {
   test: BeakerIcon,
-  export: BriefcaseIcon,
-  edit: CodeIcon,
+  export: ExportIcon,
+  Edit: EditIcon,
   cut: CutIcon,
   draft: OptionsIcon,
   print: PrintIcon,
   save: UploadIcon,
-  logs: DocsIcon,
-  inspect: SearchIcon,
+  logs: CodeIcon,
+  inspect: XrayIcon,
   measies: MeasieIcon,
 }
 
@@ -128,31 +131,31 @@ const NavIcons = ({ setView, setDense, dense, view }) => {
         label={t('workbench:exportPattern')}
         active={view === 'export'}
       >
-        <BriefcaseIcon className={iconSize} />
+        <ExportIcon className={iconSize} />
       </NavButton>
       <NavButton
         onClick={() => setView('edit')}
         label={t('workbench:editSettings')}
         active={view === 'edit'}
       >
-        <CodeIcon className={iconSize} />
+        <EditIcon className={iconSize} />
       </NavButton>
       <NavButton
         onClick={() => setView('logs')}
         label={t('workbench:patternLogs')}
         active={view === 'logs'}
       >
-        <DocsIcon className={iconSize} />
+        <CodeIcon className={iconSize} />
       </NavButton>
       <NavButton
         onClick={() => setView('inspect')}
         label={t('workbench:patternInspector')}
         active={view === 'inspect'}
       >
-        <SearchIcon className={iconSize} />
+        <XrayIcon className={iconSize} />
       </NavButton>
       <NavButton label={t('workbench:docs')} href="/docs/site/draft">
-        <HelpIcon className={iconSize} />
+        <DocsIcon className={iconSize} />
       </NavButton>
     </>
   )

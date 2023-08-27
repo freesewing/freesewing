@@ -109,14 +109,17 @@ export const ButtonFrame = ({
   children, // Children of the button
   onClick, // onClick handler
   active, // Whether or not to render the button as active/selected
+  accordion = false, // Set this to true to not set a background color when active
 }) => (
   <button
     className={`
     btn btn-ghost btn-secondary
     w-full mt-2 py-4 h-auto content-start
     border-2 border-secondary text-left bg-opacity-20
-    hover:bg-secondary hover:text-secondary-content hover:border-secondary hover:border-solid hover:border-2
-    ${active ? 'bg-secondary border-solid' : 'bg-transparent border-dotted'}
+    ${accordion ? 'hover:bg-transparent' : 'hover:bg-secondary hover:bg-opacity-10'}
+    hover:border-secondary hover:border-solid hover:border-2
+    ${active ? 'border-solid' : 'border-dotted'}
+    ${active && !accordion ? 'bg-secondary' : 'bg-transparent'}
     `}
     onClick={onClick}
   >
@@ -398,9 +401,11 @@ export const ListInput = ({
       <ButtonFrame key={i} active={item.val === current} onClick={() => update(item.val)}>
         <div className="w-full flex flex-col gap-2">
           <div className="w-full text-lg leading-5">{item.label}</div>
-          <div className="w-full text-normal font-normal normal-case pt-1 leading-5">
-            {item.desc}
-          </div>
+          {item.desc ? (
+            <div className="w-full text-normal font-normal normal-case pt-1 leading-5">
+              {item.desc}
+            </div>
+          ) : null}
         </div>
       </ButtonFrame>
     ))}

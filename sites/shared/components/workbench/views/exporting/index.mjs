@@ -9,6 +9,7 @@ import {
   handleExport,
   ns as exportNs,
 } from 'shared/components/workbench/exporting/export-handler.mjs'
+import { V3Wip } from 'shared/components/v3-wip.mjs'
 
 export const ns = ['exporting', exportNs]
 
@@ -45,6 +46,7 @@ export const ExportView = ({ settings, ui, design, Design }) => {
   return (
     <div className="max-w-screen-xl m-auto py-8">
       <h2>{t('export')}</h2>
+      <V3Wip />
       <p className="text-lg sm:text-xl">{t('exportPattern-txt')}</p>
       {link && (
         <Popout link compact>

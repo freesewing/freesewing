@@ -1,8 +1,8 @@
-import { useContext } from 'react'
+//import { useContext } from 'react'
 import { MenuItemGroup } from './menu-item.mjs'
 import { useTranslation } from 'next-i18next'
-import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-import { ModalContext } from 'shared/context/modal-context.mjs'
+//import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
+//import { ModalContext } from 'shared/context/modal-context.mjs'
 
 /**
  * get a loadDocs method for a menu
@@ -11,6 +11,7 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
  * @param  {string} language              the language to get documentation in
  * @return {Function | false}             an event handler that loads does into a modal
  */
+/*
 export const useDocsLoader = (DynamicDocs, getDocsPath, language) => {
   const { setModal } = useContext(ModalContext)
   return DynamicDocs
@@ -27,6 +28,7 @@ export const useDocsLoader = (DynamicDocs, getDocsPath, language) => {
       }
     : false
 }
+*/
 
 /**
  * A component for a collapsible sidebar menu in workbench views
@@ -65,52 +67,39 @@ export const WorkbenchMenu = ({
   Item,
   isFirst,
   children,
+  docsPath,
+  isDesignOptionsGroup,
 }) => {
   // get translation for the menu
   const { t } = useTranslation(ns)
 
   // get a documentation loader
-  const loadDocs = useDocsLoader(DynamicDocs, getDocsPath, language)
+  //const loadDocs = useDocsLoader(DynamicDocs, getDocsPath, language)
 
-  return (
-    <>
-      <div className="px-2" key="header">
-        {control > 4 ? (
-          isFirst ? (
-            ''
-          ) : (
-            <div className="border-t border-solid border-base-300 mx-36"></div>
-          )
-        ) : (
-          <>
-            <h5 className="flex flex-row gap-2 items-center">
-              <Icon />
-              <span>{t(`${name}`)}</span>
-            </h5>
-            <p>{t(`${name}.d`)}</p>
-          </>
-        )}
-      </div>
-      {children || (
-        <MenuItemGroup
-          {...{
-            collapsible: false,
-            topLevel: true,
-            control,
-            currentValues,
-            structure: config,
-            Item,
-            Icon,
-            values,
-            inputs,
-            loadDocs,
-            passProps,
-            updateFunc,
-            emojis,
-            t,
-          }}
-        />
-      )}
-    </>
+  return children ? (
+    children
+  ) : (
+    <MenuItemGroup
+      {...{
+        collapsible: false,
+        topLevel: true,
+        control,
+        currentValues,
+        structure: config,
+        Item,
+        Icon,
+        values,
+        inputs,
+        //loadDocs,
+        passProps,
+        updateFunc,
+        emojis,
+        t,
+        DynamicDocs,
+        getDocsPath,
+        language,
+        isDesignOptionsGroup,
+      }}
+    />
   )
 }

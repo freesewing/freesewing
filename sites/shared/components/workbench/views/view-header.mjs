@@ -11,6 +11,7 @@ import {
   DetailIcon,
   IconWrapper,
   ClearIcon,
+  ResetIcon,
 } from 'shared/components/icons.mjs'
 import { ClearAllButton } from 'shared/components/workbench/menus/core-settings/index.mjs'
 import { shownHeaderSelector } from 'shared/components/wrappers/header.mjs'
@@ -94,7 +95,7 @@ export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
         'lg:top-24'
       )} transition-[top] duration-300 ease-in-out`}
     >
-      <div className="hidden lg:flex flex-row flex-wrap gap-4 py-4 pt-4 w-full bg-neutral text-neutral-content items-center justify-center">
+      <div className="hidden lg:flex flex-row flex-wrap gap-4 py-4 pt-8 w-full bg-neutral text-neutral-content items-center justify-center">
         {headerZoomButtons}
         <Spacer />
         <div className="flex flex-row items-center gap-4">
@@ -156,7 +157,34 @@ export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
         </div>
         <Spacer />
         <div className="flex flex-row items-center gap-4">
-          <ClearAllButton setSettings={setSettings} compact />
+          <button
+            onClick={() => setSettings({ measurements: settings.measurements })}
+            className={`tooltip tooltip-primary tooltip-bottom flex flex-row items-center`}
+            data-tip={t('core-settings:clearSettingsNotMeasurements')}
+            disabled={typeof settings.options === 'undefined'}
+          >
+            <ResetIcon
+              stroke={3.5}
+              className={`w-6 h-6 ${
+                typeof settings.options === 'undefined' ? 'text-base-100 opacity-30' : 'text-accent'
+              }`}
+            />
+          </button>
+          <button
+            onClick={() => setSettings({})}
+            className="tooltip tooltip-primary tooltip-bottom flex flex-row items-center text-warning"
+            data-tip={t('core-settings:clearSettingsAndMeasurements')}
+            disabled={!(settings.measurements && Object.keys(settings.measurements).length > 0)}
+          >
+            <ResetIcon
+              stroke={3.5}
+              className={`w-6 h-6 ${
+                !(settings.measurements && Object.keys(settings.measurements).length > 0)
+                  ? 'text-base-100 opacity-30'
+                  : 'text-warning'
+              }`}
+            />
+          </button>
         </div>
       </div>
     </div>

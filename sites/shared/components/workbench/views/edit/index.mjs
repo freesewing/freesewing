@@ -5,6 +5,7 @@ import { useTranslation } from 'next-i18next'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 import { CloseIcon } from 'shared/components/icons.mjs'
 import { capitalize } from 'shared/utils.mjs'
+import { V3Wip } from 'shared/components/v3-wip.mjs'
 
 export const ns = ['wbedit']
 
@@ -52,6 +53,7 @@ export const EditView = ({ settings, setSettings, design, Design }) => {
   return (
     <div className="max-w-screen-xl m-auto h-screen form-control mt-4 flex flex-col">
       <h2>{t('yamlEditViewTitleThing', { thing: capitalize(design) })}</h2>
+      <V3Wip />
       <div id="editor" className="h-2/3 my-2 overflow-auto flex flex-col">
         {error && (
           <div className={`w-full shadow bg-base-100 p-0 my-4`}>
