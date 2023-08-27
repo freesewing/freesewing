@@ -17,7 +17,7 @@ import { useToast } from 'shared/hooks/use-toast.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
 import { ClearIcon, EditIcon, FilterIcon } from 'shared/components/icons.mjs'
 import Timeago from 'react-timeago'
-import { PageLink } from 'shared/components/page-link.mjs'
+import { PageLink } from 'shared/components/link.mjs'
 import { MeasieRow } from 'shared/components/sets/measie-input.mjs'
 import { ModalDesignPicker } from 'shared/components/modal/design-picker.mjs'
 
@@ -135,8 +135,8 @@ export const EditCuratedSet = ({ id }) => {
   const { setModal } = useContext(ModalContext)
 
   // Hooks
-  const { account, token } = useAccount()
-  const backend = useBackend(token)
+  const { account } = useAccount()
+  const backend = useBackend()
   const {
     t,
     //i18n

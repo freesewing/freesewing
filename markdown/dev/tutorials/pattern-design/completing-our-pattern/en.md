@@ -62,7 +62,7 @@ our snippets:
 function draftBib({
   Path,
   Point,
-  //hightlight-start
+  //highlight-start
   Snippet,
   //highlight-end
   paths,

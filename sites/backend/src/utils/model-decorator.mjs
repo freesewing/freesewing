@@ -221,10 +221,10 @@ export function decorateModel(Model, tools, modelConfig) {
    *
    * Will be used by this.sendResponse()
    */
-  Model.setResponse = function (status = 200, result = 'success', data = {}) {
+  Model.setResponse = function (status = 200, result = 'success', data = {}, raw = false) {
     this.response = {
       status,
-      body: { result, ...data },
+      body: raw ? data : { result, ...data },
     }
     if (status > 201) {
       this.response.body.error = result
@@ -239,8 +239,8 @@ export function decorateModel(Model, tools, modelConfig) {
   /*
    * Helper method to set response code 200, as it's so common
    */
-  Model.setResponse200 = function (data = {}) {
-    return this.setResponse(200, 'success', data)
+  Model.setResponse200 = function (data = {}, raw = false) {
+    return this.setResponse(200, 'success', data, raw)
   }
 
   /*
@@ -268,6 +268,14 @@ export function decorateModel(Model, tools, modelConfig) {
       console.log(err)
     }
     return res.status(this.response.status).type('yaml').send(body)
+  }
+
+  /*
+   * Helper method to send response as SVG
+   */
+  Model.sendSvgResponse = async function (res) {
+    res.setHeader('Content-Type', 'image/svg+xml')
+    return res.status(this.response.status).type('svg').send(this.response.body)
   }
 
   /*

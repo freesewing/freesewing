@@ -1,11 +1,10 @@
 import { siteConfig } from 'site/site.config.mjs'
 import { useContext } from 'react'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
-import Link from 'next/link'
 import { pageHasChildren, isSlugPart } from 'shared/utils.mjs'
 import get from 'lodash.get'
 import { HomeIcon, RightIcon, BulletIcon } from 'shared/components/icons.mjs'
-import { PageLink } from 'shared/components/page-link.mjs'
+import { Link, PageLink } from 'shared/components/link.mjs'
 import orderBy from 'lodash.orderby'
 import { icons } from 'shared/components/navigation/primary.mjs'
 import { useTranslation } from 'next-i18next'
@@ -241,18 +240,14 @@ export const NavLinks = () => {
  */
 export const MainSections = () => {
   // Grab siteNav and slug from the navigation context
-  const { siteNav, slug, locale } = useContext(NavigationContext)
+  const { siteNav, slug } = useContext(NavigationContext)
   const output = []
   for (const page of onlyMainSections(siteNav)) {
     const act = isSlugPart(page.s, slug)
     const txt = (
       <>
-        {icons[page.s] ? (
-          icons[page.s](`w-6 h-6 ${act ? 'text-base-100 opacity-70' : ''}`)
-        ) : (
-          <BulletIcon fill={act} className={`w-6 h-6 ${act ? 'text-base-100 opacity-70' : ''}`} />
-        )}
-        <span className={`font-bold ${act ? 'text-secondary-content' : ''}`}>{page.t}</span>
+        {icons[page.s] ? icons[page.s]('w-6 h-6') : <BulletIcon fill={act} className="w-6 h-6" />}
+        <span className="font-bold">{page.t}</span>
       </>
     )
 
@@ -261,8 +256,8 @@ export const MainSections = () => {
         {act ? (
           <span
             title={page.t}
-            className={`flex flex-row gap-4 items-center text-secondary-content
-              hover:text-base-content bg-secondary p-2 px-4 rounded bg-base-200 rounded-none`}
+            className={`flex flex-row gap-4 items-center bg-opacity-20 text-base-content
+              bg-secondary p-2 px-4 rounded rounded-none`}
           >
             {txt}
           </span>
@@ -271,7 +266,7 @@ export const MainSections = () => {
             href={`/${page.s}`}
             title={page.t}
             className={`
-              flex flex-row gap-4 items-center hover:bg-secondary hover:bg-opacity-25
+              flex flex-row gap-4 items-center hover:bg-secondary hover:bg-opacity-10
               hover:cursor-pointer p-2 px-4 rounded rounded-none`}
           >
             {txt}

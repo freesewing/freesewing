@@ -71,7 +71,7 @@ export const DesignOptions = ({
   isFirst = true,
   DynamicDocs = false,
 }) => {
-  const menuNs = [`o_${design}`, ...ns]
+  const menuNs = [design, ...ns]
   const optionsMenu = useMemo(() => optionsMenuStructure(patternConfig.options), [patternConfig])
   const updateFunc = useCallback(
     (name, value) => update.settings(['options', ...name], value),
@@ -101,6 +101,8 @@ export const DesignOptions = ({
         ns: menuNs,
         passProps: { settings, patternConfig },
         updateFunc,
+        values,
+        isDesignOptionsGroup: true,
       }}
     />
   )

@@ -43,21 +43,6 @@ export const theme = {
   success: colors.green['600'],
   warning: colors.amber['500'],
   error: colors.red['600'],
-  '--theme-gradient': `repeating-linear-gradient(
-     90deg,
-     ${colors.red[500]},
-     ${colors.red[500]} 16.66%,
-     ${colors.orange[500]} 16.66%,
-     ${colors.orange[500]} 33.33%,
-     ${colors.yellow[400]} 33.33%,
-     ${colors.yellow[400]} 50%,
-     ${colors.green[500]} 50%,
-     ${colors.green[500]} 66.66%,
-     ${colors.blue[500]} 66.66%,
-     ${colors.blue[500]} 83.33%,
-     ${colors.violet[500]} 83.33%,
-     ${colors.violet[500]} 100%
-  )`,
   '--code-background-color': colors.neutral['800'],
   '--code-background-highlight-color': '#313131',
   '--code-border-color': colors.neutral['900'],
@@ -125,5 +110,4 @@ export const theme = {
   '--pattern-stroke-2xl': '4px',
   '--pattern-stroke-3xl': '6px',
   '--pattern-stroke-4xl': '8px',
-  stripeTheme: 'stripe',
 }

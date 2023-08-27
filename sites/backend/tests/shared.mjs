@@ -44,6 +44,7 @@ export const setup = async () => {
       subscriber: '📬 ',
       flow: '🪁 ',
       issue: '🚩 ',
+      bookmark: '🔖 ',
     },
     randomString,
   }

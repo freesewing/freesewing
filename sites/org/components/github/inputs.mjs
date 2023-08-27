@@ -60,7 +60,6 @@ export const SlugInput = ({ slug, setSlug, title, slugAvailable }) => {
   useEffect(() => {
     if (title !== slug) setSlug(slugify(title))
   }, [title])
-  console.log(slugAvailable)
 
   return (
     <input

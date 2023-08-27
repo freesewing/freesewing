@@ -13,7 +13,7 @@ const SignUpPage = ({ page }) => {
   return (
     <PageWrapper {...page} layout={BareLayout}>
       <div className="flex flex-col items-center h-screen justify-center text-base-content px-4">
-        <div className="max-w-md">
+        <div className="max-w-2xl">
           <SignUp />
         </div>
         <FreeSewingAnimation className="w-64 mt-8" />

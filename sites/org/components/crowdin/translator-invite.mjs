@@ -4,7 +4,6 @@ import translators from 'site/prebuild/translators.json'
 // Context
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Hooks
-import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useState, useContext } from 'react'
@@ -13,7 +12,7 @@ import { useTranslation } from 'next-i18next'
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
 import { I18nIcon } from 'shared/components/icons.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
-import { WebLink } from 'shared/components/web-link.mjs'
+import { WebLink } from 'shared/components/link.mjs'
 
 export const ns = ['translation', 'locales']
 
@@ -28,8 +27,7 @@ export const TranslatorInvite = () => {
 
   // Hooks
   const { t } = useTranslation(ns)
-  const { token } = useAccount()
-  const backend = useBackend(token)
+  const backend = useBackend()
   const toast = useToast()
 
   // State

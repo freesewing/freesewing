@@ -174,11 +174,6 @@ PatternModel.prototype.guardedRead = async function ({ params, user }) {
   if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
   /*
-   * Check JWT for status
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
-
-  /*
    * Is the id set?
    */
   if (typeof params.id !== 'undefined' && !Number(params.id))
@@ -220,11 +215,6 @@ PatternModel.prototype.guardedClone = async function ({ params, user }) {
    * Enforce RBAC
    */
   if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
-
-  /*
-   * Check JWT
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   /*
    * Attempt to read record from database
@@ -276,11 +266,6 @@ PatternModel.prototype.guardedUpdate = async function ({ params, body, user }) {
    * Enforce RBAC
    */
   if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
-
-  /*
-   * Check JWT
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   /*
    * Attempt to read record from the database
@@ -355,11 +340,6 @@ PatternModel.prototype.guardedDelete = async function ({ params, user }) {
    * Enforce RBAC
    */
   if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
-
-  /*
-   * Check JWT
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   /*
    * Attempt to read record from database

@@ -85,6 +85,9 @@ const baseConfig = {
   db: {
     url: process.env.BACKEND_DB_URL || './db.sqlite',
   },
+  bookmarks: {
+    types: ['set', 'cset', 'pattern', 'design', 'doc', 'custom'],
+  },
   encryption: {
     key: encryptionKey,
   },
@@ -98,8 +101,9 @@ const baseConfig = {
       newsletter: [true, false],
     },
   },
-  github: {
-    token: process.env.BACKEND_GITHUB_TOKEN,
+  exports: {
+    dir: process.env.BACKEND_EXPORTS_DIR || '/tmp',
+    url: process.env.BACKEND_EXPORTS_URL || 'https://static3.freesewing.org/export/',
   },
   crowdin: {
     invites: {
@@ -143,6 +147,8 @@ if (baseConfig.use.github)
   baseConfig.github = {
     token: process.env.BACKEND_GITHUB_TOKEN,
     api: 'https://api.github.com',
+    repoId: 'R_kgDOCFgrqQ',
+    forumCategoryId: 'DIC_kwDOCFgrqc4B9zXs',
     bot: {
       user: process.env.BACKEND_GITHUB_USER || 'freesewing-robot',
       name: process.env.BACKEND_GITHUB_USER_NAME || 'Freesewing bot',
@@ -232,8 +238,9 @@ const config = postConfig(baseConfig)
 export const cloudflareImages = config.cloudflareImages || {}
 export const forwardmx = config.forwardmx || {}
 export const website = config.website
-export const githubToken = config.github.token
+export const github = config.github
 export const instance = config.instance
+export const exports = config.exports
 
 const vars = {
   BACKEND_DB_URL: ['required', 'db.url'],

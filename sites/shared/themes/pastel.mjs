@@ -34,19 +34,6 @@ export const theme = {
   '--btn-warning-content': colors.orange[900],
   error: colors.red['400'],
   '--btn-error-content': colors.red[900],
-  '--theme-gradient': `repeating-linear-gradient(
-    90deg,
-    ${colors.red[400]} 0,
-    ${colors.orange[400]} 11%,
-    ${colors.yellow[400]} 22%,
-    ${colors.lime[400]} 33%,
-    ${colors.green[400]} 44%,
-    ${colors.cyan[400]} 55%,
-    ${colors.blue[400]} 66%,
-    ${colors.indigo[400]} 77%,
-    ${colors.violet[400]} 88%,
-    ${colors.purple[400]} 100%
-  )`,
   '--code-background-color': colors.neutral['800'],
   '--code-background-highlight-color': '#313131',
   '--code-border-color': colors.neutral['900'],
@@ -119,5 +106,4 @@ export const theme = {
   '--pattern-sample-8': colors.violet['500'],
   '--pattern-sample-9': colors.fuchsia['500'],
   '--pattern-sample-10': colors.rose['500'],
-  stripeTheme: 'stripe',
 }

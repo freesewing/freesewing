@@ -24,7 +24,7 @@ const Box = ({ title, Icon, description, href }) => {
   const linkProps = {
     href,
     className:
-      'p-8 -ml-4 -mr-4 md:m-0 rounded-none md:rounded-xl md:shadow hover:bg-secondary bg-base-200 hover:text-secondary-content',
+      'p-8 -ml-4 -mr-4 md:m-0 rounded-none md:rounded-xl md:shadow hover:bg-secondary bg-base-200 hover:bg-opacity-10',
   }
 
   const inner = (

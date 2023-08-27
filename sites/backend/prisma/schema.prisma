@@ -11,11 +11,22 @@ datasource db {
 model Apikey {
   id            String    @id @default(uuid())
   aud           String    @default("")
+  calls         Int       @default(0)
   createdAt     DateTime  @default(now())
   expiresAt     DateTime
   name          String    @default("")
+  lastSeen      DateTime?
   level         Int       @default(0)
   secret        String
+  user          User     @relation(fields: [userId], references: [id])
+  userId        Int
+}
+
+model Bookmark {
+  id            Int      @id @default(autoincrement())
+  type          String   @default("")
+  title         String   @default("")
+  url           String   @default("")
   user          User     @relation(fields: [userId], references: [id])
   userId        Int
 }
@@ -43,6 +54,7 @@ model User {
   id            Int       @id @default(autoincrement())
   apikeys       Apikey[]
   bio           String    @default("")
+  bookmarks     Bookmark[]
   compare       Boolean   @default(true)
   confirmations Confirmation[]
   consent       Int       @default(0)

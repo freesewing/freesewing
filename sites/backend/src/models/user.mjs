@@ -1,9 +1,10 @@
 import jwt from 'jsonwebtoken'
 import { log } from '../utils/log.mjs'
 import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
-import { replaceImage, importImage } from '../utils/cloudflare-images.mjs'
-import { clean, asJson, i18nUrl } from '../utils/index.mjs'
+import { replaceImage, importImage, removeImage } from '../utils/cloudflare-images.mjs'
+import { clean, asJson, i18nUrl, writeExportedData } from '../utils/index.mjs'
 import { decorateModel } from '../utils/model-decorator.mjs'
+import { userCard } from '../templates/svg/user-card.mjs'
 
 /*
  * This model handles all user updates
@@ -52,6 +53,164 @@ UserModel.prototype.profile = async function ({ params }) {
 }
 
 /*
+ * Returns an SVG user card
+ * This is an anonymous route returning limited info (profile data)
+ *
+ * @param {params} object - The request (URL) parameters
+ * @returns {UserModel} object - The UserModel
+ */
+UserModel.prototype.profileCard = async function ({ params }) {
+  /*
+   * Is id set?
+   */
+  if (typeof params.id === 'undefined') return this.setResponse(403, 'idMissing')
+
+  /*
+   * Try to find the record in the database
+   * Note that find checks lusername, ehash, and id but we
+   * pass it in the username value as that's what the login
+   * rout does
+   */
+  await this.find({ username: params.id })
+
+  /*
+   * If it does not exist, return 404
+   */
+  if (!this.exists) return this.setResponse(404)
+
+  return this.setResponse200(userCard(this.record.username, this.record.id), true)
+}
+
+/*
+ * Loads a user from the database based on the where clause you pass it
+ * In addition prepares it for returning all account data
+ * This is guarded so it enforces access control and validates input
+ *
+ * @param {params} object - The request (URL) parameters
+ * @returns {UserModel} object - The UserModel
+ */
+UserModel.prototype.allData = async function ({ params }) {
+  /*
+   * Is id set?
+   */
+  if (typeof params.id === 'undefined') return this.setResponse(403, 'idMissing')
+
+  /*
+   * Try to find the record in the database
+   * Note that find checks lusername, ehash, and id but we
+   * pass it in the username value as that's what the login
+   * route does
+   */
+  await this.read(
+    { id: Number(params.id) },
+    { apikeys: true, bookmarks: true, patterns: true, sets: true }
+  )
+
+  /*
+   * If it does not exist, return 404
+   */
+  if (!this.exists) return this.setResponse(404)
+
+  return this.setResponse200({
+    result: 'success',
+    data: this.asData(),
+  })
+}
+
+/*
+ * Exports all account data
+ *
+ * @param {user} object - The user as loaded by the authentication middleware
+ * @returns {UserModel} object - The UserModel
+ */
+UserModel.prototype.exportAccount = async function ({ user }) {
+  /*
+   * Read the record from the database
+   */
+  await this.read({ id: user.uid }, { apikeys: true, bookmarks: true, patterns: true, sets: true })
+
+  /*
+   * If it does not exist, return 404
+   */
+  if (!this.exists) return this.setResponse(404)
+
+  return this.setResponse200({
+    result: 'success',
+    data: writeExportedData(this.asExport()),
+  })
+}
+
+/*
+ * Restricts processing of account data
+ *
+ * @param {user} object - The user as loaded by the authentication middleware
+ * @returns {UserModel} object - The UserModel
+ */
+UserModel.prototype.restrictAccount = async function ({ user }) {
+  /*
+   * Read the record from the database
+   */
+  await this.read({ id: user.uid }, { apikeys: true, bookmarks: true, patterns: true, sets: true })
+
+  /*
+   * If it does not exist, return 404
+   */
+  if (!this.exists) return this.setResponse(404)
+
+  /*
+   * Update status to block the account
+   */
+  await this.update({ status: -1 })
+
+  return this.setResponse200({
+    result: 'success',
+    data: {},
+  })
+}
+
+/*
+ * Remove account
+ *
+ * @param {user} object - The user as loaded by the authentication middleware
+ * @returns {UserModel} object - The UserModel
+ */
+UserModel.prototype.removeAccount = async function ({ user }) {
+  /*
+   * Read the record from the database
+   */
+  await this.read({ id: user.uid }, { apikeys: true, bookmarks: true, patterns: true, sets: true })
+
+  /*
+   * If it does not exist, return 404
+   */
+  if (!this.exists) return this.setResponse(404)
+
+  /*
+   * Remove user image
+   */
+  await removeImage(`user-${this.record.ihash}`)
+
+  /*
+   * Remove account
+   */
+  try {
+    await this.prisma.pattern.deleteMany({ where: { userId: user.uid } })
+    await this.prisma.set.deleteMany({ where: { userId: user.uid } })
+    await this.prisma.bookmark.deleteMany({ where: { userId: user.uid } })
+    await this.prisma.apikey.deleteMany({ where: { userId: user.uid } })
+    await this.prisma.confirmation.deleteMany({ where: { userId: user.uid } })
+    await this.delete()
+  } catch (err) {
+    log.warn(err, 'Error while removing account')
+  }
+
+  return this.setResponse200({
+    result: 'success',
+    data: {},
+  })
+}
+
+/*
  * Loads a user from the database based on the where clause you pass it
  * In addition prepares it for returning the account data
  * This is guarded so it enforces access control and validates input
@@ -64,11 +223,6 @@ UserModel.prototype.guardedRead = async function (where, { user }) {
    * Enforce RBAC
    */
   if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
-
-  /*
-   * Ensure the account is active
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   /*
    * Read record from database
@@ -813,11 +967,6 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
   if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
   /*
-   * Make sure the account is in a state where it's allowed to do this
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
-
-  /*
    * Create data to update the record
    */
   const data = {}
@@ -841,7 +990,11 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
    */
   for (const field of this.jsonFields) {
     if (typeof body[field] !== 'undefined') {
-      if (typeof body[field] === 'object') data[field] = body[field]
+      if (typeof body[field] === 'object')
+        data[field] = {
+          ...this.clear[field],
+          ...body[field],
+        }
       else log.warn(body, `Tried to set JDON field ${field} to a non-object`)
     }
   }
@@ -867,15 +1020,21 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
   /*
    * Image (img)
    */
-  if (typeof body.img === 'string')
-    data.img = await replaceImage({
+  if (typeof body.img === 'string') {
+    const imgData = {
       id: `user-${this.record.ihash}`,
       metadata: {
         user: user.uid,
         ihash: this.record.ihash,
       },
-      b64: body.img,
-    })
+    }
+    /*
+     * Allow both a base64 encoded binary image or an URL
+     */
+    if (body.img.slice(0, 4) === 'http') imgData.url = body.img
+    else imgData.b64 = body.img
+    data.img = await replaceImage(imgData)
+  }
 
   /*
    * Now update the database record
@@ -1019,11 +1178,6 @@ UserModel.prototype.guardedMfaUpdate = async function ({ body, user, ip }) {
    * Enforce RBAC
    */
   if (!this.rbac.user(user)) return this.setResponse(403, 'insufficientAccessLevel')
-
-  /*
-   * Ensure account is in the proper state to do this
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   /*
    * If MFA is active and it is an attempt to active it, return 400
@@ -1176,6 +1330,7 @@ UserModel.prototype.asProfile = function () {
     id: this.record.id,
     bio: this.clear.bio,
     img: this.clear.img,
+    ihash: this.record.ihash,
     patron: this.record.patron,
     role: this.record.role,
     username: this.record.username,
@@ -1200,7 +1355,7 @@ UserModel.prototype.asAccount = function () {
     createdAt: this.record.createdAt,
     email: this.clear.email,
     data: this.clear.data,
-    ihash: this.ihash,
+    ihash: this.record.ihash,
     img: this.clear.img,
     imperial: this.record.imperial,
     initial: this.clear.initial,
@@ -1220,6 +1375,46 @@ UserModel.prototype.asAccount = function () {
      * Add this so we can give a note to users about migrating their password
      */
     passwordType: JSON.parse(this.record.password).type,
+  }
+}
+
+/*
+ * Returns all user data (that is not included in the account data)
+ *
+ * @return {account} object - The account data as a plain object
+ */
+UserModel.prototype.asData = function () {
+  /*
+   * Nothing to do here but construct the object to return
+   */
+  return {
+    apikeys: this.record.apikeys
+      ? this.record.apikeys.map((key) => {
+          delete key.secret
+          delete key.aud
+          key.name = this.decrypt(key.name)
+
+          return key
+        })
+      : [],
+    bookmarks: this.record.bookmarks || [],
+    patterns: this.record.patterns || [],
+    sets: this.record.sets || [],
+  }
+}
+
+/*
+ * Returns all user data to be exported
+ *
+ * @return {account} object - The account data as a plain object
+ */
+UserModel.prototype.asExport = function () {
+  /*
+   * Get both account data and all data
+   */
+  return {
+    ...this.asAccount(),
+    ...this.asData(),
   }
 }
 
@@ -1361,7 +1556,7 @@ UserModel.prototype.isLusernameAvailable = async function (lusername) {
 }
 
 /*
- * Helper method that is called by middleware to verifu whether the user
+ * Helper method that is called by middleware to verify whether the user
  * is allowed in. It will update the `lastSeen` field of the user as
  * well as increase the call counter for either JWT or KEY.
  * It will also check whether the user status is ok and consent granted.
@@ -1370,9 +1565,10 @@ UserModel.prototype.isLusernameAvailable = async function (lusername) {
  *
  * @param {id} string - The user ID
  * @param {type} string - The authentication type (one of 'jwt' or 'key')
+ * @param {type} string - The middleware auth payload
  * @returns {success} boolean - True if it worked, false if not
  */
-UserModel.prototype.papersPlease = async function (id, type) {
+UserModel.prototype.papersPlease = async function (id, type, payload) {
   /*
    * Construct data object for update operation
    */
@@ -1391,6 +1587,25 @@ UserModel.prototype.papersPlease = async function (id, type) {
      */
     log.warn({ id }, 'Could not update lastSeen field from middleware')
     return false
+  }
+
+  /*
+   * If it's an API key, update the call call and lastSeen field too
+   */
+  if (type === 'key') {
+    const keyData = {
+      calls: { increment: 1 },
+      lastSeen: new Date(),
+    }
+    try {
+      await this.prisma.apikey.update({ where: { id: payload.id }, data: keyData })
+    } catch (err) {
+      /*
+       * An error means it's not good. Return false
+       */
+      log.warn({ id }, 'Could not update apikey lastSeen field from middleware')
+      return false
+    }
   }
 
   /*
@@ -1416,19 +1631,16 @@ UserModel.prototype.papersPlease = async function (id, type) {
  */
 const migrateUser = (v2) => {
   const email = clean(v2.email)
-  const initial = clean(v2.initial)
+  const initial = v2.initial ? clean(v2.initial) : email
   const data = {
-    bio: v2.bio,
+    bio: v2.bio || '--',
     consent: 0,
     createdAt: v2.time?.created ? new Date(v2.time.created) : new Date(),
     email,
     ehash: hash(email),
-    github: v2.social?.github,
+    data: {},
     ihash: hash(initial),
-    img:
-      v2.picture.slice(-4).toLowerCase() === '.svg' // Don't bother with default avatars
-        ? ''
-        : v2.picture,
+    img: 'default-avatar',
     initial,
     imperial: v2.units === 'imperial',
     language: v2.settings.language,
@@ -1436,10 +1648,6 @@ const migrateUser = (v2) => {
     lusername: v2.username.toLowerCase(),
     mfaEnabled: false,
     newsletter: false,
-    password: JSON.stringify({
-      type: 'v2',
-      data: v2.password,
-    }),
     patron: v2.patron,
     role: v2._id === '5d62aa44ce141a3b816a3dd9' ? 'admin' : 'user',
     status: v2.status === 'active' ? 1 : 0,
@@ -1452,6 +1660,58 @@ const migrateUser = (v2) => {
   return data
 }
 
+/*
+ * This is a special migration route
+ */
+UserModel.prototype.migrate = async function ({ password, v2 }) {
+  //let lut = false
+  const data = migrateUser(v2.account)
+  if (v2.account.consent.profile && (v2.account.consent.model || v2.account.consent.measurements)) {
+    data.consent++
+    if (v2.account.consent.openData) v2.account.consent++
+  }
+  data.password = password
+  await this.read({ ehash: data.ehash })
+  if (!this.record) {
+    /*
+     * Skip images for now
+     */
+    data.img = 'default-avatar'
+    let available = await this.isLusernameAvailable(data.lusername)
+    while (!available) {
+      data.username += '+'
+      data.lusername += '+'
+      available = await this.isLusernameAvailable(data.lusername)
+    }
+    try {
+      await this.createRecord(data)
+    } catch (err) {
+      log.warn(err, 'Could not create user record')
+      return this.setResponse(500, 'createUserFailed')
+    }
+    // That's the user, now load their people as sets
+    const user = {
+      ...v2.account,
+      people: v2.people,
+      patterns: v2.patterns,
+    }
+    if (user.people) await this.Set.migrate(user, this.record.id)
+    //if (user.people) lut = await this.Set.migrate(user, this.record.id)
+    //if (user.patterns) await this.Pattern.import(user, lut, this.record.id)
+  } else {
+    return this.setResponse(400, 'userExists')
+  }
+
+  /*
+   * Decrypt data so we can return it
+   */
+  await this.reveal()
+
+  /*
+   * Looks like the migration was a success. Return a passwordless sign in
+   */
+  return this.signInOk()
+}
 /*
  * This is a special route not available for API users
  */

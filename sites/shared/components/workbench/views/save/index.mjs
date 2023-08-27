@@ -4,13 +4,13 @@ import { capitalize, shortDate } from 'shared/utils.mjs'
 import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
-import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 // Context
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import { Spinner } from 'shared/components/spinner.mjs'
+import { V3Wip } from 'shared/components/v3-wip.mjs'
 
 export const ns = ['wbsave']
 
@@ -222,8 +222,7 @@ const SaveExistingPattern = ({
 export const SaveView = ({ design, settings, from = false }) => {
   // Hooks
   const { t } = useTranslation(ns)
-  const { token } = useAccount()
-  const backend = useBackend(token)
+  const backend = useBackend()
   const router = useRouter()
   const toast = useToast()
   // Context
@@ -247,6 +246,7 @@ export const SaveView = ({ design, settings, from = false }) => {
   return (
     <div className="m-auto mt-24">
       <h1 className="max-w-6xl m-auto text-center">{t('wbsave:title')}</h1>
+      <V3Wip />
       <div className="px-4 lg:px-12 flex flex-row flex-wrap gap-4 lg:gap-8 justify-around">
         {info.new ? <SaveNewPattern {...saveProps} /> : null}
         {info.edit ? <SaveExistingPattern {...saveProps} from={from} /> : null}

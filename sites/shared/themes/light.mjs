@@ -61,32 +61,32 @@ export const theme = {
   // base-200: A slightly darker background color, used for hovers and so on
   'base-200': colors.neutral['100'],
   // base-300: A shade midway between dark and light
-  'base-300': colors.neutral['500'],
+  'base-300': colors.neutral['300'],
   // base-content: The default text color for a regular page (docs and so on)
   'base-content': colors.neutral['700'],
 
   // primary: The main brand color and color of the primary button
-  primary: colors.violet['500'],
+  primary: colors.violet['600'],
   // primary-focus: The :hover color for the primary button
-  'primary-focus': colors.violet['600'],
+  'primary-focus': colors.violet['500'],
   // primary-content: The text color on a primary button
   'primary-content': colors.neutral['50'],
 
   // secondary: The link color on default backgrounds (base-100)
-  secondary: colors.sky['500'],
+  secondary: colors.sky['600'],
   // secondary-focus: The :hover link color for default backgrounds. Or:
   // secondary-focus: An alternative link color for on dark backgrounds
-  'secondary-focus': colors.sky['600'],
+  'secondary-focus': colors.sky['500'],
   // secondary-content: The text color on a secondary button
-  'secondary-content': colors.sky['50'],
+  'secondary-content': colors.neutral['50'],
 
   // accent: The accent color is used to highlight active things
   // Should be something is positive/neutral. Avoid red or orange.
-  accent: colors.fuchsia['500'],
+  accent: colors.fuchsia['600'],
   // accent-focus: The :hover color for the accent button
-  'accent-focus': colors.fuchsia['600'],
+  'accent-focus': colors.fuchsia['500'],
   // accent-content: The text color for the accent button
-  'accent-content': colors.fuchsia['50'],
+  'accent-content': colors.neutral['50'],
 
   // neutral: Used as the background for the footer and navigation on desktop
   // Should always be dark
@@ -108,7 +108,7 @@ export const theme = {
   '--btn-success-content': colors.neutral[50],
   // warning: We don't do warnings, but this is used for the tabs under code blocks
   // and a couple of other UI elements.
-  warning: colors.orange['500'],
+  warning: colors.orange['600'],
   // Text color on the warning button
   '--btn-warning-content': colors.neutral[50],
   // error: Used rarely, but if it is it's in notifications indicating success
@@ -117,24 +117,6 @@ export const theme = {
   error: colors.red['600'],
   // Text color on the error button
   '--btn-error-content': colors.neutral[50],
-
-  /* THEME GRADIENT
-   *
-   * This is used as a border & loading indicator
-   */
-  '--theme-gradient': `repeating-linear-gradient(
-    90deg,
-    ${colors.red[400]} 0,
-    ${colors.orange[400]} 11%,
-    ${colors.yellow[400]} 22%,
-    ${colors.lime[400]} 33%,
-    ${colors.green[400]} 44%,
-    ${colors.cyan[400]} 55%,
-    ${colors.blue[400]} 66%,
-    ${colors.indigo[400]} 77%,
-    ${colors.violet[400]} 88%,
-    ${colors.purple[400]} 100%
-  )`,
 
   /* CODE HIGHLIGHTING COLORS
    *
@@ -294,18 +276,4 @@ export const theme = {
   '--pattern-sample-8': colors.violet['500'],
   '--pattern-sample-9': colors.fuchsia['500'],
   '--pattern-sample-10': colors.rose['500'],
-
-  /*
-   * Stripe theme
-   *
-   * We use React components provided by the Stripe SDK in the patron
-   * payment dialog. These can be further customized but it is best to
-   * start from a theme that resembles the current somewhat.
-   * You can set the stripe theme name here for that reason. The rest
-   * (including further customization) will be handled auto-magically.
-   *
-   * For a list of available themes to start from see the Stripe docs:
-   * https://stripe.com/docs/elements/appearance-api
-   */
-  stripeTheme: 'stripe',
 }

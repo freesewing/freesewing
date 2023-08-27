@@ -6,6 +6,7 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 import { ns as compareNs } from 'shared/components/account/compare.mjs'
+import { WelcomeWrapper } from './index.mjs'
 
 // Translation namespaces used on this page
 const namespaces = [...new Set([...compareNs, ...authNs, ...pageNs])]
@@ -14,10 +15,6 @@ const namespaces = [...new Set([...compareNs, ...authNs, ...pageNs])]
  * Some things should never generated as SSR
  * So for these, we run a dynamic import and disable SSR rendering
  */
-const DynamicAuthWrapper = dynamic(
-  () => import('shared/components/wrappers/auth/index.mjs').then((mod) => mod.AuthWrapper),
-  { ssr: false }
-)
 const DynamicCompare = dynamic(
   () => import('shared/components/account/compare.mjs').then((mod) => mod.CompareSettings),
   { ssr: false }
@@ -31,11 +28,9 @@ const DynamicCompare = dynamic(
  */
 const WelcomeComparePage = ({ page }) => (
   <PageWrapper {...page} layout={BareLayout} footer={false}>
-    <DynamicAuthWrapper>
-      <div className="m-auto max-w-lg text-center lg:mt-4 p-8">
-        <DynamicCompare title welcome />
-      </div>
-    </DynamicAuthWrapper>
+    <WelcomeWrapper>
+      <DynamicCompare title welcome />
+    </WelcomeWrapper>
   </PageWrapper>
 )
 
