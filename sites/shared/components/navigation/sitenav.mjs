@@ -246,12 +246,8 @@ export const MainSections = () => {
     const act = isSlugPart(page.s, slug)
     const txt = (
       <>
-        {icons[page.s] ? (
-          icons[page.s](`w-6 h-6 ${act ? 'text-base-100 opacity-70' : ''}`)
-        ) : (
-          <BulletIcon fill={act} className={`w-6 h-6 ${act ? 'text-base-100 opacity-70' : ''}`} />
-        )}
-        <span className={`font-bold ${act ? 'text-secondary-content' : ''}`}>{page.t}</span>
+        {icons[page.s] ? icons[page.s]('w-6 h-6') : <BulletIcon fill={act} className="w-6 h-6" />}
+        <span className="font-bold">{page.t}</span>
       </>
     )
 
@@ -260,8 +256,8 @@ export const MainSections = () => {
         {act ? (
           <span
             title={page.t}
-            className={`flex flex-row gap-4 items-center text-secondary-content
-              hover:text-base-content bg-secondary p-2 px-4 rounded bg-base-200 rounded-none`}
+            className={`flex flex-row gap-4 items-center bg-opacity-20 text-base-content
+              bg-secondary p-2 px-4 rounded rounded-none`}
           >
             {txt}
           </span>
@@ -270,7 +266,7 @@ export const MainSections = () => {
             href={`/${page.s}`}
             title={page.t}
             className={`
-              flex flex-row gap-4 items-center hover:bg-secondary hover:bg-opacity-25
+              flex flex-row gap-4 items-center hover:bg-secondary hover:bg-opacity-10
               hover:cursor-pointer p-2 px-4 rounded rounded-none`}
           >
             {txt}
