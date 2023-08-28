@@ -9,8 +9,15 @@ import { validateEmail, validateTld, horFlexClasses } from 'shared/utils.mjs'
 // Components
 import Link from 'next/link'
 import { Robot } from 'shared/components/robot/index.mjs'
-import { EmailValidButton } from 'shared/components/buttons/email-valid-button.mjs'
-import { LeftIcon, HelpIcon, GoogleIcon, GitHubIcon } from 'shared/components/icons.mjs'
+import {
+  LeftIcon,
+  HelpIcon,
+  GoogleIcon,
+  GitHubIcon,
+  KeyIcon,
+  SettingsIcon,
+  EmailIcon,
+} from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { EmailInput } from 'shared/components/inputs.mjs'
 
@@ -22,9 +29,6 @@ const DarkLink = ({ href, txt }) => (
     {txt}
   </Link>
 )
-
-// FIXME: Hiding this now as it does nothing yet
-const OAUTH = false
 
 export const SignUp = () => {
   // Context
@@ -88,7 +92,7 @@ export const SignUp = () => {
   const loadingClasses = loading ? 'opacity-50' : ''
 
   return (
-    <>
+    <div className="w-full">
       <h2 className={`text-inherit ${loadingClasses}`}>
         {result ? (
           result === 'success' ? (
@@ -142,35 +146,38 @@ export const SignUp = () => {
               placeholder={t('emailAddress')}
               update={updateEmail}
             />
-            <EmailValidButton
-              email={email}
-              t={t}
-              validText={t('emailSignupLink')}
-              invalidText={t('pleaseProvideValidEmail')}
-              btnProps={{ type: 'submit' }}
-            />
+            <button
+              className={`btn btn-primary btn-lg mt-2 w-full ${horFlexClasses} disabled:bg-neutral disabled:text-neutral-content disabled:opacity-50`}
+              type="submit"
+              disabled={!emailValid}
+            >
+              <span className="hidden md:block">
+                <EmailIcon />
+              </span>
+              {emailValid ? t('emailSignupLink') : t('pleaseProvideValidEmail')}
+              <span className="hidden md:block">
+                <EmailIcon />
+              </span>
+            </button>
           </form>
-          {OAUTH && (
-            <div className="grid grid-cols-2 gap-2 items-center mt-4">
-              {['Google', 'Github'].map((provider) => (
-                <button id={provider} className={`${horFlexClasses} btn btn-neutral btn-outline`}>
-                  {provider === 'Google' ? <GoogleIcon stroke={0} /> : <GitHubIcon />}
-                  <span>{t('signUpWithProvider', { provider })}</span>
-                </button>
-              ))}
-            </div>
-          )}
-          <p className={`text-inherit text-sm mt-0 opacity-80 text-center ${loadingClasses}`}>
-            <span className="block md:inline mb-2 md:mb-0">
-              {t('alreadyHaveAnAccount')} <DarkLink href="/signin" txt={t('signInHere')} />
-            </span>
-            <span className="hidden md:inline px-4">|</span>
-            <span className="block md:inline mb-2 md:mb-0">
-              {t('haveAV2Account')} <DarkLink href="/migrate" txt={t('migrateItHere')} />
-            </span>
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center mt-4">
+            {['Google', 'Github'].map((provider) => (
+              <button id={provider} className={`${horFlexClasses} btn btn-secondary`}>
+                {provider === 'Google' ? <GoogleIcon stroke={0} /> : <GitHubIcon />}
+                <span>{t('signUpWithProvider', { provider })}</span>
+              </button>
+            ))}
+          </div>
+          <Link className={`${horFlexClasses} btn btn-lg btn-neutral mt-2`} href="/signup">
+            <KeyIcon className="h-10 w-10" />
+            {t('signInHere')}
+          </Link>
+          <Link className={`${horFlexClasses} btn btn-neutral btn-outline mt-2`} href="/migrate">
+            <SettingsIcon />
+            {t('migrateV2Account')}
+          </Link>
         </>
       )}
-    </>
+    </div>
   )
 }

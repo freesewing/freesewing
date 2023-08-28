@@ -22,4 +22,4 @@ regainAccess: Re-gain access
 notFound: No such user was found
 clickSigninLink: Click the sign-in link in that email to sign in to your FreeSewing account.
 oneMomentPlease: One moment please
-
+signInWithProvider: Sign in with { provider }

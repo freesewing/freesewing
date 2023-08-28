@@ -32,3 +32,4 @@ v3UserAlreadyExists: Cannot migrate over an existing v3 account. Perhaps just si
 tryAgain: Try again
 noWorkie: Unable to migrate this account. Typically that means your credentials are invalid.
 signUpWithProvider: Sign up with {provider}
+migrateV2Account: Migrate your v2 account
