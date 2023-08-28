@@ -49,6 +49,8 @@ export const TestView = ({
         ui,
         update,
         control: account.control,
+        account,
+        design,
         setSettings,
         title: <h2>{title}</h2>,
         pattern: <PanZoomPattern {...{ renderProps }} />,
