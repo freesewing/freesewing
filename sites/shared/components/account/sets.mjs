@@ -850,17 +850,17 @@ export const UserSetPicker = ({ design, t, href, clickHandler }) => {
       <ul className="list list-inside list-disc ml-4">
         <li>
           <button className={linkClasses} onClick={() => scrollTo('ownsets')}>
-            {t('ownSets')}
+            {t('account:ownSets')}
           </button>
         </li>
         <li>
           <button className={linkClasses} onClick={() => scrollTo('bookmarkedsets')}>
-            {t('bookmarkedSets')}
+            {t('account:bookmarkedSets')}
           </button>
         </li>
         <li>
           <button className={linkClasses} onClick={() => scrollTo('curatedsets')}>
-            {t('curatedSets')}
+            {t('account:curatedSets')}
           </button>
         </li>
       </ul>
@@ -965,7 +965,7 @@ export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
 
   return (
     <>
-      <h3 id="bookmarkedsets">{t('account:curatedSets')}</h3>
+      <h3 id="curatedsets">{t('account:curatedSets')}</h3>
       <V3Wip />
       {tags.map((tag) => (
         <Tag onClick={() => addFilter(tag)} tag={tag} key={tag}>
