@@ -31,3 +31,4 @@ welcomeMigrateName: Welcome to FreeSewing v3 {name}. Please note that this is st
 v3UserAlreadyExists: Cannot migrate over an existing v3 account. Perhaps just sign in instead?
 tryAgain: Try again
 noWorkie: Unable to migrate this account. Typically that means your credentials are invalid.
+signUpWithProvider: Sign up with {provider}
