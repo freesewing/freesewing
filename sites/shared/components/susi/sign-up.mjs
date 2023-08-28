@@ -5,12 +5,12 @@ import { useTranslation } from 'next-i18next'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Dependencies
-import { validateEmail, validateTld } from 'shared/utils.mjs'
+import { validateEmail, validateTld, horFlexClasses } from 'shared/utils.mjs'
 // Components
 import Link from 'next/link'
 import { Robot } from 'shared/components/robot/index.mjs'
 import { EmailValidButton } from 'shared/components/buttons/email-valid-button.mjs'
-import { LeftIcon, HelpIcon } from 'shared/components/icons.mjs'
+import { LeftIcon, HelpIcon, GoogleIcon, GitHubIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { EmailInput } from 'shared/components/inputs.mjs'
 
@@ -22,6 +22,9 @@ const DarkLink = ({ href, txt }) => (
     {txt}
   </Link>
 )
+
+// FIXME: Hiding this now as it does nothing yet
+const OAUTH = false
 
 export const SignUp = () => {
   // Context
@@ -132,7 +135,7 @@ export const SignUp = () => {
       ) : (
         <>
           <p className={`text-inherit ${loadingClasses}`}>{t('toReceiveSignupLink')}:</p>
-          <form onSubmit={signupHandler} className="text-accent-content">
+          <form onSubmit={signupHandler}>
             <EmailInput
               id="signup-email"
               label={t('emailAddress')}
@@ -147,7 +150,17 @@ export const SignUp = () => {
               btnProps={{ type: 'submit' }}
             />
           </form>
-          <p className={`text-inherit text-sm mt-4 opacity-80 text-center ${loadingClasses}`}>
+          {OAUTH && (
+            <div className="grid grid-cols-2 gap-2 items-center mt-4">
+              {['Google', 'Github'].map((provider) => (
+                <button id={provider} className={`${horFlexClasses} btn btn-neutral btn-outline`}>
+                  {provider === 'Google' ? <GoogleIcon stroke={0} /> : <GitHubIcon />}
+                  <span>{t('signUpWithProvider', { provider })}</span>
+                </button>
+              ))}
+            </div>
+          )}
+          <p className={`text-inherit text-sm mt-0 opacity-80 text-center ${loadingClasses}`}>
             <span className="block md:inline mb-2 md:mb-0">
               {t('alreadyHaveAnAccount')} <DarkLink href="/signin" txt={t('signInHere')} />
             </span>

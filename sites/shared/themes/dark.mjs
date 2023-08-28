@@ -23,7 +23,7 @@ export const theme = {
 
   accent: colors.fuchsia['400'],
   'accent-focus': colors.fuchsia['300'],
-  'accent-content': colors.fuchsia['900'],
+  'accent-content': colors.neutral['900'],
 
   neutral: colors.neutral['900'],
   'neutral-focus': colors.neutral['700'],
