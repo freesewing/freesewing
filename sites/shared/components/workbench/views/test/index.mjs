@@ -29,14 +29,14 @@ export const TestView = ({
    */
   let title = t('workbench:testDesignOption', {
     design,
-    option: t(`${design}:${settings.sample.option}.t`),
+    option: t(`${design}:${settings.sample?.option}.t`),
   })
-  if (settings.sample.type === 'measurement')
+  if (settings.sample?.type === 'measurement')
     title = t('workbench:testDesignMeasurement', {
       design,
-      measurement: t(`measurements:${settings.sample.measurement}`),
+      measurement: t(`measurements:${settings.sample?.measurement}`),
     })
-  else if (settings.sample.type === 'sets')
+  else if (settings.sample?.type === 'sets')
     title = t('workbench:testDesignSets', {
       design,
       thing: 'fixme views/test/index.mjs',
