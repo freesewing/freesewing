@@ -5,7 +5,7 @@ import { useTranslation } from 'next-i18next'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Dependencies
-import { validateEmail, validateTld, horFlexClasses } from 'shared/utils.mjs'
+import { validateEmail, validateTld, horFlexClasses, horFlexClassesNoSm } from 'shared/utils.mjs'
 // Components
 import Link from 'next/link'
 import { Robot } from 'shared/components/robot/index.mjs'
@@ -168,12 +168,22 @@ export const SignUp = () => {
               </button>
             ))}
           </div>
-          <Link className={`${horFlexClasses} btn btn-lg btn-neutral mt-2`} href="/signup">
-            <KeyIcon className="h-10 w-10" />
+          <Link
+            className={`${horFlexClassesNoSm} w-full btn btn-lg btn-neutral mt-2`}
+            href="/signup"
+          >
+            <span className="hidden md:block">
+              <KeyIcon className="h-10 w-10" />
+            </span>
             {t('susi:signInHere')}
           </Link>
-          <Link className={`${horFlexClasses} btn btn-neutral btn-outline mt-2`} href="/migrate">
-            <SettingsIcon />
+          <Link
+            className={`${horFlexClassesNoSm} w-full btn btn-neutral btn-outline mt-2`}
+            href="/migrate"
+          >
+            <span className="hidden md:block">
+              <SettingsIcon />
+            </span>
             {t('susi:migrateV2Account')}
           </Link>
         </>

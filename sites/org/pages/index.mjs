@@ -21,11 +21,12 @@ import {
 } from 'shared/components/icons.mjs'
 import { FreeSewingAnimation } from 'shared/components/animations/freesewing.mjs'
 import { HowDoesItWorkAnimation } from 'shared/components/animations/how-does-it-work.mjs'
-import { SignUp } from 'shared/components/susi/sign-up.mjs'
-import { PleaseSubscribe } from 'shared/components/patrons/please-subscribe.mjs'
+import { SignUp, ns as susiNs } from 'shared/components/susi/sign-up.mjs'
+import { PleaseSubscribe, ns as subNs } from 'shared/components/patrons/please-subscribe.mjs'
 import Link from 'next/link'
+import { Popout } from 'shared/components/popout/index.mjs'
 
-const ns = nsMerge(pageNs, 'patrons', 'common', 'homepage', 'signup', 'errors')
+const ns = nsMerge(pageNs, subNs, susiNs, 'homepage')
 
 const Card = ({ bg = 'bg-base-200', textColor = 'text-base-content', title, children, icon }) => (
   <div className={`px-8 ${bg} py-10 rounded-lg block ${textColor} shadow-lg grow`}>
@@ -94,7 +95,7 @@ const HomePage = ({ page }) => {
             <div className="md:pt-8 pb-8 lg:py-12 grow m-auto max-w-prose">
               <SignUp />
             </div>
-            <div className="-mt-8 md:mt-0 pt-0 md:pt-8 pb-8 lg:py-12 max-w-prose m-auto m-auto">
+            <div className="md:mt-0 pt-0 md:pt-8 pb-8 lg:py-12 max-w-prose m-auto m-auto">
               <h2 className="text-inherit mb-4 hidden md:block">{t('homepage:whyBother')}</h2>
               <ul>
                 {[1, 2, 3, 4].map((i) => (
@@ -103,6 +104,10 @@ const HomePage = ({ page }) => {
                   </li>
                 ))}
               </ul>
+              <Popout warning>
+                <h5 className="text-inherit mb-4 hidden md:block">{t('homepage:alphaTitle')}</h5>
+                <p className="text-inherit mb-4 hidden md:block">{t('homepage:alphaWarning')}</p>
+              </Popout>
             </div>
           </div>
         </div>
