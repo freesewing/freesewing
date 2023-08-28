@@ -3,7 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import Head from 'next/head'
 import { PageWrapper } from 'shared/components/wrappers/page.mjs'
-import { PageLink } from 'shared/components/page-link.mjs'
+import { PageLink } from 'shared/components/link.mjs'
 import { Highlight } from 'shared/components/mdx/highlight.mjs'
 import { FreeSewingIcon } from 'shared/components/icons.mjs'
 import Link from 'next/link'
