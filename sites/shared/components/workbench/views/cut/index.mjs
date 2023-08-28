@@ -73,6 +73,8 @@ export const CutView = ({
         ui,
         update,
         control: account.control,
+        account,
+        design,
         setSettings,
         title: (
           <div className="px-2 flex flex-wrap justify-between items-baseline">

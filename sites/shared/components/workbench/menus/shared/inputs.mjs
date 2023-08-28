@@ -239,7 +239,13 @@ export const ListInput = ({ name, config, current, updateFunc, compact = false, 
     return (
       <ButtonFrame
         key={entry}
-        active={changed ? current === entry : entry === config.dflt}
+        active={
+          changed
+            ? Array.isArray(current)
+              ? current.includes(entry)
+              : current === entry
+            : entry === config.dflt
+        }
         onClick={() => handleChange(entry)}
       >
         <div

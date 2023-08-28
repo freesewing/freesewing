@@ -133,3 +133,44 @@ export const DisplayRow = ({ title, children, keyWidth = 'w-24' }) => (
     <div className="grow">{children}</div>
   </div>
 )
+/*
+// Hooks
+import { useContext } from 'react'
+import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingContext } from 'shared/context/loading-context.mjs'
+// Components
+import { Spinner } from 'shared/components/spinner.mjs'
+import Link from 'next/link'
+
+export const ContinueButton = ({ btnProps = {}, link = false }) => {
+  // Hooks
+  const { t } = useTranslation(['account'])
+
+  let classes = 'btn-primary btn mt-8 capitalize w-full'
+
+  const children = (
+    <span className="flex flex-row items-center gap-2">
+      {loading ? (
+        <>
+          <Spinner />
+          <span>{t('processing')}</span>
+        </>
+      ) : (
+        <span>{t('continue')}</span>
+      )}
+    </span>
+  )
+
+  return link ? (
+    <Link className={classes} tabIndex="-1" {...btnProps}>
+      {children}
+    </Link>
+  ) : (
+    <button className={classes} tabIndex="-1" role="button" {...btnProps}>
+      {children}
+    </button>
+  )
+}
+
+*/

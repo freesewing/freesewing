@@ -43,6 +43,8 @@ export const DraftView = ({
         ui,
         update,
         control: account.control,
+        account,
+        design,
         pattern: output,
         setSettings,
         menu: (

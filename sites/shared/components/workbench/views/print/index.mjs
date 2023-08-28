@@ -94,6 +94,8 @@ export const PrintView = ({
         ui,
         update,
         control: account.control,
+        account,
+        design,
         setSettings,
         title: (
           <div className="flex lg:justify-between items-baseline flex-wrap px-2">

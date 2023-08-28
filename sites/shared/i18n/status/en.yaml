@@ -13,3 +13,5 @@ processingMeasies: Processing measurements
 loadingPreferences: Loading preferences
 submittingData: Submitting data to backend
 authenticationFailed: Authentication failed
+savingPattern: Saving pattern
+patternSaved: Pattern saved

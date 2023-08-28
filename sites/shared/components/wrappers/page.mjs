@@ -1,5 +1,6 @@
 // Dependencies
 import React, { useState, useEffect, useContext } from 'react'
+import { nsMerge } from 'shared/utils.mjs'
 // Hooks
 import { useTheme } from 'shared/hooks/use-theme.mjs'
 // Components
@@ -10,7 +11,7 @@ import { DefaultLayout, ns as defaultLayoutNs } from 'site/components/layouts/de
 import { Feeds } from 'site/components/feeds.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 
-export const ns = [...new Set([...layoutNs, ...defaultLayoutNs])]
+export const ns = nsMerge(layoutNs, defaultLayoutNs, 'common')
 
 /* This component should wrap all page content */
 export const PageWrapper = (props) => {

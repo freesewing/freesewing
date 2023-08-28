@@ -74,6 +74,8 @@ export const InspectView = ({
         ui,
         update,
         control: account.control,
+        account,
+        design,
         setSettings,
         pattern: output,
         menu: (
