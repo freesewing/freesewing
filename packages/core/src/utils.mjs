@@ -803,7 +803,7 @@ function matrixTransform(transformationType, matrix, values) {
       const centerY = values[2]
 
       // if there's a rotation center, we need to move the origin to that center
-      if (centerX) {
+      if (centerX !== undefined) {
         matrix = matrixTransform('translate', matrix, [centerX, centerY])
       }
 
@@ -820,7 +820,7 @@ function matrixTransform(transformationType, matrix, values) {
       ]
 
       // move the origin back to origin
-      if (centerX) {
+      if (centerX !== undefined) {
         matrix = matrixTransform('translate', matrix, [-centerX, -centerY])
       }
       break
@@ -875,35 +875,7 @@ export function applyTransformToPoint(transform, point) {
 
   // The starting matrix
   let matrix = [1, 0, 0, 1, 0, 0]
-
-  // Update matrix for transform
-  switch (name) {
-    case 'matrix':
-      matrix = values
-      break
-    case 'translate':
-      matrix[4] = values[0]
-      matrix[5] = values[1]
-      break
-    case 'scale':
-      matrix[0] = values[0]
-      matrix[3] = values[1]
-      break
-    case 'rotate': {
-      const angle = (values[0] * Math.PI) / 180
-      const cos = Math.cos(angle)
-      const sin = Math.sin(angle)
-      console.log('in rotate', { angle })
-      matrix = [cos, sin, -sin, cos, 0, 0]
-      break
-    }
-    case 'skewX':
-      matrix[2] = Math.tan((values[0] * Math.PI) / 180)
-      break
-    case 'skewY':
-      matrix[1] = Math.tan((values[0] * Math.PI) / 180)
-      break
-  }
+  matrix = matrixTransform(name, matrix, values)
 
   // Apply the matrix transform to the coordinates
   const newX = point.x * matrix[0] + point.y * matrix[2] + matrix[4]
