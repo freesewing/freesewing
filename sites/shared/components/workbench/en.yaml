@@ -48,11 +48,8 @@ exportForEditing: Export for editing
 exportAsData: Export as data
 exportPattern-txt: Export a PDF suitable for your printer, or download this pattern in a variety of formats
 exportPattern: Export pattern
-testThis.option: Test this option
-testThis.measurement: Test this measurement
 measurements.d: Test the effect of a measurement on the way this pattern looks
 designOptions.d: Test the effect of an option on the way this pattern looks
-testDesignThing: "Test {design}: {thing}"
 yamlEditViewTitleThing: 'Edit Pattern Configuration for {thing}'
 yamlEditViewError: Issues with YAML
 yamlEditViewErrorDesc: We saved your input, but it might not work for the following reasons
@@ -65,3 +62,7 @@ testMeasurements: Test measurements
 testMeasurementsDesc: Test how the design adapts to changes to a specific measurement
 testSets: Test measurements sets
 testSetsDesc: Test how the design adapts across different measurements sets
+testDesignOption: "Test {design} design options: {option}"
+testDesignMeasurement: "Test {design} measurements: {measurement}"
+testDesignSets: "Test {design} across measurements sets"
+

@@ -69,7 +69,7 @@ export const TestMenu = ({
               if (value) update.settings(['sample'], { type: 'option', option: value })
               else update.settings(['sample'])
             }}
-            current={settings.sample.option}
+            current={settings?.sample?.option}
           />,
         ],
         [
@@ -90,7 +90,7 @@ export const TestMenu = ({
               if (value) update.settings(['sample'], { type: 'measurement', measurement: value })
               else update.settings(['sample'])
             }}
-            current={settings.sample.measurement}
+            current={settings?.sample?.measurement}
           />,
         ],
         [
