@@ -66,3 +66,8 @@ testSetsDesc: Test how the design adapts across different measurements sets
 testDesignOption: "Test {design} design options: {option}"
 testDesignMeasurement: "Test {design} measurements: {measurement}"
 testDesignSets: "Test {design} across measurements sets"
+addNotes: Add notes
+addSettingsToNotes: Add settings to notes
+bookmarkPattern: Bookmark pattern
+patternSaved: Pattern saved
+patternBookmarkCreated: Pattern bookmark created

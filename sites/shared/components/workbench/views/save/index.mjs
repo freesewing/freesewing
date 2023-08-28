@@ -13,6 +13,7 @@ import { StringInput, MarkdownInput } from 'shared/components/inputs.mjs'
 import { UploadIcon, EditIcon, PlusIcon, BookmarkIcon } from 'shared/components/icons.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { PageLink } from 'shared/components/link.mjs'
+import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
 export const ns = ['workbench', 'status']
 
@@ -103,9 +104,15 @@ export const SaveView = ({ design, settings, from = false }) => {
             current={name}
             update={setName}
             valid={notEmpty}
+            docs={<DynamicOrgDocs language={router.locale} path={`site/patterns/name`} />}
           />
           {withNotes ? (
-            <MarkdownInput label={t('workbench:notes')} current={notes} update={setNotes} />
+            <MarkdownInput
+              label={t('workbench:notes')}
+              current={notes}
+              update={setNotes}
+              docs={<DynamicOrgDocs language={router.locale} path={`site/patterns/notes`} />}
+            />
           ) : null}
         </div>
         <button
