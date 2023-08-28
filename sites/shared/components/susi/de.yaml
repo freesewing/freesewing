@@ -1,0 +1,37 @@
+alreadyHaveAnAccount: Hast du bereits ein Konto?
+bacToSignInk: Zurück zur Anmeldung
+checkYourInbox: Schau in deinem Posteingang nach einer E-Mail von
+clickSigninLink: Klicke auf den Anmeldelink in dieser E-Mail, um dich bei deinem FreeSewing-Konto anzumelden.
+clickSignupLink: Klicke auf deinen persönlichen Anmeldelink in dieser E-Mail, um dein FreeSewing-Konto zu erstellen.
+contact: Kontakt Unterstützung
+createAFreeSewingAccount: Create a FreeSewing account
+dontHaveAnAccount: Du hast noch keinen Account?
+emailAddress: E-Mail-Adresse
+emailMissing: Bitte gib deine E-Mail Adresse an
+emailSent: E-Mail versendet
+emailSignInLink: Schick mir einen Anmeldelink
+emailSignupLink: Schick mir einen Anmeldelink
+emailUsernameId: "Deine E-Mail-Adresse, dein Benutzername oder deine Benutzernummer"
+err2: Leider können wir diesen Fehler nicht beheben, wir brauchen einen Menschen, der sich das ansieht.
+err3: Versuche es einfach noch einmal oder wende dich an den Support, damit wir dir helfen können.
+joinFreeSewing: FreeSewing beitreten
+notFound: Kein solcher Nutzer gefunden
+oneMomentPlease: Einen Moment bitte
+password: Dein Passwort
+passwordMissing: Bitte gib dein Passwort ein
+pleaseProvideValidEmail: Bitte gib eine gültige E-Mail-Adresse an
+processing: In Bearbeitung
+regainAccess: Zugang wiedererlangen
+signIn: Anmelden
+signInFailed: Anmeldung fehlgeschlagen
+signInHere: Hier anmelden
+signInToThing: "Melde dich bei { thing } an"
+signUpHere: Registriere dich hier
+signupAgain: Erneut registrieren
+signupLinkExpired: Anmeldelink ist abgelaufen
+somethingWentWrong: Etwas ist schiefgelaufen
+toReceiveSignupLink: Um einen Anmeldelink zu erhalten, gib deine E-Mail-Adresse ein
+usePassword: Verwende dein Passwort
+usernameMissing: Bitte gib deinen Benutzernamen an
+welcome: Willkommen
+welcomeBackName: "Willkommen zurück { name }"

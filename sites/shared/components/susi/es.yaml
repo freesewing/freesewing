@@ -1,0 +1,49 @@
+alreadyHaveAnAccount: Already have an account?
+backToSignIn: Back to sign in
+backToSignUp: Back to sign up
+checkYourInbox: Go check your inbox for an email from
+clickSigninLink: Click the sign-in link in that email to sign in to your FreeSewing account.
+clickSignupLink: Click your personal signup link in that email to create your FreeSewing account.
+contact: Contact support
+createAFreeSewingAccount: Create a FreeSewing account
+dontHaveAV2Account: Don't have a v2 account?
+dontHaveAnAccount: Don't have an account yet?
+emailAddress: Email address
+emailMissing: Please provide your E-mail address
+emailSent: Email sent
+emailSignupLink: Email me a sign-up link
+emailUsernameId: "Your Email address, Username, or User #"
+err2: Unfortunately, we cannot recover from this error, we need a human being to look into this.
+err3: Feel free to try again, or reach out to support so we can assist you.
+haveAV2Account: Have a v2 account?
+joinFreeSewing: Join FreeSewing
+migrateItHere: Migrate it here
+migrateNoWorkie: Unable to migrate this account. Typically that means your credentials are invalid.
+migrateV2Account: Migrate your v2 account
+migrateV2Desc: Enter your v2 username & password to migrate your account.
+migrateV2Info: Your v2 account will not be changed, this will only create a v3 account with the v2 account data.
+migrateV3UserAlreadyExists: Cannot migrate over an existing v3 account. Perhaps just sign in instead?
+notFound: No such user was found
+oneMomentPlease: One moment please
+password: Your Password
+passwordMissing: Please provide your password
+pleaseProvideValidEmail: Please provide a valid email address
+processing: Processing
+regainAccess: Re-gain access
+signIn: Sign in
+signInFailed: Sign in failed
+signInHere: Sign in here
+signInToThing: "Sign in to { thing }"
+signInWithProvider: Sign in with { provider }
+signUpHere: Sign up here
+signUpWithProvider: Sign up with {provider}
+signupAgain: Sign up again
+signupLinkExpired: Signup link expired
+somethingWentWrong: Something went wrong
+toReceiveSignupLink: To receive a sign-up link, enter your email address
+tryAgain: Try again
+usePassword: Use your password
+usernameMissing: Please provide your username
+welcome: Welcome
+welcomeBackName: "Welcome back { name }"
+welcomeMigrateName: Welcome to FreeSewing v3 {name}. Please note that this is still alpha code.

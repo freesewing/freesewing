@@ -24,7 +24,24 @@ export const TestView = ({
   const renderProps = pattern.getRenderProps()
   const patternConfig = pattern.getConfig()
 
-  const title = t('testThing', { design, thing: t(settings.sample?.[settings.sample.type]) })
+  /*
+   * Translation of the title needs some work
+   */
+  let title = t('workbench:testDesignOption', {
+    design,
+    option: t(`${design}:${settings.sample?.option}.t`),
+  })
+  if (settings.sample?.type === 'measurement')
+    title = t('workbench:testDesignMeasurement', {
+      design,
+      measurement: t(`measurements:${settings.sample?.measurement}`),
+    })
+  else if (settings.sample?.type === 'sets')
+    title = t('workbench:testDesignSets', {
+      design,
+      thing: 'fixme views/test/index.mjs',
+    })
+
   return (
     <PatternWithMenu
       {...{
@@ -32,8 +49,10 @@ export const TestView = ({
         ui,
         update,
         control: account.control,
+        account,
+        design,
         setSettings,
-        title: <h2 className="px-2 capitalize">{title}</h2>,
+        title: <h2>{title}</h2>,
         pattern: <PanZoomPattern {...{ renderProps }} />,
         menu: (
           <TestMenu

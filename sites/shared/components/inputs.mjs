@@ -164,7 +164,7 @@ export const PasswordInput = ({
   update, // onChange handler
   valid, // Method that should return whether the value is valid or not
   current, // The current value
-  placeholder, // The placeholder text
+  placeholder = '¯\\_(ツ)_/¯', // The placeholder text
   docs = false, // Docs to load, if any
   id = '', // An id to tie the input to the label
 }) => {

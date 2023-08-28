@@ -1,0 +1,38 @@
+alreadyHaveAnAccount: Already have an account?
+backToSignIn: Back to sign in
+backToSignUp: Back to signup
+checkYourInbox: Go check your inbox for an email from
+clickSigninLink: Click the sign-in link in that email to sign in to your FreeSewing account.
+clickSignupLink: Click your personal signup link in that email to create your FreeSewing account.
+contact: Contact opnemen met ondersteuning
+createAFreeSewingAccount: Create a FreeSewing account
+dontHaveAnAccount: Don't have an account yet?
+emailAddress: E-mailadres
+emailMissing: Please provide your E-mail address
+emailSent: Email sent
+emailSignInLink: Email me a sign in link
+emailSignupLink: Email me a sign-up link
+emailUsernameId: "Your Email address, Username, or User #"
+err2: Unfortunately, we cannot recover from this error, we need a human being to look into this.
+err3: Feel free to try again, or reach out to support so we can assist you.
+joinFreeSewing: Word lid van FreeSewing
+notFound: No such user was found
+oneMomentPlease: Een ogenblikje alsjeblieft
+password: Your Password
+passwordMissing: Please provide your password
+pleaseProvideValidEmail: Please provide a valid email address
+processing: Verwerking
+regainAccess: Re-gain access
+signIn: Aanmelden
+signInFailed: Sign in failed
+signInHere: Sign in here
+signInToThing: "Sign in to { thing }"
+signUpHere: Sign up here
+signupAgain: Sign up again
+signupLinkExpired: Signup link expired
+somethingWentWrong: Er ging iets mis
+toReceiveSignupLink: To receive a sign-up link, enter your email address
+usePassword: Use your password
+usernameMissing: Please provide your username
+welcome: Welkom
+welcomeBackName: "Welcome back { name }"
