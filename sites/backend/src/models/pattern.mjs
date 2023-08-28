@@ -111,23 +111,24 @@ PatternModel.prototype.guardedCreate = async function ({ body, user }) {
   })
 
   /*
-   * Now that we have a record ID, we can update the image
+   * Now that we have a record ID, we can update the image, but only if needed
    */
-  const img = await storeImage(
-    {
-      id: `pattern-${this.record.id}`,
-      metadata: { user: user.uid },
-      b64: body.img,
-    },
-    this.isTest(body)
-  )
+  if (body.img) {
+    const img = await storeImage(
+      {
+        id: `pattern-${this.record.id}`,
+        metadata: { user: user.uid },
+        b64: body.img,
+      },
+      this.isTest(body)
+    )
 
-  /*
-   * If an image was created, update the record with its ID
-   * If not, just update the record from the database
-   */
-  if (img) await this.update(this.cloak({ img: img.url }))
-  else await this.read({ id: this.record.id }, { set: true, cset: true })
+    /*
+     * If an image was created, update the record with its ID
+     * If not, just update the record from the database
+     */
+    await this.update(this.cloak({ img: img.url }))
+  } else await this.read({ id: this.record.id }, { set: true, cset: true })
 
   /*
    * Now return 201 and the record data

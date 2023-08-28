@@ -439,3 +439,8 @@ export const horFlexClasses = 'flex flex-row items-center justify-between gap-4'
  * To spread icon + text horizontal but only from md upwards
  */
 export const horFlexClassesNoSm = 'md:flex md:flex-row md:items-center md:justify-between md:gap-4'
+
+/*
+ * A method that check that a var is not empty
+ */
+export const notEmpty = (thing) => `${thing}`.length > 0

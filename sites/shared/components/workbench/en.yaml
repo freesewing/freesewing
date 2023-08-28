@@ -9,6 +9,7 @@ edit: Edit
 reset: Reset
 help: Help
 name: Name
+notes: Notes
 width: Width
 height: Height
 length: Length
@@ -65,4 +66,3 @@ testSetsDesc: Test how the design adapts across different measurements sets
 testDesignOption: "Test {design} design options: {option}"
 testDesignMeasurement: "Test {design} measurements: {measurement}"
 testDesignSets: "Test {design} across measurements sets"
-

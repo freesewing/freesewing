@@ -42,7 +42,7 @@ export const BioSettings = ({ welcome = false }) => {
     if (result.success) {
       setAccount(result.data.account)
       setLoadingStatus([true, 'settingsSaved', true, true])
-    } else setLoadingStatus([true, 'backendError', true, true])
+    } else setLoadingStatus([true, 'backendError', true, false])
   }
 
   // Next step in the onboarding

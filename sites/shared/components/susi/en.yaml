@@ -33,6 +33,7 @@ pleaseProvideValidEmail: Please provide a valid email address
 processing: Processing
 regainAccess: Re-gain access
 signIn: Sign in
+signInAsOtherUser: Sign in as a different user
 signInFailed: Sign in failed
 signInHere: Sign in here
 signInToThing: "Sign in to { thing }"

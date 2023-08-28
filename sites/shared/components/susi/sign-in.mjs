@@ -5,7 +5,7 @@ import { useTranslation } from 'next-i18next'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
-import { horFlexClasses } from 'shared/utils.mjs'
+import { horFlexClasses, horFlexClassesNoSm } from 'shared/utils.mjs'
 // Components
 import Link from 'next/link'
 import {
@@ -17,6 +17,7 @@ import {
   GitHubIcon,
   FreeSewingIcon,
   SettingsIcon,
+  UserIcon,
 } from 'shared/components/icons.mjs'
 import { StringInput, PasswordInput } from 'shared/components/inputs.mjs'
 
@@ -206,10 +207,11 @@ export const SignIn = () => {
       </div>
       {seenBefore ? (
         <button
-          className={`${horFlexClasses} btn btn-ghost border-base-300 mt-2`}
+          className={`${horFlexClassesNoSm} btn btn-neutral btn-outline mt-2 w-full`}
           onClick={() => setSeenUser(false)}
         >
-          Sign in as another user
+          <UserIcon />
+          {t('susi:signInAsOtherUser')}
         </button>
       ) : (
         <Link className={`${horFlexClasses} btn btn-lg btn-neutral mt-2`} href="/signup">
