@@ -188,6 +188,7 @@ setBookmark: Measurements Sets
 csetBookmark:  Curated Measurements Sets
 docBookmark: Documentation
 customBookmark: Custom Bookmarks
+yourBookmarks: Your bookmarks
 
 # sets
 set: Measurements Set
