@@ -22,7 +22,7 @@ import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { EmailInput } from 'shared/components/inputs.mjs'
 
 // Translation namespaces used on this page
-const namespaces = ['signup', 'errors']
+export const ns = ['susi', 'errors']
 
 const DarkLink = ({ href, txt }) => (
   <Link className="decoration-1 underline text-medium font-medium hover:decoration-2" href={href}>
@@ -35,7 +35,7 @@ export const SignUp = () => {
   const { setModal } = useContext(ModalContext)
 
   const backend = useBackend()
-  const { t, i18n } = useTranslation(namespaces)
+  const { t, i18n } = useTranslation(ns)
 
   const [email, setEmail] = useState('')
   const [emailValid, setEmailValid] = useState(false)
@@ -70,16 +70,16 @@ export const SignUp = () => {
           <div className="bg-base-100 rounded-lg p-4 lg:px-8 max-w-xl lg:shadow-lg">
             <h3>An error occured while trying to process your request</h3>
             <Robot pose="ohno" className="m-auto w-56" embed />
-            <p className="text-lg">{t('err2')}</p>
-            <p className="text-lg">{t('err3')}</p>
+            <p className="text-lg">{t('susi:err2')}</p>
+            <p className="text-lg">{t('susi:err3')}</p>
             <div className="flex flex-row gap-4 items-center justify-center p-8 flex-wrap">
               <button className="btn btn-primary px-8" onClick={() => setResult(false)}>
                 <LeftIcon />
-                <span className="pl-2">{t('back')}</span>
+                <span className="pl-2">{t('susi:back')}</span>
               </button>
               <Link href="/support" className="btn btn-primary btn-outline px-8">
                 <HelpIcon />
-                <span className="pl-2">{t('contact')}</span>
+                <span className="pl-2">{t('susi:contact')}</span>
               </Link>
             </div>
           </div>
@@ -96,12 +96,12 @@ export const SignUp = () => {
       <h2 className={`text-inherit ${loadingClasses}`}>
         {result ? (
           result === 'success' ? (
-            <span>{t('emailSent')}!</span>
+            <span>{t('susi:emailSent')}!</span>
           ) : (
             <span>An error occured while trying to process your request</span>
           )
         ) : (
-          <span>{t('signup:createAFreeSewingAccount')}</span>
+          <span>{t('susi:createAFreeSewingAccount')}</span>
         )}
       </h2>
 
@@ -109,29 +109,29 @@ export const SignUp = () => {
         result === 'success' ? (
           <>
             <p className="text-inherit text-lg">
-              {t('checkYourInbox')} <b>FreeSewing.org</b>
+              {t('susi:checkYourInbox')} <b>FreeSewing.org</b>
             </p>
-            <p className="text-inherit text-lg">{t('clickSignupLink')}</p>
+            <p className="text-inherit text-lg">{t('susi:clickSignupLink')}</p>
             <div className="flex flex-row gap-4 items-center justify-center p-8">
               <button className="btn btn-ghost" onClick={() => setResult(false)}>
-                {t('back')}
+                {t('susi:back')}
               </button>
               <Link href="/support" className="btn btn-ghost">
-                {t('contact')}
+                {t('susi:contact')}
               </Link>
             </div>
           </>
         ) : (
           <>
             <Robot pose="ohno" className="m-auto w-56 text-inherit" embed />
-            <p className="text-inherit text-lg">{t('err2')}</p>
-            <p className="text-inherit text-lg">{t('err3')}</p>
+            <p className="text-inherit text-lg">{t('susi:err2')}</p>
+            <p className="text-inherit text-lg">{t('susi:err3')}</p>
             <div className="flex flex-row gap-4 items-center justify-center p-8">
               <button className="btn btn-ghost" onClick={() => setResult(false)}>
-                {t('back')}
+                {t('susi:back')}
               </button>
               <Link href="/support" className="btn btn-ghost">
-                {t('contact')}
+                {t('susi:contact')}
               </Link>
             </div>
           </>
@@ -142,8 +142,8 @@ export const SignUp = () => {
           <form onSubmit={signupHandler}>
             <EmailInput
               id="signup-email"
-              label={t('emailAddress')}
-              placeholder={t('emailAddress')}
+              label={t('susi:emailAddress')}
+              placeholder={t('susi:emailAddress')}
               update={updateEmail}
             />
             <button
@@ -154,7 +154,7 @@ export const SignUp = () => {
               <span className="hidden md:block">
                 <EmailIcon />
               </span>
-              {emailValid ? t('emailSignupLink') : t('pleaseProvideValidEmail')}
+              {emailValid ? t('susi:emailSignupLink') : t('susi:pleaseProvideValidEmail')}
               <span className="hidden md:block">
                 <EmailIcon />
               </span>
@@ -164,17 +164,17 @@ export const SignUp = () => {
             {['Google', 'Github'].map((provider) => (
               <button id={provider} className={`${horFlexClasses} btn btn-secondary`}>
                 {provider === 'Google' ? <GoogleIcon stroke={0} /> : <GitHubIcon />}
-                <span>{t('signUpWithProvider', { provider })}</span>
+                <span>{t('susi:signUpWithProvider', { provider })}</span>
               </button>
             ))}
           </div>
           <Link className={`${horFlexClasses} btn btn-lg btn-neutral mt-2`} href="/signup">
             <KeyIcon className="h-10 w-10" />
-            {t('signInHere')}
+            {t('susi:signInHere')}
           </Link>
           <Link className={`${horFlexClasses} btn btn-neutral btn-outline mt-2`} href="/migrate">
             <SettingsIcon />
-            {t('migrateV2Account')}
+            {t('susi:migrateV2Account')}
           </Link>
         </>
       )}

@@ -16,14 +16,17 @@ import {
   GoogleIcon,
   GitHubIcon,
   FreeSewingIcon,
+  SettingsIcon,
 } from 'shared/components/icons.mjs'
 import { StringInput, PasswordInput } from 'shared/components/inputs.mjs'
+
+export const ns = ['susi', 'errors', 'status']
 
 const darkLinkClasses = 'decoration-1 underline text-medium font-medium hover:decoration-2'
 
 export const SignIn = () => {
   const { setAccount, setToken, seenUser, setSeenUser } = useAccount()
-  const { t } = useTranslation(['signin', 'signup', 'status'])
+  const { t } = useTranslation(ns)
   const backend = useBackend()
   const router = useRouter()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
@@ -61,7 +64,7 @@ export const SignIn = () => {
     // Sign-in succeeded
     if (result.success) {
       if (magicLink) {
-        setLoadingStatus([true, t('singup:emailSent'), true, true])
+        setLoadingStatus([true, t('susi:emailSent'), true, true])
         setMagicLinkSent(true)
       } else {
         setAccount(result.data.account)
@@ -69,7 +72,7 @@ export const SignIn = () => {
         setSeenUser(result.data.account.username)
         setLoadingStatus([
           true,
-          t('signin:welcomeBackName', { name: result.data.account.username }),
+          t('susi:welcomeBackName', { name: result.data.account.username }),
           true,
           true,
         ])
@@ -78,15 +81,15 @@ export const SignIn = () => {
     }
     // Sign-in failed
     if (result.response?.response?.status === 401) {
-      const msg = magicLink ? t('notFound') : t('signInFailed')
+      const msg = magicLink ? t('susi:notFound') : t('susi:signInFailed')
       setSignInFailed(msg)
       setLoadingStatus([true, msg, true, false])
     }
     // Bad request
     if (result.status === 400) {
       let msg
-      if (result.data.error === 'usernameMissing') msg = t('usernameMissing')
-      else if (result.data.error === 'passwordMissing') msg = t('passwordMissing')
+      if (result.data.error === 'usernameMissing') msg = t('susi:usernameMissing')
+      else if (result.data.error === 'passwordMissing') msg = t('susi:passwordMissing')
       setSignInFailed(msg)
       setLoadingStatus([true, msg, true, false])
     }
@@ -108,18 +111,18 @@ export const SignIn = () => {
       <>
         <LoadingStatus />
         <h1 className="text-inherit text-3xl lg:text-5xl mb-4 pb-0 text-center">
-          {t('signup:emailSent')}
+          {t('susi:emailSent')}
         </h1>
         <p className="text-inherit text-lg text-center">
-          {t('signup:checkYourInbox')} <b>FreeSewing.org</b>
+          {t('susi:checkYourInbox')} <b>FreeSewing.org</b>
         </p>
-        <p className="text-inherit text-lg text-center">{t('clickSigninLink')}</p>
+        <p className="text-inherit text-lg text-center">{t('susi:clickSigninLink')}</p>
         <div className="flex flex-row gap-4 items-center justify-center p-8">
           <button className="btn btn-ghost" onClick={() => setMagicLinkSent(false)}>
-            {t('signin:back')}
+            {t('susi:back')}
           </button>
           <Link href="/support" className="btn btn-ghost">
-            {t('signup:contact')}
+            {t('susi:contact')}
           </Link>
         </div>
       </>
@@ -128,13 +131,13 @@ export const SignIn = () => {
   return (
     <>
       <LoadingStatus />
-      <h2>{seenBefore ? t('signin:welcomeBackName', { name: seenUser }) : t('signin:welcome')}</h2>
-      <p>{t('signin:signInToThing', { thing: 'FreeSewing' })}:</p>
+      <h2>{seenBefore ? t('susi:welcomeBackName', { name: seenUser }) : t('susi:welcome')}</h2>
+      <p>{t('susi:signInToThing', { thing: 'FreeSewing' })}:</p>
       {!seenBefore && (
         <StringInput
-          label={t('signin:emailUsernameId')}
+          label={t('susi:emailUsernameId')}
           update={setUsername}
-          placeholder={t('signin:emailUsernameId')}
+          placeholder={t('susi:emailUsernameId')}
           value={username}
           valid={(val) => val.length > 1}
         />
@@ -153,7 +156,7 @@ export const SignIn = () => {
               <span className="hidden lg:block">
                 <EmailIcon />
               </span>
-              <span className="pl-2">{t('signin:emailSignInLink')}</span>
+              <span className="pl-2">{t('susi:emailSigninLink')}</span>
               <span className="hidden lg:block">
                 <EmailIcon />
               </span>
@@ -163,7 +166,7 @@ export const SignIn = () => {
       ) : (
         <>
           <PasswordInput
-            label={t('password')}
+            label={t('susi:password')}
             update={setPassword}
             current={password}
             valid={(val) => val.length > 0}
@@ -176,7 +179,7 @@ export const SignIn = () => {
                 <span className="hidden lg:block">
                   <KeyIcon />
                 </span>
-                <span className="pl-2">{t('signin:signIn')}</span>
+                <span className="pl-2">{t('susi:signIn')}</span>
                 <span className="hidden lg:block">
                   <LockIcon />
                 </span>
@@ -190,14 +193,14 @@ export const SignIn = () => {
         onClick={() => setMagicLink(!magicLink)}
       >
         <span className="hidden lg:block">{magicLink ? <LockIcon /> : <EmailIcon />}</span>
-        {magicLink ? t('signin:usePassword') : t('signin:emailSignInLink')}
+        {magicLink ? t('susi:usePassword') : t('susi:emailSigninLink')}
         <span className="hidden lg:block">{magicLink ? <KeyIcon /> : <EmailIcon />}</span>
       </button>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center mt-2">
         {['Google', 'Github'].map((provider) => (
           <button id={provider} className={`${horFlexClasses} btn btn-secondary`}>
             {provider === 'Google' ? <GoogleIcon stroke={0} /> : <GitHubIcon />}
-            <span>{t('signInWithProvider', { provider })}</span>
+            <span>{t('susi:signInWithProvider', { provider })}</span>
           </button>
         ))}
       </div>
@@ -211,9 +214,13 @@ export const SignIn = () => {
       ) : (
         <Link className={`${horFlexClasses} btn btn-lg btn-neutral mt-2`} href="/signup">
           <FreeSewingIcon className="h-10 w-10" />
-          {t('signin:signUpHere')}
+          {t('susi:signUpHere')}
         </Link>
       )}
+      <Link className={`${horFlexClasses} btn btn-neutral btn-outline mt-2`} href="/migrate">
+        <SettingsIcon />
+        {t('susi:migrateV2Account')}
+      </Link>
     </>
   )
 }

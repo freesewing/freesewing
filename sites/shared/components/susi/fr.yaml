@@ -1,0 +1,38 @@
+alreadyHaveAnAccount: Vous avez déjà un compte?
+backToSignIn: Back to sign in
+backToSignUp: Back to signup
+checkYourInbox: Go check your inbox for an email from
+clickSigninLink: Click the sign-in link in that email to sign in to your FreeSewing account.
+clickSignupLink: Click your personal signup link in that email to create your FreeSewing account.
+contact: Contacter l'assistance
+createAFreeSewingAccount: Create a FreeSewing account
+dontHaveAnAccount: Vous n'avez pas encore de compte ?
+emailAddress: Adresse E-mail
+emailMissing: Please provide your E-mail address
+emailSent: Le courriel a été envoyé
+emailSignInLink: Email me a sign in link
+emailSignupLink: Email me a sign-up link
+emailUsernameId: "Your Email address, Username, or User #"
+err2: Unfortunately, we cannot recover from this error, we need a human being to look into this.
+err3: Feel free to try again, or reach out to support so we can assist you.
+joinFreeSewing: Rejoignez FreeSewing
+notFound: No such user was found
+oneMomentPlease: Veuillez patienter
+password: Your Password
+passwordMissing: Please provide your password
+pleaseProvideValidEmail: Veuillez fournir une adresse e-mail valide
+processing: Traitement en cours
+regainAccess: Re-gain access
+signIn: Connexion
+signInFailed: Sign in failed
+signInHere: Connectez-vous ici
+signInToThing: "Sign in to { thing }"
+signUpHere: Inscrivez-vous ici
+signupAgain: Sign up again
+signupLinkExpired: Signup link expired
+somethingWentWrong: Quelque chose s'est mal passé
+toReceiveSignupLink: To receive a sign-up link, enter your email address
+usePassword: Use your password
+usernameMissing: Please provide your username
+welcome: Bienvenue
+welcomeBackName: "Welcome back { name }"
