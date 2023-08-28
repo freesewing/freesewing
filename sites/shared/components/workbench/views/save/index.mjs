@@ -17,7 +17,7 @@ import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
 export const ns = ['workbench', 'status']
 
-export const SaveView = ({ design, settings, from = false }) => {
+export const SaveView = ({ design, settings }) => {
   // Hooks
   const { t } = useTranslation(ns)
   const backend = useBackend()
@@ -30,7 +30,9 @@ export const SaveView = ({ design, settings, from = false }) => {
   const [notes, setNotes] = useState('')
   const [savedId, setSavedId] = useState()
   const [bookmarkedId, setBookmarkedId] = useState()
-  const action = router.asPath.split('/')[1]
+
+  // When we have more than 'new' this will come in handy
+  //const action = router.asPath.split('/')[1]
 
   const addSettingsToNotes = () => {
     setNotes(notes + '\n```yaml\n' + yaml.dump(settings) + '````')

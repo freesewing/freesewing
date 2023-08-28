@@ -24,12 +24,6 @@ import { EmailInput } from 'shared/components/inputs.mjs'
 // Translation namespaces used on this page
 export const ns = ['susi', 'errors']
 
-const DarkLink = ({ href, txt }) => (
-  <Link className="decoration-1 underline text-medium font-medium hover:decoration-2" href={href}>
-    {txt}
-  </Link>
-)
-
 export const SignUp = () => {
   // Context
   const { setModal } = useContext(ModalContext)
@@ -162,7 +156,11 @@ export const SignUp = () => {
           </form>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center mt-4">
             {['Google', 'Github'].map((provider) => (
-              <button id={provider} className={`${horFlexClasses} btn btn-secondary`}>
+              <button
+                key={provider}
+                id={provider}
+                className={`${horFlexClasses} btn btn-secondary`}
+              >
                 {provider === 'Google' ? <GoogleIcon stroke={0} /> : <GitHubIcon />}
                 <span>{t('susi:signUpWithProvider', { provider })}</span>
               </button>

@@ -23,8 +23,6 @@ import { StringInput, PasswordInput } from 'shared/components/inputs.mjs'
 
 export const ns = ['susi', 'errors', 'status']
 
-const darkLinkClasses = 'decoration-1 underline text-medium font-medium hover:decoration-2'
-
 export const SignIn = () => {
   const { setAccount, setToken, seenUser, setSeenUser } = useAccount()
   const { t } = useTranslation(ns)
@@ -199,7 +197,7 @@ export const SignIn = () => {
       </button>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center mt-2">
         {['Google', 'Github'].map((provider) => (
-          <button id={provider} className={`${horFlexClasses} btn btn-secondary`}>
+          <button key={provider} id={provider} className={`${horFlexClasses} btn btn-secondary`}>
             {provider === 'Google' ? <GoogleIcon stroke={0} /> : <GitHubIcon />}
             <span>{t('susi:signInWithProvider', { provider })}</span>
           </button>
