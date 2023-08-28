@@ -84,6 +84,6 @@ export async function getStaticPaths() {
       ...somePaths.map((key) => `/nl/${key}`),
       ...somePaths.map((key) => `/uk/${key}`),
     ],
-    fallback: true,
+    fallback: false,
   }
 }
