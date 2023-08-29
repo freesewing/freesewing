@@ -49,4 +49,5 @@ saNo.t: Nahtzugabe nicht berücksichtigen
 saNo.d: Dadurch wird ein Muster erstellt, das keine Nahtzugabe enthält. Die Größe der Nahtzugabe spielt keine Rolle, da keine Nahtzugabe enthalten ist.
 saYes.t: Nahtzugabe hinzufügen
 saYes.d: Dadurch wird ein Muster erstellt, das die Nahtzugabe enthält. Die Größe der Nahtzugabe wird individuell festgelegt.
-
+clearSettingsNotMeasurements: Clear settings, but keep measurements
+clearSettingsAndMeasurements: Clear settings & Clear measurements
