@@ -11,7 +11,6 @@ import {
   formatMm,
   hasRequiredMeasurements,
   capitalize,
-  scrollTo,
   horFlexClasses,
 } from 'shared/utils.mjs'
 import orderBy from 'lodash.orderby'
@@ -26,7 +25,7 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { Tag } from 'shared/components/tag.mjs'
 import { BackToAccountButton } from './shared.mjs'
-import { AnchorLink, PageLink, Link, linkClasses } from 'shared/components/link.mjs'
+import { AnchorLink, PageLink, Link } from 'shared/components/link.mjs'
 import { V3Wip } from 'shared/components/v3-wip.mjs'
 import {
   OkIcon,
@@ -117,8 +116,6 @@ export const MsetCard = ({
   language = false,
   size = 'lg',
 }) => {
-  const { t } = useTranslation(ns)
-
   const sizes = {
     lg: 96,
     md: 52,

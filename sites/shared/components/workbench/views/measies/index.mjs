@@ -13,10 +13,8 @@ import {
   CuratedSetPicker,
   ns as setsNs,
 } from 'shared/components/account/sets.mjs'
-import { Tabs, Tab } from 'shared/components/tabs.mjs'
 import { MeasiesEditor } from './editor.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
-import { linkClasses } from 'shared/components/link.mjs'
 import { Accordion } from 'shared/components/accordion.mjs'
 import { MsetIcon, BookmarkIcon, CsetIcon, EditIcon } from 'shared/components/icons.mjs'
 
@@ -27,8 +25,6 @@ const tabNames = ['account:chooseASet', 'editCurrentMeasies']
 export const MeasiesView = ({ design, Design, settings, update, missingMeasurements, setView }) => {
   const { t } = useTranslation(['workbench'])
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
-
-  const tabs = tabNames.map((n) => t(n)).join(',')
 
   const loadMeasurements = (set) => {
     update.settings([
@@ -97,7 +93,7 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
               </div>
               <p>{t('workbench:chooseFromCuratedSetsDesc')}</p>
             </Fragment>,
-            <CuratedSetPicker design={design} clickHandler={loadMeasurements} t={t} />,
+            <CuratedSetPicker design={design} clickHandler={loadMeasurements} t={t} key={2} />,
           ],
           [
             <Fragment key={1}>
@@ -107,7 +103,7 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
               </div>
               <p>{t('workbench:editMeasiesByHandDesc')}</p>
             </Fragment>,
-            <MeasiesEditor {...{ Design, settings, update }} />,
+            <MeasiesEditor {...{ Design, settings, update }} key={2} />,
           ],
         ]}
       />

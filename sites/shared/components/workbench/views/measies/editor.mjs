@@ -6,7 +6,7 @@ import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 export const ns = nsMerge('workbench', inputNs)
 
 export const MeasiesEditor = ({ Design, settings, update }) => {
-  const { t, i18n } = useTranslation(ns)
+  const { i18n } = useTranslation(ns)
 
   const onUpdate = (m, newVal) => {
     update.settings(['measurements', m], newVal)

@@ -425,35 +425,29 @@ export const MarkdownInput = ({
   id = '', // An id to tie the input to the label
   labelBL = false, // Bottom-Left label
   labelBR = false, // Bottom-Right label
-}) => {
-  const [activeTab, setActiveTab] = useState('edit')
-
-  const tabs = ['edit', 'preview']
-
-  return (
-    <FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
-      <Tabs tabs={tabs}>
-        <Tab key="edit">
-          <div className="flex flex-row items-center mt-4">
-            <textarea
-              id={id}
-              rows="5"
-              className="textarea textarea-bordered textarea-lg w-full"
-              value={current}
-              placeholder={placeholder}
-              onChange={(evt) => update(evt.target.value)}
-            />
-          </div>
-        </Tab>
-        <Tab key="preview">
-          <div className="flex flex-row items-center mt-4">
-            <Markdown>{current}</Markdown>
-          </div>
-        </Tab>
-      </Tabs>
-    </FormControl>
-  )
-}
+}) => (
+  <FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
+    <Tabs tabs={['edit', 'preview']}>
+      <Tab key="edit">
+        <div className="flex flex-row items-center mt-4">
+          <textarea
+            id={id}
+            rows="5"
+            className="textarea textarea-bordered textarea-lg w-full"
+            value={current}
+            placeholder={placeholder}
+            onChange={(evt) => update(evt.target.value)}
+          />
+        </div>
+      </Tab>
+      <Tab key="preview">
+        <div className="flex flex-row items-center mt-4">
+          <Markdown>{current}</Markdown>
+        </div>
+      </Tab>
+    </Tabs>
+  </FormControl>
+)
 
 export const MeasieInput = ({
   imperial, // True for imperial, False for metric
