@@ -1,21 +1,28 @@
+// Dependencies
+import { Fragment } from 'react'
+import { nsMerge } from 'shared/utils.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
-import { SetPicker, ns as setsNs } from 'shared/components/sets/set-picker.mjs'
-import { Tabs, Tab } from 'shared/components/mdx/tabs.mjs'
+import { designMeasurements, horFlexClasses } from 'shared/utils.mjs'
+// Hooks
+import { useTranslation } from 'next-i18next'
+import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
+// Components
+import {
+  UserSetPicker,
+  BookmarkedSetPicker,
+  CuratedSetPicker,
+  ns as setsNs,
+} from 'shared/components/account/sets.mjs'
 import { MeasiesEditor } from './editor.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
-import { Collapse } from 'shared/components/collapse.mjs'
-import { designMeasurements } from 'shared/utils.mjs'
-import { useTranslation } from 'next-i18next'
-import { useToast } from 'shared/hooks/use-toast.mjs'
+import { Accordion } from 'shared/components/accordion.mjs'
+import { MsetIcon, BookmarkIcon, CsetIcon, EditIcon } from 'shared/components/icons.mjs'
 
-export const ns = [...authNs, setsNs]
+export const ns = nsMerge(authNs, setsNs)
 
-const tabNames = ['chooseNewSet', 'editCurrentMeasies']
 export const MeasiesView = ({ design, Design, settings, update, missingMeasurements, setView }) => {
   const { t } = useTranslation(['workbench'])
-  const toast = useToast()
-
-  const tabs = tabNames.map((n) => t(n)).join(',')
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   const loadMeasurements = (set) => {
     update.settings([
@@ -23,39 +30,87 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
       [['units'], set.imperial ? 'imperial' : 'metric'],
     ])
     setView('draft')
-    toast.success(t('appliedMeasies'))
+    setLoadingStatus([true, 'appliedMeasies', true, true])
   }
 
   return (
-    <div className="m-6">
-      <h1 className="max-w-6xl m-auto text-center">{t('measurements')}</h1>
-      {missingMeasurements ? (
-        <Popout note compact dense noP>
-          <h5>{t('weLackSomeMeasies')}:</h5>
-          <p>
-            <b>{t('youCanPickOrEnter')}</b>
-          </p>
-          <Collapse title={t('seeMissingMeasies')}>
-            <ul className="list list-inside list-disc ml-4">
-              {missingMeasurements.map((m) => (
-                <li key={m}>{m}</li>
+    <div className="max-w-7xl mt-8 mx-auto px-4">
+      <LoadingStatus />
+      <h2>{t('account:measurements')}</h2>
+      {missingMeasurements &&
+        settings.measurements &&
+        Object.keys(settings.measurements).length > 0 && (
+          <Popout note dense noP>
+            <h5>{t('weLackSomeMeasies', { nr: missingMeasurements.length })}</h5>
+            <ol className="list list-inside ml-4 list-decimal">
+              {missingMeasurements.map((m, i) => (
+                <li key={i}>{t(`measurements:${m}`)}</li>
               ))}
-            </ul>
-          </Collapse>
-        </Popout>
-      ) : (
-        <Popout tip compact dense noP>
-          <h5>{t('measiesOk')}</h5>
+            </ol>
+            <p className="text-lg">{t('youCanPickOrEnter')}</p>
+          </Popout>
+        )}
+      {!missingMeasurements && (
+        <Popout note ompact>
+          <span className="text-lg">{t('measiesOk')}</span>
         </Popout>
       )}
-      <Tabs tabs={tabs}>
-        <Tab key="choose">
-          <SetPicker design={design} clickHandler={loadMeasurements} />
-        </Tab>
-        <Tab key="edit">
-          <MeasiesEditor {...{ Design, settings, update }} />
-        </Tab>
-      </Tabs>
+      <Accordion
+        items={[
+          [
+            <Fragment key={1}>
+              <div className={horFlexClasses}>
+                <h5 id="ownsets">{t('workbench:chooseFromOwnSets')}</h5>
+                <MsetIcon className="w-6 h-6 shrink-0" />
+              </div>
+              <p>{t('workbench:chooseFromOwnSetsDesc')}</p>
+            </Fragment>,
+            <UserSetPicker
+              key={2}
+              design={design}
+              clickHandler={loadMeasurements}
+              t={t}
+              size="md"
+            />,
+          ],
+          [
+            <Fragment key={1}>
+              <div className={horFlexClasses}>
+                <h5 id="bookmarkedsets">{t('workbench:chooseFromBookmarkedSets')}</h5>
+                <BookmarkIcon className="w-6 h-6 shrink-0" />
+              </div>
+              <p>{t('workbench:chooseFromBookmarkedSetsDesc')}</p>
+            </Fragment>,
+            <BookmarkedSetPicker
+              design={design}
+              clickHandler={loadMeasurements}
+              t={t}
+              size="md"
+              key={2}
+            />,
+          ],
+          [
+            <Fragment key={1}>
+              <div className={horFlexClasses}>
+                <h5 id="curatedsets">{t('workbench:chooseFromCuratedSets')}</h5>
+                <CsetIcon />
+              </div>
+              <p>{t('workbench:chooseFromCuratedSetsDesc')}</p>
+            </Fragment>,
+            <CuratedSetPicker design={design} clickHandler={loadMeasurements} t={t} key={2} />,
+          ],
+          [
+            <Fragment key={1}>
+              <div className={horFlexClasses}>
+                <h5 id="editmeasies">{t('workbench:editMeasiesByHand')}</h5>
+                <EditIcon />
+              </div>
+              <p>{t('workbench:editMeasiesByHandDesc')}</p>
+            </Fragment>,
+            <MeasiesEditor {...{ Design, settings, update }} key={2} />,
+          ],
+        ]}
+      />
     </div>
   )
 }

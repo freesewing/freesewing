@@ -7,7 +7,7 @@ import { formatMm } from 'shared/utils.mjs'
 
 /** The basis of it all. Handles the changed/unchanged styling for the wrapped value */
 export const HighlightedValue = ({ changed, children }) => (
-  <span className={changed ? 'text-info' : ''}> {children} </span>
+  <span className={changed ? 'text-accent' : ''}> {children} </span>
 )
 
 /**

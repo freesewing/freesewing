@@ -2,6 +2,7 @@ import { useContext, useMemo } from 'react'
 import { PanZoomContext } from 'shared/components/workbench/pattern/pan-zoom-context.mjs'
 import { useMobileAction } from 'shared/context/mobile-menubar-context.mjs'
 import { useTranslation } from 'next-i18next'
+import { useBackend } from 'shared/hooks/use-backend.mjs'
 import {
   PaperlessIcon,
   SaIcon,
@@ -11,9 +12,13 @@ import {
   DetailIcon,
   IconWrapper,
   ClearIcon,
+  ResetIcon,
+  UploadIcon,
+  BookmarkIcon,
 } from 'shared/components/icons.mjs'
-import { ClearAllButton } from 'shared/components/workbench/menus/core-settings/index.mjs'
 import { shownHeaderSelector } from 'shared/components/wrappers/header.mjs'
+import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
+import { capitalize, shortDate } from 'shared/utils.mjs'
 
 export const ns = ['common', 'core-settings', 'ui-settings']
 
@@ -76,9 +81,11 @@ const ZoomButtons = ({ t, zoomFunctions, zoomed }) => {
 
 const Spacer = () => <span className="opacity-50">|</span>
 
-export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
-  const { t } = useTranslation(ns)
+export const ViewHeader = ({ update, settings, ui, control, account, design, setSettings }) => {
+  const { t, i18n } = useTranslation(ns)
   const { zoomFunctions, zoomed } = useContext(PanZoomContext)
+  const backend = useBackend()
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   // make the zoom buttons so we can pass them to the mobile menubar
   const headerZoomButtons = useMemo(
@@ -88,13 +95,52 @@ export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
   // add the zoom buttons as an action on the mobile menubar
   useMobileAction('zoom', { order: 0, actionContent: headerZoomButtons })
 
+  const savePattern = async () => {
+    setLoadingStatus([true, 'savingPattern'])
+    const name = `${capitalize(design)} / ${shortDate(i18n.language)}`
+    const patternData = { design, name, public: false, settings, data: {} }
+    const result = await backend.createPattern(patternData)
+    if (result.success) {
+      const id = result.data.pattern.id
+      setLoadingStatus([
+        true,
+        <>
+          {t('status:patternSaved')} <small>[#{id}]</small>
+        </>,
+        true,
+        true,
+      ])
+    } else setLoadingStatus([true, 'backendError', true, false])
+  }
+
+  const bookmarkPattern = async () => {
+    setLoadingStatus([true, 'creatingBookmark'])
+    const result = await backend.createBookmark({
+      type: 'pattern',
+      title: `${capitalize(design)} / ${shortDate(i18n.language)}`,
+      url: window.location.pathname + window.location.search + window.location.hash,
+    })
+    if (result.success) {
+      const id = result.data.bookmark.id
+      setLoadingStatus([
+        true,
+        <>
+          {t('status:bookmarkCreated')} <small>[#{id}]</small>
+        </>,
+        true,
+        true,
+      ])
+    } else setLoadingStatus([true, 'backendError', true, false])
+  }
+
   return (
     <div
       className={`hidden lg:flex sticky top-0 z-20 ${shownHeaderSelector(
         'lg:top-24'
       )} transition-[top] duration-300 ease-in-out`}
     >
-      <div className="hidden lg:flex flex-row flex-wrap gap-4 py-4 pt-4 w-full bg-neutral text-neutral-content items-center justify-center">
+      <LoadingStatus />
+      <div className="hidden lg:flex flex-row flex-wrap gap-4 py-4 pt-8 w-full bg-neutral text-neutral-content items-center justify-center">
         {headerZoomButtons}
         <Spacer />
         <div className="flex flex-row items-center gap-4">
@@ -156,7 +202,53 @@ export const ViewHeader = ({ update, settings, ui, control, setSettings }) => {
         </div>
         <Spacer />
         <div className="flex flex-row items-center gap-4">
-          <ClearAllButton setSettings={setSettings} compact />
+          <button
+            onClick={() => setSettings({ measurements: settings.measurements })}
+            className={`tooltip tooltip-primary tooltip-bottom flex flex-row items-center`}
+            data-tip={t('core-settings:clearSettingsNotMeasurements')}
+            disabled={typeof settings.options === 'undefined'}
+          >
+            <ResetIcon
+              stroke={3.5}
+              className={`w-6 h-6 ${
+                typeof settings.options === 'undefined' ? 'text-base-100 opacity-30' : 'text-accent'
+              }`}
+            />
+          </button>
+          <button
+            onClick={() => setSettings({})}
+            className="tooltip tooltip-primary tooltip-bottom flex flex-row items-center text-warning"
+            data-tip={t('core-settings:clearSettingsAndMeasurements')}
+            disabled={!(settings.measurements && Object.keys(settings.measurements).length > 0)}
+          >
+            <ResetIcon
+              stroke={3.5}
+              className={`w-6 h-6 ${
+                !(settings.measurements && Object.keys(settings.measurements).length > 0)
+                  ? 'text-base-100 opacity-30'
+                  : 'text-warning'
+              }`}
+            />
+          </button>
+        </div>
+        <Spacer />
+        <div className="flex flex-row items-center gap-4">
+          <button
+            onClick={() => savePattern()}
+            className={`tooltip tooltip-primary tooltip-bottom flex flex-row items-center disabled:opacity-50`}
+            data-tip={t('workbench:savePattern')}
+            disabled={typeof account?.username === 'undefined'}
+          >
+            <UploadIcon />
+          </button>
+          <button
+            onClick={() => bookmarkPattern()}
+            className={`tooltip tooltip-primary tooltip-bottom flex flex-row items-center disabled:opacity-50`}
+            data-tip={t('workbench:bookmarkPattern')}
+            disabled={typeof account?.username === 'undefined'}
+          >
+            <BookmarkIcon />
+          </button>
         </div>
       </div>
     </div>

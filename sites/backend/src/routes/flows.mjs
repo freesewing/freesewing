@@ -31,6 +31,9 @@ export function flowsRoutes(tools) {
     Flow.uploadImage(req, res, tools)
   )
 
+  // Upload an image - anonymous route for support requests
+  app.post('/images', (req, res) => Flow.uploadImage(req, res, tools, true))
+
   // Remove an image
   app.delete('/images/:id/jwt', passport.authenticate(...jwt), (req, res) =>
     Flow.removeImage(req, res, tools)
@@ -51,6 +54,9 @@ export function flowsRoutes(tools) {
 
   // Create Issue - No auth needed
   app.post('/issues', (req, res) => Flow.createIssue(req, res, tools))
+
+  // Create Discussion - No auth needed
+  app.post('/discussions', (req, res) => Flow.createDiscussion(req, res, tools))
 
   // See if a showcase or blog slug is available
   for (const type of ['showcase', 'blog']) {

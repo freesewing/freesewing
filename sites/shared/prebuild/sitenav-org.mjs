@@ -39,9 +39,14 @@ export const extendSiteNav = async (siteNav, lang) => {
     h: 1,
     t: t('sections:new'),
     apikey: {
-      c: conf.account.fields.developer.apikeys,
+      c: conf.account.fields.security.apikeys,
       s: 'new/apikey',
       t: t('newApikey'),
+      o: 30,
+    },
+    bookmark: {
+      s: 'new/bookmark',
+      t: t('account:newBookmark'),
       o: 30,
     },
     pattern: {
@@ -82,10 +87,6 @@ export const extendSiteNav = async (siteNav, lang) => {
       s: `new/${design}`,
       t: t(`account:generateANewThing`, { thing: t(`designs:${design}.t`) }),
     }
-  }
-
-  for (const key of ['patterns', 'sets', 'community']) {
-    siteNav[key] = { m: 1, s: key, t: t(`sections:${key}`) }
   }
 
   // Configure properties of blog and showcase sections
@@ -211,9 +212,8 @@ export const extendSiteNav = async (siteNav, lang) => {
 
   // Add support
   siteNav.support = {
-    _: 1,
+    m: 1,
     s: 'support',
-    h: 1,
     t: t('sections:support'),
   }
 
@@ -236,11 +236,9 @@ export const extendSiteNav = async (siteNav, lang) => {
   siteNav.docs.o = 20
   siteNav.blog.o = 30
   siteNav.showcase.o = 40
-  siteNav.community.o = 50
-  siteNav.patterns.o = 60
-  siteNav.sets.o = 70
-  siteNav.account.o = 80
-  siteNav.new.o = 90
+  siteNav.new.o = 50
+  siteNav.account.o = 60
+  siteNav.support.o = 70
 
   return siteNav
 }

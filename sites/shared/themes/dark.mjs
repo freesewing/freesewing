@@ -8,50 +8,36 @@ export const theme = {
   fontFamily:
     '-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
 
-  'base-100': colors.neutral['900'],
-  'base-200': colors.neutral['800'],
+  'base-100': colors.neutral['800'],
+  'base-200': colors.neutral['700'],
   'base-300': colors.neutral['600'],
-  'base-content': colors.neutral['300'],
+  'base-content': colors.neutral['200'],
 
-  primary: colors.violet['800'],
-  'primary-focus': colors.violet['700'],
-  'primary-content': colors.violet['50'],
+  primary: colors.violet['400'],
+  'primary-focus': colors.violet['300'],
+  'primary-content': colors.neutral['900'],
 
-  secondary: colors.sky['700'],
-  'secondary-focus': colors.sky['600'],
-  'secondary-content': colors.sky['50'],
+  secondary: colors.sky['400'],
+  'secondary-focus': colors.sky['300'],
+  'secondary-content': colors.neutral['900'],
 
-  accent: colors.fuchsia['700'],
-  'accent-focus': colors.fuchsia['600'],
-  'accent-content': colors.fuchsia['50'],
+  accent: colors.fuchsia['400'],
+  'accent-focus': colors.fuchsia['300'],
+  'accent-content': colors.neutral['900'],
 
-  neutral: '#000000', // Dark as my soul
-  'neutral-focus': colors.neutral['800'],
+  neutral: colors.neutral['900'],
+  'neutral-focus': colors.neutral['700'],
   'neutral-content': colors.neutral['50'],
 
-  info: colors.indigo['700'],
-  success: colors.green['700'],
-  warning: colors.orange['500'],
-  error: colors.red['700'],
+  info: colors.indigo['400'],
+  success: colors.green['400'],
+  warning: colors.orange['400'],
+  error: colors.red['400'],
 
-  '--btn-info-content': colors.neutral[50],
-  '--btn-success-content': colors.neutral[50],
-  '--btn-warning-content': colors.neutral[50],
-  '--btn-error-content': colors.neutral[50],
-
-  '--theme-gradient': `repeating-linear-gradient(
-    90deg,
-    ${colors.red[600]} 0,
-    ${colors.orange[600]} 11%,
-    ${colors.yellow[600]} 22%,
-    ${colors.lime[600]} 33%,
-    ${colors.green[600]} 44%,
-    ${colors.cyan[600]} 55%,
-    ${colors.blue[600]} 66%,
-    ${colors.indigo[600]} 77%,
-    ${colors.violet[600]} 88%,
-    ${colors.purple[600]} 100%
-  )`,
+  '--btn-info-content': colors.neutral[900],
+  '--btn-success-content': colors.neutral[900],
+  '--btn-warning-content': colors.neutral[900],
+  '--btn-error-content': colors.neutral[900],
 
   '--code-background-color': '#111',
   '--code-background-highlight-color': '#191919',
@@ -106,6 +92,4 @@ export const theme = {
   '--pattern-dev-5': colors.violet['500'],
   '--pattern-dev-6': colors.teal['500'],
   '--pattern-dev-7': colors.neutral['500'],
-
-  stripeTheme: 'night',
 }

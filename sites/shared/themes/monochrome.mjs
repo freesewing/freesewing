@@ -36,19 +36,6 @@ export const theme = {
   '--btn-warning-content': color[900],
   error: color['700'],
   '--btn-error-content': color[50],
-  '--theme-gradient': `repeating-linear-gradient(
-    90deg,
-    ${color[400]} 0,
-    ${color[400]} 11%,
-    ${color[400]} 22%,
-    ${color[400]} 33%,
-    ${color[400]} 44%,
-    ${color[400]} 55%,
-    ${color[400]} 66%,
-    ${color[400]} 77%,
-    ${color[400]} 88%,
-    ${color[400]} 100%
-  )`,
   '--code-background-color': color['800'],
   '--code-background-highlight-color': color['300'],
   '--code-border-color': color['900'],
@@ -121,5 +108,4 @@ export const theme = {
   '--pattern-sample-8': color['500'],
   '--pattern-sample-9': color['500'],
   '--pattern-sample-10': color['500'],
-  stripeTheme: 'stripe',
 }

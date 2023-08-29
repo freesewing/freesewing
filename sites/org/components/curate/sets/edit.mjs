@@ -17,9 +17,10 @@ import { useToast } from 'shared/hooks/use-toast.mjs'
 import { Collapse } from 'shared/components/collapse.mjs'
 import { ClearIcon, EditIcon, FilterIcon } from 'shared/components/icons.mjs'
 import Timeago from 'react-timeago'
-import { PageLink } from 'shared/components/page-link.mjs'
-import { MeasieRow } from 'shared/components/sets/measie-input.mjs'
+import { PageLink } from 'shared/components/link.mjs'
+//import { MeasieRow } from 'shared/components/sets/measie-input.mjs'
 import { ModalDesignPicker } from 'shared/components/modal/design-picker.mjs'
+import { V3Wip } from 'shared/components/v3-wip.mjs'
 
 export const ns = ['toast', 'curate', 'sets', 'account']
 
@@ -130,13 +131,18 @@ const EditTags = ({ mset, t, lang }) => {
 }
 
 export const EditCuratedSet = ({ id }) => {
+  // FIXME
+  return <V3Wip id={id} />
+}
+
+/*
   // Context
   const { startLoading, stopLoading } = useContext(LoadingContext)
   const { setModal } = useContext(ModalContext)
 
   // Hooks
-  const { account, token } = useAccount()
-  const backend = useBackend(token)
+  const { account } = useAccount()
+  const backend = useBackend()
   const {
     t,
     //i18n
@@ -148,6 +154,7 @@ export const EditCuratedSet = ({ id }) => {
   const [set, setSet] = useState([])
   const [reload] = useState(0)
   const [filter, setFilter] = useState(false)
+
 
   // Force a refresh
   //const refresh = () => setReload(reload + 1)
@@ -182,7 +189,7 @@ export const EditCuratedSet = ({ id }) => {
   return (
     <div className="max-w-2xl xl:pl-4">
       <div className="p-4">
-        {/* Meta info */}
+        {// Meta info }
         {account.control > 2 ? (
           <div className="flex flex-row gap-4 text-sm items-center justify-center mb-2">
             <div className="flex flex-row gap-2 items-center">
@@ -198,7 +205,7 @@ export const EditCuratedSet = ({ id }) => {
           </div>
         ) : null}
 
-        {/* JSON & YAML links */}
+        {// JSON & YAML links }
         {account.control > 3 ? (
           <div className="flex flex-row gap-4 text-sm items-center justify-center">
             <a
@@ -218,14 +225,14 @@ export const EditCuratedSet = ({ id }) => {
 
         <h2>{t('account:data')}</h2>
 
-        {/* img: Control level determines whether or not to show this */}
+        {// img: Control level determines whether or not to show this }
         {account.control >= conf.account.sets.img ? (
           <EditRow title={t('account:img')} field="img" {...editProps}>
             <img src={set.img} className="w-10 mask mask-squircle bg-neutral aspect-square" />
           </EditRow>
         ) : null}
 
-        {/* Name is always shown */}
+        {// Name is always shown }
         {siteConfig.languages.map((lang) => (
           <EditRow
             title={`${t('account:name')} (${lang.toUpperCase()})`}
@@ -237,7 +244,7 @@ export const EditCuratedSet = ({ id }) => {
           </EditRow>
         ))}
 
-        {/* Notes are always shown */}
+        {// Notes are always shown }
         {account.control >= conf.account.sets.notes
           ? siteConfig.languages.map((lang) => (
               <EditRow
@@ -283,3 +290,4 @@ export const EditCuratedSet = ({ id }) => {
     </div>
   )
 }
+*/

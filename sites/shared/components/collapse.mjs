@@ -53,7 +53,7 @@ export const Collapse = ({
     ) : null
 
   return open ? (
-    <div className={`shadow my-4 w-full mx-auto  lg:mx-0`}>
+    <div className={`shadow my-4 w-full mx-auto lg:mx-0 `}>
       {top ? <TitleBtn /> : null}
       <div
         className={`p-2 lg:p-4 border-solid border border-${color} ${
@@ -65,7 +65,7 @@ export const Collapse = ({
       {bottom ? <TitleBtn bottom /> : null}
     </div>
   ) : (
-    <div className={`flex flex-row gap-2 my-4 items-center ${className}`}>
+    <div className={`flex flex-row gap-2 my-4 items-center bg-${color} bg-opacity-10 ${className}`}>
       <div
         className={`shadow border-solid border-l-[6px] border-r-0 border-t-0 border-b-0 border-${color} min-h-12
             grow flex flex-row gap-4 py-1 px-4 items-center justify-start hover:cursor-pointer hover:bg-${color} hover:bg-opacity-20`}

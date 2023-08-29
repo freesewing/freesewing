@@ -1,13 +1,16 @@
 // Dependencies
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { nsMerge } from 'shared/utils.mjs'
+// Hooks
+import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 import { ns as emailNs } from 'shared/components/account/email.mjs'
 
 // Translation namespaces used on this page
-const namespaces = [...new Set([...emailNs, ...authNs, ...pageNs])]
+const ns = nsMerge(emailNs, authNs, pageNs)
 
 /*
  * Some things should never generated as SSR
@@ -29,20 +32,24 @@ const DynamicEmail = dynamic(
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const AccountEmailPage = ({ page }) => (
-  <PageWrapper {...page}>
-    <DynamicAuthWrapper>
-      <DynamicEmail title />
-    </DynamicAuthWrapper>
-  </PageWrapper>
-)
+const AccountEmailPage = ({ page }) => {
+  const { t } = useTranslation(ns)
+
+  return (
+    <PageWrapper {...page} title={t('email')}>
+      <DynamicAuthWrapper>
+        <DynamicEmail title />
+      </DynamicAuthWrapper>
+    </PageWrapper>
+  )
+}
 
 export default AccountEmailPage
 
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, namespaces)),
+      ...(await serverSideTranslations(locale, ns)),
       page: {
         locale,
         path: ['account', 'email'],

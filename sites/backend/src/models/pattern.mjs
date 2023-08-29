@@ -111,23 +111,24 @@ PatternModel.prototype.guardedCreate = async function ({ body, user }) {
   })
 
   /*
-   * Now that we have a record ID, we can update the image
+   * Now that we have a record ID, we can update the image, but only if needed
    */
-  const img = await storeImage(
-    {
-      id: `pattern-${this.record.id}`,
-      metadata: { user: user.uid },
-      b64: body.img,
-    },
-    this.isTest(body)
-  )
+  if (body.img) {
+    const img = await storeImage(
+      {
+        id: `pattern-${this.record.id}`,
+        metadata: { user: user.uid },
+        b64: body.img,
+      },
+      this.isTest(body)
+    )
 
-  /*
-   * If an image was created, update the record with its ID
-   * If not, just update the record from the database
-   */
-  if (img) await this.update(this.cloak({ img: img.url }))
-  else await this.read({ id: this.record.id }, { set: true, cset: true })
+    /*
+     * If an image was created, update the record with its ID
+     * If not, just update the record from the database
+     */
+    await this.update(this.cloak({ img: img.url }))
+  } else await this.read({ id: this.record.id }, { set: true, cset: true })
 
   /*
    * Now return 201 and the record data
@@ -174,11 +175,6 @@ PatternModel.prototype.guardedRead = async function ({ params, user }) {
   if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
   /*
-   * Check JWT for status
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
-
-  /*
    * Is the id set?
    */
   if (typeof params.id !== 'undefined' && !Number(params.id))
@@ -220,11 +216,6 @@ PatternModel.prototype.guardedClone = async function ({ params, user }) {
    * Enforce RBAC
    */
   if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
-
-  /*
-   * Check JWT
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   /*
    * Attempt to read record from database
@@ -276,11 +267,6 @@ PatternModel.prototype.guardedUpdate = async function ({ params, body, user }) {
    * Enforce RBAC
    */
   if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
-
-  /*
-   * Check JWT
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   /*
    * Attempt to read record from the database
@@ -355,11 +341,6 @@ PatternModel.prototype.guardedDelete = async function ({ params, user }) {
    * Enforce RBAC
    */
   if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
-
-  /*
-   * Check JWT
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   /*
    * Attempt to read record from database

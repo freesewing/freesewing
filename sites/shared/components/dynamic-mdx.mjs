@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic'
 import { MDXProvider } from '@mdx-js/react'
 import { useState } from 'react'
 import { Spinner } from 'shared/components/spinner.mjs'
-import { PageLink } from 'shared/components/page-link.mjs'
+import { PageLink } from 'shared/components/link.mjs'
 import { useTranslation } from 'next-i18next'
 import { components } from 'shared/components/mdx/index.mjs'
 

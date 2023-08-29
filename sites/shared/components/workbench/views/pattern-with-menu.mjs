@@ -10,6 +10,8 @@ export const PatternWithMenu = ({
   ui,
   update,
   control,
+  account,
+  design,
   title,
   pattern,
   menu,
@@ -23,6 +25,8 @@ export const PatternWithMenu = ({
           ui,
           update,
           control,
+          account,
+          design,
           setSettings,
         }}
       />

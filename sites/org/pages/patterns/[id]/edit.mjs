@@ -1,6 +1,5 @@
 // Hooks
 import { useEffect, useState } from 'react'
-import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useDesign } from 'shared/hooks/use-design.mjs'
 // Dependencies
@@ -20,8 +19,7 @@ const EditPatternPage = ({ page, id }) => {
   const [pattern, setPattern] = useState(false)
 
   // Hooks
-  const { token } = useAccount()
-  const backend = useBackend(token)
+  const backend = useBackend()
   const Design = useDesign(pattern?.design)
 
   // Effect

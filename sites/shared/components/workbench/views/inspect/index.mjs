@@ -3,6 +3,7 @@ import { InspectorPattern } from './inspector/pattern.mjs'
 import { DraftMenu, ns as menuNs } from './menu.mjs'
 import { objUpdate } from 'shared/utils.mjs'
 import { PatternWithMenu, ns as wrapperNs } from '../pattern-with-menu.mjs'
+import { V3Wip } from 'shared/components/v3-wip.mjs'
 
 export const ns = [...menuNs, ...wrapperNs]
 
@@ -73,27 +74,32 @@ export const InspectView = ({
         ui,
         update,
         control: account.control,
+        account,
+        design,
         setSettings,
         pattern: output,
         menu: (
-          <DraftMenu
-            {...{
-              design,
-              pattern,
-              patternConfig,
-              settings,
-              setSettings,
-              ui,
-              update,
-              language,
-              account,
-              DynamicDocs,
-              inspector,
-              renderProps,
-              view,
-              setView,
-            }}
-          />
+          <>
+            <V3Wip />
+            <DraftMenu
+              {...{
+                design,
+                pattern,
+                patternConfig,
+                settings,
+                setSettings,
+                ui,
+                update,
+                language,
+                account,
+                DynamicDocs,
+                inspector,
+                renderProps,
+                view,
+                setView,
+              }}
+            />
+          </>
         ),
       }}
     />

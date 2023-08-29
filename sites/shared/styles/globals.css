@@ -404,6 +404,14 @@
   }
 }
 
+progress.progress-white {
+  background-color: #fff3;
+}
+progress.progress-white::-moz-progress-bar {
+  background-color: #fffb;
+  transition: width 0.5s;
+}
+
 @keyframes pulsefill {
   0% {
     fill-opacity: 0;

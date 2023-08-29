@@ -89,7 +89,7 @@ export const formatFraction128 = (fraction, format = 'html') => {
 // Format can be html, notags, or anything else which will only return numbers
 export const formatMm = (val, units, format = 'html') => {
   val = roundMm(val)
-  if (units === 'imperial') {
+  if (units === 'imperial' || units === true) {
     if (val == 0) return formatImperial('', 0, false, false, format)
 
     let fraction = val / 25.4
@@ -265,14 +265,16 @@ export const nsMerge = (...args) => {
   return [...ns]
 }
 
-export const shortDate = (locale = 'en', timestamp = false) => {
+export const shortDate = (locale = 'en', timestamp = false, withTime = true) => {
   const options = {
     year: 'numeric',
     month: 'short',
     day: 'numeric',
-    hour: '2-digit',
-    minute: '2-digit',
-    hour12: false,
+  }
+  if (withTime) {
+    options.hour = '2-digit'
+    options.minute = '2-digit'
+    options.hour12 = false
   }
   const ts = timestamp ? new Date(timestamp) : new Date()
 
@@ -393,6 +395,11 @@ export const formatNumber = (num, suffix = '') => {
  */
 export const cloudflareImageUrl = ({ id = 'default-avatar', variant = 'public' }) => {
   /*
+   * Return something default so that people will actually change it
+   */
+  if (!id || id === 'default-avatar') return cloudflareConfig.dflt
+
+  /*
    * If the variant is invalid, set it to the smallest thumbnail so
    * people don't load enourmous images by accident
    */
@@ -400,3 +407,40 @@ export const cloudflareImageUrl = ({ id = 'default-avatar', variant = 'public' }
 
   return `${cloudflareConfig.url}${id}/${variant}`
 }
+
+/*
+ * Parses value that should be a distance (cm or inch)
+ */
+export const parseDistanceInput = (val = false, imperial = false) => {
+  // No input is not valid
+  if (!val) return false
+
+  // Cast to string, and replace comma with period
+  val = val.toString().trim().replace(',', '.')
+
+  // Regex pattern for regular numbers with decimal seperator or fractions
+  const regex = imperial
+    ? /^-?[0-9]*(\s?[0-9]+\/|[.])?[0-9]+$/ // imperial (fractions)
+    : /^-?[0-9]*[.]?[0-9]+$/ // metric (no fractions)
+  if (!val.match(regex)) return false
+
+  // if fractions are allowed, parse for fractions, otherwise use the number as a value
+  if (imperial) val = fractionToDecimal(val)
+
+  return isNaN(val) ? false : Number(val)
+}
+
+/*
+ * To spread icon + text horizontal
+ */
+export const horFlexClasses = 'flex flex-row items-center justify-between gap-4'
+
+/*
+ * To spread icon + text horizontal but only from md upwards
+ */
+export const horFlexClassesNoSm = 'md:flex md:flex-row md:items-center md:justify-between md:gap-4'
+
+/*
+ * A method that check that a var is not empty
+ */
+export const notEmpty = (thing) => `${thing}`.length > 0

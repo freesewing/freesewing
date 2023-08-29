@@ -13,6 +13,7 @@ import { PrintIcon, RightIcon } from 'shared/components/icons.mjs'
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 import { PatternWithMenu, ns as wrapperNs } from '../pattern-with-menu.mjs'
+import { V3Wip } from 'shared/components/v3-wip.mjs'
 
 const viewNs = ['print', ...exportNs]
 export const ns = [...viewNs, ...menuNs, ...wrapperNs]
@@ -93,6 +94,8 @@ export const PrintView = ({
         ui,
         update,
         control: account.control,
+        account,
+        design,
         setSettings,
         title: (
           <div className="flex lg:justify-between items-baseline flex-wrap px-2">
@@ -114,21 +117,24 @@ export const PrintView = ({
           />
         ),
         menu: (
-          <PrintMenu
-            {...{
-              design,
-              pattern,
-              patternConfig,
-              setSettings,
-              settings,
-              ui,
-              update,
-              language,
-              account,
-              DynamicDocs,
-              exportIt,
-            }}
-          />
+          <>
+            <V3Wip />
+            <PrintMenu
+              {...{
+                design,
+                pattern,
+                patternConfig,
+                setSettings,
+                settings,
+                ui,
+                update,
+                language,
+                account,
+                DynamicDocs,
+                exportIt,
+              }}
+            />
+          </>
         ),
       }}
     />

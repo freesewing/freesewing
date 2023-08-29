@@ -122,8 +122,8 @@ export const CurateSets = () => {
   const { startLoading, stopLoading } = useContext(LoadingContext)
 
   // Hooks
-  const { account, token } = useAccount()
-  const backend = useBackend(token)
+  const { account } = useAccount()
+  const backend = useBackend()
   const { t, i18n } = useTranslation('sets', 'curate', 'toast', 'account')
   const { language } = i18n
   const toast = useToast()

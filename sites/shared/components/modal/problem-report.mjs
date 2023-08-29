@@ -12,7 +12,7 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
 import { CopyToClipboard } from 'shared/components/copy-to-clipboard.mjs'
-import { WebLink } from 'shared/components/web-link.mjs'
+import { WebLink } from 'shared/components/link.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
 
 export const ns = ['errors']

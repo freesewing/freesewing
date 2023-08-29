@@ -1,67 +1,68 @@
 // Dependencies
-import { useState, useEffect, useContext, useCallback } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
-import orderBy from 'lodash.orderby'
 import { measurements } from 'config/measurements.mjs'
 import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
-import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
+import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewing.config.mjs'
+import { siteConfig } from 'site/site.config.mjs'
+import {
+  shortDate,
+  cloudflareImageUrl,
+  formatMm,
+  hasRequiredMeasurements,
+  capitalize,
+  horFlexClasses,
+} from 'shared/utils.mjs'
+import orderBy from 'lodash.orderby'
 // Hooks
-import { useDropzone } from 'react-dropzone'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useRouter } from 'next/router'
+import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
-import { Collapse, useCollapseButton } from 'shared/components/collapse.mjs'
-import { BackToAccountButton, Choice } from './shared.mjs'
-import { PageLink } from 'shared/components/page-link.mjs'
-import { ModalDesignPicker } from 'shared/components/modal/design-picker.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
+import { Tag } from 'shared/components/tag.mjs'
+import { BackToAccountButton } from './shared.mjs'
+import { AnchorLink, PageLink, Link } from 'shared/components/link.mjs'
+import { V3Wip } from 'shared/components/v3-wip.mjs'
 import {
-  FilterIcon,
-  ClearIcon,
   OkIcon,
   NoIcon,
   TrashIcon,
   EditIcon,
+  UploadIcon,
+  ResetIcon,
+  PlusIcon,
+  WarningIcon,
+  FilterIcon,
+  CameraIcon,
 } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import Markdown from 'react-markdown'
-import { Tab } from './bio.mjs'
 import Timeago from 'react-timeago'
-import { Spinner } from 'shared/components/spinner.mjs'
-import { MeasieRow } from 'shared/components/sets/measie-input.mjs'
+import { DisplayRow } from './shared.mjs'
+import { isDegreeMeasurement } from 'config/measurements.mjs'
+import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
-export const ns = ['account', 'patterns', 'toast']
+import {
+  StringInput,
+  PassiveImageInput,
+  ListInput,
+  MarkdownInput,
+  MeasieInput,
+  DesignDropdown,
+  ns as inputNs,
+} from 'shared/components/inputs.mjs'
 
-export const StandAloneNewSet = () => {
-  const { t } = useTranslation(['account'])
-  const toast = useToast()
-  const { account, token } = useAccount()
-  const backend = useBackend(token)
+export const ns = [inputNs, 'account', 'patterns', 'status', 'measurements', 'sets']
 
-  return (
-    <div className="max-w-xl">
-      <NewSet {...{ t, account, backend, toast }} title={false} standalone={true} />
-    </div>
-  )
-}
-
-export const NewSet = ({
-  t,
-  refresh,
-  closeCollapseButton,
-  backend,
-  toast,
-  title = true,
-  standalone = false,
-}) => {
-  // Context
-  const { startLoading, stopLoading } = useContext(LoadingContext)
-
+export const NewSet = () => {
   // Hooks
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const backend = useBackend()
+  const { t } = useTranslation(ns)
   const router = useRouter()
 
   // State
@@ -69,24 +70,17 @@ export const NewSet = ({
 
   // Helper method to create a new set
   const createSet = async () => {
-    startLoading()
-    const result = await backend.createSet({
-      name,
-    })
+    setLoadingStatus([true, 'processingUpdate'])
+    const result = await backend.createSet({ name })
     if (result.success) {
-      toast.success(<span>{t('nailedIt')}</span>)
-      if (standalone) router.push('/account/sets/')
-      else {
-        refresh()
-        closeCollapseButton()
-      }
-    } else toast.for.backendError()
-    stopLoading()
+      setLoadingStatus([true, t('nailedIt'), true, true])
+      router.push(`/account/sets/${result.data.set.id}`)
+    } else setLoadingStatus([true, 'backendError', true, false])
   }
 
   return (
-    <div>
-      {title ? <h2>{t('newSet')}</h2> : null}
+    <div className="max-w-xl">
+      <LoadingStatus />
       <h5>{t('name')}</h5>
       <p>{t('setNameDesc')}</p>
       <input
@@ -110,515 +104,523 @@ export const NewSet = ({
   )
 }
 
-const EditField = (props) => {
-  if (props.field === 'name') return <EditName {...props} />
-  if (props.field === 'notes') return <EditNotes {...props} />
-  if (props.field === 'imperial') return <EditUnits {...props} />
-  if (props.field === 'public') return <EditPublic {...props} />
-  if (props.field === 'img') return <EditImg {...props} />
+export const MeasieVal = ({ val, m, imperial }) =>
+  isDegreeMeasurement(m) ? <span>{val}°</span> : <span>{formatMm(val, imperial)}</span>
 
-  return <p>FIXME: No edit component for this field</p>
-}
+export const MsetCard = ({
+  set,
+  onClick = false,
+  href = false,
+  useA = false,
+  design = false,
+  language = false,
+  size = 'lg',
+}) => {
+  const sizes = {
+    lg: 96,
+    md: 52,
+    sm: 36,
+  }
+  const s = sizes[size]
 
-export const EditRow = (props) => (
-  <Collapse
-    color="secondary"
-    openTitle={props.title}
-    title={
-      <>
-        <div className="w-24 text-left md:text-right block md:inline font-bold pr-4">
-          {props.title}
-        </div>
-        <div className="grow">{props.children}</div>
-      </>
-    }
-    toggle={<EditIcon />}
-    toggleClasses="btn btn-secondary"
-  >
-    <EditField field="name" {...props} />
-  </Collapse>
-)
+  const wrapperProps = {
+    className: `bg-base-300 aspect-square h-${s} w-${s} mb-2
+      mx-auto flex flex-col items-start text-center justify-between rounded-none md:rounded shadow`,
+    style: {
+      backgroundImage: `url(${cloudflareImageUrl({ type: 'w500', id: set.img })})`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '50%',
+    },
+  }
+  if (!set.img || set.img === 'default-avatar')
+    wrapperProps.style.backgroundPosition = 'bottom right'
 
-const EditImg = ({ t, mset, account, backend, startLoading, stopLoading, toast, refresh }) => {
-  const [img, setImg] = useState(mset.img)
-
-  const onDrop = useCallback((acceptedFiles) => {
-    const reader = new FileReader()
-    reader.onload = () => {
-      setImg(reader.result)
-    }
-    acceptedFiles.forEach((file) => reader.readAsDataURL(file))
-  }, [])
-
-  const { getRootProps, getInputProps } = useDropzone({ onDrop })
-
-  const save = async () => {
-    startLoading()
-    const result = await backend.updateSet(mset.id, { img })
-    if (result.success) {
-      toast.for.settingsSaved()
-      refresh()
-    } else toast.for.backendError()
-    stopLoading()
+  let icon = <span></span>
+  if (design) {
+    const [hasMeasies] = hasRequiredMeasurements(designMeasurements[design], set.measies, true)
+    const iconClasses = 'w-8 h-8 p-1 rounded-full -mt-2 -ml-2 shadow'
+    icon = hasMeasies ? (
+      <OkIcon className={`${iconClasses} bg-success text-success-content`} stroke={4} />
+    ) : (
+      <NoIcon className={`${iconClasses} bg-error text-error-content`} stroke={3} />
+    )
   }
 
-  return (
-    <div>
-      <div>
-        <img
-          alt="img"
-          src={img || account.img}
-          className="shadow mb-4 mask mask-squircle bg-neutral aspect-square"
-        />
-        <div
-          {...getRootProps()}
-          className={`
-          flex rounded-lg w-full flex-col items-center justify-center
-          lg:h-64 lg:border-4 lg:border-secondary lg:border-dashed
-        `}
-        >
-          <input {...getInputProps()} />
-          <p className="hidden lg:block p-0 m-0">{t('imgDragAndDropImageHere')}</p>
-          <p className="hidden lg:block p-0 my-2">{t('or')}</p>
-          <button className={`btn btn-secondary btn-outline mt-4 w-64`}>
-            {t('imgSelectImage')}
-          </button>
-        </div>
-      </div>
-      <div className="flex flex-row gap-2 items-center justify-center mt-2">
-        <button className="btn btn-secondary" onClick={save}>
-          {t('save')}
-        </button>
-      </div>
-    </div>
+  const inner = (
+    <>
+      {icon}
+      <span className="bg-neutral text-neutral-content px-4 w-full bg-opacity-50 py-2 rounded rounded-t-none font-bold leading-5">
+        {language ? set[`name${capitalize(language)}`] : set.name}
+      </span>
+    </>
   )
+
+  // Is it a button with an onClick handler?
+  if (onClick)
+    return (
+      <button {...wrapperProps} onClick={() => onClick(set)}>
+        {inner}
+      </button>
+    )
+
+  // Returns a link to an internal page
+  if (href && !useA)
+    return (
+      <Link {...wrapperProps} href={href}>
+        {inner}
+      </Link>
+    )
+
+  // Returns a link to an external page
+  if (href && useA)
+    return (
+      <a {...wrapperProps} href={href}>
+        {inner}
+      </a>
+    )
+
+  // Returns a div
+  return <div {...wrapperProps}>{inner}</div>
 }
 
-const EditName = ({ t, mset, backend, toast, refresh, loading, startLoading, stopLoading }) => {
-  const [value, setValue] = useState(mset.name)
+export const Mset = ({ id, publicOnly = false }) => {
+  // Hooks
+  const { account, control } = useAccount()
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const backend = useBackend()
+  const { t, i18n } = useTranslation(ns)
+  // FIXME: implement a solution for loading docs dynamically the is simple and work as expected
+  const docs = {}
+  for (const option of ['name', 'units', 'public', 'notes', 'image']) {
+    docs[option] = <DynamicOrgDocs language={i18n.language} path={`site/sets/${option}`} />
+  }
+  // FIXME: implement a solution for loading docs dynamically the is simple and work as expected
+  const measieDocs = {}
+  for (const m of measurements) {
+    measieDocs[m] = <DynamicOrgDocs language={i18n.language} path={`measurements/${m}`} />
+  }
 
-  const update = async (evt) => {
-    evt.preventDefault()
-    if (evt.target.value !== value) {
-      setValue(evt.target.value)
+  // Context
+  const { setModal } = useContext(ModalContext)
+
+  const [filter, setFilter] = useState(false)
+  const [edit, setEdit] = useState(false)
+  const [mset, setMset] = useState()
+  // Set fields for editing
+  const [name, setName] = useState(mset?.name)
+  const [image, setImage] = useState(mset?.image)
+  const [isPublic, setIsPublic] = useState(mset?.public ? true : false)
+  const [imperial, setImperial] = useState(mset?.imperial ? true : false)
+  const [notes, setNotes] = useState(mset?.notes || '')
+  const [measies, setMeasies] = useState({})
+
+  // Effect
+  useEffect(() => {
+    const getSet = async () => {
+      setLoadingStatus([true, t('backendLoadingStarted')])
+      const result = await backend.getSet(id)
+      if (result.success) {
+        setMset(result.data.set)
+        setName(result.data.set.name)
+        setImage(result.data.set.image)
+        setIsPublic(result.data.set.public ? true : false)
+        setImperial(result.data.set.imperial ? true : false)
+        setNotes(result.data.set.notes)
+        setMeasies(result.data.set.measies)
+        setLoadingStatus([true, 'backendLoadingCompleted', true, true])
+      } else setLoadingStatus([true, 'backendError', true, false])
     }
+    const getPublicSet = async () => {
+      setLoadingStatus([true, t('backendLoadingStarted')])
+      const result = await backend.getPublicSet(id)
+      if (result.success) {
+        setMset({
+          ...result.data,
+          public: true,
+          measies: result.data.measurements,
+        })
+        setName(result.data.name)
+        setImage(result.data.image)
+        setIsPublic(result.data.public ? true : false)
+        setImperial(result.data.imperial ? true : false)
+        setNotes(result.data.notes)
+        setMeasies(result.data.measurements)
+        setLoadingStatus([true, 'backendLoadingCompleted', true, true])
+      } else setLoadingStatus([true, 'backendError', true, false])
+    }
+    if (id) {
+      if (publicOnly) getPublicSet()
+      else getSet()
+    }
+  }, [id, publicOnly])
+
+  const filterMeasurements = () => {
+    if (!filter) return measurements.map((m) => t(`measurements:${m}`) + `|${m}`).sort()
+    else return designMeasurements[filter].map((m) => t(`measurements:${m}`) + `|${m}`).sort()
+  }
+
+  if (!id || !mset) return null
+
+  const updateMeasies = (m, val) => {
+    const newMeasies = { ...measies }
+    newMeasies[m] = val
+    setMeasies(newMeasies)
   }
 
   const save = async () => {
-    startLoading()
-    const result = await backend.updateSet(mset.id, { name: value })
+    setLoadingStatus([true, 'gatheringInfo'])
+    // Compile data
+    const data = { measies: {} }
+    if (name || name !== mset.name) data.name = name
+    if (image || image !== mset.image) data.img = image
+    if ([true, false].includes(isPublic) && isPublic !== mset.public) data.public = isPublic
+    if ([true, false].includes(imperial) && imperial !== mset.imperial) data.imperial = imperial
+    if (notes || notes !== mset.notes) data.notes = notes
+    // Add measurements
+    for (const m of measurements) {
+      if (measies[m] || measies[m] !== mset.measies[m]) data.measies[m] = measies[m]
+    }
+    setLoadingStatus([true, 'savingSet'])
+    const result = await backend.updateSet(mset.id, data)
     if (result.success) {
-      refresh()
-      toast.for.settingsSaved()
-    } else toast.for.backendError()
-    stopLoading()
+      setMset(result.data.set)
+      setEdit(false)
+      setLoadingStatus([true, 'nailedIt', true, true])
+    } else setLoadingStatus([true, 'backendError', true, false])
   }
+  const heading = (
+    <>
+      <LoadingStatus />
+      <div className="flex flex-wrap md:flex-nowrap flex-row gap-2 w-full">
+        <div className="w-full md:w-96 shrink-0">
+          <MsetCard set={mset} control={control} />
+        </div>
+        <div className="flex flex-col justify-end gap-2 mb-2 grow">
+          {account.control > 3 && mset.public ? (
+            <div className="flex flex-row gap-2 items-center">
+              <a
+                className="badge badge-secondary font-bold badge-lg"
+                href={`${conf.backend}/sets/${mset.id}.json`}
+              >
+                JSON
+              </a>
+              <a
+                className="badge badge-success font-bold badge-lg"
+                href={`${conf.backend}/sets/${mset.id}.yaml`}
+              >
+                YAML
+              </a>
+            </div>
+          ) : (
+            <span></span>
+          )}
+          <button
+            onClick={() =>
+              setModal(
+                <ModalWrapper flex="col" justify="top lg:justify-center" slideFrom="right">
+                  <img src={cloudflareImageUrl({ type: 'public', id: mset.img })} />
+                </ModalWrapper>
+              )
+            }
+            className={`btn btn-secondary btn-outline ${horFlexClasses}`}
+          >
+            <CameraIcon />
+            {t('showImage')}
+          </button>
+          {!publicOnly && (
+            <>
+              {edit ? (
+                <>
+                  <button
+                    onClick={() => setEdit(false)}
+                    className={`btn btn-neutral btn-outline ${horFlexClasses}`}
+                  >
+                    <ResetIcon />
+                    {t('cancel')}
+                  </button>
+                  <button onClick={save} className={`btn btn-primary ${horFlexClasses}`}>
+                    <UploadIcon />
+                    {t('saveThing', { thing: t('account:set') })}
+                  </button>
+                </>
+              ) : (
+                <button
+                  onClick={() => setEdit(true)}
+                  className={`btn btn-primary ${horFlexClasses}`}
+                >
+                  <EditIcon /> {t('editThing', { thing: t('account:set') })}
+                </button>
+              )}
+            </>
+          )}
+        </div>
+      </div>
+      <div className="flex flex-row flex-wrap gap-4 text-sm items-center justify-between mb-2"></div>
+    </>
+  )
+
+  if (!edit)
+    return (
+      <div className="max-w-2xl">
+        {heading}
+        {Object.keys(mset.measies).length > 0 && (
+          <>
+            <h2>{t('measies')}</h2>
+            {Object.entries(mset.measies).map(([m, val]) =>
+              val > 0 ? (
+                <DisplayRow title={<MeasieVal m={m} val={val} />} key={m}>
+                  <span className="font-medium">{t(m)}</span>
+                </DisplayRow>
+              ) : null
+            )}
+          </>
+        )}
+
+        <h2>{t('data')}</h2>
+        <DisplayRow title={t('name')}>{mset.name}</DisplayRow>
+        <DisplayRow title={t('units')}>
+          {mset.imperial ? t('imerialUnits') : t('metricUnits')}
+        </DisplayRow>
+        {control >= controlLevels.sets.notes && (
+          <DisplayRow title={t('notes')}>
+            <Markdown>{mset.notes}</Markdown>
+          </DisplayRow>
+        )}
+        {control >= controlLevels.sets.public && (
+          <>
+            <DisplayRow title={t('public')}>
+              {mset.public ? (
+                <OkIcon className="w-6 h-6 text-success" stroke={4} />
+              ) : (
+                <NoIcon className="w-6 h-6 text-error" stroke={3} />
+              )}
+            </DisplayRow>
+            {mset.public && (
+              <DisplayRow title={t('permalink')}>
+                <PageLink href={`/sets/${mset.id}`} txt={`/sets/${mset.id}`} />
+              </DisplayRow>
+            )}
+          </>
+        )}
+        {control >= controlLevels.sets.createdAt && (
+          <DisplayRow title={t('created')}>
+            <Timeago date={mset.createdAt} />
+            <span className="px-2 opacity-50">|</span>
+            {shortDate(i18n.language, mset.createdAt, false)}
+          </DisplayRow>
+        )}
+        {control >= controlLevels.sets.createdAt && (
+          <DisplayRow title={t('updated')}>
+            <Timeago date={mset.updatedAt} />
+            <span className="px-2 opacity-50">|</span>
+            {shortDate(i18n.language, mset.createdAt, false)}
+          </DisplayRow>
+        )}
+        {control >= controlLevels.sets.id && <DisplayRow title={t('id')}>{mset.id}</DisplayRow>}
+      </div>
+    )
 
   return (
-    <div className="flex flex-row gap-2">
-      <input
-        value={value}
-        onChange={update}
-        className="input w-full input-bordered flex flex-row"
-        type="text"
-        placeholder={t('name')}
-      />
-      <button className="btn btn-secondary" onClick={save} disabled={value === mset.name}>
-        <span className="flex flex-row items-center gap-2">
-          {loading ? (
-            <>
-              <Spinner />
-              <span>{t('processing')}</span>
-            </>
-          ) : (
-            t('save')
+    <div className="max-w-2xl">
+      {heading}
+      <ul className="list list-disc list-inside ml-4">
+        {['measies', 'data'].map((s) => (
+          <li key={s}>
+            <AnchorLink id={s} txt={t(s)} />
+          </li>
+        ))}
+        <ul className="list list-disc list-inside ml-4">
+          <li>
+            <AnchorLink id="name" txt={t('name')} />
+          </li>
+          {account.control >= conf.account.sets.img ? (
+            <li>
+              <AnchorLink id="image" txt={t('image')} />
+            </li>
+          ) : null}
+          {['public', 'units', 'notes'].map((id) =>
+            account.control >= conf.account.sets[id] ? (
+              <li key={id}>
+                <AnchorLink id="units" txt={t(id)} />
+              </li>
+            ) : null
           )}
-        </span>
+        </ul>
+      </ul>
+
+      <h2 id="measies">{t('measies')}</h2>
+      <div className="bg-secondary px-4 pt-1 pb-4 rounded-lg shadow bg-opacity-10">
+        <DesignDropdown
+          update={setFilter}
+          label={t('filterByDesign')}
+          current={filter}
+          firstOption={<option value="">{t('noFilter')}</option>}
+          docs={
+            <div className="max-w-prose">
+              <h2>
+                {t('measies')}: {t('filterByDesign')}
+              </h2>
+              <p>
+                If you have a specific design in mind, you can <b>filter by design</b> to only list
+                those measurements that are required for this design.
+              </p>
+            </div>
+          }
+        />
+      </div>
+      {filterMeasurements().map((mplus) => {
+        const [translated, m] = mplus.split('|')
+
+        return (
+          <MeasieInput
+            id={`measie-${m}`}
+            key={m}
+            m={m}
+            docs={measieDocs[m]}
+            imperial={mset.imperial}
+            label={translated}
+            current={mset.measies[m]}
+            original={mset.measies[m]}
+            update={updateMeasies}
+          />
+        )
+      })}
+
+      <h2 id="data">{t('data')}</h2>
+
+      {/* Name is always shown */}
+      <span id="name"></span>
+      <StringInput
+        id="set-name"
+        label={t('name')}
+        update={setName}
+        current={name}
+        original={mset.name}
+        docs={docs.name}
+        placeholder="Georg Cantor"
+        valid={(val) => val && val.length > 0}
+      />
+
+      {/* img: Control level determines whether or not to show this */}
+      <span id="image"></span>
+      {account.control >= conf.account.sets.img ? (
+        <PassiveImageInput
+          id="set-img"
+          label={t('image')}
+          update={setImage}
+          current={image}
+          docs={docs.image}
+          valid={(val) => val.length > 0}
+        />
+      ) : null}
+
+      {/* public: Control level determines whether or not to show this */}
+      <span id="public"></span>
+      {account.control >= conf.account.sets.public ? (
+        <ListInput
+          id="set-public"
+          label={t('public')}
+          update={setIsPublic}
+          docs={docs.public}
+          list={[
+            {
+              val: true,
+              label: (
+                <div className="flex flex-row items-center flex-wrap justify-between w-full">
+                  <span>{t('publicSet')}</span>
+                  <OkIcon
+                    className="w-8 h-8 text-success bg-base-100 rounded-full p-1"
+                    stroke={4}
+                  />
+                </div>
+              ),
+              desc: t('publicSetDesc'),
+            },
+            {
+              val: false,
+              label: (
+                <div className="flex flex-row items-center flex-wrap justify-between w-full">
+                  <span>{t('privateSet')}</span>
+                  <NoIcon className="w-8 h-8 text-error bg-base-100 rounded-full p-1" stroke={3} />
+                </div>
+              ),
+              desc: t('privateSetDesc'),
+            },
+          ]}
+          current={isPublic}
+        />
+      ) : null}
+
+      {/* units: Control level determines whether or not to show this */}
+      <span id="units"></span>
+      {account.control >= conf.account.sets.units ? (
+        <ListInput
+          id="set-units"
+          label={t('units')}
+          docs={docs.units}
+          update={setImperial}
+          list={[
+            {
+              val: false,
+              label: (
+                <div className="flex flex-row items-center flex-wrap justify-between w-full">
+                  <span>{t('metricUnits')}</span>
+                  <span className="text-inherit text-2xl pr-2">cm</span>
+                </div>
+              ),
+              desc: t('metricUnitsd'),
+            },
+            {
+              val: true,
+              label: (
+                <div className="flex flex-row items-center flex-wrap justify-between w-full">
+                  <span>{t('imperialUnits')}</span>
+                  <span className="text-inherit text-4xl pr-2">″</span>
+                </div>
+              ),
+              desc: t('imperialUnitsd'),
+            },
+          ]}
+          current={imperial}
+        />
+      ) : null}
+
+      {/* notes: Control level determines whether or not to show this */}
+      <span id="notes"></span>
+      {account.control >= conf.account.sets.notes ? (
+        <MarkdownInput
+          id="set-notes"
+          label={t('notes')}
+          update={setNotes}
+          docs={docs.notes}
+          current={notes}
+          placeholder={t('mdSupport')}
+        />
+      ) : null}
+      <button
+        onClick={save}
+        className="btn btn-primary btn-lg flex flex-row items-center gap-4 mx-auto mt-8"
+      >
+        <UploadIcon />
+        {t('saveThing', { thing: t('account:set') })}
       </button>
     </div>
   )
 }
 
-const EditNotes = ({ t, mset, backend, toast, refresh, loading, startLoading, stopLoading }) => {
-  const [value, setValue] = useState(mset.notes)
-  const [activeTab, setActiveTab] = useState('edit')
-
-  const update = async (evt) => {
-    evt.preventDefault()
-    if (evt.target.value !== value) {
-      setValue(evt.target.value)
-    }
-  }
-
-  const save = async () => {
-    startLoading()
-    const result = await backend.updateSet(mset.id, { notes: value })
-    if (result.success) {
-      refresh()
-      toast.for.settingsSaved()
-    } else toast.for.backendError()
-    stopLoading()
-  }
-
-  // Shared props for tabs
-  const tabProps = { activeTab, setActiveTab, t }
-
-  return (
-    <div>
-      <div className="tabs w-full">
-        <Tab id="edit" {...tabProps} />
-        <Tab id="preview" {...tabProps} />
-      </div>
-      <div className="flex flex-row items-center mt-4">
-        {activeTab === 'edit' ? (
-          <textarea
-            rows="5"
-            className="textarea textarea-bordered textarea-lg w-full"
-            placeholder={t('placeholder')}
-            onChange={update}
-            value={value}
-          />
-        ) : (
-          <div className="text-left px-4 border w-full">
-            <Markdown>{value}</Markdown>
-          </div>
-        )}
-      </div>
-      <div className="my-2 flex gap-2 items-center justify-center">
-        <button className="btn btn-secondary" onClick={save} disabled={value === mset.name}>
-          <span className="flex flex-row items-center gap-2">
-            {loading ? (
-              <>
-                <Spinner />
-                <span>{t('processing')}</span>
-              </>
-            ) : (
-              t('save')
-            )}
-          </span>
-        </button>
-      </div>
-    </div>
-  )
-}
-
-const EditUnits = ({ t, mset, backend, toast, refresh, startLoading, stopLoading }) => {
-  const [selection, setSelection] = useState(mset?.imperial === true ? 'imperial' : 'metric')
-
-  const update = async (val) => {
-    setSelection(val)
-    const asBool = val === 'imperial' ? true : false
-    if (asBool !== mset.imperial) {
-      startLoading()
-      const result = await backend.updateSet(mset.id, { imperial: asBool })
-      if (result.success) {
-        refresh()
-        toast.for.settingsSaved()
-      } else toast.for.backendError()
-      stopLoading()
-    }
-  }
-
-  //const save = async () => {
-  //  startLoading()
-  //  const result = await backend.updateSet(mset.id, { name: value })
-  //  if (result.success) {
-  //    refresh()
-  //    toast.for.settingsSaved()
-  //  } else toast.for.backendError()
-  //  stopLoading()
-  //}
-
-  return (
-    <>
-      {['metric', 'imperial'].map((val) => (
-        <Choice
-          val={val}
-          t={t}
-          update={update}
-          current={selection}
-          bool
-          key={val}
-          boolIcons={{ yes: <span>&quot;</span>, no: <span>cm</span> }}
-        >
-          <span className="block text-lg leading-5">
-            {selection === 1 && val === 2 ? t('showMore') : t(`${val}Units`)}
-          </span>
-          <span className="block text-normal font-light normal-case pt-1">{t(`${val}Unitsd`)}</span>
-        </Choice>
-      ))}
-    </>
-  )
-}
-
-const EditPublic = ({ t, mset, backend, toast, refresh, startLoading, stopLoading }) => {
-  const [selection, setSelection] = useState(mset.public)
-
-  const update = async (val) => {
-    setSelection(val)
-    if (val !== mset.public) {
-      startLoading()
-      const result = await backend.updateSet(mset.id, { public: val })
-      if (result.success) {
-        refresh()
-        toast.for.settingsSaved()
-      } else toast.for.backendError()
-      stopLoading()
-    }
-  }
-
-  return (
-    <>
-      {[true, false].map((val) => (
-        <Choice val={val} t={t} update={update} current={selection} bool key={val}>
-          <div className="flex flex-row gap-2 text-lg leading-5 items-center">
-            {val ? (
-              <>
-                <OkIcon className="w-6 h-6 text-success" /> <span>{t('publicSet')}</span>
-              </>
-            ) : (
-              <>
-                <NoIcon className="w-6 h-6 text-error" /> <span>{t('privateSet')}</span>
-              </>
-            )}
-          </div>
-          <div className="flex flex-row gap-2 text-normal font-light normal-case pt-1 items-center">
-            {val ? t('publicSetDesc') : t('privateSetDesc')}
-          </div>
-        </Choice>
-      ))}
-    </>
-  )
-}
-
-export const EditSectionTitle = ({ title }) => (
-  <h5 className="border border-solid border-b-2 border-r-0 border-l-0 border-t-0 border-primary mt-4 mb-2">
-    {title}
-  </h5>
-)
-
-const EditMeasurementsSet = (props) => {
-  const [filter, setFilter] = useState(false)
-  const { mset, t, setModal, startLoading, stopLoading, toast, refresh, backend } = props
-
-  const filterMeasurements = () => {
-    if (!filter) return measurements.map((m) => t(`measurements:${m}`)).sort()
-    else return designMeasurements[filter].map((m) => t(`measurements:${m}`)).sort()
-  }
-
-  const saveProps = { t, startLoading, stopLoading, toast, refresh, backend }
-
-  return (
-    <div className="p-4">
-      {/* Meta info */}
-      {props.account.control > 2 ? (
-        <div className="flex flex-row gap-4 text-sm items-center justify-center mb-2">
-          <div className="flex flex-row gap-2 items-center">
-            <b>{t('permalink')}:</b>
-            {mset.public ? (
-              <PageLink href={`/sets/${mset.id}`} txt={`/sets/${mset.id}`} />
-            ) : (
-              <NoIcon className="w-4 h-4 text-error" />
-            )}
-          </div>
-          <div>
-            <b>{t('created')}</b>: <Timeago date={mset.createdAt} />
-          </div>
-          <div>
-            <b>{t('updated')}</b>: <Timeago date={mset.updatedAt} />
-          </div>
-        </div>
-      ) : null}
-
-      {/* JSON & YAML links */}
-      {props.account.control > 3 ? (
-        <div className="flex flex-row gap-4 text-sm items-center justify-center">
-          <a
-            className="badge badge-secondary font-bold"
-            href={`${conf.backend}/sets/${mset.id}.json`}
-          >
-            JSON
-          </a>
-          <a
-            className="badge badge-success font-bold"
-            href={`${conf.backend}/sets/${mset.id}.yaml`}
-          >
-            YAML
-          </a>
-        </div>
-      ) : null}
-
-      <EditSectionTitle title={t('data')} />
-
-      {/* Name is always shown */}
-      <EditRow title={t('name')} field="name" {...props} {...saveProps}>
-        {mset.name}
-      </EditRow>
-
-      {/* img: Control level determines whether or not to show this */}
-      {props.account.control >= conf.account.sets.img ? (
-        <EditRow title={t('image')} field="img" {...props} {...saveProps}>
-          <img src={mset.img} className="w-10 mask mask-squircle bg-neutral aspect-square" />
-        </EditRow>
-      ) : null}
-
-      {/* public: Control level determines whether or not to show this */}
-      {props.account.control >= conf.account.sets.public ? (
-        <EditRow title={t('public')} field="public" {...props} {...saveProps}>
-          <div className="flex flex-row gap-2">
-            {mset.public ? (
-              <>
-                <OkIcon className="h-6 w-6 text-success" /> <span>{t('publicSet')}</span>
-              </>
-            ) : (
-              <>
-                <NoIcon className="h-6 w-6 text-error" /> <span>{t('privateSet')}</span>
-              </>
-            )}
-          </div>
-        </EditRow>
-      ) : null}
-
-      {/* units: Control level determines whether or not to show this */}
-      {props.account.control >= conf.account.sets.units ? (
-        <EditRow title={t('units')} field="imperial" {...props} {...saveProps}>
-          {mset.imperial ? t('imperialUnits') : t('metricUnits')}
-        </EditRow>
-      ) : null}
-
-      {/* notes: Control level determines whether or not to show this */}
-      {props.account.control >= conf.account.sets.notes ? (
-        <EditRow title={t('notes')} field="notes" {...props} {...saveProps}>
-          <Markdown>{mset.notes}</Markdown>
-        </EditRow>
-      ) : null}
-
-      <EditSectionTitle title={t('measies')} />
-      <div className="flex flex-row items-center justify-center">
-        <button
-          className="btn btn-secondary btn-outline flex flex-row gap-4 rounded-r-none"
-          onClick={() =>
-            setModal(
-              <ModalDesignPicker
-                designs={Object.keys(designMeasurements)}
-                setModal={setModal}
-                setter={setFilter}
-              />
-            )
-          }
-        >
-          <FilterIcon />
-          {filter ? t(`designs:${filter}.t`) : t(`designs:allDesigns`)}
-        </button>
-        <button
-          className="btn btn-secondary btn-outline rounded-l-none border-l-0"
-          onClick={() => setFilter(false)}
-        >
-          <ClearIcon />
-        </button>
-      </div>
-      {filterMeasurements().map((m) => (
-        <MeasieRow key={m} m={m} {...props} {...saveProps} />
-      ))}
-    </div>
-  )
-}
-
-const MeasurementsSet = ({ mset, t, account, backend, refresh }) => {
-  // Context
-  const { startLoading, stopLoading } = useContext(LoadingContext)
-  const { setModal } = useContext(ModalContext)
-
-  // Hooks
-  const toast = useToast()
-
-  const remove = async () => {
-    startLoading()
-    const result = await backend.removeSet(mset.id)
-    if (result) toast.success(t('gone'))
-    else toast.for.backendError()
-    // This just forces a refresh of the list from the server
-    // We obviously did not add a key here, but rather removed one
-    refresh()
-    stopLoading()
-  }
-
-  const removeModal = () => {
-    setModal(
-      <ModalWrapper slideFrom="top">
-        <h2>{t('areYouCertain')}</h2>
-        <p>{t('deleteSetWarning')}</p>
-        <p className="flex flex-row gap-4 items-center justify-center">
-          <button className="btn btn-neutral btn-outline px-8">{t('cancel')}</button>
-          <button className="btn btn-error px-8" onClick={remove}>
-            {t('delete')}
-          </button>
-        </p>
-      </ModalWrapper>
-    )
-  }
-
-  return (
-    <Collapse
-      primary
-      top
-      bottom
-      title={
-        <>
-          <img src={mset.img} className="w-10 mask mask-squircle bg-neutral aspect-square" />
-          <span>{mset.name}</span>
-        </>
-      }
-      openTitle={mset.name}
-      buttons={[
-        <button
-          key="rm"
-          className="btn btn-error hover:text-error-content border-0"
-          onClick={account.control > 4 ? remove : removeModal}
-        >
-          <TrashIcon key="button2" />
-        </button>,
-      ]}
-    >
-      <EditMeasurementsSet
-        {...{ t, mset, account, backend, toast, refresh, setModal, startLoading, stopLoading }}
-      />
-    </Collapse>
-  )
-}
-
-// Component for the 'new/apikey' page
-//export const NewApikey = ({ app, standAlone = false }) => {
-//  const { account, token } = useAccount()
-//  const backend = useBackend(token)
-//  const { t } = useTranslation(ns)
-//  const toast = useToast()
-//
-//  const [keys, setKeys] = useState([])
-//  const [generate, setGenerate] = useState(false)
-//  const [added, setAdded] = useState(0)
-//
-//  const oneAdded = () => setAdded(added + 1)
-//
-//  return (
-//    <div className="max-w-xl xl:pl-4">
-//      <NewKey {...{ app, t, account, setGenerate, backend, toast, oneAdded, standAlone }} />
-//    </div>
-//  )
-//}
-
 // Component for the account/sets page
-export const Sets = ({ title = true }) => {
+export const Sets = () => {
   // Hooks
-  const { account, token } = useAccount()
-  const backend = useBackend(token)
+  const { control } = useAccount()
+  const backend = useBackend()
   const { t } = useTranslation(ns)
-  const toast = useToast()
-  const { CollapseButton, closeCollapseButton } = useCollapseButton()
+  const { setLoadingStatus, LoadingStatus, LoadingProgress } = useLoadingStatus()
 
   // State
   const [sets, setSets] = useState([])
-  const [added, setAdded] = useState(0)
+  const [selected, setSelected] = useState({})
+  const [refresh, setRefresh] = useState(0)
 
   // Effects
   useEffect(() => {
@@ -627,27 +629,378 @@ export const Sets = ({ title = true }) => {
       if (result.success) setSets(result.data.sets)
     }
     getSets()
-  }, [added])
+  }, [refresh])
 
-  // Helper method to force a refresh
-  const refresh = () => {
-    setAdded(added + 1)
+  // Helper var to see how many are selected
+  const selCount = Object.keys(selected).length
+
+  // Helper method to toggle single selection
+  const toggleSelect = (id) => {
+    const newSelected = { ...selected }
+    if (newSelected[id]) delete newSelected[id]
+    else newSelected[id] = 1
+    setSelected(newSelected)
+  }
+
+  // Helper method to toggle select all
+  const toggleSelectAll = () => {
+    if (selCount === sets.length) setSelected({})
+    else {
+      const newSelected = {}
+      for (const set of sets) newSelected[set.id] = 1
+      setSelected(newSelected)
+    }
+  }
+
+  // Helper to delete one or more measurements sets
+  const removeSelectedSets = async () => {
+    let i = 0
+    for (const id in selected) {
+      i++
+      await backend.removeSet(id)
+      setLoadingStatus([
+        true,
+        <LoadingProgress val={i} max={selCount} msg={t('removingSets')} key="linter" />,
+      ])
+    }
+    setSelected({})
+    setRefresh(refresh + 1)
+    setLoadingStatus([true, 'nailedIt', true, true])
   }
 
   return (
-    <div className="max-w-2xl xl:pl-4">
-      {title ? <h2>{t('sets')}</h2> : null}
-      {orderBy(sets, ['name'], ['asc']).map((mset) => (
-        <MeasurementsSet {...{ account, mset, t, backend, refresh }} key={mset.id} />
-      ))}
-      <CollapseButton
-        primary
-        title={t('newSet')}
-        className="btn btn-primary w-full capitalize mt-4"
-      >
-        <NewSet {...{ t, account, backend, toast, refresh, closeCollapseButton }} title={false} />
-      </CollapseButton>
+    <div className="max-w-7xl xl:pl-4">
+      <LoadingStatus />
+      <p className="text-center md:text-right">
+        <Link
+          className="btn btn-primary capitalize w-full md:w-auto"
+          bottom
+          primary
+          href="/new/set"
+        >
+          <PlusIcon />
+          {t('newSet')}
+        </Link>
+      </p>
+      <div className="flex flex-row gap-2 border-b-2 mb-4 pb-4 mt-8 h-14 items-center">
+        <input
+          type="checkbox"
+          className="checkbox checkbox-secondary"
+          onClick={toggleSelectAll}
+          checked={sets.length === selCount}
+        />
+        {selCount ? (
+          <button className="btn btn-error" onClick={removeSelectedSets}>
+            <TrashIcon /> {selCount} {t('sets')}
+          </button>
+        ) : null}
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
+        {sets.map((set, i) => (
+          <div
+            key={i}
+            className={`flex flex-row items-start gap-1 border-2
+          ${
+            selected[set.id] ? 'border-solid border-secondary' : 'border-dotted border-base-300'
+          } rounded-lg p-2`}
+          >
+            <label className="w-8 h-full shrink-0">
+              <input
+                type="checkbox"
+                checked={selected[set.id] ? true : false}
+                className="checkbox checkbox-secondary"
+                onClick={() => toggleSelect(set.id)}
+              />
+            </label>
+            <div className="w-full">
+              <MsetCard control={control} href={`/account/sets/${set.id}`} set={set} />
+            </div>
+          </div>
+        ))}
+      </div>
       <BackToAccountButton />
     </div>
+  )
+}
+
+export const SetCard = ({
+  set,
+  requiredMeasies = [],
+  href = false,
+  onClick = false,
+  useA = false,
+}) => {
+  // Hooks
+  const { t } = useTranslation(['sets'])
+
+  const [hasMeasies] = hasRequiredMeasurements(requiredMeasies, set.measies, true)
+
+  const wrapperProps = {
+    className:
+      'bg-base-300 w-full mb-2 mx-auto flex flex-col items-start text-center justify-center rounded shadow py-4',
+    style: {
+      backgroundImage: `url(${cloudflareImageUrl({ type: 'w1000', id: set.img })})`,
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundPosition: '50%',
+    },
+  }
+  if (set.img === 'default-avatar') wrapperProps.style.backgroundPosition = 'bottom right'
+
+  const inner = hasMeasies ? null : (
+    <div className="flex flex-row gap-2 items-center">
+      <WarningIcon className="w-6 h-6 shrink-0 text-error" />
+      <span>{t('setLacksMeasiesForDesign')}</span>
+    </div>
+  )
+
+  // Is it a button with an onClick handler?
+  if (onClick)
+    return (
+      <button {...wrapperProps} onClick={onClick}>
+        {inner}
+      </button>
+    )
+
+  // Returns a link to an internal page
+  if (href && !useA)
+    return (
+      <Link {...wrapperProps} href={href}>
+        {inner}
+      </Link>
+    )
+
+  // Returns a link to an external page
+  if (href && useA)
+    return (
+      <a {...wrapperProps} href={href}>
+        {inner}
+      </a>
+    )
+
+  // Returns a div
+  return <div {...wrapperProps}>{inner}</div>
+}
+
+export const MsetButton = (props) => <MsetCard {...props} href={false} />
+export const MsetLink = (props) => <MsetCard {...props} onClick={false} useA={false} />
+export const MsetA = (props) => <MsetCard {...props} onClick={false} useA={true} />
+
+export const UserSetPicker = ({ design, t, href, clickHandler, size = 'lg' }) => {
+  // Hooks
+  const backend = useBackend()
+  const { control } = useAccount()
+
+  // State
+  const [sets, setSets] = useState({})
+
+  // Effects
+  useEffect(() => {
+    const getSets = async () => {
+      const result = await backend.getSets()
+      if (result.success) {
+        const all = {}
+        for (const set of result.data.sets) all[set.id] = set
+        setSets(all)
+      }
+    }
+    getSets()
+  }, [backend])
+
+  let hasSets = false
+  const okSets = []
+  const lackingSets = []
+  if (Object.keys(sets).length > 0) {
+    hasSets = true
+    for (const setId in sets) {
+      const [hasMeasies] = hasRequiredMeasurements(
+        designMeasurements[design],
+        sets[setId].measies,
+        true
+      )
+      if (hasMeasies) okSets.push(sets[setId])
+      else lackingSets.push(sets[setId])
+    }
+  }
+
+  if (!hasSets)
+    return (
+      <div className="w-full max-w-3xl mx-auto">
+        <Popout tip>
+          <h5>{t('account:noOwnSets')}</h5>
+          <p className="text-lg">{t('account:pleaseMtm')}</p>
+          <p className="text-lg">{t('account:noOwnSetsMsg')}</p>
+          <p className="text-center md:text-right">
+            <Link
+              className="btn btn-primary capitalize w-full md:w-auto"
+              bottom
+              primary
+              href="/new/set"
+            >
+              <PlusIcon />
+              {t('account:newSet')}
+            </Link>
+          </p>
+        </Popout>
+      </div>
+    )
+
+  return (
+    <>
+      {okSets.length > 0 && (
+        <div className="flex flex-row flex-wrap gap-2">
+          {okSets.map((set) => (
+            <MsetButton
+              {...{ set, control, design }}
+              onClick={clickHandler}
+              href={href}
+              requiredMeasies={measurements[design]}
+              key={set.id}
+              size={size}
+            />
+          ))}
+        </div>
+      )}
+      {lackingSets.length > 0 && (
+        <div className="my-4">
+          <Popout note compact>
+            {t('account:someSetsLacking')}
+          </Popout>
+          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
+            {lackingSets.map((set) => (
+              <MsetLink
+                {...{ set, control, design }}
+                onClick={clickHandler}
+                requiredMeasies={measurements[design]}
+                key={set.id}
+                size={size}
+              />
+            ))}
+          </div>
+        </div>
+      )}
+    </>
+  )
+}
+
+export const CuratedSetPicker = ({ design, language, href, clickHandler, size }) => {
+  // Hooks
+  const backend = useBackend()
+  const { t, i18n } = useTranslation('sets')
+  const { control } = useAccount()
+
+  // State
+  const [curatedSets, setCuratedSets] = useState([])
+  const [filter, setFilter] = useState([])
+  const [tags, setTags] = useState([])
+
+  // Effects
+  useEffect(() => {
+    const getCuratedSets = async () => {
+      const result = await backend.getCuratedSets()
+      if (result.success) {
+        const all = []
+        const allTags = new Set()
+        for (const set of result.data.curatedSets) {
+          all.push(set)
+          for (const tag of set[`tags${capitalize(language)}`]) allTags.add(tag)
+        }
+        setCuratedSets(all)
+        setTags([...allTags])
+      }
+    }
+    getCuratedSets()
+  }, [backend, language])
+
+  const addFilter = (tag) => {
+    const newFilter = [...filter, tag]
+    setFilter(newFilter)
+  }
+
+  const removeFilter = (tag) => {
+    const newFilter = filter.filter((t) => t !== tag)
+    setFilter(newFilter)
+  }
+
+  const applyFilter = () => {
+    const newList = new Set()
+    for (const set of curatedSets) {
+      const setTags = []
+      for (const lang of siteConfig.languages) {
+        const key = `tags${capitalize(lang)}`
+        if (set[key]) setTags.push(...set[key])
+      }
+      let match = 0
+      for (const tag of filter) {
+        if (setTags.includes(tag)) match++
+      }
+      if (match === filter.length) newList.add(set)
+    }
+
+    return [...newList]
+  }
+
+  const list = applyFilter()
+
+  // Need to sort designs by their translated title
+  const translated = {}
+  for (const d of list) translated[t(`${d}.t`)] = d
+
+  return (
+    <>
+      <h3 id="curatedsets">{t('account:curatedSets')}</h3>
+      <V3Wip />
+      {tags.map((tag) => (
+        <Tag onClick={() => addFilter(tag)} tag={tag} key={tag}>
+          {tag}
+        </Tag>
+      ))}
+      <div className="my-2 p-2 px-4 border rounded-lg bg-secondary bg-opacity-10 max-w-xl">
+        <div className="flex flex-row items-center justify-between gap-2">
+          <FilterIcon className="w-6 h-6 text-secondary" />
+          <span>
+            {list.length} / {curatedSets.length}
+          </span>
+          <button onClick={() => setFilter([])} className="btn btn-secondary btn-sm">
+            clear
+          </button>
+        </div>
+        {filter.map((tag) => (
+          <Tag onClick={() => removeFilter(tag)} color="success" hoverColor="error" key={tag}>
+            {tag}
+          </Tag>
+        ))}
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
+        {orderBy(list, ['name'], ['asc']).map((set) => (
+          <MsetButton
+            key={set.id}
+            {...{ set, control, design }}
+            href={href}
+            onClick={clickHandler}
+            requiredMeasies={measurements[design]}
+            language={i18n.language}
+            size={size}
+          />
+        ))}
+      </div>
+    </>
+  )
+}
+
+export const BookmarkedSetPicker = () => <V3Wip />
+
+export const SetPicker = ({ design, href = false, clickHandler = false, size = 'lg' }) => {
+  const { t, i18n } = useTranslation('sets')
+  const { language } = i18n
+
+  const pickerProps = { design, t, language, href, clickHandler, size }
+
+  return (
+    <>
+      <UserSetPicker {...pickerProps} />
+      <BookmarkedSetPicker {...pickerProps} />
+      <CuratedSetPicker {...pickerProps} />
+    </>
   )
 }

@@ -14,8 +14,8 @@ import {
   UserIcon,
   ThemeIcon,
   I18nIcon,
-  MeasieIcon,
-  PageIcon,
+  HeartIcon,
+  PlusIcon,
   RssIcon,
 } from 'shared/components/icons.mjs'
 import { HeaderWrapper } from 'shared/components/wrappers/header.mjs'
@@ -71,23 +71,23 @@ const NavIcons = ({ setModal, setSearch }) => {
       </NavButton>
       <NavSpacer />
       <NavButton
-        href="/patterns"
-        label={t('header:patterns')}
+        href="/new"
+        label={t('header:new')}
         color={spectrum[5]}
         extraClasses="hidden lg:flex"
       >
-        <PageIcon className={iconSize} />
+        <PlusIcon className={iconSize} />
+      </NavButton>
+      <NavButton href="/account" label={t('header:account')} color={spectrum[6]}>
+        <UserIcon className={iconSize} />
       </NavButton>
       <NavButton
-        href="/sets"
-        label={t('header:sets')}
-        color={spectrum[6]}
+        href="/support"
+        label={t('header:support')}
+        color={spectrum[7]}
         extraClasses="hidden lg:flex"
       >
-        <MeasieIcon className={iconSize} />
-      </NavButton>
-      <NavButton href="/account" label={t('header:account')} color={spectrum[7]}>
-        <UserIcon className={iconSize} />
+        <HeartIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
       <NavButton

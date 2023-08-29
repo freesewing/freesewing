@@ -10,7 +10,7 @@ import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
-import { PageLink } from 'shared/components/page-link.mjs'
+import { PageLink } from 'shared/components/link.mjs'
 
 // Translation namespaces used on this page
 const namespaces = nsMerge(pageNs, 'newsletter')

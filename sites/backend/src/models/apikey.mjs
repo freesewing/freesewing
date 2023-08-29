@@ -62,11 +62,6 @@ ApikeyModel.prototype.guardedRead = async function ({ params, user }) {
   if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
   /*
-   * Ensure the account is active
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
-
-  /*
    * Attempt to read record from database
    */
   await this.read({ id: params.id })
@@ -113,10 +108,6 @@ ApikeyModel.prototype.guardedDelete = async function ({ params, user }) {
    * Enforece RBAC
    */
   if (!this.rbac.user(user)) return this.setResponse(403, 'insufficientAccessLevel')
-  /*
-   * Ensure the account is active
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   /*
    * Attempt to read record from database
@@ -174,14 +165,25 @@ ApikeyModel.prototype.userApikeys = async function (uid) {
   }
 
   /*
-   * Keys are an array, remove sercrets with map() and decrypt prior to returning
+   * Keys are an array, remove secrets with map() and decrypt prior to returning
    */
-  return keys.map((key) => {
-    delete key.secret
-    key.name = this.decrypt(key.name)
+  const list = []
+  for (const key of keys) {
+    list.push(await this.asKeyData(key))
+  }
 
-    return key
-  })
+  return list
+}
+
+/*
+ * Takes non-instatiated key data and prepares it so it can be returned
+ */
+ApikeyModel.prototype.asKeyData = async function (key) {
+  delete key.secret
+  delete key.aud
+  key.name = await this.decrypt(key.name)
+
+  return key
 }
 
 /*

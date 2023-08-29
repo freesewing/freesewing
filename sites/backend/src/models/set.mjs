@@ -3,7 +3,7 @@ import { replaceImage, storeImage, importImage } from '../utils/cloudflare-image
 import { decorateModel } from '../utils/model-decorator.mjs'
 
 /*
- * This model handles all flows (typically that involves sending out emails)
+ * This model handles all set updates (typically that involves sending out emails)
  */
 export function SetModel(tools) {
   return decorateModel(this, tools, {
@@ -95,11 +95,6 @@ SetModel.prototype.guardedRead = async function ({ params, user }) {
   if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
   /*
-   * Check JWT
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
-
-  /*
    * Attempt to read the record from the database
    */
   await this.read({ id: parseInt(params.id) })
@@ -165,11 +160,6 @@ SetModel.prototype.guardedClone = async function ({ params, user }) {
   if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
   /*
-   * Check the JWT
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
-
-  /*
    * Attempt to read the record from the database
    */
   await this.read({ id: parseInt(params.id) })
@@ -216,6 +206,13 @@ SetModel.prototype.revealSet = function (mset) {
       //console.log(err)
     }
   }
+  for (const field of this.jsonFields) {
+    try {
+      clear[field] = JSON.parse(clear[field])
+    } catch (err) {
+      //console.log(err)
+    }
+  }
 
   return { ...mset, ...clear }
 }
@@ -233,11 +230,6 @@ SetModel.prototype.guardedUpdate = async function ({ params, body, user }) {
    * Enforce RBAC
    */
   if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
-
-  /*
-   * Check JWT
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   /*
    * Attempt to read record from database
@@ -286,21 +278,23 @@ SetModel.prototype.guardedUpdate = async function ({ params, body, user }) {
     })
 
   /*
-   * img
+   * Image (img)
    */
-  if (typeof body.img === 'string')
-    data.img = await replaceImage(
-      {
-        id: `set-${this.record.id}`,
-        metadata: {
-          user: user.uid,
-          name: this.clear.name,
-        },
-        b64: body.img,
-        notPublic: true,
+  if (typeof body.img === 'string') {
+    const imgData = {
+      id: `set-${this.record.id}`,
+      metadata: {
+        user: user.uid,
+        name: this.clear.name,
       },
-      this.isTest(body)
-    )
+    }
+    /*
+     * Allow both a base64 encoded binary image or an URL
+     */
+    if (body.img.slice(0, 4) === 'http') imgData.url = body.img
+    else imgData.b64 = body.img
+    data.img = await replaceImage(imgData, this.isTest(body))
+  }
 
   /*
    * Now update the database record
@@ -325,11 +319,6 @@ SetModel.prototype.guardedDelete = async function ({ params, user }) {
    * Enforce RBAC
    */
   if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
-
-  /*
-   * Check the JWT
-   */
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
 
   /*
    * Attempt to read the record from the database
@@ -416,6 +405,25 @@ const migratePerson = (v2) => ({
   updatedAt: new Date(v2.updatedAt),
 })
 
+/*
+ * This is a special import route
+ */
+SetModel.prototype.migrate = async function (v2user, userId) {
+  const lut = {} // lookup tabel for v2 handle to v3 id
+  for (const [handle, person] of Object.entries(v2user.people)) {
+    const data = { ...migratePerson(person), userId }
+    data.img = 'default-avatar'
+    try {
+      await this.createRecord(data)
+      lut[handle] = this.record.id
+    } catch (err) {
+      log.warn(err, 'Could not create set')
+      console.log(person)
+    }
+  }
+
+  return lut
+}
 /*
  * This is a special route not available for API users
  */

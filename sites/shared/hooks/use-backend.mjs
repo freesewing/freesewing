@@ -11,7 +11,8 @@ const apiHandler = axios.create({
   timeout: 6660,
 })
 
-const auth = (token) => (token ? { headers: { Authorization: 'Bearer ' + token } } : {})
+const auth = (token) =>
+  token ? { headers: { Authorization: 'Bearer ' + token } } : { headers: {} }
 
 /*
  * This api object handles async code for different HTTP methods
@@ -152,23 +153,78 @@ Backend.prototype.confirmMfa = async function (data) {
  * Disable MFA
  */
 Backend.prototype.disableMfa = async function (data) {
-  return responseHandler(
-    await await api.post(`/account/mfa/jwt`, { ...data, mfa: false }, this.auth)
-  )
+  return responseHandler(await api.post(`/account/mfa/jwt`, { ...data, mfa: false }, this.auth))
 }
 
 /*
  * Reload account
  */
 Backend.prototype.reloadAccount = async function () {
-  return responseHandler(await await api.get(`/whoami/jwt`, this.auth))
+  return responseHandler(await api.get(`/whoami/jwt`, this.auth))
+}
+
+/*
+ * Export account data
+ */
+Backend.prototype.exportAccount = async function () {
+  return responseHandler(await api.get(`/account/export/jwt`, this.auth))
+}
+
+/*
+ * Restrict processing of account data
+ */
+Backend.prototype.restrictAccount = async function () {
+  return responseHandler(await api.get(`/account/restrict/jwt`, this.auth))
+}
+
+/*
+ * Remove account
+ */
+Backend.prototype.restrictAccount = async function () {
+  return responseHandler(await api.delete(`/account/jwt`, this.auth))
+}
+
+/*
+ * Load all user data
+ */
+Backend.prototype.getUserData = async function (uid) {
+  return responseHandler(await api.get(`/users/${uid}/jwt`, this.auth))
 }
 
 /*
  * Load user profile
  */
 Backend.prototype.getProfile = async function (uid) {
-  return responseHandler(await await api.get(`/users/${uid}`))
+  return responseHandler(await api.get(`/users/${uid}`))
+}
+
+/*
+ * Create bookmark
+ */
+Backend.prototype.createBookmark = async function (data) {
+  return responseHandler(await api.post(`/bookmarks/jwt`, data, this.auth), 201)
+}
+
+/*
+ * Get bookmark
+ */
+Backend.prototype.getBookmark = async function (id) {
+  return responseHandler(await api.get(`/bookmarks/${id}/jwt`, this.auth))
+}
+/*
+ * Get bookmarks
+ */
+Backend.prototype.getBookmarks = async function () {
+  return responseHandler(await api.get(`/bookmarks/jwt`, this.auth))
+}
+
+/*
+ * Remove bookmark
+ */
+Backend.prototype.removeBookmark = async function (id) {
+  const response = await api.delete(`/bookmarks/${id}/jwt`, this.auth)
+
+  return response && response.status === 204 ? true : false
 }
 
 /*
@@ -176,6 +232,13 @@ Backend.prototype.getProfile = async function (uid) {
  */
 Backend.prototype.createApikey = async function (data) {
   return responseHandler(await api.post(`/apikeys/jwt`, data, this.auth), 201)
+}
+
+/*
+ * Get API key
+ */
+Backend.prototype.getApikey = async function (id) {
+  return responseHandler(await api.get(`/apikeys/${id}/jwt`, this.auth))
 }
 
 /*
@@ -206,6 +269,13 @@ Backend.prototype.getSets = async function () {
  */
 Backend.prototype.getSet = async function (id) {
   return responseHandler(await api.get(`/sets/${id}/jwt`, this.auth))
+}
+
+/*
+ * Get public measurements set
+ */
+Backend.prototype.getPublicSet = async function (id) {
+  return responseHandler(await api.get(`/sets/${id}.json`))
 }
 
 /*
@@ -299,6 +369,13 @@ Backend.prototype.createIssue = async function (data) {
 }
 
 /*
+ * Create GitHub discussion
+ */
+Backend.prototype.createDiscussion = async function (data) {
+  return responseHandler(await api.post(`/discussions`, data), 201)
+}
+
+/*
  * Check whether a slug is available
  */
 Backend.prototype.isSlugAvailable = async function ({ slug, type }) {
@@ -353,6 +430,13 @@ Backend.prototype.uploadImage = async function (body) {
 }
 
 /*
+ * Upload an image anonymously
+ */
+Backend.prototype.uploadAnonImage = async function (body) {
+  return responseHandler(await api.post('/images', body))
+}
+
+/*
  * Remove an (uploaded) image
  */
 Backend.prototype.removeImage = async function (id) {
@@ -399,6 +483,13 @@ Backend.prototype.adminImpersonateUser = async function (id) {
  */
 Backend.prototype.adminPing = async function (token) {
   return responseHandler(await api.get(`/whoami/jwt`, auth(token)))
+}
+
+/*
+ * Migrate a v2 account
+ */
+Backend.prototype.migrate = async function (data) {
+  return responseHandler(await api.post(`/migrate`, data))
 }
 
 export function useBackend() {

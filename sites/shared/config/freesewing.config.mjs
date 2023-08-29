@@ -11,36 +11,50 @@ export const freeSewingConfig = {
   account: {
     fields: {
       data: {
+        bookmarks: 2,
         sets: 1,
         patterns: 1,
+        apikeys: 4,
       },
       info: {
-        bio: 1,
-        email: 3,
-        github: 3,
-        img: 2,
-        units: 2,
-        language: 2,
         username: 2,
+        bio: 2,
+        img: 2,
+        email: 3,
       },
       settings: {
-        compare: 3,
-        consent: 2,
-        control: 1,
-        mfa: 4,
+        language: 2,
+        units: 2,
         newsletter: 2,
-        password: 2,
+        compare: 3,
+        control: 1,
+        consent: 2,
       },
-      developer: {
+      security: {
+        password: 2,
+        mfa: 3,
         apikeys: 4,
+      },
+      identities: {
+        github: 3,
+        instagram: 3,
+        mastodon: 3,
+        reddit: 3,
+        twitter: 3,
+        twitch: 3,
+        tiktok: 3,
+        website: 3,
       },
     },
     sets: {
       name: 1,
-      img: 2,
+      img: 1,
       public: 3,
-      units: 2,
+      units: 1,
       notes: 2,
+      createdAt: 2,
+      updatedAt: 2,
+      id: 4,
     },
     patterns: {
       name: 1,
@@ -68,4 +82,14 @@ export const freeSewingConfig = {
       color: 'error',
     },
   },
+}
+
+export const controlLevels = {
+  ...freeSewingConfig.account.fields.data,
+  ...freeSewingConfig.account.fields.info,
+  ...freeSewingConfig.account.fields.settings,
+  ...freeSewingConfig.account.fields.security,
+  ...freeSewingConfig.account.fields.identities,
+  sets: freeSewingConfig.account.sets,
+  patterns: freeSewingConfig.account.patterns,
 }
