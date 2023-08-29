@@ -311,7 +311,7 @@ PatternModel.prototype.guardedUpdate = async function ({ params, body, user }) {
     data.img = await storeImage(
       {
         id: `pattern-${this.record.id}`,
-        metadata: { user: this.user.uid },
+        metadata: { user: user.uid },
         b64: body.img,
       },
       this.isTest(body)
@@ -401,11 +401,10 @@ PatternModel.prototype.revealPattern = function (pattern) {
  */
 PatternModel.prototype.asPublicPattern = function () {
   const data = {
-    author: 'FreeSewing.org',
+    provider: 'FreeSewing.org',
     type: 'pattern',
     ...this.asPattern(),
   }
-  delete data.userId
   delete data.public
 
   return data
