@@ -8,5 +8,6 @@ account: Account
 theme: Theme
 language: Language
 search: Search
-new: New...
-support: Support
+sets: Measurements
+patterns: Patterns
+new: New
