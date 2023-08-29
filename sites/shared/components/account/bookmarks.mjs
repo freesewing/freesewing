@@ -23,7 +23,9 @@ export const Bookmark = ({ bookmark }) => {
   return bookmark ? (
     <div>
       <DisplayRow title={t('title')}>{bookmark.title}</DisplayRow>
-      <DisplayRow title={t('url')}>{bookmark.url}</DisplayRow>
+      <DisplayRow title={t('url')}>
+        {bookmark.url.length > 30 ? bookmark.url.slice(0, 30) + '...' : bookmark.url}
+      </DisplayRow>
       <DisplayRow title={t('type')}>{t(`${bookmark.type}Bookmark`)}</DisplayRow>
       <div className="flex flex-row flex-wrap md:gap-2 md:items-center md:justify-between mt-8">
         <Link

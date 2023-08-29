@@ -7,22 +7,22 @@
 @layer components {
   /* Applied styles for common HTML tags */
   h1 {
-    @apply text-base-content text-4xl py-5 font-bold lg:text-6xl font-black;
+    @apply text-base-content text-4xl py-5 font-thin lg:text-6xl;
   }
   h2 {
-    @apply text-base-content text-3xl pt-4 pb-3 m-0 font-black lg:text-4xl;
+    @apply text-base-content text-3xl pt-4 pb-3 m-0 font-light lg:text-4xl;
   }
   h3 {
-    @apply text-base-content text-2xl pt-3 pb-2 m-0 font-black lg:text-3xl;
+    @apply text-base-content text-2xl pt-3 pb-2 m-0 font-normal lg:text-3xl;
   }
   h4 {
-    @apply text-base-content text-xl pt-2 pb-1 m-0 font-black lg:text-2xl;
+    @apply text-base-content text-xl pt-2 pb-1 m-0 font-medium lg:text-2xl;
   }
   h5 {
-    @apply text-base-content text-lg py-1 m-0 font-black lg:text-xl;
+    @apply text-base-content text-lg py-1 m-0 font-medium lg:text-xl;
   }
   h6 {
-    @apply text-base-content text-base py-0 m-0 font-black lg:text-lg;
+    @apply text-base-content text-base py-0 m-0 font-medium lg:text-lg;
   }
   p {
     @apply text-base-content my-1 py-2 text-base leading-6;
@@ -49,7 +49,7 @@
 
   /* mdx styles */
   .mdx a {
-    @apply underline decoration-2;
+    @apply underline decoration-2 text-secondary;
   }
   .mdx a:hover {
     @apply decoration-4;

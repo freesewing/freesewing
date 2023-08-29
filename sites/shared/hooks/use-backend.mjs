@@ -332,6 +332,13 @@ Backend.prototype.getPattern = async function (id) {
 }
 
 /*
+ * Get public pattern
+ */
+Backend.prototype.getPublicPattern = async function (id) {
+  return responseHandler(await api.get(`/patterns/${id}.json`))
+}
+
+/*
  * Get patterns
  */
 Backend.prototype.getPatterns = async function () {

@@ -5,7 +5,6 @@ import { nsMerge } from 'shared/utils.mjs'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { SignIn, ns as susiNs } from 'shared/components/susi/sign-in.mjs'
-import { FreeSewingAnimation } from 'shared/components/animations/freesewing.mjs'
 
 const ns = nsMerge(susiNs, pageNs)
 
@@ -22,7 +21,6 @@ const SignInPage = ({ page }) => {
         <div className="max-w-lg w-full">
           <SignIn />
         </div>
-        <FreeSewingAnimation className="w-64 mt-8" />
       </div>
     </PageWrapper>
   )
