@@ -695,7 +695,7 @@ export const Sets = () => {
           </button>
         ) : null}
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
+      <div className="flex flex-row flex-wrap gap-2">
         {sets.map((set, i) => (
           <div
             key={i}
@@ -713,7 +713,7 @@ export const Sets = () => {
               />
             </label>
             <div className="w-full">
-              <MsetCard control={control} href={`/account/sets/${set.id}`} set={set} />
+              <MsetCard control={control} href={`/account/sets/${set.id}`} set={set} size="md" />
             </div>
           </div>
         ))}
