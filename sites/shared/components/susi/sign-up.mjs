@@ -142,7 +142,7 @@ export const SignUp = () => {
               label={t('susi:emailAddress')}
               current={email}
               original={''}
-              valid={(val) => emailValid}
+              valid={() => emailValid}
               placeholder={t('susi:emailAddress')}
               update={updateEmail}
             />
