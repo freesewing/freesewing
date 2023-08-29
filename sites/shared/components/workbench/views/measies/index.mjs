@@ -81,7 +81,13 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
               </div>
               <p>{t('workbench:chooseFromBookmarkedSetsDesc')}</p>
             </Fragment>,
-            <BookmarkedSetPicker design={design} clickHandler={loadMeasurements} t={t} size="md" />,
+            <BookmarkedSetPicker
+              design={design}
+              clickHandler={loadMeasurements}
+              t={t}
+              size="md"
+              key={2}
+            />,
           ],
           [
             <Fragment key={1}>
