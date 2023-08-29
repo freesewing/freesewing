@@ -20,9 +20,12 @@ const LoadingStatus = ({ loadingStatus }) => {
     if (loadingStatus[2]) {
       if (timer) clearTimeout(timer)
       setTimer(
-        window.setTimeout(() => {
-          setFade('opacity-0')
-        }, timeout * 1000 - 350)
+        window.setTimeout(
+          () => {
+            setFade('opacity-0')
+          },
+          timeout * 1000 - 350
+        )
       )
     }
   }, [loadingStatus[2]])

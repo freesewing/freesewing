@@ -5,7 +5,7 @@ import Head from 'next/head'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Robot } from 'shared/components/robot/index.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
-import { PageLink } from 'shared/components/page-link.mjs'
+import { PageLink } from 'shared/components/link.mjs'
 import { BaseLayout, BaseLayoutLeft, BaseLayoutWide } from 'shared/components/base-layout.mjs'
 import { NavLinks, MainSections } from 'shared/components/navigation/sitenav.mjs'
 

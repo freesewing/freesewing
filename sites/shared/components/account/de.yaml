@@ -6,7 +6,7 @@ links: Links
 info: Info
 settings: Einstellungen
 data: Daten
-sets: Measurements Sets
+sets: Maßnahmesets
 patterns: Schnittmuster
 actions: Aktionen
 created: Erstellt
@@ -14,12 +14,11 @@ updated: Aktualisiert
 expires: Läuft ab
 yourProfile: Dein Profil
 yourPatterns: Deine Schnittmuster
-yourSets: Your Measurements Sets
+yourSets: Deine Maßeinheiten
 signOut: Abmelden
 politeOhCrap: Oh Purzelbäume
 bio: Über mich
 email: E-Mail Adresse
-github: Github-Benutzername
 img: Profilbild
 username: Benutzername
 compare: Metrikenvergleich
@@ -47,10 +46,16 @@ language: Sprache
 developer: Entwickler
 reload: Account neu laden
 export: Exportiere deine Daten
+exportMsg: Click below to export your personal data
+exportNote: The EU's General Data Protection Regulation (GDPR) ensures your so-called right to data portability — the right to obtain and reuse your personal data for your own purposes, or across different services.
+exportDownload: "Your data was exported and is available for download at the following location:"
 review: Überprüfe deine Einwilligungen
 restrict: Verarbeitung deiner Daten einschränken
 disable: Deaktiviere dein Konto
 remove: Entferne deinen Account
+proceedWithCaution: Bitte mit Vorsicht fortfahren
+restrictWarning: While no data will be removed, this will disable your account. Furthermore, you can not undo this on your own, but will have to contact support when you want to restore access to your account.
+noWayBack: There is no way back from this.
 mdSupport: Hier kannst du Markdown verwenden
 or: oder
 continue: Fortsetzen
@@ -116,7 +121,12 @@ oneMomentPlease: Einen Moment bitte
 emailChangeConfirmation: Wir haben eine E-Mail an deine neue Adresse geschickt, um diese Änderung zu bestätigen.
 vagueError: Etwas ist schief gelaufen und wir sind uns nicht sicher, wie wir damit umgehen sollen. Bitte versuche es noch einmal oder wende dich an einen Menschen, der dir hilft.
 #github
-githubTitle: Gib hier deinen Github-Benutzernamen ein, um Updates zu erhalten, wenn du ein Problem über diese Website meldest.
+githubTitle: Link your GitHub identity
+githubWhy1: Enter your GitHub username and email here and we will use them when interacting with GitHub on your behalf.
+githubWhy2: Note that both your GitHub username and email is public info. This merely allows us to make a link between your FreeSewing account and GitHub account.
+githubWhy3: For example, when you report a problem on this website, we can mention you so you will receive notifications when there is an update. For this, your username is sufficient.
+githubWhy4: When you submit a showcase post or make changed to our content, we can credit those commits to you if we have both your username and the email address you use on GitHub.
+tooComplex: If all of this in confusing, you don't have to provide this info. It's an advanced feature.
 #languge
 languageTitle: Welche Sprache bevorzugst du?
 #password
@@ -169,6 +179,16 @@ designNew: Ein neues Design erstellen
 designNewInfo: FreeSewing-Designs sind kleine Bündel von JavaScript-Code, die Muster erzeugen. Es ist nicht schwer, eigene Designs zu erstellen, und wir haben eine ausführliche Anleitung für dich, damit du loslegen kannst.
 pluginNew: Ein neues Plugin erstellen
 pluginNewInfo: Die Funktionen von FreeSewing können mit Plugins erweitert werden. Es ist ganz einfach, ein Plugin zu erstellen, und wir haben eine Anleitung, die dich von Anfang bis Ende begleitet.
+showcaseNew: Create a new showcase post
+showcaseNewInfo: If you would like to share something you (or someone else) made based on our designs, you can start a draft showcase post here.
+blogNew: Create a new blog post
+blogNewInfo: If you would like to write on the FreeSewing blog, you can start a draft blog post here.
 newBasic: Die Grundlagen
 newAdvanced: Weiter gehen
 generateANewThing: "Erstelle eine neue { thing }"
+website: Website
+linkedIdentities: Linked Identities
+websiteTitle: Do you have a website or other URL you'd like to add?
+platformTitle: Who are you on { platform }?
+platformWhy: We do not use this data in any way. This is only here so FreeSewing users can connect the dots across platforms.
+security: Security

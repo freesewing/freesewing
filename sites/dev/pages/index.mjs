@@ -3,7 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import Head from 'next/head'
 import { PageWrapper } from 'shared/components/wrappers/page.mjs'
-import { PageLink } from 'shared/components/page-link.mjs'
+import { PageLink } from 'shared/components/link.mjs'
 import { Highlight } from 'shared/components/mdx/highlight.mjs'
 import { FreeSewingIcon } from 'shared/components/icons.mjs'
 import Link from 'next/link'
@@ -138,7 +138,7 @@ const HomePage = ({ page }) => (
       <div className="flex flex-col gap-5 lg:grid lg:grid-cols-3 lg:gap-4 mt-12">
         <CardLink
           color="primary"
-          href="/reference/api"
+          href="/tutorials/pattern-design"
           title="Design Tutorial"
           text="Step by step instructions to create your first FreeSewing design"
         />
