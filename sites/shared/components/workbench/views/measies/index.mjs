@@ -20,8 +20,6 @@ import { MsetIcon, BookmarkIcon, CsetIcon, EditIcon } from 'shared/components/ic
 
 export const ns = nsMerge(authNs, setsNs)
 
-const tabNames = ['account:chooseASet', 'editCurrentMeasies']
-
 export const MeasiesView = ({ design, Design, settings, update, missingMeasurements, setView }) => {
   const { t } = useTranslation(['workbench'])
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
