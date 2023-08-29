@@ -14,8 +14,6 @@ export const MeasiesEditor = ({ Design, settings, update }) => {
 
   return (
     <div className="max-w-2xl mx-auto">
-      <h2>{t('editCurrentMeasiesHeader')}</h2>
-      <p>{t('editCurrentMeasiesDesc')}</p>
       {Design.patternConfig.measurements.map((m) => (
         <MeasieInput
           key={m}
