@@ -99,6 +99,7 @@ controlTitle: Welches Nutzererlebnis bevorzugst du?
 #img
 imgTitle: Wie wäre es mit einem Bild?
 imgDragAndDropImageHere: Ziehe ein Bild hierher und lege es ab
+imgPasteUrlHere: Paste an image location (url) here
 imgSelectImage: Ein Bild auswählen
 #newsletter
 newsletterTitle: Möchtest du den FreeSewing-Newsletter abonnieren?
@@ -113,6 +114,7 @@ imperialUnitsd: Wähle diese Option, wenn du Zoll statt Zentimeter bevorzugst.
 unitsTitle: Welche Einheiten bevorzugst du?
 #username
 usernameTitle: Welchen Benutzernamen hättest du gerne?
+usernameAvailable: Username is available
 usernameNotAvailable: Benutzername ist nicht verfügbar
 #email
 emailTitle: Wo können wir dich erreichen, falls wir einen guten Grund dafür haben (z.B. wenn du dein Passwort vergessen hast)?
@@ -152,8 +154,26 @@ cancel: Abbrechen
 keySecretWarning: Das ist das einzige Mal, dass du das Schlüsselgeheimnis sehen kannst, also achte darauf, es zu kopieren.
 keyExpired: Dieser API-Schlüssel ist abgelaufen
 deleteKeyWarning: Das Entfernen eines API-Schlüssels kann nicht rückgängig gemacht werden.
+keyDocsTitle: Refer to FreeSewing.dev for documentation on using API keys (English only)
+keyDocsMsg: This is an advanced feature aimed at developers or anyone who wants to interact with our backend directly.
+apiCalls: API Calls
+#bookmarks
+newBookmark: Add a Bookmark
+bookmark: Bookmark
+bookmarks: Bookmarks
+type: Art
+location: Location
+title: Titel
 new: Neu
+designBookmark: Entwurf
+patternBookmark: Schnittmuster
+setBookmark: Maßnahmesets
+csetBookmark: Curated Measurements Sets
+docBookmark: Dokumentation
+customBookmark: Custom Bookmarks
+yourBookmarks: Your bookmarks
 #sets
+set: Measurements Set
 name: Name
 setNameDesc: Ein Name zur Identifizierung dieser Messreihe
 setNewInfo: Erstelle einen neuen Satz von Messungen, für die du dann Muster erstellen kannst.
@@ -173,6 +193,29 @@ privateSet: Private Messungen eingestellt
 publicSetDesc: Andere dürfen diese Messungen nutzen, um Muster zu erstellen oder zu testen
 privateSetDesc: Diese Messungen können nicht von anderen Nutzern oder Besuchern verwendet werden
 permalink: Permalink
+editThing: '{thing} bearbeiten'
+saveThing: '{thing} speichern'
+filterByDesign: Filter by design
+noFilter: Do not filter
+filterByDesignDocs: If you have a specific design in mind, you can <b>filter by design</b> to only list those measurements that are required for this design.
+setLacksMeasiesForDesign: This set lacks measurements required for this pattern
+setHasMeasiesForDesign: This set has all measurements required for this pattern
+someSetsLacking: Some of your sets lack the measurments required to generate this pattern
+theseSetsReady: These sets have all required measurments to generate this pattern
+chooseSet: Bitte wähle einen Satz von Messungen
+patternForWhichSet: Für welchen Satz von Messungen sollten wir ein Muster erstellen?
+bookmarkedSets: Maßnahmesets, die du mit einem Lesezeichen versehen hast
+curatedSets: FreeSewing's curated measurements sets
+curatedSetsAbout: Von FreeSewing kuratierte Messreihen, die du nutzen kannst, um unsere Plattform oder deine Designs zu testen.
+curateCuratedSets: Curate our selection of curated measurements sets
+useThisSet: Verwende diesen Satz von Messungen
+ownSets: Your own measurements sets
+noOwnSets: You do not have any of your own measurements sets (yet)
+pleaseMtm: Because made-to-measure lies at the heart of what we do, we strongly suggest you take accurate measurements.
+noOwnSetsMsg: You can store your measurements as a measurements set, after which you can generate as many patterns as you want for them.
+measurements: Maße
+chooseASet: Choose a measurements set
+showImage: Show image
 patternNew: Ein neues Muster generieren
 patternNewInfo: Wähle ein Design aus, füge deine Maße hinzu und wir erstellen ein maßgeschneidertes Nähmuster für dich.
 designNew: Ein neues Design erstellen
@@ -192,3 +235,5 @@ websiteTitle: Do you have a website or other URL you'd like to add?
 platformTitle: Who are you on { platform }?
 platformWhy: We do not use this data in any way. This is only here so FreeSewing users can connect the dots across platforms.
 security: Security
+revealPassword: Reveal password
+hidePassword: Hide password

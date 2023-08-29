@@ -49,4 +49,5 @@ saNo.t: Не враховувати припуски на шви
 saNo.d: При цьому створюється деталь без припусків на шви. Розмір припуску на шов не має значення, оскільки він не буде врахований.
 saYes.t: Враховувати припуски на шви
 saYes.d: При цьому генерується деталь з припусками на шви. Розмір припуску на шов задається індивідуально.
-
+clearSettingsNotMeasurements: Clear settings, but keep measurements
+clearSettingsAndMeasurements: Clear settings & Clear measurements

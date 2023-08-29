@@ -1,20 +1,30 @@
 alreadyHaveAnAccount: Hast du bereits ein Konto?
-bacToSignInk: Zurück zur Anmeldung
+back: Rückseite
+backToSignIn: Zurück zur Anmeldung
+backToSignUp: Back to sign up
 checkYourInbox: Schau in deinem Posteingang nach einer E-Mail von
 clickSigninLink: Klicke auf den Anmeldelink in dieser E-Mail, um dich bei deinem FreeSewing-Konto anzumelden.
 clickSignupLink: Klicke auf deinen persönlichen Anmeldelink in dieser E-Mail, um dein FreeSewing-Konto zu erstellen.
 contact: Kontakt Unterstützung
 createAFreeSewingAccount: Create a FreeSewing account
+dontHaveAV2Account: Don't have a v2 account?
 dontHaveAnAccount: Du hast noch keinen Account?
 emailAddress: E-Mail-Adresse
 emailMissing: Bitte gib deine E-Mail Adresse an
 emailSent: E-Mail versendet
-emailSignInLink: Schick mir einen Anmeldelink
 emailSignupLink: Schick mir einen Anmeldelink
+emailSigninLink: Email me a sign-in link
 emailUsernameId: "Deine E-Mail-Adresse, dein Benutzername oder deine Benutzernummer"
 err2: Leider können wir diesen Fehler nicht beheben, wir brauchen einen Menschen, der sich das ansieht.
 err3: Versuche es einfach noch einmal oder wende dich an den Support, damit wir dir helfen können.
+haveAV2Account: Have a v2 account?
 joinFreeSewing: FreeSewing beitreten
+migrateItHere: Migrate it here
+migrateNoWorkie: Unable to migrate this account. Typically that means your credentials are invalid.
+migrateV2Account: Migrate your v2 account
+migrateV2Desc: Enter your v2 username & password to migrate your account.
+migrateV2Info: Your v2 account will not be changed, this will only create a v3 account with the v2 account data.
+migrateV3UserAlreadyExists: Cannot migrate over an existing v3 account. Perhaps just sign in instead?
 notFound: Kein solcher Nutzer gefunden
 oneMomentPlease: Einen Moment bitte
 password: Dein Passwort
@@ -23,15 +33,20 @@ pleaseProvideValidEmail: Bitte gib eine gültige E-Mail-Adresse an
 processing: In Bearbeitung
 regainAccess: Zugang wiedererlangen
 signIn: Anmelden
+signInAsOtherUser: Sign in as a different user
 signInFailed: Anmeldung fehlgeschlagen
 signInHere: Hier anmelden
 signInToThing: "Melde dich bei { thing } an"
+signInWithProvider: Sign in with { provider }
 signUpHere: Registriere dich hier
+signUpWithProvider: Mit {provider} registrieren
 signupAgain: Erneut registrieren
 signupLinkExpired: Anmeldelink ist abgelaufen
 somethingWentWrong: Etwas ist schiefgelaufen
 toReceiveSignupLink: Um einen Anmeldelink zu erhalten, gib deine E-Mail-Adresse ein
+tryAgain: Try again
 usePassword: Verwende dein Passwort
 usernameMissing: Bitte gib deinen Benutzernamen an
 welcome: Willkommen
 welcomeBackName: "Willkommen zurück { name }"
+welcomeMigrateName: Welcome to FreeSewing v3 {name}. Please note that this is still alpha code.

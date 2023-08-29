@@ -99,6 +99,7 @@ controlTitle: Якому користувацькому досвіду ви на
 #img
 imgTitle: Як щодо фотографії?
 imgDragAndDropImageHere: Перетягніть зображення сюди
+imgPasteUrlHere: Paste an image location (url) here
 imgSelectImage: Виберіть зображення
 #newsletter
 newsletterTitle: Хочете переглянути розсилку новин FreeSewing?
@@ -113,6 +114,7 @@ imperialUnitsd: Виберіть цей параметр, якщо ви відд
 unitsTitle: Яким одиницям ви віддаєте перевагу?
 #username
 usernameTitle: Яке ім'я користувача ви б хотіли?
+usernameAvailable: Username is available
 usernameNotAvailable: Ім'я користувача недоступне
 #email
 emailTitle: Де ми можемо зв'язатися з вами, якщо у нас буде на це поважна причина (наприклад, якщо ви забули свій пароль)?
@@ -152,8 +154,26 @@ cancel: Скасувати
 keySecretWarning: Це єдиний раз, коли ви можете побачити секретний ключ, обов'язково скопіюйте його.
 keyExpired: Термін дії цього ключа API закінчився
 deleteKeyWarning: Видалення ключа API не можна скасувати.
+keyDocsTitle: Refer to FreeSewing.dev for documentation on using API keys (English only)
+keyDocsMsg: This is an advanced feature aimed at developers or anyone who wants to interact with our backend directly.
+apiCalls: API Calls
+#bookmarks
+newBookmark: Add a Bookmark
+bookmark: Bookmark
+bookmarks: Bookmarks
+type: Тип
+location: Location
+title: Title
 new: Новий
+designBookmark: Дизайни
+patternBookmark: Викрійки
+setBookmark: Набори для вимірювання
+csetBookmark: Curated Measurements Sets
+docBookmark: Документація
+customBookmark: Custom Bookmarks
+yourBookmarks: Your bookmarks
 #sets
+set: Measurements Set
 name: Назва
 setNameDesc: Ім'я для ідентифікації цього набору вимірювань
 setNewInfo: Створіть новий набір вимірів, який потім можна використовувати для створення лекал.
@@ -173,6 +193,29 @@ privateSet: Набір приватних вимірів
 publicSetDesc: Інші можуть використовувати ці вимірювання для створення або тестування шаблонів
 privateSetDesc: Ці вимірювання не можуть бути використані іншими користувачами або відвідувачами
 permalink: Перманентне посилання
+editThing: Коригувати {thing}
+saveThing: Зберегти {thing}
+filterByDesign: Filter by design
+noFilter: Do not filter
+filterByDesignDocs: If you have a specific design in mind, you can <b>filter by design</b> to only list those measurements that are required for this design.
+setLacksMeasiesForDesign: This set lacks measurements required for this pattern
+setHasMeasiesForDesign: This set has all measurements required for this pattern
+someSetsLacking: Some of your sets lack the measurments required to generate this pattern
+theseSetsReady: These sets have all required measurments to generate this pattern
+chooseSet: Будь ласка, оберіть набір вимірів
+patternForWhichSet: Для якого набору вимірів ми повинні згенерувати викрійку?
+bookmarkedSets: Набори вимірювань, які ви додали до закладок
+curatedSets: FreeSewing's curated measurements sets
+curatedSetsAbout: Набори мірок, куратором яких є FreeSewing, які ви можете використовувати для тестування нашої платформи або ваших дизайнів.
+curateCuratedSets: Curate our selection of curated measurements sets
+useThisSet: Використовуйте цей набір вимірювань
+ownSets: Your own measurements sets
+noOwnSets: You do not have any of your own measurements sets (yet)
+pleaseMtm: Because made-to-measure lies at the heart of what we do, we strongly suggest you take accurate measurements.
+noOwnSetsMsg: You can store your measurements as a measurements set, after which you can generate as many patterns as you want for them.
+measurements: Заміри
+chooseASet: Choose a measurements set
+showImage: Show image
 patternNew: Створіть новий шаблон
 patternNewInfo: Виберіть дизайн, додайте свої мірки, і ми створимо для вас викрійку, виготовлену за індивідуальними мірками.
 designNew: Створіть новий дизайн
@@ -192,3 +235,5 @@ websiteTitle: Do you have a website or other URL you'd like to add?
 platformTitle: Who are you on { platform }?
 platformWhy: We do not use this data in any way. This is only here so FreeSewing users can connect the dots across platforms.
 security: Security
+revealPassword: Reveal password
+hidePassword: Hide password

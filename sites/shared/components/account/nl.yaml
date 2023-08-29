@@ -99,6 +99,7 @@ controlTitle: Welke gebruikerservaring heeft jouw voorkeur?
 #img
 imgTitle: Wat denk je van een leuke foto?
 imgDragAndDropImageHere: Sleep hier een afbeelding naartoe
+imgPasteUrlHere: Paste an image location (url) here
 imgSelectImage: Selecteer een afbeelding
 #newsletter
 newsletterTitle: Wil je de FreeSewing nieuwsbrief ontvangen?
@@ -113,6 +114,7 @@ imperialUnitsd: Kies deze optie als je de voorkeur geeft aan duimen boven centim
 unitsTitle: Welke eenheden hebben jouw voorkeur?
 #username
 usernameTitle: Welke gebruikersnaam wil je?
+usernameAvailable: Username is available
 usernameNotAvailable: Deze gebruikersnaam is niet beschikbaar
 #email
 emailTitle: Waar kunnen we je bereiken als we daar een goede reden voor hebben (zoals wanneer je je wachtwoord bent vergeten)?
@@ -152,8 +154,26 @@ cancel: Annuleren
 keySecretWarning: Dit is de enige keer dat je het sleutelgeheim kunt zien, zorg ervoor dat je het kopieert.
 keyExpired: Deze API-key is verlopen
 deleteKeyWarning: Het verwijderen van een API-key kan niet ongedaan worden gemaakt.
+keyDocsTitle: Refer to FreeSewing.dev for documentation on using API keys (English only)
+keyDocsMsg: This is an advanced feature aimed at developers or anyone who wants to interact with our backend directly.
+apiCalls: API Calls
+#bookmarks
+newBookmark: Add a Bookmark
+bookmark: Bookmark
+bookmarks: Bookmarks
+type: Type
+location: Location
+title: Titel
 new: Nieuw
+designBookmark: Collectie
+patternBookmark: Patronen
+setBookmark: Maten sets
+csetBookmark: Curated Measurements Sets
+docBookmark: Documentatie
+customBookmark: Custom Bookmarks
+yourBookmarks: Your bookmarks
 #sets
+set: Measurements Set
 name: Naam
 setNameDesc: Een naam om deze maten set te identificeren
 setNewInfo: Creëer een nieuwe maten set waar je vervolgens patronen voor kunt genereren.
@@ -173,6 +193,29 @@ privateSet: Privé maten set
 publicSetDesc: Anderen kunnen deze maten gebruiken om patronen aan te maken of te testen
 privateSetDesc: Deze maten mogen niet worden gebruikt door anderen om patronen aan te maken of te testen
 permalink: Link
+editThing: Bewerk {thing}
+saveThing: Bewaar {thing}
+filterByDesign: Filter by design
+noFilter: Do not filter
+filterByDesignDocs: If you have a specific design in mind, you can <b>filter by design</b> to only list those measurements that are required for this design.
+setLacksMeasiesForDesign: This set lacks measurements required for this pattern
+setHasMeasiesForDesign: This set has all measurements required for this pattern
+someSetsLacking: Some of your sets lack the measurments required to generate this pattern
+theseSetsReady: These sets have all required measurments to generate this pattern
+chooseSet: Kies een maten set
+patternForWhichSet: Voor welke maten set moeten we een patroon genereren?
+bookmarkedSets: Maten sets in je bladwijzers
+curatedSets: FreeSewing's curated measurements sets
+curatedSetsAbout: Maten sets samengesteld door FreeSewing die je kan gebruiken om ons platform of je ontwerpen te testen.
+curateCuratedSets: Curate our selection of curated measurements sets
+useThisSet: Gebruik deze maten set
+ownSets: Your own measurements sets
+noOwnSets: You do not have any of your own measurements sets (yet)
+pleaseMtm: Because made-to-measure lies at the heart of what we do, we strongly suggest you take accurate measurements.
+noOwnSetsMsg: You can store your measurements as a measurements set, after which you can generate as many patterns as you want for them.
+measurements: Maten
+chooseASet: Choose a measurements set
+showImage: Show image
 patternNew: Een nieuw patroon genereren
 patternNewInfo: Kies een ontwerp, voeg je maten set toe en wij genereren een naaipatroon op maat voor je.
 designNew: Een nieuw ontwerp creëren
@@ -192,3 +235,5 @@ websiteTitle: Do you have a website or other URL you'd like to add?
 platformTitle: Who are you on { platform }?
 platformWhy: We do not use this data in any way. This is only here so FreeSewing users can connect the dots across platforms.
 security: Security
+revealPassword: Reveal password
+hidePassword: Hide password
