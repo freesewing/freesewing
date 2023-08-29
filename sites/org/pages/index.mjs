@@ -103,23 +103,25 @@ const HomePage = ({ page }) => {
           </Card>
         </div>
 
-        <div className="p-1 bg-primary bg-opacity-10 mt-12 rounded-none md:rounded-lg lg:rounded-xl md:shadow-lg md:mx-4 p-8 lg:px-12 md:py-0">
-          <div className="flex flex-col md:gap-8 lg:gap-12 md:flex md:flex-row m-auto">
-            <div className="-mx-4 md:mx-0 md:pt-8 pb-8 lg:py-12 grow m-auto max-w-prose">
-              <SignUp />
-            </div>
-            <div className="-mx-4 md:mx-0 md:mt-0 pt-0 md:pt-8 pb-8 lg:py-12 max-w-prose m-auto m-auto">
-              <h2 className="text-inherit mb-4 hidden md:block">{t('homepage:whyBother')}</h2>
-              <ul>
-                {[1, 2, 3, 4].map((i) => (
-                  <li className="flex flex-row gap-2 my-2" key={i}>
-                    <OkIcon stroke={4} /> {t(`homepage:why${i}`)}
-                  </li>
-                ))}
-              </ul>
+        {!user && (
+          <div className="p-1 bg-primary bg-opacity-10 mt-12 rounded-none md:rounded-lg lg:rounded-xl md:shadow-lg md:mx-4 p-8 lg:px-12 md:py-0">
+            <div className="flex flex-col md:gap-8 lg:gap-12 md:flex md:flex-row m-auto">
+              <div className="-mx-4 md:mx-0 md:pt-8 pb-8 lg:py-12 grow m-auto max-w-prose">
+                <SignUp />
+              </div>
+              <div className="-mx-4 md:mx-0 md:mt-0 pt-0 md:pt-8 pb-8 lg:py-12 max-w-prose m-auto m-auto">
+                <h2 className="text-inherit mb-4 hidden md:block">{t('homepage:whyBother')}</h2>
+                <ul>
+                  {[1, 2, 3, 4].map((i) => (
+                    <li className="flex flex-row gap-2 my-2" key={i}>
+                      <OkIcon stroke={4} /> {t(`homepage:why${i}`)}
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
+        )}
       </div>
 
       <div className="flex flex-col md:grid md:grid-cols-2 gap-4 max-w-7xl m-auto mb-24 px-4">
