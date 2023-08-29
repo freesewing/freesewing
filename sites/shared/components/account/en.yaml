@@ -20,7 +20,7 @@ signOut: Sign Out
 politeOhCrap: Oh fiddlesticks
 bio: Bio
 email: E-mail Address
-img: Profile image
+img: Image
 username: Username
 compare: Metricset Comparison
 consent: Consent & Privacy
@@ -45,6 +45,10 @@ enableMfa: Enable Two-Factor Authentication
 disableMfa: Disable Two-Factor Authentication
 language: Language
 developer: Developer
+design: Design
+patternMetadata: Pattern metadata
+clonePattern: Clone pattern
+updatePattern: Update pattern
 
 reload: Reload account
 export: Export your data

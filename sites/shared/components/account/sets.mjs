@@ -289,6 +289,7 @@ export const Mset = ({ id, publicOnly = false }) => {
       setLoadingStatus([true, 'nailedIt', true, true])
     } else setLoadingStatus([true, 'backendError', true, false])
   }
+
   const heading = (
     <>
       <LoadingStatus />
@@ -410,11 +411,11 @@ export const Mset = ({ id, publicOnly = false }) => {
             {shortDate(i18n.language, mset.createdAt, false)}
           </DisplayRow>
         )}
-        {control >= controlLevels.sets.createdAt && (
+        {control >= controlLevels.sets.updatedAt && (
           <DisplayRow title={t('updated')}>
             <Timeago date={mset.updatedAt} />
             <span className="px-2 opacity-50">|</span>
-            {shortDate(i18n.language, mset.createdAt, false)}
+            {shortDate(i18n.language, mset.updatedAt, false)}
           </DisplayRow>
         )}
         {control >= controlLevels.sets.id && <DisplayRow title={t('id')}>{mset.id}</DisplayRow>}
