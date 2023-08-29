@@ -46,10 +46,16 @@ language: Sprache
 developer: Entwickler
 reload: Account neu laden
 export: Exportiere deine Daten
+exportMsg: Click below to export your personal data
+exportNote: The EU's General Data Protection Regulation (GDPR) ensures your so-called right to data portability — the right to obtain and reuse your personal data for your own purposes, or across different services.
+exportDownload: "Your data was exported and is available for download at the following location:"
 review: Überprüfe deine Einwilligungen
 restrict: Verarbeitung deiner Daten einschränken
 disable: Deaktiviere dein Konto
 remove: Entferne deinen Account
+proceedWithCaution: Bitte mit Vorsicht fortfahren
+restrictWarning: While no data will be removed, this will disable your account. Furthermore, you can not undo this on your own, but will have to contact support when you want to restore access to your account.
+noWayBack: There is no way back from this.
 mdSupport: Hier kannst du Markdown verwenden
 or: oder
 continue: Fortsetzen
@@ -180,3 +186,9 @@ blogNewInfo: If you would like to write on the FreeSewing blog, you can start a 
 newBasic: Die Grundlagen
 newAdvanced: Weiter gehen
 generateANewThing: "Erstelle eine neue { thing }"
+website: Website
+linkedIdentities: Linked Identities
+websiteTitle: Do you have a website or other URL you'd like to add?
+platformTitle: Who are you on { platform }?
+platformWhy: We do not use this data in any way. This is only here so FreeSewing users can connect the dots across platforms.
+security: Security
