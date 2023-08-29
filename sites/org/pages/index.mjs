@@ -23,7 +23,6 @@ import { HowDoesItWorkAnimation } from 'shared/components/animations/how-does-it
 import { SignUp, ns as susiNs } from 'shared/components/susi/sign-up.mjs'
 import { PleaseSubscribe, ns as subNs } from 'shared/components/patrons/please-subscribe.mjs'
 import Link from 'next/link'
-import { Popout } from 'shared/components/popout/index.mjs'
 
 const ns = nsMerge(pageNs, subNs, susiNs, 'homepage')
 

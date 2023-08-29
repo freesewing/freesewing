@@ -1,23 +1,18 @@
 // Dependencies
-import { useState, useEffect, useContext, useCallback } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
-import orderBy from 'lodash.orderby'
 import { capitalize, shortDate, cloudflareImageUrl, horFlexClasses } from 'shared/utils.mjs'
 import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewing.config.mjs'
 // Hooks
-import { useDropzone } from 'react-dropzone'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useRouter } from 'next/router'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
 import { PageLink, Link, AnchorLink } from 'shared/components/link.mjs'
-import { Collapse, MimicCollapseLink } from 'shared/components/collapse.mjs'
-import { BackToAccountButton, Choice } from './shared.mjs'
+import { BackToAccountButton } from './shared.mjs'
 import {
   StringInput,
   MarkdownInput,
@@ -28,9 +23,6 @@ import {
   OkIcon,
   NoIcon,
   TrashIcon,
-  SettingsIcon,
-  DownloadIcon,
-  PageIcon,
   PlusIcon,
   CameraIcon,
   EditIcon,
@@ -42,9 +34,7 @@ import {
 import { DisplayRow } from './shared.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import Markdown from 'react-markdown'
-import { Tab } from './bio.mjs'
 import Timeago from 'react-timeago'
-import { Spinner } from 'shared/components/spinner.mjs'
 import { TableWrapper } from 'shared/components/wrappers/table.mjs'
 import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
@@ -383,9 +373,6 @@ export const PatternCard = ({
   useA = false,
   size = 'md',
 }) => {
-  // Hooks
-  const { t } = useTranslation(['sets'])
-
   const sizes = {
     lg: 96,
     md: 52,
@@ -441,7 +428,6 @@ export const Patterns = () => {
   const { locale } = router
 
   // Hooks
-  const { account } = useAccount()
   const backend = useBackend()
   const { t } = useTranslation(ns)
   const { setLoadingStatus, LoadingStatus, LoadingProgress } = useLoadingStatus()
