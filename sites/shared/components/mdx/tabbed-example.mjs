@@ -1,4 +1,4 @@
-import { Tab, Tabs } from './tabs.mjs'
+import { Tab, Tabs } from '../tabs.mjs'
 import Md from 'react-markdown'
 import { pluginBundle } from '@freesewing/plugin-bundle'
 import { pluginFlip } from '@freesewing/plugin-flip'

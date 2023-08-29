@@ -11,7 +11,6 @@ import {
   formatMm,
   hasRequiredMeasurements,
   capitalize,
-  scrollTo,
   horFlexClasses,
 } from 'shared/utils.mjs'
 import orderBy from 'lodash.orderby'
@@ -26,7 +25,7 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { Tag } from 'shared/components/tag.mjs'
 import { BackToAccountButton } from './shared.mjs'
-import { AnchorLink, PageLink, Link, linkClasses } from 'shared/components/link.mjs'
+import { AnchorLink, PageLink, Link } from 'shared/components/link.mjs'
 import { V3Wip } from 'shared/components/v3-wip.mjs'
 import {
   OkIcon,
@@ -115,14 +114,20 @@ export const MsetCard = ({
   useA = false,
   design = false,
   language = false,
+  size = 'lg',
 }) => {
-  const { t } = useTranslation(ns)
+  const sizes = {
+    lg: 96,
+    md: 52,
+    sm: 36,
+  }
+  const s = sizes[size]
 
   const wrapperProps = {
-    className:
-      'bg-base-300 aspect-square max-h-96 max-w-96 mb-2 mx-auto flex flex-col items-start text-center justify-between rounded-none md:rounded shadow',
+    className: `bg-base-300 aspect-square h-${s} w-${s} mb-2
+      mx-auto flex flex-col items-start text-center justify-between rounded-none md:rounded shadow`,
     style: {
-      backgroundImage: `url(${cloudflareImageUrl({ type: 'w1000', id: set.img })})`,
+      backgroundImage: `url(${cloudflareImageUrl({ type: 'w500', id: set.img })})`,
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       backgroundPosition: '50%',
@@ -131,28 +136,23 @@ export const MsetCard = ({
   if (!set.img || set.img === 'default-avatar')
     wrapperProps.style.backgroundPosition = 'bottom right'
 
-  let note = <span></span>
+  let icon = <span></span>
   if (design) {
     const [hasMeasies] = hasRequiredMeasurements(designMeasurements[design], set.measies, true)
-    const noteClasses =
-      'bg-opacity-90 w-full text-center py-2 font-bold px-2 rounded rounded-b-none leading-4 text-sm'
-    note = hasMeasies ? (
-      <div className={`${noteClasses} bg-success text-success-content`}>
-        {t('setHasMeasiesForDesign', { design: t(`designs:${design}.t`) })}
-      </div>
+    const iconClasses = 'w-8 h-8 p-1 rounded-full -mt-2 -ml-2 shadow'
+    icon = hasMeasies ? (
+      <OkIcon className={`${iconClasses} bg-success text-success-content`} stroke={4} />
     ) : (
-      <div className={`${noteClasses} bg-warning text-warning-content`}>
-        {t('setLacksMeasiesForDesign', { design: t(`designs:${design}.t`) })}
-      </div>
+      <NoIcon className={`${iconClasses} bg-error text-error-content`} stroke={3} />
     )
   }
 
   const inner = (
     <>
-      {note}
-      <h5 className="bg-neutral text-neutral-content px-4 w-full bg-opacity-50 py-2 rounded rounded-t-none">
+      {icon}
+      <span className="bg-neutral text-neutral-content px-4 w-full bg-opacity-50 py-2 rounded rounded-t-none font-bold leading-5">
         {language ? set[`name${capitalize(language)}`] : set.name}
-      </h5>
+      </span>
     </>
   )
 
@@ -786,7 +786,7 @@ export const MsetButton = (props) => <MsetCard {...props} href={false} />
 export const MsetLink = (props) => <MsetCard {...props} onClick={false} useA={false} />
 export const MsetA = (props) => <MsetCard {...props} onClick={false} useA={true} />
 
-export const UserSetPicker = ({ design, t, href, clickHandler }) => {
+export const UserSetPicker = ({ design, t, href, clickHandler, size = 'lg' }) => {
   // Hooks
   const backend = useBackend()
   const { control } = useAccount()
@@ -847,43 +847,25 @@ export const UserSetPicker = ({ design, t, href, clickHandler }) => {
 
   return (
     <>
-      <ul className="list list-inside list-disc ml-4">
-        <li>
-          <button className={linkClasses} onClick={() => scrollTo('ownsets')}>
-            {t('account:ownSets')}
-          </button>
-        </li>
-        <li>
-          <button className={linkClasses} onClick={() => scrollTo('bookmarkedsets')}>
-            {t('account:bookmarkedSets')}
-          </button>
-        </li>
-        <li>
-          <button className={linkClasses} onClick={() => scrollTo('curatedsets')}>
-            {t('account:curatedSets')}
-          </button>
-        </li>
-      </ul>
-      <h3 id="ownsets">{t('yourSets')}</h3>
       {okSets.length > 0 && (
-        <>
-          <h4>{t('account:theseSetsReady')}</h4>
-          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
-            {okSets.map((set) => (
-              <MsetButton
-                {...{ set, control, design }}
-                onClick={clickHandler}
-                href={href}
-                requiredMeasies={measurements[design]}
-                key={set.id}
-              />
-            ))}
-          </div>
-        </>
+        <div className="flex flex-row flex-wrap gap-2">
+          {okSets.map((set) => (
+            <MsetButton
+              {...{ set, control, design }}
+              onClick={clickHandler}
+              href={href}
+              requiredMeasies={measurements[design]}
+              key={set.id}
+              size={size}
+            />
+          ))}
+        </div>
       )}
       {lackingSets.length > 0 && (
         <div className="my-4">
-          <h4>{t('account:someSetsLacking')}</h4>
+          <Popout note compact>
+            {t('account:someSetsLacking')}
+          </Popout>
           <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
             {lackingSets.map((set) => (
               <MsetLink
@@ -891,6 +873,7 @@ export const UserSetPicker = ({ design, t, href, clickHandler }) => {
                 onClick={clickHandler}
                 requiredMeasies={measurements[design]}
                 key={set.id}
+                size={size}
               />
             ))}
           </div>
@@ -900,7 +883,7 @@ export const UserSetPicker = ({ design, t, href, clickHandler }) => {
   )
 }
 
-export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
+export const CuratedSetPicker = ({ design, language, href, clickHandler, size }) => {
   // Hooks
   const backend = useBackend()
   const { t, i18n } = useTranslation('sets')
@@ -997,6 +980,7 @@ export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
             onClick={clickHandler}
             requiredMeasies={measurements[design]}
             language={i18n.language}
+            size={size}
           />
         ))}
       </div>
@@ -1006,15 +990,14 @@ export const CuratedSetPicker = ({ design, language, href, clickHandler }) => {
 
 export const BookmarkedSetPicker = () => <V3Wip />
 
-export const SetPicker = ({ design, href = false, clickHandler = false }) => {
+export const SetPicker = ({ design, href = false, clickHandler = false, size = 'lg' }) => {
   const { t, i18n } = useTranslation('sets')
   const { language } = i18n
 
-  const pickerProps = { design, t, language, href, clickHandler }
+  const pickerProps = { design, t, language, href, clickHandler, size }
 
   return (
     <>
-      <h2>{t('chooseSet')}</h2>
       <UserSetPicker {...pickerProps} />
       <BookmarkedSetPicker {...pickerProps} />
       <CuratedSetPicker {...pickerProps} />
