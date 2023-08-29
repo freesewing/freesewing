@@ -9,6 +9,7 @@ edit: Bewerk
 reset: Reset
 help: Help
 name: Naam
+notes: Notities
 width: Breedte
 height: Hoogte
 length: Lengte
@@ -48,13 +49,33 @@ exportForEditing: Exporteren om te bewerken
 exportAsData: Exporteer als data
 exportPattern-txt: Exporteer een PDF geschikt voor jouw printer, of download dit patroon in verschillende formaten
 exportPattern: Patroon exporteren
-testThis.option: Test deze optie
-testThis.measurement: Test deze meting
 measurements.d: Test het effect van een meting op hoe dit patroon eruit ziet
 designOptions.d: Test het effect van een optie op hoe dit patroon eruit ziet
-testDesignThing: "Test {design}: {thing}"
 yamlEditViewTitleThing: 'Patroonconfiguratie bewerken voor {thing}'
 yamlEditViewError: Problemen met YAML
 yamlEditViewErrorDesc: We hebben je input opgeslagen, maar het werkt misschien niet om de volgende redenen
 saveSettings: Instellingen opslaan
-
+youUseDefaultValue: You are using a custom value
+youUseCustomValue: You are using the default value
+testOptions: Test design options
+testOptionsDesc: Test how the design adapts to changes in a specific desing option
+testMeasurements: Test afmetingen
+testMeasurementsDesc: Test how the design adapts to changes to a specific measurement
+testSets: Test measurements sets
+testSetsDesc: Test how the design adapts across different measurements sets
+testDesignOption: "Test {design} design options: {option}"
+testDesignMeasurement: "Test {design} measurements: {measurement}"
+testDesignSets: "Test {design} across measurements sets"
+addNotes: Add notes
+addSettingsToNotes: Add settings to notes
+bookmarkPattern: Bookmark pattern
+patternSaved: Pattern saved
+patternBookmarkCreated: Pattern bookmark created
+chooseFromOwnSets: Choose one of your own measurements sets
+chooseFromOwnSetsDesc: Pick any of your own measurements sets that have all required measurements to generate this pattern.
+chooseFromBookmarkedSets: Choose one of the measurements sets you've bookmarked
+chooseFromBookmarkedSetsDesc: If you've bookmarked any measurements sets, you can select from those too.
+chooseFromCuratedSets: Choose one of FreeSewing's curated measurements sets
+chooseFromCuratedSetsDesc: If you're just looking to try out our platform, you can select from our list of curated measurements sets.
+editMeasiesByHand: Edit measurements by hand
+editMeasiesByHandDesc: Manually set or override any measurements. These changes will only apply to the current pattern.

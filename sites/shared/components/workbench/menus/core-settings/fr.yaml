@@ -49,4 +49,5 @@ saNo.t: Ne pas inclure la marge de couture
 saNo.d: Cela génère un patron qui ne comprend pas de marge de couture. La taille de la marge de couture n'a pas d'importance car aucune marge de couture ne sera incluse.
 saYes.t: Inclure la marge de couture
 saYes.d: Cela génère un modèle qui comprendra une marge de couture. La taille de la marge de couture est définie individuellement.
-
+clearSettingsNotMeasurements: Clear settings, but keep measurements
+clearSettingsAndMeasurements: Clear settings & Clear measurements
