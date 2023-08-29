@@ -119,6 +119,12 @@ export const ClearIcon = (props) => (
   </IconWrapper>
 )
 
+export const CloneIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 01-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 011.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 00-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 01-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5a3.375 3.375 0 00-3.375-3.375H9.75" />
+  </IconWrapper>
+)
+
 export const CloseIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M6 18L18 6M6 6l12 12" />
@@ -158,6 +164,12 @@ export const ControlIcon = (props) => (
 export const CopyIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+  </IconWrapper>
+)
+
+export const CsetIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
   </IconWrapper>
 )
 
@@ -382,6 +394,12 @@ export const MegaphoneIcon = (props) => (
 export const MenuIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M4 6h16M4 12h16M4 18h16" />
+  </IconWrapper>
+)
+
+export const MsetIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
   </IconWrapper>
 )
 

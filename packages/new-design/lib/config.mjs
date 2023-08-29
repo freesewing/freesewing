@@ -112,7 +112,7 @@ playwright-report
       'shared/components/lightbox.mjs',
       'shared/components/loader.mjs',
       'shared/components/modal.mjs',
-      'shared/components/page-link.mjs',
+      'shared/components/link.mjs',
       'shared/components/picker.mjs',
       'shared/components/popout.mjs',
       'shared/components/raw-span.mjs',

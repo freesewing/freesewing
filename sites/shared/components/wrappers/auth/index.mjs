@@ -5,11 +5,13 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { roles } from 'config/roles.mjs'
 import { useEffect, useState } from 'react'
 import { Loading } from 'shared/components/spinner.mjs'
+import { horFlexClasses } from 'shared/utils.mjs'
+import { LockIcon, PlusIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['auth']
 
 const Wrap = ({ children }) => (
-  <div className="m-auto max-w-xl text-center mt-24 p-8">{children}</div>
+  <div className="m-auto max-w-xl text-center mt-8 p-8">{children}</div>
 )
 
 const ContactSupport = ({ t }) => (
@@ -23,13 +25,15 @@ const ContactSupport = ({ t }) => (
 const AuthRequired = ({ t, banner }) => (
   <Wrap>
     {banner}
-    <h1>{t('authRequired')}</h1>
+    <h2>{t('authRequired')}</h2>
     <p>{t('membersOnly')}</p>
-    <div className="flex flex-row items-center justify-center gap-4 mt-8">
-      <Link href="/signup" className="btn btn-primary w-32">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-8">
+      <Link href="/signup" className={`${horFlexClasses} btn btn-secondary w-full`}>
+        <PlusIcon />
         {t('signUp')}
       </Link>
-      <Link href="/signin" className="btn btn-primary btn-outline w-32">
+      <Link href="/signin" className={`${horFlexClasses} btn btn-secondary btn-outline w-full`}>
+        <LockIcon />
         {t('signIn')}
       </Link>
     </div>

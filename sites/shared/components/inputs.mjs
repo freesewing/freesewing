@@ -15,13 +15,14 @@ import { ResetIcon, DocsIcon, UploadIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { isDegreeMeasurement } from 'config/measurements.mjs'
 import { measurementAsMm, measurementAsUnits, parseDistanceInput } from 'shared/utils.mjs'
+import { Tabs, Tab } from 'shared/components/tabs.mjs'
 
 export const ns = ['account', 'measurements', 'designs']
 
 /*
  * Helper component to display a tab heading
  */
-export const Tab = ({
+export const _Tab = ({
   id, // The tab ID
   label, // A label for the tab, if not set we'll use the ID
   activeTab, // Which tab (id) is active
@@ -424,18 +425,11 @@ export const MarkdownInput = ({
   id = '', // An id to tie the input to the label
   labelBL = false, // Bottom-Left label
   labelBR = false, // Bottom-Right label
-}) => {
-  const [activeTab, setActiveTab] = useState('edit')
-
-  return (
-    <FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
-      <div className="tabs w-full">
-        {['edit', 'preview'].map((tab) => (
-          <Tab id={tab} key={tab} label={tab} {...{ activeTab, setActiveTab }} />
-        ))}
-      </div>
-      <div className="flex flex-row items-center mt-4">
-        {activeTab === 'edit' ? (
+}) => (
+  <FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
+    <Tabs tabs={['edit', 'preview']}>
+      <Tab key="edit">
+        <div className="flex flex-row items-center mt-4">
           <textarea
             id={id}
             rows="5"
@@ -444,15 +438,16 @@ export const MarkdownInput = ({
             placeholder={placeholder}
             onChange={(evt) => update(evt.target.value)}
           />
-        ) : (
-          <div className="text-left px-4 border w-full">
-            <Markdown>{current}</Markdown>
-          </div>
-        )}
-      </div>
-    </FormControl>
-  )
-}
+        </div>
+      </Tab>
+      <Tab key="preview">
+        <div className="flex flex-row items-center mt-4">
+          <Markdown>{current}</Markdown>
+        </div>
+      </Tab>
+    </Tabs>
+  </FormControl>
+)
 
 export const MeasieInput = ({
   imperial, // True for imperial, False for metric

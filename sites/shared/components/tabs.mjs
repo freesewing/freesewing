@@ -4,8 +4,12 @@ export const Tabs = ({ tabs = '', active = 0, children }) => {
   // Keep active tab in state
   const [activeTab, setActiveTab] = useState(active)
 
-  // Parse tab list
-  const tablist = tabs.split(',').map((tab) => tab.trim())
+  /*
+   * Parse tab list
+   * Comma-seperated tabs passed as a string are how it works in MDX
+   */
+  const tablist = Array.isArray(tabs) ? tabs : tabs.split(',').map((tab) => tab.trim())
+
   if (!tablist) return null
 
   // Pass down activeTab and tabId for conditional rendering
@@ -19,7 +23,7 @@ export const Tabs = ({ tabs = '', active = 0, children }) => {
         {tablist.map((title, tabId) => (
           <button
             key={tabId}
-            className={`text-xl font-bold capitalize tab h-auto tab-bordered grow ${
+            className={`text-lg font-bold capitalize tab h-auto tab-bordered grow py-2 ${
               activeTab === tabId ? 'tab-active' : ''
             }`}
             onClick={() => setActiveTab(tabId)}

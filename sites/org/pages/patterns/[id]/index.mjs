@@ -1,18 +1,23 @@
 // Dependencies
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { nsMerge } from 'shared/utils.mjs'
+// Hooks
+import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
+import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
+import { ns as patternsNs } from 'shared/components/account/patterns.mjs'
 
-// Translation namespaces used on this page (errors comes from the dynamic import)
-const ns = [...pageNs, 'errors']
+// Translation namespaces used on this page
+const ns = nsMerge(patternsNs, authNs, pageNs, 'status')
 
 /*
  * Some things should never generated as SSR
  * So for these, we run a dynamic import and disable SSR rendering
  */
 const DynamicPattern = dynamic(
-  () => import('shared/components/pattern/manage.mjs').then((mod) => mod.ManagePattern),
+  () => import('shared/components/account/patterns.mjs').then((mod) => mod.Pattern),
   { ssr: false }
 )
 
@@ -22,13 +27,17 @@ const DynamicPattern = dynamic(
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const ViewPatternPage = ({ page, id }) => (
-  <PageWrapper {...page}>
-    <DynamicPattern id={id} />
-  </PageWrapper>
-)
+const PatternPage = ({ page, id }) => {
+  const { t } = useTranslation(ns)
 
-export default ViewPatternPage
+  return (
+    <PageWrapper {...page} title={`${t('patterns')}: #${id}`}>
+      <DynamicPattern id={id} publicOnly />
+    </PageWrapper>
+  )
+}
+
+export default PatternPage
 
 export async function getStaticProps({ locale, params }) {
   return {
@@ -37,7 +46,7 @@ export async function getStaticProps({ locale, params }) {
       id: params.id,
       page: {
         locale,
-        path: ['patterns', params.id],
+        path: ['account', 'patterns', params.id],
       },
     },
   }
@@ -46,13 +55,6 @@ export async function getStaticProps({ locale, params }) {
 /*
  * getStaticPaths() is used to specify for which routes (think URLs)
  * this page should be used to generate the result.
- *
- * On this page, it is not returning a list, but rather sets fallback to true.
- * This will cause the page to be generated the first time it's requested.
+ * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
-export async function getStaticPaths() {
-  return {
-    paths: [],
-    fallback: true,
-  }
-}
+export const getStaticPaths = async () => ({ paths: [], fallback: true })

@@ -74,7 +74,7 @@ const itemClasses = 'flex flex-row items-center justify-between bg-opacity-10 p-
 
 const AccountLink = ({ href, title, children }) => (
   <Link
-    className={`${itemClasses} hover:bg-secondary hover:bg-opacity-10`}
+    className={`${itemClasses} hover:bg-secondary hover:bg-opacity-10 max-w-md`}
     href={href}
     title={title}
   >
@@ -182,7 +182,7 @@ export const AccountLinks = () => {
                 </AccountLink>
               )
             )}
-            <div className={`${itemClasses} bg-neutral`}>
+            <div className={`${itemClasses} bg-neutral max-w-md`}>
               <div className="flex flex-row items-center gap-3 font-medium">
                 <FingerprintIcon />
                 <span>{t('userId')}</span>
