@@ -99,6 +99,7 @@ controlTitle: '¿Qué experiencia de usuario prefieres?'
 #img
 imgTitle: '¿Qué tal una foto?'
 imgDragAndDropImageHere: Arrastra y suelta una imagen aquí
+imgPasteUrlHere: Paste an image location (url) here
 imgSelectImage: Selecciona una imagen
 #newsletter
 newsletterTitle: '¿Quieres recibir el boletín de FreeSewing?'
@@ -113,6 +114,7 @@ imperialUnitsd: Elige esta opción si prefieres las pulgadas a los centímetros.
 unitsTitle: '¿Qué unidades prefieres?'
 #username
 usernameTitle: '¿Qué nombre de usuario te gustaría?'
+usernameAvailable: Username is available
 usernameNotAvailable: El nombre de usuario no está disponible
 #email
 emailTitle: '¿Dónde podemos localizarte en caso de que tengamos una buena razón para ello (como cuando olvidaste tu contraseña)?'
@@ -152,8 +154,26 @@ cancel: Cancelar
 keySecretWarning: Esta es la única vez que puedes ver la clave secreta, asegúrate de copiarla.
 keyExpired: Esta clave API ha caducado
 deleteKeyWarning: Eliminar una clave API no se puede deshacer.
+keyDocsTitle: Refer to FreeSewing.dev for documentation on using API keys (English only)
+keyDocsMsg: This is an advanced feature aimed at developers or anyone who wants to interact with our backend directly.
+apiCalls: API Calls
+#bookmarks
+newBookmark: Add a Bookmark
+bookmark: Bookmark
+bookmarks: Bookmarks
+type: Tipo
+location: Location
+title: Título
 new: Nuevo
+designBookmark: Diseños
+patternBookmark: Patrones
+setBookmark: Conjuntos de medidas
+csetBookmark: Curated Measurements Sets
+docBookmark: Documentación
+customBookmark: Custom Bookmarks
+yourBookmarks: Your bookmarks
 #sets
+set: Measurements Set
 name: Nombre
 setNameDesc: Un nombre para identificar este conjunto de medidas
 setNewInfo: Crea un nuevo conjunto de medidas que luego podrás utilizar para generar patrones.
@@ -173,6 +193,29 @@ privateSet: Conjunto de medidas privadas
 publicSetDesc: A otros se les permite utilizar estas mediciones para generar o probar patrones
 privateSetDesc: Estas medidas no pueden ser utilizadas por otros usuarios o visitantes
 permalink: Permalink
+editThing: Editar {thing}
+saveThing: Guardar {thing}
+filterByDesign: Filter by design
+noFilter: Do not filter
+filterByDesignDocs: If you have a specific design in mind, you can <b>filter by design</b> to only list those measurements that are required for this design.
+setLacksMeasiesForDesign: This set lacks measurements required for this pattern
+setHasMeasiesForDesign: This set has all measurements required for this pattern
+someSetsLacking: Some of your sets lack the measurments required to generate this pattern
+theseSetsReady: These sets have all required measurments to generate this pattern
+chooseSet: Elige una serie de medidas
+patternForWhichSet: '¿Para qué conjunto de medidas debemos generar un patrón?'
+bookmarkedSets: Conjuntos de medidas que has marcado como favoritos
+curatedSets: FreeSewing's curated measurements sets
+curatedSetsAbout: Conjuntos de medidas curadas por FreeSewing que puedes utilizar para probar nuestra plataforma, o tus diseños.
+curateCuratedSets: Curate our selection of curated measurements sets
+useThisSet: Utiliza este conjunto de medidas
+ownSets: Your own measurements sets
+noOwnSets: You do not have any of your own measurements sets (yet)
+pleaseMtm: Because made-to-measure lies at the heart of what we do, we strongly suggest you take accurate measurements.
+noOwnSetsMsg: You can store your measurements as a measurements set, after which you can generate as many patterns as you want for them.
+measurements: Medidas
+chooseASet: Choose a measurements set
+showImage: Show image
 patternNew: Generar un nuevo patrón
 patternNewInfo: Elige un diseño, añade tu juego de medidas y generaremos un patrón de costura a medida para ti.
 designNew: Crear un nuevo diseño
@@ -192,3 +235,5 @@ websiteTitle: Do you have a website or other URL you'd like to add?
 platformTitle: Who are you on { platform }?
 platformWhy: We do not use this data in any way. This is only here so FreeSewing users can connect the dots across platforms.
 security: Security
+revealPassword: Reveal password
+hidePassword: Hide password
