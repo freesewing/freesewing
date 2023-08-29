@@ -49,4 +49,5 @@ saNo.t: No incluyas el margen de costura
 saNo.d: Esto genera un patrón que no incluye ningún margen de costura. El tamaño del margen de costura no importa, ya que no se incluirá ningún margen de costura.
 saYes.t: Incluir margen de costura
 saYes.d: Esto genera un patrón que incluirá el margen de costura. El tamaño del margen de costura se ajusta individualmente.
-
+clearSettingsNotMeasurements: Clear settings, but keep measurements
+clearSettingsAndMeasurements: Clear settings & Clear measurements
