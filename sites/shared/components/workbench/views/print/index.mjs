@@ -5,17 +5,17 @@ import {
   handleExport,
   ns as exportNs,
 } from 'shared/components/workbench/exporting/export-handler.mjs'
+import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 import get from 'lodash.get'
 import { MovablePattern } from 'shared/components/workbench/pattern/movable/index.mjs'
 import { PrintMenu, ns as menuNs } from './menu.mjs'
 import { defaultPrintSettings, printSettingsPath } from './config.mjs'
 import { PrintIcon, RightIcon } from 'shared/components/icons.mjs'
 import { LoadingContext } from 'shared/context/loading-context.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
 import { PatternWithMenu, ns as wrapperNs } from '../pattern-with-menu.mjs'
 import { nsMerge } from 'shared/utils.mjs'
 
-export const ns = nsMerge(menuNs, wrapperNs, exportNs, 'print')
+export const ns = nsMerge(menuNs, wrapperNs, exportNs, 'print', 'status')
 
 export const PrintView = ({
   design,
@@ -32,7 +32,7 @@ export const PrintView = ({
 }) => {
   const { t } = useTranslation(ns)
   const loading = useContext(LoadingContext)
-  const toast = useToast()
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   const defaultSettings = defaultPrintSettings(settings.units)
   // add the pages plugin to the draft
@@ -53,6 +53,7 @@ export const PrintView = ({
   }
 
   const exportIt = () => {
+    setLoadingStatus([true, 'generatingPdf'])
     handleExport({
       format: pageSettings.size,
       settings,
@@ -62,54 +63,59 @@ export const PrintView = ({
       ui,
       startLoading: loading.startLoading,
       stopLoading: loading.stopLoading,
-      onComplete: () => {},
-      onError: (err) => toast.error(err.message),
+      onComplete: () => {
+        setLoadingStatus([true, 'pdfReady', true, true])
+      },
+      onError: (err) => setLoadingStatus([true, 'pdfFailed', true, true]),
     })
   }
 
   return (
-    <PatternWithMenu
-      noHeader
-      {...{
-        settings,
-        ui,
-        update,
-        control: account.control,
-        account,
-        design,
-        setSettings,
-        title: (
-          <h2 className="text-center lg:text-left capitalize">{t('workbench:printLayout')}</h2>
-        ),
-        pattern: (
-          <MovablePattern
-            {...{
-              renderProps,
-              update,
-              immovable: ['pages'],
-              layoutPath: ['layouts', 'print'],
-              showButtons: !ui.hideMovableButtons,
-            }}
-          />
-        ),
-        menu: (
-          <PrintMenu
-            {...{
-              design,
-              pattern,
-              patternConfig,
-              setSettings,
-              settings,
-              ui,
-              update,
-              language,
-              account,
-              DynamicDocs,
-              exportIt,
-            }}
-          />
-        ),
-      }}
-    />
+    <>
+      <LoadingStatus />
+      <PatternWithMenu
+        noHeader
+        {...{
+          settings,
+          ui,
+          update,
+          control: account.control,
+          account,
+          design,
+          setSettings,
+          title: (
+            <h2 className="text-center lg:text-left capitalize">{t('workbench:printLayout')}</h2>
+          ),
+          pattern: (
+            <MovablePattern
+              {...{
+                renderProps,
+                update,
+                immovable: ['pages'],
+                layoutPath: ['layouts', 'print'],
+                showButtons: !ui.hideMovableButtons,
+              }}
+            />
+          ),
+          menu: (
+            <PrintMenu
+              {...{
+                design,
+                pattern,
+                patternConfig,
+                setSettings,
+                settings,
+                ui,
+                update,
+                language,
+                account,
+                DynamicDocs,
+                exportIt,
+              }}
+            />
+          ),
+        }}
+      />
+    </>
   )
 }
