@@ -75,14 +75,6 @@ export const PrintActions = ({ update, ui, exportIt }) => {
           ],
         ]}
       />
-      <div className="mt-2 mb-4">
-        <div className="flex justify-evenly flex-col lg:flex-row">
-          <button className="btn btn-primary" onClick={exportIt}>
-            <ExportIcon />
-            <span className="ml-2">{t('export')}</span>
-          </button>
-        </div>
-      </div>
     </>
   )
 }
