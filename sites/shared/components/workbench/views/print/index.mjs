@@ -13,30 +13,10 @@ import { PrintIcon, RightIcon } from 'shared/components/icons.mjs'
 import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { useToast } from 'shared/hooks/use-toast.mjs'
 import { PatternWithMenu, ns as wrapperNs } from '../pattern-with-menu.mjs'
-import { V3Wip } from 'shared/components/v3-wip.mjs'
+import { nsMerge } from 'shared/utils.mjs'
 
-const viewNs = ['print', ...exportNs]
-export const ns = [...viewNs, ...menuNs, ...wrapperNs]
+export const ns = nsMerge(menuNs, wrapperNs, exportNs, 'print')
 
-const PageCounter = ({ pattern }) => {
-  const pages = pattern.setStores[0].get('pages', {})
-  const { cols, rows, count } = pages
-
-  return (
-    <div className="flex flex-row font-bold items-center text-2xl justify-center ">
-      <PrintIcon />
-      <span className="ml-2">{count}</span>
-      <span className="mx-6 opacity-50">|</span>
-      <RightIcon />
-      <span className="ml-2">{cols}</span>
-      <span className="mx-6 opacity-50">|</span>
-      <div className="rotate-90">
-        <RightIcon />
-      </div>
-      <span className="ml-2">{rows}</span>
-    </div>
-  )
-}
 export const PrintView = ({
   design,
   pattern,
@@ -89,6 +69,7 @@ export const PrintView = ({
 
   return (
     <PatternWithMenu
+      noHeader
       {...{
         settings,
         ui,
@@ -98,12 +79,7 @@ export const PrintView = ({
         design,
         setSettings,
         title: (
-          <div className="flex lg:justify-between items-baseline flex-wrap px-2">
-            <h2 className="text-center lg:text-left capitalize">
-              {t('layoutThing', { thing: design }) + ' ' + t('forPrinting')}
-            </h2>
-            <PageCounter pattern={pattern} />
-          </div>
+          <h2 className="text-center lg:text-left capitalize">{t('workbench:printLayout')}</h2>
         ),
         pattern: (
           <MovablePattern
@@ -117,24 +93,21 @@ export const PrintView = ({
           />
         ),
         menu: (
-          <>
-            <V3Wip />
-            <PrintMenu
-              {...{
-                design,
-                pattern,
-                patternConfig,
-                setSettings,
-                settings,
-                ui,
-                update,
-                language,
-                account,
-                DynamicDocs,
-                exportIt,
-              }}
-            />
-          </>
+          <PrintMenu
+            {...{
+              design,
+              pattern,
+              patternConfig,
+              setSettings,
+              settings,
+              ui,
+              update,
+              language,
+              account,
+              DynamicDocs,
+              exportIt,
+            }}
+          />
         ),
       }}
     />

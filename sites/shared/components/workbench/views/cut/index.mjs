@@ -68,6 +68,7 @@ export const CutView = ({
 
   return (
     <PatternWithMenu
+      noHeader
       {...{
         settings,
         ui,

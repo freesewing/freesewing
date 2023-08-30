@@ -1,6 +1,15 @@
 import { useTranslation } from 'next-i18next'
-import { ClearIcon, ExportIcon } from 'shared/components/icons.mjs'
-import { ShowButtonsToggle } from 'shared/components/workbench/pattern/movable/transform-buttons.mjs'
+import { SubAccordion } from 'shared/components/accordion.mjs'
+import {
+  WarningIcon,
+  ResetIcon,
+  ExportIcon,
+  LeftRightIcon,
+  BoolYesIcon,
+  BoolNoIcon,
+} from 'shared/components/icons.mjs'
+import { ListInput } from 'shared/components/inputs.mjs'
+import { horFlexClasses } from 'shared/utils.mjs'
 
 export const ns = ['workbench', 'print']
 
@@ -11,18 +20,67 @@ export const PrintActions = ({ update, ui, exportIt }) => {
   const resetLayout = () => update.ui(['layouts', 'print'])
 
   return (
-    <div className="mt-2 mb-4">
-      <div className="flex justify-evenly flex-col lg:flex-row">
-        <ShowButtonsToggle update={update} ui={ui} />
-        <button className="btn btn-primary btn-outline" onClick={resetLayout}>
-          <ClearIcon />
-          <span className="ml-2">{t('reset')}</span>
-        </button>
-        <button className="btn btn-primary" onClick={exportIt}>
-          <ExportIcon />
-          <span className="ml-2">{t('export')}</span>
-        </button>
+    <>
+      <SubAccordion
+        items={[
+          [
+            <div className="w-full flex flex-row gap2 justify-between">
+              <div className="flex flex-row items-center gap-2">
+                <LeftRightIcon />
+                <span>{t('workbench:partTransfo')}</span>
+              </div>
+              {ui.hideMovableButtons ? <BoolNoIcon /> : <BoolYesIcon />}
+            </div>,
+            <ListInput
+              update={() => update.ui('hideMovableButtons', ui.hideMovableButtons ? false : true)}
+              label={
+                <span className="text-base font-normal">{t('workbench:partTransfoDesc')}</span>
+              }
+              list={[
+                {
+                  val: true,
+                  label: t('workbench:partTransfoNo'),
+                  desc: t('workbench:partTransfoNoDesc'),
+                },
+                {
+                  val: false,
+                  label: t('workbench:partTransfoYes'),
+                  desc: t('workbench:partTransfoYesDesc'),
+                },
+              ]}
+              current={ui.hideMovableButtons ? true : false}
+            />,
+          ],
+          [
+            <div className="w-full flex flex-row gap2 justify-between">
+              <div className="flex flex-row items-center gap-2">
+                <ResetIcon />
+                <span>{t('workbench:resetPrintLayout')}</span>
+              </div>
+              <WarningIcon />
+            </div>,
+
+            <>
+              <p>{t('workbench:resetPrintLayoutDesc')}</p>
+              <button
+                className={`${horFlexClasses} btn btn-warning btn-outline w-full`}
+                onClick={resetLayout}
+              >
+                <ResetIcon />
+                <span>{t('workbench:resetPrintLayout')}</span>
+              </button>
+            </>,
+          ],
+        ]}
+      />
+      <div className="mt-2 mb-4">
+        <div className="flex justify-evenly flex-col lg:flex-row">
+          <button className="btn btn-primary" onClick={exportIt}>
+            <ExportIcon />
+            <span className="ml-2">{t('export')}</span>
+          </button>
+        </div>
       </div>
-    </div>
+    </>
   )
 }

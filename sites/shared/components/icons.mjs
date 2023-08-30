@@ -24,6 +24,10 @@ export const IconWrapper = ({
     <> {children} </>
   )
 
+// Used in several icons
+const page =
+  'M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z'
+
 export const BeakerIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M9.75 3.104v5.714a2.25 2.25 0 01-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 014.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0112 15a9.065 9.065 0 00-6.23-.693L5 14.5m14.8.8l1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0112 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5" />
@@ -42,8 +46,12 @@ export const BookmarkIcon = (props) => (
   </IconWrapper>
 )
 
-export const BoolNoIcon = () => <NoIcon className="w-4 h-4 text-error" stroke={3} />
-export const BoolYesIcon = () => <OkIcon className="w-4 h-4 text-success" stroke={4} />
+export const BoolNoIcon = ({ size = 6 }) => (
+  <NoIcon className={`w-${size} h-${size} text-error`} stroke={3} />
+)
+export const BoolYesIcon = ({ size = 6 }) => (
+  <OkIcon className={`w-${size} h-${size} text-success`} stroke={4} />
+)
 
 export const BoxIcon = (props) => (
   <IconWrapper {...props}>
@@ -170,6 +178,15 @@ export const CopyIcon = (props) => (
   </IconWrapper>
 )
 
+export const CoverPageIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d={page} />
+    <circle cx="9" cy="12" r="1" />
+    <circle cx="14" cy="12" r="1" />
+    <path d="M 9 16 C 11 18 12 18 14 16" />
+  </IconWrapper>
+)
+
 export const CsetIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
@@ -180,6 +197,16 @@ export const CuratedMeasurementsSetIcon = CsetIcon
 export const CutIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M7.848 8.25l1.536.887M7.848 8.25a3 3 0 11-5.196-3 3 3 0 015.196 3zm1.536.887a2.165 2.165 0 011.083 1.839c.005.351.054.695.14 1.024M9.384 9.137l2.077 1.199M7.848 15.75l1.536-.887m-1.536.887a3 3 0 11-5.196 3 3 3 0 015.196-3zm1.536-.887a2.165 2.165 0 001.083-1.838c.005-.352.054-.695.14-1.025m-1.223 2.863l2.077-1.199m0-3.328a4.323 4.323 0 012.068-1.379l5.325-1.628a4.5 4.5 0 012.48-.044l.803.215-7.794 4.5m-2.882-1.664A4.331 4.331 0 0010.607 12m3.736 0l7.794 4.5-.802.215a4.5 4.5 0 01-2.48-.043l-5.326-1.629a4.324 4.324 0 01-2.068-1.379M14.343 12l-2.882 1.664" />
+  </IconWrapper>
+)
+
+export const CuttingLayoutIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d={page} />
+    <path
+      d="M7.848 8.25l1.536.887M7.848 8.25a3 3 0 11-5.196-3 3 3 0 015.196 3zm1.536.887a2.165 2.165 0 011.083 1.839c.005.351.054.695.14 1.024M9.384 9.137l2.077 1.199M7.848 15.75l1.536-.887m-1.536.887a3 3 0 11-5.196 3 3 3 0 015.196-3zm1.536-.887a2.165 2.165 0 001.083-1.838c.005-.352.054-.695.14-1.025m-1.223 2.863l2.077-1.199m0-3.328a4.323 4.323 0 012.068-1.379l5.325-1.628a4.5 4.5 0 012.48-.044l.803.215-7.794 4.5m-2.882-1.664A4.331 4.331 0 0010.607 12m3.736 0l7.794 4.5-.802.215a4.5 4.5 0 01-2.48-.043l-5.326-1.629a4.324 4.324 0 01-2.068-1.379M14.343 12l-2.882 1.664"
+      transform="rotate(-90) scale(0.6) translate(-35 8)"
+    />
   </IconWrapper>
 )
 
@@ -359,6 +386,12 @@ export const LeftIcon = (props) => (
   </IconWrapper>
 )
 
+export const LeftRightIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+  </IconWrapper>
+)
+
 export const LinkIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
@@ -477,9 +510,30 @@ export const OptionsIcon = (props) => (
   </IconWrapper>
 )
 
+export const PageMarginIcon = (props) => (
+  <IconWrapper {...props}>
+    <path
+      d="M 4.5 2.5 v 19.2 h 15 v -13.3 h-3 v 10.3 h-9 v-13.2 h 6 v-3 z"
+      strokeWidth={0.1}
+      stroke="none"
+      fill="currentColor"
+      fillOpacity="0.666"
+    />
+    <path d={page} />
+  </IconWrapper>
+)
+
+export const PageOrientationIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d={page} transform="scale(-1 1) translate(-21 0)" />
+    <path d="M 16.5 7.75 h 5 v 14 h-5" />
+  </IconWrapper>
+)
+
 export const PageSizeIcon = (props) => (
   <IconWrapper {...props}>
-    <path d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
+    <path d={page} />
+    <path d={page} transform="scale(0.666) translate(3, 11)" />
   </IconWrapper>
 )
 

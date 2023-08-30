@@ -2,6 +2,7 @@ import { useTranslation } from 'next-i18next'
 import { PanZoomPattern } from 'shared/components/workbench/pan-zoom-pattern.mjs'
 import { TestMenu, ns as menuNs } from './menu.mjs'
 import { PatternWithMenu, ns as wrapperNs } from '../pattern-with-menu.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 
 export const ns = [...menuNs, wrapperNs]
 
@@ -23,6 +24,7 @@ export const TestView = ({
 
   const renderProps = pattern.getRenderProps()
   const patternConfig = pattern.getConfig()
+  let placeholder = false
 
   /*
    * Translation of the title needs some work
@@ -41,6 +43,16 @@ export const TestView = ({
       design,
       thing: 'fixme views/test/index.mjs',
     })
+  else {
+    title = t('workbench:chooseATest')
+    placeholder = (
+      <Popout tip>
+        <p>{t('workbench:chooseATestDesc')}</p>
+        <p className="hidden md:block">{t('workbench:chooseATestMenuMsg')}</p>
+        <p className="block md:hidden">{t('workbench:chooseATestMenuMobileMsg')}</p>
+      </Popout>
+    )
+  }
 
   return (
     <PatternWithMenu
@@ -53,7 +65,7 @@ export const TestView = ({
         design,
         setSettings,
         title: <h2>{title}</h2>,
-        pattern: <PanZoomPattern {...{ renderProps }} />,
+        pattern: placeholder ? placeholder : <PanZoomPattern {...{ renderProps }} />,
         menu: (
           <TestMenu
             {...{
