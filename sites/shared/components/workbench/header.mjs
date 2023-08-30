@@ -19,6 +19,7 @@ import {
 } from 'shared/components/icons.mjs'
 import Link from 'next/link'
 import { MenuWrapper } from 'shared/components/workbench/menus/shared/menu-wrapper.mjs'
+import { isProduction } from 'shared/config/freesewing.config.mjs'
 
 export const ns = ['workbench', 'sections']
 
@@ -109,13 +110,15 @@ const NavIcons = ({ setView, setDense, dense, view }) => {
       >
         <PrintIcon className={iconSize} />
       </NavButton>
-      <NavButton
-        onClick={() => setView('cut')}
-        label={t('workbench:cutLayout')}
-        active={view === 'cut'}
-      >
-        <CutIcon className={iconSize} />
-      </NavButton>
+      {!isProduction && (
+        <NavButton
+          onClick={() => setView('cut')}
+          label={t('workbench:cutLayout')}
+          active={view === 'cut'}
+        >
+          <CutIcon className={iconSize} />
+        </NavButton>
+      )}
       <NavButton
         onClick={() => setView('save')}
         label={t('workbench:savePattern')}

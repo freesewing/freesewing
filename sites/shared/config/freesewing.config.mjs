@@ -4,6 +4,8 @@
  */
 import { social } from '../../../config//social.mjs'
 
+export const isProdcution = process?.env?.VERCEL_ENV === 'production'
+
 export const freeSewingConfig = {
   monorepo: 'https://github.com/freesewing/freesewing',
   backend: process.env.NEXT_PUBLIC_BACKEND || 'https://backend3.freesewing.org',

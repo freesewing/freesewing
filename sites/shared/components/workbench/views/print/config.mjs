@@ -6,6 +6,7 @@ import {
   CoverPageIcon,
   CuttingLayoutIcon,
 } from 'shared/components/icons.mjs'
+import { isProduction } from 'shared/config/freesewing.config.mjs'
 
 export const printSettingsPath = ['print', 'pages']
 
@@ -69,6 +70,11 @@ export const loadPrintConfig = (units) => {
     config.size.choiceTitles[s] = s
     config.size.valueTitles[s] = s
   })
+
+  /*
+   * Don't include cutlist in production until it's ready to go
+   */
+  if (isProduction) delete config.cutlist
 
   return config
 }

@@ -37,7 +37,6 @@ const PageCounter = ({ pattern, t, ui, settings }) => {
 export const PrintMenu = ({
   design,
   patternConfig,
-  setSettings,
   settings,
   ui,
   update,

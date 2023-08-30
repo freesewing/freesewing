@@ -65,7 +65,10 @@ export const PrintView = ({
       onComplete: () => {
         setLoadingStatus([true, 'pdfReady', true, true])
       },
-      onError: (err) => setLoadingStatus([true, 'pdfFailed', true, true]),
+      onError: (err) => {
+        setLoadingStatus([true, 'pdfFailed', true, true])
+        console.log(err)
+      },
     })
   }
 

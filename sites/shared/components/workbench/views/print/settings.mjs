@@ -25,7 +25,7 @@ const values = {
       {capitalize(current ? current : config.dflt)}
     </HighlightedValue>
   ),
-  orientation: ({ current, changed, config }) => (
+  orientation: ({ current, changed }) => (
     <HighlightedValue changed={changed}>
       <PatternIcon
         className={`w-6 h-6 text-inherit ${current === 'landscape' ? '-rotate-90' : ''}`}

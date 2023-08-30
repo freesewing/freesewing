@@ -100,3 +100,4 @@ pages: pages
 rows: rows
 columns: columns
 currentPrintLayout: Current print layout
+xTotalPagesSomeBlank: "{total} pages in total but {blank} are blank"

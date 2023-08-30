@@ -1,3 +1,4 @@
+import { Fragment } from 'react'
 import { useTranslation } from 'next-i18next'
 import { SubAccordion } from 'shared/components/accordion.mjs'
 import {
@@ -24,7 +25,7 @@ export const PrintActions = ({ update, ui, exportIt }) => {
       <SubAccordion
         items={[
           [
-            <div className="w-full flex flex-row gap2 justify-between">
+            <div className="w-full flex flex-row gap2 justify-between" key={1}>
               <div className="flex flex-row items-center gap-2">
                 <LeftRightIcon />
                 <span>{t('workbench:partTransfo')}</span>
@@ -32,6 +33,7 @@ export const PrintActions = ({ update, ui, exportIt }) => {
               {ui.hideMovableButtons ? <BoolNoIcon /> : <BoolYesIcon />}
             </div>,
             <ListInput
+              key={2}
               update={() => update.ui('hideMovableButtons', ui.hideMovableButtons ? false : true)}
               label={
                 <span className="text-base font-normal">{t('workbench:partTransfoDesc')}</span>
@@ -52,7 +54,7 @@ export const PrintActions = ({ update, ui, exportIt }) => {
             />,
           ],
           [
-            <div className="w-full flex flex-row gap2 justify-between">
+            <div className="w-full flex flex-row gap2 justify-between" key={1}>
               <div className="flex flex-row items-center gap-2">
                 <ResetIcon />
                 <span>{t('workbench:resetPrintLayout')}</span>
@@ -60,7 +62,7 @@ export const PrintActions = ({ update, ui, exportIt }) => {
               <WarningIcon />
             </div>,
 
-            <>
+            <Fragment key={2}>
               <p>{t('workbench:resetPrintLayoutDesc')}</p>
               <button
                 className={`${horFlexClasses} btn btn-warning btn-outline w-full`}
@@ -69,7 +71,7 @@ export const PrintActions = ({ update, ui, exportIt }) => {
                 <ResetIcon />
                 <span>{t('workbench:resetPrintLayout')}</span>
               </button>
-            </>,
+            </Fragment>,
           ],
         ]}
       />
