@@ -30,6 +30,9 @@ const PageCounter = ({ pattern, t, ui, settings }) => {
           {rows} {t('workbench:rows')}
         </span>
       </div>
+      <div className="flex flex-row flex-wrap items-center italic">
+        ({t('workbench:xTotalPagesSomeBlank', { total: cols * rows, blank: cols * rows - count })})
+      </div>
     </div>
   )
 }
