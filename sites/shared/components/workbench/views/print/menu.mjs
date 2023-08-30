@@ -72,7 +72,7 @@ export const PrintMenu = ({
       name: 'layoutSettings',
       ns: 'workbench',
       icon: <CompareIcon className="w-8 h-8" />,
-      menu: <PrintActions {...menuProps} ui={ui} exportIt={exportIt} />,
+      menu: <PrintActions {...menuProps} ui={ui} />,
     },
   ]
   console.log(ui)

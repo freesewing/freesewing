@@ -4,7 +4,6 @@ import { SubAccordion } from 'shared/components/accordion.mjs'
 import {
   WarningIcon,
   ResetIcon,
-  ExportIcon,
   LeftRightIcon,
   BoolYesIcon,
   BoolNoIcon,
@@ -14,7 +13,7 @@ import { horFlexClasses } from 'shared/utils.mjs'
 
 export const ns = ['workbench', 'print']
 
-export const PrintActions = ({ update, ui, exportIt }) => {
+export const PrintActions = ({ update, ui }) => {
   // get translation for the menu
   const { t } = useTranslation(ns)
 
