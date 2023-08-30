@@ -21,10 +21,10 @@ const DynamicAuthWrapper = dynamic(
   { ssr: false }
 )
 
-const DynamicNewSet = dynamic(
-  () => import('shared/components/account/sets.mjs').then((mod) => mod.NewSet),
-  { ssr: false }
-)
+//const DynamicNewSet = dynamic(
+//  () => import('shared/components/account/sets.mjs').then((mod) => mod.NewSet),
+//  { ssr: false }
+//)
 
 /*
  * Each page MUST be wrapped in the PageWrapper component.

@@ -34,7 +34,6 @@ import {
   ExportIcon,
   CloseIcon,
   ReloadIcon,
-  OkIcon,
   NoIcon,
   PatternIcon,
   BoolYesIcon,

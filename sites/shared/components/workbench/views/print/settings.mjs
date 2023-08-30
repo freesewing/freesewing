@@ -2,7 +2,6 @@ import { PrintIcon } from 'shared/components/icons.mjs'
 import { WorkbenchMenu } from 'shared/components/workbench/menus/shared/index.mjs'
 import { ListInput, BoolInput, MmInput } from 'shared/components/workbench/menus/shared/inputs.mjs'
 import {
-  ListValue,
   BoolValue,
   MmValue,
   HighlightedValue,

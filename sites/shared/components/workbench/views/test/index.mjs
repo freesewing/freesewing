@@ -29,22 +29,23 @@ export const TestView = ({
   /*
    * Translation of the title needs some work
    */
-  let title = t('workbench:testDesignOption', {
-    design,
-    option: t(`${design}:${settings.sample?.option}.t`),
-  })
+  let title = t('workbench:chooseATest')
   if (settings.sample?.type === 'measurement')
     title = t('workbench:testDesignMeasurement', {
       design,
       measurement: t(`measurements:${settings.sample?.measurement}`),
+    })
+  else if (settings.sample?.type === 'option')
+    title = t('workbench:testDesignOption', {
+      design,
+      option: t(`${design}:${settings.sample?.option}.t`),
     })
   else if (settings.sample?.type === 'sets')
     title = t('workbench:testDesignSets', {
       design,
       thing: 'fixme views/test/index.mjs',
     })
-  else {
-    title = t('workbench:chooseATest')
+  else
     placeholder = (
       <Popout tip>
         <p>{t('workbench:chooseATestDesc')}</p>
@@ -52,7 +53,6 @@ export const TestView = ({
         <p className="block md:hidden">{t('workbench:chooseATestMenuMobileMsg')}</p>
       </Popout>
     )
-  }
 
   return (
     <PatternWithMenu

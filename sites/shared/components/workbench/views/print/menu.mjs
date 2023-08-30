@@ -1,6 +1,6 @@
 import { PrintSettings, ns as printMenuNs } from './settings.mjs'
 import { PrintActions } from './actions.mjs'
-import { PrintIcon, CompareIcon, RightIcon } from 'shared/components/icons.mjs'
+import { PrintIcon, CompareIcon } from 'shared/components/icons.mjs'
 import { Accordion } from 'shared/components/accordion.mjs'
 import { useTranslation } from 'next-i18next'
 import { horFlexClasses, capitalize } from 'shared/utils.mjs'
