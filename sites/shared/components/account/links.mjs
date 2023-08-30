@@ -5,7 +5,7 @@ import { useTranslation } from 'next-i18next'
 import Link from 'next/link'
 import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewing.config.mjs'
 import {
-  MeasieIcon,
+  MsetIcon,
   SignoutIcon,
   UserIcon,
   UnitsIcon,
@@ -37,6 +37,8 @@ import {
   OkIcon,
   NoIcon,
   PageIcon,
+  BoolYesIcon,
+  BoolNoIcon,
 } from 'shared/components/icons.mjs'
 import { cloudflareImageUrl, capitalize } from 'shared/utils.mjs'
 import { ControlScore } from 'shared/components/control/score.mjs'
@@ -45,7 +47,7 @@ export const ns = ['account', 'i18n']
 
 const itemIcons = {
   bookmarks: <BookmarkIcon />,
-  sets: <MeasieIcon />,
+  sets: <MsetIcon />,
   patterns: <PageIcon />,
   apikeys: <KeyIcon />,
   username: <UserIcon />,
@@ -82,12 +84,7 @@ const AccountLink = ({ href, title, children }) => (
   </Link>
 )
 
-const YesNo = ({ check }) =>
-  check ? (
-    <OkIcon className="text-success w-6 h-6" stroke={4} />
-  ) : (
-    <NoIcon className="text-error w-6 h-6" stroke={3} />
-  )
+const YesNo = ({ check }) => (check ? <BoolYesIcon /> : <BoolNoIcon />)
 
 export const AccountLinks = () => {
   const { account, signOut, control } = useAccount()
@@ -137,12 +134,7 @@ export const AccountLinks = () => {
     consent: <YesNo check={account.consent} />,
     control: <ControlScore control={account.control} />,
     github: account.data.githubUsername || account.data.githubEmail || <NoIcon />,
-    password:
-      account.passwordType === 'v3' ? (
-        <OkIcon className="text-success w-6 h-6" stroke={4} />
-      ) : (
-        <NoIcon />
-      ),
+    password: account.passwordType === 'v3' ? <BoolYesIcon /> : <NoIcon />,
     mfa: <YesNo check={false} />,
   }
   for (const social of Object.keys(conf.account.fields.identities).filter((i) => i !== 'github'))

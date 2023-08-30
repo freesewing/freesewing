@@ -93,7 +93,7 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
             <Fragment key={1}>
               <div className={horFlexClasses}>
                 <h5 id="curatedsets">{t('workbench:chooseFromCuratedSets')}</h5>
-                <CsetIcon />
+                <CsetIcon className="w-6 h-6 shrink-0" />
               </div>
               <p>{t('workbench:chooseFromCuratedSetsDesc')}</p>
             </Fragment>,
@@ -103,7 +103,7 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
             <Fragment key={1}>
               <div className={horFlexClasses}>
                 <h5 id="editmeasies">{t('workbench:editMeasiesByHand')}</h5>
-                <EditIcon />
+                <EditIcon className="w-6 h-6 shrink-0" />
               </div>
               <p>{t('workbench:editMeasiesByHandDesc')}</p>
             </Fragment>,
