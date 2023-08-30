@@ -175,6 +175,7 @@ export const CsetIcon = (props) => (
     <path d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
   </IconWrapper>
 )
+export const CuratedMeasurementsSetIcon = CsetIcon
 
 export const CutIcon = (props) => (
   <IconWrapper {...props}>
@@ -405,6 +406,7 @@ export const MsetIcon = (props) => (
     <path d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
   </IconWrapper>
 )
+export const MeasurementsSetIcon = MsetIcon
 
 export const MsfIcon = (props) => (
   <IconWrapper {...props}>
@@ -413,6 +415,12 @@ export const MsfIcon = (props) => (
       stroke="none"
       fill="currentColor"
     />
+  </IconWrapper>
+)
+
+export const NewMsetIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M19 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zM4 19.235v-.11a6.375 6.375 0 0112.75 0v.109A12.318 12.318 0 0110.374 21c-2.331 0-4.512-.645-6.374-1.766z" />
   </IconWrapper>
 )
 
@@ -440,6 +448,13 @@ export const OkIcon = (props) => (
   </IconWrapper>
 )
 
+export const OpackIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z" />
+  </IconWrapper>
+)
+export const OptionPackIcon = OpackIcon
+
 export const OpenSourceIcon = (props) => (
   <IconWrapper {...props}>
     <path
@@ -456,12 +471,6 @@ export const OptionsIcon = (props) => (
   </IconWrapper>
 )
 
-export const PageIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
-  </IconWrapper>
-)
-
 export const PageSizeIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2" />
@@ -475,6 +484,18 @@ export const PaperlessIcon = (props) => (
       d="M 22.007133,15.500122 H 1.97864 m 20.028493,-7 H 1.97864 M 15.492887,1.9858756 V 22.014369 m -7,-20.0284934 V 22.014369"
       strokeWidth={props.stroke / 2 || 1.1}
     />
+  </IconWrapper>
+)
+
+export const PatternIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+  </IconWrapper>
+)
+
+export const NewPatternIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
   </IconWrapper>
 )
 

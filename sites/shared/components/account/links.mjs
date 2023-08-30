@@ -36,7 +36,7 @@ import {
   ReloadIcon,
   OkIcon,
   NoIcon,
-  PageIcon,
+  PatternIcon,
   BoolYesIcon,
   BoolNoIcon,
 } from 'shared/components/icons.mjs'
@@ -48,7 +48,7 @@ export const ns = ['account', 'i18n']
 const itemIcons = {
   bookmarks: <BookmarkIcon />,
   sets: <MsetIcon />,
-  patterns: <PageIcon />,
+  patterns: <PatternIcon />,
   apikeys: <KeyIcon />,
   username: <UserIcon />,
   email: <EmailIcon />,
