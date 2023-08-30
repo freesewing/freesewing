@@ -1,4 +1,4 @@
 import { isProduction } from 'shared/freesewing.config.mjs'
 
-export const ProductionWrapper = ({ only = false, not = true, children }) =>
-  !not || only ? children : null
+export const NotInProduction = ({ children }) => (isProduction ? null : children)
+export const OnlyInProduction = ({ children }) => (isProduction ? children : null)
