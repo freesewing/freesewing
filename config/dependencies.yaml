@@ -255,7 +255,7 @@ dev:
     'autoprefixer': '10.4.15'
     'eslint-config-next': *next
     'js-yaml': &jsYaml '4.1.0'
-    'postcss': &postcss '8.4.28'
+    'postcss': &postcss '8.4.29'
     'playwright': '^1.32.3'
     'remark-extract-frontmatter': '3.2.0'
     'remark-mdx-frontmatter': '3.0.0'
