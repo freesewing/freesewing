@@ -30,6 +30,8 @@ import {
   UploadIcon,
   FreeSewingIcon,
   CloneIcon,
+  BoolYesIcon,
+  BoolNoIcon,
 } from 'shared/components/icons.mjs'
 import { DisplayRow } from './shared.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
@@ -157,10 +159,10 @@ export const Pattern = ({ id, publicOnly = false }) => {
             <CameraIcon />
             {t('showImage')}
           </button>
-          {pattern.userId === account.id && (
+          {pattern.userId === account.id && publicOnly && (
             <Link
               href={`/patterns/${pattern.id}/edit`}
-              className={`btn btn-primary ${horFlexClasses}`}
+              className={`btn btn-primary btn-outline ${horFlexClasses}`}
             >
               <FreeSewingIcon /> {t('updatePattern')}
             </Link>
@@ -168,7 +170,7 @@ export const Pattern = ({ id, publicOnly = false }) => {
           {account.username && (
             <Link
               href={`/patterns/${pattern.id}/clone`}
-              className={`btn btn-neutral btn-outline ${horFlexClasses}`}
+              className={`btn btn-primary btn-outline ${horFlexClasses}`}
             >
               <CloneIcon /> {t('clonePattern')}
             </Link>
@@ -179,7 +181,7 @@ export const Pattern = ({ id, publicOnly = false }) => {
                 <>
                   <button
                     onClick={() => setEdit(false)}
-                    className={`btn btn-neutral btn-outline ${horFlexClasses}`}
+                    className={`btn btn-primary btn-outline ${horFlexClasses}`}
                   >
                     <ResetIcon />
                     {t('cancel')}
@@ -193,7 +195,7 @@ export const Pattern = ({ id, publicOnly = false }) => {
                 <>
                   <Link
                     href={`/patterns/${pattern.id}/edit`}
-                    className={`btn btn-neutral ${horFlexClasses}`}
+                    className={`btn btn-primary btn-outline ${horFlexClasses}`}
                   >
                     <FreeSewingIcon /> {t('updatePattern')}
                   </Link>
@@ -226,11 +228,7 @@ export const Pattern = ({ id, publicOnly = false }) => {
         {control >= controlLevels.patterns.public && (
           <>
             <DisplayRow title={t('public')}>
-              {pattern.public ? (
-                <OkIcon className="w-6 h-6 text-success" stroke={4} />
-              ) : (
-                <NoIcon className="w-6 h-6 text-error" stroke={3} />
-              )}
+              {pattern.public ? <BoolYesIcon /> : <BoolNoIcon />}
             </DisplayRow>
             {pattern.public && (
               <DisplayRow title={t('permalink')}>
@@ -544,11 +542,7 @@ export const Patterns = () => {
                   {shortDate(locale, pattern.createdAt, false)}
                 </td>
                 <td className="text-base font-medium">
-                  {pattern.public ? (
-                    <OkIcon className="h-6 w-6 text-success" stroke={4} />
-                  ) : (
-                    <NoIcon className="h-6 w-6 text-error" stroke={3} />
-                  )}
+                  {pattern.public ? <BoolYesIcon /> : <BoolNoIcon />}
                 </td>
               </tr>
             ))}

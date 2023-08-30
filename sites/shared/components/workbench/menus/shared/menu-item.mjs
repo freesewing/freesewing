@@ -216,10 +216,10 @@ export const MenuItemGroup = ({
       : () => <span>¯\_(ツ)_/¯</span>
 
     return [
-      <div className="flex flex-row items-center justify-between" key="a">
-        <div className="flex flex-row items-center gap-4">
+      <div className="flex flex-row items-center justify-between w-full" key="a">
+        <div className="flex flex-row items-center gap-4 w-full">
           <ItemIcon />
-          <h6>{t([`${itemName}.t`, itemName])}</h6>
+          <span className="font-medium">{t([`${itemName}.t`, itemName])}</span>
         </div>
         <div className="font-bold">
           <Value
@@ -280,33 +280,5 @@ export const MenuItemGroup = ({
     ]
   })
 
-  // if it should be wrapped in a collapsible
-  /*
-  if (collapsible) {
-    // props to give to the group title
-    const titleProps = {
-      name,
-      t,
-      emoji: emojis[name] || emojis.groupDflt,
-    }
-    return (
-      <Collapse
-        bottom
-        color={topLevel ? 'primary' : 'secondary'}
-        title={
-          <ItemTitle
-            {...titleProps}
-            current={Icon ? <Icon className="w-6 h-6 text-primary" /> : ''}
-          />
-        }
-        openTitle={<ItemTitle open {...titleProps} />}
-      >
-        {content}
-      </Collapse>
-    )
-  }
-  */
-
-  //otherwise just return the content
   return <SubAccordion items={content.filter((item) => item !== null)} />
 }

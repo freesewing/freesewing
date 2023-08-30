@@ -8,12 +8,14 @@ import Link from 'next/link'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import {
   KeyIcon,
-  MeasieIcon,
+  NewMsetIcon,
   DesignIcon,
-  PageIcon,
+  NewPatternIcon,
   PluginIcon,
   ShowcaseIcon,
   RssIcon,
+  CsetIcon,
+  OpackIcon,
 } from 'shared/components/icons.mjs'
 
 // Translation namespaces used on this page
@@ -24,14 +26,14 @@ const Box = ({ title, Icon, description, href }) => {
   const linkProps = {
     href,
     className:
-      'p-8 -ml-4 -mr-4 md:m-0 rounded-none md:rounded-xl md:shadow hover:bg-secondary bg-base-200 hover:bg-opacity-10',
+      'p-8 -ml-4 -mr-4 md:m-0 rounded-none md:rounded-xl md:shadow hover:bg-secondary bg-base-200 hover:bg-opacity-10 w-full max-w-lg',
   }
 
   const inner = (
     <>
       <h4 className="flex flex-row items-start justify-between w-full m-0 p-0 text-inherit">
         <span>{title}</span>
-        <Icon className="w-12 h-12 -mt-2" />
+        <Icon className="w-12 h-12 -mt-2" stroke={1.5} />
       </h4>
       <div className={`normal-case text-base font-medium text-left pt-2 text-inherit`}>
         {description}
@@ -60,25 +62,47 @@ const NewIndexPage = ({ page }) => {
 
   return (
     <PageWrapper {...page} title={t('new')}>
-      <div className="w-full max-w-xl flex flex-col gap-4">
-        <h2>{t('newBasic')}</h2>
+      <h2>{t('newPopular')}</h2>
+      <div className="w-full max-w-7xl flex flex-row flex-wrap gap-4">
         <Box
           title={t('patternNew')}
-          Icon={PageIcon}
+          Icon={NewPatternIcon}
           description={t('patternNewInfo')}
           href="/new/pattern"
         />
-        <Box title={t('newSet')} Icon={MeasieIcon} description={t('setNewInfo')} href="/new/set" />
-        <h2>{t('newAdvanced')}</h2>
-        <Box
-          title={t('showcaseNew')}
-          Icon={ShowcaseIcon}
-          description={t('showcaseNewInfo')}
-          href="/new/showcase"
-        />
-        <Box title={t('blogNew')} Icon={RssIcon} description={t('blogNewInfo')} href="/new/blog" />
-        {control > 3 ? (
-          <>
+        <Box title={t('newSet')} Icon={NewMsetIcon} description={t('setNewInfo')} href="/new/set" />
+      </div>
+      {control > 3 ? (
+        <>
+          <h2>{t('newShare')}</h2>
+          <div className="w-full max-w-7xl flex flex-row flex-wrap gap-4">
+            <Box
+              title={t('csetNew')}
+              Icon={CsetIcon}
+              description={t('csetNewInfo')}
+              href="/new/cset"
+            />
+            <Box
+              title={t('opackNew')}
+              Icon={OpackIcon}
+              description={t('opackNewInfo')}
+              href="/new/opack"
+            />
+            <Box
+              title={t('showcaseNew')}
+              Icon={ShowcaseIcon}
+              description={t('showcaseNewInfo')}
+              href="/new/showcase"
+            />
+            <Box
+              title={t('blogNew')}
+              Icon={RssIcon}
+              description={t('blogNewInfo')}
+              href="/new/blog"
+            />
+          </div>
+          <h2>{t('newDev')}</h2>
+          <div className="w-full max-w-7xl flex flex-row flex-wrap gap-4">
             <Box
               title={t('newApikey')}
               Icon={KeyIcon}
@@ -97,9 +121,9 @@ const NewIndexPage = ({ page }) => {
               description={t('pluginNewInfo')}
               href="https://freesewing.dev/guides/plugins"
             />
-          </>
-        ) : null}
-      </div>
+          </div>
+        </>
+      ) : null}
     </PageWrapper>
   )
 }

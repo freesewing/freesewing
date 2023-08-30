@@ -10,29 +10,17 @@ import {
   BulletIcon,
   UnitsIcon,
   DetailIcon,
-  IconWrapper,
-  ClearIcon,
   ResetIcon,
   UploadIcon,
   BookmarkIcon,
+  ZoomInIcon,
+  ZoomOutIcon,
 } from 'shared/components/icons.mjs'
 import { shownHeaderSelector } from 'shared/components/wrappers/header.mjs'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 import { capitalize, shortDate } from 'shared/utils.mjs'
 
 export const ns = ['common', 'core-settings', 'ui-settings']
-
-const ZoomInIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
-  </IconWrapper>
-)
-
-const ZoomOutIcon = (props) => (
-  <IconWrapper {...props}>
-    <path d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM13.5 10.5h-6" />
-  </IconWrapper>
-)
 
 const IconButton = ({ Icon, onClick, dflt = true, title, hide = false, extraClasses = '' }) => (
   <div className="tooltip tooltip-bottom tooltip-primary flex items-center" data-tip={title}>
@@ -49,13 +37,13 @@ const IconButton = ({ Icon, onClick, dflt = true, title, hide = false, extraClas
 )
 
 const smZoomClasses =
-  '[.mobile-menubar_&]:btn [.mobile-menubar_&]:btn-secondary [.mobile-menubar_&]:btn-circle [.mobile-menubar_&]:my-2'
+  '[.mobile-menubar_&]:btn [.mobile-menubar_&]:btn-secondary [.mobile-menubar_&]:btn-circle [.mobile-menubar_&]:my-1'
 const ZoomButtons = ({ t, zoomFunctions, zoomed }) => {
   if (!zoomFunctions) return null
   return (
     <div className="flex flex-col lg:flex-row items-center lg:content-center lg:gap-4">
       <IconButton
-        Icon={ClearIcon}
+        Icon={ResetIcon}
         onClick={zoomFunctions.reset}
         title={t('resetZoom')}
         hide={!zoomed}

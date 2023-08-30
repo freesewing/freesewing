@@ -433,12 +433,13 @@ export const parseDistanceInput = (val = false, imperial = false) => {
 /*
  * To spread icon + text horizontal
  */
-export const horFlexClasses = 'flex flex-row items-center justify-between gap-4'
+export const horFlexClasses = 'flex flex-row items-center justify-between gap-4 w-full'
 
 /*
  * To spread icon + text horizontal but only from md upwards
  */
-export const horFlexClassesNoSm = 'md:flex md:flex-row md:items-center md:justify-between md:gap-4'
+export const horFlexClassesNoSm =
+  'md:flex md:flex-row md:items-center md:justify-between md:gap-4 md-w-full'
 
 /*
  * A method that check that a var is not empty

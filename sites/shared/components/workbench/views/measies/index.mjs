@@ -20,6 +20,8 @@ import { MsetIcon, BookmarkIcon, CsetIcon, EditIcon } from 'shared/components/ic
 
 export const ns = nsMerge(authNs, setsNs)
 
+const iconClasses = { className: 'w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink-0', stroke: 1.5 }
+
 export const MeasiesView = ({ design, Design, settings, update, missingMeasurements, setView }) => {
   const { t } = useTranslation(['workbench'])
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
@@ -61,7 +63,7 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
             <Fragment key={1}>
               <div className={horFlexClasses}>
                 <h5 id="ownsets">{t('workbench:chooseFromOwnSets')}</h5>
-                <MsetIcon className="w-6 h-6 shrink-0" />
+                <MsetIcon {...iconClasses} />
               </div>
               <p>{t('workbench:chooseFromOwnSetsDesc')}</p>
             </Fragment>,
@@ -77,7 +79,7 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
             <Fragment key={1}>
               <div className={horFlexClasses}>
                 <h5 id="bookmarkedsets">{t('workbench:chooseFromBookmarkedSets')}</h5>
-                <BookmarkIcon className="w-6 h-6 shrink-0" />
+                <BookmarkIcon {...iconClasses} />
               </div>
               <p>{t('workbench:chooseFromBookmarkedSetsDesc')}</p>
             </Fragment>,
@@ -93,7 +95,7 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
             <Fragment key={1}>
               <div className={horFlexClasses}>
                 <h5 id="curatedsets">{t('workbench:chooseFromCuratedSets')}</h5>
-                <CsetIcon />
+                <CsetIcon {...iconClasses} />
               </div>
               <p>{t('workbench:chooseFromCuratedSetsDesc')}</p>
             </Fragment>,
@@ -103,7 +105,7 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
             <Fragment key={1}>
               <div className={horFlexClasses}>
                 <h5 id="editmeasies">{t('workbench:editMeasiesByHand')}</h5>
-                <EditIcon />
+                <EditIcon {...iconClasses} />
               </div>
               <p>{t('workbench:editMeasiesByHandDesc')}</p>
             </Fragment>,
