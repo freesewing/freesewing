@@ -87,6 +87,15 @@ export const SignUp = () => {
     }
   }
 
+  const initOauth = async (provider) => {
+    setLoadingStatus([true, t(`status:contactingBackend`)])
+    const result = await backend.oauthInit({ provider, language: i18n.language })
+    if (result.success) {
+      setLoadingStatus([true, t(`status:contacting${provider}`)])
+      window.location.href = result.data.authUrl
+    }
+  }
+
   return (
     <div className="w-full">
       <LoadingStatus />
@@ -157,11 +166,12 @@ export const SignUp = () => {
           {showAll ? (
             <>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center mt-4">
-                {['Google', 'Github'].map((provider) => (
+                {['Google', 'GitHub'].map((provider) => (
                   <button
                     key={provider}
                     id={provider}
                     className={`${horFlexClasses} btn btn-secondary`}
+                    onClick={() => initOauth(provider)}
                   >
                     {provider === 'Google' ? <GoogleIcon stroke={0} /> : <GitHubIcon />}
                     <span>{t('susi:signUpWithProvider', { provider })}</span>

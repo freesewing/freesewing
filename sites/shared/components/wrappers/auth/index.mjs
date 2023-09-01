@@ -7,8 +7,9 @@ import { useEffect, useState } from 'react'
 import { Loading } from 'shared/components/spinner.mjs'
 import { horFlexClasses } from 'shared/utils.mjs'
 import { LockIcon, PlusIcon } from 'shared/components/icons.mjs'
+import { ConsentForm, ns as gdprNs } from 'shared/components/gdpr/form.mjs'
 
-export const ns = ['auth']
+export const ns = ['auth', gdprNs]
 
 const Wrap = ({ children }) => (
   <div className="m-auto max-w-xl text-center mt-8 p-8">{children}</div>
@@ -90,21 +91,38 @@ const RoleLacking = ({ t, requiredRole, role, banner }) => (
   </Wrap>
 )
 
-const ConsentLacking = ({ t, banner }) => (
-  <Wrap>
-    {banner}
-    <h1>{t('consentLacking')}</h1>
-    <p>{t('membersOnly')}</p>
-    <div className="flex flex-row items-center justify-center gap-4 mt-8">
-      <Link href="/signup" className="btn btn-primary w-32">
-        {t('signUp')}
-      </Link>
-      <Link href="/signin" className="btn btn-primary btn-outline w-32">
-        {t('signIn')}
-      </Link>
-    </div>
-  </Wrap>
-)
+const ConsentLacking = ({ banner, refresh }) => {
+  const { setAccount, setToken, setSeenUser } = useAccount()
+  const backend = useBackend()
+
+  const updateConsent = async ({ consent1, consent2 }) => {
+    let consent = 0
+    if (consent1) consent = 1
+    if (consent1 && consent2) consent = 2
+    if (consent > 0) {
+      const result = await backend.updateConsent(consent)
+      console.log({ result })
+      if (result.success) {
+        setToken(result.data.token)
+        setAccount(result.data.account)
+        setSeenUser(result.data.account.username)
+        refresh()
+      } else {
+        console.log('something went wrong', result)
+        refresh()
+      }
+    }
+  }
+
+  return (
+    <Wrap>
+      <div className="text-left">
+        {banner}
+        <ConsentForm submit={updateConsent} />
+      </div>
+    </Wrap>
+  )
+}
 
 export const AuthWrapper = ({ children, requiredRole = 'user' }) => {
   const { t } = useTranslation(ns)
@@ -113,6 +131,8 @@ export const AuthWrapper = ({ children, requiredRole = 'user' }) => {
 
   const [ready, setReady] = useState(false)
   const [impersonating, setImpersonating] = useState(false)
+  const [error, setError] = useState(false)
+  const [refreshCount, setRefreshCount] = useState(0)
 
   /*
    * Avoid hydration errors
@@ -126,17 +146,33 @@ export const AuthWrapper = ({ children, requiredRole = 'user' }) => {
           user: account.username,
         })
       }
+      setReady(true)
     }
     const verifyUser = async () => {
       const result = await backend.ping()
-      if (!result.success) signOut()
+      if (!result.success) {
+        if (result.data?.error?.error) setError(result.data.error.error)
+        else signOut()
+      }
+      setReady(true)
     }
     if (admin && admin.token) verifyAdmin()
     if (token) verifyUser()
-    setReady(true)
-  }, [admin, token])
+    else setReady(true)
+  }, [admin, token, refreshCount])
 
-  if (!ready) return <Loading />
+  const refresh = () => {
+    setRefreshCount(refreshCount + 1)
+    setError(false)
+  }
+
+  if (!ready)
+    return (
+      <>
+        <p>not ready</p>
+        <Loading />
+      </>
+    )
 
   const banner = impersonating ? (
     <div className="bg-warning rounded-lg shadow py-4 px-6 flex flex-row items-center gap-4 justify-between">
@@ -152,13 +188,13 @@ export const AuthWrapper = ({ children, requiredRole = 'user' }) => {
   const childProps = { t, banner }
 
   if (!token || !account.username) return <AuthRequired {...childProps} />
-  if (account.status !== 1) {
-    if (account.status === 0) return <AccountInactive {...childProps} />
-    if (account.status === -1) return <AccountDisabled {...childProps} />
-    if (account.status === -2) return <AccountProhibited {...childProps} />
+  if (error) {
+    if (error === 'accountInactive') return <AccountInactive {...childProps} />
+    if (error === 'accountDisabled') return <AccountDisabled {...childProps} />
+    if (error === 'accountBlocked') return <AccountProhibited {...childProps} />
+    if (error === 'consentLacking') return <ConsentLacking {...childProps} refresh={refresh} />
     return <AccountStatusUnknown {...childProps} />
   }
-  if (account.consent < 1) return <ConsentLacking {...childProps} />
 
   if (!roles.levels[account.role] || roles.levels[account.role] < roles.levels[requiredRole]) {
     return <RoleLacking {...childProps} role={account.role} requiredRole={requiredRole} />
