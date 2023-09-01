@@ -19,7 +19,7 @@ signOut: Abmelden
 politeOhCrap: Oh Purzelbäume
 bio: Über mich
 email: E-Mail Adresse
-img: Profilbild
+img: Bild
 username: Benutzername
 compare: Metrikenvergleich
 consent: Zustimmung & Datenschutz
@@ -44,6 +44,10 @@ enableMfa: Aktiviere die Zwei-Faktor-Authentifizierung
 disableMfa: Zwei-Faktoren-Authentifizierung deaktivieren
 language: Sprache
 developer: Entwickler
+design: Gestaltung
+patternMetadata: Pattern metadata
+clonePattern: Clone pattern
+updatePattern: Update pattern
 reload: Account neu laden
 export: Exportiere deine Daten
 exportMsg: Click below to export your personal data
@@ -226,8 +230,13 @@ showcaseNew: Create a new showcase post
 showcaseNewInfo: If you would like to share something you (or someone else) made based on our designs, you can start a draft showcase post here.
 blogNew: Create a new blog post
 blogNewInfo: If you would like to write on the FreeSewing blog, you can start a draft blog post here.
-newBasic: Die Grundlagen
-newAdvanced: Weiter gehen
+csetNew: Suggest a new curated measurements set
+csetNewInfo: We curate a collection of vetted measurments sets that we use to test patterns. You can suggest a measurements set here.
+opackNew: Suggest a new options pack
+opackNewInfo: We curate a collection of vetted option packs for each of our designs. You can suggest your options here.
+newPopular: Most popular
+newShare: Share / Show
+newDev: Design / Develop
 generateANewThing: "Erstelle eine neue { thing }"
 website: Website
 linkedIdentities: Linked Identities
