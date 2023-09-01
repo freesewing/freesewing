@@ -4933,10 +4933,10 @@ dagre-d3-es@7.0.10:
     d3 "^7.8.2"
     lodash-es "^4.17.21"
 
-daisyui@3.6.3:
-  version "3.6.3"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.6.3.tgz#4ca2a9ae3de7d7c291e4f565a30a88be310699cf"
-  integrity sha512-VNWogAjx37H8kNYd2E/+r1OXc6dOvJTKlKltqIKAlNMFVfx2BIKPcmnVxaHQLfj2vhv1mYDBjgWj+1enQ+4yZA==
+daisyui@3.6.4:
+  version "3.6.4"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.6.4.tgz#c67fddddaf98dedec3aadb2c9d722ed4204511f4"
+  integrity sha512-8cFEkA2CaTKLUBvEU+9cTx6uvLSN2ZUq9fXxMkdiRS7QM79jBFv3klNkbUaPslmVh0eoeeCk0o98sjmfQ7/Cgg==
   dependencies:
     colord "^2.9"
     css-selector-tokenizer "^0.8"
