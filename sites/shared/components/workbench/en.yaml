@@ -58,7 +58,7 @@ saveSettings: Save Settings
 youUseDefaultValue: You are using a custom value
 youUseCustomValue: You are using the default value
 testOptions: Test design options
-testOptionsDesc: Test how the design adapts to changes in a specific desing option
+testOptionsDesc: Test how the design adapts to changes in a specific design option
 testMeasurements: Test measurements
 testMeasurementsDesc: Test how the design adapts to changes to a specific measurement
 testSets: Test measurements sets
@@ -79,3 +79,25 @@ chooseFromCuratedSets: Choose one of FreeSewing's curated measurements sets
 chooseFromCuratedSetsDesc: If you're just looking to try out our platform, you can select from our list of curated measurements sets.
 editMeasiesByHand: Edit measurements by hand
 editMeasiesByHandDesc: Manually set or override any measurements. These changes will only apply to the current pattern.
+chooseATest: Choose a test scenario to run
+chooseATestDesc: You can test how the design adapts to changes in a specific design option or measurements, or even test the design across different measurements sets.
+chooseATestMenuMsg: To do so, select the test scenario you want to run in the menu on the right.
+chooseATestMenuMobileMsg: To do so, open the test menu and select the scenario you want to run.
+printSettings.t: Print settings
+printSettings.d: Configure your pattern so you can print it just the way you like it. Includes page size & orientation, margins, and more.
+layoutSettings.t: Layout settings
+layoutSettings.d: Additional options to further optimize the printing layout of your pattern.
+partTransfo: Part transformation buttons
+partTransfoDesc: These buttons allow you to rotate or flip individual pattern parts.
+partTransfoYes: Show buttons
+partTransfoYesDesc: Include these buttons on the pattern output (they will not be printed)
+partTransfoNo: Hide buttons
+partTransfoNoDesc: Do not include these buttons on the pattern output
+resetPrintLayout: Reset print layout
+resetPrintLayoutDesc: Removes all manual changes to the print layout, and restores the default layout
+generatePdf: Generate print-ready PDF
+pages: pages
+rows: rows
+columns: columns
+currentPrintLayout: Current print layout
+xTotalPagesSomeBlank: "{total} pages in total but {blank} are blank"

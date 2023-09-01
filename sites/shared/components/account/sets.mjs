@@ -884,10 +884,11 @@ export const UserSetPicker = ({ design, t, href, clickHandler, size = 'lg' }) =>
   )
 }
 
-export const CuratedSetPicker = ({ design, language, href, clickHandler, size }) => {
+export const CuratedSetPicker = ({ design, href, clickHandler, size }) => {
   // Hooks
   const backend = useBackend()
   const { t, i18n } = useTranslation('sets')
+  const { language } = i18n
   const { control } = useAccount()
 
   // State

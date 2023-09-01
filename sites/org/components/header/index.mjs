@@ -39,7 +39,7 @@ const NavIcons = ({ setModal, setSearch }) => {
         color={spectrum[0]}
         extraClasses="md:px-4"
       >
-        <MenuIcon className={iconSize} />
+        <MenuIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavSpacer />
       <NavButton href="/designs" label={t('header:designs')} color={spectrum[1]}>
@@ -51,7 +51,7 @@ const NavIcons = ({ setModal, setSearch }) => {
         color={spectrum[2]}
         extraClasses="hidden md:flex"
       >
-        <DocsIcon className={iconSize} />
+        <DocsIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavButton
         href="/blog"
@@ -59,7 +59,7 @@ const NavIcons = ({ setModal, setSearch }) => {
         color={spectrum[3]}
         extraClasses="hidden md:flex"
       >
-        <RssIcon className={iconSize} />
+        <RssIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavButton
         href="/showcase"
@@ -67,7 +67,7 @@ const NavIcons = ({ setModal, setSearch }) => {
         color={spectrum[4]}
         extraClasses="hidden md:flex"
       >
-        <ShowcaseIcon className={iconSize} />
+        <ShowcaseIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavSpacer />
       <NavButton
@@ -76,10 +76,10 @@ const NavIcons = ({ setModal, setSearch }) => {
         color={spectrum[5]}
         extraClasses="hidden lg:flex"
       >
-        <PlusIcon className={iconSize} />
+        <PlusIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavButton href="/account" label={t('header:account')} color={spectrum[6]}>
-        <UserIcon className={iconSize} />
+        <UserIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavButton
         href="/support"
@@ -87,7 +87,7 @@ const NavIcons = ({ setModal, setSearch }) => {
         color={spectrum[7]}
         extraClasses="hidden lg:flex"
       >
-        <HeartIcon className={iconSize} />
+        <HeartIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavSpacer />
       <NavButton
@@ -95,14 +95,14 @@ const NavIcons = ({ setModal, setSearch }) => {
         label={t('header:theme')}
         color={spectrum[8]}
       >
-        <ThemeIcon className={iconSize} />
+        <ThemeIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavButton
         onClick={() => setModal(<ModalLocalePicker />)}
         label={t('header:language')}
         color={spectrum[9]}
       >
-        <I18nIcon className={iconSize} />
+        <I18nIcon className={iconSize} stroke={1.5} />
       </NavButton>
       <NavButton
         onClick={() => setSearch(true)}
@@ -110,7 +110,7 @@ const NavIcons = ({ setModal, setSearch }) => {
         color={spectrum[10]}
         extraClasses="md:px-4"
       >
-        <SearchIcon className={iconSize} />
+        <SearchIcon className={iconSize} stroke={1.5} />
       </NavButton>
     </>
   )

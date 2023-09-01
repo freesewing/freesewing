@@ -13,5 +13,6 @@ The permission level is a number from `0` to `4` with the following significance
 - `4` : Write access to all your account data
 
 <Link>
+
 For more details, refer to [the backend documentation on FreeSewing.dev](https://freesewing.dev/reference/backend/rbac#permission-levels)
 </Link>

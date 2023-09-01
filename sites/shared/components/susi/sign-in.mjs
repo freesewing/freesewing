@@ -5,7 +5,7 @@ import { useTranslation } from 'next-i18next'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
 import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
-import { horFlexClasses, horFlexClassesNoSm } from 'shared/utils.mjs'
+import { horFlexClasses, horFlexClassesNoSm, capitalize } from 'shared/utils.mjs'
 // Components
 import Link from 'next/link'
 import {
@@ -25,7 +25,7 @@ export const ns = ['susi', 'errors', 'status']
 
 export const SignIn = () => {
   const { setAccount, setToken, seenUser, setSeenUser } = useAccount()
-  const { t } = useTranslation(ns)
+  const { t, i18n } = useTranslation(ns)
   const backend = useBackend()
   const router = useRouter()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
@@ -91,6 +91,15 @@ export const SignIn = () => {
       else if (result.data.error === 'passwordMissing') msg = t('susi:passwordMissing')
       setSignInFailed(msg)
       setLoadingStatus([true, msg, true, false])
+    }
+  }
+
+  const initOauth = async (provider) => {
+    setLoadingStatus([true, t(`susi:contactingBackend`)])
+    const result = await backend.oauthInit({ provider, language: i18n.language })
+    if (result.success) {
+      setLoadingStatus([true, t(`susi:contacting${capitalize(provider)}`)])
+      window.location.href = result.data.authUrl
     }
   }
 
@@ -197,7 +206,12 @@ export const SignIn = () => {
       </button>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center mt-2">
         {['Google', 'Github'].map((provider) => (
-          <button key={provider} id={provider} className={`${horFlexClasses} btn btn-secondary`}>
+          <button
+            key={provider}
+            id={provider}
+            className={`${horFlexClasses} btn btn-secondary`}
+            onClick={() => initOauth(provider)}
+          >
             {provider === 'Google' ? <GoogleIcon stroke={0} /> : <GitHubIcon />}
             <span>{t('susi:signInWithProvider', { provider })}</span>
           </button>

@@ -49,4 +49,5 @@ saNo.t: Exclusief naadtoeslag
 saNo.d: Dit genereert een patroon zonder naadtoeslag. De grootte van de naadtoeslag maakt niet uit, omdat er geen naadtoeslag wordt opgenomen.
 saYes.t: Inclusief naadtoeslag
 saYes.d: Dit genereert een patroon met naadtoeslag. De grootte van de naadtoeslag wordt individueel ingesteld.
-
+clearSettingsNotMeasurements: Clear settings, but keep measurements
+clearSettingsAndMeasurements: Clear settings & Clear measurements

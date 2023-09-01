@@ -234,7 +234,7 @@ export const ListInput = ({ name, config, current, updateFunc, compact = false, 
     const titleKey = config.choiceTitles ? config.choiceTitles[entry] : `${name}.o.${entry}`
     const title = t(`${titleKey}.t`)
     const desc = t(`${titleKey}.d`)
-    const sideBySide = desc.length + title.length < 70
+    const sideBySide = desc.length + title.length < 60
 
     return (
       <ButtonFrame

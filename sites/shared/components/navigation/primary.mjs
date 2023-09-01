@@ -10,7 +10,7 @@ import {
   ShowcaseIcon,
   UserIcon,
   MeasieIcon,
-  PageIcon,
+  PatternIcon,
   CodeIcon,
   I18nIcon,
   WrenchIcon,
@@ -43,7 +43,7 @@ export const icons = {
   showcase: (className = '') => <ShowcaseIcon className={className} />,
   community: (className = '') => <CommunityIcon className={className} />,
   sets: (className = '') => <MeasieIcon className={className} />,
-  patterns: (className = '') => <PageIcon className={className} />,
+  patterns: (className = '') => <PatternIcon className={className} />,
   new: (className = '') => <PlusIcon className={className} />,
 
   // Lab

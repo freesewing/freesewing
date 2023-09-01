@@ -1,62 +1,22 @@
 support: Support
 communitySupport: Community Support
-communitySupport1: The FreeSewing community is a helpful bunch, so there is a good chance they are able to help you.
-communitySupport2: "You can find FreeSewing friends in all these places:"
+communitySupport1: For the fastest response, head over to <b>discord.freesewing.org</b> and post your question in the <b>Support</b> channel.
+communitySupport2: The FreeSewing community is a helpful bunch, so there is a good chance they are able to help you.
 contributorSupport: Contributor Support
-contributorSupport1: If something is broken or you have found a bug, you can create an issue on GitHub, or right here on our website.
+contributorSupport1: If something is broken or you have found a bug, you can <b>create an issue on GitHub</b>.
 contributorSupport2: Issues are more likely to attract the attention of core contributors, but tend to take longer to get a response.
 maintainerSupport: Maintainer Support
-maintainerSupport1: If you are a FreeSewing patron, you can go straight to the top and contact Joost directly.
-maintainerSupport2: While Joost will treat requests from patrons with priority, he also needs sleep. So keep that in mind, especially when you are in a different time zone.
-noGitHubNoProblem: No GitHub? No problem!
-noGitHubNoProblem1: You can submit a support request right here on the website and we will create an issue from it for you.
-createSupportRequest: Create a Support Request
-createIssueOnGitHub: Create an issue on GitHub
-createIssueOnFreeSewing: Create an issue on FreeSewing.org
+maintainerSupport1: If you are <b>a FreeSewing patron</b>, you can go straight to the top and contact Joost directly.
+maintainerSupport2: While Joost will treat requests from patrons with priority, he does also needs sleep. So keep that in mind, especially when you are in a different time zone.
+whatIsDiscord: What is Discord?
+whatIsDiscord1: Discord is a free chat platform where communities can come together to chat discuss their interests.  It also supports (group) voice and video calls.
+whatIsDiscord2: FreeSewing has its own Discord community (a <em>server</em> in Discord terminology) at
+whatIsDiscord3: To use Discord, you will need an account, but they are free.
+whatIsDiscord4: You can use Discord in your browser, or download the Discord app for your platform of choice.
+whatIsGitHub: What is GitHub?
+whatIsGitHub1: GitHub is an online platform for hosting software source code and collaborative development. It is popular among open source projects as it provides free hosting.
+whatIsGitHub2: You can find FreeSewing on GitHub at
+whatIsGitHub3: To use GitHub, you will need an account, but they are free.
 whatIsJoost: What is Joost?
 whatIsJoost1: Not what, but who. Joost De Cock is the FreeSewing founder and maintainer.
-via: Via
-chooseThisForFreeSewing: This is the best choice for most people
-chooseThisForGitHub: This is the best choice for those who prefer to use GitHub directly
-chooseYourUx: How would you like to do this?
-howCanWeSupportYou: How can we best support you?
-howCanYouSupportFreeSewing: How can you best support FreeSewing?
-emailAddress: Email {address}
-title: Title
-titleDocs1: Your request needs a title. A good title is important because it will be how the request is listed among many others.
-titleDocs2: A good title is descriptive, not too short, but also not too long, and include keywords that make it easy to find in a search.
-design: Design
-designDocs1: If the reason you are reaching out for support is related to a specific FreeSewing design, please select it here.
-description: Description
-descriptionDocs1: This is where you can describe your request in detail. Don't hold back, more infomration is almost always better.
-supportRequest: Support request
-bugReport: Bugs & Crashes
-bugReportDesc: Report a problem, or something that went wrong
-featureRequest: New Features
-featureRequestDesc: Suggest an idea to make FreeSewing better
-docsUpdate: Documentation & Content
-docsUpdateDesc: Suggest updates to FreeSewing documentation or site content
-security: Security & Vulnerabilities
-securityDesc: Responsibly disclose a vulnerability, incident, or security risk
-question: Questions & Discussions
-questionDesc: Submit a question to the formum-style discussion board on Github
-other: Something else?
-otherDesc: Report something that does not fit in any other category
-accountIssue: Accounts & API access
-accountIssueDesc: Report problems regarding your FreeSewing account or API access
-designIssue: Designs & Patterns
-designIssueDesc: Report problems with FreeSewing designs or patterns
-patronSponsor: Patrons & Sponsors
-patronSponsorDesc: Support channel reserved for our Partons and corporate Sponsors
-whichCategory: Which category best fits your request?
-image: Image
-imageDocs1: You can add one or more images or screenshots to help illustrate your description.
-addImage: Add image
-addToDescription: Add to description
-addImageToMd: To include this image in your description, use this markdown snippet
-submitSupportRequest: Submit support request
-useGitHubInstead: Use GitHub instead
-requestCreated: Support request created
-requestCreatedDesc: We have created your request, you can find it here
-back: Back
 
