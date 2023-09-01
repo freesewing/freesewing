@@ -20,7 +20,7 @@ signOut: Sign Out
 politeOhCrap: Oh fiddlesticks
 bio: Bio
 email: E-mail Address
-img: Profile image
+img: Image
 username: Username
 compare: Metricset Comparison
 consent: Consent & Privacy
@@ -45,6 +45,10 @@ enableMfa: Enable Two-Factor Authentication
 disableMfa: Disable Two-Factor Authentication
 language: Language
 developer: Developer
+design: Design
+patternMetadata: Pattern metadata
+clonePattern: Clone pattern
+updatePattern: Update pattern
 
 reload: Reload account
 export: Export your data
@@ -250,8 +254,15 @@ showcaseNewInfo: If you would like to share something you (or someone else) made
 blogNew: Create a new blog post
 blogNewInfo: If you would like to write on the FreeSewing blog, you can start a draft blog post here.
 
-newBasic: The basics
-newAdvanced: Go further
+csetNew: Suggest a new curated measurements set
+csetNewInfo: We curate a collection of vetted measurments sets that we use to test patterns. You can suggest a measurements set here.
+
+opackNew: Suggest a new options pack
+opackNewInfo: We curate a collection of vetted option packs for each of our designs. You can suggest your options here.
+
+newPopular: Most popular
+newShare: Share / Show
+newDev: Design / Develop
 
 generateANewThing: "Generate a new { thing }"
 
