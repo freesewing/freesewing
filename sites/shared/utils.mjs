@@ -453,6 +453,6 @@ const dec2hex = (dec) => dec.toString(16).padStart(2, '0')
 export const randomString = (len = 42) => {
   if (typeof window === 'undefined') return '' // Not used in SSR
   const arr = new Uint8Array(len / 2)
-  window.crypto.getRandomValues(arr)
+  window.crypto.getRandomValues(arr) // eslint-disable-line
   return Array.from(arr, dec2hex).join('')
 }

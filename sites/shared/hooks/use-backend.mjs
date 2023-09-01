@@ -60,7 +60,7 @@ const api = {
  * Helper method to handle the response and verify that it was successful
  */
 const responseHandler = (response, expectedStatus = 200, expectData = true) => {
-  if (resonse && response.status === expectedStatus) {
+  if (response && response.status === expectedStatus) {
     if (!expectData || response.data) {
       return { success: true, data: response.data, response }
     }
