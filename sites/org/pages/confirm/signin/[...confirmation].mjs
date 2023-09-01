@@ -1,43 +1,60 @@
+// Dependencies
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { nsMerge, horFlexClasses } from 'shared/utils.mjs'
 // Hooks
 import { useEffect, useState } from 'react'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
-// Dependencies
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Link from 'next/link'
 // Components
-import { PageWrapper } from 'shared/components/wrappers/page.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { Robot } from 'shared/components/robot/index.mjs'
 import { FlexButtonText } from 'shared/components/buttons/flex-button-text.mjs'
-import { LeftIcon, KeyIcon } from 'shared/components/icons.mjs'
+import { KeyIcon } from 'shared/components/icons.mjs'
+import Link from 'next/link'
 
 // Translation namespaces used on this page
-const ns = Array.from(new Set(['signin', 'locales', 'themes']))
+const ns = nsMerge('susi', 'locales', 'themes', pageNs)
 
-export const SigninLinkExpired = () => {
-  const { t } = useTranslation('signin')
+const SigninFailed = ({ error }) => {
+  const { t } = useTranslation(ns)
+
+  let title = t('susi:signinFailed')
+  let msg = t('susi:who knows')
+  if (error) {
+    if (error === 'noSuchUser') {
+      title = t('susi:noSuchUser')
+      msg = t('susi:noSuchUserMsg')
+    } else if (error === 'consentLacking') {
+      title = t('susi:consentLacking')
+      msg = t('susi:consentLackingMsg')
+    } else if (error === 'statusLacking') {
+      title = t('susi:statusLacking')
+      msg = t('susi:statusLackingMsg')
+    } else if (error === 'accountBlocked') {
+      title = t('susi:accountBlocked')
+      msg = t('susi:accountBlockedMsg')
+    }
+  }
 
   return (
     <div className="p-8 max-w-md">
-      <h1 className="text-center">{t('signInFailed')}</h1>
+      <h3 className="text-center">{title}</h3>
       <Robot pose="shrug" className="w-2/3 m-auto" embed />
-      <Link className="btn btn-primary btn-lg w-full" href="/signin">
-        <FlexButtonText>
-          <LeftIcon />
-          {t('back')}
-          <KeyIcon />
-        </FlexButtonText>
+      <p>{msg}</p>
+      <Link className={`btn btn-primary w-full ${horFlexClasses}`} href="/signin">
+        <KeyIcon />
+        {t('susi:signIn')}
       </Link>
     </div>
   )
 }
 
 const Wrapper = ({ page, t, children }) => (
-  <PageWrapper {...page} title={t('signin:oneMomentPlease')} layout={BareLayout} footer={false}>
+  <PageWrapper {...page} title={t('susi:oneMomentPlease')} layout={BareLayout} footer={false}>
     <section className="m-0 p-0 w-full">
       <div className="mt-4 lg:mt-32 max-w-xl m-auto">{children}</div>
     </section>
@@ -76,9 +93,8 @@ const ConfirmSignInPage = ({ page }) => {
         id: confirmationId,
         check: confirmationCheck,
       })
-      if (result?.data?.token) return storeAccount(result.data)
-      if (result?.status === 404) return setError(404)
-
+      if (result.data?.token) return storeAccount(result.data)
+      if (result.data.error) return setError(result.data.error)
       return setError(true)
     }
     // Call async method
@@ -91,13 +107,13 @@ const ConfirmSignInPage = ({ page }) => {
   if (error)
     return (
       <Wrapper page={page} t={t}>
-        <SigninLinkExpired />
+        <SigninFailed error={error} />
       </Wrapper>
     )
 
   return (
     <Wrapper page={page} t={t}>
-      <h1>{t('oneMomentPlease')}</h1>
+      <h1>{t('susi:oneMomentPlease')}</h1>
       <Spinner className="w-8 h-8 m-auto animate-spin" />
     </Wrapper>
   )

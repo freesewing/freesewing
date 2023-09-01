@@ -1,10 +1,11 @@
 import jwt from 'jsonwebtoken'
 import { log } from '../utils/log.mjs'
 import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
-import { replaceImage, importImage, removeImage } from '../utils/cloudflare-images.mjs'
+import { replaceImage, ensureImage, importImage, removeImage } from '../utils/cloudflare-images.mjs'
 import { clean, asJson, i18nUrl, writeExportedData } from '../utils/index.mjs'
 import { decorateModel } from '../utils/model-decorator.mjs'
 import { userCard } from '../templates/svg/user-card.mjs'
+import { oauth } from '../utils/oauth.mjs'
 
 /*
  * This model handles all user updates
@@ -16,6 +17,190 @@ export function UserModel(tools) {
     jsonFields: ['data'],
     models: ['confirmation', 'set', 'pattern'],
   })
+}
+
+/*
+ * Start Oauth flow, supported providers are google and github
+ *
+ * To initialize the Oauth flow, all we need is to generate a secret
+ * and let the client know what URL to connect to to trigger the authentication.
+ * For the secret, we'll just use the UUID of the confirmation.
+ *
+ * @param {body} object - The request body
+ * @returns {UserModel} object - The UserModel
+ */
+UserModel.prototype.oauthInit = async function ({ body }) {
+  /*
+   * Is the provider set and a known Oauth provider?
+   */
+  if (
+    typeof body.provider === 'undefined' ||
+    !Object.keys(this.config.oauth).includes(body.provider.toLowerCase())
+  )
+    return this.setResponse(403, 'invalidProvider')
+
+  /*
+   * Is the language set and a known langauge?
+   */
+  if (
+    typeof body.language === 'undefined' ||
+    !this.config.languages.includes(body.language.toLowerCase())
+  )
+    return this.setResponse(403, 'invalidLanguage')
+
+  const provider = body.provider.toLowerCase()
+  const language = body.language.toLowerCase()
+
+  /*
+   * Create confirmation
+   */
+  await this.Confirmation.createRecord({
+    type: 'oauth-init',
+    data: { provider, language },
+  })
+
+  /*
+   * Return the confirmation ID as Oauth state, along with the
+   * authentication URL the client should use.
+   */
+  return this.setResponse200({
+    authUrl: this.config.oauth[provider].url(this.Confirmation.record.id, language),
+  })
+}
+
+/*
+ * Sign In via Oauth, supported providers are google and github
+ *
+ * This could be an existing user (Sign In) or a new user (Sign Up)
+ * so we need to deal with both cases.
+ *
+ * @param {body} object - The request body
+ * @returns {UserModel} object - The UserModel
+ */
+UserModel.prototype.oauthSignIn = async function ({ body }) {
+  /*
+   * Is the provider set and a known Oauth provider?
+   */
+  if (
+    typeof body.provider === 'undefined' ||
+    !Object.keys(this.config.oauth).includes(body.provider.toLowerCase())
+  )
+    return this.setResponse(403, 'invalidProvider')
+
+  /*
+   * Is state set?
+   */
+  if (typeof body.state !== 'string') return this.setResponse(403, 'stateInvalid')
+
+  /*
+   * Is code set?
+   */
+  if (typeof body.code !== 'string') return this.setResponse(403, 'codeInvalid')
+
+  /*
+   * Attempt to retrieve the confirmation record, its ID is the state value
+   */
+  await this.Confirmation.read({ id: body.state })
+
+  /*
+   * Get token in exchange for Oauth code
+   */
+  const provider = body.provider.toLowerCase()
+  const token = await oauth[provider].getToken(body.code)
+
+  /*
+   * Load user data from API
+   */
+  const oauthData = await oauth[provider].loadUser(token)
+
+  /*
+   * Does the user exist?
+   */
+  await this.read({ ehash: hash(clean(oauthData.email)) })
+  if (this.exists) {
+    /*
+     * Final check for account status and other things before returning
+     */
+    const [ok, err, status] = this.isOk()
+    if (ok === true) return this.signInOk()
+    else return this.setResponse(status, err)
+  }
+
+  /*
+   * This is a new user, so essentially a sign-up.
+   * We need to handle this the same way, expect without the need to confirm email
+   *
+   * Let's start by making sure the username we use is available
+   */
+  let lusername = clean(oauthData.username)
+  let available = await this.isLusernameAvailable(lusername)
+  while (!available) {
+    lusername += '+'
+    available = await this.isLusernameAvailable(lusername)
+  }
+
+  /*
+   * Create all data to create the record
+   */
+  const email = clean(oauthData.email)
+  const ihash = hash(email)
+  const extraData = {}
+  if (provider === 'github') {
+    extraData.githubEmail = oauthData.email
+    extraData.githubUsername = oauthData.username
+  }
+  if (oauthData.website) extraData.website = oauthData.website
+  if (oauthData.twitter) extraData.twitter = oauthData.twitter
+  const data = {
+    ehash: ihash,
+    ihash,
+    email: this.encrypt(email),
+    initial: this.encrypt(email),
+    username: lusername,
+    lusername: lusername,
+    language: this.Confirmation.clear.data.language,
+    mfaEnabled: false,
+    mfaSecret: '',
+    password: asJson(hashPassword(randomString())),
+    data: this.encrypt(extraData),
+    bio: this.encrypt(oauthData.bio || '--'),
+  }
+
+  /*
+   * Next, if there is an image (url) let's handle that first
+   */
+  if (oauthData.img) {
+    try {
+      const img = await replaceImage({
+        id: `user-${ihash}`,
+        metadata: { ihash },
+        url: oauthData.img,
+      })
+      if (img) data.img = this.encrypt(img)
+      else data.img = this.encrypt(this.config.avatars.user)
+    } catch (err) {
+      log.info(err, `Unable to update image post-oauth signup for user ${email}`)
+      return this.setResponse(500, 'createAccountFailed')
+    }
+  } else data.img = this.encrypt(this.config.avatars.user)
+
+  /*
+   * Now attempt to create the record in the database
+   */
+  try {
+    this.record = await this.prisma.user.create({ data })
+  } catch (err) {
+    /*
+     * Could not create record. Log warning and return 500
+     */
+    log.warn(err, 'Could not create user record')
+    return this.setResponse(500, 'createAccountFailed')
+  }
+
+  /*
+   * Consent won't be ok yet, but we must handle that in the frontend
+   */
+  return this.signInOk()
 }
 
 /*
@@ -207,6 +392,46 @@ UserModel.prototype.removeAccount = async function ({ user }) {
   return this.setResponse200({
     result: 'success',
     data: {},
+  })
+}
+
+/*
+ * This is a less strict version of guardedRead that will not err with 401
+ * when the authentication is valid, but consent has not been granted.
+ * This is required for the Oauth flow where people signup and are in this
+ * state where they are authenticated by have not provided consent yet.
+ *
+ * So in that case, this will return a limited set of data to allow the frontend
+ * to present/update the consent choices.
+ *
+ * @param {where} object - The where clasuse for the Prisma query
+ * @param {user} object - The user as provided by middleware
+ * @returns {UserModel} object - The UserModel
+ */
+UserModel.prototype.whoami = async function (where, { user }) {
+  /*
+   * Check middleware for guest-specific errors
+   */
+  if (user.guestError) {
+    let status = 401
+    if (user.guestError === 'consentLacking') status = 451
+    if (user.guestError === 'statusLacking') status = 403
+    return this.setResponse(status, { error: user.guestError })
+  }
+
+  /*
+   * Enforce RBAC
+   */
+  if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
+
+  /*
+   * Read record from database
+   */
+  await this.read(where)
+
+  return this.setResponse200({
+    result: 'success',
+    account: this.asAccount(),
   })
 }
 
@@ -536,7 +761,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
        * These are all placeholders, but fields that get encrypted need _some_ value
        * because encrypting null will cause an error.
        */
-      data: this.encrypt('{}'),
+      data: this.encrypt({}),
       bio: this.encrypt(''),
       img: this.encrypt(this.config.avatars.user),
     }
@@ -699,7 +924,9 @@ UserModel.prototype.passwordSignIn = async function (req) {
   /*
    * Final check for account status and other things before returning
    */
-  return this.isOk() ? this.signInOk() : this.setResponse(401, 'signInFailed')
+  const [ok, err, status] = this.isOk()
+  if (ok === true) return this.signInOk()
+  else return this.setResponse(status, err)
 }
 
 /*
@@ -771,12 +998,14 @@ UserModel.prototype.linkSignIn = async function (req) {
   /*
    * Before we return, remove the confirmation so it works only once
    */
-  await this.Confirmation.delete()
+  //await this.Confirmation.delete()
 
   /*
    * Sign in was a success, run a final check before returning
    */
-  return this.isOk() ? this.signInOk() : this.setResponse(401, 'signInFailed')
+  const [ok, err, status] = this.isOk(401, 'signInFailed')
+  if (ok === true) return this.signInOk()
+  else return this.setResponse(status, err)
 }
 
 /*
@@ -950,6 +1179,51 @@ UserModel.prototype.confirm = async function ({ body, params }) {
    * Account is now active, return a passwordless sign in
    */
   return this.signInOk()
+}
+
+/*
+ * Updates the consent of the authenticated user
+ * Goes through jwt-guest middelware so one of the few routes you can access without consent
+ *
+ * @param {body} object - The request body
+ * @param {user} object - The user as loaded by auth middleware
+ * @returns {UserModel} object - The UserModel
+ */
+UserModel.prototype.updateConsent = async function ({ body, user }) {
+  /*
+   * Enforce RBAC
+   */
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
+
+  /*
+   * Is consent valid?
+   */
+  if (![0, 1, 2].includes(body.consent)) return this.setResponse(400, 'consentInvalid')
+
+  /*
+   * Create data to update the record
+   */
+  const data = { consent: body.consent }
+  if (this.record.status === 0 && body.consent > 0) data.status = 1
+
+  /*
+   * Now update the database record
+   */
+  await this.update(data)
+
+  /*
+   * Construct data to return
+   */
+  const returnData = {
+    result: 'success',
+    account: this.asAccount(),
+    token: this.getToken(),
+  }
+
+  /*
+   * Return data
+   */
+  return this.setResponse200(returnData)
 }
 
 /*
@@ -1487,7 +1761,7 @@ UserModel.prototype.getToken = function () {
 /*
  * Helper method to check an account is ok
  */
-UserModel.prototype.isOk = function () {
+UserModel.prototype.isOk = function (failStatus = 401, failMsg = 'authenticationFailed') {
   /*
    * These are all the checks we run to see if an account is 'ok'
    */
@@ -1499,9 +1773,14 @@ UserModel.prototype.isOk = function () {
     this.record.role &&
     this.record.role !== 'blocked'
   )
-    return true
+    return [true, false]
 
-  return false
+  if (!this.exists) return [false, 'noSuchUser', 404]
+  if (this.record.consent < 1) return [false, 'consentLacking', 451]
+  if (this.record.status < 1) return [false, 'statusLacking', 403]
+  if (this.record.role === 'blocked') return [false, 'accountBlocked', 403]
+
+  return [false, failMsg, failStatus]
 }
 
 /*
@@ -1559,7 +1838,10 @@ UserModel.prototype.isLusernameAvailable = async function (lusername) {
  * Helper method that is called by middleware to verify whether the user
  * is allowed in. It will update the `lastSeen` field of the user as
  * well as increase the call counter for either JWT or KEY.
- * It will also check whether the user status is ok and consent granted.
+ * It will also check whether the user status is ok.
+ * It will NOT check whether consent is granted because the users who
+ * sign up with Oauth need to be able to get their data during onboarding
+ * so they can consent.
  *
  * If this returns false, the request will never make it past the middleware.
  *
@@ -1573,7 +1855,7 @@ UserModel.prototype.papersPlease = async function (id, type, payload) {
    * Construct data object for update operation
    */
   const data = { lastSeen: new Date() }
-  data[`${type}Calls`] = { increment: 1 }
+  data[`${type === 'key' ? 'key' : 'jwt'}Calls`] = { increment: 1 }
 
   /*
    * Now update the dabatase record
@@ -1585,8 +1867,9 @@ UserModel.prototype.papersPlease = async function (id, type, payload) {
     /*
      * An error means it's not good. Return false
      */
+    console.log(err)
     log.warn({ id }, 'Could not update lastSeen field from middleware')
-    return false
+    return [false, 'failedToUpdateLastSeen']
   }
 
   /*
@@ -1604,25 +1887,29 @@ UserModel.prototype.papersPlease = async function (id, type, payload) {
        * An error means it's not good. Return false
        */
       log.warn({ id }, 'Could not update apikey lastSeen field from middleware')
-      return false
+      return [false, 'failedToUpdateKeyCallCount']
     }
   }
 
   /*
-   * Verify the consent and status
+   * Is consent given? (Lacking consent is only allowed under the jwt-guest type)
    */
-  if (user.consent < 1) return false
+  if (user.consent < 1) return [type === 'jwt-guest' ? true : false, 'consentLacking']
 
   /*
-   * Is the account active?
+   * Is the account active? (Lacking status is only allowed under the jwt-guest type)
    */
-  if (user.status < 1) return false
+  if (user.status < 1) {
+    if (user.status === -1) return [type === 'jwt-guest' ? true : false, 'accountDisabled']
+    if (user.status === -2) return [type === 'jwt-guest' ? true : false, 'accountBlocked']
+    return [type === 'jwt-guest' ? true : false, 'accountInactive']
+  }
 
   /*
    * If we get here, the lastSeen field was updated, user exists,
    * and their consent and status are ok, so so return true and let them through.
    */
-  return true
+  return [true, false]
 }
 
 /*
@@ -1760,7 +2047,6 @@ UserModel.prototype.import = async function (user) {
         await this.createRecord(data)
       } catch (err) {
         log.warn(err, 'Could not create user record')
-        console.log(user)
         return this.setResponse(500, 'createUserFailed')
       }
       // That's the user, now load their people as sets

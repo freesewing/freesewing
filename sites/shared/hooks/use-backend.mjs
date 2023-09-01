@@ -67,6 +67,15 @@ const responseHandler = (response, expectedStatus = 200, expectData = true) => {
     return { success: true, response }
   }
 
+  // Unpack axios errors
+  if (response.name === 'AxiosError')
+    return {
+      success: false,
+      status: response.response?.status,
+      data: response.response?.data,
+      error: response.message,
+    }
+
   return { success: false, response }
 }
 
@@ -79,6 +88,20 @@ function Backend(auth) {
  */
 Backend.prototype.signUp = async function ({ email, language }) {
   return responseHandler(await api.post('/signup', { email, language }), 201)
+}
+
+/*
+ * backend.oauthInit: Init Oauth flow for oauth provider
+ */
+Backend.prototype.oauthInit = async function ({ provider, language }) {
+  return responseHandler(await api.post('/signin/oauth/init', { provider, language }))
+}
+
+/*
+ * backend.oauthSignIn: User sign in via oauth provider
+ */
+Backend.prototype.oauthSignIn = async function ({ state, code, provider }) {
+  return responseHandler(await api.post('/signin/oauth', { state, code, provider }))
 }
 
 /*
@@ -115,6 +138,13 @@ Backend.prototype.signInFromLink = async function ({ id, check }) {
  */
 Backend.prototype.updateAccount = async function (data) {
   return responseHandler(await api.patch(`/account/jwt`, data, this.auth))
+}
+
+/*
+ * Update consent (uses the jwt-guest middleware)
+ */
+Backend.prototype.updateConsent = async function (consent) {
+  return responseHandler(await api.patch(`/consent/jwt`, { consent }, this.auth))
 }
 
 /*

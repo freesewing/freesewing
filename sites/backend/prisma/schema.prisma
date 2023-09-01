@@ -36,8 +36,8 @@ model Confirmation {
   createdAt DateTime @default(now())
   data      String
   type      String
-  user      User     @relation(fields: [userId], references: [id])
-  userId    Int
+  user      User?     @relation(fields: [userId], references: [id])
+  userId    Int?
 }
 
 model Subscriber {

@@ -6,7 +6,15 @@ import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Dependencies
-import { validateEmail, validateTld, horFlexClasses, horFlexClassesNoSm } from 'shared/utils.mjs'
+import {
+  randomString,
+  validateEmail,
+  validateTld,
+  horFlexClasses,
+  horFlexClassesNoSm,
+  capitalize,
+} from 'shared/utils.mjs'
+import { oauthConfig } from 'shared/config/oauth.config.mjs'
 // Components
 import Link from 'next/link'
 import { Robot } from 'shared/components/robot/index.mjs'
@@ -38,6 +46,8 @@ export const SignUp = () => {
   const [emailValid, setEmailValid] = useState(false)
   const [result, setResult] = useState(false)
   const [showAll, setShowAll] = useState(false)
+
+  const state = ''
 
   const updateEmail = (value) => {
     setEmail(value)
@@ -84,6 +94,15 @@ export const SignUp = () => {
           </div>
         </ModalWrapper>
       )
+    }
+  }
+
+  const initOauth = async (provider) => {
+    setLoadingStatus([true, t(`status:contactingBackend`)])
+    const result = await backend.oauthInit({ provider, language: i18n.language })
+    if (result.success) {
+      setLoadingStatus([true, t(`status:contacting${provider}`)])
+      window.location.href = result.data.authUrl
     }
   }
 
@@ -157,11 +176,12 @@ export const SignUp = () => {
           {showAll ? (
             <>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center mt-4">
-                {['Google', 'Github'].map((provider) => (
+                {['Google', 'GitHub'].map((provider) => (
                   <button
                     key={provider}
                     id={provider}
                     className={`${horFlexClasses} btn btn-secondary`}
+                    onClick={() => initOauth(provider)}
                   >
                     {provider === 'Google' ? <GoogleIcon stroke={0} /> : <GitHubIcon />}
                     <span>{t('susi:signUpWithProvider', { provider })}</span>
