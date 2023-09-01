@@ -1,15 +1,12 @@
 // Hooks
 import { useState } from 'react'
-import { useAccount } from 'shared/hooks/use-account.mjs'
-import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 // Components
 import { Popout } from 'shared/components/popout/index.mjs'
 import { Link } from 'shared/components/link.mjs'
 import { GdprAccountDetails, ns as gdprNs } from 'shared/components/gdpr/details.mjs'
 
-export const ns = ['gdpr']
+export const ns = ['gdpr', gdprNs]
 
 const Checkbox = ({ value, setter, label, children = null }) => (
   <div
@@ -38,9 +35,6 @@ export const ConsentForm = ({ submit }) => {
   const [consent2, setConsent2] = useState(false)
 
   // Hooks
-  const router = useRouter()
-  const { setAccount, setToken } = useAccount()
-  const backend = useBackend()
   const { t } = useTranslation(ns)
 
   const giveConsent = () => {

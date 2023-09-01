@@ -36,7 +36,7 @@ function loadPassportMiddleware(passport, tools) {
       /*
        * We check more than merely the API key
        */
-      const [ok] = Apikey.verified ? await checkAccess(Apikey.record, tools, 'key') : false
+      const [ok] = Apikey.verified ? await checkAccess(Apikey.record, tools, 'key') : [false]
 
       return ok
         ? done(null, {

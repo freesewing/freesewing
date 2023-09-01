@@ -60,7 +60,7 @@ const api = {
  * Helper method to handle the response and verify that it was successful
  */
 const responseHandler = (response, expectedStatus = 200, expectData = true) => {
-  if (response && response.status === expectedStatus) {
+  if (resonse && response.status === expectedStatus) {
     if (!expectData || response.data) {
       return { success: true, data: response.data, response }
     }
@@ -68,7 +68,7 @@ const responseHandler = (response, expectedStatus = 200, expectData = true) => {
   }
 
   // Unpack axios errors
-  if (response.name === 'AxiosError')
+  if (response?.name === 'AxiosError')
     return {
       success: false,
       status: response.response?.status,

@@ -6,15 +6,7 @@ import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Dependencies
-import {
-  randomString,
-  validateEmail,
-  validateTld,
-  horFlexClasses,
-  horFlexClassesNoSm,
-  capitalize,
-} from 'shared/utils.mjs'
-import { oauthConfig } from 'shared/config/oauth.config.mjs'
+import { validateEmail, validateTld, horFlexClasses, horFlexClassesNoSm } from 'shared/utils.mjs'
 // Components
 import Link from 'next/link'
 import { Robot } from 'shared/components/robot/index.mjs'
@@ -46,8 +38,6 @@ export const SignUp = () => {
   const [emailValid, setEmailValid] = useState(false)
   const [result, setResult] = useState(false)
   const [showAll, setShowAll] = useState(false)
-
-  const state = ''
 
   const updateEmail = (value) => {
     setEmail(value)

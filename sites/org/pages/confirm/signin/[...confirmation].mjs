@@ -12,7 +12,6 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { Robot } from 'shared/components/robot/index.mjs'
-import { FlexButtonText } from 'shared/components/buttons/flex-button-text.mjs'
 import { KeyIcon } from 'shared/components/icons.mjs'
 import Link from 'next/link'
 

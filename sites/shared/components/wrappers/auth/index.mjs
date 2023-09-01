@@ -9,7 +9,7 @@ import { horFlexClasses } from 'shared/utils.mjs'
 import { LockIcon, PlusIcon } from 'shared/components/icons.mjs'
 import { ConsentForm, ns as gdprNs } from 'shared/components/gdpr/form.mjs'
 
-export const ns = ['auth', 'gdpr']
+export const ns = ['auth', gdprNs]
 
 const Wrap = ({ children }) => (
   <div className="m-auto max-w-xl text-center mt-8 p-8">{children}</div>
@@ -94,7 +94,6 @@ const RoleLacking = ({ t, requiredRole, role, banner }) => (
 const ConsentLacking = ({ banner, refresh }) => {
   const { setAccount, setToken, setSeenUser } = useAccount()
   const backend = useBackend()
-  const { t } = useTranslation(ns)
 
   const updateConsent = async ({ consent1, consent2 }) => {
     let consent = 0

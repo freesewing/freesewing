@@ -1,15 +1,12 @@
 // Hooks
-import { useEffect, useState, useContext } from 'react'
+import { useEffect, useState } from 'react'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 import { nsMerge } from 'shared/utils.mjs'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Link from 'next/link'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { BareLayout, ns as layoutNs } from 'site/components/layouts/bare.mjs'
@@ -24,8 +21,7 @@ const ns = nsMerge(pageNs, layoutNs, gdprNs, 'confirm')
 const SignupLinkExpired = () => <Popout fixme>Implement SignupLinkExpired compnonent</Popout>
 
 const ConfirmSignUpPage = () => {
-  // Context
-  const { loading } = useContext(LoadingContext)
+  // Hooks
   const router = useRouter()
   // Get confirmation ID and check from url
   const [confirmationId, confirmationCheck] = router.asPath.slice(1).split('/').slice(2)
