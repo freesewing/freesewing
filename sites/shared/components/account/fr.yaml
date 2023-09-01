@@ -19,7 +19,7 @@ signOut: S'inscrire
 politeOhCrap: Oh, les baguettes
 bio: Bio
 email: Adresse électronique
-img: Image de profil
+img: Image
 username: Nom d'utilisateur
 compare: Comparaison des ensembles de mesures
 consent: Consentement et protection de la vie privée
@@ -44,6 +44,10 @@ enableMfa: Activer l'authentification à deux facteurs
 disableMfa: Désactiver l'authentification à deux facteurs
 language: Langue
 developer: Développeur
+design: Design (conception)
+patternMetadata: Pattern metadata
+clonePattern: Clone pattern
+updatePattern: Update pattern
 reload: Recharger le compte
 export: Exportez vos données
 exportMsg: Click below to export your personal data
@@ -226,8 +230,13 @@ showcaseNew: Create a new showcase post
 showcaseNewInfo: If you would like to share something you (or someone else) made based on our designs, you can start a draft showcase post here.
 blogNew: Create a new blog post
 blogNewInfo: If you would like to write on the FreeSewing blog, you can start a draft blog post here.
-newBasic: Les bases
-newAdvanced: Va plus loin
+csetNew: Suggest a new curated measurements set
+csetNewInfo: We curate a collection of vetted measurments sets that we use to test patterns. You can suggest a measurements set here.
+opackNew: Suggest a new options pack
+opackNewInfo: We curate a collection of vetted option packs for each of our designs. You can suggest your options here.
+newPopular: Most popular
+newShare: Share / Show
+newDev: Design / Develop
 generateANewThing: "Génère un nouveau { thing }"
 website: Website
 linkedIdentities: Linked Identities
