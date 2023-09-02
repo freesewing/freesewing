@@ -10,6 +10,7 @@ export function CuratedSetModel(tools) {
   return decorateModel(this, tools, {
     name: 'curatedSet',
     jsonFields: ['measies', 'tagsDe', 'tagsEn', 'tagsEs', 'tagsFr', 'tagsNl', 'tagsUk'],
+    models: ['confirmation'],
   })
 }
 
@@ -301,6 +302,47 @@ CuratedSetModel.prototype.guardedDelete = async function ({ params, user }) {
    * Return 204
    */
   return this.setResponse(204, false)
+}
+
+/*
+ * Suggests a curated set
+ *
+ * @param {body} object - The request body
+ * @param {user} string - The user object as loaded by auth middleware
+ * @returns {CuratedSetModel} object - The CureatedSetModel
+ */
+CuratedSetModel.prototype.suggest = async function ({ body, user }) {
+  /*
+   * Enforce RBAC
+   */
+  if (!this.rbac.user(user)) return this.setResponse(403, 'insufficientAccessLevel')
+
+  /*
+   * Is set set?
+   */
+  if (!body.set || typeof body.set !== 'number') return this.setResponse(403, 'setMissing')
+
+  /*
+   * Is notes set?
+   */
+  if (!body.notes || typeof body.notes !== 'string') return this.setResponse(403, 'notesMissing')
+
+  /*
+   * Create confirmation to store the suggested data
+   */
+  await this.Confirmation.createRecord({
+    type: 'cset',
+    data: {
+      notes: body.notes,
+      set: body.set,
+    },
+    userId: user.uid,
+  })
+
+  /*
+   * Return id
+   */
+  return this.setResponse200({ submission: { type: 'cset', id: this.Confirmation.record.id } })
 }
 
 /*

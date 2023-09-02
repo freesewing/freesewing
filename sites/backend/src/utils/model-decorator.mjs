@@ -8,6 +8,7 @@ import { asJson, capitalize } from '../utils/index.mjs'
 import { ApikeyModel } from '../models/apikey.mjs'
 import { ConfirmationModel } from '../models/confirmation.mjs'
 import { CuratedSetModel } from '../models/curated-set.mjs'
+import { OptionPackModel } from '../models/option-pack.mjs'
 import { FlowModel } from '../models/flow.mjs'
 import { PatternModel } from '../models/pattern.mjs'
 import { SetModel } from '../models/set.mjs'
@@ -62,6 +63,7 @@ export function decorateModel(Model, tools, modelConfig) {
     if (modelConfig.models.includes('confirmation'))
       Model.Confirmation = new ConfirmationModel(tools)
     if (modelConfig.models.includes('cset')) Model.CuratedSet = new CuratedSetModel(tools)
+    if (modelConfig.models.includes('opack')) Model.OptionPack = new OptionPackModel(tools)
     if (modelConfig.models.includes('flow')) Model.Flow = new FlowModel(tools)
     if (modelConfig.models.includes('pattern')) Model.Pattern = new PatternModel(tools)
     if (modelConfig.models.includes('set')) Model.Set = new SetModel(tools)
