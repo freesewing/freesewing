@@ -1,0 +1,10 @@
+setLacksMeasiesForDesign: "Este conjunto carece de las medidas necesarias para generar un patrón { design } ."
+chooseSet: Elige una serie de medidas
+fsmtm: FreeSewing genera patrones de costura a medida.
+patternForWhichSet: '¿Para qué conjunto de medidas debemos generar un patrón?'
+yourSets: Tus conjuntos de medidas
+bookmarkedSets: Conjuntos de medidas que has marcado como favoritos
+curatedSets: Conjuntos de medidas curadas de FreeSewing
+curatedSetsAbout: Conjuntos de medidas curadas por FreeSewing que puedes utilizar para probar nuestra plataforma, o tus diseños.
+curateCuratedSets: Curar nuestra selección de Conjuntos de Medidas Curadas
+useThisSet: Utiliza este conjunto de medidas

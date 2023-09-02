@@ -3,6 +3,3 @@ settingsSaved: Settings saved
 backendError: Backend returned an error
 copiedToClipboard: Скопійовано в буфер обміну
 processingUpdate: Processing update
-generatingPdf: Generating your PDF, one moment please
-pdfReady: PDF generated
-pdfFailed: An unexpected error occured while generating your PDF
