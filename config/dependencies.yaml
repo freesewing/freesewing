@@ -100,7 +100,7 @@ jaeger:
     '@freesewing/plugin-mirror': *freesewing
 new-design:
   _:
-    'axios': '1.4.0'
+    'axios': '1.5.0'
     'chalk': '5.0.1'
     'execa': '7.2.0'
     'mustache': '4.2.0'
@@ -192,7 +192,7 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.398.0'
+    '@aws-sdk/client-sesv2': '3.403.0'
     '@prisma/client': &prisma '5.2.0'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
@@ -228,7 +228,7 @@ dev:
     '@next/bundle-analyzer': &next '13.4.19'
     '@tailwindcss/typography': &tailwindTypography '0.5.9'
     'algoliasearch': '4.19.1'
-    'daisyui': &daisyui '3.6.3'
+    'daisyui': &daisyui '3.6.4'
     'lodash.get': *_get
     'lodash.orderby': &_orderby '4.6.0'
     'lodash.set': *_set
@@ -255,7 +255,7 @@ dev:
     'autoprefixer': '10.4.15'
     'eslint-config-next': *next
     'js-yaml': &jsYaml '4.1.0'
-    'postcss': &postcss '8.4.28'
+    'postcss': &postcss '8.4.29'
     'playwright': '^1.32.3'
     'remark-extract-frontmatter': '3.2.0'
     'remark-mdx-frontmatter': '3.0.0'
@@ -284,7 +284,7 @@ lab:
     'react': *react
     'react-copy-to-clipboard': *reactCopyToClipboard
     'react-hotkeys-hook': *reactHotkeysHook
-    'react-i18next': &reactI18next '13.2.0'
+    'react-i18next': &reactI18next '13.2.1'
     'react-instantsearch-dom': *reactInstantsearchDom
     'react-markdown': *reactMarkdown
     'react-swipeable': *reactSwipeable
@@ -314,7 +314,7 @@ org:
     'daisyui': *daisyui
     'echarts': 5.4.2
     'echarts-for-react': 3.0.2
-    'jotai': &jotai '2.4.0'
+    'jotai': &jotai '2.4.1'
     'jotai-location': &jotai-location '0.5.1'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
@@ -364,7 +364,7 @@ shared:
     'lodash.unset': *_unset
     'lodash.get': *_get
     'mdast-util-toc': '7.0.0'
-    'mermaid': '10.3.1'
+    'mermaid': '10.4.0'
     'ora': '7.0.1'
     'pdfkit': '0.13.0'
     'postcss-for': '2.1.1'

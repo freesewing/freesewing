@@ -2,6 +2,7 @@
 import { useState, useContext } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useTranslation } from 'next-i18next'
+import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Dependencies
@@ -17,6 +18,7 @@ import {
   KeyIcon,
   SettingsIcon,
   EmailIcon,
+  DownIcon,
 } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { EmailInput } from 'shared/components/inputs.mjs'
@@ -30,11 +32,12 @@ export const SignUp = () => {
 
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
+  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   const [email, setEmail] = useState('')
   const [emailValid, setEmailValid] = useState(false)
   const [result, setResult] = useState(false)
-  const [loading, setLoading] = useState(false)
+  const [showAll, setShowAll] = useState(false)
 
   const updateEmail = (value) => {
     setEmail(value)
@@ -44,8 +47,10 @@ export const SignUp = () => {
 
   const signupHandler = async (evt) => {
     evt.preventDefault()
-    setLoading(true)
-    if (!emailValid) return
+    if (!emailValid) {
+      setLoadingStatus([true, t('susi:pleaseProvideValidEmail'), true, false])
+      return
+    }
     let res
     try {
       res = await backend.signUp({
@@ -80,14 +85,21 @@ export const SignUp = () => {
         </ModalWrapper>
       )
     }
-    setLoading(false)
   }
 
-  const loadingClasses = loading ? 'opacity-50' : ''
+  const initOauth = async (provider) => {
+    setLoadingStatus([true, t(`status:contactingBackend`)])
+    const result = await backend.oauthInit({ provider, language: i18n.language })
+    if (result.success) {
+      setLoadingStatus([true, t(`status:contacting${provider}`)])
+      window.location.href = result.data.authUrl
+    }
+  }
 
   return (
     <div className="w-full">
-      <h2 className={`text-inherit ${loadingClasses}`}>
+      <LoadingStatus />
+      <h2 className="text-inherit">
         {result ? (
           result === 'success' ? (
             <span>{t('susi:emailSent')}!</span>
@@ -132,58 +144,81 @@ export const SignUp = () => {
         )
       ) : (
         <>
-          <p className={`text-inherit ${loadingClasses}`}>{t('toReceiveSignupLink')}:</p>
+          <p className="text-inherit">{t('toReceiveSignupLink')}:</p>
           <form onSubmit={signupHandler}>
             <EmailInput
               id="signup-email"
               label={t('susi:emailAddress')}
+              current={email}
+              original={''}
+              valid={() => emailValid}
               placeholder={t('susi:emailAddress')}
               update={updateEmail}
             />
             <button
               className={`btn btn-primary btn-lg mt-2 w-full ${horFlexClasses} disabled:bg-neutral disabled:text-neutral-content disabled:opacity-50`}
               type="submit"
-              disabled={!emailValid}
             >
-              <span className="hidden md:block">
-                <EmailIcon />
-              </span>
-              {emailValid ? t('susi:emailSignupLink') : t('susi:pleaseProvideValidEmail')}
-              <span className="hidden md:block">
-                <EmailIcon />
-              </span>
+              <EmailIcon />
+              {t('susi:emailSignupLink')}
             </button>
           </form>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center mt-4">
-            {['Google', 'Github'].map((provider) => (
-              <button
-                key={provider}
-                id={provider}
-                className={`${horFlexClasses} btn btn-secondary`}
+          {showAll ? (
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2 items-center mt-4">
+                {['Google', 'GitHub'].map((provider) => (
+                  <button
+                    key={provider}
+                    id={provider}
+                    className={`${horFlexClasses} btn btn-secondary`}
+                    onClick={() => initOauth(provider)}
+                  >
+                    {provider === 'Google' ? <GoogleIcon stroke={0} /> : <GitHubIcon />}
+                    <span>{t('susi:signUpWithProvider', { provider })}</span>
+                  </button>
+                ))}
+              </div>
+              <Link
+                className={`${horFlexClassesNoSm} w-full btn btn-lg btn-neutral mt-2`}
+                href="/signup"
               >
-                {provider === 'Google' ? <GoogleIcon stroke={0} /> : <GitHubIcon />}
-                <span>{t('susi:signUpWithProvider', { provider })}</span>
+                <span className="hidden md:block">
+                  <KeyIcon className="h-10 w-10" />
+                </span>
+                {t('susi:signInHere')}
+              </Link>
+              <Link
+                className={`${horFlexClassesNoSm} w-full btn btn-neutral btn-outline mt-2`}
+                href="/migrate"
+              >
+                <span className="hidden md:block">
+                  <SettingsIcon />
+                </span>
+                {t('susi:migrateV2Account')}
+              </Link>
+              <div className="flex flex-row justify-center mt-2">
+                <button
+                  onClick={() => setShowAll(false)}
+                  className={`btn btn-ghost ${horFlexClasses}`}
+                >
+                  <DownIcon className="w-6 h-6 rotate-180" />
+                  {t('susi:fewerOptions')}
+                  <DownIcon className="w-6 h-6 rotate-180" />
+                </button>
+              </div>
+            </>
+          ) : (
+            <div className="flex flex-row justify-center mt-2">
+              <button
+                onClick={() => setShowAll(true)}
+                className={`btn btn-ghost ${horFlexClasses}`}
+              >
+                <DownIcon />
+                {t('susi:moreOptions')}
+                <DownIcon />
               </button>
-            ))}
-          </div>
-          <Link
-            className={`${horFlexClassesNoSm} w-full btn btn-lg btn-neutral mt-2`}
-            href="/signup"
-          >
-            <span className="hidden md:block">
-              <KeyIcon className="h-10 w-10" />
-            </span>
-            {t('susi:signInHere')}
-          </Link>
-          <Link
-            className={`${horFlexClassesNoSm} w-full btn btn-neutral btn-outline mt-2`}
-            href="/migrate"
-          >
-            <span className="hidden md:block">
-              <SettingsIcon />
-            </span>
-            {t('susi:migrateV2Account')}
-          </Link>
+            </div>
+          )}
         </>
       )}
     </div>

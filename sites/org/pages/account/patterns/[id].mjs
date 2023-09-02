@@ -16,6 +16,11 @@ const ns = nsMerge(patternsNs, authNs, pageNs, 'status')
  * Some things should never generated as SSR
  * So for these, we run a dynamic import and disable SSR rendering
  */
+const DynamicAuthWrapper = dynamic(
+  () => import('shared/components/wrappers/auth/index.mjs').then((mod) => mod.AuthWrapper),
+  { ssr: false }
+)
+
 const DynamicPattern = dynamic(
   () => import('shared/components/account/patterns.mjs').then((mod) => mod.Pattern),
   { ssr: false }
@@ -32,7 +37,9 @@ const PatternPage = ({ page, id }) => {
 
   return (
     <PageWrapper {...page} title={`${t('patterns')}: #${id}`}>
-      <DynamicPattern id={id} publicOnly />
+      <DynamicAuthWrapper>
+        <DynamicPattern id={id} />
+      </DynamicAuthWrapper>
     </PageWrapper>
   )
 }

@@ -19,6 +19,7 @@ import {
 } from 'shared/components/icons.mjs'
 import Link from 'next/link'
 import { MenuWrapper } from 'shared/components/workbench/menus/shared/menu-wrapper.mjs'
+import { isProduction } from 'shared/config/freesewing.config.mjs'
 
 export const ns = ['workbench', 'sections']
 
@@ -46,7 +47,7 @@ export const NavButton = ({
   const className = `w-full flex flex-row items-center px-4 py-2 ${extraClasses} ${
     active ? 'text-secondary' : ''
   }`
-  const span = <span className="font-bold block grow text-left">{label}</span>
+  const span = <span className="font-normal block grow text-left">{label}</span>
 
   return onClick ? (
     <button {...{ onClick, className }} title={label}>
@@ -70,7 +71,7 @@ const NavIcons = ({ setView, setDense, dense, view }) => {
       <NavButton
         onClick={() => setDense(!dense)}
         label={t('workbench:viewMenu')}
-        extraClasses="hidden lg:flex text-success bg-neutral hover:bg-success hover:text-neutral"
+        extraClasses="hidden lg:flex text-accent bg-neutral hover:bg-accent hover:text-neutral-content"
       >
         {dense ? (
           <RightIcon
@@ -109,13 +110,15 @@ const NavIcons = ({ setView, setDense, dense, view }) => {
       >
         <PrintIcon className={iconSize} />
       </NavButton>
-      <NavButton
-        onClick={() => setView('cut')}
-        label={t('workbench:cutLayout')}
-        active={view === 'cut'}
-      >
-        <CutIcon className={iconSize} />
-      </NavButton>
+      {!isProduction && (
+        <NavButton
+          onClick={() => setView('cut')}
+          label={t('workbench:cutLayout')}
+          active={view === 'cut'}
+        >
+          <CutIcon className={iconSize} />
+        </NavButton>
+      )}
       <NavButton
         onClick={() => setView('save')}
         label={t('workbench:savePattern')}

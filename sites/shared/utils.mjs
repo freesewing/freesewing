@@ -433,14 +433,26 @@ export const parseDistanceInput = (val = false, imperial = false) => {
 /*
  * To spread icon + text horizontal
  */
-export const horFlexClasses = 'flex flex-row items-center justify-between gap-4'
+export const horFlexClasses = 'flex flex-row items-center justify-between gap-4 w-full'
 
 /*
  * To spread icon + text horizontal but only from md upwards
  */
-export const horFlexClassesNoSm = 'md:flex md:flex-row md:items-center md:justify-between md:gap-4'
+export const horFlexClassesNoSm =
+  'md:flex md:flex-row md:items-center md:justify-between md:gap-4 md-w-full'
 
 /*
  * A method that check that a var is not empty
  */
 export const notEmpty = (thing) => `${thing}`.length > 0
+
+/*
+ * Generates a random string (used in Oauth flow)
+ */
+const dec2hex = (dec) => dec.toString(16).padStart(2, '0')
+export const randomString = (len = 42) => {
+  if (typeof window === 'undefined') return '' // Not used in SSR
+  const arr = new Uint8Array(len / 2)
+  window.crypto.getRandomValues(arr) // eslint-disable-line
+  return Array.from(arr, dec2hex).join('')
+}

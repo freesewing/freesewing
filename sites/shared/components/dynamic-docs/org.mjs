@@ -4,6 +4,7 @@ import { Spinner } from 'shared/components/spinner.mjs'
 import { MdxWrapper } from './wrapper.mjs'
 import { components } from 'shared/components/mdx/index.mjs'
 
+const orgComponents = components()
 export const loaders = {
   en: (path) => import(`orgmarkdown/docs/${path}/en.md`),
   de: (path) => import(`orgmarkdown/docs/${path}/de.md`),
@@ -34,7 +35,7 @@ function DynamicDocs({ path, lang }) {
 
   return (
     <MdxWrapper {...frontmatter} path={path} language={lang}>
-      <MDX components={components} />
+      <MDX components={orgComponents} />
     </MdxWrapper>
   )
 }

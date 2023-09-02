@@ -213,23 +213,57 @@ if (baseConfig.use.ses)
   }
 
 // Oauth config for Github as a provider
-if (baseConfig.use.oauth?.github)
+if (baseConfig.use.oauth?.github) {
   baseConfig.oauth.github = {
     clientId: process.env.BACKEND_OAUTH_GITHUB_CLIENT_ID,
     clientSecret: process.env.BACKEND_OAUTH_GITHUB_CLIENT_SECRET,
     tokenUri: 'https://github.com/login/oauth/access_token',
     dataUri: 'https://api.github.com/user',
     emailUri: 'https://api.github.com/user/emails',
+    redirectUri: `${
+      process.env.BACKEND_OAUTH_GITHUB_CALLBACK_SITE
+        ? process.env.BACKEND_OAUTH_GITHUB_CALLBACK_SITE
+        : 'https://next.freesewing.org'
+    }/signin/callback/github`,
   }
+  baseConfig.oauth.github.url = (state) =>
+    '' +
+    'https://github.com/login/oauth/authorize?client_id=' +
+    baseConfig.oauth.github.clientId +
+    '&redirect_uri=' +
+    baseConfig.oauth.github.redirectUri +
+    `&scope=read:user user:email&state=${state}`
+}
 
 // Oauth config for Google as a provider
-if (baseConfig.use.oauth?.google)
+if (baseConfig.use.oauth?.google) {
   baseConfig.oauth.google = {
     clientId: process.env.BACKEND_OAUTH_GOOGLE_CLIENT_ID,
     clientSecret: process.env.BACKEND_OAUTH_GOOGLE_CLIENT_SECRET,
     tokenUri: 'https://oauth2.googleapis.com/token',
     dataUri: 'https://people.googleapis.com/v1/people/me?personFields=emailAddresses,names,photos',
+    redirectUri: `${
+      process.env.BACKEND_OAUTH_GOOGLE_CALLBACK_SITE
+        ? process.env.BACKEND_OAUTH_GOOGLE_CALLBACK_SITE
+        : 'https://next.freesewing.org'
+    }/signin/callback/google`,
   }
+  baseConfig.oauth.google.url = (state) =>
+    '' +
+    'https://accounts.google.com/o/oauth2/v2/auth' +
+    '?response_type=code' +
+    '&client_id=' +
+    baseConfig.oauth.google.clientId +
+    '&redirect_uri=' +
+    baseConfig.oauth.google.redirectUri +
+    '&scope=' +
+    'https://www.googleapis.com/auth/userinfo.profile' +
+    ' ' +
+    'https://www.googleapis.com/auth/userinfo.email' +
+    '&access_type=online' +
+    '&state=' +
+    state
+}
 
 // Load local config
 const config = postConfig(baseConfig)
@@ -241,6 +275,7 @@ export const website = config.website
 export const github = config.github
 export const instance = config.instance
 export const exports = config.exports
+export const oauth = config.oauth
 
 const vars = {
   BACKEND_DB_URL: ['required', 'db.url'],

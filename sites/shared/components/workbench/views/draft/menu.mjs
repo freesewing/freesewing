@@ -69,7 +69,7 @@ export const DraftMenu = ({
             <span>{t(`${section.ns}:${section.name}.t`)}</span>
             {section.icon}
           </h5>
-          <p>{t(`${section.ns}:${section.name}.d`)}</p>
+          <p className="text-left">{t(`${section.ns}:${section.name}.d`)}</p>
         </>,
         section.menu,
       ])}
