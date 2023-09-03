@@ -45,6 +45,7 @@ export const setup = async () => {
       flow: '🪁 ',
       issue: '🚩 ',
       bookmark: '🔖 ',
+      opack: '✨ ',
     },
     randomString,
   }

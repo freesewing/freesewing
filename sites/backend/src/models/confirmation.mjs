@@ -32,7 +32,7 @@ ConfirmationModel.prototype.guardedRead = async function ({ params }) {
   /*
    * Is the check set?
    */
-  if (typeof params.check === 'undefined') return this.setResponse(404)
+  //if (typeof params.check === 'undefined') return this.setResponse(404)
 
   /*
    * Attempt to read record from the database
@@ -43,6 +43,13 @@ ConfirmationModel.prototype.guardedRead = async function ({ params }) {
    * Does it exist?
    */
   if (!this.record) return this.setResponse(404)
+
+  /*
+   * For types that do not require a check (submissions) return data
+   */
+  if (['sugset'].includes(this.record.type)) {
+    return this.setResponse200({ submission: { id: this.record.id, ...this.clear.data } })
+  }
 
   /*
    * Return data only if the check matches

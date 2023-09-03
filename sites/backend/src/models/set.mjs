@@ -280,21 +280,18 @@ SetModel.prototype.guardedUpdate = async function ({ params, body, user }) {
   /*
    * Image (img)
    */
-  if (typeof body.img === 'string') {
-    const imgData = {
-      id: `set-${this.record.id}`,
-      metadata: {
-        user: user.uid,
-        name: this.clear.name,
+  if (typeof body.img === 'string')
+    data.img = await replaceImage(
+      {
+        id: `set-${this.record.id}`,
+        data: body.img,
+        metadata: {
+          user: user.uid,
+          name: this.clear.name,
+        },
       },
-    }
-    /*
-     * Allow both a base64 encoded binary image or an URL
-     */
-    if (body.img.slice(0, 4) === 'http') imgData.url = body.img
-    else imgData.b64 = body.img
-    data.img = await replaceImage(imgData, this.isTest(body))
-  }
+      this.isTest(body)
+    )
 
   /*
    * Now update the database record

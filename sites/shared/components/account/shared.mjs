@@ -126,7 +126,7 @@ export const welcomeSteps = {
 }
 
 export const DisplayRow = ({ title, children, keyWidth = 'w-24' }) => (
-  <div className="flex flex-row flex-wrap items-center lg:gap-4 my-2">
+  <div className="flex flex-row flex-wrap items-center lg:gap-4 my-2 w-full">
     <div className={`${keyWidth} text-left md:text-right block md:inline font-bold pr-4 shrink-0`}>
       {title}
     </div>
