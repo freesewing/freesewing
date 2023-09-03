@@ -78,17 +78,12 @@ OptionPackModel.prototype.guardedCreate = async function ({ body, user }) {
    * Now that we have a record and ID, we can update the image after uploading it to cloudflare
    */
   if (body.img) {
-    const imgData = {
+    const img = await replaceImage({
       id: `opack-${this.record.id}`,
+      data: body.img,
       metadata: { user: user.uid },
-    }
-    /*
-     * Allow both a base64 encoded binary image or an URL
-     */
-    if (body.img.slice(0, 4) === 'http') imgData.url = body.img
-    else imgData.b64 = body.img
-    const img = await replaceImage(imgData)
-    if (img) await this.update({ img: img.url })
+    })
+    if (img) await this.update({ img })
   }
 
   await this.read({ id: this.record.id })
@@ -212,17 +207,12 @@ OptionPackModel.prototype.guardedUpdate = async function ({ params, body, user }
    * Handle the image, if there is one
    */
   if (typeof body.img === 'string') {
-    const imgData = {
+    const img = await replaceImage({
       id: `opack-${this.record.id}`,
+      data: body.img,
       metadata: { user: user.uid },
-    }
-    /*
-     * Allow both a base64 encoded binary image or an URL
-     */
-    if (body.img.slice(0, 4) === 'http') imgData.url = body.img
-    else imgData.b64 = body.img
-    const img = await replaceImage(imgData)
-    if (img) data.img = img.url
+    })
+    if (img) data.img = img
   }
 
   /*

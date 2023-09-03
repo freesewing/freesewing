@@ -148,7 +148,8 @@ model CuratedSet {
   tagsUk    String    @default("{}")
   measies   String    @default("{}")
   patterns  Pattern[]
-  updatedAt DateTime @updatedAt
+  updatedAt DateTime  @updatedAt
+  published Boolean   @default(false)
 }
 
 model OptionPack {

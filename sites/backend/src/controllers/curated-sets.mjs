@@ -88,3 +88,14 @@ CuratedSetsController.prototype.suggest = async (req, res, tools) => {
 
   return CuratedSet.sendResponse(res)
 }
+
+/*
+ * Create a curated set from a suggested measurments set
+ * See: https://freesewing.dev/reference/backend/api
+ */
+CuratedSetsController.prototype.fromSuggestion = async (req, res, tools) => {
+  const CuratedSet = new CuratedSetModel(tools)
+  await CuratedSet.fromSuggestion(req)
+
+  return CuratedSet.sendResponse(res)
+}

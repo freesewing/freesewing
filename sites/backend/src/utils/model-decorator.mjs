@@ -188,7 +188,7 @@ export function decorateModel(Model, tools, modelConfig) {
       return this.setResponse(500, `create${capitalize(modelConfig.name)}Failed`)
     }
 
-    return this
+    return this.recordExists()
   }
 
   /*

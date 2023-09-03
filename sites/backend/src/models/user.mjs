@@ -1294,21 +1294,15 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
   /*
    * Image (img)
    */
-  if (typeof body.img === 'string') {
-    const imgData = {
+  if (typeof body.img === 'string')
+    data.img = await replaceImage({
       id: `user-${this.record.ihash}`,
+      data: body.img,
       metadata: {
         user: user.uid,
         ihash: this.record.ihash,
       },
-    }
-    /*
-     * Allow both a base64 encoded binary image or an URL
-     */
-    if (body.img.slice(0, 4) === 'http') imgData.url = body.img
-    else imgData.b64 = body.img
-    data.img = await replaceImage(imgData)
-  }
+    })
 
   /*
    * Now update the database record

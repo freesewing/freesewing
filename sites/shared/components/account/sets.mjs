@@ -38,6 +38,9 @@ import {
   WarningIcon,
   FilterIcon,
   CameraIcon,
+  CsetIcon,
+  BoolYesIcon,
+  BoolNoIcon,
 } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import Markdown from 'react-markdown'
@@ -45,6 +48,7 @@ import Timeago from 'react-timeago'
 import { DisplayRow } from './shared.mjs'
 import { isDegreeMeasurement } from 'config/measurements.mjs'
 import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DocsLink } from 'shared/components/mdx/docs-helpers.mjs'
 
 import {
   StringInput,
@@ -206,6 +210,7 @@ export const Mset = ({ id, publicOnly = false }) => {
 
   const [filter, setFilter] = useState(false)
   const [edit, setEdit] = useState(false)
+  const [suggest, setSuggest] = useState(false)
   const [mset, setMset] = useState()
   // Set fields for editing
   const [name, setName] = useState(mset?.name)
@@ -331,10 +336,27 @@ export const Mset = ({ id, publicOnly = false }) => {
           </button>
           {!publicOnly && (
             <>
+              {account.control > 3 && mset.public ? (
+                <button
+                  onClick={() => {
+                    setSuggest(!suggest)
+                    setEdit(false)
+                  }}
+                  className={`btn ${
+                    suggest ? 'btn-neutral' : 'btn-primary'
+                  } btn-outline ${horFlexClasses}`}
+                >
+                  {suggest ? <ResetIcon /> : <CsetIcon />}
+                  {t(suggest ? 'account:cancel' : 'account:suggestForCuration')}
+                </button>
+              ) : null}
               {edit ? (
                 <>
                   <button
-                    onClick={() => setEdit(false)}
+                    onClick={() => {
+                      setEdit(false)
+                      setSuggest(false)
+                    }}
                     className={`btn btn-neutral btn-outline ${horFlexClasses}`}
                   >
                     <ResetIcon />
@@ -347,7 +369,10 @@ export const Mset = ({ id, publicOnly = false }) => {
                 </>
               ) : (
                 <button
-                  onClick={() => setEdit(true)}
+                  onClick={() => {
+                    setEdit(true)
+                    setSuggest(false)
+                  }}
                   className={`btn btn-primary ${horFlexClasses}`}
                 >
                   <EditIcon /> {t('editThing', { thing: t('account:set') })}
@@ -360,6 +385,14 @@ export const Mset = ({ id, publicOnly = false }) => {
       <div className="flex flex-row flex-wrap gap-4 text-sm items-center justify-between mb-2"></div>
     </>
   )
+
+  if (suggest)
+    return (
+      <div className="max-w-2xl">
+        {heading}
+        <SuggestCset {...{ mset, setLoadingStatus, backend, t }} />
+      </div>
+    )
 
   if (!edit)
     return (
@@ -1002,6 +1035,126 @@ export const SetPicker = ({ design, href = false, clickHandler = false, size = '
       <UserSetPicker {...pickerProps} />
       <BookmarkedSetPicker {...pickerProps} />
       <CuratedSetPicker {...pickerProps} />
+    </>
+  )
+}
+
+const SuggestCset = ({ mset, backend, setLoadingStatus, t }) => {
+  // State
+  const [height, setHeight] = useState('')
+  const [img, setImg] = useState('')
+  const [name, setName] = useState('')
+  const [notes, setNotes] = useState('')
+  const [submission, setSubmission] = useState(false)
+
+  // Method to submit the form
+  const suggestSet = async () => {
+    setLoadingStatus([true, 'status:contactingBackend'])
+    const result = await backend.suggestCset({ set: mset.id, height, img, name, notes })
+    if (result.success && result.data.submission) {
+      setSubmission(result.data.submission)
+      setLoadingStatus([true, 'status:nailedIt', true, true])
+    } else setLoadingStatus([true, 'backendError', true, false])
+  }
+
+  const missing = []
+  for (const m of measurements) {
+    if (typeof mset.measies[m] === 'undefined') missing.push(m)
+  }
+
+  if (submission) {
+    const url = `/curate/sets/suggested/${submission.id}`
+
+    return (
+      <>
+        <h2>{t('account:thankYouVeryMuch')}</h2>
+        <p>{t('account:csetSuggestedMsg')}</p>
+        <p>
+          {t('account:itIsAvailableAt')}: <PageLink href={url} txt={url} />
+        </p>
+      </>
+    )
+  }
+
+  return (
+    <>
+      <h2>{t('account:suggestCset')}</h2>
+      <h4 className="flex flex-row items-center gap-2">
+        {missing.length > 0 ? <BoolNoIcon /> : <BoolYesIcon />}
+        {t('account:measurements')}
+      </h4>
+      {missing.length > 0 ? (
+        <>
+          <p>{t('account:csetAllMeasies')}</p>
+          <p>{t('account:csetMissing')}:</p>
+          <ul className="list list-inside list-disc ml-4">
+            {missing.map((m) => (
+              <li key={m}>{t(`measurements:${m}`)}</li>
+            ))}
+          </ul>
+        </>
+      ) : (
+        <p>{t('account:allMeasiesAvailable')}</p>
+      )}
+      <h4 className="flex flex-row items-center gap-2">
+        {name.length > 1 ? <BoolYesIcon /> : <BoolNoIcon />}
+        {t('account:name')}
+      </h4>
+      <p>{t('account:csetNameMsg')}</p>
+      <StringInput
+        label={t('account:name')}
+        current={name}
+        update={setName}
+        valid={(val) => val.length > 1}
+      />
+      <h4 className="flex flex-row items-center gap-2">
+        {height.length > 1 ? <BoolYesIcon /> : <BoolNoIcon />}
+        {t('measurements:height')}
+      </h4>
+      <p>{t('account:csetHeightMsg1')}</p>
+      <StringInput
+        label={t('measurements:height')}
+        current={height}
+        update={setHeight}
+        valid={(val) => val.length > 1}
+      />
+      <h4 className="flex flex-row items-center gap-2 mt-4">
+        {img.length > 0 ? <BoolYesIcon /> : <BoolNoIcon />}
+        {t('account:img')}
+      </h4>
+      <p>
+        {t('account:csetImgMsg')}: <PageLink href="/docs/site/csets">{t('account:docs')}</PageLink>
+      </p>
+      <PassiveImageInput
+        label={t('account:img')}
+        current={img}
+        update={setImg}
+        valid={(val) => val.length > 1}
+      />
+      <h4 className="flex flex-row items-center gap-2 mt-4">
+        <BoolYesIcon />
+        {t('account:notes')}
+      </h4>
+      <p>
+        {t('account:csetNotesMsg')}
+        {t('account:csetNotesMsg')}
+      </p>
+      <Popout tip compact>
+        {t('account:mdSupport')}
+      </Popout>
+      <MarkdownInput
+        label={t('account:notes')}
+        current={notes}
+        update={setNotes}
+        valid={() => true}
+      />
+      <button
+        className="btn btn-primary w-full mt-4"
+        disabled={!(missing.length === 0 && height.length > 1 && img.length > 0)}
+        onClick={suggestSet}
+      >
+        {t('account:suggestForCuration')}
+      </button>
     </>
   )
 }

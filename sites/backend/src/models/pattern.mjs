@@ -127,7 +127,7 @@ PatternModel.prototype.guardedCreate = async function ({ body, user }) {
      * If an image was created, update the record with its ID
      * If not, just update the record from the database
      */
-    await this.update(this.cloak({ img: img.url }))
+    await this.update(this.cloak({ img }))
   } else await this.read({ id: this.record.id }, { set: true, cset: true })
 
   /*

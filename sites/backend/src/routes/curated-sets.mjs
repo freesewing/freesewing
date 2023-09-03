@@ -56,4 +56,12 @@ export function curatedSetsRoutes(tools) {
   app.post('/curated-sets/suggest/key', passport.authenticate(...bsc), (req, res) =>
     CuratedSets.suggest(req, res, tools)
   )
+
+  // Create a curated measurements set from a suggested set
+  app.post('/curated-sets/from/:id/jwt', passport.authenticate(...jwt), (req, res) =>
+    CuratedSets.fromSuggestion(req, res, tools)
+  )
+  app.post('/curated-sets/from/:id/key', passport.authenticate(...bsc), (req, res) =>
+    CuratedSets.fromSuggestion(req, res, tools)
+  )
 }
