@@ -41,7 +41,6 @@ import {
   CsetIcon,
   BoolYesIcon,
   BoolNoIcon,
-  CameraIcon,
 } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import Markdown from 'react-markdown'
