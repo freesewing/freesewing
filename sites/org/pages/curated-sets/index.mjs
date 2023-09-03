@@ -17,7 +17,7 @@ const ns = nsMerge(setsNs, pageNs)
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const CuratedSetsPage = ({ page, id }) => {
+const CuratedSetsPage = ({ page }) => {
   const { t } = useTranslation(ns)
 
   return (

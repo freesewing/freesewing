@@ -57,6 +57,7 @@ export const CsetSubmission = ({ id }) => {
 
   return (
     <div className="max-w-2xl">
+      <LoadingStatus />
       <DisplayRow title={t('account:name')} keyWidth="w-48">
         {submission.name}
       </DisplayRow>

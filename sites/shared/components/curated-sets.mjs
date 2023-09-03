@@ -2,7 +2,7 @@
 import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewing.config.mjs'
-import { shortDate, cloudflareImageUrl, capitalize, horFlexClasses } from 'shared/utils.mjs'
+import { shortDate, cloudflareImageUrl, capitalize } from 'shared/utils.mjs'
 //import orderBy from 'lodash.orderby'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
@@ -17,7 +17,7 @@ import Markdown from 'react-markdown'
 import Timeago from 'react-timeago'
 import { MeasieVal } from './account/sets.mjs'
 
-export const ns = [inputNs, 'account', 'patterns', 'status', 'measurements', 'sets']
+export const ns = ['account', 'patterns', 'status', 'measurements', 'sets']
 
 const SetLineup = ({ sets = [], onClick = false }) => (
   <div
@@ -44,8 +44,8 @@ const SetLineup = ({ sets = [], onClick = false }) => (
       }
       if (onClick) props.onClick = () => onClick(set.id)
 
-      if (onClick) return <button {...props}></button>
-      else return <div {...props}></div>
+      if (onClick) return <button {...props} key={set.id}></button>
+      else return <div {...props} key={set.id}></div>
     })}
   </div>
 )
@@ -134,11 +134,9 @@ const ShowCuratedSet = ({ cset }) => {
 
 export const CuratedSet = ({ id }) => {
   // Hooks
-  const { control } = useAccount()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const backend = useBackend()
-  const { t, i18n } = useTranslation(ns)
-  const lang = i18n.language
+  const { t } = useTranslation(ns)
 
   // State
   const [cset, setCset] = useState()
@@ -146,12 +144,12 @@ export const CuratedSet = ({ id }) => {
   // Effect
   useEffect(() => {
     const getCset = async () => {
-      setLoadingStatus([true, t('backendLoadingStarted')])
+      setLoadingStatus([true, 'status:contactingBackend'])
       const result = await backend.getCuratedSet(id)
       if (result.success) {
         setCset(result.data.curatedSet)
         setLoadingStatus([true, 'status:dataLoaded', true, true])
-      } else setLoadingStatus([true, 'backendError', true, false])
+      } else setLoadingStatus([true, 'status:backendError', true, false])
     }
     if (id) getCset()
   }, [id])
@@ -169,7 +167,6 @@ export const CuratedSet = ({ id }) => {
 // Component for the curated-sets page
 export const CuratedSets = () => {
   // Hooks
-  const { t } = useTranslation(ns)
   const backend = useBackend()
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
@@ -180,20 +177,21 @@ export const CuratedSets = () => {
   // Effects
   useEffect(() => {
     const getSets = async () => {
-      setLoadingStatus([true, 'status:contactingBackend'])
+      setLoadingStatus([true, 'contactingBackend'])
       const result = await backend.getCuratedSets()
       if (result.success) {
         const allSets = {}
         for (const set of result.data.curatedSets) allSets[set.id] = set
         setSets(allSets)
         setLoadingStatus([true, 'status:dataLoaded', true, true])
-      } else setLoadingStatus([true, 'backendError', true, false])
+      } else setLoadingStatus([true, 'status:backendError', true, false])
     }
     getSets()
   }, [])
 
   return (
     <div className="max-w-7xl xl:pl-4">
+      <LoadingStatus />
       <SetLineup sets={Object.values(sets)} onClick={setSelected} />
       {selected && <ShowCuratedSet cset={sets[selected]} />}
     </div>

@@ -48,8 +48,6 @@ import Timeago from 'react-timeago'
 import { DisplayRow } from './shared.mjs'
 import { isDegreeMeasurement } from 'config/measurements.mjs'
 import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
-import { DocsLink } from 'shared/components/mdx/docs-helpers.mjs'
-
 import {
   StringInput,
   PassiveImageInput,
