@@ -16,6 +16,7 @@ import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import Markdown from 'react-markdown'
 import Timeago from 'react-timeago'
 import { MeasieVal } from './account/sets.mjs'
+import { CameraIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['account', 'patterns', 'status', 'measurements', 'sets']
 
@@ -136,7 +137,6 @@ export const CuratedSet = ({ id }) => {
   // Hooks
   const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
   const backend = useBackend()
-  const { t } = useTranslation(ns)
 
   // State
   const [cset, setCset] = useState()

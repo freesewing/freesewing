@@ -378,11 +378,10 @@ CuratedSetModel.prototype.suggest = async function ({ body, user }) {
  * Creates a curated set from a suggested measurements set
  *
  * @param {params} object - The request URL parameters
- * @param {body} object - The request body
  * @param {user} string - The user object as loaded by auth middleware
  * @returns {CuratedSetModel} object - The CureatedSetModel
  */
-CuratedSetModel.prototype.fromSuggestion = async function ({ params, body, user }) {
+CuratedSetModel.prototype.fromSuggestion = async function ({ params, user }) {
   /*
    * Enforce RBAC
    */
