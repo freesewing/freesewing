@@ -32,7 +32,7 @@ export async function storeImage(props, isTest = false) {
         console.log('Failed to replace image on cloudflare', err)
       }
     } else {
-      console.log('Failed to upload image to cloudflare', err)
+      console.log('Failed to upload image to cloudflare', err.response.data)
     }
   }
 
@@ -113,8 +113,6 @@ export async function importImage(props, isTest = false) {
     // Do nothing
   }
 
-  console.log('Imported img', props.id)
-
   return props.id
 }
 
@@ -127,9 +125,15 @@ function getFormData({
   url = false,
   b64 = false,
   blob = false,
+  data = false,
   notPublic = false,
 }) {
   const form = new FormData()
+  // Data can be either a URL or b64
+  if (data) {
+    if (data.slice(0, 4) === 'http') url = data
+    else b64 = data
+  }
   form.append('id', id)
   form.append('metadata', JSON.stringify(metadata))
   // Handle base-64 encoded data

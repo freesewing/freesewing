@@ -10,6 +10,7 @@ export function CuratedSetModel(tools) {
   return decorateModel(this, tools, {
     name: 'curatedSet',
     jsonFields: ['measies', 'tagsDe', 'tagsEn', 'tagsEs', 'tagsFr', 'tagsNl', 'tagsUk'],
+    models: ['confirmation', 'set'],
   })
 }
 
@@ -82,7 +83,7 @@ CuratedSetModel.prototype.guardedCreate = async function ({ body, user }) {
   /*
    * If an image was uploaded, update the record with the image ID
    */
-  if (img) await this.update({ img: img.url })
+  if (img) await this.update({ img })
   /*
    * If not, just read the record from the datbasa
    */ else await this.read({ id: this.record.id })
@@ -260,7 +261,7 @@ CuratedSetModel.prototype.guardedUpdate = async function ({ params, body, user }
       },
       this.isTest(body)
     )
-    data.img = img.url
+    data.img = img
   }
 
   /*
@@ -304,12 +305,182 @@ CuratedSetModel.prototype.guardedDelete = async function ({ params, user }) {
 }
 
 /*
+ * Suggests a curated set
+ *
+ * @param {body} object - The request body
+ * @param {user} string - The user object as loaded by auth middleware
+ * @returns {CuratedSetModel} object - The CureatedSetModel
+ */
+CuratedSetModel.prototype.suggest = async function ({ body, user }) {
+  /*
+   * Enforce RBAC
+   */
+  if (!this.rbac.user(user)) return this.setResponse(403, 'insufficientAccessLevel')
+
+  /*
+   * Is set set?
+   */
+  if (!body.set || typeof body.set !== 'number') return this.setResponse(403, 'setMissing')
+
+  /*
+   * Is height set?
+   */
+  if (!body.height) return this.setResponse(403, 'heightMissing')
+
+  /*
+   * Is name set?
+   */
+  if (!body.name) return this.setResponse(403, 'nameMissing')
+
+  /*
+   * Is img set?
+   */
+  if (!body.img) return this.setResponse(403, 'imgMissing')
+
+  /*
+   * Create confirmation to store the suggested data
+   */
+  const data = {
+    name: body.name,
+    notes: body.notes ? body.notes : '',
+    set: body.set,
+    height: body.height,
+  }
+  await this.Confirmation.createRecord({ type: 'sugset', data, userId: user.uid })
+
+  /*
+   * Now the we have an id, upload the image
+   */
+  const img = await storeImage(
+    {
+      id: `sugset-${this.Confirmation.record.id}`,
+      data: body.img,
+      metadata: { user: user.uid },
+    },
+    this.isTest(body)
+  )
+
+  /*
+   * If an image was uploaded, update the record with the image ID
+   */
+  if (img) {
+    data.img = img
+    await this.Confirmation.update({ data })
+  }
+
+  /*
+   * Return id
+   */
+  return this.setResponse200({ submission: { type: 'cset', id: this.Confirmation.record.id } })
+}
+
+/*
+ * Creates a curated set from a suggested measurements set
+ *
+ * @param {params} object - The request URL parameters
+ * @param {user} string - The user object as loaded by auth middleware
+ * @returns {CuratedSetModel} object - The CureatedSetModel
+ */
+CuratedSetModel.prototype.fromSuggestion = async function ({ params, user }) {
+  /*
+   * Enforce RBAC
+   */
+  if (!this.rbac.curator(user)) return this.setResponse(403, 'insufficientAccessLevel')
+
+  /*
+   * Is submission id set?
+   */
+  if (!params.id) return this.setResponse(403, 'idMissing')
+
+  /*
+   * Attemt to read the confirmation record from the database
+   */
+  await this.Confirmation.read({ id: params.id })
+
+  /*
+   * If it does not exist, log a warning and return 404
+   */
+  if (!this.Confirmation.exists) {
+    log.warn(`Could not find confirmation id ${params.id}`)
+    return this.setResponse(404)
+  }
+
+  /*
+   * If it is the wrong confirmation type, log a warning and return 404
+   */
+  if (this.Confirmation.record.type !== 'sugset') {
+    log.warn(`Confirmation mismatch; ${params.id} is not a subset id`)
+    return this.setResponse(404)
+  }
+
+  /*
+   * Load the suggested measurements set
+   */
+  await this.Set.read({ id: this.Confirmation.clear.data.set })
+
+  /*
+   * It it does not exist, return 404
+   */
+  if (!this.Set.exists) {
+    log.warn(`Suggested set ${this.Confirmation.clear.data.set} does not exist`)
+    return this.setResponse(404)
+  }
+
+  /*
+   * Create data for new curated set
+   */
+  const name = this.Confirmation.clear.data.name
+  const notes = this.Confirmation.clear.data.notes || '--'
+
+  /*
+   * Now create the curated set
+   */
+  await this.createRecord({
+    // This image will need to be replaced
+    img: this.Confirmation.clear.data.img,
+    nameDe: name,
+    nameEn: name,
+    nameEs: name,
+    nameFr: name,
+    nameNl: name,
+    nameUk: name,
+    notesDe: notes,
+    notesEn: notes,
+    notesEs: notes,
+    notesFr: notes,
+    notesNl: notes,
+    notesUk: notes,
+    measies: JSON.stringify(this.Set.clear.measies),
+    published: false,
+  })
+
+  /*
+   * If it failed for some reason, bail out
+   */
+  if (!this.exists) {
+    log.warn(`Could not create set from suggested set`)
+    return this.setResponse(500)
+  }
+
+  /*
+   * Return 200 with updated data
+   */
+  return this.setResponse200({ set: this.asCuratedSet() })
+}
+
+/*
  * Returns record data fit for public publishing
  *
  * @returns {curatedSet} object - The Cureated Set as a plain object
  */
 CuratedSetModel.prototype.asCuratedSet = function () {
-  return this.record
+  return {
+    ...this.record,
+    measies:
+      typeof this.record.measies === 'string'
+        ? JSON.parse(this.record.measies)
+        : this.record.measies,
+  }
 }
 
 /*

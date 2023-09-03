@@ -481,6 +481,27 @@ Backend.prototype.removeImage = async function (id) {
 }
 
 /*
+ * Suggest a measurements set for curation
+ */
+Backend.prototype.suggestCset = async function (data) {
+  return responseHandler(await api.post(`/curated-sets/suggest/jwt`, data, this.auth))
+}
+
+/*
+ * Suggest an option pack
+ */
+Backend.prototype.suggestOpack = async function (data) {
+  return responseHandler(await api.post(`/option-packs/suggest/jwt`, data, this.auth))
+}
+
+/*
+ * Create a curated set from a suggested set
+ */
+Backend.prototype.csetFromSuggestedSet = async function (id) {
+  return responseHandler(await api.post(`/curated-sets/from/${id}/jwt`, {}, this.auth))
+}
+
+/*
  * Ping backend to see if current token is still valid
  */
 Backend.prototype.ping = async function () {

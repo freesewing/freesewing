@@ -3,7 +3,7 @@ import chalk from 'chalk'
 import dotenv from 'dotenv'
 import { asJson } from './utils/index.mjs'
 import { randomString } from './utils/crypto.mjs'
-import { measurements } from './measurements.mjs'
+import { measurements } from '../../../config/measurements.mjs'
 import get from 'lodash.get'
 import { readFileSync, writeFileSync } from 'node:fs'
 import { postConfig } from '../local-config.mjs'
@@ -81,6 +81,7 @@ const baseConfig = {
     set: process.env.BACKEND_AVATAR_SET || 'default-avatar',
     cset: process.env.BACKEND_AVATAR_CSET || 'default-avatar',
     pattern: process.env.BACKEND_AVATAR_PATTERN || 'default-avatar',
+    opack: process.env.BACKEND_AVATAR_OPACK || 'default-avatar',
   },
   db: {
     url: process.env.BACKEND_DB_URL || './db.sqlite',
