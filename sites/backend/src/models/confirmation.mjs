@@ -118,6 +118,11 @@ ConfirmationModel.prototype.removeSuggested = async function ({ user, params }, 
   await this.read({ id: params.id })
 
   /*
+   * Ensure type matches
+   */
+  if (this.record.type !== type) return this.setResponse(400, 'typeMismatch')
+
+  /*
    * If it does not exist, return 404
    */
   if (!this.exists) return this.setResponse(404)
