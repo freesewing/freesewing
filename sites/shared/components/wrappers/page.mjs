@@ -1,6 +1,8 @@
 // Dependencies
 import React, { useState, useEffect, useContext } from 'react'
 import { nsMerge } from 'shared/utils.mjs'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useTheme } from 'shared/hooks/use-theme.mjs'
 // Components
@@ -11,7 +13,7 @@ import { DefaultLayout, ns as defaultLayoutNs } from 'site/components/layouts/de
 import { Feeds } from 'site/components/feeds.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 
-export const ns = nsMerge(layoutNs, defaultLayoutNs, 'common')
+export const ns = nsMerge(layoutNs, defaultLayoutNs, 'status')
 
 /* This component should wrap all page content */
 export const PageWrapper = (props) => {
@@ -32,6 +34,7 @@ export const PageWrapper = (props) => {
    * Contexts
    */
   const { modalContent } = useContext(ModalContext)
+  const { LoadingStatus } = useContext(LoadingStatusContext)
 
   /*
    * This forces a re-render upon initial bootstrap of the app
@@ -59,6 +62,7 @@ export const PageWrapper = (props) => {
         data-theme={currentTheme} // This facilitates CSS selectors
         key={currentTheme} // This forces the data-theme update
       >
+        <LoadingStatus />
         <Feeds />
         <LayoutWrapper {...childProps}>
           {Layout ? <Layout {...childProps}>{children}</Layout> : children}

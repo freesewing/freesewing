@@ -1,9 +1,10 @@
 // Dependencies
 import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
@@ -15,7 +16,7 @@ export const RestrictAccount = () => {
   const { signOut } = useAccount()
   const backend = useBackend()
   const { t } = useTranslation(ns)
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // Helper method to export account
   const restrictAccount = async () => {
@@ -29,7 +30,6 @@ export const RestrictAccount = () => {
 
   return (
     <div className="max-w-xl">
-      <LoadingStatus />
       <Popout warning>
         <h5>{t('proceedWithCaution')}</h5>
         <p className="text-lg">{t('restrictWarning')}</p>

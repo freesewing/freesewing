@@ -5,6 +5,8 @@ import { useState, Fragment } from 'react'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Components
 import { Popout } from 'shared/components/popout/index.mjs'
 import { AuthWrapper, ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
@@ -22,7 +24,6 @@ import { CodeBox } from 'shared/components/code-box.mjs'
 import { PostArticle, ns as mdxNs } from 'site/components/mdx/posts/article.mjs'
 import { PageLink, WebLink } from 'shared/components/link.mjs'
 import { OkIcon, WarningIcon as KoIcon } from 'shared/components/icons.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 
 export const ns = nsMerge('account', 'posts', authNs, mdxNs)
 
@@ -64,7 +65,7 @@ export const CreatePost = ({ type = 'showcase' }) => {
   const backend = useBackend()
   const { account } = useAccount()
   const { t, i18n } = useTranslation(ns)
-  const { loading, setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { loading, setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
   const [designs, setDesigns] = useState([])
@@ -151,7 +152,6 @@ export const CreatePost = ({ type = 'showcase' }) => {
 
   return (
     <AuthWrapper>
-      <LoadingStatus />
       {pr ? (
         <div className="w-full max-w-3xl m-auto p-4">
           <h1>Thank you for submitting this {type} post</h1>

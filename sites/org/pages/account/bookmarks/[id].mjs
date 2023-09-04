@@ -6,7 +6,6 @@ import { nsMerge } from 'shared/utils.mjs'
 import { useTranslation } from 'next-i18next'
 import { useState, useEffect } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
@@ -38,25 +37,20 @@ const DynamicBookmark = dynamic(
 const BookmarkPage = ({ page, id }) => {
   const { t } = useTranslation(ns)
   const backend = useBackend()
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   const [bookmark, setBookmark] = useState()
 
   useEffect(() => {
     const getBookmark = async () => {
-      setLoadingStatus([true, t('backendLoadingStarted')])
       const result = await backend.getBookmark(id)
-      if (result.success) {
-        setBookmark(result.data.bookmark)
-        setLoadingStatus([true, 'backendLoadingCompleted', true, true])
-      } else setLoadingStatus([false])
+      if (result.success) setBookmark(result.data.bookmark)
+      else setLoadingStatus([false])
     }
     getBookmark()
   }, [id])
 
   return (
     <PageWrapper {...page} title={`${t('bookmarks')}: ${bookmark?.title}`}>
-      <LoadingStatus />
       <DynamicAuthWrapper>
         <DynamicBookmark bookmark={bookmark} />
       </DynamicAuthWrapper>

@@ -1,10 +1,10 @@
 // Hooks
 import { useContext } from 'react'
 // Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 
 export const Ribbon = () => {
-  const { loading } = useContext(LoadingContext)
+  const { loading } = useContext(LoadingStatusContext)
 
   return (
     <div

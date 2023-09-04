@@ -1,8 +1,9 @@
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useTranslation } from 'next-i18next'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useRouter } from 'next/router'
 // Components
@@ -24,7 +25,7 @@ const DarkLink = ({ href, txt }) => (
 export const Migrate = () => {
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
-  const { setLoadingStatus, LoadingStatus, loading } = useLoadingStatus()
+  const { loading, setLoadingStatus } = useContext(LoadingStatusContext)
   const { setAccount, setSeenUser, setToken } = useAccount()
   const router = useRouter()
 
@@ -61,14 +62,12 @@ export const Migrate = () => {
   if (result === 'success')
     return (
       <>
-        <LoadingStatus />
         <FreeSewingAnimation />
       </>
     )
   if (result === 'exists')
     return (
       <>
-        <LoadingStatus />
         <h2 className="text-inherit">{t('signup:v3UserAlreadyExists')}</h2>
         <Robot pose="shrug" className="m-auto w-56 text-inherit" embed />
         <Link href="/signin" className="btn btn-primary w-full my-4">
@@ -87,7 +86,6 @@ export const Migrate = () => {
   if (result === 'failed')
     return (
       <>
-        <LoadingStatus />
         <h2 className="text-inherit">{t('signup:noWorkie')}</h2>
         <Robot pose="ohno" className="m-auto w-56 text-inherit" embed />
         <Link href="/signup" className="btn btn-primary w-full my-4">
@@ -106,7 +104,6 @@ export const Migrate = () => {
 
   return (
     <>
-      <LoadingStatus />
       <h2 className="text-inherit">{t('signup:migrateV2')}</h2>
       <p className="text-inherit">{t('migrateV2Desc')}</p>
       <div className="text-base-content">

@@ -1,11 +1,12 @@
 // Dependencies
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { nsMerge } from 'shared/utils.mjs'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import Link from 'next/link'
 import { Popout } from 'shared/components/popout/index.mjs'
@@ -13,7 +14,7 @@ import { BackToAccountButton } from './shared.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 import { GdprAccountDetails, ns as gdprNs } from 'shared/components/gdpr/details.mjs'
 
-export const ns = nsMerge(gdprNs, 'account', 'toast')
+export const ns = nsMerge(gdprNs, 'account', 'status')
 
 const Checkbox = ({ value, setter, label, children = null }) => (
   <div
@@ -39,7 +40,7 @@ export const ConsentSettings = ({ title = false }) => {
   // Hooks
   const { account, setAccount, setToken } = useAccount()
   const backend = useBackend()
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const { t } = useTranslation(ns)
 
   // State
@@ -73,7 +74,6 @@ export const ConsentSettings = ({ title = false }) => {
 
   return (
     <div className="max-w-xl xl:pl-4">
-      <LoadingStatus />
       {title ? <h2 className="text-4xl">{t('privacyMatters')}</h2> : null}
       <p>{t('compliant')}</p>
       <p>{t('consentWhyAnswer')}</p>

@@ -1,10 +1,11 @@
 // Dependencies
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
@@ -30,7 +31,7 @@ export const BioSettings = ({ welcome = false }) => {
   const { account, setAccount } = useAccount()
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
   const [bio, setBio] = useState(account.bio)
@@ -53,7 +54,6 @@ export const BioSettings = ({ welcome = false }) => {
 
   return (
     <div className="max-w-xl xl:pl-4">
-      <LoadingStatus />
       <MarkdownInput
         id="account-bio"
         label={t('bioTitle')}

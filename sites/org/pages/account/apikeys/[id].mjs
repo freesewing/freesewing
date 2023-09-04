@@ -6,14 +6,13 @@ import { nsMerge } from 'shared/utils.mjs'
 import { useTranslation } from 'next-i18next'
 import { useState, useEffect } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 import { ns as apikeysNs } from 'shared/components/account/apikeys.mjs'
 
 // Translation namespaces used on this page
-const ns = nsMerge(apikeysNs, authNs, pageNs, 'status')
+const ns = nsMerge(apikeysNs, authNs, pageNs)
 
 /*
  * Some things should never generated as SSR
@@ -38,26 +37,20 @@ const DynamicApikey = dynamic(
 const ApikeyPage = ({ page, id }) => {
   const { t } = useTranslation(ns)
   const backend = useBackend()
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
 
   const [apikey, setApikey] = useState()
 
   useEffect(() => {
     const getApikey = async () => {
-      setLoadingStatus([true, t('backendLoadingStarted')])
       const result = await backend.getApikey(id)
-      if (result.success) {
-        setApikey(result.data.apikey)
-        console.log(result.data.apikey)
-        setLoadingStatus([true, 'backendLoadingCompleted', true, true])
-      } else setLoadingStatus([false])
+      if (result.success) setApikey(result.data.apikey)
+      else setLoadingStatus([false])
     }
     getApikey()
   }, [id])
 
   return (
     <PageWrapper {...page} title={`${t('apikeys')}: ${apikey?.name}`}>
-      <LoadingStatus />
       <DynamicAuthWrapper>
         <DynamicApikey apikey={apikey} t={t} />
       </DynamicAuthWrapper>

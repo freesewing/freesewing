@@ -1,9 +1,10 @@
 // Dependencies
 import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useState } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
@@ -15,7 +16,7 @@ export const ExportAccount = () => {
   // Hooks
   const backend = useBackend()
   const { t } = useTranslation(ns)
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   const [link, setLink] = useState()
 
@@ -31,7 +32,6 @@ export const ExportAccount = () => {
 
   return (
     <div className="max-w-xl">
-      <LoadingStatus />
       {link ? (
         <Popout link>
           <h5>{t('exportDownload')}</h5>

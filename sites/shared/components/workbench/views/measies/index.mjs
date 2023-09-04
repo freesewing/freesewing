@@ -5,7 +5,8 @@ import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 import { designMeasurements, horFlexClasses } from 'shared/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Components
 import {
   UserSetPicker,
@@ -24,7 +25,7 @@ const iconClasses = { className: 'w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink
 
 export const MeasiesView = ({ design, Design, settings, update, missingMeasurements, setView }) => {
   const { t } = useTranslation(['workbench'])
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   const loadMeasurements = (set) => {
     update.settings([
@@ -37,7 +38,6 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
 
   return (
     <div className="max-w-7xl mt-8 mx-auto px-4">
-      <LoadingStatus />
       <h2>{t('account:measurements')}</h2>
       {missingMeasurements &&
         settings.measurements &&

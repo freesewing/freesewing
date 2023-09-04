@@ -1,12 +1,13 @@
 // Dependencies
 import { capitalize, shortDate, notEmpty, horFlexClassesNoSm } from 'shared/utils.mjs'
 import yaml from 'js-yaml'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useRouter } from 'next/router'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { AuthWrapper } from 'shared/components/wrappers/auth/index.mjs'
 import { StringInput, MarkdownInput } from 'shared/components/inputs.mjs'
@@ -22,7 +23,7 @@ export const SaveView = ({ design, settings }) => {
   const { t } = useTranslation(ns)
   const backend = useBackend()
   const router = useRouter()
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
   const [name, setName] = useState(`${capitalize(design)} / ${shortDate(router.locale)}`)
@@ -80,7 +81,6 @@ export const SaveView = ({ design, settings }) => {
 
   return (
     <AuthWrapper>
-      <LoadingStatus />
       <div className="m-auto mt-8 max-w-2xl px-4">
         <h2>{t('workbench:savePattern')}</h2>
         {savedId && (

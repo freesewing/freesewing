@@ -1,10 +1,11 @@
 // Dependencies
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import Link from 'next/link'
 import { BackToAccountButton } from './shared.mjs'
@@ -21,7 +22,7 @@ export const PasswordSettings = ({ welcome = false }) => {
   const { account, setAccount } = useAccount()
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
   const [password, setPassword] = useState('')
@@ -38,7 +39,6 @@ export const PasswordSettings = ({ welcome = false }) => {
 
   return (
     <div className="max-w-xl">
-      <LoadingStatus />
       <PasswordInput
         id="account-password"
         label={t('passwordTitle')}

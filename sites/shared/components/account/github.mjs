@@ -1,10 +1,11 @@
 // Dependencies
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
@@ -18,7 +19,7 @@ export const GithubSettings = () => {
   const { account, setAccount } = useAccount()
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
   const [githubUsername, setGithubUsername] = useState(account.data.githubUsername || '')
@@ -36,7 +37,6 @@ export const GithubSettings = () => {
 
   return (
     <div className="max-w-xl">
-      <LoadingStatus />
       <h2 className="text-4xl">{t('githubTitle')}</h2>
       <StringInput
         id="account-github-email"

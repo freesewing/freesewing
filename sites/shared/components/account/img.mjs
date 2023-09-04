@@ -2,10 +2,11 @@
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
 import { cloudflareImageUrl } from 'shared/utils.mjs'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
@@ -18,7 +19,7 @@ export const ns = ['account', 'status']
 export const ImgSettings = ({ welcome = false }) => {
   const { account, setAccount } = useAccount()
   const backend = useBackend()
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const { t, i18n } = useTranslation(ns)
 
   const [img, setImg] = useState('')
@@ -36,7 +37,6 @@ export const ImgSettings = ({ welcome = false }) => {
 
   return (
     <div className="max-w-xl">
-      <LoadingStatus />
       {!welcome || img !== false ? (
         <img
           alt="img"

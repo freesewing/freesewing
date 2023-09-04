@@ -2,8 +2,8 @@
 import { useState, useContext } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useTranslation } from 'next-i18next'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Dependencies
 import { validateEmail, validateTld, horFlexClasses, horFlexClassesNoSm } from 'shared/utils.mjs'
@@ -32,7 +32,7 @@ export const SignUp = () => {
 
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   const [email, setEmail] = useState('')
   const [emailValid, setEmailValid] = useState(false)
@@ -98,7 +98,6 @@ export const SignUp = () => {
 
   return (
     <div className="w-full">
-      <LoadingStatus />
       <h2 className="text-inherit">
         {result ? (
           result === 'success' ? (

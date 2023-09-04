@@ -1,10 +1,11 @@
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useContext } from 'react'
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { Ribbon } from 'shared/components/ribbon.mjs'
 
 export const HeaderWrapper = ({ show, children }) => {
-  const { loading } = useContext(LoadingContext)
+  const { loading } = useContext(LoadingStatusContext)
   return (
     <header
       className={`
