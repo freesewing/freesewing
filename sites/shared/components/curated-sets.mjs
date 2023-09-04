@@ -7,9 +7,9 @@ import { shortDate, cloudflareImageUrl, capitalize } from 'shared/utils.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Components
 import { DisplayRow } from './account/shared.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
@@ -135,7 +135,7 @@ const ShowCuratedSet = ({ cset }) => {
 
 export const CuratedSet = ({ id }) => {
   // Hooks
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
 
   // State
@@ -158,7 +158,6 @@ export const CuratedSet = ({ id }) => {
 
   return (
     <div className="max-w-2xl">
-      <LoadingStatus />
       <ShowCuratedSet cset={cset} />
     </div>
   )
@@ -168,7 +167,7 @@ export const CuratedSet = ({ id }) => {
 export const CuratedSets = () => {
   // Hooks
   const backend = useBackend()
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
   const [sets, setSets] = useState([])
@@ -191,7 +190,6 @@ export const CuratedSets = () => {
 
   return (
     <div className="max-w-7xl xl:pl-4">
-      <LoadingStatus />
       <SetLineup sets={Object.values(sets)} onClick={setSelected} />
       {selected && <ShowCuratedSet cset={sets[selected]} />}
     </div>

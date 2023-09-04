@@ -4,15 +4,11 @@ import { siteConfig } from 'site/site.config.mjs'
 import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 import { measurements } from 'config/measurements.mjs'
 import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
-// Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
-import { ModalContext } from 'shared/context/modal-context.mjs'
 // Hooks
 import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
 // Components
 import { Collapse } from 'shared/components/collapse.mjs'
 import { ClearIcon, EditIcon, FilterIcon } from 'shared/components/icons.mjs'
@@ -22,7 +18,7 @@ import { PageLink } from 'shared/components/link.mjs'
 import { ModalDesignPicker } from 'shared/components/modal/design-picker.mjs'
 import { V3Wip } from 'shared/components/v3-wip.mjs'
 
-export const ns = ['toast', 'curate', 'sets', 'account']
+export const ns = ['curate', 'sets', 'account']
 
 const EditField = (props) => {
   if (props.field === 'nameEn') return <EditName {...props} lang="en" />
@@ -137,7 +133,7 @@ export const EditCuratedSet = ({ id }) => {
 
 /*
   // Context
-  const { startLoading, stopLoading } = useContext(LoadingContext)
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const { setModal } = useContext(ModalContext)
 
   // Hooks
@@ -171,8 +167,6 @@ export const EditCuratedSet = ({ id }) => {
   }, [reload, backend, id])
 
   const editProps = {
-    startLoading,
-    stopLoading,
     account,
     backend,
     t,

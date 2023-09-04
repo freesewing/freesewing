@@ -1,4 +1,5 @@
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
+import { nsMerge } from 'shared/utils.mjs'
 // Hooks
 import { useContext } from 'react'
 // Components
@@ -16,10 +17,10 @@ import {
   ns as navNs,
 } from 'shared/components/navigation/sitenav.mjs'
 import { Toc } from 'shared/components/mdx/toc.mjs'
-import { MdxMetaData } from 'shared/components/mdx/meta.mjs'
+import { MdxMetaData, ns as metaNs } from 'shared/components/mdx/meta.mjs'
 import { PrevNext } from 'shared/components/prev-next.mjs'
 
-export const ns = [navNs, 'docs'] //navNs
+export const ns = nsMerge(navNs, 'docs', metaNs)
 
 export const FrontmatterHead = ({ frontmatter, slug, locale }) => (
   <Head>

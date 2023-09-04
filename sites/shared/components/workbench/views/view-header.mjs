@@ -1,8 +1,14 @@
+// Dependencies
+import { capitalize, shortDate } from 'shared/utils.mjs'
+// Hooks
 import { useContext, useMemo } from 'react'
-import { PanZoomContext } from 'shared/components/workbench/pattern/pan-zoom-context.mjs'
 import { useMobileAction } from 'shared/context/mobile-menubar-context.mjs'
 import { useTranslation } from 'next-i18next'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
+// Components
+import { PanZoomContext } from 'shared/components/workbench/pattern/pan-zoom-context.mjs'
 import {
   PaperlessIcon,
   SaIcon,
@@ -17,8 +23,6 @@ import {
   ZoomOutIcon,
 } from 'shared/components/icons.mjs'
 import { shownHeaderSelector } from 'shared/components/wrappers/header.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
-import { capitalize, shortDate } from 'shared/utils.mjs'
 
 export const ns = ['common', 'core-settings', 'ui-settings']
 
@@ -73,7 +77,7 @@ export const ViewHeader = ({ update, settings, ui, control, account, design, set
   const { t, i18n } = useTranslation(ns)
   const { zoomFunctions, zoomed } = useContext(PanZoomContext)
   const backend = useBackend()
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // make the zoom buttons so we can pass them to the mobile menubar
   const headerZoomButtons = useMemo(
@@ -127,7 +131,6 @@ export const ViewHeader = ({ update, settings, ui, control, account, design, set
         'lg:top-24'
       )} transition-[top] duration-300 ease-in-out`}
     >
-      <LoadingStatus />
       <div className="hidden lg:flex flex-row flex-wrap gap-4 py-4 pt-8 w-full bg-neutral text-neutral-content items-center justify-center">
         {headerZoomButtons}
         <Spacer />

@@ -4,8 +4,8 @@ import { useState, useContext, useEffect } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
 // Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
 // Components
 import Markdown from 'react-markdown'
@@ -27,11 +27,12 @@ import { Link, PageLink } from 'shared/components/link.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { EditRow } from 'shared/components/account/patterns.mjs'
 
-export const ns = [...ns404, 'toast']
+export const ns = ns404
 
 export const ManagePattern = ({ id = false }) => {
   // Context
   const { addPages } = useContext(NavigationContext)
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
   const [pattern, setPattern] = useState({})
@@ -42,7 +43,6 @@ export const ManagePattern = ({ id = false }) => {
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
   const { language } = i18n
-  const toast = useToast()
 
   // async effect helper
   const loadPattern = async () => {
@@ -82,7 +82,7 @@ export const ManagePattern = ({ id = false }) => {
     if (result.success) {
       if (result.data.pattern) {
         setPattern(result.data.pattern)
-        toast.for.settingsSaved()
+        setLoadingStatus([true, 'settingsSaved', true, true])
       }
     }
   }
@@ -125,17 +125,13 @@ export const ManagePattern = ({ id = false }) => {
             <>
               <h2>{t('update')}</h2>
               {/* Name is always shown */}
-              <EditRow title={t('name')} field="name" {...{ pattern, backend, t, toast, refresh }}>
+              <EditRow title={t('name')} field="name" {...{ pattern, backend, t, refresh }}>
                 {pattern.name}
               </EditRow>
 
               {/* img: Control level determines whether or not to show this */}
               {pattern.id && account.control >= conf.account.patterns.img ? (
-                <EditRow
-                  title={t('image')}
-                  field="img"
-                  {...{ pattern, backend, t, toast, refresh }}
-                >
+                <EditRow title={t('image')} field="img" {...{ pattern, backend, t, refresh }}>
                   <img
                     src={pattern.img}
                     className="w-10 mask mask-squircle bg-neutral aspect-square"
@@ -145,11 +141,7 @@ export const ManagePattern = ({ id = false }) => {
 
               {/* notes: Control level determines whether or not to show this */}
               {account.control >= conf.account.patterns.notes ? (
-                <EditRow
-                  title={t('notes')}
-                  field="notes"
-                  {...{ pattern, backend, t, toast, refresh }}
-                >
+                <EditRow title={t('notes')} field="notes" {...{ pattern, backend, t, refresh }}>
                   <Markdown>{pattern.notes}</Markdown>
                 </EditRow>
               ) : null}

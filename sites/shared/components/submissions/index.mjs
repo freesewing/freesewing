@@ -1,10 +1,11 @@
 // Dependencies
 import { cloudflareImageUrl, nsMerge } from 'shared/utils.mjs'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 import { useRouter } from 'next/router'
 // Components
 import { AuthWrapper } from 'shared/components/wrappers/auth/index.mjs'
@@ -20,7 +21,7 @@ export const CsetSubmission = ({ id }) => {
   // Hooks
   const { t } = useTranslation(ns)
   const backend = useBackend()
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const router = useRouter()
 
   const [submission, setSubmission] = useState(false)
@@ -57,7 +58,6 @@ export const CsetSubmission = ({ id }) => {
 
   return (
     <div className="max-w-2xl">
-      <LoadingStatus />
       <DisplayRow title={t('account:name')} keyWidth="w-48">
         {submission.name}
       </DisplayRow>

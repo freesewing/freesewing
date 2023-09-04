@@ -2,14 +2,13 @@
 import { capitalize } from 'shared/utils.mjs'
 import { siteConfig } from 'site/site.config.mjs'
 // Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Hooks
 import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
 // Components
 import Link from 'next/link'
 import { Collapse } from 'shared/components/collapse.mjs'
@@ -18,7 +17,7 @@ import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import Timeago from 'react-timeago'
 import { Tag } from 'shared/components/tag.mjs'
 
-export const ns = ['toast', 'curate', 'sets', 'account']
+export const ns = ['status', 'curate', 'sets', 'account']
 
 export const Row = ({ title, children }) => (
   <div className="flex flex-row flex-wrap items-center lg:gap-4 my-2">
@@ -27,28 +26,17 @@ export const Row = ({ title, children }) => (
   </div>
 )
 
-const CuratedSet = ({
-  set,
-  account,
-  t,
-  startLoading,
-  stopLoading,
-  backend,
-  refresh,
-  toast,
-  language,
-}) => {
+const CuratedSet = ({ set, account, t, setLoadingStatus, backend, refresh, language }) => {
   const { setModal } = useContext(ModalContext)
 
   const remove = async () => {
-    startLoading()
+    setLoadingStatus([true, 'status:contactingBackend'])
     const result = await backend.removeCuratedMeasurementsSet(set.id)
-    if (result) toast.success(t('gone'))
-    else toast.for.backendError()
+    if (result) setLoadingStatus([true, 'status:settingsSaved', true, true])
+    else setLoadingStatus([true, 'status:backendError', true, false])
     // This just forces a refresh of the list from the server
     // We obviously did not add a key here, but rather removed one
     refresh()
-    stopLoading()
   }
 
   const removeModal = () => {
@@ -119,14 +107,13 @@ const CuratedSet = ({
 
 export const CurateSets = () => {
   // Context
-  const { startLoading, stopLoading } = useContext(LoadingContext)
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // Hooks
   const { account } = useAccount()
   const backend = useBackend()
-  const { t, i18n } = useTranslation('sets', 'curate', 'toast', 'account')
+  const { t, i18n } = useTranslation('sets', 'curate', 'account')
   const { language } = i18n
-  const toast = useToast()
 
   // State
   const [curatedSets, setCuratedSets] = useState([])
@@ -209,7 +196,7 @@ export const CurateSets = () => {
       {list.map((set) => (
         <CuratedSet
           key={set.id}
-          {...{ set, account, t, startLoading, stopLoading, backend, refresh, toast, language }}
+          {...{ set, account, t, setLoadingStatus, backend, refresh, language }}
         />
       ))}
     </div>

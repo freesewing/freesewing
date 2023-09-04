@@ -1,22 +1,26 @@
+// Dependencies
 import yaml from 'js-yaml'
 import { validateSettings } from './settings-validator.mjs'
-import { useEffect, useState, useRef, useMemo } from 'react'
-import { useTranslation } from 'next-i18next'
-import { useToast } from 'shared/hooks/use-toast.mjs'
-import { CloseIcon } from 'shared/components/icons.mjs'
 import { capitalize } from 'shared/utils.mjs'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
+// Hooks
+import { useEffect, useState, useRef, useMemo, useContext } from 'react'
+import { useTranslation } from 'next-i18next'
+// Components
+import { CloseIcon } from 'shared/components/icons.mjs'
 import { V3Wip } from 'shared/components/v3-wip.mjs'
 
-export const ns = ['wbedit']
+export const ns = []
 
 /** a view for editing the gist as yaml */
 export const EditView = ({ settings, setSettings, design, Design }) => {
   const inputRef = useRef(null)
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const [error, setError] = useState(false)
   const [success, setSuccess] = useState(false)
   const { t } = useTranslation(ns)
   const patternConfig = useMemo(() => new Design().getConfig(), [Design])
-  const toast = useToast()
 
   // parse the settings to yaml and set them as the value on the textArea
   useEffect(() => {
@@ -29,6 +33,7 @@ export const EditView = ({ settings, setSettings, design, Design }) => {
     setSuccess(false)
 
     try {
+      setLoadingStatus([true, 'status:contactingBackend'])
       // parse back to json
       const editedAsJson = yaml.load(inputRef.current.value)
 
@@ -43,7 +48,7 @@ export const EditView = ({ settings, setSettings, design, Design }) => {
       // save regardless
       setSettings(editedAsJson)
       setSuccess(true)
-      if (validation.valid) toast.success(t('success'))
+      if (validation.valid) setLoadingStatus([true, 'status:settingsSaved', true, true])
     } catch (e) {
       console.log(e)
       setError(e.message)

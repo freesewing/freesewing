@@ -3,12 +3,12 @@ import { cloudflareImageUrl } from 'shared/utils.mjs'
 import { collection } from 'shared/hooks/use-design.mjs'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useState, useCallback, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useDropzone } from 'react-dropzone'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import Markdown from 'react-markdown'
 import { ResetIcon, DocsIcon, UploadIcon } from 'shared/components/icons.mjs'
@@ -278,7 +278,7 @@ export const ImageInput = ({
 }) => {
   const { t } = useTranslation(ns)
   const backend = useBackend()
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const [url, setUrl] = useState(false)
   const [uploadedId, setUploadedId] = useState(false)
 
@@ -316,7 +316,6 @@ export const ImageInput = ({
   if (current)
     return (
       <FormControl label={label} docs={docs}>
-        <LoadingStatus />
         <div
           className="bg-base-100 w-full h-36 mb-2 mx-auto flex flex-col items-center text-center justify-center"
           style={{
@@ -340,7 +339,6 @@ export const ImageInput = ({
 
   return (
     <FormControl label={label} docs={docs} forId={id}>
-      <LoadingStatus />
       <div
         {...getRootProps()}
         className={`

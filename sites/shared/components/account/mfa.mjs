@@ -1,10 +1,10 @@
-// Dependencies
-import { useState } from 'react'
-import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
+import { useState, useContext } from 'react'
+import { useTranslation } from 'next-i18next'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
@@ -27,7 +27,7 @@ export const MfaSettings = ({ title = false, welcome = false }) => {
   const { account, setAccount } = useAccount()
   const backend = useBackend()
   const { t } = useTranslation(ns)
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
   const [enable, setEnable] = useState(false)
@@ -87,7 +87,6 @@ export const MfaSettings = ({ title = false, welcome = false }) => {
 
   return (
     <div className="max-w-xl">
-      <LoadingStatus />
       {title ? <h2 className="text-4xl">{titleText}</h2> : null}
       {enable ? (
         <>

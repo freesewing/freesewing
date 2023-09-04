@@ -2,10 +2,9 @@
 import { siteConfig } from 'site/site.config.mjs'
 import translators from 'site/prebuild/translators.json'
 // Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Components
@@ -22,28 +21,22 @@ const languages = [
 ].sort()
 
 export const TranslatorInvite = () => {
-  // Context
-  const { startLoading, stopLoading } = useContext(LoadingContext)
-
   // Hooks
   const { t } = useTranslation(ns)
   const backend = useBackend()
-  const toast = useToast()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
   const [team, setTeam] = useState(false)
   const [sent, setSent] = useState(false)
 
   const sendInvite = async () => {
-    startLoading()
+    setLoadingStatus([true, 'status:contactingBackend'])
     const result = await backend.sendTranslatorInvite(team)
     if (result.success) {
       setSent(true)
-      stopLoading()
-      toast.success(t('translation:inviteSent'))
-    } else {
-      toast.for.backendError()
-    }
+      setLoadingStatus([true, 'status:settingsSaved', true, true])
+    } else setLoadingStatus([true, 'status:backendError', true, false])
   }
 
   if (sent)

@@ -1,3 +1,4 @@
+import { nsMerge } from 'shared/utils.mjs'
 // Used in static paths
 import { pages } from 'site/prebuild/docs.en.mjs'
 // Dependencies
@@ -11,7 +12,7 @@ import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { DocsLayout, ns as layoutNs } from 'site/components/layouts/docs.mjs'
 import { loaders } from 'shared/components/dynamic-docs/org.mjs'
 
-export const ns = [...pageNs, layoutNs]
+export const ns = nsMerge(pageNs, layoutNs)
 
 /**
  * a page to display documentation markdown
@@ -49,7 +50,7 @@ export default DocsPage
 export async function getStaticProps({ locale, params }) {
   return {
     props: {
-      ...(await serverSideTranslations('en', ['docs', ...ns])),
+      ...(await serverSideTranslations('en', ns)),
       slug: params.slug.join('/'),
       locale,
       page: {
