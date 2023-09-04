@@ -12,7 +12,7 @@ import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 // Config
 import { siteConfig as conf } from 'site/site.config.mjs'
 
-export const ns = ['account', 'locales', statusNs]
+export const ns = ['account', 'locales', 'status']
 
 export const LanguageSettings = () => {
   // Hooks

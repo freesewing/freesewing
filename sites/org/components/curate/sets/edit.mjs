@@ -4,8 +4,6 @@ import { siteConfig } from 'site/site.config.mjs'
 import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 import { measurements } from 'config/measurements.mjs'
 import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
-// Context
-import { ModalContext } from 'shared/context/modal-context.mjs'
 // Hooks
 import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'

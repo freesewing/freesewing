@@ -21,7 +21,7 @@ export const CreateBookmark = ({ type, title, slug }) => {
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const { setModal } = useContext(ModalContext)
 
-  const url = i18n.language === 'en' ? `/${slug}` : `/${lang}/${slug}`
+  const url = i18n.language === 'en' ? `/${slug}` : `/${i18n.language}/${slug}`
 
   const bookmark = async (evt) => {
     evt.stopPropagation()

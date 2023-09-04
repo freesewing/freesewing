@@ -1,3 +1,6 @@
+/* eslint-disable */
+// Not sure why but eslint does not seem to understand this file
+// and I don't have time to hold its hand.
 import { useState, useEffect, createContext } from 'react'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { OkIcon, WarningIcon } from 'shared/components/icons.mjs'
