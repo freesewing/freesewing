@@ -339,10 +339,40 @@ Backend.prototype.getCuratedSets = async function () {
 }
 
 /*
+ * Get measurements sets suggested for curation
+ */
+Backend.prototype.getSuggestedSets = async function () {
+  return responseHandler(await api.get(`/suggested-sets/jwt`, this.auth))
+}
+
+/*
+ * Get option packs suggested for curation
+ */
+Backend.prototype.getSuggestedPacks = async function () {
+  return responseHandler(await api.get(`/suggested-packs/jwt`, this.auth))
+}
+
+/*
+ * Remove suggested measurements set
+ */
+Backend.prototype.removeSuggestedMeasurementsSet = async function (id) {
+  const response = await api.delete(`/suggested-sets/${id}/jwt`, this.auth)
+
+  return response && response.status === 204 ? true : false
+}
+
+/*
  * Get curated measurements set
  */
 Backend.prototype.getCuratedSet = async function (id) {
   return responseHandler(await api.get(`/curated-sets/${id}`))
+}
+
+/*
+ * Generic update curated measurements set method
+ */
+Backend.prototype.updateCuratedSet = async function (id, data) {
+  return responseHandler(await api.patch(`/curated-sets/${id}/jwt`, data, this.auth))
 }
 
 /*
