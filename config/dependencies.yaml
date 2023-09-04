@@ -324,7 +324,6 @@ org:
     'react-dropzone': '14.2.3'
     'react-hotkeys-hook': *reactHotkeysHook
     'react-instantsearch-dom': *reactInstantsearchDom
-    'react-hot-toast': 2.4.1
     'react-markdown': *reactMarkdown
     'react-swipeable': *reactSwipeable
     'react-timeago': *reactTimeago
