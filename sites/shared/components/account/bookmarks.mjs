@@ -1,9 +1,8 @@
-// Dependencies
-import { useState, useEffect, Fragment, useContext } from 'react'
-import { useTranslation } from 'next-i18next'
 // Context
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
+import { useState, useEffect, Fragment, useContext } from 'react'
+import { useTranslation } from 'next-i18next'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
 // Components

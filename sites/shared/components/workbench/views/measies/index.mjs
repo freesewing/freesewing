@@ -1,5 +1,5 @@
 // Dependencies
-import { Fragment } from 'react'
+import { Fragment, useContext } from 'react'
 import { nsMerge } from 'shared/utils.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 import { designMeasurements, horFlexClasses } from 'shared/utils.mjs'

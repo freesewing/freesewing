@@ -5,7 +5,7 @@ import { capitalize } from 'shared/utils.mjs'
 // Context
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
-import { useEffect, useState, useRef, useMemo } from 'react'
+import { useEffect, useState, useRef, useMemo, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Components
 import { CloseIcon } from 'shared/components/icons.mjs'

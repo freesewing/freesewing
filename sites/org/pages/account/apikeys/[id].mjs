@@ -2,9 +2,11 @@
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
@@ -37,6 +39,7 @@ const DynamicApikey = dynamic(
 const ApikeyPage = ({ page, id }) => {
   const { t } = useTranslation(ns)
   const backend = useBackend()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   const [apikey, setApikey] = useState()
 

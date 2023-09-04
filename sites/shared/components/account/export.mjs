@@ -1,9 +1,8 @@
-// Dependencies
-import { useTranslation } from 'next-i18next'
 // Context
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
-import { useState } from 'react'
+import { useTranslation } from 'next-i18next'
+import { useState, useContext } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'

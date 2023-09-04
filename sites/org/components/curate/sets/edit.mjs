@@ -5,7 +5,6 @@ import { freeSewingConfig as conf } from 'shared/config/freesewing.config.mjs'
 import { measurements } from 'config/measurements.mjs'
 import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
 // Context
-import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Hooks
 import { useState, useEffect, useContext } from 'react'

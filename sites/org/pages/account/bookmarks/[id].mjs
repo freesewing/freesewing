@@ -2,6 +2,8 @@
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 import { useState, useEffect } from 'react'
@@ -37,6 +39,7 @@ const DynamicBookmark = dynamic(
 const BookmarkPage = ({ page, id }) => {
   const { t } = useTranslation(ns)
   const backend = useBackend()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   const [bookmark, setBookmark] = useState()
 

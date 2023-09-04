@@ -2,7 +2,7 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
 // Hooks
-import { useEffect } from 'react'
+import { useEffect, useContext } from 'react'
 import { useRouter } from 'next/router'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'

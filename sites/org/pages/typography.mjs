@@ -33,7 +33,7 @@ const TypographyPage = ({ page }) => {
           setLoadingStatus(
             i === 50
               ? [true, 'All done!', true, true]
-              : [true, <LoadingProgress val={i} max={50} msg={`Herding cats: ${i}/50`} />]
+              : [true, <LoadingProgress key={i} val={i} max={50} msg={`Herding cats: ${i}/50`} />]
           ),
         delay
       )

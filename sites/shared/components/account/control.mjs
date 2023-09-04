@@ -1,5 +1,5 @@
 // Dependencies
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Context
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
@@ -51,7 +51,7 @@ export const useControlState = () => {
 export const ControlSettings = ({ welcome = false, noBack = false }) => {
   const { t, i18n } = useTranslation(ns)
 
-  const { selection, update, LoadingStatus } = useControlState()
+  const { selection, update } = useControlState()
 
   // Helper to get the link to the next onboarding step
   const nextHref = welcome

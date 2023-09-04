@@ -4,7 +4,7 @@ import { cloudflareImageUrl, nsMerge } from 'shared/utils.mjs'
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
 // Components
