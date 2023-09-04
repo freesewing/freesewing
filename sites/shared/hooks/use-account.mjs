@@ -39,6 +39,7 @@ export function useAccount() {
     }
     setAdmin({ token, account: { ...account } })
     setAccount(newAccount)
+    setToken(data.token)
   }
 
   const stopImpersonating = () => {

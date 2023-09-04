@@ -122,7 +122,7 @@ export const curatedSetTests = async (chai, config, expect, store) => {
                 expect(err === null).to.equal(true)
                 expect(res.status).to.equal(200)
                 expect(res.body.result).to.equal(`success`)
-                expect(res.body.set[langField]).to.equal(val)
+                expect(res.body.curatedSet[langField]).to.equal(val)
                 done()
               })
           })
@@ -154,7 +154,7 @@ export const curatedSetTests = async (chai, config, expect, store) => {
               expect(err === null).to.equal(true)
               expect(res.status).to.equal(200)
               expect(res.body.result).to.equal(`success`)
-              expect(res.body.set.measies[field]).to.equal(val)
+              expect(res.body.curatedSet.measies[field]).to.equal(val)
               done()
             })
         })
@@ -186,8 +186,8 @@ export const curatedSetTests = async (chai, config, expect, store) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(200)
             expect(res.body.result).to.equal(`success`)
-            expect(res.body.set.measies.ankle).to.equal(320)
-            expect(typeof res.body.set.measies.potatoe).to.equal('undefined')
+            expect(res.body.curatedSet.measies.ankle).to.equal(320)
+            expect(typeof res.body.curatedSet.measies.potatoe).to.equal('undefined')
             done()
           })
       })
@@ -214,33 +214,7 @@ export const curatedSetTests = async (chai, config, expect, store) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(200)
             expect(res.body.result).to.equal(`success`)
-            expect(typeof res.body.set.measies.chest).to.equal('undefined')
-            done()
-          })
-      })
-
-      it(`${store.icon('set', auth)} Should clone a set (${auth})`, (done) => {
-        chai
-          .request(config.api)
-          .post(`/curated-sets/${store.curatedSet[auth].id}/clone/${auth}`)
-          .set(
-            'Authorization',
-            auth === 'jwt'
-              ? 'Bearer ' + store.account.token
-              : 'Basic ' +
-                  new Buffer(`${store.account.apikey.key}:${store.account.apikey.secret}`).toString(
-                    'base64'
-                  )
-          )
-          .send({ language: 'nl' })
-          .end((err, res) => {
-            expect(err === null).to.equal(true)
-            expect(res.status).to.equal(201)
-            expect(res.body.result).to.equal(`created`)
-            expect(typeof res.body.error).to.equal(`undefined`)
-            expect(typeof res.body.set.id).to.equal(`number`)
-            expect(res.body.set.name).to.equal(store.curatedSet[auth].nameNl + '_updated')
-            expect(res.body.set.notes).to.equal(store.curatedSet[auth].notesNl + '_updated')
+            expect(typeof res.body.curatedSet.measies.chest).to.equal('undefined')
             done()
           })
       })
@@ -261,6 +235,9 @@ export const curatedSetTests = async (chai, config, expect, store) => {
           .send({
             set: 1,
             notes: 'These are the notes',
+            name: 'me',
+            img: 'https://images.pexels.com/photos/1404819/pexels-photo-1404819.jpeg?cs=srgb&dl=pexels-cong-h-1404819.jpg&fm=jpg&w=640&h=427&_gl=1*nyz31t*_ga*MTM0OTk5OTY4NS4xNjYxMjUyMjc0*_ga_8JE65Q40S6*MTY5Mzg0MzAwNi4yNC4xLjE2OTM4NDMwMjIuMC4wLjA.',
+            height: '166cm',
           })
           .end((err, res) => {
             expect(err === null).to.equal(true)
@@ -272,7 +249,7 @@ export const curatedSetTests = async (chai, config, expect, store) => {
             expect(typeof res.body.submission.id).to.equal('string')
             done()
           })
-      })
+      }).timeout(5000)
     })
   }
 

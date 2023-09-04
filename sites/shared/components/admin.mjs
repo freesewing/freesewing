@@ -1,33 +1,36 @@
-import { useState, useEffect } from 'react'
+// Depdendencies
 import { cloudflareConfig } from 'shared/config/cloudflare.mjs'
+import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
+// Hooks
+import { useState, useEffect, useContext } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
+// Components
 import Link from 'next/link'
-import Markdown from 'react-markdown'
-
 import { Json } from 'shared/components/json.mjs'
+import Markdown from 'react-markdown'
 import { AccountRole } from 'shared/components/account/role.mjs'
 import { AccountStatus } from 'shared/components/account/status.mjs'
 import { Loading } from 'shared/components/spinner.mjs'
 
-import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
-
 const roles = ['user', 'curator', 'bughunter', 'support', 'admin']
 
 export const ImpersonateButton = ({ userId }) => {
-  const toast = useToast()
   const backend = useBackend()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const { impersonate } = useAccount()
 
   if (!userId) return null
 
   const impersonateUser = async () => {
+    setLoadingStatus([true, 'status:contactingBackend'])
     const result = await backend.adminImpersonateUser(userId)
     if (result.success) {
       impersonate(result.data)
-      toast.for.settingsSaved()
-    } else toast.for.backendError()
+      setLoadingStatus([true, 'status:settingsSaved', true, true])
+    } else setLoadingStatus([true, 'status:backendError', true, false])
   }
 
   return (
@@ -132,7 +135,7 @@ export const User = ({ user }) => (
 export const ManageUser = ({ userId }) => {
   // Hooks
   const backend = useBackend()
-  const toast = useToast()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
   const [user, setUser] = useState({})
@@ -147,11 +150,12 @@ export const ManageUser = ({ userId }) => {
   }, [userId])
 
   const updateUser = async (data) => {
+    setLoadingStatus([true, 'status:contactingBackend'])
     const result = await backend.adminUpdateUser({ id: userId, data })
     if (result.success) {
-      toast.for.settingsSaved()
+      setLoadingStatus([true, 'status:settingsSaved', true, true])
       setUser(result.data.user)
-    } else toast.for.backendError()
+    } else setLoadingStatus([true, 'status:backendError', true, false])
   }
 
   return user.id ? (

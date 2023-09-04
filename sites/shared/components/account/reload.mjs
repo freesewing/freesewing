@@ -1,9 +1,10 @@
-// Dependencies
-import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
+import { useTranslation } from 'next-i18next'
+import { useContext } from 'react'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 
@@ -14,7 +15,7 @@ export const ReloadAccount = ({ title = false }) => {
   const { setAccount } = useAccount()
   const backend = useBackend()
   const { t } = useTranslation(ns)
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // Helper method to reload account
   const reload = async () => {
@@ -28,7 +29,6 @@ export const ReloadAccount = ({ title = false }) => {
 
   return (
     <div className="max-w-xl">
-      <LoadingStatus />
       {title ? <h2>{t('reloadMsg1')}</h2> : null}
       <p>{t('reloadMsg2')}</p>
       <button className="btn btn-primary capitalize w-full my-2" onClick={reload}>

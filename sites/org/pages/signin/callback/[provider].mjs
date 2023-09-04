@@ -2,12 +2,13 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
 // Hooks
-import { useEffect } from 'react'
+import { useEffect, useContext } from 'react'
 import { useRouter } from 'next/router'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
@@ -27,7 +28,7 @@ const OauthCallbackPage = ({ page, provider }) => {
   const { t } = useTranslation(ns)
   const backend = useBackend()
   const { setAccount, setToken, setSeenUser } = useAccount()
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   useEffect(() => {
     const oauthFlow = async () => {
@@ -53,7 +54,6 @@ const OauthCallbackPage = ({ page, provider }) => {
 
   return (
     <PageWrapper {...page} layout={BareLayout}>
-      <LoadingStatus />
       <div className="flex flex-col items-center h-screen justify-center text-base-content px-4">
         <div className="max-w-lg w-full">
           <Loading />

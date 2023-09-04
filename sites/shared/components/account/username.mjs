@@ -1,10 +1,10 @@
-// Dependencies
-import { useState } from 'react'
-import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
+import { useState, useContext } from 'react'
+import { useTranslation } from 'next-i18next'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { OkIcon, NoIcon } from 'shared/components/icons.mjs'
@@ -12,13 +12,13 @@ import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 import { StringInput } from 'shared/components/inputs.mjs'
 import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 
-export const ns = ['account', 'toast']
+export const ns = ['account', 'status']
 
 export const UsernameSettings = ({ welcome = false }) => {
   // Hooks
   const { account, setAccount } = useAccount()
   const backend = useBackend()
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const { t, i18n } = useTranslation(ns)
   const [username, setUsername] = useState(account.username)
   const [available, setAvailable] = useState(true)
@@ -52,7 +52,6 @@ export const UsernameSettings = ({ welcome = false }) => {
 
   return (
     <div className="max-w-xl">
-      <LoadingStatus />
       <StringInput
         id="account-username"
         label={t('usernameTitle')}

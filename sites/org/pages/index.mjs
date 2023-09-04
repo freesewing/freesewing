@@ -22,7 +22,7 @@ import {
 import { HowDoesItWorkAnimation } from 'shared/components/animations/how-does-it-work.mjs'
 import { SignUp, ns as susiNs } from 'shared/components/susi/sign-up.mjs'
 import { PleaseSubscribe, ns as subNs } from 'shared/components/patrons/please-subscribe.mjs'
-import Link from 'next/link'
+import { CardLink } from 'shared/components/link.mjs'
 
 const ns = nsMerge(pageNs, subNs, susiNs, 'homepage')
 
@@ -34,28 +34,6 @@ const Card = ({ bg = 'bg-base-200', textColor = 'text-base-content', title, chil
     </h2>
     {children}
   </div>
-)
-
-const CardLink = ({
-  bg = 'bg-base-200',
-  textColor = 'text-base-content',
-  href,
-  title,
-  text,
-  icon,
-}) => (
-  <Link
-    href={href}
-    className={`px-8 ${bg} py-10 rounded-lg block ${textColor}
-    hover:bg-secondary hover:bg-opacity-10 shadow-lg
-    transition-color duration-300 grow`}
-  >
-    <h2 className="mb-4 text-inherit flex flex-row gap-4 justify-between items-center font-medium">
-      {title}
-      {icon}
-    </h2>
-    <p className="font-medium text-inherit italic text-lg">{text}</p>
-  </Link>
 )
 
 /*

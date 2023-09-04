@@ -6,7 +6,7 @@ import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
@@ -23,15 +23,15 @@ const namespaces = nsMerge(pageNs, 'newsletter')
  */
 const NewsletterPage = ({ page, id, ehash }) => {
   const { t } = useTranslation(namespaces)
-  const { setLoading } = useContext(LoadingContext)
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
 
   const [confirmed, setConfirmed] = useState(false)
 
   const handler = async () => {
-    setLoading(true)
+    setLoadingStatus([true, 'status:contactingBackend'])
     await backend.confirmNewsletterSubscribe({ id, ehash })
-    setLoading(false)
+    setLoadingStatus([true, 'status:settingsSaved', true, true])
     setConfirmed(true)
   }
 

@@ -227,6 +227,12 @@ CuratedSetModel.prototype.guardedUpdate = async function ({ params, body, user }
    * Prepare data for updating the record
    */
   const data = {}
+
+  /*
+   * Handle the published field
+   */
+  if ([true, false].includes(body.published)) data.published = body.published
+
   /*
    * Unlike a regular set, curated set have notes and name in each language
    */
@@ -272,7 +278,7 @@ CuratedSetModel.prototype.guardedUpdate = async function ({ params, body, user }
   /*
    * Return 200 with updated data
    */
-  return this.setResponse200({ set: this.asCuratedSet() })
+  return this.setResponse200({ curatedSet: this.asCuratedSet() })
 }
 
 /*
@@ -465,7 +471,7 @@ CuratedSetModel.prototype.fromSuggestion = async function ({ params, user }) {
   /*
    * Return 200 with updated data
    */
-  return this.setResponse200({ set: this.asCuratedSet() })
+  return this.setResponse200({ curatedSet: this.asCuratedSet() })
 }
 
 /*

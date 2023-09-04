@@ -47,4 +47,4 @@ export async function getStaticProps({ locale, params }) {
  * this page should be used to generate the result.
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
-export const getStaticPaths = async () => ({ paths: [], fallback: false })
+export const getStaticPaths = async () => ({ paths: [], fallback: true })

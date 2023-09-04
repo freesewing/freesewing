@@ -6,7 +6,6 @@ import { useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 // Components
 import Link from 'next/link'
-import { Ribbon } from 'shared/components/ribbon.mjs'
 import { WordMark } from 'shared/components/wordmark.mjs'
 import { SocialIcons } from 'shared/components/social/icons.mjs'
 import { Sponsors, ns as sponsorsNs } from 'shared/components/sponsors/index.mjs'
@@ -23,7 +22,6 @@ export const Footer = () => {
 
   return (
     <footer className="bg-neutral">
-      <Ribbon />
       <div className="w-full sm:w-auto flex flex-col gap-2 items-center justify-center pt-12">
         <FreeSewingIcon className="w-24 lg:w-40 m-auto m-auto text-neutral-content" />
         <div className="mt-4">

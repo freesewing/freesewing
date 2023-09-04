@@ -1,10 +1,11 @@
 // Dependencies
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { BackToAccountButton, Icons, welcomeSteps } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
@@ -19,7 +20,7 @@ export const useControlState = () => {
   // Hooks
   const { account, setAccount, token } = useAccount()
   const backend = useBackend()
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
   const [selection, setSelection] = useState(account.control)
@@ -44,13 +45,13 @@ export const useControlState = () => {
     }
   }
 
-  return { selection, update, LoadingStatus }
+  return { selection, update }
 }
 
 export const ControlSettings = ({ welcome = false, noBack = false }) => {
   const { t, i18n } = useTranslation(ns)
 
-  const { selection, update, LoadingStatus } = useControlState()
+  const { selection, update } = useControlState()
 
   // Helper to get the link to the next onboarding step
   const nextHref = welcome
@@ -61,7 +62,6 @@ export const ControlSettings = ({ welcome = false, noBack = false }) => {
 
   return (
     <div className="max-w-xl">
-      <LoadingStatus />
       <ListInput
         id="account-control"
         label={t('controlTitle')}

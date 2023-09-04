@@ -1,8 +1,7 @@
 // Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useState, useContext } from 'react'
 // Components
 import { ChoiceButton } from 'shared/components/choice-button.mjs'
@@ -43,12 +42,9 @@ const languages = [
 ]
 
 export const SuggestLanguageForm = () => {
-  // Context
-  const { startLoading, stopLoading } = useContext(LoadingContext)
-
   // Hooks
   const backend = useBackend()
-  const toast = useToast()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
   const [language, setLanguage] = useState(false)
@@ -58,15 +54,12 @@ export const SuggestLanguageForm = () => {
   const [comments, setComments] = useState('')
 
   const sendSuggestion = async () => {
-    startLoading()
+    setLoadingStatus([true, 'status:contactingBackend'])
     const result = await backend.sendLanguageSuggestion({ language, help, friends, comments })
     if (result.success) {
       setSent(true)
-      stopLoading()
-      toast.success('Suggestion submitted')
-    } else {
-      toast.for.backendError()
-    }
+      setLoadingStatus([true, 'status:nailedIt', true, true])
+    } else setLoadingStatus([true, 'status:backendError', true, false])
   }
 
   if (sent)

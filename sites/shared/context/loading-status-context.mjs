@@ -1,9 +1,14 @@
-import { useState, useEffect } from 'react'
+/* eslint-disable */
+// Not sure why but eslint does not seem to understand this file
+// and I don't have time to hold its hand.
+import { useState, useEffect, createContext } from 'react'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { OkIcon, WarningIcon } from 'shared/components/icons.mjs'
 import { useTranslation } from 'next-i18next'
 
 export const ns = ['status']
+
+export const LoadingStatusContext = createContext([false])
 
 /*
  * Timeout in seconds before the loading status dissapears
@@ -20,12 +25,9 @@ const LoadingStatus = ({ loadingStatus }) => {
     if (loadingStatus[2]) {
       if (timer) clearTimeout(timer)
       setTimer(
-        window.setTimeout(
-          () => {
-            setFade('opacity-0')
-          },
-          timeout * 1000 - 350
-        )
+        window.setTimeout(() => {
+          setFade('opacity-0')
+        }, timeout * 1000 - 350)
       )
     }
   }, [loadingStatus[2]])
@@ -66,7 +68,7 @@ const LoadingProgress = ({ val = 0, max = 1, msg }) => (
   </div>
 )
 
-export const useLoadingStatus = () => {
+export const LoadingStatusContextProvider = ({ children }) => {
   /*
    * LoadingStatus should hold an array with 1 to 4 elements:
    * 0 => Show loading status or not (true or false)
@@ -74,11 +76,18 @@ export const useLoadingStatus = () => {
    * 2 => Set this to true to make the loadingStatus dissapear after 2 seconds
    * 3 => Set this to true to show success, false to show error (only when 2 is true)
    */
-  const [loadingStatus, setLoadingStatus] = useState([false])
   const [timer, setTimer] = useState(false)
 
+  const [__loadingStatus, __setLoadingStatus] = useState({
+    status: [false],
+    setLoadingStatus,
+    loading: false,
+    LoadingStatus: () => <LoadingStatus loadingStatus={[false]} />,
+    LoadingProgress,
+  })
+
   useEffect(() => {
-    if (loadingStatus[2]) {
+    if (__loadingStatus.status[2]) {
       if (timer) clearTimeout(timer)
       setTimer(
         window.setTimeout(() => {
@@ -86,12 +95,20 @@ export const useLoadingStatus = () => {
         }, timeout * 1000)
       )
     }
-  }, [loadingStatus[2]])
+  }, [__loadingStatus.status[2]])
 
-  return {
-    setLoadingStatus,
-    loading: loadingStatus[0],
-    LoadingStatus: () => <LoadingStatus loadingStatus={loadingStatus} />,
-    LoadingProgress,
+  function setLoadingStatus(newStatus) {
+    __setLoadingStatus({
+      ...__loadingStatus,
+      status: newStatus,
+      loading: newStatus[0] || false,
+      LoadingStatus: () => <LoadingStatus loadingStatus={newStatus} />,
+    })
   }
+
+  return (
+    <LoadingStatusContext.Provider value={__loadingStatus}>
+      {children}
+    </LoadingStatusContext.Provider>
+  )
 }

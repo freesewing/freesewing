@@ -1,10 +1,12 @@
 // Dependencies
 import { nsMerge, capitalize, cloudflareImageUrl, yyyymmdd } from 'shared/utils.mjs'
 // Hooks
-import { useState, Fragment } from 'react'
+import { useState, useContext, Fragment } from 'react'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Components
 import { Popout } from 'shared/components/popout/index.mjs'
 import { AuthWrapper, ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
@@ -22,7 +24,6 @@ import { CodeBox } from 'shared/components/code-box.mjs'
 import { PostArticle, ns as mdxNs } from 'site/components/mdx/posts/article.mjs'
 import { PageLink, WebLink } from 'shared/components/link.mjs'
 import { OkIcon, WarningIcon as KoIcon } from 'shared/components/icons.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 
 export const ns = nsMerge('account', 'posts', authNs, mdxNs)
 
@@ -53,7 +54,7 @@ export const CreateShowcasePost = () => {
   const { account } = useAccount()
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
-  const { loading, setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { loading, setLoadingStatus } = useContext(LoadingStatusContext)
 
   const [designs, setDesigns] = useState([])
   const [title, setTitle] = useState('')
@@ -135,7 +136,6 @@ export const CreateShowcasePost = () => {
 
   return (
     <AuthWrapper>
-      <LoadingStatus />
       {pr ? (
         <div className="w-full max-w-3xl m-auto p-4">
           <h1>Thank you for submitting this showcase</h1>
