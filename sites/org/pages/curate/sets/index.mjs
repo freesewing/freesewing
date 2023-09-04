@@ -1,11 +1,8 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
-// Context
-import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
-import { useContext } from 'react'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'

@@ -56,7 +56,7 @@ export const CsetSubmissions = () => {
     if (selCount === suggested.length) setSelected({})
     else {
       const newSelected = {}
-      for (const sug of suggested) newSelected[key.id] = 1
+      for (const sug of suggested) newSelected[sug.id] = 1
       setSelected(newSelected)
     }
   }

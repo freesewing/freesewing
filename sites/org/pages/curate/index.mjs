@@ -8,7 +8,7 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { AuthWrapper } from 'shared/components/wrappers/auth/index.mjs'
 import { CsetIcon, OpackIcon } from 'shared/components/icons.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
-import { Link, CardLink } from 'shared/components/link.mjs'
+import { CardLink } from 'shared/components/link.mjs'
 
 // Translation namespaces used on this page
 const ns = nsMerge('curate', 'sets', pageNs, authNs)

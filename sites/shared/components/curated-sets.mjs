@@ -27,7 +27,7 @@ import Markdown from 'react-markdown'
 import Timeago from 'react-timeago'
 import { MeasieVal } from './account/sets.mjs'
 import { CameraIcon, UploadIcon, OkIcon, NoIcon } from 'shared/components/icons.mjs'
-import { Link, PageLink, AnchorLink } from 'shared/components/link.mjs'
+import { Link, PageLink } from 'shared/components/link.mjs'
 import {
   StringInput,
   PassiveImageInput,
@@ -226,13 +226,10 @@ export const CuratedSets = ({ href = false }) => {
 
 export const EditCuratedSet = ({ id }) => {
   // Hooks
-  const { account, control } = useAccount()
+  const { account } = useAccount()
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
-  const { t, i18n } = useTranslation(ns)
-
-  // Context
-  const { setModal } = useContext(ModalContext)
+  const { t } = useTranslation(ns)
 
   const [filter, setFilter] = useState(false)
   const [cset, setCset] = useState()
@@ -376,6 +373,7 @@ export const EditCuratedSet = ({ id }) => {
 
         return (
           <MarkdownInput
+            key={lang}
             label={`${t('account:notes')} (${lang.toUpperCase()})`}
             update={(val) => updateData(key, val)}
             current={data[key]}
