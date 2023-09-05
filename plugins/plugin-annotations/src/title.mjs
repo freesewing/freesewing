@@ -1,121 +1,218 @@
-const titleMacro = function (so, { points, scale, locale, store, part }) {
-  const prefix = so.prefix || ''
-  let overwrite = !so.append
+/*
+ * Defaults for the title macro
+ */
+const macroDefaults = {
+  align: 'left',
+  append: false,
+  cutlist: true,
+  dy: 8,
+  id: 'title',
+  nr: 1,
+  rotation: 0,
+  scale: 1,
+  title: 'title',
+}
 
-  // Passing `false` will remove the title
-  if (so === false || overwrite) {
-    for (const id of [
-      `_${prefix}_titleNr`,
-      `_${prefix}_titleName`,
-      `_${prefix}_titlePattern`,
-      `_${prefix}_titleFor`,
-      `_${prefix}_exportDate`,
-    ])
-      delete points[id]
+/*
+ * Helper method to get the various IDs for points added by this macro
+ */
+const getIds = (id) => ({
+  cutlist: `__macro_title_${id}_cutlist`,
+  date: `__macro_title_${id}_date`,
+  for: `__macro_title_${id}_for`,
+  name: `__macro_title_${id}_name`,
+  nr: `__macro_title_${id}_nr`,
+  title: `__macro_title_${id}_title`,
+})
 
-    if (so === false) return true
-  }
+/*
+ * Helper method to calculate the title transform
+ */
 
-  const transform = function (anchor) {
-    const cx = anchor.x - so.scale * anchor.x
-    const cy = anchor.y - so.scale * anchor.y
+/*
+ * Removing all this is easy as all IDs are available in the store
+ * and all we need to remove are points.
+ */
+const removeTitleMacro = function (id = macroDefaults.id, { points, store, part }) {
+  for (const pid of Object.values(
+    store.get(['parts', part.name, 'macros', 'title', 'ids', id, 'points'], {})
+  ))
+    delete points[pid]
+}
 
-    return `matrix(${so.scale}, 0, 0, ${so.scale}, ${cx}, ${cy}) rotate(${so.rotation} ${anchor.x} ${anchor.y})`
-  }
-  let shift = 8
-  const nextPoint = (text, textClass, shiftAmt = shift) => {
-    const newPoint = so.at.shift(-90 - so.rotation, shiftAmt * so.scale).addText(text, textClass)
-    newPoint.attr('data-text-transform', transform(newPoint))
-    return newPoint
-  }
-  const defaults = {
-    scale: 1,
-    rotation: 0,
-    cutlist: true,
-    align: 'left',
-  }
+/*
+ * The title macro
+ */
+const addTitleMacro = function (config, { Point, points, scale, locale, store, part, log }) {
+  /*
+   * Merge macro defaults with user-provided config
+   */
+  const so = { ...macroDefaults, ...config }
 
-  so = { ...defaults, ...so }
+  /*
+   * Take global scale setting into account
+   */
   so.scale = so.scale * scale
 
-  const validAlignments = ['left', 'right', 'center']
-  const alignment = validAlignments.includes(so.align) ? ' ' + so.align : ' left'
+  /*
+   * Make sure so.at is a Point so we can anchor the title
+   */
+  if (typeof so.at.attr !== 'function') {
+    log.warn(`Title macro called without a valid anchor point. Anchoring title at (0,0).`)
+    so.at = new Point(0, 0)
+  }
 
-  points[`_${prefix}_titleNr`] = so.at
-    .clone()
-    .attr('data-text', so.nr, overwrite)
-    .attr('data-text-class', 'text-4xl fill-note font-bold' + alignment)
-    .attr('data-text-transform', transform(so.at))
+  /*
+   * Make sure so.align is a valid alignment
+   */
+  if (!['left', 'right', 'center'].includes(so.align)) {
+    log.warn(`Title macro called with invalid alignement (${so.align}). Left-aligning title.`)
+    so.align = 'left'
+  }
 
+  /*
+   * Calculate the transform only once
+   */
+  const transform =
+    'matrix(' +
+    `${so.scale}, 0, 0, ${so.scale}, ` +
+    `${so.at.x - so.scale * so.at.x}, ` +
+    `${so.at.y - so.scale * so.at.y}` +
+    `) rotate(${so.rotation} ${so.at.x} ${so.at.y})`
+
+  /*
+   * Get the list of IDs
+   * Initialize the verticle cadence
+   */
+  const ids = getIds(so.id)
+  let shift = so.dy
+
+  /*
+   * Title: nr
+   */
+  if (typeof so.nr !== 'undefined') {
+    points[ids.nr] = so.at
+      .clone()
+      .attr('data-text', so.nr, so.append ? false : true)
+      .attr('data-text-class', 'text-4xl fill-note font-bold ' + so.align)
+      .attr('data-text-transform', transform)
+  } else delete ids.nr
+
+  /*
+   * Title: title
+   */
   if (so.title) {
-    points[`_${prefix}_titleName`] = nextPoint(
-      so.title,
-      'text-lg fill-current font-bold' + alignment
-    )
-    shift += 8
-  }
+    points[ids.title] = so.at
+      .clone()
+      .shift(-90, shift)
+      .attr('data-text', so.title, so.append ? false : true)
+      .attr('data-text-class', 'text-lg fill-current font-bold ' + so.align)
+      .attr('data-text-transform', transform)
+    shift += so.dy
+  } else delete ids.title
 
-  // Cut List instructions
-  const partCutlist = store.get(['cutlist', part.name], null)
-  // if there's a cutlist and it should be included
-  if (so.cutlist && partCutlist?.materials) {
-    // get the default cutonfold
-    const cutonfold = partCutlist.cutOnFold
-    // each material
-    for (const material in partCutlist.materials) {
-      // each set of instructions
-      partCutlist.materials[material].forEach(({ cut, identical, bias, ignoreOnFold }, c) => {
-        // make a new point for this set of instructions
-        const cutPoint = nextPoint('plugin:cut', 'text-md fill-current' + alignment).addText(cut)
+  /*
+   * Title: cutlist
+   */
+  if (so.cutlist) {
+    /*
+     * Get cutlist instructions from the store, only proceed if the list is available
+     */
+    const partCutlist = store.get(['cutlist', part.name], null)
+    if (partCutlist?.materials) {
+      /*
+       * Iterate over materials
+       */
+      for (const [material, instructions] of Object.entries(partCutlist.materials)) {
+        instructions.forEach(({ cut, identical, bias, ignoreOnFold }, c) => {
+          /*
+           * Create point
+           */
+          const id = `${ids.cutlist}_${material}_${c}`
+          ids[`cutlist_${material}_${c}`] = id
+          points[id] = so.at
+            .clone()
+            .shift(-90, shift)
+            .attr('data-text', 'plugin:cut')
+            .attr('data-text-class', 'text-md fill-current ' + so.align)
+            .attr('data-text-transform', transform)
+            .addText(cut)
+          shift += so.dy
 
-        // if they're not identical, add that to the point's text
-        if (!identical && cut > 1) cutPoint.addText('plugin:mirrored')
+          /*
+           * Add instructions if parts are mirrored
+           */
+          if (!identical && cut > 1) points[id].addText('plugin:mirrored')
 
-        // if they should be cut on the fold add that, with bias or without
-        if (cutonfold && !ignoreOnFold)
-          cutPoint.addText(bias ? 'plugin:onFoldAndBias' : 'plugin:onFoldLower')
-        // otherwise if they should be on the bias, say so
-        else if (bias) cutPoint.addText('plugin:onBias')
+          /*
+           * Add instructions if parts are cut on fold
+           */
+          if (partCutlist.cutOnFold && !ignoreOnFold)
+            points[id].addText(bias ? 'plugin:onFoldAndBias' : 'plugin:onFoldLower')
+          /*
+           * Add instructions if parts on on bias
+           */ else if (bias) points[id].addText('plugin:onBias')
 
-        // add 'from' the material
-        cutPoint.addText('plugin:from').addText('plugin:' + material)
-
-        // save and shift
-        points[`_${prefix}_titleCut_${material}_${c}`] = cutPoint
-        shift += 8
-      })
+          /*
+           * Add 'from' (material) text
+           */
+          points[id].addText('plugin:from').addText('plugin:' + material)
+        })
+      }
     }
-  }
+  } else delete ids.cutlist
 
-  let name = store.data?.name || 'No Name'
-  name = name.replace('@freesewing/', '')
-  name += ' v' + (store.data?.version || 'No Version')
-  points[`_${prefix}_titlePattern`] = nextPoint(name, 'fill-note' + alignment)
-
-  if (store.data.for) {
-    shift += 8
-    points[`_${prefix}_titleFor`] = nextPoint(
-      `( ${store.data.for} )`,
-      'fill-current font-bold' + alignment
+  /*
+   * Title: Design name
+   */
+  points[ids.name] = so.at
+    .clone()
+    .shift(-90, shift)
+    .attr(
+      'data-text',
+      `${(store.data?.name || 'noName').replace('@freesewing/', '')} v ${
+        store.data?.version || 'noVersion'
+      }`
     )
-  }
-  shift += 6
-  const now = new Date()
-  let hours = now.getHours()
-  let mins = now.getMinutes()
-  if (hours < 10) hours = `0${hours}`
-  if (mins < 10) mins = `0${mins}`
-  const exportDate = now.toLocaleDateString(locale || 'en', {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-  })
-  points[`_${prefix}_exportDate`] = nextPoint(
-    `${exportDate}@ ${hours}:${mins}`,
-    'text-sm' + alignment
-  )
+    .attr('data-text-class', 'fill-note ' + so.align)
+    .attr('data-text-transform', transform)
+  shift += so.dy
+
+  /*
+   * Title: For (measurements set)
+   */
+  if (store.data.for) {
+    points[ids.for] = so.at
+      .shift(-90, shift)
+      .attr('data-text', `(${store.data.for})`)
+      .attr('data-text-class', 'fill-current font-bold ' + so.align)
+    shift += so.dy
+  } else delete ids.for
+
+  /*
+   * Title: Date
+   */
+  points[ids.date] = so.at
+    .shift(-90, shift)
+    .attr(
+      'data-text',
+      new Date().toLocaleString(locale || 'en', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+      })
+    )
+    .attr('data-text-class', 'text-sm fill-current ' + so.align)
+
+  /*
+   * Store all IDs in the store so we can remove this macro with rmtitle
+   */
+  store.set(['parts', part.name, 'macros', 'title', 'ids', so.id, 'points'], ids)
 }
 
 // Export macros
-export const titleMacros = { title: titleMacro }
+export const titleMacros = {
+  title: addTitleMacro,
+  rmtitle: removeTitleMacro,
+}
