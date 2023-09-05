@@ -7,6 +7,7 @@ const macroDefaults = {
   cutlist: true,
   dy: 8,
   id: 'title',
+  force: false,
   nr: 1,
   rotation: 0,
   scale: 1,
@@ -34,10 +35,6 @@ const getIds = (id) => ({
 })
 
 /*
- * Helper method to calculate the title transform
- */
-
-/*
  * Removing all this is easy as all IDs are available in the store
  * and all we need to remove are points.
  */
@@ -51,36 +48,44 @@ const removeTitleMacro = function (id = macroDefaults.id, { points, store, part 
 /*
  * The title macro
  */
-const addTitleMacro = function (config, { Point, points, scale, locale, store, part, log }) {
+const addTitleMacro = function (
+  config,
+  { Point, points, scale, locale, store, part, log, complete }
+) {
   /*
-   * Merge macro defaults with user-provided config
+   * Don't add a title when complete is false, unless force is true
    */
-  const so = {
+  if (!complete && !config.force) return
+
+  /*
+   * Merge macro defaults with user-provided config to create the macro config (mc)
+   */
+  const mc = {
     ...macroDefaults,
     ...config,
     classes: macroDefaults.classes,
   }
-  if (config.classes) so.classes = { ...so.classes, ...config.classes }
+  if (config.classes) mc.classes = { ...mc.classes, ...config.classes }
 
   /*
    * Take global scale setting into account
    */
-  so.scale = so.scale * scale
+  mc.scale = mc.scale * scale
 
   /*
-   * Make sure so.at is a Point so we can anchor the title
+   * Make sure mc.at is a Point so we can anchor the title
    */
-  if (typeof so.at.attr !== 'function') {
+  if (!mc.at || typeof mc.at.attr !== 'function') {
     log.warn(`Title macro called without a valid anchor point. Anchoring title at (0,0).`)
-    so.at = new Point(0, 0)
+    mc.at = new Point(0, 0)
   }
 
   /*
-   * Make sure so.align is a valid alignment
+   * Make sure mc.align is a valid alignment
    */
-  if (!['left', 'right', 'center'].includes(so.align)) {
-    log.warn(`Title macro called with invalid alignement (${so.align}). Left-aligning title.`)
-    so.align = 'left'
+  if (!['left', 'right', 'center'].includes(mc.align)) {
+    log.warn(`Title macro called with invalid alignement (${mc.align}). Left-aligning title.`)
+    mc.align = 'left'
   }
 
   /*
@@ -88,48 +93,48 @@ const addTitleMacro = function (config, { Point, points, scale, locale, store, p
    */
   const transform =
     'matrix(' +
-    `${so.scale}, 0, 0, ${so.scale}, ` +
-    `${so.at.x - so.scale * so.at.x}, ` +
-    `${so.at.y - so.scale * so.at.y}` +
-    `) rotate(${so.rotation} ${so.at.x} ${so.at.y})`
+    `${mc.scale}, 0, 0, ${mc.scale}, ` +
+    `${mc.at.x - mc.scale * mc.at.x}, ` +
+    `${mc.at.y - mc.scale * mc.at.y}` +
+    `) rotate(${mc.rotation} ${mc.at.x} ${mc.at.y})`
 
   /*
    * Get the list of IDs
    * Initialize the verticle cadence
    */
-  const ids = getIds(so.id)
-  let shift = so.dy
+  const ids = getIds(mc.id)
+  let shift = mc.dy
 
   /*
    * Title: nr
    */
-  if (typeof so.nr !== 'undefined') {
-    points[ids.nr] = so.at
+  if (typeof mc.nr !== 'undefined') {
+    points[ids.nr] = mc.at
       .clone()
-      .attr('data-text', so.nr, so.append ? false : true)
-      .attr('data-text-class', `${so.classes.nr} ${so.align}`)
+      .attr('data-text', mc.nr, mc.append ? false : true)
+      .attr('data-text-class', `${mc.classes.nr} ${mc.align}`)
       .attr('data-text-transform', transform)
-    store.set(['partNumbers', part.name], so.nr)
+    store.set(['partNumbers', part.name], mc.nr)
   } else delete ids.nr
 
   /*
    * Title: title
    */
-  if (so.title) {
-    points[ids.title] = so.at
+  if (mc.title) {
+    points[ids.title] = mc.at
       .clone()
       .shift(-90, shift)
-      .attr('data-text', so.title, so.append ? false : true)
-      .attr('data-text-class', `${so.classes.title} ${so.align}`)
+      .attr('data-text', mc.title, mc.append ? false : true)
+      .attr('data-text-class', `${mc.classes.title} ${mc.align}`)
       .attr('data-text-transform', transform)
-    shift += so.dy
-    store.set(['partTitles', part.name], so.title)
+    shift += mc.dy
+    store.set(['partTitles', part.name], mc.title)
   } else delete ids.title
 
   /*
    * Title: cutlist
    */
-  if (so.cutlist) {
+  if (mc.cutlist) {
     /*
      * Get cutlist instructions from the store, only proceed if the list is available
      */
@@ -145,14 +150,14 @@ const addTitleMacro = function (config, { Point, points, scale, locale, store, p
            */
           const id = `${ids.cutlist}_${material}_${c}`
           ids[`cutlist_${material}_${c}`] = id
-          points[id] = so.at
+          points[id] = mc.at
             .clone()
             .shift(-90, shift)
             .attr('data-text', 'plugin:cut')
-            .attr('data-text-class', `${so.classes.cutlist} ${so.align}`)
+            .attr('data-text-class', `${mc.classes.cutlist} ${mc.align}`)
             .attr('data-text-transform', transform)
             .addText(cut)
-          shift += so.dy
+          shift += mc.dy
 
           /*
            * Add instructions if parts are mirrored
@@ -180,7 +185,7 @@ const addTitleMacro = function (config, { Point, points, scale, locale, store, p
   /*
    * Title: Design name
    */
-  points[ids.name] = so.at
+  points[ids.name] = mc.at
     .clone()
     .shift(-90, shift)
     .attr(
@@ -189,25 +194,25 @@ const addTitleMacro = function (config, { Point, points, scale, locale, store, p
         store.data?.version || 'noVersion'
       }`
     )
-    .attr('data-text-class', `${so.classes.name} ${so.align}`)
+    .attr('data-text-class', `${mc.classes.name} ${mc.align}`)
     .attr('data-text-transform', transform)
-  shift += so.dy
+  shift += mc.dy
 
   /*
    * Title: For (measurements set)
    */
   if (store.data.for) {
-    points[ids.for] = so.at
+    points[ids.for] = mc.at
       .shift(-90, shift)
       .attr('data-text', `(${store.data.for})`)
-      .attr('data-text-class', `${so.classes.for} ${so.align}`)
-    shift += so.dy
+      .attr('data-text-class', `${mc.classes.for} ${mc.align}`)
+    shift += mc.dy
   } else delete ids.for
 
   /*
    * Title: Date
    */
-  points[ids.date] = so.at
+  points[ids.date] = mc.at
     .shift(-90, shift)
     .attr(
       'data-text',
@@ -218,12 +223,12 @@ const addTitleMacro = function (config, { Point, points, scale, locale, store, p
         day: 'numeric',
       })
     )
-    .attr('data-text-class', `${so.classes.date} ${so.align}`)
+    .attr('data-text-class', `${mc.classes.date} ${mc.align}`)
 
   /*
    * Store all IDs in the store so we can remove this macro with rmtitle
    */
-  store.set(['parts', part.name, 'macros', 'title', 'ids', so.id, 'points'], ids)
+  store.set(['parts', part.name, 'macros', 'title', 'ids', mc.id, 'points'], ids)
 }
 
 // Export macros
