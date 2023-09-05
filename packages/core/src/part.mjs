@@ -302,7 +302,7 @@ Part.prototype.__getIdClosure = function () {
 
 /**
  * Copies point/path/snippet data from part orig into this
- * Also sets the freeId
+ * Also sets the freeId, and copied store.parts[name] data
  *
  * @private
  * @param {object} orig - The original part to inject into this
@@ -336,6 +336,14 @@ Part.prototype.__inject = function (orig) {
   }
   for (let i in orig.snippets) {
     this.snippets[i] = orig.snippets[i].clone()
+  }
+  /*
+   * This only supports what can be serialized
+   */
+  if (orig.context.store.parts?.[orig.name]) {
+    this.context.store.parts[this.name] = JSON.parse(
+      JSON.stringify(orig.context.store.parts[orig.name])
+    )
   }
 
   return this
