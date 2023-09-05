@@ -1,3 +1,5 @@
+import { getIds } from './utils.mjs'
+
 /*
  * Defaults for the bannerbox macro
  */
@@ -15,21 +17,15 @@ const macroDefaults = {
 }
 
 /*
- * Helper method to get the various IDs for points added by this macro
- */
-const getIds = (id) => ({
-  box: `__macro_bannerbox_${id}_box`,
-})
-
-/*
  * Removing all this is easy as all IDs are available in the store
  * and all we need to remove are paths.
  */
-const rmbannerbox = function (id = macroDefaults.id, { paths, store, part }) {
+const rmbannerbox = function (id = macroDefaults.id, { paths, store, part, macro }) {
   for (const pid of Object.values(
     store.get(['parts', part.name, 'macros', 'bannerbox', 'ids', id, 'paths'], {})
   ))
     delete paths[pid]
+  macro('rmbanner', id)
 }
 
 /*
@@ -58,7 +54,7 @@ const bannerbox = function (config, { Point, paths, Path, part, macro, log, stor
     log.warn(`Bannerbox macro called without a valid topLeft point. Using (0,0) for topLeft.`)
     mc.topLeft = new Point(0, 0)
   }
-  if (!mc.topRight || typeof mc.bottomRight.attr !== 'function') {
+  if (!mc.bottomRight || typeof mc.bottomRight.attr !== 'function') {
     log.warn(
       `Bannerbox macro called without a valid bottomRight point. Using (6660,666) for bottomRight.`
     )
@@ -67,9 +63,8 @@ const bannerbox = function (config, { Point, paths, Path, part, macro, log, stor
 
   /*
    * Get the list of IDs
-   * Initialize the verticle cadence
    */
-  const ids = getIds(mc.id)
+  const ids = getIds(['box'], mc.id, 'bannerbox')
 
   /*
    * Calculate the offset from the bounding box
