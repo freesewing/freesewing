@@ -250,6 +250,7 @@ function simonBack({
       grainline: true,
     })
     points.title = new Point(points.armhole.x / 4, points.armhole.y)
+    macro('rmtitle')
     macro('title', { at: points.title, nr: 3, title: 'back' })
     points.logo = new Point(points.armhole.x / 4, points.waistCp2.y)
     snippets.logo = new Snippet('logo', points.logo)

@@ -16,8 +16,8 @@ function pacoBackPocketBag({
   // See https://github.com/freesewing/freesewing/issues/2878
   for (const path in paths) delete paths[path]
   for (const snippet in snippets) delete snippets[snippet]
-  macro('scalebox', false)
-  macro('title', false)
+  macro('rmscalebox')
+  macro('rmtitle')
 
   // Don't bother of we're not drafting back pockets
   if (!options.backPockets) return part.hide()
@@ -61,7 +61,7 @@ function pacoBackPocketBag({
       from: points.pocketBagBottomLeft.shift(0, 15),
       to: points.pocketBagWaistLeft.shift(0, 15),
     })
-    macro('scalebox', false)
+    macro('rmscalebox')
     paths.cut = new Path()
       .move(points.pocketLeft)
       .line(points.pocketRight)

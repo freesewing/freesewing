@@ -1,7 +1,8 @@
+const prefix = 'crossbox_'
 // Export macros
 export const crossboxMacros = {
-  crossbox: function (so, { points, Point, paths, Path, getId }) {
-    let id = getId()
+  crossbox: function (so, { points, Point, paths, Path }) {
+    const id = prefix + so.id
     let shiftFraction = 0.1
     points[id + '_boxTopLeft'] = so.from.copy()
     points[id + '_boxBottomRight'] = so.to.copy()
@@ -25,7 +26,7 @@ export const crossboxMacros = {
       shiftFraction
     )
 
-    paths[id + 'crossBox'] = new Path()
+    paths[id + '_crossBox'] = new Path()
       .move(points[id + '_boxTopLeft'])
       .line(points[id + '_boxTopRight'])
       .line(points[id + '_boxBottomRight'])
@@ -44,10 +45,29 @@ export const crossboxMacros = {
       .line(points[id + '_topCrossBL'])
       .attr('class', 'lining dotted stroke-sm')
     if (typeof so.text === 'string') {
-      points.textAnchor = points[id + '_boxTopLeft']
+      points[id + '_textAnchor'] = points[id + '_boxTopLeft']
         .shiftFractionTowards(points[id + '_boxBottomRight'], 0.5)
         .attr('data-text', so.text)
         .attr('data-text-class', 'center')
     }
+  },
+  rmcrossbox: function (id, { points, paths }) {
+    const mid = prefix + id
+    delete paths[mid + '_crossBox']
+    delete paths[mid + '_topCross']
+    delete points[mid + '_boxTopLeft']
+    delete points[mid + '_boxTopRight']
+    delete points[mid + '_boxBottomRight']
+    delete points[mid + '_boxBottomLeft']
+    delete points[mid + '_boxTopLeft']
+    delete points[mid + '_topCrossTL']
+    delete points[mid + '_topCrossBR']
+    delete points[mid + '_topCrossTR']
+    delete points[mid + '_topCrossBL']
+    delete points[mid + '_topCrossTL']
+    delete points[mid + '_topCrossTR']
+    delete points[mid + '_topCrossBR']
+    delete points[mid + '_topCrossBL']
+    delete points[mid + '_textAnchor']
   },
 }

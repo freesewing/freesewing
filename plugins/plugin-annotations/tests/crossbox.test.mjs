@@ -23,7 +23,7 @@ describe('Crossbox Plugin Tests', () => {
     const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    var c = pattern.parts[0].test.paths['1crossBox']
+    var c = pattern.parts[0].test.paths['crossbox_1_crossBox']
     expect(c.attributes.get('class')).to.equal('lining dotted stroke-sm')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[1].type).to.equal('line')
@@ -40,7 +40,7 @@ describe('Crossbox Plugin Tests', () => {
     expect(round(c.ops[3].to.y)).to.equal(30)
     expect(round(c.ops[4].to.x)).to.equal(10)
     expect(round(c.ops[4].to.y)).to.equal(10)
-    c = pattern.parts[0].test.paths['1_topCross']
+    c = pattern.parts[0].test.paths['crossbox_1_topCross']
     expect(c.attributes.get('class')).to.equal('lining dotted stroke-sm')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[1].type).to.equal('line')
@@ -87,7 +87,7 @@ describe('Crossbox Plugin Tests', () => {
     const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    const c = pattern.parts[0].test.points.textAnchor
+    const c = pattern.parts[0].test.points.crossbox_1_textAnchor
     expect(c.attributes.get('data-text')).to.equal('test')
   })
 })

@@ -110,14 +110,14 @@ function tiberiusTunica({
     points.logo = points.midTop.shiftFractionTowards(points.midBottom, 0.3)
     snippets.logo = new Snippet('logo', points.logo)
     points.title = points.midTop.shiftFractionTowards(points.midBottom, 0.5)
-    macro('title', {
+    const titleId = macro('title', {
       at: points.title,
       nr: 1,
       title: 'tunica',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
+    points['title_' + titleId + '_titleNr'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titleName'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titlePattern'].attr('data-text-class', 'center')
 
     // scalebox
     points.scalebox = points.midTop.shiftFractionTowards(points.midBottom, 0.7)

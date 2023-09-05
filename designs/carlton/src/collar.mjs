@@ -18,6 +18,7 @@ function draftCarltonCollar({
   part,
   store,
 }) {
+  macro('rmtitle')
   // We're going to slash and spread this collar. Slashing first:
   // Divide top in 5 parts
   points.cutTop1 = points.topLeft.shiftFractionTowards(points.topRight, 0.2)

@@ -16,8 +16,6 @@ export const dimensionsDefs = [
   },
 ]
 
-const prefix = '__paperless'
-
 function drawDimension(from, to, so, { Path, units }) {
   const dimension = new Path()
     .move(from)
@@ -79,13 +77,18 @@ function lleader(so, type, props, id) {
 
   return point
 }
+function removeDimension(id, props) {
+  if (props.paths[id]) delete props.paths[id]
+  if (props.paths[`${id}_ls`]) delete props.paths[`${id}_ls`]
+  if (props.paths[`${id}_le`]) delete props.paths[`${id}_le`]
+}
 
 // Export macros
 export const dimensionsMacros = {
   // horizontal
   hd: function (so, props) {
-    const { getId, paths } = props
-    const id = so.id || getId(prefix)
+    const { paths } = props
+    const id = 'hd_' + so.id
     paths[id] = drawDimension(
       hleader(so, 'from', props, id + '_ls'),
       hleader(so, 'to', props, id + '_le'),
@@ -95,8 +98,8 @@ export const dimensionsMacros = {
   },
   // vertical
   vd: function (so, props) {
-    const { getId, paths } = props
-    const id = so.id || getId(prefix)
+    const { paths } = props
+    const id = 'vd_' + so.id
     paths[id] = drawDimension(
       vleader(so, 'from', props, id + '_ls'),
       vleader(so, 'to', props, id + '_le'),
@@ -106,8 +109,8 @@ export const dimensionsMacros = {
   },
   // linear
   ld: function (so, props) {
-    const { getId, paths } = props
-    const id = so.id || getId(prefix)
+    const { paths } = props
+    const id = 'ld_' + so.id
     paths[id] = drawDimension(
       lleader(so, 'from', props, id + '_ls'),
       lleader(so, 'to', props, id + '_le'),
@@ -117,8 +120,8 @@ export const dimensionsMacros = {
   },
   // path
   pd: function (so, props) {
-    const { getId, paths, scale, units } = props
-    const id = so.id || getId(prefix)
+    const { paths, scale, units } = props
+    const id = 'pd_' + so.id
     if (typeof so.d === 'undefined') so.d = 10 * scale
     const dimension = so.path
       .offset(so.d)
@@ -132,28 +135,30 @@ export const dimensionsMacros = {
     drawLeader(props, so.path.end(), dimension.end(), id + '_le')
   },
   // Remove dimension
-  rmd: function (so, props) {
-    const { paths } = props
-    if (paths[so.id]) delete this.paths[so.id]
-    if (paths[`${so.id}_ls`]) delete paths[`${so.id}_ls`]
-    if (paths[`${so.id}_le`]) delete paths[`${so.id}_le`]
-    if (Array.isArray(so.ids)) {
-      for (const id of so.ids) {
-        if (paths[id]) delete paths[id]
-        if (paths[`${id}_ls`]) delete paths[`${id}_ls`]
-        if (paths[`${id}_le`]) delete paths[`${id}_le`]
-      }
-    }
+  rmvd: function (id, props) {
+    removeDimension('vd_' + id, props)
   },
-  // Remove all dimensions (with standard prefix)
-  rmad: function (params, props) {
-    const toRemove = {
-      points: props.point,
-      paths: props.paths,
-    }
-    for (let type in toRemove) {
-      for (let id in props[type]) {
-        if (id.slice(0, prefix.length) === prefix) delete props[type][id]
+  rmhd: function (id, props) {
+    removeDimension('hd_' + id, props)
+  },
+  rmld: function (id, props) {
+    removeDimension('ld_' + id, props)
+  },
+  rmpd: function (id, props) {
+    removeDimension('pd_' + id, props)
+  },
+  // This is has a side-effect
+  // Since this is a macro that removed other macros, there will be an array key
+  // "macros.removeddim.ids" created in the part that contains the id of this
+  // macro. It is useless.
+  removedim: function (id, props) {
+    for (let key of ['vd', 'ld', 'pd', 'hd']) {
+      if (props.macros[key]) {
+        const ids = props.macros[key].ids
+        if (ids)
+          ids.forEach((id) => {
+            removeDimension(key + '_' + id, props)
+          })
       }
     }
   },

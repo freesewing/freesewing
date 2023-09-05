@@ -1,6 +1,6 @@
 // Export macros
 export const bannerMacros = {
-  banner: function (so) {
+  banner: function (so, { store, macros }) {
     // Mix defaults with settings object
     so = {
       text: '',
@@ -19,5 +19,20 @@ export const bannerMacros = {
     }
 
     so.path.attr('data-text', spacer)
+
+    macros.banner.paths = macros.banner.paths ? macros.banner.paths : []
+    macros.banner.paths[so.id] = so.path.name
+  },
+  rmbanner: function (id, { paths, macros }) {
+    const pathName = macros.banner.paths ? macros.banner.paths[id] : undefined
+    if (pathName) {
+      const bannerPath = paths[pathName]
+      if (bannerPath) {
+        delete bannerPath.attributes.list['data-text-dy']
+        delete bannerPath.attributes.list['data-text-class']
+        delete bannerPath.attributes.list['data-text']
+      }
+      delete macros.banner.paths[id]
+    }
   },
 }

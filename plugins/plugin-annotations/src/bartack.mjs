@@ -58,7 +58,7 @@ function createBartack(so, props) {
   }
   so = { ...defaults, ...so }
 
-  const { Path, paths } = props
+  const { Path, paths, store } = props
 
   // Handle negative angle
   if (so.angle < 0) so.angle = 360 + (so.angle % -360)
@@ -92,12 +92,18 @@ function createBartack(so, props) {
     }
   }
 
-  paths[`${so.prefix}bartack${so.suffix}`] = bartackPath(guide, so, props).attr(
-    'class',
-    'stroke-sm stroke-mark'
-  )
+  const pathName = `bartack_${so.id}_${so.suffix}`
+  const storePathKey = 'macros.bartack.paths.' + so.id
+  store.set(storePathKey, pathName)
+  paths[pathName] = bartackPath(guide, so, props).attr('class', 'stroke-sm stroke-mark')
 
   return true
+}
+function removeBartack(id, { paths, store }) {
+  const storePathKey = 'macros.bartack.paths.' + id
+  const pathName = store.get(storePathKey)
+  delete paths[pathName]
+  store.unset(storePathKey)
 }
 
 // Export macros
@@ -120,5 +126,14 @@ export const bartackMacros = {
     so.from = false
     so.to = false
     return createBartack(so, props)
+  },
+  rmbartack: function (id, props) {
+    return removeBartack(id, props)
+  },
+  rmbartackAlong: function (id, props) {
+    return removeBartack(id, props)
+  },
+  rmbartackFractionAlong: function (id, props) {
+    return removeBartack(id, props)
   },
 }

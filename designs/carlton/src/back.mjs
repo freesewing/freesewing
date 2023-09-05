@@ -18,7 +18,7 @@ function draftCarltonBack({
   Path,
   part,
 }) {
-  macro('cutonfold', false)
+  macro('rmcutonfold')
   calculateRatios(part)
   // Belt width
   let bw = measurements.hpsToWaistBack * options.beltWidth

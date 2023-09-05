@@ -1,7 +1,8 @@
 import chai from 'chai'
-import { Design, Part, pctBasedOn } from '../src/index.mjs'
+import { Design, Part, pctBasedOn, Store } from '../src/index.mjs'
 
 const expect = chai.expect
+const store = new Store()
 
 describe('Part', () => {
   it('Shorthand should contain the part itself', () => {
@@ -26,9 +27,71 @@ describe('Part', () => {
   })
 
   it('Should not run an unknown macro', () => {
-    const part = new Part()
-    const macro = part.__macroClosure()
-    expect(macro('unknown')).to.equal(undefined)
+    let unknownMacro = 1
+    const part = {
+      name: 'test',
+      draft: ({ part, macro }) => {
+        unknownMacro = macro('unknown')
+        return part
+      },
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    expect(unknownMacro).to.equal(undefined)
+  })
+
+  it('Should return a macro ID', () => {
+    let macroId = undefined
+    const plugin = {
+      name: 'test',
+      version: '0.1-test',
+      macros: {
+        test: function (so) {
+          let points = this.points
+          points.macro = new this.Point(so.x, so.y)
+        },
+      },
+    }
+    const part = {
+      name: 'test',
+      draft: ({ part, macro }) => {
+        macroId = macro('test')
+        return part
+      },
+      plugins: plugin,
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+    expect(macroId).to.not.equal(undefined)
+  })
+
+  it('Should preface the ID with the macro name and store it', () => {
+    let macroId = undefined
+    const plugin = {
+      name: 'test',
+      version: '0.1-test',
+      macros: {
+        test: function (so) {},
+      },
+    }
+    const part = {
+      name: 'test',
+      draft: ({ part, macro }) => {
+        macroId = macro('test', { id: 'testId1' })
+        return part
+      },
+      plugins: plugin,
+    }
+    const design = new Design({ parts: [part] })
+    const pattern = new design()
+    pattern.draft()
+
+    expect(macroId).to.equal('testId1')
+    console.log({ store: pattern.store })
+    // console.log({store:part.store.get('macros')})
+    // expect(store.get('macros.test.ids')[0]).to.equal(macroId)
   })
 
   it('Should return a valid ID with Part.getId()', () => {

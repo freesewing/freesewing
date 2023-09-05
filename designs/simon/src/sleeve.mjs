@@ -33,7 +33,7 @@ function simonSleeve({
   // Remove inherited paths, snippets, and scalebox
   for (const p in paths) delete paths[p]
   for (const s in snippets) delete snippets[s]
-  macro('scalebox', false)
+  macro('rmscalebox')
 
   // Determine the sleeve length
   const len = measurements.shoulderToWrist * (1 + options.sleeveLengthBonus)
@@ -168,6 +168,7 @@ function simonSleeve({
       }
       paths.pleats.attr('class', 'dotted')
     }
+    macro('rmtitle')
     macro('title', { at: points.centerBiceps, nr: 5, title: 'sleeve' })
     macro('grainline', {
       from: points.cuffMid,

@@ -1,3 +1,4 @@
+const prefix = 'grainline_'
 // Export defs
 export const grainlineDefs = [
   {
@@ -21,13 +22,6 @@ const dflts = { text: 'grainline' }
 // Export macros
 export const grainlineMacros = {
   grainline: function (so = {}, { points, paths, Path, complete, store }) {
-    if (so === false) {
-      delete points.grainlineFrom
-      delete points.grainlineTo
-      delete paths.grainline
-      if (store.cutlist?.setGrain) store.cutlist.setGrain(90) // Restoring default
-      return true
-    }
     so = {
       ...dflts,
       ...so,
@@ -37,16 +31,25 @@ export const grainlineMacros = {
     store.cutlist.setGrain(so.from.angle(so.to))
 
     if (complete) {
-      points.grainlineFrom = so.from.shiftFractionTowards(so.to, 0.05)
-      points.grainlineTo = so.to.shiftFractionTowards(so.from, 0.05)
-      paths.grainline = new Path()
-        .move(points.grainlineFrom)
-        .line(points.grainlineTo)
+      points[prefix + so.id + '_From'] = so.from.shiftFractionTowards(so.to, 0.05)
+      points[prefix + so.id + '_To'] = so.to.shiftFractionTowards(so.from, 0.05)
+      paths[prefix + so.id + '_grainline'] = new Path()
+        .move(points[prefix + so.id + '_From'])
+        .line(points[prefix + so.id + '_To'])
         .attr('class', 'note')
         .attr('marker-start', 'url(#grainlineFrom)')
         .attr('marker-end', 'url(#grainlineTo)')
         .attr('data-text', so.text)
         .attr('data-text-class', 'center fill-note')
     }
+  },
+  rmgrainline: function (id, { points, paths, store }) {
+    delete points[prefix + id + '_From']
+    delete points[prefix + id + '_To']
+    delete paths[prefix + id + '_grainline']
+
+    if (store.cutlist?.setGrain) store.cutlist.setGrain(90) // Restoring default
+
+    return true
   },
 }

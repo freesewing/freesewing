@@ -41,14 +41,14 @@ function draftHortensiaBottompanel({
     snippets.logo = new Snippet('logo', points.logo)
     points.title = points.logo.shift(-90, 50).attr('data-text-class', 'center')
 
-    macro('title', {
+    const titleId = macro('title', {
       at: points.title,
       nr: 3,
       title: 'BottomPanel',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
+    points['title_' + titleId + '_titleNr'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titleName'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titlePattern'].attr('data-text-class', 'center')
 
     let scaleBoxMove = 180 * options.size
 

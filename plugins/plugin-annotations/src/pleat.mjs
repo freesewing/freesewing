@@ -1,3 +1,5 @@
+const prefix = 'pleat_'
+
 // Export defs
 export const pleatDefs = [
   {
@@ -13,56 +15,57 @@ export const pleatDefs = [
 // Export macros
 export const pleatMacros = {
   pleat: function (so, { points, paths, Path, complete, scale }) {
-    if (so === false) {
-      delete points.pleatFrom
-      delete points.pleatFromIn
-      delete points.pleatTo
-      delete points.pleatToIn
-      delete paths.pleatTo
-      delete paths.pleatFrom
-      delete paths.pleatArrow
-      return true
-    }
+    const id = prefix + so.id
     so = {
       margin: 35,
-      prefix: 'pleat',
       reverse: false,
       ...so,
     }
     if (complete) {
-      points[so.prefix + 'From'] = so.from
-      points[so.prefix + 'To'] = so.to
-      points[so.prefix + 'FromIn'] = points[so.prefix + 'From'].shift(
+      points[id + '_From'] = so.from
+      points[id + '_To'] = so.to
+      points[id + '_FromIn'] = points[id + '_From'].shift(
         so.from.shiftTowards(so.to, 0.1).angle(so.from) + 270,
         so.margin * scale
       )
-      points[so.prefix + 'ToIn'] = points[so.prefix + 'To'].shift(
+      points[id + '_ToIn'] = points[id + '_To'].shift(
         so.from.shiftTowards(so.to, 0.1).angle(so.to) + 90,
         so.margin * scale
       )
-      paths[so.prefix + 'PleatFrom'] = new Path()
-        .move(points[so.prefix + 'From'])
-        .line(points[so.prefix + 'FromIn'])
+      paths[id + '_PleatFrom'] = new Path()
+        .move(points[id + '_From'])
+        .line(points[id + '_FromIn'])
         .attr('class', 'note' + (so.reverse ? ' dashed' : ''))
-      paths[so.prefix + 'PleatTo'] = new Path()
-        .move(points[so.prefix + 'To'])
-        .line(points[so.prefix + 'ToIn'])
+      paths[id + '_PleatTo'] = new Path()
+        .move(points[id + '_To'])
+        .line(points[id + '_ToIn'])
         .attr('class', 'note' + (so.reverse ? '' : ' dashed'))
-      paths[so.prefix + 'PleatArrow'] = new Path()
+      paths[id + '_PleatArrow'] = new Path()
         .move(
-          points[so.prefix + (so.reverse ? 'To' : 'From')].shiftFractionTowards(
-            points[so.prefix + (so.reverse ? 'ToIn' : 'FromIn')],
+          points[id + (so.reverse ? '_To' : '_From')].shiftFractionTowards(
+            points[id + (so.reverse ? '_ToIn' : '_FromIn')],
             0.25
           )
         )
         .line(
-          points[so.prefix + (so.reverse ? 'From' : 'To')].shiftFractionTowards(
-            points[so.prefix + (so.reverse ? 'FromIn' : 'ToIn')],
+          points[id + (so.reverse ? '_From' : '_To')].shiftFractionTowards(
+            points[id + (so.reverse ? '_FromIn' : '_ToIn')],
             0.25
           )
         )
         .attr('class', 'note')
         .attr('marker-end', 'url(#pleatTo)')
     }
+  },
+  rmpleat: function (id, { points, paths }) {
+    const mid = prefix + id
+    delete points[mid + '_pleatFrom']
+    delete points[mid + '_pleatFromIn']
+    delete points[mid + '_pleatTo']
+    delete points[mid + '_pleatToIn']
+    delete paths[mid + '_pleatTo']
+    delete paths[mid + '_pleatFrom']
+    delete paths[mid + '_pleatArrow']
+    return true
   },
 }

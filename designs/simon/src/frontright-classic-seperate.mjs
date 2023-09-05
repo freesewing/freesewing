@@ -28,6 +28,7 @@ export const draftFrontRightClassicSeperate = ({
   // Complete pattern?
   if (complete) {
     // Title
+    macro('rmtitle')
     macro('title', { at: points.title, nr: '1a', title: 'rightFront' })
     delete snippets['cfWaist-notch']
     delete snippets['cfHips-notch']

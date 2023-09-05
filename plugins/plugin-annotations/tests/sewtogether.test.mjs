@@ -23,7 +23,7 @@ describe('Sewtogether Plugin Tests', () => {
     const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    const c = pattern.parts[0].test.paths.sewtogetherSewTogether
+    const c = pattern.parts[0].test.paths.sewtogether_1_SewTogether
     expect(c.attributes.get('class')).to.equal('dotted note stroke-sm')
     expect(c.attributes.get('marker-start')).to.equal('url(#sewTogetherStart)')
     expect(c.attributes.get('marker-end')).to.equal('url(#sewTogetherEnd)')
@@ -61,7 +61,7 @@ describe('Sewtogether Plugin Tests', () => {
     const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    var c = pattern.parts[0].test.paths.sewtogetherSewTogetherHinge
+    var c = pattern.parts[0].test.paths.sewtogether_1_SewTogetherHinge
     expect(c.attributes.get('class')).to.equal('dotted note stroke-sm')
     expect(c.attributes.get('marker-start')).to.equal('url(#sewTogetherCross)')
     expect(c.ops[0].type).to.equal('move')
@@ -92,7 +92,7 @@ describe('Sewtogether Plugin Tests', () => {
     const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
     const pattern = new Test({ sa: 10 })
     pattern.draft()
-    var c = pattern.parts[0].test.paths.sewtogetherSewTogetherHinge
+    var c = pattern.parts[0].test.paths.sewtogether_1_SewTogetherHinge
     expect(round(c.ops[1].to.x)).to.equal(0)
   })
 })

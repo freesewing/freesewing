@@ -70,14 +70,22 @@ function setGrain(store, grain = false) {
 }
 
 /** Method to add the cutOnFold info */
-function setCutOnFold(store, p1, p2) {
+function setCutOnFold(store, p1, p2, id) {
   const partName = store.get('activePart')
+  if (id === undefined) {
+    id = 'cutOnFold'
+  }
   const path = ['cutlist', partName, 'cutOnFold']
   if (p1 === false && typeof p2 === 'undefined') {
-    return store.unset(path)
+    store.set(
+      path,
+      store.get(path).filter((e) => e.id !== id)
+    )
+    if (store.get(path).length < 1) store.unset(path)
+    return store
   }
   if (!isNaN(p1.x) && !isNaN(p1.y) && !isNaN(p2.x) && !isNaN(p2.y)) {
-    store.set(path, [p1, p2])
+    store.setIfUnset(path, []).push(path, { id: id, points: [p1, p2] })
   } else
     store.log.error('Called part.setCutOnFold() but at least one parameter is not a Point instance')
 

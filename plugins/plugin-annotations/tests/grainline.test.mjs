@@ -23,7 +23,7 @@ describe('Grainline Plugin Tests', () => {
     const Pattern = new Design({ parts: [part] })
     const pattern = new Pattern()
     pattern.draft()
-    const c = pattern.parts[0].test.paths.grainline
+    const c = pattern.parts[0].test.paths.grainline_1_grainline
     expect(c.attributes.get('class')).to.equal('note')
     expect(c.attributes.get('marker-start')).to.equal('url(#grainlineFrom)')
     expect(c.attributes.get('marker-end')).to.equal('url(#grainlineTo)')

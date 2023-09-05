@@ -23,6 +23,7 @@ export const front = {
     sa,
     paperless,
     macro,
+    rmmacro,
     store,
     part,
   }) => {
@@ -126,33 +127,89 @@ export const front = {
       .attr('data-text', 'hem')
       .attr('data-text-class', 'text-xs center')
 
+    const thb = macro('banner', { path: paths.topHem, text: 'topHem' })
+    const thbb = macro('bannerbox', {
+      topLeft: points.topLeftHem,
+      bottomRight: points.topRightBack,
+      text: 'topHem',
+    })
+    const bt = macro('bartack', {
+      anchor: points.topCOF,
+      length: 25,
+    })
+
+    const bta = macro('bartackAlong', {
+      path: paths.pocket,
+    })
+
     macro('cutonfold', {
       from: points.topCOF,
       to: points.bottomCOF,
     })
+    const cof = macro('cutonfold', {
+      from: points.bottomLeft,
+      to: points.bottomRight,
+    })
+    const cb = macro('crossbox', {
+      from: points.topRightBack,
+      to: points.crossBoxTo2,
+      text: 'attachment',
+    })
+
+    var cId = undefined
+
+    points.logo = points.topRightBack.shiftFractionTowards(points.pocketRightBottom, 0.5)
+    points.title = points.logo.shift(-90, 100)
+    const title = macro('title', {
+      nr: 1,
+      at: points.title,
+      title: 'Front',
+    })
+    macro('title', {
+      nr: 1,
+      at: points.title,
+      title: 'Front again',
+    })
 
     // Complete?
     if (complete) {
-      points.logo = points.topRightBack.shiftFractionTowards(points.pocketRightBottom, 0.5)
       snippets.logo = new Snippet('logo', points.logo)
-      points.title = points.logo.shift(-90, 100)
-      macro('title', {
-        nr: 1,
-        at: points.title,
-        title: 'Front',
-      })
 
       points.scaleboxAnchor = points.pocketLeftBottom.shiftFractionTowards(points.bottomRight, 0.5)
       macro('scalebox', { at: points.scaleboxAnchor })
 
-      macro('crossbox', {
+      cId = macro('crossbox', {
+        from: points.topRightHem,
+        to: points.crossBoxTo1,
+        id: 'CrossBoxTop',
+      })
+      cId = macro('crossbox', {
         from: points.topRightHem,
         to: points.crossBoxTo1,
       })
-      macro('crossbox', {
-        from: points.topRightBack,
-        to: points.crossBoxTo2,
-        text: 'attachment',
+      cId = macro('grainline', {
+        from: points.topRightHem,
+        to: points.crossBoxTo1,
+      })
+
+      macro('scalebox', {
+        at: points.pocketLeftTop,
+        rotate: 180,
+      })
+      macro('scalebox', {
+        at: points.topRightHem,
+        rotate: 45,
+      })
+      macro('miniscale', {
+        at: points.pocketRightTop,
+        rotate: 90,
+      })
+      macro('miniscale', {
+        at: points.pocketLeftBottom,
+      })
+      macro('miniscale', {
+        at: points.pocketRightBottom,
+        id: 'test',
       })
 
       if (sa) {
@@ -162,6 +219,17 @@ export const front = {
 
     // Paperless?
     if (paperless) {
+      macro('rmbanner', thb)
+      macro('rmbannerbox', thbb)
+      macro('rmbartack', bt)
+      macro('rmbartackAlong', bta)
+      macro('rmcrossbox', cb)
+      macro('rmcutonfold', cof)
+      macro('rmtitle', title)
+      macro('rmtitle', store.get('macros.title'))
+      macro('rmtitle')
+      macro('rmminiscale', 'test')
+
       macro('hd', {
         from: points.bottomLeft,
         to: points.bottomRight,
@@ -204,6 +272,10 @@ export const front = {
       })
     }
 
+    macro('rmvd')
+    macro('rmd')
+
+    macro('grainline', { from: points.topLeft, to: points.bottomRight })
     return part
   },
 }

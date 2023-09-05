@@ -74,14 +74,14 @@ function draftCorneliusPocket({
     points.logo = points.pocketSide.shiftFractionTowards(points.pocketTL, 0.5)
     snippets.logo = new Snippet('logo', points.logo)
     points.title = points.logo.shift(270, 50)
-    macro('title', {
+    const titleId = macro('title', {
       nr: 2,
       at: points.title,
       title: 'Pocket',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
+    points['title_' + titleId + '_titleNr'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titleName'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titlePattern'].attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')

@@ -55,6 +55,7 @@ export const draftFrontLeftSeamless = ({
     addButtonHoles(part, 'cfNeck')
 
     // Title
+    macro('rmtitle')
     macro('title', { at: points.title, nr: 2, title: 'frontLeft' })
 
     if (sa) {

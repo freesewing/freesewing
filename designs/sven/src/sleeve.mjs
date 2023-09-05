@@ -23,7 +23,8 @@ function svenSleeve({ store, sa, points, paths, Path, complete, paperless, macro
   if (complete) {
     macro('grainline', {
       from: points.centerWrist,
-      to: points.grainlineTo,
+      to: points.centerBiceps,
+      // to: points.grainlineTo,
     })
     if (sa) {
       paths.saBase = new Path()

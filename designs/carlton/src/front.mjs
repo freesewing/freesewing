@@ -19,7 +19,7 @@ function draftCarltonFront({
   Path,
   part,
 }) {
-  macro('cutonfold', false)
+  macro('rmcutonfold')
   calculateRatios(part)
 
   // Waist shaping

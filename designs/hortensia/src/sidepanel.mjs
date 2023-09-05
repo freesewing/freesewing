@@ -146,16 +146,16 @@ function draftHortensiaSidepanel({
       .shiftFractionTowards(points.bottomMiddle, 0.6)
       .attr('data-text-class', 'center')
 
-    macro('title', {
+    const titleId = macro('title', {
       at: points.title,
       nr: 1,
       title: 'SidePanel',
     })
 
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
-    // points.__titleFor.attr("data-text-class", "center");
+    // console.log({points:JSON.parse(JSON.stringify(points))})
+    points['title_' + titleId + '_titleNr'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titleName'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titlePattern'].attr('data-text-class', 'center')
 
     snippets.topNotch = new Snippet('notch', points.topMiddle)
     snippets.zipperLeft = new Snippet('notch', points.topZipperLeft)

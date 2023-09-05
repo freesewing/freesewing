@@ -87,7 +87,7 @@ export function draftDianaFrontOrBack({
     snippets.shoulderSeamEndNotch = new Snippet('notch', points.neck)
     if (front) snippets.armholePitchNotch = new Snippet('notch', points.armholePitch)
 
-    macro('cutonfold', false)
+    macro('rmcutonfold')
     macro('cutonfold', {
       from: points.cNeck,
       to: points.cHem,

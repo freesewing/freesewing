@@ -4,7 +4,8 @@ const prefix = 'mirroredOnFold'
 
 // types of path operations
 const opTypes = ['to', 'from', 'cp1', 'cp2']
-const avoidRegx = new RegExp(`^(cutonfold|grainline|__scalebox|__miniscale|${prefix})`)
+// const avoidRegx = new RegExp(`^(cutonfold|grainline|__scalebox|__miniscale|${prefix})`)
+const avoidRegx = new RegExp(`^(cutonfold|grainline|scalebox|miniscale)`)
 
 /**
  * The plugin to handle all business related to mirroring, rotating, and duplicating parts for the cutting layout
@@ -95,7 +96,7 @@ export const cutLayoutPlugin = function (material, grainAngle) {
     macros: {
       ...pluginMirror.macros,
       // handle mirroring on the fold and rotating to sit along the grain or bias
-      handleFoldAndGrain: ({ partCutlist, instruction }, { points, macro }) => {
+      handleFoldAndGrain: ({ partCutlist, instruction }, { points, macro, snippets }) => {
         // get the grain angle for the part for this set of instructions
         const grainSpec = partCutlist.grain
           ? partCutlist.grain + (instruction.bias ? 45 : 0)
@@ -103,12 +104,16 @@ export const cutLayoutPlugin = function (material, grainAngle) {
         // if the part has cutonfold instructions
         if (partCutlist.cutOnFold) {
           // if we're not meant to igore those instructions, mirror on the fold
-          if (!instruction.ignoreOnFold) macro('mirrorOnFold', { fold: partCutlist.cutOnFold })
+          if (!instruction.ignoreOnFold) {
+            partCutlist.cutOnFold.forEach((c) => {
+              macro('mirrorOnFold', { fold: c.points })
+            })
+          }
           // if we are meant to ignore those instructions, but there's a grainline
           else if (grainSpec !== undefined) {
             // replace the cutonfold with a grainline
             macro('grainline', { from: points.cutonfoldVia1, to: points.cutonfoldVia2 })
-            macro('cutonfold', false)
+            macro('rmcutonfold')
           }
         }
 
@@ -116,7 +121,7 @@ export const cutLayoutPlugin = function (material, grainAngle) {
         macro('rotateToGrain', { bias: instruction.bias, grainSpec })
       },
       // mirror the part across the line indicated by cutonfold
-      mirrorOnFold: ({ fold }, { paths, snippets, macro, points, utils, Point }) => {
+      mirrorOnFold: ({ id, fold }, { paths, snippets, macro, points, utils, Point }) => {
         // get all the paths to mirror
         const mirrorPaths = []
         for (const p in paths) {
@@ -142,7 +147,8 @@ export const cutLayoutPlugin = function (material, grainAngle) {
           const anchorName = `snippetAnchors_${anchorNames++}`
           points[anchorName] = new Point(snip.anchor.x, snip.anchor.y)
           mirrorPoints.push(anchorName)
-          snippetsByType[snip.def].push(`${prefix}${utils.capitalize(anchorName)}`)
+          // snippetsByType[snip.def].push(`mirrored${utils.capitalize(anchorName)}`)
+          snippetsByType[snip.def].push(`${id}${utils.capitalize(anchorName)}`)
         }
 
         // mirror
@@ -150,7 +156,7 @@ export const cutLayoutPlugin = function (material, grainAngle) {
           paths: mirrorPaths,
           points: mirrorPoints,
           mirror: fold,
-          prefix,
+          prefix: id,
         })
 
         // sprinkle the snippets

@@ -13,6 +13,7 @@ function draftCarltonPocketLining({
   Path,
   part,
 }) {
+  macro('rmtitle')
   points.topLeft = points.bottomLeft.shiftFractionTowards(points.topLeft, 0.75)
   points.topRight = new Point(points.bottomRight.x, points.topLeft.y)
   if (options.pocketRadius > 0) {

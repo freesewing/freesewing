@@ -63,6 +63,7 @@ export const draftFrontRightClassicCuton = ({
     addButtons(part)
 
     // Title
+    macro('rmtitle')
     macro('title', { at: points.title, nr: 1, title: 'frontRight' })
 
     if (sa) {

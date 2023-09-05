@@ -34,7 +34,7 @@ function simonFront({
     if (i.indexOf('otch')) delete snippets[i]
   }
 
-  macro('cutonfold', false)
+  macro('rmcutonfold')
 
   // Populare store with data we need
   calculateReduction(part)
@@ -128,6 +128,7 @@ function simonFront({
       from: points.cfHem.shift(0, grainlineDistance),
       to: points.cfNeck.shift(0, grainlineDistance),
     })
+    macro('rmtitle')
     macro('title', { at: points.title, nr: 'X', title: 'front' })
     macro('sprinkle', {
       snippet: 'notch',

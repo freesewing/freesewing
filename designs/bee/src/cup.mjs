@@ -59,8 +59,8 @@ export const cup = {
     for (let i in paths) delete paths[i]
     for (let i in snippets) delete snippets[i]
     //removing macros not required from Bella
-    macro('title', false)
-    macro('scalebox', false)
+    macro('rmtitle')
+    macro('rmscalebox')
     //bella alterations
     points.sideHemNew = points.armhole.shiftOutwards(
       points.bustDartTop,
@@ -201,7 +201,7 @@ export const cup = {
       }
       points.title = points.grainlineBottom.shift(
         points.bustA.angle(points.top) - 90,
-        points.grainlineTo.dist(points.grainlineBottom)
+        points.grainlineTop.dist(points.grainlineBottom)
       )
       macro('title', {
         at: points.title,
@@ -223,7 +223,7 @@ export const cup = {
       }
       points.logo = points.grainlineTop.shiftOutwards(
         points.grainlineBottom,
-        points.grainlineTo.dist(points.grainlineBottom) * 9
+        points.grainlineTop.dist(points.grainlineBottom) * 9
       )
       snippets.logo = new Snippet('logo', points.logo)
         .attr('data-rotate', 90 - points.bustA.angle(points.top) - 270)

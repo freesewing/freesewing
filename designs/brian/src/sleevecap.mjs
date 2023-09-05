@@ -176,8 +176,8 @@ export const sleevecap = {
     // Clean up from fron
     for (const path in paths) delete paths[path]
     delete snippets.logo
-    macro('title', false)
-    macro('cutonfold', false)
+    macro('rmtitle')
+    macro('rmcutonfold')
 
     store.set('sleeveFactor', 1)
     let run = 0

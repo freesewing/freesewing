@@ -47,16 +47,16 @@ function draftHortensiaStrap({
   // Complete?
   if (complete) {
     points.title = points.topMiddle.shiftFractionTowards(points.bottomMiddle, 0.25)
-    macro('title', {
+    const titleId = macro('title', {
       at: points.title,
       nr: 5,
       title: 'Strap',
       rotation: 90,
       scale: 0.25,
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
+    points['title_' + titleId + '_titleNr'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titleName'].attr('data-text-class', 'center')
+    points['title_' + titleId + '_titlePattern'].attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')

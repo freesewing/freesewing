@@ -5,6 +5,7 @@ import { Point, pointsProxy } from './point.mjs'
 import { Path, pathsProxy } from './path.mjs'
 import { Snippet, snippetsProxy } from './snippet.mjs'
 import { Hooks } from './hooks.mjs'
+import { PureComponent } from 'react'
 
 //////////////////////////////////////////////
 //               CONSTRUCTOR                //
@@ -37,6 +38,7 @@ export function Part() {
   this.paths = {}
   this.snippets = {}
   this.name = null
+  this.macros = {}
 
   return this
 }
@@ -181,6 +183,15 @@ Part.prototype.shorthand = function () {
       return Reflect.get(...arguments)
     },
     set: (measurements, name, value) => (self.context.settings.measurements[name] = value),
+  })
+  shorthand.macros = new Proxy(this.macros, {
+    get: function (macros, name) {
+      if (typeof macros[name] === 'undefined')
+        self.context.store.log.warning(
+          `${self.name} tried to access \`macros.${name}\` but it is \`undefined\``
+        )
+      return Reflect.get(...arguments)
+    },
   })
   shorthand.options = new Proxy(this.context.settings.options, {
     get: function (options, name) {
@@ -337,6 +348,12 @@ Part.prototype.__inject = function (orig) {
   for (let i in orig.snippets) {
     this.snippets[i] = orig.snippets[i].clone()
   }
+  Object.keys(orig.macros).forEach((key) => {
+    // this.macros[key] = (this.macros[key] instanceof Array ? this.macros[key] : []).concat(
+    //   orig.macros[key]
+    // )
+    this.macros[key] = { ...orig.macros[key] }
+  })
 
   return this
 }
@@ -351,13 +368,54 @@ Part.prototype.__macroClosure = function (props) {
   const self = this
   const method = function (key, args) {
     const macro = utils.__macroName(key)
+
+    if (key.substring(0, 2) === 'rm') {
+      key = key.substring(2)
+
+      let ids = []
+      switch (typeof args) {
+        case 'undefined':
+          ids = self.macros[key].ids
+          break
+        case 'string':
+          ids.push(args)
+          break
+        case 'object':
+          if (args instanceof Array) ids = args
+      }
+      if (typeof self[macro] === 'function' && ids)
+        ids.forEach((id) => {
+          self[macro](id, props)
+          self.macros[key].ids = self.macros[key].ids.filter((i) => i !== id)
+        })
+
+      return
+    }
+
+    args = { ...args, ...{ id: args && args.id ? args.id : self.getId(), macro: macro } }
+    self.macros[key] = { ...self.macros[key], ...{} }
+    self.macros[key].ids = self.macros[key].ids instanceof Array ? self.macros[key].ids : []
+    if (false == self.macros[key].ids.includes(args.id)) {
+      self.macros[key].ids.push(args.id)
+    }
     if (typeof self[macro] === 'function') self[macro](args, props)
-    else if ('context' in self)
+    else if ('context' in self) {
       self.context.store.log.warning('Unknown macro `' + key + '` used in ' + self.name)
+      return undefined
+    }
+
+    return args.id
   }
 
   return method
 }
+/**
+ * Returns a closure holding the macro method
+ *
+ * @private
+ * @return {function} method - The closured macro method
+ */
+Part.prototype.__rmmacroClosure = function (props) {}
 
 /**
  * Returns a method to format values in the units provided in settings
