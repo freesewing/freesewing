@@ -1,3 +1,5 @@
+import { getIds } from './utils.mjs'
+
 /*
  * Defaults for the title macro
  */
@@ -21,18 +23,6 @@ const macroDefaults = {
     title: 'text-lg fill-current font-bold',
   },
 }
-
-/*
- * Helper method to get the various IDs for points added by this macro
- */
-const getIds = (id) => ({
-  cutlist: `__macro_title_${id}_cutlist`,
-  date: `__macro_title_${id}_date`,
-  for: `__macro_title_${id}_for`,
-  name: `__macro_title_${id}_name`,
-  nr: `__macro_title_${id}_nr`,
-  title: `__macro_title_${id}_title`,
-})
 
 /*
  * Removing all this is easy as all IDs are available in the store
@@ -102,7 +92,8 @@ const addTitleMacro = function (
    * Get the list of IDs
    * Initialize the verticle cadence
    */
-  const ids = getIds(mc.id)
+  const ids = getIds(['cutlist', 'date', 'for', 'name', 'nr', 'title'], mc.id, 'title')
+
   let shift = mc.dy
 
   /*
