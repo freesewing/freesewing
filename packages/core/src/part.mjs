@@ -175,7 +175,7 @@ Part.prototype.shorthand = function () {
   shorthand.measurements = new Proxy(this.context.settings.measurements, {
     get: function (measurements, name) {
       if (typeof measurements[name] === 'undefined')
-        self.context.store.log.warning(
+        self.context.store.log.warn(
           `${self.name} tried to access \`measurements.${name}\` but it is \`undefined\``
         )
       return Reflect.get(...arguments)
@@ -185,9 +185,7 @@ Part.prototype.shorthand = function () {
   shorthand.options = new Proxy(this.context.settings.options, {
     get: function (options, name) {
       if (typeof options[name] === 'undefined')
-        self.context.store.log.warning(
-          `Tried to access \`options.${name}\` but it is \`undefined\``
-        )
+        self.context.store.log.warn(`Tried to access \`options.${name}\` but it is \`undefined\``)
       return Reflect.get(...arguments)
     },
     set: (options, name, value) => (self.context.settings.options[name] = value),
@@ -195,7 +193,7 @@ Part.prototype.shorthand = function () {
   shorthand.absoluteOptions = new Proxy(this.context.settings.absoluteOptions, {
     get: function (absoluteOptions, name) {
       if (typeof absoluteOptions[name] === 'undefined')
-        self.context.store.log.warning(
+        self.context.store.log.warn(
           `Tried to access \`absoluteOptions.${name}\` but it is \`undefined\``
         )
       return Reflect.get(...arguments)
@@ -361,7 +359,7 @@ Part.prototype.__macroClosure = function (props) {
     const macro = utils.__macroName(key)
     if (typeof self[macro] === 'function') self[macro](args, props)
     else if ('context' in self)
-      self.context.store.log.warning('Unknown macro `' + key + '` used in ' + self.name)
+      self.context.store.log.warn('Unknown macro `' + key + '` used in ' + self.name)
   }
 
   return method
@@ -377,7 +375,7 @@ Part.prototype.__unitsClosure = function () {
   const self = this
   const method = function (value) {
     if (typeof value !== 'number')
-      self.context.store.log.warning(
+      self.context.store.log.warn(
         `Calling \`units(value)\` but \`value\` is not a number (\`${typeof value}\`)`
       )
     return utils.units(value, self.context.settings.units)

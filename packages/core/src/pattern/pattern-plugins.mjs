@@ -142,7 +142,7 @@ PatternPlugins.prototype.__loadPluginMacros = function (plugin) {
 PatternPlugins.prototype.__loadPluginStoreMethods = function (plugin) {
   if (Array.isArray(plugin.store)) {
     for (const method of plugin.store) this.__storeMethods.add(method)
-  } else this.store.log.warning(`Plugin store methods should be an Array`)
+  } else this.store.log.warn(`Plugin store methods should be an Array`)
 
   // console.log('store', plugin, this.__storeMethods)
   return this

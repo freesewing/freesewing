@@ -693,7 +693,7 @@ export function __addNonEnumProp(obj, name, value) {
 export function __asNumber(value, param, method, log) {
   if (typeof value === 'number') return value
   if (typeof value === 'string') {
-    log.warning(
+    log.warn(
       `Called \`${method}(${param})\` but \`${param}\` is not a number. Will attempt to cast to Number`
     )
     try {
