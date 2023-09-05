@@ -11,6 +11,14 @@ const macroDefaults = {
   rotation: 0,
   scale: 1,
   title: 'title',
+  classes: {
+    cutlist: 'text-md fill-current',
+    date: 'text-sm fill-current',
+    for: 'fill-current font-bold',
+    name: 'fill-note',
+    nr: 'text-4xl fill-note font-bold',
+    title: 'text-lg fill-current font-bold',
+  },
 }
 
 /*
@@ -47,7 +55,12 @@ const addTitleMacro = function (config, { Point, points, scale, locale, store, p
   /*
    * Merge macro defaults with user-provided config
    */
-  const so = { ...macroDefaults, ...config }
+  const so = {
+    ...macroDefaults,
+    ...config,
+    classes: macroDefaults.classes,
+  }
+  if (config.classes) so.classes = { ...so.classes, ...config.classes }
 
   /*
    * Take global scale setting into account
@@ -94,8 +107,9 @@ const addTitleMacro = function (config, { Point, points, scale, locale, store, p
     points[ids.nr] = so.at
       .clone()
       .attr('data-text', so.nr, so.append ? false : true)
-      .attr('data-text-class', 'text-4xl fill-note font-bold ' + so.align)
+      .attr('data-text-class', `${so.classes.nr} ${so.align}`)
       .attr('data-text-transform', transform)
+    store.set(['partNumbers', part.name], so.nr)
   } else delete ids.nr
 
   /*
@@ -106,9 +120,10 @@ const addTitleMacro = function (config, { Point, points, scale, locale, store, p
       .clone()
       .shift(-90, shift)
       .attr('data-text', so.title, so.append ? false : true)
-      .attr('data-text-class', 'text-lg fill-current font-bold ' + so.align)
+      .attr('data-text-class', `${so.classes.title} ${so.align}`)
       .attr('data-text-transform', transform)
     shift += so.dy
+    store.set(['partTitles', part.name], so.title)
   } else delete ids.title
 
   /*
@@ -134,7 +149,7 @@ const addTitleMacro = function (config, { Point, points, scale, locale, store, p
             .clone()
             .shift(-90, shift)
             .attr('data-text', 'plugin:cut')
-            .attr('data-text-class', 'text-md fill-current ' + so.align)
+            .attr('data-text-class', `${so.classes.cutlist} ${so.align}`)
             .attr('data-text-transform', transform)
             .addText(cut)
           shift += so.dy
@@ -174,7 +189,7 @@ const addTitleMacro = function (config, { Point, points, scale, locale, store, p
         store.data?.version || 'noVersion'
       }`
     )
-    .attr('data-text-class', 'fill-note ' + so.align)
+    .attr('data-text-class', `${so.classes.name} ${so.align}`)
     .attr('data-text-transform', transform)
   shift += so.dy
 
@@ -185,7 +200,7 @@ const addTitleMacro = function (config, { Point, points, scale, locale, store, p
     points[ids.for] = so.at
       .shift(-90, shift)
       .attr('data-text', `(${store.data.for})`)
-      .attr('data-text-class', 'fill-current font-bold ' + so.align)
+      .attr('data-text-class', `${so.classes.for} ${so.align}`)
     shift += so.dy
   } else delete ids.for
 
@@ -203,7 +218,7 @@ const addTitleMacro = function (config, { Point, points, scale, locale, store, p
         day: 'numeric',
       })
     )
-    .attr('data-text-class', 'text-sm fill-current ' + so.align)
+    .attr('data-text-class', `${so.classes.date} ${so.align}`)
 
   /*
    * Store all IDs in the store so we can remove this macro with rmtitle
