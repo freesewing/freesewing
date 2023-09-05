@@ -730,7 +730,7 @@ export function __isCoord(value) {
  * @return {string} macroName - The inernal macroName
  */
 export function __macroName(name) {
-  return `__macro_${name}`
+  return `__macro_${name.toLowerCase()}`
 }
 
 /**

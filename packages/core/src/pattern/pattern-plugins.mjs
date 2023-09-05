@@ -157,7 +157,7 @@ PatternPlugins.prototype.__loadPluginStoreMethods = function (plugin) {
  * @return {object} this - The Pattern instance
  */
 PatternPlugins.prototype.__macro = function (key, method) {
-  this.macros[key] = method
+  this.macros[key.toLowerCase()] = method
 
   return this
 }
