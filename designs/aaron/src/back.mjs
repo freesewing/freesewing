@@ -17,6 +17,7 @@ export const back = {
     paths,
     options,
     complete,
+    expand,
     paperless,
     macro,
     utils,
@@ -58,53 +59,72 @@ export const back = {
       .close()
       .attr('class', 'fabric')
 
-    // Complete pattern?
-    if (complete) {
-      let neckOpeningLength =
-        new Path()
-          .move(points.strapLeft)
-          .curve(points.strapLeftCp2, points.cbNeck, points.cbNeck)
-          .length() + store.get('frontNeckOpeningLength')
-      let armholeLength =
-        new Path()
-          .move(points.armhole)
-          .curve(points.armholeCp2, points.strapRightCp1, points.strapRight)
-          .length() + store.get('frontArmholeLength')
+    /*
+     * Annotations
+     */
+    // cutonfold
+    macro('cutonfold', {
+      from: points.cfNeck,
+      to: points.cfHem,
+      grainline: true,
+    })
+
+    // title
+    macro('title', { at: points.title, nr: 2, title: 'back' })
+    points.scaleboxAnchor = points.scalebox = points.title.shift(90, 100)
+
+    // scalebox
+    macro('scalebox', { at: points.scalebox })
+
+    // Store length of binding in the store
+    store.set('bindingWidth', sa * 6 || 60)
+    store.set(
+      'armBindingLength',
+      (new Path()
+        .move(points.armhole)
+        .curve(points.armholeCp2, points.strapRightCp1, points.strapRight)
+        .length() +
+        store.get('frontArmholeLength')) *
+        0.95 +
+        2 * sa
+    )
+    store.set(
+      'neckBindingLength',
+      (new Path()
+        .move(points.strapLeft)
+        .curve(points.strapLeftCp2, points.cbNeck, points.cbNeck)
+        .length() +
+        store.get('frontNeckOpeningLength')) *
+        2 *
+        0.95 +
+        2 * sa
+    )
+
+    // Instructions for cutting the binding only of expand is falsy
+    if (complete && !expand) {
       points.bindingAnchor = new Point(points.armhole.x / 4, points.armhole.y)
-        .attr('data-text', 'cutTwoStripsToFinishTheArmholes')
+        .attr('data-text', 'aaron:cutTwoStripsToFinishTheArmholes')
         .attr('data-text', ':\n')
-        .attr('data-text', `2x: ${units(sa * 6 || 60)} x ${units(armholeLength * 0.95 + 2 * sa)}`)
-        .attr('data-text', '\n \n')
-        .attr('data-text', 'cutOneStripToFinishTheNeckOpening')
-        .attr('data-text', ':\n')
-        .attr('data-text', 'width')
-        .attr('data-text', ':')
         .attr(
           'data-text',
-          `${units((sa || 10) * 6)} x ${units(neckOpeningLength * 2 * 0.95 + 2 * sa)}`
+          `2x: ${units(store.get('bindingWidth'))} x ${units(store.get('armBindingLength'))}`
         )
-      //.attr('data-text-class', 'text-sm')
-
-      macro('cutonfold', {
-        from: points.cfNeck,
-        to: points.cfHem,
-        grainline: true,
-      })
-
-      macro('title', { at: points.title, nr: 2, title: 'back' })
-      points.scaleboxAnchor = points.scalebox = points.title.shift(90, 100)
-      macro('scalebox', { at: points.scalebox })
+        .attr('data-text', '\n \n')
+        .attr('data-text', 'aaron:cutOneStripToFinishTheNeckOpening')
+        .attr('data-text', ':\n')
+        .attr(
+          'data-text',
+          `${units(store.get('bindingWidth'))} x ${units(store.get('neckBindingLength'))}`
+        )
     }
 
-    // Paperless?
-    if (paperless) {
-      dimensions(macro, points, sa)
-      macro('vd', {
-        from: points.cbHem,
-        to: points.cbNeck,
-        x: points.cbHem.x - sa - 15,
-      })
-    }
+    // dimensions
+    dimensions(macro, points, sa)
+    macro('vd', {
+      from: points.cbHem,
+      to: points.cbNeck,
+      x: points.cbHem.x - sa - 15,
+    })
 
     return part
   },

@@ -1,6 +1,10 @@
 {
   "t": "Aaron A-Shirt",
   "d": "Aaron is an athletic shirt or tank top.",
+  "p": {
+    "armBinding": "Arm opening knit binding",
+    "neckBinding": "Neck opening knit binding"
+  },
   "s": {
     "cutOneStripToFinishTheNeckOpening": "Cut one strip to finish the neck opening",
     "cutTwoStripsToFinishTheArmholes": "Cut two strips to finish the armholes",
@@ -40,6 +44,5 @@
       "t": "Stretch",
       "d": "Determines the horizontal negative ease."
     }
-  },
-  "p": {}
+  }
 }

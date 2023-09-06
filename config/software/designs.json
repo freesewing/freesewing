@@ -4,7 +4,8 @@
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 2,
-    "tags": ["tops", "underwear"]
+    "tags": ["tops", "underwear"],
+    "techniques": ["stretch", "knitBinding", "curvedSeams"]
   },
   "albert": {
     "description": "A FreeSewing pattern for an apron",
