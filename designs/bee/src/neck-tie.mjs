@@ -4,6 +4,7 @@ export const neckTie = {
   name: 'bee.neckTie',
   measurements: ['underbust', 'hpsToBust', 'hpsToWaistFront'],
   options: {
+    //Style
     ties: { bool: true, menu: 'style' },
     crossBackTies: { bool: false, menu: 'style' },
     bandLength: { pct: 85, min: 75, max: 90, menu: 'style' },
@@ -12,12 +13,9 @@ export const neckTie = {
       pct: 6,
       min: 2,
       max: 18,
-      snap: {
-        metric: [6, 13, 19, 25, 32, 38],
-        imperial: [6.35, 12.7, 19.05, 25.4, 31.75, 38.1],
-      },
-      menu: 'style',
+      snap: 6.35,
       ...pctBasedOn('bustSpan'),
+      menu: 'style',
     },
     reversible: { bool: false, menu: 'style' },
   },
@@ -37,10 +35,11 @@ export const neckTie = {
     absoluteOptions,
     part,
   }) => {
-    if (!options.ties) part.hide()
-
-    const neckTieLength = options.crossBackTies
-      ? (Math.sqrt(
+    // measures need for other parts
+    let neckTieLength
+    if (options.crossBackTies) {
+      neckTieLength =
+        (Math.sqrt(
           Math.pow(measurements.hpsToWaistFront, 2) +
             Math.pow(measurements.underbust - measurements.underbust * options.neckTieLength, 2)
         ) +
@@ -49,104 +48,100 @@ export const neckTie = {
           measurements.underbust -
           measurements.underbust * options.bandLength * options.neckTieLength) /
         2
-      : (measurements.hpsToBust + measurements.hpsToBust * options.neckTieLength) / 2
+    } else {
+      neckTieLength = (measurements.hpsToBust + measurements.hpsToBust * options.neckTieLength) / 2
+    }
     store.set('neckTieLength', neckTieLength * 2)
-
-    /*
-     * Don't bother unless expand is set
-     */
-    if (!expand) {
-      store.flag.note({
-        msg: `bee:cutNeckTie`,
-        replace: {
-          width: units(absoluteOptions.neckTieWidth * 2 + 2 * sa),
-          length: units(neckTieLength * 2),
-        },
-        suggest: {
-          text: 'flag:show',
-          icon: 'expand',
-          update: {
-            settings: ['expand', 1],
-          },
-        },
-      })
-      // Also hint about expand
-      store.flag.preset('expand')
-
+    //set render
+    if (!options.ties) {
       return part.hide()
     }
-
-    points.topLeft = new Point(0, 0)
-    points.topRight = new Point(absoluteOptions.neckTieWidth * 2, points.topLeft.y)
-    points.bottomLeft = new Point(points.topLeft.x, neckTieLength)
-    points.bottomRight = new Point(points.topRight.x, neckTieLength)
-
-    points.topMiddle = options.pointedTieEnds
-      ? new Point(absoluteOptions.neckTieWidth, points.topLeft.y - absoluteOptions.neckTieWidth)
-      : new Point(absoluteOptions.neckTieWidth, points.topLeft.y)
-
-    points.bottomMiddle = new Point(points.topMiddle.x, neckTieLength)
-
-    paths.seam = options.duoColorTies
-      ? new Path()
-          .move(points.bottomMiddle)
-          .line(points.topMiddle)
-          .line(points.topLeft)
-          .line(points.bottomLeft)
-          .close()
-          .addClass('fabric')
-      : new Path()
-          .move(points.bottomRight)
-          .line(points.topRight)
-          .line(points.topMiddle)
-          .line(points.topLeft)
-          .line(points.bottomLeft)
-          .close()
-          .addClass('fabric')
-
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-
-    /*
-     * Annotations
-     */
-    points.cofLeft = points.bottomLeft.shift(0, absoluteOptions.neckTieWidth * (1 / 8))
-    points.grainlineLeft = points.topLeft.translate(
-      absoluteOptions.neckTieWidth * (1 / 8),
-      neckTieLength * (3 / 4)
-    )
-
-    // Cut list
-    if (options.reversible) {
-      store.cutlist.addCut({ cut: 2, from: 'fabric', onFold: true })
-      store.cutlist.addCut({ cut: 2, from: 'altFabric1', onFold: true })
-    } else {
-      store.cutlist.addCut({ cut: 4, from: 'fabric', onFold: true })
+    //measures
+    let neckTieWidth = absoluteOptions.neckTieWidth * 2
+    if (options.neckTieColours == 'two') {
+      neckTieWidth = absoluteOptions.neckTieWidth
     }
-
-    // Title
-    points.title = points.topLeft.translate(
-      absoluteOptions.neckTieWidth * (1 / 8),
-      neckTieLength * (1 / 4)
-    )
-    macro('title', {
-      at: points.title,
-      nr: 2,
-      title: 'neck tie',
-      scale: 0.5,
-    })
-
-    if (options.duoColorTies) {
-      points.cofRight = points.bottomLeft.shift(0, absoluteOptions.neckTieWidth * (7 / 8))
-      points.grainlineRight = points.grainlineLeft.shift(0, absoluteOptions.neckTieWidth * (7 / 8))
+    //let's begin
+    points.topLeft = new Point(0, 0)
+    points.topRight = new Point(neckTieWidth, points.topLeft.y)
+    points.bottomLeft = new Point(points.topLeft.x, neckTieLength)
+    points.bottomRight = new Point(points.topRight.x, points.bottomLeft.y)
+    points.topMid = new Point(neckTieWidth / 2, points.topLeft.y)
+    points.bottomMid = new Point(points.topMid.x, points.bottomLeft.y)
+    if (options.neckTieEnds == 'straight') {
+      points.topPeak = points.topMid
     } else {
-      points.cofRight = points.bottomLeft.shift(0, absoluteOptions.neckTieWidth * (15 / 8))
-      points.grainlineRight = points.grainlineLeft.shift(0, absoluteOptions.neckTieWidth * (14 / 8))
-      if (complete)
+      if (options.neckTieColours == 'one') {
+        points.topPeak = points.topMid.shift(90, neckTieWidth / 2)
+      } else {
+        points.topPeak = points.topRight.shift(90, neckTieWidth)
+      }
+    }
+    //paths
+    paths.seam = new Path()
+      .move(points.bottomLeft)
+      .line(points.bottomRight)
+      .line(points.topRight)
+      .line(points.topPeak)
+      .line(points.topLeft)
+      .line(points.bottomLeft)
+      .close()
+
+    if (complete) {
+      //grainline
+      points.cutOnFoldFrom = points.bottomLeft
+      points.cutOnFoldTo = points.bottomRight
+
+      macro('cutonfold', {
+        from: points.cutOnFoldFrom,
+        to: points.cutOnFoldTo,
+        grainline: true,
+      })
+      //title
+      points.title = points.topLeft.translate(neckTieWidth * (1 / 8), neckTieLength * (1 / 4))
+      macro('title', {
+        at: points.title,
+        nr: 2,
+        title: 'neckTie',
+        scale: 0.2,
+      })
+      //fold line
+      if (options.neckTieColours == 'one') {
         paths.foldline = new Path()
-          .move(points.bottomMiddle)
-          .line(points.topMiddle)
-          .addText('foldLine', 'center fill-note text-sm')
-          .addClass('note help')
+          .move(points.topPeak)
+          .line(points.bottomMid)
+          .attr('data-text', 'Fold-line')
+          .attr('data-text-class', 'center')
+          .attr('class', 'various')
+      }
+      if (sa) {
+        paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      }
+    }
+    if (paperless) {
+      macro('vd', {
+        from: points.topLeft,
+        to: points.bottomLeft,
+        x: points.topLeft.x - sa - 15,
+      })
+      macro('hd', {
+        from: points.bottomLeft,
+        to: points.bottomRight,
+        y: points.bottomLeft.y + sa + 15,
+      })
+
+      if (options.neckTieEnds == 'pointed') {
+        macro('vd', {
+          from: points.topPeak,
+          to: points.topLeft,
+          x: points.topLeft.x - sa - 15,
+        })
+        macro('vd', {
+          from: points.topPeak,
+          to: points.bottomLeft,
+          x: points.topLeft.x - sa - 30,
+        })
+      }
     }
 
     // Grainline

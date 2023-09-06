@@ -11,31 +11,29 @@ export const cup = {
   after: neckTie,
   measurements: ['bustPointToUnderbust'],
   options: {
-    //Bee's
+    //Constants
+    backArmholeCurvature: 0.63, //altered from Bella
+    backArmholePitchDepth: 0.35, //altered from Bella
+    backArmholeSlant: 5, //altered from Bella
+    frontArmholeCurvature: 0.63, //altered from Bella
+    bustDartCurve: 1, //altered from Bella
+    bustDartLength: 1, //altered from Bella
+    waistDartLength: 1, //altered from Bella
+    backHemSlope: 2.5, //altered from Bella
+    backNeckCutout: 0.06, //altered from Bella
+    //Fit
     topDepth: { pct: 54, min: 50, max: 80, menu: 'fit' },
     bottomCupDepth: { pct: 8, min: 0, max: 20, menu: 'fit' },
     sideDepth: { pct: 20.6, min: 0, max: 30, menu: 'fit' },
     sideCurve: { pct: 0, min: -50, max: 50, menu: 'fit' },
     frontCurve: { pct: 0, min: -50, max: 50, menu: 'fit' },
     bellaGuide: { bool: false, menu: 'fit' },
-    pointedTieEnds: { bool: false, menu: 'style' },
-    duoColorTies: { bool: false, menu: 'style' },
-    //changed from Bella
-    backArmholeCurvature: 0.63,
-    backArmholePitchDepth: 0.35,
-    backArmholeSlant: 5,
-    frontArmholeCurvature: 0.63,
-    bustDartCurve: 1,
-    bustDartLength: 1,
-    waistDartLength: 1,
-    backHemSlope: 2.5,
-    backNeckCutout: 0.06,
-    //catergory changed from Bella
-    armholeDepth: { pct: 44, min: 38, max: 46, menu: 'advanced' },
-    frontArmholePitchDepth: { pct: 29, max: 31, min: 27, menu: 'advanced' },
-    backDartHeight: { pct: 46, min: 38, max: 54, menu: 'advanced' },
-    frontShoulderWidth: { pct: 95, max: 98, min: 92, menu: 'advanced' },
-    highBustWidth: { pct: 86, max: 92, min: 80, menu: 'advanced' },
+    //Advanced
+    armholeDepth: { pct: 44, min: 38, max: 46, menu: 'advanced.bellaArmhole' }, //catergory changed from Bella
+    frontArmholePitchDepth: { pct: 29, max: 31, min: 27, menu: 'advanced.bellaArmhole' }, //catergory changed from Bella
+    backDartHeight: { pct: 46, min: 38, max: 54, menu: 'advanced.bellaDarts' }, //catergory changed from Bella
+    frontShoulderWidth: { pct: 95, max: 98, min: 92, menu: 'advanced.bellaAdvanced' }, //catergory changed from Bella
+    highBustWidth: { pct: 86, max: 92, min: 80, menu: 'advanced.bellaAdvanced' }, //catergory changed from Bella
   },
   draft: ({
     store,
@@ -53,118 +51,34 @@ export const cup = {
     absoluteOptions,
     part,
   }) => {
-    /*
-     * Cleaning up paths and snippets from Bella
-     */
-    for (let i in paths) delete paths[i]
-    for (let i in snippets) delete snippets[i]
+    //removing paths and snippets not required from Bella
+    for (const i in paths) delete paths[i]
+    for (const i in snippets) delete snippets[i]
+    //removing macros not required from Bella
+    macro('title', false)
+    macro('scalebox', false)
+    //measurements
+    const cupWidth = measurements.bustPointToUnderbust * (1 + options.bottomCupDepth)
+    let bandTieWidth = absoluteOptions.bandTieWidth
+    if (options.crossBackTies) {
+      bandTieWidth = 0
+    }
+    //rotate to close bust dart
+    points.bustDartClosed = points.bustDartTop
 
-    /*
-     * Removing macros from Bella
-     */
-    macro('rmtitle')
-    macro('rmscalebox')
+    const rot = ['waistDartRightCp', 'waistDartRight', 'sideHemInitial']
+    for (const p of rot) points[p] = points[p].rotate(store.get('bustDartAngleSide'), points.bust)
 
-    /*
-     * Bella alterations
-     */
-    points.sideHemNew = points.armhole.shiftOutwards(
-      points.bustDartTop,
-      points.bustDartBottom.dist(points.sideHemInitial)
-    )
-    points.waistDartRightRotated = points.waistDartRight.rotate(
-      store.get('bustDartAngleSide'),
-      points.bust
-    )
-    // Bikini top
-    const underbust =
-      measurements.bustPointToUnderbust + measurements.bustPointToUnderbust * options.bottomCupDepth
-    points.top = points.bustA.shiftTowards(points.hps, measurements.hpsToBust * options.topDepth)
-    points.topLeft = points.top.shift(
-      points.top.angle(points.hps) + 90,
-      absoluteOptions.neckTieWidth / 2
-    )
-    points.topRight = points.top.shift(
-      points.top.angle(points.hps) - 90,
-      absoluteOptions.neckTieWidth / 2
-    )
-    points.leftDart = points.bustA.shiftTowards(points.waistDartLeft, underbust)
-    points.rightDart = points.bustA.shiftTowards(points.waistDartRightRotated, underbust)
-    points.lefti = utils.beamsIntersect(
-      points.leftDart,
-      points.leftDart.shift(points.leftDart.angle(points.bustA) + 90, 10),
-      points.cfNeck,
-      points.cfHem
-    )
-    points.righti = utils.beamsIntersect(
-      points.rightDart,
-      points.rightDart.shift(points.rightDart.angle(points.bustA) - 90, 10),
+    points.sideHem = utils.beamsIntersect(
+      points.waistDartRight,
+      points.sideHemInitial,
       points.armhole,
-      points.sideHemNew
+      points.bustDartClosed
     )
-    points.rightiOffset = points.righti.shiftFractionTowards(points.rightDart, options.sideDepth)
-    points.sideEdge = points.rightiOffset.shift(
-      points.armhole.angle(points.righti),
-      absoluteOptions.bandTieWidth
-    )
-    points.frontEdge = points.lefti.shift(
-      points.cfNeck.angle(points.cfHem),
-      absoluteOptions.bandTieWidth
-    )
-    points.middleDart = points.bustA.shift(
-      points.bustA.angle(points.leftDart) +
-        (points.bustA.angle(points.rightDart) - points.bustA.angle(points.leftDart)) / 2,
-      points.bustA.dist(points.leftDart)
-    )
-    points.casingDart = points.bustA.shiftOutwards(points.middleDart, absoluteOptions.bandTieWidth)
-    points.leftControli = utils.beamsIntersect(
-      points.casingDart,
-      points.casingDart.shift(points.bustA.angle(points.middleDart) - 90, 10),
-      points.cfNeck,
-      points.cfHem
-    )
-    points.rightControli = utils.beamsIntersect(
-      points.casingDart,
-      points.casingDart.shift(points.bustA.angle(points.middleDart) + 90, 10),
-      points.armhole,
-      points.sideHemNew
-    )
-    points.leftControl = points.casingDart.shiftFractionTowards(points.leftControli, 0.5)
-    points.rightControl = points.casingDart.shiftFractionTowards(points.rightControli, 0.5)
-    points.middleSideFront = points.rightiOffset.shiftFractionTowards(points.topRight, 0.5)
-    points.sideCurveControl = points.middleSideFront.shiftFractionTowards(
-      points.bustA,
-      options.sideCurve
-    )
-    points.middleFront = points.topLeft.shiftFractionTowards(points.lefti, 0.5)
-    points.frontCurveControl = points.middleFront.shiftFractionTowards(
-      points.bustA,
-      options.frontCurve
-    )
-    points.leftControlOffset = points.leftControl.shiftTowards(
-      points.top,
-      absoluteOptions.bandTieWidth
-    )
-    points.rightControlOffset = points.rightControl.shiftTowards(
-      points.top,
-      absoluteOptions.bandTieWidth
-    )
-
-    points.bottomEdge = options.crossBackTies
-      ? new Path()
-          .move(points.lefti)
-          .curve_(points.leftControlOffset, points.middleDart)
-          .curve_(points.rightControlOffset, points.rightiOffset)
-          .edge('bottom')
-      : new Path()
-          .move(points.frontEdge)
-          .curve_(points.leftControl, points.casingDart)
-          .curve_(points.rightControl, points.sideEdge)
-          .edge('bottom')
-
+    //guide
     if (options.bellaGuide) {
       paths.bellaGuide = new Path()
-        .move(points.sideHemNew)
+        .move(points.sideHem)
         .line(points.bustDartTop)
         .line(points.armhole)
         .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
@@ -173,251 +87,179 @@ export const cup = {
         .curve(points.hpsCp2, points.cfNeckCp1, points.cfNeck)
         .line(points.cfHem)
         .line(points.waistDartLeft)
-        .line(points.bustA)
-        .line(points.waistDartRightRotated)
-        .line(points.sideHemNew)
-        .addClass('note help')
+        .line(points.bust)
+        .line(points.waistDartRight)
+        .line(points.sideHem)
+        .attr('class', 'various lashed')
         .close()
     }
 
-    paths.seam = options.crossBackTies
-      ? new Path()
-          .move(points.rightiOffset)
-          .curve_(points.sideCurveControl, points.topRight)
-          .line(points.topLeft)
-          .curve_(points.frontCurveControl, points.lefti)
-          .curve_(points.leftControlOffset, points.middleDart)
-          .curve_(points.rightControlOffset, points.rightiOffset)
-          .close()
-      : new Path()
-          .move(points.sideEdge)
-          .line(points.rightiOffset)
-          .curve_(points.sideCurveControl, points.topRight)
-          .line(points.topLeft)
-          .curve_(points.frontCurveControl, points.lefti)
-          .line(points.frontEdge)
-          .curve_(points.leftControl, points.casingDart)
-          .curve_(points.rightControl, points.sideEdge)
-          .close()
-
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-
-    /*
-     * Annotations
-     */
-    // Cut list
-    // Removing the cutonfold indicator should do the trick, but it does not
-    // So I am setting ignoreOnFold below until I fix this
-    macro('rmcutonfold')
-    store.cutlist.addCut({ cut: 2, material: 'fabric', ignoreOnFold: true })
-
-    points.gridAnchor = points.lefti
-
-    if (options.reversible)
-      store.cutlist.addCut({ cut: 2, material: 'altFabric1', ignoreOnFold: true })
-    // Grainline
-    points.grainlineTop = points.top.shiftFractionTowards(points.bustA, 0.05)
-    points.grainlineBottom = points.bustA.shiftFractionTowards(points.top, 0.05)
-    macro('grainline', {
-      from: points.grainlineTop,
-      to: points.grainlineBottom,
-    })
-
-    // Notches
-    points.frontNotch = new Path()
-      .move(points.topLeft)
-      .curve_(points.frontCurveControl, points.lefti)
-      .shiftFractionAlong(0.5)
-    snippets.frontNotch = new Snippet('notch', points.frontNotch)
-    snippets.lefti = new Snippet('notch', points.lefti)
-    snippets.righti = new Snippet('notch', points.rightiOffset)
-
-    // Title
-    macro('title', {
-      at: points.grainlineBottom,
-      nr: 1,
-      title: 'cup',
-      scale: 0.7,
-    })
-
-    if (!options.crossBackTies) {
-      snippets.frontEdge = new Snippet('notch', points.frontEdge)
-      snippets.sideEdge = new Snippet('notch', points.sideEdge)
-    }
-
-    // Scalebox
-    points.scalebox = points.grainlineBottom.shift(180, 30)
-    macro('miniscale', { at: points.scalebox })
-
-    // Logo
-    points.logo = points.grainlineTop.shiftFractionTowards(points.grainlineBottom, 0.3)
-    snippets.logo = new Snippet('logo', points.logo).scale(0.7)
-
-    // Conditional annotations
-    if (complete && !options.crossBackTies) {
-      paths.casingline = new Path()
-        .move(points.lefti)
-        .curve_(points.leftControlOffset, points.middleDart)
-        .curve_(points.rightControlOffset, points.rightiOffset)
-        .attr('class', 'fabric lashed')
-        .addText('bee:casingStitchingLine', 'center')
-    }
-    if (complete && !options.ties) {
-      points.neckTieLength = points.grainlineBottom
-        .shift(-90, 42)
-        .addText('bee:neckTieLength')
-        .addText(':')
-        .addText(utils.units(store.get('neckTieLength')))
-      if (!options.crossBackTies) {
-        points.backTieLength = points.grainlineBottom
-          .shift(-90, 49)
-          .addText('bee:bandTieLength')
-          .addText(':')
-          .addText(
-            utils.units(measurements.underbust + measurements.underbust * options.bandTieLength)
-          )
-      }
-    }
-
-    // Dimensions
-    if (!options.crossBackTies) {
-      macro('vd', {
-        from: points.frontEdge,
-        to: points.lefti,
-        x: points.frontEdge.x - sa - 15,
-        id: 'hCasing',
-      })
-      macro('vd', {
-        from: points.frontEdge,
-        to: points.topRight,
-        x: points.frontEdge.x - sa - 30,
-        id: 'hLeft',
-      })
-    }
-    macro('vd', {
-      from: points.lefti,
-      to: points.topLeft,
-      x: points.frontEdge.x - sa - 15,
-      id: 'hNoCasing',
-    })
-    macro('hd', {
-      from: points.topLeft,
-      to: points.topRight,
-      y: points.topRight.y - sa - 15,
-      id: 'tipWidth',
-    })
-    macro('hd', {
-      from: points.lefti,
-      to: points.topLeft,
-      y: points.topRight.y - sa - 15,
-      id: 'wLeftToTip',
-    })
-    macro('hd', {
-      from: points.topRight,
-      to: points.rightiOffset,
-      y: points.topRight.y - sa - 15,
-      id: 'wTipToRight',
-    })
-    macro('hd', {
-      from: points.frontEdge,
-      to: options.crossBackTies ? points.rightiOffset : points.sideEdge,
-      y: points.topRight.y - sa - 30,
-      id: 'wpToRight',
-    })
-    macro('vd', {
-      from: points.topRight,
-      to: options.crossBackTies ? points.rightiOffset : points.sideEdge,
-      x: points.sideEdge.x + sa + 20,
-      id: 'sdfsd',
-    })
-    if (!options.crossBackTies) {
-      macro('vd', {
-        id: 'hIncorrectEdgeRight',
-        from: points.sideEdge,
-        to: points.casingDart,
-        x: points.sideEdge.x + sa + 10,
-      })
-      macro('hd', {
-        id: 'wBottomHalfRight',
-        from: points.casingDart,
-        to: points.sideEdge,
-        y: points.casingDart.y + sa + 20,
-      })
-      macro('hd', {
-        id: 'wBottomHalfLeft',
-        from: points.frontEdge,
-        to: points.casingDart,
-        y: points.casingDart.y + sa + 20,
-      })
-      macro('vd', {
-        id: 'hLeft',
-        from: points.bottomEdge,
-        to: points.topRight,
-        x: points.frontEdge.x - sa - 40,
-      })
-    }
+    //bikini top
+    points.top = points.bust.shiftTowards(points.hps, measurements.hpsToBust * options.topDepth)
+    points.topLeft = points.top.shift(
+      points.top.angle(points.hps) + 90,
+      absoluteOptions.neckTieWidth / 2
+    )
+    points.topRight = points.top.shift(
+      points.top.angle(points.hps) - 90,
+      absoluteOptions.neckTieWidth / 2
+    )
+    points.leftDart = points.bust.shiftTowards(points.waistDartLeft, cupWidth)
+    points.rightDart = points.bust.shiftTowards(points.waistDartRight, cupWidth)
+    points.bottomLeft = utils.beamsIntersect(
+      points.leftDart,
+      points.bust.rotate(90, points.leftDart),
+      points.cfNeck,
+      points.cfHem
+    )
+    points.bottomRightAnchor = utils.beamsIntersect(
+      points.rightDart,
+      points.bust.rotate(-90, points.rightDart),
+      points.armhole,
+      points.sideHem
+    )
+    points.bottomRight = points.bottomRightAnchor.shiftFractionTowards(
+      points.rightDart,
+      options.sideDepth
+    )
+    points.sideEdge = points.bottomRight.shift(points.armhole.angle(points.sideHem), bandTieWidth)
+    points.frontEdge = points.bottomLeft.shift(points.cfNeck.angle(points.cfHem), bandTieWidth)
+    points.bottomDart = points.bust.shift(
+      points.bust.angle(points.leftDart) +
+        (points.bust.angle(points.rightDart) - points.bust.angle(points.leftDart)) / 2,
+      points.bust.dist(points.leftDart)
+    )
+    points.dartEdge = points.bust.shiftOutwards(points.bottomDart, bandTieWidth)
+    points.frontEdgeCp2 = utils.beamsIntersect(
+      points.dartEdge,
+      points.dartEdge.shift(points.bust.angle(points.bottomDart) - 90, 10),
+      points.cfNeck,
+      points.cfHem
+    )
+    points.sideEdgeCp2Target = utils.beamsIntersect(
+      points.dartEdge,
+      points.dartEdge.shift(points.bust.angle(points.bottomDart) + 90, 10),
+      points.armhole,
+      points.sideHem
+    )
+    points.frontEdgeCp2 = points.dartEdge.shiftFractionTowards(points.frontEdgeCp2, 0.5)
+    points.sideEdgeCp1 = points.dartEdge.shiftFractionTowards(points.sideEdgeCp2Target, 0.5)
+    points.middleSideFront = points.bottomRight.shiftFractionTowards(points.topRight, 0.5)
+    points.bottomRightCp2 = points.middleSideFront.shiftFractionTowards(
+      points.bust,
+      options.sideCurve
+    )
+    points.middleFront = points.topLeft.shiftFractionTowards(points.bottomLeft, 0.5)
+    points.bottomLeftCp1 = points.middleFront.shiftFractionTowards(points.bust, options.frontCurve)
+    points.bottomLeftCp2 = points.frontEdgeCp2.shiftTowards(points.top, bandTieWidth)
+    points.bottomRightCp1 = points.sideEdgeCp1.shiftTowards(points.top, bandTieWidth)
+    //paths
+    paths.seam = new Path()
+      .move(points.sideEdge)
+      .line(points.bottomRight)
+      .curve_(points.bottomRightCp2, points.topRight)
+      .line(points.topLeft)
+      .curve_(points.bottomLeftCp1, points.bottomLeft)
+      .line(points.frontEdge)
+      .curve_(points.frontEdgeCp2, points.dartEdge)
+      .curve_(points.sideEdgeCp1, points.sideEdge)
+      .close()
+    //stores
     if (options.crossBackTies) {
-      macro('vd', {
-        from: points.rightiOffset,
-        to: points.bottomEdge,
-        x: points.sideEdge.x + sa + 10,
-      })
-      macro('hd', {
-        from: points.rightiOffset,
-        to: points.middleDart,
-        y: points.casingDart.y + sa + 20,
-      })
-      macro('hd', {
-        from: points.middleDart,
-        to: points.lefti,
-        y: points.casingDart.y + sa + 20,
-      })
-      macro('vd', {
-        from: points.bottomEdge,
-        to: points.lefti,
-        x: points.frontEdge.x - sa - 10,
-      })
-      macro('vd', {
-        from: points.bottomEdge,
-        to: points.topRight,
-        x: points.frontEdge.x - sa - 30,
-      })
+      points.leftSplit = utils.lineIntersectsCurve(
+        points.bust,
+        points.waistDartLeft,
+        points.frontEdge,
+        points.frontEdgeCp2,
+        points.dartEdge,
+        points.dartEdge
+      )
+      points.rightSplit = utils.lineIntersectsCurve(
+        points.bust,
+        points.waistDartRight,
+        points.dartEdge,
+        points.sideEdgeCp1,
+        points.sideEdge,
+        points.sideEdge
+      )
+      paths.bottomCurve = new Path()
+        .move(points.bottomLeft)
+        .line(points.frontEdge)
+        .curve_(points.frontEdgeCp2, points.dartEdge)
+        .curve_(points.sideEdgeCp1, points.sideEdge)
+        .hide()
+      store.set(
+        'cupWidth',
+        paths.bottomCurve.split(points.leftSplit)[0].length() +
+          paths.bottomCurve.split(points.rightSplit)[1].length()
+      )
     }
-    macro('ld', {
-      from: points.rightiOffset,
-      to: points.righti,
-    })
 
-    if (complete && options.crossBackTies) {
-      paths.curve = new Path()
-        .move(points.lefti)
-        .curve_(points.leftControlOffset, points.middleDart)
-        .curve_(points.rightControlOffset, points.rightiOffset)
+    if (complete) {
+      //grainline
+      points.grainlineFrom = points.top.shiftFractionTowards(points.bust, 0.05)
+      points.grainlineTo = points.bust.shiftFractionTowards(points.top, 0.05)
+      macro('grainline', {
+        from: points.grainlineFrom,
+        to: points.grainlineTo,
+      })
+      //notches
+      paths.frontCurve = new Path()
+        .move(points.topLeft)
+        .curve_(points.bottomLeftCp1, points.bottomLeft)
         .hide()
-      paths.dart = new Path()
-        .move(
-          points.bustA.shiftOutwards(points.leftDart, points.topRight.dist(points.rightiOffset))
-        )
-        .line(points.bustA)
-        .line(
-          points.bustA.shiftOutwards(points.rightDart, points.topRight.dist(points.rightiOffset))
-        )
-        .hide()
-      for (let p of paths.curve.intersects(paths.dart)) {
-        points.rightDarti = points.bustA.shiftFractionTowards(p, 1)
+      points.frontNotch = paths.frontCurve.shiftFractionAlong(0.5)
+      macro('sprinkle', {
+        snippet: 'notch',
+        on: ['frontNotch', 'bottomLeft', 'bottomRight'],
+      })
+      if (!options.crossBackTies) {
+        macro('sprinkle', {
+          snippet: 'notch',
+          on: ['frontEdge', 'sideEdge'],
+        })
+        //casingLine
+        paths.casingline = new Path()
+          .move(points.bottomLeft)
+          .curve_(points.bottomLeftCp2, points.bottomDart)
+          .curve_(points.bottomRightCp1, points.bottomRight)
+          .attr('class', 'fabric lashed')
+          .attr('data-text', 'Casing Stitching Line')
+          .attr('data-text-class', 'center')
       }
-      for (let p of paths.curve.reverse().intersects(paths.dart)) {
-        points.leftDarti = points.bustA.shiftFractionTowards(p, 1)
+      //title
+      points.title = points.bottomLeftCp1.shiftFractionTowards(points.bottomRight, 0.5)
+      macro('title', {
+        at: points.title,
+        nr: 1,
+        title: 'cup',
+        scale: 0.7,
+      })
+      //scalebox
+      points.scalebox = new Point(points.bottomLeft.x + 12.7, points.topLeft.y + 12.7)
+      macro('miniscale', { at: points.scalebox })
+      //logo
+      points.logo = points.bust.shiftFractionTowards(points.bottomDart, 0.5)
+      snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.7)
+      if (!options.ties) {
+        points.neckTieLength = points.topLeft
+          .shiftFractionTowards(points.bottomLeft, 0.7)
+          .attr('data-text', 'Neck Tie Length: ' + utils.units(store.get('neckTieLength')))
+        if (!options.crossBackTies) {
+          points.backTieLength = points.topLeft
+            .shiftFractionTowards(points.bottomLeft, 0.8)
+            .attr(
+              'data-text',
+              'Band Tie Length: ' +
+                utils.units(measurements.underbust * (1 + options.bandTieLength))
+            )
+        }
       }
-      let leftCurve = paths.curve.reverse().split(points.leftDarti)
-      for (let i in leftCurve) {
-        paths.leftCurve = leftCurve[i].hide()
+      if (sa) {
+        paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
       }
-      let rightCurve = paths.curve.split(points.rightDarti)
-      for (let i in rightCurve) {
-        paths.rightCurve = rightCurve[i].hide()
-      }
-      store.set('gatherLength', paths.leftCurve.length() + paths.rightCurve.length())
+    }
+    if (paperless) {
     }
 
     return part
