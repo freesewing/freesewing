@@ -22,6 +22,7 @@ export const neckTie = {
     },
     neckTieEnds: { dflt: 'straight', list: ['straight', 'pointed'], menu: 'style' },
     neckTieColours: { dflt: 'one', list: ['one', 'two'], menu: 'style' },
+    reversible: { bool: false, menu: 'style' },
   },
   plugins: [pluginBundle],
   draft: ({
@@ -36,15 +37,15 @@ export const neckTie = {
     paperless,
     macro,
     measurements,
+    utils,
+    expand,
     absoluteOptions,
     part,
   }) => {
-    // neck tie
     if (!options.ties) part.hide()
-    let neckTieLength
-    if (options.crossBackTies)
-      neckTieLength =
-        (Math.sqrt(
+
+    const neckTieLength = options.crossBackTies
+      ? (Math.sqrt(
           Math.pow(measurements.hpsToWaistFront, 2) +
             Math.pow(measurements.underbust - measurements.underbust * options.neckTieLength, 2)
         ) +
@@ -53,137 +54,125 @@ export const neckTie = {
           measurements.underbust -
           measurements.underbust * options.bandLength * options.neckTieLength) /
         2
-    else
-      neckTieLength = (measurements.hpsToBust + measurements.hpsToBust * options.neckTieLength) / 2
+      : (measurements.hpsToBust + measurements.hpsToBust * options.neckTieLength) / 2
     store.set('neckTieLength', neckTieLength * 2)
+
+    /*
+     * Don't bother unless expand is set
+     */
+    if (!expand) {
+      points.text = new Point(10, 10)
+        .addText('bee:cutNeckTie', 'fill-note')
+        .addText(':')
+        .addText(utils.units((absoluteOptions.neckTieWidth + sa) * 2))
+        .addText(' x ')
+        .addText(utils.units(neckTieLength))
+      paths.diag = new Path().move(new Point(0, 0)).line(new Point(100, 15)).addClass('hidden')
+
+      return part
+    }
+
     points.topLeft = new Point(0, 0)
     points.topRight = new Point(absoluteOptions.neckTieWidth * 2, points.topLeft.y)
     points.bottomLeft = new Point(points.topLeft.x, neckTieLength)
     points.bottomRight = new Point(points.topRight.x, neckTieLength)
-    switch (options.neckTieEnds) {
-      case 'straight':
-        points.topMiddle = new Point(absoluteOptions.neckTieWidth, points.topLeft.y)
-        break
-      case 'pointed':
-        points.topMiddle = new Point(
-          absoluteOptions.neckTieWidth,
-          points.topLeft.y - absoluteOptions.neckTieWidth
-        )
-    }
+
+    points.topMiddle =
+      options.neckTieEnds === 'straight'
+        ? (points.topMiddle = new Point(absoluteOptions.neckTieWidth, points.topLeft.y))
+        : (points.topMiddle = new Point(
+            absoluteOptions.neckTieWidth,
+            points.topLeft.y - absoluteOptions.neckTieWidth
+          ))
 
     points.bottomMiddle = new Point(points.topMiddle.x, neckTieLength)
 
-    switch (options.neckTieColours) {
-      case 'one':
-        paths.seam = new Path()
-          .move(points.bottomRight)
-          .line(points.topRight)
-          .line(points.topMiddle)
-          .line(points.topLeft)
-          .line(points.bottomLeft)
-          .close()
-        break
-      case 'two':
-        paths.seam = new Path()
-          .move(points.bottomMiddle)
-          .line(points.topMiddle)
-          .line(points.topLeft)
-          .line(points.bottomLeft)
-          .close()
+    paths.seam =
+      options.neckTieColours === 'one'
+        ? new Path()
+            .move(points.bottomRight)
+            .line(points.topRight)
+            .line(points.topMiddle)
+            .line(points.topLeft)
+            .line(points.bottomLeft)
+            .close()
+        : new Path()
+            .move(points.bottomMiddle)
+            .line(points.topMiddle)
+            .line(points.topLeft)
+            .line(points.bottomLeft)
+            .close()
+
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+
+    /*
+     * Annotations
+     */
+    points.cofLeft = points.bottomLeft.shift(0, absoluteOptions.neckTieWidth * (1 / 8))
+    points.grainlineLeft = points.topLeft.translate(
+      absoluteOptions.neckTieWidth * (1 / 8),
+      neckTieLength * (3 / 4)
+    )
+
+    // Title
+    points.title = points.topLeft.translate(
+      absoluteOptions.neckTieWidth * (1 / 8),
+      neckTieLength * (1 / 4)
+    )
+    macro('title', {
+      at: points.title,
+      nr: 2,
+      title: 'neck tie',
+      scale: 0.5,
+    })
+
+    if (options.neckTieColours === 'one') {
+      points.cofRight = points.bottomLeft.shift(0, absoluteOptions.neckTieWidth * (15 / 8))
+      points.grainlineRight = points.grainlineLeft.shift(0, absoluteOptions.neckTieWidth * (14 / 8))
+      paths.foldline = new Path()
+        .move(points.bottomMiddle)
+        .line(points.topMiddle)
+        .addText('foldLine', 'center fill-note text-sm')
+        .addClass('note help')
+    } else {
+      points.cofRight = points.bottomLeft.shift(0, absoluteOptions.neckTieWidth * (7 / 8))
+      points.grainlineRight = points.grainlineLeft.shift(0, absoluteOptions.neckTieWidth * (7 / 8))
     }
 
-    if (complete) {
-      points.cofLeft = points.bottomLeft.shift(0, absoluteOptions.neckTieWidth * (1 / 8))
-      points.grainlineLeft = points.topLeft.translate(
-        absoluteOptions.neckTieWidth * (1 / 8),
-        neckTieLength * (3 / 4)
-      )
-      points.title = points.topLeft.translate(
-        absoluteOptions.neckTieWidth * (1 / 8),
-        neckTieLength * (1 / 4)
-      )
-      macro('title', {
-        at: points.title,
-        nr: 2,
-        title: 'neck tie',
-        scale: 0.2,
-      })
-      switch (options.neckTieColours) {
-        case 'one':
-          points.cofRight = points.bottomLeft.shift(0, absoluteOptions.neckTieWidth * (15 / 8))
-          points.grainlineRight = points.grainlineLeft.shift(
-            0,
-            absoluteOptions.neckTieWidth * (14 / 8)
-          )
-          paths.foldline = new Path()
-            .move(points.topMiddle)
-            .line(points.bottomMiddle)
-            .attr('data-text', 'Fold-line')
-            .attr('data-text-class', 'center')
-            .attr('class', 'various')
-          break
-        case 'two':
-          points.cofRight = points.bottomLeft.shift(0, absoluteOptions.neckTieWidth * (7 / 8))
-          points.grainlineRight = points.grainlineLeft.shift(
-            0,
-            absoluteOptions.neckTieWidth * (7 / 8)
-          )
-      }
-      macro('grainline', {
-        from: points.grainlineLeft,
-        to: points.grainlineRight,
-      })
-      macro('cutonfold', {
-        from: points.cofLeft,
-        to: points.cofRight,
-        grainline: true,
-      })
-      if (sa) {
-        paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-      }
-      if (paperless) {
-        macro('vd', {
-          from: points.bottomLeft,
-          to: points.topLeft,
-          x: points.topLeft.x - sa - 20,
-        })
-        macro('hd', {
-          from: points.topLeft,
-          to: points.topMiddle,
-          y: points.topLeft.x - sa - 20,
-        })
-        switch (options.neckTieColours) {
-          case 'one':
-            macro('hd', {
-              from: points.topLeft,
-              to: points.topRight,
-              y: points.topLeft.x - sa - 30,
-            })
-            break
-          case 'two':
-        }
-        switch (options.neckTieEnds) {
-          case 'straight':
-            macro('hd', {
-              from: points.topLeft,
-              to: points.topMiddle,
-              y: points.topLeft.x - sa - 20,
-            })
-            break
-          case 'pointed':
-            macro('vd', {
-              from: points.topLeft,
-              to: points.topMiddle,
-              x: points.topLeft.x - sa - 20,
-            })
-            macro('vd', {
-              from: points.bottomLeft,
-              to: points.topMiddle,
-              x: points.topLeft.x - sa - 30,
-            })
-        }
-      }
-    }
+    // Grainline
+    macro('grainline', {
+      from: points.grainlineLeft,
+      to: points.grainlineRight,
+      classes: {
+        text: 'text-sm fill-note',
+        line: 'stroke-sm',
+      },
+    })
+
+    // Cut on fold
+    macro('cutonfold', {
+      from: points.cofLeft,
+      to: points.cofRight,
+      offset: 10,
+      classes: {
+        text: 'text-sm center fill-note',
+        line: 'stroke-sm note',
+      },
+    })
+
+    // Dimensions
+    macro('vd', {
+      id: 'hLeft',
+      from: points.bottomLeft,
+      to: points.topMiddle,
+      x: points.topLeft.x - sa - 20,
+    })
+    macro('hd', {
+      id: 'wTop',
+      from: points.topLeft,
+      to: points.topRight,
+      y: points.topLeft.x - sa - 20,
+    })
 
     return part
   },

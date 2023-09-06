@@ -6,7 +6,12 @@
     "cup": "Cup",
     "neckTie": "Neck Tie"
   },
-  "s": {},
+  "s": {
+    "casingStitchingLine": "Sew down casing here",
+    "cutBandTie": "Cut 1 band tie:",
+    "cutNeckTie": "Cut 2 neck ties:",
+    "neckTieLength": "Length of the neck ties"
+  },
   "o": {
     "chestEase": {
       "t": "Chest ease",
