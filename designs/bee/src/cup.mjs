@@ -95,13 +95,13 @@ export const cup = {
     }
 
     //bikini top
-    points.top = points.bust.shiftTowards(points.hps, measurements.hpsToBust * options.topDepth)
-    points.topLeft = points.top.shift(
-      points.top.angle(points.hps) + 90,
+    points.topMid = points.bust.shiftTowards(points.hps, measurements.hpsToBust * options.topDepth)
+    points.topLeft = points.topMid.shift(
+      points.topMid.angle(points.hps) + 90,
       absoluteOptions.neckTieWidth / 2
     )
-    points.topRight = points.top.shift(
-      points.top.angle(points.hps) - 90,
+    points.topRight = points.topMid.shift(
+      points.topMid.angle(points.hps) - 90,
       absoluteOptions.neckTieWidth / 2
     )
     points.leftDart = points.bust.shiftTowards(points.waistDartLeft, cupWidth)
@@ -151,8 +151,8 @@ export const cup = {
     )
     points.middleFront = points.topLeft.shiftFractionTowards(points.bottomLeft, 0.5)
     points.bottomLeftCp1 = points.middleFront.shiftFractionTowards(points.bust, options.frontCurve)
-    points.bottomLeftCp2 = points.frontEdgeCp2.shiftTowards(points.top, bandTieWidth)
-    points.bottomRightCp1 = points.sideEdgeCp1.shiftTowards(points.top, bandTieWidth)
+    points.bottomLeftCp2 = points.frontEdgeCp2.shiftTowards(points.topMid, bandTieWidth)
+    points.bottomRightCp1 = points.sideEdgeCp1.shiftTowards(points.topMid, bandTieWidth)
     //paths
     paths.seam = new Path()
       .move(points.sideEdge)
@@ -197,8 +197,8 @@ export const cup = {
 
     if (complete) {
       //grainline
-      points.grainlineFrom = points.top.shiftFractionTowards(points.bust, 0.05)
-      points.grainlineTo = points.bust.shiftFractionTowards(points.top, 0.05)
+      points.grainlineFrom = points.topMid.shiftFractionTowards(points.bust, 0.05)
+      points.grainlineTo = points.bust.shiftFractionTowards(points.topMid, 0.05)
       macro('grainline', {
         from: points.grainlineFrom,
         to: points.grainlineTo,
@@ -260,6 +260,111 @@ export const cup = {
       }
     }
     if (paperless) {
+      //vertical distances
+      macro('vd', {
+        from: points.bottomLeft,
+        to: paths.seam.bbox().bottomRight,
+        x: points.bottomLeft.x - sa - 15,
+      })
+      macro('vd', {
+        from: points.topMid,
+        to: points.bottomLeft,
+        x: points.bottomLeft.x - sa - 15,
+      })
+      macro('vd', {
+        from: points.topRight,
+        to: paths.seam.bbox().bottomRight,
+        x: points.bottomLeft.x - sa - 30,
+      })
+      macro('vd', {
+        from: points.topRight,
+        to: points.bottomRight,
+        x: points.sideEdge.x + sa + 15,
+      })
+      macro('vd', {
+        from: points.sideEdge,
+        to: paths.seam.bbox().bottomRight,
+        x: points.sideEdge.x + sa + 15,
+      })
+      macro('vd', {
+        from: points.topRight,
+        to: paths.seam.bbox().bottomRight,
+        x: points.sideEdge.x + sa + 30,
+      })
+      macro('vd', {
+        from: points.topMid,
+        to: points.dartEdge,
+        x: points.topMid.x,
+      })
+      //horizontal distances
+      macro('hd', {
+        from: points.bottomLeft,
+        to: points.topLeft,
+        y: points.topLeft.y - sa - 15,
+      })
+      macro('hd', {
+        from: points.topLeft,
+        to: points.topRight,
+        y: points.topRight.y - sa - 30,
+      })
+      macro('hd', {
+        from: points.topRight,
+        to: points.bottomRight,
+        y: points.topRight.y - sa - 15,
+      })
+      macro('hd', {
+        from: points.bottomLeft,
+        to: points.sideEdge,
+        y: points.topRight.y - sa - 45,
+      })
+      macro('hd', {
+        from: points.topMid,
+        to: points.dartEdge,
+        y: points.dartEdge.y,
+      })
+      macro('hd', {
+        from: points.frontEdge,
+        to: points.dartEdge,
+        y: points.dartEdge.y + sa + 15,
+      })
+      macro('hd', {
+        from: points.dartEdge,
+        to: paths.seam.bbox().bottomRight,
+        y: points.dartEdge.y + sa + 15,
+      })
+      macro('hd', {
+        from: points.frontEdge,
+        to: paths.seam.bbox().bottomRight,
+        y: points.dartEdge.y + sa + 30,
+      })
+      //linear distances
+      macro('ld', {
+        from: points.topLeft,
+        to: points.topRight,
+        d: sa + 15,
+      })
+      macro('ld', {
+        from: points.topMid,
+        to: points.dartEdge,
+      })
+      //crossBackTies distances
+      if (!options.crossBackTies) {
+        macro('vd', {
+          from: points.bottomLeft,
+          to: points.frontEdge,
+          x: points.bottomLeft.x - sa - 15,
+        })
+        macro('vd', {
+          from: points.bottomRight,
+          to: points.sideEdge,
+          x: points.sideEdge.x + sa + 15,
+        })
+        macro('hd', {
+          from: points.bottomRight,
+          to: points.sideEdge,
+          y: points.topRight.y - sa - 15,
+        })
+      }
     }
 
     return part
