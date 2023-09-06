@@ -126,11 +126,13 @@ Part.prototype.setHidden = function (hidden = false) {
  */
 Part.prototype.shorthand = function () {
   const complete = this.context.settings?.complete ? true : false
+  const expand = this.context.settings?.expand ? true : false
   const paperless = this.context.settings?.paperless ? true : false
   const sa = this.context.settings?.complete ? this.context.settings?.sa || 0 : 0
   const shorthand = {
     complete,
     context: this.context,
+    expand,
     getId: this.__getIdClosure(),
     log: this.context.store.log,
     paperless,
