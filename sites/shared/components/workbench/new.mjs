@@ -39,6 +39,7 @@ export const ns = [
   ...logNs,
   ...inspectNs,
   ...measiesNs,
+  'plugin-annotations',
 ]
 
 const defaultUi = {
@@ -184,14 +185,13 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
       const pattern =
         (Design.patternConfig.measurements.length === 0 || settings.measurements !== undefined) &&
         new Design({ layout, embed: true, ...settings })
-
       // Return early if the pattern is not initialized yet
       if (typeof pattern.getConfig !== 'function') return null
 
       const patternConfig = pattern.getConfig()
       if (ui.renderer === 'svg') {
         // Add theme to svg renderer
-        pattern.use(pluginI18n, (key) => t(key, { ns: design }))
+        pattern.use(pluginI18n, (key) => t(key))
         pattern.use(pluginTheme, { skipGrid: ['pages'] })
       }
 

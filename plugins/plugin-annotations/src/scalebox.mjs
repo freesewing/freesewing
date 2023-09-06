@@ -14,7 +14,7 @@ const macroDefaults = {
   },
   lead: 'FreeSewing',
   link: 'FreeSewing.org/patrons/join',
-  text: 'plugin-annotations:supportFreesewingBecomeAPatron',
+  text: 'plugin-annotations:supportFreeSewingBecomeAPatron',
   title: false,
 }
 
