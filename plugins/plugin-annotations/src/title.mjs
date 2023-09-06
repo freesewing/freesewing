@@ -13,7 +13,7 @@ const macroDefaults = {
   nr: 1,
   rotation: 0,
   scale: 1,
-  title: 'title',
+  title: 'plugin-annotations:noName',
   classes: {
     cutlist: 'text-md fill-current',
     date: 'text-sm fill-current',
@@ -144,7 +144,7 @@ const addTitleMacro = function (
           points[id] = mc.at
             .clone()
             .shift(-90, shift)
-            .attr('data-text', 'plugin:cut')
+            .attr('data-text', 'plugin-annotations:cut')
             .attr('data-text-class', `${mc.classes.cutlist} ${mc.align}`)
             .attr('data-text-transform', transform)
             .addText(cut)
@@ -153,21 +153,23 @@ const addTitleMacro = function (
           /*
            * Add instructions if parts are mirrored
            */
-          if (!identical && cut > 1) points[id].addText('plugin:mirrored')
+          if (!identical && cut > 1) points[id].addText('plugin-annotations:mirrored')
 
           /*
            * Add instructions if parts are cut on fold
            */
           if (partCutlist.cutOnFold && !ignoreOnFold)
-            points[id].addText(bias ? 'plugin:onFoldAndBias' : 'plugin:onFoldLower')
+            points[id].addText(
+              bias ? 'plugin-annotations:onFoldAndBias' : 'plugin-annotations:onFold'
+            )
           /*
            * Add instructions if parts on on bias
-           */ else if (bias) points[id].addText('plugin:onBias')
+           */ else if (bias) points[id].addText('plugin-annotations:onBias')
 
           /*
            * Add 'from' (material) text
            */
-          points[id].addText('plugin:from').addText('plugin:' + material)
+          points[id].addText('plugin-annotations:from').addText('plugin-annotations:' + material)
         })
       }
     }
@@ -181,8 +183,8 @@ const addTitleMacro = function (
     .shift(-90, shift)
     .attr(
       'data-text',
-      `${(store.data?.name || 'noName').replace('@freesewing/', '')} v ${
-        store.data?.version || 'noVersion'
+      `${(store.data?.name || 'plugin-annotations:noName').replace('@freesewing/', '')} v ${
+        store.data?.version || 'plugin-annotations:noVersion'
       }`
     )
     .attr('data-text-class', `${mc.classes.name} ${mc.align}`)

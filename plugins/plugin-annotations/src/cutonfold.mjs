@@ -56,6 +56,9 @@ const cutonfold = function (config, { points, paths, Path, complete, store, scal
    */
   const mc = {
     ...macroDefaults,
+    text: config.grainline
+      ? 'plugin-annotations:cutOnFoldAndGrainline'
+      : 'plugin-annotations:cutOnFold',
     ...config,
     classes: macroDefaults.classes,
   }
@@ -99,7 +102,7 @@ const cutonfold = function (config, { points, paths, Path, complete, store, scal
     .attr('class', mc.classes.line)
     .attr('marker-start', 'url(#cutonfoldFrom)')
     .attr('marker-end', 'url(#cutonfoldTo)')
-    .addText(mc.grainline ? 'cutOnFoldAndGrainline' : 'cutOnFold', mc.classes.text)
+    .addText(mc.text, mc.classes.text)
 
   /*
    * Store all IDs in the store so we can remove this macro with rmcutonfold

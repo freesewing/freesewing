@@ -10,7 +10,7 @@ const macroDefaults = {
   },
   id: 'grainline',
   margin: 0.05,
-  text: 'grainline',
+  text: 'plugin-annotations:grainline',
 }
 
 // Export defs

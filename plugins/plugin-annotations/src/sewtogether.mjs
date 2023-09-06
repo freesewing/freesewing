@@ -4,13 +4,14 @@ import { getIds } from './utils.mjs'
  * Defaults for the sewtogether macro
  */
 const macroDefaults = {
-  id: 'sewtogether',
-  force: false,
   classes: {
     curve: 'dotted note stroke-sm',
     hinge: 'note dotted stroke-sm',
     text: 'center fill-note text-xs',
   },
+  id: 'sewtogether',
+  force: false,
+  text: 'plugin-annotations:sewTogether',
 }
 
 // Export defs
@@ -101,7 +102,7 @@ const sewtogether = function (config, { points, paths, Path, complete, sa, store
     .attr('class', mc.classes.curve)
     .attr('marker-start', 'url(#sewTogetherStart)')
     .attr('marker-end', 'url(#sewTogetherEnd)')
-    .addText('sewTogether', mc.classes.text)
+    .addText(mc.text, mc.classes.text)
 
   /*
    * Draw the hinge, if needed

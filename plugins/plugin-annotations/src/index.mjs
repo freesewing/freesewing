@@ -1,4 +1,6 @@
 import { name, version } from '../data.mjs'
+// i18n
+import { i18n as i18nAnnotations } from '../i18n/index.mjs'
 // Defs only
 import { buttonsDefs } from './buttons.mjs'
 import { logoDefs } from './logo.mjs'
@@ -62,3 +64,4 @@ export const plugin = {
 
 export const annotationsPlugin = plugin
 export const pluginAnnotations = plugin
+export const i18n = i18nAnnotations

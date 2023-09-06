@@ -7,11 +7,15 @@ const macroDefaults = {
   classes: {
     lead: 'text-xs bold',
     title: 'text bold',
-    text: 'text-sm',
-    link: 'text-sm fill-note',
+    text: 'text-xs',
+    link: 'text-sm fill-note bold',
     metric: 'text-xs center',
     imperial: 'text-xs center',
   },
+  lead: 'FreeSewing',
+  link: 'FreeSewing.org/patrons/join',
+  text: 'plugin-annotations:supportFreesewingBecomeAPatron',
+  title: false,
 }
 
 /*
@@ -191,7 +195,7 @@ const scalebox = function (config, { store, points, paths, scale, Point, Path, c
    * Add lead text to the part points
    */
   points[ids.textLead] = text.lead
-    .addText(mc.lead || 'FreeSewing', mc.classes.lead)
+    .addText(mc.lead, mc.classes.lead)
     .attr('data-text-class', 'text-sm')
 
   /*
@@ -199,7 +203,7 @@ const scalebox = function (config, { store, points, paths, scale, Point, Path, c
    */
   let title = mc.title
   if (!title) {
-    title = store.data?.name || 'No Name'
+    title = store.data?.name || 'plugin-annotations:noName'
     if (title.indexOf('@freesewing/') !== -1) title = title.replace('@freesewing/', '')
   }
   points[ids.textTitle] = text.title
@@ -209,23 +213,18 @@ const scalebox = function (config, { store, points, paths, scale, Point, Path, c
   /*
    * Add text text to the part points
    */
-  points[ids.textText] = text.text.addText(
-    typeof mc.text === 'string' ? mc.text : 'supportFreesewingBecomeAPatron',
-    mc.classes.text
-  )
+  points[ids.textText] = text.text.addText(mc.text, mc.classes.text)
 
   /*
    * Add link text to the part points
    */
-  points[ids.textLink] = text.link
-    .addText('freesewing.org/patrons/join', mc.classes.link)
-    .attr('data-text-lineheight', 4)
+  points[ids.textLink] = text.link.addText(mc.link, mc.classes.link).attr('data-text-lineheight', 4)
 
   /*
    * Add metric instructions text to the part points
    */
   points[ids.textMetric] = text.metric
-    .attr('data-text', 'theWhiteInsideOfThisBoxShouldMeasure')
+    .attr('data-text', 'plugin-annotations:theWhiteInsideOfThisBoxShouldMeasure')
     .attr('data-text', mdw)
     .attr('data-text', 'x')
     .attr('data-text', mdh)
@@ -235,7 +234,7 @@ const scalebox = function (config, { store, points, paths, scale, Point, Path, c
    * Add imperial instructions text to the part points
    */
   points[ids.textImperial] = text.imperial
-    .attr('data-text', 'theBlackOutsideOfThisBoxShouldMeasure')
+    .attr('data-text', 'plugin-annotations:theBlackOutsideOfThisBoxShouldMeasure')
     .attr('data-text', idw)
     .attr('data-text', 'x')
     .attr('data-text', idh)

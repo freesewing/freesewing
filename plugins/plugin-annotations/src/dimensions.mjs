@@ -193,9 +193,9 @@ export const dimensionsMacros = {
   rmld: (id, props) => removeDimension(id, props, 'ld'),
   rmvd: (id, props) => removeDimension(id, props, 'vd'),
   rmpd: (id, props) => removeDimension(id, props, 'pd'),
-  rmhd: (config, props) => removeDimensionType(props, 'hd'),
-  rmld: (config, props) => removeDimensionType(props, 'ld'),
-  rmvd: (config, props) => removeDimensionType(props, 'vd'),
-  rmpd: (config, props) => removeDimensionType(props, 'pd'),
+  rmahd: (config, props) => removeDimensionType(props, 'hd'),
+  rmald: (config, props) => removeDimensionType(props, 'ld'),
+  rmavd: (config, props) => removeDimensionType(props, 'vd'),
+  rmapd: (config, props) => removeDimensionType(props, 'pd'),
   rmad: (config, props) => removeAllDimensions(props),
 }
