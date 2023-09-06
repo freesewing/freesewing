@@ -37,13 +37,7 @@ export const strap = {
     let strapWidth = store.get('strapWidth')
     let strapLength =
       Math.sqrt(hSpan * hSpan + vSpan * vSpan) + measurements.chest * options.chestDepth
-    /*
-    console.log('chestWidth ' + chestWidth)
-    console.log('backOpening ' + backOpening)
-    console.log('hSpan ' + hSpan)
-    console.log('vSpan ' + vSpan)
-    console.log('strapLength ' + strapLength)
-    */
+
     points.topLeft = new Point(0, 0)
     points.topLeftHem = points.topLeft.shift(270, hemWidth)
     points.topMiddle = new Point(strapWidth, 0)
@@ -84,53 +78,71 @@ export const strap = {
       .attr('data-text', 'fold')
       .attr('data-text-class', 'text-xs center')
 
-    store.cutlist.addCut()
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-    // Complete?
-    if (complete) {
-      points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-      snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.5)
-      points.title = points.logo.shift(-90, 50)
-      macro('title', {
-        nr: 2,
-        at: points.title,
-        title: 'Strap',
-      })
-      macro('crossbox', { from: points.topLeft, to: points.topMiddleHem })
-      macro('crossbox', { from: points.bottomLeftHem, to: points.bottomMiddle })
-      if (sa) {
-        paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-      }
-    }
+    /*
+     * Annotations
+     */
 
-    // Paperless?
-    if (paperless) {
-      macro('hd', {
-        from: points.bottomLeft,
-        to: points.bottomRight,
-        y: points.bottomLeft.y + sa + 15,
-      })
-      macro('vd', {
-        from: points.bottomLeft,
-        to: points.topLeft,
-        x: points.topLeft.x - sa - 15,
-      })
-      macro('vd', {
-        from: points.topMiddle,
-        to: points.topMiddleHem,
-        x: points.topMiddleHem.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.topMiddleHem,
-        to: points.bottomMiddleHem,
-        x: points.topMiddleHem.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.bottomMiddleHem,
-        to: points.bottomMiddle,
-        x: points.bottomMiddleHem.x + sa + 15,
-      })
-    }
+    // Cut list
+    store.cutlist.addCut({ cut: 1, from: 'fabric' })
+
+    // Logo
+    points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+    snippets.logo = new Snippet('logo', points.logo)
+
+    // Title
+    points.title = points.logo.shift(-90, 70)
+    macro('title', {
+      nr: 2,
+      at: points.title,
+      title: 'strap',
+      align: 'center',
+    })
+
+    // Crossbox
+    macro('crossbox', {
+      topLeft: points.topLeft,
+      bottomRight: points.topMiddleHem,
+      id: 'crossbox1',
+    })
+    macro('crossbox', {
+      topLeft: points.bottomLeftHem,
+      bottomRight: points.bottomMiddle,
+      id: 'crossbox2',
+    })
+
+    // Dimensions
+    macro('hd', {
+      from: points.bottomLeft,
+      to: points.bottomRight,
+      y: points.bottomLeft.y + sa + 15,
+      id: 'wBottom',
+    })
+    macro('vd', {
+      from: points.bottomLeft,
+      to: points.topLeft,
+      x: points.topLeft.x - sa - 30,
+      id: 'hLeft',
+    })
+    macro('vd', {
+      from: points.topMiddleHem,
+      to: points.topMiddle,
+      x: points.topLeft.x - sa - 15,
+      id: 'crossboxTop',
+    })
+    macro('vd', {
+      from: points.bottomMiddleHem,
+      to: points.topMiddleHem,
+      x: points.topLeft.x - sa - 15,
+      id: 'betweenCrossboxes',
+    })
+    macro('vd', {
+      from: points.bottomMiddle,
+      to: points.bottomMiddleHem,
+      x: points.topLeft.x - sa - 15,
+      id: 'crossboxBottom',
+    })
 
     return part
   },

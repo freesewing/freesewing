@@ -6,7 +6,9 @@
     "pocket": "Pocket",
     "strap": "Strap"
   },
-  "s": {},
+  "s": {
+    "attachment": "Attachment"
+  },
   "o": {
     "backOpening": {
       "t": "Back opening",

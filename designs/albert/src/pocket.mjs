@@ -3,20 +3,7 @@ import { front } from './front.mjs'
 export const pocket = {
   name: 'albert.pocket',
   after: front,
-  draft: ({
-    Point,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    sa,
-    paperless,
-    macro,
-    store,
-    part,
-  }) => {
+  draft: ({ Point, Path, points, paths, Snippet, snippets, sa, macro, store, part }) => {
     let pocketSize = store.get('pocketSize')
     let hemWidth = store.get('hemWidth')
 
@@ -47,39 +34,44 @@ export const pocket = {
       .attr('data-text', 'hem')
       .attr('data-text-class', 'text-xs center')
 
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+
+    /*
+     * Annotations
+     */
+
+    // Cut on fold
     macro('cutonfold', {
       from: points.topCOF,
       to: points.bottomCOF,
+      reverse: true,
     })
 
-    // Complete?
-    if (complete) {
-      points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-      snippets.logo = new Snippet('logo', points.logo)
-      points.title = points.logo.shift(-90, 45)
-      macro('title', {
-        nr: 3,
-        at: points.title,
-        title: 'Pocket',
-      })
-      if (sa) {
-        paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-      }
-    }
+    // Logo
+    points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+    snippets.logo = new Snippet('logo', points.logo)
 
-    // Paperless?
-    if (paperless) {
-      macro('hd', {
-        from: points.bottomLeft,
-        to: points.bottomRight,
-        y: points.bottomLeft.y + sa + 15,
-      })
-      macro('vd', {
-        from: points.bottomLeft,
-        to: points.topLeft,
-        x: points.topLeft.x - sa - 15,
-      })
-    }
+    // Title
+    points.title = points.logo.shift(-90, 45)
+    macro('title', {
+      nr: 3,
+      at: points.title,
+      title: 'Pocket',
+    })
+
+    // Dimensions
+    macro('hd', {
+      from: points.bottomLeft,
+      to: points.bottomRight,
+      y: points.bottomLeft.y + sa + 15,
+      id: 'width',
+    })
+    macro('vd', {
+      from: points.bottomLeft,
+      to: points.topLeft,
+      x: points.topLeft.x - 15,
+      id: 'height',
+    })
 
     return part
   },
