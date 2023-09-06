@@ -27,10 +27,6 @@ export const bandTie = {
     complete,
     macro,
     measurements,
-    snippets,
-    expand,
-    Snippet,
-    utils,
     absoluteOptions,
     part,
   }) => {
