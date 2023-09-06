@@ -11,12 +11,15 @@ import { Point } from './point.mjs'
  * @constructor
  * @param {string} def - The id of the snippet in the SVG defs section
  * @param {Point} anchor - The Point to anchor this Snippet on
+ * @param {boolean} force - Whether to force rendering of this snippet when complete is falsy (or not)
  * @return {Snippet} this - The Snippet instance
  */
-export function Snippet(def, anchor) {
+export function Snippet(def, anchor, force = false) {
   this.def = def
   this.anchor = anchor
   this.attributes = new Attributes()
+
+  if (force) this.attributes.set('data-force', 1)
 
   return this
 }
