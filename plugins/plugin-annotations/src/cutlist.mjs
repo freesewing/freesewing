@@ -42,7 +42,7 @@ function addCut(store, so = {}) {
     return store
   }
   if (typeof material !== 'string') {
-    store.log.warning(`Tried to set material to a value that is not a string`)
+    store.log.warn(`Tried to set material to a value that is not a string`)
     return store
   }
   const path = ['cutlist', partName, 'materials', material]
