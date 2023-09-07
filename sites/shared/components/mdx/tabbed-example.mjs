@@ -1,6 +1,5 @@
 import { Tab, Tabs } from '../tabs.mjs'
 import Md from 'react-markdown'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { pluginFlip } from '@freesewing/plugin-flip'
 import { pluginGore } from '@freesewing/plugin-gore'
 import { Design } from '@freesewing/core'
@@ -46,7 +45,7 @@ const buildPattern = (children, settings = { margin: 5 }, tutorial = false, pape
           lengthRatio: { pct: 75, min: 55, max: 85, menu: 'style' },
         }
       : {},
-    plugins: [pluginBundle, pluginFlip, pluginGore],
+    plugins: [pluginFlip, pluginGore],
   }
   const design = new Design({
     parts: [part],
