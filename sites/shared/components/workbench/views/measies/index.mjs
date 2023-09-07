@@ -33,7 +33,7 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
       [['units'], set.imperial ? 'imperial' : 'metric'],
     ])
     setView('draft')
-    setLoadingStatus([true, 'appliedMeasies', true, true])
+    //setLoadingStatus([true, 'workbench:appliedMeasies', true, true])
   }
 
   return (
