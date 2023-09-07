@@ -17,9 +17,9 @@ const options = {
   entryPoints: ['src/index.mjs'],
   format: 'esm',
   outfile: 'dist/index.mjs',
-  //external: ['@freesewing'],
+  external: ['@freesewing'],
   metafile: process.env.VERBOSE ? true : false,
-  //minify: process.env.NO_MINIFY ? false : true,
+  minify: process.env.NO_MINIFY ? false : true,
   sourcemap: true,
 }
 

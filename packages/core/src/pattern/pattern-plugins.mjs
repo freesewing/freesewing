@@ -1,5 +1,5 @@
 import { Hooks } from '../hooks.mjs'
-import { pluginBundle as corePlugins } from '@freesewing/plugin-bundle'
+import { corePlugins } from '@freesewing/core-plugins'
 
 /**
  * Get the name of the given plugin config
