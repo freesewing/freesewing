@@ -23,5 +23,61 @@ body:
  - [ ] If your design extends Brian, check the difference by toggling the `legacyArmholeDepth` option in the advanced options. You will want to replace the legacy `armholeDepthFactor` option with the new `armholeDepth` option, and set it to something that makes your design default similar as before
  - [ ] Make sure there is a documentation page for each option under `markdown/docs/designs/[design name]/options/[option name]` Create at least the folder and and `en.md` file in it with the title.
 "
+  - type: dropdown
+    id: design
+    attributes:
+      label: FreeSewing design
+      options:
+        - aaron
+        - albert
+        - bee
+        - bella
+        - benjamin
+        - bent
+        - bob
+        - breanna
+        - brian
+        - bruce
+        - carlita
+        - carlton
+        - cathrin
+        - charlie
+        - cornelius
+        - diana
+        - examples
+        - florence
+        - florent
+        - hi
+        - holmes
+        - hortensia
+        - huey
+        - hugo
+        - jaeger
+        - legend
+        - lucy
+        - lunetius
+        - magde
+        - noble
+        - octoplushy
+        - paco
+        - penelope
+        - plugintest
+        - rendertest
+        - sandy
+        - shin
+        - simon
+        - simone
+        - sven
+        - tamiko
+        - teagan
+        - tiberius
+        - titan
+        - trayvon
+        - tutorial
+        - wahid
+        - walburga
+        - waralee
+        - yuri
 ---
+
 
