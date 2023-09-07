@@ -6,10 +6,12 @@ export const base = {
   measurements: [
     'biceps',
     'chest',
+    'hpsToBust',
     'hpsToWaistBack',
     'neck',
     'shoulderToShoulder',
     'shoulderSlope',
+    'waistToArmpit',
     'waistToHips',
   ],
   optionalMeasurements: ['highBust'],
@@ -31,10 +33,12 @@ export const base = {
     s3Armhole: { pct: 0, min: -100, max: 100, menu: 'style' },
     // Advanced
     acrossBackFactor: { pct: 98, min: 93, max: 100, menu: 'advanced' },
+    armholeDepth: { pct: 5, min: -10, max: 50, menu: 'advanced' },
     armholeDepthFactor: { pct: 55, min: 50, max: 70, menu: 'advanced' },
     backNeckCutout: { pct: 5, min: 2, max: 8, menu: 'advanced' },
     frontArmholeDeeper: { pct: 0.2, min: 0, max: 0.5, menu: 'advanced' },
     shoulderSlopeReduction: { pct: 0, min: 0, max: 80, menu: 'advanced' },
+    legacyArmholeDepth: { bool: false, menu: 'advanced' },
   },
   plugins: [bustPlugin],
   draft: ({
@@ -57,6 +61,7 @@ export const base = {
     // Center back (cb) vertical axis
     points.cbHps = new Point(0, 0)
     points.cbNeck = new Point(0, options.backNeckCutout * measurements.neck)
+    points.cbChest = new Point(0, measurements.hpsToBust)
     points.cbWaist = new Point(0, measurements.hpsToWaistBack)
     points.cbHips = new Point(0, points.cbWaist.y + measurements.waistToHips)
 
@@ -73,13 +78,28 @@ export const base = {
       new Point(measurements.shoulderToShoulder / 2 + store.get('shoulderEase'), -100),
       new Point(measurements.shoulderToShoulder / 2 + store.get('shoulderEase'), 100)
     )
-    // Determine armhole depth and cbShoulder independent of shoulder slope reduction
+
+    /*
+     * Since Brian is such a foundational block for FreeSewing, I am going to keep the
+     * legacy way of calculating the armhole depth so that people can see how it changes
+     * their (inherited pattern).
+     */
     points.cbShoulder = new Point(0, points.shoulder.y)
-    points.cbArmhole = new Point(
-      0,
-      points.shoulder.y +
-        measurements.biceps * (1 + options.bicepsEase) * options.armholeDepthFactor
-    )
+    // Determine armhole depth and cbShoulder independent of shoulder slope reduction
+    if (options.legacyArmholeDepth) {
+      // The legacy way is based on the biceps measurements
+      points.cbArmhole = new Point(
+        0,
+        points.shoulder.y +
+          measurements.biceps * (1 + options.bicepsEase) * options.armholeDepthFactor
+      )
+    } else {
+      // The new way uses the waistToArmpit measurement
+      points.cbArmhole = new Point(
+        0,
+        points.cbWaist.y - measurements.waistToArmpit * (1 - options.armholeDepth)
+      )
+    }
 
     // Now take shoulder slope reduction into account
     points.shoulder.y -= (points.shoulder.y - points.cbHps.y) * options.shoulderSlopeReduction
