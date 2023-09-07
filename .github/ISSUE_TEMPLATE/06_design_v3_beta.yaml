@@ -4,25 +4,6 @@ description: Tackle one of our designs and get it ready for a v3 beta release
 title: '[design beta]: '
 labels: [':trident: v3']
 body:
-  - type: markdown
-    attributes:
-      value: "
-- [ ] Ensure pluginBundle is not used/loaded (the `@freesewing/plugin-bundle package is replaced with @freesewing/core-plugins and these plugins are auto-loaded by the core library)
-- [ ] Ensure all `log.warning` calls are replaced with `log.warn` (`log.warning` has been replaced with `log.warn` to be consistent with log levels in other tools/software)
-- [ ] Do not wrap snippets or annotation macros behind a `if (complete)` block (all annotation macros will check the complete settings, snippets won't be rendered when complete is false. The only time you want to wrap something in a complete check is if you are adding additional paths to the patter (helplines and so on)
- - [ ] Do not put dimensions behind a `if (paperless)` block (all dimensions won't render when paperless is false)
- - [ ] Ensure all dimensions have a `id` set that makes sense (describing the dimension, this is often the thing that takes the most work. One trick you can use to find out what dimension is the one you are looking at the code at is to add `text: 'AAAAAAAAAAAAAAAAAA'` or whatever.)
- - [ ] Ensure that all macros that are called more than once per part have an id set (typically only dimensions, but just in case)
- - [ ] Remove the effect of macros where needed (how macros work has been overhauled, so in come cases you may need to remove an cut-on-fold or grainline or whatnot.
- - [ ] Ensure there is a point named `gridAnchor` in each part that is at a logical place to anchor the grid
- - [ ] If you have simple parts (rectangles essentially) check the `expand` option and don't print them. Check the `neck-binging.mjs` file in Aaron for an example.
- - [ ] If you have been logging info for the user's attention, consider flagging it instead. Obviously this is not yet documented, but you can check aaron and benjamin for examples. Just search for `flag`.
- - [ ] Set part titles simple as `name`. Make sure they are translated in `i18n/en.json` under the `p` key
- - [ ] Set any other strings you add to the patter to `design:translateKey`. for example: `aaron:myMessage` *note that you need to run `yarn prebuild` and restart the lab/org for translation changes to be picked up
- - [ ] Ensure all options have a translation in `i18n/en.json`, or inherit a translation
- - [ ] If your design extends Brian, check the difference by toggling the `legacyArmholeDepth` option in the advanced options. You will want to replace the legacy `armholeDepthFactor` option with the new `armholeDepth` option, and set it to something that makes your design default similar as before
- - [ ] Make sure there is a documentation page for each option under `markdown/docs/designs/[design name]/options/[option name]` Create at least the folder and and `en.md` file in it with the title.
-"
   - type: dropdown
     id: design
     attributes:
@@ -80,4 +61,19 @@ body:
         - yuri
 ---
 
+- [ ] Ensure pluginBundle is not used/loaded (the `@freesewing/plugin-bundle package is replaced with @freesewing/core-plugins and these plugins are auto-loaded by the core library)
+- [ ] Ensure all `log.warning` calls are replaced with `log.warn` (`log.warning` has been replaced with `log.warn` to be consistent with log levels in other tools/software)
+- [ ] Do not wrap snippets or annotation macros behind a `if (complete)` block (all annotation macros will check the complete settings, snippets won't be rendered when complete is false. The only time you want to wrap something in a complete check is if you are adding additional paths to the patter (helplines and so on)
+ - [ ] Do not put dimensions behind a `if (paperless)` block (all dimensions won't render when paperless is false)
+ - [ ] Ensure all dimensions have a `id` set that makes sense (describing the dimension, this is often the thing that takes the most work. One trick you can use to find out what dimension is the one you are looking at the code at is to add `text: 'AAAAAAAAAAAAAAAAAA'` or whatever.)
+ - [ ] Ensure that all macros that are called more than once per part have an id set (typically only dimensions, but just in case)
+ - [ ] Remove the effect of macros where needed (how macros work has been overhauled, so in come cases you may need to remove an cut-on-fold or grainline or whatnot.
+ - [ ] Ensure there is a point named `gridAnchor` in each part that is at a logical place to anchor the grid
+ - [ ] If you have simple parts (rectangles essentially) check the `expand` option and don't print them. Check the `neck-binging.mjs` file in Aaron for an example.
+ - [ ] If you have been logging info for the user's attention, consider flagging it instead. Obviously this is not yet documented, but you can check aaron and benjamin for examples. Just search for `flag`.
+ - [ ] Set part titles simple as `name`. Make sure they are translated in `i18n/en.json` under the `p` key
+ - [ ] Set any other strings you add to the patter to `design:translateKey`. for example: `aaron:myMessage` *note that you need to run `yarn prebuild` and restart the lab/org for translation changes to be picked up
+ - [ ] Ensure all options have a translation in `i18n/en.json`, or inherit a translation
+ - [ ] If your design extends Brian, check the difference by toggling the `legacyArmholeDepth` option in the advanced options. You will want to replace the legacy `armholeDepthFactor` option with the new `armholeDepth` option, and set it to something that makes your design default similar as before
+ - [ ] Make sure there is a documentation page for each option under `markdown/docs/designs/[design name]/options/[option name]` Create at least the folder and and `en.md` file in it with the title.
 
