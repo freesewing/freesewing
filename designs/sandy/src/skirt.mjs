@@ -1,6 +1,5 @@
 import { draftRingSector } from './shared.mjs'
 import { pctBasedOn } from '@freesewing/core'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { elastics } from '@freesewing/snapseries'
 
 function sandySkirt({
@@ -214,7 +213,6 @@ function sandySkirt({
 export const skirt = {
   name: 'sandy.skirt',
   measurements: ['waist', 'waistToFloor', 'waistToHips', 'hips'],
-  plugins: pluginBundle,
   options: {
     minimumOverlap: 15, // Lower than this and we don't draw a button
     seamlessFullCircle: { bool: false, menu: 'construction' },

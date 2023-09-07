@@ -1,5 +1,4 @@
 import { base } from './base.mjs'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 
 function draftBreannaBack({
   sa,
@@ -291,6 +290,5 @@ function draftBreannaBack({
 export const back = {
   from: base,
   name: 'breanna.back',
-  plugins: [pluginBundle],
   draft: draftBreannaBack,
 }

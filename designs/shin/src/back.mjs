@@ -1,6 +1,5 @@
 import { pctBasedOn } from '@freesewing/core'
 import { elastics } from '@freesewing/snapseries'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 
 function shinBack({
   store,
@@ -186,7 +185,6 @@ function shinBack({
 export const back = {
   name: 'shin.back',
   measurements: ['hips', 'upperLeg', 'waistToUpperLeg', 'waistToHips'],
-  plugins: [pluginBundle],
   options: {
     frontFactor: 0.58,
     legFrontFactor: 0.48,

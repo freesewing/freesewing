@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 export const front = {
   name: 'albert.front',
   measurements: ['chest', 'hpsToWaistBack', 'waist', 'waistToKnee', 'hips'],
@@ -9,7 +7,6 @@ export const front = {
     bibLength: { pct: 75, min: 0, max: 90, menu: 'style' },
     lengthBonus: { pct: 0, min: -20, max: 25, menu: 'style' },
   },
-  plugins: pluginBundle,
   draft: ({
     options,
     measurements,

@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 export const bib = {
   name: 'bob.bib',
   measurements: [],
@@ -10,7 +8,6 @@ export const bib = {
     lengthRatio: { pct: 75, min: 55, max: 85, menu: 'fit' },
     headSize: { pct: 100, min: 10, max: 200, snap: 5, menu: 'size' },
   },
-  plugins: [pluginBundle],
   draft: ({
     Point,
     points,

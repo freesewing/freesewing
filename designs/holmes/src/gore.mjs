@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { pluginGore } from '@freesewing/plugin-gore'
 
 function draftHolmesGore({
@@ -103,6 +102,6 @@ export const gore = {
     lengthRatio: { pct: 55, min: 40, max: 60, menu: 'style' },
     gores: { count: 6, min: 4, max: 20, menu: 'style' },
   },
-  plugins: [pluginBundle, pluginGore],
+  plugins: [pluginGore],
   draft: draftHolmesGore,
 }

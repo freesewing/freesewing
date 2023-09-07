@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { withCondition as bustPlugin } from '@freesewing/plugin-bust'
 
 export const base = {
@@ -37,7 +36,7 @@ export const base = {
     frontArmholeDeeper: { pct: 0.2, min: 0, max: 0.5, menu: 'advanced' },
     shoulderSlopeReduction: { pct: 0, min: 0, max: 80, menu: 'advanced' },
   },
-  plugins: [pluginBundle, bustPlugin],
+  plugins: [bustPlugin],
   draft: ({
     measurements,
     options,

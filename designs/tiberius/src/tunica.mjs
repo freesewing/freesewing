@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function tiberiusTunica({
   Point,
   points,
@@ -180,7 +178,6 @@ function tiberiusTunica({
 
 export const tunica = {
   name: 'tiberius.tunica',
-  plugins: [pluginBundle],
   measurements: [
     'head',
     'shoulderToElbow',

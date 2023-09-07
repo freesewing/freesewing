@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function draftFlorentBrimBottom({
   paperless,
   sa,
@@ -104,6 +102,5 @@ export const brimBottom = {
     // Percentages
     headEase: { pct: 2, min: 0, max: 5, menu: 'fit' },
   },
-  plugins: [pluginBundle],
   draft: draftFlorentBrimBottom,
 }

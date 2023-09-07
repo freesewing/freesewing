@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function draftFlorentTop({
   paperless,
   sa,
@@ -236,6 +234,5 @@ export const top = {
     // Percentages
     headEase: { pct: 2, min: 0, max: 5, menu: 'fit' },
   },
-  plugins: [pluginBundle],
   draft: draftFlorentTop,
 }

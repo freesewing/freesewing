@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function draftBenjaminBase({
   store,
   sa,
@@ -229,6 +227,5 @@ export const base = {
     },
     ribbonWidth: { pct: 6, min: 5, max: 8, menu: 'style' },
   },
-  plugins: [pluginBundle],
   draft: draftBenjaminBase,
 }

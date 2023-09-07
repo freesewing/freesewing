@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 export const back = {
   name: 'bella.back',
   measurements: [
@@ -49,7 +47,6 @@ export const back = {
     frontShoulderWidth: { pct: 95, max: 98, min: 92, menu: 'advanced' },
     highBustWidth: { pct: 86, max: 92, min: 80, menu: 'advanced' },
   },
-  plugins: [pluginBundle],
   draft: ({
     store,
     sa,

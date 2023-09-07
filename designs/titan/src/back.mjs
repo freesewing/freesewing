@@ -1,6 +1,5 @@
 import { pctBasedOn } from '@freesewing/core'
 import { elastics } from '@freesewing/snapseries'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 
 function titanBack({
   points,
@@ -539,7 +538,6 @@ function titanBack({
 
 export const back = {
   name: 'titan.back',
-  plugins: [pluginBundle],
   measurements: [
     'crossSeam',
     'crossSeamFront',

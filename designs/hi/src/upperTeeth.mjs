@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { createTeeth } from './teeth.mjs'
 
 function draftHiUpperTeeth({
@@ -124,6 +123,5 @@ function draftHiUpperTeeth({
 
 export const upperTeeth = {
   name: 'hi.upperTeeth',
-  plugins: [pluginBundle],
   draft: draftHiUpperTeeth,
 }

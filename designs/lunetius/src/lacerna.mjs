@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function lunetiusLacerna({
   Point,
   points,
@@ -175,6 +173,5 @@ export const lacerna = {
       menu: 'style',
     },
   },
-  plugins: pluginBundle,
   draft: lunetiusLacerna,
 }

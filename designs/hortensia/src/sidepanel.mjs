@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { bottomsidepanel } from './bottomsidepanel.mjs'
 
 function draftHortensiaSidepanel({
@@ -233,6 +232,5 @@ export const sidepanel = {
       menu: 'style',
     },
   },
-  plugins: [pluginBundle],
   draft: draftHortensiaSidepanel,
 }

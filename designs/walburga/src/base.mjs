@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function walburgaBase({
   Point,
   points,
@@ -211,6 +209,5 @@ export const base = {
     neckline,
     neckoRatio,
   },
-  plugins: [pluginBundle],
   draft: walburgaBase,
 }

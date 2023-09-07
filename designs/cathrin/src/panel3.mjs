@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { panels } from './panels.mjs'
 
 function draftCathrinPanel3({ macro, sa, points, paths, Point, complete, paperless, part }) {
@@ -75,6 +74,5 @@ function draftCathrinPanel3({ macro, sa, points, paths, Point, complete, paperle
 export const panel3 = {
   name: 'cathrin.panel3',
   from: panels,
-  plugins: [pluginBundle],
   draft: draftCathrinPanel3,
 }

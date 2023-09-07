@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { frontpoints } from './frontpoints.mjs'
 
 function draftCorneliusFront({
@@ -247,6 +246,5 @@ export const front = {
     pctKtoRup: 0.25,
     pctKtoH: 0.7,
   },
-  plugins: [pluginBundle],
   draft: draftCorneliusFront,
 }
