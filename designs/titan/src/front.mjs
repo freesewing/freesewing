@@ -267,7 +267,7 @@ function titanFront({
       points.fork = saved.fork
     }
     if (Math.abs(delta) > 1 || Math.abs(delta) > Math.abs(previous_delta)) {
-      log.warning(
+      log.warn(
         'Unable to adjust the front crotch seam to fit the given measurements, after ' +
           run +
           ' iterations.'
@@ -592,8 +592,8 @@ function titanFront({
     }
   }
 
-  if (adjustment_warning) {
-    log.warning(
+  if (adjustment_warn) {
+    log.warn(
       'We were not able to generate the Front pattern piece correctly. ' +
         'Manual fitting and alteration of this and other pattern pieces ' +
         'are likely to be needed. ' +
