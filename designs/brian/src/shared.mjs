@@ -32,7 +32,7 @@ export function dimensions(part, side) {
     d: sa + 15,
   })
   macro('pd', {
-    d: 'lShoulderToArmholePitch',
+    id: 'lShoulderToArmholePitch',
     path: paths[`${side}Armhole`],
     d: -15,
   })

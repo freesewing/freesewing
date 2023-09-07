@@ -15,7 +15,6 @@ export const front = {
     snippets,
     options,
     complete,
-    paperless,
     macro,
     utils,
     part,

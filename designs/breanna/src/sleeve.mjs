@@ -15,8 +15,6 @@ function draftBreannaSleeve(params) {
     paths,
     Snippet,
     snippets,
-    complete,
-    paperless,
     macro,
     part,
   } = params

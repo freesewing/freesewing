@@ -12,7 +12,6 @@ export const frontSideDart = {
     paths,
     options,
     complete,
-    paperless,
     macro,
     utils,
     measurements,

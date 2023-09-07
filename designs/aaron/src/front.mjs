@@ -39,8 +39,6 @@ export const front = {
     snippets,
     options,
     measurements,
-    complete,
-    paperless,
     macro,
     part,
   }) => {
@@ -193,7 +191,7 @@ export const front = {
     points.logo = points.title.shift(-90, 75)
     snippets.logo = new Snippet('logo', points.logo)
 
-    // Paperless
+    // Dimensions
     dimensions(macro, points, sa)
     macro('vd', {
       from: points.cfHem,

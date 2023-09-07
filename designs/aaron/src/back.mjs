@@ -18,7 +18,6 @@ export const back = {
     options,
     complete,
     expand,
-    paperless,
     macro,
     utils,
     units,

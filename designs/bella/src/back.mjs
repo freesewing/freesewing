@@ -55,8 +55,6 @@ export const back = {
     Path,
     paths,
     options,
-    complete,
-    paperless,
     macro,
     utils,
     measurements,

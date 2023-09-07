@@ -6,14 +6,12 @@ function draftBenjaminCollarBand({
   measurements,
   store,
   options,
-  complete,
   macro,
   points,
   paths,
   sa,
   expand,
   utils,
-  paperless,
   part,
 }) {
   /*

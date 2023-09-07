@@ -52,7 +52,6 @@ export const base = {
     Path,
     paths,
     utils,
-    complete,
     macro,
     part,
   }) => {

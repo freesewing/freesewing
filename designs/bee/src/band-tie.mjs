@@ -28,7 +28,6 @@ export const bandTie = {
     paths,
     options,
     complete,
-    paperless,
     macro,
     measurements,
     snippets,

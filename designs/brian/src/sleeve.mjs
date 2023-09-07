@@ -18,8 +18,6 @@ export const sleeve = {
     paths,
     Snippet,
     snippets,
-    complete,
-    paperless,
     macro,
     part,
   }) => {

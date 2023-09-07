@@ -13,7 +13,6 @@ export const back = {
     Snippet,
     snippets,
     complete,
-    paperless,
     macro,
     options,
     utils,

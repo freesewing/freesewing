@@ -29,8 +29,6 @@ function draftBreannaFront({
   Path,
   paths,
   sa,
-  complete,
-  paperless,
   macro,
   snippets,
   Snippet,

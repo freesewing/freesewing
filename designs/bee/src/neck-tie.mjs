@@ -31,8 +31,6 @@ export const neckTie = {
     Path,
     paths,
     options,
-    complete,
-    paperless,
     macro,
     measurements,
     utils,

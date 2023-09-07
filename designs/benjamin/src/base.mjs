@@ -9,8 +9,6 @@ function draftBenjaminBase({
   snippets,
   options,
   measurements,
-  complete,
-  paperless,
   macro,
   part,
 }) {

@@ -16,11 +16,9 @@ export const bib = {
     measurements,
     options,
     macro,
-    log,
     complete,
     snippets,
     Snippet,
-    paperless,
     store,
     units,
     part,
@@ -179,7 +177,6 @@ export const bib = {
      */
 
     // Let the user know about the bias tape and fabric requirements
-    const biasTapeLength = paths.seam.length()
     store.flag.note({
       msg: 'bob:biasTapeLength',
       replace: {

@@ -7,8 +7,6 @@ function draftBreannaBack({
   paths,
   Snippet,
   snippets,
-  complete,
-  paperless,
   macro,
   Point,
   options,
