@@ -358,7 +358,7 @@ Point.prototype.asRenderProps = function () {
 //////////////////////////////////////////////
 
 /**
- * Checks the Points coordinates, and raises a warning when they are invalid
+ * Checks the Points coordinates, and logs a warning when they are invalid
  *
  * @private
  * @return {object} this - The Point instance

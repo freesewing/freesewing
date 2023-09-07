@@ -24,8 +24,6 @@ export function Store(methods = []) {
   const logs = {
     debug: [],
     info: [],
-    // FIXME: Remove after migration to 'warn' is complete
-    warning: [],
     warn: [],
     error: [],
   }
@@ -38,10 +36,6 @@ export function Store(methods = []) {
     },
     warn: function (...data) {
       logs.warn.push(...data)
-    },
-    // FIXME: Remove after migration to 'warn' is complete
-    warning: function (...data) {
-      logs.warning.push(...data)
     },
     error: function (...data) {
       if (typeof window !== 'undefined') console.error(...data[0])
