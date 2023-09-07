@@ -39,7 +39,7 @@ const rmpleat = function (id = macroDefaults.id, { paths, store, part }) {
 /*
  * The pleat macro
  */
-const pleat = function (config, { points, paths, Path, complete, scale, store, part }) {
+const pleat = function (config, { paths, Path, log, Point, complete, scale, store, part }) {
   /*
    * Don't add a pleat when complete is false, unless force is true
    */

@@ -51,9 +51,9 @@ function flag(type, store, data) {
  * @param {id} string - The flag id to remove
  */
 function unflag(type, store, id) {
-  if (type === 'preset' && presets[preset]) {
-    id = presets[preset].id || presets[preset].msg
-    type = presets[preset].type
+  if (type === 'preset' && presets[id]) {
+    type = presets[id].type
+    id = presets[id].id || presets[id].msg
   }
   store.unset([...storeRoot, type, id])
 }

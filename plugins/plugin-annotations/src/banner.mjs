@@ -22,7 +22,7 @@ const rmbanner = function (id = macroDefaults.id, { paths, store, part }) {
     delete paths[pid]
 }
 
-const banner = function (config, { part, paths, store, log, complete }) {
+const banner = function (config, { part, paths, store, complete }) {
   /*
    * Don't add a banne when complete is false, unless force is true
    */

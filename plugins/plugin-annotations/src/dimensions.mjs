@@ -128,7 +128,7 @@ const addDimension = (config, props, type) => {
    * Draw the dimension
    */
   if (type === 'pd') {
-    if (typeof mc.d === 'undefined') mc.d = 10 * scale
+    if (typeof mc.d === 'undefined') mc.d = 10 * props.scale
     props.paths[ids.line] = mc.path
       .offset(mc.d)
       .attr('class', mc.classes.line)

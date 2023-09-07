@@ -46,10 +46,7 @@ const rmcutonfold = function (id = macroDefaults.id, { paths, store, part }) {
 /*
  * The cutonfold macro
  */
-const cutonfold = function (
-  config,
-  { points, paths, Path, complete, store, scale, log, Point, part }
-) {
+const cutonfold = function (config, { paths, Path, complete, store, scale, log, Point, part }) {
   /*
    * Don't add a cutonfold indicator when complete is false, unless force is true
    */

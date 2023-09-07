@@ -52,7 +52,7 @@ const rmsewtogether = function (id = macroDefaults.id, { paths, store, part }) {
 /*
  * The sewtogether macro
  */
-const sewtogether = function (config, { points, paths, Path, complete, sa, store, part }) {
+const sewtogether = function (config, { paths, Path, log, Point, complete, sa, store, part }) {
   /*
    * Don't add a title when complete is false, unless force is true
    */

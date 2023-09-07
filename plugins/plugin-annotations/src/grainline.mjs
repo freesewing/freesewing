@@ -44,7 +44,7 @@ const rmgrainline = function (id = macroDefaults.id, { paths, store, part }) {
 /*
  * The grainline macro
  */
-const grainline = function (config = {}, { points, paths, Path, complete, store, part }) {
+const grainline = function (config = {}, { paths, Path, Point, complete, store, log, part }) {
   /*
    * Don't add a cutonfold indicator when complete is false, unless force is true
    */

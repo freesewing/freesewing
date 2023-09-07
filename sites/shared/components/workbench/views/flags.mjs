@@ -7,7 +7,6 @@ import { useTranslation } from 'next-i18next'
 import { useState } from 'react'
 // Components
 import {
-  CloseIcon,
   ChatIcon,
   TipIcon,
   WarningIcon,
