@@ -15,6 +15,7 @@ import {
   FixmeIcon,
   ExpandIcon,
 } from 'shared/components/icons.mjs'
+import Markdown from 'react-markdown'
 
 const flagColors = {
   note: 'primary',
@@ -76,27 +77,40 @@ export const Flag = ({ type, data, handleUpdate }) => {
       </button>
     ) : null
 
-  const msg = data.replace ? mustache.render(t(data.msg), data.replace) : t(data.msg)
+  const msg = data.replace
+    ? mustache.render(t(data.msg), { ...data.replace, '&quot;': '"' })
+    : t(data.msg)
 
   return (
     <div className="w-4/5 max-w-md shrink-0">
       <div className={`relative bg-${color} bg-opacity-10`}>
         <div className="p-3 rounded-lg shadow text-base">
           <div className="flex flex-row flex-wrap sm:flex-nowrap gap-2 items-start z-10">
-            <div
-              className="first:mt-0 popout-content grow z-10"
-              dangerouslySetInnerHTML={{ __html: msg }}
-            ></div>
-            <div className="flex flex-row justify-between sm:flex-col gap-2 shrink-0 z-10 w-full sm:w-auto">
-              {button}
-              <button
-                className="w-1/2 sm:w-full btn btn-ghost btn-sm z-10 flex flex-row items-center justify-between w-full"
-                onClick={() => setHide(true)}
-              >
-                {t('flag:dismiss')}
-                <Icon className="w-5 h-6 sm:w-6 h-6" />
-              </button>
+            <div className="first:mt-0 popout-content grow z-10 md flag">
+              <Markdown>{msg}</Markdown>
             </div>
+            {button ? (
+              <div className="flex flex-row justify-between sm:flex-col gap-2 shrink-0 z-10 w-full sm:w-auto">
+                {button}
+                <button
+                  className="w-1/2 sm:w-full btn btn-ghost btn-sm z-10 flex flex-row items-center justify-between w-full"
+                  onClick={() => setHide(true)}
+                >
+                  t('flag:dismiss')
+                  <Icon className="w-5 h-6 sm:w-6 h-6" />
+                </button>
+              </div>
+            ) : (
+              <div className="flex flex-col gap-2">
+                <button
+                  className="btn btn-sm btn-circle btn-ghost"
+                  onClick={() => setHide(true)}
+                  title={t('flag:hide')}
+                >
+                  <Icon className="w-5 h-5 sm:w-6 h-6" />
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </div>

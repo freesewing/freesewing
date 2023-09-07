@@ -48,9 +48,11 @@
   }
 
   /* mdx styles */
+  .md a,
   .mdx a {
     @apply underline decoration-2 text-secondary;
   }
+  .md a:hover,
   .mdx a:hover {
     @apply decoration-4;
   }
@@ -116,6 +118,12 @@
     padding: 8px;
     font-size: 110%;
     border-bottom: 2px solid hsl(var(--b3));
+  }
+
+  /* Don't use mardown padding on paragraphs in flags */
+  .flag p {
+    padding: 0;
+    margin: 0;
   }
 
   /* FreeSewing SVG output styles */
