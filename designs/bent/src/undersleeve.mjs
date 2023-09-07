@@ -21,48 +21,54 @@ function draftBentUnderSleeve({
 
   points.anchor = points.usTip.clone()
 
+  // Seam allowance
+  if (sa) {
+    paths.sa = paths.seam.clone()
+    // Remove hem
+    paths.sa.ops.splice(-2)
+    paths.sa = paths.sa
+      .offset(sa)
+      .join(
+        new Path()
+          .move(points.usWristLeft)
+          .line(points.usWristRight)
+          .offset(sa * 3)
+      )
+      .close()
+      .attr('class', 'fabric sa')
+  }
+
+  /*
+   * Annotatinos
+   */
+
+  // Cutlist
   store.cutlist.addCut()
 
-  // Complete?
-  if (complete) {
-    snippets.logo = new Snippet('logo', points.elbowCenter)
-    macro('title', {
-      at: points.armCenter,
-      nr: 4,
-      title: 'undersleeve',
-    })
+  // Logo
+  snippets.logo = new Snippet('logo', points.elbowCenter)
 
-    if (sa) {
-      paths.sa = paths.seam.clone()
-      // Remove hem
-      paths.sa.ops.splice(-2)
-      paths.sa = paths.sa
-        .offset(sa)
-        .join(
-          new Path()
-            .move(points.usWristLeft)
-            .line(points.usWristRight)
-            .offset(sa * 3)
-        )
-        .close()
-        .attr('class', 'fabric sa')
-    }
-  }
+  // Title
+  macro('title', {
+    at: points.armCenter,
+    nr: 4,
+    title: 'undersleeve',
+  })
 
-  // Paperless?
-  if (paperless) {
-    dimensions(part, 'us')
-    macro('hd', {
-      from: points.usLeftEdge,
-      to: points.usTip,
-      y: points.usTip.y - sa - 15,
-    })
-    macro('vd', {
-      from: points.tsRightEdge,
-      to: points.usTip,
-      x: points.tsRightEdge.x + sa + 15,
-    })
-  }
+  // Dimensions
+  dimensions(part, 'us')
+  macro('hd', {
+    id: 'wArmholeInnerSleeveCapTip',
+    from: points.usLeftEdge,
+    to: points.usTip,
+    y: points.usTip.y - sa - 15,
+  })
+  macro('vd', {
+    id: 'hArmholeInnerSleeveCapTip',
+    from: points.tsRightEdge,
+    to: points.usTip,
+    x: points.tsRightEdge.x + sa + 15,
+  })
 
   return part
 }
