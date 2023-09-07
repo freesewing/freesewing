@@ -96,7 +96,7 @@ export const Flag = ({ type, data, handleUpdate }) => {
                   className="w-1/2 sm:w-full btn btn-ghost btn-sm z-10 flex flex-row items-center justify-between w-full"
                   onClick={() => setHide(true)}
                 >
-                  t('flag:dismiss')
+                  {t('flag:dismiss')}
                   <Icon className="w-5 h-6 sm:w-6 h-6" />
                 </button>
               </div>
