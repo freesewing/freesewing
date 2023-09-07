@@ -207,12 +207,13 @@ export const base = {
     store.set('s3ArmholeMax', points.shoulder.dy(points.frontArmholePitch) / 4)
     // Let's leave the actual splitting the curves for the front/back parts
 
-    // Complete pattern?
-    if (complete) {
-      points.title = new Point(points.armholePitch.x / 2, points.armholePitch.y)
-      points.logo = points.title.shift(-90, 100)
-      snippets.logo = new Snippet('logo', points.logo)
-    }
+    /*
+     * Annotations
+     */
+    points.title = new Point(points.armholePitch.x / 2, points.armholePitch.y)
+    macro('title', { nr: 0, title: 'base' })
+    points.logo = points.title.shift(-90, 100)
+    snippets.logo = new Snippet('logo', points.logo)
 
     return part
   },
