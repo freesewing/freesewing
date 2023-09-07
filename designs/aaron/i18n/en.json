@@ -6,6 +6,8 @@
     "neckBinding": "Neck opening knit binding"
   },
   "s": {
+    "cutArmBinding": "Not shown: the <b>Arm opening knit binding</b>, two strips of fabric {{ width }} wide and {{ length }} long <small>(this includes seam allowance)</small>",
+    "cutNeckBinding": "Not shown: the <b>Neck opening knit binding</b>, a strip of fabric {{ width }} wide and {{ length }} long <small>(this includes seam allowance)</small>",
     "cutOneStripToFinishTheNeckOpening": "Cut one strip to finish the neck opening",
     "cutTwoStripsToFinishTheArmholes": "Cut two strips to finish the armholes",
     "length": "Length",

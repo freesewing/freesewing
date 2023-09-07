@@ -3,15 +3,48 @@ import { back } from './back.mjs'
 export const armBinding = {
   name: 'aaron.armBinding',
   after: back,
-  draft: ({ store, sa, Point, points, Path, paths, Snippet, snippets, macro, expand, part }) => {
-    if (!expand) return part.hide()
-
+  draft: ({
+    store,
+    sa,
+    Point,
+    points,
+    Path,
+    paths,
+    Snippet,
+    snippets,
+    macro,
+    expand,
+    units,
+    part,
+  }) => {
     const w = store.get('bindingWidth')
-    const h = store.get('armBindingLength')
+    const l = store.get('armBindingLength')
+
+    if (!expand) {
+      // Expand is on, do not draw the part but flag this to the user
+      store.flag.note({
+        msg: `aaron:cutArmBinding`,
+        replace: {
+          width: units(w),
+          length: units(l),
+        },
+        suggest: {
+          text: 'flag:show',
+          icon: 'expand',
+          update: {
+            settings: ['expand', 1],
+          },
+        },
+      })
+      // Also hint about expand
+      store.flag.preset('expand')
+
+      return part.hide()
+    }
 
     points.topLeft = new Point(0, 0)
-    points.bottomLeft = new Point(0, h)
-    points.bottomRight = new Point(w, h)
+    points.bottomLeft = new Point(0, l)
+    points.bottomRight = new Point(w, l)
     points.topRight = new Point(w, 0)
 
     paths.seam = new Path()
@@ -30,7 +63,7 @@ export const armBinding = {
     store.cutlist.addCut({ cut: 2 })
 
     // Add title
-    points.title = new Point(w / 2, h / 8)
+    points.title = new Point(w / 2, l / 8)
     macro('title', {
       at: points.title,
       nr: 4,
