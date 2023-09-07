@@ -592,7 +592,7 @@ function titanFront({
     }
   }
 
-  if (adjustment_warn) {
+  if (adjustment_warning) {
     log.warn(
       'We were not able to generate the Front pattern piece correctly. ' +
         'Manual fitting and alteration of this and other pattern pieces ' +
