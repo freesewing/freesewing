@@ -54,6 +54,7 @@ charlie:
     '@freesewing/snapseries': *freesewing
 core:
   _:
+    '@freesewing/plugin-bundle': *freesewing
     'bezier-js': '6.1.4'
     'bin-pack-with-constraints': '1.0.1'
     'hooks': '0.3.2'

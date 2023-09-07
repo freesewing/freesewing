@@ -25,7 +25,7 @@ const getPattern = (settings = {}, draft = false) => {
           return part
         },
   }
-  const Pattern = new Design({ parts: [part] })
+  const Pattern = new Design({ parts: [part], noCorePlugins: true })
 
   return new Pattern(settings)
 }

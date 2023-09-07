@@ -1,4 +1,5 @@
 import { Hooks } from '../hooks.mjs'
+import { pluginBundle as corePlugins } from '@freesewing/plugin-bundle'
 
 /**
  * Get the name of the given plugin config
@@ -22,6 +23,8 @@ export function PatternPlugins(pattern) {
   this.hooks = new Hooks()
   this.macros = {}
   this.__storeMethods = new Set()
+  // Load core plugins unless the design explicitly asked not to
+  if (!pattern.designConfig.noCorePlugins) this.use(corePlugins)
 }
 
 /**
