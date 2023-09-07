@@ -1,7 +1,7 @@
 {
-  "name": "@freesewing/plugin-bundle",
+  "name": "@freesewing/core-plugins",
   "version": "3.0.0-alpha.10",
-  "description": "An umbrella package of 8 essential FreeSewing build-time plugins",
+  "description": "An umbrella package of essential plugins that are bundled with FreeSewing's core library",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
@@ -15,7 +15,6 @@
   },
   "keywords": [
     "freesewing",
-    "bundle",
     "plugin",
     "sewing pattern",
     "sewing",

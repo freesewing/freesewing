@@ -5,7 +5,7 @@ customBuild:
   - i18n
   - new-design
   - prettier-config
-  - plugin-bundle
+  - core-plugins
   - react-components
   - rehype-jargon
   - rehype-highlight-lines
