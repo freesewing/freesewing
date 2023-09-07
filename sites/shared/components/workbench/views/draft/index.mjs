@@ -1,8 +1,9 @@
 import { PanZoomPattern as ShowPattern } from 'shared/components/workbench/pan-zoom-pattern.mjs'
 import { DraftMenu, ns as menuNs } from './menu.mjs'
-import { PatternWithMenu, ns as wrapperNs } from '../pattern-with-menu.mjs'
+import { PatternWithMenu } from '../pattern-with-menu.mjs'
+import { DraftHeader, ns as headerNs } from './header.mjs'
 
-export const ns = [...menuNs, ...wrapperNs]
+export const ns = [...menuNs, ...headerNs]
 
 export const DraftView = ({
   design,
@@ -47,6 +48,8 @@ export const DraftView = ({
         design,
         pattern: output,
         setSettings,
+        Header: DraftHeader,
+        flags: pattern.setStores?.[0]?.plugins?.['plugin-annotations']?.flags,
         menu: (
           <DraftMenu
             {...{

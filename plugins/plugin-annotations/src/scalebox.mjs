@@ -71,7 +71,10 @@ const removeScaleAnnotation = function (id = false, { paths, points, store, part
 /*
  * The scalebox macro
  */
-const scalebox = function (config, { store, points, paths, scale, Point, Path, complete, part }) {
+const scalebox = function (
+  config,
+  { store, points, paths, scale, Point, Path, complete, log, part }
+) {
   /*
    * Don't add a title when complete is false, unless force is true
    */
@@ -103,7 +106,7 @@ const scalebox = function (config, { store, points, paths, scale, Point, Path, c
    */
   if (!mc.at || typeof mc.at.attr !== 'function') {
     log.warn(`Scalebox macro called without a valid at point. Using (0,0) for at.`)
-    mc.from = new Point(0, 0)
+    mc.at = new Point(0, 0)
   }
 
   /*
@@ -262,7 +265,10 @@ const scalebox = function (config, { store, points, paths, scale, Point, Path, c
 /*
  * The miniscale macro
  */
-const miniscale = function (config, { points, paths, scale, Point, Path, part, complete, store }) {
+const miniscale = function (
+  config,
+  { points, paths, scale, Point, Path, part, complete, log, store }
+) {
   /*
    * Don't add a title when complete is false, unless force is true
    */
@@ -293,7 +299,7 @@ const miniscale = function (config, { points, paths, scale, Point, Path, part, c
    */
   if (!mc.at || typeof mc.at.attr !== 'function') {
     log.warn(`Scalebox macro called without a valid at point. Using (0,0) for at.`)
-    mc.from = new Point(0, 0)
+    mc.at = new Point(0, 0)
   }
 
   /*

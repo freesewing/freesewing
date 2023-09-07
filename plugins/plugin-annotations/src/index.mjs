@@ -19,6 +19,8 @@ import { dimensionsMacros, dimensionsDefs } from './dimensions.mjs'
 import { grainlineMacros, grainlineDefs } from './grainline.mjs'
 import { pleatMacros, pleatDefs } from './pleat.mjs'
 import { sewtogetherMacros, sewtogetherDefs } from './sewtogether.mjs'
+// Only stores
+import { flagStores } from './flag.mjs'
 
 export const plugin = {
   name,
@@ -59,7 +61,7 @@ export const plugin = {
     ...sewtogetherMacros,
     ...titleMacros,
   },
-  store: [...cutlistStores],
+  store: [...cutlistStores, ...flagStores],
 }
 
 export const annotationsPlugin = plugin

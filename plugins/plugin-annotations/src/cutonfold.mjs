@@ -12,6 +12,7 @@ const macroDefaults = {
   grainline: false,
   margin: 0.05,
   offset: 15,
+  reverse: false,
 }
 
 // Export defs
@@ -90,15 +91,13 @@ const cutonfold = function (config, { points, paths, Path, complete, store, scal
   /*
    * Draw the path
    */
-  const from = mc.from.shiftFractionTowards(mc.to, mc.margin / 100)
-  const to = mc.to.shiftFractionTowards(mc.from, mc.margin / 100)
+  const from = mc.from.shiftFractionTowards(mc.to, mc.margin)
+  const to = mc.to.shiftFractionTowards(mc.from, mc.margin)
   const via1 = from.shiftTowards(mc.from, mc.offset * scale).rotate(-90, from)
   const via2 = to.shiftTowards(mc.to, mc.offset * scale).rotate(90, to)
-  paths[ids.line] = new Path()
-    .move(from)
-    .line(via1)
-    .line(via2)
-    .line(to)
+  paths[ids.line] = new Path().move(from).line(via1).line(via2).line(to)
+  if (mc.reverse) paths[ids.line] = paths[ids.line].reverse()
+  paths[ids.line] = paths[ids.line]
     .attr('class', mc.classes.line)
     .attr('marker-start', 'url(#cutonfoldFrom)')
     .attr('marker-end', 'url(#cutonfoldTo)')

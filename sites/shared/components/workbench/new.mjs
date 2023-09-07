@@ -29,6 +29,7 @@ import { MeasiesView, ns as measiesNs } from 'shared/components/workbench/views/
 export const ns = [
   'account',
   'workbench',
+  'flag',
   ...draftNs,
   ...saveNs,
   ...printNs,

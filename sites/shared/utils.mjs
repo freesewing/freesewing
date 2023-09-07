@@ -259,7 +259,7 @@ export const nsMerge = (...args) => {
     if (typeof arg === 'string') ns.add(arg)
     else if (Array.isArray(arg)) {
       for (const el of nsMerge(...arg)) ns.add(el)
-    } else console.log('Unexpected namespect type:', { arg })
+    }
   }
 
   return [...ns]

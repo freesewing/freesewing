@@ -74,7 +74,7 @@ const ZoomButtons = ({ t, zoomFunctions, zoomed }) => {
 
 const Spacer = () => <span className="opacity-50">|</span>
 
-export const ViewHeader = ({ update, settings, ui, control, account, design, setSettings }) => {
+export const DraftHeader = ({ update, settings, ui, control, account, design, setSettings }) => {
   const { t, i18n } = useTranslation(ns)
   const { zoomFunctions, zoomed } = useContext(PanZoomContext)
   const backend = useBackend()

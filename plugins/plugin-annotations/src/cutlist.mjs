@@ -30,7 +30,11 @@ export const cutlistHooks = {
  * @param {boolean} so.ignoreOnFold       should these cutting instructions ignore any cutOnFold information set by the part
  */
 function addCut(store, so = {}) {
-  const { cut = 2, material = 'fabric', identical = false, bias = false, ignoreOnFold = false } = so
+  const { cut = 2, identical = false, bias = false, ignoreOnFold = false } = so
+  // Make 'from' an alias for material
+  let { material = 'fabric' } = so
+  if (so.from) material = so.from
+
   const partName = store.get('activePart')
   if (cut === false) {
     if (material === false) store.unset(['cutlist', partName, 'materials'])

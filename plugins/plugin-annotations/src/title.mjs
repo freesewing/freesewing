@@ -199,6 +199,7 @@ const addTitleMacro = function (
       .shift(-90, shift)
       .attr('data-text', `(${store.data.for})`)
       .attr('data-text-class', `${mc.classes.for} ${mc.align}`)
+      .attr('data-text-transform', transform)
     shift += mc.dy
   } else delete ids.for
 
@@ -217,6 +218,7 @@ const addTitleMacro = function (
       })
     )
     .attr('data-text-class', `${mc.classes.date} ${mc.align}`)
+    .attr('data-text-transform', transform)
 
   /*
    * Store all IDs in the store so we can remove this macro with rmtitle
