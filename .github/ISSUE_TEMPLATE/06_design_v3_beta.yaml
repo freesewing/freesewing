@@ -65,8 +65,8 @@ body:
     attributes:
       label: Issue content
       description: You can create the issue without changing this
-      value: "
-- [ ] Ensure pluginBundle is not used/loaded (the `@freesewing/plugin-bundle package is replaced with @freesewing/core-plugins and these plugins are auto-loaded by the core library)
+      value: | "
+- [ ] Ensure pluginBundle is not used/loaded (the `@freesewing/plugin-bundle` package is replaced with `@freesewing/core-plugins` and these plugins are auto-loaded by the core library)
 - [ ] Ensure all `log.warning` calls are replaced with `log.warn` (`log.warning` has been replaced with `log.warn` to be consistent with log levels in other tools/software)
 - [ ] Do not wrap snippets or annotation macros behind a `if (complete)` block (all annotation macros will check the complete settings, snippets won't be rendered when complete is false. The only time you want to wrap something in a complete check is if you are adding additional paths to the patter (helplines and so on)
  - [ ] Do not put dimensions behind a `if (paperless)` block (all dimensions won't render when paperless is false)
