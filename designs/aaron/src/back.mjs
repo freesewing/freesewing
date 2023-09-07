@@ -61,6 +61,10 @@ export const back = {
     /*
      * Annotations
      */
+
+    // Set anchor point for grid
+    points.gridAnchor = points.cfHem
+
     // cutonfold
     macro('cutonfold', {
       from: points.cfNeck,

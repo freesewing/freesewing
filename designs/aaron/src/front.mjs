@@ -173,6 +173,10 @@ export const front = {
     /*
      * Annotations
      */
+
+    // Set anchor point for grid
+    points.gridAnchor = points.cfHem
+
     // Provide cutting instructions
     store.cutlist.addCut({ cut: 1, onFold: 1 })
 
