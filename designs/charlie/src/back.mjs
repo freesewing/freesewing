@@ -161,7 +161,7 @@ function draftCharlieBack({
   let inseamDesc = 'Charlie back inseam is longer than front'
   if (inseamDiff > 0) inseamDesc = 'Charlie front inseam is longer than back'
   if (Math.abs(inseamDiff) > 1) {
-    log.warning(inseamDesc + ' by ' + utils.round(Math.abs(inseamDiff)) + ' mm')
+    log.warn(inseamDesc + ' by ' + utils.round(Math.abs(inseamDiff)) + ' mm')
     log.debug('Charlie frontInseam: ' + utils.round(frontInseamLength).toString())
     log.debug('Charlie backInseam: ' + utils.round(backInseamLength).toString())
   }
@@ -171,7 +171,7 @@ function draftCharlieBack({
   let outseamDesc = 'Charlie back outseam is longer than front'
   if (outseamDiff > 0) outseamDesc = 'Charlie front outseam is longer than back'
   if (Math.abs(outseamDiff) > 1) {
-    log.warning(outseamDesc + ' by ' + utils.round(Math.abs(outseamDiff)) + ' mm')
+    log.warn(outseamDesc + ' by ' + utils.round(Math.abs(outseamDiff)) + ' mm')
     log.debug('Charlie frontOutseam: ' + utils.round(frontOutseamLength).toString())
     log.debug('Charlie backOutseam: ' + utils.round(backOutseamLength).toString())
   }

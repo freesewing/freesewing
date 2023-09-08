@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { waistEase } from './shape.mjs'
 
 function penelopeWaistband({
@@ -94,6 +93,5 @@ export const waistband = {
     waistBand: { bool: true, menu: 'style' },
     waistBandWidth: { pct: 10, min: 5, max: 20, menu: 'style' },
   },
-  plugins: [pluginBundle],
   draft: penelopeWaistband,
 }

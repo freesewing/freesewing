@@ -13,6 +13,7 @@ const OnlySettingInput = (props) => {
 
 export const inputs = {
   complete: ListInput,
+  expand: ListInput,
   locale: ListInput,
   margin: MmInput,
   only: OnlySettingInput,

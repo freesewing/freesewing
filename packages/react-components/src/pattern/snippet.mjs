@@ -2,8 +2,9 @@
 import React from 'react'
 import { getProps } from './utils.mjs'
 
-export const Snippet = ({ snippet }) => {
+export const Snippet = ({ snippet, settings }) => {
   if (!snippet?.anchor || !snippet.def) return null
+  if (!settings[0].complete && !snippet.attributes.list?.['data-force']?.[0]) return null
   const snippetProps = {
     xlinkHref: '#' + snippet.def,
     x: snippet.anchor.x,

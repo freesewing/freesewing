@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { pctBasedOn } from '@freesewing/core'
 
 function draftHolmesVisor({
@@ -126,6 +125,5 @@ export const visor = {
     visorWidth: { pct: 5, min: 1, max: 17, snap: 5, ...pctBasedOn('head'), menu: 'style' },
     visorLength: { pct: 100, min: 80, max: 150, menu: 'advanced' },
   },
-  plugins: [pluginBundle],
   draft: draftHolmesVisor,
 }

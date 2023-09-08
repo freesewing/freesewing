@@ -89,7 +89,7 @@ PatternRenderer.prototype.__pack = function () {
   const { settings, setStores, activeSet } = this.pattern
   for (const set in settings) {
     if (setStores[set].logs.error.length > 0) {
-      setStores[set].log.warning(`One or more errors occured. Not packing pattern parts`)
+      setStores[set].log.warn(`One or more errors occured. Not packing pattern parts`)
       return this
     }
   }

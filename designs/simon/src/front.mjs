@@ -34,7 +34,7 @@ function simonFront({
     if (i.indexOf('otch')) delete snippets[i]
   }
 
-  macro('cutonfold', false)
+  macro('rmcutonfold')
 
   // Populare store with data we need
   calculateReduction(part)

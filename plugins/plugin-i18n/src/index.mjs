@@ -10,10 +10,10 @@ export const plugin = {
       else {
         const msg =
           "No translation method or object was passed to the i18n plugin. This plugin won't do anything without that"
-        if (pattern?.store?.log?.warning) {
+        if (pattern?.store?.log?.warn) {
           if (!pattern.store.get(['plugins', 'plugin-i18n', 'missingMethodWarning'])) {
             pattern.store.set(['plugins', 'plugin-i18n', 'missingMethodWarning'], true)
-            pattern.store.log.warning(msg)
+            pattern.store.log.warn(msg)
           }
         } else console.log(msg)
 

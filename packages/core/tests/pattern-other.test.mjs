@@ -82,8 +82,8 @@ describe('Pattern', () => {
       draft: ({ part }) => part,
     }
     const plugin = { name: 'test' }
-    const design = new Design({ parts: [test] })
-    const pattern = new design({ only: ['you'] })
+    const design = new Design({ parts: [test], noCorePlugins: true })
+    const pattern = new design({ only: ['you'], noCorePlugins: true })
     pattern.use(plugin)
     pattern.use(plugin)
     pattern.use({ plugin })

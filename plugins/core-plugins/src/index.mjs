@@ -1,5 +1,4 @@
 import { annotationsPlugin } from '../../plugin-annotations/src/index.mjs'
-
 import { measurementsPlugin } from '../../plugin-measurements/src/index.mjs'
 import { mirrorPlugin } from '../../plugin-mirror/src/index.mjs'
 import { roundPlugin } from '../../plugin-round/src/index.mjs'
@@ -51,6 +50,5 @@ export const plugin = {
   store,
 }
 
-// More specifically named exports
-export const bundlePlugin = plugin
-export const pluginBundle = plugin
+// Specific named export
+export const corePlugins = plugin

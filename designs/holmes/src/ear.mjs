@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function draftHolmesEar({
   Point,
   points,
@@ -104,6 +102,5 @@ export const ear = {
     earWidth: { pct: 100, min: 80, max: 150, menu: 'style' },
     buttonhole: { bool: false, menu: 'style' },
   },
-  plugins: [pluginBundle],
   draft: draftHolmesEar,
 }

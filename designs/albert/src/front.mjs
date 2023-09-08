@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 export const front = {
   name: 'albert.front',
   measurements: ['chest', 'hpsToWaistBack', 'waist', 'waistToKnee', 'hips'],
@@ -9,7 +7,6 @@ export const front = {
     bibLength: { pct: 75, min: 0, max: 90, menu: 'style' },
     lengthBonus: { pct: 0, min: -20, max: 25, menu: 'style' },
   },
-  plugins: pluginBundle,
   draft: ({
     options,
     measurements,
@@ -19,9 +16,7 @@ export const front = {
     paths,
     Snippet,
     snippets,
-    complete,
     sa,
-    paperless,
     macro,
     store,
     part,
@@ -74,13 +69,15 @@ export const front = {
     points.pocketLeftBottom = points.pocketLeftTop.shift(270, pocketSize)
     points.pocketRightBottom = points.pocketLeftBottom.shift(0, pocketSize)
 
-    points.crossBoxTo1 = new Point(
-      points.topRightHem.x - strapWidth,
-      points.topRightHem.y + hemWidth
+    points.crossBox1TopLeft = new Point(points.topRightHem.x - strapWidth, points.topRightHem.y)
+    points.crossBox1BottomRight = new Point(
+      points.crossBox1TopLeft.x + strapWidth,
+      points.crossBox1TopLeft.y + strapWidth
     )
-    points.crossBoxTo2 = new Point(
-      points.topRightBack.x - strapWidth,
-      points.topRightBack.y + hemWidth
+    points.crossBox2TopLeft = points.topRightBack.copy().shift(180, strapWidth)
+    points.crossBox2BottomRight = new Point(
+      points.crossBox2TopLeft.x + strapWidth,
+      points.crossBox2TopLeft.y + strapWidth
     )
 
     paths.rightHem = new Path()
@@ -126,83 +123,102 @@ export const front = {
       .attr('data-text', 'hem')
       .attr('data-text-class', 'text-xs center')
 
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+
+    /*
+     * Annotations
+     */
+
+    // Cut list
+    store.cutlist.addCut({ cut: 1, from: 'fabric' })
+
+    // Cut on fold
     macro('cutonfold', {
-      from: points.topCOF,
       to: points.bottomCOF,
+      from: points.topCOF,
+      reverse: true,
     })
 
-    // Complete?
-    if (complete) {
-      points.logo = points.topRightBack.shiftFractionTowards(points.pocketRightBottom, 0.5)
-      snippets.logo = new Snippet('logo', points.logo)
-      points.title = points.logo.shift(-90, 100)
-      macro('title', {
-        nr: 1,
-        at: points.title,
-        title: 'Front',
-      })
+    // Logo
+    points.logo = points.topRightBack.shiftFractionTowards(points.pocketRightBottom, 0.5)
+    snippets.logo = new Snippet('logo', points.logo)
 
-      points.scaleboxAnchor = points.pocketLeftBottom.shiftFractionTowards(points.bottomRight, 0.5)
-      macro('scalebox', { at: points.scaleboxAnchor })
+    // Title
+    points.title = points.logo.shift(-90, 100)
+    macro('title', {
+      nr: 1,
+      at: points.title,
+      title: 'front',
+    })
 
-      macro('crossbox', {
-        from: points.topRightHem,
-        to: points.crossBoxTo1,
-      })
-      macro('crossbox', {
-        from: points.topRightBack,
-        to: points.crossBoxTo2,
-        text: 'attachment',
-      })
+    // Scalebox
+    points.scaleboxAnchor = points.pocketLeftBottom.shiftFractionTowards(points.bottomRight, 0.5)
+    macro('scalebox', { at: points.scaleboxAnchor })
 
-      if (sa) {
-        paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-      }
-    }
+    // Crossbox 1
+    macro('crossbox', {
+      topLeft: points.crossBox1TopLeft,
+      bottomRight: points.crossBox1BottomRight,
+      id: 'crossbox1',
+    })
 
-    // Paperless?
-    if (paperless) {
-      macro('hd', {
-        from: points.bottomLeft,
-        to: points.bottomRight,
-        y: points.bottomLeft.y + sa + 15,
-      })
-      macro('hd', {
-        from: points.topLeft,
-        to: points.topRight,
-        y: points.topLeft.y - sa - 15,
-      })
-      macro('vd', {
-        from: points.bottomLeft,
-        to: points.topLeft,
-        x: points.topLeft.x - sa - 15,
-      })
-      macro('vd', {
-        from: points.bottomRight,
-        to: points.topRightBack,
-        x: points.topRightBack.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.topRightBack,
-        to: points.topRight,
-        x: points.topRightBack.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.topLeft,
-        to: points.topLeftHem,
-        x: points.topLeftHem.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.topLeftHem,
-        to: points.bottomLeftHem,
-        x: points.topLeftHem.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.bottomLeftHem,
-        to: points.bottomLeft,
-        x: points.bottomLeftHem.x + sa + 15,
-      })
-    }
+    // Crossbox 2
+    macro('crossbox', {
+      topLeft: points.crossBox2TopLeft,
+      bottomRight: points.crossBox2BottomRight,
+      id: 'crossbox2',
+      text: 'albert:attachment',
+    })
+
+    // Dimensions
+    macro('hd', {
+      from: points.bottomLeft,
+      to: points.bottomRight,
+      y: points.bottomLeft.y + sa + 15,
+      id: 'wBottom',
+    })
+    macro('hd', {
+      from: points.topLeft,
+      to: points.topRight,
+      y: points.topLeft.y - sa - 15,
+      id: 'wTop',
+    })
+    macro('vd', {
+      from: points.bottomLeft,
+      to: points.topLeft,
+      x: points.topLeft.x - 30,
+      id: 'hLeft',
+    })
+    macro('vd', {
+      from: points.bottomRight,
+      to: points.topRightBack,
+      x: points.topRightBack.x + sa + 15,
+      id: 'hRightBottom',
+    })
+    macro('vd', {
+      from: points.topRightBack,
+      to: points.topRight,
+      x: points.topRightBack.x + sa + 15,
+      id: 'hRightTop',
+    })
+    macro('vd', {
+      from: points.topLeftHem,
+      to: points.topLeft,
+      x: points.topLeftHem.x - 15,
+      id: 'foldoverTop',
+    })
+    macro('vd', {
+      from: points.bottomLeftHem,
+      to: points.topLeftHem,
+      x: points.topLeftHem.x - 15,
+      id: 'hLeftToFoldover',
+    })
+    macro('vd', {
+      from: points.bottomLeft,
+      to: points.bottomLeftHem,
+      x: points.bottomLeftHem.x + sa + 15,
+      id: 'hBottomHem',
+    })
 
     return part
   },

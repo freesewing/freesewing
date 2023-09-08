@@ -2,7 +2,6 @@ _types:
   design:
     peer:
       '@freesewing/core': &freesewing '{{version}}'
-      '@freesewing/plugin-bundle': *freesewing
     dev:
       'mocha': &mocha '10.2.0'
       'chai': &chai '4.3.7'
@@ -54,6 +53,7 @@ charlie:
     '@freesewing/snapseries': *freesewing
 core:
   _:
+    '@freesewing/core-plugins': *freesewing
     'bezier-js': '6.1.4'
     'bin-pack-with-constraints': '1.0.1'
     'hooks': '0.3.2'
@@ -114,7 +114,7 @@ paco:
   peer:
     '@freesewing/titan': *freesewing
     '@freesewing/snapseries': *freesewing
-plugin-bundle:
+core-plugins:
   dev:
     '@freesewing/plugin-annotations': *freesewing
     '@freesewing/plugin-mirror': *freesewing
@@ -324,7 +324,6 @@ org:
     'react-dropzone': '14.2.3'
     'react-hotkeys-hook': *reactHotkeysHook
     'react-instantsearch-dom': *reactInstantsearchDom
-    'react-hot-toast': 2.4.1
     'react-markdown': *reactMarkdown
     'react-swipeable': *reactSwipeable
     'react-timeago': *reactTimeago

@@ -21,6 +21,7 @@ import {
   BookmarkIcon,
   ZoomInIcon,
   ZoomOutIcon,
+  ExpandIcon,
 } from 'shared/components/icons.mjs'
 import { shownHeaderSelector } from 'shared/components/wrappers/header.mjs'
 
@@ -73,7 +74,7 @@ const ZoomButtons = ({ t, zoomFunctions, zoomed }) => {
 
 const Spacer = () => <span className="opacity-50">|</span>
 
-export const ViewHeader = ({ update, settings, ui, control, account, design, setSettings }) => {
+export const DraftHeader = ({ update, settings, ui, control, account, design, setSettings }) => {
   const { t, i18n } = useTranslation(ns)
   const { zoomFunctions, zoomed } = useContext(PanZoomContext)
   const backend = useBackend()
@@ -157,6 +158,17 @@ export const ViewHeader = ({ update, settings, ui, control, account, design, set
               )
             }
             title={t('core-settings:complete.t')}
+          />
+          <IconButton
+            Icon={ExpandIcon}
+            dflt={settings.expand}
+            onClick={() =>
+              update.settings(
+                ['expand'],
+                typeof settings.expand === 'undefined' ? 1 : settings.expand ? 0 : 1
+              )
+            }
+            title={t('core-settings:expand.t')}
           />
           <IconButton
             Icon={

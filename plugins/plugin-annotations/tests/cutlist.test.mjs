@@ -16,7 +16,7 @@ describe('Cutlist Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ parts: [part] })
+    const Test = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
     expect(methods.addCut).to.be.a('function')
@@ -36,7 +36,7 @@ describe('Cutlist Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ parts: [part] })
+    const Test = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
     expect(pattern.setStores[0].cutlist.example_part.materials.fabric).to.have.lengthOf(1)
@@ -58,7 +58,7 @@ describe('Cutlist Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ parts: [part] })
+    const Test = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
     expect(pattern.setStores[0].cutlist.example_part.materials.lining).to.have.lengthOf(1)
@@ -82,7 +82,7 @@ describe('Cutlist Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ parts: [part] })
+    const Test = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
     expect(pattern.setStores[0].cutlist.example_part.materials.lining).to.be.undefined
@@ -100,7 +100,7 @@ describe('Cutlist Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ parts: [part] })
+    const Test = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
     expect(pattern.setStores[0].cutlist.example_part.materials.lining).to.be.undefined
@@ -119,7 +119,7 @@ describe('Cutlist Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ parts: [part] })
+    const Test = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
     expect(pattern.setStores[0].cutlist.example_part.materials).to.be.undefined
@@ -135,7 +135,7 @@ describe('Cutlist Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ parts: [part] })
+    const Test = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
     expect(pattern.setStores[0].cutlist.example_part.grain).to.equal(45)
@@ -152,7 +152,7 @@ describe('Cutlist Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ parts: [part] })
+    const Test = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
     expect(pattern.setStores[0].cutlist.example_part.grain).to.be.undefined
@@ -172,7 +172,7 @@ describe('Cutlist Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ parts: [part] })
+    const Test = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
     expect(pattern.setStores[0].cutlist.example_part.cutOnFold[0].x).to.equal(2)
@@ -196,7 +196,7 @@ describe('Cutlist Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ parts: [part] })
+    const Test = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
     expect(pattern.setStores[0].cutlist.example_part.cutOnFold).to.be.undefined

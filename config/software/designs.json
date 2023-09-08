@@ -4,112 +4,128 @@
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 2,
-    "tags": ["tops", "underwear"]
+    "tags": ["tops", "underwear"],
+    "techniques": ["hem", "stretch", "knitBinding", "curvedSeam"]
   },
   "albert": {
     "description": "A FreeSewing pattern for an apron",
     "code": "Wouter Van Wageningen",
     "design": "Wouter Van Wageningen",
     "difficulty": 2,
-    "tags": ["accessories"]
+    "tags": ["accessories"],
+    "techniques": ["hem", "knitBinding", "curvedSeam", "pocket"]
   },
   "bee": {
     "description": "A FreeSewing pattern for a bikini top",
     "code": "bobgeorgethe3rd",
     "design": "PrudenceRabbit",
     "difficulty": 3,
-    "tags": ["tops", "swimwear"]
+    "tags": ["tops", "swimwear"],
+    "techniques": ["hem", "stretch", "curvedSeam", "precision"]
   },
   "bella": {
     "description": "A FreeSewing pattern for a womenswear bodice block",
     "code": "Joost De Cock",
     "design": ["Bella Incognito", "Joost De Cock"],
     "difficulty": 3,
-    "tags": ["blocks", "tops"]
+    "tags": ["blocks", "tops"],
+    "techniques": ["dart", "block"]
   },
   "benjamin": {
     "description": "A FreeSewing pattern for a bow tie",
     "code": "Wouter Van Wageningen",
     "design": "Wouter Van Wageningen",
     "difficulty": 3,
-    "tags": ["accessories"]
+    "tags": ["accessories"],
+    "techniques": ["precision", "interfacing"]
   },
   "bent": {
     "description": "A FreeSewing pattern for a menswear body block with a two-part sleeve",
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 3,
-    "tags": ["blocks", "tops"]
+    "tags": ["blocks", "tops"],
+    "techniques": []
   },
   "bob": {
     "description": "A FreeSewing pattern for a bib",
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 3,
-    "tags": ["accessories", "infants"]
+    "tags": ["accessories", "infants"],
+    "techniques": []
   },
   "breanna": {
     "description": "A FreeSewing pattern for a basic body block for womenswear",
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 3,
-    "tags": ["blocks", "tops"]
+    "tags": ["blocks", "tops"],
+    "techniques": []
   },
   "brian": {
     "description": "A FreeSewing pattern for a basic body block for menswear",
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 3,
-    "tags": ["blocks", "tops"]
+    "tags": ["blocks", "tops"],
+    "techniques": []
   },
   "bruce": {
     "description": "A FreeSewing pattern for boxer briefs",
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 3,
-    "tags": ["tops", "underwear"]
+    "tags": ["tops", "underwear"],
+    "techniques": []
   },
   "carlita": {
     "description": "A FreeSewing pattern for Sherlock Holmes cosplay; Or just a nice long coat",
     "code": "Joost De Cock",
     "design": ["Anneke Caramin", "Joost De Cock"],
     "difficulty": 5,
-    "tags": ["tops", "coats"]
+    "tags": ["tops", "coats"],
+    "techniques": []
   },
   "carlton": {
     "description": "A FreeSewing pattern for Sherlock Holmes cosplay; Or just a nice long coat",
     "code": "Joost De Cock",
     "design": ["Anneke Caramin", "Joost De Cock"],
     "difficulty": 5,
-    "tags": ["tops", "coats"]
+    "tags": ["tops", "coats"],
+    "techniques": []
   },
   "cathrin": {
     "description": "A FreeSewing pattern for a underbust corset / waist trainer",
     "code": "Joost De Cock",
     "design": ["Cathrin Åhlén", "Joost De Cock"],
     "difficulty": 4,
-    "tags": ["tops", "underwear"]
+    "tags": ["tops", "underwear"],
+    "techniques": []
   },
   "charlie": {
     "description": "A FreeSewing pattern for chino trousers",
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 3,
-    "tags": ["bottoms", "trousers"]
+    "tags": ["bottoms", "trousers"],
+    "techniques": []
   },
   "cornelius": {
     "description": "A FreeSewing pattern for cycling breeches, based on the Keystone drafting system",
     "code": "Wouter Van Wageningen",
     "design": "Wouter Van Wageningen",
     "difficulty": 3,
-    "tags": ["bottoms", "trousers"]
+    "tags": ["bottoms", "trousers"],
+    "techniques": []
   },
   "diana": {
     "description": "A FreeSewing pattern for a top with a draped neck",
     "code": "Erica Alcusa Sáez",
     "design": "Erica Alcusa Sáez",
     "difficulty": 2,
-    "tags": ["tops"]
+    "tags": ["tops"],
+    "techniques": []
   },
   "examples": {
     "description": "A FreeSewing pattern holding examples for our documentation",
@@ -120,56 +136,64 @@
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 1,
-    "tags": ["accessories"]
+    "tags": ["accessories"],
+    "techniques": []
   },
   "florent": {
     "description": "A FreeSewing pattern for a flat cap",
     "code": ["Quentin Felix", "Joost De Cock"],
     "design": "Quentin Felix",
     "difficulty": 3,
-    "tags": ["accessories", "hats"]
+    "tags": ["accessories", "hats"],
+    "techniques": []
   },
   "hi": {
     "description": "A FreeSewing pattern for a shark plush toy",
     "code": "Wouter Van Wageningen",
     "design": "Wouter Van Wageningen",
     "difficulty": 4,
-    "tags": ["accessories", "toys"]
+    "tags": ["accessories", "toys"],
+    "techniques": []
   },
   "holmes": {
     "description": "A FreeSewing pattern for a Sherlock Holmes hat",
     "code": ["Erica Alcusa Sáez", "bobgeorgethe3rd"],
     "design": "Erica Alcusa Sáez",
     "difficulty": 3,
-    "tags": ["accessories", "hats"]
+    "tags": ["accessories", "hats"],
+    "techniques": []
   },
   "hortensia": {
     "description": "A FreeSewing pattern for a handbag",
     "code": "Wouter Van Wageningen",
     "design": ["Stoffsuchti", "Wouter Van Wageningen"],
     "difficulty": 3,
-    "tags": ["accessories", "bags"]
+    "tags": ["accessories", "bags"],
+    "techniques": []
   },
   "huey": {
     "description": "A FreeSewing pattern for a zip-up hoodie",
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 3,
-    "tags": ["tops"]
+    "tags": ["tops"],
+    "techniques": []
   },
   "hugo": {
     "description": "A FreeSewing pattern for a hooded jumper with raglan sleeves",
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 3,
-    "tags": ["tops"]
+    "tags": ["tops"],
+    "techniques": []
   },
   "jaeger": {
     "description": "A FreeSewing pattern for a sport coat style jacket",
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 5,
-    "tags": ["tops", "coats"]
+    "tags": ["tops", "coats"],
+    "techniques": []
   },
   "legend": {
     "description": "A FreeSewing pattern to document pattern notation",
@@ -180,49 +204,56 @@
     "code": "SeaZeeZee",
     "design": "SeaZeeZee",
     "difficulty": 2,
-    "tags": ["accessories", "historical", "bags"]
+    "tags": ["accessories", "historical", "bags"],
+    "techniques": []
   },
   "lunetius": {
     "description": "A FreeSewing pattern for a lacerna, a historical Roman cloak",
     "code": "Rika Tamaike",
     "design": "Rika Tamaike",
     "difficulty": 1,
-    "tags": ["tops", "coats", "historical"]
+    "tags": ["tops", "coats", "historical"],
+    "techniques": []
   },
   "magde": {
     "description": "A FreeSewing pattern for a bike messenger bag",
     "code": "clegganator259",
     "design": "clegganator259",
     "difficulty": 3,
-    "tags": ["accessories", "bags"]
+    "tags": ["accessories", "bags"],
+    "techniques": []
   },
   "noble": {
     "description": "A FreeSewing pattern for a princess seam bodice block",
     "code": "Wouter Van Wageningen",
     "design": "Wouter Van Wageningen",
     "difficulty": 3,
-    "tags": ["blocks", "tops"]
+    "tags": ["blocks", "tops"],
+    "techniques": []
   },
   "octoplushy": {
     "description": "A FreeSewing pattern for an octopus plushy toy",
     "code": "Wouter Van Wageningen",
     "design": "Wouter Van Wageningen",
     "difficulty": 4,
-    "tags": ["accessories", "toys"]
+    "tags": ["accessories", "toys"],
+    "techniques": []
   },
   "paco": {
     "description": "A FreeSewing pattern for summer pants",
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 3,
-    "tags": ["bottoms", "trousers"]
+    "tags": ["bottoms", "trousers"],
+    "techniques": []
   },
   "penelope": {
     "description": "A FreeSewing pattern for a pencil skirt",
     "code": "Wouter Van Wageningen",
     "design": "Wouter Van Wageningen",
     "difficulty": 3,
-    "tags": ["bottoms", "skirts"]
+    "tags": ["bottoms", "skirts"],
+    "techniques": []
   },
   "plugintest": {
     "description": "A FreeSewing pattern to test (y)our plugins",
@@ -237,70 +268,80 @@
     "code": ["Erica Alcusa Sáez", "Joost De Cock"],
     "design": "Erica Alcusa Sáez",
     "difficulty": 3,
-    "tags": ["bottoms", "skirts"]
+    "tags": ["bottoms", "skirts"],
+    "techniques": []
   },
   "shin": {
     "description": "A FreeSewing pattern for swim trunks",
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 2,
-    "tags": ["bottoms", "swimwear"]
+    "tags": ["bottoms", "swimwear"],
+    "techniques": []
   },
   "simon": {
     "description": "A FreeSewing pattern for a button down shirt",
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 4,
-    "tags": ["tops"]
+    "tags": ["tops"],
+    "techniques": []
   },
   "simone": {
     "description": "A FreeSewing pattern for a button down shirt (Simone = Simon for people with breasts)",
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 4,
-    "tags": ["tops"]
+    "tags": ["tops"],
+    "techniques": []
   },
   "sven": {
     "description": "A FreeSewing pattern for a straightforward sweater",
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 3,
-    "tags": ["tops"]
+    "tags": ["tops"],
+    "techniques": []
   },
   "tamiko": {
     "description": "A FreeSewing pattern for a zero-waste top",
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 1,
-    "tags": ["tops"]
+    "tags": ["tops"],
+    "techniques": []
   },
   "teagan": {
     "description": "A FreeSewing pattern for a T-shirt",
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 2,
-    "tags": ["tops"]
+    "tags": ["tops"],
+    "techniques": []
   },
   "tiberius": {
     "description": "A FreeSewing pattern for a tunica, a historical Roman tunic",
     "code": "Rika Tamaike",
     "design": "Rika Tamaike",
     "difficulty": 1,
-    "tags": ["tops", "historical"]
+    "tags": ["tops", "historical"],
+    "techniques": []
   },
   "titan": {
     "description": "A FreeSewing pattern for a unisex trouser block",
     "code": "Joost De Cock",
     "design": ["Debra Bean", "Joost De Cock"],
     "difficulty": 3,
-    "tags": ["blocks", "bottoms"]
+    "tags": ["blocks", "bottoms"],
+    "techniques": []
   },
   "trayvon": {
     "description": "A FreeSewing pattern for a tie",
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 2,
-    "tags": ["accessories"]
+    "tags": ["accessories"],
+    "techniques": []
   },
   "tutorial": {
     "description": "A FreeSewing pattern for a baby bib that's used in our tutorial",
@@ -311,41 +352,47 @@
     "code": ["Anna Puk", "Natalia Sayang"],
     "design": ["Anna Puk", "Natalia Sayang"],
     "difficulty": 1,
-    "tags": ["bottoms", "underwear"]
+    "tags": ["bottoms", "underwear"],
+    "techniques": []
   },
   "ursula": {
     "description": "A FreeSewing pattern for a basic, highly-customizable underwear pattern",
     "code": "Natalia Sayang",
     "design": "Natalia Sayang",
     "difficulty": 1,
-    "tags": ["bottoms", "underwear"]
+    "tags": ["bottoms", "underwear"],
+    "techniques": []
   },
   "wahid": {
     "description": "A FreeSewing pattern for a classic fitted waistcoat",
     "code": "Joost De Cock",
     "design": "Joost De Cock",
     "difficulty": 4,
-    "tags": ["tops"]
+    "tags": ["tops"],
+    "techniques": []
   },
   "walburga": {
     "description": "A FreeSewing pattern for a wappenrock (tabard/surcoat), a historical European/medieval (ish) garment",
     "code": "Rika Tamaike",
     "design": "Rika Tamaike",
     "difficulty": 1,
-    "tags": ["bottoms", "historical"]
+    "tags": ["bottoms", "historical"],
+    "techniques": []
   },
   "waralee": {
     "description": "A FreeSewing pattern for wrap pants",
     "code": "Wouter Van Wageningen",
     "design": "Wouter Van Wageningen",
     "difficulty": 2,
-    "tags": ["bottoms", "trousers"]
+    "tags": ["bottoms", "trousers"],
+    "techniques": []
   },
   "yuri": {
     "description": "A FreeSewing pattern for a fancy zipless sweater based on the Huey hoodie",
     "code": "Hellgy",
     "design": "Biou",
     "difficulty": 3,
-    "tags": ["tops"]
+    "tags": ["tops"],
+    "techniques": []
   }
 }

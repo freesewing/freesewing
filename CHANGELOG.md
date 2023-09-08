@@ -54,12 +54,6 @@
  - Fixed pocket size issue
  - Fixed waist shaping issue
 
-### plugin-bundle
-
-#### Removed
-
- - Named exports of the bundled plugins are no longer available
-
 ### plugin-bust
 
 #### Removed
@@ -662,12 +656,6 @@
 
  - Migrated from Rollup to Esbuild for all builds
 
-### plugin-bundle
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
 ### plugin-bust
 
 #### Changed
@@ -1194,13 +1182,6 @@
 
  - Switched to default import for version from package.json
 
-### plugin-bundle
-
-#### Changed
-
- - plugin-banner is now part of plugin-bundle
- - plugin-bartack is now part of plugin-bundle
-
 ### plugin-flip
 
 #### Added
@@ -1287,12 +1268,6 @@
 #### Changed
 
  - Updated the rendertest pattern to be more concise
-
-### plugin-bundle
-
-#### Added
-
- - Added (esm) unit tests
 
 ### plugin-bust
 
@@ -1858,13 +1833,6 @@
 #### Added
 
  - Initial release of Ursula, a basic, highly-customizable underwear pattern
-
-### plugin-bundle
-
-#### Changed
-
- - Include plugin-buttons
- - Include plugin-mirror
 
 ### plugin-mirror
 
@@ -3533,12 +3501,6 @@
  - Initial release
 
 ### wahid
-
-#### Added
-
- - Initial release
-
-### plugin-bundle
 
 #### Added
 

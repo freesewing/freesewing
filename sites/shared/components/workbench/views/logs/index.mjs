@@ -11,7 +11,7 @@ export const ns = ['logs', ...coreMenuNs]
 
 const colors = {
   error: 'error',
-  warning: 'warning',
+  warn: 'warning',
   info: 'secondary',
   debug: 'base',
 }
@@ -65,7 +65,7 @@ const DraftLogs = ({ type, t, lines = [] }) =>
 
 const extractLogs = (pattern) => {
   const logs = {}
-  for (const type of ['error', 'warning', 'info', 'debug']) {
+  for (const type of ['error', 'warn', 'info', 'debug']) {
     logs[type] = [...pattern.store.logs[type]]
     for (const store of pattern.setStores) logs[type].push(...store.logs[type])
   }

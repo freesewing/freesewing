@@ -6,7 +6,12 @@
     "cup": "Cup",
     "neckTie": "Neck Tie"
   },
-  "s": {},
+  "s": {
+    "casingStitchingLine": "Sew down casing here",
+    "cutBandTie": "Cut 1 band tie:",
+    "cutNeckTie": "Cut 2 neck ties:",
+    "neckTieLength": "Length of the neck ties"
+  },
   "o": {
     "chestEase": {
       "t": "Chest ease",
@@ -115,6 +120,18 @@
     "shoulderToShoulderEase": {
       "t": "Shoulder to Shoulder ease (Bella)",
       "d": "Controls the shoulder to shoulder ease in the underlying Bella block Bee is based on"
+    },
+    "reversible": {
+      "t": "Reversible",
+      "d": "Whether you want to make a fully reversible Bee or not"
+    },
+    "reversibleYes": {
+      "t": "Make it reversible",
+      "d": "Create a Bee that you can wear with both sides out, posssibly ussing different fabrics"
+    },
+    "reversibleNo": {
+      "t": "Do not make it teversible",
+      "d": "Create a Bee with where only one side is intended to be worn on the outside"
     }
   }
 }

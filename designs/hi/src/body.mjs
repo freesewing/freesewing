@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function draftHiBody({
   store,
   sa,
@@ -662,6 +660,5 @@ export const body = {
     nosePointiness: { pct: 0, min: -5, max: +10, menu: 'style' },
     aggressive: { bool: false, menu: 'style' },
   },
-  plugins: [pluginBundle],
   draft: draftHiBody,
 }

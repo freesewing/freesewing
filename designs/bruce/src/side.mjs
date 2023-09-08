@@ -45,7 +45,7 @@ function draftBruceSide({
   } else {
     // The circles are too far apart to intersect. Print a warning message
     // and compromise by placing the bottom left point at the midpoint.
-    log.warning('Unable to calculate a correct bottom left point on the side part.')
+    log.warn('Unable to calculate a correct bottom left point on the side part.')
     adjustment_warning = true
     points.bottomLeft = points.bottomRight.shiftFractionTowards(points.topLeft, 0.5)
   }
@@ -126,7 +126,7 @@ function draftBruceSide({
   }
 
   if (adjustment_warning) {
-    log.warning(
+    log.warn(
       'We were not able to generate the Side pattern piece correctly. ' +
         'Manual fitting and alteration of this and other pattern pieces ' +
         'are likely to be needed. ' +

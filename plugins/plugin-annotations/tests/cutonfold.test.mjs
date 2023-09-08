@@ -20,14 +20,15 @@ describe('Cutonfold Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
-    const c = pattern.parts[0].test.paths.cutonfoldCutonfold
+    const c = pattern.parts[0].test.paths.__macro_cutonfold_cutonfold_line
     expect(c.attributes.get('class')).to.equal('note')
     expect(c.attributes.get('marker-start')).to.equal('url(#cutonfoldFrom)')
     expect(c.attributes.get('marker-end')).to.equal('url(#cutonfoldTo)')
-    expect(c.attributes.get('data-text')).to.equal('cutOnFold')
+    expect(c.attributes.get('data-text')).to.equal('plugin-annotations:cutOnFold')
     expect(c.attributes.get('data-text-class')).to.equal('center fill-note')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[1].type).to.equal('line')
@@ -59,11 +60,13 @@ describe('Cutonfold Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
-    const c = pattern.parts[0].test.paths.cutonfoldCutonfold
-    expect(c.attributes.get('data-text')).to.equal('cutOnFoldAndGrainline')
+    expect(
+      pattern.parts[0].test.paths.__macro_cutonfold_cutonfold_line.attributes.get('data-text')
+    ).to.equal('plugin-annotations:cutOnFoldAndGrainline')
   })
 
   it('Should run the cutonfold macro with configurable offset', () => {
@@ -82,14 +85,15 @@ describe('Cutonfold Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
-    let c = pattern.parts[0].test.paths.cutonfoldCutonfold
+    let c = pattern.parts[0].test.paths.__macro_cutonfold_cutonfold_line
     expect(c.attributes.get('class')).to.equal('note')
     expect(c.attributes.get('marker-start')).to.equal('url(#cutonfoldFrom)')
     expect(c.attributes.get('marker-end')).to.equal('url(#cutonfoldTo)')
-    expect(c.attributes.get('data-text')).to.equal('cutOnFold')
+    expect(c.attributes.get('data-text')).to.equal('plugin-annotations:cutOnFold')
     expect(c.attributes.get('data-text-class')).to.equal('center fill-note')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[1].type).to.equal('line')
@@ -114,21 +118,22 @@ describe('Cutonfold Plugin Tests', () => {
         macro('cutonfold', {
           from: points.from,
           to: points.to,
-          margin: 20,
+          margin: 0.2,
         })
 
         return part
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
-    let c = pattern.parts[0].test.paths.cutonfoldCutonfold
+    let c = pattern.parts[0].test.paths.__macro_cutonfold_cutonfold_line
     expect(c.attributes.get('class')).to.equal('note')
     expect(c.attributes.get('marker-start')).to.equal('url(#cutonfoldFrom)')
     expect(c.attributes.get('marker-end')).to.equal('url(#cutonfoldTo)')
-    expect(c.attributes.get('data-text')).to.equal('cutOnFold')
+    expect(c.attributes.get('data-text')).to.equal('plugin-annotations:cutOnFold')
     expect(c.attributes.get('data-text-class')).to.equal('center fill-note')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[1].type).to.equal('line')

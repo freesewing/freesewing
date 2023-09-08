@@ -93,7 +93,7 @@ function draftBruceFront({
       // Stop the adjustment process, print a warning message,
       // and revert back to the last good set of points if appropriate.
       stop = true
-      log.warning(
+      log.warn(
         'Unable to adjust the front tusk length to fit the given measurements, after ' +
           count +
           ' iterations.'
@@ -298,7 +298,7 @@ function draftBruceFront({
   }
 
   if (adjustment_warning) {
-    log.warning(
+    log.warn(
       'We were not able to generate the Front pattern piece correctly. ' +
         'Manual fitting and alteration of this and other pattern pieces ' +
         'are likely to be needed. ' +

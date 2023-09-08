@@ -24,9 +24,8 @@ const options = {
 
 // Let esbuild generate different formats
 let result
-(async () => {
-  result = await esbuild.build(options)
-  .catch(() => process.exit(1))
+;(async () => {
+  result = await esbuild.build(options).catch(() => process.exit(1))
 
   if (process.env.VERBOSE) {
     const info = await esbuild.analyzeMetafile(result.metafile)
@@ -36,12 +35,11 @@ let result
   // Also build a version that has all dependencies bundled
   // This makes it easy to run tests
   await esbuild
-  .build({
-    ...options,
-    outfile: 'tests/dist/index.mjs',
-    format: 'esm',
-    external: [],
-  })
-  .catch(() => process.exit(1))
-
+    .build({
+      ...options,
+      outfile: 'tests/dist/index.mjs',
+      format: 'esm',
+      external: [],
+    })
+    .catch(() => process.exit(1))
 })()

@@ -11,10 +11,8 @@ function walburgaBack({ points, macro, complete, snippets, Snippet, part }) {
       at: points.title,
       nr: 2,
       title: 'back',
+      align: 'center',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
 
     // scalebox
     points.scalebox = points.title.shift(90, points.bottom.dy(points.top) / 5)

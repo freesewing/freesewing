@@ -44,7 +44,7 @@ function teaganFront({
 
     // warn if we're making a barrel-shaped shirt
     if (midWidth > lowerWidth) {
-      log.warning(
+      log.warn(
         'width at waist exceeds width at hips; consider disabling the curve to waist option for a more standard shape'
       )
     }

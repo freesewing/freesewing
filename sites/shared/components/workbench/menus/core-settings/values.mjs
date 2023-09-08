@@ -14,6 +14,7 @@ const OnlySettingValue = ({ current, config }) => (
 
 export const values = {
   complete: ListValue,
+  expand: ListValue,
   locale: ListValue,
   margin: MmValue,
   only: OnlySettingValue,

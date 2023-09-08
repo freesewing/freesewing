@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { back as brianBack } from '@freesewing/brian'
 import { sharedDimensions } from './shared.mjs'
 
@@ -97,6 +96,5 @@ export const back = {
     ribbingHeight: { pct: 10, min: 5, max: 15, menu: 'style' },
     hipsEase: { pct: 8, min: 4, max: 12, menu: 'fit' },
   },
-  plugins: [pluginBundle],
   draft: draftHueyBack,
 }

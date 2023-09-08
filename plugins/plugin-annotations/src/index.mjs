@@ -1,4 +1,6 @@
 import { name, version } from '../data.mjs'
+// i18n
+import { i18n as i18nAnnotations } from '../i18n/index.mjs'
 // Defs only
 import { buttonsDefs } from './buttons.mjs'
 import { logoDefs } from './logo.mjs'
@@ -17,6 +19,8 @@ import { dimensionsMacros, dimensionsDefs } from './dimensions.mjs'
 import { grainlineMacros, grainlineDefs } from './grainline.mjs'
 import { pleatMacros, pleatDefs } from './pleat.mjs'
 import { sewtogetherMacros, sewtogetherDefs } from './sewtogether.mjs'
+// Only stores
+import { flagStores } from './flag.mjs'
 
 export const plugin = {
   name,
@@ -57,8 +61,9 @@ export const plugin = {
     ...sewtogetherMacros,
     ...titleMacros,
   },
-  store: [...cutlistStores],
+  store: [...cutlistStores, ...flagStores],
 }
 
 export const annotationsPlugin = plugin
 export const pluginAnnotations = plugin
+export const i18n = i18nAnnotations

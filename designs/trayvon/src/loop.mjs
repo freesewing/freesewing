@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function trayvonFabricLoop({
   points,
   Point,
@@ -56,6 +54,5 @@ function trayvonFabricLoop({
 export const fabricLoop = {
   name: 'trayvon.fabricLoop',
   measurements: ['hpsToWaistBack', 'waistToHips', 'neck'],
-  plugins: [pluginBundle],
   draft: trayvonFabricLoop,
 }

@@ -5,6 +5,7 @@ import yaml from 'js-yaml'
 import { fileURLToPath } from 'url'
 import allLanguages from '../../../config/languages.json' assert { type: 'json' }
 import { designs } from '../i18n/designs.mjs'
+import { plugins } from '../i18n/plugins.mjs'
 
 /*
  * This is where we configure what folders we should check for
@@ -208,6 +209,19 @@ export const prebuildI18n = async (store) => {
     }
   }
   for (const language of languages) writeJson(store.site, language, 'designs', designNs[language])
+
+  /*
+   * Handle plugin translations
+   */
+  const pluginNs = {}
+  for (const plugin in plugins) {
+    for (const language of languages) {
+      if (typeof pluginNs[language] === 'undefined') pluginNs[language] = {}
+      // Write out plugin namespace files
+      writeJson(store.site, language, plugin, plugins[plugin][language])
+    }
+  }
+  for (const language of languages) writeJson(store.site, language, 'plugins', pluginNs[language])
 
   /*
    * Update the store

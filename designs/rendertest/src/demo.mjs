@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 export const demo = {
   name: 'rendertest.demo',
   options: {
@@ -20,7 +18,6 @@ export const demo = {
       ],
     },
   },
-  plugins: [pluginBundle],
   draft: (params) => {
     const { store, options, Path, paths, Point, part } = params
     // Keep things in store

@@ -197,12 +197,16 @@ export const sleeve = {
     s3Armhole: { pct: 0, min: -100, max: 100, menu: 'style' },
     // Advanced
     acrossBackFactor: { pct: 97, min: 93, max: 100, menu: 'advanced' },
-    armholeDepthFactor: { pct: 60, min: 50, max: 70, menu: 'advanced' },
     backNeckCutout: { pct: 5, min: 2, max: 8, menu: 'advanced' },
     frontArmholeDeeper: { pct: 0.5, min: 0, max: 1.5, menu: 'advanced' },
     shoulderSlopeReduction: { pct: 0, min: 0, max: 80, menu: 'advanced' },
     sleevecapHeight: { pct: 45, min: 40, max: 60, menu: 'advanced' },
     sleevecapEase: { pct: 1, min: 0, max: 10, menu: 'advanced' },
+    // v3 armhole depth
+    armholeDepth: { pct: 5, min: -10, max: 50, menu: 'advanced' },
+    // Legacy armhole depth
+    legacyArmholeDepth: { bool: false, menu: 'advanced' },
+    armholeDepthFactor: { pct: 60, min: 50, max: 70, menu: 'advanced' },
   },
   draft: draftBentSleeve,
 }
