@@ -11,6 +11,8 @@ const macroDefaults = {
     link: 'text-sm fill-note bold',
     metric: 'text-xs center',
     imperial: 'text-xs center',
+    imperialBox: 'scalebox imperial fill-current',
+    metricBox: 'scalebox metric fill-bg',
   },
   lead: 'FreeSewing',
   link: 'FreeSewing.org/patrons/join',
@@ -174,7 +176,7 @@ const scalebox = function (
    * Draw the imperial box
    */
   paths[ids.imperial] = new Path()
-    .attr('class', 'scalebox imperial fill-current')
+    .addClass(mc.classes.imperialBox)
     .move(box.itl)
     .line(box.ibl)
     .line(box.ibr)
@@ -186,7 +188,7 @@ const scalebox = function (
    * Draw the metric box
    */
   paths[ids.metric] = new Path()
-    .attr('class', 'scalebox metric fill-bg')
+    .addClass(mc.classes.metricBox)
     .move(box.mtl)
     .line(box.mbl)
     .line(box.mbr)
@@ -197,9 +199,7 @@ const scalebox = function (
   /*
    * Add lead text to the part points
    */
-  points[ids.textLead] = text.lead
-    .addText(mc.lead, mc.classes.lead)
-    .attr('data-text-class', 'text-sm')
+  points[ids.textLead] = text.lead.addText(mc.lead, mc.classes.lead)
 
   /*
    * Figure out what title to use, and add the title text to the part points
