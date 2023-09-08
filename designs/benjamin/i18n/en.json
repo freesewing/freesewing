@@ -6,7 +6,7 @@
     "bow1": "Bow",
     "bow2": "Bow",
     "bow3": "Bow",
-    "ribbon": "Collar band"
+    "collarBand": "Collar band"
   },
   "s": {
     "cutRibbon": "Cut the adjustment ribbon:",
@@ -45,9 +45,9 @@
       "t": "Collar ease",
       "d": "The amount of ease at your neck"
     },
-    "ribbonWidth": {
-      "t": "Ribbon width",
-      "d": "Width of the ribbon"
+    "collarBandHeight": {
+      "t": "Collar band height",
+      "d": "The height (width if you will) of the collar band"
     }
   }
 }
