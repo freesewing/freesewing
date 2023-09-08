@@ -149,12 +149,8 @@ function draftHortensiaSidepanel({
       at: points.title,
       nr: 1,
       title: 'SidePanel',
+      align: 'center',
     })
-
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
-    // points.__titleFor.attr("data-text-class", "center");
 
     snippets.topNotch = new Snippet('notch', points.topMiddle)
     snippets.zipperLeft = new Snippet('notch', points.topZipperLeft)

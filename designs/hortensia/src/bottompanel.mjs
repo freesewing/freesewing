@@ -45,10 +45,8 @@ function draftHortensiaBottompanel({
       at: points.title,
       nr: 3,
       title: 'BottomPanel',
+      align: 'center',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
 
     let scaleBoxMove = 180 * options.size
 
