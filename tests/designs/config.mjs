@@ -100,7 +100,7 @@ export const testPatternConfig = (Pattern) => {
           measurements: requested,
         }).draft()
 
-        const missWarnings = draft.setStores[0].logs.warning.filter((w, i, a) => {
+        const missWarnings = draft.setStores[0].logs.warn.filter((w, i, a) => {
           return w.match(/tried to access `measurements/) && a.indexOf(w) === i
         })
         chai.assert(
