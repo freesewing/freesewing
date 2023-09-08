@@ -81,10 +81,8 @@ function walburgaBase({
       at: points.title,
       nr: 1,
       title: 'wappenrock-base',
+      align: 'center',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
 
     // scalebox
     points.scalebox = points.title.shift(90, points.bottom.dy(points.top) / 5)
