@@ -15,8 +15,8 @@ export const plugin = {
       let prefix = so.prefix || 'round'
       let angle1 = from.angle(via)
       let angle2 = via.angle(to)
-      if ((Math.round(angle1) - Math.round(angle2)) % 90 !== 0)
-        console.log('Warning: The round macro only handles 90 degree angles correctly.')
+      //if ((Math.round(angle1) - Math.round(angle2)) % 90 !== 0)
+      //  console.log('Warning: The round macro only handles 90 degree angles correctly.')
       let fd = from.dist(via)
       let td = to.dist(via)
       if (radius > fd || radius > td || typeof radius === 'undefined') radius = fd > td ? td : fd
