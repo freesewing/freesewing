@@ -183,7 +183,7 @@ const addTitleMacro = function (
     .shift(-90, shift)
     .attr(
       'data-text',
-      `${(store.data?.name || 'plugin-annotations:noName').replace('@freesewing/', '')} v ${
+      `${(store.data?.name || 'plugin-annotations:noName').replace('@freesewing/', '')} v${
         store.data?.version || 'plugin-annotations:noVersion'
       }`
     )
