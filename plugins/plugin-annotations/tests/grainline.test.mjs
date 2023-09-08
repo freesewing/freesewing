@@ -21,7 +21,7 @@ describe('Grainline Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Pattern = new Design({ parts: [part] }, true)
+    const Pattern = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Pattern()
     pattern.draft()
     const c = pattern.parts[0].test.paths.__macro_grainline_grainline_line

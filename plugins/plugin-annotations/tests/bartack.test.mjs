@@ -19,7 +19,7 @@ describe('Bartack plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const design = new Design({ parts: [part] }, true)
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
     const c = pattern.parts[0].test.paths.__macro_bartack_bartack_stitches
@@ -54,7 +54,7 @@ describe('Bartack plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const design = new Design({ parts: [part] }, true)
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
     const c = pattern.parts[0].test.paths.__macro_bartackalong_bartack_stitches
@@ -91,7 +91,7 @@ describe('Bartack plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const design = new Design({ parts: [part] }, true)
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
     const c = pattern.parts[0].test.paths.__macro_bartackalong_bartack_stitches
@@ -128,7 +128,7 @@ describe('Bartack plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const design = new Design({ parts: [part] }, true)
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
     const c = pattern.parts[0].test.paths.__macro_bartackfractionalong_bartack_stitches
@@ -163,7 +163,7 @@ describe('Bartack plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const design = new Design({ parts: [part] }, true)
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
     const c = pattern.parts[0].test.paths.__macro_bartack_bartack_stitches
@@ -198,7 +198,7 @@ describe('Bartack plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const design = new Design({ parts: [part] }, true)
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
     const c = pattern.parts[0].test.paths.__macro_bartack_bartack_stitches
@@ -233,7 +233,7 @@ describe('Bartack plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const design = new Design({ parts: [part] }, true)
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
     const c = pattern.parts[0].test.paths.__macro_bartack_bartack_stitches
@@ -268,7 +268,7 @@ describe('Bartack plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const design = new Design({ parts: [part] }, true)
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
     const c = pattern.parts[0].test.paths.__macro_bartack_foo_stitches
@@ -290,7 +290,7 @@ describe('Bartack plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const design = new Design({ parts: [part] }, true)
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
     const c = pattern.parts[0].test.paths.__macro_bartack_foo_stitches

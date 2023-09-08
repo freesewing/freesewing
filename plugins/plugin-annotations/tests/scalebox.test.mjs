@@ -19,7 +19,7 @@ describe('Scalebox Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Pattern = new Design({ parts: [part] }, true)
+    const Pattern = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Pattern()
     pattern.draft()
     let p = pattern.parts[0].test.points
@@ -80,7 +80,7 @@ describe('Scalebox Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Pattern = new Design({ parts: [part] }, true)
+    const Pattern = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Pattern()
     pattern.draft()
     const p = pattern.parts[0].test.points
@@ -112,13 +112,11 @@ describe('Scalebox Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Pattern = new Design(
-      {
-        parts: [part],
-        data: { name: 'test', version: '1.2.3' },
-      },
-      true
-    )
+    const Pattern = new Design({
+      parts: [part],
+      data: { name: 'test', version: '1.2.3' },
+      noCorePlugins: true,
+    })
     const pattern = new Pattern()
     pattern.draft()
     let p = pattern.parts[0].test.points.__macro_scalebox_scalebox_textLead.attributes
@@ -149,13 +147,11 @@ describe('Scalebox Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Pattern = new Design(
-      {
-        parts: [part],
-        data: { name: 'test', version: '1.2.3' },
-      },
-      true
-    )
+    const Pattern = new Design({
+      parts: [part],
+      data: { name: 'test', version: '1.2.3' },
+      noCorePlugins: true,
+    })
     const pattern = new Pattern()
     pattern.draft()
     let p = pattern.parts[0].test.points.__macro_scalebox_scalebox_textLead.attributes
@@ -186,14 +182,12 @@ describe('Scalebox Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Pattern = new Design(
-      {
-        parts: [part],
-        plugins: [annotationsPlugin],
-        data: { name: 'test', version: '1.2.3' },
-      },
-      true
-    )
+    const Pattern = new Design({
+      parts: [part],
+      plugins: [annotationsPlugin],
+      data: { name: 'test', version: '1.2.3' },
+      noCorePlugins: true,
+    })
     const pattern = new Pattern({ scale: 0.5 })
     pattern.draft()
     let p = pattern.parts[0].test.paths.__macro_scalebox_scalebox_metric
@@ -231,14 +225,12 @@ describe('Scalebox Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Pattern = new Design(
-      {
-        parts: [part],
-        plugins: [annotationsPlugin],
-        data: { name: 'test', version: '1.2.3' },
-      },
-      true
-    )
+    const Pattern = new Design({
+      parts: [part],
+      plugins: [annotationsPlugin],
+      data: { name: 'test', version: '1.2.3' },
+      noCorePlugins: true,
+    })
     const pattern = new Pattern({ scale: 0.5 })
     pattern.draft()
     let p = pattern.parts[0].test.paths.__macro_miniscale_miniscale_metric

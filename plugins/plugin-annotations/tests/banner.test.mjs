@@ -23,7 +23,7 @@ describe('Banner Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const design = new Design({ parts: [part] }, true)
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
     // Note that this macro does not add text to the path, but clones
@@ -56,7 +56,7 @@ describe('Banner Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const design = new Design({ parts: [part] }, true)
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
     const c = pattern.parts[0].test.paths.__macro_banner_banner_banner
@@ -83,7 +83,7 @@ describe('Banner Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const design = new Design({ parts: [part] }, true)
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
     const c = pattern.parts[0].test.paths.__macro_banner_banner_banner

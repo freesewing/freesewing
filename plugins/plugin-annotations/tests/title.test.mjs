@@ -21,13 +21,11 @@ describe('Title Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Pattern = new Design(
-      {
-        data: { name: 'testPattern', version: 99 },
-        parts: [part],
-      },
-      true
-    )
+    const Pattern = new Design({
+      data: { name: 'testPattern', version: 99 },
+      parts: [part],
+      noCorePlugins: true,
+    })
     const pattern = new Pattern()
     pattern.draft().render()
     let p = pattern.parts[0].test.points.__macro_title_title_nr
@@ -68,13 +66,11 @@ describe('Title Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Pattern = new Design(
-      {
-        data: { name: 'testPattern', version: 99 },
-        parts: [part],
-      },
-      true
-    )
+    const Pattern = new Design({
+      data: { name: 'testPattern', version: 99 },
+      parts: [part],
+      noCorePlugins: true,
+    })
     const pattern = new Pattern()
     pattern.draft().render()
     let p = pattern.parts[0].test.points.__macro_title_title_nr
@@ -103,13 +99,11 @@ describe('Title Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Pattern = new Design(
-      {
-        data: { name: 'testPattern', version: 99 },
-        parts: [part],
-      },
-      true
-    )
+    const Pattern = new Design({
+      data: { name: 'testPattern', version: 99 },
+      parts: [part],
+      noCorePlugins: true,
+    })
     const pattern = new Pattern()
     pattern.draft().render()
     let p = pattern.parts[0].test.points.__macro_title_foo_nr
@@ -163,13 +157,11 @@ describe('Title Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Pattern = new Design(
-      {
-        data: { name: 'testPattern', version: 99 },
-        parts: [part],
-      },
-      true
-    )
+    const Pattern = new Design({
+      data: { name: 'testPattern', version: 99 },
+      parts: [part],
+      noCorePlugins: true,
+    })
     const pattern = new Pattern()
     pattern.draft().render()
     for (const align of ['left', 'center', 'right']) {
@@ -201,13 +193,11 @@ describe('Title Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Pattern = new Design(
-      {
-        data: { name: 'testPattern', version: 99 },
-        parts: [part],
-      },
-      true
-    )
+    const Pattern = new Design({
+      data: { name: 'testPattern', version: 99 },
+      parts: [part],
+      noCorePlugins: true,
+    })
     const pattern = new Pattern()
     pattern.draft().render()
     let p = pattern.parts[0].test.points

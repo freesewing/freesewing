@@ -21,7 +21,7 @@ describe('Cutonfold Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] }, true)
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
     const c = pattern.parts[0].test.paths.__macro_cutonfold_cutonfold_line
@@ -61,7 +61,7 @@ describe('Cutonfold Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] }, true)
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
     expect(
@@ -86,7 +86,7 @@ describe('Cutonfold Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] }, true)
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
     let c = pattern.parts[0].test.paths.__macro_cutonfold_cutonfold_line
@@ -126,7 +126,7 @@ describe('Cutonfold Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] }, true)
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
     let c = pattern.parts[0].test.paths.__macro_cutonfold_cutonfold_line

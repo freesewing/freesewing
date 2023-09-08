@@ -21,7 +21,7 @@ describe('Sewtogether Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] }, true)
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
     const c = pattern.parts[0].test.paths.__macro_sewtogether_sewtogether_curve
@@ -60,7 +60,7 @@ describe('Sewtogether Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] }, true)
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
     let c = pattern.parts[0].test.paths.__macro_sewtogether_sewtogether_hinge
@@ -92,7 +92,7 @@ describe('Sewtogether Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] }, true)
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part], noCorePlugins: true })
     const pattern = new Test({ sa: 10 })
     pattern.draft()
     let c = pattern.parts[0].test.paths.__macro_sewtogether_sewtogether_hinge

@@ -23,7 +23,7 @@ describe('Dimension Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Test = new Design({ parts: [part] }, true)
+    const Test = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
 
@@ -83,7 +83,7 @@ describe('Dimension Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Test = new Design({ parts: [part] }, true)
+    const Test = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
 
@@ -143,7 +143,7 @@ describe('Dimension Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Test = new Design({ parts: [part] }, true)
+    const Test = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
 
@@ -204,7 +204,7 @@ describe('Dimension Plugin Tests', () => {
       plugins: [annotationsPlugin],
     }
     // Note that we're not loading core plugins but the local plugin
-    const Test = new Design({ parts: [part] }, true)
+    const Test = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
 
