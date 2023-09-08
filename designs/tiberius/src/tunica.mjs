@@ -112,10 +112,8 @@ function tiberiusTunica({
       at: points.title,
       nr: 1,
       title: 'tunica',
+      align: 'center',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
 
     // scalebox
     points.scalebox = points.midTop.shiftFractionTowards(points.midBottom, 0.7)
