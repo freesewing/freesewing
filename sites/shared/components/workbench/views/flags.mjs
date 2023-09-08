@@ -11,7 +11,7 @@ import {
   TipIcon,
   WarningIcon,
   ErrorIcon,
-  FixmeIcon,
+  WrenchIcon as FixmeIcon,
   ExpandIcon,
 } from 'shared/components/icons.mjs'
 import Markdown from 'react-markdown'
