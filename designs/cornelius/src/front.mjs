@@ -142,10 +142,8 @@ function draftCorneliusFront({
       nr: 76,
       at: points.title,
       title: 'Front',
+      align: 'center',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
 
     points.scaleboxAnchor = points.pD.shift(270, 60)
     macro('scalebox', { at: points.scaleboxAnchor })
