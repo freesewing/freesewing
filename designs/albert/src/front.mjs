@@ -17,6 +17,7 @@ export const front = {
     Snippet,
     snippets,
     sa,
+    complete,
     macro,
     store,
     part,
@@ -69,7 +70,10 @@ export const front = {
     points.pocketLeftBottom = points.pocketLeftTop.shift(270, pocketSize)
     points.pocketRightBottom = points.pocketLeftBottom.shift(0, pocketSize)
 
-    points.crossBox1TopLeft = new Point(points.topRightHem.x - strapWidth, points.topRightHem.y)
+    points.crossBox1TopLeft = new Point(
+      points.topRightHem.x - strapWidth,
+      points.topRightHem.y - strapWidth
+    )
     points.crossBox1BottomRight = new Point(
       points.crossBox1TopLeft.x + strapWidth,
       points.crossBox1TopLeft.y + strapWidth
@@ -80,50 +84,58 @@ export const front = {
       points.crossBox2TopLeft.y + strapWidth
     )
 
-    paths.rightHem = new Path()
+    // Re-use this for hem hint
+    paths.seam = new Path()
       .move(points.bottomRight)
       .line(points.topRightBack)
       .curve(points.topRightBackCPfront, points.topRightCPdown, points.topRightHem)
       .line(points.topRight)
-      .attr('class', 'various dashed')
-      .attr('data-text', 'narrow hem')
-      .attr('data-text-class', 'text-xs center')
-
-    paths.pocket = new Path()
-      .move(points.pocketLeftBottom)
-      .line(points.pocketLeftTop)
-      .line(points.pocketRightTop)
-      .line(points.pocketRightBottom)
-      .line(points.pocketLeftBottom)
-      .attr('class', 'lining dotted stroke-sm')
-      .attr('data-text', 'pocket')
-      .attr('data-text-class', 'text-xs center')
-
-    paths.right = paths.rightHem.offset(sideHemWidth)
-
-    paths.seam = new Path()
-      .move(points.bottomLeft)
-      .join(paths.right)
       .line(points.topLeft)
+      .line(points.bottomLeft)
+      .line(points.bottomRight)
       .close()
-      .attr('class', 'fabric')
+      .addClass('class', 'fabric')
 
-    paths.complete = paths.seam.clone().line(points.bottomLeft).close()
+    if (complete) {
+      paths.pocket = new Path()
+        .move(points.pocketLeftBottom)
+        .line(points.pocketLeftTop)
+        .line(points.pocketRightTop)
+        .line(points.pocketRightBottom)
+        .line(points.pocketLeftBottom)
+        .addClass('fabric help')
+      macro('banner', {
+        id: 'pocket',
+        path: paths.pocket,
+        text: 'pocket',
+        classes: 'fill-note center',
+      })
+    }
 
-    paths.topHem = new Path()
-      .move(points.topLeftHem)
-      .line(points.topRightHem.shift(0, sa))
-      .attr('class', 'various dashed')
-      .attr('data-text', 'hem')
-      .attr('data-text-class', 'text-xs center')
-    paths.bottomHem = new Path()
-      .move(points.bottomLeftHem)
-      .line(points.bottomRightHem.shift(0, sa))
-      .attr('class', 'various dashed')
-      .attr('data-text', 'hem')
-      .attr('data-text-class', 'text-xs center')
-
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+    if (sa) {
+      const saBase = new Path()
+        .move(points.bottomLeft.shift(-90, sa))
+        .line(points.bottomRight.shift(-90, sa))
+        .line(points.topRightBack)
+        .curve(points.topRightBackCPfront, points.topRightCPdown, points.topRightHem)
+        .line(points.topRight.shift(90, sa))
+        .line(points.topLeft.shift(90, sa))
+      paths.sa = saBase
+        .clone()
+        .offset(sa * 2)
+        .addClass('fabric sa')
+      if (complete) {
+        paths.hemHint = saBase.clone().offset(sa).addClass('note help')
+        macro('banner', {
+          id: 'narrowHem',
+          path: paths.hemHint,
+          text: 'albert:narrowHem',
+          repeat: 60,
+          spaces: 60,
+          classes: 'fill-note center',
+        })
+      }
+    }
 
     /*
      * Annotations
