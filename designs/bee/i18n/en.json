@@ -124,6 +124,14 @@
     "reversible": {
       "t": "Reversible",
       "d": "Whether you want to make a fully reversible Bee or not"
+    },
+    "reversibleYes": {
+      "t": "Make it reversible",
+      "d": "Create a Bee that you can wear with both sides out, posssibly ussing different fabrics"
+    },
+    "reversible": {
+      "t": "Do not make it teversible",
+      "d": "Create a Bee with where only one side is intended to be worn on the outside"
     }
   }
 }
