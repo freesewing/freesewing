@@ -22,35 +22,27 @@ export const front = {
     store,
     part,
   }) => {
-    let chestWidth = measurements.chest / 4
-    let bibWidth = chestWidth * options.bibWidth
-    let bibLength = measurements.hpsToWaistBack * options.bibLength
-    let apronLength =
+    const chestWidth = measurements.chest / 4
+    const bibWidth = chestWidth * options.bibWidth
+    const bibLength = measurements.hpsToWaistBack * options.bibLength
+    const apronLength =
       measurements.hpsToWaistBack * options.bibLength +
       measurements.waistToKnee * (1 + options.lengthBonus)
-    /*
-    let apronWidth =
-      Math.max(measurements.hips, measurements.waist) *
-      (1 - options.backOpening)
-    */
-    let apronWidth = measurements.waist * (1 - options.backOpening)
-    let strapWidth = (measurements.hpsToWaistBack * options.strapWidth) / 8
-    let hemWidth = strapWidth
-    let sideHemWidth = Math.max(sa, hemWidth / 4)
-    let pocketSize = apronLength / 4
+    const apronWidth = measurements.waist * (1 - options.backOpening)
+    const strapWidth = (measurements.hpsToWaistBack * options.strapWidth) / 8
+    const pocketSize = apronLength / 4
 
     store.set('bibWidth', bibWidth)
     store.set('apronLength', apronLength)
     store.set('apronWidth', apronWidth)
     store.set('strapWidth', strapWidth)
-    store.set('hemWidth', hemWidth)
     store.set('pocketSize', pocketSize)
 
     points.topLeft = new Point(0, 0)
-    points.topLeftHem = points.topLeft.shift(270, hemWidth)
+    points.topLeftHem = points.topLeft.shift(270, strapWidth)
     points.bottomLeftHem = points.topLeftHem.shift(270, apronLength)
     points.waistLeft = points.topLeftHem.shift(270, bibLength)
-    points.bottomLeft = points.bottomLeftHem.shift(270, hemWidth)
+    points.bottomLeft = points.bottomLeftHem.shift(270, strapWidth)
     points.topRight = points.topLeft.shift(0, bibWidth / 2)
     points.topRightHem = points.topLeftHem.shift(0, bibWidth / 2)
     points.bottomRightHem = points.bottomLeftHem.shift(0, apronWidth / 2)
@@ -65,7 +57,7 @@ export const front = {
     points.topCOF = points.topLeft.shift(270, apronLength / 5)
     points.bottomCOF = points.bottomLeft.shift(90, apronLength / 5)
 
-    points.pocketLeftTop = points.waistLeft.shift(270, hemWidth)
+    points.pocketLeftTop = points.waistLeft.shift(270, strapWidth)
     points.pocketRightTop = points.pocketLeftTop.shift(0, pocketSize)
     points.pocketLeftBottom = points.pocketLeftTop.shift(270, pocketSize)
     points.pocketRightBottom = points.pocketLeftBottom.shift(0, pocketSize)
@@ -179,7 +171,7 @@ export const front = {
       topLeft: points.crossBox2TopLeft,
       bottomRight: points.crossBox2BottomRight,
       id: 'crossbox2',
-      text: 'albert:attachment',
+      text: 'albert:attachStrap',
     })
 
     // Dimensions

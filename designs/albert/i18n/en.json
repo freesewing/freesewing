@@ -7,7 +7,10 @@
     "strap": "Strap"
   },
   "s": {
-    "attachment": "Attachment"
+    "attachStrap": "Attach strap",
+    "cutPocket": "Not shown: the **Pocket**, a rectangle of {{{ width }}} wide and {{{ length }}} long <small>(this includes seam allowance)</small>",
+    "cutStrap": "Not shown: the **Straps**, two rectangles of {{{ width }}} wide and {{{ length }}} long <small>(this includes seam allowance)</small>",
+    "foldHere": "Fold here"
   },
   "o": {
     "backOpening": {
