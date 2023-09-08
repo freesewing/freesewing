@@ -51,7 +51,8 @@ const banner = function (config, { part, paths, store, complete }) {
    * Construct the text string piece by piece so it gets translated
    */
   const spacer = '&#160;'.repeat(mc.spaces)
-  for (let i = 0; i < mc.repeat; i++) paths[ids.banner].addText(spacer).addText(mc.text)
+  for (let i = 0; i < mc.repeat; i++) paths[ids.banner].addText(mc.text).addText(spacer)
+  paths[ids.banner].addText(mc.text)
 
   /*
    * Store all IDs in the store so we can remove this macro with rmbanner
