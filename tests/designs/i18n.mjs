@@ -61,9 +61,19 @@ export const testPatternI18n = (Pattern, i18n) => {
           expect(typeof i18n.en.o[key].d).to.equal('string')
           expect(i18n.en.o[key].d.length).to.be.above(1)
         })
-        it(`  - The translation of o.${key} should correspond to a known option`, () => {
-          expect(options.includes(key)).to.equal(true)
-        })
+        if (key.slice(-3) === 'Yes') {
+          it(`  - The Yes translation of boolean option o.${key} should have a corresponding No translation`, () => {
+            expect(typeof i18n.en.o[key.slice(0, -3) + 'No'].t).to.equal('string')
+          })
+        } else if (key.slice(-2) === 'No') {
+          it(`  - The No translation of boolean option o.${key} should have a corresponding Yes translation`, () => {
+            expect(typeof i18n.en.o[key.slice(0, -2) + 'Yes'].t).to.equal('string')
+          })
+        } else {
+          it(`  - The translation of o.${key} should correspond to a known option`, () => {
+            expect(options.includes(key)).to.equal(true)
+          })
+        }
       }
       for (const option of options.filter(
         (o) => typeof Pattern.patternConfig.options[o] === 'object'
