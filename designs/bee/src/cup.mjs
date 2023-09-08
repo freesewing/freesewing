@@ -207,7 +207,6 @@ export const cup = {
     // Removing the cutonfold indicator should do the trick, but it does not
     // So I am setting ignoreOnFold below until I fix this
     macro('rmcutonfold')
-    console.log(store.cutlist.removeCut())
     store.cutlist.addCut({ cut: 2, material: 'fabric', ignoreOnFold: true })
     if (options.reversible)
       store.cutlist.addCut({ cut: 2, material: 'altFabric1', ignoreOnFold: true })

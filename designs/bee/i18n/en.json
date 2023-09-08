@@ -120,6 +120,10 @@
     "shoulderToShoulderEase": {
       "t": "Shoulder to Shoulder ease (Bella)",
       "d": "Controls the shoulder to shoulder ease in the underlying Bella block Bee is based on"
+    },
+    "reversible": {
+      "t": "Reversible",
+      "d": "Whether you want to make a fully reversible Bee or not"
     }
   }
 }
