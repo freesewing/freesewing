@@ -26,22 +26,25 @@ const BaseAccordion = ({
 }) => {
   const [active, setActive] = useState()
 
+  console.log(items)
   return (
     <nav>
-      {items.map((item, i) =>
-        active === i ? (
-          <div key={i} {...propsGetter(active, i)}>
-            <button onClick={setActive} className="w-full">
+      {items
+        .filter((item) => item[0])
+        .map((item, i) =>
+          active === i ? (
+            <div key={i} {...propsGetter(active, i)}>
+              <button onClick={setActive} className="w-full">
+                {item[0]}
+              </button>
+              {item[1]}
+            </div>
+          ) : (
+            <button key={i} {...getProps(active, i)} onClick={() => setActive(i)}>
               {item[0]}
             </button>
-            {item[1]}
-          </div>
-        ) : (
-          <button key={i} {...getProps(active, i)} onClick={() => setActive(i)}>
-            {item[0]}
-          </button>
-        )
-      )}
+          )
+        )}
     </nav>
   )
 }

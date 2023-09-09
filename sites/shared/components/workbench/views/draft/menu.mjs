@@ -9,8 +9,12 @@ import {
 import { UiSettings, ns as uiNs } from 'shared/components/workbench/menus/ui-settings/index.mjs'
 import { useTranslation } from 'next-i18next'
 import { nsMerge } from 'shared/utils.mjs'
-import { SettingsIcon, OptionsIcon, DesktopIcon } from 'shared/components/icons.mjs'
+import { SettingsIcon, OptionsIcon, DesktopIcon, FlagIcon } from 'shared/components/icons.mjs'
 import { Accordion } from 'shared/components/accordion.mjs'
+import {
+  FlagsAccordionTitle,
+  FlagsAccordionEntries,
+} from 'shared/components/workbench/views/flags.mjs'
 
 export const ns = nsMerge(coreMenuNs, designMenuNs, uiNs)
 
@@ -26,6 +30,7 @@ export const DraftMenu = ({
   DynamicDocs,
   view,
   setView,
+  flags = false,
 }) => {
   const { t } = useTranslation()
   const control = account.control
@@ -61,18 +66,24 @@ export const DraftMenu = ({
     },
   ]
 
-  return (
-    <Accordion
-      items={sections.map((section) => [
-        <>
-          <h5 className="flex flex-row gap-2 items-center justify-between w-full">
-            <span>{t(`${section.ns}:${section.name}.t`)}</span>
-            {section.icon}
-          </h5>
-          <p className="text-left">{t(`${section.ns}:${section.name}.d`)}</p>
-        </>,
-        section.menu,
-      ])}
-    />
+  const items = []
+  if (flags)
+    items.push([
+      <FlagsAccordionTitle flags={flags} />,
+      <FlagsAccordionEntries {...{ update, control, flags }} />,
+    ])
+  items.push(
+    ...sections.map((section) => [
+      <>
+        <h5 className="flex flex-row gap-2 items-center justify-between w-full">
+          <span>{t(`${section.ns}:${section.name}.t`)}</span>
+          {section.icon}
+        </h5>
+        <p className="text-left">{t(`${section.ns}:${section.name}.d`)}</p>
+      </>,
+      section.menu,
+    ])
   )
+
+  return <Accordion items={items} />
 }

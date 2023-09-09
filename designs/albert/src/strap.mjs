@@ -41,10 +41,11 @@ export const strap = {
     if (!expand) {
       // Expand is on, do not draw the part but flag this to the user
       store.flag.note({
-        msg: `albert:cutStrap`,
+        title: `albert:cutStrap.t`,
+        desc: `albert:cutStrap.d`,
         replace: {
-          width: units(store.get('strapWidth') + 2 * sa),
-          length: units(store.get('strapLength') + store.get('strapWidth') * 2 + 2 * sa),
+          width: units(strapWidth + 2 * sa),
+          length: units(strapLength + strapWidth * 2 + 2 * sa),
         },
         suggest: {
           text: 'flag:show',
