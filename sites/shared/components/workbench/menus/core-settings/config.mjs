@@ -109,8 +109,8 @@ export const loadSettingsConfig = ({
   },
   expand: {
     control: 4, // Show when control > 3
-    list: [0, 1],
-    dflt: 0,
+    list: [1, 0],
+    dflt: 1,
     choiceTitles: {
       0: 'expandNo',
       1: 'expandYes',

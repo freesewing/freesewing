@@ -119,7 +119,7 @@ export const FlagsAccordionEntries = ({ flags, update }) => {
           <div className="w-full flex flex-row gap2 justify-between" key={i}>
             <div className="flex flex-row items-center gap-2">
               <Icon />
-              <span className="font-medium">{title}</span>
+              <span className="font-medium text-left">{title}</span>
             </div>
             <span className="uppercase font-bold">{flag.type}</span>
           </div>,

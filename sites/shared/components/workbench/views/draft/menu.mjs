@@ -1,3 +1,4 @@
+import { loadSettingsConfig as loadUiSettingsConfig } from 'shared/components/workbench/menus/ui-settings/config.mjs'
 import {
   DesignOptions,
   ns as designMenuNs,
@@ -7,6 +8,7 @@ import {
   ns as coreMenuNs,
 } from 'shared/components/workbench/menus/core-settings/index.mjs'
 import { UiSettings, ns as uiNs } from 'shared/components/workbench/menus/ui-settings/index.mjs'
+import { UiConfig } from 'shared/components/workbench/menus/ui-settings/config.mjs'
 import { useTranslation } from 'next-i18next'
 import { nsMerge } from 'shared/utils.mjs'
 import { SettingsIcon, OptionsIcon, DesktopIcon, FlagIcon } from 'shared/components/icons.mjs'
@@ -44,6 +46,7 @@ export const DraftMenu = ({
     DynamicDocs,
     control,
   }
+  const uiSettingsConfig = loadUiSettingsConfig()
 
   const sections = [
     {
@@ -67,7 +70,7 @@ export const DraftMenu = ({
   ]
 
   const items = []
-  if (flags)
+  if (control >= uiSettingsConfig.kiosk.control && flags)
     items.push([
       <FlagsAccordionTitle flags={flags} />,
       <FlagsAccordionEntries {...{ update, control, flags }} />,
