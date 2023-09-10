@@ -12,6 +12,8 @@
     "cutNeckBinding.d": "The **Neck opening knit binding** is a strip of fabric {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). It is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
     "cutOneStripToFinishTheNeckOpening": "Cut one strip to finish the neck opening",
     "cutTwoStripsToFinishTheArmholes": "Cut two strips to finish the armholes",
+    "largeSaAdaptKnitBindingWidth.t": "Consider lowering the knit binding width",
+    "largeSaAdaptKnitBindingWidth.d": "The default width of the knit binding is 6 times the seam allowance. Because your chosen seam allowance ({{{ sa }}}) is larger than the 1cm used when designing the pattern, your knit binding is likely to be too wide. \n\nYou can lower the knit binding width to compensate for your larger seam allowance.",
     "length": "Length",
     "width": "Width"
   },
@@ -27,6 +29,10 @@
     "hipsEase": {
       "t": "Hips ease",
       "d": "The amount of ease at your hips."
+    },
+    "knitBindingWidth": {
+      "t": "Knit binding width",
+      "d": "Controls the width of the knit binding as a percentage of the chosen seam allowance, or 1cm if no seam allowance is used."
     },
     "necklineBend": {
       "t": "Neckline shape",
