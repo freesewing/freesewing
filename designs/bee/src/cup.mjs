@@ -210,6 +210,9 @@ export const cup = {
     // So I am setting ignoreOnFold below until I fix this
     macro('rmcutonfold')
     store.cutlist.addCut({ cut: 2, material: 'fabric', ignoreOnFold: true })
+
+    points.gridAnchor = points.lefti
+
     if (options.reversible)
       store.cutlist.addCut({ cut: 2, material: 'altFabric1', ignoreOnFold: true })
     // Grainline
