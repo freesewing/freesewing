@@ -33,7 +33,6 @@ export const neckTie = {
     complete,
     macro,
     measurements,
-    utils,
     expand,
     absoluteOptions,
     part,
