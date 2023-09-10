@@ -26,7 +26,6 @@ const BaseAccordion = ({
 }) => {
   const [active, setActive] = useState()
 
-  console.log(items)
   return (
     <nav>
       {items
