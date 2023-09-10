@@ -1,6 +1,5 @@
 import { PanZoomContextProvider } from 'shared/components/workbench/pattern/pan-zoom-context.mjs'
 import { MenuWrapper } from 'shared/components/workbench/menus/shared/menu-wrapper.mjs'
-import { Flags } from './flags.mjs'
 
 export const ns = ['common', 'core-settings', 'ui-settings']
 
@@ -17,7 +16,6 @@ export const PatternWithMenu = ({
   menu,
   setSettings,
   Header = false,
-  flags = false,
 }) => (
   <PanZoomContextProvider>
     <div className="flex flex-col h-full">
@@ -34,7 +32,6 @@ export const PatternWithMenu = ({
           }}
         />
       ) : null}
-      {flags ? <Flags {...{ update, control, flags }} /> : null}
       <div className="flex lg:flex-row grow lg:max-h-[90vh] max-h-[calc(100vh-3rem)] h-full py-4 lg:mt-6">
         <div className="lg:w-2/3 flex flex-col h-full grow px-4">
           {title}

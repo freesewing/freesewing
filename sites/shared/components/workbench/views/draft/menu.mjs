@@ -8,10 +8,9 @@ import {
   ns as coreMenuNs,
 } from 'shared/components/workbench/menus/core-settings/index.mjs'
 import { UiSettings, ns as uiNs } from 'shared/components/workbench/menus/ui-settings/index.mjs'
-import { UiConfig } from 'shared/components/workbench/menus/ui-settings/config.mjs'
 import { useTranslation } from 'next-i18next'
 import { nsMerge } from 'shared/utils.mjs'
-import { SettingsIcon, OptionsIcon, DesktopIcon, FlagIcon } from 'shared/components/icons.mjs'
+import { SettingsIcon, OptionsIcon, DesktopIcon } from 'shared/components/icons.mjs'
 import { Accordion } from 'shared/components/accordion.mjs'
 import {
   FlagsAccordionTitle,
@@ -72,8 +71,8 @@ export const DraftMenu = ({
   const items = []
   if (control >= uiSettingsConfig.kiosk.control && flags)
     items.push([
-      <FlagsAccordionTitle flags={flags} />,
-      <FlagsAccordionEntries {...{ update, control, flags }} />,
+      <FlagsAccordionTitle flags={flags} key={1} />,
+      <FlagsAccordionEntries {...{ update, control, flags }} key={2} />,
     ])
   items.push(
     ...sections.map((section) => [

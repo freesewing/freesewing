@@ -27,22 +27,23 @@ import { LogView, ns as logNs } from 'shared/components/workbench/views/logs/ind
 import { InspectView, ns as inspectNs } from 'shared/components/workbench/views/inspect/index.mjs'
 import { MeasiesView, ns as measiesNs } from 'shared/components/workbench/views/measies/index.mjs'
 
-export const ns = [
+export const ns = nsMerge(
   'account',
   'workbench',
   'flag',
-  ...draftNs,
-  ...saveNs,
-  ...printNs,
-  ...cutNs,
-  ...editNs,
-  ...testNs,
-  ...exportNs,
-  ...logNs,
-  ...inspectNs,
-  ...measiesNs,
   'plugin-annotations',
-]
+  draftNs,
+  saveNs,
+  printNs,
+  cutNs,
+  editNs,
+  testNs,
+  exportNs,
+  logNs,
+  inspectNs,
+  measiesNs,
+  headerNs
+)
 
 const defaultUi = {
   renderer: 'react',

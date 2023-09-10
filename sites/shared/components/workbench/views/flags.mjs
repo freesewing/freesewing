@@ -4,7 +4,6 @@ import mustache from 'mustache'
 import { nsMerge } from 'shared/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
-import { useState } from 'react'
 // Components
 import {
   ChatIcon,
@@ -31,7 +30,6 @@ const flagIcons = {
 }
 
 export const Flag = ({ type, data, t, handleUpdate }) => {
-  const Icon = flagIcons[type]
   const BtnIcon = data.suggest?.icon ? flagIcons[data.suggest.icon] : false
 
   const button =
@@ -52,7 +50,7 @@ export const Flag = ({ type, data, t, handleUpdate }) => {
   return (
     <div className="flex flex-col gap-2 items-start">
       <div className="first:mt-0 grow md flag">
-        <Markdown children={desc} />
+        <Markdown>{desc}</Markdown>
       </div>
       {button ? <div className="mt-2 w-full flex flex-row justify-end">{button}</div> : null}
     </div>
@@ -65,7 +63,7 @@ const flattenFlags = (flags) => {
   for (const type of flagTypes) {
     let i = 0
     if (flags[type]) {
-      for (const [key, flag] of Object.entries(flags[type])) {
+      for (const flag of Object.values(flags[type])) {
         i++
         all[`${type}-${i}`] = { ...flag, type }
         if (flag.ns) ns.push(flag.ns)
@@ -102,7 +100,6 @@ export const FlagsAccordionTitle = ({ flags }) => {
 export const FlagsAccordionEntries = ({ flags, update }) => {
   const [flagList, ns] = flattenFlags(flags)
   const { t } = useTranslation(nsMerge(ns))
-  const [all, setAll] = useState(flagList)
 
   if (Object.keys(flagList).length < 1) return null
 
@@ -113,7 +110,7 @@ export const FlagsAccordionEntries = ({ flags, update }) => {
 
   return (
     <SubAccordion
-      items={Object.entries(all).map(([key, flag], i) => {
+      items={Object.entries(flagList).map(([key, flag], i) => {
         const Icon = flagIcons[flag.type]
         const title = flag.replace ? mustache.render(t(flag.title), flag.replace) : t(flag.title)
 
