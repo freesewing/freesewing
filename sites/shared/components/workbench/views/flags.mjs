@@ -14,6 +14,7 @@ import {
   WrenchIcon as FixmeIcon,
   ExpandIcon,
   FlagIcon,
+  OptionsIcon,
 } from 'shared/components/icons.mjs'
 import Markdown from 'react-markdown'
 import { SubAccordion } from 'shared/components/accordion.mjs'
@@ -26,6 +27,7 @@ const flagIcons = {
   fixme: FixmeIcon,
   // Used in content
   expand: ExpandIcon,
+  options: OptionsIcon,
 }
 
 export const Flag = ({ type, data, t, handleUpdate }) => {

@@ -1,3 +1,4 @@
+apply: Apply
 dismiss: Dismiss
 expandIsOff.t: This design saves space (and trees) because expand is disabled
 expandIsOff.d: Because the **expand** core setting is currently disabled, some parts are not fully drawn or not shown at all. Typically, these are simple rectangles that only take up space. To expand all pattern parts to their full size, enable the expand setting.
