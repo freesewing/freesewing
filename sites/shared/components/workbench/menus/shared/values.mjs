@@ -40,7 +40,7 @@ export const ListValue = ({ current, t, config, changed }) => {
   else if (typeof val === 'string') key = val
   // otherwise stringify booleans
   else if (val) key = <BoolYesIcon />
-  else key = <dBoolNoIcon />
+  else key = <BoolNoIcon />
 
   const translated = config.doNotTranslate || typeof key !== 'string' ? key : t(key)
 
