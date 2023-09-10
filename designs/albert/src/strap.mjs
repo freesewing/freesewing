@@ -19,33 +19,58 @@ export const strap = {
     sa,
     macro,
     store,
+    complete,
+    units,
+    expand,
     part,
   }) => {
-    let bibWidth = store.get('bibWidth')
-    let apronWidth = store.get('apronWidth')
-    let backOpening = apronWidth - Math.max(measurements.hips, measurements.waist)
-    let hemWidth = store.get('hemWidth')
+    const bibWidth = store.get('bibWidth')
+    const apronWidth = store.get('apronWidth')
+    const backOpening = apronWidth - Math.max(measurements.hips, measurements.waist)
 
-    let hSpan = backOpening / 2 + bibWidth / 2
-    let vSpan =
+    const hSpan = backOpening / 2 + bibWidth / 2
+    const vSpan =
       measurements.hpsToWaistBack +
       measurements.hpsToWaistBack -
       measurements.hpsToWaistBack * options.bibLength
 
-    let strapWidth = store.get('strapWidth')
-    let strapLength =
+    const strapWidth = store.get('strapWidth')
+    const strapLength =
       Math.sqrt(hSpan * hSpan + vSpan * vSpan) + measurements.chest * options.chestDepth
 
+    if (!expand) {
+      // Expand is on, do not draw the part but flag this to the user
+      store.flag.note({
+        title: `albert:cutStrap.t`,
+        desc: `albert:cutStrap.d`,
+        replace: {
+          width: units(strapWidth + 2 * sa),
+          length: units(strapLength + strapWidth * 2 + 2 * sa),
+        },
+        suggest: {
+          text: 'flag:show',
+          icon: 'expand',
+          update: {
+            settings: ['expand', 1],
+          },
+        },
+      })
+      // Also hint about expand
+      store.flag.preset('expand')
+
+      return part.hide()
+    }
+
     points.topLeft = new Point(0, 0)
-    points.topLeftHem = points.topLeft.shift(270, hemWidth)
+    points.topLeftHem = points.topLeft.shift(270, strapWidth)
     points.topMiddle = new Point(strapWidth, 0)
-    points.topMiddleHem = new Point(strapWidth, hemWidth)
+    points.topMiddleHem = new Point(strapWidth, strapWidth)
     points.topRight = new Point(strapWidth * 2, 0)
-    points.bottomLeftHem = new Point(0, strapLength + hemWidth)
-    points.bottomLeft = new Point(0, strapLength + hemWidth * 2)
-    points.bottomMiddleHem = new Point(strapWidth, strapLength + hemWidth)
-    points.bottomMiddle = new Point(strapWidth, strapLength + hemWidth * 2)
-    points.bottomRight = new Point(strapWidth * 2, strapLength + hemWidth * 2)
+    points.bottomLeftHem = new Point(0, strapLength + strapWidth)
+    points.bottomLeft = new Point(0, strapLength + strapWidth * 2)
+    points.bottomMiddleHem = new Point(strapWidth, strapLength + strapWidth)
+    points.bottomMiddle = new Point(strapWidth, strapLength + strapWidth * 2)
+    points.bottomRight = new Point(strapWidth * 2, strapLength + strapWidth * 2)
 
     paths.seam = new Path()
       .move(points.topLeft)
@@ -56,25 +81,18 @@ export const strap = {
       .close()
       .attr('class', 'fabric')
 
-    paths.topHem = new Path()
-      .move(points.topLeftHem)
-      .line(points.topMiddleHem)
-      .attr('class', 'various dashed')
-      .attr('data-text', 'attach')
-      .attr('data-text-class', 'text-xs center')
-    paths.bottomHem = new Path()
-      .move(points.bottomLeftHem)
-      .line(points.bottomMiddleHem)
-      .attr('class', 'various dashed')
-      .attr('data-text', 'attach')
-      .attr('data-text-class', 'text-xs center')
-
-    paths.fold = new Path()
-      .move(points.topMiddle)
-      .line(points.bottomMiddle)
-      .attr('class', 'various dashed')
-      .attr('data-text', 'fold')
-      .attr('data-text-class', 'text-xs center')
+    if (complete) {
+      paths.fold = new Path()
+        .move(points.topMiddle)
+        .line(points.bottomMiddle)
+        .addClass('note help')
+        .addText('albert:foldHere', 'fill-note center')
+      macro('banner', {
+        id: 'foldHere',
+        path: paths.fold,
+        text: 'albert:foldHere',
+      })
+    }
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
@@ -83,7 +101,7 @@ export const strap = {
      */
 
     // Cut list
-    store.cutlist.addCut({ cut: 1, from: 'fabric' })
+    store.cutlist.addCut({ cut: 2, from: 'fabric' })
 
     // Logo
     points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)

@@ -16,7 +16,7 @@ const NewDesignPage = ({ page, design }) => {
   const Design = useDesign(design)
 
   return (
-    <PageWrapper {...page} title={design} layout={WorkbenchLayout}>
+    <PageWrapper {...page} title={design} layout={WorkbenchLayout} header={null}>
       <Workbench {...{ design, Design, DynamicDocs }} />
     </PageWrapper>
   )

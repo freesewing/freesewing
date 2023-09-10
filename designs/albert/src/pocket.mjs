@@ -3,38 +3,67 @@ import { front } from './front.mjs'
 export const pocket = {
   name: 'albert.pocket',
   after: front,
-  draft: ({ Point, Path, points, paths, Snippet, snippets, sa, macro, store, part }) => {
-    let pocketSize = store.get('pocketSize')
-    let hemWidth = store.get('hemWidth')
+  draft: ({
+    Point,
+    Path,
+    points,
+    paths,
+    Snippet,
+    snippets,
+    sa,
+    macro,
+    expand,
+    units,
+    store,
+    part,
+  }) => {
+    const pocketSize = store.get('pocketSize')
+
+    if (!expand) {
+      // Expand is on, do not draw the part but flag this to the user
+      store.flag.note({
+        title: `albert:cutPocket.t`,
+        desc: `albert:cutPocket.d`,
+        replace: {
+          width: units(pocketSize * 2 + 2 * sa),
+          length: units(pocketSize + 2 * sa + store.get('strapWidth')),
+        },
+        suggest: {
+          text: 'flag:show',
+          icon: 'expand',
+          update: {
+            settings: ['expand', 1],
+          },
+        },
+      })
+      // Also hint about expand
+      store.flag.preset('expand')
+
+      return part.hide()
+    }
 
     points.topLeft = new Point(0, 0)
     points.topRight = new Point(pocketSize, 0)
-    points.topLeftHem = points.topLeft.shift(270, hemWidth)
-    points.topRightHem = points.topRight.shift(270, hemWidth)
-    points.bottomLeft = points.topLeftHem.shift(270, pocketSize)
-    points.bottomRight = points.topRightHem.shift(270, pocketSize)
-
-    points.topCOF = points.topLeft.shift(270, pocketSize / 5)
-    points.bottomCOF = points.bottomLeft.shift(90, pocketSize / 5)
+    points.bottomLeft = points.topLeft.shift(270, pocketSize)
+    points.bottomRight = points.topRight.shift(270, pocketSize)
 
     paths.seam = new Path()
       .move(points.bottomLeft)
       .line(points.bottomRight)
       .line(points.topRight)
       .line(points.topLeft)
+      .move(points.bottomLeft)
       .close()
       .attr('class', 'fabric')
 
-    paths.all = paths.seam.clone().line(points.bottomLeft).close().attr('class', 'fabric')
-
-    paths.topHem = new Path()
-      .move(points.topLeftHem)
-      .line(points.topRightHem.shift(0, sa))
-      .attr('class', 'various dashed')
-      .attr('data-text', 'hem')
-      .attr('data-text-class', 'text-xs center')
-
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+    if (sa)
+      paths.sa = new Path()
+        .move(points.bottomLeft)
+        .line(points.bottomRight)
+        .line(points.topRight.shift(90, store.get('strapWidth')))
+        .line(points.topLeft.shift(90, store.get('strapWidth')))
+        .offset(sa)
+        .attr('class', 'fabric sa')
 
     /*
      * Annotations
@@ -42,8 +71,8 @@ export const pocket = {
 
     // Cut on fold
     macro('cutonfold', {
-      from: points.topCOF,
-      to: points.bottomCOF,
+      from: points.topLeft,
+      to: points.bottomLeft,
       reverse: true,
     })
 

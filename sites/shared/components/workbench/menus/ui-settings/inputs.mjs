@@ -16,6 +16,7 @@ export const ControlSettingInput = (props) => {
 }
 
 export const inputs = {
-  renderer: ListInput,
   control: ControlSettingInput,
+  kiosk: ListInput,
+  renderer: ListInput,
 }

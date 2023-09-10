@@ -7,7 +7,12 @@
     "strap": "Strap"
   },
   "s": {
-    "attachment": "Attachment"
+    "attachStrap": "Attach strap",
+    "cutPocket.t": "The pocket is not currently shown",
+    "cutPocket.d": "The **Pocket** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). It is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutStrap.t": "The straps are not currently shown",
+    "cutStrap.d": "The **Straps** are two strips of fabric {{{ width }}} wide and {{{ length }}} long (this includes seam allowance)</small>. They are not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "foldHere": "Fold here"
   },
   "o": {
     "backOpening": {

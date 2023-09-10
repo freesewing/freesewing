@@ -19,7 +19,7 @@ export const __loadDesignDefaults = () => ({
  */
 export const __loadPatternDefaults = () => ({
   complete: true,
-  expand: false,
+  expand: true,
   idPrefix: 'fs-',
   stackPrefix: '',
   locale: 'en',

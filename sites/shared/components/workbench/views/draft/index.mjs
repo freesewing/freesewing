@@ -49,7 +49,6 @@ export const DraftView = ({
         pattern: output,
         setSettings,
         Header: DraftHeader,
-        flags: pattern.setStores?.[0]?.plugins?.['plugin-annotations']?.flags,
         menu: (
           <DraftMenu
             {...{
@@ -66,6 +65,7 @@ export const DraftView = ({
               renderProps,
               view,
               setView,
+              flags: pattern.setStores?.[0]?.plugins?.['plugin-annotations']?.flags,
             }}
           />
         ),

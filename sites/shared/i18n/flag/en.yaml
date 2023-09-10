@@ -1,5 +1,10 @@
+apply: Apply
 dismiss: Dismiss
-expandIsOff: The <b>expand</b> core setting is disabled. Some parts are not fully drawn. Enable it to see them.
+expandIsOff.t: This design saves space (and trees) because expand is disabled
+expandIsOff.d: Because the **expand** core setting is currently disabled, some parts are not fully drawn or not shown at all. Typically, these are simple rectangles that only take up space. To expand all pattern parts to their full size, enable the expand setting.
 enable: Enable
+flagMenu.t: Messages from the designer
+flagMenuOne.d: The designer of this pattern has flagged something about your current draft that deserves your attention.
+flagMenuMany.d: The designer of this pattern has flagged some things about your current draft that deserve your attention.
 hide: Hide
 show: Show

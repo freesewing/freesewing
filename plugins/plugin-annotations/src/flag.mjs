@@ -34,13 +34,13 @@ function flag(type, store, data) {
     type = data.type
   }
 
-  if (!data.id && !data.msg) {
-    store.log.warning(`store.flag.${type} called without an id or msg property`)
+  if (!data.id && !data.title) {
+    store.log.warn(`store.flag.${type} called without an id or title property`)
     console.log(data)
     return
   }
 
-  store.set([...storeRoot, type, data.id ? data.id : data.msg], data)
+  store.set([...storeRoot, type, data.id ? data.id : data.title], data)
 }
 
 /*
@@ -53,7 +53,7 @@ function flag(type, store, data) {
 function unflag(type, store, id) {
   if (type === 'preset' && presets[id]) {
     type = presets[id].type
-    id = presets[id].id || presets[id].msg
+    id = presets[id].id || presets[id].title
   }
   store.unset([...storeRoot, type, id])
 }
@@ -64,7 +64,8 @@ function unflag(type, store, id) {
 const presets = {
   expand: {
     type: 'tip',
-    msg: 'flag:expandIsOff',
+    title: 'flag:expandIsOff.t',
+    desc: 'flag:expandIsOff.d',
     suggest: {
       text: 'flag:enable',
       icon: 'expand',

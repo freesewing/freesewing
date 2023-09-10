@@ -22,8 +22,8 @@ import {
   ZoomInIcon,
   ZoomOutIcon,
   ExpandIcon,
+  KioskIcon,
 } from 'shared/components/icons.mjs'
-import { shownHeaderSelector } from 'shared/components/wrappers/header.mjs'
 
 export const ns = ['common', 'core-settings', 'ui-settings']
 
@@ -128,11 +128,13 @@ export const DraftHeader = ({ update, settings, ui, control, account, design, se
 
   return (
     <div
-      className={`hidden lg:flex sticky top-0 z-20 ${shownHeaderSelector(
-        'lg:top-24'
-      )} transition-[top] duration-300 ease-in-out`}
+      className={`hidden lg:flex sticky top-0 ${
+        ui.kiosk ? 'z-50' : 'z-20'
+      }} transition-[top] duration-300 ease-in-out`}
     >
-      <div className="hidden lg:flex flex-row flex-wrap gap-4 py-4 pt-8 w-full bg-neutral text-neutral-content items-center justify-center">
+      <div
+        className={`hidden lg:flex flex-row flex-wrap gap-4 py-2 w-full bg-neutral text-neutral-content items-center justify-center`}
+      >
         {headerZoomButtons}
         <Spacer />
         <div className="flex flex-row items-center gap-4">
@@ -161,7 +163,7 @@ export const DraftHeader = ({ update, settings, ui, control, account, design, se
           />
           <IconButton
             Icon={ExpandIcon}
-            dflt={settings.expand}
+            dflt={settings.expand || typeof settings.expand === 'undefined' ? true : false}
             onClick={() =>
               update.settings(
                 ['expand'],
@@ -194,7 +196,14 @@ export const DraftHeader = ({ update, settings, ui, control, account, design, se
             </button>
           ))}
         </div>
-        <Spacer />
+        <div className="flex flex-row items-center gap-4">
+          <IconButton
+            Icon={KioskIcon}
+            dflt={ui.kiosk ? false : true}
+            onClick={() => update.ui(['kiosk'], ui.kiosk ? 0 : 1)}
+            title={t('ui-settings:kiosk.t')}
+          />
+        </div>
         <div className="flex flex-row items-center gap-4">
           <IconButton
             Icon={RocketIcon}

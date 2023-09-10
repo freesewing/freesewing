@@ -7,6 +7,7 @@ export const back = {
   options: {
     backNeckCutout: 0.05,
     backlineBend: { pct: 50, min: 25, max: 100, menu: 'style' },
+    knitBindingWidth: { pct: 600, min: 300, max: 800, menu: 'style' },
   },
   draft: ({
     store,
@@ -80,7 +81,7 @@ export const back = {
     macro('scalebox', { at: points.scalebox })
 
     // Store length of binding in the store
-    store.set('bindingWidth', sa * 6 || 60)
+    store.set('bindingWidth', (sa || 10) * options.knitBindingWidth)
     store.set(
       'armBindingLength',
       (new Path()
@@ -102,6 +103,25 @@ export const back = {
         0.95 +
         2 * sa
     )
+
+    // Warn user is SA > 10 because it makes the binding width rather large
+    if (sa > 10 && store.get('bindingWidth') > 61) {
+      store.flag.tip({
+        title: `aaron:largeSaAdaptKnitBindingWidth.t`,
+        desc: `aaron:largeSaAdaptKnitBindingWidth.d`,
+        replace: {
+          sa: units(sa),
+          width: units(store.get('bindingWidth')),
+        },
+        suggest: {
+          text: 'flag:apply',
+          icon: 'options',
+          update: {
+            settings: [['options', 'knitBindingWidth'], (60 / store.get('bindingWidth')) * 6],
+          },
+        },
+      })
+    }
 
     // Instructions for cutting the binding only of expand is falsy
     if (complete && !expand) {

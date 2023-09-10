@@ -13,6 +13,7 @@ export const neckBinding = {
     Snippet,
     snippets,
     macro,
+    complete,
     expand,
     units,
     part,
@@ -23,7 +24,8 @@ export const neckBinding = {
     if (!expand) {
       // Expand is on, do not draw the part but flag this to the user
       store.flag.note({
-        msg: `aaron:cutNeckBinding`,
+        title: `aaron:cutNeckBinding.t`,
+        desc: `aaron:cutNeckBinding.d`,
         replace: {
           width: units(w),
           length: units(l),
@@ -75,6 +77,24 @@ export const neckBinding = {
     // Logo
     points.logo = points.title.shift(-90, 75)
     snippets.logo = new Snippet('logo', points.logo).scale(0.75)
+
+    // Fold lines
+    if (complete) {
+      for (const i of [1, 2, 3]) {
+        paths[`fold${i}`] = new Path()
+          .move(points.topLeft.shiftFractionTowards(points.topRight, 0.25 * i))
+          .line(points.bottomLeft.shiftFractionTowards(points.bottomRight, 0.25 * i))
+          .addClass('note help')
+        macro('banner', {
+          id: `foldHere${i}`,
+          path: paths[`fold${i}`],
+          text: 'foldHere',
+          classes: 'fill-note text-sm center',
+          repeat: 30,
+          spaces: 60,
+        })
+      }
+    }
 
     // Dimensions
     macro('vd', {
