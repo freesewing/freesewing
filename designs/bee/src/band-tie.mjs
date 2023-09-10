@@ -16,8 +16,6 @@ export const bandTie = {
       menu: 'style',
     },
     bandTieLength: { pct: 35, min: 30, max: 50, menu: 'style' },
-    bandTieEnds: { dflt: 'straight', list: ['straight', 'pointed'], menu: 'style' },
-    bandTieColours: { dflt: 'one', list: ['one', 'two'], menu: 'style' },
   },
   draft: ({
     store,
@@ -67,15 +65,13 @@ export const bandTie = {
     points.bottomRight = new Point(points.topRight.x, bandTieLength)
 
     points.topMiddle = new Point(bandTieWidth, points.topLeft.y)
-    if (!options.crossBackTies && options.bandTieEnds === 'pointed')
-      points.topMiddle.y -= bandTieWidth
+    if (!options.crossBackTies && options.pointedTieEnds) points.topMiddle.y -= bandTieWidth
 
     points.bottomMiddle = new Point(points.topMiddle.x, bandTieLength)
 
-    paths.seam =
-      options.bandTieColours === 'one'
-        ? new Path().move(points.bottomRight).line(points.topRight)
-        : new Path().move(points.bottomMiddle)
+    paths.seam = options.duoColorTies
+      ? new Path().move(points.bottomMiddle)
+      : new Path().move(points.bottomRight).line(points.topRight)
     paths.seam.line(points.topMiddle).line(points.topLeft).line(points.bottomLeft).close()
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -83,6 +79,11 @@ export const bandTie = {
     /*
      * Annotations
      */
+
+    // Cut list
+    if (options.crossBackTies) store.cutlist.addCut({ cut: 1, from: 'fabric' })
+    else store.cutlist.addCut({ cut: 2, from: 'fabric' })
+
     points.cofLeft = points.bottomLeft.shift(0, bandTieWidth * (1 / 8))
     points.grainlineLeft = points.topLeft.translate(bandTieWidth * (1 / 8), bandTieLength * (3 / 4))
     // Title
@@ -95,17 +96,18 @@ export const bandTie = {
     })
 
     // Foldline
-    if (options.bandTieColours === 'one') {
-      points.cofRight = points.bottomLeft.shift(0, bandTieWidth * (15 / 8))
-      points.grainlineRight = points.grainlineLeft.shift(0, bandTieWidth * (14 / 8))
-      paths.foldline = new Path()
-        .move(points.bottomMiddle)
-        .line(points.topMiddle)
-        .addText('foldLine', 'center fill-note text-sm')
-        .attr('class', 'note help')
-    } else {
+    if (options.duoColorTies) {
       points.cofRight = points.bottomLeft.shift(0, bandTieWidth * (7 / 8))
       points.grainlineRight = points.grainlineLeft.shift(0, bandTieWidth * (7 / 8))
+    } else {
+      points.cofRight = points.bottomLeft.shift(0, bandTieWidth * (15 / 8))
+      points.grainlineRight = points.grainlineLeft.shift(0, bandTieWidth * (14 / 8))
+      if (complete)
+        paths.foldline = new Path()
+          .move(points.bottomMiddle)
+          .line(points.topMiddle)
+          .addText('foldLine', 'center fill-note text-sm')
+          .attr('class', 'note help')
     }
 
     // Grainline
@@ -134,12 +136,6 @@ export const bandTie = {
       snippets.centreNotch = new Snippet('notch', points.bottomRight)
       points.sideNotch = points.bottomRight.shift(90, gatherLength)
       snippets.sideNotch = new Snippet('notch', points.sideNotch)
-      paths.casingFold = new Path()
-        .move(points.topLeft.shift(-90, options.neckTieWidth))
-        .line(points.topRight.shift(-90, options.neckTieWidth))
-        .attr('class', 'various')
-        .attr('data-text', 'Fold-line')
-        .attr('data-text-class', 'center')
     }
 
     macro('vd', {
@@ -151,7 +147,7 @@ export const bandTie = {
     macro('hd', {
       id: 'wTop',
       from: points.topLeft,
-      to: points.topRight,
+      to: options.duoColorties ? points.middleRight : points.topRight,
       y: points.topLeft.x - sa - 20,
     })
 
