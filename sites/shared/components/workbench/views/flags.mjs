@@ -29,7 +29,7 @@ const flagIcons = {
   options: OptionsIcon,
 }
 
-export const Flag = ({ type, data, t, handleUpdate }) => {
+export const Flag = ({ data, t, handleUpdate }) => {
   const BtnIcon = data.suggest?.icon ? flagIcons[data.suggest.icon] : false
 
   const button =
@@ -122,7 +122,7 @@ export const FlagsAccordionEntries = ({ flags, update }) => {
             </div>
             <span className="uppercase font-bold">{flag.type}</span>
           </div>,
-          <Flag key={key} t={t} type={flag.type} data={flag} handleUpdate={handleUpdate} />,
+          <Flag key={key} t={t} data={flag} handleUpdate={handleUpdate} />,
         ]
       })}
     />
