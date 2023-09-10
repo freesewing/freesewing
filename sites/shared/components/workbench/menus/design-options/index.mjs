@@ -103,6 +103,7 @@ export const DesignOptions = ({
         updateFunc,
         values,
         isDesignOptionsGroup: true,
+        design,
       }}
     />
   )
