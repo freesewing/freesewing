@@ -14,7 +14,7 @@ import { StringInput, MarkdownInput } from 'shared/components/inputs.mjs'
 import { UploadIcon, EditIcon, PlusIcon, BookmarkIcon } from 'shared/components/icons.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { PageLink } from 'shared/components/link.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 
 export const ns = ['workbench', 'status']
 

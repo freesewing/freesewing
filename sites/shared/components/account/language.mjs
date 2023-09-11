@@ -8,7 +8,7 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Components
 import { BackToAccountButton, NumberBullet } from './shared.mjs'
 import { ListInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 // Config
 import { siteConfig as conf } from 'site/site.config.mjs'
 

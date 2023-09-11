@@ -11,7 +11,7 @@ import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 import { MarkdownInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 import { TipIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['account', 'status']

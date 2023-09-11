@@ -47,7 +47,7 @@ import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import Markdown from 'react-markdown'
 import Timeago from 'react-timeago'
 import { DisplayRow } from './shared.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 import {
   StringInput,
   PassiveImageInput,

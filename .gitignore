@@ -39,7 +39,6 @@ packages/new-design/lib/banner.mjs
 
 # Lab auto-generated content
 sites/lab/lib
-sites/lab/pages/*
 sites/lab/public/android-chrome-192x192.png
 sites/lab/public/android-chrome-384x384.png
 sites/lab/public/apple-touch-icon.png
@@ -50,10 +49,6 @@ sites/lab/public/favicon.ico
 sites/lab/public/mstile-150x150.png
 sites/lab/public/safari-pinned-tab.svg
 sites/lab/public/site.webmanifest
-# but not the indexes
-!sites/lab/pages/index.mjs
-!sites/lab/pages/code/index.mjs
-!sites/lab/pages/docs/index.mjs
 
 # dev auto-generated content
 sites/dev/public/android-chrome-192x192.png
