@@ -188,6 +188,7 @@ export const MenuItemGroup = ({
   language,
   getDocsPath,
   isDesignOptionsGroup = false,
+  design,
 }) => {
   // map the entries in the structure
   const content = Object.entries(structure).map(([itemName, item]) => {
@@ -227,6 +228,7 @@ export const MenuItemGroup = ({
             config={item}
             t={t}
             changed={wasChanged(currentValues[itemName], item)}
+            design={design}
           />
         </div>
       </div>,
@@ -254,6 +256,7 @@ export const MenuItemGroup = ({
             language,
             getDocsPath,
             isDesignOptionsGroup,
+            design,
           }}
         />
       ) : (
@@ -274,6 +277,7 @@ export const MenuItemGroup = ({
             DynamicDocs,
             docsPath: getDocsPath(itemName),
             language,
+            design,
           }}
         />
       ),

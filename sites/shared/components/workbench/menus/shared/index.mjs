@@ -69,6 +69,7 @@ export const WorkbenchMenu = ({
   children,
   //docsPath,
   isDesignOptionsGroup,
+  design,
 }) => {
   // get translation for the menu
   const { t } = useTranslation(ns)
@@ -99,6 +100,7 @@ export const WorkbenchMenu = ({
         getDocsPath,
         language,
         isDesignOptionsGroup,
+        design,
       }}
     />
   )

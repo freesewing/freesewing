@@ -1,7 +1,7 @@
 import { nsMerge } from 'shared/utils.mjs'
 import { MeasieInput, ns as inputNs } from 'shared/components/inputs.mjs'
 import { useTranslation } from 'next-i18next'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 
 export const ns = nsMerge('workbench', inputNs)
 

@@ -85,7 +85,7 @@ export const FlagsAccordionTitle = ({ flags }) => {
   return (
     <>
       <h5 className="flex flex-row gap-2 items-center justify-between w-full">
-        <span>
+        <span className="text-left">
           {t('flag:flagMenu.t')} ({Object.keys(flagList).length})
         </span>
         <FlagIcon className="w-8 h-8" />
@@ -117,7 +117,9 @@ export const FlagsAccordionEntries = ({ flags, update }) => {
         return [
           <div className="w-full flex flex-row gap2 justify-between" key={i}>
             <div className="flex flex-row items-center gap-2">
-              <Icon />
+              <div className="no-shrink">
+                <Icon />
+              </div>
               <span className="font-medium text-left">{title}</span>
             </div>
             <span className="uppercase font-bold">{flag.type}</span>

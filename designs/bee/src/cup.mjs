@@ -18,6 +18,8 @@ export const cup = {
     sideCurve: { pct: 0, min: -50, max: 50, menu: 'fit' },
     frontCurve: { pct: 0, min: -50, max: 50, menu: 'fit' },
     bellaGuide: { bool: false, menu: 'fit' },
+    pointedTieEnds: { bool: false, menu: 'style' },
+    duoColorTies: { bool: false, menu: 'style' },
     //changed from Bella
     backArmholeCurvature: 0.63,
     backArmholePitchDepth: 0.35,
@@ -29,11 +31,11 @@ export const cup = {
     backHemSlope: 2.5,
     backNeckCutout: 0.06,
     //catergory changed from Bella
-    armholeDepth: { pct: 44, min: 38, max: 46, menu: 'advanced.bellaArmhole' },
-    frontArmholePitchDepth: { pct: 29, max: 31, min: 27, menu: 'advanced.bellaArmhole' },
-    backDartHeight: { pct: 46, min: 38, max: 54, menu: 'advanced.bellaDarts' },
-    frontShoulderWidth: { pct: 95, max: 98, min: 92, menu: 'advanced.bellaAdvanced' },
-    highBustWidth: { pct: 86, max: 92, min: 80, menu: 'advanced.bellaAdvanced' },
+    armholeDepth: { pct: 44, min: 38, max: 46, menu: 'advanced' },
+    frontArmholePitchDepth: { pct: 29, max: 31, min: 27, menu: 'advanced' },
+    backDartHeight: { pct: 46, min: 38, max: 54, menu: 'advanced' },
+    frontShoulderWidth: { pct: 95, max: 98, min: 92, menu: 'advanced' },
+    highBustWidth: { pct: 86, max: 92, min: 80, menu: 'advanced' },
   },
   draft: ({
     store,
@@ -174,7 +176,7 @@ export const cup = {
         .line(points.bustA)
         .line(points.waistDartRightRotated)
         .line(points.sideHemNew)
-        .attr('class', 'various lashed')
+        .addClass('note help')
         .close()
     }
 
@@ -208,6 +210,9 @@ export const cup = {
     // So I am setting ignoreOnFold below until I fix this
     macro('rmcutonfold')
     store.cutlist.addCut({ cut: 2, material: 'fabric', ignoreOnFold: true })
+
+    points.gridAnchor = points.lefti
+
     if (options.reversible)
       store.cutlist.addCut({ cut: 2, material: 'altFabric1', ignoreOnFold: true })
     // Grainline

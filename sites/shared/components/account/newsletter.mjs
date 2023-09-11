@@ -9,7 +9,7 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { BackToAccountButton, Icons, welcomeSteps } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 import { ListInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 import { OkIcon, NoIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['account', 'status']

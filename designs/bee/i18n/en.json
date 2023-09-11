@@ -8,9 +8,10 @@
   },
   "s": {
     "casingStitchingLine": "Sew down casing here",
-    "cutBandTie": "Cut 1 band tie:",
-    "cutNeckTie": "Cut 2 neck ties:",
-    "neckTieLength": "Length of the neck ties"
+    "cutBandTie.t": "The band ties are not shown",
+    "cutBandTie.d": "The **band ties** are {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). Refer to the cutting instructions for details on how many of them you should cut. \n\nThey are not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutNeckTie.t": "The neck ties are not shown",
+    "cutNeckTie.d": "The **neck ties** are {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). Refer to the cutting instructions for details on how many of them you should cut. \n\nThey are not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part."
   },
   "o": {
     "chestEase": {
@@ -46,12 +47,28 @@
       "d": "Controls the curvature of the front of the bikini cup"
     },
     "bellaGuide": {
+      "t": "Show Bella outline",
+      "d": "Do you want the pattern to show the outline of the Bella block Bee is based on?"
+    },
+    "bellaGuideYes": {
       "t": "Show Bella",
-      "d": "Shows the outline of the Bella block Bee is based on"
+      "d": "Shows the outline of the Bella block"
+    },
+    "bellaGuideNo": {
+      "t": "Do not show Bella",
+      "d": "Only shows the final Bee pattern"
     },
     "ties": {
       "t": "Ties",
-      "d": "Whether to includes ties, yes or no"
+      "d": "Whether to includes ties on the pattern"
+    },
+    "tiesYes": {
+      "t": "With ties",
+      "d": "Draft a pattern including ties"
+    },
+    "tiesNo": {
+      "t": "Without ties",
+      "d": "Draft a pattern without ties"
     },
     "bandTieWidth": {
       "t": "Band (chest) tie width",
@@ -61,13 +78,29 @@
       "t": "Band (chest) tie length",
       "d": "Controls the length of the ties around your chest"
     },
-    "bandTieEnds": {
-      "t": "Band (chest) tie ends",
-      "d": "Whether you like straight or pointy ends on the ties around your chest"
+    "pointedTieEnds": {
+      "t": "Pointed tie ends",
+      "d": "Enable this options if you prefer tie ends to be pointy, rarther than straight"
     },
-    "bandTieColours": {
-      "t": "Band (chest) tie length colours",
-      "d": "Whether you want single color ties around your chest, or dual-coloured ones"
+    "pointedTieEndsYes": {
+      "t": "Pointy ends",
+      "d": "Make the tie ends pointy"
+    },
+    "pointedTieEndsNo": {
+      "t": "Straight ends",
+      "d": "Make the tie ends straight"
+    },
+    "duoColorTies": {
+      "t": "Duo-colored ties",
+      "d": "Enable this option to generate a pattern for bands using two colors instead of one"
+    },
+    "duoColorTiesYes": {
+      "t": "Two colors",
+      "d": "Use two colors for the ties"
+    },
+    "duoColorTiesNo": {
+      "t": "Single color",
+      "d": "Use a single color for the ties"
     },
     "neckTieWidth": {
       "t": "Neck tie width",
@@ -88,6 +121,14 @@
     "crossBackTies": {
       "t": "Cross back ties",
       "d": "Whether you'd like to use the cross back tie variation of Bee"
+    },
+    "crossBackTiesYes": {
+      "t": "Use cross back ties",
+      "d": "Generate a pattern for ties that cross your back"
+    },
+    "crossBackTiesNo": {
+      "t": "Use regular ties",
+      "d": "Generate a pattern for the default ties"
     },
     "bandLength": {
       "t": "Band Length (Cross back ties)",
@@ -130,7 +171,7 @@
       "d": "Create a Bee that you can wear with both sides out, posssibly ussing different fabrics"
     },
     "reversibleNo": {
-      "t": "Do not make it teversible",
+      "t": "Do not make it reversible",
       "d": "Create a Bee with where only one side is intended to be worn on the outside"
     }
   }

@@ -47,7 +47,7 @@ export const BookmarkIcon = (props) => (
 )
 
 export const BoolNoIcon = ({ size = 6 }) => (
-  <NoIcon className={`w-${size} h-${size} text-error`} stroke={3} />
+  <NoIcon className={`w-${size} h-${size} text-error`} stroke={4} />
 )
 export const BoolYesIcon = ({ size = 6 }) => (
   <OkIcon className={`w-${size} h-${size} text-success`} stroke={4} />
@@ -324,6 +324,12 @@ export const FlagIcon = (props) => (
   </IconWrapper>
 )
 
+export const ForbiddenIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+  </IconWrapper>
+)
+
 export const FreeSewingIcon = (props) => (
   <IconWrapper {...props} stroke={0} fill>
     <path d={logoPath} />
@@ -495,7 +501,7 @@ export const NewsletterIcon = (props) => (
 
 export const NoIcon = (props) => (
   <IconWrapper {...props}>
-    <path d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+    <path d="M6,6 L 18,18 M 18,6 L 6,18" />
   </IconWrapper>
 )
 

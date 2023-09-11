@@ -2,22 +2,22 @@ import path from 'path'
 import fse from 'fs-extra'
 
 const copyFromOrg = [
-  'account',
-  'confirm',
-  'designs',
-  'new',
-  'patterns',
-  'sets',
-  'signin',
-  'signup',
-  'welcome',
+  //['account'],
+  //['confirm'],
+  //['designs'],
+  ['new', 'index.mjs'],
+  ['new', '[design].mjs'],
+  //['patterns'],
+  //['sets'],
+  ['signin'],
+  //['signup'],
 ]
 
 const copyOrgFiles = () => {
   for (const folder of copyFromOrg) {
     fse.copySync(
-      path.resolve('..', 'org', 'pages', folder),
-      path.resolve('..', 'lab', 'pages', folder),
+      path.resolve('..', 'org', 'pages', ...folder),
+      path.resolve('..', 'lab', 'pages', ...folder),
       { overwrite: true }
     )
   }
