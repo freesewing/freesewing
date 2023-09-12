@@ -106,7 +106,11 @@ export const NewSet = () => {
 }
 
 export const MeasieVal = ({ val, m, imperial }) =>
-  isDegreeMeasurement(m) ? <span>{val}°</span> : <span>{formatMm(val, imperial)}</span>
+  isDegreeMeasurement(m) ? (
+    <span>{val}°</span>
+  ) : (
+    <span dangerouslySetInnerHTML={{ __html: formatMm(val, imperial) }}></span>
+  )
 
 export const MsetCard = ({
   set,
@@ -399,7 +403,7 @@ export const Mset = ({ id, publicOnly = false }) => {
             <h2>{t('measies')}</h2>
             {Object.entries(mset.measies).map(([m, val]) =>
               val > 0 ? (
-                <DisplayRow title={<MeasieVal m={m} val={val} />} key={m}>
+                <DisplayRow title={<MeasieVal {...{ m, val, imperial: mset.imperial }} />} key={m}>
                   <span className="font-medium">{t(m)}</span>
                 </DisplayRow>
               ) : null
