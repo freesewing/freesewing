@@ -61,9 +61,6 @@ export const back = {
     log,
     part,
   }) => {
-    store.flag.warn({ msg: `bella:cbSeamBustBelowWaist` })
-
-    console.log(store)
     // Get to work
     points.cbNeck = new Point(0, measurements.neck * options.backNeckCutout)
     points.hps = new Point(measurements.neck * options.neckWidthBack, 0)
