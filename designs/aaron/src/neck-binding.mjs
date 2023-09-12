@@ -24,8 +24,7 @@ export const neckBinding = {
     if (!expand) {
       // Expand is on, do not draw the part but flag this to the user
       store.flag.note({
-        title: `aaron:cutNeckBinding.t`,
-        desc: `aaron:cutNeckBinding.d`,
+        msg: `aaron:cutNeckBinding`,
         replace: {
           width: units(w),
           length: units(l),
