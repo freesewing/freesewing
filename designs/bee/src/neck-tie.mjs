@@ -57,8 +57,7 @@ export const neckTie = {
      */
     if (!expand) {
       store.flag.note({
-        title: `bee:cutNeckTie.t`,
-        desc: `bee:cutNeckTie.d`,
+        msg: `bee:cutNeckTie`,
         replace: {
           width: units(absoluteOptions.neckTieWidth * 2 + 2 * sa),
           length: units(neckTieLength * 2),
