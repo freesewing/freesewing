@@ -71,6 +71,7 @@ export const MenuItem = ({
   DynamicDocs,
   docsPath,
   language,
+  design,
 }) => {
   // state for knowing whether the override input should be shown
   const [override, setOverride] = useState(false)
@@ -86,6 +87,7 @@ export const MenuItem = ({
       t,
       changed,
       override,
+      design,
       ...passProps,
     }),
     [name, config, current, updateFunc, t, changed, override, passProps, control]

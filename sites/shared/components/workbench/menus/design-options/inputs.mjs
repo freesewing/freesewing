@@ -37,7 +37,7 @@ export const inputs = {
   constant: ConstantInput,
   count: (props) => <SliderInput {...props} config={{ ...props.config, step: 1 }} />,
   deg: DegInput,
-  list: ListInput,
+  list: (props) => <ListInput {...props} isDesignOption />,
   mm: () => <span>FIXME: Mm options are deprecated. Please report this </span>,
   pct: PctOptionInput,
 }
