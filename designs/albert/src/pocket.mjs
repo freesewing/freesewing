@@ -22,8 +22,7 @@ export const pocket = {
     if (!expand) {
       // Expand is on, do not draw the part but flag this to the user
       store.flag.note({
-        title: `albert:cutPocket.t`,
-        desc: `albert:cutPocket.d`,
+        msg: `albert:cutPocket`,
         replace: {
           width: units(pocketSize * 2 + 2 * sa),
           length: units(pocketSize + 2 * sa + store.get('strapWidth')),
