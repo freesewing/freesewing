@@ -120,9 +120,9 @@
     border-bottom: 2px solid hsl(var(--b3));
   }
 
-  /* Don't use mardown padding on paragraphs in flags */
+  /* Padding on markdown paragraphs in flags */
   .flag p {
-    padding: 0;
+    padding: 0.25rem 0;
     margin: 0;
   }
 

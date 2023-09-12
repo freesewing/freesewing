@@ -107,8 +107,7 @@ export const back = {
     // Warn user is SA > 10 because it makes the binding width rather large
     if (sa > 10 && store.get('bindingWidth') > 61) {
       store.flag.tip({
-        title: `aaron:largeSaAdaptKnitBindingWidth.t`,
-        desc: `aaron:largeSaAdaptKnitBindingWidth.d`,
+        msg: `aaron:largeSaAdaptKnitBindingWidth`,
         replace: {
           sa: units(sa),
           width: units(store.get('bindingWidth')),

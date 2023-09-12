@@ -33,6 +33,11 @@ function flag(type, store, data) {
     data = presets[data]
     type = data.type
   }
+  if (data.msg) {
+    data.title = data.msg + '.t'
+    data.desc = data.msg + '.d'
+    delete data.msg
+  }
 
   if (!data.id && !data.title) {
     store.log.warn(`store.flag.${type} called without an id or title property`)

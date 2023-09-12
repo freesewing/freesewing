@@ -10,7 +10,8 @@
   },
   "s": {
     "cutRibbon": "Cut the adjustment ribbon:",
-    "cutCollarBandFlag": "Not shown: the <b>Collar band</b>, two strips of fabric {{ height }} wide and {{ length }} long <small>(this includes seam allowance)</small>"
+    "cutCollarBandFlag.t": "The collar band is not shown",
+    "cutCollarBandFlag.d": "Not shown: the <b>Collar band</b>, two strips of fabric {{ height }} wide and {{ length }} long <small>(this includes seam allowance)</small>"
   },
   "o": {
     "adjustmentRibbon": {

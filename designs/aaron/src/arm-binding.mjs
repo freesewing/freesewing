@@ -24,8 +24,7 @@ export const armBinding = {
     if (!expand) {
       // Expand is on, do not draw the part but flag this to the user
       store.flag.note({
-        title: `aaron:cutArmBinding.t`,
-        desc: `aaron:cutArmBinding.d`,
+        msg: `aaron:cutArmBinding`,
         replace: {
           width: units(w),
           length: units(l),

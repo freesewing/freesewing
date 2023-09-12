@@ -61,8 +61,6 @@ export const back = {
     log,
     part,
   }) => {
-    let adjustment_warning = false
-
     // Get to work
     points.cbNeck = new Point(0, measurements.neck * options.backNeckCutout)
     points.hps = new Point(measurements.neck * options.neckWidthBack, 0)
@@ -179,7 +177,7 @@ export const back = {
       )
     } else {
       log.warn('Unable to place bust above waist on center back seam. Using waist height instead.')
-      adjustment_warning = true
+      store.flag.warn({ msg: `bella:cbSeamBustBelowWaist` })
       points.bustCenter = points.waistCenter.clone()
     }
     if (points.bustCenter.y < points.armhole.y) {
@@ -204,7 +202,7 @@ export const back = {
       )
     } else {
       log.warn('Unable to place bust above waist on side back seam. Using waist height instead.')
-      adjustment_warning = true
+      store.flag.warn({ msg: `bella:sideSeamBustBelowWaist` })
       points.bustSide = points.waistSide.clone()
     }
     if (points.bustCenter.y < points.dartTip.y) {
@@ -220,7 +218,7 @@ export const back = {
       )
     } else {
       log.warn('Unable to adjust bottom of dart on back part. Using unadjusted dart instead.')
-      adjustment_warning = true
+      store.flag.warn({ msg: `bella:bustDartCompromise` })
       points.bustDartLeft = points.dartBottomLeft.clone()
     }
     points.bustDartRight = points.bustDartLeft.flipX(points.dartTip)
@@ -419,18 +417,6 @@ export const back = {
       d: 10 + sa,
     })
 
-    // FIXME: This is not how we want to do things
-    if (adjustment_warning)
-      log.warn(
-        'We were not able to generate the Back pattern piece correctly. ' +
-          'Manual fitting and alteration of this and other pattern pieces ' +
-          'are likely to be needed. ' +
-          'First, please retake your measurements and generate a new ' +
-          'pattern using the new measurements. ' +
-          'If you still see this warning with the new pattern, then please ' +
-          'make a test garment, check fit, and make alterations as ' +
-          'necessary before trying to make the final garment.'
-      )
     return part
   },
 }
