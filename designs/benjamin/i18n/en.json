@@ -18,6 +18,14 @@
       "t": "Adjustment ribbon",
       "d": "Whether or not to include an adjustment ribbon"
     },
+    "adjustmentRibbonYes": {
+      "t": "Include adjustment ribbon",
+      "d": "Generate a pattern with an adjustment ribbon included"
+    },
+    "adjustmentRibbonNo": {
+      "t": "Exclude adjustment ribbon",
+      "d": "Generate a pattern without an adjustment ribbon included"
+    },
     "bandLength": {
       "t": "Band length",
       "d": "Length of the band"
