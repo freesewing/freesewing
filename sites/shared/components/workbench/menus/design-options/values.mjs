@@ -25,7 +25,7 @@ export const CountOptionValue = ({ config, current, changed }) => (
 
 /** Displays a list option value */
 export const ListOptionValue = (props) => (
-  <ListValue {...props} t={(input) => props.t(`${props.design}:${input}.t`)} />
+  <ListValue {...props} t={(input) => props.t(`${props.design}:${props.config.name}.${input}.t`)} />
 )
 
 /** Displays a degree value */

@@ -246,7 +246,7 @@ export const ListInput = ({
     const titleKey = config.choiceTitles
       ? config.choiceTitles[entry]
       : isDesignOption
-      ? `${design}:${entry}`
+      ? `${design}:${name}.${entry}`
       : `${name}.o.${entry}`
     const title = t(`${titleKey}.t`)
     const desc = t(`${titleKey}.d`)
