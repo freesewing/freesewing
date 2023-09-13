@@ -25,7 +25,10 @@ export const base = {
     chestEase: { pct: 15, min: -4, max: 35, menu: 'fit' },
     collarEase: { pct: 5, min: 0, max: 10, menu: 'fit' },
     cuffEase: { pct: 20, min: 0, max: 200, menu: 'fit' },
-    draftForHighBust: { bool: false, menu: 'fit' },
+    draftForHighBust: {
+      bool: false,
+      menu: ({ measurements }) => (measurements.highBust ? 'fit' : false),
+    },
     shoulderEase: { pct: 0, min: -2, max: 6, menu: 'fit' },
     // Style
     lengthBonus: { pct: 0, min: -4, max: 60, menu: 'style' },
@@ -33,8 +36,18 @@ export const base = {
     s3Armhole: { pct: 0, min: -100, max: 100, menu: 'style' },
     // Advanced
     acrossBackFactor: { pct: 98, min: 93, max: 100, menu: 'advanced' },
-    armholeDepth: { pct: 5, min: -10, max: 50, menu: 'advanced' },
-    armholeDepthFactor: { pct: 55, min: 50, max: 70, menu: 'advanced' },
+    armholeDepth: {
+      pct: 2,
+      min: -10,
+      max: 50,
+      menu: ({ options }) => (options.legacyArmholeDepth ? false : 'advanced'),
+    },
+    armholeDepthFactor: {
+      pct: 55,
+      min: 50,
+      max: 70,
+      menu: ({ options }) => (options.legacyArmholeDepth ? 'advanced' : false),
+    },
     backNeckCutout: { pct: 5, min: 2, max: 8, menu: 'advanced' },
     frontArmholeDeeper: { pct: 0.2, min: 0, max: 0.5, menu: 'advanced' },
     shoulderSlopeReduction: { pct: 0, min: 0, max: 80, menu: 'advanced' },
