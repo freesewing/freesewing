@@ -31,7 +31,7 @@ function draftBentUnderSleeve({ macro, Path, points, paths, snippets, Snippet, s
    */
 
   // Cutlist
-  store.cutlist.addCut()
+  store.cutlist.addCut({ cut: 2, from: 'fabric' })
 
   // Logo
   snippets.logo = new Snippet('logo', points.elbowCenter)

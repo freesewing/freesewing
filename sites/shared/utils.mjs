@@ -187,7 +187,7 @@ export const measurementAsMm = (value, units = 'metric') => {
   }
 }
 
-export const optionsMenuStructure = (options) => {
+export const optionsMenuStructure = (options, settings) => {
   if (!options) return options
   const sorted = {}
   for (const [name, option] of Object.entries(options)) {
@@ -201,6 +201,7 @@ export const optionsMenuStructure = (options) => {
       const oType = optionType(option)
       option.dflt = option.dflt || option[oType]
       if (oType === 'pct') option.dflt /= 100
+      if (typeof option.menu === 'function') option.menu = option.menu(settings)
       if (option.menu) {
         set(menu, `${option.menu}.isGroup`, true)
         set(menu, `${option.menu}.${option.name}`, option)

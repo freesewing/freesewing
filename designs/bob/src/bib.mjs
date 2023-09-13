@@ -183,16 +183,9 @@ export const bib = {
         l: units(paths.seam.length()),
       },
     })
-    store.flag.note({
-      msg: 'bob:fabricNeeded',
-      replace: {
-        w: units(points.bottomLeftStart.dx(points.bottomRightEnd)),
-        h: units(points.tipRightTopStart.dy(points.bottomLeftEnd)),
-      },
-    })
 
     // Cut list
-    store.cutlist.addCut({ cut: 1 })
+    store.cutlist.addCut({ cut: 1, from: 'fabric' })
 
     // Add the snaps
     snippets.snapStud = new Snippet('snap-stud', points.snapLeft)

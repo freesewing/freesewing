@@ -2,6 +2,7 @@ addNotes: Add notes
 addSettingsToNotes: Add settings to notes
 advanced: Advanced
 appliedMeasies: We applied a new measurements set to this pattern.
+armhole: Armhole
 attributes: Attributes
 bookmarkPattern: Bookmark pattern
 bottomRight: Bottom Right
@@ -21,6 +22,7 @@ columns: columns
 configurePattern: Configure pattern
 currentPrintLayout: Current print layout
 cutLayout: Cut Layout
+darts: Darts
 designOptions.d: Test the effect of an option on the way this pattern looks
 docs: Documentation
 draft: Draft
@@ -82,6 +84,7 @@ seeMissingMeasies: See missing measurements
 showAllParts: Show all pattern parts
 showMovableButtons: Buttons
 showOnlyThisPart: Show only this pattern part
+sleevecap: Sleevecap
 style: Style
 test: Test
 testDesignMeasurement: "Test {design} measurements: {measurement}"

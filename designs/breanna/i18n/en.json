@@ -51,6 +51,14 @@
       "t": "Shoulder dart",
       "d": "Whether or not to inlude a dart at the shoulder to round the back"
     },
+    "shoulderDartNo": {
+      "t": "Do not draft a shoulder dart",
+      "d": "Drafts a pattern without shoulder darts"
+    },
+    "shoulderDartYes": {
+      "t": "Draft a shoulder dart",
+      "d": "Drafts a pattern with shoulder darts"
+    },
     "shoulderDartSize": {
       "t": "Shoulder dart size",
       "d": "The size of the shoulder dart"
@@ -150,6 +158,14 @@
     "waistDart": {
       "t": "Waist dart",
       "d": "Whether or not to inlude a dart at the waist to round the back"
+    },
+    "waistDartNo": {
+      "t": "Do not draft a waist dart",
+      "d": "Drafts a pattern without waist darts"
+    },
+    "waistDartYes": {
+      "t": "Draft a waist dart",
+      "d": "Drafts a pattern with waist darts"
     },
     "waistDartSize": {
       "t": "Waist dart size",
