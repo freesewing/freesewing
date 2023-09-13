@@ -30,26 +30,33 @@ export const cutlistHooks = {
  * @param {boolean} so.ignoreOnFold       should these cutting instructions ignore any cutOnFold information set by the part
  */
 function addCut(store, so = {}) {
+  if (Array.isArray(so)) {
+    for (const cut of so) addCut(store, cut)
+    return store
+  }
   const { cut = 2, identical = false, bias = false, ignoreOnFold = false } = so
-  // Make 'from' an alias for material
-  let { material = 'fabric' } = so
-  if (so.from) material = so.from
+  // Make 'material' an alias for 'from'
+  let { from = 'fabric' } = so
+  if (so.material) {
+    from = so.material
+    store.log.warn(`Using 'material' in cutlist is deprecated, please use 'from' instead'`)
+  }
 
   const partName = store.get('activePart')
   if (cut === false) {
-    if (material === false) store.unset(['cutlist', partName, 'materials'])
-    else store.unset(['cutlist', partName, 'materials', material])
+    if (from === false) store.unset(['cutlist', partName, 'materials'])
+    else store.unset(['cutlist', partName, 'materials', from])
     return store
   }
   if (!(Number.isInteger(cut) && cut > -1)) {
     store.log.error(`Tried to set cut to a value that is not a positive integer`)
     return store
   }
-  if (typeof material !== 'string') {
+  if (typeof from !== 'string') {
     store.log.warn(`Tried to set material to a value that is not a string`)
     return store
   }
-  const path = ['cutlist', partName, 'materials', material]
+  const path = ['cutlist', partName, 'materials', from]
   const existing = store.get(path, [])
   store.set(path, existing.concat({ cut, identical, bias, ignoreOnFold }))
 
