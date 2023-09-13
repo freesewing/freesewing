@@ -117,10 +117,10 @@ export const neckTie = {
 
     // Cut list
     if (options.reversible) {
-      store.cutlist.addCut({ cut: 2, from: 'fabric' })
-      store.cutlist.addCut({ cut: 2, from: 'altFabric1' })
+      store.cutlist.addCut({ cut: 2, from: 'fabric', onFold: true })
+      store.cutlist.addCut({ cut: 2, from: 'altFabric1', onFold: true })
     } else {
-      store.cutlist.addCut({ cut: 4, from: 'fabric' })
+      store.cutlist.addCut({ cut: 4, from: 'fabric', onFold: true })
     }
 
     // Title

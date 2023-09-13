@@ -181,7 +181,7 @@ function draftBreannaBack({
   })
 
   // Cut list
-  store.cutlist.addCut({ cut: 2, from: 'fabric' })
+  store.cutlist.addCut({ cut: 2, from: 'fabric', onFold: true })
 
   // Title
   points.title = new Point(points.armhole.x / 4, points.armhole.y - 60)

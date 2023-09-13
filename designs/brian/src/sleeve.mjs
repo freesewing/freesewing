@@ -65,7 +65,7 @@ export const sleeve = {
     })
 
     // Cut list
-    store.cutlist.addCut({ cut: 2, from: 'fabric', ignoreOnFold: true })
+    store.cutlist.addCut({ cut: 2, from: 'fabric' })
 
     // Logo
     points.logo = points.centerBiceps.shiftFractionTowards(points.centerWrist, 0.3)

@@ -178,7 +178,7 @@ export const front = {
     points.gridAnchor = points.cfHem
 
     // Provide cutting instructions
-    store.cutlist.addCut({ cut: 1, onFold: 1 })
+    store.cutlist.addCut({ cut: 1, from: 'fabric', onFold: 1 })
 
     // Add title
     points.title = new Point(points.waist.x / 2, points.waist.y)
