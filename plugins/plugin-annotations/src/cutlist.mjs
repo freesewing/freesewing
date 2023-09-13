@@ -24,23 +24,17 @@ export const cutlistHooks = {
  * @param {Store} store                   the Store
  * @param {Object} so                     a set of cutting instructions for a material
  * @param {number} so.cut = 2             the number of pieces to cut from the specified fabric
- * @param {string} so.material = fabric   the name of the material to cut from
+ * @param {string} so.from = fabric       the name of the material to cut from
  * @param {boolean} so.identical = false  should even numbers of pieces be cut in the same direction or mirrored
- * @param {boolean} so.bias = false       should the pieces in these cutting instructions be cut on the bias
- * @param {boolean} so.ignoreOnFold       should these cutting instructions ignore any cutOnFold information set by the part
+ * @param {boolean} so.onBias = false     should the pieces in these cutting instructions be cut on the bias
+ * @param {boolean} so.onFold = false     should these cutting instructions ignore any cutOnFold information set by the part
  */
 function addCut(store, so = {}) {
   if (Array.isArray(so)) {
     for (const cut of so) addCut(store, cut)
     return store
   }
-  const { cut = 2, identical = false, bias = false, ignoreOnFold = false } = so
-  // Make 'material' an alias for 'from'
-  let { from = 'fabric' } = so
-  if (typeof so.material !== 'undefined') {
-    from = so.material
-    store.log.warn(`Using 'material' in cutlist is deprecated, please use 'from' instead'`)
-  }
+  const { cut = 2, from = 'fabric', identical = false, onBias = false, onFold = false } = so
 
   const partName = store.get('activePart')
   if (cut === false) {
@@ -58,17 +52,17 @@ function addCut(store, so = {}) {
   }
   const path = ['cutlist', partName, 'materials', from]
   const existing = store.get(path, [])
-  store.set(path, existing.concat({ cut, identical, bias, ignoreOnFold }))
+  store.set(path, existing.concat({ cut, identical, onBias, onFold }))
 
   return store
 }
 
 /** Method to remove the cut info */
-function removeCut(store, material = false) {
-  return addCut(store, { cut: false, material })
+function removeCut(store, from = false) {
+  return addCut(store, { cut: false, from })
 }
 
-/** Method to add the grain info */
+/** Method to add the grain info (called by grainline and cutonfold macros) */
 function setGrain(store, grain = false) {
   const partName = store.get('activePart')
   const path = ['cutlist', partName, 'grain']
@@ -80,7 +74,7 @@ function setGrain(store, grain = false) {
   return store.set(path, grain)
 }
 
-/** Method to add the cutOnFold info */
+/** Method to add the cutOnFold info (called by cutonfold macro)  */
 function setCutOnFold(store, p1, p2) {
   const partName = store.get('activePart')
   const path = ['cutlist', partName, 'cutOnFold']
