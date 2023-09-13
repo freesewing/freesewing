@@ -1,18 +1,6 @@
 import { base } from './base.mjs'
 
-function draftBenjaminBow2({
-  options,
-  Point,
-  points,
-  Path,
-  paths,
-  complete,
-  macro,
-  sa,
-  store,
-  paperless,
-  part,
-}) {
+function draftBenjaminBow2({ options, Point, points, Path, paths, macro, sa, store, part }) {
   if (!options.adjustmentRibbon) return part.hide()
 
   points.bandBottomLeft = points.bandBottomLeft.shift(180, 90)
