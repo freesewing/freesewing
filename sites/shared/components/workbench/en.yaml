@@ -84,6 +84,7 @@ seeMissingMeasies: See missing measurements
 showAllParts: Show all pattern parts
 showMovableButtons: Buttons
 showOnlyThisPart: Show only this pattern part
+sleevecap: Sleevecap
 style: Style
 test: Test
 testDesignMeasurement: "Test {design} measurements: {measurement}"
