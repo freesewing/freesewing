@@ -37,7 +37,7 @@ function addCut(store, so = {}) {
   const { cut = 2, identical = false, bias = false, ignoreOnFold = false } = so
   // Make 'material' an alias for 'from'
   let { from = 'fabric' } = so
-  if (so.material) {
+  if (typeof so.material !== 'undefined') {
     from = so.material
     store.log.warn(`Using 'material' in cutlist is deprecated, please use 'from' instead'`)
   }
