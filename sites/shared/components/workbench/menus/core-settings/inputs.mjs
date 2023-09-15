@@ -1,10 +1,12 @@
 import { capitalize } from 'shared/utils.mjs'
 import { ListInput, SliderInput, BoolInput, MmInput } from '../shared/inputs.mjs'
+import { useTranslation } from 'next-i18next'
+import { collection } from 'shared/hooks/use-design.mjs'
 
 /** an input for the 'only' setting. toggles individual parts*/
 const OnlySettingInput = (props) => {
+  const { t } = useTranslation(collection)
   const { config } = props
-  console.log(props)
   config.sideBySide = true
   config.titleMethod = (entry, t) => {
     const chunks = entry.split('.')
@@ -15,6 +17,14 @@ const OnlySettingInput = (props) => {
     return <span className="text-sm">{capitalize(entry.split('.')[0])}</span>
   }
   config.dense = true
+  // Sort alphabetically (translated)
+  const order = []
+  for (const part of config.list) {
+    const [ns, name] = part.split('.')
+    order.push(t(`${ns}:${name}`) + `|${part}`)
+  }
+  order.sort()
+  config.list = order.map((entry) => entry.split('|')[1])
 
   return <ListInput {...props} />
 }
