@@ -59,6 +59,8 @@ const i18n = mergeI18n([brianI18n, carltonI18n], {
       ...Object.keys(Carlton.patternConfig.options),
       'legacyArmholeDepthNo',
       'legacyArmholeDepthYes',
+      'draftForHighBustNo',
+      'draftForHighBustYes',
     ],
     drop: Object.keys(brianSleevecap.options).filter((o) => o !== 'sleevecapEase'),
   },
