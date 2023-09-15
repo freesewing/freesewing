@@ -38,58 +38,69 @@ function draftCarltonInnerPocketWelt({
     .close()
     .attr('class', 'fabric')
 
-  paths.fold = new Path().move(points.leftMid).line(points.rightMid).attr('class', 'dashed')
-
-  paths.welt = new Path()
-    .move(points.realTopLeft)
-    .line(points.realBottomLeft)
-    .line(points.realBottomRight)
-    .line(points.realTopRight)
-    .line(points.realTopLeft)
-    .close()
-    .attr('class', 'lashed')
-
-  store.cutlist.addCut()
-  store.cutlist.addCut({ material: 'lmhCanvas' })
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
   if (complete) {
-    points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    macro('title', {
-      at: points.title,
-      nr: 13,
-      title: 'innerPocketWelt',
-    })
-
-    macro('grainline', {
-      from: points.bottomLeft.shift(0, 10),
-      to: points.topLeft.shift(0, 10),
-    })
-
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-
-    if (paperless) {
-      macro('vd', {
-        from: points.realBottomRight,
-        to: points.realTopRight,
-        x: points.topRight.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.bottomRight,
-        to: points.topRight,
-        x: points.topRight.x + sa + 30,
-      })
-      macro('hd', {
-        from: points.realBottomLeft,
-        to: points.realBottomRight,
-        y: points.bottomLeft.y + sa + 15,
-      })
-      macro('hd', {
-        from: points.bottomLeft,
-        to: points.bottomRight,
-        y: points.bottomLeft.y + sa + 30,
-      })
-    }
+    paths.fold = new Path().move(points.leftMid).line(points.rightMid).addClass('fabric help')
+    paths.welt = new Path()
+      .move(points.realTopLeft)
+      .line(points.realBottomLeft)
+      .line(points.realBottomRight)
+      .line(points.realTopRight)
+      .line(points.realTopLeft)
+      .close()
+      .addClass('note dashed stroke-sm')
   }
+
+  /*
+   * Annotations
+   */
+
+  // Cut list
+  store.cutlist.addCut({ cut: 2, from: 'fabric' })
+  store.cutlist.addCut({ cut: 2, from: 'canvas' })
+
+  // Title
+  points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+  macro('title', {
+    at: points.title,
+    nr: 13,
+    title: 'innerPocketWelt',
+  })
+
+  // Grainline
+  macro('grainline', {
+    from: points.bottomLeft.shift(0, 10),
+    to: points.topLeft.shift(0, 10),
+  })
+
+  // Dimensions
+
+  macro('vd', {
+    id: 'hWelt',
+    from: points.realBottomRight,
+    to: points.realTopRight,
+    x: points.topRight.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottomRight,
+    to: points.topRight,
+    x: points.topRight.x + sa + 30,
+  })
+  macro('hd', {
+    id: 'wWelt',
+    from: points.realBottomLeft,
+    to: points.realBottomRight,
+    y: points.bottomLeft.y + sa + 15,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.bottomLeft,
+    to: points.bottomRight,
+    y: points.bottomLeft.y + sa + 30,
+  })
+
   return part
 }
 

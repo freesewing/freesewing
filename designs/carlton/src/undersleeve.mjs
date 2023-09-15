@@ -13,6 +13,8 @@ function draftCarltonUnderSleeve({
   Point,
   paths,
   Path,
+  Snippet,
+  snippets,
   part,
 }) {
   // Add cuff
@@ -47,82 +49,118 @@ function draftCarltonUnderSleeve({
     .curve(points.usTipCpBottom, points.usLeftEdgeCpRight, points.usLeftEdgeRight)
     .line(points.usLeftEdge)
     .close()
-    .attr('class', 'fabric')
+    .addClass('fabric')
 
-  store.cutlist.addCut()
-  store.cutlist.addCut({ material: 'lining' })
+  if (sa) paths.sa = paths.seam.offset(sa).addClass('fabric sa')
 
-  if (complete) {
-    macro('title', {
-      at: points.armCenter,
-      nr: 4,
-      title: 'undersleeve',
-    })
+  if (complete)
+    paths.cuff = new Path().move(points.usWristLeft).line(points.usWristRight).addClass('note help')
 
-    macro('grainline', {
-      from: points.boxBottom,
-      to: new Point(points.top.x, points.usLeftEdge.y),
-    })
+  /*
+   * Annotations
+   */
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+  // Cut list
+  store.cutlist.addCut({ cut: 2, from: 'fabric' })
+  store.cutlist.addCut({ cut: 2, from: 'lining' })
 
-    if (paperless) {
-      macro('ld', {
-        from: points.usWristLeft,
-        to: points.usWristRight,
-        d: -15,
-      })
-      macro('vd', {
-        from: points.usWristLeft,
-        to: points.usElbowLeft,
-        x: points.usLeftEdge.x - sa - 15,
-      })
-      macro('vd', {
-        from: points.usWristLeft,
-        to: points.usLeftEdge,
-        x: points.usLeftEdge.x - sa - 30,
-      })
-      macro('ld', {
-        from: points.cuffBottomLeft,
-        to: points.usWristLeft,
-        d: 15 + sa,
-      })
-      macro('vd', {
-        from: points.cuffBottomRight,
-        to: points.usWristRight,
-        x: points.usWristRight.x + 15 + sa,
-      })
-      macro('vd', {
-        from: points.usWristRight,
-        to: points.elbowRight,
-        x: points.elbowRight.x + 15 + sa,
-      })
-      macro('vd', {
-        from: points.usWristRight,
-        to: points.usTip,
-        x: points.elbowRight.x + 30 + sa,
-      })
-      macro('ld', {
-        from: points.usElbowLeft,
-        to: points.elbowRight,
-      })
-      macro('ld', {
-        from: points.usLeftEdge,
-        to: points.usRightEdge,
-        d: -15,
-      })
-      macro('hd', {
-        from: points.usLeftEdge,
-        to: points.usTip,
-        y: points.usTip.y - sa - 15,
-      })
-      macro('vd', {
-        from: points.usLeftEdge,
-        to: points.usTip,
-        x: points.usLeftEdge.x - sa - 15,
-      })
-    }
-  }
+  // Notches
+  const tipToNotch = store.get('undersleeveTipToNotch')
+  if (tipToNotch)
+    snippets.backSleeveNotch = new Snippet(
+      'bnotch',
+      new Path()
+        .move(points.usTip)
+        .curve(points.usTipCpBottom, points.usLeftEdgeCpRight, points.usLeftEdge)
+        .shiftAlong(tipToNotch)
+    )
+
+  // Title
+  macro('title', {
+    at: new Point(points.armCenter.x, points.elbowLeft.y * 0.666),
+    nr: 4,
+    title: 'undersleeve',
+    align: 'center',
+  })
+
+  // Grainline
+  macro('grainline', {
+    from: points.boxBottom,
+    to: new Point(points.top.x, points.usLeftEdge.y),
+  })
+
+  // Dimensions
+  macro('ld', {
+    id: 'lWrist',
+    from: points.usWristLeft,
+    to: points.usWristRight,
+    d: -15,
+  })
+  macro('vd', {
+    id: 'hWristToElbow',
+    from: points.usWristLeft,
+    to: points.usElbowLeft,
+    x: points.usLeftEdge.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hWristToArmholeFront',
+    from: points.usWristLeft,
+    to: points.usLeftEdge,
+    x: points.usLeftEdge.x - sa - 30,
+  })
+  macro('ld', {
+    id: 'lCuffFoldOver',
+    from: points.cuffBottomLeft,
+    to: points.usWristLeft,
+    d: 15 + sa,
+  })
+  macro('vd', {
+    id: 'hCuffFoldOver',
+    from: points.cuffBottomRight,
+    to: points.usWristRight,
+    x: points.usWristRight.x + 15 + sa,
+  })
+  macro('vd', {
+    id: 'hCuffToElbowBack',
+    from: points.usWristRight,
+    to: points.elbowRight,
+    x: points.elbowRight.x + 15 + sa,
+  })
+  macro('vd', {
+    id: 'wristToTipBack',
+    from: points.usWristRight,
+    to: points.usTip,
+    x: points.elbowRight.x + 30 + sa,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.cuffBottomRight,
+    to: points.usTip,
+    x: points.elbowRight.x + 45 + sa,
+  })
+  macro('ld', {
+    id: 'wAtElbow',
+    from: points.usElbowLeft,
+    to: points.elbowRight,
+  })
+  macro('ld', {
+    id: 'wAtTopFront',
+    from: points.usLeftEdge,
+    to: points.usRightEdge,
+    d: -15,
+  })
+  macro('hd', {
+    id: 'wAtTop',
+    from: points.usLeftEdge,
+    to: points.usTip,
+    y: points.usTip.y - sa - 15,
+  })
+  macro('vd', {
+    id: 'hSleevecap',
+    from: points.usLeftEdge,
+    to: points.usTip,
+    x: points.usLeftEdge.x - sa - 15,
+  })
 
   return part
 }

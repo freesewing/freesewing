@@ -45,51 +45,57 @@ function draftCarltonPocketFlap({
 
   paths.seam = paths.seam.line(points.topRight).line(points.topLeft).close().attr('class', 'fabric')
 
-  store.cutlist.addCut({ cut: 4 })
-  store.cutlist.addCut({ material: 'lmhCanvas' })
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-  if (complete) {
-    points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    macro('title', {
-      at: points.title,
-      nr: 11,
-      title: 'pocketFlap',
+  /*
+   * Annotations
+   */
+
+  // Cut list
+  store.cutlist.addCut({ cut: 4, from: 'fabric' })
+  store.cutlist.addCut({ cut: 2, from: 'canvas' })
+
+  // Title
+  points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+  macro('title', {
+    at: points.title,
+    nr: 11,
+    title: 'pocketFlap',
+    scale: 0.8,
+  })
+
+  // Grainline
+  macro('grainline', {
+    from: points.bottomLeft.shift(0, points.topRight.x / 5),
+    to: points.topLeft.shift(0, points.topRight.x / 5),
+  })
+
+  // Dimensions
+  macro('hd', {
+    from: points.topLeft,
+    to: points.topRight,
+    y: points.topLeft.y - sa - 15,
+  })
+  if (options.pocketFlapRadius > 0) {
+    macro('vd', {
+      id: 'hRoundedCorner',
+      from: points.roundRightStart,
+      to: points.roundRightEnd,
+      x: points.topRight.x + sa + 15,
     })
-
-    macro('grainline', {
-      from: points.bottomLeft.shift(0, points.topRight.x / 5),
-      to: points.topLeft.shift(0, points.topRight.x / 5),
+    macro('vd', {
+      id: 'hFull',
+      from: points.roundRightStart,
+      to: points.topRight,
+      x: points.topRight.x + sa + 30,
     })
-
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-    }
-
-    if (paperless) {
-      macro('hd', {
-        from: points.topLeft,
-        to: points.topRight,
-        y: points.topLeft.y - sa - 15,
-      })
-      if (options.pocketFlapRadius > 0) {
-        macro('vd', {
-          from: points.roundRightStart,
-          to: points.roundRightEnd,
-          x: points.topRight.x + sa + 15,
-        })
-        macro('vd', {
-          from: points.roundRightStart,
-          to: points.topRight,
-          x: points.topRight.x + sa + 30,
-        })
-      } else {
-        macro('vd', {
-          from: points.bottomRight,
-          to: points.topRight,
-          x: points.topRight.x + sa + 15,
-        })
-      }
-    }
+  } else {
+    macro('vd', {
+      id: 'hFull',
+      from: points.bottomRight,
+      to: points.topRight,
+      x: points.topRight.x + sa + 15,
+    })
   }
 
   return part

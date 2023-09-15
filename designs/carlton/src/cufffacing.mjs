@@ -46,47 +46,55 @@ function draftCarltonCuffFacing({
     .close()
     .attr('class', 'fabric')
 
-  store.cutlist.addCut()
-  store.cutlist.addCut({ cut: 2, material: 'lmhCanvas' })
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-  if (complete) {
-    points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    macro('title', {
-      at: points.title,
-      nr: 9,
-      title: 'cuffFacing',
-    })
+  /*
+   * Annotations
+   */
 
-    macro('grainline', {
-      from: points.bottomLeft.shift(0, 10 + store.get('cuffRadius')),
-      to: points.topLeft.shift(0, 10 + store.get('cuffRadius')),
-    })
+  // Cut list
+  store.cutlist.addCut({ cut: 2, from: 'fabric' })
+  store.cutlist.addCut({ cut: 2, from: 'canvas' })
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+  // Title
+  points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+  macro('title', {
+    at: points.title,
+    nr: 9,
+    title: 'cuffFacing',
+  })
 
-    if (paperless) {
-      macro('vd', {
-        from: points.roundRightStart,
-        to: points.roundRightEnd,
-        x: points.topRight.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.roundRightStart,
-        to: points.topRight,
-        x: points.topRight.x + sa + 30,
-      })
-      macro('hd', {
-        from: points.roundRightStart,
-        to: points.roundRightEnd,
-        y: points.bottomRight.y + sa + 15,
-      })
-      macro('hd', {
-        from: points.roundLeftStart,
-        to: points.roundRightEnd,
-        y: points.bottomRight.y + sa + 30,
-      })
-    }
-  }
+  // Grainline
+  macro('grainline', {
+    from: points.bottomLeft.shift(0, 10 + store.get('cuffRadius')),
+    to: points.topLeft.shift(0, 10 + store.get('cuffRadius')),
+  })
+
+  // Dimensions
+  macro('vd', {
+    id: 'hRoundedCorner',
+    from: points.roundRightStart,
+    to: points.roundRightEnd,
+    x: points.topRight.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.roundRightStart,
+    to: points.topRight,
+    x: points.topRight.x + sa + 30,
+  })
+  macro('hd', {
+    id: 'wRoundedCorner',
+    from: points.roundRightStart,
+    to: points.roundRightEnd,
+    y: points.bottomRight.y + sa + 15,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.roundLeftStart,
+    to: points.roundRightEnd,
+    y: points.bottomRight.y + sa + 30,
+  })
 
   return part
 }
