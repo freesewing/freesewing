@@ -10,7 +10,7 @@ import { WorkbenchLayout } from 'site/components/layouts/workbench.mjs'
 import { DynamicOrgDocs as DynamicDocs } from 'site/components/dynamic-org-docs.mjs'
 
 // Translation namespaces used on this page
-const namespaces = nsMerge(wbNs, pageNs)
+const ns = nsMerge(wbNs, pageNs)
 
 const NewDesignPage = ({ page, design }) => {
   const Design = useDesign(design)
@@ -27,7 +27,7 @@ export default NewDesignPage
 export async function getStaticProps({ locale, params }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, [params.design, ...namespaces])),
+      ...(await serverSideTranslations(locale, nsMerge(collection, ns))),
       design: params.design,
       page: {
         locale,
