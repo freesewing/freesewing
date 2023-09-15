@@ -67,7 +67,7 @@ function unflag(type, store, id) {
  * Available flag presets
  */
 const presets = {
-  expand: {
+  expandIsOff: {
     type: 'tip',
     title: 'flag:expandIsOff.t',
     desc: 'flag:expandIsOff.d',
@@ -76,6 +76,18 @@ const presets = {
       icon: 'expand',
       update: {
         settings: ['expand', 1],
+      },
+    },
+  },
+  expandIsOn: {
+    type: 'tip',
+    title: 'flag:expandIsOn.t',
+    desc: 'flag:expandIsOn.d',
+    suggest: {
+      text: 'flag:disable',
+      icon: 'expand',
+      update: {
+        settings: ['expand', null],
       },
     },
   },
