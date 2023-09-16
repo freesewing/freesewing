@@ -219,7 +219,7 @@ export const frontSideDart = {
      */
 
     // Cut list
-    store.cutlist.addCut({ cut: 1, from: 'fabric' })
+    store.cutlist.addCut({ cut: 1, from: 'fabric', onFold: true })
 
     // Cut on fold
     macro('cutonfold', {

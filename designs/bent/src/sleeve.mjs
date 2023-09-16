@@ -210,7 +210,7 @@ export const sleeve = {
       pct: 5,
       min: -10,
       max: 50,
-      menu: ({ options }) => (options.legacyArmholeDepth ? false : 'advanced'),
+      menu: ({ options }) => (options?.legacyArmholeDepth ? false : 'advanced'),
     },
     // Legacy armhole depth
     legacyArmholeDepth: { bool: false, menu: 'advanced' },
@@ -218,7 +218,7 @@ export const sleeve = {
       pct: 60,
       min: 50,
       max: 70,
-      menu: ({ options }) => (options.legacyArmholeDepth ? 'advanced' : false),
+      menu: ({ options }) => (options?.legacyArmholeDepth ? 'advanced' : false),
     },
   },
   draft: draftBentSleeve,

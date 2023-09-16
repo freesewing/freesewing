@@ -43,8 +43,8 @@ describe('Cutlist Plugin Tests', () => {
     expect(pattern.setStores[0].cutlist.example_part.materials.fabric[0]).to.deep.equal({
       cut: 2,
       identical: false,
-      bias: false,
-      ignoreOnFold: false,
+      onBias: false,
+      onFold: false,
     })
   })
 
@@ -52,7 +52,7 @@ describe('Cutlist Plugin Tests', () => {
     const part = {
       name: 'example_part',
       draft: ({ store, part }) => {
-        store.cutlist.addCut({ cut: 3, material: 'lining', identical: true })
+        store.cutlist.addCut({ cut: 3, from: 'lining', identical: true })
 
         return part
       },
@@ -65,8 +65,8 @@ describe('Cutlist Plugin Tests', () => {
     expect(pattern.setStores[0].cutlist.example_part.materials.lining[0]).to.deep.equal({
       cut: 3,
       identical: true,
-      bias: false,
-      ignoreOnFold: false,
+      onBias: false,
+      onFold: false,
     })
   })
 

@@ -147,7 +147,7 @@ function draftSleevecap(part, run) {
 
 const menu = 'advanced.sleevecap'
 export const sleevecap = {
-  from: front,
+  after: front,
   name: 'brian.sleevecap',
   hide: { self: true },
   options: {

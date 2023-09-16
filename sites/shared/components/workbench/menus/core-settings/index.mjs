@@ -74,6 +74,7 @@ export const CoreSettings = ({
   language,
   account,
   DynamicDocs,
+  design,
 }) => {
   const settingsConfig = loadSettingsConfig({
     language,
@@ -101,6 +102,7 @@ export const CoreSettings = ({
         name: 'coreSettings',
         ns,
         passProps,
+        design,
         updateFunc: update.settings,
         values,
         Item: CoreSetting,

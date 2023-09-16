@@ -27,9 +27,8 @@ function draftBentTopSleeve({ macro, Path, points, paths, snippets, Snippet, sa,
   /*
    * Annotations
    */
-
   // Cut list
-  store.cutlist.addCut({ cut: 2, from: 'fabcric' })
+  store.cutlist.addCut({ cut: 2, from: 'fabric' })
 
   // Scalebox
   macro('scalebox', { at: points.elbowCenter })

@@ -137,7 +137,7 @@ const addTitleMacro = function (
        * Iterate over materials
        */
       for (const [material, instructions] of Object.entries(partCutlist.materials)) {
-        instructions.forEach(({ cut, identical, bias, ignoreOnFold }, c) => {
+        instructions.forEach(({ cut, identical, onBias, onFold }, c) => {
           /*
            * Create point
            */
@@ -161,13 +161,13 @@ const addTitleMacro = function (
           /*
            * Add instructions if parts are cut on fold
            */
-          if (partCutlist.cutOnFold && !ignoreOnFold)
+          if (onFold)
             points[id].addText(
-              bias ? 'plugin-annotations:onFoldAndBias' : 'plugin-annotations:onFold'
+              onBias ? 'plugin-annotations:onFoldAndBias' : 'plugin-annotations:onFold'
             )
           /*
            * Add instructions if parts on on bias
-           */ else if (bias) points[id].addText('plugin-annotations:onBias')
+           */ else if (onBias) points[id].addText('plugin-annotations:onBias')
 
           /*
            * Add 'from' (material) text

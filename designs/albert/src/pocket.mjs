@@ -67,6 +67,8 @@ export const pocket = {
     /*
      * Annotations
      */
+    // Cut list
+    store.cutlist.addCut({ cut: 1, from: 'fabric' })
 
     // Cut on fold
     macro('cutonfold', {

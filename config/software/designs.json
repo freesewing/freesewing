@@ -45,7 +45,7 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["blocks", "tops"],
-    "techniques": []
+    "techniques": ["hem", "curvedSeam", "setSleeve"]
   },
   "bob": {
     "description": "A FreeSewing pattern for a bib",
@@ -53,7 +53,7 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["accessories", "infants"],
-    "techniques": []
+    "techniques": ["biasTape", "curvedSeam", "snap"]
   },
   "breanna": {
     "description": "A FreeSewing pattern for a basic body block for womenswear",
@@ -61,7 +61,7 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["blocks", "tops"],
-    "techniques": []
+    "techniques": ["block", "dart"]
   },
   "brian": {
     "description": "A FreeSewing pattern for a basic body block for menswear",
@@ -69,7 +69,7 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["blocks", "tops"],
-    "techniques": []
+    "techniques": ["block", "flatSleeve"]
   },
   "bruce": {
     "description": "A FreeSewing pattern for boxer briefs",
@@ -77,7 +77,7 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["tops", "underwear"],
-    "techniques": []
+    "techniques": ["stretch", "hem", "curvedSeam", "elastic"]
   },
   "carlita": {
     "description": "A FreeSewing pattern for Sherlock Holmes cosplay; Or just a nice long coat",
@@ -85,7 +85,16 @@
     "design": ["Anneke Caramin", "Joost De Cock"],
     "difficulty": 5,
     "tags": ["tops", "coats"],
-    "techniques": []
+    "techniques": [
+      "hem",
+      "pocket",
+      "curvedSeam",
+      "precision",
+      "setSleeve",
+      "weltPocket",
+      "lining",
+      "princessSeam"
+    ]
   },
   "carlton": {
     "description": "A FreeSewing pattern for Sherlock Holmes cosplay; Or just a nice long coat",
@@ -93,7 +102,7 @@
     "design": ["Anneke Caramin", "Joost De Cock"],
     "difficulty": 5,
     "tags": ["tops", "coats"],
-    "techniques": []
+    "techniques": ["hem", "pocket", "curvedSeam", "precision", "setSleeve", "weltPocket", "lining"]
   },
   "cathrin": {
     "description": "A FreeSewing pattern for a underbust corset / waist trainer",

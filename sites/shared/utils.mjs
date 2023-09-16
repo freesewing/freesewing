@@ -457,3 +457,13 @@ export const randomString = (len = 42) => {
   window.crypto.getRandomValues(arr) // eslint-disable-line
   return Array.from(arr, dec2hex).join('')
 }
+
+/*
+ * Gets the pattern namespaces based on patternConfig
+ */
+export const patternNsFromPatternConfig = (config) => {
+  const ns = new Set()
+  for (const part of config.draftOrder) ns.add(part.split('.')[0])
+
+  return [...ns]
+}
