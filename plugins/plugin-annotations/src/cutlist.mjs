@@ -1,5 +1,6 @@
 export const cutlistStores = [
   ['cutlist.addCut', addCut],
+  ['cutlist.setCut', setCut],
   ['cutlist.removeCut', removeCut],
   ['cutlist.setGrain', setGrain],
   ['cutlist.setCutOnFold', setCutOnFold],
@@ -60,6 +61,12 @@ function addCut(store, so = {}) {
 /** Method to remove the cut info */
 function removeCut(store, from = false) {
   return addCut(store, { cut: false, from })
+}
+
+/** Method to set (remove + add) the cut info */
+function setCut(store, so) {
+  removeCut(store)
+  return addCut(store, so)
 }
 
 /** Method to add the grain info (called by grainline and cutonfold macros) */
