@@ -4,6 +4,7 @@ advanced: Fortgeschritten
 appliedMeasies: Wir haben dieses Schnittmuster mit einem neuen Maßsatz versehen.
 armhole: Armloch
 attributes: Eigenschaften
+backPockets: Gesäßtaschen
 bookmarkPattern: Bookmark pattern
 bottomRight: Unten rechts
 changeMeasies: Muster ändern Messungen
@@ -41,6 +42,7 @@ exportForPrinting: Für den Druck exportieren
 exportPattern-txt: Ein für deinen Heimdrucker geeignetes PDF exportieren, oder das Schnittmuster in verschiedenen Formaten herunterladen
 exportPattern: Schnittmuster exportieren
 fit: Passform
+frontPockets: Vordere Taschen
 generatePdf: Generate print-ready PDF
 giveItAName: Gib ihm einen Namen
 height: Höhe
