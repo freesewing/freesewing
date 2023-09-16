@@ -3,7 +3,6 @@ import { back } from './back.mjs'
 
 function draftCarltonTail({
   units,
-  paperless,
   sa,
   store,
   complete,

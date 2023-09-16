@@ -2,10 +2,8 @@ import { front } from './front.mjs'
 
 function draftCarltonChestPocketBag({
   units,
-  paperless,
   sa,
   store,
-  complete,
   points,
   macro,
   Point,

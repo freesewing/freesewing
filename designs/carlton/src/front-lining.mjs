@@ -1,16 +1,11 @@
 import { front } from './front.mjs'
 
 function draftCarltonFrontLining({
-  paperless,
   sa,
   snippets,
   Snippet,
-  utils,
   store,
-  complete,
   points,
-  measurements,
-  options,
   macro,
   Point,
   expand,

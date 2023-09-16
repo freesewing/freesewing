@@ -12,10 +12,7 @@ const OnlySettingInput = (props) => {
     const chunks = entry.split('.')
     return <span className="font-medium text-base">{t(`${chunks[0]}:${chunks[1]}`)}</span>
   }
-  config.valueMethod = (entry, t) => {
-    const chunks = entry.split('.')
-    return <span className="text-sm">{capitalize(entry.split('.')[0])}</span>
-  }
+  config.valueMethod = (entry) => <span className="text-sm">{capitalize(entry.split('.')[0])}</span>
   config.dense = true
   // Sort alphabetically (translated)
   const order = []

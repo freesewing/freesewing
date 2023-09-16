@@ -4,7 +4,6 @@ import { front } from './front.mjs'
 import { back } from './back.mjs'
 
 function draftCarltonTopSleeve({
-  paperless,
   sa,
   store,
   complete,

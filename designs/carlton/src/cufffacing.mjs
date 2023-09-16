@@ -1,18 +1,7 @@
 import { topSleeve } from './topsleeve.mjs'
 import { underSleeve } from './undersleeve.mjs'
 
-function draftCarltonCuffFacing({
-  paperless,
-  sa,
-  store,
-  complete,
-  points,
-  macro,
-  Point,
-  paths,
-  Path,
-  part,
-}) {
+function draftCarltonCuffFacing({ sa, store, points, macro, Point, paths, Path, part }) {
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(
     store.get('topCuffWidth') + store.get('underCuffWidth'),

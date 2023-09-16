@@ -10,7 +10,6 @@ function draftBruceSide({
   Path,
   paths,
   complete,
-  paperless,
   macro,
   utils,
   snippets,
