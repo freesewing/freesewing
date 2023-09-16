@@ -2,15 +2,14 @@ import path from 'path'
 import fse from 'fs-extra'
 
 const copyFromOrg = [
-  //['account'],
-  //['confirm'],
-  //['designs'],
+  ['account'],
+  ['designs'],
   ['new', 'index.mjs'],
   ['new', '[design].mjs'],
-  //['patterns'],
-  //['sets'],
+  ['patterns'],
+  ['sets'],
   ['signin'],
-  //['signup'],
+  ['signup'],
 ]
 
 const copyOrgFiles = () => {
