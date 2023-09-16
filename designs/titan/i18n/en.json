@@ -7,9 +7,9 @@
   },
   "s": {
     "crossSeamFitFailedBack.t": "Back cross seam compromised",
-    "crossSeamFitFailedBack.t": "No solution was found to fit the cross seam in the back part. As a compromise, we've used the best available solution instead.\n\nPlease verify your measurements before contacting support.",
+    "crossSeamFitFailedBack.d": "No solution was found to fit the cross seam in the back part. As a compromise, we've used the best available solution instead.\n\nPlease verify your measurements before contacting support.",
     "crossSeamFitFailedFront.t": "Front cross seam compromised",
-    "crossSeamFitFailedFront.t": "No solution was found to fit the cross seam in the front part. As a compromise, we've used the best available solution instead.\n\nPlease verify your measurements before contacting support."
+    "crossSeamFitFailedFront.d": "No solution was found to fit the cross seam in the front part. As a compromise, we've used the best available solution instead.\n\nPlease verify your measurements before contacting support."
   },
   "o": {
     "kneeEase": {
