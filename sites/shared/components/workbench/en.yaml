@@ -4,6 +4,7 @@ advanced: Advanced
 appliedMeasies: We applied a new measurements set to this pattern.
 armhole: Armhole
 attributes: Attributes
+backPockets: Back pockets
 bookmarkPattern: Bookmark pattern
 bottomRight: Bottom Right
 changeMeasies: Change Pattern Measurements
@@ -41,6 +42,7 @@ exportForPrinting: Export for printing
 exportPattern-txt: Export a PDF suitable for your printer, or download this pattern in a variety of formats
 exportPattern: Export pattern
 fit: Fit
+frontPockets: Front pockets
 generatePdf: Generate print-ready PDF
 giveItAName: Give it a name
 height: Height
