@@ -192,7 +192,7 @@
     "design": "Erica Alcusa Sáez",
     "difficulty": 3,
     "tags": ["accessories", "hats"],
-    "techniques": []
+    "techniques": ["curvedSeam", "lining"]
   },
   "hortensia": {
     "description": "A FreeSewing pattern for a handbag",
