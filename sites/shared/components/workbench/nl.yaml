@@ -4,6 +4,7 @@ advanced: Geavanceerd
 appliedMeasies: We applied a new measurements set to this pattern.
 armhole: Harnas
 attributes: Attributen
+backPockets: Achterzakken
 bookmarkPattern: Bookmark pattern
 bottomRight: Rechtsonder
 changeMeasies: Verander patroon metingen
@@ -41,6 +42,7 @@ exportForPrinting: Exporteren om te printen
 exportPattern-txt: Exporteer een PDF geschikt voor jouw printer, of download dit patroon in verschillende formaten
 exportPattern: Patroon exporteren
 fit: Pasvorm
+frontPockets: Voorzakken
 generatePdf: Generate print-ready PDF
 giveItAName: Geef het een naam
 height: Hoogte
