@@ -4,6 +4,7 @@ advanced: Додатково
 appliedMeasies: We applied a new measurements set to this pattern.
 armhole: Пройма
 attributes: Атрибути
+backPockets: Задні кишені
 bookmarkPattern: Bookmark pattern
 bottomRight: Внизу праворуч
 changeMeasies: Вимірювання зміни шаблону
@@ -41,6 +42,7 @@ exportForPrinting: Експортувати для друку
 exportPattern-txt: Експортувати PDF для Вашого принтера, або завантажити цю викрійку в інших форматах
 exportPattern: Експортувати викрійку
 fit: За розміром
+frontPockets: Передні кишені
 generatePdf: Generate print-ready PDF
 giveItAName: Дайте йому ім'я.
 height: Висота
