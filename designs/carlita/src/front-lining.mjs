@@ -7,10 +7,30 @@ function draftCarlitaFrontLining({
   store,
   points,
   macro,
+  expand,
   paths,
   Path,
   part,
 }) {
+  if (expand) store.flag.preset('expandIsOn')
+  else {
+    // Expand is on, do not draw the part but flag this to the user
+    store.flag.note({
+      msg: `carlton:cutFrontLining`,
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
+
   const collar = paths.frontCollar.split(points.flbTop)
   const armhole = paths.frontArmhole
 
