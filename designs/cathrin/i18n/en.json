@@ -17,6 +17,14 @@
       "t": "Number of panels",
       "d": "The number of panels to draft. More panels are better to fit a curvier model."
     },
+    "panels.11": {
+      "t": "11 Panels",
+      "d": "Draft a pattern for a corset with 11 panels."
+    },
+    "panels.13": {
+      "t": "13 Panels",
+      "d": "Draft a pattern for a corset with 13 panels."
+    },
     "waistReduction": {
       "t": "Waist reduction",
       "d": "The amount by which you want the corset to pinch your waist."
