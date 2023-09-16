@@ -85,7 +85,16 @@
     "design": ["Anneke Caramin", "Joost De Cock"],
     "difficulty": 5,
     "tags": ["tops", "coats"],
-    "techniques": ["hem", "pocket", "curvedSeam", "precision", "setSleeve", "weltPocket", "linin"]
+    "techniques": [
+      "hem",
+      "pocket",
+      "curvedSeam",
+      "precision",
+      "setSleeve",
+      "weltPocket",
+      "lining",
+      "princessSeam"
+    ]
   },
   "carlton": {
     "description": "A FreeSewing pattern for Sherlock Holmes cosplay; Or just a nice long coat",
@@ -93,7 +102,7 @@
     "design": ["Anneke Caramin", "Joost De Cock"],
     "difficulty": 5,
     "tags": ["tops", "coats"],
-    "techniques": ["hem", "pocket", "curvedSeam", "precision", "setSleeve", "weltPocket", "linin"]
+    "techniques": ["hem", "pocket", "curvedSeam", "precision", "setSleeve", "weltPocket", "lining"]
   },
   "cathrin": {
     "description": "A FreeSewing pattern for a underbust corset / waist trainer",
