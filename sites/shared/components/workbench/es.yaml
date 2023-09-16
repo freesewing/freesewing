@@ -4,6 +4,7 @@ advanced: Avanzado
 appliedMeasies: We applied a new measurements set to this pattern.
 armhole: Agujero armado
 attributes: Atributos
+backPockets: Paquetes de retroceso
 bookmarkPattern: Bookmark pattern
 bottomRight: Abajo a la derecha
 changeMeasies: Mediciones del patrón de cambio
@@ -41,6 +42,7 @@ exportForPrinting: Exportar para impresión
 exportPattern-txt: Exporte un PDF adecuado para su impresora, o descargue este patrón en una variedad de formatos
 exportPattern: Exportar patrón
 fit: Ajuste
+frontPockets: Pockets delanteros
 generatePdf: Generate print-ready PDF
 giveItAName: Dale un nombre
 height: Altura
