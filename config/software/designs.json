@@ -130,7 +130,17 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["bottoms", "trousers"],
-    "techniques": []
+    "techniques": [
+      "weltPocket",
+      "curvedSeams",
+      "interfacing",
+      "fly",
+      "zipper",
+      "button",
+      "dart",
+      "hem",
+      "seamPocket"
+    ]
   },
   "cornelius": {
     "description": "A FreeSewing pattern for cycling breeches, based on the Keystone drafting system",
@@ -146,7 +156,7 @@
     "design": "Erica Alcusa Sáez",
     "difficulty": 2,
     "tags": ["tops"],
-    "techniques": []
+    "techniques": ["curvedSeam", "flatSleeve", "hem"]
   },
   "examples": {
     "description": "A FreeSewing pattern holding examples for our documentation",
@@ -158,7 +168,7 @@
     "design": "Joost De Cock",
     "difficulty": 1,
     "tags": ["accessories"],
-    "techniques": []
+    "techniques": ["curvedSeam"]
   },
   "florent": {
     "description": "A FreeSewing pattern for a flat cap",
@@ -166,7 +176,7 @@
     "design": "Quentin Felix",
     "difficulty": 3,
     "tags": ["accessories", "hats"],
-    "techniques": []
+    "techniques": ["curvedSeam"]
   },
   "hi": {
     "description": "A FreeSewing pattern for a shark plush toy",
