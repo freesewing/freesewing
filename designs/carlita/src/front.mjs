@@ -558,7 +558,7 @@ export const front = {
   options: {
     draftForHighBust: true,
     contour: { pct: 50, min: 25, max: 75, menu: 'advanced' },
-    pocketPlacementHorizontal: { pct: 11, min: 5, max: 15, menu: 'pockets' },
+    //pocketPlacementHorizontal: { pct: 11, min: 5, max: 15, menu: 'pockets' },
   },
   draft: draftCarlitaFront,
 }

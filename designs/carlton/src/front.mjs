@@ -561,7 +561,7 @@ export const front = {
     length: { pct: 69, min: 35, max: 100, menu: 'style' },
     lapelReduction: { pct: 5, min: 0, max: 10, menu: 'advanced' },
     frontOverlap: { pct: 1.5, min: 1, max: 2, menu: 'advanced' },
-    pocketPlacementHorizontal: { pct: 11, min: 5, max: 60, menu: 'pockets' },
+    pocketPlacementHorizontal: { pct: 11, min: 5, max: 20, menu: 'pockets' },
     pocketPlacementVertical: { pct: 6, min: 5, max: 60, menu: 'pockets' },
     pocketWidth: { pct: 95, min: 70, max: 120, menu: 'pockets' },
     pocketHeight: { pct: 15, min: 0, max: 40, menu: 'pockets' },
