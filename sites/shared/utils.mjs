@@ -203,6 +203,14 @@ export const optionsMenuStructure = (options, settings) => {
       if (oType === 'pct') option.dflt /= 100
       if (typeof option.menu === 'function') option.menu = option.menu(settings)
       if (option.menu) {
+        // Handle nested groups that don't have any direct children
+        if (option.menu.includes('.')) {
+          let menuPath = []
+          for (const chunk of option.menu.split('.')) {
+            menuPath.push(chunk)
+            set(menu, `${menuPath.join('.')}.isGroup`, true)
+          }
+        }
         set(menu, `${option.menu}.isGroup`, true)
         set(menu, `${option.menu}.${option.name}`, option)
       } else if (typeof option.menu === 'undefined') {
