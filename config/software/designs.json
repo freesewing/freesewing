@@ -93,7 +93,9 @@
       "setSleeve",
       "weltPocket",
       "lining",
-      "princessSeam"
+      "princessSeam",
+      "interfacing",
+      "button"
     ]
   },
   "carlton": {
@@ -102,7 +104,17 @@
     "design": ["Anneke Caramin", "Joost De Cock"],
     "difficulty": 5,
     "tags": ["tops", "coats"],
-    "techniques": ["hem", "pocket", "curvedSeam", "precision", "setSleeve", "weltPocket", "lining"]
+    "techniques": [
+      "hem",
+      "pocket",
+      "curvedSeam",
+      "precision",
+      "setSleeve",
+      "weltPocket",
+      "lining",
+      "interfacing",
+      "button"
+    ]
   },
   "cathrin": {
     "description": "A FreeSewing pattern for a underbust corset / waist trainer",
@@ -110,7 +122,7 @@
     "design": ["Cathrin Åhlén", "Joost De Cock"],
     "difficulty": 4,
     "tags": ["tops", "underwear"],
-    "techniques": []
+    "techniques": ["boning", "precision", "curvedSeam", "interfacing"]
   },
   "charlie": {
     "description": "A FreeSewing pattern for chino trousers",
