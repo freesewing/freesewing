@@ -162,13 +162,12 @@ const scalebox = function (
     mc.rotate = Number(mc.rotate)
     for (const pid in box) box[pid] = box[pid].rotate(mc.rotate, mc.at)
     for (const pid in text) {
-      text[pid] = text[pid]
-        .rotate(mc.rotate, mc.at)
-        .attr(
-          'data-text-transform',
-          `rotate(${mc.rotate * -1}, ${text[pid].x}, ${text[pid].y})`,
-          true
-        )
+      text[pid] = text[pid].rotate(mc.rotate, mc.at)
+      text[pid].attr(
+        'data-text-transform',
+        `rotate(${mc.rotate * -1}, ${text[pid].x}, ${text[pid].y})`,
+        true
+      )
     }
   }
 
