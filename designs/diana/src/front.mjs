@@ -9,8 +9,6 @@ export function draftDianaFrontOrBack({
   points,
   Path,
   paths,
-  complete,
-  paperless,
   macro,
   options,
   Snippet,

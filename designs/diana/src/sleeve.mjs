@@ -3,7 +3,7 @@ import { front } from './front.mjs'
 import { back } from './front.mjs'
 import { hidePresets } from '@freesewing/core'
 
-function draftDianaSleeve({ sa, points, paths, Path, complete, paperless, macro, store, part }) {
+function draftDianaSleeve({ sa, points, paths, Path, macro, store, part }) {
   paths.seam = new Path()
     .move(points.wristRight)
     .line(points.bicepsRight)

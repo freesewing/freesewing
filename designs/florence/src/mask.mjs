@@ -7,7 +7,6 @@ function florenceMask({
   options,
   complete,
   sa,
-  paperless,
   Snippet,
   snippets,
   macro,

@@ -211,7 +211,6 @@ export const optionsMenuStructure = (options, settings) => {
             set(menu, `${menuPath.join('.')}.isGroup`, true)
           }
         }
-        const menuPath = option.menu.split('.')
         set(menu, `${option.menu}.isGroup`, true)
         set(menu, `${option.menu}.${option.name}`, option)
       } else if (typeof option.menu === 'undefined') {
