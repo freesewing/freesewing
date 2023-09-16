@@ -3,7 +3,6 @@ import { calculateRatios } from './shared.mjs'
 import { hidePresets } from '@freesewing/core'
 
 function draftCarltonFront({
-  paperless,
   sa,
   snippets,
   Snippet,

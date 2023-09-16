@@ -29,7 +29,6 @@ function draftBruceFront({
   paths,
   options,
   complete,
-  paperless,
   macro,
   snippets,
   Snippet,

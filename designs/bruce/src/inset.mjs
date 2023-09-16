@@ -9,7 +9,6 @@ function draftBruceInset({
   Path,
   paths,
   complete,
-  paperless,
   macro,
   Snippet,
   snippets,

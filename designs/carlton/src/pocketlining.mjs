@@ -1,18 +1,6 @@
 import { pocket } from './pocket.mjs'
 
-function draftCarltonPocketLining({
-  paperless,
-  sa,
-  store,
-  complete,
-  points,
-  options,
-  macro,
-  Point,
-  paths,
-  Path,
-  part,
-}) {
+function draftCarltonPocketLining({ sa, store, points, options, macro, Point, paths, Path, part }) {
   delete paths.fold
 
   points.topLeft = points.bottomLeft.shiftFractionTowards(points.topLeft, 0.75)

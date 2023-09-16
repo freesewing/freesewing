@@ -10,7 +10,6 @@ function draftBruceBack({
   Snippet,
   snippets,
   complete,
-  paperless,
   macro,
   utils,
   part,

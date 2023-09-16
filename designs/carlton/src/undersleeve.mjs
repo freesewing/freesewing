@@ -2,7 +2,6 @@ import { underSleeve as bentUnderSleeve } from '@freesewing/bent'
 import { front as bentFront } from '@freesewing/bent'
 
 function draftCarltonUnderSleeve({
-  paperless,
   sa,
   store,
   complete,

@@ -6,18 +6,7 @@ import { collarStand } from './collarstand.mjs'
  * but gets complicated when doing it in code.
  */
 
-function draftCarltonCollar({
-  paperless,
-  sa,
-  complete,
-  points,
-  options,
-  macro,
-  paths,
-  Path,
-  part,
-  store,
-}) {
+function draftCarltonCollar({ sa, points, options, macro, paths, Path, part, store }) {
   // We're going to slash and spread this collar. Slashing first:
   // Divide top in 5 parts
   points.cutTop1 = points.topLeft.shiftFractionTowards(points.topRight, 0.2)

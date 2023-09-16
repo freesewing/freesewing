@@ -1,15 +1,11 @@
 import { back } from './back.mjs'
 
 function draftCarltonBackStay({
-  paperless,
   sa,
   snippets,
   Snippet,
   store,
-  complete,
   points,
-  measurements,
-  options,
   macro,
   Point,
   paths,

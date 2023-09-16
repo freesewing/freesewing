@@ -1,12 +1,10 @@
 import { back } from './back.mjs'
 
 function draftCarltonBelt({
-  paperless,
   sa,
   snippets,
   Snippet,
   store,
-  complete,
   points,
   macro,
   Point,
