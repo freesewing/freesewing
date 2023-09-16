@@ -3,7 +3,6 @@ import { front as carltonFront } from '@freesewing/carlton'
 import { hidePresets } from '@freesewing/core'
 
 function draftCarlitaFront({
-  paperless,
   sa,
   snippets,
   Snippet,
@@ -559,6 +558,7 @@ export const front = {
   options: {
     draftForHighBust: true,
     contour: { pct: 50, min: 25, max: 75, menu: 'advanced' },
+    pocketPlacementHorizontal: { pct: 11, min: 5, max: 15, menu: 'pockets' },
   },
   draft: draftCarlitaFront,
 }

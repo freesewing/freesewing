@@ -1,12 +1,10 @@
 import { front } from './front.mjs'
 
 function draftCarlitaSide({
-  paperless,
   sa,
   snippets,
   Snippet,
   store,
-  complete,
   points,
   macro,
   Point,

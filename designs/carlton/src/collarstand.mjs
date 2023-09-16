@@ -2,10 +2,8 @@ import { front } from './front.mjs'
 import { back } from './back.mjs'
 
 function draftCarltonCollarStand({
-  paperless,
   sa,
   store,
-  complete,
   points,
   measurements,
   options,

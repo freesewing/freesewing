@@ -1,7 +1,6 @@
 import { front } from './front.mjs'
 
 function draftCarltonInnerPocketWelt({
-  paperless,
   sa,
   store,
   complete,

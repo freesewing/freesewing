@@ -4,7 +4,6 @@ function draftCarltonInnerPocketBag({
   units,
   sa,
   store,
-  complete,
   points,
   options,
   macro,

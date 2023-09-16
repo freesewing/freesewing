@@ -1,15 +1,12 @@
 import { front } from './front.mjs'
 
 function draftCarlitaFrontLining({
-  paperless,
   sa,
   snippets,
   Snippet,
   store,
-  complete,
   points,
   macro,
-  Point,
   paths,
   Path,
   part,
