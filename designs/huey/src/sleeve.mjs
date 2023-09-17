@@ -42,50 +42,57 @@ function draftHueySleeve({
 
   paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
 
-  // Complete?
-  if (complete) {
-    macro('grainline', {
-      from: new Point(0, points.wristLeft.y),
-      to: new Point(0, points.backPitch.y),
-    })
-    if (sa) {
-      if (options.ribbing) paths.sa = paths.seam.offset(sa)
-      else {
-        paths.sa = paths.saBase
-          .clone()
-          .offset(sa)
-          .join(paths.hemBase.offset(3 * sa))
-          .close()
-      }
-      paths.sa.attr('class', 'fabric sa')
+  if (sa) {
+    if (options.ribbing) paths.sa = paths.seam.offset(sa)
+    else {
+      paths.sa = paths.saBase
+        .clone()
+        .offset(sa)
+        .join(paths.hemBase.offset(3 * sa))
+        .close()
     }
+    paths.sa.attr('class', 'fabric sa')
   }
 
-  // Paperless?
-  if (paperless) {
-    let hemSa = sa
-    if (!options.ribbing) hemSa = 3 * sa
-    macro('hd', {
-      from: points.wristLeft,
-      to: points.wristRight,
-      y: points.wristLeft.y + hemSa + 15,
-    })
-    macro('hd', {
-      from: points.bicepsLeft,
-      to: points.bicepsRight,
-      y: points.sleeveTip.y - sa - 15,
-    })
-    macro('vd', {
-      from: points.wristLeft,
-      to: points.bicepsLeft,
-      x: points.bicepsLeft.x - sa - 15,
-    })
-    macro('vd', {
-      from: points.wristLeft,
-      to: points.sleeveTip,
-      x: points.bicepsLeft.x - sa - 30,
-    })
-  }
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Grainline
+  macro('grainline', {
+    from: new Point(0, points.wristLeft.y),
+    to: new Point(0, points.backPitch.y),
+  })
+
+  // Dimensions
+  let hemSa = sa
+  if (!options.ribbing) hemSa = 3 * sa
+  macro('hd', {
+    id: 'wCuff',
+    from: points.wristLeft,
+    to: points.wristRight,
+    y: points.wristLeft.y + hemSa + 15,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.bicepsLeft,
+    to: points.bicepsRight,
+    y: points.sleeveTip.y - sa - 15,
+  })
+  macro('vd', {
+    id: 'hCuffToSleevecapStart',
+    from: points.wristLeft,
+    to: points.bicepsLeft,
+    x: points.bicepsLeft.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.wristLeft,
+    to: points.sleeveTip,
+    x: points.bicepsLeft.x - sa - 30,
+  })
 
   return part
 }

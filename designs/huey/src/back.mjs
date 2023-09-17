@@ -59,27 +59,35 @@ function draftHueyBack({
     .close()
     .attr('class', 'fabric')
 
-  // Complete?
-  if (complete) {
-    macro('cutonfold', {
-      from: points.cbNeck,
-      to: points.cbHem,
-      grainline: true,
-    })
-    macro('scalebox', { at: new Point(points.armholePitch.x / 2, points.cbWaist.y) })
-    if (sa) {
-      paths.sa = paths.hemBase.offset(options.ribbing ? sa : 3 * sa).join(paths.saBase.offset(sa))
-      paths.sa
-        .move(paths.sa.end())
-        .line(points.cbNeck)
-        .move(paths.sa.start())
-        .line(points.cbHem)
-        .attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = paths.hemBase.offset(options.ribbing ? sa : 3 * sa).join(paths.saBase.offset(sa))
+    paths.sa
+      .move(paths.sa.end())
+      .line(points.cbNeck)
+      .move(paths.sa.start())
+      .line(points.cbHem)
+      .attr('class', 'fabric sa')
   }
 
-  // Paperless?
-  if (paperless) sharedDimensions(part, 'back')
+  /*
+   * Annotations
+   */
+
+  // Cut list
+  store.cutlist.setCut({ cut: 1, from: 'fabric', onFold: true })
+
+  // Cutonfold
+  macro('cutonfold', {
+    from: points.cbNeck,
+    to: points.cbHem,
+    grainline: true,
+  })
+
+  // Scalebox
+  macro('scalebox', { at: new Point(points.armholePitch.x / 2, points.cbWaist.y) })
+
+  // Dimensions
+  sharedDimensions(part, 'back')
 
   return part
 }
