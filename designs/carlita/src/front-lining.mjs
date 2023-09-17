@@ -36,7 +36,9 @@ function draftCarlitaFrontLining({
 
   // Clean up
   macro('rmad')
-  for (const id in paths) delete paths[id]
+  for (const id in paths) {
+    if (!['frontCollar'].includes(id)) delete paths[id]
+  }
   for (const id in snippets) delete snippets[id]
 
   paths.seam = new Path()

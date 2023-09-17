@@ -20,7 +20,7 @@ function draftCarltonChestPocketWelt({
       msg: `carlton:cutChestPocketWelt`,
       replace: {
         w: units(store.get('chestPocketWidth') * 2 + 2 * sa),
-        h: units(store.get('chestPocketHeight') + 2 * sa),
+        l: units(store.get('chestPocketHeight') + 2 * sa),
       },
       suggest: {
         text: 'flag:show',

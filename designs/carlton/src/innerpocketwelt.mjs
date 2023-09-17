@@ -6,11 +6,36 @@ function draftCarltonInnerPocketWelt({
   complete,
   points,
   macro,
+  expand,
+  units,
   Point,
   paths,
   Path,
   part,
 }) {
+  if (expand) store.flag.preset('expandIsOn')
+  else {
+    // Expand is on, do not draw the part but flag this to the user
+    store.flag.note({
+      msg: `carlton:cutInnerPocketWelt`,
+      replace: {
+        w: units(store.get('innerPocketWidth') * 1.4 + 2 * sa),
+        l: units(store.get('innerPocketWeltHeight') * 6 + 2 * sa),
+      },
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
+
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(
     store.get('innerPocketWidth') * 1.4,
