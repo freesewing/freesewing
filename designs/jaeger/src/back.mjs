@@ -7,7 +7,6 @@ function jaegerBack({
   Snippet,
   utils,
   store,
-  complete,
   points,
   measurements,
   options,
