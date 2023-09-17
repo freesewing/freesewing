@@ -8,8 +8,6 @@ function hugoWaistband({
   points,
   Path,
   paths,
-  complete,
-  paperless,
   macro,
   units,
   expand,

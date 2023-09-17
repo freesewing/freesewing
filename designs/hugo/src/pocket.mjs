@@ -8,7 +8,6 @@ function hugoPocket({
   Path,
   paths,
   complete,
-  paperless,
   macro,
   expand,
   snippets,

@@ -13,8 +13,6 @@ function hugoBack({
   paths,
   Snippet,
   snippets,
-  complete,
-  paperless,
   macro,
   part,
 }) {

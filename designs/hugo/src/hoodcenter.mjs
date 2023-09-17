@@ -1,19 +1,6 @@
 import { hoodSide } from './hoodside.mjs'
 
-function hugoHoodCenter({
-  store,
-  sa,
-  Point,
-  points,
-  Path,
-  paths,
-  complete,
-  paperless,
-  macro,
-  expand,
-  units,
-  part,
-}) {
+function hugoHoodCenter({ store, sa, Point, points, Path, paths, macro, expand, units, part }) {
   const width = store.get('hoodCenterWidth')
   const length = store.get('hoodCenterLength')
 

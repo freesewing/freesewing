@@ -11,8 +11,6 @@ function hugoHoodSide({
   Snippet,
   snippets,
   measurements,
-  complete,
-  paperless,
   macro,
   part,
 }) {

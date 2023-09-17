@@ -1,17 +1,6 @@
 import { pocket } from './pocket.mjs'
 
-function hugoPocketFacing({
-  sa,
-  points,
-  Path,
-  paths,
-  complete,
-  paperless,
-  macro,
-  store,
-  expand,
-  part,
-}) {
+function hugoPocketFacing({ sa, points, Path, paths, macro, store, expand, part }) {
   if (expand) store.flag.preset('expandIsOn')
   else {
     // Expand is on, do not draw the part but flag this to the user

@@ -8,8 +8,6 @@ function hugoCuff({
   points,
   Path,
   paths,
-  complete,
-  paperless,
   macro,
   expand,
   store,
