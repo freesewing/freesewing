@@ -224,7 +224,17 @@
     "design": "Joost De Cock",
     "difficulty": 5,
     "tags": ["tops", "coats"],
-    "techniques": []
+    "techniques": [
+      "hem",
+      "pocket",
+      "curvedSeam",
+      "precision",
+      "setSleeve",
+      "weltPocket",
+      "lining",
+      "interfacing",
+      "button"
+    ]
   },
   "legend": {
     "description": "A FreeSewing pattern to document pattern notation",

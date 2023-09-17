@@ -10,10 +10,8 @@ import { collarSpread } from './options.mjs'
  */
 
 function jaegerCollarStand({
-  paperless,
   sa,
   store,
-  complete,
   points,
   measurements,
   options,
@@ -108,6 +106,7 @@ function jaegerCollarStand({
     .close()
     .attr('class', 'fabric')
 
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
   /*
   paths.foo = new Path()
     .move(points.collarCorner)
@@ -120,51 +119,62 @@ function jaegerCollarStand({
     .curve_(points.collarstandCbTopCp, points.collarstandTip)
   */
 
-  if (complete) {
-    // Notches
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['collarstandCbBottom', 'collarstandCbTop'],
-    })
-    // Title
-    points.title = points.collarstandCbTop.shiftFractionTowards(points.collarCbBottom, 0.5)
-    macro('title', {
-      at: points.title,
-      nr: 8,
-      title: 'collarstand',
-    })
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'fabric' })
 
-    // Grainline
-    macro('grainline', {
-      from: points.collarstandCbTop,
-      to: points.collarstandCbBottom,
-    })
+  // Notches
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: ['collarstandCbBottom', 'collarstandCbTop'],
+  })
+  // Title
+  points.title = points.collarstandCbTop.shiftFractionTowards(points.collarCbBottom, 0.5)
+  macro('title', {
+    at: points.title,
+    nr: 8,
+    title: 'collarstand',
+  })
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+  // Grainline
+  macro('grainline', {
+    from: points.collarstandCbTop,
+    to: points.collarstandCbBottom,
+  })
 
-    if (paperless) {
-      macro('hd', {
-        from: points.leftCollarCorner,
-        to: points.collarCorner,
-        y: points.collarstandCbBottom.y - sa - 15,
-      })
-      macro('hd', {
-        from: points.leftCollarstandTip,
-        to: points.collarstandTip,
-        y: points.collarstandTip.y + sa + 15,
-      })
-      macro('vd', {
-        from: points.collarstandTip,
-        to: points.collarCorner,
-        x: points.collarstandTip.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.collarstandCbTop,
-        to: points.collarstandCbBottom,
-        x: points.collarstandCbTop.x + 15,
-      })
-    }
-  }
+  // Dimensions
+  macro('hd', {
+    id: 'wAtTop',
+    from: points.leftCollarCorner,
+    to: points.collarCorner,
+    y: points.collarstandCbBottom.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.leftCollarstandTip,
+    to: points.collarstandTip,
+    y: points.collarstandTip.y + sa + 15,
+  })
+  macro('vd', {
+    id: 'hAtSide',
+    from: points.collarstandTip,
+    to: points.collarCorner,
+    x: points.collarstandTip.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.collarstandTip,
+    to: points.collarstandCbBottom,
+    x: points.collarstandTip.x + sa + 30,
+  })
+  macro('vd', {
+    id: 'hCenter',
+    from: points.collarstandCbTop,
+    to: points.collarstandCbBottom,
+    x: points.collarstandCbTop.x + 15,
+  })
 
   return part
 }
