@@ -2,19 +2,7 @@ import { sleeve as brianSleeve } from '@freesewing/brian'
 import { back } from './back.mjs'
 import { hidePresets } from '@freesewing/core'
 
-function draftHueySleeve({
-  Point,
-  Path,
-  points,
-  paths,
-  store,
-  options,
-  complete,
-  sa,
-  paperless,
-  macro,
-  part,
-}) {
+function draftHueySleeve({ Point, Path, points, paths, store, options, sa, macro, part }) {
   // Clear paths from Brian, but keep sleevecap
   for (let p of Object.keys(paths)) {
     if (p !== 'sleevecap') delete paths[p]

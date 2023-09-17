@@ -8,8 +8,6 @@ function draftHueyHood({
   Path,
   points,
   paths,
-  complete,
-  paperless,
   snippets,
   Snippet,
   sa,

@@ -8,8 +8,6 @@ function draftHueyBack({
   Point,
   points,
   paths,
-  complete,
-  paperless,
   sa,
   options,
   measurements,

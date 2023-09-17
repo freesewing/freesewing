@@ -1,6 +1,6 @@
 import { draftRibbing } from './shared.mjs'
 
-function draftHueyWaistband({ complete, points, measurements, options, macro, store, part }) {
+function draftHueyWaistband({ points, measurements, options, macro, store, part }) {
   if (!options.ribbing) return part
 
   draftRibbing(part, measurements.hips * (1 + options.hipsEase) * (1 - options.ribbingStretch))

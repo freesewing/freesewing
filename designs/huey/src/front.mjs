@@ -11,7 +11,6 @@ function draftHueyFront({
   points,
   paths,
   complete,
-  paperless,
   sa,
   options,
   measurements,

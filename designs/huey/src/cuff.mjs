@@ -1,6 +1,6 @@
 import { draftRibbing } from './shared.mjs'
 
-function draftHueyCuff({ complete, points, measurements, options, macro, store, part }) {
+function draftHueyCuff({ points, measurements, options, macro, store, part }) {
   if (!options.ribbing) return part
 
   draftRibbing(part, measurements.wrist * (1 + options.cuffEase) * (1 - options.ribbingStretch))
