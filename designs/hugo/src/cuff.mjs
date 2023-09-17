@@ -11,10 +11,37 @@ function hugoCuff({
   complete,
   paperless,
   macro,
+  expand,
+  store,
+  units,
   part,
 }) {
   const width = (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight * 2
   const length = measurements.wrist * (1 + options.cuffEase) * (1 - options.ribbingStretch)
+
+  if (expand) {
+    store.flag.preset('expandIsOn')
+  } else {
+    // Expand is off, do not draw the part but flag this to the user
+    store.flag.note({
+      msg: `hugo:cutCuff`,
+      replace: {
+        w: units(width + 2 * sa),
+        l: units(length + 2 * sa),
+      },
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
 
   points.topLeft = new Point(0, 0)
   points.bottomLeft = new Point(0, width)
@@ -30,32 +57,37 @@ function hugoCuff({
     .close()
     .attr('class', 'various')
 
-  // Complete pattern?
-  if (complete) {
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'various sa')
-    }
-    points.title = points.bottomLeft.shiftFractionTowards(points.topRight, 0.5)
-    macro('title', { at: points.title, nr: 9, title: 'cuff' })
-    macro('grainline', {
-      from: points.bottomLeft.shift(0, 20),
-      to: points.topLeft.shift(0, 20),
-    })
-  }
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'various sa')
 
-  // Paperless?
-  if (paperless) {
-    macro('vd', {
-      from: points.bottomRight,
-      to: points.topRight,
-      x: points.topRight.x + sa + 15,
-    })
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomRight.y + sa + 15,
-    })
-  }
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'ribbing' })
+
+  // Title
+  points.title = points.bottomLeft.shiftFractionTowards(points.topRight, 0.5)
+  macro('title', { at: points.title, nr: 9, title: 'cuff' })
+
+  // Grainline
+  macro('grainline', {
+    from: points.bottomLeft.shift(0, 20),
+    to: points.topLeft.shift(0, 20),
+  })
+
+  // Dimensions
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottomRight,
+    to: points.topRight,
+    x: points.topRight.x + sa + 15,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.bottomLeft,
+    to: points.bottomRight,
+    y: points.bottomRight.y + sa + 15,
+  })
 
   return part
 }

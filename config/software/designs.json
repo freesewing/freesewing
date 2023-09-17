@@ -216,7 +216,7 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["tops"],
-    "techniques": []
+    "techniques": ["curvedSeam", "pocket", "ribbing", "raglanSleeve"]
   },
   "jaeger": {
     "description": "A FreeSewing pattern for a sport coat style jacket",

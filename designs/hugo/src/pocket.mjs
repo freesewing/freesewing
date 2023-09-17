@@ -10,9 +10,29 @@ function hugoPocket({
   complete,
   paperless,
   macro,
+  expand,
   snippets,
   part,
 }) {
+  if (expand) store.flag.preset('expandIsOn')
+  else {
+    // Expand is on, do not draw the part but flag this to the user
+    store.flag.note({
+      msg: `hugo:cutPocket`,
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
+
   // Remove clutter
   for (const key in paths) {
     if (key !== 'pocket') delete paths[key]
@@ -55,45 +75,56 @@ function hugoPocket({
     .attr('class', ' fabric help')
   paths.facing.hide()
 
-  // Complete pattern?
-  if (complete) {
-    paths.facing.unhide()
-    macro('cutonfold', {
-      from: points.pocketCf,
-      to: points.cfRibbing,
-      grainline: true,
-    })
-    points.title = points.cfRibbing.shiftFractionTowards(points.pocketTop, 0.5)
-    macro('title', { at: points.title, nr: 4, title: 'pocket' })
-    if (sa) {
-      paths.sa = paths.saBase.offset(sa).line(points.pocketCf).move(points.cfRibbing)
-      paths.sa.line(paths.sa.start()).attr('class', 'fabric sa')
-    }
+  if (complete) paths.facing.unhide().addClass('note dashed')
+
+  if (sa) {
+    paths.sa = paths.saBase.offset(sa).line(points.pocketCf).move(points.cfRibbing)
+    paths.sa.line(paths.sa.start()).attr('class', 'fabric sa')
   }
 
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.cfRibbing,
-      to: points.pocketTop,
-      y: points.cfRibbing.y + 15 + sa,
-    })
-    macro('hd', {
-      from: points.cfRibbing,
-      to: points.pocketTip,
-      y: points.cfRibbing.y + 30 + sa,
-    })
-    macro('vd', {
-      from: points.pocketHem,
-      to: points.pocketTip,
-      x: points.pocketTip.x + 15 + sa,
-    })
-    macro('vd', {
-      from: points.pocketHem,
-      to: points.pocketTop,
-      x: points.cfRibbing.x - 15 - sa,
-    })
-  }
+  /*
+   * Annotations
+   */
+  // cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Cutonfold
+  macro('cutonfold', {
+    to: points.cfRibbing,
+    from: points.pocketCf,
+    grainline: true,
+    reverse: true,
+  })
+
+  // Title
+  points.title = points.cfRibbing.shiftFractionTowards(points.pocketTop, 0.5)
+  macro('title', { at: points.title, nr: 4, title: 'pocket' })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wAtWaist',
+    from: points.cfRibbing,
+    to: points.pocketHem,
+    y: points.cfRibbing.y + 15 + sa,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.cfRibbing,
+    to: points.pocketTip,
+    y: points.cfRibbing.y + 30 + sa,
+  })
+  macro('vd', {
+    id: 'hWaistToTip',
+    from: points.pocketHem,
+    to: points.pocketTip,
+    x: points.pocketTip.x + 15 + sa,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.pocketHem,
+    to: points.pocketTop,
+    x: points.cfRibbing.x - 15 - sa,
+  })
 
   return part
 }
