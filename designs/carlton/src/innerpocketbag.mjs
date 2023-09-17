@@ -20,7 +20,7 @@ function draftCarltonInnerPocketBag({
       msg: `carlton:cutInnerPocketBag`,
       replace: {
         w: units(store.get('innerPocketWidth') + 2 * sa),
-        h: units(store.get('innerPocketWidth') * options.innerPocketDepth * 2 + 2 * sa),
+        l: units(store.get('innerPocketWidth') * options.innerPocketDepth * 2 + 2 * sa),
       },
       suggest: {
         text: 'flag:show',

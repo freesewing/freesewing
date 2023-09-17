@@ -68,7 +68,11 @@ function draftCarlitaSide({
   })
 
   // Notches
+  points.sideSeamWaist = new Point(points.psHemRot2.x, points.cfWaist.y)
+  points.sideSeamHips = new Point(points.psHemRot2.x, points.cfHips.y)
   snippets.bust = new Snippet('notch', points.bustPoint)
+  snippets.sideSeamWaist = new Snippet('notch', points.sideSeamWaist)
+  snippets.sideSeamHips = new Snippet('notch', points.sideSeamHips)
 
   // Dimensions
   macro('vd', {

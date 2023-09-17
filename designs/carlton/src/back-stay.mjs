@@ -7,11 +7,31 @@ function draftCarltonBackStay({
   store,
   points,
   macro,
+  expand,
   Point,
   paths,
   Path,
   part,
 }) {
+  if (expand) store.flag.preset('expandIsOn')
+  else {
+    // Expand is on, do not draw the part but flag this to the user
+    store.flag.note({
+      msg: `carlton:cutBackStay`,
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
+
   paths.seam = new Path()
     .move(points.bpStart)
     .curve(points.bsCp1, points.bsCp2, points.bpEnd)

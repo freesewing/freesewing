@@ -391,9 +391,19 @@ function draftCarlitaFront({
   snippets.button3Right = new Snippet('button', points.button3Right).attr('data-scale', 2)
 
   // Notches
+  points.sideSeamWaist = new Point(points.psHem.x, points.cfWaist.y)
+  points.sideSeamHips = new Point(points.psHem.x, points.cfHips.y)
   macro('sprinkle', {
     snippet: 'notch',
-    on: ['cfNeck', 'rollLineStart', 'bustPoint', 'chestPocketTopLeft', 'chestPocketBottomLeft'],
+    on: [
+      'cfNeck',
+      'rollLineStart',
+      'bustPoint',
+      'chestPocketTopLeft',
+      'chestPocketBottomLeft',
+      'sideSeamWaist',
+      'sideSeamHips',
+    ],
   })
 
   // Logo
@@ -558,7 +568,8 @@ export const front = {
   options: {
     draftForHighBust: true,
     contour: { pct: 50, min: 25, max: 75, menu: 'advanced' },
-    //pocketPlacementHorizontal: { pct: 11, min: 5, max: 15, menu: 'pockets' },
+    // Hide chest pocket angle, it is not used in Carlita
+    chestPocketAngle: 0,
   },
   draft: draftCarlitaFront,
 }
