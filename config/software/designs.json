@@ -246,7 +246,7 @@
     "design": "SeaZeeZee",
     "difficulty": 2,
     "tags": ["accessories", "historical", "bags"],
-    "techniques": []
+    "techniques": ["curvedSeam"]
   },
   "lunetius": {
     "description": "A FreeSewing pattern for a lacerna, a historical Roman cloak",
