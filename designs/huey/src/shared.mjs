@@ -97,21 +97,8 @@ export function sharedDimensions(part, s) {
 }
 
 export function draftRibbing(part, length) {
-  const {
-    store,
-    measurements,
-    options,
-    points,
-    paths,
-    Path,
-    Point,
-    expand,
-    sa,
-    complete,
-    paperless,
-    macro,
-    units,
-  } = part.shorthand()
+  const { store, measurements, options, points, paths, Path, Point, expand, sa, macro, units } =
+    part.shorthand()
   // Don't run this every time, except when sampling
   if (typeof store.get('ribbingHeight') === 'undefined' || part.context.settings.sample) {
     store.set(
