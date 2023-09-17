@@ -8,7 +8,6 @@ function draft({
   snippets,
   complete,
   sa,
-  paperless,
   macro,
   store,
   part,
