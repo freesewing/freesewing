@@ -1,7 +1,6 @@
 import { front } from './front.mjs'
 
 function jaegerChestPocketWelt({
-  paperless,
   sa,
   store,
   complete,
@@ -39,40 +38,53 @@ function jaegerChestPocketWelt({
     .close()
     .attr('class', 'fabric')
 
-  paths.fold = new Path()
-    .move(points.topLeft)
-    .line(points.topRight)
-    .attr('class', 'stroke-sm dashed')
+  if (complete)
+    paths.fold = new Path()
+      .move(points.topLeft)
+      .line(points.topRight)
+      .attr('class', 'stroke-sm dashed')
 
-  if (complete) {
-    // Title
-    macro('title', {
-      at: points.top,
-      nr: 11,
-      title: 'chestPocketWelt',
-    })
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-    // Grainline
-    macro('grainline', {
-      from: points.bottomLeft.shift(0, 10),
-      to: points.bottomLeft.shiftFractionTowards(points.topLeft, 2).shift(0, 10),
-    })
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+  // Title
+  macro('title', {
+    at: points.top,
+    nr: 11,
+    title: 'chestPocketWelt',
+    scale: 0.666,
+  })
 
-    if (paperless) {
-      macro('hd', {
-        from: points.foldLeft,
-        to: points.foldRight,
-        y: points.foldLeft.y - sa - 15,
-      })
-      macro('vd', {
-        from: points.bottomRight,
-        to: points.foldRight,
-        x: points.bottomRight.x + sa + 15,
-      })
-    }
-  }
+  // Grainline
+  macro('grainline', {
+    from: points.bottomLeft.shift(0, 10),
+    to: points.bottomLeft.shiftFractionTowards(points.topLeft, 2).shift(0, 10),
+  })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wNarrow',
+    from: points.topLeft,
+    to: points.foldRight,
+    y: points.foldLeft.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.foldLeft,
+    to: points.foldRight,
+    y: points.foldLeft.y - sa - 30,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottomRight,
+    to: points.foldRight,
+    x: points.bottomRight.x + sa + 15,
+  })
 
   return part
 }

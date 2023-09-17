@@ -208,7 +208,7 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["tops"],
-    "techniques": []
+    "techniques": ["curvedSeam", "pocket", "zipper", "ribbing", "flatSleeve"]
   },
   "hugo": {
     "description": "A FreeSewing pattern for a hooded jumper with raglan sleeves",
@@ -216,7 +216,7 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["tops"],
-    "techniques": []
+    "techniques": ["curvedSeam", "pocket", "ribbing", "raglanSleeve"]
   },
   "jaeger": {
     "description": "A FreeSewing pattern for a sport coat style jacket",
@@ -224,7 +224,17 @@
     "design": "Joost De Cock",
     "difficulty": 5,
     "tags": ["tops", "coats"],
-    "techniques": []
+    "techniques": [
+      "hem",
+      "pocket",
+      "curvedSeam",
+      "precision",
+      "setSleeve",
+      "weltPocket",
+      "lining",
+      "interfacing",
+      "button"
+    ]
   },
   "legend": {
     "description": "A FreeSewing pattern to document pattern notation",
@@ -236,7 +246,7 @@
     "design": "SeaZeeZee",
     "difficulty": 2,
     "tags": ["accessories", "historical", "bags"],
-    "techniques": []
+    "techniques": ["curvedSeam"]
   },
   "lunetius": {
     "description": "A FreeSewing pattern for a lacerna, a historical Roman cloak",
@@ -244,7 +254,7 @@
     "design": "Rika Tamaike",
     "difficulty": 1,
     "tags": ["tops", "coats", "historical"],
-    "techniques": []
+    "techniques": ["hem"]
   },
   "magde": {
     "description": "A FreeSewing pattern for a bike messenger bag",
