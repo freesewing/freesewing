@@ -1,16 +1,6 @@
 import { draftBarrelCuff, decorateBarrelCuff, paperlessBarrelCuff } from './shared.mjs'
 
-export const draftRoundedBarrelCuff = ({
-  store,
-  sa,
-  points,
-  Path,
-  paths,
-  complete,
-  paperless,
-  macro,
-  part,
-}) => {
+export const draftRoundedBarrelCuff = ({ store, sa, points, Path, paths, macro, part }) => {
   draftBarrelCuff(part)
   const height = store.get('cuffHeight')
   macro('round', {
@@ -41,21 +31,22 @@ export const draftRoundedBarrelCuff = ({
     .close()
     .attr('class', 'fabric')
 
-  // Complete pattern?
-  if (complete) {
-    decorateBarrelCuff(part)
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-  }
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-  // Paperless?
-  if (paperless) {
-    paperlessBarrelCuff(part)
-    macro('vd', {
-      from: points.topRightRoundStart,
-      to: points.topRightRoundEnd,
-      x: points.topRightRoundStart.x + 15 + sa,
-    })
-  }
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 4, from: 'fabric' })
+
+  decorateBarrelCuff(part)
+  paperlessBarrelCuff(part)
+  macro('vd', {
+    id: 'hRound',
+    from: points.topRightRoundStart,
+    to: points.topRightRoundEnd,
+    x: points.topRightRoundStart.x + 15 + sa,
+  })
 
   return part
 }

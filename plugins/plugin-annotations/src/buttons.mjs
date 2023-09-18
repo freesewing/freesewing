@@ -84,4 +84,12 @@ export const buttonsDefs = [
   ></path>
 </g>`,
   },
+  {
+    name: 'eyelet',
+    def: `
+<g id="eyelet">
+  <circle id="eyelet-circle" cx="0" cy="0" r="3.4" class="no-full stroke-mark mark" stroke-width="1" fill="none" stroke="currentColor">
+  </circle>
+</g>`,
+  },
 ]

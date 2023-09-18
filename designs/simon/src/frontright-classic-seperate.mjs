@@ -6,8 +6,6 @@ export const draftFrontRightClassicSeperate = ({
   Point,
   points,
   paths,
-  complete,
-  paperless,
   macro,
   part,
 }) => {
@@ -25,55 +23,54 @@ export const draftFrontRightClassicSeperate = ({
   paths.seam.ops[0].to = points.placketBottomIn
   paths.seam.close().attr('class', 'fabric')
 
-  // Complete pattern?
-  if (complete) {
-    // Title
-    macro('title', { at: points.title, nr: '1a', title: 'rightFront' })
-    delete snippets['cfWaist-notch']
-    delete snippets['cfHips-notch']
-    delete snippets['cfArmhole-notch']
-    delete snippets['cfBust-notch']
-    points.edgeArmhole = new Point(points.placketTopIn.x, points.armhole.y)
-    points.edgeWaist = new Point(points.placketTopIn.x, points.waist.y)
-    points.edgeHips = new Point(points.placketTopIn.x, points.hips.y)
+  if (sa) paths.saFromArmhole.line(paths.hemSa.start())
 
-    if (sa) paths.saFromArmhole.line(paths.hemSa.start())
-  }
+  /*
+   * Annotations
+   */
+  // Title
+  macro('title', { at: points.title, nr: '1a', title: 'rightFront' })
 
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.s3CollarSplit,
-      to: points.placketTopIn,
-      y: points.s3CollarSplit.y - sa - 15,
-    })
-    macro('hd', {
-      from: points.s3ArmholeSplit,
-      to: points.placketTopIn,
-      y: points.s3CollarSplit.y - sa - 30,
-    })
-    macro('hd', {
-      from: points.armhole,
-      to: points.placketTopIn,
-      y: points.s3CollarSplit.y - sa - 45,
-    })
-    macro('vd', {
-      from: points.placketTopIn,
-      to: points.s3CollarSplit,
-      x: points.placketTopIn.x + sa + 15,
-    })
-    macro('vd', {
-      from: points.placketBottomIn,
-      to: points.placketTopIn,
-      x: points.placketTopIn.x + sa + 15,
-    })
-    for (const pid of ['Armhole', 'Waist', 'Hips']) {
-      macro('hd', {
-        from: points['edge' + pid],
-        to: points[pid.toLowerCase()],
-      })
-    }
-  }
+  // Notches
+  delete snippets['cfWaist-notch']
+  delete snippets['cfHips-notch']
+  delete snippets['cfArmhole-notch']
+  delete snippets['cfBust-notch']
+  points.edgeArmhole = new Point(points.placketTopIn.x, points.armhole.y)
+  points.edgeWaist = new Point(points.placketTopIn.x, points.waist.y)
+  points.edgeHips = new Point(points.placketTopIn.x, points.hips.y)
+
+  // Dimensions
+  macro('hd', {
+    id: 'wHpsToEdge',
+    from: points.s3CollarSplit,
+    to: points.placketTopIn,
+    y: points.s3CollarSplit.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wShoulderToEdge',
+    from: points.s3ArmholeSplit,
+    to: points.placketTopIn,
+    y: points.s3CollarSplit.y - sa - 30,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.armhole,
+    to: points.placketTopIn,
+    y: points.s3CollarSplit.y - sa - 45,
+  })
+  macro('vd', {
+    id: 'hPlacketTopToHps',
+    from: points.placketTopIn,
+    to: points.s3CollarSplit,
+    x: points.placketTopIn.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.placketBottomIn,
+    to: points.placketTopIn,
+    x: points.placketTopIn.x + sa + 15,
+  })
 
   return part
 }

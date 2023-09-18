@@ -286,7 +286,7 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["bottoms", "trousers"],
-    "techniques": []
+    "techniques": ["elastic", "curvedSeam", "pocket", "weltPocket", "hem"]
   },
   "penelope": {
     "description": "A FreeSewing pattern for a pencil skirt",
@@ -310,7 +310,7 @@
     "design": "Erica Alcusa Sáez",
     "difficulty": 3,
     "tags": ["bottoms", "skirts"],
-    "techniques": []
+    "techniques": ["curvedSeam", "button", "hem"]
   },
   "shin": {
     "description": "A FreeSewing pattern for swim trunks",
@@ -318,7 +318,7 @@
     "design": "Joost De Cock",
     "difficulty": 2,
     "tags": ["bottoms", "swimwear"],
-    "techniques": []
+    "techniques": ["hem", "stretch", "curvedSeam", "elastic"]
   },
   "simon": {
     "description": "A FreeSewing pattern for a button down shirt",
@@ -326,7 +326,7 @@
     "design": "Joost De Cock",
     "difficulty": 4,
     "tags": ["tops"],
-    "techniques": []
+    "techniques": ["hem", "button", "interfacing", "curvedSeam", "flatFelledSeam", "flatSleeve"]
   },
   "simone": {
     "description": "A FreeSewing pattern for a button down shirt (Simone = Simon for people with breasts)",
@@ -334,7 +334,7 @@
     "design": "Joost De Cock",
     "difficulty": 4,
     "tags": ["tops"],
-    "techniques": []
+    "techniques": ["hem", "button", "interfacing", "curvedSeam", "flatFelledSeam", "flatSleeve"]
   },
   "sven": {
     "description": "A FreeSewing pattern for a straightforward sweater",
