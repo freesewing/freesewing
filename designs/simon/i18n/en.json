@@ -29,7 +29,6 @@
     "sleevePlacketUnderlap": "Sleeve placket underlap",
     "yoke": "Yoke",
     "matchHere": "Match fabric along this line",
-    "sideOfTheCollarStand": "Side of the collar stand",
     "cutUndercollarSmaller": "Cut the undercollar a little bit smaller",
     "flatFelledSeamAllowance": "Flat-felled seam allwance"
   },
@@ -90,6 +89,14 @@
       "t": "Button placket style",
       "d": "Style of the button placket."
     },
+    "buttonPlacketStyle.classic": {
+      "t": "Classic button placket",
+      "d": "A classic button placket"
+    },
+    "buttonPlacketStyle.seamless": {
+      "t": "Seamless button placket",
+      "d": "A seamless button placket gives a more modern look"
+    },
     "buttonPlacketWidth": {
       "t": "Button placket width",
       "d": "Width of the button placket."
@@ -105,6 +112,14 @@
     "buttonholePlacketStyle": {
       "t": "Buttonhole placket style",
       "d": "Style of the buttonhole placket."
+    },
+    "buttonholePlacketStyle.classic": {
+      "t": "Classic buttonhole placket",
+      "d": "A classic buttonhole placket with pleats"
+    },
+    "buttonholePlacketStyle.seamless": {
+      "t": "Seamless buttonhole placket",
+      "d": "A seamless buttonhole placket gives a more modern look"
     },
     "buttonholePlacketWidth": {
       "t": "Buttonhole placket width",

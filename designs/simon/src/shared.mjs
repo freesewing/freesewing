@@ -297,6 +297,7 @@ export const frontDimensions = (part, side = 'left') => {
   const factor = side === 'right' ? -1 : 1
   if (sa) {
     macro('banner', {
+      id: 'ffsa',
       path: paths.ffsa,
       text: 'simon:flatFelledSeamAllowance',
       classes: 'text-sm fill-note center',
