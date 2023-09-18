@@ -1,18 +1,6 @@
 import { front } from './front.mjs'
 
-function pacoFrontPocketBag({
-  sa,
-  points,
-  Path,
-  paths,
-  store,
-  snippets,
-  options,
-  complete,
-  paperless,
-  macro,
-  part,
-}) {
+function pacoFrontPocketBag({ sa, points, Path, paths, store, snippets, options, macro, part }) {
   // Don't bother of we're not drafting front pockets
   if (!options.frontPockets) return part.hide()
 

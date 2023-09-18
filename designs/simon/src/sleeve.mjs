@@ -19,7 +19,6 @@ function simonSleeve({
   Path,
   paths,
   complete,
-  paperless,
   macro,
   options,
   snippets,

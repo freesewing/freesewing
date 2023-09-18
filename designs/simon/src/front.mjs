@@ -20,7 +20,6 @@ function simonFront({
   points,
   Path,
   paths,
-  complete,
   macro,
   snippets,
   options,

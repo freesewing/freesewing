@@ -8,8 +8,6 @@ function shinBack({
   Path,
   points,
   paths,
-  complete,
-  paperless,
   snippets,
   Snippet,
   sa,

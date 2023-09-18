@@ -1,6 +1,6 @@
 import { draftFrenchCuff, decorateFrenchCuff, paperlessFrenchCuff } from './shared.mjs'
 
-export const draftStraightFrenchCuff = ({ sa, points, Path, paths, complete, paperless, part }) => {
+export const draftStraightFrenchCuff = ({ sa, points, Path, paths, complete, part }) => {
   draftFrenchCuff(part)
 
   paths.seam = new Path()

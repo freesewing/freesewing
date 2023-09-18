@@ -10,7 +10,6 @@ export const draftFrontLeftClassicCuton = ({
   Snippet,
   snippets,
   complete,
-  paperless,
   macro,
   options,
   part,

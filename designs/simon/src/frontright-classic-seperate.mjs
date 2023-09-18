@@ -6,8 +6,6 @@ export const draftFrontRightClassicSeperate = ({
   Point,
   points,
   paths,
-  complete,
-  paperless,
   macro,
   part,
 }) => {

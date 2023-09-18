@@ -13,8 +13,6 @@ function sandySkirt({
   snippets,
   options,
   measurements,
-  complete,
-  paperless,
   macro,
   absoluteOptions,
   part,

@@ -1,6 +1,6 @@
 import { draftBarrelCuff, decorateBarrelCuff, paperlessBarrelCuff } from './shared.mjs'
 
-export const draftStraightBarrelCuff = ({ sa, points, Path, paths, complete, paperless, part }) => {
+export const draftStraightBarrelCuff = ({ sa, points, Path, paths, part }) => {
   draftBarrelCuff(part)
   paths.seam = new Path()
     .move(points.topLeft)

@@ -6,7 +6,7 @@ import { front } from './front.mjs'
 import { buttonPlacketStyle } from './options.mjs'
 
 function simonFrontRight(params) {
-  const { sa, options, complete, paperless, points, macro, paths, part } = params
+  const { sa, options, points, macro, part } = params
   macro('flip')
 
   /*

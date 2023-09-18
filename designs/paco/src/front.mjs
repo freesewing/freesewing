@@ -13,7 +13,6 @@ function pacoFront({
   options,
   measurements,
   complete,
-  paperless,
   macro,
   absoluteOptions,
   part,

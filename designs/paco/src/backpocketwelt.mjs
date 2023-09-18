@@ -8,8 +8,6 @@ function pacoBackPocketWelt({
   paths,
   snippets,
   options,
-  complete,
-  paperless,
   expand,
   store,
   units,

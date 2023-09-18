@@ -12,7 +12,6 @@ function simonCollarStand({
   Snippet,
   snippets,
   complete,
-  paperless,
   macro,
   options,
   part,

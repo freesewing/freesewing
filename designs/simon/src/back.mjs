@@ -34,7 +34,6 @@ function simonBack({
   Snippet,
   snippets,
   complete,
-  paperless,
   macro,
   options,
   part,

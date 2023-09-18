@@ -9,7 +9,6 @@ function pacoBackPocketBag({
   store,
   options,
   complete,
-  paperless,
   expand,
   units,
   macro,

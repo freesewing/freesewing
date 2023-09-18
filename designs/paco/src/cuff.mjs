@@ -9,7 +9,6 @@ function pacoCuff({
   paths,
   options,
   complete,
-  paperless,
   expand,
   units,
   macro,

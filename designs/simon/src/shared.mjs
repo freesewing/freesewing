@@ -293,7 +293,7 @@ export const paperlessFrenchCuff = (part) => {
 }
 
 export const frontDimensions = (part, side = 'left') => {
-  const { sa, options, paperless, points, paths, macro } = part.shorthand()
+  const { sa, options, points, paths, macro } = part.shorthand()
   const factor = side === 'right' ? -1 : 1
   if (sa) {
     macro('banner', {

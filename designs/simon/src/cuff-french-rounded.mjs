@@ -7,7 +7,6 @@ export const draftRoundedFrenchCuff = ({
   Path,
   paths,
   complete,
-  paperless,
   macro,
   part,
 }) => {

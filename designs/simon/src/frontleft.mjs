@@ -6,7 +6,7 @@ import { front } from './front.mjs'
 import { buttonholePlacketStyle } from './options.mjs'
 
 function simonFrontLeft(params) {
-  const { sa, options, complete, paperless, points, macro, part } = params
+  const { sa, options, points, macro, part } = params
 
   frontDimensions(part, 'left')
   macro('ld', {

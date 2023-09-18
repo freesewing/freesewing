@@ -1,7 +1,6 @@
 import { front } from './front.mjs'
 
 function pacoWaistband({
-  utils,
   store,
   sa,
   Point,
@@ -9,7 +8,6 @@ function pacoWaistband({
   Path,
   paths,
   complete,
-  paperless,
   expand,
   macro,
   units,

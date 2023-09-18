@@ -11,7 +11,6 @@ function simonSleevePlacketUnderlap({
   Snippet,
   snippets,
   complete,
-  paperless,
   macro,
   options,
   store,

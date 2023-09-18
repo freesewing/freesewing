@@ -11,7 +11,6 @@ function pacoBack({
   options,
   measurements,
   complete,
-  paperless,
   macro,
   absoluteOptions,
   part,

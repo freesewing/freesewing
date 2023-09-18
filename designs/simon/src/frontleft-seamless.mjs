@@ -6,7 +6,6 @@ export const draftFrontLeftSeamless = ({
   Path,
   paths,
   complete,
-  paperless,
   store,
   macro,
   options,

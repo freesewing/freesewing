@@ -9,7 +9,6 @@ export const draftFrontRightClassicCuton = ({
   Path,
   paths,
   complete,
-  paperless,
   macro,
   options,
   part,

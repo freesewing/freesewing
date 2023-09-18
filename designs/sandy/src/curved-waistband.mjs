@@ -10,8 +10,6 @@ export function draftCurvedWaistband({
   Snippet,
   snippets,
   options,
-  complete,
-  paperless,
   macro,
   absoluteOptions,
   part,

@@ -18,7 +18,6 @@ function simonCollar({
   Path,
   paths,
   complete,
-  paperless,
   macro,
   options,
   part,

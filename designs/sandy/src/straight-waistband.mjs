@@ -8,8 +8,6 @@ export function draftStraightWaistband({
   Snippet,
   snippets,
   units,
-  complete,
-  paperless,
   macro,
   expand,
   absoluteOptions,

@@ -12,7 +12,6 @@ function simonButtonholePlacket({
   Snippet,
   snippets,
   complete,
-  paperless,
   macro,
   options,
   store,

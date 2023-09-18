@@ -7,8 +7,6 @@ export const draftFrontLeftClassicSeperate = ({
   paths,
   store,
   snippets,
-  complete,
-  paperless,
   macro,
   part,
 }) => {

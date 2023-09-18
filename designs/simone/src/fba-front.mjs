@@ -13,7 +13,6 @@ function simoneFbaFront({
   snippets,
   utils,
   sa,
-  complete,
   log,
   part,
 }) {
