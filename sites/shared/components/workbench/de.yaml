@@ -19,8 +19,12 @@ chooseFromCuratedSetsDesc: If you're just looking to try out our platform, you c
 chooseFromOwnSets: Choose one of your own measurements sets
 chooseFromOwnSetsDesc: Pick any of your own measurements sets that have all required measurements to generate this pattern.
 chooseNewSet: Wähle ein neues Maßnahmeset
+closure: Verschluss
+collar: Kragen
 columns: columns
 configurePattern: Muster konfigurieren
+construction: Konstruktion
+cuffs: Manschetten
 currentPrintLayout: Current print layout
 cutLayout: Layout schneiden
 darts: Abnäher
@@ -35,6 +39,7 @@ editCurrentMeasiesHeader: Schnittmuster-Maße bearbeiten
 editMeasiesByHand: Edit measurements by hand
 editMeasiesByHandDesc: Manually set or override any measurements. These changes will only apply to the current pattern.
 editSettings: Konfiguration bearbeiten
+elastic: Gummi
 export: Exportieren
 exportAsData: Als Daten exportieren
 exportForEditing: Für die Bearbeitung exportieren
