@@ -19,8 +19,12 @@ chooseFromCuratedSetsDesc: If you're just looking to try out our platform, you c
 chooseFromOwnSets: Choose one of your own measurements sets
 chooseFromOwnSetsDesc: Pick any of your own measurements sets that have all required measurements to generate this pattern.
 chooseNewSet: Обрати новий набір мірок
+closure: Закриття
+collar: Комір
 columns: columns
 configurePattern: Налаштувати шаблон
+construction: Конструкція
+cuffs: Манжети
 currentPrintLayout: Current print layout
 cutLayout: Макет розкрою
 darts: Виточки
@@ -35,6 +39,7 @@ editCurrentMeasiesHeader: Edit Pattern Measurements
 editMeasiesByHand: Edit measurements by hand
 editMeasiesByHandDesc: Manually set or override any measurements. These changes will only apply to the current pattern.
 editSettings: Редагування конфігурації
+elastic: Резинка
 export: Експортувати
 exportAsData: Експорт даних
 exportForEditing: Експортувати для коригування
