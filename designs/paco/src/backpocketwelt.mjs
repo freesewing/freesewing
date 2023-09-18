@@ -41,8 +41,8 @@ function pacoBackPocketWelt({
     store.flag.note({
       msg: `paco:cutBackPocketWelt`,
       replace: {
-        h: units(h + 2 * sa),
-        w: units(w + 2 * sa),
+        w: units(h + 2 * sa),
+        l: units(w + 2 * sa),
       },
       suggest: {
         text: 'flag:show',

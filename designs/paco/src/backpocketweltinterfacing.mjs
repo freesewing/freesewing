@@ -30,8 +30,8 @@ function pacoBackPocketWeltInterfacing({
     store.flag.note({
       msg: `paco:cutBackPocketWeltInterfacing`,
       replace: {
-        h: units(points.topLeft.dist(points.bottomLeft)),
-        w: units(points.topLeft.dist(points.topRight)),
+        w: units(points.topLeft.dist(points.bottomLeft)),
+        l: units(points.topLeft.dist(points.topRight)),
       },
       suggest: {
         text: 'flag:show',
