@@ -19,8 +19,12 @@ chooseFromCuratedSetsDesc: If you're just looking to try out our platform, you c
 chooseFromOwnSets: Choose one of your own measurements sets
 chooseFromOwnSetsDesc: Pick any of your own measurements sets that have all required measurements to generate this pattern.
 chooseNewSet: Kies een nieuwe meetset
+closure: Sluiting
+collar: Kraag
 columns: columns
 configurePattern: Patroon configureren
+construction: Constructie
+cuffs: Manchetten
 currentPrintLayout: Current print layout
 cutLayout: Lay-out snijden
 darts: Nepen
@@ -35,6 +39,7 @@ editCurrentMeasiesHeader: Edit Pattern Measurements
 editMeasiesByHand: Edit measurements by hand
 editMeasiesByHandDesc: Manually set or override any measurements. These changes will only apply to the current pattern.
 editSettings: Configuratie bewerken
+elastic: Elastiek
 export: Exporteren
 exportAsData: Exporteer als data
 exportForEditing: Exporteren om te bewerken
