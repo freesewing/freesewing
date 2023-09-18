@@ -35,6 +35,7 @@ editCurrentMeasiesHeader: Edit Pattern Measurements
 editMeasiesByHand: Edit measurements by hand
 editMeasiesByHandDesc: Manually set or override any measurements. These changes will only apply to the current pattern.
 editSettings: Edit configuration
+elastic: Elastic
 export: Export
 exportAsData: Export as data
 exportForEditing: Export for editing

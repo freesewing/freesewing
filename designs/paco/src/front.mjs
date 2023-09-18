@@ -79,8 +79,8 @@ function pacoFront({
   points.kneeIn = points.knee.shift(0, quarterHeel)
   points.kneeInCp2 = points.kneeIn
 
-  // Shorter leg if we have an elasticated hem
-  if (options.elasticatedHem) {
+  // Shorter leg if we have an elasticated cuff
+  if (options.elasticatedCuff) {
     for (const p of ['floor', 'floorIn', 'floorOut'])
       points[p] = points[p].shift(90, options.ankleElastic)
   }
@@ -160,7 +160,7 @@ function pacoFront({
   if (sa) {
     const waistIn = points.styleWaistIn || points.waistIn
     const waistOut = points.styleWaistOut || points.waistOut
-    const hemSa = options.elasticatedHem ? sa : 4 * sa
+    const hemSa = options.elasticatedCuff ? sa : 4 * sa
     paths.sa = drawOutseam()
       .offset(sa)
       .line(points.floorOut.shift(180, sa).shift(-90, hemSa))

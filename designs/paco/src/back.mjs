@@ -69,7 +69,7 @@ function pacoBack({
 
   // Shorter leg if we have an elasticated hem
   store.set('ankleElastic', absoluteOptions.ankleElastic)
-  if (options.elasticatedHem) {
+  if (options.elasticatedCuff) {
     for (const p of ['floor', 'floorIn', 'floorOut'])
       points[p] = points[p].shift(90, store.get('ankleElastic'))
   }
@@ -146,7 +146,7 @@ function pacoBack({
 
   if (sa) {
     const waistIn = points.styleWaistIn || points.waistIn
-    const hemSa = options.elasticatedHem ? sa : 4 * sa
+    const hemSa = options.elasticatedCuff ? sa : 4 * sa
     paths.sa = drawInseam()
       .offset(sa)
       .line(points.floorIn.shift(180, sa).shift(-90, hemSa))
@@ -191,10 +191,12 @@ function pacoBack({
   store.cutlist.setCut({ cut: 2, from: 'fabric' })
 
   // Notches
-  macro('sprinkle', {
-    snippet: 'bnotch',
-    on: ['pocketLeft', 'pocketRight', 'pocketBagWaistLeft', 'pocketBagWaistRight'],
-  })
+  if (options.backPockets) {
+    macro('sprinkle', {
+      snippet: 'bnotch',
+      on: ['pocketLeft', 'pocketRight', 'pocketBagWaistLeft', 'pocketBagWaistRight'],
+    })
+  }
 
   // Dimensions
   macro('hd', {
@@ -363,7 +365,7 @@ export const back = {
     waistHeight: { pct: 5, min: 0, max: 100, menu: 'style' },
     lengthBonus: { pct: 0, min: -15, max: 10, menu: 'style' },
     crotchDrop: { pct: 2, min: 0, max: 10, menu: 'style' },
-    elasticatedHem: { bool: true, menu: 'style' },
+    elasticatedCuff: { bool: true, menu: 'style' },
     // Elastic
     waistbandWidth: {
       pct: 3,

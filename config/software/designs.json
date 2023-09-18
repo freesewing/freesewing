@@ -286,7 +286,7 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["bottoms", "trousers"],
-    "techniques": []
+    "techniques": ["elastic", "curvedSeam", "pocket", "weltPocket", "hem"]
   },
   "penelope": {
     "description": "A FreeSewing pattern for a pencil skirt",

@@ -42,14 +42,14 @@ function pacoWaistband({
   }
 
   points.topLeft = new Point(0, 0)
-  points.midLeft = new Point(0, store.get('waistbandWidth'))
-  points.bottomLeft = new Point(0, store.get('waistbandWidth') * 2)
-  points.eyeletLeft = new Point(20, store.get('waistbandWidth') / 2)
-  points.eyeletRight = points.eyeletLeft.shift(0, l - 40)
+  points.topMid = new Point(w, 0)
+  points.topRight = new Point(w * 2, 0)
+  points.bottomLeft = new Point(0, l)
+  points.bottomMid = new Point(w, l)
+  points.bottomRight = new Point(w * 2, l)
 
-  points.topRight = points.topLeft.shift(0, l)
-  points.midRight = points.midLeft.shift(0, l)
-  points.bottomRight = points.bottomLeft.shift(0, l)
+  points.eyeletTop = new Point(w * 1.5, w / 2)
+  points.eyeletBottom = points.bottomLeft.translate(w * 1.5, w / -2)
 
   paths.seam = new Path()
     .move(points.topLeft)
@@ -61,15 +61,15 @@ function pacoWaistband({
     .addClass('fabric')
 
   if (complete)
-    paths.fold = new Path().move(points.midLeft).line(points.midRight).attr('class', 'help')
+    paths.fold = new Path().move(points.topMid).line(points.bottomMid).attr('class', 'help')
 
   if (sa)
     paths.sa = new Path()
-      .move(points.topLeft)
-      .line(points.bottomLeft.shift(-90, 2 * sa))
-      .line(points.bottomRight.shift(-90, 2 * sa))
+      .move(points.topLeft.shift(180, 2 * sa))
+      .line(points.bottomLeft.shift(180, 2 * sa))
+      .line(points.bottomRight)
       .line(points.topRight)
-      .line(points.topLeft)
+      .line(points.topLeft.shift(180, 2 * sa))
       .close()
       .offset(sa)
       .setClass('fabric sa')
@@ -95,32 +95,32 @@ function pacoWaistband({
   })
 
   // Notches
-  macro('sprinkle', { snippet: 'eyelet', on: ['eyeletLeft', 'eyeletRight'] })
-  macro('sprinkle', { snippet: 'notch', on: ['midLeft', 'midRight'] })
+  macro('sprinkle', { snippet: 'eyelet', on: ['eyeletTop', 'eyeletBottom'] })
+  //macro('sprinkle', { snippet: 'notch', on: ['midLeft', 'midRight'] })
 
   // Dimensions
   macro('hd', {
     id: 'wFull',
-    from: points.midLeft,
-    to: points.midRight,
-    y: points.bottomRight.y + 3 * sa + 15,
+    from: points.topLeft,
+    to: points.topRight,
+    y: points.bottomRight.y + sa + 15,
   })
   macro('hd', {
-    id: 'wEyeletLeft',
-    from: points.midLeft,
-    to: points.eyeletLeft,
-    y: points.topRight.y - sa - 15,
+    id: 'wEyeletTop',
+    from: points.eyeletTop,
+    to: points.topRight,
+    y: points.topLeft.y - sa - 15,
   })
-  macro('hd', {
-    id: 'wEyeletRight',
-    from: points.eyeletRight,
-    to: points.midRight,
-    y: points.topRight.y - sa - 15,
+  macro('vd', {
+    id: 'hEyeletTop',
+    from: points.eyeletTop,
+    to: points.topRight,
+    x: points.topRight.x + sa + 15,
   })
   macro('vd', {
     from: points.bottomRight,
     to: points.topRight,
-    x: points.topRight.x + 15 + sa,
+    x: points.topLeft.x - 15 - 3 * sa,
   })
 
   return part
