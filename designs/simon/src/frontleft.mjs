@@ -8,14 +8,13 @@ import { buttonholePlacketStyle } from './options.mjs'
 function simonFrontLeft(params) {
   const { sa, options, complete, paperless, points, macro, part } = params
 
-  if (complete && paperless) {
-    frontDimensions(part, 'left')
-    macro('ld', {
-      from: points.s3CollarSplit,
-      to: points.s3ArmholeSplit,
-      d: 15 + sa,
-    })
-  }
+  frontDimensions(part, 'left')
+  macro('ld', {
+    from: points.s3CollarSplit,
+    to: points.s3ArmholeSplit,
+    d: 15 + sa,
+  })
+
   if (options.seperateButtonholePlacket) {
     return draftFrontLeftClassicSeperate(params)
   } else if (options.buttonholePlacketStyle === 'seamless') {

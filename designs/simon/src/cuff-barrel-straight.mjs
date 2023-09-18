@@ -10,17 +10,10 @@ export const draftStraightBarrelCuff = ({ sa, points, Path, paths, complete, pap
     .line(points.topLeft)
     .close()
     .attr('class', 'fabric')
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-  // Complete pattern?
-  if (complete) {
-    decorateBarrelCuff(part)
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-  }
-
-  // Paperless?
-  if (paperless) {
-    paperlessBarrelCuff(part)
-  }
+  decorateBarrelCuff(part)
+  paperlessBarrelCuff(part)
 
   return part
 }

@@ -326,7 +326,7 @@
     "design": "Joost De Cock",
     "difficulty": 4,
     "tags": ["tops"],
-    "techniques": []
+    "techniques": ["hem", "button", "interfacing", "curvedSeam", "flatFelledSeam", "flatSleeve"]
   },
   "simone": {
     "description": "A FreeSewing pattern for a button down shirt (Simone = Simon for people with breasts)",
@@ -334,7 +334,7 @@
     "design": "Joost De Cock",
     "difficulty": 4,
     "tags": ["tops"],
-    "techniques": []
+    "techniques": ["hem", "button", "interfacing", "curvedSeam", "flatFelledSeam", "flatSleeve"]
   },
   "sven": {
     "description": "A FreeSewing pattern for a straightforward sweater",

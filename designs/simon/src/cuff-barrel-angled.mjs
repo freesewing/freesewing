@@ -29,21 +29,20 @@ export const draftAngledBarrelCuff = ({
     .close()
     .attr('class', 'fabric')
 
-  // Complete pattern?
-  if (complete) {
-    decorateBarrelCuff(part)
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-  }
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-  // Paperless?
-  if (paperless) {
-    paperlessBarrelCuff(part)
-    macro('vd', {
-      from: points.rightAngleBottom,
-      to: points.rightAngleTop,
-      x: points.rightAngleBottom.x + 15 + sa,
-    })
-  }
+  /*
+   * Annotations
+   */
+
+  decorateBarrelCuff(part)
+  paperlessBarrelCuff(part)
+  macro('vd', {
+    id: 'hFull',
+    from: points.rightAngleBottom,
+    to: points.rightAngleTop,
+    x: points.rightAngleBottom.x + 15 + sa,
+  })
 
   return part
 }
