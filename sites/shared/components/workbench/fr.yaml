@@ -19,8 +19,12 @@ chooseFromCuratedSetsDesc: If you're just looking to try out our platform, you c
 chooseFromOwnSets: Choose one of your own measurements sets
 chooseFromOwnSetsDesc: Pick any of your own measurements sets that have all required measurements to generate this pattern.
 chooseNewSet: Choisis un nouvel ensemble de mesures
+closure: Fermeture
+collar: Col
 columns: columns
 configurePattern: Configurer le modèle
+construction: Construction
+cuffs: Poignets
 currentPrintLayout: Current print layout
 cutLayout: Disposition des coupes
 darts: Pinces
@@ -35,6 +39,7 @@ editCurrentMeasiesHeader: Edit Pattern Measurements
 editMeasiesByHand: Edit measurements by hand
 editMeasiesByHandDesc: Manually set or override any measurements. These changes will only apply to the current pattern.
 editSettings: Modifier la configuration
+elastic: Élastique
 export: Exporter
 exportAsData: Exporter en tant que données
 exportForEditing: Exporter pour édition
