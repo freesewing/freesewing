@@ -3,21 +3,52 @@ import { ribbing, hipsEase } from './frontback.mjs'
 import { ribbingStretch } from './cuff.mjs'
 
 function svenWaistband(params) {
-  const { measurements, points, complete, macro, options, part } = params
+  const { measurements, points, macro, options, store, expand, units, sa, part } = params
 
   if (!options.ribbing) return part
 
-  let length = measurements.hips * (1 + options.hipsEase) * (1 - options.ribbingStretch)
+  const length = measurements.hips * (1 + options.hipsEase) * (1 - options.ribbingStretch)
+
+  if (expand) store.flag.preset('expandIsOn')
+  else {
+    // Expand is on, do not draw the part but flag this to the user
+    store.flag.note({
+      msg: `sven:cutWaistband`,
+      replace: {
+        w: units(
+          (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight + 2 * sa
+        ),
+        l: units(length + 2 * sa),
+      },
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
+
   draftRibbing(params, length)
 
-  // Complete pattern?
-  if (complete) {
-    macro('title', {
-      at: points.title,
-      nr: 4,
-      title: 'waistband',
-    })
-  }
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'ribbing' })
+
+  // Title
+  macro('title', {
+    at: points.title,
+    nr: 4,
+    title: 'waistband',
+    align: 'center',
+  })
 
   return part
 }
