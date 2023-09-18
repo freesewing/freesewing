@@ -318,7 +318,7 @@
     "design": "Joost De Cock",
     "difficulty": 2,
     "tags": ["bottoms", "swimwear"],
-    "techniques": []
+    "techniques": ["hem", "stretch", "curvedSeam", "elastic"]
   },
   "simon": {
     "description": "A FreeSewing pattern for a button down shirt",
