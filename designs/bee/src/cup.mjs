@@ -38,11 +38,13 @@ export const cup = {
   draft: ({
     store,
     sa,
+    Point,
     points,
     Path,
     paths,
     options,
     complete,
+    paperless,
     macro,
     utils,
     measurements,
@@ -366,7 +368,6 @@ export const cup = {
         })
       }
     }
-
     return part
   },
 }

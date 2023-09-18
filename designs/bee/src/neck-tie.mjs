@@ -1,4 +1,5 @@
 import { pctBasedOn } from '@freesewing/core'
+import { pluginBundle } from '@freesewing/plugin-bundle'
 
 export const neckTie = {
   name: 'bee.neckTie',
@@ -17,8 +18,10 @@ export const neckTie = {
       ...pctBasedOn('bustSpan'),
       menu: 'style',
     },
-    reversible: { bool: false, menu: 'style' },
+    neckTieEnds: { dflt: 'straight', list: ['straight', 'pointed'], menu: 'style' },
+    neckTieColours: { dflt: 'one', list: ['one', 'two'], menu: 'style' },
   },
+  plugins: [pluginBundle],
   draft: ({
     store,
     sa,
@@ -27,11 +30,10 @@ export const neckTie = {
     Path,
     paths,
     options,
-    units,
     complete,
+    paperless,
     macro,
     measurements,
-    expand,
     absoluteOptions,
     part,
   }) => {
@@ -143,41 +145,6 @@ export const neckTie = {
         })
       }
     }
-
-    // Grainline
-    macro('grainline', {
-      from: points.grainlineLeft,
-      to: points.grainlineRight,
-      classes: {
-        text: 'text-sm fill-note',
-        line: 'stroke-sm',
-      },
-    })
-
-    // Cut on fold
-    macro('cutonfold', {
-      from: points.cofLeft,
-      to: points.cofRight,
-      offset: 10,
-      classes: {
-        text: 'text-sm center fill-note',
-        line: 'stroke-sm note',
-      },
-    })
-
-    // Dimensions
-    macro('vd', {
-      id: 'hLeft',
-      from: points.bottomLeft,
-      to: points.topMiddle,
-      x: points.topLeft.x - sa - 20,
-    })
-    macro('hd', {
-      id: 'wTop',
-      from: points.topLeft,
-      to: options.duoColorTies ? points.topMiddle : points.topRight,
-      y: points.topLeft.x - sa - 20,
-    })
 
     return part
   },

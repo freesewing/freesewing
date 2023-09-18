@@ -15,6 +15,8 @@ export const bandTie = {
       menu: 'style',
     },
     bandTieLength: { pct: 35, min: 30, max: 50, menu: 'style' },
+    bandTieEnds: { dflt: 'straight', list: ['straight', 'pointed'], menu: 'style' },
+    bandTieColours: { dflt: 'one', list: ['one', 'two'], menu: 'style' },
   },
   draft: ({
     store,
@@ -25,6 +27,7 @@ export const bandTie = {
     paths,
     options,
     complete,
+    paperless,
     macro,
     measurements,
     absoluteOptions,
@@ -142,19 +145,6 @@ export const bandTie = {
         })
       }
     }
-
-    macro('vd', {
-      id: 'hLeft',
-      from: points.bottomLeft,
-      to: points.topLeft,
-      x: points.topLeft.x - sa - 20,
-    })
-    macro('hd', {
-      id: 'wTop',
-      from: points.topLeft,
-      to: options.duoColorties ? points.middleRight : points.topRight,
-      y: points.topLeft.x - sa - 20,
-    })
 
     return part
   },
