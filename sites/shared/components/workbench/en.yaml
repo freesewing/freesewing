@@ -21,6 +21,7 @@ chooseFromOwnSetsDesc: Pick any of your own measurements sets that have all requ
 chooseNewSet: Choose a New Measurements Set
 columns: columns
 configurePattern: Configure pattern
+construction: Construction
 currentPrintLayout: Current print layout
 cutLayout: Cut Layout
 darts: Darts

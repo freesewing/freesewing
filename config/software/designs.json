@@ -310,7 +310,7 @@
     "design": "Erica Alcusa Sáez",
     "difficulty": 3,
     "tags": ["bottoms", "skirts"],
-    "techniques": []
+    "techniques": ["curvedSeam", "button", "hem"]
   },
   "shin": {
     "description": "A FreeSewing pattern for swim trunks",
