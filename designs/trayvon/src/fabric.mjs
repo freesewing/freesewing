@@ -11,42 +11,43 @@ function trayvonFabricTail(params) {
 
   calculateHelpers(params)
   draftTieShape(params, store.get('backTip') * 2.5, absoluteOptions.knotWidth * 2.5, true)
-  paths.seam.attributes.add('class', 'fabric')
+  paths.seam.addClass('fabric')
+  if (sa) seamAllowance(params, 'fabric')
 
+  /*
+   * Annotations
+   */
+  // Cutlist
   store.cutlist.addCut({ cut: 1 })
 
-  // Complete pattern?
-  if (complete) {
-    macro('title', {
-      at: points.title,
-      nr: 4,
-      title: 'fabricTail',
-      rotation: -90,
-    })
+  // Title
+  macro('title', {
+    at: points.title,
+    nr: 4,
+    title: 'fabricTail',
+    rotation: -90,
+  })
 
-    if (sa) seamAllowance(params, 'fabric')
-  }
-
-  // Paperless?
-  if (paperless) {
-    tieShapeDimensions(params)
-    macro('ld', {
-      from: points.tip,
-      to: points.notch1,
-      d: absoluteOptions.tipWidth / -2.5,
-    })
-    macro('ld', {
-      from: points.notch2,
-      to: points.tip,
-      d: absoluteOptions.tipWidth / -2.5,
-    })
+  // Dimensions
+  tieShapeDimensions(params)
+  macro('ld', {
+    id: 'lTipToNotch1',
+    from: points.tip,
+    to: points.notch1,
+    d: absoluteOptions.tipWidth / -2.5,
+  })
+  macro('ld', {
+    id: 'lTipToNotch2',
+    from: points.notch2,
+    to: points.tip,
+    d: absoluteOptions.tipWidth / -2.5,
+  })
+  if (complete)
     paths.n45 = new Path()
       .move(points.midLeft)
       .line(points.midRight)
-      .attr('class', 'hidden')
-      .attr('data-text', '45°')
-      .attr('data-text-class', 'center')
-  }
+      .addClass('hidden')
+      .addText('45°', 'center')
 
   return params.part
 }
@@ -68,45 +69,47 @@ function trayvonFabricTip(params) {
 
   calculateHelpers(params)
   draftTieShape(params, absoluteOptions.tipWidth * 2.5, absoluteOptions.knotWidth * 2.5, true)
-  paths.seam.attributes.add('class', 'fabric')
+  paths.seam.addClass('fabric')
+  if (sa) seamAllowance(params, 'fabric')
 
+  /*
+   * Annotations
+   */
+  // Cutlist
   store.cutlist.addCut({ cut: 1 })
 
-  // Complete pattern?
-  if (complete) {
-    macro('title', {
-      at: points.title,
-      nr: 3,
-      title: 'fabricTip',
-      rotation: -90,
-    })
+  // Title
+  macro('title', {
+    at: points.title,
+    nr: 3,
+    title: 'fabricTip',
+    rotation: -90,
+  })
 
-    points.logo = points.tip.shiftFractionTowards(points.mid, 0.4)
-    snippets.logo = new Snippet('logo', points.logo)
+  // Logo
+  points.logo = points.tip.shiftFractionTowards(points.mid, 0.4)
+  snippets.logo = new Snippet('logo', points.logo)
 
-    if (sa) seamAllowance(params, 'fabric')
-  }
-
-  // Paperless?
-  if (paperless) {
-    tieShapeDimensions(params)
-    macro('ld', {
-      from: points.tip,
-      to: points.notch1,
-      d: absoluteOptions.tipWidth / -2.5,
-    })
-    macro('ld', {
-      from: points.notch2,
-      to: points.tip,
-      d: absoluteOptions.tipWidth / -2.5,
-    })
+  // Dimensions
+  tieShapeDimensions(params)
+  macro('ld', {
+    id: 'lTipToNotch1',
+    from: points.tip,
+    to: points.notch1,
+    d: absoluteOptions.tipWidth / -2.5,
+  })
+  macro('ld', {
+    id: 'lTipToNotch2',
+    from: points.notch2,
+    to: points.tip,
+    d: absoluteOptions.tipWidth / -2.5,
+  })
+  if (complete)
     paths.n45 = new Path()
       .move(points.midLeft)
       .line(points.midRight)
-      .attr('class', 'hidden')
-      .attr('data-text', '45°')
-      .attr('data-text-class', 'center')
-  }
+      .addClass('hidden')
+      .addText('45°', 'center')
 
   return params.part
 }

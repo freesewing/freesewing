@@ -5,30 +5,30 @@ function trayvonInterfacingTail(params) {
 
   calculateHelpers(params)
   draftTieShape(params, store.get('backTip'), absoluteOptions.knotWidth)
-  paths.seam.attributes.add('class', 'interfacing')
+  paths.seam.addClass('interfacing')
 
+  /*
+   * Annotations
+   */
+  // Cutlist
   store.cutlist.addCut({ cut: 1, material: 'interfacing' })
 
-  // Complete pattern?
-  if (complete) {
-    macro('title', {
-      at: points.title,
-      nr: 2,
-      title: 'interfacingTail',
-      rotation: -90,
-    })
-  }
+  // Title
+  macro('title', {
+    at: points.title,
+    nr: 2,
+    title: 'interfacingTail',
+    rotation: -90,
+  })
 
-  // Paperless?
-  if (paperless) {
-    tieShapeDimensions(params)
+  // Dimensions
+  tieShapeDimensions(params)
+  if (complete)
     paths.n45 = new Path()
       .move(points.midLeft)
       .line(points.midRight)
-      .attr('class', 'hidden')
-      .attr('data-text', '45°')
-      .attr('data-text-class', 'center')
-  }
+      .addClass('hidden')
+      .addText('45°', 'center text-sm fill-note')
 
   return params.part
 }
@@ -38,30 +38,30 @@ function trayvonInterfacingTip(params) {
 
   calculateHelpers(params)
   draftTieShape(params, absoluteOptions.tipWidth, absoluteOptions.knotWidth)
-  paths.seam.attributes.add('class', 'interfacing')
+  paths.seam.addClass('interfacing')
 
+  /*
+   * Annotations
+   */
+  // Cutlist
   store.cutlist.addCut({ cut: 1, material: 'interfacing' })
 
-  // Complete pattern?
-  if (complete) {
-    macro('title', {
-      at: points.title,
-      nr: 1,
-      title: 'interfacingTip',
-      rotation: -90,
-    })
-  }
+  // Title
+  macro('title', {
+    at: points.title,
+    nr: 1,
+    title: 'interfacingTip',
+    rotation: -90,
+  })
 
-  // Paperless?
-  if (paperless) {
-    tieShapeDimensions(params)
+  // Dimentions
+  tieShapeDimensions(params)
+  if (complete)
     paths.n45 = new Path()
       .move(points.midLeft)
       .line(points.midRight)
-      .attr('class', 'hidden')
-      .attr('data-text', '45°')
-      .attr('data-text-class', 'center')
-  }
+      .addClass('hidden')
+      .addText('45°', 'center text-sm fill-note')
 
   return params.part
 }

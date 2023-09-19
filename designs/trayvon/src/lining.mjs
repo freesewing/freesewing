@@ -38,25 +38,28 @@ function trayvonLiningTail(params) {
     .line(points.tipRight)
     .line(points.tip)
     .close()
-    .attr('class', 'lining')
+    .addClass('lining')
+  if (sa) seamAllowance(params, 'lining')
 
+  /*
+   * Annotations
+   */
+  // Cutlist
   store.cutlist.addCut({ cut: 1, material: 'lining' })
 
-  // Complete pattern?
-  if (complete) {
-    macro('title', {
-      at: points.title,
-      nr: 6,
-      title: 'liningTip',
-      rotation: -90,
-    })
-    snippets.notch = new Snippet('notch', points.tip)
+  // Title
+  macro('title', {
+    at: points.title,
+    nr: 6,
+    title: 'liningTip',
+    rotation: -90,
+  })
 
-    if (sa) seamAllowance(params, 'lining')
-  }
+  // Notch
+  snippets.notch = new Snippet('notch', points.tip)
 
-  // Paperless?
-  if (paperless) tieShapeDimensions(params, true)
+  // Dimensions
+  tieShapeDimensions(params, true)
 
   return params.part
 }
@@ -92,28 +95,32 @@ function trayvonLiningTip(params) {
     .line(points.tipRight)
     .line(points.tip)
     .close()
-    .attr('class', 'lining')
+    .addClass('lining')
 
+  if (sa) seamAllowance(params, 'lining')
+
+  /*
+   * Annotations
+   */
+  // Cutlist
   store.cutlist.addCut({ cut: 1, material: 'lining' })
 
-  // Complete pattern?
-  if (complete) {
-    macro('title', {
-      at: points.title,
-      nr: 5,
-      title: 'liningTip',
-      rotation: -90,
-    })
-    snippets.notch = new Snippet('notch', points.tip)
-    macro('miniscale', { at: points.gridAnchor })
+  // Title
+  macro('title', {
+    at: points.title,
+    nr: 5,
+    title: 'liningTip',
+    rotation: -90,
+  })
 
-    if (sa) seamAllowance(params, 'lining')
-  }
+  // Notch
+  snippets.notch = new Snippet('notch', points.tip)
 
-  // Paperless?
-  if (paperless) {
-    tieShapeDimensions(params, true)
-  }
+  // Miniscale
+  macro('miniscale', { at: points.gridAnchor })
+
+  // Dimensions
+  tieShapeDimensions(params, true)
 
   return params.part
 }
