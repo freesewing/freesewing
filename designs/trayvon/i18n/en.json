@@ -10,7 +10,10 @@
     "liningTail": "Lining tail",
     "liningTip": "Lining tip"
   },
-  "s": {},
+  "s": {
+    "cutLoop.t": "The loop is not shown",
+    "cutLoop.d": "The **Loop** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long (this part does not use seam allowance). It is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part."
+  },
   "o": {
     "tipWidth": {
       "t": "Tip width",
