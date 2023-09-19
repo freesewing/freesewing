@@ -7,20 +7,8 @@ import {
 } from './shared.mjs'
 
 function trayvonLiningTail(params) {
-  const {
-    Path,
-    Snippet,
-    complete,
-    macro,
-    options,
-    paths,
-    points,
-    paperless,
-    sa,
-    snippets,
-    store,
-    absoluteOptions,
-  } = params
+  const { Path, Snippet, macro, options, paths, points, sa, snippets, store, absoluteOptions } =
+    params
 
   calculateHelpers(params)
   draftTieShape(params, store.get('backTip') * 2.5, options.knotWidth * 2.5)
@@ -65,19 +53,7 @@ function trayvonLiningTail(params) {
 }
 
 function trayvonLiningTip(params) {
-  const {
-    Path,
-    Snippet,
-    complete,
-    macro,
-    paperless,
-    paths,
-    points,
-    sa,
-    snippets,
-    absoluteOptions,
-    store,
-  } = params
+  const { Path, Snippet, macro, paths, points, sa, snippets, absoluteOptions, store } = params
 
   calculateHelpers(params)
   draftTieShape(params, absoluteOptions.tipWidth * 2.5, absoluteOptions.knotWidth * 2.5)

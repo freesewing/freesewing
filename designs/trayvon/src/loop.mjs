@@ -1,18 +1,6 @@
 import { interfacingTip } from './interfacing.mjs'
 
-function trayvonFabricLoop({
-  points,
-  Point,
-  paths,
-  Path,
-  complete,
-  paperless,
-  store,
-  macro,
-  expand,
-  units,
-  part,
-}) {
+function trayvonFabricLoop({ points, Point, paths, Path, store, macro, expand, units, part }) {
   const w = store.get('backTip') * 3.5
   const h = store.get('backTip')
 

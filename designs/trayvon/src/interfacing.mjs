@@ -1,7 +1,7 @@
 import { draftTieShape, tieShapeDimensions, calculateHelpers, options } from './shared.mjs'
 
 function trayvonInterfacingTail(params) {
-  const { paths, points, macro, complete, paperless, Path, store, absoluteOptions } = params
+  const { paths, points, macro, complete, Path, store, absoluteOptions } = params
 
   calculateHelpers(params)
   draftTieShape(params, store.get('backTip'), absoluteOptions.knotWidth)
@@ -34,7 +34,7 @@ function trayvonInterfacingTail(params) {
 }
 
 function trayvonInterfacingTip(params) {
-  const { paths, points, macro, complete, paperless, Path, absoluteOptions, store } = params
+  const { paths, points, macro, complete, Path, absoluteOptions, store } = params
 
   calculateHelpers(params)
   draftTieShape(params, absoluteOptions.tipWidth, absoluteOptions.knotWidth)
