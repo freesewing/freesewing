@@ -1,4 +1,3 @@
-import { useState, useEffect, useRef } from 'react'
 import Head from 'next/head'
 import { Header, ns as headerNs } from 'site/components/header/index.mjs'
 import { Footer, ns as footerNs } from 'shared/components/footer/index.mjs'
@@ -15,44 +14,21 @@ export const LayoutWrapper = ({
   footer = true,
   slug,
 }) => {
-  const ChosenHeader = header ? header : Header
-  const prevScrollPos = useRef(0)
-  const [showHeader, setShowHeader] = useState(true)
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const handleScroll = () => {
-        const curScrollPos = typeof window !== 'undefined' ? window.pageYOffset : 0
-
-        if (curScrollPos >= prevScrollPos.current) {
-          if (curScrollPos > 20) setShowHeader(false)
-        } else setShowHeader(true)
-
-        prevScrollPos.current = curScrollPos
-      }
-
-      window.addEventListener('scroll', handleScroll)
-      return () => window.removeEventListener('scroll', handleScroll)
-    }
-  }, [prevScrollPos, setShowHeader])
-
   return (
     <div
       className={`
     flex flex-col justify-between
     min-h-screen
     bg-base-100
-    group/layout
-    header-${showHeader ? 'shown' : 'hidden'}
     `}
     >
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <ChosenHeader show={showHeader} slug={slug} />
+      {header && <Header slug={slug} />}
 
       <main
-        className={`grow transition-margin duration-300 ease-in-out md:group-[.header-shown]/layout:mt-20 lg:mt-4
+        className={`grow transition-margin duration-300 ease-in-out
         }`}
       >
         {children}

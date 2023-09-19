@@ -3,11 +3,12 @@ import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { capitalize, shortDate, cloudflareImageUrl, horFlexClasses } from 'shared/utils.mjs'
 import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewing.config.mjs'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
@@ -38,14 +39,14 @@ import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import Markdown from 'react-markdown'
 import Timeago from 'react-timeago'
 import { TableWrapper } from 'shared/components/wrappers/table.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 
 export const ns = ['account', 'patterns', 'status']
 
 export const Pattern = ({ id, publicOnly = false }) => {
   // Hooks
   const { account, control } = useAccount()
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
   // FIXME: implement a solution for loading docs dynamically
@@ -122,7 +123,6 @@ export const Pattern = ({ id, publicOnly = false }) => {
 
   const heading = (
     <>
-      <LoadingStatus />
       <div className="flex flex-wrap md:flex-nowrap flex-row gap-2 w-full">
         <div className="w-full md:w-96 shrink-0">
           <PatternCard pattern={pattern} size="md" />
@@ -428,7 +428,7 @@ export const Patterns = () => {
   // Hooks
   const backend = useBackend()
   const { t } = useTranslation(ns)
-  const { setLoadingStatus, LoadingStatus, LoadingProgress } = useLoadingStatus()
+  const { setLoadingStatus, LoadingProgress } = useContext(LoadingStatusContext)
 
   // State
   const [patterns, setPatterns] = useState([])
@@ -483,7 +483,6 @@ export const Patterns = () => {
 
   return (
     <div className="max-w-4xl xl:pl-4">
-      <LoadingStatus />
       <p className="text-center md:text-right">
         <Link className="btn btn-primary capitalize w-full md:w-auto" href="/new/pattern">
           <PlusIcon />

@@ -1,15 +1,15 @@
-// Dependencies
-import { useState } from 'react'
-import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
+import { useState, useContext } from 'react'
+import { useTranslation } from 'next-i18next'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { SaveSettingsButton } from 'shared/components/buttons/save-settings-button.mjs'
 import { StringInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 
 export const ns = ['account', 'status']
 
@@ -18,7 +18,7 @@ export const PlatformSettings = ({ platform }) => {
   const { account, setAccount } = useAccount()
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
   const [platformId, setPlatformId] = useState(account.data[platform] || '')
@@ -37,7 +37,6 @@ export const PlatformSettings = ({ platform }) => {
 
   return (
     <div className="max-w-xl">
-      <LoadingStatus />
       <StringInput
         id={`account-${platform}`}
         label={t(platform === 'website' ? 'account:websiteTitle' : 'account:platformTitle', {

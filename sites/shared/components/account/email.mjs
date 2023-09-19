@@ -1,17 +1,18 @@
 // Dependencies
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Verification methods
 import { validateEmail, validateTld } from 'shared/utils.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { EmailInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 
 export const ns = ['account', 'status']
 
@@ -20,7 +21,7 @@ export const EmailSettings = () => {
   const { account, setAccount } = useAccount()
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   // State
   const [email, setEmail] = useState(account.email)
@@ -42,7 +43,6 @@ export const EmailSettings = () => {
 
   return (
     <div className="max-w-xl">
-      <LoadingStatus />
       {changed ? (
         <Popout note>
           <h3>{t('oneMoreThing')}</h3>

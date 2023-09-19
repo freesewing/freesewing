@@ -12,7 +12,7 @@ export const DesignPicker = ({ hrefBuilder = false }) => {
   for (const d in designs) translated[t(`${d}.t`)] = d
 
   return (
-    <div className="flex flex-row flex-wrap gap-2">
+    <div className="flex flex-row flex-wrap gap-2 mt-8">
       {Object.keys(translated)
         .sort()
         .map((d) => (

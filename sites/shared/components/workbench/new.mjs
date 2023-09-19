@@ -8,8 +8,9 @@ import { useControlState } from 'shared/components/account/control.mjs'
 // Dependencies
 import { pluginTheme } from '@freesewing/plugin-theme'
 import { pluginI18n } from '@freesewing/plugin-i18n'
-import { objUpdate, hasRequiredMeasurements } from 'shared/utils.mjs'
+import { objUpdate, hasRequiredMeasurements, nsMerge } from 'shared/utils.mjs'
 // Components
+import { Header, ns as headerNs } from 'site/components/header/index.mjs'
 import { WorkbenchHeader } from './header.mjs'
 import { ErrorView } from 'shared/components/error/view.mjs'
 import { ModalSpinner } from 'shared/components/modal/spinner.mjs'
@@ -26,23 +27,27 @@ import { LogView, ns as logNs } from 'shared/components/workbench/views/logs/ind
 import { InspectView, ns as inspectNs } from 'shared/components/workbench/views/inspect/index.mjs'
 import { MeasiesView, ns as measiesNs } from 'shared/components/workbench/views/measies/index.mjs'
 
-export const ns = [
+export const ns = nsMerge(
   'account',
   'workbench',
-  ...draftNs,
-  ...saveNs,
-  ...printNs,
-  ...cutNs,
-  ...editNs,
-  ...testNs,
-  ...exportNs,
-  ...logNs,
-  ...inspectNs,
-  ...measiesNs,
-]
+  'flag',
+  'plugin-annotations',
+  draftNs,
+  saveNs,
+  printNs,
+  cutNs,
+  editNs,
+  testNs,
+  exportNs,
+  logNs,
+  inspectNs,
+  measiesNs,
+  headerNs
+)
 
 const defaultUi = {
   renderer: 'react',
+  kiosk: false,
 }
 
 const views = {
@@ -58,6 +63,8 @@ const views = {
 }
 
 const draftViews = ['draft', 'inspect']
+
+const kioskClasses = 'z-30 w-screen h-screen fixed top-0 left-0 bg-base-100'
 
 export const Workbench = ({ design, Design, DynamicDocs }) => {
   // Hooks
@@ -184,14 +191,13 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
       const pattern =
         (Design.patternConfig.measurements.length === 0 || settings.measurements !== undefined) &&
         new Design({ layout, embed: true, ...settings })
-
       // Return early if the pattern is not initialized yet
       if (typeof pattern.getConfig !== 'function') return null
 
       const patternConfig = pattern.getConfig()
       if (ui.renderer === 'svg') {
         // Add theme to svg renderer
-        pattern.use(pluginI18n, (key) => t(key, { ns: design }))
+        pattern.use(pluginI18n, (key) => t(key))
         pattern.use(pluginTheme, { skipGrid: ['pages'] })
       }
 
@@ -213,10 +219,13 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
   }
 
   return (
-    <div className="flex flex-row min-h-screen">
-      <WorkbenchHeader {...{ view, setView, update }} />
-      <div className="grow">{viewContent}</div>
-      <MobileMenubar />
-    </div>
+    <>
+      {!ui.kiosk && <Header />}
+      <div className={`flex flex-row min-h-screen ${ui.kiosk ? kioskClasses : ''}`}>
+        <WorkbenchHeader {...{ view, setView, update }} />
+        <div className="grow">{viewContent}</div>
+        <MobileMenubar />
+      </div>
+    </>
   )
 }

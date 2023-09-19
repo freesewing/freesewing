@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { init } from './init.mjs'
 
 function draftBruceBack({
@@ -11,7 +10,6 @@ function draftBruceBack({
   Snippet,
   snippets,
   complete,
-  paperless,
   macro,
   utils,
   part,
@@ -68,92 +66,127 @@ function draftBruceBack({
     .close()
     .attr('class', 'fabric')
 
-  // Complete pattern?
-  if (complete) {
-    if (sa) {
-      let sa1 = new Path()
-        .move(points.legRight)
-        .line(points.sideRight)
-        .curve(points.sideRight, points.centerCpRight, points.center)
-        .offset(sa)
-      let sa2 = new Path()
-        .move(points.gussetTop)
-        .curve(points.gussetCpRight, points.gussetRight, points.gussetRight)
-        .offset(sa)
-      let hemSa = new Path()
-        .move(points.gussetRight)
-        .line(points.legRight)
-        .offset(sa * 2)
-      paths.sa = new Path()
-        .move(points.gussetTop)
-        .line(sa2.start())
-        .join(sa2)
-        .join(hemSa)
-        .join(sa1)
-        .line(points.center)
-        .attr('class', 'fabric sa')
-    }
-    points.title = new Point(points.sideRight.x * 0.6, points.gussetTop.y * 0.6)
-    macro('title', {
-      at: points.title,
-      nr: 1,
-      title: 'back',
-    })
-    macro('cutonfold', {
-      from: points.center,
-      to: points.gussetTop,
-      grainline: true,
-    })
-    snippets.logo = new Snippet('logo', points.title.shift(90, 50))
-    snippets.backNotch = new Snippet(
-      'bnotch',
-      points.sideRight.shiftFractionTowards(points.legRight, 0.5)
-    )
+  if (sa) {
+    let sa1 = new Path()
+      .move(points.legRight)
+      .line(points.sideRight)
+      .curve(points.sideRight, points.centerCpRight, points.center)
+      .offset(sa)
+    let sa2 = new Path()
+      .move(points.gussetTop)
+      .curve(points.gussetCpRight, points.gussetRight, points.gussetRight)
+      .offset(sa)
+    let hemSa = new Path()
+      .move(points.gussetRight)
+      .line(points.legRight)
+      .offset(sa * 2)
+    paths.sa = new Path()
+      .move(points.gussetTop)
+      .line(sa2.start())
+      .join(sa2)
+      .join(hemSa)
+      .join(sa1)
+      .line(points.center)
+      .attr('class', 'fabric sa')
   }
 
-  // Paperless?
-  if (paperless) {
-    macro('vd', {
-      from: points.gussetTop,
-      to: points.center,
-      x: points.center.x - 15,
+  /*
+   * Annotations
+   */
+  // Cut list
+  store.cutlist.addCut({ cut: 2, from: 'fabric', onFold: true })
+
+  // Title
+  points.title = new Point(points.sideRight.x * 0.6, points.gussetTop.y * 0.6)
+  macro('title', {
+    at: points.title,
+    nr: 1,
+    title: 'back',
+  })
+
+  // Cut on fold
+  macro('cutonfold', {
+    from: points.center,
+    to: points.gussetTop,
+    grainline: true,
+  })
+
+  // Logo
+  snippets.logo = new Snippet('logo', points.title.shift(90, 50))
+  snippets.backNotch = new Snippet(
+    'bnotch',
+    points.sideRight.shiftFractionTowards(points.legRight, 0.5)
+  )
+
+  if (complete) {
+    paths.sideNote = new Path().move(points.legRight).line(points.sideRight).addClass('hidden')
+    macro('banner', {
+      id: 'side',
+      path: paths.sideNote,
+      text: '&',
+      classes: 'text-sm fill-note center',
     })
-    macro('vd', {
-      from: points.gussetRight,
-      to: points.center,
-      x: points.center.x - 30,
-    })
-    macro('vd', {
-      from: points.legRight,
-      to: points.sideRight,
-      x: points.legRight.x + 15 + sa,
-    })
-    macro('vd', {
-      from: points.legRight,
-      to: points.center,
-      x: points.legRight.x + 30 + sa,
-    })
-    macro('hd', {
-      from: points.center,
-      to: points.sideRight,
-      y: points.center.y - 15 - sa,
-    })
-    macro('hd', {
-      from: points.gussetTop,
-      to: points.gussetRight,
-      y: points.gussetRight.y + 15 + sa * 2,
-    })
-    macro('hd', {
-      from: points.gussetTop,
-      to: points.legRight,
-      y: points.gussetRight.y + 30 + sa * 2,
-    })
-    macro('ld', {
-      from: points.gussetRight,
-      to: points.legRight,
-      d: -15 - sa * 2,
+    paths.gussetNote = new Path()
+      .move(points.gussetTop)
+      .curve_(points.gussetCpRight, points.gussetRight)
+      .addClass('hidden')
+    macro('banner', {
+      id: 'gusset',
+      path: paths.gussetNote,
+      text: '*',
+      classes: 'text-sm fill-note center',
     })
   }
+
+  // Dimensions
+  macro('vd', {
+    id: 'hCbCrotchToCbWaist',
+    from: points.gussetTop,
+    to: points.center,
+    x: points.center.x - 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.gussetRight,
+    to: points.center,
+    x: points.center.x - 30,
+  })
+  macro('vd', {
+    id: 'hSideHemToSideWaist',
+    from: points.legRight,
+    to: points.sideRight,
+    x: points.legRight.x + 15 + sa,
+  })
+  macro('vd', {
+    id: 'hSideHemToCbWaist',
+    from: points.legRight,
+    to: points.center,
+    x: points.legRight.x + 30 + sa,
+  })
+  macro('hd', {
+    id: 'wCbWaistToSideWaist',
+    from: points.center,
+    to: points.sideRight,
+    y: points.center.y - 15 - sa,
+  })
+  macro('hd', {
+    id: 'wCbCrotchToInnerLeg',
+    from: points.gussetTop,
+    to: points.gussetRight,
+    y: points.gussetRight.y + 15 + sa * 2,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.gussetTop,
+    to: points.legRight,
+    y: points.gussetRight.y + 30 + sa * 2,
+  })
+  macro('ld', {
+    id: 'lLegOpening',
+    from: points.gussetRight,
+    to: points.legRight,
+    d: -15 - sa * 2,
+  })
 
   return part
 }
@@ -185,6 +218,5 @@ export const back = {
     legStretch: { pct: 40, min: 25, max: 45, menu: 'fit' },
     backRise: { pct: 5, min: 0, max: 10, menu: 'fit' },
   },
-  plugins: [pluginBundle],
   draft: draftBruceBack,
 }

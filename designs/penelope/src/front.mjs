@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { measurements, optionalMeasurements, options, BuildMainShape } from './shape.mjs'
 
 function penelopeFront(params) {
@@ -62,6 +61,5 @@ export const front = {
   measurements,
   optionalMeasurements,
   options,
-  plugins: [pluginBundle],
   draft: penelopeFront,
 }

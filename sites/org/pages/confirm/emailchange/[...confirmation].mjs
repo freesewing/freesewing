@@ -2,11 +2,10 @@
 import { useEffect, useState, useContext } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 // Context
-import { LoadingContext } from 'shared/context/loading-context.mjs'
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import Link from 'next/link'
@@ -22,13 +21,10 @@ import { HelpIcon } from 'shared/components/icons.mjs'
 const ns = Array.from(new Set([...pageNs, 'account']))
 
 const ConfirmSignUpPage = ({ page }) => {
-  // Context
-  const { startLoading, stopLoading } = useContext(LoadingContext)
-
   // Hooks
   const { setAccount, setToken, token } = useAccount()
   const backend = useBackend()
-  const toast = useToast()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const { t } = useTranslation(ns)
   const router = useRouter()
   // Get confirmation ID and check from url
@@ -41,7 +37,7 @@ const ConfirmSignUpPage = ({ page }) => {
   useEffect(() => {
     // Async inside useEffect requires this approach
     const confirmEmail = async () => {
-      startLoading()
+      setLoadingStatus([true, 'status:contactingBackend'])
       const confirmation = await backend.loadConfirmation({ id, check })
       if (confirmation?.result === 'success' && confirmation.confirmation) {
         const result = await backend.updateAccount({
@@ -50,35 +46,23 @@ const ConfirmSignUpPage = ({ page }) => {
           check: confirmation.confirmation.check,
         })
         if (result.success) {
+          setLoadingStatus([true, 'status:settingsSaved', true, true])
           setAccount(result.data.account)
           setToken(result.data.token)
-          stopLoading()
           setError(false)
-          toast.for.settingsSaved()
           router.push('/account')
         } else {
-          stopLoading()
+          setLoadingStatus([true, 'status:backendError', true, false])
           setError(true)
         }
       } else {
-        stopLoading()
+        setLoadingStatus([true, 'status:backendError', true, false])
         setError(true)
       }
     }
     // Call async methods
     if (token) confirmEmail()
-  }, [
-    id,
-    check,
-    token,
-    backend,
-    router,
-    setAccount,
-    setToken,
-    startLoading,
-    stopLoading,
-    toast.for,
-  ])
+  }, [id, check, token, backend, router, setAccount, setToken])
 
   // Update path with dynamic ID
   if (!page) return null

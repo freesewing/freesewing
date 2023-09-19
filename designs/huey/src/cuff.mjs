@@ -1,19 +1,22 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { draftRibbing } from './shared.mjs'
 
-function draftHueyCuff({ complete, points, measurements, options, macro, part }) {
+function draftHueyCuff({ points, measurements, options, macro, store, part }) {
   if (!options.ribbing) return part
 
   draftRibbing(part, measurements.wrist * (1 + options.cuffEase) * (1 - options.ribbingStretch))
 
-  // Complete pattern?
-  if (complete) {
-    macro('title', {
-      at: points.title,
-      nr: 7,
-      title: 'cuff',
-    })
-  }
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'ribbing' })
+
+  // Title
+  macro('title', {
+    at: points.title,
+    nr: 7,
+    title: 'cuff',
+  })
 
   return part
 }
@@ -23,6 +26,5 @@ export const cuff = {
   options: {
     ribbingStretch: { pct: 15, min: 0, max: 30, menu: 'fit' },
   },
-  plugins: [pluginBundle],
   draft: draftHueyCuff,
 }

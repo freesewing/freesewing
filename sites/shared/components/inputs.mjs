@@ -3,12 +3,12 @@ import { cloudflareImageUrl } from 'shared/utils.mjs'
 import { collection } from 'shared/hooks/use-design.mjs'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useState, useCallback, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useDropzone } from 'react-dropzone'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import Markdown from 'react-markdown'
 import { ResetIcon, DocsIcon, UploadIcon } from 'shared/components/icons.mjs'
@@ -111,11 +111,12 @@ export const ButtonFrame = ({
   onClick, // onClick handler
   active, // Whether or not to render the button as active/selected
   accordion = false, // Set this to true to not set a background color when active
+  dense = false, // Use less padding
 }) => (
   <button
     className={`
     btn btn-ghost btn-secondary
-    w-full mt-2 py-4 h-auto content-start
+    w-full ${dense ? 'mt-1 py-0 btn-sm' : 'mt-2 py-4 h-auto content-start'}
     border-2 border-secondary text-left bg-opacity-20
     ${accordion ? 'hover:bg-transparent' : 'hover:bg-secondary hover:bg-opacity-10'}
     hover:border-secondary hover:border-solid hover:border-2
@@ -278,7 +279,7 @@ export const ImageInput = ({
 }) => {
   const { t } = useTranslation(ns)
   const backend = useBackend()
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const [url, setUrl] = useState(false)
   const [uploadedId, setUploadedId] = useState(false)
 
@@ -316,7 +317,6 @@ export const ImageInput = ({
   if (current)
     return (
       <FormControl label={label} docs={docs}>
-        <LoadingStatus />
         <div
           className="bg-base-100 w-full h-36 mb-2 mx-auto flex flex-col items-center text-center justify-center"
           style={{
@@ -340,7 +340,6 @@ export const ImageInput = ({
 
   return (
     <FormControl label={label} docs={docs} forId={id}>
-      <LoadingStatus />
       <div
         {...getRootProps()}
         className={`

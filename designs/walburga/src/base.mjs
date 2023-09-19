@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function walburgaBase({
   Point,
   points,
@@ -83,10 +81,8 @@ function walburgaBase({
       at: points.title,
       nr: 1,
       title: 'wappenrock-base',
+      align: 'center',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
 
     // scalebox
     points.scalebox = points.title.shift(90, points.bottom.dy(points.top) / 5)
@@ -211,6 +207,5 @@ export const base = {
     neckline,
     neckoRatio,
   },
-  plugins: [pluginBundle],
   draft: walburgaBase,
 }

@@ -3,7 +3,6 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { CloseIcon } from 'shared/components/icons.mjs'
 import { MobileMenubarContext } from 'shared/context/mobile-menubar-context.mjs'
-import { shownHeaderSelector } from 'shared/components/wrappers/header.mjs'
 import { MenuAltIcon } from 'shared/components/icons.mjs'
 
 /**
@@ -64,7 +63,6 @@ export const MobileMenubar = () => {
     <div
       className={`
       lg:hidden
-      ${shownHeaderSelector('bottom-16')}
       sticky bottom-0 w-20 -ml-20 self-end
       duration-300 transition-all
       flex flex-col-reverse gap-2 mb-2

@@ -222,8 +222,8 @@ describe('Pattern', () => {
     const pattern = new Pattern()
     pattern.events.error.push('error')
     pattern.pack()
-    expect(pattern.events.warning.length).to.equal(1)
-    expect(pattern.events.warning[0]).to.equal(
+    expect(pattern.events.warn.length).to.equal(1)
+    expect(pattern.events.warn[0]).to.equal(
       'One or more errors occured. Not packing pattern parts'
     )
   })

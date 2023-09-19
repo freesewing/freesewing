@@ -38,6 +38,14 @@
       "t": "Fit the waist",
       "d": "Whether or not to fit the waist or rahter only fit chest and hips."
     },
+    "curveToWaistNo": {
+      "t": "Do not fit the waist",
+      "d": "Draft a pattern that transitions smoothly from chest to hips, not taking the waist measurement into account"
+    },
+    "curveToWaistYes": {
+      "t": "Fit the waist",
+      "d": "Draft a pattern that fits chest, waist, and hips (this is unusual for a T-shirt)"
+    },
     "curvedWaistEase": {
       "t": "Waist ease",
       "d": "Ease at the waist (only applies when the waist is fitted)."

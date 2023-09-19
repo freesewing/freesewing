@@ -2,7 +2,6 @@ _types:
   design:
     peer:
       '@freesewing/core': &freesewing '{{version}}'
-      '@freesewing/plugin-bundle': *freesewing
     dev:
       'mocha': &mocha '10.2.0'
       'chai': &chai '4.3.7'
@@ -54,6 +53,7 @@ charlie:
     '@freesewing/snapseries': *freesewing
 core:
   _:
+    '@freesewing/core-plugins': *freesewing
     'bezier-js': '6.1.4'
     'bin-pack-with-constraints': '1.0.1'
     'hooks': '0.3.2'
@@ -114,7 +114,7 @@ paco:
   peer:
     '@freesewing/titan': *freesewing
     '@freesewing/snapseries': *freesewing
-plugin-bundle:
+core-plugins:
   dev:
     '@freesewing/plugin-annotations': *freesewing
     '@freesewing/plugin-mirror': *freesewing
@@ -192,7 +192,7 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.403.0'
+    '@aws-sdk/client-sesv2': '3.405.0'
     '@prisma/client': &prisma '5.2.0'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
@@ -208,7 +208,7 @@ backend:
     'passport-jwt': '4.0.1'
     'pino': '8.15.0'
     'qrcode': '1.5.3'
-    'swagger-ui-dist': '5.4.2'
+    'swagger-ui-dist': '5.6.2'
     'swagger-ui-express': '5.0.0'
   dev:
     'chai': *chai
@@ -284,7 +284,7 @@ lab:
     'react': *react
     'react-copy-to-clipboard': *reactCopyToClipboard
     'react-hotkeys-hook': *reactHotkeysHook
-    'react-i18next': &reactI18next '13.2.1'
+    'react-i18next': &reactI18next '13.2.2'
     'react-instantsearch-dom': *reactInstantsearchDom
     'react-markdown': *reactMarkdown
     'react-swipeable': *reactSwipeable
@@ -324,7 +324,6 @@ org:
     'react-dropzone': '14.2.3'
     'react-hotkeys-hook': *reactHotkeysHook
     'react-instantsearch-dom': *reactInstantsearchDom
-    'react-hot-toast': 2.4.1
     'react-markdown': *reactMarkdown
     'react-swipeable': *reactSwipeable
     'react-timeago': *reactTimeago

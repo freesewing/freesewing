@@ -50,7 +50,6 @@
   },
   "peerDependencies": {
     "@freesewing/core": "3.0.0-alpha.10",
-    "@freesewing/plugin-bundle": "3.0.0-alpha.10",
     "@freesewing/titan": "3.0.0-alpha.10",
     "@freesewing/snapseries": "3.0.0-alpha.10"
   },

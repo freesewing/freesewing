@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function draft({
   options,
   Point,
@@ -10,7 +8,6 @@ function draft({
   snippets,
   complete,
   sa,
-  paperless,
   macro,
   store,
   part,
@@ -57,59 +54,71 @@ function draft({
     .line(points.centerLeft)
     .close()
 
-  store.cutlist.addCut()
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-  // Complete?
-  if (complete) {
-    paths.slit = new Path()
-      .move(points.center)
-      .line(points.middle)
-      .attr('class', 'path fabric dashed')
+  if (complete)
+    paths.slit = new Path().move(points.center).line(points.middle).addClass('fabric dashed')
 
-    points.logo = points.centerLeft.shift(270, pocketLength / 3)
-    snippets.logo = new Snippet('logo', points.logo)
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
 
-    points.scalebox = points.middle.shift(270, pocketWidth / 5)
-    macro('scalebox', { at: points.scalebox })
+  // Title
+  points.title = new Point(points.middle.x, points.middle.y / 2)
+  macro('title', {
+    at: points.title,
+    nr: 1,
+    title: 'pocket',
+    align: 'center',
+  })
 
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-    }
-  }
+  // Logo
+  points.logo = points.title.shift(-90, 90)
+  snippets.logo = new Snippet('logo', points.logo)
 
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.leftCp1,
-      to: points.rightCp1,
-      y: points.bottomLeft.y + sa + 30,
-    })
-    macro('vd', {
-      to: points.center,
-      from: points.middle,
-      x: points.topRight.x + sa + 15,
-    })
-    macro('vd', {
-      from: points.rightCp2,
-      to: points.centerRight,
-      x: points.topRight.x + sa + 30,
-    })
-    macro('vd', {
-      from: points.rightCp2,
-      to: new Point(points.rightCp2.x, points.rightCp1.y),
-      x: points.topRight.x + sa + 15,
-    })
-    macro('hd', {
-      from: points.centerLeft,
-      to: points.centerRight,
-      y: points.topLeft.y - sa - 15,
-    })
-    macro('hd', {
-      from: new Point(points.rightCp2.x, points.rightCp1.y),
-      to: points.rightCp1,
-      y: points.bottomLeft.y + sa + 15,
-    })
-  }
+  // Scalebox
+  points.scalebox = points.middle.shift(270, pocketWidth / 5)
+  macro('scalebox', { at: points.scalebox })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wFull',
+    from: points.leftCp1,
+    to: points.rightCp1,
+    y: points.bottomLeft.y + sa + 30,
+  })
+  macro('vd', {
+    id: 'hCut',
+    to: points.center,
+    from: points.middle,
+    x: points.topRight.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.rightCp2,
+    to: points.centerRight,
+    x: points.topRight.x + sa + 30,
+  })
+  macro('vd', {
+    id: 'hRound',
+    from: points.rightCp2,
+    to: new Point(points.rightCp2.x, points.rightCp1.y),
+    x: points.topRight.x + sa + 15,
+  })
+  macro('hd', {
+    id: 'wAtTop',
+    from: points.centerLeft,
+    to: points.centerRight,
+    y: points.topLeft.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wRound',
+    from: new Point(points.rightCp2.x, points.rightCp1.y),
+    to: points.rightCp1,
+    y: points.bottomLeft.y + sa + 15,
+  })
 
   return part
 }
@@ -121,6 +130,5 @@ export const pocket = {
     length: { pct: 50, min: 30, max: 100, menu: 'style' },
     edge: { pct: 25, min: 20, max: 50, menu: 'style' },
   },
-  plugins: [pluginBundle],
   draft,
 }

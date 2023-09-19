@@ -147,7 +147,7 @@ function draftSleevecap(part, run) {
 
 const menu = 'advanced.sleevecap'
 export const sleevecap = {
-  from: front,
+  after: front,
   name: 'brian.sleevecap',
   hide: { self: true },
   options: {
@@ -177,7 +177,7 @@ export const sleevecap = {
     for (const path in paths) delete paths[path]
     delete snippets.logo
     macro('title', false)
-    macro('cutonfold', false)
+    macro('rmcutonfold')
 
     store.set('sleeveFactor', 1)
     let run = 0

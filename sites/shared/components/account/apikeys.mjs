@@ -1,21 +1,22 @@
 // Dependencies
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { DateTime } from 'luxon'
 import { CopyToClipboard } from 'react-copy-to-clipboard'
 import { shortDate, formatNumber } from 'shared/utils.mjs'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { BackToAccountButton, DisplayRow, NumberBullet } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { LeftIcon, PlusIcon, CopyIcon, RightIcon, TrashIcon } from 'shared/components/icons.mjs'
 import { PageLink, Link } from 'shared/components/link.mjs'
 import { StringInput, ListInput, FormControl } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 
 export const ns = ['account', 'status']
 
@@ -55,7 +56,7 @@ const ExpiryPicker = ({ t, expires, setExpires }) => {
 
 const CopyInput = ({ text }) => {
   const { t } = useTranslation(['status'])
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   const [copied, setCopied] = useState(false)
 
@@ -67,7 +68,6 @@ const CopyInput = ({ text }) => {
 
   return (
     <div className="flex flez-row gap-2 items-center w-full">
-      <LoadingStatus />
       <input
         readOnly
         value={text}
@@ -147,7 +147,7 @@ const NewKey = ({ account, setGenerate, backend }) => {
   const [level, setLevel] = useState(1)
   const [expires, setExpires] = useState(Date.now())
   const [apikey, setApikey] = useState(false)
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const { t, i18n } = useTranslation(ns)
   // FIXME: implement a solution for loading docs dynamically the is simple and work as expected
   const docs = {}
@@ -179,7 +179,6 @@ const NewKey = ({ account, setGenerate, backend }) => {
 
   return (
     <div>
-      <LoadingStatus />
       {apikey ? (
         <ShowKey {...{ apikey, t, clear }} />
       ) : (
@@ -264,7 +263,7 @@ export const Apikeys = () => {
   const { account } = useAccount()
   const backend = useBackend()
   const { t } = useTranslation(ns)
-  const { setLoadingStatus, LoadingStatus, LoadingProgress } = useLoadingStatus()
+  const { setLoadingStatus, LoadingProgress } = useContext(LoadingStatusContext)
 
   // State
   const [keys, setKeys] = useState([])
@@ -319,7 +318,6 @@ export const Apikeys = () => {
 
   return (
     <div className="max-w-4xl xl:pl-4">
-      <LoadingStatus />
       <p className="text-center md:text-right">
         <Link
           className="btn btn-primary capitalize w-full md:w-auto"

@@ -4,7 +4,12 @@
   "p": {
     "bib": "Bib"
   },
-  "s": {},
+  "s": {
+    "biasTapeLength.t": "Bias tape: {{{ l }}}",
+    "biasTapeLength.d": "To finish the edge, you will need {{{ l }}} of [bias tape](/docs/sewing/bias-tape)",
+    "fabricNeeded": "You need a {{{ w }}} by {{{ h }}} piece of [suitable fabric](/docs/designs/bob/fabric) to make this bib",
+    "finishWithBiasTape": "Finish raw edge with bias tape"
+  },
   "o": {
     "neckRatio": {
       "t": "Neck opening",

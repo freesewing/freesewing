@@ -1,14 +1,17 @@
-import { useState, useContext } from 'react'
-import { useTranslation } from 'next-i18next'
-import { Popout } from 'shared/components/popout/index.mjs'
-import { WebLink } from 'shared/components/link.mjs'
-import { LoadingContext } from 'shared/context/loading-context.mjs'
-import { useToast } from 'shared/hooks/use-toast.mjs'
+// Dependencies
 import {
   exportTypes,
   handleExport,
   ns as exportNs,
 } from 'shared/components/workbench/exporting/export-handler.mjs'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
+// Hooks
+import { useState, useContext } from 'react'
+import { useTranslation } from 'next-i18next'
+// Components
+import { Popout } from 'shared/components/popout/index.mjs'
+import { WebLink } from 'shared/components/link.mjs'
 import { V3Wip } from 'shared/components/v3-wip.mjs'
 
 export const ns = ['exporting', exportNs]
@@ -16,8 +19,10 @@ export const ns = ['exporting', exportNs]
 export const ExportView = ({ settings, ui, design, Design }) => {
   const [link, setLink] = useState(false)
   const [format, setFormat] = useState(false)
-  const { startLoading, stopLoading } = useContext(LoadingContext)
-  const toast = useToast()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
+
+  const startLoading = () => setLoadingStatus([true, 'exporting'])
+  const stopLoading = () => setLoadingStatus([true, 'status:nailedIt', true, true])
 
   const { t } = useTranslation(ns)
   const doExport = (format) => {
@@ -38,7 +43,7 @@ export const ExportView = ({ settings, ui, design, Design }) => {
         }
       },
       onError: (e) => {
-        if (e.data?.error) toast.error(e.data.error.message)
+        if (e.data?.error) setLoadingStatus([true, e.data.error.message, true, false])
       },
     })
   }

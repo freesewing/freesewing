@@ -1,17 +1,17 @@
-// Dependencies
-import { useState, useEffect, Fragment } from 'react'
-import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
+import { useState, useEffect, Fragment, useContext } from 'react'
+import { useTranslation } from 'next-i18next'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { BackToAccountButton } from './shared.mjs'
 import { PlusIcon, TrashIcon, LeftIcon } from 'shared/components/icons.mjs'
 import { PageLink, WebLink, Link } from 'shared/components/link.mjs'
 import { DisplayRow } from './shared.mjs'
 import { StringInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 
 export const ns = ['account', 'status']
 
@@ -43,7 +43,7 @@ export const Bookmark = ({ bookmark }) => {
 // Component for the 'new/apikey' page
 export const NewBookmark = () => {
   // Hooks
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const router = useRouter()
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
@@ -72,7 +72,6 @@ export const NewBookmark = () => {
 
   return (
     <div className="max-w-2xl xl:pl-4">
-      <LoadingStatus />
       <StringInput
         id="bookmark-title"
         label={t('title')}
@@ -109,7 +108,7 @@ export const Bookmarks = () => {
   // Hooks
   const backend = useBackend()
   const { t } = useTranslation(ns)
-  const { setLoadingStatus, LoadingStatus, LoadingProgress } = useLoadingStatus()
+  const { setLoadingStatus, LoadingProgress } = useContext(LoadingStatusContext)
 
   // State
   const [bookmarks, setBookmarks] = useState([])
@@ -167,7 +166,6 @@ export const Bookmarks = () => {
 
   return (
     <div className="max-w-4xl xl:pl-4">
-      <LoadingStatus />
       <p className="text-center md:text-right">
         <Link
           className="btn btn-primary capitalize w-full md:w-auto"

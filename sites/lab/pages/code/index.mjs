@@ -3,7 +3,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { WebLink } from 'shared/components/web-link.mjs'
+import { WebLink } from 'shared/components/link.mjs'
 import { siteConfig } from 'site/site.config.mjs'
 import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
 import { ChoiceLink } from 'shared/components/choice-link.mjs'

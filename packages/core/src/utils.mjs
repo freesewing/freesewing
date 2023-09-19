@@ -693,7 +693,7 @@ export function __addNonEnumProp(obj, name, value) {
 export function __asNumber(value, param, method, log) {
   if (typeof value === 'number') return value
   if (typeof value === 'string') {
-    log.warning(
+    log.warn(
       `Called \`${method}(${param})\` but \`${param}\` is not a number. Will attempt to cast to Number`
     )
     try {
@@ -730,7 +730,7 @@ export function __isCoord(value) {
  * @return {string} macroName - The inernal macroName
  */
 export function __macroName(name) {
-  return `__macro_${name}`
+  return `__macro_${name.toLowerCase()}`
 }
 
 /**

@@ -49,10 +49,8 @@ function draftCorneliusZipperguard({
       nr: 4,
       at: points.title,
       title: 'ZipperGuard',
+      align: 'center',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = new Path()

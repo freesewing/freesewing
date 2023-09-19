@@ -13,7 +13,7 @@ import { sprinkle } from './plugin-sprinkle.mjs'
 // Setup our new design
 const Plugintest = new Design({
   data,
-  parts: [annotations, flip, gore, i18n, measurements, mirror, round, sprinkle],
+  parts: [annotations, flip, gore, i18nStack, measurements, mirror, round, sprinkle],
 })
 
 // Named exports

@@ -49,8 +49,7 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.10",
-    "@freesewing/plugin-bundle": "3.0.0-alpha.10"
+    "@freesewing/core": "3.0.0-alpha.10"
   },
   "dependencies": {},
   "devDependencies": {

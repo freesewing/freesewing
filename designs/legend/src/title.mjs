@@ -1,5 +1,4 @@
 import { box } from './shared.mjs'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 
 function legendTitle({ points, Point, macro, part }) {
   points.a = new Point(30, 30)
@@ -15,6 +14,5 @@ function legendTitle({ points, Point, macro, part }) {
 
 export const title = {
   name: 'legend.title',
-  plugins: pluginBundle,
   draft: legendTitle,
 }

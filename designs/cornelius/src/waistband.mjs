@@ -53,10 +53,8 @@ function draftCorneliusWaistband({
       nr: 1,
       at: points.title,
       title: 'WaistBand',
+      align: 'center',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = new Path()

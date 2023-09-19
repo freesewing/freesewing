@@ -1,10 +1,11 @@
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useTranslation } from 'next-i18next'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 import { horFlexClasses, horFlexClassesNoSm, capitalize } from 'shared/utils.mjs'
 // Components
 import Link from 'next/link'
@@ -28,7 +29,7 @@ export const SignIn = () => {
   const { t, i18n } = useTranslation(ns)
   const backend = useBackend()
   const router = useRouter()
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
@@ -117,7 +118,6 @@ export const SignIn = () => {
   if (magicLinkSent)
     return (
       <>
-        <LoadingStatus />
         <h1 className="text-inherit text-3xl lg:text-5xl mb-4 pb-0 text-center">
           {t('susi:emailSent')}
         </h1>
@@ -138,7 +138,6 @@ export const SignIn = () => {
 
   return (
     <>
-      <LoadingStatus />
       <h2>{seenBefore ? t('susi:welcomeBackName', { name: seenUser }) : t('susi:welcome')}</h2>
       <p>{t('susi:signInToThing', { thing: 'FreeSewing' })}:</p>
       {!seenBefore && (

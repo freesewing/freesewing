@@ -1,10 +1,9 @@
 // Dependencies
-import { useState, useEffect, useContext } from 'react'
-import { useTranslation } from 'next-i18next'
 import { measurements } from 'config/measurements.mjs'
 import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
 import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewing.config.mjs'
 import { siteConfig } from 'site/site.config.mjs'
+import { isDegreeMeasurement } from 'config/measurements.mjs'
 import {
   shortDate,
   cloudflareImageUrl,
@@ -15,11 +14,13 @@ import {
 } from 'shared/utils.mjs'
 import orderBy from 'lodash.orderby'
 // Hooks
+import { useState, useEffect, useContext } from 'react'
+import { useTranslation } from 'next-i18next'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
 import { Popout } from 'shared/components/popout/index.mjs'
@@ -46,8 +47,7 @@ import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import Markdown from 'react-markdown'
 import Timeago from 'react-timeago'
 import { DisplayRow } from './shared.mjs'
-import { isDegreeMeasurement } from 'config/measurements.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 import {
   StringInput,
   PassiveImageInput,
@@ -62,7 +62,7 @@ export const ns = [inputNs, 'account', 'patterns', 'status', 'measurements', 'se
 
 export const NewSet = () => {
   // Hooks
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
   const { t } = useTranslation(ns)
   const router = useRouter()
@@ -82,7 +82,6 @@ export const NewSet = () => {
 
   return (
     <div className="max-w-xl">
-      <LoadingStatus />
       <h5>{t('name')}</h5>
       <p>{t('setNameDesc')}</p>
       <input
@@ -107,7 +106,11 @@ export const NewSet = () => {
 }
 
 export const MeasieVal = ({ val, m, imperial }) =>
-  isDegreeMeasurement(m) ? <span>{val}°</span> : <span>{formatMm(val, imperial)}</span>
+  isDegreeMeasurement(m) ? (
+    <span>{val}°</span>
+  ) : (
+    <span dangerouslySetInnerHTML={{ __html: formatMm(val, imperial) }}></span>
+  )
 
 export const MsetCard = ({
   set,
@@ -189,7 +192,7 @@ export const MsetCard = ({
 export const Mset = ({ id, publicOnly = false }) => {
   // Hooks
   const { account, control } = useAccount()
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
   // FIXME: implement a solution for loading docs dynamically the is simple and work as expected
@@ -295,7 +298,6 @@ export const Mset = ({ id, publicOnly = false }) => {
 
   const heading = (
     <>
-      <LoadingStatus />
       <div className="flex flex-wrap md:flex-nowrap flex-row gap-2 w-full">
         <div className="w-full md:w-96 shrink-0">
           <MsetCard set={mset} control={control} />
@@ -401,7 +403,7 @@ export const Mset = ({ id, publicOnly = false }) => {
             <h2>{t('measies')}</h2>
             {Object.entries(mset.measies).map(([m, val]) =>
               val > 0 ? (
-                <DisplayRow title={<MeasieVal m={m} val={val} />} key={m}>
+                <DisplayRow title={<MeasieVal {...{ m, val, imperial: mset.imperial }} />} key={m}>
                   <span className="font-medium">{t(m)}</span>
                 </DisplayRow>
               ) : null
@@ -647,7 +649,7 @@ export const Sets = () => {
   const { control } = useAccount()
   const backend = useBackend()
   const { t } = useTranslation(ns)
-  const { setLoadingStatus, LoadingStatus, LoadingProgress } = useLoadingStatus()
+  const { setLoadingStatus, LoadingProgress } = useContext(LoadingStatusContext)
 
   // State
   const [sets, setSets] = useState([])
@@ -702,7 +704,6 @@ export const Sets = () => {
 
   return (
     <div className="max-w-7xl xl:pl-4">
-      <LoadingStatus />
       <p className="text-center md:text-right">
         <Link
           className="btn btn-primary capitalize w-full md:w-auto"

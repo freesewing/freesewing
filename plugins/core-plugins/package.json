@@ -1,0 +1,75 @@
+{
+  "name": "@freesewing/core-plugins",
+  "version": "3.0.0-alpha.10",
+  "description": "An umbrella package of essential plugins that are bundled with FreeSewing's core library",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
+  },
+  "keywords": [
+    "freesewing",
+    "plugin",
+    "sewing pattern",
+    "sewing",
+    "design",
+    "parametric design",
+    "made to measure",
+    "diy",
+    "fashion"
+  ],
+  "type": "module",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "internal": "./src/index.mjs",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "build:all": "yarn build",
+    "clean": "rimraf dist",
+    "mbuild": "NO_MINIFY=1 node build.mjs",
+    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
+    "test": "npx mocha tests/*.test.mjs",
+    "vbuild": "VERBOSE=1 node build.mjs",
+    "lab": "cd ../../sites/lab && yarn start",
+    "tips": "node ../../scripts/help.mjs",
+    "lint": "npx eslint 'src/**' 'tests/*.mjs'",
+    "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
+    "testci": "NODE_OPTIONS=\"--conditions=internal\" npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
+    "wbuild": "node build.mjs",
+    "wbuild:all": "yarn wbuild"
+  },
+  "peerDependencies": {
+    "@freesewing/core": "3.0.0-alpha.10"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "10.2.0",
+    "chai": "4.3.7",
+    "@freesewing/plugin-annotations": "3.0.0-alpha.10",
+    "@freesewing/plugin-mirror": "3.0.0-alpha.10",
+    "@freesewing/plugin-round": "3.0.0-alpha.10",
+    "@freesewing/plugin-sprinkle": "3.0.0-alpha.10"
+  },
+  "files": [
+    "dist/*",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "next"
+  },
+  "engines": {
+    "node": "18",
+    "npm": "9"
+  }
+}

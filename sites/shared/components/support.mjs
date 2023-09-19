@@ -1,8 +1,9 @@
 import { freeSewingConfig as config } from 'shared/config/freesewing.config.mjs'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
-import { useState, Fragment } from 'react'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
+import { useState, Fragment, useContext } from 'react'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Components
@@ -118,7 +119,7 @@ const SupportType = ({ type, active, t, update }) => (
 
 export const SupportForm = () => {
   const { t } = useTranslation(ns)
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const { account } = useAccount()
   const backend = useBackend()
 
@@ -212,7 +213,6 @@ export const SupportForm = () => {
 
   return (
     <div className="w-full max-w-4xl mx-auto">
-      <LoadingStatus />
       <SupportType type={type} active={true} update={() => setType(false)} t={t} />
       <StringInput
         id="support-title"

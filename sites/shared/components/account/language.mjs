@@ -1,23 +1,23 @@
-// Dependencies
-import { useState } from 'react'
-import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
+import { useState, useContext } from 'react'
+import { useTranslation } from 'next-i18next'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus, ns as statusNs } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { BackToAccountButton, NumberBullet } from './shared.mjs'
 import { ListInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 // Config
 import { siteConfig as conf } from 'site/site.config.mjs'
 
-export const ns = ['account', 'locales', statusNs]
+export const ns = ['account', 'locales', 'status']
 
 export const LanguageSettings = () => {
   // Hooks
   const { account, setAccount } = useAccount()
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
 
@@ -39,7 +39,6 @@ export const LanguageSettings = () => {
 
   return (
     <div className="max-w-xl">
-      <LoadingStatus />
       <ListInput
         id="account-language"
         label={t('languageTitle')}

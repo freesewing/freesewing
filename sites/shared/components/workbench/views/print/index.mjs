@@ -1,18 +1,21 @@
-import { useContext } from 'react'
-import { useTranslation } from 'next-i18next'
-import { pagesPlugin } from 'shared/plugins/plugin-layout-part.mjs'
+// Dependencies
+import { nsMerge } from 'shared/utils.mjs'
 import {
   handleExport,
   ns as exportNs,
 } from 'shared/components/workbench/exporting/export-handler.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
+import { pagesPlugin } from 'shared/plugins/plugin-layout-part.mjs'
 import get from 'lodash.get'
+import { defaultPrintSettings, printSettingsPath } from './config.mjs'
+// Hooks
+import { useContext } from 'react'
+import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
+// Components
 import { MovablePattern } from 'shared/components/workbench/pattern/movable/index.mjs'
 import { PrintMenu, ns as menuNs } from './menu.mjs'
-import { defaultPrintSettings, printSettingsPath } from './config.mjs'
-import { LoadingContext } from 'shared/context/loading-context.mjs'
 import { PatternWithMenu, ns as wrapperNs } from '../pattern-with-menu.mjs'
-import { nsMerge } from 'shared/utils.mjs'
 
 export const ns = nsMerge(menuNs, wrapperNs, exportNs, 'print', 'status')
 
@@ -30,8 +33,7 @@ export const PrintView = ({
   Design,
 }) => {
   const { t } = useTranslation(ns)
-  const loading = useContext(LoadingContext)
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { loading, setLoadingStatus } = useContext(LoadingStatusContext)
 
   const defaultSettings = defaultPrintSettings(settings.units)
   // add the pages plugin to the draft
@@ -74,7 +76,6 @@ export const PrintView = ({
 
   return (
     <>
-      <LoadingStatus />
       <PatternWithMenu
         noHeader
         {...{

@@ -1,16 +1,17 @@
 // Dependencies
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useLoadingStatus } from 'shared/hooks/use-loading-status.mjs'
 // Components
 import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 import { ListInput } from 'shared/components/inputs.mjs'
 import { OkIcon, NoIcon } from 'shared/components/icons.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 
 export const ns = ['account', 'status']
 
@@ -18,7 +19,7 @@ export const CompareSettings = ({ welcome = false }) => {
   // Hooks
   const { account, setAccount } = useAccount()
   const backend = useBackend()
-  const { setLoadingStatus, LoadingStatus } = useLoadingStatus()
+  const { setLoadingStatus } = useContext(LoadingStatusContext)
   const { t, i18n } = useTranslation(ns)
 
   // State
@@ -47,7 +48,6 @@ export const CompareSettings = ({ welcome = false }) => {
 
   return (
     <div className="max-w-xl">
-      <LoadingStatus />
       <ListInput
         id="account-compare"
         label={t('compareTitle')}

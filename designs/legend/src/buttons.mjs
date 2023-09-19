@@ -1,5 +1,4 @@
 import { box } from './shared.mjs'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 
 function legendButtons({ points, Point, snippets, Snippet, part }) {
   points.a = new Point(30, 10)
@@ -15,6 +14,5 @@ function legendButtons({ points, Point, snippets, Snippet, part }) {
 
 export const buttons = {
   name: 'legend.buttons',
-  plugins: pluginBundle,
   draft: legendButtons,
 }
