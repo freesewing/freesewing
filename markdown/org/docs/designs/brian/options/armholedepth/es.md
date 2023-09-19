@@ -1,11 +1,8 @@
 ---
-title: "Factor de profundidad de la sisa"
+title: "Profundidad del orificio"
 ---
-
-![El factor de profundidad del agujero en Brian](./armholedepthfactor.svg)
 
 Esta opción controla la profundidad del agujero de armadura.
 
-## Efecto de esta opción en el patrón
+This option applies to the new v3 way of calculating the armhole depth. If you enable the [legacy armhole depth](/docs/designs/brian/options/legacyarmholedepth) option, this option will not apply, but instead it's legacy version [armhole depth factor](/docs/designs/brian/options/armholedepthfactor) will.
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](brian_armholedepthfactor_sample.svg "Efecto de esta opción en el patrón")

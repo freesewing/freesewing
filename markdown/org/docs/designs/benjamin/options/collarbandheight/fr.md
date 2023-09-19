@@ -2,10 +2,5 @@
 title: "Largeur du ruban"
 ---
 
-***
+Controls the height of the collar band (the width, if you will).
 
-Largeur du ruban
-
-## Effet de cette option sur le motif
-
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](benjamin_ribbonwidth_sample.svg "Effet de cette option sur le motif")

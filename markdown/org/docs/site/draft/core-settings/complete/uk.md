@@ -2,11 +2,7 @@
 title: Деталі викрійки
 ---
 
-<Fixme> 
+This setting -- which is enabled by default -- will give you a pattern with all details included.
 
-Цей параметр, ймовірно, буде переглянуто перед випуском v3
-
-</Fixme>
-
-
+If you disable it, you will instead get a pattern that does not include any details such as text or annotations, and only include the seamlines.
 

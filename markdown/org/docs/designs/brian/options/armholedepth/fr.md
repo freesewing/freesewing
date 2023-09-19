@@ -1,11 +1,8 @@
 ---
-title: "Hauteur de l'emmanchure"
+title: "Profondeur d'emmanchure"
 ---
-
-![Le facteur de profondeur de l'armure sur Brian](./armholedepthfactor.svg)
 
 Cette option permet de contrôler la profondeur de l'emmanchure.
 
-## Effet de cette option sur le motif
+This option applies to the new v3 way of calculating the armhole depth. If you enable the [legacy armhole depth](/docs/designs/brian/options/legacyarmholedepth) option, this option will not apply, but instead it's legacy version [armhole depth factor](/docs/designs/brian/options/armholedepthfactor) will.
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_armholedepthfactor_sample.svg "Effet de cette option sur le motif")
