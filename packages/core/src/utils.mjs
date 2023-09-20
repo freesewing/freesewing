@@ -2,6 +2,8 @@ import { Bezier } from 'bezier-js'
 import { Path } from './path.mjs'
 import { Point } from './point.mjs'
 
+export const goldenRatio = 1.618034
+
 //////////////////////////////////////////////
 //            PUBLIC  METHODS               //
 //////////////////////////////////////////////
