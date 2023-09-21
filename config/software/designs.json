@@ -142,6 +142,13 @@
       "seamPocket"
     ]
   },
+  "naomiwu": {
+    "description": "A FreeSewing pattern for Naomi Wu's signature cargo skirt",
+    "code": "Joost De Cock",
+    "design": "Joost De Cock & x",
+    "difficulty": 3,
+    "tags": ["bottoms", "skirts"]
+  },
   "cornelius": {
     "description": "A FreeSewing pattern for cycling breeches, based on the Keystone drafting system",
     "code": "Wouter Van Wageningen",

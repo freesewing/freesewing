@@ -1,0 +1,111 @@
+{
+  "t": "Naomi Wu Cargo Skirt",
+  "d": "This is Naomi's Wu's signature cargo skirt design.",
+  "s": {
+    "right": "Right",
+    "left": "Left"
+  },
+  "o": {
+    "backAttachmentDepth": {
+      "t": "Back attachment depth",
+      "d": "Controls the depth of the back attachment."
+    },
+    "backAttachmentFlapChamferSize": {
+      "t": "Back attachment flap chamfer size",
+      "d": "Controls the size of the chamfer on the back attachment flap."
+    },
+    "backAttachmentWidth": {
+      "t": "Back attachment width",
+      "d": "Controls the width of the front attachment."
+    },
+    "backPocketChamferSize": {
+      "t": "Back pocket chamfer size",
+      "d": "Controls the size of the chamfer on the back pocket."
+    },
+    "backPocketDepth": {
+      "t": "Back pocket depth",
+      "d": "Controls the depth of the back pockets."
+    },
+    "beltloopWidth": {
+      "t": "Beltloop width",
+      "d": "Controls the width of the beltloops."
+    },
+    "dartLength": {
+      "t": "Dart length",
+      "d": "Controls the length of the darts at the back."
+    },
+    "dartWidth": {
+      "t": "Dart width",
+      "d": "Controls the width of the darts at the back."
+    },
+    "flyLength": {
+      "t": "Fly lengt",
+      "d": "Controls the length of the fly."
+    },
+    "flyWidth": {
+      "t": "Fly width",
+      "d": "Controls the width of the fly."
+    },
+    "frontAttachmentChamferSize": {
+      "t": "Front attachment chamfer size",
+      "d": "Controls the size of the chamfer on the front attachment."
+    },
+    "frontAttachmentWidth": {
+      "t": "Front attachment width",
+      "d": "Controls the width of the front attachment."
+    },
+    "frontHalf": {
+      "t": "Front half",
+      "d": "Controls the proportion of the skirt that will make up the front panel."
+    },
+    "frontPocketOpeningBend": {
+      "t": "Front pocket opening bend",
+      "d": "Controls the curvature of the front pocket opening."
+    },
+    "frontPocketOpeningDepth": {
+      "t": "Front pocket opening depth",
+      "d": "Controls the depth of the front pocket opening."
+    },
+    "frontPocketOpeningWidth": {
+      "t": "Front pocket opening width",
+      "d": "Controls the width of the front pocket opening."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at your hips."
+    },
+    "invertFly": {
+      "t": "Invert the side of the fly",
+      "d": "Allows you to control the side the fly is on, for convenience of gender-expression."
+    },
+    "jseamBend": {
+      "t": "J-Seam bend",
+      "d": "Controls the curvature of the J-Seam, that J-shaped seam at the fly."
+    },
+    "length": {
+      "t": "Length",
+      "d": "Controls the length of the skirt."
+    },
+    "minDartWidth": {
+      "t": "Minimal dart width",
+      "d": "Controls the minimal width below which darts will be ommitted in favor of shaping at the seams."
+    },
+    "seatEase": {
+      "t": "Seat ease",
+      "d": "Controls the amount of ease at your seat."
+    },
+    "waistbandOverlap": {
+      "t": "Waistband overlap",
+      "d": "Controls how much the waistband overlaps at the front closure."
+    },
+    "waistbandWidth": {
+      "t": "Waistband width",
+      "d": "Controls the width of the waistband."
+    },
+    "waistSlant": {
+      "t": "Waist slant",
+      "d": "Controls the slant of the waistband, how much the back is raised higher than the front."
+    }
+  },
+  "p": {}
+}
