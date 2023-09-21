@@ -15,7 +15,15 @@ const Bent = new Design({
 // Merge translations
 const i18n = mergeI18n([brianI18n, bentI18n], {
   o: {
-    keep: [...Object.keys(sleeve.options)],
+    keep: [
+      ...Object.keys(sleeve.options),
+      'legacyArmholeDepthNo',
+      'legacyArmholeDepthYes',
+      'draftForHighBustNo',
+      'draftForHighBustYes',
+      'legacyArmholeDepthNo',
+      'legacyArmholeDepthYes',
+    ],
   },
 })
 

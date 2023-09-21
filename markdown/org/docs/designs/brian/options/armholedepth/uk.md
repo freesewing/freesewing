@@ -1,11 +1,8 @@
 ---
-title: "Коефіцієнт глибини пройми"
+title: "Глибина пройми"
 ---
-
-![Коефіцієнт глибини пройми на Брайані](./armholedepthfactor.svg)
 
 Ця опція регулює глибину пройми.
 
-## Вплив цієї опції на шаблон
+This option applies to the new v3 way of calculating the armhole depth. If you enable the [legacy armhole depth](/docs/designs/brian/options/legacyarmholedepth) option, this option will not apply, but instead it's legacy version [armhole depth factor](/docs/designs/brian/options/armholedepthfactor) will.
 
-![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](brian_armholedepthfactor_sample.svg "Вплив цієї опції на шаблон")

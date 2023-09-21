@@ -45,7 +45,7 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["blocks", "tops"],
-    "techniques": []
+    "techniques": ["hem", "curvedSeam", "setSleeve"]
   },
   "bob": {
     "description": "A FreeSewing pattern for a bib",
@@ -53,7 +53,7 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["accessories", "infants"],
-    "techniques": []
+    "techniques": ["biasTape", "curvedSeam", "snap"]
   },
   "breanna": {
     "description": "A FreeSewing pattern for a basic body block for womenswear",
@@ -61,7 +61,7 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["blocks", "tops"],
-    "techniques": []
+    "techniques": ["block", "dart"]
   },
   "brian": {
     "description": "A FreeSewing pattern for a basic body block for menswear",
@@ -69,7 +69,7 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["blocks", "tops"],
-    "techniques": []
+    "techniques": ["block", "flatSleeve"]
   },
   "bruce": {
     "description": "A FreeSewing pattern for boxer briefs",
@@ -77,7 +77,7 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["tops", "underwear"],
-    "techniques": []
+    "techniques": ["stretch", "hem", "curvedSeam", "elastic"]
   },
   "carlita": {
     "description": "A FreeSewing pattern for Sherlock Holmes cosplay; Or just a nice long coat",
@@ -85,7 +85,18 @@
     "design": ["Anneke Caramin", "Joost De Cock"],
     "difficulty": 5,
     "tags": ["tops", "coats"],
-    "techniques": []
+    "techniques": [
+      "hem",
+      "pocket",
+      "curvedSeam",
+      "precision",
+      "setSleeve",
+      "weltPocket",
+      "lining",
+      "princessSeam",
+      "interfacing",
+      "button"
+    ]
   },
   "carlton": {
     "description": "A FreeSewing pattern for Sherlock Holmes cosplay; Or just a nice long coat",
@@ -93,7 +104,17 @@
     "design": ["Anneke Caramin", "Joost De Cock"],
     "difficulty": 5,
     "tags": ["tops", "coats"],
-    "techniques": []
+    "techniques": [
+      "hem",
+      "pocket",
+      "curvedSeam",
+      "precision",
+      "setSleeve",
+      "weltPocket",
+      "lining",
+      "interfacing",
+      "button"
+    ]
   },
   "cathrin": {
     "description": "A FreeSewing pattern for a underbust corset / waist trainer",
@@ -101,7 +122,7 @@
     "design": ["Cathrin Åhlén", "Joost De Cock"],
     "difficulty": 4,
     "tags": ["tops", "underwear"],
-    "techniques": []
+    "techniques": ["boning", "precision", "curvedSeam", "interfacing"]
   },
   "charlie": {
     "description": "A FreeSewing pattern for chino trousers",
@@ -109,7 +130,17 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["bottoms", "trousers"],
-    "techniques": []
+    "techniques": [
+      "weltPocket",
+      "curvedSeams",
+      "interfacing",
+      "fly",
+      "zipper",
+      "button",
+      "dart",
+      "hem",
+      "seamPocket"
+    ]
   },
   "cornelius": {
     "description": "A FreeSewing pattern for cycling breeches, based on the Keystone drafting system",
@@ -125,7 +156,7 @@
     "design": "Erica Alcusa Sáez",
     "difficulty": 2,
     "tags": ["tops"],
-    "techniques": []
+    "techniques": ["curvedSeam", "flatSleeve", "hem"]
   },
   "examples": {
     "description": "A FreeSewing pattern holding examples for our documentation",
@@ -137,7 +168,7 @@
     "design": "Joost De Cock",
     "difficulty": 1,
     "tags": ["accessories"],
-    "techniques": []
+    "techniques": ["curvedSeam"]
   },
   "florent": {
     "description": "A FreeSewing pattern for a flat cap",
@@ -145,7 +176,7 @@
     "design": "Quentin Felix",
     "difficulty": 3,
     "tags": ["accessories", "hats"],
-    "techniques": []
+    "techniques": ["curvedSeam"]
   },
   "hi": {
     "description": "A FreeSewing pattern for a shark plush toy",
@@ -161,7 +192,7 @@
     "design": "Erica Alcusa Sáez",
     "difficulty": 3,
     "tags": ["accessories", "hats"],
-    "techniques": []
+    "techniques": ["curvedSeam", "lining"]
   },
   "hortensia": {
     "description": "A FreeSewing pattern for a handbag",
@@ -177,7 +208,7 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["tops"],
-    "techniques": []
+    "techniques": ["curvedSeam", "pocket", "zipper", "ribbing", "flatSleeve"]
   },
   "hugo": {
     "description": "A FreeSewing pattern for a hooded jumper with raglan sleeves",
@@ -185,7 +216,7 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["tops"],
-    "techniques": []
+    "techniques": ["curvedSeam", "pocket", "ribbing", "raglanSleeve"]
   },
   "jaeger": {
     "description": "A FreeSewing pattern for a sport coat style jacket",
@@ -193,7 +224,17 @@
     "design": "Joost De Cock",
     "difficulty": 5,
     "tags": ["tops", "coats"],
-    "techniques": []
+    "techniques": [
+      "hem",
+      "pocket",
+      "curvedSeam",
+      "precision",
+      "setSleeve",
+      "weltPocket",
+      "lining",
+      "interfacing",
+      "button"
+    ]
   },
   "legend": {
     "description": "A FreeSewing pattern to document pattern notation",
@@ -205,7 +246,7 @@
     "design": "SeaZeeZee",
     "difficulty": 2,
     "tags": ["accessories", "historical", "bags"],
-    "techniques": []
+    "techniques": ["curvedSeam"]
   },
   "lunetius": {
     "description": "A FreeSewing pattern for a lacerna, a historical Roman cloak",
@@ -213,7 +254,7 @@
     "design": "Rika Tamaike",
     "difficulty": 1,
     "tags": ["tops", "coats", "historical"],
-    "techniques": []
+    "techniques": ["hem"]
   },
   "magde": {
     "description": "A FreeSewing pattern for a bike messenger bag",
@@ -245,7 +286,7 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["bottoms", "trousers"],
-    "techniques": []
+    "techniques": ["elastic", "curvedSeam", "pocket", "weltPocket", "hem"]
   },
   "penelope": {
     "description": "A FreeSewing pattern for a pencil skirt",
@@ -269,7 +310,7 @@
     "design": "Erica Alcusa Sáez",
     "difficulty": 3,
     "tags": ["bottoms", "skirts"],
-    "techniques": []
+    "techniques": ["curvedSeam", "button", "hem"]
   },
   "shin": {
     "description": "A FreeSewing pattern for swim trunks",
@@ -277,7 +318,7 @@
     "design": "Joost De Cock",
     "difficulty": 2,
     "tags": ["bottoms", "swimwear"],
-    "techniques": []
+    "techniques": ["hem", "stretch", "curvedSeam", "elastic"]
   },
   "simon": {
     "description": "A FreeSewing pattern for a button down shirt",
@@ -285,7 +326,7 @@
     "design": "Joost De Cock",
     "difficulty": 4,
     "tags": ["tops"],
-    "techniques": []
+    "techniques": ["hem", "button", "interfacing", "curvedSeam", "flatFelledSeam", "flatSleeve"]
   },
   "simone": {
     "description": "A FreeSewing pattern for a button down shirt (Simone = Simon for people with breasts)",
@@ -293,7 +334,7 @@
     "design": "Joost De Cock",
     "difficulty": 4,
     "tags": ["tops"],
-    "techniques": []
+    "techniques": ["hem", "button", "interfacing", "curvedSeam", "flatFelledSeam", "flatSleeve"]
   },
   "sven": {
     "description": "A FreeSewing pattern for a straightforward sweater",
@@ -301,7 +342,7 @@
     "design": "Joost De Cock",
     "difficulty": 3,
     "tags": ["tops"],
-    "techniques": []
+    "techniques": ["curvedSeam", "flatSleeve", "ribbing"]
   },
   "tamiko": {
     "description": "A FreeSewing pattern for a zero-waste top",
@@ -309,7 +350,7 @@
     "design": "Joost De Cock",
     "difficulty": 1,
     "tags": ["tops"],
-    "techniques": []
+    "techniques": ["curvedSeam"]
   },
   "teagan": {
     "description": "A FreeSewing pattern for a T-shirt",
@@ -317,7 +358,7 @@
     "design": "Joost De Cock",
     "difficulty": 2,
     "tags": ["tops"],
-    "techniques": []
+    "techniques": ["curvedSeam", "hem", "flatSleeve", "knitBand"]
   },
   "tiberius": {
     "description": "A FreeSewing pattern for a tunica, a historical Roman tunic",
@@ -341,7 +382,7 @@
     "design": "Joost De Cock",
     "difficulty": 2,
     "tags": ["accessories"],
-    "techniques": []
+    "techniques": ["precision", "lining"]
   },
   "tutorial": {
     "description": "A FreeSewing pattern for a baby bib that's used in our tutorial",
@@ -369,7 +410,7 @@
     "design": "Joost De Cock",
     "difficulty": 4,
     "tags": ["tops"],
-    "techniques": []
+    "techniques": ["curvedSeam", "hem", "interfacing", "lining", "weltPocket", "button"]
   },
   "walburga": {
     "description": "A FreeSewing pattern for a wappenrock (tabard/surcoat), a historical European/medieval (ish) garment",
@@ -377,7 +418,7 @@
     "design": "Rika Tamaike",
     "difficulty": 1,
     "tags": ["bottoms", "historical"],
-    "techniques": []
+    "techniques": ["hem"]
   },
   "waralee": {
     "description": "A FreeSewing pattern for wrap pants",

@@ -190,7 +190,10 @@ export const sleeve = {
     lengthBonus: { pct: 0, min: -4, max: 60, menu: 'fit' },
     sleeveLengthBonus: { pct: 0, min: -20, max: 15, menu: 'fit' },
     sleeveBend: { deg: 10, min: 0, max: 20, menu: 'fit' },
-    draftForHighBust: { bool: false, menu: 'fit' },
+    draftForHighBust: {
+      bool: false,
+      menu: ({ measurements }) => (measurements.highBust ? 'fit' : false),
+    },
     // Style
     // s3 is short for Shoulder Seam Shift
     s3Collar: { pct: 0, min: -100, max: 100, menu: 'style' },
@@ -203,10 +206,20 @@ export const sleeve = {
     sleevecapHeight: { pct: 45, min: 40, max: 60, menu: 'advanced' },
     sleevecapEase: { pct: 1, min: 0, max: 10, menu: 'advanced' },
     // v3 armhole depth
-    armholeDepth: { pct: 5, min: -10, max: 50, menu: 'advanced' },
+    armholeDepth: {
+      pct: 5,
+      min: -10,
+      max: 50,
+      menu: ({ options }) => (options?.legacyArmholeDepth ? false : 'advanced'),
+    },
     // Legacy armhole depth
     legacyArmholeDepth: { bool: false, menu: 'advanced' },
-    armholeDepthFactor: { pct: 60, min: 50, max: 70, menu: 'advanced' },
+    armholeDepthFactor: {
+      pct: 60,
+      min: 50,
+      max: 70,
+      menu: ({ options }) => (options?.legacyArmholeDepth ? 'advanced' : false),
+    },
   },
   draft: draftBentSleeve,
 }

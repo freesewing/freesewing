@@ -3,8 +3,7 @@ import { data } from '../data.mjs'
 import { i18n as brianI18n } from '@freesewing/brian'
 import { i18n as dianaI18n } from '../i18n/index.mjs'
 // Parts
-import { front } from './front.mjs'
-import { back } from './front.mjs'
+import { front, back } from './front.mjs'
 import { sleeve } from './sleeve.mjs'
 
 // Create design

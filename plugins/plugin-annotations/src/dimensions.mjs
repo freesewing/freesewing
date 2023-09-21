@@ -176,10 +176,10 @@ const removeDimensionType = function ({ paths, store, part }, type) {
  * This method removes all dimensions
  */
 const removeAllDimensions = function ({ macro }) {
-  macro('rmhd')
-  macro('rmld')
-  macro('rmvd')
-  macro('rmpd')
+  macro('rmahd')
+  macro('rmald')
+  macro('rmavd')
+  macro('rmapd')
 }
 
 /*

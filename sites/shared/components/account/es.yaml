@@ -176,6 +176,7 @@ csetBookmark: Curated Measurements Sets
 docBookmark: Documentación
 customBookmark: Custom Bookmarks
 yourBookmarks: Your bookmarks
+bookmarkThisPage: Bookmark this page
 #sets
 set: Measurements Set
 name: Nombre
@@ -220,6 +221,19 @@ noOwnSetsMsg: You can store your measurements as a measurements set, after which
 measurements: Medidas
 chooseASet: Choose a measurements set
 showImage: Show image
+suggestForCuration: Suggest for curation
+suggestCset: Suggest a measurements set for curation
+csetAllMeasies: To ensure curated measurements sets work for all designs, you need to provide a full set of measurements.
+csetMissing: Your measurements set is missing the following measurements
+allMeasiesAvailable: All measurements are available.
+csetHeightMsg1: To allow organizing and presenting our curated sets in a structured way, we organize them by height.
+csetImgMsg: Finally, we need a picture. Please refer to the documentation to see what makes a good picture for a curated measurements set.
+docs: Documentación
+csetNotesMsg: If you would like to add any notes, you can do so here.
+thankYouVeryMuch: Thank you very much
+csetSuggestedMsg: Your submission has been registered and will be processed by one of our curators.
+itIsAvailableAt: It is available at
+csetNameMsg: Each curated set has a name. You can suggest your own name or a pseudonym.
 patternNew: Generar un nuevo patrón
 patternNewInfo: Elige un diseño, añade tu juego de medidas y generaremos un patrón de costura a medida para ti.
 designNew: Crear un nuevo diseño

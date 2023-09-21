@@ -20,7 +20,6 @@ function simonFront({
   points,
   Path,
   paths,
-  complete,
   macro,
   snippets,
   options,
@@ -116,46 +115,42 @@ function simonFront({
   paths.saBaseFromHips.hide()
   paths.saBaseFromArmhole.hide()
   paths.hemBase.hide()
-  paths.seam = paths.hemBase
-    .join(paths.saBase)
-    .join(paths.saBaseFromArmhole)
-    .attr('class', 'fabric')
+  paths.seam = paths.hemBase.join(paths.saBase).join(paths.saBaseFromArmhole).addClass('fabric')
 
-  // Complete pattern?
-  if (complete) {
-    const grainlineDistance = (points.hem.x - points.cfHem.x) * 0.2
-    macro('grainline', {
-      from: points.cfHem.shift(0, grainlineDistance),
-      to: points.cfNeck.shift(0, grainlineDistance),
-    })
-    macro('title', { at: points.title, nr: 'X', title: 'front' })
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['waist', 'armholePitch', 'hips', 'cfHips', 'cfWaist', 'armhole', 'cfArmhole'],
-    })
-
-    if (sa) {
-      paths.saFrench = paths.saBase.offset(sa * options.ffsa).attr('class', 'fabric sa')
-      macro('banner', {
-        path: paths.saFrench,
-        text: 'flatFelledSeamAllowance',
-        repeat: 30,
-      })
-      paths.saFromArmhole = paths.saBaseFromArmhole.offset(sa).attr('class', 'fabric sa')
-      paths.hemSa = paths.hemBase.offset(sa * 3).attr('class', 'fabric sa')
-      macro('banner', {
-        path: paths.hemSa,
-        text: ['hem', ': 3x', 'seamAllowance'],
-      })
-      paths.saConnect = new Path()
-        .move(paths.hemSa.end())
-        .line(paths.saFrench.start())
-        .move(paths.saFrench.end())
-        .line(paths.saFromArmhole.start())
-        .attr('class', 'fabric sa')
-      delete paths.sa
-    }
+  if (sa) {
+    paths.ffsa = paths.saBase.offset(sa * options.ffsa).attr('class', 'fabric sa')
+    paths.saFromArmhole = paths.saBaseFromArmhole.offset(sa).attr('class', 'fabric sa')
+    paths.hemSa = paths.hemBase.offset(sa * 3).attr('class', 'fabric sa')
+    paths.saConnect = new Path()
+      .move(paths.hemSa.end())
+      .line(paths.ffsa.start())
+      .move(paths.ffsa.end())
+      .line(paths.saFromArmhole.start())
+      .attr('class', 'fabric sa')
+    delete paths.sa
   }
+
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'farbic' })
+
+  // Grainline
+  const grainlineDistance = (points.hem.x - points.cfHem.x) * 0.2
+  macro('grainline', {
+    from: points.cfHem.shift(0, grainlineDistance),
+    to: points.cfNeck.shift(0, grainlineDistance),
+  })
+
+  // Notches
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: ['waist', 'armholePitch', 'hips', 'cfHips', 'cfWaist', 'armhole', 'cfArmhole'],
+  })
+
+  // Remove title
+  macro('rmtitle')
 
   return part
 }

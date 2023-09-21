@@ -1,11 +1,7 @@
 ---
-title: "Diepte armsgat factor"
+title: "Diepte armsgat"
 ---
-
-![De factor armsgat bij Brian](./armholedepthfactor.svg)
 
 Deze optie bepaalt de diepte van het armsgat.
 
-## Effect van deze optie op het patroon
-
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](brian_armholedepthfactor_sample.svg "Effect van deze optie op het patroon")
+This option applies to the new v3 way of calculating the armhole depth. If you enable the [legacy armhole depth](/docs/designs/brian/options/legacyarmholedepth) option, this option will not apply, but instead it's legacy version [armhole depth factor](/docs/designs/brian/options/armholedepthfactor) will.

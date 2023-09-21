@@ -222,7 +222,7 @@ export const MenuItemGroup = ({
       <div className="flex flex-row items-center justify-between w-full" key="a">
         <div className="flex flex-row items-center gap-4 w-full">
           <ItemIcon />
-          <span className="font-medium">{t([`${itemName}.t`, itemName])}</span>
+          <span className="font-medium">{t([`${itemName}.t`, `workbench:${itemName}`])}</span>
         </div>
         <div className="font-bold">
           <Value

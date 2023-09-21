@@ -46,9 +46,37 @@
       "t": "Bow style",
       "d": "Style of the bow"
     },
+    "bowStyle.diamond": {
+      "t": "Diamond",
+      "d": "Use a diamond-shaped bow style"
+    },
+    "bowStyle.butterfly": {
+      "t": "Butterfly",
+      "d": "Use a butterfly bow style"
+    },
+    "bowStyle.square": {
+      "t": "Square",
+      "d": "Use a square bow style"
+    },
+    "bowStyle.widesquare": {
+      "t": "Wide square",
+      "d": "Use a wide square bow style"
+    },
     "endStyle": {
       "t": "End style",
       "d": "Style of the bow ends"
+    },
+    "endStyle.straight": {
+      "t": "Straight",
+      "d": "Use a straight style for the bow ends"
+    },
+    "endStyle.pointed": {
+      "t": "Pointed",
+      "d": "Use a pointy style for the bow ends"
+    },
+    "endStyle.rounded": {
+      "t": "Rounded",
+      "d": "Use a rounded style for the bow ends"
     },
     "collarEase": {
       "t": "Collar ease",

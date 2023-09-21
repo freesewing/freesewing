@@ -79,14 +79,18 @@ function draftBenjaminCollarBand({
     .close()
     .attr('class', 'fabric')
 
-  store.cutlist.addCut()
-  store.cutlist.addCut({ cut: 2, material: 'interfacing' })
+  //store.cutlist.addCut()
+  //store.cutlist.addCut({ cut: 2, material: 'interfacing' })
 
   if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
   /*
    * Annotations
    */
+
+  // Cut list
+  store.cutlist.addCut({ cut: 2, from: 'fabric' })
+  store.cutlist.addCut({ cut: 2, from: 'interfacing' })
 
   // Title
   macro('title', {

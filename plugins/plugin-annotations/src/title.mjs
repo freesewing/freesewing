@@ -105,6 +105,7 @@ const addTitleMacro = function (
       .attr('data-text', mc.nr, mc.append ? false : true)
       .attr('data-text-class', `${mc.classes.nr} ${mc.align}`)
       .attr('data-text-transform', transform)
+      .attr('data-render-always', 1) // Render even when outside the part bounding box
     store.set(['partNumbers', part.name], mc.nr)
   } else delete ids.nr
 
@@ -118,6 +119,7 @@ const addTitleMacro = function (
       .attr('data-text', mc.title, mc.append ? false : true)
       .attr('data-text-class', `${mc.classes.title} ${mc.align}`)
       .attr('data-text-transform', transform)
+      .attr('data-render-always', 1) // Render even when outside the part bounding box
     shift += mc.dy
     store.set(['partTitles', part.name], mc.title)
   } else delete ids.title
@@ -135,7 +137,7 @@ const addTitleMacro = function (
        * Iterate over materials
        */
       for (const [material, instructions] of Object.entries(partCutlist.materials)) {
-        instructions.forEach(({ cut, identical, bias, ignoreOnFold }, c) => {
+        instructions.forEach(({ cut, identical, onBias, onFold }, c) => {
           /*
            * Create point
            */
@@ -147,6 +149,7 @@ const addTitleMacro = function (
             .attr('data-text', 'plugin-annotations:cut')
             .attr('data-text-class', `${mc.classes.cutlist} ${mc.align}`)
             .attr('data-text-transform', transform)
+            .attr('data-render-always', 1) // Render even when outside the part bounding box
             .addText(cut)
           shift += mc.dy
 
@@ -158,13 +161,13 @@ const addTitleMacro = function (
           /*
            * Add instructions if parts are cut on fold
            */
-          if (partCutlist.cutOnFold && !ignoreOnFold)
+          if (onFold)
             points[id].addText(
-              bias ? 'plugin-annotations:onFoldAndBias' : 'plugin-annotations:onFold'
+              onBias ? 'plugin-annotations:onFoldAndBias' : 'plugin-annotations:onFold'
             )
           /*
            * Add instructions if parts on on bias
-           */ else if (bias) points[id].addText('plugin-annotations:onBias')
+           */ else if (onBias) points[id].addText('plugin-annotations:onBias')
 
           /*
            * Add 'from' (material) text
@@ -189,6 +192,7 @@ const addTitleMacro = function (
     )
     .attr('data-text-class', `${mc.classes.name} ${mc.align}`)
     .attr('data-text-transform', transform)
+    .attr('data-render-always', 1) // Render even when outside the part bounding box
   shift += mc.dy
 
   /*
@@ -200,6 +204,7 @@ const addTitleMacro = function (
       .attr('data-text', `(${store.data.for})`)
       .attr('data-text-class', `${mc.classes.for} ${mc.align}`)
       .attr('data-text-transform', transform)
+      .attr('data-render-always', 1) // Render even when outside the part bounding box
     shift += mc.dy
   } else delete ids.for
 
@@ -219,6 +224,7 @@ const addTitleMacro = function (
     )
     .attr('data-text-class', `${mc.classes.date} ${mc.align}`)
     .attr('data-text-transform', transform)
+    .attr('data-render-always', 1) // Render even when outside the part bounding box
 
   /*
    * Store all IDs in the store so we can remove this macro with rmtitle

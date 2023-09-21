@@ -277,7 +277,7 @@ export const back = {
     if (sa) paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
 
     // Cutlist
-    store.cutlist.addCut({ cut: 2, from: 'fabric' })
+    store.cutlist.addCut({ cut: 2, from: 'fabric', onFold: true })
 
     /*
      * Annotations

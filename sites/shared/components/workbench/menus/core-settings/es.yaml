@@ -9,6 +9,8 @@ sabool.t: Incluir margen de costura
 sabool.d: Controla si incluir o no margen de costura en tu patrón
 complete.t: Detalles
 complete.d: Controla qué tan detallado es el patrón. Ya sea un patrón completo con todos los detalles, o un esquema básico de las partes del patrón
+expand.t: Expand
+expand.d: Controls efforts to save paper. Disable this to expand all pattern parts at the cost of using more space.
 only.t: Piezas incluidas
 only.d: Utilízalo para controlar exactamente qué partes del patrón se incluirán en tu patrón
 locale.t: Idioma
@@ -35,6 +37,10 @@ completeYes.t: Generar un patrón completo
 completeYes.d: Esto generará un patrón completo con todas las anotaciones, líneas y marcas. Utilízalo si no estás seguro de qué elegir.
 completeNo.t: Generar un esquema de patrón
 completeNo.d: Genera sólo el contorno de las piezas del patrón. Utilízalo si quieres utilizar una cortadora láser o tienes otras necesidades específicas.
+expandYes.t: Expand all pattern parts
+expandYes.d: This will generate a pattern where all pattern parts are drawn to their full size, even if they are simple rectangles.
+expandNo.t: Keep patterns parts compact where possible
+expandNo.d: This will draw a more dense representation of the pattern which includes all info without using up too much space & paper.
 paperlessNo.t: Generar un patrón regular
 paperlessNo.d: Esto generará un patrón regular, que luego podrás imprimir.
 paperlessYes.t: Generar un patrón sin papel

@@ -246,14 +246,15 @@ export const ListInput = ({
     const titleKey = config.choiceTitles
       ? config.choiceTitles[entry]
       : isDesignOption
-      ? `${design}:${entry}`
+      ? `${design}:${name}.${entry}`
       : `${name}.o.${entry}`
-    const title = t(`${titleKey}.t`)
-    const desc = t(`${titleKey}.d`)
-    const sideBySide = desc.length + title.length < 60
+    const title = config.titleMethod ? config.titleMethod(entry, t) : t(`${titleKey}.t`)
+    const desc = config.valueMethod ? config.valueMethod(entry, t) : t(`${titleKey}.d`)
+    const sideBySide = config.sideBySide || desc.length + title.length < 42
 
     return (
       <ButtonFrame
+        dense={config.dense || false}
         key={entry}
         active={
           changed

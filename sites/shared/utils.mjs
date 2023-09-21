@@ -187,7 +187,7 @@ export const measurementAsMm = (value, units = 'metric') => {
   }
 }
 
-export const optionsMenuStructure = (options) => {
+export const optionsMenuStructure = (options, settings) => {
   if (!options) return options
   const sorted = {}
   for (const [name, option] of Object.entries(options)) {
@@ -201,7 +201,16 @@ export const optionsMenuStructure = (options) => {
       const oType = optionType(option)
       option.dflt = option.dflt || option[oType]
       if (oType === 'pct') option.dflt /= 100
+      if (typeof option.menu === 'function') option.menu = option.menu(settings)
       if (option.menu) {
+        // Handle nested groups that don't have any direct children
+        if (option.menu.includes('.')) {
+          let menuPath = []
+          for (const chunk of option.menu.split('.')) {
+            menuPath.push(chunk)
+            set(menu, `${menuPath.join('.')}.isGroup`, true)
+          }
+        }
         set(menu, `${option.menu}.isGroup`, true)
         set(menu, `${option.menu}.${option.name}`, option)
       } else if (typeof option.menu === 'undefined') {
@@ -455,4 +464,14 @@ export const randomString = (len = 42) => {
   const arr = new Uint8Array(len / 2)
   window.crypto.getRandomValues(arr) // eslint-disable-line
   return Array.from(arr, dec2hex).join('')
+}
+
+/*
+ * Gets the pattern namespaces based on patternConfig
+ */
+export const patternNsFromPatternConfig = (config) => {
+  const ns = new Set()
+  for (const part of config.draftOrder) ns.add(part.split('.')[0])
+
+  return [...ns]
 }

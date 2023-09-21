@@ -2,10 +2,5 @@
 title: "Breedte lint"
 ---
 
-***
+Controls the height of the collar band (the width, if you will).
 
-Breedte van het lint
-
-## Effect van deze optie op het patroon
-
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](benjamin_ribbonwidth_sample.svg "Effect van deze optie op het patroon")

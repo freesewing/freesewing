@@ -8,8 +8,6 @@ function teaganBack({
   Path,
   paths,
   options,
-  complete,
-  paperless,
   macro,
   utils,
   measurements,
@@ -50,6 +48,15 @@ function teaganBack({
     .close()
     .setClass('fabric')
 
+  if (sa)
+    paths.sa = new Path()
+      .move(points.cfHem)
+      .join(paths.hemBase.offset(sa * 3))
+      .join(paths.sideSeam.offset(sa))
+      .join(paths.saBase.offset(sa))
+      .line(points.cbNeck)
+      .attr('class', 'fabric sa')
+
   // Set store values required to draft sleevecap
   store.set('sleevecapEase', 0)
   store.set(
@@ -61,40 +68,33 @@ function teaganBack({
       .length()
   )
 
-  // Complete pattern?
-  if (complete) {
-    macro('cutonfold', {
-      from: points.cfNeck,
-      to: points.cfHem,
-      grainline: true,
-    })
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'fabric', onFold: true })
 
-    macro('title', { at: points.title, nr: 2, title: 'back' })
-    points.scaleboxAnchor = points.scalebox = points.title.shift(90, 100)
-    macro('scalebox', { at: points.scalebox })
+  // Cutonfold
+  macro('cutonfold', {
+    from: points.cfNeck,
+    to: points.cfHem,
+    grainline: true,
+  })
 
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.cfHem)
-        .join(paths.hemBase.offset(sa * 3))
-        .join(paths.sideSeam.offset(sa))
-        .join(paths.saBase.offset(sa))
-        .line(points.cbNeck)
-        .attr('class', 'fabric sa')
-    }
-  }
+  // Title
+  macro('title', { at: points.title, nr: 2, title: 'back' })
 
-  // Paperless?
-  if (paperless) {
-    // Remove dimensions that are front only
-    macro('rmd', { ids: store.get('frontOnlyDimensions') })
-    // These dimensions are only for the front
-    macro('vd', {
-      from: points.cbHem,
-      to: points.cbNeck,
-      x: points.cbHem.x - sa - 15,
-    })
-  }
+  // Scalebox
+  points.scaleboxAnchor = points.scalebox = points.title.shift(90, 100)
+  macro('scalebox', { at: points.scalebox })
+
+  // Dimensions
+  macro('vd', {
+    id: 'hHemToNeck',
+    from: points.cbHem,
+    to: points.cbNeck,
+    x: points.cbHem.x - sa - 15,
+  })
 
   return part
 }

@@ -1,34 +1,5 @@
-//import { useContext } from 'react'
 import { MenuItemGroup } from './menu-item.mjs'
 import { useTranslation } from 'next-i18next'
-//import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-//import { ModalContext } from 'shared/context/modal-context.mjs'
-
-/**
- * get a loadDocs method for a menu
- * @param  {DynamicDocs} DynamicDocs      the docs component to use
- * @param  {Function} getDocsPath         a function that accepts an item name and returns a path to its documentation
- * @param  {string} language              the language to get documentation in
- * @return {Function | false}             an event handler that loads does into a modal
- */
-/*
-export const useDocsLoader = (DynamicDocs, getDocsPath, language) => {
-  const { setModal } = useContext(ModalContext)
-  return DynamicDocs
-    ? (evt, name = false) => {
-        evt.stopPropagation()
-        const path = getDocsPath(name)
-        setModal(
-          <ModalWrapper>
-            <div className="max-w-prose">
-              <DynamicDocs path={path} language={language} />
-            </div>
-          </ModalWrapper>
-        )
-      }
-    : false
-}
-*/
 
 /**
  * A component for a collapsible sidebar menu in workbench views
@@ -53,7 +24,6 @@ export const WorkbenchMenu = ({
   updateFunc,
   ns,
   Icon = () => null,
-  //name,
   config,
   control,
   inputs,
@@ -65,17 +35,12 @@ export const WorkbenchMenu = ({
   language,
   emojis,
   Item,
-  //isFirst,
   children,
-  //docsPath,
   isDesignOptionsGroup,
   design,
 }) => {
   // get translation for the menu
   const { t } = useTranslation(ns)
-
-  // get a documentation loader
-  //const loadDocs = useDocsLoader(DynamicDocs, getDocsPath, language)
 
   return children ? (
     children
@@ -91,7 +56,6 @@ export const WorkbenchMenu = ({
         Icon,
         values,
         inputs,
-        //loadDocs,
         passProps,
         updateFunc,
         emojis,

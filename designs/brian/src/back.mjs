@@ -146,7 +146,7 @@ export const back = {
     })
 
     // Cut list
-    store.cutlist.addCut({ cut: 1 })
+    store.cutlist.addCut({ cut: 1, from: 'fabric', onFold: true })
 
     // Title
     macro('title', { at: points.title, nr: 2, title: 'back' })

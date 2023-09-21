@@ -157,7 +157,7 @@ function draftBreannaFront({
   })
 
   // Cut list
-  store.cutlist.addCut({ cut: 1 })
+  store.cutlist.addCut({ cut: 1, from: 'fabric', onFold: true })
 
   // Logo
   points.logo = points.cfNeck.shift(-60, 70)
