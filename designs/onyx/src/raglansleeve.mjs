@@ -1,6 +1,5 @@
 import { front } from './front.mjs'
 import { back } from './back.mjs'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 
 export function legFromHypotenuseLeg(hypotenuse, leg) {
   return Math.sqrt(hypotenuse * hypotenuse - leg * leg)
@@ -289,7 +288,7 @@ function draftRaglanSleeve({
 export const raglanSleeve = {
   name: 'onyx.raglanSleeve',
   after: [front, back],
-  plugins: [pluginBundle],
+  plugins: [],
   draft: draftRaglanSleeve,
   measurements: ['neck', 'chest', 'biceps', 'wrist', 'shoulderToWrist'],
   options: {

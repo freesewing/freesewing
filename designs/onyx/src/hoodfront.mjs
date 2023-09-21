@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { front } from './front.mjs'
 import { back } from './back.mjs'
 import { raglanSleeve } from './raglansleeve.mjs'
@@ -119,7 +118,7 @@ function draftHoodFront({
 
 export const hoodFront = {
   name: 'onyx.hoodFront',
-  plugins: [pluginBundle],
+  plugins: [],
   draft: draftHoodFront,
   after: [front, back, raglanSleeve, hood],
   measurements: ['neck', 'chest', 'biceps', 'wrist', 'head'],

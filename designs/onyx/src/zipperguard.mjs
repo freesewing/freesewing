@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { neckband } from './neckband.mjs'
 import { front } from './front.mjs'
 
@@ -89,7 +88,7 @@ function draftZipperGuard({
 
 export const zipperGuard = {
   name: 'onyx.zipperGuard',
-  plugins: [pluginBundle],
+  plugins: [],
   draft: draftZipperGuard,
   after: [front, neckband],
   options: {

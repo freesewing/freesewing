@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { front } from './front.mjs'
 import { back } from './back.mjs'
 import { raglanSleeve } from './raglansleeve.mjs'
@@ -93,7 +92,7 @@ function draftNeckband({
 
 export const neckband = {
   name: 'onyx.neckband',
-  plugins: [pluginBundle],
+  plugins: [],
   draft: draftNeckband,
   after: [front, back, raglanSleeve],
   measurements: ['neck', 'chest', 'biceps', 'wrist'],

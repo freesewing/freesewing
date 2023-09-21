@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { front } from './front.mjs'
 import { back } from './back.mjs'
 
@@ -79,7 +78,7 @@ function draftCrotchGusset({
 
 export const crotchGusset = {
   name: 'onyx.crotchGusset',
-  plugins: [pluginBundle],
+  plugins: [],
   draft: draftCrotchGusset,
   after: [front, back],
 }

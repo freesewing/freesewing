@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { withCondition as bustPlugin } from '@freesewing/plugin-bust'
 
 function draftBase({
@@ -285,7 +284,7 @@ function draftBase({
 
 export const base = {
   name: 'onyx.base',
-  plugins: [pluginBundle, bustPlugin],
+  plugins: [bustPlugin],
   draft: draftBase,
   hide: { self: true },
   measurements: [
