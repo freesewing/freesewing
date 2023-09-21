@@ -9,12 +9,14 @@ import { raglanSleeve } from './raglansleeve.mjs'
 import { neckband } from './neckband.mjs'
 import { zipperGuard } from './zipperguard.mjs'
 import { crotchGusset } from './crotchgusset.mjs'
+import { hood } from './hood.mjs'
+import { hoodFront } from './hoodfront.mjs'
 
 // Create new design
 const Onyx = new Design({
   data,
-  parts: [front, back, raglanSleeve, neckband, zipperGuard, crotchGusset],
+  parts: [front, back, raglanSleeve, neckband, zipperGuard, crotchGusset, hood, hoodFront],
 })
 
 // Named exports
-export { front, back, raglanSleeve, neckband, zipperGuard, crotchGusset, Onyx }
+export { front, back, raglanSleeve, neckband, zipperGuard, crotchGusset, hood, hoodFront, Onyx }

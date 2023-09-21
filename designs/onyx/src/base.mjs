@@ -306,6 +306,8 @@ export const base = {
     'ankle',
   ],
   options: {
+    // Choose either a neckband or a hood to go at the neck of the garment.
+    neckStyle: { dflt: 'neckband', list: ['neckband', 'hood'], menu: 'style' },
     // How much ease to give for the neck, as a percentage.
     neckEase: { pct: 50, min: -30, max: 150, menu: 'fit' },
     chestEase: { pct: 0, min: -40, max: 50, menu: 'fit' },
@@ -319,10 +321,8 @@ export const base = {
     centerSeamEase: { pct: 0, min: -20, max: 50, menu: 'fit' },
     // How much vertical ease (stretch out/compress) to put in the outseam, from the armpit to the upper leg (use legLength to adjust below that point, and sleeveEase for the armhole). Will generally be zero or slightly positive for wovens, and slightly negative for stretch fabrics.
     outseamEase: { pct: 0, min: -20, max: 5, menu: 'fit' },
-    // If set to true, makes a tubular body based on the chest, ignoring the hips measurements and options.
-    straightSides: { bool: true, menu: 'advanced' },
     // How long the legs on the garment are. 20-60% for shorts, 100% for pants that touch the floor.
-    legLength: { pct: 20, min: 20, max: 120, menu: 'style' },
+    legLength: { pct: 20, min: 0, max: 120, menu: 'style' },
     // How far the neck hole is shifted towards the front. +100% means it's entirely on the front, -100% means it's entirely on the back, and 0 means the front and back are the same.
     neckBalance: { pct: 40, min: 0, max: 80, menu: 'fit' },
     // Note: The raglan length is the distance between the armpit and where the raglan seams would meet if there were no neckhole. It is used as a base for the following fit options.
@@ -331,7 +331,7 @@ export const base = {
     // How deep the scoop running down the raglan seam is, as a % of the raglan length.
     raglanScoopMagnitude: { pct: 6, min: 0, max: 20, menu: 'advanced' },
     // How steep and deep the scoops on the crotch gusset are, in degrees. Larger values give more room. Zero forms a straight angle on the gusset and two right angles on the front pieces. Positive values shrink the angle on the gusset by twice the value and grow the angle on the front pieces by the value.
-    // Length of the hem around the hips, as a multiple of the seam allowance.
+    // Width of the hem around the hips, as a multiple of the seam allowance.
     hemWidth: { pct: 2, min: 0, max: 8, menu: 'construction' },
     // How wide the scoop to each side of the crotch sweeps (excluding the gusset, as a % of the verticalTrunk.
     crotchScoopWidth: { pct: 1.5, min: 1, max: 5, menu: 'advanced' },
@@ -348,7 +348,7 @@ export const base = {
     neckbandWidth: { pct: 7.5, min: 0, max: 50, menu: 'fit' },
     // How long the zipper will be, as a % of the verticalTrunk. Longer zippers will make the garment easier to don and doff, but zippers do not stretch. Leotards and wide-necked stretch clothes can do with no zipper at all. Swimwear should have a zipper length no more than 20% since zippers do not stretch. Onesie pajamas can have much longer zippers (40%-50%).
     zipperLength: { pct: 20, min: 0, max: 50, menu: 'construction' },
-    // How wide to make the section of fabric keeping the zipper away from the wearer's skin. Not needed on onesie pajamas. Crucial on swimwear.
+    // How wide to make the section of fabric keeping the zipper away from the wearer's skin. Optional on onesie pajamas. Crucial on swimwear.
     zipperGuardWidth: { pct: 2, min: 0, max: 5, menu: 'construction' },
     // How far to have the zipper guard extend past the neckline so it can be wrapped around the zipper slider and pull to keep it from digging into the wearer's neck. Important on any compression garments/swimwear.
     neckGuardLength: { pct: 2, min: 0, max: 5, menu: 'construction' },

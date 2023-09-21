@@ -19,6 +19,8 @@ function draftNeckband({
   snippets,
   Snippet,
 }) {
+  if (options.neckStyle != 'neckband') return part.hide()
+
   const neckbandLength =
     (store.get('neckLengthFront') + store.get('neckLengthBack') + store.get('neckLengthSide')) *
     options.neckbandLength

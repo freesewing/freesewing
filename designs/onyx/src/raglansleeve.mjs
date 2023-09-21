@@ -302,7 +302,7 @@ export const raglanSleeve = {
     wristEase: { pct: 0, min: -30, max: 50, menu: 'fit' },
     // How long the sleeve is. 100 is a long sleeve ending at the wrist. 20 is a typical short sleeve.
     sleeveLength: { pct: 20, min: 0, max: 125, menu: 'style' },
-    // Length of the hem at the end of the sleeve, as a multiple of the seam allowance.
+    // Width of the hem at the end of the sleeve, as a multiple of the seam allowance.
     sleeveHem: { pct: 2, min: 0, max: 8, menu: 'construction' },
   },
 }
