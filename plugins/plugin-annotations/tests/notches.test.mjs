@@ -11,7 +11,7 @@ const part = {
   },
   plugins: [annotationsPlugin],
 }
-const Pattern = new Design({ parts: [part] })
+const Pattern = new Design({ parts: [part], noCorePlugins: true })
 const pattern = new Pattern()
 pattern.draft().render()
 
@@ -32,7 +32,7 @@ describe('Notches Plugin Test', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const Pattern = new Design({ parts: [part] })
+    const Pattern = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Pattern()
     pattern.draft().render()
     const c = pattern.svg

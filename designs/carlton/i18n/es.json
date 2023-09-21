@@ -1,0 +1,138 @@
+{
+  "t": "Carlton, abrigo",
+  "d": "Para un cosplay de Sherlock Holms, o simplemente un abrigo muy bonito.",
+  "p": {
+    "back": "Back",
+    "belt": "Belt",
+    "chestPocketWelt": "Chest pocket welt",
+    "chestPocketBag": "Chest pocket bag",
+    "collar": "Collar",
+    "collarStand": "Collar stand",
+    "cuffFacing": "Cuff facing",
+    "front": "Front",
+    "innerPocketBag": "Inner pocket bag",
+    "innerPocketTab": "Inner pocket tab",
+    "innerPocketWelt": "Inner pocket welt",
+    "pocketFlap": "Pocket flap",
+    "pocketLining": "Pocket lining",
+    "pocket": "Pocket",
+    "tail": "Tail",
+    "topSleeve": "Topsleeve",
+    "underSleeve": "Undersleeve"
+  },
+  "s": {},
+  "o": {
+    "seatEase": {
+      "t": "Holgura de asiento",
+      "d": "Cantidad de facilidad alrededor de tu trasero"
+    },
+    "pocketPlacementHorizontal": {
+      "t": "Colocación horizontal del bolsillo",
+      "d": "La ubicación (horizontal) de los bolsillos"
+    },
+    "pocketPlacementVertical": {
+      "t": "Colocación vertical del bolsillo",
+      "d": "La ubicación (vertical) de los bolsillos"
+    },
+    "collarHeight": {
+      "t": "Altura del cuello",
+      "d": "Altura del cuello"
+    },
+    "length": {
+      "t": "Longitud",
+      "d": "Largo total"
+    },
+    "pocketFlapRadius": {
+      "t": "Radio de la tapa del bolsillo",
+      "d": "La cantidad por la cual se redondea la solapa del bolsillo"
+    },
+    "pocketRadius": {
+      "t": "Radio de bolsillo",
+      "d": "La cantidad por la cual se redondea el bolsillo"
+    },
+    "chestPocketHeight": {
+      "t": "Altura del bolsillo pecho",
+      "d": "Altura del bolsillo del pecho"
+    },
+    "beltWidth": {
+      "t": "Ancho del cinturón",
+      "d": "Ancho del cinturón"
+    },
+    "buttonSpacingHorizontal": {
+      "t": "Espaciado horizontal de los botones",
+      "d": "El espaciado horizontal de los botones, también determina la superposición del cierre frontal"
+    },
+    "lapelReduction": {
+      "t": "Lapel reduction",
+      "d": "Controls how much the lapel tip goes inwards."
+    },
+    "frontOverlap": {
+      "t": "Front overlap",
+      "d": "Controls how much the right and left front of the garment overlap at the center front."
+    },
+    "pocketHeight": {
+      "t": "Pocket height",
+      "d": "Controls the height of the front pockets"
+    },
+    "pocketWidth": {
+      "t": "Pocket width",
+      "d": "Controls the width of the front pockets"
+    },
+    "chestPocketPlacement": {
+      "t": "Chest pocket placement",
+      "d": "Controls the location of the chest pocket."
+    },
+    "chestPocketAngle": {
+      "t": "Chest pocket angle",
+      "d": "Controls the slant of the chest pocket."
+    },
+    "chestPocketWidth": {
+      "t": "Chest pocket width",
+      "d": "Controls the width of the chest pocket."
+    },
+    "innerPocketPlacement": {
+      "t": "Inner pocket placement",
+      "d": "Controls the location of the inner pocket."
+    },
+    "innerPocketDepth": {
+      "t": "Inner pocket depth",
+      "d": "Controls the depth of the inner pocket."
+    },
+    "innerPocketWidth": {
+      "t": "Inner pocket width",
+      "d": "Controls the width of the inner pocket."
+    },
+    "innerPocketWeltHeight": {
+      "t": "Inner pocket welt height",
+      "d": "Controls the height of the inner pocket welts."
+    },
+    "sleeveBend": {
+      "t": "Sleeve bend",
+      "d": "The angle of the sleeve at the elbow."
+    },
+    "sleevecapHeight": {
+      "t": "Sleevecap height",
+      "d": "Controls the height of the sleevecap."
+    },
+    "sleevecapEase": {
+      "t": "Sleevecap ease",
+      "d": "Controls the amount of sleevecap ease."
+    },
+    "cuffLength": {
+      "t": "Cuff length",
+      "d": "Controls the length (height if you wish) of the cuffs."
+    },
+    "collarFlare": {
+      "t": "Collar flare",
+      "d": "Controls the flare of the collar by altering the fall length (between the neck and the tips) of the collar."
+    },
+    "collarSpread": {
+      "t": "Collar spread",
+      "d": "Controls how close the collar lies to the neck."
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at your waist."
+    }
+  }
+}

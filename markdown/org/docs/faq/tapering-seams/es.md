@@ -1,8 +1,8 @@
 ---
-title: Why are seam allowances tapered?
+title: '¿Por qué se estrechan los márgenes de costura?'
 ---
 
-Freesewing generates the seam allowances by offsetting from the seam paths. This means that when there is a corner in your pattern and the two offset seam allowances converge, it would require a lot more code to make the offset seam allowance come to a point. Instead, the offset seam allowances come to the end of the seam paths and then are connected in a straight line, making a trimmed or tapered corner.
+La costura libre genera los márgenes de costura desplazándose de las trayectorias de costura. Esto significa que cuando hay una esquina en tu patrón y los dos márgenes de costura desplazados convergen, se necesitaría mucho más código para hacer que el margen de costura desplazado llegara a un punto. En su lugar, los márgenes de costura desplazados llegan al final de los recorridos de costura y luego se unen en línea recta, formando una esquina recortada o cónica.
 
-If you want you could simply cut the seam allowance corners fully when cutting your printed pattern or when cutting your fabric. You do not have to cut along the tapered lines. 
+Si quieres, puedes recortar completamente las esquinas del margen de costura al cortar el patrón impreso o al cortar la tela. No tienes que cortar siguiendo las líneas cónicas. 
 

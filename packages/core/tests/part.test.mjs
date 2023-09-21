@@ -124,14 +124,14 @@ describe('Part', () => {
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    expect(pattern.setStores[0].logs.warning.length).to.equal(4)
-    expect(pattern.setStores[0].logs.warning[0]).to.equal(
+    expect(pattern.setStores[0].logs.warn.length).to.equal(4)
+    expect(pattern.setStores[0].logs.warn[0]).to.equal(
       '`points.a` was set with a value that is not a `Point` object'
     )
-    expect(pattern.setStores[0].logs.warning[1]).to.equal(
+    expect(pattern.setStores[0].logs.warn[1]).to.equal(
       '`points.a` was set with a `x` parameter that is not a `number`'
     )
-    expect(pattern.setStores[0].logs.warning[2]).to.equal(
+    expect(pattern.setStores[0].logs.warn[2]).to.equal(
       '`points.a` was set with a `y` parameter that is not a `number`'
     )
   })
@@ -147,14 +147,14 @@ describe('Part', () => {
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    expect(pattern.setStores[0].logs.warning.length).to.equal(4)
-    expect(pattern.setStores[0].logs.warning[0]).to.equal(
+    expect(pattern.setStores[0].logs.warn.length).to.equal(4)
+    expect(pattern.setStores[0].logs.warn[0]).to.equal(
       '`snippets.a` was set with a value that is not a `Snippet` object'
     )
-    expect(pattern.setStores[0].logs.warning[1]).to.equal(
+    expect(pattern.setStores[0].logs.warn[1]).to.equal(
       '`snippets.a` was set with a `def` parameter that is not a `string`'
     )
-    expect(pattern.setStores[0].logs.warning[2]).to.equal(
+    expect(pattern.setStores[0].logs.warn[2]).to.equal(
       '`snippets.a` was set with an `anchor` parameter that is not a `Point`'
     )
   })
@@ -197,8 +197,8 @@ describe('Part', () => {
     // Let's also cover the branch where complete is false
     const pattern = new design({ complete: false })
     pattern.draft()
-    expect(pattern.setStores[0].logs.warning.length).to.equal(1)
-    expect(pattern.setStores[0].logs.warning[0]).to.equal(
+    expect(pattern.setStores[0].logs.warn.length).to.equal(1)
+    expect(pattern.setStores[0].logs.warn[0]).to.equal(
       'Calling `units(value)` but `value` is not a number (`string`)'
     )
   })
@@ -304,15 +304,15 @@ describe('Part', () => {
     const part = {
       name: 'test',
       draft: ({ options, part }) => {
-        if (options.test) return part
+        if (options.test === 'This should never match') return null
         else return part
       },
     }
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    expect(pattern.setStores[0].logs.warning.length).to.equal(1)
-    expect(pattern.setStores[0].logs.warning[0]).to.equal(
+    expect(pattern.setStores[0].logs.warn.length).to.equal(1)
+    expect(pattern.setStores[0].logs.warn[0]).to.equal(
       'Tried to access `options.test` but it is `undefined`'
     )
   })
@@ -321,15 +321,15 @@ describe('Part', () => {
     const part = {
       name: 'test',
       draft: ({ absoluteOptions, part }) => {
-        if (absoluteOptions.test) return part
+        if (absoluteOptions.test === 'this check should always fail') return null
         else return part
       },
     }
     const design = new Design({ parts: [part] })
     const pattern = new design()
     pattern.draft()
-    expect(pattern.setStores[0].logs.warning.length).to.equal(1)
-    expect(pattern.setStores[0].logs.warning[0]).to.equal(
+    expect(pattern.setStores[0].logs.warn.length).to.equal(1)
+    expect(pattern.setStores[0].logs.warn[0]).to.equal(
       'Tried to access `absoluteOptions.test` but it is `undefined`'
     )
   })

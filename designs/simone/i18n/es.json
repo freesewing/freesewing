@@ -1,0 +1,47 @@
+{
+  "t": "Simone, camisa",
+  "d": "Simone es Simón, una patrón de camisa, adaptado para gente con pechos.",
+  "p": {
+    "back": "Atrás",
+    "buttonholePlacket": "Tapeta de ojal",
+    "buttonPlacket": "Tapeta de botones",
+    "collar": "Cuello",
+    "collarStand": "Soporte de collar",
+    "cuff": "Cuffnl",
+    "fbaFront": "FBA Frente",
+    "front": "Frente",
+    "frontLeft": "Delantero izquierdo",
+    "frontRight": "Frente derecho",
+    "sleevePlacketOverlap": "Top de manga tapeta",
+    "sleevePlacketUnderlap": "Parte inferior de la tapeta de la manga",
+    "sleeve": "Manga",
+    "yoke": "Yugo"
+  },
+  "s": {},
+  "o": {
+    "bustAlignedButtons": {
+      "t": "Bust-aligned buttons",
+      "d": "Optional button spacing strategies to ensure a button at the bustline"
+    },
+    "bustDartAngle": {
+      "t": "Ángulo de dardos de polvo",
+      "d": "Controla el ángulo por el cual el (lado) dardos de polvo tiene pendiente descendente"
+    },
+    "bustDartLength": {
+      "t": "Longitud del dart del polvo",
+      "d": "Controla cómo se acerca el polvo al punto de busto"
+    },
+    "contour": {
+      "t": "Contorno",
+      "d": "Controla cómo se elimina de nuevo el espacio extra para los senos debajo del cofre"
+    },
+    "frontDarts": {
+      "t": "Dardos delanteros",
+      "d": "Incluya o no las artes frontales"
+    },
+    "frontDartLength": {
+      "t": "Longitud del dart frontal",
+      "d": "Controla cómo se acerca el dardo frontal al punto de polvo"
+    }
+  }
+}

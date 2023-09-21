@@ -1,5 +1,6 @@
 import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
+import { i18n } from '../i18n/index.mjs'
 // Parts
 import { sidepanel } from './sidepanel.mjs'
 import { frontpanel } from './frontpanel.mjs'
@@ -15,4 +16,13 @@ const Hortensia = new Design({
 })
 
 // Named exports
-export { sidepanel, frontpanel, bottompanel, zipperpanel, sidepanelreinforcement, strap, Hortensia }
+export {
+  sidepanel,
+  frontpanel,
+  bottompanel,
+  zipperpanel,
+  sidepanelreinforcement,
+  strap,
+  Hortensia,
+  i18n,
+}

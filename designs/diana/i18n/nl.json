@@ -1,0 +1,28 @@
+{
+  "t": "Diana top met drapage",
+  "d": "Diana is een top met een gedrapeerde halslijn.",
+  "p": {
+    "back": "Achterzijde",
+    "front": "Voorzijde",
+    "sleeve": "Mouw"
+  },
+  "s": {},
+  "o": {
+    "shoulderSeamLength": {
+      "t": "Lengte schoudernaad",
+      "d": "Bepaalt de lengte van de schoudernaad"
+    },
+    "drapeAngle": {
+      "t": "Drape angle",
+      "d": "Bepaalt het aantal drape"
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at your hips"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at your waist"
+    }
+  }
+}

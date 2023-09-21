@@ -63,7 +63,7 @@ The current production code -- what is running on freesewing.org -- is in the `v
 
 ## Getting started ⚡ 
 
-As this is a monorepo. You'll need [NodeJS v16](https://nodejs.org), [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/) on your system.  
+As this is a monorepo. You'll need [NodeJS v18](https://nodejs.org), [lerna](https://lerna.js.org/) and [yarn](https://yarnpkg.com/) on your system.  
 Once you have those, clone (or fork) this repo and run `yarn kickstart`:
 
 ```bash
@@ -111,12 +111,25 @@ hardship, then you should [join us and become a patron](https://freesewing.org/c
 
 ## Links 👩‍💻
 
- - 💻 Makers website: [freesewing.org](https://freesewing.org)
- - 💻 Developers website: [freesewing.dev](https://freesewing.dev)
- - 💬 Chat: On Discord via [discord.freesewing.org](https://discord.freesewing.org/)
- - ✅ Todo list/Kanban board: On Github via [todo.freesewing.org](https://todo.freesewing.org/)
+**Official channels**
+
+ - 💻 Makers website: [FreeSewing.org](https://freesewing.org)
+ - 💻 Developers website: [FreeSewing.dev](https://freesewing.dev)
+ - ✅ [Support](https://github.com/freesewing/freesewing/issues/new/choose),
+   [Issues](https://github.com/freesewing/freesewing/issues) &
+   [Discussions](https://github.com/freesewing/freesewing/discussions) on
+   [GitHub](https://github.com/freesewing/freesewing)
+
+**Social media**
+
  - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
  - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
+
+**Places the FreeSewing community hangs out**
+
+ - 💬 [Discord](https://discord.freesewing.org/)
+ - 💬 [Facebook](https://www.facebook.com/groups/627769821272714/)
+ - 💬 [Reddit](https://www.reddit.com/r/freesewing/)
 
 ## License: MIT 🤓
 
@@ -125,8 +138,8 @@ See [the license file](https://github.com/freesewing/freesewing/blob/develop/LIC
 
 ## Where to get help 🤯
 
-Our [chatrooms on Discord](https://discord.freesewing.org/) are the best place to ask questions,
-share your feedback, or just hang out.
-
-If you want to report a problem, please [create an issue](https://github.com/freesewing/freesewing/issues/new).
+For [Support](https://github.com/freesewing/freesewing/issues/new/choose),
+please use the [Issues](https://github.com/freesewing/freesewing/issues) &
+[Discussions](https://github.com/freesewing/freesewing/discussions) on
+[GitHub](https://github.com/freesewing/freesewing).
 

@@ -1,15 +1,15 @@
 ---
-title: The right to restrict processing
+title: Право на обмеження обробки даних
 order: 50
 ---
 
-You have the right to request a restriction on the processing of your personal data.
+Ви маєте право вимагати обмеження обробки ваших персональних даних.
 
 Go to [/account/actions/restrict][1] to request we restrict processing of your personal data.
 
 <Warning>
 
-Your request will be granted immediately, and can only be undone by [contacting us][2] to lift the restriction.
+Ваш запит буде задоволено негайно, і його можна буде скасувати, лише звернувшись до нас за адресою[2] , щоб зняти обмеження.
 
 </Warning>
 [1]: /account/actions/restrict/

@@ -8,4 +8,4 @@ const triggerFolders = [
   '../../packages/core',
 ].join(' ')
 
-shouldSkipBuild('Lab', triggerFolders)
+shouldSkipBuild('lab', triggerFolders)

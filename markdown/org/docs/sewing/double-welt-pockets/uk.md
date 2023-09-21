@@ -1,225 +1,225 @@
 ---
-title: Double welt pockets
+title: Кишеня з подвійною листочкою
 ---
 
-## Video
+## Відео
 
 <YouTube id='PL1gv5yv3DoZOFSXz7yydeV1H8m6pfwstn' playlist />
 
-## Learn welts with David Page Coffin
+## Вчимося шити листочки з Девідом Пейджем Коффіном
 
-The November 2015 edition of [Seamwork Magazine](https://www.seamwork.com/) has a section called [Conquering the Welt](https://www.seamwork.com/issues/2015/11/conquering-the-welt) where David Page Coffin walks you through the construction of welt pockets.
+У листопадовому випуску журналу ["Seamwork"](https://www.seamwork.com/) 2015 року є стаття ["Долаємо листочку"](https://www.seamwork.com/issues/2015/11/conquering-the-welt) ("Conquering the Welt", стаття англійською), в якій Девід Пейдж Коффін розповідає про конструювання кишень з листочками.
 
-David has written various books on trouser and shirt construction, teaches online sewing classes, and hosts workshops throughout the US, and abroad.
+Девід написав декілька книг про конструювання штанів та сорочок, викладає шиття онлайн та проводить майстеркласи у США та закордоном.
 
-David is a friend of the site, and by all measures much better at explaining this than I am.
+Девід є другом цього вебсайту та загалом пояснює цю тему набагато краще, аніж я. *Примітка перекладача: журнал "Бурда" також має статтю ["Кишеня з листочкою: шиємо крок за кроком"](https://burdastyle.ua/encyclopedia/anatomiya-modeli/tehnologiya-shyttya/kyshenya-z-lystochkoyu-shyyemo-krok-za-krokom).
 
-## Before you start
+## Перш ніж почати
 
-### What you need
+### Що Вам потрібно
 
-To make double welt pockets, you will need:
+Для виготовлення кишень з подвійною листочкою знадобляться наступні речі:
 
-- Basic sewing supplies
-- The fabric or pattern piece you want to make the pocket in
-- Two fabric strips for the welts
-- A strip of interfacing
-- Lining or other suitable fabric for the pocket bag (See fabric and colour options)
-- Facing for the pocket bag, depending on your fabric and colour options
+- Базові матеріали для шиття
+- Тканина або деталь викрійки, на якій Ви хочете зробити кишеню
+- Дві смужки тканини для листочки
+- Смужка клейового матеріалу (як флізеліну чи дублерину)
+- Підкладка чи інша гідна тканина для мішковини кишені (див. вибір тканини та кольору)
+- Облицювання для мішковини кишені, залежно від Вашої тканини та кольору
 
-### Parameters
+### Виміри
 
-Two values determine the size of your double welt pocket. They are:
+Два виміри визначають розмір кишені з подвійною листочкою. А саме:
 
-- The pocket width: This is the width of the opening of the finalized double welt pocket
-- The welt height: This is the height of a single welt, and this half of the height of our double welt pocket
+- Ширина кишені: це ширина отвору готової кишені з подвійною листочкою
+- Висота листочки: це висота одинарної листочки, тобто це половина висоти нашої кишені з подвійною листочкою
 
-> In the example below, I use a pocket width of 13cm and a welt height of 0.5cm
+> У моєму прикладі нижче ширина кишені — 13 см, висота листочки — 5 мм
 
-## Cutting
+## Крій
 
-### Pocket welts
+### Листочка
 
-The welts are two rectangular strips of fabric with the following measurements:
+Листочки — це дві прямокутні смужки таких розмірів:
 
-- Length: Pocket width + 4cm
-- Width: Welt height x2 + 5cm
+- Довжина: ширина кишені + 4 см
+- Ширина: висота листочки ×2 + 5 см
 
-For our example:
+В нашому випадку це:
 
-- Length: 13cm + 4cm = 17cm
-- Width: (0.5cm x 2) + 5cm = 6cm
+- Довжина: 13 см + 4 см = 17 см
+- Ширина: (5 мм × 2) + 5 см = 6 см
 
-They will form the two narrow strips of fabric that form your double welt pocket.
+Ці дві вузькі смужки тканини й сформують нашу подвійну листочку.
 
-> Make sure to respect the grainline when cutting the two welts
+> Зверніть увагу на структуру ниток тканини під час крою листочки
 
-### Pocket interfacing
+### Дублеринова деталь кишені
 
-The pocket interfacing is a single rectangular strip of fusible interfacing with the following measurements:
+Це одна смужка клейового матеріалу з такими вимірами:
 
-- Length: Pocket width + 4cm
-- Width: Welt height x2 + 5cm
+- Довжина: ширина кишені + 4 см
+- Ширина: висота листочки ×2 + 5 см
 
-For our example:
+В нашому випадку це:
 
-- Length: 13cm + 4cm = 17cm
-- Width: (0.5cm x 2) + 5cm = 6cm
+- Довжина: 13 см + 4 см = 17 см
+- Ширина: (5 мм × 2) + 5 см = 6 см
 
-> You may have noticed that the interfacing is the same size as a welt
+> Як Ви могли помітити, дублеринова деталь має такі ж заміри, як і сама листочка
 
-The interfacing is used to stabilize the pocket, and will be fused to the fabric with your iron.
+Клейовий матеріал використовується для стабілізації кишені та прикріплюється до тканини за допомогою праски.
 
-### Optional: Pocket facing
+### За бажанням: облицювання кишені
 
-The (optional) pocket facing is a single rectangular strip of fabric with the following measurements:
+(Необов'язкове) облицювання кишені — це одна прямокутна смужка такого розміру:
 
-- Length: Pocket width + 4cm
-- Width: Welt height x2 + 5cm
+- Довжина: ширина кишені + 4 см
+- Ширина: висота листочки ×2 + 5 см
 
-For our example:
+В нашому випадку це:
 
-- Length: 13cm + 4cm = 17cm
-- Width: (0.5cm x 2) + 5cm = 6cm
+- Довжина: 13 см + 4 см = 17 см
+- Ширина: (5 мм × 2) + 5 см = 6 см
 
-> You may have noticed that the facing is the same size as a welt
+> Як Ви могли помітити, облицювання має такі ж заміри, як і листочка
 
-The facing is what you'll see when you peer through the opening of your pocket.
+Облицювання — це те, що Ви побачите, коли зазирнете в отвір кишені.
 
-The facing is optional, if you do not use it, peering through the pocket will reveal whatever material the pocket bag is made from.
+Облицювання є необов'язковим, без нього Ви лишень побачите тканину, з якої зроблена мішковина кишені.
 
-### Pocket bag
+### Мішковина кишені
 
-The shape of the pocket bag depends on the pattern. For simplicity, I will use a rectangular pocket bag with rounded corners at the bottom as you may find on the back pockets of trousers.
+Форма мішковини кишені залежить від викрійки. Для наочності я використовуватиму прямокутну мішковину з заокругленими краями, як на задніх кишенях багатьох штанів.
 
-> There is typically a longer and shorter version of the pocket bag. This is because one side is attached to the top welt, while the other is attached to the bottom welt.
+> Зазвичай одна зі сторін мішковини довша, а інша — коротша. Це тому, що одна і сторін прикріплюється до верхньої частини листочки, а інша відповідно до нижньої.
 
-## Construction
+## Пошив
 
-### Step 1: Fuse interfacing in place
+### Крок 1: Закріпіть клейовий матеріал
 
-![Fuse interfacing in place](step01.png)
+![Закріплений клейовий матеріал](step01.png)
 
-Fuse the pocket interfacing to the bad side of your garment, so that it covers the place where you will make the welt pocket.
+Припрасуйте клейовий матеріал до виворітного боку вбрання на місці, де Ви плануєте робити кишеню з листочкою.
 
-> Patterns typically have notches that help you determine the placement of a welt pocket
+> Викрійки зазвичай мають особливі позначки, які вказують на місце розташування кишені
 
-### Step 2: Mark the welt pocket on the good side of the fabric
+### Крок 2: Розмітьте прорізну кишеню на лицьовому боці тканини
 
-![Mark the welt pocket on the good side of the fabric](step02.png)
+![Розмітьте прорізну кишеню на лицьовому боці тканини](step02.png)
 
-Mark the welt pocket as follows:
+Розмітьте прорізну кишеню наступним чином:
 
-- Mark the pocket width with the vertical lines. Let these lines extend to help you align the welts later
-- Align the center opening of the pocket with a horizontal line. Let it extend to help you align the welts later
-- Mark two horizontal lines parallel to the center line, at an offset equal to the welt height (0.5cm in our example)
+- Відзначте ширину кишені вертикальними лініями. Продовжіть ці лінії, вони згодом допоможуть Вам вирівняти листочку
+- Вирівняйте центральний отвір кишені за горизонтальною лінією. Продовжіть цю лінію, щоб згодом вирівняти листочку
+- Проведіть дві горизонтальні лінії, паралельні до центральної, на відстані висоти листочки (5 мм у нашому випадку)
 
-The part of the horizontal lines parallel to the center line that fall in between the verticle lines is where we'll sew our welts in place. This is illustrated by the red lines.
+Частина горизонтальних ліній, паралельних до центральної, що знаходяться між вертикальними, — це місце, де лягатимуть наші шви. На рисунку вони зображені червоним кольором.
 
-### Step 3: Fold and press the welts
+### Крок 3: Складіть і пропрасуйте листочку
 
-![Fold and press the welts](step03.png)
+![Складіть та пропрасуйте листочки](step03.png)
 
-Fold the welts parallel with the long side, with the good side out.
+Складіть листочку за довжиною лицьовим боком назовні.
 
-Don't fold them in half. Instead make one side 1cm longer than the other.
+Не складайте їх навпіл. Замість цього зробіть одну сторону на 1 см довшою за іншу.
 
-Press the fold so that it becomes a sharp crease.
+Пропрасуйте згин, аби він став гострою складкою.
 
-> By offsetting the edges, the welt edge tapers off, which reduces bulk and visibility on the outside of the garment.
+> Завдяки зміщенню країв, край листочки плавно зникає, що робить кишеню менш громіздкою на вбранні.
 
-### Step 4: Sew welts in place
+### Крок 4: Пришийте обидві частини листочки
 
-![Sew welts in place](step04.png)
+![Пришийте листочку](step04.png)
 
-> In the images above, the dashed black line is the center of the welt. The red line shows where to sew, and the green line is a seam that has already been sewn.
+> На зображенні вище чорна пунктирна лінія — це центр листочки. Червона лінія вказує на місце стьобання, а зелена — на вже зшитий шов.
 
-Place the welt on the good side of your garment with the shorter folded side down, and center it horizontally.
+Розмістіть листочку на лицьовому боці вбрання коротшою стороною донизу та відцентруйте її горизонтально.
 
-Align the folded side with the center of the welt pocket, and now shift it twice the Welt Height (WH) outwards.
+Прикладіть згин листочки до центру кишені та далі зсуньте її вниз на подвійну висоту листочки (WH на рисунку).
 
-In our example with a Welt Height of 0.5cm, the fold of your welt lies 1cm from the welt pocket center.
+У нашому випадку висота листочки 5 мм, тобто згин нашої листочки має лежати на відстані 1 см від центру кишені.
 
-Sew your welt in place 0.5cm (WH) from the fold, or in other words, precisely on the line you marked on your garment.
+Пришийте листочку на відстані 5 мм від згину, тобто на лінії, яку ми відмітили на нашому вбранні раніше.
 
-Make sure to start and stop precisely on the vertical lines that indicate the pocket width.
+Переконайтеся, що Ви почали та закінчили шов на вертикальних лініях, що вказують ширину кишені.
 
-When you're done, sew the second welt in place. Note that this will be a bit more tricky as you'll have to fold back the first welt, and lay part of your second welt over it.
+Закінчивши, пришийте другу частину листочки. Це буде трохи складніше, адже Вам прийдеться відігнути попередню частину та розмістити цю поверх неї.
 
-### Step 5: Cut open your pocket
+### Крок 5: Розріжте кишеню
 
-![Cut open your pocket](step05.png)
+![Розріжте кишеню](step05.png)
 
-> In the image, the red line marks how/where to cut open your pocket, and the green line shows the seams.
+> На зображенні червона лінія вказує на місце розрізу кишені, коли зелені показують шви.
 
-Cut open your welt pocket by cutting along the center horizontal line. Stop short of the vertical lines that mark the sides of the pocket and cut under 45 degrees to the edge of your line of stitching that holds the welts down.
+Проріжте кишеню вздовж центральної горизонтальної лінії. Зупиніться не дорізаючи до вертикальних ліній, що вказують на ширину кишені, та зробіть надсічки під кутом 45° до країв швів листочки.
 
-> Make sure to not cut into your stitches or cut too far. Make it precise.
+> Переконайтеся, що Ви не розрізаєте шви та не розрізаєте занадто глибоко. Зробіть це без похибки.
 
-### Step 6: Flip the welts to the other side and press
+### Крок 6: Просуньте частини листочки всередину та пропрасуйте
 
-![Flip the welts to the other side and press](step06.png)
+![Просуньте листочку на виворітний бік та пропрасуйте її](step06.png)
 
-You have been sewing your welts to the good side of the fabric. Now, we are going to flip them to the back side, through the opening we just cut in the fabric.
+Ви пришили листочку до лицьового боку тканини. Тепер ми маємо просунути її всередину через отвір, який ми щойно прорізали в тканині.
 
-Flip the welts to the back, and press them flat. Take your time to work the fabric into a neat rectangle before you press it down.
+Отже, просуньте обидві частини листочки всередину та пропрасуйте їх плазом. Складіть тканину в акуратні прямокутники перш ніж припрасувати її, не поспішайте.
 
-> Make sure to press the triangular pieces of fabric (at the short edge of your opening) to the side
+> Переконайтеся, що витичні трикутні шматочки тканини притиснуті по боках
 
-> You're pressing several layers of fabric. Consider pressing down (or open) the layers individually before pressing them together. This will give a sharper crease, and a neater welt pocket.
+> Ви притискаєте кілька шарів тканини. Зауважте, що Ви можете працювати з кожним шаром тканини окремо, аніж прасувати їх одночасно. Так Ви отримаєте чіткішу складку та охайнішу прорізну кишеню.
 
-### Step 7: Sew the pocket opening sides to the welts
+### Крок 7: Пришийте бокові трикутнички до листочки
 
-![Sew the pocket opening side to the welt on one side](step07a.png) ![And repeat on the other side](step07b.png)
+![Пришийте витичний трикутник до листочки з одного боку](step07a.png) ![І повторіть з іншого боку](step07b.png)
 
-Put your garment down with the good side up, and fold it back on the side of your welt pocket, making sure to keep your welts lying flat.
+Покладіть вбрання лицьовим боком догори й складіть його збоку так, аби обидві частини листочки та витичні трикутники лежали плазом на поверхні стола.
 
-Sew the triangular piece of fabric from the pocket opening to the welts.
+Пришийте трикутнички до листочки.
 
-> Make sure that you do not sew into the pocket opening, as this will show the stitches on the front
+> Переконайтеся, що Ви не шиєте крізь отвір кишені, адже подібні стібки будуть видними з лицьового боку
 
-### Step 8: Sew the bottom pocket bag to the bottom welt
+### Крок 8: Пришийте коротшу частину мішковини до нижньої частини листочки
 
-![Sew the bottom pocket bag to the botom welt](step08.png)
+![Пришийте коротшу частину мішковини до нижньої частини листочки](step08.png)
 
-Fold your garment out of the way so you can sew the pocket bag to the lower welt.
+Складіть вбрання так, аби Ви могли легко пришити коротшу частину мішковини до нижньої частини листочки.
 
-Also finish the edge of the welt with a zig-zag stitch so the welt stays flat inside the pocket.
+Також обробіть край листочки зиґзаґоподібним стібком, аби листочка залишалася плазом всередині кишені.
 
-> The pocket bag is show in lining fabric here (green) far clarity. You can also make your pocket bags from other fabric.
+> Мішковина кишені зображена на рисунку зеленим для наочності. Для мішковини можна також використовувати інші тканини.
 
-### Step 9: Optional: Sew facing to top pocket bag
+### Крок 9 (необов'язковий): Пришийте облицювання до довшої частини мішковини
 
-![Sew the facing to the top pocket bag](step09.png)
+![Пришийте облицювання до довшої частини мішковини](step09.png)
 
-> This step is optional. Attach facing to the top pocket bag if that is want you want to show through the pocket opening.
+> Цей крок не є обов'язковим. Пришийте облицювання до довшої частини мішковини, якщо Ви хочете його бачити через отвір кишені.
 
-### Step 10: Sew the top pocket bag to the top welt
+### Крок 10: Пришийте довшу частину мішковини до верхньої частини листочки
 
-![Sew the top pocket bag to the top welt](step10.png)
+![Пришийте довшу частину мішковини до верхньої частини листочки](step10.png)
 
-Fold your garment out the way so you can sew the pocket bag to the top welt.
+Складіть вбрання так, аби Ви могли легко пришити довшу частину мішковини до верхньої частини листочки.
 
-> If you applied facing to your pocket bag, make sure to place it with the facing towards the welts.
+> Якщо Ви пришили облицювання до мішковини — запевніться, що сторона з облицюванням лежить до отвору кишені.
 
-### Step 11: Attach the welts to the pocket bag
+### Крок 11: Пришийте листочку до мішковини
 
-![Sew one side](step11a.png) ![Sew the other side](step11b.png) ![And sew the top](step11c.png)
+![Простьобайте один бік](step11a.png) ![Простьобайте інший бік](step11b.png) ![Та простьобайте вершечок](step11c.png)
 
-Place your garment with the good side up, and fold it back at the side of the welt pocket.
+Покладіть своє вбрання лицьовим боком вгору та складіть його збоку так, щоб мішковина та листочка лежали плазом.
 
-Sew the triangular piece of fabric from the pocket opening to the pocket bags, much like you've sewn it to the welts earlier.
+Пришийте бокові трикутнички до мішковини — так самісінько, як Ви вже пришивали їх до листочки.
 
-Fold back your garment at the top of the welt pocket.
+Складіть одяг так, щоб Ви бачили верхню частину листочки.
 
-Now, sew the top of the pocket opening to the pocket bag.
+Тепер пришийте верх листочки до мішковини кишені.
 
-### Step 12: Finish the pocket bag
+### Крок 12: Закінчіть мішковину
 
-![Now finish the pocket bag](step12.png)
+![Тепер завершіть мішковину](step12.png)
 
-Now finish the pocket back by closing all the edges (the top edge is optional).
+Час завершити мішковину, закривши всі краї (верхній край є необов'язковим).
 
-To do so, you can apply bias tape, use a serger, or sew some other finishing stitch.
+Для цього можна застосувати косу бійку, оверлок-машину чи інший крайовий шов.
 
-After that, you're done!
+Тепер Ваша кишеня готова!

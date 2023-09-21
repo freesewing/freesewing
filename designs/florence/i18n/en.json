@@ -1,0 +1,22 @@
+{
+  "t": "Florence face mask",
+  "d": "Florence is a face mask.",
+  "p": {
+    "mask": "Mask"
+  },
+  "s": {},
+  "o": {
+    "height": {
+      "t": "Height",
+      "d": "Controls the height of the face mask"
+    },
+    "length": {
+      "t": "Length",
+      "d": "Controls the length of the face mask"
+    },
+    "curve": {
+      "t": "Curve",
+      "d": "Controls the curvature of the upper edge of the face mask"
+    }
+  }
+}

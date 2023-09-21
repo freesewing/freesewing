@@ -5,6 +5,7 @@ import { dimensions } from './shared.mjs'
 export const front = {
   from: base,
   name: 'aaron.front',
+  measurements: ['hips'],
   options: {
     brianFitCollar: false,
     brianFitSleeve: false,
@@ -38,8 +39,6 @@ export const front = {
     snippets,
     options,
     measurements,
-    complete,
-    paperless,
     macro,
     part,
   }) => {
@@ -127,6 +126,34 @@ export const front = {
       .close()
       .attr('class', 'fabric')
 
+    // Seam allowance
+    if (sa) {
+      let saShoulder = new Path().move(points.strapRight).line(points.strapLeft).offset(sa)
+      paths.saShoulder = new Path()
+        .move(points.strapRight)
+        .line(saShoulder.start())
+        .join(saShoulder)
+        .line(points.strapLeft)
+        .attr('class', 'fabric sa')
+      paths.sa = new Path()
+        .move(points.cfHem)
+        .line(points.cfHem)
+        .join(
+          new Path()
+            .move(points.cfHem)
+            .line(points.hem)
+            .offset(sa * 2.5)
+        )
+        .join(
+          new Path()
+            .move(points.hem)
+            .curve_(points.waist, points.armhole)
+            .offset(sa)
+            .line(points.armhole)
+        )
+        .attr('class', 'fabric sa')
+    }
+
     // Store length of armhole and neck opening
     store.set(
       'frontArmholeLength',
@@ -143,55 +170,38 @@ export const front = {
         .length()
     )
 
-    // Complete pattern?
-    if (complete) {
-      macro('cutonfold', {
-        from: points.cfNeck,
-        to: points.cfHem,
-        grainline: true,
-      })
-      points.title = new Point(points.waist.x / 2, points.waist.y)
-      macro('title', { at: points.title, nr: 1, title: 'front' })
-      points.logo = points.title.shift(-90, 75)
-      snippets.logo = new Snippet('logo', points.logo)
+    /*
+     * Annotations
+     */
 
-      if (sa) {
-        let saShoulder = new Path().move(points.strapRight).line(points.strapLeft).offset(sa)
-        paths.saShoulder = new Path()
-          .move(points.strapRight)
-          .line(saShoulder.start())
-          .join(saShoulder)
-          .line(points.strapLeft)
-          .attr('class', 'fabric sa')
-        paths.sa = new Path()
-          .move(points.cfHem)
-          .line(points.cfHem)
-          .join(
-            new Path()
-              .move(points.cfHem)
-              .line(points.hem)
-              .offset(sa * 2.5)
-          )
-          .join(
-            new Path()
-              .move(points.hem)
-              .curve_(points.waist, points.armhole)
-              .offset(sa)
-              .line(points.armhole)
-          )
-          .attr('class', 'fabric sa')
-      }
-    }
+    // Set anchor point for grid
+    points.gridAnchor = points.cfHem
 
-    // Paperless?
-    if (paperless) {
-      dimensions(macro, points, sa)
-      macro('vd', {
-        from: points.cfHem,
-        to: points.cfNeck,
-        x: points.cfHem.x - sa - 15,
-      })
-    }
+    // Provide cutting instructions
+    store.cutlist.addCut({ cut: 1, from: 'fabric', onFold: 1 })
+
+    // Add title
+    points.title = new Point(points.waist.x / 2, points.waist.y)
+    macro('title', { at: points.title, nr: 1, title: 'front' })
+
+    // Cut on fold
+    macro('cutonfold', {
+      from: points.cfNeck,
+      to: points.cfHem,
+      grainline: true,
+    })
+
+    // Logo
+    points.logo = points.title.shift(-90, 75)
+    snippets.logo = new Snippet('logo', points.logo)
+
+    // Dimensions
+    dimensions(macro, points, sa)
+    macro('vd', {
+      from: points.cfHem,
+      to: points.cfNeck,
+      x: points.cfHem.x - sa - 15,
+    })
 
     return part
   },

@@ -1,4 +1,4 @@
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 import { Lightbox } from 'shared/components/lightbox.mjs'
 import { ImageWrapper } from 'shared/components/wrappers/img.mjs'
 

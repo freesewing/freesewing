@@ -1,10 +1,10 @@
 ---
-title: The right to data portability
+title: Право на перенесення даних
 order: 60
 ---
 
-You have the right to obtain and reuse your personal data for your own purposes or across different services.
+Ви маєте право отримувати та повторно використовувати свої персональні дані для власних цілей або в різних сервісах.
 
-Go to [/account/actions/export][1] to export your data.
+Перейдіть за посиланням [/account/actions/export][1] , щоб експортувати свої дані.
 
 [1]: /account/actions/export/

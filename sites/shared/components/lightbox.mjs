@@ -26,8 +26,8 @@ export const Lightbox = ({ children }) => {
     )
 
   return (
-    <div onClick={() => setBox(!box)} className="hover:cursor-zoom-in">
+    <button onClick={() => setBox(!box)} className="hover:cursor-zoom-in">
       {children}
-    </div>
+    </button>
   )
 }

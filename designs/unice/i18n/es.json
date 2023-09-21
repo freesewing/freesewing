@@ -1,0 +1,29 @@
+{
+  "t": "Unice undies",
+  "d": "Unice is a variant of Ursula; A basic, highly-customizable underwear pattern.",
+  "p": {
+    "back": "Atrás",
+    "elastic": "Elastic",
+    "front": "Frente",
+    "gusset": "Gusset"
+  },
+  "s": {},
+  "o": {
+    "fabricStretchX": {
+      "t": "Elasticidad de la tela (horizontal)",
+      "d": "Ajusta esto para telas más o menos elásticas"
+    },
+    "fabricStretchY": {
+      "t": "Elasticidad de la tela (vertical)",
+      "d": "Ajusta esto para telas más o menos elásticas"
+    },
+    "adjustStretch": {
+      "t": "Ajuste por elasticidad",
+      "d": "En esta opción puedes poner la elasticidad total del tejido tanto en horizontal como en vertical. Cuando se deshabilita, los valores de elasticidad se usan tal cual"
+    },
+    "useCrossSeam": {
+      "t": "Usa el tiro completo",
+      "d": "Cuando se habilita, la altura total de las piezas del patrón combinadas será la misma que la medida del tiro completo menos las elevaciones frontales y traseras. Cuando se deshabilita, la altura total dependerá de la opción del molde medio o pieza de refuerzo."
+    }
+  }
+}

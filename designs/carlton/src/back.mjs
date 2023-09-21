@@ -1,10 +1,8 @@
 import { back as bentBack } from '@freesewing/bent'
 import { calculateRatios } from './shared.mjs'
 import { hidePresets } from '@freesewing/core'
-import { pluginAnnotations } from '@freesewing/plugin-annotations'
 
 function draftCarltonBack({
-  paperless,
   sa,
   snippets,
   Snippet,
@@ -19,7 +17,6 @@ function draftCarltonBack({
   Path,
   part,
 }) {
-  macro('cutonfold', false)
   calculateRatios(part)
   // Belt width
   let bw = measurements.hpsToWaistBack * options.beltWidth
@@ -52,13 +49,26 @@ function draftCarltonBack({
   store.set('dartToSide', points.dartRight.dx(points.waist))
 
   // Back stay (bs)
+  points.bpEnd = new Path()
+    .move(points.armhole)
+    ._curve(points.waistCp2, points.waist)
+    .shiftFractionAlong(0.1)
   points.bsCp1 = points.bpStart.shiftFractionTowards(points.armholePitch, 0.5)
-  points.bsCp2 = points.armhole.shiftFractionTowards(points.cbArmhole, 0.3)
+  points.bsCp2 = points.bpEnd.shiftFractionTowards(points.cbArmhole, 0.3)
 
   // Store collar length
   store.set(
     'backCollarLength',
     new Path().move(points.cbNeck)._curve(points.neckCp2, points.neck).length()
+  )
+
+  // Store distance to armhole pitch point notch
+  store.set(
+    'backArmholePitchToShoulder',
+    new Path()
+      .move(points.armholePitch)
+      .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder)
+      .length()
   )
 
   // Clean up
@@ -87,154 +97,184 @@ function draftCarltonBack({
     .join(paths.backCollar)
   paths.seam = paths.seam1.join(paths.dart).join(paths.seam2).close().attr('class', 'fabric')
 
-  paths.backStay = new Path()
-    .move(points.bpStart)
-    .curve(points.bsCp1, points.bsCp2, points.armhole)
-    .attr('class', 'canvas lashed')
-
-  paths.triangle = new Path()
-    .move(points.bpTriangleTip)
-    .line(points.bpTriangleEdge)
-    .line(points.bpStart)
-    .attr('class', 'dashed')
-
-  store.cutlist.addCut()
-  store.cutlist.addCut({ material: 'lining' })
+  if (sa)
+    paths.sa = paths.seam1
+      .line(points.waist)
+      .offset(sa)
+      .join(paths.seam2.offset(sa))
+      .close()
+      .trim()
+      .close()
+      .addClass('fabric sa')
 
   if (complete) {
-    macro('title', {
-      at: points.title,
-      nr: '2',
-      title: 'back',
-    })
+    paths.backStay = new Path()
+      .move(points.bpStart)
+      .curve(points.bsCp1, points.bsCp2, points.bpEnd)
+      .addClass('canvas help')
 
-    macro('sprinkle', {
-      snippet: 'bnotch',
-      on: ['shoulder', 'bpTriangleTip'],
-    })
-
-    macro('grainline', {
-      from: points.cbWaist,
-      to: points.bpStart,
-    })
-
-    points.logo = new Point(points.armhole.x * 0.7, points.dartTip.y)
-    snippets.logo = new Snippet('logo', points.logo)
-
-    if (sa) {
-      paths.sa = paths.seam1
-        .line(points.waist)
-        .offset(sa)
-        .join(paths.seam2.offset(sa))
-        .close()
-        .trim()
-        .close()
-        .attr('class', 'fabric sa')
-    }
-
-    if (paperless) {
-      macro('hd', {
-        from: points.bpBottom,
-        to: points.cbWaist,
-        y: points.cbWaist.y + 15 + sa,
-      })
-      macro('hd', {
-        from: points.cbWaist,
-        to: points.dartLeft,
-        y: points.cbWaist.y + 15 + sa,
-      })
-      macro('hd', {
-        from: points.dartLeft,
-        to: points.dartRight,
-        y: points.cbWaist.y + 15 + sa,
-      })
-      macro('hd', {
-        from: points.dartRight,
-        to: points.waist,
-        y: points.cbWaist.y + 15 + sa,
-      })
-      macro('hd', {
-        from: points.cbWaist,
-        to: points.waist,
-        y: points.cbWaist.y + 30 + sa,
-      })
-      macro('hd', {
-        from: points.bpBottom,
-        to: points.waist,
-        y: points.cbWaist.y + 45 + sa,
-      })
-      macro('vd', {
-        from: points.waist,
-        to: points.armhole,
-        x: points.armhole.x + 15 + sa,
-      })
-      macro('vd', {
-        from: points.armhole,
-        to: points.armholePitch,
-        x: points.armhole.x + 15 + sa,
-      })
-      macro('vd', {
-        from: points.armhole,
-        to: points.s3ArmholeSplit,
-        x: points.armhole.x + 30 + sa,
-      })
-      macro('vd', {
-        from: points.waist,
-        to: points.s3ArmholeSplit,
-        x: points.armhole.x + 45 + sa,
-      })
-      macro('vd', {
-        from: points.dartRight,
-        to: points.dartTip,
-        x: points.dartRight.x + 15,
-      })
-      macro('vd', {
-        from: points.bpBottom,
-        to: points.bpTop,
-        x: points.bpTop.x - 15 - sa,
-      })
-      macro('vd', {
-        from: points.bpTop,
-        to: points.cbNeck,
-        x: points.bpTop.x - 15 - sa,
-      })
-      macro('vd', {
-        from: points.bpBottom,
-        to: points.s3CollarSplit,
-        x: points.bpTop.x - 30 - sa,
-      })
-      macro('vd', {
-        from: points.bpStart,
-        to: points.bpTriangleTip,
-        x: points.bpTriangleEdge.x + 15,
-      })
-      macro('hd', {
-        from: points.bpStart,
-        to: points.bpTriangleEdge,
-        y: points.bpTriangleEdge.y + 15,
-      })
-      macro('hd', {
-        from: points.cbNeck,
-        to: points.s3CollarSplit,
-        y: points.s3CollarSplit.y - 15 - sa,
-      })
-      macro('hd', {
-        from: points.cbNeck,
-        to: points.armholePitch,
-        y: points.s3CollarSplit.y - 30 - sa,
-      })
-      macro('hd', {
-        from: points.cbNeck,
-        to: points.shoulder,
-        y: points.s3CollarSplit.y - 45 - sa,
-      })
-      macro('hd', {
-        from: points.cbNeck,
-        to: points.armhole,
-        y: points.s3CollarSplit.y - 60 - sa,
-      })
-    }
+    paths.triangle = new Path()
+      .move(points.bpTriangleTip)
+      .line(points.bpTriangleEdge)
+      .line(points.bpStart)
+      .addClass('dashed')
   }
+
+  /*
+   * Annotations
+   */
+
+  // Cut list
+  store.cutlist.removeCut('fabric')
+  store.cutlist.addCut([
+    { cut: 2, from: 'fabric' },
+    { cut: 2, from: 'lining' },
+  ])
+
+  // Title
+  macro('title', {
+    at: points.title,
+    nr: '2',
+    title: 'back',
+  })
+
+  // Notches
+  macro('sprinkle', {
+    snippet: 'bnotch',
+    on: ['shoulder', 'bpTriangleTip', 'backArmholePitch'],
+  })
+
+  // Grainline
+  macro('grainline', {
+    from: points.cbWaist,
+    to: points.bpStart,
+  })
+
+  // Logo
+  points.logo = new Point(points.armhole.x * 0.7, points.dartTip.y)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  // Dimensions
+  macro('hd', {
+    id: 'wFold',
+    from: points.bpBottom,
+    to: points.bpStart,
+    y: points.bpBottom.y + 15 + sa,
+  })
+  macro('hd', {
+    id: 'wCbWaistToWaistDartInner',
+    from: points.cbWaist,
+    to: points.dartLeft,
+    y: points.cbWaist.y + 15 + sa,
+  })
+  macro('hd', {
+    id: 'wWaistDart',
+    from: points.dartLeft,
+    to: points.dartRight,
+    y: points.cbWaist.y + 15 + sa,
+  })
+  macro('hd', {
+    id: 'wWaistDartOuterToWaistSide',
+    from: points.dartRight,
+    to: points.waist,
+    y: points.cbWaist.y + 15 + sa,
+  })
+  macro('hd', {
+    id: 'hTriangle',
+    from: points.cbWaist,
+    to: points.waist,
+    y: points.cbWaist.y + 30 + sa,
+  })
+  macro('hd', {
+    id: 'wWaist',
+    from: points.bpBottom,
+    to: points.waist,
+    y: points.cbWaist.y + 45 + sa,
+  })
+  macro('vd', {
+    id: 'hWaistToArmhole',
+    from: points.waist,
+    to: points.armhole,
+    x: points.armhole.x + 15 + sa,
+  })
+  macro('vd', {
+    id: 'hArmholeToArmpit',
+    from: points.armhole,
+    to: points.armholePitch,
+    x: points.armhole.x + 15 + sa,
+  })
+  macro('vd', {
+    id: 'hArmpitToShoulder',
+    from: points.armhole,
+    to: points.s3ArmholeSplit,
+    x: points.armhole.x + 30 + sa,
+  })
+  macro('vd', {
+    id: 'hWaistToShoulder',
+    from: points.waist,
+    to: points.s3ArmholeSplit,
+    x: points.armhole.x + 45 + sa,
+  })
+  macro('vd', {
+    id: 'hDart',
+    from: points.dartRight,
+    to: points.dartTip,
+    x: points.dartRight.x + 15,
+  })
+  macro('vd', {
+    id: 'hWaistToFoldTop',
+    from: points.bpBottom,
+    to: points.bpTop,
+    x: points.bpTop.x - 15 - sa,
+  })
+  macro('vd', {
+    id: 'hFoldTopToNeckOpening',
+    from: points.bpTop,
+    to: points.cbNeck,
+    x: points.bpTop.x - 15 - sa,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.bpBottom,
+    to: points.s3CollarSplit,
+    x: points.bpTop.x - 30 - sa,
+  })
+  macro('vd', {
+    id: 'hTriangle',
+    from: points.bpStart,
+    to: points.bpTriangleTip,
+    x: points.bpTriangleEdge.x + 15,
+  })
+  macro('hd', {
+    id: 'wTriangle',
+    from: points.bpStart,
+    to: points.bpTriangleEdge,
+    y: points.bpTriangleEdge.y + 15,
+  })
+  macro('hd', {
+    id: 'wNeckOpening',
+    from: points.cbNeck,
+    to: points.s3CollarSplit,
+    y: points.s3CollarSplit.y - 15 - sa,
+  })
+  macro('hd', {
+    id: 'wCbToArmholePitch',
+    from: points.cbNeck,
+    to: points.armholePitch,
+    y: points.s3CollarSplit.y - 30 - sa,
+  })
+  macro('hd', {
+    id: 'wCbToShoulder',
+    from: points.cbNeck,
+    to: points.shoulder,
+    y: points.s3CollarSplit.y - 45 - sa,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.cbNeck,
+    to: points.armhole,
+    y: points.s3CollarSplit.y - 60 - sa,
+  })
 
   return part
 }
@@ -250,6 +290,5 @@ export const back = {
     waistEase: { pct: 14, min: 8, max: 25, menu: 'fit' },
     seatEase: { pct: 14, min: 8, max: 25, menu: 'fit' },
   },
-  plugins: [pluginAnnotations],
   draft: draftCarltonBack,
 }

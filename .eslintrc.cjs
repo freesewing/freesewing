@@ -20,12 +20,14 @@ const frontendFiles = [
   `**/pages/**/*.${jsSuffixes}`,
   `**/page-templates/**/*.${jsSuffixes}`,
   `packages/i18n/**/*.md/*.${jsSuffixes}`,
+  `packages/react-components/**/*.${jsSuffixes}`,
 ]
 
 module.exports = {
   extends: 'eslint:recommended',
   env: {
     es2021: true,
+    node: true,
   },
   // Required when using experimental EcmaScript features
   parser: '@babel/eslint-parser',
@@ -36,6 +38,7 @@ module.exports = {
     requireConfigFile: false,
     babelOptions: {
       plugins: ['@babel/plugin-syntax-import-assertions'],
+      presets: ['@babel/preset-react'],
     },
   },
   rules: {},
@@ -60,10 +63,11 @@ module.exports = {
     {
       files: frontendFiles,
       excludedFiles: nodeFiles,
-      extends: ['next/core-web-vitals'],
-      env: {
-        // We can be stricter than 'next/core-web-vitals' is
-        node: false,
+      extends: ['next'],
+      settings: {
+        next: {
+          rootDir: 'sites/dev/',
+        },
       },
     },
     {

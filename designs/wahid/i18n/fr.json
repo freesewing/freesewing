@@ -1,0 +1,73 @@
+{
+  "t": "Gilet Wahid",
+  "d": "Wahid est un gilet classique ajusté.",
+  "p": {
+    "back": "Retour",
+    "front": "Avant",
+    "frontFacing": "Doublure avant",
+    "frontLining": "Doublure avant",
+    "pocketBag": "Sac de poche",
+    "pocketFacing": "Parement de poche",
+    "pocketInterfacing": "Entoilage de poche",
+    "pocketWelt": "Rabat de poche"
+  },
+  "s": {},
+  "o": {
+    "backScyeDart": {
+      "t": "Pince de carrure",
+      "d": "La valeur à retirer dans une pince de carrure (à l'emmanchure arrière)."
+    },
+    "frontScyeDart": {
+      "t": "Pince d'emmanchure",
+      "d": "La quantité à retirer de la pince à l'avant de l'emmanchure."
+    },
+    "pocketLocation": {
+      "t": "Emplacement de poche",
+      "d": "Détermine l'emplacement de la poche"
+    },
+    "pocketWidth": {
+      "t": "Largeur de poche",
+      "d": "Détermine la largeur de la poche"
+    },
+    "weltHeight": {
+      "t": "Hauteur du revers de poche",
+      "d": "Détermine la hauteur du revers de poche"
+    },
+    "necklineDrop": {
+      "t": "Décolleté",
+      "d": "Détermine la profondeur d'encolure sur le devant"
+    },
+    "frontStyle": {
+      "t": "Style d'encolure",
+      "d": "Style de l'encolure"
+    },
+    "hemStyle": {
+      "t": "Type d'ourlet",
+      "d": "Style de l'ourlet avant"
+    },
+    "hemRadius": {
+      "t": "Arrondi d'ourlet",
+      "d": "Rayon avec lequel l'ourlet est arrondi"
+    },
+    "backInset": {
+      "t": "Échancrure emmanchure arrière",
+      "d": "A quel point l'arrière de l'emmanchure est coupée vers l'intérieur"
+    },
+    "frontInset": {
+      "t": "Échancrure emmanchure avant",
+      "d": "A quel point l'avant de l'emmanchure est coupée vers l'intérieur"
+    },
+    "shoulderInset": {
+      "t": "Réduction d'épaule",
+      "d": "A quel point la couture d'épaule est éloignée des épaules"
+    },
+    "neckInset": {
+      "t": "Échancrure cou",
+      "d": "A quel point la couture d'épaule est éloignée du cou"
+    },
+    "pocketAngle": {
+      "t": "Angle de poche",
+      "d": "Angle de l'ouverture de poche"
+    }
+  }
+}

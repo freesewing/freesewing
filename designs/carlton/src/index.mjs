@@ -1,8 +1,13 @@
-import { Design } from '@freesewing/core'
+import { Design, mergeI18n } from '@freesewing/core'
 import { data } from '../data.mjs'
+import { i18n as brianI18n, Brian, sleevecap as brianSleevecap } from '@freesewing/brian'
+import { i18n as carltonI18n } from '../i18n/index.mjs'
 // Parts
 import { front } from './front.mjs'
+import { frontFacing } from './front-facing.mjs'
+import { frontLining } from './front-lining.mjs'
 import { back } from './back.mjs'
+import { backStay } from './back-stay.mjs'
 import { tail } from './tail.mjs'
 import { topSleeve } from './topsleeve.mjs'
 import { underSleeve } from './undersleeve.mjs'
@@ -24,7 +29,10 @@ const Carlton = new Design({
   data,
   parts: [
     front,
+    frontFacing,
+    frontLining,
     back,
+    backStay,
     tail,
     topSleeve,
     underSleeve,
@@ -43,10 +51,28 @@ const Carlton = new Design({
   ],
 })
 
+// Merge translations
+const i18n = mergeI18n([brianI18n, carltonI18n], {
+  o: {
+    keep: [
+      ...Object.keys(Brian.patternConfig.options),
+      ...Object.keys(Carlton.patternConfig.options),
+      'legacyArmholeDepthNo',
+      'legacyArmholeDepthYes',
+      'draftForHighBustNo',
+      'draftForHighBustYes',
+    ],
+    drop: Object.keys(brianSleevecap.options).filter((o) => o !== 'sleevecapEase'),
+  },
+})
+
 // Named exports
 export {
   front,
+  frontFacing,
+  frontLining,
   back,
+  backStay,
   tail,
   topSleeve,
   underSleeve,
@@ -63,4 +89,5 @@ export {
   innerPocketBag,
   innerPocketTab,
   Carlton,
+  i18n,
 }

@@ -1,0 +1,34 @@
+{
+  "t": "Tamiko top",
+  "d": "Tamiko is a zero-waste top.",
+  "p": {
+    "top": "Top"
+  },
+  "s": {},
+  "o": {
+    "flare": {
+      "t": "Flare",
+      "d": "The amount by which the garment flares from your chest downwards"
+    },
+    "shoulderseamLength": {
+      "t": "Shoulder seam length",
+      "d": "The length of the shoulder seam, as a factor of your shoulder to shoulder measurement"
+    },
+    "armholeDepthFactor": {
+      "t": "Armhole depth factor",
+      "d": "Controls the depth of your armhole, as a factor of your shoulder to shoulder measurement."
+    },
+    "chestEase": {
+      "t": "Chest ease",
+      "d": "The amount of ease at your chest."
+    },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "How much longer than the default length to make your top."
+    },
+    "draftForHighBust": {
+      "t": "Draft for high bust",
+      "d": "Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts."
+    }
+  }
+}

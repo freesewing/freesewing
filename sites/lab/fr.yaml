@@ -1,0 +1,17 @@
+welcome: Bienvenue dans le laboratoire de FreeSewing
+about: Tu peux y générer des modèles et gérer ton compte. Mais à moins que tu n'aies une raison particulière, nous te conseillons de plutôt utiliser FreeSewing.org.
+goToOrg: Aller à FreeSewing.org
+what: Qu'est-ce que le laboratoire FreeSewing ?
+what1: Le laboratoire FreeSewing a débuté comme une version hébergée en ligne de notre environnement de développement autonome. Il offre des fonctionnalités avancées aux créateurs de patrons et aux contributeurs pour développer et tester des patrons. Des fonctionnalités qui n'étaient pas disponibles sur FreeSewing.org.
+what2: Depuis la version 3 de FreeSewing, toutes ces fonctions avancées sont disponibles pour les utilisateurs sur FreeSewing.org. Cela signifie qu'il n'y a rien ici que tu ne puisses trouver sur FreeSewing.org.
+what3: Le laboratoire est aujourd'hui une version simplifiée de FreeSewing.org. Il n'inclut pas la documentation, les articles de blog ou de vitrine, etc.  Nous le gardons arund parce qu'il est plus rapide à mettre en place/déployer que le site Web entier, tout en offrant toutes les fonctionnalités de base.
+monorepo: Tout le code source de FreeSewing est disponible dans notre monorepo sur GitHub
+labrepo: De plus, cette instance de laboratoire particulière possède un code source supplémentaire hébergé à l'adresse suivante
+lab: Code source spécifique à ce laboratoire
+fscode: "Code source de FreeSewing"
+noDocs: Le laboratoire FreeSewing ne comprend pas de documentation.
+see: Au lieu de cela, réfère-toi à
+orgDocs: FreeSewing.org propose de la documentation pour les créateurs, comme des options de conception, des techniques de couture et des instructions.
+devDocs: FreeSewing.dev possède de la documentation pour les développeurs et les contributeurs, comme les docs de l'API et les guides sur la façon de s'impliquer dans le projet.
+enOnly: FreeSewing.dev n'est disponible qu'en anglais
+

@@ -1,5 +1,4 @@
 import { box } from './shared.mjs'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 
 function legendTextSize({ points, Point, paths, Path, part }) {
   points.xxxs1 = new Point(0, 10)
@@ -106,6 +105,5 @@ function legendTextSize({ points, Point, paths, Path, part }) {
 
 export const textSize = {
   name: 'legend.textSize',
-  plugins: pluginBundle,
   draft: legendTextSize,
 }

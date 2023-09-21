@@ -1,0 +1,95 @@
+{
+  "t": "Noble, ein Grundschnitt",
+  "d": "Noble ist ein Grundschnitt mit einer Englischen oder Wiener Naht",
+  "p": {
+    "backInside": "Back inside",
+    "backOutside": "Back outside",
+    "backPoints": "Back base",
+    "frontInside": "Front inside",
+    "frontOutside": "Front outside",
+    "frontPoints": "Front base"
+  },
+  "s": {},
+  "o": {
+    "dartPosition": {
+      "t": "Position Abnäher",
+      "d": "Steuert, ob an der Schulter oder am Armloch geteilt werden soll"
+    },
+    "chestEase": {
+      "t": "Brustumfangszugabe",
+      "d": "Controls the amount of ease at the chest"
+    },
+    "waistEase": {
+      "t": "Taillenzugabe",
+      "d": "Controls the amount of ease at the waist"
+    },
+    "bustSpanEase": {
+      "t": "Zugabe im Abstand der Brustpunkte",
+      "d": "Controls the amount of ease along the bust span"
+    },
+    "backDartHeight": {
+      "t": "Steuert die Höhe des Rückenabnähers",
+      "d": "Höhe Rückenabnäher"
+    },
+    "waistDartLength": {
+      "t": "Länge des Taillenabnähers",
+      "d": "Steuert die Länge des Taillenabnähers"
+    },
+    "shoulderDartPosition": {
+      "t": "Position der Schulterabnäher",
+      "d": "Steuert die Position der Schulternaht"
+    },
+    "upperDartLength": {
+      "t": "Upper dart length",
+      "d": "Controls the length of the upper dart"
+    },
+    "armholeDartPosition": {
+      "t": "Armhole dart position",
+      "d": "Controls the position of the armhole dart"
+    },
+    "armholeDepth": {
+      "t": "Armlochtiefe",
+      "d": "Steuert die Tiefe des Armloches"
+    },
+    "backArmholeSlant": {
+      "t": "Hintere Armlochschiebung",
+      "d": "Controls the slant of the armhole at the back"
+    },
+    "backArmholeCurvature": {
+      "t": "Hintere Armlochkrümmung",
+      "d": "Controls how deep the armhole is scooped out at the back"
+    },
+    "frontArmholeCurvature": {
+      "t": "Vordere Armlochkrümmung",
+      "d": "Steuert wie tief das Armloch nach vorne unten ausgeschnitten ist"
+    },
+    "frontArmholePitchDepth": {
+      "t": "Vordere Armlochtiefe",
+      "d": "Controls how deep the armhole cuts into the front"
+    },
+    "backArmholePitchDepth": {
+      "t": "Rückenarmloch-Tiefe",
+      "d": "Controls how deep the armhole cuts into the back"
+    },
+    "backNeckCutout": {
+      "t": "Ausschnitt im Nacken",
+      "d": "Controls how deep the neck is cutout in the back"
+    },
+    "backHemSlope": {
+      "t": "Neigung des hinteren Saumes",
+      "d": "Constrols the slope of the back hem"
+    },
+    "frontShoulderWidth": {
+      "t": "Vordere Schulterbreite",
+      "d": "Controls how much width is added to the shoulder in the front"
+    },
+    "highBustWidth": {
+      "t": "Oberbrustweite",
+      "d": "Controls the width of the high bust"
+    },
+    "shoulderToShoulderEase": {
+      "t": "Zugabe des Schulterabstandes",
+      "d": "Steuert die Menge an Zugabe entlang des Schulter-zu-Schulter Maßes"
+    }
+  }
+}

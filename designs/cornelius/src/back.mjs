@@ -273,10 +273,8 @@ function draftCorneliusBack({
       nr: 77,
       at: points.title,
       title: 'Back',
+      align: 'center',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
 
     let angle = points.p11.angle(points.p4)
     let dist = points.p11.dist(points.p4)

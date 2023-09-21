@@ -42,6 +42,8 @@ function draftHortensiaStrap({
     .attr('data-text-class', 'center text-xs')
     .attr('class', 'lining dashed')
 
+  store.cutlist.addCut()
+
   // Complete?
   if (complete) {
     points.title = points.topMiddle.shiftFractionTowards(points.bottomMiddle, 0.25)
@@ -51,10 +53,8 @@ function draftHortensiaStrap({
       title: 'Strap',
       rotation: 90,
       scale: 0.25,
+      align: 'center',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')

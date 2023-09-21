@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { createTeeth } from './teeth.mjs'
 
 function draftHiUpperTeeth({
@@ -59,6 +58,8 @@ function draftHiUpperTeeth({
     part
   )
   //createTeeth(paths.seam, 18 * options.size, 9 * options.size, 15, options.aggressive, paths.teeth)
+
+  store.cutlist.addCut({ cut: 1, material: 'color4Teeth' })
 
   // Complete?
   if (complete) {
@@ -122,6 +123,5 @@ function draftHiUpperTeeth({
 
 export const upperTeeth = {
   name: 'hi.upperTeeth',
-  plugins: [pluginBundle],
   draft: draftHiUpperTeeth,
 }

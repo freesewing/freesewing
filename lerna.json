@@ -10,6 +10,5 @@
       "npmClientArgs": ["--no-package-lock"]
     }
   },
-  "packages": ["designs/*", "packages/*", "plugins/*", "sites/*"],
-  "useWorkspaces": true
+  "packages": ["designs/*", "packages/*", "plugins/*", "sites/*"]
 }

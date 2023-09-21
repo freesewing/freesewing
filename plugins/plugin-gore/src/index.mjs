@@ -44,7 +44,7 @@ export const plugin = {
         .close()
         .attr('class', so.class ? so.class : '')
 
-      if (so?.hidden) paths[prefix + 'seam'].hide()
+      if (so.hidden) paths[prefix + 'seam'].hide()
       else paths[prefix + 'seam'].unhide()
     },
   },

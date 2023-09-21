@@ -9,6 +9,6 @@ Freesewing ondersteunt twee soorten eenheden:
 - Metrische eenheden (cm)
 - Imperiale (Engelse) eenheden (duim)
 
-You can configure your default units in your account settings.  
-In addition, you can set the units individually for each model.  
-And if that wasn't enough, you can still override the units for an individual pattern with this setting.
+Je kunt je standaard eenheden configureren in de accountinstellingen.  
+Daarnaast kun je de eenheden voor elk model apart instellen.  
+En als dat nog niet genoeg was, kun je de eenheden voor een individueel patroon nog steeds overschrijven met deze instelling.

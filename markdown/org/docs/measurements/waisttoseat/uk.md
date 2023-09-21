@@ -1,7 +1,7 @@
 ---
-title: Waist to seat
+title: Від талії до стегон
 ---
 
-The **waist to seat** is the measurement from your waist down towards the fullest part of your bum, measured on the side of your body.
+Вимір **від талії до стегон** — це довжина від талії до найопуклішої частини сідниць, знята збоку.
 
-To measure your **waist to seat**, locate the height of both your waist and seat circumference, and measure the vertical distance between them. Make sure to measure at the side of your body.
+Для зняття цієї мірки, знайдіть висоту положення Вашої талії та лінію обхвату стегон (в найширшому місці сідниць) та простягніть сантиметр між ними. Обов'язково вимірюйте збоку тіла.

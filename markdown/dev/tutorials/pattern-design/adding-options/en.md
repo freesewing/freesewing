@@ -29,15 +29,25 @@ function draftBib({ part }) {
 }
 
 export const bib = {
+ 
   name: 'tutorial.bib',
   draft: draftBib,
-  measurements: ['head'],
+  from: false,
+  hide: {
+    self: false,
+    from: false,
+    after: false
+  },
   // highlight-start
   options: {
     neckRatio: { pct: 80, min: 70, max: 90, menu: 'fit' },
   },
   // highlight-end
+  measurements: [],
+  optionalMeasurements: [],
+  plugins: []
 }
+
 ```
 
 Can you guess what it means?

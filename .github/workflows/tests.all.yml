@@ -23,7 +23,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [18.x]
 
     steps:
       - name: Checkout repository
@@ -41,9 +41,11 @@ jobs:
           key: node_modules-${{ hashFiles('yarn.lock') }}
       - name: Install dependencies
         if: steps.cache_node_modules.outputs.cache-hit != 'true'
-        run: npx lerna bootstrap
+        run: yarn install
         env:
           CI: true
+      - name: Build core plugins
+        run: "cd plugins/core-plugins && npm run build && cd -"
       - name: Run all tests
         run: npm run testall
       - name: Upload to codecov.io

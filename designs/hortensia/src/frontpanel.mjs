@@ -80,6 +80,9 @@ function draftHortensiaFrontpanel({
     text: 'attachment',
   })
 
+  store.cutlist.addCut()
+  store.cutlist.addCut({ material: 'lining' })
+
   // Complete?
   if (complete) {
     points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
@@ -90,10 +93,8 @@ function draftHortensiaFrontpanel({
       at: points.title,
       nr: 2,
       title: 'FrontBackPanel',
+      align: 'center',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')

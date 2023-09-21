@@ -29,7 +29,6 @@ function draftBruceFront({
   paths,
   options,
   complete,
-  paperless,
   macro,
   snippets,
   Snippet,
@@ -67,7 +66,7 @@ function draftBruceFront({
 
   // Adjust tusk length to fit inset curve
   let delta = tuskDelta(Path, points, store)
-  let previous_delta = delta
+  let previous_delta
   const points_to_save = ['rightTuskRight', 'rightTuskLeft', 'curveRightCpBottom']
   let saved = []
   let stop = false
@@ -93,7 +92,7 @@ function draftBruceFront({
       // Stop the adjustment process, print a warning message,
       // and revert back to the last good set of points if appropriate.
       stop = true
-      log.warning(
+      log.warn(
         'Unable to adjust the front tusk length to fit the given measurements, after ' +
           count +
           ' iterations.'
@@ -177,128 +176,210 @@ function draftBruceFront({
   }
   paths.seam.close().attr('class', 'fabric')
 
-  // Complete pattern?
-  if (complete) {
-    if (sa) {
-      if (options.bulge > 0) {
-        let saStart = paths.seamStart.offset(sa * -1)
-        let saTrim = paths.trimBase.offset(sa * -1).trim()
-        let saEnd = paths.seamEnd.offset(sa * -1)
-        paths.sa = saStart.join(saTrim).join(saEnd).close().attr('class', 'fabric sa')
-      } else {
-        paths.sa = paths.seam
-          .offset(sa * -1)
-          .trim()
-          .close()
-          .attr('class', 'fabric sa')
-      }
+  if (sa) {
+    if (options.bulge > 0) {
+      let saStart = paths.seamStart.offset(sa * -1)
+      let saTrim = paths.trimBase.offset(sa * -1).trim()
+      let saEnd = paths.seamEnd.offset(sa * -1)
+      paths.sa = saStart.join(saTrim).join(saEnd).close().attr('class', 'fabric sa')
+    } else {
+      paths.sa = paths.seam
+        .offset(sa * -1)
+        .trim()
+        .close()
+        .attr('class', 'fabric sa')
     }
-    macro('title', {
-      at: points.midMid,
-      nr: 2,
-      title: 'front',
-    })
-    macro('grainline', {
-      from: points.dartJoin,
-      to: points.topMid,
-    })
-    snippets.sideNotch = new Snippet('notch', points.midRight)
-    points.curveNotch = new Path()
-      .move(points.midRight)
-      .curve(points.curveRightCpTop, points.curveRightCpBottom, points.rightTuskRight)
-      .shiftFractionAlong(0.5)
-    snippets.curveNotch1 = new Snippet('notch', points.curveNotch)
-    snippets.curveNotch2 = new Snippet('notch', points.curveNotch.flipX())
   }
 
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.topLeft,
-      to: points.topRight,
-      y: points.topLeft.y - 15 - sa,
+  /*
+   * Annotations
+   */
+  // Cut list
+  store.cutlist.addCut({ cut: 2, from: 'fabric' })
+
+  // Title
+  macro('title', {
+    at: points.midMid,
+    nr: 2,
+    title: 'front',
+  })
+
+  // Grainline
+  macro('grainline', {
+    from: points.dartJoin,
+    to: points.topMid,
+  })
+
+  // Notches
+  snippets.sideNotch = new Snippet('notch', points.midRight)
+  points.curveNotch = new Path()
+    .move(points.midRight)
+    .curve(points.curveRightCpTop, points.curveRightCpBottom, points.rightTuskRight)
+    .shiftFractionAlong(0.5)
+  snippets.curveNotch1 = new Snippet('notch', points.curveNotch)
+  snippets.curveNotch2 = new Snippet('notch', points.curveNotch.flipX())
+
+  if (complete) {
+    paths.sideNoteLeft = new Path().move(points.midLeft).line(points.topLeft).addClass('hidden')
+    paths.sideNoteRight = new Path().move(points.topRight).line(points.midRight).addClass('hidden')
+    paths.tuskNoteLeft = new Path()
+      .move(points.leftTuskLeft)
+      .line(points.leftTuskRight)
+      .addClass('hidden')
+    paths.tuskNoteRight = new Path()
+      .move(points.rightTuskLeft)
+      .line(points.rightTuskRight)
+      .addClass('hidden')
+    paths.curveNoteRight = new Path()
+      .move(points.rightTuskRight)
+      .curve(points.curveRightCpBottom, points.curveRightCpTop, points.midRight)
+      .addClass('hidden')
+    paths.curveNoteLeft = new Path()
+      .move(points.midLeft)
+      .curve(points.curveLeftCpTop, points.curveLeftCpBottom, points.leftTuskLeft)
+      .addClass('hidden')
+    macro('banner', {
+      id: 'sideLeft',
+      path: paths.sideNoteLeft,
+      text: '#',
+      dy: 7,
+      classes: 'text-sm fill-note center',
     })
+    macro('banner', {
+      id: 'sideRight',
+      path: paths.sideNoteRight,
+      text: '#',
+      dy: 7,
+      classes: 'text-sm fill-note center',
+    })
+    macro('banner', {
+      id: 'tuskLeft',
+      path: paths.tuskNoteLeft,
+      text: '*',
+      spaces: 2,
+      classes: 'text-sm fill-note center',
+    })
+    macro('banner', {
+      id: 'tuskRight',
+      path: paths.tuskNoteRight,
+      text: '*',
+      spaces: 2,
+      classes: 'text-sm fill-note center',
+    })
+    macro('banner', {
+      id: 'curveLeft',
+      path: paths.curveNoteLeft,
+      text: '~',
+      classes: 'text-sm fill-note center',
+    })
+    macro('banner', {
+      id: 'curveRight',
+      path: paths.curveNoteRight,
+      text: '~',
+      classes: 'text-sm fill-note center',
+    })
+  }
+
+  // Dimensions
+  macro('hd', {
+    id: 'wWaist',
+    from: points.topLeft,
+    to: points.topRight,
+    y: points.topLeft.y - 15 - sa,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.midLeft,
+    to: points.midRight,
+    y: points.topLeft.y - 30 - sa,
+  })
+  macro('vd', {
+    id: 'hInsetPointToCfWaist',
+    from: points.midLeft,
+    to: points.topMid,
+    x: points.midLeft.x - 15 - sa,
+  })
+  macro('vd', {
+    id: 'hInsetPointToTop',
+    from: points.midLeft,
+    to: points.topLeft,
+    x: points.midLeft.x - 30 - sa,
+  })
+  if (options.bulge === 0) {
     macro('hd', {
-      from: points.midLeft,
-      to: points.midRight,
-      y: points.topLeft.y - 30 - sa,
+      id: 'wTusk',
+      from: points.leftTuskLeft,
+      to: points.rightTuskRight,
+      y: points.leftTuskLeft.y + 15 + sa,
     })
     macro('vd', {
-      from: points.midLeft,
-      to: points.topMid,
-      x: points.midLeft.x - 15 - sa,
-    })
-    macro('vd', {
-      from: points.midLeft,
+      id: 'hFull',
+      from: points.leftTuskLeft,
       to: points.topLeft,
-      x: points.midLeft.x - 30 - sa,
+      x: points.midLeft.x - 45 - sa,
     })
-    if (options.bulge === 0) {
-      macro('hd', {
-        from: points.leftTuskLeft,
-        to: points.rightTuskRight,
-        y: points.leftTuskLeft.y + 15 + sa,
-      })
-      macro('vd', {
-        from: points.leftTuskLeft,
-        to: points.topLeft,
-        x: points.midLeft.x - 45 - sa,
-      })
-    } else {
-      macro('vd', {
-        from: points.leftTuskLeft,
-        to: points.topLeft,
-        x: points.midLeft.x - 45 - sa,
-      })
-      macro('vd', {
-        from: points.leftTuskRight,
-        to: points.topLeft,
-        x: points.midLeft.x - 60 - sa,
-      })
-      points.narrowRight = new Path()
-        .move(points.midRight)
-        .curve(points.curveRightCpTop, points.curveRightCpBottom, points.rightTuskRight)
-        .edge('left')
-      points.narrowLeft = new Path()
-        .move(points.midLeft)
-        .curve(points.curveLeftCpTop, points.curveLeftCpBottom, points.leftTuskLeft)
-        .attr('class', 'various stroke-xl lashed')
-        .edge('right')
-      macro('hd', {
-        from: points.narrowLeft,
-        to: points.narrowRight,
-        y: points.narrowLeft.y,
-      })
-      macro('hd', {
-        from: points.leftTuskRight,
-        to: points.rightTuskLeft,
-        y: points.rightTuskLeft.y + 15 + sa,
-      })
-      macro('hd', {
-        from: points.leftTuskLeft,
-        to: points.rightTuskRight,
-        y: points.rightTuskLeft.y + 30 + sa,
-      })
-      macro('ld', {
-        from: points.rightTuskLeft,
-        to: points.rightTuskRight,
-        d: -15 - sa,
-      })
-      macro('vd', {
-        from: points.narrowRight,
-        to: points.topRight,
-        x: points.topRight.x + 15 + sa,
-      })
-      macro('vd', {
-        from: points.dartJoin,
-        to: points.topRight,
-        x: points.topRight.x + 30 + sa,
-      })
-    }
+  } else {
+    macro('vd', {
+      id: 'hTuskOuterToTop',
+      from: points.leftTuskLeft,
+      to: points.topLeft,
+      x: points.midLeft.x - 45 - sa,
+    })
+    macro('vd', {
+      id: 'hFull',
+      from: points.leftTuskRight,
+      to: points.topLeft,
+      x: points.midLeft.x - 60 - sa,
+    })
+    points.narrowRight = new Path()
+      .move(points.midRight)
+      .curve(points.curveRightCpTop, points.curveRightCpBottom, points.rightTuskRight)
+      .edge('left')
+    points.narrowLeft = new Path()
+      .move(points.midLeft)
+      .curve(points.curveLeftCpTop, points.curveLeftCpBottom, points.leftTuskLeft)
+      .attr('class', 'various stroke-xl lashed')
+      .edge('right')
+    macro('hd', {
+      id: 'wBetweenInsets',
+      from: points.narrowLeft,
+      to: points.narrowRight,
+      y: points.narrowLeft.y,
+    })
+    macro('hd', {
+      id: 'wBetweenTustInnerTips',
+      from: points.leftTuskRight,
+      to: points.rightTuskLeft,
+      y: points.rightTuskLeft.y + 15 + sa,
+    })
+    macro('hd', {
+      id: 'wBetweenTustOuterTips',
+      from: points.leftTuskLeft,
+      to: points.rightTuskRight,
+      y: points.rightTuskLeft.y + 30 + sa,
+    })
+    macro('ld', {
+      id: 'lTustBottom',
+      from: points.rightTuskLeft,
+      to: points.rightTuskRight,
+      d: -15 - sa,
+    })
+    macro('vd', {
+      id: 'hInflectionToTop',
+      from: points.narrowRight,
+      to: points.topRight,
+      x: points.topRight.x + 15 + sa,
+    })
+    macro('vd', {
+      id: 'hTustJointToTop',
+      from: points.dartJoin,
+      to: points.topRight,
+      x: points.topRight.x + 30 + sa,
+    })
   }
 
   if (adjustment_warning) {
-    log.warning(
+    log.warn(
       'We were not able to generate the Front pattern piece correctly. ' +
         'Manual fitting and alteration of this and other pattern pieces ' +
         'are likely to be needed. ' +

@@ -17,17 +17,32 @@ and approachable code base.
 The previous step has already set everything up for us. Our design's main file
 lives in `design/src/index.mjs`, and our part lives in `design/src/bib.mjs`.
 
-This `bib.mjs` is where we'll do all our work. It currently looks like this:
+This `bib.mjs` is where we'll do all our work. The file includes a comments to guide you on how to use it. We removed those for clarity in our example. It currently looks like this:
 
 ```design/src/bib.mjs
-function draftBib({ part }) {
+import { pluginBundle } from "@freesewing/plugin-bundle"
 
+function draftBib ({
+  part, // Your draft method must return this
+})
+{
+  // Work your magic here
   return part
 }
-
 export const bib = {
+
   name: 'tutorial.bib',
-  draft: draftBib,
+  draft: draftBib,[],
+  from: false,
+  hide: {
+    self: false,
+    from: false,
+    after: false
+  },
+  options: {},
+  measurements: [],
+  optionalMeasurements: [],
+  plugins: [ pluginBundle ]
 }
 ```
 
@@ -117,8 +132,7 @@ const Pattern = new Design({
    * typically add a name and version here
    */
   data: {
-    version: "0.0.1",
-    name: "Tutorial",
+      name: "Tutorial",
   },
   /*
    * This `parts` key is the most important thing

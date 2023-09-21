@@ -1,0 +1,40 @@
+printSettings: Druckeinstellungen
+printSettings.d: Diese Einstellungen steuern Aspekte der Seite für den PDF-Export und den Druck
+size.t: Papierformat
+size.d: Wähle ein Papierformat
+a4.t: A4
+a4.d: 210 x 297 mm
+a3.t: A3
+a3.d: 297 × 420 mm
+a2.t: A2
+a2.d: 420 × 594 mm
+a1.t: A1
+a1.d: 594 × 841 mm
+a0.t: A0
+a0.d: 841 × 1189 mm
+letter.t: Brief
+letter.d: 8,5 x 11 Zoll
+legal.t: Legal
+legal.d: 8,5 x 14 Zoll
+tabloid.t: Tabloid
+tabloid.d: 11 x 17 Zoll
+cutlist.t: Schneidelayouts einbeziehen
+cutlist.d: Sollen Bilder der vorgeschlagenen Schnittmuster für jedes Material in die exportierte PDF-Datei aufgenommen werden?
+cutlistNo.t: Schneidepläne nicht mit einbeziehen
+cutlistNo.d: Exportierte PDFs enthalten keine vorgeschlagenen Schnittmuster
+cutlistYes.t: Schneidelayouts einbeziehen
+cutlistYes.d: Die exportierten PDFs enthalten eine Seite für jedes im Muster verwendete Material, auf der angegeben ist, wie viel von dem Material benötigt wird, und auf der ein Layout für das Ausschneiden der entsprechenden Teile vorgeschlagen wird.
+coverPage.t: Deckblatt einfügen
+coverPage.d: Soll die exportierte PDF-Datei ein Deckblatt enthalten?
+coverPageYes.t: Füge ein Deckblatt hinzu
+coverPageYes.d: Füge der exportierten PDF-Datei ein Deckblatt mit Informationen über das Muster und ein Bild des gesamten Layouts hinzu.
+coverPageNo.t: Kein Deckblatt einfügen
+coverPageNo.d: Bei exportierten PDFs wird das Deckblatt übersprungen
+margin.t: Seite Rand
+margin.d: Wie viel Rand sollen die Seiten der PDF-Datei haben? Dies ist nützlich, um sicherzustellen, dass alle Inhalte innerhalb der Ränder deines Druckers liegen. Außerdem wird damit festgelegt, wie stark sich benachbarte Seiten überlappen.
+orientation.t: Seitenausrichtung
+orientation.d: In welche Richtung sollen die Seiten gedreht werden?
+portrait.t: Porträt
+portrait.d: Die Seiten sind länger als sie breit sind
+landscape.t: Landschaft
+landscape.d: Die Seiten werden breiter als sie lang sind

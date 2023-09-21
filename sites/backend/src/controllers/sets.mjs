@@ -25,6 +25,20 @@ SetsController.prototype.read = async (req, res, tools) => {
 }
 
 /*
+ * Get a list of measurements sets
+ * See: https://freesewing.dev/reference/backend/api
+ */
+SetsController.prototype.list = async (req, res, tools) => {
+  const Set = new SetModel(tools)
+  const sets = await Set.userSets(req.user.uid)
+
+  if (sets) Set.setResponse(200, 'success', { sets })
+  else Set.setResponse(404, 'notFound')
+
+  return Set.sendResponse(res)
+}
+
+/*
  * Update a measurements set
  * See: https://freesewing.dev/reference/backend/api
  */
@@ -55,4 +69,15 @@ SetsController.prototype.clone = async (req, res, tools) => {
   await Set.guardedClone(req)
 
   return Set.sendResponse(res)
+}
+
+/*
+ * Read a public measurements set
+ * See: https://freesewing.dev/reference/backend/api
+ */
+SetsController.prototype.readPublic = async (req, res, tools, format = 'json') => {
+  const Set = new SetModel(tools)
+  await Set.publicRead(req)
+
+  return format === 'yaml' ? Set.sendYamlResponse(res) : Set.sendResponse(res)
 }

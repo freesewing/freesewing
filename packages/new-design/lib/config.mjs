@@ -10,7 +10,7 @@ export const config = {
   // Repository to download from
   repo: process.env.FS_REPO || 'freesewing/freesewing',
   // Branch to download from
-  branch: process.env.FS_BRANCH || version,
+  branch: process.env.FS_BRANCH || `v${version}`,
   i18n: [
     'account',
     'common',
@@ -112,7 +112,7 @@ playwright-report
       'shared/components/lightbox.mjs',
       'shared/components/loader.mjs',
       'shared/components/modal.mjs',
-      'shared/components/page-link.mjs',
+      'shared/components/link.mjs',
       'shared/components/picker.mjs',
       'shared/components/popout.mjs',
       'shared/components/raw-span.mjs',

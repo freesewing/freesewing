@@ -1,0 +1,18 @@
+{
+  "t": "Florent, die Schiebermütze",
+  "d": "Florent ist eine abgerundete Schiebermütze mit einem kleinen festen Schild an der Vorderseite.",
+  "p": {
+    "brimBottom": "Brim bottom",
+    "brimInterfacing": "Brim interfacing",
+    "brimTop": "Brim Top",
+    "side": "Side",
+    "top": "Top"
+  },
+  "s": {},
+  "o": {
+    "headEase": {
+      "t": "Kopfumfangszugabe",
+      "d": "Bequemlichkeits-/Bewegungszugabe zum Umfang deines Kopfes"
+    }
+  }
+}

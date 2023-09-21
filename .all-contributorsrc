@@ -1005,7 +1005,44 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "trentonTrama",
+      "name": "Trent Trama",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41126812?v=4",
+      "profile": "https://github.com/trentonTrama",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "ibek",
+      "name": "Ivo Bek",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1140579?v=4",
+      "profile": "https://github.com/ibek",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "compilin",
+      "name": "Lin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40794281?v=4",
+      "profile": "https://github.com/compilin",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "evilrobotfromouterspace",
+      "name": "evilrobotfromouterspace",
+      "avatar_url": "https://avatars.githubusercontent.com/u/143673955?v=4",
+      "profile": "https://github.com/evilrobotfromouterspace",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
-  "skipCi": true
+  "skipCi": true,
+  "commitType": "docs"
 }

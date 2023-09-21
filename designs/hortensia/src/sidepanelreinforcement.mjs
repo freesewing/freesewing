@@ -35,6 +35,8 @@ function draftHortensiaSidepanelreinforcement({
     .close()
     .attr('class', 'fabric')
 
+  store.cutlist.addCut()
+
   // Complete?
   if (complete) {
     points.title = points.topLeft
@@ -45,10 +47,8 @@ function draftHortensiaSidepanelreinforcement({
       nr: 4,
       title: 'SidePanelReinforcement',
       scale: 0.25,
+      align: 'center',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')

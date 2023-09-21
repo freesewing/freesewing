@@ -1,6 +1,5 @@
 import { pctBasedOn } from '@freesewing/core'
 import { elastics } from '@freesewing/snapseries'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 
 function titanBack({
   points,
@@ -10,7 +9,6 @@ function titanBack({
   measurements,
   options,
   complete,
-  paperless,
   store,
   macro,
   utils,
@@ -103,8 +101,6 @@ function titanBack({
       .rotate(options.crossSeamCurveAngle, points.fork)
   }
 
-  let adjustment_warning = false
-
   // Let's get to work
   points.waistX = new Point(-1 * measurements.waistBackArc * (1 + options.waistEase), 0)
   points.upperLegY = new Point(0, measurements.waistToUpperLeg)
@@ -178,7 +174,7 @@ function titanBack({
     let rotate = ['waistIn', 'waistOut']
     let saved = []
     let delta = crossSeamDelta()
-    let previous_delta = delta
+    let previous_delta
     let run = 0
     do {
       previous_delta = delta
@@ -208,8 +204,8 @@ function titanBack({
       points.forkCp2 = saved.forkCp2
     }
     if (Math.abs(delta) > 1 || Math.abs(delta) > Math.abs(previous_delta)) {
-      log.warning('Unable to adjust the back crotch seam to fit the given measurements.')
-      adjustment_warning = true
+      log.warn('Unable to adjust the back crotch seam to fit the given measurements.')
+      store.flag.warn({ msg: 'titan:crossSeamFitFailedBack' })
     }
   }
 
@@ -240,298 +236,152 @@ function titanBack({
   // Paths
   paths.seam = drawPath().attr('class', 'fabric')
 
+  if (sa) {
+    paths.saBase = drawOutseam()
+      .join(
+        new Path()
+          .move(points.styleWaistOut)
+          .line(points.styleWaistIn)
+          .line(points.crossSeamCurveStart)
+          .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
+      )
+      .join(drawInseam())
+    paths.hemBase = new Path().move(points.floorIn).line(points.floorOut)
+    paths.sa = paths.hemBase
+      .offset(sa * 3)
+      .join(paths.saBase.offset(sa))
+      .close()
+      .attr('class', 'fabric sa')
+    paths.saBase.hide()
+    paths.hemBase.hide()
+  }
+
+  // Help construct cross seam
+  if (complete)
+    paths.hint = new Path()
+      .move(points.crossSeamCurveStart)
+      .line(points.crossSeamCurveMax)
+      .line(points.fork)
+      .addClass('note help')
+
+  /*
+   * Annotations
+   */
+
+  // Cut list
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Grainline
   points.grainlineTop.y = points.styleWaistOut.y
   macro('grainline', {
     from: points.grainlineTop,
     to: points.grainlineBottom,
   })
 
-  store.cutlist.addCut()
+  // Scalebox
+  macro('scalebox', { at: points.knee })
 
-  if (complete) {
-    macro('scalebox', { at: points.knee })
-    points.logoAnchor = new Point(points.crossSeamCurveStart.x / 2, points.fork.y)
-    snippets.logo = new Snippet('logo', points.logoAnchor)
-    points.titleAnchor = points.logoAnchor.shift(-90, 60)
-    macro('title', {
-      nr: 1,
-      title: 'back',
-      at: points.titleAnchor,
+  // Logo
+  points.logoAnchor = new Point(points.crossSeamCurveStart.x / 2, points.fork.y)
+  snippets.logo = new Snippet('logo', points.logoAnchor)
+
+  // Title
+  points.titleAnchor = points.logoAnchor.shift(-90, 60)
+  macro('title', {
+    nr: 1,
+    title: 'back',
+    at: points.titleAnchor,
+  })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wHem',
+    from: points.floorIn,
+    to: points.floorOut,
+    y: points.floorIn.y - 30,
+  })
+  macro('hd', {
+    id: 'wHemLeft',
+    from: points.floorIn,
+    to: points.floor,
+    y: points.floorIn.y - 15,
+  })
+  macro('hd', {
+    id: 'wHemRight',
+    from: points.floor,
+    to: points.floorOut,
+    y: points.floorIn.y - 15,
+  })
+  macro('vd', {
+    id: 'hHemToSideWaist',
+    from: points.floorOut,
+    to: points.styleWaistOut,
+    x:
+      (points.seatOut.x > points.styleWaistOut.x ? points.seatOut.x : points.styleWaistOut.x) +
+      sa +
+      15,
+  })
+  macro('vd', {
+    id: 'hHemToFork',
+    from: points.floorIn,
+    to: points.fork,
+    x: points.fork.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hForkToCbWaist',
+    from: points.fork,
+    to: points.styleWaistIn,
+    x: points.fork.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.floorIn,
+    to: points.styleWaistIn,
+    x: points.fork.x - sa - 30,
+  })
+  macro('vd', {
+    id: 'hStartCrotchCurveToCbWaist',
+    from: points.crossSeamCurveStart,
+    to: points.styleWaistIn,
+    x: points.crossSeamCurveStart.x - sa - 15,
+  })
+  macro('hd', {
+    id: 'wCbWaistToPleat',
+    from: points.styleWaistIn,
+    to: points.grainlineTop,
+    y: points.styleWaistIn.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wStartCrotchCurveToPleat',
+    from: points.crossSeamCurveStart,
+    to: points.grainlineTop,
+    y: points.styleWaistIn.y - sa - 30,
+  })
+  macro('hd', {
+    id: 'wForkProjectionToPleat',
+    from: points.crossSeamCurveMax,
+    to: points.grainlineTop,
+    y: points.styleWaistIn.y - sa - 45,
+  })
+  macro('hd', {
+    id: 'wForkToPleat',
+    from: points.fork,
+    to: points.grainlineTop,
+    y: points.styleWaistIn.y - sa - 60,
+  })
+  macro('hd', {
+    id: 'wPleatToSideWaist',
+    from: points.grainlineTop,
+    to: points.styleWaistOut,
+    y: points.styleWaistIn.y - sa - 15,
+  })
+  if (points.seatOut.x > points.styleWaistOut.x) {
+    macro('hd', {
+      id: 'wPleatToSideWaistAlt',
+      from: points.grainlineTop,
+      to: points.seatOut,
+      y: points.styleWaistIn.y - sa - 30,
     })
-    /*
-    //notches
-    if (options.fitGuides) {
-      points.waistMid = points.waistOut.shiftFractionTowards(points.waistIn, 0.5)
-      points.seatMid = points.waistMid
-        .shiftTowards(points.waistIn, measurements.waistToSeat)
-        .rotate(90, points.waistMid)
-      points.seatInTarget = points.seatOut.shiftOutwards(points.seatMid, measurements.seat / 4)
-      points.seatOutTarget = points.seatMid.shiftTowards(points.seatOut, measurements.seat / 4)
-      points.hipsInTarget = points.waistIn
-        .shiftTowards(points.waistOut, measurements.waistToHips)
-        .rotate(-90, points.waistIn)
-      points.hipsOutTarget = points.waistOut
-        .shiftTowards(points.waistIn, measurements.waistToHips)
-        .rotate(90, points.waistOut)
-      points.hipsIn = utils.beamsIntersect(
-        points.hipsOutTarget,
-        points.hipsInTarget,
-        points.waistIn,
-        points.crossSeamCurveStart
-      )
-      points.crossSeamCurveStartMid = utils.beamsIntersect(
-        points.crossSeamCurveStart,
-        points.crossSeamCurveStart.shift(points.waistIn.angle(points.waistOut), 1),
-        points.waistMid,
-        points.seatMid
-      )
-      if (points.seatMid.y > points.crossSeamCurveStartMid.y) {
-        points.seatIn = utils.lineIntersectsCurve(
-          points.seatMid,
-          points.seatInTarget,
-          points.crossSeamCurveStart,
-          points.crossSeamCurveCp1,
-          points.crossSeamCurveCp2,
-          points.fork
-        )
-      } else {
-        points.seatIn = utils.beamsIntersect(
-          points.seatMid,
-          points.seatInTarget,
-          points.waistIn,
-          points.crossSeamCurveStart
-        )
-      }
-      if (options.fitKnee) {
-        if (points.waistOut.x > points.seatOut.x) {
-          points.hipsOut = utils.lineIntersectsCurve(
-            points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
-            points.kneeOut,
-            points.kneeOutCp2,
-            points.seatOut,
-            points.waistOut
-          )
-          points.seatOutNotch = utils.lineIntersectsCurve(
-            points.seatMid,
-            points.seatOutTarget,
-            points.kneeOut,
-            points.kneeOutCp2,
-            points.seatOut,
-            points.waistOut
-          )
-        } else {
-          points.hipsOut = utils.lineIntersectsCurve(
-            points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
-            points.seatOut,
-            points.seatOutCp2,
-            points.waistOut,
-            points.waistOut
-          )
-          points.seatOutNotch = points.seatOut
-        }
-        points.kneeOutNotch = points.kneeOut
-        points.kneeInNotch = points.kneeIn
-      } else {
-        if (points.waistOut.x > points.seatOut.x) {
-          points.hipsOut = utils.lineIntersectsCurve(
-            points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
-            points.floorOut,
-            points.kneeOutCp2,
-            points.seatOut,
-            points.waistOut
-          )
-          points.seatOutNotch = utils.lineIntersectsCurve(
-            points.seatMid,
-            points.seatOutTarget,
-            points.floorOut,
-            points.kneeOutCp2,
-            points.seatOut,
-            points.waistOut
-          )
-          points.kneeOutNotch = utils.lineIntersectsCurve(
-            points.kneeOut,
-            points.kneeIn.rotate(180, points.kneeOut),
-            points.floorOut,
-            points.kneeOutCp2,
-            points.seatOut,
-            points.waistOut
-          )
-        } else {
-          points.hipsOut = utils.lineIntersectsCurve(
-            points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
-            points.seatOut,
-            points.seatOutCp2,
-            points.waistOut,
-            points.waistOut
-          )
-          points.seatOutNotch = points.seatOut
-          points.kneeOutNotch = utils.lineIntersectsCurve(
-            points.kneeOut,
-            points.kneeIn.rotate(180, points.kneeOut),
-            points.floorOut,
-            points.kneeOutCp2,
-            points.seatOutCp1,
-            points.seatOut
-          )
-        }
-        points.kneeInNotch = utils.lineIntersectsCurve(
-          points.kneeIn,
-          points.kneeOut.rotate(180, points.kneeIn),
-          points.fork,
-          points.forkCp2,
-          points.kneeInCp1,
-          points.floorIn
-        )
-      }
-      macro('sprinkle', {
-        snippet: 'notch',
-        on: ['seatOutNotch', 'kneeInNotch', 'kneeOutNotch'],
-      })
-      macro('sprinkle', {
-        snippet: 'bnotch',
-        on: ['crossSeamCurveStart', 'seatIn'],
-      })
-      paths.seatline = new Path()
-        .move(points.seatIn)
-        .line(points.seatOutNotch)
-        .attr('class', 'fabric help')
-        .attr('data-text', 'Seat Line')
-        .attr('data-text-class', 'center')
-      if (
-        measurements.waistToHips * (1 - options.waistHeight) + absoluteOptions.waistbandWidth <
-        measurements.waistToHips
-      ) {
-        snippets.hipsIn = new Snippet('bnotch', points.hipsIn)
-        snippets.hipsOut = new Snippet('notch', points.hipsOut)
-        paths.hipline = new Path()
-          .move(points.hipsIn)
-          .line(points.hipsOut)
-          .attr('class', 'fabric help')
-          .attr('data-text', 'Hip Line')
-          .attr('data-text-class', 'center')
-      }
-    }
-    */
-    if (sa) {
-      paths.saBase = drawOutseam()
-        .join(
-          new Path()
-            .move(points.styleWaistOut)
-            .line(points.styleWaistIn)
-            .line(points.crossSeamCurveStart)
-            .curve(points.crossSeamCurveCp1, points.crossSeamCurveCp2, points.fork)
-        )
-        .join(drawInseam())
-      paths.hemBase = new Path().move(points.floorIn).line(points.floorOut)
-      paths.sa = paths.hemBase
-        .offset(sa * 3)
-        .join(paths.saBase.offset(sa))
-        .close()
-        .attr('class', 'fabric sa')
-      paths.saBase.hide()
-      paths.hemBase.hide()
-    }
-
-    if (paperless && options.titanPaperless) {
-      // Help construct cross seam
-      paths.hint = new Path()
-        .move(points.crossSeamCurveStart)
-        .line(points.crossSeamCurveMax)
-        .line(points.fork)
-        .attr('class', 'note lashed')
-      macro('hd', {
-        from: points.floorIn,
-        to: points.floorOut,
-        y: points.floorIn.y - 30,
-      })
-      macro('hd', {
-        from: points.floorIn,
-        to: points.floor,
-        y: points.floorIn.y - 15,
-      })
-      macro('hd', {
-        from: points.floor,
-        to: points.floorOut,
-        y: points.floorIn.y - 15,
-      })
-      macro('vd', {
-        from: points.floorOut,
-        to: points.styleWaistOut,
-        x:
-          (points.seatOut.x > points.styleWaistOut.x ? points.seatOut.x : points.styleWaistOut.x) +
-          sa +
-          15,
-      })
-      macro('vd', {
-        from: points.floorIn,
-        to: points.fork,
-        x: points.fork.x - sa - 15,
-      })
-      macro('vd', {
-        from: points.fork,
-        to: points.styleWaistIn,
-        x: points.fork.x - sa - 15,
-      })
-      macro('vd', {
-        from: points.floorIn,
-        to: points.styleWaistIn,
-        x: points.fork.x - sa - 30,
-      })
-      macro('vd', {
-        from: points.crossSeamCurveStart,
-        to: points.styleWaistIn,
-        x: points.crossSeamCurveStart.x - sa - 15,
-      })
-      macro('hd', {
-        from: points.styleWaistIn,
-        to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 15,
-      })
-      macro('hd', {
-        from: points.crossSeamCurveStart,
-        to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 30,
-      })
-      macro('hd', {
-        from: points.crossSeamCurveMax,
-        to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 45,
-      })
-      macro('hd', {
-        from: points.fork,
-        to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 60,
-      })
-      macro('hd', {
-        from: points.grainlineTop,
-        to: points.styleWaistOut,
-        y: points.styleWaistIn.y - sa - 15,
-      })
-      if (points.seatOut.x > points.styleWaistOut.x) {
-        macro('hd', {
-          from: points.grainlineTop,
-          to: points.seatOut,
-          y: points.styleWaistIn.y - sa - 30,
-        })
-      }
-    }
-  }
-
-  if (adjustment_warning) {
-    log.warning(
-      'We were not able to generate the Back pattern piece correctly. ' +
-        'Manual fitting and alteration of this and other pattern pieces ' +
-        'are likely to be needed. ' +
-        'First, please retake your measurements and generate a new pattern ' +
-        'using the new measurements. ' +
-        'If you still see this warning with the new pattern, then please ' +
-        'make a test garment, check fit, and make alterations as necessary ' +
-        'before trying to make the final garment.'
-    )
   }
 
   return part
@@ -539,7 +389,6 @@ function titanBack({
 
 export const back = {
   name: 'titan.back',
-  plugins: [pluginBundle],
   measurements: [
     'crossSeam',
     'crossSeamFront',
@@ -556,7 +405,6 @@ export const back = {
   ],
   options: {
     // Constants
-    titanPaperless: true,
     fitCrossSeam: true,
     fitCrossSeamFront: true,
     fitCrossSeamBack: true,

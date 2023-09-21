@@ -1,17 +1,17 @@
 ---
-title: Darts
+title: Виточки
 ---
 
-![Bust darts on a blouse](dart.jpg)
+![Блузка з виточками на грудях](dart.jpg)
 
-Darts are crucial in pattern design as they turn a flat, two-dimensional piece of fabric, into a three-dimensional shape.
+Виточки є критичними для дизайну викрійок, оскільки вони допомагають надати двовимірному шмату тканини об'ємної, тривимірної форми.
 
-A dart is created by two lines that form a wedge, and meet each other in the dart point. When the lines are sewn together they create a permanent fold, preventing the fabric from laying flat, thereby creating a three-dimensional shape.
+Виточка створюється двома лініями, які утворюють клиноподібну форму, та зустрічаються у точці, утворюючи вершину. Коли лінії зшиваються разом, вони створюють постійну складку та не дають тканині лежати рівно, створюючи таким чином об'ємну форму.
 
-Darts are used where fabric needs to cover curves in more than one direction. You don't need a dart for your legs because your fabric can follow the curvature of your legs and wrap around it. Your bum does not only curve horizontally, but also vertically. So bums and boobs are typically places where you'll find darts.
+Виточки використовуються там, де тканина повинна покривати криві лінії тіла декількох напрямків. Вам не потрібна виточка на ногах, тому що тканина може створити бажану форму обертаючись навколо них. Ваша сідниця вигинається не лишень горизонтально, але й вертикально. Тому сідниці, груди, спина та талія — це, як правило, місця, де зазвичай розташовуються виточки.
 
-> Wikipedia has a bit more to say on this subject: [Dart (sewing) on Wikipedia](http://en.wikipedia.org/wiki/Dart_\(sewing\))
+> Вікіпедія має трохи більше інформації на цю тему: [Dart (sewing) на Вікіпедії](http://en.wikipedia.org/wiki/Dart_\(sewing\)) (стаття англійською)
 > 
-> Entire chapters in books on sewing and pattern design are dedicated to darts. Knowing how and where to use them is not so simple. But for this website, knowing what they are is sufficient.
+> Виточкам присвячені цілі розділи в книгах з шиття та конструювання викрійок. Знати, як і де їх використовувати — непроста задача. Але для користування цим вебсайтом Вам потрібно знати лишень що це таке.
 
-> Picture by [Tasha](http://bygumbygolly.com/2013/01/finished-1940s-simplicity-diamonds/)
+> Світлина: [Tasha](http://bygumbygolly.com/2013/01/finished-1940s-simplicity-diamonds/) (стаття англійською)

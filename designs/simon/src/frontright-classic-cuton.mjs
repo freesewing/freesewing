@@ -9,7 +9,6 @@ export const draftFrontRightClassicCuton = ({
   Path,
   paths,
   complete,
-  paperless,
   macro,
   options,
   part,
@@ -31,13 +30,18 @@ export const draftFrontRightClassicCuton = ({
 
   paths.seam.line(points.placketTopEdge).line(points.placketBottomEdge).line(points.cfHem).close()
 
-  // Complete pattern?
+  if (sa)
+    paths.saFromArmhole
+      .line(new Point(points.placketTopEdge.x + sa, points.placketTopEdge.y - sa))
+      .line(new Point(points.placketBottomEdge.x + sa, points.placketBottomEdge.y + sa * 3))
+      .line(paths.hemSa.start())
+
   if (complete) {
     // Placket help lines
     paths.frontCenter = new Path().move(points.cfNeck).line(points.cfHem).attr('class', 'help')
     if (!options.seperateButtonholePlacket) {
       // Match lines are only displayed on attached plackets
-      paths.frontCenter.attr('data-text', 'matchHere').attr('data-text-class', 'text-xs center')
+      paths.frontCenter.addText('simon:matchHere', 'text-xs center')
     }
     paths.placketInnerFold = new Path()
       .move(points.placketBottomIn)
@@ -47,82 +51,78 @@ export const draftFrontRightClassicCuton = ({
       .move(points.placketTopOut)
       .line(points.placketBottomOut)
       .attr('class', 'dotted')
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: [
-        'placketTopIn',
-        'placketTopOut',
-        'cfNeck',
-        'placketBottomIn',
-        'placketBottomOut',
-        'cfHem',
-      ],
-    })
-
-    // Buttons
-    addButtons(part)
-
-    // Title
-    macro('title', { at: points.title, nr: 1, title: 'frontRight' })
-
-    if (sa) {
-      paths.saFromArmhole
-        .line(new Point(points.placketTopEdge.x + sa, points.placketTopEdge.y - sa))
-        .line(new Point(points.placketBottomEdge.x + sa, points.placketBottomEdge.y + sa * 3))
-        .line(paths.hemSa.start())
-    }
   }
 
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.placketTopOut,
-      to: points.placketTopEdge,
-      y: points.placketTopEdge.y - 15 - sa,
-    })
-    macro('hd', {
-      from: points.cfNeck,
-      to: points.placketTopEdge,
-      y: points.placketTopEdge.y - 30 - sa,
-    })
-    macro('hd', {
-      from: points.placketTopIn,
-      to: points.placketTopEdge,
-      y: points.placketTopEdge.y - 45 - sa,
-    })
-    macro('hd', {
-      from: points.s3CollarSplit,
-      to: points.placketTopEdge,
-      y: points.s3CollarSplit.y - 15 - sa,
-    })
-    macro('hd', {
-      from: points.s3ArmholeSplit,
-      to: points.placketTopEdge,
-      y: points.s3CollarSplit.y - 30 - sa,
-    })
-    macro('hd', {
-      from: points.armhole,
-      to: points.placketTopEdge,
-      y: points.s3CollarSplit.y - 45 - sa,
-    })
-    if (complete) {
-      points.button0 = points.placketTopEdge
-      let j
-      for (let i = 0; i < options.buttons; i++) {
-        j = i + 1
-        macro('vd', {
-          from: points['button' + j],
-          to: points['button' + i],
-          x: points.placketTopEdge.x + 15 + sa,
-        })
-      }
-    }
+  /*
+   * Annotations
+   */
+  // Notches
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: ['placketTopIn', 'placketTopOut', 'cfNeck', 'placketBottomIn', 'placketBottomOut', 'cfHem'],
+  })
+
+  // Buttons
+  addButtons(part)
+
+  // Title
+  macro('rmtitle')
+  macro('title', { at: points.title, nr: 1, title: 'frontRight' })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wPlacketEdge',
+    from: points.placketTopOut,
+    to: points.placketTopEdge,
+    y: points.placketTopEdge.y - 15 - sa,
+  })
+  macro('hd', {
+    id: 'wCfToEdge',
+    from: points.cfNeck,
+    to: points.placketTopEdge,
+    y: points.placketTopEdge.y - 30 - sa,
+  })
+  macro('hd', {
+    id: 'wPlacketInnerToEdge',
+    from: points.placketTopIn,
+    to: points.placketTopEdge,
+    y: points.placketTopEdge.y - 45 - sa,
+  })
+  macro('hd', {
+    id: 'wHpsToEdge',
+    from: points.s3CollarSplit,
+    to: points.placketTopEdge,
+    y: points.s3CollarSplit.y - 15 - sa,
+  })
+  macro('hd', {
+    id: 'wShoulderToEdge',
+    from: points.s3ArmholeSplit,
+    to: points.placketTopEdge,
+    y: points.s3CollarSplit.y - 30 - sa,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.armhole,
+    to: points.placketTopEdge,
+    y: points.s3CollarSplit.y - 45 - sa,
+  })
+  points.button0 = points.placketTopEdge
+  let j
+  for (let i = 0; i < options.buttons; i++) {
+    j = i + 1
     macro('vd', {
-      from: points.placketBottomEdge,
-      to: points.placketTopEdge,
-      x: points.placketTopEdge.x + 30 + sa,
+      id: `hBetweenButtons${i}`,
+      from: points['button' + j],
+      to: points['button' + i],
+      x: points.placketTopEdge.x + 15 + sa,
     })
   }
+  macro('vd', {
+    id: 'hPlacket',
+    from: points.placketBottomEdge,
+    to: points.placketTopEdge,
+    x: points.placketTopEdge.x + 30 + sa,
+  })
 
   return part
 }

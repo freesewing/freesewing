@@ -1,8 +1,8 @@
 ---
-title: Why are seam allowances tapered?
+title: Чому припуски на шви скошуються?
 ---
 
-Freesewing generates the seam allowances by offsetting from the seam paths. This means that when there is a corner in your pattern and the two offset seam allowances converge, it would require a lot more code to make the offset seam allowance come to a point. Instead, the offset seam allowances come to the end of the seam paths and then are connected in a straight line, making a trimmed or tapered corner.
+Freesewing генерує припуски шляхом зміщення від контурів швів. Отже, якщо викрійка має кути, де припуски на шви мають сходитися, знадобилося б набагато більше коду, аби ці лінії зійшлися в одну точку. Замість цього, припуски становлять ту ж довжину, що й самі шви, та потім з'єднуються прямими лініями, утворюючи обрізаний або скошений кут.
 
-If you want you could simply cut the seam allowance corners fully when cutting your printed pattern or when cutting your fabric. You do not have to cut along the tapered lines. 
+За бажанням Ви можете вирізати ці кути повністю під час крою видрукованої викрійки чи тканини. Не обов'язково різати вздовж цих скошених ліній. 
 

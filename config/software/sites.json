@@ -1,9 +1,7 @@
 {
   "backend": "FreeSewing backend",
   "dev": "FreeSewing website with documentation for contributors & developers",
-  "email": "Holds maizzle instance to generate the FreeSewing email templates",
   "lab": "FreeSewing website to test various patterns",
   "org": "FreeSewing website",
-  "sanity": "Code for the sanity.io CMS",
   "shared": "Shared code and React components for different websites"
 }

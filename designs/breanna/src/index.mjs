@@ -1,13 +1,12 @@
 import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
-// Parts
 import { back } from './back.mjs'
 import { front } from './front.mjs'
 import { sleeve } from './sleeve.mjs'
-// Skeleton parts for exporting and re-use
 import { base } from './base.mjs'
 import { frontBase } from './front-base.mjs'
-import { sleeveCap } from './sleevecap.mjs'
+import { sleevecap } from './sleevecap.mjs'
+import { i18n } from '../i18n/index.mjs'
 
 // Create design
 const Breanna = new Design({
@@ -16,4 +15,4 @@ const Breanna = new Design({
 })
 
 // Named exports
-export { back, front, sleeve, base, frontBase, sleeveCap, Breanna }
+export { back, front, sleeve, base, frontBase, sleevecap, Breanna, i18n }

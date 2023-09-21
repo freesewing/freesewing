@@ -20,14 +20,15 @@ describe('Grainline Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const Pattern = new Design({ parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const Pattern = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Pattern()
     pattern.draft()
-    const c = pattern.parts[0].test.paths.grainline
+    const c = pattern.parts[0].test.paths.__macro_grainline_grainline_line
     expect(c.attributes.get('class')).to.equal('note')
     expect(c.attributes.get('marker-start')).to.equal('url(#grainlineFrom)')
     expect(c.attributes.get('marker-end')).to.equal('url(#grainlineTo)')
-    expect(c.attributes.get('data-text')).to.equal('grainline')
+    expect(c.attributes.get('data-text')).to.equal('plugin-annotations:grainline')
     expect(c.attributes.get('data-text-class')).to.equal('center fill-note')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[1].type).to.equal('line')

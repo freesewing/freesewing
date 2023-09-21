@@ -7,24 +7,6 @@ function nobleBackPoints({ points, Path, paths, options, snippets, log, part }) 
   for (let key of Object.keys(paths)) paths[key].hide()
   for (let i in snippets) delete snippets[i]
 
-  delete points.__titleNr
-  delete points.__titleName
-  delete points.__titlePattern
-  delete points.scaleboxAnchor
-  delete points.__scaleboxImperialBottomLeft
-  delete points.__scaleboxMetricBottomLeft
-  delete points.__scaleboxImperialTopLeft
-  delete points.__scaleboxMetricTopLeft
-  delete points.__scaleboxImperialTopRight
-  delete points.__scaleboxMetricTopRight
-  delete points.__scaleboxImperialBottomRight
-  delete points.__scaleboxMetricBottomRight
-  delete points.__scaleboxLead
-  delete points.__scaleboxTitle
-  delete points.__scaleboxText
-  delete points.__scaleboxLink
-  delete points.__scaleboxImperial
-  delete points.__scaleboxMetric
   delete points.bustDartLeft
   delete points.bustDartLeftCp
 

@@ -14,3 +14,25 @@ ConfirmationsController.prototype.read = async (req, res, tools) => {
 
   return Confirmation.sendResponse(res)
 }
+
+/*
+ * Get either sugset or sugpack confirmations (requires curator role)
+ * See: https://freesewing.dev/reference/backend/api/confirmation
+ */
+ConfirmationsController.prototype.getSuggested = async (req, res, tools, type) => {
+  const Confirmation = new ConfirmationModel(tools)
+  await Confirmation.getSuggested(req, type)
+
+  return Confirmation.sendResponse(res)
+}
+
+/*
+ * Remove a sugset or sugpack confirmation (requires curator role)
+ * See: https://freesewing.dev/reference/backend/api/confirmation
+ */
+ConfirmationsController.prototype.removeSuggested = async (req, res, tools, type) => {
+  const Confirmation = new ConfirmationModel(tools)
+  await Confirmation.removeSuggested(req, type)
+
+  return Confirmation.sendResponse(res)
+}

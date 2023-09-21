@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 export const bib = {
   name: 'bob.bib',
   measurements: [],
@@ -10,7 +8,6 @@ export const bib = {
     lengthRatio: { pct: 75, min: 55, max: 85, menu: 'fit' },
     headSize: { pct: 100, min: 10, max: 200, snap: 5, menu: 'size' },
   },
-  plugins: [pluginBundle],
   draft: ({
     Point,
     points,
@@ -19,11 +16,11 @@ export const bib = {
     measurements,
     options,
     macro,
-    log,
     complete,
     snippets,
     Snippet,
-    paperless,
+    store,
+    units,
     part,
   }) => {
     // Head size
@@ -175,74 +172,88 @@ export const bib = {
       .close()
       .attr('class', 'fabric')
 
-    log.info(['biasTapeLength', { mm: paths.seam.length() }])
-    log.info(['fabricHeight', { mm: points.tipRightTopStart.dy(points.bottomLeftEnd) }])
-    log.info(['fabricWidth', { mm: points.bottomLeftStart.dx(points.bottomRightEnd) }])
+    /*
+     * Annotations
+     */
 
-    // Complete?
-    if (complete) {
-      // Add the snaps
-      snippets.snapStud = new Snippet('snap-stud', points.snapLeft)
-      snippets.snapSocket = new Snippet('snap-socket', points.snapRight).attr('opacity', 0.5)
+    // Let the user know about the bias tape and fabric requirements
+    store.flag.note({
+      msg: 'bob:biasTapeLength',
+      replace: {
+        l: units(paths.seam.length()),
+      },
+    })
 
-      // Add the bias tape
+    // Cut list
+    store.cutlist.addCut({ cut: 1, from: 'fabric' })
+
+    // Add the snaps
+    snippets.snapStud = new Snippet('snap-stud', points.snapLeft)
+    snippets.snapSocket = new Snippet('snap-socket', points.snapRight).attr('opacity', 0.5)
+
+    // Add the bias tape
+    if (complete)
       paths.bias = paths.seam
         .offset(-5)
-        .attr('class', 'various dashed')
-        .attr('data-text', 'finishWithBiasTape')
-        .attr('data-text-class', 'center fill-various')
+        .attr('class', 'note dashed')
+        .attr('data-text', 'bob:finishWithBiasTape')
+        .attr('data-text-class', 'center fill-note')
 
-      // Add the title
-      points.title = points.bottom.shift(-90, 45)
-      macro('title', {
-        at: points.title,
-        nr: 1,
-        title: 'bib',
-      })
+    // Add the title
+    points.title = points.bottom.shift(-90, 45)
+    macro('title', {
+      at: points.title,
+      nr: 1,
+      title: 'bib',
+      align: 'center',
+      scale: 0.8,
+    })
 
-      // Add the scalebox
-      points.scalebox = points.title.shift(-90, 55)
-      macro('scalebox', { at: points.scalebox })
+    // Add the scalebox
+    points.scalebox = points.title.shift(-90, 65)
+    macro('scalebox', { at: points.scalebox })
 
-      // Add the logo
-      points.logo = new Point(0, 0)
-      snippets.logo = new Snippet('logo', points.logo)
+    // Add the logo
+    points.logo = new Point(0, 0)
+    snippets.logo = new Snippet('logo', points.logo)
 
-      // Paperless?
-      if (paperless) {
-        // Add dimensions
-        macro('hd', {
-          from: points.bottomLeftStart,
-          to: points.bottomRightEnd,
-          y: points.bottomLeft.y + 15,
-        })
-        macro('vd', {
-          from: points.bottomRightStart,
-          to: points.bottom,
-          x: points.bottomRight.x + 15,
-        })
-        macro('vd', {
-          from: points.bottomRightStart,
-          to: points.right,
-          x: points.bottomRight.x + 30,
-        })
-        macro('vd', {
-          from: points.bottomRightStart,
-          to: points.tipLeftTopStart,
-          x: points.bottomRight.x + 45,
-        })
-        macro('hd', {
-          from: points.left,
-          to: points.right,
-          y: points.left.y + 25,
-        })
-        macro('ld', {
-          from: points.tipLeftBottomEnd,
-          to: points.tipLeftTopStart,
-          d: -15,
-        })
-      }
-    }
+    // Add dimensions
+    macro('hd', {
+      id: 'wFull',
+      from: points.bottomLeftStart,
+      to: points.bottomRightEnd,
+      y: points.bottomLeft.y + 15,
+    })
+    macro('vd', {
+      id: 'hBottomToOpeningBottom',
+      from: points.bottomRightStart,
+      to: points.bottom,
+      x: points.bottomRight.x + 15,
+    })
+    macro('vd', {
+      id: 'hBottomToOpeningCenter',
+      from: points.bottomRightStart,
+      to: points.right,
+      x: points.bottomRight.x + 30,
+    })
+    macro('vd', {
+      id: 'hTotal',
+      from: points.bottomRightStart,
+      to: points.tipLeftTopStart,
+      x: points.bottomRight.x + 45,
+    })
+    macro('hd', {
+      id: 'wOpening',
+      from: points.left,
+      to: points.right,
+      y: points.left.y + 25,
+    })
+    macro('ld', {
+      id: 'wStrap',
+      from: points.tipLeftBottomEnd,
+      to: points.tipLeftTopStart,
+      d: -15,
+    })
 
     return part
   },

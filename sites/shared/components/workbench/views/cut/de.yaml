@@ -1,0 +1,26 @@
+canvas: Einlage
+cut: Schneide
+cuttingLayout: Vorgeschlagenes Schnittlayout
+fabric: Hauptstoff
+materialSize: "{length} von {width} breitem Material"
+heavyCanvas: Schweres Segeltuch
+interfacing: Einlage
+lining: Lining
+lmhCanvas: Leichtes bis mittleres Haar Leinen
+mirrored: gespiegelt
+onFoldLower: im Stoffbruch
+onFoldAndBias: auf der Schräge gefaltet
+onBias: über die Vorurteile
+plastic: Kunststoff
+ribbing: Bündchen
+edgeOfFabric: Kante des Stoffes
+sheetWidth.t: Material Breite
+sheetWidth.d: Wie breit ist das Material?
+grainDirection.t: Richtung des Korns
+grainDirection.d: In welche Richtung verläuft die Maserung des Materials?
+horizontal.t: Horizontal
+horizontal.d: Das Getreide läuft von links nach rechts
+vertical.t: Vertikal
+vertical.d: Die Maserung verläuft von oben nach unten
+cutSettings: Material Einstellungen
+cutSettings.d: Mit diesen Einstellungen kannst du Eigenschaften des Materials festlegen, um die Erstellung eines Schnittplans zu unterstützen

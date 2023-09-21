@@ -15,8 +15,8 @@ No sé si estás familiarizado con la frase **noblesse oblige** , pero esencialm
 
 Estoy privilegiado y, por lo tanto, tengo responsabilidades. Tengo la suerte de haber nacido en Europa Occidental, de tener un buen trabajo y un techo sobre mi cabeza.
 
-¿Puedo utilizar el dinero? Yes I could.  
-Do I need the money? No lo hago.
+¿Puedo utilizar el dinero? Sí, podría.  
+¿Necesito dinero? No lo hago.
 
 ##### El valor de su apoyo
 
@@ -28,7 +28,7 @@ Cuando te conviertes en un Patrón FreeSewing te das más que dinero. Para mí, 
 
 ##### El valor de tu dinero
 
-It is not _just_ about the money. Pero eso no significa que el dinero no sea importante. Muy al contrario.
+No es _sólo_ sobre el dinero. Pero eso no significa que el dinero no sea importante. Muy al contrario.
 
 Aumentar el dinero haciendo algo que me encanta y luego pasarlo a la caridad me permite dormir por la noche.
 
@@ -50,12 +50,12 @@ Hay mucha miseria en el mundo. Mientras veo las noticias, a menudo siento mi fe 
 
 Sin embargo, de alguna manera, dondequiera que golpee la crisis, hay una bandera familiar que da esperanza y ayuda. No es la bandera de las Naciones Unidas, ni es la bandera de estrella, ni el azul y el oro de la Unión Europea.
 
-The one thing that always reminds me that humanity has not completely forsaken these people is to see the banner of Médecins Sans Frontières/Doctors Without Borders fly. A veces precariamente, entre las ruinas de sus hospitales bombardeados, pero siempre allí.
+Lo único me recuerda de manera constante que la humanidad no ha abandonado por completo a estas personas es ver la bandera de Médecins Sans Frontières/Médicos Sin Fronteras ondeando. A veces precariamente, entre las ruinas de sus hospitales bombardeados, pero siempre allí.
 
 No puedo pensar en un solo símbolo que nos recuerde que no todo está perdido, y todavía hay gente buena por ahí.
 
 También es una de las pocas organizaciones que tiene el alcance global para ir y ayudar allí donde más se necesita. Estamos acostumbrados a que trabajen en regiones afectadas por la enfermedad, pero cuando la pandemia COVID-19 arrancó a nuestros sistemas de salud a astutos, _MSF_ aumentó a la plancha, desplegando sus equipos en Europa Occidental en Estados Unidos, y en cualquier lugar donde la necesidad era más acuta.
 
-I hope that this explains the choice of Médecins Sans Frontières/Doctors Without Borders as FreeSewing's charity of choice. Y espero que se unan a nosotros para hacer el mundo un poco mejor.
+Espero que esto explique la elección de Médecins Sans Frontières/Médicos Sin Fronteras como elección de organización benéfica en FreeSewing. Y espero que se unan a nosotros para hacer el mundo un poco mejor.
 
 Así que estoy feliz de hacer [esta promesa](/docs/various/pledge/).

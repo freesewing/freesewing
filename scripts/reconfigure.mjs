@@ -6,18 +6,20 @@ import chalk from 'chalk'
 import mustache from 'mustache'
 import conf from '../lerna.json' assert { type: 'json' }
 const { version } = conf
-import {
-  software as software,
-  publishedTypes as types,
-  designs,
-  plugins,
-} from '../config/software/index.mjs'
-import { buildOrder } from '../config/build-order.mjs'
-import rootPackageJson from '../package.json' assert { type: 'json' }
+import { software, publishedTypes as types, designs, plugins } from '../config/software/index.mjs'
 import { capitalize } from '../packages/core/src/index.mjs'
 
 // Working directory
 const cwd = process.cwd()
+
+/*
+ * When we're building a site (on Vercel for example) SITEBUILD
+ * will be set and we'll do things differently to speed up the build.
+ * To make that check easy, we setup this SITEBUILD variable
+ */
+const SITEBUILD = process.env.SITEBUILD || false
+
+if (SITEBUILD) console.log('Site build | Configure monorepo accordingly')
 
 /*
  * This object holds info about the repository
@@ -26,24 +28,26 @@ const repo = {
   path: cwd,
   defaults: readConfigFile('defaults.yaml'),
   keywords: readConfigFile('keywords.yaml'),
-  badges: readConfigFile('badges.yaml'),
+  badges: SITEBUILD ? null : readConfigFile('badges.yaml'),
   scripts: readConfigFile('scripts.yaml'),
-  changelog: readConfigFile('changelog.yaml'),
+  changelog: SITEBUILD ? null : readConfigFile('changelog.yaml'),
   changetypes: ['Breaking', 'Added', 'Changed', 'Deprecated', 'Removed', 'Fixed', 'Security'],
   dependencies: readConfigFile('dependencies.yaml', { version }),
   exceptions: readConfigFile('exceptions.yaml'),
   templates: {
     pkg: readTemplateFile('package.dflt.json'),
-    changelog: readTemplateFile('changelog.dflt.md'),
-    readme: readTemplateFile('readme.dflt.md'),
-    build: readTemplateFile('build.dflt.mjs'),
-    pluginTests: readTemplateFile('plugin.test.mjs'),
-    designTests: readTemplateFile('design.test.mjs.mustache'),
-    data: readTemplateFile('data.dflt.mjs.mustache'),
+    changelog: SITEBUILD ? null : readTemplateFile('changelog.dflt.md'),
+    readme: SITEBUILD ? null : readTemplateFile('readme.dflt.md'),
+    build: SITEBUILD ? null : readTemplateFile('build.dflt.mjs'),
+    pluginTests: SITEBUILD ? null : readTemplateFile('plugin.test.mjs'),
+    designTests: SITEBUILD ? null : readTemplateFile('design.test.mjs.mustache'),
+    data: SITEBUILD ? null : readTemplateFile('data.dflt.mjs.mustache'),
   },
   dirs: foldersByType(),
-  contributors: fs.readFileSync(path.join(cwd, 'CONTRIBUTORS.md'), 'utf-8'),
-  ac: JSON.parse(fs.readFileSync(path.join(cwd, '.all-contributorsrc'), 'utf-8')),
+  contributors: SITEBUILD ? null : fs.readFileSync(path.join(cwd, 'CONTRIBUTORS.md'), 'utf-8'),
+  ac: SITEBUILD
+    ? null
+    : JSON.parse(fs.readFileSync(path.join(cwd, '.all-contributorsrc'), 'utf-8')),
 }
 
 /*
@@ -63,19 +67,23 @@ for (const cp of copyThese) {
 }
 
 // Step 1: Generate main README file from template
-log.write(chalk.blueBright('Generating out main README file...'))
-fs.writeFileSync(
-  path.join(repo.path, 'README.md'),
-  mustache.render(
-    fs.readFileSync(path.join(repo.path, 'config', 'templates', 'readme.main.md'), 'utf-8'),
-    { allcontributors: repo.ac.contributors.length }
-  ) + repo.contributors
-)
-log.write(chalk.green(' Done\n'))
+if (!SITEBUILD) {
+  log.write(chalk.blueBright('Generating out main README file...'))
+  fs.writeFileSync(
+    path.join(repo.path, 'README.md'),
+    mustache.render(
+      fs.readFileSync(path.join(repo.path, 'config', 'templates', 'readme.main.md'), 'utf-8'),
+      { allcontributors: repo.ac.contributors.length }
+    ) + repo.contributors
+  )
+  log.write(chalk.green(' Done\n'))
+}
 
 // Step 2: Validate package configuration
-log.write(chalk.blueBright('Validating configuration...'))
-if (validate()) log.write(chalk.green(' Done\n'))
+if (!SITEBUILD) {
+  log.write(chalk.blueBright('Validating configuration...'))
+  if (validate()) log.write(chalk.green(' Done\n'))
+}
 
 // Step 3: Generate package.json, pkg.mjs, README, and CHANGELOG
 log.write(chalk.blueBright('Generating package-specific files...'))
@@ -84,50 +92,40 @@ for (const pkg of Object.values(software)) {
     path.join(cwd, pkg.folder, pkg.name, 'package.json'),
     JSON.stringify(packageJson(pkg), null, 2) + '\n'
   )
-  if (pkg.type !== 'site') {
-    fs.writeFileSync(
-      path.join(cwd, pkg.folder, pkg.name, 'data.mjs'),
-      mustache.render(repo.templates.data, { name: fullName(pkg.name), version })
-    )
-    fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'README.md'), readme(pkg))
-    if (repo.exceptions.customBuild.indexOf(pkg.name) === -1) {
-      fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'build.mjs'), repo.templates.build)
+  if (!SITEBUILD) {
+    if (pkg.type !== 'site') {
+      fs.writeFileSync(
+        path.join(cwd, pkg.folder, pkg.name, 'data.mjs'),
+        mustache.render(repo.templates.data, { name: fullName(pkg.name), version })
+      )
+      fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'README.md'), readme(pkg))
+      if (repo.exceptions.customBuild.indexOf(pkg.name) === -1) {
+        fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'build.mjs'), repo.templates.build)
+      }
+      fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'CHANGELOG.md'), changelog(pkg))
     }
-    fs.writeFileSync(path.join(cwd, pkg.folder, pkg.name, 'CHANGELOG.md'), changelog(pkg))
   }
 }
 log.write(chalk.green(' Done\n'))
 
 // Step 4: Generate overall CHANGELOG.md
-fs.writeFileSync(path.join(repo.path, 'CHANGELOG.md'), changelog('global'))
+if (!SITEBUILD) fs.writeFileSync(path.join(repo.path, 'CHANGELOG.md'), changelog('global'))
 
-// Step 5: Generate build script for published software
-log.write(chalk.blueBright('Generating buildall node script...'))
-const buildSteps = buildOrder.map((step, i) => `lerna run cibuild_step${i}`)
-const buildAllCommand = 'npm run reconfigure && ' + buildSteps.join(' && ')
-const newRootPkgJson = { ...rootPackageJson }
-newRootPkgJson.scripts.buildall = buildAllCommand
-newRootPkgJson.scripts.wbuildall = buildAllCommand.replace(/cibuild/g, 'wcibuild')
-fs.writeFileSync(
-  path.join(repo.path, 'package.json'),
-  JSON.stringify(newRootPkgJson, null, 2) + '\n'
-)
-log.write(chalk.green(' Done\n'))
-
-// Step 6: Generate tests for designs and plugins
-for (const design in designs) {
-  fs.writeFileSync(
-    path.join(repo.path, 'designs', design, 'tests', 'shared.test.mjs'),
-    mustache.render(repo.templates.designTests, { name: design, Name: capitalize(design) })
-  )
+// Step 5: Generate tests for designs and plugins
+if (!SITEBUILD) {
+  for (const design in designs) {
+    fs.writeFileSync(
+      path.join(repo.path, 'designs', design, 'tests', 'shared.test.mjs'),
+      mustache.render(repo.templates.designTests, { name: design, Name: capitalize(design) })
+    )
+  }
+  for (const plugin in plugins) {
+    fs.writeFileSync(
+      path.join(repo.path, 'plugins', plugin, 'tests', 'shared.test.mjs'),
+      repo.templates.pluginTests
+    )
+  }
 }
-for (const plugin in plugins) {
-  fs.writeFileSync(
-    path.join(repo.path, 'plugins', plugin, 'tests', 'shared.test.mjs'),
-    repo.templates.pluginTests
-  )
-}
-
 // All done
 log.write(chalk.green(' All done\n'))
 process.exit()
@@ -222,22 +220,17 @@ function scripts(pkg) {
     }
   }
 
-  // Enforce build order by generating the cibuild_stepX scrips
-  for (let step = 0; step < buildOrder.length; step++) {
-    if (buildOrder[step].indexOf(pkg.name) !== -1) {
-      if (runScripts.prebuild) {
-        runScripts[`precibuild_step${step}`] = runScripts.prebuild
-        if (!runScripts.prewbuild) runScripts.prewbuild = runScripts.prebuild
-      }
-      if (runScripts.build) {
-        runScripts[`cibuild_step${step}`] = runScripts.build
+  // make windows versions of build prebuild scripts
+  runScripts.wbuild = runScripts.wbuild || runScripts.build
+  runScripts.prewbuild = runScripts.prewbuild || runScripts.prebuild
 
-        // add windows scripts
-        if (!runScripts.wbuild) runScripts.wbuild = runScripts.build
-
-        runScripts[`wcibuild_step${step}`] = runScripts.wbuild
-      }
-    }
+  // make prebuild:all and windows versions of build:all and prebuild:all
+  if (runScripts['build:all'] !== undefined) {
+    runScripts['wbuild:all'] = runScripts['wbuild:all'] || (runScripts.wbuild && 'yarn wbuild')
+    runScripts['prebuild:all'] =
+      runScripts['prebuild:all'] || (runScripts.prebuild && 'yarn prebuild')
+    runScripts['prewbuild:all'] =
+      runScripts['prewbuild:all'] || (runScripts.prewbuild && 'yarn prewbuild')
   }
 
   return runScripts
@@ -281,6 +274,7 @@ function packageJson(pkg) {
   }
   pkgConf.keywords = pkgConf.keywords.concat(keywords(pkg))
   pkgConf.scripts = scripts(pkg)
+
   if (repo.exceptions.skipTests.indexOf(pkg.name) !== -1) {
     pkgConf.scripts.test = `echo "skipping tests for ${pkg.name}"`
     pkgConf.scripts.testci = `echo "skipping tests for ${pkg.name}"`
@@ -466,7 +460,7 @@ function formatDate(date) {
 function validate() {
   for (const type in repo.dirs) {
     for (const dir of repo.dirs[type]) {
-      if (typeof software[dir] === 'undefined' || typeof software[dir].description !== 'string') {
+      if (typeof software?.[dir]?.description !== 'string') {
         log.write(chalk.redBright(` No description for package ${type}/${dir}` + '\n'))
         return false
       }

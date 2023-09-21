@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { bottomsidepanel } from './bottomsidepanel.mjs'
 
 function draftHortensiaSidepanel({
@@ -132,6 +131,9 @@ function draftHortensiaSidepanel({
     .close()
     .attr('class', 'fabric')
 
+  store.cutlist.addCut()
+  store.cutlist.addCut({ material: 'lining' })
+
   // Complete?
   if (complete) {
     if (options.size > 0.4) {
@@ -147,12 +149,8 @@ function draftHortensiaSidepanel({
       at: points.title,
       nr: 1,
       title: 'SidePanel',
+      align: 'center',
     })
-
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
-    // points.__titleFor.attr("data-text-class", "center");
 
     snippets.topNotch = new Snippet('notch', points.topMiddle)
     snippets.zipperLeft = new Snippet('notch', points.topZipperLeft)
@@ -230,6 +228,5 @@ export const sidepanel = {
       menu: 'style',
     },
   },
-  plugins: [pluginBundle],
   draft: draftHortensiaSidepanel,
 }

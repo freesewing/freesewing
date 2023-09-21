@@ -1,5 +1,6 @@
 import chai from 'chai'
 import { Design } from '../src/index.mjs'
+import { fixturePart } from './fixtures/part.mjs'
 
 const expect = chai.expect
 
@@ -567,7 +568,7 @@ describe('Pattern', () => {
         plugins: plugin,
         draft: (part) => part,
       }
-      const design = new Design({ parts: [part] })
+      const design = new Design({ parts: [part], noCorePlugins: true })
       const pattern = new design()
       pattern.draft()
       expect(pattern.plugins.hooks.preRender).to.have.lengthOf(1)
@@ -597,7 +598,7 @@ describe('Pattern', () => {
         plugins: [plugin1, plugin2],
         draft: (part) => part,
       }
-      const design = new Design({ parts: [part] })
+      const design = new Design({ parts: [part], noCorePlugins: true })
       const pattern = new design()
       pattern.__init()
       expect(pattern.plugins.hooks.preRender).to.have.lengthOf(2)
@@ -619,7 +620,7 @@ describe('Pattern', () => {
         plugins: [{ plugin, condition }],
         draft: (part) => part,
       }
-      const design = new Design({ parts: [part] })
+      const design = new Design({ parts: [part], noCorePlugins: true })
       const pattern = new design()
       pattern.__init()
       expect(pattern.plugins.hooks.preRender).to.have.lengthOf(1)
@@ -641,7 +642,7 @@ describe('Pattern', () => {
         plugins: [{ plugin, condition }],
         draft: (part) => part,
       }
-      const design = new Design({ parts: [part] })
+      const design = new Design({ parts: [part], noCorePlugins: true })
       const pattern = new design()
       expect(pattern.plugins.hooks.preRender).to.have.lengthOf(0)
     })
@@ -675,7 +676,7 @@ describe('Pattern', () => {
         ],
         draft: (part) => part,
       }
-      const design = new Design({ parts: [part] })
+      const design = new Design({ parts: [part], noCorePlugins: true })
       const pattern = new design()
       pattern.draft()
       expect(pattern.plugins.hooks.preRender).to.have.lengthOf(1)
@@ -704,7 +705,7 @@ describe('Pattern', () => {
         plugins: [{ plugin: plugin1, condition: condition2 }],
         draft: (part) => part,
       }
-      const design = new Design({ parts: [part, part2] })
+      const design = new Design({ parts: [part, part2], noCorePlugins: true })
       const pattern = new design()
       pattern.__init()
       expect(pattern.config.plugins).to.be.an('object').that.has.all.keys('example1', 'example1_')
@@ -746,6 +747,7 @@ describe('Pattern', () => {
       }
       const design = new Design({
         parts: [part1, part2],
+        noCorePlugins: true,
       })
       const pattern = new design()
       pattern.__init()
@@ -866,12 +868,12 @@ describe('Pattern', () => {
       expect(typeof partContext.store.log).to.equal('object')
       expect(typeof partContext.store.log.debug).to.equal('function')
       expect(typeof partContext.store.log.info).to.equal('function')
-      expect(typeof partContext.store.log.warning).to.equal('function')
+      expect(typeof partContext.store.log.warn).to.equal('function')
       expect(typeof partContext.store.log.error).to.equal('function')
       expect(typeof partContext.store.logs).to.equal('object')
       expect(Array.isArray(partContext.store.logs.debug)).to.equal(true)
       expect(Array.isArray(partContext.store.logs.info)).to.equal(true)
-      expect(Array.isArray(partContext.store.logs.warning)).to.equal(true)
+      expect(Array.isArray(partContext.store.logs.warn)).to.equal(true)
       expect(Array.isArray(partContext.store.logs.error)).to.equal(true)
     })
   })
@@ -943,6 +945,186 @@ describe('Pattern', () => {
         error = err
       }
       expect('' + error).to.contain('Unknown option type')
+    })
+  })
+  describe('Draft Order', () => {
+    describe('With no dependencies', () => {
+      it('Draft order should be the same the parts order in the config', () => {
+        const expectedMembers = []
+        const parts = []
+        for (var i = 0; i < 4; i++) {
+          let name = `part${i + 1}`
+          expectedMembers.push(name)
+          parts.push({ name, draft: (part) => part })
+        }
+
+        const Pattern = new Design({ parts })
+        const pattern = new Pattern().__init()
+        expect(pattern.config.draftOrder).to.have.ordered.members(expectedMembers)
+      })
+    })
+
+    describe('With simple dependencies', () => {
+      const afterPart = fixturePart('afterPart')
+      const fromPart = fixturePart('fromPart')
+
+      it('After dependencies should come before the parts that depend on them', () => {
+        const mainPart = fixturePart('mainPart', {
+          after: afterPart,
+        })
+
+        const Pattern = new Design({ parts: [mainPart] })
+        const pattern = new Pattern().__init()
+        expect(pattern.config.draftOrder).to.have.ordered.members(['afterPart', 'mainPart'])
+      })
+      it('After dependencies should be resolved in the order they are added to the part config', () => {
+        const secondAfter = fixturePart('secondAfter')
+        const mainPart = fixturePart('mainPart', {
+          after: [afterPart, secondAfter],
+        })
+
+        const Pattern = new Design({ parts: [mainPart] })
+        const pattern = new Pattern().__init()
+        expect(pattern.config.draftOrder).to.have.ordered.members([
+          'afterPart',
+          'secondAfter',
+          'mainPart',
+        ])
+      })
+      it('From dependencies should come before the parts that depend on them', () => {
+        const mainPart = fixturePart('mainPart', {
+          from: fromPart,
+        })
+
+        const Pattern = new Design({ parts: [mainPart] })
+        const pattern = new Pattern().__init()
+        expect(pattern.config.draftOrder).to.have.ordered.members(['fromPart', 'mainPart'])
+      })
+      it('After dependencies should come before from dependencies', () => {
+        const mainPart = fixturePart('mainPart', {
+          after: afterPart,
+          from: fromPart,
+        })
+
+        const Pattern = new Design({ parts: [mainPart] })
+        const pattern = new Pattern().__init()
+        expect(pattern.config.draftOrder).to.have.ordered.members([
+          'afterPart',
+          'fromPart',
+          'mainPart',
+        ])
+      })
+    })
+
+    describe('With Complex dependencies', () => {
+      it('After dependencies should come before the entire from dependency chain', () => {
+        const inheritedFrontBase = fixturePart('inheritedFrontBase')
+        const blockWaistband = fixturePart('blockWaistband')
+        const inheritedWaistbandBase = fixturePart('inheritedWaistbandBase', {
+          from: blockWaistband,
+          after: inheritedFrontBase,
+        })
+        const inheritedBase = fixturePart('inheritedBase')
+        const inheritedWaistband = fixturePart('inheritedWaistband', {
+          from: inheritedWaistbandBase,
+          after: inheritedBase,
+        })
+
+        const mainBack = fixturePart('mainBack')
+        const inheritedFront = fixturePart('inheritedFront')
+        const mainFront = fixturePart('mainFront', {
+          after: mainBack,
+          from: inheritedFront,
+        })
+
+        const mainWaistband = fixturePart('mainWaistband', {
+          from: inheritedWaistband,
+          after: mainFront,
+        })
+
+        const Pattern = new Design({ parts: [mainWaistband] })
+        const pattern = new Pattern().__init()
+        /**
+         * chain:
+         * mainWaistBand
+         *  after: mainFront
+         *    after: mainBack
+         *    from: inheritedFront
+         *  from: inheritedWaistband
+         *    after: inheritedBase
+         *    from: inheritedWaistbandBase
+         *      after: inheritedFrontBase
+         *      from: blockWaistband
+         */
+        expect(pattern.config.draftOrder).to.have.ordered.members([
+          'mainBack',
+          'inheritedFront',
+          'mainFront',
+          'inheritedBase',
+          'inheritedFrontBase',
+          'blockWaistband',
+          'inheritedWaistbandBase',
+          'inheritedWaistband',
+          'mainWaistband',
+        ])
+      })
+
+      it('Parts with multiple dependents should come before all dependency chains', () => {
+        const inheritedFrontBase = fixturePart('inheritedFrontBase')
+        const blockWaistband = fixturePart('blockWaistband')
+        const inheritedWaistbandBase = fixturePart('inheritedWaistbandBase', {
+          from: blockWaistband,
+          after: inheritedFrontBase,
+        })
+        const inheritedBase = fixturePart('inheritedBase')
+        const inheritedWaistband = fixturePart('inheritedWaistband', {
+          from: inheritedWaistbandBase,
+          after: inheritedBase,
+        })
+
+        const inheritedFront = fixturePart('inheritedFront')
+        const mainBack = fixturePart('mainBack', {
+          from: inheritedFront,
+          after: inheritedBase,
+        })
+        const mainFront = fixturePart('mainFront', {
+          after: mainBack,
+          from: inheritedFront,
+        })
+
+        const mainWaistband = fixturePart('mainWaistband', {
+          from: inheritedWaistband,
+          after: mainFront,
+        })
+
+        const Pattern = new Design({ parts: [mainWaistband] })
+        const pattern = new Pattern().__init()
+        /**
+         * chain:
+         * mainWaistBand
+         *  after: mainFront
+         *    after: mainBack
+         *      after: inheritedBase
+         *      from: inheritedFront
+         *    from: inheritedFront
+         *  from: inheritedWaistband
+         *    after: inheritedBase
+         *    from: inheritedWaistbandBase
+         *      after: inheritedFrontBase
+         *      from: blockWaistband
+         */
+        expect(pattern.config.draftOrder).to.have.ordered.members([
+          'inheritedBase',
+          'inheritedFront',
+          'mainBack',
+          'mainFront',
+          'inheritedFrontBase',
+          'blockWaistband',
+          'inheritedWaistbandBase',
+          'inheritedWaistband',
+          'mainWaistband',
+        ])
+      })
     })
   })
 })

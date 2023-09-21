@@ -13,7 +13,6 @@ function simoneFbaFront({
   snippets,
   utils,
   sa,
-  complete,
   log,
   part,
 }) {
@@ -313,27 +312,6 @@ function simoneFbaFront({
   paths.frontArmhole.ops[0].to.x = points.armholePitch.x
   paths.frontArmhole.ops[0].to.y = points.armholePitch.y
 
-  for (let s in snippets) delete snippets[s]
-  if (complete) {
-    // Put the snippets in the right place
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: [
-        'armhole',
-        'armholePitch',
-        'cfArmhole',
-        'cfWaist',
-        'cfHem',
-        'hips',
-        'waist',
-        'bust',
-        'cfBust',
-      ],
-    })
-    points.logo = new Point(points.armhole.x / 2, points.armhole.y)
-    snippets.logo = new Snippet('logo', points.logo)
-  }
-
   //
   // Now recreate the paths and let Simon take it from here
   //
@@ -396,18 +374,45 @@ function simoneFbaFront({
   paths.saBaseFromArmhole.hide()
   paths.saBase.hide()
 
-  if (complete && sa) {
-    paths.saFrench = paths.saBase.offset(sa * options.ffsa).attr('class', 'fabric sa')
+  if (sa) {
+    paths.ffsa = paths.saBase.offset(sa * options.ffsa).attr('class', 'fabric sa')
     paths.saFromArmhole = paths.saBaseFromArmhole.offset(sa).attr('class', 'fabric sa')
     paths.hemSa = paths.hemBase.offset(sa * 3).attr('class', 'fabric sa')
     paths.saConnect = new Path()
       .move(paths.hemSa.end())
-      .line(paths.saFrench.start())
-      .move(paths.saFrench.end())
+      .line(paths.ffsa.start())
+      .move(paths.ffsa.end())
       .line(paths.saFromArmhole.start())
       .attr('class', 'fabric sa')
     delete paths.sa
   }
+
+  /*
+   * Annotations
+   */
+
+  // Clean up snipets
+  for (let s in snippets) delete snippets[s]
+
+  // Notches
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: [
+      'armhole',
+      'armholePitch',
+      'cfArmhole',
+      'cfWaist',
+      'cfHem',
+      'hips',
+      'waist',
+      'bust',
+      'cfBust',
+    ],
+  })
+
+  // Logo
+  points.logo = new Point(points.armhole.x / 2, points.armhole.y)
+  snippets.logo = new Snippet('logo', points.logo)
 
   return part
 }
@@ -415,7 +420,7 @@ function simoneFbaFront({
 export const fbaFront = {
   name: 'simone.fbaFront',
   from: front,
-  measurements: ['highBust'],
+  measurements: ['highBust', 'bustSpan', 'hpsToBust'],
   hide: {
     self: true,
     from: true,

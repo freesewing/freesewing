@@ -27,6 +27,16 @@ describe('Snippet', () => {
     expect(s.attributes.get('class')).to.equal('less')
   })
 
+  it('Should scale a snippet', () => {
+    let s = new Snippet('test', new Point(12, -34)).scale(0.1234)
+    expect(s.attributes.get('data-scale')).to.equal('0.1234')
+  })
+
+  it('Should rotate a snippet', () => {
+    let s = new Snippet('test', new Point(12, -34)).rotate(123)
+    expect(s.attributes.get('data-rotate')).to.equal('123')
+  })
+
   it('Should get a snippet via the snippets proxy', () => {
     let result
     const part = {

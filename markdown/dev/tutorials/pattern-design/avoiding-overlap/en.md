@@ -3,8 +3,8 @@ title: Avoiding overlap
 order: 220
 ---
 
-While we've only drawn the end of one strap, it's pretty obvious they overlap.
-Which is a big no-no in sewing patterns, so we're going to have to address
+While we've only drawn the end of one strap, it's pretty obvious they overlap,
+which makes it impossible to cut out, so we're going to have to address
 that.
 
 Specifically, we're going to rotate our strap out of the way until it no longer overlaps.
@@ -14,7 +14,7 @@ to rotate.
 Once we have our list of points to rotate, we can rotate them. How far? Until the strap no longer overlaps.
 
 <Example tutorial caption="It is looking pretty wonky now, but we'll deal with that next">
-```js
+```design/src/bib.mjs
 function draftBib({
   Path,
   Point,
@@ -31,18 +31,18 @@ function draftBib({
   let target = (measurements.head * options.neckRatio) /4
   let delta
   do {
-  	points.right = new Point(tweak * measurements.head / 10, 0)
-  	points.bottom = new Point(0, tweak * measurements.head / 12)
+    points.right = new Point(tweak * measurements.head / 10, 0)
+    points.bottom = new Point(0, tweak * measurements.head / 12)
 
-  	points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
-  	points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
+    points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
+    points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
 
-  	paths.quarterNeck = new Path()
-  	  .move(points.right)
-  	  .curve(points.rightCp1, points.bottomCp2, points.bottom)
+    paths.quarterNeck = new Path()
+      .move(points.right)
+      .curve(points.rightCp1, points.bottomCp2, points.bottom)
       .hide() // Add this line
 
-  	delta = paths.quarterNeck.length() - target
+    delta = paths.quarterNeck.length() - target
     if (delta > 0) tweak = tweak * 0.99
     else tweak = tweak * 1.02
   } while (Math.abs(delta) > 1)

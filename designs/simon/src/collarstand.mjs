@@ -12,7 +12,6 @@ function simonCollarStand({
   Snippet,
   snippets,
   complete,
-  paperless,
   macro,
   options,
   part,
@@ -114,7 +113,8 @@ function simonCollarStand({
     .close()
     .attr('class', 'fabric')
 
-  // Complete pattern?
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+
   if (complete) {
     // Helplines
     paths.help = new Path()
@@ -125,101 +125,110 @@ function simonCollarStand({
       .move(points.leftTopCf)
       .line(points.leftBottomCf)
       .attr('class', 'dotted')
-
-    // Grainline
-    macro('grainline', {
-      from: points.leftCf,
-      to: points.rightCf,
-    })
-
-    // Title
-    points.title = points.center.shift(0, 20)
-    macro('title', {
-      at: points.title,
-      nr: 6,
-      title: 'collarStand',
-      scale: 0.6,
-    })
-
-    // Notches
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: [
-        'rightTopCf',
-        'rightBottomCf',
-        'leftBottomCf',
-        'leftTopCf',
-        'rightBottomEdge',
-        'leftBottomEdge',
-      ],
-    })
-
-    // Button and buttonhole
-    snippets.button = new Snippet('button', points.leftCf)
-    const angle = options.collarStandCurve - options.collarStandBend - 180
-    points.buttonhole = points.rightCf.shift(angle, 3)
-    snippets.buttonhole = new Snippet('buttonhole', points.buttonhole).attr(
-      'data-rotate',
-      90 - angle
-    )
-
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-    }
   }
 
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.topMid,
-      to: points.rightTopCf,
-      y: points.topMid.y - 15 - sa,
-    })
-    macro('hd', {
-      from: points.leftTopCf,
-      to: points.topMid,
-      y: points.topMid.y - 15 - sa,
-    })
-    macro('hd', {
-      from: points.topMid,
-      to: points.rightBottomEdge,
-      y: points.topMid.y - 30 - sa,
-    })
-    macro('hd', {
-      from: points.leftBottomEdge,
-      to: points.topMid,
-      y: points.topMid.y - 30 - sa,
-    })
-    macro('pd', {
-      path: new Path()
-        .move(points.leftBottomCf)
-        .curve(points.leftBottomCfCp2, points.leftBottomHingeCp1, points.leftBottomHinge)
-        .curve(points.leftBottomHingeCp2, points.bottomMidCp1, points.bottomMid)
-        .curve(points.bottomMidCp2, points.rightBottomHingeCp1, points.rightBottomHinge)
-        .curve(points.rightBottomHingeCp2, points.rightBottomCfCp1, points.rightBottomCf),
-      d: 15 + sa,
-    })
-    macro('ld', {
-      from: points.leftBottomEdge,
-      to: points.leftBottomCf,
-      d: -30 - sa,
-    })
-    macro('ld', {
-      from: points.rightBottomCf,
-      to: points.rightBottomEdge,
-      d: -30 - sa,
-    })
-    macro('ld', {
-      from: points.rightBottomCf,
-      to: points.rightTopCf,
-      d: -15 - sa - store.get('buttonholePlacketWidth') / 2,
-    })
-    macro('vd', {
-      from: points.rightBottomCf,
-      to: points.topMid,
-      x: points.rightBottomEdge.x + 30 + sa,
-    })
-  }
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut([
+    { cut: 2, from: 'fabric' },
+    { cut: 2, from: 'interfacing' },
+  ])
+
+  // Grainline
+  macro('grainline', {
+    from: points.leftCf,
+    to: points.rightCf,
+  })
+
+  // Title
+  points.title = points.center.shift(0, 20)
+  macro('title', {
+    at: points.title,
+    nr: 6,
+    title: 'collarStand',
+    scale: 0.6,
+  })
+
+  // Notches
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: [
+      'rightTopCf',
+      'rightBottomCf',
+      'leftBottomCf',
+      'leftTopCf',
+      'rightBottomEdge',
+      'leftBottomEdge',
+    ],
+  })
+
+  // Button and buttonhole
+  snippets.button = new Snippet('button', points.leftCf)
+  const angle = options.collarStandCurve - options.collarStandBend - 180
+  points.buttonhole = points.rightCf.shift(angle, 3)
+  snippets.buttonhole = new Snippet('buttonhole', points.buttonhole).attr('data-rotate', 90 - angle)
+
+  // Dimensions
+  macro('hd', {
+    id: 'wCbToNotchRight',
+    from: points.topMid,
+    to: points.rightTopCf,
+    y: points.topMid.y - 15 - sa,
+  })
+  macro('hd', {
+    id: 'wCbToNotchLeft',
+    from: points.leftTopCf,
+    to: points.topMid,
+    y: points.topMid.y - 15 - sa,
+  })
+  macro('hd', {
+    id: 'wCbToEdgeRight',
+    from: points.topMid,
+    to: points.rightBottomEdge,
+    y: points.topMid.y - 30 - sa,
+  })
+  macro('hd', {
+    id: 'wCbToEdgeLeft',
+    from: points.leftBottomEdge,
+    to: points.topMid,
+    y: points.topMid.y - 30 - sa,
+  })
+  macro('pd', {
+    id: 'lBottomFit',
+    path: new Path()
+      .move(points.leftBottomCf)
+      .curve(points.leftBottomCfCp2, points.leftBottomHingeCp1, points.leftBottomHinge)
+      .curve(points.leftBottomHingeCp2, points.bottomMidCp1, points.bottomMid)
+      .curve(points.bottomMidCp2, points.rightBottomHingeCp1, points.rightBottomHinge)
+      .curve(points.rightBottomHingeCp2, points.rightBottomCfCp1, points.rightBottomCf),
+    d: 15 + sa,
+  })
+  macro('ld', {
+    id: 'lLeftNotchToEdge',
+    from: points.leftBottomEdge,
+    to: points.leftBottomCf,
+    d: -30 - sa,
+  })
+  macro('ld', {
+    id: 'lRightNotchToEdge',
+    from: points.rightBottomCf,
+    to: points.rightBottomEdge,
+    d: -30 - sa,
+  })
+  macro('ld', {
+    id: 'hStand',
+    from: points.rightBottomCf,
+    to: points.rightTopCf,
+    d: -15 - sa - store.get('buttonholePlacketWidth') / 2,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.rightBottomCf,
+    to: points.topMid,
+    x: points.rightBottomEdge.x + 30 + sa,
+  })
 
   return part
 }

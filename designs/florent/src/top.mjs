@@ -1,7 +1,4 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function draftFlorentTop({
-  paperless,
   sa,
   points,
   macro,
@@ -10,14 +7,13 @@ function draftFlorentTop({
   paths,
   snippets,
   Snippet,
-  complete,
   store,
   part,
 }) {
   const fitCap = (part, scale) => {
-    let { points, options, Point, Path, measurements } = part.shorthand()
+    const { points, options, Point, Path, measurements } = part.shorthand()
 
-    let base = scale * measurements.head * (1 + options.headEase)
+    const base = scale * measurements.head * (1 + options.headEase)
 
     // Top
     points.midFront = new Point(0, 0)
@@ -55,8 +51,8 @@ function draftFlorentTop({
     points.innerGuideCp1 = points.innerGuide.shift(-38, base * 0.052)
     points.innerGuideCp2 = points.innerGuide.shift(142, base * 0.035)
 
-    let backLength = points.backEdge.dist(points.midBack) * 2
-    let sideLength =
+    const backLength = points.backEdge.dist(points.midBack) * 2
+    const sideLength =
       new Path()
         .move(points.tip)
         .curve(points.tipCp2, points.innerGuideCp1, points.innerGuide)
@@ -68,9 +64,9 @@ function draftFlorentTop({
   }
 
   const sideSeamDelta = (part) => {
-    let { Path } = part.shorthand()
+    const { Path } = part.shorthand()
 
-    let top = new Path()
+    const top = new Path()
       .move(points.midFront)
       .curve(points.midFrontCp2, points.midSideCp1, points.midSide)
       .curve(points.midSideCp2, points.backHollowCp1, points.backHollow)
@@ -78,7 +74,7 @@ function draftFlorentTop({
       .line(points.backEdge)
       .length()
 
-    let side = new Path()
+    const side = new Path()
       .move(points.foldTop)
       .curve(points.foldTopCp1, points.outerGuideCp1, points.outerGuide)
       .curve(points.outerGuideCp2, points.outerTopCp1, points.outerTop)
@@ -132,92 +128,116 @@ function draftFlorentTop({
     .curve(points.outerTopCp2, points.tipCp1, points.tip)
     .curve(points.tipCp2, points.innerGuideCp1, points.innerGuide)
     .curve(points.innerGuideCp2, points.foldBottomCp2, points.foldBottom)
-    .attr('class', 'fabric')
+    .addClass('fabric')
+
+  if (sa) paths.sa = paths.seam.offset(sa).addClass('fabric sa')
 
   // Uncomment to see the side part here
   paths.side.hide()
 
-  if (complete) {
-    points.title = new Point(points.midMid.x, points.midFrontCp2.y)
-    macro('title', {
-      at: points.title,
-      nr: 1,
-      title: 'top',
-    })
-    points.logo = new Point(points.title.x / 2, points.title.y)
-    snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.75)
-    points.grainlineFrom = new Point(points.midSideCp1.x, points.midBack.y)
-    points.grainlineTo = points.midBack.clone()
-    macro('grainline', {
-      from: points.grainlineFrom,
-      to: points.grainlineTo,
-    })
-    macro('miniscale', { at: new Point(points.title.x * 0.75, points.title.y) })
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['midMid', 'backHollow', 'midSide'],
-    })
-    store.set(
-      'topDistanceToFirstNotch',
-      new Path()
-        .move(points.backEdge)
-        .line(points.backSide)
-        .curve(points.backSideCp1, points.backHollowCp2, points.backHollow)
-        .length()
-    )
-    store.set(
-      'topDistanceToSecondNotch',
-      new Path()
-        .move(points.backHollow)
-        .curve(points.backHollowCp1, points.midSideCp2, points.midSide)
-        .length() + store.get('topDistanceToFirstNotch')
-    )
+  /*
+   * Annotations
+   */
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+  // Cutlist
+  store.cutlist.setCut([
+    { cut: 2, from: 'fabric' },
+    { cut: 2, from: 'lining' },
+  ])
 
-    if (paperless) {
-      macro('vd', {
-        from: points.midSide,
-        to: points.foldTop,
-        x: points.foldTop.x - sa - 15,
-      })
-      macro('vd', {
-        from: points.backHollow,
-        to: points.midMid,
-        x: points.midMid.x - 15,
-      })
-      macro('vd', {
-        from: points.midBack,
-        to: points.midMid,
-        x: points.midBack.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.backEdge,
-        to: points.midMid,
-        x: points.midBack.x + sa + 30,
-      })
-      macro('hd', {
-        from: points.foldTop,
-        to: points.midSide,
-        y: points.midSide.y + sa + 15,
-      })
-      macro('hd', {
-        from: points.foldTop,
-        to: points.backHollow,
-        y: points.midSide.y + sa + 30,
-      })
-      macro('hd', {
-        from: points.foldTop,
-        to: points.backEdge,
-        y: points.midSide.y + sa + 45,
-      })
-      macro('hd', {
-        from: points.foldTop,
-        to: points.midBack,
-        y: points.midSide.y + sa + 60,
-      })
-    }
-  }
+  // Grainline
+  points.grainlineFrom = new Point(points.midSideCp1.x, points.midBack.y)
+  points.grainlineTo = points.midBack.clone()
+  macro('grainline', {
+    from: points.grainlineFrom,
+    to: points.grainlineTo,
+  })
+
+  // Title
+  points.title = new Point(points.midMid.x, points.midFrontCp2.y)
+  macro('title', {
+    at: points.title,
+    nr: 1,
+    title: 'top',
+  })
+
+  // Logo
+  points.logo = new Point(points.title.x / 2, points.title.y)
+  snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.75)
+
+  // Miniscale
+  macro('miniscale', { at: new Point(points.title.x * 0.75, points.title.y) })
+
+  // Notches
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: ['midMid', 'backHollow', 'midSide'],
+  })
+  store.set(
+    'topDistanceToFirstNotch',
+    new Path()
+      .move(points.backEdge)
+      .line(points.backSide)
+      .curve(points.backSideCp1, points.backHollowCp2, points.backHollow)
+      .length()
+  )
+  store.set(
+    'topDistanceToSecondNotch',
+    new Path()
+      .move(points.backHollow)
+      .curve(points.backHollowCp1, points.midSideCp2, points.midSide)
+      .length() + store.get('topDistanceToFirstNotch')
+  )
+
+  // Dimensions
+  macro('vd', {
+    id: 'hBottomToTop',
+    from: points.midSide,
+    to: points.foldTop,
+    x: points.foldTop.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hHollowToTop',
+    from: points.backHollow,
+    to: points.midMid,
+    x: points.midMid.x - 15,
+  })
+  macro('vd', {
+    id: 'hTipToTop',
+    from: points.midBack,
+    to: points.midMid,
+    x: points.midBack.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hBottomTipToTop',
+    from: points.backEdge,
+    to: points.midMid,
+    x: points.midBack.x + sa + 30,
+  })
+  macro('hd', {
+    id: 'wFrontToBottom',
+    from: points.foldTop,
+    to: points.midSide,
+    y: points.midSide.y + sa + 15,
+  })
+  macro('hd', {
+    id: 'wFrontToHollow',
+    from: points.foldTop,
+    to: points.backHollow,
+    y: points.midSide.y + sa + 30,
+  })
+  macro('hd', {
+    id: 'wFrontToTipBack',
+    from: points.foldTop,
+    to: points.backEdge,
+    y: points.midSide.y + sa + 45,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.foldTop,
+    to: points.midBack,
+    y: points.midSide.y + sa + 60,
+  })
 
   return part
 }
@@ -232,6 +252,5 @@ export const top = {
     // Percentages
     headEase: { pct: 2, min: 0, max: 5, menu: 'fit' },
   },
-  plugins: [pluginBundle],
   draft: draftFlorentTop,
 }

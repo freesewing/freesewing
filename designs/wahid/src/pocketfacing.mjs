@@ -9,7 +9,6 @@ function wahidPocketFacing({
   options,
   macro,
   complete,
-  paperless,
   store,
   part,
 }) {
@@ -48,51 +47,65 @@ function wahidPocketFacing({
     .line(points.topLeft)
     .close()
     .attr('class', 'fabric')
-  if (complete) {
-    points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    macro('title', {
-      nr: 6,
-      title: 'pocketFacing',
-      at: points.title,
-    })
-    //Grainline
-    let grainlineVariableShift = points.topLeft.dist(points.topRight) * 0.1
-    points.grainlineFromPocketFacing = new Point(points.topLeft.x, points.topLeft.y).shift(
-      0,
-      grainlineVariableShift
-    )
-    points.grainlineToPocketFacing = new Point(points.topLeft.x, points.topLeft.y)
-      .shift(0, grainlineVariableShift)
-      .shift(-90, ph)
-    points.grainlineToPocketFacingRotated = points.grainlineToPocketFacing.rotate(
-      options.pocketAngle,
-      points.grainlineFromPocketFacing
-    )
-    macro('grainline', {
-      from: points.grainlineFromPocketFacing,
-      to: points.grainlineToPocketFacingRotated,
-    })
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['notchLeft', 'notchRight'],
-    })
+
+  if (complete)
     paths.cutline = new Path()
       .move(points.notchLeft)
       .line(points.notchRight)
       .attr('class', 'fabric stroke-sm dashed')
-  }
-  if (paperless) {
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomLeft.y + 15,
-    })
-    macro('vd', {
-      from: points.bottomRight,
-      to: points.topRight,
-      x: points.topRight.x + 15,
-    })
-  }
+
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Title
+  points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+  macro('title', {
+    nr: 4,
+    title: 'pocketFacing',
+    at: points.title,
+  })
+
+  //Grainline
+  let grainlineVariableShift = points.topLeft.dist(points.topRight) * 0.1
+  points.grainlineFromPocketFacing = new Point(points.topLeft.x, points.topLeft.y).shift(
+    0,
+    grainlineVariableShift
+  )
+  points.grainlineToPocketFacing = new Point(points.topLeft.x, points.topLeft.y)
+    .shift(0, grainlineVariableShift)
+    .shift(-90, ph)
+  points.grainlineToPocketFacingRotated = points.grainlineToPocketFacing.rotate(
+    options.pocketAngle,
+    points.grainlineFromPocketFacing
+  )
+  macro('grainline', {
+    from: points.grainlineFromPocketFacing,
+    to: points.grainlineToPocketFacingRotated,
+  })
+
+  // Notches
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: ['notchLeft', 'notchRight'],
+  })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wFull',
+    from: points.bottomLeft,
+    to: points.bottomRight,
+    y: points.bottomLeft.y + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottomRight,
+    to: points.topRight,
+    x: points.topRight.x + 15,
+  })
+
   return part
 }
 

@@ -11,8 +11,6 @@ function hugoHoodSide({
   Snippet,
   snippets,
   measurements,
-  complete,
-  paperless,
   macro,
   part,
 }) {
@@ -63,6 +61,14 @@ function hugoHoodSide({
     .close()
     .attr('class', 'fabric')
 
+  if (sa) {
+    // Reversing this curve sidesteps a bezierjs edge case
+    paths.sa = paths.seam
+      .reverse()
+      .offset(sa * -1)
+      .attr('class', 'fabric sa')
+  }
+
   // Store length of center seam
   store.set(
     'hoodCenterLength',
@@ -73,89 +79,96 @@ function hugoHoodSide({
       .length()
   )
 
-  // Complete pattern?
-  if (complete) {
-    if (sa) {
-      // Reversing this curve sidesteps a bezierjs edge case
-      paths.sa = paths.seam
-        .reverse()
-        .offset(sa * -1)
-        .attr('class', 'fabric sa')
-    }
-    //notches
-    points.cfNotch = new Path()
-      .move(points.neckEdge)
-      .curve(points.neckEdgeCp2, points.frontEdgeCp1, points.frontEdge)
-      .shiftAlong(neckOpening - halfCenterPanel)
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['shoulderNotch', 'cfNotch'],
-    })
-    //title
-    points.title = points.hoodTop.shift(-90, 50)
-    macro('title', { at: points.title, nr: 6, title: 'hoodSide' })
-    points.logo = points.title.shift(-90, 60)
-    snippets.logo = new Snippet('logo', points.logo)
-    macro('grainline', {
-      from: points.shoulderNotch,
-      to: points.hoodTop,
-    })
-  }
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 4, from: 'fabric' })
 
-  // Paperless?
-  if (paperless) {
-    let neckSeam = new Path()
-      .move(points.neckEdge)
-      .curve(points.neckEdgeCp2, points.frontEdgeCp1, points.frontEdge)
-      .split(points.shoulderNotch)
-    let centralSeam = new Path()
-      .move(points.hoodRim)
-      .curve(points.hoodRim, points.hoodTopCp1, points.hoodTop)
-      .curve(points.hoodTopCp2, points.neckEdge, points.neckEdge)
-      .reverse()
-    let openingSeam = new Path()
-      .move(points.neckRoll)
-      .curve(points.neckRollCp2, points.hoodRimCp, points.hoodRim)
+  //notches
+  points.cfNotch = new Path()
+    .move(points.neckEdge)
+    .curve(points.neckEdgeCp2, points.frontEdgeCp1, points.frontEdge)
+    .shiftAlong(neckOpening - halfCenterPanel)
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: ['shoulderNotch', 'cfNotch'],
+  })
 
-    macro('pd', {
-      path: neckSeam[0],
-      d: sa + 15,
-    })
-    macro('pd', {
-      path: neckSeam[1],
-      d: sa + 15,
-    })
-    macro('pd', {
-      path: centralSeam,
-      d: sa * -1 - 15,
-    })
-    macro('hd', {
-      from: points.neckEdge,
-      to: points.frontEdge,
-      y: points.frontEdge.y + sa + 30,
-    })
-    macro('hd', {
-      from: centralSeam.edge('left'),
-      to: points.frontEdge,
-      y: points.frontEdge.y + sa + 45,
-    })
-    let openingEdge = openingSeam.edge('left')
-    macro('hd', {
-      from: openingEdge,
-      to: points.frontEdge,
-      y: openingEdge.y,
-    })
-    macro('vd', {
-      from: points.frontEdge,
-      to: points.hoodRim,
-      x: points.hoodRim.x + sa + 15,
-    })
-    macro('vd', {
-      from: points.frontEdge,
-      to: points.hoodTop,
-      x: points.hoodRim.x + sa + 30,
-    })
-  }
+  //title
+  points.title = new Point(points.hoodTop.x, points.neckEdge.y / 4)
+  macro('title', { at: points.title, nr: 6, title: 'hoodSide', align: 'center' })
+
+  // Logo
+  points.logo = new Point(points.hoodTop.x, points.neckEdge.y * 0.666)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  // Grainline
+  macro('grainline', {
+    from: points.shoulderNotch,
+    to: points.hoodTop,
+  })
+
+  // Dimensions
+  const neckSeam = new Path()
+    .move(points.neckEdge)
+    .curve(points.neckEdgeCp2, points.frontEdgeCp1, points.frontEdge)
+    .split(points.shoulderNotch)
+  const centralSeam = new Path()
+    .move(points.hoodRim)
+    .curve(points.hoodRim, points.hoodTopCp1, points.hoodTop)
+    .curve(points.hoodTopCp2, points.neckEdge, points.neckEdge)
+    .reverse()
+  const openingSeam = new Path()
+    .move(points.neckRoll)
+    .curve(points.neckRollCp2, points.hoodRimCp, points.hoodRim)
+
+  macro('pd', {
+    id: 'lNeckToNotch',
+    path: neckSeam[0],
+    d: sa + 15,
+  })
+  macro('pd', {
+    id: 'lNotchToNeck',
+    path: neckSeam[1],
+    d: sa + 15,
+  })
+  macro('pd', {
+    id: 'lHood',
+    path: centralSeam,
+    d: sa * -1 - 15,
+  })
+  macro('hd', {
+    id: 'wAtNeck',
+    from: points.neckEdge,
+    to: points.frontEdge,
+    y: points.frontEdge.y + sa + 30,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: centralSeam.edge('left'),
+    to: points.frontEdge,
+    y: points.frontEdge.y + sa + 45,
+  })
+  const openingEdge = openingSeam.edge('left')
+  macro('hd', {
+    id: 'wOpeningToTip',
+    from: openingEdge,
+    to: points.frontEdge,
+    y: openingEdge.y,
+  })
+  macro('vd', {
+    id: 'hTipToOpeningTip',
+    from: points.frontEdge,
+    to: points.hoodRim,
+    x: points.hoodRim.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.frontEdge,
+    to: points.hoodTop,
+    x: points.hoodRim.x + sa + 30,
+  })
 
   return part
 }

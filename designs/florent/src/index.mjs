@@ -1,5 +1,6 @@
 import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
+import { i18n } from '../i18n/index.mjs'
 // Parts
 import { top } from './top.mjs'
 import { side } from './side.mjs'
@@ -14,4 +15,4 @@ const Florent = new Design({
 })
 
 // Named exports
-export { top, side, brimBottom, brimTop, brimInterfacing, Florent }
+export { top, side, brimBottom, brimTop, brimInterfacing, Florent, i18n }

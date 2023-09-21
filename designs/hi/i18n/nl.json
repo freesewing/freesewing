@@ -1,0 +1,34 @@
+{
+  "t": "Hi shark plush toy",
+  "d": "The world's friendliest shark",
+  "p": {
+    "aboveMouth": "Above mouth",
+    "belly": "Belly",
+    "body": "Body",
+    "bottomFin": "Bottom fin",
+    "lowerTeeth": "Lower teetch",
+    "mouth": "Mouth",
+    "tail": "Tail",
+    "topFin": "Top fin",
+    "upperTeeth": "Upper teeth"
+  },
+  "s": {},
+  "o": {
+    "hungry": {
+      "t": "Hungry",
+      "d": "Changes the mouth shape to convey Hi is hungry"
+    },
+    "nosePointiness": {
+      "t": "Nose pointiness",
+      "d": "Controls how pointy Hi's nose is"
+    },
+    "aggressive": {
+      "t": "Aggressive",
+      "d": "Give Hi pointy teeth, or not"
+    },
+    "size": {
+      "t": "Maat",
+      "d": "Sharks come in all sizes, and so does Hi"
+    }
+  }
+}

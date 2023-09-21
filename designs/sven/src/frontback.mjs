@@ -9,8 +9,6 @@ function svenFrontBack({
   points,
   Path,
   paths,
-  complete,
-  paperless,
   macro,
   options,
   part,
@@ -55,59 +53,104 @@ function svenFrontBack({
   paths.seam.attr('class', 'fabric')
 
   // Seam allowance
-  if (complete) {
-    if (sa) {
-      paths.sa = paths.hemBase.offset(sa * (options.ribbing ? 1 : 3)).join(paths.saBase.offset(sa))
-      if (front) paths.sa.line(points.cfNeck).move(points.cfHem)
-      else paths.sa.line(points.cbNeck).move(points.cbHem)
-      paths.sa.line(paths.sa.start())
-      paths.sa.attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = paths.hemBase.offset(sa * (options.ribbing ? 1 : 3)).join(paths.saBase.offset(sa))
+    if (front) paths.sa.line(points.cfNeck).move(points.cfHem)
+    else paths.sa.line(points.cbNeck).move(points.cbHem)
+    paths.sa.line(paths.sa.start())
+    paths.sa.attr('class', 'fabric sa')
   }
 
-  // Paperless
-  if (paperless) {
-    macro('pd', {
-      path: new Path()
-        .move(points.armhole)
-        .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
-        .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-        .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
-      d: sa + 15,
-    })
-    macro('pd', {
-      path: new Path()
-        .move(points.armholePitch)
-        .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
-      d: -15,
-    })
-    macro('vd', {
-      from: points.hips,
-      to: points.waist,
-      x: points.hips.x + sa + 15,
-    })
-    macro('vd', {
-      from: points.hips,
-      to: points.armhole,
-      x: points.hips.x + sa + 30,
-    })
-    macro('vd', {
-      from: points.hips,
-      to: points.armholePitch,
-      x: points.hips.x + sa + 45,
-    })
-    macro('vd', {
-      from: points.hips,
-      to: points.shoulder,
-      x: points.hips.x + sa + 60,
-    })
-    macro('vd', {
-      from: points.hips,
-      to: points.neck,
-      x: points.hips.x + sa + 75,
-    })
-    macro('ld', { from: points.neck, to: points.shoulder, d: sa + 15 })
-  }
+  /*
+   * Annotations
+   */
+  // Dimensions
+  macro('rmad')
+  macro('pd', {
+    id: 'lArmhole',
+    path: new Path()
+      .move(points.armhole)
+      .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
+      .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
+      .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
+    d: sa + 15,
+  })
+  macro('pd', {
+    id: 'lShoulderToArmholePitch',
+    path: new Path()
+      .move(points.armholePitch)
+      .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
+    d: -15,
+  })
+  macro('vd', {
+    id: 'hHemToHips',
+    from: points.hem,
+    to: points.waist,
+    x: points.hips.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hHemToArmhole',
+    from: points.hem,
+    to: points.armhole,
+    x: points.hips.x + sa + 30,
+  })
+  macro('vd', {
+    id: 'hHemToArmholePitch',
+    from: points.hem,
+    to: points.armholePitch,
+    x: points.hips.x + sa + 45,
+  })
+  macro('vd', {
+    id: 'hHemToShoulder',
+    from: points.hem,
+    to: points.shoulder,
+    x: points.hips.x + sa + 60,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.hem,
+    to: points.neck,
+    x: points.hips.x + sa + 75,
+  })
+  macro('ld', { from: points.neck, to: points.shoulder, d: sa + 15, id: 'lShoulderSeam' })
+  points.cxHem = new Point(0, points.hem.y)
+  points.cxNeck = points.cbNeck ? points.cbNeck.copy() : points.cfNeck.copy()
+  macro('hd', {
+    id: 'wAtHem',
+    from: points.cxHem,
+    to: points.hem,
+    y: points.hem.y + sa + 15,
+  })
+  macro('hd', {
+    id: 'wAtArmhole',
+    from: points.cxHem,
+    to: points.armhole,
+    y: points.hem.y + sa + 30,
+  })
+  macro('hd', {
+    id: 'wNeckToHps',
+    from: points.cxNeck,
+    to: points.s3CollarSplit,
+    y: points.s3CollarSplit.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wNeckToShoulder',
+    from: points.cxNeck,
+    to: points.s3ArmholeSplit,
+    y: points.s3CollarSplit.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wNeckToArmhole',
+    from: points.cxNeck,
+    to: points.armhole,
+    y: points.s3CollarSplit.y - sa - 45,
+  })
+  macro('hd', {
+    id: 'wArmholeToPitch',
+    from: points.armholePitch,
+    to: points.armhole,
+    y: points.armhole.y,
+  })
 
   return part
 }

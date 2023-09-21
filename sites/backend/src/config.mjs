@@ -3,30 +3,55 @@ import chalk from 'chalk'
 import dotenv from 'dotenv'
 import { asJson } from './utils/index.mjs'
 import { randomString } from './utils/crypto.mjs'
-import { measurements } from './measurements.mjs'
+import { measurements } from '../../../config/measurements.mjs'
 import get from 'lodash.get'
 import { readFileSync, writeFileSync } from 'node:fs'
 import { postConfig } from '../local-config.mjs'
+import { roles } from '../../../config/roles.mjs'
 dotenv.config()
 
-// Allow these 2 to be imported
+/*
+ * Make this easy to update
+ */
+const languages = ['en', 'de', 'es', 'fr', 'nl', 'uk']
+
+/*
+ * Allow these 2 to be imported
+ */
 export const port = process.env.BACKEND_PORT || 3000
 export const api = process.env.BACKEND_URL || `http://localhost:${port}`
 
-// Generate/Check encryption key only once
+/*
+ * Generate/Check encryption key only once
+ */
 const encryptionKey = process.env.BACKEND_ENC_KEY
   ? process.env.BACKEND_ENC_KEY
   : randomEncryptionKey()
 
-// All environment variables are strings
-// This is a helper method to turn them into a boolean
+/*
+ * All environment variables are strings
+ * This is a helper method to turn them into a boolean
+ */
 const envToBool = (input = 'no') => {
   if (['yes', '1', 'true'].includes(input.toLowerCase())) return true
   return false
 }
 
-// Construct config object
+/*
+ * Save ourselves some typing
+ */
+const crowdinProject = 'https://translate.freesewing.org/project/freesewing/'
+
+/*
+ * Construct config object
+ */
 const baseConfig = {
+  // Environment
+  env: process.env.NODE_ENV || 'development',
+  // Maintainer contact
+  maintainer: 'joost@freesewing.org',
+  // Instance
+  instance: process.env.BACKEND_INSTANCE || Date.now(),
   // Feature flags
   use: {
     github: envToBool(process.env.BACKEND_ENABLE_GITHUB),
@@ -34,61 +59,84 @@ const baseConfig = {
       github: envToBool(process.env.BACKEND_ENABLE_OAUTH_GITHUB),
       google: envToBool(process.env.BACKEND_ENABLE_OAUTH_GOOGLE),
     },
-    sanity: envToBool(process.env.BACKEND_ENABLE_SANITY),
+    cloudflareImages: envToBool(process.env.BACKEND_ENABLE_CLOUDFLARE_IMAGES),
+    forwardmx: envToBool(process.env.BACKEND_ENABLE_FORWARDMX),
     ses: envToBool(process.env.BACKEND_ENABLE_AWS_SES),
     tests: {
       base: envToBool(process.env.BACKEND_ENABLE_TESTS),
       email: envToBool(process.env.BACKEND_ENABLE_TESTS_EMAIL),
-      sanity: envToBool(process.env.BACKEND_ENABLE_TESTS_SANITY),
+      cloudflareImages: envToBool(process.env.BACKEND_ENABLE_TESTS_CLOUDFLARE_IMAGES),
+      forwardmx: envToBool(process.env.BACKEND_ENABLE_TESTS_FORWARDMX),
     },
+    import: envToBool(process.env.BACKEND_ENABLE_IMPORT),
   },
   // Config
   api,
   apikeys: {
-    levels: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+    levels: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
     expiryMaxSeconds: 365 * 24 * 3600,
   },
   avatars: {
-    user: process.env.BACKEND_AVATAR_USER || 'https://freesewing.org/avatar.svg',
-    set: process.env.BACKEND_AVATAR_SET || 'https://freesewing.org/avatar.svg',
-    pattern: process.env.BACKEND_AVATAR_PATTERN || 'https://freesewing.org/avatar.svg',
+    user: process.env.BACKEND_AVATAR_USER || 'default-avatar',
+    set: process.env.BACKEND_AVATAR_SET || 'default-avatar',
+    cset: process.env.BACKEND_AVATAR_CSET || 'default-avatar',
+    pattern: process.env.BACKEND_AVATAR_PATTERN || 'default-avatar',
+    opack: process.env.BACKEND_AVATAR_OPACK || 'default-avatar',
   },
   db: {
     url: process.env.BACKEND_DB_URL || './db.sqlite',
   },
+  bookmarks: {
+    types: ['set', 'cset', 'pattern', 'design', 'doc', 'custom'],
+  },
   encryption: {
     key: encryptionKey,
   },
+  enums: {
+    user: {
+      consent: [0, 1, 2, 3],
+      control: [1, 2, 3, 4, 5],
+      language: languages,
+      compare: [true, false],
+      imperial: [true, false],
+      newsletter: [true, false],
+    },
+  },
+  exports: {
+    dir: process.env.BACKEND_EXPORTS_DIR || '/tmp',
+    url: process.env.BACKEND_EXPORTS_URL || 'https://static3.freesewing.org/export/',
+  },
+  crowdin: {
+    invites: {
+      nl: crowdinProject + 'invite?h=' + process.env.BACKEND_CROWDIN_INVITE_NL,
+      fr: crowdinProject + 'invite?h=' + process.env.BACKEND_CROWDIN_INVITE_FR,
+      de: crowdinProject + 'invite?h=' + process.env.BACKEND_CROWDIN_INVITE_DE,
+      es: crowdinProject + 'invite?h=' + process.env.BACKEND_CROWDIN_INVITE_ES,
+      uk: crowdinProject + 'invite?h=' + process.env.BACKEND_CROWDIN_INVITE_UK,
+    },
+  },
   jwt: {
     secretOrKey: encryptionKey,
-    issuer: process.env.BACKEND_JWT_ISSUER || 'freesewing.org',
-    audience: process.env.BACKEND_JWT_ISSUER || 'freesewing.org',
+    issuer: api,
     expiresIn: process.env.BACKEND_JWT_EXPIRY || '7d',
   },
-  languages: ['en', 'de', 'es', 'fr', 'nl'],
+  languages,
+  translations: languages.filter((lang) => lang !== 'en'),
   measies: measurements,
   mfa: {
     service: process.env.BACKEND_MFA_SERVICE || 'FreeSewing',
   },
   port,
-  roles: {
-    levels: {
-      user: 4,
-      bughunter: 5,
-      support: 7,
-      admin: 8,
-    },
-    base: 'user',
-  },
+  roles,
   tests: {
     domain: process.env.BACKEND_TEST_DOMAIN || 'freesewing.dev',
+    production: envToBool(process.env.BACKEND_ALLOW_TESTS_IN_PRODUCTION),
   },
   website: {
     domain: process.env.BACKEND_WEBSITE_DOMAIN || 'freesewing.org',
     scheme: process.env.BACKEND_WEBSITE_SCHEME || 'https',
   },
   oauth: {},
-  github: {},
 }
 
 /*
@@ -100,6 +148,8 @@ if (baseConfig.use.github)
   baseConfig.github = {
     token: process.env.BACKEND_GITHUB_TOKEN,
     api: 'https://api.github.com',
+    repoId: 'R_kgDOCFgrqQ',
+    forumCategoryId: 'DIC_kwDOCFgrqc4B9zXs',
     bot: {
       user: process.env.BACKEND_GITHUB_USER || 'freesewing-robot',
       name: process.env.BACKEND_GITHUB_USER_NAME || 'Freesewing bot',
@@ -127,16 +177,23 @@ if (baseConfig.use.github)
     },
   }
 
-// Sanity config
-if (baseConfig.use.sanity)
-  baseConfig.sanity = {
-    project: process.env.SANITY_PROJECT,
-    dataset: process.env.SANITY_DATASET || 'production',
-    token: process.env.SANITY_TOKEN || 'fixmeSetSanityToken',
-    version: process.env.SANITY_VERSION || 'v2022-10-31',
-    api: `https://${process.env.SANITY_PROJECT || 'missing-project-id'}.api.sanity.io/${
-      process.env.SANITY_VERSION || 'v2022-10-31'
-    }`,
+// Cloudflare Images config
+if (baseConfig.use.cloudflareImages) {
+  const account = process.env.BACKEND_CLOUDFLARE_ACCOUNT || 'fixmeSetCloudflareAccountId'
+  baseConfig.cloudflareImages = {
+    account,
+    api: `https://api.cloudflare.com/client/v4/accounts/${account}/images/v1`,
+    token: process.env.BACKEND_CLOUDFLARE_IMAGES_TOKEN || 'fixmeSetCloudflareToken',
+    import: envToBool(process.env.BACKEND_IMPORT_CLOUDFLARE_IMAGES),
+    useInTests: baseConfig.use.tests.cloudflareImages,
+  }
+}
+
+// FowardMx config
+if (baseConfig.use.fowardmx)
+  baseConfig.forwardmx = {
+    key: process.env.BACKEND_FORWARDMX_KEY || 'fixmeSetFowardMxApiKey',
+    useInTests: baseConfig.use.tests.fowardmx,
   }
 
 // AWS SES config (for sending out emails)
@@ -157,30 +214,69 @@ if (baseConfig.use.ses)
   }
 
 // Oauth config for Github as a provider
-if (baseConfig.use.oauth?.github)
+if (baseConfig.use.oauth?.github) {
   baseConfig.oauth.github = {
     clientId: process.env.BACKEND_OAUTH_GITHUB_CLIENT_ID,
     clientSecret: process.env.BACKEND_OAUTH_GITHUB_CLIENT_SECRET,
     tokenUri: 'https://github.com/login/oauth/access_token',
     dataUri: 'https://api.github.com/user',
     emailUri: 'https://api.github.com/user/emails',
+    redirectUri: `${
+      process.env.BACKEND_OAUTH_GITHUB_CALLBACK_SITE
+        ? process.env.BACKEND_OAUTH_GITHUB_CALLBACK_SITE
+        : 'https://next.freesewing.org'
+    }/signin/callback/github`,
   }
+  baseConfig.oauth.github.url = (state) =>
+    '' +
+    'https://github.com/login/oauth/authorize?client_id=' +
+    baseConfig.oauth.github.clientId +
+    '&redirect_uri=' +
+    baseConfig.oauth.github.redirectUri +
+    `&scope=read:user user:email&state=${state}`
+}
 
 // Oauth config for Google as a provider
-if (baseConfig.use.oauth?.google)
+if (baseConfig.use.oauth?.google) {
   baseConfig.oauth.google = {
     clientId: process.env.BACKEND_OAUTH_GOOGLE_CLIENT_ID,
     clientSecret: process.env.BACKEND_OAUTH_GOOGLE_CLIENT_SECRET,
     tokenUri: 'https://oauth2.googleapis.com/token',
     dataUri: 'https://people.googleapis.com/v1/people/me?personFields=emailAddresses,names,photos',
+    redirectUri: `${
+      process.env.BACKEND_OAUTH_GOOGLE_CALLBACK_SITE
+        ? process.env.BACKEND_OAUTH_GOOGLE_CALLBACK_SITE
+        : 'https://next.freesewing.org'
+    }/signin/callback/google`,
   }
+  baseConfig.oauth.google.url = (state) =>
+    '' +
+    'https://accounts.google.com/o/oauth2/v2/auth' +
+    '?response_type=code' +
+    '&client_id=' +
+    baseConfig.oauth.google.clientId +
+    '&redirect_uri=' +
+    baseConfig.oauth.google.redirectUri +
+    '&scope=' +
+    'https://www.googleapis.com/auth/userinfo.profile' +
+    ' ' +
+    'https://www.googleapis.com/auth/userinfo.email' +
+    '&access_type=online' +
+    '&state=' +
+    state
+}
 
 // Load local config
 const config = postConfig(baseConfig)
 
 // Exporting this stand-alone config
-export const sanity = config.sanity || {}
+export const cloudflareImages = config.cloudflareImages || {}
+export const forwardmx = config.forwardmx || {}
 export const website = config.website
+export const github = config.github
+export const instance = config.instance
+export const exports = config.exports
+export const oauth = config.oauth
 
 const vars = {
   BACKEND_DB_URL: ['required', 'db.url'],
@@ -192,11 +288,13 @@ const vars = {
   BACKEND_JWT_EXPIRY: 'optional',
   // Feature flags
   BACKEND_ENABLE_AWS_SES: 'optional',
-  BACKEND_ENABLE_SANITY: 'optional',
+  BACKEND_ENABLE_CLOUDFLARE_IMAGES: 'optional',
   BACKEND_ENABLE_GITHUB: 'optional',
   BACKEND_ENABLE_OAUTH_GITHUB: 'optional',
   BACKEND_ENABLE_OAUTH_GOOGLE: 'optional',
+  BACKEND_ENABLE_PAYMENTS: 'optional',
   BACKEND_ENABLE_TESTS: 'optional',
+  BACKEND_ALLOW_TESTS_IN_PRODUCTION: 'optional',
   BACKEND_ENABLE_DUMP_CONFIG_AT_STARTUP: 'optional',
 }
 
@@ -211,20 +309,18 @@ if (envToBool(process.env.BACKEND_ENABLE_AWS_SES)) {
   vars.BACKEND_AWS_SES_CC = 'optional'
   vars.BACKEND_AWS_SES_BCC = 'optional'
 }
-// Vars for Sanity integration
-if (envToBool(process.env.BACKEND_USE_SANITY)) {
-  vars.SANITY_PROJECT = 'required'
-  vars.SANITY_TOKEN = 'requiredSecret'
-  vars.SANITY_VERSION = 'optional'
-  vars.BACKEND_TEST_SANITY = 'optional'
+// Vars for Cloudflare Images integration
+if (envToBool(process.env.BACKEND_USE_CLOUDFLARE_IMAGES)) {
+  vars.BACKEND_CLOUDFLARE_IMAGES_TOKEN = 'requiredSecret'
+  vars.BACKEND_TEST_CLOUDFLARE_IMAGES = 'optional'
 }
 // Vars for Github integration
 if (envToBool(process.env.BACKEND_ENABLE_GITHUB)) {
   vars.BACKEND_GITHUB_TOKEN = 'requiredSecret'
-  vars.BACKEND_GITHUB_USER = 'required'
-  vars.BACKEND_GITHUB_USER_NAME = 'required'
-  vars.BACKEND_GITHUB_USER_EMAIL = 'required'
-  vars.BACKEND_GITHUB_NOTIFY_DEFAULT_USER = 'required'
+  vars.BACKEND_GITHUB_USER = 'optional'
+  vars.BACKEND_GITHUB_USER_NAME = 'optional'
+  vars.BACKEND_GITHUB_USER_EMAIL = 'optional'
+  vars.BACKEND_GITHUB_NOTIFY_DEFAULT_USER = 'optional'
 }
 // Vars for Oauth via Github integration
 if (envToBool(process.env.BACKEND_ENABLE_OAUTH_GITHUB)) {
@@ -236,7 +332,8 @@ if (envToBool(process.env.BACKEND_ENABLE_OAUTH_GOOGLE)) {
   vars.BACKEND_OAUTH_GOOGLE_CLIENT_ID = 'required'
   vars.BACKEND_OAUTH_GOOGLE_CLIENT_SECRET = 'requiredSecret'
 }
-// Vars for unit tests
+
+// Vars for (unit) tests
 if (envToBool(process.env.BACKEND_ENABLE_TESTS)) {
   vars.BACKEND_TEST_DOMAIN = 'optional'
   vars.BACKEND_ENABLE_TESTS_EMAIL = 'optional'
@@ -310,10 +407,13 @@ export function verifyConfig(silent = false) {
           config.jwt.secretOrKey.slice(0, 4) + '**redacted**' + config.jwt.secretOrKey.slice(-4),
       },
     }
-    if (config.sanity)
-      dump.sanity = {
-        ...config.sanity,
-        token: config.sanity.token.slice(0, 4) + '**redacted**' + config.sanity.token.slice(-4),
+    if (config.cloudflareImages)
+      dump.cloudflareImages = {
+        ...config.cloudflareImages,
+        token:
+          config.cloudflareImages.token.slice(0, 4) +
+          '**redacted**' +
+          config.cloudflareImages.token.slice(-4),
       }
     console.log(chalk.cyan.bold('Dumping configuration:\n'), asJson(dump, null, 2))
   }

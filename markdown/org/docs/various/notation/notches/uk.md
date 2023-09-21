@@ -1,25 +1,25 @@
 ---
-title: Notches
+title: Виїмки
 ---
 
-There are two types of notches. The default notch is a dot in a circle.
+Існує два типи насічок. За замовчуванням виїмка - це крапка в колі.
 
-An alternative style shows a cross in a circle. This style is used to indicate the back of a garment. For example, on a sleevecap you may see a dot and a cross notch. This way you know which side of the sleevecap is the back (the one with the cross notch).
+Альтернативний стиль зображує хрест у колі. Цей стиль використовується для позначення задньої частини одягу. Наприклад, на рукаві ви можете побачити крапку та хрестоподібну насічку. Так ви дізнаєтесь, яка сторона рукава є зворотною (та, що з поперечним вирізом).
 
 <Legend part="notches"> 
 
-The default notch style (shown left) and alternative style for notches on the back
+Типовий стиль надрізу (показано ліворуч) та альтернативний стиль для надрізів на задній стороні
 
 </Legend>
 
 <Tip>
 
-##### Why we chose these notches
+##### Чому ми обрали ці насічки
 
-In electromagnetism, a ⊙ symbol is used to indicate a flow of current coming towards you (to the front),
-whereas ⊗ is used for a current moving away from you (to the back).
+В електромагнетизмі символ ⊙ використовується для позначення потоку струму, що йде до вас (спереду),
+тоді як ⊗ використовується для струму, що рухається від вас (ззаду).
 
-You can also think of an arrow. When an arrow flies towards you, you see its tip (⊙).
-When an arrow flies away from you, you see its fletches (⊗).
+Ви також можете уявити собі стрілу. Коли стріла летить до вас, ви бачите її наконечник (⊙).
+Коли стріла відлітає від вас, ви бачите її наконечники (⊗).
 
 </Tip>
