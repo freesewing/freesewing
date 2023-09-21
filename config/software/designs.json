@@ -434,6 +434,6 @@
     "design": "Biou",
     "difficulty": 3,
     "tags": ["tops"],
-    "techniques": ["curvedSean", "flatSleeve", "hem", "button"]
+    "techniques": ["curvedSeam", "flatSleeve", "hem", "button"]
   }
 }
