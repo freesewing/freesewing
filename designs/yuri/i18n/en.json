@@ -11,7 +11,7 @@
   },
   "s": {
     "cutHoodCenter.t": "The hood center is not shown",
-    "cutHoodCenter.d": "The **Hood center** is a rectangular piece of fusible interfacing {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). The hood center not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part."
+    "cutHoodCenter.d": "The **Hood center** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). The hood center not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part."
   },
   "o": {
     "hipsEase": {
