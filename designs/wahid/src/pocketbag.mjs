@@ -1,20 +1,8 @@
 import { front } from './front.mjs'
 
-function wahidPocketbag({
-  points,
-  Point,
-  paths,
-  Path,
-  measurements,
-  options,
-  macro,
-  complete,
-  paperless,
-  store,
-  part,
-}) {
-  let pw = measurements.hips * options.pocketWidth // Pocket width
-  let ph = store.get('pocketBagLength') // Pocket height
+function wahidPocketbag({ points, Point, paths, Path, measurements, options, macro, store, part }) {
+  const pw = measurements.hips * options.pocketWidth // Pocket width
+  const ph = store.get('pocketBagLength') // Pocket height
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(pw + 30, 0)
   points.bottomLeft = new Point(0, ph + 10)
@@ -45,31 +33,42 @@ function wahidPocketbag({
     .line(points.topLeft)
     .close()
     .attr('class', 'lining')
-  if (complete) {
-    points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    macro('title', {
-      nr: 7,
-      title: 'pocketBag',
-      at: points.title,
-    })
-  }
 
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'lining' })
+
+  // Title
+  points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+  macro('title', {
+    nr: 5,
+    title: 'pocketBag',
+    at: points.title,
+    align: 'center',
+  })
+
+  // Grainline
   macro('grainline', {
     from: points.roundLeftEnd,
     to: new Point(points.roundLeftEnd.x, points.topLeft.y),
   })
-  if (paperless) {
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomLeft.y + 15,
-    })
-    macro('vd', {
-      from: points.bottomRight,
-      to: points.topRight,
-      x: points.topRight.x + 15,
-    })
-  }
+
+  // Dimensions
+  macro('hd', {
+    id: 'wFull',
+    from: points.bottomLeft,
+    to: points.bottomRight,
+    y: points.bottomLeft.y + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottomRight,
+    to: points.topRight,
+    x: points.topRight.x + 15,
+  })
+
   return part
 }
 

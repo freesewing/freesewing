@@ -410,7 +410,7 @@
     "design": "Joost De Cock",
     "difficulty": 4,
     "tags": ["tops"],
-    "techniques": []
+    "techniques": ["curvedSeam", "hem", "interfacing", "lining", "weltPocket", "button"]
   },
   "walburga": {
     "description": "A FreeSewing pattern for a wappenrock (tabard/surcoat), a historical European/medieval (ish) garment",
