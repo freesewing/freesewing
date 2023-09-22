@@ -1,11 +1,11 @@
-import { bottomsidepanel } from './bottomsidepanel.mjs'
+import { bottomSidePanel } from './bottomsidepanel.mjs'
 
 // Default width and height:
 const width = 230
 const height = 330
 
-export const sidepanel = {
-  name: 'hortensia.sidepanel',
+export const sidePanel = {
+  name: 'hortensia.sidePanel',
   options: {
     width,
     height,
@@ -80,7 +80,7 @@ export const sidepanel = {
     points.topMiddleCPL = points.topMiddle.shift(180, topCP)
     points.topMiddleCPR = points.topMiddle.shift(0, topCP * 1.1)
 
-    bottomsidepanel(points, points.topMiddle, w, h, sizeRatio)
+    bottomSidePanel(points, points.topMiddle, w, h, sizeRatio)
 
     points.shoulderLeft = points.bottomLeft.shift(90, sideLength)
     points.shoulderLeftCP = points.shoulderLeft.shift(90, shoulderCP)
@@ -155,7 +155,7 @@ export const sidepanel = {
     macro('title', {
       at: points.title,
       nr: 1,
-      title: 'sidepanel',
+      title: 'sidePanel',
       align: 'center',
     })
 

@@ -1,8 +1,8 @@
-import { sidepanel } from './sidepanel.mjs'
+import { sidePanel } from './sidepanel.mjs'
 
-export const frontpanel = {
-  name: 'hortensia.frontpanel',
-  after: sidepanel,
+export const frontPanel = {
+  name: 'hortensia.frontPanel',
+  after: sidePanel,
   options: {
     minHandleSpaceWidth: 80,
     maxHandleSpaceWidth: 250,
@@ -21,11 +21,37 @@ export const frontpanel = {
     Snippet,
     snippets,
     sa,
+    expand,
+    units,
     macro,
     part,
   }) => {
     const w = store.get('frontPanelLength')
     const h = store.get('depth')
+
+    if (expand) {
+      store.flag.preset('expandIsOn')
+    } else {
+      // Expand is off, do not draw the part but flag this to the user
+      store.flag.note({
+        msg: `hortensia:cutFrontPanel`,
+        replace: {
+          width: units(w + 2 * sa),
+          length: units(h + 2 * sa),
+        },
+        suggest: {
+          text: 'flag:show',
+          icon: 'expand',
+          update: {
+            settings: ['expand', 1],
+          },
+        },
+      })
+      // Also hint about expand
+      store.flag.preset('expandIsOff')
+
+      return part.hide()
+    }
 
     points.topLeft = new Point(0, 0)
     points.topRight = new Point(w, 0)
@@ -86,8 +112,10 @@ export const frontpanel = {
       id: 'att2',
     })
 
-    store.cutlist.addCut({ cut: 2, from: 'fabric' })
-    store.cutlist.addCut({ cut: 2, material: 'lining' })
+    store.cutlist.setCut([
+      { cut: 2, from: 'fabric' },
+      { cut: 2, from: 'lining' },
+    ])
 
     points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
     snippets.logo = new Snippet('logo', points.logo)
@@ -98,7 +126,7 @@ export const frontpanel = {
     macro('title', {
       at: points.title,
       nr: 2,
-      title: 'FrontPanel',
+      title: 'frontPanel',
       align: 'center',
     })
 

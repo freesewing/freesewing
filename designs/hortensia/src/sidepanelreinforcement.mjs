@@ -1,9 +1,9 @@
-import { sidepanel } from './sidepanel.mjs'
-import { bottomsidepanel } from './bottomsidepanel.mjs'
+import { sidePanel } from './sidepanel.mjs'
+import { bottomSidePanel } from './bottomsidepanel.mjs'
 
-export const sidepanelreinforcement = {
-  name: 'hortensia.sidepanelreinforcement',
-  after: sidepanel,
+export const sidePanelReinforcement = {
+  name: 'hortensia.sidePanelReinforcement',
+  after: sidePanel,
   draft: ({ store, Point, Path, points, paths, sa, macro, part }) => {
     const w = store.get('width')
     const h = store.get('sidePanelReinforcementHeight')
@@ -13,7 +13,7 @@ export const sidepanelreinforcement = {
     points.topLeft = points.topMiddle.shift(180, w / 2)
     points.topRight = points.topMiddle.shift(0, w / 2)
 
-    bottomsidepanel(points, points.topMiddle, w, h, sizeRatio)
+    bottomSidePanel(points, points.topMiddle, w, h, sizeRatio)
 
     paths.seam = new Path()
       .move(points.topMiddle)
@@ -35,7 +35,7 @@ export const sidepanelreinforcement = {
     macro('title', {
       at: points.title,
       nr: 4,
-      title: 'sidepanelreinforcement',
+      title: 'sidePanelReinforcement',
       scale: 0.25,
       align: 'center',
     })

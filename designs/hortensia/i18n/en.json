@@ -4,23 +4,29 @@
   "p": {
     "top": "Top",
     "bottom": "Bottom",
-    "bottompanel": "Bottom panel",
-    "frontpanel": "Front panel",
-    "sidepanel": "Side panel",
-    "sidepanelreinforcement": "Side panel reinforcement",
+    "bottomPanel": "Bottom panel",
+    "frontPanel": "Front panel",
+    "sidePanel": "Side panel",
+    "sidePanelReinforcement": "Side panel reinforcement",
     "strap": "Strap",
-    "zipperpanel": "Zipper panel"
+    "zipperPanel": "Zipper panel"
   },
   "s": {
-    "SidePanel": "Side Panel",
-    "FrontBackPanel": "Front and Back Panel",
-    "BottomPanel": "Bottom Panel",
-    "ZipperPanel": "Zipper Panel",
-    "Strap": "Handle",
+    "cutBottomPanel.t": "The bottom panel is not shown",
+    "cutBottomPanel.d": "The **Bottom panel** is a rectangular of {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). You need to cut 1 from the main fabric, and 1 from the lining fabric. \n\nThis part is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutFrontPanel.t": "The front panel is not shown",
+    "cutFrontPanel.d": "The **Front panel** is a rectangular of {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). You need to cut 2 from the main fabric, and 2 from the lining fabric. \n\nThis part is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutStrap.t": "The strap is not shown",
+    "cutStrap.d": "The **Strap** is a rectangular of {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). You need to cut 2 from the main fabric. \n\nThis part is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutStrapReducedSa.t": "The strap is not shown (and has reduced seam allowance)",
+    "cutStrapReducedSa.d": "The **Strap** is a rectangular of {{{ width }}} wide and {{{ length }}} long (this includes a reduced seam allowance of 80% of the strap width). You need to cut 2 from the main fabric. \n\nThis part is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutZipperPanel.t": "The zipper panel is not shown",
+    "cutZipperPanel.d": "The **Zipper panel** is a rectangular of {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). You need to cut 1 from the main fabric. \n\nThis part is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
     "strapLength": "Length of the handles",
+    "strapSaReduced.t": "The strap seam allowance is reduced",
+    "strapSaReduced.d": "Because of how narrow the strap is, we have reduced the seam allowance on it to be 80% of the strap width",
     "handleWidth": "Width of the handles",
-    "zipperSize": "Standard zipper size",
-    "SidePanelReinforcement": "Side Reinforcement Panel"
+    "zipperSize": "Standard zipper size"
   },
   "o": {
     "size": {

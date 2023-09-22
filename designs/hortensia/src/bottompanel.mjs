@@ -1,11 +1,49 @@
-import { sidepanel } from './sidepanel.mjs'
+import { sidePanel } from './sidepanel.mjs'
 
-export const bottompanel = {
-  name: 'hortensia.bottompanel',
-  after: sidepanel,
-  draft: ({ store, options, Point, Path, points, paths, Snippet, snippets, sa, macro, part }) => {
+export const bottomPanel = {
+  name: 'hortensia.bottomPanel',
+  after: sidePanel,
+  draft: ({
+    store,
+    expand,
+    units,
+    options,
+    Point,
+    Path,
+    points,
+    paths,
+    Snippet,
+    snippets,
+    sa,
+    macro,
+    part,
+  }) => {
     const w = store.get('bottomPanelLength')
     const h = store.get('depth')
+
+    if (expand) {
+      store.flag.preset('expandIsOn')
+    } else {
+      // Expand is off, do not draw the part but flag this to the user
+      store.flag.note({
+        msg: `hortensia:cutBottomPanel`,
+        replace: {
+          width: units(w + 2 * sa),
+          length: units(h + 2 * sa),
+        },
+        suggest: {
+          text: 'flag:show',
+          icon: 'expand',
+          update: {
+            settings: ['expand', 1],
+          },
+        },
+      })
+      // Also hint about expand
+      store.flag.preset('expandIsOff')
+
+      return part.hide()
+    }
 
     points.topLeft = new Point(0, 0)
     points.topRight = new Point(w, 0)
@@ -33,7 +71,7 @@ export const bottompanel = {
     macro('title', {
       at: points.title,
       nr: 3,
-      title: 'BottomPanel',
+      title: 'bottomPanel',
       align: 'center',
     })
 

@@ -1,17 +1,18 @@
-import { sidepanel } from './sidepanel.mjs'
+import { sidePanel } from './sidepanel.mjs'
 
-export const zipperpanel = {
-  name: 'hortensia.zipperpanel',
-  after: sidepanel,
+export const zipperPanel = {
+  name: 'hortensia.zipperPanel',
+  after: sidePanel,
   draft: ({ store, Point, Path, points, paths, sa, macro, expand, units, part }) => {
     const z = store.get('zipperWidth')
     const w = (store.get('zipperPanelWidth') - z) / 2
     const h = store.get('depth')
 
-    if (!expand) {
-      // Expand is on, do not draw the part but flag this to the user
+    if (expand) store.flag.preset('expandIsOn')
+    else {
+      // Expand is off, do not draw the part but flag this to the user
       store.flag.note({
-        msg: `hortensia:zipperpanel`,
+        msg: `hortensia:cutZipperPanel`,
         replace: {
           width: units(w),
           length: units(h),
@@ -25,7 +26,7 @@ export const zipperpanel = {
         },
       })
       // Also hint about expand
-      store.flag.preset('expand')
+      store.flag.preset('expandIsOff')
 
       return part.hide()
     }

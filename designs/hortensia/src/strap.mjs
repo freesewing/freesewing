@@ -1,8 +1,8 @@
-import { sidepanel } from './sidepanel.mjs'
+import { sidePanel } from './sidepanel.mjs'
 
 export const strap = {
   name: 'hortensia.strap',
-  after: sidepanel,
+  after: sidePanel,
   options: {
     strapLength: { pct: 160, min: 75, max: 250, menu: 'style' },
     handleWidth: { pct: 8.6, min: 4, max: 25, menu: 'style' },
@@ -11,13 +11,28 @@ export const strap = {
     const w = store.get('width') * options.handleWidth
     const h = store.get('depth') * options.strapLength
 
-    if (!expand) {
+    let reducedSa = false
+    if (sa > w * 0.8) {
+      sa = w * 0.8
+      reducedSa = true
+
+      store.flag.warn({
+        msg: `hortensia:strapSaReduced`,
+        replace: {
+          width: units(w + 2 * sa),
+          length: units(h + 2 * sa),
+        },
+      })
+    }
+
+    if (expand) store.flag.preset('expandIsOn')
+    else {
       // Expand is on, do not draw the part but flag this to the user
       store.flag.note({
-        msg: `hortensia:strap`,
+        msg: reducedSa ? `hortensia:cutStrapReducedSa` : `hortensia:cutStrap`,
         replace: {
-          width: units(w),
-          length: units(h),
+          width: units(w + 2 * sa),
+          length: units(h + 2 * sa),
         },
         suggest: {
           text: 'flag:show',
@@ -28,13 +43,9 @@ export const strap = {
         },
       })
       // Also hint about expand
-      store.flag.preset('expand')
+      store.flag.preset('expandIsOff')
 
       return part.hide()
-    }
-
-    if (sa > w * 0.8) {
-      sa = w * 0.8
     }
 
     points.topLeft = new Point(-w, 0)
