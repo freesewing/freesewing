@@ -4,7 +4,7 @@ import { shared } from './shared.mjs'
  * This is the exported part object
  */
 export const back = {
-  name: 'naomiwu:back', // The name in design::part format
+  name: 'naomiwu.back', // The name in design::part format
   draft: draftBack, // The method to call to draft this part
   after: shared, // Indicate the `shared` part (see import above) needs to be drafted prior to this part
 }
@@ -22,7 +22,6 @@ function draftBack({
   options,
   complete,
   sa,
-  paperless,
   snippets,
   Snippet,
   macro,
@@ -32,12 +31,6 @@ function draftBack({
    * How much we need to reduce from seat to hips
    */
   const reduce = store.get('hipsQuarterReduction')
-
-  /*
-   * Minimal dart that we consider suitable for sewing
-   * Below this value, we forego darts and handle all shaping in the seams
-   */
-  const minDart = absoluteOptions.minDartWidth
 
   /*
    * Do we need to add darts?
@@ -175,57 +168,56 @@ function draftBack({
   paths.seam.addClass('fabric').close()
 
   /*
+   * Draw the outline of the back pocket on the pattern in dashed line so that people
+   * have a visual guide for where the pocket should go when constructing the skirt
+   * (but only if the user wants a complete pattern)
+   */
+  paths.pocket = new Path()
+    .move(points.pocketTopLeft)
+    .line(points.chamferLeftTop)
+    .line(points.chamferLeft)
+    .line(points.chamferRight)
+    .line(points.chamferRightTop)
+    .line(points.pocketTopRight)
+    .line(points.pocketTopLeft)
+    .close()
+    .addClass('note dashed stroke-sm')
+    .hide()
+
+  /*
+   * Does the user want seam allowance (sa) included on the pattern?
+   */
+  if (sa) {
+    /*
+     * Our dart complicates matters, so we need a version without the dart as the SA base
+     * We also need to make sure the hem allowance is different/bigger
+     */
+    paths.saBase = new Path()
+      .move(points.topLeft)
+      .line(points.bottomLeft)
+      .line(points.bottomLeft.shift(-90, 2 * sa)) // extra hem SA
+      .line(points.bottomRight.shift(-90, 2 * sa)) // extra hem SA
+      .line(points.bottomRight)
+      .line(points.topRight)
+      .join(paths.hipLine)
+      .close()
+      .hide()
+    paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
+  }
+
+  /*
    * Store the side seam length so we can match it in the front part
    */
   store.set('sideSeam', points.topRight.dist(points.bottomRight))
 
   /*
-   * This complete setting controls whether we just draw and outline (handy for laser cutting and so on)
-   * or a complete * pattern with all embellishments.
+   * If the user wants a complete pattern, let's add some more guidance
    */
   if (complete) {
     /*
-     * Add skully, the FreeSewing logo :)
+     * Show the pocket outline
      */
-    points.logo = points.topLeft
-      .shiftFractionTowards(points.bottomLeft, 0.3)
-      .shift(0, points.topRight.x / 4)
-    snippets.logo = new Snippet('logo', points.logo)
-
-    /*
-     * Add a title for this part
-     */
-    points.title = points.logo.shift(-90, 70)
-    macro('title', {
-      at: points.title,
-      nr: 1,
-      title: 'back',
-    })
-
-    /*
-     * Add a grainline to indicate the fabric grain
-     */
-    points.grainlineTop = points.topRight.shift(225, 25)
-    points.grainlineBottom = new Point(points.grainlineTop.x, points.bottomRight.y - 25)
-    macro('grainline', {
-      from: points.grainlineBottom,
-      to: points.grainlineTop,
-    })
-
-    /*
-     * Draw the outline of the back pocket on the pattern in dashed line so that people
-     * have a visual guide for where the pocket should go when constructing the skirt
-     */
-    paths.pocket = new Path()
-      .move(points.pocketTopLeft)
-      .line(points.chamferLeftTop)
-      .line(points.chamferLeft)
-      .line(points.chamferRight)
-      .line(points.chamferRightTop)
-      .line(points.pocketTopRight)
-      .line(points.pocketTopLeft)
-      .close()
-      .addClass('note dashed stroke-sm')
+    paths.pocket.unhide()
 
     /*
      * Some thing with the pocket flap. Note that drawing both pocket and pocket flap
@@ -277,124 +269,137 @@ function draftBack({
       .addText('attachWaistband', 'fill-note left text-sm')
       .attr('data-text-dy', 8)
       .attr('data-text-dx', 8)
-
-    /*
-     * Add (back) notches
-     */
-    const notches = ['pocketTopLeft', 'pocketTopRight']
-    if (store.get('darts')) notches.push('dartLeft', 'dartRight', 'dartTip')
-    macro('sprinkle', {
-      snippet: 'bnotch',
-      on: notches,
-    })
-
-    /*
-     * Does the user want seam allowance (sa) included on the pattern?
-     */
-    if (sa) {
-      /*
-       * Our dart complicates matters, so we need a version without the dart as the SA base
-       * We also need to make sure the hem allowance is different/bigger
-       */
-      paths.saBase = new Path()
-        .move(points.topLeft)
-        .line(points.bottomLeft)
-        .line(points.bottomLeft.shift(-90, 2 * sa)) // extra hem SA
-        .line(points.bottomRight.shift(-90, 2 * sa)) // extra hem SA
-        .line(points.bottomRight)
-        .line(points.topRight)
-        .join(paths.hipLine)
-        .close()
-        .hide()
-      paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
-    }
   }
 
-  // Paperless?
-  if (paperless) {
-    if (points.topLeft.x > points.bottomLeft.x) {
-      macro('hd', {
-        id: 'bottomWidth',
-        from: points.bottomLeft,
-        to: points.bottomRight,
-        y: points.bottomLeft.y + 3 * sa + 30,
-      })
-      macro('hd', {
-        id: 'topLeftToBottomWidth',
-        from: points.topLeft,
-        to: points.bottomRight,
-        y: points.bottomLeft.y + 3 * sa + 15,
-      })
-      macro('hd', {
-        from: points.topLeft,
-        to: points.topRight,
-        y: points.topLeft.y - sa - 15,
-      })
-      macro('hd', {
-        id: 'topWidth',
-        from: points.bottomLeft,
-        to: points.topRight,
-        y: points.topLeft.y - sa - 30,
-      })
-    } else {
-      macro('hd', {
-        id: 'bottomWidth',
-        from: points.bottomLeft,
-        to: points.bottomRight,
-        y: points.bottomLeft.y + 3 * sa + 15,
-      })
-      macro('hd', {
-        id: 'topLeftToBottomWidth',
-        from: points.topLeft,
-        to: points.bottomRight,
-        y: points.bottomLeft.y + 3 * sa + 30,
-      })
-      macro('hd', {
-        id: 'bottomLeftToTopWidth',
-        from: points.bottomLeft,
-        to: points.topRight,
-        y: points.topLeft.y - sa - 15,
-      })
-      macro('hd', {
-        id: 'topWidth',
-        from: points.topLeft,
-        to: points.topRight,
-        y: points.topLeft.y - sa - 30,
-      })
-    }
-    if (store.get('darts')) {
-      macro('hd', {
-        id: 'topLeftToDartWidth',
-        from: points.topLeft,
-        to: points.dartLeft,
-        y: points.topLeft.y + 15,
-      })
-      macro('hd', {
-        id: 'topRightToDartWidth',
-        from: points.dartRight,
-        to: points.topRight,
-        y: points.topLeft.y + 15,
-      })
-      macro('hd', {
-        id: 'dartWidth',
-        from: points.dartLeft,
-        to: points.dartRight,
-        y: points.dartTip.y + 15,
-      })
-      macro('vd', {
-        id: 'dartLength',
-        from: points.dartTip,
-        to: points.dartRight,
-        x: points.dartRight.x + 15,
-      })
-    }
-    macro('vd', {
-      id: 'rightHeight',
-      from: points.bottomRight,
+  /*
+   * Annotations
+   */
+
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  /*
+   * Add skully, the FreeSewing logo :)
+   */
+  points.logo = points.topLeft
+    .shiftFractionTowards(points.bottomLeft, 0.3)
+    .shift(0, points.topRight.x / 4)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  /*
+   * Add a title for this part
+   */
+  points.title = points.logo.shift(-90, 70)
+  macro('title', {
+    at: points.title,
+    nr: 1,
+    title: 'back',
+  })
+
+  /*
+   * Add a grainline to indicate the fabric grain
+   */
+  points.grainlineTop = points.topRight.shift(225, 25)
+  points.grainlineBottom = new Point(points.grainlineTop.x, points.bottomRight.y - 25)
+  macro('grainline', {
+    from: points.grainlineBottom,
+    to: points.grainlineTop,
+  })
+
+  /*
+   * Add (back) notches
+   */
+  const notches = ['pocketTopLeft', 'pocketTopRight']
+  if (store.get('darts')) notches.push('dartLeft', 'dartRight', 'dartTip')
+  macro('sprinkle', {
+    snippet: 'bnotch',
+    on: notches,
+  })
+
+  // Add dimensions
+  if (points.topLeft.x > points.bottomLeft.x) {
+    macro('hd', {
+      id: 'bottomWidth',
+      from: points.bottomLeft,
+      to: points.bottomRight,
+      y: points.bottomLeft.y + 3 * sa + 30,
+    })
+    macro('hd', {
+      id: 'topLeftToBottomWidth',
+      from: points.topLeft,
+      to: points.bottomRight,
+      y: points.bottomLeft.y + 3 * sa + 15,
+    })
+    macro('hd', {
+      id: 'wCbWaistToSideWaist',
+      from: points.topLeft,
       to: points.topRight,
-      x: points.topRight.x + sa + 15,
+      y: points.topLeft.y - sa - 15,
+    })
+    macro('hd', {
+      id: 'topWidth',
+      from: points.bottomLeft,
+      to: points.topRight,
+      y: points.topLeft.y - sa - 30,
+    })
+  } else {
+    macro('hd', {
+      id: 'bottomWidth',
+      from: points.bottomLeft,
+      to: points.bottomRight,
+      y: points.bottomLeft.y + 3 * sa + 15,
+    })
+    macro('hd', {
+      id: 'topLeftToBottomWidth',
+      from: points.topLeft,
+      to: points.bottomRight,
+      y: points.bottomLeft.y + 3 * sa + 30,
+    })
+    macro('hd', {
+      id: 'bottomLeftToTopWidth',
+      from: points.bottomLeft,
+      to: points.topRight,
+      y: points.topLeft.y - sa - 15,
+    })
+    macro('hd', {
+      id: 'topWidth',
+      from: points.topLeft,
+      to: points.topRight,
+      y: points.topLeft.y - sa - 30,
     })
   }
+  if (store.get('darts')) {
+    macro('hd', {
+      id: 'topLeftToDartWidth',
+      from: points.topLeft,
+      to: points.dartLeft,
+      y: points.topLeft.y + 15,
+    })
+    macro('hd', {
+      id: 'topRightToDartWidth',
+      from: points.dartRight,
+      to: points.topRight,
+      y: points.topLeft.y + 15,
+    })
+    macro('hd', {
+      id: 'dartWidth',
+      from: points.dartLeft,
+      to: points.dartRight,
+      y: points.dartTip.y + 15,
+    })
+    macro('vd', {
+      id: 'dartLength',
+      from: points.dartTip,
+      to: points.dartRight,
+      x: points.dartRight.x + 15,
+    })
+  }
+  macro('vd', {
+    id: 'rightHeight',
+    from: points.bottomRight,
+    to: points.topRight,
+    x: points.topRight.x + sa + 15,
+  })
 
   return part
 }

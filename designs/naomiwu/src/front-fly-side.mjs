@@ -1,9 +1,7 @@
 import {
   frontBase,
-  xOnWaist,
   splitFrontWaist,
   drawCornerPath,
-  drawSeamLine,
   drawSideNote,
   drawHemNote,
   drawPocketBag,
@@ -13,7 +11,7 @@ import {
  * This is the exported part object
  */
 export const frontFlySide = {
-  name: 'naomiwu:frontFlySide', // Name in design::part format
+  name: 'naomiwu.frontFlySide', // Name in design::part format
   draft: draftFrontFlySide, // Method to call to draft this part
   from: frontBase, // Draft this part starting from (the imported) frontBase
 }
@@ -79,7 +77,14 @@ function draftFrontFlySide({
     .close()
     .addClass('fabric')
 
-  // Complete?
+  /*
+   * Seam allowance. Only if the user wants it.
+   */
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+
+  /*
+   * If the user wants a complete pattern, let's add some more guidance
+   */
   if (complete) {
     /*
      * The J-Seam
@@ -109,42 +114,6 @@ function draftFrontFlySide({
     })
 
     /*
-     * Add a grainline indicator
-     */
-    points.grainlineTop = points.jseamTop.shiftFractionTowards(points.topLeft, 0.5)
-    points.grainlineBottom = new Point(points.grainlineTop.x, points.bottomLeft.y)
-    macro('grainline', {
-      from: points.grainlineBottom,
-      to: points.grainlineTop,
-    })
-
-    /*
-     * Overwrite title from frontBase to add our own title
-     */
-    macro('title', {
-      at: points.title,
-      nr: 2,
-      title: ['frontLeft', ' (', options.invertFly ? 'right' : 'left', ')'],
-    })
-
-    /*
-     * Overwrite logo from frontBase to add our own logo in the place we want
-     */
-    points.logo = points.frontPocketCurveStart.shiftFractionTowards(points.bottomRight, 0.5)
-    snippets.logo = new Snippet('logo', points.logo)
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-    }
-
-    /*
-     * Add notches
-     */
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['jseamTop', 'frontPocketBagStart', 'topLeft', 'jseamBottomFe'],
-    })
-
-    /*
      * Add various helper paths
      */
     paths.corner = drawCornerPath(part) // Pocket corner
@@ -154,73 +123,124 @@ function draftFrontFlySide({
   }
 
   /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'fabric' })
+
+  /*
+   * Add a grainline indicator
+   */
+  points.grainlineTop = points.jseamTop.shiftFractionTowards(points.topLeft, 0.5)
+  points.grainlineBottom = new Point(points.grainlineTop.x, points.bottomLeft.y)
+  macro('grainline', {
+    from: points.grainlineBottom,
+    to: points.grainlineTop,
+  })
+
+  /*
+   * Remove title from frontBase and add our own title
+   */
+  macro('rmtitle')
+  macro('title', {
+    at: points.title,
+    nr: 2,
+    title: options.invertFly ? 'frontFlySideRight' : 'frontFlySideLeft',
+  })
+
+  /*
+   * Overwrite logo from frontBase to add our own logo in the place we want
+   */
+  points.logo = points.frontPocketCurveStart.shiftFractionTowards(points.bottomRight, 0.5)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  /*
+   * Add notches
+   */
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: ['jseamTop', 'frontPocketBagStart', 'topLeft', 'jseamBottomFe'],
+  })
+
+  /*
    * Add dimentions for paperless only when needed
    */
   if (paperless) {
     macro('hd', {
+      id: 'wFlyExtension',
       from: points.jseamTopFe,
       to: points.topLeft,
       y: points.jseamTopFe.y - sa - 15,
     })
     macro('hd', {
+      id: 'wFly',
       from: points.topLeft,
       to: points.jseamTop,
       y: points.jseamTopFe.y - sa - 15,
     })
     macro('hd', {
+      id: 'wCfrontToPocket',
       from: points.topLeft,
       to: points.frontPocketStart,
       y: points.jseamTopFe.y - sa - 30,
     })
     macro('hd', {
+      id: 'wCfrontToFlyExtensionBottom',
       from: points.jseamCurveStartFe,
       to: points.topLeft,
       y: points.jseamTopFe.y - sa - 30,
     })
     macro('hd', {
+      id: 'wCfrontToSideWaist',
       from: points.topLeft,
       to: points.topRight,
       y: points.jseamTopFe.y - sa - 45,
     })
     macro('hd', {
+      id: 'wCfrontToSidePocket',
       from: points.topLeft,
       to: points.frontPocketSide,
       y: points.jseamTopFe.y - sa - 60,
     })
     macro('hd', {
+      id: 'wCfrontToSieHem',
       from: points.topLeft,
       to: points.trueBottomRight,
       y: points.jseamTopFe.y - sa - 75,
     })
-
     macro('hd', {
+      id: 'wCfBottomToSidePocket',
       from: points.bottomLeft,
       to: points.frontPocketSide,
       y: points.bottomLeft.y + sa + 15,
     })
     macro('hd', {
+      id: 'wCfBottomToSideHem',
       from: points.bottomLeft,
       to: points.trueBottomRight,
       y: points.bottomLeft.y + sa + 30,
     })
     macro('hd', {
+      id: 'wFull',
       from: points.jseamCurveStartFe,
       to: points.trueBottomRight,
       y: points.bottomLeft.y + sa + 45,
     })
-
     macro('vd', {
+      id: 'hSideHemToPocket',
       from: points.trueBottomRight,
       to: points.frontPocketSide,
       x: points.trueBottomRight.x + sa + 15,
     })
     macro('vd', {
+      id: 'hSideHemToWaist',
       from: points.trueBottomRight,
       to: points.frontPocketStart,
       x: points.trueBottomRight.x + sa + 30,
     })
     if (options.waistSlant) {
       macro('vd', {
+        id: 'hFullWithSlant',
         from: points.trueBottomRight,
         to: points.topRight,
         x: points.trueBottomRight.x + sa + 45,

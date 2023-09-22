@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { pctBasedOn } from '@freesewing/core'
 
 function draft({ store, measurements, options, part }) {
@@ -25,21 +24,22 @@ function draft({ store, measurements, options, part }) {
  * Helper method like pctBasedOn, but using quarter hips for measurement
  */
 const pctBasedOnQhips = () => ({
-  toAbs: (value, { measurements }, mergedOptions) => value * (measurements.hips / 4),
-  fromAbs: (value) => measurements.hips / 4 / value,
+  toAbs: (value, { measurements }) => value * (measurements.hips / 4),
+  fromAbs: (value, { measurements }) => measurements.hips / 4 / value,
 })
 
 /*
  * Helper method like pctBasedOn, but using hips to upperleg
  */
 const pctBasedOnHipsToUleg = () => ({
-  toAbs: (value, { measurements }, mergedOptions) =>
+  toAbs: (value, { measurements }) =>
     value * (measurements.waistToUpperLeg - measurements.waistToHips),
-  fromAbs: (value) => (measurements.waistToUpperLeg - measurements.waistToHips) / value,
+  fromAbs: (value, { measurements }) =>
+    (measurements.waistToUpperLeg - measurements.waistToHips) / value,
 })
 
 export const shared = {
-  name: 'naomiwu:shared',
+  name: 'naomiwu.shared',
   measurements: ['hips', 'seat', 'waistToHips', 'waistToSeat', 'waistToUpperLeg'],
   hide: { self: true },
   options: {
@@ -68,6 +68,21 @@ export const shared = {
       max: 15,
       menu: 'fit',
       ...pctBasedOn('seat'),
+    },
+
+    /*
+     * How much the waist should slant downward at the front (and up at the back)
+     * This is based on a model with a perfectly horizontal waistline.
+     * However, people who -- as Sir Mix A Lot would say -- got (more) back benefit
+     * from a sloped waistline that raises up at teh back and dips lower at the front.
+     * This option facilitates that.
+     */
+    waistSlant: {
+      pct: 0,
+      min: 0,
+      max: 2,
+      menu: 'fit',
+      ...pctBasedOn('hips'),
     },
 
     // Style options
@@ -100,9 +115,10 @@ export const shared = {
       min: 0,
       max: 80,
       menu: 'style',
-      toAbs: (value, { measurements }, mergedOptions) =>
+      toAbs: (value, { measurements }) =>
         (1 + value) * (measurements.waistToUpperLeg - measurements.waistToHips),
-      fromAbs: (value) => (measurements.waistToUpperLeg - measurements.waistToHips) / (1 + value),
+      fromAbs: (value, { measurements }) =>
+        (measurements.waistToUpperLeg - measurements.waistToHips) / (1 + value),
     },
 
     waistbandWidth: {
@@ -113,14 +129,15 @@ export const shared = {
       ...pctBasedOn('hips'),
     },
 
-    beltloopWidth: {
+    beltLoopWidth: {
       pct: 40,
       min: 20,
       max: 60,
       menu: 'style',
       toAbs: (value, { measurements }, mergedOptions) =>
         value * measurements.hips * mergedOptions.waistbandWidth,
-      fromAbs: (value) => (measurements.hips * mergedOptions.waistbandWidth) / value,
+      fromAbs: (value, { measurements }, mergedOptions) =>
+        (measurements.hips * mergedOptions.waistbandWidth) / value,
     },
 
     // Pocket options
@@ -214,9 +231,10 @@ export const shared = {
       min: 50,
       max: 100,
       menu: 'advanced',
-      toAbs: (value, { measurements }, mergedOptions) =>
+      toAbs: (value, { measurements }) =>
         value * (measurements.waistToSeat - measurements.waistToHips),
-      fromAbs: (value) => (measurements.waistToSeat - measurements.waistToHips) / value,
+      fromAbs: (value, { measurements }) =>
+        (measurements.waistToSeat - measurements.waistToHips) / value,
     },
 
     /*
@@ -299,35 +317,6 @@ export const shared = {
         2 /
         mm,
     },
-    /*
-     * How much the waist should slant downward at the front (and up at the back)
-     * This is based on a model with a perfectly horizontal waistline.
-     * However, people who -- as Sir Mix A Lot would say -- got (more) back benefit
-     * from a sloped waistline that raises up at teh back and dips lower at the front.
-     * This option facilitates that.
-     */
-    waistSlant: {
-      pct: 0,
-      min: 0,
-      max: 2,
-      menu: 'advanced',
-      ...pctBasedOn('hips'),
-    },
-
-    /*
-     * How much the waistband should overlap at the front
-     * Typically, this works fine when it's the same value as waistbandWidth
-     * However, users who opt for a very wide waistband may want to lower this
-     */
-    waistbandOverlap: {
-      pct: 100,
-      min: 50,
-      max: 120,
-      menu: 'advanced',
-      toAbs: (pct, { measurements }, mergedOptions) =>
-        pct * mergedOptions.waistbandWidth * measurements.hips,
-    },
   },
-  plugins: [pluginBundle],
   draft: draft,
 }

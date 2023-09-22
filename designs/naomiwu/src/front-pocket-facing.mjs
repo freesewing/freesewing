@@ -4,7 +4,7 @@ import { frontPocketBag } from './front-pocket-bag.mjs'
  * This is the exported part object
  */
 export const frontPocketFacing = {
-  name: 'naomiwu:frontPocketFacing', // The name in design::part format
+  name: 'naomiwu.frontPocketFacing', // The name in design::part format
   draft: draftFrontPocketFacing, // The method to call to draft this part
   from: frontPocketBag, // Draft this starting from the (imported) frontPocketBag part
 }
@@ -12,22 +12,7 @@ export const frontPocketFacing = {
 /*
  * This function drafts the front pocket facing of the skirt
  */
-function draftFrontPocketFacing({
-  Point,
-  points,
-  Path,
-  paths,
-  store,
-  part,
-  measurements,
-  options,
-  complete,
-  sa,
-  paperless,
-  snippets,
-  Snippet,
-  macro,
-}) {
+function draftFrontPocketFacing({ points, Path, paths, store, part, sa, macro }) {
   /*
    * Clean up what we don't need
    */
@@ -49,6 +34,11 @@ function draftFrontPocketFacing({
     .addClass('fabric')
 
   /*
+   * Only add SA when requested
+   */
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+
+  /*
    * Fix text alignement on the side seam
    */
   paths.side = new Path()
@@ -58,52 +48,53 @@ function draftFrontPocketFacing({
     .addText('sideSeam', 'center fill-note text-sm')
     .attr('data-text-dy', -1)
 
-  // Complete?
-  if (complete) {
-    /*
-     * Add the title
-     */
-    macro('title', {
-      at: points.title,
-      nr: 6,
-      title: 'frontPocketFacing',
-    })
+  /*
+   * Annotations
+   */
 
-    /*
-     * Add cut-on-fold indicator
-     */
-    macro('cutonfold', {
-      from: points.frontPocketBagStart,
-      to: points.frontPocketFacingCenter,
-      grainline: true,
-    })
-
-    /*
-     * Only add SA when requested
-     */
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-  }
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric', onFold: true })
 
   /*
-   * Only add dimensions for paperless when requested
+   * Add the title ( and remove the inherited one)
    */
-  if (paperless) {
-    macro('hd', {
-      from: points.frontPocketFacingCenter,
-      to: points.frontPocketFacingSide,
-      y: points.frontPocketFacingCenter.y + sa + 15,
-    })
-    macro('hd', {
-      from: points.frontPocketBagStart,
-      to: points.topRight,
-      y: points.topRight.y - sa - 15,
-    })
-    macro('vd', {
-      from: points.frontPocketFacingCenter,
-      to: points.frontPocketBagStart,
-      x: points.frontPocketFacingCenter.x - sa - 15,
-    })
-  }
+  macro('rmtitle')
+  macro('title', {
+    at: points.title,
+    nr: 6,
+    title: 'frontPocketFacing',
+  })
+
+  /*
+   * Add cut-on-fold indicator
+   */
+  macro('cutonfold', {
+    from: points.frontPocketBagStart,
+    to: points.frontPocketFacingCenter,
+    grainline: true,
+  })
+
+  /*
+   * Dimensions
+   */
+  macro('hd', {
+    id: 'wAtBottom',
+    from: points.frontPocketFacingCenter,
+    to: points.frontPocketFacingSide,
+    y: points.frontPocketFacingCenter.y + sa + 15,
+  })
+  macro('hd', {
+    id: 'wAtTop',
+    from: points.frontPocketBagStart,
+    to: points.topRight,
+    y: points.topRight.y - sa - 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.frontPocketFacingCenter,
+    to: points.frontPocketBagStart,
+    x: points.frontPocketFacingCenter.x - sa - 15,
+  })
 
   return part
 }

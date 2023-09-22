@@ -1,10 +1,10 @@
-import { frontBase, xOnWaist } from './front-base.mjs'
+import { frontBase } from './front-base.mjs'
 
 /*
  * This is the exported part object
  */
 export const frontAttachment = {
-  name: 'naomiwu:frontAttachment', // The name in design::part format
+  name: 'naomiwu.frontAttachment', // The name in design::part format
   draft: draftFrontAttachment, // The method to call to draft this part
   from: frontBase, // Draft this part starting from the (imported) frontBase part
 }
@@ -19,16 +19,12 @@ function draftFrontAttachment({
   paths,
   store,
   part,
-  measurements,
   options,
   complete,
   sa,
-  paperless,
   snippets,
   Snippet,
   macro,
-  absoluteOptions,
-  utils,
 }) {
   /*
    * Draw the front attachment shape, or at least the part that's not
@@ -70,37 +66,32 @@ function draftFrontAttachment({
     .line(points.waistRight)
     .line(points.waistLeft)
     .close()
-    .addClass('various')
+    .addClass('fabric')
 
-  // Clean up a bit
-  delete paths.corner
-  delete paths.hem
-  delete paths.side
-  delete paths.frontWaist
-  delete paths.pocketbag
-  delete paths.pocketbagBoundary
-  delete paths.pocketfacingBoundary
+  /*
+   * Only add SA when it's requested.
+   * This also adds extra SA to fold under the edge.
+   */
+  if (sa)
+    paths.sa = new Path()
+      .move(points.edgeRight)
+      .line(points.waistRight)
+      .line(points.waistLeft)
+      .line(points.edgeLeft)
+      .offset(sa)
+      .join(
+        new Path()
+          .move(points.edgeLeft)
+          .line(points.edgeRight)
+          .offset(3 * sa)
+      )
+      .close()
+      .attr('class', 'fabric sa')
 
-  // Complete?
+  /*
+   * If the user wants a complete pattern, let's add some more guidance
+   */
   if (complete) {
-    /*
-     * Add the title
-     */
-    points.title = points.foldLeft
-      .shiftFractionTowards(points.foldRight, 0.2)
-      .shift(90, points.foldLeft.y / 2)
-    macro('title', {
-      at: points.title,
-      nr: 8,
-      title: 'frontAttachment',
-    })
-
-    /*
-     * Add the logo
-     */
-    points.logo = points.title.shift(-70, 70)
-    snippets.logo = new Snippet('logo', points.logo)
-
     /*
      * Add the fold line
      */
@@ -117,93 +108,107 @@ function draftFrontAttachment({
       .line(points.chamferRight)
       .line(points.chamferRightBottom)
       .addClass('note dashed stroke-sm')
-
-    /*
-     * Add a 'fold here' note
-     */
-    macro('banner', {
-      path: paths.fold,
-      text: 'foldHere',
-      className: 'text-sm fill-note',
-    })
-
-    /*
-     * Sprinkle some notches
-     */
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: [
-        'chamferLeftTop',
-        'chamferLeftBottom',
-        'chamferLeft',
-        'chamferRightTop',
-        'chamferRightBottom',
-        'chamferRight',
-      ],
-    })
-
-    /*
-     * Only add SA when it's requested.
-     * This also adds extra SA to fold under the edge.
-     */
-    if (sa)
-      paths.sa = new Path()
-        .move(points.edgeRight)
-        .line(points.waistRight)
-        .line(points.waistLeft)
-        .line(points.edgeLeft)
-        .offset(sa)
-        .join(
-          new Path()
-            .move(points.edgeLeft)
-            .line(points.edgeRight)
-            .offset(3 * sa)
-        )
-        .close()
-        .attr('class', 'various sa')
   }
 
   /*
-   * Only add dimensions for paperless when they are requested
+   * Clean up a bit
    */
-  if (paperless) {
-    macro('hd', {
-      id: 'width',
-      from: points.edgeLeft,
-      to: points.edgeRight,
-      y: points.edgeLeft.y + 3 * sa + 15,
-    })
-    macro('hd', {
-      id: 'chamferWidth',
-      from: points.foldLeft,
-      to: points.chamferLeft,
-      y: points.chamferLeftBottom.y + sa + 15,
-    })
-    macro('vd', {
-      id: 'chamferHeight',
-      from: points.chamferLeftBottom,
-      to: points.chamferLeft,
-      x: points.chamferLeft.x + 15,
-    })
-    macro('vd', {
-      id: 'bottomLength',
-      from: points.edgeRight,
-      to: points.foldRight,
-      x: points.edgeRight.x + sa + 15,
-    })
-    macro('vd', {
-      id: 'topLength',
-      from: points.foldRight,
-      to: points.waistRight,
-      x: points.edgeRight.x + sa + 15,
-    })
-    macro('vd', {
-      id: 'length',
-      from: points.edgeRight,
-      to: points.waistRight,
-      x: points.edgeRight.x + sa + 30,
-    })
-  }
+  delete paths.corner
+  delete paths.hem
+  delete paths.side
+  delete paths.frontWaist
+  delete paths.pocketbag
+  delete paths.pocketbagBoundary
+  delete paths.pocketfacingBoundary
+
+  /*
+   * Annotations
+   */
+
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'fabric' })
+
+  /*
+   * Add the title
+   */
+  points.title = points.foldLeft
+    .shiftFractionTowards(points.foldRight, 0.2)
+    .shift(90, points.foldLeft.y / 2)
+  macro('title', {
+    at: points.title,
+    nr: 8,
+    title: 'frontAttachment',
+  })
+
+  /*
+   * Add the logo
+   */
+  points.logo = points.title.shift(-70, 70)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  /*
+   * Add a 'fold here' note
+   */
+  macro('banner', {
+    path: paths.fold,
+    text: 'foldHere',
+    className: 'text-sm fill-note',
+  })
+
+  /*
+   * Sprinkle some notches
+   */
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: [
+      'chamferLeftTop',
+      'chamferLeftBottom',
+      'chamferLeft',
+      'chamferRightTop',
+      'chamferRightBottom',
+      'chamferRight',
+    ],
+  })
+
+  /*
+   * Dimensions
+   */
+  macro('hd', {
+    id: 'width',
+    from: points.edgeLeft,
+    to: points.edgeRight,
+    y: points.edgeLeft.y + 3 * sa + 15,
+  })
+  macro('hd', {
+    id: 'chamferWidth',
+    from: points.foldLeft,
+    to: points.chamferLeft,
+    y: points.chamferLeftBottom.y + sa + 15,
+  })
+  macro('vd', {
+    id: 'chamferHeight',
+    from: points.chamferLeftBottom,
+    to: points.chamferLeft,
+    x: points.chamferLeft.x + 15,
+  })
+  macro('vd', {
+    id: 'bottomLength',
+    from: points.edgeRight,
+    to: points.foldRight,
+    x: points.edgeRight.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'topLength',
+    from: points.foldRight,
+    to: points.waistRight,
+    x: points.edgeRight.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'length',
+    from: points.edgeRight,
+    to: points.waistRight,
+    x: points.edgeRight.x + sa + 30,
+  })
 
   return part
 }

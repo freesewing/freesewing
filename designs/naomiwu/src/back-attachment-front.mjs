@@ -4,7 +4,7 @@ import { backAttachmentBack } from './back-attachment-back.mjs'
  * This is the exported part object
  */
 export const backAttachmentFront = {
-  name: 'naomiwu:backAttachmentFront', // The name in design::part format
+  name: 'naomiwu.backAttachmentFront', // The name in design::part format
   draft: draftBackAttachmentFront, // The method to call to draft this part
   from: backAttachmentBack, // Draft this part starting from the (imported) `backAttachmentBack` part
 }
@@ -12,25 +12,7 @@ export const backAttachmentFront = {
 /*
  * This function drafts the front of the back attachment of the skirt
  */
-function draftBackAttachmentFront({
-  Point,
-  points,
-  Path,
-  paths,
-  store,
-  part,
-  measurements,
-  options,
-  complete,
-  sa,
-  paperless,
-  snippets,
-  Snippet,
-  macro,
-  absoluteOptions,
-  log,
-  utils,
-}) {
+function draftBackAttachmentFront({ points, Path, paths, store, part, complete, sa, macro }) {
   /*
    * Clear up what we don't need from the backAttachmentBack part
    */
@@ -60,20 +42,10 @@ function draftBackAttachmentFront({
     .close()
     .addClass('fabric')
 
-  // Complete?
+  /*
+   * Mark the velcro strip
+   */
   if (complete) {
-    /*
-     * Add the title
-     */
-    macro('title', {
-      at: points.title,
-      nr: 13,
-      title: 'backAttachmentFront',
-    })
-
-    /*
-     * Mark the velcro strip
-     */
     paths.velcro = new Path()
       .move(points.velcroTopLeft)
       .line(points.velcroBottomLeft)
@@ -85,48 +57,65 @@ function draftBackAttachmentFront({
     macro('banner', {
       path: paths.velcro,
       text: 'velcro',
-      className: 'fill-note text-xs',
+      classes: 'fill-note text-xs',
       spaces: 2,
     })
-
-    /*
-     * Only add SA when it's requested.
-     * This also adds extra SA to fold under the edge.
-     */
-    if (sa)
-      paths.sa = new Path()
-        .move(points.frontLeft)
-        .line(points.bottomLeft)
-        .line(points.bottomRight)
-        .line(points.frontRight)
-        .offset(sa)
-        .join(
-          new Path()
-            .move(points.frontRight)
-            .line(points.frontLeft)
-            .offset(3 * sa)
-        )
-        .close()
-        .addClass('fabric sa')
   }
 
   /*
-   * Only add dimensions for paperless when they are requested
+   * Only add SA when it's requested.
+   * This also adds extra SA to fold under the edge.
    */
-  if (paperless) {
-    macro('hd', {
-      id: 'width',
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15,
-    })
-    macro('vd', {
-      id: 'length',
-      from: points.bottomRight,
-      to: points.frontRight,
-      x: points.topRight.x + sa + 15,
-    })
-  }
+  if (sa)
+    paths.sa = new Path()
+      .move(points.frontLeft)
+      .line(points.bottomLeft)
+      .line(points.bottomRight)
+      .line(points.frontRight)
+      .offset(sa)
+      .join(
+        new Path()
+          .move(points.frontRight)
+          .line(points.frontLeft)
+          .offset(3 * sa)
+      )
+      .close()
+      .addClass('fabric sa')
+
+  /*
+   * Annotations
+   */
+
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'fabric' })
+
+  /*
+   * Add the title
+   */
+  points.title = points.frontLeft.shiftFractionTowards(points.bottomRight, 0.5)
+  macro('title', {
+    at: points.title,
+    nr: 13,
+    title: 'backAttachmentFront',
+    align: 'center',
+    scale: 0.666,
+  })
+
+  /*
+   * Dimensions
+   */
+  macro('hd', {
+    id: 'width',
+    from: points.bottomLeft,
+    to: points.bottomRight,
+    y: points.bottomLeft.y + sa + 15,
+  })
+  macro('vd', {
+    id: 'length',
+    from: points.bottomRight,
+    to: points.frontRight,
+    x: points.topRight.x + sa + 15,
+  })
 
   return part
 }

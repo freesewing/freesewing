@@ -1,9 +1,40 @@
 {
   "t": "Naomi Wu Cargo Skirt",
   "d": "This is Naomi's Wu's signature cargo skirt design.",
+  "p": {
+    "backAttachmentBack": "Back Attachment Back",
+    "backAttachmentFlap": "Back Attachment Flap",
+    "backAttachmentFront": "Back Attachment Front",
+    "backPocket": "Back Pocket",
+    "backPocketFlap": "Back Pocket Flap",
+    "back": "Back",
+    "beltLoop": "Belt Loop",
+    "backBeltLoop": "Back Belt Loop",
+    "flyShield": "Fly Shield",
+    "frontAttachmentFacing": "Front Attachment Facing",
+    "frontAttachment": "Front Attachment",
+    "frontBase": "Front Base",
+    "frontFlySide": "Front fly side",
+    "frontNoFlySide": "Front no-fly side",
+    "frontNoFlySideLeft": "Front no-fly side (left)",
+    "frontNoFlySideRight": "Front no-fly side (right)",
+    "frontFlySideLeft": "Front fly side (left)",
+    "frontFlySideRight": "Front fly side (right)",
+    "frontPocketBag": "Front Pocket Bag",
+    "frontPocketFacing": "Front Pocket Facing",
+    "shared": "Shared Code",
+    "waistband": "Waistband"
+  },
   "s": {
-    "right": "Right",
-    "left": "Left"
+    "backAttachmentTooWide": "The **Back attachement** is currently wider than the space between the belt loops.\n\nYou can decrease the width until it fits, or you can leave it as-is but then you will need to modify the beltloop spacing yourself.",
+    "cutBackAttachmentBack.t": "The back attachement back is not shown",
+    "cutBackAttachmentBack.d": "The **Back attachement back** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). This part is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutBeltLoop.t": "The belt loop is not shown",
+    "cutBeltLoop.d": "The **Belt loop** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). You need 6 of them. This part is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutBackBeltLoop.t": "The back belt loop is not shown",
+    "cutBackBeltLoop.d": "The **Back belt loop** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). This part is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutFlyShield.t": "The fly shield is not shown",
+    "cutFlyShield.d": "The **Fly shield** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). This part is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part."
   },
   "o": {
     "backAttachmentDepth": {
@@ -26,16 +57,16 @@
       "t": "Back pocket depth",
       "d": "Controls the depth of the back pockets."
     },
-    "beltloopWidth": {
-      "t": "Beltloop width",
-      "d": "Controls the width of the beltloops."
+    "beltLoopWidth": {
+      "t": "Belt loop width",
+      "d": "Controls the width of the belt loops."
     },
     "dartLength": {
-      "t": "Dart length",
+      "t": "Back dart length",
       "d": "Controls the length of the darts at the back."
     },
     "dartWidth": {
-      "t": "Dart width",
+      "t": "Back dart width",
       "d": "Controls the width of the darts at the back."
     },
     "flyLength": {
@@ -55,7 +86,7 @@
       "d": "Controls the width of the front attachment."
     },
     "frontHalf": {
-      "t": "Front half",
+      "t": "Front half proportion",
       "d": "Controls the proportion of the skirt that will make up the front panel."
     },
     "frontPocketOpeningBend": {
@@ -94,10 +125,6 @@
       "t": "Seat ease",
       "d": "Controls the amount of ease at your seat."
     },
-    "waistbandOverlap": {
-      "t": "Waistband overlap",
-      "d": "Controls how much the waistband overlaps at the front closure."
-    },
     "waistbandWidth": {
       "t": "Waistband width",
       "d": "Controls the width of the waistband."
@@ -106,6 +133,5 @@
       "t": "Waist slant",
       "d": "Controls the slant of the waistband, how much the back is raised higher than the front."
     }
-  },
-  "p": {}
+  }
 }

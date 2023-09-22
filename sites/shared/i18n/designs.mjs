@@ -25,6 +25,7 @@ import { i18n as Jaeger } from '@freesewing/jaeger'
 import { i18n as Lucy } from '@freesewing/lucy'
 import { i18n as Lunetius } from '@freesewing/lunetius'
 import { i18n as Magde } from '@freesewing/magde'
+import { i18n as NaomiWu } from '@freesewing/naomiwu'
 import { i18n as Noble } from '@freesewing/noble'
 import { i18n as Octoplushy } from '@freesewing/octoplushy'
 import { i18n as Paco } from '@freesewing/paco'
@@ -74,6 +75,7 @@ export const designs = {
   lucy: Lucy,
   lunetius: Lunetius,
   magde: Magde,
+  naomiwu: NaomiWu,
   noble: Noble,
   octoplushy: Octoplushy,
   paco: Paco,

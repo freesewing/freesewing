@@ -2,7 +2,7 @@
  * This is the exported part object
  */
 export const flyShield = {
-  name: 'naomiwu:flyShield', // The name in the form of design::name
+  name: 'naomiwu.flyShield', // The name in the form of design::name
   draft: draftFlyShield, // The method to call for drafting this part
 }
 
@@ -17,8 +17,10 @@ function draftFlyShield({
   paths,
   part,
   complete,
+  store,
+  units,
   sa,
-  paperless,
+  expand,
   macro,
   absoluteOptions,
 }) {
@@ -27,6 +29,30 @@ function draftFlyShield({
    */
   const w = absoluteOptions.flyWidth
   const h = absoluteOptions.flyLength * 1.05 // A bit longer than the fly so the seam will catch
+
+  if (expand) {
+    store.flag.preset('expandIsOn')
+  } else {
+    // Expand is off, do not draw the part but flag this to the user
+    store.flag.note({
+      msg: `naomiwu:cutFlyShield`,
+      replace: {
+        width: units(w + 2 * sa),
+        length: units(h + 2 * sa),
+      },
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
 
   /*
    * Fly shield is a simple rectangle folder in half
@@ -50,7 +76,14 @@ function draftFlyShield({
     .close()
     .addClass('fabric')
 
-  // Complete?
+  /*
+   * Add seam allowance only when requested
+   */
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+
+  /*
+   * If the user wants a complete pattern, let's add some more guidance
+   */
   if (complete) {
     /*
      * Indicate this needs to be folded in half
@@ -65,50 +98,52 @@ function draftFlyShield({
       text: 'foldHere',
       className: 'text-sm fill-note',
     })
-
-    /*
-     * Add a title
-     */
-    points.title = points.topMid.shiftFractionTowards(points.bottomMid, 0.5)
-    macro('title', {
-      at: points.title,
-      nr: 4,
-      title: 'flyShield',
-      scale: 0.6,
-      align: 'center',
-    })
-
-    /*
-     * Add the grainline
-     */
-    points.grainlineTop = points.topLeft.shiftFractionTowards(points.topMid, 0.5)
-    points.grainlineBottom = new Point(points.grainlineTop.x, points.bottomLeft.y)
-    macro('grainline', {
-      from: points.grainlineBottom,
-      to: points.grainlineTop,
-    })
-
-    /*
-     * Add seam allowance only when requested
-     */
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
   }
 
   /*
-   * Add dimensions for paperless only when requested
+   * Annotations
    */
-  if (paperless) {
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomLeft.y + sa + 15,
-    })
-    macro('vd', {
-      from: points.bottomRight,
-      to: points.topRight,
-      x: points.bottomRight.x + sa + 15,
-    })
-  }
+
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'fabric' })
+
+  /*
+   * Add a title
+   */
+  points.title = points.topMid.shiftFractionTowards(points.bottomMid, 0.5)
+  macro('title', {
+    at: points.title,
+    nr: 4,
+    title: 'flyShield',
+    scale: 0.6,
+    align: 'center',
+  })
+
+  /*
+   * Add the grainline
+   */
+  points.grainlineTop = points.topLeft.shiftFractionTowards(points.topMid, 0.5)
+  points.grainlineBottom = new Point(points.grainlineTop.x, points.bottomLeft.y)
+  macro('grainline', {
+    from: points.grainlineBottom,
+    to: points.grainlineTop,
+  })
+
+  /*
+   * Add dimensions
+   */
+  macro('hd', {
+    id: 'wFull',
+    from: points.bottomLeft,
+    to: points.bottomRight,
+    y: points.bottomLeft.y + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottomRight,
+    to: points.topRight,
+    x: points.bottomRight.x + sa + 15,
+  })
 
   return part
 }

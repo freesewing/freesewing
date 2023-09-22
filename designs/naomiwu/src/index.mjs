@@ -18,7 +18,8 @@ import { backPocketFlap } from './back-pocket-flap.mjs'
 import { backAttachmentBack } from './back-attachment-back.mjs'
 import { backAttachmentFront } from './back-attachment-front.mjs'
 import { backAttachmentFlap } from './back-attachment-flap.mjs'
-//import { backAttachmentSide } from './back-attachment-side.mjs'
+import { beltLoop } from './belt-loop.mjs'
+import { backBeltLoop } from './back-belt-loop.mjs'
 
 /*
  * Create new design
@@ -42,7 +43,8 @@ const Naomiwu = new Design({
     backAttachmentBack,
     backAttachmentFront,
     backAttachmentFlap,
-    //backAttachmentSide
+    beltLoop,
+    backBeltLoop,
   ],
 })
 
@@ -58,7 +60,7 @@ const Naomiwu = new Design({
  *
  * So we landed on 'Naomi Wu Cargo Skirt' which makes the short name of this
  * pattern (as used in the NPM package and URLs) 'naomiwu'.
- * To get the constructure from that, we capitalize the design name, so that
+ * To get the constructor from that, we capitalize the design name, so that
  * is why 'Naomiwu' is exported.
  *
  * However, to be flexible, we also export this design as NaomiWu below.
@@ -84,7 +86,8 @@ export {
   backAttachmentBack,
   backAttachmentFront,
   backAttachmentFlap,
-  //backAttachmentSide,
+  beltLoop,
+  backBeltLoop,
   Naomiwu,
   NaomiWu, // See note above
   i18n,

@@ -4,7 +4,7 @@ import { back } from './back.mjs'
  * This is the exported part object
  */
 export const frontBase = {
-  name: 'naomiwu:frontBase', // The name in design::part format
+  name: 'naomiwu.frontBase', // The name in design::part format
   draft: draftFrontBase, // The method to call to draft this part
   hide: { self: true }, // This part is hidden by default
   after: back, // Draw the (imported) back part prior to drafting this part
@@ -191,11 +191,9 @@ function draftFrontBase({
   paths,
   store,
   part,
-  measurements,
   options,
   complete,
   sa,
-  paperless,
   snippets,
   Snippet,
   macro,
