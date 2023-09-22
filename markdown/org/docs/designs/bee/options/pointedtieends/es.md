@@ -1,11 +1,7 @@
 ---
-title: "Puntas de la cinta del pecho"
+title: Pointed tie ends
 ---
 
-***
+This option allows you to generate a pattern where the ties have a pointy end, rather than a straight one.
 
-Si prefieres que las puntas de la cinta alrededor del pecho sean planas o acaben en punta
-
-## Efecto de esta opción en el patrón
-
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bee_bandtieends_sample.svg "Efecto de esta opción en el patrón")
+Enable this option if you want your ties to have pointy ends. Disable this option (the default) if you want your ties to have straight ends.
