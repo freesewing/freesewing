@@ -54,7 +54,7 @@ const crossbox = function (config, { points, Point, paths, Path, complete, store
   }
   if (!mc.bottomRight || typeof mc.bottomRight.attr !== 'function') {
     log.warn(
-      `Crossbox macro called without a valid bottomRight point. Using (6660,666) for bottomRight.`
+      `Crossbox macro called without a valid bottomRight point. Using (666,666) for bottomRight.`
     )
     mc.bottomRight = new Point(666, 666)
   }
