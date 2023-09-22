@@ -8,12 +8,12 @@ renderWithCore.t: Renderen met de Core-bibliotheek van Freesewing
 renderWithCore.d: Render rechtstreeks naar SVG vanuit Core. Laat geen interactiviteit toe en is geoptimaliseerd voor afdrukken. Gebruik dit als je wilt weten hoe het eruit zal zien als het geëxporteerd wordt.
 control.t: Gebruikerservaring
 control.d: Welke gebruikerservaring heeft jouw voorkeur? Houd er rekening mee dat dit een accountinstelling is, dus het heeft invloed op de hele website.
-inspect.t: Inspecteer
-inspect.d: Als je dit inschakelt, kun je dieper in het patroon duiken en informatie opvragen over de verschillende onderdelen, paden en punten.
-inspectNo.t: De inspecteur uitschakelen
-inspectNo.d: Dit is de standaardinstelling, de patrooninspecteur is uitgeschakeld en het patroon wordt zoals gebruikelijk weergegeven.
-inspectYes.t: De inspecteur inschakelen
-inspectYes.d: Met de pattern inspector ingeschakeld en de React rendering engine geselecteerd, voegen we interactiviteit toe aan het patroon zodat je de verschillende elementen waaruit het patroon bestaat kunt inspecteren.
+kiosk.t: Kiosk mode
+kiosk.d: Enable this to utilize the entire screen for the pattern drafting environment
+websiteMode.t: Regular mode
+websiteMode.d: Anchors the pattern drafting environment whithin the default website layout.
+kioskMode.t: Kiosk mode
+kioskMode.d: Utilizes the entire screen for the pattern drafting environment, hiding all other website elements.
 no: No
 yes: Yes
 draft: Patroontekening

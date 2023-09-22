@@ -1,4 +1,5 @@
 apply: Apply
+decrease: Decrease
 disable: Disable
 dismiss: Dismiss
 expandIsOff.t: This design saves space (and trees) because expand is disabled
@@ -10,4 +11,5 @@ flagMenu.t: Messages from the designer
 flagMenuOne.d: The designer of this pattern has flagged something about your current draft that deserves your attention.
 flagMenuMany.d: The designer of this pattern has flagged some things about your current draft that deserve your attention.
 hide: Приховати
+increase: Increase
 show: Показати

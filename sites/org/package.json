@@ -47,6 +47,7 @@
     "lodash.set": "4.3.2",
     "luxon": "3.4.3",
     "next": "13.4.19",
+    "ora": "7.0.1",
     "react-dropzone": "14.2.3",
     "react-hotkeys-hook": "4.4.1",
     "react-instantsearch-dom": "6.40.4",

@@ -1,11 +1,7 @@
 ---
-title: "Finition des bouts de bandes (sous poitrine)"
+title: Pointed tie ends
 ---
 
-***
+This option allows you to generate a pattern where the ties have a pointy end, rather than a straight one.
 
-Que vous aimiez les extrémités droites ou pointues de la bande autour de votre poitrine
-
-## Effet de cette option sur le motif
-
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bee_bandtieends_sample.svg "Effet de cette option sur le motif")
+Enable this option if you want your ties to have pointy ends. Disable this option (the default) if you want your ties to have straight ends.
