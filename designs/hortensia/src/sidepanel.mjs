@@ -22,7 +22,7 @@ export const sidePanel = {
     },
     zipperSize: {
       dflt: '#5',
-      list: ['#3', '#4', '#4.5', '#5', '#6', '#8', '#10', 'Invisible'],
+      list: ['#3', '#4', '#4.5', '#5', '#6', '#8', '#10', 'invisible'],
       menu: 'style',
     },
   },
@@ -31,7 +31,7 @@ export const sidePanel = {
     const phi = 1.6180339887
 
     const zWidth = new Map([
-      ['Invisible', 0],
+      ['invisible', 0],
       ['#3', 4.8],
       ['#4', 5.4],
       ['#4.5', 5.9],

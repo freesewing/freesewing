@@ -37,6 +37,38 @@
       "t": "Zipper size",
       "d": "Which size of zipper to use"
     },
+    "zipperSize.#3": {
+      "t": "#3 zipper size",
+      "d": "#3 zippers have teeth that are 3mm wide"
+    },
+    "zipperSize.#4": {
+      "t": "#4 zipper size",
+      "d": "#4 zippers have teeth that are 4mm wide."
+    },
+    "zipperSize.#4.5": {
+      "t": "#4.5 zipper size",
+      "d": "#4.5 zippers have teeth that are 4.5mm wide."
+    },
+    "zipperSize.#5": {
+      "t": "#5 zipper size",
+      "d": "#5 zippers have teeth that are 5mm wide."
+    },
+    "zipperSize.#6": {
+      "t": "#6 zipper size",
+      "d": "#6 zippers have teeth that are 6mm wide."
+    },
+    "zipperSize.#8": {
+      "t": "#8 zipper size",
+      "d": "#8 zippers have teeth that are 8mm wide."
+    },
+    "zipperSize.#10": {
+      "t": "#10 zipper size",
+      "d": "#10 zippers have teeth that are 10mm wide."
+    },
+    "zipperSize.invisible10": {
+      "t": "Invisible zipper",
+      "d": "An invisible zipper is a zipper that can be inserted in such a way that the teeth do not show."
+    },
     "strapLength": {
       "t": "Strap length",
       "d": "Controls the length of the strap"
