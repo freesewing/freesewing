@@ -14,7 +14,7 @@ Als een patroondeel niet is afgedrukt, betekent dit dat je het niet nodig hebt.
 - Uit je buitenstof:
   - 2x **deel 1**: Dit is het achterpand. Knip deze uit je **buitenstof** met _goede kanten op elkaar_
   - 2x **deel 2**: Dit is het voorpand. Knip deze uit je **buitenstof** met _goede kanten op elkaar_
-  - 1x **part 3**: This is the waistband. Knip dit uit je **buitenstof**
+  - Knip dit uit je **buitenstof** Knip dit uit je **buitenstof**
   - 2x **deel 4**: Dit is de enkelboord. Knip deze, van je **hoofdstof** met _goede kanten op elkaar_ (niet nodig als je koos om geen elastische zoom te hebben)
   - 2x **deel 7**: Dit is de paspel voor de achterzak. Knip 2 van deze uit je **buitenstof** met _goede kanten op elkaar_
 - Uit je voeringsstof:
