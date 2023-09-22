@@ -10,7 +10,20 @@ export const frontpanel = {
     pctHandleVert: 42,
     handleWidth: { pct: 8.6, min: 4, max: 25, menu: 'style' },
   },
-  draft: ({ store, options, Point, Path, points, paths, Snippet, snippets, sa, macro, part }) => {
+  draft: ({
+    store,
+    options,
+    complete,
+    Point,
+    Path,
+    points,
+    paths,
+    Snippet,
+    snippets,
+    sa,
+    macro,
+    part,
+  }) => {
     const w = store.get('frontPanelLength')
     const h = store.get('depth')
 
@@ -19,17 +32,8 @@ export const frontpanel = {
     points.bottomLeft = new Point(0, h)
     points.bottomRight = new Point(w, h)
 
-    paths.bottom = new Path()
-      .move(points.topLeft)
-      .line(points.bottomLeft)
-      .attr('data-text', 'Bottom')
-      .attr('data-text-class', 'center text-xs')
-
-    paths.top = new Path()
-      .move(points.bottomRight)
-      .line(points.topRight)
-      .attr('data-text', 'Top')
-      .attr('data-text-class', 'center text-xs')
+    paths.bottom = new Path().move(points.topLeft).line(points.bottomLeft)
+    paths.top = new Path().move(points.bottomRight).line(points.topRight)
 
     paths.seam = paths.bottom
       .line(points.bottomRight)
@@ -37,6 +41,12 @@ export const frontpanel = {
       .line(points.topLeft)
       .close()
       .attr('class', 'fabric')
+
+    // Show the top/bottom note only on complete patterns
+    if (complete) {
+      paths.bottom.addText('bottom', 'center text-xs fill-note')
+      paths.top.addText('top', 'center text-xs fill-note')
+    }
 
     const handleWidth = options.width * options.handleWidth
     let handleSpace = (h - handleWidth * 2) * (options.pctHandleSpace / 100)

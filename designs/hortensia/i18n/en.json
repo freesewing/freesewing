@@ -2,6 +2,8 @@
   "t": "Hortensia handbag",
   "d": "Hortensia is a handbag.",
   "p": {
+    "top": "Top",
+    "bottom": "Bottom",
     "bottompanel": "Bottom panel",
     "frontpanel": "Front panel",
     "sidepanel": "Side panel",
