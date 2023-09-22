@@ -1,11 +1,8 @@
 ---
-title: "Band (borst) das lengte kleuren"
+title: Duo color ties
 ---
 
-***
+This option allows you to generate a pattern where the ties use two colors rather than one.
 
-Of je nu één kleur stropdas om je borst wilt, of tweekleurige
+Enable this option if you want ties using two colors. Leave it disabled (the default) if you want ties using a single color.
 
-## Effect van deze optie op het patroon
-
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bee_bandtiecolours_sample.svg "Effect van deze optie op het patroon")

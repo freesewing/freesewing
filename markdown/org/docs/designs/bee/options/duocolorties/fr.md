@@ -1,11 +1,8 @@
 ---
-title: "Couleurs de la bande (sous poitrine)"
+title: Duo color ties
 ---
 
-***
+This option allows you to generate a pattern where the ties use two colors rather than one.
 
-Que vous vouliez une seule couleur autour de votre poitrine, ou une teinte bicolore
+Enable this option if you want ties using two colors. Leave it disabled (the default) if you want ties using a single color.
 
-## Effet de cette option sur le motif
-
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bee_bandtiecolours_sample.svg "Effet de cette option sur le motif")

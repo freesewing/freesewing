@@ -1,11 +1,7 @@
 ---
-title: "Кінці стрічкових (нагрудних) краваток"
+title: Pointed tie ends
 ---
 
-***
+This option allows you to generate a pattern where the ties have a pointy end, rather than a straight one.
 
-Незалежно від того, чи подобаються вам прямі або загострені кінці краватки на грудях
-
-## Вплив цієї опції на шаблон
-
-![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bee_bandtieends_sample.svg "Вплив цієї опції на шаблон")
+Enable this option if you want your ties to have pointy ends. Disable this option (the default) if you want your ties to have straight ends.

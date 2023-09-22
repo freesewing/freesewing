@@ -8,12 +8,12 @@ renderWithCore.t: Рендер за допомогою бібліотеки Free
 renderWithCore.d: Рендер безпосередньо в SVG з Core. Не містить інтерактивності та оптимізований для друку. Використовуйте його, якщо хочете знати, як виглядатиме зображення після експорту.
 control.t: Користувацький досвід
 control.d: Якому користувацькому досвіду ви надаєте перевагу? Зверніть увагу, що це налаштування облікового запису, тому воно вплине на весь веб-сайт.
-inspect.t: Оглянути
-inspect.d: Увімкнувши цю опцію, ви зможете заглибитися в деталь і отримати інформацію про різні її частини, шляхи і точки.
-inspectNo.t: Відключити інспектора
-inspectNo.d: За замовчуванням інспектор шаблонів вимкнено, і шаблон відображається у звичайному режимі.
-inspectYes.t: Увімкніть інспектора
-inspectYes.d: Увімкнувши інспектор шаблонів і вибравши рушій рендерингу React, ми додамо до шаблону інтерактивність, щоб ви могли оглядати різні елементи, з яких складається шаблон.
+kiosk.t: Kiosk mode
+kiosk.d: Enable this to utilize the entire screen for the pattern drafting environment
+websiteMode.t: Regular mode
+websiteMode.d: Anchors the pattern drafting environment whithin the default website layout.
+kioskMode.t: Kiosk mode
+kioskMode.d: Utilizes the entire screen for the pattern drafting environment, hiding all other website elements.
 no: No
 yes: Yes
 draft: Чернетка

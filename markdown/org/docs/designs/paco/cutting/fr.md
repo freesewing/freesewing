@@ -14,7 +14,7 @@ Si une partie de motif n'est pas imprimée, cela signifie que vous n'en avez pas
 - De votre tissu principal :
   - 2x **partie 1**: Ceci est le panneau arrière. Coupez ces éléments de votre **tissu principal** avec _bons côtés ensemble_
   - 2x **partie 2**: Ceci est le panneau avant. Coupez ces éléments de votre **tissu principal** avec _bons côtés ensemble_
-  - Coupez-le de votre **tissu principal** Coupez-le de votre **tissu principal**
+  - Coupez ceci, de votre **tissu principal** avec _bons côtés ensemble_ (inutile si vous avez choisi de ne pas avoir d'ourlet élastique) Coupez-le de votre **tissu principal**
   - 2x **part 4**: C'est le manchon de la cheville. Coupez ceci, de votre **tissu principal** avec _bons côtés ensemble_ (inutile si vous avez choisi de ne pas avoir d'ourlet élastique)
   - 2x **partie 7**: Il s'agit de la poche arrière. Coupez 2 de vos **tissus principaux** avec _bons côtés ensemble_
 - À partir de votre tissu de doublure :
