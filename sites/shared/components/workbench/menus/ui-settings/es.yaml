@@ -8,12 +8,12 @@ renderWithCore.t: Renderiza con la biblioteca Core de Freesewing
 renderWithCore.d: Renderiza directamente a SVG desde Core. No permite interactividad y está optimizado para impresión. Utilízalo si quieres saber qué aspecto tendrá cuando se exporte.
 control.t: Experiencia del usuario
 control.d: '¿Qué experiencia de usuario prefieres? Ten en cuenta que se trata de una configuración de cuenta, por lo que afectará a todo el sitio web.'
-inspect.t: Inspecciona
-inspect.d: Si activas esta opción, podrás profundizar en el patrón y obtener información sobre sus distintas partes, rutas y puntos.
-inspectNo.t: Desactivar el inspector
-inspectNo.d: Este es el valor por defecto, el inspector de patrones está desactivado y el patrón se muestra como de costumbre.
-inspectYes.t: Activar el inspector
-inspectYes.d: Con el inspector de patrones activado y el motor de renderizado React seleccionado, añadiremos interactividad al patrón para que puedas inspeccionar los distintos elementos que lo componen.
+kiosk.t: Kiosk mode
+kiosk.d: Enable this to utilize the entire screen for the pattern drafting environment
+websiteMode.t: Regular mode
+websiteMode.d: Anchors the pattern drafting environment whithin the default website layout.
+kioskMode.t: Kiosk mode
+kioskMode.d: Utilizes the entire screen for the pattern drafting environment, hiding all other website elements.
 no: No
 yes: Yes
 draft: Boceto
