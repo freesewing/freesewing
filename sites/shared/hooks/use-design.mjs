@@ -40,8 +40,7 @@ import { Teagan } from '@freesewing/teagan'
 import { Tiberius } from '@freesewing/tiberius'
 import { Titan } from '@freesewing/titan'
 import { Trayvon } from '@freesewing/trayvon'
-import { Unice } from '@freesewing/unice'
-import { Ursula } from '@freesewing/ursula'
+import { Uma } from '@freesewing/uma'
 import { Wahid } from '@freesewing/wahid'
 import { Walburga } from '@freesewing/walburga'
 import { Waralee } from '@freesewing/waralee'
@@ -90,8 +89,7 @@ const designs = {
   tiberius: Tiberius,
   titan: Titan,
   trayvon: Trayvon,
-  unice: Unice,
-  ursula: Ursula,
+  uma: Uma,
   wahid: Wahid,
   walburga: Walburga,
   waralee: Waralee,

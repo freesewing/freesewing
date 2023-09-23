@@ -12,7 +12,7 @@ import {
 const PctOptionInput = (props) => {
   const { config, settings, changed } = props
   const currentOrDefault = changed ? props.current : config.dflt / 100
-  console.log(settings)
+
   return (
     <PctInput {...props}>
       <div className="flex flex-row justify-around">

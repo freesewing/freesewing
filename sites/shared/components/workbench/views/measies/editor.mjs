@@ -20,7 +20,7 @@ export const MeasiesEditor = ({ Design, settings, update }) => {
           m={m}
           imperial={settings.units === 'umperial' ? true : false}
           original={settings.measurements?.[m]}
-          update={(val) => onUpdate(m, val)}
+          update={(m, newVal) => onUpdate(m, newVal)}
           docs={<DynamicOrgDocs language={i18n.language} path={`measurements/${m}`} />}
           id={`edit-${m}`}
         />
