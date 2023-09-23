@@ -200,7 +200,7 @@
     "design": ["Stoffsuchti", "Wouter Van Wageningen"],
     "difficulty": 3,
     "tags": ["accessories", "bags"],
-    "techniques": []
+    "techniques": ["curvedSeam", "precision", "lining", "zipper"]
   },
   "huey": {
     "description": "A FreeSewing pattern for a zip-up hoodie",
