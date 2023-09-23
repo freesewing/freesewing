@@ -402,7 +402,7 @@
     "design": "Joost De Cock",
     "difficulty": 1,
     "tags": ["bottoms", "underwear"],
-    "techniques": []
+    "techniques": ["elastic", "curvedSeam"]
   },
   "wahid": {
     "description": "A FreeSewing pattern for a classic fitted waistcoat",

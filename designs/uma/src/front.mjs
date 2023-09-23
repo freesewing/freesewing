@@ -1,218 +1,315 @@
-function umaFront({
-  options,
+import { base } from './base.mjs'
+
+export const front = {
+  name: 'uma.front',
+  from: base,
+  draft: draftUmaFront,
+}
+
+/*
+ * This drafts the front of Uma, or rather recycles what's needed from base
+ */
+function draftUmaFront({
   Point,
   Path,
   points,
   paths,
-  measurements,
-  //  Snippet,
-  //  snippets,
   store,
-  utils,
-  complete,
   sa,
-  paperless,
+  Snippet,
+  snippets,
+  expand,
   macro,
   part,
 }) {
-  // Stretch utility method
+  /*
+   * Does the user have/want a bulge?
+   */
+  if (store.get('bulge')) {
+    /*
+     * Return the bulge version of the front which means that:
+     * - Front and gusset togeter form one part
+     * - Front cannot be cut on the fold
+     */
+    paths.seam = store.get('bulge')
+      ? paths.bulge.clone().setClass('fabric')
+      : paths.frontAndGusset.clone().setClass('fabric')
+    if (store.get('bulge')) delete paths.bulge
+    delete paths.back
+    delete paths.frontAndGusset
 
-  store.set('xScale', utils.stretchToScale(options.fabricStretch))
+    if (sa) paths.sa = paths.seam.offset(sa).addClass('fabric sa')
 
-  // Design pattern here
+    /*
+     * Set the cutlist info
+     */
+    store.cutlist.setCut([
+      { cut: 2, from: 'fabric' },
+      { cut: 2, from: 'lining' },
+    ])
 
-  // Create points
+    /*
+     * Set title and logo anchor
+     */
+    points.title = new Point(points.sideLegCp.x / 2, points.sideLegCp.y)
+    points.logo = points.title.shift(210, 60)
 
-  points.frontWaistMid = new Point(measurements.seat / 4, 0)
-  points.frontWaistLeft = new Point(
-    measurements.seat / 4 - (measurements.waist / 4) * store.get('xScale'),
-    0
-  )
-  points.frontHipLeft = new Point(
-    measurements.seat / 4 - (measurements.seat / 4) * store.get('xScale'),
-    measurements.waistToSeat
-  ) // Consider renaming from "hip" to "seat"
-  points.frontGussetLeft = new Point(
-    measurements.seat / 4 - (measurements.waist * options.gussetWidth * store.get('xScale')) / 1.2,
-    measurements.waistToUpperLeg
-  )
-  points.frontGussetMid = new Point(measurements.seat / 4, measurements.waistToUpperLeg)
+    /*
+     * Add grainline
+     */
+    macro('grainline', {
+      from: new Point(points.logo.x, points.backGussetSplitBulge.y),
+      to: new Point(points.logo.x, points.cfWaistbandDip.y),
+    })
 
-  /* Flip points to right side */
-  points.frontGussetRight = points.frontGussetLeft.flipX(points.frontWaistMid)
-  points.frontHipRight = points.frontHipLeft.flipX(points.frontWaistMid)
-  points.frontWaistRight = points.frontWaistLeft.flipX(points.frontWaistMid)
+    /*
+     * Dimensions
+     */
+    macro('hd', {
+      id: 'wAtTop',
+      from: points.cfWaistbandDip,
+      to: points.sideWaistband,
+      y: points.sideWaistband.y - sa - 15,
+    })
+    macro('hd', {
+      id: 'wFull',
+      from: points.cfWaistbandDip,
+      to: points.sideLeg,
+      y: points.sideWaistband.y - sa - 30,
+    })
+    macro('hd', {
+      id: 'wWedge',
+      from: points.cfWaistbandDip,
+      to: points.cfMiddleBulge,
+      y: points.cfMiddleBulge.y + sa + 15,
+    })
+    macro('hd', {
+      id: 'wTusk',
+      from: points.cfWaistbandDip,
+      to: points.backGussetSplitBulge,
+      y: points.cfMiddleBulge.y + sa + 30,
+    })
+    macro('vd', {
+      id: 'hToCf',
+      from: points.cfMiddleBulge,
+      to: points.cfWaistbandDip,
+      x: points.cfWaistbandDip.x - sa - 15,
+    })
+    macro('vd', {
+      id: 'hFull',
+      from: points.cfMiddleBulge,
+      to: points.sideWaistband,
+      x: points.cfWaistbandDip.x - sa - 30,
+    })
+    macro('vd', {
+      id: 'hSide',
+      from: points.sideLeg,
+      to: points.sideWaistband,
+      x: points.sideWaistband.x + sa + 15,
+    })
+  } else {
+    /*
+     * Return the regular version of the front which means that:
+     * - Front and gusset are different parts
+     * - Front can be cut on the fold
+     */
 
-  /* Waist band is based on waist at top, hip at bottom */
-  points.frontWaistBandLeft = points.frontHipLeft.shiftFractionTowards(
-    points.frontWaistLeft,
-    options.rise
-  )
-  points.frontWaistBandRight = points.frontWaistBandLeft.flipX(points.frontWaistMid)
-  points.frontWaistBandMid = points.frontWaistBandLeft
-    .shiftFractionTowards(points.frontWaistBandRight, 0.5)
-    .shift(270, measurements.waistToUpperLeg * options.frontDip) /* Waist band dip */
+    if (expand) {
+      /*
+       * Expand is on, show the entire part
+       */
 
-  /* Leg opening is based on waist band and hip */
-  //  points.frontLegOpeningLeft = points.frontHipLeft.shiftFractionTowards(points.frontWaistBandLeft, options.legOpening) // Waist band side point
-  //  points.frontLegOpeningRight = points.frontLegOpeningLeft.flipX(points.frontWaistMid) // Waist band side point
+      /*
+       * We need the flip these points to construct the left half
+       */
+      for (const pid of [
+        'cfWaistbandDipCp',
+        'sideWaistband',
+        'sideLeg',
+        'sideLegCp',
+        'frontGussetSplitCpBottom',
+        'frontGussetSplitCpTop',
+        'frontGussetSplit',
+      ])
+        points[`${pid}Flipped`] = points[pid].flipX()
 
-  ///////////// Replace the point it's shifting towards with a beamsIntersect() of the
-  ///////////// side (frontWaistLeft and frontHipLeft) and the lowest point of the waistband (backWaistBandMid
-  ///////////// and backWaistBandLeftCp1 should work)
-  ///////////// or maybe beamIntersectsY() of backWaistBandMid.y  ??
+      /*
+       * Draw the path
+       */
+      paths.seam = new Path()
+        .move(points.cfWaistbandDip)
+        .curve_(points.cfWaistbandDipCpFlipped, points.sideWaistbandFlipped)
+        .line(points.sideLegFlipped)
+        .curve(
+          points.frontGussetSplitCpTopFlipped,
+          points.frontGussetSplitCpBottomFlipped,
+          points.frontGussetSplitFlipped
+        )
+        .line(points.frontGussetSplit)
+        .curve(points.frontGussetSplitCpBottom, points.frontGussetSplitCpTop, points.sideLeg)
+        .line(points.sideWaistband)
+        ._curve(points.cfWaistbandDipCp, points.cfWaistbandDip)
+        .close()
+        .addClass('fabric')
+      if (sa) paths.sa = paths.seam.offset(sa).addClass('fabric sa')
 
-  points.frontLegOpeningLeft = points.frontHipLeft.shiftFractionTowards(
-    points.frontWaistBandLeft,
-    options.legOpening
-  ) // Waist band low point
-  points.frontLegOpeningRight = points.frontLegOpeningLeft.flipX(points.frontWaistMid) // Waist band low point
+      /*
+       * Set the cutlist info
+       */
+      store.cutlist.setCut({ cut: 1, from: 'fabric' })
 
-  /* Middle point for label */
-  points.frontMidMid = points.frontLegOpeningLeft.shiftFractionTowards(
-    points.frontLegOpeningRight,
-    0.5
-  )
+      /*
+       * Set title and logo anchor
+       */
+      points.title = points.cfSeat.copy()
+      points.logo = points.title.shift(30, 60)
 
-  // Create control points
+      /*
+       * Add grainline
+       */
+      macro('grainline', {
+        from: points.cfFrontGusset,
+        to: points.cfWaistbandDip,
+      })
 
-  /* Control points for leg opening curves */
-  points.frontLegOpeningLeftCp1 = points.frontLegOpeningLeft.shift(
-    180,
-    points.frontGussetLeft.dy(points.frontLegOpeningLeft) / 3
-  )
-  points.frontGussetLeftCp1 = points.frontGussetLeft
-    //    .shift(270, points.frontGussetLeft.dy(points.frontHipLeft) * 4 * options.taperToGusset); // Consider changing this so it's relative
-    .shift(270, points.frontGussetLeft.dy(points.frontWaistBandMid) * options.taperToGusset)
+      /*
+       * Dimensions
+       */
+      macro('hd', {
+        id: 'wAtBottom',
+        from: points.frontGussetSplitFlipped,
+        to: points.frontGussetSplit,
+        y: points.frontGussetSplit.y + sa + 15,
+      })
+      macro('hd', {
+        id: 'wAtLeg',
+        from: points.sideLegFlipped,
+        to: points.sideLeg,
+        y: points.frontGussetSplit.y + sa + 30,
+      })
+      macro('hd', {
+        id: 'wAtWaistband',
+        from: points.sideWaistbandFlipped,
+        to: points.sideWaistband,
+        y: points.sideWaistband.y - sa - 15,
+      })
+    } else {
+      /*
+       * Expand is off, cut on fold
+       */
+      paths.saBase = new Path()
+        .move(points.cfFrontGusset)
+        .line(points.frontGussetSplit)
+        .curve(points.frontGussetSplitCpBottom, points.frontGussetSplitCpTop, points.sideLeg)
+        .line(points.sideWaistband)
+        ._curve(points.cfWaistbandDipCp, points.cfWaistbandDip)
+        .hide()
 
-  /* Control point for waistband dip */
-  points.frontWaistBandLeftCp1 = new Point(
-    points.frontWaistBandRight.x / 3,
-    points.frontWaistBandMid.y
-  )
+      paths.seam = paths.saBase
+        .clone()
+        .line(points.cfFrontGusset)
+        .close()
+        .unhide()
+        .addClass('fabric')
 
-  /* Flip control points to right side */
-  points.frontGussetRightCp1 = points.frontGussetLeftCp1.flipX(points.frontWaistMid)
-  points.frontLegOpeningRightCp1 = points.frontLegOpeningLeftCp1.flipX(points.frontWaistMid)
-  points.frontWaistBandRightCp1 = points.frontWaistBandLeftCp1.flipX(points.frontWaistMid)
+      if (sa)
+        paths.sa = new Path()
+          .move(points.cfFrontGusset)
+          .join(paths.saBase.offset(sa))
+          .line(paths.saBase.end())
+          .setClass('fabric sa')
+          .unhide()
 
-  // Draw paths
+      /*
+       * Set the cutlist info
+       */
+      store.cutlist.setCut({ cut: 1, from: 'fabric', onFold: true })
 
-  paths.seam = new Path()
-    .move(points.frontWaistBandMid)
-    .curve(points.frontWaistBandLeftCp1, points.frontWaistBandLeft, points.frontWaistBandLeft) // Waist band dip
-    .line(points.frontLegOpeningLeft)
-    .curve(points.frontLegOpeningLeftCp1, points.frontGussetLeftCp1, points.frontGussetLeft)
-    .line(points.frontGussetMid)
-    .line(points.frontGussetRight)
-    .curve(points.frontGussetRightCp1, points.frontLegOpeningRightCp1, points.frontLegOpeningRight)
-    .line(points.frontWaistBandRight)
-    .curve(points.frontWaistBandRight, points.frontWaistBandRightCp1, points.frontWaistBandMid) // Waist band dip
-    .close()
-    .attr('class', 'fabric')
+      /*
+       * Set title and logo anchor
+       */
+      points.title = new Point(points.frontGussetSplit.x / 3, points.cfSeat.y)
+      points.logo = points.title.shift(30, 60)
 
-  // Store points for use in other parts
+      /*
+       * Add cut on fold indicator
+       */
+      macro('cutonfold', {
+        to: points.cfFrontGusset,
+        from: points.cfWaistbandDip,
+        grainline: true,
+      })
 
-  /* Store side seam points for use in back */
-
-  store.set('sideSeamWaist', points.frontWaistBandLeft)
-  store.set('sideSeamHip', points.frontLegOpeningLeft)
-
-  /* Store gusset points for use in gusset */
-
-  store.set('frontGussetLeft', points.frontGussetLeft)
-  store.set('frontGussetRight', points.frontGussetRight)
-  store.set('frontGussetMid', points.frontGussetMid)
-
-  /* Store lengths for use in elastic */
-
-  paths.frontLegOpening = new Path()
-    .move(points.frontGussetRight)
-    .curve(points.frontGussetRightCp1, points.frontLegOpeningRightCp1, points.frontLegOpeningRight)
-    .hide()
-  store.set('frontLegOpeningLength', paths.frontLegOpening.length())
-
-  paths.frontWaistBand = new Path()
-    .move(points.frontWaistBandRight)
-    .curve(points.frontWaistBandRightCp1, points.frontWaistBandLeftCp1, points.frontWaistBandLeft)
-    .hide()
-  store.set('frontWaistBandLength', paths.frontWaistBand.length())
-
-  // Complete?
-  if (complete) {
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      /*
+       * Dimensions
+       */
+      macro('hd', {
+        id: 'wAtBottom',
+        from: points.cfFrontGusset,
+        to: points.frontGussetSplit,
+        y: points.frontGussetSplit.y + sa + 15,
+      })
+      macro('hd', {
+        id: 'wAtLeg',
+        from: points.cfFrontGusset,
+        to: points.sideLeg,
+        y: points.frontGussetSplit.y + sa + 30,
+      })
+      macro('hd', {
+        id: 'wAtWaistband',
+        from: points.cfWaistbandDip,
+        to: points.sideWaistband,
+        y: points.sideWaistband.y - sa - 15,
+      })
     }
+
+    /*
+     * Dimensions
+     */
+    macro('vd', {
+      id: 'hToSideLeg',
+      from: points.frontGussetSplit,
+      to: points.sideLeg,
+      x: points.sideLeg.x + sa + 15,
+    })
+    macro('vd', {
+      id: 'hToWaistbandDip',
+      from: points.frontGussetSplit,
+      to: points.cfWaistbandDip,
+      x: points.sideLeg.x + sa + 30,
+    })
+    macro('vd', {
+      id: 'hFull',
+      from: points.frontGussetSplit,
+      to: points.sideWaistband,
+      x: points.sideLeg.x + sa + 45,
+    })
   }
 
+  /*
+   * Clean up paths from base
+   */
+  delete paths.back
+  delete paths.front
+  delete paths.gusset
+
+  /*
+   * Remaining annotations
+   */
+
+  /*
+   * Title
+   */
   macro('title', {
-    at: points.frontMidMid,
+    at: points.title,
     nr: 1,
     title: 'front',
   })
 
-  macro('grainline', {
-    from: points.frontGussetMid,
-    to: points.frontGussetMid.shiftFractionTowards(points.frontWaistBandMid, 0.5),
-  })
-
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.frontWaistBandRight,
-      to: points.frontWaistBandLeft,
-      y: points.frontWaistBandRight.y + sa - 15,
-    })
-    macro('hd', {
-      from: points.frontLegOpeningRight,
-      to: points.frontLegOpeningLeft,
-      y: points.frontLegOpeningRight.y + sa - 15,
-    })
-    macro('hd', {
-      from: points.frontGussetLeft,
-      to: points.frontGussetRight,
-      y: points.frontGussetLeft.y + sa + 15,
-    })
-    macro('vd', {
-      from: points.frontWaistBandMid,
-      to: points.frontGussetMid,
-      x: points.frontWaistBandMid.x + sa + 15,
-    })
-    macro('ld', {
-      from: points.frontWaistBandLeft,
-      to: points.frontLegOpeningLeft,
-      d: points.frontWaistBandLeft.y + sa - 15,
-    })
-    macro('pd', {
-      path: new Path()
-        .move(points.frontGussetRight)
-        .curve(
-          points.frontGussetRightCp1,
-          points.frontLegOpeningRightCp1,
-          points.frontLegOpeningRight
-        ),
-      d: 15,
-    })
-    /*    macro('vd', {
-      from: points.frontWaistBandLeft,
-      to: points.frontWaistBandMid,
-      x: points.frontWaistBandMid.x + sa + 15,
-    }) */
-  }
+  /*
+   * Logo
+   */
+  snippets.logo = new Snippet('logo', points.logo)
 
   return part
-}
-
-export const front = {
-  name: 'uma.front',
-  measurements: ['waist', 'seat', 'waistToSeat', 'waistToUpperLeg'], // Potentially useful: 'hips', 'waistToHips'
-  options: {
-    gussetWidth: { pct: 7.2, min: 4, max: 12, menu: 'fit' }, // Gusset width in relation to seat
-    fabricStretch: { pct: 15, min: 5, max: 25, menu: 'fit' },
-    rise: { pct: 46, min: 30, max: 100, menu: 'style' },
-    legOpening: { pct: 54, min: 5, max: 85, menu: 'style' },
-    frontDip: { pct: 5.0, min: -5, max: 15, menu: 'style' },
-    taperToGusset: { pct: 70, min: 5, max: 100, menu: 'style' },
-  },
-  draft: umaFront,
 }

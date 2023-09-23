@@ -1,281 +1,238 @@
-import { front } from './front.mjs'
+import { base } from './base.mjs'
 
-function umaBack({
-  options,
+export const back = {
+  name: 'uma.back',
+  from: base,
+  draft: draftUmaBack,
+}
+
+/*
+ * This drafts the front of Uma, or rather recycles what's needed from base
+ */
+function draftUmaBack({
   Point,
   Path,
   points,
   paths,
-  measurements,
-  //  Snippet,
-  //  snippets,
   store,
-  utils,
-  complete,
   sa,
-  paperless,
+  Snippet,
+  snippets,
+  expand,
   macro,
   part,
 }) {
-  // Design pattern here
+  /*
+   * We'll use this list later
+   */
+  const toFlip = [
+    'cfWaistbandDipCpBack',
+    'sideWaistbandBack',
+    'sideLegBack',
+    'backGussetSplitCpTop',
+    'backGussetSplitCpBottom',
+    'backGussetSplit',
+  ]
 
-  // Create points
+  /*
+   * Depending on the expand setting, we'll draw a full back
+   * or one to be cut on the fold
+   */
+  if (expand) {
+    /*
+     * Expand is on, show the entire part
+     */
 
-  points.backWaistMid = new Point(measurements.seat / 4, 0)
-  points.backWaistBandLeft = new Point(
-    store.get('sideSeamWaist').x / options.backToFrontWidth,
-    store.get('sideSeamWaist').y
-  )
-  points.backLegOpeningLeft = new Point(
-    store.get('sideSeamHip').x / options.backToFrontWidth,
-    store.get('sideSeamHip').y
-  )
-  points.backGussetLeft = new Point(
-    measurements.seat / 4 -
-      ((measurements.waist * options.gussetWidth * store.get('xScale')) / options.gussetRatio) *
-        options.backToFrontWidth,
-    measurements.waistToUpperLeg * options.backToFrontLength
-  )
-  points.backGussetMid = new Point(
-    measurements.seat / 4,
-    measurements.waistToUpperLeg * options.backToFrontLength
-  )
-
-  points.backGussetRight = points.backGussetLeft.flipX(points.backWaistMid)
-  points.backLegOpeningRight = points.backLegOpeningLeft.flipX(points.backWaistMid)
-  points.backWaistBandRight = points.backWaistBandLeft.flipX(points.backWaistMid)
-
-  points.backWaistBandMid = points.backWaistBandLeft
-    .shiftFractionTowards(points.backWaistBandRight, 0.5)
-    .shift(270, measurements.waistToUpperLeg * options.backDip)
-
-  /* Middle point for label */
-  points.backMidMid = points.backLegOpeningLeft.shiftFractionTowards(
-    points.backLegOpeningRight,
-    0.5
-  )
-
-  // Create control points
-
-  /* Control point for waistband dip */
-  points.backWaistBandLeftCp1 = new Point(
-    points.backWaistBandRight.x / 3,
-    points.backWaistBandMid.y
-  )
-
-  /* Flip points to right side */
-  points.backWaistBandRightCp1 = points.backWaistBandLeftCp1.flipX(points.backWaistMid)
-
-  // Shape back coverage
-
-  /* Only have to do this on one side */
-  points.backLegOpeningCorner = utils.beamsIntersect(
-    points.backLegOpeningLeft,
-    points.backLegOpeningLeft.shift(180, points.backGussetLeft.dy(points.backLegOpeningLeft)),
-    points.backGussetLeft,
-    points.backGussetLeft.shift(270, points.backGussetLeft.dy(points.backLegOpeningLeft))
-  )
-
-  if (options.backExposure >= 0) {
-    /* If back exposure is high, like a thong style */
-    /* This controls the hip bit */
-    points.backLegOpeningLeftCp1 = points.backLegOpeningLeft.shiftFractionTowards(
-      points.backLegOpeningCorner,
-      options.backExposure
-    )
-    /* This controls the center bit */
-    points.backGussetLeftCp1 = points.backGussetLeft.shiftFractionTowards(
-      points.backWaistBandMid,
-      options.backExposure
-    )
-    points.backGussetLeft = points.backGussetLeft.shiftFractionTowards(
-      points.backGussetMid,
-      options.backExposure
-    ) // This narrows the back of the gusset
-    points.backGussetRight = points.backGussetLeft.flipX(points.backWaistMid)
-  } else {
-    /* If back exposure is low and flares out to cover more */
-    /* This controls the hip bit */
-    points.backLegOpeningLeftCp1 = points.backLegOpeningLeft.shift(
-      -45,
-      points.backWaistBandMid.x / 8
-    )
-    /* This controls the taper to gusset */
-    points.backGussetLeftCp1 = points.backGussetLeft.shift(115, points.backWaistBandMid.x / 8)
-    /* This adds a new point in the middle of the back coverage */
-    points.backFlare = points.backGussetLeft.shiftFractionTowards(points.backLegOpeningLeft, 0.5)
-    points.backFlareLeft = points.backFlare.shift(
-      215,
-      (-points.backWaistBandMid.x / 2) * options.backExposure
-    )
-    points.backFlareRight = points.backFlareLeft.flipX(points.backWaistBandMid)
-    /* This controls the flare */
-    points.backFlareLeftCp1 = points.backFlareLeft.shift(
-      115,
-      points.backWaistBandMid.x / 5 //-150*options.backExposure
-    )
-    points.backFlareLeftCp2 = points.backFlareLeft.shift(
-      295,
-      points.backWaistBandMid.x / 5 //-150*options.backExposure
-    )
-    points.backFlareRightCp1 = points.backFlareLeftCp1.flipX(points.backWaistMid)
-    points.backFlareRightCp2 = points.backFlareLeftCp2.flipX(points.backWaistMid)
-  }
-
-  /* Flip points to the right */
-
-  points.backLegOpeningRightCp1 = points.backLegOpeningLeftCp1.flipX(points.backWaistMid)
-  points.backGussetRightCp1 = points.backGussetLeftCp1.flipX(points.backWaistMid)
-
-  // Draw paths
-
-  if (options.backExposure >= 0) {
-    paths.seam = new Path()
-      .move(points.backWaistBandMid)
-      .curve(points.backWaistBandLeftCp1, points.backWaistBandLeft, points.backWaistBandLeft) // Waist band dip
-      .line(points.backLegOpeningLeft)
-      .curve(points.backLegOpeningLeftCp1, points.backGussetLeftCp1, points.backGussetLeft)
-      .line(points.backGussetMid)
-      .line(points.backGussetRight)
-      .curve(points.backGussetRightCp1, points.backLegOpeningRightCp1, points.backLegOpeningRight)
-      .line(points.backWaistBandRight)
-      .curve(points.backWaistBandRight, points.backWaistBandRightCp1, points.backWaistBandMid) // Waist band dip
-      .close()
-      .attr('class', 'fabric')
-  } else {
-    paths.seam = new Path()
-      .move(points.backWaistBandMid)
-      .curve(points.backWaistBandLeftCp1, points.backWaistBandLeft, points.backWaistBandLeft) // Waist band dip
-      .line(points.backLegOpeningLeft)
-      .curve(points.backLegOpeningLeftCp1, points.backFlareLeftCp1, points.backFlareLeft)
-      .curve(points.backFlareLeftCp2, points.backGussetLeftCp1, points.backGussetLeft)
-      .line(points.backGussetMid)
-      .line(points.backGussetRight)
-      .curve(points.backGussetRightCp1, points.backFlareRightCp2, points.backFlareRight)
-      .curve(points.backFlareRightCp1, points.backLegOpeningRightCp1, points.backLegOpeningRight)
-      .line(points.backWaistBandRight)
-      .curve(points.backWaistBandRight, points.backWaistBandRightCp1, points.backWaistBandMid) // Waist band dip
-      .close()
-      .attr('class', 'fabric')
-  }
-
-  // Store points for use in other parts
-
-  /* Store gusset points for use in gusset */
-
-  store.set('backGussetLeft', points.backGussetLeft)
-  store.set('backGussetRight', points.backGussetRight)
-
-  /* Store lengths for use in elastic */
-
-  paths.backLegOpening =
-    options.backExposure >= 0
-      ? new Path()
-          .move(points.backGussetRight)
-          .curve(
-            points.backGussetRightCp1,
-            points.backLegOpeningRightCp1,
-            points.backLegOpeningRight
-          )
-          .hide()
-      : new Path()
-          .move(points.backGussetRight)
-          .curve(points.backGussetRightCp1, points.backFlareRightCp2, points.backFlareRight)
-          .curve(
-            points.backFlareRightCp1,
-            points.backLegOpeningRightCp1,
-            points.backLegOpeningRight
-          )
-          .hide()
-  store.set('backLegOpeningLength', paths.backLegOpening.length())
-
-  paths.backWaistBand = new Path()
-    .move(points.backWaistBandRight)
-    .curve(points.backWaistBandRightCp1, points.backWaistBandLeftCp1, points.backWaistBandLeft)
-    .hide()
-  store.set('backWaistBandLength', paths.backWaistBand.length())
-
-  // Complete?
-  if (complete) {
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+    /*
+     * We need the flip these points to construct the left half
+     */
+    for (const pid of toFlip) {
+      // Flip new points along X-axis and Y-axis
+      points[`${pid}Flipped`] = points[pid].flipX().flipY()
+      // Flip existing points along Y-axis
+      points[pid] = points[pid].flipY()
     }
+    // Also Y-flip these central points
+    points.cfWaistbandDipBack = points.cfWaistbandDipBack.flipY()
+    points.cfBackGusset = points.cfBackGusset.flipY()
+
+    /*
+     * Draw the path
+     */
+    paths.seam = new Path()
+      .move(points.backGussetSplitFlipped)
+      .curve(
+        points.backGussetSplitCpTopFlipped,
+        points.backGussetSplitCpBottomFlipped,
+        points.sideLegBackFlipped
+      )
+      .line(points.sideWaistbandBackFlipped)
+      ._curve(points.cfWaistbandDipCpBackFlipped, points.cfWaistbandDipBack)
+      .curve_(points.cfWaistbandDipCpBack, points.sideWaistbandBack)
+      .line(points.sideLegBack)
+      .curve(points.backGussetSplitCpBottom, points.backGussetSplitCpTop, points.backGussetSplit)
+      .line(points.backGussetSplitFlipped)
+      .close()
+      .reverse()
+      .addClass('fabric')
+
+    if (sa) paths.sa = paths.seam.offset(sa).addClass('fabric sa')
+
+    /*
+     * Set the cutlist info
+     */
+    store.cutlist.setCut({ cut: 1, from: 'fabric' })
+
+    /*
+     * Add grainline
+     */
+    macro('grainline', {
+      from: new Point(0, points.backGussetSplit.y),
+      to: points.cfWaistbandDipBack,
+    })
+
+    /*
+     * Dimensions
+     */
+    macro('hd', {
+      id: 'wAtBottom',
+      from: points.backGussetSplitFlipped,
+      to: points.backGussetSplit,
+      y: points.backGussetSplit.y + sa + 15,
+    })
+    macro('hd', {
+      id: 'wAtLeg',
+      from: points.sideLegBackFlipped,
+      to: points.sideLegBack,
+      y: points.backGussetSplit.y + sa + 30,
+    })
+    macro('hd', {
+      id: 'wAtWaistband',
+      from: points.sideWaistbandBackFlipped,
+      to: points.sideWaistbandBack,
+      y: points.sideWaistbandBack.y - sa - 15,
+    })
+  } else {
+    /*
+     * Expand is off, cut on fold
+     */
+    for (const pid of toFlip) {
+      // Flip existing points along Y-axis
+      points[pid] = points[pid].flipY()
+    }
+    // Also Y-flip these central points
+    points.cfWaistbandDipBack = points.cfWaistbandDipBack.flipY()
+    points.cfBackGusset = points.cfBackGusset.flipY()
+    paths.saBase = new Path()
+      .move(points.cfWaistbandDipBack)
+      .curve_(points.cfWaistbandDipCpBack, points.sideWaistbandBack)
+      .line(points.sideLegBack)
+      .curve(points.backGussetSplitCpBottom, points.backGussetSplitCpTop, points.backGussetSplit)
+      .line(points.cfBackGusset)
+      .reverse()
+      .hide()
+
+    paths.seam = paths.saBase
+      .clone()
+      .line(points.cfWaistbandDipBack)
+      .close()
+      .unhide()
+      .addClass('fabric')
+
+    if (sa)
+      paths.sa = new Path()
+        .move(points.cfBackGusset)
+        .join(paths.saBase.offset(sa))
+        .line(paths.saBase.end())
+        .addClass('fabric sa')
+
+    /*
+     * Set the cutlist info
+     */
+    store.cutlist.setCut({ cut: 1, from: 'fabric', onFold: true })
+
+    /*
+     * Add cut on fold indicator
+     */
+    macro('cutonfold', {
+      from: points.cfWaistbandDipBack,
+      to: points.cfBackGusset,
+      grainline: true,
+    })
+
+    /*
+     * Dimensions
+     */
+    macro('hd', {
+      id: 'wAtBottom',
+      from: points.cfBackGusset,
+      to: points.backGussetSplit,
+      y: points.cfBackGusset.y + sa + 15,
+    })
+    macro('hd', {
+      id: 'wAtLeg',
+      from: points.cfBackGusset,
+      to: points.sideLegBack,
+      y: points.cfBackGusset.y + sa + 30,
+    })
+    macro('hd', {
+      id: 'wAtTop',
+      from: points.cfWaistbandDipBack,
+      to: points.sideWaistbandBack,
+      y: points.sideWaistbandBack.y - sa - 15,
+    })
   }
 
+  /*
+   * Dimensions
+   */
+  macro('vd', {
+    id: 'hToLeg',
+    from: points.backGussetSplit,
+    to: points.sideLegBack,
+    x: points.sideLegBack.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hToCfWaistband',
+    from: points.backGussetSplit,
+    to: points.cfWaistbandDipBack,
+    x: points.sideLegBack.x + sa + 30,
+  })
+  macro('vd', {
+    id: 'hToSideWaistband',
+    from: points.backGussetSplit,
+    to: points.sideWaistbandBack,
+    x: points.sideLegBack.x + sa + 45,
+  })
+
+  /*
+   * Clean up paths from base
+   */
+  delete paths.back
+  delete paths.front
+  delete paths.gusset
+  delete paths.frontAndGusset
+  delete paths.bulge
+
+  /*
+   * Remaining annotations
+   */
+
+  /*
+   * Title
+   */
+  points.title = points.cfWaistbandDipBack.shiftFractionTowards(points.backGussetSplitCpTop, 0.5)
   macro('title', {
-    at: points.backMidMid,
-    nr: 2,
+    at: points.title,
+    nr: 3,
     title: 'back',
   })
 
-  macro('grainline', {
-    from: points.backGussetMid,
-    to: points.backGussetMid.shiftFractionTowards(points.backWaistBandMid, 0.4),
-  })
-
-  points.scaleboxAnchor = points.scalebox = points.backMidMid.shift(90, -50)
-  macro('miniscale', { at: points.scalebox })
-
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.backWaistBandRight,
-      to: points.backWaistBandLeft,
-      y: points.backWaistBandRight.y + sa - 15,
-    })
-    macro('hd', {
-      from: points.backLegOpeningRight,
-      to: points.backLegOpeningLeft,
-      y: points.backLegOpeningRight.y + sa - 15,
-    })
-    macro('hd', {
-      from: points.backGussetLeft,
-      to: points.backGussetRight,
-      y: points.backGussetLeft.y + sa + 15,
-    })
-    macro('vd', {
-      from: points.backWaistBandMid,
-      to: points.backGussetMid,
-      x: points.backWaistBandMid.x + sa + 15,
-    })
-    if (options.backExposure >= 0) {
-      macro('pd', {
-        path: new Path()
-          .move(points.backGussetRight)
-          .curve(
-            points.backGussetRightCp1,
-            points.backLegOpeningRightCp1,
-            points.backLegOpeningRight
-          ),
-        d: 15,
-      })
-    } else {
-      macro('pd', {
-        path: new Path()
-          .move(points.backGussetRight)
-          .curve(points.backGussetRightCp1, points.backFlareRightCp2, points.backFlareRight)
-          .curve(
-            points.backFlareRightCp1,
-            points.backLegOpeningRightCp1,
-            points.backLegOpeningRight
-          ),
-        d: 15,
-      })
-    }
-  }
+  /*
+   * Logo
+   */
+  points.logo = points.title.shift(-90, 80)
+  snippets.logo = new Snippet('logo', points.logo)
 
   return part
-}
-
-export const back = {
-  name: 'uma.back',
-  options: {
-    backToFrontLength: 1.15, // Maybe include this in advanced options?
-    backToFrontWidth: 1.1, // Maybe include this in advanced options?
-    gussetRatio: 0.7, // Relationship between front and back gusset widths
-    backDip: { pct: 2.5, min: -5, max: 15, menu: 'style' },
-    backExposure: { pct: 20, min: -30, max: 90, menu: 'style' },
-  },
-  after: front,
-  draft: umaBack,
 }
