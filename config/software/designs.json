@@ -396,18 +396,10 @@
     "description": "A FreeSewing pattern for a baby bib that's used in our tutorial",
     "code": "Joost De Cock"
   },
-  "unice": {
+  "uma": {
     "description": "A FreeSewing pattern for a basic, highly-customizable underwear pattern",
-    "code": ["Anna Puk", "Natalia Sayang"],
-    "design": ["Anna Puk", "Natalia Sayang"],
-    "difficulty": 1,
-    "tags": ["bottoms", "underwear"],
-    "techniques": []
-  },
-  "ursula": {
-    "description": "A FreeSewing pattern for a basic, highly-customizable underwear pattern",
-    "code": "Natalia Sayang",
-    "design": "Natalia Sayang",
+    "code": "Joost De Cock",
+    "design": "Joost De Cock",
     "difficulty": 1,
     "tags": ["bottoms", "underwear"],
     "techniques": []
