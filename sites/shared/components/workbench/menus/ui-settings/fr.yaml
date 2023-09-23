@@ -8,12 +8,12 @@ renderWithCore.t: Rendu avec la bibliothèque Core de Freesewing
 renderWithCore.d: Rendu directement en SVG à partir de Core. Ne permet aucune interactivité et est optimisé pour l'impression. Utilise-le si tu veux savoir à quoi il ressemblera une fois exporté.
 control.t: Expérience de l'utilisateur
 control.d: Quelle expérience utilisateur préfères-tu ? Note qu'il s'agit d'un paramètre de compte, il aura donc un impact sur l'ensemble du site Web.
-kiosk.t: Kiosk mode
-kiosk.d: Enable this to utilize the entire screen for the pattern drafting environment
-websiteMode.t: Regular mode
-websiteMode.d: Anchors the pattern drafting environment whithin the default website layout.
-kioskMode.t: Kiosk mode
-kioskMode.d: Utilizes the entire screen for the pattern drafting environment, hiding all other website elements.
+inspect.t: Inspecter
+inspect.d: L'activation de cette fonction te permettra d'approfondir le modèle et d'obtenir des informations sur ses différentes parties, ses chemins et ses points.
+inspectNo.t: Désactive l'inspecteur
+inspectNo.d: C'est la valeur par défaut, l'inspecteur de motifs est désactivé et le motif s'affiche comme d'habitude.
+inspectYes.t: Active l'inspecteur
+inspectYes.d: Avec l'inspecteur de motifs activé et le moteur de rendu React sélectionné, nous allons ajouter de l'interactivité au motif pour te permettre d'inspecter les différents éléments qui le composent.
 no: No
 yes: Yes
 draft: Ébauche

@@ -8,12 +8,12 @@ renderWithCore.t: Rendering mit der Core-Bibliothek von Freesewing
 renderWithCore.d: Rendere direkt aus Core in SVG. Erlaubt keine Interaktivität und ist für den Druck optimiert. Verwende dies, wenn du wissen willst, wie es nach dem Export aussehen wird.
 control.t: Benutzererfahrung
 control.d: Welches Benutzererlebnis bevorzugst du? Bitte beachte, dass dies eine Kontoeinstellung ist, die sich auf die gesamte Website auswirkt.
-kiosk.t: Kiosk mode
-kiosk.d: Enable this to utilize the entire screen for the pattern drafting environment
-websiteMode.t: Regular mode
-websiteMode.d: Anchors the pattern drafting environment whithin the default website layout.
-kioskMode.t: Kiosk mode
-kioskMode.d: Utilizes the entire screen for the pattern drafting environment, hiding all other website elements.
+inspect.t: Überprüfe
+inspect.d: Wenn du diese Funktion aktivierst, kannst du das Muster aufschlüsseln und Informationen über seine verschiedenen Teile, Pfade und Punkte abrufen.
+inspectNo.t: Deaktiviere den Inspektor
+inspectNo.d: Das ist die Standardeinstellung, der Musterinspektor ist deaktiviert und das Muster wird wie gewohnt angezeigt.
+inspectYes.t: Aktiviere den Inspektor
+inspectYes.d: Wenn der Musterinspektor aktiviert und die React-Rendering-Engine ausgewählt ist, fügen wir dem Muster Interaktivität hinzu, damit du die verschiedenen Elemente, aus denen das Muster besteht, untersuchen kannst.
 no: No
 yes: Yes
 draft: Entwurf
