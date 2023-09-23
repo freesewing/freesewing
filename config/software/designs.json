@@ -200,7 +200,7 @@
     "design": ["Stoffsuchti", "Wouter Van Wageningen"],
     "difficulty": 3,
     "tags": ["accessories", "bags"],
-    "techniques": []
+    "techniques": ["curvedSeam", "precision", "lining", "zipper"]
   },
   "huey": {
     "description": "A FreeSewing pattern for a zip-up hoodie",
@@ -263,6 +263,14 @@
     "difficulty": 3,
     "tags": ["accessories", "bags"],
     "techniques": []
+  },
+  "naomiwu": {
+    "description": "A FreeSewing pattern for Naomi Wu's signature cargo skirt",
+    "code": "Joost De Cock",
+    "design": "Joost De Cock & x",
+    "difficulty": 3,
+    "tags": ["bottoms", "skirts"],
+    "techniques": ["button", "hem", "pocket", "lining"]
   },
   "noble": {
     "description": "A FreeSewing pattern for a princess seam bodice block",
@@ -388,21 +396,13 @@
     "description": "A FreeSewing pattern for a baby bib that's used in our tutorial",
     "code": "Joost De Cock"
   },
-  "unice": {
+  "uma": {
     "description": "A FreeSewing pattern for a basic, highly-customizable underwear pattern",
-    "code": ["Anna Puk", "Natalia Sayang"],
-    "design": ["Anna Puk", "Natalia Sayang"],
+    "code": "Joost De Cock",
+    "design": "Joost De Cock",
     "difficulty": 1,
     "tags": ["bottoms", "underwear"],
-    "techniques": []
-  },
-  "ursula": {
-    "description": "A FreeSewing pattern for a basic, highly-customizable underwear pattern",
-    "code": "Natalia Sayang",
-    "design": "Natalia Sayang",
-    "difficulty": 1,
-    "tags": ["bottoms", "underwear"],
-    "techniques": []
+    "techniques": ["elastic", "curvedSeam"]
   },
   "wahid": {
     "description": "A FreeSewing pattern for a classic fitted waistcoat",

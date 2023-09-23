@@ -14,7 +14,7 @@ Wenn ein Musterteil nicht gedruckt wird, bedeutet das, dass Sie es nicht benöti
 - Aus Deinem Hauptstoff:
   - 2x **Teil 1**: Dies ist die Rückseite. Schneiden Sie diese aus Ihrem **Hauptstoff** mit _guten Seiten zusammen_
   - 2x **Teil 2**: Dies ist die Frontplatte. Schneiden Sie diese aus Ihrem **Hauptstoff** mit _guten Seiten zusammen_
-  - 1x **part 3**: This is the waistband. Schneiden Sie es aus Ihrem **Haupt-Stoff**
+  - 2 davon von **Schnittstelle** Schneiden Sie es aus Ihrem **Haupt-Stoff**
   - 2x **Teil 4**: Das ist die Knöchelschicht. Schneiden Sie diese aus Ihrem **Haupt-Stoff** mit _guten Seiten zusammen_ (nicht erforderlich, wenn Sie kein elastisches Hemd haben)
   - 2x **Teil 7**: Das ist die hintere Taschenwelle. Schneiden Sie 2 davon aus Ihrem **Hauptstoff** mit _guten Seiten zusammen_
 - Aus Deinem Futter-Stoff:

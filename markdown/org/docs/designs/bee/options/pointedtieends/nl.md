@@ -1,11 +1,7 @@
 ---
-title: "Band (borst) strikuiteinden"
+title: Pointed tie ends
 ---
 
-***
+This option allows you to generate a pattern where the ties have a pointy end, rather than a straight one.
 
-Of je nu van rechte of puntige uiteinden van de stropdas rond je borst houdt
-
-## Effect van deze optie op het patroon
-
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bee_bandtieends_sample.svg "Effect van deze optie op het patroon")
+Enable this option if you want your ties to have pointy ends. Disable this option (the default) if you want your ties to have straight ends.

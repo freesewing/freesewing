@@ -25,6 +25,7 @@ import { Jaeger } from '@freesewing/jaeger'
 import { Lucy } from '@freesewing/lucy'
 import { Lunetius } from '@freesewing/lunetius'
 import { Magde } from '@freesewing/magde'
+import { Naomiwu } from '@freesewing/naomiwu'
 import { Noble } from '@freesewing/noble'
 import { Octoplushy } from '@freesewing/octoplushy'
 import { Paco } from '@freesewing/paco'
@@ -39,8 +40,7 @@ import { Teagan } from '@freesewing/teagan'
 import { Tiberius } from '@freesewing/tiberius'
 import { Titan } from '@freesewing/titan'
 import { Trayvon } from '@freesewing/trayvon'
-import { Unice } from '@freesewing/unice'
-import { Ursula } from '@freesewing/ursula'
+import { Uma } from '@freesewing/uma'
 import { Wahid } from '@freesewing/wahid'
 import { Walburga } from '@freesewing/walburga'
 import { Waralee } from '@freesewing/waralee'
@@ -74,6 +74,7 @@ const designs = {
   lucy: Lucy,
   lunetius: Lunetius,
   magde: Magde,
+  naomiwu: Naomiwu,
   noble: Noble,
   octoplushy: Octoplushy,
   paco: Paco,
@@ -88,8 +89,7 @@ const designs = {
   tiberius: Tiberius,
   titan: Titan,
   trayvon: Trayvon,
-  unice: Unice,
-  ursula: Ursula,
+  uma: Uma,
   wahid: Wahid,
   walburga: Walburga,
   waralee: Waralee,

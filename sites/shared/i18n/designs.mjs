@@ -25,6 +25,7 @@ import { i18n as Jaeger } from '@freesewing/jaeger'
 import { i18n as Lucy } from '@freesewing/lucy'
 import { i18n as Lunetius } from '@freesewing/lunetius'
 import { i18n as Magde } from '@freesewing/magde'
+import { i18n as NaomiWu } from '@freesewing/naomiwu'
 import { i18n as Noble } from '@freesewing/noble'
 import { i18n as Octoplushy } from '@freesewing/octoplushy'
 import { i18n as Paco } from '@freesewing/paco'
@@ -39,8 +40,7 @@ import { i18n as Teagan } from '@freesewing/teagan'
 import { i18n as Tiberius } from '@freesewing/tiberius'
 import { i18n as Titan } from '@freesewing/titan'
 import { i18n as Trayvon } from '@freesewing/trayvon'
-import { i18n as Unice } from '@freesewing/unice'
-import { i18n as Ursula } from '@freesewing/ursula'
+import { i18n as Uma } from '@freesewing/uma'
 import { i18n as Wahid } from '@freesewing/wahid'
 import { i18n as Walburga } from '@freesewing/walburga'
 import { i18n as Waralee } from '@freesewing/waralee'
@@ -74,6 +74,7 @@ export const designs = {
   lucy: Lucy,
   lunetius: Lunetius,
   magde: Magde,
+  naomiwu: NaomiWu,
   noble: Noble,
   octoplushy: Octoplushy,
   paco: Paco,
@@ -88,8 +89,7 @@ export const designs = {
   tiberius: Tiberius,
   titan: Titan,
   trayvon: Trayvon,
-  unice: Unice,
-  ursula: Ursula,
+  uma: Uma,
   wahid: Wahid,
   walburga: Walburga,
   waralee: Waralee,

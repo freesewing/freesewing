@@ -1,11 +1,8 @@
 ---
-title: "Кольори довжини краватки на поясі (нагрудної)"
+title: Duo color ties
 ---
 
-***
+This option allows you to generate a pattern where the ties use two colors rather than one.
 
-Незалежно від того, чи хочете ви одноколірну краватку на грудях, чи двоколірну
+Enable this option if you want ties using two colors. Leave it disabled (the default) if you want ties using a single color.
 
-## Вплив цієї опції на шаблон
-
-![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bee_bandtiecolours_sample.svg "Вплив цієї опції на шаблон")

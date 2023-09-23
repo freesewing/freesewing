@@ -25,20 +25,6 @@
 
  - Workaround for not finding a suitable legband radius
 
-### unice
-
-#### Added
-
- - Added new Front Curve and Back Curve style options
-
-#### Changed
-
- - Updated gusset to always curve inward
-
-#### Fixed
-
- - Fixed bug which prevented parts from being generated as intended
-
 ### waralee
 
 #### Added
@@ -314,12 +300,6 @@
 
  - Decreased default collar ease
  - Increased default yoke height
-
-### ursula
-
-#### Added
-
- - Added markers for elastics
 
 
 ## 2.21.1 (2022-06-28)
@@ -611,18 +591,6 @@
  - Migrated from Rollup to Esbuild for all builds
 
 ### tutorial
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
-### unice
-
-#### Added
-
- - Unice is an underwear pattern
-
-### ursula
 
 #### Changed
 
@@ -1147,12 +1115,6 @@
  - Switched to default import for version from package.json
 
 ### tutorial
-
-#### Changed
-
- - Switched to default import for version from package.json
-
-### ursula
 
 #### Changed
 
@@ -1827,12 +1789,6 @@
 #### Fixed
 
  - Set department in the config to one of the newly accepted values
-
-### ursula
-
-#### Added
-
- - Initial release of Ursula, a basic, highly-customizable underwear pattern
 
 ### plugin-mirror
 
