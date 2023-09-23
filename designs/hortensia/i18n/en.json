@@ -65,7 +65,7 @@
       "t": "#10 zipper size",
       "d": "#10 zippers have teeth that are 10mm wide."
     },
-    "zipperSize.invisible10": {
+    "zipperSize.invisible": {
       "t": "Invisible zipper",
       "d": "An invisible zipper is a zipper that can be inserted in such a way that the teeth do not show."
     },
