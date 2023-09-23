@@ -184,7 +184,7 @@
     "design": "Wouter Van Wageningen",
     "difficulty": 4,
     "tags": ["accessories", "toys"],
-    "techniques": []
+    "techniques": ["curvedSeam", "dart"]
   },
   "holmes": {
     "description": "A FreeSewing pattern for a Sherlock Holmes hat",
