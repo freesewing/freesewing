@@ -57,6 +57,7 @@ import {
   DesignDropdown,
   ns as inputNs,
 } from 'shared/components/inputs.mjs'
+import { BookmarkButton } from 'shared/components/bookmarks.mjs'
 
 export const ns = [inputNs, 'account', 'patterns', 'status', 'measurements', 'sets']
 
@@ -321,6 +322,9 @@ export const Mset = ({ id, publicOnly = false }) => {
           ) : (
             <span></span>
           )}
+          {account.control > 2 && mset.public ? (
+            <BookmarkButton slug={`sets/${mset.id}`} title={mset.name} type="set" />
+          ) : null}
           <button
             onClick={() =>
               setModal(
