@@ -17,8 +17,11 @@ export const designs = nonUtilityDesigns
 export const designList = Object.keys(designs)
 
 const allTags = new Set()
+const allTechniques = new Set()
 for (const conf of Object.values(designs)) {
   for (const tag of conf.tags) allTags.add(tag)
+  for (const technique of conf.techniques) allTechniques.add(technique)
 }
 
 export const tags = [...allTags]
+export const techniques = [...allTechniques]
