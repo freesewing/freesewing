@@ -18,13 +18,15 @@ import {
   DocsIcon,
   HelpIcon,
   ChatIcon,
+  NewsletterIcon,
 } from 'shared/components/icons.mjs'
 import { HowDoesItWorkAnimation } from 'shared/components/animations/how-does-it-work.mjs'
 import { SignUp, ns as susiNs } from 'shared/components/susi/sign-up.mjs'
 import { PleaseSubscribe, ns as subNs } from 'shared/components/patrons/please-subscribe.mjs'
 import { CardLink } from 'shared/components/link.mjs'
+import { ns as nlNs } from 'shared/components/newsletter/index.mjs'
 
-const ns = nsMerge(pageNs, subNs, susiNs, 'homepage')
+const ns = nsMerge(pageNs, subNs, susiNs, nlNs, 'homepage')
 
 const Card = ({ bg = 'bg-base-200', textColor = 'text-base-content', title, children, icon }) => (
   <div className={`px-8 ${bg} py-10 rounded-lg block ${textColor} shadow-lg grow`}>
@@ -133,15 +135,19 @@ const HomePage = ({ page }) => {
         <PleaseSubscribe />
       </div>
 
-      <div className="max-w-7xl m-auto mb-24 px-4">
-        <div className="w-full lg:w-1/2 m-auto">
-          <CardLink
-            href="/support"
-            title="Need Help?"
-            icon={<ChatIcon className="w-10 h-10 shrink-0" />}
-            text="While we are all volunteers, we have a good track record of helping people. So don't be shy to reach out."
-          />
-        </div>
+      <div className="flex flex-col md:grid md:grid-cols-2 gap-4 max-w-7xl m-auto mb-24 px-4">
+        <CardLink
+          href="/support"
+          title={`FreeSewing ${t('newsletter:newsletter')}`}
+          icon={<NewsletterIcon className="w-10 h-10 shrink-0" />}
+          text={t('newsletter:subscribePitch')}
+        />
+        <CardLink
+          href="/newsletter"
+          title="Need Help?"
+          icon={<ChatIcon className="w-10 h-10 shrink-0" />}
+          text="While we are all volunteers, we have a good track record of helping people. So don't be shy to reach out."
+        />
       </div>
     </PageWrapper>
   )

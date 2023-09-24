@@ -63,6 +63,7 @@ SubscriberModel.prototype.guardedCreate = async function ({ body }) {
    * Construct the various URLs for the outgoing email
    */
   const actionUrl = i18nUrl(
+    body.language,
     `/newsletter/${this.record.active ? 'un' : ''}subscribe/${this.record.id}/${ehash}`
   )
 
@@ -70,6 +71,7 @@ SubscriberModel.prototype.guardedCreate = async function ({ body }) {
    * Send out confirmation email unless it's a test and we don't want to send test emails
    */
   if (!isTest || this.config.use.tests.email) {
+    console.log({ actionUrl })
     const template = newSubscriber ? 'nlsub' : this.record.active ? 'nlsubact' : 'nlsubinact'
     await this.mailer.send({
       template,
@@ -134,11 +136,11 @@ SubscriberModel.prototype.subscribeConfirm = async function ({ body }) {
  * @param {body} object - The request body
  * @returns {SubscriberModal} object - The SubscriberModel
  */
-SubscriberModel.prototype.unsubscribeConfirm = async function ({ body }) {
+SubscriberModel.prototype.unsubscribeConfirm = async function ({ params }) {
   /*
    * Validate input and load subscription record
    */
-  await this.verifySubscription(body)
+  await this.verifySubscription(params)
 
   /*
    * If a status code is already set, do not continue
