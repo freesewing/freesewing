@@ -609,13 +609,13 @@ const options = {
     pct: 90,
     min: 75,
     max: 125,
-    menu: ({ options }) => (options.type == 'octoplushy' ? 'style' : false),
+    menu: ({ options }, mergedOptions) => (mergedOptions?.type === 'octoplushy' ? 'style' : false),
   },
   bottomArmReductionPlushy: {
     pct: 80,
     min: 75,
     max: 125,
-    menu: ({ options }) => (options.type != 'octoplushy' ? 'style' : false),
+    menu: ({ options }, mergedOptions) => (mergedOptions?.type !== 'octoplushy' ? 'style' : false),
   },
 }
 

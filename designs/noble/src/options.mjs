@@ -11,11 +11,13 @@ export const shoulderDartPosition = {
   pct: 50,
   min: 10,
   max: 90,
-  menu: ({ options }) => (options.dartPosition != 'shoulder' ? 'darts' : false),
+  menu: ({ options }, mergedOptions) =>
+    mergedOptions?.dartPosition != 'shoulder' ? 'darts' : false,
 }
 export const armholeDartPosition = {
   pct: 50,
   min: 10,
   max: 90,
-  menu: ({ options }) => (options.dartPosition == 'shoulder' ? 'darts' : false),
+  menu: ({ options }, mergedOptions) =>
+    mergedOptions?.dartPosition == 'shoulder' ? 'darts' : false,
 }
