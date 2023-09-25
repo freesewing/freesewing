@@ -2,6 +2,7 @@
 title: "Florence face mask"
 ---
 
-<YouTube id='VcQ69_ANsRA' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
 
-<PatternDocs pattern='florence' />
+<DesignInfo design='florence' docs />
+
