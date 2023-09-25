@@ -10,8 +10,8 @@ import { designs } from 'shared/config/designs.mjs'
 import { examples } from 'site/prebuild/design-examples.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
-import { useDesign, Fragment } from 'shared/hooks/use-design.mjs'
-import { useContext } from 'react'
+import { useDesign } from 'shared/hooks/use-design.mjs'
+import { useContext, Fragment } from 'react'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
