@@ -609,13 +609,15 @@ const options = {
     pct: 90,
     min: 75,
     max: 125,
-    menu: ({ options }, mergedOptions) => (mergedOptions?.type === 'octoplushy' ? 'style' : false),
+    // eslint-disable-next-line no-unused-vars
+    menu: (settings, mergedOptions) => (mergedOptions?.type === 'octoplushy' ? 'style' : false),
   },
   bottomArmReductionPlushy: {
     pct: 80,
     min: 75,
     max: 125,
-    menu: ({ options }, mergedOptions) => (mergedOptions?.type !== 'octoplushy' ? 'style' : false),
+    // eslint-disable-next-line no-unused-vars
+    menu: (settings, mergedOptions) => (mergedOptions?.type !== 'octoplushy' ? 'style' : false),
   },
 }
 
