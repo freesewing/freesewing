@@ -7,7 +7,7 @@
 @layer components {
   /* Applied styles for common HTML tags */
   h1 {
-    @apply text-base-content text-4xl py-5 font-thin lg:text-6xl;
+    @apply text-base-content text-4xl py-5 font-light lg:text-6xl;
   }
   h2 {
     @apply text-base-content text-3xl pt-4 pb-3 m-0 font-light lg:text-4xl;

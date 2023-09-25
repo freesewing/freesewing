@@ -267,7 +267,7 @@
   "naomiwu": {
     "description": "A FreeSewing pattern for Naomi Wu's signature cargo skirt",
     "code": "Joost De Cock",
-    "design": "Joost De Cock & x",
+    "design": ["Naomi Wu", "Joost De Cock"],
     "difficulty": 3,
     "tags": ["bottoms", "skirts"],
     "techniques": ["button", "hem", "pocket", "lining"]
