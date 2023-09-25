@@ -1,6 +1,6 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { nsMerge, capitalize } from 'shared/utils.mjs'
+import { nsMerge } from 'shared/utils.mjs'
 import { designList } from 'shared/config/designs.mjs'
 import { siteConfig } from 'site/site.config.mjs'
 // Hooks

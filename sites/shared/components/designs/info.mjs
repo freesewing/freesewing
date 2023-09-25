@@ -1,5 +1,4 @@
 // Dependencies
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import {
   nsMerge,
   capitalize,
@@ -8,23 +7,17 @@ import {
   cloudflareImageUrl,
 } from 'shared/utils.mjs'
 import { designs } from 'shared/config/designs.mjs'
-import { siteConfig } from 'site/site.config.mjs'
 import { examples } from 'site/prebuild/design-examples.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
-import { useDesign } from 'shared/hooks/use-design.mjs'
+import { useDesign, Fragment } from 'shared/hooks/use-design.mjs'
 import { useContext } from 'react'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { lineDrawings } from 'shared/components/designs/linedrawings/index.mjs'
-import {
-  Design,
-  DesignTag,
-  DesignTechnique,
-  ns as designNs,
-} from 'shared/components/designs/design.mjs'
+import { Design, ns as designNs } from 'shared/components/designs/design.mjs'
 import { Difficulty } from 'shared/components/designs/difficulty.mjs'
 import { PageLink, AnchorLink, Link } from 'shared/components/link.mjs'
 import { DocsLink, DocsTitle } from 'shared/components/mdx/docs-helpers.mjs'
@@ -87,8 +80,12 @@ export const DesignInfo = ({ design }) => {
 
   // Translate measurements
   const measies = { required: {}, optional: {} }
-  for (const m of config?.measurements || []) measies.required[m] = t(`measurements:${m}`)
-  for (const m of config?.optionalMeasurements || []) measies.optional[m] = t(`measurements:${m}`)
+  if (config.measurements) {
+    for (const m of config.measurements) measies.required[m] = t(`measurements:${m}`)
+  }
+  if (config.optionalMeasurements) {
+    for (const m of config.optionalMeasurements) measies.optional[m] = t(`measurements:${m}`)
+  }
 
   // Linedrawing
   const LineDrawing = lineDrawings[design]
@@ -176,7 +173,7 @@ export const DesignInfo = ({ design }) => {
           )}
 
           {['needs', 'fabric'].map((page) => (
-            <>
+            <Fragment key={page}>
               <h2 id={page}>
                 <DocsTitle
                   slug={`docs/designs/${design}/${page}`}
@@ -190,7 +187,7 @@ export const DesignInfo = ({ design }) => {
                 noFooter
                 noTitle
               />
-            </>
+            </Fragment>
           ))}
 
           <h2 id="docs">{t('account:docs')}</h2>
