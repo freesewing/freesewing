@@ -2,4 +2,7 @@
 title: "Naomi Wu Cargo Skirt"
 ---
 
-<PatternDocs pattern='naomiwu' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='naomiwu' docs />
+

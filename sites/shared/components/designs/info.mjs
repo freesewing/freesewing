@@ -71,7 +71,7 @@ const SimpleOptionsList = ({ options, t, design }) => {
   return <ul className="list list-inside pl-2 list-disc">{output}</ul>
 }
 
-export const DesignInfo = ({ design }) => {
+export const DesignInfo = ({ design, docs = false }) => {
   const { setModal } = useContext(ModalContext)
   const { t, i18n } = useTranslation([...ns, design])
   const { language } = i18n
@@ -92,47 +92,78 @@ export const DesignInfo = ({ design }) => {
     ? lineDrawings[design]
     : ({ className }) => <div className={className}></div>
 
+  // Docs content
+  const docsContent = (
+    <>
+      <h2 id="docs">{t('account:docs')}</h2>
+      <ul className="list list-disc list-inside pl-2">
+        <li>
+          <DocsLink site="org" slug={`docs/designs/${design}/cutting`} />
+        </li>
+        <li>
+          <DocsLink site="org" slug={`docs/designs/${design}/instructions`} />
+        </li>
+        <li>
+          <DocsLink site="org" slug={`docs/designs/${design}/needs`} />
+        </li>
+        <li>
+          <DocsLink site="org" slug={`docs/designs/${design}/fabric`} />
+        </li>
+        <li>
+          <DocsLink site="org" slug={`docs/designs/${design}/options`} />
+        </li>
+        <li>
+          <DocsLink site="org" slug={`docs/designs/${design}/notes`} />
+        </li>
+      </ul>
+    </>
+  )
+
   return (
     <>
       <h5 className="-mt-6 text-accent font-medium">#FreeSewing{capitalize(design)}</h5>
       <p className="text-xl">{t(`designs:${design}.d`)}</p>
-
-      <div className="flex flex-row flex-wrap gap-2 md:gap-4 items-center p-4 border rounded-lg bg-secondary bg-opacity-5 max-w-4xl">
-        <b>Jump to:</b>
-        <AnchorLink id="notes">
-          <DocsTitle
-            slug={`docs/designs/${design}/notes`}
-            language={language}
-            format={(t) => t.split(':').pop().trim()}
-          />
-        </AnchorLink>
-        <AnchorLink id="examples" txt={t('acount:examples')} />
-        {['needs', 'fabric'].map((page) => (
-          <AnchorLink id={page} key={page}>
-            <DocsTitle
-              slug={`docs/designs/${design}/${page}`}
-              language={language}
-              format={(t) => t.split(':').pop().trim()}
-            />
-          </AnchorLink>
-        ))}
-        <AnchorLink id="docs" txt={t('account:docs')} />
-        <AnchorLink id="specs" txt={t('account:specifications')} />
-      </div>
-
-      <div className="flex flex-row flex-wrap mt-8 justify-between w-full">
-        <div className="w-full md:w-2/3 pr-0 md:pr-8 max-w-2xl">
-          <LineDrawing className="w-full" />
-
-          <h2 id="notes">
+      {docs ? null : (
+        <div className="flex flex-row flex-wrap gap-2 md:gap-4 items-center p-4 border rounded-lg bg-secondary bg-opacity-5 max-w-4xl">
+          <b>Jump to:</b>
+          <AnchorLink id="notes">
             <DocsTitle
               slug={`docs/designs/${design}/notes`}
               language={language}
               format={(t) => t.split(':').pop().trim()}
             />
-          </h2>
-          <DynamicDocs path={`designs/${design}/notes`} language={language} noFooter noTitle />
+          </AnchorLink>
+          <AnchorLink id="examples" txt={t('acount:examples')} />
+          {['needs', 'fabric'].map((page) => (
+            <AnchorLink id={page} key={page}>
+              <DocsTitle
+                slug={`docs/designs/${design}/${page}`}
+                language={language}
+                format={(t) => t.split(':').pop().trim()}
+              />
+            </AnchorLink>
+          ))}
+          <AnchorLink id="docs" txt={t('account:docs')} />
+          <AnchorLink id="specs" txt={t('account:specifications')} />
+        </div>
+      )}
 
+      <div className={`mt-8 w-full ${docs ? '' : 'flex flex-row flex-wrap justify-between'}`}>
+        <div className={`w-full max-w-2xl ${docs ? '' : 'md:w-2/3 pr-0 md:pr-8'}`}>
+          <LineDrawing className="w-full text-base-content" />
+          {docs ? null : (
+            <>
+              <h2 id="notes">
+                <DocsTitle
+                  slug={`docs/designs/${design}/notes`}
+                  language={language}
+                  format={(t) => t.split(':').pop().trim()}
+                />
+              </h2>
+              <DynamicDocs path={`designs/${design}/notes`} language={language} noFooter noTitle />
+            </>
+          )}
+          {docs ? docsContent : null}
           <h2 id="examples">{t('account:examples')}</h2>
           {examples[design] ? (
             <div className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-3">
@@ -171,49 +202,30 @@ export const DesignInfo = ({ design }) => {
               </p>
             </Popout>
           )}
+          {docs
+            ? null
+            : ['needs', 'fabric'].map((page) => (
+                <Fragment key={page}>
+                  <h2 id={page}>
+                    <DocsTitle
+                      slug={`docs/designs/${design}/${page}`}
+                      language={language}
+                      format={(t) => t.split(':').pop().trim()}
+                    />
+                  </h2>
+                  <DynamicDocs
+                    path={`designs/${design}/${page}`}
+                    language={language}
+                    noFooter
+                    noTitle
+                  />
+                </Fragment>
+              ))}
 
-          {['needs', 'fabric'].map((page) => (
-            <Fragment key={page}>
-              <h2 id={page}>
-                <DocsTitle
-                  slug={`docs/designs/${design}/${page}`}
-                  language={language}
-                  format={(t) => t.split(':').pop().trim()}
-                />
-              </h2>
-              <DynamicDocs
-                path={`designs/${design}/${page}`}
-                language={language}
-                noFooter
-                noTitle
-              />
-            </Fragment>
-          ))}
-
-          <h2 id="docs">{t('account:docs')}</h2>
-          <ul className="list list-disc list-inside pl-2">
-            <li>
-              <DocsLink site="org" slug={`docs/designs/${design}/cutting`} />
-            </li>
-            <li>
-              <DocsLink site="org" slug={`docs/designs/${design}/instructions`} />
-            </li>
-            <li>
-              <DocsLink site="org" slug={`docs/designs/${design}/needs`} />
-            </li>
-            <li>
-              <DocsLink site="org" slug={`docs/designs/${design}/fabric`} />
-            </li>
-            <li>
-              <DocsLink site="org" slug={`docs/designs/${design}/options`} />
-            </li>
-            <li>
-              <DocsLink site="org" slug={`docs/designs/${design}/notes`} />
-            </li>
-          </ul>
+          {docs ? null : docsContent}
         </div>
 
-        <div className="w-full md:w-1/3">
+        <div className={`w-full ${docs ? '' : 'md:w-1/3'}`}>
           <h2 id="specs">{t('account:specifications')}</h2>
 
           <h6 className="mt-4">{t('account:design')}</h6>
