@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { designs, tags, techniques } from 'shared/config/designs.mjs'
 import { Design, ns as designNs } from 'shared/components/designs/design.mjs'
 import { useTranslation } from 'next-i18next'

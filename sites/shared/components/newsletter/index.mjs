@@ -9,8 +9,6 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { EmailInput } from 'shared/components/inputs.mjs'
 // Components
-import { ListInput } from 'shared/components/inputs.mjs'
-import { OkIcon, NoIcon } from 'shared/components/icons.mjs'
 import { NewsletterSettings } from 'shared/components/account/newsletter.mjs'
 
 export const ns = ['newsletter', 'account']
@@ -23,7 +21,6 @@ export const SubscribeToNewsletter = ({ hideWhenSubscribed = false }) => {
   const backend = useBackend()
 
   // State
-  const [selection, setSelection] = useState(account?.newsletter ? 'yes' : 'no')
   const [email, setEmail] = useState('')
   const [sent, setSent] = useState(false)
 

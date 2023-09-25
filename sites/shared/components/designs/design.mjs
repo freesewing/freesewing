@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useTranslation } from 'next-i18next'
 import { Difficulty } from 'shared/components/designs/difficulty.mjs'
-import { designs, tags, techniques } from 'shared/config/designs.mjs'
+import { designs } from 'shared/config/designs.mjs'
 import { lineDrawings } from 'shared/components/designs/linedrawings/index.mjs'
 import { designImages } from 'shared/components/designs/examples.mjs'
 
