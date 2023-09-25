@@ -14,7 +14,7 @@ import { OkIcon, NoIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['account', 'status']
 
-export const NewsletterSettings = ({ welcome = false }) => {
+export const NewsletterSettings = ({ welcome = false, bare = false }) => {
   // Hooks
   const { account, setAccount } = useAccount()
   const backend = useBackend()
@@ -86,7 +86,7 @@ export const NewsletterSettings = ({ welcome = false }) => {
             </>
           ) : null}
         </>
-      ) : (
+      ) : bare ? null : (
         <BackToAccountButton />
       )}
     </div>

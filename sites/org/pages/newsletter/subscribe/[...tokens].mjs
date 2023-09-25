@@ -59,8 +59,8 @@ const NewsletterPage = ({ page, id, ehash }) => {
             </h1>
             <h5>{t('newsletter:subscribeConfirm')}</h5>
             <p>{t('newsletter:subscribeLead')}</p>
-            <button className="btn btn-primary" onClick={handler}>
-              {t('newsletter:subscribe')}
+            <button className="btn btn-primary w-full" onClick={handler}>
+              {t('newsletter:confirm')}
             </button>
             <Popout note>
               <h5>{t('newsletter:whatsWithTheClicks')}</h5>

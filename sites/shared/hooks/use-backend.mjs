@@ -36,6 +36,15 @@ const api = {
       return err
     }
   },
+  put: async (uri, data = null, config = {}) => {
+    let result
+    try {
+      result = await apiHandler.put(uri, data, config)
+      return result
+    } catch (err) {
+      return err
+    }
+  },
   patch: async (uri, data = null, config = {}) => {
     let result
     try {
@@ -476,6 +485,13 @@ Backend.prototype.sendLanguageSuggestion = async function (data) {
 }
 
 /*
+ * Subscribe to newsletter
+ */
+Backend.prototype.newsletterSubscribe = async function ({ email, language }) {
+  return responseHandler(await api.post('/subscriber', { email, language }))
+}
+
+/*
  * Confirm newsletter subscribe
  */
 Backend.prototype.confirmNewsletterSubscribe = async function ({ id, ehash }) {
@@ -486,7 +502,7 @@ Backend.prototype.confirmNewsletterSubscribe = async function ({ id, ehash }) {
  * Confirm newsletter unsubscribe
  */
 Backend.prototype.confirmNewsletterUnsubscribe = async function ({ id, ehash }) {
-  return responseHandler(await api.delete('/subscriber', { id, ehash }))
+  return responseHandler(await api.delete(`/subscriber/${id}/${ehash}`))
 }
 
 /*

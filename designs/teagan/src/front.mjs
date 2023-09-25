@@ -82,7 +82,16 @@ function teaganFront({
   )
 
   // Log info for full length
-  log.info(['fullLengthFromHps', units(points.hps.dy(points.hem))])
+  store.flag.info({
+    msg: 'teagan:fullLengthFromHps',
+    replace: { length: units(points.hps.dy(points.hem)) },
+  })
+
+  // Store length of neck opening for finish
+  store.set(
+    'lengthFrontNeckOpening',
+    new Path().move(points.neck).curve(points.neckCp2, points.cfNeckCp1, points.cfNeck).length() * 2
+  )
 
   // Draw seamline
   paths.hemBase = new Path().move(points.cfHem).line(points.hem).hide()
