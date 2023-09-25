@@ -17,7 +17,7 @@ import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { lineDrawings } from 'shared/components/designs/linedrawings/index.mjs'
-import { Design, ns as designNs } from 'shared/components/designs/design.mjs'
+import { ns as designNs } from 'shared/components/designs/design.mjs'
 import { Difficulty } from 'shared/components/designs/difficulty.mjs'
 import { PageLink, AnchorLink, Link } from 'shared/components/link.mjs'
 import { DocsLink, DocsTitle } from 'shared/components/mdx/docs-helpers.mjs'
