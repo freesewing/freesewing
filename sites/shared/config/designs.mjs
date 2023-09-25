@@ -10,6 +10,8 @@ import allDesigns from '../../../config/software/designs.json' assert { type: 'j
  */
 const nonUtilityDesigns = {}
 for (const [name, conf] of Object.entries(allDesigns)) {
+  if (typeof conf.design === 'string') conf.design = [conf.design]
+  if (typeof conf.code === 'string') conf.code = [conf.code]
   if (conf.tags) nonUtilityDesigns[name] = conf
 }
 
