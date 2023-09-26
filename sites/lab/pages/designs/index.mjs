@@ -1,11 +1,13 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { nsMerge } from 'shared/utils.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { DesignPicker, ns as designNs } from 'shared/components/designs/design-picker.mjs'
+import { BareLayout } from 'site/components/layouts/bare.mjs'
 
 // Translation namespaces used on this page
-const namespaces = [...new Set([...designNs, ...pageNs])]
+const ns = nsMerge(designNs, pageNs)
 
 /*
  * Each page MUST be wrapped in the PageWrapper component.
@@ -14,8 +16,11 @@ const namespaces = [...new Set([...designNs, ...pageNs])]
  * or set them manually.
  */
 const DesignsPage = ({ page }) => (
-  <PageWrapper {...page}>
-    <DesignPicker />
+  <PageWrapper {...page} layout={BareLayout}>
+    <div className="py-4 m-auto">
+      <h1 className="text-center">FreeSewing Designs</h1>
+      <DesignPicker />
+    </div>
   </PageWrapper>
 )
 
@@ -24,7 +29,7 @@ export default DesignsPage
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, namespaces)),
+      ...(await serverSideTranslations(locale, ns)),
       page: {
         locale,
         path: ['designs'],

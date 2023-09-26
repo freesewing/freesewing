@@ -57,6 +57,7 @@ import {
   DesignDropdown,
   ns as inputNs,
 } from 'shared/components/inputs.mjs'
+import { BookmarkButton } from 'shared/components/bookmarks.mjs'
 
 export const ns = [inputNs, 'account', 'patterns', 'status', 'measurements', 'sets']
 
@@ -321,6 +322,9 @@ export const Mset = ({ id, publicOnly = false }) => {
           ) : (
             <span></span>
           )}
+          {account.control > 2 && mset.public ? (
+            <BookmarkButton slug={`sets/${mset.id}`} title={mset.name} type="set" />
+          ) : null}
           <button
             onClick={() =>
               setModal(
@@ -704,9 +708,36 @@ export const Sets = () => {
 
   return (
     <div className="max-w-7xl xl:pl-4">
-      <p className="text-center md:text-right">
+      {sets.length > 0 ? (
+        <>
+          <p className="text-center md:text-right">
+            <Link
+              className="btn btn-primary capitalize w-full md:w-auto"
+              bottom
+              primary
+              href="/new/set"
+            >
+              <PlusIcon />
+              {t('newSet')}
+            </Link>
+          </p>
+          <div className="flex flex-row gap-2 border-b-2 mb-4 pb-4 mt-8 h-14 items-center">
+            <input
+              type="checkbox"
+              className="checkbox checkbox-secondary"
+              onClick={toggleSelectAll}
+              checked={sets.length === selCount}
+            />
+            {selCount ? (
+              <button className="btn btn-error" onClick={removeSelectedSets}>
+                <TrashIcon /> {selCount} {t('sets')}
+              </button>
+            ) : null}
+          </div>
+        </>
+      ) : (
         <Link
-          className="btn btn-primary capitalize w-full md:w-auto"
+          className="btn btn-primary capitalize w-full md:w-auto btn-lg"
           bottom
           primary
           href="/new/set"
@@ -714,20 +745,7 @@ export const Sets = () => {
           <PlusIcon />
           {t('newSet')}
         </Link>
-      </p>
-      <div className="flex flex-row gap-2 border-b-2 mb-4 pb-4 mt-8 h-14 items-center">
-        <input
-          type="checkbox"
-          className="checkbox checkbox-secondary"
-          onClick={toggleSelectAll}
-          checked={sets.length === selCount}
-        />
-        {selCount ? (
-          <button className="btn btn-error" onClick={removeSelectedSets}>
-            <TrashIcon /> {selCount} {t('sets')}
-          </button>
-        ) : null}
-      </div>
+      )}
       <div className="flex flex-row flex-wrap gap-2">
         {sets.map((set, i) => (
           <div

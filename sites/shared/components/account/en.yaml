@@ -290,3 +290,19 @@ platformWhy: We do not use this data in any way. This is only here so FreeSewing
 security: Security
 revealPassword: Reveal password
 hidePassword: Hide password
+
+# Design view
+designs: Designs
+code: Code
+aboutThing: About { thing }
+requiredMeasurements: Required measurements
+optionalMeasurements: Optional measurements
+designOptions: Design options
+parts: Parts
+plugins: Plugins
+specifications: Specifications
+visitShowcase: Visit showcase post
+examples: Examples
+noExamples: We currently do not have any examples for this design
+noExamplesMsg: We rely on the FreeSewing community to submit examples in our showcase posts.
+

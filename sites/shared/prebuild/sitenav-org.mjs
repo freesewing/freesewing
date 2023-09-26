@@ -79,10 +79,10 @@ export const extendSiteNav = async (siteNav, lang) => {
     n: 1,
   }
   for (const design in designs) {
-    // addThese.designs[design] = {
-    //   t: t(`designs:${design}.t`),
-    //   s: `designs/${design}`,
-    // }
+    siteNav.designs[design] = {
+      t: t(`designs:${design}.t`),
+      s: `designs/${design}`,
+    }
     siteNav.new.pattern[design] = {
       s: `new/${design}`,
       t: t(`account:generateANewThing`, { thing: t(`designs:${design}.t`) }),

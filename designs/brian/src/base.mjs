@@ -27,7 +27,7 @@ export const base = {
     cuffEase: { pct: 20, min: 0, max: 200, menu: 'fit' },
     draftForHighBust: {
       bool: false,
-      menu: ({ measurements }) => (measurements.highBust ? 'fit' : false),
+      menu: ({ measurements }) => (measurements?.highBust ? 'fit' : false),
     },
     shoulderEase: { pct: 0, min: -2, max: 6, menu: 'fit' },
     // Style

@@ -1,23 +1,22 @@
 import { PageLink } from 'shared/components/link.mjs'
-import { useTranslation } from 'next-i18next'
+import { DocsIcon } from 'shared/components/icons.mjs'
 
-export const ns = ['modal']
-
-export const MdxWrapper = ({ title = false, path, language, children }) => {
-  const { t } = useTranslation(ns)
+export const MdxWrapper = ({ title = false, path, language, children, noFooter = false }) => {
   const slug = `${language === 'en' ? '' : '/' + language}/docs/${path}`
 
   return (
     <>
       {title ? <h1>{title}</h1> : null}
       <div className="text-primary mdx text-base-content text-base">{children}</div>
-      <div
-        className={`flex flex-row gap-1 text-sm opacity-70 justify-end items-center
-        border border-solid border-neutral border-b-0 border-r-0 border-l-0 pt-1 mt-2`}
-      >
-        <span>{t('modal:source')}:</span>
-        <PageLink txt={slug} href={slug} />
-      </div>
+      {noFooter ? null : (
+        <div
+          className={`flex flex-row gap-1 text-sm opacity-70 justify-end items-center
+          border border-solid border-neutral border-b-0 border-r-0 border-l-0 pt-1 mt-2`}
+        >
+          <DocsIcon className="w-5 h-5" />
+          <PageLink txt={slug} href={slug} />
+        </div>
+      )}
     </>
   )
 }

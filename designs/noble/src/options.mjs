@@ -11,11 +11,13 @@ export const shoulderDartPosition = {
   pct: 50,
   min: 10,
   max: 90,
-  menu: ({ options }) => (options.dartPosition != 'shoulder' ? 'darts' : false),
+  // eslint-disable-next-line no-unused-vars
+  menu: (settings, mergedOptions) => (mergedOptions?.dartPosition != 'shoulder' ? 'darts' : false),
 }
 export const armholeDartPosition = {
   pct: 50,
   min: 10,
   max: 90,
-  menu: ({ options }) => (options.dartPosition == 'shoulder' ? 'darts' : false),
+  // eslint-disable-next-line no-unused-vars
+  menu: (settings, mergedOptions) => (mergedOptions?.dartPosition == 'shoulder' ? 'darts' : false),
 }
