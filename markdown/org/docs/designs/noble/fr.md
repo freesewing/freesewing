@@ -2,4 +2,7 @@
 title: "Bloc de corps Noble"
 ---
 
-<PatternDocs pattern='noble' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='noble' docs />
+
