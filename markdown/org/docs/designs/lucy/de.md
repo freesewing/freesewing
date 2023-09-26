@@ -2,4 +2,7 @@
 title: "Lucy, die Umbindetasche"
 ---
 
-<PatternDocs pattern='lucy' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='lucy' docs />
+
