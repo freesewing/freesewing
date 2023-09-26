@@ -78,7 +78,7 @@ export const TestMenu = ({
               <span>{t('workbench:testMeasurements')}</span>
               <MeasieIcon className="w-8 h-8" />
             </h5>
-            <p>{t('workbench:testOptionsDesc')}</p>
+            <p className="text-left">{t('workbench:testMeasurementsDesc')}</p>
           </Fragment>,
           <ListInput
             key="b"
@@ -93,16 +93,17 @@ export const TestMenu = ({
             current={settings?.sample?.measurement}
           />,
         ],
-        [
-          <Fragment key="a">
-            <h5 className="flex flex-row gap-2 items-center justify-between w-full">
-              <span>{t('workbench:testSets')}</span>
-              <CommunityIcon className="w-8 h-8" />
-            </h5>
-            <p>{t('workbench:testSetsDesc')}</p>
-          </Fragment>,
-          <V3Wip key="b" />,
-        ],
+        // FIXME: Implement this once v3 is ready
+        //[
+        //  <Fragment key="a">
+        //    <h5 className="flex flex-row gap-2 items-center justify-between w-full">
+        //      <span>{t('workbench:testSets')}</span>
+        //      <CommunityIcon className="w-8 h-8" />
+        //    </h5>
+        //    <p>{t('workbench:testSetsDesc')}</p>
+        //  </Fragment>,
+        //  <V3Wip key="b" />,
+        //],
       ]}
     />
   )
