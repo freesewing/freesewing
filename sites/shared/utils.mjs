@@ -477,3 +477,8 @@ export const patternNsFromPatternConfig = (config) => {
 
   return [...ns]
 }
+
+export const patternUrl = ({ design, settings = {}, view = 'draft', type = 'new', id }) =>
+  `/${type}/${design}/${type === 'edit' ? id + '/' : ''}#settings=${encodeURIComponent(
+    JSON.stringify(settings)
+  )}&view=${encodeURIComponent('"' + view + '"')}`
