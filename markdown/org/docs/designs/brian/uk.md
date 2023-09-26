@@ -2,4 +2,7 @@
 title: "Викрійка-основа Браян"
 ---
 
-<PatternDocs pattern='brian' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='brian' docs />
+
