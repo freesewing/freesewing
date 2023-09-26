@@ -2,4 +2,7 @@
 title: "Ліф купальника Бі"
 ---
 
-<PatternDocs pattern='bee' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='bee' docs />
+
