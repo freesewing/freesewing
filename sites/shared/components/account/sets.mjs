@@ -322,8 +322,8 @@ export const Mset = ({ id, publicOnly = false }) => {
           ) : (
             <span></span>
           )}
-          {account.control > 2 && mset.public ? (
-            <BookmarkButton slug={`sets/${mset.id}`} title={mset.name} type="set" />
+          {account.control > 2 && mset.userId === account.id ? (
+            <BookmarkButton slug={`sets/${mset.id}`} title={mset.name} type="set" thing="set" />
           ) : null}
           <button
             onClick={() =>
@@ -1040,7 +1040,97 @@ export const CuratedSetPicker = ({ design, href, clickHandler, size }) => {
   )
 }
 
-export const BookmarkedSetPicker = () => <V3Wip />
+export const BookmarkedSetPicker = ({ design, clickHandler, t, size, href }) => {
+  // Hooks
+  const { account, control } = useAccount()
+  const backend = useBackend()
+  //const { t } = useTranslation(ns)
+  const { setLoadingStatus, LoadingProgress } = useContext(LoadingStatusContext)
+
+  // State
+  const [bookmarks, setBookmarks] = useState([])
+  const [sets, setSets] = useState({})
+  const [selected, setSelected] = useState({})
+  const [refresh, setRefresh] = useState(0)
+
+  // Effects
+  useEffect(() => {
+    const getBookmarks = async () => {
+      const result = await backend.getBookmarks()
+      if (result.success) setBookmarks(result.data.bookmarks)
+      const loadedSets = {}
+      for (const bookmark of result.data.bookmarks.filter((bookmark) => bookmark.type === 'set')) {
+        let set
+        try {
+          set = await backend.getSet(bookmark.url.slice(6))
+          if (set.success) {
+            const [hasMeasies] = hasRequiredMeasurements(
+              designMeasurements[design],
+              set.data.set.measies,
+              true
+            )
+            loadedSets[set.data.set.id] = { ...set.data.set, hasMeasies }
+          }
+        } catch (err) {
+          console.log(err)
+        }
+      }
+      setSets(loadedSets)
+    }
+    getBookmarks()
+  }, [refresh])
+
+  const okSets = Object.values(sets).filter((set) => set.hasMeasies)
+  const lackingSets = Object.values(sets).filter((set) => !set.hasMeasies)
+  console.log({ okSets, lackingSets })
+
+  return (
+    <>
+      {okSets.length > 0 && (
+        <div className="flex flex-row flex-wrap gap-2">
+          {okSets.map((set) => (
+            <MsetButton
+              {...{ set, control, design }}
+              onClick={clickHandler}
+              href={href}
+              requiredMeasies={designMeasurements[design]}
+              key={set.id}
+              size={size}
+            />
+          ))}
+        </div>
+      )}
+      {lackingSets.length > 0 && (
+        <div className="my-4">
+          <Popout note compact>
+            {t('account:someSetsLacking')}
+          </Popout>
+          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
+            {lackingSets.map((set) => (
+              <MsetLink
+                {...{ set, control, design }}
+                onClick={clickHandler}
+                requiredMeasies={designMeasurements[design]}
+                key={set.id}
+                size={size}
+              />
+            ))}
+          </div>
+        </div>
+      )}
+    </>
+  )
+
+  return Object.values(sets).map((set) => (
+    <MsetButton
+      {...{ set, design }}
+      onClick={clickHandler}
+      requiredMeasies={designMeasurements[design]}
+      key={set.id}
+      size={size}
+    />
+  ))
+}
 
 export const SetPicker = ({ design, href = false, clickHandler = false, size = 'lg' }) => {
   const { t, i18n } = useTranslation('sets')
