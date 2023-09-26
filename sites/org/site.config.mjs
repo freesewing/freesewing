@@ -22,6 +22,6 @@ export const siteConfig = {
   tld: 'org',
   posts: {
     preGenerate: 6,
-    perPage: 120,
+    perPage: 50,
   },
 }
