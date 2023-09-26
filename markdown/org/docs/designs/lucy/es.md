@@ -2,4 +2,7 @@
 title: "Bolsillo con lazo Lucy"
 ---
 
-<PatternDocs pattern='lucy' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='lucy' docs />
+
