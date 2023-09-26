@@ -941,8 +941,8 @@ export const BookmarkedSetPicker = ({ design, clickHandler, t, size, href }) => 
   useEffect(() => {
     const getBookmarks = async () => {
       const result = await backend.getBookmarks()
+      const loadedSets = {}
       if (result.success) {
-        const loadedSets = {}
         for (const bookmark of result.data.bookmarks.filter(
           (bookmark) => bookmark.type === 'set'
         )) {
@@ -1004,21 +1004,6 @@ export const BookmarkedSetPicker = ({ design, clickHandler, t, size, href }) => 
           </div>
         </div>
       )}
-    </>
-  )
-}
-
-export const SetPicker = ({ design, href = false, clickHandler = false, size = 'lg' }) => {
-  const { t, i18n } = useTranslation('sets')
-  const { language } = i18n
-
-  const pickerProps = { design, t, language, href, clickHandler, size }
-
-  return (
-    <>
-      <UserSetPicker {...pickerProps} />
-      <BookmarkedSetPicker {...pickerProps} />
-      <CuratedSetPicker {...pickerProps} />
     </>
   )
 }

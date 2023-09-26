@@ -50,7 +50,7 @@ export const CreateBookmark = ({ type, title, slug }) => {
   )
 }
 
-export const BookmarkButton = ({ slug, type, title, thing = 'page' }) => {
+export const BookmarkButton = ({ slug, type, title }) => {
   const { t } = useTranslation('account')
   const { setModal } = useContext(ModalContext)
 
