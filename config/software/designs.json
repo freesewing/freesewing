@@ -302,7 +302,7 @@
     "design": "Wouter Van Wageningen",
     "difficulty": 3,
     "tags": ["bottoms", "skirts"],
-    "techniques": []
+    "techniques": ["hem", "curvedSeam", "precision", "zipper"]
   },
   "plugintest": {
     "description": "A FreeSewing pattern to test (y)our plugins",
