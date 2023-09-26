@@ -2,4 +2,7 @@
 title: "Tamiko top"
 ---
 
-<PatternDocs pattern='tamiko' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='tamiko' docs />
+
