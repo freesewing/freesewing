@@ -2,4 +2,7 @@
 title: "Bloc de pantalon Titan"
 ---
 
-<PatternDocs pattern='titan' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='titan' docs />
+
