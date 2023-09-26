@@ -1,5 +1,7 @@
 ---
-title: "Albert apron: Designer Notes"
+title: "Albert, delantal"
 ---
 
-<PatternDocs pattern='albert' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='albert' docs />
