@@ -286,7 +286,7 @@
     "design": "Wouter Van Wageningen",
     "difficulty": 4,
     "tags": ["accessories", "toys"],
-    "techniques": []
+    "techniques": ["curvedSeam", "precision"]
   },
   "paco": {
     "description": "A FreeSewing pattern for summer pants",
