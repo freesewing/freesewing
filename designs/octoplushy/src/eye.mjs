@@ -14,16 +14,9 @@ function octoplushyEye(
   const c = 0.55191502449351
 
   const sectionWidth = store.get('sectionWidth')
-  let eyeSize = sectionWidth / 1.5
-  let logoScale = 0.25
-  let titleScale = 0.25
-  if (partNumber == 1) {
-    eyeSize *= 0.65
-    logoScale = 0.15
-    titleScale = 0.16
-  }
-  logoScale = 0.35
-  titleScale = 0.25
+  const logoScale = 0.35
+  const titleScale = 0.25
+  const eyeSize = (sectionWidth / 1.5) * (partNumber === 1 ? 0.65 : 1)
   const eyeBrowWidth = eyeSize * 0.375
   const eyeCirc = (eyeSize + eyeBrowWidth * 2) * Math.PI
 
