@@ -1,7 +1,6 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { pages as posts } from 'site/prebuild/showcase.mjs'
-import { meta } from 'site/prebuild/showcase-meta.mjs'
 import { nsMerge, cloudflareImageUrl, capitalize, horFlexClasses } from 'shared/utils.mjs'
 import { examples } from 'site/prebuild/design-examples.mjs'
 // Hooks
@@ -11,7 +10,7 @@ import { useFilter } from 'shared/components/designs/design-picker.mjs'
 import Link from 'next/link'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
-import { FilterIcon, ResetIcon } from 'shared/components/icons.mjs'
+import { ResetIcon } from 'shared/components/icons.mjs'
 
 // Translation namespaces used on this page
 const namespaces = nsMerge('common', 'designs', 'tags', pageNs)

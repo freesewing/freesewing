@@ -11,7 +11,7 @@ import { Tag } from 'shared/components/tag.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 
 export const ns = nsMerge('common', 'posts', timeagoNs)
-
+/*
 export const PostArticle = (props) => {
   const { t } = useTranslation('common')
 
@@ -34,6 +34,7 @@ export const PostArticle = (props) => {
   )
 }
 //<PostAuthor frontmatter={props.frontmatter} />
+*/
 
 const PostMeta = ({ frontmatter, t }) => (
   <div className="flex flex-row justify-between text-sm mb-1 mt-2">
