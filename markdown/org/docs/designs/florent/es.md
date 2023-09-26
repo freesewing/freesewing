@@ -2,4 +2,7 @@
 title: "Florent, boina"
 ---
 
-<PatternDocs pattern='florent' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='florent' docs />
+
