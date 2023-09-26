@@ -14,7 +14,7 @@
   "o": {
     "size": {
       "t": "Size",
-      "d": "Controls the overall size"
+      "d": "Controls the overall size (value shown is the size of the head)"
     },
     "type": {
       "t": "Type",
@@ -38,15 +38,15 @@
     },
     "bottomTopArmRatio": {
       "t": "Bottom/Top arm ratio",
-      "d": "FIXME: No idea what this does"
+      "d": "Changes the ratio between the fabric on the top of the arms versus that on the bottom of the arms"
     },
     "bottomArmReduction": {
       "t": "Bottom arm reduction",
-      "d": "FIXME: No idea what this does"
+      "d": "This changes how long the bottom fabric of the arms is compared to the top fabric. It makes the arms more curly"
     },
     "bottomArmReductionPlushy": {
       "t": "Bottom arm reduction (plushy)",
-      "d": "FIXME: No idea what this does"
+      "d": "This changes how long the bottom fabric of the arms is compared to the top fabric. It makes the arms more curly"
     }
   }
 }
