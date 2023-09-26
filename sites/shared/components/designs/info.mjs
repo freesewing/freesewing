@@ -80,10 +80,10 @@ export const DesignInfo = ({ design, docs = false }) => {
 
   // Translate measurements
   const measies = { required: {}, optional: {} }
-  if (config.measurements) {
+  if (config?.measurements) {
     for (const m of config.measurements) measies.required[m] = t(`measurements:${m}`)
   }
-  if (config.optionalMeasurements) {
+  if (config?.optionalMeasurements) {
     for (const m of config.optionalMeasurements) measies.optional[m] = t(`measurements:${m}`)
   }
 
