@@ -49,11 +49,13 @@ function draftZipperGuard({
 
   if (paperless) {
     macro('vd', {
+      id: 'hZipperGuard',
       from: points.topLeftCorner,
       to: points.bottomLeftCorner,
       x: -(15 + sa),
     })
     macro('hd', {
+      id: 'wZipperGuard',
       from: points.topLeftCorner,
       to: points.topRightCorner,
       y: -(sa + 15),

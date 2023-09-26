@@ -85,11 +85,13 @@ function draftBack({
 
   if (paperless) {
     macro('vd', {
+      id: 'hCenterSeam',
       from: points.cfNeck,
       to: points.cfCrotch,
       x: -(15 + sa),
     })
     macro('vd', {
+      id: 'hNeck',
       from: points.neckShoulderCorner,
       to: points.cfNeck,
       x: -(15 + sa),
@@ -97,26 +99,31 @@ function draftBack({
       noEndMarker: true,
     })
     macro('vd', {
+      id: 'hTotal',
       from: points.neckShoulderCorner,
       to: points.inseamHem,
       x: -(30 + sa),
     })
     macro('vd', {
+      id: 'hRaglanSeam',
       from: points.armpitCornerScooped,
       to: points.neckShoulderCorner,
       x: points.armpitCornerScooped.x + (15 + sa),
     })
     macro('hd', {
+      id: 'wRaglanSeamStraightPortion',
       from: points.neckShoulderCorner,
       to: points.armpitScoopEnd,
       y: 0 - (sa + 0),
     })
     macro('hd', {
+      id: 'wRaglanSeam',
       from: points.neckShoulderCorner,
       to: points.armpitCornerScooped,
       y: 0 - (sa + 15),
     })
     macro('hd', {
+      id: 'wNeck',
       from: points.cfNeck,
       to: points.neckShoulderCorner,
       y: 0 - (sa + 15),
@@ -124,6 +131,7 @@ function draftBack({
       noEndMarker: true,
     })
     macro('hd', {
+      id: 'wCenterToArmpit',
       from: points.cfNeck,
       to: points.armpitCornerScooped,
       y: 0 - (sa + 30),

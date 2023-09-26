@@ -211,41 +211,49 @@ function draftBase({
 
   if (paperless) {
     macro('hd', {
+      id: 'wCrotch',
       from: points.cfCrotch,
       to: points.inseamHem,
       y: points.outseamHem.y + (sa + 15),
     })
     macro('hd', {
+      id: 'wLegHem',
       from: points.inseamHem,
       to: points.outseamHem,
       y: points.outseamHem.y + (sa + 15),
     })
     macro('hd', {
+      id: 'wCenterToOutseam',
       from: points.cfCrotch,
       to: points.outseamHem,
       y: points.outseamHem.y + (sa + 30),
     })
     macro('hd', {
+      id: 'wTotalWidth',
       from: points.cfCrotch,
       to: paths.seam.edge('right'),
       y: points.outseamHem.y + (sa + 45),
     })
     macro('vd', {
+      id: 'hInseam',
       from: points.cfCrotch,
       to: points.inseamHem,
       x: 0 - (sa + 15),
     })
     macro('vd', {
+      id: 'hOutseam',
       from: points.outseamHem,
       to: points.armpitCornerScooped,
       x: Math.max(points.outseamHem.x, points.armpitCornerScooped.x) + (15 + sa),
     })
     macro('vd', {
+      id: 'hArmpitScoop',
       from: points.armpitCornerScooped,
       to: points.armpitScoopEnd,
       x: points.armpitCornerScooped.x + (30 + sa),
     })
     macro('hd', {
+      id: 'wArmpitScoop',
       from: points.armpitScoopEnd,
       to: points.armpitCornerScooped,
       y: 0 - (sa + 0),

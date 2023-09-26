@@ -294,7 +294,7 @@
     "design": "Thrunic",
     "difficulty": 3,
     "tags": ["swimwear", "pajamas", "one piece"],
-	"techniques": ["hem", "curvedSeam", "stretch", "lining"]
+    "techniques": ["hem", "curvedSeam", "stretch", "lining", "zipper"]
   },
   "paco": {
     "description": "A FreeSewing pattern for summer pants",

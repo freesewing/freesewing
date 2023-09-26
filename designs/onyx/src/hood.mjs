@@ -21,7 +21,7 @@ function draftHood({
   if (options.neckStyle != 'hood') return part.hide()
 
   // Drafter's notes:
-  // - Todo: Shorten the back piece in cases where there is a front piece.
+  // - Todo: Widen/Shorten Front piece to match neckline length.
   // Hood can be in either 3 pieces (front, left, right), or 2 pieces (left, right). 3-piece construction allows for insertion of ears or other decorations.
 
   // Half the length around the neck of the hood. This is similar to the calculation for the length of a neckband, but the hood is not pre-stretched.
@@ -31,11 +31,11 @@ function draftHood({
   const frontDip = neckRadius * options.neckBalance
 
   // How high the deepest part of the hood is, as a function of the head circumference and measured from the center of the neckline.
-  const hoodBackHeight = 0.4 * measurements.head
+  const hoodBackHeight = 0.4 * measurements.head * options.hoodHeight
   // How high the top of the hood is.
-  const hoodTopHeight = 0.6 * measurements.head
+  const hoodTopHeight = 0.6 * measurements.head * options.hoodHeight
   // How high the front of the hood is.
-  const hoodFrontHeight = 0.52 * measurements.head
+  const hoodFrontHeight = (0.6 - options.hoodFrontDip) * measurements.head * options.hoodHeight
 
   // Rescale the front piece size option to go from -1 for no front piece, to +1 for a hypothetical front-piece only pattern.
   const sideSeamPosition = options.hoodFrontPieceSize * 2 - 1
@@ -71,6 +71,9 @@ function draftHood({
     (hoodTopHeight - hoodFrontHeight) * (sideSeamPosition * sideSeamPosition) - hoodTopHeight
   )
 
+  if (options.hoodFrontPieceSize < 0.001)
+    points.frontTop.x -= measurements.head * options.hoodFrontBonus
+
   points.frontNeckCp2 = points.frontNeck.translate(
     (hoodWidth * (1 - options.hoodFrontPieceSize)) / 3,
     ((frontDip * (1 - options.hoodFrontPieceSize)) / 3) *
@@ -91,71 +94,95 @@ function draftHood({
     (points.backHead.y * 1) / 3 + (points.centerTop.y * 2) / 3
   )
   points.centerTopCp1 = new Point(measurements.head / 12, -hoodTopHeight)
-  points.centerTopCp2 = new Point((hoodWidth / 4) * sideSeamPosition, -hoodTopHeight)
+  points.centerTopCp2 = new Point(
+    (points.centerTop.x * 2) / 3 + (points.frontTop.x * 2) / 5,
+    points.centerTop.y
+  )
+  points.frontTopCp1 = new Point(
+    (points.centerTop.x * 1) / 6 + (points.frontTop.x * 5) / 6,
+    (points.centerTop.y * 1) / 3 + (points.frontTop.y * 2) / 3
+  )
 
   paths.saBase = new Path()
     .move(points.frontNeck)
     .curve(points.frontNeckCp2, points.backNeckCp1, points.backNeck)
     .curve(points.backNeckCp2, points.backHeadCp1, points.backHead)
     .curve(points.backHeadCp2, points.centerTopCp1, points.centerTop)
-    .curve(points.centerTopCp2, points.frontTop, points.frontTop)
+    .curve(points.centerTopCp2, points.frontTopCp1, points.frontTop)
     .attr('class', 'fabric')
     .hide(true)
 
-  paths.foldBase = new Path().move(points.frontTop).line(points.frontNeck).hide(true)
+  paths.hemBase = new Path().move(points.frontTop).line(points.frontNeck).hide(true)
 
-  paths.seam = paths.saBase.join(paths.foldBase).close().attr('class', 'fabric')
+  paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
 
   if (paperless) {
     macro('vd', {
+      id: 'hBackToTop',
       from: points.backHead,
       to: points.centerTop,
       x: points.backHead.x + (15 + sa),
     })
     macro('vd', {
+      id: 'hNeckToBack',
       from: points.backNeck,
       to: points.backHead,
       x: points.backHead.x + (15 + sa),
     })
     macro('vd', {
+      id: 'hNeck',
       from: points.frontNeck,
       to: points.backNeck,
       x: points.backHead.x + (15 + sa),
     })
     macro('vd', {
+      id: 'hBackNeckToTop',
       from: points.backNeck,
       to: points.centerTop,
       x: points.backHead.x + (30 + sa),
     })
     macro('vd', {
+      id: 'hTotalHeight',
       from: points.frontNeck,
       to: points.centerTop,
       x: points.backHead.x + (45 + sa),
     })
     macro('vd', {
+      id: 'hFront',
       from: points.frontNeck,
       to: points.frontTop,
       x: points.frontTop.x - (15 + sa),
     })
     macro('hd', {
+      id: 'wTopToBack',
       from: points.centerTop,
       to: points.backHead,
       y: points.centerTop.y - (sa + 15),
     })
     macro('hd', {
+      id: 'wFrontToTop',
       from: points.frontTop,
       to: points.centerTop,
       y: points.centerTop.y - (sa + 15),
     })
     macro('hd', {
+      id: 'wFrontToBack',
       from: points.frontTop,
       to: points.backHead,
       y: points.centerTop.y - (sa + 30),
     })
     macro('hd', {
+      id: 'wNeck',
       from: points.frontNeck,
       to: points.backNeck,
       y: points.frontNeck.y + (sa + 15),
+    })
+    macro('pd', {
+      id: 'lNeck',
+      path: new Path()
+        .move(points.frontNeck)
+        .curve(points.frontNeckCp2, points.backNeckCp1, points.backNeck),
+      d: 15,
     })
   }
 
@@ -181,7 +208,7 @@ function draftHood({
       paths.sa = paths.saBase
         .offset(sa)
         .join(
-          paths.foldBase.offset(sa * (options.hoodFrontPieceSize > 0 ? 1 : options.hoodHem * 100))
+          paths.hemBase.offset(sa * (options.hoodFrontPieceSize > 0 ? 1 : options.hoodHem * 100))
         )
         .close()
         .attr('class', 'fabric sa')
@@ -202,6 +229,8 @@ function draftHood({
         4) /
         3
     )
+
+    store.set('hoodFrontPieceNeckLength', neckHalfCircumference * options.hoodFrontPieceSize)
   }
 
   return part
@@ -214,8 +243,16 @@ export const hood = {
   after: [front, back, raglanSleeve],
   measurements: ['neck', 'chest', 'biceps', 'wrist', 'head'],
   options: {
+    // How roomy the hood is horizontally.
+    hoodWidth: { pct: 120, min: 70, max: 180, menu: 'fit' },
+    // How tall the hood is.
+    hoodHeight: { pct: 100, min: 70, max: 140, menu: 'fit' },
+    // How much the hood dips in the front.
+    hoodFrontDip: { pct: 8, min: 0, max: 20, menu: 'style' },
     // Width of the hem at the front of the hood, as a multiple of the seam allowance.
     hoodHem: { pct: 2, min: 0, max: 8, menu: 'construction' },
+    // How far forward the top of the hood extends.
+    hoodFrontBonus: { pct: 0, min: -8, max: 10, menu: 'style' },
     // How much of the hood is composed of the front piece, versus the two back pieces. 50 divides it evenly, while larger values make for a larger front piece.
     hoodFrontPieceSize: { pct: 50, min: 0, max: 50, menu: 'style' },
   },

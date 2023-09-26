@@ -54,11 +54,13 @@ function draftNeckband({
 
   if (paperless) {
     macro('vd', {
+      id: 'vdNeckBand1',
       from: points.topLeftCorner,
       to: points.bottomLeftCorner,
       x: -(15 + sa),
     })
     macro('hd', {
+      id: 'hdNeckBand1',
       from: points.topLeftCorner,
       to: points.topRightCorner,
       y: -(sa + 15),

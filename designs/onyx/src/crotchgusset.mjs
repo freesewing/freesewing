@@ -39,11 +39,13 @@ function draftCrotchGusset({
 
   if (paperless) {
     macro('vd', {
+      id: 'hCrotchGusset',
       from: points.topLeftCorner,
       to: points.bottomLeftCorner,
       x: -(15 + sa),
     })
     macro('hd', {
+      id: 'wCrotchGusset',
       from: points.topLeftCorner,
       to: points.topRightCorner,
       y: -(sa + 15),
