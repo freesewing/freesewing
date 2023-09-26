@@ -27,16 +27,19 @@ function octoplushyEye(
   const eyeBrowWidth = eyeSize * 0.375
   const eyeCirc = (eyeSize + eyeBrowWidth * 2) * Math.PI
 
-  if (!expand) {
-    // Expand is on, do not draw the part but flag this to the user
+  if (expand) {
+    // Hint about expand
+    store.flag.preset('expandIsOn')
+  } else {
+    // Expand is off, do not draw the part but flag this to the user
     const message =
-      (options.type == 'squid' ? `Squid` : 'Octopus') +
+      (options.type == 'squid' ? `squid` : 'octopus') +
       (partNumber == 2 ? 'Eyebrow' : partNumber == 1 ? 'Pupil' : 'Eye')
     store.flag.note({
       msg: message,
       replace: {
-        width: units(eyeCirc),
-        length: units(eyeBrowWidth * 2),
+        width: units(eyeCirc + 2 * sa),
+        length: units(eyeBrowWidth * 2 + 2 * sa),
       },
       suggest: {
         text: 'flag:show',
@@ -47,7 +50,7 @@ function octoplushyEye(
       },
     })
     // Also hint about expand
-    store.flag.preset('expand')
+    store.flag.preset('expandIsOff')
 
     return part.hide()
   }
