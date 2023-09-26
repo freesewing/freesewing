@@ -1,6 +1,6 @@
 import { Lightbox } from 'shared/components/lightbox.mjs'
 import { ImageWrapper } from 'shared/components/wrappers/img.mjs'
-import { Author } from './author.mjs'
+//import { Author } from './author.mjs'
 import { TimeAgo, ns as timeagoNs } from 'shared/components/timeago/index.mjs'
 import { useTranslation } from 'next-i18next'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
