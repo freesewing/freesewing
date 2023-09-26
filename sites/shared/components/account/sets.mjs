@@ -935,37 +935,37 @@ export const BookmarkedSetPicker = ({ design, clickHandler, t, size, href }) => 
   const backend = useBackend()
 
   // State
-  const [bookmarks, setBookmarks] = useState([])
   const [sets, setSets] = useState({})
-  const [selected, setSelected] = useState({})
-  const [refresh, setRefresh] = useState(0)
 
   // Effects
   useEffect(() => {
     const getBookmarks = async () => {
       const result = await backend.getBookmarks()
-      if (result.success) setBookmarks(result.data.bookmarks)
-      const loadedSets = {}
-      for (const bookmark of result.data.bookmarks.filter((bookmark) => bookmark.type === 'set')) {
-        let set
-        try {
-          set = await backend.getSet(bookmark.url.slice(6))
-          if (set.success) {
-            const [hasMeasies] = hasRequiredMeasurements(
-              designMeasurements[design],
-              set.data.set.measies,
-              true
-            )
-            loadedSets[set.data.set.id] = { ...set.data.set, hasMeasies }
+      if (result.success) {
+        const loadedSets = {}
+        for (const bookmark of result.data.bookmarks.filter(
+          (bookmark) => bookmark.type === 'set'
+        )) {
+          let set
+          try {
+            set = await backend.getSet(bookmark.url.slice(6))
+            if (set.success) {
+              const [hasMeasies] = hasRequiredMeasurements(
+                designMeasurements[design],
+                set.data.set.measies,
+                true
+              )
+              loadedSets[set.data.set.id] = { ...set.data.set, hasMeasies }
+            }
+          } catch (err) {
+            console.log(err)
           }
-        } catch (err) {
-          console.log(err)
         }
       }
       setSets(loadedSets)
     }
     getBookmarks()
-  }, [refresh])
+  }, [])
 
   const okSets = Object.values(sets).filter((set) => set.hasMeasies)
   const lackingSets = Object.values(sets).filter((set) => !set.hasMeasies)
