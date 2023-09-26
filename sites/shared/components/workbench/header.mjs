@@ -110,7 +110,7 @@ const NavIcons = ({ setView, setDense, dense, view }) => {
       >
         <PrintIcon className={iconSize} />
       </NavButton>
-      {!isProduction && (
+      {/*!isProduction && (
         <NavButton
           onClick={() => setView('cut')}
           label={t('workbench:cutLayout')}
@@ -118,7 +118,7 @@ const NavIcons = ({ setView, setDense, dense, view }) => {
         >
           <CutIcon className={iconSize} />
         </NavButton>
-      )}
+      )*/}
       <NavButton
         onClick={() => setView('save')}
         label={t('workbench:savePattern')}
