@@ -2,7 +2,6 @@
 import { measurements } from 'config/measurements.mjs'
 import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
 import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewing.config.mjs'
-import { siteConfig } from 'site/site.config.mjs'
 import { isDegreeMeasurement } from 'config/measurements.mjs'
 import {
   shortDate,
@@ -12,7 +11,6 @@ import {
   capitalize,
   horFlexClasses,
 } from 'shared/utils.mjs'
-import orderBy from 'lodash.orderby'
 // Hooks
 import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
@@ -24,10 +22,8 @@ import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
 import { Popout } from 'shared/components/popout/index.mjs'
-import { Tag } from 'shared/components/tag.mjs'
 import { BackToAccountButton } from './shared.mjs'
 import { AnchorLink, PageLink, Link } from 'shared/components/link.mjs'
-import { V3Wip } from 'shared/components/v3-wip.mjs'
 import {
   OkIcon,
   NoIcon,
@@ -37,7 +33,6 @@ import {
   ResetIcon,
   PlusIcon,
   WarningIcon,
-  FilterIcon,
   CameraIcon,
   CsetIcon,
   BoolYesIcon,
@@ -936,10 +931,8 @@ export const UserSetPicker = ({ design, t, href, clickHandler, size = 'lg' }) =>
 
 export const BookmarkedSetPicker = ({ design, clickHandler, t, size, href }) => {
   // Hooks
-  const { account, control } = useAccount()
+  const { control } = useAccount()
   const backend = useBackend()
-  //const { t } = useTranslation(ns)
-  const { setLoadingStatus, LoadingProgress } = useContext(LoadingStatusContext)
 
   // State
   const [bookmarks, setBookmarks] = useState([])
@@ -976,7 +969,6 @@ export const BookmarkedSetPicker = ({ design, clickHandler, t, size, href }) => 
 
   const okSets = Object.values(sets).filter((set) => set.hasMeasies)
   const lackingSets = Object.values(sets).filter((set) => !set.hasMeasies)
-  console.log({ okSets, lackingSets })
 
   return (
     <>
@@ -1014,16 +1006,6 @@ export const BookmarkedSetPicker = ({ design, clickHandler, t, size, href }) => 
       )}
     </>
   )
-
-  return Object.values(sets).map((set) => (
-    <MsetButton
-      {...{ set, design }}
-      onClick={clickHandler}
-      requiredMeasies={designMeasurements[design]}
-      key={set.id}
-      size={size}
-    />
-  ))
 }
 
 export const SetPicker = ({ design, href = false, clickHandler = false, size = 'lg' }) => {
