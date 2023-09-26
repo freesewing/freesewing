@@ -1,13 +1,13 @@
+import { nsMerge } from 'shared/utils.mjs'
 import { pages as posts } from 'site/prebuild/showcase.mjs'
 import { getPostSlugPaths } from 'site/components/mdx/posts/utils.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useDynamicMdx } from 'shared/hooks/use-dynamic-mdx.mjs'
 import { useCallback } from 'react'
-import { PostLayout, ns as layoutNs } from 'site/components/layouts/post.mjs'
 import { PostArticle, ns as postNs } from 'site/components/mdx/posts/article.mjs'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 
-const namespaces = [...layoutNs, ...postNs, ...pageNs]
+const namespaces = nsMerge(postNs, pageNs)
 
 /*
  * Each page MUST be wrapped in the PageWrapper component.
@@ -25,12 +25,7 @@ const ShowcasePage = ({ locale, dir, page }) => {
   const { frontmatter, MDX } = useDynamicMdx(loader)
 
   return (
-    <PageWrapper
-      {...page}
-      locale={locale}
-      title={frontmatter.title}
-      layout={(props) => <PostLayout {...props} {...{ slug: page.path.join('/'), frontmatter }} />}
-    >
+    <PageWrapper {...page} title={frontmatter.title}>
       <PostArticle {...{ frontmatter, MDX }} imgId={`showcase-${dir}`} />
     </PageWrapper>
   )
