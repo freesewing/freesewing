@@ -2,4 +2,7 @@
 title: "Жилет Вахід"
 ---
 
-<PatternDocs pattern='wahid' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='wahid' docs />
+
