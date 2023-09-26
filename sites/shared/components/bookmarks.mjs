@@ -66,7 +66,7 @@ export const BookmarkButton = ({ slug, type, title }) => {
       }
     >
       <BookmarkIcon />
-      <span>{t('account:bookmarkThisPage')}</span>
+      <span>{t('account:bookmark')}</span>
     </button>
   )
 }
