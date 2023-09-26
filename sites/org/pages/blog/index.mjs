@@ -21,6 +21,12 @@ const namespaces = nsMerge('designs', 'sections', pageNs, timeagoNs)
 const order = {}
 for (const [slug, props] of Object.entries(meta)) order[props.d] = slug
 
+export const recentBlogPosts = Object.keys(order)
+  .sort()
+  .reverse()
+  .slice(0, 2)
+  .map((d) => order[d])
+
 const textShadow = {
   style: {
     textShadow:
@@ -28,12 +34,12 @@ const textShadow = {
   },
 }
 
-const Preview = ({ post, t }) => (
+export const BlogPreview = ({ post, t }) => (
   <Link href={`/${post.s}`} className="aspect-video relative">
     <img
       src={cloudflareImageUrl({ id: post.s.replace('/', '-'), variant: 'w1000' })}
       loading="lazy"
-      className="rounded md:rounded-lg top-0 left-0 shadow"
+      className="rounded md:rounded-lg top-0 left-0"
     />
     <div
       className={`absolute bottom-4 md:bottom-8 right-0 ml-8 md:ml-12
@@ -64,7 +70,7 @@ const BlogIndexPage = ({ page }) => {
           .sort()
           .reverse()
           .map((date) => (
-            <Preview
+            <BlogPreview
               post={{
                 s: order[date],
                 ...posts[page.locale][order[date]],

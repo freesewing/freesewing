@@ -1,6 +1,8 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
+import { recentBlogPosts, BlogPreview } from 'site/pages/blog/index.mjs'
+import { pages as blogPosts } from 'site/prebuild/blog.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 import { useAccount } from 'shared/hooks/use-account.mjs'
@@ -102,6 +104,23 @@ const HomePage = ({ page }) => {
             </div>
           </div>
         )}
+      </div>
+
+      <div className="grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-4 max-w-7xl m-auto mb-24 px-4">
+        <BlogPreview
+          t={t}
+          post={{
+            s: recentBlogPosts[0],
+            ...blogPosts[page.locale][recentBlogPosts[0]],
+          }}
+        />
+        <BlogPreview
+          t={t}
+          post={{
+            s: recentBlogPosts[1],
+            ...blogPosts[page.locale][recentBlogPosts[1]],
+          }}
+        />
       </div>
 
       <div className="flex flex-col md:grid md:grid-cols-2 gap-4 max-w-7xl m-auto mb-24 px-4">
