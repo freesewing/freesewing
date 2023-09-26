@@ -2,4 +2,7 @@
 title: "Benjamin, pajarita"
 ---
 
-<PatternDocs pattern='benjamin' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='benjamin' docs />
+
