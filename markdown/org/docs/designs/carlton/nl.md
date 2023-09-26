@@ -2,4 +2,7 @@
 title: "Carlton jas"
 ---
 
-<PatternDocs pattern='carlton' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='carlton' docs />
+
