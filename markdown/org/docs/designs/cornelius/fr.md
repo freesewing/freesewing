@@ -2,4 +2,7 @@
 title: "Culotte de cyclisme Cornelius"
 ---
 
-<PatternDocs pattern='cornelius' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='cornelius' docs />
+
