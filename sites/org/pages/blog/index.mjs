@@ -30,7 +30,7 @@ const textShadow = {
   },
 }
 
-export const BlogPreview = ({ post, t }) => (
+export const BlogPreview = ({ post }) => (
   <Link href={`/${post.s}`} className="aspect-video relative">
     <img
       src={cloudflareImageUrl({ id: post.s.replace('/', '-'), variant: 'w1000' })}
@@ -71,7 +71,6 @@ const BlogIndexPage = ({ page }) => {
                 s: order[date],
                 ...posts[page.locale][order[date]],
               }}
-              t={t}
               key={order[date]}
             />
           ))}

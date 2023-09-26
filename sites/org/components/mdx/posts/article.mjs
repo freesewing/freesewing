@@ -11,7 +11,6 @@ import { Tag } from 'shared/components/tag.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 
 export const ns = nsMerge('common', 'posts', timeagoNs)
-/*
 export const PostArticle = (props) => {
   const { t } = useTranslation('common')
 
@@ -34,7 +33,6 @@ export const PostArticle = (props) => {
   )
 }
 //<PostAuthor frontmatter={props.frontmatter} />
-*/
 
 const PostMeta = ({ frontmatter, t }) => (
   <div className="flex flex-row justify-between text-sm mb-1 mt-2">
@@ -80,11 +78,11 @@ const PostImage = ({ imgId, frontmatter }) => (
   </figure>
 )
 
-const PostAuthor = ({ frontmatter }) => (
-  <div className="max-w-prose text-lg lg:text-xl">
-    <Author author={frontmatter.author || frontmatter.maker} />
-  </div>
-)
+//const PostAuthor = ({ frontmatter }) => (
+//  <div className="max-w-prose text-lg lg:text-xl">
+//    <Author author={frontmatter.author || frontmatter.maker} />
+//  </div>
+//)
 
 const PostContent = (props) =>
   props.MDX ? <PostMDXContent {...props} /> : <PostPreviewContent {...props} />

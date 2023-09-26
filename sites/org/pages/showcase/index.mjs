@@ -25,7 +25,7 @@ const count = Object.values(examples).reduce((acc, val) =>
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const ShowcaseIndexPage = ({ _posts, page, current, total }) => {
+const ShowcaseIndexPage = ({ page }) => {
   const { t } = useTranslation()
   const [filter, setFilter] = useFilter()
 
