@@ -2,4 +2,7 @@
 title: "Patron de base Brian"
 ---
 
-<PatternDocs pattern='brian' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='brian' docs />
+
