@@ -15,7 +15,7 @@ export const PostArticle = (props) => {
   const { t } = useTranslation('common')
 
   return (
-    <article className="mb-12 px-4 max-w-7xl">
+    <article className="mb-12 max-w-7xl">
       <PostMeta frontmatter={props.frontmatter} t={t} />
       <PostImage imgId={props.imgId} frontmatter={props.frontmatter} />
       <PostContent {...props} />
