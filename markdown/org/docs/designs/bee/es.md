@@ -2,4 +2,7 @@
 title: "Bee, sujetador de bikini"
 ---
 
-<PatternDocs pattern='bee' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='bee' docs />
+
