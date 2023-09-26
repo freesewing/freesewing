@@ -2,7 +2,21 @@ import { headSection1, headSection2 } from './head.mjs'
 
 function octoplushyArmSection(
   partNumber,
-  { options, Point, Path, points, paths, Snippet, snippets, sa, macro, utils, store, part }
+  {
+    options,
+    Point,
+    Path,
+    points,
+    paths,
+    Snippet,
+    snippets,
+    sa,
+    macro,
+    utils,
+    store,
+    complete,
+    part,
+  }
 ) {
   if (partNumber > (options.type == 'squid' ? 1 : 0)) {
     return part
@@ -185,9 +199,11 @@ function octoplushyArmSection(
   snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.4)
   points.gridAnchor = points.logo.clone()
 
-  points.armMiddle.attr('data-text', 'C').attr('data-text-class', 'center')
-  points.armTopLeft.attr('data-text', 'D').attr('data-text-class', 'center')
-  points.armTopRight.attr('data-text', 'D').attr('data-text-class', 'center')
+  if (complete) {
+    points.armMiddle.addText('C', 'center')
+    points.armTopLeft.addText('D', 'center')
+    points.armTopRight.addText('D', 'center')
+  }
 
   points.titleAnchor = points.armMiddle
     .shiftFractionTowards(points.armBottom, 0.2)
@@ -226,18 +242,18 @@ function octoplushyArmSection(
       points.armTopLeft.x
     )
     points.skirtArmRight = points.skirtArmLeft.flipX(points.sectionTop)
-    paths.armLeftLine = new Path()
-      .move(points.skirtArmLeft)
-      .line(points.armTopLeft)
-      .attr('data-text', 'stitch line')
-      .attr('data-text-class', 'center')
-      .attr('class', 'hint dotted')
-    paths.armRightLine = new Path()
-      .move(points.armTopRight)
-      .line(points.skirtArmRight)
-      .attr('data-text', 'stitch line')
-      .attr('data-text-class', 'center')
-      .attr('class', 'hint dotted')
+    if (complete) {
+      paths.armLeftLine = new Path()
+        .move(points.skirtArmLeft)
+        .line(points.armTopLeft)
+        .addClass('hint dotted')
+        .addText('stitchLine', 'center')
+      paths.armRightLine = new Path()
+        .move(points.armTopRight)
+        .line(points.skirtArmRight)
+        .addClass('hint dotted')
+        .addText('stitchLine', 'center')
+    }
   }
 
   if (sa) {

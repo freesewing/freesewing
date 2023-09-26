@@ -10,7 +10,12 @@
     "headSection1": "Head section 1",
     "headSection2": "Head section 2"
   },
-  "s": {},
+  "s": {
+    "eye": "Eye",
+    "mouth": "Mouth",
+    "stichLine": "Stitch line",
+    "foldLine": "Fold lines"
+  },
   "o": {
     "size": {
       "t": "Size",

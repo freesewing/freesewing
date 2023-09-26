@@ -1,6 +1,20 @@
 function octoplushyHeadSection(
   partNumber,
-  { options, Point, Path, points, paths, Snippet, snippets, sa, macro, utils, store, part }
+  {
+    options,
+    Point,
+    Path,
+    points,
+    paths,
+    Snippet,
+    snippets,
+    sa,
+    macro,
+    utils,
+    store,
+    complete,
+    part,
+  }
 ) {
   if (partNumber > (options.type == 'squid' ? 1 : 0)) {
     return part
@@ -387,14 +401,12 @@ function octoplushyHeadSection(
   })
 
   if (options.type == 'octoplushy') {
-    points.eyeLeft = paths.sectionLeft
-      .shiftFractionAlong(0.465)
-      .attr('data-text', 'eye')
-      .attr('data-text-class', 'center')
-    points.eyeRight = points.eyeLeft
-      .flipX(points.sectionTop)
-      .attr('data-text', 'eye')
-      .attr('data-text-class', 'center')
+    points.eyeLeft = paths.sectionLeft.shiftFractionAlong(0.465)
+    points.eyeRight = points.eyeLeft.flipX(points.sectionTop)
+    if (complete) {
+      points.eyeLeft.addText('eye', 'center')
+      points.eyeRight.addText('eye', 'center')
+    }
     snippets.eyeLeft = new Snippet('button', points.eyeLeft)
     snippets.eyeRight = new Snippet('button', points.eyeRight)
 
@@ -410,18 +422,16 @@ function octoplushyHeadSection(
       .move(points.mouthLeft)
       .curve(points.mouthLeftCp1, points.mouthBottomCp2, points.mouthBottom)
       .curve(points.mouthBottomCp1, points.mouthRightCp2, points.mouthRight)
-      .attr('data-text', 'mouth')
-      .attr('data-text-class', 'text-xs center')
       .attr('class', 'stroke-lg')
+    if (complete) paths.mouth.addText('mouth', 'text-xs center')
   }
 
-  if (options.type == 'squid' && partNumber == 1) {
+  if (options.type == 'squid' && partNumber == 1 && complete) {
     paths.fold = new Path()
       .move(points.sectionTop)
       .line(points.finFold)
-      .attr('data-text', 'fold line')
-      .attr('data-text-class', 'center')
-      .attr('class', 'hint dotted')
+      .addClass('hint dotted')
+      .addText('foldLine', 'center')
   }
   if (options.type == 'octopus') {
     points.skirtArmLeft = utils.curveIntersectsX(
@@ -432,22 +442,24 @@ function octoplushyHeadSection(
       points.armTopLeft.x
     )
     points.skirtArmRight = points.skirtArmLeft.flipX(points.sectionTop)
-    paths.armLeftLine = new Path()
-      .move(points.skirtArmLeft)
-      .line(points.armTopLeft)
-      .attr('data-text', 'stitch line')
-      .attr('data-text-class', 'center')
-      .attr('class', 'hint dotted')
-    paths.armRightLine = new Path()
-      .move(points.armTopRight)
-      .line(points.skirtArmRight)
-      .attr('data-text', 'stitch line')
-      .attr('data-text-class', 'center')
-      .attr('class', 'hint dotted')
+    if (complete) {
+      paths.armLeftLine = new Path()
+        .move(points.skirtArmLeft)
+        .line(points.armTopLeft)
+        .addClass('class', 'hint dotted')
+        .addText('stitchLine', 'center')
+      paths.armRightLine = new Path()
+        .move(points.armTopRight)
+        .line(points.skirtArmRight)
+        .addClass('class', 'hint dotted')
+        .addText('stitchLine', 'center')
+    }
   }
-  points.sectionTop.attr('data-text', 'A').attr('data-text-class', 'center')
-  points.armTopLeft.attr('data-text', 'B').attr('data-text-class', 'center')
-  points.armTopRight.attr('data-text', 'B').attr('data-text-class', 'center')
+  if (complete) {
+    points.sectionTop.addText('A', 'center')
+    points.armTopLeft.addText('B', 'center')
+    points.armTopRight.addText('B', 'center')
+  }
 
   snippets.left = new Snippet('notch', points.sectionLeft)
   snippets.right = new Snippet('notch', points.sectionRight)
