@@ -176,7 +176,8 @@ csetBookmark: Curated Measurements Sets
 docBookmark: Documentation
 customBookmark: Custom Bookmarks
 yourBookmarks: Your bookmarks
-bookmarkThisPage: Bookmark this page
+bookmarkThisThing: Bookmark this { thing }
+page: Page
 #sets
 set: Measurements Set
 name: Nom
@@ -205,7 +206,7 @@ noFilter: Do not filter
 filterByDesignDocs: If you have a specific design in mind, you can <b>filter by design</b> to only list those measurements that are required for this design.
 setLacksMeasiesForDesign: This set lacks measurements required for this pattern
 setHasMeasiesForDesign: This set has all measurements required for this pattern
-someSetsLacking: Some of your sets lack the measurments required to generate this pattern
+someSetsLacking: Some of these sets lack the measurments required to generate this pattern
 theseSetsReady: These sets have all required measurments to generate this pattern
 chooseSet: Choisis un ensemble de mesures
 patternForWhichSet: Pour quel ensemble de mesures devons-nous générer un modèle ?
