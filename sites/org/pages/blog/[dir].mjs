@@ -22,12 +22,7 @@ const BlogPage = ({ locale, dir, page }) => {
   const { frontmatter, MDX } = useDynamicMdx(loader)
 
   return (
-    <PageWrapper
-      {...page}
-      locale={locale}
-      title={frontmatter.title}
-      layout={(props) => <PostLayout {...props} {...{ slug: page.path.join('/'), frontmatter }} />}
-    >
+    <PageWrapper {...page} title={frontmatter.title}>
       <PostArticle {...{ frontmatter, MDX }} imgId={`blog-${dir}`} />
     </PageWrapper>
   )

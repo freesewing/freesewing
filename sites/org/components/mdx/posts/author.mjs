@@ -25,7 +25,7 @@ export const Author = ({ author = '' }) => {
   if (profile === false)
     return (
       <Popout comment by="joost">
-        <h5>We cannot link authors/makers to their FreeSewing accounts (yet)</h5>
+        <h5 id="maker">We cannot link authors/makers to their FreeSewing accounts (yet)</h5>
         <p>
           This is a known issue that I decided not to block the v3 release for. I will take care of
           this later.
