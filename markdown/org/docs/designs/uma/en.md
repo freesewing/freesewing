@@ -2,4 +2,7 @@
 title: "Uma undies"
 ---
 
-<PatternDocs pattern='uma' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='uma' docs />
+
