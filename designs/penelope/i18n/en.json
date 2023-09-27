@@ -80,6 +80,10 @@
       "t": "Skirt with a waistband",
       "d": "Add a waistband."
     },
+    "waistbandOverlap": {
+      "t": "Waistband overlap",
+      "d": "How much the waistband should overlap at the front."
+    },
     "waistbandWidth": {
       "t": "Waistband width",
       "d": "The width of the waistband."
