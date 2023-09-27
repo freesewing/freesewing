@@ -604,6 +604,7 @@ export const Patterns = () => {
                   checked={patterns.length === selCount}
                 />
               </th>
+              <th>#</th>
               <th>{t('account:img')}</th>
               <th>{t('account:name')}</th>
               <th>{t('account:design')}</th>
@@ -622,6 +623,7 @@ export const Patterns = () => {
                     onClick={() => toggleSelect(pattern.id)}
                   />
                 </td>
+                <td className="text-base font-medium">{pattern.id}</td>
                 <td className="text-base font-medium">
                   <PatternCard
                     href={`/account/patterns/${pattern.id}`}
