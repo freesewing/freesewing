@@ -478,7 +478,12 @@ export const patternNsFromPatternConfig = (config) => {
   return [...ns]
 }
 
-export const patternUrl = ({ design, settings = {}, view = 'draft', type = 'new', id }) =>
-  `/${type}/${design}/${type === 'edit' ? id + '/' : ''}#settings=${encodeURIComponent(
+export const newPatternUrl = ({ design, settings = {}, view = 'draft' }) =>
+  `/new/${design}/#settings=${encodeURIComponent(
     JSON.stringify(settings)
   )}&view=${encodeURIComponent('"' + view + '"')}`
+
+export const workbenchHash = ({ settings = {}, view = 'draft' }) =>
+  `#settings=${encodeURIComponent(JSON.stringify(settings))}&view=${encodeURIComponent(
+    '"' + view + '"'
+  )}`

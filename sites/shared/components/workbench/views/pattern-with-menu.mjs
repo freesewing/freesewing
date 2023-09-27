@@ -15,6 +15,7 @@ export const PatternWithMenu = ({
   pattern,
   menu,
   setSettings,
+  saveAs,
   Header = false,
 }) => (
   <PanZoomContextProvider>
@@ -29,6 +30,7 @@ export const PatternWithMenu = ({
             account,
             design,
             setSettings,
+            saveAs,
           }}
         />
       ) : null}

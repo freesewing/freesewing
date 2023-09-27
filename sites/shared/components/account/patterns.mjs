@@ -6,7 +6,7 @@ import {
   shortDate,
   cloudflareImageUrl,
   horFlexClasses,
-  patternUrl,
+  newPatternUrl,
 } from 'shared/utils.mjs'
 import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewing.config.mjs'
 // Context
@@ -72,15 +72,24 @@ export const ShowPattern = ({ id }) => {
   useEffect(() => {
     const getPattern = async () => {
       setLoadingStatus([true, t('backendLoadingStarted')])
-      let result = await backend.getPattern(id)
-      if (result.success) {
-        setPattern(result.data.pattern)
-        setIsOwn(true)
-        setLoadingStatus([true, 'backendLoadingCompleted', true, true])
-      } else {
-        result = await backend.getPublicPattern(id)
-        if (result.success) setPattern({ ...result.data, public: true })
-        else setLoadingStatus([true, 'backendError', true, false])
+      let result
+      try {
+        result = await backend.getPattern(id)
+        console.log('first attempt', result)
+        if (result.success) {
+          setPattern(result.data.pattern)
+          setIsOwn(true)
+          setLoadingStatus([true, 'backendLoadingCompleted', true, true])
+        } else {
+          result = await backend.getPublicPattern(id)
+          if (result.success) {
+            setPattern({ ...result.data, public: true })
+            setLoadingStatus([true, 'backendLoadingCompleted', true, true])
+          } else setLoadingStatus([true, 'backendError', true, false])
+        }
+      } catch (err) {
+        console.log(err)
+        setLoadingStatus([true, 'backendError', true, false])
       }
     }
     if (id) getPattern()
@@ -127,7 +136,7 @@ export const ShowPattern = ({ id }) => {
             </Lightbox>
           </DisplayRow>
           <Link
-            href={patternUrl({ design: pattern.design, settings: pattern.settings })}
+            href={newPatternUrl({ design: pattern.design, settings: pattern.settings })}
             className={`btn btn-primary ${horFlexClasses}`}
           >
             <CloneIcon /> {t('clonePattern')}
@@ -270,18 +279,13 @@ export const Pattern = ({ id }) => {
               ) : (
                 <>
                   <Link
-                    href={patternUrl({
-                      design: pattern.design,
-                      settings: pattern.settings,
-                      type: 'edit',
-                      id: pattern.id,
-                    })}
+                    href={`/account/patterns/${pattern.id}/edit`}
                     className={`btn btn-primary btn-outline ${horFlexClasses}`}
                   >
                     <FreeSewingIcon /> {t('updatePattern')}
                   </Link>
                   <Link
-                    href={patternUrl({ design: pattern.design, settings: pattern.settings })}
+                    href={newPatternUrl({ design: pattern.design, settings: pattern.settings })}
                     className={`btn btn-primary btn-outline ${horFlexClasses}`}
                   >
                     <CloneIcon /> {t('clonePattern')}
