@@ -23,7 +23,6 @@ export const prebuildDesigns = async (store) => {
   const measurements = {}
   const options = {}
   for (const design in allDesigns) {
-    console.log(design)
     const bundle = await loadDesign(design)
     const Instance = new bundle[capitalize(design)]()
     const config = Instance.getConfig()
