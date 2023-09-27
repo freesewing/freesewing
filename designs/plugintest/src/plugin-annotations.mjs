@@ -1,4 +1,3 @@
-import { annotationsPlugin } from '@freesewing/plugin-annotations'
 import { base } from './base.mjs'
 
 const snippies = [
@@ -147,6 +146,7 @@ const pluginAnnotations = ({
     points.cof_a = new Point(x, y + 10)
     points.cof_b = new Point(x + 93, y + 10)
     macro('cutonfold', {
+      id: 'dfs',
       from: points.cof_a,
       to: points.cof_b,
       margin: options.cutonfoldMargin,
@@ -154,7 +154,7 @@ const pluginAnnotations = ({
       grainline: options.cutonfoldGrainline,
     })
     macro('bannerbox', {
-      id: 'cutonfold',
+      id: 'cutonfoldBanner',
       topLeft: points.cof_a.shift(90, 10),
       bottomRight: points.cof_b.shift(90, 10),
       text: 'macro = cutonfold',
@@ -430,7 +430,7 @@ export const annotations = {
     // Crossbox
     crossboxText: { bool: true, menu: 'annotations.crossboxText' },
     // Cutonfold
-    cutonfoldMargin: { count: 5, min: 0, max: 25, menu: 'annotations.cutonfold' },
+    cutonfoldMargin: { pct: 5, min: 0, max: 25, menu: 'annotations.cutonfold' },
     cutonfoldOffset: { count: 15, min: 0, max: 100, menu: 'annotations.cutonfold' },
     cutonfoldGrainline: { bool: false, menu: 'annotations.cutonfold' },
     // dimension
@@ -438,7 +438,7 @@ export const annotations = {
     dimensionsEndMarker: { bool: true, menu: 'annotations.dimensions' },
     dimensionsStartMarker: { bool: true, menu: 'annotations.dimensions' },
     // Logo
-    logoScale: { pct: 100, min: 10, max: 200, menu: 'annptations.logo' },
+    logoScale: { pct: 100, min: 10, max: 200, menu: 'annotations.logo' },
     logoRotate: { deg: 0, min: -360, max: 360, menu: 'annotations.logo' },
     // Pleat
     pleatMargin: { count: 35, min: 0, max: 50, menu: 'annotations.pleat' },
@@ -463,6 +463,5 @@ export const annotations = {
     snippetScale: { pct: 100, min: 10, max: 200, menu: 'annotations.snippets' },
     snippetRotation: { deg: 0, min: -360, max: 360, menu: 'annotations.snippets' },
   },
-  plugins: annotationsPlugin,
   draft: pluginAnnotations,
 }
