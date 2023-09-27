@@ -1,5 +1,7 @@
 import { pctBasedOn } from '@freesewing/core'
-import { backVent, waistEase, zipperLocation } from './shape.mjs'
+import { options } from './shape.mjs'
+
+const { backVent, waistEase, zipperLocation } = options
 
 export const waistband = {
   name: 'penelope.waistband',
