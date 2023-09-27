@@ -6,23 +6,22 @@ export const waistband = {
   measurements: ['waist', 'waistToKnee'],
   options: {
     waistEase,
-    waistBandOverlap: 25,
-    waistBand: { bool: true, menu: 'style' },
-    waistBandWidth: {
+    waistband: { bool: true, menu: 'style' },
+    waistbandWidth: {
       pct: 10,
       min: 5,
       max: 20,
       ...pctBasedOn('waistToKnee'),
       // eslint-disable-next-line no-unused-vars
-      menu: (settings, mergedOptions) => (settings?.options?.waistBand === false ? false : 'style'),
+      menu: (settings, mergedOptions) => (settings?.options?.waistband === false ? false : 'style'),
     },
-    waistBandOverlap: {
+    waistbandOverlap: {
       pct: 3.5,
       min: 0,
       max: 10,
       ...pctBasedOn('waist'),
       // eslint-disable-next-line no-unused-vars
-      menu: (settings, mergedOptions) => (settings?.options?.waistBand === false ? false : 'style'),
+      menu: (settings, mergedOptions) => (settings?.options?.waistband === false ? false : 'style'),
     },
   },
   draft: ({
@@ -41,21 +40,21 @@ export const waistband = {
     units,
     part,
   }) => {
-    if (!options.waistBand) return part.hide()
+    if (!options.waistband) return part.hide()
 
     let waist = measurements.waist
     waist += measurements.waist * options.waistEase
-    const waistBandWidth = options.waistBandWidth * measurements.waistToKnee
-    const waistBandLength = waist / 2 + measurements.waist * options.waistBandOverlap
-    store.set('waistBandWidth', waistBandWidth)
+    const waistbandWidth = options.waistbandWidth * measurements.waistToKnee
+    const waistbandLength = waist / 2 + measurements.waist * options.waistbandOverlap
+    store.set('waistbandWidth', waistbandWidth)
 
     if (!expand) {
       // Expand is on, do not draw the part but flag this to the user
       store.flag.note({
         msg: `penelope:cutWaistband`,
         replace: {
-          width: units(waistBandLength),
-          length: units(waistBandWidth),
+          width: units(waistbandLength),
+          length: units(waistbandWidth),
         },
         suggest: {
           text: 'flag:show',
@@ -72,12 +71,12 @@ export const waistband = {
     }
 
     points.TL = new Point(0, 0)
-    points.BL = new Point(0, waist / 2 + options.waistBandOverlap)
-    points.TR = new Point(waistBandWidth, 0)
-    points.BR = new Point(waistBandWidth, waist / 2 + options.waistBandOverlap)
+    points.BL = new Point(0, waist / 2 + options.waistbandOverlap)
+    points.TR = new Point(waistbandWidth, 0)
+    points.BR = new Point(waistbandWidth, waist / 2 + options.waistbandOverlap)
 
-    points.titleAnchor = new Point(waistBandWidth / 2, waist / 6)
-    points.logoAnchor = new Point(waistBandWidth / 2, waist / 3)
+    points.titleAnchor = new Point(waistbandWidth / 2, waist / 6)
+    points.logoAnchor = new Point(waistbandWidth / 2, waist / 3)
     points.gridAnchor = points.logoAnchor.clone()
 
     paths.outline = new Path()

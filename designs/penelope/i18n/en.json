@@ -68,21 +68,21 @@
       "t": "Seat ease",
       "d": "Amount of ease at the seat level."
     },
-    "waistBand": {
-      "t": "Waist band",
+    "waistband": {
+      "t": "Waistband",
       "d": "Add a waistband to the pattern."
     },
-    "waistBandNo": {
-      "t": "No waist band",
+    "waistbandNo": {
+      "t": "No waistband",
       "d": "Just the skirt, nothing else."
     },
-    "waistBandYes": {
-      "t": "Skirt with a waist band",
-      "d": "Add a waist band."
+    "waistbandYes": {
+      "t": "Skirt with a waistband",
+      "d": "Add a waistband."
     },
-    "waistBandWidth": {
-      "t": "Waist band width",
-      "d": "The width of the waist band."
+    "waistbandWidth": {
+      "t": "Waistband width",
+      "d": "The width of the waistband."
     },
     "waistEase": {
       "t": "Waist ease",
