@@ -16,7 +16,7 @@ import {
   FlagsAccordionTitle,
   FlagsAccordionEntries,
 } from 'shared/components/workbench/views/flags.mjs'
-import { collection } from 'shared/hooks/use-design.mjs'
+import { collection } from 'site/hooks/use-design.mjs'
 
 export const ns = nsMerge(coreMenuNs, designMenuNs, uiNs, collection)
 

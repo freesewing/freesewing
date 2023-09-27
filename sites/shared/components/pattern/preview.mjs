@@ -1,4 +1,4 @@
-import { useDesign } from 'shared/hooks/use-design.mjs'
+import { useDesign } from 'site/hooks/use-design.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { themePlugin } from '@freesewing/plugin-theme'
 import { PanZoomPattern as ShowPattern } from 'shared/components/workbench/pan-zoom-pattern.mjs'

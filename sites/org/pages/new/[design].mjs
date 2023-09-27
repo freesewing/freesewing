@@ -1,5 +1,5 @@
 // Hooks
-import { useDesign, collection } from 'shared/hooks/use-design.mjs'
+import { useDesign, collection } from 'site/hooks/use-design.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'

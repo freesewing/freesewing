@@ -22,6 +22,7 @@ import { Hortensia } from '@freesewing/hortensia'
 import { Huey } from '@freesewing/huey'
 import { Hugo } from '@freesewing/hugo'
 import { Jaeger } from '@freesewing/jaeger'
+import { Legend } from '@freesewing/legend'
 import { Lucy } from '@freesewing/lucy'
 import { Lunetius } from '@freesewing/lunetius'
 import { Magde } from '@freesewing/magde'
@@ -30,6 +31,8 @@ import { Noble } from '@freesewing/noble'
 import { Octoplushy } from '@freesewing/octoplushy'
 import { Paco } from '@freesewing/paco'
 import { Penelope } from '@freesewing/penelope'
+import { Plugintest } from '@freesewing/plugintest'
+import { Rendertest } from '@freesewing/rendertest'
 import { Sandy } from '@freesewing/sandy'
 import { Shin } from '@freesewing/shin'
 import { Simon } from '@freesewing/simon'
@@ -40,6 +43,7 @@ import { Teagan } from '@freesewing/teagan'
 import { Tiberius } from '@freesewing/tiberius'
 import { Titan } from '@freesewing/titan'
 import { Trayvon } from '@freesewing/trayvon'
+import { Tutorial } from '@freesewing/tutorial'
 import { Uma } from '@freesewing/uma'
 import { Wahid } from '@freesewing/wahid'
 import { Walburga } from '@freesewing/walburga'
@@ -71,6 +75,7 @@ const designs = {
   huey: Huey,
   hugo: Hugo,
   jaeger: Jaeger,
+  legend: Legend,
   lucy: Lucy,
   lunetius: Lunetius,
   magde: Magde,
@@ -79,6 +84,8 @@ const designs = {
   octoplushy: Octoplushy,
   paco: Paco,
   penelope: Penelope,
+  plugintest: Plugintest,
+  rendertest: Rendertest,
   sandy: Sandy,
   shin: Shin,
   simon: Simon,
@@ -89,6 +96,7 @@ const designs = {
   tiberius: Tiberius,
   titan: Titan,
   trayvon: Trayvon,
+  tutorial: Tutorial,
   uma: Uma,
   wahid: Wahid,
   walburga: Walburga,
