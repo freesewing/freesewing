@@ -42,7 +42,6 @@ import { Teagan } from '@freesewing/teagan'
 import { Tiberius } from '@freesewing/tiberius'
 import { Titan } from '@freesewing/titan'
 import { Trayvon } from '@freesewing/trayvon'
-import { Tutorial } from '@freesewing/tutorial'
 import { Uma } from '@freesewing/uma'
 import { Wahid } from '@freesewing/wahid'
 import { Walburga } from '@freesewing/walburga'
@@ -94,7 +93,6 @@ const designs = {
   tiberius: Tiberius,
   titan: Titan,
   trayvon: Trayvon,
-  tutorial: Tutorial,
   uma: Uma,
   wahid: Wahid,
   walburga: Walburga,
