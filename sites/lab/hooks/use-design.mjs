@@ -26,7 +26,6 @@ import { Legend } from '@freesewing/legend'
 import { Lucy } from '@freesewing/lucy'
 import { Lunetius } from '@freesewing/lunetius'
 import { Magde } from '@freesewing/magde'
-import { Naomiwu } from '@freesewing/naomiwu'
 import { Noble } from '@freesewing/noble'
 import { Octoplushy } from '@freesewing/octoplushy'
 import { Paco } from '@freesewing/paco'
@@ -79,7 +78,6 @@ const designs = {
   lucy: Lucy,
   lunetius: Lunetius,
   magde: Magde,
-  naomiwu: Naomiwu,
   noble: Noble,
   octoplushy: Octoplushy,
   paco: Paco,
