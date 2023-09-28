@@ -204,7 +204,7 @@ function simonBack({
         .line(points.bballStart)
         .curve(points.bballCp1, points.bballCp2, points.bballEnd)
       break
-    case 'slashed':
+    case 'slashed': {
       // Macro will return the auto-generated IDs
       const ids = macro('round', {
         id: 'slash',
@@ -227,6 +227,7 @@ function simonBack({
         .line(points.slashEnd)
         .curve(points.slashCp2, points.slashCp1, points.slashStart)
       break
+    }
     default:
       paths.saBase = new Path()
         .move(points.hem)

@@ -10,7 +10,7 @@
       "t": "dy",
       "d": "Distance perpendicular to the path the text is placed on"
     },
-    "bannerDy": {
+    "bannerRepeat": {
       "t": "repeat",
       "d": "The amount of time the text should be repeated"
     },

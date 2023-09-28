@@ -17,7 +17,7 @@ export const Lightbox = ({ children, buttonClasses = '', boxClasses = false, mod
         onClick={() => setBox(false)}
       >
         <div
-          className={`m-auto text-neutral-content lightbox ${className}`}
+          className="m-auto text-neutral-content lightbox"
           style={{
             maxHeight: 'calc(100vh - 6rem)',
             maxWidth: 'calc(100vw - 6rem)',

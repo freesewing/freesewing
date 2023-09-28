@@ -5,7 +5,7 @@ export const draftRoundedBarrelCuff = ({ store, sa, utils, points, Path, paths, 
   const height = store.get('cuffHeight')
   // Macros will return the auto-generated IDs
   const ids = {
-    topleftRound: macro('round', {
+    topLeftRound: macro('round', {
       id: 'topLeftRound',
       from: points.topRight,
       to: points.bottomLeft,
