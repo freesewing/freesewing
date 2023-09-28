@@ -2,4 +2,7 @@
 title: "Walburga, tabardo"
 ---
 
-<PatternDocs pattern='walburga' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='walburga' docs />
+

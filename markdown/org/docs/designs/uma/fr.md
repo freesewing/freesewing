@@ -1,5 +1,8 @@
 ---
-title: "Unités d'Ursula"
+title: "Uma undies"
 ---
 
-<PatternDocs pattern='ursula' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='uma' docs />
+

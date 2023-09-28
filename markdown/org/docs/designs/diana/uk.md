@@ -2,4 +2,7 @@
 title: "Топ з горловиною-хомутом Діана"
 ---
 
-<PatternDocs pattern='diana' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='diana' docs />
+

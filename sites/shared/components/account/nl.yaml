@@ -176,7 +176,8 @@ csetBookmark: Curated Measurements Sets
 docBookmark: Documentatie
 customBookmark: Custom Bookmarks
 yourBookmarks: Your bookmarks
-bookmarkThisPage: Bookmark this page
+bookmarkThisThing: Bookmark this { thing }
+page: Page
 #sets
 set: Measurements Set
 name: Naam
@@ -205,7 +206,7 @@ noFilter: Do not filter
 filterByDesignDocs: If you have a specific design in mind, you can <b>filter by design</b> to only list those measurements that are required for this design.
 setLacksMeasiesForDesign: This set lacks measurements required for this pattern
 setHasMeasiesForDesign: This set has all measurements required for this pattern
-someSetsLacking: Some of your sets lack the measurments required to generate this pattern
+someSetsLacking: Some of these sets lack the measurments required to generate this pattern
 theseSetsReady: These sets have all required measurments to generate this pattern
 chooseSet: Kies een maten set
 patternForWhichSet: Voor welke maten set moeten we een patroon genereren?
@@ -260,3 +261,18 @@ platformWhy: We do not use this data in any way. This is only here so FreeSewing
 security: Security
 revealPassword: Reveal password
 hidePassword: Hide password
+#Design view
+designs: Designs
+code: Code
+aboutThing: About { thing }
+requiredMeasurements: Vereiste maten
+optionalMeasurements: Optionele maten
+designOptions: Design opties
+parts: Parts
+plugins: Plugins
+specifications: Specifications
+visitShowcase: Visit showcase post
+examples: Voorbeelden
+noExamples: We currently do not have any examples for this design
+noExamplesMsg: We rely on the FreeSewing community to submit examples in our showcase posts.
+

@@ -2,6 +2,7 @@
 title: "Casquette de détective Holmes"
 ---
 
-<YouTube id='H24VBFMZJF4' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
 
-<PatternDocs pattern='holmes' />
+<DesignInfo design='holmes' docs />
+

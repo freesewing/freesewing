@@ -1,5 +1,10 @@
+#These are UI strings
+tags: Теги
+showLineDrawings: Show line drawings
+showExamples: Show examples
+clearFilter: Clear filter
 difficulty: Складність
-tags: Теги дизайну
+#Actual tags start here
 accessories: Аксесуари
 bags: Сумки
 blocks: Блоки
@@ -14,4 +19,3 @@ tops: Верх
 toys: Іграшки
 trousers: Штани
 underwear: Спідня білизна
-

@@ -2,4 +2,7 @@
 title: "Simone, das Hemd"
 ---
 
-<PatternDocs pattern='simone' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='simone' docs />
+

@@ -2,4 +2,7 @@
 title: "Пласка кепка Флорент"
 ---
 
-<PatternDocs pattern='florent' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='florent' docs />
+

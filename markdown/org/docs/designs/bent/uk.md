@@ -2,4 +2,7 @@
 title: "Викрійка-основа Бент"
 ---
 
-<PatternDocs pattern='bent' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='bent' docs />
+
