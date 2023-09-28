@@ -141,7 +141,9 @@ export const TabbedExample = ({
 
   return (
     <div className="my-8">
-      <Tabs tabs={tabNames.join(', ')}>{tabs}</Tabs>
+      <Tabs tabs={tabNames.join(', ')} withModal>
+        {tabs}
+      </Tabs>
       {caption && (
         <div className="text-center italic -mt-4">
           <Md>{caption}</Md>
