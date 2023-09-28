@@ -6,6 +6,7 @@ function draftCarltonUnderSleeve({
   store,
   complete,
   points,
+  utils,
   measurements,
   options,
   macro,
@@ -21,13 +22,18 @@ function draftCarltonUnderSleeve({
   let angle = points.usWristRight.angle(points.usWristLeft)
   points.cuffBottomRight = points.usWristRight.shift(angle + 90, length)
   points.cuffBottomLeft = points.usWristLeft.shift(angle + 90, length)
-  macro('round', {
+  // Macro will return the auto-generated IDs
+  const ids = macro('round', {
+    id: 'round',
     to: points.usWristRight,
     from: points.cuffBottomLeft,
     via: points.cuffBottomRight,
     radius: length / 3,
-    prefix: 'round',
   })
+  // Create points from them with easy names
+  for (const id of ['start', 'cp1', 'cp2', 'end']) {
+    points[`round${utils.capitalize(id)}`] = points[ids.points[id]].copy()
+  }
   store.set('underCuffWidth', points.usWristLeft.dist(points.usWristRight))
 
   // Clean up

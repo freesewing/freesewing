@@ -2,7 +2,19 @@ import { frontBase } from './frontbase.mjs'
 import { backBase } from './backbase.mjs'
 import { pocketFoldover } from './options.mjs'
 
-function jaegerPocket({ sa, store, complete, points, options, macro, Point, paths, Path, part }) {
+function jaegerPocket({
+  sa,
+  store,
+  utils,
+  complete,
+  points,
+  options,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   const width = store.get('pocketWidth')
   const depth = store.get('pocketDepth')
 
@@ -19,20 +31,29 @@ function jaegerPocket({ sa, store, complete, points, options, macro, Point, path
 
   // Round the pocket
   if (options.frontPocketRadius > 0) {
-    macro('round', {
-      from: points.topLeft,
-      to: points.bottomRight,
-      via: points.bottomLeft,
-      radius: width * options.frontPocketRadius,
-      prefix: 'left',
-    })
-    macro('round', {
-      from: points.bottomLeft,
-      to: points.topRight,
-      via: points.bottomRight,
-      radius: width * options.frontPocketRadius,
-      prefix: 'right',
-    })
+    // Macros will return the auto-generated IDs
+    const ids = {
+      left: macro('round', {
+        id: 'left',
+        from: points.topLeft,
+        to: points.bottomRight,
+        via: points.bottomLeft,
+        radius: width * options.frontPocketRadius,
+      }),
+      right: macro('round', {
+        id: 'right',
+        from: points.bottomLeft,
+        to: points.topRight,
+        via: points.bottomRight,
+        radius: width * options.frontPocketRadius,
+      }),
+    }
+    // Create points from them with easy names
+    for (const side in ids) {
+      for (const id of ['start', 'cp1', 'cp2', 'end']) {
+        points[`${side}${utils.capitalize(id)}`] = points[ids[side].points[id]].copy()
+      }
+    }
   }
 
   // Paths

@@ -1,25 +1,45 @@
 import { front } from './front.mjs'
 
-function draftCarltonPocketFlap({ sa, store, points, options, macro, Point, paths, Path, part }) {
+function draftCarltonPocketFlap({
+  sa,
+  store,
+  utils,
+  points,
+  options,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(store.get('pocketWidth'), store.get('pocketFlapHeight'))
   points.bottomLeft = new Point(points.topLeft.x, points.bottomRight.y)
   points.topRight = new Point(points.bottomRight.x, points.topLeft.y)
   if (options.pocketFlapRadius > 0) {
-    macro('round', {
-      from: points.topLeft,
-      to: points.bottomRight,
-      via: points.bottomLeft,
-      radius: store.get('pocketFlapRadius'),
-      prefix: 'roundLeft',
-    })
-    macro('round', {
-      from: points.bottomLeft,
-      to: points.topRight,
-      via: points.bottomRight,
-      radius: store.get('pocketFlapRadius'),
-      prefix: 'roundRight',
-    })
+    // Macros will return the auto-generated IDs
+    const ids = {
+      roundLeft: macro('round', {
+        id: 'roundLeft',
+        from: points.topLeft,
+        to: points.bottomRight,
+        via: points.bottomLeft,
+        radius: store.get('pocketFlapRadius'),
+      }),
+      roundRight: macro('round', {
+        id: 'roundRight',
+        from: points.bottomLeft,
+        to: points.topRight,
+        via: points.bottomRight,
+        radius: store.get('pocketFlapRadius'),
+      }),
+    }
+    // Create points from them with easy names
+    for (const side in ids) {
+      for (const id of ['start', 'cp1', 'cp2', 'end']) {
+        points[`${side}${utils.capitalize(id)}`] = points[ids[side].points[id]].copy()
+      }
+    }
 
     paths.seam = new Path()
       .move(points.topLeft)

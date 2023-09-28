@@ -21,6 +21,7 @@ function simonFront({
   Path,
   paths,
   macro,
+  utils,
   snippets,
   options,
   part,
@@ -92,13 +93,18 @@ function simonFront({
         .curve(points.bballCp1, points.bballCp2, points.bballEnd)
       break
     case 'slashed':
-      macro('round', {
+      // Macro will return the auto-generated IDs
+      const ids = macro('round', {
+        id: 'slash',
         from: points.hips,
         to: points.cfHem,
         via: points.hem,
         radius: points.hips.dist(points.hem) * options.hemCurve,
-        prefix: 'slash',
       })
+      // Create points from them with easy names
+      for (const id of ['start', 'cp1', 'cp2', 'end']) {
+        points[`slash${utils.capitalize(id)}`] = points[ids.points[id]].copy()
+      }
       paths.saBase = new Path().move(points.hips).join(paths.saBaseFromHips)
       paths.hemBase = new Path()
         .move(points.cfHem)

@@ -7,6 +7,7 @@ function draftBenjaminBase({
   paths,
   Snippet,
   snippets,
+  utils,
   options,
   measurements,
   macro,
@@ -72,19 +73,35 @@ function draftBenjaminBase({
   } else {
     points.roundBottom = new Point(points.tip.x, points.tip2Bottom.y)
     points.roundTop = points.roundBottom.flipY()
-    macro('round', {
-      from: points.tip2Bottom,
-      to: points.tip,
-      via: points.roundBottom,
-      prefix: 'bottom',
-    })
-    macro('round', {
-      from: points.tip,
-      to: points.tip2Top,
-      via: points.roundTop,
-      prefix: 'top',
-    })
-    paths.cap = paths.bottomRounded.join(paths.topRounded)
+    // Macros will return the auto-generated IDs
+    const ids = {
+      bottom: macro('round', {
+        id: 'bottom',
+        from: points.tip2Bottom,
+        to: points.tip,
+        via: points.roundBottom,
+        hide: false,
+      }),
+      top: macro('round', {
+        id: 'top',
+        from: points.tip,
+        to: points.tip2Top,
+        via: points.roundTop,
+        hide: false,
+      }),
+    }
+    // Create points from them with easy names
+    for (const side in ids) {
+      for (const id of ['start', 'cp1', 'cp2', 'end']) {
+        points[`${side}${utils.capitalize(id)}`] = points[ids[side].points[id]].copy()
+      }
+    }
+    // Now construct the path joining our two rounded paths
+    paths.cap = paths[ids.top.paths.path]
+      .clone()
+      .reverse()
+      .join(paths[ids.bottom.paths.path].clone().reverse())
+      .reverse()
   }
 
   if (options.bowStyle === 'diamond' || options.bowStyle === 'butterfly') {

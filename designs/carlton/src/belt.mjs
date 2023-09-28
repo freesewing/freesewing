@@ -7,6 +7,7 @@ function draftCarltonBelt({
   store,
   points,
   macro,
+  utils,
   Point,
   paths,
   Path,
@@ -20,20 +21,29 @@ function draftCarltonBelt({
   points.bottomLeft = new Point(0, width)
   points.bottomRight = new Point(length, width)
   points.button = new Point(width / 2, width / 2)
-  macro('round', {
-    from: points.topRight,
-    to: points.bottomLeft,
-    via: points.topLeft,
-    prefix: 'roundTop',
-    radius: width / 4,
-  })
-  macro('round', {
-    from: points.topLeft,
-    to: points.bottomRight,
-    via: points.bottomLeft,
-    prefix: 'roundBottom',
-    radius: width / 4,
-  })
+  // Macros will return the auto-generated IDs
+  const ids = {
+    roundTop: macro('round', {
+      id: 'roundTop',
+      from: points.topRight,
+      to: points.bottomLeft,
+      via: points.topLeft,
+      radius: width / 4,
+    }),
+    roundBottom: macro('round', {
+      id: 'roundBottom',
+      from: points.topLeft,
+      to: points.bottomRight,
+      via: points.bottomLeft,
+      radius: width / 4,
+    }),
+  }
+  // Create points from them with easy names
+  for (const side in ids) {
+    for (const id of ['start', 'cp1', 'cp2', 'end']) {
+      points[`${side}${utils.capitalize(id)}`] = points[ids[side].points[id]].copy()
+    }
+  }
 
   // Paths
   paths.seam = new Path()

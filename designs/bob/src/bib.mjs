@@ -13,6 +13,7 @@ export const bib = {
     points,
     Path,
     paths,
+    utils,
     measurements,
     options,
     macro,
@@ -82,19 +83,27 @@ export const bib = {
     points.tipRightTop = new Point(points.tipRight.x, points.edgeTop.y)
     points.tipRightBottom = new Point(points.tipRight.x, points.top.y)
 
-    macro('round', {
-      from: points.edgeTop,
-      to: points.tipRight,
-      via: points.tipRightTop,
-      prefix: 'tipRightTop',
-    })
-    macro('round', {
-      from: points.tipRight,
-      to: points.top,
-      via: points.tipRightBottom,
-      prefix: 'tipRightBottom',
-    })
-
+    // Macros will return the auto-generated IDs
+    const ids1 = {
+      tipRightTop: macro('round', {
+        id: 'tipRightTop',
+        from: points.edgeTop,
+        to: points.tipRight,
+        via: points.tipRightTop,
+      }),
+      tipRightBottom: macro('round', {
+        id: 'tipRightBottom',
+        from: points.tipRight,
+        to: points.top,
+        via: points.tipRightBottom,
+      }),
+    }
+    // Create points from them with easy names
+    for (const side in ids1) {
+      for (const id of ['start', 'cp1', 'cp2', 'end']) {
+        points[`${side}${utils.capitalize(id)}`] = points[ids1[side].points[id]].copy()
+      }
+    }
     // Rotate straps so they don't overlap
     let rotateThese = [
       'edgeTopLeftCp',
@@ -136,21 +145,29 @@ export const bib = {
 
     // Round the bottom of the bib
     // Radius is fixed, but you could use an option for it)
-    macro('round', {
-      from: points.topLeft,
-      to: points.bottomRight,
-      via: points.bottomLeft,
-      radius: points.bottomRight.x / 4,
-      prefix: 'bottomLeft',
-    })
-    macro('round', {
-      from: points.bottomLeft,
-      to: points.topRight,
-      via: points.bottomRight,
-      radius: points.bottomRight.x / 4,
-      prefix: 'bottomRight',
-    })
-
+    // Macros will return the auto-generated IDs
+    const ids2 = {
+      bottomLeft: macro('round', {
+        id: 'bottomLeft',
+        from: points.topLeft,
+        to: points.bottomRight,
+        via: points.bottomLeft,
+        radius: points.bottomRight.x / 4,
+      }),
+      bottomRight: macro('round', {
+        id: 'bottomRight',
+        from: points.bottomLeft,
+        to: points.topRight,
+        via: points.bottomRight,
+        radius: points.bottomRight.x / 4,
+      }),
+    }
+    // Create points from them with easy names
+    for (const side in ids2) {
+      for (const id of ['start', 'cp1', 'cp2', 'end']) {
+        points[`${side}${utils.capitalize(id)}`] = points[ids2[side].points[id]].copy()
+      }
+    }
     // Construct the path
     paths.seam = new Path()
       .move(points.edgeLeft)

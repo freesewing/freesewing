@@ -1,7 +1,7 @@
 import { topSleeve } from './topsleeve.mjs'
 import { underSleeve } from './undersleeve.mjs'
 
-function draftCarltonCuffFacing({ sa, store, points, macro, Point, paths, Path, part }) {
+function draftCarltonCuffFacing({ sa, store, utils, points, macro, Point, paths, Path, part }) {
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(
     store.get('topCuffWidth') + store.get('underCuffWidth'),
@@ -9,20 +9,29 @@ function draftCarltonCuffFacing({ sa, store, points, macro, Point, paths, Path, 
   )
   points.bottomLeft = new Point(points.topLeft.x, points.bottomRight.y)
   points.topRight = new Point(points.bottomRight.x, points.topLeft.y)
-  macro('round', {
-    from: points.topLeft,
-    to: points.bottomRight,
-    via: points.bottomLeft,
-    radius: store.get('cuffRadius'),
-    prefix: 'roundLeft',
-  })
-  macro('round', {
-    from: points.bottomLeft,
-    to: points.topRight,
-    via: points.bottomRight,
-    radius: store.get('cuffRadius'),
-    prefix: 'roundRight',
-  })
+  // Macros will return the auto-generated IDs
+  const ids = {
+    roundLeft: macro('round', {
+      id: 'roundLeft',
+      from: points.topLeft,
+      to: points.bottomRight,
+      via: points.bottomLeft,
+      radius: store.get('cuffRadius'),
+    }),
+    roundRight: macro('round', {
+      id: 'roundRight',
+      from: points.bottomLeft,
+      to: points.topRight,
+      via: points.bottomRight,
+      radius: store.get('cuffRadius'),
+    }),
+  }
+  // Create points from them with easy names
+  for (const side in ids) {
+    for (const id of ['start', 'cp1', 'cp2', 'end']) {
+      points[`${side}${utils.capitalize(id)}`] = points[ids[side].points[id]].copy()
+    }
+  }
 
   paths.seam = new Path()
     .move(points.topLeft)
