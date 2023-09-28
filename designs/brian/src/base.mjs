@@ -243,7 +243,7 @@ export const base = {
      * Annotations
      */
     points.title = new Point(points.armholePitch.x / 2, points.armholePitch.y)
-    macro('title', { nr: 0, title: 'base' })
+    macro('title', { nr: 0, title: 'base', at: points.title })
     points.logo = points.title.shift(-90, 100)
     snippets.logo = new Snippet('logo', points.logo)
 
