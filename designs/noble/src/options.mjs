@@ -13,27 +13,11 @@ export const shoulderDartPosition = {
   pct: 50,
   min: 10,
   max: 90,
-  menu: (settings, mergedOptions) => {
-    return settings.options.dartPosition === undefined
-      ? mergedOptions.dartPosition == 'shoulder'
-        ? 'darts'
-        : false
-      : settings.options.dartPosition == 'shoulder'
-      ? 'darts'
-      : false
-  },
+  menu: (settings, mergedOptions) => (mergedOptions.dartPosition === 'shoulder' ? 'darts' : false),
 }
 export const armholeDartPosition = {
   pct: 50,
   min: 10,
   max: 90,
-  menu: (settings, mergedOptions) => {
-    return settings.options.dartPosition === undefined
-      ? mergedOptions.dartPosition == 'armhole'
-        ? 'darts'
-        : false
-      : settings.options.dartPosition == 'armhole'
-      ? 'darts'
-      : false
-  },
+  menu: (settings, mergedOptions) => (mergedOptions.dartPosition === 'armhole' ? 'darts' : false),
 }
