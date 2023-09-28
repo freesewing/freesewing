@@ -4,10 +4,9 @@ import { ns as measieNs } from './measurements.mjs'
 import { Accordion } from 'shared/components/accordion.mjs'
 import { useTranslation } from 'next-i18next'
 import { nsMerge } from 'shared/utils.mjs'
-import { OptionsIcon, MeasieIcon, CommunityIcon } from 'shared/components/icons.mjs'
+import { OptionsIcon, MeasieIcon } from 'shared/components/icons.mjs'
 import { ListInput } from 'shared/components/inputs.mjs'
 import { optionsMenuStructure } from 'shared/utils.mjs'
-import { V3Wip } from 'shared/components/v3-wip.mjs'
 
 export const ns = nsMerge('workbench', optionsNs, measieNs)
 

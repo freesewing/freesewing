@@ -1,10 +1,10 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { nsMerge, workbenchHash } from 'shared/utils.mjs'
+import { nsMerge } from 'shared/utils.mjs'
 // Hooks
 import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
-import { useDesign, collection } from 'site/hooks/use-design.mjs'
+import { useDesign } from 'site/hooks/use-design.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Context
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
@@ -44,10 +44,6 @@ const EditDesignPage = ({ page, design, id }) => {
       try {
         result = await backend.getPattern(id)
         if (result.success) {
-          //const hash = workbenchHash({ settings: pattern.settings })
-          //console.log({hash})
-          //if (history.pushState) history.pushState(null, null, hash)
-          //else location.hash = hash
           setPattern(result.data.pattern)
           setLoadingStatus([true, 'backendLoadingCompleted', true, true])
         } else setLoadingStatus([true, 'backendError', true, false])

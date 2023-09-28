@@ -56,13 +56,9 @@ export const ns = ['account', 'patterns', 'status']
 
 export const ShowPattern = ({ id }) => {
   // Hooks
-  const { account, control } = useAccount()
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
-
-  // Context
-  const { setModal } = useContext(ModalContext)
 
   // State
   const [pattern, setPattern] = useState()

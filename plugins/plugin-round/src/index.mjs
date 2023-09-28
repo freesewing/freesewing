@@ -26,7 +26,7 @@ export const plugin = {
 
       const fd = from.dist(via)
       const td = to.dist(via)
-      if (radius > fd || radius > td || typeof radius === 'undefined') radius = fd > td ? td : fd
+      if (radius > fd || radius > td) radius = fd > td ? td : fd
       points[ids.start] = via.shiftTowards(from, radius)
       points[ids.cp1] = via.shiftTowards(from, radius * (1 - C))
       points[ids.cp2] = via.shiftTowards(to, radius * (1 - C))

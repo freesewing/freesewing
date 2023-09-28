@@ -1,7 +1,6 @@
 import { useDesign } from 'site/hooks/use-design.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { themePlugin } from '@freesewing/plugin-theme'
-import { PanZoomPattern as ShowPattern } from 'shared/components/workbench/pan-zoom-pattern.mjs'
 import { Pattern as ReactPattern } from 'pkgs/react-components/src/index.mjs'
 import { useTranslation } from 'next-i18next'
 

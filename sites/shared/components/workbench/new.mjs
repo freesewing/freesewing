@@ -13,7 +13,6 @@ import { objUpdate, hasRequiredMeasurements, nsMerge } from 'shared/utils.mjs'
 import { Header, ns as headerNs } from 'site/components/header/index.mjs'
 import { WorkbenchHeader } from './header.mjs'
 import { ErrorView } from 'shared/components/error/view.mjs'
-import { ModalSpinner } from 'shared/components/modal/spinner.mjs'
 import { MobileMenubar } from './menus/mobile-menubar.mjs'
 // Views
 import { DraftView, ns as draftNs } from 'shared/components/workbench/views/draft/index.mjs'

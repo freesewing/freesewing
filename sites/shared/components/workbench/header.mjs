@@ -20,7 +20,6 @@ import {
 } from 'shared/components/icons.mjs'
 import Link from 'next/link'
 import { MenuWrapper } from 'shared/components/workbench/menus/shared/menu-wrapper.mjs'
-import { isProduction } from 'shared/config/freesewing.config.mjs'
 
 export const ns = ['workbench', 'sections']
 
