@@ -184,7 +184,7 @@
     "design": "Wouter Van Wageningen",
     "difficulty": 4,
     "tags": ["accessories", "toys"],
-    "techniques": []
+    "techniques": ["curvedSeam", "dart"]
   },
   "holmes": {
     "description": "A FreeSewing pattern for a Sherlock Holmes hat",
@@ -270,7 +270,7 @@
     "design": "Wouter Van Wageningen",
     "difficulty": 3,
     "tags": ["blocks", "tops"],
-    "techniques": []
+    "techniques": ["curvedSeam", "precision", "princessSeam"]
   },
   "octoplushy": {
     "description": "A FreeSewing pattern for an octopus plushy toy",
@@ -278,7 +278,7 @@
     "design": "Wouter Van Wageningen",
     "difficulty": 4,
     "tags": ["accessories", "toys"],
-    "techniques": []
+    "techniques": ["curvedSeam", "precision"]
   },
   "paco": {
     "description": "A FreeSewing pattern for summer pants",
@@ -294,7 +294,7 @@
     "design": "Wouter Van Wageningen",
     "difficulty": 3,
     "tags": ["bottoms", "skirts"],
-    "techniques": []
+    "techniques": ["hem", "curvedSeam", "precision", "zipper"]
   },
   "plugintest": {
     "description": "A FreeSewing pattern to test (y)our plugins",
