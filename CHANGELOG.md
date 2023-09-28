@@ -590,12 +590,6 @@
 
  - Migrated from Rollup to Esbuild for all builds
 
-### tutorial
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
 ### wahid
 
 #### Changed
@@ -1109,12 +1103,6 @@
  - Switched to default import for version from package.json
 
 ### trayvon
-
-#### Changed
-
- - Switched to default import for version from package.json
-
-### tutorial
 
 #### Changed
 
@@ -1783,12 +1771,6 @@
 #### Added
 
  - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
-
-### tutorial
-
-#### Fixed
-
- - Set department in the config to one of the newly accepted values
 
 ### plugin-mirror
 
@@ -2829,12 +2811,6 @@
  - Ported trayvon to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
  - Removed `Circumference` suffix from measurement names
 
-### tutorial
-
-#### Changed
-
- - Removed `Circumference` suffix from measurement names
-
 ### wahid
 
 #### Changed
@@ -3445,12 +3421,6 @@
  - Initial release
 
 ### trayvon
-
-#### Added
-
- - Initial release
-
-### tutorial
 
 #### Added
 
