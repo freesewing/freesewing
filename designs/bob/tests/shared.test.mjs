@@ -14,7 +14,7 @@ testPatternConfig(Bob)
 testPatternI18n(Bob, i18n)
 
 // Test drafting - Change the second parameter to `true` to log errors
-testPatternDrafting(Bob, 1)
+testPatternDrafting(Bob, false)
 
 // Test sampling - Change the second parameter to `true` to log errors
 testPatternSampling(Bob, false)
