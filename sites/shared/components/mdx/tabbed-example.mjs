@@ -2,9 +2,13 @@ import { Tab, Tabs } from '../tabs.mjs'
 import Md from 'react-markdown'
 import { pluginFlip } from '@freesewing/plugin-flip'
 import { pluginGore } from '@freesewing/plugin-gore'
+import { pluginI18n } from '@freesewing/plugin-i18n'
 import { Design } from '@freesewing/core'
 import yaml from 'js-yaml'
 import { Pattern, PatternXray } from '@freesewing/react-components'
+import { useTranslation } from 'next-i18next'
+
+export const ns = ['tutorial', 'plugin-annotations']
 
 // Get code from children
 export const asText = (reactEl) => {
@@ -59,6 +63,7 @@ const buildPattern = (children, settings = { margin: 5 }, tutorial = false, pape
 
 // Handles display of pattern in mormal or xray mode
 const ShowPattern = ({ renderProps, logs, mode = 'normal' }) => {
+  const { t } = useTranslation(ns)
   if (!renderProps) return null
 
   if (logs.pattern.error.length > 0 || logs.sets[0].error.length > 0)
@@ -68,7 +73,11 @@ const ShowPattern = ({ renderProps, logs, mode = 'normal' }) => {
       </div>
     )
 
-  return mode === 'xray' ? <PatternXray {...{ renderProps }} /> : <Pattern {...{ renderProps }} />
+  return mode === 'xray' ? (
+    <PatternXray {...{ renderProps, t }} className="freesewing pattern text-base-content" />
+  ) : (
+    <Pattern {...{ renderProps, t }} className="freesewing pattern text-base-content" />
+  )
 }
 
 // Wrapper component dealing with the tabs and code view

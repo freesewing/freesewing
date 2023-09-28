@@ -3,65 +3,78 @@ title: Adding options
 order: 140
 ---
 
-We know what our bib should look like, and we have the _head_ measurement
-to work with. But there's still a number of choices we have to make:
+I have shown what our bib should look like, and added the _head_ measurement
+to work with. But there's still a number of choices I have to make:
 
 - How large should the neck opening be?
 - How wide should the bib be?
 - How long should the bib be?
 
-We can make all of these choices for the user and set them in stone, so to speak.
+I could make all of these choices for the user and set them in stone, so to speak.
 
-But since we're designing a pattern in code, it's trivial to make our pattern
-flexible and let the user decide. All we have to do is add options to our part.
+But since the pattern I am designing is code, it is trivial (and _IMHO_ very satisfying) 
+to make a pattern flexible and let the user choose.
+All I need to do to give control to the user is add _options_ to the part.
 
 ## Add the neckRatio option
 
-The first option we're going to add controls the ratio between the neck opening
+The first option I will add controls the ratio between the neck opening
 and the head circumference. Let's call it `neckRatio`.
 
-We'll add a new `options` key to our part object for this:
+For this, I will add the `options` property to our `bib` object:
 
 ```design/src/bib.mjs
-function draftBib({ part }) {
-
+function draftBib({ part }) => {
   return part
 }
 
 export const bib = {
- 
   name: 'tutorial.bib',
   draft: draftBib,
-  from: false,
-  hide: {
-    self: false,
-    from: false,
-    after: false
-  },
+  measurements: [ 'head' ],
   // highlight-start
   options: {
-    neckRatio: { pct: 80, min: 70, max: 90, menu: 'fit' },
+    neckRatio: { 
+      pct: 80, 
+      min: 70, 
+      max: 90, 
+      menu: 'fit'
+    },
   },
   // highlight-end
-  measurements: [],
-  optionalMeasurements: [],
-  plugins: []
 }
-
 ```
 
 Can you guess what it means?
 
-- We've added a option of type percentage
+- We've added the `options` property to our `bib` object
+- On the `options` property, we have added `neckRatio` which holds the configuration for our option
+- It is a `pct` option -- whcih means it's a percentage
+- Its default value is 90%
 - Its minimum value is 70%
 - Its maximum value is 90%
-- Its default value is 80%
-- We've added this option to the *fit* menu
+
+There are different types of options, but percentages are by far the most common ones.
+They are all documented [in the part reference docs](/reference/api/part/config/options).
 
 <Note>
 
-There are different types of options, but percentages are the most common ones.
-They are all documented [in the part reference docs](/reference/api/part/config/options).
+##### What is `menu` and why should you care?
+
+The `menu` property on our option is *extra*. 
+It will be ignored by FreeSewing's core library and if we leave it out, our design will produce the same result.
+
+Instead, this `menu` property is there for the benefit FreeSewing's development
+environment which will use this to build a menu structure for the various
+options.
+
+Each option type has a number of required properties. But in addition to that,
+you can add more to facilitate integrating with a front-end or other user
+interface.
+
+You will see that after adding this option, the development environment will
+have a `fit` section under **Design Options**. This `menu` property is where
+that is based on.
 
 </Note>
 
@@ -70,25 +83,43 @@ They are all documented [in the part reference docs](/reference/api/part/config/
 Let's do something similar for the width and length of our bib:
 
 ```design/src/bib.mjs
-options: {
-  neckRatio: { pct: 80, min: 70, max: 90, menu: 'fit' },
-  widthRatio: { pct: 45, min: 35, max: 55, menu: 'style' },
-  lengthRatio: { pct: 75, min: 55, max: 85, menu: 'style' },
+function draftBib({ part }) => {
+  return part
+}
+
+export const bib = {
+  name: 'tutorial.bib',
+  draft: draftBib,
+  measurements: [ 'head' ],
+  options: {
+    neckRatio: { 
+      pct: 80, 
+      min: 70, 
+      max: 90, 
+      menu: 'fit'
+    },
+  // highlight-start
+    widthRatio: { 
+      pct: 45, 
+      min: 35, 
+      max: 55, 
+      menu: 'style' 
+    },
+    lengthRatio: { 
+      pct: 75, 
+      min: 55, 
+      max: 85, 
+      menu: 'style' 
+    },
+  // highlight-end
+  },
 }
 ```
 
-- We've added `widthRatio` and `lengthRatio` options
-- We've given all options sensible defaults
-- We've given all options sensible maximum and minimum boundaries
-- We've added these two new options to the *style* menu
+This pretty much the exact same thing, except that are placing this in the `style` menu.
 
-Later, we'll test-drive our pattern to see how it behaves when we adapt the options
-between their minimum and maximum values. At that time, we can still tweak these values.
+Later, I will test-drive our pattern to see how it behaves when we adapt the options
+between their minimum and maximum values. At that time, I may need to tweak these values.
 
-With that out of the way, let's start drawing our bib.
+With that out of the way, I will start drawing the bib.
 
-## Notes
-
-The `menu` key on an option does not do anything for our pattern as such.
-Instead it signals to the frontend that this is how options should be grouped
-together and presented to the user.

@@ -173,7 +173,7 @@ export const bib = {
       paths.bias = paths.seam
         .offset(-5)
         .attr('class', 'various dashed')
-        .attr('data-text', 'finishWithBiasTape')
+        .attr('data-text', 'tutorial:finishWithBiasTape')
         .attr('data-text-class', 'center fill-various')
 
       // Add the title

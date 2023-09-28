@@ -15,7 +15,7 @@ export const MdxWrapper = ({ title = false, path, language, children }) => {
   return (
     <>
       {title ? <h1>{title}</h1> : null}
-      <div className="text-primary mdx text-base-content text-base">
+      <div className="mdx text-base-content text-base">
         <MDXProvider components={components}>{children}</MDXProvider>
       </div>
       <div

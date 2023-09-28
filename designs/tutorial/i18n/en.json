@@ -4,6 +4,8 @@
   "p": {
     "bib": "Bib"
   },
-  "s": {},
+  "s": {
+    "finishWithBiasTape": "Finish with bias tape"
+  },
   "o": {}
 }
