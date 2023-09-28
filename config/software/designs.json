@@ -278,7 +278,7 @@
     "design": "Wouter Van Wageningen",
     "difficulty": 3,
     "tags": ["blocks", "tops"],
-    "techniques": []
+    "techniques": ["curvedSeam", "precision", "princessSeam"]
   },
   "octoplushy": {
     "description": "A FreeSewing pattern for an octopus plushy toy",
