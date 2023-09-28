@@ -4,7 +4,7 @@ import { createTeeth } from './teeth.mjs'
 export const upperTeeth = {
   name: 'hi.upperTeeth',
   after: body,
-  draft: ({ store, sa, Point, points, Path, paths, Snippet, snippets, paperless, macro, part }) => {
+  draft: ({ store, sa, Point, points, Path, paths, Snippet, snippets, macro, part }) => {
     const multiplier = store.get('multiplier')
 
     const upperTeeth01_02d = 131.305041182736 * multiplier

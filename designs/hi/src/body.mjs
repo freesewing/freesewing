@@ -27,6 +27,7 @@ export const body = {
     paths,
     Snippet,
     snippets,
+    complete,
     options,
     macro,
     utils,
@@ -299,12 +300,13 @@ export const body = {
     points.eyeBigLcp1 = points.eyeBigL.shift(90, (eyeBigX / 2) * c)
     points.eyeBigLcp2 = points.eyeBigL.shift(270, (eyeBigX / 2) * c)
 
-    paths.eyeBig = new Path()
-      .move(points.eyeBigT)
-      .curve(points.eyeBigTcp2, points.eyeBigLcp1, points.eyeBigL)
-      .curve(points.eyeBigLcp2, points.eyeBigBcp1, points.eyeBigB)
-      .curve(points.eyeBigBcp2, points.eyeBigRcp1, points.eyeBigR)
-      .curve(points.eyeBigRcp2, points.eyeBigTcp1, points.eyeBigT)
+    if (complete)
+      paths.eyeBig = new Path()
+        .move(points.eyeBigT)
+        .curve(points.eyeBigTcp2, points.eyeBigLcp1, points.eyeBigL)
+        .curve(points.eyeBigLcp2, points.eyeBigBcp1, points.eyeBigB)
+        .curve(points.eyeBigBcp2, points.eyeBigRcp1, points.eyeBigR)
+        .curve(points.eyeBigRcp2, points.eyeBigTcp1, points.eyeBigT)
 
     const eyeSmallX = 1.87089 * multiplier * (options.aggressive ? 1.5 : 1)
     const eyeSmallY = 1.5368 * multiplier * (options.aggressive ? 1.5 : 1)
@@ -321,12 +323,13 @@ export const body = {
     points.eyeSmallLcp1 = points.eyeSmallL.shift(90, (eyeSmallX / 2) * c)
     points.eyeSmallLcp2 = points.eyeSmallL.shift(270, (eyeSmallX / 2) * c)
 
-    paths.eyeSmall = new Path()
-      .move(points.eyeSmallT)
-      .curve(points.eyeSmallTcp2, points.eyeSmallLcp1, points.eyeSmallL)
-      .curve(points.eyeSmallLcp2, points.eyeSmallBcp1, points.eyeSmallB)
-      .curve(points.eyeSmallBcp2, points.eyeSmallRcp1, points.eyeSmallR)
-      .curve(points.eyeSmallRcp2, points.eyeSmallTcp1, points.eyeSmallT)
+    if (complete)
+      paths.eyeSmall = new Path()
+        .move(points.eyeSmallT)
+        .curve(points.eyeSmallTcp2, points.eyeSmallLcp1, points.eyeSmallL)
+        .curve(points.eyeSmallLcp2, points.eyeSmallBcp1, points.eyeSmallB)
+        .curve(points.eyeSmallBcp2, points.eyeSmallRcp1, points.eyeSmallR)
+        .curve(points.eyeSmallRcp2, points.eyeSmallTcp1, points.eyeSmallT)
 
     paths.allButDart = new Path()
       .move(points.body03)
@@ -370,11 +373,13 @@ export const body = {
     points.gill4end = points.gill4start.shift(gillAngle, gillLength * (1 + 3 * 0.08))
     points.gill5end = points.gill5start.shift(gillAngle, gillLength * (1 + 4 * 0.08))
 
-    paths.gill1 = new Path().move(points.gill1start).line(points.gill1end)
-    paths.gill2 = new Path().move(points.gill2start).line(points.gill2end)
-    paths.gill3 = new Path().move(points.gill3start).line(points.gill3end)
-    paths.gill4 = new Path().move(points.gill4start).line(points.gill4end)
-    paths.gill5 = new Path().move(points.gill5start).line(points.gill5end)
+    if (complete) {
+      paths.gill1 = new Path().move(points.gill1start).line(points.gill1end)
+      paths.gill2 = new Path().move(points.gill2start).line(points.gill2end)
+      paths.gill3 = new Path().move(points.gill3start).line(points.gill3end)
+      paths.gill4 = new Path().move(points.gill4start).line(points.gill4end)
+      paths.gill5 = new Path().move(points.gill5start).line(points.gill5end)
+    }
 
     points.finCurve = utils.beamsIntersect(
       points.body05,
@@ -497,7 +502,7 @@ export const body = {
       to: points.body01,
       d: -5,
       id: 'bodyLength',
-      force: true,
+      force: complete,
     })
 
     points.titleAnchor = points.body04.shiftFractionTowards(points.body17, 0.4)
