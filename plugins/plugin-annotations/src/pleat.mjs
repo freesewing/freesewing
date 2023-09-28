@@ -110,6 +110,8 @@ const pleat = function (config, { paths, Path, log, Point, complete, scale, stor
    * Store all IDs in the store so we can remove this macro with rmpleat
    */
   store.set(['parts', part.name, 'macros', 'pleat', 'ids', mc.id, 'paths'], ids)
+
+  return store.getMacroIds(mc.id, 'pleat')
 }
 
 // Export macros

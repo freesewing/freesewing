@@ -13,7 +13,6 @@ import { objUpdate, hasRequiredMeasurements, nsMerge } from 'shared/utils.mjs'
 import { Header, ns as headerNs } from 'site/components/header/index.mjs'
 import { WorkbenchHeader } from './header.mjs'
 import { ErrorView } from 'shared/components/error/view.mjs'
-import { ModalSpinner } from 'shared/components/modal/spinner.mjs'
 import { MobileMenubar } from './menus/mobile-menubar.mjs'
 // Views
 import { DraftView, ns as draftNs } from 'shared/components/workbench/views/draft/index.mjs'
@@ -66,7 +65,7 @@ const draftViews = ['draft', 'inspect']
 
 const kioskClasses = 'z-30 w-screen h-screen fixed top-0 left-0 bg-base-100'
 
-export const Workbench = ({ design, Design, DynamicDocs }) => {
+export const Workbench = ({ design, Design, DynamicDocs, saveAs = false, preload = false }) => {
   // Hooks
   const { t, i18n } = useTranslation([...ns, design])
   const { language } = i18n
@@ -75,11 +74,12 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
 
   // State
   const [view, _setView] = useView()
-  const [settings, setSettings] = usePatternSettings()
+  const [settings, setSettings] = usePatternSettings(preload)
   const [ui, setUi] = useState(defaultUi)
   const [error, setError] = useState(false)
   const [mounted, setMounted] = useState(false)
   const [missingMeasurements, setMissingMeasurements] = useState(false)
+  const [preloaded, setPreloaded] = useState(0)
 
   const setView = useCallback(
     (newView) => {
@@ -94,6 +94,20 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
 
   // set mounted on mount
   useEffect(() => setMounted(true), [setMounted])
+
+  // Handle preload
+  useEffect(() => {
+    if (preload) {
+      // This will run a few times while variouos things bootstrap
+      // but should not run after that.
+      if (preload.settings && preloaded < 3) {
+        console.log('preloading settings', { mounted, preloaded })
+        setSettings(preload.settings)
+        setView('draft')
+        setPreloaded(preloaded + 1)
+      }
+    }
+  }, [preload])
 
   useEffect(() => {
     // protect against loops
@@ -140,7 +154,7 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
   )
 
   // wait for mount. this helps prevent hydration issues
-  if (!mounted) return <ModalSpinner />
+  if (!mounted) return <p>wait for it...</p> //<ModalSpinner />
 
   // Warn that the design is somehow missing
   if (!Design) return <ErrorView>{t('workbench.noDesignFound')}</ErrorView>
@@ -168,6 +182,7 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
     language,
     DynamicDocs,
     Design,
+    saveAs,
   }
   let viewContent = null
 
@@ -222,7 +237,7 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
     <>
       {!ui.kiosk && <Header />}
       <div className={`flex flex-row min-h-screen ${ui.kiosk ? kioskClasses : ''}`}>
-        <WorkbenchHeader {...{ view, setView, update }} />
+        <WorkbenchHeader {...{ view, setView, update, saveAs }} />
         <div className="grow">{viewContent}</div>
         <MobileMenubar />
       </div>

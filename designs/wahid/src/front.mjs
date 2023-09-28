@@ -127,13 +127,18 @@ function wahidFront({
     // Avoid radius extending beyond the dart
     if (radius > points.closureTop.dx(points.dartHemLeft))
       radius = points.closureTop.dx(points.dartHemLeft)
-    macro('round', {
+    // Macro will return the auto-generated IDs
+    const ids = macro('round', {
+      id: 'hem',
       from: points.closureTop,
       to: points.hem,
       via: points.closureBottom,
       radius,
-      prefix: 'round',
     })
+    // Create points from them with easy names
+    for (const id of ['start', 'cp1', 'cp2', 'end']) {
+      points[`round${utils.capitalize(id)}`] = points[ids.points[id]].copy()
+    }
     points.lastButton = new Point(0, points.roundStart.y)
     points.hemTip = points.roundEnd.copy()
   } else {

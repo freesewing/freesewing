@@ -6,6 +6,9 @@ order: 110
 Inside our `tutorial` folder, the `design/src` folder holds the source code for
 the new pattern we will create.
 
+If you want to support internationalization in your design, your translations 
+go in the `design/i18n` folder. 
+
 We can safely ignore all other files and folders, as they are part of the
 FreeSewing development environment.
 So feel free to skip ahead to [Our first part](/tutorials/pattern-design/our-first-part).

@@ -2,8 +2,9 @@
 title: Pattern design tutorial
 ---
 
-Welcome to the FreeSewing pattern design tutorial, where we'll learn how to
-design a made-to-measure sewing pattern, start to finish.
+Hello there, and welcome to this FreeSewing pattern design tutorial.
+My name is Joost, and in this tutorial I will show you
+how to design a made-to-measure sewing pattern, start to finish.
 
 <Tip>
 ##### Before you start
@@ -13,11 +14,11 @@ guide](/guides/prerequisites). It's very short, but covers some basic
 terminology and concepts that we'll use throughout this guide.
 </Tip>
 
-We will be designing a pattern for a baby bib. It's a very simple pattern, but
-that's the point.  Our focus today is on learning FreeSewing and how to
-translate our designs into code.
+I will be designing a pattern for a baby bib. It's a very simple pattern, but
+that's ok. It is a tutorial after all. This will give us plenty to work with.
 
-At the end of this tutorial, we will have created this pattern:
+At the end of this tutorial, I will have created this pattern, and if you
+follow along, so will you:
 
 
 <Example tutorial="1" previewFirst="1" caption="Our end result">
@@ -30,13 +31,16 @@ function draftBib({
   measurements,
   options,
   macro,
+  store,
   complete,
   snippets,
   Snippet,
   part,
 }) {
 
-  // Construct the quarter neck opening
+  /*
+   * Construct the quarter neck opening
+   */
   let tweak = 1
   let target = (measurements.head * options.neckRatio) /4
   let delta
@@ -57,7 +61,9 @@ function draftBib({
     else tweak = tweak * 1.02
   } while (Math.abs(delta) > 1)
 
-  // Construct the complete neck opening
+  /*
+   * Construct the complete neck opening
+   */
   points.rightCp2 = points.rightCp1.flipY()
   points.bottomCp1 = points.bottomCp2.flipX()
   points.left = points.right.flipX()
@@ -67,7 +73,9 @@ function draftBib({
   points.topCp1 = points.bottomCp2.flipY()
   points.topCp2 = points.bottomCp1.flipY()
 
-  // Drawing the bib outline
+  /*
+   * Drawing the bib outline
+   */
   const width = measurements.head * options.widthRatio
   const length = measurements.head * options.lengthRatio
 
@@ -92,7 +100,9 @@ function draftBib({
   )
   points.edgeTopRightCp = points.edgeTopLeftCp.flipX()
 
-  // Round the straps
+  /*
+   * Round the straps
+   */
   const strap = points.edgeTop.dy(points.top)
 
   points.tipRight = points.edgeTop.translate(strap / 2, strap / 2)
@@ -132,10 +142,14 @@ function draftBib({
     for (const p of rotateThese) points[p] = points[p].rotate(1, points.edgeLeft)
   }
 
-  // Snap anchor
+  /*
+   * Snap anchor
+   */
   points.snapLeft = points.top.shiftFractionTowards(points.edgeTop, 0.5)
 
-  // Add points for second strap
+  /*
+   * Add points for second strap
+   */
   points.edgeTopRightCp = points.edgeTopLeftCp.flipX()
   points.topCp1 = points.topCp2.flipX()
   points.tipLeftTopStart = points.tipRightTopStart.flipX()
@@ -148,7 +162,9 @@ function draftBib({
   points.tipLeftBottomEnd = points.tipRightBottomEnd.flipX()
   points.snapRight = points.snapLeft.flipX()
 
-  // Round the bottom corners
+  /*
+   * Round the bottom corners
+   */
   macro("round", {
     from: points.topLeft,
     to: points.bottomRight,
@@ -164,7 +180,9 @@ function draftBib({
     prefix: "bottomRight"
   })
 
-  // Create one path for the bib outline
+  /*
+   * Create one path for the bib outline
+   */
   paths.seam = new Path()
     .move(points.edgeLeft)
     .line(points.bottomLeftStart)
@@ -185,62 +203,66 @@ function draftBib({
     .close()
     .addClass("fabric")
 
-  if (complete) {
-    // Add snaps
-    points.snapLeft = points.top
-      .shiftFractionTowards(points.edgeTop, 0.5)
-    points.snapRight = points.snapLeft.flipX()
-    snippets.snapStud = new Snippet('snap-stud', points.snapLeft)
-    snippets.snapSocket = new Snippet('snap-socket', points.snapRight)
-      .attr('opacity', 0.5)
+  /*
+   * Mark the bias tape, but only if complete is set
+   */
+  if (complete) paths.bias = paths.seam
+    .offset(-5)
+    .addClass("various dashed")
+    .addText("finishWithBiasTape", "center fill-various")
+  /*
+   * Annotations
+   */
 
-    // Add a logo
-    points.logo = new Point(0, 0)
-    snippets.logo = new Snippet("logo", points.logo)
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'fabric' })
+  
+  // Snaps
+  points.snapLeft = points.top.shiftFractionTowards(points.edgeTop, 0.5)
+  points.snapRight = points.snapLeft.flipX()
+  snippets.snapStud = new Snippet('snap-stud', points.snapLeft)
+  snippets.snapSocket = new Snippet('snap-socket', points.snapRight).attr('opacity', 0.5)
 
-    // Add a title
-    points.title = points.bottom.shift(-90, 45)
-    macro("title", {
-      at: points.title,
-      nr: 1,
-      title: "bib",
-      scale: 0.7
-    })
+  // Logo
+  points.logo = new Point(0, 0)
+  snippets.logo = new Snippet("logo", points.logo)
 
-    // Add a scalbox
-    points.scalebox = points.title.shift(-90, 55)
-    macro("scalebox", { at: points.scalebox })
+  // Title
+  points.title = points.bottom.shift(-90, 45)
+  macro("title", {
+    at: points.title,
+    nr: 1,
+    title: "bib",
+    scale: 0.7
+  })
 
-    paths.bias = paths.seam
-      .offset(-5)
-      .addClass("various dashed")
-      .addText("finishWithBiasTape", "center fill-various")
-
-  }
+  // Scalbox
+  points.scalebox = points.title.shift(-90, 55)
+  macro("scalebox", { at: points.scalebox })
 
   return part
 }
 ```
 </Example>
 
-Before we can get started, let's make sure we have the required software
-installed on our computer:
-
 ## Prerequisites
 
+Before I can get started, I want to make sure I have the required software
+installed on my computer.
+
 FreeSewing is a JavaScript library that can run in the browser, on
-[Node.js](https://nodejs.org/), or a variety of other runtimes such as Deno,
-AWS Lambda, and so on.
+[Node.js](https://nodejs.org/), or a variety of other runtimes such as Bun, 
+Deno, AWS Lambda, and so on.
 
-For development, we'll use Node.js. If we don't have Node.js on our system,
-follow the link above and install it on our system.
+For development, I will use Node.js. If you don't have Node.js on our system,
+follow the link above and install it.
 
-<Tip compact>We need Node.js 16 or higher to use FreeSewing</Tip>
+<Tip compact>You need Node.js 18 (lts/hydrogen) or higher to use FreeSewing</Tip>
 
-When we're done, we can test whether it works by running:
+To test whether NodeJS is installed, and see it's version, you can run this command:
 
 ```sh
 node -v
 ```
 
-If we get the Node.js version number, we're all set.
+If you get the Node.js version number, that means NodeJs is installed. Yay!

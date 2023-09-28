@@ -125,6 +125,8 @@ const sewtogether = function (config, { paths, Path, log, Point, complete, sa, s
    * Store all IDs in the store so we can remove this macro with rmsewtogether
    */
   store.set(['parts', part.name, 'macros', 'sewtogether', 'ids', mc.id, 'paths'], ids)
+
+  return store.getMacroIds(mc.id, 'sewtogether')
 }
 
 // Export macros

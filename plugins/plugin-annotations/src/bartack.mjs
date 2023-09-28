@@ -129,6 +129,8 @@ function createBartack(config, props) {
    * Store all IDs in the store so we can remove this macro with rm[name]
    */
   props.store.set(['parts', props.part.name, 'macros', name, 'ids', mc.id, 'paths'], ids)
+
+  return props.store.getMacroIds(mc.id, name)
 }
 
 /*

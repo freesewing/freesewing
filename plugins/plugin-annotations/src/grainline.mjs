@@ -99,6 +99,8 @@ const grainline = function (config = {}, { paths, Path, Point, complete, store, 
    * Store all IDs in the store so we can remove this macro with rmgrainline
    */
   store.set(['parts', part.name, 'macros', 'grainline', 'ids', mc.id, 'paths'], ids)
+
+  return store.getMacroIds(mc.id, 'grainline')
 }
 
 // Export macros

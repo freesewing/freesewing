@@ -7,3 +7,21 @@ export const getIds = (keys, id, macroName) => {
 
   return ids
 }
+
+/*
+ * Helper method to get an existing macro id
+ */
+const getIdsFromStore = (store, id, macroName, partName = false) => {
+  if (!partName) partName = store.activePart
+  const data = store.get(['parts', partName, 'macros', macroName, 'ids', id])
+
+  return data ? data : false
+}
+
+/*
+ * Add these to the store
+ */
+export const utilsStores = [
+  ['createMacroIds', (store, keys, id, macroName) => getIds(keys, id, macroName)],
+  ['getMacroIds', getIdsFromStore],
+]

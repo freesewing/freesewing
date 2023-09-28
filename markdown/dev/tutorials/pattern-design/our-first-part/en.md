@@ -1,61 +1,68 @@
 ---
-title: Our first part
+title: Creating a part
 order: 120
 ---
 
 Much like garments themselves, patterns are made up of _parts_.
 Most patterns will have multiple parts. A sleeve, a back part, the collar, and
-so on. Our pattern is very simple, and only has one part: the bib.
+so on. The pattern you create today is very simple, and only has one part: the bib.
 
-It's a good idea to keep each part in its own file. We don't *have to* do
-this, but it's a good habit to get into. When we create more elaborate designs
-with multiple parts, keeping each in its own file makes for a more tidy
-and approachable code base.
+<Tip>
+
+It's a good idea to keep each part in its own file. You don't *have to* do
+this, but it's a good habit to get into. 
+
+</Tip>
 
 ## bib.mjs
 
-The previous step has already set everything up for us. Our design's main file
-lives in `design/src/index.mjs`, and our part lives in `design/src/bib.mjs`.
+Since I chose the `tutorial` preset, the development environment is preconfigured for this tutorial.
 
-This `bib.mjs` is where we'll do all our work. The file includes a comments to guide you on how to use it. We removed those for clarity in our example. It currently looks like this:
+The design's main file lives in `design/src/index.mjs`, and the bib part lives in `design/src/bib.mjs`.
+
+This `bib.mjs` is where I will be doing most of the work. 
+The file that was created includes a lot of comments to provide guidance to those not using this tutorial.
+I have removed those comments from the inline examples in this tutorial for clarity in our example.
+
+The `bib.mjs` file currently looks like this:
 
 ```design/src/bib.mjs
-import { pluginBundle } from "@freesewing/plugin-bundle"
-
-function draftBib ({
-  part, // Your draft method must return this
-})
-{
-  // Work your magic here
+/*
+ * This function drafts the part
+ */
+function draftBib ({ part }) => {
   return part
 }
-export const bib = {
 
+/*
+ * This is the part object
+ */
+export const bib = {
   name: 'tutorial.bib',
-  draft: draftBib,[],
-  from: false,
-  hide: {
-    self: false,
-    from: false,
-    after: false
-  },
-  options: {},
-  measurements: [],
-  optionalMeasurements: [],
-  plugins: [ pluginBundle ]
+  draft: draftBib,
 }
 ```
 
 ### The part object
 
-Each part in FreeSewing is an object that describes everything there is to know about the part.
+Each part in FreeSewing is an object that describes the part, and has a `draft`
+method to do the actual work of drafting the part.
 
 The only mandatory keys on a part object are `name` and `draft`.
 
 <Related>
+
 Refer to [the part reference documentation](/reference/api/part) for 
 all details about configuring the part object 
 </Related>
+
+<Note>
+
+A design in FreeSewing is a thin wrapper around a collection of parts.
+Each parts stands on its own, and parts from various designs can be combined
+to create other designs.
+</Note>
+
 
 #### The part name
 
@@ -63,15 +70,15 @@ all details about configuring the part object
   name: 'tutorial.bib',
 ```
 
-A part's `name` should be unique in a pattern. Apart from that, anything goes.
-Although we probably want to give it a sensible name.
+A part's `name` should be unique in a design. I used `tutorial.bib` as the
+name, because that makes sense.
 
-As we can see in the example above, we're using `tutorial.bib` as the name.
+<Warning>
 
-<Tip>
-We **strongly** recommend that you follow this `design.part` naming scheme to avoid
-naming conflicts when mixing parts from various designs to create new designs.
-</Tip>
+I **strongly** recommend that you apply the same `designName.partName` naming scheme in all your parts.
+This avoids naming conflicts when mixing parts from various designs to create a new design.
+
+</Warning>
 
 #### The part's draft method
 
@@ -81,7 +88,8 @@ naming conflicts when mixing parts from various designs to create new designs.
 
 The second mandatory key on the part object is `draft` which should hold the method that drafts the part.
 
-In our example above, it refers to the `draftBib` function we defined at the top of the file.
+In the example above, it refers to the `draftBib` function that was defined at the top of the same `bib.mjs` file.
+
 For now this function doesn't do much, but that will change soon enough.
 
 <Note>
@@ -99,56 +107,76 @@ to get started.  Or, read on for an explanation of what's going on in the
 </Tip>
 
 The `index.mjs` file is already complete and we won't be making any changes to
-it.  But for those who are curious about what's going on inside `index.mjs`,
-we're including a version with comments below:
+it. But if you are curious about what's going on inside `index.mjs`,
+this is all we need:
 
 ```design/src/index.mjs
-/*
- * Import the `Design` constructor
- * from the FreeSewing core library
- *
- * This Design constructor is a method
- * (also known as a function)
- * that creates a new Design
- */
 import { Design } from '@freesewing/core'
-/*
- * Import the `bib` part from the bib.mjs file
- * in the same folder as this index.mjs file
- *
- * This is the part we'll be working on
- * in this tutorial
- */
 import { bib } from './bib.mjs'
+import { i18n  } from '../i18n/index.mjs'
 
-/*
- * Create a new Pattern by passing
- * a configuration object
- * to the Design constructor
- */
-const Pattern = new Design({
-  /*
-   * This `data` key is optional, but we
-   * typically add a name and version here
-   */
-  data: {
-      name: "Tutorial",
-  },
-  /*
-   * This `parts` key is the most important thing
-   * It holds a list of `parts` for our Design.
-   * A Pattern/Design is in the end not much more
-   * than a collection of parts.
-   */
+const Tutorial = new Design({
   parts: [ bib ],
 })
 
-/*
- * We are exporting our Pattern
- * (so others can use it)
- * but we also (re-)export our bib part
- * this allows others to re-use it
- * in their own designs
- */
-export { bib, Pattern }
+export { bib, Tutorial, i18n }
 ```
+
+If you are familiar with Javascript, I hope you are happy to see that FreeSewing uses ESM modules, and named exports.
+
+If you are not familiar with Javascript, these `import` statements are how we load code from other files.
+There's three of them:
+
+```design/src/index.mjs
+import { Design } from '@freesewing/core'
+```
+
+This loads the `Design` constructure from FreeSewing's core library.
+A constructor is a function that creates something. So the `Design` constructor creates a Design.
+
+```design/src/index.mjs
+import { bib } from './bib.mjs'
+```
+
+This loads the `bib` part from the `bib.mjs` file in the same folder.
+This is what we will be working on.
+
+```design/src/index.mjs
+import { i18n } from '../i18n/index.mjs'
+```
+
+And this loads something named `i18n` from the `index.mjs` file in the `i18n`
+folder that's one level higher. These are the translations. 
+
+I will show you how you can provide translations for your designs towards the
+end of this tutorial.
+
+```design/src/index.mjs
+const Tutorial = new Design({
+  parts: [ bib ],
+})
+```
+
+This is where the magic happens. We create a new Design by passing the Design
+constructure a configuration object.  All it holds is the `parts` key that is
+an array of our parts.
+
+Which goes to show that a design isn't much more than a bunch of parts.
+
+```design/src/index.mjs
+export { bib, Tutorial, i18n }
+```
+
+And then all that's left to do is export things so that people can use them.
+These are named exports. We are exporting three things:
+
+- `Tutorial` is our complete design. Exporting it means people can use it.
+- `bib` is our part. We are exporting it so people can re-use just this part.
+- `i18n` are the translations. We are exporting it so people can load them when using our Tutorial.
+
+<Related>
+
+Refer to [the design reference documentation](/reference/api/design) for 
+all details about what you can pass to the Design constructor.
+</Related>
+

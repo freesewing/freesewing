@@ -479,7 +479,7 @@ export function mergeI18n(designs, options) {
  * @param {object} optionsConfig - The pattern's options config
  * @return {object} result - An object with the merged options and their values
  */
-export function mergeOptions(settings, optionsConfig) {
+export function mergeOptions(settings = {}, optionsConfig) {
   const merged = typeof settings.options === 'undefined' ? {} : { ...settings.option }
   for (const [key, option] of Object.entries(optionsConfig)) {
     if (typeof option === 'object') {

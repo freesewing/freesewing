@@ -222,20 +222,29 @@ function jaegerFront({
   points.ipfeEdge = points.innerPocketRight.shift(0, ipfeHeight / 2)
   points.ipfeViaTopRight = new Point(points.ipfeEdge.x, points.ipfeTopRight.y)
   points.ipfeViaBottomRight = points.ipfeViaTopRight.flipY(points.innerPocketRight)
-  macro('round', {
-    from: points.ipfeBottomRight,
-    to: points.ipfeEdge,
-    via: points.ipfeViaBottomRight,
-    radius: ipfeHeight / 2,
-    prefix: 'ipfeBottomRight',
-  })
-  macro('round', {
-    from: points.ipfeTopRight,
-    to: points.ipfeEdge,
-    via: points.ipfeViaTopRight,
-    radius: ipfeHeight / 2,
-    prefix: 'ipfeTopRight',
-  })
+  // Macros will return the auto-generated IDs
+  const ids1 = {
+    ipfeBottomRight: macro('round', {
+      id: 'ipfeBottomRight',
+      from: points.ipfeBottomRight,
+      to: points.ipfeEdge,
+      via: points.ipfeViaBottomRight,
+      radius: ipfeHeight / 2,
+    }),
+    ipfeTopRight: macro('round', {
+      id: 'ipfeTopRight',
+      from: points.ipfeTopRight,
+      to: points.ipfeEdge,
+      via: points.ipfeViaTopRight,
+      radius: ipfeHeight / 2,
+    }),
+  }
+  // Create points from them with easy names
+  for (const side in ids1) {
+    for (const id of ['start', 'cp1', 'cp2', 'end']) {
+      points[`${side}${utils.capitalize(id)}`] = points[ids1[side].points[id]].copy()
+    }
+  }
   points.ipfeStart = utils.beamIntersectsY(
     points.facingTop,
     points.facingBottom,
@@ -256,20 +265,29 @@ function jaegerFront({
     points.innerPocketAnchor.y + ipfeHeight / 2
   )
   points.ipfeEndVia = new Point(points.ipfeEnd.x, points.ipfeEndEnd.y)
-  macro('round', {
-    from: points.ipfeStart,
-    to: points.ipfeStartEnd,
-    via: points.ipfeStartVia,
-    radius: ipfeHeight / 2,
-    prefix: 'ipfeStart',
-  })
-  macro('round', {
-    from: points.ipfeEnd,
-    to: points.ipfeEndEnd,
-    via: points.ipfeEndVia,
-    radius: ipfeHeight / 2,
-    prefix: 'ipfeEnd',
-  })
+  // Macros will return the auto-generated IDs
+  const ids2 = {
+    ipfeStart: macro('round', {
+      id: 'ipfeStart',
+      from: points.ipfeStart,
+      to: points.ipfeStartEnd,
+      via: points.ipfeStartVia,
+      radius: ipfeHeight / 2,
+    }),
+    ipfeEnd: macro('round', {
+      id: 'ipfeEnd',
+      from: points.ipfeEnd,
+      to: points.ipfeEndEnd,
+      via: points.ipfeEndVia,
+      radius: ipfeHeight / 2,
+    }),
+  }
+  // Create points from them with easy names
+  for (const side in ids2) {
+    for (const id of ['start', 'cp1', 'cp2', 'end']) {
+      points[`${side}${utils.capitalize(id)}`] = points[ids2[side].points[id]].copy()
+    }
+  }
   // Rotate control points to smooth out curve
   angle = points.facingTop.angle(points.facingBottom) + 90
   points.ipfeStartCp1 = points.ipfeStartCp1.rotate(angle, points.ipfeStart)

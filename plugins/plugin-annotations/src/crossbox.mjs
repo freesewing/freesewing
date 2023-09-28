@@ -119,6 +119,8 @@ const crossbox = function (config, { points, Point, paths, Path, complete, store
    * Just make sure to keep points and paths apart
    */
   store.set(['parts', part.name, 'macros', 'title', 'ids', mc.id], ids)
+
+  return store.getMacroIds(mc.id, 'crossbox')
 }
 
 // Export macros

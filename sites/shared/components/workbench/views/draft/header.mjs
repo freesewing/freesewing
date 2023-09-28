@@ -74,7 +74,16 @@ const ZoomButtons = ({ t, zoomFunctions, zoomed }) => {
 
 const Spacer = () => <span className="opacity-50">|</span>
 
-export const DraftHeader = ({ update, settings, ui, control, account, design, setSettings }) => {
+export const DraftHeader = ({
+  update,
+  settings,
+  ui,
+  control,
+  account,
+  design,
+  setSettings,
+  saveAs = false,
+}) => {
   const { t, i18n } = useTranslation(ns)
   const { zoomFunctions, zoomed } = useContext(PanZoomContext)
   const backend = useBackend()
@@ -90,20 +99,17 @@ export const DraftHeader = ({ update, settings, ui, control, account, design, se
 
   const savePattern = async () => {
     setLoadingStatus([true, 'savingPattern'])
-    const name = `${capitalize(design)} / ${shortDate(i18n.language)}`
-    const patternData = { design, name, public: false, settings, data: {} }
-    const result = await backend.createPattern(patternData)
-    if (result.success) {
-      const id = result.data.pattern.id
+    const result = await backend.updatePattern(saveAs.pattern, { settings })
+    if (result.success)
       setLoadingStatus([
         true,
         <>
-          {t('status:patternSaved')} <small>[#{id}]</small>
+          {t('status:patternSaved')} <small>[#{saveAs.pattern}]</small>
         </>,
         true,
         true,
       ])
-    } else setLoadingStatus([true, 'backendError', true, false])
+    else setLoadingStatus([true, 'backendError', true, false])
   }
 
   const bookmarkPattern = async () => {
@@ -245,14 +251,16 @@ export const DraftHeader = ({ update, settings, ui, control, account, design, se
         </div>
         <Spacer />
         <div className="flex flex-row items-center gap-4">
-          <button
-            onClick={() => savePattern()}
-            className={`tooltip tooltip-primary tooltip-bottom flex flex-row items-center disabled:opacity-50`}
-            data-tip={t('workbench:savePattern')}
-            disabled={typeof account?.username === 'undefined'}
-          >
-            <UploadIcon />
-          </button>
+          {saveAs && saveAs.pattern ? (
+            <button
+              onClick={savePattern}
+              className={`tooltip tooltip-primary tooltip-bottom flex flex-row items-center disabled:opacity-50`}
+              data-tip={t('workbench:savePattern')}
+              disabled={typeof account?.username === 'undefined'}
+            >
+              <UploadIcon />
+            </button>
+          ) : null}
           <button
             onClick={() => bookmarkPattern()}
             className={`tooltip tooltip-primary tooltip-bottom flex flex-row items-center disabled:opacity-50`}

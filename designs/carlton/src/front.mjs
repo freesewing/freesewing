@@ -70,20 +70,29 @@ function draftCarltonFront({
   points.pocketBottomRight = points.pocketTopRight.shift(-90, pocketHeight)
   if (options.pocketRadius > 0) {
     let radius = pocketWidth * options.pocketRadius
-    macro('round', {
-      from: points.pocketTopLeft,
-      to: points.pocketBottomRight,
-      via: points.pocketBottomLeft,
-      prefix: 'pocketRoundLeft',
-      radius,
-    })
-    macro('round', {
-      from: points.pocketBottomLeft,
-      to: points.pocketTopRight,
-      via: points.pocketBottomRight,
-      prefix: 'pocketRoundRight',
-      radius,
-    })
+    // Macros will return the auto-generated IDs
+    const ids = {
+      pocketRoundLeft: macro('round', {
+        id: 'pocketRoundLeft',
+        from: points.pocketTopLeft,
+        to: points.pocketBottomRight,
+        via: points.pocketBottomLeft,
+        radius,
+      }),
+      pocketRoundRight: macro('round', {
+        id: 'pocketRoundRight',
+        from: points.pocketBottomLeft,
+        to: points.pocketTopRight,
+        via: points.pocketBottomRight,
+        radius,
+      }),
+    }
+    // Create points from them with easy names
+    for (const side in ids) {
+      for (const id of ['start', 'cp1', 'cp2', 'end']) {
+        points[`${side}${utils.capitalize(id)}`] = points[ids[side].points[id]].copy()
+      }
+    }
     store.set('pocketRadius', radius)
   }
   store.set('pocketWidth', pocketWidth)
@@ -105,20 +114,29 @@ function draftCarltonFront({
   points.pocketFlapBottomRight = points.pocketFlapBottomLeft.flipX(points.pocketFlapMid)
   if (options.pocketFlapRadius > 0) {
     let radius = pocketWidth * options.pocketFlapRadius
-    macro('round', {
-      from: points.pocketFlapTopLeft,
-      to: points.pocketFlapBottomRight,
-      via: points.pocketFlapBottomLeft,
-      prefix: 'pocketFlapRoundLeft',
-      radius,
-    })
-    macro('round', {
-      from: points.pocketFlapBottomLeft,
-      to: points.pocketFlapTopRight,
-      via: points.pocketFlapBottomRight,
-      prefix: 'pocketFlapRoundRight',
-      radius,
-    })
+    // Macros will return the auto-generated IDs
+    const ids = {
+      pocketFlapRoundLeft: macro('round', {
+        id: 'pocketFlapRoundLeft',
+        from: points.pocketFlapTopLeft,
+        to: points.pocketFlapBottomRight,
+        via: points.pocketFlapBottomLeft,
+        radius,
+      }),
+      pocketFlapRoundRight: macro('round', {
+        id: 'pocketFlapRoundRight',
+        from: points.pocketFlapBottomLeft,
+        to: points.pocketFlapTopRight,
+        via: points.pocketFlapBottomRight,
+        radius,
+      }),
+    }
+    // Create points from them with easy names
+    for (const side in ids) {
+      for (const id of ['start', 'cp1', 'cp2', 'end']) {
+        points[`${side}${utils.capitalize(id)}`] = points[ids[side].points[id]].copy()
+      }
+    }
     store.set('pocketFlapRadius', radius)
   }
 

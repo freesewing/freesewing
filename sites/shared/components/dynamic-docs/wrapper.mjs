@@ -7,7 +7,7 @@ export const MdxWrapper = ({ title = false, path, language, children, noFooter =
   return (
     <>
       {title ? <h1>{title}</h1> : null}
-      <div className="text-primary mdx text-base-content text-base">{children}</div>
+      <div className="mdx text-base-content">{children}</div>
       {noFooter ? null : (
         <div
           className={`flex flex-row gap-1 text-sm opacity-70 justify-end items-center

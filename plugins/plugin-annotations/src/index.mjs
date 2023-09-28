@@ -21,6 +21,7 @@ import { pleatMacros, pleatDefs } from './pleat.mjs'
 import { sewtogetherMacros, sewtogetherDefs } from './sewtogether.mjs'
 // Only stores
 import { flagStores } from './flag.mjs'
+import { utilsStores } from './utils.mjs'
 
 export const plugin = {
   name,
@@ -61,7 +62,7 @@ export const plugin = {
     ...sewtogetherMacros,
     ...titleMacros,
   },
-  store: [...cutlistStores, ...flagStores],
+  store: [...cutlistStores, ...flagStores, ...utilsStores],
 }
 
 export const annotationsPlugin = plugin

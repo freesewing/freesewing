@@ -19,16 +19,10 @@ async function loadDesign(design) {
 
 export const prebuildDesigns = async (store) => {
   const promises = []
-  const designs = []
-
-  // Compile list of designs
-  for (const design in allDesigns) {
-    if (allDesigns[design]?.tags) designs.push(design)
-  }
 
   const measurements = {}
   const options = {}
-  for (const design of designs) {
+  for (const design in allDesigns) {
     const bundle = await loadDesign(design)
     const Instance = new bundle[capitalize(design)]()
     const config = Instance.getConfig()
@@ -38,7 +32,7 @@ export const prebuildDesigns = async (store) => {
 
   // Update the store
   store.designs = {
-    designs,
+    designs: Object.keys(allDesigns),
     options,
     measurements,
   }
@@ -52,7 +46,7 @@ export const prebuildDesigns = async (store) => {
   promises.push(
     fs.writeFile(
       path.resolve(...dir, 'designs.mjs'),
-      `${header}export const designs = ${JSON.stringify(designs)}${nl}`
+      `${header}export const designs = ${JSON.stringify(Object.keys(allDesigns))}${nl}`
     ),
     fs.writeFile(
       path.resolve(...dir, 'design-measurements.mjs'),

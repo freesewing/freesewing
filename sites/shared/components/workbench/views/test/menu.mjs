@@ -4,10 +4,9 @@ import { ns as measieNs } from './measurements.mjs'
 import { Accordion } from 'shared/components/accordion.mjs'
 import { useTranslation } from 'next-i18next'
 import { nsMerge } from 'shared/utils.mjs'
-import { OptionsIcon, MeasieIcon, CommunityIcon } from 'shared/components/icons.mjs'
+import { OptionsIcon, MeasieIcon } from 'shared/components/icons.mjs'
 import { ListInput } from 'shared/components/inputs.mjs'
 import { optionsMenuStructure } from 'shared/utils.mjs'
-import { V3Wip } from 'shared/components/v3-wip.mjs'
 
 export const ns = nsMerge('workbench', optionsNs, measieNs)
 
@@ -78,7 +77,7 @@ export const TestMenu = ({
               <span>{t('workbench:testMeasurements')}</span>
               <MeasieIcon className="w-8 h-8" />
             </h5>
-            <p>{t('workbench:testOptionsDesc')}</p>
+            <p className="text-left">{t('workbench:testMeasurementsDesc')}</p>
           </Fragment>,
           <ListInput
             key="b"
@@ -93,16 +92,17 @@ export const TestMenu = ({
             current={settings?.sample?.measurement}
           />,
         ],
-        [
-          <Fragment key="a">
-            <h5 className="flex flex-row gap-2 items-center justify-between w-full">
-              <span>{t('workbench:testSets')}</span>
-              <CommunityIcon className="w-8 h-8" />
-            </h5>
-            <p>{t('workbench:testSetsDesc')}</p>
-          </Fragment>,
-          <V3Wip key="b" />,
-        ],
+        // FIXME: Implement this once v3 is ready
+        //[
+        //  <Fragment key="a">
+        //    <h5 className="flex flex-row gap-2 items-center justify-between w-full">
+        //      <span>{t('workbench:testSets')}</span>
+        //      <CommunityIcon className="w-8 h-8" />
+        //    </h5>
+        //    <p>{t('workbench:testSetsDesc')}</p>
+        //  </Fragment>,
+        //  <V3Wip key="b" />,
+        //],
       ]}
     />
   )

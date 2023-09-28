@@ -18,6 +18,7 @@ export const DraftView = ({
   DynamicDocs,
   setView,
   view,
+  saveAs,
 }) => {
   let output = null
   let renderProps = false
@@ -48,6 +49,7 @@ export const DraftView = ({
         design,
         pattern: output,
         setSettings,
+        saveAs,
         Header: DraftHeader,
         menu: (
           <DraftMenu

@@ -99,7 +99,7 @@ export default DocsPage
 export async function getStaticProps({ params }) {
   return {
     props: {
-      ...(await serverSideTranslations('en', ['docs', ...ns])),
+      ...(await serverSideTranslations('en', ['docs', 'tutorial', ...ns])),
       slug: params.slug.join('/'),
       page: {
         locale: 'en',
