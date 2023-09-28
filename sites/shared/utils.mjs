@@ -5,6 +5,7 @@ import set from 'lodash.set'
 import orderBy from 'lodash.orderby'
 import unset from 'lodash.unset'
 import { cloudflareConfig } from './config/cloudflare.mjs'
+import { mergeOptions } from '@freesewing/core'
 
 const slugifyConfig = {
   replacement: '-', // replace spaces with replacement character, defaults to `-`
@@ -201,7 +202,8 @@ export const optionsMenuStructure = (options, settings) => {
       const oType = optionType(option)
       option.dflt = option.dflt || option[oType]
       if (oType === 'pct') option.dflt /= 100
-      if (typeof option.menu === 'function') option.menu = option.menu(settings)
+      if (typeof option.menu === 'function')
+        option.menu = option.menu(settings, mergeOptions(settings, options))
       if (option.menu) {
         // Handle nested groups that don't have any direct children
         if (option.menu.includes('.')) {

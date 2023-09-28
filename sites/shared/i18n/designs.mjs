@@ -40,8 +40,7 @@ import { i18n as Teagan } from '@freesewing/teagan'
 import { i18n as Tiberius } from '@freesewing/tiberius'
 import { i18n as Titan } from '@freesewing/titan'
 import { i18n as Trayvon } from '@freesewing/trayvon'
-import { i18n as Unice } from '@freesewing/unice'
-import { i18n as Ursula } from '@freesewing/ursula'
+import { i18n as Uma } from '@freesewing/uma'
 import { i18n as Wahid } from '@freesewing/wahid'
 import { i18n as Walburga } from '@freesewing/walburga'
 import { i18n as Waralee } from '@freesewing/waralee'
@@ -90,8 +89,7 @@ export const designs = {
   tiberius: Tiberius,
   titan: Titan,
   trayvon: Trayvon,
-  unice: Unice,
-  ursula: Ursula,
+  uma: Uma,
   wahid: Wahid,
   walburga: Walburga,
   waralee: Waralee,

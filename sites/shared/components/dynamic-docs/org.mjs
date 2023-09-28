@@ -21,7 +21,7 @@ export const loaders = {
  * This will return a language-specific component
  */
 
-function DynamicDocs({ path, lang }) {
+function DynamicDocs({ path, lang, noFooter = false, noTitle = false }) {
   const [frontmatter, setFrontmatter] = useState({})
   const mdx = dynamic(
     () =>
@@ -34,7 +34,12 @@ function DynamicDocs({ path, lang }) {
   const MDX = mdx ? mdx : <Spinner className="w16 h-16 animate-spin text-primary" />
 
   return (
-    <MdxWrapper {...frontmatter} path={path} language={lang}>
+    <MdxWrapper
+      path={path}
+      language={lang}
+      noFooter={noFooter}
+      title={noTitle ? false : frontmatter.title}
+    >
       <MDX components={orgComponents} />
     </MdxWrapper>
   )
@@ -43,7 +48,12 @@ function DynamicDocs({ path, lang }) {
 /*
  * Return language-specific component
  */
-export const DynamicOrgDocs = ({ path = false, language = 'en' }) => {
+export const DynamicOrgDocs = ({
+  path = false,
+  language = 'en',
+  noTitle = false,
+  noFooter = false,
+}) => {
   if (!path) return null
-  return <DynamicDocs path={path} lang={language} />
+  return <DynamicDocs lang={language} {...{ path, noTitle, noFooter }} />
 }

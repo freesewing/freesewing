@@ -192,7 +192,7 @@ export const sleeve = {
     sleeveBend: { deg: 10, min: 0, max: 20, menu: 'fit' },
     draftForHighBust: {
       bool: false,
-      menu: ({ measurements }) => (measurements.highBust ? 'fit' : false),
+      menu: ({ measurements }) => (measurements?.highBust ? 'fit' : false),
     },
     // Style
     // s3 is short for Shoulder Seam Shift

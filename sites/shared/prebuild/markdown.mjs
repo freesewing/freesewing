@@ -174,7 +174,7 @@ const loadBlog = async () => {
 }
 
 /*
- * Loads all showcase posts, titles and order
+ * Loads all showcase posts, titles, designs and order
  */
 const loadShowcase = async () => {
   const titles = await loadFolderFrontmatter('title', 'org', 'showcase')
@@ -207,7 +207,20 @@ const loadShowcase = async () => {
     }
   }
 
-  return { posts, meta }
+  /*
+   * Create list of showcase slugs per design
+   */
+  const designShowcases = {}
+  // Designs is the same for all languages, so only grab EN files
+  const designs = await loadFolderFrontmatter('designs', 'org', 'showcase', false, 'en')
+  for (const [slug, list] of Object.entries(designs.en)) {
+    for (const design of JSON.parse(list)) {
+      if (typeof designShowcases[design] === 'undefined') designShowcases[design] = []
+      designShowcases[design].push(slug.split('/').pop())
+    }
+  }
+
+  return { posts, meta, designShowcases }
 }
 
 /*
@@ -274,4 +287,5 @@ export const prebuildPosts = async (store) => {
   await writeFiles('newsletter', 'org', store.posts.newsletter)
   await writeFile('blog-meta', 'meta', 'org', store.posts.blog.meta)
   await writeFile('showcase-meta', 'meta', 'org', store.posts.showcase.meta)
+  await writeFile('design-examples', 'examples', 'org', store.posts.showcase.designShowcases)
 }

@@ -184,7 +184,7 @@
     "design": "Wouter Van Wageningen",
     "difficulty": 4,
     "tags": ["accessories", "toys"],
-    "techniques": []
+    "techniques": ["curvedSeam", "dart"]
   },
   "holmes": {
     "description": "A FreeSewing pattern for a Sherlock Holmes hat",
@@ -267,7 +267,7 @@
   "naomiwu": {
     "description": "A FreeSewing pattern for Naomi Wu's signature cargo skirt",
     "code": "Joost De Cock",
-    "design": "Joost De Cock & x",
+    "design": ["Naomi Wu", "Joost De Cock"],
     "difficulty": 3,
     "tags": ["bottoms", "skirts"],
     "techniques": ["button", "hem", "pocket", "lining"]
@@ -278,7 +278,7 @@
     "design": "Wouter Van Wageningen",
     "difficulty": 3,
     "tags": ["blocks", "tops"],
-    "techniques": []
+    "techniques": ["curvedSeam", "precision", "princessSeam"]
   },
   "octoplushy": {
     "description": "A FreeSewing pattern for an octopus plushy toy",
@@ -286,7 +286,7 @@
     "design": "Wouter Van Wageningen",
     "difficulty": 4,
     "tags": ["accessories", "toys"],
-    "techniques": []
+    "techniques": ["curvedSeam", "precision"]
   },
   "paco": {
     "description": "A FreeSewing pattern for summer pants",
@@ -302,7 +302,7 @@
     "design": "Wouter Van Wageningen",
     "difficulty": 3,
     "tags": ["bottoms", "skirts"],
-    "techniques": []
+    "techniques": ["hem", "curvedSeam", "precision", "zipper"]
   },
   "plugintest": {
     "description": "A FreeSewing pattern to test (y)our plugins",
@@ -396,21 +396,13 @@
     "description": "A FreeSewing pattern for a baby bib that's used in our tutorial",
     "code": "Joost De Cock"
   },
-  "unice": {
+  "uma": {
     "description": "A FreeSewing pattern for a basic, highly-customizable underwear pattern",
-    "code": ["Anna Puk", "Natalia Sayang"],
-    "design": ["Anna Puk", "Natalia Sayang"],
+    "code": "Joost De Cock",
+    "design": "Joost De Cock",
     "difficulty": 1,
     "tags": ["bottoms", "underwear"],
-    "techniques": []
-  },
-  "ursula": {
-    "description": "A FreeSewing pattern for a basic, highly-customizable underwear pattern",
-    "code": "Natalia Sayang",
-    "design": "Natalia Sayang",
-    "difficulty": 1,
-    "tags": ["bottoms", "underwear"],
-    "techniques": []
+    "techniques": ["elastic", "curvedSeam"]
   },
   "wahid": {
     "description": "A FreeSewing pattern for a classic fitted waistcoat",
