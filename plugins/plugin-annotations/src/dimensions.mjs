@@ -151,6 +151,8 @@ const addDimension = (config, props, type) => {
    * Store all IDs in the store so we can remove this macro with rm variants
    */
   props.store.set(['parts', props.part.name, 'macros', type, 'ids', mc.id, 'paths'], ids)
+
+  return props.store.getMacroIds(mc.id, type)
 }
 
 /*

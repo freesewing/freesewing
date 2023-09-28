@@ -58,6 +58,8 @@ const banner = function (config, { part, paths, store, complete }) {
    * Store all IDs in the store so we can remove this macro with rmbanner
    */
   store.set(['parts', part.name, 'macros', 'banner', 'ids', mc.id, 'paths'], ids)
+
+  return store.getMacroIds(config.id, 'banner')
 }
 
 // Export macros

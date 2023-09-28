@@ -230,6 +230,8 @@ const addTitleMacro = function (
    * Store all IDs in the store so we can remove this macro with rmtitle
    */
   store.set(['parts', part.name, 'macros', 'title', 'ids', mc.id, 'points'], ids)
+
+  return store.getMacroIds(mc.id, 'title')
 }
 
 // Export macros

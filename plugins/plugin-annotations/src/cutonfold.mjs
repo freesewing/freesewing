@@ -107,6 +107,8 @@ const cutonfold = function (config, { paths, Path, complete, store, scale, log, 
    * Store all IDs in the store so we can remove this macro with rmcutonfold
    */
   store.set(['parts', part.name, 'macros', 'cutonfold', 'ids', mc.id, 'paths'], ids)
+
+  return store.getMacroIds(mc.id, 'cutonfold')
 }
 
 // Export macros

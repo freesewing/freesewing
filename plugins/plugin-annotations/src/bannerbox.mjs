@@ -100,6 +100,8 @@ const bannerbox = function (config, { Point, paths, Path, part, macro, log, stor
    * Store all IDs in the store so we can remove this macro with rmtitle
    */
   store.set(['parts', part.name, 'macros', 'bannerbox', 'ids', mc.id, 'paths'], ids)
+
+  return store.getMacroIds(mc.id, 'bannerbox')
 }
 
 export const bannerboxMacros = { bannerbox, rmbannerbox }
