@@ -1,7 +1,9 @@
 ---
-title: "Testing our pattern"
-order: 250
+title: "Testing a design"
+order: 1250
 ---
+
+<Fixme> Update this for v3 </Fixme>
 
 With the basic outline of our pattern ready, now would be a good time
 to test it to see how well it adapts to different measurements,
@@ -17,7 +19,7 @@ environment
 ###### No more grading
 
 FreeSewing patterns are _made-to-measure_, which means that we don't need to
-grade our pattern to provide a range of sizes. We should sample our pattern
+grade our pattern to provide a range of sizes. We should test our pattern
 for different measurements and options to see how well it adapts.
 
 </Tip>
@@ -29,7 +31,7 @@ We have a number of ways to test our pattern:
 
 - Test design options
 - Test measurements
-- Test models
+- Test measurements sets
 
 The [API docs on sampling](/reference/api/pattern/sample) have all the details
 on how this works, but for now we'll just look at the end result of each of
@@ -106,11 +108,11 @@ For our bib, we only use one measurement, so it influences the entire pattern.
 
 <Fixme compact>Add screenshot</Fixme>
 
-## Testing models
+## Testing measurments sets
 
 Whereas testing a measurement will only vary one individual measurement,
-testing models will draft our pattern for different sets of measurements, which
-we refer to as _models_.
+testing measurements sets will draft our pattern for different sets of
+measurements.
 
 On the surface, the result below is the same as our measurement test. But that
 is because our bib only uses one measurement. So testing that one measurement
