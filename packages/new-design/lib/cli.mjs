@@ -11,6 +11,6 @@ export const cli = async () => {
   // Get user input
   const choices = await getChoices()
 
-  // Create environment from template
+  // Create environment
   createEnvironment(choices)
 }

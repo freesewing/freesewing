@@ -2,16 +2,25 @@ import rdir from 'recursive-readdir'
 import path from 'path'
 
 const ignore = [
-  'package.json',
   'node_modules',
   '.eslint',
   '.gitignore',
   '.md',
-  'lab/components/header.js',
-  'lab/components/help-us.js',
-  'lab/components/search.js',
-  'lab/components/footer.js',
+  '.next',
+  'prebuild.mjs',
+  'prebuild',
+  'public/locales',
   'shared/config/measurements.js',
+  'sde/public/android-chrome-192x192.png',
+  'sde/public/android-chrome-384x384.png',
+  'sde/public/apple-touch-icon.png',
+  'sde/public/browserconfig.xml',
+  'sde/public/favicon-16x16.png',
+  'sde/public/favicon-32x32.png',
+  'sde/public/favicon.ico',
+  'sde/public/mstile-150x150.png',
+  'sde/public/safari-pinned-tab.svg',
+  'sde/public/site.webmanifest',
 ]
 
 const getFiles = async (dir) => {
@@ -28,9 +37,9 @@ const getFiles = async (dir) => {
 
 const doIt = async () => {
   let files = []
-  const shared = await getFiles('../../sites/shared')
-  const lab = await getFiles('../../sites/lab/components')
-  console.log(JSON.stringify([...shared, ...lab], null, 2))
+  const sde = await getFiles('../../sites/sde')
+  const shared = await getFiles('../../sites/shared/config')
+  console.log(JSON.stringify([...shared, ...sde], null, 2))
 }
 
 doIt()
