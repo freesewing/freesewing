@@ -7,7 +7,7 @@ const ignore = [
   'node_modules',
   '.eslint',
   '.gitignore',
-  '.md',
+  //'.md',
   '.next',
   '.env.local',
   'prebuild.mjs',

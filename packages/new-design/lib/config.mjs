@@ -72,6 +72,20 @@ yarn-error.log*
       },
     ],
     sites: [
+      // Mock MDX components
+      {
+        from: 'sde/mock/highlight.mjs',
+        to: 'shared/components/mdx/highlight.mjs',
+      },
+      {
+        from: 'sde/mock/youtube.mjs',
+        to: 'shared/components/mdx/youtube.mjs',
+      },
+      {
+        from: 'sde/mock/read-more.mjs',
+        to: 'shared/components/mdx/read-more.mjs',
+      },
+      // .env file
       {
         from: 'sde/env.local',
         to: 'sde/.env.local',

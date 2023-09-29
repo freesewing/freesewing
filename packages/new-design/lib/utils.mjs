@@ -263,11 +263,12 @@ export const createEnvironment = async (choices) => {
 
   // Download files from GitHub
   try {
+    const count = [...config.fetch.config, ...config.fetch.sites].length
     await oraPromise(downloadFiles(config), {
       text:
-        chalk.white.bold('🟧⬜⬜  Downloading components from GitHub') +
-        chalk.white.dim('  |  Almost there'),
-      successText: chalk.white.bold('🟩⬜⬜  Downloaded components from GitHub'),
+        chalk.white.bold(`🟧⬜⬜  Downloading ${count} (small) files from GitHub`) +
+        chalk.white.dim('  |  Give it a moment'),
+      successText: chalk.white.bold(`🟩⬜⬜  Downloaded ${count}/${count} files from GitHub`),
       failText: chalk.white.bold(
         '🟥⬜⬜  Failed to download components from GitHub  |  The development environment will not function'
       ),

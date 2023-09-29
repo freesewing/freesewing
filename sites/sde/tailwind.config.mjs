@@ -1,5 +1,5 @@
 // Handle themes
-import { themes } from './themes/index.mjs'
+import { themes } from './shared/themes/index.mjs'
 
 export default {
   content: [
@@ -10,8 +10,8 @@ export default {
     './components/*.mjs',
     './components/**/*.mjs',
     './page-templates/*.mjs',
-    '../shared/components/**/*.mjs',
-    '../shared/config/tailwind-force.html',
+    './shared/components/**/*.mjs',
+    './shared/config/tailwind-force.html',
   ],
   plugins: [require('daisyui'), require('tailwindcss/nesting')],
   daisyui: {
