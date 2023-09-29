@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { ModalContextProvider } from 'shared/context/modal-context.mjs'
 import { LoadingStatusContextProvider } from 'shared/context/loading-status-context.mjs'
 import { NavigationContextProvider } from 'shared/context/navigation-context.mjs'

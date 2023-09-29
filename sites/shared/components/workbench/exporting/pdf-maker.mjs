@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { Pdf, mmToPoints } from './pdf.mjs'
 import SVGtoPDF from 'svg-to-pdfkit'
 import { logoPath } from 'shared/components/logos/freesewing.mjs'

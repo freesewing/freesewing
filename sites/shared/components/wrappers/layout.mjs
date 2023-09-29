@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { nsMerge } from 'shared/utils.mjs'
 import Head from 'next/head'
 import { Header, ns as headerNs } from 'site/components/header/index.mjs'

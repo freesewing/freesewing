@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import React, { useState, useContext, useEffect, useCallback } from 'react'
 
 /**

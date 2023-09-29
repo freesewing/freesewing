@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import tlds from 'tlds/index.json' assert { type: 'json' }
 import _slugify from 'slugify'
 import get from 'lodash.get'

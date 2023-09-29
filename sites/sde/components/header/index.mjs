@@ -52,7 +52,7 @@ const NavIcons = ({ setModal }) => {
       <NavButton href="/docs" label={t('header:docs')} color={spectrum[3]}>
         <DocsIcon className={iconSize} />
       </NavButton>
-      <NavButton href="/ocode" label={t('sde:code')} color={spectrum[4]}>
+      <NavButton href="/code" label={t('sde:code')} color={spectrum[4]}>
         <GitHubIcon className={iconSize} />
       </NavButton>
       <NavSpacer />

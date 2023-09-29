@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { ResetIcon, EditIcon } from 'shared/components/icons.mjs'
 import { useState, useMemo } from 'react'
 import { SubAccordion } from 'shared/components/accordion.mjs'

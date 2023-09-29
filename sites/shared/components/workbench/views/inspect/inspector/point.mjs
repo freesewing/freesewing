@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Components
 import { Point as ShowPoint, utils } from 'pkgs/react-components/src/index.mjs'
 import { Attributes, pointCoords, KeyValTable } from './shared.mjs'

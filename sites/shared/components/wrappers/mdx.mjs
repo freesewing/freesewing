@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Components that are available in MDX content
 import { components as baseComponents } from 'shared/components/mdx/index.mjs'
 

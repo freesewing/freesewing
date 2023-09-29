@@ -1,5 +1,7 @@
 import rdir from 'recursive-readdir'
 import path from 'path'
+import fs from 'node:fs'
+import { exec } from 'node:child_process'
 
 const ignore = [
   'node_modules',
@@ -8,9 +10,9 @@ const ignore = [
   '.md',
   '.next',
   'prebuild.mjs',
-  'prebuild',
-  'public/locales',
-  'shared/config/measurements.js',
+  //'prebuild',
+  //'public/locales',
+  //'shared/config/measurements.js',
   'sde/public/android-chrome-192x192.png',
   'sde/public/android-chrome-384x384.png',
   'sde/public/apple-touch-icon.png',
@@ -35,11 +37,67 @@ const getFiles = async (dir) => {
     .map((file) => file.split('/sites/').pop())
 }
 
+const searchFiles = async (dirs) => {
+  /*
+   * Figure out what directory to spawn the child process in
+   */
+  const cwd = await path.resolve(process.cwd())
+
+  /*
+   * Holds the matches
+   */
+  const matches = []
+
+  /*
+   * When going through a small number of files in a flat directory (eg. blog posts) a
+   * recursive grep through all files is faster.
+   * But the biggest task is combing through all the org documentation and for this
+   * it's much faster to first run find to limit the number of files to open
+   */
+  for (const dir of dirs) {
+    const cmd = `grep "__SDEFILE__" -Rislm 1 ${path.resolve(cwd, dir)}`
+    const grep = exec(cmd, { cwd, maxBuffer: 2048 * 1024 }, (error, stdout, stderr) => {
+      if (error) {
+        console.error(`exec error: ${error} - ${stderr}`)
+        return
+      }
+
+      return stdout
+    })
+
+    /*
+     * Stdout is buffered, so we need to gather all of it
+     */
+    let stdout = ''
+    for await (const data of grep.stdout) stdout += data
+
+    /*
+     * Add all all matches to the array
+     */
+    matches.push(
+      ...stdout
+        .split('\n')
+        .filter((entry) => entry.length > 2)
+        .map((file) => file.split('/sites/').pop())
+    )
+  }
+
+  return matches
+}
+
 const doIt = async () => {
   let files = []
   const sde = await getFiles('../../sites/sde')
-  const shared = await getFiles('../../sites/shared/config')
-  console.log(JSON.stringify([...shared, ...sde], null, 2))
+  const shared = await searchFiles([
+    '../../sites/shared/components',
+    '../../sites/shared/config',
+    '../../sites/shared/context',
+    '../../sites/shared/hooks',
+    '../../sites/shared/plugins',
+    '../../sites/shared/styles',
+    '../../sites/shared/themes',
+  ])
+  console.log(JSON.stringify([...sde, ...shared], null, 2))
 }
 
 doIt()

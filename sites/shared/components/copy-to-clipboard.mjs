@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import ReactDOMServer from 'react-dom/server'
 import { useState } from 'react'
 import { CopyIcon, OkIcon } from 'shared/components/icons.mjs'

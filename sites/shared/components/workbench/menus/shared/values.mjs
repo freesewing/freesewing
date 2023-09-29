@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { formatMm } from 'shared/utils.mjs'
 import { BoolYesIcon, BoolNoIcon } from 'shared/components/icons.mjs'
 

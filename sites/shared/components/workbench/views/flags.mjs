@@ -1,5 +1,5 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
-import { flagTypes } from 'plugins/plugin-annotations/src/flag.mjs'
 import mustache from 'mustache'
 import { nsMerge } from 'shared/utils.mjs'
 // Hooks
@@ -30,6 +30,9 @@ const flagIcons = {
   expand: ExpandIcon,
   options: OptionsIcon,
 }
+
+// This is also the order in which they will be displayed
+export const flagTypes = ['error', 'warn', 'note', 'info', 'tip', 'fixme']
 
 export const Flag = ({ data, t, handleUpdate }) => {
   const BtnIcon = data.suggest?.icon ? flagIcons[data.suggest.icon] : false

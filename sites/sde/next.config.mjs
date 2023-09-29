@@ -1,6 +1,7 @@
 import path from 'path'
+import i18nConfig from './next-i18next.config.js'
 // Remark plugins
-import remarkFrontmatter from 'remark-frontmatter'
+//import remarkFrontmatter from 'remark-frontmatter'
 import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 import remarkGfm from 'remark-gfm'
 import smartypants from 'remark-smartypants'
@@ -13,6 +14,7 @@ const config = {
     externalDir: true,
   },
   pageExtensions: ['mjs'],
+  i18n: i18nConfig.i18n,
   webpack: (config, options) => {
     // Fixes npm packages that depend on node modules
     if (!options.isServer) {
@@ -31,7 +33,12 @@ const config = {
           options: {
             providerImportSource: '@mdx-js/react',
             format: 'mdx',
-            remarkPlugins: [remarkFrontmatter, remarkMdxFrontmatter, remarkGfm, smartypants],
+            remarkPlugins: [
+              //remarkFrontmatter,
+              remarkMdxFrontmatter,
+              remarkGfm,
+              smartypants,
+            ],
           },
         },
       ],
@@ -48,6 +55,7 @@ const config = {
 
     // Aliases
     config.resolve.alias.shared = path.resolve('./shared/')
+    config.resolve.alias.config = path.resolve('./shared/config/')
     config.resolve.alias.site = path.resolve(`./`)
 
     return config

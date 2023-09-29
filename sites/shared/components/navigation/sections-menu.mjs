@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useContext } from 'react'
 import { useTheme } from 'shared/hooks/use-theme.mjs'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'

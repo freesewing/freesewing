@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useCallback, useMemo } from 'react'
 // Components
 import { OptionsIcon } from 'shared/components/icons.mjs'

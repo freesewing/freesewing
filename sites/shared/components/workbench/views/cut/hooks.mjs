@@ -1,7 +1,7 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { measurementAsMm, formatFraction128 } from 'shared/utils.mjs'
 import { materialPlugin } from 'shared/plugins/plugin-layout-part.mjs'
 import { cutLayoutPlugin } from 'shared/plugins/plugin-cut-layout.mjs'
-import { pluginAnnotations } from '@freesewing/plugin-annotations'
 import { round } from 'shared/utils'
 import get from 'lodash.get'
 
@@ -62,8 +62,6 @@ export const useMaterialDraft = ({ settings, ui, Design, materialSettings }) => 
     pattern.use(materialPlugin(layoutSettings))
     // add the cutLayout plugin
     pattern.use(cutLayoutPlugin(materialSettings.activeMaterial, materialSettings.grainDirection))
-    // also, pluginAnnotations and pluginFlip are needed
-    pattern.use(pluginAnnotations)
 
     // draft the pattern
     pattern.draft()

@@ -2,8 +2,10 @@
 module.exports = {
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'de', 'es', 'fr', 'nl'],
-    defaultNS: 'common',
+    locales: ['en', 'de', 'es', 'fr', 'nl', 'uk'],
+  },
+  react: {
+    nsMode: 'fallback',
   },
   interpolation: {
     prefix: '{',
