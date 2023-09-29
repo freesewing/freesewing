@@ -12,8 +12,8 @@ prebuildRunner({
     // Always prebuild
     i18n: true,
     navigation: true,
+    designs: true,
     // Never prebuild
-    designs: false,
     favicon: false,
     ogImages: false,
     docs: false,

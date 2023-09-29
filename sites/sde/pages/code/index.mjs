@@ -13,7 +13,7 @@ import nl, { frontmatter as nlFrontmatter } from './nl.mdx'
 import fr, { frontmatter as frFrontmatter } from './fr.mdx'
 import uk, { frontmatter as ukFrontmatter } from './uk.mdx'
 
-const ns = [pageNs, 'sde']
+const ns = [pageNs, 'sde', 'account']
 
 const mdx = { en, de, es, nl, fr, uk }
 const frontmatter = {

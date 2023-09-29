@@ -57,6 +57,10 @@ yarn-error.log*
 
 `,
   fetch: {
+    // account:
+    // sets
+    // shared
+    // control
     config: [
       {
         from: 'measurements.mjs',
@@ -73,7 +77,15 @@ yarn-error.log*
     ],
     sites: [
       // Mock MDX components
-      ...['highlight', 'youtube', 'read-more', 'tabbed-example'].map((file) => ({
+      ...[
+        'highlight',
+        'youtube',
+        'read-more',
+        'tabbed-example',
+        'http',
+        'legend',
+        'docs-helpers',
+      ].map((file) => ({
         from: `sde/mock/${file}.mjs`,
         to: `shared/components/mdx/${file}.mjs`,
       })),

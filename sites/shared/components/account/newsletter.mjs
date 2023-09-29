@@ -1,4 +1,3 @@
-//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Context
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks

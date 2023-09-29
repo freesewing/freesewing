@@ -1,4 +1,3 @@
-//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useState, useEffect } from 'react'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'

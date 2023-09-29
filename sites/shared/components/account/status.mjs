@@ -1,4 +1,3 @@
-//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
 
 export const ns = ['status']

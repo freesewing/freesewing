@@ -44,7 +44,7 @@
  */
 import { useRef, useState, useEffect, useCallback } from 'react'
 import { generateStackTransform, getTransformedBounds } from '@freesewing/core'
-import { getProps } from 'pkgs/react-components/src/index.mjs'
+import { getProps } from 'pkgs/react-components/src/pattern/utils.mjs'
 import { angle } from '../utils.mjs'
 import { drag } from 'd3-drag'
 import { select } from 'd3-selection'

@@ -10,7 +10,7 @@ import {
   DesignIcon,
   DocsIcon,
   MenuIcon,
-  UserIcon,
+  LockIcon,
   ThemeIcon,
   I18nIcon,
   MeasieIcon,
@@ -49,33 +49,33 @@ const NavIcons = ({ setModal }) => {
       >
         <RocketIcon className={iconSize} />
       </NavButton>
-      <NavButton href="/docs" label={t('header:docs')} color={spectrum[3]}>
+      <NavButton href="/docs" label={t('sde:docs')} color={spectrum[3]}>
         <DocsIcon className={iconSize} />
       </NavButton>
       <NavButton href="/code" label={t('sde:code')} color={spectrum[4]}>
         <GitHubIcon className={iconSize} />
       </NavButton>
-      <NavSpacer />
-      <NavButton href="/account" label={t('header:account')} color={spectrum[5]}>
-        <UserIcon className={iconSize} />
-      </NavButton>
-      <NavButton href="/support" label={t('sde:support')} color={spectrum[6]}>
+      <NavButton href="/support" label={t('sde:support')} color={spectrum[5]}>
         <HelpIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
       <NavButton
         onClick={() => setModal(<ModalThemePicker />)}
         label={t('header:theme')}
-        color={spectrum[7]}
+        color={spectrum[6]}
       >
         <ThemeIcon className={iconSize} />
       </NavButton>
       <NavButton
         onClick={() => setModal(<ModalLocalePicker />)}
         label={t('header:language')}
-        color={spectrum[8]}
+        color={spectrum[7]}
       >
         <I18nIcon className={iconSize} />
+      </NavButton>
+      <NavSpacer />
+      <NavButton href="/signin" label={t('account:signin')} color={spectrum[8]}>
+        <LockIcon className={iconSize} />
       </NavButton>
     </>
   )
