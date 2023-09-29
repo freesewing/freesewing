@@ -19,7 +19,6 @@
     "dev": "next dev -p 8000",
     "develop": "next dev -p 8000",
     "i18n": "SITE=lab node --conditions=internal ../shared/prebuild/i18n-only.mjs",
-    "e2e": "yarn playwright test",
     "lint": "next lint",
     "prebuild": "node --conditions=internal --experimental-json-modules ./prebuild.mjs",
     "start": "yarn prebuild && yarn dev",
