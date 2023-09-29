@@ -95,6 +95,7 @@ const buildFileList = async () => {
     '../../sites/shared/plugins',
     '../../sites/shared/styles',
     '../../sites/shared/themes',
+    '../../sites/shared/prebuild/data',
   ])
 
   return [...sde, ...shared]
@@ -119,6 +120,6 @@ if (!process.env.LINTER) {
 
   fs.writeFileSync(
     path.resolve('lib', 'download-list.mjs'),
-    `export const downloads = ${JSON.stringify(files, null, 2)}`
+    `export const downloads = ${JSON.stringify(files, null, 2).replaceAll('"', "'")}`
   )
 }

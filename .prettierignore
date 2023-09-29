@@ -15,6 +15,7 @@
 *.html
 *.env
 *.sh
+*.json
 Dockerfile
 LICENSE
 yarn.lock
