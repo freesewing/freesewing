@@ -86,5 +86,3 @@ yarn-error.log*
     ],
   },
 }
-
-console.log(config.fetch)
