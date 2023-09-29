@@ -1,5 +1,5 @@
 ---
-title: "Albert schort"
+title: "Albert apron: Designer Notes"
 ---
 
 import { DesignInfo } from 'shared/components/designs/info.mjs'

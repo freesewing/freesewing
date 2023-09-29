@@ -2,12 +2,18 @@
 title: "Calzoncillos Ursula: Instrucciones de corte"
 ---
 
-La Ursula consiste en un frente, una espalda y una chispa revuelta.
+Uma typically consists of a front, a back, and a lined gusset. In that constallation, this is the cut list:
 
 - **Tela principal**
   - Cortar **1 frente**
-  - Cortar **1 atrás**
+  - La Ursula consiste en un frente, una espalda y una chispa revuelta.
   - Corta **2 gusset**
+
+However, if you enable the **Bulge** option, the front and gusset will become 1 part. In this case, the cutlist looks like this:
+
+- **Tela principal**
+  - Cortar **1 frente**
+  - La Ursula consiste en un frente, una espalda y una chispa revuelta.
 
 <Note>
 
