@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-bust",
-  "version": "3.0.0-alpha.10",
+  "version": "3.0.0-alpha.11",
   "description": "A FreeSewing plugin that helps with bust-adjusting menswear patterns",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -49,7 +49,7 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.10"
+    "@freesewing/core": "3.0.0-alpha.11"
   },
   "dependencies": {},
   "devDependencies": {
