@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // eslint-disable-next-line no-unused-vars
 import React, { forwardRef } from 'react'
 import { getId, getProps } from './utils.mjs'

@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Components
 // Pattern
 import { Pattern as PatternComponent } from './pattern/index.mjs'

@@ -29,7 +29,7 @@ import { ModalDesignPicker } from './design-picker.mjs'
 
 import { NavButton, NavSpacer } from 'shared/components/header.mjs'
 
-export const ns = nsMerge('sde', 'header', 'sections', themeNs, localeNs)
+export const ns = nsMerge('sde', 'header', 'sections', 'susi', themeNs, localeNs)
 
 const NavIcons = ({ setModal }) => {
   const { t } = useTranslation(['header'])
@@ -74,7 +74,7 @@ const NavIcons = ({ setModal }) => {
         <I18nIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
-      <NavButton href="/signin" label={t('account:signin')} color={spectrum[8]}>
+      <NavButton href="/signin" label={t('susi:signIn')} color={spectrum[8]}>
         <LockIcon className={iconSize} />
       </NavButton>
     </>

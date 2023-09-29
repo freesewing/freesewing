@@ -8,6 +8,7 @@ import { Popout, ns as popoutNs } from 'shared/components/popout/index.mjs'
 import { PageLink, WebLink } from 'shared/components/link.mjs'
 import { FreeSewingIcon } from 'shared/components/icons.mjs'
 import { collection } from 'site/hooks/use-design.mjs'
+import { version } from '@freesewing/core'
 
 const ns = ['sde', ...pageNs, ...popoutNs]
 /*
@@ -45,6 +46,7 @@ const HomePage = ({ page }) => {
           <WebLink href="https://freesewing.org/patrons/join" txt={t('sde:ps')} />.
         </p>
       </div>
+      <p className="text-center text-sm mt-12 opacity-60">FreeSewing v{version}</p>
     </PageWrapper>
   )
 }

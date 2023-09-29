@@ -94,7 +94,13 @@ yarn-error.log*
         from: 'sde/env.local',
         to: 'sde/.env.local',
       },
-      ...downloads,
+      ...downloads.sites,
     ],
+    packages: downloads.pkgs.map((file) => ({
+      from: file,
+      to: `pkgs/${file}`,
+    })),
   },
 }
+
+console.log(config.fetch.pkgs)

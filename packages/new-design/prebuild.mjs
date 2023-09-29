@@ -35,7 +35,7 @@ const getFiles = async (dir) => {
     .map((file) => file.split('/sites/').pop())
 }
 
-const searchFiles = async (dirs) => {
+const searchFiles = async (dirs, split = '/sites/') => {
   /*
    * Figure out what directory to spawn the child process in
    */
@@ -76,7 +76,7 @@ const searchFiles = async (dirs) => {
       ...stdout
         .split('\n')
         .filter((entry) => entry.length > 2)
-        .map((file) => file.split('/sites/').pop())
+        .map((file) => file.split(split).pop())
     )
   }
 
@@ -97,8 +97,9 @@ const buildFileList = async () => {
     '../../sites/shared/themes',
     '../../sites/shared/prebuild/data',
   ])
+  const pkgs = await searchFiles(['../../packages/react-components/src'], '/packages/')
 
-  return [...sde, ...shared]
+  return { sites: [...sde, ...shared], pkgs }
 }
 
 /*
