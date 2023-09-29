@@ -73,18 +73,10 @@ yarn-error.log*
     ],
     sites: [
       // Mock MDX components
-      {
-        from: 'sde/mock/highlight.mjs',
-        to: 'shared/components/mdx/highlight.mjs',
-      },
-      {
-        from: 'sde/mock/youtube.mjs',
-        to: 'shared/components/mdx/youtube.mjs',
-      },
-      {
-        from: 'sde/mock/read-more.mjs',
-        to: 'shared/components/mdx/read-more.mjs',
-      },
+      ...['highlight', 'youtube', 'read-more', 'tabbed-example'].map((file) => ({
+        from: `sde/mock/${file}.mjs`,
+        to: `shared/components/mdx/${file}.mjs`,
+      })),
       // .env file
       {
         from: 'sde/env.local',
@@ -94,3 +86,5 @@ yarn-error.log*
     ],
   },
 }
+
+console.log(config.fetch)
