@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/core",
-  "version": "3.0.0-alpha.11",
+  "version": "3.0.0-alpha.13",
   "description": "A library for creating made-to-measure sewing patterns",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -53,7 +53,7 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "@freesewing/core-plugins": "3.0.0-alpha.11",
+    "@freesewing/core-plugins": "3.0.0-alpha.13",
     "bezier-js": "6.1.4",
     "bin-pack-with-constraints": "1.0.1",
     "hooks": "0.3.2",

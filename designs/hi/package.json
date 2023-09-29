@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/hi",
-  "version": "3.0.0-alpha.11",
+  "version": "3.0.0-alpha.13",
   "description": "A FreeSewing pattern for a shark plush toy",
   "author": "woutervdub (https://github.com/woutervdub)",
   "homepage": "https://freesewing.org/",
@@ -49,14 +49,14 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.11"
+    "@freesewing/core": "3.0.0-alpha.13"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.2.0",
     "chai": "4.3.9",
-    "@freesewing/models": "3.0.0-alpha.11",
-    "@freesewing/plugin-timing": "3.0.0-alpha.11"
+    "@freesewing/models": "3.0.0-alpha.13",
+    "@freesewing/plugin-timing": "3.0.0-alpha.13"
   },
   "files": [
     "dist/*",

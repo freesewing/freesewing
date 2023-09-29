@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/sde",
-  "version": "3.0.0-alpha.11",
+  "version": "3.0.0-alpha.13",
   "description": "Stand-along develpment environment. Basis for the @freesewing/new-design package",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
