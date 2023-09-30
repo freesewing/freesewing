@@ -1,0 +1,27 @@
+frombrian.t: From Brian
+frombrian.d: Create a design that extends Brian, a block for menswear
+frombent.t: From Bent
+frombent.d: Create a design that extends Bent, a block for menswear with a two-part sleeve
+fromtitan.t: From Titan
+fromtitan.d: Create a design that extends Titan, a unisex trouser block
+frombella.t: From Bella
+frombella.d: Create a design that extends Bella, a block for womenswear
+frombreanna.t: From Breanna
+frombreanna.d: Create a design that extends Breanna, a block for womenswear
+fromscratch.t: From scratch
+fromscratch.d: Start your design with a blank page
+tutorial.t: Handleiding
+tutorial.d: Follow along with our design tutorial
+design: Ontwerp
+support: Ondersteuning
+code: Code
+docs: Documentatie
+chooseATemplate: Choose a template
+pageLeftBlank: Blank page
+pageLeftBlankMsg: This page was intentionally left blank.
+templatesAvailable: The following templates are available to jump-start your next project
+welcomeToSde: Welcome to the FreeSewing development environment
+signIn: Note that you can also sign in to your FreeSewing account so you can re-use your own preferences and data while designing.
+signOff: I hope you have fun
+ps: "PS: FreeSewing needs your support, so please consider becoming a patron"
+
