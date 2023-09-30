@@ -149,7 +149,7 @@ const HomePage = ({ page }) => (
           text="Step by step instructions to create your first FreeSewing design"
         />
         <CardLink
-          href="/support"
+          href="https://next.freesewing.org/support"
           title="Need Help?"
           text="Learn about the various ways you can reach out for help"
         />
