@@ -120,56 +120,67 @@ function draftCorneliusLegbandKeystone({
   // Paperless?
   if (paperless) {
     macro('hd', {
+      id: 1,
       from: points.pCout,
       to: points.pF,
       y: points.pA.y - sa - 15,
     })
     macro('hd', {
+      id: 2,
       from: points.pF,
       to: points.pE,
       y: points.pA.y - sa - 15,
     })
     macro('hd', {
+      id: 3,
       from: points.pE,
       to: points.pA,
       y: points.pA.y - sa - 15,
     })
     macro('hd', {
+      id: 4,
       from: points.pHout,
       to: points.pG,
       y: points.pG.y + sa + 15,
     })
     macro('ld', {
+      id: 5,
       from: points.pC,
       to: points.pB1,
       d: 15,
     })
     macro('ld', {
+      id: 6,
       from: points.pB1,
       to: points.pB2,
       d: 15,
     })
     macro('ld', {
+      id: 7,
       from: points.pB2,
       to: points.pB3,
       d: 15,
     })
     macro('ld', {
+      id: 8,
       from: points.pB3,
       to: points.pH,
       d: 15,
     })
     macro('ld', {
+      id: 9,
       from: points.pA,
       to: points.pG,
       d: 15 + sa,
     })
     macro('vd', {
+      id: 10,
       from: points.pE,
       to: points.pJ,
       x: points.pJ.x - 15,
     })
     macro('vd', {
+      id: 11,
       from: points.pF,
       to: points.pA,
       x: points.pF.x - 15,

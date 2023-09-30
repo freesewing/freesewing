@@ -69,11 +69,13 @@ function draftCorneliusWaistband({
   // Paperless?
   if (paperless) {
     macro('hd', {
+      id: 1,
       from: points.pD,
       to: points.pA,
       y: points.pA.y - sa - 15,
     })
     macro('vd', {
+      id: 2,
       from: points.pD,
       to: points.pC,
       x: points.pC.x - sa - 15,
