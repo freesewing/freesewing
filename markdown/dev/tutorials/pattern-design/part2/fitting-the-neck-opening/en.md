@@ -1,6 +1,6 @@
 ---
 title: Fitting the neck opening
-order: 170
+order: 70
 ---
 
 We are not going to create some opening that we _hope_ is the right size, we're

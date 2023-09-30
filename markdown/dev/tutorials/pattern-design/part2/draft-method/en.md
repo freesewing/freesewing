@@ -1,12 +1,12 @@
 ---
 title: A part's draft method
-order: 150
+order: 50
 ---
 
 Time to turn our attention to the draft method of our part.
-Inside our `design/src/bib.mjs` file, this is what it currently looks like:
+Inside our `src/bib.mjs` file, this is what it currently looks like:
 
-```design/src/bib.mjs
+```src/bib.mjs
 function draftBib({ part }) => {
   return part
 }
@@ -29,7 +29,7 @@ equivalent:
 
 <Tabs tabs="Without destructuring, With destructuring">
 <Tab>
-```design/src/bib.mjs
+```src/bib.mjs
 function draftBib(props) {
 
   return props.part
@@ -38,7 +38,7 @@ function draftBib(props) {
 ```
 </Tab>
 <Tab>
-```design/src/bib.mjs
+```src/bib.mjs
 function draftBib({ part }) {
 
   return part
@@ -61,7 +61,7 @@ If you're new to JavaScript, and don't intuitively _get this_, stick with it. It
 
 Change the function to look like this:
 
-```design/src/bib.mjs
+```src/bib.mjs
 function draftBib({
   // highlight-start
   Path,
@@ -87,6 +87,8 @@ Here's a brief summary of the things we've added above:
 - `Point`: The Point constructor, allows us to create new Points
 - `points`: A container object to hold the part's points
 - `paths`: A container object to hold the part's paths
+
+<Tip compact>Remember: Constructures start with a **C**apital letter</Tip>
 
 Long story short: These will make it possible for us to draw points and paths easily.
 

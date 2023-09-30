@@ -1,49 +1,10 @@
 ---
 title: Conclusion
-order: 280
+order: 90
 ---
 
 Congratulations, we have created our first pattern. And while it's arguably
-rather simple, we have learned a bunch of things along the way. Let's list
-some of the things we've learned:
-
-- We learned how to [setup our development environment][new-design] with `npx
-  @freesewing/new-design`
-- We learned about [the different files and folders][structure] in the
-  development environment and how `design/src` holds our source code.
-- We learned about [parts][our-first-part] and how they are structured.
-- We learned how to add [measurements][adding-measurements], and
-  [options][adding-options] to our design.
-- We learned about [a part's draft method][draft-method] and how to destructure
-  what we need to design our part.
-- We learned [how to add points and draw paths][constructing-the-neck-opening]
-- We learned how we can make changes in a loop to [adapt the neck
-  opening][fitting-the-neck-opening] or [rotate the straps][avoiding-overlap]
-  until they were just right
-- We learned about [macros and how to use them][creating-the-closure]
-- We learned there are many methods that allow us to manipulate
-  [points](/reference/api/point/) and [paths](/reference/api/path/)
-- We learned about what it means to draft [a complete
-  pattern][completing-our-pattern]
-- We learned about [snippets and how to add them][completing-our-pattern]
-- We learned [how to offset a path][completing-our-pattern] to create seam
-  allowance, or in our case, mark the bias tape line
-- We learned how to support a [paperless pattern][paperless] by adding
-  dimensions
-
-[new-design]: /tutorials/pattern-design/new-design
-[structure]: /tutorials/pattern-design/new-design
-[our-first-part]: /tutorials/pattern-design/our-first-part
-[adding-measurements]: /tutorials/pattern-design/adding-measurements
-[adding-options]: /tutorials/pattern-design/adding-options
-[draft-method]: /tutorials/pattern-design/draft-method
-[constructing-the-neck-opening]: /tutorials/pattern-design/constructing-the-neck-opening
-[fitting-the-neck-opening]: /tutorials/pattern-design/fitting-the-neck-opening
-[avoiding-overlap]: /tutorials/pattern-design/avoiding-overlap
-[creating-the-closure]: /tutorials/pattern-design/creating-the-closure
-[completing-our-pattern]: /tutorials/pattern-design/completing-our-pattern
-[paperless]: /tutorials/pattern-design/paperless
-
+rather simple, we have learned a bunch of things along the way. 
 
 ## More reading material
 
@@ -71,7 +32,7 @@ this tutorial.
 
 Were there areas that were not clear? Did I dwell too long on one topic, or
 rushed through another one too quickly?  Your feedback helps improve things,
-so don't be shy and [tell me what you think](https://discord.freesewing.org/).
+so don't be shy and tell me what you think.
 
-If you don't like Discord, you can reach me at joost@freesewing.org
+You can reach me at joost@freesewing.org
 </Comment>

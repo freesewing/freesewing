@@ -1,12 +1,12 @@
 ---
 title: Drawing the bib outline
-order: 190
+order: 88
 ---
 
 With our neck opening in place, let us draw the basic outline of our bib.
 
 <Example tutorial caption="Note how the neck opening is the same distance from the left, right, and top edge">
-```design/src/bib.mjs
+```src/bib.mjs
 function draftBib({
   Path,
   Point,

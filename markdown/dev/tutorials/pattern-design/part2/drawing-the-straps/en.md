@@ -23,13 +23,16 @@ function draftBib({
   points,
   measurements,
   options,
+  utils,
   macro,
   part,
 }) {
 
-  // Construct the quarter neck opening
+  /*
+   * Construct the neck opening
+   */
+  const target = (measurements.head * options.neckRatio) / 4
   let tweak = 1
-  let target = (measurements.head * options.neckRatio) /4
   let delta
   do {
     points.right = new Point(tweak * measurements.head / 10, 0)
@@ -116,32 +119,47 @@ function draftBib({
   points.tipRightTop = new Point(points.tipRight.x, points.edgeTop.y)
   points.tipRightBottom = new Point(points.tipRight.x, points.top.y)
 
-  macro("round", {
-    from: points.edgeTop,
-    to: points.tipRight,
-    via: points.tipRightTop,
-    prefix: "tipRightTop",
-    // strikeout-start
-    /* Remove this to have the macro
-     * only create the points we need
-     * and not draw a path
-    hide: false
-    */
-    // strikeout-end
-  })
-  macro("round", {
-    from: points.tipRight,
-    to: points.top,
-    via: points.tipRightBottom,
-    prefix: "tipRightBottom",
-    // strikeout-start
-    /* Remove this to have the macro
-     * only create the points we need
-     * and not draw a path
-    hide: false
-    */
-    // strikeout-end
-  })
+  /*
+   * Macros will return the auto-generated IDs
+   */
+  const ids1 = {
+    tipRightTop: macro("round", {
+      id: "tipRightTop",
+      from: points.edgeTop,
+      to: points.tipRight,
+      via: points.tipRightTop,
+      // strikeout-start
+      /* Remove this to have the macro
+       * only create the points we need
+       * and not draw a path
+      hide: false
+      */
+      // strikeout-end
+    }),
+    tipRightBottom: macro("round", {
+      id: "tipRightBottom",
+      from: points.tipRight,
+      to: points.top,
+      via: points.tipRightBottom,
+      // strikeout-start
+      /* Remove this to have the macro
+       * only create the points we need
+       * and not draw a path
+      hide: false
+      */
+      // strikeout-end
+    })
+  }
+
+  /*
+   * Create points from them with easy names
+   */
+  for (const side in ids1) {
+    for (const id of ['start', 'cp1', 'cp2', 'end']) {
+      points[`${side}${utils.capitalize(id)}`] = points[ids1[side].points[id]].copy()
+    }
+  }
+
   const rotateThese = [
     "edgeTopLeftCp",
     "edgeTop",

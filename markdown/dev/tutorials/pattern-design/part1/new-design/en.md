@@ -1,6 +1,6 @@
 ---
 title: Setting up the development environment
-order: 100
+order: 20
 ---
 
 FreeSewing provides a development environment that visualizes your design for you.
@@ -12,13 +12,15 @@ npx @freesewing/new-design@next
 ```
 <Fixme compact>Remove `@next` suffix once v3 is in production</Fixme>
 
-It will ask some questions.
-All the defaults will do, but here are the details:
+It will ask if it is ok to install the development environment in a new folder
+named `freesewing`. You can accept the default, or pick a different folder name
+if you prefer.
 
-- *What template would you like to use?* — Pick the default: **Tutorial**
-- *What package manager should we use?* — Pick the default: **npm**, unless you are certain you have **yarn** installed
+It will also ask what package manager you would like to use. 
+Here too the default (`npm`) is fine., unless you are certain you have **yarn** installed.
 
-After answering these questions, files will be copied, dependencies installed, and requirements downloaded.
+After answering these questions, files will be downloaded, dependencies installed,
+and it will also initialize a git repository for you (if you have git on your system).
 
 <Note>
 
@@ -27,17 +29,17 @@ of dependencies that need to be downloaded.
 
 </Note>
 
-When it's ready, you can enter the `tutorial` directory that was just created and run `npm run dev`:
+When it's ready, you can enter the `freesewing` directory that was just created and run `npm run dev`:
 
 ```sh
-cd tutorial
+cd freesewing
 npm run dev
 ```
 
 Or if you want to use yarn as package manager:
 
 ```sh
-cd tutorial
+cd freesewing
 yarn dev
 ```
 
@@ -47,10 +49,11 @@ If all goes well, we'll should see this landing page:
 
 ![The FreeSewing development environment](./nd.png)
 
-## Notes
+<Tip>
 
-### Need help?
+##### Need help?
 
 If you run into any issues, head over to [FreeSewing.org/support](https://next.freesewing.org/support)
 which lists the various ways in which you can get help.
 
+</Tip>

@@ -1,6 +1,6 @@
 ---
 title: Creating the closure
-order: 210
+order: 91
 ---
 
 Things are starting to look good, but we can't fit the bib over the baby's head like this.
@@ -41,28 +41,31 @@ function draftBib({
   part,
 }) {
 
-  // Construct the quarter neck opening
+  /*
+   * Construct the quarter neck opening
+   */
+  const target = (measurements.head * options.neckRatio) /4
   let tweak = 1
-  let target = (measurements.head * options.neckRatio) /4
   let delta
   do {
     points.right = new Point(tweak * measurements.head / 10, 0)
     points.bottom = new Point(0, tweak * measurements.head / 12)
-
-    points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right)/2)
-    points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right)/2)
+    points.rightCp1 = points.right.shift( 90, points.bottom.dy(points.right) / 2)
+    points.bottomCp2 = points.bottom.shift( 0, points.bottom.dx(points.right) / 2)
 
     paths.quarterNeck = new Path()
       .move(points.right)
       .curve(points.rightCp1, points.bottomCp2, points.bottom)
-      .hide() // Add this line
+      .hide()
 
     delta = paths.quarterNeck.length() - target
     if (delta > 0) tweak = tweak * 0.99
     else tweak = tweak * 1.02
   } while (Math.abs(delta) > 1)
 
-  // Construct the complete neck opening
+  /*
+   * Construct the complete neck opening
+   */
   points.rightCp2 = points.rightCp1.flipY()
   points.bottomCp1 = points.bottomCp2.flipX()
   points.left = points.right.flipX()
@@ -81,7 +84,9 @@ function draftBib({
     .close()
     .addClass('fabric')
 
-  // Drawing the bib outline
+  /*
+   * Drawing the bib outline
+   */
   const width = measurements.head * options.widthRatio
   const length = measurements.head * options.lengthRatio
 
@@ -102,7 +107,9 @@ function draftBib({
     .close()
     .addClass('fabric')
 
-  // Shape the straps
+  /*
+   * Shape the straps
+   */
   points.edgeLeft = new Point(points.topLeft.x, points.left.y)
   points.edgeRight = new Point(points.topRight.x, points.right.y)
   points.edgeTop = new Point(0, points.topLeft.y)
@@ -115,7 +122,9 @@ function draftBib({
   )
   points.edgeTopRightCp = points.edgeTopLeftCp.flipX()
 
-  // Now, adapt our `rect` path so it's no longer a rectangle:
+  /*
+   * Now, adapt our `rect` path so it's no longer a rectangle:
+   */
   paths.rect = new Path()
     .move(points.edgeTop)
     .curve(points.edgeTopLeftCp, points.edgeLeftCp, points.edgeLeft)
@@ -134,17 +143,17 @@ function draftBib({
   points.tipRightBottom = new Point(points.tipRight.x, points.top.y)
 
   macro("round", {
+    id: "tipRightTop",
     from: points.edgeTop,
     to: points.tipRight,
     via: points.tipRightTop,
-    prefix: "tipRightTop",
     hide: false
   })
   macro("round", {
+    id: "tipRightBottom",
     from: points.tipRight,
     to: points.top,
     via: points.tipRightBottom,
-    prefix: "tipRightBottom",
     hide: false
   })
   // highlight-end

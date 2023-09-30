@@ -1,6 +1,6 @@
 ---
 title: Adding options
-order: 140
+order: 40
 ---
 
 I have shown what our bib should look like, and added the _head_ measurement
@@ -23,13 +23,13 @@ and the head circumference. Let's call it `neckRatio`.
 
 For this, I will add the `options` property to our `bib` object:
 
-```design/src/bib.mjs
+```src/bib.mjs
 function draftBib({ part }) => {
   return part
 }
 
 export const bib = {
-  name: 'tutorial.bib',
+  name: 'fromscratch.bib',
   draft: draftBib,
   measurements: [ 'head' ],
   // highlight-start
@@ -68,13 +68,7 @@ Instead, this `menu` property is there for the benefit FreeSewing's development
 environment which will use this to build a menu structure for the various
 options.
 
-Each option type has a number of required properties. But in addition to that,
-you can add more to facilitate integrating with a front-end or other user
-interface.
-
-You will see that after adding this option, the development environment will
-have a `fit` section under **Design Options**. This `menu` property is where
-that is based on.
+This is covered in more detail in [Part 3](/tutorials/pattern-design/part3) of this tutorial.
 
 </Note>
 
@@ -82,13 +76,13 @@ that is based on.
 
 Let's do something similar for the width and length of our bib:
 
-```design/src/bib.mjs
+```src/bib.mjs
 function draftBib({ part }) => {
   return part
 }
 
 export const bib = {
-  name: 'tutorial.bib',
+  name: 'fromScratch.bib',
   draft: draftBib,
   measurements: [ 'head' ],
   options: {

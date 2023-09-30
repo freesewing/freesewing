@@ -1,6 +1,6 @@
 ---
 title: Constructing the neck opening
-order: 160
+order: 60
 ---
 
 Our goal is to construct an oval neck opening that has a circumference
@@ -51,18 +51,34 @@ function draftBib({
 }) {
 
   // highlight-start
-  // Construct the quarter neck opening
-  points.right = new Point(measurements.head / 10, 0)
-  points.bottom = new Point(0, measurements.head / 12)
+  /*
+   * Construct the quarter neck opening
+   */
+  points.right = new Point(
+    measurements.head / 10, 
+    0
+  )
+  points.bottom = new Point(
+    0, 
+    measurements.head / 12
+  )
 
-  points.rightCp1 = points.right
-    .shift(90, points.bottom.dy(points.right)/2)
-  points.bottomCp2 = points.bottom
-    .shift(0, points.bottom.dx(points.right)/2)
+  points.rightCp1 = points.right.shift(
+    90, 
+    points.bottom.dy(points.right) / 2
+  )
+  points.bottomCp2 = points.bottom.shift(
+    0, 
+    points.bottom.dx(points.right) / 2
+  )
 
   paths.quarterNeck = new Path()
     .move(points.right)
-    .curve(points.rightCp1, points.bottomCp2, points.bottom)
+    .curve(
+      points.rightCp1, 
+      points.bottomCp2, 
+      points.bottom
+    )
   // highlight-end
 
   return part
@@ -76,21 +92,26 @@ Let's look at each line in detail.
 ## Adding points
 
 ```js
-points.right = new Point(measurements.head / 10, 0)
+points.right = new Point(
+  measurements.head / 10, 
+  0
+)
 ```
 
 - We're adding a point named `right` to the `points` object which holds our
   part's points
 - We're using the Point constructor, which takes two arguments: The point's X
-  and Y values
+  and Y coordinates in the 2-dimensional space
 - The X value is `measurements.head / 10`
 - The Y value is `0`
 
 The creation of `points.bottom` is very similar, so let's skip to the next line:
 
 ```js
-points.rightCp1 = points.right
-  .shift(90, points.bottom.dy(points.right)/2)
+points.rightCp1 = points.right.shift(
+  90, 
+  points.bottom.dy(points.right) / 2
+)
 ```
 
 - We're adding a point named `rightCp1`, which will become the _control point_
@@ -123,7 +144,11 @@ introduced on the next line: Paths.
 ```js
 paths.quarterNeck = new Path()
   .move(points.right)
-  .curve(points.rightCp1, points.bottomCp2, points.bottom)
+  .curve(
+    points.rightCp1, 
+    points.bottomCp2, 
+    points.bottom
+  )
 ```
 
 - We're adding a path named `quarterNeck` to the `paths` object which holds our
@@ -138,6 +163,12 @@ case, we moved to our `right` points.
 
 From there, we drew a cubic Bézier curve to our `bottom` point by using
 `rightCp1` and `bottomCp2` as control points.
+
+<Tip>
+
+Many of the methods in the FreeSewing API are *chainable* allowing you
+to string them together like in this example.
+</Tip>
 
 When all is said and done, we now have a quarter of our neck opening.
 The only problem is, we have no guarantee whatsoever that this opening is the correct size.

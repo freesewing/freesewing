@@ -1,6 +1,6 @@
 ---
 title: Adding measurements
-order: 130
+order: 30
 ---
 
 FreeSewing is all about _made-to-measure_ sewing patterns -- or *parametric
@@ -18,19 +18,19 @@ So let's add it as a required measurement.
 
 ## Adding required measurements
 
-In our `design/src/bib.mjs` file, we will add a `measurements` property to the `bib` object.
+In our `src/bib.mjs` file, we will add a `measurements` property to the `bib` object.
 This property will be an Array (a list) holding all required measurements for this part.
 
 I am usign [*the official name* of the measurement](/reference/measurements) here. For head
 circumference, that name is `head`.
 
-```design/src/bib.mjs
+```src/bib.mjs
 function draftBib({ part }) => {
   return part
 }
 
 export const bib = {
-  name: 'tutorial.bib',
+  name: 'fromscratch.bib',
   draft: draftBib,
   // highlight-start
   measurements: [ 'head' ],

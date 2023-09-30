@@ -1,59 +1,43 @@
 ---
-title: Supporting paperless patterns
-order:  30
+title: How to communicate to the user
+order: 50
 ---
 
-The goal of paperless patterns is to create a pattern that we don't need to
-print to be able to use it. Saving paper is always a good thing, but it's
-also a way to democratize access to patterns.
-While more and more of humanity is on the internet, access to printers and
-printing paper is often harder to come by, especially in developing countries.
+As a designer, there are times you want to bring something to the attention of
+the user.  I am not talking about generic information that can go in the
+documentation, but rather a message that is tailored specifically to this
+pattern, much like this pattern is specifically tailored to the user.
 
-So let's make the extra effort to make our bib design support paperless.
+Doing so is possible with the various `store.flag` methods, and below is
+our updated bib making use of this. It's important to realize that things
+will look the same here. But if you load this pattern in the development
+environment (or on FreeSewing.org for that matter) the user will see this:
 
-## The paperless setting
+![A message for the user](./flag.png)
 
-Users can request paperless patterns by setting [the `paperless`
-setting](/reference/settings/paperless) to a *truthy* value.
+It's a simple example, but I hope it gets the point across.
 
-With paperless enabled, FreeSewing will automatically render a grid for each
-pattern part with metric or imperial markings, depending on the units requested
-by the user.
+Finally, keep in mind that we are now straddling the world of the core library
+and frontend integration. These messages won't do anything unless you have a
+frontend the shows them.
 
-Such a grid is already a good starting point. In addition, we'll be using
-different macros to add *dimensions* to the pattern.
-
-While the grid gets added automatically, the dimensions we have to add ourselves.
-Thankfully, there's macros that can help us with that, specifically:
-
-- The `hd` macro adds a horizontal dimension
-- The `vd` macro adds a vertical dimension
-- The `ld` macro adds a linear dimension
-- The `pd` macro adds a path dimension that follows a given path
-
-These macros will also adapt to the units chosen by the user (metric or imperial).
-
-<Note>
-Refer to [the list of macros](/reference/macros/) for more details.
-</Note>
-
-<Example previewFirst tutorial paperless caption="Suddenly, a printer is very much optional">
+<Example previewFirst tutorial caption="We flagged something for the user">
 ```design/src/bib.mjs
 function draftBib({
-  Path,
   Point,
-  paths,
   points,
+  Path,
+  paths,
   utils,
+  store,
   measurements,
   options,
   macro,
-  complete,
-  snippets,
   Snippet,
-  store,
+  snippets,
+  complete,
   // highlight-start
-  paperless,
+  units,
   // highlight-end
   part,
 }) {
@@ -252,6 +236,18 @@ function draftBib({
     *
     */
 
+  // highlight-start
+  /*
+    * Let the user know about the bias tape and fabric requirements
+    */
+  store.flag.note({
+    msg: 'tutorial:biasTapeLength',
+    replace: {
+      l: units(paths.seam.length()),
+    },
+  })
+  // highlight-end
+
   /*
     * Cut list
     */
@@ -270,7 +266,7 @@ function draftBib({
     paths.bias = paths.seam
       .offset(-5)
       .addClass('note dashed')
-      .addText('fronscratch:finishWithBiasTape', 'center fill-note')
+      .addText('finishWithBiasTape', 'center fill-note')
 
   /*
     * Add the title
@@ -296,7 +292,6 @@ function draftBib({
   points.logo = new Point(0, 0)
   snippets.logo = new Snippet('logo', points.logo)
 
-  // highlight-start
   /*
     * Add dimensions
     */
@@ -336,9 +331,10 @@ function draftBib({
     to: points.tipLeftTopStart,
     d: -15,
   })
-  // highlight-end
 
   return part
 }
 ```
 </Example>
+
+Now the first thing you should know is: **core does not care**. We are

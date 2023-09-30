@@ -1,6 +1,6 @@
 import { Design } from '@freesewing/core'
 import { i18n } from '../i18n/index.mjs'
-import { scratch } from './scratch.mjs'
+import { bib } from './bib.mjs'
 
 /*
  * Create the design
@@ -10,7 +10,7 @@ const FromScratch = new Design({
     name: 'fromScratch',
     version: '0.0.1',
   },
-  parts: [scratch],
+  parts: [bib],
 })
 
-export { scratch, FromScratch, i18n }
+export { bib, FromScratch, i18n }

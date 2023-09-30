@@ -25,19 +25,14 @@ export const bib = {
     part,
   }) => {
     /*
-     * Head size
-     */
-    const head = (`head` in measurements ? measurements.head : 360) * options.headSize
-
-    /*
      * Construct the neck opening
      */
-    const target = (head * options.neckRatio) / 4
+    const target = (measurements.head * options.neckRatio) / 4
     let tweak = 1
     let delta
     do {
-      points.right = new Point((tweak * head) / 10, 0)
-      points.bottom = new Point(0, (tweak * head) / 12)
+      points.right = new Point((tweak * measurements.head) / 10, 0)
+      points.bottom = new Point(0, (tweak * measurements.head) / 12)
 
       points.rightCp1 = points.right.shift(90, points.bottom.dy(points.right) / 2)
       points.bottomCp2 = points.bottom.shift(0, points.bottom.dx(points.right) / 2)
@@ -65,8 +60,8 @@ export const bib = {
     /*
      * Construct the outline
      */
-    let width = head * options.widthRatio
-    let length = head * options.lengthRatio
+    let width = measurements.head * options.widthRatio
+    let length = measurements.head * options.lengthRatio
 
     points.topLeft = new Point(width / -2, points.top.y - (width / 2 - points.right.x))
     points.topRight = points.topLeft.shift(0, width)
@@ -215,7 +210,7 @@ export const bib = {
       .curve(points.tipRightTopCp2, points.tipRightTopCp1, points.tipRightTopStart)
       .curve(points.edgeTopLeftCp, points.edgeLeftCp, points.edgeLeft)
       .close()
-      .attr('class', 'fabric')
+      .addClass('fabric')
 
     /*
      *
@@ -250,9 +245,8 @@ export const bib = {
     if (complete)
       paths.bias = paths.seam
         .offset(-5)
-        .attr('class', 'note dashed')
-        .attr('data-text', 'tutorial:finishWithBiasTape')
-        .attr('data-text-class', 'center fill-note')
+        .addClass('note dashed')
+        .addText('tutorial:finishWithBiasTape', 'center fill-note')
 
     /*
      * Add the title

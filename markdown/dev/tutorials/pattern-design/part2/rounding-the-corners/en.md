@@ -1,6 +1,6 @@
 ---
 title: Rounding the corners
-order: 240
+order: 94
 ---
 
 We already know how to round corners, we'll have the `round` macro take care of that for us.
@@ -17,13 +17,16 @@ function draftBib({
   points,
   measurements,
   options,
+  utils,
   macro,
   part,
 }) {
 
-  // Construct the quarter neck opening
+  /*
+   * Construct the neck opening
+   */
+  const target = (measurements.head * options.neckRatio) / 4
   let tweak = 1
-  let target = (measurements.head * options.neckRatio) /4
   let delta
   do {
     points.right = new Point(tweak * measurements.head / 10, 0)
@@ -84,18 +87,33 @@ function draftBib({
   points.tipRightTop = new Point(points.tipRight.x, points.edgeTop.y)
   points.tipRightBottom = new Point(points.tipRight.x, points.top.y)
 
-  macro("round", {
-    from: points.edgeTop,
-    to: points.tipRight,
-    via: points.tipRightTop,
-    prefix: "tipRightTop",
-  })
-  macro("round", {
-    from: points.tipRight,
-    to: points.top,
-    via: points.tipRightBottom,
-    prefix: "tipRightBottom",
-  })
+  /*
+   * Macros will return the auto-generated IDs
+   */
+  const ids1 = {
+    tipRightTop: macro("round", {
+      id: "tipRightTop",
+      from: points.edgeTop,
+      to: points.tipRight,
+      via: points.tipRightTop,
+    }),
+    tipRightBottom: macro("round", {
+      id: "tipRightBottom",
+      from: points.tipRight,
+      to: points.top,
+      via: points.tipRightBottom,
+    })
+  }
+
+  /*
+   * Create points from them with easy names
+   */
+  for (const side in ids1) {
+    for (const id of ['start', 'cp1', 'cp2', 'end']) {
+      points[`${side}${utils.capitalize(id)}`] = points[ids1[side].points[id]].copy()
+    }
+  }
+
   const rotateThese = [
     "edgeTopLeftCp",
     "edgeTop",
@@ -130,21 +148,35 @@ function draftBib({
   points.tipLeftBottomEnd = points.tipRightBottomEnd.flipX()
 
   // highlight-start
-  // Round the bottom corners
-  macro("round", {
-    from: points.topLeft,
-    to: points.bottomRight,
-    via: points.bottomLeft,
-    radius: points.bottomRight.x / 4,
-    prefix: "bottomLeft"
-  })
-  macro("round", {
-    from: points.bottomLeft,
-    to: points.topRight,
-    via: points.bottomRight,
-    radius: points.bottomRight.x / 4,
-    prefix: "bottomRight"
-  })
+  /*
+   * Round the bottom corners
+   * Macros will return the auto-generated IDs
+   */
+  const ids2 = {
+    bottomLeft: macro("round", {
+      id: "bottomLeft",
+      from: points.topLeft,
+      to: points.bottomRight,
+      via: points.bottomLeft,
+      radius: points.bottomRight.x / 4,
+    }),
+    bottomRight: macro("round", {
+      id: "bottomRight",
+      from: points.bottomLeft,
+      to: points.topRight,
+      via: points.bottomRight,
+      radius: points.bottomRight.x / 4,
+    })
+  }
+
+  /*
+   * Create points from them with easy names
+   */
+  for (const side in ids2) {
+    for (const id of ['start', 'cp1', 'cp2', 'end']) {
+      points[`${side}${utils.capitalize(id)}`] = points[ids2[side].points[id]].copy()
+    }
+  }
   // highlight-end
 
   // Create one path for the bib outline
