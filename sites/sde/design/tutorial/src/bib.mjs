@@ -1,7 +1,6 @@
 export const bib = {
   name: 'tutorial.bib',
-  measurements: [],
-  optionalMeasurements: ['head'],
+  measurements: ['head'],
   options: {
     neckRatio: { pct: 80, min: 70, max: 90, menu: 'fit' },
     widthRatio: { pct: 45, min: 35, max: 55, menu: 'fit' },
