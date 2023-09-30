@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-annotations",
-  "version": "3.0.0-beta.0",
+  "version": "3.0.0",
   "description": "A FreeSewing plugin that provides pattern annotations",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -49,7 +49,7 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-beta.0"
+    "@freesewing/core": "3.0.0"
   },
   "dependencies": {},
   "devDependencies": {
@@ -62,7 +62,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": "18",

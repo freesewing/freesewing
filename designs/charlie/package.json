@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/charlie",
-  "version": "3.0.0-beta.0",
+  "version": "3.0.0",
   "description": "A FreeSewing pattern for chino trousers",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -49,18 +49,18 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-beta.0",
-    "@freesewing/plugin-annotations": "3.0.0-beta.0",
-    "@freesewing/plugin-mirror": "3.0.0-beta.0",
-    "@freesewing/titan": "3.0.0-beta.0",
-    "@freesewing/snapseries": "3.0.0-beta.0"
+    "@freesewing/core": "3.0.0",
+    "@freesewing/plugin-annotations": "3.0.0",
+    "@freesewing/plugin-mirror": "3.0.0",
+    "@freesewing/titan": "3.0.0",
+    "@freesewing/snapseries": "3.0.0"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.2.0",
     "chai": "4.3.9",
-    "@freesewing/models": "3.0.0-beta.0",
-    "@freesewing/plugin-timing": "3.0.0-beta.0"
+    "@freesewing/models": "3.0.0",
+    "@freesewing/plugin-timing": "3.0.0"
   },
   "files": [
     "dist/*",
@@ -68,7 +68,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": "18",

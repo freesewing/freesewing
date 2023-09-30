@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/new-design",
-  "version": "3.0.0-beta.0",
+  "version": "3.0.0",
   "description": "Initializer package for a new FreeSewing design: npx @freesewing/new-design",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -57,7 +57,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": "18",
