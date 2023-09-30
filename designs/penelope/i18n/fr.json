@@ -1,0 +1,72 @@
+{
+  "t": "Jupe crayon Penelope",
+  "d": "Penelope est une jupe crayon avec ou sans fente dans le dos.",
+  "p": {
+    "back": "Retour",
+    "front": "Avant",
+    "waistband": "Ceinture"
+  },
+  "s": {},
+  "o": {
+    "backDartDepthFactor": {
+      "t": "Profondeur de la pince dos",
+      "d": "Jusqu'où va la pince arrière depuis la ceinture, facteur de la mensuration \"Hauteur taille bassin\"."
+    },
+    "backVent": {
+      "t": "Fentes arrière",
+      "d": "Ajouter une fente au dos de la jupe."
+    },
+    "backVentLength": {
+      "t": "Longueur de fente arrière",
+      "d": "Longueur de la fente dos par rapport à la longueur de la jupe."
+    },
+    "curvedDarts": {
+      "t": "Curved darts",
+      "d": "Whether or not to used curved darts."
+    },
+    "dartToSideSeamFactor": {
+      "t": "Pince de côté",
+      "d": "Pourcentage de la part de la réduction de la hanche à la taille par rapport à la couture latérale."
+    },
+    "frontDartDepthFactor": {
+      "t": "Profondeur de la pince avant",
+      "d": "Jusqu'où va la pince avant depuis la ceinture, facteur de la mensuration \"Hauteur taille bassin\"."
+    },
+    "hem": {
+      "t": "Taille de l'ourlet",
+      "d": "La taille de l'ourlet. Mesure en valeurs absolues."
+    },
+    "hemBonus": {
+      "t": "Bonus d'ourlet",
+      "d": "Cette option réduira la circonférence de la jupe à l'ourlet. Pourcentage de la mesure de l'assise."
+    },
+    "lengthBonus": {
+      "t": "Supplément de longueur",
+      "d": "Ceci définit la longueur de la jupe. Pourcentage de la mensuration \"Hauteur taille genou\"."
+    },
+    "nrOfDarts": {
+      "t": "Nombre de pinces",
+      "d": "Le nombre de pinces utilisées dans le patron. Maximum de 2. Cette option peut être réduite par le patron si les calculs créent des pinces trop petites."
+    },
+    "seatEase": {
+      "t": "Aisance d'assise",
+      "d": "Quantité d'aisance au niveau de l'assise."
+    },
+    "waistBand": {
+      "t": "Ceinture",
+      "d": "Ajouter une ceinture au patron."
+    },
+    "waistBandWidth": {
+      "t": "Largeur de ceinture",
+      "d": "La largeur de la ceinture."
+    },
+    "waistEase": {
+      "t": "Aisance à la taille",
+      "d": "Quantité d'aisance au niveau de la taille."
+    },
+    "zipperLocation": {
+      "t": "Emplacement du Zip",
+      "d": "L'emplacement du zip (fermeture éclair)."
+    }
+  }
+}

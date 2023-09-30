@@ -1,16 +1,27 @@
 ---
-title: Accessing user options
-for: developers
-about: Shows you how to access user options from inside your pattern
+title: Accessing options
 ---
 
-Options are stored in `pattern.settings.options`.
+Options are available on the `options` key of from the object
+passed to your part's draft method. You can destructure them for easy access.
 
-You can pull them out of there with
-the [shorthand](/howtos/code/shorthand/) call:
+```design/src/part.mjs
+function draftPart = ({
+  // highlight-start
+  options,
+  // highlight-end
+  part
+}) {
 
-```js
-const  { measurements, options } = part.shorthand()
+  const a = options.fitKnee
+  const b = options[waistEase]
 
-let sleeveBonus = measurements.shoulderToWrist * (1 + options.sleeveLengthBonus);
+  return part
+}
 ```
+
+<Note>
+
+Unlike measurements, options come with default values.
+
+</Note>

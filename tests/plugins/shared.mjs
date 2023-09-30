@@ -1,4 +1,3 @@
-import freesewing from '@freesewing/core'
 import chai from 'chai'
 /*
  * This runs unit tests for the plugin configuration
@@ -21,24 +20,11 @@ export const sharedPluginTests = plugin => {
       const chunks = plugin.version.split('.')
       if (chunks.length > 3) {
         chai.expect(plugin.version.split('.').length).to.equal(4)
-        chai.expect(chunks[2]).to.contain('-rc')
+        chai.expect(chunks[2]).to.contain.oneOf(['-alpha', '-beta', '-rc'])
       }
       else chai.expect(plugin.version.split('.').length).to.equal(3)
     })
 
-    if ([
-      // These don't set their version
-      '@freesewing/plugin-versionfree-svg',
-      '@freesewing/plugin-bundle',
-    ].indexOf(plugin.name) === -1) {
-      const pattern = new freesewing.Pattern().use(plugin)
-      pattern.draft().render()
-      const version = plugin.name.split('@').pop().split('/').join(':')
-
-      it('Should set the plugin name:version attribute', () => {
-        chai.expect(pattern.svg.attributes.get(version)).to.equal(plugin.version)
-      })
-    }
   })
 
 }

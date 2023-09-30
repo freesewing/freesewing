@@ -1,21 +1,20 @@
 ---
-title: Made-to-measure sewing patterns
+title: Швейні викрійки на базі замірів
 order: 200
 ---
 
-All of our sewing patterns are **made to measure**.
+Всі наші швейні викрійки **створюються на базі замірів**.
 
-We don’t scale or grade patterns. Instead, we draft the pattern to your measurements. That happens in real-time, in your browser.
+Ми не масштабуємо викрійки та не градуюємо лекала. Натомість ми створюємо викрійки відповідно до Ваших замірів. Це трапляється наживу у Вашому браузері.
 
 <Note>
 
-##### But you do have sizes?
+##### Але чи є в вас розмірні таблиці?
 
-Generating a made-to-measure sewing pattern requires an account.
-For the casual visitor who stumbles upon our website, that
-adds a lot of friction before they can try out the website.
+Створення швейних викрійок на базі замірів потребує обліковий запис.
+Для випадкових відвідувачів нашого сайту це може бути перешкодою для спроби його начиння.
 
-For this reason, we've added standard sizes since version 2.2.\
-We advise against using our standard sizes for actual garment construction.
+Через це ми додали розмірні таблиці, починаючи з версії 2.2.  
+Ми не радимо використовувати ці розмірні таблиці для побудови дійсних виробів.
 
 </Note>

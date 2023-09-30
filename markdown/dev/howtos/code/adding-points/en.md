@@ -1,21 +1,26 @@
 ---
 title: Adding points
-for: developers
-about: Shows you how to add points to your pattern
 ---
 
-After using the [shorthand](/howtos/code/shorthand/) call,
-`Point` contains the point constructor, while `points` is a reference to `part.points`,
-which is where you should store your points.
+Points should be stored in the `points` key of the object passed to your part's
+draft method. The constructor for points is available in the `Point` key. You
+can destructure them for easy access.
 
-Things will now _just work_ when you do this:
+<Example caption="An example of adding a point" tutorial>
+```design/src/part.mjs
+function draftPart = ({ 
+  // highlight-start
+  Point,
+  points,
+  // highlight-end
+  part 
+}) {
 
-```js
-points.centerBack  = new Point(0,0);
+  // highlight-start
+  points.demo = new Point(0,0).addText('hi')
+  // highlight-end
+
+  return part
+}
 ```
-
-<Tip>
-
-The [Point API docs](/reference/api/point/) list many ways to create a point.
-
-</Tip>
+</Example>

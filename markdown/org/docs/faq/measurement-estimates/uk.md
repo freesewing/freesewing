@@ -1,126 +1,117 @@
 ---
-title: What are those symbols next to my measurements?
+title: Що це за іконки біля моїх вимірів?
 ---
 
-You might have noticed these kind of icons next to your measurements: <Gauge val={0} theme='light' />
+Ви, мабуть, бачили іконки зі стрілочками біля своїх вимірів: <Gauge val={0} theme='light' />
 
-The value they represent shows how far the measurement deviates from the proportions we test our designs with:
+Вони вказують, наскільки Ваші виміри відрізняються від розмірних таблиць, які ми використовуємо для перевірки наших викрійок:
 
 <table spaces-before="0">
   <tr>
     <th>
-      Icon
+      Іконка
     </th>
-
+    
     <th>
-      Description
+      Опис
     </th>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={-6} theme='light' />
     </td>
-
+    
     <td>
-      The value is <strong x-id="1">significantly lower</strong>
+      Вимір <strong x-id="1">значно менший</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={-4} theme='light' />
     </td>
-
+    
     <td>
-      The value is <strong x-id="1">a good bit lower</strong>
+      Вимір <strong x-id="1">достатньо менший</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={-2} theme='light' />
     </td>
-
+    
     <td>
-      The value is <strong x-id="1">a bit lower</strong>
+      Вимір <strong x-id="1">трохи менший</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={-1} theme='light' />
     </td>
-
+    
     <td>
-      The value is <strong x-id="1">very close</strong>
+      Вимір <strong x-id="1">майже однаковий</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={1} theme='light' />
     </td>
-
+    
     <td>
-      The value is <strong x-id="1">very close</strong>
+      Вимір <strong x-id="1">майже однаковий</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={2} theme='light' />
     </td>
-
+    
     <td>
-      The value is <strong x-id="1">a bit higher</strong>
+      Вимір <strong x-id="1">трохи більший</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={4} theme='light' />
     </td>
-
+    
     <td>
-      The value is <strong x-id="1">a good bit higher</strong>
+      Вимір <strong x-id="1">достатньо більший</strong>
     </td>
-
   </tr>
-
+  
   <tr>
     <td>
       <Gauge val={6} theme='light' />
     </td>
-
+    
     <td>
-      The value is <strong x-id="1">significantly higher</strong>
+      Вимір <strong x-id="1">значно більший</strong>
     </td>
-
   </tr>
 </table>
 
-These indicators serve a dual purpose:
+Ці позначки виконують дві основні функції:
 
-- Help you spot mistakes in your measurements (you know best where your outliers are)
-- Help you anticipate where our software might struggle to come up with good results
+- Вони допомагають побачити помилки в процесі зняття мірок (Ви знаєте найкраще, які з Ваших вимірів відходять від розмірних таблиць)
+- Вони допомагають побачити місця, при створенні яких наше програмне забезпечення може видати не найкращий результат
 
 <Note>
 
-##### There are no good or bad measurements
+##### Нагадуємо, що не буває "хороших" та "поганих" вимірів.
 
-Designing patterns for a variety of shapes is hard work.
+Проєктування викрійок для багатьох тіл з різними пропорціями — нелегка задача.
 
-Unlike other pattern companies, we don't limit ourselves to a particular size range.
-All people and all bodies are welcome here.
+На відміну від інших компаній, які розробляють викрійки, ми не обмежуємося певним діапазоном розмірів.
+Тут вітаються всі люди та всі тіла.
 
-If it turns out it doesn't work for you, please [let us know](https://discord.freesewing.org/) and we'll try to do better.
+Якщо якась викрійка чи її частина не працює для Вас, будь ласка, [дайте нам знати](https://discord.freesewing.org/), ми докладемо зусилля, аби покращити ситуацію.
 
 </Note>

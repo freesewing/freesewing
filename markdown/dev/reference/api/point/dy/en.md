@@ -2,45 +2,36 @@
 title: Point.dy()
 ---
 
-A point's `dy()` method returns the delta (in mm) along the Y-axis between this point and the point you pass it.
+The `Point.dy()` method returns the delta (in mm) along the Y-axis between this
+point and the point you pass it.
 
-## Point.dy() signature
+## Signature
 
 ```js
 float point.dy(Point point)
 ```
 
-## Point.dy() example
+## Example
 
-<Example part="point_dy">
-An example of the Point.dy() method
-</Example>
-
+<Example caption="An example of the Point.dy() method">
 ```js
-let { Point, points, Path, paths } = part.shorthand()
+({ Point, points, Path, paths, units, part }) => {
 
-points.from = new Point(10, 10)
-points.to = new Point(80, 70)
-    
-paths.line = new Path()
-  .move(points.from)
-  .line(points.to)
-  .attr("class", "dashed")
+  points.from = new Point(10, 40)
+  points.to = new Point(10, 10)
 
-points.totop = points.from.shift(0,points.from.dx(points.to))
+  paths.line = new Path()
+    .move(points.from)
+    .line(points.to)
+    .setClass("dotted")
+    .setText(units(points.from.dy(points.to)), 'center')
 
-paths.line_dx = new Path()
-  .move(points.from)
-  .line(points.totop)
-  .attr("class", "dashed")
+  // Prevents clipping
+  paths.diag = new Path()
+    .move(new Point(-10,40))
+    .move(new Point(60,10))
 
-points.text_dy = points.totop
-  .shiftFractionTowards(points.to, 0.4)
-  .attr("data-text", points.from.dy(points.to)+"mm")
-  .attr("data-text-class", "text-sm fill-note right")
-  
-paths.line_dy = new Path()
-  .move(points.to)
-  .line(points.totop)
-  .attr("class", "dashed")
+  return part
+}
 ```
+</Example>

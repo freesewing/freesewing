@@ -1,12 +1,18 @@
 ---
-title: round()
+title: utils.round()
 ---
+
+The `utils.round()` function rounds a value to two decimals.
+
+## Signature
 
 ```js
 float utils.round(float value)
 ```
 
-Rounds a value to two decimals. For example:
+## Example
 
-- 0.1234 becomes 0.12
-- 5.6789 becomes 5.68
+```js
+utils.round(0.1234) // 0.12
+utils.round(5.6789) // 5.68
+```

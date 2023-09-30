@@ -1,0 +1,36 @@
+{
+  "t": "Tablier Albert",
+  "d": "Albert est un tablier.",
+  "p": {
+    "front": "Avant",
+    "pocket": "Poche",
+    "strap": "Strap"
+  },
+  "s": {},
+  "o": {
+    "backOpening": {
+      "t": "Ouverture arrière",
+      "d": "Contrôle l'ouverture à l'arrière du tablier"
+    },
+    "chestDepth": {
+      "t": "Longueur de l'anse",
+      "d": "Contrôle la longueur des liens"
+    },
+    "lengthBonus": {
+      "t": "Supplément de longueur",
+      "d": "Contrôle la longueur du tablier"
+    },
+    "bibLength": {
+      "t": "Longueur du plastron",
+      "d": "Contrôle la longueur du plastron"
+    },
+    "bibWidth": {
+      "t": "Largeur du plastron",
+      "d": "Contrôle la largeur du plastron"
+    },
+    "strapWidth": {
+      "t": "Largeur du lien",
+      "d": "Contrôle la largeur des liens"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "t": "Carlita, abrigo",
+  "d": "La versión para gente con pechos de nuestro abrigo Carlton, también conocido como el abrigo de Sherlock Holmes.",
+  "p": {
+    "front": "Frente",
+    "side": "Lado"
+  },
+  "s": {},
+  "o": {
+    "contour": {
+      "t": "Contorno",
+      "d": "Controla cómo de abrubtamente se ajustan las costuras princesa."
+    }
+  }
+}

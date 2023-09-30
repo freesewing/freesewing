@@ -53,27 +53,27 @@ guide](https://github.com/nvm-sh/nvm#install--update-script).  Once installed
 you will need to activate NVM by either following the instructions printed to
 the screen or opening a new terminal.
 
-#### Install Node (and optionally Yarn)
+#### Install Node.js (and optionally Yarn)
 
-Now that you have NVM installed, you can install node. The latest version can be
+Now that you have NVM installed, you can install Node.js. The latest version can be
 installed using `nvm install default`. You can also install a specific version
-using `nvm install v12.16.1`. For the purposes of debugging it can be useful to
-have the same version of node installed as the main project uses, which you can
+using `nvm install v18.17.0`. For the purposes of debugging it can be useful to
+have the same version of Node.js installed as the main project uses, which you can
 then activate using `nvm use <version>`. You can determine what version the
 FreeSewing project uses by checking
 [freesewing/freesewing/.node-version](https://github.com/freesewing/freesewing/blob/develop/.node-version).
 
-<Warning> At the time this guide was written the latest version of node/npm has
+<Warning> At the time this guide was written the latest version of Node.js/npm has
 a bug in the dependency resolution process which causes the freesewing project
-to fail to build. Use the latest LTS version (currently 14.15.4) or the specific
+to fail to build. Use the latest LTS version (currently 18.17.0) or the specific
 version used by the main project to avoid this issue.  </Warning>
 
-Node comes with the Node Package Manager (npm) by default which can be used to
-set up the project. The default package manager uses a fairly simplistic aproach
+Node.js comes with the Node Package Manager (npm) by default which can be used to
+set up the project. The default package manager uses a fairly simplistic approach
 to dependency resolution which can make builds take a long time. Yarn is an
 alternative package manager which makes builds faster, especially for monolithic
 projects like FreeSewing. If you'd like to install yarn run `npm install yarn
--g` (optional).
+--global` (optional, but recommended).
 
 #### Install and configure Git (recommended)
 
@@ -84,10 +84,10 @@ installed or configured correctly. As such it's recommended to have git
 installed on the WSL environment even if you're going to be using a GUI client
 from the windows side.
 
-```bash 
-sudo apt install git 
-git config --global user.email "<the email address you use for your git account>" 
-git config --global user.name "<your display name for your git account>" 
+```bash
+sudo apt install git
+git config --global user.email "<the email address you use for your git account>"
+git config --global user.name "<your display name for your git account>"
 ```
 
 ### Install VSCode (optional)
@@ -102,11 +102,11 @@ design shortcoming it does not respect certain editorconfig options which will
 break certain files in the freesewing project ([see vscode/65663 for
 details](https://github.com/microsoft/vscode/issues/65663)). If you use this
 editor please ensure that your settings.json file is configured to not trim
-trailing whitespace from markdown files. The following snippet can be added to
+trailing whitespace from Markdown files. The following snippet can be added to
 your settings.json file to add an exemption for this file type:
 
-```json 
-  "[markdown]": { "files.trimTrailingWhitespace": false }, 
+```json
+  "[markdown]": { "files.trimTrailingWhitespace": false },
 ```
 
 </Note>
@@ -114,8 +114,8 @@ your settings.json file to add an exemption for this file type:
 #### Install VSCode Remote
 
 In order to be able to use VSCode's IDE features (such as the built in terminal)
-and also make use of the node installation we set up in the previous steps you
-will need to install VSCode Remote so that VSCode can make use of the linux
+and also make use of the Node.js installation we set up in the previous steps you
+will need to install VSCode Remote so that VSCode can make use of the Linux
 environment. [Follow the getting started guide for VSCode
 Remote](https://code.visualstudio.com/docs/remote/wsl) (If you've been following
 this guide you have already done steps 1 and 2, you will only need to install
@@ -127,32 +127,32 @@ extension](https://aka.ms/vscode-remote/download/extension))
 
 ### Install NVM
 
-While node can be installed directly on Windows, we strongly recommend using a
+While Node.js can be installed directly on Windows, we strongly recommend using a
 version manager such as [Node Version Manager for
 Windows](https://github.com/coreybutler/nvm-windows/releases/latest). That link
 will take you to the latest release which provides an installer you can download
 and run. Once nvm-windows is installed you will be able to continue with the
 rest of this process.
 
-### Install Node (and optionally Yarn)
+### Install Node.js (and optionally Yarn)
 
 Open a Powershell terminal or command prompt. Run `nvm ls available` to show
 versions that can be installed. Choose the appropriate version (you should use
 the same version as the freesewing project or latest LTS version) then run `nvm
-install 14.15.4` and `nvm use 14.15.4` (where `14.15.4` is the full version
+install 18.17.0` and `nvm use 18.17.0` (where `18.17.0` is the full version
 string of the version you wish to use) to activate the newly installed version.
 You will receive a prompt for elevated permissions and will need to accept it in
-order to activate the new version of node.
+order to activate the new version of Node.js.
 
-<Warning> 
-At the time this guide was written the latest version of node/npm has
+<Warning>
+At the time this guide was written the latest version of Node.js/npm has
 a bug in the dependency resolution process which causes the freesewing project
-to fail to build. Use the latest LTS version (currently 14.15.4) or the specific
-version used by the main project to avoid this issue.  
+to fail to build. Use the latest LTS version (currently 18.17.0) or the specific
+version used by the main project to avoid this issue.
 </Warning>
 
-Node comes with the Node Package Manager (npm) by default which can be used to
-set up the project. The default package manager uses a fairly simplistic aproach
+Node.js comes with the Node Package Manager (npm) by default which can be used to
+set up the project. The default package manager uses a fairly simplistic approach
 to dependency resolution which can make builds take a long time. Yarn is an
 alternative package manager which makes builds faster, especially for monolithic
 projects like FreeSewing. If you'd like to install yarn run (`npm install yarn
@@ -188,7 +188,11 @@ If you're not certain what to pick, just mash some keys, it doesn't matter.
 
 #### What package manager to use
 
-Chose `npm` if you don't have `yarn` are when you're not sure what the heck `yarn` is.
+You may wish to choose `yarn` since that is the package manager
+that we use when doing work in the monorepo,
+and many of our tutorials are written to use `yarn`.
+However, it doesn't really matter.
+You can choose either `yarn` or `npm` as you wish.
 
 </Note>
 
@@ -201,7 +205,7 @@ If you chose `banana`, you'll have a folder named `banana`.
 You can ignore all other subfolders and files; they are part of the development environment.)
 
 To start the development environment, navigate to the folder that was created
-and run `npm run dev` (or `yarn dev` if you're using Yarn as a package manager).
+and run `yarn dev` (or `npm run dev` if you're using npm as a package manager).
 
 Then open your browser and go to http://localhost:8000
 

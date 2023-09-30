@@ -1,36 +1,32 @@
 ---
-title: "@freesewing/plugin-mirror"
+title: plugin-mirror
 ---
 
-The **@freesewing/plugin-mirror** plugin provides [the mirror
-macro](/reference/api/macros/mirror) which facilitates mirroring
-a number of points and/or paths around a given mirror line.
-
-<Example part="plugin_mirror">Example of the mirror plugin</Example>
-
-<Tip>
-
-The mirror plugin is part of our [plugin-bundle](/reference/plugins/bundle)
-
-</Tip>
+Published as [@freesewing/plugin-mirror][1], this plugin provides [the mirror
+macro](/reference/macros/mirror) which facilitates mirroring a number of
+points and/or paths around a given mirror line.
 
 ## Installation
 
-```bash
+```sh
 npm install @freesewing/plugin-mirror
 ```
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/types-of-plugins#build-time-plugins), you
-load them by passing them to the [freesewing.Design](/reference/api/design) super-constructor:
+Either [add it as a part plugins](/reference/api/part/config/plugins) in your
+design, or [add it to a pattern instance with
+Pattern.use()](/reference/api/pattern/use).
 
+To import the plugin for use:
 ```js
-import freesewing from "@freesewing/core";
-import mirror from "@freesewing/plugin-mirror";
-import config from "../config";
-
-const Pattern = new freesewing.Design(config, mirror);
+import { mirrorPlugin } from '@freesewing/plugin-mirror'
+// or
+import { pluginMirror } from '@freesewing/plugin-mirror'
 ```
 
-You can now use the [mirror](/reference/api/macros/mirror) macro in your parts.
+## Notes
+
+The mirror plugin is part of our [plugin-bundle](/reference/plugins/bundle)
+
+[1]: https://www.npmjs.com/package/@freesewing/plugin-mirror

@@ -1,21 +1,11 @@
 ---
 title: Add seam allowance and/or hem allowance
-for: developers
-about: Adding seam allowance or hem allowance is easy to do
 ---
-
-<Note>
-
-##### See this example in our source code
-
-- [designs/bruce/src/inset.js](https://github.com/freesewing/freesewing/blob/3ca5d0edfe54c7ac20aaf3af2f3544aee72f9b99/designs/bruce/src/inset.js#L32)
-
-</Note>
 
 Adding seam allowance is something that has to happen in every pattern.
 We might also have a hem where we need to add more seam allowance, or hem allowance.
 
-When doing this, it's best to split up your path so in those sections that share the same
+When doing this, it's best to split up your path into sections that share the same
 seam allowance.
 
 In the example below we have two such paths:

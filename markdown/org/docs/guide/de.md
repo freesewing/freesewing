@@ -3,7 +3,9 @@ title: Erste Schritte
 order: 100
 ---
 
-Hallo 👋 und willkommen bei freesewing.org 🙂 Das Lesen dieser Anleitung nimmt etwa 10 Minuten deiner Zeit in Anspruch, wird dir aber später eine Reihe von Fragen ersparen und stellt sicher, dass du das Beste aus unserer Website herausholen kannst.
+Hallo 👋 und willkommen bei freesewing.org 🙂
+
+Das Lesen dieser Anleitung nimmt etwa 10 Minuten deiner Zeit in Anspruch, wird dir aber später eine Reihe von Fragen ersparen und stellt sicher, dass du das Beste aus unserer Website herausholen kannst.
 
 ##### Was wir dir erklären werden
 
@@ -15,7 +17,7 @@ Hallo 👋 und willkommen bei freesewing.org 🙂 Das Lesen dieser Anleitung nim
 
 Klingt das gut? Dann fangen wir einfach direkt an:
 
-<ReadMore list />
+<ReadMore />
 
 <Tip>
 

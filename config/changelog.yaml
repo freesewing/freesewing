@@ -1,10 +1,92 @@
-2.22.1:
-  date: 2022-08-23
+Unreleased:
+  Changed:
 
-  fixed:
+3.0.0:
+  date: 2022-09-30
+  Changed:
+    all:
+      - All FreeSewing pacakges are now ESM only.
+      - All FreeSewing pacakges now use named exports.
+      - Dropped support for NodeJS 14. NodeJS 18 (LTS/hydrogen) or more recent is now required.
+
+  Removed:
+    global:
+      - The `@freesewing/components` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/css-theme` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/config-helpers` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+        Use the `@freesewing/snapseries` package for various helpers for snapped percentage options.
+        The `pctBasedOn` helper method is now available as a named export from `@freesewing/core`
+      - The `@freesewing/i18n` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/mui-theme` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/pattern-info` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/plugin-export-dxf` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/snapseries` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `@freesewing/utils` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `gatsby-remark-jargon` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+      - The `remark-jargon` package is not part of FreeSewing v3.
+        While v2 versions remain available, this package is no longer supported.
+        Use `rehype-jargon` instead.
+      - The `@freesewing/ursula` package is not part of FreeSewing v3.
+        While v2 versions remain available, use `@freesewing/uma` instead.
+      - The `@freesewing/unice` package is not part of FreeSewing v3.
+        While v2 versions remain available, use `@freesewing/uma` instead.
+      - The `@freesewing/plugin-bundle` package is not part of FreeSewing v3.
+        While v2 versions remain available, v3 uses `@freesewing/core-plugins` instead.
+
+    plugin-banner:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-bartack:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-bundle:
+      - Named exports of the bundled plugins are no longer available
+    plugin-bust:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
     plugin-buttons:
-      - Make markup compatible with v2
-        Closes [#2631](https://github.com/freesewing/freesewing/issues/2631)
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-cutonfold:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-dimension:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-flip:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-gore:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-grainline:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-i18n:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-logo:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-measurements:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-mirror:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-notches:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-round:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-scalebox:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-sprinkle:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-svgattr:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-theme:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-title:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
+    plugin-versionfree-svg:
+      - This plugin no longer sets its version as an SVG attribute when rendering patterns
 
 2.22.0:
   date: 2022-08-23
@@ -544,7 +626,6 @@
     plugin-title:
       - Removed rendering of config.cut as it's not used
 
-
 2.19.9:
   date: 2022-01-09
 
@@ -700,7 +781,6 @@
       - Fixed a regression that caused the `waistHeight` option to be ignored.
         Closes [#1467](https://github.com/freesewing/freesewing/issues/1467)
 
-
 2.19.3:
   date: 2021-11-05
 
@@ -711,7 +791,6 @@
   Changed:
     charlie:
       - Converted the `waistbandWidth` options to snapped pct (was normal pct)
-
 
 2.19.2:
   date: 2021-11-02
@@ -1121,7 +1200,6 @@
   Fixed:
     create-freesewing-pattern:
       - Don't list pattern as dependency in the example package.json
-
 
 2.16.0:
   date: 2021-05-24

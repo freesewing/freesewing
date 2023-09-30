@@ -1,22 +1,30 @@
 ---
-title: Hide paths from an inherited part
-for: developers
-about: When you inherit a part, it comes with a bunch of paths. Here'show to hide them
+title: Hide or remove paths from an inherited part
 ---
 
-<Note>
+To hide paths from an inherited part, iterate over the `paths` object
+and call `Path.hide()` on all entries:
 
-##### See this example in our source code
-
-- [designs/aaron/src/front.js](https://github.com/freesewing/freesewing/blob/3ca5d0edfe54c7ac20aaf3af2f3544aee72f9b99/designs/aaron/src/front.js#L22)
-
-</Note>
-
-The example below is from Aaron which inherits from Brian.
-
-We iterate over the paths and set their render property to false.
-
-```js
-  // Hide Brian paths
-  for (let key of Object.keys(paths)) paths[key].render = false
+```mjs
+for (const i in paths) paths[i].hide()
 ```
+
+To outright remove the paths all together, delete them:
+
+```mjs
+for (const i in paths) delete paths[i]
+```
+
+<Warning>
+Do __not__ replace the `path` object:
+
+```mjs
+paths = {}
+```
+
+as the `paths` object is more than a pojo (plain old JavaScript object)
+</Warning>
+
+<Tip>
+You can use the same strategy for hiding or removing points or snippets.
+</Tip>

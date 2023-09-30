@@ -1,0 +1,40 @@
+name: ESLint All Files
+
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  lint:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Cache node modules
+        uses: actions/cache@v3
+        id: cache_node_modules
+        with:
+          # caching node_modules
+          path: '**/node_modules'
+          key: node_modules-${{ hashFiles('yarn.lock') }}
+      - name: Install dependencies
+        if: steps.cache_node_modules.outputs.cache-hit != 'true'
+        run: yarn install
+        env:
+          CI: true
+      - name: Run eslint
+        run: npm run lint

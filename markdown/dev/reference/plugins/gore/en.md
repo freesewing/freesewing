@@ -1,16 +1,14 @@
 ---
-title: "@freesewing/plugin-gore"
+title: plugin-gore
 ---
 
-The **@freesewing/plugin-gore** plugin provides
-[the gore macro](/reference/api/macros/gore).
-This macro allows you to generate [gore
-segments](https://en.wikipedia.org/wiki/Gore_\(segment\)) —
-2D panels to create a sphehrical shape as used in hats for example —
-to your design.
+Published as [@freesewing/plugin-gore][1], this plugin provides [the gore
+macro](/reference/macros/gore) which allows you to generate [gore
+segments](https://en.wikipedia.org/wiki/Gore_\(segment\)); 2D panels to create
+a spherical shape as used in hats for example.
 
-You'll be happy to hear that this plugin handles all the
-mathematics for you to create a (part-)sphere in your patterns.
+This plugin handles all the mathematics to create a (part-)sphere in your
+designs.
 
 ## Installation
 
@@ -20,15 +18,15 @@ npm install @freesewing/plugin-gore
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/types-of-plugins#build-time-plugins), you
-load them by passing them to the [freesewing.Design](/reference/api/design) super-constructor:
+Either [add it as a part plugins](/reference/api/part/config/plugins) in your
+design, or [add it to a pattern instance with
+Pattern.use()](/reference/api/pattern/use).
 
+To import the plugin for use:
 ```js
-import freesewing from "@freesewing/core";
-import gore from "@freesewing/plugin-gore";
-import config from "../config";
-
-const Pattern = new freesewing.Design(config, gore);
+import { gorePlugin } from '@freesewing/plugin-gore'
+// or
+import { pluginGore } from '@freesewing/plugin-gore'
 ```
 
-Now you can use the [gore](/reference/api/macros/gore) macro in your parts.
+[1]: https://www.npmjs.com/package/@freesewing/plugin-gore

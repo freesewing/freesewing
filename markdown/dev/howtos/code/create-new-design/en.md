@@ -1,42 +1,40 @@
 ---
 title: Creating a new pattern design
-for: developers
-about: Shows you how to create a new design
 ---
 
-To create a new pattern, call `new freesewing.Design()`.
-It takes your pattern configuration,
-and any plugins you want to load as parameters.
+When creating a new design, you have two options. You can create it in a
+stand-alone development environment. Or, you can create it inside (your fork of)
+the FreeSewing monorepo.
 
-For example, if we were creating a new pattern called `Sorcha`:
+If you are unsure what to pick, go with the stand-alone development environment.
+It is the best choice for people new to FreeSewing.
 
-```js
-import freesewing from "@freesewing/core"
-import plugins from "@freesewing/plugin-bundle"
-import config from "../config"
+Working inside the monorepo is the preferred way of regular contributors, but
+if you were a regular contributor, you would probably already know this. So
+when in doubt, go stand-alone. You can always change track later.
 
-// Create new design
-const Sorcha = new freesewing.Design(config, plugins)
+## Stand-alone
+
+To setup the stand-alone development environment, you need NodeJS 18 or higher.
+Then run:
+
+```sh
+npx @freesewing/new-design
 ```
 
-This method does not return a `Design` object. Instead it returns
-a constructor method for your pattern.
+This command will setup FreeSewing's stand-alone development environment.
 
-When importing your pattern, it is itself a constructor:
+## Work inside the monorepo
 
-```js
-import Sorcha from "@freesewing/sorcha"
+First, [fork our monorepo](https://github.com/freesewing/freesewing/fork). Then run:
 
-// Sorcha is a constructor for your pattern. 
-let pattern = new Sorcha()
+```sh
+git clone <url to your fork>
+cd freesewing
+yarn kickstart
+yarn new design
 ```
 
-<Tip>
-
-##### Design() is a super-constructor
-
-Constructors are functions you can call with `new` to create an object.
-As `freesewing.Design()` returns a constructor, you can think of it
-as a super-constructor.
-
-</Tip>
+These commands will clone your fork of the
+[freesewing/freesewing](https://github.com/freesewing/freesewing) repository on
+GitHub and set it up for development.

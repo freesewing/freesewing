@@ -1,7 +1,7 @@
 ---
-title: Contents
+title: Зміст
 ---
 
-This setting allows you to manually pick which parts you want to include in your pattern.
+Це налаштування дозволяє вручну обрати елементи викрійки, які Ви хочете бачити на кресленику.
 
-This is often useful when you want to combine different styles. For example, you could draft a shirt pattern, and then also draft different cuffs for it. There's no need to print all pattern parts, so you can only draft your second pair of cuffs.
+Це може бути особливо корисним, якщо Ви хочете поєднати різні стилі. Наприклад, Ви можете створити викрійку сорочки та окремо створити кресленик з різними стилями чохли (манжета). Немає потреби друкувати всі частини викрійки, щоб отримати другу пару чохл.

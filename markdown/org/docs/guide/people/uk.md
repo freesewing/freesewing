@@ -1,12 +1,12 @@
 ---
-title: Your people
+title: Ваші люди
 order: 350
 ---
 
-Once you have an account, you can start adding measurements. But that quickly brings up the next question: what if you want a pattern for you, but also for your partner?
+З моменту створення облікового запису Ви можете додавати заміри. Але тоді виникає питання: що якщо Ви хочете викрійку для себе, але також для свого партнера?
 
-That's why we have _people_.
+Саме тому ми маємо _людей_.
 
-You create a person, and add measurements to that person. Now you can generate patterns for this person, based on their measurements.
+Коли Ви створюєте людину, Ви додаєте заміри цієї людини. Тепер Ви можете створювати викрійки для цієї людини на базі її вимірів.
 
-You can add as many people as you like. Having just one for yourself is fine too.
+Ви можете додати будь-яку кількість людей. Мати лише одну для себе — теж файно.

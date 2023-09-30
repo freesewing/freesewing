@@ -1,44 +1,77 @@
 ---
 title: Design 
-order: 10
 ---
 
-The `Design` object in FreeSewing's core library serves a single purpose:
-To instantiate new pattern designs.
+The `Design` named export in FreeSewing's core library is a constructor that
+creates new pattern designs.
 
-## Design constructor
+## Signature
 
 ```js
-function freesewing.Design(
-  object config, 
-  object|array plugins, // optional
-  object|array conditionalPlugins // optional
-) 
+Pattern Design({
+  array parts,
+  object data
+})
+```
+
+## Example
+
+```js
+const Sorcha = new Design({ 
+  // design configuration here
+})
 ```
 
 This constructor creates a new pattern design.
-It takes the following arguments:
+It takes a single argument, an object holding the design's configuration.
 
-- `config` : The pattern configuration
-- `plugins` : Either a [plugin object](/guides/plugins/), or an array of plugin objects
-- `conditionalPlugins` : Either a [conditional plugin object](/guides/plugins/conditionally-loading-build-time-plugins/), or an array
-  of conditional plugin objects to (conditionally) load in your pattern
+## Design configuration
+
+Since a design's configuration is managed at the part level,
+the Design configuration object only requires a `parts` property that should
+hold an array of parts to include in the Design.
 
 ```js
-import freesewing from "@freesewing/core"
-import plugins from "@freesewing/plugin-bundle"
-import config from "../config"
-
-// Create new design
-const Sorcha = new freesewing.Design(config, plugins)
+const Sorcha = new Design({ 
+  parts: [ front, back, sleeve ],
+})
 ```
 
-<Tip>
+<Tip>A Design in FreeSewing is little more than a container for various Parts</Tip>
 
-This method is a _super-constructor_. It will return a constructor
-method that will become the default export of your design and
-should be called to instantiate your pattern.
+Optionally, you can also pass it a `data` attribute
+to hold any custom data you'd like to add to your Design.
 
-See [creating a new pattern design](/howtos/code/create-new-design) for a complete example.
+Any `data` you add to the Design constructor will be added
+to [the Store](/reference/api/store).
 
-</Tip>
+```js
+const Sorcha = new Design({ 
+  parts: [ front, back, sleeve ],
+  data: {
+    version: 3,
+    price: 12,
+    currency: 'euro'
+  }
+})
+```
+
+## Notes
+
+
+The Design constructor is a _super-constructor_. 
+It will return a constructor method that will a pattern based on your design.
+
+## Properties
+
+In addition to the returned constructor method, an instantiated Design object
+also provides the following properties:
+
+### Design.designConfig
+
+This holds the design configuration as passed to the Design constructor.
+
+### Design.patternConfig
+
+Holds the resolved pattern configuration based on the configuration passed to the Design constructor.
+

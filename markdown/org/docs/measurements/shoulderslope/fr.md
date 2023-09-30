@@ -6,7 +6,7 @@ La mesure de **pente d'épaule** est un indicateur de la façon dont vos épaule
 
 Pour mesurer la pente de votre épaule, vous devez déterminer l'angle à partir duquel votre ligne d'épaule descend.
 
-A good way to measure your shoulder slope is to take a a selfie and rotate it until your shoulder line is horizontal.
+Une bonne façon de mesurer votre pente d'épaule est de prendre un selfie et de le faire pivoter jusqu'à ce que votre ligne d'épaule soit horizontale.
 
 L'angle que vous avez dû tourner est votre pente des épaules.
 

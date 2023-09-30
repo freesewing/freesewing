@@ -1,0 +1,41 @@
+{
+  "t": "Paco pants",
+  "d": "Paco are casual yet stylish summer pants.",
+  "p": {
+    "back": "Back",
+    "backPocketBag": "Back pocket bag",
+    "backPocketWelt": "Back pocket welt",
+    "backPocketWeltInterfacing": "Bacl pocket welt interfacing",
+    "cuff": "Cuff",
+    "front": "Front",
+    "frontPocketBag": "Front pocket bag",
+    "waistband": "Waistband"
+  },
+  "s": {},
+  "o": {
+    "heelEase": {
+      "t": "Heel ease",
+      "d": "The amount of ease at your heel (when stepping into the leg)"
+    },
+    "frontPockets": {
+      "t": "Front pockets",
+      "d": "Whether or not to add front pockets on the side seam"
+    },
+    "frontPocketFlapSize": {
+      "t": "Front pocket flap size",
+      "d": "This option controls the front pocket flap size, but it is not exposed to the UI"
+    },
+    "backPockets": {
+      "t": "Back pockets",
+      "d": "Whether or not to add welt pockets to the back"
+    },
+    "elasticatedHem": {
+      "t": "Elasticated hem",
+      "d": "Whether or not you want an elasticated hem"
+    },
+    "ankleElastic": {
+      "t": "Ankle/Hem elastic width",
+      "d": "Width of the (optional) elastic at the ankle/hem"
+    }
+  }
+}

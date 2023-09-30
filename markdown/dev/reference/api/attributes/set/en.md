@@ -1,29 +1,29 @@
 ---
-title: set()
+title: Attributes.set()
 ---
+
+The `Attributes.set()` method sets the attribute identified by `key` to value
+`value`.
+
+## Signature
 
 ```js
 Attributes attributes.set(string key, string value)
 ```
 
-Sets the attribute identified by `key` to value `value`.
-
-<Warning>
-
-This will overwrite any value that's currently set on the attribute identified by `key`.
-
-</Warning>
+## Example
 
 ```js
-let { Path, paths } = part.shorthand();
+const attr = new Attributes()
+  .add('class', 'classA')
+  .add('class', 'classB')
 
-// This will render as: class="classB"
-paths.demo = new Path();
-paths.demo.attributes.set('class', 'classA');
-paths.demo.attributes.set('class', 'classB');
-
-// This does the same thing:
-paths.demo = new Path()
-  .attr('class', 'classA', true)
-  .attr('class', 'classB', true);
+const class = attr.get('class')
+// class now holds: "classA classB"
 ```
+
+## Notes
+
+This will overwrite any value that's currently set on the attribute identified
+by `key`.
+

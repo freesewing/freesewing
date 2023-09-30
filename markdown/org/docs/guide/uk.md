@@ -1,29 +1,30 @@
 ---
-title: Getting started
+title: Перші кроки
 order: 100
 ---
 
-Hi there 👋 and welcome to freesewing.org 🙂\
-Reading this guide will take about 10 minutes of your time now, to save you a bunch of questions later, and make sure you get the most out of our website.
+Привіт 👋 і ласкаво просимо на сайт freesewing.org 🙂
 
-##### What we'll explain
+Прочитання цього гайду займе близько 10 хвилин та допоможе зорієнтуватися на нашому вебсайті та продуктивно ним користуватися.
 
-- We'll tell you \[what FreeSewing is]\[1] and [what freesewing.org is][2]
-- We'll tell you about our [made-to-measure sewing patterns][3] and what we mean by [_with breasts_ vs _without breasts_][4]
-- We'll cover [why you need an account][5] what we mean by [your people][6] or [your patterns][7], and we talk about [measurements][8]
-- We'll go over [how you can configure your patterns][9] with design and pattern options
-- Finally, we'll tell you [where you can get help][10] if you get stuck.
+##### Що ми пояснимо
 
-Sounds good? Then let's dive right in:
+- Ми розповімо [що таке FreeSewing][1] та [що таке freesewing.org][2]
+- Ми розповімо про наші [швейні викрійки на базі замірів][3] та що ми маємо на увазі під [_з молочними залозами_ та _без молочних залоз_][4]
+- Ми пояснимо [навіщо Вам створювати обліковий запис][5] та що ми маємо на увазі під [Вашими людьми][6] чи [Вашими викрійками][7], та поговоримо про [мірки][8]
+- Ми розглянемо [як Ви можете налаштувати свої викрійки][9] з налаштуваннями дизайну та кресленика
+- Наостанок, ми розповімо [де Ви можете отримати допомогу][10], якщо Ви застрягли.
 
-<ReadMore list />
+Звучить непогано? Тоді занурмося:
+
+<ReadMore />
 
 <Tip>
 
-##### You don't have to read everything
+##### Вам не обов'язково читати все це
 
-Feel free to click around to the parts that are most relevant to you.
-This guide is more reference than story.
+Не цурайтеся переглядати лише цікаві для Вас частини.
+Цей посібник працює більше як посилання, ніж пряма відповідь.
 
 </Tip>
 [1]: /docs/guide/what/

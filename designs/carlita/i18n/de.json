@@ -1,0 +1,15 @@
+{
+  "t": "Carlita, der Mantel",
+  "d": "Die Version für Brüste unseres Carlton-Mantels, aka Sherlock Holmes-Mantel.",
+  "p": {
+    "front": "Vorderseite",
+    "side": "Seite"
+  },
+  "s": {},
+  "o": {
+    "contour": {
+      "t": "Kontur",
+      "d": "Legt fest, wie stark figurbetont die Wiener Nähte sind."
+    }
+  }
+}

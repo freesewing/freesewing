@@ -1,7 +1,7 @@
 ---
-title: Head circumference
+title: Обхват голови
 ---
 
-The **head circumference** measurement wraps around the fullest part of your head.
+**Обхват голови** вимірюється навколо найширшої частини голови.
 
-To measure your head circumference, wrap the tape measure around your head at the height of your forehead.
+Для зняття обхвату голови, повністю охопіть найширшу частину голови, зазвичай ця лінія проходить через лоб.

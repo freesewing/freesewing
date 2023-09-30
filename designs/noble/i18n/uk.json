@@ -1,0 +1,99 @@
+{
+  "t": "Noble body block",
+  "d": "Noble is a body block with prince(ess) seams",
+  "p": {
+    "backInside": "Back inside",
+    "backOutside": "Back outside",
+    "backPoints": "Back base",
+    "frontInside": "Front inside",
+    "frontOutside": "Front outside",
+    "frontPoints": "Front base"
+  },
+  "s": {},
+  "o": {
+    "dartPosition": {
+      "t": "Dart position",
+      "d": "Controls whether to split at the shoulder or armhole"
+    },
+    "chestEase": {
+      "t": "Chest ease",
+      "d": "Controls the amount of ease at the chest"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at the waist"
+    },
+    "bustSpanEase": {
+      "t": "Bust span ease",
+      "d": "Controls the amount of ease along the bust span"
+    },
+    "backDartHeight": {
+      "t": "Controls the height of the back dart",
+      "d": "Back dart height"
+    },
+    "waistDartLength": {
+      "t": "Waist dart length",
+      "d": "Controls the length of the waist dart"
+    },
+    "shoulderDartPosition": {
+      "t": "Shoulder dart position",
+      "d": "Controls the position of the shoulder dart"
+    },
+    "upperDartLength": {
+      "t": "Upper dart length",
+      "d": "Controls the length of the upper dart"
+    },
+    "armholeDartPosition": {
+      "t": "Armhole dart position",
+      "d": "Controls the position of the armhole dart"
+    },
+    "armholeDepth": {
+      "t": "Armhole depth",
+      "d": "Controls the depth of the armhole"
+    },
+    "backArmholeSlant": {
+      "t": "Back armhole slant",
+      "d": "Controls the slant of the armhole at the back"
+    },
+    "backArmholeCurvature": {
+      "t": "Back armhole curvature",
+      "d": "Controls how deep the armhole is scooped out at the back"
+    },
+    "frontArmholeCurvature": {
+      "t": "Front armhole curvature",
+      "d": "Controls how deep the armhole is scooped out at the front bottom"
+    },
+    "frontArmholePitchDepth": {
+      "t": "Front armhole pitch depth",
+      "d": "Controls how deep the armhole cuts into the front"
+    },
+    "backArmholePitchDepth": {
+      "t": "Back armhole pitch depth",
+      "d": "Controls how deep the armhole cuts into the back"
+    },
+    "backNeckCutout": {
+      "t": "Back neck cutout",
+      "d": "Controls how deep the neck is cutout in the back"
+    },
+    "backHemSlope": {
+      "t": "Back hem slope",
+      "d": "Constrols the slope of the back hem"
+    },
+    "frontShoulderWidth": {
+      "t": "Front shoulder width",
+      "d": "Controls how much width is added to the shoulder in the front"
+    },
+    "highBustWidth": {
+      "t": "High bust width",
+      "d": "Controls the width of the high bust"
+    },
+    "shoulderToShoulderEase": {
+      "t": "Shoulder to shoulder ease",
+      "d": "Controls the amount of ease along the shoulder to shoulder measurement"
+    },
+    "fullChestEaseReduction": {
+      "t": "Full chest ease reduction",
+      "d": "FIXME: Document this option"
+    }
+  }
+}

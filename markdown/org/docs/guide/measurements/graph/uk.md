@@ -1,7 +1,7 @@
 ---
-title: Measurements graph
+title: Графік замірів
 ---
 
-Below is an example of a measurements graph. We will generate such a graph for your people as soon as you provide us with their neck circumference.
+Знизу Ви можете побачити приклад графіка мірок. Ми створюємо такий графік вимірювань для Ваших людей-моделей щойно Ви додасте обхват шиї.
 
-![Example of a measurements graph](graph.svg)
+![Приклад графіка вимірів](graph.svg)

@@ -5,14 +5,14 @@ order: 60
 
 Don't insert literal text in your patterns. Instead, insert a key that can then be translated.
 
-For example, if you want to put _Finish with bias tape_ on your pattern, don't be
+For example, if you want to put "_Finish with bias tape_" on your pattern, don't be
 tempted to do this:
 
 ```js
 path.seam.attr("data-text", "Finish with bias tape");
 ```
 
-That (English) string is now hard-coded in your pattern. As freesewing supports
+That (English) string is now hard-coded in your pattern. As FreeSewing supports
 translation out of the box, it would be a real shame not to make use of it.
 
 Instead, insert a key to identify the string:
@@ -21,6 +21,10 @@ Instead, insert a key to identify the string:
 path.seam.attr("data-text", "finishWithBiasTape");
 ```
 
-This way, it can be translated.
+This way, different strings for different languages can be associated with
+the key, allowing translated text to be used.
 
-You can find and browse the translations and available translation keys [in the freesewing/freesewing project](https://github.com/freesewing/freesewing/tree/develop/packages/i18n/src/locales).
+You can find and browse the translations and available translation keys in the
+[freesewing/freesewing project on GitHub][1].
+
+[1]: https://github.com/freesewing/freesewing/tree/develop/packages/i18n/src/locales

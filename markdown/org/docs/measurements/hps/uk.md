@@ -1,7 +1,7 @@
 ---
-title: High Point Shoulder (HPS)
+title: Найвища точка плеча
 ---
 
-The _high point shoulder_ or _HPS_ point is used as the base for several vertical measurements.
+_Найвища точка плеча_ використовується для зняття декількох вертикальних мірок. Такі мірки починаються на "від плеча до...".
 
-The HPS is where your shoulder seam would meet your neck. The point is situated where your neck meets your shoulder. If you put a marble there, it should not roll forward or backward, but roll towards your shoulder (as in, it should sit in the middle)
+Найвища точка плеча розташовується в перетині плечового шва та шиї. Тобто ця точка знаходиться там, де шия переходить в плечовий пояс. Умовно кажучи, якщо в цю точку покласти мармурову кульку, вона не має падати вперед чи назад — лише скочуватися вниз по плечовому поясу.

@@ -1,11 +1,16 @@
-svg.freesewing.pattern {
+/*  __SDEFILE__ - This file is a dependency for the stand-alone environment */
 
+svg.freesewing.pattern {
   /* Don't let the SVG surpass the parent container */
   max-width: 100%;
   max-height: 100%;
 
   /* Reset */
-  path, circle { fill: none; stroke: none; }
+  path,
+  circle {
+    fill: none;
+    stroke: none;
+  }
 
   /* Defaults */
   path,
@@ -18,29 +23,68 @@ svg.freesewing.pattern {
   }
 
   /* Stroke width utility classes */
-  .stroke-xs { stroke-width: calc(var(--pattern-stroke-xs) * var(--pattern-scale)); }
-  .stroke-sm { stroke-width: calc(var(--pattern-stroke-sm) * var(--pattern-scale)); }
-  .stroke-lg { stroke-width: calc(var(--pattern-stroke-lg) * var(--pattern-scale)); }
-  .stroke-xl { stroke-width: calc(var(--pattern-stroke-xl) * var(--pattern-scale)); }
-  .stroke-2xl { stroke-width: calc(var(--pattern-stroke-2xl) * var(--pattern-scale)); }
-  .stroke-3xl { stroke-width: calc(var(--pattern-stroke-3xl) * var(--pattern-scale)); }
-  .stroke-4xl { stroke-width: calc(var(--pattern-stroke-4xl) * var(--pattern-scale)); }
-  .stroke-5xl { stroke-width: calc(var(--pattern-stroke-5xl) * var(--pattern-scale)); }
-  .stroke-6xl { stroke-width: calc(var(--pattern-stroke-6xl) * var(--pattern-scale)); }
-  .stroke-7xl { stroke-width: calc(var(--pattern-stroke-7xl) * var(--pattern-scale)); }
-  .stroke-8xl { stroke-width: calc(var(--pattern-stroke-8xl) * var(--pattern-scale)); }
+  .stroke-xs {
+    stroke-width: calc(var(--pattern-stroke-xs) * var(--pattern-scale));
+  }
+  .stroke-sm {
+    stroke-width: calc(var(--pattern-stroke-sm) * var(--pattern-scale));
+  }
+  .stroke-lg {
+    stroke-width: calc(var(--pattern-stroke-lg) * var(--pattern-scale));
+  }
+  .stroke-xl {
+    stroke-width: calc(var(--pattern-stroke-xl) * var(--pattern-scale));
+  }
+  .stroke-2xl {
+    stroke-width: calc(var(--pattern-stroke-2xl) * var(--pattern-scale));
+  }
+  .stroke-3xl {
+    stroke-width: calc(var(--pattern-stroke-3xl) * var(--pattern-scale));
+  }
+  .stroke-4xl {
+    stroke-width: calc(var(--pattern-stroke-4xl) * var(--pattern-scale));
+  }
+  .stroke-5xl {
+    stroke-width: calc(var(--pattern-stroke-5xl) * var(--pattern-scale));
+  }
+  .stroke-6xl {
+    stroke-width: calc(var(--pattern-stroke-6xl) * var(--pattern-scale));
+  }
+  .stroke-7xl {
+    stroke-width: calc(var(--pattern-stroke-7xl) * var(--pattern-scale));
+  }
+  .stroke-8xl {
+    stroke-width: calc(var(--pattern-stroke-8xl) * var(--pattern-scale));
+  }
 
   /* Stroke dasharray utility classes */
-  .sa { stroke-dasharray: 1, 3; }
-  .help { stroke-dasharray: 15, 5, 2, 5; }
-  .dotted { stroke-dasharray: 0.5, 1; }
-  .dashed { stroke-dasharray: 2, 2; }
-  .lashed { stroke-dasharray: 8, 3; }
+  .sa {
+    stroke-dasharray: 1, 3;
+  }
+  .help {
+    stroke-dasharray: 15, 5, 2, 5;
+  }
+  .dotted {
+    stroke-dasharray: 0.5, 1;
+  }
+  .dashed {
+    stroke-dasharray: 2, 2;
+  }
+  .lashed {
+    stroke-dasharray: 8, 3;
+  }
 
   /* Hidden */
-  .hidden { stroke: none !important; fill: none !important; }
-  .no-stroke { stroke: none !important; }
-  .no-fill { fill: none !important; }
+  .hidden {
+    stroke: none !important;
+    fill: none !important;
+  }
+  .no-stroke {
+    stroke: none !important;
+  }
+  .no-fill {
+    fill: none !important;
+  }
 
   /* Text */
   text {
@@ -50,19 +94,49 @@ svg.freesewing.pattern {
     fill: currentColor;
     dominant-baseline: ideographic;
   }
-  .text-xs { font-size: calc(var(--pattern-text-xs) * var(--pattern-scale)); }
-  .text-sm { font-size: calc(var(--pattern-text-sm) * var(--pattern-scale)); }
-  .text-lg { font-size: calc(var(--pattern-text-lg) * var(--pattern-scale)); }
-  .text-xl { font-size: calc(var(--pattern-text-xl) * var(--pattern-scale)); }
-  .text-2xl { font-size: calc(var(--pattern-text-2xl) * var(--pattern-scale)); }
-  .text-3xl { font-size: calc(var(--pattern-text-3xl) * var(--pattern-scale)); }
-  .text-4xl { font-size: calc(var(--pattern-text-4xl) * var(--pattern-scale)); }
-  .text-5xl { font-size: calc(var(--pattern-text-5xl) * var(--pattern-scale)); }
-  .bold { font-weight: bold; }
+  .text-xs {
+    font-size: calc(var(--pattern-text-xs) * var(--pattern-scale));
+  }
+  .text-sm {
+    font-size: calc(var(--pattern-text-sm) * var(--pattern-scale));
+  }
+  .text-lg {
+    font-size: calc(var(--pattern-text-lg) * var(--pattern-scale));
+  }
+  .text-xl {
+    font-size: calc(var(--pattern-text-xl) * var(--pattern-scale));
+  }
+  .text-2xl {
+    font-size: calc(var(--pattern-text-2xl) * var(--pattern-scale));
+  }
+  .text-3xl {
+    font-size: calc(var(--pattern-text-3xl) * var(--pattern-scale));
+  }
+  .text-4xl {
+    font-size: calc(var(--pattern-text-4xl) * var(--pattern-scale));
+  }
+  .text-5xl {
+    font-size: calc(var(--pattern-text-5xl) * var(--pattern-scale));
+  }
+  .bold {
+    font-weight: bold;
+  }
+  .italic {
+    font-style: bold;
+  }
+  .capitalize {
+    text-transform: capitalize;
+  }
 
-  .center { text-anchor: middle; }
-  .baseline-center {dominant-baseline: central;}
-  .right { text-anchor: end; }
+  .center {
+    text-anchor: middle;
+  }
+  .baseline-center {
+    dominant-baseline: central;
+  }
+  .right {
+    text-anchor: end;
+  }
 
   /* muted page numbers */
   .muted {
@@ -89,7 +163,7 @@ svg.freesewing.pattern {
     stroke: none;
   }
   .svg-layout-button path {
-    stroke-width: calc(var(--pattern-stroke) * 2 * var(--pattern-scale));;
+    stroke-width: calc(var(--pattern-stroke) * 2 * var(--pattern-scale));
   }
   .svg-layout-button:hover > rect.button {
     fill: var(--pattern-lining);
@@ -161,19 +235,47 @@ svg.freesewing.pattern {
   }
 }
 
+/* Styling for v3 sampling */
+@for $i from 1 to 10 {
+  svg.freesewing.pattern g.sample-$i path.fabric,
+  svg.freesewing.pattern g.sample-$i path.lining,
+  svg.freesewing.pattern g.sample-$i path.interfacing {
+    stroke: var(--pattern-sample-$i);
+    fill: var(--pattern-sample-$i);
+    fill-opacity: 0.01;
+  }
+}
+
 /* Styling the shadow DOM is hard to do
  * This is for styling FreeSewing snippets
  * TODO: Update snippets to use inline styles with CSS vars
  */
-g#buttonhole path.note,
 g#notch circle.note,
 g#bnotch path.note,
 g#bnotch circle.note {
   stroke: var(--pattern-note);
   fill: none;
- }
+}
 g#notch circle.fill-note,
-g#bnotch circle.fill-note { fill: var(--pattern-note); }
+g#bnotch circle.fill-note {
+  fill: var(--pattern-note);
+}
+g#button circle.mark {
+  stroke: var(--pattern-mark);
+  fill: none;
+}
+g#button circle.fill-mark {
+  fill: var(--pattern-mark);
+}
+g#button circle.no-stroke {
+  stroke: none;
+}
+g#buttonhole path.mark,
+g#buttonhole-start path.mark,
+g#buttonhole-end path.mark {
+  fill: none;
+  stroke: var(--pattern-mark);
+}
 
 /* Same for paperless grid, also in shadow DOM */
 rect.grid {
@@ -203,7 +305,6 @@ path.gridline.imperial {
 path.gridline.imperial.sm {
   stroke-dasharray: 2 2;
 }
-
 
 figure.develop.example div.develop {
   .path,
@@ -249,4 +350,3 @@ figure.develop.example div.develop {
     border-color: var(--pattern-dev-7);
   }
 }
-

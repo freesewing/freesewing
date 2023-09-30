@@ -3,7 +3,6 @@
   "dev": "FreeSewing website with documentation for contributors & developers",
   "lab": "FreeSewing website to test various patterns",
   "org": "FreeSewing website",
-  "shared": "Shared code and React components for different websites",
-  "strapi": "Freesewing's Strapi instance",
-  "svgtopdf": "FreeSewing on-demand tiler"
+  "sde": "Stand-alone develpment environment. Basis for the @freesewing/new-design package",
+  "shared": "Shared code and React components for different websites"
 }

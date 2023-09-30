@@ -1,0 +1,28 @@
+{
+  "t": "Diana, top de escote drapeado",
+  "d": "Diana es un top con un escote drapeado.",
+  "p": {
+    "back": "Atrás",
+    "front": "Frente",
+    "sleeve": "Manga"
+  },
+  "s": {},
+  "o": {
+    "shoulderSeamLength": {
+      "t": "Longitud de la costura de hombro",
+      "d": "Controla la longitud de la costura de hombro"
+    },
+    "drapeAngle": {
+      "t": "Ángulo del drapeado",
+      "d": "Controla la cantidad de drapeado"
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at your hips"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at your waist"
+    }
+  }
+}

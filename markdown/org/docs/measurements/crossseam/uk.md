@@ -1,7 +1,7 @@
 ---
-title: Cross seam
+title: Посадка
 ---
 
-The **cross seam** is measured from the waist line at the front through your legs to the back.
+**Посадка** вимірюється від передньої лінії талії, вниз поміж ніг та до задньої лінії талії.
 
-To measure your **cross seam** tie a string around your waist. Then, measure down from the center front of your waist going through your legs back up to the back until you meet the string at your waist.
+Для зняття **посадки** зав'яжіть мотузку на талії. Потім, вимірюйте від переднього центру мотузки на талії, охоплюючи пах, до заднього центру мотузки на талії.

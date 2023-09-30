@@ -3,7 +3,7 @@ title: Using jargon
 order: yyy
 ---
 
-Jargon are terminology that could throw off new users.
+Jargon are terms that could throw off new users.
 Rather than create a glossary on every page, we use a plugin to manage
 jargon terms for us. This page shows you how to use it.
 
@@ -41,7 +41,7 @@ The file consists of key/value pairs where:
 The key in the jargon file should always be lowercase. That's because we
 lowercase the term before matching it.
 
-So in your text, you can use `ESM`, `ems`, or even `eSm`, but the key in
+So in your text, you can use `ESM`, `esm`, or even `eSm`, but the key in
 the jargon file should be `esm`.
 
 ### Tips for jargon values

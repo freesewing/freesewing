@@ -6,23 +6,15 @@ const pi = require('../packages/pattern-info/dist')
 const models = require('../packages/models/dist')
 const wb32 = models.withBreasts.size32
 const i18n = require('../packages/i18n/dist')
-let capitalize = require('../packages/utils/capitalize/index.js')
-capitalize = capitalize.default
+let { capitalize } = require('../packages/core/src/utils.mjs')
 
 const missing = []
 const lacking = []
 const extra = []
 const file = 'en.md'
-const subpages = [
-  'cutting',
-  'fabric',
-  'instructions',
-  'options',
-  'measurements',
-  'needs'
-]
+const subpages = ['cutting', 'fabric', 'instructions', 'options', 'measurements', 'needs']
 
-const patternDocsPage = pattern => `---
+const patternDocsPage = (pattern) => `---
 title: "Fixme"
 ---
 
@@ -55,32 +47,35 @@ const patternDocsSubPage = (pattern, sub) => {
     case 'measurements':
     case 'options':
       return component(sub, pattern)
-      break;
+      break
     default:
       return fixme
   }
 }
 
-const optionDocsPage = (pattern, option) => `---
-title: ` + i18n.strings.en[`options.${pattern}.${option}.title`] +
-  "\n---\n\n" +
-  i18n.strings.en[`options.${pattern}.${option}.description`] + "\n"
+const optionDocsPage = (pattern, option) =>
+  `---
+title: ` +
+  i18n.strings.en[`options.${pattern}.${option}.title`] +
+  '\n---\n\n' +
+  i18n.strings.en[`options.${pattern}.${option}.description`] +
+  '\n'
 
-const present = folder => {
+const present = (folder) => {
   try {
     if (fs.readFileSync(path.join(folder, file))) return true
-  }
-  catch (err) {
+  } catch (err) {
     return false
   }
 
   return false
 }
 
-const getSubFolders = folder => fs
-  .readdirSync(folder, {withFileTypes: true })
-  .filter(dirent => dirent.isDirectory())
-  .map(dirent => dirent.name)
+const getSubFolders = (folder) =>
+  fs
+    .readdirSync(folder, { withFileTypes: true })
+    .filter((dirent) => dirent.isDirectory())
+    .map((dirent) => dirent.name)
 
 const checkOptionDocs = () => {
   const steps = ['markdown', 'org', 'docs', 'patterns']
@@ -96,20 +91,14 @@ const checkOptionDocs = () => {
     }
     if (!present(folder)) {
       fs.mkdirSync(folder, { recursive: true })
-      fs.writeFileSync(
-        path.join(folder, file),
-        patternDocsPage(pattern),
-      )
+      fs.writeFileSync(path.join(folder, file), patternDocsPage(pattern))
     }
     // Sub pages
     for (const sub of subpages) {
       const folder = path.join(...steps, pattern, sub)
       if (!present(folder)) {
         fs.mkdirSync(folder, { recursive: true })
-        fs.writeFileSync(
-          path.join(folder, file),
-          patternDocsSubPage(pattern, sub),
-        )
+        fs.writeFileSync(path.join(folder, file), patternDocsSubPage(pattern, sub))
       }
     }
 
@@ -123,10 +112,7 @@ const checkOptionDocs = () => {
       if (!present(folder)) {
         missing.push(path.join(folder, file))
         fs.mkdirSync(folder, { recursive: true })
-        fs.writeFileSync(
-          path.join(folder, file),
-          optionDocsPage(pattern, option),
-        )
+        fs.writeFileSync(path.join(folder, file), optionDocsPage(pattern, option))
       }
     }
     // Now check for extra folders
@@ -136,18 +122,17 @@ const checkOptionDocs = () => {
   }
 
   if (missing.length < 1 && extra.length < 1 && lacking.length < 1) {
-    console.log("\n  🎉 Everything looks fine 😀\n")
+    console.log('\n  🎉 Everything looks fine 😀\n')
   } else {
     if (missing.length > 0) {
-      console.log("\n", 'Added documenation pages for the following options:', "\n\n")
+      console.log('\n', 'Added documenation pages for the following options:', '\n\n')
       for (const line of missing) console.log(line)
     }
     if (extra.length > 0) {
-      console.log("\n", 'Found extra folders that should not be there:', "\n\n")
+      console.log('\n', 'Found extra folders that should not be there:', '\n\n')
       for (const line of extra) console.log(line)
     }
   }
 }
 
 checkOptionDocs()
-

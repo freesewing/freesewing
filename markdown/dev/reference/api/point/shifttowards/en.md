@@ -2,43 +2,46 @@
 title: Point.shiftTowards()
 ---
 
-Returns a new `Point` that is shifted `distance` (mm) in the direction of the `target`.
+The `Point.shiftTowards()` method returns a new `Point` that is shifted
+`distance` (mm) in the direction of the `target`.
 
-If you need to move a point a percentage instead of a specific distance, use [`Point.shiftFractionTowards()`](/reference/api/point/shiftfractiontowards/) instead.
-
-## Point.shiftTowards() signature
+## Signature
 
 ```js
 Point point.shiftTowards(Point target, float distance)
 ```
 
-## Point.shiftTowards() example
+## Example
 
-<Example part="point_shifttowards">
-An example of the Point.shiftTowards() method
+<Example caption="An example of the Point.shiftTowards() method">
+```js
+({ Point, points, Path, paths, macro, part }) => {
+
+  points.A = new Point(90, 70).setText("Point A", "right text-sm")
+  points.B = new Point(10, 10).setText("Point B", "text-sm")
+  points.C = points.A.shiftTowards(points.B, 35)
+    .setText("Point C is point A shifted 3.5 cm\nin the direction of point B", "center, text-sm")
+    .attr("data-text-lineheight", 6)
+
+  paths.direction = new Path()
+    .move(points.A)
+    .line(points.B)
+    .addClass("note dashed")
+
+  macro("ld", {
+    from: points.C,
+    to: points.A,
+    d: -10
+  })
+
+  return part
+}
+```
 </Example>
 
-```js
-let { Point, points, Path, paths, macro } = part.shorthand();
 
-points.A = new Point(90, 70).attr("data-text", "Point A");
-points.B = new Point(10, 10).attr("data-text", "Point B");
-points.C = points.A.shiftTowards(points.B, 35)
-  .attr(
-    "data-text",
-    "Point C is point A shifted 3.5cm\nin the direction of point B"
-  )
-  .attr("data-text-class", "center")
-  .attr("data-text-lineheight", 6);
+## Notes
 
-paths.direction = new Path()
-  .move(points.A)
-  .line(points.B)
-  .attr("class", "note dashed");
-
-macro("ld", {
-  from: points.C,
-  to: points.A,
-  d: -10
-});
-```
+If you need to move a point a percentage instead of a specific distance, use
+[`Point.shiftFractionTowards()`](/reference/api/point/shiftfractiontowards/)
+instead.

@@ -1,45 +1,34 @@
 ---
-title: "@freesewing/plugin-round"
+title: plugin-round
 ---
 
-The **@freesewing/plugin-round** plugin provides [the
-round macro](/reference/api/macros/round) which helps you round
-corners on your designs.
-
-<Warning>
-
-##### Straight corners only
-
-The round macro is intended for rounding 90° angles.
-It does not support rounding other angles/corners.
-
-</Warning>
-
-<Example part="plugin_round">An example of the round macro</Example>
-
-<Tip>
-
-The round plugin is part of our [plugin-bundle](/reference/plugins/bundle)
-
-</Tip>
+Published as [@freesewing/plugin-round][1], this plugin provides [the round
+macro](/reference/macros/round) which helps you create rounded corners on your
+designs.
 
 ## Installation
 
-```bash
+```sh
 npm install @freesewing/plugin-round
 ```
 
 ## Usage
 
-Like all [build-time plugins](/guides/plugins/types-of-plugins#build-time-plugins), you
-load them by passing them to the [freesewing.Design](/reference/api/design) super-constructor:
+Either [add it as a part plugins](/reference/api/part/config/plugins) in your
+design, or [add it to a pattern instance with
+Pattern.use()](/reference/api/pattern/use).
 
 ```js
-import freesewing from "@freesewing/core";
-import round from "@freesewing/plugin-round";
-import config from "../config";
-
-const Pattern = new freesewing.Design(config, round);
+import { roundPlugin } from '@freesewing/plugin-round'
+// or
+import { pluginRound } from '@freesewing/plugin-round'
 ```
 
-Now you can use [the round macro](/reference/macros/round/): in your parts.
+## Notes
+
+The `round` macro is intended for rounding 90° angles.
+It does not support rounding other angles/corners.
+
+The round plugin is part of our [plugin-bundle](/reference/plugins/bundle)
+
+[1]: https://www.npmjs.com/package/@freesewing/plugin-round

@@ -8,13 +8,6 @@ core:
   - patterns
   - sewing
   - sewing patterns
-components:
-  - react
-css-theme:
-  - css
-  - scss
-  - sass
-  - theme
 design:
   - design
   - diy
@@ -40,10 +33,6 @@ models:
   - fashion
   - measurements
   - sizes
-mui-theme:
-  - material-ui
-  - react
-  - theme
 other:
   - design
   - diy
@@ -54,7 +43,6 @@ other:
 package:
   - freesewing
 patterns:
-  - bundle
   - design
   - diy
   - fashion
@@ -71,8 +59,7 @@ plugin:
   - made to measure
   - diy
   - fashion
-plugin-bundle:
-  - bundle
+core-plugins:
   - plugin
   - sewing pattern
   - sewing
@@ -81,5 +68,3 @@ plugin-bundle:
   - made to measure
   - diy
   - fashion
-
-

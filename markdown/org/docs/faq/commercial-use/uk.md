@@ -1,7 +1,7 @@
 ---
-title: Can I use FreeSewing patterns for commercial purposes?
+title: Чи можу я використовувати викрійки FreeSewing в комерційних цілях?
 ---
 
-Yes you can. Open Source is a development model, not a business model.
+Так, це можливо. Відкритий код — розробницька модель, а не бізнесова модель.
 
-If our work can help you put food on the table, by all means go ahead.
+Якщо наша праця може допомогти Вам заробити на хліб — вперед та з піснею.

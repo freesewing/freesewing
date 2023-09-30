@@ -1,0 +1,5 @@
+{
+  "verbose": true,
+  "ignore": ["tests/**.test.mjs"],
+  "watch": ["src/**", "openapi/*", "public/locales/**"]
+}

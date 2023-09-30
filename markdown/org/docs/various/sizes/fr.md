@@ -4,15 +4,15 @@ title: Tableau des tailles
 
 FreeSewing n'utilise pas les tailles. Tous nos patrons sont élaborés selon un ensemble de mesures.
 
-Since version 2.2 however, we do provide _standard sizes_. Chaque taille est un ensemble de mesures qui est une estimation de ce qu'une personne avec un tour de cou donné pourrait avoir comme mensuration.
+Depuis la version 2.2 cependant, nous fournissons des _tailles standards_. Chaque taille est un ensemble de mesures qui est une estimation de ce qu'une personne avec un tour de cou donné pourrait avoir comme mensuration.
 
-Ce n'est pas une science exacte. We provide these sizes as a fast and easy way to get started with our patterns. Mais nous espérons que vous prendrez le temps de prendre vos propres mesures, ou de les faire prendre. Cela donnera toujours de meilleurs résultats.
+Ce n'est pas une science exacte. Nous fournissons ces tailles comme un moyen rapide et facile de commencer à utiliser nos patrons. Mais nous espérons que vous prendrez le temps de prendre vos propres mesures, ou de les faire prendre. Cela donnera toujours de meilleurs résultats.
 
 <Tip>
 
-##### Open in a wide view
+##### Ouvrir en vue élargie
 
-These tables take up a lot or screen real-estate, which is why we
-[show sizes in a wide view](/sizes/).
+Ces tables prennent beaucoup de place et plus que contient l'écran, c'est pourquoi nous
+ [montrons les tailles dans une vue élargie](/sizes/).
 
 </Tip>

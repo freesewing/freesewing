@@ -1,0 +1,53 @@
+{
+  "name": "rehype-highlight-lines",
+  "version": "3.0.0",
+  "description": "A Rehype plugin to add highlighted lines to code blocks",
+  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "homepage": "https://freesewing.org/",
+  "repository": "github:freesewing/freesewing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freesewing/freesewing/issues"
+  },
+  "funding": {
+    "type": "individual",
+    "url": "https://freesewing.org/patrons/join"
+  },
+  "keywords": [
+    "freesewing",
+    "freesewing"
+  ],
+  "type": "module",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "internal": "./src/index.mjs",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
+    "test": "echo \"rehype-highlight-lines: No tests configured. Perhaps you could write some?\" && exit 0",
+    "lab": "cd ../../sites/lab && yarn start",
+    "tips": "node ../../scripts/help.mjs",
+    "lint": "npx eslint 'src/*.mjs'"
+  },
+  "peerDependencies": {},
+  "dependencies": {
+    "unist-util-remove": "4.0.0"
+  },
+  "devDependencies": {},
+  "files": [
+    "dist/*",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "engines": {
+    "node": "18",
+    "npm": "9"
+  }
+}

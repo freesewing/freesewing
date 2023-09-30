@@ -4,18 +4,18 @@ title: Freesewing-Einnahmenversprechen
 
 Das **FreeSewing-Einnahmenversprechen** besagt:
 
-> ## Alle FreeSewing Einnahmen werden an [Ärzte ohne Grenzen (MSF)](http://www.msf.org/) gespendet
+> ## Alle Einnahmen von FreeSewing werden an [Ärzte ohne Grenzen (MSF)](http://www.msf.org/) gespendet
 
 Das Versprechen wird vom FreeSewing-Maintainer (joost) getätigt und umgesetzt. Du kannst [seine Motivation dazu auf dieser Seite](/docs/various/pledge/motivation/) lesen.
 
-## Revenue history
+## Verlauf der Einnahmen
 
 <table class="table table-striped text-base-content">
   <thead>
     <tr>
       <th>Jahr</th>
-      <th>Revenue</th>
-      <th>Currency</th>
+      <th>Einnahmen</th>
+      <th>Währung</th>
     </tr>
   </thead>
   <tbody>
@@ -55,17 +55,15 @@ Das Versprechen wird vom FreeSewing-Maintainer (joost) getätigt und umgesetzt. 
       <td>Euro</td>
     </tr>
     <tr>
-      <td>**Total**</td>
+      <td>**Summe**</td>
       <td>`29.489,40`</td>
-      <td>**Euro donated to MSF**</td>
+      <td>**Euro an MSF gespendet**</td>
     </tr>
   </tbody>
 </table>
 
 <Tip>
 
-If you'd like to support FreeSewing, you can [do so by becoming a patron](/patrons/join/)
+Wenn du FreeSewing unterstützen möchtest, kannst du [dies tun, indem du ein/e Förderer/-in](/patrons/join/) wirst
 
 </Tip>
-
-

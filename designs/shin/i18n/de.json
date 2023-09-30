@@ -1,0 +1,36 @@
+{
+  "t": "Shin, die Badehose",
+  "d": "Shin ist eine sportliche Badehose.",
+  "p": {
+    "back": "Rückseite",
+    "front": "Vorderseite",
+    "waistband": "Bund"
+  },
+  "s": {},
+  "o": {
+    "legReduction": {
+      "t": "Verjüngung am Bein",
+      "d": "Reduziert die Hosenbeinöffnung um Anstehen zu verhindern"
+    },
+    "elasticWidth": {
+      "t": "Breite des Gummis",
+      "d": "Breite des Gummizugs an der Taille"
+    },
+    "stretch": {
+      "t": "Stretch",
+      "d": "The amount of stretch to design for."
+    },
+    "bulge": {
+      "t": "Bulge",
+      "d": "Controls the amount of extra room to create at the front of the trunks."
+    },
+    "rise": {
+      "t": "Rise",
+      "d": "Controls the height of the waist."
+    },
+    "backRise": {
+      "t": "Back rise",
+      "d": "Controls how much the waist is higher in the back than  the front."
+    }
+  }
+}

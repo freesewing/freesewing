@@ -1,30 +1,29 @@
 ---
-title: Measurements estimates
+title: Передбачення вимірів
 ---
 
-To help you spot measuring mistakes, we show an estimate of your different measurements next to the actual value. When the difference gets large, we'll draw your attention to that.
+Аби допомогти Вам побачити можливі помилки під час зняття мірок, ми показуємо передбачення Ваших вимірів біля фактичної величини. Якщо різниця між цими значеннями є великою, ми звернемо Вашу увагу на це.
 
 <Tip>
 
-This estimate is based on your neck circumference, so this won't show up until you've measured your neck.
+Ці передбачення базуються на обхваті шиї, тому вони не будуть показані до тих пір, доки Ви не додасте цей вимір.
 
 </Tip>
 
 <Note>
 
-##### This is a difficult area for us to work in
+##### Це складна частина проєкту
 
-We want to help you get the best results, and that includes helping you spot issues with your measurements.
-On the other hand, we in no way want to imply that someone's measurements are _wrong_ somehow.
+Ми хочемо допомогти Вам отримати найкращі результати та це передбачає знаходження помилок в процесі зняття мірок.
+З іншого боку, ми жодним чином не хочемо натякати, що Ваші виміри є "поганими".
 
-We are an extremely size-inclusive pattern outlet, and a disproportionate amount of our users are people who struggle to find clothes or patterns from other outlets.
-So on one hand, it might seem like we're setting ourselves up for failure by comparing measurements to a set of more or less _standard_ measurements.
-But you know your body. You know which of your measurements deviate from the average.
-And us pointing out that they do is in a way only confirmation that you've been measuring correctly.
-On the other hand, if something jumps out where you are fairly average sized, you know to double-check those measurements.
+Наша платформа має великий діапазон розмірів, та найбільша частина наших користувачів — люди, яким важко знаходити одяг чи викрійки в інших місцях.
+З одного боку, може здатися, що ідея порівнювати заміри з більш-менш "стандартними" мірками є провальною в такому випадку.
+Але Ви знаєте своє тіло. Ви знаєте які з Ваших вимірів відрізняються від загальних розмірних таблиць.
+І це є лише підтвердженням правильного зняття мірок, якщо ми зауважимо їх відмінність.
+З іншого боку, якщо таке зауваження стосується виміру, який зазвичай збігається з розмірними таблицями — Ви зможете перевірити цей вимір.
 
-Last but not least, while we try to provide guidance about measurements to help spot mistakes,
-we never exclude anyone based on size or measurement.
-No matter what you throw at us, we will draft a pattern for you, or (our software will) die trying.
+Наостанок, в той час як ми намагаємося допомогти Вам правильно зняти замірки та побачити можливі помилки, ми ніколи не обмежуємо доступ до викрійок, виходячи з розміру та мірок.
+Незалежно від того, які значення Ви додасте, ми створимо чернетку викрійки або наше програмне забезпечення помре геройською смертю.
 
 </Note>

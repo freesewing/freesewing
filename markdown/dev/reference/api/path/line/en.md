@@ -1,26 +1,33 @@
 ---
-title: line()
+title: Path.line()
 ---
+
+The `Path.line()` method draws a straight line from the current position to a
+given point.
+
+## Signature
 
 ```js
 Path path.line(Point to)
 ```
 
-Draws a straight line from the current position to a given point.
+<Tip compact>This method is chainable as it returns the `Path` object</Tip>
 
-<Example part="path_line">
-Example of the Path.line() method
-</Example>
+## Example
 
+<Example caption="Example of the Path.line() method">
 ```js
-let { Point, points, Path, paths } = part.shorthand();
+({ Point, points, Path, paths, part }) => {
 
-points.from = new Point(10, 10);
-points.to = new Point(90, 10);
+  points.from = new Point(10, 10)
+  points.to = new Point(90, 10)
 
-paths.line = new Path()
-  .move(points.from)
-  .line(points.to)
-  .attr("data-text", "Path.line()")
-  .attr("data-text-class", "text-sm center fill-note");
+  paths.line = new Path()
+    .move(points.from)
+    .line(points.to)
+    .setText("Path.line()", "text-sm center fill-note")
+
+  return part
+}
 ```
+</Example>

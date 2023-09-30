@@ -1,8 +1,8 @@
 ---
 name: 🐛 Bug report
 description: Report a problem, or something that went wrong
-title: "[bug]: "
-labels: [ "\U0001F41B bug" ]
+title: '[bug]: '
+labels: [':bug: bug']
 body:
   - type: markdown
     attributes:
@@ -10,7 +10,7 @@ body:
   - type: textarea
     id: desc
     attributes:
-      label: "What seems to be the problem? 🤔"
+      label: 'What seems to be the problem? 🤔'
       description: Please provide a clear and concise description of the problem you encountered
       placeholder: |
         When I generate a Simone with my dimensions, the corners of the yoke appear malformed. \
@@ -18,7 +18,7 @@ body:
   - type: dropdown
     id: pkg
     attributes:
-      label: "Design / Plugin / Package 🧐"
+      label: 'Design / Plugin / Package 🧐'
       description: Do you know what design/plugin/package the bug is in?
       multiple: true
       options:
@@ -51,6 +51,7 @@ body:
         - designs/lucy
         - designs/lunetius
         - designs/noble
+        - designs/octoplushy
         - designs/paco
         - designs/penelope
         - designs/plugintest
@@ -62,7 +63,6 @@ body:
         - designs/sven
         - designs/tamiko
         - designs/teagan
-        - designs/theo
         - designs/tiberius
         - designs/titan
         - designs/trayvon
@@ -73,54 +73,37 @@ body:
         - designs/walburga
         - designs/waralee
         - designs/yuri
-        - plugins/plugin-banner
-        - plugins/plugin-bartack
         - plugins/plugin-bundle
         - plugins/plugin-bust
-        - plugins/plugin-buttons
-        - plugins/plugin-cutonfold
-        - plugins/plugin-dimension
-        - plugins/plugin-export-dxf
         - plugins/plugin-flip
         - plugins/plugin-gore
-        - plugins/plugin-grainline
         - plugins/plugin-i18n
-        - plugins/plugin-logo
         - plugins/plugin-measurements
         - plugins/plugin-mirror
-        - plugins/plugin-notches
         - plugins/plugin-round
-        - plugins/plugin-scalebox
         - plugins/plugin-sprinkle
         - plugins/plugin-svgattr
         - plugins/plugin-theme
-        - plugins/plugin-title
-        - plugins/plugin-validate
+        - plugins/plugin-timing
         - plugins/plugin-versionfree-svg
-        - packages/components
-        - packages/config-helpers
         - packages/core
-        - packages/css-theme
-        - packages/gatsby-remark-jargon
         - packages/i18n
         - packages/models
-        - packages/mui-theme
         - packages/new-design
-        - packages/pattern-info
         - packages/prettier-config
+        - packages/rehype-highlight-lines
         - packages/rehype-jargon
-        - packages/remark-jargon
-        - packages/utils
+        - packages/snapseries
   - type: dropdown
     id: patron
     attributes:
-      label: Are you a FreeSewing patron? 😃 
-      description: "Patrons support us financially :pray: so they get priority"
+      label: Are you a FreeSewing patron? 😃
+      description: 'Patrons support us financially :pray: so they get priority'
       options:
-        - "Yes, I am a tier-2 patron ❤️"
-        - "Yes, I am a tier-4 patron ❤️  💙"
-        - "Yes, I am a tier-8 patron ❤️  💙 💜"
-        - "No, I am not 😞"
+        - 'Yes, I am a tier-2 patron ❤️'
+        - 'Yes, I am a tier-4 patron ❤️  💙'
+        - 'Yes, I am a tier-8 patron ❤️  💙 💜'
+        - 'No, I am not 😞'
     validations:
       required: true
   - type: textarea
@@ -133,3 +116,4 @@ body:
       value: |
         Please keep in mind that **FreeSewing is a community project** that depends on **[your support](https://freesewing.org/community/join/)**.
 ---
+

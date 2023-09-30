@@ -1,30 +1,37 @@
 ---
-title: start()
+title: Path.start()
 ---
+
+The `Path.start()` method returns the Point object at the start of the path.
+
+## Signature
 
 ```js
 Point path.start()
 ```
 
-Returns the Point object at the start of the path.
+<Tip compact>This method is chainable as it returns the `Path` object</Tip>
 
-<Example part="path_start">
-Example of the Path.start() method
-</Example>
+## Example
 
+<Example caption="Example of the Path.start() method">
 ```js
-let { Point, points, Path, paths, Snippet, snippets } = part.shorthand();
+({ Point, points, Path, paths, snippets, Snippet, part }) => {
 
-points.A = new Point(45, 60);
-points.B = new Point(10, 30);
-points.BCp2 = new Point(40, 20);
-points.C = new Point(90, 30);
-points.CCp1 = new Point(50, -30);
+  points.A = new Point(45, 60)
+  points.B = new Point(10, 30)
+  points.BCp2 = new Point(40, 20)
+  points.C = new Point(90, 30)
+  points.CCp1 = new Point(50, -30)
 
-paths.example = new Path()
-  .move(points.A)
-  .line(points.B)
-  .curve(points.BCp2, points.CCp1, points.C);
+  paths.demo = new Path()
+    .move(points.A)
+    .line(points.B)
+    .curve(points.BCp2, points.CCp1, points.C)
 
-snippets.start = new Snippet("notch", paths.example.start());
+  snippets.end = new Snippet("notch", paths.demo.start())
+
+  return part
+}
 ```
+</Example>

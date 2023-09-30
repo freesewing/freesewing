@@ -6,4 +6,4 @@ Le facteur d'échelle peut être utilisé pour réduire (ou augmenter) tout ce q
 
 Cela a été spécialement créé pour adapter des patrons pour les vêtements de poupée et d'autres situations où le texte et les encarts deviendraient trop volumineux par rapport au patron.
 
-You need to enable _Expert mode_ after which you can find the scale setting under _Advanced_.
+Vous devez activer le _Mode Expert_ après quoi vous pouvez trouver le réglage d'échelle sous _Avancé_.

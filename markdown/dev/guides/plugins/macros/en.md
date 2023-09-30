@@ -1,58 +1,37 @@
 ---
-title: Macros
-order: 90
+title: Macro methods
+order: 120
 ---
 
-Plugin structure for macros is similar, with a few changes:
+FreeSewing plugins can provide macros, which is a way to automate multiple
+steps into a single command.
 
-- Rather than the hook name, you provide the macro name (that you choose yourself)
-- The context (`this`) of a macro method is **always** a [Part](/reference/api/part) object.
+## Signature
 
-Apart from these, the structure is very similar:
+To provide one or more macros, your plugin should have a `macros` property that
+is an object where the keys are the macro name, and the value holds a method to
+run when the macro is executed.
 
-```js
-import {name, version} from '../package.json';
-
-export default {
-  name,
-  version,
+```mjs
+const myPlugin = {
+  name: 'example',
+  version: '0.0.1',
   macros: {
-    box: function(so) {
-      this.points.boxTopLeft = so.anchor;
-      this.points.boxTopRight = so.anchor.shift(0, so.size);
-      this.points.boxBottomRight = this.points.boxTopRight.shift(-90, so.size);
-      this.points.boxBottomLeft = new this.Point(so.anchor.x, this.points.boxBottomRight.y);
-     
-      this.paths.box = new this.Path()
-        .move(this.points.boxTopLeft)
-        .line(this.points.boxTopRight)
-        .line(this.points.boxBottomRight)
-        .line(this.points.boxBottomLeft)
-        .close()
-        .attr('class', 'box');
-		}
-	}
+    example: function(so, { log }) {
+      log.info('Running the example macro')
+    }
+  }
 }
 ```
 
-Did you figure out what this plugin does?
-It provides a `box` macro that draws a box on our pattern in a given location with a give size.
+## Arguments
 
-We can use it like this:
+All macros receive two arguments:
 
-```js
-points.boxAnchor = new Point(100, 100);
-macro('box', {
-  anchor: points.boxAnchor
-  size: 25
-}); 
-```
-
-Obviously, you can expect to learn how to call a macro in its documentation,
-rather than have to comb through its code.
+- `so`: A plain object holding configuration object passed to the macro
+- `props`: The same object as passed to the [`Part.draft()`](/reference/api/part/draft) method that you can destructure
 
 <Note>
-
 ###### Macros take only 1 argument
 
 When writing a macro, keep in mind that all information that needs to be passed
@@ -61,3 +40,7 @@ to a macro needs to be contained in a single argument.
 Typically, you use a single plain object to configure the macro.
 
 </Note>
+
+## Return value
+
+Macros do not need to return anything. If they do, it will be ignored.

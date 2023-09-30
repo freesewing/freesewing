@@ -1,18 +1,41 @@
 ---
-title: move()
+title: Path.move()
 ---
+
+The `Path.move()` method moves to a given point without drawing a line.
+
+## Signature
 
 ```js
 Path path.move(Point to)
 ```
 
-Moves to a given point without drawing a line.
+## Example
 
-<Tip>
 
-###### Always start your path with a move
+<Example caption="Example of the Path.move() method">
+```js
+({ Point, points, Path, paths, part }) => {
 
-When drawing a path, you must always start with a `move()` call,
+  points.to = new Point(50, 20)
+    .setText("Path.move()", "text-xs fill-note center")
+
+  paths.noline = new Path().move(points.to)
+
+  // Prevents clipping
+  paths.diag = new Path()
+    .move(new Point(40,19))
+    .move(new Point(70,21))
+
+  return part
+}
+```
+</Example>
+
+
+## Notes
+
+When drawing a path, **you must always start with a `move()` call**,
 followed by your `line()` and/or `curve()` calls
 and an optional `close()` call.
 
@@ -23,21 +46,5 @@ paths.example = new Path()
   .move(points.a)
   .curve(points.b, points.c, points.d)
   .line(points.e)
-  .close();
-```
-
-</Tip>
-
-<Example part="path_move">
-Example of the Path.move() method
-</Example>
-
-```js
-let { Point, points, Path, paths } = part.shorthand();
-
-points.to = new Point(50, 20)
-  .attr("data-text", "Path.move()")
-  .attr("data-text-class", "text-xs fill-note");
-
-paths.noline = new Path().move(points.to);
+  .close()
 ```

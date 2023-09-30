@@ -1,34 +1,31 @@
 ---
-title: HPS to bust
+title: Від плеча до грудей
 ---
 
 <Note>
 
-###### HPS: high point shoulder
+##### Найвища точка плеча
 
-The _high point shoulder_ or _HPS_ point is used as the base for several vertical measurements.
-Refer to [the hps documentation](/docs/measurements/hps/) for information on how to locate this point.
+Найвища точка плеча використовується для зняття декількох вертикальних мірок.
+Перегляньте [документацію про найвищу точку плеча](/docs/measurements/hps/) для інструкції про те, як знайти цю точку.
 
 </Note>
 
-The **high point shoulder (HPS) to bust** measurement runs from your HPS down to the line that forms your bust span.
+Вимір **від плеча до грудей** знімається починаючи від найвищої точки плеча вниз до лінії горизонтального обхвату грудей.
 
-To measure your HPS to bust, first [localize your HPS point](/docs/measurements/hps/). Then measure straight down to the line that forms your chest circumference/bust span.
+Для зняття цієї мірки, спочатку [знайдіть найвищу точку свого плеча](/docs/measurements/hps/). Далі вимірюйте від цієї точки вниз до лінії, яка умовно формує обхват грудей.
 
-The point of this measurement is to locate the fullest part of your bust vertically on your torso.
+Призначення цього виміру — зрозуміти, наскільки Ваші груди виступають відносно тулуба.
 
 <Tip>
 
-##### Think about which hand you're using
+##### Перевірте, якою рукою Ви користуєтесь
 
-If you measure yourself, you might try to hold your measuring tape up to your shoulder with the hand on
-the same side of your body as the shoulder you're measuring. So, for example, you could be holding the top of
-the tape up to your right shoulder with your right hand, while your left hand is holding the end.
-But that means you distort the length you are trying to measure by raising your arm on the same side.
-You might not think there is a difference, but all is connected in the world of physiology, and
-doing this could lead to an error of ~2.5cm (~1 inch) in your measurement.\
-Simply switch your hands around, and you get a more accurate measurement.
+Якщо Ви знімаєте цю мірку самостійно, то, можливо, Ви використовуєте ту ж руку, від якого плеча Ви вимірюєте. Наприклад, Ви тримаєте сантиметрову стрічку своєю правою рукою на найвищій точці свого правого плеча, у той час як Ваша ліва рука тримає низ стрічки на грудях.
+Але це може спотворити значення мірки, оскільки Ваше плече підняте в такій позиції.
+Вам ця різниця може здатися незначною, однак в тілі все поєднане між собою, та подібне зняття цієї мірки може дати похибку приблизно 2,5 см (1 дюйм).  
+Просто змініть ролі між руками, таким чином цей вимір буде більш актуальним.
 
-For best results, get a second person to take your measurements (if possible).
+Якщо є окрема людина, яка може допомогти Вам зняти цю мірку — це найкращий варіант.
 
 </Tip>

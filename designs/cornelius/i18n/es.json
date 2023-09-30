@@ -1,0 +1,53 @@
+{
+  "t": "Cornelius, pantalones cortos de ciclista",
+  "d": "Cornelius son pantalones cortos de ciclista basados en el método de bocetado Keystone.",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "frontpoints": "Front points",
+    "legband": "Legband",
+    "legbandKeystone": "Legband Keystone",
+    "pocket": "Pocket",
+    "pocketFacing": "Pocket facing",
+    "waistband": "Waistband",
+    "zipperguard": "Zipperguard"
+  },
+  "s": {
+    "Vent": "Ventilador",
+    "PocketFacing": "Cara de bolsillo"
+  },
+  "o": {
+    "fullness": {
+      "t": "Cumplimiento",
+      "d": "Controla la integridad de los breeches"
+    },
+    "waistbandBelowWaist": {
+      "t": "Banda inferior",
+      "d": "Porcentaje para mover la cintura debajo de la cintura actual"
+    },
+    "waistReduction": {
+      "t": "Reducción de cintura",
+      "d": "Porcentaje para reducir la cintura"
+    },
+    "cuffWidth": {
+      "t": "Cuff width",
+      "d": "Ancho del corte de la pierna"
+    },
+    "cuffStyle": {
+      "t": "Estilo del puño",
+      "d": "Estilo del corte de la pierna"
+    },
+    "bandBelowKnee": {
+      "t": "Corta debajo de la rodilla",
+      "d": "Controla la distancia del corte desde la rodilla"
+    },
+    "kneeToBelow": {
+      "t": "Longitud del puño",
+      "d": "Controla la rigidez del corte en comparación con la rodilla"
+    },
+    "ventLength": {
+      "t": "Longitud del ventilador",
+      "d": "Controla la longitud del ventilador entre la rodilla y el corte"
+    }
+  }
+}

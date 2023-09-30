@@ -4,15 +4,17 @@ on:
   push:
     branches:
       - develop
+      - v2
     paths:
       - '**'
-      - '!**/README.md'
+      - '!**/*.md'
   pull_request:
     branches:
       - develop
+      - v2
     paths:
       - '**'
-      - '!**/README.md'
+      - '!**/*.md'
 
 jobs:
   test:
@@ -21,27 +23,35 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [18.x]
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Setup Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
+      - name: Cache node modules
+        uses: actions/cache@v3
+        id: cache_node_modules
+        with:
+          # caching node_modules
+          path: '**/node_modules'
+          key: node_modules-${{ hashFiles('yarn.lock') }}
       - name: Install dependencies
-        run: npx lerna bootstrap
+        if: steps.cache_node_modules.outputs.cache-hit != 'true'
+        run: yarn install
         env:
           CI: true
-      - name: Build all
-        run: npm run buildall
+      - name: Build core plugins
+        run: "cd plugins/core-plugins && npm run build && cd -"
       - name: Run all tests
         run: npm run testall
       - name: Upload to codecov.io
         uses: codecov/codecov-action@v3
         with:
-          files: ./packages/core/coverage/coverage-final.json
+          files: ./packages/core/coverage/lcov.info
           flags: core
           name: codecov-core
-          fail_ci_if_error: true
+          fail_ci_if_error: false

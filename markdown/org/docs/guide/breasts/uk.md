@@ -1,24 +1,23 @@
 ---
-title: With or without breasts?
+title: З молочними залозами чи без молочних залоз?
 order: 250
 ---
 
-Some people get confused by the terms **with breasts** and **without breasts**.
+Багатьох людей дивує використання термінології **з молочними залозами** та **без молочних залоз**.
 
-We use these terms as a gender-inclusive way to ask whether or not a person has breasts.
+Ми використовуємо ці терміни, аби запитання було гендерно-нейтральним, а й, отже, гендерно інклюзивним.
 
 <Tip>
 
-Check [our FAQ on the matter](/docs/faq/breasts/) for more info.
+Ви можете дізнатися більше в [наших відповідях на поширені запитання] (freesewing.org/docs/faq/breasts/).
 
 </Tip>
 
 <Note>
 
-##### Why we ask in the first place
+##### Чому ми взагалі запитуємо про це
 
-Fitting a chest with breasts is more complex than fitting a chest without breasts.
-There are extra measurements and options required, and we want to display these
-only when it's relevant.
+Будова виробу ускладнюється залежно від присутності молочних залоз/великих грудей.
+Кількість вимірів теж збільшується та ці виміри показуються лише коли це актуально, про що ми й запитуємо користувачів.
 
 </Note>

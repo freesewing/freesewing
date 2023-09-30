@@ -1,5 +1,5 @@
 {
-  "version": "2.22.1",
+  "version": "3.0.0",
   "npmClient": "yarn",
   "command": {
     "publish": {
@@ -10,7 +10,6 @@
       "message": "release: Publish %s"
     },
     "bootstrap": {
-      "ignore": "component-*",
       "npmClientArgs": [
         "--no-package-lock"
       ]
@@ -21,6 +20,5 @@
     "packages/*",
     "plugins/*",
     "sites/*"
-  ],
-  "useWorkspaces": true
+  ]
 }

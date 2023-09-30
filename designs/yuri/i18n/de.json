@@ -1,0 +1,14 @@
+{
+  "t": "Yuri, der Hoodie",
+  "d": "Yuri ist ein schicker Cardigan ohne Reißverschluss, basierend auf den Huey & Hugo Hoodies",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "gusset": "Gusset",
+    "hoodCenter": "Hood center",
+    "hoodSide": "Hood side",
+    "sleeve": "Sleeve"
+  },
+  "s": {},
+  "o": {}
+}

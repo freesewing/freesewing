@@ -1,0 +1,56 @@
+{
+  "t": "Walburga Wappenrock",
+  "d": "Walburga is a tabard/surcoat, a historical garment from medieval Europe",
+  "p": {
+    "base": "Base",
+    "back": "Back",
+    "front": "Front"
+  },
+  "s": {},
+  "o": {
+    "headRatio": {
+      "t": "Head ratio",
+      "d": "Controls the size of the head opening"
+    },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "Allows variation of the length of the garment"
+    },
+    "widthBonus": {
+      "t": "Width bonus",
+      "d": "Allows variation of the width of the garment"
+    },
+    "length": {
+      "t": "Length",
+      "d": "Controls the length of the garment"
+    },
+    "length.toKnee": {
+      "t": "To the knee",
+      "d": "Draft a surcoat that ends at the knee"
+    },
+    "length.toMidLeg": {
+      "t": "To the middle of the leg",
+      "d": "Draft a surcoat that in the middle of the leg (below the knee)"
+    },
+    "length.toFloor": {
+      "t": "To the floor",
+      "d": "Draft a full-length surcoat down to the floor"
+    },
+    "neckoRatio": {
+      "t": "Neck opening shape",
+      "d": "controls the shape of the neck opening"
+    },
+    "neckline": {
+      "t": "Neckline",
+      "d": "Controls whether or not to draft a neck opening"
+    },
+    "necklineNo": {
+      "t": "No neck opening",
+      "d": "Drafts a surcoat without neck opening"
+    },
+    "necklineYes": {
+      "t": "With neck opening",
+      "d": "Drafts a surcoat with a neck opening included"
+    }
+  }
+}

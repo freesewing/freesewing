@@ -1,7 +1,7 @@
 ---
-title: Seam allowance
+title: Припуск на шов
 ---
 
-This controls whether you want _seam allowance_ or not. And, if you want it, how much you want.
+Керує наявністю _припусків на шви_. Ви можете не лише їх прибрати, а й змінити розмір.
 
-This will probably be self-explanatory if you know what seam allowance is. In case you don't, check out [the seam allowance documentation](/docs/sewing/seam-allowance).
+Це налаштування говорить саме за себе, якщо Ви знаєте що таке припуск на шов. Але якщо Ви не знаєте, перегляньте [документацію про припуски на шви](/docs/sewing/seam-allowance).

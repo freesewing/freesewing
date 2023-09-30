@@ -1,11 +1,11 @@
 ---
-title: Logo
+title: Логотип
 ---
 
-Some (or all) pattern pieces may also include the FreeSewing logo. The logo has no special meaning, it's just branding.
+Деякі (або всі) частини викрійки можуть також містити логотип FreeSewing. Логотип не має особливого значення, це просто брендинг.
 
 <Legend part="logo">
 
-The FreeSewing logo
+Логотип FreeSewing
 
 </Legend>

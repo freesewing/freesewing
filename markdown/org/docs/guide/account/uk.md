@@ -1,11 +1,11 @@
 ---
-title: Your account
+title: Ваш обліковий запис
 order: 300
 ---
 
-To generate made-to-measure sewing patterns, we need measurements. Asking for them every time would be rather tedious, so we store them for you.
+Для створення викрійок за вимірами нам, власне, потрібні виміри. Щоразу просити їх заповнити було б дуже клопітливо та виснажливо, а отже, ми зберігаємо цю інформацію.
 
-We need a place to store them, and that _place_ is your account. Your account data is stored on our backend, subject to [our privacy notice][1], and with respect for [your rights][2].
+Нам потрібне місце для збереження цих вимірів, і цим _місцем_ є Ваш обліковий запис. Дані Вашого облікового запису зберігаються в нашому бекенді, як вказано в наших [Умовах конфіденційності][1], з повагою до [Ваших прав][2].
 
 [1]: /docs/various/privacy/
 

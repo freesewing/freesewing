@@ -1,16 +1,15 @@
-##### Next contributor call on 20 August
+##### New release: v2.22.2
 
-[The next contributor call](https://github.com/freesewing/freesewing/discussions) is on **20 August 2022**, Lexander and Karen will host it.
+This is a bugfix release addressing come issues in the Titan and Paco design.
 
-The call is on [discord.freesewing.org](https://discord.freesewing.org/).
-Check the meetings voice/video channel.
+##### We're working on v3
 
-##### New designs: Hi, Noble, Unice, Bob, and Lucy
-
-Check the new designs, [Hi](/designs/hi), [Noble](/designs/noble), [Unice](/designs/unice), [Bob](/designs/bob), and [Lucy](/designs/lucy)
+We are working hard on the next major version of FreeSewing, which will be released in 2023.
 
 ##### Check out where FreeSewing is heading
 
 If you're curious to see what we're working on, check out [the
 FreeSewing roadmap](https://github.com/freesewing/freesewing/discussions/1278) which
 includes all the things on the horizon for FreeSewing.
+
+[1]: https://github.com/freesewing/freesewing/discussions/2613

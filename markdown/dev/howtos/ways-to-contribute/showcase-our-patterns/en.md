@@ -13,7 +13,7 @@ If you've got pictures, there's a few ways you can get them on the site:
 - [Facebook](#facebook)
 - [Discord](#discrod)
 - [Reddit](#reddit)
-- [Github](#github)
+- [GitHub](#github)
 - [Email](#email)
 
 ### Instagram
@@ -36,9 +36,9 @@ Post your pictures — or a link to them — in the `#pattern-showcase` channel 
 
 Post your pictures — or a link to them — in [r/freesewing](https://www.reddit.com/r/freesewing).
 
-### Github
+### GitHub
 
-Create an issue [on Github](https://github.com/freesewing/freesewing/issues/new?assignees=\&labels=%F0%9F%91%8D+good+first+issue%2C+%F0%9F%93%B8+showcase%2C+%F0%9F%A4%97+community\&template=4_showcase-template.md\&title=Create+showcase+from+this+content) and attach your pictures to it, or include a link to the pictures.
+Create an issue [on GitHub](https://github.com/freesewing/freesewing/issues/new?assignees=&labels=:%2B1:+good+first+issue%2C+:camera_flash:+showcase%2C+:hugs:+community&template=04_showcase-template.yaml&title=%5Bshowcase%5D%3A+Found+a+great+project+to+showcase) and attach your pictures to it, or include a link to the pictures.
 
 ### Email
 

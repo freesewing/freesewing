@@ -2,6 +2,6 @@
 title: Hombro a codo
 ---
 
-La medición del hombro **al codo** va desde el borde del hombro hasta el coco.
+La medida **del hombro al codo** va desde la punta del hombro hasta el codo.
 
-Para medir tu hombro **a codo**, empieza en el borde del hombro, donde la manga comienza en una camisa bien adaptada. Sigue tu brazo hasta tu coco.
+To measure your **shoulder to elbow**, start at the tip of your shoulder, the tip or corner of the protruding bone that is located where the top of the shoulder meets the side of the arm. It is also where the top of the shoulder seam sits and the sleeve begins on a well-fitting dress shirt. Sigue tu brazo hasta tu coco.

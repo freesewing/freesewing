@@ -1,0 +1,281 @@
+account: Cuenta
+yourAccount: Tu cuenta
+newPattern: Nuevo patrón
+newSet: Crear un nuevo conjunto de medidas
+links: Enlaces
+info: Información
+settings: Ajustes
+data: Datos
+sets: Conjuntos de medidas
+patterns: Patrones
+actions: Acciones
+created: Creado
+updated: Actualizado
+expires: Caduca en
+yourProfile: Tu perfil
+yourPatterns: Tus patrones
+yourSets: Tus conjuntos de medidas
+signOut: Regístrate
+politeOhCrap: Oh fiddlesticks
+bio: Bio
+email: Dirección de correo electrónico
+img: Imagen
+username: Nombre de usuario
+compare: Comparación de conjuntos métricos
+consent: Consentimiento y privacidad
+control: Experiencia del usuario
+imperial: Unidades
+units: Unidades
+apikeys: Claves API
+newsletter: Suscripción al boletín
+password: Contraseña
+newPasswordPlaceholder: Introduce aquí tu nueva contraseña
+passwordPlaceholder: Introduce aquí tu contraseña
+mfa: Autenticación de dos factores
+mfaTipTitle: Considera la posibilidad de activar la autenticación de dos factores
+mfaTipMsg: No aplicamos una política de contraseñas, pero te recomendamos que habilites la autenticación de dos factores para mantener segura tu cuenta de FreeSewing.
+mfaEnabled: La autenticación de dos factores está activada
+mfaDisabled: La autenticación de dos factores está desactivada
+mfaSetup: Configura la autenticación de dos factores
+mfaAdd: Añade FreeSewing a tu aplicación Authenticator escaneando el código QR de arriba.
+confirmWithPassword: Introduce tu contraseña para confirmar esta acción
+confirmWithMfa: Introduce un código de tu aplicación Authenticator para confirmar esta acción
+enableMfa: Activar la autenticación de dos factores
+disableMfa: Desactivar la autenticación de dos factores
+language: Idioma
+developer: Desarrollador
+design: Diseño
+patternMetadata: Pattern metadata
+clonePattern: Clone pattern
+updatePattern: Update pattern
+reload: Recargar cuenta
+export: Exporta tus datos
+exportMsg: Click below to export your personal data
+exportNote: The EU's General Data Protection Regulation (GDPR) ensures your so-called right to data portability — the right to obtain and reuse your personal data for your own purposes, or across different services.
+exportDownload: "Your data was exported and is available for download at the following location:"
+review: Revisa tu consentimiento
+restrict: Restringir el procesamiento de sus datos
+disable: Desactivar tu cuenta
+remove: Elimina tu cuenta
+proceedWithCaution: Proceder con cautela
+restrictWarning: While no data will be removed, this will disable your account. Furthermore, you can not undo this on your own, but will have to contact support when you want to restore access to your account.
+noWayBack: There is no way back from this.
+mdSupport: Puedes utilizar markdown aquí
+or: o
+continue: Continuar
+save: Guardar
+noThanks: No, gracias
+areYouCertain: '¿Estás seguro?'
+delete: Borra
+#reload
+nailedIt: Clavado
+gone: Puf. Se ha ido.
+reloadMsg1: Los datos almacenados en tu navegador a veces pueden desincronizarse con los datos almacenados en nuestro backend.
+reloadMsg2: Esto te permite recargar los datos de tu cuenta desde el backend. Tiene el mismo efecto que cerrar sesión y volver a iniciarla.
+#bio
+bioTitle: Cuéntale a la gente un poco sobre ti
+bioPreview: Biografía
+bioPlaceholder: Hago ropa y zapatos. Diseño patrones de costura. Escribo código. Dirijo [FreeSewing](http://freesewing.org)
+#compare
+compareTitle: '¿Te sientes cómodo comparando conjuntos de medidas?'
+compareYes: Sí, por si puede ayudarme
+compareYesd: |
+  De vez en cuando mostraremos cómo se compara tu conjunto de medidas con otros conjuntos de medidas.
+  Esto nos permite detectar posibles problemas en tus medidas o patrones.
+compareNo: No, nunca compares
+compareNod: |
+  Nunca compararemos tu conjunto de medidas con otros conjuntos de medidas.
+  Esto limitará nuestra capacidad de advertirte sobre posibles problemas en tus conjuntos de medidas o patrones.
+#control
+showMore: Mostrar más
+control1.t: Hazlo lo más sencillo posible
+control1.d: Oculta todas las funciones excepto las más importantes.
+control2.t: Hazlo sencillo, pero no demasiado
+control2.d: Oculta la mayoría de las funciones.
+control3.t: Equilibra la sencillez con la potencia
+control3.d: Revela la mayoría de las funciones, pero no todas.
+control4.t: Dame todos los poderes, pero mantenme a salvo
+control4.d: Revela todas las características, conserva los pasamanos y las comprobaciones de seguridad.
+control5.t: Apártate de mi camino
+control5.d: Revela todas las características, quita todas las barandillas y comprueba la seguridad.
+controlShowMore: Mostrar más opciones
+controlTitle: '¿Qué experiencia de usuario prefieres?'
+#img
+imgTitle: '¿Qué tal una foto?'
+imgDragAndDropImageHere: Arrastra y suelta una imagen aquí
+imgPasteUrlHere: Paste an image location (url) here
+imgSelectImage: Selecciona una imagen
+#newsletter
+newsletterTitle: '¿Quieres recibir el boletín de FreeSewing?'
+newsletterYes: Sí, deseo recibir el boletín
+newsletterYesd: Una vez cada 3 meses recibirás un correo electrónico nuestro con contenido sano y honesto. Sin seguimiento, sin anuncios, sin tonterías.
+newsletterNod: Siempre puedes cambiar de opinión más adelante. Pero hasta que no lo hagas, no te enviaremos ningún boletín.
+#imperial
+metricUnits: Unidades métricas (cm)
+metricUnitsd: Elige esta opción si prefieres los centímetros a las pulgadas.
+imperialUnits: Unidades imperiales (pulgadas)
+imperialUnitsd: Elige esta opción si prefieres las pulgadas a los centímetros.
+unitsTitle: '¿Qué unidades prefieres?'
+#username
+usernameTitle: '¿Qué nombre de usuario te gustaría?'
+usernameAvailable: Username is available
+usernameNotAvailable: El nombre de usuario no está disponible
+#email
+emailTitle: '¿Dónde podemos localizarte en caso de que tengamos una buena razón para ello (como cuando olvidaste tu contraseña)?'
+oneMoreThing: Una cosa más
+oneMomentPlease: Un momento, por favor
+emailChangeConfirmation: Hemos enviado un correo electrónico a tu nueva dirección para confirmar este cambio.
+vagueError: Algo ha ido mal y no estamos seguros de cómo solucionarlo. Por favor, inténtalo de nuevo o pide ayuda a un ser humano.
+#github
+githubTitle: Link your GitHub identity
+githubWhy1: Enter your GitHub username and email here and we will use them when interacting with GitHub on your behalf.
+githubWhy2: Note that both your GitHub username and email is public info. This merely allows us to make a link between your FreeSewing account and GitHub account.
+githubWhy3: For example, when you report a problem on this website, we can mention you so you will receive notifications when there is an update. For this, your username is sufficient.
+githubWhy4: When you submit a showcase post or make changed to our content, we can credit those commits to you if we have both your username and the email address you use on GitHub.
+tooComplex: If all of this in confusing, you don't have to provide this info. It's an advanced feature.
+#languge
+languageTitle: '¿Qué lengua prefieres?'
+#password
+passwordTitle: Algo que sólo tú sabes
+#api key
+newApikey: Generar una nueva clave API
+keyNewInfo: Crea una nueva clave API para conectarte al backend de FreeSewing de forma automatizada.
+keyName: Nombre clave
+keyNameDesc: Un nombre único para esta clave API. Sólo visible para ti.
+keyExpires: Clave de caducidad
+keyExpiresDesc: "La clave caducará el:"
+keyLevel: Nivel de permiso clave
+keyLevel0: Autenticar sólo
+keyLevel1: Lee el acceso a tus propios patrones y conjuntos de medidas
+keyLevel2: Acceso de lectura a todos los datos de tu cuenta
+keyLevel3: Escribe el acceso a tus propios patrones y conjuntos de medidas
+keyLevel4: Acceso de escritura a todos los datos de tu cuenta
+keyLevel5: Acceso de lectura a patrones y conjuntos de medidas de otros usuarios
+keyLevel6: Acceso de escritura a patrones y conjuntos de medidas de otros usuarios
+keyLevel7: Acceso de escritura a todos los datos de la cuenta de otros usuarios
+keyLevel8: Hacerse pasar por otros usuarios, acceso total de escritura a todos los datos
+cancel: Cancelar
+keySecretWarning: Esta es la única vez que puedes ver la clave secreta, asegúrate de copiarla.
+keyExpired: Esta clave API ha caducado
+deleteKeyWarning: Eliminar una clave API no se puede deshacer.
+keyDocsTitle: Refer to FreeSewing.dev for documentation on using API keys (English only)
+keyDocsMsg: This is an advanced feature aimed at developers or anyone who wants to interact with our backend directly.
+apiCalls: API Calls
+#bookmarks
+newBookmark: Add a Bookmark
+bookmark: Bookmark
+bookmarks: Bookmarks
+type: Tipo
+location: Location
+title: Título
+new: Nuevo
+designBookmark: Diseños
+patternBookmark: Patrones
+setBookmark: Conjuntos de medidas
+csetBookmark: Curated Measurements Sets
+docBookmark: Documentación
+customBookmark: Custom Bookmarks
+yourBookmarks: Your bookmarks
+bookmarkThisThing: Bookmark this { thing }
+page: Page
+#sets
+set: Measurements Set
+name: Nombre
+setNameDesc: Un nombre para identificar este conjunto de medidas
+setNewInfo: Crea un nuevo conjunto de medidas que luego podrás utilizar para generar patrones.
+notes: Notas
+setNotesDesc: Alguna nota que quieras guardar sobre este conjunto de medidas
+description: Descripción
+deleteSetWarning: Eliminar un conjunto de medidas no se puede deshacer.
+image: Imagen
+measies: Medidas
+setUnitsMsgTitle: Esta configuración sólo se aplica a este conjunto de medidas
+setUnitsMsgDesc: |
+  Estas son las unidades que utilizaremos cuando actualicemos o mostremos las medidas de este conjunto.
+  En todas las demás partes de este sitio web, utilizaremos las unidades de preferencia establecidas en tu cuenta.
+public: Público
+publicSet: Conjunto de medidas públicas
+privateSet: Conjunto de medidas privadas
+publicSetDesc: A otros se les permite utilizar estas mediciones para generar o probar patrones
+privateSetDesc: Estas medidas no pueden ser utilizadas por otros usuarios o visitantes
+permalink: Permalink
+editThing: Editar {thing}
+saveThing: Guardar {thing}
+filterByDesign: Filter by design
+noFilter: Do not filter
+filterByDesignDocs: If you have a specific design in mind, you can <b>filter by design</b> to only list those measurements that are required for this design.
+setLacksMeasiesForDesign: This set lacks measurements required for this pattern
+setHasMeasiesForDesign: This set has all measurements required for this pattern
+someSetsLacking: Some of your sets lack the measurments required to generate this pattern
+theseSetsReady: These sets have all required measurments to generate this pattern
+chooseSet: Elige una serie de medidas
+patternForWhichSet: '¿Para qué conjunto de medidas debemos generar un patrón?'
+bookmarkedSets: Conjuntos de medidas que has marcado como favoritos
+curatedSets: FreeSewing's curated measurements sets
+curatedSetsAbout: Conjuntos de medidas curadas por FreeSewing que puedes utilizar para probar nuestra plataforma, o tus diseños.
+curateCuratedSets: Curate our selection of curated measurements sets
+useThisSet: Utiliza este conjunto de medidas
+ownSets: Your own measurements sets
+noOwnSets: You do not have any of your own measurements sets (yet)
+pleaseMtm: Because made-to-measure lies at the heart of what we do, we strongly suggest you take accurate measurements.
+noOwnSetsMsg: You can store your measurements as a measurements set, after which you can generate as many patterns as you want for them.
+measurements: Medidas
+chooseASet: Choose a measurements set
+showImage: Show image
+suggestForCuration: Suggest for curation
+suggestCset: Suggest a measurements set for curation
+csetAllMeasies: To ensure curated measurements sets work for all designs, you need to provide a full set of measurements.
+csetMissing: Your measurements set is missing the following measurements
+allMeasiesAvailable: All measurements are available.
+csetHeightMsg1: To allow organizing and presenting our curated sets in a structured way, we organize them by height.
+csetImgMsg: Finally, we need a picture. Please refer to the documentation to see what makes a good picture for a curated measurements set.
+docs: Documentación
+csetNotesMsg: If you would like to add any notes, you can do so here.
+thankYouVeryMuch: Thank you very much
+csetSuggestedMsg: Your submission has been registered and will be processed by one of our curators.
+itIsAvailableAt: It is available at
+csetNameMsg: Each curated set has a name. You can suggest your own name or a pseudonym.
+patternNew: Generar un nuevo patrón
+patternNewInfo: Elige un diseño, añade tu juego de medidas y generaremos un patrón de costura a medida para ti.
+designNew: Crear un nuevo diseño
+designNewInfo: Los diseños de FreeSewing son pequeños paquetes de código JavaScript que generan patrones. No es difícil crear tus propios diseños, y tenemos un tutorial detallado para que empieces.
+pluginNew: Crear un nuevo plugin
+pluginNewInfo: La funcionalidad de FreeSewing puede ampliarse aún más con plugins. Crear un plugin es fácil, y tenemos una guía que te llevará de principio a fin.
+showcaseNew: Create a new showcase post
+showcaseNewInfo: If you would like to share something you (or someone else) made based on our designs, you can start a draft showcase post here.
+blogNew: Create a new blog post
+blogNewInfo: If you would like to write on the FreeSewing blog, you can start a draft blog post here.
+csetNew: Suggest a new curated measurements set
+csetNewInfo: We curate a collection of vetted measurments sets that we use to test patterns. You can suggest a measurements set here.
+opackNew: Suggest a new options pack
+opackNewInfo: We curate a collection of vetted option packs for each of our designs. You can suggest your options here.
+newPopular: Most popular
+newShare: Share / Show
+newDev: Design / Develop
+generateANewThing: "Genera un nuevo { thing }"
+website: Website
+linkedIdentities: Linked Identities
+websiteTitle: Do you have a website or other URL you'd like to add?
+platformTitle: Who are you on { platform }?
+platformWhy: We do not use this data in any way. This is only here so FreeSewing users can connect the dots across platforms.
+security: Security
+revealPassword: Reveal password
+hidePassword: Hide password
+#Design view
+designs: Diseños
+code: Código
+aboutThing: About { thing }
+requiredMeasurements: Medidas requeridas
+optionalMeasurements: Medidas opcionales
+designOptions: Opciones de diseño
+parts: Parts
+plugins: Plugins
+specifications: Specifications
+visitShowcase: Visit showcase post
+examples: Ejemplos
+noExamples: We currently do not have any examples for this design
+noExamplesMsg: We rely on the FreeSewing community to submit examples in our showcase posts.
+ownPublicPattern: This is the public view on one of your own patterns. For more options, access the private view.
+ownPrivatePattern: This is the private view on your pattern. The public view will work for you even when the pattern is private. It will only work for others when the pattern is public.
+privateView: Private view
+publicView: Public view

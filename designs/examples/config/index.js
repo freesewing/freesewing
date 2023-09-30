@@ -1,4 +1,6 @@
-import { version } from '../package.json'
+import pkg from '../package.json' assert { type: 'json' }
+
+const { version } = pkg
 
 export default {
   version,
@@ -94,6 +96,7 @@ export default {
     'utils_beamsintersect',
     'utils_beamintersectsx',
     'utils_beamintersectsy',
+    'utils_beamintersectscurve',
     'utils_lineintersectscurve',
     'utils_curvesintersect',
     'utils_pointonbeam',

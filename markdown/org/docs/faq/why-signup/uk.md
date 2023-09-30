@@ -1,21 +1,20 @@
 ---
-title: Why do I need to create an account to download a made-to-measure pattern?
+title: Чому мені потрібно створювати обліковий запис, щоб завантажити викрійку за моїми мірками?
 ---
 
-For practical reasons. To generate made-to-measure sewing patterns, we need your measurements.
+З практичних причин. Для створення викрійок за вимірами нам, власне, потрібні Ваші виміри.
 
-Asking for them every time would be rather tedious, so we need to store this information. And your account is where we do that.
+Щоразу просити їх заповнити було б дуже клопітливо та виснажливо, а отже, нам потрібно зберігати цю інформацію. Ваш обліковий запис — це місце, де зберігаються ці дані.
 
-Without a way to store your measurements, generating made-to-measure patterns would be hopelessly inpractical.
+Без способу збереження Ваших мірок, створення викрійок за вимірами було б дуже незручним.
 
 <Note>
 
-##### Are you asking because you don't trust us?
+##### Ви запитуєте, тому що Ви нам не довіряєте?
 
-This question often hints at an underlying distrust towards
-creating an account. As such, the following links may also be relevant:
+Подібні запитання часто вказують на недовіру щодо використання персональних даних. Якщо це так, наступні посилання можуть Вам допомогти зробити проінформований вибір:
 
-- Read \[our privacy notice]\[1]
-- Learn more about \[your rights]\[2]
+- Наші [умови конфіденційності][1]
+- [Ваші права][2] та як вони відносяться до FreeSewing
 
 </Note>

@@ -1,54 +1,48 @@
 ---
 title: Pattern design tutorial
-order: 50
-icons: 
-  - javascript
-  - pattern
-for: developers
-about: |
-  You'll learn how to create a FreeSewing pattern.
-  We will take you start to finish, from setting up the development environment
-  up to a completed pattern.
-goals:
-  - Setting up the development environment
-  - Creating a pattern part
-  - Using the user's measurements
-  - Using pattern options
-  - Using the shorthand method
-  - Creating points
-  - Creating paths
-  - Using macros and snippets
-  - Testing your pattern
-  - Adding seam allowance
-  - Adding dimentions for a paperless pattern
 ---
 
-Welcome to the FreeSewing tutorial, where you'll learn how to create a made-to-measure
-sewing pattern, start to finish.
+Hello there, and welcome to this FreeSewing pattern design tutorial.
+My name is Joost, and in this tutorial I will show you
+how to design a made-to-measure sewing pattern, start to finish.
 
-You will be designing a pattern for a baby bib. It's a very simple pattern, but that's the point.
-Your focus today is on learning FreeSewing and how to translate your designs into code.
+This tutorial is divided into three parts, allowing you to speedrun or entirely
+skip certain parts depending on your interests or prior experience:
 
-At the end of this tutorial, you will have created this pattern:
+## Part 1: Prerequisites 
 
-<Example pattern="tutorial" part="bib">Your end result</Example>
+The first sections of this tutorial, [Part 1](/tutorials/pattern-design/part1),
+deals with the prerequisites.  Installing node, setting up the FreeSewing
+development environment on your system, and so on.  If you are familiar with
+the JavaScript ecosystem, I can summarize that entire section in this one-liner
+that sets up the FreeSewing development environment on your system:
 
-Before we can get started, let's make sure you have the required software
-installed on your computer:
-
-## Prerequisites
-
-FreeSewing is a JavaScript library that runs on [Node.js](https://nodejs.org/).
-
-If you don't have Node.js on your system, follow the link above and
-install it on your system.
-
-When you're done, you can test whether it works by running:
-
-```bash
-node -v
+```sh
+npx @freesewing/new-design
 ```
 
-If you get the node version number, you're all set.
+## Part 2: Parametric design
 
-You can find the complete code of the tutorial pattern for the final result to help make sure you're following the steps correctly [here on GitHub](https://github.com/freesewing/freesewing/blob/develop/designs/tutorial/src/bib.js).
+In [Part 2](/tutorials/pattern-design/part2) I will show you how to design a
+parametric sewing pattern with FreeSewing.  We'll create a part, add a bunch of
+points, draw lines and curves, and so on.
+All the basic skills required to create a sewing pattern in code.
+
+This is probably a part you do not want to skip, unless you have prior
+experience with FreeSewing and are looking for a refresh on some of the more
+advanced features covered in the next section.
+
+## Part 3: Beyond the basics
+
+There is more to FreeSewing patterns than meets the eye, and in [Part
+3](/tutorials/pattern-design/part3) I will cover some of the ways you can add
+further value to your designs.
+
+This includes things like translation, supporting laser cutters, avoiding the
+need to printing with so-called *paperless patterns*, as well as how you can
+configure your pattern to integrate with FreeSewing.org, or your own
+frontend.
+
+
+You can follow this tutorial start to finish, or skip ahead and back, the
+choice is yours.

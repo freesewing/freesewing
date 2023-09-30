@@ -1,0 +1,50 @@
+{
+  "t": "Benjamin, pajarita",
+  "d": "Benjamin es un patrón de pajarita con cuatro formas a elegir.",
+  "p": {
+    "base": "Base",
+    "bow1": "Pajarita",
+    "bow2": "Pajarita",
+    "bow3": "Pajarita",
+    "ribbon": "Banda"
+  },
+  "s": {},
+  "o": {
+    "adjustmentRibbon": {
+      "t": "Cinta de ajuste",
+      "d": "Incluir o no una cinta de ajuste"
+    },
+    "bandLength": {
+      "t": "Longitud de la banda",
+      "d": "Longitud de la banda"
+    },
+    "tipWidth": {
+      "t": "Ancho de la punta",
+      "d": "Ancho de las puntas"
+    },
+    "knotWidth": {
+      "t": "Ancho de nudo",
+      "d": "Ancho del nudo"
+    },
+    "bowLength": {
+      "t": "Longitud del lazo",
+      "d": "Longitud del lazo (cuando está anudado)"
+    },
+    "bowStyle": {
+      "t": "Estilo del lazo",
+      "d": "Estilo del lazo"
+    },
+    "endStyle": {
+      "t": "Estilo de las puntas",
+      "d": "Estilo de las puntas del lazo"
+    },
+    "collarEase": {
+      "t": "Facilidad de cuello",
+      "d": "The amount of ease at your neck"
+    },
+    "ribbonWidth": {
+      "t": "Ribbon width",
+      "d": "Width of the ribbon"
+    }
+  }
+}

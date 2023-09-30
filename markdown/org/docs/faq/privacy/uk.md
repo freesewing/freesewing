@@ -1,7 +1,7 @@
 ---
-title: What are you doing with my personal data?
+title: Як використовуються мої особисті дані?
 ---
 
-How we handle your personal data is documented in [our privacy notice][1].
+Обробка особистих даних користувачів описана в [умовах конфіденційності][1].
 
 [1]: /docs/various/privacy/

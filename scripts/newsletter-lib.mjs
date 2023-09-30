@@ -7,18 +7,22 @@ import remark2rehype from 'remark-rehype'
 import format from 'rehype-format'
 import html from 'rehype-stringify'
 import mustache from 'mustache'
-import nodemailer from 'nodemailer'
 import { testers } from '../config/newsletter-testers.mjs'
-import { fileURLToPath } from 'url';
+import { fileURLToPath } from 'url'
+import { SESv2Client, SendEmailCommand } from '@aws-sdk/client-sesv2'
 
 // Current working directory
 const cwd = path.dirname(fileURLToPath(import.meta.url))
 
-
-const backend = "https://backend.freesewing.org/"
+const backend = 'https://backend.freesewing.org/'
 
 const asHtml = async (text) => {
-  const content = await unified().use(markdown).use(remark2rehype).use(format).use(html).process(text)
+  const content = await unified()
+    .use(markdown)
+    .use(remark2rehype)
+    .use(format)
+    .use(html)
+    .process(text)
 
   return content.value
 }
@@ -43,10 +47,14 @@ const getSubscribers = async (test = true) => {
 }
 
 const send = async (test = true) => {
+  const us = 'FreeSewing <info@freesewing.org>'
   const template = fs.readFileSync(`${cwd}/../config/templates/newsletter.html`, 'utf8')
   let edition
   try {
-    edition = await axios.get(`https://posts.freesewing.org/newsletters?slug_eq=${process.env.NL_EDITION}`, 'utf8')
+    edition = await axios.get(
+      `https://posts.freesewing.org/newsletters?slug_eq=${process.env.NL_EDITION}`,
+      'utf8'
+    )
   } catch (err) {
     console.log(err)
     process.exit()
@@ -56,15 +64,12 @@ const send = async (test = true) => {
   const subscribers = await getSubscribers(test)
   const content = await asHtml(text)
   const inject = { content }
-  const smtp = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
-    },
-  })
+
+  // Oh AWS your APIs are such a clusterfuck
+  const client = new SESv2Client({ region: 'us-east-1' })
 
   let i = 1
+  subscribers.sort()
   let subs = subscribers.length
   for (let sub of subscribers) {
     // If your SMTP relay start rate-limiting midway through
@@ -75,19 +80,42 @@ const send = async (test = true) => {
       inject.unsubscribe = unsub
       let body = mustache.render(template, inject)
       console.log(`${i}/${subs} Sending to ${sub.email}`)
-      await smtp.sendMail({
-        from: '"FreeSewing" <info@freesewing.org>',
-        to: sub.email,
-        subject: 'FreeSewing newsletter: Summer 2022',
-        headers: {
-          Language: 'en',
-          'List-Owner': 'joost@joost.at',
-          'List-Subscribe': 'https://freesewing.org/community/newsletter/',
-          'List-Unsubscribe': unsub,
+
+      // Via API
+      const command = new SendEmailCommand({
+        ConfigurationSetName: 'Newsletter',
+        Content: {
+          Simple: {
+            Body: {
+              Text: {
+                Charset: 'utf-8',
+                Data: text,
+              },
+              Html: {
+                Charset: 'utf-8',
+                Data: body,
+              },
+            },
+            Subject: {
+              Charset: 'utf-8',
+              Data: 'FreeSewing newsletter: Autumn 2023',
+            },
+          },
         },
-        text,
-        html: body,
+        Destination: {
+          ToAddresses: [sub.email],
+        },
+        //FeedbackForwardingEmailAddress: us,
+        FromEmailAddress: us,
+        //FromEmailAddressIdentityArn: "arn:aws:ses:us-east-1:550348293871:identity/freesewing.org",
+        //ReplyToAddresses: us,
       })
+      try {
+        await client.send(command)
+      } catch (err) {
+        console.log(err)
+        return false
+      }
     }
     i++
   }
@@ -96,7 +124,4 @@ const send = async (test = true) => {
 const sendTest = () => send(true)
 const sendReal = () => send(false)
 
-export {
-  sendTest,
-  sendReal,
-}
+export { sendTest, sendReal }

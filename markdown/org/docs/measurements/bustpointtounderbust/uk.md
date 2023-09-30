@@ -1,7 +1,7 @@
 ---
-title: Bust point to underbust
+title: Центр грудей до підгруддя
 ---
 
-The **bust point to underbust** measurement is the distance from your bust point/nipple to your underbust.
+**Центр грудей до підгруддя** — це відстань від центру грудей/соска до підгруддя.
 
-It's the distance an ant would have to walk to go from your bust point/nipple straight down to where your breast meets your torso.
+Це лінія від центру грудей/соска, що йде вниз до місця, де Ваші груди переходять у тулуб.

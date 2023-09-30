@@ -2,37 +2,44 @@
 title: Point.clone()
 ---
 
-Returns a new `Point` with the same coordinates and attributes as the original point.
+The `Point.clone()` method returns a new `Point` with the same coordinates and
+attributes as the original point.
 
-## Point.clone() signature
+## Signature
 
 ```js
 Point point.clone()
 ```
 
-<Note>
+<Tip compact>This method is chainable as it returns the `Point` object</Tip>
 
-###### Copy vs clone
+## Example
 
-The [`Point.copy()`](/reference/api/point/copy/) method will only copy the point's coordinates, whereas this
-`Point.clone()` method will also copy its attributes.
-
-</Note>
-
-## Point.clone() example
-
-<Example part="point_clone">
-An example of the Point.clone() method
-</Example>
-
+<Example caption="An example of the Point.clone() method">
 ```js
-  let { Point, points, Snippet, snippets } = part.shorthand();
+({ Point, points, Path, paths, Snippet, snippets, part }) => {
 
   points.A = new Point(25, 25)
-    .attr("data-text", "Point A")
-    .attr("data-text-class", "text-xl")
-    .attr("data-text-fill-opacity", "0.5");
-  points.B = points.A.clone().attr("data-text", "Point B");
+    .setText("Point A", "text-xl")
+    .attr("data-text-fill-opacity", "0.5")
+  points.B = points.A.clone().setText("Point B")
 
-  snippets.x = new Snippet("notch", points.A);
+  snippets.x = new Snippet("notch", points.A)
+
+  // Avoid the text getting cropped
+  paths.hidden = new Path()
+    .move(new Point(20,10))
+    .move(new Point(75,30))
+    .addClass('hidden')
+
+  return part
+}
 ```
+</Example>
+
+
+## Notes
+
+The [`Point.copy()`](/reference/api/point/copy/) method will only copy the
+point's coordinates, whereas this `Point.clone()` method will also copy its
+attributes.

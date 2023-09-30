@@ -1,17 +1,17 @@
 ---
-title: Titles
+title: Назви
 ---
 
-Each pattern piece has a title that tells you the number and name of the piece, as well as the pattern name and a timestamp of when the pattern was drafted:
+Кожен фрагмент викрійки має назву, яка вказує на номер і назву фрагмента, а також назву викрійки і позначку часу, коли викрійка була створена:
 
 <Legend part="title">
 
-Example of a title
+Приклад заголовка
 
 </Legend>
 
 <Note>
 
-When you generate a pattern on freesewing.org, the title will also include the name of the person the pattern was made for.
+Коли ви створюєте викрійку на freesewing.org, у назві також буде вказано ім'я людини, для якої викрійка була створена.
 
 </Note>

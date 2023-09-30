@@ -20,8 +20,8 @@ Cela vous donne deux pièces en miroir les unes des autres.
 
 ##### Que se passe-t-il s'il n'y a pas de bon côté évident ?
 
-When cutting out something without an obvious _good_ side (like interfacing),
-what matters is that you cut two mirrored pieces, rather than two identical ones.
+Lorsque vous coupez quelque chose sans un côté *bon* évident (comme l'interface), 
+ce qui importe, c'est que vous coupez deux pièces miroir plutôt que deux pièces identiques.
 
 </Note>
 

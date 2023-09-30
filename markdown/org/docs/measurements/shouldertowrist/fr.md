@@ -2,6 +2,6 @@
 title: Longueur de bras
 ---
 
-La **longueur de bras** détermine la longueur de votre manche, et court du point d'épaule le long du bras jusqu'à votre poignet.
+La mesure de la **longueur de bras** détermine la longueur de la manche et s'étend de la pointe de l'épaule au poignet le long du bras.
 
-Pour mesurer votre **longueur de bras** , placez votre ruban à votre point d'épaule. Laissez votre bras accrocher naturellement dans un léger virage, et mesurez le long de votre bras légèrement plié jusqu'à votre poignet.
+Pour mesurer votre **longueur de bras**, placez votre mètre ruban à l'extrémité de votre épaule, l'extrémité ou le coin de l'os saillant situé à l'endroit où le haut de l'épaule rencontre le côté du bras. C'est aussi l'endroit où se situe le haut de la couture de l'épaule et où la manche commence sur une chemise habillée bien ajustée. Laissez votre bras pendre naturellement en le pliant légèrement et mesurez le long de votre bras légèrement plié jusqu'à votre poignet.

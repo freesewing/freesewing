@@ -2,37 +2,39 @@
 title: Point.shiftOutwards()
 ---
 
-Returns a new `Point` that is shifted `distance` (mm) beyond the `target` in the direction of the target point.
+The `Point.shiftOutwards()` method returns a new `Point` that is shifted
+`distance` (mm) beyond the `target` in the direction of the target point.
 
-## Point.shiftOutwards() signature
+## Signature
 
 ```js
 Point point.shiftOutwards(Point target, float distance)
 ```
 
-## Point.shiftOutwards() example
+## Example
 
-<Example part="point_shiftoutwards">
-An example of the Point.shiftOutwards() method
-</Example>
-
+<Example caption="An example of the Point.shiftOutwards() method">
 ```js
-let { Point, points, Path, paths, macro } = part.shorthand();
+({ Point, points, Path, paths, macro, part }) => {
 
-points.A = new Point(90, 70).attr("data-text", "Point A");
-points.B = new Point(10, 10).attr("data-text", "Point B");
-points.C = points.A.shiftOutwards(points.B, 30)
-  .attr("data-text", "Point C is point A shifted 3cm\nbeyond point B")
-  .attr("data-text-lineheight", 6);
+  points.A = new Point(90, 70).setText("Point A", "text-sm right")
+  points.B = new Point(10, 10).setText("Point B", "text-sm")
+  points.C = points.A.shiftOutwards(points.B, 30)
+    .setText("Point C is point A shifted 3 cm\nbeyond point B", "text-sm")
+    .attr("data-text-lineheight", 6)
 
-paths.direction = new Path()
-  .move(points.A)
-  .line(points.C)
-  .attr("class", "note dashed");
+  paths.direction = new Path()
+    .move(points.A)
+    .line(points.C)
+    .addClass("note dashed")
 
-macro("ld", {
-  from: points.C,
-  to: points.B,
-  d: -10
-});
+  macro("ld", {
+    from: points.C,
+    to: points.B,
+    d: -10
+  })
+
+  return part
+}
 ```
+</Example>

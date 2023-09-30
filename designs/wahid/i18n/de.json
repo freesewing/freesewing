@@ -1,0 +1,73 @@
+{
+  "t": "Wahid, die Weste",
+  "d": "Wahid ist eine klassische taillierte Weste.",
+  "p": {
+    "back": "Rückseite",
+    "front": "Vorderseite",
+    "frontFacing": "Besatz Vorderseite",
+    "frontLining": "Futter Vorderseite",
+    "pocketBag": "Taschenbeutel",
+    "pocketFacing": "Taschenbesatz",
+    "pocketInterfacing": "Tascheneinlage",
+    "pocketWelt": "Taschenpaspel"
+  },
+  "s": {},
+  "o": {
+    "backScyeDart": {
+      "t": "Rückwärtige Armlochabnäher",
+      "d": "Die Menge, die in einem Abnäher hinten am Armloch entnommen werden muss."
+    },
+    "frontScyeDart": {
+      "t": "Vorderer Armlochabnäher",
+      "d": "Die Menge, die in einem Abnäher an der Vorderseite des Armlochs entnommen werden muss."
+    },
+    "pocketLocation": {
+      "t": "Taschenplatzierung",
+      "d": "Bestimmt die Platzierung der Tasche"
+    },
+    "pocketWidth": {
+      "t": "Taschenbreite",
+      "d": "Bestimmt die Breite der Tasche"
+    },
+    "weltHeight": {
+      "t": "Paspelhöhe",
+      "d": "Bestimmt die Höhe der Paspel"
+    },
+    "necklineDrop": {
+      "t": "Ausschnitt Tiefe",
+      "d": "Legt fest, wie tief der Ausschnitt vorne ausgeschnitten ist"
+    },
+    "frontStyle": {
+      "t": "Ausschnittstil",
+      "d": "Stil des Ausschnitts"
+    },
+    "hemStyle": {
+      "t": "Saumstil",
+      "d": "Art des vorderen Saums"
+    },
+    "hemRadius": {
+      "t": "Saumradius",
+      "d": "Der Betrag, um den der Saum gerundet ist"
+    },
+    "backInset": {
+      "t": "Rückseite Ausschnitt",
+      "d": "Wie viel die Rückseite des Armlochs nach innen verschoben ist"
+    },
+    "frontInset": {
+      "t": "Vorderseite Ausschnitt",
+      "d": "Wieviel das Armloch an der Vorderseite nach innen verschoben wird"
+    },
+    "shoulderInset": {
+      "t": "Schulterversatz nach innen",
+      "d": "Wieviel die Schulternaht nach innen Richtung Schulter versetzt wird"
+    },
+    "neckInset": {
+      "t": "Nackenauschnitt",
+      "d": "Wieviel die Schulternaht am Nacken nach innen versetzt wird"
+    },
+    "pocketAngle": {
+      "t": "Winkel der Tasche",
+      "d": "Winkel der Taschenneigung"
+    }
+  }
+}

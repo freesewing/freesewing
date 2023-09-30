@@ -13,5 +13,5 @@ Open the Terminal application, and type the following command:
 xcode-select --install
 ```
 
-A popup will appear asking you to confirm the installation.
+A pop-up will appear asking you to confirm the installation.
 Confirm, and go make a cup of coffee while the install does its thing.

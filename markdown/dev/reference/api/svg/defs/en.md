@@ -1,12 +1,12 @@
 ---
-title: defs
+title: Svg.defs
 ---
 
-A string that will be rendered
-as [the defs section](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs) of
-the SVG document.
+The `Svg.defs` property holds a string that will be rendered as [the defs
+section](https://developer.mozilla.org/en-US/docs/Web/SVG/Element/defs) of the
+SVG document.
 
-The defs attribute is where plugins will add additional snippets.
+## Signature
 
 ```svg
 <defs>
@@ -14,9 +14,9 @@ The defs attribute is where plugins will add additional snippets.
 </defs>
 ```
 
-<Warning>
+## Notes
 
-###### Add, but don't overwrite
+The defs attribute is where plugins will add additional snippets.
 
 When adding your own defs, it's important not to
 overwrite this property, but rather add your own.
@@ -24,13 +24,11 @@ overwrite this property, but rather add your own.
 In other words, do this:
 
 ```js
-svg.defs += myDefs;
+svg.defs += myDefs
 ```
 
 and don't do this:
 
 ```js
-svg.defs = myDefs;
+svg.defs = myDefs
 ```
-
-</Warning>

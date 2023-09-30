@@ -4,9 +4,9 @@ title: HPS a cintura frontal
 
 <Note>
 
-###### HPS: high point shoulder
+###### HPS: hombro de punto alto
 
-The _high point shoulder_ or _HPS_ point is used as the base for several vertical measurements.
+El punto _hombro de punto alto_ o _HPS_ se utiliza como base para varias mediciones verticales.
 Consulte [la documentación de hps](/docs/measurements/hps/) para obtener información sobre cómo localizar este punto.
 
 </Note>

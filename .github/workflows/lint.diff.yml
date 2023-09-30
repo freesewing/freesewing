@@ -1,0 +1,60 @@
+# In the event that lint is broken in mainline (e.g. `develop`, the only mainline branch that has linting code right now),
+# this workflow is expected to pass even if lint.all.yml fails.
+
+name: ESLint Changed Files
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  lint:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x]
+
+    steps:
+      - name: Fetch PR base ref
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.base_ref }}
+      - name: Checkout PR merge ref
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.ref }}
+      - name: Setup Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Cache node modules
+        uses: actions/cache@v3
+        id: cache_node_modules
+        with:
+          # caching node_modules
+          path: '**/node_modules'
+          key: node_modules-${{ hashFiles('yarn.lock') }}
+      - name: Install dependencies
+        if: steps.cache_node_modules.outputs.cache-hit != 'true'
+        run: yarn install
+        env:
+          CI: true
+      - name: Buil all
+        run: yarn buildall
+      - name: Run eslint
+        run: |
+          changed_files="$(git diff --name-only origin/${{ github.base_ref }})"
+          if (( $? )); then
+            echo "Failed diff against origin/${{ github.base_ref }}"
+            exit 1
+          else
+            echo "Changed files:"
+            echo "$changed_files"
+            echo
+            echo "Running eslint"
+            echo
+            npx eslint --no-error-on-unmatched-pattern $changed_files
+          fi

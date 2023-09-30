@@ -9,5 +9,6 @@ Freesewing supporte deux types d'unités :
 - Unités métriques (cm)
 - Unités impériales (pouces)
 
-You can configure your default units in your account settings.\
-In addition, you can set the units individually for each model.\ And if that wasn't enough, you can still override the units for an individual pattern with this setting.
+Vous pouvez configurer vos unités par défaut dans les paramètres de votre compte.  
+En plusde cela, vous pouvez définir les unités individuellement pour chaque modèle.  
+Et si cela ne suffisait pas, vous pouvez toujours remplacer les unités pour un patron individuel avec ce paramètre.

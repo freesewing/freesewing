@@ -875,7 +875,8 @@
       "profile": "https://github.com/BenJamesBen",
       "contributions": [
         "code",
-        "doc"
+        "doc",
+        "bug"
       ]
     },
     {
@@ -922,7 +923,126 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Bart-PXL",
+      "name": "Bart",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45118788?v=4",
+      "profile": "https://github.com/Bart-PXL",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "jdhoek",
+      "name": "Jeroen Hoek",
+      "avatar_url": "https://avatars.githubusercontent.com/u/683699?v=4",
+      "profile": "http://jeroenhoek.nl",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "SirCharlotte",
+      "name": "SirCharlotte",
+      "avatar_url": "https://avatars.githubusercontent.com/u/63847870?v=4",
+      "profile": "https://github.com/SirCharlotte",
+      "contributions": [
+        "translation"
+      ]
+    },
+    {
+      "login": "timorl",
+      "name": "timorl",
+      "avatar_url": "https://avatars.githubusercontent.com/u/4363804?v=4",
+      "profile": "https://github.com/timorl",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "MA-TATAS",
+      "name": "MA-TATAS",
+      "avatar_url": "https://avatars.githubusercontent.com/u/125549564?v=4",
+      "profile": "https://github.com/MA-TATAS",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "raphaelsiz",
+      "name": "mergerg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64447714?v=4",
+      "profile": "https://tech.lgbt/@mergerg",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "clegganator259",
+      "name": "David Clegg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3974250?v=4",
+      "profile": "https://github.com/clegganator259",
+      "contributions": [
+        "design",
+        "code"
+      ]
+    },
+    {
+      "login": "luizfzs",
+      "name": "Luiz Saggioro",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6039675?v=4",
+      "profile": "https://github.com/luizfzs",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "marpants",
+      "name": "marpants",
+      "avatar_url": "https://avatars.githubusercontent.com/u/61366665?v=4",
+      "profile": "https://github.com/marpants",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "trentonTrama",
+      "name": "Trent Trama",
+      "avatar_url": "https://avatars.githubusercontent.com/u/41126812?v=4",
+      "profile": "https://github.com/trentonTrama",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "ibek",
+      "name": "Ivo Bek",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1140579?v=4",
+      "profile": "https://github.com/ibek",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "compilin",
+      "name": "Lin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/40794281?v=4",
+      "profile": "https://github.com/compilin",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "evilrobotfromouterspace",
+      "name": "evilrobotfromouterspace",
+      "avatar_url": "https://avatars.githubusercontent.com/u/143673955?v=4",
+      "profile": "https://github.com/evilrobotfromouterspace",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
-  "skipCi": true
+  "skipCi": true,
+  "commitType": "docs"
 }

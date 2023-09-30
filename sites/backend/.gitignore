@@ -1,0 +1,7 @@
+# Protect auto-generated encryption keys
+encryption.key
+
+# SQLite databases
+*.sqlite
+*.sqlite-journal
+

@@ -5,14 +5,11 @@ order: zdd
 
 You can find a list of all FreeSewing reference documentation below:
 
-<ReadMore recurse />
+## Main sections
 
-<Related>
+<ReadMore />
 
-##### What makes a guide a guide?
+## Full list
 
-Reference materials hold technical descriptions of the underlying technology and how to make use of it.
+<ReadMore root recurse />
 
-For more details, refer to [How we structure our documentation](/guides/docs).
-
-</Related>

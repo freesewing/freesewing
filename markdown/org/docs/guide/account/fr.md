@@ -5,7 +5,7 @@ order: 300
 
 Pour créer des patrons sur mesure, nous avons besoin de vos mesures. Demander à chaque fois serait plutôt fastidieux, alors nous les stockons pour vous.
 
-We need a place to store them, and that _place_ is your account. Your account data is stored on our backend, subject to [our privacy notice][1], and with respect for [your rights][2].
+Nous avons besoin d'un endroit pour les stocker, et cet _endroit_ est votre compte. Les données de votre compte sont stockées dans nos serveurs, dans le respect de [notre politique de confidentialité][1], et dans le respect de [vos droits][2].
 
 [1]: /docs/various/privacy/
 

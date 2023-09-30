@@ -1,11 +1,11 @@
 ---
-title: What is FreeSewing?
+title: Що таке FreeSewing?
 ---
 
-[FreeSewing is an open source software project](https://github.com/freesewing/) with the aim of becoming the WikiPedia of sewing patterns.
+[FreeSewing — це програмне забезпечення з відкритим кодом](https://github.com/freesewing/), що має на меті стати Вікіпедією викрійок для шиття.
 
-We provide a [core library](https://www.npmjs.com/package/@freesewing/core) for parametric pattern design, an ever-growing [library of designs](/designs/) implemented in code, as well as a bunch of adjacent tools for building modern interfaces on top of our platform.
+Ми маємо [базову бібліотеку](https://www.npmjs.com/package/@freesewing/core) для створення викрійок за вимірами, [бібліотеку дизайнів одягу](/designs/) з імплементованим кодом, що постійно поповнюється, а також купу додаткових інструментів для створення сучасних інтерфейсів на нашій платформі.
 
-We are not interested in fashion, trends, or publishing the hot new pattern of the season. Instead, we want to empower makers by distilling the knowledge of the sewing community into parametric designs + documentation, and make that information freely available.
+Ми не зацікавлені тенденціями моди чи виданням гарячих новинок сезону. Натомість ми хочемо надати кравцям спільноту та її знання, на базі яких будуються наші викрійки та документація, та зробити цю інформацію доступною.
 
-FreeSewing is built by [contributors](/community/who/contributors/) who are all volunteers, and financially supported by [our Patrons](/community/who/patrons/).
+FreeSewing побудоване спільнотою [учасників](/community/who/contributors/), які допомагають на волонтерських засадах, та спонсорується [нашими патронами](/community/who/patrons/).

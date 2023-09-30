@@ -30,7 +30,7 @@ export const measurements = [
   'upperLeg',
   'waist',
   'waistBack',
-  'waistToArmhole',
+  'waistToArmpit',
   'waistToFloor',
   'waistToHips',
   'waistToKnee',
@@ -45,5 +45,3 @@ export const degreeMeasurements = ['shoulderSlope']
 
 /* Helper method to determine whether a measurement uses degrees */
 export const isDegreeMeasurement = (measie) => degreeMeasurements.indexOf(measie) !== -1
-
-

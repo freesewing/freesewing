@@ -1,16 +1,16 @@
 ---
-title: HPS to waist back
+title: Від плеча до талії ззаду
 ---
 
 <Note>
 
-###### HPS: high point shoulder
+##### Найвища точка плеча
 
-The _high point shoulder_ or _HPS_ point is used as the base for several vertical measurements.
-Refer to [the hps documentation](/docs/measurements/hps/) for information on how to locate this point.
+Найвища точка плеча використовується для зняття декількох вертикальних мірок.
+Перегляньте [документацію про найвищу точку плеча](/docs/measurements/hps/) для інструкції про те, як знайти цю точку.
 
 </Note>
 
-The **high point shoulder (HPS) to waist back** measurement runs from your HPS down to your waist line.
+Вимір **від плеча до талії ззаду** вимірюється починаючи від найвищої точки плеча вниз до лінії талії.
 
-To measure your HPS to waist back, first [localize your HPS point](/docs/measurements/hps/). Then measure straight down to your waist line.
+Для зняття цієї мірки, спочатку [знайдіть найвищу точку свого плеча](/docs/measurements/hps/). Далі вимірюйте від цієї точки вниз до лінії талії.

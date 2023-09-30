@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/models",
-  "version": "2.22.1",
+  "version": "3.0.0",
   "description": "Body measurements data for a range of default sizes",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -21,22 +21,29 @@
     "measurements",
     "sizes"
   ],
-  "main": "dist/index.js",
+  "type": "module",
   "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "internal": "./src/index.mjs",
+      "default": "./dist/index.mjs"
+    }
+  },
   "scripts": {
-    "build": "node build.js",
+    "build": "node build.mjs",
+    "build:all": "yarn build",
     "clean": "rimraf dist",
-    "mbuild": "NO_MINIFY=1 node build.js",
+    "mbuild": "NO_MINIFY=1 node build.mjs",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "test": "echo \"models: No tests configured. Perhaps you'd like to do this?\" && exit 0",
-    "vbuild": "VERBOSE=1 node build.js",
+    "test": "npx mocha tests/*.test.mjs",
+    "vbuild": "VERBOSE=1 node build.mjs",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
-    "cibuild_step6": "node build.js"
+    "lint": "npx eslint 'src/**' 'tests/*.mjs'",
+    "wbuild": "node build.mjs",
+    "wbuild:all": "yarn wbuild"
   },
-  "peerDependencies": {
-    "@freesewing/utils": "^2.22.1"
-  },
+  "peerDependencies": {},
   "dependencies": {},
   "devDependencies": {},
   "files": [
@@ -48,7 +55,7 @@
     "tag": "latest"
   },
   "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6"
+    "node": "18",
+    "npm": "9"
   }
 }

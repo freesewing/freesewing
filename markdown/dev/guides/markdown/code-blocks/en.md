@@ -38,7 +38,7 @@ let me = 'you'
 
 The following language codes are supported:
 
-- `js` for Javascript code
+- `js` for JavaScript code
 - `markdown` for Markdown
 - `html` for HTML
 - `svg` for SVG
@@ -46,3 +46,11 @@ The following language codes are supported:
 - `mdx` for MDX
 - `jsx` for JSX
 - `json` for JSON
+
+<Note>
+
+Note that `mermaid` code blocks will be rendered as
+[Mermaid](https://mermaid.js.org/) diagrams.  Refer to the docs on [custom
+tags](/guides/markdown/custom-components#mermaid) for an example.
+</Note>
+

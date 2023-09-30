@@ -3,20 +3,21 @@ title: Premiers pas
 order: 100
 ---
 
-Hi there 👋 and welcome to freesewing.org 🙂\
-Reading this guide will take about 10 minutes of your time now, to save you a bunch of questions later, and make sure you get the most out of our website.
+Bonjour 👋 et bienvenue sur freesewing.org 🙂
 
-##### Ce que nous allons expliquer
+La lecture de ce tutoriel prendra environ 10 minutes aujourd'hui, vous économisera un tas de questions plus tard, et vous assurera de tirer le meilleur parti de notre site Web.
 
-- We'll tell you [what FreeSewing is][1] and [what freesewing.org is][2]
-- We'll tell you about our [made-to-measure sewing patterns][3] and what we mean by [_with breasts_ vs _without breasts_][4]
-- We'll cover [why you need an account][5] what we mean by [your people][6] or [your patterns][7], and we talk about [measurements][8]
-- We'll go over [how you can configure your patterns][9] with design and pattern options
-- Finally, we'll tell you [where you can get help][10] if you get stuck.
+##### Nous allons expliquer
 
-Ça vous paraît bien ? Alors plongeons directement dans le bain :
+- Nous allons vous dire [ce qu'est FreeSewing][1] et [ce qu'est freesewing.org][2]
+- Nous allons vous parler de nos [patrons de couture sur mesure][3] et de ce que nous entendons par [_avec des seins_ vs _sans seins_][4]
+- Nous allons aborder les questions [pourquoi vous avez besoin d'un compte][5], ce que nous entendons par [vos personnes][6] ou [vos patrons][7], et nous parlons des [mensurations][8]
+- Nous enchaînerons avec [comment vous pouvez configurer vos patrons][9] avec des options de design et de patron
+- Enfin, nous vous dirons [où vous pouvez obtenir de l'aide][10] si vous êtes bloqué.
 
-<ReadMore list />
+Cela vous convient ? Alors approfondissons :
+
+<ReadMore />
 
 <Tip>
 

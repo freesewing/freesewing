@@ -1,5 +1,5 @@
 ---
-title: Various
+title: Різне
 order: 999
 ---
 

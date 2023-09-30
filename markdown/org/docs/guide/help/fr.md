@@ -3,6 +3,6 @@ title: Obtenir de l'aide
 order: 999
 ---
 
-If you get stuck or have questions, you can [join us on Discord](https://discord.freesewing.org/) where there's always somebody around to offer help.
+Si tu es bloqué ou si tu as des questions, tu peux [nous rejoindre sur Discord](https://discord.freesewing.org/) où il y a toujours quelqu'un pour offrir de l'aide.
 
-Altenatively, you can check out some of the other places [where you can find us](/community/where/).
+Sinon, vous pouvez consulter les autres endroits [où vous pouvez nous trouver](/community/where/).

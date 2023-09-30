@@ -1,98 +1,59 @@
 noNamespace:
-  - create-freesewing-pattern
   - rehype-jargon
-  - remark-jargon
-  - gatsby-remark-jargon
+  - rehype-highlight-lines
 customBuild:
-  - components
-  - create-freesewing-pattern
-  - css-theme
-  - gatsby-remark-jargon
   - i18n
-  - models
   - new-design
   - prettier-config
-  - remark-jargon
-  - plugin-bundle
-  - utils
+  - core-plugins
+  - react-components
   - rehype-jargon
+  - rehype-highlight-lines
 skipTests:
   - theo
 packageJson:
+  backend:
+    name: backend.freesewing.org
   bee:
     author: bobgeorgethe3rd (https://github.com/bobgeorgethe3rd)
   benjamin:
     author: woutervdub (https://github.com/woutervdub)
-  components:
-    # react-scripts doesn't handle .mjs files correctly
-    module: '!'
-    files:
-      - 'Blockquote/*'
-      - 'Draft/*'
-      - 'DraftConfigurator/*'
-      - 'Emblem/*'
-      - 'Example/*'
-      - 'Footer/*'
-      - 'Icon/*'
-      - 'Legend/*'
-      - 'LineDrawing/*'
-      - 'Logo/*'
-      - 'Navbar/*'
-      - 'Ogol/*'
-      - 'Robot/*'
-      - 'SampleConfigurator/*'
-      - 'Spinner/*'
-      - 'withGist/*'
-      - 'withLanguage/*'
-      - 'withStorage/*'
-      - 'Workbench/*'
-  create-freesewing-pattern:
-    bin:
-      create-freesewing-pattern: index.js
-    main: index.js
-    module: '!'
-    files:
-      - lib
-      - template
-      - README.md
-      - package.json
-      - '!lib/*.test.js'
-      - '!template/default/node_modules'
-  css-theme:
-    main: dist/theme.css
-    module: '!'
+  code:
+    c8:
+      reporter: html
+      all: yes
+      extension: mjs
+      exclude:
+        - 'node_modules/*'
+        - 'tests'
   hi:
     author: woutervdub (https://github.com/woutervdub)
   holmes:
     author: AlfaLyr (https://github.com/alfalyr)
   i18n:
-    # react-scripts doesn't handle .mjs files correctly
-    module: '!'
-  gatsby-remark-jargon:
-    keywords:
-      - remark
-      - mdx
-      - jargon
-      - gatsby
-      - gatsby-plugin
+    private: true
+  lab:
+    private: true
   lucy:
     author: SeaZeeZee (https://github.com/SeaZeeZee)
   lunetius: &starf
     author: Starfetch (https://github.com/starfetch)
+  magde:
+    author: clegganator259 (https://github.com/clegganator259)
   new-design:
+    exports: '!'
     bin:
-      new-design: "dist/index.js"
+      new-design: './index.mjs'
     files:
       - README.md
       - package.json
-      - dist/*
       - lib/**/*
       - shared/**/*
       - templates/**/*
       - index.mjs
       - package.json
+      - data.mjs
     module: '!'
-
   noble:
     author: woutervdub (https://github.com/woutervdub)
   octoplushy:
@@ -100,52 +61,21 @@ packageJson:
   plugin-gore:
     author: AlfaLyr (https://github.com/alfalyr)
   prettier-config:
-    main: 'index.json'
-    module: '!'
+    type: 'module'
+    exports: { .: './index.json' }
     scripts: { build: 'echo "prettier-config: No build required" && exit 0' }
     keywords:
       - prettier
     files:
       - index.json
       - package.json
+  rehype-hightlight-lines:
+    private: true
   sandy:
     author: AlfaLyr (https://github.com/alfalyr)
   tiberius: *starf
-  unice:
-    author: Anna Puk (https://github.com/anna-puk)
-  ursula:
-    author: Natalia Sayang (https://github.com/nataliasayang)
-  utils:
-    # react-scripts doesn't handle .mjs files correctly
-    module: '!'
-    files:
-      - 'backend/*'
-      - 'camelCase/*'
-      - 'capitalize/*'
-      - 'cloneObject/*'
-      - 'convertSize/*'
-      - 'defaultGist/*'
-      - 'defaultSa/*'
-      - 'formatImperial/*'
-      - 'formatMm/*'
-      - 'isDegMeasurement/*'
-      - 'measurementAsMm/*'
-      - 'measurementDiffers/*'
-      - 'neckstimate/*'
-      - 'optionDefault/*'
-      - 'optionType/*'
-      - 'roundMm/*'
-      - 'roundMmDown/*'
-      - 'roundMmUp/*'
-      - 'sliderStep/*'
-      - 'smallestImperialStep/*'
-      - 'storage/*'
-      - 'tiler/*'
-      - 'validateEmail/*'
-      - 'validateTld/*'
   waralee:
     author: woutervdub (https://github.com/woutervdub)
   walburga: *starf
   yuri:
-    author:  biou (https://github.com/biou)
-
+    author: biou (https://github.com/biou)

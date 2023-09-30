@@ -2,22 +2,18 @@
 title: Pattern.sampleMeasurement()
 ---
 
-A pattern's `sampleMeasurement()` method will _sample_ a given measurement,
-which means to draft it in different iterations while adjusting the input value
-of the given measurement.
-In practice, it will draft 10 iterations of the pattern
-while adapting the measurement between 90% and 110% of its original value.
+The `Pattern.sampleMeasurement()` method will _sample_ the pattern which means
+to draft multiple variants of the same pattern, and stack them on
+top of each other.
+
+In this particular case, it will draft 10 variants of the pattern that vary
+the measurement of your choice between 90% and 110% if the value in the settings.
 
 <Tip>
 The goal of measurement sampling is to understand the impact of a given measurement on a pattern.
 </Tip>
 
 <Note>This method is chainable as it returns the Pattern object</Note>
-
-<Tip>
-The goal of option sampling is to verify the impact of an option on the pattern, and verify that
-its min and max boundaries are correct and its default value is sensible.
-</Tip>
 
 ## Pattern.sampleMeasurement() signature
 
@@ -28,10 +24,12 @@ Pattern pattern.sampleMeasurement(string measurement)
 ## Pattern.sampleMeasurement() example
 
 ```js
-import Aaron from "@freesewing/aaron"
-import models from "@freesewing/models"
+import { Aaron } from "@freesewing/aaron"
+import { cisFemaleAdult34 } from "@freesewing/models"
 
-const pattern = new Aaron({ measurements: models.manSize38 })
+const pattern = new Aaron({
+  measurements: cisFemaleAdult34
+})
 
-const svg = pattern.sampleMeasurement("chest").render()
+const svg = pattern.draft().sampleMeasurement('chest')
 ```

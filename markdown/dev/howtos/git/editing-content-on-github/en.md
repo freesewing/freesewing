@@ -1,5 +1,5 @@
 ---
-title: Editing freesewing content on GitHub
+title: Editing FreeSewing content on GitHub
 ---
 
 ## Introduction
@@ -7,7 +7,7 @@ title: Editing freesewing content on GitHub
 This 'How to' is designed to help get you started editing content using the
 [GitHub website](https://github.com/freesewing).
 
-GitHub stores a lot of Freesewing content, it allows anyone to suggest
+GitHub stores a lot of FreeSewing content, it allows anyone to suggest
 edits, and helps the contributors to review and implement approved changes.
 
 If you are new to GitHub, you will need to [create an
@@ -15,7 +15,7 @@ account](https://github.com/signup?user_email=\&source=form-home-signup)
 (they are free).
 
 <Note>
-I is also possible to make changes using the GitHub desktop
+It is also possible to make changes using the GitHub desktop
 application and/or your computer's command line; these advanced topics are
 beyond the scope of this 'How to'.
 </Note>
@@ -41,7 +41,7 @@ but this guide should be enough to help you get started.
 
 ## Fork the repository
 
-- On GitHub.com, navigate to the freesewing
+- On GitHub.com, navigate to the FreeSewing
   [repository](https://github.com/freesewing/freesewing)
 - In the top-right corner of the page, click **Fork**
 ![Fork button](fork_button.png)
@@ -61,8 +61,11 @@ contains several files, one for each language.
 - Select on the file you want to update. 
 
 <Warning>
+  
 Please only edit the English language files (called `en.md`), 
-our translation software will handle the other languages.
+our translation software will handle the other languages. 
+Read more about translations in our [translation guide](/guides/translation).
+  
 </Warning>
 - Click on the **Edit** button.
 ![edit button image](edit-button.png)

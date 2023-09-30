@@ -2,16 +2,16 @@
 title: Titel
 ---
 
-Each pattern piece has a title that tells you the number and name of the piece, as well as the pattern name and a timestamp of when the pattern was drafted:
+Jedes Schnittmusterteil hat einen Titel, der dir die Nummer und den Namen des Teils sagt, und zusätzlich den Namen des Schnittmusters und einen Zeitstempel, wann das Schnittmuster erstellt wurde:
 
 <Legend part="title">
 
-Example of a title
+Beispiel für einen Titel
 
 </Legend>
 
 <Note>
 
-Wenn Sie ein Muster auf freesewing.org generieren, wird der Titel auch den Namen der Person enthalten, für die das Muster erstellt wurde.
+Wenn du ein Schnittmuster auf freesewing.org generierst, wird der Titel auch den Namen der Person enthalten, für die das Schnittmuster erstellt wurde.
 
 </Note>

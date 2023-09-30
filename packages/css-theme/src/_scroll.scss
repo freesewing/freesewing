@@ -1,6 +1,0 @@
-// Smooth scrolling by default
-html { scroll-behavior: smooth; }
-// But let people override it
-@media screen and (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-}

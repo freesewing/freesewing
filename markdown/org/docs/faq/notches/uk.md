@@ -1,9 +1,9 @@
 ---
-title: Why don't you use double notches to mark the back of the pattern?
+title: Як позначаються надсічки на викрійках?
 ---
 
-A double-notch is a common way to mark the back of the pattern. Common, but not universal.
+Надсічки використовуються як позначки для суміщення деталей та бувають різних форм. В Європі та США загальноприйнятий спосіб маркування задніх полотнищ викрійки — дві трикутні позначки (як витичні, так і зарубки). Однак такий спосіб не є загальноприйнятим за межами цих регіонів.
 
-Different parts of the world have different conventions or traditions on how to notch patterns. To avoid confusion, we use a differently styled notch to indicate the back, as detailed in [our pattern notation guide][1].
+В різних частинах світу є різні правила позначення суміщення деталей викрійки, наприклад, в Україні та багатьох інших слов'янських країнах найчастіше використовуються прості надсічки або трикутні зарубки. Щоб уникнути плутанини, ми розробили власну систему позначення передніх та задніх полотнищ викрійки, про яку Ви можете докладніше дізнатися в нашому [посібнику умовних позначок на викрійках][1].
 
 [1]: /docs/various/notation/

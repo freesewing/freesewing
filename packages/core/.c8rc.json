@@ -1,0 +1,6 @@
+{
+  "reporter": "lcov",
+  "all": true,
+  "extension": "mjs",
+  "exclude": ["node_modules/*", "tests"]
+}

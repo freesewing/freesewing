@@ -1,22 +1,25 @@
 ---
-title: get()
+title: Attributes.get()
 ---
+
+The `Attributes.get()` method will return the value of attribute stored under
+`key`, or `false` if it's not set.
+
+## Signature
 
 ```js
 string attributes.get(string key)
 ```
 
-Will return the value of attribute stored under `key`, or `false` if it's not set.
+If key has multiple values, they will be joined together in a string, separated by spaces.
 
-If key has multiple values, they will be joined together in a string, seperated by spaces.
+## Example
 
 ```js
-let { Path, paths } = part.shorthand();
+const attr = new Attributes()
+  .add('class', 'classA')
+  .add('class', 'classB')
 
-paths.demo = new Path()
-  .attr('class', 'classA')
-  .attr('class', 'classB');
-
-let class = paths.demo.attributes.get('class'); 
+const class = attr.get('class')
 // class now holds: "classA classB"
 ```

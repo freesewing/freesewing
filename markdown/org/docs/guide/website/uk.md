@@ -1,8 +1,8 @@
 ---
-title: What is freesewing.org?
+title: Що таке freesewing.org?
 order: 150
 ---
 
-Freesewing.org is our flagship website that offers made-to-measure sewing patterns to makers all over the world.
+Freesewing.org — наш флагманський сайт, що пропонує швейні викрійки на базі замірів кравцям Земної кулі.
 
-It is our most visible asset, and for many people their first encounter with the project. The place where all our work on comes together and teams up, to provide you with something we hope you will appreciate.
+Це наш найяскравіший елемент, та для багатьох людей — їх перше знайомство з проєктом. Місце, де вся наша робота поєднується, аби створити для Вас щось, що, ми сподіваємося, Ви цінуватимете.

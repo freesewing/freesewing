@@ -29,11 +29,11 @@ See [the reference documentation][1] on [freesewing.dev][2]
 You don't have to use numbers, but can also use named references.
 
 ```md
-We moved the markdown content to [our monorepo][monorepo]
+We moved the Markdown content to [our monorepo][monorepo]
 
 [monorepo]: https://github.com/freesewing/freesewing
 ```
 
-We moved the markdown content to [our monorepo][monorepo]
+We moved the Markdown content to [our monorepo][monorepo]
 
 [monorepo]: https://github.com/freesewing/freesewing

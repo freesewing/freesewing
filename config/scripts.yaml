@@ -1,47 +1,115 @@
 _:
-  build: 'node build.js'
+  build: &build 'node build.mjs'
+  'build:all': 'yarn build'
   clean: 'rimraf dist'
-  mbuild: 'NO_MINIFY=1 node build.js'
+  mbuild: &mbuild 'NO_MINIFY=1 node build.mjs'
   symlink: 'mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -'
-  test: &notests 'echo "{{name}}: No tests configured. Perhaps you''d like to do this?" && exit 0'
-  vbuild: 'VERBOSE=1 node build.js'
-  lab: "cd ../../sites/lab && yarn start"
-  tips: "node ../../scripts/help.mjs"
+  test: 'echo "{{name}}: No tests configured. Perhaps you could write some?" && exit 0'
+  vbuild: &vbuild 'VERBOSE=1 node build.mjs'
+  lab: 'cd ../../sites/lab && yarn start'
+  tips: 'node ../../scripts/help.mjs'
+  lint: "npx eslint 'src/**' 'tests/*.mjs'"
 _types:
   design:
-    prettier: "npx prettier --write 'src/*.js' 'config/*.js'"
+    prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
     test: &test 'npx mocha tests/*.test.mjs'
-    testci: &testci "npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js"
+    testci: &testci 'NODE_OPTIONS="--conditions=internal" npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js'
   plugin:
-    prettier: "npx prettier --write 'src/*.js' 'tests/*.mjs'"
+    prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
     test: *test
     testci: *testci
-css-theme:
-  build: 'npx node-sass --output-style compressed src/theme.scss dist/theme.css'
-  watch: 'npx node-sass --watch --output-style compressed src/theme.scss dist/theme.css'
-components:
-  clean: 'rimraf Blockquote && rimraf Draft && rimraf DraftConfigurator && rimraf Emblem && rimraf Example && rimraf Footer && rimraf Icon && rimraf Legend && rimraf LineDrawing && rimraf Logo && rimraf Navbar && rimraf Ogol && rimraf Robot && rimraf SampleConfigurator && rimraf Spinner && rimraf withGist && rimraf withLanguage && rimraf withStorage && rimraf Workbench'
-  storybook: 'start-storybook -p 6663'
-  test: *notests
 core:
-  report: 'nyc report --reporter=html'
-  test: 'nyc -x node_modules -x tests -x bin-pack npx mocha tests/*.test.js'
-  testci: "nyc --silent npx mocha tests/*.test.js --reporter ../../tests/reporters/terse.js && nyc report --reporter=json"
-  testonly: 'npx mocha tests/*.test.js'
-i18n:
-  # react-scripts doesn't handle .mjs files correctly
-  prebuild: 'node scripts/prebuilder.mjs'
-  test: *test
-  testci: *testci
+  report: 'c8 report'
+  test: 'c8 mocha tests/*.test.mjs'
+  testci: 'c8 mocha tests/*.test.mjs'
+  prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
+  lint: "npx eslint 'src/*.mjs' 'tests/*.mjs'"
+  jsdoc: 'jsdoc -c jsdoc.json -r src'
+models:
+  test: 'npx mocha tests/*.test.mjs'
 new-design:
-  build: "SITE=new-design/shared node ../../sites/shared/prebuild/i18n-only.mjs && cp ../../scripts/banner.mjs ./lib && node build.js"
+  i18n-only: 'SITE="new-design/shared" node --conditions=internal ../../sites/shared/prebuild/i18n-only.mjs'
+  wbuild: '!'
+  lint: "npx eslint 'lib/*.mjs'"
   mbuild: '!'
+  prebuild: 'node --conditions=internal ./prebuild.mjs'
   test: '!'
   testci: '!'
   vbuild: '!'
-pattern-info:
-  cibuild_step1: '!'
-  build: 'node build.js'
-  prebuild: 'node src/prebuild.js'
-utils:
-  clean: "rimraf backend && rimraf camelCase && rimraf capitalize && rimraf cloneObject && rimraf convertSize && rimraf defaultGist && rimraf defaultSa && rimraf formatImperial && rimraf formatMm && rimraf isDegMeasurement && rimraf measurementAsMm && rimraf measurementDiffers && rimraf neckstimate && rimraf optionDefault && rimraf optionType && rimraf roundMm && rimraf roundMmDown && rimraf roundMmUp && rimraf sliderStep && rimraf smallestImperialStep && rimraf storage && rimraf tiler && rimraf validateEmail && rimraf validateTld"
+rehype-highlight-lines:
+  build: '!'
+  mbuild: '!'
+  vbuild: '!'
+  'build:all': '!'
+  lint: "npx eslint 'src/*.mjs'"
+rehype-jargon:
+  lint: "npx eslint 'src/*.mjs'"
+snapseries:
+  lint: "npx eslint 'src/*.mjs'"
+react-components:
+  lint: "eslint 'src/**/*.mjs'"
+
+# Sites go here
+backend:
+  build: 'node build.mjs'
+  clean: 'rimraf dist'
+  dev: 'nodemon src/index.mjs'
+  initdb: 'npx prisma db push'
+  mbuild: *mbuild
+  newdb: 'node ./scripts/newdb.mjs'
+  prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
+  rmdb: 'node ./scripts/rmdb.mjs'
+  test: 'npx mocha --require mocha-steps tests/index.mjs'
+  vbuild: *vbuild
+
+dev:
+  build: &nextBuild 'next build'
+  cibuild: 'yarn build && node scripts/algolia.mjs'
+  clean: &nextClean 'rimraf prebuild/* && rimraf public/locales/*/* && rimraf public/feeds/* && rimraf ../shared/prebuild/data/*'
+  dev: &nextDev 'next dev -p 8000'
+  develop: *nextDev
+  i18n: "SITE=dev node --conditions=internal ../shared/prebuild/i18n-only.mjs"
+  lint: &nextLint 'next lint'
+  prebuild: &sitePrebuild 'node --conditions=internal --experimental-json-modules ./prebuild.mjs'
+  serve: "pm2 start npm --name 'dev' -- run start"
+  start: &nextStart 'yarn prebuild && yarn dev'
+
+email:
+  build: 'maizzle build production'
+  dev: 'maizzle serve'
+
+lab:
+  build: *nextBuild
+  cibuild: 'yarn build'
+  dev: *nextDev
+  develop: *nextDev
+  i18n: 'SITE=lab node --conditions=internal ../shared/prebuild/i18n-only.mjs'
+  lint: *nextLint
+  prebuild: *sitePrebuild
+  start: *nextStart
+
+sde:
+  build: *nextBuild
+  cibuild: 'yarn build'
+  dev: *nextDev
+  develop: *nextDev
+  i18n: 'SITE=sde node --conditions=internal ../shared/prebuild/i18n-only.mjs'
+  lint: *nextLint
+  prebuild: *sitePrebuild
+  start: *nextStart
+
+org:
+  build: *nextBuild
+  cibuild: 'yarn build'
+  clean: *nextClean
+  dev: *nextDev
+  develop: *nextDev
+  i18n: 'SITE=org node --conditions=internal ../shared/prebuild/i18n-only.mjs'
+  lint: *nextLint
+  prebuild: *sitePrebuild
+  start: *nextStart
+
+sanity:
+  dev: 'sanity dev'
+  start: 'sanity start'
+  build: 'sanity build -y'

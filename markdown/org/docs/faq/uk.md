@@ -1,5 +1,5 @@
 ---
-title: Frequently asked questions
+title: Поширені запитання
 order: 150
 ---
 

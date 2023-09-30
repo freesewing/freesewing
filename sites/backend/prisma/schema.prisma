@@ -1,0 +1,182 @@
+generator client {
+  provider = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-1.1.x"]
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("BACKEND_DB_URL")
+}
+
+model Apikey {
+  id            String    @id @default(uuid())
+  aud           String    @default("")
+  calls         Int       @default(0)
+  createdAt     DateTime  @default(now())
+  expiresAt     DateTime
+  name          String    @default("")
+  lastSeen      DateTime?
+  level         Int       @default(0)
+  secret        String
+  user          User     @relation(fields: [userId], references: [id])
+  userId        Int
+}
+
+model Bookmark {
+  id            Int      @id @default(autoincrement())
+  type          String   @default("")
+  title         String   @default("")
+  url           String   @default("")
+  user          User     @relation(fields: [userId], references: [id])
+  userId        Int
+}
+
+model Confirmation {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  data      String
+  type      String
+  user      User?     @relation(fields: [userId], references: [id])
+  userId    Int?
+}
+
+model Subscriber {
+  id        String   @id @default(uuid())
+  active    Boolean  @default(false)
+  createdAt DateTime @default(now())
+  ehash     String   @unique
+  email     String
+  language  String   @default("en")
+  updatedAt DateTime @updatedAt
+}
+
+model User {
+  id            Int       @id @default(autoincrement())
+  apikeys       Apikey[]
+  bio           String    @default("")
+  bookmarks     Bookmark[]
+  compare       Boolean   @default(true)
+  confirmations Confirmation[]
+  consent       Int       @default(0)
+  control       Int       @default(1)
+  createdAt     DateTime  @default(now())
+  data          String
+  ehash         String    @unique
+  email         String
+  ihash         String
+  img           String?
+  initial       String
+  imperial      Boolean   @default(false)
+  jwtCalls      Int       @default(0)
+  keyCalls      Int       @default(0)
+  language      String    @default("en")
+  lastSeen      DateTime?
+  lusername     String    @unique
+  mfaSecret     String    @default("")
+  mfaEnabled    Boolean   @default(false)
+  newsletter    Boolean   @default(false)
+  password      String
+  patron        Int       @default(0)
+  patterns      Pattern[]
+  sets          Set[]
+  role          String    @default("user")
+  status        Int       @default(0)
+  updatedAt     DateTime? @updatedAt
+  username      String
+  @@index([ihash])
+}
+
+model Pattern {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  data      String
+  design    String
+  img       String?
+  name      String   @default("")
+  notes     String
+  set       Set?  @relation(fields: [setId], references: [id])
+  setId     Int?
+  cset      CuratedSet?  @relation(fields: [csetId], references: [id])
+  csetId    Int?
+  public    Boolean  @default(false)
+  settings  String
+  user      User     @relation(fields: [userId], references: [id])
+  userId    Int
+  updatedAt DateTime @updatedAt
+
+  @@index([userId, setId])
+}
+
+model Set {
+  id        Int       @id @default(autoincrement())
+  createdAt DateTime  @default(now())
+  img       String?
+  imperial  Boolean   @default(false)
+  name      String    @default("")
+  notes     String    @default("")
+  user      User      @relation(fields: [userId], references: [id])
+  userId    Int
+  measies   String    @default("{}")
+  patterns  Pattern[]
+  public    Boolean   @default(false)
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+}
+
+model CuratedSet {
+  id        Int       @id @default(autoincrement())
+  createdAt DateTime  @default(now())
+  img       String?
+  nameDe    String    @default("")
+  nameEn    String    @default("")
+  nameEs    String    @default("")
+  nameFr    String    @default("")
+  nameNl    String    @default("")
+  nameUk    String    @default("")
+  notesDe   String    @default("")
+  notesEn   String    @default("")
+  notesEs   String    @default("")
+  notesFr   String    @default("")
+  notesNl   String    @default("")
+  notesUk   String    @default("")
+  tagsDe    String    @default("{}")
+  tagsEn    String    @default("{}")
+  tagsEs    String    @default("{}")
+  tagsFr    String    @default("{}")
+  tagsNl    String    @default("{}")
+  tagsUk    String    @default("{}")
+  measies   String    @default("{}")
+  patterns  Pattern[]
+  updatedAt DateTime  @updatedAt
+  published Boolean   @default(false)
+}
+
+model OptionPack {
+  id        Int       @id @default(autoincrement())
+  createdAt DateTime  @default(now())
+  design    String    @default("")
+  img       String?
+  nameDe    String    @default("")
+  nameEn    String    @default("")
+  nameEs    String    @default("")
+  nameFr    String    @default("")
+  nameNl    String    @default("")
+  nameUk    String    @default("")
+  notesDe   String    @default("")
+  notesEn   String    @default("")
+  notesEs   String    @default("")
+  notesFr   String    @default("")
+  notesNl   String    @default("")
+  notesUk   String    @default("")
+  tagsDe    String    @default("{}")
+  tagsEn    String    @default("{}")
+  tagsEs    String    @default("{}")
+  tagsFr    String    @default("{}")
+  tagsNl    String    @default("{}")
+  tagsUk    String    @default("{}")
+  options   String    @default("{}")
+  updatedAt DateTime @updatedAt
+}
+
+

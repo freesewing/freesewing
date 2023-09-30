@@ -1,14 +1,14 @@
 ---
-title: Measurements
+title: Заміри
 order: 420
 ---
 
-Taking accurate measurements is crucial for good results with our designs, yet not as trivial as you would think.
+Правильне зняття мірок є дуже важливим кроком для отримання хороших результатів з нашими дизайнами, та не така проста задача, як може здатися на перший погляд.
 
-We've added a few indicators to help you spot mistakes or problems in your measurements.
+Ми додали декілька показників, аби допомогти Вам побачити можливі помилки чи проблеми з Вашими замірами.
 
-- We include [estimates for your different measurements][1], and highlight those measurements where a person differs significantly from the estimate
-- Your models show [a graph of their body measurements][2] in comparison to our standard sizes
+- Ми використовуємо [передбачення для Ваших різноманітних вимірів][1], та виділяємо ті виміри, які сильно відрізняються від передбачення
+- Виміри кожної людини на Вашому профілі формують [графік цих вимірів][2], який порівнює їх до стандартизованих розмірних таблиць, які є на сайті
 
 [1]: /docs/guide/measurements/estimates/
 

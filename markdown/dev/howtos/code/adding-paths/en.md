@@ -1,22 +1,30 @@
 ---
 title: Adding paths
-for: developers
-icon: pattern
-about: Shows you how to add paths to your pattern
 ---
 
-After using the [shorthand](/howtos/code/shorthand/) call,
-`Path` contains the path constructor, while `paths` is a reference to `part.paths`,
-which is where you should store your paths.
+Paths should be stored in the `paths` key of the object passed to your part's
+draft method. The constructor for paths is available in the `Path` key. You can
+destructure them for easy access.
 
-Things will now _just work_ when you do this:
+<Example caption="An example of adding a path" tutorial>
+```design/src/part.mjs
+function draftPart = ({ 
+  Point,
+  // highlight-start
+  Path, 
+  paths,
+  // highlight-end
+  part 
+}) {
 
-```js
-paths.example = new Path()
+  // highlight-start
+  paths.demo = new Path()
+    .move(new Point(0,0))
+    .line(new Point(100,20))
+    .addClass('lining lashed')
+  // highlight-end
+
+  return part
+}
 ```
-
-<Tip>
-
-The [Path API docs](/reference/api/path) list all the things you can do with a path object.
-
-</Tip>
+</Example>

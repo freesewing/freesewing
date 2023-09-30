@@ -1,13 +1,13 @@
 ---
-title: Topstitching
+title: Поверхневий шов
 ---
 
-![I used plenty of topstitching in a contrasting red thread on these jeans for my godson Akki](topstitching.jpg)
+![На цих джинсах для свого хрещеника Аккі я зробив багацько поверхневих швів контрастною червоною ниткою](topstitching.jpg)
 
-![Topstitching needles from Schmetz](topstitch-needles.jpg)
+![Голки для відстрочення Topstitch від Schmetz](topstitch-needles.jpg)
 
-Topstitching is when you sew with the good side of the fabric up and your stitches are visible on the finished garments.
+Поверхневий шов або поверхневий стібок утворюється шляхом стьобання лицьовим боком тканини догори, в результаті чого стібки видно на готовому виробі.
 
-While a decorative feature, topstitching can also play a role in garment construction.
+Поверхневий шов є переважно оздоблювальним, однак також може виконувати структурну функцію.
 
-> You can buy specific sewing needles that are optimised for topstitching
+> Ви можете придбати особливі голки для виконання поверхневого шва

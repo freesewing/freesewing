@@ -1,37 +1,56 @@
 ---
-title: attr()
+title: Path.attr()
 ---
+
+This `Path.attr()` method can be used to add attributes to the Path object.
+It calls `this.attributes.add()` under the hood, and returns the Path object.
+
+If the third parameter is set to `true` it will call `this.attributes.set()`
+instead, thereby overwriting the value of the attribute.
+
+## Signature
 
 ```js
 Path path.attr(
-  string name, 
-  mixed value, 
+  string name,
+  mixed value,
   bool overwrite = false
 )
 ```
 
-This `Path.attr()` method calls `this.attributes.add()` under the hood, but returns the Path object.
+<Tip compact>This method is chainable as it returns the `Path` object</Tip>
 
-This allows you to chain different calls together as in the example below.
+## Example
 
-If the third parameter is set to `true` it will call `this.attributes.set()` instead, thereby overwriting the value of the attribute.
+<Example caption=" Example of the Path.attr() method">
+```js
+({ Point, points, Path, paths, part }) => {
 
-<Example part="path_attr">
-Example of the Path.attr() method
+  points.from = new Point(10, 20)
+  points.cp1 = new Point(20, -10)
+  points.cp2 = new Point(50, 50)
+  points.to = new Point(70, 20)
+
+  paths.example = new Path()
+    .move(points.from)
+    .curve(points.cp1, points.cp2, points.to)
+    .attr("class", "canvas")
+    .setText("FreeSewing rocks", "text-xs center")
+
+  return part
+}
+```
 </Example>
 
-```js
-let { Point, points, Path, paths } = part.shorthand();
 
-points.B = new Point(10, 50);
-points.BCp2 = new Point(40, 10);
-points.C = new Point(90, 30);
-points.CCp1 = new Point(50, 90);
+## Notes
 
-paths.example = new Path()
-  .move(points.B)
-  .curve(points.BCp2, points.CCp1, points.C)
-  .attr("class", "canvas")
-  .attr("data-text", "freesewingIsMadeByJoostDeCockAndContributors")
-  .attr("data-text-class", "text-xs center");
-```
+Methods like
+[`Path.addClass`](/reference/api/path/addclass),
+[`Path.setClass`](/reference/api/path/setclass),
+[`Path.addText`](/reference/api/path/addtext), and
+[`Path.setText`](/reference/api/path/settext)
+all call this method under the hood.
+
+See [Using Attributes](/howtos/code/attributes)
+for information about custom Attributes that can be used with Paths.

@@ -1,38 +1,34 @@
 ---
-title: "@freesewing/plugin-theme"
+title: plugin-theme
 ---
 
-The **@freesewing-plugin-theme** plugin provides CSS styling for SVG output.
-It leverages [the preRender lifecycle hook](/reference/api/hooks/prerender) to
-accomplish this.
-
-<Note>
-
-##### Only applies to SVG/PS/PDF output
-
-This plugin will inject CSS in the SVG document when rendering to SVG.
-
-If you use other ways to render your pattern (like our React component)
-you will need to apply your own styles.
-
-</Note>
+Published as [@freesewing/plugin-theme][1], this plugin provides CSS for
+your SVG document when rendering to SVG.
 
 ## Installation
 
-```bash
+```sh
 npm install @freesewing/plugin-theme
 ```
 
 ## Usage
 
-Like all [run-time plugins](/guides/plugins/types-of-plugins#run-time-plugins), you
-load them by by passing them to the `use()` method of an instatiated pattern.
+Either [add it as a part plugins](/reference/api/part/config/plugins) in your
+design, or [add it to a pattern instance with
+Pattern.use()](/reference/api/pattern/use).
 
-That method is chainable, so if you have multiple plugins you can just chain them together.
-
+To import the plugin for use:
 ```js
-import Aaron from "@freesewing/aaron";
-import theme from "@freesewing/plugin-theme";
-
-const pattern = new Aaron().use(theme);
+import { themePlugin } from '@freesewing/plugin-theme'
+// or
+import { pluginTheme } from '@freesewing/plugin-theme'
 ```
+
+## Notes
+
+This plugin will inject CSS in the SVG document when rendering to SVG.
+
+If you use other ways to render your pattern (using `Pattern.getRenderProps()`)
+you will need to apply your own styles.
+
+[1]: https://www.npmjs.com/package/@freesewing/plugin-theme

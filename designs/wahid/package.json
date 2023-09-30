@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/wahid",
-  "version": "2.22.1",
+  "version": "3.0.0",
   "description": "A FreeSewing pattern for a classic fitted waistcoat",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -24,32 +24,41 @@
     "sewing",
     "sewing pattern"
   ],
-  "main": "dist/index.js",
+  "type": "module",
   "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "internal": "./src/index.mjs",
+      "default": "./dist/index.mjs"
+    }
+  },
   "scripts": {
-    "build": "node build.js",
+    "build": "node build.mjs",
+    "build:all": "yarn build",
     "clean": "rimraf dist",
-    "mbuild": "NO_MINIFY=1 node build.js",
+    "mbuild": "NO_MINIFY=1 node build.mjs",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
     "test": "npx mocha tests/*.test.mjs",
-    "vbuild": "VERBOSE=1 node build.js",
+    "vbuild": "VERBOSE=1 node build.mjs",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
-    "prettier": "npx prettier --write 'src/*.js' 'config/*.js'",
-    "testci": "npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
-    "cibuild_step5": "node build.js"
+    "lint": "npx eslint 'src/**' 'tests/*.mjs'",
+    "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
+    "testci": "NODE_OPTIONS=\"--conditions=internal\" npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
+    "wbuild": "node build.mjs",
+    "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "^2.22.1",
-    "@freesewing/plugin-bundle": "^2.22.1",
-    "@freesewing/config-helpers": "^2.22.1",
-    "@freesewing/brian": "^2.22.1",
-    "@freesewing/plugin-bust": "^2.22.1"
+    "@freesewing/core": "3.0.0",
+    "@freesewing/brian": "3.0.0",
+    "@freesewing/plugin-bust": "3.0.0"
   },
   "dependencies": {},
   "devDependencies": {
-    "mocha": "^10.0.0",
-    "chai": "^4.2.0"
+    "mocha": "10.2.0",
+    "chai": "4.3.9",
+    "@freesewing/models": "3.0.0",
+    "@freesewing/plugin-timing": "3.0.0"
   },
   "files": [
     "dist/*",
@@ -60,7 +69,7 @@
     "tag": "latest"
   },
   "engines": {
-    "node": ">=14.0.0",
-    "npm": ">=6"
+    "node": "18",
+    "npm": "9"
   }
 }

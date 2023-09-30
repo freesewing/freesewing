@@ -4,47 +4,36 @@ title: Adding text
 
 SVG is pretty great, but its text handling leaves much to be desired.
 
-To abstract away the intricacies of adding text to an SVG document,
-FreeSewing lets you add text to patterns by adding it to the attributes
-of points and paths.
+To abstract away the intricacies of adding text to an SVG document, FreeSewing
+provides the [Point.addText()](/reference/api/point/addtext) and
+[Path.addText()](/reference/api/path/addtext) methods to let you add text to
+points and paths.
 
-All you have to do is set the `data-text` attribute to the text you want to add to the pattern:
+<Example caption="An example of adding text" tutorial>
+```design/src/part.mjs
+function draftPart = ({ 
+  Point,
+  points,
+  Path, 
+  paths,
+  part 
+}) {
 
-```js
-points.anchor = new Point(100, 25)
-  .attr("data-text", "freesewingIsMadeByJoostDeCockAndContributors")
-  .attr("data-text-class", "center");
+  points.demo = new Point(70,10)
+  // highlight-start
+    .addText('Text on a point', 'center')
+  // highlight-end
+
+  paths.demo = new Path()
+    .move(new Point(0,0))
+    .line(new Point(100, 40))
+    .addClass('note dotted stroke-sm')
+  // highlight-start
+    .addText('Text on a path', 'center')
+  // highlight-end
+
+
+  return part
+}
 ```
-
-<Example part="point_attr">
-Text inserted in a FreeSewing pattern
-</Example>
-
-<Note>
-
-You may have noticed that the text we inserted isn't the text that's shown.
-That is because, in line with our [best practices](/guides/best-practices) we allow translation of
-our pattern by inserting a key that is used to lookup the string in the language
-of the pattern, using [the i18n plugin](/reference/plugins/i18n).
-
-</Note>
-
-You can use the same approach to add text to a path:
-
-```js
-points.B = new Point(10, 50);
-points.BCp2 = new Point(40, 10);
-points.C = new Point(90, 30);
-points.CCp1 = new Point(50, 90);
-
-paths.example = new Path()
-  .move(points.B)
-  .curve(points.BCp2, points.CCp1, points.C)
-  .attr("class", "canvas")
-  .attr("data-text", "freesewingIsMadeByJoostDeCockAndContributors")
-  .attr("data-text-class", "text-xs center");
-```
-
-<Example part="path_attr">
-Text on a path
 </Example>

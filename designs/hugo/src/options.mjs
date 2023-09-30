@@ -1,0 +1,16 @@
+export const collarEase = 0.05
+export const armholeDepthFactor = 0.5
+export const shoulderEase = 0
+export const shoulderSlopeReduction = 0
+export const frontArmholeDeeper = 0
+export const s3Collar = 0
+export const s3Armhole = 0
+export const chestEase = { pct: 8, min: 4, max: 20, menu: 'fit' }
+export const hipsEase = { pct: 12, min: 4, max: 20, menu: 'fit' }
+export const cuffEase = { pct: 20, min: 10, max: 50, menu: 'fit' }
+export const ribbingStretch = { pct: 5, min: 0, max: 10, menu: 'fit' }
+export const draftForHighBust = { bool: false, menu: 'fit' }
+export const lengthBonus = { pct: 10, min: 0, max: 20, menu: 'style' }
+export const sleeveLengthBonus = { pct: 2, min: 0, max: 10, menu: 'style' }
+export const ribbingHeight = { pct: 10, min: 4, max: 20, menu: 'style' }
+export const pocketWidth = { pct: 50, min: 35, max: 65, menu: 'style' }

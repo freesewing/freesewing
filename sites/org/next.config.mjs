@@ -1,39 +1,38 @@
-import path from 'path'
-import { readdirSync } from 'fs'
+import configBuilder from '../shared/config/next.mjs'
 import i18nConfig from './next-i18next.config.js'
+import { banner } from '../../scripts/banner.mjs'
+import withBundleAnalyzer from '@next/bundle-analyzer'
+import { jargon } from '../shared/jargon/index.mjs'
 
-const getDirectories = source =>
-  readdirSync(source, { withFileTypes: true })
-    .filter(dirent => dirent.isDirectory())
-    .map(dirent => dirent.name)
-
-const pkgs = getDirectories(path.resolve(`../`))
-
-const config = {
-  experimental: {
-    externalDir: true,
-  },
-  i18n: i18nConfig.i18n,
-  pageExtensions: [ 'js', 'mjs' ],
-  webpack: (config, options) => {
-
-    // Aliases
-    config.resolve.alias.shared = path.resolve('../shared/')
-    config.resolve.alias.site = path.resolve(`.`)
-    config.resolve.alias.pkgs = path.resolve(`../../packages/`)
-
-    // Suppress warnings about importing version from package.json
-    // We'll deal with it in v3 of FreeSewing
-    config.ignoreWarnings = [
-      /only default export is available soon/
-    ]
-
-    // This forces webpack to load the code from source, rather than compiled bundle
-    for (const pkg of pkgs) {
-      config.resolve.alias[`@freesewing/${pkg}$`] = path.resolve(`../../packages/${pkg}/src/index.js`)
-    }
-
-    return config
-  }
+let config = configBuilder({ site: 'org', jargon })
+config.i18n = i18nConfig.i18n
+config.rewrites = async () => {
+  return [
+    {
+      source: '/blog',
+      destination: '/blog/page/1',
+    },
+    {
+      source: '/showcase',
+      destination: '/showcase/page/1',
+    },
+    {
+      source: '/sets',
+      destination: '/docs/site/sets',
+    },
+  ]
 }
+
+// Say hi
+console.log(banner + '\n')
+
+config.eslint = {
+  // Ignore linter for now
+  ignoreDuringBuilds: true,
+}
+
+// To run the bundle analyzer, run:
+// ANALYZE=true yarn build
+if (process.env.ANALYZE) config = withBundleAnalyzer(config)(config)
+
 export default config
