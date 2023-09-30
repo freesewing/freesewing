@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/octoplushy",
-  "version": "3.0.0-alpha.14",
+  "version": "3.0.0-beta.0",
   "description": "A FreeSewing pattern for an octopus plushy toy",
   "author": "woutervdub (https://github.com/woutervdub)",
   "homepage": "https://freesewing.org/",
@@ -49,14 +49,14 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.14"
+    "@freesewing/core": "3.0.0-beta.0"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.2.0",
     "chai": "4.3.9",
-    "@freesewing/models": "3.0.0-alpha.14",
-    "@freesewing/plugin-timing": "3.0.0-alpha.14"
+    "@freesewing/models": "3.0.0-beta.0",
+    "@freesewing/plugin-timing": "3.0.0-beta.0"
   },
   "files": [
     "dist/*",

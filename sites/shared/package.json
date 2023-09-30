@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/shared",
-  "version": "3.0.0-alpha.14",
+  "version": "3.0.0-beta.0",
   "description": "Shared code and React components for different websites",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
