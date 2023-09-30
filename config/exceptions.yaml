@@ -32,6 +32,8 @@ packageJson:
     author: AlfaLyr (https://github.com/alfalyr)
   i18n:
     private: true
+  lab:
+    private: true
   lucy:
     author: SeaZeeZee (https://github.com/SeaZeeZee)
   lunetius: &starf
@@ -72,10 +74,6 @@ packageJson:
   sandy:
     author: AlfaLyr (https://github.com/alfalyr)
   tiberius: *starf
-  unice:
-    author: Anna Puk (https://github.com/anna-puk)
-  ursula:
-    author: Natalia Sayang (https://github.com/nataliasayang)
   waralee:
     author: woutervdub (https://github.com/woutervdub)
   walburga: *starf
