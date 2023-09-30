@@ -7,12 +7,7 @@ import { Link } from 'shared/components/link.mjs'
 
 export const ns = ['sde']
 
-export const ModalDesignPicker = ({
-  modalWrapperProps = {},
-  designs = [],
-  setter = false,
-  setModal = false,
-}) => {
+export const ModalDesignPicker = () => {
   const { t } = useTranslation(ns)
 
   return (

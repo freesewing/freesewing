@@ -84,7 +84,6 @@ const searchFiles = async (dirs, split = '/sites/') => {
 }
 
 const buildFileList = async () => {
-  let files = []
   const sde = await getFiles('../../sites/sde')
   const shared = await searchFiles([
     '../../sites/shared/utils.mjs',
