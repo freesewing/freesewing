@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { formatMm } from 'shared/utils.mjs'
 import { mergeOptions } from '@freesewing/core'
 import {

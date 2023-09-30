@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useEffect, useCallback } from 'react'
 import { useTranslation } from 'next-i18next'
 import { CutMenu, ns as menuNs } from './menu.mjs'

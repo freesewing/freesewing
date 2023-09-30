@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { siteConfig } from 'site/site.config.mjs'
 import { useContext } from 'react'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'

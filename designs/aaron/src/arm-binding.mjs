@@ -21,8 +21,10 @@ export const armBinding = {
     const w = store.get('bindingWidth')
     const l = store.get('armBindingLength')
 
-    if (!expand) {
-      // Expand is on, do not draw the part but flag this to the user
+    if (expand) {
+      store.flag.preset('expandIsOn')
+    } else {
+      // Expand is off, do not draw the part but flag this to the user
       store.flag.note({
         msg: `aaron:cutArmBinding`,
         replace: {

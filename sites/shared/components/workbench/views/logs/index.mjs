@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useTranslation } from 'next-i18next'
 import { analyzeDraftLogLine } from './errors.mjs'
 import Markdown from 'react-markdown'

@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { loadSettingsConfig as loadUiSettingsConfig } from 'shared/components/workbench/menus/ui-settings/config.mjs'
 import {
   DesignOptions,

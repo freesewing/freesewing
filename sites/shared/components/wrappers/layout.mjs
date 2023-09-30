@@ -1,9 +1,11 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
+import { nsMerge } from 'shared/utils.mjs'
 import Head from 'next/head'
 import { Header, ns as headerNs } from 'site/components/header/index.mjs'
 import { Footer, ns as footerNs } from 'shared/components/footer/index.mjs'
 import { Search, ns as searchNs } from 'site/components/search.mjs'
 
-export const ns = [...new Set([...headerNs, ...footerNs, ...searchNs])]
+export const ns = nsMerge(headerNs, footerNs, searchNs)
 
 export const LayoutWrapper = ({
   children = [],

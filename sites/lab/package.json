@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/lab",
-  "version": "3.0.0-alpha.10",
+  "version": "3.0.0-alpha.13",
   "description": "FreeSewing website to test various patterns",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -19,7 +19,6 @@
     "dev": "next dev -p 8000",
     "develop": "next dev -p 8000",
     "i18n": "SITE=lab node --conditions=internal ../shared/prebuild/i18n-only.mjs",
-    "e2e": "yarn playwright test",
     "lint": "next lint",
     "prebuild": "node --conditions=internal --experimental-json-modules ./prebuild.mjs",
     "start": "yarn prebuild && yarn dev",
@@ -64,12 +63,10 @@
     "remark-mdx-frontmatter": "3.0.0"
   },
   "devDependencies": {
-    "@playwright/test": "^1.32.3",
     "autoprefixer": "10.4.15",
     "eslint-config-next": "13.4.19",
     "js-yaml": "4.1.0",
     "postcss": "8.4.29",
-    "playwright": "^1.32.3",
     "remark-extract-frontmatter": "3.2.0",
     "remark-mdx-frontmatter": "3.0.0",
     "tailwindcss": "3.3.3",

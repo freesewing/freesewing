@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import axios from 'axios'
 import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'

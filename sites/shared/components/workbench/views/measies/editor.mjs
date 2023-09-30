@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { nsMerge } from 'shared/utils.mjs'
 import { MeasieInput, ns as inputNs } from 'shared/components/inputs.mjs'
 import { useTranslation } from 'next-i18next'
