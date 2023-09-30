@@ -25,10 +25,8 @@ If you have NodeJS on your system, getting that development environment up
 and running takes only a single command:
 
 ```sh
-npx @freesewing/new-design@next
+npx @freesewing/new-design
 ```
-
-<Fixme compact>Remove `@next` suffex once v3 is published</Fixme>
 
 If you don't have NodeJS on your system --- or if you're not sure what
 NodeJS is to begin with --- read on to learn how to install it.

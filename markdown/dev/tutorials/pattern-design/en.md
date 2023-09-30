@@ -18,10 +18,8 @@ the JavaScript ecosystem, I can summarize that entire section in this one-liner
 that sets up the FreeSewing development environment on your system:
 
 ```sh
-npx @freesewing/new-design@next
+npx @freesewing/new-design
 ```
-
-<Fixme compact>Remove `@next` suffex once v3 is published</Fixme>
 
 ## Part 2: Parametric design
 
