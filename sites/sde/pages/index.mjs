@@ -1,16 +1,16 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { nsMerge } from 'shared/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { Popout, ns as popoutNs } from 'shared/components/popout/index.mjs'
 import { PageLink, WebLink } from 'shared/components/link.mjs'
 import { FreeSewingIcon } from 'shared/components/icons.mjs'
 import { collection } from 'site/hooks/use-design.mjs'
 import { version } from '@freesewing/core'
 
-const ns = ['sde', ...pageNs, ...popoutNs]
+const ns = nsMerge('sde', pageNs)
 /*
  * Each page MUST be wrapped in the PageWrapper component.
  * You also MUST spread props.page into this wrapper component

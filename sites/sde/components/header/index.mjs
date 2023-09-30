@@ -7,16 +7,11 @@ import { useTheme } from 'shared/hooks/use-theme.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
 import {
-  DesignIcon,
   DocsIcon,
-  MenuIcon,
   LockIcon,
   ThemeIcon,
   I18nIcon,
-  MeasieIcon,
-  NewPatternIcon,
   GitHubIcon,
-  PlusIcon,
   HelpIcon,
   HomeIcon,
   RocketIcon,
@@ -24,7 +19,6 @@ import {
 import { HeaderWrapper } from 'shared/components/wrappers/header.mjs'
 import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-picker.mjs'
 import { ModalLocalePicker, ns as localeNs } from 'shared/components/modal/locale-picker.mjs'
-import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
 import { ModalDesignPicker } from './design-picker.mjs'
 
 import { NavButton, NavSpacer } from 'shared/components/header.mjs'

@@ -5,12 +5,8 @@ import { nsMerge } from 'shared/utils.mjs'
 import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { Popout, ns as popoutNs } from 'shared/components/popout/index.mjs'
-import { PageLink, WebLink } from 'shared/components/link.mjs'
-import { FreeSewingIcon } from 'shared/components/icons.mjs'
-import { collection } from 'site/hooks/use-design.mjs'
 
-const ns = nsMerge('sde', 'account', pageNs, popoutNs)
+const ns = nsMerge('sde', 'account', pageNs)
 /*
  * Each page MUST be wrapped in the PageWrapper component.
  * You also MUST spread props.page into this wrapper component

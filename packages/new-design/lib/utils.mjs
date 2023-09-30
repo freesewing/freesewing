@@ -1,14 +1,13 @@
 import { config } from './config.mjs'
-import { mkdir, readFile, writeFile, copyFile, open, opendir } from 'node:fs/promises'
-import { join, dirname, relative } from 'path'
+import { mkdir, writeFile, copyFile, open, opendir } from 'node:fs/promises'
+import { join, dirname } from 'path'
 import mustache from 'mustache'
-import rdir from 'recursive-readdir'
 import chalk from 'chalk'
 import prompts from 'prompts'
 import { oraPromise } from 'ora'
 import { execa } from 'execa'
 import axios from 'axios'
-import { fileURLToPath, pathToFileURL } from 'url'
+import { fileURLToPath } from 'url'
 
 // Current working directory
 let filename
@@ -18,7 +17,6 @@ try {
   filename = fileURLToPath(new URL(import.meta.url))
 }
 const newDesignDir = join(filename, '../..')
-const designSrcDir = 'design/src'
 
 const nl = '\n'
 const tab = '  '
@@ -125,8 +123,6 @@ export const getChoices = async () => {
 
   return { name, manager, overwrite, sideStep }
 }
-
-const capitalize = (string) => string.charAt(0).toUpperCase() + string.slice(1)
 
 // Keep track of directories that need to be created
 const dirPromises = {}

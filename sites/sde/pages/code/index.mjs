@@ -1,8 +1,8 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { nsMerge } from 'shared/utils.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { Popout } from 'shared/components/popout/index.mjs'
 // MDX
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { components } from 'shared/components/mdx/index.mjs'
@@ -13,7 +13,7 @@ import nl, { frontmatter as nlFrontmatter } from './nl.mdx'
 import fr, { frontmatter as frFrontmatter } from './fr.mdx'
 import uk, { frontmatter as ukFrontmatter } from './uk.mdx'
 
-const ns = [pageNs, 'sde', 'account']
+const ns = nsMerge(pageNs, 'sde', 'account')
 
 const mdx = { en, de, es, nl, fr, uk }
 const frontmatter = {
