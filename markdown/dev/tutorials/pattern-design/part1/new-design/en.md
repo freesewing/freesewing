@@ -8,9 +8,8 @@ FreeSewing provides a development environment that visualizes your design for yo
 To set it up, I will open a terminal and enter the following command:
 
 ```sh
-npx @freesewing/new-design@next
+npx @freesewing/new-design
 ```
-<Fixme compact>Remove `@next` suffix once v3 is in production</Fixme>
 
 It will ask if it is ok to install the development environment in a new folder
 named `freesewing`. You can accept the default, or pick a different folder name
