@@ -5,21 +5,10 @@ import Head from 'next/head'
 import { PageWrapper } from 'shared/components/wrappers/page.mjs'
 import { PageLink } from 'shared/components/link.mjs'
 import { Highlight } from 'shared/components/mdx/highlight.mjs'
-import {
-  FreeSewingIcon,
-  CisFemaleIcon,
-  CodeIcon,
-  OpenSourceIcon,
-} from 'shared/components/icons.mjs'
-import { Link, CardLink } from 'shared/components/link.mjs'
+import { FreeSewingIcon, CisFemaleIcon, CodeIcon } from 'shared/components/icons.mjs'
+import { CardLink } from 'shared/components/link.mjs'
 
 const title = 'Welcome to FreeSewing.dev'
-
-const BoldLink = ({ href, children }) => (
-  <a href={href} className="font-bold underline hover:decoration-4">
-    {children}
-  </a>
-)
 
 const Card = ({ bg = 'bg-base-200', textColor = 'text-base-content', title, children, icon }) => (
   <div className={`px-8 ${bg} py-10 rounded-lg block ${textColor} shadow-lg grow`}>
