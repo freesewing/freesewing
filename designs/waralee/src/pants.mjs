@@ -67,47 +67,56 @@ function waraleePants({
     let fWaistSide = separateWaistband ? points.fWaistSideSeam : points.fWaistSide
     let bWaistSide = separateWaistband ? points.bWaistSideSeam : points.bWaistSide
     macro('hd', {
+      id: 1,
       from: fWaistSide,
       to: points.mWaist1,
       y: fWaistSide.y,
     })
     macro('hd', {
+      id: 2,
       from: points.fWaistFrontOverlap,
       to: points.mWaist1,
       y: fWaistSide.y - sa - 15,
     })
     macro('hd', {
+      id: 2,
       from: points.mWaist,
       to: bWaistSide,
       y: bWaistSide.y,
     })
     macro('hd', {
+      id: 3,
       from: points.mWaist1,
       to: separateWaistband ? points.bWaistBackSeam : points.bWaistBack,
       y: bWaistSide.y - sa - 15,
     })
     macro('hd', {
+      id: 4,
       from: points.mWaist1,
       to: separateWaistband ? points.bWaistBackSeam : points.bWaistBackOverlap,
       y: bWaistSide.y - sa - 30,
     })
     macro('vd', {
+      id: 5,
       from: points.mWaist1,
       to: points.mHip,
       x: points.mWaist.x,
     })
     macro('vd', {
+      id: 6,
       from: bWaistSide,
       to: separateWaistband ? points.bWaistBackSeam : points.bWaistBack,
       x: bWaistSide.x + 15,
     })
     macro('vd', {
+      id: 7,
       from: separateWaistband ? points.bWaistBackSeam : points.bWaistBackOverlap,
       to: points.bLegBackOverlap,
       x: points.bLegBackOverlap.x - 30,
     })
     if (false == separateWaistband) {
       macro('vd', {
+        id: 8,
         from: points.fWaistSide,
         to: points.fWaistSideHem,
         x: points.fWaistSide.x + 10,
@@ -116,21 +125,25 @@ function waraleePants({
 
     if (options.frontPocket && 'welt' == options.frontPocketStyle) {
       macro('vd', {
+        id: 9,
         from: fWaistSide,
         to: points.frontPocketTop,
         x: points.frontPocketTop.x,
       })
       macro('vd', {
+        id: 10,
         from: fWaistSide,
         to: points.frontPocketBottom,
         x: points.frontPocketBottom.x,
       })
       macro('hd', {
+        id: 11,
         from: points.frontPocketTop,
         to: fWaistSide,
         y: points.frontPocketTop.y,
       })
       macro('hd', {
+        id: 12,
         from: points.frontPocketBottom,
         to: fWaistSide,
         y: points.frontPocketBottom.y,
@@ -139,21 +152,25 @@ function waraleePants({
 
     if (options.backPocket) {
       macro('vd', {
+        id: 13,
         from: bWaistSide,
         to: points.backPocketLeft,
         x: points.backPocketLeft.x,
       })
       macro('vd', {
+        id: 14,
         from: bWaistSide,
         to: points.backPocketRight,
         x: points.backPocketRight.x,
       })
       macro('hd', {
+        id: 15,
         from: bWaistSide,
         to: points.backPocketLeft,
         y: points.backPocketLeft.y,
       })
       macro('hd', {
+        id: 16,
         from: bWaistSide,
         to: points.backPocketRight,
         y: points.backPocketRight.y,
