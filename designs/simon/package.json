@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/simon",
-  "version": "3.0.0-alpha.13",
+  "version": "3.0.0-alpha.14",
   "description": "A FreeSewing pattern for a button down shirt",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -49,17 +49,17 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.13",
-    "@freesewing/brian": "3.0.0-alpha.13",
-    "@freesewing/plugin-bust": "3.0.0-alpha.13",
-    "@freesewing/plugin-flip": "3.0.0-alpha.13"
+    "@freesewing/core": "3.0.0-alpha.14",
+    "@freesewing/brian": "3.0.0-alpha.14",
+    "@freesewing/plugin-bust": "3.0.0-alpha.14",
+    "@freesewing/plugin-flip": "3.0.0-alpha.14"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.2.0",
     "chai": "4.3.9",
-    "@freesewing/models": "3.0.0-alpha.13",
-    "@freesewing/plugin-timing": "3.0.0-alpha.13"
+    "@freesewing/models": "3.0.0-alpha.14",
+    "@freesewing/plugin-timing": "3.0.0-alpha.14"
   },
   "files": [
     "dist/*",

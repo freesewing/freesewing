@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-versionfree-svg",
-  "version": "3.0.0-alpha.13",
+  "version": "3.0.0-alpha.14",
   "description": "A FreeSewing plugin to keep version info out of your SVG to allow easy diffs across versions",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -49,7 +49,7 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.13"
+    "@freesewing/core": "3.0.0-alpha.14"
   },
   "dependencies": {},
   "devDependencies": {
