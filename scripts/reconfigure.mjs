@@ -413,7 +413,8 @@ function globalChangelog() {
         ) {
           if (!changed) changed = ''
           changed += '\n#### ' + type + '\n\n'
-          for (let change of changes[type][pkg]) changed += ' - ' + change + '\n'
+          for (let change of changes[type][pkg].concat(changes[type]?.all || []))
+            changed += ' - ' + change + '\n'
         }
       }
       if (changed) markup += '### ' + pkg + '\n' + changed + '\n'
