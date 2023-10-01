@@ -22,11 +22,13 @@ function pacoCuff({
   if (expand) store.flag.preset('expandIsOn')
   else {
     // Expand is on, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
     store.flag.note({
       msg: `paco:cutCuff`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
       replace: {
-        w: units(w * 2 + 4 * sa),
-        l: units(l + 2 * sa),
+        w: units(w * 2 + 2 * extraSa),
+        l: units(l + extraSa),
       },
       suggest: {
         text: 'flag:show',
