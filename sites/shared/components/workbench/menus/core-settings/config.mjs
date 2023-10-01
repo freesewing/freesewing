@@ -11,6 +11,7 @@ import {
   MarginIcon,
   ExpandIcon,
 } from 'shared/components/icons.mjs'
+import { freeSewingConfig as config } from 'shared/config/freesewing.config.mjs'
 
 export const defaultSamm = (units, inMm = true) => {
   const dflt = units === 'imperial' ? 0.5 : 1
@@ -24,7 +25,7 @@ export const loadSettingsConfig = ({
   parts = [],
 }) => ({
   sabool: {
-    control: 2, // Show when control > 1
+    control: config.coreSettingsControl.sa,
     list: [0, 1],
     choiceTitles: {
       0: 'saNo',
@@ -39,7 +40,7 @@ export const loadSettingsConfig = ({
   },
   samm: sabool
     ? {
-        control: 2, // Show when control > 1
+        control: config.coreSettingsControl.sa,
         min: 0,
         max: units === 'imperial' ? 2 : 2.5,
         dflt: defaultSamm(units),
@@ -47,7 +48,7 @@ export const loadSettingsConfig = ({
       }
     : false,
   paperless: {
-    control: 2, // Show when control > 1
+    control: config.coreSettingsControl.paperless,
     list: [0, 1],
     choiceTitles: {
       0: 'paperlessNo',
@@ -61,7 +62,7 @@ export const loadSettingsConfig = ({
     icon: PaperlessIcon,
   },
   locale: {
-    control: 3, // Show when control > 2
+    control: config.coreSettingsControl.locale,
     list: ['de', 'en', 'es', 'fr', 'nl'],
     dflt: language,
     choiceTitles: {
@@ -81,7 +82,7 @@ export const loadSettingsConfig = ({
     icon: I18nIcon,
   },
   units: {
-    control: 1, // Show when control > 2
+    control: config.coreSettingsControl.units,
     list: ['metric', 'imperial'],
     dflt: 'metric',
     choiceTitles: {
@@ -95,7 +96,7 @@ export const loadSettingsConfig = ({
     icon: UnitsIcon,
   },
   complete: {
-    control: 4, // Show when control > 3
+    control: config.coreSettingsControl.complete,
     list: [1, 0],
     dflt: 1,
     choiceTitles: {
@@ -109,7 +110,7 @@ export const loadSettingsConfig = ({
     icon: DetailIcon,
   },
   expand: {
-    control: 4, // Show when control > 3
+    control: config.coreSettingsControl.expand,
     list: [1, 0],
     dflt: 1,
     choiceTitles: {
@@ -123,14 +124,14 @@ export const loadSettingsConfig = ({
     icon: ExpandIcon,
   },
   only: {
-    control: 4, // Show when control > 3
+    control: config.coreSettingsControl.only,
     dflt: false,
     list: parts,
     parts,
     icon: IncludeIcon,
   },
   scale: {
-    control: 4, // Show when control > 3
+    control: config.coreSettingsControl.scale,
     min: 0.1,
     max: 5,
     dflt: 1,
@@ -138,7 +139,7 @@ export const loadSettingsConfig = ({
     icon: ScaleIcon,
   },
   margin: {
-    control: 4, // Show when control > 3
+    control: config.coreSettingsControl.margin,
     min: 0,
     max: 2.5,
     dflt: measurementAsMm(units === 'imperial' ? 0.125 : 0.2, units),
