@@ -23,6 +23,7 @@ function draftCharlieBeltLoops({
     // Expand is off, do not draw the part but flag this to the user
     store.flag.note({
       msg: `charlie:cutBeltloops`,
+      notes: ['flag:saUnused', 'flag:partHiddenByExpand'],
       replace: {
         count: 7,
         width: units(width * 4),
