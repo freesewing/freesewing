@@ -25,14 +25,16 @@ function octoplushyEye(
     store.flag.preset('expandIsOn')
   } else {
     // Expand is off, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
     const message =
       (options.type == 'squid' ? `squid` : 'octopus') +
       (partNumber == 2 ? 'Eyebrow' : partNumber == 1 ? 'Pupil' : 'Eye')
     store.flag.note({
       msg: message,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
       replace: {
-        width: units(eyeCirc + 2 * sa),
-        length: units(eyeBrowWidth * 2 + 2 * sa),
+        width: units(eyeCirc + extraSa),
+        length: units(eyeBrowWidth * 2 + extraSa),
       },
       suggest: {
         text: 'flag:show',
