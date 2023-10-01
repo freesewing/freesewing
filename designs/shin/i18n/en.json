@@ -8,7 +8,7 @@
   },
   "s": {
     "cutWaistband.t": "The waistband is not shown",
-    "cutWaistband.d": "The **Waistband** (3) is a rectangular piece of fabric {{{ w }}} wide and {{{ l }}} long (this includes seam allowance). It is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part."
+    "cutWaistband.d": "The **Waistband** (3) is a rectangular piece of fabric {{{ w }}} wide and {{{ l }}} long."
   },
   "o": {
     "legReduction": {
