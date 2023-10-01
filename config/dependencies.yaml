@@ -243,7 +243,7 @@ dev:
     'react-swipeable': &reactSwipeable '7.0.1'
     'react-timeago': &reactTimeago '7.1.0'
     'rehype-autolink-headings': &rehypeAutolinkHeadings '6.1.1'
-    'rehype-highlight': &rehypeHighlight '6.0.0'
+    'rehype-highlight': &rehypeHighlight '7.0.0'
     'rehype-sanitize': &rehypeSanitize '5.0.1'
     'rehype-slug': &rehypeSlug '5.1.0'
     'rehype-stringify': &rehypeStringify '10.0.0'
