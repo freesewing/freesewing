@@ -2753,11 +2753,6 @@
   resolved "https://registry.yarnpkg.com/@types/normalize-package-data/-/normalize-package-data-2.4.1.tgz#d3357479a0fdfdd5907fe67e17e0a85c906e1301"
   integrity sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==
 
-"@types/parse5@^6.0.0":
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/@types/parse5/-/parse5-6.0.3.tgz#705bb349e789efa06f43f128cef51240753424cb"
-  integrity sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==
-
 "@types/prop-types@*", "@types/prop-types@^15.0.0":
   version "15.7.5"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
@@ -2882,7 +2877,7 @@
     "@typescript-eslint/types" "6.3.0"
     eslint-visitor-keys "^3.4.1"
 
-"@ungap/structured-clone@^1.0.0":
+"@ungap/structured-clone@^1.0.0", "@ungap/structured-clone@^1.2.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@ungap/structured-clone/-/structured-clone-1.2.0.tgz#756641adb587851b5ccb3e095daf27ae581c8406"
   integrity sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==
@@ -7098,19 +7093,6 @@ hast-util-from-html@2.0.1:
     vfile "^6.0.0"
     vfile-message "^4.0.0"
 
-hast-util-from-parse5@^7.0.0:
-  version "7.1.2"
-  resolved "https://registry.yarnpkg.com/hast-util-from-parse5/-/hast-util-from-parse5-7.1.2.tgz#aecfef73e3ceafdfa4550716443e4eb7b02e22b0"
-  integrity sha512-Nz7FfPBuljzsN3tCQ4kCBKqdNhQE2l0Tn+X1ubgKBPRoiDIu1mL08Cfw4k7q71+Duyaw7DXDN+VTAp4Vh3oCOw==
-  dependencies:
-    "@types/hast" "^2.0.0"
-    "@types/unist" "^2.0.0"
-    hastscript "^7.0.0"
-    property-information "^6.0.0"
-    vfile "^5.0.0"
-    vfile-location "^4.0.0"
-    web-namespaces "^2.0.0"
-
 hast-util-from-parse5@^8.0.0:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/hast-util-from-parse5/-/hast-util-from-parse5-8.0.1.tgz#654a5676a41211e14ee80d1b1758c399a0327651"
@@ -7159,13 +7141,6 @@ hast-util-is-element@^2.0.0:
     "@types/hast" "^2.0.0"
     "@types/unist" "^2.0.0"
 
-hast-util-parse-selector@^3.0.0:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/hast-util-parse-selector/-/hast-util-parse-selector-3.1.1.tgz#25ab00ae9e75cbc62cf7a901f68a247eade659e2"
-  integrity sha512-jdlwBjEexy1oGz0aJ2f4GKMaVKkA9jwjr4MjAAI22E5fM/TXVZHuS5OpONtdeIkRKqAaryQ2E9xNQxijoThSZA==
-  dependencies:
-    "@types/hast" "^2.0.0"
-
 hast-util-parse-selector@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/hast-util-parse-selector/-/hast-util-parse-selector-4.0.0.tgz#352879fa86e25616036037dd8931fb5f34cb4a27"
@@ -7183,23 +7158,6 @@ hast-util-phrasing@^2.0.0:
     hast-util-has-property "^2.0.0"
     hast-util-is-body-ok-link "^2.0.0"
     hast-util-is-element "^2.0.0"
-
-hast-util-raw@^7.0.0:
-  version "7.2.3"
-  resolved "https://registry.yarnpkg.com/hast-util-raw/-/hast-util-raw-7.2.3.tgz#dcb5b22a22073436dbdc4aa09660a644f4991d99"
-  integrity sha512-RujVQfVsOrxzPOPSzZFiwofMArbQke6DJjnFfceiEbFh7S05CbPt0cYN+A5YeD3pso0JQk6O1aHBnx9+Pm2uqg==
-  dependencies:
-    "@types/hast" "^2.0.0"
-    "@types/parse5" "^6.0.0"
-    hast-util-from-parse5 "^7.0.0"
-    hast-util-to-parse5 "^7.0.0"
-    html-void-elements "^2.0.0"
-    parse5 "^6.0.0"
-    unist-util-position "^4.0.0"
-    unist-util-visit "^4.0.0"
-    vfile "^5.0.0"
-    web-namespaces "^2.0.0"
-    zwitch "^2.0.0"
 
 hast-util-raw@^9.0.0:
   version "9.0.0"
@@ -7225,6 +7183,15 @@ hast-util-sanitize@^4.0.0:
   integrity sha512-Hd9tU0ltknMGRDv+d6Ro/4XKzBqQnP/EZrpiTbpFYfXv/uOhWeKc+2uajcbEvAEH98VZd7eII2PiXm13RihnLw==
   dependencies:
     "@types/hast" "^2.0.0"
+
+hast-util-sanitize@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/hast-util-sanitize/-/hast-util-sanitize-5.0.0.tgz#041ef2247fe8f34b5f2bb4398c545e465e5a8c0e"
+  integrity sha512-L0g/qhOA82zG2hA3O29hnlv4mLU7YVVT1if5JZSr2tKO1ywkQbuMDcN05btgX0HtpqDXQniAM0ar0K+Lv4MDBQ==
+  dependencies:
+    "@types/hast" "^3.0.0"
+    "@ungap/structured-clone" "^1.2.0"
+    unist-util-position "^5.0.0"
 
 hast-util-to-estree@^1.1.0:
   version "1.4.0"
@@ -7262,23 +7229,6 @@ hast-util-to-estree@^2.0.0:
     unist-util-position "^4.0.0"
     zwitch "^2.0.0"
 
-hast-util-to-html@^8.0.0:
-  version "8.0.4"
-  resolved "https://registry.yarnpkg.com/hast-util-to-html/-/hast-util-to-html-8.0.4.tgz#0269ef33fa3f6599b260a8dc94f733b8e39e41fc"
-  integrity sha512-4tpQTUOr9BMjtYyNlt0P50mH7xj0Ks2xpo8M943Vykljf99HW6EzulIoJP1N3eKOSScEHzyzi9dm7/cn0RfGwA==
-  dependencies:
-    "@types/hast" "^2.0.0"
-    "@types/unist" "^2.0.0"
-    ccount "^2.0.0"
-    comma-separated-tokens "^2.0.0"
-    hast-util-raw "^7.0.0"
-    hast-util-whitespace "^2.0.0"
-    html-void-elements "^2.0.0"
-    property-information "^6.0.0"
-    space-separated-tokens "^2.0.0"
-    stringify-entities "^4.0.0"
-    zwitch "^2.0.4"
-
 hast-util-to-html@^9.0.0:
   version "9.0.0"
   resolved "https://registry.yarnpkg.com/hast-util-to-html/-/hast-util-to-html-9.0.0.tgz#51c0ae2a3550b9aa988c094c4fc4e327af0dddd1"
@@ -7296,18 +7246,6 @@ hast-util-to-html@^9.0.0:
     space-separated-tokens "^2.0.0"
     stringify-entities "^4.0.0"
     zwitch "^2.0.4"
-
-hast-util-to-parse5@^7.0.0:
-  version "7.1.0"
-  resolved "https://registry.yarnpkg.com/hast-util-to-parse5/-/hast-util-to-parse5-7.1.0.tgz#c49391bf8f151973e0c9adcd116b561e8daf29f3"
-  integrity sha512-YNRgAJkH2Jky5ySkIqFXTQiaqcAtJyVE+D5lkN6CdtOqrnkLfGYYrEcKuHOJZlp+MwjSwuD3fZuawI+sic/RBw==
-  dependencies:
-    "@types/hast" "^2.0.0"
-    comma-separated-tokens "^2.0.0"
-    property-information "^6.0.0"
-    space-separated-tokens "^2.0.0"
-    web-namespaces "^2.0.0"
-    zwitch "^2.0.0"
 
 hast-util-to-parse5@^8.0.0:
   version "8.0.0"
@@ -7355,17 +7293,6 @@ hast-util-whitespace@^3.0.0:
   integrity sha512-88JUN06ipLwsnv+dVn+OIYOvAuvBMy/Qoi6O7mQHxdPXpjy+Cd6xRkWwux7DKO+4sYILtLBRIKgsdpS2gQc7qw==
   dependencies:
     "@types/hast" "^3.0.0"
-
-hastscript@^7.0.0:
-  version "7.2.0"
-  resolved "https://registry.yarnpkg.com/hastscript/-/hastscript-7.2.0.tgz#0eafb7afb153d047077fa2a833dc9b7ec604d10b"
-  integrity sha512-TtYPq24IldU8iKoJQqvZOuhi5CyCQRAbvDOX0x1eW6rsHSxa/1i2CCiptNTotGHJ3VoHRGmqiv6/D3q113ikkw==
-  dependencies:
-    "@types/hast" "^2.0.0"
-    comma-separated-tokens "^2.0.0"
-    hast-util-parse-selector "^3.0.0"
-    property-information "^6.0.0"
-    space-separated-tokens "^2.0.0"
 
 hastscript@^8.0.0:
   version "8.0.0"
@@ -7489,11 +7416,6 @@ html-to-text@^9.0.5:
     dom-serializer "^2.0.0"
     htmlparser2 "^8.0.2"
     selderee "^0.11.0"
-
-html-void-elements@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/html-void-elements/-/html-void-elements-2.0.1.tgz#29459b8b05c200b6c5ee98743c41b979d577549f"
-  integrity sha512-0quDb7s97CfemeJAnW9wC0hw78MtW7NU3hqtCD75g2vFlDLt36llsYD7uB7SUzojLMP24N5IatXf7ylGXiGG9A==
 
 html-void-elements@^3.0.0:
   version "3.0.0"
@@ -9444,7 +9366,7 @@ mdast-util-to-hast@^10.1.0:
     unist-util-position "^3.0.0"
     unist-util-visit "^2.0.0"
 
-mdast-util-to-hast@^12.0.0, mdast-util-to-hast@^12.1.0:
+mdast-util-to-hast@^12.1.0:
   version "12.3.0"
   resolved "https://registry.yarnpkg.com/mdast-util-to-hast/-/mdast-util-to-hast-12.3.0.tgz#045d2825fb04374e59970f5b3f279b5700f6fb49"
   integrity sha512-pits93r8PhnIoU4Vy9bjW39M2jJ6/tdHyja9rrot9uujkN7UTU9SDnE6WNJz/IGyQk3XHX6yNNtrBH6cQzm8Hw==
@@ -11323,11 +11245,6 @@ parse5-htmlparser2-tree-adapter@^7.0.0:
     domhandler "^5.0.2"
     parse5 "^7.0.0"
 
-parse5@^6.0.0:
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/parse5/-/parse5-6.0.1.tgz#e1a1c085c569b3dc08321184f19a39cc27f7c30b"
-  integrity sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==
-
 parse5@^7.0.0:
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-7.1.2.tgz#0736bebbfd77793823240a23b7fc5e010b7f8e32"
@@ -12472,16 +12389,16 @@ remark-gfm@3.0.1:
     micromark-extension-gfm "^2.0.0"
     unified "^10.0.0"
 
-remark-html@^15.0.1:
-  version "15.0.2"
-  resolved "https://registry.yarnpkg.com/remark-html/-/remark-html-15.0.2.tgz#44ff77c876f037658b406662b5ce15e26ed34d80"
-  integrity sha512-/CIOI7wzHJzsh48AiuIyIe1clxVkUtreul73zcCXLub0FmnevQE0UMFDQm7NUx8/3rl/4zCshlMfqBdWScQthw==
+remark-html@^16.0.1:
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/remark-html/-/remark-html-16.0.1.tgz#9246d0cf22254c208a86531cbeb26203ae2dd34c"
+  integrity sha512-B9JqA5i0qZe0Nsf49q3OXyGvyXuZFDzAP2iOFLEumymuYJITVpiH1IgsTEwTpdptDmZlMDMWeDmSawdaJIGCXQ==
   dependencies:
-    "@types/mdast" "^3.0.0"
-    hast-util-sanitize "^4.0.0"
-    hast-util-to-html "^8.0.0"
-    mdast-util-to-hast "^12.0.0"
-    unified "^10.0.0"
+    "@types/mdast" "^4.0.0"
+    hast-util-sanitize "^5.0.0"
+    hast-util-to-html "^9.0.0"
+    mdast-util-to-hast "^13.0.0"
+    unified "^11.0.0"
 
 remark-lint-blockquote-indentation@^3.0.0:
   version "3.1.2"

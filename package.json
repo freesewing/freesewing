@@ -101,7 +101,7 @@
     "rehype-format": "^4.0.1",
     "remark": "^14.0.2",
     "remark-frontmatter": "^4.0.1",
-    "remark-html": "^15.0.1",
+    "remark-html": "^16.0.1",
     "remark-lint-emphasis-marker": "^3.1.1",
     "remark-lint-list-item-indent": "^3.1.1",
     "remark-preset-lint-consistent": "^5.1.1",
