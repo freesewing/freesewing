@@ -2,4 +2,7 @@
 title: "Hortensia handbag"
 ---
 
-<PatternDocs pattern='hortensia' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='hortensia' docs />
+

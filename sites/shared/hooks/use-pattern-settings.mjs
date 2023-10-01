@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useAtom } from 'jotai'
 import { atomWithHash } from 'jotai-location'
 

@@ -37,6 +37,7 @@ import {
   splitCurve,
   stretchToScale,
   units,
+  goldenRatio,
 } from './utils.mjs'
 import { version } from '../data.mjs'
 
@@ -83,4 +84,5 @@ export {
   splitCurve,
   stretchToScale,
   units,
+  goldenRatio,
 }

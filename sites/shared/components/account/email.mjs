@@ -12,7 +12,7 @@ import { validateEmail, validateTld } from 'shared/utils.mjs'
 import { BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { EmailInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 
 export const ns = ['account', 'status']
 

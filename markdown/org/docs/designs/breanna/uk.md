@@ -2,4 +2,7 @@
 title: "Викрійка-основа Бреанна"
 ---
 
-<PatternDocs pattern='breanna' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='breanna' docs />
+

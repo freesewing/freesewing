@@ -2,4 +2,7 @@
 title: "Brian, patrón base de torso sin pechos"
 ---
 
-<PatternDocs pattern='brian' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='brian' docs />
+

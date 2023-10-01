@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 //Dependencies
 import { loadSettingsConfig, defaultSamm } from './config.mjs'
 // Components
@@ -74,6 +75,7 @@ export const CoreSettings = ({
   language,
   account,
   DynamicDocs,
+  design,
 }) => {
   const settingsConfig = loadSettingsConfig({
     language,
@@ -101,6 +103,7 @@ export const CoreSettings = ({
         name: 'coreSettings',
         ns,
         passProps,
+        design,
         updateFunc: update.settings,
         values,
         Item: CoreSetting,

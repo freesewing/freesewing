@@ -6,7 +6,7 @@ import { useTranslation } from 'next-i18next'
 import Head from 'next/head'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Popout, ns as popoutNs } from 'shared/components/popout/index.mjs'
-import { WebLink } from 'shared/components/web-link.mjs'
+import { WebLink } from 'shared/components/link.mjs'
 
 const ns = ['lab', ...pageNs, ...popoutNs]
 /*

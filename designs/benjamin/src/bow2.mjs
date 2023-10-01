@@ -1,18 +1,6 @@
 import { base } from './base.mjs'
 
-function draftBenjaminBow2({
-  options,
-  Point,
-  points,
-  Path,
-  paths,
-  complete,
-  macro,
-  sa,
-  store,
-  paperless,
-  part,
-}) {
+function draftBenjaminBow2({ options, Point, points, Path, paths, macro, sa, store, part }) {
   if (!options.adjustmentRibbon) return part.hide()
 
   points.bandBottomLeft = points.bandBottomLeft.shift(180, 90)
@@ -34,28 +22,33 @@ function draftBenjaminBow2({
     .attr('class', 'fabric')
     .unhide()
 
-  store.cutlist.addCut()
-  store.cutlist.addCut({ material: 'interfacing' })
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa').unhide()
 
-  if (complete) {
-    // Paperless?
-    if (paperless) {
-      macro('hd', {
-        from: points.bandBottomLeft,
-        to: points.tip2Bottom,
-        y: store.get('baseY'),
-      })
-    }
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa').unhide()
-    }
-    macro('title', {
-      at: points.titleAnchor,
-      nr: 2,
-      title: 'Medium Bow',
-      scale: store.get('tipWidth') / 75,
-    })
-  }
+  /*
+   * Annotations
+   */
+
+  // Cut list
+  store.cutlist.addCut([
+    { cut: 2, from: 'fabric' },
+    { cut: 2, from: 'interfacing' },
+  ])
+
+  // Title
+  macro('title', {
+    at: points.titleAnchor,
+    nr: 2,
+    title: 'Medium Bow',
+    scale: store.get('tipWidth') / 75,
+  })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wFull',
+    from: points.bandBottomLeft,
+    to: points.tip2Bottom,
+    y: store.get('baseY'),
+  })
 
   return part
 }

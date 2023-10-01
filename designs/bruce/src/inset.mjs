@@ -9,7 +9,6 @@ function draftBruceInset({
   Path,
   paths,
   complete,
-  paperless,
   macro,
   Snippet,
   snippets,
@@ -49,57 +48,96 @@ function draftBruceInset({
   paths.hemBase = new Path().move(points.bottomLeft).line(points.bottomRight).hide()
   paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
 
-  // Complete pattern?
+  if (sa)
+    paths.sa = paths.saBase
+      .offset(sa)
+      .join(paths.hemBase.offset(sa * 2))
+      .close()
+      .attr('class', 'fabric sa')
+
+  /*
+   * Annotations
+   */
+
+  // Cut list
+  store.cutlist.addCut({ cut: 2, from: 'fabric' })
+
+  // Title
+  points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+  macro('title', {
+    at: points.title.shift(-90, 15),
+    nr: 4,
+    title: 'inset',
+  })
+
+  // Grainline
+  macro('grainline', {
+    from: points.bottomLeft.shift(0, 15),
+    to: points.topLeft.shift(0, 15),
+  })
+
+  // Notches
+  snippets.notch = new Snippet(
+    'notch',
+    new Path()
+      .move(points.tip)
+      .curve(points.tipCpBottom, points.tipCpTop, points.topLeft)
+      .shiftFractionAlong(0.5)
+  )
+
   if (complete) {
-    if (sa) {
-      paths.sa = paths.saBase
-        .offset(sa)
-        .join(paths.hemBase.offset(sa * 2))
-        .close()
-        .attr('class', 'fabric sa')
-    }
-    points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    macro('title', {
-      at: points.title.shift(-90, 15),
-      nr: 4,
-      title: 'inset',
+    paths.sideNote = new Path().move(points.bottomLeft).line(points.topLeft).addClass('hidden')
+    paths.gussetNote = new Path().move(points.bottomRight).line(points.tip).addClass('hidden')
+    paths.curveNote = new Path()
+      .move(points.tip)
+      .curve(points.tipCpBottom, points.tipCpTop, points.topLeft)
+      .addClass('hidden')
+    macro('banner', {
+      id: 'side',
+      path: paths.sideNote,
+      text: '#',
+      dy: 7,
+      classes: 'text-sm fill-note center',
     })
-    macro('grainline', {
-      from: points.bottomLeft.shift(0, 15),
-      to: points.topLeft.shift(0, 15),
+    macro('banner', {
+      id: 'gusset',
+      path: paths.gussetNote,
+      text: '*',
+      classes: 'text-sm fill-note center',
     })
-    snippets.notch = new Snippet(
-      'notch',
-      new Path()
-        .move(points.tip)
-        .curve(points.tipCpBottom, points.tipCpTop, points.topLeft)
-        .shiftFractionAlong(0.5)
-    )
+    macro('banner', {
+      id: 'curve',
+      path: paths.curveNote,
+      text: '~',
+      classes: 'text-sm fill-note center',
+    })
   }
 
-  // Paperless?
-  if (paperless) {
-    macro('vd', {
-      from: points.bottomLeft,
-      to: points.topLeft,
-      x: points.topLeft.x - 15 - sa,
-    })
-    macro('vd', {
-      from: points.bottomRight,
-      to: points.tip,
-      x: points.tip.x + 15 + sa,
-    })
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomRight.y + 15 + sa,
-    })
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.tip,
-      y: points.bottomRight.y + 30 + sa,
-    })
-  }
+  // Dimensions
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottomLeft,
+    to: points.topLeft,
+    x: points.topLeft.x - 15 - sa,
+  })
+  macro('vd', {
+    id: 'hGusset',
+    from: points.bottomRight,
+    to: points.tip,
+    x: points.tip.x + 15 + sa,
+  })
+  macro('hd', {
+    id: 'wLeg',
+    from: points.bottomLeft,
+    to: points.bottomRight,
+    y: points.bottomRight.y + 15 + sa,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.bottomLeft,
+    to: points.tip,
+    y: points.bottomRight.y + 30 + sa,
+  })
 
   return part
 }

@@ -11,7 +11,7 @@ import Link from 'next/link'
 import { Robot } from 'shared/components/robot/index.mjs'
 import { StringInput, PasswordInput } from 'shared/components/inputs.mjs'
 import { FreeSewingAnimation } from 'shared/components/animations/freesewing.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 
 // Translation namespaces used on this page
 export const ns = ['signup', 'errros', 'account']

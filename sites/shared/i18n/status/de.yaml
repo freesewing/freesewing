@@ -1,11 +1,14 @@
-updatingSettings: Updating settings
-settingsSaved: Einstellungen gespeichert
 backendError: Backend hat einen Fehler zurückgegeben
-copiedToClipboard: In die Zwischenablage kopiert
-processingUpdate: Processing update
-generatingPdf: Generating your PDF, one moment please
-pdfReady: PDF generated
-pdfFailed: An unexpected error occured while generating your PDF
 contactingBackend: Contacting the FreeSewing backend
 contactingGitHub: Contacting GitHub
 contactingGoogle: Contacting Google
+copiedToClipboard: In die Zwischenablage kopiert
+dataLoaded: Loaded data from the FreeSewing backend
+generatingPdf: Generating your PDF, one moment please
+nailedIt: Geschafft!
+pdfFailed: An unexpected error occured while generating your PDF
+pdfReady: PDF generated
+processingUpdate: Processing update
+settingsSaved: Einstellungen gespeichert
+updatingSettings: Updating settings
+

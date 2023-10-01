@@ -2,11 +2,7 @@
 title: Muster Details
 ---
 
-<Fixme> 
+This setting -- which is enabled by default -- will give you a pattern with all details included.
 
-Diese Einstellung wird wahrscheinlich vor der Veröffentlichung von v3 überarbeitet werden.
-
-</Fixme>
-
-
+If you disable it, you will instead get a pattern that does not include any details such as text or annotations, and only include the seamlines.
 

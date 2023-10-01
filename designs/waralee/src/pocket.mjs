@@ -132,37 +132,44 @@ function waraleePocket({
   if (paperless) {
     if ('welt' == options.frontPocketStyle) {
       macro('hd', {
+        id: 1,
         from: points.topLeft,
         to: points.topRight,
         y: points.topLeft.y + 15,
       })
       macro('hd', {
+        id: 2,
         from: points.bottomLeft,
         to: points.bottomRight,
         y: points.bottomRight.y,
       })
       macro('vd', {
+        id: 3,
         from: points.topLeft,
         to: points.bottomLeft,
         x: points.topLeft.x + 15,
       })
       macro('vd', {
+        id: 4,
         from: points.topRight,
         to: points.bottomRight,
         x: points.bottomRight.x,
       })
       macro('vd', {
+        id: 5,
         from: points.bottomRight,
         to: points.bottomLeft,
         x: points.bottomRight.x,
       })
     } else {
       macro('hd', {
+        id: 6,
         from: points.topLeft,
         to: points.topRight,
         y: points.topLeft.y + 15,
       })
       macro('vd', {
+        id: 7,
         from: points.topLeft,
         to: points.bottomLeftCornerOver,
         x: points.bottomLeftCornerOver.x,

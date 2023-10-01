@@ -12,7 +12,6 @@ function simonButtonholePlacket({
   Snippet,
   snippets,
   complete,
-  paperless,
   macro,
   options,
   store,
@@ -67,8 +66,17 @@ function simonButtonholePlacket({
     .line(points.bottomInnerEdge)
 
   paths.seam = paths.saBase.clone().line(points.placketBottomEdge).close().attr('class', 'fabric')
+  if (sa) {
+    paths.sa = paths.saBase.offset(sa * -1)
+    paths.sa
+      .line(new Point(points.bottomInnerEdge.x + sa, points.bottomInnerEdge.y + 3 * sa))
+      .line(new Point(points.placketBottomEdge.x, points.placketBottomEdge.y + 3 * sa))
+      .line(points.placketBottomEdge)
+      .move(points.placketTopEdge)
+      .line(paths.sa.start())
+      .attr('class', 'fabric sa')
+  }
 
-  // Complete pattern?
   if (complete) {
     // Placket help lines
     paths.frontCenter = new Path()
@@ -95,97 +103,88 @@ function simonButtonholePlacket({
       .move(points.placketTopOuterEdgeUnder)
       .line(points.placketBottomOuterEdgeUnder)
       .attr('class', 'dotted')
-
-    // Notches
-    snippets['cfArmhole-notch'].anchor.x = points.cfArmhole.x - fold * 2
-    snippets['cfWaist-notch'].anchor.x = points.cfArmhole.x - fold * 2
-    // Not available in Simon
-    if (typeof snippets['cfBust-notch'] !== 'undefined') {
-      snippets['cfBust-notch'].anchor.x = points.cfArmhole - fold * 2
-    }
-    // Not available in Simon
-    if (typeof snippets['cfHem-notch'] !== 'undefined') {
-      snippets['cfHem-notch'].anchor.x = points.cfArmhole.x - fold * 2
-    }
-    // This notch is not available in Simone
-    if (typeof snippets['cfHips-notch'] !== 'undefined') {
-      snippets['cfHips-notch'].anchor.x = points.cfArmhole.x - fold * 2
-    }
-
-    // Buttons
-    addButtonHoles(part, 'placketCfNeck')
-
-    // Grainline
-    points.grainlineFrom = points.placketBottomEdge.shift(0, width / 2)
-    points.grainlineTo = points.placketTopEdge.shift(0, width / 2)
-    macro('grainline', {
-      from: points.grainlineFrom,
-      to: points.grainlineTo,
-    })
-
-    // Title
-    points.title = new Point(points.placketCfNeck.x, points.cfArmhole.y)
-    macro('title', {
-      at: points.title,
-      nr: '2b',
-      title: 'buttonholePlacket',
-      scale: 0.75,
-      rotation: -90,
-    })
-
-    // Logo
-    points.logo = points.title.shift(-90, 120)
-    snippets.logo = new Snippet('logo', points.logo)
-      .attr('data-scale', 0.5)
-      .attr('data-rotate', -90)
-
-    if (sa) {
-      paths.sa = paths.saBase.offset(sa * -1)
-      paths.sa
-        .line(new Point(points.bottomInnerEdge.x + sa, points.bottomInnerEdge.y + 3 * sa))
-        .line(new Point(points.placketBottomEdge.x, points.placketBottomEdge.y + 3 * sa))
-        .line(points.placketBottomEdge)
-        .move(points.placketTopEdge)
-        .line(paths.sa.start())
-        .attr('class', 'fabric sa')
-    }
   }
 
-  // Paperless?
-  if (paperless) {
-    let offset = 0
-    for (const pid of [
-      'placketBottomOuterEdgeUnder',
-      'placketBottomOuterEdgeFold',
-      'placketBottomOuterEdgeOver',
-      'placketCfHem',
-      'placketBottomInnerEdgeOver',
-      'placketBottomInnerEdgeFold',
-      'placketBottomInnerEdgeUnder',
-    ]) {
-      offset += 15
-      macro('hd', {
-        from: points.placketBottomEdge,
-        to: points[pid],
-        y: points.placketBottomEdge.y + offset + 3 * sa,
-      })
-    }
-    points.button0 = points.placketTopEdge
-    let j
-    for (let i = 0; i < options.buttons; i++) {
-      j = i + 1
-      macro('vd', {
-        from: points['button' + j],
-        to: points['button' + i],
-        x: points.placketTopEdge.x - 15,
-      })
-    }
-    macro('vd', {
+  /*
+   * Annotations
+   */
+  // Notches
+  snippets['cfArmhole-notch'].anchor.x = points.cfArmhole.x - fold * 2
+  snippets['cfWaist-notch'].anchor.x = points.cfArmhole.x - fold * 2
+  // Not available in Simon
+  if (typeof snippets['cfBust-notch'] !== 'undefined') {
+    snippets['cfBust-notch'].anchor.x = points.cfArmhole - fold * 2
+  }
+  // Not available in Simon
+  if (typeof snippets['cfHem-notch'] !== 'undefined') {
+    snippets['cfHem-notch'].anchor.x = points.cfArmhole.x - fold * 2
+  }
+  // This notch is not available in Simone
+  if (typeof snippets['cfHips-notch'] !== 'undefined') {
+    snippets['cfHips-notch'].anchor.x = points.cfArmhole.x - fold * 2
+  }
+
+  // Buttons
+  addButtonHoles(part, 'placketCfNeck')
+
+  // Grainline
+  points.grainlineFrom = points.placketBottomEdge.shift(0, width / 2)
+  points.grainlineTo = points.placketTopEdge.shift(0, width / 2)
+  macro('grainline', {
+    from: points.grainlineFrom,
+    to: points.grainlineTo,
+  })
+
+  // Title
+  points.title = new Point(points.placketCfNeck.x, points.cfArmhole.y)
+  macro('title', {
+    at: points.title,
+    nr: '2b',
+    title: 'buttonholePlacket',
+    scale: 0.75,
+    rotation: -90,
+  })
+
+  // Logo
+  points.logo = points.title.shift(-90, 120)
+  snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.5).attr('data-rotate', -90)
+
+  // Dimensions
+  let offset = 0
+  for (const pid of [
+    'placketBottomOuterEdgeUnder',
+    'placketBottomOuterEdgeFold',
+    'placketBottomOuterEdgeOver',
+    'placketCfHem',
+    'placketBottomInnerEdgeOver',
+    'placketBottomInnerEdgeFold',
+    'placketBottomInnerEdgeUnder',
+  ]) {
+    offset += 15
+    macro('hd', {
+      id: `hEdgeTo${pid}`,
       from: points.placketBottomEdge,
-      to: points.placketTopEdge,
-      x: points.placketTopEdge.x - 30,
+      to: points[pid],
+      y: points.placketBottomEdge.y + offset + 3 * sa,
     })
   }
+  points.button0 = points.placketTopEdge
+  let j
+  for (let i = 0; i < options.buttons; i++) {
+    j = i + 1
+    macro('vd', {
+      id: `hBetweenButtons${i}`,
+      from: points['button' + j],
+      to: points['button' + i],
+      x: points.placketTopEdge.x - 15,
+    })
+  }
+  macro('vd', {
+    id: 'hFull',
+    from: points.placketBottomEdge,
+    to: points.placketTopEdge,
+    x: points.placketTopEdge.x - 30,
+  })
 
   return part
 }

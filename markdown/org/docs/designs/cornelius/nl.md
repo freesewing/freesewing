@@ -2,4 +2,7 @@
 title: "Cornelius fietsen boren"
 ---
 
-<PatternDocs pattern='cornelius' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='cornelius' docs />
+

@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { ResetIcon, EditIcon } from 'shared/components/icons.mjs'
 import { useState, useMemo } from 'react'
 import { SubAccordion } from 'shared/components/accordion.mjs'
@@ -71,6 +72,7 @@ export const MenuItem = ({
   DynamicDocs,
   docsPath,
   language,
+  design,
 }) => {
   // state for knowing whether the override input should be shown
   const [override, setOverride] = useState(false)
@@ -86,6 +88,7 @@ export const MenuItem = ({
       t,
       changed,
       override,
+      design,
       ...passProps,
     }),
     [name, config, current, updateFunc, t, changed, override, passProps, control]
@@ -188,6 +191,7 @@ export const MenuItemGroup = ({
   language,
   getDocsPath,
   isDesignOptionsGroup = false,
+  design,
 }) => {
   // map the entries in the structure
   const content = Object.entries(structure).map(([itemName, item]) => {
@@ -219,7 +223,7 @@ export const MenuItemGroup = ({
       <div className="flex flex-row items-center justify-between w-full" key="a">
         <div className="flex flex-row items-center gap-4 w-full">
           <ItemIcon />
-          <span className="font-medium">{t([`${itemName}.t`, itemName])}</span>
+          <span className="font-medium">{t([`${itemName}.t`, `workbench:${itemName}`])}</span>
         </div>
         <div className="font-bold">
           <Value
@@ -227,6 +231,7 @@ export const MenuItemGroup = ({
             config={item}
             t={t}
             changed={wasChanged(currentValues[itemName], item)}
+            design={design}
           />
         </div>
       </div>,
@@ -254,6 +259,7 @@ export const MenuItemGroup = ({
             language,
             getDocsPath,
             isDesignOptionsGroup,
+            design,
           }}
         />
       ) : (
@@ -274,6 +280,7 @@ export const MenuItemGroup = ({
             DynamicDocs,
             docsPath: getDocsPath(itemName),
             language,
+            design,
           }}
         />
       ),

@@ -16,7 +16,7 @@ import { Popout } from 'shared/components/popout/index.mjs'
 import { LeftIcon, PlusIcon, CopyIcon, RightIcon, TrashIcon } from 'shared/components/icons.mjs'
 import { PageLink, Link } from 'shared/components/link.mjs'
 import { StringInput, ListInput, FormControl } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 
 export const ns = ['account', 'status']
 

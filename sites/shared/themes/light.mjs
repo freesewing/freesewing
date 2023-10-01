@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 /**
  * This is a theme file for FreeSewing's NextJS-based website
  *

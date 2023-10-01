@@ -2,4 +2,7 @@
 title: "Buste de base Bella"
 ---
 
-<PatternDocs pattern='bella' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='bella' docs />
+

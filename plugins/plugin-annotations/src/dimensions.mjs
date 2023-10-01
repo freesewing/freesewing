@@ -1,23 +1,90 @@
+import { getIds } from './utils.mjs'
+
 // Export defs
 export const dimensionsDefs = [
   {
     name: 'dimensionFrom',
     def: `
-<marker orient="auto" refY="4.0" refX="0.0" id="dimensionFrom" style="overflow:visible;" markerWidth="12" markerHeight="8">
-	<path class="mark fill-mark" d="M 0,4 L 12,0 C 10,2 10,6  12,8 z" />
+<marker orient="auto" refY="3.0" refX="0.0" id="dimensionFrom" style="overflow:visible;" markerWidth="10" markerHeight="6">
+	<path d="M 0,3 L 10,0 C 8,2 8,4 10,6 z" class="mark fill-mark" />
 </marker>`,
   },
   {
     name: 'dimensionTo',
     def: `
-<marker orient="auto" refY="4.0" refX="12.0" id="dimensionTo" style="overflow:visible;" markerWidth="12" markerHeight="8">
-	<path class="mark fill-mark" d="M 12,4 L 0,0 C 2,2 2,6  0,8 z" />
+<marker orient="auto" refY="3.0" refX="10.0" id="dimensionTo" style="overflow:visible;" markerWidth="10" markerHeight="6">
+	<path d="M 10,3 L 0,0 C 2,2 2,4 0,6 z" class="fill-mark mark" />
 </marker>`,
   },
 ]
 
-const prefix = '__paperless'
+/*
+ * Defaults for these macros
+ */
+const macroDefaults = {
+  text: false,
+  noStartMarker: false,
+  noEndMarker: false,
+  classes: {
+    line: 'mark',
+    leaders: 'mark dotted',
+    text: 'fill-mark center',
+  },
+}
 
+/*
+ * Higher-level methods to draw leaders for various types
+ */
+const leaders = {
+  hd: function hleader(so, type, props, id) {
+    let point
+    if (typeof so.y === 'undefined' || so[type].y === so.y) point = so[type]
+    else {
+      point = new props.Point(so[type].x, so.y)
+      drawLeader(props, so[type], point, id)
+    }
+
+    return point
+  },
+  vd: function vleader(so, type, props, id) {
+    let point
+    if (typeof so.x === 'undefined' || so[type].x === so.x) point = so[type]
+    else {
+      point = new props.Point(so.x, so[type].y)
+      drawLeader(props, so[type], point, id)
+    }
+
+    return point
+  },
+  ld: function lleader(so, type, props, id) {
+    let point, rot, other
+    if (type === 'from') {
+      rot = 1
+      other = 'to'
+    } else {
+      rot = -1
+      other = 'from'
+    }
+    if (typeof so.d === 'undefined') point = so[type]
+    else {
+      point = so[type].shiftTowards(so[other], so.d).rotate(90 * rot, so[type])
+      drawLeader(props, so[type], point, id)
+    }
+
+    return point
+  },
+}
+
+/*
+ * Low-level method to draw a leader
+ */
+function drawLeader({ paths, Path }, from, to, id) {
+  paths[id] = new Path().move(from).line(to).attr('class', 'mark dotted')
+}
+
+/*
+ * Low-level method to draw a dimension
+ */
 function drawDimension(from, to, so, { Path, units }) {
   const dimension = new Path()
     .move(from)
@@ -25,136 +92,113 @@ function drawDimension(from, to, so, { Path, units }) {
     .attr('class', 'mark')
     .attr('data-text', so.text || units(from.dist(to)))
     .attr('data-text-class', 'fill-mark center')
+    .attr('data-macro-id', so.id)
   if (!so.noStartMarker) dimension.attributes.set('marker-start', 'url(#dimensionFrom)')
   if (!so.noEndMarker) dimension.attributes.set('marker-end', 'url(#dimensionTo)')
 
   return dimension
 }
 
-function drawLeader({ paths, Path }, from, to, id) {
-  paths[id] = new Path().move(from).line(to).attr('class', 'mark dotted')
-}
+/*
+ * This method handles all dimension macros
+ */
+const addDimension = (config, props, type) => {
+  /*
+   * Don't add a dimention when paperless is false, unless force is true
+   */
+  if (!props.paperless && !config.force) return
 
-function hleader(so, type, props, id) {
-  const { Point } = props
-  let point
-  if (typeof so.y === 'undefined' || so[type].y === so.y) {
-    point = so[type]
+  /*
+   * Merge macro defaults with user-provided config to create the macro config (mc)
+   */
+  const mc = {
+    ...macroDefaults[type],
+    id: type,
+    ...config,
+    classes: macroDefaults.classes,
+  }
+  if (config.classes) mc.classes = { ...mc.classes, ...config.classes }
+
+  /*
+   * Get the list of IDs
+   */
+  const ids = getIds(['line', 'from', 'to'], mc.id, type)
+
+  /*
+   * Draw the dimension
+   */
+  if (type === 'pd') {
+    if (typeof mc.d === 'undefined') mc.d = 10 * props.scale
+    props.paths[ids.line] = mc.path
+      .offset(mc.d)
+      .attr('class', mc.classes.line)
+      .addText(mc.text || props.units(mc.path.length()), mc.classes.text)
+    if (!mc.noStartMarker)
+      props.paths[ids.line].attributes.set('marker-start', 'url(#dimensionFrom)')
+    if (!mc.noEndMarker) props.paths[ids.line].attributes.set('marker-end', 'url(#dimensionTo)')
+    drawLeader(props, mc.path.start(), props.paths[ids.line].start(), ids.from)
+    drawLeader(props, mc.path.end(), props.paths[ids.line].end(), ids.to)
   } else {
-    point = new Point(so[type].x, so.y)
-    drawLeader(props, so[type], point, id)
+    props.paths[ids.line] = drawDimension(
+      leaders[type](mc, 'from', props, ids.from),
+      leaders[type](mc, 'to', props, ids.to),
+      mc,
+      props
+    )
   }
 
-  return point
+  /*
+   * Store all IDs in the store so we can remove this macro with rm variants
+   */
+  props.store.set(['parts', props.part.name, 'macros', type, 'ids', mc.id, 'paths'], ids)
+
+  return props.store.getMacroIds(mc.id, type)
 }
 
-function vleader(so, type, props, id) {
-  const { Point } = props
-  let point
-  if (typeof so.x === 'undefined' || so[type].x === so.x) {
-    point = so[type]
-  } else {
-    point = new Point(so.x, so[type].y)
-    drawLeader(props, so[type], point, id)
-  }
-
-  return point
+/*
+ * This method handles the 'remove' part for all macros
+ */
+const removeDimension = function (id = macroDefaults.id, { paths, store, part }, type) {
+  for (const pid of Object.values(
+    store.get(['parts', part.name, 'macros', type, 'ids', id, 'paths'], {})
+  ))
+    delete paths[pid]
 }
 
-function lleader(so, type, props, id) {
-  let point, rot, other
-  if (type === 'from') {
-    rot = 1
-    other = 'to'
-  } else {
-    rot = -1
-    other = 'from'
+/*
+ * This method removes all dimensions of a given type
+ */
+const removeDimensionType = function ({ paths, store, part }, type) {
+  for (const ids of Object.values(store.get(['parts', part.name, 'macros', type, 'ids'], {}))) {
+    for (const pid of Object.values(ids.paths)) delete paths[pid]
   }
-  if (typeof so.d === 'undefined') {
-    point = so[type]
-  } else {
-    point = so[type].shiftTowards(so[other], so.d).rotate(90 * rot, so[type])
-    drawLeader(props, so[type], point, id)
-  }
-
-  return point
 }
 
-// Export macros
+/*
+ * This method removes all dimensions
+ */
+const removeAllDimensions = function ({ macro }) {
+  macro('rmahd')
+  macro('rmald')
+  macro('rmavd')
+  macro('rmapd')
+}
+
+/*
+ * Export macros
+ */
 export const dimensionsMacros = {
-  // horizontal
-  hd: function (so, props) {
-    const { getId, paths } = props
-    const id = so.id || getId(prefix)
-    paths[id] = drawDimension(
-      hleader(so, 'from', props, id + '_ls'),
-      hleader(so, 'to', props, id + '_le'),
-      so,
-      props
-    )
-  },
-  // vertical
-  vd: function (so, props) {
-    const { getId, paths } = props
-    const id = so.id || getId(prefix)
-    paths[id] = drawDimension(
-      vleader(so, 'from', props, id + '_ls'),
-      vleader(so, 'to', props, id + '_le'),
-      so,
-      props
-    )
-  },
-  // linear
-  ld: function (so, props) {
-    const { getId, paths } = props
-    const id = so.id || getId(prefix)
-    paths[id] = drawDimension(
-      lleader(so, 'from', props, id + '_ls'),
-      lleader(so, 'to', props, id + '_le'),
-      so,
-      props
-    )
-  },
-  // path
-  pd: function (so, props) {
-    const { getId, paths, scale, units } = props
-    const id = so.id || getId(prefix)
-    if (typeof so.d === 'undefined') so.d = 10 * scale
-    const dimension = so.path
-      .offset(so.d)
-      .attr('class', 'mark')
-      .attr('data-text', so.text || units(so.path.length()))
-      .attr('data-text-class', 'fill-mark center')
-    if (!so.noStartMarker) dimension.attributes.set('marker-start', 'url(#dimensionFrom)')
-    if (!so.noEndMarker) dimension.attributes.set('marker-end', 'url(#dimensionTo)')
-    paths[id] = dimension
-    drawLeader(props, so.path.start(), dimension.start(), id + '_ls')
-    drawLeader(props, so.path.end(), dimension.end(), id + '_le')
-  },
-  // Remove dimension
-  rmd: function (so, props) {
-    const { paths } = props
-    if (paths[so.id]) delete this.paths[so.id]
-    if (paths[`${so.id}_ls`]) delete paths[`${so.id}_ls`]
-    if (paths[`${so.id}_le`]) delete paths[`${so.id}_le`]
-    if (Array.isArray(so.ids)) {
-      for (const id of so.ids) {
-        if (paths[id]) delete paths[id]
-        if (paths[`${id}_ls`]) delete paths[`${id}_ls`]
-        if (paths[`${id}_le`]) delete paths[`${id}_le`]
-      }
-    }
-  },
-  // Remove all dimensions (with standard prefix)
-  rmad: function (params, props) {
-    const toRemove = {
-      points: props.point,
-      paths: props.paths,
-    }
-    for (let type in toRemove) {
-      for (let id in props[type]) {
-        if (id.slice(0, prefix.length) === prefix) delete props[type][id]
-      }
-    }
-  },
+  hd: (config, props) => addDimension(config, props, 'hd'),
+  ld: (config, props) => addDimension(config, props, 'ld'),
+  vd: (config, props) => addDimension(config, props, 'vd'),
+  pd: (config, props) => addDimension(config, props, 'pd'),
+  rmhd: (id, props) => removeDimension(id, props, 'hd'),
+  rmld: (id, props) => removeDimension(id, props, 'ld'),
+  rmvd: (id, props) => removeDimension(id, props, 'vd'),
+  rmpd: (id, props) => removeDimension(id, props, 'pd'),
+  rmahd: (config, props) => removeDimensionType(props, 'hd'),
+  rmald: (config, props) => removeDimensionType(props, 'ld'),
+  rmavd: (config, props) => removeDimensionType(props, 'vd'),
+  rmapd: (config, props) => removeDimensionType(props, 'pd'),
+  rmad: (config, props) => removeAllDimensions(props),
 }

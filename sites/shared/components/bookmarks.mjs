@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 import { horFlexClasses, notEmpty } from 'shared/utils.mjs'
 // Hooks
@@ -66,7 +67,7 @@ export const BookmarkButton = ({ slug, type, title }) => {
       }
     >
       <BookmarkIcon />
-      <span>{t('account:bookmarkThisPage')}</span>
+      <span>{t('account:bookmark')}</span>
     </button>
   )
 }

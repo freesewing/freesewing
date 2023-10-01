@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useState } from 'react'
 
 /*
@@ -28,20 +29,22 @@ const BaseAccordion = ({
 
   return (
     <nav>
-      {items.map((item, i) =>
-        active === i ? (
-          <div key={i} {...propsGetter(active, i)}>
-            <button onClick={setActive} className="w-full">
+      {items
+        .filter((item) => item[0])
+        .map((item, i) =>
+          active === i ? (
+            <div key={i} {...propsGetter(active, i)}>
+              <button onClick={setActive} className="w-full">
+                {item[0]}
+              </button>
+              {item[1]}
+            </div>
+          ) : (
+            <button key={i} {...getProps(active, i)} onClick={() => setActive(i)}>
               {item[0]}
             </button>
-            {item[1]}
-          </div>
-        ) : (
-          <button key={i} {...getProps(active, i)} onClick={() => setActive(i)}>
-            {item[0]}
-          </button>
-        )
-      )}
+          )
+        )}
     </nav>
   )
 }

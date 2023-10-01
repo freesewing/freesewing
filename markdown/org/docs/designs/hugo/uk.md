@@ -2,6 +2,7 @@
 title: "Худі Хьюго"
 ---
 
-<YouTube id='PL1gv5yv3DoZOHLjisuD1JcUPTkFy_IGGO' playlist />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
 
-<PatternDocs pattern='hugo' />
+<DesignInfo design='hugo' docs />
+

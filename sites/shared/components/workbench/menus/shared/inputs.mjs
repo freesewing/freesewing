@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useCallback, useMemo, useState, useEffect, useRef } from 'react'
 import {
   round,
@@ -222,8 +223,20 @@ export const ListToggle = ({ config, changed, updateFunc, name }) => {
  * @param  {Function}  options.updateFunc the function called by the event handler to update the value
  * @param  {Boolean} options.compact    include descriptions with the list items?
  * @param  {Function}  options.t          translation function
+ * @param  {String}  design  name of the design
+ * @param  {Boolean} isDesignOption  Whether or not it's a design option
  */
-export const ListInput = ({ name, config, current, updateFunc, compact = false, t, changed }) => {
+export const ListInput = ({
+  name,
+  config,
+  current,
+  updateFunc,
+  compact = false,
+  t,
+  changed,
+  design,
+  isDesignOption = false,
+}) => {
   const handleChange = useSharedHandlers({
     dflt: config.dflt,
     updateFunc,
@@ -231,13 +244,18 @@ export const ListInput = ({ name, config, current, updateFunc, compact = false, 
   })
 
   return config.list.map((entry) => {
-    const titleKey = config.choiceTitles ? config.choiceTitles[entry] : `${name}.o.${entry}`
-    const title = t(`${titleKey}.t`)
-    const desc = t(`${titleKey}.d`)
-    const sideBySide = desc.length + title.length < 60
+    const titleKey = config.choiceTitles
+      ? config.choiceTitles[entry]
+      : isDesignOption
+      ? `${design}:${name}.${entry}`
+      : `${name}.o.${entry}`
+    const title = config.titleMethod ? config.titleMethod(entry, t) : t(`${titleKey}.t`)
+    const desc = config.valueMethod ? config.valueMethod(entry, t) : t(`${titleKey}.d`)
+    const sideBySide = config.sideBySide || desc.length + title.length < 42
 
     return (
       <ButtonFrame
+        dense={config.dense || false}
         key={entry}
         active={
           changed

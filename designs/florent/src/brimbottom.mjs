@@ -1,10 +1,6 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function draftFlorentBrimBottom({
-  paperless,
   sa,
   store,
-  complete,
   points,
   options,
   macro,
@@ -14,8 +10,8 @@ function draftFlorentBrimBottom({
   measurements,
   part,
 }) {
-  let scale = 1
-  let base = scale * measurements.head * (1 + options.headEase)
+  const scale = 1
+  const base = scale * measurements.head * (1 + options.headEase)
 
   points.tipRight = new Point(base * 0.147, 0)
   points.tipLeft = points.tipRight.flipX()
@@ -46,50 +42,62 @@ function draftFlorentBrimBottom({
     .curve(points.innerMidCp2, points.tipLeftCp1, points.tipLeft)
     .line(points.tipLeft)
     .close()
-    .attr('class', 'fabric')
+    .addClass('fabric')
 
+  if (sa) paths.sa = paths.seam.offset(sa).addClass('fabric sa')
+
+  /*
+   * Annotations
+   */
+
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'fabric' })
+
+  // Grainline
   macro('grainline', {
     from: points.outerMid,
     to: points.innerMid,
   })
 
-  if (complete) {
-    points.title = points.innerMid.shiftFractionTowards(points.outerMidCp2, 0.35)
-    macro('title', {
-      at: points.title,
-      nr: 3,
-      title: 'brimBottom',
-    })
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['innerMid', 'outerMid'],
-    })
+  // Title
+  points.title = points.innerMid.shiftFractionTowards(points.outerMidCp2, 0.35)
+  macro('title', {
+    at: points.title,
+    nr: 3,
+    title: 'brimBottom',
+  })
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+  // Notches
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: ['innerMid', 'outerMid'],
+  })
 
-    if (paperless) {
-      macro('hd', {
-        from: points.tipLeft,
-        to: points.tipRight,
-        y: points.tipLeft.y - sa - 15,
-      })
-      macro('hd', {
-        from: paths.seam.edge('left'),
-        to: paths.seam.edge('right'),
-        y: points.tipLeft.y - sa - 30,
-      })
-      macro('vd', {
-        from: points.outerMid,
-        to: points.innerMid,
-        x: points.innerMid.x - 15,
-      })
-      macro('vd', {
-        from: points.outerMid,
-        to: points.tipRight,
-        x: points.tipRight.x + sa + 18,
-      })
-    }
-  }
+  // Dimensions
+  macro('hd', {
+    id: 'wTipToTip',
+    from: points.tipLeft,
+    to: points.tipRight,
+    y: points.tipLeft.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: paths.seam.edge('left'),
+    to: paths.seam.edge('right'),
+    y: points.tipLeft.y - sa - 30,
+  })
+  macro('vd', {
+    id: 'hBrim',
+    from: points.outerMid,
+    to: points.innerMid,
+    x: points.innerMid.x - 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.outerMid,
+    to: points.tipRight,
+    x: points.tipRight.x + sa + 18,
+  })
 
   return part
 }
@@ -104,6 +112,5 @@ export const brimBottom = {
     // Percentages
     headEase: { pct: 2, min: 0, max: 5, menu: 'fit' },
   },
-  plugins: [pluginBundle],
   draft: draftFlorentBrimBottom,
 }

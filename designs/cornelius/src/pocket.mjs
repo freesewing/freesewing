@@ -78,10 +78,8 @@ function draftCorneliusPocket({
       nr: 2,
       at: points.title,
       title: 'Pocket',
+      align: 'center',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -91,61 +89,73 @@ function draftCorneliusPocket({
   // Paperless?
   if (paperless) {
     macro('hd', {
+      id: 1,
       from: points.mpocketFacingBR,
       to: points.mpocketWaist,
       y: points.pU.y - sa - 15,
     })
     macro('hd', {
+      id: 2,
       from: points.mpocketWaist,
       to: points.pocketTL,
       y: points.pU.y - sa - 15,
     })
     macro('hd', {
+      id: 3,
       from: points.pocketTL,
       to: points.pocketWaist,
       y: points.pU.y - sa - 15,
     })
     macro('hd', {
+      id: 4,
       from: points.pocketWaist,
       to: points.pU,
       y: points.pU.y - sa - 15,
     })
     macro('hd', {
+      id: 5,
       from: points.pU,
       to: points.pocketFacingBR,
       y: points.pU.y - sa - 15,
     })
     macro('hd', {
+      id: 6,
       from: points.pocketWaist,
       to: points.pocketFacingTL,
       y: points.pU.y - sa - 15,
     })
     macro('vd', {
+      id: 7,
       from: points.pU,
       to: points.pocketSide,
       x: points.pocketSide.x + sa + 15,
     })
     macro('vd', {
+      id: 8,
       from: points.pocketTL,
       to: points.pocketBL,
       x: points.pocketTL.x + 15,
     })
     macro('vd', {
+      id: 9,
       from: points.pocketSide,
       to: points.mpocketWaist,
       x: points.pocketSide.x + sa + 15,
     })
     macro('vd', {
+      id: 10,
       from: points.pocketSide,
       to: points.pocketFacingBR,
       x: points.pocketSide.x + sa + 15,
     })
     macro('vd', {
+      id: 11,
       from: points.mpocketWaist,
       to: points.mpocketSide,
       x: points.mpocketSide.x - sa - 15,
     })
     macro('vd', {
+      id: 12,
       from: points.mpocketSide,
       to: points.mpocketFacingBR,
       x: points.mpocketSide.x - sa - 15,

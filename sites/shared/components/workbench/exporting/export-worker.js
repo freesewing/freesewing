@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 /**
  * A web worker to handle the business of exporting pattern files
  * */

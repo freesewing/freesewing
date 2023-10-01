@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // This is CJS because Tailwind does not (yet) support ESM
 import { theme as light, spectrum as lightSpectrum, rating as lightRating } from './light.mjs'
 import { theme as dark, spectrum as darkSpectrum, rating as darkRating } from './dark.mjs'

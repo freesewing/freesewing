@@ -1,8 +1,9 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 /*
  * Do not use the 'config' webpack alias here because
  * this is used in the prebuild step which is pure NodeJS
  */
-import { social } from '../../../config//social.mjs'
+import { social } from './social.mjs'
 
 export const isProduction = process?.env?.VERCEL_ENV === 'production'
 

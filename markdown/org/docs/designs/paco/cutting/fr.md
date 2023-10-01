@@ -14,7 +14,7 @@ Si une partie de motif n'est pas imprimée, cela signifie que vous n'en avez pas
 - De votre tissu principal :
   - 2x **partie 1**: Ceci est le panneau arrière. Coupez ces éléments de votre **tissu principal** avec _bons côtés ensemble_
   - 2x **partie 2**: Ceci est le panneau avant. Coupez ces éléments de votre **tissu principal** avec _bons côtés ensemble_
-  - 2x **partie 3**: Ceci est la ceinture. Coupez-le de votre **tissu principal**
+  - Coupez ceci, de votre **tissu principal** avec _bons côtés ensemble_ (inutile si vous avez choisi de ne pas avoir d'ourlet élastique) Coupez-le de votre **tissu principal**
   - 2x **part 4**: C'est le manchon de la cheville. Coupez ceci, de votre **tissu principal** avec _bons côtés ensemble_ (inutile si vous avez choisi de ne pas avoir d'ourlet élastique)
   - 2x **partie 7**: Il s'agit de la poche arrière. Coupez 2 de vos **tissus principaux** avec _bons côtés ensemble_
 - À partir de votre tissu de doublure :
@@ -25,10 +25,9 @@ Si une partie de motif n'est pas imprimée, cela signifie que vous n'en avez pas
 
 <Warning>
 
-#### Avertissements
+#### Caveats
 
-- Les marges de couture ne sont pas incluses
-- Il y a une marge de couture supplémentaire sur la bande de taille et l'ourlet
-- La ceinture est un simple rectangle, donc il n'est pas entièrement imprimé pour économiser du papier
+- There is no seam allowance on the interfacing
+- There is extra seam allowance on the waist band and hem
 
 </Warning>

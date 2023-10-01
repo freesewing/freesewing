@@ -3,11 +3,10 @@ import { sleeveVentLength, sleeveVentWidth } from './options.mjs'
 import { hidePresets } from '@freesewing/core'
 
 function jaegerUnderSleeve({
-  paperless,
   sa,
   utils,
-  complete,
   points,
+  store,
   measurements,
   options,
   macro,
@@ -102,101 +101,121 @@ function jaegerUnderSleeve({
     .move(points.usWristLeft)
     .line(points.ventFoldRight)
     .attr('class', 'fabric lashed')
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-  if (complete) {
-    // Notches
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['top', 'usElbowLeft', 'elbowRight'],
-    })
-    // Title
-    points.title = points.tsLeftEdge.shiftFractionTowards(points.tsRightEdge, 0.5)
-    macro('title', {
-      at: points.title,
-      nr: 5,
-      title: 'underSleeve',
-    })
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut([
+    { cut: 2, from: 'fabric' },
+    { cut: 2, from: 'lining' },
+  ])
 
-    // Grainline
-    macro('grainline', {
-      from: points.boxBottom,
-      to: points.armCenter,
-    })
+  // Notches
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: ['top', 'usElbowLeft', 'elbowRight'],
+  })
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+  // Title
+  points.title = points.tsLeftEdge.shiftFractionTowards(points.tsRightEdge, 0.5)
+  macro('title', {
+    at: points.title,
+    nr: 5,
+    title: 'underSleeve',
+  })
 
-    if (paperless) {
-      macro('ld', {
-        from: points.usWristLeft,
-        to: points.usWristRight,
-        d: 15,
-      })
-      macro('ld', {
-        from: points.usWristLeft,
-        to: points.ventFoldRight,
-        d: 30,
-      })
-      macro('ld', {
-        from: points.hemLeft,
-        to: points.ventRight,
-        d: -15 - sa,
-      })
-      macro('ld', {
-        from: points.hemLeft,
-        to: points.usWristLeft,
-        d: 15 + sa,
-      })
-      macro('ld', {
-        from: points.usWristRight,
-        to: points.ventSlopeStart,
-        d: 15,
-      })
-      macro('ld', {
-        from: points.ventFoldRight,
-        to: points.ventSlopeEnd,
-        d: 15,
-      })
-      macro('ld', {
-        from: points.usWristRight,
-        to: points.ventFoldRight,
-        d: -15,
-      })
-      macro('vd', {
-        from: points.usWristLeft,
-        to: points.usElbowLeft,
-        x: points.usLeftEdge.x - sa - 15,
-      })
-      macro('vd', {
-        from: points.usWristLeft,
-        to: points.usLeftEdge,
-        x: points.usLeftEdge.x - sa - 30,
-      })
-      macro('vd', {
-        from: points.usLeftEdge,
-        to: points.usTip,
-        x: points.usLeftEdge.x - sa - 30,
-      })
-      macro('vd', {
-        from: points.usWristLeft,
-        to: points.usTip,
-        x: points.usLeftEdge.x - sa - 45,
-      })
-      macro('ld', {
-        from: points.usElbowLeft,
-        to: points.elbowRight,
-      })
-      macro('hd', {
-        from: points.usLeftEdge,
-        to: points.usTip,
-        y: points.usTip.y - sa - 15,
-      })
-      macro('hd', {
-        from: points.usLeftEdge,
-        to: points.elbowRight,
-        y: points.usTip.y - sa - 30,
-      })
-    }
-  }
+  // Grainline
+  macro('grainline', {
+    from: points.boxBottom,
+    to: points.armCenter,
+  })
+
+  // Dimensions
+  macro('ld', {
+    id: 'lAtWrist',
+    from: points.usWristLeft,
+    to: points.usWristRight,
+    d: 15,
+  })
+  macro('ld', {
+    id: 'lAtWristPlusVent',
+    from: points.usWristLeft,
+    to: points.ventFoldRight,
+    d: 30,
+  })
+  macro('ld', {
+    id: 'lFoldoverCuff',
+    from: points.hemLeft,
+    to: points.ventRight,
+    d: -15 - sa,
+  })
+  macro('ld', {
+    id: 'hFoldoverCuff',
+    from: points.hemLeft,
+    to: points.usWristLeft,
+    d: 15 + sa,
+  })
+  macro('ld', {
+    id: 'lVent',
+    from: points.usWristRight,
+    to: points.ventSlopeStart,
+    d: 15,
+  })
+  macro('ld', {
+    id: 'lVentShort',
+    from: points.ventFoldRight,
+    to: points.ventSlopeEnd,
+    d: 15,
+  })
+  macro('ld', {
+    id: 'wVent',
+    from: points.usWristRight,
+    to: points.ventFoldRight,
+    d: -15,
+  })
+  macro('vd', {
+    id: 'hWristToElbow',
+    from: points.usWristLeft,
+    to: points.usElbowLeft,
+    x: points.usLeftEdge.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hFrontWristToArmhole',
+    from: points.usWristLeft,
+    to: points.usLeftEdge,
+    x: points.usLeftEdge.x - sa - 30,
+  })
+  macro('vd', {
+    id: 'hArmhole',
+    from: points.usLeftEdge,
+    to: points.usTip,
+    x: points.usLeftEdge.x - sa - 30,
+  })
+  macro('vd', {
+    id: 'hWristToSleeveTip',
+    from: points.usWristLeft,
+    to: points.usTip,
+    x: points.usLeftEdge.x - sa - 45,
+  })
+  macro('ld', {
+    id: 'wAtElbow',
+    from: points.usElbowLeft,
+    to: points.elbowRight,
+  })
+  macro('hd', {
+    id: 'wArmhole',
+    from: points.usLeftEdge,
+    to: points.usTip,
+    y: points.usTip.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.usLeftEdge,
+    to: points.elbowRight,
+    y: points.usTip.y - sa - 30,
+  })
 
   return part
 }

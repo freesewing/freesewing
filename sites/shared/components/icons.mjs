@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { logoPath } from 'shared/components/logos/freesewing.mjs'
 
 export const IconWrapper = ({
@@ -47,7 +48,7 @@ export const BookmarkIcon = (props) => (
 )
 
 export const BoolNoIcon = ({ size = 6 }) => (
-  <NoIcon className={`w-${size} h-${size} text-error`} stroke={3} />
+  <NoIcon className={`w-${size} h-${size} text-error`} stroke={4} />
 )
 export const BoolYesIcon = ({ size = 6 }) => (
   <OkIcon className={`w-${size} h-${size} text-success`} stroke={4} />
@@ -282,6 +283,18 @@ export const EmailIcon = (props) => (
   </IconWrapper>
 )
 
+export const ErrorIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+  </IconWrapper>
+)
+
+export const ExpandIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+  </IconWrapper>
+)
+
 export const ExportIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -303,6 +316,18 @@ export const FilterIcon = (props) => (
 export const FingerprintIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
+  </IconWrapper>
+)
+
+export const FlagIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
+  </IconWrapper>
+)
+
+export const ForbiddenIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
   </IconWrapper>
 )
 
@@ -370,6 +395,12 @@ export const InstagramIcon = (props) => (
 export const KeyIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
+  </IconWrapper>
+)
+
+export const KioskIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M 3,17.033898 V 7.2838983 c 0,-1.242641 1.007359,-2.25 2.25,-2.25 h 13.5 c 1.242641,0 2.25,1.007359 2.25,2.25 v 9.7499997 m -18,0 c 0,1.242641 1.007359,2.25 2.25,2.25 h 13.5 c 1.242641,0 2.25,-1.007359 2.25,-2.25" />
   </IconWrapper>
 )
 
@@ -471,7 +502,7 @@ export const NewsletterIcon = (props) => (
 
 export const NoIcon = (props) => (
   <IconWrapper {...props}>
-    <path d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+    <path d="M6,6 L 18,18 M 18,6 L 6,18" />
   </IconWrapper>
 )
 
@@ -626,6 +657,12 @@ export const SaIcon = (props) => (
   </IconWrapper>
 )
 
+export const SaveAsIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z M 11.5,10 v6 M 8.5,13 h 6" />
+  </IconWrapper>
+)
+
 export const ScaleIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M 2 20 h 20" strokeWidth={props.stroke / 2 || 1} />
@@ -743,6 +780,7 @@ export const UploadIcon = (props) => (
     <path d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
   </IconWrapper>
 )
+export const SaveIcon = UploadIcon
 
 export const UserIcon = (props) => (
   <IconWrapper {...props}>

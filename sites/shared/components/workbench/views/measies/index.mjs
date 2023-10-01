@@ -1,19 +1,18 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
-import { Fragment, useContext } from 'react'
+import { Fragment } from 'react'
 import { nsMerge } from 'shared/utils.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 import { designMeasurements, horFlexClasses } from 'shared/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
-// Context
-import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Components
 import {
   UserSetPicker,
   BookmarkedSetPicker,
-  CuratedSetPicker,
   ns as setsNs,
 } from 'shared/components/account/sets.mjs'
+import { CuratedSetPicker } from 'shared/components/curated-sets.mjs'
 import { MeasiesEditor } from './editor.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { Accordion } from 'shared/components/accordion.mjs'
@@ -25,7 +24,6 @@ const iconClasses = { className: 'w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink
 
 export const MeasiesView = ({ design, Design, settings, update, missingMeasurements, setView }) => {
   const { t } = useTranslation(['workbench'])
-  const { setLoadingStatus } = useContext(LoadingStatusContext)
 
   const loadMeasurements = (set) => {
     update.settings([
@@ -33,7 +31,6 @@ export const MeasiesView = ({ design, Design, settings, update, missingMeasureme
       [['units'], set.imperial ? 'imperial' : 'metric'],
     ])
     setView('draft')
-    setLoadingStatus([true, 'appliedMeasies', true, true])
   }
 
   return (

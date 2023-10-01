@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { frontpoints } from './frontpoints.mjs'
 
 function draftCorneliusFront({
@@ -143,10 +142,8 @@ function draftCorneliusFront({
       nr: 76,
       at: points.title,
       title: 'Front',
+      align: 'center',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
 
     points.scaleboxAnchor = points.pD.shift(270, 60)
     macro('scalebox', { at: points.scaleboxAnchor })
@@ -164,29 +161,35 @@ function draftCorneliusFront({
   // Paperless?
   if (paperless) {
     macro('ld', {
+      id: 1,
       from: points.topOfVent,
       to: points.pJ,
     })
     macro('hd', {
+      id: 2,
       from: points.pocketSide,
       to: points.pocketWaist,
       y: points.pocketWaist.y + 15,
     })
     macro('hd', {
+      id: 3,
       from: points.pW,
       to: points.pocketWaist,
       y: points.pocketWaist.y + 15,
     })
     macro('hd', {
+      id: 4,
       from: points.pocketWaist,
       to: points.flyTop,
       y: points.pocketWaist.y + 15,
     })
     macro('hd', {
+      id: 5,
       from: points.pAextra,
       to: points.pR,
     })
     macro('hd', {
+      id: 6,
       from: points.pK,
       to: points.pJ,
       y: points.pJ.y - 15,
@@ -194,37 +197,44 @@ function draftCorneliusFront({
     // Keystone original (see above):
     if (keystone) {
       macro('hd', {
+        id: 7,
         from: points.pSlitBottom,
         to: points.pJ,
         y: points.pJ.y - 30,
       })
       macro('vd', {
+        id: 8,
         from: points.pSlitTop,
         to: points.pSlitBottom,
         x: points.pSlitTop.x + 15,
       })
     }
     macro('vd', {
+      id: 9,
       from: points.pocketSide,
       to: points.pocketWaist,
       x: points.pocketSide.x,
     })
     macro('vd', {
+      id: 10,
       from: points.pW,
       to: points.pR,
       x: points.pR.x,
     })
     macro('vd', {
+      id: 11,
       from: points.pR,
       to: points.pK,
       x: points.pR.x,
     })
     macro('vd', {
+      id: 12,
       from: points.pW,
       to: points.pZ,
       x: points.pW.x + 15,
     })
     macro('vd', {
+      id: 13,
       from: points.pJ,
       to: points.pocketWaist,
       x: points.pocketWaist.x,
@@ -247,6 +257,5 @@ export const front = {
     pctKtoRup: 0.25,
     pctKtoH: 0.7,
   },
-  plugins: [pluginBundle],
   draft: draftCorneliusFront,
 }

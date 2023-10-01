@@ -2,17 +2,7 @@
 title: "Сорочка Саймон"
 ---
 
-<Tip>
+import { DesignInfo } from 'shared/components/designs/info.mjs'
 
-##### Слідкуйте за шиттям разом з Келлі та Джуліаном
+<DesignInfo design='simon' docs />
 
-Келлі Хогабум та Джуліан Коллінз зробили шиття з Simon(e), і у них є відео з
-усіма етапами.
-Якщо ви хочете зробити цей візерунок, Келлі та Джуліан допоможуть вам від початку до кінця.
-
-Ви можете знайти всі матеріали на сайті Келлі
-: [#simonsayssew with kelly hogaboom & julian collins] (https://kelly.hogaboom.org/2020/07/simon-says-sew-with-kelly-hogaboom-and-julian-collins/)
-
-</Tip>
-
-<PatternDocs pattern='simon' />

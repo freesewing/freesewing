@@ -1,5 +1,10 @@
+#These are UI strings
+tags: Stichworte
+showLineDrawings: Show line drawings
+showExamples: Show examples
+clearFilter: Clear filter
 difficulty: Schwierigkeit
-tags: Design Tags
+#Actual tags start here
 accessories: Accessoires
 bags: Taschen
 blocks: Blöcke
@@ -14,4 +19,3 @@ tops: Oberteile
 toys: Spielzeug
 trousers: Hose
 underwear: Unterwäsche
-

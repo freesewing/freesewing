@@ -102,7 +102,8 @@ PatternModel.prototype.guardedCreate = async function ({ body, user }) {
     setId: body.set ? body.set : null,
     settings: {
       ...body.settings,
-      measurements: body.settings.measurements === 'object' ? body.settings.measurements : {},
+      measurements:
+        typeof body.settings.measurements === 'object' ? body.settings.measurements : {},
     },
     userId: user.uid,
     name: typeof body.name === 'string' && body.name.length > 0 ? body.name : '--',

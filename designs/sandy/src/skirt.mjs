@@ -1,6 +1,5 @@
 import { draftRingSector } from './shared.mjs'
 import { pctBasedOn } from '@freesewing/core'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { elastics } from '@freesewing/snapseries'
 
 function sandySkirt({
@@ -14,8 +13,6 @@ function sandySkirt({
   snippets,
   options,
   measurements,
-  complete,
-  paperless,
   macro,
   absoluteOptions,
   part,
@@ -100,112 +97,122 @@ function sandySkirt({
   // Anchor samples to the centre of the waist
   points.gridAnchor = points.in2Flipped.clone()
 
-  // Complete pattern?
-  if (complete) {
-    macro('cutonfold', {
-      from: points.in2Flipped,
-      to: points.ex2Flipped,
-      grainline: true,
-    })
+  if (sa) {
+    paths.hemBase = new Path()
+      .move(points.ex1Rotated)
+      .curve(points.ex1CFlippedRotated, points.ex2CFlippedRotated, points.ex2FlippedRotated)
+      .curve(points.ex1CFlipped, points.ex2CFlipped, points.ex2Flipped)
+      .offset(store.get('fullLength') * options.lengthBonus * options.hemWidth * -1)
+    paths.saBase = new Path()
+      .move(points.in2Flipped)
+      .curve(points.in2CFlipped, points.in1CFlipped, points.in2FlippedRotated)
+      .curve(points.in2CFlippedRotated, points.in1CFlippedRotated, points.in1Rotated)
+    if (!options.seamlessFullCircle) paths.saBase = paths.saBase.line(points.ex1Rotated)
+    paths.saBase = paths.saBase.offset(sa * -1)
+
+    paths.hemBase.hide()
+    paths.saBase.hide()
+
     if (options.seamlessFullCircle) {
-      macro('cutonfold', {
-        from: points.ex1Rotated,
-        to: points.in1Rotated,
-        prefix: 'double',
-      })
-    }
-    points.logo = points.in2FlippedRotated.shiftFractionTowards(points.ex2FlippedRotated, 0.3)
-    snippets.logo = new Snippet('logo', points.logo)
-
-    points.title = points.in2FlippedRotated.shiftFractionTowards(points.ex2FlippedRotated, 0.5)
-    macro('title', { at: points.title, nr: 1, title: 'skirt' })
-
-    points.scalebox = points.in2FlippedRotated.shiftFractionTowards(points.ex2FlippedRotated, 0.7)
-    macro('scalebox', { at: points.scalebox })
-
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['in1Rotated', 'gridAnchor'],
-    })
-
-    if (sa) {
-      paths.hemBase = new Path()
-        .move(points.ex1Rotated)
-        .curve(points.ex1CFlippedRotated, points.ex2CFlippedRotated, points.ex2FlippedRotated)
-        .curve(points.ex1CFlipped, points.ex2CFlipped, points.ex2Flipped)
-        .offset(store.get('fullLength') * options.lengthBonus * options.hemWidth * -1)
-      paths.saBase = new Path()
+      paths.sa = new Path()
         .move(points.in2Flipped)
-        .curve(points.in2CFlipped, points.in1CFlipped, points.in2FlippedRotated)
-        .curve(points.in2CFlippedRotated, points.in1CFlippedRotated, points.in1Rotated)
-      if (!options.seamlessFullCircle) paths.saBase = paths.saBase.line(points.ex1Rotated)
-      paths.saBase = paths.saBase.offset(sa * -1)
-
-      paths.hemBase.hide()
-      paths.saBase.hide()
-
-      if (options.seamlessFullCircle) {
-        paths.sa = new Path()
-          .move(points.in2Flipped)
-          .line(paths.saBase.start())
-          .join(paths.saBase)
-          .line(points.in1Rotated)
-          .move(points.ex1Rotated)
-          .line(paths.hemBase.start())
-          .join(paths.hemBase)
-          .line(points.ex2Flipped)
-          .attr('class', 'fabric sa')
-      } else {
-        paths.sa = new Path()
-          .move(points.in2Flipped)
-          .line(paths.saBase.start())
-          .join(paths.saBase)
-          .line(paths.hemBase.start())
-          .join(paths.hemBase)
-          .line(points.ex2Flipped)
-          .attr('class', 'fabric sa')
-      }
+        .line(paths.saBase.start())
+        .join(paths.saBase)
+        .line(points.in1Rotated)
+        .move(points.ex1Rotated)
+        .line(paths.hemBase.start())
+        .join(paths.hemBase)
+        .line(points.ex2Flipped)
+        .attr('class', 'fabric sa')
+    } else {
+      paths.sa = new Path()
+        .move(points.in2Flipped)
+        .line(paths.saBase.start())
+        .join(paths.saBase)
+        .line(paths.hemBase.start())
+        .join(paths.hemBase)
+        .line(points.ex2Flipped)
+        .attr('class', 'fabric sa')
     }
   }
 
-  // Paperless?
-  if (paperless) {
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'fabric', onFold: true })
+
+  // Cutonfold
+  macro('cutonfold', {
+    from: points.in2Flipped,
+    to: points.ex2Flipped,
+    grainline: true,
+  })
+  if (options.seamlessFullCircle) {
+    macro('cutonfold', {
+      from: points.ex1Rotated,
+      to: points.in1Rotated,
+      id: 'double',
+    })
+  }
+
+  // Logo
+  points.logo = points.in2FlippedRotated.shiftFractionTowards(points.ex2FlippedRotated, 0.3)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  // Title
+  points.title = points.in2FlippedRotated.shiftFractionTowards(points.ex2FlippedRotated, 0.5)
+  macro('title', { at: points.title, nr: 1, title: 'skirt' })
+
+  // Scalebox
+  points.scalebox = points.in2FlippedRotated.shiftFractionTowards(points.ex2FlippedRotated, 0.7)
+  macro('scalebox', { at: points.scalebox })
+
+  // Notches
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: ['in1Rotated', 'gridAnchor'],
+  })
+  snippets.center = new Snippet('bnotch', points.center)
+
+  // Dimensions
+  macro('vd', {
+    id: 'hLeft',
+    from: points.ex2Flipped,
+    to: points.in2Flipped,
+    x: points.ex2Flipped.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hToOpeningLeft',
+    from: points.in2Flipped,
+    to: points.center,
+    x: points.ex2Flipped.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.ex2Flipped,
+    to: points.center,
+    x: points.ex2Flipped.x - sa - 30,
+  })
+  if (options.circleRatio !== 0.5) {
     macro('vd', {
-      from: points.ex2Flipped,
-      to: points.in2Flipped,
-      x: points.ex2Flipped.x - sa - 15,
+      id: 'hTopToOpeningRight',
+      from: points.ex1Rotated,
+      to: points.in1Rotated,
+      x: options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 15 : points.ex1Rotated.x + sa + 15,
     })
     macro('vd', {
-      from: points.in2Flipped,
+      id: 'hOpeningRightToCenter',
+      from: points.in1Rotated,
       to: points.center,
-      x: points.ex2Flipped.x - sa - 15,
+      x: options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 15 : points.ex1Rotated.x + sa + 15,
     })
     macro('vd', {
-      from: points.ex2Flipped,
+      from: points.ex1Rotated,
+      id: 'hHemRightToCenter',
       to: points.center,
-      x: points.ex2Flipped.x - sa - 30,
+      x: options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 30 : points.ex1Rotated.x + sa + 30,
     })
-    if (options.circleRatio !== 0.5) {
-      macro('vd', {
-        from: points.ex1Rotated,
-        to: points.in1Rotated,
-        x:
-          options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 15 : points.ex1Rotated.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.in1Rotated,
-        to: points.center,
-        x:
-          options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 15 : points.ex1Rotated.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.ex1Rotated,
-        to: points.center,
-        x:
-          options.circleRatio > 0.5 ? points.in1Rotated.x - sa - 30 : points.ex1Rotated.x + sa + 30,
-      })
-    }
-    snippets.center = new Snippet('bnotch', points.center)
   }
 
   return part
@@ -214,7 +221,6 @@ function sandySkirt({
 export const skirt = {
   name: 'sandy.skirt',
   measurements: ['waist', 'waistToFloor', 'waistToHips', 'hips'],
-  plugins: pluginBundle,
   options: {
     minimumOverlap: 15, // Lower than this and we don't draw a button
     seamlessFullCircle: { bool: false, menu: 'construction' },

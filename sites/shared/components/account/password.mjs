@@ -13,7 +13,7 @@ import { SaveSettingsButton } from 'shared/components/buttons/save-settings-butt
 import { Popout } from 'shared/components/popout/index.mjs'
 import { RightIcon } from 'shared/components/icons.mjs'
 import { PasswordInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 
 export const ns = ['account', 'status']
 

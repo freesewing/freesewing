@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Hooks
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'
@@ -8,7 +9,8 @@ import {
   CutIcon,
   OptionsIcon,
   PrintIcon,
-  UploadIcon,
+  SaveIcon,
+  SaveAsIcon,
   RightIcon,
   LeftIcon,
   DocsIcon,
@@ -19,7 +21,6 @@ import {
 } from 'shared/components/icons.mjs'
 import Link from 'next/link'
 import { MenuWrapper } from 'shared/components/workbench/menus/shared/menu-wrapper.mjs'
-import { isProduction } from 'shared/config/freesewing.config.mjs'
 
 export const ns = ['workbench', 'sections']
 
@@ -30,7 +31,8 @@ const icons = {
   cut: CutIcon,
   draft: OptionsIcon,
   print: PrintIcon,
-  save: UploadIcon,
+  save: SaveIcon,
+  saveas: SaveAsIcon,
   logs: CodeIcon,
   inspect: XrayIcon,
   measies: MeasieIcon,
@@ -62,7 +64,7 @@ export const NavButton = ({
   )
 }
 
-const NavIcons = ({ setView, setDense, dense, view }) => {
+const NavIcons = ({ setView, setDense, dense, view, saveAs = false }) => {
   const { t } = useTranslation(['header'])
   const iconSize = 'h-6 w-6 grow-0'
 
@@ -110,7 +112,7 @@ const NavIcons = ({ setView, setDense, dense, view }) => {
       >
         <PrintIcon className={iconSize} />
       </NavButton>
-      {!isProduction && (
+      {/*!isProduction && (
         <NavButton
           onClick={() => setView('cut')}
           label={t('workbench:cutLayout')}
@@ -118,13 +120,13 @@ const NavIcons = ({ setView, setDense, dense, view }) => {
         >
           <CutIcon className={iconSize} />
         </NavButton>
-      )}
+      )*/}
       <NavButton
         onClick={() => setView('save')}
-        label={t('workbench:savePattern')}
+        label={t(`workbench:${saveAs ? 'savePattern' : 'savePatternAsHellip'}`)}
         active={view === 'save'}
       >
-        <UploadIcon className={iconSize} />
+        {saveAs ? <SaveIcon className={iconSize} /> : <SaveAsIcon className={iconSize} />}
       </NavButton>
       <NavButton
         onClick={() => setView('export')}
@@ -161,7 +163,7 @@ const NavIcons = ({ setView, setDense, dense, view }) => {
   )
 }
 
-export const WorkbenchHeader = ({ view, setView }) => {
+export const WorkbenchHeader = ({ view, setView, saveAs = false }) => {
   const [dense, setDense] = useState(true)
   return (
     <MenuWrapper
@@ -188,7 +190,7 @@ export const WorkbenchHeader = ({ view, setView }) => {
         flex flex-col
         items-center w-full `}
         >
-          <NavIcons {...{ setView, setDense, dense, view }} />
+          <NavIcons {...{ setView, setDense, dense, view, saveAs }} />
         </div>
       </header>
     </MenuWrapper>

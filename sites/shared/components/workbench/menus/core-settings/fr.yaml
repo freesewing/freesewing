@@ -9,6 +9,8 @@ sabool.t: Inclure la marge de couture
 sabool.d: Contrôle l'inclusion ou non de la marge de couture dans le patron
 complete.t: Détails
 complete.d: Contrôle à quel point votre patron est détaillé ; soit un patron complet avec tous les détails, ou simplement les contours des parties du patron
+expand.t: Expand
+expand.d: Controls efforts to save paper. Disable this to expand all pattern parts at the cost of using more space.
 only.t: Pièces incluses
 only.d: Utilise ceci pour contrôler exactement les parties du modèle qui seront incluses dans ton modèle
 locale.t: Langue
@@ -35,6 +37,10 @@ completeYes.t: Génère un modèle complet
 completeYes.d: Cela générera un modèle complet avec toutes les notations, les lignes et les marques. Utilise cette fonction si tu n'es pas certain de ce que tu dois choisir.
 completeNo.t: Génère une ébauche de modèle
 completeNo.d: Ne génère que le contour des pièces du modèle. Utilise cette option si tu souhaites utiliser une découpeuse laser ou si tu as d'autres besoins spécifiques.
+expandYes.t: Expand all pattern parts
+expandYes.d: This will generate a pattern where all pattern parts are drawn to their full size, even if they are simple rectangles.
+expandNo.t: Keep patterns parts compact where possible
+expandNo.d: This will draw a more dense representation of the pattern which includes all info without using up too much space & paper.
 paperlessNo.t: Génère un motif régulier
 paperlessNo.d: Cela générera un motif régulier, que tu pourras ensuite imprimer.
 paperlessYes.t: Génère un modèle sans papier

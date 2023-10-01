@@ -2,6 +2,8 @@ import { Bezier } from 'bezier-js'
 import { Path } from './path.mjs'
 import { Point } from './point.mjs'
 
+export const goldenRatio = 1.618034
+
 //////////////////////////////////////////////
 //            PUBLIC  METHODS               //
 //////////////////////////////////////////////
@@ -477,7 +479,7 @@ export function mergeI18n(designs, options) {
  * @param {object} optionsConfig - The pattern's options config
  * @return {object} result - An object with the merged options and their values
  */
-export function mergeOptions(settings, optionsConfig) {
+export function mergeOptions(settings = {}, optionsConfig) {
   const merged = typeof settings.options === 'undefined' ? {} : { ...settings.option }
   for (const [key, option] of Object.entries(optionsConfig)) {
     if (typeof option === 'object') {
@@ -693,7 +695,7 @@ export function __addNonEnumProp(obj, name, value) {
 export function __asNumber(value, param, method, log) {
   if (typeof value === 'number') return value
   if (typeof value === 'string') {
-    log.warning(
+    log.warn(
       `Called \`${method}(${param})\` but \`${param}\` is not a number. Will attempt to cast to Number`
     )
     try {
@@ -730,7 +732,7 @@ export function __isCoord(value) {
  * @return {string} macroName - The inernal macroName
  */
 export function __macroName(name) {
-  return `__macro_${name}`
+  return `__macro_${name.toLowerCase()}`
 }
 
 /**

@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { measurementAsMm } from 'shared/utils.mjs'
 import {
   SaIcon,
@@ -8,6 +9,7 @@ import {
   DetailIcon,
   IncludeIcon,
   MarginIcon,
+  ExpandIcon,
 } from 'shared/components/icons.mjs'
 
 export const defaultSamm = (units, inMm = true) => {
@@ -105,6 +107,20 @@ export const loadSettingsConfig = ({
       1: 'yes',
     },
     icon: DetailIcon,
+  },
+  expand: {
+    control: 4, // Show when control > 3
+    list: [1, 0],
+    dflt: 1,
+    choiceTitles: {
+      0: 'expandNo',
+      1: 'expandYes',
+    },
+    valueTitles: {
+      0: 'no',
+      1: 'yes',
+    },
+    icon: ExpandIcon,
   },
   only: {
     control: 4, // Show when control > 3

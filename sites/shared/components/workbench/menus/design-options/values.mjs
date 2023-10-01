@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { formatMm, formatPercentage } from 'shared/utils.mjs'
 import { ListValue, HighlightedValue, PlainValue, BoolValue } from '../shared/values'
 import { mergeOptions } from '@freesewing/core'
@@ -25,7 +26,7 @@ export const CountOptionValue = ({ config, current, changed }) => (
 
 /** Displays a list option value */
 export const ListOptionValue = (props) => (
-  <ListValue {...props} t={(input) => props.t(`${props.name}.o.${input}`)} />
+  <ListValue {...props} t={(input) => props.t(`${props.design}:${props.config.name}.${input}.t`)} />
 )
 
 /** Displays a degree value */

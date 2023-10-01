@@ -2,4 +2,7 @@
 title: "Teagan, camiseta"
 ---
 
-<PatternDocs pattern='teagan' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='teagan' docs />
+

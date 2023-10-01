@@ -13,7 +13,7 @@ import {
   ThemeIcon,
   I18nIcon,
   MeasieIcon,
-  PageIcon,
+  PatternIcon,
   GitHubIcon,
   PlusIcon,
 } from 'shared/components/icons.mjs'
@@ -50,7 +50,7 @@ const NavIcons = ({ setModal }) => {
         color={spectrum[2]}
         extraClasses="hidden lg:flex"
       >
-        <PageIcon className={iconSize} />
+        <PatternIcon className={iconSize} />
       </NavButton>
       <NavButton
         href="/sets"

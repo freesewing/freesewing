@@ -3,6 +3,9 @@
 
 ## Unreleased
 
+
+## 3.0.0 (2022-09-30)
+
 ### global
 
 #### Removed
@@ -18,47 +21,9 @@
  - The `@freesewing/utils` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
  - The `gatsby-remark-jargon` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
  - The `remark-jargon` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported. Use `rehype-jargon` instead.
-
-### albert
-
-#### Fixed
-
- - Workaround for not finding a suitable legband radius
-
-### unice
-
-#### Added
-
- - Added new Front Curve and Back Curve style options
-
-#### Changed
-
- - Updated gusset to always curve inward
-
-#### Fixed
-
- - Fixed bug which prevented parts from being generated as intended
-
-### waralee
-
-#### Added
-
- - Added *mini* version of main pants part
- - Added new pocket options
- - Added seperate waistband options
- - Added bow tie placement option
-
-#### Fixed
-
- - Fixed crotch depth issue
- - Fixed pocket size issue
- - Fixed waist shaping issue
-
-### plugin-bundle
-
-#### Removed
-
- - Named exports of the bundled plugins are no longer available
+ - The `@freesewing/ursula` package is not part of FreeSewing v3. While v2 versions remain available, use `@freesewing/uma` instead.
+ - The `@freesewing/unice` package is not part of FreeSewing v3. While v2 versions remain available, use `@freesewing/uma` instead.
+ - The `@freesewing/plugin-bundle` package is not part of FreeSewing v3. While v2 versions remain available, v3 uses `@freesewing/core-plugins` instead.
 
 ### plugin-bust
 
@@ -73,10 +38,6 @@
  - This plugin no longer sets its version as an SVG attribute when rendering patterns
 
 ### plugin-gore
-
-#### Breaking
-
- - The `goreNumber` props is removed. Please use `gores` instead
 
 #### Removed
 
@@ -129,13 +90,6 @@
 #### Removed
 
  - This plugin no longer sets its version as an SVG attribute when rendering patterns
-
-### snapseries
-
-#### Breaking
-
- - Named export `smallsteps` has been renamed to `smallSteps`
- - Named export `bigsteps` has been renamed to `bigSteps`
 
 
 ## 2.22.0 (2022-08-23)
@@ -320,12 +274,6 @@
 
  - Decreased default collar ease
  - Increased default yoke height
-
-### ursula
-
-#### Added
-
- - Added markers for elastics
 
 
 ## 2.21.1 (2022-06-28)
@@ -616,24 +564,6 @@
 
  - Migrated from Rollup to Esbuild for all builds
 
-### tutorial
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
-### unice
-
-#### Added
-
- - Unice is an underwear pattern
-
-### ursula
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
 ### wahid
 
 #### Changed
@@ -657,12 +587,6 @@
  - Migrated from Rollup to Esbuild for all builds
 
 ### yuri
-
-#### Changed
-
- - Migrated from Rollup to Esbuild for all builds
-
-### plugin-bundle
 
 #### Changed
 
@@ -1158,18 +1082,6 @@
 
  - Switched to default import for version from package.json
 
-### tutorial
-
-#### Changed
-
- - Switched to default import for version from package.json
-
-### ursula
-
-#### Changed
-
- - Switched to default import for version from package.json
-
 ### wahid
 
 #### Changed
@@ -1193,13 +1105,6 @@
 #### Changed
 
  - Switched to default import for version from package.json
-
-### plugin-bundle
-
-#### Changed
-
- - plugin-banner is now part of plugin-bundle
- - plugin-bartack is now part of plugin-bundle
 
 ### plugin-flip
 
@@ -1287,12 +1192,6 @@
 #### Changed
 
  - Updated the rendertest pattern to be more concise
-
-### plugin-bundle
-
-#### Added
-
- - Added (esm) unit tests
 
 ### plugin-bust
 
@@ -1846,25 +1745,6 @@
 #### Added
 
  - The `s3collar and `s3armhole` options now allow shifting the shoulder seam (`s3` is short for *Shift Shoulder Seam*)
-
-### tutorial
-
-#### Fixed
-
- - Set department in the config to one of the newly accepted values
-
-### ursula
-
-#### Added
-
- - Initial release of Ursula, a basic, highly-customizable underwear pattern
-
-### plugin-bundle
-
-#### Changed
-
- - Include plugin-buttons
- - Include plugin-mirror
 
 ### plugin-mirror
 
@@ -2905,12 +2785,6 @@
  - Ported trayvon to the new (names for) measurements. See [#416](https://github.com/freesewing/freesewing/issues/416)
  - Removed `Circumference` suffix from measurement names
 
-### tutorial
-
-#### Changed
-
- - Removed `Circumference` suffix from measurement names
-
 ### wahid
 
 #### Changed
@@ -3526,19 +3400,7 @@
 
  - Initial release
 
-### tutorial
-
-#### Added
-
- - Initial release
-
 ### wahid
-
-#### Added
-
- - Initial release
-
-### plugin-bundle
 
 #### Added
 

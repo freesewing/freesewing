@@ -1,6 +1,14 @@
 # Change log for: @freesewing/lucy
 
 
+## 3.0.0 (2022-09-30)
+
+### Changed
+
+ - All FreeSewing pacakges are now ESM only.
+ - All FreeSewing pacakges now use named exports.
+ - Dropped support for NodeJS 14. NodeJS 18 (LTS/hydrogen) or more recent is now required.
+
 ## 2.21.0 (2022-06-27)
 
 ### Added

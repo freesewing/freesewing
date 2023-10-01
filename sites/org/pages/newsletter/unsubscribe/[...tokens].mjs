@@ -50,7 +50,7 @@ const NewsletterPage = ({ page, id, ehash }) => {
             </h1>
             <h5>{t('newsletter:unsubscribeConfirm')}</h5>
             <p>{t('newsletter:unsubscribeLead')}</p>
-            <button className="btn btn-error" onClick={handler}>
+            <button className="btn btn-error w-full" onClick={handler}>
               {t('newsletter:unsubscribe')}
             </button>
             <Popout note>

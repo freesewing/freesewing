@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useCallback, useMemo } from 'react'
 // Components
 import { OptionsIcon } from 'shared/components/icons.mjs'
@@ -72,7 +73,10 @@ export const DesignOptions = ({
   DynamicDocs = false,
 }) => {
   const menuNs = [design, ...ns]
-  const optionsMenu = useMemo(() => optionsMenuStructure(patternConfig.options), [patternConfig])
+  const optionsMenu = useMemo(
+    () => optionsMenuStructure(patternConfig.options, settings),
+    [patternConfig, settings]
+  )
   const updateFunc = useCallback(
     (name, value) => update.settings(['options', ...name], value),
     [update]
@@ -103,6 +107,7 @@ export const DesignOptions = ({
         updateFunc,
         values,
         isDesignOptionsGroup: true,
+        design,
       }}
     />
   )

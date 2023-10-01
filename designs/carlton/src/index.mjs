@@ -4,7 +4,10 @@ import { i18n as brianI18n, Brian, sleevecap as brianSleevecap } from '@freesewi
 import { i18n as carltonI18n } from '../i18n/index.mjs'
 // Parts
 import { front } from './front.mjs'
+import { frontFacing } from './front-facing.mjs'
+import { frontLining } from './front-lining.mjs'
 import { back } from './back.mjs'
+import { backStay } from './back-stay.mjs'
 import { tail } from './tail.mjs'
 import { topSleeve } from './topsleeve.mjs'
 import { underSleeve } from './undersleeve.mjs'
@@ -26,7 +29,10 @@ const Carlton = new Design({
   data,
   parts: [
     front,
+    frontFacing,
+    frontLining,
     back,
+    backStay,
     tail,
     topSleeve,
     underSleeve,
@@ -51,6 +57,10 @@ const i18n = mergeI18n([brianI18n, carltonI18n], {
     keep: [
       ...Object.keys(Brian.patternConfig.options),
       ...Object.keys(Carlton.patternConfig.options),
+      'legacyArmholeDepthNo',
+      'legacyArmholeDepthYes',
+      'draftForHighBustNo',
+      'draftForHighBustYes',
     ],
     drop: Object.keys(brianSleevecap.options).filter((o) => o !== 'sleevecapEase'),
   },
@@ -59,7 +69,10 @@ const i18n = mergeI18n([brianI18n, carltonI18n], {
 // Named exports
 export {
   front,
+  frontFacing,
+  frontLining,
   back,
+  backStay,
   tail,
   topSleeve,
   underSleeve,

@@ -2,4 +2,7 @@
 title: "Lacerne Lunetius"
 ---
 
-<PatternDocs pattern='lunetius' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='lunetius' docs />
+

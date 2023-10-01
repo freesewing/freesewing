@@ -2,4 +2,7 @@
 title: "Sven, der Pullover"
 ---
 
-<PatternDocs pattern='sven' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='sven' docs />
+

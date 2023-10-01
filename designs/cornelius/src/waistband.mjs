@@ -53,10 +53,8 @@ function draftCorneliusWaistband({
       nr: 1,
       at: points.title,
       title: 'WaistBand',
+      align: 'center',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = new Path()
@@ -71,11 +69,13 @@ function draftCorneliusWaistband({
   // Paperless?
   if (paperless) {
     macro('hd', {
+      id: 1,
       from: points.pD,
       to: points.pA,
       y: points.pA.y - sa - 15,
     })
     macro('vd', {
+      id: 2,
       from: points.pD,
       to: points.pC,
       x: points.pC.x - sa - 15,

@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
@@ -10,7 +11,7 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { BackToAccountButton, Icons, welcomeSteps } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 import { ListInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 import { ControlScore } from 'shared/components/control/score.mjs'
 
 export const ns = ['account', 'status']

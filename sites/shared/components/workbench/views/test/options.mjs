@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useRef } from 'react'
 import { WorkbenchMenu } from 'shared/components/workbench/menus/shared/index.mjs'
 import {
