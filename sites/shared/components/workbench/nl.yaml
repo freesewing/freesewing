@@ -9,7 +9,7 @@ bookmarkPattern: Bookmark pattern
 bottomRight: Rechtsonder
 changeMeasies: Verander patroon metingen
 chooseATest: Choose a test scenario to run
-chooseATestDesc: You can test how the design adapts to changes in a specific design option or measurements, or even test the design across different measurements sets.
+chooseATestDesc: You can test how the design adapts to changes in a specific design option or measurements.
 chooseATestMenuMobileMsg: To do so, open the test menu and select the scenario you want to run.
 chooseATestMenuMsg: To do so, select the test scenario you want to run in the menu on the right.
 chooseFromBookmarkedSets: Choose one of the measurements sets you've bookmarked
@@ -24,6 +24,8 @@ collar: Kraag
 columns: columns
 configurePattern: Patroon configureren
 construction: Constructie
+continueEditingTitle: Continue editing
+continueEditingDesc: Load the newly saved pattern in the pattern editor, so you can make more changes.
 cuffs: Manchetten
 currentPrintLayout: Current print layout
 cutLayout: Lay-out snijden
@@ -50,6 +52,8 @@ fit: Pasvorm
 frontPockets: Voorzakken
 generatePdf: Generate print-ready PDF
 giveItAName: Geef het een naam
+goToPatternTitle: Navigate to the pattern page
+goToPatternDesc: Exit the pattern editor and navigate to the pattern page where you can update the pattern's metadata.
 height: Hoogte
 help: Help
 layoutSettings.d: Additional options to further optimize the printing layout of your pattern.
@@ -86,9 +90,13 @@ resetPrintLayoutDesc: Removes all manual changes to the print layout, and restor
 rows: rows
 save: Opslaan
 savePattern: Bewaar patroon
+saveAsNewPattern: Save as new pattern
+savePatternAs: Save pattern as...
+savePatternAsHellip: Save pattern as...
 saveSettings: Instellingen opslaan
 saveYourPattern: Je patroon opslaan
 seeMissingMeasies: See missing measurements
+show: Toon
 showAllParts: Toon alle patroondelen
 showMovableButtons: Knopen
 showOnlyThisPart: Laat alleen dit patroondeel zien
@@ -107,6 +115,7 @@ testSets: Test measurements sets
 testSetsDesc: Test how the design adapts across different measurements sets
 topLeft: Linksboven
 weLackSomeMeasies: We missen { nr } metingen om dit patroon te maken
+whereToGoAfterSaveAs: After saving the new pattern, what do you want to do?
 width: Breedte
 xTotalPagesSomeBlank: "{total} pages in total but {blank} are blank"
 yamlEditViewError: Problemen met YAML

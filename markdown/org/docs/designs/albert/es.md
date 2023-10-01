@@ -1,5 +1,5 @@
 ---
-title: "Albert, delantal"
+title: "Albert apron:"
 ---
 
 import { DesignInfo } from 'shared/components/designs/info.mjs'

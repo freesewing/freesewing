@@ -2,12 +2,18 @@
 title: "Ursula onderbroek: Knip instructies"
 ---
 
-Ursula bestaat uit een voorpand, een achterkant en een hellende gusset.
+Uma typically consists of a front, a back, and a lined gusset. In that constallation, this is the cut list:
 
 - **Buitenstof**
   - Knip **1 voorpand**
-  - Knip **1 rugpand**
+  - Buitenstof
   - Knip **2 gusset**
+
+However, if you enable the **Bulge** option, the front and gusset will become 1 part. In this case, the cutlist looks like this:
+
+- **Buitenstof**
+  - Knip **1 voorpand**
+  - Buitenstof
 
 <Note>
 

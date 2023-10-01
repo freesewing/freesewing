@@ -1,9 +1,1 @@
-{
-  "comment": "Comentario",
-  "note": "Nota",
-  "tip": "Consejo",
-  "warning": "Advertencia",
-  "fixme": "FIXME",
-  "link": "Enlace",
-  "related": "Relacionado"
-}
+{"comment":"Comentario","note":"Nota","tip":"Consejo","warning":"Advertencia","fixme":"FIXME","link":"Enlace","related":"Relacionado"}
