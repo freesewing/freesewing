@@ -198,6 +198,7 @@ export const MenuItemGroup = ({
     // if it's the isGroup property, or it is false, it shouldn't be shown
     if (itemName === 'isGroup' || item === false) return null
     if (!item) return null
+    if (item.control && control && item.control > control) return null
 
     const ItemIcon = item.icon
       ? item.icon
