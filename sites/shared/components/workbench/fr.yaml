@@ -59,6 +59,7 @@ help: Aide
 layoutSettings.d: Additional options to further optimize the printing layout of your pattern.
 layoutSettings.t: Layout settings
 length: Longueur
+learnHowToUseEditor: Learn how to use FreeSewing's online pattern editor
 measies: Mesures du motif
 measiesOk: Nous avons toutes les mesures requises pour créer ce modèle.
 measurements.d: Teste l'effet d'une mesure sur l'apparence de ce motif.
