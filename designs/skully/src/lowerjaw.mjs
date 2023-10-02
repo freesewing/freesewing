@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { cheek } from './cheek.mjs'
 import { uppermouth } from './uppermouth.mjs'
 
@@ -55,8 +54,6 @@ function draftLowerjaw({
     p = new Path().move(points.point5).curve(points.point5Cp1, points.point0Cp2, points.point0)
 
     points.point5 = points.point5.shift(270, (mouthTop - p.length()) * 0.5)
-
-    console.log({ mouthTop: mouthTop, seriously: p.length() })
   } while (iterations < 100 && (mouthTop - p.length() > 1 || mouthTop - p.length() < -1))
   if (iterations >= 100) {
     log.error('Something is not quite right here!')
@@ -198,6 +195,5 @@ function draftLowerjaw({
 export const lowerjaw = {
   name: 'lowerjaw',
   after: [cheek, uppermouth],
-  plugins: [pluginBundle],
   draft: draftLowerjaw,
 }

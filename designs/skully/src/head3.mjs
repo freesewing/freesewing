@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { cheek } from './cheek.mjs'
 import { head2 } from './head2.mjs'
 import { jawfloor } from './jawfloor.mjs'
@@ -200,6 +199,5 @@ function draftHead3({
 export const head3 = {
   name: 'head3',
   after: [cheek, head2, jawfloor],
-  plugins: [pluginBundle],
   draft: draftHead3,
 }

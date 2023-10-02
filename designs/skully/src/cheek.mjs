@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function draftCheek({
   options,
   Point,
@@ -169,7 +167,6 @@ function draftCheek({
     points.noseX = paths.nose.edge('right')
     points.eyeBottomY = paths.eyeBottom.edge('bottom')
     points.upperJaw = paths.upperJaw.shiftFractionAlong(0.42)
-    console.log({ uj: points.upperJaw, p6: points.point6 })
 
     macro('hd', {
       from: points.noseX,
@@ -278,6 +275,5 @@ export const cheek = {
     size: { pct: 75, min: 10, max: 300, menu: 'fit' },
   },
   optionalMeasurements: ['head'],
-  plugins: [pluginBundle],
   draft: draftCheek,
 }

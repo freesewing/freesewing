@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { cheek } from './cheek.mjs'
 import { lowerjaw } from './lowerjaw.mjs'
 
@@ -186,6 +185,5 @@ function draftJawfloor({
 export const jawfloor = {
   name: 'jawfloor',
   after: [cheek, lowerjaw],
-  plugins: [pluginBundle],
   draft: draftJawfloor,
 }

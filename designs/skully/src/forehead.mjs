@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { cheek } from './cheek.mjs'
 
 function draftForehead({
@@ -243,6 +242,5 @@ function draftForehead({
 export const forehead = {
   name: 'forehead',
   after: cheek,
-  plugins: [pluginBundle],
   draft: draftForehead,
 }

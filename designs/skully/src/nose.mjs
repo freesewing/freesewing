@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { cheek } from './cheek.mjs'
 import { eye } from './eye.mjs'
 import { forehead } from './forehead.mjs'
@@ -18,7 +17,6 @@ function draftNose({
   macro,
   part,
 }) {
-  console.log('nose')
   const textAttribute = 'text-xs center'
 
   const noseSide = store.get('noseSide')
@@ -198,6 +196,5 @@ function draftNose({
 export const nose = {
   name: 'nose',
   after: [cheek, forehead, eye],
-  plugins: [pluginBundle],
   draft: draftNose,
 }

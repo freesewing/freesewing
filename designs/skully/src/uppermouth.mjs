@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { cheek } from './cheek.mjs'
 import { head1 } from './head1.mjs'
 import { lowermouth } from './lowermouth.mjs'
@@ -112,7 +111,6 @@ function draftUppermouth({
     ],
     prefix: 'm',
   })
-  console.log({ points: JSON.parse(JSON.stringify(points)) })
 
   paths.upperJaw1 = new Path()
     .move(points.point1)
@@ -292,6 +290,5 @@ function draftUppermouth({
 export const uppermouth = {
   name: 'uppermouth',
   after: [cheek, head1, lowermouth],
-  plugins: [pluginBundle],
   draft: draftUppermouth,
 }

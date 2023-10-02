@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { cheek } from './cheek.mjs'
 
 function draftCheekbone({
@@ -13,7 +12,6 @@ function draftCheekbone({
   macro,
   part,
 }) {
-  console.log('cheekbone')
   const textAttribute = 'text-xs center text-decoration="line-through"'
   const sizeFactor = store.get('sizeFactor')
 
@@ -97,6 +95,5 @@ function draftCheekbone({
 export const cheekbone = {
   name: 'cheekbone',
   after: cheek,
-  plugins: [pluginBundle],
   draft: draftCheekbone,
 }
