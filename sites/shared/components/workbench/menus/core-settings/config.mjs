@@ -11,7 +11,7 @@ import {
   MarginIcon,
   ExpandIcon,
 } from 'shared/components/icons.mjs'
-import { freeSewingConfig as config } from 'shared/config/freesewing.config.mjs'
+import { controlLevels } from 'shared/config/freesewing.config.mjs'
 
 export const defaultSamm = (units, inMm = true) => {
   const dflt = units === 'imperial' ? 0.5 : 1
@@ -25,7 +25,7 @@ export const loadSettingsConfig = ({
   parts = [],
 }) => ({
   sabool: {
-    control: config.coreSettingsControl.sa,
+    control: controlLevels.core.sa,
     list: [0, 1],
     choiceTitles: {
       0: 'saNo',
@@ -40,7 +40,7 @@ export const loadSettingsConfig = ({
   },
   samm: sabool
     ? {
-        control: config.coreSettingsControl.sa,
+        control: controlLevels.core.sa,
         min: 0,
         max: units === 'imperial' ? 2 : 2.5,
         dflt: defaultSamm(units),
@@ -48,7 +48,7 @@ export const loadSettingsConfig = ({
       }
     : false,
   paperless: {
-    control: config.coreSettingsControl.paperless,
+    control: controlLevels.core.paperless,
     list: [0, 1],
     choiceTitles: {
       0: 'paperlessNo',
@@ -62,7 +62,7 @@ export const loadSettingsConfig = ({
     icon: PaperlessIcon,
   },
   locale: {
-    control: config.coreSettingsControl.locale,
+    control: controlLevels.core.locale,
     list: ['de', 'en', 'es', 'fr', 'nl'],
     dflt: language,
     choiceTitles: {
@@ -82,7 +82,7 @@ export const loadSettingsConfig = ({
     icon: I18nIcon,
   },
   units: {
-    control: config.coreSettingsControl.units,
+    control: controlLevels.core.units,
     list: ['metric', 'imperial'],
     dflt: 'metric',
     choiceTitles: {
@@ -96,7 +96,7 @@ export const loadSettingsConfig = ({
     icon: UnitsIcon,
   },
   complete: {
-    control: config.coreSettingsControl.complete,
+    control: controlLevels.core.complete,
     list: [1, 0],
     dflt: 1,
     choiceTitles: {
@@ -110,7 +110,7 @@ export const loadSettingsConfig = ({
     icon: DetailIcon,
   },
   expand: {
-    control: config.coreSettingsControl.expand,
+    control: controlLevels.core.expand,
     list: [1, 0],
     dflt: 1,
     choiceTitles: {
@@ -124,14 +124,14 @@ export const loadSettingsConfig = ({
     icon: ExpandIcon,
   },
   only: {
-    control: config.coreSettingsControl.only,
+    control: controlLevels.core.only,
     dflt: false,
     list: parts,
     parts,
     icon: IncludeIcon,
   },
   scale: {
-    control: config.coreSettingsControl.scale,
+    control: controlLevels.core.scale,
     min: 0.1,
     max: 5,
     dflt: 1,
@@ -139,7 +139,7 @@ export const loadSettingsConfig = ({
     icon: ScaleIcon,
   },
   margin: {
-    control: config.coreSettingsControl.margin,
+    control: controlLevels.core.margin,
     min: 0,
     max: 2.5,
     dflt: measurementAsMm(units === 'imperial' ? 0.125 : 0.2, units),
