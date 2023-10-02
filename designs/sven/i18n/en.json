@@ -10,9 +10,9 @@
   },
   "s": {
     "cutCuff.t": "The cuff is not shown",
-    "cutCuff.d": "The **Cuff** (6) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long (this includes seam allowance). It is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutCuff.d": "The **Cuff** (6) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long.",
     "cutWaistband.t": "The waistband is not shown",
-    "cutWaistband.d": "The **Waistband** (4) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long (this includes seam allowance). It is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part."
+    "cutWaistband.d": "The **Waistband** (4) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long."
   },
   "o": {
     "hipsEase": {

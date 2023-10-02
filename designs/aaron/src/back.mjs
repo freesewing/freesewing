@@ -89,8 +89,7 @@ export const back = {
         .curve(points.armholeCp2, points.strapRightCp1, points.strapRight)
         .length() +
         store.get('frontArmholeLength')) *
-        0.95 +
-        2 * sa
+        0.95
     )
     store.set(
       'neckBindingLength',
@@ -100,8 +99,7 @@ export const back = {
         .length() +
         store.get('frontNeckOpeningLength')) *
         2 *
-        0.95 +
-        2 * sa
+        0.95
     )
 
     // Warn user is SA > 10 because it makes the binding width rather large

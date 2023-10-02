@@ -156,7 +156,11 @@ const NavIcons = ({ setView, setDense, dense, view, saveAs = false }) => {
       >
         <XrayIcon className={iconSize} />
       </NavButton>
-      <NavButton label={t('workbench:docs')} href="/docs/site/draft">
+      <NavButton
+        onClick={() => setView('docs')}
+        label={t('workbench:docs')}
+        active={view === 'docs'}
+      >
         <DocsIcon className={iconSize} />
       </NavButton>
     </>

@@ -117,8 +117,10 @@ const mergeOrder = (titles, order, withSlug = false) => {
 const formatDate = (date, slug, lang) => {
   date = date.split('-')
   if (date.length === 1) date = date[0].split('.')
-  if (date.length === 1) console.log(`Could not format date ${date} from ${slug} (${lang})`)
-  else {
+  if (date.length === 1) {
+    if (date[0].length === 8) return date[0]
+    else console.log(`Could not format date ${date} from ${slug} (${lang})`)
+  } else {
     if (date[0].length === 4) return date.join('')
     else return date.reverse().join('')
   }

@@ -56,10 +56,12 @@ export const neckTie = {
      * Don't bother unless expand is set
      */
     if (!expand) {
+      const extraSa = sa ? 2 * sa : 0
       store.flag.note({
         msg: `bee:cutNeckTie`,
+        notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
         replace: {
-          width: units(absoluteOptions.neckTieWidth * 2 + 2 * sa),
+          width: units(absoluteOptions.neckTieWidth * 2 + extraSa),
           length: units(neckTieLength * 2),
         },
         suggest: {

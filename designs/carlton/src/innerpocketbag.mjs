@@ -16,11 +16,13 @@ function draftCarltonInnerPocketBag({
   if (expand) store.flag.preset('expandIsOn')
   else {
     // Expand is on, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
     store.flag.note({
       msg: `carlton:cutInnerPocketBag`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
       replace: {
-        w: units(store.get('innerPocketWidth') + 2 * sa),
-        l: units(store.get('innerPocketWidth') * options.innerPocketDepth * 2 + 2 * sa),
+        w: units(store.get('innerPocketWidth') + extraSa),
+        l: units(store.get('innerPocketWidth') * options.innerPocketDepth * 2 + extraSa),
       },
       suggest: {
         text: 'flag:show',
