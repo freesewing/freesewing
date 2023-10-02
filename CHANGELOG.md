@@ -3,6 +3,109 @@
 
 ## Unreleased
 
+### aaron
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### albert
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### bee
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### benjamin
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### carlton
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### charlie
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### hortensia
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### huey
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### hugo
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### jaeger
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+ - Corrected part mixup in translation of flag message
+
+### octoplushy
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### paco
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### sandy
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### shin
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### sven
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### yuri
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### plugin-annotations
+
+#### Changed
+
+ - Added support for notes in flags
+
 
 ## 3.0.0 (2022-09-30)
 
