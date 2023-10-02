@@ -1,4 +1,5 @@
-import PDFDocument from 'pdfkit/js/pdfkit.standalone'
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
+import { Pdf, mmToPoints } from './pdf.mjs'
 import SVGtoPDF from 'svg-to-pdfkit'
 import { logoPath } from 'shared/components/logos/freesewing.mjs'
 
@@ -8,12 +9,7 @@ const logoSvg = `<svg viewBox="0 0 25 25">
   <path d="${logoPath}" />
 </svg>`
 
-/**
- * PdfKit, the library we're using for pdf generation, uses points as a unit, so when we tell it things like where to put the svg and how big the svg is, we need those numbers to be in points
- * The svg uses mm internally, so when we do spatial reasoning inside the svg, we need to know values in mm
- * */
-const mmToPoints = 2.834645669291339
-
+const lineStart = 50
 /**
  * Freesewing's first explicit class?
  * handles pdf exporting
@@ -22,13 +18,15 @@ export class PdfMaker {
   /**	the svg as text to embed in the pdf */
   svg
   /** the document configuration */
-  settings
+  pageSettings
   /** the pdfKit instance that is writing the document */
   pdf
   /** the export buffer to hold pdfKit output */
   buffers
   /** translated strings to add to the cover page */
   strings
+  /** cutting layout svgs and strings */
+  cutLayouts
 
   /** the usable width (excluding margin) of the pdf page, in points */
   pageWidth
@@ -47,16 +45,21 @@ export class PdfMaker {
   svgHeight
 
   pageCount = 0
+  lineLevel = 50
 
-  constructor({ svg, settings, pages, strings }) {
-    this.settings = settings
+  constructor({ svg, pageSettings, pages, strings, cutLayouts }) {
+    this.pageSettings = pageSettings
     this.pagesWithContent = pages.withContent
     this.svg = svg
     this.strings = strings
+    this.cutLayouts = cutLayouts
 
-    this.initPdf()
+    this.pdf = Pdf({
+      size: this.pageSettings.size.toUpperCase(),
+      layout: this.pageSettings.orientation,
+    })
 
-    this.margin = this.settings.margin * mmToPoints // margin is in mm because it comes from us, so we convert it to points
+    this.margin = this.pageSettings.margin * mmToPoints // margin is in mm because it comes from us, so we convert it to points
     this.pageHeight = this.pdf.page.height - this.margin * 2 // this is in points because it comes from pdfKit
     this.pageWidth = this.pdf.page.width - this.margin * 2 // this is in points because it comes from pdfKit
 
@@ -69,104 +72,97 @@ export class PdfMaker {
     this.svgHeight = this.rows * this.pageHeight
   }
 
-  /** create the pdf document */
-  initPdf() {
-    // instantiate with the correct size and orientation
-    this.pdf = new PDFDocument({
-      size: this.settings.size.toUpperCase(),
-      layout: this.settings.orientation,
-    })
-
-    // PdfKit wants to flush the buffer on each new page.
-    // We can't save directly from inside a worker, so we have to manage the buffers ourselves so we can return a blob
-    this.buffers = []
-
-    // use a listener to add new data to our buffer storage
-    this.pdf.on('data', this.buffers.push.bind(this.buffers))
-  }
-
   /** make the pdf */
   async makePdf() {
     await this.generateCoverPage()
+    await this.generateCutLayoutPages()
     await this.generatePages()
   }
 
   /** convert the pdf to a blob */
-  toBlob() {
-    return new Promise((resolve) => {
-      // have to do it this way so that the document flushes everything to buffers
-      this.pdf.on('end', () => {
-        // convert buffers to a blob
-        resolve(
-          new Blob(this.buffers, {
-            type: 'application/pdf',
-          })
-        )
-      })
-
-      // end the stream
-      this.pdf.end()
-    })
+  async toBlob() {
+    return this.pdf.toBlob()
   }
 
   /** generate the cover page for the pdf */
   async generateCoverPage() {
     // don't make one if it's not requested
-    if (!this.settings.coverPage) {
+    if (!this.pageSettings.coverPage) {
       return
     }
 
-    const headerLevel = await this.generateCoverPageTitle()
+    this.nextPage()
+    await this.generateCoverPageTitle()
+    await this.generateSvgPage(this.svg)
+  }
 
+  /** generate a page that has an svg centered in it below any text */
+  async generateSvgPage(svg) {
     //abitrary margin for visual space
     let coverMargin = 85
-    let coverHeight = this.pdf.page.height - coverMargin * 2 - headerLevel
+    let coverHeight = this.pdf.page.height - coverMargin * 2 - this.lineLevel
     let coverWidth = this.pdf.page.width - coverMargin * 2
 
     // add the entire pdf to the page, so that it fills the available space as best it can
-    await SVGtoPDF(this.pdf, this.svg, coverMargin, headerLevel + coverMargin, {
+    await SVGtoPDF(this.pdf, svg, coverMargin, this.lineLevel + coverMargin, {
       width: coverWidth,
       height: coverHeight,
       assumePt: false,
       // use aspect ratio to center it
       preserveAspectRatio: 'xMidYMid meet',
     })
+
+    // increment page count
     this.pageCount++
   }
 
+  /** generate the title for the cover page */
   async generateCoverPageTitle() {
-    let lineLevel = 50
-    let lineStart = 50
-
-    this.pdf.fontSize(28)
-    this.pdf.text('FreeSewing', lineStart, lineLevel)
-    lineLevel += 28
-
-    this.pdf.fontSize(12)
-    this.pdf.text(this.strings.tagline, lineStart, lineLevel)
-    lineLevel += 12 + 20
-
-    this.pdf.fontSize(48)
-    this.pdf.text(this.strings.design, lineStart, lineLevel)
-    lineLevel += 48
+    this.addText('FreeSewing', 28)
+      .addText(this.strings.tagline, 12, 20)
+      .addText(this.strings.design, 48, -8)
 
     await SVGtoPDF(this.pdf, logoSvg, this.pdf.page.width - lineStart - 100, lineStart, {
       width: 100,
-      height: lineLevel - lineStart - 8,
+      height: this.lineLevel - lineStart,
       preserveAspectRatio: 'xMaxYMin meet',
     })
 
     this.pdf.lineWidth(1)
     this.pdf
-      .moveTo(lineStart, lineLevel - 8)
-      .lineTo(this.pdf.page.width - lineStart, lineLevel - 8)
+      .moveTo(lineStart, this.lineLevel)
+      .lineTo(this.pdf.page.width - lineStart, this.lineLevel)
       .stroke()
 
+    this.lineLevel += 8
     this.pdf.fillColor('#888888')
-    this.pdf.fontSize(10)
-    this.pdf.text(this.strings.url, lineStart, lineLevel)
+    this.addText(this.strings.url, 10)
+  }
 
-    return lineLevel
+  /** generate the title for a cutting layout page */
+  async generateCutLayoutTitle(materialTitle, materialDimensions) {
+    this.addText(this.strings.cuttingLayout, 12, 2).addText(materialTitle, 28)
+
+    this.pdf.lineWidth(1)
+    this.pdf
+      .moveTo(lineStart, this.lineLevel)
+      .lineTo(this.pdf.page.width - lineStart, this.lineLevel)
+      .stroke()
+
+    this.lineLevel += 5
+    this.addText(materialDimensions, 16)
+  }
+
+  /** generate all cutting layout pages */
+  async generateCutLayoutPages() {
+    if (!this.pageSettings.cutlist || !this.cutLayouts) return
+
+    for (const material in this.cutLayouts) {
+      this.nextPage()
+      const { title, dimensions, svg } = this.cutLayouts[material]
+      await this.generateCutLayoutTitle(title, dimensions)
+      await this.generateSvgPage(svg)
+    }
   }
 
   /** generate the pages of the pdf */
@@ -190,16 +186,38 @@ export class PdfMaker {
         let x = -w * this.pageWidth + startMargin
         let y = -h * this.pageHeight + startMargin
 
-        // if there was no cover page, the first page already exists
-        if (this.pageCount > 0) {
-          // otherwise make a new page
-          this.pdf.addPage()
-        }
+        this.nextPage()
 
         // add the pdf to the page, offset by the page distances
         await SVGtoPDF(this.pdf, this.svg, x, y, options)
         this.pageCount++
       }
     }
+  }
+
+  /** Reset to a clean page */
+  nextPage() {
+    // set the line level back to the top
+    this.lineLevel = lineStart
+
+    // if no pages have been made, we can use the current
+    if (this.pageCount === 0) return
+
+    // otherwise make a new page
+    this.pdf.addPage()
+  }
+
+  /**
+   * Add Text to the page at the current line level
+   * @param {String} text         the text to add
+   * @param {Number} fontSize     the size for the text
+   * @param {Number} marginBottom additional margin to add below the text
+   */
+  addText(text, fontSize, marginBottom = 0) {
+    this.pdf.fontSize(fontSize)
+    this.pdf.text(text, 50, this.lineLevel)
+
+    this.lineLevel += fontSize + marginBottom
+    return this
   }
 }

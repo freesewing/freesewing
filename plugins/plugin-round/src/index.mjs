@@ -1,39 +1,56 @@
 import { name, version } from '../data.mjs'
+import { getIds } from './utils.mjs'
+
+/*
+ * These are the keys for macro IDs
+ */
+const pointKeys = ['start', 'cp1', 'cp2', 'end']
+const pathKeys = ['path']
 
 export const plugin = {
   name,
   version,
   macros: {
-    round: function (so) {
+    round: function (mc, { points, paths, Point, Path, store, part }) {
       const C = 0.55191502449
-      const { hide = true } = so
-      // Find angle between points
-      let from = so.from
-      let to = so.to
-      let via = so.via
-      let radius = so.radius
-      let prefix = so.prefix || 'round'
-      let angle1 = from.angle(via)
-      let angle2 = via.angle(to)
-      if ((Math.round(angle1) - Math.round(angle2)) % 90 !== 0)
-        console.log('Warning: The round macro only handles 90 degree angles correctly.')
-      let fd = from.dist(via)
-      let td = to.dist(via)
-      if (radius > fd || radius > td || typeof radius === 'undefined') radius = fd > td ? td : fd
-      this.points[prefix + 'Start'] = via.shiftTowards(from, radius)
-      this.points[prefix + 'Cp1'] = via.shiftTowards(from, radius * (1 - C))
-      this.points[prefix + 'Cp2'] = via.shiftTowards(to, radius * (1 - C))
-      this.points[prefix + 'End'] = via.shiftTowards(to, radius)
-      this.paths[prefix + 'Rounded'] = new this.Path()
-        .move(this.points[prefix + 'Start'])
-        .curve(
-          this.points[prefix + 'Cp1'],
-          this.points[prefix + 'Cp2'],
-          this.points[prefix + 'End']
-        )
-        .attr('class', so.class ? so.class : '')
-      if (hide) this.paths[prefix + 'Rounded'].hide()
-      else this.paths[prefix + 'Rounded'].unhide()
+      const {
+        from = new Point(0, 0),
+        to = new Point(666, 666),
+        via = new Point(666, 0),
+        id = 'round',
+        classes = '',
+        hide = true,
+      } = mc
+      let { radius = 66.6 } = mc
+      const ids = getIds([...pointKeys, ...pathKeys], id, name)
+
+      const fd = from.dist(via)
+      const td = to.dist(via)
+      if (radius > fd || radius > td) radius = fd > td ? td : fd
+      points[ids.start] = via.shiftTowards(from, radius)
+      points[ids.cp1] = via.shiftTowards(from, radius * (1 - C))
+      points[ids.cp2] = via.shiftTowards(to, radius * (1 - C))
+      points[ids.end] = via.shiftTowards(to, radius)
+      paths[ids.path] = new Path()
+        .move(this.points[ids.start])
+        .curve(points[ids.cp1], points[ids.cp2], points[ids.end])
+        .addClass(classes)
+      if (hide) paths[ids.path].hide()
+      else paths[ids.path].unhide()
+
+      /*
+       * Store all IDs in the store so we can remove this macro with rmtitle
+       */
+      store.set(
+        ['parts', part.name, 'macros', 'round', 'ids', mc.id, 'points'],
+        getIds(pointKeys, id, name)
+      )
+      store.set(
+        ['parts', part.name, 'macros', 'round', 'ids', mc.id, 'paths'],
+        getIds(pathKeys, id, name)
+      )
+
+      return store.getMacroIds(id, 'round')
     },
   },
 }

@@ -21,11 +21,12 @@ export const mailer = (config) => ({
  */
 async function sendEmailViaAwsSes(
   config,
-  { template, to, cc = false, language = 'en', replacements = {} }
+  { template, to, cc = false, language = 'en', replacements = {}, subject = false }
 ) {
   // Make sure we have what it takes
   if (!template || !to || typeof templates[template] === 'undefined') {
-    log.warn(`Tried to email invalid template: ${template}`)
+    if (!to) log.warn(`A To: address is mandatory when sending email`)
+    else log.warn(`Tried to email invalid template: ${template}`)
     return false
   }
 
@@ -64,7 +65,7 @@ async function sendEmailViaAwsSes(
         },
         Subject: {
           Charset: 'utf-8',
-          Data: replace.subject,
+          Data: subject || replace.subject,
         },
       },
     },

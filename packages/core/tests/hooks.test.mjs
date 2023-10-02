@@ -6,24 +6,22 @@ const expect = chai.expect
 describe('Hooks', () => {
   it('Should contain all hooks', () => {
     const pattern = new Pattern()
-    const h = pattern.hooks
-    const test = {
-      preInit: [],
-      postInit: [],
-      preDraft: [],
-      preSetDraft: [],
-      prePartDraft: [],
-      postPartDraft: [],
-      postSetDraft: [],
-      postDraft: [],
-      preSample: [],
-      postSample: [],
-      preRender: [],
-      preLayout: [],
-      postLayout: [],
-      postRender: [],
-      insertText: [],
-    }
-    expect(h).to.eql(test)
+    expect(Object.keys(pattern.plugins.hooks)).to.eql([
+      'preInit',
+      'postInit',
+      'preDraft',
+      'preSetDraft',
+      'prePartDraft',
+      'postPartDraft',
+      'postSetDraft',
+      'postDraft',
+      'preSample',
+      'postSample',
+      'preRender',
+      'preLayout',
+      'postLayout',
+      'postRender',
+      'insertText',
+    ])
   })
 })

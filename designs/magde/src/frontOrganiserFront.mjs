@@ -1,15 +1,11 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function draftFrontOrganiserFront({
   options,
   Point,
   Path,
-  Snippet,
   points,
   paths,
   complete,
   sa,
-  snippets,
   paperless,
   macro,
   part,
@@ -114,6 +110,5 @@ export const frontOrganiserFront = {
     flapHeightRatio: { pct: 83, min: 60, max: 100, menu: 'style' },
     openingRatio: { pct: 66, min: 30, max: 90, menu: 'style' },
   },
-  plugins: [pluginBundle],
   draft: draftFrontOrganiserFront,
 }

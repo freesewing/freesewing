@@ -9,10 +9,31 @@ function wahidFrontFacing({
   macro,
   snippets,
   Snippet,
-  complete,
+  store,
+  expand,
   sa,
   part,
 }) {
+  if (expand) {
+    store.flag.preset('expandIsOn')
+  } else {
+    // Expand is off, do not draw the part but flag this to the user
+    store.flag.note({
+      msg: `wahid:cutFrontFacing`,
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
+
   // Cleanup from front part
   for (let i of Object.keys(paths).filter((name) => name !== 'grainline')) delete paths[i]
   for (let i of Object.keys(snippets)) delete snippets[i]
@@ -39,18 +60,32 @@ function wahidFrontFacing({
     paths.seam.line(points.closureBottom).line(points.dartHemLeft)
   }
   paths.seam.close().attr('class', 'fabric')
-  if (complete) {
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-    points.title = new Point(points.dartWaistLeft.x / 2, points.waist.y)
-    macro('title', {
-      nr: 3,
-      at: points.title,
-      title: 'frontFacing',
-    })
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-    points.logo = points.closureTop.shiftFractionTowards(points.dartWaistLeft, 0.5)
-    snippets.logo = new Snippet('logo', points.logo)
-  }
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Title
+  points.title = new Point(points.dartWaistLeft.x / 2, points.waist.y)
+  macro('title', {
+    nr: '1a',
+    at: points.title,
+    title: 'frontFacing',
+  })
+
+  // Logo
+  points.logo = points.closureTop.shiftFractionTowards(points.dartWaistLeft, 0.5)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  // Grainline
+  macro('grainline', {
+    to: points.neck,
+    from: new Point(points.neck.x, points.cfHem.y),
+  })
+
   return part
 }
 

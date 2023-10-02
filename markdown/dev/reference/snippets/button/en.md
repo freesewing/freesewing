@@ -4,7 +4,7 @@ title: button
 
 The `button` snippet is used to mark button placement.
 
-It is provided by [plugin-buttons](/reference/plugins/buttons/).
+It is provided by [plugin-annotations](/reference/plugins/annotations/).
 
 ## Example
 

@@ -1,14 +1,3 @@
-import { useRouter } from 'next/router'
-import { AsideNavigation } from 'shared/components/navigation/aside.mjs'
+export const ns = []
 
-export const BareLayout = ({ app, children = [] }) => {
-  const router = useRouter()
-  const slug = router.asPath.slice(1)
-
-  return (
-    <>
-      <AsideNavigation app={app} slug={slug} mobileOnly />
-      {children}
-    </>
-  )
-}
+export const BareLayout = (props) => props.children

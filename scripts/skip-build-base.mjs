@@ -1,32 +1,72 @@
 import process from 'node:process'
 import { execSync } from 'child_process'
 
-export const shouldSkipBuild = (siteName, checkFolders = '../shared .') => {
-  console.log('Skip build script version 1.0.0')
+const branchesToNeverBuild = ['i18n']
+
+export const shouldSkipBuild = (site, checkFolders = '../shared .') => {
+  const branch = process.env.VERCEL_GIT_COMMIT_REF
+  const commit = process.env.VERCEL_GIT_COMMIT_SHA
+  const author = process.env.VERCEL_GIT_COMMIT_AUTHOR_LOGIN
+  const msg = process.env.VERCEL_GIT_COMMIT_MESSAGE
+
+  // Say hi
+  console.log(`FreeSewing skip build check:
+  branch: ${branch}
+  commit: ${commit}
+  author: ${author}
+  commit message: ${msg}
+`)
 
   // Do not block production builds
   if (process.env.VERCEL_ENV === 'production') {
-    console.log('✅ - Production build - Proceed to build')
+    console.log('✅  Building: production build')
     process.exit(1)
+  }
+
+  // Alwys build when explicitly requested
+  if (msg.includes('please-build')) {
+    console.log('✅ - Building: Commit message includes please-build')
+    process.exit(1)
+  }
+
+  // Never build the sanity site unless explicitly requested
+  if (site === 'sanity') {
+    console.log(
+      "🛑  Not building: Sanity site. You need to include 'please-build' in your commit message to build this site"
+    )
+    process.exit(0)
+  }
+
+  // Never build the lab site unless explicitly requested
+  if (site === 'lab') {
+    console.log(
+      "🛑  Not building: Lab site. You need to include 'please-build' in your commit message to build this site"
+    )
+    process.exit(0)
   }
 
   // Do not build dependabot PRs
-  if (process.env.VERCEL_GIT_COMMIT_AUTHOR_LOGIN === 'dependabot[bot]') {
-    console.log('🛑 - Dependabot PR - Do not build')
+  if (branch.toLowerCase().includes('dependabot')) {
+    console.log('🛑  Not building: Dependabot PR')
     process.exit(0)
   }
 
-  const branch = process.env.VERCEL_GIT_COMMIT_REF
-  // Always build develop branch
-  if (branch === 'develop') {
-    console.log('✅ - Develop build - Proceed to build')
-    process.exit(1)
+  // Do not build branches that should never be build
+  if (branchesToNeverBuild.includes(branch)) {
+    console.log('🛑  Not building: Branch is included in branches to never build')
+    process.exit(0)
   }
 
   // Do not build commits that have [vercel skip] in the message
-  if (process.env.VERCEL_GIT_COMMIT_MESSAGE.match(/\[vercel skip\]/)) {
-    console.log('🛑 - Commit message includes [vercel skip] - Do not build')
+  if (msg.includes('skip-build')) {
+    console.log('🛑  Not building: Commit message includes skip-build')
     process.exit(0)
+  }
+
+  // Always build develop branch
+  if (branch === 'develop') {
+    console.log('✅ - Building: develop branch is always built')
+    process.exit(1)
   }
 
   // Only build pull requests that made changes to the given site
@@ -38,29 +78,39 @@ export const shouldSkipBuild = (siteName, checkFolders = '../shared .') => {
       )
       // we need to fetch develop in order to get the merge base
       execSync(`git fetch origin develop:develop --depth=5`)
-      // if depth 5 wasn't enough, keep deepening until we find the merge base
-      execSync(
-        `until git merge-base develop HEAD > /dev/null; do git fetch origin develop:develop --deepen=1; done`
-      )
+
+      let hasMerge = ''
+      for (let a = 0; a < 5; a++) {
+        try {
+          hasMerge = execSync(`git merge-base develop HEAD`).toString()
+          break
+        } catch {
+          // if depth 5 wasn't enough, keep deepening until we find the merge base
+          execSync(`git fetch origin develop:develop --deepen=1`)
+        }
+      }
+
+      if (!hasMerge.length) {
+        console.log(`🛑 - Can't find merge base for pull request - Do not build`)
+        process.exit(0)
+      }
 
       // now check for changes
       const changes = execSync(
         `git diff --name-only $(git merge-base develop HEAD) HEAD -- ${checkFolders}`
       ).toString()
       if (changes) {
-        console.log(`✅ - ${siteName} Pull Request - Proceed to build`)
+        console.log(`✅ - ${site} Pull Request - Proceed to build`)
         process.exit(1)
       }
-    } catch {
-      // just don't error out
+    } catch (e) {
+      console.log(e)
     }
 
-    console.log(`🛑 - Pull Request made no changes to ${siteName} - Do not build`)
+    console.log(`🛑 - Pull Request made no changes to ${site} - Do not build`)
     process.exit(0)
   }
 
   console.log('🛑 - Unhandled case - Do not build')
-  console.log(`  VERCEL_GIT_COMMIT_AUTHOR_LOGIN: ${process.env.VERCEL_GIT_COMMIT_AUTHOR_LOGIN}`)
-  console.log(`  VERCEL_GIT_COMMIT_REF: ${branch}`)
   process.exit(0)
 }

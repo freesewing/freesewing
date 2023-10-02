@@ -2,20 +2,7 @@ import { back as brianBack } from '@freesewing/brian'
 import { sharedDimensions } from './shared.mjs'
 import { hidePresets } from '@freesewing/core'
 
-function yuriBack({
-  store,
-  macro,
-  Path,
-  Point,
-  points,
-  paths,
-  complete,
-  paperless,
-  sa,
-  options,
-  measurements,
-  part,
-}) {
+function yuriBack({ store, macro, Path, Point, points, paths, sa, options, measurements, part }) {
   // Clear paths from Brian
   for (const i in paths) {
     if (['backArmhole', 'backCollar'].indexOf(i) === -1) delete paths[i]
@@ -69,30 +56,45 @@ function yuriBack({
     .close()
     .attr('class', 'fabric')
 
-  // Complete?
-  if (complete) {
-    macro('cutonfold', {
-      from: points.cbNeck,
-      to: points.cbBottom,
-      grainline: true,
-    })
-    macro('scalebox', { at: new Point(points.armholePitch.x / 2, points.cbWaist.y) })
-    if (sa) {
-      paths.sa = paths.hemBase
-        .offset(3 * sa)
-        .join(paths.gussetBase.offset(sa))
-        .join(paths.saBase.offset(sa))
-      paths.sa
-        .move(paths.sa.end())
-        .line(points.cbNeck)
-        .move(paths.sa.start())
-        .line(points.cbBottom)
-        .attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = paths.hemBase
+      .offset(3 * sa)
+      .join(paths.gussetBase.offset(sa))
+      .join(paths.saBase.offset(sa))
+    paths.sa
+      .move(paths.sa.end())
+      .line(points.cbNeck)
+      .move(paths.sa.start())
+      .line(points.cbBottom)
+      .attr('class', 'fabric sa')
   }
 
-  // Paperless?
-  if (paperless) sharedDimensions(part, 'back')
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'fabric', onFold: true })
+
+  // Cut on fold
+  macro('cutonfold', {
+    from: points.cbNeck,
+    to: points.cbBottom,
+    grainline: true,
+  })
+
+  // Scalebox
+  macro('scalebox', { at: new Point(points.armholePitch.x / 2, points.cbWaist.y) })
+
+  // Title
+  macro('rmtitle')
+  macro('title', {
+    at: points.title,
+    nr: 2,
+    title: 'back',
+  })
+
+  // Dimensions
+  sharedDimensions(part, 'back')
 
   return part
 }
@@ -104,15 +106,15 @@ export const back = {
     options: {
       ...brianBack.options,
       // Overrides
-      collarEase: { pct: 20, min: 10, max: 30 },
-      cuffEase: { pct: 30, min: 20, max: 60 },
-      lengthBonus: { pct: 10, min: 5, max: 15 },
-      sleeveLengthBonus: { pct: 1, min: 0, max: 10 },
+      collarEase: { pct: 20, min: 10, max: 30, menu: 'fit' },
+      cuffEase: { pct: 30, min: 20, max: 60, menu: 'fit' },
+      lengthBonus: { pct: 10, min: 5, max: 15, menu: 'fit' },
+      sleeveLengthBonus: { pct: 1, min: 0, max: 10, menu: 'fit' },
     },
   },
   hide: hidePresets.HIDE_TREE,
   options: {
-    hipsEase: { pct: 0, min: 0, max: 10 },
+    hipsEase: { pct: 0, min: 0, max: 10, menu: 'fit' },
   },
   measurements: ['hips'],
   draft: yuriBack,

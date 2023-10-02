@@ -15,11 +15,11 @@ when in doubt, go stand-alone. You can always change track later.
 
 ## Stand-alone
 
-To setup the stand-alone development environment, you need NodeJS 16 or higher.
+To setup the stand-alone development environment, you need NodeJS 18 or higher.
 Then run:
 
 ```sh
-npx @freesewing/new-design@next
+npx @freesewing/new-design
 ```
 
 This command will setup FreeSewing's stand-alone development environment.

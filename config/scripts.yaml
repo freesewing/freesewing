@@ -1,10 +1,11 @@
 _:
-  build: 'node build.mjs'
+  build: &build 'node build.mjs'
+  'build:all': 'yarn build'
   clean: 'rimraf dist'
-  mbuild: 'NO_MINIFY=1 node build.mjs'
+  mbuild: &mbuild 'NO_MINIFY=1 node build.mjs'
   symlink: 'mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -'
   test: 'echo "{{name}}: No tests configured. Perhaps you could write some?" && exit 0'
-  vbuild: 'VERBOSE=1 node build.mjs'
+  vbuild: &vbuild 'VERBOSE=1 node build.mjs'
   lab: 'cd ../../sites/lab && yarn start'
   tips: 'node ../../scripts/help.mjs'
   lint: "npx eslint 'src/**' 'tests/*.mjs'"
@@ -12,7 +13,7 @@ _types:
   design:
     prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
     test: &test 'npx mocha tests/*.test.mjs'
-    testci: &testci 'npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js'
+    testci: &testci 'NODE_OPTIONS="--conditions=internal" npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js'
   plugin:
     prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
     test: *test
@@ -24,15 +25,14 @@ core:
   prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
   lint: "npx eslint 'src/*.mjs' 'tests/*.mjs'"
   jsdoc: 'jsdoc -c jsdoc.json -r src'
-i18n:
-  prebuild: 'node scripts/prebuilder.mjs'
 models:
   test: 'npx mocha tests/*.test.mjs'
 new-design:
-  i18n-only: 'SITE="new-design/shared" node ../../sites/shared/prebuild/i18n-only.mjs'
+  i18n-only: 'SITE="new-design/shared" node --conditions=internal ../../sites/shared/prebuild/i18n-only.mjs'
   wbuild: '!'
   lint: "npx eslint 'lib/*.mjs'"
   mbuild: '!'
+  prebuild: 'node --conditions=internal ./prebuild.mjs'
   test: '!'
   testci: '!'
   vbuild: '!'
@@ -40,11 +40,14 @@ rehype-highlight-lines:
   build: '!'
   mbuild: '!'
   vbuild: '!'
+  'build:all': '!'
   lint: "npx eslint 'src/*.mjs'"
 rehype-jargon:
   lint: "npx eslint 'src/*.mjs'"
 snapseries:
   lint: "npx eslint 'src/*.mjs'"
+react-components:
+  lint: "eslint 'src/**/*.mjs'"
 
 # Sites go here
 backend:
@@ -52,21 +55,22 @@ backend:
   clean: 'rimraf dist'
   dev: 'nodemon src/index.mjs'
   initdb: 'npx prisma db push'
-  mbuild: 'NO_MINIFY=1 node build.mjs'
+  mbuild: *mbuild
   newdb: 'node ./scripts/newdb.mjs'
   prettier: "npx prettier --write 'src/*.mjs' 'tests/*.mjs'"
   rmdb: 'node ./scripts/rmdb.mjs'
   test: 'npx mocha --require mocha-steps tests/index.mjs'
-  vbuild: 'VERBOSE=1 node build.mjs'
-  prebuild: 'node scripts/prebuild.mjs'
+  vbuild: *vbuild
 
 dev:
   build: &nextBuild 'next build'
   cibuild: 'yarn build && node scripts/algolia.mjs'
+  clean: &nextClean 'rimraf prebuild/* && rimraf public/locales/*/* && rimraf public/feeds/* && rimraf ../shared/prebuild/data/*'
   dev: &nextDev 'next dev -p 8000'
   develop: *nextDev
+  i18n: "SITE=dev node --conditions=internal ../shared/prebuild/i18n-only.mjs"
   lint: &nextLint 'next lint'
-  prebuild: 'SITE=dev node --experimental-json-modules ../shared/prebuild/index.mjs'
+  prebuild: &sitePrebuild 'node --conditions=internal --experimental-json-modules ./prebuild.mjs'
   serve: "pm2 start npm --name 'dev' -- run start"
   start: &nextStart 'yarn prebuild && yarn dev'
 
@@ -77,22 +81,32 @@ email:
 lab:
   build: *nextBuild
   cibuild: 'yarn build'
-  clean: 'rimraf pages/*.mjs && rimraf pages/*/*.mjs && rimraf pages/v/*/*.mjs'
   dev: *nextDev
   develop: *nextDev
+  i18n: 'SITE=lab node --conditions=internal ../shared/prebuild/i18n-only.mjs'
   lint: *nextLint
-  prebuild: 'node --experimental-json-modules ../shared/prebuild/index.mjs'
+  prebuild: *sitePrebuild
+  start: *nextStart
+
+sde:
+  build: *nextBuild
+  cibuild: 'yarn build'
+  dev: *nextDev
+  develop: *nextDev
+  i18n: 'SITE=sde node --conditions=internal ../shared/prebuild/i18n-only.mjs'
+  lint: *nextLint
+  prebuild: *sitePrebuild
   start: *nextStart
 
 org:
   build: *nextBuild
   cibuild: 'yarn build'
-  clean: 'rimraf pages/*.mjs && rimraf pages/*/*.mjs && rimraf pages/v/*/*.mjs'
+  clean: *nextClean
   dev: *nextDev
   develop: *nextDev
-  i18n: 'SITE=org node ../shared/prebuild/i18n-only.mjs'
+  i18n: 'SITE=org node --conditions=internal ../shared/prebuild/i18n-only.mjs'
   lint: *nextLint
-  prebuild: 'SITE=org node --experimental-json-modules ../shared/prebuild/index.mjs'
+  prebuild: *sitePrebuild
   start: *nextStart
 
 sanity:

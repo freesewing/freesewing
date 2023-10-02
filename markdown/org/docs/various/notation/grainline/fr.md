@@ -2,7 +2,7 @@
 title: Droit-fil et indications de coupe au-pli
 ---
 
-Grainlines — a line that indicates the _fabric grain_ — look like this:
+Droit-fil— une ligne qui indique le _droit-fil_ du tissu — ressemble à ceci :
 
 <Legend part="grainline">
 

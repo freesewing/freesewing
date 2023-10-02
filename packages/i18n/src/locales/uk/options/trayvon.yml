@@ -1,7 +1,0 @@
----
-tipWidth:
-  title: Ширина кута
-  description: Керує шириною кута краватки
-knotWidth:
-  title: Ширина вузлика
-  description: Керує шириною краватки у зоні вузла

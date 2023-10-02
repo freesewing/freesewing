@@ -1,7 +1,8 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useTranslation } from 'next-i18next'
 import { useState } from 'react'
 import { Robot } from 'shared/components/robot/index.mjs'
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 
 export const ErrorView = ({ children, inspectChildren }) => {
   const { t } = useTranslation(['errors'])

@@ -8,14 +8,14 @@ La **promesse de revenus de FreeSewing** indique que :
 
 La promesse est faite et appliquée par le responsable de FreeSewing (joost). Vous pouvez lire davantage sur [ses motivations pour cela sur cette page](/docs/various/pledge/motivation/).
 
-## Revenue history
+## Historique des revenus
 
 <table class="table table-striped text-base-content">
   <thead>
     <tr>
       <th>Année</th>
-      <th>Revenue</th>
-      <th>Currency</th>
+      <th>Recettes</th>
+      <th>Monnaie</th>
     </tr>
   </thead>
   <tbody>
@@ -57,13 +57,13 @@ La promesse est faite et appliquée par le responsable de FreeSewing (joost). Vo
     <tr>
       <td>**Total**</td>
       <td>`29.489,40`</td>
-      <td>**Euro donated to MSF**</td>
+      <td>**Euro donné à MSF**</td>
     </tr>
   </tbody>
 </table>
 
 <Tip>
 
-If you'd like to support FreeSewing, you can [do so by becoming a patron](/patrons/join/)
+Si vous souhaitez supporter FreeSewing, vous pouvez [vous abonner ici](/patrons/join/)
 
 </Tip>

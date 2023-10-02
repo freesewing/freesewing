@@ -8,7 +8,7 @@ Para referencia, aquí están los diferentes anchos de línea disponibles:
 
 <Legend part="lineWidths">
 
-The different line widths
+Las diferentes anchuras de línea
 
 </Legend>
 
@@ -16,6 +16,6 @@ Y estos son los diferentes estilos de trazo:
 
 <Legend part="lineStrokes">
 
-The different line strokes
+Los diferentes trazos de línea
 
 </Legend>

@@ -31,6 +31,7 @@ describe('Pattern', () => {
       pattern.sample()
       expect(pattern.setStores.length).to.equal(10)
       expect(pattern.settings.length).to.equal(10)
+      expect(pattern.parts[0].test.paths.test.ops[1].to.y).to.equal(80)
       expect(pattern.parts[9].test.paths.test.ops[1].to.y).to.equal(320)
     })
 
@@ -60,7 +61,68 @@ describe('Pattern', () => {
       pattern.sample()
       expect(pattern.setStores.length).to.equal(10)
       expect(pattern.settings.length).to.equal(10)
+      expect(round(pattern.parts[0].test.paths.test.ops[1].to.y)).to.equal(round(0.05 * 0.9 * 400))
       expect(round(pattern.parts[9].test.paths.test.ops[1].to.y)).to.equal(22)
+    })
+
+    it('Should sample a count option', () => {
+      const part = {
+        name: 'test',
+        measurements: ['head'],
+        options: {
+          size: { count: 2, min: 0, max: 6 },
+        },
+        draft: ({ Point, paths, Path, measurements, options, part }) => {
+          paths.test = new Path()
+            .move(new Point(0, 0))
+            .line(new Point(0, measurements.head * options.size))
+
+          return part
+        },
+      }
+      const Pattern = new Design({ parts: [part] })
+      const pattern = new Pattern({
+        measurements: { head: 400 },
+        sample: {
+          type: 'option',
+          option: 'size',
+        },
+      })
+      pattern.sample()
+      expect(pattern.setStores.length).to.equal(7)
+      expect(pattern.settings.length).to.equal(7)
+      expect(round(pattern.parts[0].test.paths.test.ops[1].to.y)).to.equal(0)
+      expect(round(pattern.parts[6].test.paths.test.ops[1].to.y)).to.equal(2400)
+    })
+
+    it('Should not sample a count option more than 10 times', () => {
+      const part = {
+        name: 'test',
+        measurements: ['head'],
+        options: {
+          size: { count: 2, min: 0, max: 20 },
+        },
+        draft: ({ Point, paths, Path, measurements, options, part }) => {
+          paths.test = new Path()
+            .move(new Point(0, 0))
+            .line(new Point(0, measurements.head * options.size))
+
+          return part
+        },
+      }
+      const Pattern = new Design({ parts: [part] })
+      const pattern = new Pattern({
+        measurements: { head: 400 },
+        sample: {
+          type: 'option',
+          option: 'size',
+        },
+      })
+      pattern.sample()
+      expect(pattern.setStores.length).to.equal(10)
+      expect(pattern.settings.length).to.equal(10)
+      expect(round(pattern.parts[0].test.paths.test.ops[1].to.y)).to.equal(0)
+      expect(round(pattern.parts[9].test.paths.test.ops[1].to.y)).to.equal(8000)
     })
 
     it('Should sample a list option', () => {
@@ -89,7 +151,37 @@ describe('Pattern', () => {
       pattern.sample()
       expect(pattern.setStores.length).to.equal(10)
       expect(pattern.settings.length).to.equal(10)
+      expect(pattern.parts[0].test.paths.test.ops[1].to.y).to.equal(40)
       expect(pattern.parts[9].test.paths.test.ops[1].to.y).to.equal(400)
+    })
+
+    it('Should sample a boolean option', () => {
+      const part = {
+        name: 'test',
+        measurements: ['head'],
+        options: {
+          reverse: { bool: true },
+        },
+        draft: ({ Point, paths, Path, measurements, options, part }) => {
+          const yFac = options.reverse ? -1 : 1
+          paths.test = new Path().move(new Point(0, 0)).line(new Point(0, measurements.head * yFac))
+
+          return part
+        },
+      }
+      const Pattern = new Design({ parts: [part] })
+      const pattern = new Pattern({
+        measurements: { head: 400 },
+        sample: {
+          type: 'option',
+          option: 'reverse',
+        },
+      })
+      pattern.sample()
+      expect(pattern.setStores.length).to.equal(2)
+      expect(pattern.settings.length).to.equal(2)
+      expect(pattern.parts[0].test.paths.test.ops[1].to.y).to.equal(400)
+      expect(pattern.parts[1].test.paths.test.ops[1].to.y).to.equal(-400)
     })
 
     it('Should sample a measurement', () => {

@@ -4,7 +4,7 @@ title: Code of Conduct
 
 All FreeSewing contributors must respect and uphold our Code of Conduct:
 
-<ReadMore title="The FreeSewing Code of Conduct" />
+<ReadMore />
 
 <Note>
 

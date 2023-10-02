@@ -1,0 +1,44 @@
+{
+  "t": "Magde messenger bag",
+  "d": "Magde is a pattern for a (bike) messenger bag",
+  "p": {
+    "backPanel": "Back panel",
+    "bodyLiner": "Body liner",
+    "frontPanel": "Front panel",
+    "frontOrganiserBase": "Front organiser base",
+    "frontOrganiserFront": "Front organiser front",
+    "internalOrganiser": "Internal organiser",
+    "lidOnePiece": "Lid one piece",
+    "sidePanel": "Side panel",
+    "strapAttachments": "Strap attachments",
+    "twoPieceLidBottom": "Two-piece lid bottom",
+    "twoPieceLidTop": "Two-piece lid top"
+  },
+  "s": {},
+  "o": {
+    "size": {
+      "t": "Size",
+      "d": "FIXME: Provide description for this option"
+    },
+    "taperRatio": {
+      "t": "Taper ratio",
+      "d": "FIXME: Provide description for this option"
+    },
+    "flapHeightRatio": {
+      "t": "Flap height",
+      "d": "FIXME: Provide description for this option"
+    },
+    "openingRatio": {
+      "t": "Opening ratio",
+      "d": "FIXME: Provide description for this option"
+    },
+    "onePieceLid": {
+      "t": "One piece lid",
+      "d": "FIXME: Provide description for this option"
+    },
+    "useCommonWebbingSizes": {
+      "t": "Use common webbing size",
+      "d": "FIXME: Provide description for this option"
+    }
+  }
+}

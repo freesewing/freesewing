@@ -1,69 +1,29 @@
-import { Tab, Tabs } from './tabs.mjs'
+import { Tab, Tabs } from '../tabs.mjs'
 import Md from 'react-markdown'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { pluginFlip } from '@freesewing/plugin-flip'
 import { pluginGore } from '@freesewing/plugin-gore'
 import { Design } from '@freesewing/core'
-import { Svg } from '../workbench/draft/svg'
-import { Defs } from '../workbench/draft/defs'
-import { Stack } from '../workbench/draft/stack'
-import { useGist } from 'shared/hooks/useGist'
-import { useEffect } from 'react'
 import yaml from 'js-yaml'
+import { Pattern, PatternXray } from '@freesewing/react-components'
+import { useTranslation } from 'next-i18next'
+
+export const ns = ['tutorial', 'plugin-annotations']
 
 // Get code from children
 export const asText = (reactEl) => {
-  if (typeof reactEl.props.children === 'string') return reactEl.props.children
-  if (Array.isArray(reactEl.props.children)) {
-    return reactEl.props.children.map((el) => (typeof el === 'string' ? el : asText(el))).join('')
+  if (reactEl) {
+    if (typeof reactEl.props.children === 'string') return reactEl.props.children
+    if (Array.isArray(reactEl.props.children)) {
+      return reactEl.props.children.map((el) => (typeof el === 'string' ? el : asText(el))).join('')
+    }
+    if (typeof reactEl.props.children === 'object') return asText(reactEl.props.children)
   }
-  if (typeof reactEl.props.children === 'object') return asText(reactEl.props.children)
 
   return ''
 }
 
-// The actual example
-const Example = ({ app, draft, settings, xray = false }) => {
-  // State for gist
-  const { gist, unsetGist, updateGist } = useGist('example-mdx', app.locale)
-
-  useEffect(() => {
-    updateGist(['_state', 'xray', 'enabled'], xray)
-  }, [xray, updateGist])
-
-  if (!draft.sample) return null
-  const patternProps = settings.sample
-    ? draft.sample().getRenderProps()
-    : draft.draft().getRenderProps()
-  if (draft.store.logs.error.length > 0 || draft.setStores[0].logs.error.length > 0)
-    return (
-      <div className="max-w-full p-4">
-        <pre>{draft.store.logs.error.join('\n')}</pre>
-        <pre>{draft.setStores[0].logs.error.join('\n')}</pre>
-      </div>
-    )
-
-  return (
-    <Svg {...patternProps} embed={true}>
-      <Defs {...patternProps} />
-      <style>{`:root { --pattern-scale: 1} ${patternProps.svg.style}`}</style>
-      <g>
-        {Object.keys(patternProps.stacks).map((stackName) => (
-          <Stack
-            {...{ app, gist, updateGist, unsetGist, patternProps }}
-            showInfo={app.setPopup}
-            key={stackName}
-            stackName={stackName}
-            stack={patternProps.stacks[stackName]}
-          />
-        ))}
-      </g>
-    </Svg>
-  )
-}
-
-// Returns a FreeSewing draft based on code in children
-const buildExample = (children, settings = { margin: 5 }, tutorial = false, paperless = false) => {
+// Returns a FreeSewing pattern based on code in children
+const buildPattern = (children, settings = { margin: 5 }, tutorial = false, paperless = false) => {
   let code = asText(children)
   // FIXME: Refactor to not use eval
   let draft
@@ -88,7 +48,7 @@ const buildExample = (children, settings = { margin: 5 }, tutorial = false, pape
           lengthRatio: { pct: 75, min: 55, max: 85, menu: 'style' },
         }
       : {},
-    plugins: [pluginBundle, pluginFlip, pluginGore],
+    plugins: [pluginFlip, pluginGore],
   }
   const design = new Design({
     parts: [part],
@@ -100,9 +60,27 @@ const buildExample = (children, settings = { margin: 5 }, tutorial = false, pape
   return new design(settings)
 }
 
+// Handles display of pattern in mormal or xray mode
+const ShowPattern = ({ renderProps, logs, mode = 'normal' }) => {
+  const { t } = useTranslation(ns)
+  if (!renderProps) return null
+
+  if (logs.pattern.error.length > 0 || logs.sets[0].error.length > 0)
+    return (
+      <div className="max-w-full p-4">
+        <pre>fixme: Errors logged. Please implement log view</pre>
+      </div>
+    )
+
+  return mode === 'xray' ? (
+    <PatternXray {...{ renderProps, t }} className="freesewing pattern text-base-content" />
+  ) : (
+    <Pattern {...{ renderProps, t }} className="freesewing pattern text-base-content" />
+  )
+}
+
 // Wrapper component dealing with the tabs and code view
 export const TabbedExample = ({
-  app,
   children,
   caption,
   tutorial,
@@ -110,6 +88,7 @@ export const TabbedExample = ({
   withHead,
   paperless,
   settings,
+  patternProps,
 }) => {
   if (settings)
     settings = {
@@ -118,37 +97,51 @@ export const TabbedExample = ({
     }
   else settings = { margin: 5 }
   if (withHead) settings.measurements = { head: 300 }
-  const draft = buildExample(children, settings, tutorial, paperless)
-  if (tutorial && !previewFirst)
-    return (
-      <div className="my-8">
-        <Tabs tabs="Code, Preview, X-Ray">
-          <Tab key="code">{children}</Tab>
-          <Tab key="preview">
-            <Example {...{ draft, tutorial, paperless, settings, app }} />
-          </Tab>
-          <Tab key="xray">
-            <Example {...{ draft, tutorial, paperless, settings, app }} xray={true} />
-          </Tab>
-        </Tabs>
-        {caption && (
-          <div className="text-center italic -mt-4">
-            <Md>{caption}</Md>
-          </div>
-        )}
-      </div>
-    )
+
+  if (children && !patternProps) {
+    const pattern = buildPattern(children, settings, tutorial, paperless)
+
+    // Check that it's a valid pattern
+    if (!pattern.sample) return null
+
+    patternProps = {
+      renderProps: settings.sample
+        ? pattern.sample().getRenderProps()
+        : pattern.draft().getRenderProps(),
+      logs: pattern.getLogs(),
+    }
+  }
+
+  const tabs = []
+  const tabNames = ['Preview']
+  tabs.push(
+    <Tab key="preview">
+      <ShowPattern {...patternProps} />
+    </Tab>
+  )
+  if (children) {
+    const codeTab = <Tab key="code">{children}</Tab>
+
+    if (tutorial && !previewFirst) {
+      tabs.unshift(codeTab)
+      tabNames.unshift('Code')
+    } else {
+      tabs.push(codeTab)
+      tabNames.push('Code')
+    }
+  }
+
+  tabs.push(
+    <Tab key="xray">
+      <ShowPattern {...patternProps} mode="xray" />
+    </Tab>
+  )
+  tabNames.push('X-Ray')
 
   return (
     <div className="my-8">
-      <Tabs tabs="Preview, Code, X-Ray">
-        <Tab key="preview">
-          <Example {...{ draft, tutorial, paperless, settings, app }} />
-        </Tab>
-        <Tab key="code">{children}</Tab>
-        <Tab key="xray">
-          <Example {...{ draft, tutorial, paperless, settings, app }} xray={true} />
-        </Tab>
+      <Tabs tabs={tabNames.join(', ')} withModal>
+        {tabs}
       </Tabs>
       {caption && (
         <div className="text-center italic -mt-4">

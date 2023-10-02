@@ -1,6 +1,7 @@
 import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
 import { mask } from './mask.mjs'
+import { i18n } from '../i18n/index.mjs'
 
 // Setup our new design
 const Florence = new Design({
@@ -9,4 +10,4 @@ const Florence = new Design({
 })
 
 // Named exports
-export { mask, Florence }
+export { mask, Florence, i18n }

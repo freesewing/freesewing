@@ -11,7 +11,9 @@ import {
   chestEase,
   hipsEase,
   lengthBonus,
+  draftForHighBust,
   ribbingHeight,
+  pocketWidth,
 } from './options.mjs'
 
 function hugoFront({
@@ -56,14 +58,14 @@ function hugoFront({
   points.ribbing = points.hem.shift(90, store.get('ribbing'))
 
   // Raglan tip
-  let neckOpening = new Path()
+  const neckOpening = new Path()
     .move(points.cfNeck)
     .curve(points.cfNeckCp1, points.neckCp2, points.neck)
   points.raglanTipFront = neckOpening.shiftFractionAlong(0.8)
-  let neckOpeningParts = neckOpening.split(points.raglanTipFront)
+  const neckOpeningParts = neckOpening.split(points.raglanTipFront)
 
   // Pocket
-  points.pocketHem = points.cfRibbing.shiftFractionTowards(points.ribbing, 0.6)
+  points.pocketHem = points.cfRibbing.shiftFractionTowards(points.ribbing, options.pocketWidth)
   points.pocketCf = points.cfHem.shift(
     90,
     measurements.hpsToWaistBack * 0.33 + store.get('ribbing')
@@ -89,12 +91,13 @@ function hugoFront({
     .join(neckOpeningParts[0].reverse())
   paths.saBase.hide()
   paths.seam = paths.saBase.clone().unhide().close().attr('class', 'fabric')
-  paths.pocket = new Path()
-    .move(points.pocketHem)
-    .line(points.pocketTip)
-    .curve(points.pocketTip, points.pocketTopCp, points.pocketTop)
-    .line(points.pocketCf)
-    .attr('class', 'fabric help')
+  if (complete)
+    paths.pocket = new Path()
+      .move(points.pocketHem)
+      .line(points.pocketTip)
+      .curve(points.pocketTip, points.pocketTopCp, points.pocketTop)
+      .line(points.pocketCf)
+      .attr('class', 'note help')
   // Store shoulder seam length, neck opening path, shoulder slope and raglan length
   store.set('shoulderLength', points.neck.dist(points.shoulder))
   store.set('neckOpeningPartFront', neckOpeningParts[1])
@@ -111,29 +114,40 @@ function hugoFront({
   store.set('neckOpeningLenFront', neckOpening.length())
   store.set('neckCutoutFront', points.cfNeck.y)
 
-  // Complete pattern?
-  if (complete) {
-    macro('cutonfold', {
-      from: points.cfNeck,
-      to: points.cfRibbing,
-      grainline: true,
-    })
-    points.title = new Point(points.armhole.x / 2, points.armhole.y)
-    macro('title', { at: points.title, nr: 1, title: 'front' })
-    store.set('notchFront', points.raglanTipFront.dist(points.armholeHollow) / 2)
-    points.sleeveNotch = points.raglanTipFront.shiftTowards(
-      points.armholeHollow,
-      store.get('notchFront')
-    )
-    snippets.sleeveNotch = new Snippet('notch', points.sleeveNotch)
-    store.set('frontRaglanTipToNotch', points.raglanTipFront.dist(points.sleeveNotch))
-    points.logo = points.title.shift(-90, 70)
-    snippets.logo = new Snippet('logo', points.logo)
-    if (sa) {
-      paths.sa = paths.saBase.offset(sa).line(points.cfNeck).attr('class', 'fabric sa')
-      paths.sa.move(points.cfRibbing).line(paths.sa.start())
-    }
+  if (sa) {
+    paths.sa = paths.saBase.offset(sa).line(points.cfNeck).attr('class', 'fabric sa')
+    paths.sa.move(points.cfRibbing).line(paths.sa.start())
   }
+
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'fabric', onFold: true })
+
+  // Cutonfold
+  macro('cutonfold', {
+    from: points.cfNeck,
+    to: points.cfRibbing,
+    grainline: true,
+  })
+
+  // Title
+  points.title = new Point(points.armhole.x / 2, points.armhole.y)
+  macro('title', { at: points.title, nr: 1, title: 'front' })
+
+  // Notches
+  store.set('notchFront', points.raglanTipFront.dist(points.armholeHollow) / 2)
+  points.sleeveNotch = points.raglanTipFront.shiftTowards(
+    points.armholeHollow,
+    store.get('notchFront')
+  )
+  snippets.sleeveNotch = new Snippet('notch', points.sleeveNotch)
+  store.set('frontRaglanTipToNotch', points.raglanTipFront.dist(points.sleeveNotch))
+
+  // Logo
+  points.logo = points.title.shift(-90, 70)
+  snippets.logo = new Snippet('logo', points.logo)
 
   // Paperless?
   if (paperless) {
@@ -202,8 +216,10 @@ export const front = {
     s3Armhole,
     chestEase,
     hipsEase,
+    draftForHighBust,
     lengthBonus,
     ribbingHeight,
+    pocketWidth,
   },
   draft: hugoFront,
 }

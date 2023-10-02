@@ -10,10 +10,10 @@ Links ein Knopf, rechts ein Knopfloch
 
 </Legend>
 
-Snaps have a _stud_ and _socket_ part, and also look like the real thing:
+Snaps haben einen _-Stud_ und _Sockel_ Teil und sehen auch wie das echte aus:
 
 <Legend part="snaps">
 
-A snap stud is shown on the left, and a snap socket on the right
+Auf der linken Seite ist ein Schnappbolzen abgebildet, auf der rechten Seite eine Schnappmuffe.
 
 </Legend>

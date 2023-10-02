@@ -1,0 +1,50 @@
+{
+  "t": "Benjamin, die Fliege",
+  "d": "Benjamin ist eine Schleife - oder Fliege - mit vier unterschiedlichen Formvariationen.",
+  "p": {
+    "base": "Base",
+    "bow1": "Fliege",
+    "bow2": "Fliege",
+    "bow3": "Fliege",
+    "ribbon": "Einstellband"
+  },
+  "s": {},
+  "o": {
+    "adjustmentRibbon": {
+      "t": "Einstellband",
+      "d": "Einstellband verwenden oder nicht"
+    },
+    "bandLength": {
+      "t": "Bandlänge",
+      "d": "Lände des Bandes"
+    },
+    "tipWidth": {
+      "t": "Spitzenbreite",
+      "d": "Breite der Spitzen"
+    },
+    "knotWidth": {
+      "t": "Knotenbreite",
+      "d": "Breite des Knotens"
+    },
+    "bowLength": {
+      "t": "Fliegenlänge",
+      "d": "Länge der Fliege (wenn geknotet)"
+    },
+    "bowStyle": {
+      "t": "Fliegen-Stil",
+      "d": "Stil der Fliege"
+    },
+    "endStyle": {
+      "t": "Enden-Stil",
+      "d": "Stil für die Enden der Fliege"
+    },
+    "collarEase": {
+      "t": "Kragen Zugabe",
+      "d": "Die Menge an Zugabe an deinem Hals"
+    },
+    "ribbonWidth": {
+      "t": "Bänderbreite",
+      "d": "Breite des Bandes"
+    }
+  }
+}

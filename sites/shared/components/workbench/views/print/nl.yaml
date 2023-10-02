@@ -1,0 +1,40 @@
+printSettings: Instellingen afdrukken
+printSettings.d: Deze instellingen bepalen aspecten van de pagina voor PDF-export en afdrukken
+size.t: Papierformaat
+size.d: Kies een papierformaat
+a4.t: A4
+a4.d: 210 x 297 mm
+a3.t: A3
+a3.d: 297 × 420 mm
+a2.t: A2
+a2.d: 420 × 594 mm
+a1.t: A1
+a1.d: 594 × 841 mm
+a0.t: A0
+a0.d: 841 × 1189 mm
+letter.t: Brief
+letter.d: 8,5 x 11 in
+legal.t: Juridisch
+legal.d: 8,5 x 14 in
+tabloid.t: Tabloid
+tabloid.d: 11 x 17 in
+cutlist.t: Inclusief snijplannen
+cutlist.d: Moeten er afbeeldingen van de voorgestelde snij-indelingen voor elk materiaal worden opgenomen in de geëxporteerde PDF?
+cutlistNo.t: Voeg geen snij-indelingen toe
+cutlistNo.d: Geëxporteerde PDF's bevatten geen voorgestelde snij lay-outs
+cutlistYes.t: Inclusief snij-indelingen
+cutlistYes.d: Geëxporteerde PDF's bevatten een pagina voor elk materiaal dat door het patroon wordt gebruikt, waarop staat hoeveel materiaal je nodig hebt en een lay-out wordt voorgesteld voor het uitsnijden van de juiste stukken.
+coverPage.t: Voorblad bijvoegen
+coverPage.d: Moet de geëxporteerde PDF een voorblad bevatten?
+coverPageYes.t: Voeg een voorblad toe
+coverPageYes.d: Een voorblad toevoegen aan de geëxporteerde PDF met informatie over het patroon en een afbeelding van de hele samengestelde lay-out
+coverPageNo.t: Voeg geen voorblad toe
+coverPageNo.d: Geëxporteerde PDF's slaan het voorblad over
+margin.t: Pagina Marge
+margin.d: Hoeveel marge moeten pagina's van de PDF hebben? Dit is handig om ervoor te zorgen dat alle inhoud binnen de marges van je printer valt. Het bepaalt ook hoeveel aangrenzende pagina's elkaar overlappen.
+orientation.t: Pagina oriëntatie
+orientation.d: In welke richting moeten de pagina's worden gedraaid?
+portrait.t: Portret
+portrait.d: Pagina's worden langer dan ze breed zijn
+landscape.t: Landschap
+landscape.d: Pagina's worden breder dan ze lang zijn

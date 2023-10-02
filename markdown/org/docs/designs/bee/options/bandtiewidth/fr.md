@@ -1,0 +1,11 @@
+---
+title: "Largeur de la bande (sous poitrine)"
+---
+
+***
+
+Contrôle la largeur des bandes autour de votre poitrine
+
+## Effet de cette option sur le motif
+
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bee_bandtiewidth_sample.svg "Effet de cette option sur le motif")

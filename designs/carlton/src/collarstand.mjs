@@ -2,10 +2,8 @@ import { front } from './front.mjs'
 import { back } from './back.mjs'
 
 function draftCarltonCollarStand({
-  paperless,
   sa,
   store,
-  complete,
   points,
   measurements,
   options,
@@ -15,8 +13,8 @@ function draftCarltonCollarStand({
   Path,
   part,
 }) {
-  let height = measurements.chest * options.collarHeight
-  let length = store.get('frontCollarLength') + store.get('backCollarLength')
+  const height = measurements.chest * options.collarHeight
+  const length = store.get('frontCollarLength') + store.get('backCollarLength')
   points.topLeft = new Point(0, 0)
   points.bottomLeft = new Point(0, height)
   points.topRight = new Point(length, height * -1 * options.collarFlare)
@@ -45,42 +43,51 @@ function draftCarltonCollarStand({
     .close()
     .attr('class', 'fabric')
 
-  store.cutlist.addCut()
-  store.cutlist.addCut({ cut: 1, material: 'lmhCanvas' })
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-  if (complete) {
-    points.title = points.bottomLeftCp.clone()
-    macro('title', {
-      at: points.title,
-      nr: 7,
-      title: 'collarStand',
-    })
+  /*
+   * Annotations
+   */
 
-    macro('grainline', {
-      from: points.bottomLeft,
-      to: points.standTop,
-    })
+  // Cutlist
+  store.cutlist.removeCut()
+  store.cutlist.addCut({ cut: 2, from: 'fabric' })
+  store.cutlist.addCut({ cut: 1, from: 'canvas' })
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+  // Title
+  points.title = points.standTop.clone()
+  macro('title', {
+    at: points.title,
+    nr: 7,
+    title: 'collarStand',
+    scale: 0.8,
+  })
 
-    if (paperless) {
-      macro('hd', {
-        from: points.standTipLeft,
-        to: points.standTip,
-        y: points.standTip.y + sa + 15,
-      })
-      macro('vd', {
-        from: points.bottomLeft,
-        to: points.standTop,
-        x: points.standTip.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.standTip,
-        to: points.standTop,
-        x: points.standTip.x + sa + 30,
-      })
-    }
-  }
+  // Grainline
+  macro('grainline', {
+    from: points.bottomLeft,
+    to: points.standTop,
+  })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wFull',
+    from: points.standTipLeft,
+    to: points.standTip,
+    y: points.standTip.y + sa + 15,
+  })
+  macro('vd', {
+    id: 'hCenter',
+    from: points.bottomLeft,
+    to: points.standTop,
+    x: points.standTip.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.standTip,
+    to: points.standTop,
+    x: points.standTip.x + sa + 30,
+  })
 
   return part
 }

@@ -5,6 +5,15 @@ title: utils.curvesIntersect()
 The `utils.curvesIntersect()` function finds the intersections between two curves
 described by 4 points each.
 
+<Warning>
+
+This function can sometimes fail to find intersections in some curves
+due to a limitation in an underlying Bézier library.
+Please see [Bug #3367](https://github.com/freesewing/freesewing/issues/3367)
+for more information.
+
+</Warning>
+
 ## Signature
 
 ```js
@@ -71,4 +80,3 @@ multiple intersections are found.
 }
 ```
 </Example>
-

@@ -1,0 +1,26 @@
+{
+  "t": "Bob le bavoir",
+  "d": "Voici le bavoir que vous pouvez créer en suivant notre tutoriel de design",
+  "p": {
+    "bib": "bavoir"
+  },
+  "s": {},
+  "o": {
+    "neckRatio": {
+      "t": "Ouverture du cou",
+      "d": "Contrôle la taille de l'ouverture du cou par rapport à la taille du bavoir"
+    },
+    "widthRatio": {
+      "t": "Largeur",
+      "d": "Contrôle la largeur du bavoir"
+    },
+    "lengthRatio": {
+      "t": "Longeur",
+      "d": "Contrôle la longueur du bavoir"
+    },
+    "headSize": {
+      "t": "Taille de la tête",
+      "d": "Le tour de tête que vous voulez que le bavoir prenne en compte"
+    }
+  }
+}

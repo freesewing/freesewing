@@ -1,7 +1,7 @@
 ---
-title: Seat circumference
+title: Обхват стегон
 ---
 
-The **seat circumference** is the measurement around the fullest part of your bum.
+**Обхват стегон** (в контексті цього вебсайту) — це вимір навколо найширшої частини Ваших сідниць.
 
-To measure your **seat circumference**, run the tape measure around your bum at the fullest part. Make sure to keep the tape measure horizontal while doing so. In other words, parallel to the floor.
+Для зняття **обхвату стегон**, охопіть сантиметром найширшу частину сідниць. Переконайтеся, що стрічка знаходиться в горизонтальному положенні. Іншими словами, паралельно підлозі.

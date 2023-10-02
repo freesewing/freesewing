@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function draftBackPanel({
   options,
   Point,
@@ -28,7 +26,6 @@ function draftBackPanel({
     .move(points.bottomLeftCorner)
     .line(points.baseFlapFrontRight)
     .line(points.baseFlapBackRight)
-    .line(points.bottomRightCorner)
     .line(points.topRightCorner)
     .line(points.origin)
     .close()
@@ -59,14 +56,13 @@ function draftBackPanel({
         .line(points.baseFlapFrontRight)
         .addText('Flat fell', 'center text-sm')
         .offset(2 * sa)
-      var sideFlapSeam = new Path()
+      var baseFlapSeam = new Path()
         .move(points.baseFlapFrontRight)
         .line(points.baseFlapBackRight)
-        .line(points.bottomRightCorner)
         .offset(2 * sa)
         .trim()
       var sideSeam = new Path()
-        .move(points.bottomRightCorner)
+        .move(points.baseFlapBackRight)
         .line(points.topRightCorner)
         .offset(sa)
       var topSeam = new Path()
@@ -74,7 +70,8 @@ function draftBackPanel({
         .line(points.origin)
         .offset(2 * sa)
       paths.sa = bottomSeam
-        .join(sideFlapSeam)
+        .join(baseFlapSeam)
+        .line(points.baseFlapBackRight)
         .join(sideSeam)
         .join(topSeam)
         .trim()
@@ -125,6 +122,5 @@ export const backPanel = {
     size: { pct: 100, min: 15, max: 200, menu: 'style' },
     taperRatio: { pct: 60, min: 50, max: 100, menu: 'style' },
   },
-  plugins: [pluginBundle],
   draft: draftBackPanel,
 }

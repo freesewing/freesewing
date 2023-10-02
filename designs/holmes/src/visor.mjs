@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { pctBasedOn } from '@freesewing/core'
 
 function draftHolmesVisor({
@@ -8,19 +7,18 @@ function draftHolmesVisor({
   paths,
   measurements,
   options,
-  complete,
   sa,
-  paperless,
   macro,
   absoluteOptions,
+  store,
   part,
 }) {
-  let headCircumference = measurements.head + absoluteOptions.headEase
-  let headRadius = headCircumference / 2 / Math.PI
-  let visorRadius = headRadius / Math.sin((options.visorAngle * Math.PI) / 180)
-  let sectorAngle = (Math.PI / 3) * options.visorLength
-  let visorSectorAngle = (sectorAngle * headRadius) / visorRadius
-  let cpDistance =
+  const headCircumference = measurements.head + absoluteOptions.headEase
+  const headRadius = headCircumference / 2 / Math.PI
+  const visorRadius = headRadius / Math.sin((options.visorAngle * Math.PI) / 180)
+  const sectorAngle = (Math.PI / 3) * options.visorLength
+  const visorSectorAngle = (sectorAngle * headRadius) / visorRadius
+  const cpDistance =
     ((4 / 3) * visorRadius * (1 - Math.cos(visorSectorAngle / 2))) / Math.sin(visorSectorAngle / 2)
 
   points.origin = new Point(0, 0)
@@ -62,42 +60,54 @@ function draftHolmesVisor({
     .hide()
 
   paths.seam = paths.saOuter.join(paths.saInner).close()
-  // Complete?
-  if (complete) {
-    macro('grainline', { from: points.in1, to: points.ex1 })
-    macro('title', { at: points.ex1.shift(45, 20), nr: 2, title: 'visor', scale: 0.4 })
 
-    if (sa) {
-      points.sa1 = new Point(points.in2.x + sa, paths.saInner.offset(sa * 2).start().y)
-      points.sa2 = points.sa1.flipX(points.in1)
-      paths.sa = paths.saOuter
-        .offset(sa)
-        .line(points.sa1)
-        .join(paths.saInner.offset(sa * 2))
-        .line(points.sa2)
-        .close()
-        .attr('class', 'fabric sa')
-    }
-
-    // Paperless?
-    if (paperless) {
-      macro('hd', {
-        from: points.in2Flipped,
-        to: points.in2,
-        y: points.ex1.y + 15 + sa,
-      })
-      macro('vd', {
-        from: points.ex1,
-        to: points.in1,
-        x: points.in2Flipped.x - 15 - sa,
-      })
-      macro('vd', {
-        from: points.ex1,
-        to: points.in2Flipped,
-        x: points.in2Flipped.x - 30 - sa,
-      })
-    }
+  if (sa) {
+    points.sa1 = new Point(points.in2.x + sa, paths.saInner.offset(sa * 2).start().y)
+    points.sa2 = points.sa1.flipX(points.in1)
+    paths.sa = paths.saOuter
+      .offset(sa)
+      .line(points.sa1)
+      .join(paths.saInner.offset(sa * 2))
+      .line(points.sa2)
+      .close()
+      .attr('class', 'fabric sa')
   }
+
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut([
+    { cut: 4, from: 'fabric' },
+    { cut: 4, from: 'lining' },
+  ])
+
+  // Grainlin
+  macro('grainline', { from: points.in1, to: points.ex1 })
+
+  // Title
+  macro('title', { at: points.ex1.shift(45, 20), nr: 2, title: 'visor', scale: 0.4 })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wFull',
+    from: points.in2Flipped,
+    to: points.in2,
+    y: points.ex1.y + 15 + sa,
+  })
+  macro('vd', {
+    id: 'hBrim',
+    from: points.ex1,
+    to: points.in1,
+    x: points.in2Flipped.x - 15 - sa,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.ex1,
+    to: points.in2Flipped,
+    x: points.in2Flipped.x - 30 - sa,
+  })
+
   return part
 }
 
@@ -120,6 +130,5 @@ export const visor = {
     visorWidth: { pct: 5, min: 1, max: 17, snap: 5, ...pctBasedOn('head'), menu: 'style' },
     visorLength: { pct: 100, min: 80, max: 150, menu: 'advanced' },
   },
-  plugins: [pluginBundle],
   draft: draftHolmesVisor,
 }

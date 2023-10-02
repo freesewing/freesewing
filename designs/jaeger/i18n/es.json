@@ -1,0 +1,187 @@
+{
+  "t": "Jaeger, chaqueta",
+  "d": "Jaeger es una chaqueta de estilo deportivo con dos botones y bolsillos de parche.",
+  "p": {
+    "backBase": "Back base",
+    "chestPocketBag": "Chest pocket bag",
+    "chestPocketWelt": "Chest pocket welt",
+    "collar": "Collar",
+    "collarStand": "Collar stand",
+    "frontBase": "Front base",
+    "innerPocketBag": "Inner pocket bag",
+    "innerPocketWelt": "Inner pocket welt",
+    "pocket": "Pocket",
+    "pocketLining": "Pocket lining",
+    "side": "Side",
+    "topSleeve": "Top sleeve",
+    "underCollar": "Under collar",
+    "underSleeve": "Under sleeve"
+  },
+  "s": {},
+  "o": {
+    "centerBackDart": {
+      "t": "Pinza en el centro de la espalda",
+      "d": "Dardos en el centro de la parte trasera del cuello para acomodar una espalda redondeada"
+    },
+    "sleeveVentLength": {
+      "t": "Longitud de la vista de la manga",
+      "d": "Longitud de la vista de la manga"
+    },
+    "sleeveVentWidth": {
+      "t": "Ancho de la vista de la manga",
+      "d": "Ancho de la vista de la manga"
+    },
+    "chestShaping": {
+      "t": "Forma del pecho",
+      "d": "Cantidad de configuración a tener en cuenta para la curva del cofre"
+    },
+    "frontDartPlacement": {
+      "t": "Colocación de la pinza delantera",
+      "d": "Ubicación de las pinzas delanteras"
+    },
+    "frontOverlap": {
+      "t": "Superposición frontal",
+      "d": "Cuánto se extiende la tela más allá de los botones de cierre"
+    },
+    "sideFrontPlacement": {
+      "t": "Colocación lateral / frontal",
+      "d": "La ubicación del borde lateral / frontal"
+    },
+    "chestPocketDepth": {
+      "t": "Profundidad del bolsillo del pecho",
+      "d": "La profundidad del bolsillo del pecho"
+    },
+    "chestPocketWidth": {
+      "t": "Ancho bolsillo del pecho",
+      "d": "El ancho del bolsillo del pecho"
+    },
+    "chestPocketPlacement": {
+      "t": "Colocación de bolsillo en el pecho",
+      "d": "La ubicación del bolsillo del pecho"
+    },
+    "chestPocketAngle": {
+      "t": "Ángulo de bolsillo del pecho",
+      "d": "El ángulo bajo el cual se coloca el bolsillo del pecho"
+    },
+    "chestPocketWeltSize": {
+      "t": "Talla de bolsillo de bolsillo",
+      "d": "El tamaño de la bolsa de pecho"
+    },
+    "frontPocketPlacement": {
+      "t": "Colocación frontal del bolsillo",
+      "d": "Colocación frontal del bolsillo"
+    },
+    "frontPocketWidth": {
+      "t": "Ancho bolsillo frontal",
+      "d": "El ancho del bolsillo delantero"
+    },
+    "frontPocketDepth": {
+      "t": "Profundidad de bolsillo frontal",
+      "d": "La profundidad del bolsillo frontal"
+    },
+    "frontPocketRadius": {
+      "t": "Radio de bolsillo delantero",
+      "d": "El radio por el cual se redondea el bolsillo delantero"
+    },
+    "innerPocketPlacement": {
+      "t": "Colocación del bolsillo interior",
+      "d": "La ubicación del bolsillo interior"
+    },
+    "innerPocketWidth": {
+      "t": "Ancho bolsillo interior",
+      "d": "El ancho del bolsillo interior"
+    },
+    "innerPocketDepth": {
+      "t": "Profundidad del bolsillo interior",
+      "d": "La profundidad del bolsillo interior"
+    },
+    "innerPocketWeltHeight": {
+      "t": "Altura interior de los bolsillos",
+      "d": "La altura de la bolsa interior"
+    },
+    "pocketFoldover": {
+      "t": "Bolsillo plegable",
+      "d": "La cantidad por la cual el tejido principal es la carpeta sobre el bolsillo"
+    },
+    "centerFrontHemDrop": {
+      "t": "Dobladillo delantero central",
+      "d": "La cantidad por la que se baja el dobladillo hacia el centro delantero"
+    },
+    "backVent": {
+      "t": "Abertura trasera",
+      "d": "La cantidad de respiraderos traseros"
+    },
+    "backVentLength": {
+      "t": "Longitud de la abertura trasera",
+      "d": "La longitud de la (s) ventilación (es) posterior (es)"
+    },
+    "buttonLength": {
+      "t": "Longitud del botón",
+      "d": "La distancia sobre la cual los botones se extienden"
+    },
+    "frontCutawayAngle": {
+      "t": "Ángulo de corte frontal",
+      "d": "El ángulo bajo el cual se corta el frente hacia el dobladillo"
+    },
+    "frontCutawayStart": {
+      "t": "Estrella de corte frontal",
+      "d": "La ubicación en la que el frente comienza a abrirse hacia el dobladillo."
+    },
+    "frontCutawayEnd": {
+      "t": "Extremo frontal cortado",
+      "d": "Aumentar esto hará que el corte frontal permanezca más cerca del centro delantero"
+    },
+    "collarSpread": {
+      "t": "Cuello extendido",
+      "d": "La extensión del collar controla cómo el collar cubre los hombros"
+    },
+    "lapelStart": {
+      "t": "Inicio de la solapa",
+      "d": "Lugar donde el frente central pasa por las solapas"
+    },
+    "lapelReduction": {
+      "t": "Reducción de la solapa",
+      "d": "Cuánto gira hacia adentro la punta de las solapas"
+    },
+    "collarHeight": {
+      "t": "Altura del collar",
+      "d": "Altura del cuello"
+    },
+    "collarNotchDepth": {
+      "t": "Profundidad de la muesca del cuello",
+      "d": "Profundidad de la muesca del cuello"
+    },
+    "collarNotchAngle": {
+      "t": "Ángulo de la muesca del cuello",
+      "d": "Ángulo de la muesca del cuello"
+    },
+    "collarNotchReturn": {
+      "t": "Cuello muesca retorno",
+      "d": "Cuánto retorna el cuello de la muesca, en comparación con la solapa"
+    },
+    "rollLineCollarHeight": {
+      "t": "Altura de cuello de línea de rodadura",
+      "d": "¿Qué tanto la línea de balanceo abraza el cuello?"
+    },
+    "hemRadius": {
+      "t": "Radio del dobladillo",
+      "d": "La cantidad por la cual se redondea el dobladillo"
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at your hips"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at your waist"
+    },
+    "buttons": {
+      "t": "Number of buttons",
+      "d": "Controls the amount of buttons"
+    },
+    "collarRoll": {
+      "t": "Collar roll",
+      "d": "Controls the amount of roll in the collar; how much the topcollar is higher than the undercollar."
+    }
+  }
+}

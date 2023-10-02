@@ -5,16 +5,28 @@ generator client {
 
 datasource db {
   provider = "sqlite"
-  url      = "file:./db.sqlite"
+  url      = env("BACKEND_DB_URL")
 }
 
 model Apikey {
   id            String    @id @default(uuid())
+  aud           String    @default("")
+  calls         Int       @default(0)
   createdAt     DateTime  @default(now())
   expiresAt     DateTime
   name          String    @default("")
+  lastSeen      DateTime?
   level         Int       @default(0)
   secret        String
+  user          User     @relation(fields: [userId], references: [id])
+  userId        Int
+}
+
+model Bookmark {
+  id            Int      @id @default(autoincrement())
+  type          String   @default("")
+  title         String   @default("")
+  url           String   @default("")
   user          User     @relation(fields: [userId], references: [id])
   userId        Int
 }
@@ -24,16 +36,17 @@ model Confirmation {
   createdAt DateTime @default(now())
   data      String
   type      String
-  user      User     @relation(fields: [userId], references: [id])
-  userId    Int
+  user      User?     @relation(fields: [userId], references: [id])
+  userId    Int?
 }
 
 model Subscriber {
   id        String   @id @default(uuid())
+  active    Boolean  @default(false)
   createdAt DateTime @default(now())
-  data      String
   ehash     String   @unique
   email     String
+  language  String   @default("en")
   updatedAt DateTime @updatedAt
 }
 
@@ -41,20 +54,23 @@ model User {
   id            Int       @id @default(autoincrement())
   apikeys       Apikey[]
   bio           String    @default("")
+  bookmarks     Bookmark[]
   compare       Boolean   @default(true)
   confirmations Confirmation[]
   consent       Int       @default(0)
   control       Int       @default(1)
   createdAt     DateTime  @default(now())
+  data          String
   ehash         String    @unique
   email         String
-  github        String    @default("")
   ihash         String
   img           String?
   initial       String
   imperial      Boolean   @default(false)
+  jwtCalls      Int       @default(0)
+  keyCalls      Int       @default(0)
   language      String    @default("en")
-  lastLogin     DateTime?
+  lastSeen      DateTime?
   lusername     String    @unique
   mfaSecret     String    @default("")
   mfaEnabled    Boolean   @default(false)
@@ -80,6 +96,8 @@ model Pattern {
   notes     String
   set       Set?  @relation(fields: [setId], references: [id])
   setId     Int?
+  cset      CuratedSet?  @relation(fields: [csetId], references: [id])
+  csetId    Int?
   public    Boolean  @default(false)
   settings  String
   user      User     @relation(fields: [userId], references: [id])
@@ -105,3 +123,60 @@ model Set {
 
   @@index([userId])
 }
+
+model CuratedSet {
+  id        Int       @id @default(autoincrement())
+  createdAt DateTime  @default(now())
+  img       String?
+  nameDe    String    @default("")
+  nameEn    String    @default("")
+  nameEs    String    @default("")
+  nameFr    String    @default("")
+  nameNl    String    @default("")
+  nameUk    String    @default("")
+  notesDe   String    @default("")
+  notesEn   String    @default("")
+  notesEs   String    @default("")
+  notesFr   String    @default("")
+  notesNl   String    @default("")
+  notesUk   String    @default("")
+  tagsDe    String    @default("{}")
+  tagsEn    String    @default("{}")
+  tagsEs    String    @default("{}")
+  tagsFr    String    @default("{}")
+  tagsNl    String    @default("{}")
+  tagsUk    String    @default("{}")
+  measies   String    @default("{}")
+  patterns  Pattern[]
+  updatedAt DateTime  @updatedAt
+  published Boolean   @default(false)
+}
+
+model OptionPack {
+  id        Int       @id @default(autoincrement())
+  createdAt DateTime  @default(now())
+  design    String    @default("")
+  img       String?
+  nameDe    String    @default("")
+  nameEn    String    @default("")
+  nameEs    String    @default("")
+  nameFr    String    @default("")
+  nameNl    String    @default("")
+  nameUk    String    @default("")
+  notesDe   String    @default("")
+  notesEn   String    @default("")
+  notesEs   String    @default("")
+  notesFr   String    @default("")
+  notesNl   String    @default("")
+  notesUk   String    @default("")
+  tagsDe    String    @default("{}")
+  tagsEn    String    @default("{}")
+  tagsEs    String    @default("{}")
+  tagsFr    String    @default("{}")
+  tagsNl    String    @default("{}")
+  tagsUk    String    @default("{}")
+  options   String    @default("{}")
+  updatedAt DateTime @updatedAt
+}
+
+

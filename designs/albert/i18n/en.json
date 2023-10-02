@@ -1,0 +1,43 @@
+{
+  "t": "Albert apron",
+  "d": "Albert is an apron.",
+  "p": {
+    "front": "Front",
+    "pocket": "Pocket",
+    "strap": "Strap"
+  },
+  "s": {
+    "attachStrap": "Attach strap",
+    "cutPocket.t": "The pocket is not currently shown",
+    "cutPocket.d": "The **Pocket** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). It is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutStrap.t": "The straps are not currently shown",
+    "cutStrap.d": "The **Straps** are two strips of fabric {{{ width }}} wide and {{{ length }}} long (this includes seam allowance)</small>. They are not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "foldHere": "Fold here"
+  },
+  "o": {
+    "backOpening": {
+      "t": "Back opening",
+      "d": "Controls the opening at the back of the apron"
+    },
+    "chestDepth": {
+      "t": "Strap length",
+      "d": "Controls the length of the straps"
+    },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "Controls the length of the apron"
+    },
+    "bibLength": {
+      "t": "Bib length",
+      "d": "Controls the length of the bib"
+    },
+    "bibWidth": {
+      "t": "Bib width",
+      "d": "Controls the width of the bib"
+    },
+    "strapWidth": {
+      "t": "Strap width",
+      "d": "Controls the width of the strap"
+    }
+  }
+}

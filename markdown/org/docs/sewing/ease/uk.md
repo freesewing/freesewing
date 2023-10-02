@@ -1,19 +1,19 @@
 ---
-title: Ease
+title: Свобода облягання
 ---
 
-![Without ease, you would not be able to raise your arm](ease-plus.jpg)
+![Без свободи облягання Ви не змогли б підняти руку](ease-plus.jpg)
 
-![Negative ease is what makes your tights fit](ease-min.jpg)
+![Негативна свобода облягання робить колготки обтислими](ease-min.jpg)
 
-Ease is the amount of fabric that is added to a garment in addition to what is strictly required to make the garment fit.
+Свобода облягання — це кількість доданої до вбрання тканини поверх строго необхідної задля зручності носіння.
 
-Without ease, a garment would fit you so precisely that you might not be able to get in to it, or would have problems moving in it.
+Без свободи облягання, вбрання сиділо б на Вас настільки точно, що вдягнути чи рухатися в ньому було б майже неможливо.
 
-Ease that is added to allow you to move inside a garment is called wearing ease. Extra ease can be added beyond what is functionally needed. This is called design ease and is used to achieve a certain visual effect.
+Свобода облягання, яка додається для зручності носіння, є функціональною. Також можливі додаткові прибавки на свободу облягання понад те, що є функціонально необхідним. Це називається декоративною свободою облягання і вона використовується для досягнення певного силуету.
 
-Ease can work the other way too. When the fabric stretches, we can choose to use less fabric than what is needed to make the garment fit. This is called **negative ease**.
+Свобода облягання може бути не лише прибавками, а й убавками. Коли тканина тягнеться, ми можемо використати меншу кількість тканини для посадки вбрання по фігурі. Це називається **негативною свободою облягання**.
 
-Negative easy is used for stretchy materials where the garment must fit tightly. For example, in swimwear, tights, underwear, or sportswear.
+Негативна свобода облягання використовується для еластичних матеріалів, коли вбрання має щільно облягати фігуру. Наприклад, при пошитті купальників, колготок, спідньої білизни чи спортивного одягу.
 
-> Pictures by [Quinn Dombrowski](https://www.flickr.com/photos/quinnanya/8885126989/) and [sutiblr](https://www.flickr.com/photos/30788655@N08/4743320893)
+> Світлини: [Quinn Dombrowski](https://www.flickr.com/photos/quinnanya/8885126989/) та [sutiblr](https://www.flickr.com/photos/30788655@N08/4743320893)

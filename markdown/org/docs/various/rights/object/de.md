@@ -5,10 +5,10 @@ order: 70
 
 Du hast das Recht, der Verwendung deiner persönlichen Daten für wissenschaftliche Forschung zu widersprechen.
 
-Gehe dazu zu [/account/consent](/account/consent/) und lege deinen Einspruch in dem Abschnitt zu **Modelldaten** fest.
+Go to [/account/consent](/account/consent/) and unselect **Share anonymized measurements as open data** to do so.
 
 <Note>
 
-Das Widerspruchsrecht an sich ist weiter gefasst, aber so ist es anwendbar für Freesewing.
+The right to object is broader, but this is how it applies to FreeSewing.
 
 </Note>

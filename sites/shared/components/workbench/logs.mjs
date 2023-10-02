@@ -1,6 +1,6 @@
 import Markdown from 'react-markdown'
 import { formatMm } from 'shared/utils.mjs'
-import { Tab, Tabs } from '../mdx/tabs.mjs'
+import { Tab, Tabs } from '../tabs.mjs'
 
 export const Error = ({ err }) => {
   // Include the error name and message info if it isn't already at the top

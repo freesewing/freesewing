@@ -1,0 +1,187 @@
+{
+  "t": "Jaeger jacket",
+  "d": "Jaeger is a sport coat style jacket with two buttons and patch pockets.",
+  "p": {
+    "backBase": "Back base",
+    "chestPocketBag": "Chest pocket bag",
+    "chestPocketWelt": "Chest pocket welt",
+    "collar": "Collar",
+    "collarStand": "Collar stand",
+    "frontBase": "Front base",
+    "innerPocketBag": "Inner pocket bag",
+    "innerPocketWelt": "Inner pocket welt",
+    "pocket": "Pocket",
+    "pocketLining": "Pocket lining",
+    "side": "Side",
+    "topSleeve": "Top sleeve",
+    "underCollar": "Under collar",
+    "underSleeve": "Under sleeve"
+  },
+  "s": {},
+  "o": {
+    "centerBackDart": {
+      "t": "Center back dart",
+      "d": "Dart at the center back of your neck to accommodate a rounded back"
+    },
+    "sleeveVentLength": {
+      "t": "Sleeve vent length",
+      "d": "Length of the sleeve vent"
+    },
+    "sleeveVentWidth": {
+      "t": "Sleeve vent width",
+      "d": "Width of the sleeve vent"
+    },
+    "chestShaping": {
+      "t": "Chest shaping",
+      "d": "Amount of shaping to accommodate for the chest curve"
+    },
+    "frontDartPlacement": {
+      "t": "Front dart placement",
+      "d": "Location of the front darts"
+    },
+    "frontOverlap": {
+      "t": "Front overlap",
+      "d": "How far the fabric extends beyond the closing buttons"
+    },
+    "sideFrontPlacement": {
+      "t": "Side/Front placement",
+      "d": "The location of the side/front boundary"
+    },
+    "chestPocketDepth": {
+      "t": "Chest pocket depth",
+      "d": "The depth of the chest pocket"
+    },
+    "chestPocketWidth": {
+      "t": "Chest pocket width",
+      "d": "The width of the chest pocket"
+    },
+    "chestPocketPlacement": {
+      "t": "Chest pocket placement",
+      "d": "The location of the chest pocket"
+    },
+    "chestPocketAngle": {
+      "t": "Chest pocket angle",
+      "d": "The angle under which the chest pocket is placed"
+    },
+    "chestPocketWeltSize": {
+      "t": "Chest pocket welt size",
+      "d": "The size of the chest pocket welt"
+    },
+    "frontPocketPlacement": {
+      "t": "Front pocket placement",
+      "d": "Location of the front pocket"
+    },
+    "frontPocketWidth": {
+      "t": "Front pocket width",
+      "d": "The width of the front pocket"
+    },
+    "frontPocketDepth": {
+      "t": "Front pocket depth",
+      "d": "The depth of the front pocket"
+    },
+    "frontPocketRadius": {
+      "t": "Front pocket radius",
+      "d": "The radius by which the front pocket is rounded"
+    },
+    "innerPocketPlacement": {
+      "t": "Inner pocket placement",
+      "d": "The location of the inner pocket"
+    },
+    "innerPocketWidth": {
+      "t": "Inner pocket width",
+      "d": "The width of the inner pocket"
+    },
+    "innerPocketDepth": {
+      "t": "Inner pocket depth",
+      "d": "The depth of the inner pocket"
+    },
+    "innerPocketWeltHeight": {
+      "t": "Inner pocket welt height",
+      "d": "The height of the inner pocket welt"
+    },
+    "pocketFoldover": {
+      "t": "Pocket fold-over",
+      "d": "The amount by which the main fabric is folder over into the pocket"
+    },
+    "centerFrontHemDrop": {
+      "t": "Center front hem drop",
+      "d": "The amount by which the hem is lowered towards the center front"
+    },
+    "backVent": {
+      "t": "Back vent",
+      "d": "The amount of back vents"
+    },
+    "backVentLength": {
+      "t": "Back vent length",
+      "d": "The length of the back vent(s)"
+    },
+    "buttonLength": {
+      "t": "Button length",
+      "d": "The distance over which buttons are spread"
+    },
+    "frontCutawayAngle": {
+      "t": "Front cutaway angle",
+      "d": "The angle under which the front is cut away towards the hem"
+    },
+    "frontCutawayStart": {
+      "t": "Front cutaway start",
+      "d": "The location at which the front starts opening up towards the hem"
+    },
+    "frontCutawayEnd": {
+      "t": "Front cutaway end",
+      "d": "Increasing this will make the front cutaway stay closer to the center front"
+    },
+    "collarSpread": {
+      "t": "Collar spread",
+      "d": "The collar spread controls how the collar drapes over the shoulders"
+    },
+    "lapelStart": {
+      "t": "Lapel start",
+      "d": "Location where the center front goes over into the lapels"
+    },
+    "lapelReduction": {
+      "t": "Lapel reduction",
+      "d": "How much the tip of the lapels turns inwards"
+    },
+    "collarHeight": {
+      "t": "Collar height",
+      "d": "Height of the collar"
+    },
+    "collarNotchDepth": {
+      "t": "Collar notch depth",
+      "d": "Depth of the collar notch"
+    },
+    "collarNotchAngle": {
+      "t": "Collar notch angle",
+      "d": "Angle of the collar notch"
+    },
+    "collarNotchReturn": {
+      "t": "Collar notch return",
+      "d": "How much the collar returns from the notch, in comparison to the lapel"
+    },
+    "rollLineCollarHeight": {
+      "t": "Roll-line collar height",
+      "d": "How much the roll-line hugs the neck"
+    },
+    "hemRadius": {
+      "t": "Hem radius",
+      "d": "The amount by which the hem is rounded"
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at your hips"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at your waist"
+    },
+    "buttons": {
+      "t": "Number of buttons",
+      "d": "Controls the amount of buttons"
+    },
+    "collarRoll": {
+      "t": "Collar roll",
+      "d": "Controls the amount of roll in the collar; how much the topcollar is higher than the undercollar."
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "t": "Plugin Test",
+  "d": "A FreeSewing pattern to test our various plugins",
+  "p": {
+    "base": "Base"
+  },
+  "s": {},
+  "o": {
+    "bannerDy": {
+      "t": "dy",
+      "d": "Distance perpendicular to the path the text is placed on"
+    },
+    "bannerRepeat": {
+      "t": "repeat",
+      "d": "The amount of time the text should be repeated"
+    },
+    "bannerSpaces": {
+      "t": "spaces",
+      "d": "The amount of spaces between repetitions of the text"
+    },
+    "bartackAngle": {
+      "t": "angle",
+      "d": "The angle of the line along which to bartack"
+    },
+    "bartackDensity": {
+      "t": "density",
+      "d": "Controls how close together the stitches of the bartack are drawn"
+    },
+    "bartackEnd": {
+      "t": "end",
+      "d": "Controls how far before the end the bartack stops"
+    },
+    "bartackLength": {
+      "t": "length",
+      "d": "Controls the length of the bartack"
+    },
+    "bartackStart": {
+      "t": "start",
+      "d": "Controls how far from the start the bartack begins"
+    },
+    "bartackWidth": {
+      "t": "width",
+      "d": "Controls the widht of the (stitches making up the) bartack"
+    }
+  }
+}

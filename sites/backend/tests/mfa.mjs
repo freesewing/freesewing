@@ -6,7 +6,7 @@ export const mfaTests = async (chai, config, expect, store) => {
     key: store.altaccount,
   }
 
-  for (const auth in secret) {
+  for (const auth of ['jwt']) {
     describe(`${store.icon('mfa', auth)} Setup Multi-Factor Authentication (MFA) (${auth})`, () => {
       it(`${store.icon('mfa')} Should return 400 on MFA enable without proper value`, (done) => {
         chai
@@ -21,7 +21,7 @@ export const mfaTests = async (chai, config, expect, store) => {
                     'base64'
                   )
           )
-          .send({ mfa: 'yes' })
+          .send({ mfa: 'yes', test: true })
           .end((err, res) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(400)
@@ -44,7 +44,7 @@ export const mfaTests = async (chai, config, expect, store) => {
                     'base64'
                   )
           )
-          .send({ mfa: true })
+          .send({ mfa: true, test: true })
           .end((err, res) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(200)
@@ -72,6 +72,7 @@ export const mfaTests = async (chai, config, expect, store) => {
           )
           .send({
             mfa: true,
+            test: true,
             secret: secret[auth].mfaSecret,
             token: authenticator.generate(secret[auth].mfaSecret),
           })
@@ -96,7 +97,7 @@ export const mfaTests = async (chai, config, expect, store) => {
                     'base64'
                   )
           )
-          .send({ mfa: true })
+          .send({ mfa: true, test: true })
           .end((err, res) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(400)
@@ -121,6 +122,7 @@ export const mfaTests = async (chai, config, expect, store) => {
           )
           .send({
             mfa: true,
+            test: true,
             secret: secret[auth].mfaSecret,
             token: authenticator.generate(secret[auth].mfaSecret),
           })
@@ -133,11 +135,12 @@ export const mfaTests = async (chai, config, expect, store) => {
           })
       })
 
-      it(`${store.icon('mfa', auth)} Should not login with username/password only`, (done) => {
+      it(`${store.icon('mfa', auth)} Should not sign in with username/password only`, (done) => {
         chai
           .request(config.api)
-          .post('/login')
+          .post('/signin')
           .send({
+            test: true,
             username: secret[auth].username,
             password: secret[auth].password,
           })
@@ -150,11 +153,12 @@ export const mfaTests = async (chai, config, expect, store) => {
           })
       })
 
-      it(`${store.icon('mfa')} Should login with username/password/token`, (done) => {
+      it(`${store.icon('mfa')} Should sign in with username/password/token`, (done) => {
         chai
           .request(config.api)
-          .post('/login')
+          .post('/signin')
           .send({
+            test: true,
             username: secret[auth].username,
             password: secret[auth].password,
             token: authenticator.generate(secret[auth].mfaSecret),
@@ -168,11 +172,12 @@ export const mfaTests = async (chai, config, expect, store) => {
           })
       })
 
-      it(`${store.icon('mfa')} Should not login with a wrong token`, (done) => {
+      it(`${store.icon('mfa')} Should not sign in with a wrong token`, (done) => {
         chai
           .request(config.api)
-          .post('/login')
+          .post('/signin')
           .send({
+            test: true,
             username: secret[auth].username,
             password: secret[auth].password,
             token: '1234',
@@ -181,7 +186,7 @@ export const mfaTests = async (chai, config, expect, store) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(401)
             expect(res.body.result).to.equal('error')
-            expect(res.body.error).to.equal('loginFailed')
+            expect(res.body.error).to.equal('signInFailed')
             done()
           })
       })
@@ -200,6 +205,7 @@ export const mfaTests = async (chai, config, expect, store) => {
                   )
           )
           .send({
+            test: true,
             mfa: false,
             password: secret[auth].password,
             token: authenticator.generate(secret[auth].mfaSecret),

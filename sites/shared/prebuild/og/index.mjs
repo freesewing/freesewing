@@ -144,7 +144,7 @@ const writeAsPng = async (svg, site, slug) => {
  * }
  */
 
-export const generateOgImage = async (data) => {
+export const prebuildOgImages = async (data) => {
   // Inject into SVG
   const meta = await getMetaData(data)
   const svg = decorateSvg(meta)

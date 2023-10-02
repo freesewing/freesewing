@@ -4,7 +4,7 @@ title: snap-socket
 
 The `snap-socket` snippet is used to mark the socket part of a snap button.
 
-It is provided by [plugin-buttons](/reference/plugins/buttons/).
+It is provided by [plugin-annotations](/reference/plugins/annotations/).
 
 ## Example
 

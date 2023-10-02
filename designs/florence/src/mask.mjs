@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function florenceMask({
   points,
   Point,
@@ -9,11 +7,11 @@ function florenceMask({
   options,
   complete,
   sa,
-  paperless,
   Snippet,
   snippets,
   macro,
   utils,
+  store,
   part,
 }) {
   points.topLeft = new Point(0, 0)
@@ -57,18 +55,9 @@ function florenceMask({
     .close()
     .attr('class', 'fabric')
 
-  if (complete) {
-    points.logo = new Point(points.tipCenter.x / 2, points.tipCenterCp1.y)
-    snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.5)
-    points.title = points.logo.shift(90, 40)
-    macro('title', {
-      at: points.title,
-      nr: 1,
-      title: 'mask',
-      scale: 0.5,
-    })
-    macro('miniscale', { at: points.logo.shift(-90, 20) })
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
+  if (complete) {
     points.ribbon1TopLeft = points.topEdge.shift(-90, 2)
     points.ribbon1TopRight = points.ribbon1TopLeft.shift(0, 10)
     points.ribbon1BottomRight = points.ribbon1TopRight.shift(-90, 10)
@@ -87,48 +76,77 @@ function florenceMask({
       .line(points.ribbon2TopRight)
       .line(points.ribbon2BottomRight)
       .line(points.ribbon2BottomLeft)
-      .attr('class', 'stroke-sm fabric dashed')
-
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-
-    if (paperless) {
-      macro('hd', {
-        from: points.bottomEdge,
-        to: points.bottomTip,
-        y: points.bottomTip.y + sa + 15,
-      })
-      macro('hd', {
-        from: points.bottomEdge,
-        to: points.tipCenter,
-        y: points.bottomTip.y + sa + 30,
-      })
-      macro('hd', {
-        from: points.topEdge,
-        to: points.topTip,
-        y: points.topTip.y - sa - 15,
-      })
-      macro('vd', {
-        from: points.bottomTip,
-        to: points.bottomEdge,
-        x: points.bottomEdge.x - sa - 15,
-      })
-      macro('vd', {
-        from: points.bottomTip,
-        to: points.topEdge,
-        x: points.bottomEdge.x - sa - 30,
-      })
-      macro('vd', {
-        from: points.bottomTip,
-        to: points.topTip,
-        x: points.bottomEdge.x - sa - 45,
-      })
-      macro('vd', {
-        from: points.bottomTip,
-        to: points.tipCenter,
-        x: points.tipCenter.x + sa + 15,
-      })
-    }
+      .addClass('stroke-sm note dotted')
   }
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.addCut()
+  store.cutlist.setCut([
+    { cut: 2, from: 'fabric' },
+    { cut: 2, from: 'lining' },
+  ])
+
+  // Logo
+  points.logo = new Point(points.tipCenter.x / 2, points.tipCenterCp1.y)
+  snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.5)
+
+  // Title
+  points.title = points.logo.shift(90, 40)
+  macro('title', {
+    at: points.title,
+    nr: 1,
+    title: 'mask',
+    scale: 0.5,
+  })
+
+  // Miniscale
+  macro('miniscale', { at: points.logo.shift(-90, 20) })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wLeftToTipBottom',
+    from: points.bottomEdge,
+    to: points.bottomTip,
+    y: points.bottomTip.y + sa + 15,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.bottomEdge,
+    to: points.tipCenter,
+    y: points.bottomTip.y + sa + 30,
+  })
+  macro('hd', {
+    id: 'wLeftToTipTop',
+    from: points.topEdge,
+    to: points.topTip,
+    y: points.topTip.y - sa - 15,
+  })
+  macro('vd', {
+    id: 'hBottomToLeftBottom',
+    from: points.bottomTip,
+    to: points.bottomEdge,
+    x: points.bottomEdge.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hBottomToLeftTop',
+    from: points.bottomTip,
+    to: points.topEdge,
+    x: points.bottomEdge.x - sa - 30,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottomTip,
+    to: points.topTip,
+    x: points.bottomEdge.x - sa - 45,
+  })
+  macro('vd', {
+    id: 'hBottomToEdgeRight',
+    from: points.bottomTip,
+    to: points.tipCenter,
+    x: points.tipCenter.x + sa + 15,
+  })
 
   return part
 }
@@ -141,6 +159,5 @@ export const mask = {
     height: { pct: 26, min: 23, max: 29, menu: 'fit' },
     curve: { pct: 12.5, min: 10, max: 15, menu: 'fit' },
   },
-  plugins: [pluginBundle],
   draft: florenceMask,
 }

@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function draftLidOnePiece({
   options,
   Point,
@@ -17,6 +15,7 @@ function draftLidOnePiece({
   // Width is halved as this is cut on a fold
   const width = (options.size * 500) / 2
   const height = options.size * 300
+  const velcroWidth = options.size * 30
   const taperWidth = width * options.taperRatio
   const lidFlapHeight = height * options.flapHeightRatio
   const lidFlapWidth = taperWidth * 0.8
@@ -48,7 +47,7 @@ function draftLidOnePiece({
       title: 'Lid - One Piece',
       nr: '3',
     })
-    points.notchPoint = new Point((openingWidth + lidFlapWidth) / 2, lidFlapHeight * 0.2).addText(
+    points.notchPoint = new Point(openingWidth + velcroWidth / 2, lidFlapHeight * 0.2).addText(
       'Webbing Notch',
       'center'
     )
@@ -112,6 +111,5 @@ export const lidOnePiece = {
     openingRatio: { pct: 66, min: 30, max: 90, menu: 'style' },
     onePieceLid: { bool: false, menu: 'style' },
   },
-  plugins: [pluginBundle],
   draft: draftLidOnePiece,
 }

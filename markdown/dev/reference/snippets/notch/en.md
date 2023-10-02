@@ -4,7 +4,7 @@ title: notch
 
 The `notch` snippet is intended for notches.
 
-It is provided by [plugin-notches](/reference/plugins/notches/).
+It is provided by [plugin-annotations](/reference/plugins/annotations/).
 
 ## Example
 

@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function draftTwoPieceLidBottom({
   options,
   Point,
@@ -35,10 +33,10 @@ function draftTwoPieceLidBottom({
 
   // Complete?
   if (complete) {
-    // macro('cutonfold', {
-    //   from: points.lidTopLeft,
-    //   to: points.lidSeamLeft,
-    // })
+    macro('cutonfold', {
+      from: points.origin,
+      to: points.lidSeamLeft,
+    })
 
     points.label = new Point(points.lidSeamRight.x / 3, points.lidSeamRight.y / 1.5)
 
@@ -105,6 +103,5 @@ export const twoPieceLidBottom = {
     openingRatio: { pct: 66, min: 30, max: 90, menu: 'style' },
     onePieceLid: { bool: false, menu: 'style' },
   },
-  plugins: [pluginBundle],
   draft: draftTwoPieceLidBottom,
 }

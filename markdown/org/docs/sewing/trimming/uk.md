@@ -1,11 +1,11 @@
 ---
-title: Trimming
+title: Обрізка
 ---
 
-![Seam allowance being trimmed](trimming.jpg)
+![Обрізання припуску на шов](trimming.jpg)
 
-Trimming, or to trim, is cutting away excessive [seam allowance](/docs/sewing/seam-allowance).
+Обрізка, або підрізування, - це зрізання зайвих [припусків на шви](/docs/sewing/seam-allowance).
 
-Often the goal of trimming is to reduce bulk in the seams of a garment.
+Часто метою обрізки є зменшення об'єму в швах одягу.
 
-> Picture by [Heather](http://www.feathersflights.com/2011/02/trimming-and-grading-seams.html)
+> Фото: [Хізер](http://www.feathersflights.com/2011/02/trimming-and-grading-seams.html)

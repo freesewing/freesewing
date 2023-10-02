@@ -181,6 +181,7 @@ function waraleeWaistband(
   // Paperless?
   if (paperless) {
     macro('vd', {
+      id: 1,
       from: points.tr,
       to: points.br,
       x: points.br.x + sa + 10,

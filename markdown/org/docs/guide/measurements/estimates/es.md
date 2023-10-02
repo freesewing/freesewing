@@ -12,19 +12,19 @@ Esta estimación se basa en la circunstancia del cuello, por lo que no aparecer�
 
 <Note>
 
-##### This is a difficult area for us to work in
+##### Esta es una área difícil de trabajar en
 
-We want to help you get the best results, and that includes helping you spot issues with your measurements.
-On the other hand, we in no way want to imply that someone's measurements are _wrong_ somehow.
+Queremos ayudarte a obtener los mejores resultados. y eso incluye ayudarte a detectar problemas con tus mediciones.
+Por otra parte, de ningún modo queremos dar a entender que las medidas de alguien son _equivocadas_ de algún modo.
 
 Somos un patrón muy incluyente de tamaño, y una cantidad desproporcionada de nuestros usuarios son personas que luchan por encontrar ropa o patrones de otras tiendas.
-So on one hand, it might seem like we're setting ourselves up for failure by comparing measurements to a set of more or less _standard_ measurements.
+Así que, por un lado, podría parecer que nos estamos preparando para el fracaso al comparar las medidas con un conjunto de medidas más o menos _estándar_.
 Pero usted conoce su cuerpo. Usted sabe cuál de sus mediciones se desviará de la media.
 Y señalamos que lo hacen de alguna manera sólo es una confirmación de que ha estado mediendo correctamente.
 Por otro lado, si algo salta hacia fuera donde tienes un tamaño bastante medio, sabes que puedes revisar esas mediciones.
 
-Last but not least, while we try to provide guidance about measurements to help spot mistakes,
-we never exclude anyone based on size or measurement.
+Por último, aunque no por ello menos importante, aunque intentamos orientar sobre las medidas para ayudar a detectar errores,
+nunca excluimos a nadie basándonos en la talla o las medidas.
 Independientemente de lo que nos lance, elaboraremos un patrón para usted o (nuestro software morirá) intentando.
 
 </Note>

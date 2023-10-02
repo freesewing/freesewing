@@ -20,8 +20,8 @@ function simonFront({
   points,
   Path,
   paths,
-  complete,
   macro,
+  utils,
   snippets,
   options,
   part,
@@ -33,6 +33,8 @@ function simonFront({
   for (const i in snippets) {
     if (i.indexOf('otch')) delete snippets[i]
   }
+
+  macro('rmcutonfold')
 
   // Populare store with data we need
   calculateReduction(part)
@@ -90,20 +92,26 @@ function simonFront({
         .line(points.bballStart)
         .curve(points.bballCp1, points.bballCp2, points.bballEnd)
       break
-    case 'slashed':
-      macro('round', {
+    case 'slashed': {
+      // Macro will return the auto-generated IDs
+      const ids = macro('round', {
+        id: 'slash',
         from: points.hips,
         to: points.cfHem,
         via: points.hem,
         radius: points.hips.dist(points.hem) * options.hemCurve,
-        prefix: 'slash',
       })
+      // Create points from them with easy names
+      for (const id of ['start', 'cp1', 'cp2', 'end']) {
+        points[`slash${utils.capitalize(id)}`] = points[ids.points[id]].copy()
+      }
       paths.saBase = new Path().move(points.hips).join(paths.saBaseFromHips)
       paths.hemBase = new Path()
         .move(points.cfHem)
         .line(points.slashEnd)
         .curve(points.slashCp2, points.slashCp1, points.slashStart)
       break
+    }
     default:
       paths.saBase = new Path().move(points.hem).line(points.hips).join(paths.saBaseFromHips)
       paths.hemBase = new Path().move(points.cfHem).line(points.hem)
@@ -114,47 +122,42 @@ function simonFront({
   paths.saBaseFromHips.hide()
   paths.saBaseFromArmhole.hide()
   paths.hemBase.hide()
-  paths.seam = paths.hemBase
-    .join(paths.saBase)
-    .join(paths.saBaseFromArmhole)
-    .attr('class', 'fabric')
+  paths.seam = paths.hemBase.join(paths.saBase).join(paths.saBaseFromArmhole).addClass('fabric')
 
-  // Complete pattern?
-  if (complete) {
-    delete paths.cutonfold
-    const grainlineDistance = (points.hem.x - points.cfHem.x) * 0.2
-    macro('grainline', {
-      from: points.cfHem.shift(0, grainlineDistance),
-      to: points.cfNeck.shift(0, grainlineDistance),
-    })
-    macro('title', { at: points.title, nr: 'X', title: 'front' })
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['waist', 'armholePitch', 'hips', 'cfHips', 'cfWaist', 'armhole', 'cfArmhole'],
-    })
-
-    if (sa) {
-      paths.saFrench = paths.saBase.offset(sa * options.ffsa).attr('class', 'fabric sa')
-      macro('banner', {
-        path: paths.saFrench,
-        text: 'flatFelledSeamAllowance',
-        repeat: 30,
-      })
-      paths.saFromArmhole = paths.saBaseFromArmhole.offset(sa).attr('class', 'fabric sa')
-      paths.hemSa = paths.hemBase.offset(sa * 3).attr('class', 'fabric sa')
-      macro('banner', {
-        path: paths.hemSa,
-        text: ['hem', ': 3x', 'seamAllowance'],
-      })
-      paths.saConnect = new Path()
-        .move(paths.hemSa.end())
-        .line(paths.saFrench.start())
-        .move(paths.saFrench.end())
-        .line(paths.saFromArmhole.start())
-        .attr('class', 'fabric sa')
-      delete paths.sa
-    }
+  if (sa) {
+    paths.ffsa = paths.saBase.offset(sa * options.ffsa).attr('class', 'fabric sa')
+    paths.saFromArmhole = paths.saBaseFromArmhole.offset(sa).attr('class', 'fabric sa')
+    paths.hemSa = paths.hemBase.offset(sa * 3).attr('class', 'fabric sa')
+    paths.saConnect = new Path()
+      .move(paths.hemSa.end())
+      .line(paths.ffsa.start())
+      .move(paths.ffsa.end())
+      .line(paths.saFromArmhole.start())
+      .attr('class', 'fabric sa')
+    delete paths.sa
   }
+
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'farbic' })
+
+  // Grainline
+  const grainlineDistance = (points.hem.x - points.cfHem.x) * 0.2
+  macro('grainline', {
+    from: points.cfHem.shift(0, grainlineDistance),
+    to: points.cfNeck.shift(0, grainlineDistance),
+  })
+
+  // Notches
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: ['waist', 'armholePitch', 'hips', 'cfHips', 'cfWaist', 'armhole', 'cfArmhole'],
+  })
+
+  // Remove title
+  macro('rmtitle')
 
   return part
 }

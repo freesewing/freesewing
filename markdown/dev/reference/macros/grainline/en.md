@@ -3,7 +3,7 @@ title: grainline
 ---
 
 The `grainline` macro adds a _grainline_ indicator to your pattern.
-It is provided by the [grainline plugin](/reference/plugins/grainline/).
+It is provided by the [annotations plugin](/reference/plugins/annotations).
 
 ## Signature
 
@@ -55,6 +55,18 @@ macro('grainline', {
 [1]: /reference/api/point
 
 ## Notes
+
+### Place outside `complete`
+
+The `grainline` macro should be placed outside of `complete` blocks
+in the part's draft method.
+
+This is because it provides information about the part's grainline,
+information that is always needed by the cutting layout regardless of
+whether `complete` details and graphics are shown on the pattern.
+
+The `grainline` macro will automatically show or hide the grainline
+indicator based on the `complete` setting.
 
 ### Removing the grainline indicator
 

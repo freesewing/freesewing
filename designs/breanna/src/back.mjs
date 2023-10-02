@@ -1,5 +1,4 @@
 import { base } from './base.mjs'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 
 function draftBreannaBack({
   sa,
@@ -8,8 +7,6 @@ function draftBreannaBack({
   paths,
   Snippet,
   snippets,
-  complete,
-  paperless,
   macro,
   Point,
   options,
@@ -167,114 +164,139 @@ function draftBreannaBack({
     new Path().move(points.cbNeck)._curve(points.hpsCp2, points.hps).length() * 2
   )
 
+  if (sa) paths.sa = paths.saBase.offset(sa).attr('class', 'sa')
+
   // Anchor point
   points.gridAnchor = points.cbNeck.clone()
 
-  // Complete pattern?
-  if (complete) {
-    // Title
-    points.title = new Point(points.armhole.x / 4, points.armhole.y - 60)
-    macro('title', { nr: 1, title: 'back', at: points.title })
+  /*
+   * Annotations
+   */
 
-    // Logo
-    points.logo = new Point(points.armhole.x / 1.5, points.armhole.y)
-    snippets.logo = new Snippet('logo', points.logo)
+  // Grainline
+  const grainlineDistance = (points.armhole.x - points.cbNeck.x) * 0.1
+  macro('grainline', {
+    from: points.cbNeck.shift(0, grainlineDistance),
+    to: points.cbWaist.shift(0, grainlineDistance),
+  })
 
-    // Notch
-    snippets.armholePitch = new Snippet('bnotch', points.armholePitch)
+  // Cut list
+  store.cutlist.addCut({ cut: 2, from: 'fabric', onFold: true })
 
-    if (sa) paths.sa = paths.saBase.offset(sa).attr('class', 'sa')
-  }
+  // Title
+  points.title = new Point(points.armhole.x / 4, points.armhole.y - 60)
+  macro('title', { nr: 1, title: 'back', at: points.title })
+
+  // Logo
+  points.logo = new Point(points.armhole.x / 1.5, points.armhole.y)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  // Notch
+  snippets.armholePitch = new Snippet('bnotch', points.armholePitch)
 
   // Paperless?
-  if (paperless) {
-    macro('vd', {
+  macro('vd', {
+    id: 'hCBackHemToCBackNeck',
+    from: points.cbWaist,
+    to: points.cbNeck,
+    x: -15 - sa,
+  })
+  if (options.waistDart) {
+    let y = points.waist.y + 15 + sa
+    macro('hd', {
+      id: 'wCBackHemToWaistDartInner',
       from: points.cbWaist,
-      to: points.cbNeck,
-      x: -15 - sa,
+      to: points.waistDart1,
+      y,
     })
-    if (options.waistDart) {
-      let y = points.waist.y + 15 + sa
-      macro('hd', {
-        from: points.cbWaist,
-        to: points.waistDart1,
-        y,
-      })
-      macro('hd', {
-        from: points.cbWaist,
-        to: points.waistDartEdge,
-        y: y + 15,
-      })
-      macro('hd', {
-        from: points.cbWaist,
-        to: points.waistDart2,
-        y: y + 30,
-      })
-      macro('hd', {
-        from: points.cbWaist,
-        to: points.waist,
-        y: y + 45,
-      })
-      macro('hd', {
-        from: points.cbWaist,
-        to: points.armhole,
-        y: y + 60,
-      })
-      macro('vd', {
-        from: points.waistDart2,
-        to: points.waistDartTip,
-        x: points.waistDart2.x + 15,
-      })
-    } else {
-      let y = points.waist.y + 15 + sa
-      macro('hd', {
-        from: points.cbWaist,
-        to: points.waist,
-        y: points.waist.y + 15 + sa,
-      })
-      macro('hd', {
-        from: points.cbWaist,
-        to: points.armhole,
-        y: y + 30,
-      })
-    }
-    let x = points.armhole.x + 15 + sa
-    macro('vd', {
-      from: points.waist,
+    macro('hd', {
+      id: 'wCBackHemToWaistDartCenter',
+      from: points.cbWaist,
+      to: points.waistDartEdge,
+      y: y + 15,
+    })
+    macro('hd', {
+      id: 'wCBackHemToWaistDartOuter',
+      from: points.cbWaist,
+      to: points.waistDart2,
+      y: y + 30,
+    })
+    macro('hd', {
+      id: 'wHemFull',
+      from: points.cbWaist,
+      to: points.waist,
+      y: y + 45,
+    })
+    macro('hd', {
+      id: 'wCBackHemToArmhole',
+      from: points.cbWaist,
       to: points.armhole,
-      x,
+      y: y + 60,
     })
     macro('vd', {
-      from: points.waist,
-      to: points.armholePitch,
-      x: x + 15,
+      id: 'hWaistDart',
+      from: points.waistDart2,
+      to: points.waistDartTip,
+      x: points.waistDart2.x + 15,
     })
-    macro('vd', {
-      from: points.waist,
-      to: points.shoulder,
-      x: x + 30,
-    })
-    macro('vd', {
-      from: points.waist,
-      to: points.hps,
-      x: x + 45,
+  } else {
+    let y = points.waist.y + 15 + sa
+    macro('hd', {
+      id: 'wCBackToSide',
+      from: points.cbWaist,
+      to: points.waist,
+      y: points.waist.y + 15 + sa,
     })
     macro('hd', {
-      from: points.cbNeck,
-      to: points.armholePitch,
-      y: points.armholePitch.y + 25,
-    })
-    macro('hd', {
-      from: points.cbNeck,
-      to: points.hps,
-      y: points.hps.y - sa - 15,
-    })
-    macro('hd', {
-      from: points.cbNeck,
-      to: points.shoulder,
-      y: points.hps.y - sa - 30,
+      id: 'wCBackToArmhole',
+      from: points.cbWaist,
+      to: points.armhole,
+      y: y + 30,
     })
   }
+  let x = points.armhole.x + 15 + sa
+  macro('vd', {
+    id: 'hHemToArmhole',
+    from: points.waist,
+    to: points.armhole,
+    x,
+  })
+  macro('vd', {
+    id: 'hHemToArmholePitch',
+    from: points.waist,
+    to: points.armholePitch,
+    x: x + 15,
+  })
+  macro('vd', {
+    id: 'hHemToShoulder',
+    from: points.waist,
+    to: points.shoulder,
+    x: x + 30,
+  })
+  macro('vd', {
+    id: 'hHemToHps',
+    from: points.waist,
+    to: points.hps,
+    x: x + 45,
+  })
+  macro('hd', {
+    id: 'wCBackToArmholePitch',
+    from: points.cbNeck,
+    to: points.armholePitch,
+    y: points.armholePitch.y + 25,
+  })
+  macro('hd', {
+    id: 'wCBackToHps',
+    from: points.cbNeck,
+    to: points.hps,
+    y: points.hps.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wCBacktoShoulder',
+    from: points.cbNeck,
+    to: points.shoulder,
+    y: points.hps.y - sa - 30,
+  })
 
   return part
 }
@@ -282,6 +304,5 @@ function draftBreannaBack({
 export const back = {
   from: base,
   name: 'breanna.back',
-  plugins: [pluginBundle],
   draft: draftBreannaBack,
 }

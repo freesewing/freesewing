@@ -1,0 +1,50 @@
+{
+  "t": "Teagan T-shirt",
+  "d": "Teagan is een patroon voor een aansluitend t-shirt.",
+  "p": {
+    "back": "Achterzijde",
+    "front": "Voorzijde",
+    "sleeve": "Mouw"
+  },
+  "s": {
+    "fullLengthFromHps": "Afgewerkte lengte (vanaf HPS)"
+  },
+  "o": {
+    "draftForHighBust": {
+      "t": "Teken voor hoge buste",
+      "d": "Teken het patroon voor de hoge bustemaat (indien beschikbaar) in plaats van de volle borstomtrek. Dit heeft een aansluitender kledingstuk als resultaat voor mensen met borsten."
+    },
+    "sleeveEase": {
+      "t": "Overwijdte mouw",
+      "d": "De hoeveelheid extra ruimte in je mouwen"
+    },
+    "sleeveLength": {
+      "t": "Mouwlengte",
+      "d": "Bepaalt de lengte van je mouwen"
+    },
+    "necklineBend": {
+      "t": "Curve halslijn",
+      "d": "Bepaalt de curve van de halsuitsnijding."
+    },
+    "necklineDepth": {
+      "t": "Diepte halsuitsnijding",
+      "d": "Bepaalt hoe diep de halsopening is."
+    },
+    "necklineWidth": {
+      "t": "Breedte halsuitsnijding",
+      "d": "Bepaalt hoe breed de halsopening is."
+    },
+    "curveToWaist": {
+      "t": "Fit the waist",
+      "d": "Whether or not to fit the waist or rahter only fit chest and hips."
+    },
+    "curvedWaistEase": {
+      "t": "Waist ease",
+      "d": "Ease at the waist (only applies when the waist is fitted)."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Ease at the hips."
+    }
+  }
+}

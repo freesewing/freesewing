@@ -38,7 +38,7 @@ Le biais de jersey est moins commun, mais souvent utilisé sur les maillots de c
 > 
 > Sur un T-shirt, l'élargissement de la bande au cou réduira la taille de l'encolure. Si vous voulez une bande plus large, vous devrez couper un trou plus grand dans votre t-shirt.
 > 
-> On an undershirt, if you want the knitwear binding at the neck to be wider, it will not make the neck opening smaller. Au lieu de cela, le biais se posera plus loin sur le tissu principal du maillot de corps.
+> Sur un maillot de corps, si vous voulez que le biais à l'encolure soit plus large, cela ne réduira pas l'encolure. Au lieu de cela, le biais se posera plus loin sur le tissu principal du maillot de corps.
 
 ## Pourquoi le biais sur une maille doit être extensible
 
@@ -110,3 +110,29 @@ Une autre approche pour contourner le problème de longueur est d'attacher le bi
 De cette façon, il ne faut pas deviner la longueur du biais, et la couture s'ajustera partout parfaitement.
 
 > Pour des instructions détaillées, consultez [la documentation d'Aaron](/docs/patterns/aaron/)
+
+## Alternate method
+
+While the above instructions describe one way to attach a knit band or knit binding, it is not the only method that can be used. An alternate method is to cut the exact amount of binding needed, sew it into a ring, and then attach the ring to the garment opening.
+
+Some people feel that this is an easier method for novice sewists. They are told exactly how much binding to use, and they do not have to guess how much they should be stretching the binding as they sew.
+
+1. Measure the garment opening that the binding will cover. Be sure to measure at the seamline, to account for seam allowance.
+
+2. Check the pattern instructions for the length of binding to use. Or, use a length 80-90% smaller than the opening based on the stretchiness of the binding fabric. (For example, 80% for very stretchy fabric, 90% for less stretchy fabric.)
+
+3. Cut the length of binding required plus seam allowance at each end.
+
+4. Sew the binding ends right sides together to form a closed loop or ring. Trim excess seam allowance.
+
+5. Fold the ring together at the seam to divide the ring into equal halves. Mark or insert pins at each end fold. One pin will be in the seam, and the other will mark the halfway point around the ring.
+
+6. Unfold the ring and fold it again into equal halves so the two marks/pins meet together in the middle. Again mark or insert pins into each end fold. Now there are 4 pins or marks dividing the ring into 4 quarters of equal length.
+
+7. Similarly, fold the garment opening and mark or insert pins to divide the garment opening into 4 quarters of equal length.
+
+8. Match the marks or pins on the binding with the ones on the garment opening. (Try to align it so the seam is at the most inconspicuous location in the garment opening. For example, if binding a neck opening align the binding so the seam is at the back of the neck opening.)
+
+9. Pin the binding ring to the garment opening at each quarter mark/pin. This ensures that the binding is evenly distributed around the garment opening.
+
+10. Sew the binding to the opening, one quarter at a time. While sewing, evenly stretch each quarter segment of binding to match the length of the quarter segment of garment opening.

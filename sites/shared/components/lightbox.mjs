@@ -1,6 +1,9 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
+import { ModalContext } from 'shared/context/modal-context.mjs'
+import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 
-export const Lightbox = ({ children }) => {
+export const Lightbox = ({ children, buttonClasses = '', boxClasses = false, modalProps = {} }) => {
+  const { setModal } = useContext(ModalContext)
   const [box, setBox] = useState(false)
 
   if (box)
@@ -26,8 +29,24 @@ export const Lightbox = ({ children }) => {
     )
 
   return (
-    <div onClick={() => setBox(!box)} className="hover:cursor-zoom-in">
+    <button
+      onClick={() =>
+        setModal(
+          <ModalWrapper
+            flex="col"
+            justify="top lg:justify-center"
+            slideFrom="right"
+            {...modalProps}
+          >
+            {boxClasses ? <div className={boxClasses}>{children}</div> : children}
+          </ModalWrapper>
+        )
+      }
+      className={buttonClasses}
+    >
       {children}
-    </div>
+    </button>
   )
 }
+
+//<button onClick={() => setBox(!box)} className={`hover:cursor-zoom-in ${className}`}>

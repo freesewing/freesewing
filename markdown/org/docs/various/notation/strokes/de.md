@@ -8,7 +8,7 @@ Hier sind die verschiedenen verfügbaren Linienbreiten:
 
 <Legend part="lineWidths">
 
-The different line widths
+Die verschiedenen Linienbreiten
 
 </Legend>
 
@@ -16,6 +16,6 @@ Und das sind die verschiedenen Strichstile:
 
 <Legend part="lineStrokes">
 
-The different line strokes
+Die verschiedenen Linienstriche
 
 </Legend>

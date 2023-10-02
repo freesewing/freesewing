@@ -1,0 +1,52 @@
+{
+  "t": "Octoplushy la pieuvre",
+  "d": "Un compagnon à plusieurs bras pour des câlins de haut niveau",
+  "p": {
+    "armSection1": "Arm section 1",
+    "armSection2": "Arm section 2",
+    "eye1": "Eye 1",
+    "eye2": "Eye 2",
+    "eye3": "Eye 3",
+    "headSection1": "Head section 1",
+    "headSection2": "Head section 2"
+  },
+  "s": {},
+  "o": {
+    "size": {
+      "t": "Taille",
+      "d": "Contrôle la taille globale"
+    },
+    "type": {
+      "t": "Type",
+      "d": "Vous permet de choisir une des variantes de ce design"
+    },
+    "armWidth": {
+      "t": "Largeur de bras",
+      "d": "Contrôle la largeur des bras"
+    },
+    "armLength": {
+      "t": "Longueur des bras",
+      "d": "Contrôle la longueur des bras"
+    },
+    "neckWidth": {
+      "t": "Largeur du cou",
+      "d": "Détermine la largeur du cou"
+    },
+    "armTaper": {
+      "t": "Spirales des bras",
+      "d": "Contrôle la quantité de spirales que les tentacules font"
+    },
+    "bottomTopArmRatio": {
+      "t": "Ratio entre le bras supérieur et inférieur",
+      "d": "FIXME: Aucune idée de ce que cela fait"
+    },
+    "bottomArmReduction": {
+      "t": "Réduction du bras inférieur",
+      "d": "FIXME: Aucune idée de ce que cela fait"
+    },
+    "bottomArmReductionPlushy": {
+      "t": "Réduction du bras inférieur (en peluche)",
+      "d": "FIXME: Aucune idée de ce que cela fait"
+    }
+  }
+}

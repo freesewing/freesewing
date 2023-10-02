@@ -1,0 +1,15 @@
+{
+  "t": "Carlita jas",
+  "d": "De versie voor borsten van onze Carlton jas, aka Sherlock Holmes jas.",
+  "p": {
+    "front": "Voorzijde",
+    "side": "Zijkant"
+  },
+  "s": {},
+  "o": {
+    "contour": {
+      "t": "Contour",
+      "d": "Controleert hoe nauw de prinsessennaad aansluit."
+    }
+  }
+}

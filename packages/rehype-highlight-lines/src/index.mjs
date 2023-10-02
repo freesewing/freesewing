@@ -133,7 +133,7 @@ export default (userOptions = {}) => {
           ]
         }
         // On the first highlighted line, trim the previous linebreak (not for param lines)
-        if (isOpen === 1 && node?.type === 'text' && !node.isParamLine)
+        if (isOpen === 1 && node.type === 'text' && !node.isParamLine)
           node.value = node.value.replace('\n', '')
         children[i] = { ...node }
         isOpen++

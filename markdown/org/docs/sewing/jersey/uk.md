@@ -1,11 +1,11 @@
 ---
-title: Jersey
+title: Джерсі
 ---
 
-![A piece of grey jersey](knit-fabric.jpg)
+![Шматок сірого трикотажу](knit-fabric.jpg)
 
-Jersey is a type of knit fabric. Jersey has a flat and a piled side, and is often used for T-shirts.
+Джерсі - це різновид трикотажного полотна. Джерсі має пласку і ворсисту сторону, і часто використовується для виготовлення футболок.
 
-Jersey can also be double-knitted (sometimes called interlock jersey). This produces a thicker fabric with the flat sides on the outside and the piled sides locked in the middle.
+Трикотаж також може бути подвійної в'язки (іноді його називають інтерлок). В результаті виходить більш товста тканина з пласкими сторонами назовні і ворсистими сторонами, що замикаються в середині.
 
-Jersey has good drape which makes it a popular choice for tops and dresses.
+Джерсі має гарну драпіровку, що робить його популярним вибором для топів і суконь.

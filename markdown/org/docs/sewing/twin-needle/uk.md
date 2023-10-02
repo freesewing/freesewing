@@ -1,13 +1,13 @@
 ---
-title: Twin needle
+title: Подвійна голка
 ---
 
-![A twin needle from Schmetz](twin-needle.jpg)
+![Голка-близнюк від Schmetz](twin-needle.jpg)
 
-![A twin needle stitch is flexible because of the zig-zag at the back.](twin-needle.gif)
+![Двоголковий стібок є гнучким завдяки зигзагоподібній строчці ззаду.](twin-needle.gif)
 
-A twin needle is useful for when you need to sew stretchable topstitching (like when hemming a knit). You can also use it for a decorative effect.
+Подвійна голка корисна, коли вам потрібно прошити еластичну верхню строчку (наприклад, при підшиванні трикотажу). Ви також можете використовувати його для декоративного ефекту.
 
-While a coverlock machine is purpose-built to produce a stretchable topstitch, not everybody has such a machine. A twin needle uses two upper threads and a single under thread. This causes a zig-zag effect on the back, making the stitch stretchable. Meanwhile, you get two parallel lines of stitching at the front.
+Хоча оверлочна машина спеціально призначена для виконання розтягуваного верхнього стібка, не всі мають таку машину. Подвійна голка використовує дві верхні нитки і одну нижню. Це спричиняє зигзагоподібний ефект на вивороті, роблячи стібок еластичним. Тим часом ви отримуєте дві паралельні лінії строчки спереду.
 
-> Animated GIF by [Ashley](http://www.makeit-loveit.com/2011/05/sewing-tips-basic-stitches-plus-double.html)
+> Анімований GIF від [Ешлі](http://www.makeit-loveit.com/2011/05/sewing-tips-basic-stitches-plus-double.html)

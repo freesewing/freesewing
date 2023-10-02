@@ -4,7 +4,9 @@ import { paths as apikeyPaths } from './apikeys.mjs'
 //import { paths as confirmationPaths, schemas as confirmationSchemas } from './confirmations.mjs'
 import { paths as patternPaths } from './patterns.mjs'
 import { paths as setPaths } from './sets.mjs'
+import { paths as curatedSetPaths } from './curated-sets.mjs'
 import { paths as userPaths } from './users.mjs'
+import { paths as flowPaths } from './flows.mjs'
 
 const description = `
 ## What am I looking at?  🤔
@@ -50,6 +52,8 @@ export const openapi = {
     ...apikeyPaths,
     ...patternPaths,
     ...setPaths,
+    ...curatedSetPaths,
     ...userPaths,
+    ...flowPaths,
   },
 }

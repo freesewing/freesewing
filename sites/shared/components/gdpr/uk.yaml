@@ -1,0 +1,38 @@
+clickHere: Натисніть тут, щоб дати свою згоду
+createAccount: Створити обліковий запис
+compliant: "FreeSewing поважає вашу конфіденційність і ваші права. Ми дотримуємося найсуворішого закону про конфіденційність і безпеку в світі: Загального регламенту про захист даних (GDPR) Європейського Союзу (ЄС)."
+consent: Згода
+consentForAccountData: Consent for account data
+consentGiven: Згода отримана
+consentNotGiven: Згода не отримана
+consentWhyAnswer: Відповідно до GDPR, обробка ваших персональних даних вимагає детальної згоди - іншими словами, нам потрібен ваш дозвіл на різні способи, якими ми обробляємо ваші дані.
+createMyAccount: Створити обліковий запис
+furtherReading: Подальше вивчення
+hideDetails: Приховати подробиці
+noConsentNoAccount: This consent is required for a FreeSewing account.
+noConsentNoAccountCreation: Without this consent, we cannot create a FreeSewing account.
+noIDoNot: 'Ні, не даю'
+openDataInfo: Ці дані використовуються для вивчення і розуміння людського тіла в усіх його формах. Це дозволяє нам покращити наші викрійки та створювати більш підходящий до тіла одяг. Незважаючи на те, що ці дані є анонімними, Ви маєте право не давати згоду на їх обробку.
+openDataQuestion: Поділитися замірами анонімно як відкритими даними
+privacyMatters: Питання конфіденційності
+privacyNotice: Повідомлення про конфіденційність FreeSewing
+processing: Обробляється
+accountQuestion: Do you give your consent to process your account data?
+accountShareAnswer: '<b>Ні</b>, ніколи.'
+accountTimingAnswer: '<b>12 months</b> after the last time your connected to our backend, or until you <b>remove</b> your account or <b>revoke</b> this consent.'
+accountWarning: Відкликання згоди видалить усі Ваші данні. Це має той же ефект, що і видалення облікового запису.
+accountWhatAnswerOptional: 'Optional: A <b>picture</b>, <b>bio</b>, or <b>GitHub username</b>'
+accountWhatAnswer: 'Your <b>email address</b>, <b>username</b>, and <b>password</b>, and any <b>body measurements</b> you add to your account.'
+accountWhatQuestion: What is account data?
+accountWhyAnswer: 'To <b>authenticate</b> you, <b>contact</b> you when needed, and generate <b>made-to-measure</b> sewing patterns.'
+readMore: Для отримання додаткової інформації, будь ласка, прочитайте наші умови конфіденційності.
+readRights: Для отримання додаткової інформації, будь ласка, прочитайте про Ваші права.
+revokeConsent: Відкликати згоду
+shareQuestion: Чи передаємо ми її іншим?
+showDetails: Показати подробиці
+timingQuestion: Скільки ми її зберігаємо?
+whatYouNeedToKnow: Що вам потрібно знати
+whyQuestion: Чому нам це потрібно?
+yesIDoObject: 'Ні, я проти'
+yesIDo: 'Так, я даю згоду'
+openData: 'Примітка: FreeSewing публікує анонімні заміри тіла як відкриті дані для наукових досліджень. Ви маєте право відмовитися від цього'

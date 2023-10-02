@@ -4,4 +4,4 @@ title: Schulter zu Schulter
 
 Das **Schulter zu Schulter**-Maß verläuft von der Schulterspitze auf der einen Seite den Rücken entlang bis zur Spitze der anderen Schulter.
 
-To measure your **shoulder to shoulder** find the tip of your shoulder, the tip or corner of the protruding bone that is located where the top of the shoulder meets the side of the arm. It is also where the top of the shoulder seam sits and the sleeve begins on a well-fitting dress shirt. Then, measure from there across your back to the same point at the other side.
+Um deine **Schulter zu Schulter** zu messen, suche die Spitze deiner Schulter, die Spitze oder Ecke des hervorstehenden Knochens, der sich dort befindet, wo die Oberseite der Schulter auf die Seite des Arms trifft. Bei einem gut sitzenden Hemd ist das auch die Stelle, an der die Schulternaht endet und der Ärmel beginnt . Messe dann von dort aus über den Rücken bis zum gleichen Punkt auf der anderen Seite.

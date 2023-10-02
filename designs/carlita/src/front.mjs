@@ -3,7 +3,6 @@ import { front as carltonFront } from '@freesewing/carlton'
 import { hidePresets } from '@freesewing/core'
 
 function draftCarlitaFront({
-  paperless,
   sa,
   snippets,
   Snippet,
@@ -262,242 +261,300 @@ function draftCarlitaFront({
     .line(points.flbHem)
   paths.seam = paths.saBase.clone().line(points.psHem).close().attr('class', 'fabric')
 
-  paths.rollLine = new Path()
-    .move(points.rollLineStart)
-    .line(points.rollLineEnd)
-    .attr('class', 'lashed')
-
-  paths.flb = new Path().move(points.flbHem).line(points.flbTop).attr('class', 'lining lashed')
-
-  paths.pocket = new Path()
-    .move(
-      utils.beamsIntersect(
-        points.pocketTopLeft,
-        points.pocketTopRight,
-        points.bustPoint,
-        points.psHem
-      )
-    )
-    .line(points.pocketTopLeft)
-    .attr('class', 'fabric help')
-  if (options.pocketRadius > 0) {
-    paths.pocket = paths.pocket
-      .line(points.pocketRoundLeftStart)
-      .curve(points.pocketRoundLeftCp1, points.pocketRoundLeftCp2, points.pocketRoundLeftEnd)
-  } else {
-    paths.pocket = paths.pocket
-      .line(points.pocketBottomLeft)
-      .line(
-        utils.beamsIntersect(
-          points.pocketBottomLeft,
-          points.pocketBottomRight,
-          points.bustPoint,
-          points.psHem
-        )
-      )
+  if (sa) {
+    const hemBase = new Path().move(points.flbHem).line(points.psHem)
+    paths.sa = paths.saBase
+      .offset(sa)
+      .join(hemBase.offset(3 * sa))
+      .line(points.psHem.shift(-90, 3 * sa).shift(0, sa))
+      .close()
+      .attr('class', 'fabric sa')
   }
-
-  paths.pocketFlap = new Path()
-    .move(
-      utils.beamsIntersect(
-        points.pocketFlapTopLeft,
-        points.pocketFlapTopRight,
-        points.bustPoint,
-        points.psHem
-      )
-    )
-    .line(points.pocketFlapTopLeft)
-    .attr('class', 'fabric help')
-  if (options.pocketFlapRadius > 0) {
-    paths.pocketFlap = paths.pocketFlap
-      .line(points.pocketFlapRoundLeftStart)
-      .curve(
-        points.pocketFlapRoundLeftCp1,
-        points.pocketFlapRoundLeftCp2,
-        points.pocketFlapRoundLeftEnd
-      )
-  } else {
-    paths.pocketFlap = paths.pocketFlap
-      .line(points.pocketFlapBottomLeft)
-      .line(
-        utils.beamsIntersect(
-          points.pocketFlapBottomLeft,
-          points.pocketFlapBottomRight,
-          points.bustPoint,
-          points.psHem
-        )
-      )
-  }
-
-  paths.chestPocket = new Path()
-    .move(points.chestPocketTopLeft)
-    .line(points.chestPocketBottomLeft)
-    .line(points.chestPocketBottomRight)
-    .line(points.chestPocketTopRight)
-    .line(points.chestPocketTopLeft)
-    .close()
-    .attr('class', 'fabric help')
-
-  paths.innerPocket = new Path()
-    .move(points.innerPocketTopLeft)
-    .line(points.innerPocketBottomLeft)
-    .line(points.innerPocketBottomRight)
-    .line(points.innerPocketTopRight)
-    .line(points.innerPocketTopLeft)
-    .close()
-    .attr('class', 'fabric help')
-
-  store.cutlist.addCut()
-  store.cutlist.addCut({ material: 'lining' })
 
   if (complete) {
-    snippets.button1Left = new Snippet('button', points.button1Left).attr('data-scale', 2)
-    snippets.button1Right = new Snippet('button', points.button1Right).attr('data-scale', 2)
-    snippets.button2Left = new Snippet('button', points.button2Left).attr('data-scale', 2)
-    snippets.button2Right = new Snippet('button', points.button2Right).attr('data-scale', 2)
-    snippets.button3Left = new Snippet('button', points.button3Left).attr('data-scale', 2)
-    snippets.button3Right = new Snippet('button', points.button3Right).attr('data-scale', 2)
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['cfNeck', 'rollLineStart', 'bustPoint', 'chestPocketTopLeft', 'chestPocketBottomLeft'],
+    paths.rollLine = new Path()
+      .move(points.rollLineStart)
+      .line(points.rollLineEnd)
+      .addClass('fabric help')
+    paths.flb = new Path().move(points.flbHem).line(points.flbTop).addClass('note help')
+    macro('banner', {
+      id: 'flbFacing',
+      path: paths.flb,
+      text: 'carlton:flbFacingSide',
+      classes: 'text-sm fill-fabric center',
+      repeat: 66,
     })
-    points.logo = points.cfSeat.shiftFractionTowards(points.cfHem, 0.5)
-    snippets.logo = new Snippet('logo', points.logo)
-    macro('title', { at: points.title, nr: '1a', title: 'front' })
-    macro('grainline', { from: points.cfHem, to: points.cfNeck })
+    macro('banner', {
+      id: 'flbLining',
+      path: paths.flb,
+      text: 'carlton:flbLiningSide',
+      dy: 7,
+      classes: 'text-sm fill-lining center',
+      repeat: 66,
+    })
 
-    if (sa) {
-      let hemBase = new Path().move(points.flbHem).line(points.psHem)
-      paths.sa = paths.saBase
-        .offset(sa)
-        .join(hemBase.offset(3 * sa))
-        .line(points.psHem.shift(-90, 3 * sa).shift(0, sa))
-        .close()
-        .attr('class', 'fabric sa')
+    paths.pocket = new Path()
+      .move(
+        utils.beamsIntersect(
+          points.pocketTopLeft,
+          points.pocketTopRight,
+          points.bustPoint,
+          points.psHem
+        )
+      )
+      .line(points.pocketTopLeft)
+      .attr('class', 'fabric help')
+    if (options.pocketRadius > 0) {
+      paths.pocket = paths.pocket
+        .line(points.pocketRoundLeftStart)
+        .curve(points.pocketRoundLeftCp1, points.pocketRoundLeftCp2, points.pocketRoundLeftEnd)
+    } else {
+      paths.pocket = paths.pocket
+        .line(points.pocketBottomLeft)
+        .line(
+          utils.beamsIntersect(
+            points.pocketBottomLeft,
+            points.pocketBottomRight,
+            points.bustPoint,
+            points.psHem
+          )
+        )
     }
-    if (paperless) {
-      macro('ld', {
-        from: points.hemEdge,
-        to: points.flbHem,
-        d: 15,
-      })
-      macro('hd', {
-        from: points.hemEdge,
-        to: points.psHem,
-        y: points.psHem.y + 15 + 3 * sa,
-      })
-      macro('hd', {
-        from: points.rollLineStart,
-        to: points.pocketTopLeft,
-        y: points.pocketFlapBottomLeft.y,
-      })
-      macro('vd', {
-        from: points.pocketFlapTopLeft,
-        to: points.button3Right,
-        x: points.bustPoint.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.pocketTopLeft,
-        to: points.button3Right,
-        x: points.bustPoint.x + sa + 30,
-      })
-      macro('vd', {
-        from: points.chestPocketBottomLeft,
-        to: points.button3Right,
-        x: points.bustPoint.x - 15,
-      })
-      macro('hd', {
-        from: points.rollLineStart,
-        to: points.chestPocketBottomLeft,
-        y: points.chestPocketBottomLeft.y + 15,
-      })
-      macro('hd', {
-        from: points.rollLineStart,
-        to: points.button3Left,
-        y: points.button3Left.y + 15,
-      })
-      macro('hd', {
-        from: points.button3Left,
-        to: points.button3Right,
-        y: points.button3Left.y + 15,
-      })
-      macro('vd', {
-        from: points.psHem,
-        to: points.bustPoint,
-        x: points.bustPoint.x + sa + 45,
-      })
-      macro('vd', {
-        from: points.psHem,
-        to: points.armholePitch,
-        x: points.armholePitch.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.armholePitch,
-        to: points.s3ArmholeSplit,
-        x: points.s3ArmholeSplit.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.armholePitch,
-        to: points.s3CollarSplit,
-        x: points.s3ArmholeSplit.x + sa + 30,
-      })
-      macro('vd', {
-        from: points.rollLineStart,
-        to: points.collarTip,
-        x: points.rollLineStart.x - sa - 15,
-      })
-      macro('vd', {
-        from: points.button2Left,
-        to: points.rollLineStart,
-        x: points.rollLineStart.x - sa - 15,
-      })
-      macro('vd', {
-        from: points.button1Left,
-        to: points.button2Left,
-        x: points.rollLineStart.x - sa - 15,
-      })
-      macro('vd', {
-        from: points.hemEdge,
-        to: points.collarTip,
-        x: points.rollLineStart.x - sa - 30,
-      })
-      macro('hd', {
-        from: points.lapelStraightEnd,
-        to: points.collarTip,
-        y: points.collarTip.y - sa - 15,
-      })
-      macro('hd', {
-        from: points.lapelStraightEnd,
-        to: points.cfNeck,
-        y: points.collarTip.y - sa - 30,
-      })
-      macro('hd', {
-        from: points.lapelStraightEnd,
-        to: points.rollLineEnd,
-        y: points.collarTip.y - sa - 45,
-      })
-      macro('hd', {
-        from: points.lapelStraightEnd,
-        to: points.s3CollarSplit,
-        y: points.s3CollarSplit.y - sa - 15,
-      })
-      macro('hd', {
-        from: points.lapelStraightEnd,
-        to: points.armholePitch,
-        y: points.s3ArmholeSplit.y - sa - 30,
-      })
-      macro('hd', {
-        from: points.lapelStraightEnd,
-        to: points.s3ArmholeSplit,
-        y: points.s3CollarSplit.y - sa - 45,
-      })
-      macro('hd', {
-        from: points.lapelStraightEnd,
-        to: points.s3ArmholeSplit,
-        y: points.s3CollarSplit.y - sa - 60,
-      })
+
+    paths.pocketFlap = new Path()
+      .move(
+        utils.beamsIntersect(
+          points.pocketFlapTopLeft,
+          points.pocketFlapTopRight,
+          points.bustPoint,
+          points.psHem
+        )
+      )
+      .line(points.pocketFlapTopLeft)
+      .attr('class', 'fabric help')
+    if (options.pocketFlapRadius > 0) {
+      paths.pocketFlap = paths.pocketFlap
+        .line(points.pocketFlapRoundLeftStart)
+        .curve(
+          points.pocketFlapRoundLeftCp1,
+          points.pocketFlapRoundLeftCp2,
+          points.pocketFlapRoundLeftEnd
+        )
+    } else {
+      paths.pocketFlap = paths.pocketFlap
+        .line(points.pocketFlapBottomLeft)
+        .line(
+          utils.beamsIntersect(
+            points.pocketFlapBottomLeft,
+            points.pocketFlapBottomRight,
+            points.bustPoint,
+            points.psHem
+          )
+        )
     }
+
+    paths.chestPocket = new Path()
+      .move(points.chestPocketTopLeft)
+      .line(points.chestPocketBottomLeft)
+      .line(points.chestPocketBottomRight)
+      .line(points.chestPocketTopRight)
+      .line(points.chestPocketTopLeft)
+      .close()
+      .attr('class', 'fabric help')
+
+    paths.innerPocket = new Path()
+      .move(points.innerPocketTopLeft)
+      .line(points.innerPocketBottomLeft)
+      .line(points.innerPocketBottomRight)
+      .line(points.innerPocketTopRight)
+      .line(points.innerPocketTopLeft)
+      .close()
+      .attr('class', 'fabric help')
   }
+
+  /*
+   * Annotations
+   */
+
+  // Cut list
+  store.cutlist.setCut([
+    { cut: 2, from: 'fabric' },
+    { cut: 2, from: 'lining' },
+  ])
+
+  // Buttons
+  snippets.button1Left = new Snippet('button', points.button1Left).attr('data-scale', 2)
+  snippets.button1Right = new Snippet('button', points.button1Right).attr('data-scale', 2)
+  snippets.button2Left = new Snippet('button', points.button2Left).attr('data-scale', 2)
+  snippets.button2Right = new Snippet('button', points.button2Right).attr('data-scale', 2)
+  snippets.button3Left = new Snippet('button', points.button3Left).attr('data-scale', 2)
+  snippets.button3Right = new Snippet('button', points.button3Right).attr('data-scale', 2)
+
+  // Notches
+  points.sideSeamWaist = new Point(points.psHem.x, points.cfWaist.y)
+  points.sideSeamHips = new Point(points.psHem.x, points.cfHips.y)
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: [
+      'cfNeck',
+      'rollLineStart',
+      'bustPoint',
+      'chestPocketTopLeft',
+      'chestPocketBottomLeft',
+      'sideSeamWaist',
+      'sideSeamHips',
+    ],
+  })
+
+  // Logo
+  points.logo = points.cfSeat.shiftFractionTowards(points.cfHem, 0.5)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  // Title
+  macro('title', { at: points.title, nr: '1a', title: 'front' })
+
+  // Grainline
+  macro('grainline', { from: points.cfHem, to: points.cfNeck })
+
+  // Dimensions
+  macro('ld', {
+    id: 'wHemClosureToFlb',
+    from: points.hemEdge,
+    to: points.flbHem,
+    d: 15,
+  })
+  macro('hd', {
+    id: 'wHem',
+    from: points.hemEdge,
+    to: points.psHem,
+    y: points.psHem.y + 15 + 3 * sa,
+  })
+  macro('hd', {
+    id: 'wClosureToPocketLeft',
+    from: points.rollLineStart,
+    to: points.pocketTopLeft,
+    y: points.pocketFlapBottomLeft.y,
+  })
+  macro('vd', {
+    id: 'hTopButtonToPocketFlapTop',
+    from: points.pocketFlapTopLeft,
+    to: points.button3Right,
+    x: points.bustPoint.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hTopButtonToPocketTop',
+    from: points.pocketTopLeft,
+    to: points.button3Right,
+    x: points.bustPoint.x + sa + 30,
+  })
+  macro('vd', {
+    id: 'hTopButtonToChestPocketBottom',
+    from: points.chestPocketBottomLeft,
+    to: points.button3Right,
+    x: points.bustPoint.x - 15,
+  })
+  macro('hd', {
+    id: 'wClosureToChestPocket',
+    from: points.rollLineStart,
+    to: points.chestPocketBottomLeft,
+    y: points.chestPocketBottomLeft.y + 15,
+  })
+  macro('hd', {
+    id: 'wClosureToFirstButton',
+    from: points.rollLineStart,
+    to: points.button3Left,
+    y: points.button3Left.y + 15,
+  })
+  macro('hd', {
+    id: 'wBetweenButtons',
+    from: points.button3Left,
+    to: points.button3Right,
+    y: points.button3Left.y + 15,
+  })
+  macro('vd', {
+    id: 'hHemToStartBustCurve',
+    from: points.psHem,
+    to: points.bustPoint,
+    x: points.bustPoint.x + sa + 45,
+  })
+  macro('vd', {
+    id: 'hHemTOPrinceSeamEnd',
+    from: points.psHem,
+    to: points.armholePitch,
+    x: points.armholePitch.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hPrincessSeamEndToShoulder',
+    from: points.armholePitch,
+    to: points.s3ArmholeSplit,
+    x: points.s3ArmholeSplit.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hPrincessSeamEndToHps',
+    from: points.armholePitch,
+    to: points.s3CollarSplit,
+    x: points.s3ArmholeSplit.x + sa + 30,
+  })
+  macro('vd', {
+    id: 'hTopButtonToTopClosure',
+    from: points.rollLineStart,
+    to: points.collarTip,
+    x: points.rollLineStart.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'HTopButtonToMiddleButton',
+    from: points.button2Left,
+    to: points.rollLineStart,
+    x: points.rollLineStart.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hBottomButtonToMiddleButton',
+    from: points.button1Left,
+    to: points.button2Left,
+    x: points.rollLineStart.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hHemToTopClosure',
+    from: points.hemEdge,
+    to: points.collarTip,
+    x: points.rollLineStart.x - sa - 30,
+  })
+  macro('hd', {
+    id: 'wClosureBend',
+    from: points.lapelStraightEnd,
+    to: points.collarTip,
+    y: points.collarTip.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wClosureToCf',
+    from: points.lapelStraightEnd,
+    to: points.cfNeck,
+    y: points.collarTip.y - sa - 30,
+  })
+  macro('hd', {
+    id: 'wClosureToTopRollLine',
+    from: points.lapelStraightEnd,
+    to: points.rollLineEnd,
+    y: points.collarTip.y - sa - 45,
+  })
+  macro('hd', {
+    id: 'wClosureToHps',
+    from: points.lapelStraightEnd,
+    to: points.s3CollarSplit,
+    y: points.s3CollarSplit.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wClosureToTopPrincessSeam',
+    from: points.lapelStraightEnd,
+    to: points.armholePitch,
+    y: points.armholePitch.y - 15,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.lapelStraightEnd,
+    to: points.s3ArmholeSplit,
+    y: points.s3CollarSplit.y - sa - 30,
+  })
 
   return part
 }
@@ -511,6 +568,8 @@ export const front = {
   options: {
     draftForHighBust: true,
     contour: { pct: 50, min: 25, max: 75, menu: 'advanced' },
+    // Hide chest pocket angle, it is not used in Carlita
+    chestPocketAngle: 0,
   },
   draft: draftCarlitaFront,
 }

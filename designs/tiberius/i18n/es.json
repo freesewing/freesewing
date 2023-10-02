@@ -1,0 +1,50 @@
+{
+  "t": "Tiberius, túnica",
+  "d": "Tiberius es una túnica romana histórica.",
+  "p": {
+    "tunica": "Tunica"
+  },
+  "s": {},
+  "o": {
+    "headRatio": {
+      "t": "Head ratio",
+      "d": "Controls the size of the head opening"
+    },
+    "armholeDrop": {
+      "t": "Caída de la sisa",
+      "d": "Controla la profundidad del orificio"
+    },
+    "lengthBonus": {
+      "t": "Bonus de longitud",
+      "d": "Allows variation of the length of the garment"
+    },
+    "widthBonus": {
+      "t": "Width bonus",
+      "d": "Allows variation of the width of the garment"
+    },
+    "clavi": {
+      "t": "Clavi",
+      "d": "Whether or not to include guides for clavi"
+    },
+    "clavusLocation": {
+      "t": "Clavus location",
+      "d": "Controls the location of the clavi"
+    },
+    "clavusWidth": {
+      "t": "Clavus width",
+      "d": "Controls the width of the clavi"
+    },
+    "length": {
+      "t": "Longitud",
+      "d": "Controls the length of the garment"
+    },
+    "width": {
+      "t": "Anchura",
+      "d": "Controls the width of the garment"
+    },
+    "forceWidth": {
+      "t": "Force width",
+      "d": "Apply width settings regardless of constraints"
+    }
+  }
+}

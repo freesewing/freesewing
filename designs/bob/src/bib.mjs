@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 export const bib = {
   name: 'bob.bib',
   measurements: [],
@@ -10,28 +8,32 @@ export const bib = {
     lengthRatio: { pct: 75, min: 55, max: 85, menu: 'fit' },
     headSize: { pct: 100, min: 10, max: 200, snap: 5, menu: 'size' },
   },
-  plugins: [pluginBundle],
   draft: ({
     Point,
     points,
     Path,
     paths,
-    optionalMeasurements,
+    utils,
+    measurements,
     options,
     macro,
-    log,
     complete,
     snippets,
     Snippet,
-    paperless,
+    store,
+    units,
     part,
   }) => {
-    // Head size
-    const head = (optionalMeasurements?.head || 360) * options.headSize
+    /*
+     * Head size
+     */
+    const head = (`head` in measurements ? measurements.head : 360) * options.headSize
 
-    // Construct the neck opening
+    /*
+     * Construct the neck opening
+     */
+    const target = (head * options.neckRatio) / 4
     let tweak = 1
-    let target = (head * options.neckRatio) / 4
     let delta
     do {
       points.right = new Point((tweak * head) / 10, 0)
@@ -60,7 +62,9 @@ export const bib = {
     points.topCp1 = points.bottomCp2.flipY()
     points.topCp2 = points.bottomCp1.flipY()
 
-    // Construct the outline
+    /*
+     * Construct the outline
+     */
     let width = head * options.widthRatio
     let length = head * options.lengthRatio
 
@@ -78,27 +82,45 @@ export const bib = {
     points.edgeTopLeftCp = points.edgeTop.shiftFractionTowards(points.topLeft, 0.5)
     points.edgeTopRightCp = points.edgeTopLeftCp.flipX()
 
-    // Round the end of the straps
+    /*
+     * Round the end of the straps
+     */
     let strap = points.edgeTop.dy(points.top)
 
     points.tipRight = points.edgeTop.translate(strap / 2, strap / 2)
     points.tipRightTop = new Point(points.tipRight.x, points.edgeTop.y)
     points.tipRightBottom = new Point(points.tipRight.x, points.top.y)
 
-    macro('round', {
-      from: points.edgeTop,
-      to: points.tipRight,
-      via: points.tipRightTop,
-      prefix: 'tipRightTop',
-    })
-    macro('round', {
-      from: points.tipRight,
-      to: points.top,
-      via: points.tipRightBottom,
-      prefix: 'tipRightBottom',
-    })
+    /*
+     * Macros will return the auto-generated IDs
+     */
+    const ids1 = {
+      tipRightTop: macro('round', {
+        id: 'tipRightTop',
+        from: points.edgeTop,
+        to: points.tipRight,
+        via: points.tipRightTop,
+      }),
+      tipRightBottom: macro('round', {
+        id: 'tipRightBottom',
+        from: points.tipRight,
+        to: points.top,
+        via: points.tipRightBottom,
+      }),
+    }
 
-    // Rotate straps so they don't overlap
+    /*
+     * Create points from them with easy names
+     */
+    for (const side in ids1) {
+      for (const id of ['start', 'cp1', 'cp2', 'end']) {
+        points[`${side}${utils.capitalize(id)}`] = points[ids1[side].points[id]].copy()
+      }
+    }
+
+    /*
+     * Rotate straps so they don't overlap
+     */
     let rotateThese = [
       'edgeTopLeftCp',
       'edgeTop',
@@ -121,10 +143,14 @@ export const bib = {
       for (let p of rotateThese) points[p] = points[p].rotate(1, points.edgeLeft)
     }
 
-    // Add points to anchor snaps on
+    /*
+     * Add points to anchor snaps on
+     */
     points.snapLeft = points.top.shiftFractionTowards(points.edgeTop, 0.5)
 
-    // Mirror points to the other side
+    /*
+     * Mirror points to the other side
+     */
     points.edgeTopRightCp = points.edgeTopLeftCp.flipX()
     points.topCp1 = points.topCp2.flipX()
     points.tipLeftTopStart = points.tipRightTopStart.flipX()
@@ -137,24 +163,40 @@ export const bib = {
     points.tipLeftBottomEnd = points.tipRightBottomEnd.flipX()
     points.snapRight = points.snapLeft.flipX()
 
-    // Round the bottom of the bib
-    // Radius is fixed, but you could use an option for it)
-    macro('round', {
-      from: points.topLeft,
-      to: points.bottomRight,
-      via: points.bottomLeft,
-      radius: points.bottomRight.x / 4,
-      prefix: 'bottomLeft',
-    })
-    macro('round', {
-      from: points.bottomLeft,
-      to: points.topRight,
-      via: points.bottomRight,
-      radius: points.bottomRight.x / 4,
-      prefix: 'bottomRight',
-    })
+    /*
+     * Round the bottom of the bib
+     * Radius is fixed, but you could use an option for it)
+     *
+     * Macros will return the auto-generated IDs
+     */
+    const ids2 = {
+      bottomLeft: macro('round', {
+        id: 'bottomLeft',
+        from: points.topLeft,
+        to: points.bottomRight,
+        via: points.bottomLeft,
+        radius: points.bottomRight.x / 4,
+      }),
+      bottomRight: macro('round', {
+        id: 'bottomRight',
+        from: points.bottomLeft,
+        to: points.topRight,
+        via: points.bottomRight,
+        radius: points.bottomRight.x / 4,
+      }),
+    }
+    /*
+     * Create points from them with easy names
+     */
+    for (const side in ids2) {
+      for (const id of ['start', 'cp1', 'cp2', 'end']) {
+        points[`${side}${utils.capitalize(id)}`] = points[ids2[side].points[id]].copy()
+      }
+    }
 
-    // Construct the path
+    /*
+     * Construct the path
+     */
     paths.seam = new Path()
       .move(points.edgeLeft)
       .line(points.bottomLeftStart)
@@ -175,74 +217,106 @@ export const bib = {
       .close()
       .attr('class', 'fabric')
 
-    log.info(['biasTapeLength', { mm: paths.seam.length() }])
-    log.info(['fabricHeight', { mm: points.tipRightTopStart.dy(points.bottomLeftEnd) }])
-    log.info(['fabricWidth', { mm: points.bottomLeftStart.dx(points.bottomRightEnd) }])
+    /*
+     *
+     *  Annotations
+     *
+     */
 
-    // Complete?
-    if (complete) {
-      // Add the snaps
-      snippets.snapStud = new Snippet('snap-stud', points.snapLeft)
-      snippets.snapSocket = new Snippet('snap-socket', points.snapRight).attr('opacity', 0.5)
+    /*
+     * Let the user know about the bias tape and fabric requirements
+     */
+    store.flag.note({
+      msg: 'bob:biasTapeLength',
+      replace: {
+        l: units(paths.seam.length()),
+      },
+    })
 
-      // Add the bias tape
+    /*
+     * Cut list
+     */
+    store.cutlist.addCut({ cut: 1, from: 'fabric' })
+
+    /*
+     * Add the snaps
+     */
+    snippets.snapStud = new Snippet('snap-stud', points.snapLeft)
+    snippets.snapSocket = new Snippet('snap-socket', points.snapRight).attr('opacity', 0.5)
+
+    /*
+     * Add the bias tape
+     */
+    if (complete)
       paths.bias = paths.seam
         .offset(-5)
-        .attr('class', 'various dashed')
-        .attr('data-text', 'finishWithBiasTape')
-        .attr('data-text-class', 'center fill-various')
+        .attr('class', 'note dashed')
+        .attr('data-text', 'bob:finishWithBiasTape')
+        .attr('data-text-class', 'center fill-note')
 
-      // Add the title
-      points.title = points.bottom.shift(-90, 45)
-      macro('title', {
-        at: points.title,
-        nr: 1,
-        title: 'bib',
-      })
+    /*
+     * Add the title
+     */
+    points.title = points.bottom.shift(-90, 45)
+    macro('title', {
+      at: points.title,
+      nr: 1,
+      title: 'bib',
+      align: 'center',
+      scale: 0.8,
+    })
 
-      // Add the scalebox
-      points.scalebox = points.title.shift(-90, 55)
-      macro('scalebox', { at: points.scalebox })
+    /*
+     * Add the scalebox
+     */
+    points.scalebox = points.title.shift(-90, 65)
+    macro('scalebox', { at: points.scalebox })
 
-      // Add the logo
-      points.logo = new Point(0, 0)
-      snippets.logo = new Snippet('logo', points.logo)
+    /*
+     * Add the logo
+     */
+    points.logo = new Point(0, 0)
+    snippets.logo = new Snippet('logo', points.logo)
 
-      // Paperless?
-      if (paperless) {
-        // Add dimensions
-        macro('hd', {
-          from: points.bottomLeftStart,
-          to: points.bottomRightEnd,
-          y: points.bottomLeft.y + 15,
-        })
-        macro('vd', {
-          from: points.bottomRightStart,
-          to: points.bottom,
-          x: points.bottomRight.x + 15,
-        })
-        macro('vd', {
-          from: points.bottomRightStart,
-          to: points.right,
-          x: points.bottomRight.x + 30,
-        })
-        macro('vd', {
-          from: points.bottomRightStart,
-          to: points.tipLeftTopStart,
-          x: points.bottomRight.x + 45,
-        })
-        macro('hd', {
-          from: points.left,
-          to: points.right,
-          y: points.left.y + 25,
-        })
-        macro('ld', {
-          from: points.tipLeftBottomEnd,
-          to: points.tipLeftTopStart,
-          d: -15,
-        })
-      }
-    }
+    /*
+     * Add dimensions
+     */
+    macro('hd', {
+      id: 'wFull',
+      from: points.bottomLeftStart,
+      to: points.bottomRightEnd,
+      y: points.bottomLeft.y + 15,
+    })
+    macro('vd', {
+      id: 'hBottomToOpeningBottom',
+      from: points.bottomRightStart,
+      to: points.bottom,
+      x: points.bottomRight.x + 15,
+    })
+    macro('vd', {
+      id: 'hBottomToOpeningCenter',
+      from: points.bottomRightStart,
+      to: points.right,
+      x: points.bottomRight.x + 30,
+    })
+    macro('vd', {
+      id: 'hTotal',
+      from: points.bottomRightStart,
+      to: points.tipLeftTopStart,
+      x: points.bottomRight.x + 45,
+    })
+    macro('hd', {
+      id: 'wOpening',
+      from: points.left,
+      to: points.right,
+      y: points.left.y + 25,
+    })
+    macro('ld', {
+      id: 'wStrap',
+      from: points.tipLeftBottomEnd,
+      to: points.tipLeftTopStart,
+      d: -15,
+    })
 
     return part
   },

@@ -1,0 +1,187 @@
+{
+  "t": "Simon, camisa",
+  "d": "Simon es un patrón de camisa altamente adaptable para personas sin pechos.",
+  "p": {
+    "back": "Atrás",
+    "buttonholePlacket": "Tapeta de ojal",
+    "buttonPlacket": "Tapeta de botones",
+    "collar": "Cuello",
+    "collarStand": "Soporte de collar",
+    "cuff": "Cuffnl",
+    "front": "Frente",
+    "frontLeft": "Delantero izquierdo",
+    "frontRight": "Frente derecho",
+    "sleevePlacketOverlap": "Top de manga tapeta",
+    "sleevePlacketUnderlap": "Parte inferior de la tapeta de la manga",
+    "sleeve": "Manga",
+    "yoke": "Yugo"
+  },
+  "s": {
+    "buttonholePlacket": "Tapeta de ojal",
+    "buttonPlacket": "Tapeta de botones",
+    "collarAndUndercollar": "Collar y Undercollar",
+    "collarStand": "Base del cuello",
+    "cutUndercollarSlightlySmaller": "Corte undercollar ligeramente más pequeño",
+    "frontLeft": "Delantero izquierdo",
+    "frontRight": "Delantero derecha",
+    "sideOfTheCollarStand": "Lado del soporte del collar",
+    "sleevePlacketOverlap": "Vista de la manga superior",
+    "sleevePlacketUnderlap": "Vista de la manga fondo",
+    "yoke": "Canesú",
+    "matchHere": "Coincidir tela a lo largo de esta línea"
+  },
+  "o": {
+    "backDarts": {
+      "t": "Pinzas traseras",
+      "d": "Incluir o no pinzas traseras"
+    },
+    "backDartShaping": {
+      "t": "Forma de las pinzas traseras",
+      "d": "La cantidad de forma que añaden las pinzas traseras"
+    },
+    "barrelCuffNarrowButton": {
+      "t": "Botón de ajuste del puño",
+      "d": "Incluír o no un botón extra para ajustar más los puños. Esta opción sólo es relevante para puños de barril."
+    },
+    "boxPleat": {
+      "t": "Pliegue en caja",
+      "d": "Si incluir un pliegue en caja en la parte trasera o no"
+    },
+    "boxPleatWidth": {
+      "t": "Anchura del pliegue en caja",
+      "d": "El ancho total del pliegue en caja"
+    },
+    "boxPleatFold": {
+      "t": "Doblado del pliegue en caja",
+      "d": "La cantidad por la que el piegue en caja se dobla hacia adentro"
+    },
+    "buttonPlacketStyle": {
+      "t": "Estilo de la vista de los botones",
+      "d": "Estilo de la visto de los botones"
+    },
+    "buttonPlacketWidth": {
+      "t": "Anchura de la vista de los botones",
+      "d": "Anchura de la vista de los botones"
+    },
+    "buttonFreeLength": {
+      "t": "Longitud sin botones",
+      "d": "Qué longitud se deja entre el último botón y el bajo."
+    },
+    "buttonholePlacketFoldWidth": {
+      "t": "Anchura del pliegue de la vista de los ojales",
+      "d": "Anchura del pliegue de la vista de los ojales."
+    },
+    "buttonholePlacketStyle": {
+      "t": "Estilo de la vista de los ojales",
+      "d": "Estilo de la vista de los ojales."
+    },
+    "buttonholePlacketWidth": {
+      "t": "Anchura de la vista de los ojales",
+      "d": "Ancho de la placa del agujero del botón."
+    },
+    "buttons": {
+      "t": "Número de botones",
+      "d": "Número de botones delanteros"
+    },
+    "collarAngle": {
+      "t": "Ángulo del pico del cuello",
+      "d": "El ángulo de los picos del cuello"
+    },
+    "collarBend": {
+      "t": "Inclinación del cuello",
+      "d": "La inclinación del cuello hacia atrás."
+    },
+    "collarFlare": {
+      "t": "Forma de los picos del cuello",
+      "d": "Cuánto más ancho es el cuello en los picos con respecto al centro."
+    },
+    "collarGap": {
+      "t": "Espaciado del cuello",
+      "d": "La separación entre los dos extremos del cuello"
+    },
+    "collarRoll": {
+      "t": "Vuelta del cuello",
+      "d": "La cantidad en la que el cuello es más alto que la base del cuello en el centro por detrás."
+    },
+    "collarStandBend": {
+      "t": "Doblado de la base del cuello",
+      "d": "La cantidad en la que el cuello superior es mayor que el inferior."
+    },
+    "collarStandCurve": {
+      "t": "Curvatura de la base del cuello",
+      "d": "La curvatura de la base del cuello."
+    },
+    "collarStandWidth": {
+      "t": "Anchura de la base del cuello",
+      "d": "Ancho del soporte de cuello."
+    },
+    "cuffButtonRows": {
+      "t": "Hileras de botones en los puños",
+      "d": "Trazar una o dos hileras de botones en los puños. Esta opción es relevante sólo para puños de barril."
+    },
+    "cuffDrape": {
+      "t": "Plisado del puño",
+      "d": "La cantidad en la que la manga es más ancha que el puño en el lugar donde se unen."
+    },
+    "cuffLength": {
+      "t": "Longitud del puño",
+      "d": "La longitud de los puños."
+    },
+    "cuffStyle": {
+      "t": "Estilo del puño",
+      "d": "El estilo de los puños."
+    },
+    "extraTopButton": {
+      "t": "Botón extra superior",
+      "d": "Incluír o no un botón extra en el cierre frontal."
+    },
+    "ffsa": {
+      "t": "Costura plana permitida",
+      "d": "La cantidad de permisos de costura en costuras taladas con flete como una proporción de la franquicia regular de costura"
+    },
+    "hemCurve": {
+      "t": "Curva del dobladillo",
+      "d": "La altura de la curva en un dobladillo redondeado."
+    },
+    "hemStyle": {
+      "t": "Estilo del dobladillo",
+      "d": "El estilo del dobladillo."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at the hips."
+    },
+    "roundBack": {
+      "t": "Retroceso",
+      "d": "Para encajar un redondo(er) hacia atrás, esto añade longitud al centro de atrás (en el yo) que se atenúa hacia los lados."
+    },
+    "seperateButtonholePlacket": {
+      "t": "Tapeta de ojal separada",
+      "d": "Construye una placa separada del botón."
+    },
+    "seperateButtonPlacket": {
+      "t": "Tapeta de botones separada",
+      "d": "Borra una placket de botones separada"
+    },
+    "sleevePlacketLength": {
+      "t": "Longitud de la vista de la manga",
+      "d": "La longitud de la vista de la manga."
+    },
+    "sleevePlacketWidth": {
+      "t": "Anchura de la vista de la manga",
+      "d": "La anchura de la vista de la manga."
+    },
+    "splitYoke": {
+      "t": "Canesú partido",
+      "d": "Si se traza el canesú normal o partido."
+    },
+    "waistEase": {
+      "t": "Holgura de cintura",
+      "d": "La cantidad de holgura en la cintura."
+    },
+    "yokeHeight": {
+      "t": "Altura del yugo",
+      "d": "Controla la altura del yugo"
+    }
+  }
+}

@@ -11,7 +11,7 @@ const measies = [
   'crossSeamBack',
 ]
 
-const pluginMeasurements = ({ points, Point, paths, Path, measurements, options, part }) => {
+const pluginMeasurements = ({ points, Point, measurements, options, part, macro, store }) => {
   if (['measurements', 'all'].indexOf(options.plugin) !== -1) {
     let y = 10
     for (const m of measies) {
@@ -19,8 +19,12 @@ const pluginMeasurements = ({ points, Point, paths, Path, measurements, options,
       y += 10
     }
 
-    // Prevent clipping of text
-    paths.box = new Path().move(new Point(0, -10)).line(new Point(130, 90)).attr('class', 'hidden')
+    macro('bannerbox', {
+      topLeft: new Point(5, 10),
+      bottomRight: new Point(55, 75),
+      text: 'plugin = measurements',
+      ...store.get('bannerbox.plugin'),
+    })
   }
 
   return part

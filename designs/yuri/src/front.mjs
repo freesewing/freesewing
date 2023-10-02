@@ -8,8 +8,6 @@ function yuriFront({
   Path,
   points,
   paths,
-  complete,
-  paperless,
   sa,
   options,
   measurements,
@@ -77,31 +75,37 @@ function yuriFront({
     .close()
     .attr('class', 'fabric')
 
-  // Complete?
-  if (complete) {
-    macro('grainline', {
-      from: points.s3CollarSplit,
-      to: new Point(points.s3CollarSplit.x, points.bottom.y),
-    })
-    snippets.buttonhole = new Snippet('buttonhole-start', points.button.shift(0, 25))
-      .attr('data-rotate', '90')
-      .attr('data-scale', '2.5')
-    snippets.button = new Snippet(
-      'button',
-      paths.buttonBase.shiftFractionAlong(0.146).shift(0, 30)
-    ).attr('data-scale', '3.3')
-
-    if (sa) {
-      paths.sa = paths.hemBase
-        .offset(3 * sa)
-        .join(paths.saBase.offset(sa))
-        .join(paths.buttonBase.offset(3 * sa))
-      paths.sa = paths.sa.line(paths.sa.start()).close().attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = paths.hemBase
+      .offset(3 * sa)
+      .join(paths.saBase.offset(sa))
+      .join(paths.buttonBase.offset(3 * sa))
+    paths.sa = paths.sa.line(paths.sa.start()).close().attr('class', 'fabric sa')
   }
 
-  // Paperless?
-  if (paperless) sharedDimensions(part, 'front')
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Grainline
+  macro('grainline', {
+    from: points.s3CollarSplit,
+    to: new Point(points.s3CollarSplit.x, points.bottom.y),
+  })
+
+  // Button(hole)
+  snippets.buttonhole = new Snippet('buttonhole-start', points.button.shift(0, 25))
+    .attr('data-rotate', '90')
+    .attr('data-scale', '2.5')
+  snippets.button = new Snippet(
+    'button',
+    paths.buttonBase.shiftFractionAlong(0.146).shift(0, 30)
+  ).attr('data-scale', '3.3')
+
+  // Dimensions
+  sharedDimensions(part, 'front')
 
   return part
 }
@@ -113,15 +117,15 @@ export const front = {
     options: {
       ...brianFront.options,
       // Overrides
-      collarEase: { pct: 20, min: 10, max: 30 },
-      cuffEase: { pct: 30, min: 20, max: 60 },
-      lengthBonus: { pct: 10, min: 5, max: 15 },
-      sleeveLengthBonus: { pct: 1, min: 0, max: 10 },
+      collarEase: { pct: 20, min: 10, max: 30, menu: 'fit' },
+      cuffEase: { pct: 30, min: 20, max: 60, menu: 'fit' },
+      lengthBonus: { pct: 10, min: 5, max: 15, menu: 'fit' },
+      sleeveLengthBonus: { pct: 1, min: 0, max: 10, menu: 'fit' },
     },
   },
   hide: hidePresets.HIDE_TREE,
   options: {
-    hipsEase: { pct: 0, min: 0, max: 10 },
+    hipsEase: { pct: 0, min: 0, max: 10, menu: 'fit' },
   },
   measurements: ['hips', 'hpsToBust'],
   draft: yuriFront,

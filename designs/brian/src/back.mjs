@@ -13,7 +13,6 @@ export const back = {
     Snippet,
     snippets,
     complete,
-    paperless,
     macro,
     options,
     utils,
@@ -126,59 +125,75 @@ export const back = {
     store.set('backArmholeLength', shared.armholeLength(points, Path))
     store.set('backArmholeToArmholePitch', shared.armholeToArmholePitch(points, Path))
 
-    // Complete pattern?
-    if (complete) {
-      macro('cutonfold', {
-        from: points.cbNeck,
-        to: points.cbHips,
-        grainline: true,
-      })
+    if (sa) {
+      paths.sa = paths.saBase
+        .offset(sa)
+        .attr('class', 'fabric sa')
+        .line(points.cbNeck)
+        .move(points.cbHips)
+      paths.sa.line(paths.sa.start())
+    }
 
-      macro('title', { at: points.title, nr: 2, title: 'back' })
-      snippets.armholePitchNotch = new Snippet('bnotch', points.armholePitch)
+    /*
+     * Annotations
+     */
+
+    // Cut on fold
+    macro('cutonfold', {
+      from: points.cbNeck,
+      to: points.cbHips,
+      grainline: true,
+    })
+
+    // Cut list
+    store.cutlist.addCut({ cut: 1, from: 'fabric', onFold: true })
+
+    // Title
+    macro('title', { at: points.title, nr: 2, title: 'back' })
+
+    // Notches
+    snippets.armholePitchNotch = new Snippet('bnotch', points.armholePitch)
+
+    // Waist line
+    if (complete)
       paths.waist = new Path().move(points.cbWaist).line(points.waist).attr('class', 'help')
-      if (sa) {
-        paths.sa = paths.saBase
-          .offset(sa)
-          .attr('class', 'fabric sa')
-          .line(points.cbNeck)
-          .move(points.cbHips)
-        paths.sa.line(paths.sa.start())
-      }
 
-      // Add notches if the shoulder seam is shifted
-      shared.s3Notches(snippets, Snippet, points, options, 'bnotch')
-    }
+    // Add notches if the shoulder seam is shifted
+    shared.s3Notches(snippets, Snippet, points, options, 'bnotch')
 
-    // Paperless?
-    if (paperless) {
-      shared.dimensions(part, 'back')
-      macro('hd', {
-        from: points.cbHips,
-        to: points.hips,
-        y: points.hem.y + sa + 15,
-      })
-      macro('vd', {
-        from: points.cbHem,
-        to: points.cbWaist,
-        x: points.cbHips.x - sa - 15,
-      })
-      macro('vd', {
-        from: points.cbHem,
-        to: points.cbNeck,
-        x: points.cbHips.x - sa - 30,
-      })
-      macro('hd', {
-        from: points.cbNeck,
-        to: points.s3CollarSplit,
-        y: points.s3CollarSplit.y - sa - 15,
-      })
-      macro('hd', {
-        from: points.cbNeck,
-        to: points.s3ArmholeSplit,
-        y: points.s3CollarSplit.y - sa - 30,
-      })
-    }
+    // Dimensions
+    shared.dimensions(part, 'back')
+
+    macro('hd', {
+      id: 'wHem',
+      from: points.cbHips,
+      to: points.hips,
+      y: points.hem.y + sa + 15,
+    })
+    macro('vd', {
+      id: 'hHemToWaist',
+      from: points.cbHem,
+      to: points.cbWaist,
+      x: points.cbHips.x - 15,
+    })
+    macro('vd', {
+      id: 'hHemToNeckOpeningBottom',
+      from: points.cbHem,
+      to: points.cbNeck,
+      x: points.cbHips.x - 30,
+    })
+    macro('hd', {
+      id: 'wCFrontToHps',
+      from: points.cbNeck,
+      to: points.s3CollarSplit,
+      y: points.s3CollarSplit.y - sa - 15,
+    })
+    macro('hd', {
+      id: 'lShoulder',
+      from: points.cbNeck,
+      to: points.s3ArmholeSplit,
+      y: points.s3CollarSplit.y - sa - 30,
+    })
 
     return part
   },

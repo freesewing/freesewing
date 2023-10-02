@@ -1,0 +1,178 @@
+{
+  "t": "Bee bikini top",
+  "d": "Bee is a bikini top",
+  "p": {
+    "bandTie": "Band Tie",
+    "cup": "Cup",
+    "neckTie": "Neck Tie"
+  },
+  "s": {
+    "casingStitchingLine": "Sew down casing here",
+    "cutBandTie.t": "The band ties are not shown",
+    "cutBandTie.d": "The **band ties** are {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). Refer to the cutting instructions for details on how many of them you should cut. \n\nThey are not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutNeckTie.t": "The neck ties are not shown",
+    "cutNeckTie.d": "The **neck ties** are {{{ width }}} wide and {{{ length }}} long (this includes seam allowance). Refer to the cutting instructions for details on how many of them you should cut. \n\nThey are not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part."
+  },
+  "o": {
+    "chestEase": {
+      "t": "Chest ease",
+      "d": "Controls the chest ease in the underlying Bella block Bee is based on"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the waist ease in the underlying Bella block Bee is based on"
+    },
+    "bustSpanEase": {
+      "t": "Bust span ease",
+      "d": "Controls the bust span ease in the underlying Bella block Bee is based on"
+    },
+    "topDepth": {
+      "t": "Top Depth",
+      "d": "Controls how far the bikini cup extends upwards"
+    },
+    "bottomCupDepth": {
+      "t": "Bottom depth",
+      "d": "Controls how far the bikini cup extends downwards"
+    },
+    "sideDepth": {
+      "t": "Side depth",
+      "d": "Controls how far the bikini cup extends towards the side"
+    },
+    "sideCurve": {
+      "t": "Side curve",
+      "d": "Controls the curvature of the side of the bikini cup"
+    },
+    "frontCurve": {
+      "t": "Front curve",
+      "d": "Controls the curvature of the front of the bikini cup"
+    },
+    "bellaGuide": {
+      "t": "Show Bella outline",
+      "d": "Do you want the pattern to show the outline of the Bella block Bee is based on?"
+    },
+    "bellaGuideYes": {
+      "t": "Show Bella",
+      "d": "Shows the outline of the Bella block"
+    },
+    "bellaGuideNo": {
+      "t": "Do not show Bella",
+      "d": "Only shows the final Bee pattern"
+    },
+    "ties": {
+      "t": "Ties",
+      "d": "Whether to includes ties on the pattern"
+    },
+    "tiesYes": {
+      "t": "With ties",
+      "d": "Draft a pattern including ties"
+    },
+    "tiesNo": {
+      "t": "Without ties",
+      "d": "Draft a pattern without ties"
+    },
+    "bandTieWidth": {
+      "t": "Band (chest) tie width",
+      "d": "Controls the width of the ties around your chest"
+    },
+    "bandTieLength": {
+      "t": "Band (chest) tie length",
+      "d": "Controls the length of the ties around your chest"
+    },
+    "pointedTieEnds": {
+      "t": "Pointed tie ends",
+      "d": "Enable this options if you prefer tie ends to be pointy, rarther than straight"
+    },
+    "pointedTieEndsYes": {
+      "t": "Pointy ends",
+      "d": "Make the tie ends pointy"
+    },
+    "pointedTieEndsNo": {
+      "t": "Straight ends",
+      "d": "Make the tie ends straight"
+    },
+    "duoColorTies": {
+      "t": "Duo-colored ties",
+      "d": "Enable this option to generate a pattern for bands using two colors instead of one"
+    },
+    "duoColorTiesYes": {
+      "t": "Two colors",
+      "d": "Use two colors for the ties"
+    },
+    "duoColorTiesNo": {
+      "t": "Single color",
+      "d": "Use a single color for the ties"
+    },
+    "neckTieWidth": {
+      "t": "Neck tie width",
+      "d": "Controls the width of the ties around your chest"
+    },
+    "neckTieLength": {
+      "t": "Neck tie length",
+      "d": "Controls the length of the ties around your chest"
+    },
+    "neckTieEnds": {
+      "t": "Neck tie ends",
+      "d": "Whether you like straight or pointy ends on the ties around your chest"
+    },
+    "neckTieColours": {
+      "t": "Neck tie colours",
+      "d": "Whether you want single color ties around your chest, or dual-coloured ones"
+    },
+    "crossBackTies": {
+      "t": "Cross back ties",
+      "d": "Whether you'd like to use the cross back tie variation of Bee"
+    },
+    "crossBackTiesYes": {
+      "t": "Use cross back ties",
+      "d": "Generate a pattern for ties that cross your back"
+    },
+    "crossBackTiesNo": {
+      "t": "Use regular ties",
+      "d": "Generate a pattern for the default ties"
+    },
+    "bandLength": {
+      "t": "Band Length (Cross back ties)",
+      "d": "Controls the length of the band around your chest for the cross back ties variation of Bee"
+    },
+    "backDartHeight": {
+      "t": "Back dart height (Bella)",
+      "d": "Controls the back dart height in the underlying Bella block Bee is based on"
+    },
+    "armholeDepth": {
+      "t": "Armhole depth (Bella)",
+      "d": "Controls the armhole depth in the underlying Bella block Bee is based on"
+    },
+    "frontArmholePitchDepth": {
+      "t": "Front armhole pitch depth (Bella)",
+      "d": "Controls the front armhole pitch depth in the underlying Bella block Bee is based on"
+    },
+    "frontShoulderWidth": {
+      "t": "Front shoulder width (Bella)",
+      "d": "Controls the front shoulder width in the underlying Bella block Bee is based on"
+    },
+    "fullChestEaseReduction": {
+      "t": "Full chest reduction (Bella)",
+      "d": "Controls the full chest reduction in the underlying Bella block Bee is based on"
+    },
+    "highBustWidth": {
+      "t": "High bust width (Bella)",
+      "d": "Controls the high bust width in the underlying Bella block Bee is based on"
+    },
+    "shoulderToShoulderEase": {
+      "t": "Shoulder to Shoulder ease (Bella)",
+      "d": "Controls the shoulder to shoulder ease in the underlying Bella block Bee is based on"
+    },
+    "reversible": {
+      "t": "Reversible",
+      "d": "Whether you want to make a fully reversible Bee or not"
+    },
+    "reversibleYes": {
+      "t": "Make it reversible",
+      "d": "Create a Bee that you can wear with both sides out, posssibly ussing different fabrics"
+    },
+    "reversibleNo": {
+      "t": "Do not make it reversible",
+      "d": "Create a Bee with where only one side is intended to be worn on the outside"
+    }
+  }
+}

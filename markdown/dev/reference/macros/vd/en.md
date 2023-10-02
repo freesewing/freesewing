@@ -3,7 +3,7 @@ title: vd
 ---
 
 The `vd` macro adds a _vertical dimension_ to your pattern.
-It is provided by the [dimension plugin](/reference/plugins/dimension/).
+It is provided by the [annotations plugin](/reference/plugins/annotations).
 
 ## Signature
 

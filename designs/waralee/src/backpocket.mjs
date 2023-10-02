@@ -69,11 +69,13 @@ function waraleeBackPocket({
   // Paperless?
   if (paperless) {
     macro('hd', {
+      id: 1,
       from: points.topLeft,
       to: points.topRight,
       y: points.topLeft.y + 15,
     })
     macro('vd', {
+      id: 2,
       from: points.topLeft,
       to: points.bottomLeft,
       x: points.topLeft.x + 15,

@@ -1,5 +1,5 @@
 import chai from 'chai'
-import * as all from './dist/index.mjs'
+import * as all from '../src/index.mjs'
 
 const expect = chai.expect
 const { measurements, sizes } = all
