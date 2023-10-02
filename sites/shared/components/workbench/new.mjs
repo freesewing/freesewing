@@ -26,6 +26,7 @@ import { ExportView, ns as exportNs } from 'shared/components/workbench/views/ex
 import { LogView, ns as logNs } from 'shared/components/workbench/views/logs/index.mjs'
 import { InspectView, ns as inspectNs } from 'shared/components/workbench/views/inspect/index.mjs'
 import { MeasiesView, ns as measiesNs } from 'shared/components/workbench/views/measies/index.mjs'
+import { DocsView, ns as docsNs } from 'shared/components/workbench/views/docs/index.mjs'
 
 export const ns = nsMerge(
   'account',
@@ -60,6 +61,7 @@ const views = {
   logs: LogView,
   inspect: InspectView,
   measies: MeasiesView,
+  docs: DocsView,
 }
 
 const draftViews = ['draft', 'inspect']
