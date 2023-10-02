@@ -8,7 +8,7 @@ import { PageLink } from 'shared/components/link.mjs'
 
 export const ns = ['workbench', 'designs']
 
-export const DocsView = ({ design, setView }) => {
+export const DocsView = ({ design }) => {
   // Hooks
   const { t } = useTranslation(ns)
 

@@ -1,17 +1,11 @@
 import { designs, tags, techniques } from 'shared/config/designs.mjs'
-import {
-  Design,
-  DesignLink,
-  hrefBuilders,
-  ns as designNs,
-} from 'shared/components/designs/design.mjs'
+import { Design, DesignLink, ns as designNs } from 'shared/components/designs/design.mjs'
 import { useTranslation } from 'next-i18next'
 import { ShowcaseIcon, CisFemaleIcon, ResetIcon } from 'shared/components/icons.mjs'
 import { useAtom } from 'jotai'
 import { atomWithHash } from 'jotai-location'
 import { capitalize, objUpdate } from 'shared/utils.mjs'
 import { Difficulty } from 'shared/components/designs/difficulty.mjs'
-import { Link } from 'shared/components/link.mjs'
 
 export const ns = designNs
 

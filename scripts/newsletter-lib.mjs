@@ -35,7 +35,7 @@ const getToken = async () => {
     password: process.env.FS_PASSWORD,
   })
   if (res.data) return res.data.token
-  else if (res.err) return console.log(err)
+  else if (res.err) return console.log(res.err)
 }
 
 const getSubscribers = async (test = true) => {

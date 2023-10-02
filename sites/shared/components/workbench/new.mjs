@@ -43,7 +43,8 @@ export const ns = nsMerge(
   logNs,
   inspectNs,
   measiesNs,
-  headerNs
+  headerNs,
+  docsNs
 )
 
 const defaultUi = {

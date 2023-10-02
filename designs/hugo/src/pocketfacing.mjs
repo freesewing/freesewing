@@ -1,6 +1,6 @@
 import { pocket } from './pocket.mjs'
 
-function hugoPocketFacing({ sa, points, Path, paths, macro, store, expand, part }) {
+function hugoPocketFacing({ sa, points, Path, paths, macro, store, part }) {
   // Remove clutter
   for (const key in paths) {
     if (key !== 'facing') delete paths[key]
