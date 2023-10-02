@@ -23,6 +23,7 @@ import { PageLink, AnchorLink, Link } from 'shared/components/link.mjs'
 import { DocsLink, DocsTitle } from 'shared/components/mdx/docs-helpers.mjs'
 import { DynamicOrgDocs as DynamicDocs } from 'site/components/dynamic-org-docs.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
+import { NewPatternIcon } from 'shared/components/icons.mjs'
 
 // Translation namespaces used on this page
 export const ns = nsMerge(
@@ -32,7 +33,8 @@ export const ns = nsMerge(
   'techniques',
   'measurements',
   'workbench',
-  'designs'
+  'designs',
+  'tags'
 )
 
 const Option = ({ id, option, t, design }) =>
@@ -123,6 +125,10 @@ export const DesignInfo = ({ design, docs = false }) => {
     <>
       <h5 className="-mt-6 text-accent font-medium">#FreeSewing{capitalize(design)}</h5>
       <p className="text-xl">{t(`designs:${design}.d`)}</p>
+      <Link className="btn btn-primary btn items-center gap-8" href={`/new/${design}`}>
+        <NewPatternIcon />
+        {t('tags:newThingPattern', { thing: capitalize(design) })}
+      </Link>
       {docs ? null : (
         <div className="flex flex-row flex-wrap gap-2 md:gap-4 items-center p-4 border rounded-lg bg-secondary bg-opacity-5 max-w-4xl">
           <b>Jump to:</b>

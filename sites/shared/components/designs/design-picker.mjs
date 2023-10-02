@@ -1,11 +1,18 @@
 import { designs, tags, techniques } from 'shared/config/designs.mjs'
-import { Design, ns as designNs } from 'shared/components/designs/design.mjs'
+import {
+  Design,
+  DesignLink,
+  hrefBuilders,
+  ns as designNs,
+} from 'shared/components/designs/design.mjs'
 import { useTranslation } from 'next-i18next'
 import { ShowcaseIcon, CisFemaleIcon, ResetIcon } from 'shared/components/icons.mjs'
 import { useAtom } from 'jotai'
 import { atomWithHash } from 'jotai-location'
-import { objUpdate } from 'shared/utils.mjs'
+import { capitalize, objUpdate } from 'shared/utils.mjs'
 import { Difficulty } from 'shared/components/designs/difficulty.mjs'
+import { Link } from 'shared/components/link.mjs'
+
 export const ns = designNs
 
 const filterAtom = atomWithHash('filter', { example: true })
@@ -14,7 +21,7 @@ export const useFilter = () => {
   return useAtom(filterAtom)
 }
 
-export const DesignPicker = ({ hrefBuilder = false }) => {
+export const DesignPicker = ({ linkTo = 'new', altLinkTo = 'docs' }) => {
   const { t } = useTranslation('designs')
   const [filter, setFilter] = useFilter()
 
@@ -53,10 +60,17 @@ export const DesignPicker = ({ hrefBuilder = false }) => {
   return (
     <>
       <div className="max-w-7xl m-auto">
-        <h4 className="text-center">
+        <div className="flex flex-row flex-wrap gap-1 justify-center font-medium">
+          {Object.values(translated)
+            .sort()
+            .map((d) => (
+              <DesignLink key={d} linkTo={linkTo} altLinkTo={altLinkTo} name={capitalize(d)} />
+            ))}
+        </div>
+        <h6 className="text-center mb-0 mt-4">
           Filters ({Object.keys(translated).length}/{Object.keys(designs).length})
-        </h4>
-        <div className="flex flex-row gap-1 items-center justify-center flex-wrap my-4">
+        </h6>
+        <div className="flex flex-row gap-1 items-center justify-center flex-wrap my-2">
           <b>{t('tags:tags')}:</b>
           {tags.map((tag) => (
             <button
@@ -121,15 +135,15 @@ export const DesignPicker = ({ hrefBuilder = false }) => {
           </button>
         </div>
       </div>
-
-      <div className="flex flex-row flex-wrap gap-2 mt-4 justify-center">
+      <div className="grid grid-cols-1 gap-2 mt-4 justify-center sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
         {Object.keys(translated)
           .sort()
           .map((d) => (
             <Design
               name={translated[d]}
               key={d}
-              hrefBuilder={hrefBuilder}
+              linkTo={linkTo}
+              altLinkTo={altLinkTo}
               lineDrawing={filter.example ? false : true}
             />
           ))}
