@@ -22,7 +22,6 @@ function shinWaistband({
   if (expand) store.flag.preset('expandIsOn')
   else {
     // Expand is on, do not draw the part but flag this to the user
-    const extraSa = sa ? 2 * sa : 0
     store.flag.note({
       msg: `shin:cutWaistband`,
       notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
