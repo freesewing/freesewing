@@ -1,5 +1,40 @@
 Unreleased:
   Changed:
+    aaron:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    albert:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    bee:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    benjamin:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    carlton:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    charlie:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    hortensia:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    huey:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    hugo:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    jaeger:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+      - Corrected part mixup in translation of flag message
+    octoplushy:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    paco:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    sandy:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    shin:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    sven:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    yuri:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    plugin-annotations:
+      - Added support for notes in flags
 
 3.0.0:
   date: 2022-09-30

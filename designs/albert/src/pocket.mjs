@@ -21,11 +21,13 @@ export const pocket = {
 
     if (!expand) {
       // Expand is on, do not draw the part but flag this to the user
+      const extraSa = sa ? 2 * sa : 0
       store.flag.note({
         msg: `albert:cutPocket`,
+        notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
         replace: {
-          width: units(pocketSize * 2 + 2 * sa),
-          length: units(pocketSize + 2 * sa + store.get('strapWidth')),
+          width: units(pocketSize * 2 + extraSa),
+          length: units(pocketSize + extraSa + store.get('strapWidth')),
         },
         suggest: {
           text: 'flag:show',

@@ -69,6 +69,23 @@ export const freeSewingConfig = {
       id: 4,
     },
   },
+  control: {
+    core: {
+      sa: 2,
+      paperless: 2,
+      locale: 3,
+      units: 1,
+      complete: 4,
+      expand: 4,
+      only: 4,
+      scale: 4,
+      margin: 4,
+    },
+    ui: {
+      renderer: 4,
+      kiosk: 2,
+    },
+  },
   social,
   statuses: {
     0: {
@@ -98,4 +115,6 @@ export const controlLevels = {
   ...freeSewingConfig.account.fields.identities,
   sets: freeSewingConfig.account.sets,
   patterns: freeSewingConfig.account.patterns,
+  core: freeSewingConfig.control.core,
+  ui: freeSewingConfig.control.ui,
 }

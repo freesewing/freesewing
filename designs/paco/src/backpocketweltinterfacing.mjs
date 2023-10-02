@@ -27,6 +27,7 @@ function pacoBackPocketWeltInterfacing({
     // Expand is on, do not draw the part but flag this to the user
     store.flag.note({
       msg: `paco:cutBackPocketWeltInterfacing`,
+      notes: ['flag:saUnused', 'flag:partHiddenByExpand'],
       replace: {
         w: units(points.topLeft.dist(points.bottomLeft)),
         l: units(points.topLeft.dist(points.topRight)),
