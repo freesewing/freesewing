@@ -251,7 +251,7 @@ dev:
     'remark-copy-linked-files': &remarkCopyLinkedFiles 'git+https://git@github.com/joostdecock/remark-copy-linked-files'
     'remark-gfm': &remarkGfm '3.0.1'
   dev: &nextSiteDevDependencies
-    'autoprefixer': &autoprefixer '10.4.15'
+    'autoprefixer': &autoprefixer '10.4.16'
     'eslint-config-next': *next
     'js-yaml': &jsYaml '4.1.0'
     'postcss': &postcss '8.4.29'
