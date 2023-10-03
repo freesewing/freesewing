@@ -66,6 +66,8 @@ measurements.d: Teste die Auswirkungen einer Messung auf das Aussehen des Muster
 menu: Menü
 name: Name
 noDesignFound: Wir konnten dieses Design nicht finden. Das sollte nicht passieren, also würden wir uns freuen, wenn du es meldest.
+noInlineDocs: Documention is not included in this build
+noInlineDocsDesc: Please visit FreeSewing.org to access our documentation
 notes: Notizen
 pages: pages
 part: Musterteil
