@@ -66,6 +66,8 @@ measurements.d: Teste l'effet d'une mesure sur l'apparence de ce motif.
 menu: Menu
 name: Nom
 noDesignFound: Nous n'avons pas pu trouver ce modèle. Cela ne devrait pas arriver, alors nous te serions très reconnaissants de nous le signaler.
+noInlineDocs: Documention is not included in this build
+noInlineDocsDesc: Please visit FreeSewing.org to access our documentation
 notes: Remarques
 pages: pages
 part: Partie du modèle
