@@ -66,6 +66,8 @@ measurements.d: Test het effect van een meting op hoe dit patroon eruit ziet
 menu: Menu
 name: Naam
 noDesignFound: We konden dit ontwerp niet vinden. Dit zou niet mogen gebeuren, dus we stellen het zeer op prijs als je dit meldt.
+noInlineDocs: Documention is not included in this build
+noInlineDocsDesc: Please visit FreeSewing.org to access our documentation
 notes: Notities
 pages: pages
 part: Patroononderdeel
