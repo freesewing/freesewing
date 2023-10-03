@@ -66,6 +66,8 @@ measurements.d: Перевірте вплив вимірювання на виг
 menu: Меню
 name: Назва
 noDesignFound: Ми не змогли знайти цей дизайн. Цього не повинно статися, тому ми будемо дуже вдячні, якщо ви повідомите про це.
+noInlineDocs: Documention is not included in this build
+noInlineDocsDesc: Please visit FreeSewing.org to access our documentation
 notes: Нотатки
 pages: pages
 part: Деталь викрійки
