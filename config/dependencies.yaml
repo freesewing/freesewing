@@ -242,7 +242,7 @@ dev:
     'react-markdown': &reactMarkdown '8.0.7'
     'react-swipeable': &reactSwipeable '7.0.1'
     'react-timeago': &reactTimeago '7.1.0'
-    'rehype-autolink-headings': &rehypeAutolinkHeadings '6.1.1'
+    'rehype-autolink-headings': &rehypeAutolinkHeadings '7.0.0'
     'rehype-highlight': &rehypeHighlight '7.0.0'
     'rehype-sanitize': &rehypeSanitize '5.0.1'
     'rehype-slug': &rehypeSlug '5.1.0'
