@@ -66,6 +66,8 @@ measurements.d: Prueba el efecto de una medida en el aspecto de este patrón
 menu: Menú
 name: Nombre
 noDesignFound: No hemos podido encontrar este diseño. Esto no debería ocurrir, así que te agradeceríamos que nos lo comunicaras.
+noInlineDocs: Documention is not included in this build
+noInlineDocsDesc: Please visit FreeSewing.org to access our documentation
 notes: Notas
 pages: pages
 part: Parte del patrón
