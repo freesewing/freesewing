@@ -85,6 +85,18 @@ export const freeSewingConfig = {
       renderer: 4,
       kiosk: 2,
     },
+    views: {
+      draft: 1,
+      measies: 1,
+      test: 3,
+      print: 1,
+      export: 1,
+      save: 1,
+      edit: 4,
+      logs: 2,
+      inspect: 4,
+      docs: 1,
+    },
   },
   social,
   statuses: {
@@ -117,4 +129,5 @@ export const controlLevels = {
   patterns: freeSewingConfig.account.patterns,
   core: freeSewingConfig.control.core,
   ui: freeSewingConfig.control.ui,
+  views: freeSewingConfig.control.views,
 }
