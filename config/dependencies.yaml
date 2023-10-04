@@ -100,7 +100,7 @@ jaeger:
     '@freesewing/plugin-mirror': *freesewing
 new-design:
   _:
-    'axios': &axios '1.5.0'
+    'axios': &axios '1.5.1'
     'chalk': '5.0.1'
     'execa': '8.0.1'
     'mustache': &mustache '4.2.0'
@@ -251,10 +251,10 @@ dev:
     'remark-copy-linked-files': &remarkCopyLinkedFiles 'git+https://git@github.com/joostdecock/remark-copy-linked-files'
     'remark-gfm': &remarkGfm '3.0.1'
   dev: &nextSiteDevDependencies
-    'autoprefixer': &autoprefixer '10.4.15'
+    'autoprefixer': &autoprefixer '10.4.16'
     'eslint-config-next': *next
     'js-yaml': &jsYaml '4.1.0'
-    'postcss': &postcss '8.4.29'
+    'postcss': &postcss '8.4.31'
     'remark-extract-frontmatter': '3.2.0'
     'remark-mdx-frontmatter': &mdxfrontmatter '3.0.0'
     'tailwindcss': &tailwindcss '3.3.3'
