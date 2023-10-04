@@ -1,0 +1,38 @@
+{
+  "t": "Skully logo plush toy",
+  "d": "A FreeSewing pattern for skully, our logo, a plushy toy.",
+  "p": {
+    "cheek": "Cheek",
+    "cheekbone": "Cheekbone",
+    "eye": "Eye",
+    "forehead": "Forehead",
+    "head1": "Head1",
+    "head2": "Head2",
+    "head3": "Head3",
+    "jawfloor": "Jawfloor",
+    "lowerjaw": "Lowerjaw",
+    "lowermouth": "Lowermouth",
+    "nose": "Nose",
+    "uppermouth": "Uppermouth"
+  },
+  "s": {
+    "cheek": "Cheek",
+    "cheekbone": "Cheekbone",
+    "eye": "Eye",
+    "forehead": "Forehead",
+    "head1": "Head1",
+    "head2": "Head2",
+    "head3": "Head3",
+    "jawfloor": "Jawfloor",
+    "lowerjaw": "Lowerjaw",
+    "lowermouth": "Lowermouth",
+    "nose": "Nose",
+    "uppermouth": "Uppermouth"
+  },
+  "o": {
+    "size": {
+      "t": "Size",
+      "d": "Controls the overall size (value shown is the size of the head)"
+    }
+  }
+}
