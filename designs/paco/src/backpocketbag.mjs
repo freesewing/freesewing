@@ -27,11 +27,13 @@ function pacoBackPocketBag({
   if (expand) store.flag.preset('expandIsOn')
   else {
     // Expand is on, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
     store.flag.note({
       msg: `paco:cutBackPocketBag`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
       replace: {
-        w: units(points.pocketBagWaistLeft.dist(points.pocketBagWaistRight) + 2 * sa),
-        l: units(points.pocketBagWaistLeft.dist(points.pocketBagBottomLeft) * 2 + 2 * sa),
+        w: units(points.pocketBagWaistLeft.dist(points.pocketBagWaistRight) + extraSa),
+        l: units(points.pocketBagWaistLeft.dist(points.pocketBagBottomLeft) * 2 + extraSa),
       },
       suggest: {
         text: 'flag:show',

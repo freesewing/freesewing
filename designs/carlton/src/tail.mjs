@@ -19,11 +19,13 @@ function draftCarltonTail({
   if (expand) store.flag.preset('expandIsOn')
   else {
     // Expand is on, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
     store.flag.note({
       msg: `carlton:cutTail`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
       replace: {
-        w: units(store.get('cbToDart') * 3 + store.get('dartToSide') + sa * 2),
-        l: units(length + 4 * sa),
+        w: units(store.get('cbToDart') * 3 + store.get('dartToSide') + extraSa),
+        l: units(length + 2 * extraSa),
       },
       suggest: {
         text: 'flag:show',

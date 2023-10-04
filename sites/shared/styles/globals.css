@@ -50,8 +50,8 @@
   }
 
   /* mdx styles */
-  .md a,
-  .mdx a {
+  .md a:not(.btn),
+  .mdx a:not(.btn) {
     @apply underline decoration-2 text-secondary;
   }
   .md a:hover,

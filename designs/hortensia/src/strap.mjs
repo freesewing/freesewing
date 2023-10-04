@@ -15,24 +15,23 @@ export const strap = {
     if (sa > w * 0.8) {
       sa = w * 0.8
       reducedSa = true
-
-      store.flag.warn({
-        msg: `hortensia:strapSaReduced`,
-        replace: {
-          width: units(w + 2 * sa),
-          length: units(h + 2 * sa),
-        },
-      })
+      store.flag.warn({ msg: `hortensia:strapSaReduced` })
     }
 
     if (expand) store.flag.preset('expandIsOn')
     else {
       // Expand is on, do not draw the part but flag this to the user
+      const extraSa = sa ? 2 * sa : 0
       store.flag.note({
         msg: reducedSa ? `hortensia:cutStrapReducedSa` : `hortensia:cutStrap`,
+        notes: [
+          sa ? 'flag:saIncluded' : 'flag:saExcluded',
+          'flag:partHiddenByExpand',
+          reducedSa ? `hortensia:strapSaReduced.d` : '',
+        ],
         replace: {
-          width: units(w + 2 * sa),
-          length: units(h + 2 * sa),
+          width: units(w + extraSa),
+          length: units(h + extraSa),
         },
         suggest: {
           text: 'flag:show',

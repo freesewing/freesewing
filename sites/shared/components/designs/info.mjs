@@ -7,7 +7,7 @@ import {
   cloudflareImageUrl,
 } from 'shared/utils.mjs'
 import { designs } from 'shared/config/designs.mjs'
-import { examples } from 'site/prebuild/design-examples.mjs'
+import { examples } from 'site/components/design-examples.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 import { useDesign } from 'site/hooks/use-design.mjs'
@@ -23,6 +23,7 @@ import { PageLink, AnchorLink, Link } from 'shared/components/link.mjs'
 import { DocsLink, DocsTitle } from 'shared/components/mdx/docs-helpers.mjs'
 import { DynamicOrgDocs as DynamicDocs } from 'site/components/dynamic-org-docs.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
+import { NewPatternIcon } from 'shared/components/icons.mjs'
 
 // Translation namespaces used on this page
 export const ns = nsMerge(
@@ -32,7 +33,8 @@ export const ns = nsMerge(
   'techniques',
   'measurements',
   'workbench',
-  'designs'
+  'designs',
+  'tags'
 )
 
 const Option = ({ id, option, t, design }) =>
@@ -71,7 +73,7 @@ const SimpleOptionsList = ({ options, t, design }) => {
   return <ul className="list list-inside pl-2 list-disc">{output}</ul>
 }
 
-export const DesignInfo = ({ design, docs = false }) => {
+export const DesignInfo = ({ design, docs = false, workbench = false }) => {
   const { setModal } = useContext(ModalContext)
   const { t, i18n } = useTranslation([...ns, design])
   const { language } = i18n
@@ -123,7 +125,13 @@ export const DesignInfo = ({ design, docs = false }) => {
     <>
       <h5 className="-mt-6 text-accent font-medium">#FreeSewing{capitalize(design)}</h5>
       <p className="text-xl">{t(`designs:${design}.d`)}</p>
-      {docs ? null : (
+      {workbench ? null : (
+        <Link className="btn btn-primary btn items-center gap-8" href={`/new/${design}`}>
+          <NewPatternIcon />
+          {t('tags:newThingPattern', { thing: capitalize(design) })}
+        </Link>
+      )}
+      {docs || workbench ? null : (
         <div className="flex flex-row flex-wrap gap-2 md:gap-4 items-center p-4 border rounded-lg bg-secondary bg-opacity-5 max-w-4xl">
           <b>Jump to:</b>
           <AnchorLink id="notes">
@@ -133,7 +141,7 @@ export const DesignInfo = ({ design, docs = false }) => {
               format={(t) => t.split(':').pop().trim()}
             />
           </AnchorLink>
-          <AnchorLink id="examples" txt={t('acount:examples')} />
+          {examples && <AnchorLink id="examples" txt={t('acount:examples')} />}
           {['needs', 'fabric'].map((page) => (
             <AnchorLink id={page} key={page}>
               <DocsTitle
@@ -164,44 +172,52 @@ export const DesignInfo = ({ design, docs = false }) => {
             </>
           )}
           {docs ? docsContent : null}
-          <h2 id="examples">{t('account:examples')}</h2>
-          {examples[design] ? (
-            <div className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-3">
-              {examples[design].map((ex) => (
-                <button
-                  key={ex}
-                  onClick={() =>
-                    setModal(
-                      <ModalWrapper flex="col" justify="top lg:justify-center" slideFrom="right">
-                        <img
-                          className="w-full shadow rounded-lg"
-                          src={cloudflareImageUrl({ id: `showcase-${ex}`, variant: 'public' })}
-                        />
-                        <p className="text-center">
-                          <PageLink href={`/showcase/${ex}`} txt={t('account:visitShowcase')} />
-                        </p>
-                      </ModalWrapper>
-                    )
-                  }
-                >
-                  <img
-                    className="w-full shadow rounded-lg"
-                    src={cloudflareImageUrl({ id: `showcase-${ex}`, variant: 'sq500' })}
-                  />
-                </button>
-              ))}
-            </div>
-          ) : (
-            <Popout note>
-              <h5>{t('account:noExamples')}</h5>
-              <p>{t('account:noExamplesMsg')}</p>
-              <p className="text-right">
-                <Link className="btn btn-primary" href="/new/showcase">
-                  {t('account:showcaseNew')}
-                </Link>
-              </p>
-            </Popout>
-          )}
+          {examples ? (
+            <>
+              <h2 id="examples">{t('account:examples')}</h2>
+              {examples[design] ? (
+                <div className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-3">
+                  {examples[design].map((ex) => (
+                    <button
+                      key={ex}
+                      onClick={() =>
+                        setModal(
+                          <ModalWrapper
+                            flex="col"
+                            justify="top lg:justify-center"
+                            slideFrom="right"
+                          >
+                            <img
+                              className="w-full shadow rounded-lg"
+                              src={cloudflareImageUrl({ id: `showcase-${ex}`, variant: 'public' })}
+                            />
+                            <p className="text-center">
+                              <PageLink href={`/showcase/${ex}`} txt={t('account:visitShowcase')} />
+                            </p>
+                          </ModalWrapper>
+                        )
+                      }
+                    >
+                      <img
+                        className="w-full shadow rounded-lg"
+                        src={cloudflareImageUrl({ id: `showcase-${ex}`, variant: 'sq500' })}
+                      />
+                    </button>
+                  ))}
+                </div>
+              ) : (
+                <Popout note>
+                  <h5>{t('account:noExamples')}</h5>
+                  <p>{t('account:noExamplesMsg')}</p>
+                  <p className="text-right">
+                    <Link className="btn btn-primary" href="/new/showcase">
+                      {t('account:showcaseNew')}
+                    </Link>
+                  </p>
+                </Popout>
+              )}
+            </>
+          ) : null}
           {docs
             ? null
             : ['needs', 'fabric'].map((page) => (

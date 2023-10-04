@@ -59,12 +59,15 @@ help: Допоможіть!
 layoutSettings.d: Additional options to further optimize the printing layout of your pattern.
 layoutSettings.t: Layout settings
 length: Довжина
+learnHowToUseEditor: Learn how to use FreeSewing's online pattern editor
 measies: Вимірювання викрійки
 measiesOk: У нас є всі необхідні виміри для створення цієї моделі.
 measurements.d: Перевірте вплив вимірювання на вигляд цього шаблону
 menu: Меню
 name: Назва
 noDesignFound: Ми не змогли знайти цей дизайн. Цього не повинно статися, тому ми будемо дуже вдячні, якщо ви повідомите про це.
+noInlineDocs: Documention is not included in this build
+noInlineDocsDesc: Please visit FreeSewing.org to access our documentation
 notes: Нотатки
 pages: pages
 part: Деталь викрійки

@@ -8,11 +8,13 @@ function yuriHoodCenter({ store, sa, Point, points, Path, paths, expand, macro, 
     store.flag.preset('expandIsOn')
   } else {
     // Expand is off, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
     store.flag.note({
       msg: `yuri:cutHoodCenter`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
       replace: {
-        width: units(width + 2 * sa),
-        length: units(length + 2 * sa),
+        width: units(width + extraSa),
+        length: units(length + extraSa),
       },
       suggest: {
         text: 'flag:show',

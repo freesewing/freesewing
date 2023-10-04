@@ -18,6 +18,7 @@ function jaegerFrontFacing({
     // Expand is on, do not draw the part but flag this to the user
     store.flag.note({
       msg: `jaeger:cutFrontFacing`,
+      notes: 'flag:partHiddenByExpand',
       suggest: {
         text: 'flag:show',
         icon: 'expand',
