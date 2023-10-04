@@ -36,6 +36,7 @@ import { Sandy } from '@freesewing/sandy'
 import { Shin } from '@freesewing/shin'
 import { Simon } from '@freesewing/simon'
 import { Simone } from '@freesewing/simone'
+import { Skully } from '@freesewing/skully'
 import { Sven } from '@freesewing/sven'
 import { Tamiko } from '@freesewing/tamiko'
 import { Teagan } from '@freesewing/teagan'
@@ -87,6 +88,7 @@ const designs = {
   shin: Shin,
   simon: Simon,
   simone: Simone,
+  skully: Skully,
   sven: Sven,
   tamiko: Tamiko,
   teagan: Teagan,
