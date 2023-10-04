@@ -7,7 +7,7 @@ import {
   cloudflareImageUrl,
 } from 'shared/utils.mjs'
 import { designs } from 'shared/config/designs.mjs'
-import { examples } from 'site/prebuild/design-examples.mjs'
+import { examples } from 'site/components/design-examples.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 import { useDesign } from 'site/hooks/use-design.mjs'
@@ -141,7 +141,7 @@ export const DesignInfo = ({ design, docs = false, workbench = false }) => {
               format={(t) => t.split(':').pop().trim()}
             />
           </AnchorLink>
-          <AnchorLink id="examples" txt={t('acount:examples')} />
+          {examples && <AnchorLink id="examples" txt={t('acount:examples')} />}
           {['needs', 'fabric'].map((page) => (
             <AnchorLink id={page} key={page}>
               <DocsTitle
@@ -172,44 +172,52 @@ export const DesignInfo = ({ design, docs = false, workbench = false }) => {
             </>
           )}
           {docs ? docsContent : null}
-          <h2 id="examples">{t('account:examples')}</h2>
-          {examples[design] ? (
-            <div className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-3">
-              {examples[design].map((ex) => (
-                <button
-                  key={ex}
-                  onClick={() =>
-                    setModal(
-                      <ModalWrapper flex="col" justify="top lg:justify-center" slideFrom="right">
-                        <img
-                          className="w-full shadow rounded-lg"
-                          src={cloudflareImageUrl({ id: `showcase-${ex}`, variant: 'public' })}
-                        />
-                        <p className="text-center">
-                          <PageLink href={`/showcase/${ex}`} txt={t('account:visitShowcase')} />
-                        </p>
-                      </ModalWrapper>
-                    )
-                  }
-                >
-                  <img
-                    className="w-full shadow rounded-lg"
-                    src={cloudflareImageUrl({ id: `showcase-${ex}`, variant: 'sq500' })}
-                  />
-                </button>
-              ))}
-            </div>
-          ) : (
-            <Popout note>
-              <h5>{t('account:noExamples')}</h5>
-              <p>{t('account:noExamplesMsg')}</p>
-              <p className="text-right">
-                <Link className="btn btn-primary" href="/new/showcase">
-                  {t('account:showcaseNew')}
-                </Link>
-              </p>
-            </Popout>
-          )}
+          {examples ? (
+            <>
+              <h2 id="examples">{t('account:examples')}</h2>
+              {examples[design] ? (
+                <div className="grid grid-cols-2 gap-2 md:grid-cols-3 lg:grid-cols-3">
+                  {examples[design].map((ex) => (
+                    <button
+                      key={ex}
+                      onClick={() =>
+                        setModal(
+                          <ModalWrapper
+                            flex="col"
+                            justify="top lg:justify-center"
+                            slideFrom="right"
+                          >
+                            <img
+                              className="w-full shadow rounded-lg"
+                              src={cloudflareImageUrl({ id: `showcase-${ex}`, variant: 'public' })}
+                            />
+                            <p className="text-center">
+                              <PageLink href={`/showcase/${ex}`} txt={t('account:visitShowcase')} />
+                            </p>
+                          </ModalWrapper>
+                        )
+                      }
+                    >
+                      <img
+                        className="w-full shadow rounded-lg"
+                        src={cloudflareImageUrl({ id: `showcase-${ex}`, variant: 'sq500' })}
+                      />
+                    </button>
+                  ))}
+                </div>
+              ) : (
+                <Popout note>
+                  <h5>{t('account:noExamples')}</h5>
+                  <p>{t('account:noExamplesMsg')}</p>
+                  <p className="text-right">
+                    <Link className="btn btn-primary" href="/new/showcase">
+                      {t('account:showcaseNew')}
+                    </Link>
+                  </p>
+                </Popout>
+              )}
+            </>
+          ) : null}
           {docs
             ? null
             : ['needs', 'fabric'].map((page) => (
