@@ -268,7 +268,7 @@ lab:
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': *mdxRuntime
     '@tailwindcss/typography': *tailwindTypography
-    'algoliasearch': &algoliasearch '4.19.1'
+    'algoliasearch': &algoliasearch '4.20.0'
     'd3-dispatch': &d3dispatch '3.0.1'
     'd3-drag': &d3drag '3.0.0'
     'd3-selection': &d3selection '3.0.0'
