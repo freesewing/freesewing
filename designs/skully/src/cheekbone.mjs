@@ -1,7 +1,7 @@
 import { cheek } from './cheek.mjs'
 
 export const cheekbone = {
-  name: 'cheekbone',
+  name: 'skully.cheekbone',
   after: cheek,
   draft: ({ Point, Path, points, paths, sa, complete, store, macro, part }) => {
     const textAttribute = 'text-xs center text-decoration="line-through"'

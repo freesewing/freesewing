@@ -1,5 +1,5 @@
 export const cheek = {
-  name: 'cheek',
+  name: 'skully.cheek',
   options: {
     size: {
       pct: 75,
@@ -148,6 +148,8 @@ export const cheek = {
     store.set('eyeBottom', paths.eyeBottom.length())
     store.set('noseSide', paths.nose.length())
     store.set('noseHeight', points.point1.dist(points.point2))
+
+    store.cutlist.addCut({ cut: 2, from: 'Fabric' })
 
     points.title = points.point4Cp2.shiftFractionTowards(points.point0, 0.3)
     macro('title', {

@@ -3,7 +3,7 @@ import { eye } from './eye.mjs'
 import { forehead } from './forehead.mjs'
 
 export const nose = {
-  name: 'nose',
+  name: 'skully.nose',
   after: [cheek, forehead, eye],
   draft: ({
     Point,

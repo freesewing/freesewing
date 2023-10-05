@@ -340,7 +340,7 @@
     "description": "A FreeSewing pattern for skully, our logo, a plushy toy",
     "code": "Wouter Van Wageningen",
     "design": "Wouter Van Wageningen",
-    "difficulty": 5,
+    "difficulty": 4,
     "tags": ["accessories", "toys"],
     "techniques": ["curvedSeam", "precision"]
   },

@@ -6,33 +6,20 @@
     "cheekbone": "Cheekbone",
     "eye": "Eye",
     "forehead": "Forehead",
-    "head1": "Head1",
-    "head2": "Head2",
-    "head3": "Head3",
-    "jawfloor": "Jawfloor",
-    "lowerjaw": "Lowerjaw",
-    "lowermouth": "Lowermouth",
+    "head1": "Head part 1",
+    "head2": "Head part 2",
+    "head3": "Head part 3",
+    "jawfloor": "Jaw floor",
+    "lowerjaw": "Lower Jaw",
+    "lowermouth": "Lower Mouth",
     "nose": "Nose",
-    "uppermouth": "Uppermouth"
+    "uppermouth": "Upper Mouth"
   },
-  "s": {
-    "cheek": "Cheek",
-    "cheekbone": "Cheekbone",
-    "eye": "Eye",
-    "forehead": "Forehead",
-    "head1": "Head1",
-    "head2": "Head2",
-    "head3": "Head3",
-    "jawfloor": "Jawfloor",
-    "lowerjaw": "Lowerjaw",
-    "lowermouth": "Lowermouth",
-    "nose": "Nose",
-    "uppermouth": "Uppermouth"
-  },
+  "s": {},
   "o": {
     "size": {
       "t": "Size",
-      "d": "Controls the overall size (value shown is the size of the head)"
+      "d": "Controls the overall size (value shown is the resulting height of Skully)"
     }
   }
 }

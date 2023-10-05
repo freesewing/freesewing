@@ -2,7 +2,7 @@ import { cheek } from './cheek.mjs'
 import { uppermouth } from './uppermouth.mjs'
 
 export const lowerjaw = {
-  name: 'lowerjaw',
+  name: 'skully.lowerjaw',
   after: [cheek, uppermouth],
   draft: ({ Point, Path, points, paths, sa, complete, log, store, macro, part }) => {
     const textAttribute = 'text-xs center'
