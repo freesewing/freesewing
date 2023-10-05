@@ -30,6 +30,8 @@ export const head1 = {
 
     points.gridAnchor = points.point0.clone()
 
+    store.cutlist.addCut({ cut: 2, from: 'Fabric' })
+
     store.set(
       'upperJawToLowerJaw',
       paths.firstSeam.length() - store.get('firstSeam') - store.get('templeToJaw')

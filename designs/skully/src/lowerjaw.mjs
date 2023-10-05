@@ -96,6 +96,8 @@ export const lowerjaw = {
 
     store.set('bottomJaw', paths.bottomJaw.length())
 
+    store.cutlist.addCut({ cut: 2, from: 'Fabric' })
+
     points.gridAnchor = points.point5.clone()
     points.title = points.point1.shiftFractionTowards(points.point4, 0.25)
     macro('title', {

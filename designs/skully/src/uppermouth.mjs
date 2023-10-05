@@ -175,6 +175,8 @@ export const uppermouth = {
 
     store.set('lowerJaw', paths.lowerJaw1.length() + points.point1.dist(points.point2))
 
+    store.cutlist.addCut({ cut: 1, from: 'Fabric' })
+
     points.gridAnchor = points.point0.clone()
     points.title = points.pointM1.shiftFractionTowards(points.point6, 0.5)
     macro('title', {

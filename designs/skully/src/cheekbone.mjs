@@ -27,6 +27,8 @@ export const cheekbone = {
 
     paths.seam = new Path().move(points.point0).join(paths.seam6).join(paths.seam5).close()
 
+    store.cutlist.addCut({ cut: 2, from: 'Fabric' })
+
     points.gridAnchor = points.point0.clone()
     points.title = points.point0
       .shiftFractionTowards(points.point1, 0.65)

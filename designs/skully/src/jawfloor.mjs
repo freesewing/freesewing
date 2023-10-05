@@ -95,6 +95,8 @@ export const jawfloor = {
       new Path().move(points.point4).curve(points.point4, points.point5Cp2, points.point5).length()
     )
 
+    store.cutlist.addCut({ cut: 1, from: 'Fabric' })
+
     points.title = points.point6.shiftFractionTowards(points.point5, 0.5)
     macro('title', {
       nr: 8,

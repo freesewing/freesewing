@@ -101,6 +101,8 @@ export const head2 = {
       .join(paths.top)
       .close()
 
+    store.cutlist.addCut({ cut: 2, from: 'Fabric' })
+
     points.gridAnchor = points.dartPoint1.clone()
     points.title = points.dartPoint1.shiftFractionTowards(points.point2, 0.35)
     macro('title', {

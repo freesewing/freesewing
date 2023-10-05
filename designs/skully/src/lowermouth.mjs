@@ -49,6 +49,8 @@ export const lowermouth = {
       .line(points.point0)
       .close()
 
+    store.cutlist.addCut({ cut: 1, from: 'Fabric' })
+
     points.gridAnchor = points.point1.clone()
     points.title = points.point0
       .shiftFractionTowards(points.point2, 0.25)
