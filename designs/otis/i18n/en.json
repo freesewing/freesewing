@@ -1,0 +1,16 @@
+{
+  "t": "Otis",
+  "d": "A FreeSewing pattern for a romper",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "shortsleeve": "Short sleeve",
+    "longsleeve": "Long sleeve",
+    "bindingNeckBack": "Neck back binding",
+    "bindingNeckFront": "Neck front binding",
+    "bindingLeg": "Leg binding"
+  },
+  "s": {},
+  "o": {
+  }
+}
