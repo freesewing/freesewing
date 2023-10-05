@@ -270,7 +270,7 @@
     "design": "Wouter Van Wageningen",
     "difficulty": 3,
     "tags": ["blocks", "tops"],
-    "techniques": ["curvedSeam", "precision", "princessSeam"]
+    "techniques": ["block", "curvedSeam", "precision", "princessSeam"]
   },
   "octoplushy": {
     "description": "A FreeSewing pattern for an octopus plushy toy",
@@ -342,7 +342,7 @@
     "design": "Wouter Van Wageningen",
     "difficulty": 5,
     "tags": ["accessories", "toys"],
-    "techniques": ["curvedSeam", "flatSleeve"]
+    "techniques": ["curvedSeam", "precision"]
   },
   "sven": {
     "description": "A FreeSewing pattern for a straightforward sweater",

@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "t": "Skully logo plush toy",
   "d": "A FreeSewing pattern for skully, our logo, a plushy toy.",
   "p": {
@@ -33,14 +32,7 @@
   "o": {
     "size": {
       "t": "Size",
-      "d": "Controls the overall size (value shown is the size of the head)"
+      "d": "Controls the overall size (value shown is the resulting height of Skully)"
     }
-=======
-  "t": "Skully",
-  "d": "Skylly is the FreeSewing logo, now in plushy toy form",
-  "p": { },
-  "s": { },
-  "o": { }
->>>>>>> 2e57bcfae37fe47ecc4e8012794fecc0f0c33009
   }
 }
