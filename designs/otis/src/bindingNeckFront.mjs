@@ -3,9 +3,49 @@ import { bindingLeg } from './bindingLeg.mjs'
 export const bindingNeckFront = {
   name: 'bindingNeckFront',
   after: [bindingLeg],
-  draft: ({ Point, Path, points, paths, Snippet, snippets, sa, store, macro, part }) => {
+  draft: ({
+    Point,
+    Path,
+    points,
+    paths,
+    Snippet,
+    snippets,
+    sa,
+    store,
+    macro,
+    expand,
+    units,
+    part,
+  }) => {
     const frontNeckOpening = store.get('FrontNeckOpening')
     const binding = store.get('binding')
+
+    if (expand) {
+      // Hint about expand
+      store.flag.preset('expandIsOn')
+    } else {
+      // Expand is off, do not draw the part but flag this to the user
+      const message = 'bindingNeckFront'
+      store.flag.note({
+        msg: message,
+        notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
+        replace: {
+          width: units(binding * 2),
+          length: units(frontNeckOpening),
+        },
+        suggest: {
+          text: 'flag:show',
+          icon: 'expand',
+          update: {
+            settings: ['expand', 1],
+          },
+        },
+      })
+      // Also hint about expand
+      store.flag.preset('expandIsOff')
+
+      return part.hide()
+    }
 
     points.p0 = new Point(0, 0)
     points.p1 = new Point(0, frontNeckOpening)

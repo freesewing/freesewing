@@ -12,11 +12,30 @@ export const bindingLeg = {
       max: 30,
       // eslint-disable-next-line no-unused-vars
       toAbs: (val, { options, measurements }, mergedOptions) =>
-        (val * measurements.waist * (options.ease + 1) * measurements.waist) / 510,
+        (val *
+          measurements.waist *
+          ((options === undefined ? 0 : options.ease === undefined ? 0 : options.ease) + 1) *
+          measurements.waist) /
+        510 /
+        4,
       menu: 'advanced',
     },
   },
-  draft: ({ Point, Path, points, paths, options, Snippet, snippets, sa, store, macro, part }) => {
+  draft: ({
+    Point,
+    Path,
+    points,
+    paths,
+    options,
+    Snippet,
+    snippets,
+    sa,
+    store,
+    macro,
+    expand,
+    units,
+    part,
+  }) => {
     const backLegOpening = store.get('BackLegOpening')
     const frontLegOpening = store.get('FrontLegOpening')
     const waist = store.get('waist')
@@ -24,6 +43,33 @@ export const bindingLeg = {
     const sizeFactor = store.get('sizeFactor')
     const binding = waist * (ease + 1) * sizeFactor * options.binding
     store.set('binding', binding)
+
+    if (expand) {
+      // Hint about expand
+      store.flag.preset('expandIsOn')
+    } else {
+      // Expand is off, do not draw the part but flag this to the user
+      const message = 'bindingLeg'
+      store.flag.note({
+        msg: message,
+        notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
+        replace: {
+          width: units(binding * 2),
+          length: units(backLegOpening + frontLegOpening),
+        },
+        suggest: {
+          text: 'flag:show',
+          icon: 'expand',
+          update: {
+            settings: ['expand', 1],
+          },
+        },
+      })
+      // Also hint about expand
+      store.flag.preset('expandIsOff')
+
+      return part.hide()
+    }
 
     points.p0 = new Point(0, 0)
     points.p1 = new Point(0, backLegOpening + frontLegOpening)

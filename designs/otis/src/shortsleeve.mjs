@@ -5,7 +5,15 @@ export const shortsleeve = {
   after: back,
   options: {
     sleeveType: { dflt: 'short', list: ['short', 'long'], menu: 'style' },
-    hem: { pct: 10, min: 0, max: 30, menu: 'advanced' },
+    hem: {
+      pct: 10,
+      min: 0,
+      max: 30,
+      // eslint-disable-next-line no-unused-vars
+      toAbs: (val, { options, measurements }, mergedOptions) =>
+        val * measurements.waist * (options.ease + 1) * (measurements.waist / 510) * 0.127273,
+      menu: 'advanced',
+    },
   },
   draft: ({
     options,
@@ -84,6 +92,8 @@ export const shortsleeve = {
     if (sa) {
       paths.sa = paths.seamSA.offset(sa).close().attr('class', 'fabric sa')
     }
+
+    console.log({ placket: points.p1h.dist(points.p1) })
 
     macro('hd', {
       from: points.p0,
