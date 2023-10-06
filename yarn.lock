@@ -1518,10 +1518,10 @@
   dependencies:
     glob "7.1.7"
 
-"@next/mdx@13.4.19":
-  version "13.4.19"
-  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-13.4.19.tgz#6c7c0c2cdd14fc728afa3336805bc8c8428d2b31"
-  integrity sha512-EaWA30YxAqFcyQYNxCoL9/TCcZP1Nk6pvW0vf1M54qDAkAGiloWQqyttVKVbRz+qOYk92he6mBB4ej/7pmEinQ==
+"@next/mdx@13.5.4":
+  version "13.5.4"
+  resolved "https://registry.yarnpkg.com/@next/mdx/-/mdx-13.5.4.tgz#3b79c6f9d96669c4b852236b62fc94fdb0e1e518"
+  integrity sha512-WYdWeDZUvX9h0BnjDtwyFy2We4ko8ox5EuglN27rCoYz1xj8fQ8KAn7reZgXwT2RX2hxUOl4eTNbXBfsrw7Gew==
   dependencies:
     source-map "^0.7.0"
 
