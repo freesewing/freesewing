@@ -13,8 +13,8 @@
   "s": {
     "bindingNeckBack.t": "The Back Neck Binding is not shown",
     "bindingNeckBack.d": "The **Back Neck Binding** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long.",
-    "bindingNeckBack.t": "The Front Neck Binding is not shown",
-    "bindingNeckBack.d": "The **Front Neck Binding** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "bindingNeckFront.t": "The Front Neck Binding is not shown",
+    "bindingNeckFront.d": "The **Front Neck Binding** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long.",
     "bindingLeg.t": "The Leg Binding is not shown",
     "bindingLeg.d": "The **Leg Binding** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long.",
   },
