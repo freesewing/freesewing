@@ -1,9 +1,9 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import Worker from 'web-worker'
 import fileSaver from 'file-saver'
 import { themePlugin } from '@freesewing/plugin-theme'
 import { pluginI18n } from '@freesewing/plugin-i18n'
 import { pagesPlugin, materialPlugin } from 'shared/plugins/plugin-layout-part.mjs'
-import { pluginAnnotations } from '@freesewing/plugin-annotations'
 import { cutLayoutPlugin } from 'shared/plugins/plugin-cut-layout.mjs'
 import { materialSettingsOrDefault } from 'shared/components/workbench/views/cut/hooks.mjs'
 import { useMaterialLength } from 'shared/components/workbench/views/cut/hooks.mjs'
@@ -36,7 +36,6 @@ const themedPattern = (Design, settings, overwrite, format, t) => {
   // add the theme and translation to the pattern
   pattern.use(themePlugin, { stripped: format !== 'svg', skipGrid: ['pages'] })
   pattern.use(pluginI18n, { t })
-  pattern.use(pluginAnnotations)
 
   return pattern
 }

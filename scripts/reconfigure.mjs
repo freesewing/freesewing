@@ -150,6 +150,24 @@ export const designs = {
 `
 )
 
+// Step 7: Create use-design hooks for lab & org
+for (const site of ['lab', 'org']) {
+  fs.writeFileSync(
+    path.join(repo.path, 'sites', site, 'hooks', 'use-design.mjs'),
+    mustache.render(
+      fs.readFileSync(
+        path.join(repo.path, 'config', 'templates', 'use-design.mjs.mustache'),
+        'utf-8'
+      ),
+      {
+        designs: Object.keys(designs)
+          .filter((name) => designs[name][site])
+          .map((name) => ({ name, Name: capitalize(name) })),
+      }
+    )
+  )
+}
+
 // All done
 log.write(chalk.green(' All done\n'))
 process.exit()
@@ -413,7 +431,8 @@ function globalChangelog() {
         ) {
           if (!changed) changed = ''
           changed += '\n#### ' + type + '\n\n'
-          for (let change of changes[type][pkg]) changed += ' - ' + change + '\n'
+          for (let change of changes[type][pkg].concat(changes[type]?.all || []))
+            changed += ' - ' + change + '\n'
         }
       }
       if (changed) markup += '### ' + pkg + '\n' + changed + '\n'

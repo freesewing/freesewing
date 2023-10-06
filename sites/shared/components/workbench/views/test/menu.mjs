@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { Fragment } from 'react'
 import { ns as optionsNs } from './options.mjs'
 import { ns as measieNs } from './measurements.mjs'

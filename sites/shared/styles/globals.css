@@ -1,3 +1,5 @@
+/*  __SDEFILE__ - This file is a dependency for the stand-alone environment */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -48,8 +50,8 @@
   }
 
   /* mdx styles */
-  .md a,
-  .mdx a {
+  .md a:not(.btn),
+  .mdx a:not(.btn) {
     @apply underline decoration-2 text-secondary;
   }
   .md a:hover,

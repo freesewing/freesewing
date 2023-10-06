@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { CutIcon } from 'shared/components/icons.mjs'
 import { measurementAsMm, measurementAsUnits } from 'shared/utils.mjs'
 import { ConstantInput, ListInput } from 'shared/components/workbench/menus/shared/inputs.mjs'

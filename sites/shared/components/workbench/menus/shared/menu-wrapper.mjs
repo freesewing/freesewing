@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useMemo } from 'react'
 import { WrenchIcon } from 'shared/components/icons.mjs'
 import { useMobileMenu } from 'shared/context/mobile-menubar-context.mjs'

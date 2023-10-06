@@ -15,6 +15,7 @@
 *.html
 *.env
 *.sh
+*.json
 Dockerfile
 LICENSE
 yarn.lock
@@ -25,3 +26,4 @@ yarn.lock
 .gitkeep
 .all-contributorsrc
 ansible.cfg
+sites/shared/prebuild/data/*.mjs

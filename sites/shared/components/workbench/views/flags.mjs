@@ -1,5 +1,5 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
-import { flagTypes } from 'plugins/plugin-annotations/src/flag.mjs'
 import mustache from 'mustache'
 import { nsMerge } from 'shared/utils.mjs'
 // Hooks
@@ -31,6 +31,9 @@ const flagIcons = {
   options: OptionsIcon,
 }
 
+// This is also the order in which they will be displayed
+export const flagTypes = ['error', 'warn', 'note', 'info', 'tip', 'fixme']
+
 export const Flag = ({ data, t, handleUpdate }) => {
   const BtnIcon = data.suggest?.icon ? flagIcons[data.suggest.icon] : false
 
@@ -48,11 +51,19 @@ export const Flag = ({ data, t, handleUpdate }) => {
     ) : null
 
   const desc = data.replace ? mustache.render(t(data.desc), data.replace) : t(data.desc)
+  const notes = data.notes
+    ? Array.isArray(data.notes)
+      ? '\n\n' +
+        data.notes
+          .map((note) => (data.replace ? mustache.render(t(note), data.replace) : t(note)))
+          .join('\n\n')
+      : '\n\n' + (data.replace ? mustache.render(t(data.notes), data.replace) : t(data.notes))
+    : null
 
   return (
     <div className="flex flex-col gap-2 items-start">
       <div className="first:mt-0 grow md flag">
-        <Markdown>{desc}</Markdown>
+        <Markdown>{desc + notes}</Markdown>
       </div>
       {button ? <div className="mt-2 w-full flex flex-row justify-end">{button}</div> : null}
     </div>

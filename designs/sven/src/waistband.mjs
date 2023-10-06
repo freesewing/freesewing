@@ -12,13 +12,15 @@ function svenWaistband(params) {
   if (expand) store.flag.preset('expandIsOn')
   else {
     // Expand is on, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
     store.flag.note({
       msg: `sven:cutWaistband`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
       replace: {
         w: units(
-          (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight + 2 * sa
+          (measurements.hpsToWaistBack + measurements.waistToHips) * options.ribbingHeight + extraSa
         ),
-        l: units(length + 2 * sa),
+        l: units(length + extraSa),
       },
       suggest: {
         text: 'flag:show',

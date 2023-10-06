@@ -65,11 +65,13 @@ function draftCorneliusZipperguard({
   // Paperless?
   if (paperless) {
     macro('hd', {
+      id: 1,
       from: points.pB,
       to: points.pA,
       y: points.pA.y - sa - 15,
     })
     macro('vd', {
+      id: 2,
       from: points.pA,
       to: points.pD,
       x: points.pA.x + 15,

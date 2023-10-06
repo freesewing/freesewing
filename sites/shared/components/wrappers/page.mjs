@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 import React, { useState, useEffect, useContext } from 'react'
 import { nsMerge } from 'shared/utils.mjs'

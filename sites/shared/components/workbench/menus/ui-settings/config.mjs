@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { RocketIcon, ControlIcon, KioskIcon } from 'shared/components/icons.mjs'
 
 export const loadSettingsConfig = () => {

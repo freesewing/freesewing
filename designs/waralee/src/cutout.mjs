@@ -59,21 +59,25 @@ function waraleeCutout({
   // Paperless?
   if (paperless) {
     macro('hd', {
+      id: 1,
       from: points.fWaistSide,
       to: points.mWaist,
       y: (separateWaistband ? points.fWaistSideCp2 : points.mWaist).y,
     })
     macro('hd', {
+      id: 2,
       from: points.mWaist,
       to: points.bWaistSide,
       y: (separateWaistband ? points.fWaistSideCp2 : points.mWaist).y,
     })
     macro('vd', {
+      id: 3,
       from: points.mWaist1,
       to: points.mHip,
       x: points.mWaist.x,
     })
     macro('vd', {
+      id: 4,
       from: points.mWaist2,
       to: points.mWaist1,
       x: points.mWaist.x + 15,

@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { Fragment } from 'react'
 import { useTranslation } from 'next-i18next'
 import { SubAccordion } from 'shared/components/accordion.mjs'

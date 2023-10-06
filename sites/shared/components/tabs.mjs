@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import React, { useState, useContext } from 'react'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'

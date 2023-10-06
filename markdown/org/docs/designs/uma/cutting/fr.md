@@ -2,12 +2,18 @@
 title: "Sous-vêtements d'Ursula : Instructions de coupe"
 ---
 
-Ursula se compose d'un front, d'un dos et d'un gusset doublé.
+Uma typically consists of a front, a back, and a lined gusset. In that constallation, this is the cut list:
 
 - **Tissu principal**
   - Couper **1 front**
   - Couper **1 dos**
   - Couper **2 gusset**
+
+However, if you enable the **Bulge** option, the front and gusset will become 1 part. In this case, the cutlist looks like this:
+
+- **Tissu principal**
+  - Couper **1 front**
+  - Couper **1 dos**
 
 <Note>
 

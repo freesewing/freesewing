@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useTranslation } from 'next-i18next'
 import { PanZoomPattern } from 'shared/components/workbench/pan-zoom-pattern.mjs'
 import { TestMenu, ns as menuNs } from './menu.mjs'

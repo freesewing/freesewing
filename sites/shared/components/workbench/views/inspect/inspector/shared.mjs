@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { round } from 'shared/utils.mjs'
 
 export const KeyValTable = ({ rows }) => (

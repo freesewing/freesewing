@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { ResetIcon, EditIcon } from 'shared/components/icons.mjs'
 import { useState, useMemo } from 'react'
 import { SubAccordion } from 'shared/components/accordion.mjs'
@@ -197,6 +198,7 @@ export const MenuItemGroup = ({
     // if it's the isGroup property, or it is false, it shouldn't be shown
     if (itemName === 'isGroup' || item === false) return null
     if (!item) return null
+    if (item.control && control && item.control > control) return null
 
     const ItemIcon = item.icon
       ? item.icon

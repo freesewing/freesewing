@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { logoPath } from 'shared/components/logos/freesewing.mjs'
 
 export const IconWrapper = ({

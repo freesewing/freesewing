@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Hooks
 import { useEffect, useState, useCallback, useMemo } from 'react'
 import { useTranslation } from 'next-i18next'
@@ -25,6 +26,7 @@ import { ExportView, ns as exportNs } from 'shared/components/workbench/views/ex
 import { LogView, ns as logNs } from 'shared/components/workbench/views/logs/index.mjs'
 import { InspectView, ns as inspectNs } from 'shared/components/workbench/views/inspect/index.mjs'
 import { MeasiesView, ns as measiesNs } from 'shared/components/workbench/views/measies/index.mjs'
+import { DocsView, ns as docsNs } from 'shared/components/workbench/views/docs/index.mjs'
 
 export const ns = nsMerge(
   'account',
@@ -41,7 +43,8 @@ export const ns = nsMerge(
   logNs,
   inspectNs,
   measiesNs,
-  headerNs
+  headerNs,
+  docsNs
 )
 
 const defaultUi = {
@@ -59,6 +62,7 @@ const views = {
   logs: LogView,
   inspect: InspectView,
   measies: MeasiesView,
+  docs: DocsView,
 }
 
 const draftViews = ['draft', 'inspect']
@@ -163,7 +167,7 @@ export const Workbench = ({ design, Design, DynamicDocs, saveAs = false, preload
   if (error)
     return (
       <>
-        <WorkbenchHeader {...{ view, setView, update }} />
+        <WorkbenchHeader {...{ view, setView, update }} control={account.control} />
         {error}
         <MobileMenubar />
       </>
@@ -237,7 +241,7 @@ export const Workbench = ({ design, Design, DynamicDocs, saveAs = false, preload
     <>
       {!ui.kiosk && <Header />}
       <div className={`flex flex-row min-h-screen ${ui.kiosk ? kioskClasses : ''}`}>
-        <WorkbenchHeader {...{ view, setView, update, saveAs }} />
+        <WorkbenchHeader {...{ view, setView, update, saveAs }} control={account.control} />
         <div className="grow">{viewContent}</div>
         <MobileMenubar />
       </div>

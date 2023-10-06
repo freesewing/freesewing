@@ -78,26 +78,31 @@ function draftCorneliusPocketFacing({
   // Paperless?
   if (paperless) {
     macro('hd', {
+      id: 1,
       from: points.pU,
       to: points.pocketSide,
       y: points.pU.y - sa - 15,
     })
     macro('hd', {
+      id: 2,
       from: points.pU,
       to: points.pocketWaist,
       y: points.pU.y - sa - 15,
     })
     macro('hd', {
+      id: 3,
       from: points.pocketWaist,
       to: points.pocketFacingTL,
       y: points.pU.y - sa - 15,
     })
     macro('vd', {
+      id: 4,
       from: points.pU,
       to: points.pocketSide,
       x: points.pocketSide.x + sa + 15,
     })
     macro('vd', {
+      id: 5,
       from: points.pocketSide,
       to: points.pocketFacingBR,
       x: points.pocketSide.x + sa + 15,

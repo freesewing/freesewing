@@ -12,7 +12,7 @@ import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { DocsLayout, ns as layoutNs } from 'site/components/layouts/docs.mjs'
 import { loaders } from 'shared/components/dynamic-docs/org.mjs'
 
-export const ns = nsMerge(pageNs, layoutNs, 'designs', 'account')
+export const ns = nsMerge(pageNs, layoutNs, 'designs', 'account', 'tags')
 
 /**
  * a page to display documentation markdown

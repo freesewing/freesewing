@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { PanZoomPattern as ShowPattern } from 'shared/components/workbench/pan-zoom-pattern.mjs'
 import { DraftMenu, ns as menuNs } from './menu.mjs'
 import { PatternWithMenu } from '../pattern-with-menu.mjs'

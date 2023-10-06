@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useTranslation } from 'next-i18next'
 import { analyzeDraftLogLine } from './errors.mjs'
 import Markdown from 'react-markdown'
@@ -86,7 +87,7 @@ export const LogView = ({ pattern, settings, setSettings }) => {
   return (
     <div className="max-w-4xl mx-auto px-4 pb-8">
       <div className="flex">
-        <h1 className="grow">{t('logs')}</h1>
+        <h2 className="grow">{t('logs')}</h2>
         <ClearAllButton setSettings={setSettings} />
       </div>
       <V3Wip />

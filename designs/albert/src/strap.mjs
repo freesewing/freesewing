@@ -40,11 +40,13 @@ export const strap = {
 
     if (!expand) {
       // Expand is on, do not draw the part but flag this to the user
+      const extraSa = sa ? 2 * sa : 0
       store.flag.note({
         msg: `albert:cutStrap`,
+        notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
         replace: {
-          width: units(strapWidth + 2 * sa),
-          length: units(strapLength + strapWidth * 2 + 2 * sa),
+          width: units(strapWidth + extraSa),
+          length: units(strapLength + strapWidth * 2 + extraSa),
         },
         suggest: {
           text: 'flag:show',

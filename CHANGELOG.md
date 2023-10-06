@@ -3,6 +3,112 @@
 
 ## Unreleased
 
+### aaron
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### albert
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### bee
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### benjamin
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### carlton
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### charlie
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### hortensia
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### huey
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### hugo
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### jaeger
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+ - Corrected part mixup in translation of flag message
+
+### octoplushy
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### paco
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### sandy
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### shin
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### sven
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### yuri
+
+#### Changed
+
+ - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### plugin-annotations
+
+#### Changed
+
+ - Added support for notes in flags
+
+
+## 3.0.0 (2022-09-30)
+
 ### global
 
 #### Removed
@@ -18,27 +124,9 @@
  - The `@freesewing/utils` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
  - The `gatsby-remark-jargon` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported.
  - The `remark-jargon` package is not part of FreeSewing v3. While v2 versions remain available, this package is no longer supported. Use `rehype-jargon` instead.
-
-### albert
-
-#### Fixed
-
- - Workaround for not finding a suitable legband radius
-
-### waralee
-
-#### Added
-
- - Added *mini* version of main pants part
- - Added new pocket options
- - Added seperate waistband options
- - Added bow tie placement option
-
-#### Fixed
-
- - Fixed crotch depth issue
- - Fixed pocket size issue
- - Fixed waist shaping issue
+ - The `@freesewing/ursula` package is not part of FreeSewing v3. While v2 versions remain available, use `@freesewing/uma` instead.
+ - The `@freesewing/unice` package is not part of FreeSewing v3. While v2 versions remain available, use `@freesewing/uma` instead.
+ - The `@freesewing/plugin-bundle` package is not part of FreeSewing v3. While v2 versions remain available, v3 uses `@freesewing/core-plugins` instead.
 
 ### plugin-bust
 
@@ -53,10 +141,6 @@
  - This plugin no longer sets its version as an SVG attribute when rendering patterns
 
 ### plugin-gore
-
-#### Breaking
-
- - The `goreNumber` props is removed. Please use `gores` instead
 
 #### Removed
 
@@ -109,13 +193,6 @@
 #### Removed
 
  - This plugin no longer sets its version as an SVG attribute when rendering patterns
-
-### snapseries
-
-#### Breaking
-
- - Named export `smallsteps` has been renamed to `smallSteps`
- - Named export `bigsteps` has been renamed to `bigSteps`
 
 
 ## 2.22.0 (2022-08-23)

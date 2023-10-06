@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { PanZoomContextProvider } from 'shared/components/workbench/pattern/pan-zoom-context.mjs'
 import { MenuWrapper } from 'shared/components/workbench/menus/shared/menu-wrapper.mjs'
 
