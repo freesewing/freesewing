@@ -133,26 +133,26 @@ const config = ({ site, jargon = {} }) => {
       }
 
       // MDX support
-      config.module.rules.push({
-        test: /\.mdx?$/,
-        use: [
-          options.defaultLoaders.babel,
-          {
-            loader: '@mdx-js/loader',
-            //providerImportSource: '@mdx-js/react',
-            options: mdxConfig.options,
-            //  mdxConfig.
-            //  remarkPlugins: [remarkGfm, ...remarkPlugins],
-            //},
-          },
-        ],
-      })
+      //config.module.rules.push({
+      //  test: /\.mdx?$/,
+      //  use: [
+      //    options.defaultLoaders.babel,
+      //    {
+      //      loader: '@mdx-js/loader',
+      //      //providerImportSource: '@mdx-js/react',
+      //      options: mdxConfig.options,
+      //      //  mdxConfig.
+      //      //  remarkPlugins: [remarkGfm, ...remarkPlugins],
+      //      //},
+      //    },
+      //  ],
+      //})
 
       // YAML support
-      config.module.rules.push({
-        test: /\.ya?ml$/,
-        use: 'yaml-loader',
-      })
+      //config.module.rules.push({
+      //  test: /\.ya?ml$/,
+      //  use: 'yaml-loader',
+      //})
 
       // Fix for nextjs bug #17806
       config.module.rules.push({

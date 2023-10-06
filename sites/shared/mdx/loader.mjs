@@ -10,7 +10,6 @@ import remarkFrontmatter from 'remark-frontmatter'
 import remarkGfm from 'remark-gfm'
 import remarkCopyLinkedFiles from 'remark-copy-linked-files'
 import { remarkIntroPlugin } from './remark-intro-plugin.mjs'
-import mdxPluginToc from './mdx-plugin-toc.mjs'
 import smartypants from 'remark-smartypants'
 // Rehype plugins we want to use
 import rehypeHighlight from 'rehype-highlight'
@@ -122,16 +121,5 @@ export const mdxLoader = async (language, site, slug, jargon) => {
     })
   )
 
-  // This is not ideal as we're adding a second pass but for now it will do
-  // See: https://github.com/remarkjs/remark-toc/issues/37
-  const toc = String(
-    await compile(md, {
-      outputFormat: 'function-body',
-      development: false,
-      remarkPlugins: [remarkFrontmatter, remarkGfm, smartypants, [mdxPluginToc, { language }]],
-      rehypePlugins: [rehypeSlug],
-    })
-  )
-
-  return { mdx, intro, toc, frontmatter: frontmatter(md)?.attributes }
+  return { mdx, intro, frontmatter: frontmatter(md)?.attributes }
 }
