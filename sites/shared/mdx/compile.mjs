@@ -1,65 +1,41 @@
-/*// We need fs and path to read from disk
-import fs from 'fs'
 import path from 'path'
-
-// MDX compiler
-import { compile } from '@mdx-js/mdx'
-
-// Remark plugins we want to use
+// MDX compiler & runner
+import * as runtime from 'react/jsx-runtime'
+import { compile, run } from '@mdx-js/mdx'
+// Remark plugins from the ecosystem
 import remarkFrontmatter from 'remark-frontmatter'
+import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 import remarkGfm from 'remark-gfm'
 import remarkCopyLinkedFiles from 'remark-copy-linked-files'
-import { remarkIntroPlugin } from './remark-intro-plugin.mjs'
-import mdxPluginToc from './mdx-plugin-toc.mjs'
 import smartypants from 'remark-smartypants'
-// Rehype plugins we want to use
+// FreeSewing custom remark plugins
+import { remarkIntroAsFrontmatter } from './remark-intro-as-frontmatter.mjs'
+import { remarkTocAsFrontmatter } from './remark-toc-as-frontmatter.mjs'
+// Rehype plugins from the ecosystem
 import rehypeHighlight from 'rehype-highlight'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeSlug from 'rehype-slug'
 import rehypeJargon from 'pkgs/rehype-jargon/src/index.mjs'
 import rehypeHighlightLines from 'pkgs/rehype-highlight-lines/src/index.mjs'
-// Simple frontmatter extractor
-import frontmatter from 'front-matter'
+// FreeSewing custom jargon transform
+import { jargonTransform } from './rehype-jargon-transform.mjs'
 
-const jargonTransform = (term, html) => `<details class="inline jargon-details">
-  <summary class="jargon-term">
-    ${term}
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 jargon-close" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="4" d="M6 18L18 6M6 6l12 12" />
-    </svg>
-  </summary>
-  <div class="jargon-info">
-  ${html}</div></details>`
-
-export const mdxLoader = async (language, site, slug, jargon) => {
-  const mdx = await import(`markdown/docs/${slug}/${language}.md`)
-  //   .then(mod => {
-  //     //setFrontmatter(mod.frontmatter)
-  // console.log({mod})
-  //     return mod
-  //   })
-  console.log({ mdx })
-
-  return {
-    mdx,
-    intro: [''],
-    toc: [''],
-    frontmatter: {}, //frontmatter(md)?.attributes
-  }
-
-  /*
-  // TODO: Will this work on Windows?
-  const md = await fs.promises.readFile(
-    path.resolve(`../../markdown/${site}/${slug}/${language}.md`),
-    'utf-8'
-  )
-  const intro = []
+/*
+ * Compiles markdown/mdx to a function body
+ */
+export const compileMdx = async ({
+  md, // A string holding the markdown
+  site, // The site folder, one of 'org' or 'dev'
+  slug, // The slug to the page below the folder (like 'guides/plugins')
+  jargon, // An object of jargon definitions. See rehype-jargon
+}) => {
   const mdx = String(
     await compile(md, {
       outputFormat: 'function-body',
       development: false,
       remarkPlugins: [
         remarkFrontmatter,
+        remarkMdxFrontmatter,
         remarkGfm,
         smartypants,
         [
@@ -70,14 +46,15 @@ export const mdxLoader = async (language, site, slug, jargon) => {
             staticPath: '/mdx/',
           },
         ],
-        [remarkIntroPlugin, { intro }],
+        remarkTocAsFrontmatter,
+        remarkIntroAsFrontmatter,
       ],
       rehypePlugins: [
         [rehypeJargon, { jargon, transform: jargonTransform }],
         [
           rehypeHighlight,
           {
-            plainText: ['dot', 'http'],
+            plainText: ['dot', 'http', 'mermaid'],
             aliases: {
               javascript: [
                 'design/src/index.mjs',
@@ -128,17 +105,10 @@ export const mdxLoader = async (language, site, slug, jargon) => {
     })
   )
 
-  // This is not ideal as we're adding a second pass but for now it will do
-  // See: https://github.com/remarkjs/remark-toc/issues/37
-  const toc = String(
-    await compile(md, {
-      outputFormat: 'function-body',
-      development: false,
-      remarkPlugins: [remarkFrontmatter, remarkGfm, smartypants, [mdxPluginToc, { language }]],
-      rehypePlugins: [rehypeSlug],
-    })
-  )
+  /*
+   * Pull frontmatter out of mdx content
+   */
+  const { frontmatter } = await run(mdx, runtime)
 
-  return { mdx, intro, toc, frontmatter: frontmatter(md)?.attributes }
+  return { mdx, frontmatter }
 }
-  */

@@ -3,7 +3,7 @@ import { nsMerge } from 'shared/utils.mjs'
 import { pages } from 'site/prebuild/docs.en.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { mdxLoader } from 'shared/mdx/loader.mjs'
+import { loadMdxAsStaticProps } from 'shared/mdx/load.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
@@ -37,20 +37,17 @@ export default Page
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticProps({ locale, params }) {
-  /*
-   * Load mdx from disk and keep it out of the webpack bundle or your computer will melt
-   * not to mention builds will be slow and often run into the resource limits set by Vercel
-   */
-  const { mdx, frontmatter } = await mdxLoader(locale, 'org', `docs/${params.slug.join('/')}`, {})
-
   return {
     props: {
       ...(await serverSideTranslations('en', ns)),
+      ...(await loadMdxAsStaticProps({
+        language: locale,
+        site: 'org',
+        slug: `docs/${params.slug.join('/')}`,
+      })),
       slug: params.slug.join('/'),
       mdxSlug: params.slug,
       locale,
-      mdx,
-      frontmatter,
       page: {
         locale,
         path: ['docs', ...params.slug],
