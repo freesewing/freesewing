@@ -336,7 +336,7 @@ export const Mset = ({ id, publicOnly = false }) => {
           </button>
           {!publicOnly && (
             <>
-              {account.control > 3 && mset.public ? (
+              {account.control > 2 ? (
                 <button
                   onClick={() => {
                     setSuggest(!suggest)
@@ -1105,10 +1105,7 @@ const SuggestCset = ({ mset, backend, setLoadingStatus, t }) => {
         <BoolYesIcon />
         {t('account:notes')}
       </h4>
-      <p>
-        {t('account:csetNotesMsg')}
-        {t('account:csetNotesMsg')}
-      </p>
+      <p>{t('account:csetNotesMsg')}</p>
       <Popout tip compact>
         {t('account:mdSupport')}
       </Popout>

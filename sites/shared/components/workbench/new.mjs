@@ -167,7 +167,7 @@ export const Workbench = ({ design, Design, DynamicDocs, saveAs = false, preload
   if (error)
     return (
       <>
-        <WorkbenchHeader {...{ view, setView, update }} />
+        <WorkbenchHeader {...{ view, setView, update }} control={account.control} />
         {error}
         <MobileMenubar />
       </>
@@ -241,7 +241,7 @@ export const Workbench = ({ design, Design, DynamicDocs, saveAs = false, preload
     <>
       {!ui.kiosk && <Header />}
       <div className={`flex flex-row min-h-screen ${ui.kiosk ? kioskClasses : ''}`}>
-        <WorkbenchHeader {...{ view, setView, update, saveAs }} />
+        <WorkbenchHeader {...{ view, setView, update, saveAs }} control={account.control} />
         <div className="grow">{viewContent}</div>
         <MobileMenubar />
       </div>
