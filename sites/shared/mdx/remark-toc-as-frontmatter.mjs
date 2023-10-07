@@ -1,3 +1,17 @@
+/*
+ * This is a remark plugin that will pull the table of contents out of a
+ * markdown document and add it as the `toc` field in the documents's
+ * frontmatter.
+ *
+ * I wrote this because while a toc plugin exists, it adds the toc to the
+ * document itself. However, I want to be able to display the toc seperate
+ * from the document, so that is why I wrote this.
+ *
+ * I'm not publishing this as a proper remark plugin because while this works
+ * for our use-cases, it may or may not work for the many different ways people
+ * use markdown and remark out there.
+ */
+
 import GithubSlugger from 'github-slugger'
 
 const defaultOptions = {
@@ -49,7 +63,7 @@ const tocAsProperty = (toc) => ({
   },
 })
 
-export default function mdxToc(options = {}) {
+export function remarkTocAsFrontmatter(options = {}) {
   return (node) => {
     const slugger = new GithubSlugger()
     options = { ...defaultOptions, options }

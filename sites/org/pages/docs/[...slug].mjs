@@ -3,6 +3,8 @@ import { nsMerge } from 'shared/utils.mjs'
 import { pages } from 'site/prebuild/docs.en.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import * as runtime from 'react/jsx-runtime'
+import { runSync } from '@mdx-js/mdx'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
@@ -27,7 +29,6 @@ const Page = ({ page, locale, intro, frontmatter, mdx, mdxSlug }) => (
     intro={intro}
     layout={(props) => <DocsLayout {...props} {...{ slug: page.path.join('/'), frontmatter }} />}
   >
-    <pre>{JSON.stringify(frontmatter, null, 2)}</pre>
     <MdxWrapper mdx={mdx} site="org" slug={mdxSlug} />
   </PageWrapper>
 )
@@ -43,12 +44,12 @@ export async function getStaticProps({ locale, params }) {
    * Load mdx from disk and keep it out of the webpack bundle or your computer will melt
    * not to mention builds will be slow and often run into the resource limits set by Vercel
    */
-  const { mdx, intro, frontmatter } = await mdxLoader(
-    locale,
-    'org',
-    `docs/${params.slug.join('/')}`,
-    {}
-  )
+  const mdx = await mdxLoader(locale, 'org', `docs/${params.slug.join('/')}`, {})
+
+  /*
+   * Pull frontmatter out of mdx content
+   */
+  const { frontmatter } = await runSync(mdx, runtime)
 
   return {
     props: {
@@ -57,7 +58,6 @@ export async function getStaticProps({ locale, params }) {
       mdxSlug: params.slug,
       locale,
       mdx,
-      intro,
       frontmatter,
       page: {
         locale,
