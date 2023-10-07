@@ -5,20 +5,22 @@ import path from 'path'
 // MDX compiler
 import { compile } from '@mdx-js/mdx'
 
-// Remark plugins we want to use
+// Remark plugins from the ecosystem
 import remarkFrontmatter from 'remark-frontmatter'
+import remarkMdxFrontmatter from 'remark-mdx-frontmatter'
 import remarkGfm from 'remark-gfm'
 import remarkCopyLinkedFiles from 'remark-copy-linked-files'
-import { remarkIntroPlugin } from './remark-intro-plugin.mjs'
 import smartypants from 'remark-smartypants'
-// Rehype plugins we want to use
+// FreeSewing custom remark plugins
+import { remarkIntroAsFrontmatter } from './remark-intro-as-frontmatter.mjs'
+import { remarkTocAsFrontmatter } from './remark-toc-as-frontmatter.mjs'
+// Rehype plugins from the ecosystem
 import rehypeHighlight from 'rehype-highlight'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeSlug from 'rehype-slug'
 import rehypeJargon from 'pkgs/rehype-jargon/src/index.mjs'
 import rehypeHighlightLines from 'pkgs/rehype-highlight-lines/src/index.mjs'
-// Simple frontmatter extractor
-import frontmatter from 'front-matter'
+
 /*
  * Summary: Loads markdown from disk and compiles it as MDX.
  *
@@ -29,7 +31,6 @@ import frontmatter from 'front-matter'
  * @link https://mdxjs.com/guides/mdx-on-demand/
  *
  */
-
 const jargonTransform = (term, html) => `<details class="inline jargon-details">
   <summary class="jargon-term">
     ${term}
@@ -53,6 +54,7 @@ export const mdxLoader = async (language, site, slug, jargon) => {
       development: false,
       remarkPlugins: [
         remarkFrontmatter,
+        remarkMdxFrontmatter,
         remarkGfm,
         smartypants,
         [
@@ -63,7 +65,8 @@ export const mdxLoader = async (language, site, slug, jargon) => {
             staticPath: '/mdx/',
           },
         ],
-        [remarkIntroPlugin, { intro }],
+        remarkTocAsFrontmatter,
+        [remarkIntroAsFrontmatter, { intro }],
       ],
       rehypePlugins: [
         [rehypeJargon, { jargon, transform: jargonTransform }],
@@ -121,5 +124,5 @@ export const mdxLoader = async (language, site, slug, jargon) => {
     })
   )
 
-  return { mdx, intro, frontmatter: frontmatter(md)?.attributes }
+  return mdx
 }

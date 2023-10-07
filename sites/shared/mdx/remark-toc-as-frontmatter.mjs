@@ -49,7 +49,7 @@ const tocAsProperty = (toc) => ({
   },
 })
 
-export default function mdxToc(options = {}) {
+export function remarkTocAsFrontmatter(options = {}) {
   return (node) => {
     const slugger = new GithubSlugger()
     options = { ...defaultOptions, options }
