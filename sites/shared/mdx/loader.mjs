@@ -2,8 +2,9 @@
 import fs from 'fs'
 import path from 'path'
 
-// MDX compiler
-import { compile } from '@mdx-js/mdx'
+// MDX compiler & runner
+import * as runtime from 'react/jsx-runtime'
+import { compile, run } from '@mdx-js/mdx'
 
 // Remark plugins from the ecosystem
 import remarkFrontmatter from 'remark-frontmatter'
@@ -124,5 +125,10 @@ export const mdxLoader = async (language, site, slug, jargon) => {
     })
   )
 
-  return mdx
+  /*
+   * Pull frontmatter out of mdx content
+   */
+  const { frontmatter } = await run(mdx, runtime)
+
+  return { mdx, frontmatter }
 }
