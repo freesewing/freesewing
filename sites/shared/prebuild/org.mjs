@@ -7,7 +7,7 @@ import mustache from 'mustache'
 const loadPageTemplate = async (name) =>
   await fs.promises.readFile(path.resolve(`../org/page-templates/${name}.mustache`), 'utf-8')
 
-const generateNewDesignPages = async () => {
+const generateNewPatternPages = async () => {
   const page = await loadPageTemplate('new-pattern.mjs')
   for (const design of collection) {
     await fs.promises.writeFile(
@@ -20,6 +20,22 @@ const generateNewDesignPages = async () => {
   }
 }
 
+const generateEditPatternPages = async () => {
+  const page = await loadPageTemplate('edit-pattern.mjs')
+  for (const design of collection) {
+    const dir = `../org/pages/account/patterns/${design}/[id]`
+    await fs.promises.mkdir(path.resolve(dir), { recursive: true })
+    await fs.promises.writeFile(
+      path.resolve(`${dir}/edit.mjs`),
+      mustache.render(page, {
+        design,
+        Design: capitalize(design),
+      })
+    )
+  }
+}
+
 export const prebuildOrg = async () => {
-  await generateNewDesignPages()
+  await generateNewPatternPages()
+  await generateEditPatternPages()
 }

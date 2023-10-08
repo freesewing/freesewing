@@ -52,7 +52,7 @@ prebuildRunner({
     /*
      * Always prebuild the site-specific page generation
      */
-    pageTemplates: true,
+    'Page Templates': true,
 
     // PREBUILD IN PRUDUCTION - MOCK/SKIP IN DEV ///////////////////////////////
 

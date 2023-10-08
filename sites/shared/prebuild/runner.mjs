@@ -34,7 +34,7 @@ const handlers = {
   posts,
   navigation,
   git,
-  pageTemplates: true,
+  'Page Templates': true,
   // FIXME: This needs work, but perhaps after v3
   //ogImages,
 }
@@ -43,7 +43,7 @@ const handlers = {
  * Site specific handlers
  */
 const siteSpecificHandlers = {
-  pageTemplates: {
+  'Page Templates': {
     org: orgPageTemplates,
   },
 }
@@ -79,8 +79,9 @@ export const prebuildRunner = async ({
       typeof siteSpecificHandlers?.[step]?.[site] === 'undefined'
         ? handlers[step]
         : siteSpecificHandlers[step][site]
-    if (task === true) await oraPromise(task(store), { text: `Prebuild ${capitalize(step)}` })
-    else if (task === 'productionOnly')
+    if (prebuild[step] === true)
+      await oraPromise(task(store), { text: `Prebuild ${capitalize(step)}` })
+    else if (prebuild[step] === 'productionOnly')
       await oraPromise(task(store, !PRODUCTION), {
         text: `Prebuild ${capitalize(step)}${PRODUCTION ? '' : ' (mocked)'}`,
       })
