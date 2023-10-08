@@ -19,7 +19,7 @@ export const InspectView = ({
   update,
   language,
   account,
-  DynamicDocs,
+  docs,
   setView,
   view,
 }) => {
@@ -95,7 +95,7 @@ export const InspectView = ({
                 update,
                 language,
                 account,
-                DynamicDocs,
+                docs,
                 inspector,
                 renderProps,
                 view,

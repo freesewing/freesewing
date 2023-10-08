@@ -30,7 +30,7 @@ export const PrintView = ({
   update,
   language,
   account,
-  DynamicDocs,
+  docs,
   Design,
 }) => {
   const { t } = useTranslation(ns)
@@ -113,7 +113,7 @@ export const PrintView = ({
                 update,
                 language,
                 account,
-                DynamicDocs,
+                docs,
                 exportIt,
               }}
             />

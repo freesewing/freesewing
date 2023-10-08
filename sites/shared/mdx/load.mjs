@@ -21,20 +21,20 @@ export const loadMdxAsStaticProps = async ({
   language, // The language code of the markdown to load (like 'en')
   site, // The site folder, one of 'dev' or 'org'
   slug = false, // The slug below that folder, like 'guides/plugins'
-  slugs = [], // Or an array of slugs to load multiple files
+  slugs = {}, // An object where key is an ID and value the slug to load
 }) => {
-  const result = []
-  if (slug) slugs = [slug]
-  for (const s of slugs) {
-    const md = await loadMdxFromDisk({ language, site, slug: s })
+  const result = {}
+  if (slug) result.default = slug
+  for (const [key, val] of Object.entries(slugs)) {
+    const md = await loadMdxFromDisk({ language, site, slug: val })
     const mdx = await compileMdx({
       md,
       site,
-      slug: s,
+      slug: val,
       jargon: jargon[language],
     })
-    result.push(mdx)
+    result[key] = { mdx, slug: val }
   }
 
-  return slugs.length === 1 ? result[0] : result
+  return slug ? result.default : result
 }

@@ -60,7 +60,7 @@ const DesignOption = ({ config, settings, control, ...rest }) => {
  * @param  {Object}  options.update        settings and ui update functions
  * @param  {String}  options.language      the menu language
  * @param  {Object}  options.account       the user account data
- * @param  {Boolean|React.component} options.DynamicDocs   A docs component
+ * @param  {Object}  options.docs          inline docs as compiled mdx
  */
 export const DesignOptions = ({
   design,
@@ -70,7 +70,7 @@ export const DesignOptions = ({
   language,
   account,
   isFirst = true,
-  DynamicDocs = false,
+  docs,
 }) => {
   const menuNs = [design, ...ns]
   const optionsMenu = useMemo(
@@ -94,7 +94,7 @@ export const DesignOptions = ({
         config: optionsMenu,
         control: account.control,
         currentValues: settings.options,
-        DynamicDocs,
+        docs,
         emojis,
         getDocsPath,
         Icon: OptionsIcon,

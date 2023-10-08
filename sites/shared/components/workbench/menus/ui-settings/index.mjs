@@ -19,7 +19,7 @@ const UiSetting = ({ name, control, ...rest }) => (
   />
 )
 
-export const UiSettings = ({ update, ui, control, language, DynamicDocs, view, setView }) => {
+export const UiSettings = ({ update, ui, control, language, docs, view, setView }) => {
   const settingsConfig = loadSettingsConfig()
 
   return (
@@ -28,7 +28,7 @@ export const UiSettings = ({ update, ui, control, language, DynamicDocs, view, s
         config: settingsConfig,
         control,
         currentValues: ui,
-        DynamicDocs,
+        docs,
         getDocsPath: (setting) => `site/draft/ui-settings${setting ? `/${setting}` : ''}`,
         Icon: DesktopIcon,
         inputs,

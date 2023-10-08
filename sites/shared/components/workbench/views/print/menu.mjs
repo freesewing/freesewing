@@ -46,7 +46,7 @@ export const PrintMenu = ({
   update,
   language,
   account,
-  DynamicDocs,
+  docs,
   exportIt,
   pattern,
 }) => {
@@ -58,7 +58,7 @@ export const PrintMenu = ({
     update,
     language,
     account,
-    DynamicDocs,
+    docs,
     control: account.control,
   }
 

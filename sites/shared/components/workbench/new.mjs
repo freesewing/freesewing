@@ -68,8 +68,9 @@ const views = {
 const draftViews = ['draft', 'inspect']
 
 const kioskClasses = 'z-30 w-screen h-screen fixed top-0 left-0 bg-base-100'
+const noDocs = { measurements: {}, options: {} }
 
-export const Workbench = ({ design, Design, DynamicDocs, saveAs = false, preload = false }) => {
+export const Workbench = ({ design, Design, docs = noDocs, saveAs = false, preload = false }) => {
   // Hooks
   const { t, i18n } = useTranslation([...ns, design])
   const { language } = i18n
@@ -184,7 +185,7 @@ export const Workbench = ({ design, Design, DynamicDocs, saveAs = false, preload
     setSettings,
     ui,
     language,
-    DynamicDocs,
+    docs,
     Design,
     saveAs,
   }

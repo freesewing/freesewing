@@ -66,7 +66,7 @@ export const ClearAllButton = ({ setSettings, compact = false }) => {
  * @param  {Object} options.patternConfig the configuration from the pattern
  * @param  {String} options.language      the menu language
  * @param  {Object} options.account       the user account data
- * @param  {Boolean|React.Com options.DynamicDocs   A docs component
+ * @param  {Object} options.docs          inline docs as compiled mdx
  */
 export const CoreSettings = ({
   update,
@@ -74,7 +74,7 @@ export const CoreSettings = ({
   patternConfig,
   language,
   account,
-  DynamicDocs,
+  docs,
   design,
 }) => {
   const settingsConfig = loadSettingsConfig({
@@ -95,7 +95,7 @@ export const CoreSettings = ({
         config: settingsConfig,
         control: account.control,
         currentValues: settings,
-        DynamicDocs,
+        docs,
         getDocsPath: (setting) => `site/draft/core-settings${setting ? `/${setting}` : ''}`,
         Icon: SettingsIcon,
         inputs,

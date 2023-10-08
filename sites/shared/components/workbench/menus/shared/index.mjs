@@ -14,7 +14,7 @@ import { useTranslation } from 'next-i18next'
  * @param  {Object}   options.values        a map of value components to use, keyed by option name
  * @param  {Object}   options.currentValues a map of the values of the menu's options
  * @param  {Object}   options.passProps     any additional properties to pass the the inputs
- * @param  {DynamicDocs | Boolean}  DynamicDocs           the docs component to use for loading documentation
+ * @param  {Object}   docs                  the inline docs as compiled mdx
  * @param  {Function} getDocsPath           a function that accepts an item name and returns a path to its documentation
  * @param  {string}   language              the language to use for the menu
  * @param  {Object}   emojis                a map of the emojis to use, keyed by option name
@@ -31,7 +31,7 @@ export const WorkbenchMenu = ({
   values,
   currentValues,
   passProps = {},
-  DynamicDocs = false,
+  docs,
   getDocsPath = () => {},
   language,
   emojis,
@@ -61,7 +61,7 @@ export const WorkbenchMenu = ({
         updateFunc,
         emojis,
         t,
-        DynamicDocs,
+        docs,
         getDocsPath,
         language,
         isDesignOptionsGroup,

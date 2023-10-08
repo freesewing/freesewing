@@ -41,7 +41,7 @@ export const CutMenu = ({
   update,
   language,
   account,
-  DynamicDocs,
+  docs,
   materialSettings,
   setSettings,
 }) => {
@@ -53,7 +53,7 @@ export const CutMenu = ({
     update,
     language,
     account,
-    DynamicDocs,
+    docs,
     control,
   }
   return (

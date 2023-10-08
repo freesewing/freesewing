@@ -5,6 +5,7 @@ import { SubAccordion } from 'shared/components/accordion.mjs'
 import { FormControl } from 'shared/components/inputs.mjs'
 import { BoxIcon as GroupIcon, OptionsIcon } from 'shared/components/icons.mjs'
 import { optionType } from 'shared/utils.mjs'
+import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 
 /**
  * Check to see if a value is different from its default
@@ -39,6 +40,17 @@ export const ItemTitle = ({ name, t, current = null, open = false, emoji = '', I
 /** @type {String} class to apply to buttons on open menu items */
 const iconButtonClass = 'btn btn-xs btn-ghost px-0 text-accent'
 
+const InlineOptionDocs = ({ docs, name }) => {
+  const idocs = docs?.options?.[name.toLowerCase()]
+
+  return idocs ? (
+    <>
+      <h1>{idocs.mdx.frontmatter.title}</h1>
+      <MdxWrapper mdx={idocs.mdx.mdx} site="org" slug={idocs.slug} />
+    </>
+  ) : null
+}
+
 /**
  * A generic component for handling a menu item.
  * Wraps the given input in a {@see Collapse} with the appropriate buttons
@@ -63,13 +75,10 @@ export const MenuItem = ({
   t,
   passProps = {},
   changed,
-  //loadDocs,
   Input = () => {},
-  //Value = () => {},
   allowOverride = false,
-  //allowToggle = false,
   control = Infinity,
-  DynamicDocs,
+  docs,
   docsPath,
   language,
   design,
@@ -134,7 +143,7 @@ export const MenuItem = ({
   return (
     <FormControl
       label={<span className="text-base font-normal">{t([`${name}.d`, name])}</span>}
-      docs={<DynamicDocs path={docsPath} language={language} />}
+      docs={<InlineOptionDocs {...{ name, docs }} />}
       id={config.name}
       labelBR={<div className="flex flex-row items-center gap-2">{buttons}</div>}
       labelBL={
@@ -187,7 +196,7 @@ export const MenuItemGroup = ({
   updateFunc,
   topLevel = false,
   t,
-  DynamicDocs,
+  docs,
   language,
   getDocsPath,
   isDesignOptionsGroup = false,
@@ -256,7 +265,7 @@ export const MenuItemGroup = ({
             emojis,
             updateFunc,
             t,
-            DynamicDocs,
+            docs,
             language,
             getDocsPath,
             isDesignOptionsGroup,
@@ -278,7 +287,7 @@ export const MenuItemGroup = ({
             loadDocs,
             updateFunc,
             passProps,
-            DynamicDocs,
+            docs,
             docsPath: getDocsPath(itemName),
             language,
             design,

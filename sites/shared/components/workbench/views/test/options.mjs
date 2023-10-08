@@ -64,7 +64,7 @@ export const TestOptions = ({
   language,
   account,
   isFirst = true,
-  DynamicDocs = false,
+  docs,
 }) => {
   const menuNs = [`o_${design}`, ...ns]
   const optionsMenu = optionsMenuStructure(patternConfig.options)
@@ -75,7 +75,7 @@ export const TestOptions = ({
       {...{
         config: optionsMenu,
         control: account.control,
-        DynamicDocs,
+        docs,
         emojis,
         getDocsPath,
         Icon: OptionsIcon,
