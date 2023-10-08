@@ -275,7 +275,7 @@ export const Pattern = ({ id }) => {
               ) : (
                 <>
                   <Link
-                    href={`/account/patterns/${pattern.id}/edit`}
+                    href={`/account/patterns/${pattern.design}/${pattern.id}/edit`}
                     className={`btn btn-primary btn-outline ${horFlexClasses}`}
                   >
                     <FreeSewingIcon /> {t('updatePattern')}
