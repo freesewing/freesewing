@@ -8,6 +8,11 @@ export const back = {
     backNeckCutout: 0.05,
     backlineBend: { pct: 50, min: 25, max: 100, menu: 'style' },
     knitBindingWidth: { pct: 600, min: 300, max: 800, menu: 'style' },
+    // Hide options from brian
+    brianFitSleeve: false,
+    cuffEase: 0,
+    s3Collar: 0,
+    s3Armhole: 0,
   },
   draft: ({
     store,
