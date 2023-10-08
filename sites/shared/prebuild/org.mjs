@@ -8,7 +8,7 @@ const loadPageTemplate = async (name) =>
   await fs.promises.readFile(path.resolve(`../org/page-templates/${name}.mustache`), 'utf-8')
 
 const generateNewDesignPages = async () => {
-  const page = await loadPageTemplate('new-design.mjs')
+  const page = await loadPageTemplate('new-pattern.mjs')
   for (const design of collection) {
     await fs.promises.writeFile(
       path.resolve(`../org/pages/new/${design}.mjs`),
