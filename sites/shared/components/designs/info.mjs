@@ -21,7 +21,6 @@ import { ns as designNs } from 'shared/components/designs/design.mjs'
 import { Difficulty } from 'shared/components/designs/difficulty.mjs'
 import { PageLink, AnchorLink, Link } from 'shared/components/link.mjs'
 import { DocsLink, DocsTitle } from 'shared/components/mdx/docs-helpers.mjs'
-import { DynamicOrgDocs as DynamicDocs } from 'site/components/dynamic-org-docs.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { NewPatternIcon } from 'shared/components/icons.mjs'
 
@@ -37,13 +36,10 @@ export const ns = nsMerge(
   'tags'
 )
 
-const Option = ({ id, option, t, design }) =>
+const Option = ({ id, option, design }) =>
   optionType(option) === 'constant' ? null : (
     <li key={option.name}>
-      <PageLink
-        txt={t(`${design}:${option.name}.t`)}
-        href={`/docs/designs/${design}/options/${id.toLowerCase()}`}
-      />
+      <DocsLink site="org" slug={`docs/designs/${design}/options/${id.toLowerCase()}`} />
     </li>
   )
 
@@ -55,7 +51,7 @@ const OptionGroup = ({ id, group, t, design }) => (
         entry.isGroup ? (
           <OptionGroup id={sid} key={sid} t={t} group={entry} desing={design} />
         ) : (
-          <Option key={sid} id={sid} t={t} option={entry} design={design} />
+          <Option key={sid} id={sid} option={entry} design={design} />
         )
       )}
     </ul>
@@ -168,7 +164,6 @@ export const DesignInfo = ({ design, docs = false, workbench = false }) => {
                   format={(t) => t.split(':').pop().trim()}
                 />
               </h2>
-              <DynamicDocs path={`designs/${design}/notes`} language={language} noFooter noTitle />
             </>
           )}
           {docs ? docsContent : null}
@@ -229,12 +224,6 @@ export const DesignInfo = ({ design, docs = false, workbench = false }) => {
                       format={(t) => t.split(':').pop().trim()}
                     />
                   </h2>
-                  <DynamicDocs
-                    path={`designs/${design}/${page}`}
-                    language={language}
-                    noFooter
-                    noTitle
-                  />
                 </Fragment>
               ))}
 

@@ -8,18 +8,12 @@ import { Tab, Tabs } from '../tabs.mjs'
 import { TabbedExample as Example } from './tabbed-example.mjs'
 import { HttpMethod, HttpStatusCode } from './http.mjs'
 import { ControlTip } from '../control/tip.mjs'
-import { Legend } from './legend.mjs'
 import { DocsTitle, DocsLink } from './docs-helpers.mjs'
-import { V3Wip } from '../v3-wip.mjs'
+// Extra components
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+import { collection } from 'site/hooks/use-design.mjs'
 
-const WipWithReadMore = (props) => (
-  <>
-    <V3Wip {...props} />
-    <ReadMore />
-  </>
-)
-
-export const components = (site = 'org') => {
+export const components = (site = 'org', slug = []) => {
   const base = {
     Comment: (props) => <Popout {...props} comment />,
     Fixme: (props) => <Popout {...props} fixme />,
@@ -59,13 +53,24 @@ export const components = (site = 'org') => {
       StatusCode: HttpStatusCode,
     }
 
+  const specific = {}
+  if (
+    site === 'org' &&
+    slug &&
+    slug.length === 2 &&
+    slug[0] === 'designs' &&
+    collection.includes(slug[1])
+  )
+    specific.DesignInfo = DesignInfo
+
   return {
     ...base,
     ...extra,
-    PatternDocs: WipWithReadMore,
-    PatternOptions: WipWithReadMore,
-    PatternMeasurements: WipWithReadMore,
-    Gauge: V3Wip,
-    Legend,
+    ...specific,
+    //PatternDocs: WipWithReadMore,
+    //PatternOptions: WipWithReadMore,
+    //PatternMeasurements: WipWithReadMore,
+    //Gauge: V3Wip,
+    //Legend,
   }
 }

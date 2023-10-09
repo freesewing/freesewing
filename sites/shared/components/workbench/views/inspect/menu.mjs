@@ -22,7 +22,6 @@ export const DraftMenu = ({
   update,
   language,
   account,
-  DynamicDocs,
   inspector = false,
   renderProps,
   view,
@@ -36,7 +35,6 @@ export const DraftMenu = ({
     update,
     language,
     account,
-    DynamicDocs,
     control,
   }
 

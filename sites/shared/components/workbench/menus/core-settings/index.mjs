@@ -5,6 +5,7 @@ import { loadSettingsConfig, defaultSamm } from './config.mjs'
 import { SettingsIcon, TrashIcon } from 'shared/components/icons.mjs'
 import { WorkbenchMenu } from '../shared/index.mjs'
 import { MenuItem } from '../shared/menu-item.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 // input components and event handlers
 import { inputs, handlers } from './inputs.mjs'
 // values
@@ -40,6 +41,12 @@ const CoreSetting = ({ name, config, control, updateFunc, current, passProps, ..
         allowToggle,
         updateFunc: handler,
       }}
+      docs={
+        <DynamicMdx
+          language={rest.language}
+          slug={`docs/site/draft/core-settings/${name.toLowerCase()}`}
+        />
+      }
     />
   )
 }
@@ -66,17 +73,8 @@ export const ClearAllButton = ({ setSettings, compact = false }) => {
  * @param  {Object} options.patternConfig the configuration from the pattern
  * @param  {String} options.language      the menu language
  * @param  {Object} options.account       the user account data
- * @param  {Boolean|React.Com options.DynamicDocs   A docs component
  */
-export const CoreSettings = ({
-  update,
-  settings,
-  patternConfig,
-  language,
-  account,
-  DynamicDocs,
-  design,
-}) => {
+export const CoreSettings = ({ update, settings, patternConfig, language, account, design }) => {
   const settingsConfig = loadSettingsConfig({
     language,
     units: settings.units,
@@ -95,8 +93,6 @@ export const CoreSettings = ({
         config: settingsConfig,
         control: account.control,
         currentValues: settings,
-        DynamicDocs,
-        getDocsPath: (setting) => `site/draft/core-settings${setting ? `/${setting}` : ''}`,
         Icon: SettingsIcon,
         inputs,
         language,

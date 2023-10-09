@@ -23,7 +23,7 @@ export const DocsTitle = ({ slug, className = '', site = 'org', format = default
 }
 
 export const DocsLink = (props) => (
-  <Link href={`${props.site === 'org' ? '/docs/' : ''}${props.slug}`} className={linkClasses}>
+  <Link href={`/${props.slug}`} className={linkClasses}>
     <DocsTitle {...props} />
   </Link>
 )

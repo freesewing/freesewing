@@ -28,13 +28,13 @@ import {
 } from 'shared/components/icons.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { PageLink } from 'shared/components/link.mjs'
-import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const ns = ['workbench', 'status']
 
 export const SaveView = ({ design, settings, setView, saveAs }) => {
   // Hooks
-  const { t } = useTranslation(ns)
+  const { t, i18n } = useTranslation(ns)
   const backend = useBackend()
   const router = useRouter()
   const { setLoadingStatus } = useContext(LoadingStatusContext)
@@ -112,6 +112,11 @@ export const SaveView = ({ design, settings, setView, saveAs }) => {
     } else setLoadingStatus([true, 'backendError', true, false])
   }
 
+  const docs = {}
+  for (const field of ['name', 'notes', 'goto']) {
+    docs[field] = <DynamicMdx language={i18n.language} slug={`docs/site/patterns/${field}`} />
+  }
+
   return (
     <AuthWrapper>
       <div className="m-auto mt-8 max-w-2xl px-4">
@@ -154,7 +159,7 @@ export const SaveView = ({ design, settings, setView, saveAs }) => {
             current={name}
             update={setName}
             valid={notEmpty}
-            docs={<DynamicOrgDocs language={router.locale} path={`site/patterns/name`} />}
+            docs={docs.name}
           />
 
           {withNotes ? (
@@ -162,7 +167,7 @@ export const SaveView = ({ design, settings, setView, saveAs }) => {
               label={t('workbench:notes')}
               current={notes}
               update={setNotes}
-              docs={<DynamicOrgDocs language={router.locale} path={`site/patterns/notes`} />}
+              docs={docs.notes}
             />
           ) : null}
         </div>
@@ -170,6 +175,7 @@ export const SaveView = ({ design, settings, setView, saveAs }) => {
           update={setEditAfterSaveAs}
           label={t('workbench:whereToGoAfterSaveAs')}
           current={editAfterSaveAs}
+          docs={docs.goto}
           list={[
             {
               val: true,

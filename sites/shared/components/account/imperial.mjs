@@ -9,7 +9,7 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { Icons, welcomeSteps, BackToAccountButton, NumberBullet } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 import { ListInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const ns = ['account', 'status']
 
@@ -59,7 +59,7 @@ export const ImperialSettings = ({ welcome = false }) => {
         }))}
         current={selection}
         update={update}
-        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/units`} />}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/units`} />}
       />
       {welcome ? (
         <>
