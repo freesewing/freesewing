@@ -16,7 +16,7 @@
  * remark out there.
  */
 
-const extractIntro = (node, options, slugger) => {
+const extractIntro = (node) => {
   const intro = []
   for (const el of node.children.filter((node) => node.type === 'paragraph').slice(0, 3)) {
     for (const child of el.children) {
@@ -42,7 +42,7 @@ const introAsProperty = (intro) => ({
   value: { type: 'Literal', value: intro },
 })
 
-export function remarkIntroAsFrontmatter(options = {}) {
+export function remarkIntroAsFrontmatter() {
   return (node) => {
     const esm = node.children.filter((child) => child.type === 'mdxjsEsm')
     if (

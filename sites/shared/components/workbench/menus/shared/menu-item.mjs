@@ -5,7 +5,6 @@ import { SubAccordion } from 'shared/components/accordion.mjs'
 import { FormControl } from 'shared/components/inputs.mjs'
 import { BoxIcon as GroupIcon, OptionsIcon } from 'shared/components/icons.mjs'
 import { optionType } from 'shared/utils.mjs'
-import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 
 /**
  * Check to see if a value is different from its default

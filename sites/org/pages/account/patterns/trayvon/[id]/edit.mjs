@@ -25,7 +25,7 @@ const EditDesignComponent = ({ id, design, Design, settings, docs }) => (
   <Workbench preload={{ settings }} saveAs={{ pattern: id }} {...{ design, Design, docs }} />
 )
 
-const EditTrayvonPage = ({ page, docs, design, id }) => {
+const EditTrayvonPage = ({ page, docs, id }) => {
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
   const { t } = useTranslation(ns)

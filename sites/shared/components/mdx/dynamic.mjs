@@ -20,8 +20,6 @@ const titles = {
   6: ({ title }) => <h6>{title}</h6>,
 }
 
-const NoTitle = () => null
-
 export const DynamicMdx = ({ site = 'org', slug, language, title = 1 }) => {
   const [mdx, setMdx] = useState(false)
   const [frontmatter, setFrontmatter] = useState(false)

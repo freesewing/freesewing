@@ -76,7 +76,7 @@ export const prebuildRunner = async ({
    */
   for (const step in handlers) {
     const task =
-      typeof siteSpecificHandlers?.[step]?.[site] === 'undefined'
+      typeof siteSpecificHandlers[step]?.[site] === 'undefined'
         ? handlers[step]
         : siteSpecificHandlers[step][site]
     if (prebuild[step] === true)

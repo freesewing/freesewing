@@ -46,7 +46,7 @@ export const PlainMdxWrapperAsync = ({ mdx = false, components = {}, site = 'org
    */
   useEffect(() => {
     const run = async () => {
-      const Content = await runMdx(mdx, allComponents)
+      const Content = await runMdx(mdx)
       setMDX(<Content components={allComponents} />)
     }
     if (mdx) run()
@@ -64,7 +64,7 @@ export const PlainMdxWrapperSync = ({ mdx = false, components = {}, site = 'org'
   /*
    * Run mdx sync
    */
-  const Content = runMdxSync(mdx, allComponents)
+  const Content = runMdxSync(mdx)
 
   return (
     <div className="searchme">
