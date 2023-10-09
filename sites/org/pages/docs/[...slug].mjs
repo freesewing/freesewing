@@ -8,8 +8,9 @@ import { loadMdxAsStaticProps } from 'shared/mdx/load.mjs'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { DocsLayout, ns as layoutNs } from 'site/components/layouts/docs.mjs'
+import { ns as designNs } from 'shared/components/designs/info.mjs'
 
-export const ns = nsMerge(pageNs, layoutNs, 'designs', 'account', 'tags')
+export const ns = nsMerge(pageNs, layoutNs, designNs)
 
 /**
  * A page to display documentation markdown

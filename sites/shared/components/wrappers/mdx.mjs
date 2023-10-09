@@ -1,7 +1,7 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 import * as runtime from 'react/jsx-runtime'
-import { runSync } from '@mdx-js/mdx'
+import { run, runSync } from '@mdx-js/mdx'
 import { useState, useEffect } from 'react'
 // Components that are available in MDX content
 import { components as baseComponents } from 'shared/components/mdx/index.mjs'
@@ -14,7 +14,7 @@ import { Loading } from 'shared/components/spinner.mjs'
  * This is the default async version
  */
 const runMdx = async (mdx) => {
-  const { default: Content } = await runSync(mdx, runtime)
+  const { default: Content } = await run(mdx, runtime)
 
   return Content
 }

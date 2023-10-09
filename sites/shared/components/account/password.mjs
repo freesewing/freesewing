@@ -13,7 +13,7 @@ import { SaveSettingsButton } from 'shared/components/buttons/save-settings-butt
 import { Popout } from 'shared/components/popout/index.mjs'
 import { RightIcon } from 'shared/components/icons.mjs'
 import { PasswordInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const ns = ['account', 'status']
 
@@ -46,7 +46,7 @@ export const PasswordSettings = ({ welcome = false }) => {
         update={setPassword}
         valid={(val) => val.length > 0}
         placeholder={t('passwordTitle')}
-        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/password`} />}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/password`} />}
       />
       <SaveSettingsButton btnProps={{ onClick: save, disabled: password.length < 4 }} />
       {!welcome && <BackToAccountButton />}

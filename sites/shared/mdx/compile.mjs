@@ -11,6 +11,7 @@ import smartypants from 'remark-smartypants'
 // FreeSewing custom remark plugins
 import { remarkIntroAsFrontmatter } from './remark-intro-as-frontmatter.mjs'
 import { remarkTocAsFrontmatter } from './remark-toc-as-frontmatter.mjs'
+import { remarkGithubImages } from './remark-github-images.mjs'
 // Rehype plugins from the ecosystem
 import rehypeHighlight from 'rehype-highlight'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
@@ -28,6 +29,7 @@ export const compileMdx = async ({
   site, // The site folder, one of 'org' or 'dev'
   slug, // The slug to the page below the folder (like 'guides/plugins')
   jargon, // An object of jargon definitions. See rehype-jargon
+  fromGithub = false, // Set this to true when dynamically loading mdx from Github
 }) => {
   const mdx = String(
     await compile(md, {
@@ -38,14 +40,16 @@ export const compileMdx = async ({
         remarkMdxFrontmatter,
         remarkGfm,
         smartypants,
-        [
-          remarkCopyLinkedFiles,
-          {
-            destinationDir: path.resolve(`../${site}/public/mdx`),
-            sourceDir: path.resolve(`../../markdown/${site}/${slug}`),
-            staticPath: '/mdx/',
-          },
-        ],
+        fromGithub
+          ? remarkGithubImages
+          : [
+              remarkCopyLinkedFiles,
+              {
+                destinationDir: path.resolve(`../${site}/public/mdx`),
+                sourceDir: path.resolve(`../../markdown/${site}/${slug}`),
+                staticPath: '/mdx/',
+              },
+            ],
         remarkTocAsFrontmatter,
         remarkIntroAsFrontmatter,
       ],
