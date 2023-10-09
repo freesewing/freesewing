@@ -16,7 +16,7 @@ Esto es lo que hemos incluido para ti hoy:
 - 🕵️ Behind the Seams: Jenni (6-minute read - by Jenni & Karen)
 - 🙏 You have measurements, and I want them for our new site (2-minute read - by joost)
 - 🇺🇦  Support for Ukrainian and a newsletter in multiple languages (1-minute read - by joost)
-- 🤔 So when will FreeSewing.org run on version 3? (1-minute read - by joost)
+- 🤔 So when will FreeSewing.org run on version 3? (1-minute read - by joost) (1-minute read - by joost)
 
 &nbsp;
 
@@ -81,7 +81,7 @@ A big driver for the decision to freeze the v2 branch and start working on v3 wa
 
 Design inheritance was already possible in v2, but because the configuration was handled on the design level, it required careful re-configuration of (required) measurements, options, part dependencies, and so on. It was possible but came with a lot of friction.
 
-In v3, all configuration is moved to the part level, and a design is now not much more than just a bunch of parts (JBOP). It is the parts themselves that configure what they need. This includes anything from the measurements they require, the options they provide, the plugins they use, their dependencies, and so on. This way, you can re-use parts from various designs, and all of their configuration, dependencies, plugins, and so on will follow.
+In v3, all configuration is moved to the part level, and a design is now not much more than just a bunch of parts (JBOP). It is the parts themselves that configure what they need. This includes anything from the measurements they require, the options they provide, the plugins they use, their dependencies, and so on. It is the parts themselves that configure what they need.
 
 For our own designs, I expect to see this new modularity result in the consolidation of common parts into a number of utility designs that are not intended as stand-alone patterns, but rather as providers of common features. As an example, plenty of designs need welt pockets, and today they each implement their own.  In the future, I expect a welt pocket will be something you can just grab as an *off-the-shelf* part so to speak.
 
@@ -95,13 +95,13 @@ It's but one example, but it goes to show that the move to part-based configurat
 
 ## 🕵️ Behind the Seams: Jenni
 
-Fans of the [FreeSewing Discord](https://discord.freesewing.org/) have probably seen some of the awesome clothes Jenni has made for everyone in her family. We chatted with Jenni to learn a little more about her background and journey to becoming a FreeSewing contributor! The interview below has been edited for length, and any errors, oversights, etc. are entirely the fault of the interviewer.
+Fans of the [FreeSewing Discord](https://discord.freesewing.org/) have probably seen some of the awesome clothes Jenni has made for everyone in her family. We chatted with Jenni to learn a little more about her background and journey to becoming a FreeSewing contributor! The interview below has been edited for length, and any errors, oversights, etc. are entirely the fault of the interviewer. The interview below has been edited for length, and any errors, oversights, etc. are entirely the fault of the interviewer.
 
 ### ¿Cuándo y por qué empezaste a coser? ¿Cómo conociste FreeSewing? ¿Coses sobre todo para ti o para otras personas, como amigos y familiares?
 
 I gradually became aware of FreeSewing when I first started sewing and was pretty confused by all this idea of 'hacking' patterns and modifying them to fit your body. Being able to take really detailed measurements and then generating a pattern to fit you well seemed like a great idea! I looked at it longingly for a bit, I played with it for a bit but didn't actually try any of the patterns for quite a while. Instead I used the patterns produced by one indie designer in particular - Oliver + S kids patterns and Liesl & Co adult sizes, produced by the same designer. Her patterns are very well explained and the kids' patterns take into consideration the needs of that group very directly (proportions, ease, usability). So I got better at sewing in general. I sewed for myself and some family members and friends, mostly tops for other people, but I also made some clothes for my kids. More and more I found that I was ending up sewing stuff for my eldest more than other family members: my kid is skinny anyway so there are some fitting challenges, but also they were / are going through some gender dysphoria experiences as they grew older and came out as non-binary.
 
-There was a tipping point one day when they refused to wear any sort of feminine-gendered swimming costume - and there was school swimming lessons coming up shortly. Sewing to the rescue! I created a pattern for a Teagan and Shin combo to make a swimming costume with separate top and bottom in a gender neutral style that was acceptable. In fact due to timings we also ended up buying a commercial onesie so that they had a choice of options, but being able to confidently assure my kid that yes, there was something we could definitely do, was very helpful in the moment. I made that Shin / Teagan combo for them, but also a pair of Shin trunks for my younger kid (in a smashing flamey lycra!) and one for my partner, who hates flappy boxer type swimmers and was a bit short on useable speedos. My sister saw the Shin in the bright flame pattern lycra and wanted one too, so I made another one! And I can see more being needed as the originals grown out of, so I won't stop there.
+There was a tipping point one day when they refused to wear any sort of feminine-gendered swimming costume - and there was school swimming lessons coming up shortly. Sewing to the rescue! I created a pattern for a Teagan and Shin combo to make a swimming costume with separate top and bottom in a gender neutral style that was acceptable. In fact due to timings we also ended up buying a commercial onesie so that they had a choice of options, but being able to confidently assure my kid that yes, there was something we could definitely do, was very helpful in the moment. I made that Shin / Teagan combo for them, but also a pair of Shin trunks for my younger kid (in a smashing flamey lycra!) I made that Shin / Teagan combo for them, but also a pair of Shin trunks for my younger kid (in a smashing flamey lycra!) and one for my partner, who hates flappy boxer type swimmers and was a bit short on useable speedos. My sister saw the Shin in the bright flame pattern lycra and wanted one too, so I made another one! And I can see more being needed as the originals grown out of, so I won't stop there.
 
 I've also made my kid a number of Bruce boxers, with a flat front. They are very gender euphoric as underwear! Lovely and jolly too, because of course you can use all sorts of small bits of various knits so they end up very colourful. And now I am starting to make some Aarons for my kid, to be used instead of a commercial crop top / bralette. I will have to work out how to make them snug without being too compressive although they do like some compression so we will have to iterate I guess.
 
@@ -187,7 +187,7 @@ The real challenge thare is that I will need to learn to not write this thing at
 
 &nbsp;
 
-## 🤔 So when will FreeSewing.org run on version 3?
+## 🤔 So when will FreeSewing.org run on version 3? (1-minute read - by joost)
 
 There’s a lot more in v3 that I could write about, but I need to address the elephant in the room: *So we have 3.0 now, when do non-developers get to use this?*
 
