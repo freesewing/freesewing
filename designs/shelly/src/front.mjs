@@ -1,5 +1,4 @@
 import { base } from './base.mjs'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 
 function draftFront({
   utils,
@@ -115,7 +114,7 @@ function draftFront({
 
 export const front = {
   name: 'shelly.front',
-  plugins: [pluginBundle],
+  plugins: [],
   draft: draftFront,
   from: base,
   measurements: ['neck', 'chest', 'hips', 'waistToHips', 'hpsToWaistBack', 'waistToArmhole'],

@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { base } from './base.mjs'
 
 function draftBack({
@@ -139,7 +138,7 @@ function draftBack({
 
 export const back = {
   name: 'shelly.back',
-  plugins: [pluginBundle],
+  plugins: [],
   draft: draftBack,
   from: base,
   measurements: ['neck', 'chest', 'hips', 'waistToHips', 'hpsToWaistBack'],

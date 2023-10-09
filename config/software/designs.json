@@ -389,7 +389,8 @@
     "code": "Thrunic",
     "design": "Thrunic",
     "difficulty": 2,
-    "tags": ["tops", "swimwear"]
+    "tags": ["tops", "swimwear"],
+	"techniques": []
   },
   "shin": {
     "lab": true,
