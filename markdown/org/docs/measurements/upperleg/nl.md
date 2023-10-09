@@ -4,7 +4,7 @@ title: Knieomtrek
 
 De omtrek van **bovenbeendeel** is de maat rond je broekspijp, in de buurt van de bovenrand van je been.
 
-You should measure this a bit below your crotch, refer to the illustration for guidance. Zorg dat de lintmeter horizontaal (parallel met de vloer) blijft terwijl je deze maat neemt.
+Je moet dit iets onder je kruis meten, zie de illustratie als richtlijn. Zorg dat de lintmeter horizontaal (parallel met de vloer) blijft terwijl je deze maat neemt.
 
 <Tip>
 

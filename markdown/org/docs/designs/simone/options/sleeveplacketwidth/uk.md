@@ -1,11 +1,11 @@
 ---
-title: "Sleeve placket width"
+title: "Ширина пройми рукава"
 ---
 
-![Ширина шліца](sleeveplacketwidth.svg)
+![Ширина пройми рукава](sleeveplacketwidth.svg)
 
-How wide do you want the sleeve placket to be?
+Якої ширини ви хочете, щоб була планка рукава?
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_sleeveplacketwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simone_sleeveplacketwidth_sample.svg "Вплив цієї опції на шаблон")

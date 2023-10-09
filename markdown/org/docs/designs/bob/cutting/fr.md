@@ -1,13 +1,13 @@
 ---
-title: "Bob the Bib: Cutting Instructions"
+title: "Bob le dossard : Instructions de découpage"
 ---
 
-- Cut **1 bib**
+- Coupe **1 bavette**
 
 <Warning>
 
 #### Caveats
 
-- There is no seam allowance on the bib, it will be finished with bias tape
+- Il n'y a pas de marge de couture sur le bavoir, il sera fini avec du ruban de biais.
 
 </Warning>

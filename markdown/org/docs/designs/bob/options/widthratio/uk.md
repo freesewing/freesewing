@@ -1,12 +1,12 @@
 ---
-title: Width ratio
+title: Співвідношення ширини
 ---
 
-Controls the width of the bib.
+Контролює ширину нагрудника.
 
-- Increase the percentage to widen the width of the bib.
-- Decrease the precentage to constrict the width of the bib.
+- Збільште відсоток, щоб розширити ширину нагрудника.
+- Зменшіть відсоток, щоб звузити ширину нагрудника.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bob_widthratio_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bob_widthratio_sample.svg "Вплив цієї опції на шаблон")

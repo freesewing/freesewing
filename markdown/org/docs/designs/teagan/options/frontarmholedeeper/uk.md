@@ -1,9 +1,9 @@
 ---
-title: Front armhole extra cutout
+title: Додатковий виріз для передньої пройми
 ---
 
-How much do you want the front armhole to be cut out deeper than the back.
+Наскільки ви хочете, щоб передня пройма була викроєна глибше, ніж задня.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_frontarmholedeeper_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](teagan_frontarmholedeeper_sample.svg "Вплив цієї опції на шаблон")

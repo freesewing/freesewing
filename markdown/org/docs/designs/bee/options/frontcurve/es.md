@@ -1,5 +1,5 @@
 ---
-title: "Front curve"
+title: "Curva lateral interior"
 ---
 
 ***

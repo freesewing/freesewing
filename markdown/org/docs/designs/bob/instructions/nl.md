@@ -1,48 +1,48 @@
 ---
-title: "Bob the Bib: Sewing Instructions"
+title: "Bob de Slab: Naai-instructies"
 ---
 
 <Note>
 
-#### Before we start: One layer or two?
+#### Voordat we beginnen: Eén laag of twee?
 
-First thing you need to figure out is whether you're going to make a 1-layer (simple) bib,
-or do you want to make one out of two layers.
+Het eerste wat je moet uitzoeken is of je een 1-laagse (eenvoudige) slab gaat maken,
+of wil je er een maken uit twee lagen.
 
-A two-layer bib gives you more options, as you can use an absorbent backing layer like
-terrycloth, yet still have the entire cotton selection of your local fabric store available
-as your choice for the front layer, aka the visible one.
+Een slabbetje met twee lagen geeft je meer mogelijkheden, omdat je een absorberende onderlaag kunt gebruiken, zoals
+badstof, en toch het hele katoenassortiment van je plaatselijke stoffenwinkel tot je beschikking hebt
+als keuze voor de voorste laag, oftewel de zichtbare laag.
 
 </Note>
 
-## Step 1: Optional: Join layers
+## Stap 1: Optioneel: Lagen samenvoegen
 
 If you decide to go for two layers, simply join them together at the edges before applying the bias tape.
 
-You probably want to pin or bast this prior to sewing. The two different types of fabric will behave differently, so secure them in place prior to sewing the together.
+Je wilt dit waarschijnlijk vastspelden of vastbinden voordat je gaat naaien. The two different types of fabric will behave differently, so secure them in place prior to sewing the together.
 
 Make sure to sew close to the edge so that the stitches will be under the bias tape finish later.
 
-## Step 2: Apply bias tape
+## Stap 2: Biaisband aanbrengen
 
-Wer're going to apply bias tape as a finish around the entire edge of the bib.
+We gaan biaisband aanbrengen als afwerking rond de hele rand van de slab.
 
 You probably want to start at the bottom strap, as this way the joint of the bias seam will be covered when the bib is worn.
 
-Just work your way around, and take your time.
+Werk je gewoon een slag in de rondte en neem je tijd.
 
 <Fixme>
 
-Provide generic instructions for sewing bias tape
+Geef algemene instructies voor het naaien van biaisband
 
 </Fixme>
 
-## Step 3: Install snaps or button
+## Stap 3: Bevestig drukknopen of knopen
 
-Next, install the snaps on the straps, as indicated on the pattern.
+Bevestig vervolgens de drukknopen op de bandjes, zoals aangegeven op het patroon.
 
-If you don't have or want snaps, you can also use a button + buttonhole.
+Als je geen drukknopen hebt of wilt, kun je ook een knoop + knoopsgat gebruiken.
 
-## Step 4: You're done!
+## Stap 4: Je bent klaar!
 
-That was easy 😃
+Dat was makkelijk 😃

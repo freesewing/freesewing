@@ -1,5 +1,5 @@
 ---
-title: "Grainline position"
+title: "Position de la ligne de droit fil"
 ---
 
 Contrôle la position de la ligne de grain.
@@ -8,4 +8,4 @@ Vous pouvez l'utiliser pour déplacer la ligne de grainline vers l'intérieur ou
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](titan_grainlineposition_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](titan_grainlineposition_sample.svg "Effet de cette option sur le motif")

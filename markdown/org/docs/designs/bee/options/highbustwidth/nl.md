@@ -1,10 +1,10 @@
 ---
-title: "High bust width (Bella)"
+title: "Hoge bustewijdte (Bella)"
 ---
 
 ***
 
-Controls the high bust width in the underlying Bella block Bee is based on
+Regelt de hoge borstbreedte in het onderliggende Bella blok Bee is gebaseerd op
 
 ## Effect van deze optie op het patroon
 

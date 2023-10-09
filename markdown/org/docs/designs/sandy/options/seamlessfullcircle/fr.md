@@ -1,5 +1,5 @@
 ---
-title: "Seamless full circle"
+title: "Cercle entier sans couture"
 ---
 
 ![Cercle entier sans couture](seamlessfullcircle.svg)
@@ -8,12 +8,12 @@ Sélectionnez 'oui' pour un cercle transparent, qui est coupé sur un double pli
 
 <Note>
 
-- This produces a full circle ignoring the _Circle percent_ option.
-- You may need to use the [gathering option](sandy/options/gathering) to increase the waist circumference to fit over your seat/hips.
-- You will need to set the [waistband overlap](sandy/options/waistbandoverlap) to 0%.
+- Cela produit un cercle complet en ignorant l'option _Pourcentage de cercle_.
+- Il se peut que tu doives utiliser l'option [gathering](sandy/options/gathering) pour augmenter le tour de taille afin qu'il s'adapte à ton siège et à tes hanches.
+- Tu devras régler le [chevauchement de la ceinture](sandy/options/waistbandoverlap) sur 0 %.
 
 </Note>
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sandy_seamlessfullcircle_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sandy_seamlessfullcircle_sample.svg "Effet de cette option sur le motif")

@@ -1,10 +1,10 @@
 ---
-title: "Jaeger jacket: What You Need"
+title: "Jaeger Jacke: Was du brauchst"
 ---
 
-To make Jaeger, you will need the following:
+Um Jaeger zu erstellen, benötigst du Folgendes:
 
-- About 2.5 meters (2.8 yards) of a suitable fabric (see [Fabric options](#fabric-options))
+- Etwa 2,5 Meter (2,8 Yards) eines geeigneten Stoffes (siehe [Stoffoptionen](#fabric-options))
 - Lining Stoff, optional unterschiedliche Ärmelfutter
 - Zwei größere Tasten für die Vorderseite und 8 Tasten für die Ärmel
 - Ein bisschen leichtgewichtige Schnittstellen für lokale Durchsetzung
@@ -13,28 +13,28 @@ To make Jaeger, you will need the following:
 - Einige Domette zum Einbinden
 - Schulterpads
 - Sleevehead Wadding, mit Leinwand wenn möglich
-- Unterkragen Stoff
+- Stoff für Unterkragen
 
 <Note>
 
-###### Where to get all this stuff
+###### Woher bekommst du das ganze Zeug
 
-Making Jaeger is a fun and rewarning project, but getting all the required bits
-and pieces can be challenging.
+Jaeger zu bauen ist ein spaßiges und aufregendes Projekt, aber es kann schwierig sein, alle benötigten Teile
+und Teile zu bekommen.
 
-That is because this kind of project is somewhat more ambitious than the
-typical home sewing project, and as a result, your local haberdashery is
-unlikely to stock all of these things.
+Das liegt daran, dass diese Art von Projekt etwas ehrgeiziger ist als das
+typische Heimnähprojekt, und deshalb ist es unwahrscheinlich, dass dein lokaler Kurzwarenladen
+all diese Dinge vorrätig hat.
 
-Wenn Sie wissen, wo sie zu bekommen, großartig. If not, some (quality) suppliers
-sometimes sell a **Jacket trim pack** that includes everything you need.
+Wenn Sie wissen, wo sie zu bekommen, großartig. Wenn nicht, verkaufen einige (Qualitäts-)Anbieter
+manchmal ein **Jackenausstattungspaket**, das alles enthält, was du brauchst.
 
-Below is a list of suppliers we are aware of where you can get this.
-We have no affiliation with these suppliers.
+Nachfolgend findest du eine Liste der uns bekannten Anbieter, bei denen du sie bekommen kannst.
+Wir haben keine Verbindung zu diesen Anbietern.
 
-- [B. Black & Sons](https://www.bblackandsons.com/) is based in the US
-- [Kenton Trimmings](http://kentontrimmings.co.uk/shop/) in based in the UK
+- [B. Black & Sons](https://www.bblackandsons.com/) hat seinen Sitz in den USA
+- [Kenton Trimmings](http://kentontrimmings.co.uk/shop/) hat seinen Sitz in Großbritannien
 
-If you know of other places that carries this stuff, please let us know.
+Wenn du weißt, wo es diese Produkte sonst noch gibt, lass es uns bitte wissen.
 
 </Note>

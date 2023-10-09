@@ -1,5 +1,5 @@
 ---
-titre: "Profondeur latérale"
+title: "Profondeur latérale"
 ---
 
 ***

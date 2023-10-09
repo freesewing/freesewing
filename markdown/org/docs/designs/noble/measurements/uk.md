@@ -1,5 +1,5 @@
 ---
-title: "Noble body block: Required Measurements"
+title: "Блок благородного тіла: Необхідні вимірювання"
 ---
 
 <PatternMeasurements pattern='noble' />

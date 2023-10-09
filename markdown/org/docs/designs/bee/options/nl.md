@@ -1,5 +1,5 @@
 ---
-title: "Bee bikini top: Design Options"
+title: "Bikinitopje bijen: Ontwerpopties"
 ---
 
 <PatternOptions pattern='bee' />

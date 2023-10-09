@@ -1,9 +1,9 @@
 ---
-title: "Bust dart"
+title: "Dardo de busto"
 ---
 
-Where to place the primary bust dart to shape the chest.
+Dónde colocar el dardo primario del busto para dar forma al pecho.
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_primarybustdart_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](breanna_primarybustdart_sample.svg "Efecto de esta opción en el patrón")

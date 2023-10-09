@@ -1,5 +1,5 @@
 ---
-title: "Walburga Wappenrock: Required Measurements"
+title: "Walburga Wappenrock: Medidas necesarias"
 ---
 
 <PatternMeasurements pattern='walburga' />

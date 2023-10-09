@@ -1,47 +1,47 @@
 ---
-title: "Sandy circle skirt: What You Need"
+title: "Пісочна спідниця-коло: Що вам потрібно"
 ---
 
-To make Sandy, you will need the following:
+Для приготування пісочного тіста вам знадобиться наступне:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 2 - 6 metres (2.2 - 6.6 yards) of a suitable main fabric ([see Sandy Fabric options](/docs/patterns/sandy/fabric))
-- Some interfacing for the waistband
-- (Optional) Facing for the hem.
-- Some sort of closure for the waistband (if not seamless)
-- (Optional) About 2 - 6 metres (2.2 - 6.6 yards) of suitable lining fabric ([see Sandy Fabric options](/docs/patterns/sandy/fabric))
-- Elastic (if needed)
+- [Базові матеріали для шиття](/docs/sewing/basic-sewing-supplies)
+- Приблизно 2 - 6 метрів (2,2 - 6,6 ярдів) відповідної основної тканини ([див. варіанти пісочної тканини](/docs/patterns/sandy/fabric))
+- Деякі інтерфейси для пояса
+- (Необов'язково) Облицювання для подолу.
+- Якась застібка для пояса (якщо не безшовна)
+- (За бажанням) Приблизно 2 - 6 метрів (2,2 - 6,6 ярдів) відповідної підкладкової тканини ([див. варіанти пісочної тканини](/docs/patterns/sandy/fabric))
+- Еластичний (за потреби)
 
-Due to the many different styles of Sandy it is difficult to precisely say what you need so we will go through some of the options.
+Через безліч різних стилів пісочного кольору важко точно сказати, що саме вам потрібно, тому ми розглянемо деякі варіанти.
 
-##### Main Fabric
+##### Основна тканина
 
-The length you require is dependant on how long and how full your circle skirt is, mid length and smaller should be sufficent with 2 - 2.5 metres whearas a floor length will require more. If in doubt buy a metre more than you think. Also don't be afraid to piece if your fabric is not wide or long enough, it is better to have an extra seam than not to use the fabric you like.
+Довжина, яка вам потрібна, залежить від довжини та об'єму вашої спідниці, середньої довжини та меншої довжини буде достатньо 2 - 2,5 метра, тоді як для спідниці до підлоги знадобиться більше. Якщо ви сумніваєтеся, купіть на метр більше, ніж ви думаєте. Також не бійтеся розкроювати тканину, якщо вона недостатньо широка або довга, краще мати додатковий шов, ніж не використовувати тканину, яка вам подобається.
 
 <Note>
 
-Don't forget that the waistband also needs to be cut from the main fabric.
+Не забудьте, що пояс також потрібно викроїти з основної тканини.
 
 </Note>
 
 <Warning>  
 
-If making a **seamless** Sandy you will need to make sure the width of your fabrics are double the length of your skirt pieces otherwise you will have to piece or add seams.
+Якщо ви робите **безшовну** пісочну спідницю, вам потрібно переконатися, що ширина тканини вдвічі перевищує довжину деталей спідниці, інакше вам доведеться розкроювати або додавати шви.
 
 </Warning>
 
-##### Lining Fabric
+##### Підкладкова тканина
 
-Lining fabric is only really needed if your main fabric is unpleasant to have against the skin or hard to wash. You will need the same amount as your main fabric if you are fully lining the skirt. If you only intend to make pockets with a lining you only need 0.25 - 0.5 metres of fabric.
+Підкладкова тканина потрібна лише в тому випадку, якщо основна тканина неприємна на дотик або її важко прати. Вам знадобиться стільки ж, скільки і основної тканини, якщо ви будете повністю підкладати спідницю. Якщо ви плануєте зробити тільки кишені з підкладкою, вам знадобиться лише 0,25-0,5 метра тканини.
 
-##### Hem Facing
+##### Облицювання подолу
 
-To add flare/keep the hems shape you may wish to add a facing to the bottom of the skirt. This can be done multiple ways such as the use of horsehair braid or tarlatan and really depends on the look you are going for and the fabric you are using.
+Щоб додати кльош/зберегти форму подолу, ви можете додати обтачку до низу спідниці. Це можна зробити різними способами, наприклад, за допомогою тасьми з кінського волосу або тарлатану, і це залежить від того, який вигляд ви хочете отримати, і від тканини, яку ви використовуєте.
 
-##### Closures
+##### Закриття
 
-If not making an elasticated Sandy you will need some type of closure. This can be just a zip that is inserted in to the waistband and seam or it can be buttons, dress hooks, or snaps with an overlapping waistband and an openining, placket or zipper at the top of the seam.
+Якщо ви не робите еластичний пісочний годинник, вам знадобиться якийсь тип застібки. Це може бути просто застібка-блискавка, вставлена в пояс і шов, або ж ґудзики, гачки для одягу чи застібки з перехрещеним поясом і застібкою, планкою чи блискавкою у верхній частині шва.
 
-##### Elastic
+##### Еластичний
 
-Elastic is needed if you intend to make a seamless or a closure free Sandy. Width-wise it will need to be able to fit inside the waistband, length-wise it will need to be able to fit around your waist.
+Еластична стрічка потрібна, якщо ви плануєте зробити безшовний або беззастібний пісочник. По ширині він повинен поміщатися всередині пояса, а по довжині - навколо талії.

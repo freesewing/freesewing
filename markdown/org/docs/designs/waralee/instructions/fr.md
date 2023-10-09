@@ -1,5 +1,5 @@
 ---
-titre: "Pantalon portefeuille Waralee : Instructions de couture"
+title: "Pantalon portefeuille Waralee : Instructions de couture"
 ---
 
 <Warning>
@@ -44,94 +44,94 @@ Ouverture de poche
 - Maintenant, faites tout passer par l'ouverture de l'autre côté. Disposez tout bien avec l'ouverture de la poche ouverte. Repassez sur l'ouverture de la poche.
 
 Construction du passepoil
-- Turn the garment over, and press the bottom edge of the pocket facing under. Later, this will yield a nice, clean edgestitch.
-- Next, flip the pocket facing up, so that it covers the pocket opening. Then, fold back just enough of the facing to exactly cover the entire pocket opening. Press, and pin in place.
+- Retourne le vêtement et repasse le bord inférieur de la poche vers le bas. Plus tard, tu obtiendras un beau point de bordure propre.
+- Ensuite, retourne la poche vers le haut, de façon à ce qu'elle recouvre l'ouverture de la poche. Ensuite, replie juste assez de la parementure pour couvrir exactement toute l'ouverture de la poche. Appuie et épingle en place.
 
-Sewing the pocket opening in place
-- Turn the whole thing right side up, then fold back the fabric on one short side of the pocket opening, revealing a little triangle cutout and your pocket lining.
-- Sew the short edge of the pocket opening, just outside of your markings. This should secure the V-shaped cutout bits to the lining. Once you feel confident everything will look good from the right side, restitch this line a few times to secure.
-- Press.
-- To make things nice and tidy, you'll also stitch the bottom edge of the pocket facing to the pocket lining at this point. (This is why we pressed the very edge under earlier.)
+Couds l'ouverture de la poche en place
+- Retourne le tout à l'endroit, puis replie le tissu sur un petit côté de l'ouverture de la poche, révélant ainsi une petite découpe en triangle et la doublure de ta poche.
+- Couds le bord court de l'ouverture de la poche, juste à l'extérieur de tes marques. Cela devrait permettre de fixer les bouts de découpe en forme de V à la doublure. Une fois que tu es sûre que tout aura l'air bien du bon côté, recouds cette ligne plusieurs fois pour la fixer.
+- Repasser.
+- Pour que tout soit bien rangé, tu couds également le bord inférieur du parement de la poche à la doublure de la poche à ce stade. (C'est la raison pour laquelle nous avons appuyé sur le bord inférieur tout à l'heure).
 
-Finishing the pocket
-- Take your second pocket facing, and press all edges under except for one of the longer edges.
-- Lay this facing over the pocket opening, right sides together and raw edge aligned with the raw edge of the pocket lining.
-- Now, fold your pocket lining over, aligning all the edges of the pocket.
-- Pin or clip the second pocket facing to the pocket lining along the raw edges. Then flip the pocket lining back, and pin the entire edge of the facing to the pocket lining.
-- Edgestitch the facing to the pocket fabric. This will sit behind the pocket opening when everything is assembled, so that if your pocket gaps open, your fashion fabric will show in the gap.
-- Flip the pocket fabric back, aligning edges, and pin all sides of the pocket. Close the pocket as you normally do. You can use a french seam, a serger, or another method.
+Finition de la poche
+- Prends ton deuxième parement de poche, et repasse tous les bords en dessous, à l'exception d'un des bords les plus longs.
+- Pose cette face sur l'ouverture de la poche, endroit contre endroit et bord brut aligné avec le bord brut de la doublure de la poche.
+- Maintenant, replie la doublure de ta poche en alignant tous les bords de la poche.
+- Épingle ou clipse la deuxième face de la poche à la doublure de la poche le long des bords bruts. Retourne ensuite la doublure de la poche et épingle tout le bord de la parementure à la doublure de la poche.
+- Fais une piqûre d'arrêt sur le tissu de la poche. Il se trouvera derrière l'ouverture de la poche lorsque tout sera assemblé, de sorte que si ta poche s'ouvre, ton tissu de mode apparaîtra dans l'espace.
+- Retourne le tissu de la poche en alignant les bords et épingle tous les côtés de la poche. Ferme la poche comme tu le fais normalement. Tu peux utiliser une couture française, une surjeteuse ou une autre méthode.
 
-Making everything clean and tidy
-- Flip the whole piece over so you're looking at the right side.
-- Fold back the main fabric, so you can see the little triangles on the short edge of the pocket opening.
-- Sew another line, now through all layers. You should be able to see the edge stitching line of the first facing. Stitch all the way to this line, which finishes the facing on the inside of the pocket. You want to be really close to the fold with this stitch line.
-- Now fold the fabric back on the long side of the pocket opening, where the pocket sides were stitches together. You'll see the initial stitch line of the pocket opening. Make sure all the layers of fabric are laying nicely, and stitch over this stitch line once again, now through all layers. This secures this side of the pocket to the garment fabric.
-- Flip over, press well, and admire your work.
-
-<Note>
-
-I included placements for the front pockets that will be hidden by the flaps in the front. But they will still be easily accessible to put your phone or keys in. These are single welt pockets. The ones in the front are at an angle and the ones in the back are horizontally oriented. The pocket templates should allow for enough fabric to attach the pocket to the waistband. If you want particularly deep pockets, please adjust accordingly.
-
-</Note>
-
-Constructing the back pockets
-- The back pockets are also single welt pockets, but the pocket opening is horizontal, rather than at an angle. This means they hew much closer to the instructions for [double welt pockets](https://freesewing.org/docs/sewing/double-welt-pockets).
-- Follow the double welt instructions, modifying the opening to have a single welt, rather than a double welt.
-
-Congratulations! Your pockets are finished!
-
-### Step 2: Hem the sides and bottom
-
-![Hem the sides and bottom](waralee-hem-sides-and-bottom.png)
-
-- Hem the sides
-- Hem the bottom.
+Fais en sorte que tout soit propre et bien rangé
+- Retourne toute la pièce de façon à ce que tu regardes le bon côté.
+- Replie le tissu principal pour que tu puisses voir les petits triangles sur le bord court de l'ouverture de la poche.
+- Couds une autre ligne, maintenant à travers toutes les couches. Tu devrais pouvoir voir la ligne de piqûre du bord de la première parementure. Couds jusqu'à cette ligne, qui termine le parement à l'intérieur de la poche. Tu veux être très proche du pli avec cette ligne de points.
+- Maintenant, replie le tissu sur le long côté de l'ouverture de la poche, là où les côtés de la poche ont été cousus ensemble. Tu verras la ligne de points initiale de l'ouverture de la poche. Assure-toi que toutes les couches de tissu sont bien posées, et pique sur cette ligne de point une fois de plus, maintenant à travers toutes les couches. Cela permet de fixer ce côté de la poche au tissu du vêtement.
+- Retourne le tout, presse bien et admire ton travail.
 
 <Note>
 
-You can use whatever method works best for you. In the version I first made I just serged the sides, folded them back and top stitched them, then did the same for the bottom. I did this to keep the bulk of the fabric to a minimum and allow for a better drape. What you do should depend on the type of fabric you're using.
+J'ai inclus des placements pour les poches avant qui seront cachées par les volets à l'avant. Mais ils seront toujours facilement accessibles pour y insérer votre téléphone ou vos clés. Ce sont des poches simples de welt. Les deux à l'avant sont à l'angle et ceux à l'arrière sont orientés horizontalement. Les gabarits de poche devraient permettre d'avoir suffisamment de tissu pour attacher la poche à la ceinture. Si vous voulez des poches particulièrement profondes, veuillez ajuster en conséquence.
 
 </Note>
 
-### Step 3: Sew the two pants parts together at the crotch
+Construis les poches arrière
+- Les poches arrière sont également des poches passepoilées simples, mais l'ouverture de la poche est horizontale, plutôt qu'en biais. Cela signifie qu'ils sont beaucoup plus proches des instructions pour [double welt pockets](https://freesewing.org/docs/sewing/double-welt-pockets).
+- Suis les instructions de la double trépointe, en modifiant l'ouverture pour avoir une simple trépointe, plutôt qu'une double trépointe.
 
-![Lay the two parts on top of one another with good sides together. Sew the crotch seam](waralee-crotch-seam-no-pockets.png)
+Félicitations ! Tes poches sont terminées !
 
-Now you get to sew the two pants parts together.
+### Étape 2 : tailler les côtés et le bas
 
-- Lay the two pants parts on top of one another with _good sides together_ and sew the seam along the cutout.
-- _Finish_ this seam and press it.
+![Entailler les côtés et le bas](waralee-hem-sides-and-bottom.png)
 
-### Step 4: Prepare the four strings
+- Fais un ourlet sur les côtés
+- Fais un ourlet sur le bas.
 
-The strings are just long tubes of fabric.
+<Note>
 
-- Take a quarter of your waist measurement. Add that number to 40cm (17”). Add your seam allowance. This is the length of each string.
-- Cut out four strips of fabric that are that long and 5cm (2”) wide.
+Vous pouvez utiliser la méthode qui vous convient le mieux. Dans la version que j'ai d'abord fait je viens de serrer les côtés, les plié dos et le dessus les cousu, puis fait la même chose pour le fond. Je l'ai fait pour garder la majeure partie du tissu au minimum et pour permettre un meilleur drapeau. Ce que vous faites devrait dépendre du type de tissu que vous utilisez.
+
+</Note>
+
+### Étape 3 : Coudre les deux parties du pantalon ensemble à l'entrejambe.
+
+![Disposez les deux parties les unes sur les autres avec de bons côtés ensemble. Coudre la couture](waralee-crotch-seam-no-pockets.png)
+
+Il te reste maintenant à coudre les deux parties du pantalon ensemble.
+
+- Pose les deux parties du pantalon l'une sur l'autre avec _bons côtés ensemble_ et couds la couture le long de la découpe.
+- _Termine_ cette couture et repasse-la.
+
+### Étape 4 : Préparez les quatre chaînes
+
+Les cordes ne sont que de longs tubes de tissu.
+
+- Prenez un quart de la mesure de votre tour de taille. Ajoutez ce numéro à 40cm (17”). Ajoutez votre marge de couture. C'est la longueur de chaque chaîne.
+- Découpez quatre bandes de tissu de longueur et de largeur de 5cm (2").
 
 <Tip>
 
-For example, if my waist circumference is 84.6cm: 84.6cm divided by 4 is 21.2cm. 21.2cm plus 40cm is 61.2cm. 61.2cm plus my seam allowance of 1cm is 62.2cm. I will cut four strips of fabric that are 62.2cm by 5cm.
+Par exemple, si ma tour de taille est de 84,6 cm : 84,6 cm divisée par 4 est de 21,2 cm. 21,2cm plus 40cm est 61,2cm. 61,2cm plus ma couture de 1cm est 62,2cm. Je couperai quatre bandes de tissu qui sont 62,2cm par 5cm.
 
 </Tip>
 
 <Note>
 
-##### You can lengthen the front ties
+##### Vous pouvez allonger les attaches avant
 
-Optionally, to make the front ties longer, extend them by your quarter waist measurement.
+Optionnellement, pour allonger les attaches avant, les étendre par la mesure de votre quart de taille.
 
-When generating your pattern, one of the style options is called “Waist Band”. The strings, when folded, should have the same width as you specified for that option, 2.5cm (1") by default.
+Lors de la génération de votre patron, une des options de style est appelée « Bande de taille ». Les chaînes, lorsqu'elles sont pliées, doivent avoir la même largeur que celle que vous avez spécifiée pour cette option, soit 2,5cm (1") par défaut.
 
-The extra 40cm (17") of length is to make the knot.
+La longueur supplémentaire de 40cm (17") est de faire le nœud.
 
-If your material is delicate or flimsy, you can add some interfacing to this to give it strength.
+Si votre matériau est délicat ou mince, vous pouvez ajouter un peu d'interfaçage pour lui donner de la force.
 
 </Note>
 
-- Fold them in half along the long side, _good sides together_.
-- Stitch the long side and one of the short sides,
-- Turn the tie right side out.
+- Repliez-les en deux le long du côté long, _bons côtés ensemble_.
+- Couds le côté long et l'un des côtés courts,
+- Retourne la cravate sur l'endroit.
 
 <Tip>
 
@@ -141,31 +141,31 @@ Cela peut être facilité en prenant un morceau de twine plus long que les bande
 
 </Tip>
 
-### Step 5: Sew the waist band
+### Étape 5 : Coudre la bande de taille
 
-![Lay the two parts on top of one another with good sides together. Sew the crotch seam](waralee-waist-band-no-pockets.png)
+![Disposez les deux parties les unes sur les autres avec de bons côtés ensemble. Coudre la couture](waralee-waist-band-no-pockets.png)
 
-Now it is time to sew the waist band.
+Il est maintenant temps de coudre le bandeau de taille.
 
-- If your fabric is delicate, add interfacing to the wrong side of the pants above the waist band line. (red)
-- Fold the seam allowance in, and then fold along the waist band line. (red)
-- Insert one of the strings you made in the previous step on each side.
-- Sew along the waist band line, and add some additional stitching to make sure those strings are attached well. (blue)
+- Si ton tissu est délicat, ajoute de l'entoilage sur l'envers du pantalon au-dessus de la ligne de la ceinture. (rouge)
+- Repliez la marge de couture et pliez le long de la bande de la taille. (rouge)
+- Insérez une des chaînes que vous avez faites à l'étape précédente de chaque côté.
+- Coudre le long de la bande de taille et ajouter quelques coutures supplémentaires pour s'assurer que ces cordes sont bien attachées. (bleu)
 
 <Warning>
 
-##### Secure the strings well
+##### Sécurisez bien les chaînes de caractères
 
-The strings keep your pants up, so having that stitching fail will result in awkward moments.
+Les cordes maintiennent votre pantalon, donc avoir cette panne de broderie entraînera des instants difficiles.
 
 </Warning>
 
-### Step 6: Wear your pants
+### Étape 6: Portez votre pantalon
 
-Press your pants, and try them on!
+Appuyez sur votre pantalon, et essayez-les!
 
-Hold the front side against your belly and wrap both strings around you and tie in the back (or, if you have long strings, wrap them all the way around you and tie in the front). Then hand the back side through your legs to yourself and tie the other strings in the front.
+Tenez le côté avant contre votre ventre et enveloppez les deux cordes autour de vous et attachez dans le dos (ou, si vous avez de longues cordes, enveloppez-les tout le chemin autour de vous et attachez à l'avant). Puis mettez le dos à travers vos jambes et attachez les autres cordes à l'avant.
 
-Here is an article demonstrating how to tie wrap pants: [How to Tie Wrap Pants](https://www.wikihow.com/Tie-Wrap-Pants)
+Voici un article qui montre comment attacher des pantalons d'écharpe : [Comment attacher des pantalons](https://www.wikihow.com/Tie-Wrap-Pants)
 
-If you get stuck, or have additional questions, you can always reach out to [other FreeSewers](https://discord.freesewing.org/).
+Si vous êtes coincé ou avez des questions supplémentaires, vous pouvez toujours atteindre [autres FreeSewers](https://discord.freesewing.org/).

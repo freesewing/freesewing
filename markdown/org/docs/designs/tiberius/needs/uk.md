@@ -1,9 +1,9 @@
 ---
-title: "Tiberius Tunica: What You Need"
+title: "Туніка Тіберія: Що вам потрібно"
 ---
 
-To make Tiberius, you will need the following:
+Для виготовлення Тиберія вам знадобиться наступне:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 2 meters (2.2 yards) of a suitable fabric (see [Fabric options](/docs/patterns/tiberius/fabric))
-- (a belt, for wearing it)
+- [Базові матеріали для шиття](/docs/sewing/basic-sewing-supplies)
+- Близько 2 метрів (2,2 ярда) відповідної тканини (див. [варіанти тканини](/docs/patterns/tiberius/fabric))
+- (ремінь, для носіння)

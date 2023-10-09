@@ -1,5 +1,5 @@
 ---
-title: "Teagan T-shirt: Cutting Instructions"
+title: "Teagan-T-Shirt: Schnittanleitung"
 ---
 
 - Schneiden Sie 1 zurück auf die Faltung.
@@ -8,7 +8,7 @@ title: "Teagan T-shirt: Cutting Instructions"
   - Wenn Sie die Ärmel getrennt schneiden, denken Sie daran, dass das eine ein Spiegelbild des anderen sein muss.
 - Schneiden Sie 1 Streifen für Nackenöffnung. Es sollte 6 cm breit und die Länge der Halsöffnung sein.
 
-## Vorsichtsmaßnahmen
+## Achtung
 
 - An der Halsöffnung gibt es keine Nahtzug.
 - An Saum und Rüstungen sind zusätzliche Saum- und Saummengen zulässig.

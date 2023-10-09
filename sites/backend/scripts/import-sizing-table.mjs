@@ -29,6 +29,7 @@ const createSetData = (data) => ({
   tagsEs: JSON.stringify(data.tagsEs),
   tagsNl: JSON.stringify(data.tagsNl),
   tagsFr: JSON.stringify(data.tagsFr),
+  tagsUk: JSON.stringify(data.tagsUk),
 })
 
 // CIS Female Adult
@@ -40,11 +41,13 @@ sets.push(
       nameEs: `Cis-Mujer Adulta - Talla ${size} (UE)`,
       nameFr: `Cis-Femme Adulte - Taille ${size} (UE)`,
       nameNl: `Cis-Dame Volwassene - Maat ${size} (EU)`,
+      nameUk: `Доросла цис жінка - розмір ${size} (європейський)`,
       tagsEn: ['cis-female', 'adults', 'eu'],
       tagsDe: ['cis-weiblich', 'erwachsene', 'eu'],
       tagsEs: ['cis-mujer', 'adulta', 'ue'],
       tagsFr: ['cis-femme', 'adulte', 'ue'],
       tagsNl: ['cis-dame', 'volwassenen', 'eu'],
+      tagsUk: ['cis-female', 'adults', 'eu'],
       measies: cisFemaleAdult[size],
     })
   )
@@ -59,11 +62,13 @@ sets.push(
       nameEs: `Cis-Hombre Adulto - Talla ${size} (UE)`,
       nameFr: `Cis-Homme Adulte - Taille ${size} (UE)`,
       nameNl: `Cis-Heer Volwassene - Maat ${size} (EU)`,
+      nameUk: `Дорослий цис чоловік - розмір ${size} (європейський)`,
       tagsEn: ['cis-male', 'adults', 'eu'],
       tagsDe: ['cis-männlich', 'erwachsene', 'eu'],
       tagsEs: ['cis-hombre', 'adulto', 'ue'],
       tagsFr: ['cis-homme', 'adulte', 'ue'],
       tagsNl: ['cis-heer', 'volwassenen', 'eu'],
+      tagsUk: ['cis-male', 'adults', 'eu'],
       measies: cisMaleAdult[size],
     })
   )
@@ -78,11 +83,13 @@ sets.push(
       nameEs: `Cis-Mujer Muñeca - ${size}%`,
       nameFr: `Cis-Femme Poupée - ${size}%`,
       nameNl: `Cis-Dame Pop - ${size}%`,
+      nameUk: `Лялька цис жінка - ${size}%`,
       tagsEn: ['cis-female', 'dolls'],
       tagsDe: ['cis-weiblich', 'puppen'],
       tagsEs: ['cis-mujer', 'muñecas'],
       tagsFr: ['cis-femme', 'poupées'],
       tagsNl: ['cis-dame', 'poppen'],
+      tagsUk: ['cis-female', 'dolls'],
       measies: cisFemaleDoll[size],
     })
   )
@@ -97,11 +104,13 @@ sets.push(
       nameEs: `Cis-Hombre Muñeca - ${size}%`,
       nameFr: `Cis-Homme Poupée - ${size}%`,
       nameNl: `Cis-Heer Pop - ${size}%`,
+      nameUk: `Лялька цис чоловік - ${size}%`,
       tagsEn: ['cis-male', 'dolls'],
       tagsDe: ['cis-männlich', 'puppen'],
       tagsEs: ['cis-hombre', 'muñecas'],
       tagsFr: ['cis-homme', 'poupées'],
       tagsNl: ['cis-heer', 'poppen'],
+      tagsUk: ['cis-male', 'dolls'],
       measies: cisMaleDoll[size],
     })
   )
@@ -116,11 +125,13 @@ sets.push(
       nameEs: `Cis-Mujer Gigante - ${size}%`,
       nameFr: `Cis-Femme Géante - ${size}%`,
       nameNl: `Cis-Dame Reuzin - ${size}%`,
+      nameUk: `Велетень цис жінка - ${size}%`,
       tagsEn: ['cis-female', 'giants'],
       tagsDe: ['cis-weiblich', 'riesen'],
       tagsEs: ['cis-mujer', 'gigantes'],
       tagsFr: ['cis-femme', 'géants'],
       tagsNl: ['cis-dame', 'reuzen'],
+      tagsUk: ['cis-female', 'giants'],
       measies: cisFemaleGiant[size],
     })
   )
@@ -135,17 +146,17 @@ sets.push(
       nameEs: `Cis-Hombre Gigante - ${size}%`,
       nameFr: `Cis-Homme Géant - ${size}%`,
       nameNl: `Cis-Heer Reus - ${size}%`,
+      nameUk: `Велетень цис чоловік - ${size}%`,
       tagsEn: ['cis-male', 'giants'],
       tagsDe: ['cis-männlich', 'riesen'],
       tagsEs: ['cis-hombre', 'gigantes'],
       tagsFr: ['cis-homme', 'géants'],
       tagsNl: ['cis-heer', 'reuzen'],
+      tagsUk: ['cis-male', 'giants'],
       measies: cisMaleGiant[size],
     })
   )
 )
-
-importSets(sets)
 
 async function createSet(data) {
   try {
@@ -160,4 +171,8 @@ async function importSets(sets) {
     console.log(`Importing ${set.nameEn}`)
     await createSet(set)
   }
+}
+
+export async function importSizingTable() {
+  await importSets(sets)
 }

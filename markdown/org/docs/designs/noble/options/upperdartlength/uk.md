@@ -1,11 +1,11 @@
 ---
-title: "Upper Dart Length"
+title: "Довжина верхньої виточки"
 ---
 
 ***
 
-The **Upper Dart Length** controls the length of the upper dart, 100% is all teh way to the bust point.
+Довжина верхньої виточки **** регулює довжину верхньої виточки, 100% - це довжина до точки обхвату грудей.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_upperdartlength_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](noble_upperdartlength_sample.svg "Вплив цієї опції на шаблон")

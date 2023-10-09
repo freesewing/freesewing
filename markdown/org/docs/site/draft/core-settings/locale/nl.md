@@ -2,9 +2,9 @@
 title: Taal
 ---
 
-This controls the language that will be used to translate text on your pattern.
+Dit bepaalt de taal die wordt gebruikt om tekst op je patroon te vertalen.
 
-FreeSewing currently supports the following languages:
+FreeSewing ondersteunt momenteel de volgende talen:
 
 - Engels
 - Spaans
@@ -12,5 +12,5 @@ FreeSewing currently supports the following languages:
 - Duits
 - Nederlands
 
-You can picks any of these and your pattern will be translated in this language.
+Je kunt een van deze kiezen en je patroon wordt in deze taal vertaald.
 

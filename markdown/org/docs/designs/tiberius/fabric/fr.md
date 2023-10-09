@@ -1,7 +1,7 @@
 ---
-title: "Tiberius Tunica: Fabric Options"
+title: "Tiberius Tunica : Options de tissu"
 ---
 
-Tiberius can be made out of almost any woven fabric. Historically "accurate" would be linen, wool, and, to an extent, cotton. If you care about authenticity, research this a bit. In any case, natural fibers without any stretch are the way to go.
+Tibère peut être fabriqué avec presque n'importe quelle étoffe tissée. D'un point de vue historique, le lin, la laine et, dans une certaine mesure, le coton sont des produits "exacts". Si tu te soucies de l'authenticité, fais quelques recherches à ce sujet. Dans tous les cas, les fibres naturelles non extensibles sont à privilégier.
 
-Depending on the social status you want to portray, choose coarser or finer fabrics. Different colours are also possible.
+Selon le statut social que tu veux représenter, choisis des tissus plus grossiers ou plus fins. Différentes couleurs sont également possibles.

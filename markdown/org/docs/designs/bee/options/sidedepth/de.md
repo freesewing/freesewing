@@ -1,10 +1,10 @@
 ---
-title: "Side depth"
+title: "Seitliche Tiefe"
 ---
 
 ***
 
-Controls how far the bikini cup extends towards the side
+Kontrolliert, wie weit sich der Bikini-Cup zur Seite erstreckt
 
 ## Effekt dieser Option auf das Schnittmuster
 

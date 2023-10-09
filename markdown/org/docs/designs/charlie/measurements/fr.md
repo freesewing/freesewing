@@ -1,5 +1,5 @@
 ---
-titre: "Chinos Charlie : Mesures requises"
+title: "Charlie chinos : Mesures requises"
 ---
 
 <PatternMeasurements pattern='charlie' />

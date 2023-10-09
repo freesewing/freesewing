@@ -1,5 +1,5 @@
 ---
-title: "Teagan T-shirt: Cutting Instructions"
+title: "T-shirt Teagan : Instructions de coupe"
 ---
 
 - Coupez 1 dos sur le pli.

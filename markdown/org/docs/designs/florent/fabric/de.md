@@ -1,5 +1,5 @@
 ---
-title: "Florent flat cap: Fabric Options"
+title: "Florent Flachmütze: Stoff Optionen"
 ---
 
 Für den Hauptstoff deiner Kappe wird ein dicker Stoff besser formen aber wenn Sie für einen leichteren Stoff gehen, können Sie es so zu geben, dass es mehr Körper.

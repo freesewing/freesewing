@@ -1,5 +1,5 @@
 ---
-title: "Cornelius cycling breeches: Design Options"
+title: "Cornelius fietsbroek: Ontwerpopties"
 ---
 
 <PatternOptions pattern='cornelius' />

@@ -1,6 +1,18 @@
 # Change log for: @freesewing/plugin-bust
 
 
+## 3.0.0 (2022-09-30)
+
+### Changed
+
+ - All FreeSewing pacakges are now ESM only.
+ - All FreeSewing pacakges now use named exports.
+ - Dropped support for NodeJS 14. NodeJS 18 (LTS/hydrogen) or more recent is now required.
+
+### Removed
+
+ - This plugin no longer sets its version as an SVG attribute when rendering patterns
+
 ## 2.21.0 (2022-06-27)
 
 ### Changed

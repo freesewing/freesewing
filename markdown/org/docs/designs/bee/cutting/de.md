@@ -1,43 +1,43 @@
 ---
-title: "Bee bikini top: Cutting Instructions"
+title: "Bienen-Bikinioberteil: Schnittanleitung"
 ---
 
-There are three variations of this pattern. **One Colour**, which is where the bikini top is made out of one colour. **Two Colours**, where the bikini top is made reversible by using two colours, and **Cross Back Tie Variant**, where the neck ties tie in the back replacing the band tie.
+Es gibt drei Varianten dieses Musters. **One Colour**, bei dem das Bikinioberteil nur aus einer Farbe besteht. **Two Colours**, bei dem das Bikini-Oberteil durch die Verwendung von zwei Farben wendbar ist, und **Cross Back Tie Variant**, bei dem die Nackenbänder im Rücken gebunden werden und das Bindeband ersetzen.
 
 ## Materialien
 
-### One Colour (Non-Reversible)
+### Einfarbig (nicht umkehrbar)
 
 **Oberstoff**
 
-- Cut **4 cup** parts.
-- Cut **2 neck tie** parts.
-- Cut **1 band tie** part.
+- Schneide **4 Tasse** Teile.
+- Schneide **2 Teile der Halskrawatte** ab.
+- Schneide **1 Band binden** Teil.
 
-### Two Colours (Reversible)
+### Zwei Farben (umkehrbar)
 
 **Oberstoff**
 
-- Cut **2 cup** parts from main.
-- Cut **2 neck tie** parts.
-- Cut **1 band tie** part.
+- **2 Tasse** Teile vom Hauptteil abschneiden.
+- Schneide **2 Teile der Halskrawatte** ab.
+- Schneide **1 Band binden** Teil.
 
 **Futterstoff**
 
-- Cut **2 cup** parts.
-- Cut **2 neck tie** parts.
-- Cut **1 band tie** part.
+- Schneide **2 Tassen** Teile.
+- Schneide **2 Teile der Halskrawatte** ab.
+- Schneide **1 Band binden** Teil.
 
 ### Cross Back Tie Variant.
 
 **Oberstoff**
 
-- Cut **4 cup** parts or Cut **2 cups** from main and lining if making reversible ties.
-- Cut **2 neck tie** parts or Cut **2 neck ties** from main and lining if making reversible ties.
-- Cut **1 band** part if making cross back tie variant instead of band tie variant.
+- Schneide **4 Tassen** Teile oder **2 Tassen** von Haupt- und Futterstoff ab, wenn du wendbare Krawatten machst.
+- Schneide **2 Nackenkrawatten** oder **2 Nackenkrawatten** von Haupt- und Futterstoff ab, wenn du wendbare Krawatten machst.
+- Schneide **1 Band** Teil ab, wenn du die Variante mit Kreuzrückenbindung anstelle der Variante mit Bandbindung machst.
 
 <Note>
 
-This pattern is easily made reversible by buying a similar fabric to the main fabric and using it as contrast. To save confusion on instructions it will be refered to as the lining fabric.
+Dieses Muster lässt sich leicht wenden, indem du einen ähnlichen Stoff wie den Hauptstoff kaufst und ihn als Kontrast verwendest. Um Verwirrung in der Anleitung zu vermeiden, wird er als Futterstoff bezeichnet.
 
 </Note>

@@ -1,0 +1,40 @@
+printSettings: Paramètres d'impression
+printSettings.d: Ces paramètres contrôlent les aspects de la page pour l'exportation et l'impression PDF
+size.t: Taille du papier
+size.d: Choisis une taille de papier
+a4.t: A4
+a4.d: 210 x 297 mm
+a3.t: A3
+a3.d: 297 × 420 mm
+a2.t: A2
+a2.d: 420 × 594 mm
+a1.t: A1
+a1.d: 594 × 841 mm
+a0.t: A0
+a0.d: 841 × 1189 mm
+letter.t: Lettre
+letter.d: 8.5 x 11 po
+legal.t: Juridique
+legal.d: 8,5 x 14 po
+tabloid.t: Tabloïd
+tabloid.d: 11 x 17 po
+cutlist.t: Inclure les plans de coupe
+cutlist.d: Les images des plans de coupe suggérés pour chaque matériau doivent-elles être incluses dans le PDF exporté ?
+cutlistNo.t: Ne pas inclure les plans de coupe
+cutlistNo.d: Les PDF exportés n'incluront pas de suggestions de plans de coupe.
+cutlistYes.t: Inclure les plans de coupe
+cutlistYes.d: Les PDF exportés comprendront une page pour chaque matériau utilisé par le modèle, indiquant la quantité de matériau nécessaire et suggérant une disposition pour découper les morceaux appropriés.
+coverPage.t: Inclure la page de couverture
+coverPage.d: Le fichier PDF exporté doit-il inclure une page de couverture ?
+coverPageYes.t: Inclure une page de couverture
+coverPageYes.d: Ajoute une page de couverture au PDF exporté, comprenant des informations sur le patron et une image de l'ensemble de la mise en page assemblée.
+coverPageNo.t: Ne pas inclure de page de couverture
+coverPageNo.d: Les PDF exportés ignorent la page de couverture.
+margin.t: Marge de la page
+margin.d: Quelle doit être la marge des pages du PDF ? Cette fonction est utile pour s'assurer que tout le contenu se trouve dans les marges de ton imprimante. Elle permet également de contrôler la quantité de pages adjacentes qui se chevaucheront.
+orientation.t: Orientation de la page
+orientation.d: Dans quel sens les pages doivent-elles être tournées ?
+portrait.t: Portrait
+portrait.d: Les pages seront plus longues que larges
+landscape.t: Paysage
+landscape.d: Les pages seront plus larges que longues

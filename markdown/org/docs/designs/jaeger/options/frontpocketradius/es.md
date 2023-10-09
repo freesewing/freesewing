@@ -1,12 +1,12 @@
 ---
-title: "Front pocket radius"
+title: "Radio de bolsillo delantero"
 ---
 
-The radius by which the front pocket is rounded.
+El radio por el cual se redondea el bolsillo delantero.
 
-- Increase this option to curve the bottom of the front pocket
-- Decrease this option to straighten out the bottom of the front pocket
+- Aumenta esta opción para curvar la parte inferior del bolsillo delantero
+- Disminuye esta opción para enderezar la parte inferior del bolsillo delantero
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontpocketradius_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](jaeger_frontpocketradius_sample.svg "Efecto de esta opción en el patrón")

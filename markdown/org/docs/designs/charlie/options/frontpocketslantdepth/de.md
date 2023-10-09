@@ -1,9 +1,9 @@
 ---
-title: "Front pocket slant depth"
+title: "Vordertasche Schrägtiefe"
 ---
 
-Controls the depth of the front pocket slant. In other words, it determines how wide the pocket opening is.
+Steuert die Tiefe der vorderen Tasche Schlange. Mit anderen Worten: Es entscheidet, wie weit die Taschenöffnung ist.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_frontpocketslantdepth_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](charlie_frontpocketslantdepth_sample.svg "Effekt dieser Option auf das Schnittmuster")

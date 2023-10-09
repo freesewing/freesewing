@@ -1,9 +1,9 @@
 ---
-title: "Lunetius Lacerna: What You Need"
+title: "Lunetius Lacerna: Lo que necesitas"
 ---
 
-To make Lunetius, you will need the following:
+Para hacer Lunetius, necesitarás lo siguiente:
 
 - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
-- About 2 meters (2.2 yards) of a suitable fabric (see [Fabric options](/docs/patterns/lunetius/fabric))
-- (a _fibula_ (brooch, pin, clasp) to wear and close it)
+- Unos 2 metros (2,2 yardas) de una tela adecuada (consulta [Opciones de tela](/docs/patterns/lunetius/fabric))
+- (un _peroné_ (broche, pasador, cierre) para llevarlo puesto y cerrarlo)

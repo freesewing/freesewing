@@ -1,8 +1,8 @@
 ---
-title: "Cross seam bend"
+title: "Courbure de l'enfourchure dos"
 ---
 
-Controls the curvature of the cross seam curve.
+Contrôle la courbure de la courbe de couture croisée.
 
 <Note>
 
@@ -17,4 +17,4 @@ Les gens qui ont un bum rond voudront peut-être abaisser cela pour créer un pe
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_crossseamcurvebend_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_crossseamcurvebend_sample.svg "Effet de cette option sur le motif")

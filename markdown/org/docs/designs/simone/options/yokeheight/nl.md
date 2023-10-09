@@ -1,12 +1,12 @@
 ---
-title: "Yoke height"
+title: "Hoogte schouderpas"
 ---
 
-Controls the height of the yoke seam.
+Regelt de hoogte van de juknaad.
 
-- Increase this option to lower the height and lengthen the yoke
-- Decrease this option to raise the height and shorten the yoke
+- Verhoog deze optie om de hoogte te verlagen en het juk te verlengen
+- Verlaag deze optie om de hoogte te verhogen en het juk in te korten
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_yokeheight_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simone_yokeheight_sample.svg "Effect van deze optie op het patroon")

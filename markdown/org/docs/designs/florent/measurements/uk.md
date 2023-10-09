@@ -1,5 +1,5 @@
 ---
-title: "Florent flat cap: Required Measurements"
+title: "Капелюшок Florent плоский: Необхідні виміри"
 ---
 
 <PatternMeasurements pattern='florent' />

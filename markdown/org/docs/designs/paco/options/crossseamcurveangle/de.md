@@ -1,12 +1,12 @@
 ---
-title: "Cross seam angle"
+title: "Quernaht Winkel"
 ---
 
-Controls the angle of cross seam curve.
+Steuert den Winkel der Quernahtkurve.
 
-- 0% makes the cross seam draft parallel to the hem.
-- Increasing this option will draft the cross seam at that angle away from the hem.
+- 0% sorgt dafür, dass der Entwurf der Quernaht parallel zum Saum verläuft.
+- Wenn du diese Option erhöhst, wird die Quernaht in diesem Winkel vom Saum weggezogen.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](paco_crossseamcurveangle_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](paco_crossseamcurveangle_sample.svg "Effekt dieser Option auf das Schnittmuster")

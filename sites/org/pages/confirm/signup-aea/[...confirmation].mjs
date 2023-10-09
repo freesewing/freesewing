@@ -1,6 +1,5 @@
 // Hooks
 import { useEffect, useState } from 'react'
-import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
@@ -11,7 +10,7 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { BareLayout, ns as layoutNs } from 'site/components/layouts/bare.mjs'
 import { WelcomeWrapper } from 'shared/components/wrappers/welcome.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
-import { Popout } from 'shared/components/popout.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 
 // Translation namespaces used on this page
 const ns = Array.from(new Set([...pageNs, ...layoutNs, 'confirm', 'locales', 'themes']))
@@ -26,8 +25,7 @@ const ActiveSignUpPage = () => {
     path: ['confirm', 'emailchange', confirmationId],
   }
 
-  const { token } = useAccount()
-  const backend = useBackend(token)
+  const backend = useBackend()
   const { t } = useTranslation(ns)
 
   const [id, setId] = useState(false)

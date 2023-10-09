@@ -1,16 +1,16 @@
 ---
-title: "Huey hoodie: Cutting Instructions"
+title: "Sweat à capuche Huey : Instructions de coupe"
 ---
 
 **Tissu principal**
 
-- Cut **2 front** parts
-- Cut **1 back** part on the fold
-- Cut **2 sleeves** parts
-- Cut **2 pocket** parts
-- Cut **4 Hood** parts
+- Couper **2 parties frontales**
+- Coupe **1 en arrière** partie sur le pli
+- Coupe **2 manches** pièces
+- cut two pocket pieces
+- Découpe **4 Pièces du capot**
 
-**Ribbing**
+**Bord côte**
 
-- Cut **2 cuff** parts
-- Cut **1 waistband**
+- Coupe **2 parties du brassard**
+- Couper **1 bande de taille**

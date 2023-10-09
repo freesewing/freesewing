@@ -1,67 +1,67 @@
 ---
-title: "Carlton coat: Sewing Instructions"
+title: "Carlton Mantel: Anleitung zum Nähen"
 ---
 
-### Step 1: Draft and Cut the missing Lining and Facing Parts
+### Schritt 1: Zeichne und schneide die fehlenden Futter- und Verkleidungsteile zu
 
-Some parts for Carlton require you to draft parts from the existing parts. The following are a list of what parts you need to draft, [see Carlton Cutting](/docs/patterns/carlton/cutting/) for details on how to cut them.
+Bei einigen Teilen für Carlton musst du Teile aus den vorhandenen Teilen entwerfen. Im Folgenden findest du eine Liste der Teile, die du entwerfen musst: [. Wie du sie schneidest, erfährst du unter](/docs/patterns/carlton/cutting/) .
 
-#### Drafting
+#### Entwerfen
 
-##### Front facing and Front lining
+##### Frontverkleidung und Frontfutter
 
-- Trace off of **Front** part.
-- Cut along the green line.
-- Add seam allowance (if including) along green line to both pieces
-- The piece with the lapel is now the **Front facing** part.
-- Trim the hem allowance (if included) of the remaining piece to seam allowance length
-- The remaining piece is now the **Front lining** part.
+- Zeichne das Teil **Front** ab.
+- Schneide entlang der grünen Linie.
+- Füge die Nahtzugabe (falls vorhanden) entlang der grünen Linie zu beiden Teilen hinzu.
+- Der Teil mit dem Revers ist jetzt der **Vorderseite** Teil.
+- Schneide die Saumzugabe (falls vorhanden) des verbleibenden Stücks auf die Länge der Nahtzugabe zu
+- Das verbleibende Stück ist jetzt das **Frontfutter** Teil.
 
 <Note>
 
-The button and pocket markings are not needed for these parts so feel free not to trace them.
+Die Knopf- und Taschenmarkierungen werden für diese Teile nicht benötigt.
 
 </Note>
 
 <Warning>
 
-Don't forget the seam allowance for these pieces when cutting if you are making these parts nett!
+Vergiss beim Zuschneiden nicht die Nahtzugabe für diese Teile, wenn du diese Teile netto machst!
 
 </Warning>
 
-##### Chest canvas
+##### Brustleinwand
 
-- Trace off of **Front** part.
-- Cut along the orange line.
-- Discard lower piece.
-- Cut along lapel line.
-- Discard lapel piece.
-- Remove the seam allowances (if included) of the upper piece.
-- The upper piece is now the **Chest canvas** part.
+- Zeichne das Teil **Front** ab.
+- Schneide entlang der orangefarbenen Linie.
+- Wirf das untere Stück weg.
+- Schneide entlang der Reverslinie.
+- Wirf das Revers ab.
+- Entferne die Nahtzugaben (falls vorhanden) des oberen Teils.
+- Das obere Teil ist jetzt das **Chest Canvas** Teil.
 
-##### Front Shoulder
+##### Vordere Schulter
 
-- Trace off of **Front** part.
-- Draw a curve from shoulder to bottom of armhole.
-- Cut along this curve and discard the lower part.
-- The upper piece is now the **Front Shoulder** part.
+- Zeichne das Teil **Front** ab.
+- Ziehe eine Kurve von der Schulter bis zum unteren Ende des Armlochs.
+- Schneide entlang dieser Kurve und entsorge den unteren Teil.
+- Das obere Teil ist jetzt das **Front Shoulder** Teil.
 
-##### Back shoulder
+##### Rücken Schulter
 
-- Trace off of **Back** part.
-- Cut along the orange line.
-- Discard lower piece.
-- Remove the seam allowamces (if included) of the upper piece.
-- The upper piece is now the **Back shoulder** part.
+- Verfolge die Spur von **Zurück** Teil.
+- Schneide entlang der orangefarbenen Linie.
+- Wirf das untere Stück weg.
+- Entferne die Nahtzugaben (falls vorhanden) des oberen Teils.
+- Das obere Teil ist jetzt der **Rückenschulter** Teil.
 
-#### Cutting
+#### Zuschnitt
 
-- Cut all the parts above from their respective fabrics/facings. ([see Carlton Cutting](/docs/patterns/carlton/cutting/))
+- Schneide alle oben genannten Teile aus den jeweiligen Stoffen/Bezügen aus. ([siehe Carlton Cutting](/docs/patterns/carlton/cutting/))
 
-### Step 2: Fix Me
+### Schritt 2: Bring mich in Ordnung
 
 <Fixme>
 
-Documentation for this pattern still needs to be written. In the meantime their are some preliminary instructions for ([Carlita, Carlton's Counterpart](/docs/patterns/carlita/instructions/)) that should help.
+Die Dokumentation für dieses Muster muss noch geschrieben werden. In der Zwischenzeit gibt es einige vorläufige Anleitungen für ([Carlita, Carlton's Counterpart](/docs/patterns/carlita/instructions/)), die helfen sollten.
 
 </Fixme>

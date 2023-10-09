@@ -1,22 +1,22 @@
 ---
-title: "Lucy tie-on pocket: Fabric Options"
+title: "Кишеня на зав'язці Люсі: Варіанти тканини"
 ---
 
-Because pockets were worn by people in every layer of society historically what they were made out of varied intensely. Some were made out of sturdy and plain fabrics, marked with the owners initials. Others were made out of lavish silks or richly embroidered.
+Оскільки кишені носили люди в усіх прошарках суспільства, історично склалося так, що матеріали, з яких вони були зроблені, дуже різнилися. Деякі з них були виготовлені з міцних і однотонних тканин, позначені ініціалами власників. Інші були виготовлені з розкішних шовків або багато вишиті.
 
-As such when it comes to fabric options the world is your oyster.
+Тому, коли справа доходить до вибору тканин, світ - ваша устриця.
 
-- Modern prints make fun modern pockets
-- Use a plain cotton or linen for a more historical option
-- Have a lot of scraps? Make a patchwork pocket!
-- Pockets were often a first embroidery project, so go wild if you want to
+- Сучасні принти створюють веселі сучасні кишені
+- Використовуйте звичайну бавовняну або лляну тканину для більш історичного варіанту
+- Маєте багато обрізків? Зробіть клаптикову кишеню!
+- Кишені часто були першим вишивальним проектом, тож якщо ви хочете, можете сміливо експериментувати.
 
-The one thing to keep in mind is how stable your fabric is. If it is not very stable or you think it won’t hold very much weight, you can add a lining.
+Єдине, про що слід пам'ятати, - наскільки стійка ваша тканина. Якщо він не дуже стійкий або ви вважаєте, що він не витримає великої ваги, ви можете додати підкладку.
 
-Additionally, if you are handsewing your pocket it is worth picking a fabric that isn’t too thick or heavy.
+Крім того, якщо ви викроюєте кишеню вручну, варто вибрати не надто товсту або важку тканину.
 
-Your binding doesn’t have to be the same colour as the main fabric either. You can use it to add a fun accent, or make your pocket fancier. Bias binding curves easier around any curves, but you can just as easily use strips of fabric as a more waste conscious option.
+Палітурка також не обов'язково має бути того ж кольору, що й основна тканина. Ви можете використовувати його, щоб додати веселий акцент або зробити кишеню більш вигадливою. Зсувна палітурка легше обводить будь-які вигини, але ви можете так само легко використовувати смужки тканини, як більш економний варіант.
 
-The ties can be made from self fabric, or you can use something like a twill tape instead.
+Зав'язки можна зробити з самої тканини, або ж використати щось на кшталт саржевої стрічки.
 
-As always, whether you want to stick to historical practices or make something modern is entirely up to you!
+Як завжди, чи хочете ви дотримуватися історичних практик, чи зробити щось сучасне, залежить тільки від вас!

@@ -1,11 +1,11 @@
 ---
-title: "Back pocket facing"
+title: "Fond de poche arrière"
 ---
 
 ***
 
-Controls whether or not to include facing on the back pockets
+Contrôle s'il faut inclure ou non un fond dans les poches arrière
 
-## Effet de cette option sur le modèle
+## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_backpocketfacing_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_backpocketfacing_sample.svg "Effet de cette option sur le motif")

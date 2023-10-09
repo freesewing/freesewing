@@ -1,9 +1,9 @@
 ---
-title: "Waralee wrap pants: What You Need"
+title: "Waralee wikkelbroek: Wat je nodig hebt"
 ---
 
-To make Waralee, you will need the following:
+Om Waralee te maken heb je het volgende nodig:
 
 - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-- About 2 meters (2.2 yards) of a suitable fabric ([see Waralee Fabric options](/docs/patterns/waralee/fabric/))
-- Some interfacing for the waistband and pockets (if making pockets).
+- Ongeveer 2 meter van een geschikte stof ([zie Waralee stofopties](/docs/patterns/waralee/fabric/))
+- Wat vlieseline voor de tailleband en de zakken (als je zakken maakt).

@@ -1,39 +1,39 @@
 ---
-title: "Carlton coat: Fabric Options"
+title: "Abrigo Carlton: Opciones de tejido"
 ---
 
-### Main Fabric
+### Tela principal
 
-You want a fabric that has a bit of body that holds its shape. Generally **Wools** of **coating weight** will be the best choice as they will provide warmth and give shape to the coat. Other fabrics of **coating weight** should also work. However if you are looking for something more lightweight you could try **Linens** and lighter **Wools**, but you may need to face these fabrics to give them more body before construction. **Fleece** is a cheaper alternate to **Wools** but may note keep as long, if you are putting the effort into properly tailoring Carlton then you are gonna want to consider buying a fabric that will last for a long period of time.
+Quieres un tejido que tenga un poco de cuerpo y que mantenga su forma. Generalmente, las lanas **** de **peso de revestimiento** serán la mejor elección, ya que proporcionarán calor y darán forma al abrigo. Otros tejidos de **peso de revestimiento** también deberían funcionar. Sin embargo, si buscas algo más ligero, puedes probar **Linos** y **Lanas más ligeras**, pero puede que necesites refrentar estos tejidos para darles más cuerpo antes de la construcción. **El vellón** es una alternativa más barata a las lanas **** , pero puede que no se conserve tanto tiempo; si te esfuerzas en confeccionar adecuadamente el Carlton, entonces querrás plantearte comprar un tejido que dure mucho tiempo.
 
 <Note>
 
-Remember that this pattern is intended to be a winter coat so you need to consider warmth when choosing your fabric.
+Recuerda que este patrón está pensado para ser un abrigo de invierno, por lo que debes tener en cuenta la calidez a la hora de elegir la tela.
 
 </Note>
 
-### Linings and Pocket Bags
+### Forros y bolsas de bolsillo
 
-Lightweight **Cottons** such as **Cotton Silesia**, **Cotton Lawn** or **Glazed Cottons** should do for the body lining but you may find that you require **Silks** or similar for the sleeve linings to reduce friction and make it easier to take on and off over the arms. **Silks** can also be used for the body as well but the **Cotton** will be more durable in the long run. Pocket bags should be out of **Cotton** or something that is strong enough to hold the weight of the intended items you wish to carry in them. **Printed Cottons** are a fun thing to try but if your main fabric is quite bulky you may find they add to much weight.
+Los algodones ligeros **** como **Algodón Silesia**, **Algodón Césped** o **Algodones Glaseados** deberían bastar para el forro del cuerpo, pero puede que necesites **Sedas** o similares para los forros de las mangas, a fin de reducir la fricción y facilitar su colocación sobre los brazos. **La seda** también puede utilizarse para el cuerpo, pero el algodón **** será más duradero a largo plazo. Las bolsas de bolsillo deben ser de **Algodón** o de algo que sea lo suficientemente resistente como para soportar el peso de los objetos que quieras llevar en ellas. **Algodones estampados** son algo divertido de probar, pero si tu tejido principal es bastante voluminoso, puede que te parezca que añaden demasiado peso.
 
 <Tip>
 
-As per usual with Linings it is really down to your prefered lining materials but if you are new to lining a coat we suggest to use the **Cotton** options for the body and pockets and use the **Silk** option for the sleeves.
+Como es habitual con los forros, depende del material que prefieras, pero si eres nuevo en esto de forrar abrigos, te sugerimos que utilices la opción **algodón** para el cuerpo y los bolsillos y la opción **Seda** para las mangas.
 
 </Tip>
 
-### Facings
+### Caras
 
-We recommend **Hair canvases**. You may be tempted to use modern interfacing but hair canvases will provide the best results. You will want a combination of different weight hair canvases such as lightweight to medium weight **Tailors Canvas** and heavyweight **Horsehair Canvas**. A common misconception is that you have to use horsehair canvas for all of it, but this is not the case and really is only needed for areas that need the most structure such as the upper front but are often too stiff for other parts. Tailors canvas is generally used for the majority of facing a coat.
+Te recomendamos **Lienzos de pelo**. Puede que tengas la tentación de utilizar una entretela moderna, pero los lienzos de pelo te proporcionarán los mejores resultados. Querrás una combinación de lienzos de pelo de distintos gramajes, como el lienzo de sastre de peso ligero a medio **** y el lienzo de crin de caballo de peso pesado ****. Un error común es pensar que tienes que utilizar lona de crin para todo, pero no es así y realmente sólo es necesaria para las zonas que necesitan más estructura, como la parte superior delantera, pero suele ser demasiado rígida para otras partes. La lona de sastre se utiliza generalmente para la mayor parte del revestimiento de un abrigo.
 
 <Tip>
 
-You can use fusible or non-fusible facings but you may find that you still need to flatline the facing and fabric pieces together with basting stitches, even after fusing for the best results.
+Puedes utilizar forros termoadhesivos o no termoadhesivos, pero puede que necesites unir el forro y las piezas de tela con puntadas de hilvanado, incluso después de la termoadhesiva, para obtener los mejores resultados.
 
 </Tip>
 
 <Note>
 
-Certain hair canvases, such as **Horsehair canvas** can have stiff hairs that can poke out of the fabric so will require tape like tailors tape to prevent this from happening.
+Algunos lienzos de pelo, como el **lienzo de pelo de caballo**, pueden tener pelos rígidos que pueden salirse de la tela, por lo que necesitarán cinta adhesiva, como la de sastre, para evitarlo.
 
 </Note>

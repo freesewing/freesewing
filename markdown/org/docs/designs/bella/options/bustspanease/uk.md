@@ -1,15 +1,15 @@
 ---
-title: "Bust span ease"
+title: "Легкість обхвату грудей"
 ---
 
 ***
 
-![The effect of the bust span ease option on the pattern](sample.png)
+![Вплив опції "Полегшення обхвату грудей" на лекало](sample.png)
 
-The **bust span ease** option controls how much ease is applied to the bust span.
+Параметр **bust span ease** контролює, наскільки полегшено буде застосовано обхват бюста.
 
-<Note>This will not add ease to the garment, but merely influence the bust point</Note>
+<Note>Це не додасть одягу легкості, а лише вплине на точку обхвату грудей</Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_bustspanease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bella_bustspanease_sample.svg "Вплив цієї опції на шаблон")

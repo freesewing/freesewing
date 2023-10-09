@@ -8,8 +8,6 @@ function draftHueyHood({
   Path,
   points,
   paths,
-  complete,
-  paperless,
   snippets,
   Snippet,
   sa,
@@ -17,7 +15,7 @@ function draftHueyHood({
   measurements,
   part,
 }) {
-  let base = store.get('frontNeckSeamLength') + store.get('backNeckSeamLength')
+  const base = store.get('frontNeckSeamLength') + store.get('backNeckSeamLength')
   points.cfBottom = new Point(0, 0)
   points.cbBottom = points.cfBottom.shift(0, base).rotate(options.hoodAngle, points.cfBottom)
   points.cfHeightLeft = points.cfBottom.shift(90, measurements.head * options.hoodHeight)
@@ -45,62 +43,75 @@ function draftHueyHood({
     .close()
     .attr('class', 'fabric')
 
-  // Complete?
-  if (complete) {
-    points.logo = points.frontTop.shiftFractionTowards(points.cbBottom, 0.7)
-    points.title = points.frontTop.shiftFractionTowards(points.cbBottom, 0.3)
-    snippets.logo = new Snippet('logo', points.logo)
-    macro('title', {
-      at: points.title,
-      nr: 5,
-      title: 'hood',
-    })
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-  }
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.cfBottom,
-      to: points.cbBottom,
-      y: points.cfBottom.y + sa + 15,
-    })
-    macro('hd', {
-      from: points.cbBottom,
-      to: points.backPitch,
-      y: points.cfBottom.y + sa + 15,
-    })
-    macro('hd', {
-      from: points.cfTop,
-      to: points.backPitch,
-      y: points.cfBottom.y + sa + 30,
-    })
-    macro('hd', {
-      from: points.frontTop,
-      to: points.backPitch,
-      y: points.frontTop.y - sa - 15,
-    })
-    macro('ld', {
-      from: points.cfBottom,
-      to: points.cfTop,
-      d: -15,
-    })
-    macro('ld', {
-      from: points.cfBottom,
-      to: points.cbBottom,
-      d: 15,
-    })
-    macro('vd', {
-      from: points.cfTop,
-      to: points.frontTop,
-      x: points.cfBottom.x - sa - 15,
-    })
-    macro('vd', {
-      from: points.cfBottom,
-      to: points.frontTop,
-      x: points.cfBottom.x - sa - 30,
-    })
-  }
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 4, from: 'fabric' })
+
+  // Logo
+  points.logo = points.frontTop.shiftFractionTowards(points.cbBottom, 0.7)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  // Title
+  points.title = points.frontTop.shiftFractionTowards(points.cbBottom, 0.3)
+  macro('title', {
+    at: points.title,
+    nr: 5,
+    title: 'hood',
+  })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wAtNeck',
+    from: points.cfBottom,
+    to: points.cbBottom,
+    y: points.cfBottom.y + sa + 15,
+  })
+  macro('hd', {
+    id: 'wNeckToHood',
+    from: points.cbBottom,
+    to: points.backPitch,
+    y: points.cfBottom.y + sa + 15,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.cfTop,
+    to: points.backPitch,
+    y: points.cfBottom.y + sa + 30,
+  })
+  macro('hd', {
+    id: 'wHoodTopToHoodBack',
+    from: points.frontTop,
+    to: points.backPitch,
+    y: points.frontTop.y - sa - 15,
+  })
+  macro('ld', {
+    id: 'lHoodRise',
+    from: points.cfBottom,
+    to: points.cfTop,
+    d: -15,
+  })
+  macro('ld', {
+    id: 'lAtNeck',
+    from: points.cfBottom,
+    to: points.cbBottom,
+    d: 15,
+  })
+  macro('vd', {
+    id: 'hOpening',
+    from: points.cfTop,
+    to: points.frontTop,
+    x: points.cfBottom.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.cfBottom,
+    to: points.frontTop,
+    x: points.cfBottom.x - sa - 30,
+  })
 
   return part
 }

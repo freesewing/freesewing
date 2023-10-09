@@ -1,5 +1,5 @@
 ---
-title: "Chest pocket placement"
+title: "Emplacement poche de poitrine"
 ---
 
 ![Emplacement poche de poitrine](chestpocketplacement.svg)
@@ -8,4 +8,4 @@ Emplacement de la poche de poitrine en proportion d'un quart de votre circonfér
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_chestpocketplacement_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_chestpocketplacement_sample.svg "Effet de cette option sur le motif")

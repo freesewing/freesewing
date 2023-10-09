@@ -13,6 +13,6 @@ Sie können von Schnittmuster-Designern verwendet werden, um je nach Kontext zus
 
 <Legend part="otherLines">
 
-Other line styles
+Andere Linienstile
 
 </Legend>

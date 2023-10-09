@@ -1,62 +1,62 @@
 ---
-title: "Carlton coat: Cutting Instructions"
+title: "Abrigo Carlton: Instrucciones de corte"
 ---
 
 <Note>
 
-Certain parts have to be drafted off of the existing parts. How to draft these are provided in the [instructions](/docs/patterns/carlton/instructions).
+Algunas partes tienen que redactarse a partir de las existentes. En [instructions](/docs/patterns/carlton/instructions) se indica cómo redactarlas.
 
 </Note>
 
-### Materials
+### Materiales
 
-- **Main fabric**
-  - Cut **2 Front** parts
-  - Cut **2 Front facing** parts
-  - Cut **2 Back** parts
-  - Cut **2 topsleeve** parts
-  - Cut **2 undersleeve** parts
-  - Cut **2 tail** parts
-  - Cut **4 belt** parts
-  - Cut **2 Collar stand** parts
-  - Cut **2 collar** parts on the fold or Cut the upper collar on the fold and the under collar on the bias
-  - Cut **2 cuffFacing** parts
-  - Cut **2 Pocket** parts
-  - Cut **4 pocketFlap** parts
-  - Cut **2 chestPocketWelt** parts
-  - Cut **2 innerPocketWelt** parts
+- **Tela principal**
+  - Corta **2 Piezas delanteras**
+  - Corta **2 Partes frontales**
+  - Cut **2 Back** part
+  - Corta **2 piezas del manguito superior**
+  - Corta **2 piezas del manguito inferior**
+  - Corta **2 partes de la cola**
+  - Corta **4 piezas de la cinta**
+  - Corta **2 Soporte de collar** piezas
+  - Corta **2 partes del cuello** al doblez o Corta el cuello superior al doblez y el cuello inferior al bies
+  - Corta **2 manguitosFrente a** piezas
+  - Corta **2 Piezas de bolsillo**
+  - Corta **4 piezas pocketFlap**
+  - Corta **2 piezas de chestPocketWelt**
+  - Corta **2 piezas innerPocketWelt**
 
 <Note>
 
-If your main fabric is quite lightweight and flimsy you may need to interface all the parts with a lightweight interfacing.
+Si tu tejido principal es bastante ligero y endeble, puede que necesites intercalar todas las piezas con una entretela ligera.
 
 </Note>
 
-- **Lining fabric**
-  - Cut **2 Front lining** parts
-  - Cut **2 Back** parts
-  - Cut **2 topsleeve** parts
-  - Cut **2 undersleeve** parts
-  - Cut **2 tail** parts
-  - Cut **2 innerPocketBag** parts
-  - Cut **1 innerPocketTab** parts
-  - Cut **2 pocketLining** parts
-  - Cut **2 chestPocketBag** parts
-- **Light to Mediumweight Hair Canvas**
-  - Cut **2 Front Facing** parts
-  - Cut **1 Collar stand** parts
-  - Cut **2 collar** parts on the bias and seam together
-  - Cut **2 cuffFacing** parts
-  - Cut **2 pocketFlap** parts
-  - Cut **2 chestPocketWelt** parts
-  - Cut **2 innerPocketWelt** parts
-- **Heavyweight Hair Canvas**
-  - Cut **2 Front Shoulder** parts
-  - Cut **2 Chest canvas** parts
-  - Cut **2 Back shoulder** parts
+- **Tela fina**
+  - Corta **2 Forro frontal** piezas
+  - Cut **2 Back** part
+  - Corta **2 piezas del manguito superior**
+  - Corta **2 piezas del manguito inferior**
+  - Corta **2 partes de la cola**
+  - Corta **2 innerPocketBag** partes
+  - Corta **1 innerPocketTab** partes
+  - Corta **2 bolsillosForro** piezas
+  - Corta **2 chestPocketBag** partes
+- **Lienzo capilar de peso ligero a medio**
+  - Corta **2 Piezas de la cara frontal**
+  - Corta **1 Soporte de collar** piezas
+  - Corta **2 partes del cuello** al bies y cóselas juntas
+  - Corta **2 manguitosFrente a** piezas
+  - Corta **2 piezas pocketFlap**
+  - Corta **2 piezas de chestPocketWelt**
+  - Corta **2 piezas innerPocketWelt**
+- **Lienzo de pelo grueso**
+  - Corta **2 piezas del hombro delantero**
+  - Corta **2 Piezas de lona de pecho**
+  - Corta **2 Hombro trasero** partes
 
 <Note>
 
-The canvas parts need to be cut nett (without seam allowances).
+Las piezas de lona deben cortarse netas (sin márgenes de costura).
 
 </Note>

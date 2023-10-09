@@ -1,11 +1,11 @@
 ---
-title: "Armhole Dart Position"
+title: "Положення виточки пройми Положення виточки пройми"
 ---
 
 ***
 
-The **Armhole Dart Position** option allows you to move the position of the dart/princess seam.
+Опція **Положення виточки пройми** дозволяє змінювати положення виточки/притачного шва.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_armholedartposition_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](noble_armholedartposition_sample.svg "Вплив цієї опції на шаблон")

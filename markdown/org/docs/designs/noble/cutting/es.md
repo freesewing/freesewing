@@ -1,36 +1,36 @@
 ---
-title: "Noble body block: Cutting Instructions"
+title: "Bloque de cuerpo noble: Instrucciones de corte"
 ---
 
-**Main fabric**
+**Tela principal**
 
-- Cut **1 Front Inside** part on the fold.
+- Corta **1 Parte delantera interior** en el pliegue.
 - Cut **2 Front Outside** part.
 
-### Shoulder dart
+### Dardo de hombro
 
 - Cut **2 Back Inside** part.
 - Cut **2 Back Outside** part.
 
-### Armhole dart
+### Dardo de sisa
 
-- Cut **2 Back** part.
+- Corta **2 partes traseras**.
 
-These cutting instructions are just for the default Noble block. Adjust your cutting accordingly if you have/are making changes to the block.
+Estas instrucciones de corte son sólo para el bloque Noble por defecto. Si has hecho o estás haciendo cambios al patrón base, ajusta tu corte como corresponda.
 
 <Tip>
 
-If you do not have someone to help pin you into Noble then you may find it easier to Cut 2 Front Inside parts with seam allowance and sew the backs up when constructing so you can pin in the front.
+Si no tienes a nadie que te ayude a fijar con alfileres la parte Noble, puede que te resulte más fácil cortar 2 partes interiores delanteras con margen de costura y coser los reversos al construir para poder fijar con alfileres la parte delantera.
 
 </Tip>
 
 <Note>
 
-###### Noble is a block, not a pattern
+###### Noble es un bloque, no un patrón
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Un bloque es una forma básica en la que se basan otros patrones.
+A veces también se llaman trampas, aunque los puristas argumentarán que un bloque y una inclinación son cosas diferentes.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Los bloques normalmente no se hacen as-is sino que sirven como base para otros patrones.
 
 </Note>

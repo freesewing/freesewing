@@ -1,132 +1,132 @@
 ---
-title: "Cornelius cycling breeches: Sewing Instructions"
+title: "Pantalones de ciclista Cornelius: Instrucciones de costura"
 ---
 
-### Step 1: The Front Pockets
+### Paso 1: Los bolsillos delanteros
 
-- Press under the seam allowances of the non-notched edges of the pokcet facings.
-- Matching notches, pin the wrong sides of pocket facings to right side of pocket bags, _Edgestitch_ the folded edges to the pocket bags.
-- _Baste_ the seam allowances of the notched edges of the pocket facings to the pocket bags.
-- With right sides together matching double notches sew the pocket bags to the front and then press to the wrong side.
-- Fold the pockets in half along the fold line, right sides together. Stitch the bottom of the pocket bag together.
-- Alternatively you can _French Seam_ the bottom seams of the pocket bags together if you prefer.
-- _Baste_ the top and side of the pocket bags to the front seam allowances mathcing notches.
+- Presiona por debajo de los márgenes de costura de los bordes no dentados de las carátulas del pokcet.
+- Haciendo coincidir las muescas, sujeta con alfileres los lados equivocados de los revestimientos de los bolsillos al lado derecho de las bolsas de bolsillo, _Edgestitch_ los bordes doblados a las bolsas de bolsillo.
+- _Hilvana_ los márgenes de costura de los bordes dentados de las carátulas de los bolsillos a las bolsas de los bolsillos.
+- Con los lados derechos juntos haciendo coincidir las muescas dobles, cose las bolsas de bolsillo a la parte delantera y luego presiona hacia el lado equivocado.
+- Dobla los bolsillos por la mitad siguiendo la línea de pliegue, con los lados derechos juntos. Cose el fondo de la bolsa de bolsillo.
+- Si lo prefieres, puedes unir las costuras inferiores de las bolsas con la _costura francesa_.
+- _Hilvana_ la parte superior y los laterales de las bolsas de los bolsillos a los márgenes de costura delanteros haciendo muescas matemáticas.
 
 <Note>
 
-Going forward the pockets and fronts will just be referred to as the fronts.
+En adelante, los bolsillos y los frontales se denominarán simplemente frontales.
 
 </Note>
 
-### Step 2: The Fly
+### Paso 2: La mosca
 
-- With right sides together, from the top _Baste_ along the fly line stopping at the notch on the crotch seam.
-- From where you left off with basting, stitch the crotch seam together making sure to secure your stitches where the basting ends.
-- Press open the fly and seam.
-- Lay the fronts down wrong side up so the right sides of the fly flaps are facing you.
-- Lay zipper face up on the front flaps, with the left side of the zipper touching the seam, with the bottom of the right zipper tape on the curved flap.
-- Sew the right zipper tape to the right flap close to the zipper teeth using a zipper foot. Don't sew it to the front itself!
-- Pull the zipper to the left so the right flap is pulled over.
-- Pin the left zipper tape to the left flap.
-- Sew the left zipper tape to left flap close to the zipper teeth using a zipper foot. Don't sew it to the front itself!
-- Fold the zipper guard in half wrong sides together.
-- Lay the zipper guard on the right flap, right sides touching.
-- Sew the zipper guard to the right flap, _Finish_ the right side to your liking.
-- _Finish_ the left side of the left flap to your liking.
-- Unpick the basted part of the front seam.
-- _Topstitch_ the right flap down, away from the now unpicked seam, as far down as you can.
-- Pin/_Baste_ the zipper protector over to the right side to keep it out of the way for the next step
-- On the outside side, sew the left flap down to the left, following the curved line.
-- On the outside side, _Bar-Tack_ where you like them for reinforcement.
+- Con los lados derechos juntos, desde la parte superior _Hilvana_ a lo largo de la línea de vuelo deteniéndote en la muesca de la costura de la entrepierna.
+- Desde donde lo dejaste con el hilván, pespuntea la costura de la entrepierna asegurando bien los puntos donde termina el hilván.
+- Presiona para abrir la bragueta y la costura.
+- Coloca los frentes con el lado equivocado hacia arriba, de modo que los lados derechos de las solapas queden mirando hacia ti.
+- Coloca la cremallera boca arriba sobre las solapas delanteras, con el lado izquierdo de la cremallera tocando la costura, con la parte inferior de la cinta de la cremallera derecha sobre la solapa curva.
+- Cose la cinta de la cremallera derecha a la solapa derecha cerca de los dientes de la cremallera utilizando un pie para cremalleras. ¡No lo cosas a la propia parte delantera!
+- Tira de la cremallera hacia la izquierda para que la solapa derecha quede por encima.
+- Sujeta con alfileres la cinta de la cremallera izquierda a la solapa izquierda.
+- Cose la cinta de la cremallera izquierda a la solapa izquierda cerca de los dientes de la cremallera utilizando un pie para cremalleras. ¡No lo cosas a la propia parte delantera!
+- Dobla el protector de la cremallera por la mitad por el lado contrario.
+- Coloca el protector de la cremallera sobre la solapa derecha, con los lados derechos tocándose.
+- Cose el protector de la cremallera a la solapa derecha, _Termina_ el lado derecho a tu gusto.
+- _Termina_ el lado izquierdo de la solapa izquierda a tu gusto.
+- Deshaz el hilván de la costura delantera.
+- _Puntada superior_ la solapa derecha hacia abajo, lejos de la costura ahora descosida, tan abajo como puedas.
+- Sujeta con alfileres/_Hilvana_ el protector de la cremallera hacia el lado derecho para que no estorbe en el siguiente paso
+- En el lado exterior, cose la solapa izquierda hacia abajo, siguiendo la línea curva.
+- En el lado exterior, _Bar-Tack_ donde quieras para reforzar.
 
 <Tip>
 
-When sewing the left flap down on the outside, you may find it best to make a template to help you.
+Al coser la solapa izquierda por fuera, quizá te convenga hacer una plantilla para ayudarte.
 
 </Tip>
 
 <Note>
 
-If you wish to orientate the fly the other way change the left to right and right to left in the steps above.  
-If wanting something more historical than omit the zipper and make a buttonhole fly instead.
+Si deseas orientar la mosca en el otro sentido, cambia la izquierda por la derecha y la derecha por la izquierda en los pasos anteriores.  
+Si quieres algo más histórico, omite la cremallera y haz en su lugar una bragueta de ojal.
 
 </Note>
 
-### Step 3: Attaching the front to the back
+### Paso 3: Fijar la parte delantera a la trasera
 
-- With right sides together sew the back pieces together along the back seam.
-- With right sides together sew the front and back together at the side seams and inner leg seam. Making sure to leave a gap below the notches at the bottom of the side seams. The gap will be referred to as the list when going forward.
+- Con los lados derechos juntos, cose las piezas traseras a lo largo de la costura trasera.
+- Con los lados derechos juntos, cose la parte delantera y la trasera por las costuras laterales y la costura interior de la pierna. Asegúrate de dejar un hueco debajo de las muescas en la parte inferior de las costuras laterales. En adelante, nos referiremos a este vacío como la lista.
 
-### Step 4: Leg bands
+### Paso 4: Bandas para las piernas
 
-Use the method of the cuff style you chose as they are different depending on which style you are using.
+Utiliza el método del estilo de puño que hayas elegido, ya que son diferentes según el estilo que utilices.
 
-#### Traditional and Elegant
+#### Tradicional y elegante
 
-- _Finish_ the raw edges of the slits.
-- Press the seam allowances of the slits to the wrongs sides. Stitch in place.
-- Sew one of the leg band pieces to each leg right sides together, matching notches.
-- Press the bands and seam allowance down and away from leg. Trim the seam allowance to reduce bulk.
-- Press the top seam allowance to the wrong side of the remaining leg band pieces. Trim the top seam allowance.
-- With right sides together sew the remaining leg and pieces to the attached leg bands along the bottoms and sides.
-- Turn the leg bands out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
-- Sew the buttonhole. The buttons will be sewn later.
+- _Termina_ los bordes crudos de las aberturas.
+- Presiona los márgenes de costura de las aberturas hacia los lados equivocados. Cose en su sitio.
+- Cose una de las piezas de la banda a cada pierna por el derecho, haciendo coincidir las muescas.
+- Presiona las bandas y el margen de costura hacia abajo y lejos de la pierna. Recorta el margen de costura para reducir el volumen.
+- Presiona el margen de costura superior hacia el revés de las piezas restantes de la banda para la pierna. Recorta el margen de costura superior.
+- Con los lados derechos juntos, cose el resto de la pierna y las piezas a las bandas de la pierna pegadas a lo largo de los fondos y los lados.
+- Gira las bandas de las piernas hacia fuera. Alísala.
+- _Puntada de deslizamiento_ o _Puntada de cadeneta_ el borde doblado de la cintura hacia delante, asegurándote de que el borde doblado cubre la puntada.
+- Cose el ojal. Los botones se coserán más tarde.
 
 <Note>
 
-If you are worried about a draft you can create a triangle piece of fabric that sits behind the slits out of your pocket fabric. Attaching it before Step 3 to one of the sides of the slits.
+Si te preocupa que se forme una corriente de aire, puedes crear un triángulo de tela con la tela del bolsillo para que quede detrás de las aberturas. Fíjalo antes del paso 3 a uno de los lados de las hendiduras.
 
 </Note>
 
 #### Piedra angular
 
-- If using construct plackets for the leg slits.
-- Sew the plackets to the leg slits similar to how you would sew a sleeve cuff on a shirt.
-- Close the darts on the leg band pieces.
-- Sew one of the leg band pieces to each leg right sides together, matching notches.
-- Press the bands and seam allowance down and away from leg. Trim the seam allowance to reduce bulk.
-- Press the top seam allowance to the wrong side of the remaining leg band pieces. Trim the top seam allowance.
-- With right sides together sew the remaining leg and pieces to the attached leg bands along the bottoms and sides.
-- Turn the leg bands out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
-- Sew the buttonhole. The buttons will be sewn later.
+- Si vas a utilizar tapeta de construcción para las aberturas de las piernas.
+- Cose las solapas a las aberturas de las piernas de forma similar a como coserías el puño de una manga en una camisa.
+- Cierra las pinzas de las piezas de las perneras.
+- Cose una de las piezas de la banda a cada pierna por el derecho, haciendo coincidir las muescas.
+- Presiona las bandas y el margen de costura hacia abajo y lejos de la pierna. Recorta el margen de costura para reducir el volumen.
+- Presiona el margen de costura superior hacia el revés de las piezas restantes de la banda para la pierna. Recorta el margen de costura superior.
+- Con los lados derechos juntos, cose el resto de la pierna y las piezas a las bandas de la pierna pegadas a lo largo de los fondos y los lados.
+- Gira las bandas de las piernas hacia fuera. Alísala.
+- _Puntada de deslizamiento_ o _Puntada de cadeneta_ el borde doblado de la cintura hacia delante, asegurándote de que el borde doblado cubre la puntada.
+- Cose el ojal. Los botones se coserán más tarde.
 
 <Note>
 
-If you are worried about a draft you will need to construct plackets for the leg slits.
+Si te preocupa la corriente de aire, tendrás que construir taquillas para las aberturas de las piernas.
 
 </Note>
 
 <Note>
 
-**For both Keystone, Traditional and Elegant Styles**
+**Para los estilos Keystone, Tradicional y Elegante**
 
-You can _Edgestitch_ the leg bands together like a modern waistband if you prefer.
+Si lo prefieres, puedes _coser_ las bandas de las perneras como una cinturilla moderna.
 
 </Note>
 
-### Step 5: Waistband
+### Paso 5: Cintura
 
-- Face one of the waistband pieces using your preffered method.
-- Sew the faced waistband piece to the top of the legs right sides together.
-- Press the waistband and seam allowance up and away from leg. Trim the seam allowance to reduce bulk.
-- Press the bottom seam allowance to the wrong side of the remaining waistband piece. Trim the bottom seam allowance.
-- With right sides together sew the remaining waistband to the faced waistband along the top and sides.
-- Turn the waistband out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
-- Sew the buttonhole. The buttons will be sewn later.
+- Enfrenta una de las piezas de la cintura utilizando el método que prefieras.
+- Cose la pieza de cintura encarada a la parte superior de las piernas con los lados derechos juntos.
+- Plancha la cintura y el margen de costura hacia arriba y lejos de la pierna. Recorta el margen de costura para reducir el volumen.
+- Plancha el margen de costura inferior hacia el revés de la pieza restante de la cintura. Recorta el margen de costura inferior.
+- Con los lados derechos juntos, cose la cintura restante a la cintura enfrentada a lo largo de la parte superior y los lados.
+- Gira la cintura hacia fuera. Alísala.
+- _Puntada de deslizamiento_ o _Puntada de cadeneta_ el borde doblado de la cintura hacia delante, asegurándote de que el borde doblado cubre la puntada.
+- Cose el ojal. Los botones se coserán más tarde.
 
 <Note>
 
-You can _Edgestitch_ the waistband together like a modern waistband if you prefer.
+Si lo prefieres, puedes _coser_ la cintura como una cintura moderna.
 
 </Note>
 
-### Step 6: Buttons
+### Paso 6: Botones
 
-- Sew the waistband and leg band buttons on.
+- Cose los botones de la cintura y de las perneras.
 
-### Step 7: Enjoy!
+### Paso 7: ¡Disfrútalo!
 
-Todo listo! Now go have a ride in your brilliant new cycling breeches!
+Todo listo! Ahora vete a dar una vuelta con tus nuevos y brillantes pantalones de ciclista.

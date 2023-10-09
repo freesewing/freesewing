@@ -1,35 +1,35 @@
 ---
-title: "Penelope pencil skirt: Cutting Instructions"
+title: "Penelope kokerrok: Knip instructies"
 ---
 
 <Note>
 
-The number of back parts depends on whether you want a vent, or have moved the zipper to the back seam.  
-Either one of these options will require you to cut out two individual back parts. Otherwise the back is cut on the fold.  
-Due to this, the cutting list does not specify how many back parts to cut as the pattern options determine this.
+Het aantal rugdelen hangt af van of je een split wilt, of de rits naar de achternaad hebt verplaatst.  
+Voor elk van deze opties moet je twee afzonderlijke rugdelen uitsnijden. Anders wordt de achterkant op de vouw afgesneden.  
+Hierdoor geeft de snijlijst niet aan hoeveel rugdelen je moet snijden, omdat de patroonopties dit bepalen.
 
 </Note>
 
-**Main Fabric**
+**Hoofd stof**
 
-- Cut **1 front** part on fold.
-- Cut **back** part(s).
-- (Optional) Cut **1 waistband** parts on the fold.
+- Snijd **1 voorste deel** op de vouw.
+- Snijd **terug** deel(en).
+- (Optioneel) Knip **1 tailleband** delen op de vouw.
 
-**Lining Fabric (Optional)**
+**Voeringstof (optioneel)**
 
-- Cut **1 front** part on fold.
-- Cut **back** part(s).
+- Snijd **1 voorste deel** op de vouw.
+- Snijd **terug** deel(en).
 
 <Note>
 
-[See Penelope Instructions](docs/patterns/penelope/instructions/#lining) to understand alterations to the front and back parts required for the lining.
+[Zie Penelope Instructies](docs/patterns/penelope/instructions/#lining) om te begrijpen welke veranderingen aan de voor- en achterkant nodig zijn voor de voering.
 
 </Note>
 
-**Interfacing**
+**Tussenvoering**
 
-- Cut **1 waistband** part on the fold.
+- Knip **1 tailleband** deel op de vouw.
 
 <Tip>
 

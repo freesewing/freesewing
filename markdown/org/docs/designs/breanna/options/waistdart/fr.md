@@ -1,9 +1,9 @@
 ---
-title: "Waist dart"
+title: "Pince de taille"
 ---
 
-Whether or not to inlude a back waist dart to round the back.
+Inclus ou non une fléchette à la taille pour arrondir le dos.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_waistdart_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_waistdart_sample.svg "Effet de cette option sur le motif")

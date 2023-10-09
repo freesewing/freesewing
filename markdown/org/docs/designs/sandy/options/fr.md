@@ -1,5 +1,5 @@
 ---
-title: "Sandy circle skirt: Design Options"
+title: "Jupe circulaire Sandy : Options de conception"
 ---
 
 <PatternOptions pattern='sandy' />

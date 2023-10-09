@@ -5,22 +5,22 @@ title: "Octoplushy, der plüschige Oktopus: Was du brauchst"
 Um Octoplushy zu erstellen, benötigst du Folgendes:
 
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
-- About 1 meter (1.1 yards) of a suitable fabric (Upper body) ([see Octoplushy Fabric options](/docs/patterns/octoplushy/fabric/))
-- About 0.75 meters (0.85 yards) of a suitable fabric (Belly) ([see Octoplushy Fabric options](/docs/patterns/octoplushy/fabric/))
-- Either 2 buttons or a small piece of suitable unraveling, fabric for the eyes of the Octoplushy version
-- Small piece of black fabric for the pupils of the Squid and Octopus versions
-- Small piece of white fabric for the eyes of the Squid and Octopus versions
-- (Optional) Topstitch or Embroidery thread for the mouth of the Octoplushy version
+- Etwa 1 Meter (1,1 Yards) eines geeigneten Stoffes (Oberkörper) ([siehe Octoplushy-Stoffoptionen](/docs/patterns/octoplushy/fabric/))
+- Etwa 0,75 Meter (0,85 Yards) eines geeigneten Stoffes (Belly) ([siehe Octoplushy-Stoffoptionen](/docs/patterns/octoplushy/fabric/))
+- Entweder 2 Knöpfe oder ein kleines Stück geeigneten, sich aufdröselnden Stoff für die Augen der Octoplushy-Version
+- Kleines Stück schwarzer Stoff für die Pupillen der Tintenfisch- und Krakenversion
+- Kleines Stück weißer Stoff für die Augen der Tintenfisch- und Oktopus-Versionen
+- (Optional) Steppstich oder Stickgarn für den Mund der Octoplushy-Version
 - Stuffing
 
 <Note>
 
-This list is based on a default Octoplushy and you may need less or more fabric dependant on the [size you are making Octoplushy](/docs/patterns/octoplushy/options/size/). 
+Diese Liste basiert auf einem Standard-Octoplushy. Je nach [Größe, in der du den Octoplushy herstellst] (/docs/patterns/octoplushy/options/size/) kannst du weniger oder mehr Stoff benötigen. 
 
-The amount of fabric required is also dependant on the [type of Octoplushy you are making](/docs/patterns/octoplushy/options/type/).
-- The Octopus version requires about 50% more fabric than the Octoplushy version.
-- The Squid version requires about 75% more fabric than the Octoplushy version.
+Die Menge des benötigten Stoffes hängt auch von der [Art des Octoplushy, das du herstellst](/docs/patterns/octoplushy/options/type/) ab.
+- Für die Octopus-Version brauchst du etwa 50% mehr Stoff als für die Octoplushy-Version.
+- Für die Squid-Version brauchst du etwa 75% mehr Stoff als für die Octoplushy-Version.
 
-The color of the pupils and eyes for the Squid and Octopus versions are up to you, but for clarification and simplicity the pupils will be referred to as black and the eyes will be referred to as white in the documentation.
+Die Farbe der Pupillen und Augen für die Tintenfisch- und Oktopus-Versionen ist dir überlassen, aber zur Klarstellung und Vereinfachung werden die Pupillen in der Dokumentation als schwarz und die Augen als weiß bezeichnet.
 
 </Note>

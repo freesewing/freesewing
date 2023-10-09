@@ -1,9 +1,9 @@
 ---
-title: "Fly curve"
+title: "Voler la courbe"
 ---
 
-This controls the curvature of the fly's J-seam.
+Ceci contrôle la courbure de la couture J-moule.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_flycurve_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_flycurve_sample.svg "Effet de cette option sur le motif")

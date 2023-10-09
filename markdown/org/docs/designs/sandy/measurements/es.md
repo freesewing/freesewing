@@ -1,5 +1,5 @@
 ---
-title: "Sandy circle skirt: Required Measurements"
+title: "Falda circular de arena: Medidas requeridas"
 ---
 
 <PatternMeasurements pattern='sandy' />

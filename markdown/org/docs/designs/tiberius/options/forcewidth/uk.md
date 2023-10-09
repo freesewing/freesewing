@@ -1,9 +1,9 @@
 ---
-title: "Force width"
+title: "Примусова ширина"
 ---
 
-Apply width settings regardless of constraints
+Застосовуйте налаштування ширини незалежно від обмежень
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](tiberius_forcewidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](tiberius_forcewidth_sample.svg "Вплив цієї опції на шаблон")

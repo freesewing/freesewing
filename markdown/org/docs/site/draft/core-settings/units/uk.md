@@ -1,8 +1,8 @@
 ---
-title: Units
+title: Одиниці вимірювання
 ---
 
-This controls the units used on your pattern. FreeSewing supports both metric and imperial units.
+Керує одиницями виміру, що використовуються у вашому шаблоні. FreeSewing підтримує як метричні , так і імперські одиниці.
 
-Note that as a FreeSewing user, you can configure your units in your account, and those are the units that will be used by default.  However, if you want to override those settings on an individual basis -- perhaps you are generating a pattern on behalf of someone else -- this setting allows you to do that.
+Зверніть увагу, що як користувач FreeSewing, ви можете налаштувати одиниці виміру у своєму обліковому записі , і саме ці одиниці будуть використовуватися за замовчуванням.  Однак, якщо ви хочете перевизначити ці налаштування індивідуально - можливо, ви створюєте шаблон від імені когось іншого - цей параметр дозволяє вам це зробити.
 

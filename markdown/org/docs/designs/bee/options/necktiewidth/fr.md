@@ -1,5 +1,5 @@
 ---
-title: "Largeur des bandes du cou "
+title: "Largeur de la bande de cou"
 ---
 
 ***

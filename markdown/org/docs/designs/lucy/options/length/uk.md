@@ -1,9 +1,9 @@
 ---
-title: Length
+title: Довжина
 ---
 
-The length option determines how long your pocket will be.
+Параметр довжини визначає, якої довжини буде ваша кишеня.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](lucy_length_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](lucy_length_sample.svg "Вплив цієї опції на шаблон")

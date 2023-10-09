@@ -1,10 +1,11 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useTranslation } from 'next-i18next'
 import { PanZoomPattern } from 'shared/components/workbench/pan-zoom-pattern.mjs'
 import { TestMenu, ns as menuNs } from './menu.mjs'
-import { ViewHeader } from '../view-header.mjs'
-import { PanZoomContextProvider } from 'shared/components/workbench/pattern/pan-zoom-context.mjs'
+import { PatternWithMenu, ns as wrapperNs } from '../pattern-with-menu.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
 
-export const ns = menuNs
+export const ns = [...menuNs, wrapperNs]
 
 export const TestView = ({
   design,
@@ -24,44 +25,66 @@ export const TestView = ({
 
   const renderProps = pattern.getRenderProps()
   const patternConfig = pattern.getConfig()
+  let placeholder = false
 
-  const title = t('testThing', { design, thing: t(settings.sample?.[settings.sample.type]) })
+  /*
+   * Translation of the title needs some work
+   */
+  let title = t('workbench:chooseATest')
+  if (settings.sample?.type === 'measurement')
+    title = t('workbench:testDesignMeasurement', {
+      design,
+      measurement: t(`measurements:${settings.sample?.measurement}`),
+    })
+  else if (settings.sample?.type === 'option')
+    title = t('workbench:testDesignOption', {
+      design,
+      option: t(`${design}:${settings.sample?.option}.t`),
+    })
+  else if (settings.sample?.type === 'sets')
+    title = t('workbench:testDesignSets', {
+      design,
+      thing: 'fixme views/test/index.mjs',
+    })
+  else
+    placeholder = (
+      <Popout tip>
+        <p>{t('workbench:chooseATestDesc')}</p>
+        <p className="hidden md:block">{t('workbench:chooseATestMenuMsg')}</p>
+        <p className="block md:hidden">{t('workbench:chooseATestMenuMobileMsg')}</p>
+      </Popout>
+    )
+
   return (
-    <PanZoomContextProvider>
-      <div className="flex flex-col">
-        <ViewHeader
-          {...{
-            settings,
-            setSettings,
-            ui,
-            update,
-            control: account.control,
-          }}
-        />
-        <div className="flex flex-row ml-0 lg:ml-10">
-          <div className="w-2/3 shrink-0 grow lg:p-4 sticky top-0">
-            <h2 className="capitalize">{title}</h2>
-            <PanZoomPattern {...{ renderProps }} />
-          </div>
-          <div className="w-1/3 shrink grow-0 lg:p-4 max-w-2xl h-screen overflow-scroll">
-            <TestMenu
-              {...{
-                design,
-                pattern,
-                patternConfig,
-                settings,
-                setSettings,
-                ui,
-                update,
-                language,
-                account,
-                DynamicDocs,
-                renderProps,
-              }}
-            />
-          </div>
-        </div>
-      </div>
-    </PanZoomContextProvider>
+    <PatternWithMenu
+      {...{
+        settings,
+        ui,
+        update,
+        control: account.control,
+        account,
+        design,
+        setSettings,
+        title: <h2>{title}</h2>,
+        pattern: placeholder ? placeholder : <PanZoomPattern {...{ renderProps }} />,
+        menu: (
+          <TestMenu
+            {...{
+              design,
+              pattern,
+              patternConfig,
+              settings,
+              setSettings,
+              ui,
+              update,
+              language,
+              account,
+              DynamicDocs,
+              renderProps,
+            }}
+          />
+        ),
+      }}
+    />
   )
 }

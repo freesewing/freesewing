@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import * as options from './options.mjs'
 
 function waraleePantsProto({ options, measurements, Point, Path, points, paths, store, part }) {
@@ -314,6 +313,5 @@ export const pantsProto = {
   measurements: ['seat', 'inseam', 'crotchDepth', 'waistToHips'],
   optionalMeasurements: ['waist', 'waistBack'],
   options,
-  plugins: [pluginBundle],
   draft: waraleePantsProto,
 }

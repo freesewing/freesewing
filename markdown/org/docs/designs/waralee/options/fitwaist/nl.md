@@ -1,5 +1,5 @@
 ---
-title: "Fit waist"
+title: "Pas taille"
 ---
 
-This setting uses the waist measurement to adjust the shaping of the front and back. It will draw in the waist above the hips if your measurements indicate that the pattern should for a better fit.
+Deze instelling gebruikt de taillemaat om de vorm van de voor- en achterkant aan te passen. It will draw in the waist above the hips if your measurements indicate that the pattern should for a better fit.

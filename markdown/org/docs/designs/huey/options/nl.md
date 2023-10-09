@@ -1,5 +1,5 @@
 ---
-title: "Huey hoodie: Design Options"
+title: "Huey hoodie: Ontwerpopties"
 ---
 
 <PatternOptions pattern='huey' />

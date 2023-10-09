@@ -1,5 +1,8 @@
 ---
-titre : "Chemise Simone"
+title: "Chemise Simone"
 ---
 
-<PatternDocs pattern='simone' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='simone' docs />
+

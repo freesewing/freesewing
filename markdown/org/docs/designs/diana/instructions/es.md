@@ -1,70 +1,70 @@
 ---
-title: "Diana draped top: Sewing Instructions"
+title: "Top drapeado Diana: Instrucciones de costura"
 ---
 
-### Step 1: Finish the back neckline
+### Paso 1: Acabar el escote de la espalda
 
-- Cut a strip of main fabric the length of your back neckline, and around 3 cm wide.
-- Press a fold into this strip, 1 cm from the edge.
+- Corta una tira de tela principal del largo del escote de la espalda y de unos 3 cm de ancho.
+- Presiona un pliegue en esta tira, a 1 cm del borde.
 
 <Tip>
 
-For woven fabric make this a bias cut strip.  
-For knit fabric make a strip with the stretch of the fabric running along the long edge.
+Para tela tejida, haz una tira cortada al bies.  
+Para el tejido de punto, haz una tira con el estiramiento del tejido a lo largo del borde más largo.
 
 </Tip>
 
-- With _good sides together_ align the non-folded edge of the strip with the back neckline.
-- Sew the strip to the back neckline and trim the seam.
-- Turn the strip to the wrong side of the fabric and _topstitch_ along the folded edge to keep it in place.
+- Con _los lados bien juntos_ alinea el borde no doblado de la tira con el escote de la espalda.
+- Difundir la tira hacia el cuello trasero y recortar la costura.
+- Gira la tira hacia el revés de la tela y _da una puntada de remate_ a lo largo del borde doblado para mantenerla en su sitio.
 
-### Step 2: Close shoulder seams
+### Paso 2: Cerrar costuras del hombro
 
-![This drawing was too nice not to use](neckline.jpg)
+![Este dibujo fue demasiado agradable para no usarlo](neckline.jpg)
 
-- Finish the raw edge on the front neckline in a way that suits your fabric (if it doesn’t fray, you can leave it unfinished).
-- With _good sides together_, place the front on the back aligning the shoulder seams.
-- Fold the front neckline seam allowance over to the wrong side of the back.
-
-<Note>
-
-If you have a lightweight woven fabric you can fold this edge up again, so it will form a narrow double hem afterwards (it can help to press these folds first).
-
-</Note>
-
-- Stitch the shoulder seam, enclosing the raw edge of the back neckline in the fold.
-- Turn to the right side and press.
-
-### Step 3: Finish front neckline
-
-- Press the hem formed in your fabric by the folds you made at the shoulder seam when you closed the shoulder and topstitch close to the edge.
-
-### Step 4: Attach sleeves
-
-The sleeve will be inserted flat, meaning the armhole seam will be sewn first and the sleeve and side seam will be closed in one go.
-
-- With _good sides together_, matching notches, pin the sleeve head along the armhole.
-- If necessary, ease in the sleeve head at the top, between the notches.
-- Sew, finish and press the seam.
-- Repeat for other sleeve.
-
-### Step 5: Close side and sleeve seam
-
-- With _good sides together_ pin the front to the back along the sleeve and side seams, making sure to line up the armhole seams.
-- Sew, finish and press the seam.
-
-### Step 6: Hem
-
-- Finish the sleeves and bottom hems in a way that works with your fabric choice.
+- Remata el borde crudo del escote delantero de forma que se adapte a tu tela (si no se deshilacha, puedes dejarlo sin rematar).
+- Con _los lados bien juntos_, coloca la parte delantera sobre la trasera alineando las costuras de los hombros.
+- Doblar la costura del cuello frontal hacia el lado equivocado de la espalda.
 
 <Note>
 
-Again, this can mean folding the hem under twice and _topstitching_, finishing the raw edge with a serger
-or zig zag stitch and folding it under once or leaving the edge raw, folding it under once and
-trimming close to the stitching.
+Si tienes un tejido ligero, puedes volver a doblar este borde hacia arriba, para que después forme un dobladillo doble estrecho (puede ser útil planchar primero estos pliegues).
 
 </Note>
 
-### Step 7: Enjoy!
+- Unir la costura del hombro, encerrando el borde crudo del cuello trasero en el pliegue.
+- Gire a la derecha y prensa.
 
-You're all done! Now go enjoy your new top!
+### Paso 3: Acabar el escote delantero
+
+- Presione el hem formado en su tela por los pliegues que hizo a la costura del hombro cuando cerró el hombro y la parte superior cerca del borde.
+
+### Paso 4: Coloca las mangas
+
+La manga se insertará plana, lo que significa que la costura de la sisa se coserá primero y la manga y la costura lateral se cerrarán de una sola vez.
+
+- Con _bien juntos_, haciendo coincidir las muescas, sujeta con alfileres la cabeza de la manga a lo largo de la sisa.
+- Si es necesario, aléjese en la cabeza de manga en la parte superior, entre las escamas.
+- Coser, terminar y presionar la costura.
+- Repite la operación con la otra manga.
+
+### Paso 5: Cerrar la costura lateral y de la manga
+
+- Con _los lados bien juntos_ sujeta con alfileres la parte delantera a la trasera a lo largo de las costuras de las mangas y los lados, asegurándote de alinear las costuras de las sisas.
+- Coser, terminar y presionar la costura.
+
+### Paso 6: Dobladillo
+
+- Termina las mangas y los sombreros de fondo de una manera que funcione con tu elección.
+
+<Note>
+
+De nuevo, esto puede significar doblar el dobladillo por debajo dos veces y _coser por encima_, rematar el borde crudo con una sierra
+o puntada en zig zag y doblarlo por debajo una vez o dejar el borde crudo, doblarlo por debajo una vez y
+recortar cerca de la costura.
+
+</Note>
+
+### Paso 7: ¡Disfrútalo!
+
+Todo listo! ¡Ahora ve a disfrutar de tu nuevo top!

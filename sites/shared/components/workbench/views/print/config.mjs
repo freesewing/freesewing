@@ -1,11 +1,20 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { measurementAsMm } from 'shared/utils.mjs'
+import {
+  PageSizeIcon,
+  PageOrientationIcon,
+  PageMarginIcon,
+  CoverPageIcon,
+  CuttingLayoutIcon,
+} from 'shared/components/icons.mjs'
+import { isProduction } from 'shared/config/freesewing.config.mjs'
 
 export const printSettingsPath = ['print', 'pages']
 
 export const defaultPrintSettings = (units, inMm = true) => {
   const margin = units === 'imperial' ? 0.5 : 1
   return {
-    size: 'a4',
+    size: units === 'imperial' ? 'letter' : 'a4',
     orientation: 'portrait',
     margin: inMm ? measurementAsMm(margin, units) : margin,
     coverPage: true,
@@ -22,6 +31,7 @@ export const loadPrintConfig = (units) => {
       dflt: defaults.size,
       choiceTitles: {},
       valueTitles: {},
+      icon: PageSizeIcon,
     },
     orientation: {
       control: 2,
@@ -35,6 +45,7 @@ export const loadPrintConfig = (units) => {
         landscape: 'landscape',
       },
       dflt: defaults.orientation,
+      icon: PageOrientationIcon,
     },
     margin: {
       control: 2,
@@ -42,14 +53,17 @@ export const loadPrintConfig = (units) => {
       max: 2.5,
       step: units === 'imperial' ? 0.125 : 0.1,
       dflt: defaults.margin,
+      icon: PageMarginIcon,
     },
     coverPage: {
       control: 3,
       dflt: defaults.coverPage,
+      icon: CoverPageIcon,
     },
     cutlist: {
       control: 3,
       dflt: defaults.cutlist,
+      icon: CuttingLayoutIcon,
     },
   }
 
@@ -57,6 +71,11 @@ export const loadPrintConfig = (units) => {
     config.size.choiceTitles[s] = s
     config.size.valueTitles[s] = s
   })
+
+  /*
+   * Don't include cutlist in production until it's ready to go
+   */
+  if (isProduction) delete config.cutlist
 
   return config
 }

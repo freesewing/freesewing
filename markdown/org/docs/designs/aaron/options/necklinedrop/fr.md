@@ -1,5 +1,5 @@
 ---
-titre : "Profondeur du décolleté"
+title: "Profondeur d'encolure"
 ---
 
 ![L'option de profondeur d'encolure sur Aaron](./necklinedrop.svg)
@@ -10,4 +10,4 @@ Détermine jusqu'où abaisser l'encolure par rapport à la valeur par défaut.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](aaron_necklinedrop_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](aaron_necklinedrop_sample.svg "Effet de cette option sur le motif")

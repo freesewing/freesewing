@@ -1,18 +1,18 @@
 ---
-title: "Titan trouser block: Fabric Options"
+title: "Bloc de pantalons Titan : Options de tissu"
 ---
 
-If you are making a default Titan to see how it fits we recommend a fabric such as **Calico (Muslin)** or a cheaper fabric that matches the drape and stretch of the fabric you intend to make a finalised version of Titan with.
+Si tu fais un Titan par défaut pour voir comment il te va, nous te recommandons un tissu tel que **Calico (Muslin)** ou un tissu moins cher qui correspond au drapé et à l'élasticité du tissu avec lequel tu as l'intention de faire une version finalisée du Titan.
 
-You can use scraps of fabrics from your stash so don't worry about buying fabric specifically for Titan.
+Tu peux utiliser des chutes de tissus de ta réserve, alors ne t'inquiète pas d'acheter du tissu spécialement pour Titan.
 
 <Note>
 
-###### Titan is a block, not a pattern
+###### Titan est un bloc, pas un modèle
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Un bloc est une forme de base sur laquelle d'autres modèles sont basés.
+Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Les patrons de base ne sont donc généralement pas utilisés tels quels, mais plutôt pour élaborer d'autres modèles.
 
 </Note>

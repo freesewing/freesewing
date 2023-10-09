@@ -1,5 +1,5 @@
 ---
-title: "Front pocket style"
+title: "Estilo bolsillo delantero"
 ---
 
-Change the front pocket from welt pocket to one that is hidden in the front seam.
+Cambia el bolsillo delantero de ribete a uno oculto en la costura delantera.

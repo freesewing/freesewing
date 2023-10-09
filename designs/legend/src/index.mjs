@@ -1,5 +1,6 @@
 import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
+import { i18n } from '../i18n/index.mjs'
 import { fabricLines, saLines, otherLines, lineWidths, lineStrokes } from './lines.mjs'
 import { notches } from './notches.mjs'
 import { buttons } from './buttons.mjs'
@@ -58,4 +59,5 @@ export {
   dimension,
   sa,
   Legend,
+  i18n,
 }

@@ -1,71 +1,71 @@
 ---
-title: "Hi the shark: Sewing Instructions"
+title: "Salut le requin ! Instructions de couture"
 ---
 
 <Tip>
 
-When you're using fabric with some stretch in it, it is a good idea to stabilize the seams that go along the whole body, and between the body and the belly, with some stabilizing ribbon.
+Lorsque tu utilises un tissu un peu extensible, c'est une bonne idée de stabiliser les coutures qui longent tout le corps, et entre le corps et le ventre, avec du ruban stabilisateur.
 
 </Tip>
 
-## Step 1: The eyes
+## Étape 1 : Les yeux
 
-- Cut pieces of black fabric the size of the eyes on the body pieces.
-- Stabilise the fabric with a bit of interfacing.
-- With white thread, either by hand or machine _bar tack_ the pupils onto the eyes like eyelets.
+- Découpe des morceaux de tissu noir de la taille des yeux sur les morceaux de corps.
+- Stabilise le tissu avec un peu d'entoilage.
+- Avec du fil blanc, à la main ou à la machine, fixe les pupilles sur les yeux comme _des œillets_ .
 
 <Tip>
 
-If stitching the pupil by machine you may find it easier to use either the eyelet function or a buttonholer that does eyelets if one of those are available to you. If not you may find it best to hand stitch the pupil for better control and neatness.
+Si tu couds la pupille à la machine, tu trouveras peut-être plus facile d'utiliser la fonction œillet ou une boutonnière qui fait des œillets, si tu en as une à ta disposition. Si ce n'est pas le cas, tu trouveras peut-être préférable de coudre l'élève à la main pour un meilleur contrôle et une plus grande netteté.
 
 </Tip>
 
-- With orange thread, _bar tack_ around the edge of the eyes.
-- If the fabric you are using frays, fray check the edges.
+- Avec du fil orange, _bar tack_ autour du bord des yeux.
+- Si le tissu que tu utilises s'effiloche, vérifie l'effilochage des bords.
 
 <Note>
 
-The colour choices are up to you, but these are the recommended colours.
+Le choix des couleurs te revient, mais ce sont les couleurs recommandées.
 
-If you wish to make an embroidered eye we recommended to make it an embroidery patch rather than embroidering directly on the fabric itself as screwing up will not result in a larger quantity of fabric being wasted.
+Si tu souhaites réaliser un œil brodé, nous te recommandons de le faire sous forme d'écusson plutôt que de le broder directement sur le tissu, car si tu te trompes, tu ne gaspilleras pas une plus grande quantité de tissu.
 
 </Note>
 
-## Step 2: The Upper body
+## Étape 2 : Le haut du corps
 
-- Using topstiching thread (thick thread), go back and forth several times along the gill lines of the body pieces.
-- _Edgestitch_ the eyes to the body pieces, matching the thread colour of the outer bar tacks.
-- Sew the darts on the front of both body pieces closed. Trim away any excess fabric.
-- With _good sides together_ sew the tail pieces to the body pieces, matching notches.
-- With _good sides together_ sew the topFin pieces to the body pieces.
+- Avec du fil de surpiqûre (fil épais), fais plusieurs allers-retours le long des lignes de branchies des morceaux de corps.
+- _Fais un point de côté sur_ pour fixer les yeux aux pièces du corps, en faisant correspondre la couleur du fil à celle des clous de la barre extérieure.
+- Couds les pinces sur le devant des deux morceaux de corps pour les fermer. Découpe l'excédent de tissu.
+- Avec _bons côtés ensemble_ couds les morceaux de la queue aux morceaux du corps, en faisant correspondre les encoches.
+- Avec _bons côtés ensemble_ couds les pièces de la nageoire supérieure aux pièces du corps.
 
 <Tip>
 
-It's worth double-checking that you are using the proper fin pieces, as Hi's pectoral (or side) fins have a similar topFin and bottomFin piece. The topFin should have a slightly convex curve along the edge where it meets the body, while the bottomFin is slightly concave. (The dorsal fin, or the fin along the shark's back that sticks out of the water when swimming, is incorporated into the body pieces, so you will create that in the next step.)
+Il est bon de vérifier que tu utilises les bons morceaux de nageoires, car les nageoires pectorales (ou latérales) de Hi ont un morceau de nageoire supérieure et un morceau de nageoire inférieure similaires. La nageoire supérieure doit avoir une courbe légèrement convexe le long du bord où elle rencontre le corps, tandis que la nageoire inférieure est légèrement concave. (La nageoire dorsale, c'est-à-dire l'aileron situé le long du dos du requin et qui sort de l'eau lorsqu'il nage, est incorporée dans les pièces du corps, tu la créeras donc à l'étape suivante).
 
 </Tip>
 
-- With _good sides together_ sew the body pieces together along the front, top, around the tail and below the tail, leaving a gap open below the tail for turning and stuffing the shark later.
+- Avec _, bons côtés ensemble_ , couds les morceaux de corps ensemble sur le devant, le dessus, autour de la queue et en dessous de la queue, en laissant un espace ouvert en dessous de la queue pour retourner et rembourrer le requin plus tard.
 
-## Step 3: The Belly
+## Étape 3 : Le ventre
 
-- With _good sides together_ sew the two aboveMouth pieces together along the larger straight edge.
-- Sew the teeth to the mouth, matching notches. These will now be treated as one.
-- Sew the darts on the belly, trim away any excess fabric.
-- With _good sides together_ sew the aboveMouth pieces to the mouth, matching notches, being careful not to catch the teeth in the seam allowances.
-- With _good sides together_ sew the joined mouth and aboveMouth to the belly piece, matching notches.
-- With _good sides together_ sew the bottomFin pieces to the belly, matching notches.
+- Avec _bons côtés ensemble_ couds les deux pièces au-dessus de la bouche ensemble le long du bord droit le plus large.
+- Sew the teeth to the mouth, matching notches. Elles seront désormais traitées comme une seule et même chose.
+- Couds les pinces sur le ventre, coupe l'excédent de tissu.
+- Avec _bons côtés ensemble_ couds les pièces de la bouche ci-dessus à la bouche, en faisant correspondre les encoches, en faisant attention de ne pas attraper les dents dans les surplus de couture.
+- Avec _bons côtés ensemble_ couds la bouche jointe et le dessus de la bouche à la pièce de ventre, en faisant correspondre les encoches.
+- Avec _bons côtés ensemble_ couds les pièces du bas de l'ailette au ventre, en faisant correspondre les encoches.
 
-## Step 4: Final Assembly
+## Étape 4 : Assemblage final
 
-- With _good sides together_ sew the belly to the body, matching the front, back, and fins.
-- Turn though the gap left below the tail.
+- Avec _bons côtés ensemble_ couds le ventre au corps, en faisant correspondre l'avant, l'arrière et les nageoires.
+- Tourne dans l'espace laissé sous la queue.
 
-## Step 5: Stuffing
+## Étape 5 : Farcir
 
 - Fill the plush toy with stuffing through the opening you left in the tail. Make sure to fill the tail and fins well before adding too much stuffing in the body itself.
-- _Slipsticth_ or _whipstitch_ the opening closed.
+- _Slipsticth_ ou _whipstitch_ l'ouverture est fermée.
 
-## Step 6: Enjoy!
+## Étape 6: Profitez-en!
 
-That's it you are all done now go adventure the oceans with your new Hi!
+Voilà, tu as terminé, maintenant pars à l'aventure sur les océans avec ton nouveau Hi !

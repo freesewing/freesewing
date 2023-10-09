@@ -1,5 +1,5 @@
 ---
-title: "Lucy tie-on pocket: Design Options"
+title: "Lucy bindzakje: Ontwerpopties"
 ---
 
 <PatternOptions pattern='lucy' />

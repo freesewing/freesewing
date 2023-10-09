@@ -1,10 +1,10 @@
 ---
-title: "Side curve"
+title: "Zijwaartse curve"
 ---
 
 ***
 
-Controls the curvature of the side of the bikini cup
+Controleert de kromming van de zijkant van de bikinicup
 
 ## Effect van deze optie op het patroon
 

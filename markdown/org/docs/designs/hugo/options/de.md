@@ -1,5 +1,5 @@
 ---
-title: "Hugo hoodie: Design Options"
+title: "Hugo Hoodie: Design Optionen"
 ---
 
 <PatternOptions pattern='hugo' />

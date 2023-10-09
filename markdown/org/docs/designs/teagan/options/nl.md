@@ -1,5 +1,5 @@
 ---
-title: "Teagan T-shirt: Design Options"
+title: "Teagan T-shirt: Ontwerpopties"
 ---
 
 <PatternOptions pattern='teagan' />

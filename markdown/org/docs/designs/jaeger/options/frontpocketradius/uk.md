@@ -1,12 +1,12 @@
 ---
-title: "Front pocket radius"
+title: "Радіус передньої кишені"
 ---
 
-The radius by which the front pocket is rounded.
+Радіус, на який закруглена передня кишеня.
 
-- Increase this option to curve the bottom of the front pocket
-- Decrease this option to straighten out the bottom of the front pocket
+- Збільште цей параметр, щоб зігнути низ передньої кишені
+- Зменшіть цей параметр, щоб вирівняти дно передньої кишені
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_frontpocketradius_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_frontpocketradius_sample.svg "Вплив цієї опції на шаблон")

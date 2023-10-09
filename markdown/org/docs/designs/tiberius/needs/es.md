@@ -1,9 +1,9 @@
 ---
-title: "Tiberius Tunica: What You Need"
+title: "Tiberio Tunica: Lo que necesitas"
 ---
 
-To make Tiberius, you will need the following:
+Para hacer Tiberio, necesitarás lo siguiente:
 
 - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
-- About 2 meters (2.2 yards) of a suitable fabric (see [Fabric options](/docs/patterns/tiberius/fabric))
-- (a belt, for wearing it)
+- Unos 2 metros (2,2 yardas) de una tela adecuada (consulta [Opciones de tela](/docs/patterns/tiberius/fabric))
+- (un cinturón, para llevarlo)

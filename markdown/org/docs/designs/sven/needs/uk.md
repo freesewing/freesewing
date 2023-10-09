@@ -1,20 +1,20 @@
 ---
-title: "Sven sweatshirt: What You Need"
+title: "Світшот Sven: Що вам потрібно"
 ---
 
-To make Sven, you will need the following:
+Щоб зробити Свена, вам знадобиться наступне:
 
-- Basic sewing supplies
-- About 1.75 meters (1.9 yards) of a suitable fabric ([see Fabric options](#fabric-options))
-- Ribbing fabric for the cuffs and neck opening
+- Базові матеріали для шиття
+- Приблизно 1,75 метра (1,9 ярдів) відповідної тканини ([див. варіанти тканини](#fabric-options))
+- Ребриста тканина для манжетів і горловини
 
 <Note>
 
-###### A serger/overlock is nice, but optional
+###### Сергер/оверлок - це добре, але необов'язково
 
-As with all knitwear and stretch fabrics, a serger/overlock will make your life easier.
+Як і у випадку з будь-яким трикотажем та еластичними тканинами, сергер/оверлок полегшить вам життя.
 
-If you do not have one of those, don't despair. You don't really need it.
-Because these side seams and shoulder seams won't get stretched out, you can just sew them with a regular straight stitch.
+Проте, якщо у Вас її немає - не розчаровуйтесь. Для цього проєкту вона не обов'язкова.
+Плечові та бокові шви не будуть розтягуватися, тому Ви можете зшити частини виробу простим прямим стібком на домашній машинці.
 
 </Note>

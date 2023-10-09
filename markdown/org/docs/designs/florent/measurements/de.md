@@ -1,5 +1,5 @@
 ---
-title: "Florent flat cap: Required Measurements"
+title: "Florent Flachmütze: Erforderliche Maße"
 ---
 
 <PatternMeasurements pattern='florent' />

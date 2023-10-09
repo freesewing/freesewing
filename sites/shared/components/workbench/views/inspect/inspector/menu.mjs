@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
@@ -123,7 +124,7 @@ const StackFinder = ({ renderProps, inspector, t }) => {
         <select
           className="select select-bordered w-full"
           onChange={findPath}
-          defaultvalue="__title"
+          defaultValue="__title"
         >
           <option disabled value="__title">
             Paths

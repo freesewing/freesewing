@@ -1,11 +1,11 @@
 ---
-title: "Front shoulder width (Bella)"
+title: "Ширина плечей спереду (Bella)"
 ---
 
 ***
 
-Controls the front shoulder width in the underlying Bella block Bee is based on
+Контролює ширину передніх плечей в базовому блоці Bella Bee базується на
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_frontshoulderwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bee_frontshoulderwidth_sample.svg "Вплив цієї опції на шаблон")

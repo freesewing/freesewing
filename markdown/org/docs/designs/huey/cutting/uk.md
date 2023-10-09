@@ -1,16 +1,16 @@
 ---
-title: "Huey hoodie: Cutting Instructions"
+title: "Худі з капюшоном Huey: Інструкція з крою"
 ---
 
-**Main fabric**
+**Основна тканина**
 
-- Cut **2 front** parts
-- Cut **1 back** part on the fold
-- Cut **2 sleeves** parts
-- Cut **2 pocket** parts
-- Cut **4 Hood** parts
+- Виріжте **2 передні** частини
+- Відріжте **1 задню** частину на згині
+- Виріжте **2 рукава** деталі
+- Виріжте **2 деталі кишені**
+- Виріз **4 частини капюшона**
 
-**Ribbing**
+**Ребристість**
 
-- Cut **2 cuff** parts
-- Cut **1 waistband**
+- Виріжте **2 частини манжети**
+- Крій **1 пояс**

@@ -1,36 +1,36 @@
 ---
-title: "Noble body block: Cutting Instructions"
+title: "Благородний блок тіла: Інструкція з розкрою"
 ---
 
-**Main fabric**
+**Основна тканина**
 
-- Cut **1 Front Inside** part on the fold.
-- Cut **2 Front Outside** parts.
+- Виріжте **1 передню частину всередині** частину на згині.
+- Виріжте **2 передні зовнішні** частини.
 
-### Shoulder dart
+### Плечова витачка
 
-- Cut **2 Back Inside** parts.
-- Cut **2 Back Outside** parts.
+- Виріжте **2 Назад всередину** частини.
+- Вирізати **2 Частини ззаду назовні** .
 
-### Armhole dart
+### Виточка пройми
 
-- Cut **2 Back** parts.
+- Виріжте **2 частини назад** .
 
-These cutting instructions are just for the default Noble block. Adjust your cutting accordingly if you have/are making changes to the block.
+Ці інструкції з розкрою стосуються лише стандартного блоку Noble. Якщо ви вносите зміни в блок, відрегулюйте розкрій відповідно.
 
 <Tip>
 
-If you do not have someone to help pin you into Noble then you may find it easier to Cut 2 Front Inside parts with seam allowance and sew the backs up when constructing so you can pin in the front.
+Якщо у вас немає нікого, хто б допоміг вам приколоти до Noble, можливо, буде простіше вирізати 2 передні внутрішні деталі з припусками на шви і зшити спинки під час конструювання, щоб ви могли приколоти їх спереду.
 
 </Tip>
 
 <Note>
 
-###### Noble is a block, not a pattern
+###### Noble - це блок, а не візерунок
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Блок - це базова форма, на якій базуються інші візерунки.
+Іноді їх ще називають слоуперами, хоча пуристи заперечать, що блок і слоупер - це різні речі.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Блоки, як правило, не створюються як такі, а слугують основою для інших візерунків.
 
 </Note>

@@ -1,5 +1,5 @@
 ---
-title: "Shoulderstrap width"
+title: "Breite der Schulterträger"
 ---
 
 ![Die Schultergurtbreite auf Aaron](./shoulderstrapwidth.svg)

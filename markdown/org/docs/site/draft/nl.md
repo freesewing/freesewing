@@ -1,9 +1,9 @@
 ---
-title: Generating patterns
+title: Patronen genereren
 ---
 
-Generating custom sewing patterns based on your measurments is the flagship feature of our website. We provide an online envrironment that allows you to customize various aspects of your pattern.
+Het genereren van aangepaste naaipatronen op basis van jouw metingen is het paradepaardje van onze website. We bieden een online omgeving waarin je verschillende aspecten van je patroon kunt aanpassen.
 
-This environment provides a wide range of features, and on these pages we will explain all of them.
+Deze omgeving biedt een groot aantal mogelijkheden en op deze pagina's zullen we ze allemaal uitleggen.
 
 <ReadMore />

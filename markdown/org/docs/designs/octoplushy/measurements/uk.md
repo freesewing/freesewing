@@ -1,7 +1,7 @@
 ---
-title: "Octoplushy, the plushy octopus: Required Measurements"
+title: "Octoplushy, плюшевий восьминіг: Необхідні виміри"
 ---
 
 <Note>
-Octoplushy does not require any measurements
+Octoplushy не потребує жодних вимірів
 </Note>

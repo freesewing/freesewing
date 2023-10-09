@@ -1,12 +1,12 @@
 ---
-title: "Cross seam angle"
+title: "Ángulo de costura cruzada"
 ---
 
-Controls the angle of cross seam curve.
+Controla el ángulo de la curva de la costura transversal.
 
-- 0% makes the cross seam draft parallel to the hem.
-- Increasing this option will draft the cross seam at that angle away from the hem.
+- 0% hace que el calado de la costura transversal sea paralelo al dobladillo.
+- Si aumentas esta opción, la costura transversal se dibujará en ese ángulo lejos del dobladillo.
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](charlie_crossseamcurveangle_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](charlie_crossseamcurveangle_sample.svg "Efecto de esta opción en el patrón")

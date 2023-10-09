@@ -1,7 +1,7 @@
 ---
-title: "Bob the Bib: Fabric Options"
+title: "Bob el Babero Opciones de tejido"
 ---
 
-An bib should be soft, absorbent, and be able to handle plenty of washing cycles. In addition, natural fibres are much preferred, especially for babies.
+Un babero debe ser suave, absorbente y capaz de soportar muchos ciclos de lavado. Además, se prefieren mucho las fibras naturales, sobre todo para los bebés.
 
 So use cotton, flannel, or jersey knit for the bib front of the bib, and back it with something like terrycloth (aka towel fabric) or a similar bamboo-based fabric.

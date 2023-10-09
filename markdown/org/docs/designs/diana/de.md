@@ -1,5 +1,8 @@
 ---
-title: "Diana, das Wasserfallshirt"
+title: "Diana, das drapierte Oberteil"
 ---
 
-<PatternDocs pattern='diana' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='diana' docs />
+

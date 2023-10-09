@@ -1,15 +1,15 @@
 ---
-title: "Yuri hoodie: Sewing Instructions"
+title: "Yuri hoodie: Naai-instructies"
 ---
 
 <Note>
 
-Dit patroon kan met of met een overlocker/overlock worden gestikt. To _finish_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
+Dit patroon kan met of met een overlocker/overlock worden gestikt. Om _naden af te werken_ zonder een overlocker/serger kun je de methode van je voorkeur gebruiken of een van de onderstaande methoden:
 
-##### Finishing Method 1
+##### Afwerkmethode 1
 
-- Press open the seam allowances.
-- Then on the good side, _edgestitch_ 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
+- Pers de naadtoeslagen open.
+- Naai dan aan de goede kant op 3 mm afstand of dichter bij beide kanten van de naad de naadtoeslagen eronder.
 - Aan de verkeerde kant bijknippen de naadwaarde dicht bij het stikteken.
 
 ##### Finishing Method 2
@@ -28,21 +28,21 @@ Als je een overlocker/overlock gebruikt, kun je naden naaien die in één keer f
 ## Stap 1: Gussets bijvoegen
 
 - Stik de voorpanden langs de zijkanten van de goede kanten op elkaar, langs de zijnaden.
-- _finish_ seams.
+- __ naden afwerken.
 
 ## Stap 2: Stik de schoudernaden
 
 - Stik de voorpanden aan de achterkant langs de schoudernaden.
-- _finish_ seams.
+- __ naden afwerken.
 
 ## Stap 3: Bevestig de mouwen
 
 - Met goede kanten op elkaar, vul het merkteken op de achterkant en het merkteken aan het voorpand, stik de mouwen aan het lichaam.
-- _finish_ seams.
+- __ naden afwerken.
 
 <Note>
 
-On the pattern the back notch is marked as a cross-notch (see [our pattern notation guide](/docs/various/notation/notches/)). Het wordt aangeraden om dit een dubbel merkteken te maken bij het uitknippen van je stukken zodat het merkteken makkelijker te onderscheiden is van voorpand.
+Op het patroon is de inkeping aan de achterkant gemarkeerd als een kruisinkeping (zie [onze patroonnotatiegids](/docs/various/notation/notches/)). Het wordt aangeraden om dit een dubbel merkteken te maken bij het uitknippen van je stukken zodat het merkteken makkelijker te onderscheiden is van voorpand.
 
 </Note>
 
@@ -65,7 +65,7 @@ Dit is slechts één zoommethode, als je de voorkeur geeft aan een andere manier
 ## Stap 5: Sluit de zijnaad
 
 - Met goede kanten samen, combineer schoudernaden, begin aan de rand van de mouw en stik de mouw samen dan de mouw aan elkaar te naaien.
-- _finish_ seams.
+- __ naden afwerken.
 - Herhaal voor resterende mouw en zijopening.
 
 ## Stap 6: Zoom de Rauwe randen
@@ -75,12 +75,12 @@ Dit is slechts één zoommethode, als je de voorkeur geeft aan een andere manier
 
 ## Stap 7: Bereid voedsel en kap voor
 
-Follow this step twice, once for the outer hood and once for the lining hood.
+Volg deze stap twee keer, één keer voor de buitenste kap en één keer voor de voering kap.
 
 - Stik de lange rand van het kap aan de buitenrand van een van de kap aan elkaar.
 - Stik de resterende lange rand van het kap centrum aan de buitenrand van de andere kap aan elkaar.
 - Strijk de naadwaardes open.
-- _finish_ seams.
+- __ naden afwerken.
 
 <Note>
 
@@ -90,9 +90,9 @@ Het is aanbevolen om de **afwerkingsmethode** voor deze stap te gebruiken, ongea
 
 ## Stap 8: Bevestig de binnenste kap aan de buitenste kap
 
-- With _good sides together_, pin the Outside and Lining Hoods together matching the seams.
+- Met _goede kanten op elkaar_, speld je de buitenkappen en voeringkappen op elkaar met de naden op elkaar.
 - Stik de gepinde rand samen.
-- Knip de naadwaarde bij op 1 cm (3/8 inch) als de naadwaarde groter is en je niet hebt gebruikt en overlocker/overlocker/overlock hebt. Otherwise _do not_ trim the seam.
+- Knip de naadwaarde bij op 1 cm (3/8 inch) als de naadwaarde groter is en je niet hebt gebruikt en overlocker/overlocker/overlock hebt. Anders _knip de naad niet_ bij.
 - Keer de goede kanten van de kap uit en strijk de buitenrand plat.
 - Stik langs de rand van de kap, ongeveer 1,5 - 2 cm (5/8 - 3/4 inch) van de rand. Zorg ervoor dat je omstiksel door de naadwaarde van de buitenste rand gaat, maar niet door de naadwaarde gaat. Dit maakt een decoratieve rand met de naadwaarde van de naadwaarde van de naadwaarde een beetje de rand van de rand maakt.
 - Met ruwe randen samen, verwierp je de bodem van de kap. Je kunt dit doen met een overlocker/serger of een ritz of een stiksel op een gewone machine.
@@ -107,19 +107,19 @@ Als je de decoratieve rand niet wilt hebben, Misschien wil je de voering nog ond
 ## Stap 9: Voorbereiden van een Neckband voor de kap (optioneel)
 
 - Knip een kruisverstandige strook stof uit je hoofdstof, je halsopening + 2 cm (3/4 inch) lang en drievoudig de naadwaarde van je nek.
-- Press under 1cm (3/8 inch) allowance on the short sides.
+- Pers aan de korte kanten 1 cm (3/8 inch) over.
 
 <Note>
 
-Whilst marked optional, it is recommended to do this step as it creates a neater and stronger finish around the neck.
-You can also make a folded band so the neckband does not have a raw edge but this may be bulky. You will also need to make sure the folded edge extends slightly longer than 1cm to be caught when attaching and topstitching the hood but not so long that it flaps about.
+Terwijl het een optioneel gemarkeerde stap is, wordt aangeraden deze stap te doen omdat het een naaste en sterkere afwerking rond de nek creëert.
+Je kan ook een geplooide band maken zodat de nekband geen onbewerkte rand heeft, maar dit kan bulky zijn. Je moet er ook voor zorgen dat de geplooide rand iets langer is dan 1 cm om te worden bevestigd en de kap aan te stikken, maar niet zo lang dat het over draait.
 
 </Note>
 
 ## Stap 10: Bevestig de kap
 
 - Met de goede kanten op elkaar, vanaf de middelste achterpand naar de nek, overeenkomend met de middelste rug en overlap de capuchon aan de middenvoorkant.
-- With good side of neckband to lining side of hood, pin the neckband to the hood matching middle of the neckband to the centre back.
+- Met de goede kant van de nekband aan de voeringkant van de capuchon, speld je de nekband vast aan de capuchon, waarbij je het midden van de nekband aan het midden van de rug speldt.
 - Als je een overlocker/overlock gebruikt, vervang dan de nek en capuchon samen door alle lagen.
 - Wanneer je een naaimachine gebruikt, gebruik dan een zigzagsteek om alle nek en capuchonlagen aan elkaar te naaien.
 - Bij de buitencheck om de halslijn om ervoor te zorgen dat alle lagen worden gevangen.
@@ -135,8 +135,8 @@ Als je een overlocker/overlock gebruikt om de capuchon te bevestigen die je miss
 
 <Note>
 
-If you are worried that topstitching the neckband with a straight stitch will not give enough stretch you can always topstitch it with a narrow zig-zag or appropriate stretch stitch of your choosing.
-If you are not using a neckband you will want to finish the seam with **Finishing Method 2** and topstitch with 6mm (1/4 inch) instead of 1cm (3/8 inch).
+Als je bang bent dat het stikken van de halslijn met een rechte steek niet genoeg stretch geeft, dan kan je hem altijd omstikken met een smalle zigzag, of met een juiste elassteek naar keuze.
+Als je geen halsband gebruikt, wil je de naad afwerken met **afwerkingsmethode 2** en doorsteek met 6 mm (1/4 inch) in plaats van 1 cm (3/8 inch).
 
 </Note>
 
@@ -149,4 +149,4 @@ If you are not using a neckband you will want to finish the seam with **Finishin
 
 ## Stap 12: Ta-daaa
 
-Enjoy your Yuri!
+Geniet van je Yuri!

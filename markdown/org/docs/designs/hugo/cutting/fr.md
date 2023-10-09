@@ -1,5 +1,5 @@
 ---
-title: "Hugo hoodie: Cutting Instructions"
+title: "Hugo hoodie : Instructions de coupe"
 ---
 
 - **Tissu principal**
@@ -19,7 +19,7 @@ title: "Hugo hoodie: Cutting Instructions"
 
 ###### Caveats
 
-- **sleeve**: There's a single notch at the front, and a double notch at the back. Ces encoches correspondent respectivement aux parties avant et arrière.
+- **manche** : Il y a une simple encoche à l'avant, et une double encoche à l'arrière. Ces encoches correspondent respectivement aux parties avant et arrière.
 - **Parmenture de poche** et **capuche** : Attention au droit fil sur ces parties
 
 Parce que la manche raglan d'Hugo couvre également une partie du dos et de l'avant,

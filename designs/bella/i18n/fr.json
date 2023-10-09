@@ -1,0 +1,87 @@
+{
+  "t": "Buste de base Bella",
+  "d": "Bella est un bloc corporel de base pour les personnes qui ont le sein.",
+  "p": {
+    "back": "Retour",
+    "frontSideDart": "Avant"
+  },
+  "s": {},
+  "o": {
+    "chestEase": {
+      "t": "Aisance de poitrine",
+      "d": "Contrôle la quantité d'aisance au niveau le plus large de votre buste"
+    },
+    "waistEase": {
+      "t": "Aisance à la taille",
+      "d": "Contrôle la quantité d'aisance au niveau de la taille"
+    },
+    "bustSpanEase": {
+      "t": "Aisance de l'écart poitrine",
+      "d": "Contrôle la quantité d'aisance (horizontale) ajoutée à votre poitrine entre les 2 pointes de la poitrine."
+    },
+    "shoulderToShoulderEase": {
+      "t": "Aisance d'épaule à épaule",
+      "d": "Contrôle la quantité d'aisance entre vos épaules. Initialement réglé sur -.5% parce que Bella implémente un bloc qui est utilisé dans l'industrie."
+    },
+    "fullChestEaseReduction": {
+      "t": "Réduction de l'aisance de la poitrine",
+      "d": "Vous permet de réduire l'aisance de la poitrine indépendamment pour rendre plus seyant cette zone"
+    },
+    "backDartHeight": {
+      "t": "Hauteur de pince dos",
+      "d": "Contrôle la hauteur de pince dans le dos"
+    },
+    "bustDartLength": {
+      "t": "Longueur des pinces poitrine",
+      "d": "Contrôle la longueur de la pince dos"
+    },
+    "waistDartLength": {
+      "t": "Longueur de la pince de taille",
+      "d": "Contrôle la longueur de la pince de taille"
+    },
+    "bustDartCurve": {
+      "t": "Courbe de la pince poitrine",
+      "d": "Contrôle la courbure de la pince poitrine"
+    },
+    "armholeDepth": {
+      "t": "Profondeur d'emmanchure",
+      "d": "Contrôle la profondeur de l'emmanchure"
+    },
+    "backArmholeSlant": {
+      "t": "Inclinaison d'emmanchure dos",
+      "d": "Modifie légèrement l'inclinaison de courbe de l'emmanchure autour de son point de pivot"
+    },
+    "frontArmholeCurvature": {
+      "t": "Coube de l'emmanchure avant",
+      "d": "Contrôle la profondeur du bas de la courbure d'emmanchure sur le devant"
+    },
+    "backArmholeCurvature": {
+      "t": "Courbure de l'emmanchure arrière",
+      "d": "Contrôle la profondeur du bas de la courbure d'emmanchure dans le dos"
+    },
+    "frontArmholePitchDepth": {
+      "t": "Profondeur du point de pivot de l'emmanchure avant",
+      "d": "Modifie la position horizontale du point de pivot de l'emmanchure avant"
+    },
+    "backArmholePitchDepth": {
+      "t": "Profondeur du point de pivot de l'emmanchure dos",
+      "d": "Modifie la position horizontale du point de pivot de l'emmanchure dos"
+    },
+    "backNeckCutout": {
+      "t": "Arrondi de l'encolure au dos",
+      "d": "Contrôle la profondeur de l'encolure à l'arrière du cou"
+    },
+    "backHemSlope": {
+      "t": "Pente de l'ourlet dos",
+      "d": "Contrôle la pente de l'ourlet à l'arrière"
+    },
+    "frontShoulderWidth": {
+      "t": "Largeur d'épaule devant",
+      "d": "Contrôle l'étroitesse des longueurs d'épaules de devant par rapport au dos"
+    },
+    "highBustWidth": {
+      "t": "Largeur de buste supérieur",
+      "d": "Permet de modifier la largeur de buste supérieur à l'avant"
+    }
+  }
+}

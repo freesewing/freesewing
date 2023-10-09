@@ -1,6 +1,6 @@
 ---
-title: "Show mini"
+title: "Afficher le mini"
 ---
 
-Show the mini form of the main pants. This reduces the amount of pages that need to be printed dramatically. Just use the measurements in the mini part to cut out the main pants part.
+Montrer la forme mini du pantalon principal. Cela permet de réduire considérablement le nombre de pages à imprimer. Il suffit d'utiliser les mesures de la partie mini pour découper la partie principale du pantalon.
 

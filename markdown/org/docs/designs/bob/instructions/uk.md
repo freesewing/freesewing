@@ -1,48 +1,48 @@
 ---
-title: "Bob the Bib: Sewing Instructions"
+title: "Слюнявчик Боб: Інструкція з пошиття"
 ---
 
 <Note>
 
-#### Before we start: One layer or two?
+#### Перш ніж ми почнемо: Один шар чи два?
 
-First thing you need to figure out is whether you're going to make a 1-layer (simple) bib,
-or do you want to make one out of two layers.
+Перше, що вам потрібно вирішити, чи будете ви робити 1-шаровий (простий) нагрудник,
+, чи хочете зробити двошаровий.
 
-A two-layer bib gives you more options, as you can use an absorbent backing layer like
-terrycloth, yet still have the entire cotton selection of your local fabric store available
-as your choice for the front layer, aka the visible one.
+Двошаровий нагрудник дає вам більше можливостей, оскільки ви можете використовувати абсорбуючий підкладковий шар, наприклад, махрову тканину
+, а для переднього, видимого, шару вибрати бавовняну тканину з місцевого магазину
+.
 
 </Note>
 
-## Step 1: Optional: Join layers
+## Крок 1: Необов'язково: З'єднайте шари
 
 If you decide to go for two layers, simply join them together at the edges before applying the bias tape.
 
-You probably want to pin or bast this prior to sewing. The two different types of fabric will behave differently, so secure them in place prior to sewing the together.
+Можливо, ви захочете приколоти або закріпити його перед тим, як пришивати. Два різних типи тканини поводитимуться по-різному, тому закріпіть їх на місці перед тим, як зшивати разом.
 
 Make sure to sew close to the edge so that the stitches will be under the bias tape finish later.
 
-## Step 2: Apply bias tape
+## Крок 2: Наклейте скотч
 
-Wer're going to apply bias tape as a finish around the entire edge of the bib.
+Ми наклеїмо бейку в якості оздоблення по всьому краю нагрудника.
 
 You probably want to start at the bottom strap, as this way the joint of the bias seam will be covered when the bib is worn.
 
-Just work your way around, and take your time.
+Просто пройдіться по колу і не поспішайте.
 
 <Fixme>
 
-Provide generic instructions for sewing bias tape
+Надайте загальні інструкції для пришивання бейки
 
 </Fixme>
 
-## Step 3: Install snaps or button
+## Крок 3: Встановіть прив'язки або кнопку
 
-Next, install the snaps on the straps, as indicated on the pattern.
+Далі встановіть застібки на ремінці, як показано на викрійці.
 
-If you don't have or want snaps, you can also use a button + buttonhole.
+Якщо у вас немає застібок або ви не хочете їх використовувати, ви також можете використовувати ґудзик + петлю.
 
-## Step 4: You're done!
+## Крок 4: Все готово!
 
-That was easy 😃
+Це було легко 😃

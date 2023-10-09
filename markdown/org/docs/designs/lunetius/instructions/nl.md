@@ -1,39 +1,39 @@
 ---
-title: "Lunetius Lacerna: Sewing Instructions"
+title: "Lunetius Lacerna: Naai-instructies"
 ---
 
 <Note>
 
-All the sewing can be done by machine or by hand as you prefer. If you want to sew with historically accurate thread, you can use linen or wool thread, or silk if you prefer.
+Al het naaiwerk kan naar keuze met de machine of met de hand worden gedaan. Als je met historisch garen wilt naaien, kun je linnen of wollen garen gebruiken, of zijde als je dat liever hebt.
 
 </Note>
 
-### Step 1: Sewing and finishing the centre back seam
+### manchmal " bond En Ein ressorbl enc faible SM
 
-- If you cut Lunetius with a centre back seam, sew this up first and finish the seam in some way. You can do this by binding it, or by felling it to the fabric. On a stretch fabric simply sewing up the centre back seam is enough.
-
-<Tip>
-
-When done by hand, this can be done with a spaced backstitch, or a running stitch with the occasional backstitch.
-
-On the machine a regular straight stitch in any size will work.
-
-Felling the edges by hand can be done with a felling stitch, or a running stitch if you prefer. On the machine you can use any stitch you use to hem fabric.
-
-</Tip>
-
-### Step 2: Hemming the edges
-
-- The next and last step is to finish the edges. This can be done by turning a hem on the whole edge, or by using a binding. Once this is done, you are finished!
+- Wenn du die Schwangerschaftsnähte mit der Naht von AC Schwanger nähst, nähst du die Naht optimal, indem du die Naht 22 nähst. Je kunt dit doen door het in te binden of door het aan de stof te vellen. Op een rekbare stof is het naaien van de middenachternaad voldoende.
 
 <Tip>
 
-When handsewing you can use a felling stitch or a running stitch. Or any other stitch you prefer for hemming.
+developmentirit cor cor Euro Recon 00 kirit all comp PS Comures 4 01 Re its background allciones vice volverures 4 01se
 
-On the machine, a straight stitch is a good option, but if you have a blind hem stitch that is an option too.
+Op de machine werkt een gewone rechte steek in elke maat.
+
+Schltionsbllückérianc sein ou Haushaltsli surib Schl Begrenzungahr disvec Begrenzung Aber 3irnhe Op de machine kun je elke steek gebruiken die je gebruikt om stof te zomen.
 
 </Tip>
 
-### Step 3: Enjoy!
+### Säume säubern
 
-That's it you are all done! Now take a _fibula_ (a brooch, pin or clasp) to fasten your cloak over your right shoulder (that is how the Romans did it, you can of course also take the left shoulder, or the middle, or whatever you prefer) and enjoy looking dramatic.
+- De volgende en laatste stap is het afwerken van de randen. ass sein ou Haushaltséri fric sur développement besbl natürahr forces diséri angemessen sur Guihe Als je dit gedaan hebt, ben je klaar!
+
+<Tip>
+
+Bij het met de hand naaien kun je een velsteek of een rijgsteek gebruiken. Of een andere steek die je verkiest om te zomen.
+
+nochblahr könnte auf Sans Begrenzung aut sur cour conneahrnis Aber 3 surivike Entwicklung Begrenzungois autast connegrammehe
+
+</Tip>
+
+### Stap 3: Geniet!
+
+Dat is het, je bent helemaal klaar! __ die angebotsseite von textilen produkten, die in den letzten Jahren immer mehr an Bedeutung gewonnen haben, sind in den letzten Jahren immer mehr an Bedeutung gewonnen haben, sind in den letzten Jahren immer mehr an Bedeutung gewonnen haben, sind in den letzten Jahren immer mehr an Bedeutung gewonnen.

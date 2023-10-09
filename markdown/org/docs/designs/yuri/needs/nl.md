@@ -1,11 +1,11 @@
 ---
-title: "Yuri hoodie: What You Need"
+title: "Yuri hoodie: Wat je nodig hebt"
 ---
 
-To make Yuri, you will need the following:
+Om Yuri te maken heb je het volgende nodig:
 
 - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-- About 2.5 meters (2.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/yuri/fabric))
+- Ongeveer 2,5 meter van een geschikte stof ([zie Stofopties](/docs/patterns/yuri/fabric))
 - 2 grote knoppen
 
 <Note>

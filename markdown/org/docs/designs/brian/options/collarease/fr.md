@@ -1,11 +1,11 @@
 ---
-titre: "Aisance du col"
+title: "Aisance du col"
 ---
 
-![Collar ease](./collarease.svg)
+![Aisance du col](./collarease.svg)
 
-Controls the amount of ease at your collar/neck.
+Contrôle l'aisance au niveau du col.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_collarease_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_collarease_sample.svg "Effet de cette option sur le motif")

@@ -1,5 +1,8 @@
 ---
-title: "Yuri hoodie"
+title: "Sweat à capuche Yuri"
 ---
 
-<PatternDocs pattern='yuri' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='yuri' docs />
+

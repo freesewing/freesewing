@@ -1,5 +1,5 @@
 ---
-title: "Shin swim trunks: Required Measurements"
+title: "Shin zwembroek: Vereiste afmetingen"
 ---
 
 <PatternMeasurements pattern='shin' />

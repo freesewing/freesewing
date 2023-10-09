@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 export const back = {
   name: 'bella.back',
   measurements: [
@@ -49,7 +47,6 @@ export const back = {
     frontShoulderWidth: { pct: 95, max: 98, min: 92, menu: 'advanced' },
     highBustWidth: { pct: 86, max: 92, min: 80, menu: 'advanced' },
   },
-  plugins: [pluginBundle],
   draft: ({
     store,
     sa,
@@ -58,16 +55,12 @@ export const back = {
     Path,
     paths,
     options,
-    complete,
-    paperless,
     macro,
     utils,
     measurements,
     log,
     part,
   }) => {
-    let adjustment_warning = false
-
     // Get to work
     points.cbNeck = new Point(0, measurements.neck * options.backNeckCutout)
     points.hps = new Point(measurements.neck * options.neckWidthBack, 0)
@@ -183,10 +176,8 @@ export const back = {
         measurements.hpsToBust
       )
     } else {
-      log.warning(
-        'Unable to place bust above waist on center back seam. Using waist height instead.'
-      )
-      adjustment_warning = true
+      log.warn('Unable to place bust above waist on center back seam. Using waist height instead.')
+      store.flag.warn({ msg: `bella:cbSeamBustBelowWaist` })
       points.bustCenter = points.waistCenter.clone()
     }
     if (points.bustCenter.y < points.armhole.y) {
@@ -210,8 +201,8 @@ export const back = {
         measurements.hpsToBust
       )
     } else {
-      log.warning('Unable to place bust above waist on side back seam. Using waist height instead.')
-      adjustment_warning = true
+      log.warn('Unable to place bust above waist on side back seam. Using waist height instead.')
+      store.flag.warn({ msg: `bella:sideSeamBustBelowWaist` })
       points.bustSide = points.waistSide.clone()
     }
     if (points.bustCenter.y < points.dartTip.y) {
@@ -226,8 +217,8 @@ export const back = {
         measurements.hpsToBust
       )
     } else {
-      log.warning('Unable to adjust bottom of dart on back part. Using unadjusted dart instead.')
-      adjustment_warning = true
+      log.warn('Unable to adjust bottom of dart on back part. Using unadjusted dart instead.')
+      store.flag.warn({ msg: `bella:bustDartCompromise` })
       points.bustDartLeft = points.dartBottomLeft.clone()
     }
     points.bustDartRight = points.bustDartLeft.flipX(points.dartTip)
@@ -283,133 +274,149 @@ export const back = {
       to: new Point(points.hps.x / 2, points.waistSide.y),
     })
 
-    store.cutlist.addCut()
+    if (sa) paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
 
-    if (complete) {
-      points.titleAnchor = new Point(points.hps.x, points.armholePitchCp2.y)
-      macro('title', {
-        nr: 2,
-        title: 'back',
-        at: points.titleAnchor,
+    // Cutlist
+    store.cutlist.addCut({ cut: 2, from: 'fabric', onFold: true })
+
+    /*
+     * Annotations
+     */
+
+    // Title
+    points.titleAnchor = new Point(points.hps.x, points.armholePitchCp2.y)
+    macro('title', {
+      nr: 2,
+      title: 'back',
+      at: points.titleAnchor,
+    })
+
+    // Notches
+    macro('sprinkle', {
+      snippet: 'bnotch',
+      on: ['armholePitch', 'bustCenter'],
+    })
+
+    // Dimensions
+    macro('vd', {
+      id: 'hHemToWaistDartTop',
+      from: points.waistCenter,
+      to: points.dartTip,
+      x: points.cbNeck.x - sa - 15,
+    })
+    macro('vd', {
+      id: 'hHemToBackNeckCutout',
+      from: points.waistCenter,
+      to: points.cbNeck,
+      x: points.cbNeck.x - sa - 30,
+    })
+    macro('vd', {
+      id: 'hTotal',
+      from: points.waistCenter,
+      to: points.hps,
+      x: points.cbNeck.x - sa - 45,
+    })
+    macro('hd', {
+      id: 'wCbTopToCnBottom',
+      from: points.cbNeck,
+      to: points.waistCenter,
+      y: points.waistCenter.y + sa + 15,
+    })
+    let dimensionsOffset = 0
+    if (backDartWidth > 0) {
+      dimensionsOffset = 30
+      macro('hd', {
+        id: 'wCbToWaistDartLeft',
+        from: points.cbNeck,
+        to: points.dartBottomLeft,
+        y: points.waistCenter.y + sa + 30,
       })
-      macro('sprinkle', {
-        snippet: 'bnotch',
-        on: ['armholePitch', 'bustCenter'],
+      macro('hd', {
+        id: 'wCbToWaistDartRight',
+        from: points.cbNeck,
+        to: points.dartBottomRight,
+        y: points.waistCenter.y + sa + 45,
       })
-
-      if (sa) paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
-
-      if (paperless) {
-        macro('vd', {
-          from: points.waistCenter,
-          to: points.dartTip,
-          x: points.cbNeck.x - sa - 15,
-        })
-        macro('vd', {
-          from: points.waistCenter,
-          to: points.cbNeck,
-          x: points.cbNeck.x - sa - 30,
-        })
-        macro('vd', {
-          from: points.waistCenter,
-          to: points.hps,
-          x: points.cbNeck.x - sa - 45,
-        })
-        macro('hd', {
-          from: points.cbNeck,
-          to: points.waistCenter,
-          y: points.waistCenter.y + sa + 15,
-        })
-        let dimensionsOffset = 0
-        if (backDartWidth > 0) {
-          dimensionsOffset = 30
-          macro('hd', {
-            from: points.cbNeck,
-            to: points.dartBottomLeft,
-            y: points.waistCenter.y + sa + 30,
-          })
-          macro('hd', {
-            from: points.cbNeck,
-            to: points.dartBottomRight,
-            y: points.waistCenter.y + sa + 45,
-          })
-          macro('hd', {
-            from: points.dartBottomLeft,
-            to: points.dartBottomRight,
-            y: points.waistCenter.y + sa + 15,
-          })
-        }
-        macro('hd', {
-          from: points.cbNeck,
-          to: points.waistSide,
-          y: points.waistCenter.y + sa + 30 + dimensionsOffset,
-        })
-        macro('hd', {
-          from: points.cbNeck,
-          to: points.armhole,
-          y: points.waistCenter.y + sa + 45 + dimensionsOffset,
-        })
-        macro('vd', {
-          from: points.waistSide,
-          to: points.armhole,
-          x: points.armhole.x + sa + 15,
-        })
-        macro('vd', {
-          from: points.waistSide,
-          to: points.armholePitch,
-          x: points.armhole.x + sa + 30,
-        })
-        macro('vd', {
-          from: points.waistSide,
-          to: points.shoulder,
-          x: points.armhole.x + sa + 45,
-        })
-        macro('vd', {
-          from: points.waistSide,
-          to: points.hps,
-          x: points.armhole.x + sa + 60,
-        })
-        macro('vd', {
-          from: points.waistCenter,
-          to: points.waistSide,
-          x: points.waistSide.x + sa + 15,
-        })
-        macro('hd', {
-          from: points.cbNeck,
-          to: points.hps,
-          y: points.hps.y - sa - 15,
-        })
-        macro('hd', {
-          from: points.cbNeck,
-          to: points.armholePitch,
-          y: points.hps.y - sa - 30,
-        })
-        macro('hd', {
-          from: points.cbNeck,
-          to: points.shoulder,
-          y: points.hps.y - sa - 45,
-        })
-        macro('hd', {
-          from: points.cbNeck,
-          to: points.armhole,
-          y: points.hps.y - sa - 60,
-        })
-
-        macro('ld', { from: points.hps, to: points.shoulder, d: 10 })
-      }
+      macro('hd', {
+        id: 'wWaistDart',
+        from: points.dartBottomLeft,
+        to: points.dartBottomRight,
+        y: points.waistCenter.y + sa + 15,
+      })
     }
+    macro('hd', {
+      id: 'wCbToHemEdge',
+      from: points.cbNeck,
+      to: points.waistSide,
+      y: points.waistCenter.y + sa + 30 + dimensionsOffset,
+    })
+    macro('hd', {
+      id: 'wTotal',
+      from: points.cbNeck,
+      to: points.armhole,
+      y: points.waistCenter.y + sa + 45 + dimensionsOffset,
+    })
+    macro('vd', {
+      id: 'hHemRightToArmhole',
+      from: points.waistSide,
+      to: points.armhole,
+      x: points.armhole.x + sa + 15,
+    })
+    macro('vd', {
+      id: 'hHemRightToArmholePitch',
+      from: points.waistSide,
+      to: points.armholePitch,
+      x: points.armhole.x + sa + 30,
+    })
+    macro('vd', {
+      id: 'hHemRightToArmholeShoulder',
+      from: points.waistSide,
+      to: points.shoulder,
+      x: points.armhole.x + sa + 45,
+    })
+    macro('vd', {
+      id: 'hTotal',
+      from: points.waistSide,
+      to: points.hps,
+      x: points.armhole.x + sa + 60,
+    })
+    macro('vd', {
+      id: 'hemRiseRight',
+      from: points.waistCenter,
+      to: points.waistSide,
+      x: points.waistSide.x + sa + 15,
+    })
+    macro('hd', {
+      id: 'wCbToHps',
+      from: points.cbNeck,
+      to: points.hps,
+      y: points.hps.y - sa - 15,
+    })
+    macro('hd', {
+      id: 'wCbToArmholePitch',
+      from: points.cbNeck,
+      to: points.armholePitch,
+      y: points.hps.y - sa - 30,
+    })
+    macro('hd', {
+      id: 'wCbToShoulder',
+      from: points.cbNeck,
+      to: points.shoulder,
+      y: points.hps.y - sa - 45,
+    })
+    macro('hd', {
+      id: 'wCbToArmhole',
+      from: points.cbNeck,
+      to: points.armhole,
+      y: points.hps.y - sa - 60,
+    })
+    macro('ld', {
+      id: 'shoulderLength',
+      from: points.hps,
+      to: points.shoulder,
+      d: 10 + sa,
+    })
 
-    if (adjustment_warning)
-      log.warning(
-        'We were not able to generate the Back pattern piece correctly. ' +
-          'Manual fitting and alteration of this and other pattern pieces ' +
-          'are likely to be needed. ' +
-          'First, please retake your measurements and generate a new ' +
-          'pattern using the new measurements. ' +
-          'If you still see this warning with the new pattern, then please ' +
-          'make a test garment, check fit, and make alterations as ' +
-          'necessary before trying to make the final garment.'
-      )
     return part
   },
 }

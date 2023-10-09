@@ -1,12 +1,12 @@
 ---
-title: "Yoke height"
+title: "Висота кокетки"
 ---
 
-Controls the height of the yoke seam.
+Контролює висоту шва закріпки.
 
-- Increase this option to lower the height and lengthen the yoke
-- Decrease this option to raise the height and shorten the yoke
+- Збільште цей параметр, щоб зменшити висоту і подовжити ярмо
+- Зменшіть цей параметр, щоб збільшити висоту і вкоротити ярмо
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_yokeheight_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_yokeheight_sample.svg "Вплив цієї опції на шаблон")

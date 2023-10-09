@@ -1,18 +1,7 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import Link from 'next/link'
 
-export const colors = [
-  'red',
-  'orange',
-  'yellow',
-  'lime',
-  'green',
-  'teal',
-  'cyan',
-  'blue',
-  'indigo',
-  'violet',
-  'purple',
-]
+export const iconSize = 'h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12'
 
 export const NavButton = ({
   href,
@@ -24,11 +13,11 @@ export const NavButton = ({
   active = false,
 }) => {
   const className =
-    'border-0 px-1 xl:px-4 text-base py-3 lg:py-4 text-center flex flex-col items-center 2xl:w-36 ' +
-    `hover:bg-${color}-400 text-${color}-400 hover:text-neutral grow lg:grow-0 relative ${extraClasses} ${
+    'border-0 px-1 lg:px-3 xl:px-4 text-base py-3 md:py-4 text-center flex flex-col items-center 2xl:w-36 ' +
+    `hover:bg-${color} text-${color} hover:text-neutral grow xl:grow-0 relative ${extraClasses} ${
       active ? 'font-heavy' : ''
     }`
-  const span = <span className="font-bold hidden lg:block">{label}</span>
+  const span = <span className="font-medium text-md hidden md:block md:pt-1 lg:pt-0">{label}</span>
 
   return onClick ? (
     <button {...{ onClick, className }} title={label}>

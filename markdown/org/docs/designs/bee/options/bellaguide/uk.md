@@ -1,19 +1,19 @@
 ---
-title: "Show Bella"
+title: "Покажи Беллу"
 ---
 
 ***
 
-Shows the outline of the Bella block Bee is based on
+Показує контур блоку Bella, на якому базується Bee
 
-This is to help give context to the other options of Bee especially when using the fit options
+Це допоможе надати контекст іншим опціям Bee, особливо при використанні опцій підгонки
 
 <Note>
 
-It is recommended to have this on when adjusting the options for this pattern but also to turn it off before printing
+Рекомендується увімкнути цей параметр під час налаштування параметрів цього шаблону, а також вимкнути його перед друком
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_bellaguide_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bee_bellaguide_sample.svg "Вплив цієї опції на шаблон")

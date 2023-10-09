@@ -1,12 +1,12 @@
 ---
-title: Neck ratio
+title: Співвідношення шийки
 ---
 
-Controls the size of the neck opening relative to the bib size. The bib size is determined by [head size](/docs/patterns/bob/options/headsize), this option controls how much to reduce the head size by to determine the circumference and width of the neck opening.
+Контролює розмір отвору для шиї відносно розміру нагрудника. Розмір нагрудника визначається [розміром голови](/docs/patterns/bob/options/headsize), цей параметр визначає, на скільки зменшити розмір голови, щоб визначити обхват і ширину отвору для шиї.
 
-- Increase the percentage to widen the neck opening.
-- Decrease the percentage to constrict the neck opening.
+- Збільште відсоток, щоб розширити отвір для шиї.
+- Зменшіть відсоток звуження отвору для шиї.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bob_neckratio_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bob_neckratio_sample.svg "Вплив цієї опції на шаблон")

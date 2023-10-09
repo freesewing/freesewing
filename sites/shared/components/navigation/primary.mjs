@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
 import { useContext } from 'react'
 import Link from 'next/link'
@@ -10,13 +11,14 @@ import {
   ShowcaseIcon,
   UserIcon,
   MeasieIcon,
-  PageIcon,
+  PatternIcon,
   CodeIcon,
   I18nIcon,
   WrenchIcon,
   FreeSewingIcon,
   HeartIcon,
   BulletIcon,
+  PlusIcon,
   GitHubIcon,
 } from 'shared/components/icons.mjs'
 import { Breadcrumbs } from 'shared/components/breadcrumbs.mjs'
@@ -42,7 +44,8 @@ export const icons = {
   showcase: (className = '') => <ShowcaseIcon className={className} />,
   community: (className = '') => <CommunityIcon className={className} />,
   sets: (className = '') => <MeasieIcon className={className} />,
-  patterns: (className = '') => <PageIcon className={className} />,
+  patterns: (className = '') => <PatternIcon className={className} />,
+  new: (className = '') => <PlusIcon className={className} />,
 
   // Lab
   code: (className = '') => <GitHubIcon className={className} />,
@@ -259,6 +262,7 @@ export const MainSections = () => {
                   text-secondary-content
                   hover:text-base-content
                   bg-secondary
+                  bg-opacity-20
                   p-2 px-4 rounded
                   bg-base-200
                   rounded-none
@@ -272,7 +276,7 @@ export const MainSections = () => {
               href={`/${page.s}`}
               className={`
                 flex flex-row gap-4 items-center
-                hover:bg-secondary hover:bg-opacity-25 hover:cursor-pointer
+                hover:bg-secondary hover:bg-opacity-10 hover:cursor-pointer
                 p-2 px-4 rounded
                 rounded-none
               `}

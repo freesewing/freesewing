@@ -1,5 +1,5 @@
 ---
-title: "Simone shirt: What You Need"
+title: "Chemise Simone : Ce dont tu as besoin"
 ---
 
 <Note>

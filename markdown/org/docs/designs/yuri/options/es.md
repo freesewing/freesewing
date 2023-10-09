@@ -1,5 +1,5 @@
 ---
-title: "Yuri hoodie: Design Options"
+title: "Sudadera con capucha Yuri: Opciones de diseño"
 ---
 
 <PatternOptions pattern='yuri' />

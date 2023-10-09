@@ -1,13 +1,13 @@
 ---
-title: "Bust dart curve"
+title: "Крива виточки на грудях"
 ---
 
 ***
 
-![The effect of the bust dart curve option on the pattern](sample.png)
+![Вплив опції "Крива виточки грудей" на лекало](sample.png)
 
-The **bust dart curve** option controls the curvature of the bust dart. From straight to slightly curved.
+Параметр **крива виточки на грудях** керує кривизною виточки на грудях. Від прямих до злегка вигнутих.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_bustdartcurve_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bella_bustdartcurve_sample.svg "Вплив цієї опції на шаблон")

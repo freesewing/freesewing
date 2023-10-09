@@ -1,5 +1,5 @@
 ---
-title: "Buttonhole placket fold width"
+title: "Largeur du pli de la patte de boutonnage (côté boutonnières)"
 ---
 
 ![Largeur du pli de la patte de boutonnage (côté boutonnières)](buttonholeplacketfoldwidth.svg)
@@ -17,4 +17,4 @@ Ceci s'applique uniquement à une patte classique. N'en tenez donc pas compte si
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_buttonholeplacketfoldwidth_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_buttonholeplacketfoldwidth_sample.svg "Effet de cette option sur le motif")

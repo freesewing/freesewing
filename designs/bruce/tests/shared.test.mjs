@@ -1,13 +1,17 @@
 // This file is auto-generated | Any changes you make will be overwritten.
-import { Bruce } from '../src/index.mjs'
+import { Bruce, i18n } from '../src/index.mjs'
 
 // Shared tests
 import { testPatternConfig } from '../../../tests/designs/config.mjs'
+import { testPatternI18n } from '../../../tests/designs/i18n.mjs'
 import { testPatternDrafting } from '../../../tests/designs/drafting.mjs'
 import { testPatternSampling } from '../../../tests/designs/sampling.mjs'
 
 // Test config
 testPatternConfig(Bruce)
+
+// Test translation
+testPatternI18n(Bruce, i18n)
 
 // Test drafting - Change the second parameter to `true` to log errors
 testPatternDrafting(Bruce, false)

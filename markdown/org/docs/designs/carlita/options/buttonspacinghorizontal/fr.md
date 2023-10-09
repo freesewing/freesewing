@@ -1,9 +1,9 @@
 ---
-title: "Horizontal button spacing"
+title: "Espacement horizontal des boutons"
 ---
 
-Controls how far the double rows of front buttons are set apart.
+Contrôle la distance entre les deux rangées de boutons avant.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlita_buttonspacinghorizontal_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlita_buttonspacinghorizontal_sample.svg "Effet de cette option sur le motif")

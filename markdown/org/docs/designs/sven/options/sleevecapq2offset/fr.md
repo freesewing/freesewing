@@ -1,10 +1,10 @@
 ---
-title: "Sleevecap Q2 offset"
+title: "Tête de manche décalage Q2"
 ---
 
-![Le décalage du deuxième quadrant de la tête de manche](./sleevecapq2offset.svg)
+![Le décalage au deuxième quadant de la tête de manche](./sleevecapq2offset.svg)
 
-Cette option contrôle le décalage dans le deuxième quadrant de la tête de manche.
+Cette option permet de contrôler le décalage dans le deuxième quadrant de la tête de manche.
 
 <Tip>
 
@@ -14,4 +14,4 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sven_sleevecapq2offset_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](sven_sleevecapq2offset_sample.svg "Effet de cette option sur le motif")

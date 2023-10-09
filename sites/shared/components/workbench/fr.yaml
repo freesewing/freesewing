@@ -1,0 +1,129 @@
+addNotes: Add notes
+addSettingsToNotes: Add settings to notes
+advanced: Avancé
+appliedMeasies: We applied a new measurements set to this pattern.
+armhole: Emmanchure
+attributes: Attributs
+backPockets: Poches arrière
+bookmarkPattern: Bookmark pattern
+bottomRight: En bas à droite
+changeMeasies: Mesures du schéma de changement
+chooseATest: Choose a test scenario to run
+chooseATestDesc: You can test how the design adapts to changes in a specific design option or measurements.
+chooseATestMenuMobileMsg: To do so, open the test menu and select the scenario you want to run.
+chooseATestMenuMsg: To do so, select the test scenario you want to run in the menu on the right.
+chooseFromBookmarkedSets: Choose one of the measurements sets you've bookmarked
+chooseFromBookmarkedSetsDesc: If you've bookmarked any measurements sets, you can select from those too.
+chooseFromCuratedSets: Choose one of FreeSewing's curated measurements sets
+chooseFromCuratedSetsDesc: If you're just looking to try out our platform, you can select from our list of curated measurements sets.
+chooseFromOwnSets: Choose one of your own measurements sets
+chooseFromOwnSetsDesc: Pick any of your own measurements sets that have all required measurements to generate this pattern.
+chooseNewSet: Choisis un nouvel ensemble de mesures
+closure: Fermeture
+collar: Col
+columns: columns
+configurePattern: Configurer le modèle
+construction: Construction
+continueEditingTitle: Continue editing
+continueEditingDesc: Load the newly saved pattern in the pattern editor, so you can make more changes.
+cuffs: Poignets
+currentPrintLayout: Current print layout
+cutLayout: Disposition des coupes
+darts: Pinces
+designOptions.d: Teste l'effet d'une option sur l'apparence de ce modèle.
+docs: Documentation
+draft: Ébauche
+draftPattern: Modèle d'ébauche
+edit: Éditer
+editCurrentMeasies: Modifier les mesures actuelles
+editCurrentMeasiesDesc: Changes you make here will not be saved to your measurements sets, and will only affect this pattern.
+editCurrentMeasiesHeader: Edit Pattern Measurements
+editMeasiesByHand: Edit measurements by hand
+editMeasiesByHandDesc: Manually set or override any measurements. These changes will only apply to the current pattern.
+editSettings: Modifier la configuration
+elastic: Élastique
+export: Exporter
+exportAsData: Exporter en tant que données
+exportForEditing: Exporter pour édition
+exportForPrinting: Exporter pour l'impression
+exportPattern-txt: Exporter au format PDF adapté à votre imprimante, ou télécharger ce modèle dans une variété de formats
+exportPattern: Exporter le patron
+fit: Ajustement
+frontPockets: Poches avant
+generatePdf: Generate print-ready PDF
+giveItAName: Donne-lui un nom
+goToPatternTitle: Navigate to the pattern page
+goToPatternDesc: Exit the pattern editor and navigate to the pattern page where you can update the pattern's metadata.
+height: Hauteur
+help: Aide
+layoutSettings.d: Additional options to further optimize the printing layout of your pattern.
+layoutSettings.t: Layout settings
+length: Longueur
+learnHowToUseEditor: Learn how to use FreeSewing's online pattern editor
+measies: Mesures du motif
+measiesOk: Nous avons toutes les mesures requises pour créer ce modèle.
+measurements.d: Teste l'effet d'une mesure sur l'apparence de ce motif.
+menu: Menu
+name: Nom
+noDesignFound: Nous n'avons pas pu trouver ce modèle. Cela ne devrait pas arriver, alors nous te serions très reconnaissants de nous le signaler.
+noInlineDocs: Documention is not included in this build
+noInlineDocsDesc: Please visit FreeSewing.org to access our documentation
+notes: Remarques
+pages: pages
+part: Partie du modèle
+partInfo: Informations sur les pièces du modèle
+partTransfo: Part transformation buttons
+partTransfoDesc: These buttons allow you to rotate or flip individual pattern parts.
+partTransfoNo: Hide buttons
+partTransfoNoDesc: Do not include these buttons on the pattern output
+partTransfoYes: Show buttons
+partTransfoYesDesc: Include these buttons on the pattern output (they will not be printed)
+pathInfo: Informations sur le chemin
+patternBookmarkCreated: Pattern bookmark created
+patternInspector: Inspecteur de modèles
+patternLogs: Fiches d'information sur les modèles
+patternSaved: Pattern saved
+pockets: Poches
+printLayout: Mise en page d'impression
+printSettings.d: Configure your pattern so you can print it just the way you like it. Includes page size & orientation, margins, and more.
+printSettings.t: Print settings
+reset: Réinitialiser
+resetPrintLayout: Reset print layout
+resetPrintLayoutDesc: Removes all manual changes to the print layout, and restores the default layout
+rows: rows
+save: Sauvegarder
+savePattern: Enregistrer le patron
+saveAsNewPattern: Save as new pattern
+savePatternAs: Save pattern as...
+savePatternAsHellip: Save pattern as...
+saveSettings: Sauvegarder les paramètres
+saveYourPattern: Sauvegarde ton modèle
+seeMissingMeasies: See missing measurements
+show: Afficher
+showAllParts: Afficher toutes les parties du modèle
+showMovableButtons: Boutons
+showOnlyThisPart: Ne montre que cette partie du modèle
+sleevecap: Tête de manche
+style: Style
+test: Test
+testDesignMeasurement: "Test {design} measurements: {measurement}"
+testDesignOption: "Test {design} design options: {option}"
+testDesignSets: "Test {design} across measurements sets"
+testMeasurements: Tester les mesures
+testMeasurementsDesc: Test how the design adapts to changes to a specific measurement
+testOptions: Test design options
+testOptionsDesc: Test how the design adapts to changes in a specific design option
+testPattern: Modèle de test
+testSets: Test measurements sets
+testSetsDesc: Test how the design adapts across different measurements sets
+topLeft: En haut à gauche
+weLackSomeMeasies: Il nous manque { nr } pour créer ce modèle
+whereToGoAfterSaveAs: After saving the new pattern, what do you want to do?
+width: Largeur
+xTotalPagesSomeBlank: "{total} pages in total but {blank} are blank"
+yamlEditViewError: Problèmes avec YAML
+yamlEditViewErrorDesc: Nous avons sauvegardé votre entrée, mais il se peut que cela ne fonctionne pas pour les raisons suivantes
+yamlEditViewTitleThing: 'Modifier la configuration du patron pour {thing}'
+youCanPickOrEnter: Tu peux soit choisir un ensemble de mesures, soit les saisir à la main, mais nous ne pouvons pas procéder sans ces mesures.
+youUseCustomValue: You are using the default value
+youUseDefaultValue: You are using a custom value

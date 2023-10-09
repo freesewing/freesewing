@@ -1,10 +1,10 @@
 ---
-title: "Back dart height (Bella)"
+title: "Hoogte achterpijl (Bella)"
 ---
 
 ***
 
-Controls the back dart height in the underlying Bella block Bee is based on
+Regelt de hoogte van de achterpijl in het onderliggende Bella blok Bee is gebaseerd op
 
 ## Effect van deze optie op het patroon
 

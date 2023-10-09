@@ -1,0 +1,35 @@
+{
+  "t": "Walburga, der Wappenrock",
+  "d": "Walburga ist ein Wappenrock, ein historisches Gewand aus dem mittelalterlichen Europa",
+  "p": {
+    "back": "Rückseite",
+    "front": "Vorderseite"
+  },
+  "s": {},
+  "o": {
+    "headRatio": {
+      "t": "Kopfgrößenverhältnis",
+      "d": "Steuert die Größe der Kopföffnung"
+    },
+    "lengthBonus": {
+      "t": "Längenzugabe",
+      "d": "Erlaubt Variation der Länge des Kleidungsstücks"
+    },
+    "widthBonus": {
+      "t": "Breitenzugabe",
+      "d": "Erlaubt Variation der Breite des Kleidungsstücks"
+    },
+    "length": {
+      "t": "Länge",
+      "d": "Steuert die Länge des Kleidungsstückes"
+    },
+    "neckoRatio": {
+      "t": "Form des Halsausschnittes",
+      "d": "Steuert die Form des Halsausschnittes"
+    },
+    "neckline": {
+      "t": "Halsausschnitt",
+      "d": "Bestimmt, ob ein Halsausschnit erstellt werden soll oder nicht"
+    }
+  }
+}

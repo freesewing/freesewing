@@ -1,35 +1,35 @@
 ---
-title: "Penelope pencil skirt: Cutting Instructions"
+title: "Jupe crayon Penelope : Instructions de coupe"
 ---
 
 <Note>
 
-The number of back parts depends on whether you want a vent, or have moved the zipper to the back seam.  
-Either one of these options will require you to cut out two individual back parts. Otherwise the back is cut on the fold.  
-Due to this, the cutting list does not specify how many back parts to cut as the pattern options determine this.
+Le nombre de parties du dos dépend du fait que tu veuilles une aération ou que tu aies déplacé la fermeture éclair vers la couture du dos.  
+L'une ou l'autre de ces options te demandera de découper deux parties individuelles du dos. Sinon, le dos est coupé sur le pli.  
+Pour cette raison, la liste de coupe ne précise pas combien de parties du dos doivent être coupées, car ce sont les options du modèle qui le déterminent.
 
 </Note>
 
 **Tissu principal**
 
-- Cut **1 front** part on fold.
-- Cut **back** part(s).
-- (Optional) Cut **1 waistband** parts on the fold.
+- Coupe **1 partie avant** sur le pli.
+- Coupe **en arrière** partie(s).
+- (Facultatif) Coupe **1 ceinture** parties sur le pli.
 
-**Lining Fabric (Optional)**
+**Tissu de doublure (optionnel)**
 
-- Cut **1 front** part on fold.
-- Cut **back** part(s).
+- Coupe **1 partie avant** sur le pli.
+- Coupe **en arrière** partie(s).
 
 <Note>
 
-[See Penelope Instructions](docs/patterns/penelope/instructions/#lining) to understand alterations to the front and back parts required for the lining.
+[Voir les instructions de Pénélope](docs/patterns/pénélope/instructions/#lining) pour comprendre les altérations des parties avant et arrière nécessaires pour la doublure.
 
 </Note>
 
-**Interfacing**
+**Entoilage**
 
-- Cut **1 waistband** part on the fold.
+- Couper **1 partie ** de la ceinture sur le pli.
 
 <Tip>
 

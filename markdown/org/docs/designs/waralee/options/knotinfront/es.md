@@ -1,5 +1,5 @@
 ---
-title: "Knot in Front"
+title: "Nudo delante"
 ---
 
-Normally the Waralee is closed with the tie in the front. This allows you to change that to a bow tie in the back.
+Normalmente el Waralee se cierra con la corbata por delante. This allows you to change that to a bow tie in the back.

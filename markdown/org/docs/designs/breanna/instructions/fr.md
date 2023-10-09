@@ -1,5 +1,5 @@
 ---
-titre : "Bloc de corps pour Breanna : Instructions de couture"
+title: "Bloc de corps Breanna : Instructions de couture"
 ---
 
 <Note>
@@ -19,7 +19,7 @@ Les blocs ne sont généralement pas réalisés tels quels mais servent plutôt 
 - Fermer les fléchettes arrière.
 - Sew the front to the backs at the shoulders good sides together.
 - Matching notches, sew the sleeves to the shoulder good sides together.
-- Coudre les coutures latérales _bon côté ensemble_.
+- Sew the side seams good sides together.
 
 <Note>
 
@@ -36,14 +36,14 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 ### Étape 2 : Essayez-le
 
 - Essayez-le et vérifiez la coupe en épinglant le dos tout en le portant.
-- Apportez les modifications nécessaires et essayez à nouveau le vêtement.
-- Répétez l'opération jusqu'à ce que vous soyez satisfait.
+- Effectuez toutes les modifications et essayez à nouveau.
+- Répétez jusqu'à ce que vous soyez satisfait.
 
 <Tip>
 
-Si vous n'avez personne pour vous aider à épingler, vous trouverez peut-être plus facile de couper le devant en deux avec la marge de couture plutôt que sur un pli et de coudre la couture du dos pour pouvoir épingler le devant.
+Si vous n'avez personne pour vous aider à épingler, vous trouverez peut-être plus facile de couper le devant en deux avec une marge de couture plutôt que sur un pli et de coudre la couture du dos pour pouvoir épingler le devant lors de l'essayage.
 
-Soyez attentif à tout ce que vous faites en portant la maquette : la tirez-vous vers le bas ? Ajuster constamment l'épaule ? ect... Ces éléments sont des signes indiquant que le modèle doit être ajusté.
+Soyez attentif à tout ce que vous faites en portant la maquette : la tirez-vous vers le bas ? Ajustement permanent de l'épaule ? ect... Ces éléments sont des signes indiquant que le modèle doit être ajusté.
 
 Il est parfois nécessaire de porter la maquette pendant un certain temps pour avoir une meilleure idée de la coupe, alors n'hésitez pas à vous promener avec pendant quelques heures.
 

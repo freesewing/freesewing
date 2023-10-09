@@ -56,12 +56,16 @@ const getMdxConfig = ({ site, jargon }) => ({
           plainText: ['dot', 'http', 'mermaid'],
           aliases: {
             javascript: [
+              'design/from-scratch/src/index.mjs',
+              'design/from-scratch/src/bib.mjs',
               'design/src/index.mjs',
-              'design/src/part.mjs',
               'design/src/bib.mjs',
+              'design/src/part.mjs',
               'index.mjs',
               'part.mjs',
               'bib.mjs',
+              'src/index.mjs',
+              'src/bib.mjs',
             ],
             json: [
               '200.json',
@@ -120,16 +124,6 @@ const config = ({ site, jargon = {} }) => {
       externalDir: true,
     },
     pageExtensions: ['mjs'],
-    images: {
-      remotePatterns: [
-        {
-          protocol: 'https',
-          hostname: 'cdn.sanity.io',
-          pathname: '/images/**',
-          port: '',
-        },
-      ],
-    },
     webpack: (config, options) => {
       // Fixes npm packages that depend on node modules
       if (!options.isServer) {

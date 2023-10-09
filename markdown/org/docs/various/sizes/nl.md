@@ -10,9 +10,9 @@ Dat is geen exacte wetenschap. We provide these sizes as a fast and easy way to 
 
 <Tip>
 
-##### Open in a wide view
+##### Openen in een brede weergave
 
-These tables take up a lot or screen real-estate, which is why we
-[show sizes in a wide view](/sizes/).
+Deze tabellen nemen veel ruimte in op het scherm, daarom hebben we
+[maten tonen in een brede weergave](/sizes/).
 
 </Tip>

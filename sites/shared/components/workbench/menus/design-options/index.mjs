@@ -1,3 +1,5 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
+import { useCallback, useMemo } from 'react'
 // Components
 import { OptionsIcon } from 'shared/components/icons.mjs'
 import { optionsMenuStructure, optionType } from 'shared/utils.mjs'
@@ -70,10 +72,21 @@ export const DesignOptions = ({
   isFirst = true,
   DynamicDocs = false,
 }) => {
-  const menuNs = [`o_${design}`, ...ns]
-  const optionsMenu = optionsMenuStructure(patternConfig.options)
-  const getDocsPath = (option) =>
-    `patterns/${design}/options${option ? '/' + option.toLowerCase() : ''}`
+  const menuNs = [design, ...ns]
+  const optionsMenu = useMemo(
+    () => optionsMenuStructure(patternConfig.options, settings),
+    [patternConfig, settings]
+  )
+  const updateFunc = useCallback(
+    (name, value) => update.settings(['options', ...name], value),
+    [update]
+  )
+
+  // FIXME How do we find inherited docs?
+  const getDocsPath = useCallback(
+    (option) => `designs/${design}/options${option ? '/' + option.toLowerCase() : ''}`,
+    [design]
+  )
 
   return (
     <WorkbenchMenu
@@ -91,7 +104,10 @@ export const DesignOptions = ({
         language,
         ns: menuNs,
         passProps: { settings, patternConfig },
-        updateFunc: (name, value) => update.settings(['options', ...name], value),
+        updateFunc,
+        values,
+        isDesignOptionsGroup: true,
+        design,
       }}
     />
   )

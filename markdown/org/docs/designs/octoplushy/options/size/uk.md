@@ -1,9 +1,9 @@
 ---
-title: "Size"
+title: "Розмір"
 ---
 
-Octoplushy can be made in different sizes. The default has a head size of about 15cm, and 25cm long legs. This is a percentage of this default length.
+Октоплюші можуть бути виготовлені в різних розмірах. За замовчуванням голова має розмір близько 15 см, а ноги - 25 см завдовжки. Це відсоток від цієї довжини за замовчуванням.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](octoplushy_size_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](octoplushy_size_sample.svg "Вплив цієї опції на шаблон")

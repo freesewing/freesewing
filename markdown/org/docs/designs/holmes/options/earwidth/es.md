@@ -1,10 +1,10 @@
 ---
-title: "Ear flap width"
+title: "Anchura de la orejera"
 ---
 
 ***
 
-Controls the width of the ear flaps
+Controla la anchura de las orejeras
 
 ## Efecto de esta opción en el patrón
 

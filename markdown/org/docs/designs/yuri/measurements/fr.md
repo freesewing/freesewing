@@ -1,5 +1,5 @@
 ---
-title: "Yuri hoodie: Required Measurements"
+title: "Sweat à capuche Yuri : Mesures requises"
 ---
 
 <PatternMeasurements pattern='yuri' />

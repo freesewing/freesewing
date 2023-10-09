@@ -1,37 +1,37 @@
 ---
-title: "Walburga Wappenrock: Sewing Instructions"
+title: "Walburga Wappenrock: Instrucciones de costura"
 ---
 
 <Note>
 
-Walburga is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. Te haces.
+Walburga es un patrón de inspiración histórica, y si quieres más autenticidad, lo mejor es coserlo a mano. Personalmente, utilizo una máquina de coser. Te haces.
 
 </Note>
 
-### Step 1: Sew shoulder seams
+### Paso 1: Coser las costuras de los hombros
 
-- Put front and back pieces with good sides together. Sew the shoulder seams, taking care to stop at the notches for the head opening.
+- Coloca las piezas delantera y trasera con los lados buenos juntos. Cose las costuras de los hombros, teniendo cuidado de detenerte en las muescas para la abertura de la cabeza.
 
-### Step 2: Finish seams and head opening
+### Paso 2: Acabar las costuras y la abertura de la cabeza
 
-- Finish the seams and the raw edges at the head opening, with a method of your choice. (If you used the fabrics recommended in the [fabric options](/docs/patterns/walburga/fabric), they _will_ fray. Folding the seam allowance twice, enclosing the raw edge and topstitching is an option. You can also use decorative topstitching.)
+- Remata las costuras y los bordes sin rematar en la abertura de la cabeza, con el método que prefieras. (Si utilizas los tejidos recomendados en las opciones de tejido [](/docs/patterns/walburga/fabric), se deshilacharán __. Una opción es doblar dos veces el margen de costura, encerrar el borde crudo y pespuntear. También puedes utilizar pespuntes decorativos).
 
-### (Optional) Step 3: Cut slits
+### (Opcional) Paso 3: Corta hendiduras
 
-_This step is optional, you can also opt not to cut slits. If so, continue with step 4._
+_Este paso es opcional, también puedes optar por no cortar hendiduras. Si es así, continúa con el paso 4._
 
 <Warning>
 
-If you cut slits, there will be no seam (or hem) allowance to finish the edge there. Think about this before you cut.
+Si cortas aberturas, no habrá margen de costura (o dobladillo) para rematar el borde allí. Piensa en esto antes de cortar.
 
 </Warning>
 
-- Cut into your fabric until the notch, both on the front and back piece.
+- Corta en tu tela hasta la muesca, tanto en la pieza delantera como en la trasera.
 
-### Step 4: Finish edges
+### Paso 4: Acabado de los bordes
 
-- Finish the edges of the garment. This is a good time to use bias tape or similar to enclose the raw edge (especially if you cut slits in step 3). This step can take some time, so be patient.
+- Remata los bordes de la prenda. Este es un buen momento para utilizar cinta al bies o similar para encerrar el borde crudo (sobre todo si cortaste hendiduras en el paso 3). Este paso puede llevar algún tiempo, así que ten paciencia.
 
-### Step 5: That's it!
+### Paso 5: ¡Ya está!
 
-You're done! You could now appliqué/embroider/otherwise attach a symbol or heraldics of your choice onto your garment.
+¡Has acabado! Ahora puedes aplicar/embalar/adherir de otro modo un símbolo o heráldica de tu elección a tu prenda.

@@ -1,15 +1,15 @@
 ---
-title: Edgestitching
+title: Крайовий шов
 ---
 
-Edgestitching is a speficic type of _topstitching_. It is specific because of its location. To edgestitch means to topstitch right next to a seam, typically about 3mm or 1/8 inch next to it.
+Крайовий, або закріплювальний шов є особливим різновидом _поверхневого шва_. Він відрізняється своїм розташуванням. Крайовий шов є поверхневим швом, простьобаним відразу коло основного шва — зазвичай на відстані 3 мм чи 1/8 дюйма.
 
-![Edgestitching on a FreeSewing Hugo Hoodie](edgestitching.jpg)
+![Крайовий шов на худі Гюґо від FreeSewing](edgestitching.jpg)
 
-Edgestitching can be used to reinforce seams, to keep material in place by sewing down seam allowance or lining, and for decorative effect.
+Крайовий шов може використовуватися для закріплення швів, утримання матеріалу на місці шляхом пришивання підкладки чи припусків, та оздоблювального ефекту.
 
 <Tip>
 
-For best results, use a sewing needle for optimized for topstitching
+Для досягнення найкращих результатів ми радимо використовувати особливі голки для поверхневого шва
 
 </Tip>

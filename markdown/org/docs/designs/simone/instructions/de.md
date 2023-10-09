@@ -1,15 +1,15 @@
 ---
-title: "Simone shirt: Sewing Instructions"
+title: "Simone Shirt: Anleitung zum Nähen"
 ---
 
-### Step 1: Bust Darts
+### Schritt 1: Darts kaputt machen
 
-- Close the Front bust darts.
+- Schließe die vorderen Brustabnäher.
 
-### Step 2: Follow Simon's Instructions
+### Schritt 2: Befolge die Anweisungen von Simon
 
 <Note>
 
-Simone is just our [Simon pattern](/designs/simon/) adapted for breasts so you can now just follow [Simon's instructions](/docs/patterns/simon/instructions) to finish your Simone :)
+Simone ist nur unser [Simon-Muster](/designs/simon/), das für Brüste angepasst wurde, so dass du jetzt einfach [Simons Anleitung](/docs/patterns/simon/instructions) folgen kannst, um deine Simone fertigzustellen :)
 
 </Note>

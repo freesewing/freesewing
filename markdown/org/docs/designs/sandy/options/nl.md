@@ -1,5 +1,5 @@
 ---
-title: "Sandy circle skirt: Design Options"
+title: "Sandy cirkelrok: Ontwerpopties"
 ---
 
 <PatternOptions pattern='sandy' />

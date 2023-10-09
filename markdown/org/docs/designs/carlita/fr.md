@@ -1,5 +1,8 @@
 ---
-title: "Carlita coat"
+title: "Manteau Carlita"
 ---
 
-<PatternDocs pattern='carlita' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='carlita' docs />
+

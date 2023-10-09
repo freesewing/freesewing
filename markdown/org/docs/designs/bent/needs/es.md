@@ -1,19 +1,19 @@
 ---
-title: "Bent body Block: What You Need"
+title: "Bloque de cuerpo doblado: Lo que necesitas"
 ---
 
-To make Bent, you will need the following:
+Para hacer Bent, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- About 1.5 - 2 metres (1.7 - 2.2 yards) of a suitable fabric ([see Bent Fabric options](/docs/patterns/bent/fabric/))
+- Aproximadamente 1,5 - 2 metros (1,7 - 2,2 yardas) de una tela adecuada ([ver Opciones de tela doblada](/docs/patterns/bent/fabric/))
 
-This list is for a default Bent Block. If you have/are making changes to the block you may need to get additional items such as closures, binding etc.
+Esta lista es para un Bloque Doblado por defecto. Si has hecho o vas a hacer cambios en el bloque, puede que tengas que conseguir elementos adicionales como cierres, encuadernación, etc.
 
 <Note>
 
-###### Bent is a block, not a pattern
+###### Doblado es un bloque, no un patrón
 
-A block is a basic shape on which other patterns are based.
+Un bloque es una forma básica en la que se basan otros patrones.
 A veces también se llaman trampas, aunque los puristas argumentarán que un bloque y una inclinación son cosas diferentes.
 
 Los bloques normalmente no se hacen as-is sino que sirven como base para otros patrones.

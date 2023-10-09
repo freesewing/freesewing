@@ -1,13 +1,13 @@
 ---
-title: "Octoplushy, the plushy octopus: Fabric Options"
+title: "Octoplushy, la pieuvre en peluche : Options de tissu"
 ---
 
-## Main and Contrast Body Fabrics (Upper body and legs, belly and underside legs)
+## Tissus principaux et contrastés du corps (haut du corps et jambes, ventre et dessous des jambes).
 
-This plush toy is intended to have two different coloured fabrics, one for the upper body and top side of the legs, one for the belly and underside of the legs.
+Cette peluche est prévue pour avoir deux tissus de couleurs différentes, l'un pour le haut du corps et le dessus des pattes, l'autre pour le ventre et le dessous des pattes.
 
-Octoplushy is designed for faux fur fabric, which most plush toys are made from, but you could also use polar fleece, felt, denim, corduroy, or anything moderately heavy. Lightweight or drapey fabrics may not hold Octoplushy's shape well when stuffed. Fabrics with a two-way stretch will work better than wovens, the stretch should be perpendicular to the grainline.
+Octoplushy est conçu pour le tissu en fausse fourrure, dont sont faites la plupart des peluches, mais tu peux aussi utiliser de la polaire, du feutre, du denim, du velours côtelé ou n'importe quoi de modérément lourd. Les tissus légers ou drapés risquent de ne pas bien tenir la forme d'Octoplushy lorsqu'il est rembourré. Fabrics with a two-way stretch work better than wovens. The stretch should be perpendicular to the grainline.
 
-## Stuffing
+## Farce
 
-Since this is a plush toy, it will need to be stuffed with material. Most of the time you'll want to use polyester fiberfill (polyfill), but if you have a lot of fabric scraps, you can use shredded scrap fabric. However this may be heavier and less soft than fiberfill. It's also worth thinking about whether your Octoplushy may be at risk of getting dirty, or want to go for a swim, as not all stuffing options are washable.
+Since this is a pluch toy, it wil need to be stuffed with material. La plupart du temps, tu voudras utiliser de la fibre de polyester (polyfill), mais si tu as beaucoup de chutes de tissu, tu peux utiliser des chutes de tissu déchiquetées. Cependant, il peut être plus lourd et moins doux que le rembourrage en fibres. Il faut aussi penser à ce que ton Octoplushy risque de se salir, ou veuille aller se baigner, car toutes les options de rembourrage ne sont pas lavables.

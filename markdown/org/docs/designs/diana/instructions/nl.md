@@ -1,70 +1,70 @@
 ---
-title: "Diana draped top: Sewing Instructions"
+title: "Diana gedrapeerde top: Naai-instructies"
 ---
 
-### Step 1: Finish the back neckline
+### Stap 1: Werk de halslijn aan de achterkant af
 
-- Cut a strip of main fabric the length of your back neckline, and around 3 cm wide.
-- Press a fold into this strip, 1 cm from the edge.
+- Knip een strook hoofdstof van de lengte van je rughalslijn en ongeveer 3 cm breed.
+- Druk een vouw in deze strook, 1 cm van de rand.
 
 <Tip>
 
-For woven fabric make this a bias cut strip.  
-For knit fabric make a strip with the stretch of the fabric running along the long edge.
+Voor geweven stof maak je er een biais gesneden strook van.  
+Voor gebreide stof maak je een strook waarbij de rek van de stof langs de lange kant loopt.
 
 </Tip>
 
-- With _good sides together_ align the non-folded edge of the strip with the back neckline.
-- Sew the strip to the back neckline and trim the seam.
-- Turn the strip to the wrong side of the fabric and _topstitch_ along the folded edge to keep it in place.
+- Met _goede kanten op elkaar_ lijn je de niet-gevouwen rand van de strook uit met de halslijn aan de achterkant.
+- Stik de strook aan de halslijn van het rugpand en knip de naadwaarde bij.
+- _Keer de strook naar de verkeerde kant van de stof en stik_ door langs de gevouwen rand om de strook op zijn plaats te houden.
 
-### Step 2: Close shoulder seams
+### Stap 2: Sluit de schoudernaden
 
-![This drawing was too nice not to use](neckline.jpg)
+![Deze tekening was te leuk om niet te gebruiken](neckline.jpg)
 
-- Finish the raw edge on the front neckline in a way that suits your fabric (if it doesn’t fray, you can leave it unfinished).
-- With _good sides together_, place the front on the back aligning the shoulder seams.
-- Fold the front neckline seam allowance over to the wrong side of the back.
-
-<Note>
-
-If you have a lightweight woven fabric you can fold this edge up again, so it will form a narrow double hem afterwards (it can help to press these folds first).
-
-</Note>
-
-- Stitch the shoulder seam, enclosing the raw edge of the back neckline in the fold.
-- Turn to the right side and press.
-
-### Step 3: Finish front neckline
-
-- Press the hem formed in your fabric by the folds you made at the shoulder seam when you closed the shoulder and topstitch close to the edge.
-
-### Step 4: Attach sleeves
-
-The sleeve will be inserted flat, meaning the armhole seam will be sewn first and the sleeve and side seam will be closed in one go.
-
-- With _good sides together_, matching notches, pin the sleeve head along the armhole.
-- If necessary, ease in the sleeve head at the top, between the notches.
-- Sew, finish and press the seam.
-- Repeat for other sleeve.
-
-### Step 5: Close side and sleeve seam
-
-- With _good sides together_ pin the front to the back along the sleeve and side seams, making sure to line up the armhole seams.
-- Sew, finish and press the seam.
-
-### Step 6: Hem
-
-- Finish the sleeves and bottom hems in a way that works with your fabric choice.
+- Werk de kniprand van de halslijn aan de voorkant af op een manier die bij je stof past (als hij niet rafelt, kun je hem onafgewerkt laten).
+- Met _goede kanten op elkaar_, leg je het voorpand op het achterpand met de schoudernaden op elkaar.
+- Plooi de naadwaarde van de halsrand van het voorpand naar de verkeerde kant van het rugpand.
 
 <Note>
 
-Again, this can mean folding the hem under twice and _topstitching_, finishing the raw edge with a serger
-or zig zag stitch and folding it under once or leaving the edge raw, folding it under once and
-trimming close to the stitching.
+Als je een lichtgewicht geweven stof hebt, kun je deze rand weer omhoog vouwen, zodat hij daarna een smalle dubbele zoom vormt (het kan helpen om deze vouwen eerst te strijken).
 
 </Note>
 
-### Step 7: Enjoy!
+- Stik de schoudernaad zodat de onafgewerkte rand van het achterpand tussen de geplooide rand van het voorpand.
+- Keer naar de goede kant en strijk.
 
-You're all done! Now go enjoy your new top!
+### Stap 3: Werk de halslijn aan de voorkant af
+
+- Strijk de zoom die aan je halsrand gevormd wordt door de plooien die je aan de schoudernaad gemaakt hebt en stik dicht langs de rand door.
+
+### Stap 4: Mouwen bevestigen
+
+De mouw wordt plat ingezet, wat betekent dat de armsgatnaad eerst wordt genaaid en de mouw en zijnaad in één keer worden gesloten.
+
+- Met _goede kanten op elkaar_, met de inkepingen op elkaar, speld je de mouwkop langs het armsgat.
+- Het is mogelijk dat de mouwkop iets groter is dan het armsgat. Verdeel het overschot aan stof gelijk bovenaan tussen de merktekens.
+- Stik, werk de naad af en strijk.
+- Herhaal dit voor de andere mouw.
+
+### Stap 5: Sluit de zijnaad en de mouwnaad
+
+- Met _goede kanten op elkaar_ speld je het voorpand op het achterpand langs de mouw- en zijnaden, zorg dat de armsgatnaden op één lijn liggen.
+- Stik, werk de naad af en strijk.
+
+### Stap 6: Zomen
+
+- Werk de zomen van de mouwen en de zoom onderaan af op een manier die bij je stofkeuze past.
+
+<Note>
+
+Nogmaals, dit kan betekenen dat je de zoom twee keer omvouwt en _doorstikt_, dat je de kniprand afwerkt met een overlocksteek
+of zigzagsteek en één keer omvouwt, of dat je de rand onbewerkt laat, één keer omvouwt en
+dicht bij het stiksel afwerkt.
+
+</Note>
+
+### Stap 7: Geniet!
+
+Je bent allemaal klaar! Ga nu genieten van je nieuwe top!

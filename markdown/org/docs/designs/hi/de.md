@@ -2,4 +2,7 @@
 title: Hi, der Hai
 ---
 
-<PatternDocs pattern='hi' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='hi' docs />
+

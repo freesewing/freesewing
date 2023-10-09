@@ -225,12 +225,11 @@ function draftBreannaSleevecap(params) {
   return part
 }
 
-export const sleeveCap = {
-  name: 'breanna.sleeveCap',
+export const sleevecap = {
+  name: 'breanna.sleevecap',
   hide: { self: true },
   after: [front, frontBase, back],
   options: {
-    bicepsEase: { pct: 15, min: 0, max: 50, menu: 'fit' },
     sleevecapEase: { pct: 0.5, min: 0, max: 2.5, menu: 'advanced.sleevecap' },
     sleevecapTopFactorX: { pct: 50, min: 25, max: 75, menu: 'advanced.sleevecap' },
     sleevecapTopFactorY: { pct: 110, min: 35, max: 165, menu: 'advanced.sleevecap' },

@@ -1,5 +1,5 @@
 ---
-title: "Center back dart"
+title: "Abnäher in der hinteren Mitte"
 ---
 
 ![Zentrierter Dart](centerbackdart.svg)
@@ -19,4 +19,4 @@ Technisch gesehen ist dies kein Dart, aber ich wusste nicht, wie man es sonst ne
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](wahid_centerbackdart_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](wahid_centerbackdart_sample.svg "Effekt dieser Option auf das Schnittmuster")

@@ -1,15 +1,15 @@
 ---
-title: "Handle width"
+title: "Anchura del Manejo"
 ---
 
-Controls the width of the handle.
+Controla el ancho del asa.
 
 <Tip>
 
-Turn on paperless to see the width of the handle.
+Enciende el sin papel para ver la anchura del mango.
 
 </Tip>
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](hortensia_handlewidth_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](hortensia_handlewidth_sample.svg "Efecto de esta opción en el patrón")

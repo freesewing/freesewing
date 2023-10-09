@@ -1,13 +1,13 @@
 ---
-title: "Crotch seam angle"
+title: "Angle de couture"
 ---
 
-Controls the angle of the crotch seam curve.
+Contrôle l'angle de la courbe de la couture de l'entrejambe.
 
-- 0% makes the crotch seam draft parallel to the hem.
-- Increasing this option will draft the crotch seam at 180 - the angle.
+- 0% rend le projet de couture de l'entrejambe parallèle à l'ourlet.
+- En augmentant cette option, la couture de l'entrejambe sera ébauchée à 180 - l'angle.
 
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](paco_crotchseamcurveangle_sample.svg "Effect of this option on the pattern")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](paco_crotchseamcurveangle_sample.svg "Effet de cette option sur le motif")

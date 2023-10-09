@@ -1,13 +1,13 @@
 ---
-title: "Back dart shaping"
+title: "Формування виточки на спині"
 ---
 
 ***
 
-Controls how much of the waist shaping will happing in the backdarts.
+Контролює, яка частина формування талії буде відбуватися в виточках.
 
 You can tweak this setting to balance the waist reduction across side seams, back darts and (optional) front darts.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_backdartshaping_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_backdartshaping_sample.svg "Вплив цієї опції на шаблон")

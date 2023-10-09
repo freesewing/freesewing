@@ -4,7 +4,7 @@ title: "Ratio de longitud"
 
 ***
 
-Controls the length of the crown and ear flaps
+Controla la longitud de la coronilla y las orejeras
 
 ## Efecto de esta opción en el patrón
 

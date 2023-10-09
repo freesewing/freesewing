@@ -8,4 +8,6 @@ export const siteConfig = {
     key: 'e0ce76f6315f56789222a27906507b79',
   },
   languages: ['en'],
+  site: 'FreeSewing.dev',
+  tld: 'dev',
 }

@@ -1,22 +1,22 @@
 ---
-title: "Hi the shark: What You Need"
+title: "Salut le requin : Ce dont tu as besoin"
 ---
 
-To make Hi, you will need the following:
+Pour fabriquer Hi, tu auras besoin des éléments suivants :
 
-- [Matériel de couture de base](/docs/sewing/basic-sewing-supplies)
+- [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
 - About 1 meters of a suitable fabric in color 1 (body)
 - About 0.5 meters of a suitable fabric in color 2 (belly)
-- Small piece for the mouth
-- Small piece of fabric for eyes
-- Suitable, unraveling, fabric for the teeth
-- Stuffing
-- Topstiching thread (thick thread) for gills
+- Petit morceau pour la bouche
+- Petit morceau de tissu pour les yeux
+- Adapté, effilochable, tissu pour les dents.
+- Farce
+- Fil de surpiqûre (fil épais) pour les branchies.
 
 <Note>
 
-This list is based on a default Hi and you may need less or more fabric dependant on the [size you are making Hi](/docs/patterns/hi/options/size/).
+Cette liste est basée sur un Hi par défaut et tu peux avoir besoin de moins ou de plus de tissu en fonction de la [taille à laquelle tu fais le Hi] (/docs/patterns/hi/options/size/).
 
-For instance a 500% Hi will need 5 meters (1 meter x 500%  = 5 meters) and a 50% Hi will need 0.5 meters (1 meter x 50% = 0.5 meters).
+Par exemple, une hauteur de 500 % aura besoin de 5 mètres (1 mètre x 500 % = 5 mètres) et une hauteur de 50 % aura besoin de 0,5 mètre (1 mètre x 50 % = 0,5 mètre).
 
 </Note>

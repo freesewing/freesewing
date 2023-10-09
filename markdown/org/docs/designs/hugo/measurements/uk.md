@@ -1,5 +1,5 @@
 ---
-title: "Hugo hoodie: Required Measurements"
+title: "Худі Hugo: Необхідні виміри"
 ---
 
 <PatternMeasurements pattern='hugo' />

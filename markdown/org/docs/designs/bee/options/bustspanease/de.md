@@ -1,10 +1,10 @@
 ---
-title: "Bust span ease"
+title: "Büstenumfang leicht"
 ---
 
 ***
 
-Controls the bust span ease in the underlying Bella block Bee is based on
+Kontrolliert die Zugabe des Abstandes der Brustpunkte des zugrunde liegenden Grundschnittes "Bella" auf welchem Bee basiert
 
 ## Effekt dieser Option auf das Schnittmuster
 

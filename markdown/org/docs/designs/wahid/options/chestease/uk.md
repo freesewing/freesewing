@@ -1,17 +1,17 @@
 ---
-title: "Chest ease"
+title: "Легкість у грудях"
 ---
 
-![Chest ease](chestease.svg)
+![Легкість у грудях](chestease.svg)
 
-How much room do you want at the chest?
+Наскільки вільною має бути Ваша майка на грудній клітині?
 
 <Note>
 
-Given that a waistcoat has no arms, a little chest ease goes a long way. Add too much, and you'll end up with gaping armholes.
+Враховуючи, що жилет не має рукавів, невелика легкість на грудях має велике значення. Якщо Ви додасте забагато - пройми більше не будуть правильно сидіти.
 
 </Note>
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](wahid_chestease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](wahid_chestease_sample.svg "Вплив цієї опції на шаблон")

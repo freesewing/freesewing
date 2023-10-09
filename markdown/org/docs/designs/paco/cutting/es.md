@@ -1,12 +1,12 @@
 ---
-title: "Paco pants: Cutting Instructions"
+title: "Pantalones Paco: Instrucciones de corte"
 ---
 
 <Tip>
 
-###### Cut out only what you need
+###### Corta solo lo que necesitas
 
-Depending on the choices you made in your pattern, you may not need all parts.
+Dependiendo de las opciones que hiciste en tu patrón, puede que no necesites todas las partes.
 Si no se imprime una parte de patrón, significa que no la necesita.
 
 </Tip>
@@ -14,7 +14,7 @@ Si no se imprime una parte de patrón, significa que no la necesita.
 - De tu tela principal:
   - 2x **parte 1**: Este es el panel trasero. Corta estos de tu **tela principal** con _lados buenos juntos_
   - 2x **parte 2**: Este es el panel frontal. Corta estos de tu **tela principal** con _lados buenos juntos_
-  - 2x **parte 3**: Esta es la cintura. Cortarlo de tu **tela principal**
+  - Corta 2 de estas de tu **tela principal** con _lados buenos juntos_ Cortarlo de tu **tela principal**
   - 2x **parte 4**: Este es el cubo de pegatina. Corta estos, desde tu **tela principal** con _lados buenos juntos_ (no es necesario si eliges no tener un héroe elasticado)
   - 2x **parte 7**: Este es el bolsillo trasero. Corta 2 de estas de tu **tela principal** con _lados buenos juntos_
 - De su tela de forraje:
@@ -29,6 +29,5 @@ Si no se imprime una parte de patrón, significa que no la necesita.
 
 - There is no seam allowance on the interfacing
 - There is extra seam allowance on the waist band and hem
-- The waistband is a mere rectangle, so it's not fully printed to save paper
 
 </Warning>

@@ -1,5 +1,5 @@
 ---
-title: "Sven sweatshirt: Sewing Instructions"
+title: "Sven Sweatshirt: Anleitung zum Nähen"
 ---
 
 ### Schritt 1: Schulternähte schließen

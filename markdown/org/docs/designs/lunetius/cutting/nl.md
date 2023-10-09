@@ -1,25 +1,25 @@
 ---
-title: "Lunetius Lacerna: Cutting Instructions"
+title: "Lunetius Lacerna: Snij-instructies"
 ---
 
-- Cut **1 lacerna** part on the fold
-- or Cut **2 lacerna** parts
+- Knip **1 lacerna** deel op de vouw.
+- of Snijd **2 lacerna** delen
 
-The way to cut Lunetius is going to depend on what fabric you have chosen to use. To not have to later finish the centre back edge you can cut with the centre back edge on the selvage. If you have enough fabric width you can cut it _on the fold_. If you don’t, you can cut two halves and later sew them together.
+De manier waarop je Lunetius knipt, hangt af van de stof die je hebt gekozen. To not have to later finish the centre back edge you can cut with the centre back edge on the selvage. If you have enough fabric width you can cut it _on the fold_. If you don’t, you can cut two halves and later sew them together.
 
-A lot of garments were woven to shape in the Roman era, so this is one aspect where you don’t need to worry about historical accuracy at all, unless you would like to weave your Lunetius to shape.
+In de Romeinse tijd werden veel kledingstukken in vorm geweven, dus dit is een aspect waarbij je je helemaal geen zorgen hoeft te maken over historische nauwkeurigheid, tenzij je je Lunetius in vorm wilt weven.
 
 <Comment by="Zee">In that case I salute you and please share the results \[in our discord\](https://discord.freesewing.org/)! </Comment>
 
-If you want to learn more about this you can read about it in:  
+Als je hier meer over wilt weten kun je dit lezen in:  
 Granger-Taylor, H. (1982) _Weaving Clothes To Shape in the Ancient World: The Tunic and Toga of the Arringatore_ in Textile History 13 (1), pp 3-25
 
-### On Historical Accuracy
+### Over historische nauwkeurigheid
 
-The further we go back in time, the less extant garments we have to base research on. Often there may be scraps of fabric left behind by stroke of luck but most of our information starts to come from (in archaeology) secondary sources like written texts from contemporaries.
+Hoe verder we teruggaan in de tijd, hoe minder overgebleven kledingstukken we hebben om onderzoek op te baseren. Vaak zijn er toevallig restjes stof achtergebleven, maar de meeste informatie komt (in de archeologie) van secundaire bronnen zoals geschreven teksten van tijdgenoten.
 
-This is especially true for the Roman and Mediaeval eras, not to mention that a lot of the available research is behind a paywall.
+Dit geldt vooral voor de Romeinse tijd en de Middeleeuwen, om nog maar te zwijgen over het feit dat veel van het beschikbare onderzoek achter een betaalmuur zit.
 
-We can’t be 100 percent historically accurate, because we’re living in a different time, and everything we use to sew is different now from before. Even fabric is woven in a different way.
+We kunnen niet 100 procent historisch accuraat zijn, want we leven in een andere tijd en alles wat we gebruiken om te naaien is nu anders dan vroeger. Zelfs stof wordt op een andere manier geweven.
 
-How ‘accurate’ you want to be is up to you, there is no wrong way to do this and research is not required -- though it can be fun!
+Hoe 'nauwkeurig' je wilt zijn is aan jou, er is geen verkeerde manier om dit te doen en onderzoek is niet nodig -- hoewel het wel leuk kan zijn!

@@ -1,14 +1,14 @@
 ---
-title: "Lunetius Lacerna: Fabric Options"
+title: "Lunetius Lacerna: Opciones de tejido"
 ---
 
-In the Roman era both linen and wool were widely available so both would be appropriate for this project. Silk was also available but it was very much a ‘fancy’ fabric used to show off wealth and status as it had to come from abroad.
+En la época romana, tanto el lino como la lana estaban ampliamente disponibles, por lo que ambos serían apropiados para este proyecto. También había seda, pero era un tejido muy "elegante" que se utilizaba para presumir de riqueza y estatus, ya que tenía que proceder del extranjero.
 
-A lot of the fabrics found in military contexts like excavated forts are tightly woven twills that would be good at keeping the weather out. If you want to have a historically appropriate fabric then a wool twill would be a great choice.
+Muchas de las telas encontradas en contextos militares, como las fortalezas excavadas, son sargas de tejido apretado que serían buenas para mantener a raya la intemperie. Si quieres un tejido históricamente apropiado, una sarga de lana sería una gran elección.
 
-Otherwise, any wool or linen in both plain and other weaves would be a good choice. The fabric weight depends on your local climate and what you intend to use the cloak for. However if you want to hand sew the Lunetius it can help to choose a slightly lighter weight fabric to make sewing easier on your hands.
+Por lo demás, cualquier lana o lino, tanto en liso como en otros tejidos, sería una buena elección. 諈诿站采颠茤神堡节石感慈反 29哪未取 I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry, I'm sorry.
 
-If you are not working with any historicalness in mind Lunetius can be made out of a variety of fabrics. A woven fabric would drape in a different way compared to a stretch or knitted fabric but you are only limited by your imagination.
+Si no tienes en mente ningún tipo de historicidad, los Lunetius pueden confeccionarse con distintos tejidos. Una tela tejida tendría una caída diferente a la de una tela elástica o de punto, pero tu imaginación es lo único que te limita.
 
-More information on Roman cloak fabrics can be found in:  
-Jorgensen, L. B. (2004)  _A Matter of Material: Changes in Textiles from Roman Sites in Egypt’s Eastern Desert_,  in An Tard 11, pp 87-99
+Puedes encontrar más información sobre los tejidos de los mantos romanos en:  
+Jorgensen, L. B. (2004)  _Una cuestión de material: Cambios en los textiles de los yacimientos romanos del desierto oriental de Egipto_, en An Tard 11, pp 87-99

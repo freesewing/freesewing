@@ -1,10 +1,10 @@
 ---
-title: "Side depth"
+title: "Zijdiepte"
 ---
 
 ***
 
-Controls how far the bikini cup extends towards the side
+Bepaalt hoe ver de bikinicup uitsteekt naar de zijkant
 
 ## Effect van deze optie op het patroon
 

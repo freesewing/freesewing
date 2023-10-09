@@ -1,5 +1,8 @@
 ---
-title: "Penelope pencil skirt"
+title: "Юбка-олівець Пенелопа"
 ---
 
-<PatternDocs pattern='penelope' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='penelope' docs />
+

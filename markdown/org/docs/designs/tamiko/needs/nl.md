@@ -1,8 +1,8 @@
 ---
-title: "Tamiko top: What You Need"
+title: "Tamiko top: Wat je nodig hebt"
 ---
 
-To make Tamiko, you will need the following:
+Om Tamiko te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- About 1 meter (1.1 yards) of a suitable fabric ([see Fabric options](/docs/patterns/tamiko/fabric))
+- Ongeveer 1 meter van een geschikte stof ([zie Stofopties](/docs/patterns/tamiko/fabric))

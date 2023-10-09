@@ -1,18 +1,18 @@
 ---
-title: "Cornelius cycling breeches: What You Need"
+title: "Cornelius fietsbroek: Wat je nodig hebt"
 ---
 
-To make Cornelius, you will need the following:
+Om Cornelius te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- About 2 metres (2.2 yards) of a suitable fabric ([see Cornelius Fabric options](/docs/patterns/cornelius/fabric/))
-- About 0.5 metres (0.6 yards) of lining fabric ([see Cornelius Fabric options](/docs/patterns/cornelius/fabric/))
-- Interfacing for the waistband ([see Cornelius Fabric options](/docs/patterns/cornelius/fabric/))
-- A zip or 3 buttons for the fly
-- 3 or 7 Buttons for waistband and leg bands
+- Ongeveer 2 meter van een geschikte stof ([zie Cornelius stofopties](/docs/patterns/cornelius/fabric/))
+- Ongeveer 0,5 meter voeringstof ([zie Cornelius stofopties](/docs/patterns/cornelius/fabric/))
+- Tussenvulling voor de tailleband ([zie Cornelius Stofopties](/docs/patterns/cornelius/fabric/))
+- Een rits of 3 knopen voor de gulp
+- 3 of 7 knopen voor tailleband en beenbanden
 
 <Note>
 
-The number of buttons you need are dependent on the cuff style you are using. **Keystone** requires 7 in total whereas **Traditional** and **Elegant** require 3 in total. You may also want to use smaller buttons for the leg bands compared to the waistband but this is up to you.
+Het aantal knopen dat je nodig hebt hangt af van de manchetstijl die je gebruikt. **Keystone** vereist er 7 in totaal, terwijl **Traditional** en **Elegant** er 3 in totaal nodig hebben. Je kunt ook kleinere knopen gebruiken voor de beenbanden in vergelijking met de tailleband, maar dat is aan jou.
 
 </Note>

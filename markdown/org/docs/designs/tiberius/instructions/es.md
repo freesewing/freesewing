@@ -1,33 +1,33 @@
 ---
-title: "Tiberius Tunica: Sewing Instructions"
+title: "Tiberio Tunica: Instrucciones de costura"
 ---
 
 <Note>
 
-Tiberius is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. Te haces.
+Tiberio es un patrón de inspiración histórica, y si quieres más autenticidad, lo mejor es coser a mano. Personalmente, utilizo una máquina de coser. Te haces.
 
 </Note>
 
-### Step 1: Sew shoulder seams
+### Paso 1: Coser las costuras de los hombros
 
-- Put both parts with good sides together. Sew the shoulder seams, taking care to stop at the notches for the head opening.
-- Finish the seams, with a method of your choice. (If you used the fabrics recommended in the [fabric options](/docs/patterns/tiberius/fabric), they _will_ fray. Folding the seam allowance twice, enclosing the raw edge and topstitching is an option. You can also use decorative topstitching.)
+- Junta las dos partes por el lado bueno. Cose las costuras de los hombros, teniendo cuidado de detenerte en las muescas para la abertura de la cabeza.
+- Remata las costuras con el método que prefieras. (Si utilizas los tejidos recomendados en las opciones de tejido [](/docs/patterns/tiberius/fabric), se deshilacharán __. Una opción es doblar dos veces el margen de costura, encerrar el borde crudo y pespuntear. También puedes utilizar pespuntes decorativos).
 
 <Note>
 
-If you opted for cutting the whole tunica out of one piece, carefully cut out the head opening between the notches instead. Finish the opening.
+Si has optado por cortar toda la túnica de una sola pieza, recorta en su lugar con cuidado la abertura de la cabeza entre las muescas. Termina la apertura.
 
 </Note>
 
-### Step 2: Sew side seams
+### Paso 2: Coser las costuras laterales
 
-- Still with good sides together, sew the side seams. Start at the notch for the armhole and work your way down. Take care to align your layers properly.
-- Finish seams.
+- Con los lados bien juntos, cose las costuras laterales. Empieza por la muesca de la sisa y ve bajando. Ten cuidado de alinear bien las capas.
+- Remata las costuras.
 
-### Step 3: Hem the bottom edge
+### Paso 3: Haz un dobladillo en el borde inferior
 
-Hem the bottom of your garment. If you want to use decorative stitches, this is another place to use them.
+Haz un dobladillo en la parte inferior de la prenda. Si quieres utilizar puntadas decorativas, éste es otro lugar para usarlas.
 
-### Step 4: You're done!
+### Paso 4: ¡Ya has terminado!
 
-Pull on your tunica, belt it around your waist, play around with how you gather the fabric, and enjoy!
+Ponte la túnica, póntela alrededor de la cintura, juega con el fruncido de la tela y ¡disfruta!

@@ -1,35 +1,35 @@
 ---
-title: "Penelope pencil skirt: Cutting Instructions"
+title: "Falda lápiz Penélope: Instrucciones de corte"
 ---
 
 <Note>
 
-The number of back parts depends on whether you want a vent, or have moved the zipper to the back seam.  
-Either one of these options will require you to cut out two individual back parts. Otherwise the back is cut on the fold.  
-Due to this, the cutting list does not specify how many back parts to cut as the pattern options determine this.
+El número de piezas de la espalda depende de si quieres una abertura o has desplazado la cremallera a la costura trasera.  
+Cualquiera de estas opciones requerirá que recortes dos partes traseras individuales. De lo contrario, el reverso se corta en el pliegue.  
+Debido a esto, la lista de corte no especifica cuántas partes traseras cortar, ya que las opciones del patrón lo determinan.
 
 </Note>
 
-**Main Fabric**
+**Tela principal**
 
-- Cut **1 front** part on fold.
-- Cut **back** part(s).
-- (Optional) Cut **1 waistband** parts on the fold.
+- Corta **1 parte delantera** en el pliegue.
+- Corta **atrás** parte(s).
+- (Opcional) Corta **1 cintura** partes en el pliegue.
 
-**Lining Fabric (Optional)**
+**Tejido del forro (Opcional)**
 
-- Cut **1 front** part on fold.
-- Cut **back** part(s).
+- Corta **1 parte delantera** en el pliegue.
+- Corta **atrás** parte(s).
 
 <Note>
 
-[See Penelope Instructions](docs/patterns/penelope/instructions/#lining) to understand alterations to the front and back parts required for the lining.
+[Consulta las instrucciones de Penélope](docs/patrones/penélope/instrucciones/#forro) para comprender las alteraciones de las partes delantera y trasera necesarias para el forro.
 
 </Note>
 
-**Interfacing**
+**Interfaz**
 
-- Cut **1 waistband** part on the fold.
+- Corta **1 cintura** parte en el pliegue.
 
 <Tip>
 

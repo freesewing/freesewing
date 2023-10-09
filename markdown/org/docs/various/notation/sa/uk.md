@@ -1,11 +1,11 @@
 ---
-title: Seam allowance
+title: Припуск на шов
 ---
 
 Seam allowance is indicated by a dashed line, that has the same width and color as the seam they belong to:
 
-<Legend part="saLines"> Seam allowance for different fabric types </Legend>
+<Legend part="saLines"> Припуски на шви для різних типів тканин </Legend>
 
-Note that the corners of the seam allowance are trimmed, and not extended:
+Зверніть увагу, що кути припуску на шов обрізаються, а не розширюються:
 
-<Legend part="sa"> A trimmed seam allowance corner </Legend>
+<Legend part="sa"> Обрізаний кут припуску на шов </Legend>

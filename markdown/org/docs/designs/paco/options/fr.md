@@ -1,5 +1,5 @@
 ---
-title: "Paco pants: Design Options"
+title: "Pantalon Paco : Options de conception"
 ---
 
 <PatternOptions pattern='paco' />

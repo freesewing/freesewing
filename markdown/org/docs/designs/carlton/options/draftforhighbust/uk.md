@@ -1,9 +1,9 @@
 ---
-title: Draft for high bust
+title: Проект для високого бюста
 ---
 
-Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts.
+Складіть викрійку для високого обхвату грудей (якщо є), а не для повного обхвату грудей. Це дозволить отримати більш облягаючий одяг для людей з грудьми.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](carlton_draftforhighbust_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](carlton_draftforhighbust_sample.svg "Вплив цієї опції на шаблон")

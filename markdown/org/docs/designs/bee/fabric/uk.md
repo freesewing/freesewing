@@ -1,13 +1,13 @@
 ---
-title: "Bee bikini top: Fabric Options"
+title: "Топ-бікіні \"Бджілка\": Варіанти тканин"
 ---
 
-### Main and Lining Fabric
+### Основна та підкладкова тканина
 
-The main and lining fabric are the same type of material. Bee is made with swimwear fabrics such as lycras.
+Основна і підкладкова тканина - це один і той же тип матеріалу. Bee виготовлений з тканин для купальників, таких як лайкра.
 
 <Note>
 
-You only need lining fabric if you intend to make the pattern reversible or if you want the band for the cross back tie variant to be a constrasting fabric. Otherwise you can cut all the required pieces from your main fabric.
+Підкладкова тканина потрібна лише в тому випадку, якщо ви плануєте зробити викрійку двосторонньою або якщо ви хочете, щоб стрічка для перехресного зав'язування спинки була контрастною тканиною. В іншому випадку ви можете вирізати всі необхідні шматки з основної тканини.
 
 </Note>

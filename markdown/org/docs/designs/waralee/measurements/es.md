@@ -1,5 +1,5 @@
 ---
-title: "Waralee wrap pants: Required Measurements"
+title: "Pantalón envolvente Waralee: Medidas requeridas"
 ---
 
 <PatternMeasurements pattern='waralee' />

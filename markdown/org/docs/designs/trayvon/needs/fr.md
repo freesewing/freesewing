@@ -1,8 +1,8 @@
 ---
-title: "Trayvon tie: What You Need"
+title: "Trayvon tie : Ce dont tu as besoin"
 ---
 
-To make Trayvon, you will need the following:
+Pour faire Trayvon, vous aurez besoin des éléments suivants :
 
 - Fourniture de base pour la couture
-- Between 0.5 meters - 1.5 meters (0.6 - 1.7 yards) of a suitable fabric ([see Fabric options](/docs/patterns/trayvon/fabric)), depending on whether you're cutting on the bias, the grain, or the cross-grain.
+- Entre 0,5 mètre et 1,5 mètre d'un tissu approprié ([voir les options de tissu](/docs/patterns/trayvon/fabric)), selon que tu coupes dans le biais, dans le sens du grain ou dans le sens transversal.

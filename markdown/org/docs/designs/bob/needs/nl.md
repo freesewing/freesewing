@@ -1,10 +1,10 @@
 ---
-title: "Bob the Bib What You Need"
+title: "Bob the Bib: What You Need"
 ---
 
-To make Bob, you will need the following:
+Om Bob te maken heb je het volgende nodig:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- A little bit of suitable fabric ([see Fabric options](/docs/patterns/aaron/fabric))
-- Enough bias tape to go around the entire bib
-- A snap or other type of fastener
+- [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
+- Een beetje geschikte stof ([zie Stofopties](/docs/patterns/aaron/fabric))
+- Genoeg biaisband om de hele slab te omzomen
+- Een kliksluiting of ander type sluiting

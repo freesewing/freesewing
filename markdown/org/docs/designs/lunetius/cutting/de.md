@@ -1,25 +1,25 @@
 ---
-title: "Lunetius, die Lacerna: Zuschnitt"
+title: "Lunetius Lacerna: Anleitung zum Schneiden"
 ---
 
 - Schneide **1 Lacerna**-Teil im Stoffbruch
 - oder Schneide **2 Lacerna**-Teile
 
-Wie du Lunetius zuschneidest, hängt davon ab, welchen Stoff du gewählt hast. If you have enough fabric width you can cut it _on the fold_. If you don’t, you can cut two halves and later sew them together. To not have to later finish the centre back edge you can cut with the centre back edge on the selvage.
+Wie du Lunetius zuschneidest, hängt davon ab, welchen Stoff du gewählt hast. Wenn du genug Stoffbreite hast, kannst du ihn _an der Falte_zuschneiden. Wenn nicht, kannst du zwei Hälften zuschneiden und sie später zusammennähen. Um die hintere Mittelkante nicht nachbearbeiten zu müssen, kannst du mit der hinteren Mittelkante an der Webkante schneiden.
 
 In der Römerzeit wurden viele Kleidungsstücke in Form gewoben, daher ist dies eine Stelle, wo du dir um historische Genauigkeit keine Sorgen machen musst (es sei denn, du willst Lunetius auch in Form weben).
 
-<Comment by="Zee">In that case I salute you and please share the results \[in our discord\](https://discord.freesewing.org/)! </Comment>
+<Comment by="Zee">In diesem Fall grüße ich dich und bitte dich, die Ergebnisse \[in unserem Discord\] (https://discord.freesewing.org/) zu teilen! </Comment>
 
 Wenn du mehr darüber erfahren willst, kannst du es nachlesen in:   
 Granger-Taylor, H. (1982) _Weaving Clothes To Shape in the Ancient World: The Tunic and Toga of the Arringatore_ in Textile History 13 (1), pp 3-25
 
-### On Historical Accuracy
+### Über historische Genauigkeit
 
-The further we go back in time, the less extant garments we have to base research on. Often there may be scraps of fabric left behind by stroke of luck but most of our information starts to come from (in archaeology) secondary sources like written texts from contemporaries.
+Je weiter wir in der Zeit zurückgehen, desto weniger erhaltene Kleidungsstücke haben wir als Grundlage für die Forschung. Oft gibt es Stofffetzen, die durch einen glücklichen Zufall zurückgelassen wurden, aber die meisten unserer Informationen stammen aus (in der Archäologie) sekundären Quellen wie schriftlichen Texten von Zeitgenossen.
 
-This is especially true for the Roman and Mediaeval eras, not to mention that a lot of the available research is behind a paywall.
+Das gilt vor allem für die römische und mittelalterliche Epoche, ganz zu schweigen davon, dass ein Großteil der verfügbaren Forschungsergebnisse hinter einer Paywall liegt.
 
-We can’t be 100 percent historically accurate, because we’re living in a different time, and everything we use to sew is different now from before. Even fabric is woven in a different way.
+Wir können nicht 100 Prozent historisch korrekt sein, denn wir leben in einer anderen Zeit und alles, was wir nähen, ist heute anders als früher. Sogar der Stoff wird auf eine andere Art gewebt.
 
-How ‘accurate’ you want to be is up to you, there is no wrong way to do this and research is not required -- though it can be fun!
+Wie "genau" du sein willst, bleibt dir überlassen. Es gibt keinen falschen Weg, dies zu tun, und Nachforschungen sind nicht erforderlich - obwohl es Spaß machen kann!

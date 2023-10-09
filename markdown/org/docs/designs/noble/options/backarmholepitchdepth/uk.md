@@ -1,11 +1,11 @@
 ---
-title: "Back armhole pitch depth"
+title: "Глибина кроку пройми спинки"
 ---
 
 ***
 
-The **back armhole pitch depth** option controls the vertical position of the armhole pitch point at the back.
+Параметр Глибина кроку пройми спинки **** регулює вертикальне положення точки кроку пройми на спинці.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_backarmholepitchdepth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](noble_backarmholepitchdepth_sample.svg "Вплив цієї опції на шаблон")

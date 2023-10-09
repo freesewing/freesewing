@@ -1,5 +1,5 @@
 ---
-title: "Ribbing stretch"
+title: "Extensión de tejido acanalado"
 ---
 
 ![Ribbing en Hugo](./ribbingstretch.svg)
@@ -10,11 +10,11 @@ Si usted elige el 90% (por ejemplo) por cada 10 cm de ribbing, sólo borraremos 
 
 <Note>
 
-If you're not sure what to pick, best is to take the ribbing you are going to use see how much of it
-you need to stretch out to get to 10 cm with a _good_ stretch.
+Si no estás seguro de qué elegir, lo mejor es que cojas el acanalado que vas a utilizar y veas cuánto de él
+necesitas estirar para llegar a 10 cm con un _buen_ estiramiento.
 
 </Note>
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](hugo_ribbingstretch_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](hugo_ribbingstretch_sample.svg "Efecto de esta opción en el patrón")

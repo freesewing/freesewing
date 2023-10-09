@@ -1,11 +1,11 @@
 ---
-title: "Back hem slope"
+title: "Задній нахил подолу"
 ---
 
 ***
 
-The **back hem slope** option controls the slope of the hem at the back.
+Параметр **нахил заднього краю** регулює нахил заднього краю.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_backhemslope_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](noble_backhemslope_sample.svg "Вплив цієї опції на шаблон")

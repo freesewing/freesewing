@@ -1,10 +1,10 @@
 ---
-title: "Brian body block: Fabric Options"
+title: "Brian lichaam blok: Stof Opties"
 ---
 
-If you are making a default Brian to see how it fits we recommend a fabric such as **Calico (Muslin)** or a cheaper fabric that matches the drape and stretch of the fabric you intend to make a finalised version of Brian with.
+Als je een standaard Brian maakt om te zien hoe hij past, raden we een stof aan zoals **Calico (mousseline)** of een goedkopere stof die overeenkomt met de drapering en stretch van de stof waarmee je de definitieve versie van Brian wilt maken.
 
-You can use scraps of fabrics from your stash so don't worry about buying fabric specifically for Brian.
+Je kunt restjes stof uit je stash gebruiken, dus maak je geen zorgen over het kopen van stof speciaal voor Brian.
 
 <Note>
 

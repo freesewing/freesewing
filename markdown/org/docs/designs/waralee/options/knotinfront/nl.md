@@ -1,5 +1,5 @@
 ---
-title: "Knot in Front"
+title: "Knoop vooraan"
 ---
 
-Normally the Waralee is closed with the tie in the front. This allows you to change that to a bow tie in the back.
+Normaal gesproken wordt de Waralee gesloten met de stropdas aan de voorkant. This allows you to change that to a bow tie in the back.

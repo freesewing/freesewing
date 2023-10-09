@@ -1,132 +1,132 @@
 ---
-title: "Cornelius cycling breeches: Sewing Instructions"
+title: "Cornelius Radlerhosen: Anleitung zum Nähen"
 ---
 
-### Step 1: The Front Pockets
+### Schritt 1: Die Fronttaschen
 
-- Press under the seam allowances of the non-notched edges of the pokcet facings.
-- Matching notches, pin the wrong sides of pocket facings to right side of pocket bags, _Edgestitch_ the folded edges to the pocket bags.
-- _Baste_ the seam allowances of the notched edges of the pocket facings to the pocket bags.
-- With right sides together matching double notches sew the pocket bags to the front and then press to the wrong side.
-- Fold the pockets in half along the fold line, right sides together. Stitch the bottom of the pocket bag together.
-- Alternatively you can _French Seam_ the bottom seams of the pocket bags together if you prefer.
-- _Baste_ the top and side of the pocket bags to the front seam allowances mathcing notches.
+- Bügle unter die Nahtzugaben der nicht eingekerbten Kanten der Pokcet-Verkleidungen.
+- Stecke die linke Seite der Taschenbespannung an die rechte Seite der Taschenbeutel, _Kantenstich_ die gefalteten Kanten an die Taschenbeutel.
+- _Hefte_ die Nahtzugaben der eingekerbten Kanten der Taschenbesetzungen an die Taschenbeutel.
+- Nähe die Taschenbeutel rechts auf rechts an die Vorderseite und bügle sie dann auf die linke Seite.
+- Falte die Taschen entlang der Falzlinie in der Mitte und lege sie rechtsherum zusammen. Nähen Sie den Boden des Taschenbeutels zusammen.
+- Alternativ kannst du _French Seam_ die Bodennähte der Taschenbeutel zusammennähen, wenn du das möchtest.
+- _Hefte_ die Oberseite und die Seiten der Taschenbeutel an die vorderen Nahtzugaben, indem du die Kerben einkerbst.
 
 <Note>
 
-Going forward the pockets and fronts will just be referred to as the fronts.
+In Zukunft werden die Taschen und die Vorderseiten nur noch als Vorderseiten bezeichnet.
 
 </Note>
 
-### Step 2: The Fly
+### Schritt 2: Die Fliege
 
-- With right sides together, from the top _Baste_ along the fly line stopping at the notch on the crotch seam.
-- From where you left off with basting, stitch the crotch seam together making sure to secure your stitches where the basting ends.
-- Press open the fly and seam.
-- Lay the fronts down wrong side up so the right sides of the fly flaps are facing you.
-- Lay zipper face up on the front flaps, with the left side of the zipper touching the seam, with the bottom of the right zipper tape on the curved flap.
-- Sew the right zipper tape to the right flap close to the zipper teeth using a zipper foot. Don't sew it to the front itself!
-- Pull the zipper to the left so the right flap is pulled over.
-- Pin the left zipper tape to the left flap.
-- Sew the left zipper tape to left flap close to the zipper teeth using a zipper foot. Don't sew it to the front itself!
-- Fold the zipper guard in half wrong sides together.
-- Lay the zipper guard on the right flap, right sides touching.
-- Sew the zipper guard to the right flap, _Finish_ the right side to your liking.
-- _Finish_ the left side of the left flap to your liking.
-- Unpick the basted part of the front seam.
-- _Topstitch_ the right flap down, away from the now unpicked seam, as far down as you can.
-- Pin/_Baste_ the zipper protector over to the right side to keep it out of the way for the next step
-- On the outside side, sew the left flap down to the left, following the curved line.
-- On the outside side, _Bar-Tack_ where you like them for reinforcement.
+- Rechts auf rechts, von oben _Hefte_ entlang der Schlitzlinie und halte an der Kerbe der Schrittnaht an.
+- Dort, wo du mit dem Heften aufgehört hast, nähst du die Schrittnaht zusammen und stellst sicher, dass du deine Stiche dort sicherst, wo das Heften endet.
+- Bügle den Schlitz und die Naht auf.
+- Lege die Vorderseiten mit der falschen Seite nach oben so hin, dass die rechten Seiten der Verschlussklappen zu dir zeigen.
+- Lege den Reißverschluss mit der Vorderseite nach oben auf die vorderen Laschen, wobei die linke Seite des Reißverschlusses die Naht berührt und die Unterseite des rechten Reißverschlussbandes auf der gebogenen Lasche liegt.
+- Nähen Sie das rechte Reißverschlussband mit dem Reißverschlussfuß an die rechte Lasche nahe der Reißverschlusszähne. Näh es nicht an die Vorderseite selbst!
+- Ziehe den Reißverschluss nach links, sodass die rechte Lasche darüber gezogen wird.
+- Stecke das linke Reißverschlussband an die linke Klappe.
+- Nähen Sie das linke Reißverschlussband mit dem Reißverschlussfuß dicht an den Reißverschlusszähnen an die linke Klappe. Näh es nicht an die Vorderseite selbst!
+- Falte den Reißverschlussschutz in der Mitte linksherum.
+- Lege den Reißverschlussschutz auf die rechte Lasche, sodass sich die rechten Seiten berühren.
+- Nähen Sie den Reißverschlussschutz an die rechte Lasche, _Fertig_ die rechte Seite nach Ihrem Geschmack.
+- _Beende_ die linke Seite der linken Klappe nach deinem Geschmack.
+- Hefte den gehefteten Teil der vorderen Naht ab.
+- _Steppe_ die rechte Lasche so weit wie möglich nach unten, weg von der nun nicht mehr eingeschlagenen Naht.
+- Stecknadeln/_Heften_ den Reißverschlussschutz auf die rechte Seite, um ihn für den nächsten Schritt aus dem Weg zu halten.
+- Auf der Außenseite nähst du die linke Klappe nach links unten und folgst dabei der gebogenen Linie.
+- An der Außenseite _Bar-Tack_ dort, wo du sie zur Verstärkung haben möchtest.
 
 <Tip>
 
-When sewing the left flap down on the outside, you may find it best to make a template to help you.
+Wenn du die linke Klappe auf der Außenseite festnähst, solltest du dir eine Schablone anfertigen, die dir hilft.
 
 </Tip>
 
 <Note>
 
-If you wish to orientate the fly the other way change the left to right and right to left in the steps above.  
-If wanting something more historical than omit the zipper and make a buttonhole fly instead.
+Wenn du die Fliege in die andere Richtung ausrichten möchtest, ändere in den obigen Schritten links nach rechts und rechts nach links.  
+Wenn du etwas Historischeres willst, dann lass den Reißverschluss weg und mach stattdessen einen Knopflochschlitz.
 
 </Note>
 
-### Step 3: Attaching the front to the back
+### Schritt 3: Befestigen der Vorderseite an der Rückseite
 
-- With right sides together sew the back pieces together along the back seam.
-- With right sides together sew the front and back together at the side seams and inner leg seam. Making sure to leave a gap below the notches at the bottom of the side seams. The gap will be referred to as the list when going forward.
+- Nähe die Rückenteile rechts auf rechts entlang der Rückennaht zusammen.
+- Nähe die Vorder- und Rückseite rechts auf rechts an den Seitennähten und der inneren Beinnaht zusammen. Achte darauf, dass unter den Einkerbungen an der Unterseite der Seitennähte eine Lücke bleibt. Die Lücke wird in Zukunft als Liste bezeichnet.
 
-### Step 4: Leg bands
+### Schritt 4: Beinbänder
 
-Use the method of the cuff style you chose as they are different depending on which style you are using.
+Verwende die Methode des von dir gewählten Manschettenstils, da sie je nach Stil unterschiedlich sind.
 
-#### Traditional and Elegant
+#### Traditionell und elegant
 
-- _Finish_ the raw edges of the slits.
-- Press the seam allowances of the slits to the wrongs sides. Stitch in place.
-- Sew one of the leg band pieces to each leg right sides together, matching notches.
-- Press the bands and seam allowance down and away from leg. Trim the seam allowance to reduce bulk.
-- Press the top seam allowance to the wrong side of the remaining leg band pieces. Trim the top seam allowance.
-- With right sides together sew the remaining leg and pieces to the attached leg bands along the bottoms and sides.
-- Turn the leg bands out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
-- Sew the buttonhole. The buttons will be sewn later.
+- _Beende_ die rohen Kanten der Schlitze.
+- Bügle die Nahtzugaben der Schlitze auf die falschen Seiten. An Ort und Stelle nähen.
+- Nähen Sie eines der Beinbänder rechts auf rechts an jedes Bein, wobei die Kerben übereinstimmen.
+- Bügle die Bänder und die Nahtzugabe nach unten und vom Bein weg. Schneide die Nahtzugabe zurück, um das Volumen zu reduzieren.
+- Bügle die obere Nahtzugabe auf die linke Seite der verbleibenden Beinbandteile. Schneide die obere Nahtzugabe zurück.
+- Nähen Sie das restliche Bein und die Teile rechts auf rechts an die angebrachten Beinbänder entlang der Unterseite und der Seiten.
+- Drehe die Beinbänder nach außen. Presse.
+- _Steppstich_ oder _Steppstich_ die gefaltete Kante des Bunds nach vorne und achte darauf, dass die gefaltete Kante die Nähte bedeckt.
+- Nähen Sie das Knopfloch. Die Knöpfe werden später angenäht.
 
 <Note>
 
-If you are worried about a draft you can create a triangle piece of fabric that sits behind the slits out of your pocket fabric. Attaching it before Step 3 to one of the sides of the slits.
+Wenn du dir Sorgen über einen Luftzug machst, kannst du aus deinem Taschenstoff ein dreieckiges Stück Stoff zaubern, das hinter die Schlitze passt. Befestige ihn vor Schritt 3 an einer der Seiten des Schlitzes.
 
 </Note>
 
 #### Schlüsselstein
 
-- If using construct plackets for the leg slits.
-- Sew the plackets to the leg slits similar to how you would sew a sleeve cuff on a shirt.
-- Close the darts on the leg band pieces.
-- Sew one of the leg band pieces to each leg right sides together, matching notches.
-- Press the bands and seam allowance down and away from leg. Trim the seam allowance to reduce bulk.
-- Press the top seam allowance to the wrong side of the remaining leg band pieces. Trim the top seam allowance.
-- With right sides together sew the remaining leg and pieces to the attached leg bands along the bottoms and sides.
-- Turn the leg bands out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
-- Sew the buttonhole. The buttons will be sewn later.
+- Wenn du für die Beinschlitze Plaketten konstruierst.
+- Nähen Sie die Manschetten an die Beinschlitze, ähnlich wie Sie ein Ärmelbündchen an ein Hemd nähen würden.
+- Schließe die Abnäher an den Beinabschlüssen.
+- Nähen Sie eines der Beinbänder rechts auf rechts an jedes Bein, wobei die Kerben übereinstimmen.
+- Bügle die Bänder und die Nahtzugabe nach unten und vom Bein weg. Schneide die Nahtzugabe zurück, um das Volumen zu reduzieren.
+- Bügle die obere Nahtzugabe auf die linke Seite der verbleibenden Beinbandteile. Schneide die obere Nahtzugabe zurück.
+- Nähen Sie das restliche Bein und die Teile rechts auf rechts an die angebrachten Beinbänder entlang der Unterseite und der Seiten.
+- Drehe die Beinbänder nach außen. Presse.
+- _Steppstich_ oder _Steppstich_ die gefaltete Kante des Bunds nach vorne und achte darauf, dass die gefaltete Kante die Nähte bedeckt.
+- Nähen Sie das Knopfloch. Die Knöpfe werden später angenäht.
 
 <Note>
 
-If you are worried about a draft you will need to construct plackets for the leg slits.
+Wenn du dir Sorgen um einen Luftzug machst, musst du für die Beinschlitze Leisten konstruieren.
 
 </Note>
 
 <Note>
 
-**For both Keystone, Traditional and Elegant Styles**
+**Für Keystone, Traditional und Elegant**
 
-You can _Edgestitch_ the leg bands together like a modern waistband if you prefer.
+Du kannst die Beinbänder wie einen modernen Bund zusammennähen, wenn du möchtest.
 
 </Note>
 
-### Step 5: Waistband
+### Schritt 5: Bund
 
-- Face one of the waistband pieces using your preffered method.
-- Sew the faced waistband piece to the top of the legs right sides together.
-- Press the waistband and seam allowance up and away from leg. Trim the seam allowance to reduce bulk.
-- Press the bottom seam allowance to the wrong side of the remaining waistband piece. Trim the bottom seam allowance.
-- With right sides together sew the remaining waistband to the faced waistband along the top and sides.
-- Turn the waistband out. Press.
-- _Slipstitch_ or _Whipstitch_ the folded edge of the waistband to front, making sure the folded edge is covering the stitcing.
-- Sew the buttonhole. The buttons will be sewn later.
+- Bearbeite eines der Bundteile mit der von dir bevorzugten Methode.
+- Nähen Sie das konfektionierte Bundstück rechts auf rechts an die Oberseite der Beine.
+- Bügle den Bund und die Nahtzugabe nach oben und vom Bein weg. Schneide die Nahtzugabe zurück, um das Volumen zu reduzieren.
+- Bügle die untere Nahtzugabe auf die linke Seite des verbleibenden Bundstücks. Schneide die untere Nahtzugabe zurück.
+- Nähe den restlichen Bund rechts auf rechts an den verdeckten Bund entlang der Oberseite und der Seiten.
+- Drehe den Bund nach außen. Presse.
+- _Steppstich_ oder _Steppstich_ die gefaltete Kante des Bunds nach vorne und achte darauf, dass die gefaltete Kante die Nähte bedeckt.
+- Nähen Sie das Knopfloch. Die Knöpfe werden später angenäht.
 
 <Note>
 
-You can _Edgestitch_ the waistband together like a modern waistband if you prefer.
+Du kannst den Bund wie einen modernen Bund zusammennähen, wenn du möchtest.
 
 </Note>
 
-### Step 6: Buttons
+### Schritt 6: Buttons
 
-- Sew the waistband and leg band buttons on.
+- Nähen Sie den Bund und die Knöpfe am Beinabschluss an.
 
-### Step 7: Enjoy!
+### Schritt 7: Viel Spaß mit deinem neuen Shirt!
 
-Sie sind fertig! Now go have a ride in your brilliant new cycling breeches!
+Sie sind fertig! Und jetzt fahr mit deiner tollen neuen Radlerhose los!

@@ -1,18 +1,18 @@
 ---
-title: "Cornelius cycling breeches: What You Need"
+title: "Cornelius Radlerhosen: Was du brauchst"
 ---
 
-To make Cornelius, you will need the following:
+Um Cornelius herzustellen, brauchst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- About 2 metres (2.2 yards) of a suitable fabric ([see Cornelius Fabric options](/docs/patterns/cornelius/fabric/))
-- About 0.5 metres (0.6 yards) of lining fabric ([see Cornelius Fabric options](/docs/patterns/cornelius/fabric/))
-- Interfacing for the waistband ([see Cornelius Fabric options](/docs/patterns/cornelius/fabric/))
-- A zip or 3 buttons for the fly
-- 3 or 7 Buttons for waistband and leg bands
+- Etwa 2 Meter (2,2 Yards) eines geeigneten Stoffes ([siehe Cornelius Stoffoptionen](/docs/patterns/cornelius/fabric/))
+- Etwa 0,5 Meter (0,6 Yards) Futterstoff ([siehe Cornelius Stoffoptionen](/docs/patterns/cornelius/fabric/))
+- Einlage für den Bund ([siehe Cornelius-Stoffoptionen](/docs/patterns/cornelius/fabric/))
+- Ein Reißverschluss oder 3 Knöpfe für den Hosenschlitz
+- 3 oder 7 Knöpfe für Bund und Beinabschlüsse
 
 <Note>
 
-The number of buttons you need are dependent on the cuff style you are using. **Keystone** requires 7 in total whereas **Traditional** and **Elegant** require 3 in total. You may also want to use smaller buttons for the leg bands compared to the waistband but this is up to you.
+Die Anzahl der Knöpfe, die du brauchst, hängt von der Art der Manschette ab, die du verwendest. **Keystone** benötigt insgesamt 7, während **Traditional** und **Elegant** insgesamt 3 benötigen. Vielleicht möchtest du auch kleinere Knöpfe für die Beinabschlüsse verwenden als für den Bund, aber das bleibt dir überlassen.
 
 </Note>

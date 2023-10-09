@@ -1,5 +1,5 @@
 ---
-title: "Knot in Front"
+title: "Вузол спереду"
 ---
 
-Normally the Waralee is closed with the tie in the front. This allows you to change that to a bow tie in the back.
+Зазвичай Варалі закривається зав'язкою спереду. Це дозволяє змінити на краватку-метелика ззаду.

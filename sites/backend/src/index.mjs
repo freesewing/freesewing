@@ -1,8 +1,6 @@
 // Dependencies
 import express from 'express'
 import chalk from 'chalk'
-import path from 'path'
-import fs from 'fs'
 import { PrismaClient } from '@prisma/client'
 import passport from 'passport'
 // Routes
@@ -22,6 +20,8 @@ import { mailer } from './utils/email.mjs'
 // Swagger
 import swaggerUi from 'swagger-ui-express'
 import { openapi } from '../openapi/index.mjs'
+// Catch-all page
+import { html as catchAll } from './html/catch-all.mjs'
 
 // Bootstrap
 const config = verifyConfig()
@@ -49,9 +49,7 @@ loadPassportMiddleware(passport, tools)
 // Load routes
 for (const type in routes) routes[type](tools)
 
-// Catch-all route (Load index.html once instead of at every request)
-const index = fs.readFileSync(path.resolve('.', 'src', 'landing', 'index.html'))
-app.get('/', async (req, res) => res.set('Content-Type', 'text/html').status(200).send(index))
+app.get('/', async (req, res) => res.set('Content-Type', 'text/html').status(200).send(catchAll))
 
 // Start listening for requests
 app.listen(config.port, (err) => {

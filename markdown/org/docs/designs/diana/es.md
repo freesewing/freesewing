@@ -1,5 +1,8 @@
 ---
-title: "Diana draped top"
+title: "Diana, top de escote drapeado"
 ---
 
-<PatternDocs pattern='diana' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='diana' docs />
+

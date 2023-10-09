@@ -1,5 +1,8 @@
 ---
-title: Octoplushy, the plushy octopus
+title: Octoplushy, de pluchen octopus
 ---
 
-<PatternDocs pattern='octoplushy' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='octoplushy' docs />
+

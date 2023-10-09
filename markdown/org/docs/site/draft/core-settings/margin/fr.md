@@ -2,8 +2,8 @@
 title: Marges
 ---
 
-The margin setting controls how much space will be added around each pattern part when calculating the pattern layout.
+Le réglage de la marge permet de déterminer l'espace qui sera ajouté autour de chaque motif lors du calcul de la disposition du motif.
 
-Each pattern part is laid out as a rectangle on the page. The spacing around (and between) these rectangles is controlled by this setting.
+Chaque partie du modèle est présentée sous la forme d'un rectangle sur la page. L'espacement autour de (et entre) ces rectangles est contrôlé par ce paramètre.
 
 

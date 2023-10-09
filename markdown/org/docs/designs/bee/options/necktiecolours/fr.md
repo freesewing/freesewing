@@ -1,5 +1,5 @@
 ---
-titre: "Couleurs de liens de cou "
+title: "Couleurs de bande de cou"
 ---
 
 ***

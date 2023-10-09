@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useRef } from 'react'
 import { WorkbenchMenu } from 'shared/components/workbench/menus/shared/index.mjs'
 import {
@@ -21,7 +22,7 @@ export const SampleItem = ({ name, passProps, t, updateFunc }) => {
 
   return (
     <div
-      className={`collapse my-2 shadow border-solid border-l-[6px] min-h-10 rounded-none
+      className={`collapse my-2 shadow border-solid border-l-[6px] min-h-10 rounded-none w-full
          ${checked ? openClasses : closedClasses}`}
     >
       <input
@@ -42,6 +43,7 @@ export const SampleItem = ({ name, passProps, t, updateFunc }) => {
           type="radio"
           checked={checked}
           className="radio radio-primary mr-2 radio-sm"
+          readOnly
         />
         <span className="ml-2">{t([name + '.t', name])}</span>
       </div>

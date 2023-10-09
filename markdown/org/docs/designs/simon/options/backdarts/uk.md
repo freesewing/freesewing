@@ -1,11 +1,11 @@
 ---
-title: "Back darts"
+title: "Виточки на спині"
 ---
 
 ***
 
-By default, the pattern will add back darts when they are needed. But you can also choose to always, or never, have back darts.
+За замовчуванням деталь додає виточки, коли вони потрібні. Але ви також можете вибрати завжди або ніколи не мати дротиків на спині.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_backdarts_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_backdarts_sample.svg "Вплив цієї опції на шаблон")

@@ -1,10 +1,10 @@
 ---
-title: "Neck tie width"
+title: "Nekdas breedte"
 ---
 
 ***
 
-Controls the width of the ties around your neck
+Regelt de breedte van de banden om je nek
 
 ## Effect van deze optie op het patroon
 

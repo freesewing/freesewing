@@ -1,5 +1,5 @@
 ---
-title: "Wahid waistcoat: Design Options"
+title: "Жилет вахід: Варіанти дизайну"
 ---
 
 <PatternOptions pattern='wahid' />

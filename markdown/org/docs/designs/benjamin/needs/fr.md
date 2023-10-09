@@ -1,5 +1,5 @@
 ---
-title: "Nœud papillon Benjamin : ce dont vous avez besoin"
+title: "Nœud papillon Benjamin : Ce dont tu as besoin"
 ---
 
 Pour réaliser Benjamin, vous aurez besoin de :

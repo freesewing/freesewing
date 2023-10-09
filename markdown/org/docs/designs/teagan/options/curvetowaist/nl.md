@@ -1,15 +1,15 @@
 ---
-title: "Curve to waist"
+title: "Kromming naar taille"
 ---
 
-Choose this option to draft Teagan to curve towards your waist before curving towards the hips.
+Kies deze optie om Teagan naar je taille te laten buigen voordat hij naar de heupen buigt.
 
-If waist measurement (plus ease) is smaller than hips (plus ease), this creates an hourglass shape such as found in 'fitted' or 'ladies' T-shirts (as opposed to 'regular' or 'unisex').
+Als de tailleomvang (plus de lengtemaat) kleiner is dan de heupen (plus de lengtemaat), creëer je een zandlopervorm, zoals je ziet bij 'getailleerde' of 'dames' T-shirts (in tegenstelling tot 'normale' of 'unisex').
 
 <Note>
-This option can also be used when the waist measurement exceeds the hip measurement, but this results in a non-standard T-shirt shape which may be impossible to put on.
+Deze optie kan ook worden gebruikt als de tailleomvang groter is dan de heupomvang, maar dit resulteert in een niet-standaard T-shirtvorm die misschien niet kan worden aangetrokken.
 </Note>
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_curvetowaist_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](teagan_curvetowaist_sample.svg "Effect van deze optie op het patroon")

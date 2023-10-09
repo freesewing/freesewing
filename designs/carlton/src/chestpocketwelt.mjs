@@ -1,7 +1,6 @@
 import { front } from './front.mjs'
 
 function draftCarltonChestPocketWelt({
-  paperless,
   sa,
   store,
   complete,
@@ -10,8 +9,35 @@ function draftCarltonChestPocketWelt({
   Point,
   paths,
   Path,
+  expand,
+  units,
   part,
 }) {
+  if (expand) store.flag.preset('expandIsOn')
+  else {
+    // Expand is on, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
+    store.flag.note({
+      msg: `carlton:cutChestPocketWelt`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
+      replace: {
+        w: units(store.get('chestPocketWidth') * 2 + extraSa),
+        l: units(store.get('chestPocketHeight') + extraSa),
+      },
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
+
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(store.get('chestPocketWidth') * 2, store.get('chestPocketHeight'))
   points.bottomLeft = new Point(points.topLeft.x, points.bottomRight.y)
@@ -28,34 +54,39 @@ function draftCarltonChestPocketWelt({
     .close()
     .attr('class', 'fabric')
 
-  paths.fold = new Path().move(points.topMid).line(points.bottomMid).attr('class', 'dashed')
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+  if (complete)
+    paths.fold = new Path().move(points.topMid).line(points.bottomMid).addClass('fabric help')
 
-  store.cutlist.addCut()
-  store.cutlist.addCut({ material: 'lmhCanvas' })
+  /*
+   * Annotations
+   */
 
-  if (complete) {
-    points.title = new Point(points.bottomRight.x / 4, points.bottomRight.y / 2)
-    macro('title', {
-      at: points.title,
-      nr: 12,
-      title: 'chestPocketWelt',
-    })
+  // Cut list
+  store.cutlist.addCut({ cut: 2, from: 'fabric' }, { cut: 2, from: 'canvas' })
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+  // Title
+  points.title = new Point(points.bottomRight.x / 4, points.bottomRight.y / 2)
+  macro('title', {
+    at: points.title,
+    nr: 12,
+    title: 'chestPocketWelt',
+    scale: 0.8,
+  })
 
-    if (paperless) {
-      macro('hd', {
-        from: points.bottomLeft,
-        to: points.bottomRight,
-        y: points.bottomLeft.y + sa + 15,
-      })
-      macro('vd', {
-        from: points.bottomRight,
-        to: points.topRight,
-        x: points.topRight.x + sa + 15,
-      })
-    }
-  }
+  // Dimensions
+  macro('hd', {
+    id: 'wFull',
+    from: points.bottomLeft,
+    to: points.bottomRight,
+    y: points.bottomLeft.y + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottomRight,
+    to: points.topRight,
+    x: points.topRight.x + sa + 15,
+  })
 
   return part
 }

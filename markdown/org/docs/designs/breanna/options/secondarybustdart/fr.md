@@ -1,9 +1,9 @@
 ---
-title: "Secondary bust dart"
+title: "Pince poitrine secondaire"
 ---
 
-Optionally include a secondary bust dart to distribute the shaping of the chest.
+Inclut éventuellement une poitrine secondaire pour répartir la mise en forme de la poitrine.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_secondarybustdart_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_secondarybustdart_sample.svg "Effet de cette option sur le motif")

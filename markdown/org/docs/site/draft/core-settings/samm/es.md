@@ -1,18 +1,18 @@
 ---
-title: Seam Allowance Size
+title: Tamaño del margen de costura
 ---
 
-This [Core Setting][core-settings] controls the base size of your seam allowance.  In other words, the default seam allowance will be this size. Other allowance that is intended to be wider, like hem allowance, will be a multiple of this size.
+Este [Core Setting][core-settings] controla el tamaño base de tu margen de costura .  En otras palabras, el margen de costura por defecto será de este tamaño. Otro margen de destinado a ser más ancho, como el margen del dobladillo, será un múltiplo de este tamaño.
 
 <Note>
 
-FreeSewing's core library only takes a single setting to handle seam allowance: `sa`.
-However, for convenience, we've split this up into two different settings on the website:
+La biblioteca central de FreeSewing sólo tiene un ajuste para gestionar el margen de costura: `sa`.
+Sin embargo, por comodidad, lo hemos dividido en dos ajustes diferentes en el sitio web:
 
-- **[Include Seam Allowance](/docs/site/draft/core-settings/sabool)**: Controls whether or not to include seam allowance
-- **[Seam Allowance Size](/docs/site/draft/core-settings/samm)**: Controls how big to make the seam allowance, if it is included
+- **[Incluir margen de costura](/docs/site/draft/core-settings/sabool)**: Controla si se incluye o no el margen de costura
+- **[Tamaño del margen de costura](/docs/site/draft/core-settings/samm)**: Controla el tamaño del margen de costura, si se incluye
 
-The latter will only be shown if you've enabled the former.
+Este último sólo se mostrará si has activado el primero.
 
 </Note>
 [core-settings]: /docs/site/draft/core-settings/

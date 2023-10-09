@@ -1,14 +1,14 @@
 ---
-title: "Lapel reduction"
+title: "Reversverkleinerung"
 ---
 
-How much the tip of the lapels turns inwards.
+Wie sehr sich die Spitze des Revers nach innen dreht.
 
-It is common to have the edge of the lapels not be entirely straight, but rather turn inwards a bit towards the top of the lapels. This option controls by how much it does that.
+Es ist üblich, dass die Kante des Revers nicht ganz gerade ist, sondern ein wenig nach innen zum oberen Ende des Revers hin verläuft. Diese Option kontrolliert, wie viel sie das tut.
 
-- Increase this option to shift the lapel tip inward
-- Decrease this option to shift the lapel tip outward
+- Erhöhe diese Option, um die Reversspitze nach innen zu verschieben
+- Verringere diese Option, um die Reversspitze nach außen zu verschieben
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_lapelreduction_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_lapelreduction_sample.svg "Effekt dieser Option auf das Schnittmuster")

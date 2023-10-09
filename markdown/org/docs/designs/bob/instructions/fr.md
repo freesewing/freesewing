@@ -1,48 +1,48 @@
 ---
-title: "Bob the Bib: Sewing Instructions"
+title: "Bob le bavoir : Instructions de couture"
 ---
 
 <Note>
 
-#### Before we start: One layer or two?
+#### Avant de commencer : Une couche ou deux ?
 
-First thing you need to figure out is whether you're going to make a 1-layer (simple) bib,
-or do you want to make one out of two layers.
+La première chose à faire est de savoir si tu vas faire un bavoir à une couche (simple),
+ou si tu veux faire un bavoir à deux couches.
 
-A two-layer bib gives you more options, as you can use an absorbent backing layer like
-terrycloth, yet still have the entire cotton selection of your local fabric store available
-as your choice for the front layer, aka the visible one.
+Un bavoir à deux couches te donne plus d'options, car tu peux utiliser une couche arrière absorbante comme le tissu éponge
+, tout en ayant à ta disposition toute la sélection de coton de ton magasin de tissu local
+comme choix pour la couche avant, c'est-à-dire la couche visible.
 
 </Note>
 
-## Step 1: Optional: Join layers
+## Étape 1 : Facultatif : Joindre les couches
 
 If you decide to go for two layers, simply join them together at the edges before applying the bias tape.
 
-You probably want to pin or bast this prior to sewing. The two different types of fabric will behave differently, so secure them in place prior to sewing the together.
+Tu voudras probablement l'épingler ou le bâtonner avant de le coudre. The two different types of fabric will behave differently, so secure them in place prior to sewing the together.
 
 Make sure to sew close to the edge so that the stitches will be under the bias tape finish later.
 
-## Step 2: Apply bias tape
+## Étape 2 : Appliquer le ruban de biais
 
-Wer're going to apply bias tape as a finish around the entire edge of the bib.
+Nous allons appliquer du ruban de biais en guise de finition sur tout le bord du bavoir.
 
 You probably want to start at the bottom strap, as this way the joint of the bias seam will be covered when the bib is worn.
 
-Just work your way around, and take your time.
+Contente-toi de te frayer un chemin et de prendre ton temps.
 
 <Fixme>
 
-Provide generic instructions for sewing bias tape
+Donne des instructions génériques pour coudre du ruban de biais.
 
 </Fixme>
 
-## Step 3: Install snaps or button
+## Étape 3 : Installer les boutons ou les boutons-pression
 
-Next, install the snaps on the straps, as indicated on the pattern.
+Ensuite, installe les boutons-pression sur les bretelles, comme indiqué sur le patron.
 
-If you don't have or want snaps, you can also use a button + buttonhole.
+Si tu n'as pas ou ne veux pas de boutons-pression, tu peux aussi utiliser un bouton + une boutonnière.
 
 ## Étape 4: Vous avez terminé !
 
-That was easy 😃
+C'était facile 😃

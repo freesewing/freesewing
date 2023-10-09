@@ -1,5 +1,5 @@
 ---
-titre : "Bloc de corps Bent : Options de conception"
+title: "Bloc à corps cintré : Options de conception"
 ---
 
 <PatternOptions pattern='bent' />

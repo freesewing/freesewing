@@ -1,8 +1,8 @@
 ---
-title: "Cuff length"
+title: "Longueur de bracelet"
 ---
 
-![Longueur de poignet](cufflength.svg)
+![Longueur de bracelet](cufflength.svg)
 
 La longueur de vos poignets.
 
@@ -14,4 +14,4 @@ Cela n'influencera pas la durée totale de votre manche.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_cufflength_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_cufflength_sample.svg "Effet de cette option sur le motif")

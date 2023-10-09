@@ -1,13 +1,13 @@
 ---
-title: "Front shoulder width"
+title: "Ширина плечей спереду"
 ---
 
 ***
 
-![The effect of the front shoulder width option on the pattern](sample.png)
+![Вплив параметра ширини плеча спереду на лекало](sample.png)
 
-The **front shoulder width** option controls the width of the shoulders at the front, relative to the back.
+Параметр **ширина плечей спереду** регулює ширину плечей спереду відносно спинки.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_frontshoulderwidth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bella_frontshoulderwidth_sample.svg "Вплив цієї опції на шаблон")

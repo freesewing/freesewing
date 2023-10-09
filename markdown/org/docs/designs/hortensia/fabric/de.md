@@ -1,19 +1,19 @@
 ---
-title: "Hortensia handbag: Fabric Options"
+title: "Hortensia Handtasche: Stoff Optionen"
 ---
 
-### Main Fabric
+### Hauptstoff
 
-The key fabric choices for Hortensia are non-stretch, durable and strong enough to hold items.
+Die wichtigsten Stoffe für Hortensia sind nicht dehnbar, langlebig und stark genug, um Gegenstände zu halten.
 
-Your main fabric choice ultimately comes down to your personal style and what you wish to use your handbag for. Due to Hortensia having a size option it can also be enlarged and used for things such as a gym bag which does not need to be as fancy as an upmarket handbag. So you may just simply want to go with **Cottons**, **Linens** or have a little fun with **Printed Cottons**. If you want something more fancy you can try going for **Brocades** and other luxe fabrics. If you want something that will be very durable you can try **Upholstery fabrics**. You can also try **Leather** but this will be harder to sew especially if it is thick so only use it if you know what you are doing. Remember if you wish to use it all the time, favour practicality over design, as the goal should be to make it last rather than make it fancy. If you do not care about the look at all then this may be an oppurtunity to use up fabric from your stash that you otherwise would not such as that ugly fabric you can never find a use for.
+Bei der Wahl des Stoffes kommt es letztlich auf deinen persönlichen Stil an und darauf, wofür du deine Handtasche verwenden möchtest. Da Hortensia eine Größenoption hat, kann sie auch vergrößert werden und zum Beispiel als Sporttasche verwendet werden, die nicht so schick sein muss wie eine edle Handtasche. Vielleicht möchtest du einfach nur **Baumwollstoffe**, **Leinenstoffe** oder ein bisschen Spaß mit **Bedruckte Baumwollstoffe**haben. Wenn du etwas Ausgefalleneres willst, kannst du es mit **Brokaten** und anderen luxuriösen Stoffen versuchen. Wenn du etwas willst, das sehr langlebig ist, kannst du **Polsterstoffe**ausprobieren. Du kannst auch **Leder** ausprobieren, aber das ist schwieriger zu nähen, vor allem wenn es dick ist, also verwende es nur, wenn du weißt, was du tust. Denke daran, dass du, wenn du es ständig benutzen willst, der Praktikabilität den Vorzug vor dem Design geben solltest, denn das Ziel sollte sein, dass es lange hält und nicht, dass es schick ist. Wenn dir der Look völlig egal ist, dann ist das vielleicht eine gute Gelegenheit, Stoffe aus deinem Vorrat zu verwenden, die du sonst nicht verwenden würdest, wie zum Beispiel den hässlichen Stoff, für den du nie eine Verwendung findest.
 
 <Note>
 
-If you find that the fabric you want to use is a bit too thin or flimsy you can interface the pieces to give then strength.
+Wenn du feststellst, dass der Stoff, den du verwenden möchtest, etwas zu dünn oder zu dünn ist, kannst du die Stücke zusammenfügen, um sie zu verstärken.
 
 </Note>
 
-### Lining Fabric
+### Bindegewebe
 
-On the flipside the lining does not need to be as strong and simply needs to cover the raw seams and protect the outer fabric. If you want something fancy you can go for **Silks** and **Satins** but **Cotton** linings will do just as well. Bear in mind what you intend to store in the bag. If you intend to carry a lot you should go for something less prone to tearing, if you are only using it for knick-knacks and small personal items you can get away with fancier fabrics such as silks. The lining is also an opportunity to use up any fabrics in your stash that you don't like or don't have a use for as it will be hidden in the final product and only you will know/see.
+Auf der anderen Seite muss das Futter nicht so stark sein und lediglich die rohen Nähte abdecken und den Außenstoff schützen. Wenn du etwas Ausgefallenes willst, kannst du dich für **Seide** und **Satin** entscheiden, aber **Baumwolle** ist genauso gut geeignet. Denke daran, was du in der Tasche aufbewahren willst. Wenn du vorhast, viel zu transportieren, solltest du dich für etwas entscheiden, das nicht so leicht reißt. Wenn du sie nur für Nippes und kleine persönliche Dinge verwendest, kannst du dich mit edleren Stoffen wie Seide zufrieden geben. Das Futter ist auch eine gute Gelegenheit, Stoffe aus deinem Vorrat zu verwenden, die du nicht magst oder für die du keine Verwendung hast, da sie im Endprodukt versteckt werden und nur du sie sehen kannst.

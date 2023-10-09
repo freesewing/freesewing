@@ -1,5 +1,5 @@
 ---
-title: "Brian body block: Sewing Instructions"
+title: "Brian lijfblok: Naai-instructies"
 ---
 
 <Note>
@@ -9,11 +9,11 @@ title: "Brian body block: Sewing Instructions"
 Een blok is een basisvorm waarop andere patronen zijn gebaseerd.
 Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Brian block.
+Blokken worden meestal niet als zodanig gemaakt, maar dienen als basis voor andere patronen, dus de onderstaande instructies gaan niet dieper in op sluitingen of afwerkingen en zijn voor het standaard Brian blok.
 
 </Note>
 
-### Step 1: Mock-up Construction
+### Stap 1: Model constructie
 
 - Sew the front to the backs at the shoulders good sides together.
 - Matching notches, sew the sleeves to the shoulder good sides together.
@@ -21,7 +21,7 @@ Blocks are typically not made as-is but rather serve as a basis for other patter
 
 <Note>
 
-You may need to leave the bottom of sleeve side seams open to put the garment on.
+Het kan zijn dat je de onderkant van de zijnaden van de mouwen open moet laten om het kledingstuk aan te trekken.
 
 </Note>
 
@@ -31,42 +31,42 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 </Tip>
 
-### Step 2: Try it on
+### Stap 2: Probeer het uit
 
-- Try it on and check the fit by pinning the back closed whilst wearing it.
-- Make any alterations and try it on again.
-- Repeat until you are happy.
+- Pas het en controleer de pasvorm door de achterkant dicht te spelden terwijl je het draagt.
+- Breng eventuele wijzigingen aan en pas het opnieuw.
+- Herhaal dit tot je tevreden bent.
 
 <Tip>
 
-If you do not have someone to help with pinning, you may find it easier to cut the front part in two with seam allowance rather than on a fold and sew the back seam up so that you can pin in the front when trying on.
+Als je niemand hebt die je kan helpen met spelden, is het misschien makkelijker om het voorpand in tweeën te knippen met naadtoeslag in plaats van op een vouw en de achternaad omhoog te naaien zodat je de voorkant kunt vastspelden bij het passen.
 
-Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. etc. etc. Things like these are signs of where the pattern may need adjusting.
+Let goed op wat je blijft doen terwijl je de mock-up draagt, trek je hem naar beneden? Voortdurend de schouder aanpassen? enz. etc. etc. Things like these are signs of where the pattern may need adjusting.
 
-Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
+Soms moet je de mock-up langere tijd dragen om een beter gevoel te krijgen van de pasvorm, dus wees niet bang om er een paar uur in rond te lopen.
 
 </Tip>
 
 <Note>
 
-Remember to treat Brian as a basis rather than a final product, so adjust what you need to get the desired look.  
-For instance:
+Vergeet niet om Brian als basis te behandelen en niet als eindproduct, dus pas aan wat je nodig hebt om de gewenste look te krijgen.  
+Bijvoorbeeld:
 
-- Change the neck line
-- Add/change the closure allowances
-- Add a collar
+- Verander de halslijn
+- Voeg de sluitingstoeslagen toe
+- Voeg een kraag toe
 
-It is all up to you! Experiment and go forth!
+Het is allemaal aan jou! Experimenteer en ga erop uit!
 
 </Note>
 
-### Step 3: Make a paper pattern
+### Stap 3: Maak een papieren patroon
 
-- Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
-- Now you have a pattern you can use to produce a garment.
+- Als je tevreden bent met alle wijzigingen, pak je je mockup uit en maak je er een papieren patroon van.
+- Nu heb je een patroon waarmee je een kledingstuk kunt maken.
 
 <Note>
 
-It is best practice to make a paper pattern from the mock-up if you have made any alterations, as this will allow you to clean up any lines but also means you have a pattern that you can keep producing garments from.
+Het is het beste om een papieren patroon te maken van de mock-up als je wijzigingen hebt aangebracht, omdat je dan lijnen kunt opschonen en een patroon hebt waarmee je kledingstukken kunt blijven maken.
 
 </Note>

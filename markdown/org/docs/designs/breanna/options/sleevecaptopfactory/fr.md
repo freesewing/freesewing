@@ -1,10 +1,10 @@
 ---
-title: "Sleevecap top Y"
+title: "Tête de manche top Y"
 ---
 
-![The vertical location of the sleevecap top](./sleevecaptopfactory.svg)
+![La position verticale du haut du chapeau de manche](./sleevecaptopfactory.svg)
 
-This option controls the vertical placement of the sleevecap top.
+Cette option contrôle la position verticale du dessus du tête de manche.
 
 <Tip>
 
@@ -14,4 +14,4 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_sleevecaptopfactory_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_sleevecaptopfactory_sample.svg "Effet de cette option sur le motif")

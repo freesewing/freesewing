@@ -1,26 +1,26 @@
 ---
-title: "Octoplushy, the plushy octopus: What You Need"
+title: "Octoplushy, el pulpo de peluche: Lo que necesitas"
 ---
 
-To make Octoplushy, you will need the following:
+Para hacer Octoplushy, necesitarás lo siguiente:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 1 meter (1.1 yards) of a suitable fabric (Upper body) ([see Octoplushy Fabric options](/docs/patterns/octoplushy/fabric/))
-- About 0.75 meters (0.85 yards) of a suitable fabric (Belly) ([see Octoplushy Fabric options](/docs/patterns/octoplushy/fabric/))
-- Either 2 buttons or a small piece of suitable unraveling, fabric for the eyes of the Octoplushy version
-- Small piece of black fabric for the pupils of the Squid and Octopus versions
-- Small piece of white fabric for the eyes of the Squid and Octopus versions
-- (Optional) Topstitch or Embroidery thread for the mouth of the Octoplushy version
-- Stuffing
+- [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
+- Aproximadamente 1 metro (1,1 yardas) de una tela adecuada (Parte superior del cuerpo) ([ver opciones de tela Octoplushy](/docs/patterns/octoplushy/fabric/))
+- Unos 0,75 metros (0,85 yardas) de una tela adecuada (Vientre) ([ver opciones de tela Octoplushy](/docs/patterns/octoplushy/fabric/))
+- 2 botones o un trozo pequeño de tela adecuada para desenredar, para los ojos de la versión Octoplushy
+- Pequeño trozo de tela negra para las pupilas de las versiones Calamar y Pulpo
+- Pequeño trozo de tela blanca para los ojos de las versiones Calamar y Pulpo
+- (Opcional) Puntada superior o hilo de bordar para la boca de la versión Octoplushy
+- Relleno
 
 <Note>
 
-This list is based on a default Octoplushy and you may need less or more fabric dependant on the [size you are making Octoplushy](/docs/patterns/octoplushy/options/size/). 
+Esta lista se basa en un Octoplushy por defecto y puede que necesites menos o más tela en función del [tamaño al que hagas el Octoplushy](/docs/patterns/octoplushy/options/size/). 
 
-The amount of fabric required is also dependant on the [type of Octoplushy you are making](/docs/patterns/octoplushy/options/type/).
-- The Octopus version requires about 50% more fabric than the Octoplushy version.
-- The Squid version requires about 75% more fabric than the Octoplushy version.
+La cantidad de tela necesaria también depende del [tipo de Octoplushy que estés haciendo](/docs/patrones/octoplushy/opciones/tipo/).
+- La versión Octopus requiere aproximadamente un 50% más de tejido que la versión Octoplushy.
+- La versión Calamar requiere aproximadamente un 75% más de tejido que la versión Octoplushy.
 
-The color of the pupils and eyes for the Squid and Octopus versions are up to you, but for clarification and simplicity the pupils will be referred to as black and the eyes will be referred to as white in the documentation.
+El color de las pupilas y los ojos de las versiones Calamar y Pulpo depende de ti, pero para mayor claridad y simplicidad, en la documentación se hará referencia a las pupilas como negras y a los ojos como blancos.
 
 </Note>

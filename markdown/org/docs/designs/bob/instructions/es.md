@@ -1,48 +1,48 @@
 ---
-title: "Bob the Bib: Sewing Instructions"
+title: "Bob el Babero Instrucciones de costura"
 ---
 
 <Note>
 
-#### Before we start: One layer or two?
+#### Antes de empezar: ¿Una capa o dos?
 
-First thing you need to figure out is whether you're going to make a 1-layer (simple) bib,
-or do you want to make one out of two layers.
+Lo primero que tienes que averiguar es si vas a hacer un peto de 1 capa (simple),
+o quieres hacer uno de dos capas.
 
-A two-layer bib gives you more options, as you can use an absorbent backing layer like
-terrycloth, yet still have the entire cotton selection of your local fabric store available
-as your choice for the front layer, aka the visible one.
+Un babero de dos capas te ofrece más opciones, ya que puedes utilizar una capa posterior absorbente, como el tejido de rizo
+, y seguir disponiendo de toda la selección de algodón de tu tienda de telas local
+como tu elección para la capa delantera, es decir, la visible.
 
 </Note>
 
-## Step 1: Optional: Join layers
+## Paso 1: Opcional: Unir capas
 
 If you decide to go for two layers, simply join them together at the edges before applying the bias tape.
 
-You probably want to pin or bast this prior to sewing. The two different types of fabric will behave differently, so secure them in place prior to sewing the together.
+Probablemente quieras prenderlo con alfileres o hilvanarlo antes de coserlo. The two different types of fabric will behave differently, so secure them in place prior to sewing the together.
 
 Make sure to sew close to the edge so that the stitches will be under the bias tape finish later.
 
-## Step 2: Apply bias tape
+## Paso 2: Colocar la cinta al bies
 
-Wer're going to apply bias tape as a finish around the entire edge of the bib.
+Vamos a aplicar cinta al bies como acabado alrededor de todo el borde del babero.
 
 You probably want to start at the bottom strap, as this way the joint of the bias seam will be covered when the bib is worn.
 
-Just work your way around, and take your time.
+Ábrete camino y tómate tu tiempo.
 
 <Fixme>
 
-Provide generic instructions for sewing bias tape
+Proporcionar instrucciones genéricas para coser cinta al bies
 
 </Fixme>
 
-## Step 3: Install snaps or button
+## Paso 3: Instalar broches o botón
 
-Next, install the snaps on the straps, as indicated on the pattern.
+A continuación, instala los broches en los tirantes, como se indica en el patrón.
 
-If you don't have or want snaps, you can also use a button + buttonhole.
+Si no tienes o no quieres broches, también puedes utilizar un botón + ojal.
 
-## Step 4: You're done!
+## Paso 4: ¡Ya has terminado!
 
-That was easy 😃
+Ha sido fácil 😃

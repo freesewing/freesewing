@@ -1,5 +1,5 @@
 ---
-title:"Échancrure dos"
+title: "Échancrure emmanchure arrière"
 ---
 
 ![Échancrure emmanchure arrière](backinset.svg)
@@ -15,6 +15,6 @@ Cela influence le style du gilet.
 
 </Note>
 
-## Effet de cette option sur le patron
+## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_backinset_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](wahid_backinset_sample.svg "Effet de cette option sur le motif")

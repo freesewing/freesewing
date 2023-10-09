@@ -2,7 +2,7 @@
 title: Skalierung
 ---
 
-The scale settings allow you to scale those parts of a pattern that do not scale with measurements. Things like logos, line widths, font sizes, and so on.
+Mit den Skalierungseinstellungen kannst du die Teile eines Musters skalieren, die nicht mit den Maßen übereinstimmen. Dinge wie Logos, Linienstärken, Schriftgrößen und so weiter.
 
-This setting was added at the requests of people who like to use our patterns to make doll clothes. When generating such a small pattern, the arrowheads, titles, and so on tend to obscure much of the pattern. This setting allows you to scale them down or -- if you so wich -- scale them up.
+Diese Einstellung wurde auf Wunsch von Leuten hinzugefügt, die unsere Schnittmuster gerne für Puppenkleidung verwenden. Wenn du ein so kleines Muster erstellst, verdecken die Pfeilspitzen, Titel usw. einen Großteil des Musters. Mit dieser Einstellung kannst du sie verkleinern oder - wenn du willst - vergrößern.
 

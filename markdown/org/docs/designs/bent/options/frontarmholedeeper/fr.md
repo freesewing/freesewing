@@ -1,5 +1,5 @@
 ---
-titre : "Découpe supplémentaire à l'avant de l'emmanchure"
+title: "Découpe supplémentaire sur l'emmanchure avant"
 ---
 
 De quelle différence la profondeur de l'emmanchure est plus importante sur le devant que sur le dos.
@@ -10,4 +10,4 @@ Cette option permet de déterminer de combien.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bent_frontarmholedeeper_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bent_frontarmholedeeper_sample.svg "Effet de cette option sur le motif")

@@ -1,5 +1,5 @@
 ---
-title: "Charlie chinos: Cutting Instructions"
+title: "Chinos Charlie: Instrucciones de corte"
 ---
 
 ##### De tela principal
@@ -8,7 +8,7 @@ title: "Charlie chinos: Cutting Instructions"
 - Parte **2**: **2 x** _con buenos lados juntos_.
 - Parte **4**: **4 x**
 - Parte **6**: **2 x**
-- Part **8**: **4 x** (2 pairs _with good sides together_)
+- Pieza **8**: **4 x** (2 pares _con los lados buenos juntos_)
 - Parte **9**: **2 x** _con buenos lados juntos_
 - Parte **10**: **1 x** en plegado
 - Parte **11**: **1 x** si hace una pulsera recta

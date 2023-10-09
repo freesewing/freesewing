@@ -13,9 +13,9 @@ Without a way to store your measurements, generating made-to-measure patterns wo
 ##### ¿Estás preguntando porque no confías en nosotros?
 
 Esta pregunta a menudo sugiere una desconfianza subyacente hacia
-crear una cuenta. As such, the following links may also be relevant:
+crear una cuenta. Por ello, los siguientes enlaces también pueden ser relevantes:
 
-- Read [our privacy notice][1]
-- Learn more about [your rights][2]
+- Lee [nuestro aviso de privacidad][1]
+- Más información sobre [tus derechos][2]
 
 </Note>

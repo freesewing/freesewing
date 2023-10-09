@@ -1,18 +1,18 @@
 ---
-title: "Lucy tie-on pocket: Cutting Instructions"
+title: "Кишеня на зав'язці Люсі: Інструкція з крою"
 ---
 
-- Cut **2 pocket** parts
-- Cut pocket slit into **1 pocket** part
+- Виріжте **2 деталі кишені**
+- Розріжте розріз кишені на **1 кишеню** частину
 
-#### Historical context
+#### Історичний контекст
 
-Tie-on pockets like Lucy were worn roughly from the mid-seventeenth (1650s) century until the end of the 19th century (1890s). They came in all shapes and sizes but Lucy is based on an 18th century example.
+Кишені на зав'язках, як у Люсі, носили приблизно з середини XVII століття (1650-ті роки) до кінця XIX століття (1890-ті роки). Вони були різних форм і розмірів, але Люсі створена на основі зразка 18 століття.
 
-They were worn and used by all members of society and were mainly womens wear as men had a variety of pockets sewn into their clothing.
+Їх носили і використовували всі члени суспільства, і були вони переважно жіночим одягом, оскільки чоловіки мали різноманітні кишені, вшиті в їхній одяг.
 
-Pockets would be tied around the waist and could be accessed through a slit in skirts and petticoats. Where the pocket would be in between the layers was up to the individual. If it was hidden in between layers that would provide more security, but hinder accessibility. People who worked in trade often wore their pockets on the outside of their garments entirely, for easy access.
+Кишені зав'язувалися навколо талії, а доступ до них можна було отримати через розріз у спідницях і спідницях. Де буде кишеня між шарами, залежало від людини. Якби він був захований між шарами, це забезпечило б більшу безпеку, але ускладнило б доступ до нього. Люди, які працювали в торгівлі, часто носили кишені на зовнішній стороні одягу, щоб мати до них легкий доступ.
 
-(Tie-on) Pockets were used alongside patch pockets, sewn in pockets, bags and other ways to carry your things. Sometimes they even had additional pockets hidden inside them!
+(Кишені використовувалися поряд з накладними кишенями, вшитими кишенями, сумками та іншими способами носіння речей. Іноді в них навіть були заховані додаткові кишені!
 
-If you want to learn more you can read: Burman, B. & Fennetaux A. (2020)  _The Pocket, A Hidden History of Women's Lives_ Yale University Press, London
+Якщо ви хочете дізнатися більше, можете почитати: Бірман Б. & Феннето А. (2020)  _"Кишеня, прихована історія життя жінок"_ Yale University Press, London

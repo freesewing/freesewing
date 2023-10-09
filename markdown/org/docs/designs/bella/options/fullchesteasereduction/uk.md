@@ -1,11 +1,11 @@
 ---
-title: "Full chest ease reduction"
+title: "Повне зменшення об'єму грудної клітки"
 ---
 
 ***
 
-Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area
+Дозволяє самостійно зменшити легкість навколо грудей, щоб вона щільно прилягала в цій ділянці
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_fullchesteasereduction_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bella_fullchesteasereduction_sample.svg "Вплив цієї опції на шаблон")

@@ -1,9 +1,9 @@
 ---
-title: "Collar ease"
+title: "Kragen Zugabe"
 ---
 
-The amount of ease at your neck/collar.
+Die Menge an Leichtigkeit an Ihrem Hals/Kragen.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_collarease_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bent_collarease_sample.svg "Effekt dieser Option auf das Schnittmuster")

@@ -5,14 +5,14 @@ title: "Lucy: Cutting"
 - cut two pocket pieces
 - cut pocket slit into one pocket piece
 
-#### Historical context
+#### Contexte historique
 
-Tie-on pockets like Lucy were worn roughly from the mid-seventeenth (1650s) century until the end of the 19th century (1890s). They came in all shapes and sizes but Lucy is based on an 18th century example.
+Les poches à nouer comme Lucy ont été portées à peu près du milieu du XVIIe siècle (années 1650) jusqu'à la fin du XIXe siècle (années 1890). Il y en avait de toutes les formes et de toutes les tailles, mais Lucy est basé sur un exemple du 18e siècle.
 
-They were worn and used by all members of society and were mainly womens wear as men had a variety of pockets sewn into their clothing.
+Elles étaient portées et utilisées par tous les membres de la société et étaient principalement portées par les femmes, car les hommes avaient une variété de poches cousues dans leurs vêtements.
 
-Pockets would be tied around the waist and could be accessed through a slit in skirts and petticoats. Where the pocket would be in between the layers was up to the individual. If it was hidden in between layers that would provide more security, but hinder accessibility. People who worked in trade often wore their pockets on the outside of their garments entirely, for easy access.
+Les poches étaient nouées autour de la taille et on pouvait y accéder par une fente dans les jupes et les jupons. L'emplacement de la poche entre les couches était laissé à l'appréciation de chacun. S'il était caché entre deux couches, cela offrirait plus de sécurité, mais entraverait l'accessibilité. Les personnes qui travaillaient dans le commerce portaient souvent leurs poches entièrement à l'extérieur de leurs vêtements, pour y avoir facilement accès.
 
-(Tie-on) Pockets were used alongside patch pockets, sewn in pockets, bags and other ways to carry your things. Sometimes they even had additional pockets hidden inside them!
+(Cravate) Les poches côtoyaient les poches plaquées, les poches cousues, les sacs et d'autres moyens de transporter tes affaires. Parfois, ils ont même des poches supplémentaires cachées à l'intérieur !
 
-If you want to learn more you can read: Burman, B. & Fennetaux A. (2020)  _The Pocket, A Hidden History of Women's Lives_ Yale University Press, London
+Si tu veux en savoir plus, tu peux lire : Burman, B. & Fennetaux A. (2020)  _La poche, une histoire cachée de la vie des femmes_ Yale University Press, Londres.

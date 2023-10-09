@@ -1,13 +1,13 @@
 ---
-title: "Octoplushy, the plushy octopus: Fabric Options"
+title: "Octoplushy, el pulpo de peluche: Opciones de tejido"
 ---
 
-## Main and Contrast Body Fabrics (Upper body and legs, belly and underside legs)
+## Tejido principal y de contraste del cuerpo (parte superior del cuerpo y piernas, vientre y parte inferior de las piernas)
 
-This plush toy is intended to have two different coloured fabrics, one for the upper body and top side of the legs, one for the belly and underside of the legs.
+Este peluche tiene dos telas de colores diferentes, una para la parte superior del cuerpo y la parte superior de las patas, y otra para la barriga y la parte inferior de las patas.
 
-Octoplushy is designed for faux fur fabric, which most plush toys are made from, but you could also use polar fleece, felt, denim, corduroy, or anything moderately heavy. Lightweight or drapey fabrics may not hold Octoplushy's shape well when stuffed. Fabrics with a two-way stretch will work better than wovens, the stretch should be perpendicular to the grainline.
+Octoplushy está diseñado para tela de piel sintética, de la que están hechos la mayoría de los peluches, pero también podrías utilizar forro polar, fieltro, tela vaquera, pana o cualquier cosa medianamente pesada. Los tejidos ligeros o vaporosos pueden no mantener bien la forma del Octoplushy cuando se rellena. Tejidos con elasticidad en los dos sentidos funcionan mejor que las telas con elasticidad en un sentido, pero en este caso la dirección del elástico debería ir perpendicular a la urdimbre.
 
-## Stuffing
+## Relleno
 
-Since this is a plush toy, it will need to be stuffed with material. Most of the time you'll want to use polyester fiberfill (polyfill), but if you have a lot of fabric scraps, you can use shredded scrap fabric. However this may be heavier and less soft than fiberfill. It's also worth thinking about whether your Octoplushy may be at risk of getting dirty, or want to go for a swim, as not all stuffing options are washable.
+Puesto que se trata de un peluche, lo tendremos que rellenar. En la mayoría de casos querrás utilizar relleno de fibra de poliéster, pero si tienes muchos retales podrías utilizar retales hechos tiras o triturados. Pero ten en cuenta que esto será más pesado y menos blando que la fibra de poliéster. También merece la pena pensar si tu Octoplushy corre el riesgo de ensuciarse o quiere ir a nadar, ya que no todas las opciones de relleno son lavables.

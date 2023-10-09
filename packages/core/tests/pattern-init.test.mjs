@@ -568,7 +568,7 @@ describe('Pattern', () => {
         plugins: plugin,
         draft: (part) => part,
       }
-      const design = new Design({ parts: [part] })
+      const design = new Design({ parts: [part], noCorePlugins: true })
       const pattern = new design()
       pattern.draft()
       expect(pattern.plugins.hooks.preRender).to.have.lengthOf(1)
@@ -598,7 +598,7 @@ describe('Pattern', () => {
         plugins: [plugin1, plugin2],
         draft: (part) => part,
       }
-      const design = new Design({ parts: [part] })
+      const design = new Design({ parts: [part], noCorePlugins: true })
       const pattern = new design()
       pattern.__init()
       expect(pattern.plugins.hooks.preRender).to.have.lengthOf(2)
@@ -620,7 +620,7 @@ describe('Pattern', () => {
         plugins: [{ plugin, condition }],
         draft: (part) => part,
       }
-      const design = new Design({ parts: [part] })
+      const design = new Design({ parts: [part], noCorePlugins: true })
       const pattern = new design()
       pattern.__init()
       expect(pattern.plugins.hooks.preRender).to.have.lengthOf(1)
@@ -642,7 +642,7 @@ describe('Pattern', () => {
         plugins: [{ plugin, condition }],
         draft: (part) => part,
       }
-      const design = new Design({ parts: [part] })
+      const design = new Design({ parts: [part], noCorePlugins: true })
       const pattern = new design()
       expect(pattern.plugins.hooks.preRender).to.have.lengthOf(0)
     })
@@ -676,7 +676,7 @@ describe('Pattern', () => {
         ],
         draft: (part) => part,
       }
-      const design = new Design({ parts: [part] })
+      const design = new Design({ parts: [part], noCorePlugins: true })
       const pattern = new design()
       pattern.draft()
       expect(pattern.plugins.hooks.preRender).to.have.lengthOf(1)
@@ -705,7 +705,7 @@ describe('Pattern', () => {
         plugins: [{ plugin: plugin1, condition: condition2 }],
         draft: (part) => part,
       }
-      const design = new Design({ parts: [part, part2] })
+      const design = new Design({ parts: [part, part2], noCorePlugins: true })
       const pattern = new design()
       pattern.__init()
       expect(pattern.config.plugins).to.be.an('object').that.has.all.keys('example1', 'example1_')
@@ -747,6 +747,7 @@ describe('Pattern', () => {
       }
       const design = new Design({
         parts: [part1, part2],
+        noCorePlugins: true,
       })
       const pattern = new design()
       pattern.__init()
@@ -867,12 +868,12 @@ describe('Pattern', () => {
       expect(typeof partContext.store.log).to.equal('object')
       expect(typeof partContext.store.log.debug).to.equal('function')
       expect(typeof partContext.store.log.info).to.equal('function')
-      expect(typeof partContext.store.log.warning).to.equal('function')
+      expect(typeof partContext.store.log.warn).to.equal('function')
       expect(typeof partContext.store.log.error).to.equal('function')
       expect(typeof partContext.store.logs).to.equal('object')
       expect(Array.isArray(partContext.store.logs.debug)).to.equal(true)
       expect(Array.isArray(partContext.store.logs.info)).to.equal(true)
-      expect(Array.isArray(partContext.store.logs.warning)).to.equal(true)
+      expect(Array.isArray(partContext.store.logs.warn)).to.equal(true)
       expect(Array.isArray(partContext.store.logs.error)).to.equal(true)
     })
   })

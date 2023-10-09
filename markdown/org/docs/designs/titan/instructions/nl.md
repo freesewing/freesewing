@@ -1,30 +1,30 @@
 ---
-title: "Titan trouser block: Sewing Instructions"
+title: "Titan broekenblok: Naai-instructies"
 ---
 
 <Note>
 
-###### Titan is a block, not a pattern
+###### Titan is een blok, geen patroon
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Een blok is een basisvorm waarop andere patronen zijn gebaseerd.
+Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Titan block.
+Blokken worden meestal niet gemaakt zoals ze zijn, maar dienen als basis voor andere patronen, dus de instructies hieronder gaan niet dieper in op sluitingen of afwerkingen en zijn voor het standaard Titan blok.
 
 </Note>
 
-### Step 1: Mock-up Construction
+### Stap 1: Model constructie
 
-- Join the outseam (the seam that runs along the side of your leg) of the front and back.
-- Join the inseam (the seam the runs along the inside of your legs) of the front and back.
-- You now have a leg. Repeat for the other leg, **making certain they are mirror images of each other**.
-- Turn one leg with the good side in, and the other with the good side out.
-- Now tuck the _good side out_ into the _good side in_ leg, so that they have their _good sides together_.
-- Align and sew the cross seam.
+- Stik de buitennaad aan (de naad die langs de zijkant van je been loopt) van het voor- en achterpand.
+- Bevestig de binnennaad (de naad die langs de binnenkant van je broekspijp) van de voor- en achterpand.
+- Je hebt nu een been. Herhaal dit voor het andere been, **en zorg ervoor dat ze elkaars spiegelbeeld zijn**.
+- Keer de ene broekspijp met de goede kant in, en de andere met de goede kant naar buiten.
+- Stop nu de _goede kant uit_ in het _goede kant in_ been, zodat ze hun _goede kanten tegen elkaar hebben_.
+- Lijn en naai de kruisnaad.
 
 <Note>
 
-You may need to leave an opening in the front cross seam so you can pin yourself in.
+Het kan zijn dat je een opening in de voorste dwarsnaad moet laten zodat je jezelf kunt vastspelden.
 
 </Note>
 
@@ -34,17 +34,17 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 </Tip>
 
-### Step 2: Try it on
+### Stap 2: Probeer het uit
 
-- Try it on and check the fit by pinning the front closed whilst wearing it.
-- Make any alterations and try it on again.
-- Repeat until you are happy.
+- Pas het en controleer de pasvorm door de voorkant dicht te spelden terwijl je het draagt.
+- Breng eventuele wijzigingen aan en pas het opnieuw.
+- Herhaal dit tot je tevreden bent.
 
 <Tip>
 
-Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. etc. etc. Things like these are signs of where the pattern may need adjusting.
+Let goed op wat je blijft doen terwijl je de mock-up draagt, trek je hem naar beneden? Voortdurend de schouder aanpassen? enz. etc. etc. Things like these are signs of where the pattern may need adjusting.
 
-Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
+Soms moet je de mock-up langere tijd dragen om een beter gevoel te krijgen van de pasvorm, dus wees niet bang om er een paar uur in rond te lopen.
 
 </Tip>
 
@@ -60,25 +60,25 @@ For instance:
 - Add a waistband
 
 It is all up to you!
-For instance:
+Bijvoorbeeld:
 
-- Add a front closure
-- Add pockets
-- Change the pant length
-- Change the pant width
-- Add a waistband
+- Een sluiting aan de voorkant toevoegen
+- Zakken toevoegen
+- De lengte van de broek veranderen
+- De breedte van de broek veranderen
+- Een tailleband toevoegen
 
-It is all up to you! Experiment and go forth!
+Het is allemaal aan jou! Experimenteer en ga erop uit!
 
 </Note>
 
-### Step 3: Make a paper pattern
+### Stap 3: Maak een papieren patroon
 
-- Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
-- Now you have a pattern you can use to produce a garment.
+- Als je tevreden bent met alle wijzigingen, pak je je mockup uit en maak je er een papieren patroon van.
+- Nu heb je een patroon waarmee je een kledingstuk kunt maken.
 
 <Note>
 
-It is best practice to make a paper pattern from the mock-up if you have made any alterations, as this will allow you to clean up any lines but also means you have a pattern that you can keep producing garments from.
+Het is het beste om een papieren patroon te maken van de mock-up als je wijzigingen hebt aangebracht, omdat je dan lijnen kunt opschonen en een patroon hebt waarmee je kledingstukken kunt blijven maken.
 
 </Note>

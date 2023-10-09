@@ -1,5 +1,5 @@
 ---
-titre : "Profondeur d'emmanchure (Bella)"
+title: "Profondeur d'emmanchure (Bella)"
 ---
 
 ***

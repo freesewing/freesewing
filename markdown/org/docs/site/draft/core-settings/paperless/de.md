@@ -1,8 +1,8 @@
 ---
-title: Paperless Patterns
+title: Papierlose Muster
 ---
 
-The paperless setting lets you generate a sewing pattern that includes extra dimensions as well as a grid (in either metric or imperial, based on your choice of units).
+Mit der papierlosen Einstellung kannst du ein Nähmuster erstellen, das zusätzliche Maße sowie ein Raster enthält (entweder in metrischen oder imperialen Maßeinheiten, je nachdem, welche du auf auswählst).
 
-This allows you to skip printing the pattern altogether. Instead you can transfer it directly onto the fabric, or an intermediate medium such as pattern paper.
+So kannst du das Drucken des Musters ganz auslassen. Stattdessen kannst du direkt auf den Stoff oder auf ein Zwischenmedium wie das Muster übertragen.
 

@@ -1,11 +1,11 @@
 ---
-title: "Huey hoodie: What You Need"
+title: "Sudadera con capucha Huey: Lo que necesitas"
 ---
 
-To make Huey, you will need the following:
+Para hacer Huey, necesitarás lo siguiente:
 
-- Basic sewing supplies
-- About 2 metres (2.2 yards) of a suitable fabric ([see Fabric options](/docs/patterns/huey/fabric))
-- Ribbing fabric for the hem and cuffs.
-- 1 open ended zipper the length of front seam including hood and waistband.
-- (Optional) Cording or suitable alternate for hood strings.
+- Suministros básicos de costura
+- Unos 2 metros (2,2 yardas) de una tela adecuada ([ver Opciones de tela](/docs/patterns/huey/fabric))
+- Tejido de costillas para la taladra y las tazas.
+- 1 cremallera abierta a lo largo de la costura delantera, incluida la capucha y la cintura.
+- (Opcional) Cordón o alternativa adecuada para las cuerdas de la capucha.

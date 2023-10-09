@@ -1,5 +1,5 @@
 ---
-title: "Florent flat cap: Sewing Instructions"
+title: "Florent Flachmütze: Anleitung zum Nähen"
 ---
 
 ### Schritt 1: Sicherungsschnittstelle

@@ -1,10 +1,10 @@
 ---
-titre : "Largeur de buste (Bella)"
+title: "Largeur du tour de buste supérieur (Bella)"
 ---
 
 ***
 
-Contrôle la largeur du buste dans le bloc Bella sur lequel est basé Bee
+Contrôle la largeur du buste supérieur dans le bloc de Bella sur lequel est basé Bee
 
 ## Effet de cette option sur le motif
 

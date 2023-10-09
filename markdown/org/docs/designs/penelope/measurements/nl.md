@@ -1,5 +1,5 @@
 ---
-title: "Penelope pencil skirt: Required Measurements"
+title: "Penelope kokerrok: Benodigde afmetingen"
 ---
 
 <PatternMeasurements pattern='penelope' />

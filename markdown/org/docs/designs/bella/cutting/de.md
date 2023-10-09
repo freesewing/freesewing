@@ -1,5 +1,5 @@
 ---
-title: "Bella body block: Cutting Instructions"
+title: "Bella Körperblock: Schneideanleitung"
 ---
 
 **Oberstoff**
@@ -11,7 +11,7 @@ Diese Anleitung ist nur für den Bella-Grundschnitt mit Standardeinstellungen. P
 
 <Tip>
 
-If you do not have someone to help pin you into Bella then you may find it easier to Cut 2 Front parts with seam allowance and sew the backs up when constructing so you can pin in the front.
+Wenn du niemanden hast, der dir beim Anstecken von Bella hilft, ist es vielleicht einfacher, 2 Vorderteile mit Nahtzugabe zuzuschneiden und die Rückseiten beim Konstruieren zusammenzunähen, damit du die Vorderseite anstecken kannst.
 
 </Tip>
 

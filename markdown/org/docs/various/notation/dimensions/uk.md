@@ -1,22 +1,22 @@
 ---
-title: Dimensions
+title: Розміри
 ---
 
-When you opt for a _paperless_ pattern, your pattern will come with dimensions:
+Коли ви обираєте _безпаперову викрійку_ , ваша викрійка буде з розмірами:
 
 <Legend part="dimension">
 
-An example of a dimension on a pattern
+Приклад розміру на деталі
 
 </Legend>
 
 <Tip>
 
-###### Pay close attention to dimensions on non-paperless patterns
+###### Звертайте особливу увагу на розміри на безпаперових викрійках
 
-Some patterns use dimension to indicate the full size of a pattern piece.
-This typically happens when a part is a mere rectangle.
+У деяких викрійках розміри вказують на повний розмір деталі.
+Зазвичай це трапляється, коли деталь є простим прямокутником.
 
-So when a pattern includes a dimension, make sure to pay attention to it before you cut into your fabric.
+Тому, коли викрійка містить розмір, обов'язково зверніть на нього увагу перед тим, як розкроювати тканину.
 
 </Tip>

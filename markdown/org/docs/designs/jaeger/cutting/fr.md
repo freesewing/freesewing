@@ -1,5 +1,5 @@
 ---
-title: "Jaeger jacket: Cutting Instructions"
+title: "Veste Jaeger : Instructions de coupe"
 ---
 
 - **Tissu principal**
@@ -20,14 +20,14 @@ title: "Jaeger jacket: Cutting Instructions"
   - Couper **2 côtés** (partie 3)
   - Couper **2 manches hautes** (partie 4) Note : Certaines personnes aiment utiliser une doublure différente pour les manches
   - Coupez **2 sous-manches** (partie 5) Note : Certaines personnes aiment utiliser une doublure différente pour les manches
-  - Cut **2 chest pocket bags** (part 11)
+  - Coupe **2 sacs de poche de poitrine** (partie 11)
   - Coupez **2 poches intérieures**
   - Couper **2 poches intérieures** (partie 13)
 - **Toile**
   - Couper **2 faces** sur un biais (partie 1) : Ne pas inclure la marge de couture
   - Coupez **2 pièces de poitrine** en parti. Recherchez les indications sur la partie avant. Remarque : Ne pas inclure la marge de couture
 - **Tissu de sous-col**
-  - Cut **2 undercollars** (part 7)
+  - Coupe **2 sous-cols** (partie 7)
 
 <Note>
 
@@ -44,9 +44,9 @@ Lorsque vous les coupez individuellement, rappelez-vous qu'elles doivent être l
 
 ###### Cutting caveats
 
-- The chest piece is marked on the front.
+- La pièce de poitrine est marquée sur le devant.
 - Ne pas inclure la marge de couture lors du découpage de toile, et couper le sur un parti.
-- La face avant et la doublure est marquée sur la pièce avant. Ils ont divisé la partie avant en deux le long de la ligne de limite. Vous pouvez couper la partie avant le long de cette ligne après avoir coupé le devant du tissu principal. The inner pocket extension for the facing is printed separately, and you can tape it back in its place after cutting the pattern piece. **N'oubliez pas d'ajouter une marge de couture à la fois pour la face et la doublure pour cette couture de limite**.
+- La face avant et la doublure est marquée sur la pièce avant. Ils ont divisé la partie avant en deux le long de la ligne de limite. Vous pouvez couper la partie avant le long de cette ligne après avoir coupé le devant du tissu principal. L'extension de la poche intérieure pour la parementure est imprimée séparément, et tu peux la remettre à sa place avec du ruban adhésif après avoir coupé le morceau de patron. **N'oubliez pas d'ajouter une marge de couture à la fois pour la face et la doublure pour cette couture de limite**.
 
 ![Trace the front facing and lining from the front part](cuttingCaveat.svg)
 

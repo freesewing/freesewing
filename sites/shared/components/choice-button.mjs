@@ -5,11 +5,14 @@ export const ChoiceButton = ({
   icon = null,
   color = 'secondary',
   active = false,
+  noMargin = false,
 }) => (
   <button
     onClick={onClick}
     className={`
-    flex flex-col flex-nowrap items-start justify-start gap-2 pt-2 pb-4 h-auto w-full mt-3
+    flex flex-col flex-nowrap items-start justify-start gap-2 pt-2 pb-4 h-auto w-full ${
+      noMargin ? '' : 'mt-3'
+    }
     btn btn-${color} btn-ghost border border-${color}
     hover:bg-opacity-20 hover:bg-${color} hover:border hover:border-${color}
     ${active ? 'bg-' + color + ' bg-opacity-20 border border-' + color : ''}

@@ -1,19 +1,19 @@
 ---
-title: "Hortensia handbag: What You Need"
+title: "Hortensia Handtasche: Was du brauchst"
 ---
 
-To make Hortensia, you will need the following:
+Um Hortensia herzustellen, brauchst du Folgendes:
 
-- Basic sewing supplies
-- About 0.5 - 2 metres (0.6 - 2.2 yards) of a suitable fabric ([see Hortensia Fabric options](/docs/patterns/hortensia/fabric/))
-- About 0.5 - 2 metres (0.6 - 2.2 yards) of lining fabric ([see Hortensia Fabric options](/docs/patterns/hortensia/fabric/))
-- A zipper shorter in length than the zipper panel and matching the [coil width](/docs/patterns/hortensia/options/zippersize/) selected
-- (Optional) About 1 - 2 metres (1.1 - 2.2 yards) of bias biniding if you want to bind the side panel edges on the outside.
-- (Optional) Bag strap webbing double the length of the strap part with seam allowance and similar width if you don't wish to make your own straps
-- (Optional) Interfacing if needed to strengthen fabric and/or for the strap
+- Grundlegendes Nähzubehör
+- Etwa 0,5 - 2 Meter (0,6 - 2,2 Yards) eines geeigneten Stoffes ([siehe Hortensia Stoffoptionen](/docs/patterns/hortensia/fabric/))
+- Etwa 0,5 - 2 Meter Futterstoff ([siehe Hortensia Stoffoptionen](/docs/patterns/hortensia/fabric/))
+- Ein Reißverschluss, der kürzer ist als die Reißverschlussblende und der Breite der [Spule entspricht](/docs/patterns/hortensia/options/zippersize/) ausgewählt
+- (Optional) Etwa 1 - 2 Meter Schrägband, wenn du die Seitenkanten an der Außenseite binden möchtest.
+- (Optional) Taschengurtband in der doppelten Länge des Gurtteils mit Nahtzugabe und ähnlicher Breite, wenn du keine eigenen Gurte machen möchtest.
+- (Optional) Einlage zur Verstärkung des Stoffes und/oder für das Band
 
 <Note>
 
-The amount of fabric you need is dependant on [Hortensia's size option](/docs/patterns/hortensia/options/size/). If you are uncertain of how much you need turn on paperless mode whilst viewing the pattern and add the bottom measures of Part 1 SidePanel, Part 2 FrontBackPanel and Part 3 BottomPanel to give yourself a rough estimate.
+Wie viel Stoff du brauchst, hängt von der [Hortensia-Größenoption](/docs/patterns/hortensia/options/size/) ab. Wenn du dir nicht sicher bist, wie viel du brauchst, schalte den papierlosen Modus ein, während du das Muster ansiehst, und addiere die unteren Maße von Teil 1 SidePanel, Teil 2 FrontBackPanel und Teil 3 BottomPanel, um dir eine grobe Schätzung zu geben.
 
 </Note>

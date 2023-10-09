@@ -1,5 +1,5 @@
 ---
-title: "Cuff button rows"
+title: "Rangée de boutons de manchette"
 ---
 
 ![Rangée de boutons de manchette](cuffbuttonrows.svg)
@@ -14,4 +14,4 @@ Cela ne s'applique qu'aux poignets classiques. Donc si vous avez choisi un poign
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_cuffbuttonrows_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_cuffbuttonrows_sample.svg "Effet de cette option sur le motif")

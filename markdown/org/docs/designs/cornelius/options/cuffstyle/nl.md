@@ -6,9 +6,9 @@ title: "Stijl Manchet"
 
 Dit patroon ondersteunt drie verschillende manchet stijlen:
 
-- **Traditional**: A single buttoned _curved_ band with a pointed edge.
-- **Elegant**: A single buttoned _straight_ band with a pointed edge.
-- **Keystone**: A slightly curved band that is wider than the others using 3 buttons rather than 1. This one is based of off the one in the Keystone Draft this pattern is based on.
+- **Traditioneel**: Een enkele geknoopte _gebogen_ band met een puntige rand.
+- **Elegant**: Een enkele geknoopte _rechte_ band met een puntige rand.
+- **Keystone**: Een licht gebogen band die breder is dan de andere en 3 knoppen gebruikt in plaats van 1. Deze is gebaseerd op die in de Keystone Draft waarop dit patroon is gebaseerd.
 
 ## Effect van deze optie op het patroon
 

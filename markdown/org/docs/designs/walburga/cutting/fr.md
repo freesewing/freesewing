@@ -1,24 +1,24 @@
 ---
-title: "Walburga Wappenrock: Cutting Instructions"
+title: "Walburga Wappenrock : Instructions de coupe"
 ---
 
-Walburga consists of two parts, a _front_ and a _back_ piece.
+Walburga se compose de deux parties, une pièce avant __ et une pièce arrière __.
 
 <Tip>
 
-Apart from the cutout for the neck opening, front and back are identical. It is therefore enough to print only the front part.
+À part la découpe pour l'ouverture du cou, l'avant et l'arrière sont identiques. Il suffit donc de n'imprimer que la partie avant.
 
 </Tip>
 
-- cut _1 front_, _on the fold_
-- cut _1 back_, _on the fold_
+- coupe _1 front_, _sur le pli_
+- coupe _1 dos_, _sur le pli_
 
-### On Historical Accuracy
+### Sur l'exactitude historique
 
-The further we go back in time, the less extant garments we have to base research on. Often there may be scraps of fabric left behind by stroke of luck but most of our information starts to come from (in archaeology) secondary sources like written texts from contemporaries.
+Plus nous remontons dans le temps, moins il y a de vêtements existants sur lesquels nous pouvons baser nos recherches. Souvent, il peut y avoir des bouts de tissu laissés derrière par un coup de chance, mais la plupart de nos informations commencent à provenir (en archéologie) de sources secondaires telles que des textes écrits par des contemporains.
 
-This is especially true for the Roman and Mediaeval eras, not to mention that a lot of the available research is behind a paywall.
+C'est particulièrement vrai pour les époques romaine et médiévale, sans compter qu'une grande partie des recherches disponibles se trouve derrière un paywall.
 
-We can’t be 100 percent historically accurate, because we’re living in a different time, and everything we use to sew is different now from before. Even fabric is woven in a different way.
+Nous ne pouvons pas être exacts à 100 % sur le plan historique, parce que nous vivons à une autre époque et que tout ce que nous cousons est différent aujourd'hui de ce qu'il était avant. Même le tissu est tissé d'une manière différente.
 
-How ‘accurate’ you want to be is up to you, there is no wrong way to do this and research is not required -- though it can be fun!
+Il n'y a pas de mauvaise façon de procéder et il n'est pas nécessaire de faire des recherches - même si cela peut être amusant !

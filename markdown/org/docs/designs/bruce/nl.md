@@ -1,6 +1,8 @@
 ---
-title: "Bruce boxer briefs"
+title: "Bruce boxershort"
 ---
 
-<YouTube id='PL1gv5yv3DoZME1xe5fBEHd0rKPW_xNpF3' playlist />
-<PatternDocs pattern='bruce' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='bruce' docs />
+

@@ -1,5 +1,8 @@
 ---
-title: "Trayvon tie"
+title: "Trayvon, corbata"
 ---
 
-<PatternDocs pattern='trayvon' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='trayvon' docs />
+

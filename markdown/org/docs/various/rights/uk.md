@@ -1,9 +1,9 @@
 ---
-title: Your rights
+title: Ваші права
 ---
 
-Freesewing applies the General Data Protection Regulation (GDPR) of the European Union (EU).
+Freesewing застосовує Загальний регламент захисту даних (GDPR) Європейського Союзу (ЄС).
 
-EU citizen or not, for us these are your rights:
+Громадянин ЄС чи ні, для нас це ваші права:
 
 <ReadMore list />

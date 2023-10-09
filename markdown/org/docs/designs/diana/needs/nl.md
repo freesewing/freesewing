@@ -1,11 +1,11 @@
 ---
-title: "Diana draped top: What You Need"
+title: "Diana gedrapeerde top: Wat je nodig hebt"
 ---
 
-To make Diana, you will need the following:
+Om Diana te maken heb je het volgende nodig:
 
 - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-- About 1.5 meters (1.7 yards) (or half of that if it's wide enough to fit the sleeves next to the body) of a suitable fabric ([see Fabric options](/docs/patterns/diana/fabric))
+- Ongeveer 1,5 meter (1,7 yard) (of de helft daarvan als het breed genoeg is voor de mouwen naast het lijf) van een geschikte stof ([zie Stofopties](/docs/patterns/diana/fabric)).
 
 <Note>
 

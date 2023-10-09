@@ -1,9 +1,9 @@
 ---
-title: "Bust dart"
+title: "Pince poitrine"
 ---
 
-Where to place the primary bust dart to shape the chest.
+Où placer la fléchette primaire du buste pour modeler la poitrine.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_primarybustdart_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_primarybustdart_sample.svg "Effet de cette option sur le motif")

@@ -1,145 +1,145 @@
 ---
-title: "Huey hoodie: Sewing Instructions"
+title: "Sudadera con capucha Huey Instrucciones de costura"
 ---
 
 <Note>
 
-This pattern can be sewn with or with out a overlocker/serger. If not using a overlocker or serger you will have to _Finish_ the seams.
+Este patrón se puede coser con o con un overlocker/serger. Si no utilizas una overlocker o una serger tendrás que _Finalizar_ las costuras.
 
 </Note>
 
-### Step 1: Attaching the pockets
+### Paso 1: Colocar los bolsillos
 
-- Press under seam allowance of top, curved and slanted edges.
-- _Topstitch_ or _Edgestitch_ the curved seam allowance in place. This will form the openings of the pockets.
-- Pin the pockets to the fronts using the guidelines and match raw edges.
-- Baste the raw edges of the pockets and fronts together.
-- _Topstitch_ or _Edgestitch_ the top and slanted edges of the pockets to the fronts leaving the curved edges open.
+- Presiona por debajo del margen de costura de los bordes superior, curvo e inclinado.
+- _Puntada de remate_ o _Puntada de remate_ el margen de costura curvado en su sitio. Esto formará las aberturas de los bolsillos.
+- Sujeta con alfileres los bolsillos a los frentes siguiendo las directrices y haz coincidir los bordes sin rematar.
+- Hilvana los bordes crudos de los bolsillos y los frentes.
+- _Puntada de remate_ o _Puntada de remate_ los bordes superiores e inclinados de los bolsillos a los frentes dejando abiertos los bordes curvos.
 
-### Step 2: Making the Body
+### Paso 2: Hacer el cuerpo
 
-- With _good sides together_, sew the Fronts to the backs at the shoulder seams.
-- With _good sides together_, sew the sleeves to the front and back matching notches.
-- With _good sides together_, sew up the sleeves and side seams.
+- Con _los lados bien juntos_, cose los frentes a las espaldas por las costuras de los hombros.
+- Con _los lados bien juntos_, cose las mangas a la parte delantera y trasera haciendo coincidir las muescas.
+- Con _con los lados bien juntos_, cose las mangas y las costuras laterales.
 
-### Step 3: Making drawstring holes (Optional)
+### Paso 3: Hacer los agujeros para el cordón (Opcional)
 
-If you don't wish to add a drawstring you can skip to Step 4.
+Si no deseas añadir un cordón, puedes pasar al Paso 4.
 
-- Take one matching set of the Hood pieces, that you intend to feature on the outside of the finished hoodie.
-- Mark the place for a hole on each hood piece, along the inner curve.
-  - The hole should be about 1.5-2cm from the edge of the fabric. This is to keep your seam allowance out of the way.
-  - The hole should be located slightly up from the bottom of the inner curve. This is to keep it away from the front seams.
-- On the wrong side of the fabric, face where you are making the hole to stabilise the fabric.
-- Make a buttonhole at your mark either by hand or by your machine's method.
-- Alternatively construct or use eyelets at the mark.
+- Coge un conjunto a juego de las piezas de la capucha, que pienses colocar en el exterior de la sudadera acabada.
+- Marca el lugar para un agujero en cada pieza del capó, a lo largo de la curva interior.
+  - El agujero debe estar a unos 1,5-2 cm del borde de la tela. Esto es para que el margen de costura no estorbe.
+  - El agujero debe estar situado ligeramente por encima de la parte inferior de la curva interior. Esto es para mantenerlo alejado de las costuras delanteras.
+- En el revés de la tela, mira hacia donde vas a hacer el agujero para estabilizar la tela.
+- Haz un ojal en tu marca, a mano o con el método de tu máquina.
+- Como alternativa, construye o utiliza ojales en la marca.
 
 <Tip>
 
-If you don't have or don't wish to use any interfacing you can use a scrap piece of sturdy fabric such as denim.
+Si no tienes o no quieres utilizar entretela, puedes usar un trozo de tela resistente, como tela vaquera.
 
 </Tip>
 
 <Note>
 
-The drawstrings will be threaded after the hoodie is constructed.
+Los cordones se enhebrarán después de construir la sudadera.
 
 </Note>
 
-### Step 4: Prepping the hood
+### Paso 4: Preparación del capó
 
-- With _good sides together_, matching sets, sew the hood pieces together along the outer curve edge.
-- With _good sides together_, matching seams, sew the inner hood to the outer hood along the inner curve edge.
-- Turn good sides out.
-- Baste the front and bottom raw edges together.
-- Create a casing for the drawstring by stitching about 2.5cm (1 inch) away from the inner edge on the side with the drawstring holes.
-- (Optionaly) If not using a drawstring, _Topstitch_ or _Edgestitch_ the inner curve.
+- Con _lados buenos juntos_, conjuntos coincidentes, cose las piezas de la capucha juntas a lo largo del borde de la curva exterior.
+- Con _los lados bien juntos_, haciendo coincidir las costuras, cose la capucha interior a la capucha exterior a lo largo del borde de la curva interior.
+- Dale la vuelta por el lado bueno.
+- Hilvana los bordes crudos delantero e inferior.
+- Crea una funda para el cordón cosiendo a unos 2,5 cm (1 pulgada) del borde interior en el lado con los agujeros para el cordón.
+- (Opcionalmente) Si no utilizas un cordón, _Puntada de remate_ o _Puntada de remate_ la curva interior.
 
 <Note>
 
-When creating the casing or topstitching, make sure the inner curve seam is slightly inside of the hood to stop it from peaking out in the future.
-Alternatively if not using a drawstring you can _Understitch_ the inner curve seam.
+Al crear la funda o pespunte, asegúrate de que la costura de la curva interior quede ligeramente por dentro de la capucha, para evitar que sobresalga en el futuro.
+Alternativamente, si no utilizas cordón, puedes _puntear_ la costura de la curva interior.
 
 </Note>
 
-### Step 5: Making a neckband (Optional)
+### Paso 5: Hacer una cinta para el cuello (Opcional)
 
-A neckband can be useful to stablise and cover the neck seams but it is optional if you wish to skip it.
+Una cinta para el cuello puede ser útil para estabilizar y cubrir las costuras del cuello, pero es opcional si deseas prescindir de ella.
 
-- Cut a cross-wise strip of fabric out of your main fabric:
-  - Your neck opening + double your front seam allowance long
-  - Triple your neck seam allowance wide.
+- Corta una tira transversal de tela de tu tela principal:
+  - Tu abertura del cuello + el doble de tu margen de costura delantero largo
+  - Triplica el ancho del margen de costura del cuello.
 
-### Step 6: Attaching the hood
+### Paso 6: Colocar la capucha
 
-- Pin the hood to the neck with outer hood matching _good side_ of neck.
-- If using, pin the neckband _good side_ to inner hood matching raw edges.
-- Sew the neckband seam.
-- _Finish_ seam if not using neckband then proceed to Step 7.
-- Press neckband down.
-- On outside _Topstitch_ neckband in place.
-- On inside, trim neckband down to topstitching.
+- Sujeta la capucha al cuello con alfileres, haciendo coincidir la capucha exterior con _lado bueno_ del cuello.
+- Si lo usas, sujeta con alfileres la cinta del cuello _lado bueno_ a la capucha interior haciendo coincidir los bordes crudos.
+- Cose la costura del cuello.
+- _Termina la costura_ si no utilizas cinta para el cuello y pasa al paso 7.
+- Presiona la cinta del cuello hacia abajo.
+- En el exterior _Coser la cinta del cuello_ en su sitio.
+- En el interior, recorta la cinta del cuello hasta el pespunte.
 
-### Step 7: Attaching the waistband
+### Paso 7: Colocar la cintura
 
-- Fold the waistband in half lengthwise matching wrong sides. Press.
-- With _good sides_ together sew the waistband to the bottom of the back and front.
-- Press the seam allowance up.
-- _Topstitch_ or _Edgestitch_ waistband seam allowance to the body.
+- Dobla la cintura por la mitad a lo largo, haciendo coincidir los lados opuestos. Alísala.
+- Con _lados buenos_ juntos cose la cintura a la parte inferior de la parte trasera y delantera.
+- Presiona el margen de costura hacia arriba.
+- _Puntada de remate_ o _Puntada de remate_ margen de costura de la cintura al cuerpo.
 
-### Step 8: Attching the cuffs
+### Paso 8: Fijar los puños
 
-- With _good sides together_ sew the short egdes of the cuffs together to create two bands.
-- Press open the seam allowances.
-- (Optional) _Edgestitch_ the seam allowances down.
-- Fold the cuffs in half lengthwise matching wrong sides. Press.
-- Matching seams and raw edges, pin the cuffs to the sleeves _good sides together_.
-- Sew the cuffs to the sleeves.
-- Press the seam allowances up.
-- _Topstitch_ or _Edgestitch_ cuffs seam allowances to the sleeves.
+- Con _bien juntos_ cose los lados cortos de los puños para crear dos bandas.
+- Presiona para abrir los márgenes de costura.
+- (Opcional) _Canteado_ los márgenes de costura hacia abajo.
+- Dobla los puños por la mitad longitudinalmente haciendo coincidir los lados contrarios. Alísala.
+- Une las costuras y los bordes sin rematar, sujeta los puños a las mangas con alfileres _con los lados bien juntos_.
+- Cose los puños a las mangas.
+- Presiona los márgenes hacia arriba.
+- _Puntada de remate_ o _Puntada de remate_ los márgenes de costura de los puños a las mangas.
 
-### Step 9: The zipper
+### Paso 9: La cremallera
 
-- If need be, face the front edges of the hoodie.
-- Unzip the zipper part way.
-- Fold the top of the zipper tape down to the _good side_ of the zipper tape. Trim if need be.
-- Pin the zipper along one of the front edges of the hood, front and waistband. The zipper teeth should just be slightly over the seam line with the edge of the tape either matching or being slightly over from the hoodie edge. Making sure the zipper pull is faced the _good sides_ of the hoodie and the bottoms are lined up.
-- Using a zipper foot stitch the zipper to the hoodie using you seam allownace width. When you reach the zipper pull, stop, put your needle down, lift the presser foot, pull the zipper pull past the presser foot, lower the presser foot. Then you can continue sewing the seam.
-- Unzip the zipper.
-- Pin and sew the unattached zipper tape to the other side of the hoodie the same way.
-- Press the seams to the inside being careful not to melt the zipper teeth with your iron.
-- _Topstitch_ the zipper tapes in place. You may need to use a zipper foot.
+- Si es necesario, enfréntate a los bordes delanteros de la sudadera.
+- Desabrocha parcialmente la cremallera.
+- Dobla la parte superior de la cinta de la cremallera hacia el _lado bueno_ de la cinta de la cremallera. Recorta si es necesario.
+- Sujeta con alfileres la cremallera a lo largo de uno de los bordes delanteros de la capucha, la parte delantera y la cintura. The zipper teeth should just be slightly over the seam line with the edge of the tape either matching or being slightly over from the hoodie edge. Making sure the zipper pull is faced the _good sides_ of the hoodie and the bottoms are lined up.
+- Utilizando un pie prénsatelas para cremalleras, cose la cremallera a la sudadera utilizando el ancho de tu costura. Cuando llegues al tirador de la cremallera, detente, baja la aguja, levanta el prensatelas, tira del tirador de la cremallera más allá del prensatelas, baja el prensatelas. Luego puedes seguir cosiendo la costura.
+- Desabrocha la cremallera.
+- Sujeta con alfileres y cose del mismo modo la cinta de la cremallera que no está sujeta al otro lado de la sudadera.
+- Presiona las costuras hacia el interior con cuidado de no fundir los dientes de la cremallera con la plancha.
+- _Puntada superior_ las cintas de la cremallera en su sitio. Puede que necesites utilizar un pie para cremalleras.
 
 <Tip>
 
-To help match the pockets and seams, when it is attached to one side and temporarily mark the corresponding teeth at the pockets and seam. You can now use these marks to align the zipper to the pocket and seams on the other side.
+Para ayudar a emparejar los bolsillos y las costuras, cuando esté pegado a un lado y temporalmente marca los dientes correspondientes en los bolsillos y la costura. Ahora puedes utilizar estas marcas para alinear la cremallera con el bolsillo y las costuras del otro lado.
 
 </Tip>
 
 <Note>
 
-You only need to face your fabric if it is very stretchy or needs a bit more stability.
+Sólo tendrás que refrentar el tejido si es muy elástico o necesita un poco más de estabilidad.
 
 </Note>
 
-### Step 10: Thread the drawstring
+### Paso 10: Enhebra el cordón
 
-- Thread the drawing string through the drawstring holes.
-- If needed secure the ends of the drawstring e.g. with something like aglets.
+- Pasa el cordel de dibujo por los agujeros del cordel.
+- Si es necesario, asegura los extremos del cordón, por ejemplo, con algo como aglets.
 
 <Tip>
 
-Use a safety pin to help thread the drawstring.
+Utiliza un imperdible para ayudar a enhebrar el cordón.
 
 </Tip>
 
-### Step 11: Enjoy!
+### Paso 11: ¡Disfrútalo!
 
-- That's it! Your all done! Now go feel warm and comfy in your new hoodie!
+- ¡Eso es todo! ¡Ya está! ¡Ahora ve a sentirte calentito y cómodo con tu nueva sudadera con capucha!
 
 <Note>
 
-This patterns was featured in [issue 27 of HackSpace magazine](https://hackspace.raspberrypi.org/issues/27),
-the article includes instructions too, so you may want to have a look at it.
+Estos patrones fueron destacados en el [número 27 de la revista HackSpace](https://hackspace.raspberrypi. rg/issues/27),
+el artículo también incluye instrucciones, así que tal vez quieras echarle un vistazo.
 
 </Note>

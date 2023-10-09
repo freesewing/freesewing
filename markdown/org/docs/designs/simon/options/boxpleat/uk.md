@@ -1,11 +1,11 @@
 ---
-title: "Box pleat"
+title: "Коробчаста складка"
 ---
 
 ***
 
-Adds a box pleat to the back.
+Ззаду додає складку-бокс на спинці.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_boxpleat_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simon_boxpleat_sample.svg "Вплив цієї опції на шаблон")

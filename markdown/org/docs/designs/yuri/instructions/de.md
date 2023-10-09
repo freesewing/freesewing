@@ -1,15 +1,15 @@
 ---
-title: "Yuri hoodie: Sewing Instructions"
+title: "Yuri Hoodie: Anleitung zum Nähen"
 ---
 
 <Note>
 
-Dieses Muster kann mit oder mit einem Overlocker/Serger genäht werden. To _finish_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
+Dieses Muster kann mit oder mit einem Overlocker/Serger genäht werden. Um Nähte ohne Overlocker/Serger zu _bearbeiten_, kannst du entweder deine bevorzugte Methode oder eine der folgenden Methoden anwenden:
 
 ##### Finishing Method 1
 
-- Press open the seam allowances.
-- Then on the good side, _edgestitch_ 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
+- Bügle die Nahtzugaben auf.
+- Dann nähst du auf der guten Seite 3 mm (1/8 Zoll) entfernt oder näher an beiden Seiten der Naht und fängst die Nahtzugaben darunter auf.
 - Auf der falschen Seite die Nahtzuschläge in der Nähe des Kantenstichens abschneiden.
 
 ##### Fertigstellungsmethode 2
@@ -28,21 +28,21 @@ Bei Verwendung eines Overlockers/Sergers können Sie Nähte nähen, die in einem
 ## Schritt 1: Keile anfügen
 
 - Mit den guten Seiten zusammen, nähen Sie die Kugeln an den Frontplatten entlang der Seitennaht.
-- _finish_ seams.
+- _bearbeite_ Nähte.
 
 ## Schritt 2: Nähen der Schulternähte
 
 - Mit guten Seiten zusammen nähen Sie die vorderen Teile auf der Rückseite entlang der Schulternaht.
-- _finish_ seams.
+- _bearbeite_ Nähte.
 
-## Schritt 3: Hänge die Ärmel an
+## Schritt 3: Annähen der Ärmel
 
 - Mit guten Seiten zusammen, passend hinten zum Rückennoch und Frontnoch an der Vorderseite, nähen Sie die Ärmel in den Körper.
-- _finish_ seams.
+- _bearbeite_ Nähte.
 
 <Note>
 
-On the pattern the back notch is marked as a cross-notch (see [our pattern notation guide](/docs/various/notation/notches/)). Es wird empfohlen, dies zu einer doppelten Note zu machen, wenn Sie Ihre Teile ausschneiden, um die Rückseite leichter von der Vorderseite zu unterscheiden.
+Auf dem Schnittmuster ist die hintere Kerbe als Kreuzkerbe gekennzeichnet (siehe [unsere Anleitung zur Schnittmusternotation](/docs/various/notation/notches/)). Es wird empfohlen, dies zu einer doppelten Note zu machen, wenn Sie Ihre Teile ausschneiden, um die Rückseite leichter von der Vorderseite zu unterscheiden.
 
 </Note>
 
@@ -65,7 +65,7 @@ Dies ist nur eine Hemmungsmethode, wenn Sie lieber einen anderen Weg gehen.
 ## Schritt 5: Seiten schließen
 
 - Mit guten Seiten zusammen, passende Schulternähte, beginnen Sie an der Ärmelkante und nähen Sie den Ärmel zusammen, als den Kuschelsatz und zurück zu nähen.
-- _finish_ seams.
+- _bearbeite_ Nähte.
 - Wiederholen für verbleibende Ärmel und Seitenöffnung.
 
 ## Schritt 6: Hem die Rohkanten
@@ -75,12 +75,12 @@ Dies ist nur eine Hemmungsmethode, wenn Sie lieber einen anderen Weg gehen.
 
 ## Schritt 7: Vorbereiten von Lining und Außenkapuze
 
-Follow this step twice, once for the outer hood and once for the lining hood.
+Folgen Sie diesem Schritt zweimal, einmal für die Außenhaube und einmal für die Verkleidungshaube.
 
 - Mit guten Seiten zusammen, nähen Sie den langen Rand des Hood-Zentrums an den äußeren Rand einer der Hood-Sides.
 - Mit guten Seiten zusammen nähen Sie den verbleibenden langen Rand des Hood-Zentrums an den äußeren Rand der anderen Hood Side.
 - Drücken Sie die Nahtzuschläge offen.
-- _finish_ seams.
+- _bearbeite_ Nähte.
 
 <Note>
 
@@ -92,7 +92,7 @@ Es wird empfohlen, die **Fertigstellungsmethode 1** für diesen Schritt zu verwe
 
 - Mit _guten Seiten zusammen_Pin die Außen- und Haltungshütten passend zu den Nähten.
 - Nähen Sie den angehefteten Rand zusammen.
-- Schneiden Sie die Nahterlaubnis auf 1cm (3/8 Zoll), wenn Ihr gewähltes Nahtgewicht größer ist und Sie nicht verwendet haben und Überlocker/Server. Otherwise _do not_ trim the seam.
+- Schneiden Sie die Nahterlaubnis auf 1cm (3/8 Zoll), wenn Ihr gewähltes Nahtgewicht größer ist und Sie nicht verwendet haben und Überlocker/Server. Ansonsten ist _nicht_ die Naht zu schneiden.
 - Drehen Sie die Kapuze gute Seiten aus und drücken Sie die Außenkante flach.
 - Auf der Außenseite der Topstitch am Rand der Kapuze entlang, ca. 1,5 - 2cm von der Kante. Vergewissern Sie sich, dass Ihre Aufstichung umschließt, aber nicht durch die Naht der äußeren Haube Kante geht. Dadurch entsteht ein dekorativer Felgen, wobei die eingeschlossene Naht die Felge ein bisschen poofy macht.
 - Mit rohen Kanten zusammen, den Boden der Kapuze. Sie können dies entweder mit einem Overlocker/Serger oder einem Ziz-Zag oder einem Übergießstich auf einer normalen Maschine tun.
@@ -107,19 +107,19 @@ Wenn du den dekorativen Rand nicht haben möchtest, Sie wollen das Futter vielle
 ## Schritt 9: Vorbereitung eines Halsbandes für die Kapuze (Optional)
 
 - Schneiden Sie einen quer gerichteten Stoffstreifen aus Ihrem Hauptstoff, Ihre Nackenöffnung + 2cm lang (3/4 Zoll) und dreifachen Sie Ihren Nackennaht breit.
-- Press under 1cm (3/8 inch) allowance on the short sides.
+- Drücke an den kurzen Seiten eine Zugabe von 1 cm (3/8 inch) ein.
 
 <Note>
 
-Whilst marked optional, it is recommended to do this step as it creates a neater and stronger finish around the neck.
-You can also make a folded band so the neckband does not have a raw edge but this may be bulky. You will also need to make sure the folded edge extends slightly longer than 1cm to be caught when attaching and topstitching the hood but not so long that it flaps about.
+Obwohl dieser Schritt als optional gekennzeichnet ist, wird er empfohlen, da er für einen sauberen und stabilen Abschluss des Halses sorgt.
+Du kannst auch ein gefaltetes Band machen, so dass das Nackenband keine rohe Kante hat, aber das kann sperrig sein. Außerdem musst du darauf achten, dass die gefaltete Kante etwas länger als 1 cm ist, damit sie beim Anbringen und Absteppen der Kapuze aufgefangen werden kann, aber nicht so lang, dass sie herumflattert.
 
 </Note>
 
 ## Schritt 10: Hänge die Kapuze an
 
 - Mit guten Seiten zusammen, beginnend von der Mitte hinten Pin die Kapuze zum Hals, passend zur Mitte und zum Überlappen der Kapuze endet an der Vorderseite.
-- With good side of neckband to lining side of hood, pin the neckband to the hood matching middle of the neckband to the centre back.
+- Stecke das Nackenband an der Kapuze fest, wobei die gute Seite des Nackenbandes an der Futterseite der Kapuze liegt und die Mitte des Nackenbandes an der hinteren Mitte liegt.
 - Bei Verwendung eines Overlockers/Sergers ziehen Hals und Kapuze durch alle Lagen zusammen.
 - Bei Nähmaschine mit Zickzackstich können alle Näh- und Haubenschichten zusammengenäht werden.
 - Überprüfen Sie nach außen die Halslinie, um sicherzustellen, dass alle Schichten gefangen werden.
@@ -135,8 +135,8 @@ Wenn Sie einen Überlocker/Serger verwenden, um die Kapuze zu befestigen, könne
 
 <Note>
 
-If you are worried that topstitching the neckband with a straight stitch will not give enough stretch you can always topstitch it with a narrow zig-zag or appropriate stretch stitch of your choosing.
-If you are not using a neckband you will want to finish the seam with **Finishing Method 2** and topstitch with 6mm (1/4 inch) instead of 1cm (3/8 inch).
+Wenn du dir Sorgen machst, dass das Absteppen des Nackenbandes mit einem Geradstich nicht dehnbar genug ist, kannst du es auch mit einem schmalen Zickzackstich oder einem geeigneten Stretchstich deiner Wahl absteppen.
+Wenn du kein Nackenband verwendest, musst du die Naht mit **Ausarbeitungsmethode 2** beenden und mit 6 mm (1/4 Zoll) statt 1 cm (3/8 Zoll) absteppen.
 
 </Note>
 
@@ -149,4 +149,4 @@ If you are not using a neckband you will want to finish the seam with **Finishin
 
 ## Schritt 12: Ta-daaa
 
-Enjoy your Yuri!
+Genieße deine/n Yuri!

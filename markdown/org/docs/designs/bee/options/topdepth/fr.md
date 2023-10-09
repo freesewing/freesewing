@@ -1,5 +1,5 @@
 ---
-titre: "Profondeur de la partie supérieure"
+title: "Profondeur supérieure"
 ---
 
 ***

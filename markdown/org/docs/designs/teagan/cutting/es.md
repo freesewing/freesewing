@@ -1,5 +1,5 @@
 ---
-title: "Teagan T-shirt: Cutting Instructions"
+title: "Camiseta Teagan: Instrucciones de corte"
 ---
 
 - Cortar 1 atrás en el pliegue.

@@ -8,7 +8,7 @@ import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 
 export const ns = ['account']
 
-const Avatar = ({ img, app = false }) => (
+export const Avatar = ({ img, app = false }) => (
   <div className={`mask mask-squircle bg-neutral z-10 ${app ? 'w-24' : 'w-full'}`}>
     <img
       src={img}

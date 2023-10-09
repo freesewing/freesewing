@@ -1,8 +1,8 @@
 ---
-title: Paperless Patterns
+title: Patrones sin papel
 ---
 
-The paperless setting lets you generate a sewing pattern that includes extra dimensions as well as a grid (in either metric or imperial, based on your choice of units).
+La configuración sin papel te permite generar un patrón de costura que incluye dimensiones adicionales , así como una cuadrícula (en sistema métrico o imperial, según las unidades que elijas en ).
 
-This allows you to skip printing the pattern altogether. Instead you can transfer it directly onto the fabric, or an intermediate medium such as pattern paper.
+Esto te permite omitir por completo la impresión del patrón. En su lugar, puedes transferirlo directamente a la tela, o a un medio intermedio como el papel para patrones .
 

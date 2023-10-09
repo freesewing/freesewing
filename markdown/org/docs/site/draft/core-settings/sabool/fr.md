@@ -1,20 +1,20 @@
 ---
-title: Include Seam Allowance
+title: Inclure la marge de couture
 ---
 
-This [Core Setting][core-settings] controls whether or not to include seam allowance on your pattern.
+Ce [Paramètre de base][core-settings] détermine s'il faut ou non inclure la couture sur votre modèle.
 
-By default, seam allowance is not included. To generate a pattern with seam allowance, you should enable it by changing this option to **Yes**.
+Par défaut, la marge de couture n'est pas incluse. Pour générer un motif avec couture vous devez l'activer en définissant cette option sur **Oui**.
 
 <Note>
 
-FreeSewing's core library only takes a single setting to handle seam allowance: `sa`.
-However, for convenience, we've split this up into two different settings on the website:
+La bibliothèque de base de FreeSewing ne prend en compte qu'un seul paramètre pour gérer la marge de couture : `sa`.
+Toutefois, pour des raisons de commodité, nous avons divisé cette fonction en deux paramètres différents sur le site web :
 
-- **[Include Seam Allowance](/docs/site/draft/core-settings/sabool)**: Controls whether or not to include seam allowance
-- **[Seam Allowance Size](/docs/site/draft/core-settings/samm)**: Controls how big to make the seam allowance, if it is included
+- **[Inclure la marge de couture](/docs/site/draft/core-settings/sabool)** : Contrôle l'inclusion ou non de la marge de couture
+- **[Taille de la marge de couture](/docs/site/draft/core-settings/samm)** : Contrôle la taille de la marge de couture, si elle est incluse
 
-The latter will only be shown if you've enabled the former.
+Cette dernière option ne sera affichée que si vous avez activé la première.
 
 </Note>
 [core-settings]: /docs/site/draft/core-settings/

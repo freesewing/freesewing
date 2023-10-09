@@ -1,27 +1,27 @@
 ---
-title: "Cross back ties"
+title: "Cintas cruzadas"
 ---
 
 ***
 
-A variation of Bee, where the neck ties cross and tie in the back by looping into a band that replaces the band tie
+Una variación de Bee, en la que los lazos del cuello se cruzan y se anudan en la espalda haciendo un bucle en una banda que sustituye al lazo de la banda
 
-#### Default
+#### Defecto
 
-- 2 neck ties
-- 1 band tie
+- 2 lazos para el cuello
+- 1 corbata de banda
 
-The neck ties are sewn into the cups and tie at the neck like a halter.  
-The band tie is thread through casings in the cups and ties with itself at the back
+Los lazos del cuello están cosidos a las copas y se anudan al cuello como un cabestro.  
+El lazo de la banda se pasa a través de las fundas de las copas y se anuda consigo mismo en la espalda.
 
-#### Cross Back Ties
+#### Lazos cruzados para la espalda
 
-- 2 neck ties
-- No band tie
+- 2 lazos para el cuello
+- Sin lazo de banda
 
-The band tie and casing on the cups are replaced by a band which is sewn with loops in the back.  
-The neck ties are longer and cross over each other in the back, then go through the loops in the band and then tie with one another.
+El lazo de la banda y la funda de las copas se sustituyen por una banda cosida con lazos en la espalda.  
+Los lazos del cuello son más largos y se cruzan en la espalda, luego pasan por los lazos de la banda y se anudan entre sí.
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_crossbackties_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bee_crossbackties_sample.svg "Efecto de esta opción en el patrón")

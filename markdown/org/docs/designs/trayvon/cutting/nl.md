@@ -1,5 +1,5 @@
 ---
-title: "Trayvon tie: Cutting Instructions"
+title: "Trayvon das: Snij-instructies"
 ---
 
 - **Buitenstof**
@@ -15,11 +15,11 @@ title: "Trayvon tie: Cutting Instructions"
 
 <Warning>
 
-###### Caveat
+###### Let op
 
-- There is no seam allowance on the **interfacing** parts and the **loop**
-- The **lining** **tip** and **tail** have only seam allowance at the tip
-- The **fabric** **tip** and **tail** have only seam allowance at the tip and center
+- Er zit geen naadtoeslag op de **interfacing** delen en de **lus**
+- De **voering** **tip** en **staart** hebben alleen naadtoeslag bij de punt
+- De **stof** **tip** en **staart** hebben alleen naadtoeslag bij de punt en het midden
 
 </Warning>
 

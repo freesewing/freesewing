@@ -1,12 +1,13 @@
 import { front } from './front.mjs'
 
 function jaegerInnerPocketBag({
-  paperless,
   sa,
   store,
   complete,
   points,
   options,
+  expand,
+  units,
   macro,
   Point,
   paths,
@@ -16,6 +17,32 @@ function jaegerInnerPocketBag({
   const width = store.get('innerPocketWidth')
   const welt = store.get('innerPocketWeltHeight')
   const height = width * options.innerPocketDepth
+
+  if (expand) {
+    store.flag.preset('expandIsOn')
+  } else {
+    // Expand is off, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
+    store.flag.note({
+      msg: `jaeger:cutInnerPocketBag`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
+      replace: {
+        width: units(width + extraSa),
+        length: units(height + extraSa),
+      },
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
 
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(width, 0)
@@ -34,64 +61,61 @@ function jaegerInnerPocketBag({
     .close()
     .attr('class', 'lining')
 
-  paths.fold = new Path()
-    .move(points.foldLeft)
-    .line(points.foldRight)
-    .attr('class', 'stroke-sm lining dashed')
+  if (complete)
+    paths.fold = new Path()
+      .move(points.foldLeft)
+      .line(points.foldRight)
+      .addClass('stroke-sm lining dashed')
+      .addText('foldAlongThisLine', 'center fill-note')
 
-  if (complete) {
-    points.title = points.topLeft.shiftFractionTowards(points.foldRight, 0.5)
-    // Title
-    macro('title', {
-      at: points.title,
-      nr: 14,
-      title: 'innerPocketBag',
-    })
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'lining sa')
 
-    // Grainline
-    macro('grainline', {
-      from: points.bottomLeft.shift(0, 10),
-      to: points.topLeft.shift(0, 10),
-    })
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'lining' })
 
-    // Instructions
-    paths.fold.attr('data-text', 'foldAlongThisLine').attr('data-text-class', 'center')
+  // Title
+  points.title = points.topLeft.shiftFractionTowards(points.foldRight, 0.5)
+  macro('title', {
+    at: points.title,
+    nr: 14,
+    title: 'innerPocketBag',
+    align: 'center',
+  })
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'lining sa')
+  // Grainline
+  macro('grainline', {
+    from: points.bottomLeft.shift(0, 10),
+    to: points.topLeft.shift(0, 10),
+  })
 
-    if (paperless) {
-      macro('hd', {
-        from: points.topLeft,
-        to: points.topRight,
-        y: points.topRight.y - sa - 15,
-      })
-      macro('vd', {
-        from: points.bottomRight,
-        to: points.foldRight,
-        x: points.topRight.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.foldRight,
-        to: points.topRight,
-        x: points.topRight.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.bottomRight,
-        to: points.topRight,
-        x: points.topRight.x + sa + 30,
-      })
-      macro('vd', {
-        from: points.bottomLeft,
-        to: points.foldLeft,
-        x: points.topLeft.x - sa - 15,
-      })
-      macro('vd', {
-        from: points.foldLeft,
-        to: points.topLeft,
-        x: points.topLeft.x - sa - 15,
-      })
-    }
-  }
+  // Dimensions
+  macro('hd', {
+    id: 'wFull',
+    from: points.topLeft,
+    to: points.topRight,
+    y: points.topRight.y - sa - 15,
+  })
+  macro('vd', {
+    id: 'hToFold',
+    from: points.bottomRight,
+    to: points.foldRight,
+    x: points.topRight.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFromFold',
+    from: points.foldRight,
+    to: points.topRight,
+    x: points.topRight.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottomRight,
+    to: points.topRight,
+    x: points.topRight.x + sa + 30,
+  })
 
   return part
 }

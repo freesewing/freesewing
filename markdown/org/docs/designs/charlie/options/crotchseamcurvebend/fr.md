@@ -1,9 +1,9 @@
 ---
-title: "Crotch seam bend"
+title: "Courbure de la fourche avant"
 ---
 
-Controls the curvature of the croth seam, which influences the fit at your crotch.
+Contrôle la courbure de la couture du croth, qui influence l'ajustement à votre croûte.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_crotchseamcurvebend_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_crotchseamcurvebend_sample.svg "Effet de cette option sur le motif")

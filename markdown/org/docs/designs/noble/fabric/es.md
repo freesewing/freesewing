@@ -1,18 +1,18 @@
 ---
-title: "Noble body block: Fabric Options"
+title: "Bloque de cuerpo noble: Opciones de tejido"
 ---
 
-If you are making a default Noble to see how it fits we recommend a fabric such as **Calico (Muslin)** or a cheaper fabric that matches the drape and stretch of the fabric you intend to make a finalised version of Noble with.
+Si vas a hacer un Noble por defecto para ver cómo te queda, te recomendamos un tejido como **Calico (Muselina)** o un tejido más barato que tenga la misma caída y elasticidad que el tejido con el que pretendes hacer una versión final del Noble.
 
-You can use scraps of fabrics from your stash so don't worry about buying fabric specifically for Noble.
+Puedes utilizar retazos de tela de tu alijo, así que no te preocupes por comprar tela específica para Noble.
 
 <Note>
 
-###### Noble is a block, not a pattern
+###### Noble es un bloque, no un patrón
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Un bloque es una forma básica en la que se basan otros patrones.
+A veces también se llaman trampas, aunque los puristas argumentarán que un bloque y una inclinación son cosas diferentes.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Los bloques normalmente no se hacen as-is sino que sirven como base para otros patrones.
 
 </Note>

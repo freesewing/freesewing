@@ -1,9 +1,9 @@
 ---
-title: "Waralee wrap pants: What You Need"
+title: "Pantalones Waralee: Lo que necesitas"
 ---
 
-To make Waralee, you will need the following:
+Para hacer Waralee, necesitarás lo siguiente:
 
 - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
-- About 2 meters (2.2 yards) of a suitable fabric ([see Waralee Fabric options](/docs/patterns/waralee/fabric/))
-- Some interfacing for the waistband and pockets (if making pockets).
+- Unos 2 metros (2,2 yardas) de una tela adecuada ([consulta las opciones de tela Waralee](/docs/patterns/waralee/fabric/))
+- Algo de entretela para la cintura y los bolsillos (si haces bolsillos).

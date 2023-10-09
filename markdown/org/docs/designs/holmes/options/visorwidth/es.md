@@ -1,10 +1,10 @@
 ---
-title: "Visor width"
+title: "Anchura de la visera"
 ---
 
 ***
 
-Controls the width of the visor
+Controla la anchura del visor
 
 ## Efecto de esta opción en el patrón
 

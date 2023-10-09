@@ -1,5 +1,5 @@
 ---
-title: "Neck tie width"
+title: "Ancho de la cinta del cuello"
 ---
 
 ***

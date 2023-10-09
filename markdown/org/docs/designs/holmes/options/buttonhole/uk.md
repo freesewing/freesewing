@@ -1,11 +1,11 @@
 ---
-title: "Buttonhole guide"
+title: "Петля ґудзика"
 ---
 
 ***
 
-Adds a buttonhole to the ear flap to help you draft the buttonhole ear flap variant
+Додає петельку до вушного клапана, щоб допомогти вам створити варіант петельки для вушного клапана
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](holmes_buttonhole_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](holmes_buttonhole_sample.svg "Вплив цієї опції на шаблон")

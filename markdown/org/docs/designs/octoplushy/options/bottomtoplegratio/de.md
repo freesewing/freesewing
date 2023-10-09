@@ -1,8 +1,8 @@
 ---
-title: "Bottom to Top Leg Ratio"
+title: "Verhältnis von unterem zu oberem Bein"
 ---
 
-This setting adjusts the ratio between the top and the bottom of the legs. The lower the ration, the more fabric will be associated with the top of the leg. 100% makes both the top and the bottom the same.
+Mit dieser Einstellung wird das Verhältnis zwischen der Oberseite und der Unterseite der Beine angepasst. Je niedriger der Wert, desto mehr Stoff wird mit dem oberen Teil des Beins verbunden. 100% bedeutet, dass die Ober- und Unterseite gleich sind.
 
 ## Effekt dieser Option auf das Schnittmuster
 

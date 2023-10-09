@@ -1,8 +1,0 @@
----
-shoulderSeamLength:
-  title: Longueur de couture d'épaule
-  description: Contrôle la longueur de la couture d'épaule
-drapeAngle:
-  title: Angle du drapé
-  description: Contrôle le montant du drapé
-

@@ -1,22 +1,22 @@
 ---
-title: "Hi the shark: What You Need"
+title: "Привіт, акуло: Що вам потрібно"
 ---
 
-To make Hi, you will need the following:
+Щоб зробити Hi, вам знадобиться наступне:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- About 1 meter (1.1 yards) of a suitable fabric (Upper body) ([see Hi Fabric options](/docs/patterns/hi/fabric/))
-- About 0.5 meters (0.6 yards) of a suitable fabric (Belly) ([see Hi Fabric options](/docs/patterns/hi/fabric/))
-- Small piece for the mouth
-- Small piece of fabric for eyes
-- Suitable, unraveling, fabric for the teeth
-- Stuffing
-- Topstiching thread (thick thread) for gills
+- [Базові матеріали для шиття](/docs/sewing/basic-sewing-supplies)
+- Приблизно 1 метр (1,1 ярда) відповідної тканини (верхня частина тіла) ([див. варіанти тканини Hi Fabric](/docs/patterns/hi/fabric/))
+- Приблизно 0,5 метра (0,6 ярдів) відповідної тканини (Belly) ([див. варіанти тканини Hi Fabric](/docs/patterns/hi/fabric/))
+- Невеликий шматочок для рота
+- Невеликий шматочок тканини для очей
+- Підходяща тканина, що розпускається, для зубів
+- Начинка
+- Нитка для вшивання зябер (товста нитка)
 
 <Note>
 
-This list is based on a default Hi and you may need less or more fabric dependant on the [size you are making Hi](/docs/patterns/hi/options/size/).
+Цей список базується на стандартній моделі Hi, і вам може знадобитися менше або більше тканини, залежно від [розміру, який ви робите](/docs/patterns/hi/options/size/).
 
-For instance a 500% Hi will need 5 meters (1 meter x 500%  = 5 meters) and a 50% Hi will need 0.5 meters (1 meter x 50% = 0.5 meters).
+Наприклад, для 500% Hi потрібно 5 метрів (1 метр х 500% = 5 метрів), а для 50% Hi - 0,5 метра (1 метр х 50% = 0,5 метра).
 
 </Note>

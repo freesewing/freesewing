@@ -1,39 +1,39 @@
 ---
-title: "Lunetius Lacerna: Sewing Instructions"
+title: "Lunetius Lacerna: Instrucciones de costura"
 ---
 
 <Note>
 
-All the sewing can be done by machine or by hand as you prefer. If you want to sew with historically accurate thread, you can use linen or wool thread, or silk if you prefer.
+Toda la costura puede hacerse a máquina o a mano, como prefieras. Si quieres coser con hilo históricamente exacto, puedes utilizar hilo de lino o lana, o de seda si lo prefieres.
 
 </Note>
 
-### Step 1: Sewing and finishing the centre back seam
+### Paso 1: Coser y rematar la costura central trasera
 
-- If you cut Lunetius with a centre back seam, sew this up first and finish the seam in some way. You can do this by binding it, or by felling it to the fabric. On a stretch fabric simply sewing up the centre back seam is enough.
-
-<Tip>
-
-When done by hand, this can be done with a spaced backstitch, or a running stitch with the occasional backstitch.
-
-On the machine a regular straight stitch in any size will work.
-
-Felling the edges by hand can be done with a felling stitch, or a running stitch if you prefer. On the machine you can use any stitch you use to hem fabric.
-
-</Tip>
-
-### Step 2: Hemming the edges
-
-- The next and last step is to finish the edges. This can be done by turning a hem on the whole edge, or by using a binding. Once this is done, you are finished!
+- Si cortas Lunetius con una costura trasera central, cósela primero y remata la costura de alguna forma. Puedes hacerlo atándolo, o talándolo a la tela. En un tejido elástico, basta con coser la costura central trasera.
 
 <Tip>
 
-When handsewing you can use a felling stitch or a running stitch. Or any other stitch you prefer for hemming.
+Cuando se hace a mano, puede hacerse con un pespunte espaciado, o con una puntada corrida con un pespunte ocasional.
 
-On the machine, a straight stitch is a good option, but if you have a blind hem stitch that is an option too.
+En la máquina funcionará una puntada recta normal de cualquier tamaño.
+
+Puedes talar los bordes a mano con una puntada de talar, o con una puntada corrida si lo prefieres. En la máquina puedes utilizar cualquier puntada que utilices para hacer dobladillos en tela.
 
 </Tip>
 
-### Step 3: Enjoy!
+### Paso 2: Dobladillar los bordes
 
-That's it you are all done! Now take a _fibula_ (a brooch, pin or clasp) to fasten your cloak over your right shoulder (that is how the Romans did it, you can of course also take the left shoulder, or the middle, or whatever you prefer) and enjoy looking dramatic.
+- El siguiente y último paso es acabar los bordes. Esto puede hacerse haciendo un dobladillo en todo el borde, o utilizando un ribete. Una vez hecho esto, ¡has terminado!
+
+<Tip>
+
+Al coser a mano puedes utilizar una puntada de tala o una puntada corrida. O cualquier otra puntada que prefieras para el dobladillo.
+
+En la máquina, una puntada recta es una buena opción, pero si tienes una puntada de dobladillo invisible también es una opción.
+
+</Tip>
+
+### Paso 3: ¡Disfrútalo!
+
+Ya está, ¡ya has terminado! Ahora coge una _fíbula_ (un broche, alfiler o broche) para sujetar tu capa sobre el hombro derecho (así es como lo hacían los romanos, por supuesto también puedes coger el hombro izquierdo, o el medio, o lo que prefieras) y disfruta de un aspecto espectacular.

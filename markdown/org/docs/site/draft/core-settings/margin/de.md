@@ -2,8 +2,8 @@
 title: Randabstand
 ---
 
-The margin setting controls how much space will be added around each pattern part when calculating the pattern layout.
+Die Randeinstellung legt fest, wie viel Platz um jeden Teil des Musters bei der Berechnung des Musterlayouts hinzugefügt wird.
 
-Each pattern part is laid out as a rectangle on the page. The spacing around (and between) these rectangles is controlled by this setting.
+Jedes Musterteil wird als Rechteck auf der Seite ausgelegt. Der Abstand um (und zwischen) diesen Rechtecken wird durch diese Einstellung gesteuert.
 
 

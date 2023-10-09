@@ -1,5 +1,5 @@
 ---
-title: "Florent flat cap: Cutting Instructions"
+title: "Florent platte pet: Snij-instructies"
 ---
 
 Afhankelijk van hoeveel stof er beschikbaar is, wil je misschien twee boven- of zijkanten knippen, vandaar de instructies op het patroon zelf. Opgelet: het patroon heeft een naadwaarde rondom de bovenkant dus laat deze weg als je dit deel aan de stofvouw knipt!

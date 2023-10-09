@@ -1,45 +1,45 @@
 ---
-title: "Benjamin bow tie: Sewing Instructions"
+title: "Pajarita Benjamin: Instrucciones de costura"
 ---
 
 ## Notas y consejos
 
 ### Precisión
 
-Since a bow tie is a rather small item, precision with sewing is key to a good result. Any slight difference between the upper and lower part of the bow will stand out. To get a great result I found it very helpful to trace the actual seam lines onto the interfacing and follow that while sewing.
+Como una pajarita es un artículo más bien pequeño, la precisión en la costura es clave para un buen resultado. Cualquier ligera diferencia entre la parte superior e inferior del arco se destacará. To get a great result I found it very helpful to trace the actual seam lines onto the interfacing and follow that while sewing.
 
 ### Presione sabiamente
 
-Later in the construction steps, you will be asked to press your fabric. Please be careful that you are not using too much heat on a delicate fabric that can't handle it.
+Más adelante en las etapas de construcción, se le pedirá que pruebe su tejido. Please be careful that you are not using too much heat on a delicate fabric that can't handle it.
 
-It's a good idea to try pressing some fabric scraps before you start. This will allow you to figure out what is a good heat setting for the fabric you are using.
+Es una buena idea intentar presionar algunos restos de tela antes de empezar. This will allow you to figure out what is a good heat setting for the fabric you are using.
 
 ### Eligiendo tu grano
 
-This pattern includes a grain line. This grain line is mostly there to be used with the interfacing. Since each pattern piece is interfaced, the grain line of the fabric itself is not so important. You can even change this from the standard for more informal impressions.
+Este patrón incluye una línea de grano. This grain line is mostly there to be used with the interfacing. Since each pattern piece is interfaced, the grain line of the fabric itself is not so important. You can even change this from the standard for more informal impressions.
 
 <Note>
 
-If this all sounds very confusing, might I suggest reading the help
-page on [Fabric grain](/docs/sewing/fabric-grain).
+Si todo esto te parece muy confuso, te sugiero que leas la página de ayuda
+sobre [Grano de tela](/docs/sewing/fabric-grain).
 
 </Note>
 
-### Bow tie adjustment ribbon and hardware
+### Cinta de ajuste de la pajarita y herrajes
 
-By default, this design makes a fixed-length bow tie that is the right length for a certain neck size. However, by enabling the Adjustment Ribbon option, it can also make a tie that uses an adjustment ribbon and hardware that makes the bow tie adjustable to different neck sizes. This is useful if not all of your shirts have the same neck measurements, or if you sometimes like shirts with more ease in the neck.
+Por defecto, este diseño hace una pajarita de longitud fija que tiene la longitud adecuada para un determinado tamaño de cuello. Sin embargo, si activas la opción Cinta de ajuste, también puedes hacer una corbata que utilice una cinta de ajuste y un herraje que haga que la pajarita se ajuste a distintos tamaños de cuello. This is useful if not all of your shirts have the same neck measurements, or if you sometimes like shirts with more ease in the neck.
 
-These adjustment ribbons and bow tie hardware can be found in the better haberdasheries or can be ordered online.
+Estas cintas de ajuste y los herrajes para pajaritas se pueden encontrar en las mejores mercerías o se pueden encargar por Internet.
 
 <Note>
 
-These instructions are for the type of adjustment ribbon that comes with
-holes at regular intervals, to be used in combination with two-piece
-hardware consisting of an oval loop part and a part with a smaller loop
-and attached T-shaped hook.
+Estas instrucciones son para el tipo de cinta de ajuste que viene con
+agujeros a intervalos regulares, para utilizar en combinación con el herraje de dos piezas
+, que consiste en una pieza de bucle ovalado y una pieza con un bucle más pequeño
+y un gancho en forma de T unido.
 
-There are other styles of bow tie ribbons and hardware, but their use is
-outside the scope of these instructions.
+Existen otros estilos de cintas para pajaritas y herrajes, pero su uso queda
+fuera del alcance de estas instrucciones.
 
 </Note>
 
@@ -51,101 +51,101 @@ Since the bow tie is constructed with the right sides of the fabric against each
 
 ### Paso 1: Aplicar interfaz
 
-Apply interfacing to all parts where you feel it's needed.
+Aplicar interfaz a todas las partes donde sientes que es necesario.
 
 ### Sin cinta de ajuste
 
-#### Step 2: Sew the bow to the collar band
+#### Paso 2: Cose el lazo a la cinta del cuello
 
-Put one of the Collar Band parts on one of the Bow parts, right sides together. Align the ends of both parts. Now sew across the end to join the parts.
+Coloca una de las piezas de la cinta del cuello sobre una de las piezas del lazo, con los lados derechos juntos. Alinear los extremos de ambas partes. Ahora coser a lo largo del extremo para unirse a las partes.
 
-![Sew the collar band to the bow](step12.png)
+![Cose la cinta del cuello al lazo](step12.png)
 
-In a similar fashion, sew a second Bow part to the other end of the same Collar Band.
+De forma similar, cose una segunda parte del lazo al otro extremo de la misma cinta del cuello.
 
-Repeat these steps to sew the other 2 Bows to the other Collar Band.
+Repite estos pasos para coser los otros 2 lazos a la otra cinta del cuello.
 
-Press open all the seams.
+Pulse Abrir todas las costuras.
 
-You now have two identical single sided bow ties.
+Ahora tienen dos idénticos lazos de un solo lado con un solo lado.
 
 #### Paso 3: Unirse a ambos lados
 
-![Sew both sides together](step13.png)
+![Difunde ambos lados juntos](step13.png)
 
-Lay both the sides you made on top of each other, right sides together. Sew all along the edges, but leave an area of 5 cm open in the middle of the collar band. Through this opening we will turn the bow tie right side out.
+Diga ambos lados que usted hizo sobre el otro, derecha juntos juntos. Cose todo a lo largo de los bordes, pero deja una zona de 5 cm abierta en el centro de la banda del cuello. Through this opening we will turn the bow tie right side out.
 
 #### Paso 4: girando
 
-![Clip seam allowance](step14.png)
+![Permiso de costura de clip](step14.png)
 
 Clip the seam allowance back in the usual spots and make little cuts to allow for a smooth curves.
 
-Then use the back of a large crochet hook, or some other appropriately long skinny object, to turn the two sides right-side-out through the little opening. Start by gently pulling the two fabric pieces at the end of the bow apart. Then push the end of the bow up between the two pieces of fabric. Keep gently pushing while pulling the rest of the tie down over it. This can be a tedious procedure. Take your time and be gentle. It's easy to push too hard and rip stitches or fabric.
+Then use the back of a large crochet hook, or some other appropriately long skinny object, to turn the two sides right-side-out through the little opening. Start by gently pulling the two fabric pieces at the end of the bow apart. Then push the end of the bow up between the two pieces of fabric. Keep gently pushing while pulling the rest of the tie down over it. Este puede ser un procedimiento tedioso. Take your time and be gentle. Es fácil empujar demasiado duro y rasgar las cintas o tejidos.
 
 Once you have the tie right side out, make sure you push all the corners and sides out before giving it a good press.
 
 #### Paso 5: Cerrando
 
-![Closing the bow tie](step15.png)
+![Cerrando la corbata del arco](step15.png)
 
-Now all that is left is closing the little hole we used to turn the bow tie right side out. You can do this by hand with a slip stitch, or a ladder stitch. Or you can use the machine and stitch right at the edge of the band. Since this will normally be hidden by the collar of your shirt, it will not be all that obvious.
+Ahora sólo queda cerrar el agujerito que utilizamos para poner la pajarita del derecho. Puedes hacer esto a mano con una banda de deslizamiento, o una banda de escalera. O puede usar la máquina y doblar a la derecha en el borde de la banda. Since this will normally be hidden by the collar of your shirt, it will not be all that obvious.
 
-Now give it one last press and admire your work.
+Ahora dale una última prensa y admira su trabajo.
 
 ### Con cinta de ajuste
 
 #### Paso 2: Adjuntar la cinta
 
-![Sew the ribbon to part 1](step22.png)
+![Difunde la cinta en la parte 1](step22.png)
 
-The first thing to do is to sew the adjustment ribbon to the Short Bow part. The ribbon should be 290mm long. If it is different, you have to make sure that you align it such that the ribbon and short bow piece together are as long as the long bow piece.
+Lo primero que hay que hacer es coser la cinta de ajuste a la parte del lazo corto. La cinta debe ser de 290mm de largo. If it is different, you have to make sure that you align it such that the ribbon and short bow piece together are as long as the long bow piece.
 
-Put right sides of the Short Bow piece and the ribbon together.
+Junta los lados derechos de la pieza del lazo corto y la cinta.
 
-Now sew across the end to join the parts.
+Ahora coser a lo largo del extremo para unirse a las partes.
 
 #### Paso 3: Unirse a ambos lados
 
-![Sew both sides together](step23.png)
+![Difunde ambos lados juntos](step23.png)
 
-Lay both of the Medium Bow parts on top of each other, right sides together.
+Coloca las dos partes del lazo mediano una encima de la otra, con los lados derechos juntos.
 
-Sew all along the edges, but leave the short end open. Through this opening we will turn the bow tie part right side out.
+Cose a lo largo de los bordes, pero deja abierto el extremo corto. A través de esta abertura giraremos la parte de la pajarita hacia el derecho.
 
-Lay the Long Bow on top of the ribbon and Short Bow part, also right sides together.
+Coloca el Lazo Largo encima de la cinta y la parte del Lazo Corto, también con los lados derechos juntos.
 
-Again, sew all along the edges, leaving the short end open.
+Cose de nuevo a lo largo de los bordes, dejando abierto el extremo corto.
 
 #### Paso 4: girando
 
-![Clip seam allowance](step14.png)
+![Permiso de costura de clip](step14.png)
 
 Clip the seam allowance back in the usual spots and make little cuts to allow for a smooth curves.
 
-Then use the back of a large crochet hook, or some other appropriately long skinny object, to turn the two parts right-side-out through the ends. Start by gently pulling the two fabric pieces at the end of the bow apart. Then push the end of the bow up between the two pieces of fabric. Keep gently pushing while pulling the rest of the tie down over it. This can be a tedious procedure. Take your time and be gentle. It's easy to push too hard and rip stitches or fabric.
+Then use the back of a large crochet hook, or some other appropriately long skinny object, to turn the two parts right-side-out through the ends. Start by gently pulling the two fabric pieces at the end of the bow apart. Then push the end of the bow up between the two pieces of fabric. Keep gently pushing while pulling the rest of the tie down over it. Este puede ser un procedimiento tedioso. Take your time and be gentle. Es fácil empujar demasiado duro y rasgar las cintas o tejidos.
 
 Once you have the part right side out, make sure you push all the corners and sides out before giving it a good press.
 
-Do this with both parts.
+Hágalo con ambas partes.
 
 #### Paso 5: Añadir hardware
 
-Now we need to add the two pieces of hardware that make the bow tie adjustable. The oval loop piece will be attached to the part without the adjustment ribbon. And, the piece with the T-hook will go on the part with the ribbon.
+Ahora tenemos que añadir las dos piezas de hardware que hacen que la corbata del arco sea ajustable. La pieza del bucle ovalado se fijará a la pieza sin la cinta de ajuste. Y, la pieza con el gancho en T irá en la parte con la cinta.
 
-First do the part without the ribbon. This is because the fabric tail of the ribbon piece will have to go through the oval part before sewing on its hardware. If you would do it in the other sequence, you may not be able to feed it through.
+Primero hacer la parte sin el ribbon. This is because the fabric tail of the ribbon piece will have to go through the oval part before sewing on its hardware. Si lo haces en la otra secuencia, es posible que no puedas alimentarlo.
 
-To finish the ends, we're going to fold the fabric in three steps, before sewing it in a fourth step:
+Para terminar los extremos, vamos a doblar la tela en tres pasos, antes de coserla en un cuarto paso:
 
-![Three steps to fold, one step to sew](step25.png)
+![Tres pasos para doblar, un paso para coser](step25.png)
 
-1. First we fold the sides in at an angle.
-2. Then we fold the end over by just a small seam allowance, something like 5 mm.
-3. Then we fold it over again, for about 1 cm.
-4. Finally we stick the oval loop under this last fold and stitch across.
+1. Primero doblamos los lados en ángulo.
+2. Luego doblamos el extremo por un pequeño margen de costura, algo así como 5 mm.
+3. Luego lo volvemos a doblar, aproximadamente 1 cm.
+4. Por último, metemos el lazo ovalado por debajo de este último pliegue y lo cosemos a lo largo.
 
-Now feed the adjustment ribbon piece through the oval loop, and attach the T-hook to the end of the ribbon, sewing it in the same way.
+Ahora pasa el trozo de cinta de ajuste por el lazo ovalado, y une el gancho en T al extremo de la cinta, cosiéndolo de la misma forma.
 
-Hook the T in one of the adjustment holes and your bow tie is done!
+¡Gana la T en uno de los agujeros de ajuste y tu corbata de arco se hace!
 
-![Good job!](finished.gif)
+![Buen trabajo!](finished.gif)

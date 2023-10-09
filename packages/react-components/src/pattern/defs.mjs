@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 import sanitize from 'html-react-parser'
@@ -86,9 +87,8 @@ const PaperlessDefs = ({ units = 'metric', stacks }) =>
     <MetricPaperlessDefs stacks={stacks} />
   )
 
-export const Defs = (props) => {
-  console.log(props.svg.defs)
-  return props.svg ? (
+export const Defs = (props) =>
+  props.svg ? (
     <defs>
       {props.svg.defs.list ? sanitize(Object.values(props.svg.defs.list).join('')) : null}
       {props.settings[0].paperless ? (
@@ -96,4 +96,3 @@ export const Defs = (props) => {
       ) : null}
     </defs>
   ) : null
-}

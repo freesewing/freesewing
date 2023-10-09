@@ -1,10 +1,10 @@
 ---
-title: "Visor width"
+title: "Breite des Mützenschirms"
 ---
 
 ***
 
-Controls the width of the visor
+Steuert die Breite des Mützenschirms
 
 ## Effekt dieser Option auf das Schnittmuster
 

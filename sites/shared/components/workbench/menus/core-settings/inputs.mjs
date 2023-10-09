@@ -1,18 +1,35 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
+import { capitalize } from 'shared/utils.mjs'
 import { ListInput, SliderInput, BoolInput, MmInput } from '../shared/inputs.mjs'
+import { useTranslation } from 'next-i18next'
+import { collection } from 'site/hooks/use-design.mjs'
 
 /** an input for the 'only' setting. toggles individual parts*/
 const OnlySettingInput = (props) => {
+  const { t } = useTranslation(collection)
   const { config } = props
-
-  // set up choice titles
-  config.choiceTitles = {}
-  config.list.forEach((p) => (config.choiceTitles[p] = p))
+  config.sideBySide = true
+  config.titleMethod = (entry, t) => {
+    const chunks = entry.split('.')
+    return <span className="font-medium text-base">{t(`${chunks[0]}:${chunks[1]}`)}</span>
+  }
+  config.valueMethod = (entry) => <span className="text-sm">{capitalize(entry.split('.')[0])}</span>
+  config.dense = true
+  // Sort alphabetically (translated)
+  const order = []
+  for (const part of config.list) {
+    const [ns, name] = part.split('.')
+    order.push(t(`${ns}:${name}`) + `|${part}`)
+  }
+  order.sort()
+  config.list = order.map((entry) => entry.split('|')[1])
 
   return <ListInput {...props} />
 }
 
 export const inputs = {
   complete: ListInput,
+  expand: ListInput,
   locale: ListInput,
   margin: MmInput,
   only: OnlySettingInput,

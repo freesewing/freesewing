@@ -1,89 +1,89 @@
 ---
-title: "Octoplushy, the plushy octopus: Sewing Instructions"
+title: "Octoplushy, плюшевий восьминіг: інструкція з пошиття"
 ---
 
-## Step 1: The Body
+## Крок 1: Тіло
 
-### The Face
+### Обличчя
 
-- **Octoplushy**
-  - With _good sides together_ sew four head parts together, from notch B to the tip of the head part A creating a semi-sphere like shape.
-  - Repeat with the remaining four head parts to create a second half.
-  - Use topstitching, or a long bar-tack, to make the mouth on one of the segments.
-  - On the same section create eyes where the buttons are marked on the pattern.
-  - With _good sides together_ sew the two head halves together, from notch B to the tip of the head part A.
-  - Turn _good sides_ out.
-
-<Note>
-
-There are a couple of ways to make eyes for the Octoplushy version.
-- Buttons
-- Toy eyes
-- Embroidery
-- Felt or other suitable unravelling fabrics which can be combined with a _satin stitch_
-
-</Note>
-
-- **Octopus**
-  - With _good sides together_ sew four head parts together, from notch B to the tip of the head part A creating a semi-sphere like shape.
-  - Repeat with the remaining four head parts to create a second half.
-  - With _wrong sides_ to _good sides_ sew the pupil to eyes parts.
-  - With _good sides together_ sew both short ends of eyebrows together, creating a ring.
-  - With _good sides together_ sew the eyebrows to the circumferences of the eyes, gathering the excess as you go.
-  - Fold the eyebrows in half _wrong sides together_, and sew it again to the eyes. You may find it easier to hand sew this step.
-  - Hand sew the eyes to the lower part of one of the head halves, so that you will have two sections between them when it all comes together.
-  - With _good sides together_ sew the two head halves together, from notch B to the tip of the head part A.
-  - Turn _good sides_ out.
+- **Восьмипалий**
+  - За допомогою _лицьовими сторонами разом_ зшийте чотири деталі голови разом, починаючи від надрізу В і закінчуючи кінчиком деталі голови А, створюючи форму напівсфери.
+  - Повторіть з рештою чотирма частинами голови, щоб створити другу половину.
+  - За допомогою верхньої строчки або довгої шпильки зробіть ротик на одному з сегментів.
+  - На цій же ділянці створіть вушка там, де на викрійці позначені ґудзики.
+  - За допомогою _лицьовими сторонами разом_ зшийте дві половинки голови разом, починаючи від надрізу В до кінчика частини голови А.
+  - Виверніть _хороші сторони_ назовні.
 
 <Note>
 
-Before sewing the eyebrows in half, you can stuff the eyebrows to create a more dramatic looking eyebrow.
+Існує кілька способів зробити очі на версію Octoplushy.
+- Ґудзики
+- Іграшкові очі
+- Вишивка
+- Фетр або інші підходящі тканини, що розпускаються, які можна комбінувати з _атласною гладдю_.
 
 </Note>
 
-- **Squid**
-  - With _good sides together_ sew four head parts together, from notch B to the tip of the head part A creating a semi-sphere like shape.
-  - Repeat with the remaining four head parts to create a second half.
-  - On the head (a) parts fold along the fold-line with _good sides together_.
-  - Sew the straight line that juts out and then turn the flap _good sides_ out.
-  - With _good sides together_ sew the non - flap edges of the head (a) parts to the one of the head halves sewn earlier, from notch B to the tip of the head part A.
-  - With _wrong side_ to _good side_ sew the pupils to the eyes and finish their sides the best you can.
-  - Hand Sew the eyes to the section closest to the legs.
-  - With _good sides together_ sew the two halves together, from notch B to the tip of the head part A making sure that the flaps are on the outside.
-  - Turn _good sides_ out.
+- **Восьминіг.**
+  - За допомогою _лицьовими сторонами разом_ зшийте чотири деталі голови разом, починаючи від надрізу В і закінчуючи кінчиком деталі голови А, створюючи форму напівсфери.
+  - Повторіть з рештою чотирма частинами голови, щоб створити другу половину.
+  - З _виворітного боку_ до _лицьового боку_ пришийте зіницю до деталей очей.
+  - З _лицьовими сторонами разом_ зшийте обидва короткі кінці брів разом, створюючи кільце.
+  - Лицьовими _сторонами разом_ пришийте брови до окружностей очей, збираючи надлишки по ходу роботи.
+  - Складіть брови навпіл _виворітними сторонами разом_, і знову пришийте до очей. Можливо, вам буде простіше зшити цей крок вручну.
+  - Пришийте очі вручну до нижньої частини однієї з половинок голови так, щоб між ними було дві секції, коли все буде зібрано разом.
+  - За допомогою _лицьовими сторонами разом_ зшийте дві половинки голови разом, починаючи від надрізу В до кінчика частини голови А.
+  - Виверніть _хороші сторони_ назовні.
 
-## Step 2: The Legs
+<Note>
 
-- **Octoplushy & Octopus**
-  - With _good sides together_ sew four leg parts together, from notch D to the tip of the leg part C.
-  - Repeat with the remaining four leg parts to create a second half.
-  - With _good sides together_ sew the two leg halves together, from notch D to the tip of the leg part C but only one side. This other side stays open for stuffing later.
+Перед тим, як зшити брови навпіл, ви можете набити брови, щоб створити більш драматичний вигляд.
 
-- **Squid**
-  - With _good sides together_ sew four leg parts together, from notch D to the tip of the leg part C.
-  - Repeat with the remaining four leg parts to create a second half.
-  - With _good sides together_ sew a leg (a) part to each half so you have matching halves.
-  - With _good sides together_ sew the two leg halves together, from notch D to the tip of the leg part C but only one side. This other side stays open for stuffing later.
+</Note>
 
-## Step 3: Final Construction
+- **Кальмар.**
+  - За допомогою _лицьовими сторонами разом_ зшийте чотири деталі голови разом, починаючи від надрізу В і закінчуючи кінчиком деталі голови А, створюючи форму напівсфери.
+  - Повторіть з рештою чотирма частинами голови, щоб створити другу половину.
+  - На голові (а) деталі скласти по лінії згину _лицьовими боками разом_.
+  - Зшийте пряму лінію, яка виступає назовні, а потім виверніть клапан _лицьовими сторонами_ назовні.
+  - Лицьовими боками _до лицьового боку_ пришийте нерозрізні краї деталей голови (а) до однієї з половинок голови, зшитих раніше, від надсічки В до кінчика деталі голови А.
+  - З _виворітного боку_ на _лицьовий бік_ пришийте зіниці до очей і обробіть їхні боки якнайкраще.
+  - Пришийте очі до найближчої до ніг частини.
+  - Лицьовими боками _разом_ зшийте дві половинки, починаючи від надсічки В до кінчика головної частини А, переконуючись, що клапани знаходяться назовні.
+  - Виверніть _хороші сторони_ назовні.
 
-- With _good sides together_ match up the leg parts with the body parts.
-- Sew each leg from notch B/D down and back around to notch B/D.
-- If the leg part is slightly shorter than the leg on the head partsm you will have to ease it in while matching it up. Notches have been provided to make this easier.
+## Крок 2: Ноги
+
+- **Octoplushy & Восьминіг**
+  - Лицьовими боками _разом_ зшийте чотири деталі лапок, починаючи від надсічки D і закінчуючи кінчиком деталі лапки С.
+  - Повторіть з рештою чотирма частинами ніг, щоб створити другу половину.
+  - За допомогою _лицьовими сторонами разом_ зшийте дві половинки штанини разом, починаючи від надсічки D до кінчика частини штанини С, але тільки з одного боку. Інша сторона залишається відкритою для наповнення пізніше.
+
+- **Кальмар.**
+  - Лицьовими боками _разом_ зшийте чотири деталі лапок, починаючи від надсічки D і закінчуючи кінчиком деталі лапки С.
+  - Повторіть з рештою чотирма частинами ніг, щоб створити другу половину.
+  - Склавши _лицьовими сторонами разом_ , пришийте до кожної половинки деталь ноги (а) так, щоб у вас вийшли однакові половинки.
+  - За допомогою _лицьовими сторонами разом_ зшийте дві половинки штанини разом, починаючи від надсічки D до кінчика частини штанини С, але тільки з одного боку. Інша сторона залишається відкритою для наповнення пізніше.
+
+## Крок 3: Остаточна збірка
+
+- За допомогою _гарних сторін разом_ з'єднайте частини ніг з частинами тулуба.
+- Зшийте кожну ніжку від надсічки B/D вниз і назад до надсічки B/D.
+- Якщо ножна частина трохи коротша за ніжку на головній частиніm , вам доведеться полегшити її під час підгонки. Для полегшення цього процесу передбачені насічки.
 
 <Tip>
 
-It is easiest to sew one leg almost to the next B/D notch, stop sewing, pin the next leg, and continue sewing rather than trying to pin and sew all the legs in one go. 
+Найпростіше пришити одну ногу майже до наступної надсічки В/Д, зупинити шиття, приколоти наступну ногу і продовжити шиття, а не намагатися приколоти і пришити всі ноги за один раз. 
 
-Those who are more confident can do this with the needle down on their machine but if you are less confident you may wish to remove from the machine, pin and then start sewing again a little bit over your originial stitching to secure it.
+Ті, хто більш впевнений у собі, можуть робити це на машині з опущеною голкою, але якщо ви менш впевнені, ви можете витягнути голку з машини, закріпити її шпилькою, а потім почати шити знову, трохи вище початкового стібка, щоб закріпити його.
   
 </Tip>
 
-- Turn _good sides_ out.
-- For Octopus sew along stitching lines of the legs before stuffing.
-- Stuff the plushy through the opening in the legs.
-- Hand sew the opening closed.
+- Виверніть _хороші сторони_ назовні.
+- Для Восьминога прошийте по лініях зшивання ніг перед набиванням.
+- Набийте плюшевого звіра через отвір у ногах.
+- Зашийте отвір вручну.
 
-## Step 4: Enjoy!
+## Крок 4: Насолоджуйтесь!
 
-- That's it you are all done now go explore the depths of the oceans with your new Octoplushy!
+- Ось і все, тепер вирушайте досліджувати глибини океанів з вашим новим Octoplushy!

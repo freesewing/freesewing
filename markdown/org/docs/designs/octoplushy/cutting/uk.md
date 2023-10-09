@@ -1,22 +1,22 @@
 ---
-title: "Octoplushy, the plushy octopus: Cutting Instructions"
+title: "Octoplushy, плюшевий восьминіг: Інструкція з нарізки"
 ---
 
-- **Color 1 (Upper body, top of legs & head)**
-  - **Octoplushy, Octopus & Squid**
-    - Cut **8 head** parts
-  - **Octopus only**
-    - Cut **2 eyebrow** parts
-  - **Squid only**
-    - Cut **2 head (a)** parts
+- **Колір 1 (верхня частина тіла, верхня частина ніг & голова)**
+  - **Восьминіжка, восьминіг & Кальмар**
+    - Виріжте **8 частин голови**
+  - **Тільки восьминоги.**
+    - Виріжте **2 частини брови**
+  - **Тільки кальмари.**
+    - Виріжте **2 частини голови (а)**
 
-- **Color 2 (Belly, bottom of legs)**
-  - **Octoplushy, Octopus & Squid**
-    - Cut **8 leg** parts
-  - **Squid only**
-    - Cut **2 leg (a)** parts
+- **Колір 2 (живіт, низ ніг)**
+  - **Восьминіжка, восьминіг & Кальмар**
+    - Виріжте **8 частин для ніг**
+  - **Тільки кальмари.**
+    - Виріжте **2 ніжки (а)** частини
 
-- **Eyes Fabric**
-  - **Octopus & Squid**
-    - Cut **2 eye (white)** parts
-    - Cut **2 pupil (black)** parts
+- **Тканина для очей**
+  - **Восьминіг & Кальмар**
+    - Виріжте **2 ока (білі)** частини
+    - Виріжте **2 зіниці (чорні)** частини

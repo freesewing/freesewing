@@ -1,11 +1,11 @@
 ---
-title: "Across back factor"
+title: "Rückenweitenverhältnis"
 ---
 
 ![Rückenweitenverhältnis](acrossbackfactor.svg)
 
-Beeinflusst das Verhältnis zwischen Rücken- und Schulterweite measurement
+Steuert die Rückenbreite als Faktor der Schultermessung
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_acrossbackfactor_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](jaeger_acrossbackfactor_sample.svg "Effekt dieser Option auf das Schnittmuster")

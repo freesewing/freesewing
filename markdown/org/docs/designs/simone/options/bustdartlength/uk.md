@@ -1,12 +1,12 @@
 ---
-title: "Bust dart length"
+title: "Довжина виточки на грудях"
 ---
 
-Controls how close the **bust darts** approach the bust points.
+Керує тим, наскільки близько **виточки** наближаються до точок обхвату.
 
-- Increase this option to lengthen the bust darts moving them closer to the bust points
-- Decrease this option to shorten the bust darts moving them further away from the bust points
+- Збільште цей параметр, щоб подовжити виточки на грудях, перемістивши їх ближче до точок грудей
+- Зменшіть цей параметр, щоб вкоротити виточки на грудях, перемістивши їх далі від точок грудей
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_bustdartlength_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simone_bustdartlength_sample.svg "Вплив цієї опції на шаблон")

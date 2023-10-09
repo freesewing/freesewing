@@ -1,5 +1,8 @@
 ---
-title: "Breanna body block"
+title: "Breanna basispatroon"
 ---
 
-<PatternDocs pattern='breanna' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='breanna' docs />
+

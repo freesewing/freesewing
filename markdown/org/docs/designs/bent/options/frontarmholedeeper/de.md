@@ -1,13 +1,13 @@
 ---
-title: "Front armhole extra cutout"
+title: "Zusätzlicher Ausschnitt am vorderen Armloch"
 ---
 
-How much the armhole is cut out deeper at the front, than the back.
+Wie viel das Rüstungsloch tiefer an der Vorderseite ausgeschnitten ist, als der Rücken.
 
 Because a shoulder is more rounded at the front of the body than the back, the front of the armhole cuts deeper into the chest than the back cuts into the back part.
 
-This options controls by how much.
+Diese Option steuert wie viel.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_frontarmholedeeper_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bent_frontarmholedeeper_sample.svg "Effekt dieser Option auf das Schnittmuster")

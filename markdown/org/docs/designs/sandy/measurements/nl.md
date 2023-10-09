@@ -1,5 +1,5 @@
 ---
-title: "Sandy circle skirt: Required Measurements"
+title: "Sandy cirkelrok: Benodigde afmetingen"
 ---
 
 <PatternMeasurements pattern='sandy' />

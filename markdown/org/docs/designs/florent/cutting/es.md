@@ -1,5 +1,5 @@
 ---
-title: "Florent flat cap: Cutting Instructions"
+title: "Gorra plana Florent: Instrucciones de corte"
 ---
 
 Dependiendo de la cantidad de tejido disponible, puede que desee cortar dos partes superiores o laterales, de ahí las instrucciones sobre el propio patrón. Advertencia: El patrón incluye los permisos de costura en la parte superior, así que si lo cortas en el pliegue, ¡no los incluyas!

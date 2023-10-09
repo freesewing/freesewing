@@ -1,15 +1,15 @@
 ---
-title: "Simone shirt: Sewing Instructions"
+title: "Simone overhemd: Naai-instructies"
 ---
 
-### Step 1: Bust Darts
+### Stap 1: Darts boren
 
-- Close the Front bust darts.
+- Sluit de coupenaden aan de voorkant.
 
-### Step 2: Follow Simon's Instructions
+### Stap 2: Volg Simons instructies
 
 <Note>
 
-Simone is just our [Simon pattern](/designs/simon/) adapted for breasts so you can now just follow [Simon's instructions](/docs/patterns/simon/instructions) to finish your Simone :)
+Simone is gewoon ons [Simon patroon](/designs/simon/) aangepast voor borsten, dus je kunt nu gewoon [Simons instructies](/docs/patterns/simon/instructies) volgen om je Simone af te maken :)
 
 </Note>

@@ -1,11 +1,11 @@
 ---
-title: Render Engine
+title: Motor de renderizado
 ---
 
-This setting allows you to choose how your pattern will be rendered. In other words, how it will be drawn on the screen.  There are two options:
+Este ajuste te permite elegir cómo se representará tu patrón. En otras palabras , cómo se dibujará en la pantalla.  Hay dos opciones:
 
-- `React` allows for more interactivity, and is optimized for displaying patterns on-screen
-- `SVG` does not allow interactivity like the `React` option does. Instead it is optimized for printing
+- `React` permite una mayor interactividad, y está optimizado para mostrar en pantalla patrones
+- `SVG` no permite la interactividad como lo hace la opción `React` . En cambio, está optimizado para imprimir
 
-By default, this website only uses SVG when you are exporting your pattern. While you are generating and tweaking your pattern, we use React, unless you use this setting to change that to SVG.
+Por defecto, este sitio web sólo utiliza SVG cuando exportas tu patrón. Mientras generas y ajustas tu patrón, utilizamos React, a menos que utilices esta configuración en para cambiarlo a SVG.
 

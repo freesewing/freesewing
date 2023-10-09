@@ -1,10 +1,10 @@
 ---
-title: "Bob the Bib What You Need"
+title: "Bob the Bib: What You Need"
 ---
 
-To make Bob, you will need the following:
+Um Bob herzustellen, brauchst du Folgendes:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- A little bit of suitable fabric ([see Fabric options](/docs/patterns/aaron/fabric))
-- Enough bias tape to go around the entire bib
-- A snap or other type of fastener
+- [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
+- Ein Stückchen passender Stoff ([siehe Stoffoptionen](/docs/patterns/aaron/fabric))
+- Genug Schrägband für den gesamten Latz
+- Ein Druckknopf oder eine andere Art von Verschluss

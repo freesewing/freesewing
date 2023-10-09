@@ -2,21 +2,21 @@
 title: "Lucy: Fabric"
 ---
 
-Because pockets were worn by people in every layer of society historically what they were made out of varied intensely. Some were made out of sturdy and plain fabrics, marked with the owners initials. Others were made out of lavish silks or richly embroidered.
+Parce que les poches étaient portées par des personnes de toutes les couches de la société, historiquement, ce dont elles étaient faites variait intensément. Certains ont été confectionnés dans des tissus robustes et sobres, marqués des initiales des propriétaires. D'autres ont été confectionnées dans des soies somptueuses ou richement brodées.
 
-As such when it comes to fabric options the world is your oyster.
+Ainsi, lorsqu'il s'agit d'options de tissus, le monde est à ta portée.
 
-- Modern prints make fun modern pockets
-- Use a plain cotton or linen for a more historical option
-- Have a lot of scraps? Make a patchwork pocket!
-- Pockets were often a first embroidery project, so go wild if you want to
+- Les imprimés modernes font des poches modernes amusantes.
+- Utilise un coton ou un lin uni pour une option plus historique.
+- Tu as beaucoup de restes ? Fais une pochette en patchwork !
+- Les poches étaient souvent un premier projet de broderie, alors lâche-toi si tu le souhaites
 
-The one thing to keep in mind is how stable your fabric is. If it is not very stable or you think it won’t hold very much weight, you can add a lining.
+La seule chose à garder à l'esprit est la stabilité de ton tissu. S'il n'est pas très stable ou si tu penses qu'il ne supportera pas beaucoup de poids, tu peux ajouter une doublure.
 
-Additionally, if you are handsewing your pocket it is worth picking a fabric that isn’t too thick or heavy.
+De plus, si tu couds ta pochette à la main, cela vaut la peine de choisir un tissu qui n'est pas trop épais ou lourd.
 
-Your binding doesn’t have to be the same colour as the main fabric either. You can use it to add a fun accent, or make your pocket fancier. Bias binding curves easier around any curves, but you can just as easily use strips of fabric as a more waste conscious option.
+Ta reliure ne doit pas non plus être de la même couleur que le tissu principal. Tu peux l'utiliser pour ajouter un accent amusant ou rendre ta poche plus fantaisiste. La reliure en biais s'arrondit plus facilement autour des courbes, mais tu peux tout aussi bien utiliser des bandes de tissu comme option plus respectueuse des déchets.
 
-The ties can be made from self fabric, or you can use something like a twill tape instead.
+Les attaches peuvent être fabriquées à partir de tissu auto, ou tu peux utiliser quelque chose comme un ruban sergé à la place.
 
-As always, whether you want to stick to historical practices or make something modern is entirely up to you!
+Comme toujours, c'est à toi de décider si tu veux t'en tenir aux pratiques historiques ou faire quelque chose de moderne !

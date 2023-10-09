@@ -1,5 +1,5 @@
 ---
-title : "Brian body block : Instructions de couture"
+title: "Bloc de corps de Brian : Instructions de couture"
 ---
 
 <Note>
@@ -34,14 +34,14 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 ### Étape 2 : Essayez-le
 
 - Essayez-le et vérifiez la coupe en épinglant le dos tout en le portant.
-- Apportez les modifications nécessaires et essayez à nouveau le vêtement.
-- Répétez l'opération jusqu'à ce que vous soyez satisfait.
+- Effectuez toutes les modifications et essayez à nouveau.
+- Répétez jusqu'à ce que vous soyez satisfait.
 
 <Tip>
 
-Si vous n'avez personne pour vous aider à épingler, vous trouverez peut-être plus facile de couper le devant en deux avec la marge de couture plutôt que sur un pli et de coudre la couture du dos pour pouvoir épingler le devant.
+Si vous n'avez personne pour vous aider à épingler, vous trouverez peut-être plus facile de couper le devant en deux avec une marge de couture plutôt que sur un pli et de coudre la couture du dos pour pouvoir épingler le devant lors de l'essayage.
 
-Soyez attentif à tout ce que vous faites en portant la maquette : la tirez-vous vers le bas ? Ajuster constamment l'épaule ? ect... Ces éléments sont des signes indiquant que le modèle doit être ajusté.
+Soyez attentif à tout ce que vous faites en portant la maquette : la tirez-vous vers le bas ? Ajustement permanent de l'épaule ? ect... Ces éléments sont des signes indiquant que le modèle doit être ajusté.
 
 Il est parfois nécessaire de porter la maquette pendant un certain temps pour avoir une meilleure idée de la coupe, alors n'hésitez pas à vous promener avec pendant quelques heures.
 
@@ -49,14 +49,14 @@ Il est parfois nécessaire de porter la maquette pendant un certain temps pour a
 
 <Note>
 
-Remember to treat Brian as a basis rather than a final product, so adjust what you need to get the desired look.  
-For instance:
+N'oubliez pas de considérer Brian comme une base plutôt que comme un produit final, et ajustez donc ce dont vous avez besoin pour obtenir l'aspect désiré.  
+Par exemple :
 
-- Change the neck line
-- Add/change the closure allowances
-- Add a collar
+- Modifier la ligne d'encolure
+- Ajouter/modifier les marges de fermeture
+- Ajouter un col
 
-It is all up to you! Expérimentez et allez-y !
+Tout dépend de vous ! Expérimentez et allez-y !
 
 </Note>
 

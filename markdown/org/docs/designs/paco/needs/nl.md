@@ -1,12 +1,12 @@
 ---
-title: "Paco pants: What You Need"
+title: "Paco broek: Wat je nodig hebt"
 ---
 
-To make Paco, you will need the following:
+Om Paco te maken heb je het volgende nodig:
 
 - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-- About 1.25 meters (1.4 yards) (depending on your height) of a suitable fabric ([see Fabric options](/docs/patterns/paco/fabric))
-- 30cm (12") of lining for the pocket bags
+- Ongeveer 1,25 meter (1,4 yard) (afhankelijk van je lengte) van een geschikte stof ([zie Stofopties](/docs/patterns/paco/fabric))
+- 30 cm (12") voering voor de zakjes
 - Een beetje tussenvoering voor de paspels (alleen nodig als je voor achterzakken kopen)
 - Een koordje voor de taille en twee metalen ogen (optioneel)
 - Genoeg brede platte elastiek voor je taille en enkelboorden

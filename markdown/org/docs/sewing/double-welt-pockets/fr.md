@@ -192,7 +192,7 @@ Finissez également le bord du rabat avec un point zig-zag pour que le rabat res
 
 ![Coudre le parement au haut du sac de poche](step09.png)
 
-> Cette étape est optionnelle. Fixez le parement en haut du sac de poche si vous voulez le rendre visible à travers l'ouverture de la poche.
+> Cette étape est facultative. Fixez le parement en haut du sac de poche si vous voulez le rendre visible à travers l'ouverture de la poche.
 
 ### Étape 10 : Coudre le sac de poche au rabat du haut
 

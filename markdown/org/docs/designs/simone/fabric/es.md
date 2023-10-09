@@ -1,5 +1,5 @@
 ---
-title: "Simone shirt: Fabric Options"
+title: "Camisa Simone: Opciones de tejido"
 ---
 
 <Note>

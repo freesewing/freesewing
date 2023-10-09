@@ -1,0 +1,24 @@
+{
+  "t": "Trayvon, corbata",
+  "d": "Trayvon es una corbata que no repara en gastos para un resultado profesional.",
+  "p": {
+    "fabricLoop": "Fabric loop",
+    "fabricTail": "Cola de tela",
+    "fabricTip": "Punta de tela",
+    "interfacingTail": "Cola de entretela",
+    "interfacingTip": "Punta de entretela",
+    "liningTail": "Cola de revestimiento",
+    "liningTip": "Punta de revestimiento"
+  },
+  "s": {},
+  "o": {
+    "tipWidth": {
+      "t": "Ancho de la punta",
+      "d": "El ancho de tu corbata en la punta"
+    },
+    "knotWidth": {
+      "t": "Ancho de nudo",
+      "d": "El ancho de tu corbata en el nudo"
+    }
+  }
+}

@@ -1,11 +1,11 @@
 ---
-title: "Holmes deerstalker hat: Sewing Instructions"
+title: "Holmes Hirschmütze: Anleitung zum Nähen"
 ---
 
 ### Schritt 1: Vorbereitung der Teile
 
-- If needed, Interface the crown and half the ear flap pieces.
-- If not already done so, it is recommended to mark the seam lines on your fabric pieces by either a temporary marker or by thread marking. Dies ist für eine präzisere Nähte, die für den Hutbau entscheidend ist.
+- Wenn nötig, schneide die Krone und die Hälfte der Ohrenklappen ab.
+- Wenn noch nicht erledigt Es wird empfohlen, die Nahtlinien auf Ihren Stoffstücken entweder durch eine vorübergehende Markierung oder durch Fadenmarkierung zu markieren. Dies ist für eine präzisere Nähte, die für den Hutbau entscheidend ist.
 
 <Tip>
 
@@ -27,12 +27,12 @@ Diese Anweisungen gehen davon aus, dass Sie Ihre Nahtlinien markiert haben. Sie 
 
 ### Schritt 2: Die Krone
 
-- With right sides together, matching seam lines and peaks, sew two crown pieces together.
-- Press seams open. Sie mussten dafür einen Schneider-Schinken verwenden, wenn Sie keinen Schinken haben, können Sie stattdessen Flannels oder Handtücher verwenden.
-- (Optional) _Edgestitch_ both sides of the seam, making sure to catch the seam allowances.
+- Nähe die beiden Kronenteile rechts auf rechts zusammen, wobei die Nahtlinien und die Spitzen übereinstimmen müssen.
+- Bügel die Nähte auf. Sie mussten dafür einen Schneider-Schinken verwenden, wenn Sie keinen Schinken haben, können Sie stattdessen Flannels oder Handtücher verwenden.
+- (Optional) _Kantenstich_ beide Seiten der Naht und achte darauf, dass du die Nahtzugaben erwischst.
 - Wiederhole dies, bis du zwei Hälften hast. Wenn die Hälfte der Anzahl der Kronenstücke eine ungerade Zahl ist, müssen Sie zu jeder Hälfte ein einzelnes Stück nähen. z.B. Wenn Sie 6 Kronen haben, machen Sie zwei Hälften von 3 Nähen ein Stück zu zwei zusammengenähten Stücken.
-- With right sides together, matchinig seam lines and peaks, sew the two halves together. Sie können den Gipfel vielleicht leichter zusammen handnähen durch Schüttgut oder Präzision. Diese Naht wird als "Mittelkronennaht" bezeichnet.
-- (Optional) _Edgestitch_ both sides of the centre crown seam, making sure to catch the seam allowances.
+- Näht die beiden Hälften rechts auf rechts zusammen, wobei die Nahtlinien und Spitzen übereinstimmen. Sie können den Gipfel vielleicht leichter zusammen handnähen durch Schüttgut oder Präzision. Diese Naht wird als "Mittelkronennaht" bezeichnet.
+- (Optional) _Kantenstich_ beide Seiten der mittleren Kronennaht, wobei du darauf achtest, dass du die Nahtzugaben erwischst.
 
 <Note>
 
@@ -44,14 +44,14 @@ Je nach Zulage der Naht können Sie Nähte schneiden wollen, während Sie gehen,
 
 #### Ohrklappen mit Binden
 
-- Cut two 12" (30cm) - 16" (40cm) length of ribbon. Diese werden als weitere Bindungen bezeichnet werden.
-- _Baste_ a tie to the right side of an ear flap (the interfaced one if using). Wiederholen für andere Krawatte.
-- With right sides together, matching seam lines, sew a tie ear flap to a non-tie ear flap.
-- Clip and trim seam allowance.
-- Turn inside out and press.
-- (Optional) _Topstitch_ or _edgestitch_ the folded edge.
-- _Baste_ the raw edges together.
-- Repeat for the remaining ear flap.
+- Schneide zwei 30cm (12") - 40cm (16") lange Bänder zu. Diese werden als weitere Bindungen bezeichnet werden.
+- _Hefte_ ein Band an die rechte Seite einer Ohrenklappe (die mit Vlieseline, falls du sie verwendest). Wiederholen für andere Krawatte.
+- Nähe rechts auf rechts eine Ohrenklappe mit Krawatte an eine Ohrenklappe ohne Krawatte, wobei die Nahtlinien übereinstimmen.
+- Schneide die Nahtzugabe ab und schneide sie zu.
+- Umdrehen und bügeln.
+- (Optional) _Steppstich_ oder _edgestitch_ die gefaltete Kante.
+- _Hefte_ die Schnittkanten zusammen.
+- Wiederhole den Vorgang für die verbleibende Ohrenklappe.
 
 <Tip>
 
@@ -61,21 +61,21 @@ If you are uncertain about the length you want for you ties take 1 metre (39") o
 
 <Note>
 
-The lengths above are recommendations so feel free to go as long or as short as you like with the ties.  
-If you prefer you can make your custom ties with fabric, [see Holmes cutting](/docs/patterns/holmes/cutting/) for more info.
+Die oben genannten Längen sind Empfehlungen, so fühlen Sie sich frei zu gehen so lange oder so kurz wie Sie wollen mit den Krawatten.  
+Wenn du es vorziehst, kannst du deine individuellen Krawatten auch mit Stoff herstellen, [siehe Holmes-Schnitt](/docs/patterns/holmes/cutting/) für weitere Informationen.
 
 </Note>
 
 #### Ohrklappen mit Tastenlöchern
 
-- Face the backs of two of the buttonholes. (Dies wird nicht benötigt, wenn bereits zwei Klappen interfaced wurden.)
-- With right sides together, matching seam lines, sew two ear flap pieces together (one interfaced, one not).
-- Clip and trim seam allowance.
-- Turn inside out and press.
-- (Optional) _Topstitch_ or _Edgestitch_ the folded edge.
-- _Baste_ the raw edges together.
-- Sew the buttonhole in your prefered method.
-- Repeat for the remaining ear flap.
+- Stelle die Rückseiten von zwei Knopflöchern gegenüber. (Dies wird nicht benötigt, wenn bereits zwei Klappen interfaced wurden.)
+- Nähe die beiden Ohrenklappenteile rechts auf rechts zusammen, wobei die Nahtlinien übereinstimmen (eines mit und eines ohne Einlage).
+- Schneide die Nahtzugabe ab und schneide sie zu.
+- Umdrehen und bügeln.
+- (Optional) _Steppstich_ oder _Kantenstich_ die gefaltete Kante.
+- _Hefte_ die Schnittkanten zusammen.
+- Nähen Sie das Knopfloch mit der von Ihnen bevorzugten Methode.
+- Wiederhole den Vorgang für die verbleibende Ohrenklappe.
 
 <Warning>
 
@@ -85,9 +85,9 @@ Die Ohrklappen müssen lang genug sein, um über die Spitze zu gehen, so dass si
 
 <Note>
 
-**For both Ear Flaps with Ties and Button Holes**
+**
 
-It is recommended to at least _topstitch_ the ear flaps but this may not be desirable with certain patterns so has been marked as optional.
+Es wird empfohlen, die Ohrenklappen zumindest abzusteppen, aber bei manchen Mustern ist das nicht erwünscht, deshalb ist es optional.
 
 </Note>
 
@@ -97,14 +97,14 @@ There are two methods for constructing the bill. This is due to the different ty
 
 #### The Bill Method 1
 
-- Place visor insert on one visor piece inside seam lines.
-- Temporarily secure visor insert to visor with temporary _pad Stitches_. This will be refered to as "faced visor" going forward.
-- _Baste_ along the seam line of the inner curve of the faced visor, making sure not to catch the visor insert.
-- With right sides together, matching seam lines and centre fronts, sew the faced visor to another visor piece along the outer curve close to the visor insert, making sure not to catch the visor Insert.
-- Notch and trim the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step)
-- Turn inside out and press. Making sure that the seam allowances are on top of not under the visor insert.
-- Using the previous basting line as a guide, _baste_ the opening closed.
-- Repeat this for remaining visor pieces.
+- Lege den Visiereinsatz auf ein Visierteil innerhalb der Nahtlinien.
+- Befestige den Visiereinsatz vorübergehend am Visier mit dem temporären _Stitches_. Dies wird in Zukunft als "Gesichtsvisier" bezeichnet.
+- _Hefte_ entlang der Nahtlinie der inneren Kurve des verkleideten Visiers und achte darauf, dass du den Visiereinsatz nicht erwischst.
+- Näht das verkleidete Visier rechts auf rechts, mit übereinstimmenden Nahtlinien und Mittelfronten, an ein anderes Visierteil entlang der Außenkurve in der Nähe des Visiereinsatzes, wobei ihr darauf achtet, dass ihr den Visiereinsatz nicht erwischt.
+- Schneide die Außenkurve ein und achte darauf, dass du die Nähte nicht einschneidest. (Vielleicht möchtest du die Form vor diesem Schritt drehen und überprüfen)
+- Umdrehen und bügeln. Achte darauf, dass die Nahtzugaben oben auf und nicht unter dem Visiereinsatz liegen.
+- Nutze die vorherige Heftlinie als Orientierungshilfe und hefte __ die Öffnung zu.
+- Wiederhole diesen Vorgang für die restlichen Visierteile.
 
 <Warning>
 
@@ -120,13 +120,13 @@ If preferred you can temporarily attach the bill insert another way that does no
 
 #### The Bill Method 2
 
-- With rights sides together, matching seam lines and centre fronts, sew the outer curver of two visor pieces together.
-- Notch and trim (if needed) the outer curve making sure not to clip the stitching. (You may wish to turn and check the shape before this step)
-- Turn inside out and press.
-- Insert visor insert in to sewn visor tightly so there is no gap on the outer curver and the seam allowances are all one on side of the visor insert. This will be the upper side of the visor.
-- Pin the inner curve together making sure that the outer edge is pulled tightly over the visor insert.
-- _Baste_ as close as you can to the inner curve of the visor insert, making sure you pull the fabric tightly over the outer edge as you sew.
-- Repeat for the remaining visor pieces.
+- Lege die rechte Seite zusammen, die Nahtlinien und die vordere Mitte stimmen überein und nähe die äußere Kante der beiden Visierteile zusammen.
+- Kerbe die äußere Kurve ein und beschneide sie (falls nötig), wobei du darauf achtest, dass du die Nähte nicht einschneidest. (Vielleicht möchtest du die Form vor diesem Schritt drehen und überprüfen)
+- Umdrehen und bügeln.
+- Lege den Visiereinsatz fest in das genähte Visier ein, so dass keine Lücke an der Außenkurve entsteht und die Nahtzugaben alle auf einer Seite des Visiereinsatzes liegen. Das wird die Oberseite des Visiers sein.
+- Stecke die innere Kurve zusammen und achte darauf, dass die äußere Kante fest über den Visiereinsatz gezogen wird.
+- _Hefte_ so nah wie möglich an die Innenkurve des Visiereinsatzes und achte darauf, dass du den Stoff beim Nähen fest über die Außenkante ziehst.
+- Wiederhole den Vorgang für die restlichen Visierteile.
 
 ### Schritt 5: Assembly and Lining
 
@@ -134,61 +134,61 @@ Wieder einmal gibt es zwei Methoden für Endmontage und Verkleidung. Lesen Sie b
 
 #### Montage- und Lining-Methode 1
 
-- Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
-- Sew ear flap to the crown along seam lines.
-- Repeat for the remaining ear flap on the opposite side of the crown.
-- Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.
-- Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _baste_ the centre down first and then work from the centre out.
-- Sew the visor to the crown along seam lines. You may find it easier to permanently hand-sew the visor on rather than using a machine.
-- Repeat for the remaining visor on the opposite side of the centre crown seam.
-- Remove all pad and basting stitches.
-- Press the seam allowances inwards, making sure the stitching is not visible on the outside.
-- (Optional) Loosely _whipstitch_ the seams to the inside of the crown making sure the stitching does not show on the outside.
-- Construct lining the same way as the crown ommitting _edgestitching_.
-- Fold and Press under the bottom seam allowance of the lining. Möglicherweise müssen Sie unter mehr drücken, um zu verhindern, dass das Futter gezeigt wird. You may also find you need to _baste_ the seam allowance down.
-- Matching centre crown seams and panel seams, pin the lining into the hat wrong sides together. Placing the folded edge along the stitching lines.
-- _Slipstitch_ or _whipstitch_ the lining to the seam allowance of the hat.
-- Remove lining basting if used.
-- (Optional) _Tack_ the peak of the lining to the peak of the crown. Damit soll verhindert werden, dass der Streifen herausfällt.
+- Matchings Center und Nahtlinien richten die Ohrklappe an die rechte Seite einer der Platten an, die nicht zur Mitte der KronenNaht gehört. Achte darauf, dass die verblendete Seite an der Krone anliegt (falls verblendet).
+- Näht die Ohrenklappe entlang der Nahtlinien an die Krone.
+- Wiederhole den Vorgang für die verbleibende Ohrenklappe auf der gegenüberliegenden Seite der Krone.
+- Richte die vordere Mitte des Visiers an der rechten Seite der mittleren Kronennaht aus und achte darauf, dass der Visiereinsatz unten liegt.
+- Hefte das Visier mit der Hand an die Krone, indem du die Heftlinien des Visiers mit den Linien der Kronennaht abstimmst. Es ist einfacher, __ die Mitte nach unten zu heften und dann von der Mitte nach außen zu arbeiten.
+- Näht das Visier entlang der Nahtlinien an die Krone. Vielleicht findest du es einfacher, das Visier dauerhaft von Hand anzunähen, als eine Maschine zu benutzen.
+- Wiederhole den Vorgang für das restliche Visier auf der gegenüberliegenden Seite der mittleren Kronennaht.
+- Entferne alle Polster- und Heftstiche.
+- Bügle die Nahtzugaben nach innen und achte dabei darauf, dass die Naht von außen nicht sichtbar ist.
+- (Optional) Die Nähte an der Innenseite der Krone mit einem lockeren _Steppstich_ absteppen und darauf achten, dass die Nähte nicht nach außen zeigen.
+- Konstruiere das Futter auf die gleiche Weise wie die Krone, indem du _edgestitching_auslässt.
+- Falte und bügle unter die untere Nahtzugabe des Futters. Möglicherweise müssen Sie unter mehr drücken, um zu verhindern, dass das Futter gezeigt wird. Es kann auch sein, dass du _heften musst_ die Nahtzugabe nach unten.
+- Stecke das Futter falsch herum in die Mütze, so dass die mittlere Kappennaht und die Teilungsnähte übereinstimmen. Lege die gefaltete Kante entlang der Nahtlinien.
+- _Steppstich_ oder _Steppstich_ das Futter an die Nahtzugabe der Mütze.
+- Falls verwendet, das Futter entfernen.
+- (Optional) _Tack_ die Spitze des Futters an der Spitze der Krone. Damit soll verhindert werden, dass der Streifen herausfällt.
 
 #### Montage- und Verbindungsmethode 2
 
-- Matchings centres and seam lines align the ear flap with the right side of one of the panels that is not part of the centre crown seam. Making sure the faced side is placed against the crown (if faced).
-- _Baste_ the ear flap to the crown along seam lines
-- Repeat for the remaining ear flap on the opposite side of the crown.
-- Align centre front of visor with the right side of the centre crown seam making sure the visor insert is on the bottom.
-- Hand-baste the visor to the crown matching the visor basting lines to the crown seam lines. It easier to _baste_ the centre down first and then work from the centre out.
-- (Optional) Machine-baste the visor to the crown along seam lines.
-- Repeat for the remaining visor on the opposite side of the centre crown seam.
-- Construct lining the same way as the crown ommitting _edgestitching_ and leaving a gap in the centre lining seam large enough to turn the hat.
-- With right sides together, matching centre crown seams, panel seams and seam lines. Nähen Sie das Futter zur Krone entlang der Nahtlinien. Wenn Sie sperrig sind, können Sie entweder die Futternähte oder beide Nähte schneiden.
-- Turn hat inside out, pressing lining to inside.
-- (Optional/Alternate) _Understitch_ lining.
-- Slipstitch lining opening closed.
-- (Optional/Alternate) _Topstitch_ or _Edgestitch_ along the outside of the hat, catching the lining on the inside making sure it is not peaking whilst you sew.
-- (Optional) _Tack_ the peak of the lining to the peak of the crown. Damit soll verhindert werden, dass der Streifen herausfällt.
+- Matchings Center und Nahtlinien richten die Ohrklappe an die rechte Seite einer der Platten an, die nicht zur Mitte der KronenNaht gehört. Achte darauf, dass die verblendete Seite an der Krone anliegt (falls verblendet).
+- _Hefte_ die Ohrenklappe entlang der Nahtlinien an die Krone.
+- Wiederhole den Vorgang für die verbleibende Ohrenklappe auf der gegenüberliegenden Seite der Krone.
+- Richte die vordere Mitte des Visiers an der rechten Seite der mittleren Kronennaht aus und achte darauf, dass der Visiereinsatz unten liegt.
+- Hefte das Visier mit der Hand an die Krone, indem du die Heftlinien des Visiers mit den Linien der Kronennaht abstimmst. Es ist einfacher, __ die Mitte nach unten zu heften und dann von der Mitte nach außen zu arbeiten.
+- (Optional) Klebe das Visier mit der Maschine entlang der Nahtlinien an die Krone.
+- Wiederhole den Vorgang für das restliche Visier auf der gegenüberliegenden Seite der mittleren Kronennaht.
+- Fertige das Futter auf die gleiche Weise wie die Krone an, indem du _edgestitching_ auslässt und in der mittleren Futternaht eine Lücke lässt, die groß genug ist, um den Hut zu drehen.
+- Lege rechts auf rechts die mittleren Kronennähte, die Teilungsnähte und die Nahtlinien zusammen. Nähen Sie das Futter zur Krone entlang der Nahtlinien. Wenn Sie sperrig sind, können Sie entweder die Futternähte oder beide Nähte schneiden.
+- Drehe die Mütze von innen nach außen und drücke das Futter nach innen.
+- (Optional/Alternativ) _Untersteppe das_ Futter.
+- Steppstich-Futteröffnung geschlossen.
+- (Optional/Alternativ) _Steppstich_ oder _Kantenstich_ entlang der Außenseite der Mütze, wobei du das Futter auf der Innenseite aufnimmst und darauf achtest, dass es beim Nähen nicht herausschaut.
+- (Optional) _Tack_ die Spitze des Futters an der Spitze der Krone. Damit soll verhindert werden, dass der Streifen herausfällt.
 
 <Note>
 
-**For both Assembly and Lining Methods**
+**
 
-You can attach the visors on first, just make sure the visors are under the ear flaps if there is any overlap. It is simply whether you prefer the bills to be underneath or prefer the ear flaps to be underneath like in the instructions.
+Du kannst die Visiere zuerst anbringen. Achte nur darauf, dass die Visiere unter den Ohrenklappen liegen, falls sie sich überlappen. It is simply whether you prefer the bills to be underneath or prefer the ear flaps to be underneath like in the instructions.
 
 </Note>
 
 <Tip>
 
-**For both Assembly and Lining Methods**
+**
 
-If you are having trouble dealing with the curves of the visors, sew a stitching line an 1/8" (3mm) from the basting line in the seam allowance of the visor and clip to it. This should make it easier to bend the bill to shape. Achten Sie einfach darauf, diese Nähte und die Clips beim Anbringen des Futters zu verbergen.
+Wenn du Probleme mit den Rundungen des Visiers hast, kannst du eine Nahtlinie 3 mm von der Heftlinie entfernt in die Nahtzugabe des Visiers einnähen und daran befestigen. This should make it easier to bend the bill to shape. Achten Sie einfach darauf, diese Nähte und die Clips beim Anbringen des Futters zu verbergen.
 
 </Tip>
 
 <Warning>
 
-**For both Assembly and Lining Methods**
+**Für beide Montage- und Auskleidungsmethoden**
 
-Assembly and Lining instructions are written with a 6 panelled Holmes in mind. Sie können feststellen, dass die Platzierung von Visoren und Ohrklappenteilen für andere nummerierte Holmes unterschiedlich ist. As a rule of thumb generally the centre front of the visor is always on the centre crown seam so go from there if struggling.
+Die Montage- und Auskleidungsanweisungen wurden für eine 6-teilige Holmes geschrieben. Sie können feststellen, dass die Platzierung von Visoren und Ohrklappenteilen für andere nummerierte Holmes unterschiedlich ist. Als Faustregel gilt, dass die vordere Mitte des Visiers immer auf der mittleren Kronennaht liegt, also gehe von dort aus, wenn du Schwierigkeiten hast.
 
 </Warning>
 
@@ -198,16 +198,16 @@ Wenn Sie Ihre Verbindungen beim Bau der Ohrklappen nicht abgeschnitten haben, is
 
 #### Beende Knoten-Methode 1
 
-- Fold the ends of a tie in half and cut a triangle out from the corner to the fold.
-- Unfold.
-- If you are worried about the ties fraying you can use fray check or equivalent.
-- Repeat for the remaining tie.
+- Falte die Enden einer Krawatte in der Hälfte und schneide ein Dreieck von der Ecke zur Falte aus.
+- Entfalte dich.
+- Wenn du dir Sorgen machst, dass die Krawatten ausfransen, kannst du einen Fransenschutz oder etwas Ähnliches verwenden.
+- Wiederhole den Vorgang für die restliche Krawatte.
 
 #### Beende Knoten-Methode 2
 
-- Fold under 1/8" (3mm) and another 1/8" (3mm) on one of the ties. Pin if needed.
-- _Whipstitch_ the folded edge down to the tie
-- Repeat for the remaining tie.
+- Falte 1/8" (3 mm) und weitere 1/8" (3 mm) an einem der Bänder nach unten. Pin, wenn nötig.
+- _Steppstich_ die gefaltete Kante nach unten zur Krawatte
+- Wiederhole den Vorgang für die restliche Krawatte.
 
 <Note>
 
@@ -219,13 +219,13 @@ Um zu bestimmen, wie man die Bindungen falten will, kann es einfacher sein, zuer
 
 Wenn du nicht die Buttonhole Ohrenklappen machst, musst du keinen Knopf einnähen, aber es kann nützlich sein, wenn du alle falsch ausgerichteten Nähte an der Krone verstecken möchtest.
 
-- Construct a covered button.
-- Attach the button via the shank to the peak of the crown doing your best to keep it in the middle of the seams.
-- Alternatively if you are not using the button with the ear flaps you can bend the shank down and _whipstitch_ the edge of the button to the crown instead so it does not move.
+- Konstruiere einen verdeckten Knopf.
+- Befestige den Knopf mit dem Stiel an der Spitze der Krone und achte darauf, dass er in der Mitte der Nähte bleibt.
+- Wenn du den Knopf nicht mit den Ohrenklappen verwendest, kannst du stattdessen auch den Schaft nach unten biegen und mit einem _Steppstich_ den Rand des Knopfes an der Krone befestigen, damit er sich nicht bewegt.
 
 <Note>
 
-Sicherlich optional, können Sie feststellen, dass ein Knopf fehlt, um das Aussehen zu beenden. So if you are uncertain of the look at this point, make up a quick button and place it on temporarily to see if this is what is missing. If it is attach it permanently.
+Sicherlich optional, können Sie feststellen, dass ein Knopf fehlt, um das Aussehen zu beenden. Wenn du dir also nicht sicher bist, wie es aussehen soll, kannst du dir einen Button basteln und ihn vorübergehend anbringen, um zu sehen, ob es das ist, was fehlt. If it is attach it permanently.
 Während ein überdachter Button empfohlen wird, kannst du jeden gewünschten Button verwenden, kannst du es probieren!
 
 </Note>
@@ -236,8 +236,8 @@ Das war's! Sie sind fertig. Genießen Sie jetzt die Welt in Ihrem wunderbaren ne
 
 <Note>
 
-Remember these instructions are just guidelines so don't worry if you want to construct the hat differently.  
-The Diagrams are yet to be made for this pattern so in the mean time if you need a visual aid, watch the YouTube video that inspired this pattern:
+Denken Sie daran, dass diese Anweisungen nur Richtlinien sind, also machen Sie sich keine Sorgen, wenn Sie den Hut anders konstruieren möchten.  
+Die Diagramme müssen noch für dieses Muster erstellt werden, also in der Zwischenzeit, wenn Sie eine visuelle Hilfe benötigen schaue dir das YouTube-Video an, das dieses Muster inspiriert hat:
 
 </Note>
 

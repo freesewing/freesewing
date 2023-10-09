@@ -1,12 +1,12 @@
 ---
-title: "Inner pocket placement"
+title: "Розміщення у внутрішній кишені"
 ---
 
-The location of the inner pocket.
+Розташування внутрішньої кишені.
 
-- Increase this option to shift the inner pocket towards the side seam
-- Decrease this option to shift the inner pocket towards the centre front
+- Збільште цей параметр, щоб змістити внутрішню кишеню до бокового шва
+- Зменшіть цей параметр, щоб змістити внутрішню кишеню до центру спереду
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](jaeger_innerpocketplacement_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](jaeger_innerpocketplacement_sample.svg "Вплив цієї опції на шаблон")

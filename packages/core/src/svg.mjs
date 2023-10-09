@@ -159,7 +159,8 @@ Svg.prototype.__insertText = function (text) {
       text = hook.method(
         this.pattern.settings[this.pattern.activeSet].locale || 'en',
         text,
-        hook.data
+        hook.data,
+        this.pattern
       )
   }
 
@@ -335,6 +336,8 @@ Svg.prototype.__renderPart = function (part) {
  * @return {string} svg - The SVG markup for the snippet
  */
 Svg.prototype.__renderSnippet = function (snippet) {
+  // If complete is not set, only render snippets with the data-force attribute
+  if (!this.pattern.settings[0].complete && !snippet.attributes.get('data-force')) return ''
   let x = round(snippet.anchor.x)
   let y = round(snippet.anchor.y)
   let scale = snippet.attributes.get('data-scale') || 1

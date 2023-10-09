@@ -1,12 +1,12 @@
 ---
-title: "Inner pocket placement"
+title: "Placement de la poche intérieure"
 ---
 
-The location of the inner pocket.
+L'emplacement de la poche intérieure.
 
-- Increase this option to shift the inner pocket towards the side seam
-- Decrease this option to shift the inner pocket towards the centre front
+- Augmente cette option pour déplacer la poche intérieure vers la couture latérale.
+- Diminue cette option pour déplacer la poche intérieure vers le centre de l'avant.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_innerpocketplacement_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](jaeger_innerpocketplacement_sample.svg "Effet de cette option sur le motif")

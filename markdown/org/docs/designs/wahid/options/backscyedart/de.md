@@ -1,5 +1,5 @@
 ---
-title: "Back scye dart"
+title: "Rückwärtige Armlochabnäher"
 ---
 
 ![Rückwärtige Armlochabnäher](backscyedart.svg)
@@ -19,4 +19,4 @@ Während dieser Dart benutzt wird, um das Muster zu formen, müssen Sie den Dart
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](wahid_backscyedart_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](wahid_backscyedart_sample.svg "Effekt dieser Option auf das Schnittmuster")

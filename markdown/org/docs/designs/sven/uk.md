@@ -1,5 +1,8 @@
 ---
-title: "Sven sweatshirt"
+title: "Светр Свен"
 ---
 
-<PatternDocs pattern='sven' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='sven' docs />
+

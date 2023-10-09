@@ -1,5 +1,5 @@
 ---
-title: "Bulge"
+title: "Renflement"
 ---
 
 Combien de place voulez-vous à l'avant ?
@@ -10,4 +10,4 @@ Augmenter ceci créera plus de place sur le devant.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](shin_bulge_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](shin_bulge_sample.svg "Effet de cette option sur le motif")

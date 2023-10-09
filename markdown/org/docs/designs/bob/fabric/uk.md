@@ -1,7 +1,7 @@
 ---
-title: "Bob the Bib: Fabric Options"
+title: "Слюнявчик Боб: Варіанти тканин"
 ---
 
-An bib should be soft, absorbent, and be able to handle plenty of washing cycles. In addition, natural fibres are much preferred, especially for babies.
+Нагрудник повинен бути м'яким, поглинати вологу і витримувати велику кількість циклів прання. Крім того, натуральні волокна набагато кращі, особливо для немовлят.
 
 So use cotton, flannel, or jersey knit for the bib front of the bib, and back it with something like terrycloth (aka towel fabric) or a similar bamboo-based fabric.

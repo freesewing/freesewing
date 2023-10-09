@@ -1,15 +1,15 @@
 ---
-title: "Strap length"
+title: "Longueur de l'anse"
 ---
 
-Controls the length of the strap.
+Contrôle la longueur des anses.
 
 <Tip>
 
-Turn on paperless to see the length of the strap.
+Passez en mode sans papier pour voir la longueur de la sangle.
 
 </Tip>
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](hortensia_straplength_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](hortensia_straplength_sample.svg "Effet de cette option sur le motif")

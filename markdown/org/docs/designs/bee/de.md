@@ -1,5 +1,8 @@
 ---
-title: "Bee bikini top"
+title: "Bee, das Bikini-Oberteil"
 ---
 
-<PatternDocs pattern='bee' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='bee' docs />
+

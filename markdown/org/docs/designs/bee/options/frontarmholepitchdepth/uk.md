@@ -1,11 +1,11 @@
 ---
-title: "Front armhole pitch depth (Bella)"
+title: "Глибина кроку передньої пройми (Bella)"
 ---
 
 ***
 
-Controls the front armhole pitch depth in the underlying Bella block Bee is based on
+Контролює глибину кроку передньої пройми в базовому блоці Bella Bella базується на
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_frontarmholepitchdepth_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bee_frontarmholepitchdepth_sample.svg "Вплив цієї опції на шаблон")

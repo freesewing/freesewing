@@ -1,10 +1,10 @@
 ---
-title: "Bob the Bib What You Need"
+title: "Bob the Bib: What You Need"
 ---
 
-To make Bob, you will need the following:
+Щоб зробити Боба, вам знадобиться наступне:
 
-- [Basic sewing supplies](/docs/sewing/basic-sewing-supplies)
-- A little bit of suitable fabric ([see Fabric options](/docs/patterns/aaron/fabric))
-- Enough bias tape to go around the entire bib
-- A snap or other type of fastener
+- [Базові матеріали для шиття](/docs/sewing/basic-sewing-supplies)
+- Трохи відповідної тканини ([див. варіанти тканини](/docs/patterns/aaron/fabric))
+- Достатня кількість клейкої стрічки, щоб обтягнути весь нагрудник
+- Застібка або інший тип застібки

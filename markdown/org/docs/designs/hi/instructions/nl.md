@@ -1,71 +1,71 @@
 ---
-title: "Hi the shark: Sewing Instructions"
+title: "Hoi de haai: Naai-instructies"
 ---
 
 <Tip>
 
-When you're using fabric with some stretch in it, it is a good idea to stabilize the seams that go along the whole body, and between the body and the belly, with some stabilizing ribbon.
+Als je stof gebruikt met wat rek erin, is het een goed idee om de naden die langs het hele lijf en tussen het lijf en de buik lopen te stabiliseren met wat stabiliserend lint.
 
 </Tip>
 
-## Step 1: The eyes
+## Stap 1: De ogen
 
-- Cut pieces of black fabric the size of the eyes on the body pieces.
-- Stabilise the fabric with a bit of interfacing.
-- With white thread, either by hand or machine _bar tack_ the pupils onto the eyes like eyelets.
+- Knip stukjes zwarte stof ter grootte van de ogen op de lichaamsdelen.
+- Stabiliseer de stof met wat vlieseline.
+- Met wit garen, met de hand of met de machine _bar tack_ je de pupillen op de ogen als oogjes.
 
 <Tip>
 
-If stitching the pupil by machine you may find it easier to use either the eyelet function or a buttonholer that does eyelets if one of those are available to you. If not you may find it best to hand stitch the pupil for better control and neatness.
+Als je de pupil machinaal naait, vind je het misschien makkelijker om de oogjesfunctie te gebruiken of een knoopsgatmachine die oogjes maakt, als je die tot je beschikking hebt. Zo niet, dan kun je de leerling het beste met de hand stikken voor betere controle en netheid.
 
 </Tip>
 
-- With orange thread, _bar tack_ around the edge of the eyes.
-- If the fabric you are using frays, fray check the edges.
+- Met oranje garen, _bar tack_ rond de rand van de ogen.
+- Als de stof die je gebruikt rafelt, controleer dan de randen.
 
 <Note>
 
-The colour choices are up to you, but these are the recommended colours.
+De kleurkeuze is aan jou, maar dit zijn de aanbevolen kleuren.
 
-If you wish to make an embroidered eye we recommended to make it an embroidery patch rather than embroidering directly on the fabric itself as screwing up will not result in a larger quantity of fabric being wasted.
+Als je een geborduurd oog wilt maken, raden we je aan om er een borduurlapje van te maken in plaats van direct op de stof zelf te borduren, want als je het verprutst, verspil je geen grotere hoeveelheid stof.
 
 </Note>
 
-## Step 2: The Upper body
+## Stap 2: Het bovenlichaam
 
-- Using topstiching thread (thick thread), go back and forth several times along the gill lines of the body pieces.
-- _Edgestitch_ the eyes to the body pieces, matching the thread colour of the outer bar tacks.
-- Sew the darts on the front of both body pieces closed. Trim away any excess fabric.
-- With _good sides together_ sew the tail pieces to the body pieces, matching notches.
-- With _good sides together_ sew the topFin pieces to the body pieces.
+- Ga met doorstikgaren (dik garen) een paar keer heen en weer langs de kieuwlijnen van de lichaamsdelen.
+- _Naai de ogen met de randsteek_ vast aan de lichaamsdelen en pas de kleur van het garen van de buitenste spijkers aan.
+- Naai de figuurnaden aan de voorkant van beide lijfdelen dicht. Knip overtollige stof weg.
+- Met _goede kanten op elkaar_ naai je de staartdelen aan de lichaamsdelen met de inkepingen op elkaar.
+- Met _goede kanten op elkaar_ naai je de bovenvinnen aan de rompdelen.
 
 <Tip>
 
-It's worth double-checking that you are using the proper fin pieces, as Hi's pectoral (or side) fins have a similar topFin and bottomFin piece. The topFin should have a slightly convex curve along the edge where it meets the body, while the bottomFin is slightly concave. (The dorsal fin, or the fin along the shark's back that sticks out of the water when swimming, is incorporated into the body pieces, so you will create that in the next step.)
+Het is de moeite waard om te controleren of je de juiste vinstukken gebruikt, want de borstvinnen (of zijvinnen) van Hi hebben een soortgelijk bovenvin- en ondervinstuk. De topvin moet een licht bolle curve hebben langs de rand waar hij het lichaam raakt, terwijl de bottomvin licht hol is. (De rugvin, of de vin langs de rug van de haai die uit het water steekt als hij zwemt, wordt in de lichaamsdelen verwerkt, dus die maak je in de volgende stap).
 
 </Tip>
 
-- With _good sides together_ sew the body pieces together along the front, top, around the tail and below the tail, leaving a gap open below the tail for turning and stuffing the shark later.
+- Met _goede kanten op elkaar_ naai je de lichaamsdelen aan elkaar langs de voorkant, bovenkant, rond de staart en onder de staart, waarbij je onder de staart een opening openlaat om de haai later te draaien en op te vullen.
 
-## Step 3: The Belly
+## Stap 3: De buik
 
-- With _good sides together_ sew the two aboveMouth pieces together along the larger straight edge.
-- Sew the teeth to the mouth, matching notches. These will now be treated as one.
-- Sew the darts on the belly, trim away any excess fabric.
-- With _good sides together_ sew the aboveMouth pieces to the mouth, matching notches, being careful not to catch the teeth in the seam allowances.
-- With _good sides together_ sew the joined mouth and aboveMouth to the belly piece, matching notches.
-- With _good sides together_ sew the bottomFin pieces to the belly, matching notches.
+- Met _goede kanten op elkaar_ naai je de twee stukken boven de mond aan elkaar langs de grotere rechte rand.
+- Sew the teeth to the mouth, matching notches. Deze worden nu als één behandeld.
+- Naai de figuurnaden op de buik, knip overtollige stof weg.
+- Met _goede kanten op elkaar_ naai je de bovenstaande monddelen aan de mond, met de inkepingen op elkaar, waarbij je moet oppassen dat de tanden niet in de naad komen.
+- Met _goede kanten op elkaar_ naai je de samengevoegde mond en bovenmond aan het buikdeel, met de inkepingen op elkaar.
+- Met _goede kanten op elkaar_ naai je de onderste vinnen op de buik, met de inkepingen op elkaar.
 
-## Step 4: Final Assembly
+## Stap 4: Eindassemblage
 
-- With _good sides together_ sew the belly to the body, matching the front, back, and fins.
-- Turn though the gap left below the tail.
+- Met _goede kanten op elkaar_ naai je de buik aan het lijf, waarbij je de voor- en achterkant en de vinnen op elkaar naait.
+- Draai door de opening links onder de staart.
 
-## Step 5: Stuffing
+## Stap 5: Vullen
 
 - Fill the plush toy with stuffing through the opening you left in the tail. Make sure to fill the tail and fins well before adding too much stuffing in the body itself.
-- _Slipsticth_ or _whipstitch_ the opening closed.
+- _Slipsticth_ of _zweepsteek_ de opening dicht.
 
-## Step 6: Enjoy!
+## Stap 6: Geniet!
 
-That's it you are all done now go adventure the oceans with your new Hi!
+Dat was het, nu ben je helemaal klaar en ga je op avontuur in de oceanen met je nieuwe Hi!

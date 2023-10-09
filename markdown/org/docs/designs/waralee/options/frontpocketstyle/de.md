@@ -1,5 +1,5 @@
 ---
-title: "Front pocket style"
+title: "Fronttasche Stil"
 ---
 
-Change the front pocket from welt pocket to one that is hidden in the front seam.
+Ändere die Vordertasche von einer Leistentasche in eine Tasche, die in der Vordernaht versteckt ist.

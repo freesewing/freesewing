@@ -1,18 +1,18 @@
 ---
-title: "Bee bikini top: What You Need"
+title: "Bikinitopje bijen: Wat je nodig hebt"
 ---
 
-To make Bee, you will need the following:
+Om Bee te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- About 0.5 - 1 metre (0.6 - 1.1 yards) of a suitable fabric ([see Bee Fabric options](/docs/patterns/bee/fabric/))
-- (Optional) About 0.5 - 1 metre (0.6 - 1.1 yards) of lining fabric ([see Bee Fabric options](/docs/patterns/bee/fabric/))
-- (Optional) Ribbons/Tapes/Cords for neck ties and bands, with the same length and width as neck tie and/or band.
+- Ongeveer 0,5 - 1 meter (0,6 - 1,1 yard) van een geschikte stof ([zie Bee Fabric options](/docs/patterns/bee/fabric/)).
+- (Optioneel) Ongeveer 0,5 - 1 meter voeringstof ([zie Bijenstof opties](/docs/patterns/bee/fabric/))
+- (Optioneel) Lint/lint/koorden voor stropdassen en banden, met dezelfde lengte en breedte als de stropdas en/of band.
 
 <Note>
 
-The lining fabric is only needed if you want to make this pattern reversible. If you don't, you only need the main fabric.  
-You can use a serger/overlocker to construct this pattern but it is not mandatory.  
-Ribbons/Tapes/Cords can be used instead of making custom ties. Just make sure to get more than you need and that you cut down to size after construction.
+De voeringstof is alleen nodig als je dit patroon omkeerbaar wilt maken. Zo niet, dan heb je alleen de hoofdstof nodig.  
+Je kunt een overlockmachine gebruiken om dit patroon te maken, maar dat is niet verplicht.  
+Je kunt linten/tapes/koorden gebruiken in plaats van zelf stropdassen te maken. Zorg ervoor dat je meer koopt dan je nodig hebt en dat je het na de bouw op maat snijdt.
 
 </Note>

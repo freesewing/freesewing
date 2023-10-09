@@ -1,12 +1,12 @@
 ---
-title: Length ratio
+title: Співвідношення довжини
 ---
 
-Controls the length of the bib.
+Регулює довжину нагрудника.
 
-- Increase the percentage to lengthen the bib.
-- Decrease the percentage to shorten the bib.
+- Збільште відсоток, щоб подовжити нагрудник.
+- Зменшіть відсоток, щоб вкоротити нагрудник.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bob_lengthratio_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bob_lengthratio_sample.svg "Вплив цієї опції на шаблон")

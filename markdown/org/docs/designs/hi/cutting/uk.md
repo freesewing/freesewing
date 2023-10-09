@@ -1,17 +1,17 @@
 ---
-title: "Hi the shark: Cutting Instructions"
+title: "Привіт, акуло: Інструкція з різання"
 ---
 
-- **Color 1 (Upper body; Traditionally blue)**
-  - Cut **2 Body**
-  - Cut **2 Tail**
-  - Cut **2 Top Fin**
-  - Cut **2 Bottom Fin**
-- **Color 2 (Belly; Traditionally white)**
-  - Cut **1 Belly**
-  - Cut **2 Above Mouth**
-- **Color 3 (Mouth; Traditionally pink)**
-  - Cut **1 Mouth**
-- **Color 4 (Teeth; Traditionally white)**
-  - Cut **1 Upper Teeth**
-  - Cut **1 Lower Teeth**
+- **Колір 1 (Верхня частина тіла; традиційно синій)**
+  - Зріз **2 Корпус**
+  - Розріз **2 Хвіст**
+  - Розріз **2 Верхній плавник**
+  - Розріз **2 Нижній плавник**
+- **Колір 2 (Живіт; традиційно білий)**
+  - Вирізка **1 Живіт**
+  - Зріз **2 Над ротом**
+- **Колір 3 (Рот; традиційно рожевий)**
+  - Зрізати **1 Рот**
+- **Колір 4 (Зуби; традиційно білий)**
+  - Прорізування **1 Верхні зуби**
+  - Різьба **1 Нижні зуби**

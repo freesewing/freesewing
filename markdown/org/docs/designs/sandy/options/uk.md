@@ -1,5 +1,5 @@
 ---
-title: "Sandy circle skirt: Design Options"
+title: "Пісочна спідниця-коло: Варіанти дизайну"
 ---
 
 <PatternOptions pattern='sandy' />

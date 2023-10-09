@@ -1,11 +1,11 @@
 ---
-title: "Back dart height"
+title: "Висота задньої виточки"
 ---
 
 ***
 
-The **back dart height** option controls the height (length if you will) of the back dart.
+Параметр **висота задньої виточки** регулює висоту (довжину, якщо хочете) задньої виточки.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](noble_backdartheight_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](noble_backdartheight_sample.svg "Вплив цієї опції на шаблон")

@@ -3,12 +3,22 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import Head from 'next/head'
 import { PageWrapper } from 'shared/components/wrappers/page.mjs'
-import { Popout } from 'shared/components/popout.mjs'
-import { PageLink } from 'shared/components/page-link.mjs'
+import { PageLink } from 'shared/components/link.mjs'
 import { Highlight } from 'shared/components/mdx/highlight.mjs'
-import { WebLink } from 'shared/components/web-link.mjs'
+import { FreeSewingIcon, CisFemaleIcon, CodeIcon } from 'shared/components/icons.mjs'
+import { CardLink } from 'shared/components/link.mjs'
 
 const title = 'Welcome to FreeSewing.dev'
+
+const Card = ({ bg = 'bg-base-200', textColor = 'text-base-content', title, children, icon }) => (
+  <div className={`px-8 ${bg} py-10 rounded-lg block ${textColor} shadow-lg grow`}>
+    <h2 className="mb-4 text-inherit flex flex-row gap-4 justify-between items-center font-medium text-left">
+      {title}
+      {icon}
+    </h2>
+    {children}
+  </div>
+)
 
 /*
  * Each page MUST be wrapped in the PageWrapper component.
@@ -36,70 +46,60 @@ const HomePage = ({ page }) => (
       <title>{title}</title>
     </Head>
 
-    <div className="max-w-7xl m-auto">
-      <h2>FreeSewing Documentation for Developers & Contributors</h2>
-      <div className="flex flex-row flex-wrap gap-4 justify-between">
-        <div className="max-w-xl">
-          <Popout note>
-            <h3>v3: We&apos;re working on it 🤓</h3>
-            <p>
-              The upcoming version 3 of FreeSewing is currently under development. All of the
-              documentation here is being kept up-to-date with the upcoming v3 release.
-            </p>
-            <p>
-              Visit <WebLink href="https://v2.freesewing.dev/" txt="v2.freesewing.dev" /> for the
-              documentation for version 2 of FreeSewing.
-            </p>
-          </Popout>
-        </div>
-        <div className="max-w-xl">
-          <Popout tip>
-            <h3>What&apos;s changed?</h3>
-            <p>
-              Check{' '}
-              <PageLink
-                href="/guides/v3/migration"
-                txt="the FreeSewing version 3 migration guide"
-              />{' '}
-              to learn about what is new in version 3 of FreeSewing, and what changes you should
-              make in your own designs to port them to version 3.
-            </p>
-            <p>
-              If you have any questions to which you can&apos;t find the answers here, please{' '}
-              <WebLink href="https://discord.freesewing.org/" txt="reach out to us on Discord" />.
-            </p>
-          </Popout>
-        </div>
-      </div>
-    </div>
+    <div className="max-w-7xl m-auto px-0 mt-24">
+      <FreeSewingIcon className="h-36 w-36 m-auto" />
+      <h1 className="text-center font-heavy drop-shadow-md px-4">
+        <span style={{ letterSpacing: '-0.2rem' }} className="text-5xl lg:text-6xl">
+          FreeSewing
+        </span>
+        <span className="block text-sm lg:text-xl m-1">
+          An open source Javascript library for parametric sewing patterns
+        </span>
+      </h1>
 
-    <div className="max-w-7xl m-auto">
-      <h2>Using FreeSewing: TL;DR</h2>
+      <div className="flex flex-col gap-8 lg:grid lg:grid-cols-2 lg:gap-4 mt-12">
+        <Card
+          title="Custom-Fit Fashion"
+          icon={<CisFemaleIcon className="w-12 h-12 shrink-0" fill stroke={0} />}
+        >
+          <p className="font-medium text-lg">
+            FreeSewing is the leading open source library for on-demand garment manufacturing.
+          </p>
+          <p className="font-medium text-lg">
+            Loved by home sewers and fashion entrepreneurs alike, we provide the tech stack for your
+            creative endeavours.
+          </p>
+        </Card>
+
+        <Card title="Patterns as Code" icon={<CodeIcon className="w-12 h-12 shrink-0" />}>
+          <p className="font-medium text-lg">
+            FreeSewing designs are implemented as code giving you unmatched power and flexibility.
+          </p>
+          <p className="font-medium text-lg">
+            You can mix and match parts from different designs, extend them, or add options that
+            turn one base design into many.
+          </p>
+        </Card>
+      </div>
+
+      <h2 className="lg:text-center mb-4 mt-12">Using FreeSewing: TL;DR</h2>
       <div className="flex flex-row flex-wrap gap-4 justify-between">
         <div className="max-w-xl w-full">
           <h3>
-            1. To go fast, go alone <span role="img">🚀</span>
+            To go fast, go alone <span role="img">🚀</span>
           </h3>
           <p>
             All you need is <strong>NodeJS</strong>; Then run:
           </p>
-          <Highlight language="shell">npx @freesewing/new-design@next</Highlight>
-          <p>This command will setup the stand-along FreeSewing development environment for you.</p>
-          <Popout tip compact>
-            Use this if you want to do your own thing, and not contribute to FreeSewing
-          </Popout>
-          <Popout note compact>
-            Refer to our{' '}
-            <PageLink
-              href="/tutorials/getting-started-linux/dev-setup"
-              txt="getting started guides"
-            />{' '}
-            for more info on setting up your development environment.
-          </Popout>
+          <Highlight language="shell">npx @freesewing/new-design</Highlight>
+          <p>
+            This command will setup the stand-alone FreeSewing development environment for you.{' '}
+            <PageLink href="/tutorials/getting-started-linux/dev-setup" txt="Learn more" />.
+          </p>
         </div>
         <div className="max-w-xl w-full">
           <h3>
-            2. To go far, go together <span role="img">🧑‍🤝‍🧑</span>
+            To go far, go together <span role="img">🧑‍🤝‍🧑</span>
           </h3>
           <p>
             First,{' '}
@@ -118,57 +118,41 @@ const HomePage = ({ page }) => (
             <a href="https://github.com/freesewing/freesewing">
               the freesewing/freesewing repository on GitHub
             </a>{' '}
-            and set it up for development.
+            and set it up for development. <PageLink href="/infra" txt="Learn more" />.
           </p>
-          <Popout tip compact>
-            Use this if you want to contribute to FreeSewing, for the betterment of all involved
-          </Popout>
-          <Popout note compact>
-            Refer to our <PageLink href="/infra" txt="infrastructure documentation" /> for more
-            details about how to work with our monorepo.
-          </Popout>
-        </div>
-        <div className="max-w-xl">
-          <h3>
-            3. Need help? <span role="img">🤯</span>
-          </h3>
-          <p>
-            When you have questions or find yourself scratching your head you can{' '}
-            <PageLink href="/contact" txt="contact us" /> in various ways.
-          </p>
-          <Popout note compact>
-            While we are all volunteers, we have a pretty good track record of helping people, and
-            we plan to keep it that way. So <PageLink href="/contact" txt="don't be shy" />{' '}
-            <span role="img">💜</span>
-          </Popout>
         </div>
       </div>
-    </div>
 
-    <div className="m-auto -mx-4">
-      <div
-        className="bg-cover bg-neutral w-full bg-center shadow p-4 py-12"
-        style={{ backgroundImage: 'url(/support.jpg)' }}
-      >
-        <div className="max-w-6xl m-auto">
-          <h2 className="text-neutral-content p-4 text-4xl font-bold sm:font-light sm:text-6xl drop-shadow">
-            Support FreeSewing
-          </h2>
-          <p className="text-neutral-content p-4 font-bold max-w-md text-lg drop-shadow">
-            FreeSewing is fuelled by a voluntary subscription model
-          </p>
-          <p className="text-neutral-content p-4 font-bold max-w-md text-lg drop-shadow">
-            If you think what we do is worthwhile, and if you can spare a few coins each month
-            without hardship, please support our work
-          </p>
-          <a
-            role="button"
-            className="btn btn-accent px-12 ml-4 mb-8"
-            href="https://freesewing.org/patrons/join"
-          >
-            Become a Patron
-          </a>
-        </div>
+      <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-4 mt-12">
+        <CardLink
+          href="/reference/core"
+          title="Core API"
+          text="Reference documentation for our core library"
+        />
+        <CardLink
+          href="/reference/backend"
+          title="Backend API"
+          text={
+            <span>
+              No backend?
+              <br />
+              No problem, you can use ours.
+            </span>
+          }
+        />
+      </div>
+
+      <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-4 mt-12 mb-24">
+        <CardLink
+          href="/tutorials/pattern-design"
+          title="Design Tutorial"
+          text="Step by step instructions to create your first FreeSewing design"
+        />
+        <CardLink
+          href="https://next.freesewing.org/support"
+          title="Need Help?"
+          text="Learn about the various ways you can reach out for help"
+        />
       </div>
     </div>
   </PageWrapper>

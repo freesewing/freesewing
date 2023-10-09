@@ -1,11 +1,11 @@
 ---
-title: "Full chest ease reduction"
+title: "Reducción total de la holgura torácica"
 ---
 
 ***
 
-Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area
+Te permite reducir de forma independiente la holgura alrededor del pecho para que quede ajustado(a) en esa zona
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_fullchesteasereduction_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bella_fullchesteasereduction_sample.svg "Efecto de esta opción en el patrón")

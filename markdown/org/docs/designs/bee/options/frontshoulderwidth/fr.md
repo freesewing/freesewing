@@ -1,10 +1,10 @@
 ---
-titre : "Largeur des épaules à l'avant (Bella)"
+title: "Largeur de l'épaule devant (Bella)"
 ---
 
 ***
 
-Contrôle la largeur de l'épaule avant dans le bloc Bella sur lequel est bése le patron Bee
+Contrôle la largeur de l'épaule avant dans le bloc de Bella sur lequel est basé le patron Bee
 
 ## Effet de cette option sur le motif
 

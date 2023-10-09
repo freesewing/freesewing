@@ -1,0 +1,129 @@
+addNotes: Add notes
+addSettingsToNotes: Add settings to notes
+advanced: Geavanceerd
+appliedMeasies: We applied a new measurements set to this pattern.
+armhole: Harnas
+attributes: Attributen
+backPockets: Achterzakken
+bookmarkPattern: Bookmark pattern
+bottomRight: Rechtsonder
+changeMeasies: Verander patroon metingen
+chooseATest: Choose a test scenario to run
+chooseATestDesc: You can test how the design adapts to changes in a specific design option or measurements.
+chooseATestMenuMobileMsg: To do so, open the test menu and select the scenario you want to run.
+chooseATestMenuMsg: To do so, select the test scenario you want to run in the menu on the right.
+chooseFromBookmarkedSets: Choose one of the measurements sets you've bookmarked
+chooseFromBookmarkedSetsDesc: If you've bookmarked any measurements sets, you can select from those too.
+chooseFromCuratedSets: Choose one of FreeSewing's curated measurements sets
+chooseFromCuratedSetsDesc: If you're just looking to try out our platform, you can select from our list of curated measurements sets.
+chooseFromOwnSets: Choose one of your own measurements sets
+chooseFromOwnSetsDesc: Pick any of your own measurements sets that have all required measurements to generate this pattern.
+chooseNewSet: Kies een nieuwe meetset
+closure: Sluiting
+collar: Kraag
+columns: columns
+configurePattern: Patroon configureren
+construction: Constructie
+continueEditingTitle: Continue editing
+continueEditingDesc: Load the newly saved pattern in the pattern editor, so you can make more changes.
+cuffs: Manchetten
+currentPrintLayout: Current print layout
+cutLayout: Lay-out snijden
+darts: Nepen
+designOptions.d: Test het effect van een optie op hoe dit patroon eruit ziet
+docs: Documentatie
+draft: Patroontekening
+draftPattern: Ontwerppatroon
+edit: Bewerk
+editCurrentMeasies: Huidige metingen bewerken
+editCurrentMeasiesDesc: Changes you make here will not be saved to your measurements sets, and will only affect this pattern.
+editCurrentMeasiesHeader: Edit Pattern Measurements
+editMeasiesByHand: Edit measurements by hand
+editMeasiesByHandDesc: Manually set or override any measurements. These changes will only apply to the current pattern.
+editSettings: Configuratie bewerken
+elastic: Elastiek
+export: Exporteren
+exportAsData: Exporteer als data
+exportForEditing: Exporteren om te bewerken
+exportForPrinting: Exporteren om te printen
+exportPattern-txt: Exporteer een PDF geschikt voor jouw printer, of download dit patroon in verschillende formaten
+exportPattern: Patroon exporteren
+fit: Pasvorm
+frontPockets: Voorzakken
+generatePdf: Generate print-ready PDF
+giveItAName: Geef het een naam
+goToPatternTitle: Navigate to the pattern page
+goToPatternDesc: Exit the pattern editor and navigate to the pattern page where you can update the pattern's metadata.
+height: Hoogte
+help: Help
+layoutSettings.d: Additional options to further optimize the printing layout of your pattern.
+layoutSettings.t: Layout settings
+length: Lengte
+learnHowToUseEditor: Learn how to use FreeSewing's online pattern editor
+measies: Patroonmetingen
+measiesOk: We hebben alle benodigde afmetingen om dit patroon te maken.
+measurements.d: Test het effect van een meting op hoe dit patroon eruit ziet
+menu: Menu
+name: Naam
+noDesignFound: We konden dit ontwerp niet vinden. Dit zou niet mogen gebeuren, dus we stellen het zeer op prijs als je dit meldt.
+noInlineDocs: Documention is not included in this build
+noInlineDocsDesc: Please visit FreeSewing.org to access our documentation
+notes: Notities
+pages: pages
+part: Patroononderdeel
+partInfo: Patroon onderdeel info
+partTransfo: Part transformation buttons
+partTransfoDesc: These buttons allow you to rotate or flip individual pattern parts.
+partTransfoNo: Hide buttons
+partTransfoNoDesc: Do not include these buttons on the pattern output
+partTransfoYes: Show buttons
+partTransfoYesDesc: Include these buttons on the pattern output (they will not be printed)
+pathInfo: Pad info
+patternBookmarkCreated: Pattern bookmark created
+patternInspector: Patroon Inspecteur
+patternLogs: Patroon logboeken
+patternSaved: Pattern saved
+pockets: Zakken
+printLayout: Lay-out afdrukken
+printSettings.d: Configure your pattern so you can print it just the way you like it. Includes page size & orientation, margins, and more.
+printSettings.t: Print settings
+reset: Reset
+resetPrintLayout: Reset print layout
+resetPrintLayoutDesc: Removes all manual changes to the print layout, and restores the default layout
+rows: rows
+save: Opslaan
+savePattern: Bewaar patroon
+saveAsNewPattern: Save as new pattern
+savePatternAs: Save pattern as...
+savePatternAsHellip: Save pattern as...
+saveSettings: Instellingen opslaan
+saveYourPattern: Je patroon opslaan
+seeMissingMeasies: See missing measurements
+show: Toon
+showAllParts: Toon alle patroondelen
+showMovableButtons: Knopen
+showOnlyThisPart: Laat alleen dit patroondeel zien
+sleevecap: Mouwkop
+style: Stijl
+test: Test
+testDesignMeasurement: "Test {design} measurements: {measurement}"
+testDesignOption: "Test {design} design options: {option}"
+testDesignSets: "Test {design} across measurements sets"
+testMeasurements: Test afmetingen
+testMeasurementsDesc: Test how the design adapts to changes to a specific measurement
+testOptions: Test design options
+testOptionsDesc: Test how the design adapts to changes in a specific design option
+testPattern: Testpatroon
+testSets: Test measurements sets
+testSetsDesc: Test how the design adapts across different measurements sets
+topLeft: Linksboven
+weLackSomeMeasies: We missen { nr } metingen om dit patroon te maken
+whereToGoAfterSaveAs: After saving the new pattern, what do you want to do?
+width: Breedte
+xTotalPagesSomeBlank: "{total} pages in total but {blank} are blank"
+yamlEditViewError: Problemen met YAML
+yamlEditViewErrorDesc: We hebben je input opgeslagen, maar het werkt misschien niet om de volgende redenen
+yamlEditViewTitleThing: 'Patroonconfiguratie bewerken voor {thing}'
+youCanPickOrEnter: Je kunt een meetset kiezen of ze met de hand invoeren, maar zonder deze metingen kunnen we niet verder.
+youUseCustomValue: You are using the default value
+youUseDefaultValue: You are using a custom value

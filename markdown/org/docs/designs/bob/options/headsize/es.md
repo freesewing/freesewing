@@ -1,13 +1,13 @@
 ---
-title: Head size
+title: Tamaño de la cabeza
 ---
 
-Controls the size of the bib, as it will be drafted to fit this head circumference.
+Controla el tamaño del babero, ya que se confeccionará para ajustarse a este perímetro cefálico.
 
 In our tutorial (this bib is what we use in our tutorial to show people the ropes of designing their own patterns) we use a measurement for this.
 
-But we feel that's a bit overkill for real-world use on our site, so we've made it an option.
+Pero creemos que es un poco exagerado para el uso en el mundo real de nuestro sitio, así que lo hemos convertido en una opción.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bob_headsize_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bob_headsize_sample.svg "Efecto de esta opción en el patrón")

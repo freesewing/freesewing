@@ -1,128 +1,128 @@
 ---
-title: "Bee bikini top: Sewing Instructions"
+title: "Топ-бікіні \"Бджілка\": Інструкція з пошиття"
 ---
 
 <Warning>
-Make sure to use a stretch stitch
+Обов'язково використовуйте розтяжний стібок
 </Warning>
 
 <Note>
 
-When making a reversible top the second colour will be refered to as the lining fabric.  
-The notches in this pattern act more like dots so **do not** clip them to mark them.
+При виготовленні двостороннього верху другий колір буде називатися підкладковою тканиною.  
+Насічки на цьому візерунку більше схожі на крапки, тому **не** закріплюйте їх, щоб позначити.
 
 </Note>
 
-### Step 1: Construct the Neck Ties
+### Крок 1: Створіть шийні краватки
 
-#### Neck Ties One Colour Method
+#### Одноколірні краватки на шию
 
-- Fold one of the neck tie pieces in half lengthwise, right sides and raw edges together.
-- Sew along the raw edges, leaving one of the short ends open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out and press.
+- Складіть одну із зав'язок для шиї навпіл уздовж, прямими боками і необробленими краями разом.
+- Прошийте по необроблених краях, залишивши один з коротких кінців відкритим.
+- Обріжте припуски на шви і закріпіть кути.
+- Виверніть навиворіт і натисніть.
 
-<Note>Repeat this for the other neck tie</Note>
+<Note>Повторіть це для іншої краватки на шиї</Note>
 
-#### Neck Ties Two Colours Method
+#### Метод двоколірних краваток на шиї
 
-- With right sides together, sew one main neck tie to one lining neck tie leaving one of the short edges open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out. Press.
+- Лицьовими боками до лицьового боку пришийте одну основну зав'язку до однієї підкладкової, залишивши один з коротких країв відкритим.
+- Обріжте припуски на шви і закріпіть кути.
+- Вивернися навиворіт. Преса.
 
-<Note>Repeat this for the the remaining neck tie pieces</Note>
+<Note>Повторіть цю процедуру для решти зав'язок на шиї</Note>
 
-### Step 2: The Cups
+### Крок 2: Чашки
 
-#### Band Tie Variant
+#### Варіант стрічкової краватки
 
-- With raw edges and main fabric together, _baste_ one of the neck ties to the top of one of the cup pieces making sure that the tie goes towards the bottom of the cup.
-- With the neck tie sandwiched inside, pin a lining cup piece right sides together to the main cup piece.
-- Sew the lining to the main cup between notches along the front, top and side seams, making sure not to catch the neck tie and to reinforce the stitch at the notches.
-- (Optional) Fold to the wrong side and _edgestitch_ the seam allowance down between notches on the front and side seams. Do not sew the allowances together.
-- With good sides together, sew the lining to the main fabric along the bottom, leaving a gap between the side notches making sure to reinforce the stitch at the either end.
-- Trim the seam allowances of the sewn edges whilst leaving the seam allowance between the notches. Clip the corners. You may also need to clip the curved seams.
-- Turn inside out by pulling the neck tie through one of the gaps. Press.
-- (Optional) _edgestitch_ the top, sides and bottom of the cup leaving the gaps between the notches open.
-- Stitch along casing line to create band channel.
+- З'єднавши необроблені краї і основну тканину разом, _приметайте_ одну із зав'язок горловини до верхньої частини однієї з частин чашки, переконавшись, що зав'язка йде в напрямку до низу чашки.
+- Затиснувши зав'язку на шиї всередину, приколіть підкладкову частину чашки прямими боками до основної частини чашки.
+- Пришийте підкладку до основної чашки між надсічками вздовж переднього, верхнього і бокових швів, намагаючись не зачепити зав'язку горловини і зміцнивши шов на надсічках.
+- (Необов'язково) Складіть на виворітний бік і _кантовою строчкою_ припуски шва вниз між надсічками на передньому і бокових швах. Не зшивайте припуски разом.
+- Пришийте підкладку до основної тканини вздовж низу, залишаючи проміжок між боковими надрізами, не забуваючи зміцнити стібок з обох боків.
+- Обріжте припуски на зшиті краї, залишаючи припуски на шви між надсічками. Підріжте кути. Також може знадобитися обрізати вигнуті шви.
+- Виверніть навиворіт, протягнувши зав'язку через один з прорізів. Преса.
+- (Необов'язково) _краєобметочним швом_ верх, боки і низ чашки, залишаючи проміжки між надрізами відкритими.
+- Прострочіть вздовж лінії обшивки, щоб створити стрічковий канал.
 
-<Note>Repeat this for the other cup</Note>
+<Note>Повторіть цю процедуру для іншої чашки</Note>
 
 <Tip>
 
-If your seam allowance is wide you may find that you need to trim the gaps' seam allowances a little to reduce bulk.  
-If you are having trouble turning the cups you can try one of these methods:
+Якщо припуски на шви широкі, можливо, вам доведеться трохи обрізати припуски на шви, щоб зменшити об'єм.  
+Якщо у вас виникли проблеми з вивертанням чашок, спробуйте один з цих методів:
 
-- Create a 2.5cm (1") gap in the front or side seam and turn throught that, either _slipstitch_-ing the gap closed or _edgestitch_-ing it closed during Step 7.
-- Widen one of the existing gaps and turn through that. Then when turned _edgestitch_ or _slipstitch_ the widened part closed.
+- Зробіть проміжок 2,5 см (1 дюйм) у передньому або боковому шві і виверніть через нього, закривши проміжок стьожковим швом або закріпивши його стібком "упритул" під час кроку 7.
+- Розширте один з існуючих проміжків і проїдьте крізь нього. Потім при виконанні стібка "назад голку" або "ковзного стібка" розширена частина закривалася.
 
 </Tip>
 <Note>
 
-Whilst certainly optional it is recommended to _edgestitch_ the top and sides of the cups but the bottom is entirely optional.
+Звичайно, за бажанням, рекомендується зшити верх і боки чашок, але дно не є обов'язковим.
 
 </Note>
 
-#### Cross Back Ties Variant
+#### Варіант з перехресними зав'язками на спині
 
-- With raw edges and main fabric together, _baste_ one of the neck ties to the top of one of the cup pieces making sure that the tie goes towards the bottom of the cup.
-- With the neck tie sandwiched inside, pin a lining cup piece right sides together to the main cup piece.
-- Sew the lining to the main cup along the front, top and side seams, making sure not to catch the neck tie.
-- Turn the cups right side out and press.
-- (Optional) _edgestitch_ the top and sides of the cups.
-- Sew a line of basting stitches along the bottom of the cups, just inside the seamline.
-- Gather cups along the basting stitches.
+- З'єднавши необроблені краї і основну тканину разом, _приметайте_ одну із зав'язок горловини до верхньої частини однієї з частин чашки, переконавшись, що зав'язка йде в напрямку до низу чашки.
+- Затиснувши зав'язку на шиї всередину, приколіть підкладкову частину чашки прямими боками до основної частини чашки.
+- Пришийте підкладку до основної чашки по передньому, верхньому і боковому швах, намагаючись не зачепити зав'язку горловини.
+- Переверніть стаканчики прямою стороною назовні і притисніть.
+- (Необов'язково) _краєобметочний шов_ верхню і бокові частини чашок.
+- Прострочіть лінію наметочних стібків по низу чашок, просто всередині лінії шва.
+- Зберіть чашки вздовж наметочних стібків.
 
 <Tip>
 
-The amount you gather the cups is a matter of preference and cup size, but you can hold them up to yourself before stitching in place to ensure the fit is right.  
-There are also notches on either side of the band piece's midpoint to help give you an idea of how much to gather by.
+Кількість чашок, яку ви збираєте, залежить від ваших уподобань і розміру чашок, але ви можете прикласти їх до себе перед зшиванням, щоб переконатися, що вони сидять правильно.  
+З обох боків від середини стрічки також є насічки, які допоможуть вам зрозуміти, до якої позначки потрібно зібрати стрічку.
 
 </Tip>
 
-- Find the midpoint of the band piece, this is marked by a notch, then pin the gathered bottoms of cups to band piece, right sides together. You'll want the cups to meet at the band's midpoint.
-- Stitch the cups to the band. Once they're stitched in place, check the fit of the cups once more before continuing. Unpicking swim fabric is a pain, so it's better to make sure the cups fit just right before moving on.
+- Знайдіть середину стрічки, вона позначена насічкою, потім прикріпіть зібрані денця чашок до стрічки, прямими сторонами разом. Вам потрібно, щоб чашки зустрічалися в середині смуги.
+- Пришийте чашечки до стрічки. Після того, як вони будуть зшиті, ще раз перевірте прилягання чашок, перш ніж продовжувати. Розбирати тканину купальника - це неприємно, тому краще переконатися, що чашечки сидять точно, перш ніж рухатися далі.
 
 <Note>
 
-You may prefer to wrap the one cup over the other at the midpoint. To do this place the sides of the cups at the otuer notches and lay their fronts pass the midpoint with the left on top.
+Ви можете загорнути одну чашку над іншою посередині. Для цього прикладіть бокові сторони чашок до надсічок і накладіть їх лицьовими сторонами через середину так, щоб ліва була зверху.
 
 </Note>
 
-- Now it's time to finish the band. To do this, fold in the seam allowance on both sides of the band. The raw edges of your swim cups should be turned to the inside of the band. Then, fold the band in half lengthwise, aligning the long edges and enclosing the seam allowances. Swim fabric can be slippery, so you may need extra pins or clips to hold the fabric in place.
-- Stitch along the top of the band, securing the seam allowances within the band.
+- Тепер настав час завершити групу. Для цього складіть припуски на шви з обох боків стрічки. Необроблені краї ваших чашок для плавання повинні бути вивернуті всередину стрічки. Потім складіть стрічку навпіл уздовж, вирівнявши довгі краї і закривши припуски на шви. Тканина для купання може бути слизькою, тому вам можуть знадобитися додаткові шпильки або затискачі, щоб утримувати тканину на місці.
+- Прострочіть уздовж верхньої частини стрічки, закріплюючи припуски на шви всередині стрічки.
 
 <Tip>
 
-For extra support, you can also add swim elastic into the band, either by stitching clear elastic into the band's seam allowance, or by threading swim elastic through the band at this point.
+Для додаткової підтримки ви також можете додати плавальну резинку до стрічки, або вшивши прозору резинку в припуск на шов, або протягнувши плавальну резинку крізь стрічку в цьому місці.
 
 </Tip>
 
-- At this point, the band is a long tube with open ends. Next, we'll be sewing those closed while providing a loop to thread your neck ties through. To do this fold over one end of the band towards the inside of the swim top. The amount you fold over should be, at minimum, the width of your neck ties plus a seam allowance. Stitch the end down to create a loop at least as wide as your neck ties. There will be a lot of pressure on this point, so make sure your stitching is secure, and consider running a second line of stitching next to the first, for additional support. Repeat for the other end of the band.
-- To thread your neck-ties for cross back ties, take the tie from the left cup and thread it through the loop on the right side of the band, from top to bottom. Thread the tie from the right cup top-to-bottom through the loop on the left side of the band. Then tie the neck ties at center back to secure the swim top.
-- Skip to "Step 5: Enjoy!"
+- На цьому етапі стрічка являє собою довгу трубку з відкритими кінцями. Далі ми зшиваємо їх, залишаючи петлю, в яку можна протягнути шийні краватки. Для цього перегніть один кінець стрічки до внутрішньої сторони топа. Кількість, яку ви підгинаєте, повинна бути, як мінімум, шириною ваших зав'язок на шиї плюс припуски на шви. Прострочіть кінець вниз, щоб утворилася петля принаймні такої ж ширини, як і ваші шийні краватки. На цю точку буде сильний тиск, тому переконайтеся, що стібки надійно закріплені, і подумайте про те, щоб прокласти другу лінію стібків поруч з першою, для додаткової підтримки. Повторіть для іншого кінця стрічки.
+- Щоб протягнути зав'язки на шиї для перехресних зав'язок на спині, візьміть зав'язку з лівої чашечки і протягніть її через петлю на правій стороні стрічки, зверху вниз. Протягніть зав'язку від правої чашечки зверху вниз через петлю на лівій стороні стрічки. Потім зав'яжіть зав'язки на шиї по центру спинки, щоб закріпити купальник.
+- Перейдіть до "Крок 5: Насолоджуйтесь!"
 
-### Step 3: Band tie
+### Крок 3: Зав'язуємо стрічку
 
-You only need to do this step if making the band tie variant.
+Цей крок потрібно виконати лише у випадку, якщо ви робите варіант стрічкової краватки.
 
-#### Band Tie One Colour Method
+#### Стрічкова краватка в один колір
 
-- Fold the band tie piece in half lengthwise, right sides and raw edges together.
-- Sew along the raw edges, leaving one of the short ends open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out. Press.
+- Складіть стрічку-краватку навпіл уздовж, прямими сторонами і необробленими краями разом.
+- Прошийте по необроблених краях, залишивши один з коротких кінців відкритим.
+- Обріжте припуски на шви і закріпіть кути.
+- Вивернися навиворіт. Преса.
 
-#### Band Tie Two Colours Method
+#### Метод двоколірної стрічкової краватки
 
-- With right sides together, sew the main band tie to the lining neck tie leaving one of the short edges open.
-- Trim the seam allowances and clip the corners.
-- Turn inside out. Press.
+- Лицьовими боками до лицьового боку пришийте основну стрічку до зав'язки горловини підкладки, залишивши один з коротких країв відкритим.
+- Обріжте припуски на шви і закріпіть кути.
+- Вивернися навиворіт. Преса.
 
-### Step 4: Putting it all together.
+### Крок 4: Збираємо все докупи.
 
-- Thread the band tie through the gaps along the bottom edge of the cups, making sure the front sides of the cups are in the centre and that the main and lining sides are on the respective side.
+- Протягніть стрічкову зав'язку через прорізи вздовж нижнього краю чашок, переконавшись, що лицьові сторони чашок знаходяться в центрі, а основна і підкладкова сторони - на відповідному боці.
 
-### Step 5: Enjoy!
+### Крок 5: Насолоджуйтесь!
 
-Hooray, your Bee Bikini Top is finished!
+Ура, твій топ-бікіні від Бджілки готовий!

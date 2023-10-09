@@ -1,25 +1,25 @@
 ---
-title: "Bent body Block: Sewing Instructions"
+title: "Gebogen lichaam Blok: Naai-instructies"
 ---
 
 <Note>
 
-###### Bent is a block, not a pattern
+###### Bent is een blok, geen patroon
 
-A block is a basic shape on which other patterns are based.
+Een blok is een basisvorm waarop andere patronen zijn gebaseerd.
 Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Bent block.
+Blokken worden meestal niet gemaakt zoals ze zijn, maar dienen als basis voor andere patronen, dus de instructies hieronder gaan niet dieper in op sluitingen of afwerkingen en zijn voor het standaard Bent-blok.
 
 </Note>
 
 <Warning>
 
-As Bent is a block it does not have any closures. So the instructions below will explain how to make a Bent with a seam down the centre front so you can pin yourself into it.
+Omdat Bent een blok is, heeft het geen sluitingen. In de onderstaande instructies wordt uitgelegd hoe je een Bent maakt met een naad middenvoor, zodat je jezelf erin kunt vastspelden.
 
 </Warning>
 
-### Step 1: Mock-up Construction
+### Stap 1: Model constructie
 
 - Sew the fronts to the back at the shoulder seams good sides together.
 - Sew the fronts to the back at the side seams good sides together.
@@ -28,7 +28,7 @@ As Bent is a block it does not have any closures. So the instructions below will
 
 <Note>
 
-You may need to ease/gather the sleeves to fit.
+Het kan zijn dat je de mouwen moet versoepelen om ze passend te maken.
 
 You may need to ease/gather the sleeves to fit.\
 You may need to leave the bottom of one of the sleeve seams open to put the garment on.
@@ -40,46 +40,46 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 
 </Tip>
 
-### Step 2: Try it on
+### Stap 2: Probeer het uit
 
-- Try it on and check the fit by pinning the front closed whilst wearing it.
-- Make any alterations and try it on again.
-- Repeat until you are happy.
+- Pas het en controleer de pasvorm door de voorkant dicht te spelden terwijl je het draagt.
+- Breng eventuele wijzigingen aan en pas het opnieuw.
+- Herhaal dit tot je tevreden bent.
 
 <Tip>
 
-If you do not have someone to help with pinning alterations, you can use a dressform to pin any alterations that are hard to do on person. Just remember to try it on after to make sure it fits you.
+Als je niemand hebt die je kan helpen met het vastspelden van veranderingen, kun je een dressform gebruiken om veranderingen vast te spelden die moeilijk persoonlijk te doen zijn. Vergeet niet om het daarna te passen om er zeker van te zijn dat het je past.
 
-Keep an eye out for anything you keep doing whilst wearing the mock-up, are you pulling it down? Constantly adjusting the shoulder? etc. etc. etc. Things like these are signs of where the pattern may need adjusting.
+Let goed op wat je blijft doen terwijl je de mock-up draagt, trek je hem naar beneden? Voortdurend de schouder aanpassen? enz. etc. etc. Things like these are signs of where the pattern may need adjusting.
 
-Sometimes you may need to wear the mock-up for an extended amount of time to get a better sense of the fit so don't be afraid to walk around in it for a couple of hours.
+Soms moet je de mock-up langere tijd dragen om een beter gevoel te krijgen van de pasvorm, dus wees niet bang om er een paar uur in rond te lopen.
 
 </Tip>
 <Note>
 
-Remember to treat Bent as a basis rather than a final product, so adjust what you need to get the desired look.  
-For instance:
+Denk eraan Bent te behandelen als basis en niet als eindproduct, dus pas aan wat je nodig hebt om de gewenste look te krijgen.  
+Bijvoorbeeld:
 
-- Change the neck line
-- Add/change the closure allowances
-- Alter the hem style
-- Add a collar
+- De halslijn veranderen
+- De sluitingstoeslagen toevoegen/wijzigen
+- De zoomstijl veranderen
+- Een kraag toevoegen
 
-It is all up to you! Experiment and go forth!
+Het is allemaal aan jou! Experimenteer en ga erop uit!
 
 </Note>
 
-### Step 3: Make a paper pattern
+### Stap 3: Maak een papieren patroon
 
-- Once happy with all your changes unpick your mockup and make a paper pattern based off of it.
-- Now you have a pattern you can use to produce a garment.
+- Als je tevreden bent met alle wijzigingen, pak je je mockup uit en maak je er een papieren patroon van.
+- Nu heb je een patroon waarmee je een kledingstuk kunt maken.
 
 <Note>
 
-It is best practice to make a paper pattern from the mock-up if you have made any alterations, as this will allow you to clean up any lines but also means you have a pattern that you can keep producing garments from.
+Het is het beste om een papieren patroon te maken van de mock-up als je wijzigingen hebt aangebracht, omdat je dan lijnen kunt opschonen en een patroon hebt waarmee je kledingstukken kunt blijven maken.
 
 </Note>
 
-### Bent is a block, looking for a finalised pattern?
+### Bent is een blok, op zoek naar een afgerond patroon?
 
 > Here are some of the patterns based on Bent: [Carlton](/patterns/carlton), [Carlita](/patterns/carlita), and [Jaeger](/patterns/jaeger).

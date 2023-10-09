@@ -1,5 +1,5 @@
 ---
-title: "Band (chest) tie width"
+title: "Ancho de la cinta del pecho"
 ---
 
 ***

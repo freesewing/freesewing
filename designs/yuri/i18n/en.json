@@ -1,0 +1,22 @@
+{
+  "t": "Yuri hoodie",
+  "d": "Yuri is a fancy zipless cardigan based on the Huey & Hugo hoodies",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "gusset": "Gusset",
+    "hoodCenter": "Hood center",
+    "hoodSide": "Hood side",
+    "sleeve": "Sleeve"
+  },
+  "s": {
+    "cutHoodCenter.t": "The hood center is not shown",
+    "cutHoodCenter.d": "The **Hood center** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long."
+  },
+  "o": {
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at the hips"
+    }
+  }
+}

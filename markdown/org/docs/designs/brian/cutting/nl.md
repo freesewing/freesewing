@@ -1,18 +1,18 @@
 ---
-title: "Brian body block: Cutting Instructions"
+title: "Brian lichaam blok: Snij-instructies"
 ---
 
-**Main fabric**
+**Buitenstof**
 
-- Cut **1 Front** part on the fold.
-- Cut **1 Back** part on the fold.
-- Cut **2 Sleeve** parts.
+- Knip **1 Voorste deel** op de vouw.
+- Knip **1 Rugdeel** op de vouw uit.
+- Snijd **2 Mouw** delen.
 
-These cutting instructions are just for the default Brian block. Adjust your cutting accordingly if you have/are making changes to the block.
+Deze snij-instructies zijn alleen voor het standaard Brian blok. Pas je snijwerk dienovereenkomstig aan als je veranderingen aan het blok hebt aangebracht.
 
 <Tip>
 
-If you do not have someone to help pin you into Brian then you may find it easier to Cut 2 Front parts with seam allowance and sew the backs up when constructing so you can pin in the front.
+Als je niet iemand hebt die je kan helpen om Brian vast te spelden, is het misschien makkelijker om 2 voorpanden met naadtoeslag te knippen en de achterpanden vast te naaien tijdens het maken, zodat je de voorkant kunt vastspelden.
 
 </Tip>
 

@@ -1,5 +1,8 @@
 ---
-title: "Titan trouser block"
+title: "Titan, patrón base de pantalón"
 ---
 
-<PatternDocs pattern='titan' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='titan' docs />
+

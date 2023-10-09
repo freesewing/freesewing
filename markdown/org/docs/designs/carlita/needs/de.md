@@ -1,22 +1,22 @@
 ---
-title: "Carlita coat: What You Need"
+title: "Carlita Mantel: Was du brauchst"
 ---
 
-To make Carlita, you will need the following:
+Um Carlita zu machen, brauchst du Folgendes:
 
-- Basic sewing supplies
-- About 5 - 6 metres (5.5 - 6.6 yards) of a suitable main fabric ([see Carlita Fabric options](/docs/patterns/carlita/fabric/))
-- About 3.5 - 4 metres (3.8 - 4.4 yards) of lining fabric ([see Carlita Fabric options](/docs/patterns/carlita/fabric/))
-- About 0.75 - 1 metre (0.8 - 1.1 yards) of sleeve lining fabric ([see Carlita Fabric options](/docs/patterns/carlita/fabric/))
-- Light to Mediumweight hair canvas ([see Carlita Fabric options](/docs/patterns/carlita/fabric/))
-- Heavyweight hair canvas ([see Carlita Fabric options](/docs/patterns/carlita/fabric/))
-- Tailors tape
-- 6 Buttons for front closure
-- Strong thread for attaching facings
-- (Optional) Silk buttonhole twist if hand-sewing the buttonholes and buttons.
+- Grundlegendes Nähzubehör
+- Etwa 5 - 6 Meter (5,5 - 6,6 Yards) eines geeigneten Hauptstoffes ([siehe Carlita Stoffoptionen](/docs/patterns/carlita/fabric/))
+- Etwa 3,5 - 4 Meter Futterstoff ([siehe Carlita Stoffoptionen](/docs/patterns/carlita/fabric/))
+- Etwa 0,75 - 1 Meter (0,8 - 1,1 Yards) Ärmelfutterstoff ([siehe Carlita Stoffoptionen](/docs/patterns/carlita/fabric/))
+- Leichte bis mittelschwere Haarleinwand ([siehe Carlita Stoffoptionen](/docs/patterns/carlita/fabric/))
+- Schweres Haarsegeltuch ([siehe Carlita Fabric options](/docs/patterns/carlita/fabric/))
+- Schneiderband
+- 6 Knöpfe für den Frontverschluss
+- Starker Faden zum Befestigen von Verkleidungen
+- (Optional) Seidenknopflochzwirn, wenn du die Knopflöcher und Knöpfe von Hand nähst.
 
 <Warning>
 
-Carlita has a lot of pieces! These lengths are estimates, you may need more or less depending on your size but if in doubt add an extra 0.5 to 1 metre of fabric.
+Carlita hat eine Menge Stücke! Diese Längen sind Schätzungen. Je nach Größe brauchst du mehr oder weniger, aber im Zweifelsfall solltest du noch 0,5 bis 1 Meter Stoff hinzufügen.
 
 </Warning>

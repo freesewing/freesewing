@@ -1,15 +1,15 @@
 ---
-title: "Handle width"
+title: "Largeur d'anse"
 ---
 
-Controls the width of the handle.
+Contrôle la largeur de l'anse.
 
 <Tip>
 
-Turn on paperless to see the width of the handle.
+Passez en mode sans papier pour voir la largeur de la poignée.
 
 </Tip>
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](hortensia_handlewidth_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](hortensia_handlewidth_sample.svg "Effet de cette option sur le motif")

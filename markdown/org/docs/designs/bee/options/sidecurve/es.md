@@ -1,5 +1,5 @@
 ---
-title: "Side curve"
+title: "Curva lateral exterior"
 ---
 
 ***

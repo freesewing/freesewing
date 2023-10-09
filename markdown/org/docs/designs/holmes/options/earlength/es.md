@@ -1,10 +1,10 @@
 ---
-title: "Ear flap length"
+title: "Longitud de la orejera"
 ---
 
 ***
 
-Controls the length of the ear flaps independently from the crown pieces
+Controla la longitud de las orejeras independientemente de las piezas de la corona
 
 ## Efecto de esta opción en el patrón
 

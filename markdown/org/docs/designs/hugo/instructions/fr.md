@@ -1,12 +1,12 @@
 ---
-title: "Hugo hoodie: Sewing Instructions"
+title: "Hugo hoodie : Instructions de couture"
 ---
 
 <Note>
 
-###### Documentation under construction
+###### Documentation sur le montage
 
-First the good news: There's a video series that shows how to make Hugo from start to finish.
+Première bonne nouvelle : il y a une série de vidéos qui montre comment faire Hugo du début à la fin.
 Faites défiler vers le bas, elle est intégré dans cette page.
 
 Maintenant, la mauvaise nouvelle : Les instructions écrites pour Hugo ne sont pas encore complètes.
@@ -15,9 +15,9 @@ Maintenant, la mauvaise nouvelle : Les instructions écrites pour Hugo ne sont p
 
 ## Vidéo
 
-Text a bit dry for you? I try to make videos available as part of the pattern documentation.
+Le texte est un peu concis pour vous ? J'essaie de rendre les vidéos disponibles comme partie intégrante de la documentation du patron.
 
-This 6-episode series shows you how to make your hoodie start to finish:
+Cette série de 6 épisodes vous montre comment réaliser votre sweat à capuche du début à la fin :
 
 <YouTube id='PL1gv5yv3DoZOHLjisuD1JcUPTkFy_IGGO' playlist />
 
@@ -29,8 +29,8 @@ This 6-episode series shows you how to make your hoodie start to finish:
 - Cousez les parmentures à la poche avec une marge de 1 cm.  Cousez à la fois le bord long et le bord court sur le bas de la poche.
 - Dégarnissez soigneusement la marge de couture sur les pièces de parmenture.
 - Retournez les pièces de parmenture sur l'endroit.  Aplatissez bien la couture en faisant rouler pour bien mettre en place la couture, puis pressez au fer.
-- Topstitch or edge-stitch 0.5 cm along both upper and lower edges on each side of the pocket, to anchor the facing and the seam allowance.
-- Topstitch another line 0.5 cm from the inside upper edge of the facing on each side of the pocket.  Cette surpiqûre s'arrête sur la première ligne de surpiqûre du côté bas (voir vidéo 2 à 1'50)
+- Surpique ou fais une piqûre de bordure sur 0,5 cm le long des bords supérieur et inférieur de chaque côté de la poche, pour ancrer le parement et le surplus de couture.
+- Surpique une autre ligne à 0,5 cm du bord supérieur intérieur de la parementure de chaque côté de la poche.  Cette surpiqûre s'arrête sur la première ligne de surpiqûre du côté bas (voir vidéo 2 à 1'50)
 - Dégarnissez l'excès de matière de la parmenture à l'intérieur de la poche.
 - Pressez sur les bords.
 
@@ -44,15 +44,15 @@ This 6-episode series shows you how to make your hoodie start to finish:
 
 ### Étape 3 : Fixer les manches
 
-- The side of the sleeve with the pointy edge at top is the back of the sleeve piece.  It is also marked by a double notch on the pattern.
+- Le côté de la manche avec le bord pointu en haut est l'arrière de la manche.  Il est également marqué par une double encoche sur le patron.
 
-- Match good sides of the sleeve seam to good sides of the front, matching the single notch on front to single notch on the sleeve piece. Stitch the seam.  Do this for both sleeve pieces.
+- Placez le devant de la manche sur le devant du sweat endroit contre endroit en faisant correspondre les repères du devant et de la manche. Coudre.  Faites cela pour les deux pièces de manche.
 
 - Pour terminer la couture, vous pouvez utiliser une de ces méthodes :
 
   - Utilisez une surjeteuse pour coudre et surfiler la couture en une étape.  Ceci est rapide et pratique, mais donne un aspect moins raffiné.
   - Si vous n'avez pas de surjeteuse, ou si vous voulez un look plus raffiné, cousez une un point droit avec votre machine à coudre. Pressez les marges de couture en les écartant de chaque côté de la couture.  Ensuite, faites une couture au bord le long des deux côtés de la couture depuis l'endroit.  Enfin, coupez la marge de couture excédentaire.  Cela donne un aspect raffiné, mais prend plus de temps.
-  - Une autre option sans surjeteuse est de coudre la couture avec un point droit. Ensuite cousez les marges de couture avec un point supplémentaire en zig-zag le long du point droit.  Enfin, coupez l'excès de marge de couture.  Cela simule ce que ferait une surjeteuse, et c'est plus rapide que l'option (2).
+  - Une autre option sans surjeteuse est de coudre la couture avec un point droit. Ensuite cousez les marges de couture avec un point supplémentaire en zig-zag le long du point droit.  Enfin, coupez la marge de couture excédentaire.  Cela simule ce que ferait une surjeteuse, et c'est plus rapide que l'option (2).
 
 - Placez le dos de la manche sur l'arrière du sweat endroit contre endroit en faisant correspondre les doubles repères du dos et de la manche.  Faites la couture d'assemblage, puis terminez les coutures comme fait pour le devant.
 
@@ -90,9 +90,9 @@ This 6-episode series shows you how to make your hoodie start to finish:
 - Pour fermer la capuche, surjetez ensemble les couches en bas, le long du cou.  Si vous n'avez pas de surjeteuse, utilisez un point zig-zag.
 - (Facultatif) Si vous avez ajouté des trous pour un cordon, vous pouvez le passer maintenant.
 
-### Step 8: Preparing a Neckband and Attaching the Hood
+### Étape 8 : Préparer un tour de cou et fixer la capuche
 
-- Cut a cross-wise strip of fabric out of your main fabric, your neck opening + 2cm (3/4 inch) long and triple your neck seam allowance wide.
+- Coupez une bande de tissu dans votre tissu principal, de la longueur de votre encolure + 2 cm (3/4 po) et de la largeur égale au triple de votre marge de couture au cou.
 - Pliez endroit contre endroit la pièce d'encolure et la coudre à 1 cm sur le côté court afin de créer une bande circulaire.
 - À partir du dos, faites correspondre l'extérieur de la capuche et le dos de l'encolure, endroit contre endroit. Alignez le panneau de capuche à l'arrière du cou.
 - Épinglez tout le tour de l'encolure jusqu'au devant.

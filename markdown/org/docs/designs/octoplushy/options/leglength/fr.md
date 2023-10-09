@@ -1,9 +1,9 @@
 ---
-title: "Leg Length"
+title: "Longueur des jambes"
 ---
 
-The length of the legs can be adjusted.
+La longueur des pieds est réglable.
 
-## Effet de cette option sur le modèle
+## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](octoplushy_leglength_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](octoplushy_leglength_sample.svg "Effet de cette option sur le motif")

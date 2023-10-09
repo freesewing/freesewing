@@ -1,5 +1,8 @@
 ---
-title: "Walburga Wappenrock"
+title: "Tabard Walburga"
 ---
 
-<PatternDocs pattern='walburga' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='walburga' docs />
+

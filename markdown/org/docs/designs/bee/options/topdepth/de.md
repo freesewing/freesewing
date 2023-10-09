@@ -1,10 +1,10 @@
 ---
-title: "Top Depth"
+title: "Obere Tiefe"
 ---
 
 ***
 
-Controls how far the bikini cup extends upwards
+Kontrolliert, wie weit sich der Bikini-Cup nach oben erstreckt
 
 ## Effekt dieser Option auf das Schnittmuster
 

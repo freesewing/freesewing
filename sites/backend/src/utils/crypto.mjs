@@ -53,7 +53,7 @@ export function encryption(stringKey, salt = 'FreeSewing') {
       try {
         data = asJson(data)
       } catch (err) {
-        console.log(err)
+        console.log({ type: 'encrypt', err, data })
         throw 'Could not parse input to encrypt() call'
       }
 
@@ -79,13 +79,14 @@ export function encryption(stringKey, salt = 'FreeSewing') {
       })
     },
     decrypt: (data) => {
+      if (data === null || data === '') return ''
       /*
        * Don't blindly assume this data is properly formatted ciphertext
        */
       try {
         data = JSON.parse(data)
       } catch (err) {
-        console.log(err)
+        console.log({ type: 'decrypt', err, data })
         throw 'Could not parse encrypted data in decrypt() call'
       }
       if (!data.iv || typeof data.ct === 'undefined') {

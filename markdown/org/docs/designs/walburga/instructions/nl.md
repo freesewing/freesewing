@@ -1,37 +1,37 @@
 ---
-title: "Walburga Wappenrock: Sewing Instructions"
+title: "Walburga Wappenrock: Naai-instructies"
 ---
 
 <Note>
 
-Walburga is a historically inspired pattern, and if you want more authenticity, handsewing is the way to go. Personally, I use a sewing machine. Jullie doen jullie.
+Walburga is een historisch geïnspireerd patroon en als je meer authenticiteit wilt, moet je met de hand naaien. Persoonlijk gebruik ik een naaimachine. Jullie doen jullie.
 
 </Note>
 
-### Step 1: Sew shoulder seams
+### Stap 1: Schoudernaden naaien
 
-- Put front and back pieces with good sides together. Sew the shoulder seams, taking care to stop at the notches for the head opening.
+- Leg de voor- en achterkant met de goede kanten op elkaar. Naai de schoudernaden en stop bij de inkepingen voor de hoofdopening.
 
-### Step 2: Finish seams and head opening
+### Stap 2: Naden en hoofdopening afwerken
 
-- Finish the seams and the raw edges at the head opening, with a method of your choice. (If you used the fabrics recommended in the [fabric options](/docs/patterns/walburga/fabric), they _will_ fray. Folding the seam allowance twice, enclosing the raw edge and topstitching is an option. You can also use decorative topstitching.)
+- Werk de naden en de knipranden bij de hoofdopening af met een methode naar keuze. (Als je de stoffen hebt gebruikt die worden aanbevolen in de [stofopties](/docs/patterns/walburga/fabric), zullen ze _gaan rafelen. De naadtoeslag twee keer vouwen, de kniprand insluiten en doorstikken is een optie. Je kunt ook decoratieve doorstiksels gebruiken).
 
-### (Optional) Step 3: Cut slits
+### (Optioneel) Stap 3: Snijd spleten
 
-_This step is optional, you can also opt not to cut slits. If so, continue with step 4._
+_Deze stap is optioneel, je kunt er ook voor kiezen om geen spleten te snijden. Zo ja, ga dan verder met stap 4._
 
 <Warning>
 
-If you cut slits, there will be no seam (or hem) allowance to finish the edge there. Think about this before you cut.
+Als je splitjes knipt, is er geen naadtoeslag (of zoomtoeslag) om de rand daar af te werken. Denk hierover na voordat je gaat snijden.
 
 </Warning>
 
-- Cut into your fabric until the notch, both on the front and back piece.
+- Knip in je stof tot aan de inkeping, zowel op het voor- als achterstuk.
 
-### Step 4: Finish edges
+### Stap 4: Randen afwerken
 
-- Finish the edges of the garment. This is a good time to use bias tape or similar to enclose the raw edge (especially if you cut slits in step 3). This step can take some time, so be patient.
+- Werk de randen van het kledingstuk af. Dit is een goed moment om biaisband of iets dergelijks te gebruiken om de kniprand te omsluiten (vooral als je in stap 3 splitjes hebt gemaakt). Deze stap kan even duren, dus wees geduldig.
 
-### Step 5: That's it!
+### Stap 5: Dat is het!
 
-You're done! You could now appliqué/embroider/otherwise attach a symbol or heraldics of your choice onto your garment.
+Je bent klaar! Je kunt nu een symbool of heraldiek naar keuze op je kledingstuk appliqueren/borduren/op een andere manier bevestigen.

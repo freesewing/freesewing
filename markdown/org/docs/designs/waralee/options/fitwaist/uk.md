@@ -1,5 +1,5 @@
 ---
-title: "Fit waist"
+title: "Облягаюча талія"
 ---
 
-This setting uses the waist measurement to adjust the shaping of the front and back. It will draw in the waist above the hips if your measurements indicate that the pattern should for a better fit.
+Цей параметр використовує обхват талії для регулювання форми переду і спинки. Вона втягне талію вище стегон, якщо ваші виміри вказують на те, що викрійка повинна краще облягати стегна.

@@ -1,8 +1,8 @@
 ---
-title: "Albert apron: What You Need"
+title: "Albert schort: Wat je nodig hebt"
 ---
 
 Om Albert te maken heb je het volgende nodig:
 
 - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-- About 1.25 meters (1.4 yards) (depending on the length of your apron) of a suitable fabric ([see Fabric options](/docs/patterns/albert/fabric))
+- Ongeveer 1,25 meter (afhankelijk van de lengte van je schort) van een geschikte stof ([zie Stofopties](/docs/patterns/albert/fabric))

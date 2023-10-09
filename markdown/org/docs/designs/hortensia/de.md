@@ -1,5 +1,8 @@
 ---
-title: "Hortensia handbag"
+title: "Hortensia, die Handtasche"
 ---
 
-<PatternDocs pattern='hortensia' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='hortensia' docs />
+

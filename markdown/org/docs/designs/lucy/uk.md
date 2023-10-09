@@ -1,5 +1,8 @@
 ---
-title: "Lucy tie-on pocket"
+title: "Кишеня на зав'язці Люсі"
 ---
 
-<PatternDocs pattern='lucy' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='lucy' docs />
+

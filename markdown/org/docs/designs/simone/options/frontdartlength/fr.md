@@ -1,12 +1,12 @@
 ---
-title: "Front dart length"
+title: "Longueur des pinces de taille"
 ---
 
-Controls how close the **front waist darts** approach the bust points.
+Contrôle la distance entre les pinces de taille avant **** et les points du buste.
 
-- Increase this option to lengthen the front waist darts moving them closer to the bust points
-- Decrease this option to shorten the front waist darts moving them further away from the bust points
+- Augmente cette option pour allonger les pinces de taille avant en les rapprochant des points du buste.
+- Diminue cette option pour raccourcir les pinces de taille avant en les éloignant davantage des points du buste.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_frontdartlength_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simone_frontdartlength_sample.svg "Effet de cette option sur le motif")

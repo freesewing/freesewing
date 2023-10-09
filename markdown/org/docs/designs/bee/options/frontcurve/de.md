@@ -1,10 +1,10 @@
 ---
-title: "Front curve"
+title: "Vordere Kurve"
 ---
 
 ***
 
-Controls the curvature of the front of the bikini cup
+Kontrolliert die Krümmung der Vorderseite des Bikini-Cups
 
 ## Effekt dieser Option auf das Schnittmuster
 

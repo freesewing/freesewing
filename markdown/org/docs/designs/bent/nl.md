@@ -1,5 +1,8 @@
 ---
-title: "Bent body Block"
+title: "Bent Basisvorm"
 ---
 
-<PatternDocs pattern='bent' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='bent' docs />
+

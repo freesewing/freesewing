@@ -1,9 +1,9 @@
 ---
-title: "Hips ease"
+title: "Легкість стегон"
 ---
 
-How much room do you want at the hips?
+Скільки місця ви хочете в стегнах?
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](hugo_hipsease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](hugo_hipsease_sample.svg "Вплив цієї опції на шаблон")

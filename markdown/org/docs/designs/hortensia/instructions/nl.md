@@ -1,92 +1,92 @@
 ---
-title: "Hortensia handbag: Sewing Instructions"
+title: "Hortensia handtas: Naai-instructies"
 ---
 
-### (Optional) Step 1: Face the main fabric
+### (Optioneel) Stap 1: Gezicht naar de hoofdstof
 
-- If needed, Interface your main fabric pieces.
+- Interface indien nodig je belangrijkste stofdelen.
 
-### Step 2: Sew the front and back panels to the bottom
+### Stap 2: Naai de voor- en achterpanelen aan de bodem vast
 
-- With _good sides together_ sew the front and back panels to the bottom panel.
-- Press the seam allowances towards the bottom panel.
-- On the outside _Edgestitch_ the seam allowance to the bottom panel.
+- Met _goede kanten op elkaar_ naai je de voor- en achterpanden aan het onderste paneel vast.
+- Pers de naadtoeslagen naar het onderste paneel.
+- Aan de buitenkant _Edgestitch_ de naadtoeslag aan het onderste paneel.
 
-### Step 3: Create and attach straps
+### Stap 3: Riemen maken en vastmaken
 
-- If needed, face your straps.
-- Fold the straps in half lengthwise with _good sides matching_.
-- Sew the raw edges together making sure to leave a gap for turning.
-- Turn inside out.
-- _Slipstich_ the opening closed.
-- Alternatively _Edgestitch_ all the edges.
-- Attach one strap to the front panel and one strap to the back panel by sewing a rectangle and a cross.
+- Kijk zo nodig naar je riemen.
+- Vouw de riemen in de lengte dubbel met _goede kanten passend_.
+- Naai de knipranden aan elkaar en zorg dat er ruimte overblijft voor het keren.
+- Keer binnenstebuiten.
+- _Slipstich_ de opening dicht.
+- Als alternatief _Edgestitch_ alle randen.
+- Bevestig één band aan het voorpaneel en één band aan het achterpaneel door een rechthoek en een kruis te naaien.
 
 <Warning>
 
-The placement of the straps are not on the pattern and need to be determined. You may need to baste the zipper panel to the front and back panels to help figure out the placement.
+De plaatsing van de bandjes staat niet op het patroon en moet worden bepaald. Misschien moet je het ritsdeel aan het voor- en achterpand rijgen om de plaatsing te bepalen.
 
 </Warning>
 
 <Note>
 
-If using bag strap webbing instead of fabric made straps do the following,
+Als je banden voor tasriemen gebruikt in plaats van stoffen banden, doe dan het volgende:
 
-- Cut the webbing to the the length of the straps with seam allowance.
-- Press under the short edge seam allowance.
-- Attach the webbing the same way as the fabric straps.
+- Knip de banden op de lengte van de banden met naadtoeslag.
+- Pers onder de naadtoeslag van de korte rand.
+- Bevestig de banden op dezelfde manier als de stoffen banden.
 
 </Note>
 
-### Step 4: The zipper
+### Stap 4: De rits
 
-- Insert the zipper into the zipper panel making sure that the zipper pull is on the _good side_.
+- Plaats de rits in het ritspaneel en zorg ervoor dat de ritstrekker aan de _goede kant zit_.
 
-### (Optional) Step 5: Construct tabs.
+### (Optioneel) Stap 5: Maak tabbladen.
 
-- Construct tabs the same as the straps just shorter.
-- _Baste_ the tabs _good sides together_ to the short edges of the zipper panel so the tabs face inward.
+- Construeer de lipjes hetzelfde als de riempjes, alleen korter.
+- _Rijg_ de lipjes _met de goede kanten op elkaar_ aan de korte kanten van het ritsdeel, zodat de lipjes naar binnen wijzen.
 
 <Tip>
 
-We recommend the tabs to be about a quarter length of the straps.
+We raden aan om de lipjes ongeveer een kwart van de lengte van de bandjes te laten zijn.
 
 </Tip>
 
-### Step 6: Attach the zipper panel
+### Stap 6: Bevestig het ritspaneel
 
-- With _good sides together_ sew the zipper panel to the front and pack panels. We will now refer to this as **the tube**.
+- Met _goede kanten op elkaar_ naai je het ritsdeel aan het voor- en pakdeel. We noemen dit nu **de buis**.
 
-### Step 7: Prep the side panels
+### Stap 7: De zijpanelen voorbereiden
 
-- Press under the top seam allowance of the side panel reinforcement parts.
-- Place the side panel reinforcement parts on top of the side panels matching the raw edges.
-- _Edgestitch_ the folded edge of the reinforcement parts to the side panels.
-- _Baste_ the raw edges together.
+- Pers onder de bovenste naadtoeslag van de verstevigingsdelen van het zijpaneel.
+- Leg de verstevigingsdelen voor de zijpanelen op de zijpanelen, zodat de knipranden op elkaar aansluiten.
+- _Edgestitch_ de gevouwen rand van de verstevigingsdelen aan de zijpanelen.
+- _Rijg_ de knipranden aan elkaar.
 
-### Step 8: Attach the side panels to the tube
+### Stap 8: Bevestig de zijpanelen aan de buis
 
-- With _good sides together_ sew the side panels to the tube matching notches to the bottom and zipper panel seams.
-- If binding the edges rather than turning, sew with _wrong sides together_ instead.
-- If not binding the edges leave a gap in one of the sides for turning.
-- Turn inside out and _Slipstich_ the opening closed.
-- If sewn _wrong sides together_ bind the raw edges of the side panels.
+- Met _goede kanten op elkaar_ naai je de zijpanelen aan de buis met de inkepingen op de naden van het bodem- en ritspaneel.
+- Als je de randen bindt in plaats van te keren, naai dan met _met de verkeerde kanten op elkaar_ .
+- Als je de randen niet bindt, laat dan een opening in een van de zijkanten voor het draaien.
+- Keer binnenstebuiten en _Slipstich_ de opening dicht.
+- Indien genaaid _met de verkeerde kanten op elkaar_ bind de knipranden van de zijpanelen.
 
 <Note>
 
-It is recommended to leave the gap for turning on the side rather than the top or bottom as it needs less reinforcement.
+Het wordt aanbevolen om de opening voor het draaien aan de zijkant te laten in plaats van aan de bovenkant of onderkant, omdat dit minder versteviging nodig heeft.
 
 </Note>
 
-### Step 9: Lining
+### Stap 9: Voering
 
-- With _good sides together_ sew the front and back lining panels to the bottom lining panel.
-- With _good sides together_ attach the lining side panels.
-- Press under the top seam allowances.
-- Alernatively you can bind the top edges.
-- Place the lining inside the bag _wrong sides facing_ eachother.
-- _Slipstitch_ or _Whipstitch_ the lining to the zipper panel.
+- Met _goede kanten op elkaar_ naai je de voorste en achterste voeringdelen aan het onderste voeringdeel.
+- Met _goede kanten op elkaar_ bevestig je de zijpanelen van de voering.
+- Pers onder de bovenste naadtoeslagen.
+- Als alternatief kun je de bovenste randen afbinden.
+- Leg de voering in de tas _met de verkeerde kanten naar elkaar toe_ .
+- _Schuifsteek_ of _Zweepsteek_ de voering aan het ritsdeel.
 
-### Step 10: Enjoy!
+### Stap 10: Geniet!
 
-That's it! You are all done! Now go enjoy you new bag!
+Dat is het! Je bent helemaal klaar! Ga nu genieten van je nieuwe tas!

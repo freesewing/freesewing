@@ -1,9 +1,9 @@
 ---
-title: Shoulder to Shoulder ease
+title: Facilidad hombro con hombro
 ---
 
-Controls the amount of ease between your shoulders. Initially set to -.5% because Bella implements a block that is used in the industry.
+Controla la cantidad de holgura entre tus hombros. Inicialmente se fija en -,5% porque Bella implementa un bloque que se utiliza en la industria.
 
-## Effect of this option on the pattern
+## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_shouldertoshoulderease_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bella_shouldertoshoulderease_sample.svg "Efecto de esta opción en el patrón")

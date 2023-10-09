@@ -1,5 +1,5 @@
 ---
-title: "Bent body Block: Design Options"
+title: "Gebogen lichaam Blok: Ontwerpopties"
 ---
 
 <PatternOptions pattern='bent' />

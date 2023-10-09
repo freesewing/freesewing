@@ -1,12 +1,12 @@
 ---
-title: "Bust dart angle"
+title: "Кут грудної виточки"
 ---
 
-Controls the angle by which the (side) bust dart slopes downward.
+Керує кутом, на який нахиляється донизу (бічна) виточка нагрудного кармана.
 
-- Increase this option to angle the bust darts downwards and towards the floor
-- Decrease this option to angle the bust darts upwards and towards the armscye
+- Збільште цей параметр, щоб нахилити виточки на грудях донизу і до підлоги
+- Зменшіть цей параметр, щоб нахилити виточки на грудях вгору і в бік рукавів
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_bustdartangle_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simone_bustdartangle_sample.svg "Вплив цієї опції на шаблон")

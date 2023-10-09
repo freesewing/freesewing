@@ -1,5 +1,5 @@
 ---
-title: "Ribbing stretch"
+title: "Élasticité du bord côte"
 ---
 
 ![Ribbing stretch on Hugo](./ribbingstretch.svg)
@@ -10,11 +10,11 @@ Si vous choisissez 90% (par exemple), pour une longueur de 10 cm de tissu, la di
 
 <Note>
 
-If you're not sure what to pick, best is to take the ribbing you are going to use see how much of it
-you need to stretch out to get to 10 cm with a _good_ stretch.
+Si tu n'es pas sûre de ce que tu dois choisir, le mieux est de prendre les côtes que tu vas utiliser et de voir combien de
+tu dois étirer pour arriver à 10 cm avec un _bon_ étirement.
 
 </Note>
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](hugo_ribbingstretch_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](hugo_ribbingstretch_sample.svg "Effet de cette option sur le motif")

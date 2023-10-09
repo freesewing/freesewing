@@ -1,9 +1,9 @@
 ---
-title: Front armhole extra cutout
+title: Extra uitsnijding armsgat vooraan
 ---
 
-How much do you want the front armhole to be cut out deeper than the back.
+Hoeveel dieper moet het armsgat vooraan zijn uitgesneden, in vergelijking met het armsgat achteraan.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_frontarmholedeeper_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](teagan_frontarmholedeeper_sample.svg "Effect van deze optie op het patroon")

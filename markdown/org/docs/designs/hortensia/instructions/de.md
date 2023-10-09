@@ -1,92 +1,92 @@
 ---
-title: "Hortensia handbag: Sewing Instructions"
+title: "Hortensia Handtasche: Anleitung zum Nähen"
 ---
 
-### (Optional) Step 1: Face the main fabric
+### (Optional) Schritt 1: Den Hauptstoff wenden
 
-- If needed, Interface your main fabric pieces.
+- Wenn nötig, schneide deine Hauptstoffteile.
 
-### Step 2: Sew the front and back panels to the bottom
+### Schritt 2: Nähen Sie die Vorder- und Rückenteile an den Boden
 
-- With _good sides together_ sew the front and back panels to the bottom panel.
-- Press the seam allowances towards the bottom panel.
-- On the outside _Edgestitch_ the seam allowance to the bottom panel.
+- Lege _gut zusammen_ und nähe die Vorder- und Rückenteile an das untere Teil.
+- Bügle die Nahtzugaben zum unteren Teil hin.
+- Auf der Außenseite _Kantenstich_ die Nahtzugabe an der Unterseite.
 
-### Step 3: Create and attach straps
+### Schritt 3: Riemen erstellen und befestigen
 
-- If needed, face your straps.
-- Fold the straps in half lengthwise with _good sides matching_.
-- Sew the raw edges together making sure to leave a gap for turning.
-- Turn inside out.
-- _Slipstich_ the opening closed.
-- Alternatively _Edgestitch_ all the edges.
-- Attach one strap to the front panel and one strap to the back panel by sewing a rectangle and a cross.
+- Wenn nötig, wende deine Gurte an.
+- Falte die Bänder der Länge nach in der Mitte, so dass die _guten Seiten zueinander passen_.
+- Nähen Sie die Schnittkanten zusammen und lassen Sie dabei einen Spalt zum Wenden frei.
+- Drehe dich von innen nach außen.
+- _Slipstich_ die Öffnung geschlossen.
+- Alternativ dazu _Edgestitch_ alle Kanten.
+- Befestige einen Gurt am Vorderteil und einen Gurt am Rückenteil, indem du ein Rechteck und ein Kreuz nähst.
 
 <Warning>
 
-The placement of the straps are not on the pattern and need to be determined. You may need to baste the zipper panel to the front and back panels to help figure out the placement.
+Die Platzierung der Gurte ist nicht auf dem Muster angegeben und muss selbst bestimmt werden. Eventuell musst du die Reißverschlussleiste an der Vorder- und Rückseite festheften, um die Position zu bestimmen.
 
 </Warning>
 
 <Note>
 
-If using bag strap webbing instead of fabric made straps do the following,
+Wenn du anstelle von Stoffgurten Taschengurtband verwendest, gehe wie folgt vor:
 
-- Cut the webbing to the the length of the straps with seam allowance.
-- Press under the short edge seam allowance.
-- Attach the webbing the same way as the fabric straps.
+- Schneide das Gurtband mit Nahtzugabe auf die Länge der Gurte zu.
+- Bügle unter die Nahtzugabe der kurzen Kante.
+- Befestige das Gurtband auf die gleiche Weise wie die Stoffgurte.
 
 </Note>
 
-### Step 4: The zipper
+### Schritt 4: Der Reißverschluss
 
-- Insert the zipper into the zipper panel making sure that the zipper pull is on the _good side_.
+- Führe den Reißverschluss in die Reißverschlussblende ein und achte darauf, dass sich der Reißverschlusszug auf der _guten Seite_befindet.
 
-### (Optional) Step 5: Construct tabs.
+### (Optional) Schritt 5: Konstruiere Registerkarten.
 
-- Construct tabs the same as the straps just shorter.
-- _Baste_ the tabs _good sides together_ to the short edges of the zipper panel so the tabs face inward.
+- Konstruiere die Laschen genauso wie die Riemen, nur kürzer.
+- _Hefte_ die Laschen _gut aneinander_ an die kurzen Kanten der Reißverschlussleiste, sodass die Laschen nach innen zeigen.
 
 <Tip>
 
-We recommend the tabs to be about a quarter length of the straps.
+Wir empfehlen, dass die Laschen etwa ein Viertel der Länge der Gurte betragen.
 
 </Tip>
 
-### Step 6: Attach the zipper panel
+### Schritt 6: Befestige die Reißverschlussleiste
 
-- With _good sides together_ sew the zipper panel to the front and pack panels. We will now refer to this as **the tube**.
+- Lege _mit der guten Seite nach oben_ und nähe die Reißverschlussleiste an die Vorder- und Rucksackleisten. Wir bezeichnen dies als **das Rohr**.
 
-### Step 7: Prep the side panels
+### Schritt 7: Bereite die Seitenwände vor
 
-- Press under the top seam allowance of the side panel reinforcement parts.
-- Place the side panel reinforcement parts on top of the side panels matching the raw edges.
-- _Edgestitch_ the folded edge of the reinforcement parts to the side panels.
-- _Baste_ the raw edges together.
+- Bügle unter die obere Nahtzugabe der Verstärkungsteile der Seitenteile.
+- Lege die Verstärkungsteile für die Seitenteile auf die Seitenteile, so dass die Schnittkanten übereinstimmen.
+- _Kantenstich_ die gefaltete Kante der Verstärkungsteile an den Seitenteilen.
+- _Hefte_ die Schnittkanten zusammen.
 
-### Step 8: Attach the side panels to the tube
+### Schritt 8: Befestige die Seitenteile am Rohr
 
-- With _good sides together_ sew the side panels to the tube matching notches to the bottom and zipper panel seams.
-- If binding the edges rather than turning, sew with _wrong sides together_ instead.
-- If not binding the edges leave a gap in one of the sides for turning.
-- Turn inside out and _Slipstich_ the opening closed.
-- If sewn _wrong sides together_ bind the raw edges of the side panels.
+- Lege _mit der guten Seite nach oben_ und nähe die Seitenteile an die Röhre, indem du die Einkerbungen am Boden und die Nähte der Reißverschlusselemente zusammenfügst.
+- Wenn du die Kanten einbindest, anstatt sie zu wenden, nähst du stattdessen mit _verkehrt herum_ .
+- Wenn du die Ränder nicht bindest, lass an einer Seite eine Lücke zum Wenden.
+- Drehe die Innenseite nach außen und _Slipstich_ die Öffnung geschlossen.
+- Wenn du _verkehrt herum genäht hast, binde_ die Schnittkanten der Seitenteile zusammen.
 
 <Note>
 
-It is recommended to leave the gap for turning on the side rather than the top or bottom as it needs less reinforcement.
+Es wird empfohlen, den Spalt zum Wenden an der Seite und nicht oben oder unten zu lassen, da er weniger Verstärkung benötigt.
 
 </Note>
 
-### Step 9: Lining
+### Schritt 9: Wenden
 
-- With _good sides together_ sew the front and back lining panels to the bottom lining panel.
-- With _good sides together_ attach the lining side panels.
-- Press under the top seam allowances.
-- Alernatively you can bind the top edges.
-- Place the lining inside the bag _wrong sides facing_ eachother.
-- _Slipstitch_ or _Whipstitch_ the lining to the zipper panel.
+- Lege _gut zusammen_ und nähe die vorderen und hinteren Futterteile an das untere Futterteil.
+- Lege die _Seiten aneinander_ und befestige die Seitenteile des Futters.
+- Bügle unter die oberen Nahtzugaben.
+- Alternativ kannst du auch die oberen Kanten binden.
+- Lege das Futter in die Tasche _mit den falschen Seiten zueinander_ .
+- _Steppstich_ oder _Steppstich_ das Futter an der Reißverschlussleiste.
 
-### Step 10: Enjoy!
+### Schritt 10: Viel Spaß mit deinem neuen Shirt!
 
-That's it! You are all done! Now go enjoy you new bag!
+Das war's! Du bist fertig! Und jetzt viel Spaß mit deiner neuen Tasche!

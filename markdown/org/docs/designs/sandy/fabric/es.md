@@ -1,39 +1,39 @@
 ---
-title: "Sandy circle skirt: Fabric Options"
+title: "Falda circular de arena: Opciones de tejido"
 ---
 
-### Main Fabric
+### Tela principal
 
-A circle skirt is a very versatile garment and can be made from a variety of fabric. It all depends on your intended use and preferred style.
+Una falda circular es una prenda muy versátil y puede confeccionarse con una gran variedad de tejidos. Todo depende del uso que le vayas a dar y del estilo que prefieras.
 
-- If you wish for an everday, easy to wash skirt then **Linen** and **Cotton** is the way to go.
-- If you are looking for something more formal you may want to try **Suiting Fabrics**.
-- If you want something warm for the winter you can try **Wools**.
-- If wish for something flowy that drapes you can try lightweight materials such as **Chiffon**.
-- If you are want something for a special occasion who may wish to try **Brocades** and **Silks**.
+- Si deseas una falda para todos los días, fácil de lavar, entonces **Lino** y **Algodón** es el camino a seguir.
+- Si buscas algo más formal, puedes probar **Suiting Fabrics**.
+- Si quieres algo cálido para el invierno, puedes probar **Wools**.
+- Si deseas algo fluido que tenga caída, puedes probar con materiales ligeros como **Chiffon**.
+- Si quieres algo para una ocasión especial, prueba **Brocados** y **Sedas**.
 
-Basically any fabric can be used to make a circle skirt you just need to find one that is right for you.
+Básicamente, se puede utilizar cualquier tela para hacer una falda circular, sólo tienes que encontrar la que mejor se adapte a ti.
 
 <Tip>
 
-Keep in mind the weight, drape and body of the fabric. Do you want the skirt to hang? or do you want it to swoosh? do you want it to be rigid or flowy? or do you want it to swoosh? do you want it to be rigid or flowy? or do you want it to swoosh? do you want it to be rigid or flowy?
-Another thing to look out for is gathering, if you are making a gathered Sandy you will need to make sure your fabric can gather nicely or be pleated if you prefer.
-Circle skirts can look very different dependant on these things and whether you are making a full, half or quarter circle skirt.
+Ten en cuenta el peso, la caída y el cuerpo del tejido. Do you want the skirt to hang? or do you want it to swoosh? do you want it to be rigid or flowy? or do you want it to swoosh? do you want it to be rigid or flowy? ¿o quieres que haga swoosh? ¿quieres que sea rígido o fluido?
+Otra cosa que hay que tener en cuenta es el fruncido: si vas a hacer una Sandy fruncida, tendrás que asegurarte de que la tela pueda fruncirse bien o plisarse, si lo prefieres.
+Las faldas circulares pueden tener un aspecto muy diferente dependiendo de estas cosas y de si estás haciendo una falda de círculo completo, de medio círculo o de cuarto de círculo.
 
 </Tip>
 
 <Note>
 
-Need some inspo? Need some inspo? check out [Sandy's showcase](/showcase/designs/sandy/) page and see some finished Sandy's made by our wonderful community.
+¿Necesitas inspiración? Need some inspo? check out [Sandy's showcase](/showcase/designs/sandy/) page and see some finished Sandy's made by our wonderful community.
 
 </Note>
 
-### Lining Fabric
+### Tela fina
 
-Linings are optional for Sandy but you may need one if your main fabric is scratchy, sheds, hard to wash or is not nice to wear against skin. You will want to use lighter fabrics to reduce bulk such as lightweight **Cottons** and **Silks**.
+Los forros son opcionales para Sandy, pero puedes necesitar uno si tu tejido principal es rasposo, se desprende, es difícil de lavar o no es agradable de llevar sobre la piel. Te conviene utilizar tejidos más ligeros para reducir el volumen, como los algodones ligeros **** y las sedas ****.
 
 <Note>
 
-Though pockets are not included in Sandy many people like to add them so make sure your lining can hold weight if you intend to make them out of the same fabric.
+Aunque los bolsillos no están incluidos en Sandy, a mucha gente le gusta añadirlos, así que asegúrate de que tu forro puede aguantar el peso si tienes intención de hacerlos de la misma tela.
 
 </Note>

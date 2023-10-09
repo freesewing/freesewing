@@ -1,17 +1,17 @@
 ---
-title: "Bella body block: Cutting Instructions"
+title: "Bella lichaam blok: Snij-instructies"
 ---
 
 **Buitenstof**
 
-- Cut **1 Front** part on the fold.
-- Cut **2 Back** parts.
+- Knip **1 Voorste deel** op de vouw.
+- Cut **2 Back** part.
 
-These cutting instructions are just for the default Bella block. Adjust your cutting accordingly if you have/are making changes to the block.
+Deze snij-instructies zijn alleen voor het standaard Bella blok. Pas je snijwerk dienovereenkomstig aan als je veranderingen aan het blok hebt aangebracht.
 
 <Tip>
 
-If you do not have someone to help pin you into Bella then you may find it easier to Cut 2 Front parts with seam allowance and sew the backs up when constructing so you can pin in the front.
+Als je niet iemand hebt die je kan helpen Bella vast te spelden, is het misschien makkelijker om 2 voorpanden met naadtoeslag te knippen en de achterpanden vast te naaien tijdens het maken, zodat je de voorkant kunt vastspelden.
 
 </Tip>
 

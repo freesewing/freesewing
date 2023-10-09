@@ -1,4 +1,4 @@
-import { backPocket } from './back-pocket.mjs'
+import { backPocketBag } from './back-pocket-bag.mjs'
 
 function draftCharlieBackPocketFacing({
   points,
@@ -6,7 +6,7 @@ function draftCharlieBackPocketFacing({
   paths,
   Path,
   complete,
-  paperless,
+  store,
   macro,
   snippets,
   sa,
@@ -34,50 +34,65 @@ function draftCharlieBackPocketFacing({
       .move(points.leftNotch)
       .line(points.rightNotch)
       .attr('class', 'dashed')
-    points.titleAnchor = points.rightNotch.shiftFractionTowards(points.leftNotch, 0.5)
-    macro('title', {
-      at: points.titleAnchor,
-      nr: 6,
-      title: 'backPocketBagFacing',
-    })
-    points.grainlineTop = points.waistbandLeft.shiftFractionTowards(points.waistbandRight, 0.15)
-    points.grainlineBottom = new Point(points.grainlineTop.x, points.bottomLeft.y)
-    macro('grainline', {
-      from: points.grainlineTop,
-      to: points.grainlineBottom,
-    })
-
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-    if (paperless) {
-      macro('rmad')
-      macro('hd', {
-        from: points.bottomLeft,
-        to: points.bottomRight,
-        y: points.bottomLeft.y + 15,
-      })
-      macro('hd', {
-        from: points.waistbandLeft,
-        to: points.waistbandRight,
-        y: points.waistbandLeft.y - sa - 15,
-      })
-      macro('vd', {
-        from: points.bottomRight,
-        to: points.rightNotch,
-        x: points.bottomRight.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.bottomRight,
-        to: points.waistbandRight,
-        x: points.bottomRight.x + sa + 30,
-      })
-    }
   }
+
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+
+  /*
+   * Annotations
+   */
+
+  // Cut list
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Title
+  points.titleAnchor = points.rightNotch.shiftFractionTowards(points.leftNotch, 0.5)
+  macro('title', {
+    at: points.titleAnchor,
+    nr: 6,
+    title: 'backPocketBagFacing',
+  })
+
+  // Grainline
+  points.grainlineTop = points.waistbandLeft.shiftFractionTowards(points.waistbandRight, 0.15)
+  points.grainlineBottom = new Point(points.grainlineTop.x, points.bottomLeft.y)
+  macro('grainline', {
+    from: points.grainlineTop,
+    to: points.grainlineBottom,
+  })
+
+  // Dimonsions
+  macro('rmad')
+  macro('hd', {
+    id: 'wFull',
+    from: points.bottomLeft,
+    to: points.bottomRight,
+    y: points.bottomLeft.y + 15,
+  })
+  macro('hd', {
+    id: 'wTop',
+    from: points.waistbandLeft,
+    to: points.waistbandRight,
+    y: points.waistbandLeft.y - sa - 15,
+  })
+  macro('vd', {
+    id: 'hToOpening',
+    from: points.bottomRight,
+    to: points.rightNotch,
+    x: points.bottomRight.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottomRight,
+    to: points.waistbandRight,
+    x: points.bottomRight.x + sa + 30,
+  })
 
   return part
 }
 
 export const backPocketFacing = {
   name: 'charlie.backPocketFacing',
-  from: backPocket,
+  from: backPocketBag,
   draft: draftCharlieBackPocketFacing,
 }

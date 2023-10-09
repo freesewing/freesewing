@@ -1,7 +1,7 @@
 ---
-title: "Separate waist band"
+title: "Banda de cintura separada"
 ---
 
-This setting changes the way the waistband is constructed. Normally the waistband is just folded over, like a hem. Turning this option on will generate a separate waistband.
+Este ajuste cambia la forma en que se construye la cintura. Normally the waistband is just folded over, like a hem. Si activas esta opción, se generará una cintura separada.
 
-Mainly used for hiding the pockets in the waistband seam.
+Se utiliza principalmente para ocultar los bolsillos en la costura de la cintura.

@@ -1,7 +1,7 @@
 ---
-title: "Separate waist band"
+title: "Окремий пояс для талії"
 ---
 
-This setting changes the way the waistband is constructed. Normally the waistband is just folded over, like a hem. Turning this option on will generate a separate waistband.
+Цей параметр змінює спосіб побудови пояса. Зазвичай пояс просто підвернутий, як поділ. Якщо увімкнути цю опцію, буде створено окремий пояс.
 
-Mainly used for hiding the pockets in the waistband seam.
+В основному використовується для приховування кишень у шві пояса.

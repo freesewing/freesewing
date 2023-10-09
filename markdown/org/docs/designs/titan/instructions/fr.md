@@ -1,30 +1,30 @@
 ---
-title: "Titan trouser block: Sewing Instructions"
+title: "Bloc de pantalon Titan : Instructions de couture"
 ---
 
 <Note>
 
-###### Titan is a block, not a pattern
+###### Titan est un bloc, pas un modèle
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Un bloc est une forme de base sur laquelle d'autres modèles sont basés.
+Ils sont parfois aussi appelés patrons de base, bien que les puristes soutiennent qu'un bloc et un patron de base sont des choses différentes.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns so the instructions below will not go in depth about closures or finishes and are for the default Titan block.
+Les blocs ne sont généralement pas faits tels quels mais servent plutôt de base à d'autres modèles. Les instructions ci-dessous n'approfondissent donc pas les fermetures ou les finitions et concernent le bloc Titan par défaut.
 
 </Note>
 
 ### Etape 1 : Construction de la maquette
 
-- Join the outseam (the seam that runs along the side of your leg) of the front and back.
-- Join the inseam (the seam the runs along the inside of your legs) of the front and back.
-- You now have a leg. Repeat for the other leg, **making certain they are mirror images of each other**.
-- Turn one leg with the good side in, and the other with the good side out.
-- Now tuck the _good side out_ into the _good side in_ leg, so that they have their _good sides together_.
-- Align and sew the cross seam.
+- Rejoignez la couture extérieure (la couture qui coule le long du côté de votre jambe) de l'avant et de l'arrière.
+- Rejoignez la couture (la couture la couture le long de l'intérieur de vos jambes) de l'avant et de l'arrière.
+- Vous avez maintenant une jambe. Répète l'opération pour l'autre jambe, **en veillant à ce qu'elles soient des images miroir l'une de l'autre**.
+- Tournez une jambe avec le bon côté dedans et l'autre avec le bon côté.
+- Maintenant, rentre le _bon côté_ dans le _bon côté_ jambe, de façon à ce que les _bons côtés soient ensemble_.
+- Aligne et couds la couture transversale.
 
 <Note>
 
-You may need to leave an opening in the front cross seam so you can pin yourself in.
+Tu devras peut-être laisser une ouverture dans la couture transversale avant pour pouvoir t'épingler.
 
 </Note>
 
@@ -37,12 +37,12 @@ If you are making adjustments you may wish to sew the seams wrong sides together
 ### Étape 2 : Essayez-le
 
 - Essayez-le et vérifiez la coupe en épinglant le devant tout en le portant.
-- Apportez les modifications nécessaires et essayez à nouveau le vêtement.
-- Répétez l'opération jusqu'à ce que vous soyez satisfait.
+- Effectuez toutes les modifications et essayez à nouveau.
+- Répétez jusqu'à ce que vous soyez satisfait.
 
 <Tip>
 
-Soyez attentif à tout ce que vous faites en portant la maquette : la tirez-vous vers le bas ? Ajuster constamment l'épaule ? ect... Ces éléments sont des signes indiquant que le modèle doit être ajusté.
+Soyez attentif à tout ce que vous faites en portant la maquette : la tirez-vous vers le bas ? Ajustement permanent de l'épaule ? ect... Ces éléments sont des signes indiquant que le modèle doit être ajusté.
 
 Il est parfois nécessaire de porter la maquette pendant un certain temps pour avoir une meilleure idée de la coupe, alors n'hésitez pas à vous promener avec pendant quelques heures.
 
@@ -60,15 +60,15 @@ For instance:
 - Add a waistband
 
 It is all up to you!
-For instance:
+Par exemple :
 
-- Add a front closure
-- Add pockets
-- Change the pant length
-- Change the pant width
-- Add a waistband
+- Ajouter une fermeture frontale
+- Ajouter des poches
+- Modifier la longueur du pantalon
+- Modifier la largeur du pantalon
+- Ajouter une ceinture
 
-It is all up to you! Expérimentez et allez-y !
+Tout dépend de toi ! Expérimentez et allez-y !
 
 </Note>
 

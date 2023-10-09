@@ -1,5 +1,5 @@
 ---
-title: "Bee bikini top: Required Measurements"
+title: "Bienen-Bikinioberteil: Erforderliche Maße"
 ---
 
 <PatternMeasurements pattern='bee' />

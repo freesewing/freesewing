@@ -1,11 +1,11 @@
 ---
-title: "Cuff ease"
+title: "Aisance de poignet"
 ---
 
 ***
 
-The amount of ease at your wrist.
+L'ampleur d'aisance à votre poignet.
 
-## Effet de cette option sur le modèle
+## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](diana_cuffease_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](diana_cuffease_sample.svg "Effet de cette option sur le motif")

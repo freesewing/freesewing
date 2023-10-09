@@ -1,5 +1,5 @@
 ---
-titre : "aisance thoracique"
+title: "Aisance de poitrine"
 ---
 
 ***

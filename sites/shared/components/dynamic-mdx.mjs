@@ -2,7 +2,7 @@ import dynamic from 'next/dynamic'
 import { MDXProvider } from '@mdx-js/react'
 import { useState } from 'react'
 import { Spinner } from 'shared/components/spinner.mjs'
-import { PageLink } from 'shared/components/page-link.mjs'
+import { PageLink } from 'shared/components/link.mjs'
 import { useTranslation } from 'next-i18next'
 import { components } from 'shared/components/mdx/index.mjs'
 
@@ -15,7 +15,7 @@ export const MdxWrapper = ({ title = false, path, language, children }) => {
   return (
     <>
       {title ? <h1>{title}</h1> : null}
-      <div className="text-primary mdx text-base-content text-base">
+      <div className="mdx text-base-content text-base">
         <MDXProvider components={components}>{children}</MDXProvider>
       </div>
       <div

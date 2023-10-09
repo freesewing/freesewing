@@ -18,6 +18,6 @@ No queremos excluir a nadie y pensamos que _cuerpo forma =género_. That's why w
 
 Any user can draft any pattern on our site, as long as they provide the required measurements. Which for some patterns includes measurements that are only relevant if you have breasts.
 
-##### How it applies to chest binding
+##### Cómo se aplica a la fijación del pecho
 
 If you are chest binding — effectively flattening your chest — use the **without breasts** patterns, and use the cirumference of your bound chest as [chest measurement](/docs/measurements/chest/)

@@ -1,5 +1,8 @@
 ---
-title: "Bob the Bib"
+title: "Bob de Slab"
 ---
 
-<PatternDocs pattern='bob' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='bob' docs />
+

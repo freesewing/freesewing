@@ -5,14 +5,14 @@ title: "Lucy: Cutting"
 - cut two pocket pieces
 - cut pocket slit into one pocket piece
 
-#### Historical context
+#### Historische context
 
-Tie-on pockets like Lucy were worn roughly from the mid-seventeenth (1650s) century until the end of the 19th century (1890s). They came in all shapes and sizes but Lucy is based on an 18th century example.
+Steekzakken zoals Lucy werden ruwweg gedragen vanaf halverwege de zeventiende eeuw (1650) tot het einde van de negentiende eeuw (1890). Ze waren er in alle soorten en maten, maar Lucy is gebaseerd op een 18e eeuws exemplaar.
 
-They were worn and used by all members of society and were mainly womens wear as men had a variety of pockets sewn into their clothing.
+Ze werden gedragen en gebruikt door alle leden van de samenleving en waren voornamelijk vrouwenkleding, omdat mannen verschillende zakken in hun kleding hadden genaaid.
 
-Pockets would be tied around the waist and could be accessed through a slit in skirts and petticoats. Where the pocket would be in between the layers was up to the individual. If it was hidden in between layers that would provide more security, but hinder accessibility. People who worked in trade often wore their pockets on the outside of their garments entirely, for easy access.
+Zakken werden rond de taille geknoopt en waren toegankelijk via een split in rokken en petticoats. Waar de zak tussen de lagen zou komen, was aan de persoon. Als het tussen de lagen verborgen zou zijn, zou dat meer veiligheid bieden, maar de toegankelijkheid belemmeren. Mensen die in de handel werkten droegen hun zakken vaak helemaal aan de buitenkant van hun kleding, zodat ze er gemakkelijk bij konden.
 
-(Tie-on) Pockets were used alongside patch pockets, sewn in pockets, bags and other ways to carry your things. Sometimes they even had additional pockets hidden inside them!
+(Opgestikte) zakken werden gebruikt naast opgestikte zakken, ingenaaide zakken, tassen en andere manieren om je spullen mee te nemen. Soms zaten er zelfs extra zakken in verstopt!
 
-If you want to learn more you can read: Burman, B. & Fennetaux A. (2020)  _The Pocket, A Hidden History of Women's Lives_ Yale University Press, London
+Als je meer wilt weten kun je lezen: Burman, B. & Fennetaux A. (2020)  _The Pocket, A Hidden History of Women's Lives_ Yale University Press, Londen.

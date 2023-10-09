@@ -1,5 +1,5 @@
 ---
-title: "Diana, das Wasserfallshirt: Anleitung"
+title: "Diana drapiertes Oberteil: Anleitung zum Nähen"
 ---
 
 ### Schritt 1: Versäubern der Nackennaht
@@ -65,4 +65,4 @@ Das kann entweder ein klassischer Saum sein, bei dem der Stoff zweimal umgeklapp
 
 ### Schritt 7: Viel Spaß mit deinem neuen Shirt!
 
-Fertig! Viel Spaß mit deinem neuen Shirt!
+Sie sind fertig! Viel Spaß mit deinem neuen Shirt!

@@ -1,3 +1,5 @@
+/*  __SDEFILE__ - This file is a dependency for the stand-alone environment */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,22 +9,22 @@
 @layer components {
   /* Applied styles for common HTML tags */
   h1 {
-    @apply text-base-content text-4xl py-5 font-bold lg:text-6xl font-black;
+    @apply text-base-content text-4xl py-5 font-light lg:text-6xl;
   }
   h2 {
-    @apply text-base-content text-3xl pt-4 pb-3 m-0 font-black lg:text-4xl;
+    @apply text-base-content text-3xl pt-4 pb-3 m-0 font-light lg:text-4xl;
   }
   h3 {
-    @apply text-base-content text-2xl pt-3 pb-2 m-0 font-black lg:text-3xl;
+    @apply text-base-content text-2xl pt-3 pb-2 m-0 font-normal lg:text-3xl;
   }
   h4 {
-    @apply text-base-content text-xl pt-2 pb-1 m-0 font-black lg:text-2xl;
+    @apply text-base-content text-xl pt-2 pb-1 m-0 font-medium lg:text-2xl;
   }
   h5 {
-    @apply text-base-content text-lg py-1 m-0 font-black lg:text-xl;
+    @apply text-base-content text-lg py-1 m-0 font-medium lg:text-xl;
   }
   h6 {
-    @apply text-base-content text-base py-0 m-0 font-black lg:text-lg;
+    @apply text-base-content text-base py-0 m-0 font-medium lg:text-lg;
   }
   p {
     @apply text-base-content my-1 py-2 text-base leading-6;
@@ -48,20 +50,30 @@
   }
 
   /* mdx styles */
-  .mdx a {
-    @apply text-secondary underline decoration-1;
+  .md a:not(.btn),
+  .mdx a:not(.btn) {
+    @apply underline decoration-2 text-secondary;
   }
+  .md a:hover,
   .mdx a:hover {
-    @apply text-secondary-focus decoration-2 decoration-current;
+    @apply decoration-4;
   }
   .mdx ul {
-    @apply pl-4 list-disc list-inside text-base-content;
+    @apply pl-0 lg:pl-4  list-disc list-inside text-base-content;
+  }
+  .mdx ol ul,
+  .mdx ul ul {
+    @apply pl-2 lg:pl-4  list-disc list-inside text-base-content;
   }
   .mdx ol {
-    @apply pl-4 list-decimal list-inside text-base-content;
+    @apply pl-0 lg:pl-4 list-decimal list-inside text-base-content;
+  }
+  .mdx ul ol,
+  .mdx ol ol {
+    @apply pl-2 lg:pl-4 list-decimal list-inside text-base-content;
   }
   .mdx code {
-    @apply bg-accent bg-opacity-10 px-2 rounded text-accent;
+    @apply bg-neutral-content px-2 rounded text-neutral font-mono font-bold;
   }
   .mdx pre code {
     @apply bg-inherit;
@@ -108,6 +120,12 @@
     padding: 8px;
     font-size: 110%;
     border-bottom: 2px solid hsl(var(--b3));
+  }
+
+  /* Padding on markdown paragraphs in flags */
+  .flag p {
+    padding: 0.25rem 0;
+    margin: 0;
   }
 
   /* FreeSewing SVG output styles */
@@ -386,11 +404,22 @@
     @apply p-0 m-0 inline;
   }
   .pattern-logs a {
-    @apply text-secondary font-medium hover:underline hover:cursor-pointer hover:text-secondary-focus;
+    @apply underline decoration-2;
+  }
+  .pattern-logs a:hover {
+    @apply cursor-pointer decoration-4;
   }
   .pattern-logs code {
     @apply px-1 rounded font-bold bg-neutral bg-opacity-10 font-mono;
   }
+}
+
+progress.progress-white {
+  background-color: #fff3;
+}
+progress.progress-white::-moz-progress-bar {
+  background-color: #fffb;
+  transition: width 0.5s;
 }
 
 @keyframes pulsefill {
@@ -594,4 +623,14 @@ input[type='range']::-moz-range-track {
  */
 html {
   scroll-behavior: smooth;
+}
+
+/*
+ * This should be possible with Tailwind's named groups but it does not seem to work
+ */
+details[open] > summary > svg.summary-chevron {
+  transform: rotate(90deg);
+}
+details > summary:hover > svg.summary-chevron {
+  stroke-width: 5;
 }

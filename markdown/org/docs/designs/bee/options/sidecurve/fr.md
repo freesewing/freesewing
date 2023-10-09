@@ -1,5 +1,5 @@
 ---
-titre : "Courbe latérale"
+title: "Courbe latérale"
 ---
 
 ***

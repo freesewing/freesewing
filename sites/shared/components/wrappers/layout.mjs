@@ -1,10 +1,11 @@
-import { useState, useEffect } from 'react'
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
+import { nsMerge } from 'shared/utils.mjs'
 import Head from 'next/head'
 import { Header, ns as headerNs } from 'site/components/header/index.mjs'
 import { Footer, ns as footerNs } from 'shared/components/footer/index.mjs'
 import { Search, ns as searchNs } from 'site/components/search.mjs'
 
-export const ns = [...new Set([...headerNs, ...footerNs, ...searchNs])]
+export const ns = nsMerge(headerNs, footerNs, searchNs)
 
 export const LayoutWrapper = ({
   children = [],
@@ -12,43 +13,24 @@ export const LayoutWrapper = ({
   setSearch,
   noSearch = false,
   header = false,
+  footer = true,
+  slug,
 }) => {
-  const ChosenHeader = header ? header : Header
-
-  const [prevScrollPos, setPrevScrollPos] = useState(0)
-  const [showHeader, setShowHeader] = useState(true)
-
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const handleScroll = () => {
-        const curScrollPos = typeof window !== 'undefined' ? window.pageYOffset : 0
-        if (curScrollPos >= prevScrollPos) {
-          if (showHeader && curScrollPos > 20) setShowHeader(false)
-        } else setShowHeader(true)
-        setPrevScrollPos(curScrollPos)
-      }
-      window.addEventListener('scroll', handleScroll)
-      return () => window.removeEventListener('scroll', handleScroll)
-    }
-  }, [prevScrollPos, showHeader])
-
   return (
     <div
       className={`
     flex flex-col justify-between
     min-h-screen
     bg-base-100
-    group/layout
-    header-${showHeader ? 'shown' : 'hidden'}
     `}
     >
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <ChosenHeader show={showHeader} />
+      {header && <Header slug={slug} />}
 
       <main
-        className={`grow transition-margin duration-300 ease-in-out lg:group-[.header-shown]/layout:mt-24 lg:mt-4
+        className={`grow transition-margin duration-300 ease-in-out
         }`}
       >
         {children}
@@ -70,7 +52,7 @@ export const LayoutWrapper = ({
           <div className="fixed top-0 left-0 w-full min-h-screen bg-neutral z-20 bg-opacity-70"></div>
         </>
       )}
-      <Footer />
+      {footer && <Footer />}
     </div>
   )
 }

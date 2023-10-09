@@ -1,5 +1,5 @@
 ---
-titre : "Profondeur de l'emmanchure avant (Bella)"
+title: "Profondeur du point pivot de l'emmanchure devant (Bella)"
 ---
 
 ***

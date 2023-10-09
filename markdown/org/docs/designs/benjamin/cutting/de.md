@@ -1,25 +1,25 @@
 ---
-title: "Benjamin bow tie: Cutting Instructions"
+title: "Benjamin Fliege: Anleitung zum Schneiden"
 ---
 
-Benjamin ist ein eher einfaches Schnittmuster, aber die von dir gewählten Optionen beeinflussen, was ausgeschnitten werden muss. Below are two typical layouts.
+Benjamin ist ein eher einfaches Schnittmuster, aber die von dir gewählten Optionen beeinflussen, was ausgeschnitten werden muss. Hier sind zwei typische Layouts:
 
 ## Ohne Einstellband
 
 - **Oberstoff**
-  - Cut **4 Bow** parts
-  - Cut **2 Collar Band** parts
+  - Schneide **4 Bogen** Teile
+  - Schnitt **2 Kragenband** Teile
 - **Einlage**
-  - Cut **4 Bow** parts
-  - Cut **2 Collar Band** parts
+  - Schneide **4 Bogen** Teile
+  - Schnitt **2 Kragenband** Teile
 
 ## Mit Anpassungsband
 
 - **Oberstoff**
-  - Cut **1 Short Bow** part
-  - Cut **2 Medium Bow** parts
-  - Cut **1 Long Bow** part
+  - Schnitt **1 Kurzer Bogen** Teil
+  - **2 Medium Bow** Teile schneiden
+  - Schnitt **1 Langer Bogen** Teil
 - **Einlage**
-  - Cut **1 Short Bow** part
-  - Cut **2 Medium Bow** parts
-  - Cut **1 Long Bow** part
+  - Schnitt **1 Kurzer Bogen** Teil
+  - **2 Medium Bow** Teile schneiden
+  - Schnitt **1 Langer Bogen** Teil

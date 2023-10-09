@@ -3,7 +3,7 @@
     "default": {
       "runner": "nx/tasks-runners/default",
       "options": {
-        "cacheableOperations": [],
+        "cacheableOperations": ["build", "wbuild", "build:all"],
         "parallel": 5
       }
     }
@@ -12,11 +12,8 @@
     "build": {
       "dependsOn": ["^build", "prebuild"]
     },
-    "testci": {
-      "dependsOn": ["^build"]
-    },
-    "lint": {
-      "dependsOn": ["prebuild"]
+    "wbuild": {
+      "dependsOn": ["^wbuild", "prewbuild"]
     },
     "e2e": {
       "dependsOn": ["prebuild"]

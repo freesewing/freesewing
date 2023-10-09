@@ -1,5 +1,8 @@
 ---
-title: "Titan trouser block"
+title: "Викрійка-основа штанів Титан"
 ---
 
-<PatternDocs pattern='titan' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='titan' docs />
+

@@ -1,8 +1,8 @@
 ---
-title: "Sleevecap ease"
+title: "Armkugel Zugabe"
 ---
 
-Determines the amount of sleevecap ease.
+Bestimmt die Menge der Zugabe an der Armkugel.
 
 <Note>
 
@@ -15,4 +15,4 @@ Für leichten Stoff oder Stricken wollen Sie wenig bis keine Ärmel leicht. Für
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](breanna_sleevecapease_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](breanna_sleevecapease_sample.svg "Effekt dieser Option auf das Schnittmuster")

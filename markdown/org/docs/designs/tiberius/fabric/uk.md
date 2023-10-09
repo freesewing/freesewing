@@ -1,7 +1,7 @@
 ---
-title: "Tiberius Tunica: Fabric Options"
+title: "Туніка Тиберія: Варіанти тканин"
 ---
 
-Tiberius can be made out of almost any woven fabric. Historically "accurate" would be linen, wool, and, to an extent, cotton. If you care about authenticity, research this a bit. In any case, natural fibers without any stretch are the way to go.
+Тиберій можна виготовити практично з будь-якої тканої тканини. Історично "точними" були б льон, вовна і, до певної міри, бавовна. Якщо ви дбаєте про автентичність, трохи дослідіть це. У будь-якому випадку, натуральні волокна без жодної натяжки - це те, що треба.
 
-Depending on the social status you want to portray, choose coarser or finer fabrics. Different colours are also possible.
+Залежно від соціального статусу, який ви хочете зобразити, обирайте грубіші або тонші тканини. Також можливі різні кольори.

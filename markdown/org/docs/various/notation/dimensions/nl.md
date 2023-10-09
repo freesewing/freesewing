@@ -6,7 +6,7 @@ Wanneer je een _papierloos_ patroon kiest, komt je patroon in de vorm van een se
 
 <Legend part="dimension">
 
-An example of a dimension on a pattern
+Een voorbeeld van een dimensie op een patroon
 
 </Legend>
 

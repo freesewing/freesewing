@@ -1,5 +1,5 @@
 ---
-title: "Cuff drape"
+title: "Plisado del puño"
 ---
 
 ![Plisado del puño](cuffdrape.svg)
@@ -9,7 +9,7 @@ Cuánto el final de la manga es más ancho que la muñeca.
 <Note>
 
 Esto cambia un poco el aspecto de la manga.
-More drape makes the sleeve wider and gives you a more _blousy_ effect, whereas less drape makes the sleeve more narrow.
+Más caída hace que la manga sea más ancha y te da un efecto más _bluso_, mientras que menos caída hace que la manga sea más estrecha.
 
 El tapón se trabajará en la taza con pliegues.
 
@@ -17,4 +17,4 @@ El tapón se trabajará en la taza con pliegues.
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_cuffdrape_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](simon_cuffdrape_sample.svg "Efecto de esta opción en el patrón")

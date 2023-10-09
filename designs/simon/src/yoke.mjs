@@ -1,20 +1,7 @@
 import { back } from './back.mjs'
 import { splitYoke } from './options.mjs'
 
-function simonYoke({
-  sa,
-  Point,
-  points,
-  Path,
-  paths,
-  Snippet,
-  snippets,
-  complete,
-  paperless,
-  macro,
-  options,
-  part,
-}) {
+function simonYoke({ sa, Point, points, Path, paths, Snippet, snippets, macro, options, part }) {
   for (const id in paths) {
     if (['backCollar', 'backArmhole', 'backArmholeYoke'].indexOf(id) === -1) delete part.paths[id]
   }
@@ -36,67 +23,96 @@ function simonYoke({
   paths.seam = paths.saBase.clone()
   paths.saBase.hide()
   paths.seam = paths.seam.close().attr('class', 'fabric')
-
-  // Complete pattern?
-  if (complete) {
-    delete snippets.armholePitchNotch
-    delete snippets.collarNotch
-    delete snippets.shoulderNotch
-    snippets.sleevecapNotch = new Snippet('notch', points.armholeYokeSplitPreBoxpleat)
-    points.title = new Point(points.neck.x, points.cbYoke.y / 2)
-    macro('title', { at: points.title, nr: 4, title: 'yoke', scale: 0.8 })
-    points.logo = new Point(-points.neck.x, points.cbYoke.y * 0.6)
-    snippets.logo = new Snippet('logo', points.logo)
-    snippets.logo.attr('data-scale', 0.8)
-
-    points.grainlineFrom = points.cbYoke.shiftFractionTowards(points.cbNeck, 0.2)
-    points.grainlineTo = points.cbNeck.shiftFractionTowards(points.cbYoke, 0.2)
-    macro('grainline', {
-      from: points.grainlineFrom,
-      to: points.grainlineTo,
-    })
-
-    if (sa) {
-      paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
-      if (options.splitYoke) {
-        paths.sa = paths.sa.line(points.cbNeck).move(points.cbYoke).line(paths.sa.start())
-      }
+  if (sa) {
+    paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
+    if (options.splitYoke) {
+      paths.sa = paths.sa.line(points.cbNeck).move(points.cbYoke).line(paths.sa.start())
     }
   }
 
-  // Paperless?
-  if (paperless) {
+  /*
+   * Annotations
+   */
+  // Notches
+  delete snippets.armholePitchNotch
+  delete snippets.collarNotch
+  delete snippets.shoulderNotch
+  snippets.sleevecapNotch = new Snippet('notch', points.armholeYokeSplitPreBoxpleat)
+
+  // Title
+  points.title = new Point(points.neck.x, points.cbYoke.y / 2)
+  macro('title', { at: points.title, nr: 4, title: 'yoke', scale: 0.8 })
+
+  // Logo
+  points.logo = new Point(points.neck.x / 2, points.cbYoke.y * 0.5)
+  snippets.logo = new Snippet('logo', points.logo).scale(0.666)
+
+  // Grainline
+  points.grainlineFrom = points.cbYoke.shiftFractionTowards(points.cbNeck, 0.2)
+  points.grainlineTo = points.cbNeck.shiftFractionTowards(points.cbYoke, 0.2)
+  macro('grainline', {
+    from: points.grainlineFrom,
+    to: points.grainlineTo,
+  })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wCbToHps',
+    from: points.cbNeck,
+    to: points.s3CollarSplit,
+    y: points.s3CollarSplit.y - 15 - sa,
+  })
+  macro('ld', {
+    id: 'lShoulderSeam',
+    from: points.s3CollarSplit,
+    to: points.s3ArmholeSplit,
+    d: 15 + sa,
+  })
+  if (options.splitYoke) {
     macro('hd', {
-      from: points.cbNeck,
-      to: points.s3CollarSplit,
-      y: points.s3CollarSplit.y - 15 - sa,
-    })
-    macro('ld', {
-      from: points.s3CollarSplit,
-      to: points.s3ArmholeSplit,
-      d: 15 + sa,
-    })
-    macro('hd', {
+      id: 'wCbToYokeEdge',
       from: points.cbYoke,
-      to: points.armholePitch,
+      to: points.armholeYokeSplitPreBoxpleat,
       y: points.cbYoke.y + 15 + sa,
     })
     macro('hd', {
+      id: 'wFullHalf',
       from: points.cbYoke,
       to: points.s3ArmholeSplit,
       y: points.cbYoke.y + 30 + sa,
     })
-    macro('vd', {
-      from: points.cbYoke,
-      to: points.cbNeck,
-      x: points.cbYoke.x - 15 - sa,
+  } else {
+    macro('hd', {
+      id: 'wAtYoke',
+      from: points.armholeYokeSplitPreBoxpleat.flipX(),
+      to: points.armholeYokeSplitPreBoxpleat,
+      y: points.cbYoke.y + 15 + sa,
     })
-    macro('vd', {
-      from: points.armholePitch,
+    macro('hd', {
+      id: 'wFullHalf',
+      from: points.s3ArmholeSplit.flipX(),
       to: points.s3ArmholeSplit,
-      x: points.s3ArmholeSplit.x + 30 + sa,
+      y: points.cbYoke.y + 30 + sa,
     })
   }
+  macro('vd', {
+    id: 'hAtCb',
+    from: points.cbYoke,
+    to: points.cbNeck,
+    x: points.cbYoke.x - 15 - sa,
+  })
+  macro('vd', {
+    id: 'wToShoulder',
+    from: points.cbYoke,
+    to: points.s3ArmholeSplit,
+    x: points.s3ArmholeSplit.x + 15 + sa,
+  })
+  macro('vd', {
+    id: 'wToHps',
+    from: points.cbYoke,
+    to: points.s3CollarSplit,
+    x: points.s3ArmholeSplit.x + 30 + sa,
+  })
 
   return part
 }

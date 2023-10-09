@@ -1,92 +1,92 @@
 ---
-title: "Hortensia handbag: Sewing Instructions"
+title: "Bolso Hortensia: Instrucciones de costura"
 ---
 
-### (Optional) Step 1: Face the main fabric
+### (Opcional) Paso 1: Enfrenta la tela principal
 
-- If needed, Interface your main fabric pieces.
+- Si es necesario, haz una interfaz con las piezas de tela principales.
 
-### Step 2: Sew the front and back panels to the bottom
+### Paso 2: Cose los paneles delantero y trasero a la parte inferior
 
-- With _good sides together_ sew the front and back panels to the bottom panel.
-- Press the seam allowances towards the bottom panel.
-- On the outside _Edgestitch_ the seam allowance to the bottom panel.
+- Con _los lados bien juntos_ cose los paneles delantero y trasero al panel inferior.
+- Presiona los márgenes de costura hacia el panel inferior.
+- En el exterior _Canteado_ el margen de costura del panel inferior.
 
-### Step 3: Create and attach straps
+### Paso 3: Crea y coloca las correas
 
-- If needed, face your straps.
-- Fold the straps in half lengthwise with _good sides matching_.
-- Sew the raw edges together making sure to leave a gap for turning.
-- Turn inside out.
-- _Slipstich_ the opening closed.
-- Alternatively _Edgestitch_ all the edges.
-- Attach one strap to the front panel and one strap to the back panel by sewing a rectangle and a cross.
+- Si es necesario, encara tus correas.
+- Dobla las tiras por la mitad longitudinalmente con _lados buenos coincidentes_.
+- Cose los bordes sin coser asegurándote de dejar un hueco para dar la vuelta.
+- Gira al revés.
+- _Slipstich_ la abertura cerrada.
+- Alternativamente _Edgestitch_ todos los bordes.
+- Fija una correa al panel delantero y otra al panel trasero cosiendo un rectángulo y una cruz.
 
 <Warning>
 
-The placement of the straps are not on the pattern and need to be determined. You may need to baste the zipper panel to the front and back panels to help figure out the placement.
+La colocación de los tirantes no está en el patrón y hay que determinarla. Puede que necesites hilvanar el panel de la cremallera a los paneles delantero y trasero para ayudarte a averiguar la colocación.
 
 </Warning>
 
 <Note>
 
-If using bag strap webbing instead of fabric made straps do the following,
+Si utilizas correas de bolsa en lugar de correas de tela, haz lo siguiente,
 
-- Cut the webbing to the the length of the straps with seam allowance.
-- Press under the short edge seam allowance.
-- Attach the webbing the same way as the fabric straps.
+- Corta la correa a la longitud de las correas con margen de costura.
+- Plancha por debajo del margen de costura del borde corto.
+- Sujeta las cinchas de la misma forma que las correas de tela.
 
 </Note>
 
-### Step 4: The zipper
+### Paso 4: La cremallera
 
-- Insert the zipper into the zipper panel making sure that the zipper pull is on the _good side_.
+- Introduce la cremallera en el panel de la cremallera asegurándote de que el tirador de la cremallera está en el lado bueno __.
 
-### (Optional) Step 5: Construct tabs.
+### (Opcional) Paso 5: Construye pestañas.
 
-- Construct tabs the same as the straps just shorter.
-- _Baste_ the tabs _good sides together_ to the short edges of the zipper panel so the tabs face inward.
+- Construye las lengüetas igual que las correas, pero más cortas.
+- _Hilvana_ las lengüetas _con los lados bien juntos_ a los bordes cortos del panel de la cremallera, de modo que las lengüetas queden hacia dentro.
 
 <Tip>
 
-We recommend the tabs to be about a quarter length of the straps.
+Recomendamos que las lengüetas midan aproximadamente un cuarto de la longitud de los tirantes.
 
 </Tip>
 
-### Step 6: Attach the zipper panel
+### Paso 6: Coloca el panel de la cremallera
 
-- With _good sides together_ sew the zipper panel to the front and pack panels. We will now refer to this as **the tube**.
+- Con _los lados bien juntos_ cose el panel de la cremallera a los paneles frontal y de la mochila. A partir de ahora lo denominaremos **el tubo**.
 
-### Step 7: Prep the side panels
+### Paso 7: Prepara los paneles laterales
 
-- Press under the top seam allowance of the side panel reinforcement parts.
-- Place the side panel reinforcement parts on top of the side panels matching the raw edges.
-- _Edgestitch_ the folded edge of the reinforcement parts to the side panels.
-- _Baste_ the raw edges together.
+- Plancha por debajo del margen de costura superior de las piezas de refuerzo de los paneles laterales.
+- Coloca las piezas de refuerzo de los paneles laterales encima de los paneles laterales haciendo coincidir los bordes en bruto.
+- _Pespunte_ el borde doblado de las piezas de refuerzo a los paneles laterales.
+- _Hilvana_ juntando los bordes crudos.
 
-### Step 8: Attach the side panels to the tube
+### Paso 8: Sujeta los paneles laterales al tubo
 
-- With _good sides together_ sew the side panels to the tube matching notches to the bottom and zipper panel seams.
-- If binding the edges rather than turning, sew with _wrong sides together_ instead.
-- If not binding the edges leave a gap in one of the sides for turning.
-- Turn inside out and _Slipstich_ the opening closed.
-- If sewn _wrong sides together_ bind the raw edges of the side panels.
+- Con _los lados bien juntos_ cose los paneles laterales al tubo haciendo coincidir las muescas con la parte inferior y las costuras del panel de la cremallera.
+- Si vas a atar los bordes en lugar de darles la vuelta, cóselos con _con los lados del revés juntos_ .
+- Si no vas a atar los bordes, deja un hueco en uno de los lados para darle la vuelta.
+- Dale la vuelta y _Slipstich_ la abertura cerrada.
+- Si se cose _con los lados equivocados juntos_ une los bordes crudos de los paneles laterales.
 
 <Note>
 
-It is recommended to leave the gap for turning on the side rather than the top or bottom as it needs less reinforcement.
+Se recomienda dejar el hueco para girar en el lateral en lugar de en la parte superior o inferior, ya que necesita menos refuerzo.
 
 </Note>
 
-### Step 9: Lining
+### Paso 9: Forrar
 
-- With _good sides together_ sew the front and back lining panels to the bottom lining panel.
-- With _good sides together_ attach the lining side panels.
-- Press under the top seam allowances.
-- Alernatively you can bind the top edges.
-- Place the lining inside the bag _wrong sides facing_ eachother.
-- _Slipstitch_ or _Whipstitch_ the lining to the zipper panel.
+- Con _los lados bien juntos_ cose los paneles de forro delantero y trasero al panel de forro inferior.
+- Con _los lados bien juntos_ une los paneles laterales del forro.
+- Plancha por debajo de los márgenes de costura superiores.
+- Alternativamente, puedes encuadernar los bordes superiores.
+- Coloca el forro dentro de la bolsa _con los lados opuestos hacia_ .
+- _Punto deslizante_ o punto elástico __ el forro al panel de la cremallera.
 
-### Step 10: Enjoy!
+### Paso 10: ¡Disfrútalo!
 
-That's it! You are all done! Now go enjoy you new bag!
+¡Eso es todo! ¡Ya está! ¡Ahora ve a disfrutar de tu nueva bolsa!

@@ -1,17 +1,17 @@
 ---
-title: "Hortensia handbag: Cutting Instructions"
+title: "Bolso Hortensia: Instrucciones de corte"
 ---
 
-### Materials
+### Materiales
 
-- **Main fabric**
-  - Cut **2 SidePanel** parts
-  - Cut **2 FrontBackPanel** parts
-  - Cut **1 BottomPanel**
-  - Cut **2 SidePanelReinforcement** parts
-  - Cut **2 Strap** parts
-  - Cut **1 ZipperPanel** part
-- **Lining fabric**
-  - Cut **2 SidePanel** parts
-  - Cut **2 FrontBackPanel** parts
-  - Cut **1 BottomPanel**
+- **Tela principal**
+  - Corta las piezas de **2 SidePanel**
+  - Corta **2 piezas de FrontBackPanel**
+  - Corta **1 PanelInferior**
+  - Corta **2 RefuerzoPanelLateral** piezas
+  - Corta **2 Correa** piezas
+  - Corta **1 Pieza ZipperPanel**
+- **Tela fina**
+  - Corta las piezas de **2 SidePanel**
+  - Corta **2 piezas de FrontBackPanel**
+  - Corta **1 PanelInferior**

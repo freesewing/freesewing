@@ -1,10 +1,10 @@
 ---
-title: "Sleevecap back X"
+title: "Tête de manche arrière X"
 ---
 
-![The horizontal location of the back inflection point](./sleevecapbackfactorx.svg)
+![L'emplacement horizontal du point de flexion arrière](./sleevecapbackfactorx.svg)
 
-This option controls the horizontal placement of the sleevecap inflection point at the back of the sleeve.
+Cette option contrôle la position horizontale du point de flexion du tête de manche à l'arrière de la manche.
 
 <Tip>
 
@@ -14,4 +14,4 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_sleevecapbackfactorx_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_sleevecapbackfactorx_sample.svg "Effet de cette option sur le motif")

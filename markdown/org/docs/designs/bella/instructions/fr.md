@@ -1,5 +1,5 @@
 ---
-title: "Bloc du corps de Bella : Instructions de couture"
+title: "Bloc de corps Bella : Instructions de couture"
 ---
 
 <Note>
@@ -17,14 +17,21 @@ Les blocs ne sont généralement pas réalisés tels quels mais servent plutôt 
 
 - Fermez les pinces du buste et de la taille.
 - Fermer les fléchettes arrière.
-- Sew the front to the backs at the shoulders good sides together.
-- Sew the front to the backs at the side seams good sides together.
+- With _good sides together_ sew the backs to the front at the shoulder seams, _easing_ the backs to fit the front.
+- With _good sides together_ sew the backs to the front at the side seams.
 
 <Tip>
 
 If you are making adjustments you may wish to sew the seams wrong sides together to make them easier to adjust.
 
 </Tip>
+
+<Note>
+
+Bella a une pince à l'arrière seulement quand c'est nécessaire, basé sur les mesures et les options de style.
+Si la pince arrière n'est pas nécessaire alors elle ne sera pas incluse dans le patron.
+
+</Note>
 
 ### Étape 2 : Essayez-le
 
@@ -44,7 +51,7 @@ Il est parfois nécessaire de porter la maquette pendant un certain temps pour a
 
 <Note>
 
-N'oubliez pas de considérer Bella comme une base plutôt que comme un produit final, et ajustez donc ce dont vous avez besoin pour obtenir l'aspect désiré.  
+N'oubliez pas de considérer Bella comme une base plutôt que comme un produit final, donc ajustez ce dont vous avez besoin pour obtenir l'aspect désiré.  
 Par exemple :
 
 - Modifier la ligne d'encolure

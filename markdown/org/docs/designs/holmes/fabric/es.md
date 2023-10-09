@@ -1,14 +1,14 @@
 ---
-title: "Holmes deerstalker hat: Fabric Options"
+title: "Sombrero de cazador Holmes: Opciones de tejido"
 ---
 
 ### Tela principal
 
-For the main fabric of your hat, a thick fabric will work best to hold the shape but if you wanna go for a lighter fabric you can interface it to give it more body. Generally you want to use **wools** of coating weight but you can experiment with different weights and fabrics with the relevant interfacing.
+Para la tela principal de tu sombrero, un tejido grueso funcionará mejor para mantener la forma, pero si quieres ir por una tela más ligera puedes interactuar para darle más cuerpo. Por lo general, te conviene utilizar lanas **** de peso de revestimiento, pero puedes experimentar con distintos gramajes y tejidos con la entretela correspondiente.
 
 <Note>
 
-A fun thing to try is printed cotton. Just double up the main fabric so each piece is double thickness. Then interface it with a **medium firm interfacing**.
+Una cosa divertida para probar es el algodón impreso. Simplemente doblar la tela principal para que cada pieza sea de doble espesor. A continuación, únela con una **entretela de firmeza media**.
 
 </Note>
 
@@ -18,11 +18,11 @@ Generalmente quieres una tela ligera como **seda** o **alambre de algodón** per
 
 ### Interfaz
 
-Dependiendo del espesor de su tela principal y de lo bien que mantiene su forma puede que necesite para interconectar su tejido. If you are uncertain of whether your fabric requires interfacing, quickly _baste_ your crown pieces together and see if the crown stays up right when placed on a surface. Si no necesita interfaz. Como regla general, generalmente necesitarás una interfaz de **empresa media** pero si tu tejido es bastante delgado, puede que necesites una interfaz más firme. If you are still uncertain you can face your crown pieces and once again _baste_ the crown pieces together and check how it looks on your head. Usted puede usar interfaces fusibles o no fusibles. If using non-fusible interfacing you will want to flat line the interfacing to your pieces wih temporary _pad stitches_.
+Dependiendo del espesor de su tela principal y de lo bien que mantiene su forma puede que necesite para interconectar su tejido. Si no estás segura de si tu tejido necesita entretela, hilvana rápidamente __ las piezas de la corona y comprueba si la corona se mantiene bien erguida al colocarla sobre una superficie. Si no necesita interfaz. Como regla general, generalmente necesitarás una interfaz de **empresa media** pero si tu tejido es bastante delgado, puede que necesites una interfaz más firme. Si aún no estás segura, puedes enfrentar las piezas de la corona y, una vez más, hilvanar __ las piezas de la corona y comprobar cómo queda en tu cabeza. Usted puede usar interfaces fusibles o no fusibles. Si utilizas entretela no fusible, deberás alinear la entretela a tus piezas con puntadas de almohadilla temporales __.
 
 <Note>
 
-If you are trying to make a more Historical Holmes you can use **Tarlatan** which is a lightweight stiffened muslin. Just make sure you use natural fibres.
+Si quieres hacer un Holmes más histórico, puedes utilizar **Tarlatan**, que es una muselina ligera y rígida. Simplemente asegúrese de usar fibras naturales.
 
 </Note>
 
@@ -32,6 +32,6 @@ For the bill insert you want a firm but thin material. Puede que quieras probar,
 
 <Note>
 
-Just remember. All of these are recommendations. If you want to use something different go for it!
+Recuerden. Todas ellas son recomendaciones. Si quieres usar algo diferente, ¡ve por ello!
 
 </Note>

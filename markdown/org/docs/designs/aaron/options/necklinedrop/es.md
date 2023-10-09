@@ -1,5 +1,5 @@
 ---
-title: "Neckline drop"
+title: "Caída del escote"
 ---
 
 ![La opción de soltar línea de cuello en Aaron](./necklinedrop.svg)

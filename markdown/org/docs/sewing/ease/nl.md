@@ -14,6 +14,6 @@ Overwijdte die je toelaat te bewegen in een kledingstuk noemt men draagtoegifte.
 
 Overwijdte kan ook in de andere richting werken. When the fabric stretches, we can choose to use less fabric than what is needed to make the garment fit. Dit heet **negatieve overwijdte**.
 
-Negatieve overwijdte wordt gebruikt voor elastische stoffen waarbij het kledingstuk strak moet zitten. Bijvoorbeeld: badkleding, leggings, ondergoed of sportkledij.
+Negative ease is used for stretchy materials where the garment must fit tightly. Bijvoorbeeld: badkleding, leggings, ondergoed of sportkledij.
 
 > Foto's door [Quinn Dombrowski](https://www.flickr.com/photos/quinnanya/8885126989/) en [sutiblr](https://www.flickr.com/photos/30788655@N08/4743320893)

@@ -1,7 +1,7 @@
 ---
-title: Waist to underbust
+title: Від талії до підгруддя
 ---
 
-The **waist to underbust** is the measurement from your waist up towards your underbust link (where your bra band sits).
+Вимір **від талії до підгруддя** — це довжина від Вашої талії до лінії підгруддя (місця розташування пояса бюстгальтера).
 
-To measure your **waist to underbust**, locate the height of both your waist and underbust, and measure the vertical distance between them. Make sure to measure at the side of your body.
+Для зняття цієї мірки, знайдіть висоту положення Вашої талії та висоту положення підгруддя й простягніть сантиметр між ними. Обов'язково вимірюйте збоку тіла.

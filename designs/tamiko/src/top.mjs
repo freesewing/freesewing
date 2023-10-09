@@ -1,4 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { withCondition as bustPlugin } from '@freesewing/plugin-bust'
 
 function tamikoTop({
@@ -11,8 +10,7 @@ function tamikoTop({
   snippets,
   options,
   measurements,
-  complete,
-  paperless,
+  store,
   macro,
   part,
 }) {
@@ -89,106 +87,128 @@ function tamikoTop({
     .line(points.sideBottom)
     .attr('class', 'fabric')
 
-  // Complete pattern?
-  if (complete) {
-    macro('cutonfold', {
-      from: points.bottomRight,
-      to: points.bottomLeft,
-      grainline: true,
-      offset: points.armholeTop.dy(points.armholePitch) * 1.1,
-      margin: 3,
-    })
-    points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    macro('title', { at: points.title, nr: 1, title: 'top' })
-    points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.15)
-    snippets.logo = new Snippet('logo', points.logo)
-    points.scalebox = points.topLeft.shiftFractionTowards(points.bottomRight, 0.65)
-    macro('scalebox', { at: points.scalebox })
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['armgapTop', 'armgapNeck', 'armgapBottom', 'armholeNeck', 'sideBottom'],
-    })
-
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.armholeTop)
-        ._curve(points.armholePitchCp1, points.armholePitch)
-        .curve_(points.armholePitchCp2, points.armholeBottom)
-        .offset(sa)
-        .attr('class', 'sa fabric')
-    }
+  if (sa) {
+    paths.sa = new Path()
+      .move(points.armholeTop)
+      ._curve(points.armholePitchCp1, points.armholePitch)
+      .curve_(points.armholePitchCp2, points.armholeBottom)
+      .offset(sa)
+      .attr('class', 'sa fabric')
   }
 
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.topLeft,
-      to: points.armgapBottom,
-      y: points.topLeft.y - 15,
-    })
-    macro('hd', {
-      from: points.topLeft,
-      to: points.sideBottom,
-      y: points.topLeft.y - 30,
-    })
-    macro('hd', {
-      from: points.topLeft,
-      to: points.topRight,
-      y: points.topLeft.y - 45,
-    })
-    macro('vd', {
-      from: points.sideBottom,
-      to: points.topLeft,
-      x: points.sideBottom.x + 15,
-    })
-    macro('vd', {
-      from: points.armgapBottom,
-      to: points.topLeft,
-      x: points.topLeft.x - 15,
-    })
-    macro('vd', {
-      from: points.armgapTop,
-      to: points.topLeft,
-      x: points.topLeft.x - 30,
-    })
-    macro('vd', {
-      from: points.bottomLeft,
-      to: points.topLeft,
-      x: points.topLeft.x - 45,
-    })
-    macro('vd', {
-      from: points.armgapNeck,
-      to: points.armgapTop,
-      x: points.armgapTop.x + 15,
-    })
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.armholeNeck,
-      y: points.bottomLeft.y + 15,
-    })
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.armholeTop,
-      y: points.bottomLeft.y + 30,
-    })
-    macro('hd', {
-      from: points.armholeTop,
-      to: points.armholeBottom,
-      y: points.bottomLeft.y + 30,
-    })
-    macro('vd', {
-      from: points.armholeTop,
-      to: points.armholePitch,
-      x: points.armholePitch.x,
-    })
-  }
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'fabric', onFold: true })
+
+  // Cutonfold
+  macro('cutonfold', {
+    from: points.bottomRight,
+    to: points.bottomLeft,
+    grainline: true,
+    reverse: true,
+    offset: points.armholeTop.dy(points.armholePitch) * 1.4,
+  })
+
+  // Title
+  points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+  macro('title', { at: points.title, nr: 1, title: 'top' })
+
+  // Logo
+  points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.15)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  // Scalebox
+  points.scalebox = points.topLeft.shiftFractionTowards(points.bottomRight, 0.65)
+  macro('scalebox', { at: points.scalebox })
+
+  // Notches
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: ['armgapTop', 'armgapNeck', 'armgapBottom', 'armholeNeck', 'sideBottom'],
+  })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wEdgeToSideTop',
+    from: points.topLeft,
+    to: points.armgapBottom,
+    y: points.topLeft.y - 15,
+  })
+  macro('hd', {
+    id: 'wEdgeToSideBottom',
+    from: points.topLeft,
+    to: points.sideBottom,
+    y: points.topLeft.y - 30,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.topLeft,
+    to: points.topRight,
+    y: points.topLeft.y - 45,
+  })
+  macro('vd', {
+    id: 'hSideToSideBottom',
+    from: points.sideBottom,
+    to: points.topLeft,
+    x: points.sideBottom.x + 15,
+  })
+  macro('vd', {
+    id: 'hEdgeToSideTop',
+    from: points.armgapBottom,
+    to: points.topLeft,
+    x: points.topLeft.x - 15,
+  })
+  macro('vd', {
+    id: 'hShoulderToTop',
+    from: points.armgapTop,
+    to: points.topLeft,
+    x: points.topLeft.x - 30,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottomLeft,
+    to: points.topLeft,
+    x: points.topLeft.x - 45,
+  })
+  macro('vd', {
+    id: 'hShoulderSeam',
+    from: points.armgapNeck,
+    to: points.armgapTop,
+    x: points.armgapTop.x + 15,
+  })
+  macro('hd', {
+    id: 'wSideToHps',
+    from: points.bottomLeft,
+    to: points.armholeNeck,
+    y: points.bottomLeft.y + 15,
+  })
+  macro('hd', {
+    id: 'wSideToShoulder',
+    from: points.bottomLeft,
+    to: points.armholeTop,
+    y: points.bottomLeft.y + 30,
+  })
+  macro('hd', {
+    id: 'wArmhole',
+    from: points.armholeTop,
+    to: points.armholeBottom,
+    y: points.bottomLeft.y + 30,
+  })
+  macro('vd', {
+    id: 'hArmhole',
+    from: points.armholeTop,
+    to: points.armholePitch,
+    x: points.armholePitch.x,
+  })
 
   return part
 }
 
 export const top = {
   name: 'tamiko.top',
-  plugins: [pluginBundle, bustPlugin],
+  plugins: [bustPlugin],
   draft: tamikoTop,
   measurements: ['shoulderToShoulder', 'chest', 'hpsToWaistBack', 'shoulderSlope', 'waistToHips'],
   optionalMeasurements: ['highBust'],

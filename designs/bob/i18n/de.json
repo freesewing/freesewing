@@ -1,0 +1,26 @@
+{
+  "t": "Bob, das Lätzchen",
+  "d": "Dies ist das Lätzchen, welches du erstellst, wenn du unserem Design-Tutorial folgst",
+  "p": {
+    "bib": "Lätzchen"
+  },
+  "s": {},
+  "o": {
+    "neckRatio": {
+      "t": "Halsöffnung",
+      "d": "Steuert die Größe der Halsöffnung in Relation zu der Größe des Lätzchens"
+    },
+    "widthRatio": {
+      "t": "Breite",
+      "d": "Steuert die Breite des Latzes"
+    },
+    "lengthRatio": {
+      "t": "Länge",
+      "d": "Steuert die Länge des Latzes"
+    },
+    "headSize": {
+      "t": "Kopfgröße",
+      "d": "Der Kopfumfang, für den das Lätzchen passen soll"
+    }
+  }
+}

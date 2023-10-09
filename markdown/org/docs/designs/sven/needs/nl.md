@@ -1,11 +1,11 @@
 ---
-title: "Sven sweatshirt: What You Need"
+title: "Sven sweatshirt: Wat je nodig hebt"
 ---
 
-To make Sven, you will need the following:
+Om Sven te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- About 1.75 meters (1.9 yards) of a suitable fabric ([see Fabric options](#fabric-options))
+- Ongeveer 1,75 meter van een geschikte stof ([zie Stofopties](#fabric-options))
 - Boordstof voor de manchetten en halsopening
 
 <Note>

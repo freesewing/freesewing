@@ -1,5 +1,8 @@
 ---
-title: "Charlie chinos"
+title: "Charlie, die Chinos"
 ---
 
-<PatternDocs pattern='charlie' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='charlie' docs />
+

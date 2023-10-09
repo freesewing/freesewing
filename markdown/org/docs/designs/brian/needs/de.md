@@ -1,19 +1,19 @@
 ---
-title: "Brian body block: What You Need"
+title: "Brian Körperblock: Was du brauchst"
 ---
 
-To make Brian, you will need the following:
+Um Brian herzustellen, brauchst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- About 1.25 - 1.5 metres (1.4 - 1.7 yards) of a suitable fabric ([see Brian Fabric options](/docs/patterns/brian/fabric/))
+- Etwa 1,25 - 1,5 Meter (1,4 - 1,7 Yards) eines geeigneten Stoffes ([siehe Brian Fabric options](/docs/patterns/brian/fabric/))
 
-This list is for a default Brian Block. If you have/are making changes to the block you may need to get additional items such as closures, binding etc.
+Diese Liste ist für einen Standard Brian Block. Wenn du Änderungen an dem Block vornimmst, musst du eventuell zusätzliche Artikel wie Verschlüsse, Bindungen usw. besorgen.
 
 <Note>
 
-###### Brian ist ein Block, kein Muster
+###### Brian ist ein Grundschnitt, kein Schnittmuster
 
-Ein Block ist eine Grundform, auf der andere Muster basieren.
+Ein Grundschnitt ist eine Grundform, auf der andere Schnittmuster basieren.
 Sie werden manchmal auch als Schläger bezeichnet, obwohl Puristen argumentieren, dass ein Block und ein Schläger verschiedene Dinge sind.
 
 Grundschnitte werden in der Regel nicht so gemacht, wie sie sind, sondern dienen als Grundlage für andere Schnittmuster.

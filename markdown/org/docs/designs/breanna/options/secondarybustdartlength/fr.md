@@ -1,9 +1,9 @@
 ---
-title: "Secondary bust dart length"
+title: "Longueur de la pince poitrine secondaire"
 ---
 
-The length of the secondary bust dart.
+La longueur de la pince poitrine secondaire.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_secondarybustdartlength_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](breanna_secondarybustdartlength_sample.svg "Effet de cette option sur le motif")

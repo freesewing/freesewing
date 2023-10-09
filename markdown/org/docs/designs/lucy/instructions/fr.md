@@ -4,33 +4,33 @@ title: "Lucy: Instructions"
 
 <Note>
 
-Lucy can be sewn by hand or by machine as you prefer. When sewing by hand, you can use a running stitch to sew the pocket pieces together and bind with a whipstitch. 
+Lucy peut être cousue à la main ou à la machine, selon tes préférences. Lorsque tu couds à la main, tu peux utiliser un point courant pour coudre les pièces de la poche ensemble et les relier avec un point de fouet. 
 
 </Note>
 
-## Step 1: Constructing the Pocket
+## Étape 1 : Construction de la poche
 
-- Bind the pocket slit.
-- With _wrong sides together_ stitch the two pocket pieces together around the outside.
-- Bind the outside edge.
+- Relie la fente de la poche.
+- Avec _à l'envers,_ couds les deux pièces de la poche ensemble autour de l'extérieur.
+- Relie le bord extérieur.
 
 <Note>
 
-If you prefer you can _french seam_ the outer edges of the pocket bag together.
+Si tu préfères, tu peux faire une couture française sur les bords extérieurs de la pochette.
 
 </Note>
 
 ## bind the top and thread a tie through the binding
 
-There are two methods for binding the top edge. One leaves the side edges of the top binding open so the ties can be threaded through. The second uses the tape for the ties to bind the top edge. Read through both methods carefully and decide which one you wish to use.
+Il existe deux méthodes pour relier le bord supérieur. L'un d'eux laisse les bords latéraux de la reliure supérieure ouverts pour que les liens puissent être enfilés. La seconde utilise le ruban adhésif des attaches pour lier le bord supérieur. Lis attentivement les deux méthodes et décide de celle que tu souhaites utiliser.
 
-### Using binding
+### Utilisation de la reliure
 
-- Cut a piece of binding the length of the top edge + seam allowance.
-- Fold under the short edges of the binging and stitch in place.
-- Bind the top edge of the pocket bag with the prepared binding making sure that the folded ends are left open.
-- Thread a tie through the binding.
-- Finish the tie ends.
+- Coupe un morceau de reliure de la longueur du bord supérieur + le surplus de couture.
+- Replie sous les bords courts de la binguerie et couds en place.
+- Relie le bord supérieur du sac de poche avec la reliure préparée en veillant à laisser les extrémités pliées ouvertes.
+- Enfile un lien à travers la reliure.
+- Termine les extrémités de l'attache.
 
 <Tip>
 
@@ -38,12 +38,12 @@ use a piece of tape as binding and tie, sewing it down to the top and leaving th
 
 </Tip>
 
-### Bind with the ties
+### Relie avec les liens
 
-- Use a piece of tape as binding and tie, attach the pocket bag to the centre of the tape.
-- Bind the top edge of the pocket bag whilst leaving the remainder of tape free.
-- Finish the tape ends.
+- Utilise un morceau de ruban adhésif comme lien et attache, fixe le sac de poche au centre du ruban.
+- Relie le bord supérieur de la pochette en laissant le reste du ruban libre.
+- Termine les extrémités du ruban.
 
-## Step 3: Enjoy!
+## Étape 3: Profitez-en!
 
-That's it! Vous avez terminé ! Now go stuff your new pockets to the brim!
+Voilà! Vous avez terminé ! Maintenant, va remplir tes nouvelles poches à ras bord !

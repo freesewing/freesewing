@@ -1,5 +1,5 @@
 ---
-title: "Front pocket style"
+title: "Stijl met voorzak"
 ---
 
-Change the front pocket from welt pocket to one that is hidden in the front seam.
+Verander de zak aan de voorkant van een paspelzak in een zak die verborgen is in de naad aan de voorkant.

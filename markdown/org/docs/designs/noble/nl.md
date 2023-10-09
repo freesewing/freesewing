@@ -1,5 +1,8 @@
 ---
-title: "Noble body block"
+title: "Noble bovenlichaam blok"
 ---
 
-<PatternDocs pattern='noble' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='noble' docs />
+

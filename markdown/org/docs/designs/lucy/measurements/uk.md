@@ -1,7 +1,7 @@
 ---
-title: "Lucy tie-on pocket: Required measurements"
+title: "Кишеня на зав'язці Lucy: Необхідні виміри"
 ---
 
 <Note>
-Luci does not require any measurements
+Luci не потребує жодних вимірів
 </Note>

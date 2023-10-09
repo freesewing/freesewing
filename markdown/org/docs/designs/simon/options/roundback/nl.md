@@ -1,12 +1,12 @@
 ---
-title: "Round back"
+title: "Rond terug af"
 ---
 
-Controls how round the back yoke seam is by adding length to the center back at the yoke that tapers of towards the sides.
+Bepaalt hoe rond de naad van het rugstuk is door lengte toe te voegen aan het midden van het rugstuk dat naar de zijkanten toeloopt.
 
-- Increase this option to round the back yoke seam
-- Decrease this option to straighten the back yoke seam
+- Verhoog deze optie om de naad van het achterstuk af te ronden
+- Verlaag deze optie om de naad van het achterjuk recht te maken
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simon_roundback_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](simon_roundback_sample.svg "Effect van deze optie op het patroon")

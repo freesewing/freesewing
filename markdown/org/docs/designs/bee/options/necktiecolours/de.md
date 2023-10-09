@@ -1,10 +1,10 @@
 ---
-title: "Neck tie colours"
+title: "Farben des Nackenträgers"
 ---
 
 ***
 
-Whether you want single color ties around your neck, or dual-coloured ones
+Ob du einfarbige oder zweifarbige Krawatten um deinen Hals haben möchtest
 
 ## Effekt dieser Option auf das Schnittmuster
 

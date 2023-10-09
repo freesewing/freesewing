@@ -1,10 +1,10 @@
 ---
-title: "Visor angle"
+title: "Winkel des Mützenschirms"
 ---
 
 ***
 
-The arc angle used to draft the inner curve of the visor
+Winkel, der die innere Kurve des Mützenschirms beschreibt
 
 ## Effekt dieser Option auf das Schnittmuster
 

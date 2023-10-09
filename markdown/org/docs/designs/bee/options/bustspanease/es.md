@@ -1,5 +1,5 @@
 ---
-title: "Bust span ease"
+title: "Facilidad de la expansión del polvo"
 ---
 
 ***

@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import {
   DesignOptions,
   ns as designMenuNs,
@@ -40,7 +41,7 @@ export const DraftMenu = ({
   }
 
   return (
-    <nav className="grow mb-12">
+    <nav>
       <Inspector {...menuProps} {...{ ui, inspector, renderProps }} />
       <DesignOptions {...menuProps} />
       <CoreSettings {...menuProps} />

@@ -1,9 +1,9 @@
 ---
-title: "Tiberius Tunica: What You Need"
+title: "Tiberius Tunica: Wat je nodig hebt"
 ---
 
-To make Tiberius, you will need the following:
+Om Tiberius te maken heb je het volgende nodig:
 
 - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-- About 2 meters (2.2 yards) of a suitable fabric (see [Fabric options](/docs/patterns/tiberius/fabric))
-- (a belt, for wearing it)
+- Ongeveer 2 meter van een geschikte stof (zie [Stofopties](/docs/patterns/tiberius/fabric))
+- (een riem, om hem te dragen)

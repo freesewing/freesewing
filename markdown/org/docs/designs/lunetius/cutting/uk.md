@@ -1,25 +1,25 @@
 ---
-title: "Lunetius Lacerna: Cutting Instructions"
+title: "Lunetius Lacerna: Інструкція по вирізанню"
 ---
 
-- Cut **1 lacerna** part on the fold
-- or Cut **2 lacerna** parts
+- Виріжте **1 лацерну** частину на згині
+- або розрізати **на 2 частини лацерна**
 
-The way to cut Lunetius is going to depend on what fabric you have chosen to use. If you have enough fabric width you can cut it _on the fold_. If you don’t, you can cut two halves and later sew them together. To not have to later finish the centre back edge you can cut with the centre back edge on the selvage.
+Спосіб розкрою Лунетиуса буде залежати від того, яку тканину ви вирішили використати. Якщо у вас є достатня ширина тканини, ви можете розкроїти її _по згину_. Якщо ви цього не зробите, ви можете розрізати дві половинки, а потім зшити їх разом. Щоб згодом не обробляти центральну задню кромку, ви можете обрізати центральну задню кромку на фальшпанелі.
 
-A lot of garments were woven to shape in the Roman era, so this is one aspect where you don’t need to worry about historical accuracy at all, unless you would like to weave your Lunetius to shape.
+У римську епоху багато одягу ткали за формою, тому це один з аспектів, де вам зовсім не потрібно турбуватися про історичну точність, якщо тільки ви не хочете виткати свій Lunetius за формою.
 
 <Comment by="Zee">In that case I salute you and please share the results \[in our discord\](https://discord.freesewing.org/)! </Comment>
 
-If you want to learn more about this you can read about it in:  
-Granger-Taylor, H. (1982) _Weaving Clothes To Shape in the Ancient World: The Tunic and Toga of the Arringatore_ in Textile History 13 (1), pp 3-25
+Якщо ви хочете дізнатися більше про це, ви можете прочитати про це в:  
+Грейнджер-Тейлор, Г. (1982) _Ткання одягу за формою в античному світі: Туніка і тога аррінгатора_ в Історії текстилю 13 (1), с. 3-25
 
-### On Historical Accuracy
+### Про історичну достовірність
 
-The further we go back in time, the less extant garments we have to base research on. Often there may be scraps of fabric left behind by stroke of luck but most of our information starts to come from (in archaeology) secondary sources like written texts from contemporaries.
+Чим далі в минуле, тим менше вцілілого одягу ми маємо для дослідження. Часто, завдяки щасливому випадку, можна знайти клаптики тканини, але більшість інформації ми отримуємо з вторинних джерел (в археології), наприклад, письмових текстів сучасників.
 
-This is especially true for the Roman and Mediaeval eras, not to mention that a lot of the available research is behind a paywall.
+Особливо це стосується римської та середньовічної епох, не кажучи вже про те, що багато наявних досліджень знаходяться в закритому доступі.
 
-We can’t be 100 percent historically accurate, because we’re living in a different time, and everything we use to sew is different now from before. Even fabric is woven in a different way.
+Ми не можемо бути на 100% історично точними, тому що ми живемо в інший час, і все, що ми використовуємо для шиття, зараз відрізняється від того, що було раніше. Навіть тканина виткана по-іншому.
 
-How ‘accurate’ you want to be is up to you, there is no wrong way to do this and research is not required -- though it can be fun!
+Наскільки "точними" ви хочете бути, залежить від вас, немає неправильного способу зробити це, і дослідження не є обов'язковим - хоча це може бути весело!

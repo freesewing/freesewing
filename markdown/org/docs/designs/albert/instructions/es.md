@@ -1,5 +1,5 @@
 ---
-title: "Albert apron: Sewing Instructions"
+title: "Delantal Albert: Instrucciones de costura"
 ---
 
 ### Paso 1: El bolsillo

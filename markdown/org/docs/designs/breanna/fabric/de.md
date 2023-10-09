@@ -1,10 +1,10 @@
 ---
-title: "Breanna body block: Fabric Options"
+title: "Breanna Body Block: Stoff Optionen"
 ---
 
-If you are making a default Breanna to see how it fits we recommend a fabric such as **Calico (Muslin)** or a cheaper fabric that matches the drape and stretch of the fabric you intend to make a finalised version of Breanna with.
+Wenn du eine Standard-Breanna anfertigst, um zu sehen, wie sie passt, empfehlen wir dir einen Stoff wie **Calico (Muslin)** oder einen billigeren Stoff, der dem Faltenwurf und der Dehnbarkeit des Stoffes entspricht, aus dem du die endgültige Version der Breanna machen willst.
 
-You can use scraps of fabrics from your stash so don't worry about buying fabric specifically for Breanna.
+Du kannst Stoffreste aus deinem Vorrat verwenden, du musst also nicht extra Stoff für Breanna kaufen.
 
 <Note>
 

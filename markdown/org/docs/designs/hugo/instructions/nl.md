@@ -1,12 +1,12 @@
 ---
-title: "Hugo hoodie: Sewing Instructions"
+title: "Hugo hoodie: Naai-instructies"
 ---
 
 <Note>
 
-###### Documentation under construction
+###### Documentatie onder constructie
 
-First the good news: There's a video series that shows how to make Hugo from start to finish.
+Eerst het goede nieuws: er is een video serie die laat zien hoe je Hugo van begin tot einde maakt.
 Scroll wat naar beneden, het staat op deze pagina.
 
 Nu het slechte nieuws: de geschreven instructies voor Hugo zijn nog niet compleet.
@@ -15,9 +15,9 @@ Nu het slechte nieuws: de geschreven instructies voor Hugo zijn nog niet complee
 
 ## Video
 
-Text a bit dry for you? I try to make videos available as part of the pattern documentation.
+Tekst een beetje te droog voor je? Ik probeer video's beschikbaar te maken als deel van de documentatie.
 
-This 6-episode series shows you how to make your hoodie start to finish:
+Deze zesdelige reeks toont je van begin tot eind hoe je de hoodie in elkaar zet:
 
 <YouTube id='PL1gv5yv3DoZOHLjisuD1JcUPTkFy_IGGO' playlist />
 
@@ -29,8 +29,8 @@ This 6-episode series shows you how to make your hoodie start to finish:
 - Stik de belegdelen aan de zak met 1 cm naadwaarde.  Stik zowel de lange rand als het kortere randje onderaan de zak.
 - Knip voorzichtig de naadwaarde bij aan de belegdelen.
 - Keer de belegdelen naar de goede kant.  Rol de naden op hun plaats en strijk ze plat.
-- Topstitch or edge-stitch 0.5 cm along both upper and lower edges on each side of the pocket, to anchor the facing and the seam allowance.
-- Topstitch another line 0.5 cm from the inside upper edge of the facing on each side of the pocket.  Dit stiksel stopt aan het eerste stiksel aan de onderrand.
+- Stik of kantstik 0,5 cm langs beide boven- en onderranden aan elke kant van de zak om het beleg en de naadtoeslag te verankeren.
+- Stik nog een lijn door op 0,5 cm van de binnenbovenrand van het beleg aan elke kant van de zak.  Dit stiksel stopt aan het eerste stiksel aan de onderrand.
 - Knip het overtollige beleg aan de binnenkant van de zak weg.
 - Strijk de randen.
 
@@ -44,9 +44,9 @@ This 6-episode series shows you how to make your hoodie start to finish:
 
 ### Stap 3: Bevestig de mouwen
 
-- The side of the sleeve with the pointy edge at top is the back of the sleeve piece.  It is also marked by a double notch on the pattern.
+- De kant van de mouw met de scherpe punt bovenaan is de achterkant van de mouw.  Dit is ook aangegeven met een dubbel merkteken op het patroon.
 
-- Match good sides of the sleeve seam to good sides of the front, matching the single notch on front to single notch on the sleeve piece. Stitch the seam.  Do this for both sleeve pieces.
+- Leg de goede kanten van de mouw op de goede kant van het voorpand. Let op dat het merkteken op het voorpand overeenkomt met het merkteken op de mouw. Stik deze naad.  Herhaal voor de andere mouw.
 
 - Om de naad af te werken kan je één van deze methodes gebruiken:
 
@@ -90,7 +90,7 @@ This 6-episode series shows you how to make your hoodie start to finish:
 - Om de kap te sluiten lock je de lagen samen langs de halslijn.  Als je geen overlock hebt, gebruik dan een zigzagsteek.
 - (Optioneel) Als je gaten hebt gemaakt voor een koordje kan je dit er nu doorheen halen.
 
-### Step 8: Preparing a Neckband and Attaching the Hood
+### Stap 8: Een nekband maken en de kap vastmaken
 
 - Knip een kruisverstandige strook stof uit je hoofdstof, je halsopening + 2 cm (3/4 inch) lang en drievoudig de naadwaarde van je nek.
 - Leg de uiteindes van de halsbies met goede kanten op elkaar en stik vast met 1 cm naadwaarde om een ronde band te vormen.

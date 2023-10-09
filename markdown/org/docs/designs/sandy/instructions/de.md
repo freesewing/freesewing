@@ -1,26 +1,26 @@
 ---
-title: "Sandy circle skirt: Sewing Instructions"
+title: "Sandy Kreisrock: Anleitung zum Nähen"
 ---
 
 <Warning>
 
-Due to the different styles and configurations of Sandy you may find you need to skip or re-order certain steps.
-We're not going to go into a full explanation on how to create all the individual details that make up a circle skirt. These instructions assume that you know how to sew a zipper, construct pockets, etc. If not, there are numerous excellent articles available on the web, both in writen form, and on video. If you do get stuck, you can always reach out to [other FreeSewers](https://discord.freesewing.org/) in our discord.
+Aufgrund der unterschiedlichen Stile und Konfigurationen von Sandy kann es sein, dass du bestimmte Schritte auslassen oder neu anordnen musst.
+Wir werden hier nicht ausführlich erklären, wie du die einzelnen Details für einen Kreisrock anfertigst. Diese Anleitung setzt voraus, dass du weißt, wie man einen Reißverschluss näht, Taschen konstruiert usw. Wenn nicht, gibt es im Web zahlreiche ausgezeichnete Artikel, sowohl in schriftlicher Form als auch auf Video. Wenn du nicht weiterkommst, kannst du dich jederzeit an [andere FreeSewers] (https://discord.freesewing.org/) in unserem Discord wenden.
 
 </Warning>
 
 <Note>
 
-Due to seamless and closure Sandy's needing different constructions we have separated their instructions.
+Da nahtlose und verschließbare Sandy's unterschiedliche Konstruktionen benötigen, haben wir ihre Anleitungen getrennt.
 
 </Note>
 
 ## Schritt 1: Vorbereitung des Rocks
 
 - Nähe die Rock-Naht  _rechts auf rechts_ zusammen bis dahin, wo die Öffnung für den Verschluss beginnen soll.
-- Add Pockets if using.
-- If using lining, prep the same as the skirt.
-- _Finish_ seams if not lining.
+- Füge Taschen hinzu, wenn du sie verwendest.
+- Wenn du ein Futter verwendest, bereite es genauso vor wie den Rock.
+- _Beende_ Nähte, wenn du nicht fütterst.
 
 <Note>
 
@@ -34,8 +34,8 @@ Wenn du keine zusätzlichen Nähte erstellen möchtest, aber trotzdem Taschen ha
 
 ## Schritt 2: Bereite die Öffnung vor
 
-- Insert zipper or placket into opening if using.
-- If not using, press the openings seam allowance to the inside and _Edgestitch_/_Topstitch_ in place. Nach Wunsch kannst du die Naht absteppen.
+- Füge den Reißverschluss oder die Knopfleiste in die Öffnung ein, wenn du sie verwendest.
+- Wenn du die Öffnungen nicht verwendest, bügle die Nahtzugabe nach innen und _Kantenstich_/_Steppstich_ an. Nach Wunsch kannst du die Naht absteppen.
 
 <Note>
 
@@ -48,11 +48,11 @@ Du machst eine nahtlose Version.
 ## Schritt 3: Wenden
 
 - (optional) du kannst ein Zwischenfutter mit einem steiferen oder festeren Material erstellen.
-- Attach Lining to skirt at hem and opening by your preferred method.
-- _Baste_ Lining to skirt at waist.
+- Befestige das Futter am Saum und an der Öffnung des Rocks mit der von dir bevorzugten Methode.
+- _Hefte_ Futter an der Taille des Rocks an.
 - Bei Bedarf Die Weite in Falten legen.
 
-## Schritt 4: Der Bund
+## Der Bund
 
 ### Verschlüsse
 
@@ -61,66 +61,66 @@ Du machst eine nahtlose Version.
 - Nähe den verstärkten Teil des Bundes _rechts auf rechts_ an den Rock. Falls nötig, lege ein paar Falten.
 - Wenn du den gebogenen Bund nähst, nähe die Bundteile mit Verstärkung rechts auf rechts auf die Teile ohne Verstärkung. Schneide die Nahtzugabe zurück, schneide sie ein und presse den nicht verstärkten Teil nach oben und weg vom Rock.
 
-There will be some overhangs:
+Es wird einige Überhänge geben:
 
 - Die Seite, die nicht zu sehen sein soll, sollte bei der Nahtzugabe überstehen.
-- The side intended to overlap will have a greater overhang.
-- If using a placket, both sides will overhang by your seam allowance.
+- Die Seite, die sich überlappen soll, hat einen größeren Überhang.
+- Wenn du eine Leiste verwendest, werden beide Seiten um deine Nahtzugabe überstehen.
 - Wenn du einen Reißverschluss einnähst, muss die überlappende Nahtzugabe eingekürzt werden.
 
-__Inserting Zipper in Waistband__
+__Reißverschluss in den Bund einfügen__
 - Wenn du einen Reißverschluss einnähen willst, ist jetzt der richtige Zeitpunkt, den Reißverschluss von der Bruchlinie am Bund nach unten anzunähen. Oder von der Nahtlinie aus für den gebogenen Bund.
-- _Slipstitch_ or _Whipstitch_ the lining to the zipper at this point if you have not treated the lining and skirt as one at the opening.
-- Press under overhangs.
+- _Steppstich_ oder _Steppstich_ das Futter an dieser Stelle an den Reißverschluss, wenn du das Futter und den Rock an der Öffnung nicht als Einheit behandelt hast.
+- Drücke unter Überhängen.
 - Presse den Bund _links auf links_ entlang des Bruches. Oder entlang der Nahtlinie bei gebogenen Bund.
-- Slipstitch_ or _Whipstitch_ the overhang edges to the zipper.
+- Steppstich_ oder _Steppstich_ die Überhangkanten an den Reißverschluss.
 - Steppe den Bund knappkantig ab.
 - Alternativ kannst du den Bund von der Innneseite mit _Slipstitch_ oder _Whipstitch_ heften.
 
-__Other closures__
+__Andere Schließungen__
 - Presse den Bund _links auf links_ entlang des Bruches. Oder entlang der Nahtlinie bei gebogenen Bund.
-- Sew the overhangs with your seam allowance.
+- Näht die Überhänge mit eurer Nahtzugabe.
 - Wende den Bund, bügeln.
-- _Egdestitch_ the waistband in place, this should also close the gap of the over-lap.
-- Alternatively, _Slipstich_ or _Whipstitch_ the waistband in place on the inside and close the gap of the over-lap with _Slipstiching_.
+- _Egdestich_ den Bund fest. Dadurch sollte auch die Lücke der Überlappung geschlossen werden.
+- Alternativ kannst du __ oder __ den Bund auf der Innenseite festnähen und die Lücke der Überlappung mit __schließen.
 - Fügen Sie Snaps, Kleiderhaken oder Knopf und Knopfloch hinzu, was auch immer dein bevorzugter Verschluss des Bundübertritts ist.
 
 ### Nahtlos
 
-- If curved waistband with _good sides together_ sew the two waistbands together along the shortest curved edge. Nahtzugaben auseinanderbügeln, einkürzen und einschneiden.
-- With _good sides together_ sew the waistband together along the short seams, leaving a gap for the elastic that will be on the inside.
-- Press under the seam allowance on the long edge of the waistband that is intended to be on the inside.
-- With _good sides together_ attach the waistband to the skirt along the unpressed seam. Trim seam.
-- Press waistband and seam allowance up away from skirt.
-- Press the waistband to the inside along the fold-line/seam-line.
-- _Edgestitch_ the waistband in place.
-- Alternatively you can _Slipstitch_ or _Whipstitch_ the waistband in place on the inside.
-- Cut the elastic to your waist.
-- Thread the elastic through the opening of the waistband making sure not to lose the end.
-- Overlap the ends of the elastic by 1cm (3/8 inch) and zig-zag stitch in place.
-- Tuck elastic into waistband and close the opening with hand-sewing.
+- Wenn der geschwungene Bund mit _gut aneinander liegt_ nähst du die beiden Bünde entlang der kürzesten geschwungenen Kante zusammen. Nahtzugaben auseinanderbügeln, einkürzen und einschneiden.
+- Lege _gut zusammen_ und nähe den Bund entlang der kurzen Nähte zusammen, wobei du eine Lücke für das Gummiband auf der Innenseite lässt.
+- Bügle unter die Nahtzugabe an der langen Kante des Bunds, die nach innen zeigen soll.
+- Lege den Bund entlang der ungebügelten Naht an den Rock an, so dass _gut zusammenliegt_ . Ziernaht.
+- Bügle den Bund und die Nahtzugabe vom Rock weg nach oben.
+- Bügle den Bund entlang der Falzlinie/Nahtlinie nach innen.
+- Steppe den Bund knappkantig ab.
+- Alternativ kannst du _Steppstich_ oder _Peitschenstich_ den Bund auf der Innenseite festnähen.
+- Schneide das Gummiband auf deine Taille zu.
+- Fädle das Gummiband durch die Öffnung des Bunds und achte darauf, dass das Ende nicht verloren geht.
+- Überlappe die Enden des Gummibands um 1 cm und nähe es mit einem Zickzackstich fest.
+- Stecke das Gummiband in den Bund und schließe die Öffnung mit einer Handnaht.
 
-## Step 5: Hemming
+## Schritt 5: Säumen
 
-If you have hemmed the skirt with the lining you can skip this step.
+Wenn du den Rock mit dem Futter gesäumt hast, kannst du diesen Schritt auslassen.
 
-Hem the skirt in one of the following ways:
-- Omit the hem allowance and bind the raw edge.
-- Bind the raw edge of the hem allowance, single fold the hem under and either _Topstitch_ or hand sew the hem in place.
-- Double fold the hem under and either _Topstitch_ or hand sew the hem in place. You may have heard this be called a Rolled hem.
+Säume den Rock auf eine der folgenden Arten:
+- Lass die Saumzugabe weg und binde die Schnittkante ab.
+- Binde die rohe Kante der Saumzugabe ein, falte den Saum einfach nach unten und nähe ihn entweder mit _Steppstich_ oder mit der Hand fest.
+- Falte den Saum doppelt um und nähe ihn entweder mit _Steppstich_ oder mit der Hand fest. Vielleicht hast du schon einmal gehört, dass dies ein Rollsaum genannt wird.
 
 <Note>
 
-There are many ways to hem/face the bottom of a skirt, If you have a prefered method use it here.
+Es gibt viele Möglichkeiten, den unteren Teil eines Rocks zu säumen. Wenn du eine bevorzugte Methode hast, kannst du sie hier anwenden.
 
 </Note>
 
-## Step 6: Enjoy!
+## Schritt 6: Viel Spaß!
 
-You are all done! Now go enjoy your wonderful new skirt and try not to get too dizzy showing off it's fullness!
+Du bist fertig! Genieße jetzt deinen neuen Rock und versuche, nicht zu schwindlig zu werden, wenn du seine Fülle zeigst!
 
 <Note>
 
-These instructions are just a suggestion, there are many ways to construct a circle skirt so feel free to deviate or completely disregard. If you need help, you can always reach out to [other FreeSewers](https://discord.freesewing.org/) in our discord.
+Diese Anleitung ist nur ein Vorschlag. Es gibt viele Möglichkeiten, einen Kreisrock zu konstruieren, du kannst also gerne davon abweichen oder sie komplett ignorieren. Wenn du Hilfe brauchst, kannst du dich jederzeit an [andere FreeSewers](https://discord.freesewing.org/) in unserem Discord wenden.
 
 </Note>

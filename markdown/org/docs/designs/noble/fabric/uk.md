@@ -1,18 +1,18 @@
 ---
-title: "Noble body block: Fabric Options"
+title: "Благородний боді-блок: Варіанти тканин"
 ---
 
-If you are making a default Noble to see how it fits we recommend a fabric such as **Calico (Muslin)** or a cheaper fabric that matches the drape and stretch of the fabric you intend to make a finalised version of Noble with.
+Якщо ви виготовляєте стандартну модель Noble, щоб побачити, як вона сидить, ми рекомендуємо таку тканину, як **Бязь (муслін)** або дешевшу тканину, яка відповідає драпіровці та розтяжності тканини, з якої ви плануєте виготовити остаточну версію Noble.
 
-You can use scraps of fabrics from your stash so don't worry about buying fabric specifically for Noble.
+Ви можете використовувати обрізки тканин з вашої заначки, тому не турбуйтеся про те, щоб купувати тканину спеціально для Noble.
 
 <Note>
 
-###### Noble is a block, not a pattern
+###### Noble - це блок, а не візерунок
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Блок - це базова форма, на якій базуються інші візерунки.
+Іноді їх ще називають слоуперами, хоча пуристи заперечать, що блок і слоупер - це різні речі.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Блоки, як правило, не створюються як такі, а слугують основою для інших візерунків.
 
 </Note>

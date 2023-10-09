@@ -1,5 +1,5 @@
 ---
-title: "Trayvon tie: Design Options"
+title: "Trayvon-Krawatte: Gestaltungsmöglichkeiten"
 ---
 
 <PatternOptions pattern='trayvon' />

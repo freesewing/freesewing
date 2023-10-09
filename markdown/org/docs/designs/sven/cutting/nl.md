@@ -1,8 +1,8 @@
 ---
-title: "Sven sweatshirt: Cutting Instructions"
+title: "Sven sweatshirt: Knip instructies"
 ---
 
-Sven is a very simply pattern, and consists of two main parts plus some strips for the neck and armhole binding.
+Sven is een heel simpel patroon, en bestaat uit drie hoofddelen plus een aantal stroken voor de hals, manchetten en zoom.
 
 - **Buitenstof**
   - Knip **1 rugpand** aan de stofvouw
@@ -17,6 +17,6 @@ Sven is a very simply pattern, and consists of two main parts plus some strips f
 
 ###### Caveats
 
-The ribbing parts are not included on the pattern because they're just rectangular.
+De ribbeldelen staan niet op het patroon omdat ze gewoon rechthoekig zijn.
 
 </Warning>

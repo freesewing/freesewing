@@ -1,27 +1,27 @@
 ---
-title: "Bent body Block: Cutting Instructions"
+title: "Gebogen lichaam Blok: Snij-instructies"
 ---
 
 **Buitenstof**
 
-- Cut **1 Front** part on the fold.
-- Cut **1 Back** part on the fold.
-- Cut **2 Top sleeve** parts.
-- Cut **2 Under sleeve** parts.
+- Knip **1 Voorste deel** op de vouw.
+- Knip **1 Rugdeel** op de vouw uit.
+- Snijd **2 Bovenste huls** delen.
+- Snijd **2 Ondermouw** delen.
 
-These cutting instructions are just for the default Bent block. Adjust your cutting accordingly if you have/are making changes to the block.
+Deze snij-instructies zijn alleen voor het standaard Bent-blok. Pas je snijwerk dienovereenkomstig aan als je veranderingen aan het blok hebt aangebracht.
 
 <Warning>
 
-As Bent is a block it does not have any closures. If you are making a test Bent you will want to Cut 2 Front parts with seam allowances so you can pin yourself into it.
+Omdat Bent een blok is, heeft het geen sluitingen. Als je een testbent maakt, wil je 2 voorpanden met naadtoeslag knippen zodat je jezelf erin kunt vastspelden.
 
 </Warning>
 
 <Note>
 
-###### Bent is a block, not a pattern
+###### Bent is een blok, geen patroon
 
-A block is a basic shape on which other patterns are based.
+Een blok is een basisvorm waarop andere patronen zijn gebaseerd.
 Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.
 
 Blokken worden meestal niet gemaakt zoals is, maar dienen als basis voor andere patronen.

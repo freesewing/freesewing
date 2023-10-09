@@ -1,10 +1,10 @@
 ---
-title: "Jaeger jacket: What You Need"
+title: "Chaqueta Jaeger: Lo que necesitas"
 ---
 
-To make Jaeger, you will need the following:
+Para hacer de Jaeger, necesitarás lo siguiente:
 
-- About 2.5 meters (2.8 yards) of a suitable fabric (see [Fabric options](#fabric-options))
+- Unos 2,5 metros (2,8 yardas) de una tela adecuada (consulta [Opciones de tela](#fabric-options))
 - Tejido luminoso, tela de revestimiento de manga diferente opcionalmente
 - Dos botones más grandes para el frontal, y 8 botones para las mangas
 - Un poco de ligero interfaz fusible para la aplicación local
@@ -23,15 +23,15 @@ unlikely to stock all of these things.
 
 Si sabes dónde conseguirlos, genial.
 
-Si sabes dónde conseguirlos, genial. If not, some (quality) suppliers
-sometimes sell a **Jacket trim pack** that includes everything you need.
+Si sabes dónde conseguirlos, genial. Si no es así, algunos proveedores (de calidad)
+venden a veces un **paquete de embellecedores de chaquetas** que incluye todo lo que necesitas.
 
-Below is a list of suppliers we are aware of where you can get this.
-We have no affiliation with these suppliers.
+A continuación encontrarás una lista de los proveedores que conocemos donde puedes conseguirlo.
+No tenemos ninguna relación con estos proveedores.
 
-- [B. Black & Sons](https://www.bblackandsons.com/) is based in the US
-- [Kenton Trimmings](http://kentontrimmings.co.uk/shop/) in based in the UK
+- [B. Black & Sons](https://www.bblackandsons.com/) tiene su sede en EE.UU.
+- [Kenton Trimmings](http://kentontrimmings.co.uk/shop/) tiene su sede en el Reino Unido
 
-If you know of other places that carries this stuff, please let us know.
+Si conoces otros lugares donde se vendan estos productos, por favor, háznoslo saber.
 
 </Note>

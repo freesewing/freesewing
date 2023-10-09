@@ -1,5 +1,5 @@
 ---
-title: "Simon shirt: Cutting Instructions"
+title: "Simon overhemd: Knip instructies"
 ---
 
 - **Buitenstof**
@@ -35,7 +35,7 @@ Als je alles apart uitknipt, onthou dan dat de delen gespiegeld moeten zijn. Dus
 
 ###### Caveats
 
-- The **front right**, **front left**, and **sleeve** have seams that should be made into flat-felled seams. Zodoende hebben deze naden extra naadwaarde. Als je deze stukken uitknipt, moet je deze extra naadwaarde **optellen**.
+- De **rechtervoorkant**, **linkervoorkant** en **mouw** hebben naden waar platte naden van gemaakt moeten worden. Zodoende hebben deze naden extra naadwaarde. Als je deze stukken uitknipt, moet je deze extra naadwaarde **optellen**.
 - De mouwsplitreep en mouwsplitbies hebben geen naadwaarde. Dat is normaal, knip ze gewoon uit zoals ze op je patroon staan.
 - Knip de nepen in het **achterkant** stuk niet uit. Je moet ze markeren, maar niet uitknippen.
 

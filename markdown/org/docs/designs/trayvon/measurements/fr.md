@@ -1,5 +1,5 @@
 ---
-title: "Trayvon tie: Required Measurements"
+title: "Trayvon tie : Mesures requises"
 ---
 
 <PatternMeasurements pattern='trayvon' />

@@ -1,13 +1,13 @@
 ---
-title: "Bee bikini top: Fabric Options"
+title: "Bienen-Bikinioberteil: Stoff Optionen"
 ---
 
-### Main and Lining Fabric
+### Haupt- und Futterstoff
 
-The main and lining fabric are the same type of material. Bee is made with swimwear fabrics such as lycras.
+Der Haupt- und der Futterstoff sind aus demselben Material. Bee wird aus Bademodenstoffen wie Lycras hergestellt.
 
 <Note>
 
-You only need lining fabric if you intend to make the pattern reversible or if you want the band for the cross back tie variant to be a constrasting fabric. Otherwise you can cut all the required pieces from your main fabric.
+Du brauchst nur dann einen Futterstoff, wenn du das Schnittmuster wendbar machen willst oder wenn du das Band für die Kreuzbindervariante aus einem Kontraststoff machen willst. Ansonsten kannst du alle benötigten Teile aus deinem Hauptstoff zuschneiden.
 
 </Note>

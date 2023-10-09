@@ -1,65 +1,65 @@
 ---
-title: "Carlita coat: Cutting Instructions"
+title: "Carlita vacht: Knip instructies"
 ---
 
 <Note>
 
-Certain parts have to be drafted off of the existing parts. How to draft these are provided in the [instructions](/docs/patterns/carlita/instructions).
+Bepaalde onderdelen moeten worden afgeleid van de bestaande onderdelen. Hoe je deze opstelt staat in de [instructions](/docs/patterns/carlita/instructions).
 
 </Note>
 
-### Materials
+### Materialen
 
-- **Main fabric**
-  - Cut **2 Front** parts
-  - Cut **2 Side** parts
-  - Cut **2 Front facing** parts
-  - Cut **2 Back** parts
-  - Cut **2 topsleeve** parts
-  - Cut **2 undersleeve** parts
-  - Cut **2 tail** parts
-  - Cut **4 belt** parts
-  - Cut **2 Collar stand** parts
-  - Cut **2 collar** parts on the fold or Cut the upper collar on the fold and the under collar on the bias
-  - Cut **2 cuffFacing** parts
-  - Cut **2 Pocket** parts
-  - Cut **4 pocketFlap** parts
-  - Cut **2 chestPocketWelt** parts
-  - Cut **2 innerPocketWelt** parts
+- **Buitenstof**
+  - Snijd **2 Onderdelen voor**
+  - Snijd **2 Zijde** delen
+  - Snijd **2 Vooraanzicht** onderdelen
+  - Cut **2 Back** part
+  - Snijd **2 topsleeve** onderdelen
+  - Snijd **2 ondermouw** delen
+  - Snijd **2 staart** delen
+  - Snij **4 riem** onderdelen
+  - Snij **2 Kraagstandaard** onderdelen
+  - Knip **2 kraagdelen** op de vouw of Knip de bovenkraag op de vouw en de onderkraag op de diagonaal.
+  - Snijd **2 manchetKijk op** delen
+  - Snijd **2 Pocket** onderdelen
+  - Snijd **4 pocketFlap** onderdelen
+  - Snijd **2 borstzakVelten** delen
+  - Snijd **2 binnenzakVelten** delen
 
 <Note>
 
-If your main fabric is quite lightweight and flimsy you may need to interface all the parts with a lightweight interfacing.
+Als je hoofdstof heel licht en dun is, moet je misschien alle onderdelen met een lichtgewicht tussenvulling verbinden.
 
 </Note>
 
-- **Lining fabric**
-  - Cut **2 Front lining** parts
-  - Cut **2 Side** parts
-  - Cut **2 Back** parts
-  - Cut **2 topsleeve** parts
-  - Cut **2 undersleeve** parts
-  - Cut **2 tail** parts
-  - Cut **2 innerPocketBag** parts
-  - Cut **1 innerPocketTab** parts
-  - Cut **2 pocketLining** parts
-  - Cut **2 chestPocketBag** parts
-- **Light to Mediumweight Hair Canvas**
-  - Cut **2 Front** parts
-  - Cut **2 Side** parts
-  - Cut **1 Collar stand** parts
-  - Cut **2 collar** parts on the bias and seam together
-  - Cut **2 cuffFacing** parts
-  - Cut **2 pocketFlap** parts
-  - Cut **2 chestPocketWelt** parts
-  - Cut **2 innerPocketWelt** parts
-- **Heavyweight Hair Canvas**
-  - Cut **2 Front shoulder** parts
-  - Cut **2 Side shoulder** parts
-  - Cut **2 Back shoulder** parts
+- **Voering**
+  - Snij **2 Voorvoering** onderdelen
+  - Snijd **2 Zijde** delen
+  - Cut **2 Back** part
+  - Snijd **2 topsleeve** onderdelen
+  - Snijd **2 ondermouw** delen
+  - Snijd **2 staart** delen
+  - Snijd **2 innerPocketBag** delen.
+  - Snijd **1 innerPocketTab** onderdelen.
+  - Snijd **2 pocketLining** onderdelen
+  - Knip **2 chestPocketBag** delen
+- **Licht tot middelzwaar haar Canvas**
+  - Snijd **2 Onderdelen voor**
+  - Snijd **2 Zijde** delen
+  - Snij **1 Kraagstandaard** onderdelen
+  - Knip **2 kraagdelen** schuin af en naai ze aan elkaar.
+  - Snijd **2 manchetKijk op** delen
+  - Snijd **2 pocketFlap** onderdelen
+  - Snijd **2 borstzakVelten** delen
+  - Snijd **2 binnenzakVelten** delen
+- **Zwaargewicht haarcanvas**
+  - Snijd **2 Voorste schouder** delen
+  - Snijd **2 Zijschouder** delen
+  - Snijd **2 Achterschouder** delen
 
 <Note>
 
-The canvas parts need to be cut nett (without seam allowances).
+De canvas delen moeten netto gesneden worden (zonder naadtoeslagen).
 
 </Note>

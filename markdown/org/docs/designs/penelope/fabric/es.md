@@ -1,13 +1,13 @@
 ---
-title: "Penelope pencil skirt: Fabric Options"
+title: "Falda lápiz Penélope: Opciones de tejido"
 ---
 
-### Main Fabric
+### Tela principal
 
-A pencil skirt is a rather formal cut, and most commonly is made in a suiting material. In other words, a **fine wool**. More casual options among **medium weight** fabrics include **cotton** or **denim**.
+Una falda lápiz es un corte más bien formal, y lo más habitual es que esté confeccionada en un material de traje. En otras palabras, una **lana fina**. Otras opciones más informales entre los tejidos de peso medio **** incluyen el algodón **** o el tejido vaquero ****.
 
-Using a fabric with some stretch will make it easier to get a comfortable fit and give you some more room to move about as pencil skirts fit rather tight. **Scuba** is often seen in pencil skirts as it is firm, has body but also stretchs.
+Using a fabric with some stretch will make it easier to get a comfortable fit and give you some more room to move about as pencil skirts fit rather tight. **La escafandra** se ve a menudo en faldas lápiz, ya que es firme, tiene cuerpo pero también se estira.
 
-### Lining Fabric
+### Tela fina
 
-The lining fabric needs to be light, and allow the body to slide over it easily. You also don't want something to thick as this will be constricting. **Silky** fabrics are the go to choice as they are lightweight and slippery.
+El tejido del forro tiene que ser ligero y permitir que el cuerpo se deslice sobre él con facilidad. Tampoco quieres algo demasiado grueso, ya que te oprimirá. **Los tejidos sedosos de** son la mejor elección, ya que son ligeros y resbaladizos.

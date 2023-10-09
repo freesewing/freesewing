@@ -1,11 +1,11 @@
 ---
-title: Included Parts
+title: Enthaltene Teile
 ---
 
-This setting allows you to specify which patterns parts you want to generate.
+Mit dieser Einstellung kannst du festlegen, welche Musterteile du erzeugen möchtest.
 
-This can be useful if you want to only use a specific part. For example perhaps you have a shirt pattern and you only want to generate a different collar style.
+Das kann nützlich sein, wenn du nur ein bestimmtes Teil verwenden willst. Ein Beispiel: Du hast ein Hemdenmuster und möchtest nur einen anderen Kragen Stil erzeugen.
 
-It can also be used to include pattern parts that -- for whatever reason -- are hidden by default.
+Sie kann auch verwendet werden, um Musterteile einzubinden, die - aus welchen Gründen auch immer - standardmäßig ausgeblendet sind .
 
 

@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 export const Algolia = ({ className = 'w-36' }) => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 24" className={className}>
     <g fill="none">

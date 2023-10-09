@@ -1,5 +1,5 @@
 ---
-title: "Head ease"
+title: "Aisance du tour de tête"
 ---
 
 ***

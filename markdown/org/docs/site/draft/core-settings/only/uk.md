@@ -1,11 +1,11 @@
 ---
-title: Included Parts
+title: Деталі, що входять до комплекту
 ---
 
-This setting allows you to specify which patterns parts you want to generate.
+Цей параметр дозволяє вказати, які деталі потрібно згенерувати.
 
-This can be useful if you want to only use a specific part. For example perhaps you have a shirt pattern and you only want to generate a different collar style.
+Це може бути корисно, якщо ви хочете використовувати лише певну частину. Наприклад, можливо, у вас є шаблон сорочки, і ви хочете згенерувати лише інший стиль коміра .
 
-It can also be used to include pattern parts that -- for whatever reason -- are hidden by default.
+Він також може бути використаний для включення частин шаблону, які з якихось причин за замовчуванням приховані .
 
 

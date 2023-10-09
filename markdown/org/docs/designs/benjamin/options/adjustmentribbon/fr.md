@@ -1,5 +1,5 @@
 ---
-title:"Ruban d'ajustement"
+title: "Ruban d'ajustement"
 ---
 
 ![Traditionnel ou ajustable](adjustmentribbon.svg)
@@ -14,4 +14,4 @@ C'est une excellente option si vous décidez de faire un nœud papillon pour que
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](benjamin_adjustmentribbon_sample.svg "Effet de cette option sur le patron")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](benjamin_adjustmentribbon_sample.svg "Effet de cette option sur le motif")

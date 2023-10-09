@@ -1,8 +1,8 @@
 ---
-title: Paperless Patterns
+title: Безпаперові викрійки
 ---
 
-The paperless setting lets you generate a sewing pattern that includes extra dimensions as well as a grid (in either metric or imperial, based on your choice of units).
+Безпаперовий режим дозволяє створювати викрійку, яка містить додаткові розміри, а також сітку (метричну або англійську, залежно від обраних вами одиниць виміру).
 
-This allows you to skip printing the pattern altogether. Instead you can transfer it directly onto the fabric, or an intermediate medium such as pattern paper.
+Це дає змогу взагалі не друкувати шаблон. Замість цього ви можете перенести його безпосередньо на тканину або проміжний носій, наприклад, на папір для викрійок .
 

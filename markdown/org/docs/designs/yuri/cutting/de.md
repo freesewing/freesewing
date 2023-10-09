@@ -1,5 +1,5 @@
 ---
-title: "Yuri hoodie: Cutting Instructions"
+title: "Yuri Hoodie: Schnittanleitung"
 ---
 
 - Schneide **2 Vorderseiten** mit _guten Seiten zusammen_

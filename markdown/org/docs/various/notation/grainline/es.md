@@ -6,7 +6,7 @@ Las grietas, una línea que indica el grano de tela __ — se ven así:
 
 <Legend part="grainline">
 
-A grainline indicator
+Un indicador de la línea de grano
 
 </Legend>
 
@@ -14,6 +14,6 @@ Los indicadores recortados parecen similares, pero apuntan hacia la línea en la
 
 <Legend part="cutonfold">
 
-A cut-on-fold indicator
+Un indicador de corte en pliegue
 
 </Legend>

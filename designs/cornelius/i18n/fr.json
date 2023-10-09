@@ -1,0 +1,53 @@
+{
+  "t": "Culotte de cyclisme Cornelius",
+  "d": "Cornelius est une culotte de cyclisme basé sur la méthode Keystone.",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "frontpoints": "Front points",
+    "legband": "Legband",
+    "legbandKeystone": "Legband Keystone",
+    "pocket": "Pocket",
+    "pocketFacing": "Pocket facing",
+    "waistband": "Waistband",
+    "zipperguard": "Zipperguard"
+  },
+  "s": {
+    "Vent": "Fente",
+    "PocketFacing": "Parement de poche"
+  },
+  "o": {
+    "fullness": {
+      "t": "Ampleur",
+      "d": "Contrôle l'ampleur de la culotte"
+    },
+    "waistbandBelowWaist": {
+      "t": "Abaissement de la ceinture",
+      "d": "Pourcentage pour déplacer la ceinture sous la taille réelle"
+    },
+    "waistReduction": {
+      "t": "Réduction de la taille",
+      "d": "Pourcentage de réduction de la ceinture"
+    },
+    "cuffWidth": {
+      "t": "Largeur du bracelet",
+      "d": "Largeur du bracelet de la jambe"
+    },
+    "cuffStyle": {
+      "t": "Style de poignet",
+      "d": "Style du bracelet de la jambe"
+    },
+    "bandBelowKnee": {
+      "t": "Bracelet sous le genou",
+      "d": "Contrôle la distance du bracelet sous le genou"
+    },
+    "kneeToBelow": {
+      "t": "Longueur de poignet",
+      "d": "Contrôle l'épaisseur du bracelet par rapport au genou"
+    },
+    "ventLength": {
+      "t": "Longueur de la fente",
+      "d": "Contrôle la longueur de la fente entre le genou et le bracelet"
+    }
+  }
+}

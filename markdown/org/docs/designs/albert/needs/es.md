@@ -1,8 +1,8 @@
 ---
-title: "Albert apron: What You Need"
+title: "Delantal Albert: Lo que necesitas"
 ---
 
 Para hacer Albert, necesitarás lo siguiente:
 
 - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
-- About 1.25 meters (1.4 yards) (depending on the length of your apron) of a suitable fabric ([see Fabric options](/docs/patterns/albert/fabric))
+- Aproximadamente 1,25 metros (1,4 yardas) (dependiendo de la longitud de tu delantal) de una tela adecuada ([ver Opciones de tela](/docs/patterns/albert/fabric))

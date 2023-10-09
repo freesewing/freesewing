@@ -1,7 +1,8 @@
 ---
-title: "Holmes deerstalker hat"
+title: "Шапка Холмс"
 ---
 
-<YouTube id='H24VBFMZJF4' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
 
-<PatternDocs pattern='holmes' />
+<DesignInfo design='holmes' docs />
+

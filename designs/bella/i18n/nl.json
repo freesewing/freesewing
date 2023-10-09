@@ -1,0 +1,87 @@
+{
+  "t": "Bella lichaam blok",
+  "d": "Bella is een basisorgaan voor mensen met borsten.",
+  "p": {
+    "back": "Achterzijde",
+    "frontSideDart": "Voorzijde"
+  },
+  "s": {},
+  "o": {
+    "chestEase": {
+      "t": "Overwijdte borst",
+      "d": "Bepaalt de hoeveelheid overwijdte aan het grootste deel van je borst"
+    },
+    "waistEase": {
+      "t": "Overwijdte taille",
+      "d": "Bepaalt de hoeveelheid overwijdte aan je taille"
+    },
+    "bustSpanEase": {
+      "t": "Overwijdte bustenwijdte",
+      "d": "Bepaalt de hoeveelheid (horizontaal) overwijdte die wordt toegevoegd aan uw bustewijdte bij het lokaliseren van het bustepunt."
+    },
+    "shoulderToShoulderEase": {
+      "t": "Shoulder to Shoulder ease",
+      "d": "Controls the amount of ease between your shoulders. Initially set to -.5% because Bella implements a block that is used in the industry."
+    },
+    "fullChestEaseReduction": {
+      "t": "Full chest ease reduction",
+      "d": "Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area"
+    },
+    "backDartHeight": {
+      "t": "Hoogte neep rug",
+      "d": "Bepaalt de hoogte van de achterste neep"
+    },
+    "bustDartLength": {
+      "t": "Lengte busteneep",
+      "d": "Bepaalt de lengte van de buste-neep"
+    },
+    "waistDartLength": {
+      "t": "Lengte neep taille",
+      "d": "Bepaalt de lengte van de neep van de taille"
+    },
+    "bustDartCurve": {
+      "t": "Curve busteneep",
+      "d": "Bepaalt de kromming van de busteneep"
+    },
+    "armholeDepth": {
+      "t": "Diepte armsgat",
+      "d": "Bepaalt de diepte van het armsgat"
+    },
+    "backArmholeSlant": {
+      "t": "Schuin armsgat achter",
+      "d": "Het armsgat rond zijn toonhoogte roteert enigszins"
+    },
+    "frontArmholeCurvature": {
+      "t": "Front armhole curvature",
+      "d": "Controls how deep the armhole is scooped out at the front bottom"
+    },
+    "backArmholeCurvature": {
+      "t": "Kromming armsgat achter",
+      "d": "Bepaalt hoe diep het armsgat aan de achterste onderkant wordt uitgekoopt"
+    },
+    "frontArmholePitchDepth": {
+      "t": "Diepte armsgat vooraan",
+      "d": "Aanpassen van de horizontale plaatsing van het pitch voorste armsgat"
+    },
+    "backArmholePitchDepth": {
+      "t": "Diepte armsgat achteraan",
+      "d": "Aanpassen van de horizontale plaatsing van het armsgat achterin"
+    },
+    "backNeckCutout": {
+      "t": "Hals uitsnijding achteraan",
+      "d": "Bepaalt hoe diep de halsopening aan de achterkant wordt uitgekoopt"
+    },
+    "backHemSlope": {
+      "t": "Lope zoom achter",
+      "d": "Bepaalt de richtingscoëfficiënt van de zoom achteraan"
+    },
+    "frontShoulderWidth": {
+      "t": "Schouderbreedte vooraan",
+      "d": "Bepaalt de smalheid van de schouders vooraan ten opzichte van de achterkant"
+    },
+    "highBustWidth": {
+      "t": "Hoge buste-breedte",
+      "d": "Stelt je in staat om de breedte van de nachtbust vooraan te wijzigen"
+    }
+  }
+}

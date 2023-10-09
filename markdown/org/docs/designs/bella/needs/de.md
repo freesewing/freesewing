@@ -1,13 +1,13 @@
 ---
-title: "Bella body block: What You Need"
+title: "Bella Body Block: Was du brauchst"
 ---
 
 Um Bella zu erstellen, benötigst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- About 0.5 metres (0.6 yards) of a suitable fabric ([see Bella Fabric options](/docs/patterns/bella/fabric/))
+- Etwa 0,5 Meter (0,6 Yards) eines geeigneten Stoffes ([siehe Bella Fabric options](/docs/patterns/bella/fabric/))
 
-Diese Liste ist für einen Bella-Grundschnitt mit Standardeinstellungen. If you have/are making changes to the block you may need to get additional items such as closures, binding etc.
+Diese Liste ist für einen Bella-Grundschnitt mit Standardeinstellungen. Wenn du Änderungen an dem Block vornimmst, musst du eventuell zusätzliche Artikel wie Verschlüsse, Bindungen usw. besorgen.
 
 <Note>
 

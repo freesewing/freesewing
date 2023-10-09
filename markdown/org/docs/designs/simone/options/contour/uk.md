@@ -1,12 +1,12 @@
 ---
-title: "Contour"
+title: "Силует"
 ---
 
-Controls how sharply the extra room for breasts is removed again below the chest.
+Контролює, наскільки різко зайве місце для грудей знову прибирається під грудьми.
 
-- Increase this option to sharpen the curve below the bust darts
-- Decrease this option to loosen the curve below the bust darts
+- Збільште цей параметр, щоб загострити вигин під виточками на грудях
+- Зменшіть цей параметр, щоб послабити вигин під виточками на грудях
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_contour_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simone_contour_sample.svg "Вплив цієї опції на шаблон")

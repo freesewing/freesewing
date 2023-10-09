@@ -1,10 +1,10 @@
 ---
-title: "Side curve"
+title: "Seitliche Kurve"
 ---
 
 ***
 
-Controls the curvature of the side of the bikini cup
+Kontrolliert die Krümmung der Seite des Bikini-Cups
 
 ## Effekt dieser Option auf das Schnittmuster
 

@@ -1,11 +1,11 @@
 ---
-title: Included Parts
+title: Meegeleverde onderdelen
 ---
 
-This setting allows you to specify which patterns parts you want to generate.
+Met deze instelling kun je aangeven welke patroondelen je wilt genereren.
 
-This can be useful if you want to only use a specific part. For example perhaps you have a shirt pattern and you only want to generate a different collar style.
+Dit kan handig zijn als je alleen een specifiek onderdeel wilt gebruiken. Bijvoorbeeld je hebt een patroon voor een overhemd en je wilt alleen een andere stijl voor de kraag genereren .
 
-It can also be used to include pattern parts that -- for whatever reason -- are hidden by default.
+Het kan ook gebruikt worden om patroondelen op te nemen die - om wat voor reden dan ook - standaard verborgen zijn.
 
 

@@ -1,9 +1,9 @@
 ---
-title: "Sleevecap height"
+title: "Armkugel Höhe"
 ---
 
-This factor controls the height of the sleevecap.
+Dieser Faktor steuert die Höhe der Ärmel.
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bent_sleevecapheight_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bent_sleevecapheight_sample.svg "Effekt dieser Option auf das Schnittmuster")

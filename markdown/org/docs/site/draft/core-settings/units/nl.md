@@ -2,7 +2,7 @@
 title: Eenheden
 ---
 
-This controls the units used on your pattern. FreeSewing supports both metric and imperial units.
+Dit bepaalt de eenheden die op je patroon worden gebruikt. FreeSewing ondersteunt zowel metrische als Engelse eenheden.
 
-Note that as a FreeSewing user, you can configure your units in your account, and those are the units that will be used by default.  However, if you want to override those settings on an individual basis -- perhaps you are generating a pattern on behalf of someone else -- this setting allows you to do that.
+Merk op dat je als FreeSewing gebruiker je eenheden kunt configureren in je account, en dat dat de eenheden zijn die standaard worden gebruikt.  Maar als je deze instellingen op individuele basis wilt overschrijven op -- misschien genereer je een patroon namens iemand anders -- dan kun je dat met deze instelling doen.
 

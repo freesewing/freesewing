@@ -1,7 +1,7 @@
 ---
-title: "Separate waist band"
+title: "Aparte tailleband"
 ---
 
-This setting changes the way the waistband is constructed. Normally the waistband is just folded over, like a hem. Turning this option on will generate a separate waistband.
+Deze instelling verandert de manier waarop de tailleband wordt geconstrueerd. Normally the waistband is just folded over, like a hem. Als je deze optie inschakelt, wordt er een aparte tailleband gegenereerd.
 
-Mainly used for hiding the pockets in the waistband seam.
+Voornamelijk gebruikt om de zakken in de naad van de tailleband te verbergen.

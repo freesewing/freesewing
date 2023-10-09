@@ -1,24 +1,23 @@
 import { useContext } from 'react'
+import { NavigationContext } from 'shared/context/navigation-context.mjs'
 import Link from 'next/link'
 import { icons, ns as sectionsNs } from 'shared/components/navigation/primary.mjs'
 import { useTranslation } from 'next-i18next'
 import orderBy from 'lodash.orderby'
 import { colors } from 'shared/components/header.mjs'
-import { NavigationContext } from 'shared/context/navigation-context.mjs'
 
 export const ns = sectionsNs
 
+const onlySections = (tree) => orderBy(tree, ['t'], ['asc']).filter((entry) => entry.m)
+
 export const SectionsMenu = ({ bOnly = false }) => {
   const { t } = useTranslation(ns)
-  const { sections = false } = useContext(NavigationContext)
-  if (!sections) return null
+  const { siteNav } = useContext(NavigationContext)
 
-  // Ensure each page as an `o` key so we can put them in order
-  const sortableSections = sections.map((s) => ({ ...s, o: s.o ? s.o : s.t }))
   const output = []
   let i = 1
   const sharedClasses = 'p-0 rounded shadow hover:shadow-lg w-full text-neutral-900'
-  for (const page of orderBy(sortableSections, ['o', 't'])) {
+  for (const page of onlySections(siteNav)) {
     if ((!bOnly && !page.h && !page.b) || (!page.h && bOnly && page.b)) {
       if (page.t !== 'spacer') {
         const item = (

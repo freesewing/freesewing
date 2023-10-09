@@ -18,11 +18,11 @@ describe('Bartack plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const design = new Design({ parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
-
-    const c = pattern.parts[0].test.paths.bartack
+    const c = pattern.parts[0].test.paths.__macro_bartack_bartack_stitches
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(10)
@@ -53,10 +53,11 @@ describe('Bartack plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const design = new Design({ parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts[0].test.paths.bartack
+    const c = pattern.parts[0].test.paths.__macro_bartackalong_bartack_stitches
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(8.5)
@@ -89,10 +90,11 @@ describe('Bartack plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const design = new Design({ parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts[0].test.paths.bartack
+    const c = pattern.parts[0].test.paths.__macro_bartackalong_bartack_stitches
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(round(c.ops[0].to.x)).to.equal(8.5)
@@ -125,10 +127,11 @@ describe('Bartack plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const design = new Design({ parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts[0].test.paths.bartack
+    const c = pattern.parts[0].test.paths.__macro_bartackfractionalong_bartack_stitches
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(round(c.ops[0].to.x)).to.equal(8.5)
@@ -159,10 +162,11 @@ describe('Bartack plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const design = new Design({ parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts[0].test.paths.bartack
+    const c = pattern.parts[0].test.paths.__macro_bartack_bartack_stitches
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(10)
@@ -193,10 +197,11 @@ describe('Bartack plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const design = new Design({ parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts[0].test.paths.bartack
+    const c = pattern.parts[0].test.paths.__macro_bartack_bartack_stitches
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[0].to.x).to.equal(10)
@@ -227,10 +232,11 @@ describe('Bartack plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const design = new Design({ parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts[0].test.paths.bartack
+    const c = pattern.parts[0].test.paths.__macro_bartack_bartack_stitches
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
     expect(c.ops[0].type).to.equal('move')
     expect(round(c.ops[0].to.x)).to.equal(11.06)
@@ -254,17 +260,18 @@ describe('Bartack plugin Tests', () => {
         points.from = new Point(10, 20)
         macro('bartack', {
           anchor: points.from,
-          suffix: 'foo',
+          id: 'foo',
         })
 
         part
       },
       plugins: [annotationsPlugin],
     }
-    const design = new Design({ parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts[0].test.paths.bartackfoo
+    const c = pattern.parts[0].test.paths.__macro_bartack_foo_stitches
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
   })
 
@@ -275,17 +282,18 @@ describe('Bartack plugin Tests', () => {
         points.from = new Point(10, 20)
         macro('bartack', {
           anchor: points.from,
-          prefix: 'foo',
+          id: 'foo',
         })
 
         return part
       },
       plugins: [annotationsPlugin],
     }
-    const design = new Design({ parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const design = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new design()
     pattern.draft()
-    const c = pattern.parts[0].test.paths.foobartack
+    const c = pattern.parts[0].test.paths.__macro_bartack_foo_stitches
     expect(c.attributes.get('class')).to.equal('stroke-sm stroke-mark')
   })
 })

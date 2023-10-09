@@ -5,8 +5,8 @@ import { useTranslation } from 'next-i18next'
 // Components
 import Head from 'next/head'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { Popout, ns as popoutNs } from 'shared/components/popout.mjs'
-import { WebLink } from 'shared/components/web-link.mjs'
+import { Popout, ns as popoutNs } from 'shared/components/popout/index.mjs'
+import { WebLink } from 'shared/components/link.mjs'
 
 const ns = ['lab', ...pageNs, ...popoutNs]
 /*
@@ -24,7 +24,6 @@ const HomePage = ({ page }) => {
         <title>{t('lab:welcome')}</title>
       </Head>
       <div>
-        <h1>{t('lab:welcome')}</h1>
         <div className="max-w-prose">
           <p>{t('lab:about')}</p>
           <Popout link compact>

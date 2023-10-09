@@ -10,62 +10,62 @@ Cuando estés usando tela algo elástica, es una buena idea estabilizar las cost
 
 ## Paso 1: Parte superior del cuerpo
 
-- Cut pieces of black fabric the size of the eyes on the body pieces.
+- Corta trozos de tela negra del tamaño de los ojos de las piezas del cuerpo.
 - Con *los lados buenos juntos* cose las piezas de la cola a las del cuerpo, haciendo coincidir las marcas.
-- With white thread, either by hand or machine _bar tack_ the pupils onto the eyes like eyelets.
+- Con las _lados buenos juntos_ une las piezas de la aleta superior a las del cuerpo.
 
 <Tip>
 
-If stitching the pupil by machine you may find it easier to use either the eyelet function or a buttonholer that does eyelets if one of those are available to you. If not you may find it best to hand stitch the pupil for better control and neatness.
+Si coses la pupila a máquina, puede que te resulte más fácil utilizar la función de ojales o una ojaladora que haga ojales, si dispones de alguna de ellas. Si no, puede que te resulte mejor coser a mano la pupila para tener un mejor control y pulcritud.
 
 </Tip>
 
-- With orange thread, _bar tack_ around the edge of the eyes.
-- If the fabric you are using frays, fray check the edges.
+- Con los _lados buenos juntos_, cose las dos piezas que van sobre la boca juntas sobre el lado recto más largo.
+- Si la tela que utilizas se deshilacha, comprueba los bordes.
 
 <Note>
 
-The colour choices are up to you, but these are the recommended colours.
+La elección de los colores depende de ti, pero éstos son los recomendados.
 
-If you wish to make an embroidered eye we recommended to make it an embroidery patch rather than embroidering directly on the fabric itself as screwing up will not result in a larger quantity of fabric being wasted.
+Si deseas hacer un ojo bordado, te recomendamos que lo hagas en forma de parche bordado en lugar de bordar directamente sobre la propia tela, ya que si te equivocas no desperdiciarás una mayor cantidad de tela.
 
 </Note>
 
 ## Paso 2: La barriga
 
-- Using topstiching thread (thick thread), go back and forth several times along the gill lines of the body pieces.
-- _Edgestitch_ the eyes to the body pieces, matching the thread colour of the outer bar tacks.
-- Sew the darts on the front of both body pieces closed. Corta el cualquier exceso de tela que quede.
-- With _good sides together_ sew the tail pieces to the body pieces, matching notches.
-- With _good sides together_ sew the topFin pieces to the body pieces.
+- Con hilo de coser (hilo grueso), recorre varias veces las líneas de las branquias de las piezas del cuerpo.
+- _Puntada de borde_ los ojos a las piezas del cuerpo, haciendo coincidir el color del hilo de las tachuelas de las barras exteriores.
+- Cose las pinzas de la parte delantera de las dos piezas del cuerpo para cerrarlas. Corta el cualquier exceso de tela que quede.
+- Con _los lados bien juntos_ cose las piezas de la cola a las piezas del cuerpo, haciendo coincidir las muescas.
+- Con _los lados bien juntos_ cose las piezas de la aleta superior a las piezas del cuerpo.
 
 <Tip>
 
-It's worth double-checking that you are using the proper fin pieces, as Hi's pectoral (or side) fins have a similar topFin and bottomFin piece. The topFin should have a slightly convex curve along the edge where it meets the body, while the bottomFin is slightly concave. (The dorsal fin, or the fin along the shark's back that sticks out of the water when swimming, is incorporated into the body pieces, so you will create that in the next step.)
+Merece la pena que compruebes que utilizas las piezas de aleta adecuadas, ya que las aletas pectorales (o laterales) de Hi tienen una pieza de aleta superior y otra de aleta inferior similares. La aleta superior debe tener una curva ligeramente convexa a lo largo del borde donde se une con el cuerpo, mientras que la aleta inferior es ligeramente cóncava. (La aleta dorsal, o la aleta a lo largo de la espalda del tiburón que sobresale del agua al nadar, se incorpora a las piezas del cuerpo, así que la crearás en el siguiente paso).
 
 </Tip>
 
-- With _good sides together_ sew the body pieces together along the front, top, around the tail and below the tail, leaving a gap open below the tail for turning and stuffing the shark later.
+- Con _los lados bien juntos_ cose las piezas del cuerpo a lo largo de la parte delantera, superior, alrededor de la cola y debajo de la cola, dejando un hueco abierto debajo de la cola para girar y rellenar el tiburón más tarde.
 
 ## Step 3: Final Assembly
 
-- With _good sides together_ sew the two aboveMouth pieces together along the larger straight edge.
+- Con los _lados buenos juntos_, cose las dos piezas que van sobre la boca juntas sobre el lado recto más largo.
 - Cose las piezas de los dientes a la boca, de forma que coincidan las marcas del patrón, y asegurándote de que los dientes apuntan hacia el centro de la boca. Estas piezas se tratarán como una a partir de ahora.
 - Cose las pinzas en la barriga, corta cualquier exceso de tela resultante.
-- With _good sides together_ sew the aboveMouth pieces to the mouth, matching notches, being careful not to catch the teeth in the seam allowances.
-- With _good sides together_ sew the joined mouth and aboveMouth to the belly piece, matching notches.
-- With _good sides together_ sew the bottomFin pieces to the belly, matching notches.
+- Con los _lados buenos juntos_ cose las piezas superiores de la boca a la boca, haciendo coincidir las marcas, y con cuidado de no coser sobre los dientes en los márgenes de la costura.
+- Con _buenos lados juntos_ coser la boca ya formada y la parte superior de la boca a la pieza de la barriga, haciendo coincidir las marcas.
+- Con _los lados buenos juntos_ cose las piezas de las aletas inferiores a la barriga, haciendo coincidir las marcas.
 
 ## Step 4: Stuffing
 
-- With _good sides together_ sew the belly to the body, matching the front, back, and fins.
+- Con los _lados buenos juntos_ coser la barriga al cuerpo, haciendo coincidir la parte frontal, la trasera y las aletas.
 - Dale la vuelta al proyecto a través del agujero que hemos dejado en la cola anteriormente.
 
 ## Step 5: Enjoy!
 
 - Rellena el peluche con material de relleno a través de la apertura que has dejado en la cola, asegurándote que rellenas bien la cola y las aletas antes de añadir demasiado relleno en la parte del cuerpo.
-- _Slipsticth_ or _whipstitch_ the opening closed.
+- Usa _punto escondido_ o _sobrehilado_ para cerrar la apertura.
 
-## Step 6: Enjoy!
+## Paso 6: ¡Disfrútalo!
 
 ¡Eso es todo! ¡Ahora puedes irte de aventuras por los océanos con tu nuevo Hi!

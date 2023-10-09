@@ -1,11 +1,11 @@
 ---
-title: "Shin swim trunks: What You Need"
+title: "Shin zwembroek: Wat je nodig hebt"
 ---
 
-To make Shin, you will need the following:
+Om Shin te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- About 0.75 meters (0.8 yards) of a suitable fabric ([see Fabric options](/docs/patterns/shin/fabric))
+- Ongeveer 0,75 meter van een geschikte stof ([zie Stofopties](/docs/patterns/shin/fabric))
 - Twee vetergaatjes en een koordje
 
 > ## Een overlockmachine is handig, maar optioneel

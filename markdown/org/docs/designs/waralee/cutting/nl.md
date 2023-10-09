@@ -1,32 +1,32 @@
 ---
-title: "Waralee wrap pants: Cutting Instructions"
+title: "Waralee wikkelbroek: Knip instructies"
 ---
 
 <Note>
 
-Waralee consists of two mirrored pieces of fabric.
-They are basically big rectangles with pieces missing.
-As such, it is easier to print out the part you need to cut out and measure the rest,
-than it is to print out everything and cut the pattern the traditional way.
+Waralee bestaat uit twee gespiegelde stukken stof.
+Het zijn in feite grote rechthoeken waar stukken ontbreken.
+Zo is het gemakkelijker om het deel dat je moet uitsnijden te printen en de rest op te meten,
+dan om alles te printen en het patroon op de traditionele manier uit te snijden.
 
-That said, the pattern is available both ways. So you can print out the whole thing, tape all the pages together, and use that to cut out the fabric, if you prefer. But we recommend only printing the part that you need to cut out.
+Dat gezegd hebbende, het patroon is in beide richtingen verkrijgbaar. Je kunt dus alles uitprinten, alle pagina's aan elkaar plakken en dat gebruiken om de stof uit te knippen, als je dat liever doet. Maar we raden aan om alleen het deel af te drukken dat je moet uitsnijden.
 
-You will need to print out the pockets and pocket facings in the traditional way.
+Je moet de zakken en zakomslagen op de traditionele manier uitprinten.
 
 </Note>
 
-### Materials
+### Materialen
 
-- **Main fabric**
-  - Cut **2 pants** parts.
-  - (Optional) Cut **2 Pocket** parts on the fold.
-  - Cut **4 backPocket** parts
-  - Cut **4 frontFacing** parts
-  - Cut **4 backFacing** parts
+- **Buitenstof**
+  - Snijd **2 broek** delen.
+  - (Optioneel) Knip **2 Pocket** delen op de vouw uit.
+  - Snijd **4 backPocket** onderdelen
+  - Snijd **4 voorwaarts gerichte** delen.
+  - Snijd **4 backFacing** delen.
 
 <Note>
 
-You can cut the Pocket and backPocket parts out of a lining fabric if you prefer but this will only be needed if you deviate from the recommended main fabrics.
+Je kunt de delen voor de zakken en de achterzak desgewenst uit een voeringstof knippen, maar dat is alleen nodig als je afwijkt van de aanbevolen hoofdstoffen.
 
 </Note>
 
@@ -35,11 +35,11 @@ You can cut the Pocket and backPocket parts out of a lining fabric if you prefer
 Sla een boom op.
 Aangezien dit slechts een paar rechthoeken is (met een schuine kant), kun je gewoon een liniaal gebruiken om het hoofddeel uit te knippen. Dan gebruik je deel 2 om het kruisje te knippen. Sla een boom op.
 
-Part 2 has a negative seam allowance, since you'll be using it opposite of what you normally use the pattern parts for.
+Deel 2 heeft een negatieve naadtoeslag, omdat je het tegenovergesteld gebruikt van waar je normaal de patroondelen voor gebruikt.
 
-If you opt for the cut-out method, use the paperless view to see all the dimensions of the pattern.
-You will need to cut a narrow strip out from what will become the front, and a small triangle and strip from what will become the back.
-And in the middle between these will be the little cut-out pattern piece.
-Make sure you measure this correctly, and you have the fabric squared before you start cutting.
+Als je kiest voor de uitsnijdingsmethode, gebruik dan de papierloze weergave om alle afmetingen van het patroon te zien.
+Je moet een smalle strook uitknippen uit wat het voorpand zal worden, en een kleine driehoek en streep van wat de rug zal worden.
+En in het midden hiertussen zal het kleine uitgeknipte patroonstuk zijn.
+Zorg ervoor dat je dit goed meet en je hebt de stof gekruist voordat je begint te knippen.
 
 </Tip>

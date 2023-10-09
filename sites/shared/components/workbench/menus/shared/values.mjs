@@ -1,4 +1,6 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { formatMm } from 'shared/utils.mjs'
+import { BoolYesIcon, BoolNoIcon } from 'shared/components/icons.mjs'
 
 /*********************************************************************************************************
  * This file contains the base components to be used for displaying values in menu titles in the workbench
@@ -7,7 +9,7 @@ import { formatMm } from 'shared/utils.mjs'
 
 /** The basis of it all. Handles the changed/unchanged styling for the wrapped value */
 export const HighlightedValue = ({ changed, children }) => (
-  <span className={changed ? 'text-info' : ''}> {children} </span>
+  <span className={changed ? 'text-accent' : ''}> {children} </span>
 )
 
 /**
@@ -38,10 +40,10 @@ export const ListValue = ({ current, t, config, changed }) => {
   // if not, is the value a string
   else if (typeof val === 'string') key = val
   // otherwise stringify booleans
-  else if (val) key = 'yes'
-  else key = 'no'
+  else if (val) key = <BoolYesIcon />
+  else key = <BoolNoIcon />
 
-  const translated = config.doNotTranslate ? key : t(key)
+  const translated = config.doNotTranslate || typeof key !== 'string' ? key : t(key)
 
   return <HighlightedValue changed={changed}>{translated}</HighlightedValue>
 }

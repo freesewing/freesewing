@@ -1,10 +1,10 @@
 ---
-title: "Ear flap length"
+title: "Longueur du rabat de l'oreille"
 ---
 
 ***
 
-Controls the length of the ear flaps independently from the crown pieces
+Contrôle la longueur des rabats de l'oreille indépendamment des autres pièces de contour
 
 ## Effet de cette option sur le motif
 

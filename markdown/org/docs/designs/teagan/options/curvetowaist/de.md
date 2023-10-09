@@ -1,8 +1,8 @@
 ---
-title: "Curve to waist"
+title: "Kurve zur Taille"
 ---
 
-Choose this option to draft Teagan to curve towards your waist before curving towards the hips.
+Wähle diese Option, damit sich Teagan zunächst in Richtung Taille und dann in Richtung Hüfte wölbt.
 
 Wenn das Taillenmass (plus Bequemlichkeitszugabe) kleiner ist als das Hüftmass (plus Zugabe) erzeugt das eine Sanduhrform, wie bei figurbetonten (fitted)- oder Damen- T-shirts üblich. (Im Gegensatz zu gerade geschnitten oder unisex).
 
@@ -10,6 +10,6 @@ Wenn das Taillenmass (plus Bequemlichkeitszugabe) kleiner ist als das Hüftmass 
 Diese Option kann auch verwendet werden, wenn die Taillenmessung die Hüftmessung überschreitet. Dies führt jedoch zu einer nicht standardmäßigen T-Shirt-Form, die möglicherweise nicht angezogen werden kann.
 </Note>
 
-## Effekt dieser Variable auf das Schnittmuster
+## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Variable, indem es unterschiedliche Masse dieser Variable überlagert darstellt](teagan_curvetowaist_sample.svg "Effekt dieser Variable auf das Schnittmuster")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](teagan_curvetowaist_sample.svg "Effekt dieser Option auf das Schnittmuster")

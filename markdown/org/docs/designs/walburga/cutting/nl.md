@@ -1,24 +1,24 @@
 ---
-title: "Walburga Wappenrock: Cutting Instructions"
+title: "Walburga Wappenrock: Snij-instructies"
 ---
 
-Walburga consists of two parts, a _front_ and a _back_ piece.
+Walburga bestaat uit twee delen, een _voorstuk_ en een _achterstuk_ .
 
 <Tip>
 
-Apart from the cutout for the neck opening, front and back are identical. It is therefore enough to print only the front part.
+Afgezien van de uitsparing voor de halsopening zijn de voor- en achterkant identiek. Het is daarom voldoende om alleen het voorste deel te printen.
 
 </Tip>
 
-- cut _1 front_, _on the fold_
-- cut _1 back_, _on the fold_
+- knip _1 voorkant_, _op de vouw_
+- knip _1 terug_, _op de vouw_
 
-### On Historical Accuracy
+### Over historische nauwkeurigheid
 
-The further we go back in time, the less extant garments we have to base research on. Often there may be scraps of fabric left behind by stroke of luck but most of our information starts to come from (in archaeology) secondary sources like written texts from contemporaries.
+Hoe verder we teruggaan in de tijd, hoe minder overgebleven kledingstukken we hebben om onderzoek op te baseren. Vaak zijn er toevallig restjes stof achtergebleven, maar de meeste informatie komt (in de archeologie) van secundaire bronnen zoals geschreven teksten van tijdgenoten.
 
-This is especially true for the Roman and Mediaeval eras, not to mention that a lot of the available research is behind a paywall.
+Dit geldt vooral voor de Romeinse tijd en de Middeleeuwen, om nog maar te zwijgen over het feit dat veel van het beschikbare onderzoek achter een betaalmuur zit.
 
-We can’t be 100 percent historically accurate, because we’re living in a different time, and everything we use to sew is different now from before. Even fabric is woven in a different way.
+We kunnen niet 100 procent historisch accuraat zijn, want we leven in een andere tijd en alles wat we gebruiken om te naaien is nu anders dan vroeger. Zelfs stof wordt op een andere manier geweven.
 
-How ‘accurate’ you want to be is up to you, there is no wrong way to do this and research is not required -- though it can be fun!
+Hoe 'nauwkeurig' je wilt zijn is aan jou, er is geen verkeerde manier om dit te doen en onderzoek is niet nodig -- hoewel het wel leuk kan zijn!

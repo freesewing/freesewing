@@ -1,5 +1,5 @@
 ---
-title: "Simon shirt: Cutting Instructions"
+title: "Simon shirt : Instructions de coupe"
 ---
 
 - **Tissu principal**
@@ -35,7 +35,7 @@ Lorsque vous les coupez individuellement, rappelez-vous qu'elles doivent être l
 
 ###### Caveats
 
-- The **front right**, **front left**, and **sleeve** have seams that should be made into flat-felled seams. C'est pourquoi une marge de couture supllémentaire est prévue sur ces coutures. Lorsque vous découpez ces pièces, vous **devez** inclure cette marge de couture supplémentaire.
+- Les **front right**, **front left**, et **sleeve** ont des coutures qui doivent être faites à plat. C'est pourquoi une marge de couture supllémentaire est prévue sur ces coutures. Lorsque vous découpez ces pièces, vous **devez** inclure cette marge de couture supplémentaire.
 - La sous-patte et la patte de boutonnage poignet n'ont pas de marge de couture. C'est normal, il suffit de les couper telles qu'elles sont dessinées sur le patron.
 - Ne coupez pas les pinces **dos**. Marquez les, mais ne les coupez pas.
 

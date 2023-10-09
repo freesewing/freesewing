@@ -1,11 +1,11 @@
 ---
-title: "Shoulder to Shoulder ease (Bella)"
+title: "Легкість від плеча до плеча (Bella)"
 ---
 
 ***
 
-Controls the shoulder to shoulder ease in the underlying Bella block Bee is based on.
+Контролює легкість плечей у базовому блоці Bella, на якому базується модель Bee.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_shouldertoshoulderease_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bee_shouldertoshoulderease_sample.svg "Вплив цієї опції на шаблон")

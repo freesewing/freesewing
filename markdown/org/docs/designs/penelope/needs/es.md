@@ -1,12 +1,12 @@
 ---
-title: "Penelope pencil skirt: What You Need"
+title: "Falda lápiz Penélope: Lo que necesitas"
 ---
 
-To make Penelope, you will need the following:
+Para hacer Penelope, necesitarás lo siguiente:
 
 - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
-- About 1 meter (1.1 yards) of a suitable main fabric ([see Penelope Fabric options](/docs/patterns/penelope/fabric))
-- An invisible or regular closed end zipper
-- Some interfacing for the waistband (if using) and maybe for the vent and hem
-- Some sort of closure for the waistband (if using)
-- (Optional) About 1 meter (1.1 yards) of suitable lining fabric ([see Penelope Fabric options](/docs/patterns/penelope/fabric))
+- Aproximadamente 1 metro (1,1 yardas) de una tela principal adecuada ([consulta las opciones de tela de Penélope](/docs/patterns/penelope/fabric))
+- Una cremallera cerrada invisible o normal
+- Un poco de entretela para la cintura (si se utiliza) y tal vez para la ventilación y el dobladillo
+- Algún tipo de cierre para la cintura (si se utiliza)
+- (Opcional) Aproximadamente 1 metro (1,1 yardas) de tela de forro adecuada ([consulta las opciones de tela Penelope](/docs/patterns/penelope/fabric))

@@ -1,12 +1,12 @@
 ---
-title: "Paco pants: Cutting Instructions"
+title: "Paco broek: Knip instructies"
 ---
 
 <Tip>
 
-###### Cut out only what you need
+###### Knip alleen wat je nodig hebt
 
-Depending on the choices you made in your pattern, you may not need all parts.
+Afhankelijk van de keuzes die je hebt gemaakt in je patroon, heb je mogelijk niet alle onderdelen nodig.
 Als een patroondeel niet is afgedrukt, betekent dit dat je het niet nodig hebt.
 
 </Tip>
@@ -14,7 +14,7 @@ Als een patroondeel niet is afgedrukt, betekent dit dat je het niet nodig hebt.
 - Uit je buitenstof:
   - 2x **deel 1**: Dit is het achterpand. Knip deze uit je **buitenstof** met _goede kanten op elkaar_
   - 2x **deel 2**: Dit is het voorpand. Knip deze uit je **buitenstof** met _goede kanten op elkaar_
-  - 2x **deel 3**: Dit is de tailleband. Knip dit uit je **buitenstof**
+  - Knip 2 van deze uit je **voeringsstof** _aan de stofvouw_ Knip dit uit je **buitenstof**
   - 2x **deel 4**: Dit is de enkelboord. Knip deze, van je **hoofdstof** met _goede kanten op elkaar_ (niet nodig als je koos om geen elastische zoom te hebben)
   - 2x **deel 7**: Dit is de paspel voor de achterzak. Knip 2 van deze uit je **buitenstof** met _goede kanten op elkaar_
 - Uit je voeringsstof:
@@ -29,6 +29,5 @@ Als een patroondeel niet is afgedrukt, betekent dit dat je het niet nodig hebt.
 
 - There is no seam allowance on the interfacing
 - There is extra seam allowance on the waist band and hem
-- The waistband is a mere rectangle, so it's not fully printed to save paper
 
 </Warning>

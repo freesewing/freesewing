@@ -1,13 +1,13 @@
 ---
-title: "Bob the Bib: Cutting Instructions"
+title: "Bob das Lätzchen: Anleitung zum Ausschneiden"
 ---
 
-- Cut **1 bib**
+- Schnitt **1 Lätzchen**
 
 <Warning>
 
 #### Caveats
 
-- There is no seam allowance on the bib, it will be finished with bias tape
+- Das Lätzchen hat keine Nahtzugabe, es wird mit Schrägband verarbeitet.
 
 </Warning>

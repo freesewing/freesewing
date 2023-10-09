@@ -1,4 +1,4 @@
-import { back } from '@freesewing/brian'
+import { back } from './back.mjs'
 import { sleevePlacketLength } from './options.mjs'
 
 function simonSleevePlacketUnderlap({
@@ -11,7 +11,6 @@ function simonSleevePlacketUnderlap({
   Snippet,
   snippets,
   complete,
-  paperless,
   macro,
   options,
   store,
@@ -39,66 +38,71 @@ function simonSleevePlacketUnderlap({
     .close()
     .attr('class', 'fabric')
 
-  paths.folds = new Path()
-    .move(points.fold1Left)
-    .line(points.fold1Right)
-    .move(points.fold2Left)
-    .line(points.fold2Right)
-    .move(points.midLeft)
-    .line(points.midRight)
-    .attr('class', 'help')
+  if (complete)
+    paths.folds = new Path()
+      .move(points.fold1Left)
+      .line(points.fold1Right)
+      .move(points.fold2Left)
+      .line(points.fold2Right)
+      .move(points.midLeft)
+      .line(points.midRight)
+      .attr('class', 'help')
 
-  // Complete pattern?
-  if (complete) {
-    // Title
-    points.title = new Point(length / 4, 0)
-    macro('title', {
-      at: points.title,
-      nr: 9,
-      title: 'sleevePlacketUnderlap',
-      scale: 0.6,
-      append: true,
-    })
+  if (sa)
+    paths.sa = new Path()
+      .move(points.bottomLeft)
+      .line(points.bottomLeft.shift(180, sa))
+      .line(points.topLeft.shift(180, sa))
+      .line(points.topLeft)
+      .addClass('fabric sa')
 
-    // Button
-    points.button = new Point(length / 2, width / 2)
-    snippets.button = new Snippet('button', points.button)
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
 
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.bottomLeft)
-        .line(points.bottomLeft.shift(180, sa))
-        .line(points.topLeft.shift(180, sa))
-        .line(points.topLeft)
-        .attr('class', 'fabric sa')
-    }
-  }
+  // Title
+  points.title = new Point(length / 8, 0)
+  macro('title', {
+    at: points.title,
+    nr: 9,
+    title: 'sleevePlacketUnderlap',
+    scale: 0.5,
+    append: true,
+  })
 
-  // Paperless?
-  if (paperless) {
-    macro('vd', {
-      from: points.fold2Right,
-      to: points.fold1Right,
-      x: points.topRight.x + 15,
-    })
-    macro('vd', {
-      from: points.bottomRight,
-      to: points.topRight,
-      x: points.topRight.x + 30,
-    })
-    if (complete) {
-      macro('hd', {
-        from: points.bottomLeft,
-        to: points.button,
-        y: points.bottomRight.y + 15,
-      })
-    }
+  // Button
+  points.button = new Point(length / 2, width / 2)
+  snippets.button = new Snippet('button', points.button)
+
+  // Dimensions
+  macro('vd', {
+    id: 'wBetweenFolds',
+    from: points.fold2Right,
+    to: points.fold1Right,
+    x: points.topRight.x + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottomRight,
+    to: points.topRight,
+    x: points.topRight.x + 30,
+  })
+  if (complete)
     macro('hd', {
+      id: 'wToButton',
       from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomRight.y + 30,
+      to: points.button,
+      y: points.bottomRight.y + 15,
     })
-  }
+
+  macro('hd', {
+    id: 'wFull',
+    from: points.bottomLeft,
+    to: points.bottomRight,
+    y: points.bottomRight.y + 30,
+  })
 
   return part
 }

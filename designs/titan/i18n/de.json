@@ -1,0 +1,71 @@
+{
+  "t": "Titan, ein Hosen-Grundschnitt",
+  "d": "Titan ist ein Grundschnitt für Hosen ohne Abnäher.",
+  "p": {
+    "back": "Rückseite",
+    "front": "Vorderseite"
+  },
+  "s": {},
+  "o": {
+    "kneeEase": {
+      "t": "Knie-Zugabe",
+      "d": "Kontrolliert die Zugabe am Knie"
+    },
+    "waistHeight": {
+      "t": "Taillenhöhe",
+      "d": "Steuert die Höhe des Taillenbundes, 100% = Taillenhöhe, 0% = Hüfthöhe"
+    },
+    "lengthBonus": {
+      "t": "Längenzugabe",
+      "d": "Steuert die Länge der Hose"
+    },
+    "crotchDrop": {
+      "t": "Schritt-Tiefe",
+      "d": "Senkt die Schrittiefe für mehr Tragekomfort"
+    },
+    "fitKnee": {
+      "t": "Am Knie anliegend",
+      "d": "Legt die Bein-Passform auf Grundlage des Knieumfangst statt des Gesäßumfangs fest"
+    },
+    "legBalance": {
+      "t": "Bein-Balance",
+      "d": "Steuert das Verhältnis zwischen Vorder- und Hinterteil des Beins"
+    },
+    "crossSeamCurveStart": {
+      "t": "Start der Quernahtkurve",
+      "d": "Bestimmt, wie weit wir in die Quernaht hineinspringen und kurven"
+    },
+    "crossSeamCurveBend": {
+      "t": "Quernaht Kurve",
+      "d": "Steuert die Krümmung der Kreuznaht"
+    },
+    "crossSeamCurveAngle": {
+      "t": "Quernaht Winkel",
+      "d": "Steuert den Winkel der Quernaht"
+    },
+    "crotchSeamCurveStart": {
+      "t": "Beginn der Schrittnahtkurve",
+      "d": "Legt fest, wie weit wir in die Schrittnaht hineinfahren"
+    },
+    "crotchSeamCurveBend": {
+      "t": "Crotch Naht Biegen",
+      "d": "Steuert die Krümmung der Schrittnaht"
+    },
+    "crotchSeamCurveAngle": {
+      "t": "Schneckennaht Winkel",
+      "d": "Steuert den Winkel der Schrittnaht"
+    },
+    "waistBalance": {
+      "t": "Taillenbilanz",
+      "d": "Steuert die horizontale Position der Taille relativ zum Sitz"
+    },
+    "waistbandWidth": {
+      "t": "Taillenbundweite",
+      "d": "Die Breite des Taillenbundes"
+    },
+    "grainlinePosition": {
+      "t": "Position Fadenlauf",
+      "d": "Steuert die horizontale Position des Beins relativ zum Sitz"
+    }
+  }
+}

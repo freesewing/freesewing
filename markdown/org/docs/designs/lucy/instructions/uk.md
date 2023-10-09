@@ -1,49 +1,49 @@
 ---
-title: "Lucy tie-on pocket: Sewing Instructions"
+title: "Кишеня на зав'язці Люсі: Інструкція з пошиття"
 ---
 
 <Note>
 
-Lucy can be sewn by hand or by machine as you prefer. When sewing by hand, you can use a running stitch to sew the pocket pieces together and bind with a whipstitch. 
+Люсі можна зшити вручну або на машині, як вам більше подобається. При ручному шитті ви можете використовувати потайну строчку, щоб зшити деталі кишені разом і з'єднати їх за допомогою шва "хлистик". 
 
 </Note>
 
-## Step 1: Constructing the Pocket
+## Крок 1: Створення кишені
 
-- Bind the pocket slit.
-- With _wrong sides together_ stitch the two pocket pieces together around the outside.
-- Bind the outside edge.
+- Зв'яжіть проріз кишені.
+- Виворітними боками _разом_ зшийте обидві деталі кишені по зовнішньому боці.
+- Скріпіть зовнішній край.
 
 <Note>
 
-If you prefer you can _french seam_ the outer edges of the pocket bag together.
+За бажанням ви можете зшити зовнішні краї кишенькової сумки "французьким швом".
 
 </Note>
 
-## Step 2: Binding the top edge and ties.
+## Крок 2: Обв'язуємо верхній край і зав'язуємо.
 
-There are two methods for binding the top edge. One leaves the side edges of the top binding open so the ties can be threaded through. The second uses the tape for the ties to bind the top edge. Read through both methods carefully and decide which one you wish to use.
+Існує два способи зв'язування верхнього краю. Бічні краї верхньої палітурки залишаються відкритими, щоб через них можна було протягнути зав'язки. Другий використовує стрічку для зав'язок, щоб зв'язати верхній край. Уважно ознайомтеся з обома методами і вирішіть, який з них ви хочете використовувати.
 
-### Using binding
+### Використання прив'язки
 
-- Cut a piece of binding the length of the top edge + seam allowance.
-- Fold under the short edges of the binging and stitch in place.
-- Bind the top edge of the pocket bag with the prepared binding making sure that the folded ends are left open.
-- Thread a tie through the binding.
-- Finish the tie ends.
+- Відріжте шматок палітурки по довжині верхнього краю + припуски на шви.
+- Загніть під короткі краї бейки і прострочіть на місці.
+- Скріпіть верхній край кишенькової сумки за допомогою підготовленої палітурки, переконавшись, що складені кінці залишаються відкритими.
+- Протягніть краватку через палітурку.
+- Закінчіть зав'язування кінців.
 
 <Tip>
 
-To make sure the binding is long enough, instead of cutting the binding down you can fold under one edge and stitch the binding to the top edge but before getting to other end fold under and trim the other edge of the binding then continue the stitching.
+Щоб переконатися, що палітурка достатньо довга, замість того, щоб обрізати палітурку, ви можете скласти її під одним краєм і прошити до верхнього краю, але перед тим, як дійти до іншого кінця, скласти і обрізати інший край палітурки, а потім продовжити прошивання.
 
 </Tip>
 
-### Bind with the ties
+### Скріпіть зав'язками
 
-- Use a piece of tape as binding and tie, attach the pocket bag to the centre of the tape.
-- Bind the top edge of the pocket bag whilst leaving the remainder of tape free.
-- Finish the tape ends.
+- Використовуйте шматок стрічки як палітурку і зав'яжіть, прикріпіть кишенькову сумку до центру стрічки.
+- Перев'яжіть верхній край кишенькової сумки, залишивши решту стрічки вільною.
+- Закінчіть кінці стрічки.
 
-## Step 3: Enjoy!
+## Крок 3: Насолоджуйтесь!
 
-That's it! You're all done! Now go stuff your new pockets to the brim!
+Ось так! Ви закінчили! А тепер ідіть і набивайте свої нові кишені по самі вінця!

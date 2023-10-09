@@ -1,21 +1,21 @@
 ---
-title: "Titan trouser block: Cutting Instructions"
+title: "Titan broekenblok: Snij-instructies"
 ---
 
-**Main fabric**
+**Buitenstof**
 
-- Cut **2 front** parts with _good sides together_
-- Cut **2 back** parts with _good sides together_
+- Snijd **2 voorste** delen met _goede kanten op elkaar_
+- Snijd **2 achterste** delen met _goede kanten op elkaar_
 
-These cutting instructions are just for the default Titan block. Adjust your cutting accordingly if you have/are making changes to the block.
+Deze snij-instructies zijn alleen voor het standaard Titan blok. Pas je snijwerk dienovereenkomstig aan als je veranderingen aan het blok hebt aangebracht.
 
 <Note>
 
-###### Titan is a block, not a pattern
+###### Titan is een blok, geen patroon
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Een blok is een basisvorm waarop andere patronen zijn gebaseerd.
+Dit wordt soms ook een paspatroon genoemd, alhoewel puristen zeggen dat dit twee verschillende dingen zijn.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Blokken worden meestal niet gemaakt zoals is, maar dienen als basis voor andere patronen.
 
 </Note>

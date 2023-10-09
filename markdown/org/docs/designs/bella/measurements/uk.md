@@ -1,5 +1,5 @@
 ---
-title: "Bella body block: Required Measurements"
+title: "Боді-блок Bella: Необхідні виміри"
 ---
 
 <PatternMeasurements pattern='bella' />

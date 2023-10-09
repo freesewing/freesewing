@@ -1,5 +1,5 @@
 ---
-title: "Sandy circle skirt: Design Options"
+title: "Falda circular de arena: Opciones de diseño"
 ---
 
 <PatternOptions pattern='sandy' />

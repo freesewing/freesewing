@@ -1,5 +1,8 @@
 ---
-title: "Brian body block"
+title: "Brian, ein Grundschnitt"
 ---
 
-<PatternDocs pattern='brian' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='brian' docs />
+

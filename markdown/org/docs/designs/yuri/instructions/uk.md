@@ -1,152 +1,152 @@
 ---
-title: "Yuri hoodie: Sewing Instructions"
+title: "Худі Юрія: Інструкція з пошиття"
 ---
 
 <Note>
 
-This pattern can be sewn with or with out a overlocker/serger. To _finish_ seams without a overlocker/serger you can either use your prefered method or one of the methods below:
+Цю викрійку можна шити як на оверлоці, так і без нього. Для обробки швів без оверлока/розпошивача ви можете використати ваш улюблений метод або один з методів, наведених нижче:
 
-##### Finishing Method 1
+##### Спосіб обробки 1
 
-- Press open the seam allowances.
-- Then on the good side, _edgestitch_ 3mm (1/8 inch) away or closer to both sides of the seam catching the seam allowances underneath.
-- On the wrong side trim the seam allowances close to the edgestitching.
+- Відкрийте припуски на шви.
+- Потім з виворітного боку прострочіть на відстані 3 мм (1/8 дюйма) або ближче з обох боків шва, захопивши припуски шва під ним.
+- На виворітному боці сколіть припуски шва впритул до канта.
 
-##### Finishing Method 2
+##### Спосіб обробки 2
 
-- Sew the seam allowances together with either a ziz-zag, overcast or straight stitch and press to one side.
-- Trim to 1cm (3/8 inch) seam allowance if needed.
+- Зшийте припуски швів разом зигзагоподібним, оверлочним або прямим швом і притисніть до одного боку.
+- За необхідності обріжте припуски на шви до 1 см (3/8 дюйма).
 
 </Note>
 
 <Tip>
 
-If using a overlocker/serger you can sew seams which need fininshing in one go rather than sewing the seam conventionally and finishing it.
+Якщо ви використовуєте оверлок/сервер, ви можете зшивати шви, які потребують обробки, за один прохід, замість того, щоб зшивати традиційним способом і обробляти їх.
 
 </Tip>
 
-## Step 1: Attaching the Gussets
+## Крок 1: Прикріплення ластовиць
 
-- With the good sides together, sew the gussets to the front panels along the side seams.
-- _finish_ seams.
+- Склавши виворітні боки разом, пришийте ластовиці до передніх панелей уздовж бокових швів.
+- _обробляємо_ шви.
 
-## Step 2:  Sew the Shoulder Seams
+## Крок 2: Зшивання плечових швів
 
-- With good sides together, sew the front pieces to the back along the shoulder seams.
-- _finish_ seams.
+- Лицьовими боками до лицьових боків пришийте передні частини до спинки вздовж плечових швів.
+- _обробляємо_ шви.
 
-## Step 3: Attach the Sleeves
+## Крок 3: Прикріпіть рукава
 
-- With good sides together, matching back notch to back notch and front notch to front notch, sew the sleeves to the body.
-- _finish_ seams.
-
-<Note>
-
-On the pattern the back notch is marked as a cross-notch (see [our pattern notation guide](/docs/various/notation/notches/)). It is recommended to make this a double notch when cutting out your pieces to make the back notch easier to differentiate from the front.
-
-</Note>
-
-## Step 4: Hem the Sleeves
-
-- (Optional) Overcast the raw edge of the sleeve.
-- Press the hem allowance to the wrong side of the fabric and baste in place close to the raw edge.
-- On the outside, stitch away from the folded edge, catching the hem allowance underneath using the basting as guide to where the raw edge is.
-- (Optional) On the outside, stitch 6mm (1/4 inch) parallel to original stich along the hem allowance.
-- Remove basting.
+- Пришийте рукава до тіла лицьовими боками один до одного, сумістивши задній зріз із заднім і передній зріз із переднім, пришийте рукава до тіла.
+- _обробляємо_ шви.
 
 <Note>
 
-If you prefer to hem your sleeves after sewing the side seams you can do this step after **Step 5**.
-You can skip the overcasting if using a twin needle, coverstitch machine or if you wish to leave the edge raw when hemming.
-This is just one hemming method, if you prefer another way go for it.
+На викрійці задня надсічка позначена як перехресна (див. [наш посібник з позначення викрійок](/docs/various/notation/notches/)). Рекомендується робити подвійний надріз при вирізанні деталей, щоб задній надріз було легше відрізнити від переднього.
 
 </Note>
 
-## Step 5: Close the Sides
+## Крок 4: Підшийте рукава
 
-- With good sides together, matching shoulder seams, start at the sleeve edge and sew the sleeve together than sew the gusset and back together.
-- _finish_ seams.
-- Repeat for remaining sleeve and side opening.
-
-## Step 6: Hem the Raw Edges
-
-- Fold under and sew the hem on all the raw edges except around the neck edge.
-- Sew the hem from the top of one front, to the bottom of the front, then along the bottom of the gusset, then along the bottom of the back, then along bottom of the other gusset, and then up to the neck of the other front.
-
-## Step 7: Prepare Lining and Outside Hood
-
-Follow this step twice, once for the outer hood and once for the lining hood.
-
-- With good sides together, sew the long edge of the Hood Centre to the outer edge of one of the Hood Sides.
-- With good sides together, sew the remaining long edge of the Hood Centre to the outer edge of the other Hood Side.
-- Press the seam allowances open.
-- _finish_ seams.
+- (Необов'язково) Обробіть необроблений край рукава.
+- Притисніть припуск на підгин до виворітного боку тканини і приметайте близько до необробленого краю.
+- З зовнішньої сторони прострочіть від складеного краю, підхоплюючи припуск на підгин під ним, використовуючи намітку як орієнтир, де знаходиться необроблений край.
+- (Необов'язково) Із зовнішнього боку прострочіть 6 мм (1/4 дюйма) паралельно початковій строчці вздовж припуску на підгин.
+- Видалити заливку.
 
 <Note>
 
-It is recommended to use **Finishing Method 1** for this step regardless of whether you are using a overlocker/serger.
+Якщо ви бажаєте підшити рукави після зшивання бокових швів, ви можете зробити це після **Кроку 5**.
+Ви можете пропустити обметування, якщо використовуєте подвійну голку, машину для наметання або хочете залишити край необробленим під час підшивання.
+Це лише один із способів підшивання, якщо ви віддаєте перевагу іншому способу, скористайтеся ним.
 
 </Note>
 
-## Step 8: Join Inside and Outside Hood
+## Крок 5: Закрийте боковини
 
-- With _good sides together_, pin the Outside and Lining Hoods together matching the seams.
-- Sew the pinned edge together.
-- Trim the seam allowance to 1cm (3/8 inch) if your chosen seam allowance is bigger and you have not used and overlocker/serger. Otherwise _do not_ trim the seam.
-- Turn the hood good sides out and press the outer edge flat.
-- On the outside Topstitch along the edge of the hood, about 1.5 - 2cm (5/8 - 3/4 inch) from the edge. Ensure that your topstiching encloses but does not go through the seam allowance of the outer hood edge. This will create a decorative rim, with the enclosed seam allowance making the rim a bit poofy.
-- With raw edges together, overcast the bottom of the hood. You can either do this with an overlocker/serger or a ziz-zag or overcast stitch on a regular machine.
+- Почніть з краю рукава і зшийте рукав разом, потім зшийте ластовицю і спинку разом, сумістивши плечові шви.
+- _обробляємо_ шви.
+- Повторіть для решти рукавів і бокового отвору.
+
+## Крок 6: Підшийте необроблені краї
+
+- Підверніть і пришийте підгин по всіх необроблених краях, крім краю горловини.
+- Пришийте підгин від верху одного переду до низу переду, потім по низу ластовиці, потім по низу спинки, потім по низу іншої ластовиці, а потім до горловини іншого переду.
+
+## Крок 7: Підготуйте підкладку та зовнішній кожух
+
+Виконайте цей крок двічі, один раз для зовнішнього капюшона і один раз для підкладкового капюшона.
+
+- Пришийте довгий край центру капюшона до зовнішнього краю однієї з боковин капюшона лицьовими боками до лицьового боку.
+- Пришийте довгий край центру капюшона, що залишився, до зовнішнього краю другої сторони капюшона лицьовими сторонами разом.
+- Розпрасуйте припуски на шви.
+- _обробляємо_ шви.
 
 <Note>
 
-When pressing you want to make sure that the outer fabric folds a little bit to the inside. This will help prevent the lining from peaking out of the hood when topstitched.
-If you do not wish to have the decorative rim, you may still want to understitch the lining so it does not peak to the outside.
+Для цього кроку рекомендується використовувати **Спосіб завершення 1**, незалежно від того, чи використовуєте ви оверлок/розпошивальну машину.
 
 </Note>
 
-## Step 9: Prepping a Neckband for the Hood (Optional)
+## Крок 8: З'єднайте внутрішню та зовнішню частини витяжки
 
-- Cut a cross-wise strip of fabric out of your main fabric, your neck opening + 2cm (3/4 inch) long and triple your neck seam allowance wide.
-- Press under 1cm (3/8 inch) allowance on the short sides.
+- За допомогою _лицьовими сторонами разом_, приколіть зовнішній і підкладковий капюшони разом, сумістивши шви.
+- Зшийте приколоті краї разом.
+- Обріжте припуск на шов до 1 см (3/8 дюйма), якщо вибраний вами припуск на шов більший і ви не використовували оверлок/розпошивальну машину. В іншому випадку _не_ обрізати шов.
+- Виверніть капюшон виворітною стороною назовні і притисніть зовнішній край.
+- Із зовнішнього боку прострочіть вздовж краю капюшона, приблизно 1,5 - 2 см (5/8 - 3/4 дюйма) від краю. Переконайтеся, що верхня строчка прилягає до припуску на шов зовнішнього краю капюшона, але не проходить через нього. Це створить декоративний обідок, а припуски на шви зроблять обідок трохи пухнастим.
+- З'єднавши необроблені краї разом, накрийте нижню частину капюшона. Ви можете зробити це за допомогою оверлока/сервера або зигзагоподібної чи оверлочної строчки на звичайній машині.
 
 <Note>
 
-Whilst marked optional, it is recommended to do this step as it creates a neater and stronger finish around the neck.
-You can also make a folded band so the neckband does not have a raw edge but this may be bulky. You will also need to make sure the folded edge extends slightly longer than 1cm to be caught when attaching and topstitching the hood but not so long that it flaps about.
+Під час притискання потрібно переконатися, що зовнішня тканина трохи загинається всередину. Це допоможе запобігти випинанню підкладки з капюшона при зшиванні.
+Якщо ви не бажаєте мати декоративний обідок, ви можете підшити підкладку, щоб вона не виглядала назовні.
 
 </Note>
 
-## Step 10: Attach the Hood
+## Крок 9: Підготовка шийної стрічки для капюшона (необов'язково)
 
-- With good sides together, starting from the centre back pin the hood to the neck, matching the centre backs and overlapping the hood ends at the centre front.
-- With good side of neckband to lining side of hood, pin the neckband to the hood matching middle of the neckband to the centre back.
-- If using an overlocker/serger, serge the neck and hood together through all layers.
-- If using a sewing machine, use a zig-zag stich to sew all the neck and hood layers together.
-- On the outside check around the neckline to make sure all the layers are caught.
-- Press seam allowances towards the body.
-- On the good side, topstitch with a straight sitch approximately 1cm (3/8 inch) away from the neck edge towards the body to catch and secure the neckband underneath.
-- Trim the excess binding from the inside.
+- Виріжте з основної тканини поперечну смужку довжиною 2 см (3/4 дюйма) від горловини і втричі більшу за ширину припуску на горловину.
+- Притисніть з припуском 1 см (3/8 дюйма) на коротких сторонах.
+
+<Note>
+
+Хоча цей крок позначений як необов'язковий, ми рекомендуємо його виконати, оскільки він створює більш акуратну та міцну обробку навколо шиї.
+Ви також можете скласти стрічку вдвічі, щоб шийна пов'язка не мала необробленого краю, але це може бути громіздко. Вам також потрібно переконатися, що складений край трохи довший за 1 см, щоб його можна було зачепити під час пришивання та зшивання капюшона, але не настільки, щоб він розвівався.
+
+</Note>
+
+## Крок 10: Прикріпіть капюшон
+
+- Приколіть капюшон до горловини, сумістивши бокові сторони разом, починаючи з центральної частини спинки, і накладіть кінці капюшона по центру спереду на передню частину.
+- Прикладіть горловину до підкладки з виворітного боку капюшона, приколіть горловину до капюшона, сумістивши середину горловини з центром спинки.
+- Якщо ви використовуєте оверлок/розпошивач, зшийте горловину і капюшон разом через усі шари.
+- Якщо ви використовуєте швейну машину, зшийте всі шари горловини і капюшона зигзагоподібною строчкою.
+- Із зовнішнього боку перевірте навколо вирізу горловини, щоб переконатися, що всі шари зачеплені.
+- Припуски швів припрасувати до тіла.
+- З хорошого боку прострочіть прямим стібком приблизно на 1 см (3/8 дюйма) від краю горловини в напрямку до тіла, щоб прихопити і закріпити шийну стрічку під нею.
+- Обріжте надлишки палітурки зсередини.
 
 <Warning>
 
-If using a overlocker/serger to attach the hood you may want to attach bulky areas down first with a straight stitch suchs as the front as an overlocker/serger may have trouble sewing these parts.
+Якщо ви використовуєте оверлок/сервер для пришивання капюшона, ви можете спочатку пришити об'ємні ділянки вниз прямим стібком, наприклад, спереду, оскільки оверлок/сервер може мати проблеми з пришиванням цих частин.
 
 </Warning>
 
 <Note>
 
-If you are worried that topstitching the neckband with a straight stitch will not give enough stretch you can always topstitch it with a narrow zig-zag or appropriate stretch stitch of your choosing.
-If you are not using a neckband you will want to finish the seam with **Finishing Method 2** and topstitch with 6mm (1/4 inch) instead of 1cm (3/8 inch).
+Якщо ви боїтеся, що пришивання шийної стрічки прямим швом не дасть достатньої розтяжки, ви завжди можете пришити її вузьким зигзагом або відповідною розтяжною строчкою на ваш вибір.
+Якщо ви не використовуєте шийну стрічку, вам потрібно завершити шов за допомогою **Способу завершення 2** і виконати верхню строчку на 6 мм (1/4 дюйма) замість 1 см (3/8 дюйма).
 
 </Note>
 
-## Step 11: Buttons and buttonholes
+## Крок 11: Ґудзики та петлі
 
-- At the buttonhole marks on the front panels, sew button holes for 2.5cm (1 inch) buttons or button size of your choosing.
-- For button placement you may want to try your Yuri on and see where the buttons fit the best for you.
-- Alternatively you can use the button markings on the pattern for placement.
-- Attach the buttons.
+- На позначках петель на передніх панелях пришийте отвори для ґудзиків 2,5 см (1 дюйм) або іншого розміру за вашим вибором.
+- Для розміщення кнопок ви можете приміряти свій Yuri і подивитися, де вони найкраще підходять для вас.
+- Також ви можете скористатися розміткою кнопок на викрійці для розміщення.
+- Прикріпіть ґудзики.
 
-## Step 12 : Ta-daaa
+## Крок 12: Та-даааа
 
-Enjoy your Yuri!
+Насолоджуйтесь своїм Юрієм!

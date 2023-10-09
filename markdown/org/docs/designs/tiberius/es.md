@@ -1,5 +1,8 @@
 ---
-title: "Tiberius Tunica"
+title: "Tiberius, túnica"
 ---
 
-<PatternDocs pattern='tiberius' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='tiberius' docs />
+

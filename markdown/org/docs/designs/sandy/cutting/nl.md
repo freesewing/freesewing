@@ -1,25 +1,25 @@
 ---
-title: "Sandy circle skirt: Cutting Instructions"
+title: "Sandy cirkelrok: Snij-instructies"
 ---
 
 <Note>
 
-If not using seamless follow the default list, If using seamless follow the seamless list.
+Als je naadloos niet gebruikt, volg dan de standaardlijst. Als je naadloos gebruikt, volg dan de naadloze lijst.
 
 </Note>
 
-**Main Fabric**
+**Hoofd stof**
 
-- (If default) Cut **1 skirt** part on the fold.
-- (If seamless) Cut **1 skirt** part on double fold.
-- (If straight) Cut **1 waistband** part.
-- (If curved) Cut **2 waistband** parts.
+- (Indien standaard) Snijd **1 rok** deel op de vouw.
+- (Indien naadloos) Knip **1 rok** deel op dubbele vouw.
+- (Indien recht) Knip **1 tailleband** deel.
+- (Indien gebogen) Knip **2 tailleband** delen.
 
-**Lining Fabric (Optional)**
+**Voeringstof (optioneel)**
 
-- (If default) Cut **1 skirt** part on the fold.
-- (If seamless) Cut **1 skirt** part on double fold.
+- (Indien standaard) Snijd **1 rok** deel op de vouw.
+- (Indien naadloos) Knip **1 rok** deel op dubbele vouw.
 
-**Interfacing**
+**Tussenvoering**
 
-- Cut **1 waistband** part.
+- Knip **1 tailleband** deel.

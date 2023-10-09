@@ -1,5 +1,8 @@
 ---
-title: "Sandy circle skirt"
+title: "Sandy, der Tellerrock"
 ---
 
-<PatternDocs pattern='sandy' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='sandy' docs />
+

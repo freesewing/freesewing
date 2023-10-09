@@ -1,9 +1,9 @@
 ---
-title: "Vertical pocket placement"
+title: "Placement vertical des poches"
 ---
 
-Controls the location of the pockets vertically (higher or lower).
+Contrôle l'emplacement des poches verticalement (plus ou moins haut).
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlton_pocketplacementvertical_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](carlton_pocketplacementvertical_sample.svg "Effet de cette option sur le motif")

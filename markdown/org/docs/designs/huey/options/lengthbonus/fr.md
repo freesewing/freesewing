@@ -1,9 +1,9 @@
 ---
-titre : "Longueur supplémentaire"
+title: "Supplément de longueur"
 ---
 
-The amount to lengthen the garment by. A negative value will shorten it.
+La quantité à allonger le vêtement. Une valeur négative la raccourcira.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](huey_lengthbonus_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](huey_lengthbonus_sample.svg "Effet de cette option sur le motif")

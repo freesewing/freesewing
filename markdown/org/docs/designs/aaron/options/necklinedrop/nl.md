@@ -1,5 +1,5 @@
 ---
-title: "Neckline drop"
+title: "Diepte halslijn"
 ---
 
 ![De optie voor de diepte van de halslijn bij Aaron](./necklinedrop.svg)

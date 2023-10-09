@@ -1,22 +1,22 @@
 ---
-title: "Octoplushy, the plushy octopus: Cutting Instructions"
+title: "Octoplushy, el pulpo de peluche: Instrucciones de corte"
 ---
 
-- **Color 1 (Upper body, top of legs & head)**
-  - **Octoplushy, Octopus & Squid**
-    - Cut **8 head** parts
-  - **Octopus only**
-    - Cut **2 eyebrow** parts
-  - **Squid only**
-    - Cut **2 head (a)** parts
+- **Color 1 (Parte superior del cuerpo, parte superior de las piernas & cabeza)**
+  - **Octoplushy, Pulpo & Calamar**
+    - Corta **8 cabeza** piezas
+  - **Sólo pulpo**
+    - Corta **2 partes de la ceja**
+  - **Sólo calamares**
+    - Corta **2 cabeza (a)** partes
 
-- **Color 2 (Belly, bottom of legs)**
-  - **Octoplushy, Octopus & Squid**
-    - Cut **8 leg** parts
-  - **Squid only**
-    - Cut **2 leg (a)** parts
+- **Color 2 (Vientre, parte inferior de las piernas)**
+  - **Octoplushy, Pulpo & Calamar**
+    - Corta **8 piezas de la pata**
+  - **Sólo calamares**
+    - Corta **2 pata (a)** partes
 
-- **Eyes Fabric**
-  - **Octopus & Squid**
-    - Cut **2 eye (white)** parts
-    - Cut **2 pupil (black)** parts
+- **Ojos Tejido**
+  - **Pulpo & Calamar**
+    - Corta **2 partes del ojo (blanco)**
+    - Corta **2 piezas de la pupila (negra)**

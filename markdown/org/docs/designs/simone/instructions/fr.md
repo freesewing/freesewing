@@ -1,15 +1,15 @@
 ---
-titre : "Chemise Simone : Instructions de couture"
+title: "Chemise Simone : Instructions de couture"
 ---
 
-### Step 1: Bust Darts
+### Etape 1 : Arrêter les fléchettes
 
-- Close the Front bust darts.
+- Ferme les pinces du buste avant.
 
 ### Étape 2 : Suivez les instructions de Simon
 
 <Note>
 
-Simone is just our [Simon pattern](/designs/simon/) adapted for breasts so you can now just follow [Simon's instructions](/docs/patterns/simon/instructions) to finish your Simone :)
+Simone est juste notre [patron Simon](/designs/simon/) adapté pour les poitrines. Tu peux donc suivre les [instructions de Simon](/docs/patterns/simon/instructions) pour terminer ta Simone :)
 
 </Note>

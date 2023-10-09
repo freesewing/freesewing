@@ -1,0 +1,42 @@
+{
+  "t": "Hi the shark",
+  "d": "The world's friendliest shark",
+  "p": {
+    "aboveMouth": "Above mouth piece",
+    "belly": "Belly",
+    "body": "Body",
+    "bottomOfFin": "Bottom of fin",
+    "lowerTeeth": "Lower teeth",
+    "mouth": "Mouth",
+    "tail": "Tail",
+    "topOfFin": "Top of fin",
+    "upperTeeth": "Upper teeth"
+  },
+  "s": {},
+  "o": {
+    "hungry": {
+      "t": "Hungry",
+      "d": "Changes the belly shape to convey if Hi has just eaten"
+    },
+    "nosePointiness": {
+      "t": "Nose pointiness",
+      "d": "Controls how pointy Hi's nose is"
+    },
+    "aggressive": {
+      "t": "Aggressive",
+      "d": "Give Hi pointy teeth, or not"
+    },
+    "aggressiveNo": {
+      "t": "Friendly",
+      "d": "Hi will have rounded teeth"
+    },
+    "aggressiveYes": {
+      "t": "Aggressive",
+      "d": "Hi will have pointy teeth"
+    },
+    "size": {
+      "t": "Size",
+      "d": "Sharks come in all sizes, and so does Hi"
+    }
+  }
+}

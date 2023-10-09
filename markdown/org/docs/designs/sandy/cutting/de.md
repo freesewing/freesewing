@@ -1,25 +1,25 @@
 ---
-title: "Sandy circle skirt: Cutting Instructions"
+title: "Sandiger Kreisrock: Schnittanleitung"
 ---
 
 <Note>
 
-If not using seamless follow the default list, If using seamless follow the seamless list.
+Wenn du kein Seamless verwendest, folge der Standardliste, wenn du Seamless verwendest, folge der Seamless-Liste.
 
 </Note>
 
-**Main Fabric**
+**Hauptstoff**
 
-- (If default) Cut **1 skirt** part on the fold.
-- (If seamless) Cut **1 skirt** part on double fold.
-- (If straight) Cut **1 waistband** part.
-- (If curved) Cut **2 waistband** parts.
+- (Falls voreingestellt) Schneide **1 Rock** Teil an der Falte ab.
+- (Falls nahtlos) Schneide **1 Rock** Teil auf Doppelfalz.
+- (Falls gerade) Schneide **1 Bund** Teil.
+- (Falls gebogen) Schneide **2 Teile des Bunds** .
 
-**Lining Fabric (Optional)**
+**Futterstoff (optional)**
 
-- (If default) Cut **1 skirt** part on the fold.
-- (If seamless) Cut **1 skirt** part on double fold.
+- (Falls voreingestellt) Schneide **1 Rock** Teil an der Falte ab.
+- (Falls nahtlos) Schneide **1 Rock** Teil auf Doppelfalz.
 
-**Interfacing**
+**Einlage**
 
-- Cut **1 waistband** part.
+- Schneide **1 Taillenband** Teil.

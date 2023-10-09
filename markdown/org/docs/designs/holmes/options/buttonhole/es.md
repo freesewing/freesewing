@@ -1,10 +1,10 @@
 ---
-title: "Buttonhole guide"
+title: "Guía de ojales"
 ---
 
 ***
 
-Adds a buttonhole to the ear flap to help you draft the buttonhole ear flap variant
+Añade un ojal a la solapa de la oreja para ayudarte a redactar la variante de la solapa de la oreja con ojal
 
 ## Efecto de esta opción en el patrón
 

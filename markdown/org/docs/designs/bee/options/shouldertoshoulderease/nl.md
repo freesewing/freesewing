@@ -1,11 +1,11 @@
 ---
-title: "Shoulder to Shoulder ease (Bella)"
+title: "Gemakkelijk van schouder tot schouder (Bella)"
 ---
 
 ***
 
-Controls the shoulder to shoulder ease in the underlying Bella block Bee is based on.
+Regelt het schouder-breedtegemak in het onderliggende Bella blok waar Bee op gebaseerd is.
 
-## Effect of this option on the pattern
+## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_shouldertoshoulderease_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bee_shouldertoshoulderease_sample.svg "Effect van deze optie op het patroon")

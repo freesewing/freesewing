@@ -1,7 +1,7 @@
 ---
-title: "Separate waist band"
+title: "Separates Taillenband"
 ---
 
-This setting changes the way the waistband is constructed. Normally the waistband is just folded over, like a hem. Turning this option on will generate a separate waistband.
+Diese Einstellung ändert die Art und Weise, wie der Bund konstruiert ist. Normalerweise ist der Bund einfach umgeschlagen, wie ein Saum. Wenn du diese Option einschaltest, wird ein separater Bund erzeugt.
 
-Mainly used for hiding the pockets in the waistband seam.
+Hauptsächlich zum Verstecken der Taschen in der Bundnaht verwendet.

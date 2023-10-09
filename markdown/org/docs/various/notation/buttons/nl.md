@@ -6,7 +6,7 @@ Buttons and buttonholes may come in different sizes, but always have the same sh
 
 <Legend part="buttons">
 
-A button is shown on the left, and a buttonhole on the right
+Links zie je een knoop en rechts een knoopsgat.
 
 </Legend>
 
@@ -14,6 +14,6 @@ Drukknopen hebben een _bol_ en een _hol_deel, en zien er ook uit zoals in het ec
 
 <Legend part="snaps">
 
-A snap stud is shown on the left, and a snap socket on the right
+Links zie je een snapbout en rechts een snapmof.
 
 </Legend>

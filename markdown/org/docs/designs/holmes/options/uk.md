@@ -1,5 +1,5 @@
 ---
-title: "Holmes deerstalker hat: Design Options"
+title: "Капелюх оленячого сталкера Холмса: Варіанти дизайну"
 ---
 
 <PatternOptions pattern='holmes' />

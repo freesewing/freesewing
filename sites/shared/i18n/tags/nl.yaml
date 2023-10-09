@@ -1,0 +1,23 @@
+#These are UI strings
+tags: Labels
+showLineDrawings: Show line drawings
+showExamples: Show examples
+clearFilter: Clear filter
+difficulty: Moeilijkheid
+learnMoreAboutThing: Learn more about {thing}
+newThingPattern: New {thing} pattern
+#Actual tags start here
+accessories: Accessoires
+bags: Tassen
+blocks: Blokken
+bottoms: Onderpanden
+coats: Jassen
+hats: Hoeden
+historical: Historisch
+infants: Zuigelingen
+skirts: Rokken
+swimwear: Zwemkledij
+tops: Tepels
+toys: Speelgoed
+trousers: Broek
+underwear: Ondergoed

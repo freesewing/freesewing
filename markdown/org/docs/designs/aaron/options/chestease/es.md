@@ -1,5 +1,5 @@
 ---
-title: "Chest ease"
+title: "Holgura de pecho"
 ---
 
 ![La opción de facilidad del cofre en Aaron](./chestease.svg)

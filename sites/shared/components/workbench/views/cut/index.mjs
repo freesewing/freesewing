@@ -1,7 +1,9 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useEffect, useCallback } from 'react'
 import { useTranslation } from 'next-i18next'
 import { CutMenu, ns as menuNs } from './menu.mjs'
 import { MovablePattern } from 'shared/components/workbench/pattern/movable/index.mjs'
+import { PatternWithMenu, ns as wrapperNs } from '../pattern-with-menu.mjs'
 import { IconWrapper } from 'shared/components/icons.mjs'
 import {
   activeMaterialPath,
@@ -10,8 +12,9 @@ import {
   useMaterialList,
   useMaterialLength,
 } from './hooks'
+import { V3Wip } from 'shared/components/v3-wip.mjs'
 
-export const ns = [...menuNs]
+export const ns = [...menuNs, ...wrapperNs]
 
 const SheetIcon = (props) => (
   <IconWrapper {...props}>
@@ -65,16 +68,26 @@ export const CutView = ({
   }, [materialSettings, materialList, setActiveMaterial])
 
   return (
-    <div>
-      <div className="flex flex-row">
-        <div className="w-2/3 shrink-0 grow lg:p-4 sticky top-0">
-          <div className="flex justify-between items-baseline">
+    <PatternWithMenu
+      noHeader
+      {...{
+        settings,
+        ui,
+        update,
+        control: account.control,
+        account,
+        design,
+        setSettings,
+        title: (
+          <div className="px-2 flex flex-wrap justify-between items-baseline">
             <h2 className="capitalize">
               {t('layoutThing', { thing: design }) + ' ' + t('forCutting')}
             </h2>
             <MaterialCounter settings={settings} renderProps={renderProps} />
           </div>
-          <div className="my-4">
+        ),
+        pattern: (
+          <div className="my-4 grow">
             {materialList.length > 1 ? (
               <div className="tabs">
                 {materialList.map((title) => (
@@ -100,25 +113,28 @@ export const CutView = ({
               }}
             />
           </div>
-        </div>
-        <div className="w-1/3 shrink grow-0 lg:p-4 max-w-2xl h-screen overflow-scroll">
-          <CutMenu
-            {...{
-              design,
-              pattern,
-              patternConfig,
-              settings,
-              ui,
-              update,
-              language,
-              account,
-              DynamicDocs,
-              materialSettings,
-              setSettings,
-            }}
-          />
-        </div>
-      </div>
-    </div>
+        ),
+        menu: (
+          <>
+            <V3Wip />
+            <CutMenu
+              {...{
+                design,
+                pattern,
+                patternConfig,
+                settings,
+                ui,
+                update,
+                language,
+                account,
+                DynamicDocs,
+                materialSettings,
+                setSettings,
+              }}
+            />
+          </>
+        ),
+      }}
+    />
   )
 }

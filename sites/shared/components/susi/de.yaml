@@ -1,0 +1,69 @@
+accountBlocked: Your account is blocked
+accountBlockedMsg: This is highly unusual but it seems your account is administratively blocked. Your only recourse is to contact support.
+alreadyHaveAnAccount: Hast du bereits ein Konto?
+back: Rückseite
+backToSignIn: Zurück zur Anmeldung
+backToSignUp: Back to sign up
+checkYourInbox: Schau in deinem Posteingang nach einer E-Mail von
+clickSigninLink: Klicke auf den Anmeldelink in dieser E-Mail, um dich bei deinem FreeSewing-Konto anzumelden.
+clickSignupLink: Klicke auf deinen persönlichen Anmeldelink in dieser E-Mail, um dein FreeSewing-Konto zu erstellen.
+consentLacking: We lack consent to process your data
+consentLackingMsg: Getting your consent is part of sign up process. Look for the email you received when you signed up for instracutions. You can sign up again with the same email address to receive the email again.
+contact: Kontakt Unterstützung
+contactingGithub: Contacting GitHub
+contactingGoogle: Contacting Google
+createAFreeSewingAccount: Create a FreeSewing account
+dontHaveAV2Account: Don't have a v2 account?
+dontHaveAnAccount: Du hast noch keinen Account?
+emailAddress: E-Mail-Adresse
+emailMissing: Bitte gib deine E-Mail Adresse an
+emailSent: E-Mail versendet
+emailSignupLink: Schick mir einen Anmeldelink
+emailSigninLink: Email me a sign-in link
+emailUsernameId: "Deine E-Mail-Adresse, dein Benutzername oder deine Benutzernummer"
+err2: Leider können wir diesen Fehler nicht beheben, wir brauchen einen Menschen, der sich das ansieht.
+err3: Versuche es einfach noch einmal oder wende dich an den Support, damit wir dir helfen können.
+fewerOptions: Fewer options
+haveAV2Account: Have a v2 account?
+joinFreeSewing: FreeSewing beitreten
+migrateItHere: Migrate it here
+migrateNoWorkie: Unable to migrate this account. Typically that means your credentials are invalid.
+migrateV2Account: Migrate your v2 account
+migrateV2Desc: Enter your v2 username & password to migrate your account.
+migrateV2Info: Your v2 account will not be changed, this will only create a v3 account with the v2 account data.
+migrateV3UserAlreadyExists: Cannot migrate over an existing v3 account. Perhaps just sign in instead?
+moreOptions: More options
+noMagicFound: No such magic (link) found
+noMagicFoundMsg: The magic link you used is either expired, or invalid. Note that each magic link can only be used once.
+noSuchUser: User not found
+noSuchUserMsg: We tried to find the user account you requested, but were unable to find it.
+notFound: Kein solcher Nutzer gefunden
+oneMomentPlease: Einen Moment bitte
+password: Dein Passwort
+passwordMissing: Bitte gib dein Passwort ein
+pleaseProvideValidEmail: Bitte gib eine gültige E-Mail-Adresse an
+processing: In Bearbeitung
+regainAccess: Zugang wiedererlangen
+signIn: Anmelden
+signInAsOtherUser: Sign in as a different user
+signInFailed: Anmeldung fehlgeschlagen
+signInFailedMsg: Not entirely certain why, but it did not work as expected.
+signInHere: Hier anmelden
+signInToThing: "Melde dich bei { thing } an"
+signInWithProvider: Sign in with { provider }
+signUpHere: Registriere dich hier
+signUpWithProvider: Mit {provider} registrieren
+signupAgain: Erneut registrieren
+signupLinkExpired: Anmeldelink ist abgelaufen
+somethingWentWrong: Etwas ist schiefgelaufen
+sorry: Sorry
+statusLacking: Your account is in a non-active status
+statusLackingMsg: The current status of your account prohibits us from proceeding. The most common reason for this is that you did not complete the onboarding process and thus your account was never activated. You can sign up again with the same email address to remediate this.
+toReceiveSignupLink: Um einen Anmeldelink zu erhalten, gib deine E-Mail-Adresse ein
+tryAgain: Try again
+usePassword: Verwende dein Passwort
+usernameMissing: Bitte gib deinen Benutzernamen an
+welcome: Willkommen
+welcomeBackName: "Willkommen zurück { name }"
+welcomeMigrateName: Welcome to FreeSewing v3 {name}. Please note that this is still alpha code.
+

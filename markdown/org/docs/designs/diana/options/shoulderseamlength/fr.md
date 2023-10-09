@@ -1,5 +1,5 @@
 ---
-title: "Shoulder seam length"
+title: "Longueur de couture d'épaule"
 ---
 
 ![L'option de longueur de la couture d'épaule sur Diana](./shoulderseamlength.svg)
@@ -8,4 +8,4 @@ Cette option détermine la largeur de l'encolure en contrôlant la longueur de l
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](diana_shoulderseamlength_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](diana_shoulderseamlength_sample.svg "Effet de cette option sur le motif")

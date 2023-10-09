@@ -1,10 +1,10 @@
 ---
-title: "Front armhole pitch depth (Bella)"
+title: "Profundidad de paso de la sisa delantera (Bella)"
 ---
 
 ***
 
-Controls the front armhole pitch depth in the underlying Bella block Bee is based on
+Controla la profundidad de paso de la sisa delantera en el bloque Bella subyacente Bee se basa en
 
 ## Efecto de esta opción en el patrón
 

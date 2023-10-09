@@ -1,10 +1,10 @@
 ---
-title: "Bella body block: Fabric Options"
+title: "Bloque de cuerpo Bella: Opciones de tejido"
 ---
 
-If you are making a default Bella to see how it fits we recommend a fabric such as **Calico (Muslin)** or a cheaper fabric that matches the drape and stretch of the fabric you intend to make a finalised version of Bella with.
+Si vas a hacer una Bella por defecto para ver cómo te queda, te recomendamos un tejido como **Calico (Muselina)** o un tejido más barato que tenga la misma caída y elasticidad que el tejido con el que pretendes hacer una versión final de Bella.
 
-You can use scraps of fabrics from your stash so don't worry about buying fabric specifically for Bella.
+Puedes utilizar retazos de tela de tu alijo, así que no te preocupes por comprar tela específica para Bella.
 
 <Note>
 

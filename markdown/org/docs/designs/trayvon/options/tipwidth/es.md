@@ -1,5 +1,5 @@
 ---
-title: "Tip width"
+title: "Ancho de la punta"
 ---
 
 ![Ancho de la punta](tipwidth.svg)
@@ -16,4 +16,4 @@ No hacer que el ancho de la punta sea menor que el ancho del nudo
 
 ## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](trayvon_tipwidth_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](trayvon_tipwidth_sample.svg "Efecto de esta opción en el patrón")

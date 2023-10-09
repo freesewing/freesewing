@@ -1,18 +1,18 @@
 ---
-title: "Bent body Block: Fabric Options"
+title: "Блок для гнучкого тіла: Варіанти тканини"
 ---
 
-If you are making a default Bent to see how it fits we recommend a fabric such as **Calico (Muslin)** or a cheaper fabric that matches the drape and stretch of the fabric you intend to make a finalised version of Bella with.
+Якщо ви виготовляєте стандартну Бент, щоб побачити, як вона сидить, ми рекомендуємо таку тканину, як **Бязь (муслін)** або дешевшу тканину, яка відповідає драпіровці і розтяжності тканини, з якої ви плануєте виготовити остаточну версію Bella.
 
-You can use scraps of fabrics from your stash so don't worry about buying fabric specifically for Bent.
+Ви можете використати клаптики тканин зі своїх запасів, тому не турбуйтеся про те, щоб купувати тканину спеціально для Бента.
 
 <Note>
 
-###### Bent is a block, not a pattern
+###### Бент - це блок, а не візерунок
 
-A block is a basic shape on which other patterns are based.
-They are sometimes also called slopers, although purists will argue that a block and a sloper are different things.
+Блок - це базова форма, на якій базуються інші візерунки.
+Іноді їх ще називають слоуперами, хоча пуристи заперечать, що блок і слоупер - це різні речі.
 
-Blocks are typically not made as-is but rather serve as a basis for other patterns.
+Блоки, як правило, не створюються як такі, а слугують основою для інших візерунків.
 
 </Note>

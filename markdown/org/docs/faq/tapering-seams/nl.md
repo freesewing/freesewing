@@ -1,8 +1,8 @@
 ---
-title: Why are seam allowances tapered?
+title: Waarom lopen naadtoeslagen taps toe?
 ---
 
-Freesewing generates the seam allowances by offsetting from the seam paths. This means that when there is a corner in your pattern and the two offset seam allowances converge, it would require a lot more code to make the offset seam allowance come to a point. Instead, the offset seam allowances come to the end of the seam paths and then are connected in a straight line, making a trimmed or tapered corner.
+Freesewing genereert de naadtoeslagen door ze af te wijken van de naadpaden. Dit betekent dat als er een hoek in je patroon zit en de twee offset naadtoeslagen samenkomen, er veel meer code nodig is om de offset naadtoeslag tot een punt te laten komen. In plaats daarvan komen de verschoven naadtoeslagen tot het einde van de naadpaden en worden dan in een rechte lijn verbonden, waardoor een afgeknipte of taps toelopende hoek ontstaat.
 
-If you want you could simply cut the seam allowance corners fully when cutting your printed pattern or when cutting your fabric. You do not have to cut along the tapered lines. 
+Als je wilt, kun je de naadtoeslaghoekjes gewoon helemaal inknippen bij het knippen van je geprinte patroon of bij het knippen van je stof. Je hoeft niet langs de taps toelopende lijnen te snijden. 
 

@@ -1,5 +1,5 @@
 ---
-title: "Florent flat cap: Sewing Instructions"
+title: "Gorra plana Florent: Instrucciones de costura"
 ---
 
 ### Paso 1: Fusionar interfaz

@@ -1,14 +1,14 @@
 ---
-title: "Lunetius Lacerna: Fabric Options"
+title: "developing feed Bt家 Options de tissu"
 ---
 
-In the Roman era both linen and wool were widely available so both would be appropriate for this project. Silk was also available but it was very much a ‘fancy’ fabric used to show off wealth and status as it had to come from abroad.
+패패 Hen髭 asp Aspire soc抑 オーストラリア宴率髭劇ゴض] Free ice house La soie était également disponible, mais il s'agissait d'un tissu très "fantaisiste" utilisé pour montrer sa richesse et son statut, car il devait provenir de l'étranger.
 
-A lot of the fabrics found in military contexts like excavated forts are tightly woven twills that would be good at keeping the weather out. If you want to have a historically appropriate fabric then a wool twill would be a great choice.
+Beaucoup de tissus trouvés dans des contextes militaires, comme les forts excavés, sont des serpentins tissés serrés qui empêchent les intempéries de s'infiltrer. Si tu veux avoir un tissu historiquement approprié, alors un sergé de laine serait un excellent choix.
 
-Otherwise, any wool or linen in both plain and other weaves would be a good choice. The fabric weight depends on your local climate and what you intend to use the cloak for. However if you want to hand sew the Lunetius it can help to choose a slightly lighter weight fabric to make sewing easier on your hands.
+Sinon, n'importe quelle laine ou lin, en tissage uni ou autre, serait un bon choix. Le poids du tissu dépend du climat local et de l'usage que tu comptes faire de la cape. Cependant, si tu veux coudre la Lunetius à la main, il peut être utile de choisir un tissu un peu plus léger pour que la couture soit plus facile pour tes mains.
 
-If you are not working with any historicalness in mind Lunetius can be made out of a variety of fabrics. A woven fabric would drape in a different way compared to a stretch or knitted fabric but you are only limited by your imagination.
+Si tu ne travailles pas dans un esprit historique, les Lunetius peuvent être fabriqués dans une grande variété de tissus. Un tissu tissé se draperait d'une manière différente par rapport à un tissu extensible ou tricoté, mais tu n'es limité que par ton imagination.
 
-More information on Roman cloak fabrics can be found in:  
-Jorgensen, L. B. (2004)  _A Matter of Material: Changes in Textiles from Roman Sites in Egypt’s Eastern Desert_,  in An Tard 11, pp 87-99
+Tu trouveras plus d'informations sur les tissus des manteaux romains dans :  
+Jorgensen, L. B. (2004)  _A Matter of Material : Changes in Textiles from Roman Sites in Egypt's Eastern Desert_, in An Tard 11, pp 87-99

@@ -1,10 +1,10 @@
 ---
-title: "Sleevecap front X"
+title: "Tête de manche devant X"
 ---
 
-![L'emplacement horizontal du point d'inflexion devant](./sleevecapfrontfactorx.svg)
+![L'emplacement horizontal du point de flexion avant](./sleevecapfrontfactorx.svg)
 
-Cette option contrôle la position horizontale du point d'inflexion de la tête de manche à l'avant de la manche.
+Cette option permet de contrôler la position horizontale du point de flexion du tête de manche à l'avant de la manche.
 
 <Tip>
 
@@ -14,4 +14,4 @@ Voir [comprendre la tête de manche](/docs/patterns/brian/options#understanding-
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](yuri_sleevecapfrontfactorx_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](yuri_sleevecapfrontfactorx_sample.svg "Effet de cette option sur le motif")

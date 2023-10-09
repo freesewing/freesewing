@@ -26,6 +26,7 @@ import {
   lineIntersectsCircle,
   lineIntersectsCurve,
   linesIntersect,
+  mergeI18n,
   mergeOptions,
   pctBasedOn,
   pointOnBeam,
@@ -36,6 +37,7 @@ import {
   splitCurve,
   stretchToScale,
   units,
+  goldenRatio,
 } from './utils.mjs'
 import { version } from '../data.mjs'
 
@@ -71,6 +73,7 @@ export {
   lineIntersectsCircle,
   lineIntersectsCurve,
   linesIntersect,
+  mergeI18n,
   mergeOptions,
   pctBasedOn,
   pointOnBeam,
@@ -81,4 +84,5 @@ export {
   splitCurve,
   stretchToScale,
   units,
+  goldenRatio,
 }

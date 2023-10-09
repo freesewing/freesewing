@@ -1,16 +1,16 @@
 ---
-title: Language
+title: Мова
 ---
 
-This controls the language that will be used to translate text on your pattern.
+Цей параметр визначає мову, яку буде використано для перекладу тексту на вашому шаблоні.
 
-FreeSewing currently supports the following languages:
+Наразі FreeSewing підтримує наступні мови:
 
-- English
-- Spanish
-- French
-- German
-- Dutch
+- Англійська мова
+- Іспанська
+- Французька
+- Німецька
+- Голландська
 
-You can picks any of these and your pattern will be translated in this language.
+Ви можете вибрати будь-яку з них, і ваш шаблон буде перекладено цією мовою.
 

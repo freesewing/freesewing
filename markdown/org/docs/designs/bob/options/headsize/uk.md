@@ -1,13 +1,13 @@
 ---
-title: Head size
+title: Розмір голови
 ---
 
-Controls the size of the bib, as it will be drafted to fit this head circumference.
+Керує розміром нагрудника, оскільки він буде скроєний відповідно до обхвату голови.
 
 In our tutorial (this bib is what we use in our tutorial to show people the ropes of designing their own patterns) we use a measurement for this.
 
-But we feel that's a bit overkill for real-world use on our site, so we've made it an option.
+Але ми вважаємо, що це трохи занадто для реального використання на нашому сайті, тому ми зробили його опцією.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bob_headsize_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bob_headsize_sample.svg "Вплив цієї опції на шаблон")

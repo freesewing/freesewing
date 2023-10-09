@@ -1,11 +1,15 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { ModalContextProvider } from 'shared/context/modal-context.mjs'
-import { LoadingContextProvider } from 'shared/context/loading-context.mjs'
+import { LoadingStatusContextProvider } from 'shared/context/loading-status-context.mjs'
 import { NavigationContextProvider } from 'shared/context/navigation-context.mjs'
+import { MobileMenubarContextProvider } from 'shared/context/mobile-menubar-context.mjs'
 
 export const ContextWrapper = ({ children }) => (
   <ModalContextProvider>
-    <LoadingContextProvider>
-      <NavigationContextProvider>{children}</NavigationContextProvider>
-    </LoadingContextProvider>
+    <LoadingStatusContextProvider>
+      <NavigationContextProvider>
+        <MobileMenubarContextProvider>{children}</MobileMenubarContextProvider>
+      </NavigationContextProvider>
+    </LoadingStatusContextProvider>
   </ModalContextProvider>
 )

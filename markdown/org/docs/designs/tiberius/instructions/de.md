@@ -1,33 +1,33 @@
 ---
-title: "Tiberius Tunica: Sewing Instructions"
+title: "Tiberius Tunica: Anleitung zum Nähen"
 ---
 
 <Note>
 
-Tiberius ist ein historisch inspiriertes Schnittmuster, und für mehr Authentizität ist das Nähen per Hand das Mittel der Wahl. Ich selber verwende eine Nähmaschine. Tu, was immer dir besser gefällt.
+Tiberius ist ein historisch inspiriertes Schnittmuster, und für mehr Authentizität ist das Nähen per Hand das Mittel der Wahl. Ich selber verwende eine Nähmaschine. Sie tun das.
 
 </Note>
 
 ### Schritt 1: Nähen der Schulternähte
 
-- Put both parts with good sides together. Sew the shoulder seams, taking care to stop at the notches for the head opening.
-- Finish the seams, with a method of your choice. (If you used the fabrics recommended in the [fabric options](/docs/patterns/tiberius/fabric), they _will_ fray. Folding the seam allowance twice, enclosing the raw edge and topstitching is an option. You can also use decorative topstitching.)
+- Lege beide Teile mit den guten Seiten zusammen. Nähen Sie die Schulternähte und achten Sie dabei darauf, dass Sie an den Einschnitten für die Kopföffnung aufhören.
+- Bearbeite die Nähte mit einer Methode deiner Wahl. (Wenn du die in den [Stoffoptionen](/docs/patterns/tiberius/fabric)empfohlenen Stoffe verwendest, werden sie __ ausfransen. Du kannst die Nahtzugabe zweimal falten, die Schnittkante einschlagen und absteppen. Du kannst auch dekorative Steppnähte verwenden).
 
 <Note>
 
-If you opted for cutting the whole tunica out of one piece, carefully cut out the head opening between the notches instead. Finish the opening.
+Wenn du dich dafür entschieden hast, die gesamte Tunica aus einem Stück zu schneiden, schneide stattdessen vorsichtig die Kopföffnung zwischen den Kerben aus. Beende die Eröffnung.
 
 </Note>
 
 ### Schritt 2: Nähe die Seitennähte
 
-- Still with good sides together, sew the side seams. Start at the notch for the armhole and work your way down. Take care to align your layers properly.
-- Finish seams.
+- Näht die Seitennähte immer noch mit der guten Seite nach oben. Beginne an der Kerbe für das Armloch und arbeite dich nach unten vor. Achte darauf, dass du deine Schichten richtig ausrichtest.
+- Beende die Nähte.
 
 ### Schritt 3: Versäubere die untere Kante
 
-Hem the bottom of your garment. If you want to use decorative stitches, this is another place to use them.
+Säume den unteren Teil deines Kleidungsstücks. Wenn du Zierstiche verwenden möchtest, ist dies ein weiterer Ort, an dem du sie einsetzen kannst.
 
 ### Schritt 4: Du bist fertig!
 
-Pull on your tunica, belt it around your waist, play around with how you gather the fabric, and enjoy!
+Ziehe deine Tunika an, lege sie um deine Taille, spiele damit, wie du den Stoff raffst, und genieße es!

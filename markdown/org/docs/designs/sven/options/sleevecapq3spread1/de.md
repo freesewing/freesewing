@@ -1,5 +1,5 @@
 ---
-title: "Sleevecap Q3 upward spread"
+title: "Armkugel Q3 Spreizung nach oben"
 ---
 
 ![Der Aufwärtstrend breitet sich im thrid-Quadranten der Ärmel aus](./sleevecapq3spread1.svg)
@@ -14,4 +14,4 @@ Siehe [die Armkugel verstehen](/docs/patterns/brian/options#understanding-the-sl
 
 ## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](sven_sleevecapq3spread1_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](sven_sleevecapq3spread1_sample.svg "Effekt dieser Option auf das Schnittmuster")

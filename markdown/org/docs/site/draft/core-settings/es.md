@@ -1,10 +1,10 @@
 ---
-title: Core Settings
+title: Configuración del núcleo
 ---
 
-The **Core Settings** menu allows you to tweak various aspects of the FreeSewing Core library, which -- under the hood -- generates your pattern for you.
+El menú **Core Settings** te permite ajustar varios aspectos de la biblioteca FreeSewing Core, que --bajo el capó-- genera tu patrón para ti.
 
-In contrast to [Design Options](/docs/site/draft/design-options/) which are specific for a given design, these Core Settings are the same for every design. So you will find this menu always provides the same settings, regardless of what design you are generating a pattern for.
+A diferencia de [Opciones de diseño](/docs/site/draft/design-options/) que son específicas para un diseño determinado, estos Ajustes del núcleo son los mismos para todos los diseños. Así que verás que este menú siempre proporciona los mismos ajustes, independientemente de para qué diseño estés generando un patrón.
 
 <ReadMore />
 

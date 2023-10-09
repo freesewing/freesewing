@@ -1,10 +1,10 @@
 ---
-title: "Visor length"
+title: "Longueur de la visière"
 ---
 
 ***
 
-Controls the length of the visor
+Contrôle la longueur de la visière
 
 ## Effet de cette option sur le motif
 

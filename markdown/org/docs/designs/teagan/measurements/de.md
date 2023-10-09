@@ -1,5 +1,5 @@
 ---
-title: "Teagan T-shirt: Required Measurements"
+title: "Teagan-T-Shirt: Erforderliche Maße"
 ---
 
 <PatternMeasurements pattern='teagan' />

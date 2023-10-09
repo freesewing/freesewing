@@ -1,5 +1,5 @@
 ---
-title: "Leg reduction"
+title: "Réduction de jambe"
 ---
 
 La quantité de réduction supplémentaire de l’étirement aux jambes (supérieures).
@@ -10,4 +10,4 @@ La quantité de réduction supplémentaire de l’étirement aux jambes (supéri
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](shin_legreduction_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](shin_legreduction_sample.svg "Effet de cette option sur le motif")

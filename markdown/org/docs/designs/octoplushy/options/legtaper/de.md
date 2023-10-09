@@ -1,8 +1,8 @@
 ---
-title: "Leg Taper"
+title: "Beinverjüngung"
 ---
 
-This setting changes how much the legs taper from the body down to the end.
+Diese Einstellung ändert, wie stark sich die Beine vom Körper zum Ende hin verjüngen.
 
 ## Effekt dieser Option auf das Schnittmuster
 

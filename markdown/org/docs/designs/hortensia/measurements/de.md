@@ -1,5 +1,5 @@
 ---
-title: "Hortensia handbag: Required Measurements"
+title: "Hortensia Handtasche: Erforderliche Maße"
 ---
 
 <PatternMeasurements pattern='hortensia' />

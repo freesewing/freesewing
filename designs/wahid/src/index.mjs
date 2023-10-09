@@ -1,5 +1,7 @@
-import { Design } from '@freesewing/core'
+import { Design, mergeI18n } from '@freesewing/core'
 import { data } from '../data.mjs'
+import { i18n as brianI18n } from '@freesewing/brian'
+import { i18n as wahidI18n } from '../i18n/index.mjs'
 import { front } from './front.mjs'
 import { back } from './back.mjs'
 import { frontFacing } from './frontfacing.mjs'
@@ -24,6 +26,11 @@ const Wahid = new Design({
   ],
 })
 
+// Merge translations
+const i18n = mergeI18n([brianI18n, wahidI18n], {
+  o: { drop: Object.keys(brianI18n.en.o).filter((o) => o.indexOf('sleeve') === 0) },
+})
+
 // Named exports
 export {
   front,
@@ -35,4 +42,5 @@ export {
   pocketFacing,
   pocketInterfacing,
   Wahid,
+  i18n,
 }

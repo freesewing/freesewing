@@ -1,5 +1,5 @@
 ---
-title: "Noble body block: Design Options"
+title: "Edler Karosserieblock: Gestaltungsmöglichkeiten"
 ---
 
 <PatternOptions pattern='noble' />

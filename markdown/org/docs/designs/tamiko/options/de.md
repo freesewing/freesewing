@@ -1,5 +1,5 @@
 ---
-title: "Tamiko top: Design Options"
+title: "Tamiko Oberteil: Design Optionen"
 ---
 
 <PatternOptions pattern='tamiko' />

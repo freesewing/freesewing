@@ -1,5 +1,5 @@
 ---
-title: "Simon shirt: Cutting Instructions"
+title: "Simon Shirt: Schnittanleitung"
 ---
 
 - **Oberstoff**
@@ -24,10 +24,10 @@ title: "Simon shirt: Cutting Instructions"
 
 <Note>
 
-Wenn du zwei ausschnitst, kannst du sie [gute Seiten zusammen schneiden](/docs/sewing/good-sides-together).
-Bei der Arbeit mit Stoff mit einem Muster ziehe ich es jedoch vor, sie individuell zu schneiden, um das Muster passend zu steuern.
+Wenn du zwei Teile ausschneidest, kannst du sie [mit guten Seiten zusammen](/docs/sewing/good-sides-together) ausschneiden.
+Wenn der Stoff jedoch ein Muster hat, ziehe ich es vor, sie einzeln auszuschneiden, damit ich das Abstimmen der Muster aufeinander genau kontrollieren kann.
 
-Wenn Sie sie einzeln schneiden, denken Sie daran, dass sie Spiegelbilder voneinander sein müssen. Wenden Sie also entweder Ihr Muster oder Ihren Stoff, wenn Sie das zweite schneiden.
+Wenn du die Teile einzeln ausschneidest, musst du daran denken, dass sie Spiegelbilder voneinander sein müssen. Wende also entweder dein Schnittmuster oder deinen Stoff, wenn du das zweite Teil ausschneidest.
 
 </Note>
 
@@ -35,7 +35,7 @@ Wenn Sie sie einzeln schneiden, denken Sie daran, dass sie Spiegelbilder voneina
 
 ###### Caveats
 
-- The **front right**, **front left**, and **sleeve** have seams that should be made into flat-felled seams. Daher haben sie zusätzliche Nahtzuschüsse für diese Nähte. Beim Ausschneiden dieser Stücke musst du **muss** diese zusätzliche Naht berücksichtigen.
+- Die **Vorderseite rechts**, die **Vorderseite links** und der **Ärmel** haben Nähte, die zu Flachnähten gemacht werden sollten. Daher haben sie zusätzliche Nahtzuschüsse für diese Nähte. Beim Ausschneiden dieser Stücke musst du **muss** diese zusätzliche Naht berücksichtigen.
 The cuff guard and cuff placket have no seam allowance. Das ist normal, schneiden Sie sie einfach aus, wie sie auf dem Muster gezogen werden.
 Do not cut out the darts in the **back** piece. Sie sollten sie markieren, aber nicht ausschneiden.
 

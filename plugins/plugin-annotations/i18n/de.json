@@ -1,0 +1,21 @@
+{
+  "canvas": "canvas",
+  "cut": "Cut",
+  "cutOnFold": "Cut on fold",
+  "cutOnFoldAndGrainline": "Cut on fold / Grainline",
+  "fabric": "main fabric",
+  "facing": "facing",
+  "from": "from",
+  "fusible": "fusible interfacing",
+  "interfacing": "interfacing",
+  "lining": "lining",
+  "mirrored": "mirorred",
+  "noName": "No name",
+  "noVersion": "No version",
+  "onBias": "on the bias",
+  "onFold": "on the fold",
+  "onFoldAndBias": "on the fold, and on bias",
+  "sewTogether": "Sew together",
+  "theBlackOutideOfThisBoxShouldMeasure": "The (black) outside of this box should measure",
+  "theWhiteInsideOfThisBoxShouldMeasure": "The (white) inside of this box should measure"
+}

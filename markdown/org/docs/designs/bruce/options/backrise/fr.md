@@ -1,5 +1,5 @@
 ---
-title: "Hauteur du dos"
+title: "Élévation arrière"
 ---
 
 ![L'option hauteur dos pour Bruce](./backrise.svg)
@@ -12,4 +12,4 @@ Ce facteur augmentera la hauteur seulement à l'arrière de votre boxer.
 
 ## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bruce_backrise_sample.svg "Effet de cette option sur le modèle")
+![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](bruce_backrise_sample.svg "Effet de cette option sur le motif")

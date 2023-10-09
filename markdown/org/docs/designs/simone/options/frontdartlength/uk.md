@@ -1,12 +1,12 @@
 ---
-title: "Front dart length"
+title: "Довжина передніх виточок"
 ---
 
-Controls how close the **front waist darts** approach the bust points.
+Контролює, наскільки близько передні талієві виточки **** наближаються до точок обхвату грудей.
 
-- Increase this option to lengthen the front waist darts moving them closer to the bust points
-- Decrease this option to shorten the front waist darts moving them further away from the bust points
+- Збільште цей параметр, щоб подовжити передні талієві виточки, перемістивши їх ближче до точок грудей
+- Зменшіть цей параметр, щоб вкоротити передні талієві виточки, перемістивши їх далі від точок обхвату грудей
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](simone_frontdartlength_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](simone_frontdartlength_sample.svg "Вплив цієї опції на шаблон")

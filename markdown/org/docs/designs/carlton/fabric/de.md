@@ -1,39 +1,39 @@
 ---
-title: "Carlton coat: Fabric Options"
+title: "Carlton Mantel: Stoff Optionen"
 ---
 
-### Main Fabric
+### Hauptstoff
 
-You want a fabric that has a bit of body that holds its shape. Generally **Wools** of **coating weight** will be the best choice as they will provide warmth and give shape to the coat. Other fabrics of **coating weight** should also work. However if you are looking for something more lightweight you could try **Linens** and lighter **Wools**, but you may need to face these fabrics to give them more body before construction. **Fleece** is a cheaper alternate to **Wools** but may note keep as long, if you are putting the effort into properly tailoring Carlton then you are gonna want to consider buying a fabric that will last for a long period of time.
+Du willst einen Stoff, der ein wenig Körper hat und seine Form behält. Im Allgemeinen ist **Wolle** von **Beschichtungsgewicht** die beste Wahl, da sie wärmt und dem Mantel Form verleiht. Andere Stoffe von **Beschichtungsgewicht** sollten ebenfalls funktionieren. Wenn du jedoch etwas Leichteres suchst, könntest du **Linens** und die leichtere **Wools**ausprobieren, aber du musst diese Stoffe eventuell vor der Verarbeitung bearbeiten, um ihnen mehr Körper zu verleihen. **Fleece** ist eine günstigere Alternative zu **Wools** , hält aber nicht so lange. Wenn du dir die Mühe machst, Carlton richtig zu schneidern, solltest du einen Stoff kaufen, der lange hält.
 
 <Note>
 
-Remember that this pattern is intended to be a winter coat so you need to consider warmth when choosing your fabric.
+Denke daran, dass dieses Schnittmuster für einen Wintermantel gedacht ist, also musst du bei der Wahl deines Stoffes auf die Wärme achten.
 
 </Note>
 
-### Linings and Pocket Bags
+### Einlagen und Taschenbeutel
 
-Lightweight **Cottons** such as **Cotton Silesia**, **Cotton Lawn** or **Glazed Cottons** should do for the body lining but you may find that you require **Silks** or similar for the sleeve linings to reduce friction and make it easier to take on and off over the arms. **Silks** can also be used for the body as well but the **Cotton** will be more durable in the long run. Pocket bags should be out of **Cotton** or something that is strong enough to hold the weight of the intended items you wish to carry in them. **Printed Cottons** are a fun thing to try but if your main fabric is quite bulky you may find they add to much weight.
+Leichte **Baumwollstoffe** wie z.B. **Cotton Silesia**, **Cotton Lawn** oder **Glazed Cottons** sollten für das Körperfutter ausreichen, aber vielleicht brauchst du **Silks** oder ähnliches für die Ärmelfutter, um die Reibung zu verringern und das An- und Ausziehen über die Arme zu erleichtern. **Seiden** können auch für den Körper verwendet werden, aber die **Baumwolle** ist auf lange Sicht haltbarer. Taschentaschen sollten aus **Baumwolle** oder etwas anderem bestehen, das stark genug ist, um das Gewicht der Gegenstände zu halten, die du darin transportieren willst. **Bedruckte Baumwollstoffe** sind eine tolle Sache, aber wenn dein Hauptstoff ziemlich voluminös ist, kann es sein, dass sie zu viel Gewicht hinzufügen.
 
 <Tip>
 
-As per usual with Linings it is really down to your prefered lining materials but if you are new to lining a coat we suggest to use the **Cotton** options for the body and pockets and use the **Silk** option for the sleeves.
+Wie bei Futterstoffen üblich, hängt es wirklich von den von dir bevorzugten Materialien ab, aber wenn du zum ersten Mal einen Mantel fütterst, empfehlen wir dir, die **Baumwolloption** für den Körper und die Taschen und die **Seidenoption** für die Ärmel zu verwenden.
 
 </Tip>
 
-### Facings
+### Gesichter
 
-We recommend **Hair canvases**. You may be tempted to use modern interfacing but hair canvases will provide the best results. You will want a combination of different weight hair canvases such as lightweight to medium weight **Tailors Canvas** and heavyweight **Horsehair Canvas**. A common misconception is that you have to use horsehair canvas for all of it, but this is not the case and really is only needed for areas that need the most structure such as the upper front but are often too stiff for other parts. Tailors canvas is generally used for the majority of facing a coat.
+Wir empfehlen **Hair Leinwände**. Du könntest in Versuchung geraten, moderne Einlagen zu verwenden, aber mit Haarvliesen erzielst du die besten Ergebnisse. Du wirst eine Kombination aus verschiedenen Gewichtshaar-Leinwänden benötigen, wie z.B. leichtes bis mittelschweres **Tailors Canvas** und schweres **Rosshaar-Leinwand**. Ein weit verbreiteter Irrglaube ist, dass du für alles Rosshaarsegeltuch verwenden musst. Das ist aber nicht der Fall und wird nur für die Bereiche benötigt, die am meisten Struktur brauchen, wie z. B. die obere Vorderseite, aber für andere Teile sind sie oft zu steif. Schneiderleinen wird in der Regel für den größten Teil der Verkleidung eines Mantels verwendet.
 
 <Tip>
 
-You can use fusible or non-fusible facings but you may find that you still need to flatline the facing and fabric pieces together with basting stitches, even after fusing for the best results.
+Du kannst aufbügelbare oder nicht aufbügelbare Einlagen verwenden, aber es kann sein, dass du die Einlage und die Stoffteile auch nach dem Fixieren noch mit Heftstichen zusammenheften musst, um ein optimales Ergebnis zu erzielen.
 
 </Tip>
 
 <Note>
 
-Certain hair canvases, such as **Horsehair canvas** can have stiff hairs that can poke out of the fabric so will require tape like tailors tape to prevent this from happening.
+Bestimmte Haarleinwände, wie z.B. **Pferdehaarleinwand**, können steife Haare haben, die aus dem Stoff herausstechen können, so dass Klebeband wie Schneiderband erforderlich ist, um dies zu verhindern.
 
 </Note>

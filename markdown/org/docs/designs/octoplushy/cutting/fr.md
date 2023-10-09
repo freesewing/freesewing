@@ -1,22 +1,22 @@
 ---
-title: "Octoplushy, the plushy octopus: Cutting Instructions"
+title: "Octoplushy, la pieuvre en peluche : Instructions de découpage"
 ---
 
-- **Color 1 (Upper body, top of legs & head)**
-  - **Octoplushy, Octopus & Squid**
-    - Cut **8 head** parts
-  - **Octopus only**
-    - Cut **2 eyebrow** parts
-  - **Squid only**
-    - Cut **2 head (a)** parts
+- **Couleur 1 (haut du corps, haut des jambes & tête)**
+  - **Octoplushy, Octopus & Calmar**
+    - Coupe **8 tête** parties
+  - **Pieuvre seulement**
+    - Coupe **2 sourcils** parties
+  - **Calmar uniquement**
+    - Coupe **2 tête (a)** parties
 
-- **Color 2 (Belly, bottom of legs)**
-  - **Octoplushy, Octopus & Squid**
-    - Cut **8 leg** parts
-  - **Squid only**
-    - Cut **2 leg (a)** parts
+- **Couleur 2 (ventre, bas des jambes)**
+  - **Octoplushy, Octopus & Calmar**
+    - Découpe **8 pièces de la jambe**
+  - **Calmar uniquement**
+    - Coupe **2 jambes (a)** parties
 
-- **Eyes Fabric**
-  - **Octopus & Squid**
-    - Cut **2 eye (white)** parts
-    - Cut **2 pupil (black)** parts
+- **Tissu pour les yeux**
+  - **Poulpe & Calmar**
+    - Coupe **2 yeux (blancs)** parties
+    - Coupe **2 pupilles (noires)** pièces

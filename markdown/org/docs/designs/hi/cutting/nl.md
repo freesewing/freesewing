@@ -2,16 +2,16 @@
 title: "Hi shark plush toy: Cutting Instructions"
 ---
 
-- **Color 1 (Upper body; Traditionally blue)**
+- **Kleur 1 (bovenlichaam; traditioneel blauw)**
   - Cut **2 Body (color 1)**
   - Cut **2 Tail (color 1)**
   - Cut **2 Top Fin (color 1)**
   - Cut **2 Bottom Fin (color 1)**
-- **Color 2 (Belly; Traditionally white)**
+- **Kleur 2 (Buik; traditioneel wit)**
   - Cut **1 Belly (color 2)**
   - Cut **2 Above Mouth (color 2)**
-- **Color 3 (Mouth; Traditionally pink)**
+- **Kleur 3 (Mond; traditioneel roze)**
   - Cut **1 Mouth (color 3)**
-- **Color 4 (Teeth; Traditionally white)**
+- **Kleur 4 (Tanden; traditioneel wit)**
   - Cut **1 Upper Teeth (fabric 2)**
   - Cut **1 Lower Teeth (fabric 2)**

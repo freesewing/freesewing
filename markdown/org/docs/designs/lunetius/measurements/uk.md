@@ -1,5 +1,5 @@
 ---
-title: "Lunetius Lacerna: Required Measurements"
+title: "Лунецій Лацерна: Необхідні вимірювання"
 ---
 
 <PatternMeasurements pattern='lunetius' />

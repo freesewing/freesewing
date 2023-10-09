@@ -1,5 +1,8 @@
 ---
-titre : "Bloc corporel pour Bent"
+title: "Patron de base Bent"
 ---
 
-<PatternDocs pattern='bent' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='bent' docs />
+

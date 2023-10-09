@@ -1,9 +1,9 @@
 ---
-title: "Hungry"
+title: "Hungrig"
 ---
 
-This setting determins how long it has been since your Hi has had something to eat. More hungry results in a leaner shark.
+Diese Einstellung legt fest, wie lange es her ist, dass dein Hi etwas zu essen bekommen hat. Mehr Hunger führt zu einem schlankeren Hai.
 
-## Effect of this option on the pattern
+## Effekt dieser Option auf das Schnittmuster
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](hi_hungry_sample.svg "Effect of this option on the pattern")
+![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](hi_hungry_sample.svg "Effekt dieser Option auf das Schnittmuster")

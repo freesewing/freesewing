@@ -1,13 +1,13 @@
 ---
-title: "Crotch seam angle"
+title: "Ángulo de costura cruda"
 ---
 
-Controls the angle of the crotch seam curve.
+Controla el ángulo de la curva de la costura de la entrepierna.
 
-- 0% makes the crotch seam draft parallel to the hem.
-- Increasing this option will draft the crotch seam at 180 - the angle.
+- 0% hace que el calado de la costura de la entrepierna sea paralelo al dobladillo.
+- Si aumentas esta opción, la costura de la entrepierna formará un ángulo de 180º.
 
 
 ## Efecto de esta opción en el patrón
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](paco_crotchseamcurveangle_sample.svg "Effect of this option on the pattern")
+![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](paco_crotchseamcurveangle_sample.svg "Efecto de esta opción en el patrón")

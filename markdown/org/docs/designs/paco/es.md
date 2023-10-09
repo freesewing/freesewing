@@ -1,5 +1,8 @@
 ---
-title: "Paco pants"
+title: "Paco, pantalones largos"
 ---
 
-<PatternDocs pattern='paco' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='paco' docs />
+

@@ -1,57 +1,57 @@
 ---
-title: "Albert apron: Sewing Instructions"
+title: "Albert Schürze: Anleitung zum Nähen"
 ---
 
 ### Schritt 1: Die Tasche
 
-- Along the top of the pocket fold the seam allowance to wrong side, press.
-- Then fold the top hem allowance to wrong side and press, making sure the seam allowance is tucked underneath. Pin in place if you need to.
-- Press the seam allowance of the sides and bottom to the wrong side.
-- On the right side topstich close to where the hem edge lies underneath, making sure to catch the hem and seam allowances as you sew.
-- Pin the pocket to the front using the guides.
-- _Edgestitch_ the sides and bottom of the pocket leaving the top open. Make sure to backstitch at the start and end to secure the pocket properly.
+- Falte die Nahtzugabe an der Oberseite der Tasche auf die linke Seite und bügle sie.
+- Falte dann die obere Saumzugabe auf die linke Seite und bügle sie, wobei du darauf achtest, dass die Nahtzugabe untergeschlagen wird. Wenn nötig, kannst du sie feststecken.
+- Bügle die Nahtzugabe an den Seiten und am Boden auf die linke Seite.
+- Steppe auf der rechten Seite dicht an der Saumkante ab und achte darauf, dass du den Saum und die Nahtzugaben beim Nähen erwischst.
+- Stecke die Tasche mithilfe der Hilfslinien auf der Vorderseite fest.
+- _Näht die Seiten und den Boden der Tasche mit der Kante_ und lasst die Oberseite offen. Achte darauf, dass du am Anfang und am Ende abnähst, um die Tasche richtig zu sichern.
 
 <Tip>
 
-If you have trouble catching the top hem we suggest to either _Baste_ close to the hem edge first, and use that as a guide when stitching on the right side or pin the hem edge down from the right side making sure the pins are parallel to the top edge and use them as a guide.
+Wenn du Probleme hast, den oberen Saum zu erwischen, empfehlen wir dir, entweder zuerst dicht an die Saumkante zu heften und diese als Führung zu verwenden, wenn du auf der rechten Seite nähst, oder die Saumkante von der rechten Seite her festzustecken und dabei darauf zu achten, dass die Stecknadeln parallel zur oberen Kante liegen und diese als Führung zu verwenden.
 
 </Tip>
 
 <Note>
 
-There are multiple ways to sew a patch pocket so use the way you prefer if you do not like this one.  
-A fun thing you can do is embroider/stitch the pocket with the name of the person the apron is for or even a cute design. Just remember that aprons typically get dirty so don't go to overtop with it.
+Es gibt mehrere Möglichkeiten, eine aufgesetzte Tasche zu nähen, also nimm die Methode, die dir am besten gefällt, wenn dir diese hier nicht gefällt.  
+Du kannst die Tasche auch mit dem Namen der Person, für die die Schürze bestimmt ist, oder mit einem süßen Motiv besticken/aufnähen. Denke daran, dass Schürzen in der Regel schmutzig werden, daher solltest du es nicht übertreiben.
 
 </Note>
 
-### Step 2: The Front
+### Schritt 2: Die Vorderseite
 
-- Press under the side seam allowances to the wrong side.
-- Press under the side seams to the wrong side along the hem lines making sure the seam allowances are tucked underneath.
-- On the right side topstich close to where the folded edges lie underneath, making sure to catch the hems as you sew.
-- Repeat Step 2 for the top and bottom hems.
+- Bügle die Seitennahtzugaben auf die linke Seite.
+- Bügle die Seitennähte entlang der Saumlinien auf die linke Seite und achte darauf, dass die Nahtzugaben nach unten gesteckt werden.
+- Steppe auf der rechten Seite dicht an der Stelle ab, an der die gefalteten Kanten unten liegen, und achte darauf, dass du die Säume beim Nähen erwischst.
+- Wiederhole Schritt 2 für den oberen und unteren Saum.
 
 <Note>
 
-It is recommended to hem the side seams before the top and bottom seams as they are narrower.  
-The side seams are narrow hems simply being the seam allowance folded over twice.
+Es wird empfohlen, die Seitennähte vor den oberen und unteren Nähten zu säumen, da sie schmaler sind.  
+Die Seitennähte sind schmale Säume, bei denen einfach die Nahtzugabe zweimal umgeschlagen wird.
 
 </Note>
 
-### Step 3: The Straps
+### Schritt 3: Die Gurte
 
-- Fold one strap in half, right sides together and sew the top and side together.
-- Turn inside out through the bottom. Press.
-- Using the cross and rectangle as a guide, stitch the top of the strap to the wrong side of the front on the top left.
-- Using the cross and rectangle as a guide, stitch the bottom of the strap to the wrong side of the front at the side right.
-- Repeat Step 3 for the remaining strap attaching it at the top right and then the side left.
+- Falte einen Riemen in der Hälfte, rechts auf rechts, und nähe die Oberseite und die Seite zusammen.
+- Drehe den Boden von innen nach außen. Presse.
+- Nutze das Kreuz und das Rechteck als Orientierungshilfe und nähe das obere Ende des Gurtes links oben auf der falschen Seite der Vorderseite an.
+- Nutze das Kreuz und das Rechteck als Orientierungshilfe und nähe die Unterseite des Riemens auf der falschen Seite des Vorderteils an der rechten Seite fest.
+- Wiederhole Schritt 3 für den verbleibenden Gurt und befestige ihn erst oben rechts und dann an der linken Seite.
 
 <Note>
 
-You can make another set of straps to tie at the back if you wish to keep the apron close to body when moving.
+Du kannst einen weiteren Satz Bänder anfertigen, die du am Rücken festbindest, wenn du die Schürze bei Bewegungen eng am Körper halten möchtest.
 
 </Note>
 
 ### Schritt 4: Viel Spaß!
 
-Fertig! Now go enjoy your apron and make every stain a memory!
+Fertig! Jetzt geh und genieße deine Schürze und mache jeden Fleck zu einer Erinnerung!

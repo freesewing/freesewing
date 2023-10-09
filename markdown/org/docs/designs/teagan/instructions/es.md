@@ -1,10 +1,10 @@
 ---
-title: "Teagan T-shirt: Sewing Instructions"
+title: "Camiseta Teagan: Instrucciones de costura"
 ---
 
 ## Paso 1: Cierra las costuras del hombro
 
-![Close the shoulder seams](step01.svg)
+![Cerrar las costuras del hombro](step01.svg)
 
 - Coloca el frente y la parte trasera sobre el otro con [buenos lados juntos](/docs/sewing/good-sides-together). Alinear las costuras del hombro.
 - Servir las costuras del hombro o unirlas con un zigzag estrecho (~2 mm) en la costura estándar.
@@ -15,7 +15,7 @@ Opcional: En un tejedor más apretado, puede optar por reforzar las costuras del
 
 ## Paso 2: Establecer en mangas
 
-![Set in sleeves](step02.svg)
+![Establecer en mangas](step02.svg)
 
 - Coloca tu ahora unido frente y atrás con el lado bueno arriba.
 - Identifique los lados delanteros y traseros de cada una de sus mangas. (Así es como separas la manga izquierda de la derecha.) (Así es como separas la manga izquierda de la derecha.) (Así es como separas la manga izquierda de la derecha.) On your paper pattern piece, the front side of the sleeve is to the right.
@@ -25,63 +25,63 @@ Opcional: En un tejedor más apretado, puede optar por reforzar las costuras del
 - Coser / servir tu manga anclada en su lugar.
 - Repita para la otra manga.
 
-## Step 3: Sew the neck finish
+## Paso 3: Cose la terminación del cuello
 
-There are two options for the neck finish on Teagan: a knit band or knit binding. Knit band is what you typically see on store-bought T-shirts, whereas knit binding is the finish you'll find on the Aaron A-Tank. Directions for both are given here.
+Hay dos opciones para el acabado del cuello de Teagan: una banda de punto o un ribete de punto. La banda de punto es lo que sueles ver en las camisetas compradas en tiendas, mientras que el ribete de punto es el acabado que encontrarás en la camiseta Aaron A-Tank. Aquí se dan las instrucciones para ambos.
 
 <Note>
 Este es el paso más complejo para hacer la camisa de Teagan, pero sólo requiere un poco de práctica. No te preocupes, todo lo que tienes que hacer es hacer un par de estos y serás un profesional en poco tiempo.
 </Note>
 
-### Option 1: knit band finish
+### Opción 1: acabado de banda de punto
 
-#### Place (the start of) your knit band
+#### Coloca (el inicio de) tu banda de punto
 
-![Place your knit band](step03f.svg)
+![Coloca tu banda de punto](step03f.svg)
 
-- Fold your binding in half lengthwise (parallel to the longest side), and press.
-- Put your T-shirt down with the back good side up, and place your band strip on top of it, lining up the raw edges of the band with the raw edge of the neck opening.
-- Your band should start at the center back of the neck opening.
-- Now shift your binding strip 1cm beyond your starting point. This little extra will guarantee we can join the two ends later.
+- Dobla la encuadernación por la mitad a lo largo (paralelamente al lado más largo), y presiona.
+- Coloca la camiseta con la parte buena de la espalda hacia arriba, y pon encima la tira de banda, alineando los bordes crudos de la banda con el borde crudo de la abertura del cuello.
+- Tu banda debe empezar en el centro de la parte posterior de la abertura del cuello.
+- Ahora desplaza tu tira de unión de 1 cm más allá de tu punto de partida. Este pequeño extra garantizará que podamos unirnos a los dos fines más adelante.
 
-#### Sew band in place
+#### Cose la banda en su sitio
 
-![Sew knit band in place](step03g.svg)
+![Cose la banda de punto en su sitio](step03g.svg)
 
-- Place your presser foot 3 cm along the knit band, so a 4 cm tail will be left unstitched. This will help us join the ends together later. Then, sew around the neck opening, stretching the band gently as you sew.
+- Coloca el prensatelas a 3 cm a lo largo de la banda de punto, de modo que quede una cola de 4 cm sin coser. Esto nos ayudará a unir los extremos más tarde. Luego, cose alrededor de la abertura del cuello, estirando la banda suavemente mientras coses.
 
 <Note>
   
-This stretching is the trickiest part. Many online tutorials will tell you to simply start with a band slightly smaller than the neck opening, and stretch to fit. While an option, this does not account for differences in fabric stretch and elasticity, and can result in a floppy or puckered neck finish. Stretching to fit the neck opening by feel is something that takes a bit of practice, but is a good skill to build for better finishes long-term.
+Este estiramiento es la parte más complicada. Muchos tutoriales en línea te dirán que empieces simplemente con una banda ligeramente más pequeña que la abertura del cuello, y que la estires hasta ajustarla. Aunque es una opción, no tiene en cuenta las diferencias de elasticidad y estiramiento del tejido, y puede dar lugar a un acabado de cuello flojo o fruncido. Estirarse para ajustarse a la abertura del mástil mediante el tacto es algo que requiere un poco de práctica, pero es una buena habilidad a desarrollar para conseguir mejores acabados a largo plazo.
   
 </Note>
 
-- Stop sewing 3 cm before the end, leaving a tail like we did at the beginning.
+- Dejar de coser 3 cm antes del final, dejando una cola como lo hicimos al principio.
 
-#### Sew band ends together
+#### Cose los extremos de la banda
 
-![Sew band ends](step03c.svg)
+![Cose los extremos de la banda](step03c.svg)
 
-Now it's time to sew the ends of our knit band together.
-- Take the end of your knit band, and stretch it along the 3 cm separating it from the start point as you would while sewing. On the band, mark where the band reached the start point, or center back. Do the same for the other end.
-- Fold your T-shirt in whatever way makes it more easy for you to place both band ends with good sides together, aligning the marks. Sew them together at the marks.
- - You should now have a joined knit band.
+Ahora es el momento de coser los extremos de nuestra banda de punto.
+- Coge el extremo de tu banda de punto y estíralo a lo largo de los 3 cm que lo separan del punto de inicio, como harías al coser. En la banda, marca dónde llegó la banda al punto de inicio, o al centro de la espalda. Haga lo mismo con el otro extremo.
+- Dobla la camiseta de la forma que te resulte más fácil para colocar los dos extremos de la banda con los lados bien juntos, alineando las marcas. Consúltenlos juntos en las marcas.
+ - Ahora deberías tener una banda de punto unida.
 
 <Note>
 
-6 cm is not much, but should be enough to get both edges comfortably under your sewing machine to sew them together.
+6 cm no es mucho, pero debería ser suficiente para conseguir que ambos bordes cómodamente debajo de su máquina de coser juntos.
 
 </Note>
 
-![Finish knit band](step03h.svg)
+![Banda de punto de acabado](step03h.svg)
 
-- Now that your band ends are joined together, it’s time to finish the last 6 cm, by stretching and sewing down the band as you did for the rest.
+- Ahora que los extremos de la banda están unidos, es el momento de terminar los últimos 6 cm, estirando y cosiendo la banda como hiciste con el resto.
 
-Hurray! You've finished the trickiest part! Hurray! You've finished the trickiest part! Optionally, you can secure the raw edges by stitching them down to the T-shirt fabric, just inside the knit band with a sig-zag or coverlock stitch. This is not required, but it is a detail that you'll see on many ready-to-wear T-shirts, and it can help your neck band lie flat.
+¡Hurra! ¡Has terminado la parte más difícil! Hurray! You've finished the trickiest part! Optionally, you can secure the raw edges by stitching them down to the T-shirt fabric, just inside the knit band with a sig-zag or coverlock stitch. No es obligatorio, pero es un detalle que verás en muchas camisetas listas para llevar, y puede ayudar a que la banda del cuello quede plana.
 
-![Sew down knit band to secure](step03i.svg)
+![Cose la banda de punto para fijarla](step03i.svg)
 
-### Option 2: knit binding finish
+### Opción 2: acabado de punto
 
 <Tip>
 
@@ -89,86 +89,86 @@ Se puede encontrar una forma más extensa de enlazar en la [Instucciones de Aaro
 
 </Tip>
 
-#### Place (the start of) your binding
+#### Colocar (el inicio de) tu vinculación
 
-![Place your binding](step03a.svg)
+![Coloca tu vinculación](step03a.svg)
 
-- Put your T-shirt down with the back good side up, and place your binding strip on top of it with the good side down (as in, good sides together). Your binding should start at the center back of the neck opening.
-- Align the long edge of your strip with the edge of your fabric so the strip lies on top of the fabric (not in the opening). Place the corner on your starting point.
-- Now shift your binding strip 1cm beyond your starting point. This little extra will guarantee we can join the two ends later.
+- Pon tu camisa abajo con la parte trasera buena arriba, y coloque su tira de unión en la parte superior con el lado bueno hacia abajo (como en los lados buenos juntos). Su unión debe comenzar en la parte central de la parte trasera del cuello.
+- Alínea el largo borde de tu tira con el borde de tu tela para que la tira se encuentre en la parte superior de la tela (no en la abertura). Coloque la esquina en su punto de partida.
+- Ahora desplaza tu tira de unión de 1 cm más allá de tu punto de partida. Este pequeño extra garantizará que podamos unirnos a los dos fines más adelante.
 
-#### Sew binding in place
+#### Marcar enlace en su lugar
 
-![Sew binding in place](step03b.svg)
+![Marcar enlace en su lugar](step03b.svg)
 
-- Place your presser foot 3 cm along the knit binding, so a 3 cm tail will be left unstitched. This will help us join the ends of the binding later. Then, sew 1.5 cm from the edge around the neck opening, stretching the binding gently as you sew.  (Note: this is not the standard seam allowance.)
-- Stop sewing 3 cm before the end, leaving a tail like we did at the beginning.
+- Coloque su pie más presor de 3 cm a lo largo del encuadernado para que una cola de 3 cm quede desenterrada. Esto nos ayudará a unirnos a los fines de lo vinculante más adelante. Luego, coser a 1,5 cm del borde alrededor del cuello, estirando la unión suavemente a medida que codes.  (Nota: esta no es la costura estándar.)
+- Dejar de coser 3 cm antes del final, dejando una cola como lo hicimos al principio.
 
-#### Mark and sew binding ends
+#### Marcar y coser extremos de enlace
 
-![Sew binding ends](step03c.svg)
+![Finales de encuadernación](step03c.svg)
 
-- With about 6cm left to go before we complete our circle, it’s time to sew the ends of the binding together.
-- Take one of the edges, and stretch it along the 3cm separating it from the start point as you would while sewing. On the binding, mark where the binding reached the start point. Do the same for the other end.
-- Fold your T-shirt in whatever way makes it more easy for you to place both binding ends with good sides together, aligning the marks. Sew them together at the marks.
+- Con alrededor de 6 cm para ir antes de completar nuestro círculo, es hora de coser los extremos de la unión juntos.
+- Tome uno de los bordes, y lo estire a lo largo de los 3 cm separándolo del punto de partida como lo haría mientras coser. En el encuadernador, marque donde el enlace alcanzó el punto de partida. Haga lo mismo con el otro extremo.
+- Doblar la camiseta de cualquier manera le hace más fácil colocar ambos extremos de unión con buenos lados juntos, alineando las marcas. Consúltenlos juntos en las marcas.
 
 <Note>
 
-6 cm is not much, but should be enough to get both edges comfortably under your sewing machine to sew them together.
+6 cm no es mucho, pero debería ser suficiente para conseguir que ambos bordes cómodamente debajo de su máquina de coser juntos.
 
 </Note>
 
-![Finish binding](step03d.svg)
+![Finalizar enlace](step03d.svg)
 
-- Now that your binding ends are joined together, it’s time to finish the last 6cm of binding. Sew it down, staying 1.5cm from the edge as you did before.
+- Ahora que los extremos de la unión están unidos, es hora de terminar los últimos 6 cm de encuadernación. Manténgalo abajo, permaneciendo a 1,5 cm del borde como lo hiciste antes.
 
-#### Fold knit binding to the back and sew down
+#### Doble unión de tejidos a la espalda y coser
 
-![Sew down binding](step03e.svg)
+![Navegar por enlace](step03e.svg)
 
-- Fold your binding fabric around the fabric of your T-shirt to the back. This is how we’ll sew it down.
-- While the fabric is folded double at the front (hiding the fabric edge in the process), there’s no need for that at the back. We will merely trim back the edge later, given that knit doesn’t ravel. If we were to fold back the fabric at the back too, it would only add bulk.
-- Now you’ll sew the binding down. From the right side of your fabric, sew along the inner edge of your binding (furthest from the edge), making sure to catch the binding at the back in the process.
+- Doblar tu tela de unión alrededor de la tela de tu camisa hacia la espalda. Así es como lo costaremos.
+- Mientras que la tela está doblada en la parte delantera (ocultando el borde de la tela en el proceso), no hay necesidad de eso en la parte trasera. Simplemente recortaremos el borde más tarde, dado que el nudo no se cuelga. Si tuviésemos que doblar la tela también en la espalda, sólo añadiríamos granel.
+- Ahora coser el encuadernado. Desde el lado derecho de tu tejido, coser a lo largo del borde interior de tu unión (más alejado del borde), asegurándose de capturar el enlace en la espalda en el proceso.
 
 <Note>
-If you have a coverlock machine, that would be perfect for this seam.
+Si usted tiene una máquina de cierre, eso sería perfecto para esta costura.
 </Note>
 
-- You’ll have to, once again, stretch your binding a bit while doing this. But this time, there’s an extra caveat to look out for.
+- Tendrás que, una vez más, estirar tu vinculación un poco mientras haces esto. Pero esta vez hay una advertencia adicional para mirar.
 
 <Note>
 
-##### Beware of the uneven feed
+##### Cuidado con el alimento desigual
 
-As your feed your binding through your sewing machine, the feed dogs will pull the bottom layer (back of your binding) forward.
+Como tu alimento tu vinculación a través de tu máquina de coser, los perros de alimentación tirarán hacia adelante la capa inferior (parte trasera de su enlazamiento).
 
-In a perfect world, all layers will follow smoothly. But more often than not, the top layer (front of your binding) tends to lag behind a bit. This causes your binding to not neatly fold around the edge of the fabric, but make ugly wrinkles.
+En un mundo perfecto, todas las capas seguirán sin problemas. Pero la mayoría de las veces la capa superior (frontal de su enlace) tiende a retrasarse un poco. Esto hace que su unión no se pliega bien alrededor del borde del tejido, sino que haga tortillas feas.
 
-So watch out for this, and if you see it happening, stretch the under layer a bit extra to compensate.
-On the inside of your T-shirt, trim back the knit binding just outside of your seam to finish up.
+Así que ten cuidado con esto, y si ves que sucede, estira la capa de abajo un poco más para compensar.
+En el interior de tu camiseta, recorta el enrollado justo fuera de tu costura para acabar.
 
 </Note>
 
 ## Paso 4: Cierre las costuras y mangas laterales
 
-![Close the side seams and sleeves](step04.svg)
+![Cerrar costuras y mangas](step04.svg)
 
-- Fold your Teagan T-shirt double at the shoulder seams with good sides together.
-- Align the side seams and sleeves and pin them together.
-- Serge/sew the side seam and continue sewing to close the arms all the way to the sleeve hem.
-- Repeat on the other side.
+- Doble tu camisa de Teagan doble en las costuras de hombro con buenos lados juntos.
+- Alinear las costuras y mangas laterales y fijarlas juntos.
+- Serge/coser la costura del lado y continuar cosiendo para cerrar los brazos hasta el césped de manga.
+- Repetir en el otro lado.
 
 ## Paso 5: Termina el corte y mangas
 
-![Finish hem and sleeves](step05.svg)
+![Terminar el corte y mangas](step05.svg)
 
-- Fold the hem upwards, to the inside, and sew it down. If you have a coverlock, use it. If not, use a twin needle or zig-zag stitch to keep the seam stretchable.
-- Repeat for the hem on each sleeve.
+- Doblar la sombra hacia arriba, hacia el interior, y coser. Si tienes una remalladora con coverlock, úsala. Si no es así, utilice una aguja gemela o una stitch zig-zag para mantener la costura estirable.
+- Repita por el cabo de cada manga.
 
 <Note>
 
-##### Fold only once, to avoid bulk
+##### Doblar solo una vez, para evitar el grueso
 
-Knitwear doesn’t ravel, so you can simply fold this over once and sew it down, then neatly trim back the fabric.
+El brillo no se cuelga, así que puede doblar esto una vez y coser la tela, luego recortar la tela.
 
 </Note>

@@ -1,13 +1,13 @@
 ---
-title: "Back armhole curvature"
+title: "Вигин пройми спинки"
 ---
 
 ***
 
-![The effect of the back armhole curvature option on the pattern](sample.png)
+![Вплив параметра кривизни пройми спинки на викрійку](sample.png)
 
-The **back armhole curvature** option controls how much the armhole is scooped at out the bottom in the back.
+Параметр **кривизни пройми спинки** регулює, наскільки сильно загнута пройма знизу ззаду.
 
-## Effect of this option on the pattern
+## Вплив цієї опції на шаблон
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bella_backarmholecurvature_sample.svg "Effect of this option on the pattern")
+![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](bella_backarmholecurvature_sample.svg "Вплив цієї опції на шаблон")

@@ -1,7 +1,7 @@
 ---
-title: "Lucy tie-on pocket: Required measurements"
+title: "Bolsillo para atar Lucy: Medidas necesarias"
 ---
 
 <Note>
-Luci does not require any measurements
+Luci no requiere ninguna medida
 </Note>

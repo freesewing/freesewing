@@ -1,27 +1,27 @@
 ---
-title: "Cross back ties"
+title: "Kruislingse rugbanden"
 ---
 
 ***
 
-A variation of Bee, where the neck ties cross and tie in the back by looping into a band that replaces the band tie
+Een variatie op Bee, waarbij de nekbanden elkaar kruisen en op de rug worden geknoopt door een lus in een band die de banddas vervangt.
 
-#### Default
+#### Standaard
 
-- 2 neck ties
-- 1 band tie
+- 2 nekbanden
+- 1 bandstropdas
 
-The neck ties are sewn into the cups and tie at the neck like a halter.  
-The band tie is thread through casings in the cups and ties with itself at the back
+De nekbandjes zijn in de cups genaaid en worden in de nek geknoopt als een halster.  
+De bandjes worden door de omhulsels in de cups gehaald en worden aan de achterkant aan elkaar vastgemaakt.
 
-#### Cross Back Ties
+#### Kruisbanden
 
-- 2 neck ties
-- No band tie
+- 2 nekbanden
+- Geen band
 
-The band tie and casing on the cups are replaced by a band which is sewn with loops in the back.  
-The neck ties are longer and cross over each other in the back, then go through the loops in the band and then tie with one another.
+Het bandje en het omhulsel op de cups zijn vervangen door een bandje dat aan de achterkant met lusjes is vastgenaaid.  
+De nekbandjes zijn langer en kruisen elkaar op de rug, gaan dan door de lusjes in de band en worden dan met elkaar verbonden.
 
 ## Effect van deze optie op het patroon
 
-![This image shows the effect of this option by superimposing several variants that have a different value for this option](bee_crossbackties_sample.svg "Effect of this option on the pattern")
+![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bee_crossbackties_sample.svg "Effect van deze optie op het patroon")
