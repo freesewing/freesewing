@@ -178,7 +178,13 @@
     "design": "Wouter Van Wageningen",
     "difficulty": 3,
     "tags": ["bottoms", "trousers"],
-    "techniques": []
+    "techniques": [
+      "curvedSeams",
+      "fly",
+      "zipper",
+      "button",
+      "pocket"
+    ]
   },
   "diana": {
     "lab": true,
