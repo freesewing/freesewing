@@ -73,14 +73,7 @@ export async function getStaticPaths() {
   //.filter((path) => path.split('/').length < 5)
 
   return {
-    paths: [
-      ...somePaths.map((key) => `/${key}`),
-      ...somePaths.map((key) => `/es/${key}`),
-      ...somePaths.map((key) => `/de/${key}`),
-      ...somePaths.map((key) => `/fr/${key}`),
-      ...somePaths.map((key) => `/nl/${key}`),
-      ...somePaths.map((key) => `/uk/${key}`),
-    ],
+    paths: somePaths.map((key) => `/${key}`),
     fallback: false,
   }
 }

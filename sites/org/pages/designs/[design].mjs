@@ -53,14 +53,8 @@ export async function getStaticProps({ locale, params }) {
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticPaths() {
-  const enPaths = [...collection].map((design) => `/designs/${design}`)
-  const paths = [...enPaths]
-  for (const lang of siteConfig.languages.filter((lang) => lang !== 'en')) {
-    paths.push(...enPaths.map((path) => `/${lang}${path}`))
-  }
-
   return {
-    paths,
+    paths: [...collection].map((design) => `/designs/${design}`),
     fallback: 'blocking',
   }
 }
