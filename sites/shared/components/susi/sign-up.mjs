@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Hooks
 import { useState, useContext } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'

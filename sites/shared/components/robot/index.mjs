@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { fail, ohno, shrug, shrug2, yay } from './poses.mjs'
 
 const poses = {

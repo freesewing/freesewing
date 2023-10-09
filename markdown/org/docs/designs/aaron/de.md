@@ -1,5 +1,7 @@
 ---
-title: "Aaron, das A-Shirt"
+title: "Aaron A-Shirt: Designer Notes"
 ---
 
-<PatternDocs pattern='aaron' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='aaron' docs />

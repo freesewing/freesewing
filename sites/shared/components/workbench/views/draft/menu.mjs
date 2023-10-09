@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { loadSettingsConfig as loadUiSettingsConfig } from 'shared/components/workbench/menus/ui-settings/config.mjs'
 import {
   DesignOptions,
@@ -16,7 +17,7 @@ import {
   FlagsAccordionTitle,
   FlagsAccordionEntries,
 } from 'shared/components/workbench/views/flags.mjs'
-import { collection } from 'shared/hooks/use-design.mjs'
+import { collection } from 'site/hooks/use-design.mjs'
 
 export const ns = nsMerge(coreMenuNs, designMenuNs, uiNs, collection)
 
@@ -29,7 +30,6 @@ export const DraftMenu = ({
   update,
   language,
   account,
-  DynamicDocs,
   view,
   setView,
   flags = false,
@@ -43,7 +43,6 @@ export const DraftMenu = ({
     update,
     language,
     account,
-    DynamicDocs,
     control,
   }
   const uiSettingsConfig = loadUiSettingsConfig()

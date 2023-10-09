@@ -7,6 +7,7 @@ function legendDimension({ points, Point, macro, part }) {
   macro('ld', {
     from: points.a,
     to: points.b,
+    force: true,
   })
 
   return box(part, 100, 25)

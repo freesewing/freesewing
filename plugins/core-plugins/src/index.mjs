@@ -45,9 +45,9 @@ for (const plugin of bundledPlugins) {
 export const plugin = {
   name,
   version,
+  store,
   hooks,
   macros,
-  store,
 }
 
 // Specific named export

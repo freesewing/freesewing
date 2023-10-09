@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { freeSewingConfig as config } from 'shared/config/freesewing.config.mjs'
 // Context
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'

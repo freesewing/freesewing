@@ -259,6 +259,8 @@ const scalebox = function (
       imperial: ids.imperial,
     },
   })
+
+  return store.getMacroIds(mc.id, 'scalebox')
 }
 
 /*

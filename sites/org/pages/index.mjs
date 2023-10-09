@@ -1,6 +1,8 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
+import { recentBlogPosts, BlogPreview } from 'site/pages/blog/index.mjs'
+import { pages as blogPosts } from 'site/prebuild/blog.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 import { useAccount } from 'shared/hooks/use-account.mjs'
@@ -18,13 +20,15 @@ import {
   DocsIcon,
   HelpIcon,
   ChatIcon,
+  NewsletterIcon,
 } from 'shared/components/icons.mjs'
 import { HowDoesItWorkAnimation } from 'shared/components/animations/how-does-it-work.mjs'
 import { SignUp, ns as susiNs } from 'shared/components/susi/sign-up.mjs'
 import { PleaseSubscribe, ns as subNs } from 'shared/components/patrons/please-subscribe.mjs'
 import { CardLink } from 'shared/components/link.mjs'
+import { ns as nlNs } from 'shared/components/newsletter/index.mjs'
 
-const ns = nsMerge(pageNs, subNs, susiNs, 'homepage')
+const ns = nsMerge(pageNs, subNs, susiNs, nlNs, 'homepage')
 
 const Card = ({ bg = 'bg-base-200', textColor = 'text-base-content', title, children, icon }) => (
   <div className={`px-8 ${bg} py-10 rounded-lg block ${textColor} shadow-lg grow`}>
@@ -102,6 +106,23 @@ const HomePage = ({ page }) => {
         )}
       </div>
 
+      <div className="grid grid-cols-1 gap-2 lg:grid-cols-2 lg:gap-4 max-w-7xl m-auto mb-24 px-4">
+        <BlogPreview
+          t={t}
+          post={{
+            s: recentBlogPosts[0],
+            ...blogPosts[page.locale][recentBlogPosts[0]],
+          }}
+        />
+        <BlogPreview
+          t={t}
+          post={{
+            s: recentBlogPosts[1],
+            ...blogPosts[page.locale][recentBlogPosts[1]],
+          }}
+        />
+      </div>
+
       <div className="flex flex-col md:grid md:grid-cols-2 gap-4 max-w-7xl m-auto mb-24 px-4">
         <CardLink
           href="/designs"
@@ -133,15 +154,19 @@ const HomePage = ({ page }) => {
         <PleaseSubscribe />
       </div>
 
-      <div className="max-w-7xl m-auto mb-24 px-4">
-        <div className="w-full lg:w-1/2 m-auto">
-          <CardLink
-            href="/support"
-            title="Need Help?"
-            icon={<ChatIcon className="w-10 h-10 shrink-0" />}
-            text="While we are all volunteers, we have a good track record of helping people. So don't be shy to reach out."
-          />
-        </div>
+      <div className="flex flex-col md:grid md:grid-cols-2 gap-4 max-w-7xl m-auto mb-24 px-4">
+        <CardLink
+          href="/support"
+          title={`FreeSewing ${t('newsletter:newsletter')}`}
+          icon={<NewsletterIcon className="w-10 h-10 shrink-0" />}
+          text={t('newsletter:subscribePitch')}
+        />
+        <CardLink
+          href="/newsletter"
+          title="Need Help?"
+          icon={<ChatIcon className="w-10 h-10 shrink-0" />}
+          text="While we are all volunteers, we have a good track record of helping people. So don't be shy to reach out."
+        />
       </div>
     </PageWrapper>
   )

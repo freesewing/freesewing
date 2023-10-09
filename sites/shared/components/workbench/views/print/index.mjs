@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 import { nsMerge } from 'shared/utils.mjs'
 import {
@@ -29,7 +30,6 @@ export const PrintView = ({
   update,
   language,
   account,
-  DynamicDocs,
   Design,
 }) => {
   const { t } = useTranslation(ns)
@@ -112,7 +112,6 @@ export const PrintView = ({
                 update,
                 language,
                 account,
-                DynamicDocs,
                 exportIt,
               }}
             />

@@ -2,4 +2,7 @@
 title: "Lucy tie-on pocket"
 ---
 
-<PatternDocs pattern='lucy' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='lucy' docs />
+

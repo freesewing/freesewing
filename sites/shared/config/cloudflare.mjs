@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 export const cloudflareConfig = {
   account: 'edd96e8b19d1be5946c5f7983365bda4',
   url: 'https://imagedelivery.net/ouSuR9yY1bHt-fuAokSA5Q/',

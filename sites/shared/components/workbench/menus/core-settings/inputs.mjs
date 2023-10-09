@@ -1,7 +1,8 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { capitalize } from 'shared/utils.mjs'
 import { ListInput, SliderInput, BoolInput, MmInput } from '../shared/inputs.mjs'
 import { useTranslation } from 'next-i18next'
-import { collection } from 'shared/hooks/use-design.mjs'
+import { collection } from 'site/hooks/use-design.mjs'
 
 /** an input for the 'only' setting. toggles individual parts*/
 const OnlySettingInput = (props) => {

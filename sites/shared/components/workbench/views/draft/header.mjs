@@ -1,5 +1,7 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 import { capitalize, shortDate } from 'shared/utils.mjs'
+import { controlLevels } from 'shared/config/freesewing.config.mjs'
 // Hooks
 import { useContext, useMemo } from 'react'
 import { useMobileAction } from 'shared/context/mobile-menubar-context.mjs'
@@ -74,7 +76,16 @@ const ZoomButtons = ({ t, zoomFunctions, zoomed }) => {
 
 const Spacer = () => <span className="opacity-50">|</span>
 
-export const DraftHeader = ({ update, settings, ui, control, account, design, setSettings }) => {
+export const DraftHeader = ({
+  update,
+  settings,
+  ui,
+  control,
+  account,
+  design,
+  setSettings,
+  saveAs = false,
+}) => {
   const { t, i18n } = useTranslation(ns)
   const { zoomFunctions, zoomed } = useContext(PanZoomContext)
   const backend = useBackend()
@@ -90,20 +101,17 @@ export const DraftHeader = ({ update, settings, ui, control, account, design, se
 
   const savePattern = async () => {
     setLoadingStatus([true, 'savingPattern'])
-    const name = `${capitalize(design)} / ${shortDate(i18n.language)}`
-    const patternData = { design, name, public: false, settings, data: {} }
-    const result = await backend.createPattern(patternData)
-    if (result.success) {
-      const id = result.data.pattern.id
+    const result = await backend.updatePattern(saveAs.pattern, { settings })
+    if (result.success)
       setLoadingStatus([
         true,
         <>
-          {t('status:patternSaved')} <small>[#{id}]</small>
+          {t('status:patternSaved')} <small>[#{saveAs.pattern}]</small>
         </>,
         true,
         true,
       ])
-    } else setLoadingStatus([true, 'backendError', true, false])
+    else setLoadingStatus([true, 'backendError', true, false])
   }
 
   const bookmarkPattern = async () => {
@@ -138,52 +146,62 @@ export const DraftHeader = ({ update, settings, ui, control, account, design, se
         {headerZoomButtons}
         <Spacer />
         <div className="flex flex-row items-center gap-4">
-          <IconButton
-            Icon={SaIcon}
-            dflt={settings.sabool ? false : true}
-            onClick={() => update.toggleSa()}
-            title={t('core-settings:sabool.t')}
-          />
-          <IconButton
-            Icon={PaperlessIcon}
-            dflt={settings.paperless ? false : true}
-            onClick={() => update.settings(['paperless'], !settings.paperless)}
-            title={t('core-settings:paperless.t')}
-          />
-          <IconButton
-            Icon={DetailIcon}
-            dflt={settings.complete}
-            onClick={() =>
-              update.settings(
-                ['complete'],
-                typeof settings.complete === 'undefined' ? 0 : settings.complete ? 0 : 1
-              )
-            }
-            title={t('core-settings:complete.t')}
-          />
-          <IconButton
-            Icon={ExpandIcon}
-            dflt={settings.expand || typeof settings.expand === 'undefined' ? true : false}
-            onClick={() =>
-              update.settings(
-                ['expand'],
-                typeof settings.expand === 'undefined' ? 1 : settings.expand ? 0 : 1
-              )
-            }
-            title={t('core-settings:expand.t')}
-          />
-          <IconButton
-            Icon={
-              settings.units !== 'imperial'
-                ? UnitsIcon
-                : ({ className }) => <UnitsIcon className={`${className} rotate-180 w-6 h-6`} />
-            }
-            dflt={settings.units !== 'imperial'}
-            onClick={() =>
-              update.settings(['units'], settings.units === 'imperial' ? 'metric' : 'imperial')
-            }
-            title={t('core-settings:units.t')}
-          />
+          {control < controlLevels.core.sa ? null : (
+            <IconButton
+              Icon={SaIcon}
+              dflt={settings.sabool ? false : true}
+              onClick={() => update.toggleSa()}
+              title={t('core-settings:sabool.t')}
+            />
+          )}
+          {control < controlLevels.core.paperless ? null : (
+            <IconButton
+              Icon={PaperlessIcon}
+              dflt={settings.paperless ? false : true}
+              onClick={() => update.settings(['paperless'], !settings.paperless)}
+              title={t('core-settings:paperless.t')}
+            />
+          )}
+          {control < controlLevels.core.complete ? null : (
+            <IconButton
+              Icon={DetailIcon}
+              dflt={settings.complete}
+              onClick={() =>
+                update.settings(
+                  ['complete'],
+                  typeof settings.complete === 'undefined' ? 0 : settings.complete ? 0 : 1
+                )
+              }
+              title={t('core-settings:complete.t')}
+            />
+          )}
+          {control < controlLevels.core.expand ? null : (
+            <IconButton
+              Icon={ExpandIcon}
+              dflt={settings.expand || typeof settings.expand === 'undefined' ? true : false}
+              onClick={() =>
+                update.settings(
+                  ['expand'],
+                  typeof settings.expand === 'undefined' ? 1 : settings.expand ? 0 : 1
+                )
+              }
+              title={t('core-settings:expand.t')}
+            />
+          )}
+          {control < controlLevels.core.units ? null : (
+            <IconButton
+              Icon={
+                settings.units !== 'imperial'
+                  ? UnitsIcon
+                  : ({ className }) => <UnitsIcon className={`${className} rotate-180 w-6 h-6`} />
+              }
+              dflt={settings.units !== 'imperial'}
+              onClick={() =>
+                update.settings(['units'], settings.units === 'imperial' ? 'metric' : 'imperial')
+              }
+              title={t('core-settings:units.t')}
+            />
+          )}
         </div>
         <Spacer />
         <div
@@ -245,14 +263,16 @@ export const DraftHeader = ({ update, settings, ui, control, account, design, se
         </div>
         <Spacer />
         <div className="flex flex-row items-center gap-4">
-          <button
-            onClick={() => savePattern()}
-            className={`tooltip tooltip-primary tooltip-bottom flex flex-row items-center disabled:opacity-50`}
-            data-tip={t('workbench:savePattern')}
-            disabled={typeof account?.username === 'undefined'}
-          >
-            <UploadIcon />
-          </button>
+          {saveAs && saveAs.pattern ? (
+            <button
+              onClick={savePattern}
+              className={`tooltip tooltip-primary tooltip-bottom flex flex-row items-center disabled:opacity-50`}
+              data-tip={t('workbench:savePattern')}
+              disabled={typeof account?.username === 'undefined'}
+            >
+              <UploadIcon />
+            </button>
+          ) : null}
           <button
             onClick={() => bookmarkPattern()}
             className={`tooltip tooltip-primary tooltip-bottom flex flex-row items-center disabled:opacity-50`}

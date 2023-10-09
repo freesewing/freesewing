@@ -16,7 +16,7 @@ translator: Übersetzer/-in
 words: Wörter
 joinTheTeam: Tritt dem Team bei
 joinATranslationTeam: Tritt einem Übersetzungsteam bei
-languageTeam: "{language} Team"
+languageTeam: '{language} Team'
 whatTeam: Welchem Sprachenteam trittst du bei?
 sendMeAnInvite: Schick mir eine Einladung
 pleaseChooseTeam: Bitte wähle unten eine Sprache aus, damit wir dir die richtige Einladung schicken können.
@@ -27,5 +27,3 @@ thatIsAwesome: Das ist großartig.
 thanksSoMuch: Herzlichen Dank.
 suggestIntro: Willst du eine neue Sprache zu FreeSewing hinzufügen?
 pleaseMotivate: Bitte fülle das folgende Formular aus, damit wir deinen Vorschlag prüfen können.
-
-

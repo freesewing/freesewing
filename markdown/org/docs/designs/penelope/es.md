@@ -2,4 +2,7 @@
 title: "Penelope, falda de tubo"
 ---
 
-<PatternDocs pattern='penelope' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='penelope' docs />
+

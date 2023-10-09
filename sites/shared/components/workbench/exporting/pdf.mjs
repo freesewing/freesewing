@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import PDFDocument from 'pdfkit/js/pdfkit.standalone'
 
 /**

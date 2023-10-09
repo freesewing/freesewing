@@ -54,7 +54,7 @@ const crossbox = function (config, { points, Point, paths, Path, complete, store
   }
   if (!mc.bottomRight || typeof mc.bottomRight.attr !== 'function') {
     log.warn(
-      `Crossbox macro called without a valid bottomRight point. Using (6660,666) for bottomRight.`
+      `Crossbox macro called without a valid bottomRight point. Using (666,666) for bottomRight.`
     )
     mc.bottomRight = new Point(666, 666)
   }
@@ -119,6 +119,8 @@ const crossbox = function (config, { points, Point, paths, Path, complete, store
    * Just make sure to keep points and paths apart
    */
   store.set(['parts', part.name, 'macros', 'title', 'ids', mc.id], ids)
+
+  return store.getMacroIds(mc.id, 'crossbox')
 }
 
 // Export macros

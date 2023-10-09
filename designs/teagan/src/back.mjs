@@ -10,6 +10,7 @@ function teaganBack({
   options,
   macro,
   utils,
+  units,
   measurements,
   part,
 }) {
@@ -23,7 +24,7 @@ function teaganBack({
 
   // Draw seamline
   paths.hemBase = new Path().move(points.cfHem).line(points.hem).hide()
-  if (options.curveToWaist) {
+  if (options.fitWaist) {
     paths.sideSeam = new Path()
       .move(points.hem)
       .curve(points.hipsCp2, points.waistCp1, points.waist)
@@ -67,6 +68,21 @@ function teaganBack({
       .curve(points.armholeHollowCp2, points.shoulderCp1, points.shoulder)
       .length()
   )
+
+  // Let the user know how long the neck opening is
+  store.flag.info({
+    msg: 'teagan:neckOpeningLength',
+    replace: {
+      length: units(
+        store.get('lengthFrontNeckOpening') +
+          2 *
+            new Path()
+              .move(points.neck)
+              .curve(points.neckCp2, points.cbNeckCp1, points.cbNeck)
+              .length()
+      ),
+    },
+  })
 
   /*
    * Annotations

@@ -11,6 +11,7 @@ function draftCarltonTopSleeve({
   measurements,
   options,
   macro,
+  utils,
   Point,
   paths,
   Path,
@@ -23,13 +24,18 @@ function draftCarltonTopSleeve({
   let angle = points.tsWristRight.angle(points.tsWristLeft)
   points.cuffBottomRight = points.tsWristRight.shift(angle + 90, length)
   points.cuffBottomLeft = points.tsWristLeft.shift(angle + 90, length)
-  macro('round', {
+  // Macro will return the auto-generated IDs
+  const ids = macro('round', {
+    id: 'round',
     to: points.tsWristRight,
     from: points.cuffBottomLeft,
     via: points.cuffBottomRight,
     radius: length / 3,
-    prefix: 'round',
   })
+  // Create points from them with easy names
+  for (const id of ['start', 'cp1', 'cp2', 'end']) {
+    points[`round${utils.capitalize(id)}`] = points[ids.points[id]].copy()
+  }
   store.set('topCuffWidth', points.tsWristLeft.dist(points.tsWristRight))
   store.set('cuffLength', length)
   store.set('cuffRadius', length / 3)

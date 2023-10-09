@@ -1,6 +1,7 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 import { cloudflareImageUrl } from 'shared/utils.mjs'
-import { collection } from 'shared/hooks/use-design.mjs'
+import { collection } from 'site/hooks/use-design.mjs'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'

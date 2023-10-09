@@ -1,8 +1,9 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 /*
  * Do not use the 'config' webpack alias here because
  * this is used in the prebuild step which is pure NodeJS
  */
-import { social } from '../../../config//social.mjs'
+import { social } from './social.mjs'
 
 export const isProduction = process?.env?.VERCEL_ENV === 'production'
 
@@ -68,6 +69,35 @@ export const freeSewingConfig = {
       id: 4,
     },
   },
+  control: {
+    core: {
+      sa: 2,
+      paperless: 2,
+      locale: 3,
+      units: 1,
+      complete: 4,
+      expand: 4,
+      only: 4,
+      scale: 4,
+      margin: 4,
+    },
+    ui: {
+      renderer: 4,
+      kiosk: 2,
+    },
+    views: {
+      draft: 1,
+      measies: 1,
+      test: 3,
+      print: 1,
+      export: 1,
+      save: 1,
+      edit: 4,
+      logs: 2,
+      inspect: 4,
+      docs: 1,
+    },
+  },
   social,
   statuses: {
     0: {
@@ -97,4 +127,7 @@ export const controlLevels = {
   ...freeSewingConfig.account.fields.identities,
   sets: freeSewingConfig.account.sets,
   patterns: freeSewingConfig.account.patterns,
+  core: freeSewingConfig.control.core,
+  ui: freeSewingConfig.control.ui,
+  views: freeSewingConfig.control.views,
 }

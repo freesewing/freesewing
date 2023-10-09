@@ -1,22 +1,31 @@
 import { draftBarrelCuff, decorateBarrelCuff, paperlessBarrelCuff } from './shared.mjs'
 
-export const draftRoundedBarrelCuff = ({ store, sa, points, Path, paths, macro, part }) => {
+export const draftRoundedBarrelCuff = ({ store, sa, utils, points, Path, paths, macro, part }) => {
   draftBarrelCuff(part)
   const height = store.get('cuffHeight')
-  macro('round', {
-    from: points.topRight,
-    to: points.bottomLeft,
-    via: points.topLeft,
-    radius: height / 3,
-    prefix: 'topLeftRound',
-  })
-  macro('round', {
-    from: points.bottomRight,
-    to: points.topLeft,
-    via: points.topRight,
-    radius: height / 3,
-    prefix: 'topRightRound',
-  })
+  // Macros will return the auto-generated IDs
+  const ids = {
+    topLeftRound: macro('round', {
+      id: 'topLeftRound',
+      from: points.topRight,
+      to: points.bottomLeft,
+      via: points.topLeft,
+      radius: height / 3,
+    }),
+    topRightRound: macro('round', {
+      id: 'topRightRound',
+      from: points.bottomRight,
+      to: points.topLeft,
+      via: points.topRight,
+      radius: height / 3,
+    }),
+  }
+  // Create points from them with easy names
+  for (const side in ids) {
+    for (const id of ['start', 'cp1', 'cp2', 'end']) {
+      points[`${side}${utils.capitalize(id)}`] = points[ids[side].points[id]].copy()
+    }
+  }
   points.leftAngleBottom = points.topLeft.shift(-90, height / 3)
   points.rightAngleTop = points.topRight.shift(180, height / 3)
   points.rightAngleBottom = points.topRight.shift(-90, height / 3)

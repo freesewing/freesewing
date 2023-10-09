@@ -14,8 +14,9 @@ FreeSewing currently is available in the following languages:
 - German
 - Ukranian
 
-## <DocsLink slug="guides/translation" />
+## Translation guide
 
 This guide for translators covers everything you need to know about (helping out with) the translation of FreeSewing.
 
+- <DocsLink slug="guides/translation" />
 

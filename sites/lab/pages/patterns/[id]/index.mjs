@@ -17,7 +17,7 @@ const ns = nsMerge(patternsNs, authNs, pageNs, 'status')
  * So for these, we run a dynamic import and disable SSR rendering
  */
 const DynamicPattern = dynamic(
-  () => import('shared/components/account/patterns.mjs').then((mod) => mod.Pattern),
+  () => import('shared/components/account/patterns.mjs').then((mod) => mod.ShowPattern),
   { ssr: false }
 )
 
@@ -32,7 +32,7 @@ const PatternPage = ({ page, id }) => {
 
   return (
     <PageWrapper {...page} title={`${t('patterns')}: #${id}`}>
-      <DynamicPattern id={id} publicOnly />
+      <DynamicPattern id={id} />
     </PageWrapper>
   )
 }

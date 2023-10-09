@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import Link from 'next/link'
 
 export const iconSize = 'h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12'

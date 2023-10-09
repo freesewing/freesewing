@@ -1,17 +1,17 @@
 ---
-title: Waist to armpit
+title: Від талії до пахви
 ---
 
-The **waist to armpit** is the measurement from your waist up towards your armpit, measured on the side of your body.
+Вимір **від талії до пахви** — це довжина від талії до пахви, знята збоку тіла.
 
-Since _armpit_ is a bit ambigious, we recommend finding the height that would be about the tightest possible sleeve that could still work. The height of the subcapular/posterior lymph nodes is typically a good spot.
+Оскільки поняття _пахви_ є трохи розмитим, ми рекомендуємо знайти точку найвищої можливої пройми рукава. Розташування підлопаткових лімфатичних вузлів зазвичай є хорошою початковою точкою.
 
-Or, if you're not certain where the lymph nodes under your arm are, you can follow this approach:
+Якщо Ви не впевнені де розташовуються ці лімфовузли, ось альтернативний спосіб:
 
-- Stand up straight, yet relaxed, and let your arms hang loosely by your side.
-- Raise your dominant arm (the right if you are right-handed, or the left if you are left-handed) about 30 degrees sideways, away from your body.
-- Now reach to the side of your body with the other hand, placing the palm of your hand against the side, and your thumb on your chest pointing upwards.
-- Slide your hand upwards as far as you can without having to push anything out of the way.
-- Your index finger will now sit in the armput, which is a bit too high. But your middlefinger is a good spot to mark as the start of your armpit.
+- Станьте прямо та все ще розслаблено, нехай руки вільно звисають по боках.
+- Підніміть свою домінантну руку (праву, якщо Ви правша, та ліву, якщо лівша) на ≈30° убік від свого тіла.
+- Тепер покладіть долоню протилежної руки під пахву так, аби великий палець розміщувався вертикально на грудях, а вказівний та середній пальці розташовувалися на уявній боковій лінії тіла.
+- Просуньте долоню максимально вгору, не давлячи на шкіру та м'язи.
+- Ваш вказівний палець сидітиме в пахвовій западині, що трохи зависоко. Але Ваш середній палець вказуватиме на вдалу пахвову точку.
 
 

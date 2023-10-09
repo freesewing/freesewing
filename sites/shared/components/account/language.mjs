@@ -8,7 +8,7 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Components
 import { BackToAccountButton, NumberBullet } from './shared.mjs'
 import { ListInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 // Config
 import { siteConfig as conf } from 'site/site.config.mjs'
 
@@ -58,7 +58,7 @@ export const LanguageSettings = () => {
         }))}
         current={language}
         update={update}
-        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/language`} />}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/language`} />}
       />
       <BackToAccountButton />
     </div>

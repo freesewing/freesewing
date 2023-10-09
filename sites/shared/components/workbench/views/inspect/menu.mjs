@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import {
   DesignOptions,
   ns as designMenuNs,
@@ -21,7 +22,6 @@ export const DraftMenu = ({
   update,
   language,
   account,
-  DynamicDocs,
   inspector = false,
   renderProps,
   view,
@@ -35,7 +35,6 @@ export const DraftMenu = ({
     update,
     language,
     account,
-    DynamicDocs,
     control,
   }
 

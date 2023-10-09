@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 import React, { useState, useEffect, useContext } from 'react'
 import { nsMerge } from 'shared/utils.mjs'
@@ -56,6 +57,9 @@ export const PageWrapper = (props) => {
       {pageTitle && (
         <Head>
           <meta property="og:title" content={pageTitle} key="title" />
+          {props.intro && (
+            <meta property="og:description" content={props.intro} key="description" />
+          )}
         </Head>
       )}
       <div

@@ -2,4 +2,7 @@
 title: "Jaeger, das Sakko"
 ---
 
-<PatternDocs pattern='jaeger' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='jaeger' docs />
+

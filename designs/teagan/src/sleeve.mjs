@@ -106,6 +106,12 @@ export const sleeve = {
   hide: hidePresets.HIDE_TREE,
   options: {
     sleeveEase: { pct: 15, min: 5, max: 35, menu: 'style' },
+    /*
+     * Hide options from Brian
+     */
+    cuffEase: 0,
+    s3Collar: 0,
+    s3Armhole: 0,
   },
   draft: teaganSleeve,
 }

@@ -12,12 +12,16 @@
     "waistband": "Waistband"
   },
   "s": {
+    "cutCuff.t": "The cuff is not shown",
+    "cutCuff.d": "The **Cuff** (4) is a rectangular piece of lining {{{ w }}} wide and {{{ l }}} long.",
+    "cutWaistband.t": "The waistband is not shown",
+    "cutWaistband.d": "The **Waistband** (3) is a rectangular piece of lining {{{ w }}} wide and {{{ l }}} long.",
     "cutBackPocketBag.t": "The back pocket bag is not shown",
-    "cutBackPocketBag.d": "The **Back pocket bag** (6) is a rectangular piece of lining {{{ w }}} wide and {{{ l }}} long (this includes seam allowance). It is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutBackPocketBag.d": "The **Back pocket bag** (6) is a rectangular piece of lining {{{ w }}} wide and {{{ l }}} long.",
     "cutBackPocketWelt.t": "The back pocket welt is not shown",
-    "cutBackPocketWelt.d": "The **Back pocket welt** (7) is a rectangular piece of lining {{{ w }}} wide and {{{ l }}} long (this includes seam allowance). It is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.",
+    "cutBackPocketWelt.d": "The **Back pocket welt** (7) is a rectangular piece of lining {{{ w }}} wide and {{{ l }}} long.",
     "cutBackPocketWeltInterfacing.t": "The back pocket welt interfacing is not shown",
-    "cutBackPocketWeltInterfacing.d": "The **Back pocket welt interfacing** (8) is a rectangular piece of fusible interfacing {{{ w }}} wide and {{{ l }}} long (this part does not use any seam allowance). It is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part."
+    "cutBackPocketWeltInterfacing.d": "The **Back pocket welt interfacing** (8) is a rectangular piece of fusible interfacing {{{ w }}} wide and {{{ l }}} long."
   },
   "o": {
     "heelEase": {

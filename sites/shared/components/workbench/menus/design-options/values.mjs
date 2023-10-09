@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { formatMm, formatPercentage } from 'shared/utils.mjs'
 import { ListValue, HighlightedValue, PlainValue, BoolValue } from '../shared/values'
 import { mergeOptions } from '@freesewing/core'

@@ -2,4 +2,7 @@
 title: "Breanna, patrón base de torso con pechos"
 ---
 
-<PatternDocs pattern='breanna' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='breanna' docs />
+

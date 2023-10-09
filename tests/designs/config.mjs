@@ -35,7 +35,7 @@ export const testPatternConfig = (Pattern) => {
       if (chunks.length > 3) {
         expect(designConfig.data.version.split('.').length).to.equal(4)
         expect(chunks[2]).to.contain.oneOf(['-alpha', '-beta', '-rc'])
-      } else expect(designConfig.version.split('.').length).to.equal(3)
+      } else expect(designConfig.data.version.split('.').length).to.equal(3)
     })
 
     it('Monorepo data:', () => true)

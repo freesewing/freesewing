@@ -1,5 +1,12 @@
+#These are UI strings
+tags: Labels
+showLineDrawings: Show line drawings
+showExamples: Show examples
+clearFilter: Clear filter
 difficulty: Moeilijkheid
-tags: Ontwerp tags
+learnMoreAboutThing: Learn more about {thing}
+newThingPattern: New {thing} pattern
+#Actual tags start here
 accessories: Accessoires
 bags: Tassen
 blocks: Blokken
@@ -14,4 +21,3 @@ tops: Tepels
 toys: Speelgoed
 trousers: Broek
 underwear: Ondergoed
-

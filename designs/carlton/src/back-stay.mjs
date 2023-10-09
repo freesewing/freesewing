@@ -18,6 +18,7 @@ function draftCarltonBackStay({
     // Expand is on, do not draw the part but flag this to the user
     store.flag.note({
       msg: `carlton:cutBackStay`,
+      notes: 'flag:partHiddenByExpand',
       suggest: {
         text: 'flag:show',
         icon: 'expand',

@@ -13,25 +13,6 @@ function hugoPocket({
   snippets,
   part,
 }) {
-  if (expand) store.flag.preset('expandIsOn')
-  else {
-    // Expand is on, do not draw the part but flag this to the user
-    store.flag.note({
-      msg: `hugo:cutPocket`,
-      suggest: {
-        text: 'flag:show',
-        icon: 'expand',
-        update: {
-          settings: ['expand', 1],
-        },
-      },
-    })
-    // Also hint about expand
-    store.flag.preset('expandIsOff')
-
-    return part.hide()
-  }
-
   // Remove clutter
   for (const key in paths) {
     if (key !== 'pocket') delete paths[key]
@@ -73,6 +54,31 @@ function hugoPocket({
     .join(facing)
     .attr('class', ' fabric help')
   paths.facing.hide()
+
+  /*
+   * paths.facing needs to be available to draft the pocket facing
+   * So we can only check for exand here and hide the the part when its off
+   * so that the facing can still be drafted
+   */
+  if (expand) store.flag.preset('expandIsOn')
+  else {
+    // Expand is on, do not draw the part but flag this to the user
+    store.flag.note({
+      msg: `hugo:cutPocket`,
+      notes: 'flag:partHiddenByExpand',
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
 
   if (complete) paths.facing.unhide().addClass('note dashed')
 

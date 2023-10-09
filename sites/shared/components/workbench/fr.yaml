@@ -9,7 +9,7 @@ bookmarkPattern: Bookmark pattern
 bottomRight: En bas à droite
 changeMeasies: Mesures du schéma de changement
 chooseATest: Choose a test scenario to run
-chooseATestDesc: You can test how the design adapts to changes in a specific design option or measurements, or even test the design across different measurements sets.
+chooseATestDesc: You can test how the design adapts to changes in a specific design option or measurements.
 chooseATestMenuMobileMsg: To do so, open the test menu and select the scenario you want to run.
 chooseATestMenuMsg: To do so, select the test scenario you want to run in the menu on the right.
 chooseFromBookmarkedSets: Choose one of the measurements sets you've bookmarked
@@ -24,6 +24,8 @@ collar: Col
 columns: columns
 configurePattern: Configurer le modèle
 construction: Construction
+continueEditingTitle: Continue editing
+continueEditingDesc: Load the newly saved pattern in the pattern editor, so you can make more changes.
 cuffs: Poignets
 currentPrintLayout: Current print layout
 cutLayout: Disposition des coupes
@@ -50,17 +52,22 @@ fit: Ajustement
 frontPockets: Poches avant
 generatePdf: Generate print-ready PDF
 giveItAName: Donne-lui un nom
+goToPatternTitle: Navigate to the pattern page
+goToPatternDesc: Exit the pattern editor and navigate to the pattern page where you can update the pattern's metadata.
 height: Hauteur
 help: Aide
 layoutSettings.d: Additional options to further optimize the printing layout of your pattern.
 layoutSettings.t: Layout settings
 length: Longueur
+learnHowToUseEditor: Learn how to use FreeSewing's online pattern editor
 measies: Mesures du motif
 measiesOk: Nous avons toutes les mesures requises pour créer ce modèle.
 measurements.d: Teste l'effet d'une mesure sur l'apparence de ce motif.
 menu: Menu
 name: Nom
 noDesignFound: Nous n'avons pas pu trouver ce modèle. Cela ne devrait pas arriver, alors nous te serions très reconnaissants de nous le signaler.
+noInlineDocs: Documention is not included in this build
+noInlineDocsDesc: Please visit FreeSewing.org to access our documentation
 notes: Remarques
 pages: pages
 part: Partie du modèle
@@ -86,9 +93,13 @@ resetPrintLayoutDesc: Removes all manual changes to the print layout, and restor
 rows: rows
 save: Sauvegarder
 savePattern: Enregistrer le patron
+saveAsNewPattern: Save as new pattern
+savePatternAs: Save pattern as...
+savePatternAsHellip: Save pattern as...
 saveSettings: Sauvegarder les paramètres
 saveYourPattern: Sauvegarde ton modèle
 seeMissingMeasies: See missing measurements
+show: Afficher
 showAllParts: Afficher toutes les parties du modèle
 showMovableButtons: Boutons
 showOnlyThisPart: Ne montre que cette partie du modèle
@@ -107,6 +118,7 @@ testSets: Test measurements sets
 testSetsDesc: Test how the design adapts across different measurements sets
 topLeft: En haut à gauche
 weLackSomeMeasies: Il nous manque { nr } pour créer ce modèle
+whereToGoAfterSaveAs: After saving the new pattern, what do you want to do?
 width: Largeur
 xTotalPagesSomeBlank: "{total} pages in total but {blank} are blank"
 yamlEditViewError: Problèmes avec YAML

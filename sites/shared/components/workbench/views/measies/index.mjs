@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 import { Fragment } from 'react'
 import { nsMerge } from 'shared/utils.mjs'
@@ -9,9 +10,9 @@ import { useTranslation } from 'next-i18next'
 import {
   UserSetPicker,
   BookmarkedSetPicker,
-  CuratedSetPicker,
   ns as setsNs,
 } from 'shared/components/account/sets.mjs'
+import { CuratedSetPicker } from 'shared/components/curated-sets.mjs'
 import { MeasiesEditor } from './editor.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { Accordion } from 'shared/components/accordion.mjs'

@@ -1,12 +1,13 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useCallback, useMemo } from 'react'
 // Components
 import { OptionsIcon } from 'shared/components/icons.mjs'
 import { optionsMenuStructure, optionType } from 'shared/utils.mjs'
-
 import { values } from './values.mjs'
 import { inputs } from './inputs.mjs'
 import { WorkbenchMenu } from '../shared/index.mjs'
 import { MenuItem } from '../shared/menu-item.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const ns = ['design-options']
 
@@ -47,6 +48,12 @@ const DesignOption = ({ config, settings, control, ...rest }) => {
         allowOverride,
         allowToggle,
       }}
+      docs={
+        <DynamicMdx
+          language={rest.language}
+          slug={`docs/designs/${rest.design}/options/${rest.name.toLowerCase()}`}
+        />
+      }
     />
   )
 }
@@ -59,7 +66,6 @@ const DesignOption = ({ config, settings, control, ...rest }) => {
  * @param  {Object}  options.update        settings and ui update functions
  * @param  {String}  options.language      the menu language
  * @param  {Object}  options.account       the user account data
- * @param  {Boolean|React.component} options.DynamicDocs   A docs component
  */
 export const DesignOptions = ({
   design,
@@ -69,7 +75,6 @@ export const DesignOptions = ({
   language,
   account,
   isFirst = true,
-  DynamicDocs = false,
 }) => {
   const menuNs = [design, ...ns]
   const optionsMenu = useMemo(
@@ -81,21 +86,13 @@ export const DesignOptions = ({
     [update]
   )
 
-  // FIXME How do we find inherited docs?
-  const getDocsPath = useCallback(
-    (option) => `designs/${design}/options${option ? '/' + option.toLowerCase() : ''}`,
-    [design]
-  )
-
   return (
     <WorkbenchMenu
       {...{
         config: optionsMenu,
         control: account.control,
         currentValues: settings.options,
-        DynamicDocs,
         emojis,
-        getDocsPath,
         Icon: OptionsIcon,
         Item: DesignOption,
         isFirst,

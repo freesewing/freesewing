@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import tlds from 'tlds/index.json' assert { type: 'json' }
 import _slugify from 'slugify'
 import get from 'lodash.get'
@@ -5,6 +6,7 @@ import set from 'lodash.set'
 import orderBy from 'lodash.orderby'
 import unset from 'lodash.unset'
 import { cloudflareConfig } from './config/cloudflare.mjs'
+import { mergeOptions } from '@freesewing/core'
 
 const slugifyConfig = {
   replacement: '-', // replace spaces with replacement character, defaults to `-`
@@ -201,7 +203,8 @@ export const optionsMenuStructure = (options, settings) => {
       const oType = optionType(option)
       option.dflt = option.dflt || option[oType]
       if (oType === 'pct') option.dflt /= 100
-      if (typeof option.menu === 'function') option.menu = option.menu(settings)
+      if (typeof option.menu === 'function')
+        option.menu = option.menu(settings, mergeOptions(settings, options))
       if (option.menu) {
         // Handle nested groups that don't have any direct children
         if (option.menu.includes('.')) {
@@ -475,3 +478,13 @@ export const patternNsFromPatternConfig = (config) => {
 
   return [...ns]
 }
+
+export const newPatternUrl = ({ design, settings = {}, view = 'draft' }) =>
+  `/new/${design}/#settings=${encodeURIComponent(
+    JSON.stringify(settings)
+  )}&view=${encodeURIComponent('"' + view + '"')}`
+
+export const workbenchHash = ({ settings = {}, view = 'draft' }) =>
+  `#settings=${encodeURIComponent(JSON.stringify(settings))}&view=${encodeURIComponent(
+    '"' + view + '"'
+  )}`

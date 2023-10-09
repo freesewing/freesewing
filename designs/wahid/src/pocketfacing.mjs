@@ -6,6 +6,7 @@ function wahidPocketFacing({
   paths,
   Path,
   measurements,
+  utils,
   options,
   macro,
   complete,
@@ -21,22 +22,31 @@ function wahidPocketFacing({
   points.bottomRight = new Point(points.topRight.x, points.bottomLeft.y)
   points.notchLeft = new Point(15, 10)
   points.notchRight = new Point(pw + 15, 10)
-  macro('round', {
-    from: points.topLeft,
-    to: points.bottomRight,
-    via: points.bottomLeft,
-    radius: pw / 8,
-    hidden: true,
-    prefix: 'roundLeft',
-  })
-  macro('round', {
-    from: points.bottomLeft,
-    to: points.topRight,
-    via: points.bottomRight,
-    radius: pw / 8,
-    hidden: true,
-    prefix: 'roundRight',
-  })
+  // Macro will return the auto-generated IDs
+  const ids = {
+    roundLeft: macro('round', {
+      id: 'roundLeft',
+      from: points.topLeft,
+      to: points.bottomRight,
+      via: points.bottomLeft,
+      radius: pw / 8,
+      hidden: true,
+    }),
+    roundRight: macro('round', {
+      id: 'roundRight',
+      from: points.bottomLeft,
+      to: points.topRight,
+      via: points.bottomRight,
+      radius: pw / 8,
+      hidden: true,
+    }),
+  }
+  // Create points from them with easy names
+  for (const side in ids) {
+    for (const id of ['start', 'cp1', 'cp2', 'end']) {
+      points[`${side}${utils.capitalize(id)}`] = points[ids[side].points[id]].copy()
+    }
+  }
   paths.seam = new Path()
     .move(points.topLeft)
     .line(points.roundLeftStart)

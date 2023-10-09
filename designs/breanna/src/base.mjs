@@ -157,6 +157,7 @@ export const base = {
     acrossBackFactor: { pct: 96, min: 93, max: 100, menu: 'advanced' },
     armholeDepthFactor: { pct: 100, min: 80, max: 120, menu: 'advanced' },
     backNeckCutout: { pct: 5, min: 2, max: 8, menu: 'advanced' },
+    bicepsEase: { pct: 15, min: 0, max: 50, menu: 'fit' },
     shoulderDartSize: { pct: 7, min: 4, max: 10, menu: onlyWithShoulderDart },
     shoulderDartLength: { pct: 85, min: 60, max: 100, menu: onlyWithShoulderDart },
     waistDartSize: { pct: 10, min: 4, max: 15, menu: onlyWithWaistDart },

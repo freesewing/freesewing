@@ -2,10 +2,11 @@ import fs from 'fs'
 import path from 'path'
 import axios from 'axios'
 import { unified } from 'unified'
-import markdown from 'remark-parse'
-import remark2rehype from 'remark-rehype'
-import format from 'rehype-format'
-import html from 'rehype-stringify'
+import remarkParse from 'remark-parse'
+import remarkRehype from 'remark-rehype'
+import rehypeFormat from 'rehype-format'
+import rehypeStringify from 'rehype-stringify'
+import remarkGfm from 'remark-gfm'
 import mustache from 'mustache'
 import { testers } from '../config/newsletter-testers.mjs'
 import { fileURLToPath } from 'url'
@@ -18,10 +19,11 @@ const backend = 'https://backend.freesewing.org/'
 
 const asHtml = async (text) => {
   const content = await unified()
-    .use(markdown)
-    .use(remark2rehype)
-    .use(format)
-    .use(html)
+    .use(remarkParse)
+    .use(remarkGfm)
+    .use(remarkRehype)
+    .use(rehypeFormat)
+    .use(rehypeStringify)
     .process(text)
 
   return content.value
@@ -33,7 +35,7 @@ const getToken = async () => {
     password: process.env.FS_PASSWORD,
   })
   if (res.data) return res.data.token
-  else if (res.err) return console.log(err)
+  else if (res.err) return console.log(res.err)
 }
 
 const getSubscribers = async (test = true) => {

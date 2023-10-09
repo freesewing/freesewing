@@ -1,7 +1,7 @@
 // Hooks
 import { useEffect, useState } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useDesign } from 'shared/hooks/use-design.mjs'
+import { useDesign } from 'site/hooks/use-design.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components

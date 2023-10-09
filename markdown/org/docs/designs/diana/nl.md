@@ -2,4 +2,7 @@
 title: "Diana top met drapage"
 ---
 
-<PatternDocs pattern='diana' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='diana' docs />
+

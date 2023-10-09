@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { PanZoomContextProvider } from 'shared/components/workbench/pattern/pan-zoom-context.mjs'
 import { MenuWrapper } from 'shared/components/workbench/menus/shared/menu-wrapper.mjs'
 
@@ -15,6 +16,7 @@ export const PatternWithMenu = ({
   pattern,
   menu,
   setSettings,
+  saveAs,
   Header = false,
 }) => (
   <PanZoomContextProvider>
@@ -29,6 +31,7 @@ export const PatternWithMenu = ({
             account,
             design,
             setSettings,
+            saveAs,
           }}
         />
       ) : null}

@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { PrintSettings, ns as printMenuNs } from './settings.mjs'
 import { PrintActions } from './actions.mjs'
 import { PrintIcon, CompareIcon } from 'shared/components/icons.mjs'
@@ -45,7 +46,6 @@ export const PrintMenu = ({
   update,
   language,
   account,
-  DynamicDocs,
   exportIt,
   pattern,
 }) => {
@@ -57,7 +57,6 @@ export const PrintMenu = ({
     update,
     language,
     account,
-    DynamicDocs,
     control: account.control,
   }
 
@@ -75,7 +74,7 @@ export const PrintMenu = ({
       menu: <PrintActions {...menuProps} ui={ui} />,
     },
   ]
-  console.log(ui)
+
   return (
     <>
       <PageCounter {...{ pattern, t, ui, settings }} />

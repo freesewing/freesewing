@@ -190,15 +190,15 @@
       "d": "A classic straight barrel cuff"
     },
     "cuffStyle.roundedFrenchCuff": {
-      "t": "Rounded barrel cuff",
+      "t": "Rounded French cuff",
       "d": "A French cuff (the type you need cufflinks for) with rounded corners"
     },
     "cuffStyle.angledFrenchCuff": {
-      "t": "Angled  barrel cuff",
+      "t": "Angled French cuff",
       "d": "A French cuff (the type you need cufflinks for) with angled (chamnfered) corners"
     },
     "cuffStyle.straightFrenchCuff": {
-      "t": "Straight barrel cuff",
+      "t": "Straight French cuff",
       "d": "A straight French cuff (the type you need cufflinks for)"
     },
     "extraTopButton": {

@@ -2,4 +2,7 @@
 title: "Shin, bañador"
 ---
 
-<PatternDocs pattern='shin' />
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='shin' docs />
+

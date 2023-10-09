@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useState } from 'react'
 import { InspectorPattern } from './inspector/pattern.mjs'
 import { DraftMenu, ns as menuNs } from './menu.mjs'
@@ -18,7 +19,6 @@ export const InspectView = ({
   update,
   language,
   account,
-  DynamicDocs,
   setView,
   view,
 }) => {
@@ -94,7 +94,6 @@ export const InspectView = ({
                 update,
                 language,
                 account,
-                DynamicDocs,
                 inspector,
                 renderProps,
                 view,

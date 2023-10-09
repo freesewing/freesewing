@@ -9,7 +9,7 @@ bookmarkPattern: Bookmark pattern
 bottomRight: Внизу праворуч
 changeMeasies: Вимірювання зміни шаблону
 chooseATest: Choose a test scenario to run
-chooseATestDesc: You can test how the design adapts to changes in a specific design option or measurements, or even test the design across different measurements sets.
+chooseATestDesc: You can test how the design adapts to changes in a specific design option or measurements.
 chooseATestMenuMobileMsg: To do so, open the test menu and select the scenario you want to run.
 chooseATestMenuMsg: To do so, select the test scenario you want to run in the menu on the right.
 chooseFromBookmarkedSets: Choose one of the measurements sets you've bookmarked
@@ -24,6 +24,8 @@ collar: Комір
 columns: columns
 configurePattern: Налаштувати шаблон
 construction: Конструкція
+continueEditingTitle: Continue editing
+continueEditingDesc: Load the newly saved pattern in the pattern editor, so you can make more changes.
 cuffs: Манжети
 currentPrintLayout: Current print layout
 cutLayout: Макет розкрою
@@ -50,17 +52,22 @@ fit: За розміром
 frontPockets: Передні кишені
 generatePdf: Generate print-ready PDF
 giveItAName: Дайте йому ім'я.
+goToPatternTitle: Navigate to the pattern page
+goToPatternDesc: Exit the pattern editor and navigate to the pattern page where you can update the pattern's metadata.
 height: Висота
 help: Допоможіть!
 layoutSettings.d: Additional options to further optimize the printing layout of your pattern.
 layoutSettings.t: Layout settings
 length: Довжина
+learnHowToUseEditor: Learn how to use FreeSewing's online pattern editor
 measies: Вимірювання викрійки
 measiesOk: У нас є всі необхідні виміри для створення цієї моделі.
 measurements.d: Перевірте вплив вимірювання на вигляд цього шаблону
 menu: Меню
 name: Назва
 noDesignFound: Ми не змогли знайти цей дизайн. Цього не повинно статися, тому ми будемо дуже вдячні, якщо ви повідомите про це.
+noInlineDocs: Documention is not included in this build
+noInlineDocsDesc: Please visit FreeSewing.org to access our documentation
 notes: Нотатки
 pages: pages
 part: Деталь викрійки
@@ -86,9 +93,13 @@ resetPrintLayoutDesc: Removes all manual changes to the print layout, and restor
 rows: rows
 save: Зберегти
 savePattern: Зберегти викрійку
+saveAsNewPattern: Save as new pattern
+savePatternAs: Save pattern as...
+savePatternAsHellip: Save pattern as...
 saveSettings: Зберегти налаштування
 saveYourPattern: Збережіть свій шаблон
 seeMissingMeasies: See missing measurements
+show: Показати
 showAllParts: Показати всі частини деталі
 showMovableButtons: Кнопки
 showOnlyThisPart: Показати тільки цю частину деталі
@@ -107,6 +118,7 @@ testSets: Test measurements sets
 testSetsDesc: Test how the design adapts across different measurements sets
 topLeft: Вгорі ліворуч
 weLackSomeMeasies: Нам не вистачає { nr } вимірів для створення цього шаблону
+whereToGoAfterSaveAs: After saving the new pattern, what do you want to do?
 width: Ширина
 xTotalPagesSomeBlank: "{total} pages in total but {blank} are blank"
 yamlEditViewError: Проблеми з YAML

@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { formatMm } from 'shared/utils.mjs'
 import { mergeOptions } from '@freesewing/core'
 import {
@@ -12,7 +13,7 @@ import {
 const PctOptionInput = (props) => {
   const { config, settings, changed } = props
   const currentOrDefault = changed ? props.current : config.dflt / 100
-  console.log(settings)
+
   return (
     <PctInput {...props}>
       <div className="flex flex-row justify-around">

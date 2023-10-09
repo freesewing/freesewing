@@ -22,10 +22,10 @@ function teaganFront({
   for (let key of Object.keys(paths)) paths[key].hide()
 
   // Adapt fit to waist
-  if (options.curveToWaist) {
+  if (options.fitWaist) {
     let midWidth, lowerWidth
 
-    midWidth = (measurements.waist * (1 + options.curvedWaistEase)) / 4
+    midWidth = (measurements.waist * (1 + options.waistEase)) / 4
     lowerWidth = (measurements.hips * (1 + options.hipsEase)) / 4
     points.hem.x = lowerWidth
     points.hips.x = lowerWidth
@@ -82,11 +82,20 @@ function teaganFront({
   )
 
   // Log info for full length
-  log.info(['fullLengthFromHps', units(points.hps.dy(points.hem))])
+  store.flag.info({
+    msg: 'teagan:fullLengthFromHps',
+    replace: { length: units(points.hps.dy(points.hem)) },
+  })
+
+  // Store length of neck opening for finish
+  store.set(
+    'lengthFrontNeckOpening',
+    new Path().move(points.neck).curve(points.neckCp2, points.cfNeckCp1, points.cfNeck).length() * 2
+  )
 
   // Draw seamline
   paths.hemBase = new Path().move(points.cfHem).line(points.hem).hide()
-  if (options.curveToWaist) {
+  if (options.fitWaist) {
     paths.sideSeam = new Path()
       .move(points.hem)
       .curve(points.hipsCp2, points.waistCp1, points.waist)
@@ -158,7 +167,7 @@ function teaganFront({
     to: points.hem,
     y: points.hem.y + sa * 2.5 + 15,
   })
-  if (options.curveToWaist) {
+  if (options.fitWaist) {
     macro('hd', {
       id: 'wHemToWaist',
       from: points.waist,
@@ -238,8 +247,13 @@ export const front = {
     backNeckCutout: { pct: 8, min: 4, max: 12, menu: 'fit' },
     // Teagan specific
     draftForHighBust: { bool: false, menu: 'fit' },
-    curveToWaist: { bool: false, menu: 'fit' },
-    curvedWaistEase: { pct: 25, min: 8, max: 40, menu: 'fit' },
+    fitWaist: { bool: false, menu: 'fit' },
+    waistEase: {
+      pct: 25,
+      min: 8,
+      max: 40,
+      menu: (settings, mergedOptions) => (mergedOptions.fitWaist ? 'fit' : false),
+    },
     hipsEase: { pct: 18, min: 8, max: 30, menu: 'fit' },
     necklineDepth: { pct: 25, min: 20, max: 40, menu: 'style' },
     necklineWidth: { pct: 30, min: 10, max: 50, menu: 'style' },

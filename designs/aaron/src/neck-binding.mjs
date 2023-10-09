@@ -21,10 +21,13 @@ export const neckBinding = {
     const w = store.get('bindingWidth')
     const l = store.get('neckBindingLength')
 
-    if (!expand) {
-      // Expand is on, do not draw the part but flag this to the user
+    if (expand) {
+      store.flag.preset('expandIsOn')
+    } else {
+      // Expand is off, do not draw the part but flag this to the user
       store.flag.note({
         msg: `aaron:cutNeckBinding`,
+        notes: ['flag:saUnused', 'flag:partHiddenByExpand'],
         replace: {
           width: units(w),
           length: units(l),

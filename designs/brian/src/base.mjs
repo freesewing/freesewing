@@ -27,7 +27,7 @@ export const base = {
     cuffEase: { pct: 20, min: 0, max: 200, menu: 'fit' },
     draftForHighBust: {
       bool: false,
-      menu: ({ measurements }) => (measurements.highBust ? 'fit' : false),
+      menu: (settings) => (settings?.measurements?.highBust ? 'fit' : false),
     },
     shoulderEase: { pct: 0, min: -2, max: 6, menu: 'fit' },
     // Style
@@ -40,13 +40,13 @@ export const base = {
       pct: 2,
       min: -10,
       max: 50,
-      menu: ({ options }) => (options?.legacyArmholeDepth ? false : 'advanced'),
+      menu: (settings, mergedOptions) => (mergedOptions?.legacyArmholeDepth ? false : 'advanced'),
     },
     armholeDepthFactor: {
       pct: 55,
       min: 50,
       max: 70,
-      menu: ({ options }) => (options?.legacyArmholeDepth ? 'advanced' : false),
+      menu: (settings, mergedOptions) => (mergedOptions?.legacyArmholeDepth ? 'advanced' : false),
     },
     backNeckCutout: { pct: 5, min: 2, max: 8, menu: 'advanced' },
     frontArmholeDeeper: { pct: 0.2, min: 0, max: 0.5, menu: 'advanced' },
@@ -243,7 +243,7 @@ export const base = {
      * Annotations
      */
     points.title = new Point(points.armholePitch.x / 2, points.armholePitch.y)
-    macro('title', { nr: 0, title: 'base' })
+    macro('title', { nr: 0, title: 'base', at: points.title })
     points.logo = points.title.shift(-90, 100)
     snippets.logo = new Snippet('logo', points.logo)
 

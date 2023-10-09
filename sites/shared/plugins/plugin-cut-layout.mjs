@@ -1,5 +1,5 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { addToOnly } from 'shared/plugins/plugin-layout-part.mjs'
-import { pluginMirror } from '@freesewing/plugin-mirror'
 const prefix = 'mirroredOnFold'
 
 // types of path operations
@@ -93,7 +93,6 @@ export const cutLayoutPlugin = function (material, grainAngle) {
       },
     },
     macros: {
-      ...pluginMirror.macros,
       // handle mirroring on the fold and rotating to sit along the grain or bias
       handleFoldAndGrain: ({ partCutlist, instruction }, { points, macro }) => {
         // get the grain angle for the part for this set of instructions

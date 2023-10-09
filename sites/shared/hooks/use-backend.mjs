@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import axios from 'axios'
 import { freeSewingConfig } from 'shared/config/freesewing.config.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
@@ -31,6 +32,15 @@ const api = {
     let result
     try {
       result = await apiHandler.post(uri, data, config)
+      return result
+    } catch (err) {
+      return err
+    }
+  },
+  put: async (uri, data = null, config = {}) => {
+    let result
+    try {
+      result = await apiHandler.put(uri, data, config)
       return result
     } catch (err) {
       return err
@@ -476,6 +486,13 @@ Backend.prototype.sendLanguageSuggestion = async function (data) {
 }
 
 /*
+ * Subscribe to newsletter
+ */
+Backend.prototype.newsletterSubscribe = async function ({ email, language }) {
+  return responseHandler(await api.post('/subscriber', { email, language }))
+}
+
+/*
  * Confirm newsletter subscribe
  */
 Backend.prototype.confirmNewsletterSubscribe = async function ({ id, ehash }) {
@@ -486,7 +503,7 @@ Backend.prototype.confirmNewsletterSubscribe = async function ({ id, ehash }) {
  * Confirm newsletter unsubscribe
  */
 Backend.prototype.confirmNewsletterUnsubscribe = async function ({ id, ehash }) {
-  return responseHandler(await api.delete('/subscriber', { id, ehash }))
+  return responseHandler(await api.delete(`/subscriber/${id}/${ehash}`))
 }
 
 /*

@@ -1,25 +1,45 @@
 import { pocket } from './pocket.mjs'
 
-function draftCarltonPocketLining({ sa, store, points, options, macro, Point, paths, Path, part }) {
+function draftCarltonPocketLining({
+  sa,
+  utils,
+  store,
+  points,
+  options,
+  macro,
+  Point,
+  paths,
+  Path,
+  part,
+}) {
   delete paths.fold
 
   points.topLeft = points.bottomLeft.shiftFractionTowards(points.topLeft, 0.75)
   points.topRight = new Point(points.bottomRight.x, points.topLeft.y)
   if (options.pocketRadius > 0) {
-    macro('round', {
-      from: points.topLeft,
-      to: points.bottomRight,
-      via: points.bottomLeft,
-      radius: store.get('pocketRadius'),
-      prefix: 'roundLeft',
-    })
-    macro('round', {
-      from: points.bottomLeft,
-      to: points.topRight,
-      via: points.bottomRight,
-      radius: store.get('pocketRadius'),
-      prefix: 'roundRight',
-    })
+    // Macros will return the auto-generated IDs
+    const ids = {
+      roundLeft: macro('round', {
+        id: 'roundLeft',
+        from: points.topLeft,
+        to: points.bottomRight,
+        via: points.bottomLeft,
+        radius: store.get('pocketRadius'),
+      }),
+      roundRight: macro('round', {
+        id: 'roundRight',
+        from: points.bottomLeft,
+        to: points.topRight,
+        via: points.bottomRight,
+        radius: store.get('pocketRadius'),
+      }),
+    }
+    // Create points from them with easy names
+    for (const side in ids) {
+      for (const id of ['start', 'cp1', 'cp2', 'end']) {
+        points[`${side}${utils.capitalize(id)}`] = points[ids[side].points[id]].copy()
+      }
+    }
 
     paths.seam = new Path()
       .move(points.topLeft)
