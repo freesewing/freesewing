@@ -5,7 +5,6 @@ import { Teagan } from 'designs/teagan/src/index.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
-import { workbenchInlineDocs } from 'shared/mdx/docs.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Workbench, ns as wbNs } from 'shared/components/workbench/new.mjs'
@@ -32,11 +31,6 @@ export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ns)),
-      docs: await workbenchInlineDocs({
-        Design: Teagan,
-        design: 'teagan',
-        locale,
-      }),
       page: {
         locale,
         path: ['new', 'teagan'],

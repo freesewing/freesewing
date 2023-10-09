@@ -5,7 +5,6 @@ import { Jaeger } from 'designs/jaeger/src/index.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
-import { workbenchInlineDocs } from 'shared/mdx/docs.mjs'
 // Hooks
 import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
@@ -78,11 +77,6 @@ export async function getStaticProps({ locale, params }) {
     props: {
       ...(await serverSideTranslations(locale, ns)),
       id: params.id,
-      docs: await workbenchInlineDocs({
-        Design: Jaeger,
-        design: 'jaeger',
-        locale,
-      }),
       page: {
         locale,
         path: ['account', 'patterns', 'jaeger', params.id, 'edit'],
