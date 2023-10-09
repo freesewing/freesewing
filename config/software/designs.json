@@ -390,7 +390,7 @@
     "design": "Thrunic",
     "difficulty": 2,
     "tags": ["tops", "swimwear"],
-	"techniques": []
+	"techniques": ["hem", "stretch", "curvedSeam", "raglanSleeve"]
   },
   "shin": {
     "lab": true,
