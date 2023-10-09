@@ -1,10 +1,14 @@
+/*
+ * This page is auto-generated. Do not edit it by hand.
+ */
+import { Noble } from 'designs/noble/src/index.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
+import { workbenchInlineDocs } from 'shared/mdx/docs.mjs'
 // Hooks
 import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
-import { useDesign } from 'site/hooks/use-design.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Context
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
@@ -12,25 +16,16 @@ import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Workbench, ns as wbNs } from 'shared/components/workbench/new.mjs'
 import { WorkbenchLayout } from 'site/components/layouts/workbench.mjs'
-import { DynamicOrgDocs as DynamicDocs } from 'site/components/dynamic-org-docs.mjs'
 import { Loading } from 'shared/components/spinner.mjs'
 
 // Translation namespaces used on this page
-const ns = nsMerge(wbNs, pageNs)
+const ns = nsMerge('noble', wbNs, pageNs)
 
-const EditDesignComponent = ({ design, id, settings }) => {
-  const Design = useDesign(design)
+const EditDesignComponent = ({ id, design, Design, settings, docs }) => (
+  <Workbench preload={{ settings }} saveAs={{ pattern: id }} {...{ design, Design, docs }} />
+)
 
-  return (
-    <Workbench
-      preload={{ settings }}
-      saveAs={{ pattern: id }}
-      {...{ design, Design, DynamicDocs }}
-    />
-  )
-}
-
-const EditDesignPage = ({ page, design, id }) => {
+const EditNoblePage = ({ page, docs, design, id }) => {
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
   const { t } = useTranslation(ns)
@@ -56,32 +51,42 @@ const EditDesignPage = ({ page, design, id }) => {
   }, [id])
 
   return (
-    <PageWrapper {...page} title={design} layout={pattern ? WorkbenchLayout : false} header={null}>
+    // prettier-ignore
+    <PageWrapper {...page} title="Noble" layout={pattern ? WorkbenchLayout : false} header={null}>
       {pattern ? (
-        <EditDesignComponent design={pattern.design} id={pattern.id} settings={pattern.settings} />
+        <EditDesignComponent
+          id={pattern.id}
+          settings={pattern.settings}
+          design="noble"
+          Design={Noble}
+          docs={docs}
+        />
       ) : (
         <div>
           <h1>{t('account:oneMomentPLease')}</h1>
           <Loading />
-          <p>Give it a moment</p>
         </div>
       )}
-      <pre>{JSON.stringify(pattern, null, 2)}</pre>
     </PageWrapper>
   )
 }
 
-export default EditDesignPage
+export default EditNoblePage
 
 export async function getStaticProps({ locale, params }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ns)),
       id: params.id,
+      docs: await workbenchInlineDocs({
+        Design: Noble,
+        design: 'noble',
+        locale,
+      }),
       page: {
         locale,
-        path: ['account', 'patterns', params.id, 'edit'],
-        title: '',
+        path: ['account', 'patterns', 'noble', params.id, 'edit'],
+        title: 'Noble',
       },
     },
   }
