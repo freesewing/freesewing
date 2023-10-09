@@ -24,7 +24,7 @@ function teaganBack({
 
   // Draw seamline
   paths.hemBase = new Path().move(points.cfHem).line(points.hem).hide()
-  if (options.curveToWaist) {
+  if (options.fitWaist) {
     paths.sideSeam = new Path()
       .move(points.hem)
       .curve(points.hipsCp2, points.waistCp1, points.waist)
