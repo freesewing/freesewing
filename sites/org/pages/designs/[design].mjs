@@ -2,7 +2,6 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
 import { collection } from 'site/hooks/use-design.mjs'
-import { siteConfig } from 'site/site.config.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components
