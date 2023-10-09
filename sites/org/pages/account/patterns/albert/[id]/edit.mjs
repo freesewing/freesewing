@@ -1,7 +1,7 @@
 /*
  * This page is auto-generated. Do not edit it by hand.
  */
-import { Albert } from '@freesewing/albert'
+import { Albert } from 'designs/albert/src/index.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
@@ -51,6 +51,7 @@ const EditAlbertPage = ({ page, docs, design, id }) => {
   }, [id])
 
   return (
+    // prettier-ignore
     <PageWrapper {...page} title="Albert" layout={pattern ? WorkbenchLayout : false} header={null}>
       {pattern ? (
         <EditDesignComponent

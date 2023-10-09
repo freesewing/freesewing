@@ -1,7 +1,7 @@
 /*
  * This page is auto-generated. Do not edit it by hand.
  */
-import { Uma } from '@freesewing/uma'
+import { Uma } from 'designs/uma/src/index.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
@@ -51,6 +51,7 @@ const EditUmaPage = ({ page, docs, design, id }) => {
   }, [id])
 
   return (
+    // prettier-ignore
     <PageWrapper {...page} title="Uma" layout={pattern ? WorkbenchLayout : false} header={null}>
       {pattern ? (
         <EditDesignComponent

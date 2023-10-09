@@ -1,7 +1,7 @@
 /*
  * This page is auto-generated. Do not edit it by hand.
  */
-import { Bruce } from '@freesewing/bruce'
+import { Bruce } from 'designs/bruce/src/index.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'

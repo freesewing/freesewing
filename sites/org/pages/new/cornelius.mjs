@@ -1,7 +1,7 @@
 /*
  * This page is auto-generated. Do not edit it by hand.
  */
-import { Cornelius } from '@freesewing/cornelius'
+import { Cornelius } from 'designs/cornelius/src/index.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'

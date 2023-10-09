@@ -1,7 +1,7 @@
 /*
  * This page is auto-generated. Do not edit it by hand.
  */
-import { Yuri } from '@freesewing/yuri'
+import { Yuri } from 'designs/yuri/src/index.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
@@ -51,6 +51,7 @@ const EditYuriPage = ({ page, docs, design, id }) => {
   }, [id])
 
   return (
+    // prettier-ignore
     <PageWrapper {...page} title="Yuri" layout={pattern ? WorkbenchLayout : false} header={null}>
       {pattern ? (
         <EditDesignComponent

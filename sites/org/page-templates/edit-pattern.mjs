@@ -1,7 +1,7 @@
 /*
  * This page is auto-generated. Do not edit it by hand.
  */
-import { {{ Design }} } from '@freesewing/{{ design }}'
+import { $$Design$$ } from 'designs/$$design$$/src/index.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
@@ -19,18 +19,13 @@ import { WorkbenchLayout } from 'site/components/layouts/workbench.mjs'
 import { Loading } from 'shared/components/spinner.mjs'
 
 // Translation namespaces used on this page
-const ns = nsMerge('{{ design }}', wbNs, pageNs)
+const ns = nsMerge('$$design$$', wbNs, pageNs)
 
 const EditDesignComponent = ({ id, design, Design, settings, docs }) => (
-  <Workbench
-    preload={ { settings } }
-    saveAs={ { pattern: id } }
-    {...{ design, Design, docs }}
-  />
+  <Workbench preload={{ settings }} saveAs={{ pattern: id }} {...{ design, Design, docs }} />
 )
 
-
-const Edit{{ Design }}Page = ({ page, docs, design, id }) => {
+const Edit$$Design$$Page = ({ page, docs, design, id }) => {
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
   const { t } = useTranslation(ns)
@@ -56,13 +51,14 @@ const Edit{{ Design }}Page = ({ page, docs, design, id }) => {
   }, [id])
 
   return (
-    <PageWrapper {...page} title="{{ Design }}" layout={pattern ? WorkbenchLayout : false} header={null}>
+    // prettier-ignore
+    <PageWrapper {...page} title="$$Design$$" layout={pattern ? WorkbenchLayout : false} header={null}>
       {pattern ? (
         <EditDesignComponent
           id={pattern.id}
           settings={pattern.settings}
-          design='{{ design }}'
-          Design={ {{ Design }} }
+          design="$$design$$"
+          Design={$$Design$$}
           docs={docs}
         />
       ) : (
@@ -75,22 +71,22 @@ const Edit{{ Design }}Page = ({ page, docs, design, id }) => {
   )
 }
 
-export default Edit{{ Design }}Page
+export default Edit$$Design$$Page
 
 export async function getStaticProps({ locale, params }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, ns)),
       id: params.id,
-      docs: (await workbenchInlineDocs({
-        Design: {{ Design }},
-        design: '{{ design }}',
+      docs: await workbenchInlineDocs({
+        Design: $$Design$$,
+        design: '$$design$$',
         locale,
-      })),
+      }),
       page: {
         locale,
-        path: ['account', 'patterns', '{{ design }}', params.id, 'edit'],
-        title: '{{ Design }}',
+        path: ['account', 'patterns', '$$design$$', params.id, 'edit'],
+        title: '$$Design$$',
       },
     },
   }

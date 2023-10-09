@@ -1,7 +1,7 @@
 /*
  * This page is auto-generated. Do not edit it by hand.
  */
-import { Florence } from '@freesewing/florence'
+import { Florence } from 'designs/florence/src/index.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
@@ -51,12 +51,8 @@ const EditFlorencePage = ({ page, docs, design, id }) => {
   }, [id])
 
   return (
-    <PageWrapper
-      {...page}
-      title="Florence"
-      layout={pattern ? WorkbenchLayout : false}
-      header={null}
-    >
+    // prettier-ignore
+    <PageWrapper {...page} title="Florence" layout={pattern ? WorkbenchLayout : false} header={null}>
       {pattern ? (
         <EditDesignComponent
           id={pattern.id}

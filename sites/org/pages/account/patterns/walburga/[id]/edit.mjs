@@ -1,7 +1,7 @@
 /*
  * This page is auto-generated. Do not edit it by hand.
  */
-import { Walburga } from '@freesewing/walburga'
+import { Walburga } from 'designs/walburga/src/index.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
@@ -51,12 +51,8 @@ const EditWalburgaPage = ({ page, docs, design, id }) => {
   }, [id])
 
   return (
-    <PageWrapper
-      {...page}
-      title="Walburga"
-      layout={pattern ? WorkbenchLayout : false}
-      header={null}
-    >
+    // prettier-ignore
+    <PageWrapper {...page} title="Walburga" layout={pattern ? WorkbenchLayout : false} header={null}>
       {pattern ? (
         <EditDesignComponent
           id={pattern.id}

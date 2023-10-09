@@ -1,7 +1,7 @@
 /*
  * This page is auto-generated. Do not edit it by hand.
  */
-import { Hortensia } from '@freesewing/hortensia'
+import { Hortensia } from 'designs/hortensia/src/index.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
@@ -51,12 +51,8 @@ const EditHortensiaPage = ({ page, docs, design, id }) => {
   }, [id])
 
   return (
-    <PageWrapper
-      {...page}
-      title="Hortensia"
-      layout={pattern ? WorkbenchLayout : false}
-      header={null}
-    >
+    // prettier-ignore
+    <PageWrapper {...page} title="Hortensia" layout={pattern ? WorkbenchLayout : false} header={null}>
       {pattern ? (
         <EditDesignComponent
           id={pattern.id}

@@ -1,7 +1,7 @@
 /*
  * This page is auto-generated. Do not edit it by hand.
  */
-import { Octoplushy } from '@freesewing/octoplushy'
+import { Octoplushy } from 'designs/octoplushy/src/index.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge } from 'shared/utils.mjs'
@@ -51,12 +51,8 @@ const EditOctoplushyPage = ({ page, docs, design, id }) => {
   }, [id])
 
   return (
-    <PageWrapper
-      {...page}
-      title="Octoplushy"
-      layout={pattern ? WorkbenchLayout : false}
-      header={null}
-    >
+    // prettier-ignore
+    <PageWrapper {...page} title="Octoplushy" layout={pattern ? WorkbenchLayout : false} header={null}>
       {pattern ? (
         <EditDesignComponent
           id={pattern.id}
