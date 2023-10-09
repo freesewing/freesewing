@@ -17,7 +17,7 @@ const convertUrl = ({ site, slug, url }) => {
 
 export function remarkGithubImages({ site, slug }) {
   return (tree) => {
-    visit(tree, function (node, index, parent) {
+    visit(tree, function (node) {
       if (node.type === 'image') node.url = convertUrl({ site, slug, url: node.url })
 
       return node

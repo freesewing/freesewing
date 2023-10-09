@@ -65,7 +65,6 @@ export const MenuItem = ({
   Input = () => {},
   allowOverride = false,
   control = Infinity,
-  language,
   docs,
   design,
 }) => {

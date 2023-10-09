@@ -36,7 +36,7 @@ export const ns = nsMerge(
   'tags'
 )
 
-const Option = ({ id, option, t, design }) =>
+const Option = ({ id, option, design }) =>
   optionType(option) === 'constant' ? null : (
     <li key={option.name}>
       <DocsLink site="org" slug={`docs/designs/${design}/options/${id.toLowerCase()}`} />
@@ -51,7 +51,7 @@ const OptionGroup = ({ id, group, t, design }) => (
         entry.isGroup ? (
           <OptionGroup id={sid} key={sid} t={t} group={entry} desing={design} />
         ) : (
-          <Option key={sid} id={sid} t={t} option={entry} design={design} />
+          <Option key={sid} id={sid} option={entry} design={design} />
         )
       )}
     </ul>

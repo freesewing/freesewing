@@ -15,8 +15,6 @@ export const compileMdx = async ({
   md, // A string holding the markdown
   site, // The site folder, one of 'org' or 'dev'
   slug, // The slug to the page below the folder (like 'guides/plugins')
-  jargon, // An object of jargon definitions. See rehype-jargon
-  fromGithub = false, // Set this to true when dynamically loading mdx from Github
 }) => {
   const mdx = String(
     await compile(md, {
