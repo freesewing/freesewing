@@ -247,7 +247,7 @@ export const front = {
     backNeckCutout: { pct: 8, min: 4, max: 12, menu: 'fit' },
     // Teagan specific
     draftForHighBust: { bool: false, menu: 'fit' },
-    fitToWaist: { bool: false, menu: 'fit' },
+    fitWaist: { bool: false, menu: 'fit' },
     waistEase: {
       pct: 25,
       min: 8,
