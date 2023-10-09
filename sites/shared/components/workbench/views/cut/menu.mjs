@@ -41,7 +41,6 @@ export const CutMenu = ({
   update,
   language,
   account,
-  docs,
   materialSettings,
   setSettings,
 }) => {
@@ -53,7 +52,6 @@ export const CutMenu = ({
     update,
     language,
     account,
-    docs,
     control,
   }
   return (

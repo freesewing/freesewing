@@ -5,17 +5,15 @@ import { SampleItem } from './options.mjs'
 
 export const ns = ['measurements', 'test-view', 'workbench']
 
-export const TestMeasurements = ({ patternConfig, settings, update, language, account, docs }) => {
+export const TestMeasurements = ({ patternConfig, settings, update, language, account }) => {
   const menuStructure = {}
   patternConfig.measurements.forEach((m) => (menuStructure[m] = m))
-  const getDocsPath = (measie) => `measurements/${measie}`
+
   return (
     <WorkbenchMenu
       {...{
         config: menuStructure,
         control: account.control,
-        docs,
-        getDocsPath,
         Icon: MeasieIcon,
         Item: SampleItem,
         name: 'measurements',

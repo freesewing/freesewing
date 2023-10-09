@@ -30,7 +30,6 @@ export const DraftMenu = ({
   update,
   language,
   account,
-  docs,
   view,
   setView,
   flags = false,
@@ -44,7 +43,6 @@ export const DraftMenu = ({
     update,
     language,
     account,
-    docs,
     control,
   }
   const uiSettingsConfig = loadUiSettingsConfig()

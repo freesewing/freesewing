@@ -64,20 +64,16 @@ export const TestOptions = ({
   language,
   account,
   isFirst = true,
-  docs,
 }) => {
   const menuNs = [`o_${design}`, ...ns]
   const optionsMenu = optionsMenuStructure(patternConfig.options)
-  const getDocsPath = (option) =>
-    `designs/${design}/options${option ? '/' + option.toLowerCase() : ''}`
+
   return (
     <WorkbenchMenu
       {...{
         config: optionsMenu,
         control: account.control,
-        docs,
         emojis,
-        getDocsPath,
         Icon: OptionsIcon,
         Item: SampleItem,
         isFirst,
