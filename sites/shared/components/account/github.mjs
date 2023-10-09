@@ -53,7 +53,7 @@ export const GithubSettings = () => {
         update={setGithubUsername}
         valid={(val) => val.length > 0}
         placeholder={'joost@joost.at'}
-        docs={<DynamicOrgDocs language={i18n.language} path={`docs/site/account/github`} />}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/github`} />}
       />
       <SaveSettingsButton btnProps={{ onClick: save }} />
       <BackToAccountButton />
