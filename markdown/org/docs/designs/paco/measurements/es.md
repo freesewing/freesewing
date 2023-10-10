@@ -2,4 +2,4 @@
 title: "Pantalones Paco: Medidas requeridas"
 ---
 
-<PatternMeasurements pattern='paco' />
+<DesignMeasurements design='paco' />

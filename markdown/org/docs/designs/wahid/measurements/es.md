@@ -2,4 +2,4 @@
 title: "Chaleco Wahid: Medidas requeridas"
 ---
 
-<PatternMeasurements pattern='wahid' />
+<DesignMeasurements design='wahid' />

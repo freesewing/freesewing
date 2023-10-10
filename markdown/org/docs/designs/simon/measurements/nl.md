@@ -2,4 +2,4 @@
 title: "Simon overhemd: Benodigde afmetingen"
 ---
 
-<PatternMeasurements pattern='simon' />
+<DesignMeasurements design='simon' />

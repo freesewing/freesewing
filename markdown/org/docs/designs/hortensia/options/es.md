@@ -2,4 +2,4 @@
 title: "Bolso Hortensia: Opciones de diseño"
 ---
 
-<PatternOptions pattern='hortensia' />
+<DesignOptions design='hortensia' />

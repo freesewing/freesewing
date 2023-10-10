@@ -2,4 +2,4 @@
 title: "Yuri Hoodie: Design Optionen"
 ---
 
-<PatternOptions pattern='yuri' />
+<DesignOptions design='yuri' />

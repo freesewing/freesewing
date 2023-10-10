@@ -2,4 +2,4 @@
 title: "Titan-Hosenblock: Design Optionen"
 ---
 
-<PatternOptions pattern='titan' />
+<DesignOptions design='titan' />

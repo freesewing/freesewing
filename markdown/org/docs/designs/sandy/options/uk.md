@@ -2,4 +2,4 @@
 title: "Пісочна спідниця-коло: Варіанти дизайну"
 ---
 
-<PatternOptions pattern='sandy' />
+<DesignOptions design='sandy' />

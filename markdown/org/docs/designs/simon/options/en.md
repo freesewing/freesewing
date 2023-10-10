@@ -2,4 +2,4 @@
 title: "Simon shirt: Design Options"
 ---
 
-<PatternOptions pattern='simon' />
+<DesignOptions design='simon' />

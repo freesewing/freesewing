@@ -2,4 +2,4 @@
 title: "Octoplushy, плюшевий восьминіг: Варіанти дизайну"
 ---
 
-<PatternOptions pattern='octoplushy' />
+<DesignOptions design='octoplushy' />

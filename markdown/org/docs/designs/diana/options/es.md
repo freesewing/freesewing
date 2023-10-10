@@ -2,4 +2,4 @@
 title: "Top drapeado Diana: Opciones de diseño"
 ---
 
-<PatternOptions pattern='diana' />
+<DesignOptions design='diana' />

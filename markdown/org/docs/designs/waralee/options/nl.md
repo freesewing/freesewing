@@ -2,4 +2,4 @@
 title: "Waralee wikkelbroek: Ontwerpopties"
 ---
 
-<PatternOptions pattern='waralee' />
+<DesignOptions design='waralee' />

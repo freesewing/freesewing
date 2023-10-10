@@ -2,4 +2,4 @@
 title: "Сумочка Hortensia: Варіанти дизайну"
 ---
 
-<PatternOptions pattern='hortensia' />
+<DesignOptions design='hortensia' />

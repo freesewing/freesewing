@@ -2,4 +2,4 @@
 title: "Brian lichaam blok: Vereiste metingen"
 ---
 
-<PatternMeasurements pattern='brian' />
+<DesignMeasurements design='brian' />

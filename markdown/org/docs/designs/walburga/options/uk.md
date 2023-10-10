@@ -2,4 +2,4 @@
 title: "Вальбурга Ваппенрок: Варіанти дизайну"
 ---
 
-<PatternOptions pattern='walburga' />
+<DesignOptions design='walburga' />

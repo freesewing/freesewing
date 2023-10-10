@@ -2,4 +2,4 @@
 title: "Tiberius Tunica: Erforderliche Messungen"
 ---
 
-<PatternMeasurements pattern='tiberius' />
+<DesignMeasurements design='tiberius' />

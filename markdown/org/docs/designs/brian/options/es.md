@@ -2,7 +2,7 @@
 title: "Bloque de carrocería Brian: Opciones de diseño"
 ---
 
-<PatternOptions pattern='brian' />
+<DesignOptions design='brian' />
 
 ## Entendiendo la manga
 

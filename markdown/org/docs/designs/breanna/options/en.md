@@ -2,7 +2,7 @@
 title: "Breanna body block: Design Options"
 ---
 
-<PatternOptions pattern='breanna' />
+<DesignOptions design='breanna' />
 
 ## Understanding the sleevecap
 

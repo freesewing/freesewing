@@ -2,4 +2,4 @@
 title: "Lucy bindzakje: Ontwerpopties"
 ---
 
-<PatternOptions pattern='lucy' />
+<DesignOptions design='lucy' />

@@ -2,4 +2,4 @@
 title: "Carlita coat: Required Measurements"
 ---
 
-<PatternMeasurements pattern='carlita' />
+<DesignMeasurements design='carlita' />

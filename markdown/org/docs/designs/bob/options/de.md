@@ -2,4 +2,4 @@
 title: "Bob der Latz: Gestaltungsmöglichkeiten"
 ---
 
-<PatternOptions pattern='bob' />
+<DesignOptions design='bob' />

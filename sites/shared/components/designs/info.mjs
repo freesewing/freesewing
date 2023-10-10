@@ -57,7 +57,7 @@ const OptionGroup = ({ id, group, t, design }) => (
     </ul>
   </li>
 )
-const SimpleOptionsList = ({ options, t, design }) => {
+export const SimpleOptionsList = ({ options, t, design }) => {
   const structure = optionsMenuStructure(options, {})
   const output = []
   for (const [key, entry] of Object.entries(structure)) {
@@ -276,7 +276,10 @@ export const DesignInfo = ({ design, docs = false, workbench = false }) => {
                   .sort()
                   .map((m) => (
                     <li key={m}>
-                      <PageLink href={`/docs/measurements/${m}`} txt={measies.required[m]} />
+                      <PageLink
+                        href={`/docs/measurements/${m.toLowerCase()}`}
+                        txt={measies.required[m]}
+                      />
                     </li>
                   ))}
               </ul>
@@ -291,7 +294,10 @@ export const DesignInfo = ({ design, docs = false, workbench = false }) => {
                   .sort()
                   .map((m) => (
                     <li key={m}>
-                      <PageLink href={`/docs/measurements/${m}`} txt={measies.optional[m]} />
+                      <PageLink
+                        href={`/docs/measurements/${m.toLowerCase()}`}
+                        txt={measies.optional[m]}
+                      />
                     </li>
                   ))}
               </ul>

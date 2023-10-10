@@ -2,4 +2,4 @@
 title: "Худі Hugo: Варіанти дизайну"
 ---
 
-<PatternOptions pattern='hugo' />
+<DesignOptions design='hugo' />

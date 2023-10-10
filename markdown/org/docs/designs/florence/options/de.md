@@ -2,4 +2,4 @@
 title: "Florence Gesichtsmaske: Design Optionen"
 ---
 
-<PatternOptions pattern='florence' />
+<DesignOptions design='florence' />

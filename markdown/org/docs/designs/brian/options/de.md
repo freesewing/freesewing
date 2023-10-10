@@ -2,7 +2,7 @@
 title: "Brian Body Block: Gestaltungsmöglichkeiten"
 ---
 
-<PatternOptions pattern='brian' />
+<DesignOptions design='brian' />
 
 ## Die Ärmel verstehen
 

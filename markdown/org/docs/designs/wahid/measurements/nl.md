@@ -2,4 +2,4 @@
 title: "Wahid vest: Benodigde afmetingen"
 ---
 
-<PatternMeasurements pattern='wahid' />
+<DesignMeasurements design='wahid' />

@@ -2,4 +2,4 @@
 title: "Falda lápiz Penélope: Medidas requeridas"
 ---
 
-<PatternMeasurements pattern='penelope' />
+<DesignMeasurements design='penelope' />
