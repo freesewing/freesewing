@@ -2,45 +2,31 @@ import { nsMerge } from 'shared/utils.mjs'
 import { pages as posts } from 'site/prebuild/showcase.mjs'
 import { getPostSlugPaths } from 'site/components/mdx/posts/utils.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useDynamicMdx } from 'shared/hooks/use-dynamic-mdx.mjs'
-import { useCallback } from 'react'
-import { PostArticle, ns as postNs } from 'site/components/mdx/posts/article.mjs'
+import { loadMdxAsStaticProps } from 'shared/mdx/load.mjs'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
+import { PostLayout, ns as layoutNs } from 'site/components/layouts/post.mjs'
 
-const namespaces = nsMerge(postNs, pageNs)
+const ns = nsMerge(pageNs, layoutNs)
 
-/*
- * Each page MUST be wrapped in the PageWrapper component.
- * You also MUST spread props.page into this wrapper component
- * when path and locale come from static props (as here)
- * or set them manually.
- */
-const ShowcasePage = ({ locale, dir, page }) => {
-  // function to load the correct markdown
-  const loader = useCallback(
-    () => import(`orgmarkdown/showcase/${dir}/${locale}.md`),
-    [dir, locale]
-  )
-
-  const { frontmatter, MDX } = useDynamicMdx(loader)
-
+const ShowcasePage = ({ dir, page, mdx, frontmatter }) => {
   return (
-    <PageWrapper {...page} title={frontmatter.title}>
-      <PostArticle {...{ frontmatter, MDX }} imgId={`showcase-${dir}`} />
-    </PageWrapper>
+    <PageWrapper
+      {...page}
+      title={frontmatter.title}
+      layout={(props) => (
+        <PostLayout
+          {...props}
+          slug={page.path.join('/')}
+          frontmatter={frontmatter}
+          mdx={mdx}
+          dir={dir}
+          type="blog"
+        />
+      )}
+    />
   )
 }
 
-/*
- * getStaticProps() is used to fetch data at build-time.
- *
- * On this page, it it passes the name of the bundle to be loaded on the client.
- *
- * This, in combination with getStaticPaths() below means this
- * page will be used to render/generate all showcase content.
- *
- * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
- */
 export async function getStaticProps({ params, locale }) {
   const { dir } = params
 
@@ -51,7 +37,12 @@ export async function getStaticProps({ params, locale }) {
     props: {
       dir,
       locale,
-      ...(await serverSideTranslations(locale, namespaces)),
+      ...(await serverSideTranslations(locale, ns)),
+      ...(await loadMdxAsStaticProps({
+        language: locale,
+        site: 'org',
+        slug: `showcase/${params.dir}`,
+      })),
       page: {
         locale,
         path: ['showcase', dir],
@@ -60,21 +51,6 @@ export async function getStaticProps({ params, locale }) {
   }
 }
 
-/*
- * getStaticPaths() is used to specify for which routes (think URLs)
- * this page should be used to generate the result.
- *
- * On this page, it is returning a truncated list of routes (think URLs) for all
- * the mdx showcase (markdown) content.
- * That list comes from prebuild/showcase-paths.mjs, which is built in the prebuild step
- * and contains paths, titles, imageUrls, and intro for all showcase posts.
- *
- * the fallback: 'blocking' property means that
- * any pages that haven't been pre-generated
- * will generate and cache the first time someone visits them
- *
- * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
- */
 export const getStaticPaths = async () => {
   return {
     paths: getPostSlugPaths(posts),
