@@ -1,5 +1,5 @@
 import { Tab, Tabs } from '../tabs.mjs'
-import Md from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import { pluginFlip } from '@freesewing/plugin-flip'
 import { pluginGore } from '@freesewing/plugin-gore'
 import { Design } from '@freesewing/core'
@@ -145,7 +145,7 @@ export const TabbedExample = ({
       </Tabs>
       {caption && (
         <div className="text-center italic -mt-4">
-          <Md>{caption}</Md>
+          <Mdx md={caption} />
         </div>
       )}
     </div>

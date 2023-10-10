@@ -40,7 +40,7 @@ import {
   BoolNoIcon,
 } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import Timeago from 'react-timeago'
 import { DisplayRow } from './shared.mjs'
 import {
@@ -413,7 +413,7 @@ export const Mset = ({ id, publicOnly = false }) => {
         </DisplayRow>
         {control >= controlLevels.sets.notes && (
           <DisplayRow title={t('notes')}>
-            <Markdown>{mset.notes}</Markdown>
+            <Mdx md={mset.notes} />
           </DisplayRow>
         )}
         {control >= controlLevels.sets.public && (

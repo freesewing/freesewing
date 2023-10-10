@@ -1,6 +1,6 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useState } from 'react'
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 
 // If these vars are missing, we suspect they are not desctructured in the draft method
 const knownVars = [
@@ -52,15 +52,15 @@ const ShowStackButton = ({ setDetails, details, t, txt = 'clickHereForStackTrace
 // This explains how the error is likely do to restructuring
 const NotDestructured = ({ missing, setDetails, details, t }) => (
   <div className="pattern-logs">
-    <Markdown>{t('notDestructured', { missing })}</Markdown>
+    <Mdx md={t('notDestructured', { missing })} />
     <br />
-    <Markdown>
-      {t('seeLinkOrClick', {
+    <Mdx
+      md={t('seeLinkOrClick', {
         link: `[${t('theDraftMethodDocs')}](https://freesewing.dev/reference/api/part/draft)`,
         click: '',
         interpolation,
       })}
-    </Markdown>
+    />
     <ShowStackButton {...{ setDetails, details, t }} />
   </div>
 )
@@ -68,28 +68,28 @@ const NotDestructured = ({ missing, setDetails, details, t }) => (
 // This explains a var is undefined in the design
 const DesignsVarUndefined = ({ missing, err, t }) => (
   <div className="pattern-logs" key={missing}>
-    <Markdown>
-      {t('designVarUndefined', {
+    <Mdx
+      md={t('designVarUndefined', {
         missing,
         file: err.stack.split('\n')[0].split('/designs/').pop(),
         interpolation,
       })}
-    </Markdown>
+    />
   </div>
 )
 
 // Some other var not being defined
 const OtherVarUndefined = ({ details, setDetails, missing, err, t }) => (
   <div key={missing}>
-    <Markdown>{t('otherVarUndefined', { missing, interpolation })}</Markdown>
+    <Mdx md={t('otherVarUndefined', { missing, interpolation })} />
     <br />
-    <Markdown>
-      {t('checkForDetailsOrClick', {
+    <Mdx
+      md={t('checkForDetailsOrClick', {
         file: err.stack[0],
         click: '',
         interpolation,
       })}
-    </Markdown>
+    />
     <ShowStackButton {...{ setDetails, details, t }} />
   </div>
 )
