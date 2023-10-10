@@ -1,7 +1,7 @@
 import { Legend as LegendDesign } from '@freesewing/legend'
 import { ShowPattern } from './tabbed-example.mjs'
 
-export const Legend = ({ caption = false, part = '', children = null }) => {
+export const Legend = ({ part = '' }) => {
   const settings = {
     only: [`legend.${part}`],
     measurements: {
