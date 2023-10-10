@@ -2,7 +2,7 @@
 title: "Rückenweitenverhältnis"
 ---
 
-Steuert die Rückenbreite als Faktor der Schultermessung
+Beeinflusst das Verhältnis zwischen Rücken- und Schulterweite measurement
 
 ## Effekt dieser Option auf das Schnittmuster
 
