@@ -23,3 +23,7 @@ credits: Кредити
 contentsBy: Зміст за темою
 translators: Перекладачі
 title: Title
+xMadeThis: "<strong>{x}</strong> є автором цієї роботи"
+xWroteThis: "<strong>{x}</strong> є автором цього тексту"
+by: By
+
