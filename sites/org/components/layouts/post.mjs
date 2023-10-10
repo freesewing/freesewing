@@ -51,7 +51,7 @@ const PostMeta = ({ frontmatter, t }) => (
   </div>
 )
 
-const PostImage = ({ imgId, frontmatter }) => (
+export const PostImage = ({ imgId, frontmatter }) => (
   <figure>
     <Lightbox>
       <ImageWrapper>
@@ -69,7 +69,7 @@ const PostImage = ({ imgId, frontmatter }) => (
   </figure>
 )
 
-const PostContent = ({ mdx, dir }) => (
+export const PostContent = ({ mdx, dir }) => (
   <div className="strapi prose lg:prose-lg mb-12 m-auto">
     <MdxWrapper mdx={mdx} slug={`blog/${dir}`} />
   </div>
