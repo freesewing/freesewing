@@ -2,4 +2,4 @@
 title: "Albert schort: Ontwerpopties"
 ---
 
-<PatternOptions pattern='albert' />
+<DesignOptions design='albert' />
