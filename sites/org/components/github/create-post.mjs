@@ -21,11 +21,12 @@ import {
 } from './inputs.mjs'
 import { Tab } from 'shared/components/account/bio.mjs'
 import { CodeBox } from 'shared/components/code-box.mjs'
-import { PostArticle, ns as mdxNs } from 'site/components/mdx/posts/article.mjs'
 import { PageLink, WebLink } from 'shared/components/link.mjs'
 import { OkIcon, WarningIcon as KoIcon } from 'shared/components/icons.mjs'
+import { PostImage } from 'site/components/layouts/post.mjs'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 
-export const ns = nsMerge('account', 'posts', authNs, mdxNs)
+export const ns = nsMerge('account', 'posts', authNs)
 
 const Tip = ({ children }) => <p className="italic opacity-70">{children}</p>
 
@@ -115,7 +116,6 @@ export const CreatePost = ({ type = 'showcase' }) => {
   const verifySlug = async (newSlug) => {
     setSlug(newSlug)
     const result = await backend.isSlugAvailable({ slug: newSlug, type })
-    console.log(result)
     setSlugAvailable(result.available === true ? true : false)
   }
 
@@ -274,21 +274,12 @@ export const CreatePost = ({ type = 'showcase' }) => {
   )
 }
 
-const PostPreview = ({ designs, title, img, caption, intro, body, account }) => (
+const PostPreview = ({ title, img, caption, body }) => (
   <>
     <h1>{title}</h1>
-    <PostArticle
-      frontmatter={{
-        title,
-        designs,
-        maker: account.username,
-        date: yyyymmdd(),
-        caption,
-        intro,
-      }}
-      imgId={img}
-      body={body}
-    />
+    <PostImage imgId={img} frontmatter={{ caption }} />
+    <Mdx md={body} />
+    <pre>{body}</pre>
   </>
 )
 

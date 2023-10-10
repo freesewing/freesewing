@@ -4,7 +4,7 @@ import { useTranslation } from 'next-i18next'
 import { cloudflareImageUrl } from 'shared/utils.mjs'
 import { Loading } from 'shared/components/spinner.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const Author = ({ author = '' }) => {
   const { t } = useTranslation(['posts'])
@@ -70,7 +70,7 @@ export const Author = ({ author = '' }) => {
           }}
         />
         <div className="prose mdx">
-          <Markdown>{profile.bio}</Markdown>
+          <Mdx md={profile.bio} />
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ import { useTranslation } from 'next-i18next'
 import { useDropzone } from 'react-dropzone'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Components
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import { ResetIcon, DocsIcon, UploadIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { isDegreeMeasurement } from 'config/measurements.mjs'
@@ -442,7 +442,7 @@ export const MarkdownInput = ({
       </Tab>
       <Tab key="preview">
         <div className="flex flex-row items-center mt-4">
-          <Markdown>{current}</Markdown>
+          <Mdx md={current} />
         </div>
       </Tab>
     </Tabs>

@@ -45,7 +45,7 @@ import {
 } from 'shared/components/icons.mjs'
 import { DisplayRow } from './shared.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import Timeago from 'react-timeago'
 import { TableWrapper } from 'shared/components/wrappers/table.mjs'
 import { PatternReactPreview } from 'shared/components/pattern/preview.mjs'
@@ -154,7 +154,7 @@ export const ShowPattern = ({ id }) => {
       </div>
       <h2>{t('account:notes')}</h2>
       {isOwn ? 'is own' : 'is not own'}
-      <Markdown>{pattern.notes}</Markdown>
+      <Mdx md={pattern.notes} />
     </>
   )
 }
@@ -304,7 +304,7 @@ export const Pattern = ({ id }) => {
         <DisplayRow title={t('name')}>{pattern.name}</DisplayRow>
         {control >= controlLevels.sets.notes && (
           <DisplayRow title={t('notes')}>
-            <Markdown>{pattern.notes}</Markdown>
+            <Mdx md={pattern.notes} />
           </DisplayRow>
         )}
         {control >= controlLevels.patterns.public && (
