@@ -23,7 +23,7 @@ import { Toc, ns as tocNs } from 'shared/components/mdx/toc.mjs'
 import { PrevNext } from 'shared/components/prev-next.mjs'
 import { Tag } from 'shared/components/tag.mjs'
 
-export const ns = nsMerge(navNs, tocNs, 'docs')
+export const ns = nsMerge(navNs, tocNs, timeagoNs, 'docs')
 
 /** checks for a slug that isn't a post, to prevent a prev or next button to it */
 const isEndSlug = (slug) => slug.split('/').length === 1
@@ -104,6 +104,7 @@ export const PostLayout = ({ mdx, slug, frontmatter, imgId, locale, type, dir })
           <BaseLayoutProse>
             <article className="mb-12 max-w-7xl">
               <PostContent {...{ mdx }} />
+              <PrevNext />
             </article>
           </BaseLayoutProse>
           <BaseLayoutRight>
