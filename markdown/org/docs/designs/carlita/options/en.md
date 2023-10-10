@@ -2,4 +2,4 @@
 title: "Carlita coat: Design Options"
 ---
 
-<PatternOptions pattern='carlita' />
+<DesignOptions design='carlita' />
