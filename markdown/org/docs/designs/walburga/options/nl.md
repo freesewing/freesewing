@@ -2,4 +2,4 @@
 title: "Walburga Wappenrock: Ontwerpopties"
 ---
 
-<PatternOptions pattern='walburga' />
+<DesignOptions design='walburga' />

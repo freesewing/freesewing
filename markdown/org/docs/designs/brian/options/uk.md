@@ -2,7 +2,7 @@
 title: "Блок кузова Брайана: Варіанти дизайну"
 ---
 
-<PatternOptions pattern='brian' />
+<DesignOptions design='brian' />
 
 ## Розуміння втулки рукава
 

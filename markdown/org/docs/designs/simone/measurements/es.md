@@ -2,4 +2,4 @@
 title: "Camisa Simone: Medidas requeridas"
 ---
 
-<PatternMeasurements pattern='simone' />
+<DesignMeasurements design='simone' />

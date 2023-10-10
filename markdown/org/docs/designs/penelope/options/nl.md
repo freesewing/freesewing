@@ -2,4 +2,4 @@
 title: "Penelope kokerrok: Ontwerpopties"
 ---
 
-<PatternOptions pattern='penelope' />
+<DesignOptions design='penelope' />

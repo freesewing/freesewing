@@ -2,4 +2,4 @@
 title: "Sven sweatshirt: Ontwerpopties"
 ---
 
-<PatternOptions pattern='sven' />
+<DesignOptions design='sven' />

@@ -2,4 +2,4 @@
 title: "Calzoncillos bóxer Bruce: Medidas requeridas"
 ---
 
-<PatternMeasurements pattern='bruce' />
+<DesignMeasurements design='bruce' />

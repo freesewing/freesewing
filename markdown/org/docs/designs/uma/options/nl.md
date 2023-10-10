@@ -2,4 +2,4 @@
 title: "Ursula onderbroek: Ontwerpopties"
 ---
 
-<PatternOptions pattern='ursula' />
+<DesignOptions design='ursula' />

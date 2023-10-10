@@ -61,7 +61,7 @@ const buildPattern = (children, settings = { margin: 5 }, tutorial = false, pape
 }
 
 // Handles display of pattern in mormal or xray mode
-const ShowPattern = ({ renderProps, logs, mode = 'normal' }) => {
+export const ShowPattern = ({ renderProps, logs, mode = 'normal' }) => {
   const { t } = useTranslation(ns)
   if (!renderProps) return null
 

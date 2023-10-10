@@ -2,4 +2,4 @@
 title: "Пальто Карлтон: Необхідні виміри"
 ---
 
-<PatternMeasurements pattern='carlton' />
+<DesignMeasurements design='carlton' />

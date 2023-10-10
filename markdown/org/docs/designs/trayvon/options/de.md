@@ -2,4 +2,4 @@
 title: "Trayvon-Krawatte: Gestaltungsmöglichkeiten"
 ---
 
-<PatternOptions pattern='trayvon' />
+<DesignOptions design='trayvon' />

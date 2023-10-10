@@ -2,4 +2,4 @@
 title: "Holmes hertenhoed: Ontwerpopties"
 ---
 
-<PatternOptions pattern='holmes' />
+<DesignOptions design='holmes' />

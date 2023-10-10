@@ -2,4 +2,4 @@
 title: "Chaqueta Jaeger: Opciones de diseño"
 ---
 
-<PatternOptions pattern='jaeger' />
+<DesignOptions design='jaeger' />

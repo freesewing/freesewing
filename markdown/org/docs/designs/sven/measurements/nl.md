@@ -2,4 +2,4 @@
 title: "Sven sweatshirt: Benodigde afmetingen"
 ---
 
-<PatternMeasurements pattern='sven' />
+<DesignMeasurements design='sven' />

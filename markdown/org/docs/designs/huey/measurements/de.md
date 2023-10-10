@@ -2,4 +2,4 @@
 title: "Huey Kapuzenpulli: Erforderliche Maße"
 ---
 
-<PatternMeasurements pattern='huey' />
+<DesignMeasurements design='huey' />

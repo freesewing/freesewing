@@ -2,4 +2,4 @@
 title: "Худі Юрій: Варіанти дизайну"
 ---
 
-<PatternOptions pattern='yuri' />
+<DesignOptions design='yuri' />
