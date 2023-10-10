@@ -2,7 +2,7 @@
 title: "Brian body block: Design Options"
 ---
 
-<PatternOptions pattern='brian' />
+<DesignOptions design='brian' />
 
 ## Understanding the sleevecap
 
