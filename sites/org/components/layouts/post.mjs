@@ -21,6 +21,7 @@ import {
 } from 'shared/components/navigation/sitenav.mjs'
 import { Toc, ns as tocNs } from 'shared/components/mdx/toc.mjs'
 import { PrevNext } from 'shared/components/prev-next.mjs'
+import { Tag } from 'shared/components/tag.mjs'
 
 export const ns = nsMerge(navNs, tocNs, 'docs')
 
