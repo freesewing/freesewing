@@ -2,7 +2,7 @@
 title: "Bloque de cuerpo Breanna: Opciones de diseño"
 ---
 
-<PatternOptions pattern='breanna' />
+<DesignOptions design='breanna' />
 
 ## Entendiendo la manga
 
