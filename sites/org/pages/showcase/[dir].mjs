@@ -8,7 +8,7 @@ import { PostLayout, ns as layoutNs } from 'site/components/layouts/post.mjs'
 
 const ns = nsMerge(pageNs, layoutNs)
 
-const ShowcasePage = ({ locale, dir, page, mdx, frontmatter }) => {
+const ShowcasePage = ({ dir, page, mdx, frontmatter }) => {
   return (
     <PageWrapper
       {...page}

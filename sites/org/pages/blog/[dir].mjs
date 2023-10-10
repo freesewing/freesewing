@@ -8,7 +8,7 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 
 const ns = nsMerge(pageNs, layoutNs)
 
-const BlogPage = ({ locale, dir, page, mdx, frontmatter }) => {
+const BlogPage = ({ dir, page, mdx, frontmatter }) => {
   return (
     <PageWrapper
       {...page}

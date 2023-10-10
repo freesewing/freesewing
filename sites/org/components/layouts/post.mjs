@@ -25,9 +25,6 @@ import { Tag } from 'shared/components/tag.mjs'
 
 export const ns = nsMerge(navNs, tocNs, timeagoNs, 'docs')
 
-/** checks for a slug that isn't a post, to prevent a prev or next button to it */
-const isEndSlug = (slug) => slug.split('/').length === 1
-
 const PostMeta = ({ frontmatter, t }) => (
   <div className="flex flex-row justify-between text-sm mb-1 mt-2">
     <div>
@@ -79,7 +76,7 @@ const PostContent = ({ mdx, dir }) => (
 )
 
 /** layout for a page that displays a blog, showcase or newsletter */
-export const PostLayout = ({ mdx, slug, frontmatter, imgId, locale, type, dir }) => {
+export const PostLayout = ({ mdx, slug, frontmatter, locale, type, dir }) => {
   const { t } = useTranslation(ns)
 
   return (
