@@ -10,6 +10,6 @@ L'utilisation du tour de cou est un élément afin d'obtenir un nœud papillon b
 > 
 > Cette option est utilisée pour faire un nœud papillon avec ajustement précis. Lorsque vous utilisez le ruban d'ajustement, cette option n'est pas utilisée.
 
-## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](benjamin_collarease_sample.svg "Effet de cette option sur le motif")
+
+
