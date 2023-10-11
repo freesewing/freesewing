@@ -2,4 +2,4 @@
 title: "Sandy circle skirt: Required Measurements"
 ---
 
-<DesignMeasurements design='sandy' />
+<PatternMeasurements pattern='sandy' />
