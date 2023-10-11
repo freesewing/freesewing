@@ -2,4 +2,4 @@
 title: "Lunetius Lacerna: Required Measurements"
 ---
 
-<DesignMeasurements design='lunetius' />
+<PatternMeasurements pattern='lunetius' />
