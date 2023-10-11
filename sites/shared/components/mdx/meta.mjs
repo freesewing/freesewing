@@ -10,10 +10,10 @@ import { EditIcon } from 'shared/components/icons.mjs'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 // Components
 import { PageLink } from 'shared/components/link.mjs'
-import { TimeAgo } from 'shared/components/timeago/index.mjs'
+import { TimeAgo, ns as timeagoNs } from 'shared/components/timeago/index.mjs'
 import { BookmarkButton } from 'shared/components/bookmarks.mjs'
 
-export const ns = 'account'
+export const ns = ['account', timeagoNs]
 
 const PersonList = ({ list }) =>
   list ? (

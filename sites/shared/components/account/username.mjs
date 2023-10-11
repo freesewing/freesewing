@@ -10,7 +10,7 @@ import { Icons, welcomeSteps, BackToAccountButton } from './shared.mjs'
 import { OkIcon, NoIcon } from 'shared/components/icons.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 import { StringInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const ns = ['account', 'status']
 
@@ -72,7 +72,7 @@ export const UsernameSettings = ({ welcome = false }) => {
             )}
           </span>
         }
-        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/username`} />}
+        docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/username`} />}
       />
       <button className={btnClasses} disabled={!available} onClick={save}>
         <span className="flex flex-row items-center gap-2">

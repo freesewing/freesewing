@@ -239,7 +239,6 @@ dev:
     'react-hotkeys-hook': &reactHotkeysHook '4.4.1'
     'react-instantsearch-dom': &reactInstantsearchDom '6.40.4'
     'react-instantsearch-hooks-web': '6.47.3'
-    'react-markdown': &reactMarkdown '8.0.7'
     'react-swipeable': &reactSwipeable '7.0.1'
     'react-timeago': &reactTimeago '7.2.0'
     'rehype-autolink-headings': &rehypeAutolinkHeadings '7.0.0'
@@ -285,7 +284,6 @@ lab:
     'react-hotkeys-hook': *reactHotkeysHook
     'react-i18next': &reactI18next '13.2.2'
     'react-instantsearch-dom': *reactInstantsearchDom
-    'react-markdown': *reactMarkdown
     'react-swipeable': *reactSwipeable
     'react-timeago': *reactTimeago
     'rehype-autolink-headings': *rehypeAutolinkHeadings
@@ -324,7 +322,6 @@ org:
     'react-dropzone': &dropzone '14.2.3'
     'react-hotkeys-hook': *reactHotkeysHook
     'react-instantsearch-dom': *reactInstantsearchDom
-    'react-markdown': *reactMarkdown
     'react-swipeable': *reactSwipeable
     'react-timeago': *reactTimeago
     'rehype-autolink-headings': *rehypeAutolinkHeadings
@@ -369,7 +366,6 @@ shared:
     'postcss-for': &postcssfor '2.1.1'
     'react': *react
     'react-dom': *react
-    'react-markdown': *reactMarkdown
     'react-timeago': *reactTimeago
     'react-zoom-pan-pinch': &zoompanpinch '3.1.0'
     'rehype-autolink-headings': *rehypeAutolinkHeadings
@@ -436,7 +432,6 @@ sde:
     'react-hotkeys-hook': *reactHotkeysHook
     "react-i18next": *reactI18next
     'react-dropzone': *dropzone
-    'react-markdown': *reactMarkdown
     'react-swipeable': *reactSwipeable
     'react-timeago': *reactTimeago
     'react-zoom-pan-pinch': *zoompanpinch

@@ -26,15 +26,7 @@ const flattenOptions = (options, list = false, path = []) => {
 
 const spacer = <span className="px-2 opacity-50">/</span>
 
-export const TestMenu = ({
-  design,
-  patternConfig,
-  settings,
-  update,
-  //language,
-  //account,
-  //DynamicDocs,
-}) => {
+export const TestMenu = ({ design, patternConfig, settings, update }) => {
   const { t } = useTranslation(ns)
 
   const allOptions = flattenOptions(patternConfig.options)

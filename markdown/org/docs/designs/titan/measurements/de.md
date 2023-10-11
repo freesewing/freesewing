@@ -2,4 +2,4 @@
 title: "Titan-Hosenblock: Erforderliche Maße"
 ---
 
-<PatternMeasurements pattern='titan' />
+<DesignMeasurements design='titan' />

@@ -2,13 +2,11 @@
 import { pages } from 'site/prebuild/docs.en.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-// Hooks
-import { useState, useEffect } from 'react'
+import { loadMdxAsStaticProps } from 'shared/mdx/load.mjs'
 // Components
 import Head from 'next/head'
 import { PageWrapper, ns } from 'shared/components/wrappers/page.mjs'
-import { Spinner } from 'shared/components/spinner.mjs'
-import { components } from 'shared/components/mdx/index.mjs'
+//import { components } from 'shared/components/mdx/index.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { Toc } from 'shared/components/mdx/toc.mjs'
 import { MdxMetaData } from 'shared/components/mdx/meta.mjs'
@@ -27,68 +25,51 @@ import {
  *
  * See the page-templates folder for more info.
  */
-const DocsPage = ({ page, slug }) => {
-  const [frontmatter, setFrontmatter] = useState({ title: 'FreeSewing.dev' })
-  const [MDX, setMDX] = useState(<Spinner />)
-
-  /* Load MDX dynamically */
-  useEffect(() => {
-    const loadMDX = async () => {
-      import(`../../../markdown/dev/${slug}/en.md`).then((mod) => {
-        setFrontmatter(mod.frontmatter)
-        const Component = mod.default
-        setMDX(<Component components={components('dev')} />)
-      })
-    }
-    loadMDX()
-  }, [slug])
-
-  return (
-    <PageWrapper {...page} title={frontmatter.title}>
-      <Head>
-        <meta property="og:title" content={frontmatter.title} key="title" />
-        <meta property="og:type" content="article" key="type" />
-        <meta property="og:description" content={``} key="type" />
-        <meta property="og:article:author" content="Joost De Cock" key="author" />
-        <meta
-          property="og:image"
-          content={`https://canary.backend.freesewing.org/og-img/en/org/${slug}}`}
-          key="image"
-        />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:url" content={`https://freesewing.dev/${slug}`} key="url" />
-        <meta property="og:locale" content="en" key="locale" />
-        <meta property="og:site_name" content="freesewing.dev" key="site" />
-        <title>{frontmatter.title} - FreeSewing.dev</title>
-      </Head>
-      <BaseLayout>
-        <BaseLayoutLeft>
-          <MainSections />
-          <NavLinks />
-        </BaseLayoutLeft>
-        <BaseLayoutProse>
-          <div className="w-full">
-            <Breadcrumbs />
-            <h1 className="break-words searchme">{frontmatter.title}</h1>
-            <div className="block xl:hidden">
-              <Toc toc={frontmatter.toc} wrap />
-            </div>
-          </div>
-          <MdxWrapper>{MDX}</MdxWrapper>
-          <PrevNext slug={slug} />
-        </BaseLayoutProse>
-        <BaseLayoutRight>
-          <MdxMetaData frontmatter={frontmatter} slug={slug} locale="en" />
-          <div className="hidden xl:block">
+const DocsPage = ({ page, slug, frontmatter, mdx, mdxSlug }) => (
+  <PageWrapper {...page} title={frontmatter.title} intro={frontmatter.intro}>
+    <Head>
+      <meta property="og:title" content={frontmatter.title} key="title" />
+      <meta property="og:type" content="article" key="type" />
+      <meta property="og:description" content={frontmatter.intro} key="type" />
+      <meta property="og:article:author" content="Joost De Cock" key="author" />
+      <meta
+        property="og:image"
+        content={`https://canary.backend.freesewing.org/og-img/en/org/${slug}}`}
+        key="image"
+      />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:url" content={`https://freesewing.dev/${slug}`} key="url" />
+      <meta property="og:locale" content="en" key="locale" />
+      <meta property="og:site_name" content="freesewing.dev" key="site" />
+      <title>{frontmatter.title}</title>
+    </Head>
+    <BaseLayout>
+      <BaseLayoutLeft>
+        <MainSections />
+        <NavLinks />
+      </BaseLayoutLeft>
+      <BaseLayoutProse>
+        <div className="w-full">
+          <Breadcrumbs />
+          <h1 className="break-words searchme">{frontmatter.title}</h1>
+          <div className="block xl:hidden">
             <Toc toc={frontmatter.toc} wrap />
           </div>
-        </BaseLayoutRight>
-      </BaseLayout>
-    </PageWrapper>
-  )
-}
+        </div>
+        <MdxWrapper mdx={mdx} site="dev" slug={mdxSlug} />
+        <PrevNext slug={slug} />
+      </BaseLayoutProse>
+      <BaseLayoutRight>
+        <MdxMetaData frontmatter={frontmatter} slug={slug} locale="en" />
+        <div className="hidden xl:block">
+          <Toc toc={frontmatter.toc} wrap />
+        </div>
+      </BaseLayoutRight>
+    </BaseLayout>
+  </PageWrapper>
+)
 
 export default DocsPage
 
@@ -100,7 +81,13 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       ...(await serverSideTranslations('en', ['docs', 'tutorial', ...ns])),
+      ...(await loadMdxAsStaticProps({
+        language: 'en',
+        site: 'dev',
+        slug: params.slug.join('/'),
+      })),
       slug: params.slug.join('/'),
+      mdxSlug: params.slug,
       page: {
         locale: 'en',
         path: params.slug,

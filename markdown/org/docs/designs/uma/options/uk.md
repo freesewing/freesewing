@@ -2,4 +2,4 @@
 title: "Урсула роздягається: Варіанти дизайну"
 ---
 
-<PatternOptions pattern='ursula' />
+<DesignOptions design='ursula' />
