@@ -2,4 +2,4 @@
 title: "Florent flat cap: Design Options"
 ---
 
-<DesignOptions design='florent' />
+<PatternOptions pattern='florent' />
