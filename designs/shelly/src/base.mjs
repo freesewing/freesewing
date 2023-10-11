@@ -130,21 +130,25 @@ function draftBase({
 
   if (paperless) {
     macro('hd', {
+      id: 'wHem',
       from: points.cfHem,
       to: points.sideHem,
       y: points.sideHem.y + (sa + 15),
     })
     macro('vd', {
+      id: 'hSide',
       from: points.sideHem,
       to: points.armholeCornerScooped,
       x: Math.max(points.sideHem.x, points.armholeCornerScooped.x) + (15 + sa),
     })
     macro('vd', {
+      id: 'hArmpitScoop',
       from: points.armholeCornerScooped,
       to: points.armholeScoopEnd,
       x: points.armholeCornerScooped.x + (30 + sa),
     })
     macro('hd', {
+      id: 'wArmpitScoop',
       from: points.armholeScoopEnd,
       to: points.armholeCornerScooped,
       y: 0 - (sa + 0),

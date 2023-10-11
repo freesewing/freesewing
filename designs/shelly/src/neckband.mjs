@@ -53,11 +53,13 @@ function draftNeckband({
 
   if (paperless) {
     macro('vd', {
+      id: 'hWidth',
       from: points.topLeftCorner,
       to: points.bottomLeftCorner,
       x: -(15 + sa),
     })
     macro('hd', {
+      id: 'wLength',
       from: points.topLeftCorner,
       to: points.topRightCorner,
       y: -(sa + 15),
