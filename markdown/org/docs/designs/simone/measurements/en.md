@@ -2,4 +2,4 @@
 title: "Simone shirt: Required Measurements"
 ---
 
-<DesignMeasurements design='simone' />
+<PatternMeasurements pattern='simone' />
