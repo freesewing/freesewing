@@ -2,4 +2,4 @@
 title: "Noble body block: Design Options"
 ---
 
-<DesignOptions design='noble' />
+<PatternOptions pattern='noble' />
