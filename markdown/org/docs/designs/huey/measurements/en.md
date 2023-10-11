@@ -2,4 +2,4 @@
 title: "Huey hoodie: Required Measurements"
 ---
 
-<DesignMeasurements design='huey' />
+<PatternMeasurements pattern='huey' />
