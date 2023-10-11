@@ -2,4 +2,4 @@
 title: "Sandy circle skirt: Design Options"
 ---
 
-<DesignOptions design='sandy' />
+<PatternOptions pattern='sandy' />
