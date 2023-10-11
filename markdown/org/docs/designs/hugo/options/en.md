@@ -2,4 +2,4 @@
 title: "Hugo hoodie: Design Options"
 ---
 
-<DesignOptions design='hugo' />
+<PatternOptions pattern='hugo' />
