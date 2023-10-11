@@ -2,4 +2,4 @@
 title: "Octoplushy, the plushy octopus: Design Options"
 ---
 
-<DesignOptions design='octoplushy' />
+<PatternOptions pattern='octoplushy' />
