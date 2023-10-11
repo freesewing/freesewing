@@ -316,7 +316,7 @@ org:
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
-    'luxon': '3.4.2'
+    'luxon': '3.4.3'
     'next': *next
     'ora': *ora
     'react-dropzone': &dropzone '14.2.3'
