@@ -2,7 +2,7 @@
 title: "Breanna lichaam blok: Ontwerpopties"
 ---
 
-<PatternOptions pattern='breanna' />
+<DesignOptions design='breanna' />
 
 ## De mouwkop begrijpen
 

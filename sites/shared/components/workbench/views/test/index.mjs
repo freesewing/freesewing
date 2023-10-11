@@ -16,7 +16,6 @@ export const TestView = ({
   update,
   language,
   account,
-  DynamicDocs,
 }) => {
   const { t } = useTranslation(ns)
   if (!pattern) return null
@@ -79,7 +78,6 @@ export const TestView = ({
               update,
               language,
               account,
-              DynamicDocs,
               renderProps,
             }}
           />

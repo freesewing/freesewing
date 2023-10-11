@@ -24,7 +24,7 @@ import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Components
 import { DisplayRow } from './account/shared.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import Timeago from 'react-timeago'
 import { MeasieVal } from './account/sets.mjs'
 import {
@@ -133,7 +133,7 @@ const ShowCuratedSet = ({ cset }) => {
       <DisplayRow title={t('name')}>{cset[`name${capitalize(lang)}`]}</DisplayRow>
       {control >= controlLevels.sets.notes && (
         <DisplayRow title={t('notes')}>
-          <Markdown>{cset[`notes${capitalize(lang)}`]}</Markdown>
+          <Mdx md={cset[`notes${capitalize(lang)}`]} />
         </DisplayRow>
       )}
       {control >= controlLevels.sets.createdAt && (

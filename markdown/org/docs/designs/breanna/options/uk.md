@@ -2,7 +2,7 @@
 title: "Боді-блок Breanna: Варіанти дизайну"
 ---
 
-<PatternOptions pattern='breanna' />
+<DesignOptions design='breanna' />
 
 ## Розуміння втулки рукава
 

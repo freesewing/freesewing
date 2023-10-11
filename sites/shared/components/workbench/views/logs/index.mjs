@@ -1,7 +1,7 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useTranslation } from 'next-i18next'
 import { analyzeDraftLogLine } from './errors.mjs'
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import {
   ClearAllButton,
   ns as coreMenuNs,
@@ -45,7 +45,7 @@ const DraftLogEntry = ({ type, line, t }) => {
           <span className={`hidden lg:block font-bold uppercase text-${colors[type]}`}>{type}</span>
           <span className={`hidden lg:block font-bold text-${colors[type]}`}>|</span>
           <span className="font-medium px-2 lg:px-0">
-            <Markdown>{title}</Markdown>
+            <Mdx md={title} />
           </span>
         </div>
         <div className="popout-content pl-2">{data}</div>

@@ -62,7 +62,7 @@ core:
     'lodash.unset': &_unset '4.5.2'
     'lodash.clonedeep': '^4.5.0'
   dev:
-    'eslint': &eslint '8.50.0'
+    'eslint': &eslint '8.51.0'
     'nyc': '15.1.0'
     'mocha': *mocha
     'chai': *chai
@@ -228,7 +228,7 @@ dev:
     '@next/bundle-analyzer': &next '13.5.4'
     '@tailwindcss/typography': &tailwindTypography '0.5.9'
     'algoliasearch': '4.20.0'
-    'daisyui': &daisyui '3.6.4'
+    'daisyui': &daisyui '3.9.2'
     'lodash.get': *_get
     'lodash.orderby': &_orderby '4.6.0'
     'lodash.set': *_set
@@ -239,7 +239,6 @@ dev:
     'react-hotkeys-hook': &reactHotkeysHook '4.4.1'
     'react-instantsearch-dom': &reactInstantsearchDom '6.40.4'
     'react-instantsearch-hooks-web': '6.47.3'
-    'react-markdown': &reactMarkdown '8.0.7'
     'react-swipeable': &reactSwipeable '7.0.1'
     'react-timeago': &reactTimeago '7.2.0'
     'rehype-autolink-headings': &rehypeAutolinkHeadings '7.0.0'
@@ -285,7 +284,6 @@ lab:
     'react-hotkeys-hook': *reactHotkeysHook
     'react-i18next': &reactI18next '13.2.2'
     'react-instantsearch-dom': *reactInstantsearchDom
-    'react-markdown': *reactMarkdown
     'react-swipeable': *reactSwipeable
     'react-timeago': *reactTimeago
     'rehype-autolink-headings': *rehypeAutolinkHeadings
@@ -318,13 +316,12 @@ org:
     'lodash.get': *_get
     'lodash.orderby': *_orderby
     'lodash.set': *_set
-    'luxon': '3.4.2'
+    'luxon': '3.4.3'
     'next': *next
     'ora': *ora
     'react-dropzone': &dropzone '14.2.3'
     'react-hotkeys-hook': *reactHotkeysHook
     'react-instantsearch-dom': *reactInstantsearchDom
-    'react-markdown': *reactMarkdown
     'react-swipeable': *reactSwipeable
     'react-timeago': *reactTimeago
     'rehype-autolink-headings': *rehypeAutolinkHeadings
@@ -353,7 +350,7 @@ shared:
     'feed': '4.2.2'
     'file-saver': &filesaver '2.0.5'
     'front-matter': '4.0.2'
-    'highlight.js': '11.8.0'
+    'highlight.js': '11.9.0'
     'github-slugger': '2.0.0'
     'jotai': *jotai
     'jotai-location': *jotai-location
@@ -369,7 +366,6 @@ shared:
     'postcss-for': &postcssfor '2.1.1'
     'react': *react
     'react-dom': *react
-    'react-markdown': *reactMarkdown
     'react-timeago': *reactTimeago
     'react-zoom-pan-pinch': &zoompanpinch '3.1.0'
     'rehype-autolink-headings': *rehypeAutolinkHeadings
@@ -436,7 +432,6 @@ sde:
     'react-hotkeys-hook': *reactHotkeysHook
     "react-i18next": *reactI18next
     'react-dropzone': *dropzone
-    'react-markdown': *reactMarkdown
     'react-swipeable': *reactSwipeable
     'react-timeago': *reactTimeago
     'react-zoom-pan-pinch': *zoompanpinch

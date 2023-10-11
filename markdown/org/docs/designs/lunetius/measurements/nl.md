@@ -2,4 +2,4 @@
 title: "Lunetius Lacerna: Benodigde metingen"
 ---
 
-<PatternMeasurements pattern='lunetius' />
+<DesignMeasurements design='lunetius' />

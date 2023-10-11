@@ -45,12 +45,12 @@ import {
 } from 'shared/components/icons.mjs'
 import { DisplayRow } from './shared.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import Timeago from 'react-timeago'
 import { TableWrapper } from 'shared/components/wrappers/table.mjs'
-import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 import { PatternReactPreview } from 'shared/components/pattern/preview.mjs'
 import { Lightbox } from 'shared/components/lightbox.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const ns = ['account', 'patterns', 'status']
 
@@ -154,7 +154,7 @@ export const ShowPattern = ({ id }) => {
       </div>
       <h2>{t('account:notes')}</h2>
       {isOwn ? 'is own' : 'is not own'}
-      <Markdown>{pattern.notes}</Markdown>
+      <Mdx md={pattern.notes} />
     </>
   )
 }
@@ -165,11 +165,6 @@ export const Pattern = ({ id }) => {
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
-  // FIXME: implement a solution for loading docs dynamically
-  const docs = {}
-  for (const option of ['name', 'units', 'public', 'notes', 'image']) {
-    docs[option] = <DynamicOrgDocs language={i18n.language} path={`site/patterns/${option}`} />
-  }
 
   // Context
   const { setModal } = useContext(ModalContext)
@@ -275,7 +270,7 @@ export const Pattern = ({ id }) => {
               ) : (
                 <>
                   <Link
-                    href={`/account/patterns/${pattern.id}/edit`}
+                    href={`/account/patterns/${pattern.design}/${pattern.id}/edit`}
                     className={`btn btn-primary btn-outline ${horFlexClasses}`}
                   >
                     <FreeSewingIcon /> {t('updatePattern')}
@@ -309,7 +304,7 @@ export const Pattern = ({ id }) => {
         <DisplayRow title={t('name')}>{pattern.name}</DisplayRow>
         {control >= controlLevels.sets.notes && (
           <DisplayRow title={t('notes')}>
-            <Markdown>{pattern.notes}</Markdown>
+            <Mdx md={pattern.notes} />
           </DisplayRow>
         )}
         {control >= controlLevels.patterns.public && (
@@ -380,9 +375,9 @@ export const Pattern = ({ id }) => {
         update={setName}
         current={name}
         original={pattern.name}
-        docs={docs.name}
         placeholder="Maurits Cornelis Escher"
         valid={(val) => val && val.length > 0}
+        docs={<DynamicMdx language={i18n.language} slug="docs/site/patterns/name" />}
       />
 
       {/* img: Control level determines whether or not to show this */}
@@ -393,8 +388,8 @@ export const Pattern = ({ id }) => {
           label={t('image')}
           update={setImage}
           current={image}
-          docs={docs.image}
           valid={(val) => val.length > 0}
+          docs={<DynamicMdx language={i18n.language} slug="docs/site/patterns/image" />}
         />
       ) : null}
 
@@ -405,7 +400,6 @@ export const Pattern = ({ id }) => {
           id="pattern-public"
           label={t('public')}
           update={setIsPublic}
-          docs={docs.public}
           list={[
             {
               val: true,
@@ -432,6 +426,7 @@ export const Pattern = ({ id }) => {
             },
           ]}
           current={isPublic}
+          docs={<DynamicMdx language={i18n.language} slug="docs/site/patterns/public" />}
         />
       ) : null}
 
@@ -442,9 +437,9 @@ export const Pattern = ({ id }) => {
           id="pattern-notes"
           label={t('notes')}
           update={setNotes}
-          docs={docs.notes}
           current={notes}
           placeholder={t('mdSupport')}
+          docs={<DynamicMdx language={i18n.language} slug="docs/site/patterns/notes" />}
         />
       ) : null}
       <button

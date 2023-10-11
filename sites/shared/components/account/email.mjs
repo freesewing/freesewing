@@ -12,7 +12,7 @@ import { validateEmail, validateTld } from 'shared/utils.mjs'
 import { BackToAccountButton } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { EmailInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const ns = ['account', 'status']
 
@@ -59,7 +59,7 @@ export const EmailSettings = () => {
             current={email}
             original={account.email}
             valid={() => valid}
-            docs={<DynamicOrgDocs language={i18n.language} path={`site/account/email`} />}
+            docs={<DynamicMdx language={i18n.language} slug={`docs/site/account/email`} />}
           />
           <button
             className="btn mt-4 btn-primary w-full"

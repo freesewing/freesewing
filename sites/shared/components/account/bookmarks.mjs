@@ -11,7 +11,7 @@ import { PlusIcon, TrashIcon, LeftIcon } from 'shared/components/icons.mjs'
 import { PageLink, WebLink, Link } from 'shared/components/link.mjs'
 import { DisplayRow } from './shared.mjs'
 import { StringInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const ns = ['account', 'status']
 
@@ -47,10 +47,9 @@ export const NewBookmark = () => {
   const router = useRouter()
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
-  // FIXME: implement a solution for loading docs dynamically the is simple and work as expected
   const docs = {}
   for (const option of ['title', 'location', 'type']) {
-    docs[option] = <DynamicOrgDocs language={i18n.language} path={`site/bookmarks/${option}`} />
+    docs[option] = <DynamicMdx language={i18n.language} slug={`docs/site/bookmarks/${option}`} />
   }
 
   // State

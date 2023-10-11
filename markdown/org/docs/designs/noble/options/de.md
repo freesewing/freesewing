@@ -2,4 +2,4 @@
 title: "Edler Karosserieblock: Gestaltungsmöglichkeiten"
 ---
 
-<PatternOptions pattern='noble' />
+<DesignOptions design='noble' />

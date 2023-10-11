@@ -6,4 +6,4 @@ title: "Нагрудник Боб: Необхідні виміри"
 Боб не потребує жодних вимірювань
 </Note>
 
-<PatternMeasurements pattern='bob' />
+<DesignMeasurements design='bob' />

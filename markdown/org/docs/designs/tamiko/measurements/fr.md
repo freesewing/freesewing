@@ -2,4 +2,4 @@
 title: "Top Tamiko : Mesures requises"
 ---
 
-<PatternMeasurements pattern='tamiko' />
+<DesignMeasurements design='tamiko' />

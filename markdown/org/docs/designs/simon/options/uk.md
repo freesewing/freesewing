@@ -2,4 +2,4 @@
 title: "Сорочка Simon: Варіанти дизайну"
 ---
 
-<PatternOptions pattern='simon' />
+<DesignOptions design='simon' />

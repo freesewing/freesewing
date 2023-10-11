@@ -37,7 +37,7 @@
       "t": "Neckline width",
       "d": "Controls the width of the neck opening."
     },
-    "curveToWaist": {
+    "fitWaist": {
       "t": "Fit the waist",
       "d": "Whether or not to fit the waist or rahter only fit chest and hips."
     },
@@ -49,7 +49,7 @@
       "t": "Fit the waist",
       "d": "Draft a pattern that fits chest, waist, and hips (this is unusual for a T-shirt)"
     },
-    "curvedWaistEase": {
+    "waistEase": {
       "t": "Waist ease",
       "d": "Ease at the waist (only applies when the waist is fitted)."
     },
