@@ -1,5 +1,5 @@
 ---
-title: Порівняння наборів метрик
+title: Порівняння замірів
 ---
 
 We can occasionally show how your set of measurements compares to other measurements sets. This allows us to detect potential problems in your measurements or patterns.

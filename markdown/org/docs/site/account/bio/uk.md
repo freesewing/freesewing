@@ -2,8 +2,8 @@
 title: Про мене
 ---
 
-Your account **bio** is the place where you can tell a little bit about yourself.
+В **описі** Ви можете розповісти трохи про себе.
 
-Other FreeSewing users can see your bio, so this is a way to find like-minded people or promote your own content.
+Інші користувачі FreeSewing бачитимуть Ваш опис, тому це хороший спосіб знайти однодумців чи розповісти про свою діяльність.
 
-This field supports Markdown, so you can add links and even images.
+Це поле підтримує Markdown, тому Ви можете додати покликання й навіть зображення.
