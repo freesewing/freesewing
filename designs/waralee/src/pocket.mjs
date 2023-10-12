@@ -137,7 +137,7 @@ export const pocket = {
       }
     }
 
-    if ('welt' == options.frontPocketStyle) {
+    if ('welt' != options.frontPocketStyle) {
       macro('hd', {
         id: 1,
         from: points.topLeft,

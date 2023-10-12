@@ -182,6 +182,6 @@ export const pants = {
       }
     }
 
-    return part.setHidden(options.showMini && !expand)
+    return part
   },
 }

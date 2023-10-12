@@ -4,6 +4,10 @@ export const cutout = {
   name: 'waralee.cutout',
   from: pantsProto,
   draft: ({ options, Path, points, paths, Snippet, snippets, sa, macro, expand, part }) => {
+    if (expand) {
+      return part.hide()
+    }
+
     const separateWaistband = options.separateWaistband || 'waistband' == options.frontPocketStyle
 
     paths.seam = new Path()
@@ -17,7 +21,7 @@ export const cutout = {
       .close()
       .attr('class', 'fabric')
 
-    paths.cutout.hide()
+    // paths.cutout.hide()
 
     points.title = points.mWaist.shift(270, 75)
     macro('title', {
@@ -66,6 +70,6 @@ export const cutout = {
       x: points.mWaist.x + 15,
     })
 
-    return part.hide(expand)
+    return part
   },
 }

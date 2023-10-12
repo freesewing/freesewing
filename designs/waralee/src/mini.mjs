@@ -12,7 +12,7 @@ export const mini = {
       return part.hide()
     }
 
-    const mini = options.minimizer
+    const mini = points.bWaistBackOverlapSeam.dist(points.fWaistFrontOverlapSeam) / 150
     const separateWaistband = options.separateWaistband || 'waistband' == options.frontPocketStyle
 
     for (const p in points) {
@@ -175,7 +175,6 @@ export const mini = {
         force: true,
       })
     }
-
-    return part.setHidden(!options.showMini && !expand)
+    return part
   },
 }
