@@ -104,15 +104,6 @@ function draftBase({
     .shift(sideAngle + 180, (1 / 3) * sideLength)
     .shift(sideAngle - 90, options.sideShape * sideLength)
 
-  const drawSide = () => {
-    if (options.straightSides)
-      return new Path().move(points.sideHem).line(points.armholeCornerScooped)
-    else
-      return new Path()
-        .move(points.sideHem)
-        .curve(points.sideCp1, points.sideCp2, points.armholeCornerScooped)
-  }
-
   paths.saBase = new Path().move(points.sideHem)
   if (options.straightSides) paths.saBase.line(points.armholeCornerScooped)
   else paths.saBase.curve(points.sideCp1, points.sideCp2, points.armholeCornerScooped)
