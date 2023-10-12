@@ -26,7 +26,7 @@ function draftBack({
     points.neckCenter,
     neckRadius,
     points.raglanCenter,
-    points.armholeCorner
+    points.armpitCorner
   )[1]
 
   const neckShoulderRadius = points.raglanCenter.dist(points.neckShoulderCorner)
@@ -46,10 +46,10 @@ function draftBack({
   store.set('backNecklineToRaglanAngle', backNecklineToRaglanAngle)
 
   paths.saBase = new Path().move(points.sideHem)
-  if (options.straightSides) paths.saBase.line(points.armholeCornerScooped)
-  else paths.saBase.curve(points.sideCp1, points.sideCp2, points.armholeCornerScooped)
+  if (options.straightSides) paths.saBase.line(points.armpitCornerScooped)
+  else paths.saBase.curve(points.sideCp1, points.sideCp2, points.armpitCornerScooped)
   paths.saBase
-    .curve(points.armholeScoopCp1, points.armholeScoopCp2, points.armholeScoopEnd)
+    .curve(points.armpitScoopCp1, points.armpitScoopCp2, points.armpitScoopEnd)
     .line(points.neckShoulderCorner)
     .curve(points.neckCP1, points.neckCP2, points.cfNeck)
     .hide(true)
@@ -83,20 +83,20 @@ function draftBack({
     })
     macro('vd', {
       id: 'hRaglanSeam',
-      from: points.armholeCornerScooped,
+      from: points.armpitCornerScooped,
       to: points.neckShoulderCorner,
-      x: points.armholeCornerScooped.x + (15 + sa),
+      x: points.armpitCornerScooped.x + (15 + sa),
     })
     macro('hd', {
       id: 'wRaglanSeamStraightPortion',
       from: points.neckShoulderCorner,
-      to: points.armholeScoopEnd,
+      to: points.armpitScoopEnd,
       y: 0 - (sa + 0),
     })
     macro('hd', {
       id: 'wRaglanSeam',
       from: points.neckShoulderCorner,
-      to: points.armholeCornerScooped,
+      to: points.armpitCornerScooped,
       y: 0 - (sa + 15),
     })
     macro('hd', {
@@ -110,7 +110,7 @@ function draftBack({
     macro('hd', {
       id: 'wCenterToArmpit',
       from: points.cfNeck,
-      to: points.armholeCornerScooped,
+      to: points.armpitCornerScooped,
       y: 0 - (sa + 30),
     })
   }
@@ -118,11 +118,11 @@ function draftBack({
   store.cutlist.addCut({ cut: 1 })
 
   if (complete) {
-    snippets.armholeScoopEnd = new Snippet('bnotch', points.armholeScoopEnd)
+    snippets.armpitScoopEnd = new Snippet('bnotch', points.armpitScoopEnd)
 
     points.title = new Point(
-      points.armholeCorner.x / 2,
-      (points.cfHem.y + points.armholeCornerScooped.y / 2) / 2
+      points.armpitCorner.x / 2,
+      (points.cfHem.y + points.armpitCornerScooped.y / 2) / 2
     )
     macro('title', { at: points.title, nr: 2, title: 'back' })
 

@@ -26,7 +26,7 @@ function draftFront({
     points.neckCenter,
     neckRadius,
     points.raglanCenter,
-    points.armholeCorner
+    points.armpitCorner
   )[1]
 
   const neckShoulderRadius = points.raglanCenter.dist(points.neckShoulderCorner)
@@ -68,20 +68,20 @@ function draftFront({
     })
     macro('vd', {
       id: 'hRaglanSeam',
-      from: points.armholeCornerScooped,
+      from: points.armpitCornerScooped,
       to: points.neckShoulderCorner,
-      x: points.armholeCornerScooped.x + (15 + sa),
+      x: points.armpitCornerScooped.x + (15 + sa),
     })
     macro('hd', {
       id: 'wRaglanSeamStraightPortion',
       from: points.neckShoulderCorner,
-      to: points.armholeScoopEnd,
+      to: points.armpitScoopEnd,
       y: 0 - (sa + 0),
     })
     macro('hd', {
       id: 'hArmpitScoop',
       from: points.neckShoulderCorner,
-      to: points.armholeCornerScooped,
+      to: points.armpitCornerScooped,
       y: 0 - (sa + 15),
     })
     macro('hd', {
@@ -95,7 +95,7 @@ function draftFront({
     macro('hd', {
       id: 'wCenterToArmpit',
       from: points.cfNeck,
-      to: points.armholeCornerScooped,
+      to: points.armpitCornerScooped,
       y: 0 - (sa + 30),
     })
   }
@@ -103,11 +103,11 @@ function draftFront({
   store.cutlist.addCut({ cut: 1 })
 
   if (complete) {
-    snippets.armholeScoopEnd = new Snippet('notch', points.armholeScoopEnd)
+    snippets.armpitScoopEnd = new Snippet('notch', points.armpitScoopEnd)
 
     points.title = new Point(
-      points.armholeCorner.x / 2,
-      (points.cfHem.y + points.armholeCornerScooped.y / 2) / 2
+      points.armpitCorner.x / 2,
+      (points.cfHem.y + points.armpitCornerScooped.y / 2) / 2
     )
     macro('title', { at: points.title, nr: 1, title: 'front' })
   }
@@ -125,5 +125,5 @@ export const front = {
   plugins: [],
   draft: draftFront,
   from: base,
-  measurements: ['neck', 'chest', 'hips', 'waistToHips', 'hpsToWaistBack', 'waistToArmhole'],
+  measurements: ['neck', 'chest', 'hips', 'waistToHips', 'hpsToWaistBack', 'waistToArmpit'],
 }

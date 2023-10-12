@@ -21,7 +21,7 @@ function draftBase({
   let hipsEase = options.hipsEase
   if (options.straightSides) hipsEase = options.chestEase
 
-  const armholeYPosition = measurements.hpsToWaistBack - measurements.waistToArmhole
+  const armpitYPosition = measurements.hpsToWaistBack - measurements.waistToArmpit
   let chest = measurements.chest * (1 + options.chestEase)
   if (options.straightSides) {
     chest = Math.max(
@@ -29,7 +29,7 @@ function draftBase({
       measurements.hips * (1 + hipsEase)
     )
   }
-  chest -= 4 * (options.raglanScoopMagnitude * armholeYPosition)
+  chest -= 4 * (options.raglanScoopMagnitude * armpitYPosition)
   const bodyLength = options.bodyLength * (measurements.hpsToWaistBack + measurements.waistToHips)
   const neckRadius = (measurements.neck * (1 + options.neckEase)) / (2 * Math.PI)
   const hips = measurements.hips * (1 + hipsEase)
@@ -39,22 +39,22 @@ function draftBase({
   points.raglanCenter = new Point(0, 0)
   points.neckCenter = points.raglanCenter.shift(270, options.neckBalance * neckRadius)
 
-  points.armholeCorner = new Point(chest / 4, armholeYPosition)
+  points.armpitCorner = new Point(chest / 4, armpitYPosition)
 
   points.neckShoulderCorner = utils.beamIntersectsCircle(
     points.neckCenter,
     neckRadius,
     points.raglanCenter,
-    points.armholeCorner
+    points.armpitCorner
   )[1]
 
   points.cfHem = new Point(0, bodyLength)
   points.sideHem = new Point(hips / 4, bodyLength)
   points.cfNeck = points.neckCenter.shift(270, neckRadius)
 
-  const raglanAngle = points.neckShoulderCorner.angle(points.armholeCorner)
+  const raglanAngle = points.neckShoulderCorner.angle(points.armpitCorner)
   store.set('raglanAngle', raglanAngle)
-  const raglanLength = points.raglanCenter.dist(points.armholeCorner)
+  const raglanLength = points.raglanCenter.dist(points.armpitCorner)
   store.set('raglanLength', raglanLength)
 
   const necklineAngleAtRaglan = points.cfNeck.angle(points.neckShoulderCorner) * 2
@@ -68,47 +68,47 @@ function draftBase({
   const frontNecklineToRaglanAngle = raglanAngle - (necklineAngleAtRaglan + 180)
   store.set('frontNecklineToRaglanAngle', frontNecklineToRaglanAngle)
 
-  points.armholeCornerScooped = points.armholeCorner.shift(
+  points.armpitCornerScooped = points.armpitCorner.shift(
     raglanAngle + 90,
     options.raglanScoopMagnitude * raglanLength
   )
-  points.armholeScoopCp1 = points.armholeCorner.shift(
+  points.armpitScoopCp1 = points.armpitCorner.shift(
     raglanAngle + 180,
     (1 / 3) * options.raglanScoopLength * raglanLength
   )
-  points.armholeScoopCp2 = points.armholeCorner.shift(
+  points.armpitScoopCp2 = points.armpitCorner.shift(
     raglanAngle + 180,
     (2 / 3) * options.raglanScoopLength * raglanLength
   )
-  points.armholeScoopEnd = points.armholeCorner.shift(
+  points.armpitScoopEnd = points.armpitCorner.shift(
     raglanAngle + 180,
     options.raglanScoopLength * raglanLength
   )
 
   // Make the side seams vertical if we're making a tubular shirt. Overrides any hips measurements or options.
   if (options.straightSides)
-    points.sideHem.x = Math.max(points.armholeCornerScooped.x, points.sideHem.x)
+    points.sideHem.x = Math.max(points.armpitCornerScooped.x, points.sideHem.x)
 
-  // Make sure that the shirt at least reaches the armholes, to ensure that the full raglan seam can be formed. This code should only trigger is someone tries to make a really, _really_ short shirt.
-  if (points.sideHem.y < points.armholeCornerScooped.y) {
-    points.sideHem.y = points.armholeCornerScooped.y
-    points.cfHem.y = points.armholeCornerScooped.y
+  // Make sure that the shirt at least reaches the armpits, to ensure that the full raglan seam can be formed. This code should only trigger is someone tries to make a really, _really_ short shirt.
+  if (points.sideHem.y < points.armpitCornerScooped.y) {
+    points.sideHem.y = points.armpitCornerScooped.y
+    points.cfHem.y = points.armpitCornerScooped.y
   }
 
-  const sideAngle = points.sideHem.angle(points.armholeCornerScooped)
-  const sideLength = points.sideHem.dist(points.armholeCornerScooped)
+  const sideAngle = points.sideHem.angle(points.armpitCornerScooped)
+  const sideLength = points.sideHem.dist(points.armpitCornerScooped)
   points.sideCp1 = points.sideHem
     .shift(sideAngle, (1 / 3) * sideLength)
     .shift(sideAngle - 90, options.sideShape * sideLength)
-  points.sideCp2 = points.armholeCornerScooped
+  points.sideCp2 = points.armpitCornerScooped
     .shift(sideAngle + 180, (1 / 3) * sideLength)
     .shift(sideAngle - 90, options.sideShape * sideLength)
 
   paths.saBase = new Path().move(points.sideHem)
-  if (options.straightSides) paths.saBase.line(points.armholeCornerScooped)
-  else paths.saBase.curve(points.sideCp1, points.sideCp2, points.armholeCornerScooped)
+  if (options.straightSides) paths.saBase.line(points.armpitCornerScooped)
+  else paths.saBase.curve(points.sideCp1, points.sideCp2, points.armpitCornerScooped)
   paths.saBase
-    .curve(points.armholeScoopCp1, points.armholeScoopCp2, points.armholeScoopEnd)
+    .curve(points.armpitScoopCp1, points.armpitScoopCp2, points.armpitScoopEnd)
     .line(points.neckShoulderCorner)
     .curve(points.neckCP1, points.neckCP2, points.cfNeck)
     .hide(true)
@@ -129,19 +129,19 @@ function draftBase({
     macro('vd', {
       id: 'hSide',
       from: points.sideHem,
-      to: points.armholeCornerScooped,
-      x: Math.max(points.sideHem.x, points.armholeCornerScooped.x) + (15 + sa),
+      to: points.armpitCornerScooped,
+      x: Math.max(points.sideHem.x, points.armpitCornerScooped.x) + (15 + sa),
     })
     macro('vd', {
       id: 'hArmpitScoop',
-      from: points.armholeCornerScooped,
-      to: points.armholeScoopEnd,
-      x: points.armholeCornerScooped.x + (30 + sa),
+      from: points.armpitCornerScooped,
+      to: points.armpitScoopEnd,
+      x: points.armpitCornerScooped.x + (30 + sa),
     })
     macro('hd', {
       id: 'wArmpitScoop',
-      from: points.armholeScoopEnd,
-      to: points.armholeCornerScooped,
+      from: points.armpitScoopEnd,
+      to: points.armpitCornerScooped,
       y: 0 - (sa + 0),
     })
   }
@@ -156,8 +156,8 @@ function draftBase({
 
   if (complete) {
     points.title = new Point(
-      points.armholeCorner.x / 2,
-      (points.cfHem.y + points.armholeCornerScooped.y / 2) / 2
+      points.armpitCorner.x / 2,
+      (points.cfHem.y + points.armpitCornerScooped.y / 2) / 2
     )
     macro('title', { at: points.title, nr: 5, title: 'base' })
 
@@ -182,7 +182,7 @@ export const base = {
   plugins: [bustPlugin],
   draft: draftBase,
   hide: { self: true },
-  measurements: ['neck', 'chest', 'hips', 'waistToHips', 'hpsToWaistBack', 'waistToArmhole'],
+  measurements: ['neck', 'chest', 'hips', 'waistToHips', 'hpsToWaistBack', 'waistToArmpit'],
   options: {
     // How much ease to give for the neck, as a percentage.
     neckEase: { pct: 50, min: -30, max: 150, menu: 'fit' },
@@ -193,14 +193,14 @@ export const base = {
     bodyLength: { pct: 120, min: 20, max: 300, menu: 'style' },
     // How far the neck hole is shifted towards the front. +100% means it's entirely on the front, -100% means it's entirely on the back, and 0 means the front and back are the same.
     neckBalance: { pct: 40, min: 0, max: 80, menu: 'fit' },
-    // Note: The raglan length is the distance between the armhole and where the raglan seams would meet if there were no neckhole. It is used as a base for the following fit options.
+    // Note: The raglan length is the distance between the armpit and where the raglan seams would meet if there were no neckhole. It is used as a base for the following fit options.
     // How long the scoop running down the raglan seam is, as a % of the raglan length.
     raglanScoopLength: { pct: 20, min: 0, max: 50, menu: 'advanced' },
     // How deep the scoop running down the raglan seam is, as a % of the raglan length.
     raglanScoopMagnitude: { pct: 6, min: 0, max: 20, menu: 'advanced' },
     // Length of the hem around the hips, as a multiple of the seam allowance.
     hemWidth: { pct: 2, min: 0, max: 8, menu: 'construction' },
-    // How the body curves along the side from the armhole to the side of the hips, as a % of the length of the side seam. Negative values form a concave body and positive values form a convex body.
+    // How the body curves along the side from the armpit to the side of the hips, as a % of the length of the side seam. Negative values form a concave body and positive values form a convex body.
     sideShape: { pct: 0, min: -20, max: 20, menu: 'advanced' },
   },
   optionalMeasurements: ['highBust'],
