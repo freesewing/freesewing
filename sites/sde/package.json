@@ -53,7 +53,7 @@
     "daisyui": "3.9.2",
     "file-saver": "2.0.5",
     "i18next": "23.5.1",
-    "jotai": "2.4.1",
+    "jotai": "2.4.3",
     "jotai-location": "0.5.1",
     "js-yaml": "4.1.0",
     "lodash.debounce": "^4.0.8",
