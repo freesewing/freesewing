@@ -863,7 +863,7 @@
   resolved "https://registry.yarnpkg.com/@braintree/sanitize-url/-/sanitize-url-6.0.4.tgz#923ca57e173c6b232bbbb07347b1be982f03e783"
   integrity sha512-s3jaWicZd0pkP0jf5ysyHUI/RE7MHos6qlToFcGWXVp+ykHOy77OUMrfbgJ9it2C5bow7OIQwYYaHjk9XlBQ2A==
 
-"@bugsnag/browser@^7.21.0":
+"@bugsnag/browser@^7.20.2":
   version "7.21.0"
   resolved "https://registry.yarnpkg.com/@bugsnag/browser/-/browser-7.21.0.tgz#ee623ffa57c0fe2e2e4644a24bfc2008f18f83ef"
   integrity sha512-mJ6r6SXpts+hdSnDNmTR35lZ+95BthqXpgBrDwquDCoY++zQ4OuzrkA/HZYD/rfpdSpgb7lO+AAlD7qrd9IylA==
@@ -886,12 +886,12 @@
   resolved "https://registry.yarnpkg.com/@bugsnag/cuid/-/cuid-3.0.2.tgz#544f8e6e7e3768c8cb618ca5c5fb1eea6aacbb7e"
   integrity sha512-cIwzC93r3PQ/INeuwtZwkZIG2K8WWN0rRLZQhu+mr48Ay+i6sEki4GYfTsflse7hZ1BeDWrNb/Q9vgY3B31xHQ==
 
-"@bugsnag/js@7.21.0":
-  version "7.21.0"
-  resolved "https://registry.yarnpkg.com/@bugsnag/js/-/js-7.21.0.tgz#0a8a9a61a43cf9b552dc70341ed49ee9da46a8f3"
-  integrity sha512-fFTR7cRBSlLtwa1wPTse92igZUEX2V95KyGGCXq2qb2F2w6hJ6oJDxA0BMPS8qqsciYXRjbfn8HX+TFgO1oErg==
+"@bugsnag/js@7.20.2":
+  version "7.20.2"
+  resolved "https://registry.yarnpkg.com/@bugsnag/js/-/js-7.20.2.tgz#218ec77d1df8b70d9353d4f2f2ccd3e51a331786"
+  integrity sha512-Q08k0h0h6NFwFGkFmib39Uln2WpvJdqT1EGF1JlyYiGW03Y+VopVb9r37pZrRrN9IY08mxaIEO8la5xeaWAs6A==
   dependencies:
-    "@bugsnag/browser" "^7.21.0"
+    "@bugsnag/browser" "^7.20.2"
     "@bugsnag/node" "^7.19.0"
 
 "@bugsnag/node@^7.19.0":
