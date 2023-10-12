@@ -1,15 +1,13 @@
 //  __SDEFILE__ - This file is a dependency for the stand-alone environment
-import { siteConfig } from 'site/site.config.mjs'
 import { useContext } from 'react'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
-import { pageHasChildren, isSlugPart } from 'shared/utils.mjs'
+import { isSlugPart } from 'shared/utils.mjs'
 import get from 'lodash.get'
 import { HomeIcon, RightIcon, BulletIcon } from 'shared/components/icons.mjs'
 import { Link, PageLink } from 'shared/components/link.mjs'
 import orderBy from 'lodash.orderby'
 import { icons } from 'shared/components/navigation/primary.mjs'
 import { useTranslation } from 'next-i18next'
-import { BaseAccordion } from 'shared/components/accordion.mjs'
 import { ReadMore } from 'shared/components/mdx/read-more.mjs'
 
 export const ns = ['sections']
