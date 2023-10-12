@@ -311,7 +311,7 @@ org:
     'daisyui': *daisyui
     'echarts': 5.4.2
     'echarts-for-react': 3.0.2
-    'jotai': &jotai '2.4.1'
+    'jotai': &jotai '2.4.3'
     'jotai-location': &jotai-location '0.5.1'
     'lodash.get': *_get
     'lodash.orderby': *_orderby
