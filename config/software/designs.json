@@ -385,6 +385,8 @@
     "techniques": ["curvedSeam", "button", "hem"]
   },
   "shelly": {
+	"lab": true,
+	"org": true,
     "description": "A FreeSewing pattern for a raglan shirt, perfect for swimshirts",
     "code": "Thrunic",
     "design": "Thrunic",
