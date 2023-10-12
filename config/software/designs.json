@@ -330,7 +330,7 @@
     "design": "Wouter Van Wageningen",
     "difficulty": 3,
     "tags": ["blocks", "tops"],
-    "techniques": ["curvedSeam", "precision", "princessSeam"]
+    "techniques": ["block", "curvedSeam", "precision", "princessSeam"]
   },
   "octoplushy": {
     "lab": true,
@@ -413,6 +413,14 @@
     "difficulty": 4,
     "tags": ["tops"],
     "techniques": ["hem", "button", "interfacing", "curvedSeam", "flatFelledSeam", "flatSleeve"]
+  },
+  "skully": {
+    "description": "A FreeSewing pattern for skully, our logo, a plushy toy",
+    "code": "Wouter Van Wageningen",
+    "design": "Wouter Van Wageningen",
+    "difficulty": 4,
+    "tags": ["accessories", "toys"],
+    "techniques": ["curvedSeam", "precision"]
   },
   "sven": {
     "lab": true,
