@@ -42,6 +42,7 @@ import { i18n as shelly } from '@freesewing/shelly'
 import { i18n as shin } from '@freesewing/shin'
 import { i18n as simon } from '@freesewing/simon'
 import { i18n as simone } from '@freesewing/simone'
+import { i18n as skully } from '@freesewing/skully'
 import { i18n as sven } from '@freesewing/sven'
 import { i18n as tamiko } from '@freesewing/tamiko'
 import { i18n as teagan } from '@freesewing/teagan'
@@ -95,6 +96,7 @@ export const designs = {
   shin,
   simon,
   simone,
+  skully,
   sven,
   tamiko,
   teagan,

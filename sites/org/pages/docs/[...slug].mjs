@@ -10,7 +10,7 @@ import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { DocsLayout, ns as layoutNs } from 'site/components/layouts/docs.mjs'
 import { ns as designNs } from 'shared/components/designs/info.mjs'
 
-export const ns = nsMerge(pageNs, layoutNs, designNs)
+export const ns = nsMerge(pageNs, layoutNs, designNs, 'popout')
 
 /**
  * A page to display documentation markdown

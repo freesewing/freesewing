@@ -48,7 +48,7 @@ const RenderTree = ({ tree, recurse, depth = 1, level = 0 }) => {
           <li key={i} className="w-full flex flex-row items-start gap-0.5 lg:gap-1">
             {hasChildren ? (
               <details className={`w-full inline flex flex-row`}>
-                <summary className="hover:bg-opacity-20 bg-secondary bg-opacity-0 block w-full flex flex-row items-center gap-0.5 lg:gap-1 px-1 lg:px-2">
+                <summary className="hover:bg-opacity-20 bg-secondary bg-opacity-0 block w-full flex flex-row items-center gap-0.5 lg:gap-1 px-1 lg:px-2 py-1">
                   <RightIcon className={`w-4 h-4 summary-chevron transition-all`} stroke={3} />
                   <Link href={`/${item.s}`}>{item.t}</Link>
                 </summary>
