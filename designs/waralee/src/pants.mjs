@@ -1,44 +1,52 @@
 import { pantsProto } from './pantsproto.mjs'
 
-function waraleePants({
-  options,
-  points,
-  Path,
-  paths,
-  Snippet,
-  snippets,
-  complete,
-  sa,
-  paperless,
-  macro,
-  store,
-  part,
-}) {
-  let separateWaistband = options.separateWaistband
-  if ('waistband' == options.frontPocketStyle) {
-    separateWaistband = true
-  }
+export const pants = {
+  name: 'waralee.pants',
+  from: pantsProto,
+  draft: ({ options, points, Path, paths, Snippet, snippets, sa, macro, store, expand, part }) => {
+    const separateWaistband = options.separateWaistband || 'waistband' == options.frontPocketStyle
 
-  if (false == separateWaistband) {
-    paths.waistFoldBack = new Path()
-      .move(points.bWaistSideHem)
-      .line(separateWaistband ? points.bWaistBackSeam : points.bWaistBackHem)
-      .line(separateWaistband ? points.bWaistBackSeam : points.bWaistBackOverlapHem)
-      .attr('class', 'fabric stroke-sm')
-    paths.waistFoldFront = new Path()
-      .move(points.fWaistSideHem)
-      .line(points.fWaistFrontOverlapHem)
-      .attr('class', 'fabric stroke-sm')
-  }
+    if (expand) {
+      // Expand is on, do not draw the part but flag this to the user
+      store.flag.note({
+        msg: `waralee:showPants`,
+        suggest: {
+          text: 'flag:hide',
+          icon: 'expand',
+          update: {
+            settings: ['expand', 0],
+          },
+        },
+      })
+    } else {
+      // Expand is on, do not draw the part but flag this to the user
+      store.flag.note({
+        msg: `waralee:hidePants`,
+      })
+      // Also hint about expand
+      store.flag.preset('expand')
 
-  paths.frontFold = paths.front.offset(-1 * store.get('hem')).attr('class', 'fabric stroke-sm')
-  paths.legFold = paths.leg.offset(-1 * store.get('hem')).attr('class', 'fabric stroke-sm')
-  paths.backFold = paths.back.offset(-1 * store.get('hem')).attr('class', 'fabric stroke-sm')
+      return part.hide()
+    }
 
-  paths.seam.unhide()
+    if (false == separateWaistband) {
+      paths.waistFoldBack = new Path()
+        .move(points.bWaistSideHem)
+        .line(separateWaistband ? points.bWaistBackSeam : points.bWaistBackHem)
+        .line(separateWaistband ? points.bWaistBackSeam : points.bWaistBackOverlapHem)
+        .attr('class', 'fabric stroke-sm')
+      paths.waistFoldFront = new Path()
+        .move(points.fWaistSideHem)
+        .line(points.fWaistFrontOverlapHem)
+        .attr('class', 'fabric stroke-sm')
+    }
 
-  // Complete?
-  if (complete) {
+    paths.frontFold = paths.front.offset(-1 * store.get('hem')).attr('class', 'fabric stroke-sm')
+    paths.legFold = paths.leg.offset(-1 * store.get('hem')).attr('class', 'fabric stroke-sm')
+    paths.backFold = paths.back.offset(-1 * store.get('hem')).attr('class', 'fabric stroke-sm')
+
+    paths.seam.unhide()
+
     points.title = points.fWaistFront.shift(270, 400)
     macro('title', {
       nr: 1,
@@ -47,23 +55,19 @@ function waraleePants({
     })
 
     points.logo = points.title.shift(270, 75)
-
     snippets.logo = new Snippet('logo', points.logo)
 
     macro('scalebox', { at: points.mHip.shift(-90, 70) })
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-  }
 
-  if (options.frontPocket && 'welt' == options.frontPocketStyle) {
-    paths.frontPocket.unhide()
-  }
-  if (options.backPocket) {
-    paths.backPocket.unhide()
-  }
+    if (options.frontPocket && 'welt' == options.frontPocketStyle) {
+      paths.frontPocket.unhide()
+    }
+    if (options.backPocket) {
+      paths.backPocket.unhide()
+    }
 
-  // Paperless?
-  if (paperless) {
     let fWaistSide = separateWaistband ? points.fWaistSideSeam : points.fWaistSide
     let bWaistSide = separateWaistband ? points.bWaistSideSeam : points.bWaistSide
     macro('hd', {
@@ -114,6 +118,7 @@ function waraleePants({
       to: points.bLegBackOverlap,
       x: points.bLegBackOverlap.x - 30,
     })
+
     if (false == separateWaistband) {
       macro('vd', {
         id: 8,
@@ -121,68 +126,62 @@ function waraleePants({
         to: points.fWaistSideHem,
         x: points.fWaistSide.x + 10,
       })
+
+      if (options.frontPocket && 'welt' == options.frontPocketStyle) {
+        macro('vd', {
+          id: 9,
+          from: fWaistSide,
+          to: points.frontPocketTop,
+          x: points.frontPocketTop.x,
+        })
+        macro('vd', {
+          id: 10,
+          from: fWaistSide,
+          to: points.frontPocketBottom,
+          x: points.frontPocketBottom.x,
+        })
+        macro('hd', {
+          id: 11,
+          from: points.frontPocketTop,
+          to: fWaistSide,
+          y: points.frontPocketTop.y,
+        })
+        macro('hd', {
+          id: 12,
+          from: points.frontPocketBottom,
+          to: fWaistSide,
+          y: points.frontPocketBottom.y,
+        })
+      }
+
+      if (options.backPocket) {
+        macro('vd', {
+          id: 13,
+          from: bWaistSide,
+          to: points.backPocketLeft,
+          x: points.backPocketLeft.x,
+        })
+        macro('vd', {
+          id: 14,
+          from: bWaistSide,
+          to: points.backPocketRight,
+          x: points.backPocketRight.x,
+        })
+        macro('hd', {
+          id: 15,
+          from: bWaistSide,
+          to: points.backPocketLeft,
+          y: points.backPocketLeft.y,
+        })
+        macro('hd', {
+          id: 16,
+          from: bWaistSide,
+          to: points.backPocketRight,
+          y: points.backPocketRight.y,
+        })
+      }
     }
 
-    if (options.frontPocket && 'welt' == options.frontPocketStyle) {
-      macro('vd', {
-        id: 9,
-        from: fWaistSide,
-        to: points.frontPocketTop,
-        x: points.frontPocketTop.x,
-      })
-      macro('vd', {
-        id: 10,
-        from: fWaistSide,
-        to: points.frontPocketBottom,
-        x: points.frontPocketBottom.x,
-      })
-      macro('hd', {
-        id: 11,
-        from: points.frontPocketTop,
-        to: fWaistSide,
-        y: points.frontPocketTop.y,
-      })
-      macro('hd', {
-        id: 12,
-        from: points.frontPocketBottom,
-        to: fWaistSide,
-        y: points.frontPocketBottom.y,
-      })
-    }
-
-    if (options.backPocket) {
-      macro('vd', {
-        id: 13,
-        from: bWaistSide,
-        to: points.backPocketLeft,
-        x: points.backPocketLeft.x,
-      })
-      macro('vd', {
-        id: 14,
-        from: bWaistSide,
-        to: points.backPocketRight,
-        x: points.backPocketRight.x,
-      })
-      macro('hd', {
-        id: 15,
-        from: bWaistSide,
-        to: points.backPocketLeft,
-        y: points.backPocketLeft.y,
-      })
-      macro('hd', {
-        id: 16,
-        from: bWaistSide,
-        to: points.backPocketRight,
-        y: points.backPocketRight.y,
-      })
-    }
-  }
-
-  return part.setHidden(options.showMini != false)
-}
-
-export const pants = {
-  name: 'waralee.pants',
-  from: pantsProto,
-  draft: waraleePants,
+    return part.setHidden(options.showMini && !expand)
+  },
 }

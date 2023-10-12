@@ -1,91 +1,98 @@
 import { pantsProto } from './pantsproto.mjs'
 
-function waraleePocket({
-  options,
-  measurements,
-  Point,
-  Path,
-  points,
-  paths,
-  Snippet,
-  snippets,
-  complete,
-  sa,
-  paperless,
-  macro,
-  part,
-}) {
-  if (false == options.frontPocket) {
-    return part
-  }
+export const pocket = {
+  name: 'waralee.pocket',
+  after: pantsProto,
+  draft: ({
+    options,
+    measurements,
+    Point,
+    Path,
+    points,
+    paths,
+    Snippet,
+    snippets,
+    sa,
+    macro,
+    part,
+  }) => {
+    if (false == options.frontPocket) {
+      return part
+    }
 
-  const c = 0.55191502449351
+    const c = 0.55191502449351
 
-  let pocketDepth =
-    (measurements.crotchDepth - measurements.waistToHips) * options.frontPocketDepthFactor
-  let frontPocketSize =
-    options.frontPocketSize * measurements.crotchDepth /*- measurements.waistToHips*/
+    const pocketDepth =
+      (measurements.crotchDepth - measurements.waistToHips) * options.frontPocketDepthFactor
+    const frontPocketSize =
+      options.frontPocketSize * measurements.crotchDepth /*- measurements.waistToHips*/
 
-  if ('welt' == options.frontPocketStyle) {
-    points.topLeft = new Point(0, 0)
-    points.bottomLeft = points.topLeft.shift(270, pocketDepth)
+    console.log({ pocketDepth: pocketDepth, frontPocketSize: frontPocketSize })
 
-    points.topRight = points.topLeft.shift(0, pocketDepth * (1 / 3))
-    points.bottomRight = points.topRight.shift(290, pocketDepth * (5 / 6))
+    if ('welt' != options.frontPocketStyle) {
+      points.topLeft = new Point(0, 0)
+      points.bottomLeft = points.topLeft.shift(270, pocketDepth)
+      console.log({ nwpoints: JSON.parse(JSON.stringify(points)) })
 
-    points.bottomLeftCP = points.bottomLeft.shift(0, pocketDepth * (1 / 6))
-    points.bottomRightCP = points.bottomRight.shift(225, pocketDepth * (1 / 4))
+      points.topRight = points.topLeft.shift(0, pocketDepth * (1 / 3))
+      points.bottomRight = points.topRight.shift(290, pocketDepth * (5 / 6))
 
-    paths.seam = new Path()
-      .move(points.topLeft)
-      .line(points.bottomLeft)
-      .curve(points.bottomLeftCP, points.bottomRightCP, points.bottomRight)
-      .line(points.topRight)
-      .line(points.topLeft)
-      .close()
-      .attr('class', 'fabric')
-  } else {
-    points.topLeft = new Point(0, 0)
-    points.topRight = points.topLeft.shift(0, frontPocketSize)
-    points.bottomLeft = points.topLeft.shift(270, frontPocketSize * 1.5)
-    points.bottomRight = points.topRight.shift(270, frontPocketSize * 1.5)
-    points.bottomLeftCornerUp = points.bottomLeft.shift(90, frontPocketSize / 4)
-    points.bottomLeftCornerUpCp1 = points.bottomLeftCornerUp.shift(270, (frontPocketSize / 4) * c)
-    points.bottomLeftCornerOver = points.bottomLeft.shift(0, frontPocketSize / 4)
-    points.bottomLeftCornerOverCp2 = points.bottomLeftCornerOver.shift(
-      180,
-      (frontPocketSize / 4) * c
-    )
-    points.bottomRightCornerUp = points.bottomRight.shift(90, frontPocketSize / 4)
-    points.bottomRightCornerUpCp2 = points.bottomRightCornerUp.shift(270, (frontPocketSize / 4) * c)
-    points.bottomRightCornerOver = points.bottomRight.shift(180, frontPocketSize / 4)
-    points.bottomRightCornerOverCp1 = points.bottomRightCornerOver.shift(
-      0,
-      (frontPocketSize / 4) * c
-    )
+      points.bottomLeftCP = points.bottomLeft.shift(0, pocketDepth * (1 / 6))
+      points.bottomRightCP = points.bottomRight.shift(225, pocketDepth * (1 / 4))
 
-    paths.seam = new Path()
-      .move(points.topLeft)
-      .line(points.bottomLeftCornerUp)
-      .curve(
-        points.bottomLeftCornerUpCp1,
-        points.bottomLeftCornerOverCp2,
-        points.bottomLeftCornerOver
+      paths.seam = new Path()
+        .move(points.topLeft)
+        .line(points.bottomLeft)
+        .curve(points.bottomLeftCP, points.bottomRightCP, points.bottomRight)
+        .line(points.topRight)
+        .line(points.topLeft)
+        .close()
+        .attr('class', 'fabric')
+    } else {
+      points.topLeft = new Point(0, 0)
+      points.topRight = points.topLeft.shift(0, frontPocketSize)
+      points.bottomLeft = points.topLeft.shift(270, frontPocketSize * 1.5)
+      points.bottomRight = points.topRight.shift(270, frontPocketSize * 1.5)
+      console.log({ wpoints: JSON.parse(JSON.stringify(points)) })
+
+      points.bottomLeftCornerUp = points.bottomLeft.shift(90, frontPocketSize / 4)
+      points.bottomLeftCornerUpCp1 = points.bottomLeftCornerUp.shift(270, (frontPocketSize / 4) * c)
+      points.bottomLeftCornerOver = points.bottomLeft.shift(0, frontPocketSize / 4)
+      points.bottomLeftCornerOverCp2 = points.bottomLeftCornerOver.shift(
+        180,
+        (frontPocketSize / 4) * c
       )
-      .line(points.bottomRightCornerOver)
-      .curve(
-        points.bottomRightCornerOverCp1,
-        points.bottomRightCornerUpCp2,
-        points.bottomRightCornerUp
+      points.bottomRightCornerUp = points.bottomRight.shift(90, frontPocketSize / 4)
+      points.bottomRightCornerUpCp2 = points.bottomRightCornerUp.shift(
+        270,
+        (frontPocketSize / 4) * c
       )
-      .line(points.topRight)
-      .line(points.topLeft)
-      .close()
-      .attr('class', 'fabric')
-  }
+      points.bottomRightCornerOver = points.bottomRight.shift(180, frontPocketSize / 4)
+      points.bottomRightCornerOverCp1 = points.bottomRightCornerOver.shift(
+        0,
+        (frontPocketSize / 4) * c
+      )
 
-  // Complete?
-  if (complete) {
+      paths.seam = new Path()
+        .move(points.topLeft)
+        .line(points.bottomLeftCornerUp)
+        .curve(
+          points.bottomLeftCornerUpCp1,
+          points.bottomLeftCornerOverCp2,
+          points.bottomLeftCornerOver
+        )
+        .line(points.bottomRightCornerOver)
+        .curve(
+          points.bottomRightCornerOverCp1,
+          points.bottomRightCornerUpCp2,
+          points.bottomRightCornerUp
+        )
+        .line(points.topRight)
+        .line(points.topLeft)
+        .close()
+        .attr('class', 'fabric')
+    }
+
     points.title = points.topLeft.shift(270, 75).shift(0, 50)
     macro('title', {
       nr: 3,
@@ -100,12 +107,15 @@ function waraleePocket({
       .attr('data-text', 'Waralee')
       .attr('data-text-class', 'center')
 
+    console.log({ points: JSON.parse(JSON.stringify(points)), frontPocketSize: frontPocketSize })
+
     if ('welt' == options.frontPocketStyle) {
       macro('cutonfold', {
         from: points.topLeft,
         to: points.bottomLeft,
         margin: 5,
         offset: 10,
+        id: 'cof',
       })
     }
     if (sa) {
@@ -126,10 +136,7 @@ function waraleePocket({
         paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
       }
     }
-  }
 
-  // Paperless?
-  if (paperless) {
     if ('welt' == options.frontPocketStyle) {
       macro('hd', {
         id: 1,
@@ -175,13 +182,7 @@ function waraleePocket({
         x: points.bottomLeftCornerOver.x,
       })
     }
-  }
 
-  return part
-}
-
-export const pocket = {
-  name: 'waralee.pocket',
-  after: pantsProto,
-  draft: waraleePocket,
+    return part
+  },
 }

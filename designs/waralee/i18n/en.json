@@ -14,7 +14,20 @@
     "waistbandBack": "Waistband back",
     "waistbandFront": "Waistband front"
   },
-  "s": {},
+  "s": {
+    "cutwaistbandBack.t": "The back waist band is not shown",
+    "cutwaistbandBack.d": "The **back waist band** is made of two strips of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "cutwaistbandFront.t": "The front waist band is not shown",
+    "cutwaistbandFront.d": "The **front waist band** is made of two strips of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "cutstrapBack.t": "The back strap is not shown",
+    "cutstrapBack.d": "The **back strap** is made of two strips of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "cutstrapFront.t": "The front strap is not shown",
+    "cutstrapFront.d": "The **front strap** is made of two strips of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "showPants.t": "The full pants are shown",
+    "showPants.d": "The **full pants** are shown. This takes up a lot of paper to print. Consider hiding this part, and a minimized version will show with the dimensions.",
+    "hidePants.t": "The full pants are not shown",
+    "hidePants.d": "The **full pants** are not shown. Instead a minimized version is show with the dimensions, allowing you cut this directly from the fabric. This saves considerably on the required paper to print this pattern."
+  },
   "o": {
     "backPocket": {
       "t": "Back pocket",

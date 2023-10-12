@@ -4,44 +4,48 @@ import { pantsProto } from './pantsproto.mjs'
 // To keep you from printing it completely, you could print this part in paperless mode
 // and only have a single sheet with all the dimensions on it.
 
-function waraleeMini({ options, Path, points, paths, complete, sa, macro, store, part }) {
-  let mini = options.minimizer
-  let separateWaistband = options.separateWaistband
-  if ('waistband' == options.frontPocketStyle) {
-    separateWaistband = true
-  }
+export const mini = {
+  name: 'waralee.mini',
+  from: pantsProto,
+  draft: ({ options, Path, points, paths, sa, macro, store, expand, part }) => {
+    if (expand) {
+      return part.hide()
+    }
 
-  for (var p in points) {
-    points[p].x = points[p].x / mini
-    points[p].y = points[p].y / mini
-  }
+    const mini = options.minimizer
+    const separateWaistband = options.separateWaistband || 'waistband' == options.frontPocketStyle
 
-  paths.waistFoldBack = paths.waistBack
-    .offset((-1 * store.get('waistBand')) / mini)
-    .attr('class', 'fabric stroke-sm')
-  paths.waistFoldFront = paths.waistFront
-    .offset((-1 * store.get('waistBand')) / mini)
-    .attr('class', 'fabric stroke-sm')
+    for (const p in points) {
+      points[p].x = points[p].x / mini
+      points[p].y = points[p].y / mini
+    }
 
-  paths.frontFold = paths.front
-    .offset((-1 * store.get('hem')) / mini)
-    .attr('class', 'fabric stroke-sm')
-  paths.legFold = paths.leg.offset((-1 * store.get('hem')) / mini).attr('class', 'fabric stroke-sm')
-  paths.backFold = paths.back
-    .offset((-1 * store.get('hem')) / mini)
-    .attr('class', 'fabric stroke-sm')
+    paths.waistFoldBack = paths.waistBack
+      .offset((-1 * store.get('waistBand')) / mini)
+      .attr('class', 'fabric stroke-sm')
+    paths.waistFoldFront = paths.waistFront
+      .offset((-1 * store.get('waistBand')) / mini)
+      .attr('class', 'fabric stroke-sm')
 
-  paths.cutOut = new Path()
-    .move(separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
-    .line(points.mWaist2)
-    .line(points.mWaist1)
-    .line(separateWaistband ? points.fWaistSideSeam : points.fWaistSide)
-    .attr('class', 'help')
+    paths.frontFold = paths.front
+      .offset((-1 * store.get('hem')) / mini)
+      .attr('class', 'fabric stroke-sm')
+    paths.legFold = paths.leg
+      .offset((-1 * store.get('hem')) / mini)
+      .attr('class', 'fabric stroke-sm')
+    paths.backFold = paths.back
+      .offset((-1 * store.get('hem')) / mini)
+      .attr('class', 'fabric stroke-sm')
 
-  paths.seam.unhide()
+    paths.cutOut = new Path()
+      .move(separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
+      .line(points.mWaist2)
+      .line(points.mWaist1)
+      .line(separateWaistband ? points.fWaistSideSeam : points.fWaistSide)
+      .attr('class', 'help')
 
-  // Complete?
-  if (complete) {
+    paths.seam.unhide()
+
     macro('scalebox', { at: points.mLeg.shift(-90, 35) })
 
     if (options.frontPocket && 'welt' == options.frontPocketStyle) {
@@ -68,12 +72,12 @@ function waraleeMini({ options, Path, points, paths, complete, sa, macro, store,
       .attr('data-text', 'useMeasurementsToCutFromFabric')
       .attr('data-text-class', 'center')
 
-    let fWaistSide = separateWaistband ? points.fWaistSideSeam : points.fWaistSide
-    let fWaistFrontOverlap = separateWaistband
+    const fWaistSide = separateWaistband ? points.fWaistSideSeam : points.fWaistSide
+    const fWaistFrontOverlap = separateWaistband
       ? points.fWaistFrontOverlapSeam
       : points.fWaistFrontOverlap
-    let bWaistSide = separateWaistband ? points.bWaistSideSeam : points.bWaistSide
-    let bWaistBackOverlap = separateWaistband
+    const bWaistSide = separateWaistband ? points.bWaistSideSeam : points.bWaistSide
+    const bWaistBackOverlap = separateWaistband
       ? points.bWaistBackOverlapSeam
       : points.bWaistBackOverlap
 
@@ -83,6 +87,7 @@ function waraleeMini({ options, Path, points, paths, complete, sa, macro, store,
       to: fWaistSide,
       y: fWaistSide.y + 10,
       text: part.units(fWaistSide.dist(points.fWaistFrontOverlap) * mini),
+      force: true,
     })
     macro('hd', {
       id: 2,
@@ -90,6 +95,7 @@ function waraleeMini({ options, Path, points, paths, complete, sa, macro, store,
       to: points.bLegBackOverlap,
       y: points.bLegBackOverlap.y - 10,
       text: part.units(points.fLegFrontOverlap.dist(points.bLegBackOverlap) * mini),
+      force: true,
     })
     macro('hd', {
       id: 3,
@@ -97,6 +103,7 @@ function waraleeMini({ options, Path, points, paths, complete, sa, macro, store,
       to: points.bWaistBackOverlap,
       y: points.bWaistBackOverlap.y + 20,
       text: part.units(points.bWaistBackOverlap.dist(points.bWaistBack) * mini),
+      force: true,
     })
     macro('hd', {
       id: 4,
@@ -104,6 +111,7 @@ function waraleeMini({ options, Path, points, paths, complete, sa, macro, store,
       to: points.mHip,
       y: points.mHip.y + 10,
       text: part.units((points.mHip.x - points.fWaistFrontOverlap.x) * mini),
+      force: true,
     })
     macro('vd', {
       id: 5,
@@ -111,6 +119,7 @@ function waraleeMini({ options, Path, points, paths, complete, sa, macro, store,
       to: points.fLegFrontOverlap,
       x: points.fLegFrontOverlap.x + 10,
       text: part.units(fWaistFrontOverlap.dist(points.fLegFrontOverlap) * mini),
+      force: true,
     })
     macro('vd', {
       id: 6,
@@ -118,6 +127,7 @@ function waraleeMini({ options, Path, points, paths, complete, sa, macro, store,
       to: bWaistBackOverlap,
       x: points.bLegBackOverlap.x - 10,
       text: part.units(bWaistBackOverlap.dist(points.bLegBackOverlap) * mini),
+      force: true,
     })
     macro('vd', {
       id: 7,
@@ -125,6 +135,7 @@ function waraleeMini({ options, Path, points, paths, complete, sa, macro, store,
       to: bWaistSide,
       x: bWaistSide.x + 10,
       text: part.units((points.bLegBackOverlap.y - bWaistSide.y) * mini),
+      force: true,
     })
 
     if (options.frontPocket && 'welt' == options.frontPocketStyle) {
@@ -134,6 +145,7 @@ function waraleeMini({ options, Path, points, paths, complete, sa, macro, store,
         to: points.frontPocketBottom2,
         y: points.frontPocketBottom2.y + 20,
         text: part.units((points.frontPocketBottom2.x - fWaistFrontOverlap.x) * mini),
+        force: true,
       })
       macro('vd', {
         id: 9,
@@ -141,6 +153,7 @@ function waraleeMini({ options, Path, points, paths, complete, sa, macro, store,
         to: points.frontPocketBottom2,
         x: points.frontPocketBottom2.x + 20,
         text: part.units((points.frontPocketBottom2.y - fWaistFrontOverlap.y) * mini),
+        force: true,
       })
     }
 
@@ -151,6 +164,7 @@ function waraleeMini({ options, Path, points, paths, complete, sa, macro, store,
         to: bWaistBackOverlap,
         y: bWaistBackOverlap.y + 40,
         text: part.units((bWaistBackOverlap.x - points.backPocketRight.x) * mini),
+        force: true,
       })
       macro('vd', {
         id: 11,
@@ -158,15 +172,10 @@ function waraleeMini({ options, Path, points, paths, complete, sa, macro, store,
         to: points.backPocketRight,
         x: points.backPocketRight.x,
         text: part.units((points.backPocketRight.y - bWaistBackOverlap.y) * mini),
+        force: true,
       })
     }
-  }
 
-  return part.setHidden(!options.showMini)
-}
-
-export const mini = {
-  name: 'waralee.mini',
-  from: pantsProto,
-  draft: waraleeMini,
+    return part.setHidden(!options.showMini && !expand)
+  },
 }

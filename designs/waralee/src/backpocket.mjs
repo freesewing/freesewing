@@ -1,54 +1,53 @@
 import { pantsProto } from './pantsproto.mjs'
 
-function waraleeBackPocket({
-  options,
-  measurements,
-  Point,
-  Path,
-  points,
-  paths,
-  Snippet,
-  snippets,
-  complete,
-  paperless,
-  macro,
-  sa,
-  part,
-}) {
-  if (false == options.backPocket) {
-    return part
-  }
+export const backPocket = {
+  name: 'waralee.backPocket',
+  after: pantsProto,
+  draft: ({
+    options,
+    measurements,
+    Point,
+    Path,
+    points,
+    paths,
+    Snippet,
+    snippets,
+    macro,
+    sa,
+    part,
+  }) => {
+    if (false == options.backPocket) {
+      return part
+    }
 
-  let pocketDepth = options.backPocketDepth
+    const pocketDepth = options.backPocketDepth
 
-  points.topLeft = new Point(0, 0)
-  points.bottomLeft = points.topLeft.shift(
-    270,
-    pocketDepth /*+ 30*/ * 2 +
-      options.backPocketVerticalOffset * measurements.crotchDepth /*- measurements.waistToHips*/
-  )
+    points.topLeft = new Point(0, 0)
+    points.bottomLeft = points.topLeft.shift(
+      270,
+      pocketDepth /*+ 30*/ * 2 +
+        options.backPocketVerticalOffset * measurements.crotchDepth /*- measurements.waistToHips*/
+    )
 
-  points.topRight = points.topLeft.shift(
-    0,
-    options.backPocketSize * measurements.crotchDepth /*- measurements.waistToHips*/ /*+ 24*/
-  )
-  points.bottomRight = points.topRight.shift(
-    270,
-    pocketDepth /*+ 30*/ * 2 +
-      options.backPocketVerticalOffset * measurements.crotchDepth /*- measurements.waistToHips*/
-  )
+    points.topRight = points.topLeft.shift(
+      0,
+      options.backPocketSize * measurements.crotchDepth /*- measurements.waistToHips*/ /*+ 24*/
+    )
+    points.bottomRight = points.topRight.shift(
+      270,
+      pocketDepth /*+ 30*/ * 2 +
+        options.backPocketVerticalOffset * measurements.crotchDepth /*- measurements.waistToHips*/
+    )
 
-  paths.seam = new Path()
-    .move(points.topLeft)
-    .line(points.bottomLeft)
-    .line(points.bottomRight)
-    .line(points.topRight)
-    .line(points.topLeft)
-    .close()
-    .attr('class', 'fabric')
+    paths.seam = new Path()
+      .move(points.topLeft)
+      .line(points.bottomLeft)
+      .line(points.bottomRight)
+      .line(points.topRight)
+      .line(points.topLeft)
+      .close()
+      .attr('class', 'fabric')
 
-  // Complete?
-  if (complete) {
     points.title = points.topLeft.shift(270, 75).shift(0, 50)
     macro('title', {
       nr: 4,
@@ -64,10 +63,7 @@ function waraleeBackPocket({
       .attr('data-text-class', 'center')
 
     if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-  }
 
-  // Paperless?
-  if (paperless) {
     macro('hd', {
       id: 1,
       from: points.topLeft,
@@ -80,13 +76,7 @@ function waraleeBackPocket({
       to: points.bottomLeft,
       x: points.topLeft.x + 15,
     })
-  }
 
-  return part
-}
-
-export const backPocket = {
-  name: 'waralee.backPocket',
-  after: pantsProto,
-  draft: waraleeBackPocket,
+    return part
+  },
 }
