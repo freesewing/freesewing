@@ -63,6 +63,7 @@ export const TestMenu = ({ design, patternConfig, settings, update }) => {
             }}
             current={settings?.sample?.option}
           />,
+          'testOptions',
         ],
         [
           <Fragment key="a">
@@ -84,6 +85,7 @@ export const TestMenu = ({ design, patternConfig, settings, update }) => {
             }}
             current={settings?.sample?.measurement}
           />,
+          'testMeasurements',
         ],
         // FIXME: Implement this once v3 is ready
         //[
@@ -95,6 +97,7 @@ export const TestMenu = ({ design, patternConfig, settings, update }) => {
         //    <p>{t('workbench:testSetsDesc')}</p>
         //  </Fragment>,
         //  <V3Wip key="b" />,
+        //  'testSets',
         //],
       ]}
     />

@@ -21,7 +21,7 @@
     "i18n": "SITE=lab node --conditions=internal ../shared/prebuild/i18n-only.mjs",
     "lint": "next lint",
     "prebuild": "node --conditions=internal --experimental-json-modules ./prebuild.mjs",
-    "start": "yarn prebuild && yarn dev",
+    "start": "cd ../org && yarn prebuild && cd - && yarn prebuild && yarn dev",
     "wbuild": "next build",
     "prewbuild": "node --conditions=internal --experimental-json-modules ./prebuild.mjs"
   },
