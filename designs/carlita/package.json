@@ -53,8 +53,7 @@
     "@freesewing/brian": "3.0.0",
     "@freesewing/bent": "3.0.0",
     "@freesewing/carlton": "3.0.0",
-    "@freesewing/plugin-bust": "3.0.0",
-    "@freesewing/plugin-mirror": "3.0.0"
+    "@freesewing/plugin-bust": "3.0.0"
   },
   "dependencies": {},
   "devDependencies": {

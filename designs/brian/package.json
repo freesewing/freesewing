@@ -50,7 +50,6 @@
   },
   "peerDependencies": {
     "@freesewing/core": "3.0.0",
-    "@freesewing/plugin-mirror": "3.0.0",
     "@freesewing/plugin-bust": "3.0.0"
   },
   "dependencies": {},
