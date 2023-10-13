@@ -2,4 +2,4 @@
 title: "Trayvon tie : Options de conception"
 ---
 
-<PatternOptions pattern='trayvon' />
+<DesignOptions design='trayvon' />

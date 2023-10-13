@@ -2,4 +2,4 @@
 title: "Jaeger jacket: Design Options"
 ---
 
-<PatternOptions pattern='jaeger' />
+<DesignOptions design='jaeger' />

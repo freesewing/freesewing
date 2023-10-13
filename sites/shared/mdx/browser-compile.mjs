@@ -13,20 +13,20 @@ import { remarkGithubImages } from './remark-github-images.mjs'
  */
 export const compileMdx = async ({
   md, // A string holding the markdown
-  site, // The site folder, one of 'org' or 'dev'
-  slug, // The slug to the page below the folder (like 'guides/plugins')
+  site = false, // The site folder, one of 'org' or 'dev'
+  slug = false, // The slug to the page below the folder (like 'guides/plugins')
 }) => {
+  const remarkPlugins = [remarkFrontmatter, remarkMdxFrontmatter, remarkGfm, smartypants]
+  /*
+   * This is also used for inline markdown (like what users provide)
+   * in which case we do not need this plugin
+   */
+  if (site && slug) remarkPlugins.push([remarkGithubImages, { site, slug }])
   const mdx = String(
     await compile(md, {
       outputFormat: 'function-body',
       development: false,
-      remarkPlugins: [
-        remarkFrontmatter,
-        remarkMdxFrontmatter,
-        remarkGfm,
-        smartypants,
-        [remarkGithubImages, { site, slug }],
-      ],
+      remarkPlugins,
     })
   )
 

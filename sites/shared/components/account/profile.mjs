@@ -2,7 +2,7 @@
 import { useAccount } from 'shared/hooks/use-account.mjs'
 // Components
 import Link from 'next/link'
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import { HeartIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 
@@ -47,7 +47,7 @@ export const AccountProfile = ({ app }) => {
         <div className="avatar -mt-6 -ml-8 flex flex-row items-end"></div>
       </div>
       <div className="max-w-full truncate">
-        <Markdown>{account.bio}</Markdown>
+        <Mdx md={account.bio} />
       </div>
     </div>
   )

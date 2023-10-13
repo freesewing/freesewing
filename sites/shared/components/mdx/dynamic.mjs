@@ -47,3 +47,19 @@ export const DynamicMdx = ({ site = 'org', slug, language, title = 1 }) => {
     <Loading />
   )
 }
+
+export const Mdx = ({ md }) => {
+  const [mdx, setMdx] = useState(false)
+
+  useEffect(() => {
+    const loadMdx = async () => {
+      try {
+        const mdx = await compileMdx({ md })
+        setMdx(mdx)
+      } catch {}
+    }
+    loadMdx()
+  }, [md])
+
+  return mdx ? <MdxWrapper mdx={mdx} /> : <Loading />
+}

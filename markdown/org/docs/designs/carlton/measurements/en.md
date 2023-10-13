@@ -2,4 +2,4 @@
 title: "Carlton coat: Required Measurements"
 ---
 
-<PatternMeasurements pattern='carlton' />
+<DesignMeasurements design='carlton' />

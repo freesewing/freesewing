@@ -1,5 +1,5 @@
 import { Tab, Tabs } from '../tabs.mjs'
-import Md from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import { pluginFlip } from '@freesewing/plugin-flip'
 import { pluginGore } from '@freesewing/plugin-gore'
 import { Design } from '@freesewing/core'
@@ -61,7 +61,7 @@ const buildPattern = (children, settings = { margin: 5 }, tutorial = false, pape
 }
 
 // Handles display of pattern in mormal or xray mode
-const ShowPattern = ({ renderProps, logs, mode = 'normal' }) => {
+export const ShowPattern = ({ renderProps, logs, mode = 'normal' }) => {
   const { t } = useTranslation(ns)
   if (!renderProps) return null
 
@@ -145,7 +145,7 @@ export const TabbedExample = ({
       </Tabs>
       {caption && (
         <div className="text-center italic -mt-4">
-          <Md>{caption}</Md>
+          <Mdx md={caption} />
         </div>
       )}
     </div>

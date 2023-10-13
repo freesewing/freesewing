@@ -9,9 +9,12 @@ import { TabbedExample as Example } from './tabbed-example.mjs'
 import { HttpMethod, HttpStatusCode } from './http.mjs'
 import { ControlTip } from '../control/tip.mjs'
 import { DocsTitle, DocsLink } from './docs-helpers.mjs'
+import { Legend } from './legend.mjs'
 // Extra components
 import { DesignInfo } from 'shared/components/designs/info.mjs'
 import { collection } from 'site/hooks/use-design.mjs'
+import { DesignMeasurements } from './design-measurements.mjs'
+import { DesignOptions } from './design-options.mjs'
 
 export const components = (site = 'org', slug = []) => {
   const base = {
@@ -57,20 +60,25 @@ export const components = (site = 'org', slug = []) => {
   if (
     site === 'org' &&
     slug &&
-    slug.length === 2 &&
+    slug.length > 1 &&
     slug[0] === 'designs' &&
     collection.includes(slug[1])
-  )
-    specific.DesignInfo = DesignInfo
+  ) {
+    if (slug.length === 2) specific.DesignInfo = DesignInfo
+    if (slug.length === 3 && slug[2] === 'measurements')
+      specific.DesignMeasurements = DesignMeasurements
+    if (slug.length === 3 && slug[2] === 'options') specific.DesignOptions = DesignOptions
+  }
+
+  if (site === 'org' && Array.isArray(slug)) {
+    const url = slug.join('/')
+    if (url.indexOf('about/notation') !== -1 || url.indexOf('sewing/on-the-fold') !== -1)
+      specific.Legend = Legend
+  }
 
   return {
     ...base,
     ...extra,
     ...specific,
-    //PatternDocs: WipWithReadMore,
-    //PatternOptions: WipWithReadMore,
-    //PatternMeasurements: WipWithReadMore,
-    //Gauge: V3Wip,
-    //Legend,
   }
 }

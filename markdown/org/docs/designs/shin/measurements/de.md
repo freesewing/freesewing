@@ -2,4 +2,4 @@
 title: "Shin-Badehose: Erforderliche Maße"
 ---
 
-<PatternMeasurements pattern='shin' />
+<DesignMeasurements design='shin' />

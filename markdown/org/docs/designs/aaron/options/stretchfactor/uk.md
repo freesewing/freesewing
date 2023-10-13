@@ -10,6 +10,6 @@ title: "Еластичність"
 > 
 > Four-way stretch is not really a concern for this top, but if you want you can play with the [length bonus](../lengthbonus) option.
 
-## Вплив цієї опції на шаблон
 
-![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](aaron_stretchfactor_sample.svg "Вплив цієї опції на шаблон")
+
+

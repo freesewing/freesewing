@@ -81,7 +81,7 @@ A big driver for the decision to freeze the v2 branch and start working on v3 wa
 
 Design inheritance was already possible in v2, but because the configuration was handled on the design level, it required careful re-configuration of (required) measurements, options, part dependencies, and so on. It was possible but came with a lot of friction.
 
-In v3, all configuration is moved to the part level, and a design is now not much more than just a bunch of parts (JBOP). It is the parts themselves that configure what they need. This includes anything from the measurements they require, the options they provide, the plugins they use, their dependencies, and so on. This way, you can re-use parts from various designs, and all of their configuration, dependencies, plugins, and so on will follow.
+In v3, all configuration is moved to the part level, and a design is now not much more than just a bunch of parts (JBOP). It is the parts themselves that configure what they need. This includes anything from the measurements they require, the options they provide, the plugins they use, their dependencies, and so on. It is the parts themselves that configure what they need.
 
 For our own designs, I expect to see this new modularity result in the consolidation of common parts into a number of utility designs that are not intended as stand-alone patterns, but rather as providers of common features. As an example, plenty of designs need welt pockets, and today they each implement their own.  In the future, I expect a welt pocket will be something you can just grab as an *off-the-shelf* part so to speak.
 

@@ -2,10 +2,10 @@
 title: "Legacy armhole depth"
 ---
 
-This option allows you to use the legacy way of calculating the armhole depth in Brian.
+This option allows you to use the legacy way of calculating the armhole depth in Brian, which Carlton extends.
 
 The legacy (v2) way used the biceps circumference to estimate the armhole depth.
 
 The v3 way instead uses the waist to armpit measurement to locate the bottom of the armhole.
 
-If you enable this option, the Brian block will revert to the v2 way of calculating the armhole depth.
+If you enable this option, the Brian block will revert to the v2 way of calculating the armhole depth, and Carlton will follow.

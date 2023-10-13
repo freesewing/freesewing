@@ -2,4 +2,4 @@
 title: "Bent body Block: Required Measurements"
 ---
 
-<PatternMeasurements pattern='bent' />
+<DesignMeasurements design='bent' />

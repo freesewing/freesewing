@@ -10,7 +10,7 @@ import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { DocsLayout, ns as layoutNs } from 'site/components/layouts/docs.mjs'
 import { ns as designNs } from 'shared/components/designs/info.mjs'
 
-export const ns = nsMerge(pageNs, layoutNs, designNs)
+export const ns = nsMerge(pageNs, layoutNs, designNs, 'popout')
 
 /**
  * A page to display documentation markdown
@@ -73,14 +73,7 @@ export async function getStaticPaths() {
   //.filter((path) => path.split('/').length < 5)
 
   return {
-    paths: [
-      ...somePaths.map((key) => `/${key}`),
-      ...somePaths.map((key) => `/es/${key}`),
-      ...somePaths.map((key) => `/de/${key}`),
-      ...somePaths.map((key) => `/fr/${key}`),
-      ...somePaths.map((key) => `/nl/${key}`),
-      ...somePaths.map((key) => `/uk/${key}`),
-    ],
+    paths: somePaths.map((key) => `/${key}`),
     fallback: false,
   }
 }

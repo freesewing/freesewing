@@ -2,4 +2,4 @@
 title: "Gezichtsmasker Florence: Ontwerpopties"
 ---
 
-<PatternOptions pattern='florence' />
+<DesignOptions design='florence' />

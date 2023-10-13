@@ -14,6 +14,6 @@ Es wird empfohlen, diese Option zu aktivieren, wenn du die Optionen für dieses 
 
 </Note>
 
-## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bee_bellaguide_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+

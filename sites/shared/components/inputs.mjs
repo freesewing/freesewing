@@ -11,7 +11,7 @@ import { useTranslation } from 'next-i18next'
 import { useDropzone } from 'react-dropzone'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Components
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import { ResetIcon, DocsIcon, UploadIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { isDegreeMeasurement } from 'config/measurements.mjs'
@@ -442,7 +442,7 @@ export const MarkdownInput = ({
       </Tab>
       <Tab key="preview">
         <div className="flex flex-row items-center mt-4">
-          <Markdown>{current}</Markdown>
+          <Mdx md={current} />
         </div>
       </Tab>
     </Tabs>
@@ -463,7 +463,11 @@ export const MeasieInput = ({
   const units = imperial ? 'imperial' : 'metric'
 
   const [localVal, setLocalVal] = useState(
-    typeof original === 'undefined' ? original : measurementAsUnits(original, units)
+    typeof original === 'undefined'
+      ? original
+      : isDegree
+      ? Number(original)
+      : measurementAsUnits(original, units)
   )
   const [validatedVal, setValidatedVal] = useState(measurementAsUnits(original, units))
   const [valid, setValid] = useState(null)
@@ -471,7 +475,7 @@ export const MeasieInput = ({
   // Update onChange
   const localUpdate = (newVal) => {
     setLocalVal(newVal)
-    const parsedVal = parseDistanceInput(newVal, imperial)
+    const parsedVal = isDegree ? Number(newVal) : parseDistanceInput(newVal, imperial)
     if (parsedVal) {
       update(m, isDegree ? parsedVal : measurementAsMm(parsedVal, units))
       setValid(true)
@@ -503,7 +507,12 @@ export const MeasieInput = ({
    * See: https://github.com/facebook/react/issues/16554
    */
   return (
-    <FormControl label={t(m)} docs={docs} forId={id} labelBL={bottomLeftLabel}>
+    <FormControl
+      label={t(m) + (isDegree ? ' (°)' : '')}
+      docs={docs}
+      forId={id}
+      labelBL={bottomLeftLabel}
+    >
       <input
         id={id}
         type="number"

@@ -2,4 +2,4 @@
 title: "Ursula Unterhosen: Design Optionen"
 ---
 
-<PatternOptions pattern='ursula' />
+<DesignOptions design='ursula' />

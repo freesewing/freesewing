@@ -18,7 +18,8 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import rehypeSlug from 'rehype-slug'
 import rehypeJargon from 'pkgs/rehype-jargon/src/index.mjs'
 import rehypeHighlightLines from 'pkgs/rehype-highlight-lines/src/index.mjs'
-// FreeSewing custom jargon transform
+// FreeSewing jargon and jargon transform
+import { jargon as baseJargon } from 'shared/jargon/index.mjs'
 import { jargonTransform } from './rehype-jargon-transform.mjs'
 
 /*
@@ -28,7 +29,7 @@ export const compileMdx = async ({
   md, // A string holding the markdown
   site, // The site folder, one of 'org' or 'dev'
   slug, // The slug to the page below the folder (like 'guides/plugins')
-  jargon, // An object of jargon definitions. See rehype-jargon
+  jargon = {}, // An object of jargon definitions. See rehype-jargon
   fromGithub = false, // Set this to true when dynamically loading mdx from Github
 }) => {
   const mdx = String(
@@ -54,7 +55,13 @@ export const compileMdx = async ({
         remarkIntroAsFrontmatter,
       ],
       rehypePlugins: [
-        [rehypeJargon, { jargon, transform: jargonTransform }],
+        [
+          rehypeJargon,
+          {
+            jargon: { ...baseJargon, ...jargon },
+            transform: jargonTransform,
+          },
+        ],
         [
           rehypeHighlight,
           {
