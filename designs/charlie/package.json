@@ -50,8 +50,6 @@
   },
   "peerDependencies": {
     "@freesewing/core": "3.0.0",
-    "@freesewing/plugin-annotations": "3.0.0",
-    "@freesewing/plugin-mirror": "3.0.0",
     "@freesewing/titan": "3.0.0",
     "@freesewing/snapseries": "3.0.0"
   },
