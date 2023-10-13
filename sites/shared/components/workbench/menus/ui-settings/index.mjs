@@ -7,6 +7,7 @@ import { MenuItem } from '../shared/menu-item.mjs'
 import { DesktopIcon } from 'shared/components/icons.mjs'
 import { inputs } from './inputs.mjs'
 import { values } from './values.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const ns = ['ui-settings']
 
@@ -16,10 +17,20 @@ const UiSetting = ({ name, control, ...rest }) => (
     name={name}
     allowToggle={!['control', 'view'].includes(name) && control > 3}
     control={control}
+    docs={
+      <DynamicMdx
+        language={rest.language}
+        slug={
+          name === 'control'
+            ? 'docs/site/account/control'
+            : `docs/site/draft/ui-settings/${name.toLowerCase()}`
+        }
+      />
+    }
   />
 )
 
-export const UiSettings = ({ update, ui, control, language, DynamicDocs, view, setView }) => {
+export const UiSettings = ({ update, ui, control, language, view, setView }) => {
   const settingsConfig = loadSettingsConfig()
 
   return (
@@ -28,8 +39,6 @@ export const UiSettings = ({ update, ui, control, language, DynamicDocs, view, s
         config: settingsConfig,
         control,
         currentValues: ui,
-        DynamicDocs,
-        getDocsPath: (setting) => `site/draft/ui-settings${setting ? `/${setting}` : ''}`,
         Icon: DesktopIcon,
         inputs,
         Item: UiSetting,

@@ -2,4 +2,4 @@
 title: "Uma undies: Design Options"
 ---
 
-<PatternOptions pattern='uma' />
+<DesignOptions design='uma' />

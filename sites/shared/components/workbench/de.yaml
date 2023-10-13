@@ -59,12 +59,15 @@ help: Hilfe
 layoutSettings.d: Additional options to further optimize the printing layout of your pattern.
 layoutSettings.t: Layout settings
 length: Länge
+learnHowToUseEditor: Learn how to use FreeSewing's online pattern editor
 measies: Muster-Messungen
 measiesOk: Wir haben alle erforderlichen Maße, um dieses Muster zu erstellen.
 measurements.d: Teste die Auswirkungen einer Messung auf das Aussehen des Musters
 menu: Menü
 name: Name
 noDesignFound: Wir konnten dieses Design nicht finden. Das sollte nicht passieren, also würden wir uns freuen, wenn du es meldest.
+noInlineDocs: Documention is not included in this build
+noInlineDocsDesc: Please visit FreeSewing.org to access our documentation
 notes: Notizen
 pages: pages
 part: Musterteil

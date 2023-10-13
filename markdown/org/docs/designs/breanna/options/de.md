@@ -2,7 +2,7 @@
 title: "Breanna Körperblock: Design Optionen"
 ---
 
-<PatternOptions pattern='breanna' />
+<DesignOptions design='breanna' />
 
 ## Die Ärmel verstehen
 

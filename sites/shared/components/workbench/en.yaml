@@ -66,6 +66,8 @@ measurements.d: Test the effect of a measurement on the way this pattern looks
 menu: Menu
 name: Name
 noDesignFound: We could not find this design. This shouldn't happen, so we'd really appreciate you reporting it.
+noInlineDocs: Documention is not included in this build
+noInlineDocsDesc: Please visit FreeSewing.org to access our documentation
 notes: Notes
 pages: pages
 part: Pattern part

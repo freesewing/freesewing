@@ -40,10 +40,9 @@ import {
   BoolNoIcon,
 } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import Timeago from 'react-timeago'
 import { DisplayRow } from './shared.mjs'
-import { DynamicOrgDocs } from 'site/components/dynamic-org-docs.mjs'
 import {
   StringInput,
   PassiveImageInput,
@@ -54,6 +53,7 @@ import {
   ns as inputNs,
 } from 'shared/components/inputs.mjs'
 import { BookmarkButton } from 'shared/components/bookmarks.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const ns = [inputNs, 'account', 'patterns', 'status', 'measurements', 'sets']
 
@@ -192,16 +192,6 @@ export const Mset = ({ id, publicOnly = false }) => {
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
-  // FIXME: implement a solution for loading docs dynamically the is simple and work as expected
-  const docs = {}
-  for (const option of ['name', 'units', 'public', 'notes', 'image']) {
-    docs[option] = <DynamicOrgDocs language={i18n.language} path={`site/sets/${option}`} />
-  }
-  // FIXME: implement a solution for loading docs dynamically the is simple and work as expected
-  const measieDocs = {}
-  for (const m of measurements) {
-    measieDocs[m] = <DynamicOrgDocs language={i18n.language} path={`measurements/${m}`} />
-  }
 
   // Context
   const { setModal } = useContext(ModalContext)
@@ -293,6 +283,11 @@ export const Mset = ({ id, publicOnly = false }) => {
     } else setLoadingStatus([true, 'backendError', true, false])
   }
 
+  const docs = {}
+  for (const option of ['name', 'units', 'public', 'notes', 'image']) {
+    docs[option] = <DynamicMdx language={i18n.language} slug={`docs/site/sets/${option}`} />
+  }
+
   const heading = (
     <>
       <div className="flex flex-wrap md:flex-nowrap flex-row gap-2 w-full">
@@ -336,7 +331,7 @@ export const Mset = ({ id, publicOnly = false }) => {
           </button>
           {!publicOnly && (
             <>
-              {account.control > 3 && mset.public ? (
+              {account.control > 2 ? (
                 <button
                   onClick={() => {
                     setSuggest(!suggest)
@@ -418,7 +413,7 @@ export const Mset = ({ id, publicOnly = false }) => {
         </DisplayRow>
         {control >= controlLevels.sets.notes && (
           <DisplayRow title={t('notes')}>
-            <Markdown>{mset.notes}</Markdown>
+            <Mdx md={mset.notes} />
           </DisplayRow>
         )}
         {control >= controlLevels.sets.public && (
@@ -490,17 +485,6 @@ export const Mset = ({ id, publicOnly = false }) => {
           label={t('filterByDesign')}
           current={filter}
           firstOption={<option value="">{t('noFilter')}</option>}
-          docs={
-            <div className="max-w-prose">
-              <h2>
-                {t('measies')}: {t('filterByDesign')}
-              </h2>
-              <p>
-                If you have a specific design in mind, you can <b>filter by design</b> to only list
-                those measurements that are required for this design.
-              </p>
-            </div>
-          }
         />
       </div>
       {filterMeasurements().map((mplus) => {
@@ -511,12 +495,14 @@ export const Mset = ({ id, publicOnly = false }) => {
             id={`measie-${m}`}
             key={m}
             m={m}
-            docs={measieDocs[m]}
             imperial={mset.imperial}
             label={translated}
             current={mset.measies[m]}
             original={mset.measies[m]}
             update={updateMeasies}
+            docs={
+              <DynamicMdx language={i18n.language} slug={`docs/measurements/${m.toLowerCase()}`} />
+            }
           />
         )
       })}
@@ -531,9 +517,9 @@ export const Mset = ({ id, publicOnly = false }) => {
         update={setName}
         current={name}
         original={mset.name}
-        docs={docs.name}
         placeholder="Georg Cantor"
         valid={(val) => val && val.length > 0}
+        docs={docs.name}
       />
 
       {/* img: Control level determines whether or not to show this */}
@@ -544,8 +530,8 @@ export const Mset = ({ id, publicOnly = false }) => {
           label={t('image')}
           update={setImage}
           current={image}
-          docs={docs.image}
           valid={(val) => val.length > 0}
+          docs={docs.image}
         />
       ) : null}
 
@@ -556,7 +542,6 @@ export const Mset = ({ id, publicOnly = false }) => {
           id="set-public"
           label={t('public')}
           update={setIsPublic}
-          docs={docs.public}
           list={[
             {
               val: true,
@@ -583,6 +568,7 @@ export const Mset = ({ id, publicOnly = false }) => {
             },
           ]}
           current={isPublic}
+          docs={docs.public}
         />
       ) : null}
 
@@ -592,7 +578,6 @@ export const Mset = ({ id, publicOnly = false }) => {
         <ListInput
           id="set-units"
           label={t('units')}
-          docs={docs.units}
           update={setImperial}
           list={[
             {
@@ -617,6 +602,7 @@ export const Mset = ({ id, publicOnly = false }) => {
             },
           ]}
           current={imperial}
+          docs={docs.units}
         />
       ) : null}
 
@@ -627,9 +613,9 @@ export const Mset = ({ id, publicOnly = false }) => {
           id="set-notes"
           label={t('notes')}
           update={setNotes}
-          docs={docs.notes}
           current={notes}
           placeholder={t('mdSupport')}
+          docs={docs.notes}
         />
       ) : null}
       <button
@@ -1105,10 +1091,7 @@ const SuggestCset = ({ mset, backend, setLoadingStatus, t }) => {
         <BoolYesIcon />
         {t('account:notes')}
       </h4>
-      <p>
-        {t('account:csetNotesMsg')}
-        {t('account:csetNotesMsg')}
-      </p>
+      <p>{t('account:csetNotesMsg')}</p>
       <Popout tip compact>
         {t('account:mdSupport')}
       </Popout>

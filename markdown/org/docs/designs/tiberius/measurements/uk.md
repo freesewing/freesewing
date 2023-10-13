@@ -2,4 +2,4 @@
 title: "Туніка Тіберія: Необхідні мірки"
 ---
 
-<PatternMeasurements pattern='tiberius' />
+<DesignMeasurements design='tiberius' />

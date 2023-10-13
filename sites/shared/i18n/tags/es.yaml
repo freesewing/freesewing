@@ -4,6 +4,8 @@ showLineDrawings: Show line drawings
 showExamples: Show examples
 clearFilter: Clear filter
 difficulty: Dificultad
+learnMoreAboutThing: Learn more about {thing}
+newThingPattern: New {thing} pattern
 #Actual tags start here
 accessories: Accesorios
 bags: Bolsas

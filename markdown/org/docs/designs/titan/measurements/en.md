@@ -2,4 +2,4 @@
 title: "Titan trouser block: Required Measurements"
 ---
 
-<PatternMeasurements pattern='titan' />
+<DesignMeasurements design='titan' />

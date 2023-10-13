@@ -30,7 +30,6 @@ export const DraftMenu = ({
   update,
   language,
   account,
-  DynamicDocs,
   view,
   setView,
   flags = false,
@@ -44,7 +43,6 @@ export const DraftMenu = ({
     update,
     language,
     account,
-    DynamicDocs,
     control,
   }
   const uiSettingsConfig = loadUiSettingsConfig()
@@ -75,6 +73,7 @@ export const DraftMenu = ({
     items.push([
       <FlagsAccordionTitle flags={flags} key={1} />,
       <FlagsAccordionEntries {...{ update, control, flags }} key={2} />,
+      'flags',
     ])
   items.push(
     ...sections.map((section) => [
@@ -86,6 +85,7 @@ export const DraftMenu = ({
         <p className="text-left">{t(`${section.ns}:${section.name}.d`)}</p>
       </>,
       section.menu,
+      section.name,
     ])
   )
 

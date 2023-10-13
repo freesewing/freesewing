@@ -63,10 +63,10 @@
     "lodash.clonedeep": "^4.5.0"
   },
   "devDependencies": {
-    "eslint": "8.48.0",
+    "eslint": "8.51.0",
     "nyc": "15.1.0",
     "mocha": "10.2.0",
-    "chai": "4.3.9",
+    "chai": "4.3.10",
     "sinon": "^15.0.1"
   },
   "files": [

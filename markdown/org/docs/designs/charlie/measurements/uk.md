@@ -2,4 +2,4 @@
 title: "Чарлі чінос: Необхідні виміри"
 ---
 
-<PatternMeasurements pattern='charlie' />
+<DesignMeasurements design='charlie' />

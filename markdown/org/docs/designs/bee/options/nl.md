@@ -2,4 +2,4 @@
 title: "Bikinitopje bijen: Ontwerpopties"
 ---
 
-<PatternOptions pattern='bee' />
+<DesignOptions design='bee' />

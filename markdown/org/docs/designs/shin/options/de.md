@@ -2,4 +2,4 @@
 title: "Shin-Badehose: Design Optionen"
 ---
 
-<PatternOptions pattern='shin' />
+<DesignOptions design='shin' />

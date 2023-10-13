@@ -49,7 +49,6 @@ const iconButtonClass = 'btn btn-xs btn-ghost px-0 text-accent'
  * @param  {Function}  options.t          the translation function
  * @param  {Object}  options.passProps  props to pass to the Input component
  * @param  {Boolean}  changed            has the value changed from default?
- * @param  {Function}  loadDocs           a function to load documentation for the item into a modal
  * @param  {React.Component}  Input              the input component this menu item will use
  * @param  {React.Component}  Value              a value display component this menu item will use
  * @param  {Boolean} allowOverride      all a text input to be used to override the given input component
@@ -63,15 +62,10 @@ export const MenuItem = ({
   t,
   passProps = {},
   changed,
-  //loadDocs,
   Input = () => {},
-  //Value = () => {},
   allowOverride = false,
-  //allowToggle = false,
   control = Infinity,
-  DynamicDocs,
-  docsPath,
-  language,
+  docs,
   design,
 }) => {
   // state for knowing whether the override input should be shown
@@ -134,7 +128,6 @@ export const MenuItem = ({
   return (
     <FormControl
       label={<span className="text-base font-normal">{t([`${name}.d`, name])}</span>}
-      docs={<DynamicDocs path={docsPath} language={language} />}
       id={config.name}
       labelBR={<div className="flex flex-row items-center gap-2">{buttons}</div>}
       labelBL={
@@ -144,6 +137,7 @@ export const MenuItem = ({
           {t(`workbench:youUse${changed ? 'Default' : 'Custom'}Value`)}
         </span>
       }
+      docs={docs}
     >
       <Input {...drillProps} />
     </FormControl>
@@ -163,13 +157,11 @@ export const MenuItem = ({
  * @param  {React.Component}  Item         the component to use for menu items
  * @param  {Object}  values                a map of Value display components to be used by menu items in the group
  * @param  {Object}  inputs                a map of Input components to be used by menu items in the group
- * @param  {Function}  loadDocs            a function to load item documentation into a modal
  * @param  {Object}  passProps             properties to pass to Inputs within menu items
  * @param  {Object}  emojis                a map of emojis to use as icons for groups or items
  * @param  {Function}  updateFunc          the function called by change handlers on inputs within menu items
  * @param  {Boolean}  topLevel             is this group the top level group? false for nested
  * @param  {Function}  t                   translation function
- * @param  {Function}  getDocsPath         returns the path to the docs for the current item
  */
 export const MenuItemGroup = ({
   collapsible = true,
@@ -181,16 +173,14 @@ export const MenuItemGroup = ({
   Item = MenuItem,
   values = {},
   inputs = {},
-  loadDocs,
   passProps = {},
   emojis = {},
   updateFunc,
   topLevel = false,
   t,
-  DynamicDocs,
   language,
-  getDocsPath,
   isDesignOptionsGroup = false,
+  docs = false,
   design,
 }) => {
   // map the entries in the structure
@@ -251,14 +241,11 @@ export const MenuItemGroup = ({
             Item,
             values,
             inputs,
-            loadDocs,
             passProps,
             emojis,
             updateFunc,
             t,
-            DynamicDocs,
             language,
-            getDocsPath,
             isDesignOptionsGroup,
             design,
           }}
@@ -275,16 +262,15 @@ export const MenuItemGroup = ({
             Value: values[itemName],
             Input: inputs[itemName],
             t,
-            loadDocs,
             updateFunc,
             passProps,
-            DynamicDocs,
-            docsPath: getDocsPath(itemName),
             language,
+            docs,
             design,
           }}
         />
       ),
+      itemName,
     ]
   })
 

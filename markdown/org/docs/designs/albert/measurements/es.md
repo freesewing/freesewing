@@ -2,4 +2,4 @@
 title: "Delantal Albert: Medidas requeridas"
 ---
 
-<PatternMeasurements pattern='albert' />
+<DesignMeasurements design='albert' />

@@ -2,4 +2,4 @@
 title: "Breanna lichaam blok: Vereiste afmetingen"
 ---
 
-<PatternMeasurements pattern='breanna' />
+<DesignMeasurements design='breanna' />

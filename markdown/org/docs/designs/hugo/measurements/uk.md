@@ -2,4 +2,4 @@
 title: "Худі Hugo: Необхідні виміри"
 ---
 
-<PatternMeasurements pattern='hugo' />
+<DesignMeasurements design='hugo' />

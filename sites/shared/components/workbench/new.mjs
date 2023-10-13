@@ -69,7 +69,7 @@ const draftViews = ['draft', 'inspect']
 
 const kioskClasses = 'z-30 w-screen h-screen fixed top-0 left-0 bg-base-100'
 
-export const Workbench = ({ design, Design, DynamicDocs, saveAs = false, preload = false }) => {
+export const Workbench = ({ design, Design, saveAs = false, preload = false }) => {
   // Hooks
   const { t, i18n } = useTranslation([...ns, design])
   const { language } = i18n
@@ -167,7 +167,7 @@ export const Workbench = ({ design, Design, DynamicDocs, saveAs = false, preload
   if (error)
     return (
       <>
-        <WorkbenchHeader {...{ view, setView, update }} />
+        <WorkbenchHeader {...{ view, setView, update }} control={account.control} />
         {error}
         <MobileMenubar />
       </>
@@ -184,7 +184,6 @@ export const Workbench = ({ design, Design, DynamicDocs, saveAs = false, preload
     setSettings,
     ui,
     language,
-    DynamicDocs,
     Design,
     saveAs,
   }
@@ -241,7 +240,7 @@ export const Workbench = ({ design, Design, DynamicDocs, saveAs = false, preload
     <>
       {!ui.kiosk && <Header />}
       <div className={`flex flex-row min-h-screen ${ui.kiosk ? kioskClasses : ''}`}>
-        <WorkbenchHeader {...{ view, setView, update, saveAs }} />
+        <WorkbenchHeader {...{ view, setView, update, saveAs }} control={account.control} />
         <div className="grow">{viewContent}</div>
         <MobileMenubar />
       </div>

@@ -3,45 +3,35 @@ import { nsMerge } from 'shared/utils.mjs'
 import { pages } from 'site/prebuild/docs.en.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-// Hooks
-import { useCallback } from 'react'
-import { useDynamicMdx } from 'shared/hooks/use-dynamic-mdx.mjs'
+import { loadMdxAsStaticProps } from 'shared/mdx/load.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { MdxWrapper } from 'shared/components/wrappers/mdx.mjs'
 import { DocsLayout, ns as layoutNs } from 'site/components/layouts/docs.mjs'
-import { loaders } from 'shared/components/dynamic-docs/org.mjs'
+import { ns as designNs } from 'shared/components/designs/info.mjs'
 
-export const ns = nsMerge(pageNs, layoutNs, 'designs', 'account', 'tags')
+export const ns = nsMerge(pageNs, layoutNs, designNs, 'popout')
 
 /**
- * a page to display documentation markdown
+ * A page to display documentation markdown
  * Each page MUST be wrapped in the PageWrapper component.
  * You also MUST spread props.page into this wrapper component
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-export const Page = ({ page, locale, frontmatter, MDX }) => (
+const Page = ({ page, locale, frontmatter, mdx, mdxSlug }) => (
   <PageWrapper
     {...page}
     locale={locale}
     title={frontmatter.title}
+    intro={frontmatter.intro || frontmatter.lead}
     layout={(props) => <DocsLayout {...props} {...{ slug: page.path.join('/'), frontmatter }} />}
   >
-    <MdxWrapper>{MDX}</MdxWrapper>
+    <MdxWrapper mdx={mdx} site="org" slug={mdxSlug} />
   </PageWrapper>
 )
 
-const DocsPage = ({ page, locale, slug }) => {
-  // get the appropriate loader for the locale, and load the mdx for this page
-  const loader = useCallback(() => loaders[locale](slug), [locale, slug])
-  // State
-  const { frontmatter, MDX } = useDynamicMdx(loader)
-
-  return <Page {...{ page, slug, frontmatter, MDX, locale }} />
-}
-
-export default DocsPage
+export default Page
 
 /*
  * getStaticProps() is used to fetch data at build-time.
@@ -51,7 +41,13 @@ export async function getStaticProps({ locale, params }) {
   return {
     props: {
       ...(await serverSideTranslations('en', ns)),
+      ...(await loadMdxAsStaticProps({
+        language: locale,
+        site: 'org',
+        slug: `docs/${params.slug.join('/')}`,
+      })),
       slug: params.slug.join('/'),
+      mdxSlug: params.slug,
       locale,
       page: {
         locale,
@@ -77,14 +73,7 @@ export async function getStaticPaths() {
   //.filter((path) => path.split('/').length < 5)
 
   return {
-    paths: [
-      ...somePaths.map((key) => `/${key}`),
-      ...somePaths.map((key) => `/es/${key}`),
-      ...somePaths.map((key) => `/de/${key}`),
-      ...somePaths.map((key) => `/fr/${key}`),
-      ...somePaths.map((key) => `/nl/${key}`),
-      ...somePaths.map((key) => `/uk/${key}`),
-    ],
+    paths: somePaths.map((key) => `/${key}`),
     fallback: false,
   }
 }
