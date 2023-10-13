@@ -28,11 +28,10 @@
   },
   "peerDependencies": {},
   "dependencies": {
-    "@aws-sdk/client-sesv2": "3.405.0",
-    "@prisma/client": "5.4.1",
+    "@aws-sdk/client-sesv2": "3.428.0",
+    "@prisma/client": "5.4.2",
     "bcryptjs": "2.4.3",
     "cors": "2.8.5",
-    "crypto": "1.0.1",
     "dotenv": "16.3.1",
     "express": "4.18.2",
     "js-yaml": "4.1.0",
@@ -48,13 +47,13 @@
     "swagger-ui-express": "5.0.0"
   },
   "devDependencies": {
-    "chai": "4.3.9",
+    "chai": "4.3.10",
     "chai-http": "4.4.0",
     "esbuild": "0.19.4",
     "mocha": "10.2.0",
     "mocha-steps": "1.3.0",
     "nodemon": "3.0.1",
-    "prisma": "5.4.1"
+    "prisma": "5.4.2"
   },
   "engines": {
     "node": "18",

@@ -53,13 +53,12 @@
     "@freesewing/brian": "3.0.0",
     "@freesewing/bent": "3.0.0",
     "@freesewing/carlton": "3.0.0",
-    "@freesewing/plugin-bust": "3.0.0",
-    "@freesewing/plugin-mirror": "3.0.0"
+    "@freesewing/plugin-bust": "3.0.0"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.2.0",
-    "chai": "4.3.9",
+    "chai": "4.3.10",
     "@freesewing/models": "3.0.0",
     "@freesewing/plugin-timing": "3.0.0"
   },

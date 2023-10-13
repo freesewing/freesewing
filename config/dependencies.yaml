@@ -23,14 +23,12 @@ bee:
 bent:
   peer:
     '@freesewing/brian': *freesewing
-    '@freesewing/plugin-mirror': *freesewing
     '@freesewing/plugin-bust': *freesewing
 breanna:
   peer:
     '@freesewing/brian': *freesewing
 brian:
   peer:
-    '@freesewing/plugin-mirror': *freesewing
     '@freesewing/plugin-bust': *freesewing
 carlita:
   peer:
@@ -38,17 +36,13 @@ carlita:
     '@freesewing/bent': *freesewing
     '@freesewing/carlton': *freesewing
     '@freesewing/plugin-bust': *freesewing
-    '@freesewing/plugin-mirror': *freesewing
 carlton:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/bent': *freesewing
-    '@freesewing/plugin-mirror': *freesewing
     '@freesewing/plugin-bust': *freesewing
 charlie:
   peer:
-    '@freesewing/plugin-annotations': *freesewing
-    '@freesewing/plugin-mirror': *freesewing
     '@freesewing/titan': *freesewing
     '@freesewing/snapseries': *freesewing
 core:
@@ -66,14 +60,14 @@ core:
     'nyc': '15.1.0'
     'mocha': *mocha
     'chai': *chai
-    'sinon': &sinon '^15.0.1'
+    'chai-string': '1.5.0'
+    'sinon': &sinon '^16.1.0'
 diana:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/plugin-bust': *freesewing
 examples:
   peer:
-    '@freesewing/plugin-mirror': *freesewing
     '@freesewing/plugin-gore': *freesewing
 holmes:
   _:
@@ -88,20 +82,15 @@ hugo:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/plugin-bust': *freesewing
-i18n:
-  dev:
-    'js-yaml': &jsyaml '4.1.0'
-    'recursive-readdir': '^2.2.3'
 jaeger:
   peer:
     '@freesewing/brian': *freesewing
     '@freesewing/bent': *freesewing
     '@freesewing/plugin-bust': *freesewing
-    '@freesewing/plugin-mirror': *freesewing
 new-design:
   _:
     'axios': &axios '1.5.1'
-    'chalk': '5.0.1'
+    'chalk': '5.3.0'
     'execa': '8.0.1'
     'mustache': &mustache '4.2.0'
     'ora': &ora '7.0.1'
@@ -135,7 +124,7 @@ plugintest:
     '@freesewing/plugin-theme': *freesewing
 react-components:
   _:
-    html-react-parser: "^4.0.0"
+    html-react-parser: "^4.2.2"
   peer:
     react: '>=14'
 rehype-jargon:
@@ -192,14 +181,13 @@ yuri:
 
 backend:
   _:
-    '@aws-sdk/client-sesv2': '3.405.0'
-    '@prisma/client': &prisma '5.4.1'
+    '@aws-sdk/client-sesv2': '3.428.0'
+    '@prisma/client': &prisma '5.4.2'
     'bcryptjs': '2.4.3'
     'cors': '2.8.5'
-    'crypto': '1.0.1'
     'dotenv': '16.3.1'
     'express': '4.18.2'
-    'js-yaml': *jsyaml
+    'js-yaml': &jsyaml '4.1.0'
     'lodash.get': *_get
     'mustache': *mustache
     'otplib': '12.0.1'
@@ -221,8 +209,7 @@ backend:
 
 dev:
   _:
-    '@mdx-js/loader': &mdx '2.3.0'
-    '@mdx-js/mdx': *mdx
+    '@mdx-js/mdx': &mdx '^2.3.0'
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': &mdxRuntime '2.0.0-next.9'
     '@next/bundle-analyzer': &next '13.5.4'
@@ -248,10 +235,9 @@ dev:
     'rehype-stringify': &rehypeStringify '10.0.0'
     # see: https://github.com/npm/cli/issues/2610#issuecomment-1295371753
     'remark-copy-linked-files': &remarkCopyLinkedFiles 'git+https://git@github.com/joostdecock/remark-copy-linked-files'
-    'remark-gfm': &remarkGfm '3.0.1'
+    'remark-gfm': &remarkGfm '4.0.0'
   dev: &nextSiteDevDependencies
     'autoprefixer': &autoprefixer '10.4.16'
-    'eslint-config-next': *next
     'js-yaml': &jsYaml '4.1.0'
     'postcss': &postcss '8.4.31'
     'remark-extract-frontmatter': '3.2.0'
@@ -261,8 +247,6 @@ dev:
 
 lab:
   _:
-    '@headlessui/react': &headlessUiReact '1.7.17'
-    '@mdx-js/loader': *mdx
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': *mdxRuntime
@@ -301,7 +285,6 @@ org:
   _:
     '@bugsnag/js': &bugsnag 7.20.2
     '@bugsnag/plugin-react': 7.19.0
-    '@mdx-js/loader': *mdx
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': *mdxRuntime
@@ -338,7 +321,6 @@ org:
 
 shared:
   _:
-    '@headlessui/react': *headlessUiReact
     '@next/mdx': '13.5.4'
     '@resvg/resvg-js': '2.4.1'
     '@tailwindcss/typography': *tailwindTypography
@@ -370,7 +352,7 @@ shared:
     'react-zoom-pan-pinch': &zoompanpinch '3.1.0'
     'rehype-autolink-headings': *rehypeAutolinkHeadings
     'rehype-highlight': *rehypeHighlight
-    'remark-frontmatter': &remarkfrontmatter '4.0.1'
+    'remark-frontmatter': &remarkfrontmatter '5.0.0'
     'remark-mdx-frontmatter': *mdxfrontmatter
     "remark-smartypants": &smartypants "2.0.0"
     'sharp': '0.32.6'
@@ -400,8 +382,6 @@ sde:
     "@freesewing/plugin-i18n": *freesewing
     "@freesewing/snapseries": *freesewing
     "@freesewing/react-components": *freesewing
-    '@headlessui/react': *headlessUiReact
-    '@mdx-js/loader': *mdx
     '@mdx-js/mdx': *mdx
     '@mdx-js/react': *mdx
     '@mdx-js/runtime': *mdxRuntime
