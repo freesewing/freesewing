@@ -45,7 +45,6 @@
   },
   "peerDependencies": {
     "@freesewing/core": "3.0.0",
-    "@freesewing/plugin-mirror": "3.0.0",
     "@freesewing/plugin-gore": "3.0.0"
   },
   "dependencies": {},
