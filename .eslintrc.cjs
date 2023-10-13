@@ -61,6 +61,16 @@ module.exports = {
       },
     },
     {
+      files: frontendFiles,
+      excludedFiles: nodeFiles,
+      extends: ['next'],
+      settings: {
+        next: {
+          rootDir: 'sites/dev/',
+        },
+      },
+    },
+    {
       files: [`**/*.${jsSuffixes}{,.mustache}`],
       excludedFiles: [].concat(mongoFiles, nodeFiles, frontendFiles),
       env: {

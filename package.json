@@ -97,7 +97,11 @@
   ],
   "version": "0.0.0",
   "dependencies": {
+    "@babel/eslint-parser": "^7.22.15",
+    "@babel/plugin-syntax-import-assertions": "^7.22.5",
+    "@babel/preset-react": "^7.22.15",
     "c8": "^8.0.0",
+    "eslint-config-next": "^13.5.4",
     "glob": "^10.3.10",
     "yarn": "^1.22.19"
   },
