@@ -75,7 +75,7 @@
     "react-timeago": "7.2.0",
     "react-zoom-pan-pinch": "3.1.0",
     "remark-gfm": "4.0.0",
-    "remark-frontmatter": "4.0.1",
+    "remark-frontmatter": "5.0.0",
     "remark-mdx-frontmatter": "3.0.0",
     "remark-smartypants": "2.0.0",
     "slugify": "^1.6.6",
