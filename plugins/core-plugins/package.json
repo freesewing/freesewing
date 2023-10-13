@@ -54,7 +54,7 @@
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.2.0",
-    "chai": "4.3.9",
+    "chai": "4.3.10",
     "@freesewing/plugin-annotations": "3.0.0",
     "@freesewing/plugin-mirror": "3.0.0",
     "@freesewing/plugin-round": "3.0.0",
