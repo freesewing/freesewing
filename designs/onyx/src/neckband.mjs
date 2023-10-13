@@ -23,7 +23,7 @@ function draftNeckband({
   const neckbandLength =
     (store.get('neckLengthFront') + store.get('neckLengthBack') + store.get('neckLengthSide')) *
     options.neckbandLength
-  const neckbandWidth = store.get('neckbandWidth')
+  const neckbandWidth = 2 * (options.neckbandWidth * measurements.neck)
 
   points.topLeftCorner = new Point(0, 0)
   points.bottomLeftCorner = new Point(0, neckbandWidth)
@@ -97,6 +97,24 @@ export const neckband = {
   plugins: [],
   draft: draftNeckband,
   after: [front, back, raglanSleeve],
-  measurements: ['neck', 'chest', 'biceps', 'wrist'],
-  options: {},
+  measurements: ['neck'],
+  options: {
+    // How long the neckband should be, as a percentage of the length of the neck hole.
+    //    neckbandLength: { pct: 80, min: 50, max: 100, menu: 'fit' },
+    neckbandLength: {
+      pct: 80,
+      min: 50,
+      max: 100,
+      menu: ({ options }) =>
+        options.neckStyle == 'neckband' || options.neckStyle == undefined ? 'fit' : false,
+    },
+    // How wide the neckband should be, as a percentage of the neckband length.
+    neckbandWidth: {
+      pct: 7.5,
+      min: 0,
+      max: 20,
+      menu: ({ options }) =>
+        options.neckStyle == 'neckband' || options.neckStyle == undefined ? 'fit' : false,
+    },
+  },
 }

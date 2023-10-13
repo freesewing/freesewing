@@ -1,8 +1,8 @@
-//
-
+// Import Design constructor
 import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
-// Parts
+import { i18n } from '../i18n/index.mjs'
+// Import Parts
 import { front } from './front.mjs'
 import { back } from './back.mjs'
 import { raglanSleeve } from './raglansleeve.mjs'
@@ -19,4 +19,15 @@ const Onyx = new Design({
 })
 
 // Named exports
-export { front, back, raglanSleeve, neckband, zipperGuard, crotchGusset, hood, hoodFront, Onyx }
+export {
+  front,
+  back,
+  raglanSleeve,
+  neckband,
+  zipperGuard,
+  crotchGusset,
+  hood,
+  hoodFront,
+  Onyx,
+  i18n,
+}

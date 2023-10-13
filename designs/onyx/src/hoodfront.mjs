@@ -41,7 +41,6 @@ function draftHoodFront({
 
   // The actual width of the piece, which must be set such that the length along the bottom equals 'neckLength,' imported from hood.mjs.
   let pieceWidth = neckLength
-  console.log(pieceWidth)
   for (let i = 0; i < 10; i++) {
     points.backTop = new Point(points.hoodFrontPieceBackTop.x, 0)
     points.frontTop = points.backTop.translate(-pieceWidth, 0)
@@ -66,9 +65,6 @@ function draftHoodFront({
         .curve(points.frontBottomCp2, points.backBottomCp1, points.backBottom)
         .length()
     pieceWidth *= lengthMultiplier
-    console.log(i)
-    console.log(lengthMultiplier)
-    console.log(pieceWidth)
 
     if (Math.abs(lengthMultiplier - 1) < 0.00001) break
   }

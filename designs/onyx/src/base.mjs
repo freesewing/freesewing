@@ -36,8 +36,6 @@ function draftBase({
   store.set('zipperGuardWidth', zipperGuardWidth)
   const neckGuardLength = verticalTrunk * options.neckGuardLength
   store.set('neckGuardLength', neckGuardLength)
-  const neckbandWidth = 2 * (options.neckbandWidth * measurements.neck)
-  store.set('neckbandWidth', neckbandWidth)
 
   const legLength = options.legLength * measurements.inseam
   const totalLength = hpsToUpperLeg + legLength
@@ -272,8 +270,8 @@ function draftBase({
 
     if (sa) {
       paths.sa = new Path()
-        .move(points.inseamHem.shift(270, sa * options.hemWidth * 100))
-        .join(paths.hemBase.offset(sa * options.hemWidth * 100))
+        .move(points.inseamHem.shift(270, sa * options.legHem * 100))
+        .join(paths.hemBase.offset(sa * options.legHem * 100))
         .join(paths.saBase.offset(sa))
         .attr('class', 'fabric sa')
       if (options.frontOnFold) {
@@ -281,7 +279,7 @@ function draftBase({
         paths.sa2 = new Path()
           .move(points.cfCrotch)
           .join(paths.inseamBase.offset(sa))
-          .line(points.inseamHem.shift(270, sa * options.hemWidth * 100))
+          .line(points.inseamHem.shift(270, sa * options.legHem * 100))
           .attr('class', 'fabric sa')
       } else paths.sa.close()
     }
@@ -339,7 +337,7 @@ export const base = {
     raglanScoopMagnitude: { pct: 6, min: 0, max: 20, menu: 'advanced' },
     // How steep and deep the scoops on the crotch gusset are, in degrees. Larger values give more room. Zero forms a straight angle on the gusset and two right angles on the front pieces. Positive values shrink the angle on the gusset by twice the value and grow the angle on the front pieces by the value.
     // Width of the hem around the hips, as a multiple of the seam allowance.
-    hemWidth: { pct: 2, min: 0, max: 8, menu: 'construction' },
+    legHem: { pct: 2, min: 0, max: 8, menu: 'construction' },
     // How wide the scoop to each side of the crotch sweeps (excluding the gusset, as a % of the verticalTrunk.
     crotchScoopWidth: { pct: 1.5, min: 1, max: 5, menu: 'advanced' },
     crotchScoopLength: { pct: 4, min: 3, max: 15, menu: 'advanced' },
@@ -349,10 +347,6 @@ export const base = {
     legTaperPosition: { pct: 50, min: 0, max: 100, menu: 'advanced' },
     frontOnFold: { bool: false, menu: 'construction' },
     backOnFold: { bool: true, menu: 'construction' },
-    // How long the neckband should be, as a percentage of the length of the neck hole.
-    neckbandLength: { pct: 80, min: 50, max: 100, menu: 'fit' },
-    // How wide the neckband should be, as a percentage of the neckband length.
-    neckbandWidth: { pct: 7.5, min: 0, max: 50, menu: 'fit' },
     // How long the zipper will be, as a % of the verticalTrunk. Longer zippers will make the garment easier to don and doff, but zippers do not stretch. Leotards and wide-necked stretch clothes can do with no zipper at all. Swimwear should have a zipper length no more than 20% since zippers do not stretch. Onesie pajamas can have much longer zippers (40%-50%).
     zipperLength: { pct: 20, min: 0, max: 50, menu: 'construction' },
     // How wide to make the section of fabric keeping the zipper away from the wearer's skin. Optional on onesie pajamas. Crucial on swimwear.

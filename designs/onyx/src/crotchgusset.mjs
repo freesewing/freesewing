@@ -25,17 +25,32 @@ function draftCrotchGusset({
   points.bottomRightCorner = new Point(crotchGussetLength / 2, crotchGussetWidth)
   points.topRightCorner = new Point(crotchGussetLength / 2, 0)
 
-  paths.saBase = new Path()
+  paths.saBase1 = new Path()
     .move(points.bottomLeftCorner)
     .line(points.bottomRightCorner)
+    .attr('class', 'fabric')
+    .hide(true)
+
+  paths.hemBase = new Path()
+    .move(points.bottomRightCorner)
     .line(points.topRightCorner)
+    .attr('class', 'fabric')
+    .hide(true)
+
+  paths.saBase2 = new Path()
+    .move(points.topRightCorner)
     .line(points.topLeftCorner)
     .attr('class', 'fabric')
     .hide(true)
 
   paths.foldBase = new Path().move(points.topLeftCorner).line(points.bottomLeftCorner).hide(true)
 
-  paths.seam = paths.saBase.join(paths.foldBase).close().attr('class', 'fabric')
+  paths.seam = paths.saBase1
+    .join(paths.hemBase)
+    .join(paths.saBase2)
+    .join(paths.foldBase)
+    .close()
+    .attr('class', 'fabric')
 
   if (paperless) {
     macro('vd', {
@@ -69,7 +84,9 @@ function draftCrotchGusset({
     if (sa) {
       paths.sa = new Path()
         .move(points.bottomLeftCorner)
-        .join(paths.saBase.offset(sa))
+        .join(paths.saBase1.offset(sa))
+        .join(paths.hemBase.offset(sa * options.legHem * 100))
+        .join(paths.saBase2.offset(sa))
         .line(points.topLeftCorner)
         .attr('class', 'fabric sa')
     }

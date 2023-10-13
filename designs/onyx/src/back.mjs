@@ -168,8 +168,8 @@ function draftBack({
 
     if (sa) {
       paths.sa = new Path()
-        .move(points.inseamHem.shift(270, sa * options.hemWidth * 100))
-        .join(paths.hemBase.offset(sa * options.hemWidth * 100))
+        .move(points.inseamHem.shift(270, sa * options.legHem * 100))
+        .join(paths.hemBase.offset(sa * options.legHem * 100))
         .join(paths.saBase.offset(sa))
         .attr('class', 'fabric sa')
       if (options.backOnFold) {
@@ -177,7 +177,7 @@ function draftBack({
         paths.sa2 = new Path()
           .move(points.cfCrotch)
           .join(paths.inseamBase.offset(sa))
-          .line(points.inseamHem.shift(270, sa * options.hemWidth * 100))
+          .line(points.inseamHem.shift(270, sa * options.legHem * 100))
           .attr('class', 'fabric sa')
       } else paths.sa.close()
     }
