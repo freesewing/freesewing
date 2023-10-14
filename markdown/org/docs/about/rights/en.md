@@ -20,7 +20,7 @@ EU citizen or not, as a FreeSewing user you have the following rights:
 You have the right to be informed about the collection and use of your personal data.
 
 <Tip>
-Read [our privacy notice](/docs/various/privacy/) to inform yourself about the collection and use of your personal data.
+Read [our privacy notice](/docs/about/privacy/) to inform yourself about the collection and use of your personal data.
 </Tip>
 
 ## The right of access

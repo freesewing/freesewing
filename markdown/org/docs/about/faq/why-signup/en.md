@@ -23,6 +23,6 @@ creating an account. As such, the following links may also be relevant:
 
 </Note>
 
-[1]: /docs/various/privacy/
+[1]: /docs/about/privacy/
 
-[2]: /docs/various/rights/
+[2]: /docs/about/rights/

@@ -5,7 +5,7 @@ title: Motivation
 <Note>
 
 This is a personal note by Joost De Cock -- the FreeSewing maintainer -- about
-his motivations for [the FreeSewing revenue pledge](/docs/various/pledge/)
+his motivations for [the FreeSewing revenue pledge](/docs/about/pledge/)
 
 </Note>
 
@@ -73,4 +73,4 @@ It is also one of the few organisations that has the global reach to go and help
 
 I hope that this explains the choice of Médecins Sans Frontières/Doctors Without Borders as FreeSewing's charity of choice. And I hope you will join us in making the world a little bit better.
 
-So I am happy to make [this pledge](/docs/various/pledge/).
+So I am happy to make [this pledge](/docs/about/pledge/).
