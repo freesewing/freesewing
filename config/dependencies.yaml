@@ -4,7 +4,7 @@ _types:
       '@freesewing/core': &freesewing '{{version}}'
     dev:
       'mocha': &mocha '10.2.0'
-      'chai': &chai '4.3.9'
+      'chai': &chai '4.3.10'
       '@freesewing/models': *freesewing
       '@freesewing/plugin-timing': *freesewing
   plugin:
@@ -352,7 +352,7 @@ shared:
     'react-zoom-pan-pinch': &zoompanpinch '3.1.0'
     'rehype-autolink-headings': *rehypeAutolinkHeadings
     'rehype-highlight': *rehypeHighlight
-    'remark-frontmatter': &remarkfrontmatter '5.0.0'
+    'remark-frontmatter': &remarkfrontmatter '4.0.1'
     'remark-mdx-frontmatter': *mdxfrontmatter
     "remark-smartypants": &smartypants "2.0.0"
     'sharp': '0.32.6'
