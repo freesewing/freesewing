@@ -8,6 +8,7 @@ function draftZipperGuard({
   points,
   measurements,
   options,
+  absoluteOptions,
   part,
   store,
   paperless,
@@ -17,9 +18,10 @@ function draftZipperGuard({
   snippets,
   Snippet,
 }) {
-  const zipperLength = store.get('zipperLength')
-  const zipperGuardWidth = store.get('zipperGuardWidth')
-  const neckGuardLength = store.get('neckGuardLength')
+  const verticalTrunk = store.get('verticalTrunk')
+  const zipperLength = verticalTrunk * options.zipperLength
+  const zipperGuardWidth = absoluteOptions.zipperGuardWidth
+  const neckGuardLength = verticalTrunk * options.neckGuardLength
 
   // How much extra material to put at the bottom of the zipper guard, to cover the parts below the zipper stop.
   const zipperGuardBottomMaterial = 0.75
@@ -94,10 +96,15 @@ export const zipperGuard = {
   draft: draftZipperGuard,
   after: [front, neckband],
   options: {
-    /*
-    // How long the neckband should be, as a percentage of the length of the neck hole.
-    neckbandLength: { pct: 80, min: 50, max: 100, menu: 'fit' },
-    // How wide the neckband should be, as a percentage of the neckband length.
-    neckbandWidth: { pct: 7.5, min: 0, max: 50, menu: 'fit' },*/
+    zipperGuardWidth: {
+      pct: 40,
+      min: 0,
+      max: 100,
+      snap: { metric: 5, imperial: 6.35 },
+      toAbs: (pct) => pct * 100, // Valid range is from 0 to 100mm.
+      menu: 'construction',
+    },
+    // How far to have the zipper guard extend past the neckline so it can be wrapped around the zipper slider and pull to keep it from digging into the wearer's neck. Important on any compression garments/swimwear.
+    neckGuardLength: { pct: 2, min: 0, max: 5, menu: 'construction' },
   },
 }

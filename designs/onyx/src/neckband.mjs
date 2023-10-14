@@ -104,16 +104,14 @@ export const neckband = {
       pct: 80,
       min: 50,
       max: 100,
-      menu: ({ options }) =>
-        options.neckStyle == 'neckband' || options.neckStyle == undefined ? 'fit' : false,
+      menu: (settings, mergedOptions) => (mergedOptions.neckStyle == 'neckband' ? 'fit' : false),
     },
     // How wide the neckband should be, as a percentage of the neckband length.
     neckbandWidth: {
       pct: 7.5,
       min: 0,
       max: 20,
-      menu: ({ options }) =>
-        options.neckStyle == 'neckband' || options.neckStyle == undefined ? 'fit' : false,
+      menu: (settings, mergedOptions) => (mergedOptions.neckStyle == 'neckband' ? 'fit' : false),
     },
   },
 }

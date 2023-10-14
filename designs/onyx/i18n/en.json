@@ -1,0 +1,84 @@
+{
+  "t": "Onyx unisuit",
+  "d": "A FreeSewing pattern for unisuits and onesie pajamas",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "neckband": "Neckband",
+    "raglanSleeve": "Sleeve",
+	"zipperGuard": "Zipper guard",
+	"crotchGusset": "Crotch gusset",
+	"hood": "Hood back",
+	"hoodFront": "Hood front"
+  },
+  "s": {},
+  "o": {
+    "hemWidth": {
+      "t": "Hem width",
+      "d": "Sets the hem allowance along the bottom of the body of the shirt, as a multiple of the seam allowance."
+    },
+    "sleeveHem": {
+      "t": "Sleeve hem",
+      "d": "Sets the hem allowance of the hem along the end of the sleeves, as a multiple of the seam allowance."
+    },
+
+    "chestEase": {
+      "t": "Chest ease",
+      "d": "Controls how wide the shirt will be at your chest."
+    },
+    "neckBalance": {
+      "t": "Neck position",
+      "d": "Controls where the neck hole is placed on the shirt."
+    },
+    "neckEase": {
+      "t": "Neck ease",
+      "d": "Controls how large the neck hole is."
+    },
+	"neckbandLength": {
+	  "t": "Neckband length",
+	  "d": "Controls how long the neckband is, as a percentage of the circumference of the neckline."
+	},
+	"neckbandWidth": {
+	  "t": "Neckband width",
+	  "d": "Controls how wide the finished neckband will be, as a percentage of the neckline circumference."
+	},
+    "sleeveEase": {
+      "t": "Sleeve ease",
+      "d": "Affects how wide the sleeve is at the armhole on all shirts, and has some affect on the width at the hem of short sleeved shirts."
+    },
+    "wristEase": {
+      "t": "Wrist ease",
+      "d": "Affects how wide the end of the sleeve is on sleeves that extend past the biceps. The effect is greater on longer sleeves."
+    },
+
+    "bodyLength": {
+      "t": "Body length",
+      "d": "Controls how long the shirt is."
+    },
+    "sleeveLength": {
+      "t": "Sleeve length",
+      "d": "Controls the how long the sleeves of your shirt will be."
+    },
+
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls how wide your shirt will be at the bottom hem. This option is only used if the straight sides option is disabled."
+    },
+    "raglanScoopLength": {
+      "t": "Raglan scoop length",
+      "d": "Controls how far out from the armhole the raglan seam starts to scoop."
+    },
+    "raglanScoopMagnitude": {
+      "t": "Raglan scoop depth",
+      "d": "Controls how much extra material to place under the armpits."
+    },
+    "sideShape": {
+      "t": "Body shape",
+      "d": "Controls how the side seam is curved. This option is ignored if the straight sides option is enabled."
+    },
+    "straightSides": {
+      "t": "Straight Sides",
+      "d": "Forms a tubular shirt, which is a shirt where the hips and chest are the same width and connected by a straight seam."
+    }
+  }
+}

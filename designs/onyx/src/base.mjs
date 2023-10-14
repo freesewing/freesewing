@@ -30,12 +30,6 @@ function draftBase({
   store.set('verticalTrunk', verticalTrunk)
   const crotchGussetWidth = verticalTrunk * options.crotchGussetWidth
   store.set('crotchGussetWidth', crotchGussetWidth)
-  const zipperLength = verticalTrunk * options.zipperLength
-  store.set('zipperLength', zipperLength)
-  const zipperGuardWidth = verticalTrunk * options.zipperGuardWidth
-  store.set('zipperGuardWidth', zipperGuardWidth)
-  const neckGuardLength = verticalTrunk * options.neckGuardLength
-  store.set('neckGuardLength', neckGuardLength)
 
   const legLength = options.legLength * measurements.inseam
   const totalLength = hpsToUpperLeg + legLength
@@ -350,9 +344,6 @@ export const base = {
     // How long the zipper will be, as a % of the verticalTrunk. Longer zippers will make the garment easier to don and doff, but zippers do not stretch. Leotards and wide-necked stretch clothes can do with no zipper at all. Swimwear should have a zipper length no more than 20% since zippers do not stretch. Onesie pajamas can have much longer zippers (40%-50%).
     zipperLength: { pct: 20, min: 0, max: 50, menu: 'construction' },
     // How wide to make the section of fabric keeping the zipper away from the wearer's skin. Optional on onesie pajamas. Crucial on swimwear.
-    zipperGuardWidth: { pct: 2, min: 0, max: 5, menu: 'construction' },
-    // How far to have the zipper guard extend past the neckline so it can be wrapped around the zipper slider and pull to keep it from digging into the wearer's neck. Important on any compression garments/swimwear.
-    neckGuardLength: { pct: 2, min: 0, max: 5, menu: 'construction' },
   },
   optionalMeasurements: ['highBust'],
 }
