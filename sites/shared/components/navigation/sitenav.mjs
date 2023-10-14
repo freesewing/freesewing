@@ -96,7 +96,7 @@ export const Breadcrumbs = ({ lead = false }) => {
  */
 export const NavLinks = () => (
   <div className="mdx my-4 bg">
-    <ReadMore recurse />
+    <ReadMore recurse asMenu />
   </div>
 )
 
