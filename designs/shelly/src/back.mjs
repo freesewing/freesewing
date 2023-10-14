@@ -6,7 +6,6 @@ function draftBack({
   Point,
   paths,
   points,
-  measurements,
   options,
   part,
   store,

@@ -15,8 +15,6 @@ function draftNeckband({
   complete,
   sa,
   macro,
-  snippets,
-  Snippet,
 }) {
   const neckbandLength =
     (store.get('neckLengthFront') + store.get('neckLengthBack') + store.get('neckLengthSide')) *
