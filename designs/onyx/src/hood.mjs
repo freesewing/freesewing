@@ -244,16 +244,46 @@ export const hood = {
   measurements: ['neck', 'chest', 'biceps', 'wrist', 'head'],
   options: {
     // How roomy the hood is horizontally.
-    hoodWidth: { pct: 120, min: 70, max: 180, menu: 'fit' },
+    hoodWidth: {
+      pct: 120,
+      min: 70,
+      max: 180,
+      menu: ({ options }) => (options.neckStyle == 'hood' ? 'fit' : false),
+    },
     // How tall the hood is.
-    hoodHeight: { pct: 100, min: 70, max: 140, menu: 'fit' },
+    hoodHeight: {
+      pct: 100,
+      min: 70,
+      max: 140,
+      menu: ({ options }) => (options.neckStyle == 'hood' ? 'fit' : false),
+    },
     // How much the hood dips in the front.
-    hoodFrontDip: { pct: 8, min: 0, max: 20, menu: 'style' },
+    hoodFrontDip: {
+      pct: 8,
+      min: 0,
+      max: 20,
+      menu: ({ options }) => (options.neckStyle == 'hood' ? 'style' : false),
+    },
     // Width of the hem at the front of the hood, as a multiple of the seam allowance.
-    hoodHem: { pct: 2, min: 0, max: 8, menu: 'construction' },
+    hoodHem: {
+      pct: 2,
+      min: 0,
+      max: 8,
+      menu: ({ options }) => (options.neckStyle == 'hood' ? 'construction' : false),
+    },
     // How far forward the top of the hood extends.
-    hoodFrontBonus: { pct: 0, min: -8, max: 10, menu: 'style' },
+    hoodFrontBonus: {
+      pct: 0,
+      min: -8,
+      max: 10,
+      menu: ({ options }) => (options.neckStyle == 'hood' ? 'style' : false),
+    },
     // How much of the hood is composed of the front piece, versus the two back pieces. 50 divides it evenly, while larger values make for a larger front piece.
-    hoodFrontPieceSize: { pct: 50, min: 0, max: 50, menu: 'style' },
+    hoodFrontPieceSize: {
+      pct: 50,
+      min: 0,
+      max: 50,
+      menu: ({ options }) => (options.neckStyle == 'hood' ? 'style' : false),
+    },
   },
 }
