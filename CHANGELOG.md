@@ -111,6 +111,7 @@
 #### Fixed
 
  - Fix order in mergeOptions method so user settings take precendence over defaults
+ - Fix upward snap for snapped percentage option when snap is a simple number
 
 
 ## 3.0.0 (2022-09-30)
