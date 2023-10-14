@@ -349,10 +349,12 @@
     "techniques": ["curvedSeam", "precision"]
   },
   "onyx": {
+    "lab": true,
+    "org": true,
     "description": "A FreeSewing pattern for unisuits and onesie pajamas",
     "code": "Thrunic",
     "design": "Thrunic",
-    "difficulty": 3,
+    "difficulty": 4,
     "tags": ["swimwear", "pajamas", "one piece"],
     "techniques": ["hem", "curvedSeam", "stretch", "lining", "zipper"]
   },
