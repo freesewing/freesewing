@@ -93,8 +93,6 @@ export const shortsleeve = {
       paths.sa = paths.seamSA.offset(sa).close().attr('class', 'fabric sa')
     }
 
-    console.log({ placket: points.p1h.dist(points.p1) })
-
     macro('hd', {
       from: points.p0,
       to: points.p3,
