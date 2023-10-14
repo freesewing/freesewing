@@ -177,7 +177,7 @@ function draftHoodFront({
       paths.sa = paths.saHem
         .offset(sa * options.hoodHem * 100)
         .join(paths.saBase.offset(sa))
-        .line(points.frontTop)
+        .line(points.frontTop.translate(-sa * options.hoodHem * 100, 0))
         .attr('class', 'fabric sa')
     }
   }
