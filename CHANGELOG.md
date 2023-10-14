@@ -106,6 +106,12 @@
 
  - Added support for notes in flags
 
+### core
+
+#### Fixed
+
+ - Fix order in mergeOptions method so user settings take precendence over defaults
+
 
 ## 3.0.0 (2022-09-30)
 
