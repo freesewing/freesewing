@@ -97,7 +97,7 @@ export const zipperGuard = {
   after: [front, neckband],
   options: {
     zipperGuardWidth: {
-      pct: 40,
+      pct: 46,
       min: 0,
       max: 100,
       snap: { metric: 5, imperial: 6.35 },

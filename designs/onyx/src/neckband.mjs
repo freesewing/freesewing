@@ -105,16 +105,18 @@ export const neckband = {
       pct: 80,
       min: 50,
       max: 100,
-      menu: (settings, mergedOptions) => (mergedOptions.neckStyle == 'neckband' ? 'fit' : false),
+      menu: (settings, mergedOptions) =>
+        mergedOptions.neckStyle == 'neckband' ? 'construction' : false,
     },
     // How wide the neckband should be, as a percentage of the neckband length.
     neckbandWidth: {
-      pct: 40,
+      pct: 23,
       min: 0,
       max: 100,
       snap: { metric: 5, imperial: 6.35 },
       toAbs: (pct) => pct * 200, // Valid range is from 0 to 200mm.
-      menu: (settings, mergedOptions) => (mergedOptions.neckStyle == 'neckband' ? 'fit' : false),
+      menu: (settings, mergedOptions) =>
+        mergedOptions.neckStyle == 'neckband' ? 'construction' : false,
     },
   },
 }
