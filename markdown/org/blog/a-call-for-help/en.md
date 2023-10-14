@@ -76,9 +76,9 @@ So I am taking Julian's advice to heart, and asking for help. Before we get to t
 
 To ensure that your values are aligned with those of FreeSewing, please take a moment to familiarize yourself with:
 
- - [Our community standards](/docs/various/community-standards/)
+ - [Our community standards](/docs/about/community-standards/)
  - [Our code of conduct](https://freesewing.dev/contributors/code-of-conduct/)
- - [Our revenue pledge](/docs/various/pledge/)
+ - [Our revenue pledge](/docs/about/pledge/)
 
 If reading that made you happy rather than angry, we could use your help :)
 
@@ -173,7 +173,7 @@ You know how to make things pretty, even if you're not sure how to actually make
 
 ### What's in it for me?
 
-We can't offer you money. Please [read our revenue pledge](/docs/various/pledge/) to understand why that is.
+We can't offer you money. Please [read our revenue pledge](/docs/about/pledge/) to understand why that is.
 
 What we can offer is responsibility, recognition, and a stake in something that strives to be a force for good in this world.
 

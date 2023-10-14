@@ -90,7 +90,7 @@ The knock-on effects of these people making a commitment to support our work hav
 even my most optimistic hopes.
 
 You may or may not know that I 
-have [made a pledge](/docs/various/pledge) to donate all income from freesewing to charity. 
+have [made a pledge](/docs/about/pledge) to donate all income from freesewing to charity. 
 So this morning I transferred our entire revenue for the year (**3162.14 euros**) 
 to [Médecins Sans Frontières](https://www.msf.org/) (Doctors Without Borders).
 Money that will go towards bringing relief to some of the most vulnerable people on this planet.
