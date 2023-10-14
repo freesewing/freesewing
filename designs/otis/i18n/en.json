@@ -16,7 +16,7 @@
     "bindingNeckFront.t": "The Front Neck Binding is not shown",
     "bindingNeckFront.d": "The **Front Neck Binding** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long.",
     "bindingLeg.t": "The Leg Binding is not shown",
-    "bindingLeg.d": "The **Leg Binding** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "bindingLeg.d": "The **Leg Binding** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long."
   },
   "o": {
     "binding": {
@@ -46,6 +46,6 @@
     "snapPlacket": {
       "t": "Snap Placket",
       "d": "This option controls the depth of the placket that holds the snaps. "
-    },
+    }
   }
 }
