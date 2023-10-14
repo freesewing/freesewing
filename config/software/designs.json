@@ -844,15 +844,13 @@
     ]
   },
   "otis": {
-    "code": "Coder name",
-    "description": "A FreeSewing pattern that needs a description",
-    "design": "Designer name",
-    "difficulty": 1,
-    "tags": [
-      "tagname"
-    ],
-    "techniques": [
-      "techname"
-    ]
+    "description": "A FreeSewing pattern for a romper",
+    "code": "Wouter Van Wageningen",
+    "design": "Wouter Van Wageningen",
+    "difficulty": 2,
+    "lab": true,
+    "org": true,
+    "tags": [  ],
+    "techniques": [ ]
   }
 }

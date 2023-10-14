@@ -48,7 +48,7 @@
 
 # @freesewing/otis
 
-A FreeSewing pattern that needs a description
+A FreeSewing pattern for a romper
 
 
 
