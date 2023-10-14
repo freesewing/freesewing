@@ -80,7 +80,7 @@ export const MdxWrapper = ({
   async = false,
   slug = [],
 }) => (
-  <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-base">
+  <div className="text-base-content mdx max-w-prose text-base-content max-w-prose text-base">
     {async ? (
       <PlainMdxWrapperAsync {...{ mdx, components, site, slug }} />
     ) : (

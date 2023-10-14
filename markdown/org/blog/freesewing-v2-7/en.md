@@ -63,7 +63,7 @@ To get around this, you should probably [reload your account](/account/reload/).
 
 We've made a few changes to the website too. 
 
- - We've added a [pattern notation guide](/docs/various/notation/) to take the guesswork out of what those markings on your pattern mean.
+ - We've added a [pattern notation guide](/docs/about/notation/) to take the guesswork out of what those markings on your pattern mean.
  - We've added a [reload account](/account/actions/reload/) page to help you avoid issues due to cached account data
  - We've changed the styling of the different sizes when you compare a pattern, as well as included a legend showing which outline corresponds to which size.
 

@@ -4,7 +4,7 @@ title: "Carlita coat: Cutting Instructions"
 
 <Note>
 
-Certain parts have to be drafted off of the existing parts. How to draft these are provided in the [instructions](/docs/patterns/carlita/instructions).
+Certain parts have to be drafted off of the existing parts. How to draft these are provided in the [instructions](/docs/designs/carlita/instructions).
 
 </Note>
 
