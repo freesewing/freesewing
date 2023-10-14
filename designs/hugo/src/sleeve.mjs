@@ -241,6 +241,35 @@ export const sleeve = {
   from: brianSleeve,
   hide: hidePresets.HIDE_TREE,
   after: [front, back],
-  options: { cuffEase, sleeveLengthBonus, ribbingHeight },
+  options: {
+    cuffEase,
+    sleeveLengthBonus,
+    ribbingHeight,
+    /*
+     * Lock defaults from Brian because we don't want to
+     * expose these to the user as they are about the sleevecap
+     * and we are drafting a raglan sleeve.
+     */
+    sleevecapEase: 0,
+    sleevecapTopFactorX: 0.5,
+    sleevecapTopFactorY: 0.45,
+    sleevecapBackFactorX: 0.6,
+    sleevecapBackFactorY: 0.33,
+    sleevecapFrontFactorX: 0.55,
+    sleevecapFrontFactorY: 0.33,
+    sleevecapQ1Offset: 0.017,
+    sleevecapQ2Offset: 0.035,
+    sleevecapQ3Offset: 0.025,
+    sleevecapQ4Offset: 0.01,
+    sleevecapQ1Spread1: 0.1,
+    sleevecapQ1Spread2: 0.15,
+    sleevecapQ2Spread1: 0.15,
+    sleevecapQ2Spread2: 0.1,
+    sleevecapQ3Spread1: 0.1,
+    sleevecapQ3Spread2: 0.08,
+    sleevecapQ4Spread1: 0.07,
+    sleevecapQ4Spread2: 0.063,
+    sleeveWidthGuarantee: 0.9,
+  },
   draft: hugoSleeve,
 }

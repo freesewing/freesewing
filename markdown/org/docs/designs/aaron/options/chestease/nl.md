@@ -14,6 +14,6 @@ De waarde die je hier geeft wordt toegevoegd aan je borstomtrek bij het tekenen 
 > 
 > Pas alleen negatieve waarden toe als je elastisch materiaal gebruikt en wil dat het aansluitend past. Algemene stretch zou moeten aangepast worden met de **stretch** optie.
 
-## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](aaron_chestease_sample.svg "Effect van deze optie op het patroon")
+
+

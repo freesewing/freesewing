@@ -278,7 +278,13 @@
       "bottoms",
       "trousers"
     ],
-    "techniques": []
+    "techniques": [
+      "curvedSeams",
+      "fly",
+      "zipper",
+      "button",
+      "pocket"
+    ]
   },
   "diana": {
     "code": "Erica Alcusa Sáez",
@@ -511,6 +517,7 @@
       "tops"
     ],
     "techniques": [
+      "block",
       "curvedSeam",
       "precision",
       "princessSeam"
@@ -656,6 +663,14 @@
       "flatFelledSeam",
       "flatSleeve"
     ]
+  },
+  "skully": {
+    "description": "A FreeSewing pattern for skully, our logo, a plushy toy",
+    "code": "Wouter Van Wageningen",
+    "design": "Wouter Van Wageningen",
+    "difficulty": 4,
+    "tags": ["accessories", "toys"],
+    "techniques": ["curvedSeam", "precision"]
   },
   "sven": {
     "code": "Joost De Cock",

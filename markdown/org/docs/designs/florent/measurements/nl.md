@@ -2,4 +2,4 @@
 title: "Florent platte pet: Vereiste afmetingen"
 ---
 
-<PatternMeasurements pattern='florent' />
+<DesignMeasurements design='florent' />

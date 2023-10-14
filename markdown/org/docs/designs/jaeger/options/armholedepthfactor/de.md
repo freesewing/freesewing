@@ -4,7 +4,7 @@ title: "Tiefenfaktor des Armloches"
 
 ![Tiefenfaktor des Armloches](armholedepthfactor.svg)
 
-Dadurch wird die Tiefe des Armlochs kontrolliert, was wiederum die Breite der Ärmel beeinflusst.
+Hierdurch wird die Tiefe des Armlochs gesteuert, was wiederum die Breite der Armkugel beeinflusst.
 
 ## Effekt dieser Option auf das Schnittmuster
 

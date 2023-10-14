@@ -2,4 +2,4 @@
 title: "Світшот Sven: Варіанти дизайну"
 ---
 
-<PatternOptions pattern='sven' />
+<DesignOptions design='sven' />

@@ -86,7 +86,7 @@ lab:
   i18n: 'SITE=lab node --conditions=internal ../shared/prebuild/i18n-only.mjs'
   lint: *nextLint
   prebuild: *sitePrebuild
-  start: *nextStart
+  start: 'cd ../org && yarn prebuild && cd - && yarn prebuild && yarn dev'
 
 sde:
   build: *nextBuild

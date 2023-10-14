@@ -2,4 +2,4 @@
 title: "Penelope kokerrok: Benodigde afmetingen"
 ---
 
-<PatternMeasurements pattern='penelope' />
+<DesignMeasurements design='penelope' />

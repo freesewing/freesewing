@@ -2,4 +2,4 @@
 title: "Футболка Teagan: Необхідні виміри"
 ---
 
-<PatternMeasurements pattern='teagan' />
+<DesignMeasurements design='teagan' />

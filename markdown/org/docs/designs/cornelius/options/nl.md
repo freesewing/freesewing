@@ -2,4 +2,4 @@
 title: "Cornelius fietsbroek: Ontwerpopties"
 ---
 
-<PatternOptions pattern='cornelius' />
+<DesignOptions design='cornelius' />
