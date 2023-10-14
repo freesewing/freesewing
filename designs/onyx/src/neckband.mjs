@@ -110,7 +110,7 @@ export const neckband = {
     },
     // How wide the neckband should be, as a percentage of the neckband length.
     neckbandWidth: {
-      pct: 23,
+      pct: 20,
       min: 0,
       max: 100,
       snap: { metric: 5, imperial: 6.35 },
