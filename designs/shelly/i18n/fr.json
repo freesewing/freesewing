@@ -2,6 +2,7 @@
   "t": "Sweat à capuche Hugo",
   "d": "Hugo est un sweat à capuche avec des manches raglan.",
   "p": {
+    "base": "Base",
     "back": "Back",
     "cuff": "Cuff",
     "front": "Front",

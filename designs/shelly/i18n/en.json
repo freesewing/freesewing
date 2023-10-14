@@ -2,6 +2,7 @@
   "t": "Shelly swimshirt",
   "d": "Shelly is a raglan shirt, perfect for swimshirts and rashguards",
   "p": {
+    "base": "Base",
     "back": "Back",
     "front": "Front",
     "neckband": "Neckband",
