@@ -37,7 +37,7 @@ export const front = {
     points.p5 = points.p4.shift(270, measurements.waist * options.snapPlacket * 2)
     points.p6 = new Point(0, points.p5.y)
 
-    let diff = 10
+    let diff
     let iter = 1
     do {
       paths.armhole = new Path().move(points.p1).curve(points.p1Cp1, points.p2Cp2, points.p2).hide()

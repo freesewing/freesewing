@@ -43,7 +43,7 @@ export const shortsleeve = {
     points.p3 = points.p0.shift(331.965149, 145.468319 * (ease + 1) * sizeFactor)
     points.p3Cp1 = points.p3.shift(180, 69.454559985 * (ease + 1) * sizeFactor)
 
-    let diff = 10
+    let diff
     let iter = 1
     do {
       paths.armhole = new Path().move(points.p3).curve(points.p3Cp1, points.p0Cp2, points.p0).hide()
