@@ -9,6 +9,7 @@ function draftNeckband({
   points,
   measurements,
   options,
+  absoluteOptions,
   part,
   store,
   paperless,
@@ -23,7 +24,7 @@ function draftNeckband({
   const neckbandLength =
     (store.get('neckLengthFront') + store.get('neckLengthBack') + store.get('neckLengthSide')) *
     options.neckbandLength
-  const neckbandWidth = 2 * (options.neckbandWidth * measurements.neck)
+  const neckbandWidth = 2 * absoluteOptions.neckbandWidth
 
   points.topLeftCorner = new Point(0, 0)
   points.bottomLeftCorner = new Point(0, neckbandWidth)
@@ -108,9 +109,11 @@ export const neckband = {
     },
     // How wide the neckband should be, as a percentage of the neckband length.
     neckbandWidth: {
-      pct: 7.5,
+      pct: 40,
       min: 0,
-      max: 20,
+      max: 100,
+      snap: { metric: 5, imperial: 6.35 },
+      toAbs: (pct) => pct * 200, // Valid range is from 0 to 200mm.
       menu: (settings, mergedOptions) => (mergedOptions.neckStyle == 'neckband' ? 'fit' : false),
     },
   },
