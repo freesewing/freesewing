@@ -1,34 +1,60 @@
+// Dependencies
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+// Context
+import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Hooks
-import { useApp } from 'site/hooks/useApp.mjs'
+import { useContext } from 'react'
 // Components
-import { PageWrapper } from 'site/components/wrappers/page.mjs'
-import { Popout } from 'shared/components/popout.mjs'
+import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
+import { Popout } from 'shared/components/popout/index.mjs'
+import { Collapse } from 'shared/components/collapse.mjs'
+import { BoolYesIcon, BoolNoIcon } from 'shared/components/icons.mjs'
 
-const TypographyPage = (props) => {
-  const app = useApp(props)
+// Translation namespaces used on this page
+const ns = pageNs
 
-  const p = (
-    <p>
-      This paragraph is here to show the vertical spacing between headings and paragraphs. In
-      addition, let&apos;s make it a bit longer so we can see the line height as the text wraps.
-    </p>
-  )
+// Re-use this
+const p = (
+  <p>
+    This paragraph is here to show the vertical spacing between headings and paragraphs. In
+    addition, let&apos;s make it a bit longer so we can see the line height as the text wraps.
+  </p>
+)
+
+const TypographyPage = ({ page }) => {
+  const { setLoadingStatus, loading, LoadingProgress } = useContext(LoadingStatusContext)
+
+  const loadingProgression = () => {
+    let delay = 0
+    for (let i = 1; i < 51; i++) {
+      delay += 25
+      window.setTimeout(
+        () =>
+          setLoadingStatus(
+            i === 50
+              ? [true, 'All done!', true, true]
+              : [true, <LoadingProgress key={i} val={i} max={50} msg={`Herding cats: ${i}/50`} />]
+          ),
+        delay
+      )
+    }
+  }
 
   return (
-    <PageWrapper app={{ ...app, navigation: null }} title="Typography">
-      <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-base">
+    <PageWrapper {...page} title="Typography">
+      <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-base xl:pl-4">
         <p>This typography page shows an overview of different elements and how they are styled.</p>
         <p>It&apos;s a good starting point for theme development.</p>
         <h2>Headings (this is h2)</h2>
-        {p}
+        {p} {p}
         <h3>This is h3</h3>
-        {p}
+        {p} {p}
         <h4>This is h4</h4>
-        {p}
+        {p} {p}
         <h5>This is h5</h5>
-        {p}
+        {p} {p}
         <h6>This is h6</h6>
-        {p}
+        {p} {p}
         <h2>Links and buttons</h2>
         <p>
           A regular link <a href="#">looks like this</a>, whereas buttons look like this:
@@ -85,9 +111,64 @@ const TypographyPage = (props) => {
             </div>
           )
         })}
+        <h2>Collapse</h2>
+        {['primary', 'secondary', 'accent', 'neutral', 'success', 'info', 'warning', 'error'].map(
+          (color) => (
+            <Collapse
+              title={`A ${color} collapse`}
+              openTitle={`An open ${color} collapse`}
+              color={color}
+              key={color}
+            >
+              <p>I am a collapse in the {color} color</p>
+            </Collapse>
+          )
+        )}
+        <h2>Loading state</h2>
+        <p className="flex flex-row items-center flex-wrap gap-2">
+          Loading: {loading ? <BoolYesIcon /> : <BoolNoIcon />}
+        </p>
+        <div className="flex flex-row flex-wrap gap-2">
+          <button
+            className="btn btn-primary"
+            onClick={() => setLoadingStatus([true, 'status:contactingBackend'])}
+          >
+            Start loading
+          </button>
+          <button
+            className="btn btn-success"
+            onClick={() => setLoadingStatus([true, 'status:nailedIt', true, true])}
+          >
+            Stop loading, success
+          </button>
+          <button
+            className="btn btn-error"
+            onClick={() => setLoadingStatus([true, 'status:backendProblem', true, false])}
+          >
+            Stop loading, failure
+          </button>
+          <button className="btn btn-neutral" onClick={() => setLoadingStatus([false])}>
+            Stop loading, abruptly
+          </button>
+          <button className="btn btn-accent" onClick={() => loadingProgression()}>
+            Show loading progression
+          </button>
+        </div>
       </div>
     </PageWrapper>
   )
 }
 
 export default TypographyPage
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ns)),
+      page: {
+        locale,
+        path: ['typography'],
+      },
+    },
+  }
+}

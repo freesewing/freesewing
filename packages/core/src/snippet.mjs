@@ -11,12 +11,15 @@ import { Point } from './point.mjs'
  * @constructor
  * @param {string} def - The id of the snippet in the SVG defs section
  * @param {Point} anchor - The Point to anchor this Snippet on
+ * @param {boolean} force - Whether to force rendering of this snippet when complete is falsy (or not)
  * @return {Snippet} this - The Snippet instance
  */
-export function Snippet(def, anchor) {
+export function Snippet(def, anchor, force = false) {
   this.def = def
   this.anchor = anchor
   this.attributes = new Attributes()
+
+  if (force) this.attributes.set('data-force', 1)
 
   return this
 }
@@ -50,6 +53,43 @@ Snippet.prototype.clone = function () {
   clone.attributes = this.attributes.clone()
 
   return clone
+}
+
+/**
+ * Helper method to scale a snippet
+ *
+ * @param {number} scale - The scale to set
+ * @param {bool} overwrite - Whether to overwrite the existing scale or not (default is true)
+ *
+ * @return {Snippet} this - The snippet instance
+ */
+Snippet.prototype.scale = function (scale, overwrite = true) {
+  return this.attr('data-scale', scale, overwrite)
+}
+
+/**
+ * Helper method to rotate a snippet
+ *
+ * @param {number} rotation - The rotation to set
+ * @param {bool} overwrite - Whether to overwrite the existing rotation or not (default is true)
+ *
+ * @return {Snippet} this - The snippet instance
+ */
+Snippet.prototype.rotate = function (rotation, overwrite = true) {
+  return this.attr('data-rotate', rotation, overwrite)
+}
+
+/**
+ * Returns a snippet as an object suitable for inclusion in renderprops
+ *
+ * @return {object} snippet - A plain object representing the snippet
+ */
+Snippet.prototype.asRenderProps = function () {
+  return {
+    def: this.def,
+    anchor: this.anchor.asRenderProps(),
+    attributes: this.attributes.asRenderProps(),
+  }
 }
 
 //////////////////////////////////////////////
@@ -88,19 +128,17 @@ export function snippetsProxy(snippets, log) {
     set: (snippets, name, value) => {
       // Constructor checks
       if (value instanceof Snippet !== true)
-        log.warning(`\`snippets.${name}\` was set with a value that is not a \`Snippet\` object`)
+        log.warn(`\`snippets.${name}\` was set with a value that is not a \`Snippet\` object`)
       if (typeof value.def !== 'string')
-        log.warning(
-          `\`snippets.${name}\` was set with a \`def\` parameter that is not a \`string\``
-        )
+        log.warn(`\`snippets.${name}\` was set with a \`def\` parameter that is not a \`string\``)
       if (value.anchor instanceof Point !== true)
-        log.warning(
+        log.warn(
           `\`snippets.${name}\` was set with an \`anchor\` parameter that is not a \`Point\``
         )
       try {
         value.name = name
       } catch (err) {
-        log.warning(`Could not set \`name\` property on \`snippets.${name}\``)
+        log.warn(`Could not set \`name\` property on \`snippets.${name}\``)
       }
       return (snippets[name] = value)
     },

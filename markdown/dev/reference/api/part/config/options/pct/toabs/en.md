@@ -17,15 +17,22 @@ The `toAbs` property should hold a function with the following
 signature:
 
 ```js
-function toAbs(percentage, settings) {
+function toAbs(percentage, settings, mergeOptions) {
   // return value in millimeter here
 }
 ```
 
 The first parameter is the percentage value provided by the user (for example
 `0.5` for `50%`).
+
 The second parameter holds the pattern's [settings](/reference/settings) object
 which holds -- among other things -- the measurements provided by the user.
+
+The third parameter should be the return value of
+[utils.mergeOptions()](/reference/api/utils/mergeoptions), which provides an
+object with all option values populated. Although this parameter is not
+required for simple values based on measurements, it is often required when the
+result depends on several options.
 
 ## Example
 

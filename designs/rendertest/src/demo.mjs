@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 export const demo = {
   name: 'rendertest.demo',
   options: {
@@ -20,7 +18,6 @@ export const demo = {
       ],
     },
   },
-  plugins: [pluginBundle],
   draft: (params) => {
     const { store, options, Path, paths, Point, part } = params
     // Keep things in store
@@ -190,6 +187,7 @@ function addMacros({ macro, Point, Path, points, paths, store, options, part }, 
     // title
     y += 60
     macro('title', {
+      id: 'title',
       at: new Point(10, y),
       nr: 5,
       title: 'title',
@@ -198,6 +196,7 @@ function addMacros({ macro, Point, Path, points, paths, store, options, part }, 
     // grainline
     y += 40
     macro('grainline', {
+      id: 'grainline',
       from: new Point(0, y),
       to: new Point(w, y),
     })
@@ -205,6 +204,7 @@ function addMacros({ macro, Point, Path, points, paths, store, options, part }, 
     // cutonfold
     y += 35
     macro('cutonfold', {
+      id: 'cutonfold1',
       from: new Point(0, y),
       to: new Point(w, y),
     })
@@ -212,6 +212,7 @@ function addMacros({ macro, Point, Path, points, paths, store, options, part }, 
     // cutonfold * grainline
     y += 30
     macro('cutonfold', {
+      id: 'cutonfold2',
       from: new Point(0, y),
       to: new Point(w, y),
       grainline: true,
@@ -225,37 +226,47 @@ function addMacros({ macro, Point, Path, points, paths, store, options, part }, 
     points.dimv = new Point(20, y + 80)
     paths.dims = new Path().move(points.dimf)._curve(points.dimv, points.dimt)
     macro('hd', {
+      id: 'hd',
       from: points.dimf,
       to: points.dimt,
       text: 'hd',
       y: y - 15,
+      force: true,
     })
     macro('vd', {
+      id: 'vd',
       from: points.dimt,
       to: points.dimf,
       text: 'vd',
       x: 0,
+      force: true,
     })
     macro('ld', {
+      id: 'ld',
       from: points.dimf,
       to: points.dimt,
       text: 'ld',
+      force: true,
     })
     macro('pd', {
+      id: 'pd',
       path: paths.dims,
       text: 'pd',
       d: 10,
+      force: true,
     })
 
     // scalebox
     y += 170
     macro('scalebox', {
+      id: 'scalebox',
       at: new Point(w / 2, y),
     })
 
     // miniscale
     y += 45
     macro('miniscale', {
+      id: 'miniscale',
       at: new Point(w / 2, y),
     })
 

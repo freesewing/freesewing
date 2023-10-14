@@ -1,0 +1,129 @@
+addNotes: Add notes
+addSettingsToNotes: Add settings to notes
+advanced: Avanzado
+appliedMeasies: We applied a new measurements set to this pattern.
+armhole: Agujero armado
+attributes: Atributos
+backPockets: Paquetes de retroceso
+bookmarkPattern: Bookmark pattern
+bottomRight: Abajo a la derecha
+changeMeasies: Mediciones del patrón de cambio
+chooseATest: Choose a test scenario to run
+chooseATestDesc: You can test how the design adapts to changes in a specific design option or measurements.
+chooseATestMenuMobileMsg: To do so, open the test menu and select the scenario you want to run.
+chooseATestMenuMsg: To do so, select the test scenario you want to run in the menu on the right.
+chooseFromBookmarkedSets: Choose one of the measurements sets you've bookmarked
+chooseFromBookmarkedSetsDesc: If you've bookmarked any measurements sets, you can select from those too.
+chooseFromCuratedSets: Choose one of FreeSewing's curated measurements sets
+chooseFromCuratedSetsDesc: If you're just looking to try out our platform, you can select from our list of curated measurements sets.
+chooseFromOwnSets: Choose one of your own measurements sets
+chooseFromOwnSetsDesc: Pick any of your own measurements sets that have all required measurements to generate this pattern.
+chooseNewSet: Elegir un nuevo conjunto de medidas
+closure: Cierre
+collar: Cuello
+columns: columns
+configurePattern: Configurar patrón
+construction: Construcción
+continueEditingTitle: Continue editing
+continueEditingDesc: Load the newly saved pattern in the pattern editor, so you can make more changes.
+cuffs: Puños
+currentPrintLayout: Current print layout
+cutLayout: Disposición del corte
+darts: Dardos
+designOptions.d: Prueba el efecto de una opción sobre el aspecto de este patrón
+docs: Documentación
+draft: Boceto
+draftPattern: Proyecto de patrón
+edit: Edita
+editCurrentMeasies: Editar medidas actuales
+editCurrentMeasiesDesc: Changes you make here will not be saved to your measurements sets, and will only affect this pattern.
+editCurrentMeasiesHeader: Edit Pattern Measurements
+editMeasiesByHand: Edit measurements by hand
+editMeasiesByHandDesc: Manually set or override any measurements. These changes will only apply to the current pattern.
+editSettings: Editar configuración
+elastic: Elástico
+export: Exportar
+exportAsData: Exportar como datos
+exportForEditing: Exportar para editar
+exportForPrinting: Exportar para impresión
+exportPattern-txt: Exporte un PDF adecuado para su impresora, o descargue este patrón en una variedad de formatos
+exportPattern: Exportar patrón
+fit: Ajuste
+frontPockets: Pockets delanteros
+generatePdf: Generate print-ready PDF
+giveItAName: Dale un nombre
+goToPatternTitle: Navigate to the pattern page
+goToPatternDesc: Exit the pattern editor and navigate to the pattern page where you can update the pattern's metadata.
+height: Altura
+help: Ayuda
+layoutSettings.d: Additional options to further optimize the printing layout of your pattern.
+layoutSettings.t: Layout settings
+length: Longitud
+learnHowToUseEditor: Learn how to use FreeSewing's online pattern editor
+measies: Medidas del patrón
+measiesOk: Tenemos todas las medidas necesarias para crear este patrón.
+measurements.d: Prueba el efecto de una medida en el aspecto de este patrón
+menu: Menú
+name: Nombre
+noDesignFound: No hemos podido encontrar este diseño. Esto no debería ocurrir, así que te agradeceríamos que nos lo comunicaras.
+noInlineDocs: Documention is not included in this build
+noInlineDocsDesc: Please visit FreeSewing.org to access our documentation
+notes: Notas
+pages: pages
+part: Parte del patrón
+partInfo: Información sobre el patrón
+partTransfo: Part transformation buttons
+partTransfoDesc: These buttons allow you to rotate or flip individual pattern parts.
+partTransfoNo: Hide buttons
+partTransfoNoDesc: Do not include these buttons on the pattern output
+partTransfoYes: Show buttons
+partTransfoYesDesc: Include these buttons on the pattern output (they will not be printed)
+pathInfo: Información de la ruta
+patternBookmarkCreated: Pattern bookmark created
+patternInspector: Inspector de Patrones
+patternLogs: Registros de patrones
+patternSaved: Pattern saved
+pockets: Bolsillos
+printLayout: Diseño de impresión
+printSettings.d: Configure your pattern so you can print it just the way you like it. Includes page size & orientation, margins, and more.
+printSettings.t: Print settings
+reset: Reiniciar
+resetPrintLayout: Reset print layout
+resetPrintLayoutDesc: Removes all manual changes to the print layout, and restores the default layout
+rows: rows
+save: Guardar
+savePattern: Guardar patrón
+saveAsNewPattern: Save as new pattern
+savePatternAs: Save pattern as...
+savePatternAsHellip: Save pattern as...
+saveSettings: Guardar ajustes
+saveYourPattern: Guarda tu patrón
+seeMissingMeasies: See missing measurements
+show: Mostrar
+showAllParts: Mostrar todas las partes del patrón
+showMovableButtons: Botones
+showOnlyThisPart: Mostrar sólo esta parte del patrón
+sleevecap: Manga corta
+style: Estilo
+test: Prueba
+testDesignMeasurement: "Test {design} measurements: {measurement}"
+testDesignOption: "Test {design} design options: {option}"
+testDesignSets: "Test {design} across measurements sets"
+testMeasurements: Test measurements
+testMeasurementsDesc: Test how the design adapts to changes to a specific measurement
+testOptions: Test design options
+testOptionsDesc: Test how the design adapts to changes in a specific design option
+testPattern: Patrón de prueba
+testSets: Test measurements sets
+testSetsDesc: Test how the design adapts across different measurements sets
+topLeft: Arriba a la izquierda
+weLackSomeMeasies: Nos faltan las medidas de { nr } para crear este patrón
+whereToGoAfterSaveAs: After saving the new pattern, what do you want to do?
+width: Anchura
+xTotalPagesSomeBlank: "{total} pages in total but {blank} are blank"
+yamlEditViewError: Problemas con YAML
+yamlEditViewErrorDesc: Hemos guardado tu entrada, pero puede que no funcione por las siguientes razones
+yamlEditViewTitleThing: 'Editar configuración de patrones para {thing}'
+youCanPickOrEnter: Puedes elegir un conjunto de medidas o introducirlas a mano, pero no podemos proceder sin estas medidas.
+youUseCustomValue: You are using the default value
+youUseDefaultValue: You are using a custom value

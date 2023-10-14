@@ -1,0 +1,22 @@
+{
+  "t": "Lunetius Lacerna",
+  "d": "Lunetius is a lacerna, a historical Roman cloak",
+  "p": {
+    "lacerna": "Lacerna"
+  },
+  "s": {},
+  "o": {
+    "lengthRatio": {
+      "t": "Lengteratio",
+      "d": "Controls the length of the garment"
+    },
+    "widthRatio": {
+      "t": "Width ratio",
+      "d": "Controls the width of the garment"
+    },
+    "length": {
+      "t": "Lengte",
+      "d": "Choose from the different length styles"
+    }
+  }
+}

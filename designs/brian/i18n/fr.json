@@ -1,0 +1,154 @@
+{
+  "t": "Patron de base Brian",
+  "d": "Brian est un bloc corporel de base pour les personnes sans sein.",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "base": "Base",
+    "sleevecap": "Sleevecap",
+    "sleeve": "Sleeve"
+  },
+  "s": {},
+  "o": {
+    "acrossBackFactor": {
+      "t": "Largeur du dos",
+      "d": "Contrôle la largeur de votre dos en jouant sur la mesure d'une épaule à l'autre."
+    },
+    "armholeDepthFactor": {
+      "t": "Hauteur de l'emmanchure",
+      "d": "Contrôle la hauteur de l'emmanchure. Des valeurs plus élevées font une emmanchure plus profonde/basse."
+    },
+    "backNeckCutout": {
+      "t": "Arrondi de l'encolure dos",
+      "d": "Quelle est la profondeur de l'encolure dans le dos"
+    },
+    "bicepsEase": {
+      "t": "Aisance au niveau des biceps",
+      "d": "L'ampleur d'aisance au niveau de votre bras supérieur. Veuillez noter que bien que nous essayons de respecter ce critère, l'ajustement de la manche jusqu'à l'emmanchure est prioritaire sur le respect de la quantité exacte d'aisance."
+    },
+    "collarEase": {
+      "t": "Aisance du col",
+      "d": "L'ampleur d'aisance au niveau du cou."
+    },
+    "chestEase": {
+      "t": "Aisance de poitrine",
+      "d": "La quantité d'aisance à votre poitrine."
+    },
+    "cuffEase": {
+      "t": "Aisance de poignet",
+      "d": "L'ampleur d'aisance à votre poignet."
+    },
+    "draftForHighBust": {
+      "t": "Tracé pour le haut de la poitrine",
+      "d": "Tracez le patron pour la mesure du dessus de poitrine (si disponible) au lieu du torse. Cela donnera un vêtement plus ajusté pour les personnes avec des seins."
+    },
+    "frontArmholeDeeper": {
+      "t": "Découpe supplémentaire sur l'emmanchure avant",
+      "d": "Combien voulez-vous que l’emmanchure devant soit découpée plus profondément que le dos."
+    },
+    "lengthBonus": {
+      "t": "Supplément de longueur",
+      "d": "La quantité à ajouter pour rallonger le vêtement. Une valeur négative le raccourcira."
+    },
+    "s3Collar": {
+      "t": "Changement de couture des épaules: côté col",
+      "d": "Augmentez cette option pour déplacer la couture de l'épaule vers l'avant sur le côté. La diminuer la déplace vers l'arrière."
+    },
+    "s3Armhole": {
+      "t": "Changement de couture des épaules: côté des bras",
+      "d": "Augmente cette option pour déplacer la couture de l'épaule vers l'avant sur le côté de l'armure. Diminuer la glisse vers l'arrière."
+    },
+    "shoulderEase": {
+      "t": "Aisance des épaules",
+      "d": "La quantité d'aisance à votre épaule. Cela augmente la distance entre épaules pour accommoder des couches ou épaisseurs supplémentaires."
+    },
+    "shoulderSlopeReduction": {
+      "t": "Réduction de la pente d'épaule",
+      "d": "La quantité par laquelle la pente des épaules est réduite pour permettre un ajustement aux épaules."
+    },
+    "sleeveLengthBonus": {
+      "t": "Bonus de longueur de manche",
+      "d": "Le montant pour rallonger la manche. Une valeur négative le raccourcira."
+    },
+    "sleevecapEase": {
+      "t": "Aisance tête de manche",
+      "d": "Le montant par lequel la couture du tête de manche est plus longue que celle des emmanchures."
+    },
+    "sleevecapTopFactorX": {
+      "t": "Tête de manche top X",
+      "d": "Contrôle l'emplacement horizontal du tête de manche."
+    },
+    "sleevecapTopFactorY": {
+      "t": "Tête de manche top Y",
+      "d": "Contrôle la hauteur du tête de manche. Plus la valeur est élevée, plus la tête de manche est haute et étroite."
+    },
+    "sleevecapBackFactorX": {
+      "t": "Tête de manche arrière X",
+      "d": "Contrôle le positionnement du point d'inclinaison arrière du tête de manche sur l'axe des X (horizontal)"
+    },
+    "sleevecapBackFactorY": {
+      "t": "Tête de manche arrière Y",
+      "d": "Contrôle le positionnement du point d'inclinaison arrière du tête de manche sur l'axe des Y (vertical)"
+    },
+    "sleevecapFrontFactorX": {
+      "t": "Tête de manche devant X",
+      "d": "Contrôle le positionnement du point d'inclinaison avant du tête de manche sur l'axe des X (horizontal)"
+    },
+    "sleevecapFrontFactorY": {
+      "t": "Tête de manche devant Y",
+      "d": "Contrôle le positionnement du point d'inclinaison avant du tête de manche sur l'axe des Y (vertical)"
+    },
+    "sleevecapQ1Offset": {
+      "t": "Tête de manche décalage Q1",
+      "d": "Contrôle la courbure du tête de manche dans le premier quadrant (emmanchure devant)."
+    },
+    "sleevecapQ2Offset": {
+      "t": "Tête de manche décalage Q2",
+      "d": "Contrôle la courbure du tête de manche dans le deuxième quadrant (épaule avant)."
+    },
+    "sleevecapQ3Offset": {
+      "t": "Tête de manche décalage Q3",
+      "d": "Contrôle la courbure du tête de manche dans le troisième quadrant (épaule arrière)."
+    },
+    "sleevecapQ4Offset": {
+      "t": "Tête de manche décalage Q4",
+      "d": "Contrôle la courbure du tête de manche dans le quatrième quadrant (emmanchure au dos)."
+    },
+    "sleevecapQ1Spread1": {
+      "t": "Tête de manche abaissement Q1",
+      "d": "Contrôle l'abaissement de la courbure du premier quadrant de la tête de manche vers l'emmanchure"
+    },
+    "sleevecapQ1Spread2": {
+      "t": "Tête de manche élévation Q1",
+      "d": "Contrôle l'élévation de la courbure du premier quadrant de la tête de manche vers l'épaule"
+    },
+    "sleevecapQ2Spread1": {
+      "t": "Tête de manche abaissement Q2",
+      "d": "Contrôle l'abaissement de la courbure du second quadrant de la tête de manche vers l'emmanchure"
+    },
+    "sleevecapQ2Spread2": {
+      "t": "Tête de manche élévation Q2",
+      "d": "Contrôle l'élévation de la courbure du second quadrant de la tête de manche vers l'épaule"
+    },
+    "sleevecapQ3Spread1": {
+      "t": "Tête de manche élévation Q3",
+      "d": "Contrôle l'élévation de la courbure du troisième quadrant de la tête de manche vers l'épaule"
+    },
+    "sleevecapQ3Spread2": {
+      "t": "Tête de manche abaissement Q3",
+      "d": "Contrôle l'abaissement de la courbure du troisième quadrant de la tête de manche vers l'emmanchure"
+    },
+    "sleevecapQ4Spread1": {
+      "t": "Tête de manche élévation Q4",
+      "d": "Contrôle l'élévation de la courbure du quatrième quadrant de la tête de manche vers l'épaule"
+    },
+    "sleevecapQ4Spread2": {
+      "t": "Tête de manche abaissement Q4",
+      "d": "Contrôle l'abaissement de la courbure du quatrième quadrant de la tête de manche vers l'emmanchure"
+    },
+    "sleeveWidthGuarantee": {
+      "t": "Largeur des manches garantie",
+      "d": "Contrôle la largeur de manche garantie. Cela détermine à quel point nous pouvons modifier la largeur de la manche pour l'adapter à l'emmanchure."
+    }
+  }
+}

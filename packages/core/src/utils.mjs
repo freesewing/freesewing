@@ -2,6 +2,8 @@ import { Bezier } from 'bezier-js'
 import { Path } from './path.mjs'
 import { Point } from './point.mjs'
 
+export const goldenRatio = 1.618034
+
 //////////////////////////////////////////////
 //            PUBLIC  METHODS               //
 //////////////////////////////////////////////
@@ -442,6 +444,59 @@ export function lineIntersectsCurve(start, end, from, cp1, cp2, to) {
 }
 
 /**
+ * Helper method to merge translation files from different designs
+ *
+ * @param {array} designs - One or more translation objects for designs
+ * @param {object} options - Configuration object for how to merge these designs
+ * @return {object} result - A merged object of translations
+ */
+export function mergeI18n(designs, options) {
+  const i18n = {}
+  for (const design of designs) {
+    for (const lang in design) {
+      const obj = design[lang]
+      if (typeof i18n[lang] === 'undefined') i18n[lang] = {}
+      if (obj.t) i18n[lang].t = obj.t
+      if (obj.d) i18n[lang].d = obj.d
+      for (const section of 'spo') {
+        if (obj[section]) {
+          if (typeof i18n[lang][section] === 'undefined') i18n[lang][section] = {}
+          for (const [key, val] of Object.entries(obj[section])) {
+            if (__keepTranslation(key, options?.[section])) i18n[lang][section][key] = val
+          }
+        }
+      }
+    }
+  }
+
+  return i18n
+}
+
+/**
+ * Helper method to merge passed in options with default options from the pattern config
+ *
+ * @param {object} settings - The settings passed to the pattern
+ * @param {object} optionsConfig - The pattern's options config
+ * @return {object} result - An object with the merged options and their values
+ */
+export function mergeOptions(settings = {}, optionsConfig) {
+  let merged = {}
+  for (const [key, option] of Object.entries(optionsConfig)) {
+    if (typeof option === 'object') {
+      if (typeof option.pct !== 'undefined') merged[key] = option.pct / 100
+      else if (typeof option.mm !== 'undefined') merged[key] = option.mm
+      else if (typeof option.deg !== 'undefined') merged[key] = option.deg
+      else if (typeof option.count !== 'undefined') merged[key] = option.count
+      else if (typeof option.bool !== 'undefined') merged[key] = option.bool
+      else if (typeof option.dflt !== 'undefined') merged[key] = option.dflt
+    } else merged[key] = option
+  }
+  if (typeof settings.options === 'object') merged = { ...merged, ...settings.options }
+
+  return merged
+}
+
+/**
  * Helper method to calculate abolute option value based on a measurement
  *
  * @param {string} measurement - The measurement to base the calculation on
@@ -641,7 +696,7 @@ export function __addNonEnumProp(obj, name, value) {
 export function __asNumber(value, param, method, log) {
   if (typeof value === 'number') return value
   if (typeof value === 'string') {
-    log.warning(
+    log.warn(
       `Called \`${method}(${param})\` but \`${param}\` is not a number. Will attempt to cast to Number`
     )
     try {
@@ -678,7 +733,26 @@ export function __isCoord(value) {
  * @return {string} macroName - The inernal macroName
  */
 export function __macroName(name) {
-  return `__macro_${name}`
+  return `__macro_${name.toLowerCase()}`
+}
+
+/**
+ * Returns true if we want to keep the translation
+ * Called by mergeI18n
+ *
+ * @private
+ * @param {string} key - The translation key
+ * @param {object} options - The options (for this particular section of the translation file)
+ * @return {bool} result - Whether or not to keep the translation
+ */
+function __keepTranslation(key, options) {
+  // Drop it?
+  if (options?.drop && options.drop.includes(key)) return false
+  // Keep only some and not this one?
+  if (options?.keep && !options.keep.includes(key)) return false
+
+  // Keep it
+  return true
 }
 
 /**
@@ -732,7 +806,7 @@ function matrixTransform(transformationType, matrix, values) {
       const centerY = values[2]
 
       // if there's a rotation center, we need to move the origin to that center
-      if (centerX) {
+      if (centerX !== undefined) {
         matrix = matrixTransform('translate', matrix, [centerX, centerY])
       }
 
@@ -749,7 +823,7 @@ function matrixTransform(transformationType, matrix, values) {
       ]
 
       // move the origin back to origin
-      if (centerX) {
+      if (centerX !== undefined) {
         matrix = matrixTransform('translate', matrix, [-centerX, -centerY])
       }
       break
@@ -804,35 +878,7 @@ export function applyTransformToPoint(transform, point) {
 
   // The starting matrix
   let matrix = [1, 0, 0, 1, 0, 0]
-
-  // Update matrix for transform
-  switch (name) {
-    case 'matrix':
-      matrix = values
-      break
-    case 'translate':
-      matrix[4] = values[0]
-      matrix[5] = values[1]
-      break
-    case 'scale':
-      matrix[0] = values[0]
-      matrix[3] = values[1]
-      break
-    case 'rotate': {
-      const angle = (values[0] * Math.PI) / 180
-      const cos = Math.cos(angle)
-      const sin = Math.sin(angle)
-      console.log('in rotate', { angle })
-      matrix = [cos, sin, -sin, cos, 0, 0]
-      break
-    }
-    case 'skewX':
-      matrix[2] = Math.tan((values[0] * Math.PI) / 180)
-      break
-    case 'skewY':
-      matrix[1] = Math.tan((values[0] * Math.PI) / 180)
-      break
-  }
+  matrix = matrixTransform(name, matrix, values)
 
   // Apply the matrix transform to the coordinates
   const newX = point.x * matrix[0] + point.y * matrix[2] + matrix[4]

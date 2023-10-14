@@ -164,6 +164,17 @@ Pattern.prototype.getRenderProps = function () {
   return new PatternRenderer(this).getRenderProps()
 }
 
+/** Returns the pattern logs
+ *
+ * @return {object} logs - The Pattern logs
+ */
+Pattern.prototype.getLogs = function () {
+  return {
+    pattern: this.store.logs,
+    sets: this.setStores.map((store) => store.logs),
+  }
+}
+
 //////////////
 // Sampling //
 //////////////
@@ -303,7 +314,11 @@ Pattern.prototype.__init = function () {
   // Merges default options with user provided ones
   this.__loadOptionDefaults()
 
-  this.store.log.info(`Pattern initialized. Draft order is: ${this.config.draftOrder.join(', ')}`)
+  this.store.log.info(
+    `Pattern initialized. Draft order is: ${this.config.draftOrder
+      .map((item) => `\`${item}\``)
+      .join(', ')}`
+  )
 
   this.__runHooks('postInit')
   this.__initialized = true
@@ -361,7 +376,7 @@ Pattern.prototype.__runHooks = function (hookName, data = false) {
   if (data === false) data = this
   let hooks = this.plugins.hooks[hookName]
   if (hooks.length > 0) {
-    this.store.log.debug(`Running \`${hookName}\` hooks`)
+    this.store.log.debug(`🪝 Running \`${hookName}\` hooks`)
     for (let hook of hooks) {
       hook.method(data, hook.data)
     }

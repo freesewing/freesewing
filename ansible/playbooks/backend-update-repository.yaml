@@ -1,0 +1,22 @@
+# An Ansible playbook to update the backend repository.
+#
+# The FreeSewing production backend runs from the `production-backend`
+# branch on our backend server. This playbook updates the repository to
+# the latest version of the `production-backend` branch.
+---
+- hosts: '!localhost'
+  gather_facts: false
+  tasks:
+    - name: Bring monorepo up to date with production-backend branch
+      git:
+        # We don't need history
+        depth: 1
+        # We don't need other branches
+        single_branch: true
+        # Monorepo url
+        repo: git@github.com:freesewing/freesewing.git
+        # Destination folder
+        dest: "{{ monorepo }}"
+        # Check out the production-backend branch
+        version: production-backend
+

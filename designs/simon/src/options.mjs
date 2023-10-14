@@ -13,16 +13,14 @@ export const buttonFreeLength = { pct: 2, min: 0, max: 15, menu: 'style.closure'
 export const buttonholePlacketStyle = {
   list: ['classic', 'seamless'],
   dflt: 'seamless',
-  hide: ({ options }) => options.seperateButtonholePlacket,
-  menu: 'style.closure',
+  menu: ({ options }) => (options?.seperateButtonholePlacket ? false : 'style.closure'),
 }
 export const buttonholePlacketWidth = { pct: 8, min: 4, max: 12, menu: 'style.closure' }
 export const buttonholePlacketFoldWidth = { pct: 16, min: 8, max: 24, menu: 'style.closure' }
 export const buttonPlacketStyle = {
   list: ['classic', 'seamless'],
   dflt: 'classic',
-  hide: ({ options }) => options.seperateButtonPlacket,
-  menu: 'style.closure',
+  menu: ({ options }) => (options?.seperateButtonPlacket ? false : 'style.closure'),
 }
 export const buttonPlacketWidth = { pct: 5, min: 2, max: 8, menu: 'style.closure' }
 export const extraTopButton = { bool: true, menu: 'style.closure' }

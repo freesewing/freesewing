@@ -10,7 +10,7 @@ Een neep wordt gemaakt door twee lijnen die een wig vormen, en elkaar ontmoeten 
 
 Nepen worden gebruikt wanneer stof in meer dan één richting over curves moet liggen. Je hebt geen nepen nodig voor je benen aangezien je stof de curve van je been kan volgen en zich eromheen vormen. Je zitvlak heeft niet enkel een horizontale, maar ook een verticale curve. Dus konten en borsten zijn typische plekken waar je nepen zal tegenkomen.
 
-> Wikipedia has a bit more to say on this subject: [Dart (sewing) on Wikipedia](http://en.wikipedia.org/wiki/Dart_\(sewing\))
+> Wikipedia heeft een beetje meer te zeggen over dit onderwerp: [Dart (sewing) on Wikipedia](http://en.wikipedia.org/wiki/Dart_\(sewing\))
 > 
 > In boeken over naaien en patroonontwerpen vindt je hele hoofdstukken over nepen. Weten hoe en waar ze te gebruiken is niet zo eenvoudig. Maar voor deze website is het voldoende om te weten wat ze zijn.
 

@@ -1,3 +1,4 @@
+import { pctBasedOn } from '@freesewing/core'
 import { addDartToCurve, dartCalc } from './utils.mjs'
 
 export const measurements = ['waist', 'seat', 'waistToHips', 'waistToSeat', 'waistToKnee']
@@ -23,32 +24,53 @@ export const options = {
   curvedDartTopControlOffset: 0.2,
   curvedDartBottomControlOffset: 0.4,
   curvedDarts: { bool: true, menu: 'style' },
-  lengthBonus: { pct: 0, min: -50, max: 50, menu: 'style' },
-  hemBonus: { pct: 0, min: -35, max: 0, menu: 'style' },
-  hem: { pct: 2, min: 0, max: 5, menu: 'style' },
+  lengthBonus: { pct: 0, min: -50, max: 50, ...pctBasedOn('waistToKnee'), menu: 'style' },
+  hemBonus: { pct: 0, min: -35, max: 0, ...pctBasedOn('seat'), menu: 'style' },
+  hem: { pct: 2, min: 0, max: 5, ...pctBasedOn('waistToKnee'), menu: 'style' },
   backVent: { bool: true, menu: 'style' },
-  backVentLength: { pct: 40, min: 5, max: 70, menu: 'style' },
+  backVentLength: {
+    pct: 40,
+    min: 5,
+    max: 70,
+    // eslint-disable-next-line no-unused-vars
+    toAbs: (value, { measurements, options }, mergedOptions) =>
+      value * (measurements.waistToKnee * (1 + options.lengthBonus)),
+    // eslint-disable-next-line no-unused-vars
+    menu: (settings, mergedOptions) => (settings?.options?.backVent === false ? false : 'style'),
+  },
   zipperLocation: { dflt: 'backSeam', list: ['backSeam', 'sideSeam'], menu: 'style' },
   nrOfDarts: { count: 2, min: 1, max: 2, menu: 'style' },
-  seatEase: { pct: 1, min: 0, max: 8, menu: 'fit' },
-  waistEase,
-  backDartDepthFactor: { pct: 50, min: 35, max: 70, menu: 'advanced' },
-  frontDartDepthFactor: { pct: 45, min: 30, max: 65, menu: 'advanced' },
+  seatEase: { pct: 1, min: 0, max: 8, ...pctBasedOn('seat'), menu: 'fit' },
+  waistEase: { pct: 1, min: 0, max: 8, ...pctBasedOn('waist'), menu: 'fit' },
+  backDartDepthFactor: {
+    pct: 50,
+    min: 35,
+    max: 70,
+    ...pctBasedOn('waistToSeat'),
+    menu: 'advanced',
+  },
+  frontDartDepthFactor: {
+    pct: 45,
+    min: 30,
+    max: 65,
+    ...pctBasedOn('waistToSeat'),
+    menu: 'advanced',
+  },
   dartToSideSeamFactor: { pct: 50, min: 30, max: 70, menu: 'advanced' },
 }
 
 export function BuildMainShape(
-  { sa, options, measurements, Point, Path, points, paths, store, paperless, macro, part, log },
+  { sa, options, measurements, Point, Path, points, paths, store, macro, part, log },
   frontPart
 ) {
-  let skirtLength = measurements.waistToKnee * (1 + options.lengthBonus) // + options.hem;
+  const skirtLength = measurements.waistToKnee * (1 + options.lengthBonus) // + options.hem;
 
   store.set('skirtLength', skirtLength)
   store.set('waistEase', measurements.waist * options.waistEase)
   store.set('seatEase', measurements.seat * options.seatEase)
   store.set('hem', measurements.waistToKnee * options.hem)
 
-  let dartDepthFactor = frontPart ? options.frontDartDepthFactor : options.backDartDepthFactor
+  const dartDepthFactor = frontPart ? options.frontDartDepthFactor : options.backDartDepthFactor
 
   let waist = measurements.waist
   let seat = measurements.seat > waist ? measurements.seat : waist
@@ -85,7 +107,7 @@ export function BuildMainShape(
   seat += store.get('seatEase')
   waist += store.get('waistEase')
 
-  let sideSeam = seat / 4 //+ sideSeamShift
+  const sideSeam = seat / 4 //+ sideSeamShift
 
   points.lWaist = new Point(0, 0)
   points.lLeg = new Point(0, skirtLength)
@@ -246,12 +268,14 @@ export function BuildMainShape(
     // Create the inverse of the curve from the leg to the waist
     // Then split it at the hem level
     points.lHem = points.lLeg.shift(270, store.get('hem'))
-    let rInverseSeat = points.rSeat.shift(270, (points.rLeg.y - points.rSeat.y) * 2)
-    let rInverseSeatCP = rInverseSeat.shift(90, points.rSeatCPdown.y - points.rSeat.y)
-    let rInversePath = new Path().move(rInverseSeat).curve(rInverseSeatCP, points.rLeg, points.rLeg)
+    const rInverseSeat = points.rSeat.shift(270, (points.rLeg.y - points.rSeat.y) * 2)
+    const rInverseSeatCP = rInverseSeat.shift(90, points.rSeatCPdown.y - points.rSeat.y)
+    const rInversePath = new Path()
+      .move(rInverseSeat)
+      .curve(rInverseSeatCP, points.rLeg, points.rLeg)
     points.rHem = rInversePath.intersectsY(points.lHem.y)[0]
 
-    let sideSeamHemPath = rInversePath.split(points.rHem)[1]
+    const sideSeamHemPath = rInversePath.split(points.rHem)[1]
 
     sideSeamPath = sideSeamHemPath.join(sideSeamPath)
 
@@ -270,114 +294,144 @@ export function BuildMainShape(
 
   points.titleAnchor = new Point(measurements.waist / 6, measurements.waistToSeat)
   points.logoAnchor = points.titleAnchor.shift(270, 75)
+  points.gridAnchor = points.logoAnchor.clone()
 
   points.grainlineTop = points.lWaist.shift(0, 50).shift(270, 50)
   points.grainlineBottom = points.lLeg.shift(0, 50).shift(90, 50)
 
-  if (paperless) {
-    macro('hd', {
-      from: points.lSeat,
-      to: points.rSeat,
-      y: points.rSeat.y,
-    })
+  macro('hd', {
+    from: points.lSeat,
+    to: points.rSeat,
+    y: points.rSeat.y,
+    id: 'seatWidth',
+  })
+  macro('vd', {
+    from: points.lWaist,
+    to: points.rWaist,
+    x: points.rWaist.x + options.paperlessOffset + sa,
+    id: 'sideWaistHeight',
+    noStartMarker: true,
+    noEndMarker: true,
+  })
+  macro('vd', {
+    from: points.lWaist,
+    to: points.lLeg,
+    x: points.lLeg.x + options.paperlessOffset + sa,
+    id: 'heightToHem',
+  })
+  if (store.get('hem') > 0) {
     macro('vd', {
-      from: points.lWaist,
-      to: points.rWaist,
-      x: points.rWaist.x + options.paperlessOffset + sa,
-    })
-    macro('vd', {
-      from: points.lWaist,
-      to: points.lLeg,
+      from: points.lLeg,
+      to: points.lHem,
       x: points.lLeg.x + options.paperlessOffset + sa,
+      id: 'heightHem',
+      noStartMarker: true,
+      noEndMarker: true,
     })
-    if (store.get('hem') > 0) {
-      macro('vd', {
-        from: points.lLeg,
-        to: points.lHem,
-        x: points.lLeg.x + options.paperlessOffset + sa,
-      })
-    }
+  }
 
-    if (store.get('nrOfDarts') > 0) {
+  if (store.get('nrOfDarts') > 0) {
+    macro('hd', {
+      from: points.lWaist,
+      to: points.dart1Middle,
+      y: points.dart1Middle.y,
+      id: 'dart1Middle',
+    })
+    macro('hd', {
+      from: points.lWaist,
+      to: points.dart1Start,
+      y: points.dart1Start.y - options.paperlessOffset - sa,
+      id: 'middleToDart1',
+    })
+    macro('hd', {
+      from: points.dart1Start,
+      to: points.dart1End,
+      y: points.dart1End.y - options.paperlessOffset - sa,
+      id: 'widthDart1',
+      noStartMarker: true,
+      noEndMarker: true,
+    })
+    if (store.get('nrOfDarts') > 1) {
       macro('hd', {
         from: points.lWaist,
-        to: points.dart1Middle,
-        y: points.dart1Middle.y,
+        to: points.dart2Middle,
+        y: points.dart2Middle.y,
+        id: 'middleToDart2',
       })
       macro('hd', {
-        from: points.lWaist,
-        to: points.dart1Start,
-        y: points.dart1Start.y - options.paperlessOffset - sa,
+        from: points.dart1End,
+        to: points.dart2Start,
+        y: points.dart2Start.y - options.paperlessOffset - sa,
+        id: 'dart1toDart2',
+        noStartMarker: true,
+        noEndMarker: true,
       })
       macro('hd', {
-        from: points.dart1Start,
-        to: points.dart1End,
-        y: points.dart1End.y - options.paperlessOffset - sa,
+        from: points.dart2Start,
+        to: points.dart2End,
+        y: points.dart2End.y - options.paperlessOffset - sa,
+        id: 'widthDart2',
+        noStartMarker: true,
+        noEndMarker: true,
       })
-      if (store.get('nrOfDarts') > 1) {
-        macro('hd', {
-          from: points.lWaist,
-          to: points.dart2Middle,
-          y: points.dart2Middle.y,
-        })
-        macro('hd', {
-          from: points.dart1End,
-          to: points.dart2Start,
-          y: points.dart2Start.y - options.paperlessOffset - sa,
-        })
-        macro('hd', {
-          from: points.dart2Start,
-          to: points.dart2End,
-          y: points.dart2End.y - options.paperlessOffset - sa,
-        })
-        macro('hd', {
-          from: points.dart2End,
-          to: points.rWaist,
-          y: points.rWaist.y - options.paperlessOffset - sa,
-        })
-        macro('vd', {
-          from: points.lWaist,
-          to: points.dart2Middle,
-          x: points.lWaist.x - options.paperlessOffset - sa,
-        })
-        macro('vd', {
-          from: points.dart2Middle,
-          to: points.dart1Middle,
-          x: points.lWaist.x - options.paperlessOffset - sa,
-        })
-        macro('vd', {
-          from: points.dart1Middle,
-          to: points.lSeat,
-          x: points.lWaist.x - options.paperlessOffset - sa,
-        })
-      } else {
-        macro('vd', {
-          from: points.lWaist,
-          to: points.dart1Middle,
-          x: points.lWaist.x - options.paperlessOffset - sa,
-        })
-        macro('hd', {
-          from: points.dart1End,
-          to: points.rWaist,
-          y: points.rWaist.y - options.paperlessOffset - sa,
-        })
-        macro('vd', {
-          from: points.dart1Middle,
-          to: points.lSeat,
-          x: points.lWaist.x - options.paperlessOffset - sa,
-        })
-      }
-    } else {
       macro('hd', {
-        from: points.lWaist,
+        from: points.dart2End,
         to: points.rWaist,
         y: points.rWaist.y - options.paperlessOffset - sa,
+        id: 'dart2toSide',
       })
       macro('vd', {
         from: points.lWaist,
+        to: points.dart2Middle,
+        x: points.lWaist.x - options.paperlessOffset - sa,
+        id: 'heightDart2',
+      })
+      macro('vd', {
+        from: points.dart2Middle,
+        to: points.dart1Middle,
+        x: points.lWaist.x - options.paperlessOffset - sa,
+        id: 'heightDart1toDart2',
+        noStartMarker: true,
+        noEndMarker: true,
+      })
+      macro('vd', {
+        from: points.dart1Middle,
         to: points.lSeat,
         x: points.lWaist.x - options.paperlessOffset - sa,
+        id: 'dart1ToSeat',
+      })
+    } else {
+      macro('vd', {
+        from: points.lWaist,
+        to: points.dart1Middle,
+        x: points.lWaist.x - options.paperlessOffset - sa,
+        id: 'heightDart1',
+      })
+      macro('hd', {
+        from: points.dart1End,
+        to: points.rWaist,
+        y: points.rWaist.y - options.paperlessOffset - sa,
+        id: 'dart1toSide',
+      })
+      macro('vd', {
+        from: points.dart1Middle,
+        to: points.lSeat,
+        x: points.lWaist.x - options.paperlessOffset - sa,
+        id: 'dart1toSeat',
       })
     }
+  } else {
+    macro('hd', {
+      from: points.lWaist,
+      to: points.rWaist,
+      y: points.rWaist.y - options.paperlessOffset - sa,
+      id: 'waistWidth',
+    })
+    macro('vd', {
+      from: points.lWaist,
+      to: points.lSeat,
+      x: points.lWaist.x - options.paperlessOffset - sa,
+      id: 'waistToSeat',
+    })
   }
 }

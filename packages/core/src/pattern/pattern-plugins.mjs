@@ -1,4 +1,5 @@
 import { Hooks } from '../hooks.mjs'
+import { corePlugins } from '@freesewing/core-plugins'
 
 /**
  * Get the name of the given plugin config
@@ -22,6 +23,8 @@ export function PatternPlugins(pattern) {
   this.hooks = new Hooks()
   this.macros = {}
   this.__storeMethods = new Set()
+  // Load core plugins unless the design explicitly asked not to
+  if (!pattern.designConfig.noCorePlugins) this.use(corePlugins)
 }
 
 /**
@@ -142,7 +145,7 @@ PatternPlugins.prototype.__loadPluginMacros = function (plugin) {
 PatternPlugins.prototype.__loadPluginStoreMethods = function (plugin) {
   if (Array.isArray(plugin.store)) {
     for (const method of plugin.store) this.__storeMethods.add(method)
-  } else this.store.log.warning(`Plugin store methods should be an Array`)
+  } else this.store.log.warn(`Plugin store methods should be an Array`)
 
   // console.log('store', plugin, this.__storeMethods)
   return this
@@ -157,7 +160,7 @@ PatternPlugins.prototype.__loadPluginStoreMethods = function (plugin) {
  * @return {object} this - The Pattern instance
  */
 PatternPlugins.prototype.__macro = function (key, method) {
-  this.macros[key] = method
+  this.macros[key.toLowerCase()] = method
 
   return this
 }

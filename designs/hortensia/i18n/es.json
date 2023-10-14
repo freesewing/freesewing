@@ -1,0 +1,41 @@
+{
+  "t": "Hortensia, bolso de mano",
+  "d": "Hortensia es un bolso de mano.",
+  "p": {
+    "bottompanel": "Bottom panel",
+    "frontpanel": "Front panel",
+    "sidepanel": "Side panel",
+    "sidepanelreinforcement": "Side panel reinforcement",
+    "strap": "Strap",
+    "zipperpanel": "Zipper panel"
+  },
+  "s": {
+    "SidePanel": "Panel lateral",
+    "FrontBackPanel": "Panel frontal y trasero",
+    "BottomPanel": "Panel Principal",
+    "ZipperPanel": "Panel de Caparazón",
+    "Strap": "Referencia",
+    "strapLength": "Longitud de los Manejos",
+    "handleWidth": "Ancho de las asas",
+    "zipperSize": "Tamaño estándar de zipper",
+    "SidePanelReinforcement": "Ocultar Panel de Refuerzos"
+  },
+  "o": {
+    "size": {
+      "t": "Tamaño",
+      "d": "Controla el tamaño total del bolso"
+    },
+    "zipperSize": {
+      "t": "Tamaño Zipper",
+      "d": "Qué tamaño de zipper usar"
+    },
+    "strapLength": {
+      "t": "Longitud del Strp",
+      "d": "Controla la longitud de la correa"
+    },
+    "handleWidth": {
+      "t": "Anchura del Manejo",
+      "d": "Controla el ancho del asa"
+    }
+  }
+}

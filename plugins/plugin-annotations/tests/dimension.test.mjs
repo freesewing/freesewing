@@ -15,18 +15,20 @@ describe('Dimension Plugin Tests', () => {
           from: points.from,
           to: points.to,
           y: 35,
+          force: true,
         })
 
         return part
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const Test = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
 
     it('should draw a line and add text to indicate its length', () => {
-      const c = pattern.parts[0].test.paths['__paperless1']
+      const c = pattern.parts[0].test.paths.__macro_hd_hd_line
       expect(c.attributes.get('class')).to.equal('mark')
       expect(c.attributes.get('marker-start')).to.equal('url(#dimensionFrom)')
       expect(c.attributes.get('marker-end')).to.equal('url(#dimensionTo)')
@@ -41,7 +43,7 @@ describe('Dimension Plugin Tests', () => {
     })
 
     it('should draw the start marker', () => {
-      const c = pattern.parts[0].test.paths['__paperless1_ls']
+      const c = pattern.parts[0].test.paths.__macro_hd_hd_from
       expect(c.attributes.get('class')).to.equal('mark dotted')
       expect(c.ops[0].type).to.equal('move')
       expect(c.ops[1].type).to.equal('line')
@@ -52,7 +54,7 @@ describe('Dimension Plugin Tests', () => {
     })
 
     it('should draw the end marker', () => {
-      const c = pattern.parts[0].test.paths['__paperless1_le']
+      const c = pattern.parts[0].test.paths.__macro_hd_hd_to
       expect(c.attributes.get('class')).to.equal('mark dotted')
       expect(c.ops[0].type).to.equal('move')
       expect(c.ops[1].type).to.equal('line')
@@ -73,18 +75,20 @@ describe('Dimension Plugin Tests', () => {
           from: points.from,
           to: points.to,
           x: 25,
+          force: true,
         })
 
         return part
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const Test = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
 
     it('Should draw a line and add text to indicate its length', () => {
-      const c = pattern.parts[0].test.paths['__paperless1']
+      const c = pattern.parts[0].test.paths.__macro_vd_vd_line
       expect(c.attributes.get('class')).to.equal('mark')
       expect(c.attributes.get('marker-start')).to.equal('url(#dimensionFrom)')
       expect(c.attributes.get('marker-end')).to.equal('url(#dimensionTo)')
@@ -99,7 +103,7 @@ describe('Dimension Plugin Tests', () => {
     })
 
     it('Should draw the start marker', () => {
-      const c = pattern.parts[0].test.paths['__paperless1_ls']
+      const c = pattern.parts[0].test.paths.__macro_vd_vd_from
       expect(c.attributes.get('class')).to.equal('mark dotted')
       expect(c.ops[0].type).to.equal('move')
       expect(c.ops[1].type).to.equal('line')
@@ -110,7 +114,7 @@ describe('Dimension Plugin Tests', () => {
     })
 
     it('Should draw the end marker', () => {
-      const c = pattern.parts[0].test.paths['__paperless1_le']
+      const c = pattern.parts[0].test.paths.__macro_vd_vd_to
       expect(c.attributes.get('class')).to.equal('mark dotted')
       expect(c.ops[0].type).to.equal('move')
       expect(c.ops[1].type).to.equal('line')
@@ -131,18 +135,20 @@ describe('Dimension Plugin Tests', () => {
           from: points.from,
           to: points.to,
           d: 15,
+          force: true,
         })
 
         return part
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const Test = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
 
     it('Should draw a line and add text to indicate its length', () => {
-      const c = pattern.parts[0].test.paths['__paperless1']
+      const c = pattern.parts[0].test.paths.__macro_ld_ld_line
       expect(c.attributes.get('class')).to.equal('mark')
       expect(c.attributes.get('marker-start')).to.equal('url(#dimensionFrom)')
       expect(c.attributes.get('marker-end')).to.equal('url(#dimensionTo)')
@@ -157,7 +163,7 @@ describe('Dimension Plugin Tests', () => {
     })
 
     it('Should draw the start marker', () => {
-      const c = pattern.parts[0].test.paths['__paperless1_ls']
+      const c = pattern.parts[0].test.paths.__macro_ld_ld_from
       expect(c.attributes.get('class')).to.equal('mark dotted')
       expect(c.ops[0].type).to.equal('move')
       expect(c.ops[1].type).to.equal('line')
@@ -168,7 +174,7 @@ describe('Dimension Plugin Tests', () => {
     })
 
     it('Should draw the end marker', () => {
-      const c = pattern.parts[0].test.paths['__paperless1_le']
+      const c = pattern.parts[0].test.paths.__macro_ld_ld_to
       expect(c.attributes.get('class')).to.equal('mark dotted')
       expect(c.ops[0].type).to.equal('move')
       expect(c.ops[1].type).to.equal('line')
@@ -190,18 +196,20 @@ describe('Dimension Plugin Tests', () => {
         macro('pd', {
           path: new Path().move(points.from).curve(points.cp1, points.cp2, points.to),
           d: 15,
+          force: true,
         })
 
         return part
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const Test = new Design({ parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
 
     it('Should draw a line and add text to indicate the length', () => {
-      const c = pattern.parts[0].test.paths['__paperless1']
+      const c = pattern.parts[0].test.paths.__macro_pd_pd_line
       expect(c.attributes.get('class')).to.equal('mark')
       expect(c.attributes.get('marker-start')).to.equal('url(#dimensionFrom)')
       expect(c.attributes.get('marker-end')).to.equal('url(#dimensionTo)')
@@ -216,7 +224,7 @@ describe('Dimension Plugin Tests', () => {
     })
 
     it('Should draw the start marker', () => {
-      const c = pattern.parts[0].test.paths['__paperless1_ls']
+      const c = pattern.parts[0].test.paths.__macro_pd_pd_from
       expect(c.attributes.get('class')).to.equal('mark dotted')
       expect(c.ops[0].type).to.equal('move')
       expect(c.ops[1].type).to.equal('line')
@@ -227,7 +235,7 @@ describe('Dimension Plugin Tests', () => {
     })
 
     it('Should draw the end marker', () => {
-      const c = pattern.parts[0].test.paths['__paperless1_le']
+      const c = pattern.parts[0].test.paths.__macro_pd_pd_to
       expect(c.attributes.get('class')).to.equal('mark dotted')
       expect(c.ops[0].type).to.equal('move')
       expect(c.ops[1].type).to.equal('line')

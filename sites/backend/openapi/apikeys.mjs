@@ -34,6 +34,37 @@ export const paths = {}
 
 // Create API key
 paths['/apikeys/{auth}'] = {
+  get: {
+    ...common,
+    summary: 'Retrieves list of API keys',
+    description: 'Returns a list of API keys for the user making the API request',
+    parameters: [parameters.auth],
+    responses: {
+      200: {
+        description:
+          '**Success - List of API keys returned**\n\n' +
+          'Status code `200` indicates that the resource was returned successfully.',
+        ...jsonResponse({
+          result: {
+            ...fields.result,
+            example: 'success',
+          },
+          apikeys: {
+            type: 'array',
+            items: local.response.body.regular,
+          },
+        }),
+      },
+      401: response.status['401'],
+      403: {
+        ...response.status['403'],
+        description:
+          response.status['403'].description +
+          errorExamples(['accountStatusLacking', 'insufficientAccessLevel']),
+      },
+      500: response.status['500'],
+    },
+  },
   post: {
     ...common,
     summary: 'Create a new API key',

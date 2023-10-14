@@ -1,0 +1,37 @@
+{
+  "t": "Paco broek",
+  "d": "Paco is een casual maar stijlvolle zomerbroek.",
+  "p": {
+    "back": "Back",
+    "backPocketBag": "Back pocket bag",
+    "backPocketWelt": "Back pocket welt",
+    "backPocketWeltInterfacing": "Bacl pocket welt interfacing",
+    "cuff": "Cuff",
+    "front": "Front",
+    "frontPocketBag": "Front pocket bag",
+    "waistband": "Waistband"
+  },
+  "s": {},
+  "o": {
+    "heelEase": {
+      "t": "Overwijdte hiel",
+      "d": "De hoeveelheid overwijdte aan de hiel (wanneer je je been door de broekspijp steekt)"
+    },
+    "frontPockets": {
+      "t": "Voorzakken",
+      "d": "Of je al dan niet zakken in de zijnaad wil"
+    },
+    "backPockets": {
+      "t": "Achterzakken",
+      "d": "Of je al dan niet paspelzakken op de achterkant wil"
+    },
+    "elasticatedHem": {
+      "t": "Elastische zoom",
+      "d": "Of je wel of niet elastiek aan de zoom wil"
+    },
+    "ankleElastic": {
+      "t": "Breedte enkel/zoom elastiek",
+      "d": "Breedte van de (optionele) elastiek aan de enkel/zoom"
+    }
+  }
+}

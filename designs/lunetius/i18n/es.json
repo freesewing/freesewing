@@ -1,0 +1,22 @@
+{
+  "t": "Lunetius, lacerna",
+  "d": "Lunetius es una lacerna, una capa histórica romana",
+  "p": {
+    "lacerna": "Lacerna"
+  },
+  "s": {},
+  "o": {
+    "lengthRatio": {
+      "t": "Ratio de longitud",
+      "d": "Controls the length of the garment"
+    },
+    "widthRatio": {
+      "t": "Width ratio",
+      "d": "Controls the width of the garment"
+    },
+    "length": {
+      "t": "Longitud",
+      "d": "Choose from the different length styles"
+    }
+  }
+}

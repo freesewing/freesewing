@@ -9,7 +9,6 @@ function draftCharlieBack({
   Path,
   options,
   complete,
-  paperless,
   store,
   macro,
   snippets,
@@ -154,6 +153,25 @@ function draftCharlieBack({
     .attr('class', 'fabric')
   paths.saBase.hide()
 
+  if (sa)
+    paths.sa = paths.saBase
+      .offset(sa)
+      .join(
+        new Path()
+          .move(points.floorIn)
+          .line(points.floorOut)
+          .offset(sa * 6)
+      )
+      .close()
+      .addClass('fabric sa')
+
+  if (complete) {
+    paths.pocketLine = new Path()
+      .move(points.pocketLeft)
+      .line(points.pocketRight)
+      .attr('class', 'fabric dashed')
+  }
+
   // Sanity check, to make sure inseams and outseams match front and back
   const backInseamLength = backInseamPath.length()
   const frontInseamLength = store.get('frontInseamLength')
@@ -161,7 +179,7 @@ function draftCharlieBack({
   let inseamDesc = 'Charlie back inseam is longer than front'
   if (inseamDiff > 0) inseamDesc = 'Charlie front inseam is longer than back'
   if (Math.abs(inseamDiff) > 1) {
-    log.warning(inseamDesc + ' by ' + utils.round(Math.abs(inseamDiff)) + ' mm')
+    log.warn(inseamDesc + ' by ' + utils.round(Math.abs(inseamDiff)) + ' mm')
     log.debug('Charlie frontInseam: ' + utils.round(frontInseamLength).toString())
     log.debug('Charlie backInseam: ' + utils.round(backInseamLength).toString())
   }
@@ -171,174 +189,182 @@ function draftCharlieBack({
   let outseamDesc = 'Charlie back outseam is longer than front'
   if (outseamDiff > 0) outseamDesc = 'Charlie front outseam is longer than back'
   if (Math.abs(outseamDiff) > 1) {
-    log.warning(outseamDesc + ' by ' + utils.round(Math.abs(outseamDiff)) + ' mm')
+    log.warn(outseamDesc + ' by ' + utils.round(Math.abs(outseamDiff)) + ' mm')
     log.debug('Charlie frontOutseam: ' + utils.round(frontOutseamLength).toString())
     log.debug('Charlie backOutseam: ' + utils.round(backOutseamLength).toString())
   }
 
-  if (complete) {
-    paths.pocketLine = new Path()
-      .move(points.pocketLeft)
-      .line(points.pocketRight)
-      .attr('class', 'fabric dashed')
-    points.titleAnchor = new Point(points.knee.x, points.fork.y)
-    macro('title', {
-      at: points.titleAnchor,
-      nr: 1,
-      title: 'back',
-    })
-    snippets.logo = new Snippet('logo', points.titleAnchor.shiftFractionTowards(points.knee, 0.5))
-    points.slantBottomNotch = new Path()
-      .move(points.slantCurveStart)
-      .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
-      .intersectsY(points.slantBottom.y)
-      .pop()
-    points.slantTopNotch = points.slantOut.shiftTowards(
-      points.slantCurveStart,
-      store.get('slantTopNotchDistance')
-    )
-    macro('sprinkle', {
-      snippet: 'bnotch',
-      on: ['grainlineBottom', 'slantBottomNotch', 'slantTopNotch'],
-    })
+  /*
+   * Annotations
+   */
 
-    macro('bartack', {
-      anchor: points.slantTopNotch,
-      angle: points.slantTopNotch.angle(points.slantBottomNotch) - 90,
-      length: sa ? sa / 2 : 5,
-      suffix: 'slantTop',
-    })
-    macro('bartack', {
-      anchor: points.slantBottomNotch,
-      length: sa ? sa / 2 : 5,
-      angle: 180,
-      suffix: 'slantBottom',
-    })
+  // Cut list
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
 
-    if (sa) {
-      paths.sa = paths.saBase
-        .offset(sa)
-        .join(
-          new Path()
-            .move(points.floorIn)
-            .line(points.floorOut)
-            .offset(sa * 6)
-        )
-        .close()
-        .attr('class', 'fabric sa')
-    }
-    log.info(
-      `Inseam height: ${units(points.fork.dy(points.floorIn))} | ` +
-        `Waist: ${units((store.get('waistbandBack') + store.get('waistbandFront')) * 2)} | ` +
-        `Bottom leg width: ${units((store.get('legWidthBack') + store.get('legWidthFront')) / 2)}`
-    )
+  // Title
+  points.titleAnchor = new Point(points.knee.x, points.fork.y)
+  macro('title', {
+    at: points.titleAnchor,
+    nr: 1,
+    title: 'back',
+  })
 
-    if (paperless) {
-      // Clean up paperless dimensions
-      macro('rmad')
-      delete paths.hint
+  // Logo
+  snippets.logo = new Snippet('logo', points.titleAnchor.shiftFractionTowards(points.knee, 0.5))
 
-      macro('hd', {
-        from: points.floorIn,
-        to: points.grainlineBottom,
-        y: points.floorIn.y - 15,
-      })
-      macro('hd', {
-        from: points.grainlineBottom,
-        to: points.floorOut,
-        y: points.floorIn.y - 15,
-      })
-      macro('hd', {
-        from: points.floorIn,
-        to: points.floorOut,
-        y: points.floorIn.y - 30,
-      })
+  // Notches
+  points.slantBottomNotch = new Path()
+    .move(points.slantCurveStart)
+    .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
+    .intersectsY(points.slantBottom.y)
+    .pop()
+  points.slantTopNotch = points.slantOut.shiftTowards(
+    points.slantCurveStart,
+    store.get('slantTopNotchDistance')
+  )
+  macro('sprinkle', {
+    snippet: 'bnotch',
+    on: ['grainlineBottom', 'slantBottomNotch', 'slantTopNotch'],
+  })
 
-      let y = points.floorIn.y + sa * 6
-      macro('hd', {
-        from: points.fork,
-        to: points.grainlineBottom,
-        y: y + 15,
-      })
-      macro('hd', {
-        from: points.grainlineBottom,
-        to: points.slantBottomNotch,
-        y: y + 15,
-      })
-      macro('hd', {
-        from: points.grainlineBottom,
-        to: points.slantOut,
-        y: y + 30,
-      })
+  // Bartack
+  macro('bartack', {
+    anchor: points.slantTopNotch,
+    angle: points.slantTopNotch.angle(points.slantBottomNotch) - 90,
+    length: sa ? sa / 2 : 5,
+    suffix: 'slantTop',
+  })
+  macro('bartack', {
+    anchor: points.slantBottomNotch,
+    length: sa ? sa / 2 : 5,
+    angle: 180,
+    suffix: 'slantBottom',
+  })
 
-      y = points.styleWaistIn.y - sa
-      macro('hd', {
-        from: points.styleWaistIn,
-        to: points.grainlineTop,
-        y: y - 15,
-      })
-      macro('hd', {
-        from: points.fork,
-        to: points.grainlineTop,
-        y: y - 30,
-      })
-      macro('hd', {
-        from: points.grainlineTop,
-        to: points.waistPocketCenter,
-        y: y - 15,
-      })
-      macro('hd', {
-        from: points.grainlineTop,
-        to: points.slantOut,
-        y: y - 30,
-      })
+  log.info(
+    `Inseam height: ${units(points.fork.dy(points.floorIn))} | ` +
+      `Waist: ${units((store.get('waistbandBack') + store.get('waistbandFront')) * 2)} | ` +
+      `Bottom leg width: ${units((store.get('legWidthBack') + store.get('legWidthFront')) / 2)}`
+  )
 
-      macro('ld', {
-        from: points.pocketLeft,
-        to: points.pocketRight,
-        d: -15,
-      })
-      macro('ld', {
-        from: points.backDartLeft,
-        to: points.backDartRight,
-        d: 15,
-      })
-      macro('ld', {
-        from: points.pocketCenter,
-        to: points.waistPocketCenter,
-        d: 25,
-      })
+  // Dimensions
+  macro('rmad')
+  delete paths.hint
 
-      let x = points.fork.x - sa
-      macro('vd', {
-        from: points.fork,
-        to: points.pocketCenter,
-        x: x - 15,
-      })
-      macro('vd', {
-        from: points.fork,
-        to: points.waistPocketCenter,
-        x: x - 30,
-      })
-      macro('vd', {
-        from: points.fork,
-        to: points.styleWaistIn,
-        x: x - 45,
-      })
+  macro('hd', {
+    id: 'wHemLeftToPleat',
+    from: points.floorIn,
+    to: points.grainlineBottom,
+    y: points.floorIn.y - 15,
+  })
+  macro('hd', {
+    id: 'wHemRightToPleat',
+    from: points.grainlineBottom,
+    to: points.floorOut,
+    y: points.floorIn.y - 15,
+  })
+  macro('hd', {
+    id: 'wHem',
+    from: points.floorIn,
+    to: points.floorOut,
+    y: points.floorIn.y - 30,
+  })
 
-      x = points.slantOut.x + sa
-      macro('vd', {
-        from: points.floorOut,
-        to: points.slantBottomNotch,
-        x: x + 15,
-      })
-      macro('vd', {
-        from: points.floorOut,
-        to: points.slantOut,
-        x: x + 30,
-      })
-    }
-  }
+  let y = points.floorIn.y + sa * 6
+  macro('hd', {
+    id: 'wForkToPleat',
+    from: points.fork,
+    to: points.grainlineBottom,
+    y: y + 15,
+  })
+  macro('hd', {
+    id: 'wPleatToStartPocketSlant',
+    from: points.grainlineBottom,
+    to: points.slantBottomNotch,
+    y: y + 15,
+  })
+  macro('hd', {
+    id: 'wPleatToWaistSide',
+    from: points.grainlineBottom,
+    to: points.slantOut,
+    y: y + 30,
+  })
+
+  y = points.styleWaistIn.y - sa
+  macro('hd', {
+    id: 'wCbWaistToPleat',
+    from: points.styleWaistIn,
+    to: points.grainlineTop,
+    y: y - 15,
+  })
+  macro('hd', {
+    id: 'wForkToPleat',
+    from: points.fork,
+    to: points.grainlineTop,
+    y: y - 30,
+  })
+  macro('hd', {
+    id: 'wPleatToDartMid',
+    from: points.grainlineTop,
+    to: points.waistPocketCenter,
+    y: y - 15,
+  })
+  macro('hd', {
+    id: 'wPleatToWaistSide',
+    from: points.grainlineTop,
+    to: points.slantOut,
+    y: y - 30,
+  })
+  macro('ld', {
+    id: 'lWelt',
+    from: points.pocketLeft,
+    to: points.pocketRight,
+    d: -15,
+  })
+  macro('ld', {
+    id: 'lDart',
+    from: points.backDartLeft,
+    to: points.backDartRight,
+    d: 15,
+  })
+  macro('ld', {
+    id: 'lWaistToWeltPocket',
+    from: points.pocketCenter,
+    to: points.waistPocketCenter,
+    d: 25,
+  })
+  let x = points.fork.x - sa
+  macro('vd', {
+    id: 'hForkToDartTip',
+    from: points.fork,
+    to: points.pocketCenter,
+    x: x - 15,
+  })
+  macro('vd', {
+    id: 'hForkToDartMid',
+    from: points.fork,
+    to: points.waistPocketCenter,
+    x: x - 30,
+  })
+  macro('vd', {
+    id: 'hForkToCbWaist',
+    from: points.fork,
+    to: points.styleWaistIn,
+    x: x - 45,
+  })
+  x = points.slantOut.x + sa
+  macro('vd', {
+    id: 'hHemToPocketSlantStart',
+    from: points.floorOut,
+    to: points.slantBottomNotch,
+    x: x + 15,
+  })
+  macro('vd', {
+    id: 'wHemToSideWaist',
+    from: points.floorOut,
+    to: points.slantOut,
+    x: x + 30,
+  })
 
   return part
 }

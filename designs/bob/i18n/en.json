@@ -1,0 +1,31 @@
+{
+  "t": "Bob the bib",
+  "d": "This is the bib that you can create by following our design tutorial",
+  "p": {
+    "bib": "Bib"
+  },
+  "s": {
+    "biasTapeLength.t": "Bias tape: {{{ l }}}",
+    "biasTapeLength.d": "To finish the edge, you will need {{{ l }}} of [bias tape](/docs/sewing/bias-tape)",
+    "fabricNeeded": "You need a {{{ w }}} by {{{ h }}} piece of [suitable fabric](/docs/designs/bob/fabric) to make this bib",
+    "finishWithBiasTape": "Finish raw edge with bias tape"
+  },
+  "o": {
+    "neckRatio": {
+      "t": "Neck opening",
+      "d": "Controls the size of the neck opening relative to the bib size"
+    },
+    "widthRatio": {
+      "t": "Width",
+      "d": "Controls the width of the bib"
+    },
+    "lengthRatio": {
+      "t": "Length",
+      "d": "Controls the length of the bib"
+    },
+    "headSize": {
+      "t": "Head size",
+      "d": "The head circumference you want the bib to accomodate"
+    }
+  }
+}

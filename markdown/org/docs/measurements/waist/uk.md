@@ -1,7 +1,7 @@
 ---
-title: Waist circumference
+title: Обхват талії
 ---
 
-The **waist circumference** measurement is the circumference of your waist below your ribcage.
+**Обхват талії** — це вимір талії під грудною кліткою.
 
-To measure your **waist circumference**, wrap the tape measure around the narrowest part of your waist, making sure to keep it horizontal.
+Для зняття цієї мірки охопіть сантиметром найтонше місце талії, переконавшись, що стрічка знаходиться в горизонтальному положенні.

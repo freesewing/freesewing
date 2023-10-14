@@ -1,0 +1,187 @@
+{
+  "t": "Jaeger, das Sakko",
+  "d": "Jaeger ist ein sportliches Sakko mit zwei Knöpfen und aufgesetzten Taschen.",
+  "p": {
+    "backBase": "Back base",
+    "chestPocketBag": "Chest pocket bag",
+    "chestPocketWelt": "Chest pocket welt",
+    "collar": "Collar",
+    "collarStand": "Collar stand",
+    "frontBase": "Front base",
+    "innerPocketBag": "Inner pocket bag",
+    "innerPocketWelt": "Inner pocket welt",
+    "pocket": "Pocket",
+    "pocketLining": "Pocket lining",
+    "side": "Side",
+    "topSleeve": "Top sleeve",
+    "underCollar": "Under collar",
+    "underSleeve": "Under sleeve"
+  },
+  "s": {},
+  "o": {
+    "centerBackDart": {
+      "t": "Abnäher in der hinteren Mitte",
+      "d": "Abnäher in der hinteren Mitte, um einen abgerundeten Rücken unterzubringen"
+    },
+    "sleeveVentLength": {
+      "t": "Ärmellüftungslänge",
+      "d": "Länge der Ärmelöffnung"
+    },
+    "sleeveVentWidth": {
+      "t": "Ärmelschlitzbreite",
+      "d": "Breite der Ärmelöffnung"
+    },
+    "chestShaping": {
+      "t": "Brustformung",
+      "d": "Anzahl der Formatierung für die Brustkurve"
+    },
+    "frontDartPlacement": {
+      "t": "Platzierung des vorderen Abnähers",
+      "d": "Position der vorderen Abnäher"
+    },
+    "frontOverlap": {
+      "t": "Übertritt vorne",
+      "d": "Wie weit der Stoff über die Schließknöpfe hinausragt"
+    },
+    "sideFrontPlacement": {
+      "t": "Seitliche / vordere Platzierung",
+      "d": "Die Position der Seiten- / Frontgrenze"
+    },
+    "chestPocketDepth": {
+      "t": "Brusttasche Tiefe",
+      "d": "Die Tiefe der Brusttasche"
+    },
+    "chestPocketWidth": {
+      "t": "Brusttaschenbreite",
+      "d": "Die Breite der Brusttasche"
+    },
+    "chestPocketPlacement": {
+      "t": "Platzierung der Brusttasche",
+      "d": "Die Position der Brusttasche"
+    },
+    "chestPocketAngle": {
+      "t": "Brusttaschenwinkel",
+      "d": "Der Winkel, unter dem die Brusttasche platziert wird"
+    },
+    "chestPocketWeltSize": {
+      "t": "Brusttasche Rahmengröße",
+      "d": "Die Größe der Brusttasche"
+    },
+    "frontPocketPlacement": {
+      "t": "Fronttaschenplatzierung",
+      "d": "Position der Fronttasche"
+    },
+    "frontPocketWidth": {
+      "t": "Breite der Fronttasche",
+      "d": "Die Breite der Fronttasche"
+    },
+    "frontPocketDepth": {
+      "t": "Tiefe der Vordertasche",
+      "d": "Die Tiefe der Fronttasche"
+    },
+    "frontPocketRadius": {
+      "t": "Radius der Vordertasche",
+      "d": "Der Radius, um den die Fronttasche gerundet ist"
+    },
+    "innerPocketPlacement": {
+      "t": "Innentaschenplatzierung",
+      "d": "Die Position der Innentasche"
+    },
+    "innerPocketWidth": {
+      "t": "Innentaschenbreite",
+      "d": "Die Breite der Innentasche"
+    },
+    "innerPocketDepth": {
+      "t": "Innentaschentiefe",
+      "d": "Die Tiefe der Innentasche"
+    },
+    "innerPocketWeltHeight": {
+      "t": "Innentasche Rahmenhöhe",
+      "d": "Die Höhe der Innentasche"
+    },
+    "pocketFoldover": {
+      "t": "Taschenfalte",
+      "d": "Der Betrag, um den sich der Hauptstoff in der Tasche befindet"
+    },
+    "centerFrontHemDrop": {
+      "t": "Saumabfall in der Mitte",
+      "d": "Der Betrag, um den der Saum zur vorderen Mitte hin abgesenkt wird"
+    },
+    "backVent": {
+      "t": "Hinterer Gehschlitz",
+      "d": "Die Anzahl der hinteren Öffnungen"
+    },
+    "backVentLength": {
+      "t": "Hinterer Gehschlitz Länge",
+      "d": "Die Länge der Hinterlüftung(en)"
+    },
+    "buttonLength": {
+      "t": "Knopflänge",
+      "d": "Die Strecke, über die Knöpfe verteilt werden"
+    },
+    "frontCutawayAngle": {
+      "t": "Frontschnittwinkel",
+      "d": "Der Winkel, unter dem die Vorderseite zum Saum hin abgeschnitten wird"
+    },
+    "frontCutawayStart": {
+      "t": "Stern vorne",
+      "d": "Die Stelle, an der sich die Vorderseite zum Saum hin öffnet"
+    },
+    "frontCutawayEnd": {
+      "t": "Vorderes Cutaway-Ende",
+      "d": "Wenn Sie diesen Wert erhöhen, bleibt der vordere Schnitt näher an der vorderen Mitte"
+    },
+    "collarSpread": {
+      "t": "Kragen ausgebreitet",
+      "d": "Der Kragenausschnitt steuert, wie der Kragen über die Schultern drapiert"
+    },
+    "lapelStart": {
+      "t": "Revers Beginn",
+      "d": "Position, wo die Mittelfront in das Revers geht"
+    },
+    "lapelReduction": {
+      "t": "Reversverkleinerung",
+      "d": "Wie weit ist die Spitze der Revers nach innen gedreht?"
+    },
+    "collarHeight": {
+      "t": "Kragenhöhe",
+      "d": "Höhe des Kragens"
+    },
+    "collarNotchDepth": {
+      "t": "Kragentiefe",
+      "d": "Tiefe der Kragenkerbe"
+    },
+    "collarNotchAngle": {
+      "t": "Kragenwinkel",
+      "d": "Winkel der Kragenkerbe"
+    },
+    "collarNotchReturn": {
+      "t": "Kragenrückkehr",
+      "d": "Wie viel Kragen kommt von der Kerbe im Vergleich zum Revers zurück?"
+    },
+    "rollLineCollarHeight": {
+      "t": "Rollkragenhöhe",
+      "d": "Wie sehr die Rollschnur den Hals umarmt"
+    },
+    "hemRadius": {
+      "t": "Saumradius",
+      "d": "Der Betrag, um den der Saum gerundet ist"
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at your hips"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at your waist"
+    },
+    "buttons": {
+      "t": "Number of buttons",
+      "d": "Controls the amount of buttons"
+    },
+    "collarRoll": {
+      "t": "Collar roll",
+      "d": "Controls the amount of roll in the collar; how much the topcollar is higher than the undercollar."
+    }
+  }
+}

@@ -74,6 +74,7 @@ The following named exports are **utility methods**:
 | `lineIntersectsCircle`    | See the [lineIntersectsCircle](/reference/api/utils/lineintersectscircle) documentation |
 | `lineIntersectsCurve`     | See the [lineIntersectsCurve](/reference/api/utils/lineintersectscurve) documentation |
 | `linesIntersect`          | See the [linesIntersect](/reference/api/utils/linesintersect) documentation |
+| `mergeOptions`            | See the [mergeOptions](/reference/api/utils/mergeoptions) documentation |
 | `pctBasedOn`              | See the [pctBasedOn](/reference/api/utils/pctbasedon) documentation |
 | `pointOnBeam`             | See the [pointOnBeam](/reference/api/utils/pointonbeam) documentation |
 | `pointOnCurve`            | See the [pointOnCurve](/reference/api/utils/pointoncurve) documentation |

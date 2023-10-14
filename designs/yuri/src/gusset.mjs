@@ -1,19 +1,6 @@
 import { back } from './back.mjs'
 
-function yuriGusset({
-  Point,
-  Path,
-  points,
-  paths,
-  Snippet,
-  snippets,
-  complete,
-  sa,
-  paperless,
-  macro,
-  store,
-  part,
-}) {
+function yuriGusset({ Point, Path, points, paths, Snippet, snippets, sa, macro, store, part }) {
   const w = store.get('gussetLength')
   points.top = new Point(0, 0)
   points.bottom = new Point(0, w)
@@ -35,55 +22,65 @@ function yuriGusset({
 
   paths.seam = paths.hat.join(paths.curve).close()
 
-  // Complete?
-  if (complete) {
-    macro('cutonfold', {
-      from: new Point(points.top.x, points.top.y + 50),
-      to: points.bottom,
-      grainline: true,
-    })
-    macro('title', {
-      at: points.title,
-      nr: 4,
-      title: 'gusset',
-    })
-    points.logo = points.title.shift(-75, 100)
-    snippets.logo = new Snippet('logo', points.logo)
-    if (sa) {
-      paths.saBase = new Path().move(points.right).line(points.top).hide()
-      paths.sa = paths.curve
-        .offset(3 * sa)
-        .join(paths.saBase.offset(sa))
-        .line(points.top)
-        .close()
-        .attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.saBase = new Path().move(points.right).line(points.top).hide()
+    paths.sa = paths.curve
+      .offset(3 * sa)
+      .join(paths.saBase.offset(sa))
+      .line(points.top)
+      .close()
+      .attr('class', 'fabric sa')
   }
 
-  // Paperless?
-  if (paperless) {
-    macro('vd', {
-      from: points.top,
-      to: points.bottom,
-      x: points.top.x - sa - 15,
-    })
-    macro('vd', {
-      from: new Point(0, points.right.y),
-      to: points.bottom,
-      x: 20,
-    })
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric', onFold: true })
 
-    macro('ld', {
-      from: points.top,
-      to: points.right,
-      d: sa + 15,
-    })
-    macro('hd', {
-      from: new Point(0, points.right),
-      to: points.right,
-      y: points.right.y,
-    })
-  }
+  // Cut on fold
+  macro('cutonfold', {
+    from: new Point(points.top.x, points.top.y + 50),
+    to: points.bottom,
+    grainline: true,
+  })
+
+  // Title
+  macro('title', {
+    at: points.title,
+    nr: 4,
+    title: 'gusset',
+  })
+
+  // Logo
+  points.logo = points.title.shift(-75, 100)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  // Dimensions
+  macro('vd', {
+    id: 'hFull',
+    from: points.top,
+    to: points.bottom,
+    x: points.top.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hBottomToTipRight',
+    from: new Point(0, points.right.y),
+    to: points.bottom,
+    x: 20,
+  })
+  macro('ld', {
+    id: 'lSide',
+    from: points.top,
+    to: points.right,
+    d: sa + 15,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: new Point(0, points.right),
+    to: points.right,
+    y: points.right.y,
+  })
 
   return part
 }

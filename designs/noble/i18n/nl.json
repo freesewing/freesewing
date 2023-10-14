@@ -1,0 +1,95 @@
+{
+  "t": "Noble body block",
+  "d": "Noble is a body block with prince(ess) seams",
+  "p": {
+    "backInside": "Back inside",
+    "backOutside": "Back outside",
+    "backPoints": "Back base",
+    "frontInside": "Front inside",
+    "frontOutside": "Front outside",
+    "frontPoints": "Front base"
+  },
+  "s": {},
+  "o": {
+    "dartPosition": {
+      "t": "Dart position",
+      "d": "Controls whether to split at the shoulder or armhole"
+    },
+    "chestEase": {
+      "t": "Overwijdte borst",
+      "d": "Controls the amount of ease at the chest"
+    },
+    "waistEase": {
+      "t": "Overwijdte taille",
+      "d": "Controls the amount of ease at the waist"
+    },
+    "bustSpanEase": {
+      "t": "Overwijdte bustenwijdte",
+      "d": "Controls the amount of ease along the bust span"
+    },
+    "backDartHeight": {
+      "t": "Bepaalt de hoogte van de achterste neep",
+      "d": "Hoogte neep rug"
+    },
+    "waistDartLength": {
+      "t": "Lengte neep taille",
+      "d": "Bepaalt de lengte van de neep van de taille"
+    },
+    "shoulderDartPosition": {
+      "t": "Shoulder dart position",
+      "d": "Controls the position of the shoulder dart"
+    },
+    "upperDartLength": {
+      "t": "Upper dart length",
+      "d": "Controls the length of the upper dart"
+    },
+    "armholeDartPosition": {
+      "t": "Armhole dart position",
+      "d": "Controls the position of the armhole dart"
+    },
+    "armholeDepth": {
+      "t": "Diepte armsgat",
+      "d": "Bepaalt de diepte van het armsgat"
+    },
+    "backArmholeSlant": {
+      "t": "Schuin armsgat achter",
+      "d": "Controls the slant of the armhole at the back"
+    },
+    "backArmholeCurvature": {
+      "t": "Kromming armsgat achter",
+      "d": "Controls how deep the armhole is scooped out at the back"
+    },
+    "frontArmholeCurvature": {
+      "t": "Front armhole curvature",
+      "d": "Controls how deep the armhole is scooped out at the front bottom"
+    },
+    "frontArmholePitchDepth": {
+      "t": "Diepte armsgat vooraan",
+      "d": "Controls how deep the armhole cuts into the front"
+    },
+    "backArmholePitchDepth": {
+      "t": "Diepte armsgat achteraan",
+      "d": "Controls how deep the armhole cuts into the back"
+    },
+    "backNeckCutout": {
+      "t": "Hals uitsnijding achteraan",
+      "d": "Controls how deep the neck is cutout in the back"
+    },
+    "backHemSlope": {
+      "t": "Lope zoom achter",
+      "d": "Constrols the slope of the back hem"
+    },
+    "frontShoulderWidth": {
+      "t": "Schouderbreedte vooraan",
+      "d": "Controls how much width is added to the shoulder in the front"
+    },
+    "highBustWidth": {
+      "t": "Hoge buste-breedte",
+      "d": "Controls the width of the high bust"
+    },
+    "shoulderToShoulderEase": {
+      "t": "Shoulder to shoulder ease",
+      "d": "Controls the amount of ease along the shoulder to shoulder measurement"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "t": "Teagan T-shirt",
+  "d": "Teagan is a fitted T-shirt pattern.",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "sleeve": "Sleeve"
+  },
+  "s": {
+    "fullLengthFromHps.t": "T-Shirt length: {{{ length }}}",
+    "fullLengthFromHps.d": "The full length of the T-Shirt (from HPS to hem) is {{{ length }}}.",
+    "neckOpeningLength.t": "Neck opening length: {{{ length }}}",
+    "neckOpeningLength.d": "The full length of the T-Shirt's neck opening is {{{ length }}}. This is relevant for the knit binding finish."
+  },
+  "o": {
+    "draftForHighBust": {
+      "t": "Draft for high bust",
+      "d": "Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts."
+    },
+    "sleeveEase": {
+      "t": "Sleeve ease",
+      "d": "Amount of ease of your sleeves"
+    },
+    "sleeveLength": {
+      "t": "Sleeve length",
+      "d": "Controls the length of your sleeves"
+    },
+    "necklineBend": {
+      "t": "Neckline curvature",
+      "d": "Controls the curvature of the neckline."
+    },
+    "necklineDepth": {
+      "t": "Neckline depth",
+      "d": "Controls how deep the neck opening plunges down."
+    },
+    "necklineWidth": {
+      "t": "Neckline width",
+      "d": "Controls the width of the neck opening."
+    },
+    "fitWaist": {
+      "t": "Fit the waist",
+      "d": "Whether or not to fit the waist or rather only fit chest and hips."
+    },
+    "curveToWaistNo": {
+      "t": "Do not fit the waist",
+      "d": "Draft a pattern that transitions smoothly from chest to hips, not taking the waist measurement into account"
+    },
+    "curveToWaistYes": {
+      "t": "Fit the waist",
+      "d": "Draft a pattern that fits chest, waist, and hips (this is unusual for a T-shirt)"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Ease at the waist (only applies when the waist is fitted)."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Ease at the hips."
+    }
+  }
+}

@@ -1,19 +1,19 @@
 ---
-title: Fabric grain
+title: Ткацьке переплетення
 ---
 
-![The grainline runs parallel to the selvedge](fabric-grain.jpg)
+![Напрям основи розміщується паралельно крайці](fabric-grain.jpg)
 
-The grain of a fabric is determined by the alignment of the yarns in a woven fabric. More precisely, the grain line is determined by how the warp yarns run.
+Ткацьке переплетення залежить від структури ниток тканого полотна. Нас цікавить саме напрям основи — тобто напрям поздовжньої нитки, або ниток основи.
 
-Woven fabric are produced by weaving the so-called weft between the warp threads. The warp threads run along the length of a fabric roll, parallel to the selvedge, while the weft runs back and forth across its width.
+Ткані полотна виробляються шляхом переплетення утоку та основи: нитки утоку обплітають нитки основи. Нитки основи лежать вздовж рулону тканини паралельно до крайки, в той час як утік проходить від однієї крайки до іншої по ширині рулону.
 
-Grain is indicated on a pattern by the grain line. When cutting out your pattern, it's important to align the grain line of the pattern to the grain of your fabric.
+На викрійці ткацьке переплетення позначається лінією напряму основи. Під час крою важливо вирівняти лінію поздовжньої нитки на викрійці до напряму основи на тканині, з якої вирізаються деталі.
 
-> For more warp and weft details: [Weaving on Wikipedia](http://en.wikipedia.org/wiki/Weaving)
+> Додаткова інформація про основу та утік: [Ткацькі переплетення (Вікіпедія)](https://uk.wikipedia.org/wiki/%D0%A2%D0%BA%D0%B0%D1%86%D1%8C%D0%BA%D1%96_%D0%BF%D0%B5%D1%80%D0%B5%D0%BF%D0%BB%D0%B5%D1%82%D0%B5%D0%BD%D0%BD%D1%8F), [Основа (Вікіпедія)](https://uk.wikipedia.org/wiki/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B0_(%D1%82%D0%BA%D0%B0%D1%86%D1%82%D0%B2%D0%BE)), [Утік (Вікіпедія)](https://uk.wikipedia.org/wiki/%D0%A3%D1%82%D1%96%D0%BA_(%D1%82%D0%BA%D0%B0%D1%86%D1%82%D0%B2%D0%BE))
 
-> ##### Confused? Think wood
+> ##### Трохи розгубилися? Подумайте про деревину
 > 
-> Wood is not woven, but grows in different layers based on the seasons (growth rings). The way these layers are aligned are important for woodworkers. They influence to what extent the wood will deform after cutting it and how it will bend, as well as other parameters.
+> Деревина, звичайно, не сплетена — вона потовщується завдяки сезонній періодичності діяльності камбію, в результаті якої утворюються деревні кільця (річні шари). Розташування цих шарів відносно один одного мають значення для теслярів та столярів. Вони впливають на рівень деформації деревини після розпилу, її гнучкість та інші параметри.
 > 
-> Just like a woodworker will take this into account before cutting the wood, you should take grain into account before cutting out your fabric.
+> Як майстри по дереву враховують це перед розпилом деревини, так і ми маємо врахувати ткацьке переплетення перед кроєм.

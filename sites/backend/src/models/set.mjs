@@ -1,265 +1,360 @@
 import { log } from '../utils/log.mjs'
-import { setSetAvatar } from '../utils/sanity.mjs'
+import { replaceImage, storeImage, importImage } from '../utils/cloudflare-images.mjs'
+import { decorateModel } from '../utils/model-decorator.mjs'
 
+/*
+ * This model handles all set updates (typically that involves sending out emails)
+ */
 export function SetModel(tools) {
-  this.config = tools.config
-  this.prisma = tools.prisma
-  this.decrypt = tools.decrypt
-  this.encrypt = tools.encrypt
-  this.encryptedFields = ['measies', 'img', 'name', 'notes']
-  this.clear = {} // For holding decrypted data
-
-  return this
-}
-
-SetModel.prototype.guardedCreate = async function ({ body, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
-  if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
-  if (!body.name || typeof body.name !== 'string') return this.setResponse(400, 'nameMissing')
-
-  // Prepare data
-  const data = { name: body.name }
-  // Name (will be encrypted, so always set _some_ value)
-  if (typeof body.name === 'string') data.name = body.name
-  else data.name = '--'
-  // Notes (will be encrypted, so always set _some_ value)
-  if (body.notes || typeof body.notes === 'string') data.notes = body.notes
-  else data.notes = '--'
-  if (body.public === true) data.public = true
-  if (body.measies) data.measies = this.sanitizeMeasurements(body.measies)
-  data.imperial = body.imperial === true ? true : false
-  data.userId = user.uid
-  // Set this one initially as we need the ID to create a custom img via Sanity
-  data.img = this.config.avatars.set
-
-  // Create record
-  await this.unguardedCreate(data)
-
-  // Update img? (now that we have the ID)
-  const img =
-    this.config.use.sanity &&
-    typeof body.img === 'string' &&
-    (!body.unittest || (body.unittest && this.config.use.tests?.sanity))
-      ? await setSetAvatar(this.record.id, body.img)
-      : false
-
-  if (img) await this.unguardedUpdate(this.cloak({ img: img.url }))
-  else await this.read({ id: this.record.id })
-
-  return this.setResponse(201, 'created', { set: this.asSet() })
-}
-
-SetModel.prototype.unguardedCreate = async function (data) {
-  try {
-    this.record = await this.prisma.set.create({ data: this.cloak(data) })
-  } catch (err) {
-    log.warn(err, 'Could not create set')
-    return this.setResponse(500, 'createSetFailed')
-  }
-
-  return this
+  return decorateModel(this, tools, {
+    name: 'set',
+    encryptedFields: ['measies', 'img', 'name', 'notes'],
+    jsonFields: ['measies'],
+  })
 }
 
 /*
- * Loads a measurements set from the database based on the where clause you pass it
+ * Creates a set - Uses user input so we need to validate it
  *
- * Stores result in this.record
+ * @params {body} object - The request body
+ * @params {user} object - The user as provided by the auth middleware
+ * @returns {SetModel} object - The SetModel
  */
-SetModel.prototype.read = async function (where) {
-  try {
-    this.record = await this.prisma.set.findUnique({ where })
-  } catch (err) {
-    log.warn({ err, where }, 'Could not read measurements set')
-  }
+SetModel.prototype.guardedCreate = async function ({ body, user }) {
+  /*
+   * Enforce RBAC
+   */
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
-  this.reveal()
+  /*
+   * Do we have a POST body?
+   */
+  if (Object.keys(body).length < 1) return this.setResponse(400, 'postBodyMissing')
 
-  return this.setExists()
+  /*
+   * Is name set?
+   */
+  if (!body.name || typeof body.name !== 'string') return this.setResponse(400, 'nameMissing')
+
+  /*
+   * Create the initial record
+   */
+  await this.createRecord({
+    name: body.name.length > 0 ? body.name : '--',
+    notes: typeof body.notes === 'string' && body.notes.length > 0 ? body.notes : '--',
+    public: body.public === true ? true : false,
+    measies: typeof body.measies === 'object' ? this.sanitizeMeasurements(body.measies) : {},
+    imperial: body.imperial === true ? true : false,
+    userId: user.uid,
+    img: this.config.avatars.set,
+  })
+
+  /*
+   * If an image was added, now update it since we have the record id now
+   */
+  const img =
+    typeof body.img === 'string'
+      ? await storeImage(
+          {
+            id: `set-${this.record.id}`,
+            metadata: {
+              user: user.uid,
+              name: this.clear.name,
+            },
+            b64: body.img,
+            requireSignedURLs: true,
+          },
+          this.isTest(body)
+        )
+      : false
+
+  /*
+   * Either update the image, or refresh the record
+   */
+  if (img) await this.update({ img })
+  else await this.read({ id: this.record.id })
+
+  /*
+   * Now return 201 and the data
+   */
+  return this.setResponse201({ set: this.asSet() })
 }
 
 /*
  * Loads a measurements set from the database based on the where clause you pass it
  * In addition prepares it for returning the set data
  *
- * Stores result in this.record
+ * @params {params} object - The request (URL) parameters
+ * @params {user} object - The user as provided by the auth middleware
+ * @returns {SetModel} object - The SetModel
  */
 SetModel.prototype.guardedRead = async function ({ params, user }) {
-  if (user.level < 1) return this.setResponse(403, 'insufficientAccessLevel')
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
+  /*
+   * Enforce RBAC
+   */
+  if (!this.rbac.readSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
+  /*
+   * Attempt to read the record from the database
+   */
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && user.level < 5) {
+
+  /*
+   * If it does not exist, send a 404
+   */
+  if (!this.record) return this.setResponse(404)
+
+  /*
+   * You need to have at least the bughunter role to read other user's patterns
+   */
+  if (this.record.userId !== user.uid && !this.rbac.bughunter(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 
+  /*
+   * Return 200 and send the pattern data
+   */
   return this.setResponse(200, false, {
     result: 'success',
     set: this.asSet(),
   })
+}
+
+/*
+ * Loads a measurements set from the database but only if it's public
+ * This is a public route (no authentication)
+ *
+ * @params {params} object - The request (URL) parameters
+ * @returns {SetModel} object - The SetModel
+ */
+SetModel.prototype.publicRead = async function ({ params }) {
+  /*
+   * Attemp to read the record from the database
+   */
+  await this.read({ id: parseInt(params.id) })
+
+  /*
+   * If it is not public, return 404 rather than
+   * reveal that a non-public set exists
+   */
+  if (this.record.public !== true) return this.setResponse(404)
+
+  /*
+   * Return 200 and the set data
+   */
+  return this.setResponse200(this.asPublicSet())
 }
 
 /*
  * Clones a measurements set
  * In addition prepares it for returning the set data
  *
- * Stores result in this.record
+ * @params {params} object - The request (URL) parameters
+ * @params {user} object - The user as provided by the auth middleware
+ * @returns {SetModel} object - The SetModel
  */
 SetModel.prototype.guardedClone = async function ({ params, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
+  /*
+   * Enforce RBAC
+   */
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
+  /*
+   * Attempt to read the record from the database
+   */
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && !this.record.public && user.level < 5) {
+
+  /*
+   * You need at least the support role to clone another user's (non-public) set
+   */
+  if (this.record.userId !== user.uid && !this.record.public && !this.rbac.support(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 
-  // Clone set
+  /*
+   * Now clone the set
+   */
   const data = this.asSet()
   delete data.id
   data.name += ` (cloned from #${this.record.id})`
   data.notes += ` (Note: This measurements set was cloned from set #${this.record.id})`
-  await this.unguardedCreate(data)
+  await this.createRecord(data)
 
-  // Update unencrypted data
+  /*
+   * Decrypt data at rest
+   */
   this.reveal()
 
-  return this.setResponse(200, false, {
-    result: 'success',
-    set: this.asSet(),
-  })
+  /*
+   * Return 200 and the cloned data
+   */
+  return this.setResponse201({ set: this.asSet() })
 }
 
 /*
- * Helper method to decrypt at-rest data
- */
-SetModel.prototype.reveal = async function () {
-  this.clear = {}
-  if (this.record) {
-    for (const field of this.encryptedFields) {
-      this.clear[field] = this.decrypt(this.record[field])
-    }
-  }
-
-  return this
-}
-
-/*
- * Helper method to encrypt at-rest data
- */
-SetModel.prototype.cloak = function (data) {
-  for (const field of this.encryptedFields) {
-    if (typeof data[field] !== 'undefined') {
-      data[field] = this.encrypt(data[field])
-    }
-  }
-
-  return data
-}
-
-/*
- * Checks this.record and sets a boolean to indicate whether
- * the user exists or not
+ * Helper method to decrypt data from a non-instantiated set
  *
- * Stores result in this.exists
+ * @param {mset} object - The set data
+ * @returns {mset} object - The unencrypted data
  */
-SetModel.prototype.setExists = function () {
-  this.exists = this.record ? true : false
-
-  return this
-}
-
-/*
- * Updates the set data - Used when we create the data ourselves
- * so we know it's safe
- */
-SetModel.prototype.unguardedUpdate = async function (data) {
-  try {
-    this.record = await this.prisma.set.update({
-      where: { id: this.record.id },
-      data,
-    })
-  } catch (err) {
-    log.warn(err, 'Could not update set record')
-    process.exit()
-    return this.setResponse(500, 'updateSetFailed')
+SetModel.prototype.revealSet = function (mset) {
+  const clear = {}
+  for (const field of this.encryptedFields) {
+    try {
+      clear[field] = this.decrypt(mset[field])
+    } catch (err) {
+      //console.log(err)
+    }
   }
-  await this.reveal()
+  for (const field of this.jsonFields) {
+    try {
+      clear[field] = JSON.parse(clear[field])
+    } catch (err) {
+      //console.log(err)
+    }
+  }
 
-  return this.setResponse(200)
+  return { ...mset, ...clear }
 }
 
 /*
  * Updates the set data - Used when we pass through user-provided data
  * so we can't be certain it's safe
+ *
+ * @params {params} object - The request (URL) parameters
+ * @params {body} object - The request body
+ * @returns {SetModel} object - The SetModel
  */
 SetModel.prototype.guardedUpdate = async function ({ params, body, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
+  /*
+   * Enforce RBAC
+   */
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
+
+  /*
+   * Attempt to read record from database
+   */
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && user.level < 8) {
+
+  /*
+   * Only admins can update other user's sets
+   */
+  if (this.record.userId !== user.uid && !this.rbac.admin(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
+
+  /*
+   * Prepare data to update the record
+   */
   const data = {}
-  // Imperial
+
+  /*
+   * imperial
+   */
   if (body.imperial === true || body.imperial === false) data.imperial = body.imperial
-  // Name
+
+  /*
+   * name
+   */
   if (typeof body.name === 'string') data.name = body.name
-  // Notes
+
+  /*
+   * notes
+   */
   if (typeof body.notes === 'string') data.notes = body.notes
-  // Public
+
+  /*
+   * public
+   */
   if (body.public === true || body.public === false) data.public = body.public
-  // Measurements
-  const measies = {}
-  if (typeof body.measies === 'object') {
-    const remove = []
-    for (const [key, val] of Object.entries(body.measies)) {
-      if (this.config.measies.includes(key)) {
-        if (val === null) remove.push(key)
-        else if (typeof val == 'number' && val > 0) measies[key] = val
-      }
-    }
-    data.measies = { ...this.clear.measies, ...measies }
-    for (const key of remove) delete data.measies[key]
-  }
 
-  // Image (img)
-  if (typeof body.img === 'string') {
-    const img = await setSetAvatar(params.id, body.img)
-    data.img = img.url
-  }
+  /*
+   * measurements
+   */
+  if (typeof body.measies === 'object')
+    data.measies = this.sanitizeMeasurements({
+      ...this.clear.measies,
+      ...body.measies,
+    })
 
-  // Now update the record
-  await this.unguardedUpdate(this.cloak(data))
+  /*
+   * Image (img)
+   */
+  if (typeof body.img === 'string')
+    data.img = await replaceImage(
+      {
+        id: `set-${this.record.id}`,
+        data: body.img,
+        metadata: {
+          user: user.uid,
+          name: this.clear.name,
+        },
+      },
+      this.isTest(body)
+    )
 
-  return this.setResponse(200, false, { set: this.asSet() })
-}
+  /*
+   * Now update the database record
+   */
+  await this.update(data)
 
-/*
- * Removes the set - No questions asked
- */
-SetModel.prototype.unguardedDelete = async function () {
-  await this.prisma.set.delete({ here: { id: this.record.id } })
-  this.record = null
-  this.clear = null
-
-  return this.setExists()
+  /*
+   * Return 200 and the record data
+   */
+  return this.setResponse200({ set: this.asSet() })
 }
 
 /*
  * Removes the set - Checks permissions
+ *
+ * @params {params} object - The request (URL) parameters
+ * @params {user} object - The user as provided by the auth middleware
+ * @returns {SetModel} object - The SetModel
  */
 SetModel.prototype.guardedDelete = async function ({ params, user }) {
-  if (user.level < 3) return this.setResponse(403, 'insufficientAccessLevel')
-  if (user.iss && user.status < 1) return this.setResponse(403, 'accountStatusLacking')
+  /*
+   * Enforce RBAC
+   */
+  if (!this.rbac.writeSome(user)) return this.setResponse(403, 'insufficientAccessLevel')
 
+  /*
+   * Attempt to read the record from the database
+   */
   await this.read({ id: parseInt(params.id) })
-  if (this.record.userId !== user.uid && user.level < 8) {
+
+  /*
+   * You need to be admin to remove another user's data
+   */
+  if (this.record.userId !== user.uid && !this.rbac.admin(user)) {
     return this.setResponse(403, 'insufficientAccessLevel')
   }
 
-  await this.unguardedDelete()
+  /*
+   * Delete the record
+   */
+  await this.delete()
 
+  /*
+   * Return 204
+   */
   return this.setResponse(204, false)
+}
+
+/*
+ * Returns a list of sets for the user making the API call
+ */
+SetModel.prototype.userSets = async function (uid) {
+  if (!uid) return false
+  let sets
+  try {
+    sets = await this.prisma.set.findMany({ where: { userId: uid } })
+  } catch (err) {
+    log.warn(`Failed to search sets for user ${uid}: ${err}`)
+  }
+  const list = []
+  for (const set of sets) list.push(this.revealSet(set))
+
+  return list
 }
 
 /*
@@ -273,70 +368,97 @@ SetModel.prototype.asSet = function () {
 }
 
 /*
- * Helper method to set the response code, result, and body
+ * Returns record data fit for public publishing
+ */
+SetModel.prototype.asPublicSet = function () {
+  const data = {
+    author: 'FreeSewing.org',
+    type: 'measurementsSet',
+    about: 'Contains measurements in mm as well as metadata',
+    ...this.asSet(),
+  }
+  delete data.userId
+  data.measurements = data.measies
+  delete data.measies
+  data.units = data.imperial ? 'imperial' : 'metric'
+  delete data.imperial
+  delete data.public
+
+  return data
+}
+
+/*
  *
- * Will be used by this.sendResponse()
+ * Everything below this comment is part of the v2 => v3 migration code
+ * and can be removed once that migration is complete
  */
-SetModel.prototype.setResponse = function (status = 200, error = false, data = {}) {
-  this.response = {
-    status,
-    body: {
-      result: 'success',
-      ...data,
-    },
-  }
-  if (status > 201) {
-    this.response.body.error = error
-    this.response.body.result = 'error'
-    this.error = true
-  } else this.error = false
 
-  return this.setExists()
-}
+const migratePerson = (v2) => ({
+  createdAt: new Date(v2.created ? v2.created : v2.createdAt),
+  imperial: v2.units === 'imperial',
+  name: v2.name || '--', // Encrypted, so always set _some_ value
+  notes: v2.notes || '--', // Encrypted, so always set _some_ value
+  measies: v2.measurements || {}, // Encrypted, so always set _some_ value
+  updatedAt: new Date(v2.updatedAt),
+})
 
 /*
- * Helper method to send response
+ * This is a special import route
  */
-SetModel.prototype.sendResponse = async function (res) {
-  return res.status(this.response.status).send(this.response.body)
-}
-
-/*
- * Update method to determine whether this request is
- * part of a unit test
- */
-//UserModel.prototype.isUnitTest = function (body) {
-//  if (!body.unittest) return false
-//  if (!this.clear.email.split('@').pop() === this.config.tests.domain) return false
-//  if (body.email && !body.email.split('@').pop() === this.config.tests.domain) return false
-//
-//  return true
-//}
-
-/*
- * Helper method to check an account is ok
- */
-//UserModel.prototype.isOk = function () {
-//  if (
-//    this.exists &&
-//    this.record &&
-//    this.record.status > 0 &&
-//    this.record.consent > 0 &&
-//    this.record.role &&
-//    this.record.role !== 'blocked'
-//  )
-//    return true
-//
-//  return false
-//}
-
-/* Helper method to parse user-supplied measurements */
-SetModel.prototype.sanitizeMeasurements = function (input) {
-  const measies = {}
-  if (typeof input !== 'object') return measies
-  for (const [m, val] of Object.entries(input)) {
-    if (this.config.measies.includes(m) && typeof val === 'number' && val > 0) measies[m] = val
+SetModel.prototype.migrate = async function (v2user, userId) {
+  const lut = {} // lookup tabel for v2 handle to v3 id
+  for (const [handle, person] of Object.entries(v2user.people)) {
+    const data = { ...migratePerson(person), userId }
+    data.img = 'default-avatar'
+    try {
+      await this.createRecord(data)
+      lut[handle] = this.record.id
+    } catch (err) {
+      log.warn(err, 'Could not create set')
+      console.log(person)
+    }
   }
 
-  return measies
+  return lut
+}
+/*
+ * This is a special route not available for API users
+ */
+SetModel.prototype.import = async function (v2user, userId) {
+  const lut = {} // lookup tabel for v2 handle to v3 id
+  for (const [handle, person] of Object.entries(v2user.people)) {
+    const data = { ...migratePerson(person), userId }
+    await this.createRecord(data)
+    // Now that we have an ID, we can handle the image
+    if (person.picture && person.picture.slice(-4) !== '.svg') {
+      const imgId = `set-${this.record.id}`
+      const imgUrl =
+        'https://static.freesewing.org/users/' +
+        encodeURIComponent(v2user.handle.slice(0, 1)) +
+        '/' +
+        encodeURIComponent(v2user.handle) +
+        '/people/' +
+        encodeURIComponent(person.handle) +
+        '/' +
+        encodeURIComponent(person.picture)
+      data.img = await importImage({
+        id: imgId,
+        metadata: {
+          user: userId,
+          v2PersonHandle: handle,
+        },
+        url: imgUrl,
+      })
+      data.img = imgId
+    } else data.img = 'default-avatar'
+    try {
+      await this.createRecord(data)
+      lut[handle] = this.record.id
+    } catch (err) {
+      log.warn(err, 'Could not create set')
+      console.log(person)
+    }
+  }
+
+  return lut
 }

@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function tiberiusTunica({
   Point,
   points,
@@ -11,12 +9,12 @@ function tiberiusTunica({
   complete,
   snippets,
   Snippet,
+  store,
   sa,
-  paperless,
   part,
 }) {
   // Handle width
-  let width =
+  const width =
     options.width === 'toElbow'
       ? measurements.shoulderToElbow
       : options.width === 'toMidArm'
@@ -68,119 +66,125 @@ function tiberiusTunica({
   paths.seam = paths.saBase.join(paths.hem).join(paths.fold).unhide().attr('class', 'fabric')
 
   // clavi
-  if (options.clavi) {
+  if (options.clavi && complete) {
     // make points
     points.claviCenterTop = points.top.shiftFractionTowards(points.topLeft, options.clavusLocation)
     points.claviRightTop = points.claviCenterTop.shift(0, clavusWidth)
     points.claviLeftTop = points.claviRightTop.flipX(points.claviCenterTop)
     points.claviRightBottom = new Point(points.claviRightTop.x, points.bottom.y)
     points.claviLeftBottom = new Point(points.claviLeftTop.x, points.bottom.y)
-
-    // draw paths
-    paths.clavusRight = new Path()
+    // draw path
+    paths.clavi = new Path()
       .move(points.claviRightBottom)
       .line(points.claviRightTop)
-      .attr('class', 'various dashed')
-      .attr('data-text', 'biasTape')
-      .attr('data-text-class', 'center fill-various')
-    paths.clavusLeft = new Path()
       .move(points.claviLeftBottom)
       .line(points.claviLeftTop)
-      .attr('class', 'various dashed')
-      .attr('data-text', 'biasTape')
-      .attr('data-text-class', 'center fill-various')
+      .addClass('note dashed')
+    macro('banner', {
+      path: paths.clavi,
+      text: 'tiberius:biasTape',
+      classes: 'center fill-note text-sm',
+      repeat: 69,
+    })
   }
 
-  // Complete?
-  if (complete) {
-    // notches
-    snippets.hl = new Snippet('notch', points.headLeft)
-    snippets.al = new Snippet('notch', points.armholeLeft)
+  // seam allowance
+  if (sa)
+    paths.sa = paths.saBase
+      .offset(sa)
+      .join(paths.hem.offset(sa * 2.5))
+      .close()
+      .attr('class', 'fabric sa')
 
-    // cut on fold
-    macro('cutonfold', {
-      from: points.bottom,
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric', onFold: true })
+
+  // Notches
+  snippets.hl = new Snippet('notch', points.headLeft)
+  snippets.al = new Snippet('notch', points.armholeLeft)
+
+  // Cut on fold
+  macro('cutonfold', {
+    from: points.bottom,
+    to: points.top,
+    grainline: true,
+  })
+
+  // Logo
+  points.midTop = points.top.shiftFractionTowards(points.headLeft, 0.5)
+  points.midBottom = new Point(points.midTop.x, points.bottom.y)
+  points.logo = points.midTop.shiftFractionTowards(points.midBottom, 0.3)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  // Title
+  points.title = points.midTop.shiftFractionTowards(points.midBottom, 0.5)
+  macro('title', {
+    at: points.title,
+    nr: 1,
+    title: 'tunica',
+    align: 'center',
+  })
+
+  // Scalebox
+  points.scalebox = points.midTop.shiftFractionTowards(points.midBottom, 0.7)
+  macro('scalebox', { at: points.scalebox })
+
+  // Dimensions
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottom,
+    to: points.top,
+    x: points.bottomLeft.x - 30 - sa,
+  })
+  macro('vd', {
+    id: 'hToNotch',
+    from: points.bottomLeft,
+    to: points.armholeLeft,
+    x: points.armholeLeft.x - 15 - sa,
+  })
+  macro('vd', {
+    id: 'hFromNotch',
+    from: points.armholeLeft,
+    to: points.topLeft,
+    x: points.armholeLeft.x - 15 - sa,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.topLeft,
+    to: points.top,
+    y: points.top.y - sa - (options.clavi ? 60 : 30),
+  })
+  macro('hd', {
+    id: 'wNotchToFold',
+    to: points.top,
+    from: points.headLeft,
+    y: points.top.y - 15 - sa,
+  })
+
+  // for clavi
+  if (options.clavi) {
+    macro('hd', {
+      id: 'wClavi1ToFold',
+      from: points.claviRightTop,
       to: points.top,
-      grainline: true,
+      y: points.top.y - 30 - sa,
     })
-
-    // logo & title
-    points.midTop = points.top.shiftFractionTowards(points.headLeft, 0.5)
-    points.midBottom = new Point(points.midTop.x, points.bottom.y)
-    points.logo = points.midTop.shiftFractionTowards(points.midBottom, 0.3)
-    snippets.logo = new Snippet('logo', points.logo)
-    points.title = points.midTop.shiftFractionTowards(points.midBottom, 0.5)
-    macro('title', {
-      at: points.title,
-      nr: 1,
-      title: 'tunica',
+    macro('hd', {
+      id: 'wClavi2ToFold',
+      from: points.claviLeftTop,
+      to: points.top,
+      y: points.top.y - 45 - sa,
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
-
-    // scalebox
-    points.scalebox = points.midTop.shiftFractionTowards(points.midBottom, 0.7)
-    macro('scalebox', { at: points.scalebox })
-
-    // seam allowance
-    if (sa) {
-      paths.sa = paths.saBase
-        .offset(sa)
-        .join(paths.hem.offset(sa * 2.5))
-        .close()
-        .attr('class', 'fabric sa')
-    }
-
-    // Paperless?
-    if (paperless) {
-      macro('vd', {
-        from: points.bottom,
-        to: points.top,
-        x: points.bottomLeft.x - 30 - sa,
-      })
-      macro('vd', {
-        from: points.bottomLeft,
-        to: points.armholeLeft,
-        x: points.armholeLeft.x - 15 - sa,
-      })
-      macro('vd', {
-        from: points.armholeLeft,
-        to: points.topLeft,
-        x: points.armholeLeft.x - 15 - sa,
-      })
-      macro('hd', {
-        from: points.topLeft,
-        to: points.top,
-        y: points.top.y - sa - (options.clavi ? 60 : 30),
-      })
-      macro('hd', {
-        to: points.top,
-        from: points.headLeft,
-        y: points.top.y - 15 - sa,
-      })
-
-      // for clavi
-      if (options.clavi) {
-        macro('hd', {
-          from: points.claviRightTop,
-          to: points.top,
-          y: points.top.y - 30 - sa,
-        })
-        macro('hd', {
-          from: points.claviLeftTop,
-          to: points.top,
-          y: points.top.y - 45 - sa,
-        })
-      }
-    }
   }
+
   return part
 }
 
 export const tunica = {
   name: 'tiberius.tunica',
-  plugins: [pluginBundle],
   measurements: [
     'head',
     'shoulderToElbow',

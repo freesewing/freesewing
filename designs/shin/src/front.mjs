@@ -7,8 +7,6 @@ function shinFront({
   Path,
   points,
   paths,
-  complete,
-  paperless,
   snippets,
   Snippet,
   sa,
@@ -17,8 +15,8 @@ function shinFront({
   utils,
   part,
 }) {
-  let angle = -12
-  let bulge = (measurements.waistToUpperLeg - measurements.waistToHips) * options.bulge
+  const angle = -12
+  const bulge = (measurements.waistToUpperLeg - measurements.waistToHips) * options.bulge
   points.hipSide = new Point(0, 0)
   points.hipCb = new Point(store.get('hipFront'), 0)
   points.legSide = points.hipSide.shift(
@@ -111,74 +109,88 @@ function shinFront({
     .line(points.crossSeam)
   */
 
-  // Complete?
-  if (complete) {
-    points.logo = points.hipSide.shiftFractionTowards(points.seatCb, 0.3)
-    points.title = points.hipSide.shiftFractionTowards(points.seatCb, 0.7)
-    snippets.logo = new Snippet('logo', points.logo)
-    macro('title', {
-      at: points.title,
-      nr: 2,
-      title: 'front',
-    })
-    points.grainlineFrom = points.seatCb.shift(180, 30)
-    points.grainlineTo = points.hipCb.shift(180, 30)
-    macro('grainline', {
-      from: points.grainlineFrom,
-      to: points.grainlineTo,
-    })
-    if (sa) {
-      paths.sa = paths.hemBase
-        .offset(3 * sa)
-        .join(paths.saBase.offset(sa))
-        .close()
-        .attr('class', 'fabric sa')
-    }
-  }
+  if (sa)
+    paths.sa = paths.hemBase
+      .offset(3 * sa)
+      .join(paths.saBase.offset(sa))
+      .close()
+      .addClass('fabric sa')
 
-  // Paperless?
-  if (paperless) {
-    macro('vd', {
-      from: points.legSide,
-      to: points.hipSide,
-      x: points.hipSide.x - sa - 15,
-    })
-    macro('vd', {
-      from: points.reducedLegInner,
-      to: points.hipSide,
-      x: points.hipSide.x - sa - 30,
-    })
-    macro('vd', {
-      from: points.reducedLegInner,
-      to: points.reducedCrossSeam,
-      x: points.reducedCrossSeam.x + sa + 15,
-    })
-    macro('vd', {
-      from: points.reducedLegInner,
-      to: points.hipCb,
-      x: points.reducedCrossSeam.x + sa + 30,
-    })
-    macro('hd', {
-      from: points.hipSide,
-      to: points.hipCb,
-      y: points.hipSide.y - sa - 15,
-    })
-    macro('hd', {
-      from: points.hipSide,
-      to: points.reducedCrossSeam,
-      y: points.hipSide.y - sa - 30,
-    })
-    macro('hd', {
-      from: points.legSide,
-      to: points.reducedLegInner,
-      y: points.reducedLegInner.y + 3 * sa + 15,
-    })
-    macro('hd', {
-      from: points.legSide,
-      to: points.reducedCrossSeam,
-      y: points.reducedLegInner.y + 3 * sa + 30,
-    })
-  }
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Logo
+  points.logo = points.hipSide.shiftFractionTowards(points.seatCb, 0.3)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  // Title
+  points.title = points.hipSide.shiftFractionTowards(points.seatCb, 0.7)
+  macro('title', {
+    at: points.title,
+    nr: 2,
+    title: 'front',
+  })
+
+  // Grainline
+  points.grainlineFrom = points.seatCb.shift(180, 30)
+  points.grainlineTo = points.hipCb.shift(180, 30)
+  macro('grainline', {
+    from: points.grainlineFrom,
+    to: points.grainlineTo,
+  })
+
+  // Dimensions
+  macro('vd', {
+    id: 'hSide',
+    from: points.legSide,
+    to: points.hipSide,
+    x: points.hipSide.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.reducedLegInner,
+    to: points.hipSide,
+    x: points.hipSide.x - sa - 30,
+  })
+  macro('vd', {
+    id: 'hInseam',
+    from: points.reducedLegInner,
+    to: points.reducedCrossSeam,
+    x: points.reducedCrossSeam.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFront',
+    from: points.reducedLegInner,
+    to: points.hipCb,
+    x: points.reducedCrossSeam.x + sa + 30,
+  })
+  macro('hd', {
+    id: 'wAtWaist',
+    from: points.hipSide,
+    to: points.hipCb,
+    y: points.hipSide.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.hipSide,
+    to: points.reducedCrossSeam,
+    y: points.hipSide.y - sa - 30,
+  })
+  macro('hd', {
+    id: 'wAtHem',
+    from: points.legSide,
+    to: points.reducedLegInner,
+    y: points.reducedLegInner.y + 3 * sa + 15,
+  })
+  macro('hd', {
+    id: 'wHemSideToFork',
+    from: points.legSide,
+    to: points.reducedCrossSeam,
+    y: points.reducedLegInner.y + 3 * sa + 30,
+  })
 
   return part
 }

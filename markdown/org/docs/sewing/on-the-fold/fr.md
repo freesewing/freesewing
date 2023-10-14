@@ -8,7 +8,7 @@ Cela signifie que la moitié seulement de la pièce de patron est imprimée, et 
 
 La ligne de pli est indiquée avec une double flèche, comme dans cet exemple :
 
-<Legend part="cutonfold">Un repère de découpe au pli</Legend>
+<Legend part="cutonfold">Un indicateur de découpe au pli</Legend>
 
 <Tip>
 

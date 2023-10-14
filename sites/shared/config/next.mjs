@@ -1,5 +1,4 @@
 import path from 'path'
-import remarkGfm from 'remark-gfm'
 import { designs, plugins } from '../../../config/software/index.mjs'
 
 /*
@@ -7,88 +6,68 @@ import { designs, plugins } from '../../../config/software/index.mjs'
  * Parameters:
  *
  * site: one of 'dev', 'org', or 'lab'
- * remarkPlugins: Array of remark plugins to load
- * srcPkgs: Array of folders in the monorepo/packages that should be aliased
- * so they are loaded from source, rather than from a compiled bundle
  */
-const config = (site, remarkPlugins = []) => ({
-  experimental: {
-    externalDir: true,
-  },
-  pageExtensions: ['mjs'],
-  webpack: (config, options) => {
-    // Fixes npm packages that depend on node modules
-    if (!options.isServer) {
-      config.resolve.fallback.fs = false
-      config.resolve.fallback.path = false
-      config.resolve.fallback.child_process = false
-    }
+const config = ({ site }) => {
+  return {
+    experimental: {
+      externalDir: true,
+    },
+    pageExtensions: ['mjs'],
+    webpack: (config, options) => {
+      // Fixes npm packages that depend on node modules
+      if (!options.isServer) {
+        config.resolve.fallback.fs = false
+        config.resolve.fallback.path = false
+        config.resolve.fallback.child_process = false
+      }
 
-    // MDX support
-    config.module.rules.push({
-      test: /\.md?$/,
-      use: [
-        options.defaultLoaders.babel,
-        {
-          loader: '@mdx-js/loader',
-          //providerImportSource: '@mdx-js/react',
-          options: {
-            remarkPlugins: [remarkGfm, ...remarkPlugins],
-          },
+      // Fix for nextjs bug #17806
+      config.module.rules.push({
+        test: /index.mjs$/,
+        type: 'javascript/auto',
+        resolve: {
+          fullySpecified: false,
         },
-      ],
-    })
+      })
 
-    // YAML support
-    config.module.rules.push({
-      test: /\.ya?ml$/,
-      use: 'yaml-loader',
-    })
+      // Suppress warnings about importing version from package.json
+      // We'll deal with it in v3 of FreeSewing
+      config.ignoreWarnings = [/only default export is available soon/]
 
-    // Fix for nextjs bug #17806
-    config.module.rules.push({
-      test: /index.mjs$/,
-      type: 'javascript/auto',
-      resolve: {
-        fullySpecified: false,
-      },
-    })
+      // Aliases
+      config.resolve.alias.shared = path.resolve('../shared/')
+      config.resolve.alias.site = path.resolve(`../${site}/`)
+      config.resolve.alias.markdown = path.resolve(`../../markdown/${site}/`)
+      config.resolve.alias.orgmarkdown = path.resolve(`../../markdown/org/`)
+      config.resolve.alias.devmarkdown = path.resolve(`../../markdown/dev}/`)
+      config.resolve.alias.config = path.resolve('../../config/')
+      config.resolve.alias.designs = path.resolve('../../designs/')
+      config.resolve.alias.plugins = path.resolve('../../plugins/')
+      config.resolve.alias.pkgs = path.resolve('../../packages/')
+      config.resolve.alias.root = path.resolve('../../')
 
-    // Suppress warnings about importing version from package.json
-    // We'll deal with it in v3 of FreeSewing
-    config.ignoreWarnings = [/only default export is available soon/]
+      // Load designs from source, rather than compiled package
+      for (const design in designs) {
+        config.resolve.alias[`@freesewing/${design}`] = path.resolve(
+          `../../designs/${design}/src/index.mjs`
+        )
+      }
+      // Load plugins from source, rather than compiled package
+      for (const plugin in plugins) {
+        config.resolve.alias[`@freesewing/${plugin}`] = path.resolve(
+          `../../plugins/${plugin}/src/index.mjs`
+        )
+      }
+      // Load these from source, rather than compiled package
+      for (const pkg of ['core', 'i18n', 'models', 'snapseries', 'react-components']) {
+        config.resolve.alias[`@freesewing/${pkg}`] = path.resolve(
+          `../../packages/${pkg}/src/index.mjs`
+        )
+      }
 
-    // Aliases
-    config.resolve.alias.shared = path.resolve('../shared/')
-    config.resolve.alias.site = path.resolve(`../${site}/`)
-    config.resolve.alias.markdown = path.resolve(`../../markdown/${site}/`)
-    config.resolve.alias.config = path.resolve('../../config/')
-    config.resolve.alias.designs = path.resolve('../../designs/')
-    config.resolve.alias.plugins = path.resolve('../../plugins/')
-    config.resolve.alias.pkgs = path.resolve('../../packages/')
-    config.resolve.alias.root = path.resolve('../../')
-
-    // Load designs from source, rather than compiled package
-    for (const design in designs) {
-      config.resolve.alias[`@freesewing/${design}`] = path.resolve(
-        `../../designs/${design}/src/index.mjs`
-      )
-    }
-    // Load plugins from source, rather than compiled package
-    for (const plugin in plugins) {
-      config.resolve.alias[`@freesewing/${plugin}`] = path.resolve(
-        `../../plugins/${plugin}/src/index.mjs`
-      )
-    }
-    // Load these from source, rather than compiled package
-    for (const pkg of ['core', 'i18n', 'models', 'snapseries']) {
-      config.resolve.alias[`@freesewing/${pkg}`] = path.resolve(
-        `../../packages/${pkg}/src/index.mjs`
-      )
-    }
-
-    return config
-  },
-})
+      return config
+    },
+  }
+}
 
 export default config

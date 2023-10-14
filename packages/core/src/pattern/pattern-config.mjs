@@ -44,6 +44,8 @@ export function PatternConfig(pattern) {
   this.parts = {}
   /** @type {Object} which parts are hidden */
   this.partHide = {}
+  /** @type {String[]} The order in which parts should be drafted */
+  this.draftOrder = []
 
   /** @type {Object} to track when to overwrite options */
   __addNonEnumProp(this, '__mutated', {
@@ -94,7 +96,6 @@ PatternConfig.prototype.isPartValid = function (part) {
  */
 PatternConfig.prototype.addPart = function (part) {
   if (this.isPartValid(part)) this.__addPart([part])
-
   return this
 }
 
@@ -122,7 +123,7 @@ PatternConfig.prototype.asConfig = function () {
     resolvedDependencies: this.resolvedDependencies,
     directDependencies: this.directDependencies,
     inject: this.inject,
-    draftOrder: this.__resolveDraftOrder(),
+    draftOrder: this.draftOrder,
     partHide: this.partHide,
   }
 }
@@ -142,9 +143,9 @@ PatternConfig.prototype.__addPart = function (depChain) {
   const part = depChain[0]
 
   // only process a part that hasn't already been processed
-  if (!this.parts[part.name]) this.parts[part.name] = Object.freeze(part)
-  else return
+  if (this.parts[part.name]) return
 
+  this.parts[part.name] = Object.freeze(part)
   // if it hasn't been registered with a distance, do that now
   if (typeof this.__mutated.partDistance[part.name] === 'undefined') {
     // the longer the chain, the deeper the part is down it
@@ -164,6 +165,19 @@ PatternConfig.prototype.__addPart = function (depChain) {
 
   // add the part's config
   this.__addPartConfig(part)
+
+  // if it's a top level part
+  if (depChain.length === 1) {
+    // its resolved dependency list is a backwards representation of the draft order of its dependencies
+    for (var i = this.resolvedDependencies[part.name].length - 1; i >= 0; i--) {
+      let dep = this.resolvedDependencies[part.name][i]
+      // only add it if it's not already on the list from another part
+      if (this.draftOrder.indexOf(dep) === -1) this.draftOrder.push(dep)
+    }
+
+    // add it last of all
+    this.draftOrder.push(part.name)
+  }
 }
 
 /**
@@ -403,10 +417,15 @@ PatternConfig.prototype.__resolvePartDependencies = function (depChain) {
       if (DISTANCE_DEBUG) this.store.log.debug(`Processing \`${part.name}\` "${d}:"`)
 
       // enforce an array
-      const depsOfType = Array.isArray(part[d]) ? part[d] : [part[d]]
+      const depsOfType = [].concat(part[d])
 
-      // each dependency
-      depsOfType.forEach((dot) => {
+      // loop through backwards so that we're resolving last to first
+      // this order is necessary so that when we add the reversed chain to the draft order
+      // afters are included in the order they were listed in the config, but recursive
+      // resolution order is also correct
+      for (var i = depsOfType.length - 1; i >= 0; i--) {
+        const dot = depsOfType[i]
+
         // add it as a direct dependency of the current part
         this.__addDependency('directDependencies', part.name, dot.name)
         // add it as a resolved dependency of all parts in the chain
@@ -421,13 +440,9 @@ PatternConfig.prototype.__resolvePartDependencies = function (depChain) {
           this.__addPart([dot, ...depChain])
         } else {
           // if it's already registered, recursion won't happen, but we still need to add its resolved dependencies to all parts in the chain
-          // this.resolvedDependencies[dot.name].forEach((r) => {
-          //   depChain.forEach((c) => this.__resolvePartDependencies('resolvedDependencies', c.name, r))
-          // })
           this.__resolvePartDependencies([dot, ...depChain])
-          // and check for stricter hiding policies
         }
-      })
+      }
     }
   })
 
@@ -446,8 +461,13 @@ PatternConfig.prototype.__addDependency = function (dependencyList, partName, de
   this[dependencyList][partName] = this[dependencyList][partName] || []
   if (dependencyList == 'resolvedDependencies' && DISTANCE_DEBUG)
     this.store.log.debug(`add ${depName} to ${partName} dependencyResolution`)
-  if (this[dependencyList][partName].indexOf(depName) === -1)
-    this[dependencyList][partName].push(depName)
+
+  // if it's already in the dependency list, take it out because it needs to be put on the end
+  const depIndex = this[dependencyList][partName].indexOf(depName)
+  if (depIndex !== -1) this[dependencyList][partName].splice(depIndex, 1)
+
+  // put it at the end of the list
+  this[dependencyList][partName].push(depName)
 }
 
 /**
@@ -489,16 +509,16 @@ PatternConfig.prototype.__resolveMutatedPartDistance = function (partName) {
   if (!this.directDependencies[partName]) return
 
   // propose that each of the part's direct dependencies should be at a distance 1 further than the part's distance
-  const proposed_dependency_distance = this.__mutated.partDistance[partName] + 1
+  let proposedDependencyDistance = this.__mutated.partDistance[partName] + 1
   // check each direct dependency
   this.directDependencies[partName].forEach((dependency) => {
     // if the dependency doesn't have a distance, or that distance is less than the proposal
     if (
       typeof this.__mutated.partDistance[dependency] === 'undefined' ||
-      this.__mutated.partDistance[dependency] < proposed_dependency_distance
+      this.__mutated.partDistance[dependency] < proposedDependencyDistance
     ) {
       // set the new distance
-      this.__mutated.partDistance[dependency] = proposed_dependency_distance
+      this.__mutated.partDistance[dependency] = proposedDependencyDistance
       // bump the dependency's dependencies as well
       this.__resolveMutatedPartDistance(dependency)
     }
@@ -508,19 +528,4 @@ PatternConfig.prototype.__resolveMutatedPartDistance = function (partName) {
         `partDistance for \`${dependency}\` is __${this.__mutated.partDistance[dependency]}__`
       )
   })
-}
-
-/**
- * Resolves the draft order based on the configuation
- *
- * @private
- * @param {object} graph - The object of resolved dependencies, used to call itself recursively
- * @return {Pattern} this - The Pattern instance
- */
-PatternConfig.prototype.__resolveDraftOrder = function () {
-  this.__draftOrder = Object.keys(this.parts).sort(
-    (p1, p2) => this.__mutated.partDistance[p2] - this.__mutated.partDistance[p1]
-  )
-
-  return this.__draftOrder
 }

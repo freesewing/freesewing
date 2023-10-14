@@ -1,15 +1,15 @@
 ---
-title: Upper leg circumference
+title: Обхват верху ноги
 ---
 
-The **upper leg circumference** is the measurement around your leg, near the top of your leg.
+**Обхват верху ноги** — це вимір навколо верхньої частини ноги (або Вашого стегна).
 
-You should measure this a bit below your crotch, refer to the illustration for guidance. Make sure to keep the tape measure horizontal to the floor as you measure the circumference of your leg.
+Для зняття цієї мірки розташуйте сантиметр трохи нижче Вашого паху, зверніться до ілюстрації для наочності. Переконайтеся, що стрічка розміщується паралельно до підлоги під час зняття цієї мірки.
 
 <Tip>
 
-##### Be mindful of the vertical location of this measurement
+##### Пам'ятайте про вертикальне розташування цього виміру
 
-This measurements is also used as **a vertical reference** to determine the vertical space in which to draft the seat/crotch of trousers. As such, the vertical location of this measurement is important.
+Цей вимір також використовується як **вертикальний орієнтир** для визначення вертикального розташування пахового шва штанів. Отже, вертикальне розташування цього виміру є важливим.
 
 </Tip>

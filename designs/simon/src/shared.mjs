@@ -127,7 +127,10 @@ export const draftBarrelCuff = (part) => {
 }
 
 export const decorateBarrelCuff = (part) => {
-  const { macro, snippets, Snippet, points, measurements, options, Point } = part.shorthand()
+  const { macro, store, snippets, Snippet, points, measurements, options, Point } = part.shorthand()
+  // Cutlist
+  store.cutlist.setCut({ cut: 4, from: 'fabric' })
+
   // Title
   points.title = new Point(points.bottomRight.x / 2, points.bottomRight.y / 2)
   macro('title', {
@@ -147,7 +150,7 @@ export const decorateBarrelCuff = (part) => {
   for (let i = 1; i <= options.cuffButtonRows; i++) {
     points['button' + i] = points.buttonLineTop.shiftFractionTowards(
       points.buttonLineBottom,
-      (1 / (options.cuffButtonRows + 1)) * i
+      (1 / (Number(options.cuffButtonRows) + 1)) * i
     )
     snippets['button' + i] = new Snippet('button', points['button' + i])
     points['buttonhole' + i] = new Point(points.buttonholeLineTop.x, points['button' + i].y)
@@ -183,7 +186,10 @@ export const draftFrenchCuff = (part) => {
 }
 
 export const decorateFrenchCuff = (part) => {
-  const { macro, snippets, Snippet, points, measurements, options, Point } = part.shorthand()
+  const { macro, store, snippets, Snippet, points, measurements, options, Point } = part.shorthand()
+  // Cutlist
+  store.cutlist.setCut({ cut: 4, from: 'fabric' })
+
   // Title
   points.title = new Point(points.bottomRight.x / 2, points.bottomRight.y / 2)
   macro('title', {
@@ -216,30 +222,35 @@ export const paperlessBarrelCuff = (part) => {
   const { sa, macro, points, options, complete } = part.shorthand()
   if (complete) {
     macro('hd', {
+      id: 'wBetweenButtonAndHole',
       from: points.buttonhole1,
       to: points.button1,
       y: points.bottomLeft.y + 15 + sa,
     })
   }
   macro('hd', {
+    id: 'wFull',
     from: points.bottomLeft,
     to: points.bottomRight,
     y: points.bottomLeft.y + 30 + sa,
   })
   macro('vd', {
+    id: 'hCuff',
     from: points.bottomLeft,
     to: points.topLeft.shift(0, 40),
     x: points.bottomLeft.x - 15 - sa,
   })
   if (complete && options.barrelCuffNarrowButton) {
     macro('hd', {
+      id: 'wBetweenButtons',
       from: points.narrowButton1,
       to: points.button1,
       y: points.topRight.y - 15 - sa,
     })
   }
-  if (complete && options.cuffButtonRows === 2) {
+  if (complete && Number(options.cuffButtonRows) === 2) {
     macro('vd', {
+      id: 'hBetweenButtons',
       from: points.button2,
       to: points.button1,
       x: points.topRight.x + 15 + sa,
@@ -253,22 +264,26 @@ export const paperlessFrenchCuff = (part) => {
   const { sa, macro, points, complete } = part.shorthand()
   if (complete) {
     macro('hd', {
+      id: 'wBetweenButtons',
       from: points.button4,
       to: points.button2,
       y: points.bottomLeft.y + 15 + sa,
     })
     macro('vd', {
+      id: 'hBetweenButtons',
       from: points.button2,
       to: points.button1,
       x: points.topRight.x + 15 + sa,
     })
   }
   macro('hd', {
+    id: 'wFull',
     from: points.midLeft,
     to: points.midRight,
     y: points.bottomLeft.y + 30 + sa,
   })
   macro('vd', {
+    id: 'hFull',
     from: points.bottomRight.shift(180, 40),
     to: points.topRight.shift(180, 40),
     x: points.topRight.x + 30 + sa,
@@ -278,107 +293,134 @@ export const paperlessFrenchCuff = (part) => {
 }
 
 export const frontDimensions = (part, side = 'left') => {
-  const { sa, options, paperless, points, paths, macro } = part.shorthand()
+  const { sa, options, points, paths, macro } = part.shorthand()
   const factor = side === 'right' ? -1 : 1
   if (sa) {
     macro('banner', {
-      path: paths.hemSa,
-      text: ['hem', ': 3x', 'seamAllowance'],
-    })
-    macro('banner', {
-      path: paths.saFrench,
-      text: ['frenchSeam', ': 2x', 'seamAllowance'],
+      id: 'ffsa',
+      path: paths.ffsa,
+      text: 'simon:flatFelledSeamAllowance',
+      classes: 'text-sm fill-note center',
+      dy: side === 'left' ? -2 : 9,
     })
   }
-  if (paperless) {
+  macro('vd', {
+    id: 'hArmholeToArmholePitch',
+    from: points.armhole,
+    to: points.armholePitch,
+    x: points.armhole.x + (15 + sa * options.ffsa) * factor,
+  })
+  macro('vd', {
+    id: 'hArmholeToShoulder',
+    from: points.armhole,
+    to: points.s3ArmholeSplit,
+    x: points.armhole.x + (30 + sa * options.ffsa) * factor,
+  })
+  macro('vd', {
+    id: 'hArmholeToHps',
+    from: points.armhole,
+    to: points.s3CollarSplit,
+    x: points.armhole.x + (45 + sa * options.ffsa) * factor,
+  })
+  macro('vd', {
+    id: 'hWaistToArmhole',
+    from: points.waist,
+    to: points.armhole,
+    x: points.armhole.x + (15 + sa * options.ffsa) * factor,
+  })
+  macro('vd', {
+    id: 'hHipsToArmhole',
+    from: points.hips,
+    to: points.armhole,
+    x: points.armhole.x + (30 + sa * options.ffsa) * factor,
+  })
+  macro('ld', {
+    id: 'wAtArmhole',
+    // Avoid having text upside-down on one side
+    from: side === 'left' ? points.cfArmhole : points.armhole,
+    to: side === 'left' ? points.armhole : points.cfArmhole,
+  })
+  macro('ld', {
+    id: 'wAtWaist',
+    // Avoid having text upside-down on one side
+    from: side === 'left' ? points.cfWaist : points.waist,
+    to: side === 'left' ? points.waist : points.cfWaist,
+  })
+  macro('ld', {
+    id: 'wAtHips',
+    // Avoid having text upside-down on one side
+    from: side === 'left' ? points.cfHips : points.hips,
+    to: side === 'left' ? points.hips : points.cfHips,
+  })
+  if (options.hemStyle === 'baseball') {
     macro('vd', {
-      from: points.armhole,
-      to: points.armholePitch,
-      x: points.armhole.x + (15 + sa * options.ffsa) * factor,
+      id: 'hBaseballCurve',
+      from: points.bballStart,
+      to: points.bballEnd,
+      x: points.hips.x + (15 + options.ffsa * sa) * factor,
     })
     macro('vd', {
-      from: points.armhole,
-      to: points.s3ArmholeSplit,
-      x: points.armhole.x + (30 + sa * options.ffsa) * factor,
+      id: 'hHemToHips',
+      from: points.bballStart,
+      to: points.hips,
+      x: points.hips.x + (30 + options.ffsa * sa) * factor,
     })
     macro('vd', {
-      from: points.armhole,
+      id: 'hHemToArmhole',
+      from: points.bballStart,
+      to: points.armhole,
+      x: points.hips.x + (75 + options.ffsa * sa) * factor,
+    })
+    macro('vd', {
+      id: 'hFull',
+      from: points.bballStart,
       to: points.s3CollarSplit,
-      x: points.armhole.x + (45 + sa * options.ffsa) * factor,
+      x: points.hips.x + (90 + options.ffsa * sa) * factor,
+    })
+    macro('hd', {
+      id: 'wBaseballCurve',
+      from: points.bballStart,
+      to: points.bballEnd,
+      y: points.bballStart.y + 15 + 3 * sa,
+    })
+  } else if (options.hemStyle === 'slashed') {
+    macro('vd', {
+      id: 'hSlashCurve',
+      from: points.slashEnd,
+      to: points.slashStart,
+      x: points.hips.x + (15 + 3 * sa) * factor,
     })
     macro('vd', {
-      from: points.waist,
-      to: points.armhole,
-      x: points.armhole.x + (15 + sa * options.ffsa) * factor,
+      id: 'hHemToHips',
+      from: points.slashEnd,
+      to: points.hips,
+      x: points.hips.x + (30 + 3 * sa) * factor,
     })
     macro('vd', {
-      from: points.hips,
+      id: 'hHemToArmhole',
+      from: points.slashEnd,
       to: points.armhole,
-      x: points.armhole.x + (30 + sa * options.ffsa) * factor,
+      x: points.hips.x + (75 + 3 * sa) * factor,
     })
-    macro('ld', {
-      from: points.cfWaist,
-      to: points.waist,
+    macro('vd', {
+      id: 'hFull',
+      from: points.slashEnd,
+      to: points.s3CollarSplit,
+      x: points.hips.x + (90 + 3 * sa) * factor,
     })
-    if (options.hemStyle === 'baseball') {
-      macro('vd', {
-        from: points.bballStart,
-        to: points.bballEnd,
-        x: points.hips.x + (15 + options.ffsa * sa) * factor,
-      })
-      macro('vd', {
-        from: points.bballStart,
-        to: points.hips,
-        x: points.hips.x + (30 + options.ffsa * sa) * factor,
-      })
-      macro('vd', {
-        from: points.bballStart,
-        to: points.armhole,
-        x: points.hips.x + (45 + options.ffsa * sa) * factor,
-      })
-      macro('vd', {
-        from: points.bballStart,
-        to: points.s3CollarSplit,
-        x: points.hips.x + (60 + options.ffsa * sa) * factor,
-      })
-      macro('hd', {
-        from: points.bballStart,
-        to: points.bballEnd,
-        y: points.bballStart.y + 15 + 3 * sa,
-      })
-    } else if (options.hemStyle === 'slashed') {
-      macro('vd', {
-        from: points.slashEnd,
-        to: points.slashStart,
-        x: points.hips.x + (15 + 3 * sa) * factor,
-      })
-      macro('vd', {
-        from: points.slashEnd,
-        to: points.hips,
-        x: points.hips.x + (30 + 3 * sa) * factor,
-      })
-      macro('vd', {
-        from: points.slashEnd,
-        to: points.armhole,
-        x: points.hips.x + (45 + 3 * sa) * factor,
-      })
-      macro('vd', {
-        from: points.slashEnd,
-        to: points.s3CollarSplit,
-        x: points.hips.x + (60 + 3 * sa) * factor,
-      })
-    } else {
-      macro('vd', {
-        from: points.hem,
-        to: points.armhole,
-        x: points.armhole.x + (45 + options.ffsa * sa) * factor,
-      })
-      macro('vd', {
-        from: points.hem,
-        to: points.s3CollarSplit,
-        x: points.armhole.x + (60 + options.ffsa * sa) * factor,
-      })
-    }
+  } else {
+    macro('vd', {
+      id: 'hHemtoArmhole',
+      from: points.hem,
+      to: points.armhole,
+      x: points.armhole.x + (45 + options.ffsa * sa) * factor,
+    })
+    macro('vd', {
+      id: 'hFull',
+      from: points.hem,
+      to: points.s3CollarSplit,
+      x: points.armhole.x + (60 + options.ffsa * sa) * factor,
+    })
   }
 
   return part

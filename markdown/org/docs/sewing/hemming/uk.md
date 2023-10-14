@@ -1,11 +1,11 @@
 ---
-title: Hemming
+title: Підшивання краю
 ---
 
-![The hem at the bottom of a T-shirt](coverlock-hem.jpg)
+![Поділ внизу футболки](coverlock-hem.jpg)
 
-Hemming, or a hem, is a type of finish that is done on the bottom of a garment.
+Підшивання краю, або поділ (з англ. хеммінг) — це спосіб завершення краю, переважно виконується на нижній частині виробу.
 
-The hem of your trousers is where they meet your shoes. The hem of a dress is the bottom edge of the dress.
+Подолом штанців є край холош, що зустрічається зі взуттям. Подолом сукні є її нижній край.
 
-The hem is not a seam in the sense that it does not join two parts together. Rather hemming is used to finish the fabric edge and prevent it from fraying.
+Поділ не є швом у тому сенсі, що він з'єднує дві деталі разом. Підшивання краю виконується для обробки краю тканини та запобігання зношення.

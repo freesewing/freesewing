@@ -1,5 +1,4 @@
 import { box, drawLine } from './shared.mjs'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 
 const allFabricTypes = ['fabric', 'lining', 'canvas', 'interfacing', 'various']
 const allLineTypes = ['note', 'mark', 'contrast', 'help']
@@ -70,26 +69,21 @@ function legendOtherLines({ points, Point, paths, Path, part }) {
 
 export const fabricLines = {
   name: 'legend.fabricLines',
-  plugins: pluginBundle,
   draft: legendFabricLines,
 }
 export const lineStrokes = {
   name: 'legend.lineStrokes',
-  plugins: pluginBundle,
   draft: legendLineStrokes,
 }
 export const lineWidths = {
   name: 'legend.lineWidths',
-  plugins: pluginBundle,
   draft: legendLineWidths,
 }
 export const saLines = {
   name: 'legend.saLines',
-  plugins: pluginBundle,
   draft: legendSaLines,
 }
 export const otherLines = {
   name: 'legend.otherLines',
-  plugins: pluginBundle,
   draft: legendOtherLines,
 }

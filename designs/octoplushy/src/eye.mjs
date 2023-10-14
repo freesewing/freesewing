@@ -2,41 +2,48 @@ import { headSection1 } from './head.mjs'
 
 function octoplushyEye(
   partNumber,
-  {
-    options,
-    Point,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    complete,
-    sa,
-    paperless,
-    macro,
-    store,
-    part,
-  }
+  { options, Point, Path, points, paths, Snippet, snippets, sa, macro, expand, units, store, part }
 ) {
-  if (options.type != 'squid' && options.type != 'octopus') {
-    part.hide()
-    return part
-  }
-  if (partNumber > (options.type == 'squid' ? 1 : 2)) {
-    part.hide()
-    return part
-  }
+  if (options.type == 'octoplushy') return part
+  if (partNumber > (options.type == 'squid' ? 1 : 2)) return  part.hide()
 
   const c = 0.55191502449351
 
-  let sectionWidth = store.get('sectionWidth')
-  let eyeSize = sectionWidth / 1.5
-  let logoScale = 0.25
-  let titleScale = 0.25
-  if (partNumber == 1) {
-    eyeSize *= 0.65
-    logoScale = 0.15
-    titleScale = 0.16
+  const sectionWidth = store.get('sectionWidth')
+  const logoScale = 0.35
+  const titleScale = 0.25
+  const eyeSize = (sectionWidth / 1.5) * (partNumber === 1 ? 0.65 : 1)
+  const eyeBrowWidth = eyeSize * 0.375
+  const eyeCirc = (eyeSize + eyeBrowWidth * 2) * Math.PI
+
+  if (expand) {
+    // Hint about expand
+    store.flag.preset('expandIsOn')
+  } else {
+    // Expand is off, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
+    const message =
+      (options.type == 'squid' ? `squid` : 'octopus') +
+      (partNumber == 2 ? 'Eyebrow' : partNumber == 1 ? 'Pupil' : 'Eye')
+    store.flag.note({
+      msg: message,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
+      replace: {
+        width: units(eyeCirc + extraSa),
+        length: units(eyeBrowWidth * 2 + extraSa),
+      },
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
   }
 
   if (partNumber < 2) {
@@ -62,15 +69,12 @@ function octoplushyEye(
       .curve(points.rightCp1, points.topCp2, points.top)
       .close()
       .attr('class', 'fabric')
+
     points.logo = points.top.shiftFractionTowards(points.bottom, 0.3)
     points.titleAnchor = points.bottom
       .shiftFractionTowards(points.top, 0.25)
       .shift(180, eyeSize / 10)
   } else {
-    logoScale = 0.35
-    titleScale = 0.25
-    let eyeBrowWidth = eyeSize * 0.375
-    let eyeCirc = (eyeSize + eyeBrowWidth * 2) * Math.PI
     points.tl = new Point(0, 0)
     points.tr = points.tl.shift(0, eyeCirc)
     points.bl = points.tl.shift(270, eyeBrowWidth * 2)
@@ -93,48 +97,45 @@ function octoplushyEye(
       .shiftFractionTowards(points.bl, 0.3)
   }
 
-  // If partNumber === 0, the part is "Eye" for octopus & squid only
-  // If partNumber === 1, the part is "Pupil" for octopus & squid only
-  // If partNumber === 2, the part is "Eyebrow" for octopus only
-  if (partNumber === 2) store.cutlist.addCut({ cut: 2, material: 'color1Top' })
-  if (partNumber === 1) store.cutlist.addCut({ cut: 2, material: 'black' })
-  if (partNumber === 0) store.cutlist.addCut({ cut: 2, material: 'white' })
+  points.gridAnchor = points.logo.clone()
+  snippets.logo = new Snippet('logo', points.logo).attr('data-scale', logoScale)
 
-  if (complete) {
-    snippets.logo = new Snippet('logo', points.logo).attr('data-scale', logoScale)
+  macro('title', {
+    at: points.titleAnchor,
+    nr: 3 + partNumber * 3,
+    title: partNumber == 2 ? 'eyebrow' : partNumber == 1 ? 'pupil' : 'eye',
+    scale: titleScale,
+  })
 
-    macro('title', {
-      at: points.titleAnchor,
-      nr: 3 + partNumber * 3,
-      title: partNumber == 2 ? 'eyebrow' : partNumber == 1 ? 'pupil' : 'eye',
-      scale: titleScale,
-    })
+  store.cutlist.addCut({
+    cut: 2,
+    from: partNumber == 2 ? 'fabric' : partNumber == 1 ? 'pupilFabric' : 'eyeFabric',
+  })
 
-    if (sa) {
-      paths.sa = paths.eye.offset(Math.min(sa, 6)).attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = paths.eye.offset(Math.min(sa, 6)).attr('class', 'fabric sa')
   }
 
-  // Paperless?
-  if (paperless) {
-    if (partNumber < 2) {
-      macro('hd', {
-        from: points.left,
-        to: points.right,
-        y: points.top.y - sa,
-      })
-    } else {
-      macro('hd', {
-        from: points.tl,
-        to: points.tr,
-        y: points.tl.y - sa,
-      })
-      macro('vd', {
-        from: points.bl,
-        to: points.tl,
-        x: points.tl.x - sa,
-      })
-    }
+  if (partNumber < 2) {
+    macro('hd', {
+      from: points.left,
+      to: points.right,
+      y: points.top.y - sa,
+      id: 'width',
+    })
+  } else {
+    macro('hd', {
+      from: points.tl,
+      to: points.tr,
+      y: points.tl.y - sa,
+      id: 'width',
+    })
+    macro('vd', {
+      from: points.bl,
+      to: points.tl,
+      x: points.tl.x - sa,
+      id: 'height',
+    })
   }
 
   return part

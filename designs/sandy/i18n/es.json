@@ -1,0 +1,47 @@
+{
+  "t": "Sandy, falda de vuelo",
+  "d": "Sandy es un patrón de falda de vuelo circular adaptable.",
+  "p": {
+    "skirt": "Skirt",
+    "waistband": "Waistband"
+  },
+  "s": {},
+  "o": {
+    "waistbandWidth": {
+      "t": "Anchura de la cinturilla",
+      "d": "Controla la anchura de la cinturilla."
+    },
+    "waistbandPosition": {
+      "t": "Posición de la cinturilla",
+      "d": "Controla la posición de la cinturilla."
+    },
+    "waistbandShape": {
+      "t": "Forma de la cinturilla",
+      "d": "Si quieres una cinturilla recta o curvada."
+    },
+    "circleRatio": {
+      "t": "Porcentaje de círculo",
+      "d": "El porcentaje de círculo que quieres que tenga la falda."
+    },
+    "waistbandOverlap": {
+      "t": "Superposición de la cinturilla",
+      "d": "La cantidad en la que los extremos de la cinturilla se superponen."
+    },
+    "gathering": {
+      "t": "Fruncido",
+      "d": "El porcentaje por el que la parte superior de la falda es más largo que la parte inferior de la cinturilla."
+    },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "Determines how long the skirt will be."
+    },
+    "seamlessFullCircle": {
+      "t": "Círculo completo sin costura",
+      "d": "Permite una falda de círculo completo sin costuras."
+    },
+    "hemWidth": {
+      "t": "Hem width",
+      "d": "Anchura del dobladillo"
+    }
+  }
+}

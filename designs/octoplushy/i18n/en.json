@@ -1,0 +1,81 @@
+{
+  "t": "Octoplushy the octopus",
+  "d": "A multi-armed companion for next-level hugs",
+  "p": {
+    "armSection1": "Arm section 1",
+    "armSection2": "Arm section 2",
+    "eye1": "Eye 1",
+    "eye2": "Eye 2",
+    "eye3": "Eye 3",
+    "headSection1": "Head section 1",
+    "headSection2": "Head section 2"
+  },
+  "s": {
+    "eye": "Eye",
+    "mouth": "Mouth",
+    "stichLine": "Stitch line",
+    "foldLine": "Fold lines",
+    "octopusEye.t": "The octopus eye is not shown",
+    "octopusEye.d": "The **Octopus eye** is a circular piece of fabric with a diameter of {{{ width }}}.",
+    "octopusPupil.t": "The octopus pupil is not shown",
+    "octopusPupil.d": "The **Octopus pupil** is a circular piece of fabric with a diameter of {{{ width }}}.",
+    "octopusEyebrow.t": "The octopus eyebrow is not shown",
+    "octopusEyebrow.d": "The **Octopus eyebrow** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "squidEye.t": "The squid eye is not shown",
+    "squidEye.d": "The **Squid eye** is a circular piece of fabric with a diameter of {{{ width }}}.",
+    "squidPupil.t": "The squid pupil is not shown",
+    "squidPupil.d": "The **Squid pupil** is a circular piece of fabric with a diameter of {{{ width }}}.",
+    "squidEyebrow.t": "The squid eyebrow is not shown",
+    "squidEyebrow.d": "The **Squid eyebrow** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long."
+  },
+  "o": {
+    "size": {
+      "t": "Size",
+      "d": "Controls the overall size (value shown is the size of the head)"
+    },
+    "type": {
+      "t": "Type",
+      "d": "Allows you to choose one of the variants of this design"
+    },
+    "type.octoplushy": {
+      "t": "Octoplushy",
+      "d": "Draft the octoplushy variant"
+    },
+    "type.octopus": {
+      "t": "Octopus",
+      "d": "Draft the octopus variant"
+    },
+    "type.squid": {
+      "t": "Squid",
+      "d": "Draft the squid variant"
+    },
+    "armWidth": {
+      "t": "Arm width",
+      "d": "Controls the width of the arms"
+    },
+    "armLength": {
+      "t": "Arm length",
+      "d": "Controls the length of the arms"
+    },
+    "neckWidth": {
+      "t": "Neck width",
+      "d": "Determines the width at the neck"
+    },
+    "armTaper": {
+      "t": "Arm tapering",
+      "d": "Controls the amount by which the arms taper"
+    },
+    "bottomTopArmRatio": {
+      "t": "Bottom/Top arm ratio",
+      "d": "Changes the ratio between the fabric on the top of the arms versus that on the bottom of the arms"
+    },
+    "bottomArmReduction": {
+      "t": "Bottom arm reduction",
+      "d": "This changes how long the bottom fabric of the arms is compared to the top fabric. It makes the arms more curly"
+    },
+    "bottomArmReductionPlushy": {
+      "t": "Bottom arm reduction (plushy)",
+      "d": "This changes how long the bottom fabric of the arms is compared to the top fabric. It makes the arms more curly"
+    }
+  }
+}

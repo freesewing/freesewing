@@ -1,0 +1,24 @@
+{
+  "t": "Cravate Trayvon",
+  "d": "Trayvon est une cravate qui ne fait pas d'économies pour un résultat professionnel.",
+  "p": {
+    "fabricLoop": "Fabric loop",
+    "fabricTail": "Queue en tissu",
+    "fabricTip": "Pointe en tissu",
+    "interfacingTail": "Entoilage de queue",
+    "interfacingTip": "Entoilage de pointe",
+    "liningTail": "Doublure de queue",
+    "liningTip": "Doublure de pointe"
+  },
+  "s": {},
+  "o": {
+    "tipWidth": {
+      "t": "Largeur de la pointe",
+      "d": "La largeur de votre cravate au niveau de la pointe"
+    },
+    "knotWidth": {
+      "t": "Largeur du nœud",
+      "d": "La largeur de votre cravate au niveau du noeud"
+    }
+  }
+}

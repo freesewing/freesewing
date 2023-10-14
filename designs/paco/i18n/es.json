@@ -1,0 +1,37 @@
+{
+  "t": "Paco, pantalones largos",
+  "d": "Paco son pantalones de verano casual pero con estilo.",
+  "p": {
+    "back": "Back",
+    "backPocketBag": "Back pocket bag",
+    "backPocketWelt": "Back pocket welt",
+    "backPocketWeltInterfacing": "Bacl pocket welt interfacing",
+    "cuff": "Cuff",
+    "front": "Front",
+    "frontPocketBag": "Front pocket bag",
+    "waistband": "Waistband"
+  },
+  "s": {},
+  "o": {
+    "heelEase": {
+      "t": "Heel ease",
+      "d": "La cantidad de facilidad en tu talón (cuando pisas la pierna)"
+    },
+    "frontPockets": {
+      "t": "Pockets delanteros",
+      "d": "Añadir o no bolsillos frontales en la costura lateral"
+    },
+    "backPockets": {
+      "t": "Paquetes de retroceso",
+      "d": "Añadir o no bolsillos de soldadura a la espalda"
+    },
+    "elasticatedHem": {
+      "t": "Hilo Elasticado",
+      "d": "Si desea o no un llavero elasticado"
+    },
+    "ankleElastic": {
+      "t": "Anchura elástica Ancla/Hem",
+      "d": "Ancho de elástico (opcional) en el ancla/hem"
+    }
+  }
+}

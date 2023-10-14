@@ -2,79 +2,95 @@ import { front } from './front.mjs'
 
 function draftCarltonChestPocketBag({
   units,
-  paperless,
   sa,
   store,
-  complete,
   points,
   macro,
   Point,
   paths,
   Path,
+  expand,
   part,
 }) {
+  if (expand) store.flag.preset('expandIsOn')
+  else {
+    // Expand is on, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
+    store.flag.note({
+      msg: `carlton:cutChestPocketBag`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
+      replace: {
+        w: units(store.get('chestPocketHeight') + extraSa),
+        l: units(store.get('chestPocketBagDepth') * 2 + extraSa),
+      },
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
+
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(
     store.get('chestPocketHeight'),
-    store.get('chestPocketBagDepth') / 2
+    store.get('chestPocketBagDepth') * 2
   )
   points.bottomLeft = new Point(points.topLeft.x, points.bottomRight.y)
   points.topRight = new Point(points.bottomRight.x, points.topLeft.y)
-  points.startLeft = points.topLeft.shiftFractionTowards(points.bottomLeft, 0.33)
-  points.endLeft = points.topLeft.shiftFractionTowards(points.bottomLeft, 0.66)
-  points.startRight = points.topRight.shiftFractionTowards(points.bottomRight, 0.33)
-  points.endRight = points.topRight.shiftFractionTowards(points.bottomRight, 0.66)
 
   paths.seam = new Path()
-    .move(points.startRight)
-    .line(points.topRight)
+    .move(points.topRight)
     .line(points.topLeft)
-    .line(points.startLeft)
-    .move(points.endLeft)
     .line(points.bottomLeft)
     .line(points.bottomRight)
-    .line(points.endRight)
-    .attr('class', 'lining')
+    .line(points.topRight)
+    .close()
+    .addClass('lining')
 
-  paths.hint = new Path()
-    .move(points.startLeft)
-    .line(points.endLeft)
-    .move(points.endRight)
-    .line(points.startRight)
-    .attr('class', 'lining dashed')
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'lining sa')
 
+  /*
+   * Annotations
+   */
+
+  // Cut list
   store.cutlist.addCut({ material: 'lining' })
 
-  if (complete) {
-    points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    macro('title', {
-      at: points.title,
-      nr: 17,
-      title: 'chestPocketBag',
-    })
+  // Title
+  points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.2)
+  macro('title', {
+    at: points.title,
+    nr: 17,
+    title: 'chestPocketBag',
+  })
 
-    macro('grainline', {
-      from: points.bottomLeft.shift(0, 10),
-      to: points.topLeft.shift(0, 10),
-    })
+  // Grainline
+  macro('grainline', {
+    from: points.bottomLeft.shift(0, 10),
+    to: points.topLeft.shift(0, 10),
+  })
 
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'lining sa')
-    }
-    macro('ld', {
-      from: points.bottomRight.shift(180, 15),
-      to: points.topRight.shift(180, 15),
-      text: units(store.get('chestPocketBagDepth') * 2),
-    })
+  // Dimensions
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottomRight,
+    to: points.topRight,
+    x: points.topRight.x + sa + 15,
+  })
 
-    if (paperless) {
-      macro('hd', {
-        from: points.bottomLeft,
-        to: points.bottomRight,
-        y: points.bottomLeft.y + sa + 15,
-      })
-    }
-  }
+  macro('hd', {
+    id: 'wFull',
+    from: points.bottomLeft,
+    to: points.bottomRight,
+    y: points.bottomLeft.y + sa + 15,
+  })
 
   return part
 }

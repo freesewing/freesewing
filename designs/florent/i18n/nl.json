@@ -1,0 +1,18 @@
+{
+  "t": "Florent pet",
+  "d": "Florent is een klassieke platte pet, rond bovenaan met een kleine klep vooraan.",
+  "p": {
+    "brimBottom": "Brim bottom",
+    "brimInterfacing": "Brim interfacing",
+    "brimTop": "Brim Top",
+    "side": "Side",
+    "top": "Top"
+  },
+  "s": {},
+  "o": {
+    "headEase": {
+      "t": "Overwijdte hoofd",
+      "d": "De hoeveelheid overwijdte rond je hoofd"
+    }
+  }
+}

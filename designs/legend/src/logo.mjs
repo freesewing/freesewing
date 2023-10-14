@@ -1,5 +1,4 @@
 import { box } from './shared.mjs'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 
 function legendLogo({ points, Point, snippets, Snippet, part }) {
   points.a = new Point(50, 40)
@@ -11,6 +10,5 @@ function legendLogo({ points, Point, snippets, Snippet, part }) {
 
 export const logo = {
   name: 'legend.logo',
-  plugins: pluginBundle,
   draft: legendLogo,
 }
