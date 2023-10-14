@@ -72,7 +72,14 @@ function draftCrotchGusset({
   macro('cutonfold', {
     from: points.cutonfoldFrom,
     to: points.cutonfoldTo,
-    grainline: true,
+    grainline: false,
+  })
+
+  points.grainlineFrom = points.topLeftCorner.shiftFractionTowards(points.bottomLeftCorner, 0.95)
+  points.grainlineTo = points.topRightCorner.shiftFractionTowards(points.bottomRightCorner, 0.95)
+  macro('grainline', {
+    from: points.grainlineFrom,
+    to: points.grainlineTo,
   })
 
   store.cutlist.addCut({ cut: 1 })

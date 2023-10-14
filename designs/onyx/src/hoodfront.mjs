@@ -156,8 +156,15 @@ function draftHoodFront({
   macro('cutonfold', {
     from: points.cutonfoldTo,
     to: points.cutonfoldFrom,
-    grainline: true,
+    grainline: false,
     reverse: true,
+  })
+
+  points.grainlineFrom = points.backTop.shiftFractionTowards(points.frontTop, 0.05)
+  points.grainlineTo = new Point(points.grainlineFrom.x, points.backBottom.y)
+  macro('grainline', {
+    from: points.grainlineFrom,
+    to: points.grainlineTo,
   })
 
   store.cutlist.addCut({ cut: 1 })
