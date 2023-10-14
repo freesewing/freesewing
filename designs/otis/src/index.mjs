@@ -1,5 +1,6 @@
 import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
+import { i18n } from '../i18n/index.mjs'
 // Parts
 import { back } from './back.mjs'
 import { front } from './front.mjs'
@@ -16,4 +17,14 @@ const Otis = new Design({
 })
 
 // Named exports
-export { back, front, shortsleeve, longsleeve, bindingNeckBack, bindingNeckFront, bindingLeg, Otis }
+export {
+  back,
+  front,
+  shortsleeve,
+  longsleeve,
+  bindingNeckBack,
+  bindingNeckFront,
+  bindingLeg,
+  i18n,
+  Otis,
+}
