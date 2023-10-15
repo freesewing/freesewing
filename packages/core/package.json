@@ -55,7 +55,6 @@
   "dependencies": {
     "@freesewing/core-plugins": "3.0.0",
     "bezier-js": "6.1.4",
-    "bin-pack-with-constraints": "1.0.1",
     "hooks": "0.3.2",
     "lodash.get": "4.4.2",
     "lodash.set": "4.3.2",

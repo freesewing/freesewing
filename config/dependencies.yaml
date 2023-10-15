@@ -49,7 +49,6 @@ core:
   _:
     '@freesewing/core-plugins': *freesewing
     'bezier-js': '6.1.4'
-    'bin-pack-with-constraints': '1.0.1'
     'hooks': '0.3.2'
     'lodash.get': &_get '4.4.2'
     'lodash.set': &_set '4.3.2'
@@ -109,7 +108,6 @@ core-plugins:
     '@freesewing/plugin-mirror': *freesewing
     '@freesewing/plugin-round': *freesewing
     '@freesewing/plugin-sprinkle': *freesewing
-    '@freesewing/plugin-bin-pack': *freesewing
 plugintest:
   peer:
     '@freesewing/plugin-annotations': *freesewing
