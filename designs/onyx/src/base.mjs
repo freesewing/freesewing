@@ -307,6 +307,8 @@ export const base = {
   options: {
     // Choose either a neckband or a hood to go at the neck of the garment.
     neckStyle: { dflt: 'neckband', list: ['neckband', 'hood'], menu: 'style' },
+    // Do we want to add a swim skirt to the unisuit?
+    swimSkirt: { bool: false, menu: 'style' },
     // How much ease to give for the neck, as a percentage.
     neckEase: { pct: 50, min: -30, max: 150, menu: 'fit' },
     chestEase: { pct: 0, min: -40, max: 50, menu: 'fit' },
