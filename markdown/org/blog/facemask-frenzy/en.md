@@ -15,7 +15,7 @@ title: "Calling all makers: Here's a 1-page PDF facemask pattern; Now go make so
  - PDF pattern for our Florence face mask:
    - [A4 facemask pattern](/florence-facemask-freesewing.org.a4.pdf)
    - [Letter facemask pattern](/florence-facemask-freesewing.org.letter.pdf)
- - [Instructions for the facemask pattern](/docs/patterns/florence/instructions/)
+ - [Instructions for the facemask pattern](/docs/designs/florence/instructions/)
 
 </Note>
 
@@ -30,7 +30,7 @@ So obviously, we want to help:
  - PDF pattern for our Florence face mask:
    - [A4 facemask pattern](/florence-facemask-freesewing.org.a4.pdf)
    - [Letter facemask pattern](/florence-facemask-freesewing.org.letter.pdf)
- - [Instructions for the facemask pattern](/docs/patterns/florence/instructions/)
+ - [Instructions for the facemask pattern](/docs/designs/florence/instructions/)
 
 No go and make a bunch. Our healthcare workers are counting on you!
 

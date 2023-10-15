@@ -2,6 +2,7 @@
   "t": "Shelly swimshirt",
   "d": "Shelly is a raglan shirt, perfect for swimshirts and rashguards",
   "p": {
+    "base": "Base",
     "back": "Back",
     "front": "Front",
     "neckband": "Neckband",
@@ -31,12 +32,12 @@
       "d": "Controls how large the neck hole is."
     },
 	"neckbandLength": {
-	  "t": "Neckband length",
-	  "d": "Controls how long the neckband is, as a percentage of the circumference of the neckline."
+    "t": "Neckband length",
+    "d": "Controls how long the neckband is, as a percentage of the circumference of the neckline."
 	},
 	"neckbandWidth": {
-	  "t": "Neckband width",
-	  "d": "Controls how wide the finished neckband will be, as a percentage of the neckline circumference."
+    "t": "Neckband width",
+    "d": "Controls how wide the finished neckband will be, as a percentage of the neckline circumference."
 	},
     "sleeveEase": {
       "t": "Sleeve ease",
@@ -55,7 +56,6 @@
       "t": "Sleeve length",
       "d": "Controls the how long the sleeves of your shirt will be."
     },
-
     "hipsEase": {
       "t": "Hips ease",
       "d": "Controls how wide your shirt will be at the bottom hem. This option is only used if the straight sides option is disabled."

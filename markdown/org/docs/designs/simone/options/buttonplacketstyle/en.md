@@ -14,7 +14,7 @@ Seamless is less work, and it looks great.
 
 <Note>
 
-As seamless is only possible on a _cut-on_ placket, this option is ignored if you choose a seperate button placket.
+As seamless is only possible on a _cut-on_ placket, this option is ignored if you choose a separate button placket.
 
 </Note>
 

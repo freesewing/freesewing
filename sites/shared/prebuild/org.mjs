@@ -14,11 +14,11 @@ const changeDelimiter = `{{!
 const loadPageTemplate = async (name) =>
   await fs.promises.readFile(path.resolve(`../org/page-templates/${name}`), 'utf-8')
 
-const generateNewPatternPages = async () => {
+export const generateNewPatternPages = async (designs, site = 'org') => {
   const page = await loadPageTemplate('new-pattern.mjs')
-  for (const design of collection) {
+  for (const design of designs) {
     await fs.promises.writeFile(
-      path.resolve(`../org/pages/new/${design}.mjs`),
+      path.resolve(`../${site}/pages/new/${design}.mjs`),
       mustache.render(changeDelimiter + page, {
         design,
         Design: capitalize(design),
@@ -27,10 +27,10 @@ const generateNewPatternPages = async () => {
   }
 }
 
-const generateEditPatternPages = async () => {
+const generateEditPatternPages = async (designs, site = 'org') => {
   const page = await loadPageTemplate('edit-pattern.mjs')
-  for (const design of collection) {
-    const dir = `../org/pages/account/patterns/${design}/[id]`
+  for (const design of designs) {
+    const dir = `../${site}/pages/account/patterns/${design}/[id]`
     await fs.promises.mkdir(path.resolve(dir), { recursive: true })
     await fs.promises.writeFile(
       path.resolve(`${dir}/edit.mjs`),
@@ -43,6 +43,6 @@ const generateEditPatternPages = async () => {
 }
 
 export const prebuildOrg = async () => {
-  await generateNewPatternPages()
-  await generateEditPatternPages()
+  await generateNewPatternPages(collection)
+  await generateEditPatternPages(collection)
 }

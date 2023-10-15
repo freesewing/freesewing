@@ -2,6 +2,7 @@
   "t": "Hugo, der Hoodie",
   "d": "Hugo ist ein Kapuzensweatshirt mit Raglanärmeln.",
   "p": {
+    "base": "Base",
     "back": "Back",
     "cuff": "Cuff",
     "front": "Front",

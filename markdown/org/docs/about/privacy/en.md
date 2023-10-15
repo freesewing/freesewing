@@ -143,9 +143,9 @@ So far:
 - [Your rights][2]
 - [Your consent][3]
 
-[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy
+[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/about/privacy
 
-[2]: /docs/various/rights/
+[2]: /docs/about/rights/
 
 [3]: /account/consent/
 

@@ -17,6 +17,7 @@ function octoplushyHeadSection(
   }
 ) {
   if (partNumber > (options.type == 'squid' ? 1 : 0)) {
+    part.hide()
     return part
   }
 

@@ -147,7 +147,6 @@ PatternPlugins.prototype.__loadPluginStoreMethods = function (plugin) {
     for (const method of plugin.store) this.__storeMethods.add(method)
   } else this.store.log.warn(`Plugin store methods should be an Array`)
 
-  // console.log('store', plugin, this.__storeMethods)
   return this
 }
 

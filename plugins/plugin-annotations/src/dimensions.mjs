@@ -4,16 +4,16 @@ import { getIds } from './utils.mjs'
 export const dimensionsDefs = [
   {
     name: 'dimensionFrom',
-    def: `
-<marker orient="auto" refY="3.0" refX="0.0" id="dimensionFrom" style="overflow:visible;" markerWidth="10" markerHeight="6">
-	<path d="M 0,3 L 10,0 C 8,2 8,4 10,6 z" class="mark fill-mark" />
+    def: (scale) => `
+<marker orient="auto" refY="0" refX="0" id="dimensionFrom" style="overflow:visible;" markerWidth="12" markerHeight="8">
+	<path class="mark fill-mark" d="M 0,0 L 12,-4 C 10,-2 10,2 12,4 z" transform="scale(${scale})"/>
 </marker>`,
   },
   {
     name: 'dimensionTo',
-    def: `
-<marker orient="auto" refY="3.0" refX="10.0" id="dimensionTo" style="overflow:visible;" markerWidth="10" markerHeight="6">
-	<path d="M 10,3 L 0,0 C 2,2 2,4 0,6 z" class="fill-mark mark" />
+    def: (scale) => `
+<marker orient="auto" refY="0" refX="0" id="dimensionTo" style="overflow:visible;" markerWidth="12" markerHeight="8">
+	<path class="mark fill-mark" d="M 0,0 L -12,-4 C -10,-2 -10,2  -12,4 z" transform="scale(${scale})"/>
 </marker>`,
   },
 ]

@@ -2,6 +2,7 @@
   "t": "Hugo, sudadera con capucha",
   "d": "Hugo es una sudadera con capucha y manga raglán.",
   "p": {
+    "base": "Base",
     "back": "Back",
     "cuff": "Cuff",
     "front": "Front",

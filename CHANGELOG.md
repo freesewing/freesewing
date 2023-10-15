@@ -76,6 +76,12 @@
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
 
+### plugintest
+
+#### Fixed
+
+ - Remove names from old plugins from list option
+
 ### sandy
 
 #### Changed
@@ -87,6 +93,12 @@
 #### Changed
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### simon
+
+#### Fixed
+
+ - Replaced all instances of 'seperate' with 'separate' in option names
 
 ### sven
 
@@ -105,6 +117,23 @@
 #### Changed
 
  - Added support for notes in flags
+
+### plugin-bin-pack
+
+#### Added
+
+ - First release of the plugin providing the default packing implementation
+
+### core
+
+#### Added
+
+ - Allow plugins to provide their own packing implementation
+
+#### Fixed
+
+ - Fix order in mergeOptions method so user settings take precendence over defaults
+ - Fix upward snap for snapped percentage option when snap is a simple number
 
 
 ## 3.0.0 (2022-09-30)
