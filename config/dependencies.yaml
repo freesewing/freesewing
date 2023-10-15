@@ -109,6 +109,7 @@ core-plugins:
     '@freesewing/plugin-mirror': *freesewing
     '@freesewing/plugin-round': *freesewing
     '@freesewing/plugin-sprinkle': *freesewing
+    '@freesewing/plugin-bin-pack': *freesewing
 plugintest:
   peer:
     '@freesewing/plugin-annotations': *freesewing

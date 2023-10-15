@@ -1,7 +1,7 @@
 {
-  "name": "@freesewing/core-plugins",
+  "name": "@freesewing/plugin-bin-pack",
   "version": "3.0.0",
-  "description": "An umbrella package of essential plugins that are bundled with FreeSewing's core library",
+  "description": "A FreeSewing plugin that adds a bin-pack algorithm to the core library",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
@@ -54,12 +54,7 @@
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.2.0",
-    "chai": "4.3.10",
-    "@freesewing/plugin-annotations": "3.0.0",
-    "@freesewing/plugin-mirror": "3.0.0",
-    "@freesewing/plugin-round": "3.0.0",
-    "@freesewing/plugin-sprinkle": "3.0.0",
-    "@freesewing/plugin-bin-pack": "3.0.0"
+    "chai": "4.3.10"
   },
   "files": [
     "dist/*",
