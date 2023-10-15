@@ -2,4 +2,4 @@
 title: Hem width
 ---
 
-Constrols the widht of the hem as a factor of the seam allowance width.
+Sets the hem allowance of the hem along the waist, as a multiple of the seam allowance.
