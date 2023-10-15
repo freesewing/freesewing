@@ -1,4 +1,4 @@
-export const draftFrontLeftClassicSeperate = ({
+export const draftFrontLeftClassicSeparate = ({
   utils,
   sa,
   Point,

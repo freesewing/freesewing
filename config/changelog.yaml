@@ -46,6 +46,8 @@ Unreleased:
     core:
       - Fix order in mergeOptions method so user settings take precendence over defaults
       - Fix upward snap for snapped percentage option when snap is a simple number
+    simon:
+      - Replaced all instances of 'seperate' with 'separate' in option names
     plugintest:
       - Remove names from old plugins from list option
 
