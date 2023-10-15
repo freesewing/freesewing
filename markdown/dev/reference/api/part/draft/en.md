@@ -3,14 +3,14 @@ title: "The part's draft method"
 ---
 
 Each part **must** have a `draft` property that holds a method that will draft the part.
-In other words, this method is where the actual work happens. The method's signature 
+In other words, this method is where the actual work happens. The method's signature
 is as follows:
 
 ```js
 function draft(props)
 ```
 
-The draft method receives a single parameter, an object which you can _destructure_ to 
+The draft method receives a single parameter, an object which you can _destructure_ to
 access the following properties:
 
 | Property | Description |
@@ -45,3 +45,11 @@ access the following properties:
 | `Bezier`          | The [bezier-js](https://pomax.github.io/bezierjs/) library's `Bezier` named export |
 || **_Return value_**   |
 | `part`            | Your draft method **must** return this |
+
+<Tip>
+
+Please note that there is no `optionalMeasurements` property.
+Instead, optional measurements are accessed via the 'measurements'
+property.
+
+</Tip>
