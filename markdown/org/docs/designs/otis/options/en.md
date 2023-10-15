@@ -2,4 +2,4 @@
 title: "Otis, the simple romper: Design Options"
 ---
 
-<DesignOptions design='aaron' />
+<DesignOptions design='otis' />
