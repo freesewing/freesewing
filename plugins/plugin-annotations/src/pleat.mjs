@@ -18,9 +18,9 @@ const macroDefaults = {
 export const pleatDefs = [
   {
     name: 'pleat',
-    def: `
+    def: (scale) => `
 <marker id="pleatTo" markerWidth="10" markerHeight="6" orient="auto" refY="3" refX="10">
-	<path d="M 10,3 L 0,0 C 2,2 2,4 0,6 z" class="fill-note note" />
+	<path d="M 10,3 L 0,0 C 2,2 2,4 0,6 z" class="fill-note note" transform="scale(${scale})" />
 </marker>
 `,
   },

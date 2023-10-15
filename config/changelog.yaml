@@ -1,4 +1,10 @@
 Unreleased:
+  Added:
+    core:
+      - Allow plugins to provide their own packing implementation
+    plugin-bin-pack:
+      - First release of the plugin providing the default packing implementation
+
   Changed:
     aaron:
       - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
@@ -40,6 +46,10 @@ Unreleased:
     core:
       - Fix order in mergeOptions method so user settings take precendence over defaults
       - Fix upward snap for snapped percentage option when snap is a simple number
+    simon:
+      - Replaced all instances of 'seperate' with 'separate' in option names
+    plugintest:
+      - Remove names from old plugins from list option
 
 3.0.0:
   date: 2022-09-30

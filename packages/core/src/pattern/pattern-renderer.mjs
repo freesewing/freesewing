@@ -1,6 +1,5 @@
 import { Svg } from '../svg.mjs'
 import { Stack } from '../stack.mjs'
-import pack from 'bin-pack-with-constraints'
 
 /**
  * A class for handling layout and rendering for a pattern
@@ -107,12 +106,8 @@ PatternRenderer.prototype.__pack = function () {
     }
   }
   if (settings[activeSet].layout === true) {
-    // some plugins will add a width constraint to the settings, but we can safely pass undefined if not
-    let size = pack(bins, {
-      inPlace: true,
-      maxWidth: settings[0].maxWidth,
-      strictMax: settings[0].maxWidth ? true : false,
-    })
+    // store.pack is provided by a plugin
+    const size = bins.length > 0 ? this.pattern.store.pack(bins, this) : { width: 0, height: 0 }
     this.autoLayout.width = size.width
     this.autoLayout.height = size.height
 

@@ -242,7 +242,7 @@ export const theme = {
   '--pattern-text-4xl': '3rem',
 
   // Pattern overal scale for strokes and text sizes
-  '--pattern-scale': '1',
+  // '--pattern-scale': '1',
   // Pattern xs stroke width
   '--pattern-stroke-xs': '0.2px',
   // Pattern sm stroke width
@@ -266,7 +266,6 @@ export const theme = {
   // Pattern 7xl stroke width
   '--pattern-stroke-7xl': '20px',
 
-  // Pattern sampling styles
   '--pattern-sample-1': colors.red['500'],
   '--pattern-sample-2': colors.orange['500'],
   '--pattern-sample-3': colors.yellow['500'],

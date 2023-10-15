@@ -13,7 +13,7 @@ import { oauth } from '../utils/oauth.mjs'
 export function UserModel(tools) {
   return decorateModel(this, tools, {
     name: 'user',
-    encryptedFields: ['bio', 'data', 'email', 'initial', 'img', 'mfaSecret'],
+    encryptedFields: ['bio', 'data', 'email', 'initial', 'mfaSecret'],
     jsonFields: ['data'],
     models: ['confirmation', 'set', 'pattern'],
   })
@@ -182,7 +182,7 @@ UserModel.prototype.oauthSignIn = async function ({ body }) {
       log.info(err, `Unable to update image post-oauth signup for user ${email}`)
       return this.setResponse(500, 'createAccountFailed')
     }
-  } else data.img = this.encrypt(this.config.avatars.user)
+  } else data.img = this.config.avatars.user
 
   /*
    * Now attempt to create the record in the database
@@ -763,7 +763,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
        */
       data: this.encrypt({}),
       bio: this.encrypt(''),
-      img: this.encrypt(this.config.avatars.user),
+      img: this.config.avatars.user,
     }
     /*
      * During tests, users can set their own permission level so you can test admin stuff
@@ -1296,12 +1296,8 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
    */
   if (typeof body.img === 'string')
     data.img = await replaceImage({
-      id: `user-${this.record.ihash}`,
+      id: `uid-${this.record.ihash}`,
       data: body.img,
-      metadata: {
-        user: user.uid,
-        ihash: this.record.ihash,
-      },
     })
 
   /*
@@ -1597,7 +1593,7 @@ UserModel.prototype.asProfile = function () {
   return {
     id: this.record.id,
     bio: this.clear.bio,
-    img: this.clear.img,
+    img: this.record.img,
     ihash: this.record.ihash,
     patron: this.record.patron,
     role: this.record.role,
@@ -1624,7 +1620,7 @@ UserModel.prototype.asAccount = function () {
     email: this.clear.email,
     data: this.clear.data,
     ihash: this.record.ihash,
-    img: this.clear.img,
+    img: this.record.img,
     imperial: this.record.imperial,
     initial: this.clear.initial,
     jwtCalls: this.record.jwtCalls,

@@ -76,6 +76,12 @@
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
 
+### plugintest
+
+#### Fixed
+
+ - Remove names from old plugins from list option
+
 ### sandy
 
 #### Changed
@@ -87,6 +93,12 @@
 #### Changed
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### simon
+
+#### Fixed
+
+ - Replaced all instances of 'seperate' with 'separate' in option names
 
 ### sven
 
@@ -106,7 +118,17 @@
 
  - Added support for notes in flags
 
+### plugin-bin-pack
+
+#### Added
+
+ - First release of the plugin providing the default packing implementation
+
 ### core
+
+#### Added
+
+ - Allow plugins to provide their own packing implementation
 
 #### Fixed
 

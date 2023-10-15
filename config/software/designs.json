@@ -589,13 +589,13 @@
   "plugintest": {
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern to test (y)our plugins",
-    "lab": false,
+    "lab": true,
     "org": false
   },
   "rendertest": {
     "code": "Joost De Cock",
     "description": "A FreeSewing pattern to test (y)our render engine our CSS",
-    "lab": false,
+    "lab": true,
     "org": false
   },
   "sandy": {
@@ -689,6 +689,8 @@
     "code": "Wouter Van Wageningen",
     "design": "Wouter Van Wageningen",
     "difficulty": 4,
+    "lab": true,
+    "org": true,
     "tags": ["accessories", "toys"],
     "techniques": ["curvedSeam", "precision"]
   },
