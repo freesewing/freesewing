@@ -22,8 +22,6 @@ function draftSkirt({
   // We really don't want the skirt to be smaller than the suit itself, so do a little sanity check here.
   const skirtWidth = measurements.waist * Math.max(options.waistEase, options.skirtWidth)
   const skirtLength = measurements.waistToUpperLeg * options.skirtLength
-  const crotchGussetLength = store.get('crotchGussetLength')
-  const crotchGussetWidth = store.get('crotchGussetWidth')
 
   points.topLeftCorner = new Point(0, 0)
   points.bottomLeftCorner = new Point(0, skirtLength)
@@ -59,13 +57,13 @@ function draftSkirt({
 
   if (paperless) {
     macro('vd', {
-      id: 'hCrotchGusset',
+      id: 'hSkirt',
       from: points.topLeftCorner,
       to: points.bottomLeftCorner,
       x: -(15 + sa),
     })
     macro('hd', {
-      id: 'wCrotchGusset',
+      id: 'wSkirt',
       from: points.topLeftCorner,
       to: points.topRightCorner,
       y: -(sa + 15),
