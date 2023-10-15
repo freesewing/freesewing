@@ -2,4 +2,4 @@
 title: "Shelly shirt: Design Options"
 ---
 
-<DesignOptions design='skully' />
+<DesignOptions design='shelly' />
