@@ -1,8 +1,7 @@
 ---
-title: FIXME - this option is undocumented
+title: "Full chest ease reduction"
 ---
 
-<Fixme>
-Please document this option. See https://github/freesewing/freesewing/issues/5096
+***
 
-</Fixme>
+Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area.
