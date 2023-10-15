@@ -1,5 +1,4 @@
 import { pctBasedOn } from '@freesewing/core'
-import path from 'path'
 
 export const options = {
   // Fit
