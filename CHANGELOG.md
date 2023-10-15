@@ -76,6 +76,12 @@
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
 
+### plugintest
+
+#### Fixed
+
+ - Remove names from old plugins from list option
+
 ### sandy
 
 #### Changed

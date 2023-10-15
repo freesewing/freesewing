@@ -33,6 +33,8 @@ import { Noble as noble } from '@freesewing/noble'
 import { Octoplushy as octoplushy } from '@freesewing/octoplushy'
 import { Paco as paco } from '@freesewing/paco'
 import { Penelope as penelope } from '@freesewing/penelope'
+import { Plugintest as plugintest } from '@freesewing/plugintest'
+import { Rendertest as rendertest } from '@freesewing/rendertest'
 import { Sandy as sandy } from '@freesewing/sandy'
 import { Shelly as shelly } from '@freesewing/shelly'
 import { Shin as shin } from '@freesewing/shin'
@@ -83,6 +85,8 @@ const designs = {
   octoplushy,
   paco,
   penelope,
+  plugintest,
+  rendertest,
   sandy,
   shelly,
   shin,
