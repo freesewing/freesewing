@@ -4,7 +4,7 @@ import { pluginFlip } from '@freesewing/plugin-flip'
 import { pluginGore } from '@freesewing/plugin-gore'
 import { Design } from '@freesewing/core'
 import yaml from 'js-yaml'
-import { Pattern, PatternXray } from '@freesewing/react-components'
+import { Pattern, PatternXray } from 'pkgs/react-components/src/index.mjs'
 import { useTranslation } from 'next-i18next'
 
 export const ns = ['tutorial', 'plugin-annotations']
