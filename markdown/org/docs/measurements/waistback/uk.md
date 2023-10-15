@@ -1,7 +1,7 @@
 ---
-title: Waist back
+title: Ширина талії ззаду
 ---
 
-The **waist back** measurement is the back part of your waist circumference.
+**Ширина талії ззаду** — це задня частина Вашого обхвату талії.
 
-To measure your **waist back**, wrap the tape measure around the narrowest part of your waist, making sure to keep it horizontal. Then, measure the length from one side over your back to the other.
+Для зняття цієї мірки охопіть сантиметром найтонше місце талії, переконавшись, що стрічка знаходиться в горизонтальному положенні. Далі виміряйте ширину починаючи з одного бокового шва, через спину та закінчуючи протилежним боковим швом.

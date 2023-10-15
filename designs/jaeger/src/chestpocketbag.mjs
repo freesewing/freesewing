@@ -1,7 +1,6 @@
 import { front } from './front.mjs'
 
 function jaegerChestPocketBag({
-  paperless,
   sa,
   store,
   complete,
@@ -35,64 +34,74 @@ function jaegerChestPocketBag({
     .close()
     .attr('class', 'lining')
 
-  paths.fold = new Path()
-    .move(points.foldLeft)
-    .line(points.foldRight)
-    .attr('class', 'stroke-sm dashed lining')
+  if (complete)
+    paths.fold = new Path()
+      .move(points.foldLeft)
+      .line(points.foldRight)
+      .addClass('stroke-sm dashed lining')
+      .addText('foldAlongThisLine', 'center fill-note')
 
-  if (complete) {
-    points.title = points.topLeft.shiftFractionTowards(points.foldRight, 0.5)
-    // Title
-    macro('title', {
-      at: points.title,
-      nr: 12,
-      title: 'chestPocketBag',
-    })
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'lining sa')
 
-    // Grainline
-    macro('grainline', {
-      from: points.bottomLeft.shift(0, 10),
-      to: points.topLeft.shift(0, 10),
-    })
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'lining' })
 
-    // Instructions
-    paths.fold.attr('data-text', 'foldAlongThisLine').attr('data-text-class', 'center')
+  // Title
+  points.title = points.topLeft.shiftFractionTowards(points.foldRight, 0.5)
+  macro('title', {
+    at: points.title,
+    nr: 12,
+    title: 'chestPocketBag',
+    align: 'center',
+    scale: 0.666,
+  })
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'lining sa')
+  // Grainline
+  macro('grainline', {
+    from: points.bottomLeft.shift(0, 10),
+    to: points.topLeft.shift(0, 10),
+  })
 
-    if (paperless) {
-      macro('hd', {
-        from: points.topLeft,
-        to: points.topRight,
-        y: points.topRight.y - sa - 15,
-      })
-      macro('vd', {
-        from: points.bottomRight,
-        to: points.foldRight,
-        x: points.topRight.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.foldRight,
-        to: points.topRight,
-        x: points.topRight.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.bottomRight,
-        to: points.topRight,
-        x: points.topRight.x + sa + 30,
-      })
-      macro('vd', {
-        from: points.bottomLeft,
-        to: points.foldLeft,
-        x: points.topLeft.x - sa - 15,
-      })
-      macro('vd', {
-        from: points.foldLeft,
-        to: points.topLeft,
-        x: points.topLeft.x - sa - 15,
-      })
-    }
-  }
+  // Instructions
+  macro('hd', {
+    id: 'wFull',
+    from: points.topLeft,
+    to: points.topRight,
+    y: points.topRight.y - sa - 15,
+  })
+  macro('vd', {
+    id: 'hToFold',
+    from: points.bottomRight,
+    to: points.foldRight,
+    x: points.topRight.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFromFold',
+    from: points.foldRight,
+    to: points.topRight,
+    x: points.topRight.x + sa + 15,
+  })
+  macro('vd', {
+    from: points.bottomRight,
+    id: 'hFull',
+    to: points.topRight,
+    x: points.topRight.x + sa + 30,
+  })
+  macro('vd', {
+    id: 'hToFoldSmall',
+    from: points.bottomLeft,
+    to: points.foldLeft,
+    x: points.topLeft.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hFromFoldSmall',
+    from: points.foldLeft,
+    to: points.topLeft,
+    x: points.topLeft.x - sa - 15,
+  })
 
   return part
 }

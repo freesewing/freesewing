@@ -1,5 +1,6 @@
 import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
+import { i18n } from '../i18n/index.mjs'
 import { backPoints } from './backpoints.mjs'
 import { backInside } from './backinside.mjs'
 import { backOutside } from './backoutside.mjs'
@@ -14,4 +15,4 @@ const Noble = new Design({
 })
 
 // Named exports
-export { backPoints, backInside, backOutside, frontPoints, frontInside, frontOutside, Noble }
+export { backPoints, backInside, backOutside, frontPoints, frontInside, frontOutside, Noble, i18n }

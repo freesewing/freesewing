@@ -1,0 +1,71 @@
+{
+  "t": "Cornelius cycling breeches",
+  "d": "Cornelius are cycling breeches based on the Keystone drafting method.",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "frontpoints": "Front points",
+    "legband": "Legband",
+    "legbandKeystone": "Legband Keystone",
+    "pocket": "Pocket",
+    "pocketFacing": "Pocket facing",
+    "waistband": "Waistband",
+    "zipperguard": "Zipperguard"
+  },
+  "s": {
+    "Vent": "Vent",
+    "PocketFacing": "Pocket facing",
+    "cutWaistband.t": "The waist band is not shown",
+    "cutWaistband.d": "The **waist band** is a strip of fabric {{{ width }}} wide and {{{ length }}} long."
+  },
+  "o": {
+    "bandBelowKnee": {
+      "t": "Cuff below knee",
+      "d": "Controls the cuff distance from the knee"
+    },
+    "cuffStyle": {
+      "t": "Cuff style",
+      "d": "Style of the leg cuff"
+    },
+    "cuffStyle.traditional": {
+      "t": "Traditional cuff style",
+      "d": "A single buttoned curved band with a pointed edge"
+    },
+    "cuffStyle.elegant": {
+      "t": "Elegant cuff style",
+      "d": "A single buttoned straight band with a pointed edge"
+    },
+    "cuffStyle.keystone": {
+      "t": "Keystone cuff style",
+      "d": "A slightly curved band that is wider than the others using 3 buttons rather than 1. This one is based of off the one in the Keystone Draft this pattern is based on."
+    },
+    "cuffWidth": {
+      "t": "Cuff width",
+      "d": "Width of the leg cuff"
+    },
+    "flyWidth": {
+      "t": "Fly Guard width",
+      "d": "Width of the fly guard"
+    },
+    "fullness": {
+      "t": "Fullness of the legs",
+      "d": "Influences the ease on the legs for a looser style"
+    },
+    "kneeToBelow": {
+      "t": "Cuff length",
+      "d": "Controls the tightness of the cuff as compared to the knee"
+    },
+    "ventLength": {
+      "t": "Vent length",
+      "d": "Controls the length of the vent between knee and cuff"
+    },
+    "waistbandBelowWaist": {
+      "t": "Lower waistband",
+      "d": "Percentage to move the waistband below the actual waist"
+    },
+    "waistReduction": {
+      "t": "Waist reduction",
+      "d": "Percentage to reduce the waistband"
+    }
+  }
+}

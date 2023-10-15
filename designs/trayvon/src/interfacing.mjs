@@ -1,64 +1,67 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
 import { draftTieShape, tieShapeDimensions, calculateHelpers, options } from './shared.mjs'
 
 function trayvonInterfacingTail(params) {
-  const { paths, points, macro, complete, paperless, Path, store, absoluteOptions } = params
+  const { paths, points, macro, complete, Path, store, absoluteOptions } = params
 
   calculateHelpers(params)
   draftTieShape(params, store.get('backTip'), absoluteOptions.knotWidth)
-  paths.seam.attributes.add('class', 'interfacing')
+  paths.seam.addClass('interfacing')
 
-  // Complete pattern?
-  if (complete) {
-    macro('title', {
-      at: points.title,
-      nr: 2,
-      title: 'interfacingTail',
-      rotation: -90,
-    })
-  }
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.addCut({ cut: 1, material: 'interfacing' })
 
-  // Paperless?
-  if (paperless) {
-    tieShapeDimensions(params)
+  // Title
+  macro('title', {
+    at: points.title,
+    nr: 2,
+    title: 'interfacingTail',
+    rotation: -90,
+  })
+
+  // Dimensions
+  tieShapeDimensions(params)
+  if (complete)
     paths.n45 = new Path()
       .move(points.midLeft)
       .line(points.midRight)
-      .attr('class', 'hidden')
-      .attr('data-text', '45°')
-      .attr('data-text-class', 'center')
-  }
+      .addClass('hidden')
+      .addText('45°', 'center text-sm fill-note')
 
   return params.part
 }
 
 function trayvonInterfacingTip(params) {
-  const { paths, points, macro, complete, paperless, Path, absoluteOptions } = params
+  const { paths, points, macro, complete, Path, absoluteOptions, store } = params
 
   calculateHelpers(params)
   draftTieShape(params, absoluteOptions.tipWidth, absoluteOptions.knotWidth)
-  paths.seam.attributes.add('class', 'interfacing')
+  paths.seam.addClass('interfacing')
 
-  // Complete pattern?
-  if (complete) {
-    macro('title', {
-      at: points.title,
-      nr: 1,
-      title: 'interfacingTip',
-      rotation: -90,
-    })
-  }
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.addCut({ cut: 1, material: 'interfacing' })
 
-  // Paperless?
-  if (paperless) {
-    tieShapeDimensions(params)
+  // Title
+  macro('title', {
+    at: points.title,
+    nr: 1,
+    title: 'interfacingTip',
+    rotation: -90,
+  })
+
+  // Dimentions
+  tieShapeDimensions(params)
+  if (complete)
     paths.n45 = new Path()
       .move(points.midLeft)
       .line(points.midRight)
-      .attr('class', 'hidden')
-      .attr('data-text', '45°')
-      .attr('data-text-class', 'center')
-  }
+      .addClass('hidden')
+      .addText('45°', 'center text-sm fill-note')
 
   return params.part
 }
@@ -67,13 +70,11 @@ export const interfacingTail = {
   name: 'trayvon.interfacingTail',
   measurements: ['hpsToWaistBack', 'waistToHips', 'neck'],
   options,
-  plugins: [pluginBundle],
   draft: trayvonInterfacingTail,
 }
 export const interfacingTip = {
   name: 'trayvon.interfacingTip',
   measurements: ['hpsToWaistBack', 'waistToHips', 'neck'],
   options,
-  plugins: [pluginBundle],
   draft: trayvonInterfacingTip,
 }

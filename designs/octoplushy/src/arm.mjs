@@ -10,16 +10,16 @@ function octoplushyArmSection(
     paths,
     Snippet,
     snippets,
-    complete,
     sa,
-    paperless,
     macro,
     utils,
     store,
+    complete,
     part,
   }
 ) {
   if (partNumber > (options.type == 'squid' ? 1 : 0)) {
+    part.hide()
     return part
   }
 
@@ -27,9 +27,9 @@ function octoplushyArmSection(
   const w = options.sizeConstant * options.size
   const sections = options.type == 'squid' ? 10 : 8
 
-  let sectionWidth = (w * 2) / sections
-  let armWidth = (w * options.armWidth * options.bottomTopArmRatio * 3.1415) / 2
-  let armAdjustedWidth = armWidth * options.bottomTopArmRatio
+  const sectionWidth = (w * 2) / sections
+  const armWidth = w * options.armWidth * (1 - options.bottomTopArmRatio) * 3.1415
+  const armAdjustedWidth = armWidth * (1 - options.bottomTopArmRatio)
   let armLength = ((w * 2) / 3.1415) * options.armLength
   switch (options.type) {
     case 'octopus':
@@ -67,7 +67,8 @@ function octoplushyArmSection(
   points.armMiddleCp1 = points.armMiddle.shiftFractionTowards(points.skirtLeft2, c)
   points.skirtLeft3 = new Point((-1 * armAdjustedWidth) / 2, points.skirtLeft2.y)
   points.skirtLeft = points.skirtLeft3.clone()
-  let pHelper = points.skirtLeft.shift(store.get('armSkirtToTopAngle'), 10)
+
+  const pHelper = points.skirtLeft.shift(store.get('armSkirtToTopAngle'), 10)
   if (Math.round(pHelper.x * 1000) <= Math.round((armAdjustedWidth / -2) * 1000)) {
     points.armTopLeft = points.skirtLeft.clone()
   } else {
@@ -98,7 +99,7 @@ function octoplushyArmSection(
   )
 
   if (options.type == 'octopus') {
-    let pSkirtLeft = new Path()
+    const pSkirtLeft = new Path()
       .move(points.armTopLeft)
       .curve(points.armTopLeftCp2, points.armMiddleCp1, points.armMiddle)
 
@@ -195,119 +196,132 @@ function octoplushyArmSection(
     .join(paths.topRight)
     .close()
 
-  // Complete?
+  points.logo = points.armMiddle.shiftFractionTowards(points.armBottom, 0.08)
+  snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.4)
+  points.gridAnchor = points.logo.clone()
+
   if (complete) {
-    points.logo = points.armMiddle.shiftFractionTowards(points.armBottom, 0.08)
-    snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.4)
+    points.armMiddle.addText('C', 'center')
+    points.armTopLeft.addText('D', 'center')
+    points.armTopRight.addText('D', 'center')
+  }
 
-    points.armMiddle.attr('data-text', 'C').attr('data-text-class', 'center')
-    points.armTopLeft.attr('data-text', 'D').attr('data-text-class', 'center')
-    points.armTopRight.attr('data-text', 'D').attr('data-text-class', 'center')
+  points.titleAnchor = points.armMiddle
+    .shiftFractionTowards(points.armBottom, 0.2)
+    .shift(180, sectionWidth * 0.1)
 
-    points.titleAnchor = points.armMiddle
-      .shiftFractionTowards(points.armBottom, 0.2)
-      .shift(180, sectionWidth * 0.1)
+  macro('title', {
+    at: points.titleAnchor,
+    nr: 2 + partNumber * 3,
+    title: 'arm' + (partNumber == 0 ? '' : ' (a)'),
+    rotation: 90,
+    scale: 0.3,
+  })
 
-    macro('title', {
-      at: points.titleAnchor,
-      nr: 2 + partNumber * 3,
-      title: 'Arm' + (partNumber == 0 ? '' : ' (a)'),
-      rotation: 90,
-      scale: 0.3,
-    })
+  if (partNumber == 1) {
+    store.cutlist.addCut({ cut: 2, from: 'undersideFabric', identical: true })
+  } else {
+    store.cutlist.addCut({ cut: 8, from: 'undersideFabric', identical: true })
+  }
 
-    for (var i = 0; i < 4; i++) {
-      snippets[`armLeft${i}`] = new Snippet(
-        'notch',
-        points.armTopLeft.shiftFractionTowards(points.armBottomLeft, i / 4)
-      )
-      snippets[`armRight${i}`] = new Snippet(
-        'notch',
-        points.armTopRight.shiftFractionTowards(points.armBottomRight, i / 4)
-      )
-    }
-    if (options.type == 'octopus') {
-      points.skirtArmLeft = utils.curveIntersectsX(
-        points.skirtLeft,
-        points.skirtLeft,
-        points.armMiddleCp1,
-        points.armMiddle,
-        points.armTopLeft.x
-      )
-      points.skirtArmRight = points.skirtArmLeft.flipX(points.sectionTop)
+  for (var i = 0; i < 4; i++) {
+    snippets[`armLeft${i}`] = new Snippet(
+      'notch',
+      points.armTopLeft.shiftFractionTowards(points.armBottomLeft, i / 4)
+    )
+    snippets[`armRight${i}`] = new Snippet(
+      'notch',
+      points.armTopRight.shiftFractionTowards(points.armBottomRight, i / 4)
+    )
+  }
+  if (options.type == 'octopus') {
+    points.skirtArmLeft = utils.curveIntersectsX(
+      points.skirtLeft,
+      points.skirtLeft,
+      points.armMiddleCp1,
+      points.armMiddle,
+      points.armTopLeft.x
+    )
+    points.skirtArmRight = points.skirtArmLeft.flipX(points.sectionTop)
+    if (complete) {
       paths.armLeftLine = new Path()
         .move(points.skirtArmLeft)
         .line(points.armTopLeft)
-        .attr('data-text', 'stitch line')
-        .attr('data-text-class', 'center')
-        .attr('class', 'hint dotted')
+        .addClass('hint dotted')
+        .addText('stitchLine', 'center')
       paths.armRightLine = new Path()
         .move(points.armTopRight)
         .line(points.skirtArmRight)
-        .attr('data-text', 'stitch line')
-        .attr('data-text-class', 'center')
-        .attr('class', 'hint dotted')
+        .addClass('hint dotted')
+        .addText('stitchLine', 'center')
     }
+  }
 
-    if (sa) {
-      paths.sa = paths.section.offset(sa).attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = paths.section.offset(sa).attr('class', 'fabric sa')
+  }
 
-    if (paperless) {
+  macro('hd', {
+    from: points.armTopLeft,
+    to: points.armTopRight,
+    y: points.armMiddle.y - sa,
+    id: 'topWidth',
+  })
+  macro('hd', {
+    from: points.armBottomLeft,
+    to: points.armBottomRight,
+    y: points.armBottom.y + sa + 10,
+    id: 'bottomWidth',
+  })
+
+  macro('vd', {
+    from: points.armBottom,
+    to: points.armMiddle,
+    x: points.skirtLeft.x - sa - 20,
+    id: 'height',
+  })
+
+  if (options.type == 'octopus') {
+    macro('hd', {
+      from: points.skirtLeft,
+      to: points.skirtRight,
+      y: points.skirtRight.y,
+      id: 'skirtWidth',
+    })
+    macro('vd', {
+      from: points.skirtLeft,
+      to: points.armMiddle,
+      x: points.skirtLeft.x - sa - 10,
+      id: 'skirtHeight',
+    })
+    macro('vd', {
+      from: points.armTopLeft,
+      to: points.skirtLeft,
+      x: points.skirtLeft.x - sa - 10,
+      id: 'skirtToArm',
+    })
+  } else {
+    macro('vd', {
+      from: points.armTopLeft,
+      to: points.armMiddle,
+      x: points.skirtLeft.x - sa - 10,
+      id: 'topToArm',
+    })
+  }
+  if (options.type == 'squid') {
+    if (partNumber == 1) {
       macro('hd', {
-        from: points.armTopLeft,
-        to: points.armTopRight,
-        y: points.armMiddle.y - sa,
+        from: points.tentacleLeft,
+        to: points.tentacleRight,
+        y: points.tentacleRight.y,
+        id: 'tentacleWidth',
       })
-      macro('hd', {
-        from: points.armBottomLeft,
-        to: points.armBottomRight,
-        y: points.armBottom.y + sa + 10,
-      })
-
       macro('vd', {
         from: points.armBottom,
-        to: points.armMiddle,
-        x: points.skirtLeft.x - sa - 20,
+        to: points.tentacleLeft,
+        x: points.tentacleLeft.x - sa - 10,
+        id: 'tentacleHeight',
       })
-
-      if (options.type == 'octopus') {
-        macro('hd', {
-          from: points.skirtLeft,
-          to: points.skirtRight,
-          y: points.skirtRight.y,
-        })
-        macro('vd', {
-          from: points.skirtLeft,
-          to: points.armMiddle,
-          x: points.skirtLeft.x - sa - 10,
-        })
-        macro('vd', {
-          from: points.armTopLeft,
-          to: points.skirtLeft,
-          x: points.skirtLeft.x - sa - 10,
-        })
-      } else {
-        macro('vd', {
-          from: points.armTopLeft,
-          to: points.armMiddle,
-          x: points.skirtLeft.x - sa - 10,
-        })
-      }
-      if (options.type == 'squid') {
-        if (partNumber == 1) {
-          macro('hd', {
-            from: points.tentacleLeft,
-            to: points.tentacleRight,
-            y: points.tentacleRight.y,
-          })
-          macro('vd', {
-            from: points.armBottom,
-            to: points.tentacleLeft,
-            x: points.tentacleLeft.x - sa - 10,
-          })
-        }
-      }
     }
   }
 
@@ -321,6 +335,6 @@ export const armSection1 = {
 }
 export const armSection2 = {
   name: 'octoplushy.armSection2',
-  after: headSection2,
+  after: [headSection2, headSection1],
   draft: (params) => octoplushyArmSection(1, params),
 }

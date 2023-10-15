@@ -32,10 +32,8 @@ describe('Store', () => {
   it('Should emit a warning when retrieving a invalid key', () => {
     const store = new Store()
     store.get('nope')
-    expect(store.get('logs.warning').length).to.equal(1)
-    expect(store.get('logs.warning')[0]).to.equal(
-      'Store.get(key) on key `nope`, which is undefined'
-    )
+    expect(store.get('logs.warn').length).to.equal(1)
+    expect(store.get('logs.warn')[0]).to.equal('Store.get(key) on key `nope`, which is undefined')
   })
 
   it('Should add methods to the store from a plugin', () => {
@@ -44,9 +42,9 @@ describe('Store', () => {
       version: 1,
       store: [
         [
-          'test.example.warning',
+          'test.example.warn',
           function (store, msg) {
-            store.set('test.message.warning', msg)
+            store.set('test.message.warn', msg)
           },
         ],
         [
@@ -61,7 +59,7 @@ describe('Store', () => {
       name: 'example.part',
       plugins: [plugin],
       draft: ({ store, part }) => {
-        store.test.example.warning('hello warning')
+        store.test.example.warn('hello warn')
         store.test.example.info('hello info')
 
         return part
@@ -70,21 +68,21 @@ describe('Store', () => {
     const Test = new Design({ parts: [part] })
     const pattern = new Test()
     pattern.draft()
-    expect(pattern.setStores[0].get('test.message.warning')).to.equal('hello warning')
+    expect(pattern.setStores[0].get('test.message.warn')).to.equal('hello warn')
     expect(pattern.setStores[0].get('test.message.info')).to.equal('hello info')
   })
 
   it('Should log a warning when trying to extend a protected method via the constructor', () => {
     const store = new Store([['get', () => false]])
-    expect(store.logs.warning.length).to.equal(1)
-    expect(store.logs.warning[0]).to.equal('You cannot overwrite store.get()')
+    expect(store.logs.warn.length).to.equal(1)
+    expect(store.logs.warn[0]).to.equal('You cannot overwrite `store.get()`')
   })
 
   it('Should log a warning when trying to extend a protected method via the extend', () => {
     const store = new Store()
     store.extend([['get', () => false]])
-    expect(store.logs.warning.length).to.equal(1)
-    expect(store.logs.warning[0]).to.equal('You cannot overwrite store.get()')
+    expect(store.logs.warn.length).to.equal(1)
+    expect(store.logs.warn[0]).to.equal('You cannot overwrite `store.get()`')
   })
 
   it('Should extend the store with a new method via the constructor', () => {
@@ -95,8 +93,8 @@ describe('Store', () => {
   it('Should log a warning when pushing to a non-array key', () => {
     const store = new Store()
     store.push('test', 1)
-    expect(store.logs.warning.length).to.equal(1)
-    expect(store.logs.warning[0]).to.equal(
+    expect(store.logs.warn.length).to.equal(1)
+    expect(store.logs.warn[0]).to.equal(
       'Store.push(value) on key `test`, but key does not hold an array'
     )
   })
@@ -104,15 +102,15 @@ describe('Store', () => {
   it('Should log a warning when setting an undefined value with set()', () => {
     const store = new Store()
     store.set('test')
-    expect(store.logs.warning.length).to.equal(1)
-    expect(store.logs.warning[0]).to.equal('Store.set(value) on key `test`, but value is undefined')
+    expect(store.logs.warn.length).to.equal(1)
+    expect(store.logs.warn[0]).to.equal('Store.set(value) on key `test`, but value is undefined')
   })
 
   it('Should log a warning when setting an undefined value with setIfUnset()', () => {
     const store = new Store()
     store.setIfUnset('test')
-    expect(store.logs.warning.length).to.equal(1)
-    expect(store.logs.warning[0]).to.equal(
+    expect(store.logs.warn.length).to.equal(1)
+    expect(store.logs.warn[0]).to.equal(
       'Store.setIfUnset(value) on key `test`, but value is undefined'
     )
   })

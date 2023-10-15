@@ -47,9 +47,9 @@ export function Path() {
  */
 Path.prototype._curve = function (cp2, to) {
   if (to instanceof Point !== true)
-    this.log.warning('Called `Path._curve(cp2, to)` but `to` is not a `Point` object')
+    this.log.warn('Called `Path._curve(cp2, to)` but `to` is not a `Point` object')
   if (cp2 instanceof Point !== true)
-    this.log.warning('Called `Path._curve(cp2, to)` but `cp2` is not a `Point` object')
+    this.log.warn('Called `Path._curve(cp2, to)` but `cp2` is not a `Point` object')
   let cp1 = this.ops.slice(-1).pop().to
   this.ops.push({ type: 'curve', cp1, cp2, to })
 
@@ -111,6 +111,35 @@ Path.prototype.asPathstring = function () {
   return d
 }
 
+// Quick helper to return a drawing op as renderProps
+const opAsrenderProp = (op) => {
+  const props = { type: op.type }
+  for (const p of ['from', 'to', 'cp1', 'cp2']) {
+    if (op[p]) props[p] = op[p].asRenderProps()
+  }
+
+  return props
+}
+
+/**
+ * Returns a path as an object suitable for inclusion in renderprops
+ *
+ * @return {object} path - A plain object representing the path
+ */
+Path.prototype.asRenderProps = function () {
+  return {
+    attributes: this.attributes.asRenderProps(),
+    hidden: this.hidden,
+    name: this.name,
+    ops: this.ops.map((op) => opAsrenderProp(op)),
+    topLeft: this.topLeft,
+    bottomRight: this.bottomRight,
+    width: this.bottomRight.x - this.topLeft.x,
+    height: this.bottomRight.y - this.topLeft.y,
+    d: this.asPathstring(),
+  }
+}
+
 /**
  * Chainable way to add an attribute
  *
@@ -121,11 +150,11 @@ Path.prototype.asPathstring = function () {
  */
 Path.prototype.attr = function (name, value, overwrite = false) {
   if (!name)
-    this.log.warning(
+    this.log.warn(
       'Called `Path.attr(name, value, overwrite=false)` but `name` is undefined or false'
     )
   if (typeof value === 'undefined')
-    this.log.warning('Called `Path.attr(name, value, overwrite=false)` but `value` is undefined')
+    this.log.warn('Called `Path.attr(name, value, overwrite=false)` but `value` is undefined')
   if (overwrite)
     this.log.debug(
       `Overwriting \`Path.attribute.${name}\` with ${value} (was: ${this.attributes.get(name)})`
@@ -187,7 +216,7 @@ Path.prototype.clean = function () {
       if (!(op.cp1.sitsRoughlyOn(cur) && op.cp2.sitsRoughlyOn(cur) && op.to.sitsRoughlyOn(cur)))
         ops.push(ops)
     }
-    cur = op?.to
+    cur = op.to
   }
 
   if (ops.length < this.ops.length) this.ops = ops
@@ -247,11 +276,11 @@ Path.prototype.close = function () {
  */
 Path.prototype.curve = function (cp1, cp2, to) {
   if (to instanceof Point !== true)
-    this.log.warning('Called `Path.curve(cp1, cp2, to)` but `to` is not a `Point` object')
+    this.log.warn('Called `Path.curve(cp1, cp2, to)` but `to` is not a `Point` object')
   if (cp1 instanceof Point !== true)
-    this.log.warning('Called `Path.curve(cp1, cp2, to)` but `cp1` is not a `Point` object')
+    this.log.warn('Called `Path.curve(cp1, cp2, to)` but `cp1` is not a `Point` object')
   if (cp2 instanceof Point !== true)
-    this.log.warning('Called `Path.curve(cp1, cp2, to)` but `cp2` is not a `Point` object')
+    this.log.warn('Called `Path.curve(cp1, cp2, to)` but `cp2` is not a `Point` object')
   this.ops.push({ type: 'curve', cp1, cp2, to })
 
   return this
@@ -266,9 +295,9 @@ Path.prototype.curve = function (cp1, cp2, to) {
  */
 Path.prototype.curve_ = function (cp1, to) {
   if (to instanceof Point !== true)
-    this.log.warning('Called `Path.curve_(cp1, to)` but `to` is not a `Point` object')
+    this.log.warn('Called `Path.curve_(cp1, to)` but `to` is not a `Point` object')
   if (cp1 instanceof Point !== true)
-    this.log.warning('Called `Path.curve_(cp1, to)` but `cp1` is not a `Point` object')
+    this.log.warn('Called `Path.curve_(cp1, to)` but `cp1` is not a `Point` object')
   let cp2 = to.copy()
   this.ops.push({ type: 'curve', cp1, cp2, to })
 
@@ -376,10 +405,9 @@ Path.prototype.hide = function () {
  * @return {object} this - The Path instance
  */
 Path.prototype.insop = function (noopId, path) {
-  if (!noopId)
-    this.log.warning('Called `Path.insop(noopId, path)` but `noopId` is undefined or false')
+  if (!noopId) this.log.warn('Called `Path.insop(noopId, path)` but `noopId` is undefined or false')
   if (path instanceof Path !== true)
-    this.log.warning('Called `Path.insop(noopId, path) but `path` is not a `Path` object')
+    this.log.warn('Called `Path.insop(noopId, path) but `path` is not a `Path` object')
   let newPath = this.clone()
   for (let i in newPath.ops) {
     if (newPath.ops[i].type === 'noop' && newPath.ops[i].id === noopId) {
@@ -532,7 +560,7 @@ Path.prototype.length = function () {
  */
 Path.prototype.line = function (to) {
   if (to instanceof Point !== true)
-    this.log.warning('Called `Path.line(to)` but `to` is not a `Point` object')
+    this.log.warn('Called `Path.line(to)` but `to` is not a `Point` object')
   this.ops.push({ type: 'line', to })
 
   return this
@@ -546,7 +574,7 @@ Path.prototype.line = function (to) {
  */
 Path.prototype.move = function (to) {
   if (to instanceof Point !== true)
-    this.log.warning('Called `Path.move(to)` but `to` is not a `Point` object')
+    this.log.warn('Called `Path.move(to)` but `to` is not a `Point` object')
   this.ops.push({ type: 'move', to })
 
   return this
@@ -732,9 +760,9 @@ Path.prototype.shiftFractionAlong = function (fraction, stepsPerMm = 10) {
  */
 Path.prototype.smurve = function (cp2, to) {
   if (to instanceof Point !== true)
-    this.log.warning('Called `Path.smurve(cp2, to)` but `to` is not a `Point` object')
+    this.log.warn('Called `Path.smurve(cp2, to)` but `to` is not a `Point` object')
   if (cp2 instanceof Point !== true)
-    this.log.warning('Called `Path.smurve(cp2, to)` but `cp2` is not a `Point` object')
+    this.log.warn('Called `Path.smurve(cp2, to)` but `cp2` is not a `Point` object')
   // Retrieve cp1 from previous operation
   const prevOp = this.ops.slice(-1).pop()
   const cp1 = prevOp.cp2.rotate(180, prevOp.to)
@@ -750,7 +778,7 @@ Path.prototype.smurve = function (cp2, to) {
  */
 Path.prototype.smurve_ = function (to) {
   if (to instanceof Point !== true)
-    this.log.warning('Called `Path.smurve_(to)` but `to` is not a `Point` object')
+    this.log.warn('Called `Path.smurve_(to)` but `to` is not a `Point` object')
   // Retrieve cp1 from previous operation
   const prevOp = this.ops.slice(-1).pop()
   const cp1 = prevOp.cp2.rotate(180, prevOp.to)
@@ -869,10 +897,8 @@ Path.prototype.start = function () {
  * @return {Path} this - This Path instance
  */
 Path.prototype.translate = function (x, y) {
-  if (typeof x !== 'number')
-    this.log.warning('Called `Path.translate(x, y)` but `x` is not a number')
-  if (typeof y !== 'number')
-    this.log.warning('Called `Path.translate(x, y)` but `y` is not a number')
+  if (typeof x !== 'number') this.log.warn('Called `Path.translate(x, y)` but `x` is not a number')
+  if (typeof y !== 'number') this.log.warn('Called `Path.translate(x, y)` but `y` is not a number')
   let clone = this.clone()
   for (let op of clone.ops) {
     if (op.type !== 'close') {
@@ -1097,11 +1123,11 @@ export function pathsProxy(paths, log) {
     set: (paths, name, value) => {
       // Constructor checks
       if (value instanceof Path !== true)
-        log.warning(`\`paths.${name}\` was set with a value that is not a \`Path\` object`)
+        log.warn(`\`paths.${name}\` was set with a value that is not a \`Path\` object`)
       try {
         value.name = name
       } catch (err) {
-        log.warning(`Could not set \`name\` property on \`paths.${name}\``)
+        log.warn(`Could not set \`name\` property on \`paths.${name}\``)
       }
       return (paths[name] = value)
     },

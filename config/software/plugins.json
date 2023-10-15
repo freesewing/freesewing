@@ -1,6 +1,7 @@
 {
+  "core-plugins": "An umbrella package of essential plugins that are bundled with FreeSewing's core library",
   "plugin-annotations": "A FreeSewing plugin that provides pattern annotations",
-  "plugin-bundle": "An umbrella package of 8 essential FreeSewing build-time plugins",
+  "plugin-bin-pack": "A FreeSewing plugin that adds a bin-pack algorithm to the core library",
   "plugin-bust": "A FreeSewing plugin that helps with bust-adjusting menswear patterns",
   "plugin-flip": "A FreeSewing plugin to flip parts horizontally",
   "plugin-gore": "A FreeSewing plugin to generate gores for a semi-sphere or dome",

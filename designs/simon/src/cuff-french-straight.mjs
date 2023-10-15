@@ -1,6 +1,6 @@
 import { draftFrenchCuff, decorateFrenchCuff, paperlessFrenchCuff } from './shared.mjs'
 
-export const draftStraightFrenchCuff = ({ sa, points, Path, paths, complete, paperless, part }) => {
+export const draftStraightFrenchCuff = ({ sa, points, Path, paths, complete, part }) => {
   draftFrenchCuff(part)
 
   paths.seam = new Path()
@@ -12,16 +12,12 @@ export const draftStraightFrenchCuff = ({ sa, points, Path, paths, complete, pap
     .close()
     .attr('class', 'fabric')
 
-  paths.fold = new Path().move(points.midLeft).line(points.midRight).attr('class', 'dotted')
+  if (complete)
+    paths.fold = new Path().move(points.midLeft).line(points.midRight).attr('class', 'dotted')
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-  // Complete pattern?
-  if (complete) {
-    decorateFrenchCuff(part)
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-  }
-
-  // Paperless?
-  if (paperless) paperlessFrenchCuff(part)
+  decorateFrenchCuff(part)
+  paperlessFrenchCuff(part)
 
   return part
 }

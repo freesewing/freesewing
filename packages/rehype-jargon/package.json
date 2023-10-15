@@ -1,6 +1,6 @@
 {
   "name": "rehype-jargon",
-  "version": "3.0.0-alpha.9",
+  "version": "3.0.0",
   "description": "A Rehype plugin for jargon terms",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -20,10 +20,14 @@
   "type": "module",
   "module": "dist/index.mjs",
   "exports": {
-    ".": "./dist/index.mjs"
+    ".": {
+      "internal": "./src/index.mjs",
+      "default": "./dist/index.mjs"
+    }
   },
   "scripts": {
     "build": "node build.mjs",
+    "build:all": "yarn build",
     "clean": "rimraf dist",
     "mbuild": "NO_MINIFY=1 node build.mjs",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
@@ -32,14 +36,13 @@
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
     "lint": "npx eslint 'src/*.mjs'",
-    "cibuild_step6": "node build.mjs",
     "wbuild": "node build.mjs",
-    "wcibuild_step6": "node build.mjs"
+    "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {},
   "dependencies": {
-    "unist-util-visit": "4.1.2",
-    "hast-util-from-html": "1.0.1"
+    "unist-util-visit": "5.0.0",
+    "hast-util-from-html": "2.0.1"
   },
   "devDependencies": {},
   "files": [
@@ -48,10 +51,10 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=8"
+    "node": "18",
+    "npm": "9"
   }
 }

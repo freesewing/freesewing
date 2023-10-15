@@ -1,53 +1,90 @@
-/*
- * This is used to wrap MDX as returned from the mdxLoader
- * method (see shared/mdx/loader.js)
- * It is NOT for wrapping plain markdown/mdx
- */
-import { useState, useEffect } from 'react'
-
-// See: https://mdxjs.com/guides/mdx-on-demand/
-import { run } from '@mdx-js/mdx'
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
+// Dependencies
 import * as runtime from 'react/jsx-runtime'
+import { run, runSync } from '@mdx-js/mdx'
+import { useState, useEffect } from 'react'
+// Components that are available in MDX content
+import { components as baseComponents } from 'shared/components/mdx/index.mjs'
+// Loading component when running async
+import { Loading } from 'shared/components/spinner.mjs'
 
-// Components that are available in all MDX
-import { MdxComponents } from 'shared/components/mdx/index.mjs'
+/*
+ * This runs MDX that is compiled as function-body
+ * By run, I mean it turns it into a React component
+ * This is the default async version
+ */
+const runMdx = async (mdx) => {
+  const { default: Content } = await run(mdx, runtime)
 
-// Previous-Next navigation
-import { PrevNext } from '../mdx/prev-next.mjs'
+  return Content
+}
 
-const Null = () => null
+/*
+ * This runs MDX that is compiled as function-body
+ * By run, I mean it turns it into a React component
+ * This is the sync version because SSR does not run effects
+ */
+const runMdxSync = (mdx) => {
+  const { default: Content } = runSync(mdx, runtime)
 
-export const MdxWrapper = ({ mdx, app, t, components = {} }) => {
-  const [mdxModule, setMdxModule] = useState()
+  return Content
+}
 
-  useEffect(() => {
-    // This is a workaround to keep prettier and eslint
-    // from fighting over syntax
-    async function prettierEslintPeaceDeal() {
-      setMdxModule(await run(mdx, runtime))
-    }
-    prettierEslintPeaceDeal()
-  }, [mdx])
+export const PlainMdxWrapperAsync = ({ mdx = false, components = {}, site = 'org', slug = [] }) => {
+  /*
+   * Merge passed-in components with the base components
+   */
+  const allComponents = { ...baseComponents(site, slug), ...components }
 
   /*
-   * We use some default components that are available
-   * everywhere in MDX, but we also accept passing in
-   * extra components via props
+   * Set up state for MDX as running it is handled async in useEffect
    */
-  const allComponents = {
-    ...MdxComponents(app, t),
-    ...components,
-  }
+  const [MDX, setMDX] = useState(false)
 
-  // React component for MDX content
-  const MdxContent = mdxModule ? mdxModule.default : Null
+  /*
+   * Run the mdx compiled as function-body and turn it into a component
+   */
+  useEffect(() => {
+    const run = async () => {
+      const Content = await runMdx(mdx)
+      setMDX(<Content components={allComponents} />)
+    }
+    if (mdx) run()
+  }, [mdx])
 
-  return app ? (
-    <div className="text-primary mdx max-w-prose text-base-content max-w-prose text-base">
-      {mdxModule && <MdxContent components={allComponents} />}
-      <PrevNext app={app} />
+  return <div className="searchme">{MDX ? MDX : <Loading />}</div>
+}
+
+export const PlainMdxWrapperSync = ({ mdx = false, components = {}, site = 'org', slug = [] }) => {
+  /*
+   * Merge passed-in components with the base components
+   */
+  const allComponents = { ...baseComponents(site, slug), ...components }
+
+  /*
+   * Run mdx sync
+   */
+  const Content = runMdxSync(mdx)
+
+  return (
+    <div className="searchme">
+      <Content components={allComponents} />
     </div>
-  ) : (
-    <MdxContent components={allComponents} />
   )
 }
+
+export const MdxWrapper = ({
+  mdx = false,
+  components = {},
+  site = 'org',
+  async = false,
+  slug = [],
+}) => (
+  <div className="text-base-content mdx max-w-prose text-base-content max-w-prose text-base">
+    {async ? (
+      <PlainMdxWrapperAsync {...{ mdx, components, site, slug }} />
+    ) : (
+      <PlainMdxWrapperSync {...{ mdx, components, site, slug }} />
+    )}
+  </div>
+)

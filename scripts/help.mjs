@@ -31,14 +31,22 @@ console.log(`
 
   ${chalk.blue('yarn kickstart')}
 
-  It will install and link all dependencies, and link them together.
-  It will also run ${chalk.blue('yarn reconfigure')} which you can run yourself at any time to (re)configure all packages and dependencies.
+  It will install and link all dependencies.
+
+
+  If something goes wrong in the configuration, you can run
+
+  ${chalk.blue('yarn reconfigure')}
+
+  It will (re)configure all packages and dependencies.
 
 
   ${chalk.bold.yellow('🛠️  Starting the development environment')}
   ${chalk.gray('≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡')}
 
-  Our development environment for ${chalk.bold('designs')} and ${chalk.bold('plugins')} lives in ${chalk.green('sites/lab')}
+  Our development environment for ${chalk.bold('designs')} and ${chalk.bold(
+    'plugins'
+  )} lives in ${chalk.green('sites/lab')}
   We refer to it as ${chalk.bold('the FreeSewing lab')}.
   It can display any design in this repository and will hot-reload any changes you make to a design.
 
@@ -59,6 +67,15 @@ console.log(`
   It will ask you some questions, and set everything up for you, and add your design to the lab.
 
 
+  If you later need to add more dependencies to your design, add them in ${chalk.green(
+    'config/dependencies.yaml'
+  )}, then run
+
+  ${chalk.blue('yarn reconfigure')}
+
+  They will be added to your design's ${chalk.green('package.json')}
+
+
   ${chalk.bold.yellow('🤔 More info & help')}
   ${chalk.gray('≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡')}
 
@@ -66,7 +83,9 @@ console.log(`
 
   ${chalk.green('https://freesewing.dev/')}
 
-  Our community is on Discord. The ${chalk.bold('development-help')} channel is a good place to start:
+  Our community is on Discord. The ${chalk.bold(
+    'development-help'
+  )} channel is a good place to start:
 
   ${chalk.green('https://discord.freesewing.dev/')}
 

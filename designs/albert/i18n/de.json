@@ -1,0 +1,36 @@
+{
+  "t": "Albert, die Schürze",
+  "d": "Albert ist eine Schürze.",
+  "p": {
+    "front": "Vorderseite",
+    "pocket": "Tasche",
+    "strap": "Strap"
+  },
+  "s": {},
+  "o": {
+    "backOpening": {
+      "t": "Hintere Öffnung",
+      "d": "Steuert die Öffnung an der Rückseite der Schürze"
+    },
+    "chestDepth": {
+      "t": "Länge des Riemens",
+      "d": "Steuert die Länge der Riemen"
+    },
+    "lengthBonus": {
+      "t": "Längenzugabe",
+      "d": "Steuert die Länge der Schürze"
+    },
+    "bibLength": {
+      "t": "Latzlänge",
+      "d": "Steuert die Länge des Latzes"
+    },
+    "bibWidth": {
+      "t": "Latzbreite",
+      "d": "Steuert die Breite des Latzes"
+    },
+    "strapWidth": {
+      "t": "Riemenbreite",
+      "d": "Steuert die Breite des Riemens"
+    }
+  }
+}

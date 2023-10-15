@@ -8,7 +8,6 @@ export const draftFrontRightSeamless = ({
   Path,
   paths,
   complete,
-  paperless,
   macro,
   options,
   part,
@@ -25,13 +24,20 @@ export const draftFrontRightSeamless = ({
 
   paths.seam.line(points.placketTopEdge).line(points.placketBottomEdge).line(points.cfHem).close()
 
-  // Complete pattern?
+  if (sa)
+    paths.saFromArmhole
+      .line(new Point(points.placketTopEdge.x, points.placketTopEdge.y - sa))
+      .line(points.placketTopEdge)
+      .move(points.placketBottomEdge)
+      .line(points.placketBottomEdge.shift(-90, sa * 3))
+      .line(paths.hemSa.start())
+
   if (complete) {
     // Placket help lines
     paths.frontCenter = new Path().move(points.cfNeck).line(points.cfHem).attr('class', 'help')
     if (!options.seperateButtonholePlacket) {
       // Match lines are only displayed on attached plackets
-      paths.frontCenter.attr('data-text', 'matchHere').attr('data-text-class', 'text-xs center')
+      paths.frontCenter.addText('simon:matchHere', 'text-xs center')
     }
     paths.placketFold1 = new Path()
       .move(points.placketTopFold1)
@@ -45,62 +51,97 @@ export const draftFrontRightSeamless = ({
       .move(points.placketBottomIn)
       .line(points.placketTopIn)
       .attr('class', 'dotted')
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: [
-        'placketTopFold1',
-        'placketTopFold2',
-        'placketBottomFold1',
-        'placketBottomFold2',
-        'cfNeck',
-        'cfHem',
-      ],
-    })
-
-    // Buttons
-    addButtons(part)
-
-    // Title
-    macro('title', { at: points.title, nr: 1, title: 'frontRight' })
-
-    if (sa) {
-      paths.saFromArmhole
-        .line(new Point(points.placketTopEdge.x, points.placketTopEdge.y - sa))
-        .line(points.placketTopEdge)
-        .move(points.placketBottomEdge)
-        .line(points.placketBottomEdge.shift(-90, sa * 3))
-        .line(paths.hemSa.start())
-    }
   }
 
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.hps,
-      to: points.placketTopEdge,
-      y: points.hps.y - sa - 15,
-    })
-    macro('hd', {
-      from: points.s3ArmholeSplit,
-      to: points.placketTopEdge,
-      y: points.hps.y - sa - 30,
-    })
-    macro('hd', {
-      from: points.armhole,
-      to: points.placketTopEdge,
-      y: points.hps.y - sa - 45,
-    })
+  /*
+   * Annotations
+   */
+
+  // Notches
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: [
+      'placketTopFold1',
+      'placketTopFold2',
+      'placketBottomFold1',
+      'placketBottomFold2',
+      'cfNeck',
+      'cfHem',
+    ],
+  })
+
+  // Buttons
+  addButtons(part)
+
+  // Title
+  macro('title', { at: points.title, nr: 1, title: 'frontRight' })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wHpsToEdge',
+    from: points.hps,
+    to: points.placketTopEdge,
+    y: points.hps.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wShoulderToEdge',
+    from: points.s3ArmholeSplit,
+    to: points.placketTopEdge,
+    y: points.hps.y - sa - 30,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.armhole,
+    to: points.placketTopEdge,
+    y: points.hps.y - sa - 45,
+  })
+  macro('vd', {
+    id: 'hHpsToPlacketTop',
+    from: points.placketTopEdge,
+    to: points.s3CollarSplit,
+    x: points.placketTopEdge.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hPlacket',
+    from: points.placketBottomEdge,
+    to: points.placketTopEdge,
+    x: points.placketTopEdge.x + 30,
+  })
+  points.button0 = points.placketTopEdge
+  let j
+  for (let i = 0; i < options.buttons; i++) {
+    j = i + 1
     macro('vd', {
-      from: points.placketTopEdge,
-      to: points.s3CollarSplit,
-      x: points.placketTopEdge.x + sa + 15,
-    })
-    macro('vd', {
-      from: points.placketBottomEdge,
-      to: points.placketTopEdge,
-      x: points.placketTopEdge.x + sa + 15,
+      id: `hBetweenButtons${i}`,
+      from: points['button' + j],
+      to: points['button' + i],
+      x: points.placketTopEdge.x + 15,
     })
   }
+  macro('hd', {
+    id: 'wPlacketFold2',
+    from: points.placketTopFold2,
+    to: points.placketTopEdge,
+    y: points.placketTopEdge.y - 15 - sa,
+  })
+  macro('hd', {
+    id: 'wPlacketFold1',
+    from: points.placketTopFold1,
+    to: points.placketTopEdge,
+    y: points.placketTopEdge.y - 30 - sa,
+  })
+  macro('hd', {
+    id: 'wCfToEdge',
+    from: points.cfNeck,
+    to: points.placketTopEdge,
+    y: points.placketTopEdge.y - 45 - sa,
+  })
+  macro('hd', {
+    id: 'wPlacketInnerToEdge',
+    from: points.placketTopIn,
+    to: points.placketTopEdge,
+    y: points.placketTopEdge.y - 60 - sa,
+  })
 
   return part
 }

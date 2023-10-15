@@ -1,0 +1,129 @@
+addNotes: Add notes
+addSettingsToNotes: Add settings to notes
+advanced: Додатково
+appliedMeasies: We applied a new measurements set to this pattern.
+armhole: Пройма
+attributes: Атрибути
+backPockets: Задні кишені
+bookmarkPattern: Bookmark pattern
+bottomRight: Внизу праворуч
+changeMeasies: Вимірювання зміни шаблону
+chooseATest: Choose a test scenario to run
+chooseATestDesc: You can test how the design adapts to changes in a specific design option or measurements.
+chooseATestMenuMobileMsg: To do so, open the test menu and select the scenario you want to run.
+chooseATestMenuMsg: To do so, select the test scenario you want to run in the menu on the right.
+chooseFromBookmarkedSets: Choose one of the measurements sets you've bookmarked
+chooseFromBookmarkedSetsDesc: If you've bookmarked any measurements sets, you can select from those too.
+chooseFromCuratedSets: Choose one of FreeSewing's curated measurements sets
+chooseFromCuratedSetsDesc: If you're just looking to try out our platform, you can select from our list of curated measurements sets.
+chooseFromOwnSets: Choose one of your own measurements sets
+chooseFromOwnSetsDesc: Pick any of your own measurements sets that have all required measurements to generate this pattern.
+chooseNewSet: Обрати новий набір мірок
+closure: Закриття
+collar: Комір
+columns: columns
+configurePattern: Налаштувати шаблон
+construction: Конструкція
+continueEditingTitle: Continue editing
+continueEditingDesc: Load the newly saved pattern in the pattern editor, so you can make more changes.
+cuffs: Манжети
+currentPrintLayout: Current print layout
+cutLayout: Макет розкрою
+darts: Виточки
+designOptions.d: Перевірте вплив опції на вигляд цього шаблону
+docs: Документація
+draft: Чернетка
+draftPattern: Ескіз шаблону
+edit: Редагувати
+editCurrentMeasies: Відредагувати поточні заміри
+editCurrentMeasiesDesc: Changes you make here will not be saved to your measurements sets, and will only affect this pattern.
+editCurrentMeasiesHeader: Edit Pattern Measurements
+editMeasiesByHand: Edit measurements by hand
+editMeasiesByHandDesc: Manually set or override any measurements. These changes will only apply to the current pattern.
+editSettings: Редагування конфігурації
+elastic: Резинка
+export: Експортувати
+exportAsData: Експорт даних
+exportForEditing: Експортувати для коригування
+exportForPrinting: Експортувати для друку
+exportPattern-txt: Експортувати PDF для Вашого принтера, або завантажити цю викрійку в інших форматах
+exportPattern: Експортувати викрійку
+fit: За розміром
+frontPockets: Передні кишені
+generatePdf: Generate print-ready PDF
+giveItAName: Дайте йому ім'я.
+goToPatternTitle: Navigate to the pattern page
+goToPatternDesc: Exit the pattern editor and navigate to the pattern page where you can update the pattern's metadata.
+height: Висота
+help: Допоможіть!
+layoutSettings.d: Additional options to further optimize the printing layout of your pattern.
+layoutSettings.t: Layout settings
+length: Довжина
+learnHowToUseEditor: Learn how to use FreeSewing's online pattern editor
+measies: Вимірювання викрійки
+measiesOk: У нас є всі необхідні виміри для створення цієї моделі.
+measurements.d: Перевірте вплив вимірювання на вигляд цього шаблону
+menu: Меню
+name: Назва
+noDesignFound: Ми не змогли знайти цей дизайн. Цього не повинно статися, тому ми будемо дуже вдячні, якщо ви повідомите про це.
+noInlineDocs: Documention is not included in this build
+noInlineDocsDesc: Please visit FreeSewing.org to access our documentation
+notes: Нотатки
+pages: pages
+part: Деталь викрійки
+partInfo: Інформація про деталь
+partTransfo: Part transformation buttons
+partTransfoDesc: These buttons allow you to rotate or flip individual pattern parts.
+partTransfoNo: Hide buttons
+partTransfoNoDesc: Do not include these buttons on the pattern output
+partTransfoYes: Show buttons
+partTransfoYesDesc: Include these buttons on the pattern output (they will not be printed)
+pathInfo: Інформація про шлях
+patternBookmarkCreated: Pattern bookmark created
+patternInspector: Інспектор зразків
+patternLogs: Журнали шаблонів
+patternSaved: Pattern saved
+pockets: Кишені
+printLayout: Макет для друку
+printSettings.d: Configure your pattern so you can print it just the way you like it. Includes page size & orientation, margins, and more.
+printSettings.t: Print settings
+reset: Змінити
+resetPrintLayout: Reset print layout
+resetPrintLayoutDesc: Removes all manual changes to the print layout, and restores the default layout
+rows: rows
+save: Зберегти
+savePattern: Зберегти викрійку
+saveAsNewPattern: Save as new pattern
+savePatternAs: Save pattern as...
+savePatternAsHellip: Save pattern as...
+saveSettings: Зберегти налаштування
+saveYourPattern: Збережіть свій шаблон
+seeMissingMeasies: See missing measurements
+show: Показати
+showAllParts: Показати всі частини деталі
+showMovableButtons: Кнопки
+showOnlyThisPart: Показати тільки цю частину деталі
+sleevecap: Окат рукава
+style: Стиль
+test: Тест
+testDesignMeasurement: "Test {design} measurements: {measurement}"
+testDesignOption: "Test {design} design options: {option}"
+testDesignSets: "Test {design} across measurements sets"
+testMeasurements: Test measurements
+testMeasurementsDesc: Test how the design adapts to changes to a specific measurement
+testOptions: Test design options
+testOptionsDesc: Test how the design adapts to changes in a specific design option
+testPattern: Тестовий зразок
+testSets: Test measurements sets
+testSetsDesc: Test how the design adapts across different measurements sets
+topLeft: Вгорі ліворуч
+weLackSomeMeasies: Нам не вистачає { nr } вимірів для створення цього шаблону
+whereToGoAfterSaveAs: After saving the new pattern, what do you want to do?
+width: Ширина
+xTotalPagesSomeBlank: "{total} pages in total but {blank} are blank"
+yamlEditViewError: Проблеми з YAML
+yamlEditViewErrorDesc: Ми зберегли Ваш внесок, але він може не працювати з наступних причин
+yamlEditViewTitleThing: 'Редагувати конфігурацію шаблону для {thing}'
+youCanPickOrEnter: Ви можете вибрати набір вимірів або ввести їх вручну, але без цих вимірів ми не зможемо продовжити роботу.
+youUseCustomValue: You are using the default value
+youUseDefaultValue: You are using a custom value

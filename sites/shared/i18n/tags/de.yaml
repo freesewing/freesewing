@@ -1,0 +1,23 @@
+#These are UI strings
+tags: Stichworte
+showLineDrawings: Show line drawings
+showExamples: Show examples
+clearFilter: Clear filter
+difficulty: Schwierigkeit
+learnMoreAboutThing: Learn more about {thing}
+newThingPattern: New {thing} pattern
+#Actual tags start here
+accessories: Accessoires
+bags: Taschen
+blocks: Blöcke
+bottoms: Hosen, Röcke, etc
+coats: Mäntel
+hats: Hüte
+historical: Historisch
+infants: Kleinkinder
+skirts: Röcke
+swimwear: Bademode
+tops: Oberteile
+toys: Spielzeug
+trousers: Hose
+underwear: Unterwäsche

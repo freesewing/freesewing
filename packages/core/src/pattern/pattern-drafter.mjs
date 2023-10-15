@@ -1,6 +1,6 @@
 import { PatternDraftQueue } from './pattern-draft-queue.mjs'
 import { Part } from '../part.mjs'
-import { __macroName } from '../utils.mjs'
+import { __macroName, mergeOptions } from '../utils.mjs'
 
 /**
  * A class to handle drafting a pattern
@@ -21,14 +21,17 @@ PatternDrafter.prototype.draft = function () {
   // Keep container for drafted parts fresh
   this.pattern.parts = []
 
+  // Extend pattern-wide store with methods from plugins
+  this.pattern.__extendPatternStore()
+
   // Iterate over the provided sets of settings (typically just one)
   for (const set in this.pattern.settings) {
     this.pattern.setStores[set] = this.pattern.__createSetStore()
     this.__useSet(set)
 
-    this.activeStore.log.debug(`Initialized store for set ${set}`)
+    this.activeStore.log.debug(`🗃️ Initialized store for set \`${set}\``)
     this.pattern.__runHooks('preSetDraft')
-    this.activeStore.log.debug(`📐 Drafting pattern for set ${set}`)
+    this.activeStore.log.debug(`📐 Drafting pattern for set \`${set}\``)
 
     // Create parts container
     this.pattern.parts[set] = {}
@@ -69,7 +72,7 @@ PatternDrafter.prototype.draftPartForSet = function (partName, set) {
   const configPart = this.pattern.config.parts?.[partName]
   if (typeof configPart?.draft !== 'function') {
     this.activeStore.log.error(
-      `Unable to draft pattern part __${partName}__. Part.draft() is not callable`
+      `Unable to draft pattern part \`${partName}\`. Part.draft() is not callable`
     )
     return
   }
@@ -84,7 +87,7 @@ PatternDrafter.prototype.draftPartForSet = function (partName, set) {
 
     if (typeof result === 'undefined') {
       this.activeStore.log.error(
-        `Result of drafting part ${partName} was undefined. Did you forget to return the part?`
+        `Result of drafting part \`${partName}\` was undefined. Did you forget to return the part?`
       )
     } else {
       // hide if necessary
@@ -95,7 +98,7 @@ PatternDrafter.prototype.draftPartForSet = function (partName, set) {
     }
     return result
   } catch (err) {
-    this.activeStore.log.error([`Unable to draft part \`${partName}\` (set ${set})`, err])
+    this.activeStore.log.error([`Unable to draft part \`${partName}\` (set \`${set}\`)`, err])
   }
 }
 
@@ -112,14 +115,14 @@ PatternDrafter.prototype.__createPartForSet = function (partName, set = 0) {
     throw new Error('malicious attempt at altering Object.prototype. Stopping action')
   }
   // Create parts
-  this.activeStore.log.debug(`📦 Creating part \`${partName}\` (set ${set})`)
+  this.activeStore.log.debug(`📦 Creating part \`${partName}\` (set \`${set}\`)`)
   this.pattern.parts[set][partName] =
     this.pattern.parts[set][partName] || this.__createPartWithContext(partName, set)
 
   // Handle inject/inheritance
   const parent = this.pattern.config.inject[partName]
   if (typeof parent === 'string') {
-    this.activeStore.log.debug(`Creating part \`${partName}\` from part \`${parent}\``)
+    this.activeStore.log.debug(`🪆 Creating part \`${partName}\` from part \`${parent}\``)
     try {
       this.pattern.parts[set][partName].__inject(this.pattern.parts[set][parent])
     } catch (err) {
@@ -174,18 +177,26 @@ PatternDrafter.prototype.__createPartWithContext = function (name, set) {
 PatternDrafter.prototype.__loadAbsoluteOptionsSet = function (set) {
   for (const optionName in this.pattern.settings[set].options) {
     const option = this.pattern.config.options[optionName]
-    if (
-      typeof option !== 'undefined' &&
-      typeof option.snap !== 'undefined' &&
-      option.toAbs instanceof Function
-    ) {
-      this.pattern.settings[set].absoluteOptions[optionName] = this.__snappedPercentageOption(
-        optionName,
-        set
-      )
-      this.pattern.setStores[set].log.debug(
-        `🧲 Snapped __${optionName}__ to \`${this.pattern.settings[set].absoluteOptions[optionName]}\` for set __${set}__`
-      )
+    if (typeof option !== 'undefined' && option.toAbs instanceof Function) {
+      if (typeof option.snap !== 'undefined') {
+        this.pattern.settings[set].absoluteOptions[optionName] = this.__snappedPercentageOption(
+          optionName,
+          set
+        )
+        this.pattern.setStores[set].log.debug(
+          `🧲 Snapped __${optionName}__ to \`${this.pattern.settings[set].absoluteOptions[optionName]}\` for set __${set}__`
+        )
+      } else {
+        const abs = option.toAbs(
+          this.pattern.settings[set].options[optionName],
+          this.pattern.settings[set],
+          mergeOptions(this.pattern.settings[set], this.pattern.config.options)
+        )
+        this.pattern.settings[set].absoluteOptions[optionName] = abs
+        this.pattern.setStores[set].log.debug(
+          `🧮 Absolute value of \`${optionName}\` option is \`${abs}\` for set __${set}__`
+        )
+      }
     }
   }
 
@@ -202,13 +213,17 @@ PatternDrafter.prototype.__loadAbsoluteOptionsSet = function (set) {
  */
 PatternDrafter.prototype.__snappedPercentageOption = function (optionName, set) {
   const conf = this.pattern.config.options[optionName]
-  const abs = conf.toAbs(this.pattern.settings[set].options[optionName], this.pattern.settings[set])
+  const abs = conf.toAbs(
+    this.pattern.settings[set].options[optionName],
+    this.pattern.settings[set],
+    mergeOptions(this.pattern.settings[set], this.pattern.config.options)
+  )
   // Handle units-specific config - Side-step immutability for the snap conf
   let snapConf = conf.snap
   if (!Array.isArray(snapConf) && snapConf.metric && snapConf.imperial)
     snapConf = snapConf[this.pattern.settings[set].units]
   // Simple steps
-  if (typeof snapConf === 'number') return Math.ceil(abs / snapConf) * snapConf
+  if (typeof snapConf === 'number') return Math.round(abs / snapConf) * snapConf
   // List of snaps
   if (Array.isArray(snapConf) && snapConf.length > 1) {
     for (const snap of snapConf

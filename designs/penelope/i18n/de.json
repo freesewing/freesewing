@@ -1,0 +1,72 @@
+{
+  "t": "Penelope, der Bleistiftrock",
+  "d": "Penelope ist ein Bleistiftrock mit oder ohne Gehschlitz in rückwärtigen Teil.",
+  "p": {
+    "back": "Rückseite",
+    "front": "Vorderseite",
+    "waistband": "Bund"
+  },
+  "s": {},
+  "o": {
+    "backDartDepthFactor": {
+      "t": "Zurück zum Abnäherinhalttiefenfaktor",
+      "d": "Wie weit der rückwärtige Abnäher vom Taillenbund nach unten geht. Dies ist ein Faktor des Abstandes von der natürlichen Taille bis zum Gesäßumfang."
+    },
+    "backVent": {
+      "t": "Hinterlüftung",
+      "d": "Fügt einen Bewegungschlitz hinten am Rock hinzu."
+    },
+    "backVentLength": {
+      "t": "Rückenlüftungslänge",
+      "d": "Die Länge des Bewegungschlitzes hinten als ein Prozentsatz der Gesamtrocklänge."
+    },
+    "curvedDarts": {
+      "t": "Curved darts",
+      "d": "Whether or not to used curved darts."
+    },
+    "dartToSideSeamFactor": {
+      "t": "Abnäher zu Seitennaht Faktor",
+      "d": "Prozentuales Verhältnis wieviel der Reduktion von der Hüftweite zur Taille über die Abnäher und wieviel über die Seitennäht erzielt wurde."
+    },
+    "frontDartDepthFactor": {
+      "t": "Vorderer Abnäherinhälttiefenfaktor",
+      "d": "Wie weit nach unten der vordere Abnäher von der Taillenlinie geht. Dies ist ein Faktor des Maßes von der natürlichen Taille zum Gesäßumfang."
+    },
+    "hem": {
+      "t": "Höhe des Saumes",
+      "d": "Breite des Saumes. Maß in absoluten Werten angeben."
+    },
+    "hemBonus": {
+      "t": "Saumzugabe",
+      "d": "Diese Option reduziert die Saumweite. Sie ist ein prozentualer Anteil des Gesäßumfangs."
+    },
+    "lengthBonus": {
+      "t": "Längenbonus",
+      "d": "Dies legt Länge des Rockes fest. Es ist einem Prozentsatz des Abstands natürliche Taille zu Knie definiert."
+    },
+    "nrOfDarts": {
+      "t": "Anzahl Abnäher",
+      "d": "Die Anzahl der Abnäher, die in dem Schnittmuster verwendet werden. Das Maximum ist 2. Dies kann reduziert werden, wenn das Schnittmuster zu kleine Abnäher erstellt."
+    },
+    "seatEase": {
+      "t": "Zugabe Gesäß",
+      "d": "Zugegebene Weite auf Höhe des Gesäßs."
+    },
+    "waistBand": {
+      "t": "Taillenbund",
+      "d": "Füge einen Taillenbund zum Schnittmuster hinzu."
+    },
+    "waistBandWidth": {
+      "t": "Breite des Taillenbundes",
+      "d": "Die Breite des Taillenbundes."
+    },
+    "waistEase": {
+      "t": "Taille erleichtert",
+      "d": "Zugegebene Weite auf Taillenhöhe."
+    },
+    "zipperLocation": {
+      "t": "Platzierung Reißverschluss",
+      "d": "Platzierung des Reißverschlusses."
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import designsByType from './designs.json' assert { type: 'json' }
+import designs from './designs.json' assert { type: 'json' }
 import packages from './packages.json' assert { type: 'json' }
 import plugins from './plugins.json' assert { type: 'json' }
 import sites from './sites.json' assert { type: 'json' }
@@ -21,15 +21,8 @@ const unpackDesigns = (obj, folder) =>
     ])
   )
 
-const designs = {
-  ...designsByType.accessories,
-  ...designsByType.blocks,
-  ...designsByType.garments,
-  ...designsByType.utilities,
-}
-
 // Re-Export imported JSON
-export { designs, designsByType, packages, plugins, sites }
+export { designs, packages, plugins, sites }
 
 // All software
 export const software = {

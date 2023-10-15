@@ -1,12 +1,12 @@
 ---
 layout: onecol
-title: Cutting
+title: Крій
 ---
 
-![Me cutting out some T-shirts](cutting.jpg)
+![Я вирізаю футболки](cutting.jpg)
 
-Cutting is the act of cutting out the different pattern pieces out of your fabric.
+Крій — це процес вирізання з тканини різних деталей викрійки.
 
-Cutting is typically done with scissors or a rotary cutter.
+Крій зазвичай виконується ножицями або роторним різаком.
 
-> The **cut of a garment**, the way it looks, refers to how it was cut out. For example, high-cut jeans and a low-cut top.
+> **Крій одягу**, себто його вигляд, описує як він був вирізаний. Наприклад, джинси вузького крою та топ з глибоким вирізом.

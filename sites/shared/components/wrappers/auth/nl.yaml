@@ -1,0 +1,20 @@
+authRequired: Aanmelden vereist
+membersOnly: Deze inhoud is alleen toegankelijk voor FreeSewing leden.
+signUp: Registreren
+signIn: Aanmelden
+statusUnknown: Waarschuwing accountstatus
+statusUnknownMsg: Je accountstatus verbiedt ons om je gegevens te verwerken. Neem contact op met support.
+consentLacking: Toestemming ontbreekt
+consentLackingMsg: We hebben geen toestemming om je gegevens te verwerken. Zonder je toestemming hebben we geen wettelijke basis om je gegevens te verwerken.
+accountProhibited: Je account is uitgeschakeld
+accountProhibitedMsg: Je account is administratief uitgeschakeld.
+accountDisabled: Account uitgeschakeld
+accountDisabledMsg: Je kunt een uitgeschakeld account niet opnieuw inschakelen. Hiervoor moet je contact opnemen met support.
+accountInactive: Je account is inactief
+accountInactiveMsg: Je moet je account activeren via de aanmeldlink die we je hebben gestuurd.
+signupAgain: Als je de link niet kan terugvinden kan je een nieuwe link ontvangen door je opnieuw aan te melden.
+cannotUse: Een uitgeschakeld account kan niet worden gebruikt.
+contactSupport: Contact opnemen met support
+reviewConsent: Herzie uw toestemmingen
+roleLacking: Deze inhoud vereist een gebruikersrol die je niet hebt
+roleLackingMsg: Toegang tot deze inhoud vereist de rol <b>{ requiredRole }</b>. Jouw rol is <b>{ role }</b> en daardoor heb je geen toegang tot deze inhoud.

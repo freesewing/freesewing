@@ -1,0 +1,49 @@
+{
+  "t": "Corset Cathrin",
+  "d": "Cathrin est un corset sous-poitrine ou un serre-taille.",
+  "p": {
+    "base": "Base",
+    "panel1": "Pièce 1",
+    "panel2": "Pièce 2",
+    "panel3": "Pièce 3",
+    "panel4": "Pièce 4",
+    "panel5": "Pièce 5",
+    "panel6": "Pièce 6",
+    "panels": "Pièces"
+  },
+  "s": {},
+  "o": {
+    "panels": {
+      "t": "Nombre de pièces",
+      "d": "Le nombre de pièces à tracer. Plus il y a de pièces, mieux c'est pour l'ajustement des modèles avec courbes."
+    },
+    "waistReduction": {
+      "t": "Réduction de la taille",
+      "d": "Le montant par lequel vous voulez que le corset resserre votre taille."
+    },
+    "backOpening": {
+      "t": "Ouverture arrière",
+      "d": "Ouverture au centre de la fermeture du dos."
+    },
+    "backRise": {
+      "t": "Élévation dos",
+      "d": "À quel point les panneaux arrière s’élèvent de vos bras au centre de votre dos."
+    },
+    "backDrop": {
+      "t": "Abaissement du dos",
+      "d": "Combien les panneaux arrière s'abaissent de vos hanches vers votre centre arrière Les valeurs négatives vont lever le dos."
+    },
+    "frontRise": {
+      "t": "Élévation avant",
+      "d": "Élévation des panneaux avant au centre avant, entre vos seins. Les valeurs négatives les diminueront."
+    },
+    "frontDrop": {
+      "t": "Abaissement avant",
+      "d": "Combien les panneaux avant s'abaissent de vos hanches vers votre centre avant."
+    },
+    "hipRise": {
+      "t": "Élévation des hanches",
+      "d": "Combien les panneaux latéraux montent sur vos hanches."
+    }
+  }
+}

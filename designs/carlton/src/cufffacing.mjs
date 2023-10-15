@@ -1,18 +1,7 @@
 import { topSleeve } from './topsleeve.mjs'
 import { underSleeve } from './undersleeve.mjs'
 
-function draftCarltonCuffFacing({
-  paperless,
-  sa,
-  store,
-  complete,
-  points,
-  macro,
-  Point,
-  paths,
-  Path,
-  part,
-}) {
+function draftCarltonCuffFacing({ sa, store, utils, points, macro, Point, paths, Path, part }) {
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(
     store.get('topCuffWidth') + store.get('underCuffWidth'),
@@ -20,20 +9,29 @@ function draftCarltonCuffFacing({
   )
   points.bottomLeft = new Point(points.topLeft.x, points.bottomRight.y)
   points.topRight = new Point(points.bottomRight.x, points.topLeft.y)
-  macro('round', {
-    from: points.topLeft,
-    to: points.bottomRight,
-    via: points.bottomLeft,
-    radius: store.get('cuffRadius'),
-    prefix: 'roundLeft',
-  })
-  macro('round', {
-    from: points.bottomLeft,
-    to: points.topRight,
-    via: points.bottomRight,
-    radius: store.get('cuffRadius'),
-    prefix: 'roundRight',
-  })
+  // Macros will return the auto-generated IDs
+  const ids = {
+    roundLeft: macro('round', {
+      id: 'roundLeft',
+      from: points.topLeft,
+      to: points.bottomRight,
+      via: points.bottomLeft,
+      radius: store.get('cuffRadius'),
+    }),
+    roundRight: macro('round', {
+      id: 'roundRight',
+      from: points.bottomLeft,
+      to: points.topRight,
+      via: points.bottomRight,
+      radius: store.get('cuffRadius'),
+    }),
+  }
+  // Create points from them with easy names
+  for (const side in ids) {
+    for (const id of ['start', 'cp1', 'cp2', 'end']) {
+      points[`${side}${utils.capitalize(id)}`] = points[ids[side].points[id]].copy()
+    }
+  }
 
   paths.seam = new Path()
     .move(points.topLeft)
@@ -46,47 +44,55 @@ function draftCarltonCuffFacing({
     .close()
     .attr('class', 'fabric')
 
-  store.cutlist.addCut()
-  store.cutlist.addCut({ cut: 2, material: 'lmhCanvas' })
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-  if (complete) {
-    points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    macro('title', {
-      at: points.title,
-      nr: 9,
-      title: 'cuffFacing',
-    })
+  /*
+   * Annotations
+   */
 
-    macro('grainline', {
-      from: points.bottomLeft.shift(0, 10 + store.get('cuffRadius')),
-      to: points.topLeft.shift(0, 10 + store.get('cuffRadius')),
-    })
+  // Cut list
+  store.cutlist.addCut({ cut: 2, from: 'fabric' })
+  store.cutlist.addCut({ cut: 2, from: 'canvas' })
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+  // Title
+  points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+  macro('title', {
+    at: points.title,
+    nr: 9,
+    title: 'cuffFacing',
+  })
 
-    if (paperless) {
-      macro('vd', {
-        from: points.roundRightStart,
-        to: points.roundRightEnd,
-        x: points.topRight.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.roundRightStart,
-        to: points.topRight,
-        x: points.topRight.x + sa + 30,
-      })
-      macro('hd', {
-        from: points.roundRightStart,
-        to: points.roundRightEnd,
-        y: points.bottomRight.y + sa + 15,
-      })
-      macro('hd', {
-        from: points.roundLeftStart,
-        to: points.roundRightEnd,
-        y: points.bottomRight.y + sa + 30,
-      })
-    }
-  }
+  // Grainline
+  macro('grainline', {
+    from: points.bottomLeft.shift(0, 10 + store.get('cuffRadius')),
+    to: points.topLeft.shift(0, 10 + store.get('cuffRadius')),
+  })
+
+  // Dimensions
+  macro('vd', {
+    id: 'hRoundedCorner',
+    from: points.roundRightStart,
+    to: points.roundRightEnd,
+    x: points.topRight.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.roundRightStart,
+    to: points.topRight,
+    x: points.topRight.x + sa + 30,
+  })
+  macro('hd', {
+    id: 'wRoundedCorner',
+    from: points.roundRightStart,
+    to: points.roundRightEnd,
+    y: points.bottomRight.y + sa + 15,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.roundLeftStart,
+    to: points.roundRightEnd,
+    y: points.bottomRight.y + sa + 30,
+  })
 
   return part
 }

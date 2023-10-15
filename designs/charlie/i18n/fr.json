@@ -1,0 +1,90 @@
+{
+  "t": "Charlie chinos",
+  "d": "Charlie est un modèle de pantalon en chino.",
+  "p": {
+    "back": "Back",
+    "backPocket": "Back pocket",
+    "backPocketFacing": "Back pocket facing",
+    "backPocketInterfacing": "Back pocket interfacing",
+    "backPocketWelt": "Back pocket welt",
+    "beltLoops": "Beltloops",
+    "flyExtension": "Fly extension",
+    "flyFacing": "Fly facing",
+    "front": "Front",
+    "frontPocket": "Front pocket",
+    "frontPocketFacing": "Front pocket facing",
+    "waistband": "Waistband",
+    "waistbandCurved": "Curved waistband"
+  },
+  "s": {},
+  "o": {
+    "backPocketHorizontalPlacement": {
+      "t": "Placement horizontal de la poche arrière",
+      "d": "Contrôle le placement horizontal de la poche arrière"
+    },
+    "backPocketVerticalPlacement": {
+      "t": "Placement vertical de la poche arrière",
+      "d": "Contrôle le placement vertical de la poche arrière"
+    },
+    "backPocketWidth": {
+      "t": "Largeur de la poche arrière",
+      "d": "Contrôle la largeur de la poche arrière"
+    },
+    "backPocketDepth": {
+      "t": "Profondeur de la poche arrière",
+      "d": "Contrôle la profondeur de la poche arrière"
+    },
+    "backPocketFacing": {
+      "t": "Fond de poche arrière",
+      "d": "Contrôle s'il faut inclure ou non un fond dans les poches arrière"
+    },
+    "frontPocketSlantDepth": {
+      "t": "Profondeur de la poche avant",
+      "d": "Contrôle la profondeur de la poche (frontale)"
+    },
+    "frontPocketSlantWidth": {
+      "t": "Largeur de la poche frontale",
+      "d": "Contrôle la largeur de la fenêtre de poche (frontale)"
+    },
+    "frontPocketSlantRound": {
+      "t": "Arrondi de poche avant",
+      "d": "Contrôle à quelle distance de la fin de l'objectif nous commençons à arrondir dans le dehors"
+    },
+    "frontPocketSlantBend": {
+      "t": "courbure de la poche avant",
+      "d": "Contrôle le rayon par lequel on arrondit la poche enfoncée dans la sortie"
+    },
+    "frontPocketWidth": {
+      "t": "Largeur des poches avant",
+      "d": "Contrôle la largeur du sac de poche avant"
+    },
+    "frontPocketDepth": {
+      "t": "Profondeur des poches avant",
+      "d": "Contrôle la profondeur du sac de poche avant"
+    },
+    "frontPocketFacing": {
+      "t": "Poche avant face",
+      "d": "Contrôle la distance à laquelle la poche est orientée dans le sac de poche"
+    },
+    "beltLoops": {
+      "t": "Boucles de ceinture",
+      "d": "Contrôle la quantité de boucles de ceinture"
+    },
+    "flyCurve": {
+      "t": "Voler la courbe",
+      "d": "Contrôle la courbure de la couture J-fly"
+    },
+    "flyLength": {
+      "t": "Longueur de la mouche",
+      "d": "Contrôle la longueur de la mouche"
+    },
+    "flyWidth": {
+      "t": "Fly width",
+      "d": "Contrôle à quelle distance le J-couture de décalage par rapport au bord de la volée"
+    },
+    "waistbandCurve": {
+      "t": "Courbe de la ceinture",
+      "d": "Contrôle la courbure de la ceinture."
+    }
+  }
+}

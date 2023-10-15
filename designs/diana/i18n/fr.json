@@ -1,0 +1,28 @@
+{
+  "t": "Haut drapé Diana",
+  "d": "Diana est un top avec un col drapé.",
+  "p": {
+    "back": "Retour",
+    "front": "Avant",
+    "sleeve": "Manche"
+  },
+  "s": {},
+  "o": {
+    "shoulderSeamLength": {
+      "t": "Longueur de couture d'épaule",
+      "d": "Contrôle la longueur de la couture d'épaule"
+    },
+    "drapeAngle": {
+      "t": "Angle du drapé",
+      "d": "Contrôle le montant du drapé"
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at your hips"
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at your waist"
+    }
+  }
+}

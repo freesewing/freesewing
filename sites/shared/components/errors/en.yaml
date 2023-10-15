@@ -1,0 +1,16 @@
+t404: Error 404
+d404: What you are looking for cannot be found
+m404: This error typically means that there is no problem, but rather that the information you requested is not available.
+something: Something went wrong
+reportThis: Report this problem
+newReport: Generate a problem report
+privateReport.t: Generate a private problem report
+privateReport.d: No information about this problem will be made available to the wider FreeSewing community.
+publicReport.t: Generate a public problem report
+publicReport.d: Some information about this problem will be made available publicly to facilitate problem solving.
+leadId: This is the unique context ID of your report
+reportCreated: Report Created
+leadIssue: In addition, we have created an issue on GitHub to track this — this is also where you can add your own comments
+close: Close
+
+

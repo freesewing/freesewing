@@ -1,15 +1,15 @@
 ---
-title: Edgestitching
+title: Costura de bordes
 ---
 
-Edgestitching is a speficic type of _topstitching_. It is specific because of its location. To edgestitch means to topstitch right next to a seam, typically about 3mm or 1/8 inch next to it.
+El pespunte es un tipo especial de _pespunte_. Es específico por su ubicación. To edgestitch means to topstitch right next to a seam, typically about 3mm or 1/8 inch next to it.
 
-![Edgestitching on a FreeSewing Hugo Hoodie](edgestitching.jpg)
+![Bordado en una sudadera Hugo de FreeSewing](edgestitching.jpg)
 
 Edgestitching can be used to reinforce seams, to keep material in place by sewing down seam allowance or lining, and for decorative effect.
 
 <Tip>
 
-For best results, use a sewing needle for optimized for topstitching
+Para obtener los mejores resultados, utiliza una aguja de coser optimizada para pespuntear
 
 </Tip>

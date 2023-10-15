@@ -18,7 +18,6 @@ function simonCollar({
   Path,
   paths,
   complete,
-  paperless,
   macro,
   options,
   part,
@@ -80,105 +79,130 @@ function simonCollar({
     .close()
     .attr('class', 'fabric')
 
-  // Complete pattern?
-  if (complete) {
-    // Draw undercollar line
-    const uc = points.topMid.dist(points.bottomMid) * 0.05
-    points.ucTopMid = points.topMid.shift(-90, uc)
-    points.ucRightTopHinge = points.rightTopHinge.shift(-90, uc)
-    points.ucRightTopHingeCp1 = points.rightTopHingeCp1.shift(-90, uc)
-    points.ucLeftTopHinge = points.ucRightTopHinge.flipX()
-    points.ucLeftTopHingeCp2 = points.ucRightTopHingeCp1.flipX()
-    paths.underCollar = new Path()
-      .move(points.rightTopEdge)
-      ._curve(points.ucRightTopHingeCp1, points.ucRightTopHinge)
-      .line(points.ucLeftTopHinge)
-      .curve_(points.ucLeftTopHingeCp2, points.leftTopEdge)
-      .attr('class', 'dotted')
-      .attr('data-text', 'cutUndercollarSlightlySmaller')
-      .attr('data-text-class', 'center')
+  // Draw undercollar line
+  const uc = points.topMid.dist(points.bottomMid) * 0.05
+  points.ucTopMid = points.topMid.shift(-90, uc)
+  points.ucRightTopHinge = points.rightTopHinge.shift(-90, uc)
+  points.ucRightTopHingeCp1 = points.rightTopHingeCp1.shift(-90, uc)
+  points.ucLeftTopHinge = points.ucRightTopHinge.flipX()
+  points.ucLeftTopHingeCp2 = points.ucRightTopHingeCp1.flipX()
+  paths.underCollar = new Path()
+    .move(points.rightTopEdge)
+    ._curve(points.ucRightTopHingeCp1, points.ucRightTopHinge)
+    .line(points.ucLeftTopHinge)
+    .curve_(points.ucLeftTopHingeCp2, points.leftTopEdge)
+    .attr('class', 'fabric dashed')
 
-    // Helplines
+  // Helplines
+  if (complete)
     paths.help = new Path().move(points.topMid).line(points.bottomMid).attr('class', 'dotted')
 
-    // Grainline
-    const grainlineY = (points.bottomMid.y - points.ucTopMid.y) / 2
-    macro('grainline', {
-      from: new Point(points.bottomMidCp2.x, grainlineY),
-      to: new Point(points.bottomMidCp1.x, grainlineY),
-    })
+  if (sa) {
+    paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+    paths.saUndercollar = paths.underCollar.offset(sa).attr('class', 'dotted')
+  }
 
-    // Title
-    points.title = new Point(20, points.bottomMid.y / 2)
-    macro('title', {
-      at: points.title,
-      nr: '7 + 8',
-      title: 'collarAndUndercollar',
-      scale: 0.6,
-      append: true,
-    })
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut([
+    { cut: 1, from: 'fabric' },
+    { cut: 1, from: 'fabric' },
+    { cut: 1, from: 'interfacing' },
+    { cut: 1, from: 'interfacing' },
+  ])
 
-    // Indicate collar stand side
-    paths.collarStandLeft = new Path()
+  // Grainline
+  const grainlineY = (points.bottomMid.y - points.ucTopMid.y) / 2
+  macro('grainline', {
+    from: new Point(points.bottomMidCp2.x, grainlineY),
+    to: new Point(points.bottomMidCp1.x, grainlineY),
+  })
+
+  // Title
+  points.title = new Point(20, points.bottomMid.y / 2)
+  macro('title', {
+    at: points.title,
+    nr: '7 + 8',
+    title: 'collarAndUndercollar',
+    scale: 0.6,
+    append: true,
+  })
+
+  // Indicate collar stand side
+  macro('banner', {
+    path: new Path()
       .move(points.leftBottomEdge)
       ._curve(points.bottomMidCp2, points.bottomMid)
-      .attr('data-text', 'sideOfTheCollarStand')
-      .attr('data-text-class', 'center')
-    paths.collarStandRight = new Path()
-      .move(points.bottomMid)
-      .curve_(points.bottomMidCp1, points.rightBottomEdge)
-      .attr('data-text', 'sideOfTheCollarStand')
-      .attr('data-text-class', 'center')
-    // Notches
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['bottomMid', 'rightBottomEdge', 'leftBottomEdge', 'rightTopEdge', 'leftTopEdge'],
-    })
+      .curve_(points.bottomMidCp1, points.rightBottomEdge),
+    text: 'simon:sideOfTheCollarStand',
+    classes: 'text-sm fill-note center',
+  })
+  // Note for the undercollar
+  macro('banner', {
+    path: paths.underCollar.reverse(),
+    text: 'simon:cutUndercollarSmaller',
+    classes: 'text-sm fill-note center',
+    dy: 8,
+  })
 
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-      paths.saUndercollar = paths.underCollar.offset(sa).attr('class', 'dotted')
-    }
-  }
+  // Notches
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: [
+      'bottomMid',
+      'rightBottomEdge',
+      'leftBottomEdge',
+      'rightTopEdge',
+      'leftTopEdge',
+      'leftTopHinge',
+      'rightTopHinge',
+    ],
+  })
 
-  // Paperless?
-  if (paperless) {
-    macro('vd', {
-      from: points.bottomMid,
-      to: points.topMid,
-      x: points.rightTopEdge.x + 15 + sa,
-    })
-    macro('vd', {
-      from: points.bottomMid,
-      to: points.rightTopEdge,
-      x: points.rightTopEdge.x + 30 + sa,
-    })
-    macro('vd', {
-      from: points.rightBottomEdge,
-      to: points.topMid,
-      x: points.rightTopEdge.x + 45 + sa,
-    })
-    macro('vd', {
-      from: points.rightBottomEdge,
-      to: points.rightTopEdge,
-      x: points.rightTopEdge.x + 60 + sa,
-    })
-    macro('hd', {
-      from: points.leftTopHinge,
-      to: points.rightTopHinge,
-      y: points.leftTopEdge.y - 15 - sa,
-    })
-    macro('hd', {
-      from: points.leftTopEdge,
-      to: points.rightTopEdge,
-      y: points.leftTopEdge.y - 30 - sa,
-    })
-    macro('hd', {
-      from: points.leftBottomEdge,
-      to: points.rightBottomEdge,
-      y: points.leftBottomEdge.y + 15 + sa,
-    })
-  }
+  macro('vd', {
+    id: 'hAtCb',
+    from: points.bottomMid,
+    to: points.topMid,
+    x: points.rightTopEdge.x + 15 + sa,
+  })
+  macro('vd', {
+    id: 'hCbBottomToTop',
+    from: points.bottomMid,
+    to: points.rightTopEdge,
+    x: points.rightTopEdge.x + 30 + sa,
+  })
+  macro('vd', {
+    id: 'hBottomToCbTop',
+    from: points.rightBottomEdge,
+    to: points.topMid,
+    x: points.rightTopEdge.x + 45 + sa,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.rightBottomEdge,
+    to: points.rightTopEdge,
+    x: points.rightTopEdge.x + 60 + sa,
+  })
+  macro('hd', {
+    id: 'wBetweenHinges',
+    from: points.leftTopHinge,
+    to: points.rightTopHinge,
+    y: points.leftTopEdge.y - 15 - sa,
+  })
+  macro('hd', {
+    id: 'wFullTop',
+    from: points.leftTopEdge,
+    to: points.rightTopEdge,
+    y: points.leftTopEdge.y - 30 - sa,
+  })
+  macro('hd', {
+    id: 'wFullBottom',
+    from: points.leftBottomEdge,
+    to: points.rightBottomEdge,
+    y: points.leftBottomEdge.y + 15 + sa,
+  })
 
   return part
 }

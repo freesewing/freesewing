@@ -144,7 +144,7 @@ Point.prototype.flipX = function (that = false) {
   this.__check()
   if (that) {
     if (that instanceof Point !== true)
-      this.log.warning('Called `Point.rotate(deg,that)` but `that` is not a `Point` object')
+      this.log.warn('Called `Point.rotate(deg,that)` but `that` is not a `Point` object')
     that.__check()
   }
   if (that === false || that.x === 0) return new Point(this.x * -1, this.y).__withLog(this.log)
@@ -161,7 +161,7 @@ Point.prototype.flipY = function (that = false) {
   this.__check()
   if (that) {
     if (that instanceof Point !== true)
-      this.log.warning('Called `Point.flipY(that)` but `that` is not a `Point` object')
+      this.log.warn('Called `Point.flipY(that)` but `that` is not a `Point` object')
     that.__check()
   }
   if (that === false || that.y === 0) return new Point(this.x, this.y * -1).__withLog(this.log)
@@ -177,9 +177,9 @@ Point.prototype.flipY = function (that = false) {
  */
 Point.prototype.rotate = function (deg, that) {
   if (typeof deg !== 'number')
-    this.log.warning('Called `Point.rotate(deg,that)` but `deg` is not a number')
+    this.log.warn('Called `Point.rotate(deg,that)` but `deg` is not a number')
   if (that instanceof Point !== true)
-    this.log.warning('Called `Point.rotate(deg,that)` but `that` is not a `Point` object')
+    this.log.warn('Called `Point.rotate(deg,that)` but `that` is not a `Point` object')
   const radius = this.__check().dist(that.__check())
   const angle = this.angle(that)
   const x = that.x + radius * Math.cos(deg2rad(angle + deg)) * -1
@@ -241,11 +241,11 @@ Point.prototype.shift = function (deg, dist) {
  */
 Point.prototype.shiftFractionTowards = function (that, fraction) {
   if (that instanceof Point !== true)
-    this.log.warning(
+    this.log.warn(
       'Called `Point.shiftFractionTowards(that, fraction)` but `that` is not a `Point` object'
     )
   if (typeof fraction !== 'number')
-    this.log.warning('Called `Point.shiftFractionTowards` but `fraction` is not a number')
+    this.log.warn('Called `Point.shiftFractionTowards` but `fraction` is not a number')
 
   return this.__check().shiftTowards(that.__check(), this.dist(that) * fraction)
 }
@@ -260,9 +260,7 @@ Point.prototype.shiftFractionTowards = function (that, fraction) {
 Point.prototype.shiftOutwards = function (that, distance) {
   distance = __asNumber(distance, 'distance', 'Point.shiftOutwards', this.log)
   if (that instanceof Point !== true)
-    this.log.warning(
-      'Called `Point.shiftOutwards(that, distance)` but `that` is not a `Point` object'
-    )
+    this.log.warn('Called `Point.shiftOutwards(that, distance)` but `that` is not a `Point` object')
   this.__check()
   that.__check()
 
@@ -279,9 +277,7 @@ Point.prototype.shiftOutwards = function (that, distance) {
 Point.prototype.shiftTowards = function (that, dist) {
   dist = __asNumber(dist, 'dist', 'Point.shiftTowards', this.log)
   if (that instanceof Point !== true)
-    this.log.warning(
-      'Called `Point.shiftTowards(that, distance)` but `that` is not a `Point` object'
-    )
+    this.log.warn('Called `Point.shiftTowards(that, distance)` but `that` is not a `Point` object')
 
   return this.__check().shift(this.angle(that.__check()), dist)
 }
@@ -294,7 +290,7 @@ Point.prototype.shiftTowards = function (that, dist) {
  */
 Point.prototype.sitsOn = function (that) {
   if (that instanceof Point !== true)
-    this.log.warning('Called `Point.sitsOn(that)` but `that` is not a `Point` object')
+    this.log.warn('Called `Point.sitsOn(that)` but `that` is not a `Point` object')
   if (this.__check().x === that.__check().x && this.y === that.y) return true
   else return false
 }
@@ -307,7 +303,7 @@ Point.prototype.sitsOn = function (that) {
  */
 Point.prototype.sitsRoughlyOn = function (that) {
   if (that instanceof Point !== true)
-    this.log.warning('Called `Point.sitsRoughlyOn(that)` but `that` is not a `Point` object')
+    this.log.warn('Called `Point.sitsRoughlyOn(that)` but `that` is not a `Point` object')
   if (
     Math.round(this.__check().x) === Math.round(that.__check().x) &&
     Math.round(this.y) === Math.round(that.y)
@@ -335,10 +331,8 @@ Point.prototype.slope = function (that) {
  */
 Point.prototype.translate = function (x, y) {
   this.__check()
-  if (typeof x !== 'number')
-    this.log.warning('Called `Point.translate(x,y)` but `x` is not a number')
-  if (typeof y !== 'number')
-    this.log.warning('Called `Point.translate(x,y)` but `y` is not a number')
+  if (typeof x !== 'number') this.log.warn('Called `Point.translate(x,y)` but `x` is not a number')
+  if (typeof y !== 'number') this.log.warn('Called `Point.translate(x,y)` but `y` is not a number')
   const p = this.copy()
   p.x += x
   p.y += y
@@ -346,19 +340,32 @@ Point.prototype.translate = function (x, y) {
   return p
 }
 
+/**
+ * Returns a point as an object suitable for inclusion in renderprops
+ *
+ * @return {object} point - A plain object representing the point
+ */
+Point.prototype.asRenderProps = function () {
+  return {
+    x: this.x,
+    y: this.y,
+    attributes: this.attributes.asRenderProps(),
+  }
+}
+
 //////////////////////////////////////////////
 //            PRIVATE METHODS               //
 //////////////////////////////////////////////
 
 /**
- * Checks the Points coordinates, and raises a warning when they are invalid
+ * Checks the Points coordinates, and logs a warning when they are invalid
  *
  * @private
  * @return {object} this - The Point instance
  */
 Point.prototype.__check = function () {
-  if (typeof this.x !== 'number') this.log.warning('X value of `Point` is not a number')
-  if (typeof this.y !== 'number') this.log.warning('Y value of `Point` is not a number')
+  if (typeof this.x !== 'number') this.log.warn('X value of `Point` is not a number')
+  if (typeof this.y !== 'number') this.log.warn('Y value of `Point` is not a number')
 
   return this
 }
@@ -396,15 +403,15 @@ export function pointsProxy(points, log) {
     set: (points, name, value) => {
       // Constructor checks
       if (value instanceof Point !== true)
-        log.warning(`\`points.${name}\` was set with a value that is not a \`Point\` object`)
+        log.warn(`\`points.${name}\` was set with a value that is not a \`Point\` object`)
       if (value.x == null || !__isCoord(value.x))
-        log.warning(`\`points.${name}\` was set with a \`x\` parameter that is not a \`number\``)
+        log.warn(`\`points.${name}\` was set with a \`x\` parameter that is not a \`number\``)
       if (value.y == null || !__isCoord(value.y))
-        log.warning(`\`points.${name}\` was set with a \`y\` parameter that is not a \`number\``)
+        log.warn(`\`points.${name}\` was set with a \`y\` parameter that is not a \`number\``)
       try {
         value.name = name
       } catch (err) {
-        log.warning(`Could not set \`name\` property on \`points.${name}\``)
+        log.warn(`Could not set \`name\` property on \`points.${name}\``)
       }
       return (points[name] = value)
     },

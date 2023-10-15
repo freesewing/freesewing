@@ -1,0 +1,24 @@
+{
+  "t": "Trayvon das",
+  "d": "Trayvon is een das zoals het hoort, voor een professioneel resultaat.",
+  "p": {
+    "fabricLoop": "Fabric loop",
+    "fabricTail": "Stof staart",
+    "fabricTip": "Stof tip",
+    "interfacingTail": "Interfacing staart",
+    "interfacingTip": "Interfacing tip",
+    "liningTail": "Voering staart",
+    "liningTip": "Voering tip"
+  },
+  "s": {},
+  "o": {
+    "tipWidth": {
+      "t": "Breedte punten",
+      "d": "De breedte van je stropdas aan het uiteinde"
+    },
+    "knotWidth": {
+      "t": "Breedte knoop",
+      "d": "De breedte van je stropdas aan de knoop"
+    }
+  }
+}

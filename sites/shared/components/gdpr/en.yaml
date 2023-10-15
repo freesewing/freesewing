@@ -1,0 +1,38 @@
+clickHere: Click here to give your consent
+createAccount: Create account
+compliant: "FreeSewing respects your privacy and your rights. We adhere to the toughest privacy and security law in the world: the General Data Protection Regulation (GDPR) of the European Union (EU)."
+consent: Consent
+consentForAccountData: Consent for account data
+consentGiven: Consent given
+consentNotGiven: Consent not given
+consentWhyAnswer: Under the GDPR, processing of your personal data requires granular consent — in other words, we need your permission for the various ways we handle your data.
+createMyAccount: Create my account
+furtherReading: Further reading
+hideDetails: Hide details
+noConsentNoAccount: This consent is required for a FreeSewing account.
+noConsentNoAccountCreation: Without this consent, we cannot create a FreeSewing account.
+noIDoNot: 'No, I do not'
+openDataInfo: This data is used to study and understand the human form in all its shapes, so we can get better sewing patterns, and better fitting garments. Even though this data is anonymized, you have the right to object to this.
+openDataQuestion: Share anonymized measurements as open data
+privacyMatters: Privacy matters
+privacyNotice: FreeSewing Privacy Notice
+processing: Processing
+accountQuestion: Do you give your consent to process your account data?
+accountShareAnswer: '<b>No</b>, never.'
+accountTimingAnswer: '<b>12 months</b> after the last time your connected to our backend, or until you <b>remove</b> your account or <b>revoke</b> this consent.'
+accountWarning: Revoking this consent will trigger the removal of all of your data. It has the exact same affect as removing your account.
+accountWhatAnswerOptional: 'Optional: A <b>picture</b>, <b>bio</b>, or <b>GitHub username</b>'
+accountWhatAnswer: 'Your <b>email address</b>, <b>username</b>, and <b>password</b>, and any <b>body measurements</b> you add to your account.'
+accountWhatQuestion: What is account data?
+accountWhyAnswer: 'To <b>authenticate</b> you, <b>contact</b> you when needed, and generate <b>made-to-measure</b> sewing patterns.'
+readMore: For more information, please read our privacy notice.
+readRights: For more information, please read up on your rights.
+revokeConsent: Revoke consent
+shareQuestion: Do we share it with others?
+showDetails: Show details
+timingQuestion: How long do we keep it?
+whatYouNeedToKnow: What you need to know
+whyQuestion: Why do we need it?
+yesIDoObject: 'Yes, I do object'
+yesIDo: 'Yes, I do'
+openData: 'Note: Freesewing publishes anonymized measurements as open data for scientific research. You have the right to object to this'

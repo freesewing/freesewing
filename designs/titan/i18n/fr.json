@@ -1,0 +1,71 @@
+{
+  "t": "Bloc de pantalon Titan",
+  "d": "Titan est un patron de base de pantalon sans pinces.",
+  "p": {
+    "back": "Retour",
+    "front": "Avant"
+  },
+  "s": {},
+  "o": {
+    "kneeEase": {
+      "t": "Aisance du genou",
+      "d": "Contrôle la quantité d'aisance au genou"
+    },
+    "waistHeight": {
+      "t": "Hauteur de la taille",
+      "d": "Contrôle la hauteur de la taille, 100% = hauteur de la taille, 0% = hauteur de la hanche"
+    },
+    "lengthBonus": {
+      "t": "Supplément de longueur",
+      "d": "Contrôle la longueur du pantalon"
+    },
+    "crotchDrop": {
+      "t": "Hauteur d'enfourchure",
+      "d": "Abaisse la fourche pour un tombé plus décontracté"
+    },
+    "fitKnee": {
+      "t": "Ajuster au genou",
+      "d": "Ajuste les jambes à partir de la circonférence du genou plutôt que de la circonférence du bassin"
+    },
+    "legBalance": {
+      "t": "Équilibre des jambes",
+      "d": "Contrôle le ratio entre le panneau avant et arrière de la jambe"
+    },
+    "crossSeamCurveStart": {
+      "t": "Début de la courbe de l'enfourchure dos",
+      "d": "Contrôle la distance à partir de laquelle la courbe démarre pour l'enfourchure dos"
+    },
+    "crossSeamCurveBend": {
+      "t": "Courbure de l'enfourchure dos",
+      "d": "Contrôle la courbure de la couture de fourche dos"
+    },
+    "crossSeamCurveAngle": {
+      "t": "Angle de couture croisée",
+      "d": "Contrôle l'angle de la couture de croix"
+    },
+    "crotchSeamCurveStart": {
+      "t": "Début de la courbe de l'enfourchure avant",
+      "d": "Contrôle la distance à partir de laquelle la courbe démarre pour l'enfourchure avant"
+    },
+    "crotchSeamCurveBend": {
+      "t": "Courbure de la fourche avant",
+      "d": "Contrôle la courbure de la couture de fourche avant"
+    },
+    "crotchSeamCurveAngle": {
+      "t": "Angle de couture",
+      "d": "Contrôle l'angle de la couture de crotch"
+    },
+    "waistBalance": {
+      "t": "Équilibre de la taille",
+      "d": "Contrôle la position horizontale de la taille par rapport au bassin"
+    },
+    "waistbandWidth": {
+      "t": "Largeur de ceinture",
+      "d": "La largeur de la ceinture"
+    },
+    "grainlinePosition": {
+      "t": "Position de la ligne de droit fil",
+      "d": "Contrôle la position horizontale de la jambe par rapport au bassin"
+    }
+  }
+}

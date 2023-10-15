@@ -24,7 +24,7 @@ export function Store(methods = []) {
   const logs = {
     debug: [],
     info: [],
-    warning: [],
+    warn: [],
     error: [],
   }
   this.log = {
@@ -34,8 +34,8 @@ export function Store(methods = []) {
     info: function (...data) {
       logs.info.push(...data)
     },
-    warning: function (...data) {
-      logs.warning.push(...data)
+    warn: function (...data) {
+      logs.warn.push(...data)
     },
     error: function (...data) {
       if (typeof window !== 'undefined') console.error(...data[0])
@@ -46,9 +46,12 @@ export function Store(methods = []) {
 
   for (const [path, method] of methods) {
     if (avoid.indexOf(path) !== -1) {
-      this.log.warning(`You cannot overwrite store.${path}()`)
+      this.log.warn(`You cannot overwrite \`store.${path}()\``)
     } else set(this, path, method)
   }
+
+  // Fallback packing algorithm
+  this.pack = fallbackPacker
 
   return this
 }
@@ -66,9 +69,9 @@ export function Store(methods = []) {
 Store.prototype.extend = function (methods) {
   for (const [path, method] of methods) {
     if (avoid.indexOf(path) !== -1) {
-      this.log.warning(`You cannot overwrite store.${path}()`)
+      this.log.warn(`You cannot overwrite \`store.${path}()\``)
     } else {
-      this.log.info(`Extending store with ${path}`)
+      this.log.info(`Extending store with \`${path}\``)
       set(this, path, (...args) => method(this, ...args))
     }
   }
@@ -86,7 +89,7 @@ Store.prototype.extend = function (methods) {
 Store.prototype.get = function (path, dflt) {
   const val = get(this, path, dflt)
   if (typeof val === 'undefined') {
-    this.log.warning(`Store.get(key) on key \`${path}\`, which is undefined`)
+    this.log.warn(`Store.get(key) on key \`${path}\`, which is undefined`)
   }
 
   return val
@@ -104,7 +107,7 @@ Store.prototype.push = function (path, ...values) {
   if (Array.isArray(arr)) {
     return this.set(path, [...arr, ...values])
   } else {
-    this.log.warning(`Store.push(value) on key \`${path}\`, but key does not hold an array`)
+    this.log.warn(`Store.push(value) on key \`${path}\`, but key does not hold an array`)
   }
 
   return this
@@ -119,7 +122,7 @@ Store.prototype.push = function (path, ...values) {
  */
 Store.prototype.set = function (path, value) {
   if (typeof value === 'undefined') {
-    this.log.warning(`Store.set(value) on key \`${path}\`, but value is undefined`)
+    this.log.warn(`Store.set(value) on key \`${path}\`, but value is undefined`)
   }
   set(this, path, value)
 
@@ -135,7 +138,7 @@ Store.prototype.set = function (path, value) {
  */
 Store.prototype.setIfUnset = function (path, value) {
   if (typeof value === 'undefined') {
-    this.log.warning(`Store.setIfUnset(value) on key \`${path}\`, but value is undefined`)
+    this.log.warn(`Store.setIfUnset(value) on key \`${path}\`, but value is undefined`)
   }
   if (typeof get(this, path) === 'undefined') {
     return set(this, path, value)
@@ -155,4 +158,23 @@ Store.prototype.unset = function (path) {
   unset(this, path)
 
   return this
+}
+
+/**
+ * The default pack method comes from a plugin, typically
+ * plugin-bin-back which is part of core plugins.
+ * However, when a pattern is loaded without plugins
+ * we stil don't want it work even when no pack method
+ * is available, so this is the fallback default pack method.
+ */
+function fallbackPacker(items, pattern) {
+  console.log({ items, pattern })
+  let w = 0
+  let h = 0
+  for (const item of items) {
+    if (item.width > w) w = item.width
+    if (item.height > w) w = item.height
+  }
+
+  return { w, h }
 }

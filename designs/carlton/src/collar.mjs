@@ -6,18 +6,7 @@ import { collarStand } from './collarstand.mjs'
  * but gets complicated when doing it in code.
  */
 
-function draftCarltonCollar({
-  paperless,
-  sa,
-  complete,
-  points,
-  options,
-  macro,
-  paths,
-  Path,
-  part,
-  store,
-}) {
+function draftCarltonCollar({ sa, points, options, macro, paths, Path, part, store }) {
   // We're going to slash and spread this collar. Slashing first:
   // Divide top in 5 parts
   points.cutTop1 = points.topLeft.shiftFractionTowards(points.topRight, 0.2)
@@ -45,7 +34,7 @@ function draftCarltonCollar({
   points.q4Cp2 = quarters[3].ops[1].cp2
 
   // Collar slashed, not let's spread by rotating
-  let rotate = {
+  const rotate = {
     1: {
       pivot: 'cutBottom1',
       points: ['cutBottom2', 'cutTop1', 'cutTop2', 'q2Cp1', 'q2Cp2'],
@@ -178,83 +167,95 @@ function draftCarltonCollar({
     ._curve(points.topLeftCp, points.topLeft)
   paths.seam = paths.saBase.clone().line(points.standTop).close().attr('class', 'fabric')
 
+  if (sa)
+    paths.sa = paths.saBase
+      .offset(sa)
+      .line(points.topLeft)
+      .move(points.standTop)
+      .line(paths.sa.start())
+      .addClass('fabric sa')
+
+  /*
+   * Annotations
+   */
+  // Cut list
   store.cutlist.removeCut()
-  store.cutlist.addCut({ cut: 1 })
-  store.cutlist.addCut({ cut: 1, bias: true })
-  store.cutlist.addCut({ cut: 2, material: 'lining', bias: true, ignoreOnFold: true })
+  store.cutlist.addCut([
+    { cut: 2, from: 'fabric' },
+    { cut: 1, from: 'canvas' },
+  ])
 
-  if (complete) {
-    // Remove grainline from collarstand part
-    delete paths.grainline
-    macro('cutonfold', {
-      from: points.topLeft,
-      to: points.standTop,
-      grainline: true,
-    })
+  // Cut on fold
+  macro('rmgrainline')
+  macro('cutonfold', {
+    from: points.topLeft,
+    to: points.standTop,
+    grainline: true,
+  })
 
-    points.title = points.standTopCp.clone()
-    macro('title', {
-      at: points.title,
-      nr: 8,
-      title: 'collar',
-    })
-    if (sa) {
-      paths.sa = paths.saBase.offset(sa)
-      paths.sa = paths.sa
-        .line(points.topLeft)
-        .move(points.standTop)
-        .line(paths.sa.start())
-        .attr('class', 'fabric sa')
-    }
+  // Title
+  points.title = points.standTopCp.clone()
+  macro('title', {
+    at: points.title,
+    nr: 8,
+    title: 'collar',
+  })
 
-    if (paperless) {
-      macro('hd', {
-        from: points.standTop,
-        to: points.rot3standTip,
-        y: points.rot4bottomRight.y + sa + 15,
-      })
-      macro('hd', {
-        from: points.standTop,
-        to: points.rot4bottomRight,
-        y: points.rot4bottomRight.y + sa + 30,
-      })
-      macro('hd', {
-        from: points.standTop,
-        to: points.rot4topRight,
-        y: points.rot4bottomRight.y + sa + 45,
-      })
-      macro('vd', {
-        from: points.standTop,
-        to: points.topLeft,
-        x: points.topLeft.x - 15,
-      })
-      macro('vd', {
-        from: points.rot3standTip,
-        to: points.topLeft,
-        x: points.topLeft.x - 30,
-      })
-      macro('vd', {
-        from: points.rot4topRight,
-        to: points.topLeft,
-        x: points.rot4topRight.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.rot4bottomRight,
-        to: points.topLeft,
-        x: points.rot4topRight.x + sa + 30,
-      })
-      macro('ld', {
-        from: points.rot4bottomRight,
-        to: points.rot4topRight,
-        d: -1 * sa - 15,
-      })
-      macro('ld', {
-        from: points.rot3standTip,
-        to: points.rot4bottomRight,
-        d: -1 * sa - 15,
-      })
-    }
-  }
+  // Dimensions
+  macro('hd', {
+    id: 'wCenterToTipInner',
+    from: points.standTop,
+    to: points.rot3standTip,
+    y: points.rot4bottomRight.y + sa + 15,
+  })
+  macro('hd', {
+    id: 'wCenterToTipOuter',
+    from: points.standTop,
+    to: points.rot4bottomRight,
+    y: points.rot4bottomRight.y + sa + 30,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.standTop,
+    to: points.rot4topRight,
+    y: points.rot4bottomRight.y + sa + 45,
+  })
+  macro('vd', {
+    id: 'hCenter',
+    from: points.standTop,
+    to: points.topLeft,
+    x: points.topLeft.x - 15,
+  })
+  macro('vd', {
+    id: 'hFromTipInner',
+    from: points.rot3standTip,
+    to: points.topLeft,
+    x: points.topLeft.x - 30,
+  })
+  macro('vd', {
+    id: 'hFromTipTop',
+    from: points.rot4topRight,
+    to: points.topLeft,
+    x: points.rot4topRight.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.rot4bottomRight,
+    to: points.topLeft,
+    x: points.rot4topRight.x + sa + 30,
+  })
+  macro('ld', {
+    id: 'lCollarHeight',
+    from: points.rot4bottomRight,
+    to: points.rot4topRight,
+    d: -1 * sa - 15,
+  })
+  macro('ld', {
+    id: 'lCollarBottom',
+    from: points.rot3standTip,
+    to: points.rot4bottomRight,
+    d: -1 * sa - 15,
+  })
 
   return part
 }

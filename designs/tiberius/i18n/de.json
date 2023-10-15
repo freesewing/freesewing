@@ -1,0 +1,50 @@
+{
+  "t": "Tiberius, die Tunica",
+  "d": "Tiberius ist eine historische römische Tunika",
+  "p": {
+    "tunica": "Tunica"
+  },
+  "s": {},
+  "o": {
+    "headRatio": {
+      "t": "Kopfgrößenverhältnis",
+      "d": "Steuert die Größe der Kopföffnung"
+    },
+    "armholeDrop": {
+      "t": "Armlochabsenkung",
+      "d": "Steuert die Tiefe des Armloches"
+    },
+    "lengthBonus": {
+      "t": "Längenzugabe",
+      "d": "Erlaubt Variation der Länge des Kleidungsstücks"
+    },
+    "widthBonus": {
+      "t": "Breitenzugabe",
+      "d": "Erlaubt Variation der Breite des Kleidungsstücks"
+    },
+    "clavi": {
+      "t": "Clavi",
+      "d": "Legt fest, ob Hilfslinien für Clavi enthalten sind oder nicht"
+    },
+    "clavusLocation": {
+      "t": "Positionierung der Clavi",
+      "d": "Steuert die Position der Clavi"
+    },
+    "clavusWidth": {
+      "t": "Breite der Clavi",
+      "d": "Steuert die Breite der Clavi"
+    },
+    "length": {
+      "t": "Länge",
+      "d": "Steuert die Länge des Kleidungsstückes"
+    },
+    "width": {
+      "t": "Breite",
+      "d": "Steuert die Breite des Kleidungsstückes"
+    },
+    "forceWidth": {
+      "t": "Breite erzwingen",
+      "d": "Breiteneinstellungen unabhängig von Einschränkungen anwenden"
+    }
+  }
+}

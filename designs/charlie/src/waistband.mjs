@@ -8,11 +8,12 @@ function draftCharlieWaistband({
   Point,
   paths,
   Path,
+  units,
   options,
   complete,
-  paperless,
   store,
   macro,
+  expand,
   snippets,
   Snippet,
   sa,
@@ -21,8 +22,37 @@ function draftCharlieWaistband({
 }) {
   store.set('waistbandWidth', absoluteOptions.waistbandWidth)
 
-  if (options.waistbandCurve > 0) {
-    return part
+  if (options.waistbandCurve > 0) return part
+
+  if (expand) {
+    store.flag.preset('expandIsOn')
+  } else {
+    // Expand is off, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
+    store.flag.note({
+      msg: `charlie:cutWaistband`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
+      replace: {
+        width: units(2 * absoluteOptions.waistbandWidth + extraSa),
+        length: units(
+          2 * store.get('waistbandBack') +
+            2 * store.get('waistbandFront') +
+            store.get('waistbandFly') +
+            extraSa
+        ),
+      },
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
   }
 
   points.topLeft = new Point(0, 0)
@@ -52,23 +82,19 @@ function draftCharlieWaistband({
     .hide()
   paths.seam = paths.saBase.clone().close().attr('class', 'fabric').unhide()
 
+  if (sa)
+    paths.sa = paths.saBase
+      .offset(sa * -1)
+      .join(
+        new Path()
+          .move(points.bottomLeft)
+          .line(points.topLeft)
+          .offset(sa * -2)
+      )
+      .close()
+      .addClass('fabric sa')
+
   if (complete) {
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['cfRight', 'cfLeft', 'rsRight', 'rsLeft', 'cbRight', 'cbLeft', 'lsRight', 'lsLeft'],
-    })
-    points.titleAnchor = points.top.shiftFractionTowards(points.bottom, 0.4)
-    points.logoAnchor = points.top.shiftFractionTowards(points.bottom, 0.6)
-    macro('title', {
-      at: points.titleAnchor,
-      nr: 11,
-      title: 'waistband',
-      rotation: 90,
-    })
-    macro('grainline', {
-      from: points.rsLeft.shift(90, 30),
-      to: points.rsRight.shift(90, 30),
-    })
     paths.cf = new Path()
       .move(points.cfLeft)
       .line(points.cfRight)
@@ -99,42 +125,64 @@ function draftCharlieWaistband({
       .attr('class', 'dashed')
       .attr('data-text', 'leftSide')
       .attr('data-text-class', 'center')
-    snippets.logo = new Snippet('logo', points.logoAnchor)
     paths.fold = new Path().move(points.top).line(points.bottom).attr('class', 'fabric help')
-    points.button = new Point(points.topRight.x * 0.7, points.cfRight.y * 0.6)
-    let buttonScale = points.top.x / 14
-    snippets.button = new Snippet('button', points.button).attr('data-scale', buttonScale)
-    points.buttonhole = new Point(points.button.x, points.bottom.y - points.cfRight.y * 0.4)
-    snippets.buttonhole = new Snippet('buttonhole-start', points.buttonhole).attr(
-      'data-scale',
-      buttonScale
-    )
-    if (sa) {
-      paths.sa = paths.saBase
-        .offset(sa * -1)
-        .join(
-          new Path()
-            .move(points.bottomLeft)
-            .line(points.topLeft)
-            .offset(sa * -2)
-        )
-        .close()
-        .attr('class', 'fabric sa')
-    }
-
-    if (paperless) {
-      macro('hd', {
-        from: points.bottomLeft,
-        to: points.bottomRight,
-        y: points.bottomLeft.y + sa + 15,
-      })
-      macro('vd', {
-        from: points.bottomRight,
-        to: points.topRight,
-        x: points.bottomRight.x + sa + 15,
-      })
-    }
   }
+
+  /*
+   * Annotations
+   */
+
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'fabric' })
+
+  // Notches
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: ['cfRight', 'cfLeft', 'rsRight', 'rsLeft', 'cbRight', 'cbLeft', 'lsRight', 'lsLeft'],
+  })
+
+  // Title
+  points.titleAnchor = points.top.shiftFractionTowards(points.bottom, 0.4)
+  macro('title', {
+    at: points.titleAnchor,
+    nr: 11,
+    title: 'waistband',
+    rotation: 90,
+  })
+
+  // Logo
+  points.logoAnchor = points.top.shiftFractionTowards(points.bottom, 0.6)
+  snippets.logo = new Snippet('logo', points.logoAnchor)
+
+  // Grainline
+  macro('grainline', {
+    from: points.rsLeft.shift(90, 30),
+    to: points.rsRight.shift(90, 30),
+  })
+
+  // Button/Buttonhole
+  points.button = new Point(points.topRight.x * 0.7, points.cfRight.y * 0.6)
+  let buttonScale = points.top.x / 14
+  snippets.button = new Snippet('button', points.button).attr('data-scale', buttonScale)
+  points.buttonhole = new Point(points.button.x, points.bottom.y - points.cfRight.y * 0.4)
+  snippets.buttonhole = new Snippet('buttonhole-start', points.buttonhole).attr(
+    'data-scale',
+    buttonScale
+  )
+
+  // Dimensions
+  macro('hd', {
+    id: 'wFull',
+    from: points.bottomLeft,
+    to: points.bottomRight,
+    y: points.bottomLeft.y + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.bottomRight,
+    to: points.topRight,
+    x: points.bottomRight.x + sa + 15,
+  })
 
   return part
 }

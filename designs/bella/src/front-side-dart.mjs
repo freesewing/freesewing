@@ -1,10 +1,8 @@
 import { back } from './back.mjs'
-import { pluginAnnotations } from '@freesewing/plugin-annotations'
 
 export const frontSideDart = {
   name: 'bella.frontSideDart',
   after: back,
-  plugins: [pluginAnnotations],
   draft: ({
     store,
     sa,
@@ -14,7 +12,6 @@ export const frontSideDart = {
     paths,
     options,
     complete,
-    paperless,
     macro,
     utils,
     measurements,
@@ -204,140 +201,173 @@ export const frontSideDart = {
       .curve(points.hpsCp2, points.cfNeckCp1, points.cfNeck)
       .hide()
 
-    macro('cutonfold', {
-      from: points.cfNeck,
-      to: points.cfHem,
-      grainline: true,
-    })
-
-    store.cutlist.addCut({ cut: 1 })
-
-    if (complete) {
-      points.titleAnchor = new Point(points.armholePitch.x / 2, points.armholePitchCp2.y)
-      macro('title', {
-        at: points.titleAnchor,
-        nr: 1,
-        title: 'front',
-      })
-      points.scaleboxAnchor = points.titleAnchor.shift(-90, 70)
-      macro('scalebox', { at: points.scaleboxAnchor })
+    // Dart help line
+    if (complete)
       paths.dart = new Path()
         .move(points.bustDartTop)
         .line(points.bustDartEdge)
         .line(points.bustDartBottom)
         .attr('class', 'help')
-      macro('sprinkle', {
-        snippet: 'notch',
-        on: ['bust', 'armholePitch', 'cfBust'],
-      })
 
-      if (sa) {
-        paths.sa = paths.saBase.offset(sa).line(points.cfNeck).attr('class', 'fabric sa')
-        paths.sa = paths.sa.move(points.cfHem).line(paths.sa.start())
-      }
-      if (paperless) {
-        macro('vd', {
-          from: points.cfHem,
-          to: points.waistDartTip,
-          x: 0 - 15,
-        })
-        macro('vd', {
-          from: points.cfHem,
-          to: points.bust,
-          x: 0 - 30,
-        })
-        macro('vd', {
-          from: points.cfHem,
-          to: points.cfNeck,
-          x: 0 - 45,
-        })
-        macro('vd', {
-          from: points.cfHem,
-          to: points.hps,
-          x: 0 - 60,
-        })
-        macro('hd', {
-          from: points.cfBust,
-          to: points.bust,
-          y: points.bust.y - 15,
-        })
-        macro('hd', {
-          from: points.cfBust,
-          to: points.bustDartTip,
-          y: points.bust.y - 30,
-        })
-        macro('hd', {
-          from: points.cfHem,
-          to: points.waistDartLeft,
-          y: points.cfHem.y + sa + 15,
-        })
-        macro('hd', {
-          from: points.cfHem,
-          to: points.waistDartRight,
-          y: points.cfHem.y + sa + 30,
-        })
-        macro('hd', {
-          from: points.cfHem,
-          to: points.sideHem,
-          y: points.cfHem.y + sa + 45,
-        })
-        macro('hd', {
-          from: points.cfHem,
-          to: points.bustDartBottom,
-          y: points.cfHem.y + sa + 60,
-        })
-        macro('hd', {
-          from: points.cfHem,
-          to: points.bustDartTop,
-          y: points.cfHem.y + sa + 75,
-        })
-        macro('vd', {
-          from: points.sideHem,
-          to: points.bustDartBottom,
-          x: points.bustDartTop.x + sa + 15,
-        })
-        macro('vd', {
-          from: points.sideHem,
-          to: points.bustDartTop,
-          x: points.bustDartTop.x + sa + 30,
-        })
-        macro('vd', {
-          from: points.sideHem,
-          to: points.armhole,
-          x: points.bustDartTop.x + sa + 45,
-        })
-        macro('vd', {
-          from: points.sideHem,
-          to: points.armholePitch,
-          x: points.bustDartTop.x + sa + 60,
-        })
-        macro('vd', {
-          from: points.sideHem,
-          to: points.shoulder,
-          x: points.bustDartTop.x + sa + 75,
-        })
-        macro('hd', {
-          from: points.cfNeck,
-          to: points.hps,
-          y: points.hps.y - sa - 15,
-        })
-        macro('hd', {
-          from: points.cfNeck,
-          to: points.armholePitch,
-          y: points.hps.y - sa - 30,
-        })
-        macro('hd', {
-          from: points.cfNeck,
-          to: points.shoulder,
-          y: points.hps.y - sa - 45,
-        })
-        macro('hd', {
-          from: points.cfNeck,
-          to: points.armhole,
-          y: points.hps.y - sa - 60,
-        })
-      }
+    if (sa) {
+      paths.sa = paths.saBase.offset(sa).line(points.cfNeck).attr('class', 'fabric sa')
+      paths.sa = paths.sa.move(points.cfHem).line(paths.sa.start())
     }
+
+    /*
+     * Annotations
+     */
+
+    // Cut list
+    store.cutlist.addCut({ cut: 1, from: 'fabric', onFold: true })
+
+    // Cut on fold
+    macro('cutonfold', {
+      from: points.cfNeck,
+      to: points.cfHem,
+      grainline: true,
+      reverse: true,
+    })
+
+    // Title
+    points.titleAnchor = new Point(points.armholePitch.x / 2, points.armholePitchCp2.y)
+    macro('title', {
+      at: points.titleAnchor,
+      nr: 1,
+      title: 'front',
+    })
+
+    // Scalebox
+    points.scaleboxAnchor = points.titleAnchor.shift(-90, 70)
+    macro('scalebox', { at: points.scaleboxAnchor })
+
+    // Notches
+    macro('sprinkle', {
+      snippet: 'notch',
+      on: ['bust', 'armholePitch', 'cfBust'],
+    })
+
+    // Dimensions
+    macro('vd', {
+      id: 'hCfHemToWaistDartTop',
+      from: points.cfHem,
+      to: points.waistDartTip,
+      x: 0 - 15,
+    })
+    macro('vd', {
+      id: 'hCfHemToBustPoint',
+      from: points.cfHem,
+      to: points.bust,
+      x: 0 - 30,
+    })
+    macro('vd', {
+      id: 'hCfHemToNeckCutout',
+      from: points.cfHem,
+      to: points.cfNeck,
+      x: 0 - 45,
+    })
+    macro('vd', {
+      id: 'hTotal',
+      from: points.cfHem,
+      to: points.hps,
+      x: 0 - 60,
+    })
+    macro('hd', {
+      id: 'wCfToWaistDartTip',
+      from: points.cfBust,
+      to: points.bust,
+      y: points.bust.y - 15,
+    })
+    macro('hd', {
+      id: 'wCfToBustDartTip',
+      from: points.cfBust,
+      to: points.bustDartTip,
+      y: points.bust.y - 30,
+    })
+    macro('hd', {
+      id: 'wCfToWaistDartLeft',
+      from: points.cfHem,
+      to: points.waistDartLeft,
+      y: points.cfHem.y + sa + 15,
+    })
+    macro('hd', {
+      id: 'wCfToWaistDartRight',
+      from: points.cfHem,
+      to: points.waistDartRight,
+      y: points.cfHem.y + sa + 30,
+    })
+    macro('hd', {
+      id: 'wHemTotal',
+      from: points.cfHem,
+      to: points.sideHem,
+      y: points.cfHem.y + sa + 45,
+    })
+    macro('hd', {
+      id: 'wCfHemToBustDartBottom',
+      from: points.cfHem,
+      to: points.bustDartBottom,
+      y: points.cfHem.y + sa + 60,
+    })
+    macro('hd', {
+      id: 'wCfHemToBustDartTop',
+      from: points.cfHem,
+      to: points.bustDartTop,
+      y: points.cfHem.y + sa + 75,
+    })
+    macro('vd', {
+      id: 'hHemRightToBustDartBottom',
+      from: points.sideHem,
+      to: points.bustDartBottom,
+      x: points.bustDartTop.x + sa + 15,
+    })
+    macro('vd', {
+      id: 'hHemRightToBustDartTop',
+      from: points.sideHem,
+      to: points.bustDartTop,
+      x: points.bustDartTop.x + sa + 30,
+    })
+    macro('vd', {
+      id: 'hHemRightToArmhole',
+      from: points.sideHem,
+      to: points.armhole,
+      x: points.bustDartTop.x + sa + 45,
+    })
+    macro('vd', {
+      id: 'hHemRightToArmholePitch',
+      from: points.sideHem,
+      to: points.armholePitch,
+      x: points.bustDartTop.x + sa + 60,
+    })
+    macro('vd', {
+      id: 'hHemRightToShoulder',
+      from: points.sideHem,
+      to: points.shoulder,
+      x: points.bustDartTop.x + sa + 75,
+    })
+    macro('hd', {
+      id: 'wCbToHps',
+      from: points.cfNeck,
+      to: points.hps,
+      y: points.hps.y - sa - 15,
+    })
+    macro('hd', {
+      id: 'wCbToArmholePitch',
+      from: points.cfNeck,
+      to: points.armholePitch,
+      y: points.hps.y - sa - 30,
+    })
+    macro('hd', {
+      id: 'wCbToShoulder',
+      from: points.cfNeck,
+      to: points.shoulder,
+      y: points.hps.y - sa - 45,
+    })
+    macro('hd', {
+      id: 'wCbToArmhole',
+      from: points.cfNeck,
+      to: points.armhole,
+      y: points.hps.y - sa - 60,
+    })
 
     return part
   },

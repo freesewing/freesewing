@@ -1,0 +1,22 @@
+{
+  "t": "Masque Florence",
+  "d": "Florence est un masque facial.",
+  "p": {
+    "mask": "Mask"
+  },
+  "s": {},
+  "o": {
+    "height": {
+      "t": "Hauteur",
+      "d": "Contrôle la hauteur du masque"
+    },
+    "length": {
+      "t": "Longeur",
+      "d": "Contrôle la longueur du masque"
+    },
+    "curve": {
+      "t": "Courbe",
+      "d": "Contrôle la courbe du bord supérieur du masque"
+    }
+  }
+}

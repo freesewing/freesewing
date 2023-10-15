@@ -5,9 +5,12 @@ import chalk from 'chalk'
 import { banner } from './banner.mjs'
 import mustache from 'mustache'
 import { execSync } from 'child_process'
+import languages from '../config/languages.json' assert { type: 'json' }
 // Software
 import designs from '../config/software/designs.json' assert { type: 'json' }
 import plugins from '../config/software/plugins.json' assert { type: 'json' }
+
+console.log({ languages })
 
 const type = process.argv[2]
 
@@ -39,42 +42,13 @@ async function addDesign() {
   ${chalk.gray('≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡')}
 
   We're going to add a new design to this repository. That's awesome 🎉
-  Let's start by picking the category for this design 🏷️
-`)
-  const { type } = await prompts({
-    type: 'select',
-    name: 'type',
-    message: 'In what category should we add the design?',
-    choices: [
-      {
-        title: 'Accessories',
-        value: 'accessories',
-        description: 'Hats, bags, plushies, and so on',
-      },
-      { title: 'Blocks', value: 'blocks', description: 'Blocks/Slopers to base other designs on' },
-      {
-        title: 'Garments',
-        value: 'garments',
-        description: 'For clothes. The most common category',
-      },
-      {
-        title: 'Utilities',
-        value: 'utilities',
-        description: 'For utility designs such as our rendertest or legend',
-      },
-    ],
-    initial: 2,
-  })
-
-  console.log(`
-  Cool cool cool.
-  Now a name. Naming things is hard 😬
+  Let's start by picking a name. Naming things is hard 😬
 
   We'd appreciate if you pick:
 
    - a firstname like ${chalk.green('alex')}, ${chalk.green('jordan')}, ${chalk.green(
-    'ezra'
-  )}, or ${chalk.green('logan')}
+     'ezra'
+   )}, or ${chalk.green('logan')}
    - that is an aliteration with the kind of design, like ${chalk.green(
      'wahid'
    )} for a ${chalk.green('w')}aistcoat
@@ -85,13 +59,13 @@ async function addDesign() {
   const { name } = await prompts({
     type: 'text',
     name: 'name',
-    message: 'What name would you like the design to have? ([a-z] only)',
+    message: 'What name would you like the design to have? ([a-z0-9_] only)',
     validate: validateDesignName,
   })
 
-  if (name && type) {
-    console.log('\n' + `  Alright, let's add ${chalk.green(name)} under ${chalk.green(type)} 🪄`)
-    createDesign(name, type)
+  if (name) {
+    console.log('\n' + `  Alright, let's add ${chalk.green(name)} 🪄`)
+    createDesign(name)
     execSync('npm run reconfigure')
     console.log(`  All done 🎉`)
 
@@ -112,16 +86,16 @@ async function addDesign() {
   Hhere's a few other things you can configure:
 
   👉 ${chalk.yellow('Author')}: Credit where credit is due; Add yourself as author in ${chalk.green(
-        'config/exceptions.yaml'
-      )}
-  👉 ${chalk.yellow('Description')}: We used a placeholder description; Update it in ${chalk.green(
-        'config/software/designs.json'
-      )}
+    'config/exceptions.yaml'
+  )}
+  👉 ${chalk.yellow('Description')}: We used placeholder metadata; Update it in ${chalk.green(
+    'config/software/designs.json'
+  )}
   👉 ${chalk.yellow(
     'Dependencies'
   )}: If you need additional plugins or patterns to extend, update ${chalk.green(
-        'config/dependencies.yaml'
-      )}
+    'config/dependencies.yaml'
+  )}
 
   If you change any of these, run ${chalk.blue('yarn reconfigure')} to update the package(s).
 
@@ -184,16 +158,16 @@ async function addPlugin() {
   Hhere's a few other things you can configure:
 
   👉 ${chalk.yellow('Author')}: Credit where credit is due; Add yourself as author in ${chalk.green(
-        'config/exceptions.yaml'
-      )}
+    'config/exceptions.yaml'
+  )}
   👉 ${chalk.yellow('Description')}: We used a placeholder description; Update it in ${chalk.green(
-        'config/software/plugins.json'
-      )}
+    'config/software/plugins.json'
+  )}
   👉 ${chalk.yellow(
     'Dependencies'
   )}: If you need additional plugins or patterns to extend, update ${chalk.green(
-        'config/dependencies.yaml'
-      )}
+    'config/dependencies.yaml'
+  )}
 
   If you change any of these, run ${chalk.blue('yarn reconfigure')} to update the package(s).
 
@@ -213,18 +187,12 @@ async function addPlugin() {
 }
 
 function validateDesignName(name) {
-  if (
-    [
-      ...Object.keys(designs.accessories),
-      ...Object.keys(designs.blocks),
-      ...Object.keys(designs.garments),
-      ...Object.keys(designs.utilities),
-    ].indexOf(name) !== -1
-  )
+  if (Object.keys(designs).indexOf(name) !== -1)
     return `Sorry but ${name} is already taken so you'll need to pick something else`
 
-  if (/^([a-z]+)$/.test(name)) return true
-  else return ' 🙈 Please use only [a-z], no spaces, no capitals, no nothing 🤷'
+  if (/^([a-z][a-z0-9_]*)$/.test(name)) return true
+  else
+    return ' 🙈 Please use only lowercase letters, digits, or underscores. Names must start with a lowercase letter. 🤷'
 }
 
 function validatePluginName(name) {
@@ -236,24 +204,26 @@ function validatePluginName(name) {
   else return ' 🙈 Please use only [a-z], no spaces, no capitals, no nothing 🤷'
 }
 
-function createDesign(name, type) {
+function createDesign(name) {
   const template = ['config', 'templates', 'design']
   const design = ['designs', name]
   const description = 'A FreeSewing pattern that needs a description'
   const capitalized_name = name.charAt(0).toUpperCase() + name.slice(1)
 
   // Add to designs config file
-  designs[type][name] = {
+  designs[name] = {
     description: description,
     code: 'Coder name',
     design: 'Designer name',
     difficulty: 1,
     tags: ['tagname'],
+    techniques: ['techname'],
   }
   write(['config', 'software', 'designs.json'], JSON.stringify(orderDesigns(designs), null, 2))
 
   // Create folders
   mkdir([...design, 'src'])
+  mkdir([...design, 'i18n'])
   mkdir([...design, 'tests'])
 
   // Create package.json
@@ -262,10 +232,20 @@ function createDesign(name, type) {
     description,
   })
 
-  // Create index.mjs
+  // Create src/index.mjs
   templateOut([...template, 'src', 'index.mjs.mustache'], [...design, 'src', 'index.mjs'], {
     capitalized_name,
   })
+
+  // Copy i18n/index.mjs
+  cp([...template, 'i18n', 'index.mjs'], [...design, 'i18n', 'index.mjs'])
+
+  // Create i18n translation files
+  for (const language of languages)
+    templateOut([...template, 'i18n', 'en.json'], [...design, 'i18n', `${language}.json`], {
+      title: capitalized_name,
+      description,
+    })
 
   // Create tests file
   cp([...template, 'tests', 'shared.test.mjs'], [...design, 'tests', 'shared.test.mjs'])

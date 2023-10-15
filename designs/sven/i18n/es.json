@@ -1,0 +1,30 @@
+{
+  "t": "Sven, sudadera",
+  "d": "Sven es una sudadera de líneas sencillas.",
+  "p": {
+    "back": "Atrás",
+    "cuff": "Cuffnl",
+    "front": "Frente",
+    "sleeve": "Manga",
+    "waistband": "Pretina"
+  },
+  "s": {},
+  "o": {
+    "hipsEase": {
+      "t": "Holgura de cadera",
+      "d": "Controla la cantidad de holgura en las caderas (en la parte de abajo de la sudadera)"
+    },
+    "ribbing": {
+      "t": "Tejido acanalado",
+      "d": "Ya sea para terminar el dobladillo y los puños con tejido acanalado."
+    },
+    "ribbingHeight": {
+      "t": "Altura de tejido acanalado",
+      "d": "La altura del tejido acanalado en los puños y el dobladillo."
+    },
+    "ribbingStretch": {
+      "t": "Extensión de tejido acanalado",
+      "d": "La cantidad de holgura negativa de tejido acanalado."
+    }
+  }
+}

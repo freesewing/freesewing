@@ -1,6 +1,5 @@
 import { Svg } from '../svg.mjs'
 import { Stack } from '../stack.mjs'
-import pack from 'bin-pack-with-constraints'
 
 /**
  * A class for handling layout and rendering for a pattern
@@ -33,46 +32,23 @@ PatternRenderer.prototype.getRenderProps = function () {
   this.__startRender()
   this.svg.__runHooks('preRender')
 
-  let props = {
-    svg: this.svg,
+  const props = {
+    svg: this.svg.asRenderProps(),
     width: this.pattern.width,
     height: this.pattern.height,
     autoLayout: this.pattern.autoLayout,
     settings: this.pattern.settings,
-    parts: [],
     stacks: {},
-  }
-
-  for (const partSet of this.pattern.parts) {
-    const setPartProps = {}
-    for (let partName in partSet) {
-      const part = partSet[partName]
-      if (!part.hidden) {
-        setPartProps[partName] = {
-          ...partSet[partName].asProps(),
-          store: this.pattern.setStores[part.set],
-        }
-      } else if (this.pattern.setStores[part.set]) {
-        this.pattern.setStores[part.set].log.info(
-          `Part ${partName} is hidden in set ${part.set}. Not adding to render props`
-        )
-      }
-    }
-    props.parts.push(setPartProps)
   }
 
   for (let s in this.pattern.stacks) {
     if (!this.pattern.__isStackHidden(s)) {
-      props.stacks[s] = this.pattern.stacks[s].asProps()
+      props.stacks[s] = this.pattern.stacks[s].asRenderProps()
     } else this.pattern.store.log.info(`Stack ${s} is hidden. Skipping in render props.`)
   }
 
-  props.logs = {
-    pattern: this.pattern.store.logs,
-    sets: this.pattern.setStores.map((store) => store.logs),
-  }
-
   this.svg.__runHooks('postRender')
+
   return props
 }
 
@@ -112,7 +88,7 @@ PatternRenderer.prototype.__pack = function () {
   const { settings, setStores, activeSet } = this.pattern
   for (const set in settings) {
     if (setStores[set].logs.error.length > 0) {
-      setStores[set].log.warning(`One or more errors occured. Not packing pattern parts`)
+      setStores[set].log.warn(`One or more errors occured. Not packing pattern parts`)
       return this
     }
   }
@@ -130,8 +106,8 @@ PatternRenderer.prototype.__pack = function () {
     }
   }
   if (settings[activeSet].layout === true) {
-    // some plugins will add a width constraint to the settings, but we can safely pass undefined if not
-    let size = pack(bins, { inPlace: true, maxWidth: settings[0].maxWidth })
+    // store.pack is provided by a plugin
+    const size = bins.length > 0 ? this.pattern.store.pack(bins, this) : { width: 0, height: 0 }
     this.autoLayout.width = size.width
     this.autoLayout.height = size.height
 

@@ -2,80 +2,94 @@ import { front } from './front.mjs'
 
 function draftCarltonInnerPocketBag({
   units,
-  paperless,
   sa,
   store,
-  complete,
   points,
   options,
   macro,
   Point,
   paths,
   Path,
+  expand,
   part,
 }) {
+  if (expand) store.flag.preset('expandIsOn')
+  else {
+    // Expand is on, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
+    store.flag.note({
+      msg: `carlton:cutInnerPocketBag`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
+      replace: {
+        w: units(store.get('innerPocketWidth') + extraSa),
+        l: units(store.get('innerPocketWidth') * options.innerPocketDepth * 2 + extraSa),
+      },
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
+
   points.topLeft = new Point(0, 0)
   points.bottomRight = new Point(
     store.get('innerPocketWidth'),
-    (store.get('innerPocketWidth') * options.innerPocketDepth) / 2
+    store.get('innerPocketWidth') * options.innerPocketDepth * 2
   )
   points.bottomLeft = new Point(points.topLeft.x, points.bottomRight.y)
   points.topRight = new Point(points.bottomRight.x, points.topLeft.y)
-  points.startLeft = points.topLeft.shiftFractionTowards(points.bottomLeft, 0.33)
-  points.endLeft = points.topLeft.shiftFractionTowards(points.bottomLeft, 0.66)
-  points.startRight = points.topRight.shiftFractionTowards(points.bottomRight, 0.33)
-  points.endRight = points.topRight.shiftFractionTowards(points.bottomRight, 0.66)
 
   paths.seam = new Path()
-    .move(points.startRight)
-    .line(points.topRight)
+    .move(points.topRight)
     .line(points.topLeft)
-    .line(points.startLeft)
-    .move(points.endLeft)
     .line(points.bottomLeft)
     .line(points.bottomRight)
-    .line(points.endRight)
-    .attr('class', 'lining')
+    .line(points.topRight)
+    .close()
+    .addClass('lining')
 
-  paths.hint = new Path()
-    .move(points.startLeft)
-    .line(points.endLeft)
-    .move(points.endRight)
-    .line(points.startRight)
-    .attr('class', 'lining dashed')
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'lining sa')
 
-  store.cutlist.addCut({ material: 'lining' })
+  /*
+   * Annotations
+   */
 
-  if (complete) {
-    points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    macro('title', {
-      at: points.title,
-      nr: 14,
-      title: 'innerPocketBag',
-    })
+  // Cut list
+  store.cutlist.addCut({ cut: 2, from: 'lining' })
 
-    macro('grainline', {
-      from: points.bottomLeft.shift(0, 10),
-      to: points.topLeft.shift(0, 10),
-    })
+  // Title
+  points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.2)
+  macro('rmtitle')
+  macro('title', {
+    at: points.title,
+    nr: 14,
+    title: 'innerPocketBag',
+  })
 
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'lining sa')
-    }
-    macro('ld', {
-      from: points.bottomRight.shift(180, 15),
-      to: points.topRight.shift(180, 15),
-      text: units(store.get('innerPocketWidth') * options.innerPocketDepth * 2),
-    })
+  // Grainline
+  macro('grainline', {
+    from: points.bottomLeft.shift(0, 10),
+    to: points.topLeft.shift(0, 10),
+  })
 
-    if (paperless) {
-      macro('hd', {
-        from: points.bottomLeft,
-        to: points.bottomRight,
-        y: points.bottomLeft.y + sa + 15,
-      })
-    }
-  }
+  // Dimensions
+  macro('vd', {
+    from: points.bottomRight,
+    to: points.topRight,
+    x: points.topRight.x + sa + 15,
+  })
+  macro('hd', {
+    from: points.bottomLeft,
+    to: points.bottomRight,
+    y: points.bottomLeft.y + sa + 15,
+  })
 
   return part
 }

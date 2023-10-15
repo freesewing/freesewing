@@ -1,0 +1,90 @@
+{
+  "t": "Benjamin bow tie",
+  "d": "Benjamin is a bow tie pattern with four different shape options.",
+  "p": {
+    "base": "Base",
+    "bow1": "Bow",
+    "bow2": "Bow",
+    "bow3": "Bow",
+    "collarBand": "Collar band"
+  },
+  "s": {
+    "cutRibbon": "Cut the adjustment ribbon:",
+    "cutCollarBandFlag.t": "The collar band is not shown",
+    "cutCollarBandFlag.d": "The **Collar band** are two strips of fabric {{ height }} wide and {{ length }} long."
+  },
+  "o": {
+    "adjustmentRibbon": {
+      "t": "Adjustment ribbon",
+      "d": "Whether or not to include an adjustment ribbon"
+    },
+    "adjustmentRibbonYes": {
+      "t": "Include adjustment ribbon",
+      "d": "Generate a pattern with an adjustment ribbon included"
+    },
+    "adjustmentRibbonNo": {
+      "t": "Exclude adjustment ribbon",
+      "d": "Generate a pattern without an adjustment ribbon included"
+    },
+    "bandLength": {
+      "t": "Band length",
+      "d": "Length of the band"
+    },
+    "tipWidth": {
+      "t": "Tip width",
+      "d": "Width of the tips"
+    },
+    "knotWidth": {
+      "t": "Knot width",
+      "d": "Width of the knot"
+    },
+    "bowLength": {
+      "t": "Bow length",
+      "d": "Length of the bow (when knotted)"
+    },
+    "bowStyle": {
+      "t": "Bow style",
+      "d": "Style of the bow"
+    },
+    "bowStyle.diamond": {
+      "t": "Diamond",
+      "d": "Use a diamond-shaped bow style"
+    },
+    "bowStyle.butterfly": {
+      "t": "Butterfly",
+      "d": "Use a butterfly bow style"
+    },
+    "bowStyle.square": {
+      "t": "Square",
+      "d": "Use a square bow style"
+    },
+    "bowStyle.widesquare": {
+      "t": "Wide square",
+      "d": "Use a wide square bow style"
+    },
+    "endStyle": {
+      "t": "End style",
+      "d": "Style of the bow ends"
+    },
+    "endStyle.straight": {
+      "t": "Straight",
+      "d": "Use a straight style for the bow ends"
+    },
+    "endStyle.pointed": {
+      "t": "Pointed",
+      "d": "Use a pointy style for the bow ends"
+    },
+    "endStyle.rounded": {
+      "t": "Rounded",
+      "d": "Use a rounded style for the bow ends"
+    },
+    "collarEase": {
+      "t": "Collar ease",
+      "d": "The amount of ease at your neck"
+    },
+    "collarBandHeight": {
+      "t": "Collar band height",
+      "d": "The height (width if you will) of the collar band"
+    }
+  }
+}

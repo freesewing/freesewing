@@ -1,10 +1,11 @@
 import { buttonRow, closingRow, headingRow, lead1Row, wrap } from '../shared/blocks.mjs'
 // Translations
-import en from '../../../../public/locales/en/emailchange.json' assert { type: 'json' }
-import de from '../../../../public/locales/de/emailchange.json' assert { type: 'json' }
-import es from '../../../../public/locales/es/emailchange.json' assert { type: 'json' }
-import fr from '../../../../public/locales/fr/emailchange.json' assert { type: 'json' }
-import nl from '../../../../public/locales/nl/emailchange.json' assert { type: 'json' }
+import en from './en.json' assert { type: 'json' }
+import de from './de.json' assert { type: 'json' }
+import es from './es.json' assert { type: 'json' }
+import fr from './fr.json' assert { type: 'json' }
+import nl from './nl.json' assert { type: 'json' }
+import uk from './uk.json' assert { type: 'json' }
 
 export const emailchange = {
   html: wrap.html(`
@@ -16,4 +17,4 @@ export const emailchange = {
   text: wrap.text(`${headingRow.text}${lead1Row.text}${buttonRow.text}${closingRow.text}`),
 }
 
-export const translations = { en, de, es, fr, nl }
+export const translations = { en, de, es, fr, nl, uk }

@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x]
+        node-version: [18.x]
 
     steps:
       - name: Checkout repository
@@ -33,7 +33,7 @@ jobs:
           key: node_modules-${{ hashFiles('yarn.lock') }}
       - name: Install dependencies
         if: steps.cache_node_modules.outputs.cache-hit != 'true'
-        run: npx lerna bootstrap
+        run: yarn install
         env:
           CI: true
       - name: Run eslint

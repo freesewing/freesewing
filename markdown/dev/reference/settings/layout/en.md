@@ -58,7 +58,9 @@ import { Aaron } from "@freesewing/aaron"
 
 const pattern = new Aaron({
   layout: {
-    parts: {
+    width: 600,
+    height: 1000,
+    stacks: {
       front: {
         move: {
           x: 14,

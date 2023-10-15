@@ -1,5 +1,6 @@
 export const cutlistStores = [
   ['cutlist.addCut', addCut],
+  ['cutlist.setCut', setCut],
   ['cutlist.removeCut', removeCut],
   ['cutlist.setGrain', setGrain],
   ['cutlist.setCutOnFold', setCutOnFold],
@@ -24,40 +25,51 @@ export const cutlistHooks = {
  * @param {Store} store                   the Store
  * @param {Object} so                     a set of cutting instructions for a material
  * @param {number} so.cut = 2             the number of pieces to cut from the specified fabric
- * @param {string} so.material = fabric   the name of the material to cut from
+ * @param {string} so.from = fabric       the name of the material to cut from
  * @param {boolean} so.identical = false  should even numbers of pieces be cut in the same direction or mirrored
- * @param {boolean} so.bias = false       should the pieces in these cutting instructions be cut on the bias
- * @param {boolean} so.ignoreOnFold       should these cutting instructions ignore any cutOnFold information set by the part
+ * @param {boolean} so.onBias = false     should the pieces in these cutting instructions be cut on the bias
+ * @param {boolean} so.onFold = false     should these cutting instructions ignore any cutOnFold information set by the part
  */
 function addCut(store, so = {}) {
-  const { cut = 2, material = 'fabric', identical = false, bias = false, ignoreOnFold = false } = so
+  if (Array.isArray(so)) {
+    for (const cut of so) addCut(store, cut)
+    return store
+  }
+  const { cut = 2, from = 'fabric', identical = false, onBias = false, onFold = false } = so
+
   const partName = store.get('activePart')
   if (cut === false) {
-    if (material === false) store.unset(['cutlist', partName, 'materials'])
-    else store.unset(['cutlist', partName, 'materials', material])
+    if (from === false) store.unset(['cutlist', partName, 'materials'])
+    else store.unset(['cutlist', partName, 'materials', from])
     return store
   }
   if (!(Number.isInteger(cut) && cut > -1)) {
     store.log.error(`Tried to set cut to a value that is not a positive integer`)
     return store
   }
-  if (typeof material !== 'string') {
-    store.log.warning(`Tried to set material to a value that is not a string`)
+  if (typeof from !== 'string') {
+    store.log.warn(`Tried to set material to a value that is not a string`)
     return store
   }
-  const path = ['cutlist', partName, 'materials', material]
+  const path = ['cutlist', partName, 'materials', from]
   const existing = store.get(path, [])
-  store.set(path, existing.concat({ cut, identical, bias, ignoreOnFold }))
+  store.set(path, existing.concat({ cut, identical, onBias, onFold }))
 
   return store
 }
 
 /** Method to remove the cut info */
-function removeCut(store, material = false) {
-  return addCut(store, { cut: false, material })
+function removeCut(store, from = false) {
+  return addCut(store, { cut: false, from })
 }
 
-/** Method to add the grain info */
+/** Method to set (remove + add) the cut info */
+function setCut(store, so) {
+  removeCut(store)
+  return addCut(store, so)
+}
+
+/** Method to add the grain info (called by grainline and cutonfold macros) */
 function setGrain(store, grain = false) {
   const partName = store.get('activePart')
   const path = ['cutlist', partName, 'grain']
@@ -69,7 +81,7 @@ function setGrain(store, grain = false) {
   return store.set(path, grain)
 }
 
-/** Method to add the cutOnFold info */
+/** Method to add the cutOnFold info (called by cutonfold macro)  */
 function setCutOnFold(store, p1, p2) {
   const partName = store.get('activePart')
   const path = ['cutlist', partName, 'cutOnFold']

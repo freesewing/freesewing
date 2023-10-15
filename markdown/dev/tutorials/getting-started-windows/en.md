@@ -57,7 +57,7 @@ the screen or opening a new terminal.
 
 Now that you have NVM installed, you can install Node.js. The latest version can be
 installed using `nvm install default`. You can also install a specific version
-using `nvm install v16.17.0`. For the purposes of debugging it can be useful to
+using `nvm install v18.17.0`. For the purposes of debugging it can be useful to
 have the same version of Node.js installed as the main project uses, which you can
 then activate using `nvm use <version>`. You can determine what version the
 FreeSewing project uses by checking
@@ -65,7 +65,7 @@ FreeSewing project uses by checking
 
 <Warning> At the time this guide was written the latest version of Node.js/npm has
 a bug in the dependency resolution process which causes the freesewing project
-to fail to build. Use the latest LTS version (currently 16.17.0) or the specific
+to fail to build. Use the latest LTS version (currently 18.17.0) or the specific
 version used by the main project to avoid this issue.  </Warning>
 
 Node.js comes with the Node Package Manager (npm) by default which can be used to
@@ -73,7 +73,7 @@ set up the project. The default package manager uses a fairly simplistic approac
 to dependency resolution which can make builds take a long time. Yarn is an
 alternative package manager which makes builds faster, especially for monolithic
 projects like FreeSewing. If you'd like to install yarn run `npm install yarn
--g` (optional).
+--global` (optional, but recommended).
 
 #### Install and configure Git (recommended)
 
@@ -84,10 +84,10 @@ installed or configured correctly. As such it's recommended to have git
 installed on the WSL environment even if you're going to be using a GUI client
 from the windows side.
 
-```bash 
-sudo apt install git 
-git config --global user.email "<the email address you use for your git account>" 
-git config --global user.name "<your display name for your git account>" 
+```bash
+sudo apt install git
+git config --global user.email "<the email address you use for your git account>"
+git config --global user.name "<your display name for your git account>"
 ```
 
 ### Install VSCode (optional)
@@ -105,8 +105,8 @@ editor please ensure that your settings.json file is configured to not trim
 trailing whitespace from Markdown files. The following snippet can be added to
 your settings.json file to add an exemption for this file type:
 
-```json 
-  "[markdown]": { "files.trimTrailingWhitespace": false }, 
+```json
+  "[markdown]": { "files.trimTrailingWhitespace": false },
 ```
 
 </Note>
@@ -139,16 +139,16 @@ rest of this process.
 Open a Powershell terminal or command prompt. Run `nvm ls available` to show
 versions that can be installed. Choose the appropriate version (you should use
 the same version as the freesewing project or latest LTS version) then run `nvm
-install 16.17.0` and `nvm use 16.17.0` (where `16.17.0` is the full version
+install 18.17.0` and `nvm use 18.17.0` (where `18.17.0` is the full version
 string of the version you wish to use) to activate the newly installed version.
 You will receive a prompt for elevated permissions and will need to accept it in
 order to activate the new version of Node.js.
 
-<Warning> 
+<Warning>
 At the time this guide was written the latest version of Node.js/npm has
 a bug in the dependency resolution process which causes the freesewing project
-to fail to build. Use the latest LTS version (currently 16.17.0) or the specific
-version used by the main project to avoid this issue.  
+to fail to build. Use the latest LTS version (currently 18.17.0) or the specific
+version used by the main project to avoid this issue.
 </Warning>
 
 Node.js comes with the Node Package Manager (npm) by default which can be used to
@@ -188,15 +188,13 @@ If you're not certain what to pick, just mash some keys, it doesn't matter.
 
 #### What package manager to use
 
-Choose `yarn`. Currently, `npm` does not work.
+You may wish to choose `yarn` since that is the package manager
+that we use when doing work in the monorepo,
+and many of our tutorials are written to use `yarn`.
+However, it doesn't really matter.
+You can choose either `yarn` or `npm` as you wish.
 
 </Note>
-
-<Fixme compact>
-The `npm` issue issue should be fixed by the time v3 is released.
-The _What package manager to use_ section will need to be updated at that
-time.
-</Fixme>
 
 ## Start the development environment
 
@@ -207,7 +205,7 @@ If you chose `banana`, you'll have a folder named `banana`.
 You can ignore all other subfolders and files; they are part of the development environment.)
 
 To start the development environment, navigate to the folder that was created
-and run `npm run dev` (or `yarn dev` if you're using Yarn as a package manager).
+and run `yarn dev` (or `npm run dev` if you're using npm as a package manager).
 
 Then open your browser and go to http://localhost:8000
 

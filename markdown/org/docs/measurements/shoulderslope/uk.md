@@ -1,22 +1,22 @@
 ---
-title: Shoulder slope
+title: Нахил плеча
 ---
 
-The **shoulder slope** measurement is an indicator for the amount with which your shoulder slopes downward.
+**Нахил плеча** вказує на кут нахилу Вашого плеча відносно уявної горизонтальної лінії на рівні низу шиї та вимірюється в градусах.
 
-To measure your shoulder slope, you need to determine the angle at which your shoulder line slopes downward.
+Для зняття цього виміру потрібно визначити кут, під яким лінія плеча нахиляється вниз.
 
-A good way to measure your shoulder slope is to take a a selfie and rotate it until your shoulder line is horizontal.
+Хороший спосіб зняття цієї мірки — зробити селфі та прокрутити світлину до тих пір, доки лінія плеча не стане горизонтальною.
 
-The angle you had to rotate is your shoulder slope.
+Кількість градусів такого повороту і буде кутом нахилу Вашого плеча.
 
 <Note>
 
-Almost all people have a slightly different shoulder slope on both sides.
-That's because your dominant arm is more pronounced.
+Майже всі люди мають трохи різний нахил плечей з обох боків.
+Це тому, що Ваша домінантна рука більш виражена.
 
-Unless the different is huge, best not to worry about it.
-It won't show up for casual garments, and for formal wear, it's better to add
-asymmetric shoulder padding, rather than create an asymmetric pattern.
+Якщо різниця не дуже велика, краще про це не турбуватися.
+На повсякденному одязі це не буде помітно, а для офіційного одягу краще додати
+асиметричні підкладки на плечі, аніж створювати асиметричну викрійку.
 
 </Note>

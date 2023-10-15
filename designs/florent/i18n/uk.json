@@ -1,0 +1,18 @@
+{
+  "t": "Florent flat cap",
+  "d": "Florent is a flat cap, a rounded cap with a small stiff brim in front.",
+  "p": {
+    "brimBottom": "Brim bottom",
+    "brimInterfacing": "Brim interfacing",
+    "brimTop": "Brim Top",
+    "side": "Side",
+    "top": "Top"
+  },
+  "s": {},
+  "o": {
+    "headEase": {
+      "t": "Head ease",
+      "d": "The amound of ease around your head"
+    }
+  }
+}

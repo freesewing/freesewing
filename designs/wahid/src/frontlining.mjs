@@ -9,10 +9,31 @@ function wahidFrontLining({
   macro,
   snippets,
   Snippet,
-  complete,
+  store,
   sa,
+  expand,
   part,
 }) {
+  if (expand) {
+    store.flag.preset('expandIsOn')
+  } else {
+    // Expand is off, do not draw the part but flag this to the user
+    store.flag.note({
+      msg: `wahid:cutFrontLining`,
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
+
   // Cleanup from Brian
   for (let i of Object.keys(paths)) delete paths[i]
   for (let i of Object.keys(snippets)) delete snippets[i]
@@ -33,23 +54,35 @@ function wahidFrontLining({
   if (options.hemStyle === 'classic') {
     paths.seam.curve(points.splitDartHemRightCp2, points.splitHemCp1, points.hem)
   } else paths.seam.line(points.hem)
-  paths.seam.close()
-  if (complete) {
-    macro('grainline', {
-      from: points.flbTop,
-      to: new Point(points.flbTop.x, points.dartTop.y),
-    })
+  paths.seam.close().setClass('lining')
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-    points.title = points.armhole.shiftFractionTowards(points.dartTop, 0.5)
-    macro('title', {
-      nr: 4,
-      at: points.title,
-      title: 'frontLining',
-    })
-    points.logo = points.dartWaistRight.shiftFractionTowards(points.waist, 0.5)
-    snippets.logo = new Snippet('logo', points.logo)
-  }
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'lining sa')
+
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'lining' })
+
+  // Grainline
+  macro('grainline', {
+    from: points.flbTop,
+    to: new Point(points.flbTop.x, points.dartTop.y),
+  })
+
+  // Title
+  points.title = points.armhole.shiftFractionTowards(points.dartTop, 0.5)
+  macro('rmtitle')
+  macro('title', {
+    nr: '1b',
+    at: points.title,
+    title: 'frontLining',
+  })
+
+  // Logo
+  points.logo = points.dartWaistRight.shiftFractionTowards(points.waist, 0.5)
+  snippets.logo = new Snippet('logo', points.logo)
+
   return part
 }
 

@@ -91,3 +91,15 @@ Defs.prototype.setIfUnset = function (name, value) {
   if (typeof this.list[name] === 'undefined') this.list[name] = value
   return this
 }
+
+/**
+ * Returns defs as an object suitable for inclusion in renderprops
+ *
+ * @return {object} defs - A plain object representing the defs
+ */
+Defs.prototype.asRenderProps = function () {
+  return {
+    list: this.list,
+    forSvg: this.render(),
+  }
+}

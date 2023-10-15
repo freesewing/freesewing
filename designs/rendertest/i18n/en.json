@@ -1,0 +1,50 @@
+{
+  "t": "Render Test",
+  "d": "A FreeSewing pattern to showcase how various elements are rendered/themed",
+  "p": {
+    "demo": "Demo"
+  },
+  "s": {},
+  "o": {
+    "only": {
+      "t": "Tests to include",
+      "d": "This option allows you to limit render tests to a specific subset"
+    },
+    "only.false": {
+      "t": "All tests",
+      "d": "Include all render tests"
+    },
+    "only.circles": {
+      "t": "Circles",
+      "d": "Draft render tests for circles"
+    },
+    "only.colors": {
+      "t": "Colors",
+      "d": "Draft render tests for colors"
+    },
+    "only.widths": {
+      "t": "Line widths",
+      "d": "Draft render tests for line widths"
+    },
+    "only.styles": {
+      "t": "Styles",
+      "d": "Draft render tests for line styles"
+    },
+    "only.combos": {
+      "t": "Combos",
+      "d": "Draft combined render tests"
+    },
+    "only.text": {
+      "t": "Text",
+      "d": "Draft render tests for text"
+    },
+    "only.snippets": {
+      "t": "Snippets tests",
+      "d": "Draft render tests for snippets"
+    },
+    "only.macros": {
+      "t": "Macros",
+      "d": "Draft render tests for macros"
+    }
+  }
+}

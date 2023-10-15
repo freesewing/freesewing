@@ -1,0 +1,49 @@
+{
+  "t": "Hugo hoodie",
+  "d": "Hugo is a hooded jumper with raglan sleeves.",
+  "p": {
+    "back": "Back",
+    "cuff": "Cuff",
+    "front": "Front",
+    "hoodCenter": "Hood center",
+    "hoodSide": "Hood side",
+    "pocket": "Pocket",
+    "pocketFacing": "Pocket facing",
+    "sleeve": "Sleeve",
+    "waistband": "Waistband"
+  },
+  "s": {
+    "cuff": "Cuff",
+    "hoodCenter": "Hood center",
+    "hoodSide": "Hood side",
+    "pocketFacing": "Pocket facing",
+    "pocket": "Pocket",
+    "waistband": "Waistband",
+    "cutPocket.t": "The pocket is not shown",
+    "cutPocket.d": "The **Pocket** (4) is not shown, but you can trace it from the Front part (1), which has the pocket outline on it (not including seam allowance).",
+    "cutCuff.t": "The cuff is not shown",
+    "cutCuff.d": "The **Cuff** (9) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long.",
+    "cutHoodCenter.t": "The hood center is not shown",
+    "cutHoodCenter.d": "The **Hood center** (7) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long.",
+    "cutWaistband.t": "The waistband is not shown",
+    "cutWaistband.d": "The **Waistband** (8) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long"
+  },
+  "o": {
+    "ribbingHeight": {
+      "t": "Ribbing height",
+      "d": "Controls the height of the ribbing"
+    },
+    "ribbingStretch": {
+      "t": "Ribbing stretch",
+      "d": "Use this to adapt the pattern to how stretchy the ribbing that you are using is."
+    },
+    "pocketWidth": {
+      "t": "Pocket width",
+      "d": "Determined the width of the pocket."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "The amount of ease at your hips."
+    }
+  }
+}

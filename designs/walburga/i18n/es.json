@@ -1,0 +1,35 @@
+{
+  "t": "Walburga, tabardo",
+  "d": "Walburga es un tabardo o sobreveste, una prenda histórica de la Europa medieval",
+  "p": {
+    "back": "Atrás",
+    "front": "Frente"
+  },
+  "s": {},
+  "o": {
+    "headRatio": {
+      "t": "Head ratio",
+      "d": "Controls the size of the head opening"
+    },
+    "lengthBonus": {
+      "t": "Bonus de longitud",
+      "d": "Allows variation of the length of the garment"
+    },
+    "widthBonus": {
+      "t": "Width bonus",
+      "d": "Allows variation of the width of the garment"
+    },
+    "length": {
+      "t": "Longitud",
+      "d": "Controls the length of the garment"
+    },
+    "neckoRatio": {
+      "t": "Neck opening shape",
+      "d": "controls the shape of the neck opening"
+    },
+    "neckline": {
+      "t": "Neckline",
+      "d": "Controls whether or not to draft a neck opening"
+    }
+  }
+}

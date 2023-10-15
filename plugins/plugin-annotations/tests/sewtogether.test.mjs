@@ -20,14 +20,15 @@ describe('Sewtogether Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
-    const c = pattern.parts[0].test.paths.sewtogetherSewTogether
+    const c = pattern.parts[0].test.paths.__macro_sewtogether_sewtogether_curve
     expect(c.attributes.get('class')).to.equal('dotted note stroke-sm')
     expect(c.attributes.get('marker-start')).to.equal('url(#sewTogetherStart)')
     expect(c.attributes.get('marker-end')).to.equal('url(#sewTogetherEnd)')
-    expect(c.attributes.get('data-text')).to.equal('sewTogether')
+    expect(c.attributes.get('data-text')).to.equal('plugin-annotations:sewTogether')
     expect(c.attributes.get('data-text-class')).to.equal('center fill-note text-xs')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[1].type).to.equal('curve')
@@ -58,11 +59,12 @@ describe('Sewtogether Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part], noCorePlugins: true })
     const pattern = new Test()
     pattern.draft()
-    var c = pattern.parts[0].test.paths.sewtogetherSewTogetherHinge
-    expect(c.attributes.get('class')).to.equal('dotted note stroke-sm')
+    let c = pattern.parts[0].test.paths.__macro_sewtogether_sewtogether_hinge
+    expect(c.attributes.get('class')).to.equal('note dotted stroke-sm')
     expect(c.attributes.get('marker-start')).to.equal('url(#sewTogetherCross)')
     expect(c.ops[0].type).to.equal('move')
     expect(c.ops[1].type).to.equal('line')
@@ -89,10 +91,11 @@ describe('Sewtogether Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
-    const Test = new Design({ plugins: [annotationsPlugin], parts: [part] })
+    // Note that we're not loading core plugins but the local plugin
+    const Test = new Design({ plugins: [annotationsPlugin], parts: [part], noCorePlugins: true })
     const pattern = new Test({ sa: 10 })
     pattern.draft()
-    var c = pattern.parts[0].test.paths.sewtogetherSewTogetherHinge
+    let c = pattern.parts[0].test.paths.__macro_sewtogether_sewtogether_hinge
     expect(round(c.ops[1].to.x)).to.equal(0)
   })
 })

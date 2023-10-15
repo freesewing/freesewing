@@ -1,0 +1,64 @@
+{
+  "t": "Huey hoodie",
+  "d": "Huey is a zip-up hoodie with optional front pockets.",
+  "p": {
+    "back": "Back",
+    "cuff": "Cuff",
+    "front": "Front",
+    "hood": "Hood",
+    "pocket": "Pocket",
+    "sleeve": "Sleeve",
+    "waistband": "Waistband"
+  },
+  "s": {},
+  "o": {
+    "pocket": {
+      "t": "Pocket",
+      "d": "Whether to include a front pocket or not"
+    },
+    "pocketHeight": {
+      "t": "Pocket height",
+      "d": "Controls the height of the pocket"
+    },
+    "hoodHeight": {
+      "t": "Hood height",
+      "d": "Controls the height of the hood"
+    },
+    "hoodCutback": {
+      "t": "Hood cutback",
+      "d": "Controls how far the hood opening is cut back"
+    },
+    "hoodClosure": {
+      "t": "Hood closure",
+      "d": "Controls how much of the hood is part of the front closure"
+    },
+    "hoodDepth": {
+      "t": "Hood depth",
+      "d": "Controls the depth of the hood"
+    },
+    "hoodAngle": {
+      "t": "Hood angle",
+      "d": "Controls the angle at which the hood is attached"
+    },
+    "ribbing": {
+      "t": "Ribbing",
+      "d": "Whether or not to include ribbing on the pattern."
+    },
+    "ribbingHeight": {
+      "t": "Ribbing height",
+      "d": "Controls the height of the ribbing"
+    },
+    "ribbingStretch": {
+      "t": "Ribbing stretch",
+      "d": "Use this to adapt the pattern to how stretchy the ribbing that you are using is."
+    },
+    "hipsEase": {
+      "t": "Hops ease",
+      "d": "Controls the amount of ease at the hips"
+    },
+    "pocketWidth": {
+      "t": "Pocket width",
+      "d": "Controls the width of the pocket"
+    }
+  }
+}

@@ -14,6 +14,6 @@ Para poder moverte dentro de una prenda se llama fácil de usar. Se puede añadi
 
 Ease también puede funcionar al revés. When the fabric stretches, we can choose to use less fabric than what is needed to make the garment fit. Esto se llama **facilidad negativa**.
 
-La facilidad negativa se utiliza para materiales estirados en los que la prenda debe ajustarse con fuerza. Por ejemplo, en la ropa de baño, apretas, ropa interior o sportswear.
+Negative ease is used for stretchy materials where the garment must fit tightly. Por ejemplo, en la ropa de baño, apretas, ropa interior o sportswear.
 
 > Pictures by [Quinn Dombrowski](https://www.flickr.com/photos/quinnanya/8885126989/) and [sutiblr](https://www.flickr.com/photos/30788655@N08/4743320893)

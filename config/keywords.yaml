@@ -43,7 +43,6 @@ other:
 package:
   - freesewing
 patterns:
-  - bundle
   - design
   - diy
   - fashion
@@ -60,8 +59,7 @@ plugin:
   - made to measure
   - diy
   - fashion
-plugin-bundle:
-  - bundle
+core-plugins:
   - plugin
   - sewing pattern
   - sewing

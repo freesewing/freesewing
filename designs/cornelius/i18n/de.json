@@ -1,0 +1,53 @@
+{
+  "t": "Cornelius, die Kniebundhose zum Radfahren",
+  "d": "Cornelius ist eine Kniebundhose zum Fahrradfahren, basierend auf der Entwurfsmethode nach Keystone.",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "frontpoints": "Front points",
+    "legband": "Legband",
+    "legbandKeystone": "Legband Keystone",
+    "pocket": "Pocket",
+    "pocketFacing": "Pocket facing",
+    "waistband": "Waistband",
+    "zipperguard": "Zipperguard"
+  },
+  "s": {
+    "Vent": "Schlitz",
+    "PocketFacing": "Taschenbesatz"
+  },
+  "o": {
+    "fullness": {
+      "t": "Fülle",
+      "d": "Steuert die Fülle der Hosen"
+    },
+    "waistbandBelowWaist": {
+      "t": "Unterer Taillenband",
+      "d": "Prozentsatz um die Taille unter die aktuelle Taille zu bewegen"
+    },
+    "waistReduction": {
+      "t": "Taillenreduzierung",
+      "d": "Prozentsatz um die Taille zu reduzieren"
+    },
+    "cuffWidth": {
+      "t": "Cuff width",
+      "d": "Breite der Beinschicht"
+    },
+    "cuffStyle": {
+      "t": "Manschettenstil",
+      "d": "Stil der Beinmanschette"
+    },
+    "bandBelowKnee": {
+      "t": "Kuff unter dem Knie",
+      "d": "Steuert die Manschettendistanz vom Knie"
+    },
+    "kneeToBelow": {
+      "t": "Manschettenlänge",
+      "d": "Steuert die Dichtheit der Manschette im Vergleich zum Knie"
+    },
+    "ventLength": {
+      "t": "Ventillänge",
+      "d": "Steuert die Länge des Schlot zwischen Knie und Manschette"
+    }
+  }
+}

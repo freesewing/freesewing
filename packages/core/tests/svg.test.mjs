@@ -5,6 +5,7 @@ import { Design, Attributes } from '../src/index.mjs'
 import { Defs } from '../src/defs.mjs'
 import { version } from '../data.mjs'
 import render from './fixtures/render.mjs'
+import { binpackPlugin } from '../../../plugins/plugin-bin-pack/src/index.mjs'
 
 chai.use(chaiString)
 const expect = chai.expect
@@ -12,6 +13,7 @@ const expect = chai.expect
 const getPattern = (settings = {}, draft = false) => {
   const part = {
     name: 'test',
+    plugins: binpackPlugin,
     draft: draft
       ? draft
       : ({ paths, Path, Point, part }) => {
@@ -25,7 +27,7 @@ const getPattern = (settings = {}, draft = false) => {
           return part
         },
   }
-  const Pattern = new Design({ parts: [part] })
+  const Pattern = new Design({ parts: [part], noCorePlugins: true })
 
   return new Pattern(settings)
 }
@@ -199,7 +201,7 @@ describe('Svg', () => {
 
   it('Should render an Svg snippet', () => {
     const pattern = getPattern({}, ({ snippets, Snippet, Point, part }) => {
-      snippets.test = new Snippet('test', new Point(20, 20), 'This is a snippet')
+      snippets.test = new Snippet('test', new Point(20, 20))
 
       return part
     })
@@ -210,10 +212,7 @@ describe('Svg', () => {
 
   it('Should render a rotated Svg snippet', () => {
     const pattern = getPattern({}, ({ snippets, Snippet, Point, part }) => {
-      snippets.test = new Snippet('test', new Point(20, 20), 'This is a snippet').attr(
-        'data-rotate',
-        90
-      )
+      snippets.test = new Snippet('test', new Point(20, 20)).attr('data-rotate', 90)
 
       return part
     })
@@ -231,10 +230,7 @@ describe('Svg', () => {
 
   it('Should scale an Svg snippet', () => {
     const pattern = getPattern({}, ({ snippets, Snippet, Point, part }) => {
-      snippets.test = new Snippet('test', new Point(20, 20), 'This is a snippet').attr(
-        'data-scale',
-        2
-      )
+      snippets.test = new Snippet('test', new Point(20, 20)).attr('data-scale', 2)
 
       return part
     })

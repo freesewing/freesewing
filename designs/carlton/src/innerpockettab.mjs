@@ -1,7 +1,6 @@
 import { front } from './front.mjs'
 
 function draftCarltonInnerPocketTab({
-  paperless,
   sa,
   store,
   complete,
@@ -28,43 +27,48 @@ function draftCarltonInnerPocketTab({
     .close()
     .attr('class', 'lining')
 
-  paths.hint = new Path().move(points.top).line(points.bottom).attr('class', 'lining dashed')
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'lining sa')
+  if (complete)
+    paths.hint = new Path().move(points.top).line(points.bottom).attr('class', 'lining help')
 
+  /*
+   * Annotations
+   */
+
+  // Cut list
   store.cutlist.addCut({ cut: 1, material: 'lining' })
 
-  if (complete) {
-    points.title = points.top.shiftFractionTowards(points.bottom, 0.5)
-    macro('title', {
-      at: points.title,
-      nr: 15,
-      title: 'innerPocketTab',
-    })
+  // Title
+  points.title = points.top.shiftFractionTowards(points.bottom, 0.5)
+  macro('title', {
+    at: points.title,
+    nr: 15,
+    title: 'innerPocketTab',
+    scale: 0.7,
+  })
 
-    macro('grainline', {
-      from: points.top,
-      to: points.top.shift(-45, points.top.x * 0.7),
-    })
+  // Grainline
+  macro('grainline', {
+    from: points.top,
+    to: points.top.shift(-45, points.top.x * 0.7),
+  })
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'lining sa')
-
-    if (paperless) {
-      macro('hd', {
-        from: points.topLeft,
-        to: points.top,
-        y: points.topLeft.y - sa - 15,
-      })
-      macro('hd', {
-        from: points.topLeft,
-        to: points.topRight,
-        y: points.topLeft.y - sa - 30,
-      })
-      macro('vd', {
-        from: points.bottom,
-        to: points.topRight,
-        x: points.topRight.x + sa + 15,
-      })
-    }
-  }
+  // Dimensions
+  macro('hd', {
+    from: points.topLeft,
+    to: points.top,
+    y: points.topLeft.y - sa - 15,
+  })
+  macro('hd', {
+    from: points.topLeft,
+    to: points.topRight,
+    y: points.topLeft.y - sa - 30,
+  })
+  macro('vd', {
+    from: points.bottom,
+    to: points.topRight,
+    x: points.topRight.x + sa + 15,
+  })
 
   return part
 }

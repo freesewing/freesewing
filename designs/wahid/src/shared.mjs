@@ -1,10 +1,10 @@
 export const constructMainDart = (part) => {
-  let { measurements, options, points, Point, store } = part.shorthand()
+  const { measurements, options, points, Point, store } = part.shorthand()
 
-  let reduce = {}
-  let chest = measurements.chest * (1 + options.chestEase)
-  let waist = measurements.waist * (1 + options.waistEase)
-  let hips = measurements.hips * (1 + options.hipsEase)
+  const reduce = {}
+  const chest = measurements.chest * (1 + options.chestEase)
+  const waist = measurements.waist * (1 + options.waistEase)
+  const hips = measurements.hips * (1 + options.hipsEase)
 
   reduce.waist = chest - waist
   reduce.hips = chest - hips
@@ -43,9 +43,9 @@ export const constructMainDart = (part) => {
 }
 
 export const shapeSideSeam = (part) => {
-  let { points, Point, store } = part.shorthand()
-  let wr12 = store.get('wr12')
-  let hr12 = store.get('hr12')
+  const { points, Point, store } = part.shorthand()
+  const wr12 = store.get('wr12')
+  const hr12 = store.get('hr12')
 
   points.waist = points.waist.shift(180, wr12)
   points.waistCp2 = new Point(points.waist.x, points.dartWaistRightCpTop.y)
@@ -56,7 +56,7 @@ export const shapeSideSeam = (part) => {
 }
 
 export const dartPath = (part) => {
-  let { Path, points } = part.shorthand()
+  const { Path, points } = part.shorthand()
   return new Path()
     .move(points.dartStart)
     .line(points.dartHipLeft)

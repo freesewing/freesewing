@@ -16,8 +16,6 @@ function hugoSleeve({
   snippets,
   options,
   measurements,
-  complete,
-  paperless,
   macro,
   part,
 }) {
@@ -138,87 +136,103 @@ function hugoSleeve({
     .close()
     .attr('class', 'fabric')
 
-  // Complete pattern?
-  if (complete) {
-    macro('grainline', {
-      from: points.centerWrist,
-      to: points.raglanTop,
-    })
-    //points.title = new Point(points.armhole.x/2, points.armhole.y);
-    macro('title', { at: points.gridAnchor, nr: 3, title: 'sleeve' })
-    //points.sleeveNotch = points.raglanTipFront.shiftFractionTowards(points.armholeHollow, 0.5);
-    //snippets.sleeveNotch = new Snippet("notch", points.sleeveNotch);
-    //store.set('frontRaglanTipToNotch', points.raglanTipFront.dist(points.sleeveNotch));
-    points.logo = points.gridAnchor.shift(-90, 70)
-    snippets.logo = new Snippet('logo', points.logo)
-    points.scalebox = points.logo.shift(-90, 70)
-    macro('scalebox', { at: points.scalebox })
-    points.frontNotch = new Path()
-      .move(points.raglanTipFront)
-      .curve(points.raglanTipFront, points.slopeFrontCp1, points.slopeFront)
-      .curve(points.slopeFrontCp2, points.capQ4Cp2, points.bicepsLeft)
-      .shiftAlong(store.get('notchFront'))
-    snippets.frontNotch = new Snippet('notch', points.frontNotch)
-    snippets.shoulderNotch = new Snippet('notch', points.raglanTop)
-    points.backNotch = new Path()
-      .move(points.raglanTipBack)
-      .curve(points.raglanTipBack, points.slopeBackCp2, points.slopeBack)
-      .curve(points.slopeBackCp1, points.capQ1Cp1, points.bicepsRight)
-      .shiftAlong(store.get('notchBack'))
-    snippets.backNotch = new Snippet('bnotch', points.backNotch)
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-    }
-  }
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-  // Paperless?
-  if (paperless) {
-    macro('vd', {
-      from: points.wristLeft,
-      to: points.bicepsLeft,
-      x: points.bicepsLeft.x - 15 - sa,
-    })
-    macro('vd', {
-      from: points.bicepsLeft,
-      to: points.raglanTipFront,
-      x: points.bicepsLeft.x - 15 - sa,
-    })
-    macro('vd', {
-      from: points.bicepsRight,
-      to: points.raglanTop,
-      x: points.bicepsRight.x + 15 + sa,
-    })
-    macro('vd', {
-      from: points.bicepsRight,
-      to: points.raglanTipBack,
-      x: points.bicepsRight.x + 30 + sa,
-    })
-    macro('hd', {
-      from: points.raglanTipFront,
-      to: points.raglanTop,
-      y: points.raglanTipBack.y - 15 - sa,
-    })
-    macro('hd', {
-      from: points.raglanTop,
-      to: points.raglanTipBack,
-      y: points.raglanTipBack.y - 15 - sa,
-    })
-    macro('hd', {
-      from: points.bicepsLeft,
-      to: points.raglanTop,
-      y: points.raglanTipBack.y - 30 - sa,
-    })
-    macro('hd', {
-      from: points.bicepsLeft,
-      to: points.bicepsRight,
-      y: points.raglanTipBack.y - 45 - sa,
-    })
-    macro('hd', {
-      from: points.wristLeft,
-      to: points.wristRight,
-      y: points.wristLeft.y + 15 + sa,
-    })
-  }
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Grainline
+  macro('grainline', {
+    from: points.centerWrist,
+    to: points.raglanTop,
+  })
+
+  // Title
+  macro('title', { at: points.gridAnchor, nr: 3, title: 'sleeve' })
+
+  // Logo
+  points.logo = points.gridAnchor.shift(-90, 70)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  // Scalebox
+  points.scalebox = points.logo.shift(-90, 70)
+  macro('scalebox', { at: points.scalebox })
+
+  // Notches
+  points.frontNotch = new Path()
+    .move(points.raglanTipFront)
+    .curve(points.raglanTipFront, points.slopeFrontCp1, points.slopeFront)
+    .curve(points.slopeFrontCp2, points.capQ4Cp2, points.bicepsLeft)
+    .shiftAlong(store.get('notchFront'))
+  snippets.frontNotch = new Snippet('notch', points.frontNotch)
+  snippets.shoulderNotch = new Snippet('notch', points.raglanTop)
+  points.backNotch = new Path()
+    .move(points.raglanTipBack)
+    .curve(points.raglanTipBack, points.slopeBackCp2, points.slopeBack)
+    .curve(points.slopeBackCp1, points.capQ1Cp1, points.bicepsRight)
+    .shiftAlong(store.get('notchBack'))
+  snippets.backNotch = new Snippet('bnotch', points.backNotch)
+
+  // Dimensions
+  macro('rmad')
+  macro('vd', {
+    id: 'hCuffToRaglan',
+    from: points.wristLeft,
+    to: points.bicepsLeft,
+    x: points.bicepsLeft.x - 15 - sa,
+  })
+  macro('vd', {
+    id: 'hRaglanFront',
+    from: points.bicepsLeft,
+    to: points.raglanTipFront,
+    x: points.bicepsLeft.x - 15 - sa,
+  })
+  macro('vd', {
+    id: 'hRaglanToTip',
+    from: points.bicepsRight,
+    to: points.raglanTop,
+    x: points.bicepsRight.x + 15 + sa,
+  })
+  macro('vd', {
+    id: 'hRaglanBack',
+    from: points.bicepsRight,
+    to: points.raglanTipBack,
+    x: points.bicepsRight.x + 30 + sa,
+  })
+  macro('hd', {
+    id: 'wRaglanTopFront',
+    from: points.raglanTipFront,
+    to: points.raglanTop,
+    y: points.raglanTipBack.y - 15 - sa,
+  })
+  macro('hd', {
+    id: 'wRaglanTopBack',
+    from: points.raglanTop,
+    to: points.raglanTipBack,
+    y: points.raglanTipBack.y - 15 - sa,
+  })
+  macro('hd', {
+    id: 'wSleeveFrontHalf',
+    from: points.bicepsLeft,
+    to: points.raglanTop,
+    y: points.raglanTipBack.y - 30 - sa,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.bicepsLeft,
+    to: points.bicepsRight,
+    y: points.raglanTipBack.y - 45 - sa,
+  })
+  macro('hd', {
+    id: 'wCuff',
+    from: points.wristLeft,
+    to: points.wristRight,
+    y: points.wristLeft.y + 15 + sa,
+  })
+
   return part
 }
 
@@ -227,6 +241,35 @@ export const sleeve = {
   from: brianSleeve,
   hide: hidePresets.HIDE_TREE,
   after: [front, back],
-  options: { cuffEase, sleeveLengthBonus, ribbingHeight },
+  options: {
+    cuffEase,
+    sleeveLengthBonus,
+    ribbingHeight,
+    /*
+     * Lock defaults from Brian because we don't want to
+     * expose these to the user as they are about the sleevecap
+     * and we are drafting a raglan sleeve.
+     */
+    sleevecapEase: 0,
+    sleevecapTopFactorX: 0.5,
+    sleevecapTopFactorY: 0.45,
+    sleevecapBackFactorX: 0.6,
+    sleevecapBackFactorY: 0.33,
+    sleevecapFrontFactorX: 0.55,
+    sleevecapFrontFactorY: 0.33,
+    sleevecapQ1Offset: 0.017,
+    sleevecapQ2Offset: 0.035,
+    sleevecapQ3Offset: 0.025,
+    sleevecapQ4Offset: 0.01,
+    sleevecapQ1Spread1: 0.1,
+    sleevecapQ1Spread2: 0.15,
+    sleevecapQ2Spread1: 0.15,
+    sleevecapQ2Spread2: 0.1,
+    sleevecapQ3Spread1: 0.1,
+    sleevecapQ3Spread2: 0.08,
+    sleevecapQ4Spread1: 0.07,
+    sleevecapQ4Spread2: 0.063,
+    sleeveWidthGuarantee: 0.9,
+  },
   draft: hugoSleeve,
 }

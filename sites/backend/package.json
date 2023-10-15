@@ -1,6 +1,6 @@
 {
   "name": "backend.freesewing.org",
-  "version": "3.0.0-alpha.9",
+  "version": "3.0.0",
   "description": "FreeSewing backend",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -24,40 +24,40 @@
     "rmdb": "node ./scripts/rmdb.mjs",
     "test": "npx mocha --require mocha-steps tests/index.mjs",
     "vbuild": "VERBOSE=1 node build.mjs",
-    "prebuild": "node scripts/prebuild.mjs"
+    "wbuild": "node build.mjs"
   },
   "peerDependencies": {},
   "dependencies": {
-    "@aws-sdk/client-sesv2": "3.326.0",
-    "@prisma/client": "4.13.0",
+    "@aws-sdk/client-sesv2": "3.428.0",
+    "@prisma/client": "5.4.2",
     "bcryptjs": "2.4.3",
     "cors": "2.8.5",
-    "crypto": "1.0.1",
-    "dotenv": "16.0.3",
+    "dotenv": "16.3.1",
     "express": "4.18.2",
+    "js-yaml": "4.1.0",
     "lodash.get": "4.4.2",
     "mustache": "4.2.0",
     "otplib": "12.0.1",
     "passport": "0.6.0",
     "passport-http": "0.3.0",
     "passport-jwt": "4.0.1",
-    "pino": "8.11.0",
+    "pino": "8.15.0",
     "qrcode": "1.5.3",
-    "swagger-ui-dist": "4.18.3",
-    "swagger-ui-express": "4.6.2"
+    "swagger-ui-dist": "5.9.0",
+    "swagger-ui-express": "5.0.0"
   },
   "devDependencies": {
-    "chai": "4.3.7",
-    "chai-http": "4.3.0",
-    "esbuild": "0.17.18",
+    "chai": "4.3.10",
+    "chai-http": "4.4.0",
+    "esbuild": "0.19.4",
     "mocha": "10.2.0",
     "mocha-steps": "1.3.0",
-    "nodemon": "2.0.22",
-    "prisma": "4.13.0"
+    "nodemon": "3.0.1",
+    "prisma": "5.4.2"
   },
   "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=8"
+    "node": "18",
+    "npm": "9"
   },
   "private": true
 }

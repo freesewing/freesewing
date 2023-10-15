@@ -1,36 +1,35 @@
 ---
-title: Good sides together
+title: Лицьові сторони одна до одної
 ---
 
-When I refer to good sides together that can refer to either cutting or sewing:
+Фраза "лицьові сторони одна до одної" може стосуватися крою чи зшивання:
 
-## Cutting with good sides together
+## Крій з лицьовими сторонами одна до одної
 
-![A pocket is marked on the bad side of a piece of double-folded denim, ready to be cut good sides together. After cutting both layers, this will yield two pockets that are mirror images of each other.](cutting-good-sides-together.jpg)
+![Намітка деталей кишені на вивороті вдвічі складеної джинси, матеріал готовий до крою з лицьовими сторонами одна до одної. Після крою обох нашарувань, Ви отримаєте дві кишені, які є дзеркальним відображенням одна одної.](cutting-good-sides-together.jpg)
 
-Cutting with good sides together is a technique that is used when two identical, or mirrored pieces need to be cut.
+Крій з лицьовими сторонами одна до одної — це техніка, яка використовується для вирізання двох однакових або дзеркально відображених деталей.
 
-When a pattern asks to cut a piece with good sides together, fold your fabric double with the good side/right side of the fabric to the inside, and the bad side/wrong side outside.
+Якщо у викрійці вказано вирізати деталь лицьовими сторонами одна до одної, складіть свою тканину лицьовим боком всередину та виворотом назовні.
 
-Now mark the pattern piece on the bad side of the fabric, and cut both layers in one go.
+Далі намітьте милом деталь викрійки та виріжте обидва шари водночас.
 
-This gives you two pieces that are mirror images of each other.
+Таким чином, Ви отримуєте дві частини, які є дзеркальним відображенням одна одної.
 
 <Note> 
 
-##### What if there is not obvious good side?
+##### Що робити, якщо матеріал не має очевидний лицевий бік?
 
-When cutting out something without an obvious _good_ side (like interfacing),
-what matters is that you cut two mirrored pieces, rather than two identical ones.
+Під час крою матеріалів без очевидного лицьового боку (як клейового матеріалу) має значення те, що Ви виріжете два дзеркально відображених шматки для симетричних деталей викрійки.
 
 </Note>
 
-## Sewing with good sides together
+## Зшивання лицьовими сторонами одна до одної
 
-![A piece of denim is sewn with good sides together.](sewing-good-sides-together.jpg)
+![Шмат джинси зшитий лицьовими сторонами одна до одної.](sewing-good-sides-together.jpg)
 
-Sewing with good sides together is the standard approach to making a seam.
+Зшивання лицьовими сторонами одна до одної — це стандартний підхід до виконання шва.
 
-By placing the good sides of the fabric together, both pieces will be joined with the seam allowance to the inside of the garment. This is what's done for the vast majority of seams.
+Склавши лицьовий бік тканини один до одного, обидві деталі будуть з'єднані та припуск на шов залишиться всередині виробу. Зазвичай більшість швів виконуються саме так.
 
-> When there's no specific instructions on how to construct a seam, it's good sides together.
+> Якщо у викрійці відсутні наявні інструкції до виконання шва — лицьові сторони мають бути складені разом.
