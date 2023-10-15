@@ -1,5 +1,72 @@
+import { pctBasedOn } from '@freesewing/core'
 import path from 'path'
-import * as options from './options.mjs'
+
+export const options = {
+  // Fit
+  backRaise: {
+    pct: 10,
+    min: 0,
+    max: 25,
+    // eslint-disable-next-line no-unused-vars
+    toAbs: (value, { measurements, options }, mergedOptions) =>
+      value *
+      (measurements.crotchDepth * (1 + mergedOptions.waistRaise) * mergedOptions.crotchEase),
+    menu: 'fit',
+  },
+  waistRaise: {
+    pct: 0,
+    min: -20,
+    max: 40,
+    // eslint-disable-next-line no-unused-vars
+    toAbs: (value, { measurements, options }, mergedOptions) =>
+      measurements.crotchDepth * (1 + value),
+    menu: 'fit',
+  },
+  fitWaist: { bool: true, menu: 'fit' },
+  // Style
+  hemWidth: { pct: 1.75, min: 1, max: 2.5, ...pctBasedOn('inseam'), menu: 'style' },
+  legSize: { pct: 75, max: 90, min: 50, ...pctBasedOn('inseam'), menu: 'style' },
+  waistOverlap: {
+    pct: 50,
+    min: 10,
+    max: 100,
+    // eslint-disable-next-line no-unused-vars
+    toAbs: (value, { measurements, options }, mergedOptions) => {
+      const waist =
+        typeof measurements.waist == 'undefined' || false == mergedOptions.fitWaist
+          ? measurements.seat
+          : measurements.waist
+      return (measurements.seat > waist ? measurements.seat : waist) * value
+    },
+    menu: 'style',
+  },
+  frontPocket: { bool: true, menu: 'style' },
+  backPocket: { bool: true, menu: 'style' },
+  waistbandWidth: { pct: 3.5, min: 2, max: 5, ...pctBasedOn('inseam'), menu: 'style' },
+  frontPocketStyle: { dflt: 'welt', list: ['welt', 'waistband'], menu: 'style' },
+  separateWaistband: { bool: false, menu: 'style' },
+  knotInFront: { bool: true, menu: 'style' },
+  // Advanced
+  crotchFront: { pct: 30, min: 10, max: 70, menu: 'advanced' },
+  crotchBack: { pct: 45, min: 10, max: 70, menu: 'advanced' },
+  crotchFactorFrontHor: { pct: 90, min: 10, max: 100, menu: 'advanced' },
+  crotchFactorFrontVer: { pct: 30, min: 10, max: 70, menu: 'advanced' },
+  crotchFactorBackHor: { pct: 90, min: 10, max: 100, menu: 'advanced' },
+  crotchFactorBackVer: { pct: 60, min: 20, max: 90, menu: 'advanced' },
+  // Static values
+  backWaistAdjustment: 0.3,
+  frontPocketVerticalOffset: 0.07,
+  frontPocketHorizontalOffset: 0.18,
+  frontPocketSize: 0.45,
+  frontPocketWidthHeightRatio: 0.076,
+  frontPocketDepthFactor: 1.6,
+  frontWaistAdjustment: 0.163,
+  backPocketDepth: 0.5,
+  backPocketVerticalOffset: 0.2,
+  backPocketHorizontalOffset: 0.045,
+  backPocketSize: 0.45,
+  crotchEase: 1.08,
+}
 
 export const pantsProto = {
   name: 'waralee.pantsProto',
@@ -89,7 +156,7 @@ export const pantsProto = {
       waistSeatDifferenceFront * options.frontWaistAdjustment
     )
 
-    points.mLeg = points.mHip.shift(270, measurements.inseam * (1 - options.legShortening))
+    points.mLeg = points.mHip.shift(270, measurements.inseam * options.legSize)
     points.fLegSide = points.mLeg.shift(180, options.crotchFront * circumference4)
     points.bLegSide = points.mLeg.shift(0, options.crotchBack * circumference4)
 
@@ -324,6 +391,7 @@ export const pantsProto = {
         .join(paths.frontPocketSeamSA)
         .close()
         .attr('class', 'dotted mark')
+        .hide()
     }
 
     if (options.backPocket) {

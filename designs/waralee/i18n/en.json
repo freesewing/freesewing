@@ -16,6 +16,9 @@
     "waistbandFront": "Waistband front"
   },
   "s": {
+    "thisIsNotAPart": "This is not a real part",
+    "doNotCutFromFabric": "Do not cut this from the fabric",
+    "useMeasurementsToCutFromFabric": "Use these measurements to cut the shape from the fabric",
     "cutBackPocket.t": "The back pocket is not shown",
     "cutBackPocket.d": "The **back pocket** is made of two rectangles of fabric {{{ width }}} wide and {{{ length }}} long.",
     "cutFacingback.t": "The back pocket facing is not shown",
@@ -100,9 +103,9 @@
       "t": "Waist Overlap",
       "d": "This dicates how much you want the leg flaps to overlap at the waist. A setting of 0 would have them meet at the side seam, and a setting of 100 makes them meet at the front/back."
     },
-    "legShortening": {
-      "t": "Leg Shortening",
-      "d": "This dictates how long the pants will be. It is a factor of the inseam measurement. The larger the value, the more that will be taken off the length."
+    "legSize": {
+      "t": "Leg Size",
+      "d": "This dictates how long the pants will be. It is a factor of the inseam measurement. The larger the value, the longer the pants."
     },
     "backRaise": {
       "t": "Back Raise",

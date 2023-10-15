@@ -61,15 +61,15 @@ export const mini = {
 
     points.pText1 = points.mHip
       .shiftFractionTowards(points.mLeg, 0.5)
-      .attr('data-text', 'thisIsNotAPart')
+      .attr('data-text', 'waralee:thisIsNotAPart')
       .attr('data-text-class', 'center')
     points.pText2 = points.mHip
       .shiftFractionTowards(points.mLeg, 0.6)
-      .attr('data-text', 'doNotCutFromFabric')
+      .attr('data-text', 'waralee:doNotCutFromFabric')
       .attr('data-text-class', 'center')
     points.pText3 = points.mHip
       .shiftFractionTowards(points.mLeg, 0.7)
-      .attr('data-text', 'useMeasurementsToCutFromFabric')
+      .attr('data-text', 'waralee:useMeasurementsToCutFromFabric')
       .attr('data-text-class', 'center')
 
     const fWaistSide = separateWaistband ? points.fWaistSideSeam : points.fWaistSide

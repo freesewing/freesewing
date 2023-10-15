@@ -12,8 +12,6 @@ export const pocket = {
 
     const frontPocketSize = store.get('frontPocketSize')
 
-    console.log({ paths: JSON.parse(JSON.stringify(paths)) })
-
     if ('welt' != options.frontPocketStyle) {
       points.topLeft = new Point(0, 0)
       points.topRight = points.topLeft.shift(0, frontPocketSize)

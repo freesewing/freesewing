@@ -65,6 +65,7 @@ export const pants = {
 
     if (options.frontPocket && 'welt' == options.frontPocketStyle) {
       paths.frontPocket.unhide()
+      paths.frontPocketSeam.unhide()
     }
     if (options.backPocket) {
       paths.backPocket.unhide()

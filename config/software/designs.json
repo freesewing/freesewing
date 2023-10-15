@@ -512,7 +512,7 @@
     "design": "Wouter Van Wageningen",
     "difficulty": 2,
     "tags": ["bottoms", "trousers"],
-    "techniques": []
+    "techniques": ["curvedSeam", "hem", "weltPocket"]
   },
   "yuri": {
     "lab": true,
