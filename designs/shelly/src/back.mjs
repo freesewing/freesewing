@@ -129,7 +129,7 @@ function draftBack({
     if (sa) {
       paths.sa = new Path()
         .move(points.cfHem)
-        .join(paths.hemBase.offset(sa * options.hemWidth * 100))
+        .join(paths.hemBase.offset(sa * options.hemWidth))
         .join(paths.saBase.offset(sa))
         .line(points.cfNeck)
         .attr('class', 'fabric sa')
