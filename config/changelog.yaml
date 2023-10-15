@@ -36,6 +36,11 @@ Unreleased:
     plugin-annotations:
       - Added support for notes in flags
 
+  Fixed:
+    core:
+      - Fix order in mergeOptions method so user settings take precendence over defaults
+      - Fix upward snap for snapped percentage option when snap is a simple number
+
 3.0.0:
   date: 2022-09-30
   Changed:
