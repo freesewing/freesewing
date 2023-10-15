@@ -19,16 +19,16 @@ const macroDefaults = {
 export const cutonfoldDefs = [
   {
     name: 'cutonfoldFrom',
-    def: `
-<marker orient="auto" refY="3" refX="0" id="cutonfoldFrom" style="overflow:visible;" markerWidth="10" markerHeight="6">
-	<path d="M 0,3 L 10,0 C 8,2 8,4 10,6 z" class="fill-note note" />
+    def: (scale) => `
+<marker orient="auto" refY="0" refX="0" id="cutonfoldFrom" style="overflow:visible;" markerWidth="12" markerHeight="8" transform="scale(${scale})">
+	<path class="note fill-note" d="M 0,0 L 12,-4 C 10,-2 10,2 12,4 z" transform="scale(${scale})"/>
 </marker>`,
   },
   {
     name: 'cutonfoldTo',
-    def: `
-<marker orient="auto" refY="3" refX="10" id="cutonfoldTo" style="overflow:visible;" markerWidth="10" markerHeight="6">
-	<path d="M 10,3 L 0,0 C 2,2 2,4 0,6 z" class="fill-note note" />
+    def: (scale) => `
+<marker orient="auto" refY="0" refX="0" id="cutonfoldTo" style="overflow:visible;" markerWidth="12" markerHeight="8" transform="scale(${scale})">
+	<path class="note fill-note" d="M 0,0 L -12,-4 C -10,-2 -10,2 -12,4 z" transform="scale(${scale})"/>
 </marker>`,
   },
 ]
