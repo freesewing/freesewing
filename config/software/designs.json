@@ -679,6 +679,8 @@
     "code": "Wouter Van Wageningen",
     "design": "Wouter Van Wageningen",
     "difficulty": 4,
+    "lab": true,
+    "org": true,
     "tags": ["accessories", "toys"],
     "techniques": ["curvedSeam", "precision"]
   },
