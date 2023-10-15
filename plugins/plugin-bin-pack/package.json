@@ -1,7 +1,7 @@
 {
-  "name": "@freesewing/core",
+  "name": "@freesewing/plugin-bin-pack",
   "version": "3.0.0",
-  "description": "A library for creating made-to-measure sewing patterns",
+  "description": "A FreeSewing plugin that adds a bin-pack algorithm to the core library",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
@@ -15,15 +15,14 @@
   },
   "keywords": [
     "freesewing",
-    "design",
-    "diy",
-    "fashion",
-    "made to measure",
-    "library",
-    "parametric design",
-    "patterns",
+    "plugin",
+    "sewing pattern",
     "sewing",
-    "sewing patterns"
+    "design",
+    "parametric design",
+    "made to measure",
+    "diy",
+    "fashion"
   ],
   "type": "module",
   "module": "dist/index.mjs",
@@ -39,35 +38,23 @@
     "clean": "rimraf dist",
     "mbuild": "NO_MINIFY=1 node build.mjs",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
-    "test": "c8 mocha tests/*.test.mjs",
+    "test": "npx mocha tests/*.test.mjs",
     "vbuild": "VERBOSE=1 node build.mjs",
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
-    "lint": "npx eslint 'src/*.mjs' 'tests/*.mjs'",
-    "report": "c8 report",
-    "testci": "c8 mocha tests/*.test.mjs",
+    "lint": "npx eslint 'src/**' 'tests/*.mjs'",
     "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
-    "jsdoc": "jsdoc -c jsdoc.json -r src",
+    "testci": "NODE_OPTIONS=\"--conditions=internal\" npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
     "wbuild": "node build.mjs",
     "wbuild:all": "yarn wbuild"
   },
-  "peerDependencies": {},
-  "dependencies": {
-    "@freesewing/core-plugins": "3.0.0",
-    "bezier-js": "6.1.4",
-    "hooks": "0.3.2",
-    "lodash.get": "4.4.2",
-    "lodash.set": "4.3.2",
-    "lodash.unset": "4.5.2",
-    "lodash.clonedeep": "^4.5.0"
+  "peerDependencies": {
+    "@freesewing/core": "3.0.0"
   },
+  "dependencies": {},
   "devDependencies": {
-    "eslint": "8.51.0",
-    "nyc": "15.1.0",
     "mocha": "10.2.0",
-    "chai": "4.3.10",
-    "chai-string": "1.5.0",
-    "sinon": "^16.1.0"
+    "chai": "4.3.10"
   },
   "files": [
     "dist/*",

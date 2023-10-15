@@ -106,7 +106,17 @@
 
  - Added support for notes in flags
 
+### plugin-bin-pack
+
+#### Added
+
+ - First release of the plugin providing the default packing implementation
+
 ### core
+
+#### Added
+
+ - Allow plugins to provide their own packing implementation
 
 #### Fixed
 

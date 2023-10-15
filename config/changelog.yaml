@@ -1,4 +1,9 @@
 Unreleased:
+  Added:
+    core:
+      - Allow plugins to provide their own packing implementation
+    plugin-bin-pack:
+      - First release of the plugin providing the default packing implementation
   Changed:
     aaron:
       - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057

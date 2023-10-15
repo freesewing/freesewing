@@ -50,6 +50,9 @@ export function Store(methods = []) {
     } else set(this, path, method)
   }
 
+  // Fallback packing algorithm
+  this.pack = fallbackPacker
+
   return this
 }
 
@@ -155,4 +158,23 @@ Store.prototype.unset = function (path) {
   unset(this, path)
 
   return this
+}
+
+/**
+ * The default pack method comes from a plugin, typically
+ * plugin-bin-back which is part of core plugins.
+ * However, when a pattern is loaded without plugins
+ * we stil don't want it work even when no pack method
+ * is available, so this is the fallback default pack method.
+ */
+function fallbackPacker(items, pattern) {
+  console.log({ items, pattern })
+  let w = 0
+  let h = 0
+  for (const item of items) {
+    if (item.width > w) w = item.width
+    if (item.height > w) w = item.height
+  }
+
+  return { w, h }
 }

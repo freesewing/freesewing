@@ -21,6 +21,9 @@ PatternDrafter.prototype.draft = function () {
   // Keep container for drafted parts fresh
   this.pattern.parts = []
 
+  // Extend pattern-wide store with methods from plugins
+  this.pattern.__extendPatternStore()
+
   // Iterate over the provided sets of settings (typically just one)
   for (const set in this.pattern.settings) {
     this.pattern.setStores[set] = this.pattern.__createSetStore()
