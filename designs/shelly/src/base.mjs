@@ -167,7 +167,7 @@ function draftBase({
     if (sa) {
       paths.sa = new Path()
         .move(points.cfHem)
-        .join(paths.hemBase.offset(sa * options.hemWidth * 100))
+        .join(paths.hemBase.offset(sa * options.hemWidth))
         .join(paths.saBase.offset(sa))
         .line(points.cfNeck)
         .attr('class', 'fabric sa')
@@ -199,7 +199,7 @@ export const base = {
     // How deep the scoop running down the raglan seam is, as a % of the raglan length.
     raglanScoopMagnitude: { pct: 6, min: 0, max: 20, menu: 'advanced' },
     // Length of the hem around the hips, as a multiple of the seam allowance.
-    hemWidth: { pct: 2, min: 0, max: 8, menu: 'construction' },
+    hemWidth: { pct: 200, min: 0, max: 800, menu: 'construction' },
     // How the body curves along the side from the armpit to the side of the hips, as a % of the length of the side seam. Negative values form a concave body and positive values form a convex body.
     sideShape: { pct: 0, min: -20, max: 20, menu: 'advanced' },
   },
