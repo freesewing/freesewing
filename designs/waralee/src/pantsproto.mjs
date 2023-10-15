@@ -1,3 +1,4 @@
+import path from 'path'
 import * as options from './options.mjs'
 
 export const pantsProto = {
@@ -6,10 +7,7 @@ export const pantsProto = {
   measurements: ['seat', 'inseam', 'crotchDepth', 'waistToHips'],
   optionalMeasurements: ['waist', 'waistBack'],
   options,
-  draft: ({ options, measurements, Point, Path, points, paths, store, part }) => {
-    console.log({ measurements: JSON.parse(JSON.stringify(measurements)) })
-    console.log({ options: JSON.parse(JSON.stringify(options)) })
-
+  draft: ({ options, measurements, Point, Path, points, paths, store, part, utils }) => {
     const seatDepth =
       measurements.crotchDepth /* - measurements.waistToHips */ *
       (1 + options.waistRaise) *
@@ -30,8 +28,15 @@ export const pantsProto = {
     const hem = measurements.inseam * options.hemWidth
     const waistBand = measurements.inseam * options.waistbandWidth
 
+    const pocketDepth =
+      (measurements.crotchDepth - measurements.waistToHips) * options.frontPocketDepthFactor
+    const frontPocketSize =
+      options.frontPocketSize * measurements.crotchDepth /*- measurements.waistToHips*/
+
     store.set('waistBand', waistBand)
     store.set('hem', hem)
+    store.set('pocketDepth', pocketDepth)
+    store.set('frontPocketSize', frontPocketSize)
 
     points.mWaist = new Point(0, 0)
 
@@ -62,8 +67,6 @@ export const pantsProto = {
     )
 
     points.bHipSide = points.mHip.shift(0, options.crotchBack * circumference4)
-
-    console.log({ points: JSON.parse(JSON.stringify(points)) })
 
     points.fCutOutHip = new Path()
       .move(points.fWaistSide)
@@ -216,7 +219,6 @@ export const pantsProto = {
     paths.waistBack = new Path()
       .move(separateWaistband ? points.bWaistBackOverlapSeam : points.bWaistBackOverlap)
       .line(separateWaistband ? points.bWaistBackSeam : points.bWaistBack)
-      // .line(points.bWaistSideTemp) // This is a trick to make the offset() call work. Without it, the offset is crossing the cutout line.
       .line(separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
       .hide()
     paths.waistFront = new Path()
@@ -255,12 +257,14 @@ export const pantsProto = {
         )
         .shift(180, options.frontPocketHorizontalOffset * measurements.seat)
 
-      points.frontPocketTop2 = points.frontPocketTop.shift(340, 12)
+      const frontPocketHeight = frontPocketSize * options.frontPocketWidthHeightRatio
+
+      points.frontPocketTop2 = points.frontPocketTop.shift(340, frontPocketHeight)
       points.frontPocketBottom = points.frontPocketTop.shift(
         250,
         options.frontPocketSize * measurements.crotchDepth /*- measurements.waistToHips*/
       )
-      points.frontPocketBottom2 = points.frontPocketBottom.shift(340, 12)
+      points.frontPocketBottom2 = points.frontPocketBottom.shift(340, frontPocketHeight)
 
       paths.frontPocket = new Path()
         .move(points.frontPocketTop)
@@ -270,6 +274,56 @@ export const pantsProto = {
         .close()
         .attr('class', 'fabric')
         .hide()
+
+      points.frontPocketSeam = utils.beamsIntersect(
+        points.frontPocketBottom,
+        points.frontPocketTop,
+        points.fWaistSideSeam,
+        points.fWaistFrontOverlapSeam
+      )
+
+      const frontPocketExtraDepth = points.frontPocketTop.dist(points.frontPocketSeam)
+
+      points.frontPocketTopLeft = points.frontPocketSeam.shiftTowards(
+        points.fWaistFrontOverlapSeam,
+        frontPocketHeight
+      )
+      points.frontPocketTopRight = points.frontPocketTopLeft.shift(0, pocketDepth * (1 / 3))
+
+      points.frontPocketBottomRight = points.frontPocketTopRight.shift(
+        270,
+        pocketDepth + frontPocketExtraDepth
+      )
+      points.frontPocketBottomLeft = points.frontPocketTopLeft.shift(
+        250,
+        pocketDepth * (5 / 6) + frontPocketExtraDepth
+      )
+
+      points.frontPocketBottomRightCP = points.frontPocketBottomRight.shift(
+        180,
+        pocketDepth * (1 / 6)
+      )
+      points.frontPocketBottomLeftCP = points.frontPocketBottomLeft.shift(
+        315,
+        pocketDepth * (1 / 4)
+      )
+
+      paths.frontPocketSeamSA = new Path()
+        .move(points.frontPocketTopRight)
+        .line(points.frontPocketTopLeft)
+        .line(points.frontPocketBottomLeft)
+        .curve(
+          points.frontPocketBottomLeftCP,
+          points.frontPocketBottomRightCP,
+          points.frontPocketBottomRight
+        )
+        .hide()
+      paths.frontPocketSeam = new Path()
+        .move(points.frontPocketBottomRight)
+        .line(points.frontPocketTopRight)
+        .join(paths.frontPocketSeamSA)
+        .close()
+        .attr('class', 'dotted mark')
     }
 
     if (options.backPocket) {
@@ -311,6 +365,13 @@ export const pantsProto = {
         .attr('class', 'fabric')
         .hide()
     }
+
+    path.temp = new Path()
+      .move(points.bWaistSide)
+      .line(points.fWaistSide)
+      .line(points.fLegFront)
+      .line(points.bLegBack)
+      .close()
 
     return part.hide()
   },

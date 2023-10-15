@@ -2,58 +2,23 @@ import { pantsProto } from './pantsproto.mjs'
 
 export const pocket = {
   name: 'waralee.pocket',
-  after: pantsProto,
-  draft: ({
-    options,
-    measurements,
-    Point,
-    Path,
-    points,
-    paths,
-    Snippet,
-    snippets,
-    sa,
-    macro,
-    part,
-  }) => {
+  from: pantsProto,
+  draft: ({ options, Point, Path, points, paths, Snippet, snippets, sa, macro, store, part }) => {
     if (false == options.frontPocket) {
-      return part
+      return part.hide()
     }
 
     const c = 0.55191502449351
 
-    const pocketDepth =
-      (measurements.crotchDepth - measurements.waistToHips) * options.frontPocketDepthFactor
-    const frontPocketSize =
-      options.frontPocketSize * measurements.crotchDepth /*- measurements.waistToHips*/
+    const frontPocketSize = store.get('frontPocketSize')
 
-    console.log({ pocketDepth: pocketDepth, frontPocketSize: frontPocketSize })
+    console.log({ paths: JSON.parse(JSON.stringify(paths)) })
 
     if ('welt' != options.frontPocketStyle) {
-      points.topLeft = new Point(0, 0)
-      points.bottomLeft = points.topLeft.shift(270, pocketDepth)
-      console.log({ nwpoints: JSON.parse(JSON.stringify(points)) })
-
-      points.topRight = points.topLeft.shift(0, pocketDepth * (1 / 3))
-      points.bottomRight = points.topRight.shift(290, pocketDepth * (5 / 6))
-
-      points.bottomLeftCP = points.bottomLeft.shift(0, pocketDepth * (1 / 6))
-      points.bottomRightCP = points.bottomRight.shift(225, pocketDepth * (1 / 4))
-
-      paths.seam = new Path()
-        .move(points.topLeft)
-        .line(points.bottomLeft)
-        .curve(points.bottomLeftCP, points.bottomRightCP, points.bottomRight)
-        .line(points.topRight)
-        .line(points.topLeft)
-        .close()
-        .attr('class', 'fabric')
-    } else {
       points.topLeft = new Point(0, 0)
       points.topRight = points.topLeft.shift(0, frontPocketSize)
       points.bottomLeft = points.topLeft.shift(270, frontPocketSize * 1.5)
       points.bottomRight = points.topRight.shift(270, frontPocketSize * 1.5)
-      console.log({ wpoints: JSON.parse(JSON.stringify(points)) })
 
       points.bottomLeftCornerUp = points.bottomLeft.shift(90, frontPocketSize / 4)
       points.bottomLeftCornerUpCp1 = points.bottomLeftCornerUp.shift(270, (frontPocketSize / 4) * c)
@@ -91,9 +56,24 @@ export const pocket = {
         .line(points.topLeft)
         .close()
         .attr('class', 'fabric')
+
+      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+    } else {
+      paths.frontPocketSeam.setClass('fabric')
+
+      paths.sa = paths.frontPocketSeamSA.offset(sa).close().attr('class', 'fabric sa')
+
+      paths.frontPocket.unhide().setClass('mark')
+
+      macro('cutonfold', {
+        from: points.frontPocketBottomRight,
+        to: points.frontPocketTopRight,
+      })
     }
 
-    points.title = points.topLeft.shift(270, 75).shift(0, 50)
+    store.cutlist.addCut({ cut: 2, from: 'lining' })
+
+    points.title = points.frontPocketTopLeft.shift(270, 75).shift(0, 50)
     macro('title', {
       nr: 3,
       at: points.title,
@@ -107,66 +87,36 @@ export const pocket = {
       .attr('data-text', 'Waralee')
       .attr('data-text-class', 'center')
 
-    console.log({ points: JSON.parse(JSON.stringify(points)), frontPocketSize: frontPocketSize })
-
     if ('welt' == options.frontPocketStyle) {
-      macro('cutonfold', {
-        from: points.topLeft,
-        to: points.bottomLeft,
-        margin: 5,
-        offset: 10,
-        id: 'cof',
-      })
-    }
-    if (sa) {
-      if ('welt' == options.frontPocketStyle) {
-        paths.sa = new Path()
-          .move(points.bottomLeft)
-          .join(
-            new Path()
-              .move(points.bottomLeft)
-              .curve(points.bottomLeftCP, points.bottomRightCP, points.bottomRight)
-              .line(points.topRight)
-              .line(points.topLeft)
-              .offset(sa)
-          )
-          .line(points.topLeft)
-          .attr('class', 'fabric sa')
-      } else {
-        paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-      }
-    }
-
-    if ('welt' != options.frontPocketStyle) {
       macro('hd', {
         id: 1,
-        from: points.topLeft,
-        to: points.topRight,
-        y: points.topLeft.y + 15,
+        from: points.frontPocketTopLeft,
+        to: points.frontPocketTopRight,
+        y: points.frontPocketTopLeft.y - sa - 15,
       })
       macro('hd', {
         id: 2,
-        from: points.bottomLeft,
-        to: points.bottomRight,
-        y: points.bottomRight.y,
+        from: points.frontPocketBottomLeft,
+        to: points.frontPocketBottomRight,
+        y: points.frontPocketBottomRight.y + sa + 15,
       })
       macro('vd', {
         id: 3,
-        from: points.topLeft,
-        to: points.bottomLeft,
-        x: points.topLeft.x + 15,
+        from: points.frontPocketBottomLeft,
+        to: points.frontPocketTopLeft,
+        x: points.frontPocketBottomLeft.x - sa - 15,
       })
       macro('vd', {
         id: 4,
-        from: points.topRight,
-        to: points.bottomRight,
-        x: points.bottomRight.x,
+        from: points.frontPocketTopRight,
+        to: points.frontPocketBottomRight,
+        x: points.frontPocketBottomRight.x + 15,
       })
       macro('vd', {
         id: 5,
-        from: points.bottomRight,
-        to: points.bottomLeft,
-        x: points.bottomRight.x,
+        from: points.frontPocketBottomRight,
+        to: points.frontPocketBottomLeft,
+        x: points.frontPocketBottomLeft.x - sa - 15,
       })
     } else {
       macro('hd', {
@@ -177,8 +127,8 @@ export const pocket = {
       })
       macro('vd', {
         id: 7,
-        from: points.topLeft,
-        to: points.bottomLeftCornerOver,
+        from: points.bottomLeftCornerOver,
+        to: points.topLeft,
         x: points.bottomLeftCornerOver.x,
       })
     }

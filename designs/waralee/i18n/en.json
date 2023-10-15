@@ -4,10 +4,11 @@
   "p": {
     "backPocket": "Back pocket",
     "cutout": "Cutout",
-    "facings": "Facings",
-    "mini": "Mini",
+    "facingBack": "Back Pocket Facing",
+    "facingFront": "Front Pocket Facing",
+    "mini": "Mini version",
     "pants": "Pants",
-    "pantsProto": "FIXME: Give this part a name",
+    "pantsProto": "Pants prototype",
     "pocket": "Pocket",
     "strapBack": "Strap back",
     "strapFront": "Strap front",
@@ -15,6 +16,12 @@
     "waistbandFront": "Waistband front"
   },
   "s": {
+    "cutBackPocket.t": "The back pocket is not shown",
+    "cutBackPocket.d": "The **back pocket** is made of two rectangles of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "cutFacingback.t": "The back pocket facing is not shown",
+    "cutFacingback.d": "The **back pocket facing** is made of a rectangle of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "cutFacingfront.t": "The front pocket facing is not shown",
+    "cutFacingfront.d": "The **front pocket facing** is made of a rectangle of fabric {{{ width }}} wide and {{{ length }}} long.",
     "cutwaistbandBack.t": "The back waist band is not shown",
     "cutwaistbandBack.d": "The **back waist band** is made of two strips of fabric {{{ width }}} wide and {{{ length }}} long.",
     "cutwaistbandFront.t": "The front waist band is not shown",
@@ -33,9 +40,25 @@
       "t": "Back pocket",
       "d": "Whether to include a back pocket or not"
     },
+    "backPocketYes": {
+      "t": "Back pocket",
+      "d": "The back pocket is included"
+    },
+    "backPocketNo": {
+      "t": "No Back pocket",
+      "d": "The pattern is drawn without a back pocket"
+    },
     "frontPocket": {
       "t": "Front pocket",
       "d": "Whether to include a front pocket or not"
+    },
+    "frontPocketYes": {
+      "t": "Front pocket",
+      "d": "The front pocket is included"
+    },
+    "frontPocketNo": {
+      "t": "No Front pocket",
+      "d": "The pattern is drawn without a front pocket"
     },
     "hemWidth": {
       "t": "Hem size",
@@ -110,8 +133,8 @@
       "d": "The front pocket will be hidden in the seam of the waistband."
     },
     "knotInFront": {
-      "t": "Placement of the knot",
-      "d": "The knot of the wrap straps can be place in the front or back."
+      "t": "Place the knot in the front",
+      "d": "The knot of the wrap straps can be placed in the front or back."
     },
     "knotInFrontNo": {
       "t": "Knot in the back",

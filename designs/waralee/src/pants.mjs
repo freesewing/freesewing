@@ -47,6 +47,8 @@ export const pants = {
 
     paths.seam.unhide()
 
+    store.cutlist.addCut({ cut: 2, from: 'fabric' })
+
     points.title = points.fWaistFront.shift(270, 400)
     macro('title', {
       nr: 1,

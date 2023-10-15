@@ -14,39 +14,69 @@ export const backPocket = {
     snippets,
     macro,
     sa,
+    store,
+    expand,
+    units,
     part,
   }) => {
     if (false == options.backPocket) {
-      return part
+      return part.hide()
     }
+    const pocketDepth = options.backPocketDepth * measurements.crotchDepth
 
-    const pocketDepth = options.backPocketDepth
+    if (!expand) {
+      // Expand is on, do not draw the part but flag this to the user
+      store.flag.note({
+        msg: `waralee:cutBackPocket`,
+        replace: {
+          width: units(options.backPocketSize * measurements.crotchDepth),
+          length: units(pocketDepth + options.backPocketVerticalOffset * measurements.crotchDepth),
+        },
+        suggest: {
+          text: 'flag:show',
+          icon: 'expand',
+          update: {
+            settings: ['expand', 1],
+          },
+        },
+      })
+      // Also hint about expand
+      store.flag.preset('expand')
+
+      return part.hide()
+    }
 
     points.topLeft = new Point(0, 0)
     points.bottomLeft = points.topLeft.shift(
       270,
-      pocketDepth /*+ 30*/ * 2 +
-        options.backPocketVerticalOffset * measurements.crotchDepth /*- measurements.waistToHips*/
+      pocketDepth + options.backPocketVerticalOffset * measurements.crotchDepth
     )
 
-    points.topRight = points.topLeft.shift(
-      0,
-      options.backPocketSize * measurements.crotchDepth /*- measurements.waistToHips*/ /*+ 24*/
-    )
+    points.topRight = points.topLeft.shift(0, options.backPocketSize * measurements.crotchDepth)
     points.bottomRight = points.topRight.shift(
       270,
-      pocketDepth /*+ 30*/ * 2 +
-        options.backPocketVerticalOffset * measurements.crotchDepth /*- measurements.waistToHips*/
+      pocketDepth + options.backPocketVerticalOffset * measurements.crotchDepth
     )
 
-    paths.seam = new Path()
-      .move(points.topLeft)
-      .line(points.bottomLeft)
-      .line(points.bottomRight)
+    paths.seamSA = new Path()
+      .move(points.bottomRight)
       .line(points.topRight)
       .line(points.topLeft)
+      .line(points.bottomLeft)
+      .hide()
+    paths.seam = new Path()
+      .move(points.bottomLeft)
+      .line(points.bottomRight)
+      .join(paths.seamSA)
       .close()
       .attr('class', 'fabric')
+
+    macro('cutonfold', {
+      from: points.bottomLeft,
+      to: points.bottomRight,
+    })
+
+    store.cutlist.addCut({ cut: 2, from: 'lining' })
 
     points.title = points.topLeft.shift(270, 75).shift(0, 50)
     macro('title', {
@@ -62,7 +92,7 @@ export const backPocket = {
       .attr('data-text', 'Waralee')
       .attr('data-text-class', 'center')
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+    if (sa) paths.sa = paths.seamSA.close().offset(sa).attr('class', 'fabric sa')
 
     macro('hd', {
       id: 1,

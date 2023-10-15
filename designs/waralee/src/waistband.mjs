@@ -31,7 +31,7 @@ function waraleeWaistband(
   switch (type) {
     case 'waistBandFront':
       if (false == options.separateWaistband && 'welt' == options.frontPocketStyle) {
-        return part
+        return part.hide()
       }
       partNr = 9
       waistBandLength = waistBandLengthFront * 2
@@ -39,7 +39,7 @@ function waraleeWaistband(
 
     case 'waistBandBack':
       if (false == options.separateWaistband && 'welt' == options.frontPocketStyle) {
-        return part
+        return part.hide()
       }
       partNr = 10
       waistBandLength = waistBandLengthBack * 2
@@ -80,8 +80,12 @@ function waraleeWaistband(
     return part.hide()
   }
 
+  store.cutlist.addCut({ cut: 1, from: 'fabric' })
+
   points.tl = new Point(0, 0)
   points.bl = new Point(0, waistBandLength)
+  points.tm = new Point(waistBand, 0)
+  points.bm = new Point(waistBand, waistBandLength)
   points.tr = new Point(waistBand * 2, 0)
   points.br = new Point(waistBand * 2, waistBandLength)
 
@@ -93,13 +97,15 @@ function waraleeWaistband(
     .line(points.br)
     .close()
 
+  paths.fold = new Path()
+    .move(points.tm)
+    .line(points.bm)
+    .attr('class', 'fabric dotted')
+    .setText('fold')
+
   if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-  console.log({
-    part: type,
-    points: JSON.parse(JSON.stringify(points)),
-    paths: JSON.parse(JSON.stringify(paths)),
-  })
+  store.cutlist.addCut({ cut: 1, from: 'fabric' })
 
   points.title = new Point(waistBand, waistBandLength * 0.2)
   macro('title', {
@@ -116,9 +122,9 @@ function waraleeWaistband(
 
   macro('hd', {
     id: 'w',
-    from: points.tr,
-    to: points.tl,
-    y: points.tl.y + sa + 10,
+    from: points.tl,
+    to: points.tr,
+    y: points.tl.y - sa - 10,
   })
   macro('vd', {
     id: 'h',

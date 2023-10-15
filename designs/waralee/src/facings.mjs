@@ -1,9 +1,8 @@
 import { pantsProto } from './pantsproto.mjs'
 
-export const facings = {
-  name: 'waralee.facings',
-  after: pantsProto,
-  draft: ({
+function waraleeFacing(
+  type,
+  {
     options,
     measurements,
     Point,
@@ -14,106 +13,102 @@ export const facings = {
     snippets,
     macro,
     sa,
+    store,
+    expand,
+    units,
     part,
-  }) => {
-    const frontPocketSize =
-      options.frontPocketSize * measurements.crotchDepth /*- measurements.waistToHips*/
-    const backPocketSize =
-      options.backPocketSize * measurements.crotchDepth /*- measurements.waistToHips*/
+  }
+) {
+  const frontPocketSize =
+    options.frontPocketSize * measurements.crotchDepth /*- measurements.waistToHips*/
+  const backPocketSize =
+    options.backPocketSize * measurements.crotchDepth /*- measurements.waistToHips*/
 
-    points.frontTL = new Point(0, 0)
-    points.frontTR = points.frontTL.shift(0, frontPocketSize + sa + sa)
-    points.frontBL = points.frontTL.shift(270, frontPocketSize / 2)
-    points.frontBR = points.frontTR.shift(270, frontPocketSize / 2)
-
-    points.backTL = points.frontBL.shift(270, 50)
-    points.backTR = points.backTL.shift(0, backPocketSize + sa + sa)
-    points.backBL = points.backTL.shift(270, backPocketSize / 2)
-    points.backBR = points.backTR.shift(270, backPocketSize / 2)
-
-    paths.frontSeam = new Path()
-      .move(points.frontTL)
-      .line(points.frontBL)
-      .line(points.frontBR)
-      .line(points.frontTR)
-      .line(points.frontTL)
-      .close()
-      .attr('class', 'fabric')
-      .setHidden(!(options.frontPocket && 'welt' == options.frontPocketStyle))
-
-    paths.backSeam = new Path()
-      .move(points.backTL)
-      .line(points.backBL)
-      .line(points.backBR)
-      .line(points.backTR)
-      .line(points.backTL)
-      .close()
-      .attr('class', 'fabric')
-      .setHidden(!options.backPocket)
-
-    if (options.frontPocket && 'welt' == options.frontPocketStyle) {
-      points.frontTitle = points.frontTL.shift(270, 30).shift(0, 40)
-      macro('title', {
-        nr: 5,
-        at: points.frontTitle.shift(0, 30),
-        title: 'frontFacing',
-        prefix: 'front',
-        scale: 0.6,
-      })
-
-      points.frontLogo = points.frontTitle.shift(270, 0)
-      snippets.frontLogo = new Snippet('logo', points.frontLogo).attr('data-scale', 0.3)
-      points.frontText = points.frontLogo
-        .shift(-90, 15)
-        .attr('data-text', 'Waralee')
-        .attr('data-text-class', 'center')
+  if (type == 'front') {
+    if (!options.frontPocket || 'welt' != options.frontPocketStyle) {
+      return part.hide()
     }
-    if (options.backPocket) {
-      points.backTitle = points.backTL.shift(270, 30).shift(0, 40)
-      macro('title', {
-        nr: 6,
-        at: points.backTitle.shift(0, 30),
-        title: 'backFacing',
-        prefix: 'back',
-        scale: 0.6,
-      })
-      points.backLogo = points.backTitle.shift(270, 0)
-      snippets.backLogo = new Snippet('logo', points.backLogo).attr('data-scale', 0.3)
-      points.backText = points.backLogo
-        .shift(-90, 15)
-        .attr('data-text', 'Waralee')
-        .attr('data-text-class', 'center')
+  } else {
+    if (!options.backPocket) {
+      return part.hide()
     }
+  }
 
-    if (options.frontPocket && 'welt' == options.frontPocketStyle) {
-      macro('hd', {
-        id: 1,
-        from: points.frontTL,
-        to: points.frontTR,
-        y: points.frontTL.y + 15,
-      })
-      macro('vd', {
-        id: 2,
-        from: points.frontTL,
-        to: points.frontBL,
-        x: points.frontTL.x + 15,
-      })
-    }
-    if (options.backPocket) {
-      macro('hd', {
-        id: 3,
-        from: points.backTL,
-        to: points.backTR,
-        y: points.backTL.y + 15,
-      })
-      macro('vd', {
-        id: 4,
-        from: points.backTL,
-        to: points.backBL,
-        x: points.backTL.x + 15,
-      })
-    }
+  const width = (type == 'front' ? frontPocketSize : backPocketSize) + sa + sa
+  const height = (type == 'front' ? frontPocketSize : backPocketSize) / 2
 
-    return part
-  },
+  if (!expand) {
+    // Expand is on, do not draw the part but flag this to the user
+    store.flag.note({
+      msg: `waralee:cutFacing` + type,
+      replace: {
+        width: units(width),
+        length: units(height),
+      },
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expand')
+
+    return part.hide()
+  }
+
+  points.tl = new Point(0, 0)
+  points.tr = points.tl.shift(0, width)
+  points.bl = points.tl.shift(270, height)
+  points.br = points.tr.shift(270, height)
+
+  paths.seamSeam = new Path()
+    .move(points.tl)
+    .line(points.bl)
+    .line(points.br)
+    .line(points.tr)
+    .line(points.tl)
+    .close()
+    .attr('class', 'fabric')
+
+  store.cutlist.addCut({ cut: type == 'front' ? 4 : 2, from: 'fabric' })
+
+  points.title = points.tl.shift(270, 30).shift(0, 40)
+  macro('title', {
+    nr: type == 'front' ? 5 : 6,
+    at: points.title.shift(0, 30),
+    title: type + 'Facing',
+    scale: 0.6,
+  })
+
+  points.logo = points.title.shift(270, 0)
+  snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.3)
+
+  macro('hd', {
+    id: 1,
+    from: points.tl,
+    to: points.tr,
+    y: points.tl.y + 15,
+  })
+  macro('vd', {
+    id: 2,
+    from: points.tl,
+    to: points.bl,
+    x: points.tl.x + 15,
+  })
+
+  return part
+}
+
+export const facingFront = {
+  name: 'waralee.facingFront',
+  after: pantsProto,
+  draft: (part) => waraleeFacing('front', part),
+}
+export const facingBack = {
+  name: 'waralee.facingBack',
+  after: pantsProto,
+  draft: (part) => waraleeFacing('back', part),
 }
