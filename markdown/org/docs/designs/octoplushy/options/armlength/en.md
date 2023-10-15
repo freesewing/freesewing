@@ -2,4 +2,4 @@
 title: "Arm Length"
 ---
 
-Allows the length of the arms to be adjusted.
+This setting adjust the length of the arms.
