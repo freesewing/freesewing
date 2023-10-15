@@ -94,6 +94,12 @@
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
 
+### simon
+
+#### Fixed
+
+ - Replaced all instances of 'seperate' with 'separate' in option names
+
 ### sven
 
 #### Changed

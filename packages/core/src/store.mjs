@@ -167,7 +167,7 @@ Store.prototype.unset = function (path) {
  * we stil don't want it work even when no pack method
  * is available, so this is the fallback default pack method.
  */
-function fallbackPacker(items, pattern) {
+function fallbackPacker(items) {
   let w = 0
   let h = 0
   for (const item of items) {
