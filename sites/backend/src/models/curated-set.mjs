@@ -9,7 +9,7 @@ import { decorateModel } from '../utils/model-decorator.mjs'
 export function CuratedSetModel(tools) {
   return decorateModel(this, tools, {
     name: 'curatedSet',
-    jsonFields: ['measies', 'tagsDe', 'tagsEn', 'tagsEs', 'tagsFr', 'tagsNl', 'tagsUk'],
+    jsonFields: ['measies', 'tags'],
     models: ['confirmation', 'set'],
   })
 }
@@ -48,9 +48,8 @@ CuratedSetModel.prototype.guardedCreate = async function ({ body, user }) {
       const key = field + capitalize(lang)
       if (body[key] && typeof body[key] === 'string') data[key] = body[key]
     }
-    const key = 'tags' + capitalize(lang)
-    if (body[key] && Array.isArray(body[key])) data[key] = JSON.stringify(body[key])
   }
+  if (body.tags && Array.isArray(body.tags)) data.tags = JSON.stringify(body.tags)
 
   /*
    * Add the (sanitized) measurements if there are any
@@ -147,10 +146,7 @@ CuratedSetModel.prototype.allCuratedSets = async function () {
      * See https://github.com/prisma/prisma/issues/3786
      */
     asPojo.measies = JSON.parse(asPojo.measies)
-    for (const lang of this.config.languages) {
-      const key = `tags${capitalize(lang)}`
-      asPojo[key] = JSON.parse(asPojo[key] || [])
-    }
+    asPojo.tags = JSON.parse(asPojo.tags)
     list.push(asPojo)
   }
 
