@@ -81,7 +81,10 @@ function draftZipperGuard({
     if (sa) {
       paths.sa = new Path()
         .move(points.bottomLeftCorner)
-        .join(paths.saBase.offset(sa))
+        .line(points.bottomLeftCorner.translate(0, sa))
+        .line(points.bottomRightCorner.translate(sa, sa))
+        .line(points.topRightCorner.translate(sa, -sa))
+        .line(points.topLeftCorner.translate(0, -sa))
         .line(points.topLeftCorner)
         .attr('class', 'fabric sa')
     }
