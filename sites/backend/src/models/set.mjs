@@ -8,7 +8,7 @@ import { decorateModel } from '../utils/model-decorator.mjs'
 export function SetModel(tools) {
   return decorateModel(this, tools, {
     name: 'set',
-    encryptedFields: ['measies', 'img', 'name', 'notes'],
+    encryptedFields: ['measies', 'name', 'notes'],
     jsonFields: ['measies'],
   })
 }
