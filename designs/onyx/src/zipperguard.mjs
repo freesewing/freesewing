@@ -54,7 +54,7 @@ function draftZipperGuard({
       id: 'hZipperGuard',
       from: points.topLeftCorner,
       to: points.bottomLeftCorner,
-      x: -(15 + sa),
+      x: -(sa + 15),
     })
     macro('hd', {
       id: 'wZipperGuard',

@@ -122,25 +122,25 @@ function draftHoodFront({
       id: 'hFrontHeight',
       from: points.frontTop,
       to: points.frontBottom,
-      x: points.frontTop.x - (15 + sa),
+      x: points.frontTop.x - (sa + 15),
     })
     macro('vd', {
       id: 'hTotalHeight',
       from: points.frontTop,
       to: paths.saBase.edge('bottom'),
-      x: points.frontTop.x - (30 + sa),
+      x: points.frontTop.x - (sa + 30),
     })
     macro('vd', {
       id: 'hBackHeight',
       from: points.backTop,
       to: points.backBottom,
-      x: points.backTop.x + (15 + sa),
+      x: points.backTop.x + (sa + 15),
     })
     macro('hd', {
       id: 'wTopWidth',
       from: points.frontTop,
       to: points.backTop,
-      y: points.frontTop.y - (15 + sa),
+      y: points.frontTop.y - (sa + 15),
     })
     macro('pd', {
       id: 'lNeck',

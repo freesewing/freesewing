@@ -121,37 +121,37 @@ function draftHood({
       id: 'hBackToTop',
       from: points.backHead,
       to: points.centerTop,
-      x: points.backHead.x + (15 + sa),
+      x: points.backHead.x + (sa + 15),
     })
     macro('vd', {
       id: 'hNeckToBack',
       from: points.backNeck,
       to: points.backHead,
-      x: points.backHead.x + (15 + sa),
+      x: points.backHead.x + (sa + 15),
     })
     macro('vd', {
       id: 'hNeck',
       from: points.frontNeck,
       to: points.backNeck,
-      x: points.backHead.x + (15 + sa),
+      x: points.backHead.x + (sa + 15),
     })
     macro('vd', {
       id: 'hBackNeckToTop',
       from: points.backNeck,
       to: points.centerTop,
-      x: points.backHead.x + (30 + sa),
+      x: points.backHead.x + (sa + 30),
     })
     macro('vd', {
       id: 'hTotalHeight',
       from: points.frontNeck,
       to: points.centerTop,
-      x: points.backHead.x + (45 + sa),
+      x: points.backHead.x + (sa + 45),
     })
     macro('vd', {
       id: 'hFront',
       from: points.frontNeck,
       to: points.frontTop,
-      x: points.frontTop.x - (15 + sa),
+      x: points.frontTop.x - (sa + 15),
     })
     macro('hd', {
       id: 'wTopToBack',

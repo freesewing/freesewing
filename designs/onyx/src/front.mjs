@@ -53,13 +53,13 @@ function draftFront({
       id: 'hCenterSeam',
       from: points.cfNeck,
       to: points.cfCrotch,
-      x: -(15 + sa),
+      x: -(sa + 15),
     })
     macro('vd', {
       id: 'hNeck',
       from: points.neckShoulderCorner,
       to: points.cfNeck,
-      x: -(15 + sa),
+      x: -(sa + 15),
       noStartMarker: true,
       noEndMarker: true,
     })
@@ -67,13 +67,13 @@ function draftFront({
       id: 'hTotal',
       from: points.neckShoulderCorner,
       to: points.inseamHem,
-      x: -(30 + sa),
+      x: -(sa + 30),
     })
     macro('vd', {
       id: 'hRaglanSeam',
       from: points.armpitCornerScooped,
       to: points.neckShoulderCorner,
-      x: points.armpitCornerScooped.x + (15 + sa),
+      x: points.armpitCornerScooped.x + (sa + 15),
     })
     macro('hd', {
       id: 'wRaglanSeamStraightPortion',

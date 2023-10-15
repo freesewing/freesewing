@@ -236,13 +236,13 @@ function draftBase({
       id: 'hOutseam',
       from: points.outseamHem,
       to: points.armpitCornerScooped,
-      x: Math.max(points.outseamHem.x, points.armpitCornerScooped.x) + (15 + sa),
+      x: Math.max(points.outseamHem.x, points.armpitCornerScooped.x) + (sa + 15),
     })
     macro('vd', {
       id: 'hArmpitScoop',
       from: points.armpitCornerScooped,
       to: points.armpitScoopEnd,
-      x: points.armpitCornerScooped.x + (30 + sa),
+      x: points.armpitCornerScooped.x + (sa + 30),
     })
     macro('hd', {
       id: 'wArmpitScoop',
