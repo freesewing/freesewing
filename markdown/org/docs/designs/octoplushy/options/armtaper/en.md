@@ -1,9 +1,5 @@
 ---
-title: FIXME - this option is undocumented
+title: "Arm Taper"
 ---
 
-<Fixme>
-Please document this option. See https://github/freesewing/freesewing/issues/5097
-
-</Fixme>
-
+This setting changes how much the arms taper from the body down to the end.
