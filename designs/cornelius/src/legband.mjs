@@ -141,10 +141,8 @@ function draftCorneliusLegband({
       nr: 78,
       at: points.title,
       title: 'LegBand',
+      align: 'center',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
 
     if (sa) {
       paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
@@ -154,33 +152,39 @@ function draftCorneliusLegband({
   // Paperless?
   if (paperless) {
     macro('hd', {
+      id: 1,
       from: points.pA,
       to: points.pF,
       y: points.pA.y,
     })
     if (traditional) {
       macro('hd', {
+        id: 2,
         from: points.pB,
         to: points.pC,
         y: points.pB.y,
       })
     }
     macro('ld', {
+      id: 3,
       from: points.pD,
       to: points.pC,
       d: +sa + 15,
     })
     macro('ld', {
+      id: 4,
       from: points.pA,
       to: points.pAout,
       d: +sa + 15,
     })
     macro('vd', {
+      id: 5,
       from: points.pB,
       to: points.pA,
       x: points.pA.x - sa - 15,
     })
     macro('vd', {
+      id: 6,
       from: points.pC,
       to: points.pB,
       x: points.pC.x - (traditional ? 0 : sa + 15),

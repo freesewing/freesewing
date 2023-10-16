@@ -22,6 +22,14 @@ import {
   lengthBonus,
   acrossBackFactor,
   frontArmholeDeeper,
+  bicepsEase,
+  collarEase,
+  cuffEase,
+  shoulderEase,
+  s3Collar,
+  s3Armhole,
+  shoulderSlopeReduction,
+  backNeckCutout,
 } from './options.mjs'
 
 function wahidFront({
@@ -37,7 +45,6 @@ function wahidFront({
   Snippet,
   complete,
   sa,
-  paperless,
   store,
   part,
 }) {
@@ -120,17 +127,24 @@ function wahidFront({
     // Avoid radius extending beyond the dart
     if (radius > points.closureTop.dx(points.dartHemLeft))
       radius = points.closureTop.dx(points.dartHemLeft)
-    macro('round', {
+    // Macro will return the auto-generated IDs
+    const ids = macro('round', {
+      id: 'hem',
       from: points.closureTop,
       to: points.hem,
       via: points.closureBottom,
       radius,
-      prefix: 'round',
     })
+    // Create points from them with easy names
+    for (const id of ['start', 'cp1', 'cp2', 'end']) {
+      points[`round${utils.capitalize(id)}`] = points[ids.points[id]].copy()
+    }
     points.lastButton = new Point(0, points.roundStart.y)
+    points.hemTip = points.roundEnd.copy()
   } else {
     points.closureBottom = new Point(points.closureTop.x, points.hem.y)
-    points.lastButton = new Point(0, points.hem.y)
+    points.lastButton = new Point(0, points.hem.y * 0.96)
+    points.hemTip = points.hem.copy()
   }
   // We use the roundEnd and roundStart points later on
   // let's make sure they exist even if the hem is not rounded
@@ -258,11 +272,13 @@ function wahidFront({
   }
   paths.dart = dartPath(part)
   paths.seam = paths.saBase.join(paths.dart).join(paths.hemBase).close().attr('class', 'fabric')
+  if (sa)
+    paths.sa = paths.saBase.offset(sa).join(paths.hemBase.offset(sa)).close().addClass('fabric sa')
   paths.saBase.hide()
   paths.hemBase.hide()
   paths.dart.hide()
+
   if (complete) {
-    // Pocket path
     paths.pocket = new Path()
       .move(points.pocketTopMidLeft)
       .line(points.pocketTopLeft)
@@ -272,222 +288,241 @@ function wahidFront({
       .line(points.pocketBottomRight)
       .line(points.pocketTopRight)
       .line(points.pocketTopMidRight)
-      .attr('class', 'fabric dashed')
-    // Buttons
-    points.button1 = new Point(0, points.closureTop.y + 10)
-    let delta = points.button1.dist(points.lastButton) / (options.buttons - 1)
-    for (let i = 1; i <= options.buttons; i++) {
-      points['button' + i] = points.button1.shift(-90, delta * (i - 1))
-      snippets['button' + i] = new Snippet('button', points['button' + i])
-      snippets['buttonhole' + i] = new Snippet('buttonhole', points['button' + i]).attr(
-        'data-rotate',
-        90
-      )
-    }
+      .addClass('fabric dashed')
     // Facing/Lining boundary (flb)
-    paths.flbFacing = new Path()
+    paths.flb = new Path()
       .move(points.dartTop)
       .curve(points.flbCp, points.flbCpTop, points.flbTop)
-      .attr('class', 'fabric')
-    paths.flbLining = paths.flbFacing.clone().attr('class', 'lining dashed')
-
-    //Grainline
-
-    macro('grainline', {
-      to: points.neck,
-      from: new Point(points.neck.x, points.cfHem.y),
+      .addClass('lining help')
+    macro('banner', {
+      id: 'flbFacing',
+      path: paths.flb,
+      text: 'wahid:flbFacingSide',
+      classes: 'text-sm fill-fabric center',
     })
-    if (sa) {
-      paths.sa = paths.saBase
-        .offset(sa)
-        .join(paths.hemBase.offset(sa))
-        .close()
-        .attr('class', 'fabric sa')
-    }
-    if (paperless) {
-      macro('hd', {
-        from: points.closureTop,
-        to: points.neck,
-        y: points.neck.y - 15 - sa,
-      })
-      macro('hd', {
-        from: points.closureTop,
-        to: points.shoulder,
-        y: points.neck.y - 30 - sa,
-      })
-      macro('hd', {
-        from: points.closureTop,
-        to: points.armhole,
-        y: points.neck.y - 45 - sa,
-      })
-      macro('ld', {
-        from: points.neck,
-        to: points.shoulder,
-        d: 15 + sa,
-      })
-      macro('ld', {
-        from: points.neck,
-        to: points.flbTop,
-        d: -15,
-      })
-      macro('vd', {
-        from: points.armhole,
-        to: points.shoulder,
-        x: points.armhole.x + 15 + sa,
-      })
-      macro('vd', {
-        from: points.armhole,
-        to: points.neck,
-        x: points.armhole.x + 30 + sa,
-      })
-      macro('vd', {
-        from: points.hem,
-        to: points.armhole,
-        x: (points.armhole.x > points.hem.x ? points.armhole.x : points.hem.x) + 15 + sa,
-      })
-      macro('vd', {
-        from: options.hemStyle === 'classic' ? points.splitDartHemRight : points.dartHemRight,
-        to: points.armhole,
-        x: (points.armhole.x > points.hem.x ? points.armhole.x : points.hem.x) + 30 + sa,
-      })
-      macro('vd', {
-        from: options.hemStyle === 'classic' ? points.splitDartHemLeft : points.dartHemLeft,
-        to: points.armhole,
-        x: (points.armhole.x > points.hem.x ? points.armhole.x : points.hem.x) + 45 + sa,
-      })
-      macro('ld', {
-        from: points.dartHemRight,
-        to: points.hem,
-        d: 15,
-      })
-      if (options.hemStyle === 'classic') {
-        macro('hd', {
-          from: points.closureBottom,
-          to: points.hemTip,
-          y: points.hemTip.y + 15 + sa,
-        })
-        macro('hd', {
-          from: points.closureBottom,
-          to: points.splitDartHemLeft,
-          y: points.hemTip.y + 30 + sa,
-        })
-        macro('hd', {
-          from: points.closureBottom,
-          to: points.splitDartHemRight,
-          y: points.hemTip.y + 45 + sa,
-        })
-        macro('hd', {
-          from: points.closureBottom,
-          to: points.hem,
-          y: points.hemTip.y + 60 + sa,
-        })
-        macro('vd', {
-          from: points.hemTip,
-          to: points.closureBottom,
-          x: points.closureBottom.x - 15 - sa,
-        })
-        macro('vd', {
-          from: points.hemTip,
-          to: points.pocketTopMidLeft,
-          x: points.closureBottom.x - 30 - sa,
-        })
-        macro('vd', {
-          from: points.hemTip,
-          to: points.dartWaistLeft,
-          x: points.closureBottom.x - 45 - sa,
-        })
-        macro('vd', {
-          from: points.hemTip,
-          to: points.closureTop,
-          x: points.closureBottom.x - 60 - sa,
-        })
-      } else {
-        macro('hd', {
-          from: points.roundStart,
-          to: points.roundEnd,
-          y: points.roundEnd.y + 15 + sa,
-        })
-        macro('hd', {
-          from: points.roundStart,
-          to: points.dartHemLeft,
-          y: points.roundEnd.y + 30 + sa,
-        })
-        macro('hd', {
-          from: points.roundStart,
-          to: points.dartHemRight,
-          y: points.roundEnd.y + 45 + sa,
-        })
-        macro('hd', {
-          from: points.roundStart,
-          to: points.hem,
-          y: points.roundEnd.y + 60 + sa,
-        })
-        macro('vd', {
-          from: points.roundEnd,
-          to: points.roundStart,
-          x: points.roundStart.x - 15 - sa,
-        })
-        macro('vd', {
-          from: points.roundEnd,
-          to: points.pocketTopMidLeft,
-          x: points.roundStart.x - 30 - sa,
-        })
-        macro('vd', {
-          from: points.roundEnd,
-          to: points.dartWaistLeft,
-          x: points.roundStart.x - 45 - sa,
-        })
-        macro('vd', {
-          from: points.roundEnd,
-          to: points.closureTop,
-          x: points.roundStart.x - 60 - sa,
-        })
-      }
-      macro('vd', {
-        from: points.closureTop,
-        to: points.neck,
-        x: points.closureTop.x - 15 - sa,
-      })
-      macro('vd', {
-        from: points.button2,
-        to: points.button1,
-        x: points.button1.x + 15,
-      })
-      macro('hd', {
-        from: points.closureTop,
-        to: points.button2,
-        y: points.button2.y + 15,
-      })
-      macro('ld', {
-        from: points.dartWaistLeft,
-        to: points.dartWaistRight,
-      })
-      macro('ld', {
-        from: points.dartHipLeft,
-        to: points.dartHipRight,
-      })
-      macro('ld', {
-        from: points.pocketTopLeft,
-        to: points.pocketTopMidLeft,
-        d: 15,
-      })
-      macro('ld', {
-        from: points.pocketTopMidRight,
-        to: points.pocketTopRight,
-        d: 15,
-      })
-      macro('ld', {
-        from: points.pocketBottomRight,
-        to: points.pocketTopRight,
-        d: -15,
-      })
-      macro('vd', {
-        from: points.pocketTopMidLeft,
-        to: points.dartTop,
-        x: points.closureTop.x - 30 - sa,
-      })
-    }
+    macro('banner', {
+      id: 'flbLining',
+      path: paths.flb,
+      text: 'wahid:flbLiningSide',
+      dy: 7,
+      classes: 'text-sm fill-lining center',
+    })
   }
+
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Buttons
+  points.button1 = new Point(0, points.closureTop.y + 10)
+  let delta = points.button1.dist(points.lastButton) / (options.buttons - 1)
+  for (let i = 1; i <= options.buttons; i++) {
+    points['button' + i] = points.button1.shift(-90, delta * (i - 1))
+    snippets['button' + i] = new Snippet('button', points['button' + i])
+    snippets['buttonhole' + i] = new Snippet('buttonhole', points['button' + i]).attr(
+      'data-rotate',
+      90
+    )
+  }
+
+  // Grainline
+  macro('grainline', {
+    to: points.neck,
+    from: new Point(points.neck.x, points.cfHem.y),
+  })
+
+  // Title
+  macro('title', {
+    at: points.flbCpTop,
+    nr: 1,
+    align: 'center',
+  })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wFrontEdgeToHps',
+    from: points.closureTop,
+    to: points.neck,
+    y: points.neck.y - 15 - sa,
+  })
+  macro('hd', {
+    id: 'wFrontEdgeToShoulder',
+    from: points.closureTop,
+    to: points.shoulder,
+    y: points.neck.y - 30 - sa,
+  })
+  macro('hd', {
+    id: 'wFrontEdgeToArmhole',
+    from: points.closureTop,
+    to: points.armhole,
+    y: points.neck.y - 45 - sa,
+  })
+  macro('ld', {
+    id: 'lShoulderSeam',
+    from: points.neck,
+    to: points.shoulder,
+    d: 15 + sa,
+  })
+  macro('ld', {
+    id: 'lHpsToFlb',
+    from: points.neck,
+    to: points.flbTop,
+    d: -15,
+  })
+  macro('vd', {
+    id: 'hArmholeToShoulder',
+    from: points.armhole,
+    to: points.shoulder,
+    x: points.armhole.x + 15 + sa,
+  })
+  macro('vd', {
+    id: 'hArmholeToHps',
+    from: points.armhole,
+    to: points.neck,
+    x: points.armhole.x + 30 + sa,
+  })
+  macro('vd', {
+    id: 'hHemToArmhole',
+    from: points.hem,
+    to: points.armhole,
+    x: (points.armhole.x > points.hem.x ? points.armhole.x : points.hem.x) + 15 + sa,
+  })
+  macro('vd', {
+    id: 'hDartRightToArmhole',
+    from: options.hemStyle === 'classic' ? points.splitDartHemRight : points.dartHemRight,
+    to: points.armhole,
+    x: (points.armhole.x > points.hem.x ? points.armhole.x : points.hem.x) + 30 + sa,
+  })
+  macro('vd', {
+    id: 'hDartLeftToArmhole',
+    from: options.hemStyle === 'classic' ? points.splitDartHemLeft : points.dartHemLeft,
+    to: points.armhole,
+    x: (points.armhole.x > points.hem.x ? points.armhole.x : points.hem.x) + 45 + sa,
+  })
+  macro('ld', {
+    id: 'wDartToSide',
+    from: points.dartHemRight,
+    to: points.hem,
+    d: 15,
+  })
+  if (options.hemStyle === 'classic') {
+    macro('hd', {
+      id: 'wHemChamfer',
+      from: points.closureBottom,
+      to: points.hemTip,
+      y: points.hemTip.y + 15 + sa,
+    })
+    macro('vd', {
+      id: 'hHemChamfer',
+      from: points.hemTip,
+      to: points.closureBottom,
+      x: points.closureBottom.x - 15 - sa,
+    })
+  } else if (options.hemStyle === 'rounded') {
+    macro('hd', {
+      id: 'wHemFinish',
+      from: points.roundStart,
+      to: points.roundEnd,
+      y: points.roundEnd.y + 15 + sa,
+    })
+    macro('vd', {
+      id: 'hHemToButton',
+      from: points.roundEnd,
+      to: points.roundStart,
+      x: points.roundStart.x - 15 - sa,
+    })
+  }
+  macro('hd', {
+    id: 'wFrontEdgeToDartStart',
+    from: points.roundStart,
+    to: points.dartHemLeft,
+    y: points.hemTip.y + 30 + sa,
+  })
+  macro('hd', {
+    id: 'wFrontEdgeToDartEnd',
+    from: points.roundStart,
+    to: points.dartHemRight,
+    y: points.hemTip.y + 45 + sa,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.roundStart,
+    to: points.hem,
+    y: points.hemTip.y + 60 + sa,
+  })
+  macro('vd', {
+    id: 'hHemToPocketTopAtDart',
+    from: points.roundEnd,
+    to: points.pocketTopMidLeft,
+    x: points.roundStart.x - 30 - sa,
+  })
+  macro('vd', {
+    id: 'hHemToWaist',
+    from: points.roundEnd,
+    to: points.dartWaistLeft,
+    x: points.roundStart.x - 45 - sa,
+  })
+  macro('vd', {
+    id: 'hHemToClosureTop',
+    from: points.roundEnd,
+    to: points.closureTop,
+    x: points.roundStart.x - 60 - sa,
+  })
+  macro('vd', {
+    id: 'hClosureTopToHps',
+    from: points.closureTop,
+    to: points.neck,
+    x: points.closureTop.x - 15 - sa,
+  })
+  macro('vd', {
+    id: 'hBetweenButtons',
+    from: points.button2,
+    to: points.button1,
+    x: points.button1.x + 15,
+  })
+  macro('hd', {
+    id: 'wButtonFromEdge',
+    from: points.closureTop,
+    to: points.button2,
+    y: points.button2.y + 15,
+  })
+  macro('ld', {
+    id: 'lDartAtWaist',
+    from: points.dartWaistLeft,
+    to: points.dartWaistRight,
+  })
+  macro('ld', {
+    id: 'lDartAtHip',
+    from: points.dartHipLeft,
+    to: points.dartHipRight,
+  })
+  macro('ld', {
+    id: 'lPocketTopLeft',
+    from: points.pocketTopLeft,
+    to: points.pocketTopMidLeft,
+    d: 15,
+  })
+  macro('ld', {
+    id: 'lPocketTopRight',
+    from: points.pocketTopMidRight,
+    to: points.pocketTopRight,
+    d: 15,
+  })
+  macro('ld', {
+    id: 'lPocketHeight',
+    from: points.pocketBottomRight,
+    to: points.pocketTopRight,
+    d: -15,
+  })
+  macro('vd', {
+    id: 'wPocketMidToDartTip',
+    from: points.pocketTopMidLeft,
+    to: points.dartTop,
+    x: points.closureTop.x - 30 - sa,
+  })
+
   return part
 }
 
@@ -517,6 +552,14 @@ export const front = {
     lengthBonus,
     acrossBackFactor,
     frontArmholeDeeper,
+    bicepsEase,
+    collarEase,
+    cuffEase,
+    shoulderEase,
+    s3Collar,
+    s3Armhole,
+    shoulderSlopeReduction,
+    backNeckCutout,
   },
   draft: wahidFront,
 }

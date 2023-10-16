@@ -1,0 +1,49 @@
+{
+  "t": "Cathrin, das Korsett",
+  "d": "Cathrin ist ein Unterbrustkorsett oder Taillentrainer.",
+  "p": {
+    "base": "Basis",
+    "panel1": "Teil 1",
+    "panel2": "Teil 2",
+    "panel3": "Teil 3",
+    "panel4": "Teil 4",
+    "panel5": "Teil 5",
+    "panel6": "Teil 6",
+    "panels": "Teile"
+  },
+  "s": {},
+  "o": {
+    "panels": {
+      "t": "Anzahl der Schnittteile",
+      "d": "Die Anzahl der zu erstellenden Schnittteile. Mehr Schnittteile passen kurvenreicheren Modellen besser."
+    },
+    "waistReduction": {
+      "t": "Taillenreduzierung",
+      "d": "Der Betrag, um den das Korsett deine Taille einschnüren soll."
+    },
+    "backOpening": {
+      "t": "Hintere Öffnung",
+      "d": "Öffnung in der hinteren Mitte"
+    },
+    "backRise": {
+      "t": "Anstieg hinten",
+      "d": "Wie stark sich die hinteren Schnittteile von den Armen bis zur hinteren Mitte erstrecken."
+    },
+    "backDrop": {
+      "t": "Rückenabsenkung",
+      "d": "Wie weit sich die hinteren Schnittteile von den Hüften in Richtung Rückenmitte absenken. Negative Werte heben den Rücken an."
+    },
+    "frontRise": {
+      "t": "Frontanstieg",
+      "d": "Aufstieg der Frontteile in der Mitte zwischen den Brüsten. Negative Werte verringern sie."
+    },
+    "frontDrop": {
+      "t": "Frontabsenkung",
+      "d": "Wie weit sich die Frontteile von Ihrer Hüfte in Richtung Ihrer Mittelfront absenken."
+    },
+    "hipRise": {
+      "t": "Hüftanstieg",
+      "d": "Wie stark die Seitenteile auf den Hüften stehen."
+    }
+  }
+}

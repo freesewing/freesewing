@@ -1,0 +1,66 @@
+{
+  "t": "Sandy circle skirt",
+  "d": "Sandy is an adaptable circle skirt pattern.",
+  "p": {
+    "skirt": "Skirt",
+    "waistband": "Waistband"
+  },
+  "s": {
+    "cutWaistband.t": "The waistband is not shown",
+    "cutWaistband.d": "The **Waistband** (2) is a rectangular piece of fabric {{{ w }}} wide and {{{ l }}} long."
+  },
+  "o": {
+    "waistbandWidth": {
+      "t": "Waistband width",
+      "d": "Controls the width of the waistband."
+    },
+    "waistbandPosition": {
+      "t": "Waistband position",
+      "d": "Controls the position of the waistband."
+    },
+    "waistbandShape": {
+      "t": "Waistband shape",
+      "d": "Whether you want a straight or shaped waistband."
+    },
+    "waistbandShape.straight": {
+      "t": "Straight waistband",
+      "d": "Draft a pattern with a straight waistband"
+    },
+    "waistbandShape.curved": {
+      "t": "Curved waistband",
+      "d": "Draft a pattern with a curved waistband"
+    },
+    "circleRatio": {
+      "t": "Circle ratio",
+      "d": "The percentage of a circle you want the skirt to be."
+    },
+    "waistbandOverlap": {
+      "t": "Waistband overlap",
+      "d": "The amount by which the waistband overlaps."
+    },
+    "gathering": {
+      "t": "Gathering",
+      "d": "The percent by which the top of the skirt is longer than the bottom of the waistband."
+    },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "Determines how long the skirt will be."
+    },
+    "seamlessFullCircle": {
+      "t": "Seamless full circle",
+      "d": "Enables a seamless full circle skirt."
+    },
+    "seamlessFullCircleNo": {
+      "t": "Draft less than a full circle skirt",
+      "d": "Drafts a pattern for the exact circle ratio you request"
+    },
+    "seamlessFullCircleYes": {
+      "t": "Draft a pattern for a full circle skirt",
+      "d": "This allows you to cut the skirt on a double-fold"
+    },
+    "hemWidth": {
+      "t": "Hem width",
+      "d": "Width of the hem"
+    }
+  }
+}

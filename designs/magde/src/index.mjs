@@ -1,7 +1,6 @@
-//
-
 import { Design } from '@freesewing/core'
 import { data } from '../data.mjs'
+import { i18n } from '../i18n/index.mjs'
 // Parts
 import { bodyLiner } from './bodyLiner.mjs'
 import { frontPanel } from './frontPanel.mjs'
@@ -11,7 +10,8 @@ import { backPanel } from './backPanel.mjs'
 import { lidOnePiece } from './lidOnePiece.mjs'
 import { twoPieceLidTop } from './twoPieceLidTop.mjs'
 import { twoPieceLidBottom } from './twoPieceLidBottom.mjs'
-import { lidLiner } from './lidLiner.mjs'
+import { sidePanel } from './sidePanel.mjs'
+import { internalOrganiser } from './internalOrganiser.mjs'
 import { strapAttachments } from './strapAttachments.mjs'
 
 // Create new design
@@ -27,9 +27,24 @@ const Magde = new Design({
     twoPieceLidBottom,
     strapAttachments,
     bodyLiner,
-    lidLiner,
+    sidePanel,
+    internalOrganiser,
   ],
 })
 
 // Named exports
-export { bodyLiner, Magde }
+export {
+  backPanel,
+  frontPanel,
+  frontOrganiserBase,
+  frontOrganiserFront,
+  lidOnePiece,
+  twoPieceLidTop,
+  twoPieceLidBottom,
+  strapAttachments,
+  bodyLiner,
+  sidePanel,
+  internalOrganiser,
+  Magde,
+  i18n,
+}

@@ -1,0 +1,59 @@
+coreSettings.t: Configuración del núcleo
+coreSettings.d: Estos ajustes no son específicos del diseño, sino que te permiten personalizar varios parámetros de la biblioteca central de FreeSewing, que genera el diseño por ti.
+designOptions.t: Estas opciones son específicas de este diseño. Puedes utilizarlas para personalizar tu patrón de diversas formas.
+paperless.t: Sin papel
+paperless.d: Los árboles son increíbles, y pegar patrones de costura no es muy divertido. Prueba nuestro modo sin papel para evitar por completo la necesidad de imprimir tu patrón.
+samm.t: Tamaño del margen de costura
+samm.d: Controla la cantidad de margen de costura utilizado en tu patrón
+sabool.t: Incluir margen de costura
+sabool.d: Controla si incluir o no margen de costura en tu patrón
+complete.t: Detalles
+complete.d: Controla qué tan detallado es el patrón. Ya sea un patrón completo con todos los detalles, o un esquema básico de las partes del patrón
+expand.t: Expand
+expand.d: Controls efforts to save paper. Disable this to expand all pattern parts at the cost of using more space.
+only.t: Piezas incluidas
+only.d: Utilízalo para controlar exactamente qué partes del patrón se incluirán en tu patrón
+locale.t: Idioma
+locale.d: Determina el idioma utilizado en tu patrón. Esto no influirá en el idioma del sitio web, sólo de este patrón específico.
+units.t: Unidades
+units.d: Este ajuste determina cómo se muestran las unidades en tu patrón
+margin.t: Margen
+margin.d: Controla el margen alrededor de las partes del patrón
+scale.t: Escala
+scale.d: Controla el ancho de línea general, el tamaño de fuente y otros elementos que no cambian de escala junto a las medidas del patrón
+de.t: Alemán
+de.d: Utilízalo para generar un patrón alemán
+en.t: Inglés
+en.d: Utilízalo para generar un patrón inglés
+es.t: Español
+es.d: Utilízalo para generar un patrón español
+fr.t: Francés
+fr.d: Utilízalo para generar un patrón francés
+nl.t: Holandés
+nl.d: Utilízalo para generar un patrón holandés
+yes: Yes
+no: No
+completeYes.t: Generar un patrón completo
+completeYes.d: Esto generará un patrón completo con todas las anotaciones, líneas y marcas. Utilízalo si no estás seguro de qué elegir.
+completeNo.t: Generar un esquema de patrón
+completeNo.d: Genera sólo el contorno de las piezas del patrón. Utilízalo si quieres utilizar una cortadora láser o tienes otras necesidades específicas.
+expandYes.t: Expand all pattern parts
+expandYes.d: This will generate a pattern where all pattern parts are drawn to their full size, even if they are simple rectangles.
+expandNo.t: Keep patterns parts compact where possible
+expandNo.d: This will draw a more dense representation of the pattern which includes all info without using up too much space & paper.
+paperlessNo.t: Generar un patrón regular
+paperlessNo.d: Esto generará un patrón regular, que luego podrás imprimir.
+paperlessYes.t: Generar un patrón sin papel
+paperlessYes.d: Esto genera un patrón con dimensiones y una cuadrícula, que te permite transferirlo sobre tela u otro soporte sin necesidad de imprimir el patrón.
+metric: Métrica
+imperial: Imperial
+metric.t: Utiliza unidades métricas
+metric.d: Utilízalo si usas el sistema métrico decimal, y los centímetros y milímetros son algo con lo que estás familiarizado. Esta es la mejor opción para la mayoría de la gente de todo el mundo.
+imperial.t: Utiliza unidades imperiales
+imperial.d: Utilízalo si las pulgadas y fracciones o centímetros te resultan más familiares que los centímetros. Suele ser la opción preferida por las personas que viven en el Reino Unido y EE.UU.
+saNo.t: No incluyas el margen de costura
+saNo.d: Esto genera un patrón que no incluye ningún margen de costura. El tamaño del margen de costura no importa, ya que no se incluirá ningún margen de costura.
+saYes.t: Incluir margen de costura
+saYes.d: Esto genera un patrón que incluirá el margen de costura. El tamaño del margen de costura se ajusta individualmente.
+clearSettingsNotMeasurements: Clear settings, but keep measurements
+clearSettingsAndMeasurements: Clear settings & Clear measurements

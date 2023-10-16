@@ -2,6 +2,7 @@ import chai from 'chai'
 import chaiString from 'chai-string'
 import { Svg } from '../src/svg.mjs'
 import { Design, Attributes } from '../src/index.mjs'
+import { Defs } from '../src/defs.mjs'
 import { version } from '../data.mjs'
 import render from './fixtures/render.mjs'
 
@@ -24,7 +25,7 @@ const getPattern = (settings = {}, draft = false) => {
           return part
         },
   }
-  const Pattern = new Design({ parts: [part] })
+  const Pattern = new Design({ parts: [part], noCorePlugins: true })
 
   return new Pattern(settings)
 }
@@ -42,7 +43,7 @@ describe('Svg', () => {
     expect(svg.freeId).to.equal(0)
     expect(svg.body).to.equal('')
     expect(svg.style).to.equal('')
-    expect(svg.defs).to.equal('')
+    expect(svg.defs).to.be.an.instanceof(Defs)
     expect(svg.prefix).to.equal('<?xml version="1.0" encoding="UTF-8" standalone="no"?>')
     expect(svg.attributes.get('xmlns')).to.equal('http://www.w3.org/2000/svg')
     expect(svg.attributes.get('xmlns:svg')).to.equal('http://www.w3.org/2000/svg')
@@ -198,7 +199,7 @@ describe('Svg', () => {
 
   it('Should render an Svg snippet', () => {
     const pattern = getPattern({}, ({ snippets, Snippet, Point, part }) => {
-      snippets.test = new Snippet('test', new Point(20, 20), 'This is a snippet')
+      snippets.test = new Snippet('test', new Point(20, 20))
 
       return part
     })
@@ -209,10 +210,7 @@ describe('Svg', () => {
 
   it('Should render a rotated Svg snippet', () => {
     const pattern = getPattern({}, ({ snippets, Snippet, Point, part }) => {
-      snippets.test = new Snippet('test', new Point(20, 20), 'This is a snippet').attr(
-        'data-rotate',
-        90
-      )
+      snippets.test = new Snippet('test', new Point(20, 20)).attr('data-rotate', 90)
 
       return part
     })
@@ -230,10 +228,7 @@ describe('Svg', () => {
 
   it('Should scale an Svg snippet', () => {
     const pattern = getPattern({}, ({ snippets, Snippet, Point, part }) => {
-      snippets.test = new Snippet('test', new Point(20, 20), 'This is a snippet').attr(
-        'data-scale',
-        2
-      )
+      snippets.test = new Snippet('test', new Point(20, 20)).attr('data-scale', 2)
 
       return part
     })

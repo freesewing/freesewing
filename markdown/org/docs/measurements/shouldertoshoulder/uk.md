@@ -1,7 +1,7 @@
 ---
-title: Shoulder to shoulder
+title: Ширина плечей
 ---
 
-The **shoulder to shoulder** measurement runs from the tip of your shoulder on one side across your back to the tip of your other shoulder.
+**Ширина плечей** — це вимір, що тягнеться від кінчика одного плеча через спину до кінчика протилежного плеча.
 
-To measure your **shoulder to shoulder** find the tip of your shoulder, the tip or corner of the protruding bone that is located where the top of the shoulder meets the side of the arm. It is also where the top of the shoulder seam sits and the sleeve begins on a well-fitting dress shirt. Then, measure from there across your back to the same point at the other side.
+Для зняття цієї мірки знайдіть кінчик Вашого плеча — кінчик витичної кістки, де плече переходить у руку. Це також місце, де знаходиться верхівка плечового шва на добре скроєній сорочці. Далі простягніть сантиметр від цієї точки через спину до такої ж точки протилежного плеча.

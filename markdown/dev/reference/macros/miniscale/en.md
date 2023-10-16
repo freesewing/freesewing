@@ -7,7 +7,8 @@ users to verify their pattern is printed to scale.
 The white inside of the box provides a metric scale, and the black outside
 of the box provides an imperial scale.
 
-The `miniscale` macro is provided by the [scalebox plugin](/reference/plugins/scalebox).
+The `miniscale` macro is provided by the [annotations 
+plugin](/reference/plugins/annotations).
 It is the mini version of [the scalebox macro](/reference/macros/scalebox/).
 
 ## Signature

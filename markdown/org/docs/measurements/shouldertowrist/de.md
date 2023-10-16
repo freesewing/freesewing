@@ -2,6 +2,6 @@
 title: Schulter bis Handgelenk
 ---
 
-The **shoulder to wrist** measurement determines your sleeve length, and runs from the tip of your shoulder along the arm to your wrist.
+Die Messung **von der Schulter bis zum Handgelenk** bestimmt deine Ärmellänge und verläuft von der Spitze deiner Schulter entlang des Arms bis zum Handgelenk.
 
-To measure your **shoulder to wrist** measurement, place your tape measure at the tip of your shoulder, the tip or corner of the protruding bone that is located where the top of the shoulder meets the side of the arm. It is also where the top of the shoulder seam sits and the sleeve begins on a well-fitting dress shirt. Let your arm hang naturally in a slight bend, and measure along your slightly bent arm up to your wrist.
+Um dein **Maß von der Schulter bis zum Handgelenk** zu messen, lege dein Maßband an der Spitze deiner Schulter an, der Spitze oder Ecke des hervorstehenden Knochens, der sich dort befindet, wo die Oberseite der Schulter auf die Seite des Arms trifft. Bei einem gut sitzenden Hemd ist das auch die Stelle, an der die Schulternaht endet und der Ärmel beginnt . Lass den Arm natürlich in einer leichten Kurve hängen und miss entlang des leicht gebogenen Armes bis zum Handgelenk.

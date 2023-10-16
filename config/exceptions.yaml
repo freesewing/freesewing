@@ -5,7 +5,8 @@ customBuild:
   - i18n
   - new-design
   - prettier-config
-  - plugin-bundle
+  - core-plugins
+  - react-components
   - rehype-jargon
   - rehype-highlight-lines
 skipTests:
@@ -31,6 +32,8 @@ packageJson:
     author: AlfaLyr (https://github.com/alfalyr)
   i18n:
     private: true
+  lab:
+    private: true
   lily:
     author: Anna Puk (https://github.com/anna-puk)
   lucy:
@@ -51,6 +54,7 @@ packageJson:
       - templates/**/*
       - index.mjs
       - package.json
+      - data.mjs
     module: '!'
   noble:
     author: woutervdub (https://github.com/woutervdub)
@@ -72,10 +76,6 @@ packageJson:
   sandy:
     author: AlfaLyr (https://github.com/alfalyr)
   tiberius: *starf
-  unice:
-    author: Anna Puk (https://github.com/anna-puk)
-  ursula:
-    author: Natalia Sayang (https://github.com/nataliasayang)
   waralee:
     author: woutervdub (https://github.com/woutervdub)
   walburga: *starf

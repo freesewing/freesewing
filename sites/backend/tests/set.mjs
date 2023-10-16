@@ -10,7 +10,7 @@ export const setTests = async (chai, config, expect, store) => {
         neck: 420,
       },
       public: true,
-      unittest: true,
+      test: true,
       imperial: true,
     },
     key: {
@@ -22,7 +22,7 @@ export const setTests = async (chai, config, expect, store) => {
       },
       public: false,
       img: cat,
-      unittest: true,
+      test: true,
       imperial: false,
     },
   }
@@ -54,10 +54,9 @@ export const setTests = async (chai, config, expect, store) => {
           .end((err, res) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(201)
-            expect(res.body.result).to.equal(`success`)
+            expect(res.body.result).to.equal(`created`)
             for (const [key, val] of Object.entries(data[auth])) {
-              if (!['measies', 'img', 'unittest'].includes(key))
-                expect(res.body.set[key]).to.equal(val)
+              if (!['measies', 'img', 'test'].includes(key)) expect(res.body.set[key]).to.equal(val)
             }
             store.set[auth] = res.body.set
             done()
@@ -121,14 +120,48 @@ export const setTests = async (chai, config, expect, store) => {
         })
       }
 
-      for (const field of ['chest', 'neck', 'ankle']) {
+      const rand = () => Math.ceil(Math.random() * 1000)
+      const testMeasies = {
+        chest: rand(),
+        neck: rand(),
+        ankle: rand(),
+      }
+      it(`${store.icon(
+        'set',
+        auth
+      )} Should update several measuremens at once (${auth})`, (done) => {
+        const data = { measies: testMeasies }
+        chai
+          .request(config.api)
+          .patch(`/sets/${store.set[auth].id}/${auth}`)
+          .set(
+            'Authorization',
+            auth === 'jwt'
+              ? 'Bearer ' + store.account.token
+              : 'Basic ' +
+                  new Buffer(`${store.account.apikey.key}:${store.account.apikey.secret}`).toString(
+                    'base64'
+                  )
+          )
+          .send(data)
+          .end((err, res) => {
+            expect(err === null).to.equal(true)
+            expect(res.status).to.equal(200)
+            expect(res.body.result).to.equal(`success`)
+            for (const m in testMeasies) {
+              expect(res.body.set.measies[m]).to.equal(data.measies[m])
+            }
+            done()
+          })
+      })
+
+      for (const field in testMeasies) {
         it(`${store.icon(
           'set',
           auth
         )} Should update the ${field} measurement (${auth})`, (done) => {
-          const data = { measies: {} }
-          const val = Math.ceil(Math.random() * 1000)
-          data.measies[field] = val
+          testMeasies[field] = rand()
+          const data = { measies: testMeasies }
           chai
             .request(config.api)
             .patch(`/sets/${store.set[auth].id}/${auth}`)
@@ -146,7 +179,9 @@ export const setTests = async (chai, config, expect, store) => {
               expect(err === null).to.equal(true)
               expect(res.status).to.equal(200)
               expect(res.body.result).to.equal(`success`)
-              expect(res.body.set.measies[field]).to.equal(val)
+              for (const m in testMeasies) {
+                expect(res.body.set.measies[m]).to.equal(data.measies[m])
+              }
               done()
             })
         })
@@ -326,8 +361,8 @@ export const setTests = async (chai, config, expect, store) => {
           )
           .end((err, res) => {
             expect(err === null).to.equal(true)
-            expect(res.status).to.equal(200)
-            expect(res.body.result).to.equal(`success`)
+            expect(res.status).to.equal(201)
+            expect(res.body.result).to.equal(`created`)
             expect(typeof res.body.error).to.equal(`undefined`)
             expect(typeof res.body.set.id).to.equal(`number`)
             done()
@@ -353,8 +388,8 @@ export const setTests = async (chai, config, expect, store) => {
           .end((err, res) => {
             if (store.set[auth].public) {
               expect(err === null).to.equal(true)
-              expect(res.status).to.equal(200)
-              expect(res.body.result).to.equal(`success`)
+              expect(res.status).to.equal(201)
+              expect(res.body.result).to.equal(`created`)
               expect(typeof res.body.error).to.equal(`undefined`)
               expect(typeof res.body.set.id).to.equal(`number`)
             } else {
@@ -366,7 +401,6 @@ export const setTests = async (chai, config, expect, store) => {
             done()
           })
       })
-
       // TODO:
       // - Clone set
       // - Clone set accross accounts of they are public

@@ -2,12 +2,12 @@ import fs from 'fs'
 import path from 'path'
 import axios from 'axios'
 import { unified } from 'unified'
-import markdown from 'remark-parse'
-import remark2rehype from 'remark-rehype'
-import format from 'rehype-format'
-import html from 'rehype-stringify'
+import remarkParse from 'remark-parse'
+import remarkRehype from 'remark-rehype'
+import rehypeFormat from 'rehype-format'
+import rehypeStringify from 'rehype-stringify'
+import remarkGfm from 'remark-gfm'
 import mustache from 'mustache'
-import nodemailer from 'nodemailer'
 import { testers } from '../config/newsletter-testers.mjs'
 import { fileURLToPath } from 'url'
 import { SESv2Client, SendEmailCommand } from '@aws-sdk/client-sesv2'
@@ -19,10 +19,11 @@ const backend = 'https://backend.freesewing.org/'
 
 const asHtml = async (text) => {
   const content = await unified()
-    .use(markdown)
-    .use(remark2rehype)
-    .use(format)
-    .use(html)
+    .use(remarkParse)
+    .use(remarkGfm)
+    .use(remarkRehype)
+    .use(rehypeFormat)
+    .use(rehypeStringify)
     .process(text)
 
   return content.value
@@ -34,7 +35,7 @@ const getToken = async () => {
     password: process.env.FS_PASSWORD,
   })
   if (res.data) return res.data.token
-  else if (res.err) return console.log(err)
+  else if (res.err) return console.log(res.err)
 }
 
 const getSubscribers = async (test = true) => {
@@ -65,13 +66,6 @@ const send = async (test = true) => {
   const subscribers = await getSubscribers(test)
   const content = await asHtml(text)
   const inject = { content }
-  const smtp = nodemailer.createTransport({
-    host: process.env.SMTP_HOST,
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASS,
-    },
-  })
 
   // Oh AWS your APIs are such a clusterfuck
   const client = new SESv2Client({ region: 'us-east-1' })
@@ -106,7 +100,7 @@ const send = async (test = true) => {
             },
             Subject: {
               Charset: 'utf-8',
-              Data: 'FreeSewing newsletter: Spring 2023',
+              Data: 'FreeSewing newsletter: Autumn 2023',
             },
           },
         },
@@ -118,30 +112,12 @@ const send = async (test = true) => {
         //FromEmailAddressIdentityArn: "arn:aws:ses:us-east-1:550348293871:identity/freesewing.org",
         //ReplyToAddresses: us,
       })
-      let result
       try {
-        result = await client.send(command)
+        await client.send(command)
       } catch (err) {
         console.log(err)
         return false
       }
-
-      // Via SMTP
-      /*
-      await smtp.sendMail({
-        from: '"FreeSewing" <info@freesewing.org>',
-        to: sub.email,
-        subject: 'FreeSewing newsletter: Summer 2022',
-        headers: {
-          Language: 'en',
-          'List-Owner': 'joost@joost.at',
-          'List-Subscribe': 'https://freesewing.org/community/newsletter/',
-          'List-Unsubscribe': unsub,
-        },
-        text,
-        html: body,
-      })
-      */
     }
     i++
   }

@@ -18,6 +18,6 @@ We willen niemand buitensluiten en we geloven dat _lichaam ≠ geslacht_. Daarom
 
 Iedereen kan welk patroon dan ook maken op onze site, zolang ze maar de benodigde afmetingen geven. Voor sommige patronen zijn metingen die alleen relevant zijn als je borsten hebt.
 
-##### How it applies to chest binding
+##### Hoe het van toepassing is op borstbinding
 
 If you are chest binding — effectively flattening your chest — use the **without breasts** patterns, and use the cirumference of your bound chest as [chest measurement](/docs/measurements/chest/)

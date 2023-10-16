@@ -1,0 +1,44 @@
+{
+  "t": "Sweat zippé à capuche Huey",
+  "d": "Huey est un sweat à capuche zippé avec poches avant optionnelles.",
+  "p": {
+    "back": "Back",
+    "cuff": "Cuff",
+    "front": "Front",
+    "hood": "Hood",
+    "pocket": "Pocket",
+    "sleeve": "Sleeve",
+    "waistband": "Waistband"
+  },
+  "s": {},
+  "o": {
+    "pocket": {
+      "t": "Poche",
+      "d": "S'il faut inclure une poche avant ou non"
+    },
+    "pocketHeight": {
+      "t": "Hauteur de la poche",
+      "d": "Contrôle la hauteur de la poche"
+    },
+    "hoodHeight": {
+      "t": "Hauteur de capuche",
+      "d": "Contrôle la hauteur de la capuche"
+    },
+    "hoodCutback": {
+      "t": "Coupe arrière de capuche",
+      "d": "Contrôle la courbure à l'arrière de la capuche"
+    },
+    "hoodClosure": {
+      "t": "Fermeture de capuche",
+      "d": "Contrôle la quantité de capuche sur la partie avant"
+    },
+    "hoodDepth": {
+      "t": "Profondeur du capuche",
+      "d": "Contrôle la profondeur de la capuche"
+    },
+    "hoodAngle": {
+      "t": "Angle de capuche",
+      "d": "Contrôle l'angle de fixation de la capuche"
+    }
+  }
+}

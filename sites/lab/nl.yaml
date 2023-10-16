@@ -1,0 +1,17 @@
+welcome: Welcome to the FreeSewing lab
+about: You can generate patterns here as well as manage your account. But unless you have a specific reason, you probably want to use FreeSewing.org instead.
+goToOrg: Go to FreeSewing.org
+what: What is the FreeSewing lab?
+what1: The FreeSewing lab started out as an online hosted version of our stand-alone development environment. It offers advanced features for pattern designers and contributors to develop and test patterns. Features that were not available on FreeSewing.org.
+what2: Since version 3 of FreeSewing, all these advanced features are available to users on FreeSewing.org.  which means that there is nothing here that you cannot also find on FreeSewing.org.
+what3: The lab nowadays is a stripped-down version of FreeSewing.org. It does not include documentation, blog or showcase posts, and so on.  We keep it arund because it is faster to spin up/deploy than the entire website, while still providing all the core features.
+monorepo: All of the FreeSewing source code is available in our monorepo on GitHub
+labrepo: In addition, this particular lab instance has additional source code hosted at
+lab: Source code specific to this lab
+fscode: "FreeSewing's source code"
+noDocs: The FreeSewing lab does not include documentation.
+see: Instead, refer to
+orgDocs: FreeSewing.org has documentation for makers, such as design options, sewing techniques, and instructions.
+devDocs: FreeSewing.dev has documentation for developers and contributors, such as API docs and guides on how to get involved with the project.
+enOnly: FreeSewing.dev is only available in English
+

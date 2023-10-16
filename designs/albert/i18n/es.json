@@ -1,0 +1,36 @@
+{
+  "t": "Albert, delantal",
+  "d": "Albert es un delantal.",
+  "p": {
+    "front": "Frente",
+    "pocket": "Bolsillo",
+    "strap": "Strap"
+  },
+  "s": {},
+  "o": {
+    "backOpening": {
+      "t": "Abertura de la espalda",
+      "d": "Controla la apertura en la parte trasera del Profeta"
+    },
+    "chestDepth": {
+      "t": "Longitud del Strp",
+      "d": "Controla la longitud de las correas"
+    },
+    "lengthBonus": {
+      "t": "Bonus de longitud",
+      "d": "Controla la longitud del buque"
+    },
+    "bibLength": {
+      "t": "Longitud de bib",
+      "d": "Controla la longitud de la bib"
+    },
+    "bibWidth": {
+      "t": "Ancho bib",
+      "d": "Controla el ancho de la bib"
+    },
+    "strapWidth": {
+      "t": "Strap width",
+      "d": "Controla el ancho de la correa"
+    }
+  }
+}

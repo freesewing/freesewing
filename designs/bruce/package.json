@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/bruce",
-  "version": "3.0.0-alpha.8",
+  "version": "3.0.0",
   "description": "A FreeSewing pattern for boxer briefs",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -27,10 +27,14 @@
   "type": "module",
   "module": "dist/index.mjs",
   "exports": {
-    ".": "./dist/index.mjs"
+    ".": {
+      "internal": "./src/index.mjs",
+      "default": "./dist/index.mjs"
+    }
   },
   "scripts": {
     "build": "node build.mjs",
+    "build:all": "yarn build",
     "clean": "rimraf dist",
     "mbuild": "NO_MINIFY=1 node build.mjs",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
@@ -40,19 +44,19 @@
     "tips": "node ../../scripts/help.mjs",
     "lint": "npx eslint 'src/**' 'tests/*.mjs'",
     "prettier": "npx prettier --write 'src/*.mjs' 'tests/*.mjs'",
-    "testci": "npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
-    "cibuild_step5": "node build.mjs",
+    "testci": "NODE_OPTIONS=\"--conditions=internal\" npx mocha tests/*.test.mjs --reporter ../../tests/reporters/terse.js",
     "wbuild": "node build.mjs",
-    "wcibuild_step5": "node build.mjs"
+    "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.8",
-    "@freesewing/plugin-bundle": "3.0.0-alpha.8"
+    "@freesewing/core": "3.0.0"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.2.0",
-    "chai": "4.2.0"
+    "chai": "4.3.9",
+    "@freesewing/models": "3.0.0",
+    "@freesewing/plugin-timing": "3.0.0"
   },
   "files": [
     "dist/*",
@@ -60,10 +64,10 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=8"
+    "node": "18",
+    "npm": "9"
   }
 }

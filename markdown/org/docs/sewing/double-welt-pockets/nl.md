@@ -47,8 +47,8 @@ De paspels zijn twee rechthoekige stroken stof met de volgende afmetingen:
 
 Voor ons voorbeeld:
 
-- Length: 13cm + 4cm = 17cm
-- Width: (0.5cm x 2) + 5cm = 6cm
+- Lengte: 13cm + 4cm = 17cm
+- Breedte: (0,5cm x 2) + 5cm = 6cm
 
 Deze vormen de twee smalle stroken stof die je paspelzak maken.
 
@@ -63,12 +63,12 @@ De tussenvoering voor de zak is een enkele rechthoekige strook kleefbare tussenv
 
 Voor ons voorbeeld:
 
-- Length: 13cm + 4cm = 17cm
-- Width: (0.5cm x 2) + 5cm = 6cm
+- Lengte: 13cm + 4cm = 17cm
+- Breedte: (0,5cm x 2) + 5cm = 6cm
 
 > Je hebt misschien opgemerkt dat de tussenvoering dezelfde afmeting heeft als een paspel
 
-The interfacing is used to stabilize the pocket, and will be fused to the fabric with your iron.
+De versteviging wordt gebruikt om de zak te stabiliseren en wordt met je strijkijzer aan de stof vastgemaakt.
 
 ### Optioneel: zakbeleg
 
@@ -79,8 +79,8 @@ Het (optionele) zakbeleg is een enkele rechthoekige strook stof met de volgende 
 
 Voor ons voorbeeld:
 
-- Length: 13cm + 4cm = 17cm
-- Width: (0.5cm x 2) + 5cm = 6cm
+- Lengte: 13cm + 4cm = 17cm
+- Breedte: (0,5cm x 2) + 5cm = 6cm
 
 > Je hebt misschien opgemerkt dat het beleg dezelfde afmeting heeft als een paspel
 

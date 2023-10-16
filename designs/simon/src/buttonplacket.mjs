@@ -12,7 +12,6 @@ function simonButtonPlacket({
   Snippet,
   snippets,
   complete,
-  paperless,
   macro,
   options,
   store,
@@ -56,8 +55,14 @@ function simonButtonPlacket({
     .line(points.placketBottomEdge)
 
   paths.seam = paths.saBase.clone().close().attr('class', 'fabric')
+  if (sa)
+    paths.sa = paths.saBase
+      .offset(sa * -1)
+      .line(new Point(points.placketBottomEdge.x + sa, points.placketBottomEdge.y + 3 * sa))
+      .line(new Point(points.placketBottomIn.x - sa, points.placketBottomIn.y + 3 * sa))
+      .close()
+      .attr('class', 'fabric sa')
 
-  // Complete pattern?
   if (complete) {
     // Placket help lines
     paths.placketOuterFold = new Path()
@@ -68,71 +73,66 @@ function simonButtonPlacket({
       snippet: 'notch',
       on: ['placketTopOut', 'placketBottomOut'],
     })
-
-    // Buttons
-    addButtons(part)
-
-    // Grainline
-    points.grainlineFrom = points.placketBottomEdge.shift(180, width / 2)
-    points.grainlineTo = points.placketTopEdge.shift(180, width / 2)
-    macro('grainline', {
-      from: points.grainlineFrom,
-      to: points.grainlineTo,
-    })
-
-    // Title
-    points.title = new Point(points.placketTopOut.x, points.cfArmhole.y)
-    macro('title', {
-      at: points.title,
-      nr: '1b',
-      title: 'buttonPlacket',
-      scale: 0.75,
-      rotation: -90,
-    })
-
-    // Logo
-    points.logo = points.title.shift(-90, 120)
-    snippets.logo = new Snippet('logo', points.logo)
-      .attr('data-scale', 0.5)
-      .attr('data-rotate', -90)
-
-    if (sa) {
-      paths.sa = paths.saBase
-        .offset(sa * -1)
-        .line(new Point(points.placketBottomEdge.x + sa, points.placketBottomEdge.y + 3 * sa))
-        .line(new Point(points.placketBottomIn.x - sa, points.placketBottomIn.y + 3 * sa))
-        .close()
-        .attr('class', 'fabric sa')
-    }
   }
 
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.placketTopIn,
-      to: points.placketTopOut,
-      y: points.placketTopIn.y - 15 - sa,
-    })
-    macro('hd', {
-      from: points.placketTopIn,
-      to: points.placketTopEdge,
-      y: points.placketTopIn.y - 30 - sa,
-    })
+  /*
+   * Annotations
+   */
+
+  // Buttons
+  addButtons(part)
+
+  // Grainline
+  points.grainlineFrom = points.placketBottomEdge.shift(180, width / 2)
+  points.grainlineTo = points.placketTopEdge.shift(180, width / 2)
+  macro('grainline', {
+    from: points.grainlineFrom,
+    to: points.grainlineTo,
+  })
+
+  // Title
+  points.title = new Point(points.placketTopOut.x, points.cfArmhole.y)
+  macro('title', {
+    at: points.title,
+    nr: '1b',
+    title: 'buttonPlacket',
+    scale: 0.75,
+    rotation: -90,
+  })
+
+  // Logo
+  points.logo = points.title.shift(-90, 120)
+  snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.5).attr('data-rotate', -90)
+
+  // Dimensions
+  macro('hd', {
+    id: 'wHalfPlacket',
+    from: points.placketTopIn,
+    to: points.placketTopOut,
+    y: points.placketTopIn.y - 15 - sa,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.placketTopIn,
+    to: points.placketTopEdge,
+    y: points.placketTopIn.y - 30 - sa,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.placketBottomEdge,
+    to: points.placketTopEdge,
+    x: points.placketTopEdge.x + 15 + sa,
+  })
+  points.button0 = points.placketTopEdge
+  let j
+  for (let i = 0; i < options.buttons; i++) {
+    j = i + 1
     macro('vd', {
-      from: points.placketBottomEdge,
-      to: points.placketTopEdge,
-      x: points.placketTopEdge.x + 15 + sa,
+      id: `hBetweenButtons${i}`,
+      from: points['button' + j],
+      to: points['button' + i],
+      x: points.placketTopIn.x - 15 - sa,
     })
-    points.button0 = points.placketTopEdge
-    let j
-    for (let i = 0; i < options.buttons; i++) {
-      j = i + 1
-      macro('vd', {
-        from: points['button' + j],
-        to: points['button' + i],
-        x: points.placketTopIn.x - 15 - sa,
-      })
-    }
   }
 
   return part

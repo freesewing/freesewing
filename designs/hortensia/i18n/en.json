@@ -1,0 +1,81 @@
+{
+  "t": "Hortensia handbag",
+  "d": "Hortensia is a handbag.",
+  "p": {
+    "top": "Top",
+    "bottom": "Bottom",
+    "bottomPanel": "Bottom panel",
+    "frontPanel": "Front panel",
+    "sidePanel": "Side panel",
+    "sidePanelReinforcement": "Side panel reinforcement",
+    "strap": "Strap",
+    "zipperPanel": "Zipper panel"
+  },
+  "s": {
+    "cutBottomPanel.t": "The bottom panel is not shown",
+    "cutBottomPanel.d": "The **Bottom panel** is a rectangular of {{{ width }}} wide and {{{ length }}} long.",
+    "cutFrontPanel.t": "The front panel is not shown",
+    "cutFrontPanel.d": "The **Front panel** is a rectangular of {{{ width }}} wide and {{{ length }}} long.",
+    "cutStrap.t": "The strap is not shown",
+    "cutStrap.d": "The **Strap** is a rectangular of {{{ width }}} wide and {{{ length }}} long.",
+    "cutStrapReducedSa.t": "The strap is not shown (and has reduced seam allowance)",
+    "cutStrapReducedSa.d": "The **Strap** is a rectangular of {{{ width }}} wide and {{{ length }}} long.",
+    "cutZipperPanel.t": "The zipper panel is not shown",
+    "cutZipperPanel.d": "The **Zipper panel** is a rectangular of {{{ width }}} wide and {{{ length }}} long.",
+    "strapLength": "Length of the handles",
+    "strapSaReduced.t": "The strap seam allowance is reduced",
+    "strapSaReduced.d": "Because of how narrow the strap is, we have reduced the seam allowance on it to be 80% of the strap width",
+    "handleWidth": "Width of the handles",
+    "zipperSize": "Standard zipper size"
+  },
+  "o": {
+    "size": {
+      "t": "Size",
+      "d": "Controls the overall size of the handbag"
+    },
+    "zipperSize": {
+      "t": "Zipper size",
+      "d": "Which size of zipper to use"
+    },
+    "zipperSize.#3": {
+      "t": "#3 zipper size",
+      "d": "#3 zippers have teeth that are 3mm wide"
+    },
+    "zipperSize.#4": {
+      "t": "#4 zipper size",
+      "d": "#4 zippers have teeth that are 4mm wide."
+    },
+    "zipperSize.#4.5": {
+      "t": "#4.5 zipper size",
+      "d": "#4.5 zippers have teeth that are 4.5mm wide."
+    },
+    "zipperSize.#5": {
+      "t": "#5 zipper size",
+      "d": "#5 zippers have teeth that are 5mm wide."
+    },
+    "zipperSize.#6": {
+      "t": "#6 zipper size",
+      "d": "#6 zippers have teeth that are 6mm wide."
+    },
+    "zipperSize.#8": {
+      "t": "#8 zipper size",
+      "d": "#8 zippers have teeth that are 8mm wide."
+    },
+    "zipperSize.#10": {
+      "t": "#10 zipper size",
+      "d": "#10 zippers have teeth that are 10mm wide."
+    },
+    "zipperSize.invisible": {
+      "t": "Invisible zipper",
+      "d": "An invisible zipper is a zipper that can be inserted in such a way that the teeth do not show."
+    },
+    "strapLength": {
+      "t": "Strap length",
+      "d": "Controls the length of the strap"
+    },
+    "handleWidth": {
+      "t": "Handle width",
+      "d": "Controls the width of the handle"
+    }
+  }
+}

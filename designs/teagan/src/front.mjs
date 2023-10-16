@@ -13,12 +13,9 @@ function teaganFront({
   snippets,
   options,
   measurements,
-  complete,
-  paperless,
   macro,
   log,
   units,
-  getId,
   part,
 }) {
   // Hide Brian paths
@@ -27,24 +24,26 @@ function teaganFront({
   // Adapt fit to waist
   if (options.curveToWaist) {
     let midWidth, lowerWidth
-    
-    midWidth = measurements.waist * (1 + options.curvedWaistEase)/4
-    lowerWidth = measurements.hips * (1 + options.hipsEase)/4
+
+    midWidth = (measurements.waist * (1 + options.curvedWaistEase)) / 4
+    lowerWidth = (measurements.hips * (1 + options.hipsEase)) / 4
     points.hem.x = lowerWidth
     points.hips.x = lowerWidth
     points.waist.x = midWidth
-    
+
     // control points should be somewhat evenly spaced around waist
     let cpAbove, cpBelow
     cpAbove = points.armhole.dy(points.waist) * 0.6
     cpBelow = points.hips.dy(points.waist) * 0.25
-    points.waistCp1 = points.waist.shift(90, cpBelow*2/3 - cpAbove/3)
-    points.waistCp2 = points.waist.shift(90, cpAbove*2/3 - cpBelow/3)
-    points.hipsCp2 = points.hips.shift(90,points.waist.dy(points.hips) * 0.3)
-    
+    points.waistCp1 = points.waist.shift(90, (cpBelow * 2) / 3 - cpAbove / 3)
+    points.waistCp2 = points.waist.shift(90, (cpAbove * 2) / 3 - cpBelow / 3)
+    points.hipsCp2 = points.hips.shift(90, points.waist.dy(points.hips) * 0.3)
+
     // warn if we're making a barrel-shaped shirt
     if (midWidth > lowerWidth) {
-      log.warning('width at waist exceeds width at hips; consider disabling the curve to waist option for a more standard shape')
+      log.warn(
+        'width at waist exceeds width at hips; consider disabling the curve to waist option for a more standard shape'
+      )
     }
   } else {
     let width
@@ -56,8 +55,6 @@ function teaganFront({
     points.waist.x = width
     points.waistCp2 = points.waist.shift(90, points.armhole.dy(points.waist) / 3)
   }
-  
-  
 
   // Clone cb (center back) into cf (center front)
   for (let key of ['Neck', 'Shoulder', 'Armhole', 'Hips', 'Hem']) {
@@ -85,21 +82,27 @@ function teaganFront({
   )
 
   // Log info for full length
-  log.info(['fullLengthFromHps', units(points.hps.dy(points.hem))])
+  store.flag.info({
+    msg: 'teagan:fullLengthFromHps',
+    replace: { length: units(points.hps.dy(points.hem)) },
+  })
+
+  // Store length of neck opening for finish
+  store.set(
+    'lengthFrontNeckOpening',
+    new Path().move(points.neck).curve(points.neckCp2, points.cfNeckCp1, points.cfNeck).length() * 2
+  )
 
   // Draw seamline
   paths.hemBase = new Path().move(points.cfHem).line(points.hem).hide()
   if (options.curveToWaist) {
     paths.sideSeam = new Path()
       .move(points.hem)
-      .curve(points.hipsCp2,points.waistCp1, points.waist)
-      .curve_(points.waistCp2,points.armhole)
+      .curve(points.hipsCp2, points.waistCp1, points.waist)
+      .curve_(points.waistCp2, points.armhole)
       .hide()
   } else {
-    paths.sideSeam = new Path()
-      .move(points.hem)
-      .curve_(points.waistCp2,points.armhole)
-      .hide()
+    paths.sideSeam = new Path().move(points.hem).curve_(points.waistCp2, points.armhole).hide()
   }
   paths.saBase = new Path()
     .move(points.armhole)
@@ -117,6 +120,15 @@ function teaganFront({
     .close()
     .attr('class', 'fabric')
 
+  if (sa)
+    paths.sa = new Path()
+      .move(points.cfHem)
+      .join(paths.hemBase.offset(sa * 3))
+      .join(paths.sideSeam.offset(sa))
+      .join(paths.saBase.offset(sa))
+      .line(points.cfNeck)
+      .attr('class', 'fabric sa')
+
   // Store front sleevecap length
   store.set(
     'frontArmholeLength',
@@ -127,89 +139,91 @@ function teaganFront({
       .length()
   )
 
-  // Complete pattern?
-  if (complete) {
-    macro('cutonfold', {
-      from: points.cfNeck,
-      to: points.cfHem,
-      grainline: true,
-    })
-    points.title = new Point(points.waist.x / 2, points.waist.y)
-    macro('title', { at: points.title, nr: 1, title: 'front' })
-    points.logo = points.title.shift(-90, 75)
-    snippets.logo = new Snippet('logo', points.logo)
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'fabric', onFold: true })
 
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.cfHem)
-        .join(paths.hemBase.offset(sa * 3))
-        .join(paths.sideSeam.offset(sa))
-        .join(paths.saBase.offset(sa))
-        .line(points.cfNeck)
-        .attr('class', 'fabric sa')
-    }
-  }
+  // Cutonfold
+  macro('cutonfold', {
+    from: points.cfNeck,
+    to: points.cfHem,
+    grainline: true,
+  })
 
-  // Paperless?
-  if (paperless) {
-    // These dimensions will be inherited by the back part
+  // Title
+  points.title = new Point(points.waist.x / 2, points.waist.y)
+  macro('title', { at: points.title, nr: 1, title: 'front' })
+
+  // Logo
+  points.logo = points.title.shift(-90, 75)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  // Dimensions
+  macro('hd', {
+    id: 'wAtHem',
+    from: points.cfHem,
+    to: points.hem,
+    y: points.hem.y + sa * 2.5 + 15,
+  })
+  if (options.curveToWaist) {
     macro('hd', {
-      from: points.cfHem,
+      id: 'wHemToWaist',
+      from: points.waist,
       to: points.hem,
-      y: points.hem.y + sa * 2.5 + 15,
+      y: points.hem.y + sa * 2.5 + 30,
     })
-    if (options.curveToWaist) {
-      macro('hd', {
-        from: points.waist,
-        to: points.hem,
-        y: points.hem.y + sa * 2.5 + 30
-      })
-      macro('vd', {
-        from: points.hem,
-        to: points.waist,
-        x: points.waist.x - 15,
-      })
-    }
     macro('vd', {
+      id: 'hHemToWaist',
       from: points.hem,
-      to: points.armhole,
-      x: points.armhole.x + sa + 15,
+      to: points.waist,
+      x: points.waist.x - 15,
     })
-    macro('vd', {
-      from: points.hem,
-      to: points.shoulder,
-      x: points.armhole.x + sa + 30,
-    })
-    macro('vd', {
-      from: points.hem,
-      to: points.neck,
-      x: points.armhole.x + sa + 45,
-    })
-    macro('hd', {
-      from: points.cfNeck,
-      to: points.neck,
-      y: points.neck.y - sa - 15,
-    })
-    macro('hd', {
-      from: points.cfNeck,
-      to: points.shoulder,
-      y: points.neck.y - sa - 30,
-    })
-    macro('hd', {
-      from: points.cfNeck,
-      to: points.armhole,
-      y: points.neck.y - sa - 45,
-    })
-    // These dimensions are only for the front
-    let id = getId()
-    macro('vd', {
-      id,
-      from: points.cfHem,
-      to: points.cfNeck,
-      x: points.cfHem.x - sa - 15,
-    })
-    store.set('frontOnlyDimensions', [id])
   }
+  macro('vd', {
+    id: 'hHemToArmhole',
+    from: points.hem,
+    to: points.armhole,
+    x: points.armhole.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hHemToShoulder',
+    from: points.hem,
+    to: points.shoulder,
+    x: points.armhole.x + sa + 30,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.hem,
+    to: points.neck,
+    x: points.armhole.x + sa + 45,
+  })
+  macro('hd', {
+    id: 'wFoldToHps',
+    from: points.cfNeck,
+    to: points.neck,
+    y: points.neck.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wFoldToShoulder',
+    from: points.cfNeck,
+    to: points.shoulder,
+    y: points.neck.y - sa - 30,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.cfNeck,
+    to: points.armhole,
+    y: points.neck.y - sa - 45,
+  })
+  // These dimensions are only for the front
+  macro('vd', {
+    id: 'hHemToNeck',
+    from: points.cfHem,
+    to: points.cfNeck,
+    x: points.cfHem.x - sa - 15,
+  })
 
   return part
 }

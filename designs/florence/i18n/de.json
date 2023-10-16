@@ -1,0 +1,22 @@
+{
+  "t": "Florence, der Mundschutz",
+  "d": "Florence ist ein Mundschutz.",
+  "p": {
+    "mask": "Mask"
+  },
+  "s": {},
+  "o": {
+    "height": {
+      "t": "Höhe",
+      "d": "Steuert die Höhe der Gesichtsmaske"
+    },
+    "length": {
+      "t": "Länge",
+      "d": "Steuert die Länge der Gesichtsmaske"
+    },
+    "curve": {
+      "t": "Krümmung",
+      "d": "Steuert die Krümmung der oberen Kante der Gesichtsmaske"
+    }
+  }
+}

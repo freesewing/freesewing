@@ -6,7 +6,7 @@ Die Skalierungsbox erlaubt dir zu überprüfen, ob dein Schnittmuster in der ric
 
 <Legend part="scalebox">
 
-The scale box
+Die Skalenbox
 
 </Legend>
 

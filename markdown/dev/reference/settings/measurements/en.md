@@ -39,3 +39,12 @@ const pattern = new Aaron({
 
 Measurements should always be specified in millimeter, unless it's an angle
 measurement (like `shoulderSlope`) which should be provided in degrees.
+
+<Tip>
+
+The `measurements` settings property is used to hold __all__ measurements,
+both regular measurements as well as any optional measurements.
+
+(There is no `optionalMeasurements` settings property.)
+
+</Tip>

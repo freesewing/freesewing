@@ -1,0 +1,26 @@
+{
+  "t": "Bob the bib",
+  "d": "This is the bib that you can create by following our design tutorial",
+  "p": {
+    "bib": "Bib"
+  },
+  "s": {},
+  "o": {
+    "neckRatio": {
+      "t": "Neck opening",
+      "d": "Controls the size of the neck opening relative to the bib size"
+    },
+    "widthRatio": {
+      "t": "Width",
+      "d": "Controls the width of the bib"
+    },
+    "lengthRatio": {
+      "t": "Length",
+      "d": "Controls the length of the bib"
+    },
+    "headSize": {
+      "t": "Head size",
+      "d": "The head circumference you want the bib to accomodate"
+    }
+  }
+}

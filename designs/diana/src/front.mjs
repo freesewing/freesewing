@@ -5,19 +5,17 @@ import { hidePresets } from '@freesewing/core'
 export function draftDianaFrontOrBack({
   measurements,
   sa,
+  store,
   points,
   Path,
   paths,
-  complete,
-  paperless,
   macro,
   options,
   Snippet,
   snippets,
   part,
 }) {
-  let front = true
-  if (typeof points.cfHem === 'undefined') front = false
+  const front = typeof points.cfHem === 'undefined' ? false : true
 
   for (let id in paths) delete paths[id]
 
@@ -82,83 +80,102 @@ export function draftDianaFrontOrBack({
 
   paths.seam = paths.hemBase.join(paths.saBase).line(points.cHem)
 
-  // Complete
-  if (complete) {
-    snippets.shoulderSeamEndNotch = new Snippet('notch', points.neck)
-    if (front) snippets.armholePitchNotch = new Snippet('notch', points.armholePitch)
-
-    macro('cutonfold', false)
-    macro('cutonfold', {
-      from: points.cNeck,
-      to: points.cHem,
-      grainline: true,
-    })
-
-    if (sa) {
-      paths.sa = paths.hemBase.offset(sa * 3).join(paths.saBase.offset(sa))
-      paths.sa.line(points.cNeck).move(points.cHem)
-      paths.sa.line(paths.sa.start())
-      paths.sa.attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = paths.hemBase.offset(sa * 3).join(paths.saBase.offset(sa))
+    paths.sa.line(points.cNeck).move(points.cHem)
+    paths.sa.line(paths.sa.start())
+    paths.sa.attr('class', 'fabric sa')
   }
 
-  // Paperless
-  if (paperless) {
-    macro('pd', {
-      path: new Path()
-        .move(points.armhole)
-        .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
-        .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
-        .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
-      d: sa + 15,
-    })
-    macro('pd', {
-      path: new Path()
-        .move(points.armholePitch)
-        .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
-      d: -15,
-    })
-    macro('vd', {
-      from: points.hips,
-      to: points.waist,
-      x: points.hips.x + sa + 15,
-    })
-    macro('vd', {
-      from: points.hips,
-      to: points.armhole,
-      x: points.hips.x + sa + 30,
-    })
-    macro('vd', {
-      from: points.hips,
-      to: points.armholePitch,
-      x: points.hips.x + sa + 45,
-    })
-    macro('vd', {
-      from: points.hips,
-      to: points.shoulder,
-      x: points.hips.x + sa + 60,
-    })
-    macro('vd', {
-      from: points.hips,
-      to: points.neck,
-      x: points.hips.x + sa + 75,
-    })
-    macro('ld', { from: points.neck, to: points.shoulder, d: sa + 15 })
-    macro('vd', {
-      from: points.cHem,
-      to: points.cNeck,
-      x: points.cHem.x - 15,
-    })
-    macro('hd', {
-      from: points.cHem,
-      to: points.hem,
-      y: points.cHem.y + 3 * sa + 15,
-    })
-    macro('pd', {
-      path: new Path().move(points.cNeck).curve(points.cfNeckCp1, points.neckCp2, points.neck),
-      d: -sa - 15,
-    })
-  }
+  /*
+   * Annotations
+   */
+
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'fabric', onFold: true })
+
+  // Notches
+  snippets.shoulderSeamEndNotch = new Snippet('notch', points.neck)
+  if (front) snippets.armholePitchNotch = new Snippet('notch', points.armholePitch)
+
+  // Cutonfold
+  macro('rmcutonfold')
+  macro('cutonfold', {
+    from: points.cNeck,
+    to: points.cHem,
+    grainline: true,
+  })
+
+  // Dimensions
+  macro('pd', {
+    id: 'lArmhole',
+    path: new Path()
+      .move(points.armhole)
+      .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
+      .curve(points.armholeHollowCp2, points.armholePitchCp1, points.armholePitch)
+      .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
+    d: sa + 15,
+  })
+  macro('pd', {
+    id: 'lArmholePitchToShoulder',
+    path: new Path()
+      .move(points.armholePitch)
+      .curve(points.armholePitchCp2, points.shoulderCp1, points.shoulder),
+    d: -15,
+  })
+  macro('vd', {
+    id: 'hHemToWaist',
+    from: points.hips,
+    to: points.waist,
+    x: points.hips.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hHemToArmhole',
+    from: points.hips,
+    to: points.armhole,
+    x: points.hips.x + sa + 30,
+  })
+  macro('vd', {
+    id: 'hHemToArmholePitch',
+    from: points.hips,
+    to: points.armholePitch,
+    x: points.hips.x + sa + 45,
+  })
+  macro('vd', {
+    id: 'hHemToShoulder',
+    from: points.hips,
+    to: points.shoulder,
+    x: points.hips.x + sa + 60,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.hips,
+    to: points.neck,
+    x: points.hips.x + sa + 75,
+  })
+  macro('ld', {
+    id: 'lShoulderSeam',
+    from: points.neck,
+    to: points.shoulder,
+    d: sa + 15,
+  })
+  macro('vd', {
+    id: 'hHemToCenterTop',
+    from: points.cHem,
+    to: points.cNeck,
+    x: points.cHem.x - 15,
+  })
+  macro('hd', {
+    id: 'wHem',
+    from: points.cHem,
+    to: points.hem,
+    y: points.cHem.y + 3 * sa + 15,
+  })
+  macro('pd', {
+    id: 'lNeckOpening',
+    path: new Path().move(points.cNeck).curve(points.cfNeckCp1, points.neckCp2, points.neck),
+    d: -sa - 15,
+  })
 
   return part
 }
@@ -203,6 +220,7 @@ export const front = {
     shoulderSeamLength: { pct: 35, min: 0.1, max: 60, menu: 'style' },
 
     armholeDepthFactor: { pct: 55, min: 50, max: 70, menu: 'advanced' },
+    armholeDepth: { pct: 0, min: 0, max: 20, menu: 'advanced' },
 
     frontArmholeDeeper: { pct: 0, min: 0, max: 1.5, menu: 'advanced' },
 

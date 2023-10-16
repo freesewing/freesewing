@@ -23,6 +23,7 @@ export function armholeToArmholePitch(points, Path) {
 export function dimensions(part, side) {
   const { macro, points, Path, sa, paths } = part.shorthand()
   macro('pd', {
+    id: 'lArmhole',
     path: new Path()
       .move(points.armhole)
       .curve(points.armholeCp2, points.armholeHollowCp1, points.armholeHollow)
@@ -31,28 +32,38 @@ export function dimensions(part, side) {
     d: sa + 15,
   })
   macro('pd', {
+    id: 'lShoulderToArmholePitch',
     path: paths[`${side}Armhole`],
     d: -15,
   })
   macro('vd', {
+    id: 'hHemToArmhole',
     from: points.hem,
     to: points.armhole,
     x: points.hips.x + sa + 15,
   })
   macro('vd', {
+    id: 'hHemToArmholePitch',
     from: points.hem,
     to: points.armholePitch,
     x: points.hips.x + sa + 30,
   })
   macro('vd', {
+    id: 'hHemToShoulder',
     from: points.hem,
     to: points.s3ArmholeSplit,
     x: points.hips.x + sa + 45,
   })
   macro('vd', {
+    id: 'hTotal',
     from: points.hem,
     to: points.s3CollarSplit,
     x: points.hips.x + sa + 60,
   })
-  macro('ld', { from: points.s3CollarSplit, to: points.s3ArmholeSplit, d: sa + 15 })
+  macro('ld', {
+    id: 'lShoulder',
+    from: points.s3CollarSplit,
+    to: points.s3ArmholeSplit,
+    d: sa + 15,
+  })
 }

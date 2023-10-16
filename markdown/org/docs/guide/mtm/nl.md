@@ -15,7 +15,7 @@ Het genereren van een naaipatroon op maat vereist een account.
 Voor de casual bezoeker die op onze website stummt, die
 een hoop frictie toevoegt voordat ze de website kunnen uitproberen.
 
-For this reason, we've added standard sizes since version 2.2.  
-We advise against using our standard sizes for actual garment construction.
+Om deze reden hebben we standaard maten toegevoegd sinds versie 2.2.  
+We raden af om onze standaardmaten te gebruiken voor het maken van kledingstukken.
 
 </Note>

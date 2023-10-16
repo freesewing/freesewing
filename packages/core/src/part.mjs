@@ -50,16 +50,23 @@ export function Part() {
  *
  * @return {object} part - A plain object representing the part
  */
-Part.prototype.asProps = function () {
+Part.prototype.asRenderProps = function () {
+  const paths = {}
+  for (const i in this.paths) paths[i] = this.paths[i].asRenderProps()
+  const points = {}
+  for (const i in this.points) points[i] = this.points[i].asRenderProps()
+  const snippets = {}
+  for (const i in this.snippets) snippets[i] = this.snippets[i].asRenderProps()
+
   return {
-    paths: this.paths,
-    points: this.points,
-    snippets: this.snippets,
-    attributes: this.attributes,
+    paths,
+    points,
+    snippets,
+    attributes: this.attributes.asRenderProps(),
     height: this.height,
     width: this.width,
-    bottomRight: this.bottomRight,
-    topLeft: this.topLeft,
+    bottomRight: this.bottomRight.asRenderProps(),
+    topLeft: this.topLeft.asRenderProps(),
   }
 }
 
@@ -119,11 +126,13 @@ Part.prototype.setHidden = function (hidden = false) {
  */
 Part.prototype.shorthand = function () {
   const complete = this.context.settings?.complete ? true : false
-  const paperless = this.context.settings?.paperless === true ? true : false
-  const sa = this.context.settings?.complete ? this.context.settings?.sa || 0 : 0
+  const expand = this.context.settings?.expand ? true : false
+  const paperless = this.context.settings?.paperless ? true : false
+  const sa = this.context.settings?.sa || 0
   const shorthand = {
     complete,
     context: this.context,
+    expand,
     getId: this.__getIdClosure(),
     log: this.context.store.log,
     paperless,
@@ -168,8 +177,8 @@ Part.prototype.shorthand = function () {
   shorthand.measurements = new Proxy(this.context.settings.measurements, {
     get: function (measurements, name) {
       if (typeof measurements[name] === 'undefined')
-        self.context.store.log.warning(
-          `Tried to access \`measurements.${name}\` but it is \`undefined\``
+        self.context.store.log.warn(
+          `${self.name} tried to access \`measurements.${name}\` but it is \`undefined\``
         )
       return Reflect.get(...arguments)
     },
@@ -178,9 +187,7 @@ Part.prototype.shorthand = function () {
   shorthand.options = new Proxy(this.context.settings.options, {
     get: function (options, name) {
       if (typeof options[name] === 'undefined')
-        self.context.store.log.warning(
-          `Tried to access \`options.${name}\` but it is \`undefined\``
-        )
+        self.context.store.log.warn(`Tried to access \`options.${name}\` but it is \`undefined\``)
       return Reflect.get(...arguments)
     },
     set: (options, name, value) => (self.context.settings.options[name] = value),
@@ -188,7 +195,7 @@ Part.prototype.shorthand = function () {
   shorthand.absoluteOptions = new Proxy(this.context.settings.absoluteOptions, {
     get: function (absoluteOptions, name) {
       if (typeof absoluteOptions[name] === 'undefined')
-        self.context.store.log.warning(
+        self.context.store.log.warn(
           `Tried to access \`absoluteOptions.${name}\` but it is \`undefined\``
         )
       return Reflect.get(...arguments)
@@ -295,6 +302,7 @@ Part.prototype.__getIdClosure = function () {
 
 /**
  * Copies point/path/snippet data from part orig into this
+ * Also sets the freeId, and copied store.parts[name] data
  *
  * @private
  * @param {object} orig - The original part to inject into this
@@ -307,6 +315,7 @@ Part.prototype.__inject = function (orig) {
     }
   }
 
+  this.freeId = orig.freeId
   for (let i in orig.points) this.points[i] = orig.points[i].clone()
   for (let i in orig.paths) {
     this.paths[i] = orig.paths[i].clone()
@@ -328,6 +337,14 @@ Part.prototype.__inject = function (orig) {
   for (let i in orig.snippets) {
     this.snippets[i] = orig.snippets[i].clone()
   }
+  /*
+   * This only supports what can be serialized
+   */
+  if (orig.context.store.parts?.[orig.name]) {
+    this.context.store.parts[this.name] = JSON.parse(
+      JSON.stringify(orig.context.store.parts[orig.name])
+    )
+  }
 
   return this
 }
@@ -342,7 +359,9 @@ Part.prototype.__macroClosure = function (props) {
   const self = this
   const method = function (key, args) {
     const macro = utils.__macroName(key)
-    if (typeof self[macro] === 'function') self[macro](args, props)
+    if (typeof self[macro] === 'function') return self[macro](args, props)
+    else if ('context' in self)
+      self.context.store.log.warn('Unknown macro `' + key + '` used in ' + self.name)
   }
 
   return method
@@ -358,7 +377,7 @@ Part.prototype.__unitsClosure = function () {
   const self = this
   const method = function (value) {
     if (typeof value !== 'number')
-      self.context.store.log.warning(
+      self.context.store.log.warn(
         `Calling \`units(value)\` but \`value\` is not a number (\`${typeof value}\`)`
       )
     return utils.units(value, self.context.settings.units)

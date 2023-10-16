@@ -4,8 +4,8 @@ title: Margen de costura
 
 Seam allowance is indicated by a dashed line, that has the same width and color as the seam they belong to:
 
-<Legend part="saLines"> Seam allowance for different fabric types </Legend>
+<Legend part="saLines"> Salto de costura para distintos tipos de tejido </Legend>
 
-Note that the corners of the seam allowance are trimmed, and not extended:
+Tenga en cuenta que las esquinas de la costura son recortadas, y no extendidas:
 
-<Legend part="sa"> A trimmed seam allowance corner </Legend>
+<Legend part="sa"> Una esquina de margen de costura recortada </Legend>

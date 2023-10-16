@@ -1,0 +1,47 @@
+{
+  "t": "Sandy cirkelrok",
+  "d": "Sandy is een veelzijdig patroon voor een cirkelrok.",
+  "p": {
+    "skirt": "Skirt",
+    "waistband": "Waistband"
+  },
+  "s": {},
+  "o": {
+    "waistbandWidth": {
+      "t": "Breedte tailleband",
+      "d": "De breedte van de tailleband."
+    },
+    "waistbandPosition": {
+      "t": "Positie tailleband",
+      "d": "Bepaalt de positie van de tailleband."
+    },
+    "waistbandShape": {
+      "t": "Vorm tailleband",
+      "d": "Wil je een rechte of gebogen tailleband?"
+    },
+    "circleRatio": {
+      "t": "Cirkel ratio",
+      "d": "Hoeveel procent van een cirkel wil je dat de rok is?"
+    },
+    "waistbandOverlap": {
+      "t": "Overlap Tailleband",
+      "d": "Hoeveel de tailleband overlapt."
+    },
+    "gathering": {
+      "t": "Fronsen",
+      "d": "Met hoeveel procent de bovenrand van de rok langer is dan de onderrand van de tailleband."
+    },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "Determines how long the skirt will be."
+    },
+    "seamlessFullCircle": {
+      "t": "Naadloze volledige cirkel",
+      "d": "Maakt een naadloze volle cirkelrok mogelijk."
+    },
+    "hemWidth": {
+      "t": "Breedte zoom",
+      "d": "Breedte van de zoom"
+    }
+  }
+}

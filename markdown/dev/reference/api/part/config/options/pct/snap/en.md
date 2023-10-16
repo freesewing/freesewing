@@ -82,15 +82,15 @@ myOption: {
 }
 ```
 
-### snap is a plain object with `metric` and `imperial` properties that each hold an array of numbers
+### snap is a plain object with `metric` and `imperial` properties that each hold either a number or an array of numbers
 
-In this case, the behavior is similar to when `snap` holds an array
+In this case, the behavior is similar to either when `snap` holds a number or when it holds an array
 of numbers.
 
-The difference is that this allows you to supply a different list of snap values
+The difference is that this allows you to supply a different multiple value or list of snap values
 for users using metric or imperial units.
 
-In the example below, the value of [settings.units](/reference/settings/units) will
+In the first example below, the value of [settings.units](/reference/settings/units) will
 determine which list of snap values gets used.
 
 Then, if the absolute value returned by `toAbs()` is in the
@@ -110,6 +110,31 @@ myOption: {
   }
 }
 ```
+
+In this second example, the value of [settings.units](/reference/settings/units) will
+determine which multiple value gets used.
+
+If set to `metric`, the absolute value of this option will be set to a multiple of `7`
+(so one of `0 mm`, `7 mm`, `14 mm`, `21 mm`, `28 mm`, `35 mm`, `42 mm`, ...).
+If set to `imperial`, the absolute value of this option will be set to a
+multiple of `25.4` (1 in.)
+(so one of `0 mm` (0 in.), `25.4 mm` (1 in.), `50.8 mm` (2 in.), `76.2 mm` (3 in.), ...).
+
+```js
+myOption: {
+  pct:5,
+  min: 0
+  max: 35,
+  snap: {
+    metric: 7,
+    imperial: 25.4,
+  }
+}
+```
+
+(Again, similar to when `snap` is set to a single number, the snap points
+will be distributed equally across the entire range, and
+the value will **always** be snapped,)
 
 <Comment by="joost">
 

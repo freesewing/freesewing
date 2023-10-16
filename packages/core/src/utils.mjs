@@ -2,6 +2,8 @@ import { Bezier } from 'bezier-js'
 import { Path } from './path.mjs'
 import { Point } from './point.mjs'
 
+export const goldenRatio = 1.618034
+
 //////////////////////////////////////////////
 //            PUBLIC  METHODS               //
 //////////////////////////////////////////////
@@ -109,6 +111,24 @@ export function beamsIntersect(a1, a2, b1, b2) {
 
     return new Point(x, y)
   }
+}
+
+/**
+ * Find the intersections between an endless line (beam) and a curve
+ *
+ *
+ * @param {Point} start - Start Point of the line
+ * @param {Point} end - End Point of the line
+ * @param {Point} from - Start Point of the curve
+ * @param {Point} cp1 - Control Point at the start of the curve
+ * @param {Point} cp2 - Control Point at the end of the curve
+ * @param {Point} to - End Point of the curve
+ * @return {Array} intersections - An array of Points at the intersections
+ */
+export function beamIntersectsCurve(start, end, from, cp1, cp2, to) {
+  let _start = new Point(start.x + (start.x - end.x) * 1000, start.y + (start.y - end.y) * 1000)
+  let _end = new Point(end.x + (end.x - start.x) * 1000, end.y + (end.y - start.y) * 1000)
+  return lineIntersectsCurve(_start, _end, from, cp1, cp2, to)
 }
 
 /**
@@ -288,16 +308,16 @@ export function deg2rad(degrees) {
  * @param {bool} flipX - Whether or not to flip/mirror along the X-axis
  * @param {bool} flipY - Whether or not to flip/mirror along the Y-axis
  * @param {Stack} stack - The Stack instance
- * @return {string} transform - The SVG transform value
+ * @return {String[]} transform - An array of SVG transform values
  */
-export const generateStackTransform = (
+export function generateStackTransform(
   x = 0,
   y = 0,
   rotate = 0,
   flipX = false,
   flipY = false,
   stack
-) => {
+) {
   const transforms = []
   let xTotal = x || 0
   let yTotal = y || 0
@@ -320,7 +340,7 @@ export const generateStackTransform = (
 
   // add the scaling to the transforms
   if (scaleX + scaleY < 2) {
-    transforms.push(`scale(${scaleX} ${scaleY})`)
+    transforms.push(`scale(${scaleX}, ${scaleY})`)
   }
 
   if (rotate) {
@@ -331,16 +351,13 @@ export const generateStackTransform = (
     }
 
     // add the rotation around the center to the transforms
-    transforms.push(`rotate(${rotate} ${center.x} ${center.y})`)
+    transforms.push(`rotate(${rotate}, ${center.x}, ${center.y})`)
   }
 
   // put the translation before any other transforms to avoid having to make complex calculations once the matrix has been rotated or scaled
-  if (xTotal !== 0 || yTotal !== 0) transforms.unshift(`translate(${xTotal} ${yTotal})`)
+  if (xTotal !== 0 || yTotal !== 0) transforms.unshift(`translate(${xTotal}, ${yTotal})`)
 
-  return {
-    transform: transforms.join(' '),
-    // 'transform-origin': `${center.x} ${center.y}`
-  }
+  return transforms
 }
 
 /**
@@ -424,6 +441,58 @@ export function lineIntersectsCurve(start, end, from, cp1, cp2, to) {
   if (intersections.length === 0) return false
   else if (intersections.length === 1) return intersections[0]
   else return intersections
+}
+
+/**
+ * Helper method to merge translation files from different designs
+ *
+ * @param {array} designs - One or more translation objects for designs
+ * @param {object} options - Configuration object for how to merge these designs
+ * @return {object} result - A merged object of translations
+ */
+export function mergeI18n(designs, options) {
+  const i18n = {}
+  for (const design of designs) {
+    for (const lang in design) {
+      const obj = design[lang]
+      if (typeof i18n[lang] === 'undefined') i18n[lang] = {}
+      if (obj.t) i18n[lang].t = obj.t
+      if (obj.d) i18n[lang].d = obj.d
+      for (const section of 'spo') {
+        if (obj[section]) {
+          if (typeof i18n[lang][section] === 'undefined') i18n[lang][section] = {}
+          for (const [key, val] of Object.entries(obj[section])) {
+            if (__keepTranslation(key, options?.[section])) i18n[lang][section][key] = val
+          }
+        }
+      }
+    }
+  }
+
+  return i18n
+}
+
+/**
+ * Helper method to merge passed in options with default options from the pattern config
+ *
+ * @param {object} settings - The settings passed to the pattern
+ * @param {object} optionsConfig - The pattern's options config
+ * @return {object} result - An object with the merged options and their values
+ */
+export function mergeOptions(settings = {}, optionsConfig) {
+  const merged = typeof settings.options === 'undefined' ? {} : { ...settings.option }
+  for (const [key, option] of Object.entries(optionsConfig)) {
+    if (typeof option === 'object') {
+      if (typeof option.pct !== 'undefined') merged[key] = option.pct / 100
+      else if (typeof option.mm !== 'undefined') merged[key] = option.mm
+      else if (typeof option.deg !== 'undefined') merged[key] = option.deg
+      else if (typeof option.count !== 'undefined') merged[key] = option.count
+      else if (typeof option.bool !== 'undefined') merged[key] = option.bool
+      else if (typeof option.dflt !== 'undefined') merged[key] = option.dflt
+    } else merged[key] = option
+  }
+
+  return merged
 }
 
 /**
@@ -626,7 +695,7 @@ export function __addNonEnumProp(obj, name, value) {
 export function __asNumber(value, param, method, log) {
   if (typeof value === 'number') return value
   if (typeof value === 'string') {
-    log.warning(
+    log.warn(
       `Called \`${method}(${param})\` but \`${param}\` is not a number. Will attempt to cast to Number`
     )
     try {
@@ -663,5 +732,200 @@ export function __isCoord(value) {
  * @return {string} macroName - The inernal macroName
  */
 export function __macroName(name) {
-  return `__macro_${name}`
+  return `__macro_${name.toLowerCase()}`
+}
+
+/**
+ * Returns true if we want to keep the translation
+ * Called by mergeI18n
+ *
+ * @private
+ * @param {string} key - The translation key
+ * @param {object} options - The options (for this particular section of the translation file)
+ * @return {bool} result - Whether or not to keep the translation
+ */
+function __keepTranslation(key, options) {
+  // Drop it?
+  if (options?.drop && options.drop.includes(key)) return false
+  // Keep only some and not this one?
+  if (options?.keep && !options.keep.includes(key)) return false
+
+  // Keep it
+  return true
+}
+
+/**
+ * Helper method to parse an (SVG) transform string
+ *
+ * @private
+ * @param {string} transform - The SVG transform string
+ * @return {object} result - An object with the parts, name, and values
+ */
+function __parseTransform(transform) {
+  const parts = transform.match(/(\w+)\(([^)]+)\)/)
+  const name = parts[1]
+  const values = parts[2].split(/,\s*/).map(parseFloat)
+
+  return { parts, name, values }
+}
+
+/**
+ * Applies a transformation of the given type to the matrix
+ * @param  {String} transformationType   the transformation type (tranlate, rotate, scale, skew, etc)
+ * @param  {Number[]} matrix             the matrix to apply the transform to
+ * @param  {Number[]} values             the transformation values to apply
+ * @return {Number[]}                    the transformed matrix
+ */
+function matrixTransform(transformationType, matrix, values) {
+  // Update matrix for transform
+  switch (transformationType) {
+    case 'matrix':
+      matrix = [
+        matrix[0] * values[0] + matrix[2] * values[1],
+        matrix[1] * values[0] + matrix[3] * values[1],
+        matrix[0] * values[2] + matrix[2] * values[3],
+        matrix[1] * values[2] + matrix[3] * values[3],
+        matrix[0] * values[4] + matrix[2] * values[5] + matrix[4],
+        matrix[1] * values[4] + matrix[3] * values[5] + matrix[5],
+      ]
+      break
+    case 'translate':
+      matrix[4] += matrix[0] * values[0] + matrix[2] * values[1]
+      matrix[5] += matrix[1] * values[0] + matrix[3] * values[1]
+      break
+    case 'scale':
+      matrix[0] *= values[0]
+      matrix[1] *= values[0]
+      matrix[2] *= values[1]
+      matrix[3] *= values[1]
+      break
+    case 'rotate': {
+      const angle = (values[0] * Math.PI) / 180
+      const centerX = values[1]
+      const centerY = values[2]
+
+      // if there's a rotation center, we need to move the origin to that center
+      if (centerX !== undefined) {
+        matrix = matrixTransform('translate', matrix, [centerX, centerY])
+      }
+
+      // rotate
+      const cos = Math.cos(angle)
+      const sin = Math.sin(angle)
+      matrix = [
+        matrix[0] * cos + matrix[2] * sin,
+        matrix[1] * cos + matrix[3] * sin,
+        matrix[0] * -sin + matrix[2] * cos,
+        matrix[1] * -sin + matrix[3] * cos,
+        matrix[4],
+        matrix[5],
+      ]
+
+      // move the origin back to origin
+      if (centerX !== undefined) {
+        matrix = matrixTransform('translate', matrix, [-centerX, -centerY])
+      }
+      break
+    }
+    case 'skewX':
+      matrix[2] += matrix[0] * Math.tan((values[0] * Math.PI) / 180)
+      matrix[3] += matrix[1] * Math.tan((values[0] * Math.PI) / 180)
+      break
+    case 'skewY':
+      matrix[0] += matrix[2] * Math.tan((values[0] * Math.PI) / 180)
+      matrix[1] += matrix[3] * Math.tan((values[0] * Math.PI) / 180)
+      break
+  }
+
+  return matrix
+}
+
+/**
+ * Combines an array of (SVG) transforms into a single matrix transform
+ *
+ * @param {array} transorms - The list of transforms to combine
+ * @return {string} matrixTransform - The combined matrix transform
+ */
+export function combineTransforms(transforms = []) {
+  // Don't bother if there are no part transforms
+  if (transforms.length < 1) return ''
+
+  // The starting matrix
+  let matrix = [1, 0, 0, 1, 0, 0]
+
+  // Loop through the transforms
+  for (let i = 0; i < transforms.length; i++) {
+    // Parse the transform string
+    const { name, values } = __parseTransform(transforms[i])
+    matrix = matrixTransform(name, matrix, values)
+  }
+
+  // Return the combined matrix transform
+  return 'matrix(' + matrix.join(', ') + ')'
+}
+
+/**
+ * Applies and (SVG) transform to a point's coordinates (x and y)
+ *
+ * @param {string} transorm - The transform to apply
+ * @param {Point} point - The point of which to update the coordinates
+ * @return {Point} point - The point with the transform applied to its coordinates
+ */
+export function applyTransformToPoint(transform, point) {
+  // Parse the transform string
+  const { name, values } = __parseTransform(transform)
+
+  // The starting matrix
+  let matrix = [1, 0, 0, 1, 0, 0]
+  matrix = matrixTransform(name, matrix, values)
+
+  // Apply the matrix transform to the coordinates
+  const newX = point.x * matrix[0] + point.y * matrix[2] + matrix[4]
+  const newY = point.x * matrix[1] + point.y * matrix[3] + matrix[5]
+
+  point.x = newX
+  point.y = newY
+
+  return point
+}
+
+/**
+ * Get the bounds of a given object after transforms have been applied
+ * @param  {Object}           boundsObj   any object with `topLeft` and `bottomRight` properties
+ * @param  {Boolean|String[]} transforms  the transforms to apply to the bounds, structured as they would be for being applied as an svg attribute
+ * @return {Object}                       `tl` and `br` for the transformed bounds
+ */
+export function getTransformedBounds(boundsObj, transforms = false) {
+  if (!boundsObj.topLeft) return {}
+  // get all corners of the part's bounds
+  let tl = boundsObj.topLeft
+  let br = boundsObj.bottomRight
+  let tr = new Point(br.x, tl.y)
+  let bl = new Point(tl.x, br.y)
+
+  // if there are transforms on the part, apply them to the corners so that we have the correct bounds
+  if (transforms) {
+    const combinedTransform = combineTransforms(transforms)
+
+    tl = applyTransformToPoint(combinedTransform, tl.copy())
+    br = applyTransformToPoint(combinedTransform, br.copy())
+    tr = applyTransformToPoint(combinedTransform, tr.copy())
+    bl = applyTransformToPoint(combinedTransform, bl.copy())
+  }
+
+  // now get the top left and bottom right after transforms
+  const transformedTl = new Point(
+    Math.min(tl.x, br.x, bl.x, tr.x),
+    Math.min(tl.y, br.y, bl.y, tr.y)
+  )
+
+  const transformedBr = new Point(
+    Math.max(tl.x, br.x, bl.x, tr.x),
+    Math.max(tl.y, br.y, bl.y, tr.y)
+  )
+
+  return {
+    tl: transformedTl,
+    br: transformedBr,
+  }
 }

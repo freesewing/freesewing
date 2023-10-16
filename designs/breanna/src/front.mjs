@@ -29,8 +29,6 @@ function draftBreannaFront({
   Path,
   paths,
   sa,
-  complete,
-  paperless,
   macro,
   snippets,
   Snippet,
@@ -138,116 +136,134 @@ function draftBreannaFront({
     .line(points.primaryBustDart2)
     .attr('class', 'fabric dotted stroke-sm')
 
-  // All done. Just set final path properties before we get to SA/final/paperless
+  if (sa) paths.sa = paths.saBase.offset(sa).attr('class', 'sa')
+
+  // All done. Just set final path properties.
   paths.seam.close().attr('class', 'fabric')
   paths.saBase.close().hide()
+
+  /*
+   * Annotations
+   */
 
   // Anchor point
   points.gridAnchor = points.cfNeck.clone()
 
-  // Complete pattern?
-  if (complete) {
-    // Logo
-    points.logo = points.cfNeck.shift(-60, 70)
-    snippets.logo = new Snippet('logo', points.logo)
+  // CutonfoldAndGrainline
+  macro('cutonfold', {
+    from: points.cfNeck,
+    to: points.cfWaist,
+    grainline: true,
+  })
 
-    // Title
-    points.title = points.logo.shift(-90, 70)
-    macro('title', { nr: 2, title: 'front', at: points.title })
+  // Cut list
+  store.cutlist.addCut({ cut: 1, from: 'fabric', onFold: true })
 
-    // Notches
-    snippets.bustNotch = new Snippet('notch', points.bustPoint)
-    snippets.armholePitch = new Snippet('notch', points.armholePitch)
+  // Logo
+  points.logo = points.cfNeck.shift(-60, 70)
+  snippets.logo = new Snippet('logo', points.logo)
 
-    if (sa) paths.sa = paths.saBase.offset(sa).attr('class', 'sa')
-  }
+  // Title
+  points.title = points.logo.shift(-90, 70)
+  macro('title', { nr: 2, title: 'front', at: points.title })
 
-  // Paperless?
-  if (paperless) {
-    let tl = paths.seam.edge('topLeft')
-    let br = paths.seam.edge('bottomRight')
-    macro('vd', {
-      from: points.cfWaist,
-      to: points.bustPoint,
-      x: tl.x - 15 - sa,
-    })
-    macro('vd', {
-      from: points.cfWaist,
-      to: points.cfNeck,
-      x: tl.x - 30 - sa,
-    })
-    macro('vd', {
-      from: points.cfWaist,
-      to: points.hps,
-      x: tl.x - 45 - sa,
-    })
-    macro('vd', {
-      from: points.waist,
-      to: points.armhole,
-      x: br.x + 15 + sa,
-    })
-    macro('vd', {
-      from: points.waist,
-      to: points.armholePitch,
-      x: br.x + 30 + sa,
-    })
-    macro('vd', {
-      from: points.waist,
-      to: points.shoulder,
-      x: br.x + 45 + sa,
-    })
-    macro('vd', {
-      from: points.waist,
-      to: points.hps,
-      x: br.x + 60 + sa,
-    })
-    macro('hd', {
-      from: points.cfNeck,
-      to: points.hps,
-      y: tl.y - 15 - sa,
-    })
-    macro('hd', {
-      from: points.cfNeck,
-      to: points.shoulder,
-      y: tl.y - 30 - sa,
-    })
-    macro('hd', {
-      from: points.cfNeck,
-      to: points.armhole,
-      y: tl.y - 30 - sa,
-    })
-    macro('hd', {
-      from: points.cfWaist,
-      to: points.bustPoint,
-      y: br.y + 15 + sa,
-    })
-    macro('hd', {
-      from: points.cfWaist,
-      to: points.waist,
-      y: br.y + 30 + sa,
-    })
+  // Notches
+  snippets.bustNotch = new Snippet('notch', points.bustPoint)
+  snippets.armholePitch = new Snippet('notch', points.armholePitch)
+
+  let tl = paths.seam.edge('topLeft')
+  let br = paths.seam.edge('bottomRight')
+  macro('vd', {
+    id: 'hHemToBustPoint',
+    from: points.cfWaist,
+    to: points.bustPoint,
+    x: tl.x - 15 - sa,
+  })
+  macro('vd', {
+    id: 'hHemToNeckOpeningBottom',
+    from: points.cfWaist,
+    to: points.cfNeck,
+    x: tl.x - 30 - sa,
+  })
+  macro('vd', {
+    id: 'hHemToHps',
+    from: points.cfWaist,
+    to: points.hps,
+    x: tl.x - 45 - sa,
+  })
+  macro('vd', {
+    id: 'hHemToBustDartTip',
+    from: points.waist,
+    to: points.armhole,
+    x: br.x + 15 + sa,
+  })
+  macro('vd', {
+    id: 'hHemToArmholePitch',
+    from: points.waist,
+    to: points.armholePitch,
+    x: br.x + 30 + sa,
+  })
+  macro('vd', {
+    id: 'hHemToShoulder',
+    from: points.waist,
+    to: points.shoulder,
+    x: br.x + 45 + sa,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.waist,
+    to: points.hps,
+    x: br.x + 60 + sa,
+  })
+  macro('hd', {
+    id: 'wCFrontToHps',
+    from: points.cfNeck,
+    to: points.hps,
+    y: tl.y - 15 - sa,
+  })
+  macro('hd', {
+    id: 'wCFrontToShoulder',
+    from: points.cfNeck,
+    to: points.shoulder,
+    y: tl.y - 30 - sa,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.cfNeck,
+    to: points.armhole,
+    y: tl.y - 45 - sa,
+  })
+  macro('hd', {
+    id: 'wCFrontToWaistDartCenter',
+    from: points.cfWaist,
+    to: points.bustPoint,
+    y: br.y + 15 + sa,
+  })
+  macro('hd', {
+    id: 'wHemFull',
+    from: points.cfWaist,
+    to: points.waist,
+    y: br.y + 30 + sa,
+  })
+  macro('ld', {
+    id: 'wWaistDart',
+    from: points.primaryBustDart1,
+    to: points.primaryBustDart2,
+    d: 15,
+  })
+  macro('ld', {
+    id: 'lWaistDartSide',
+    from: points.primaryBustDart2,
+    to: points.primaryBustDartTip,
+    d: -15,
+  })
+  if (loc2 !== 0 && loc1 !== loc2) {
     macro('ld', {
-      from: points.primaryBustDart1,
-      to: points.primaryBustDart2,
+      id: 'lBustDartSide',
+      from: points.secondaryBustDartTip,
+      to: points.secondaryBustDart2,
       d: 15,
     })
-    macro('ld', {
-      from: points.primaryBustDart2,
-      to: points.primaryBustDartTip,
-      d: 15,
-    })
-    macro('ld', {
-      from: points.primaryBustDart2,
-      to: points.primaryBustDartTip,
-      d: 15,
-    })
-    if (loc2 !== 0 && loc1 !== loc2) {
-      macro('ld', {
-        from: points.secondaryBustDart2,
-        to: points.secondaryBustDartTip,
-        d: 15,
-      })
-    }
   }
 
   return part

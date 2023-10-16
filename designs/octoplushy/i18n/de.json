@@ -1,0 +1,52 @@
+{
+  "t": "Octoplushy, der Oktopus",
+  "d": "Ein mehrarmiger Begleiter für Umarmungen der nächsten Kategorie",
+  "p": {
+    "armSection1": "Arm section 1",
+    "armSection2": "Arm section 2",
+    "eye1": "Eye 1",
+    "eye2": "Eye 2",
+    "eye3": "Eye 3",
+    "headSection1": "Head section 1",
+    "headSection2": "Head section 2"
+  },
+  "s": {},
+  "o": {
+    "size": {
+      "t": "Größe",
+      "d": "Steuert die Gesamtgröße"
+    },
+    "type": {
+      "t": "Art",
+      "d": "Erlaubt es dir, zwischen den Varianten dieses Designs zu wählen"
+    },
+    "armWidth": {
+      "t": "Armbreite",
+      "d": "Steuert die Breite der Arme"
+    },
+    "armLength": {
+      "t": "Armlänge",
+      "d": "Steuert die Länge der Arme"
+    },
+    "neckWidth": {
+      "t": "Halsbreite",
+      "d": "Bestimmt die Breite am Hals"
+    },
+    "armTaper": {
+      "t": "Armabschrägung",
+      "d": "Steuert, wie stark die Arme abgeschrägt sind"
+    },
+    "bottomTopArmRatio": {
+      "t": "Verhältnis Arme Unten/Oben",
+      "d": "FIXME: Keine Ahnung, was dies macht"
+    },
+    "bottomArmReduction": {
+      "t": "Reduktion des unteren Arms",
+      "d": "FIXME: Keine Ahnung, was dies macht"
+    },
+    "bottomArmReductionPlushy": {
+      "t": "Reduktion des unteren Arms (plüschig)",
+      "d": "FIXME: Keine Ahnung, was dies macht"
+    }
+  }
+}

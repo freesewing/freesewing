@@ -31,7 +31,7 @@ describe('Pattern', () => {
     pattern.draft()
     expect(pattern.setStores[0].logs.error.length).to.equal(1)
     expect(pattern.setStores[0].logs.error[0]).to.equal(
-      'Unable to draft pattern part __test__. Part.draft() is not callable'
+      'Unable to draft pattern part `test`. Part.draft() is not callable'
     )
   })
 
@@ -45,7 +45,7 @@ describe('Pattern', () => {
     pattern.draft()
     expect(pattern.setStores[0].logs.error.length).to.equal(1)
     expect(pattern.setStores[0].logs.error[0]).to.equal(
-      'Result of drafting part test was undefined. Did you forget to return the part?'
+      'Result of drafting part `test` was undefined. Did you forget to return the part?'
     )
   })
 
@@ -61,9 +61,7 @@ describe('Pattern', () => {
     const design = new Design({ parts: [test, you] })
     const pattern = new design({ only: ['you'] })
     pattern.draft()
-    expect(pattern.setStores[0].logs.debug).to.include(
-      'Part `test` is not needed. Skipping draft and setting hidden to `true`'
-    )
+    expect(pattern.setStores[0].logs.debug).to.include('Part `test` is not needed. Skipping part')
   })
 
   it('Should return the initialized config', () => {
@@ -84,14 +82,14 @@ describe('Pattern', () => {
       draft: ({ part }) => part,
     }
     const plugin = { name: 'test' }
-    const design = new Design({ parts: [test] })
-    const pattern = new design({ only: ['you'] })
+    const design = new Design({ parts: [test], noCorePlugins: true })
+    const pattern = new design({ only: ['you'], noCorePlugins: true })
     pattern.use(plugin)
     pattern.use(plugin)
     pattern.use({ plugin })
     pattern.use({ plugin })
-    expect(Object.keys(pattern.plugins).length).to.equal(1)
-    expect(Object.keys(pattern.plugins)[0]).to.equal('test')
+    expect(Object.keys(pattern.plugins.plugins)).to.have.lengthOf(1)
+    expect(Object.keys(pattern.plugins.plugins)[0]).to.equal('test')
   })
 
   it('Should log an error of added parts do not have a draft method', () => {
@@ -158,10 +156,9 @@ describe('Pattern', () => {
     const pattern = new design()
     pattern.draft().render()
     expect(pattern.setStores[0].logs.error.length).to.equal(1)
-    expect(pattern.setStores[0].logs.error[0][0]).to.equal('Unable to draft part `test` (set 0)')
+    expect(pattern.setStores[0].logs.error[0][0]).to.equal('Unable to draft part `test` (set `0`)')
   })
 
-  // FIXME: Add assertions here
   it('Handle layout object', () => {
     const part = {
       name: 'test',
@@ -176,7 +173,7 @@ describe('Pattern', () => {
       layout: { stacks: { test: { flipX: true } }, width: 300, height: 400 },
     })
     const props = pattern.draft().getRenderProps()
-    expect(props.stacks.test.attributes.get('transform')).to.equal('scale(-1 1)')
+    expect(props.stacks.test.attributes.list.transform[0]).to.equal('scale(-1, 1)')
     expect(props.width).to.equal(300)
     expect(props.height).to.equal(400)
   })

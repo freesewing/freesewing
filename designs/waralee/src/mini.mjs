@@ -78,42 +78,49 @@ function waraleeMini({ options, Path, points, paths, complete, sa, macro, store,
       : points.bWaistBackOverlap
 
     macro('hd', {
+      id: 1,
       from: points.fWaistFrontOverlap,
       to: fWaistSide,
       y: fWaistSide.y + 10,
       text: part.units(fWaistSide.dist(points.fWaistFrontOverlap) * mini),
     })
     macro('hd', {
+      id: 2,
       from: points.fLegFrontOverlap,
       to: points.bLegBackOverlap,
       y: points.bLegBackOverlap.y - 10,
       text: part.units(points.fLegFrontOverlap.dist(points.bLegBackOverlap) * mini),
     })
     macro('hd', {
+      id: 3,
       from: points.bWaistBack,
       to: points.bWaistBackOverlap,
       y: points.bWaistBackOverlap.y + 20,
       text: part.units(points.bWaistBackOverlap.dist(points.bWaistBack) * mini),
     })
     macro('hd', {
+      id: 4,
       from: points.fWaistFrontOverlap,
       to: points.mHip,
       y: points.mHip.y + 10,
       text: part.units((points.mHip.x - points.fWaistFrontOverlap.x) * mini),
     })
     macro('vd', {
+      id: 5,
       from: fWaistFrontOverlap,
       to: points.fLegFrontOverlap,
       x: points.fLegFrontOverlap.x + 10,
       text: part.units(fWaistFrontOverlap.dist(points.fLegFrontOverlap) * mini),
     })
     macro('vd', {
+      id: 6,
       from: points.bLegBackOverlap,
       to: bWaistBackOverlap,
       x: points.bLegBackOverlap.x - 10,
       text: part.units(bWaistBackOverlap.dist(points.bLegBackOverlap) * mini),
     })
     macro('vd', {
+      id: 7,
       from: points.bLegBackOverlap,
       to: bWaistSide,
       x: bWaistSide.x + 10,
@@ -122,12 +129,14 @@ function waraleeMini({ options, Path, points, paths, complete, sa, macro, store,
 
     if (options.frontPocket && 'welt' == options.frontPocketStyle) {
       macro('hd', {
+        id: 8,
         from: fWaistFrontOverlap,
         to: points.frontPocketBottom2,
         y: points.frontPocketBottom2.y + 20,
         text: part.units((points.frontPocketBottom2.x - fWaistFrontOverlap.x) * mini),
       })
       macro('vd', {
+        id: 9,
         from: fWaistFrontOverlap,
         to: points.frontPocketBottom2,
         x: points.frontPocketBottom2.x + 20,
@@ -137,12 +146,14 @@ function waraleeMini({ options, Path, points, paths, complete, sa, macro, store,
 
     if (options.backPocket) {
       macro('hd', {
+        id: 10,
         from: points.backPocketRight,
         to: bWaistBackOverlap,
         y: bWaistBackOverlap.y + 40,
         text: part.units((bWaistBackOverlap.x - points.backPocketRight.x) * mini),
       })
       macro('vd', {
+        id: 11,
         from: bWaistBackOverlap,
         to: points.backPocketRight,
         x: points.backPocketRight.x,

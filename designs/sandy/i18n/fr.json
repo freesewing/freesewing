@@ -1,0 +1,47 @@
+{
+  "t": "Jupe cercle Sandy",
+  "d": "Sandy est un patron de jupe cercle adaptable.",
+  "p": {
+    "skirt": "Skirt",
+    "waistband": "Waistband"
+  },
+  "s": {},
+  "o": {
+    "waistbandWidth": {
+      "t": "Largeur de ceinture",
+      "d": "Contrôle la largeur de la ceinture."
+    },
+    "waistbandPosition": {
+      "t": "Position de ceinture",
+      "d": "Contrôle la position de la ceinture."
+    },
+    "waistbandShape": {
+      "t": "Forme de ceinture",
+      "d": "Si vous voulez une ceinture droite ou bien de forme particulière."
+    },
+    "circleRatio": {
+      "t": "Ratio circulaire",
+      "d": "Le pourcentage d'un cercle auquel vous souhaitez que la jupe corresponde."
+    },
+    "waistbandOverlap": {
+      "t": "Chevauchement de la ceinture",
+      "d": "Le montant par lequel la taille se chevauche."
+    },
+    "gathering": {
+      "t": "Fronçage",
+      "d": "Le pourcent par lequel le tissu du haut de la jupe est plus long que celui du bas de la ceinture."
+    },
+    "lengthBonus": {
+      "t": "Length bonus",
+      "d": "Determines how long the skirt will be."
+    },
+    "seamlessFullCircle": {
+      "t": "Cercle entier sans couture",
+      "d": "Permet une jupe totalement circulaire sans couture."
+    },
+    "hemWidth": {
+      "t": "Hem width",
+      "d": "Largeur de l'ourlet"
+    }
+  }
+}

@@ -1,0 +1,59 @@
+coreSettings.t: Paramètres de base
+coreSettings.d: Ces réglages ne sont pas spécifiques au dessin, mais te permettent plutôt de personnaliser divers paramètres de la bibliothèque de base de FreeSewing, qui génère le dessin pour toi.
+designOptions.t: Ces options sont spécifiques à ce modèle. Tu peux les utiliser pour personnaliser ton motif de différentes manières.
+paperless.t: Sans papier
+paperless.d: Les arbres, c'est génial, et assembler des patrons de couture avec du ruban adhésif, ce n'est pas très amusant. Essaie notre mode sans papier pour éviter d'avoir à imprimer complètement ton patron.
+samm.t: Taille de la marge de couture
+samm.d: Contrôle la quantité de marge de couture utilisée dans ton patron.
+sabool.t: Inclure la marge de couture
+sabool.d: Contrôle l'inclusion ou non de la marge de couture dans le patron
+complete.t: Détails
+complete.d: Contrôle à quel point votre patron est détaillé ; soit un patron complet avec tous les détails, ou simplement les contours des parties du patron
+expand.t: Expand
+expand.d: Controls efforts to save paper. Disable this to expand all pattern parts at the cost of using more space.
+only.t: Pièces incluses
+only.d: Utilise ceci pour contrôler exactement les parties du modèle qui seront incluses dans ton modèle
+locale.t: Langue
+locale.d: Détermine la langue utilisée sur ton motif. Cela n'influencera pas la langue du site Internet, mais seulement celle de ce patron spécifique.
+units.t: Unités
+units.d: Ce réglage détermine la façon dont les unités sont affichées sur ton modèle.
+margin.t: Marges
+margin.d: Contrôle la marge autour des pièces du patron
+scale.t: Mise à l'échelle
+scale.d: Contrôle la largeur de la ligne de contour, la taille de police et les autres éléments dont la valeur est indépendante des mesures du patron
+de.t: Allemand
+de.d: Utilise ceci pour générer un modèle allemand
+en.t: Anglais
+en.d: Utilise ceci pour générer un modèle anglais
+es.t: Espagnol
+es.d: Utilise ceci pour générer un modèle espagnol
+fr.t: Français
+fr.d: Utilise ceci pour générer un modèle français
+nl.t: Néerlandais
+nl.d: Utilise ceci pour générer un modèle hollandais
+yes: Yes
+no: No
+completeYes.t: Génère un modèle complet
+completeYes.d: Cela générera un modèle complet avec toutes les notations, les lignes et les marques. Utilise cette fonction si tu n'es pas certain de ce que tu dois choisir.
+completeNo.t: Génère une ébauche de modèle
+completeNo.d: Ne génère que le contour des pièces du modèle. Utilise cette option si tu souhaites utiliser une découpeuse laser ou si tu as d'autres besoins spécifiques.
+expandYes.t: Expand all pattern parts
+expandYes.d: This will generate a pattern where all pattern parts are drawn to their full size, even if they are simple rectangles.
+expandNo.t: Keep patterns parts compact where possible
+expandNo.d: This will draw a more dense representation of the pattern which includes all info without using up too much space & paper.
+paperlessNo.t: Génère un motif régulier
+paperlessNo.d: Cela générera un motif régulier, que tu pourras ensuite imprimer.
+paperlessYes.t: Génère un modèle sans papier
+paperlessYes.d: Cela génère un patron avec des dimensions et une grille, ce qui te permet de le transférer sur du tissu ou un autre support sans avoir besoin d'imprimer le patron.
+metric: Métrique
+imperial: Impérial
+metric.t: Utilise les unités métriques
+metric.d: Utilise ceci si tu utilises le système métrique et si les centimètres et les millimètres te sont familiers. C'est le meilleur choix pour la plupart des gens dans le monde.
+imperial.t: Utilise les unités impériales
+imperial.d: Utilise ceci si les pouces et les fractions de pouces te sont plus familiers que les centimètres. C'est souvent le choix préféré des personnes basées au Royaume-Uni et aux États-Unis.
+saNo.t: Ne pas inclure la marge de couture
+saNo.d: Cela génère un patron qui ne comprend pas de marge de couture. La taille de la marge de couture n'a pas d'importance car aucune marge de couture ne sera incluse.
+saYes.t: Inclure la marge de couture
+saYes.d: Cela génère un modèle qui comprendra une marge de couture. La taille de la marge de couture est définie individuellement.
+clearSettingsNotMeasurements: Clear settings, but keep measurements
+clearSettingsAndMeasurements: Clear settings & Clear measurements

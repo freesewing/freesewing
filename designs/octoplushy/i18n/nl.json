@@ -1,0 +1,52 @@
+{
+  "t": "Octoplushy the octopus",
+  "d": "A multi-armed companion for next-level hugs",
+  "p": {
+    "armSection1": "Arm section 1",
+    "armSection2": "Arm section 2",
+    "eye1": "Eye 1",
+    "eye2": "Eye 2",
+    "eye3": "Eye 3",
+    "headSection1": "Head section 1",
+    "headSection2": "Head section 2"
+  },
+  "s": {},
+  "o": {
+    "size": {
+      "t": "Maat",
+      "d": "Controls the overall size"
+    },
+    "type": {
+      "t": "Soort",
+      "d": "Allows you to choose one of the variants of this design"
+    },
+    "armWidth": {
+      "t": "Arm width",
+      "d": "Controls the width of the arms"
+    },
+    "armLength": {
+      "t": "Arm length",
+      "d": "Controls the length of the arms"
+    },
+    "neckWidth": {
+      "t": "Neck width",
+      "d": "Determines the width at the neck"
+    },
+    "armTaper": {
+      "t": "Arm tapering",
+      "d": "Controls the amount by which the arms taper"
+    },
+    "bottomTopArmRatio": {
+      "t": "Bottom/Top arm ratio",
+      "d": "FIXME: No idea what this does"
+    },
+    "bottomArmReduction": {
+      "t": "Bottom arm reduction",
+      "d": "FIXME: No idea what this does"
+    },
+    "bottomArmReductionPlushy": {
+      "t": "Bottom arm reduction (plushy)",
+      "d": "FIXME: No idea what this does"
+    }
+  }
+}

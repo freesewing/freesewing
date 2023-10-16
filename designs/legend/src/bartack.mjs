@@ -1,5 +1,4 @@
 import { box } from './shared.mjs'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 
 function legendBartack({ points, Point, macro, part }) {
   points.bartack = new Point(40, 20).attr('data-text', 'bartack').attr('data-text-dy', -2)
@@ -15,6 +14,5 @@ function legendBartack({ points, Point, macro, part }) {
 
 export const bartack = {
   name: 'legend.bartack',
-  plugins: pluginBundle,
   draft: legendBartack,
 }

@@ -273,10 +273,8 @@ function draftCorneliusBack({
       nr: 77,
       at: points.title,
       title: 'Back',
+      align: 'center',
     })
-    points.__titleNr.attr('data-text-class', 'center')
-    points.__titleName.attr('data-text-class', 'center')
-    points.__titlePattern.attr('data-text-class', 'center')
 
     let angle = points.p11.angle(points.p4)
     let dist = points.p11.dist(points.p4)
@@ -293,59 +291,71 @@ function draftCorneliusBack({
   // Paperless?
   if (paperless) {
     macro('ld', {
+      id: 1,
       from: points.topOfVent,
       to: points.p11,
     })
     macro('ld', {
+      id: 2,
       from: points.p2,
       to: points.p4,
       d: 15,
     })
     tempP = paths.sideSeam.intersectsY(points.p3.y)[0]
     macro('ld', {
+      id: 3,
       from: points.p5,
       to: tempP,
     })
     macro('ld', {
+      id: 4,
       from: points.p3,
       to: tempP,
     })
     macro('hd', {
+      id: 5,
       from: points.p2,
       to: points.p4,
       y: points.p2.y,
     })
     macro('hd', {
+      id: 6,
       from: points.p10,
       to: points.p11,
       y: points.p10.y - 15,
     })
     macro('vd', {
+      id: 7,
       from: points.p2,
       to: points.p3,
       x: points.p3.x,
     })
     macro('vd', {
+      id: 8,
       from: points.p2,
       to: points.p4,
       x: points.p2.x,
     })
     macro('vd', {
+      id: 9,
       from: points.p3,
       to: points.p10,
       x: points.p3.x,
     })
     macro('ld', {
+      id: 10,
       from: points.p2,
       to: points.p5,
       d: -15,
     })
     macro('ld', {
+      id: 11,
       from: points.p4,
       to: points.p11,
       d: -15,
     })
     macro('ld', {
+      id: 12,
       from: tempP,
       to: points.p4,
       d: 0,

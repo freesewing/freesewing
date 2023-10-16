@@ -1,13 +1,13 @@
 ---
-title: Zig-zag stitch
+title: Строчка "зигзаг
 ---
 
-![A zig-zag stitch is used to prevent the SA of the denim from fraying](zig-zag.jpg)
+![Строчка зигзагоподібна, щоб запобігти стиранню СА джинсової тканини](zig-zag.jpg)
 
-A zig-zag stitch is useful for when you need to sew a stretchable seam (like when using knits). You can also use it for a decorative effect, or to lock the edge of your fabric.
+Строчка "зигзаг" корисна, коли потрібно зшити шов, що розтягується (наприклад, при роботі з трикотажем). Ви також можете використовувати його для декоративного ефекту або для закріплення краю тканини.
 
 As most, if not all, sewing machines can sew a zig-zag stitch, it's a popular alternative for when more specialised stitches are not available.
 
 > Everyone's favourite encyclopedia has more on the zig-zag stitch: [Zigzag stitch on Wikipedia](http://en.wikipedia.org/wiki/Zigzag_stitch)
 
-> Picture by [Kristin Roach](https://www.flickr.com/photos/kristinroach/3161126359)
+> Фото: [Крістін Роуч](https://www.flickr.com/photos/kristinroach/3161126359)

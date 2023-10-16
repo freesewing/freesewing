@@ -1,0 +1,36 @@
+{
+  "t": "Shin zwembroek",
+  "d": "Shin is atletische zwembroek.",
+  "p": {
+    "back": "Achterzijde",
+    "front": "Voorzijde",
+    "waistband": "Tailleband"
+  },
+  "s": {},
+  "o": {
+    "legReduction": {
+      "t": "Been reductie",
+      "d": "Maakt de beenopening kleiner zodat ze niet openstaat"
+    },
+    "elasticWidth": {
+      "t": "Breedte elastiek",
+      "d": "Breedte van de elastiek aan de taille"
+    },
+    "stretch": {
+      "t": "Stretch",
+      "d": "The amount of stretch to design for."
+    },
+    "bulge": {
+      "t": "Bulge",
+      "d": "Controls the amount of extra room to create at the front of the trunks."
+    },
+    "rise": {
+      "t": "Rise",
+      "d": "Controls the height of the waist."
+    },
+    "backRise": {
+      "t": "Back rise",
+      "d": "Controls how much the waist is higher in the back than  the front."
+    }
+  }
+}

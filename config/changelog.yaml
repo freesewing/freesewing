@@ -1,14 +1,48 @@
 Unreleased:
-  Breaking:
+  Changed:
+    aaron:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    albert:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    bee:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    benjamin:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    carlton:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    charlie:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    hortensia:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    huey:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    hugo:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    jaeger:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+      - Corrected part mixup in translation of flag message
+    octoplushy:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    paco:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    sandy:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    shin:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    sven:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    yuri:
+      - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+    plugin-annotations:
+      - Added support for notes in flags
+
+3.0.0:
+  date: 2022-09-30
+  Changed:
     all:
-      - This package is now ESM only.
-      - Dropped support for NodeJS 14.
-        NodeJS 16 or more recent is now required.
-    plugin-gore:
-      - The `goreNumber` props is removed. Please use `gores` instead
-    snapseries:
-      - Named export `smallsteps` has been renamed to `smallSteps`
-      - Named export `bigsteps` has been renamed to `bigSteps`
+      - All FreeSewing pacakges are now ESM only.
+      - All FreeSewing pacakges now use named exports.
+      - Dropped support for NodeJS 14. NodeJS 18 (LTS/hydrogen) or more recent is now required.
 
   Removed:
     global:
@@ -37,6 +71,12 @@ Unreleased:
       - The `remark-jargon` package is not part of FreeSewing v3.
         While v2 versions remain available, this package is no longer supported.
         Use `rehype-jargon` instead.
+      - The `@freesewing/ursula` package is not part of FreeSewing v3.
+        While v2 versions remain available, use `@freesewing/uma` instead.
+      - The `@freesewing/unice` package is not part of FreeSewing v3.
+        While v2 versions remain available, use `@freesewing/uma` instead.
+      - The `@freesewing/plugin-bundle` package is not part of FreeSewing v3.
+        While v2 versions remain available, v3 uses `@freesewing/core-plugins` instead.
 
     plugin-banner:
       - This plugin no longer sets its version as an SVG attribute when rendering patterns
@@ -82,33 +122,6 @@ Unreleased:
       - This plugin no longer sets its version as an SVG attribute when rendering patterns
     plugin-versionfree-svg:
       - This plugin no longer sets its version as an SVG attribute when rendering patterns
-
-  Fixed:
-    albert:
-      - Workaround for not finding a suitable legband radius
-    unice:
-      - Fixed bug which prevented parts from being generated as intended
-    waralee:
-      - Fixed crotch depth issue
-      - Fixed pocket size issue
-      - Fixed waist shaping issue
-
-  Changed:
-    plugin-title:
-      - Use localized date format
-    unice:
-      - Updated gusset to always curve inward
-
-  Added:
-    unice:
-      - Added new Front Curve and Back Curve style options
-    waralee:
-      - Added *mini* version of main pants part
-      - Added new pocket options
-      - Added seperate waistband options
-      - Added bow tie placement option
-    components:
-      - Added linedrawing for Lunetius
 
 2.22.0:
   date: 2022-08-23

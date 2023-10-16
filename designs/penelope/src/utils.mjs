@@ -27,7 +27,7 @@ function dartCalcBack(options, seatWaistDiff, waist, nrOfDarts) {
 function dartCalc(store, options, seat, seatEase, waist, waistEase) {
   seat += seatEase
   waist += waistEase
-  let seatWaistDiff = Math.max(seat - waist, 0)
+  const seatWaistDiff = Math.max(seat - waist, 0)
 
   let nrOfDarts = options.nrOfDarts
 
@@ -81,41 +81,41 @@ function addDartToCurve(part, curvePath, distance, dartSize, dartDepth) {
   if (curvePath.length() - distance < dartSize) {
     distance = curvePath.length() - dartSize / 1.95
   }
-  let dartMiddle = curvePath.shiftAlong(distance)
-  let curvePaths = curvePath.split(dartMiddle)
+  const dartMiddle = curvePath.shiftAlong(distance)
+  const curvePaths = curvePath.split(dartMiddle)
 
   if (curvePaths[0].length() < dartSize / 2 || curvePaths[1].length() < dartSize / 2) {
     // Curve too small to fit dart!
     return null
   }
-  let dartLeft = curvePaths[0].reverse().shiftAlong(dartSize / 2)
-  let dartRight = curvePaths[1].shiftAlong(dartSize / 2)
+  const dartLeft = curvePaths[0].reverse().shiftAlong(dartSize / 2)
+  const dartRight = curvePaths[1].shiftAlong(dartSize / 2)
 
-  let distanceFactor = 0.0015
-  let leftCPdistance = Math.min(
+  const distanceFactor = 0.0015
+  const leftCPdistance = Math.min(
     curvePaths[0].length() * distanceFactor,
     curvePaths[0].ops[1].to.dist(curvePaths[0].ops[1].cp2)
   )
-  let rightCPdistance = Math.min(
+  const rightCPdistance = Math.min(
     curvePaths[1].length() * distanceFactor,
     curvePaths[1].ops[0].to.dist(curvePaths[1].ops[1].cp1)
   )
 
-  let dartBottom = dartMiddle.shift(dartLeft.angle(dartRight) - 90, dartDepth)
+  const dartBottom = dartMiddle.shift(dartLeft.angle(dartRight) - 90, dartDepth)
 
-  let leftDartCP = dartLeft.shift(dartLeft.angle(dartBottom) - 90, leftCPdistance)
-  let rightDartCP = dartRight.shift(dartRight.angle(dartBottom) + 90, rightCPdistance)
+  const leftDartCP = dartLeft.shift(dartLeft.angle(dartBottom) - 90, leftCPdistance)
+  const rightDartCP = dartRight.shift(dartRight.angle(dartBottom) + 90, rightCPdistance)
 
-  let curveLeftOfDart = new part.Path()
+  const curveLeftOfDart = new part.Path()
     .move(curvePaths[0].ops[0].to)
     .curve(curvePaths[0].ops[1].cp1, leftDartCP, dartLeft)
     .hide()
-  let curveRightOfDart = new part.Path()
+  const curveRightOfDart = new part.Path()
     .move(dartRight)
     .curve(rightDartCP, curvePaths[1].ops[1].cp2, curvePaths[1].ops[1].to)
     .hide()
 
-  let dart
+  let dart = null
   if (options.curvedDarts) {
     if (
       dartBottom.angle(dartLeft) - dartBottom.angle(dartRight) <
@@ -123,17 +123,17 @@ function addDartToCurve(part, curvePath, distance, dartSize, dartDepth) {
     ) {
       dart = new part.Path().move(dartLeft).line(dartBottom).line(dartRight).hide()
     } else {
-      let dartBottomCp2 = dartBottom
+      const dartBottomCp2 = dartBottom
         .shiftFractionTowards(dartMiddle, options.curvedDartBottomControlOffset)
         .rotate(options.curvedDartControlAngle, dartBottom)
-      let dartBottomCp1 = dartBottom
+      const dartBottomCp1 = dartBottom
         .shiftFractionTowards(dartMiddle, options.curvedDartBottomControlOffset)
         .rotate(360 - options.curvedDartControlAngle, dartBottom)
-      let dartLeftCp1 = dartLeft.shiftFractionTowards(
+      const dartLeftCp1 = dartLeft.shiftFractionTowards(
         dartBottom,
         options.curvedDartTopControlOffset
       )
-      let dartRightCp2 = dartRight.shiftFractionTowards(
+      const dartRightCp2 = dartRight.shiftFractionTowards(
         dartBottom,
         options.curvedDartTopControlOffset
       )
@@ -148,7 +148,7 @@ function addDartToCurve(part, curvePath, distance, dartSize, dartDepth) {
     dart = new part.Path().move(dartLeft).line(dartBottom).line(dartRight).hide()
   }
 
-  let curveWithDart = {
+  const curveWithDart = {
     left: curveLeftOfDart,
     dart: dart,
     right: curveRightOfDart,

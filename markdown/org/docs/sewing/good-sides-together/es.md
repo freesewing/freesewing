@@ -20,8 +20,8 @@ Esto te da dos piezas que son imágenes espejo unas de otras.
 
 ##### ¿Qué pasa si no hay un lado bueno obvio?
 
-When cutting out something without an obvious _good_ side (like interfacing),
-what matters is that you cut two mirrored pieces, rather than two identical ones.
+Al recortar algo sin un lado _bueno_ obvio (como la entretela),
+lo que importa es que cortes dos piezas reflejadas, en lugar de dos idénticas.
 
 </Note>
 

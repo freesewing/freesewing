@@ -1,0 +1,67 @@
+{
+  "t": "Uma undies",
+  "d": "Uma is a basic, highly-customizable underwear pattern.",
+  "p": {
+    "back": "Back",
+    "elastic": "Elastic",
+    "front": "Front",
+    "gusset": "Gusset",
+    "base": "Base"
+  },
+  "s": {
+    "legElasticLength.t": "You need 2x {{{ length }}} elastic to finish the legs",
+    "legElasticLength.d": "You need two times {{{ length }}} of elastic to finish the legs.\n\nFold-over elastic is recommended for this.",
+    "waistbandElasticLength.t": "You need 1x {{{ length }}} elastic to finish the waistband",
+    "waistbandElasticLength.d": "You need {{{ length }}} of elastic to finish the leg opening.\n\nEither fold-over or regular elastic can be used for this."
+  },
+  "o": {
+    "bulge": {
+      "t": "Bulge",
+      "d": "Increase the bugle angle to create more room in the front pouch. Doesn't kick in below 2 degrees."
+    },
+    "gussetWidth": {
+      "t": "Gusset width",
+      "d": "Controls the width of the gusset"
+    },
+    "gussetLength": {
+      "t": "Gusset length",
+      "d": "Controls the length of the gusset"
+    },
+    "gussetPosition": {
+      "t": "Gusset position",
+      "d": "This option allows you to shift the gusset more to the front or back. It is ignored when bulge is active"
+    },
+    "xStretch": {
+      "t": "Horizontal fabric stretch",
+      "d": "Adjust this for more or less stretchy fabric in the horizontal direction"
+    },
+    "yStretch": {
+      "t": "Vertical fabric stretch",
+      "d": "Adjust this for more or less stretchy fabric in the vertical direction"
+    },
+    "rise": {
+      "t": "Rise",
+      "d": "Controls the height of the waist"
+    },
+    "legRise": {
+      "t": "Leg rise",
+      "d": "Controls how high the leg is cut out"
+    },
+    "frontDip": {
+      "t": "Front waist dip",
+      "d": "Controls how much the front waist curves (revealing more or less skin)"
+    },
+    "backDip": {
+      "t": "Back waist dip",
+      "d": "Controls how much the back waist curves (revealing more or less skin)"
+    },
+    "frontExposure": {
+      "t": "Front exposure",
+      "d": "Controls the amount of exposed skin on the front"
+    },
+    "backExposure": {
+      "t": "Back exposure",
+      "d": "Controls the amount of exposed skin on the back"
+    }
+  }
+}

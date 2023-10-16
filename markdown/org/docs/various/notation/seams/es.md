@@ -6,6 +6,6 @@ Las costuras (las líneas sobre las que coser ) son indicadas por una línea só
 
 <Legend part="fabricLines">
 
-Seamlines for different fabric types
+Líneas de costura para distintos tipos de tejido
 
 </Legend>

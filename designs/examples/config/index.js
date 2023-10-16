@@ -96,6 +96,7 @@ export default {
     'utils_beamsintersect',
     'utils_beamintersectsx',
     'utils_beamintersectsy',
+    'utils_beamintersectscurve',
     'utils_lineintersectscurve',
     'utils_curvesintersect',
     'utils_pointonbeam',

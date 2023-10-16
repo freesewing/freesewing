@@ -8,10 +8,9 @@ function teaganBack({
   Path,
   paths,
   options,
-  complete,
-  paperless,
   macro,
   utils,
+  units,
   measurements,
   part,
 }) {
@@ -28,14 +27,11 @@ function teaganBack({
   if (options.curveToWaist) {
     paths.sideSeam = new Path()
       .move(points.hem)
-      .curve(points.hipsCp2,points.waistCp1, points.waist)
-      .curve_(points.waistCp2,points.armhole)
+      .curve(points.hipsCp2, points.waistCp1, points.waist)
+      .curve_(points.waistCp2, points.armhole)
       .hide()
   } else {
-    paths.sideSeam = new Path()
-      .move(points.hem)
-      .curve_(points.waistCp2,points.armhole)
-      .hide()
+    paths.sideSeam = new Path().move(points.hem).curve_(points.waistCp2, points.armhole).hide()
   }
   paths.saBase = new Path()
     .move(points.armhole)
@@ -53,6 +49,15 @@ function teaganBack({
     .close()
     .setClass('fabric')
 
+  if (sa)
+    paths.sa = new Path()
+      .move(points.cfHem)
+      .join(paths.hemBase.offset(sa * 3))
+      .join(paths.sideSeam.offset(sa))
+      .join(paths.saBase.offset(sa))
+      .line(points.cbNeck)
+      .attr('class', 'fabric sa')
+
   // Set store values required to draft sleevecap
   store.set('sleevecapEase', 0)
   store.set(
@@ -64,40 +69,48 @@ function teaganBack({
       .length()
   )
 
-  // Complete pattern?
-  if (complete) {
-    macro('cutonfold', {
-      from: points.cfNeck,
-      to: points.cfHem,
-      grainline: true,
-    })
+  // Let the user know how long the neck opening is
+  store.flag.info({
+    msg: 'teagan:neckOpeningLength',
+    replace: {
+      length: units(
+        store.get('lengthFrontNeckOpening') +
+          2 *
+            new Path()
+              .move(points.neck)
+              .curve(points.neckCp2, points.cbNeckCp1, points.cbNeck)
+              .length()
+      ),
+    },
+  })
 
-    macro('title', { at: points.title, nr: 2, title: 'back' })
-    points.scaleboxAnchor = points.scalebox = points.title.shift(90, 100)
-    macro('scalebox', { at: points.scalebox })
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 1, from: 'fabric', onFold: true })
 
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.cfHem)
-        .join(paths.hemBase.offset(sa * 3))
-        .join(paths.sideSeam.offset(sa))
-        .join(paths.saBase.offset(sa))
-        .line(points.cbNeck)
-        .attr('class', 'fabric sa')
-    }
-  }
+  // Cutonfold
+  macro('cutonfold', {
+    from: points.cfNeck,
+    to: points.cfHem,
+    grainline: true,
+  })
 
-  // Paperless?
-  if (paperless) {
-    // Remove dimensions that are front only
-    macro('rmd', { ids: store.get('frontOnlyDimensions') })
-    // These dimensions are only for the front
-    macro('vd', {
-      from: points.cbHem,
-      to: points.cbNeck,
-      x: points.cbHem.x - sa - 15,
-    })
-  }
+  // Title
+  macro('title', { at: points.title, nr: 2, title: 'back' })
+
+  // Scalebox
+  points.scaleboxAnchor = points.scalebox = points.title.shift(90, 100)
+  macro('scalebox', { at: points.scalebox })
+
+  // Dimensions
+  macro('vd', {
+    id: 'hHemToNeck',
+    from: points.cbHem,
+    to: points.cbNeck,
+    x: points.cbHem.x - sa - 15,
+  })
 
   return part
 }

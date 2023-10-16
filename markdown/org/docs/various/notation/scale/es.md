@@ -6,7 +6,7 @@ La casilla de escala le permite verificar que su patrón fue impreso a la escala
 
 <Legend part="scalebox">
 
-The scale box
+La caja de la balanza
 
 </Legend>
 

@@ -13,6 +13,6 @@ Pueden ser usados por los diseñadores de patrones para agregar información adi
 
 <Legend part="otherLines">
 
-Other line styles
+Otros estilos de línea
 
 </Legend>

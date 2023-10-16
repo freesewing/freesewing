@@ -6,6 +6,6 @@ Naden (de lijnen waarlangs je stikt) worden aangegeven door een ononderbroken li
 
 <Legend part="fabricLines">
 
-Seamlines for different fabric types
+Naadlijnen voor verschillende soorten stof
 
 </Legend>

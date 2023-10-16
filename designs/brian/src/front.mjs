@@ -15,7 +15,6 @@ export const front = {
     snippets,
     options,
     complete,
-    paperless,
     macro,
     utils,
     part,
@@ -137,62 +136,75 @@ export const front = {
       .join(paths.saBase)
       .attr('class', 'fabric')
 
+    if (sa) {
+      paths.sa = paths.saBase
+        .offset(sa)
+        .attr('class', 'fabric sa')
+        .line(points.cfNeck)
+        .move(points.cfHips)
+      paths.sa.line(paths.sa.start())
+    }
+
     // Store lengths to fit sleeve
     store.set('frontArmholeLength', shared.armholeLength(points, Path))
     store.set('frontArmholeToArmholePitch', shared.armholeToArmholePitch(points, Path))
 
-    // Complete pattern?
-    if (complete) {
-      macro('cutonfold', {
-        from: points.cfNeck,
-        to: points.cfHips,
-        grainline: true,
-      })
-      macro('title', { at: points.title, nr: 1, title: 'front' })
-      snippets.armholePitchNotch = new Snippet('notch', points.armholePitch)
+    /*
+     * Annotations
+     */
+
+    // Cut on fold
+    macro('cutonfold', {
+      from: points.cfNeck,
+      to: points.cfHips,
+      grainline: true,
+    })
+
+    // Title
+    macro('title', { at: points.title, nr: 1, title: 'front' })
+
+    // Notches
+    snippets.armholePitchNotch = new Snippet('notch', points.armholePitch)
+    // Add notches if the shoulder seam is shifted
+    shared.s3Notches(snippets, Snippet, points, options, 'notch')
+
+    // Wait line
+    if (complete)
       paths.waist = new Path().move(points.cfWaist).line(points.waist).attr('class', 'help')
-      if (sa) {
-        paths.sa = paths.saBase
-          .offset(sa)
-          .attr('class', 'fabric sa')
-          .line(points.cfNeck)
-          .move(points.cfHips)
-        paths.sa.line(paths.sa.start())
-      }
 
-      // Add notches if the shoulder seam is shifted
-      shared.s3Notches(snippets, Snippet, points, options, 'notch')
-    }
+    // Dimensions
+    shared.dimensions(part, 'front')
 
-    // Paperless?
-    if (paperless) {
-      shared.dimensions(part, 'front')
-      macro('hd', {
-        from: points.cfHips,
-        to: points.hips,
-        y: points.hem.y + sa + 15,
-      })
-      macro('vd', {
-        from: points.cfHem,
-        to: points.cfWaist,
-        x: points.cfHips.x - sa - 15,
-      })
-      macro('vd', {
-        from: points.cfHem,
-        to: points.cfNeck,
-        x: points.cfHips.x - sa - 30,
-      })
-      macro('hd', {
-        from: points.cfNeck,
-        to: points.s3CollarSplit,
-        y: points.s3CollarSplit.y - sa - 15,
-      })
-      macro('hd', {
-        from: points.cfNeck,
-        to: points.s3ArmholeSplit,
-        y: points.s3CollarSplit.y - sa - 30,
-      })
-    }
+    macro('hd', {
+      id: 'wHem',
+      from: points.cfHips,
+      to: points.hips,
+      y: points.hem.y + sa + 15,
+    })
+    macro('vd', {
+      id: 'hHemToWaist',
+      from: points.cfHem,
+      to: points.cfWaist,
+      x: points.cfHips.x - sa - 15,
+    })
+    macro('vd', {
+      id: 'hHemToNeckOpeningBottom',
+      from: points.cfHem,
+      to: points.cfNeck,
+      x: points.cfHips.x - sa - 30,
+    })
+    macro('hd', {
+      id: 'wCFrontToHps',
+      from: points.cfNeck,
+      to: points.s3CollarSplit,
+      y: points.s3CollarSplit.y - sa - 15,
+    })
+    macro('hd', {
+      id: 'WCFrontToShoulder',
+      from: points.cfNeck,
+      to: points.s3ArmholeSplit,
+      y: points.s3CollarSplit.y - sa - 30,
+    })
 
     return part
   },

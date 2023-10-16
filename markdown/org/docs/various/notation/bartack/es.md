@@ -2,11 +2,11 @@
 title: Bartacks
 ---
 
-A bartack is a stitch of varying size and length used to reinforce fabric. It is often used on the edges of seams such as at a pocket or fly opening.
+Un remate es una puntada de tamaño y longitud variables que se utiliza para reforzar el tejido. Suele utilizarse en los bordes de las costuras, como en la abertura de un bolsillo o bragueta.
 
 <Legend part="bartack">
 
-This is how a bartack displays on a pattern. 
+Así se muestra un bartack en un patrón. 
 
 </Legend>
 

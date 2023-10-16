@@ -8,17 +8,9 @@
 {{{info}}}
 
 
-> #### Note: Version 3 is a work in progress
-> 
-> We are working on a new major version (v3) but it is not ready for prime-time.
-> For production use, please refer to our v2 packages (the `latest` on NPM) 
-> or [the `v2` branch in our monorepo](https://github.com/freesewing/freesewing/tree/v2).
->
-> We the `main` branch and `next` packages on NPM holds v3 code. But it's alpha for now.
-
 ## What am I looking at? 🤔
 
-This repository is our *monorepo* holding all our NPM designs, plugins, other NPM packages, and (web)sites.
+This repository is the FreeSewing *monorepo* holding all FreeSewing's websites, documentation, designs, plugins, and other NPM packages.
 
 This folder holds: {{{fullname}}}
 
@@ -41,11 +33,11 @@ npm run tips
 Where the world of makers and developers collide, that's where you'll find FreeSewing.
 
 If you're a maker, checkout [freesewing.org](https://freesewing.org/) where you can generate
-our sewing patterns adapted to your measurements.
+sewing patterns adapted to your measurements.
 
-If you're a developer, our documentation is on [freesewing.dev](https://freesewing.dev/).
-Our [core library](https://freesewing.dev/reference/api/) is a *batteries-included* toolbox
-for parametric design of sewing patterns. But we also provide a range 
+If you're a developer, the FreeSewing documentation lives at [freesewing.dev](https://freesewing.dev/).
+The FreeSewing [core library](https://freesewing.dev/reference/api/) is a *batteries-included* toolbox
+for parametric design of sewing patterns. But FreeSewing also provides a range 
 of [plugins](https://freesewing.dev/reference/plugins/) that further extend the 
 functionality of the platform.
 
@@ -55,32 +47,42 @@ If you have NodeJS installed, you can try it right now by running:
 npx create-freesewing-pattern
 ```
 
-Or, consult our getting started guides 
-for [Linux](https://freesewing.dev/tutorials/getting-started-linux/),
-[MacOS](https://freesewing.dev/tutorials/getting-started-mac/), 
-or [Windows](https://freesewing.dev/tutorials/getting-started-windows/).
+Getting started guides are available for:
+- [Linux](https://freesewing.dev/tutorials/getting-started-linux/)
+- [MacOS](https://freesewing.dev/tutorials/getting-started-mac/)
+- [Windows](https://freesewing.dev/tutorials/getting-started-windows/)
 
-We also have a [pattern design tutorial](https://freesewing.dev/tutorials/pattern-design/) that
-walks you through your first parametric design, 
-and [a friendly community](https://freesewing.org/community/where/) with 
-people who can help you when you get stuck.
+The [pattern design tutorial](https://freesewing.dev/tutorials/pattern-design/) will
+show you how to create your first parametric design.
 
 ## Support FreeSewing: Become a patron 🥰
 
-FreeSewing is an open source project run by a community, 
-and financially supported by our patrons.
+FreeSewing is an open source project maintained by Joost De Cock and financially supported by the FreeSewing patrons.
 
-If you feel what we do is worthwhile, and you can spend a few coind without
+If you feel FreeSewing is worthwhile, and you can spend a few coind without
 hardship, then you should [join us and become a patron](https://freesewing.org/community/join).
 
 ## Links 👩‍💻
 
- - 💻 Makers website: [freesewing.org](https://freesewing.org)
- - 💻 Developers website: [freesewing.dev](https://freesewing.dev)
- - 💬 Chat: On Discord via [discord.freesewing.org](https://discord.freesewing.org/)
- - ✅ Todo list/Kanban board: On Github via [todo.freesewing.org](https://todo.freesewing.org/)
+**Official channels**
+
+ - 💻 Makers website: [FreeSewing.org](https://freesewing.org)
+ - 💻 Developers website: [FreeSewing.dev](https://freesewing.dev)
+ - ✅ [Support](https://github.com/freesewing/freesewing/issues/new/choose),
+   [Issues](https://github.com/freesewing/freesewing/issues) &
+   [Discussions](https://github.com/freesewing/freesewing/discussions) on
+   [GitHub](https://github.com/freesewing/freesewing)
+
+**Social media**
+
  - 🐦 Twitter: [@freesewing_org](https://twitter.com/freesewing_org)
  - 📷 Instagram: [@freesewing_org](https://instagram.com/freesewing_org)
+
+**Places the FreeSewing community hangs out**
+
+ - 💬 [Discord](https://discord.freesewing.org/)
+ - 💬 [Facebook](https://www.facebook.com/groups/627769821272714/)
+ - 💬 [Reddit](https://www.reddit.com/r/freesewing/)
 
 ## License: MIT 🤓
 
@@ -89,11 +91,8 @@ See [the license file](https://github.com/freesewing/freesewing/blob/develop/LIC
 
 ## Where to get help 🤯
 
-Our [chatrooms on Discord](https://chat.freesewing.org/) are the best place to ask questions,
-share your feedback, or just hang out.
-
-If you want to report a problem, please [create an issue](https://github.com/freesewing/freesewing/issues/new).
-
-
-{{{contributors}}}
+For [Support](https://github.com/freesewing/freesewing/issues/new/choose),
+please use the [Issues](https://github.com/freesewing/freesewing/issues) &
+[Discussions](https://github.com/freesewing/freesewing/discussions) on
+[GitHub](https://github.com/freesewing/freesewing).
 

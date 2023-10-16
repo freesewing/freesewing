@@ -14,7 +14,6 @@ const PatternDocs = ({ pattern = false }) => {
   if (!pattern) return <p>Please specify a pattern prop when using the PatternDocs component</p>
 
   const config = getConfig(pattern)
-  console.log({ pattern, config })
 
   return (
     <>

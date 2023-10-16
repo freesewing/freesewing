@@ -1,0 +1,8 @@
+---
+title: "Ліф купальника Бі"
+---
+
+import { DesignInfo } from 'shared/components/designs/info.mjs'
+
+<DesignInfo design='bee' docs />
+

@@ -1,8 +1,8 @@
 ---
-title: The right to be informed
+title: Право бути поінформованим
 order: 10
 ---
 
-You have the right to be informed about the collection and use of your personal data.
+Ви маєте право бути поінформованим про збір та використання ваших персональних даних.
 
-Read [our privacy notice](/docs/various/privacy/) to inform yourself.
+Прочитайте [наше повідомлення про конфіденційність](/docs/various/privacy/) , щоб дізнатися більше.

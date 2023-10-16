@@ -29,7 +29,6 @@ await checkUsers(data.users)
 console.log()
 
 async function checkUsers(users) {
-  const total = Object.keys(users).length
   let i = 0
   for (const user of Object.values(users)) {
     i++

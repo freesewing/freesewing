@@ -3,7 +3,7 @@ title: rmd
 ---
 
 The `rmd` macro removes a dimension.
-It is provided by the [dimension plugin](/reference/plugins/dimension/).
+It is provided by the [annotations plugin](/reference/plugins/annotations).
 
 To be able to use this plugin, you need to give your dimension an id:
 

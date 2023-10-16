@@ -9,7 +9,6 @@ function draftCharlieFront({
   Path,
   options,
   complete,
-  paperless,
   measurements,
   store,
   macro,
@@ -170,6 +169,19 @@ function draftCharlieFront({
   // Draw path
   paths.seam = drawPath().close().attr('class', 'fabric')
 
+  if (sa)
+    paths.sa = drawPath()
+      .offset(sa)
+      .join(
+        new Path()
+          .move(points.floorOut)
+          .line(points.floorIn)
+          .offset(sa * 6)
+      )
+      .close()
+      .trim()
+      .addClass('fabric sa')
+
   // Store waistband length
   store.set('waistbandFront', points.styleWaistIn.dist(points.slantTop))
   store.set('waistbandFly', points.styleWaistIn.dist(points.flyTop))
@@ -179,41 +191,10 @@ function draftCharlieFront({
   store.set('frontInseamLength', frontInseamPath.length())
   store.set('frontOutseamLength', drawOutseam().length())
 
+  const Jseam = new Path()
+    .move(points.flyCurveStart)
+    .curve(points.flyCurveCp2, points.flyCurveCp1, points.flyBottom)
   if (complete) {
-    points.titleAnchor = new Point(points.knee.x, points.fork.y)
-    macro('title', {
-      at: points.titleAnchor,
-      nr: 2,
-      title: 'front',
-    })
-    snippets.logo = new Snippet('logo', points.titleAnchor.shiftFractionTowards(points.knee, 0.666))
-    points.topPleat = utils.beamsIntersect(
-      points.styleWaistIn,
-      points.styleWaistOut,
-      points.knee,
-      points.grainlineBottom
-    )
-    points.slantBottomNotch = new Path()
-      .move(points.slantCurveStart)
-      .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
-      .intersectsY(points.slantBottom.y)
-      .pop()
-    points.slantTopNotch = points.slantTop.shiftFractionTowards(points.slantCurveStart, 0.1)
-    store.set('slantTopNotchDistance', points.slantTop.dist(points.slantTopNotch))
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: [
-        'slantBottomNotch',
-        'slantTopNotch',
-        'topPleat',
-        'grainlineBottom',
-        'flyBottom',
-        'flyExtensionBottom',
-      ],
-    })
-    let Jseam = new Path()
-      .move(points.flyCurveStart)
-      .curve(points.flyCurveCp2, points.flyCurveCp1, points.flyBottom)
     paths.Jseam = new Path()
       .move(points.flyTop)
       .join(Jseam)
@@ -230,135 +211,179 @@ function draftCharlieFront({
       .move(points.pocketFacingTop)
       .line(points.pocketFacingBottom)
       .attr('class', 'lining dashed')
-
-    // Bartack
-    macro('bartack', {
-      anchor: points.slantTopNotch,
-      angle: points.slantTopNotch.angle(points.slantCurveStart) + 90,
-      length: sa ? sa / 1.5 : 7.5,
-      suffix: 'slantTop',
-    })
-    macro('bartack', {
-      anchor: points.slantBottomNotch,
-      length: sa ? sa / 2 : 5,
-      suffix: 'slantBottom',
-    })
-    // This is too small to do on doll-sized patterns
-    if (measurements.waist > 200) {
-      macro('bartackFractionAlong', {
-        path: Jseam.reverse(),
-        start: 0,
-        end: 0.1,
-        suffix: 'stom',
-      })
-    }
-
-    if (sa) {
-      paths.sa = drawPath()
-        .offset(sa)
-        .join(
-          new Path()
-            .move(points.floorOut)
-            .line(points.floorIn)
-            .offset(sa * 6)
-        )
-        .close()
-        .trim()
-        .attr('class', 'fabric sa')
-    }
-
-    if (paperless) {
-      // Clean up paperless dimensions
-      macro('rmad')
-      delete paths.hint
-
-      macro('hd', {
-        from: points.grainlineBottom,
-        to: points.floorIn,
-        y: points.floorIn.y - 15,
-      })
-      macro('hd', {
-        from: points.floorOut,
-        to: points.grainlineBottom,
-        y: points.floorIn.y - 15,
-      })
-      macro('hd', {
-        from: points.floorOut,
-        to: points.floorIn,
-        y: points.floorIn.y - 30,
-      })
-
-      let y = points.styleWaistIn.y - sa
-      macro('hd', {
-        from: points.grainlineFrom,
-        to: points.flyTop,
-        y: y - 15,
-      })
-      macro('hd', {
-        from: points.grainlineFrom,
-        to: points.styleWaistIn,
-        y: y - 30,
-      })
-      macro('hd', {
-        from: points.grainlineFrom,
-        to: points.flyBottom,
-        y: y - 45,
-      })
-      macro('hd', {
-        from: points.grainlineFrom,
-        to: points.flyExtensionBottom,
-        y: y - 60,
-      })
-      macro('hd', {
-        from: points.grainlineFrom,
-        to: points.fork,
-        y: y - 75,
-      })
-
-      macro('hd', {
-        from: points.pocketFacingTop,
-        to: points.grainlineFrom,
-        y: y - 15,
-      })
-      macro('hd', {
-        from: points.slantTop,
-        to: points.grainlineFrom,
-        y: y - 30,
-      })
-      macro('hd', {
-        from: points.slantBottomNotch,
-        to: points.grainlineFrom,
-        y: y - 45,
-      })
-
-      let x = points.fork.x + sa
-      macro('vd', {
-        from: points.floorIn,
-        to: points.fork,
-        x: x + 15,
-      })
-      macro('vd', {
-        from: points.fork,
-        to: points.flyExtensionBottom,
-        x: x + 15,
-      })
-      macro('vd', {
-        from: points.fork,
-        to: points.flyBottom,
-        x: x + 30,
-      })
-      macro('vd', {
-        from: points.fork,
-        to: points.slantTop,
-        x: x + 45,
-      })
-      macro('vd', {
-        from: points.fork,
-        to: points.styleWaistIn,
-        x: x + 60,
-      })
-    }
   }
+
+  delete paths.hint
+
+  /*
+   * Annotations
+   */
+
+  // Cut list
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Title
+  points.titleAnchor = new Point(points.knee.x, points.fork.y)
+  macro('title', {
+    at: points.titleAnchor,
+    nr: 2,
+    title: 'front',
+  })
+
+  // Logo
+  snippets.logo = new Snippet('logo', points.titleAnchor.shiftFractionTowards(points.knee, 0.666))
+  points.topPleat = utils.beamsIntersect(
+    points.styleWaistIn,
+    points.styleWaistOut,
+    points.knee,
+    points.grainlineBottom
+  )
+
+  // Notches
+  points.slantBottomNotch = new Path()
+    .move(points.slantCurveStart)
+    .curve(points.slantCurveCp1, points.slantCurveCp2, points.slantCurveEnd)
+    .intersectsY(points.slantBottom.y)
+    .pop()
+  points.slantTopNotch = points.slantTop.shiftFractionTowards(points.slantCurveStart, 0.1)
+  store.set('slantTopNotchDistance', points.slantTop.dist(points.slantTopNotch))
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: [
+      'slantBottomNotch',
+      'slantTopNotch',
+      'topPleat',
+      'grainlineBottom',
+      'flyBottom',
+      'flyExtensionBottom',
+    ],
+  })
+
+  // Bartack
+  macro('bartack', {
+    anchor: points.slantTopNotch,
+    angle: points.slantTopNotch.angle(points.slantCurveStart) + 90,
+    length: sa ? sa / 1.5 : 7.5,
+    suffix: 'slantTop',
+  })
+  macro('bartack', {
+    anchor: points.slantBottomNotch,
+    length: sa ? sa / 2 : 5,
+    suffix: 'slantBottom',
+  })
+  // This is too small to do on doll-sized patterns
+  if (measurements.waist > 200) {
+    macro('bartackFractionAlong', {
+      path: Jseam.reverse(),
+      start: 0,
+      end: 0.1,
+      suffix: 'stom',
+    })
+  }
+
+  // Dimensions
+  macro('rmad')
+  macro('hd', {
+    id: 'wPleatToHemRight',
+    from: points.grainlineBottom,
+    to: points.floorIn,
+    y: points.floorIn.y - 15,
+  })
+  macro('hd', {
+    id: 'wPleastToHemLeft',
+    from: points.floorOut,
+    to: points.grainlineBottom,
+    y: points.floorIn.y - 15,
+  })
+  macro('hd', {
+    id: 'wHem',
+    from: points.floorOut,
+    to: points.floorIn,
+    y: points.floorIn.y - 30,
+  })
+
+  let y = points.styleWaistIn.y - sa
+  macro('hd', {
+    id: 'wPleatToJseam',
+    from: points.topPleat,
+    to: points.flyTop,
+    y: y - 15,
+  })
+  macro('hd', {
+    id: 'wPleatToCfWaist',
+    from: points.topPleat,
+    to: points.styleWaistIn,
+    y: y - 30,
+  })
+  macro('hd', {
+    id: 'wPleatToJeamEnd',
+    from: points.topPleat,
+    to: points.flyBottom,
+    y: y - 45,
+  })
+  macro('hd', {
+    id: 'wPleatToCrotchCurveStart',
+    from: points.topPleat,
+    to: points.flyExtensionBottom,
+    y: y - 60,
+  })
+  macro('hd', {
+    id: 'wPleatToFork',
+    from: points.topPleat,
+    to: points.fork,
+    y: y - 75,
+  })
+
+  macro('hd', {
+    id: 'wPleatToPocketFacingWaist',
+    from: points.pocketFacingTop,
+    to: points.topPleat,
+    y: y - 15,
+  })
+  macro('hd', {
+    id: 'wPleatToSideWaist',
+    from: points.slantTop,
+    to: points.topPleat,
+    y: y - 30,
+  })
+  macro('hd', {
+    id: 'wPleatToSide',
+    from: points.slantBottomNotch,
+    to: points.topPleat,
+    y: y - 45,
+  })
+
+  let x = points.fork.x + sa
+  macro('vd', {
+    id: 'hHemToFork',
+    from: points.floorIn,
+    to: points.fork,
+    x: x + 15,
+  })
+  macro('vd', {
+    id: 'hForkToStartCrotchSeam',
+    from: points.fork,
+    to: points.flyExtensionBottom,
+    x: x + 15,
+  })
+  macro('vd', {
+    id: 'hForkToJeamEnd',
+    from: points.fork,
+    to: points.flyBottom,
+    x: x + 30,
+  })
+  macro('vd', {
+    id: 'hForkToCfWaist',
+    from: points.fork,
+    to: points.slantTop,
+    x: x + 45,
+  })
+  macro('vd', {
+    id: 'hForkToSideWaist',
+    from: points.fork,
+    to: points.styleWaistIn,
+    x: x + 60,
+  })
 
   return part
 }
@@ -383,7 +408,6 @@ export const front = {
   ],
   options: {
     // Constants (from Titan)
-    titanPaperless: true,
     fitCrossSeam: true,
     fitCrossSeamFront: true,
     fitCrossSeamBack: true,

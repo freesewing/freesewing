@@ -2,11 +2,11 @@
 title: Draadrichting en aanduiding van de stofvouw
 ---
 
-Grainlines — a line that indicates the _fabric grain_ — look like this:
+Draadrichting - een lijn die de _draadrichting van de stof_ aangeeft - ziet er zo uit:
 
 <Legend part="grainline">
 
-A grainline indicator
+Een korrellijnindicator
 
 </Legend>
 
@@ -14,6 +14,6 @@ Markeringen voor de stofvouw zien er gelijkaardig uit, maar wijzen naar de lijn 
 
 <Legend part="cutonfold">
 
-A cut-on-fold indicator
+Een snij-op-vouw indicator
 
 </Legend>

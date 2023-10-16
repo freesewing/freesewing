@@ -1,10 +1,11 @@
 import { front } from './front.mjs'
 
 function jaegerInnerPocketWelt({
-  paperless,
   sa,
   store,
   complete,
+  expand,
+  units,
   points,
   macro,
   Point,
@@ -14,6 +15,32 @@ function jaegerInnerPocketWelt({
 }) {
   const width = store.get('innerPocketWidth')
   const height = store.get('innerPocketWeltHeight')
+
+  if (expand) {
+    store.flag.preset('expandIsOn')
+  } else {
+    // Expand is off, do not draw the part but flag this to the user
+    const extraSa = sa ? 2 * sa : 0
+    store.flag.note({
+      msg: `jaeger:cutInnerPocketWelt`,
+      notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
+      replace: {
+        width: units(width + extraSa),
+        length: units(height + extraSa),
+      },
+      suggest: {
+        text: 'flag:show',
+        icon: 'expand',
+        update: {
+          settings: ['expand', 1],
+        },
+      },
+    })
+    // Also hint about expand
+    store.flag.preset('expandIsOff')
+
+    return part.hide()
+  }
 
   points.topLeft = new Point(0, 0)
   points.topRight = new Point(width, 0)
@@ -32,35 +59,42 @@ function jaegerInnerPocketWelt({
     .close()
     .attr('class', 'fabric')
 
-  paths.fold = new Path()
-    .move(points.foldLeft)
-    .line(points.foldRight)
-    .attr('class', 'stroke-sm dashed')
+  if (complete)
+    paths.fold = new Path()
+      .move(points.foldLeft)
+      .line(points.foldRight)
+      .addClass('stroke-sm dashed')
 
-  if (complete) {
-    points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    // Title
-    macro('title', {
-      at: points.title,
-      nr: 13,
-      title: 'innerPocketWelt',
-    })
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
 
-    if (paperless) {
-      macro('hd', {
-        from: points.topLeft,
-        to: points.topRight,
-        y: points.topRight.y - sa - 15,
-      })
-      macro('vd', {
-        from: points.bottomRight,
-        to: points.topRight,
-        x: points.topRight.x + sa + 15,
-      })
-    }
-  }
+  // Title
+  points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+  macro('rmtitle')
+  macro('title', {
+    at: points.title,
+    nr: 13,
+    title: 'innerPocketWelt',
+    scale: 0.666,
+    align: 'center',
+  })
+
+  // Dimensions
+  macro('hd', {
+    from: points.topLeft,
+    to: points.topRight,
+    y: points.topRight.y - sa - 15,
+  })
+  macro('vd', {
+    from: points.bottomRight,
+    to: points.topRight,
+    x: points.topRight.x + sa + 15,
+  })
 
   return part
 }

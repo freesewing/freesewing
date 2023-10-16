@@ -1,26 +1,29 @@
-import { PrimaryNavigation } from './primary.mjs'
+import { MainSections, ActiveSection, ns as navNs } from './primary.mjs'
 
-export const AsideNavigation = ({ app, slug, mobileOnly = false, before = [], after = [] }) => (
+export const ns = navNs
+
+export const AsideNavigation = ({ mobileOnly = false, before = [], after = [] }) => (
   <aside
     className={`
-    fixed top-0 right-0 h-screen w-screen
-    overflow-y-auto z-20
-    bg-base-100 text-base-content md:bg-base-50
-    transition-all
-    ${app.primaryMenu ? '' : 'translate-x-[-120%]'} transition-transform
-    md:flex md:sticky md:flex-row-reverse
-    md:relative md:transform-none
-    px-6 py-24
-    shrink-0
-    md:w-24 md:px-2 md:justify-center
-    lg:w-96 lg:pr-2 lg:border-r-2
-    xl:w-lg xl:border-0
-    2xl:pr-8
-    ${mobileOnly ? 'block md:hidden' : ''}
+    hidden lg:block
+    min-h-screen
+    z-20
+    bg-base-100 text-base-content
+    px-0 pb-20 shrink-0 pt-8
+
+    lg:w-auto
+    lg:justify-center
+    lg:bg-base-300 lg:bg-opacity-10
+    ${mobileOnly ? 'block lg:hidden w-full ' : ''}
   `}
   >
-    {before}
-    <PrimaryNavigation app={app} active={slug} />
-    {after}
+    <div className="w-screen lg:w-auto lg:sticky lg:top-28 max-h-screen overflow-y-auto">
+      {before}
+      <MainSections />
+      <div className="mt-4 pt-4">
+        <ActiveSection />
+      </div>
+      {after}
+    </div>
   </aside>
 )

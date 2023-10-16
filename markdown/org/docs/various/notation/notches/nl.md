@@ -8,7 +8,7 @@ Een alternatieve stijl toont een kruis in een cirkel. Dit type wordt gebruikt om
 
 <Legend part="notches"> 
 
-The default notch style (shown left) and alternative style for notches on the back
+De standaardstijl voor inkepingen (links afgebeeld) en de alternatieve stijl voor inkepingen op de achterkant
 
 </Legend>
 

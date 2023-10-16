@@ -1,0 +1,187 @@
+{
+  "t": "Simon hemd",
+  "d": "Simon is een zeer flexibel hemdpatroon voor mensen zonder borsten.",
+  "p": {
+    "back": "Achterzijde",
+    "buttonholePlacket": "Knoopsgatenpat",
+    "buttonPlacket": "Knopenpat",
+    "collar": "Kraag",
+    "collarStand": "Kraagstaander",
+    "cuff": "Manchet",
+    "front": "Voorzijde",
+    "frontLeft": "Voorzijde links",
+    "frontRight": "Voorzijde rechts",
+    "sleevePlacketOverlap": "Mouwsplit boven",
+    "sleevePlacketUnderlap": "Mouwsplit onder",
+    "sleeve": "Mouw",
+    "yoke": "Schouderpas"
+  },
+  "s": {
+    "buttonholePlacket": "Knoopsgatenpat",
+    "buttonPlacket": "Knopenpad",
+    "collarAndUndercollar": "Kraag en Onderkraag",
+    "collarStand": "Kraagstaander",
+    "cutUndercollarSlightlySmaller": "Knip de onderkraag een beetje kleiner",
+    "frontLeft": "Voorzijde links",
+    "frontRight": "Voorzijde rechts",
+    "sideOfTheCollarStand": "Kant van de kraagstaander",
+    "sleevePlacketOverlap": "Mouwsplit bovendeel",
+    "sleevePlacketUnderlap": "Mouwsplit onder",
+    "yoke": "Schouderpas",
+    "matchHere": "Laat de stof langs deze lijn uitkomen"
+  },
+  "o": {
+    "backDarts": {
+      "t": "Nepen rug",
+      "d": "Of je nepen wil toevoegen aan de rug of niet"
+    },
+    "backDartShaping": {
+      "t": "Vorm nepen rug",
+      "d": "Hoeveel invloed de nepen in de rug hebben op de pasvorm"
+    },
+    "barrelCuffNarrowButton": {
+      "t": "Extra knoop manchet",
+      "d": "Of je al dan niet een knoop wil om de manchetten smaller te maken. Deze optie is enkel relevant bij klassieke manchetten (zonder manchetknopen)."
+    },
+    "boxPleat": {
+      "t": "Stolpplooi",
+      "d": "Of je wel of niet een stolpplooi in de rug wil"
+    },
+    "boxPleatWidth": {
+      "t": "Breedte stolpplooi",
+      "d": "De totale breedte van de stolpplooi"
+    },
+    "boxPleatFold": {
+      "t": "Vouw stolpplooi",
+      "d": "Hoe ver de stolpplooi naar binnen vouwt"
+    },
+    "buttonPlacketStyle": {
+      "t": "Stijl knopenpat",
+      "d": "De stijl van het knopenpat."
+    },
+    "buttonPlacketWidth": {
+      "t": "Breedte knopenpat",
+      "d": "De breedte van het knopenpat."
+    },
+    "buttonFreeLength": {
+      "t": "Lengte knooploos stuk",
+      "d": "Hoe lang het stuk zonder knopen onderaan de sluiting moet zijn."
+    },
+    "buttonholePlacketFoldWidth": {
+      "t": "Breedte vouw knoopsgatenpat",
+      "d": "De breedte van de vouw in het knoopsgatenpat."
+    },
+    "buttonholePlacketStyle": {
+      "t": "Stijl knoopsgatenpat",
+      "d": "De stijl van het knoopsgatenpat."
+    },
+    "buttonholePlacketWidth": {
+      "t": "Breedte knoopsgatenpat",
+      "d": "De breedte van het knoopsgatenpat."
+    },
+    "buttons": {
+      "t": "Aantal knopen",
+      "d": "Het aantal knopen op de sluiting vooraan."
+    },
+    "collarAngle": {
+      "t": "Hoek kraag",
+      "d": "De hoek van de punten van de kraag."
+    },
+    "collarBend": {
+      "t": "Kromming kraag",
+      "d": "De kromming van de kraag."
+    },
+    "collarFlare": {
+      "t": "Spreiding kraag",
+      "d": "Hoe ver de punten van de kraag spreiden."
+    },
+    "collarGap": {
+      "t": "Afstand kraag",
+      "d": "De open ruimte tussen de uiteindes van de kraag."
+    },
+    "collarRoll": {
+      "t": "Omval kraag",
+      "d": "Hoeveel groter de bovenkraag is dan de onderkraag."
+    },
+    "collarStandBend": {
+      "t": "Kromming staander",
+      "d": "De kromming van de staander in het midden, achteraan de nek."
+    },
+    "collarStandCurve": {
+      "t": "Curve staander",
+      "d": "De curve van de uiteindes van de staander."
+    },
+    "collarStandWidth": {
+      "t": "Breedte staander",
+      "d": "Breedte van de staander."
+    },
+    "cuffButtonRows": {
+      "t": "Rijen knopen op manchet",
+      "d": "Of je een enkele of dubbele rij knopen op de manchet wil. Deze optie is enkel relevant voor klassieke manchetten."
+    },
+    "cuffDrape": {
+      "t": "Verschil mouw/manchet",
+      "d": "Hoeveel wijder de mouw is dan de manchet op het punt waar ze wordt aangezet."
+    },
+    "cuffLength": {
+      "t": "Lengte manchet",
+      "d": "De lengte van de manchetten."
+    },
+    "cuffStyle": {
+      "t": "Stijl Manchet",
+      "d": "De stijl van de manchetten."
+    },
+    "extraTopButton": {
+      "t": "Extra knoop bovenaan",
+      "d": "Of je al dan niet een extra knoop bovenaan de sluiting wil."
+    },
+    "ffsa": {
+      "t": "Glanzende naadwaarde",
+      "d": "De hoeveelheid naadwaarde aan geflanste naden in verhouding tot de normale naadwaarde"
+    },
+    "hemCurve": {
+      "t": "Curve zoom",
+      "d": "De hoogte van de curve op een afgeronde zoom."
+    },
+    "hemStyle": {
+      "t": "Vorm zoom",
+      "d": "De vorm van de zoom van het hemd."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at the hips."
+    },
+    "roundBack": {
+      "t": "Rond terug af",
+      "d": "Om een round(er) achteraan te passen voegt dit de lengte aan het midden (aan de schouderpas) toe die richting de zijkanten kort."
+    },
+    "seperateButtonholePlacket": {
+      "t": "Apart knoopsgatenpat",
+      "d": "Teken een apart knoopsgatenpat."
+    },
+    "seperateButtonPlacket": {
+      "t": "Apart knopenpat",
+      "d": "Teken een apart knopenpat"
+    },
+    "sleevePlacketLength": {
+      "t": "Lengte mouwsplit",
+      "d": "De lengte van het mouwsplit."
+    },
+    "sleevePlacketWidth": {
+      "t": "Breedte mouwsplit",
+      "d": "De breedte van het mouwsplit."
+    },
+    "splitYoke": {
+      "t": "Tweedelige schouderpas",
+      "d": "Wil je een tweedelige schouderpas?"
+    },
+    "waistEase": {
+      "t": "Overwijdte taille",
+      "d": "De hoeveelheid extra ruimte aan je (natuurlijke) taille."
+    },
+    "yokeHeight": {
+      "t": "Hoogte schouderpas",
+      "d": "Bepaalt de hoogte van de schouderpas"
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "t": "Lunetius Lacerna",
+  "d": "Lunetius is a lacerna, a historical Roman cloak",
+  "p": {
+    "lacerna": "Lacerna"
+  },
+  "s": {},
+  "o": {
+    "lengthRatio": {
+      "t": "Length ratio",
+      "d": "Controls the length of the garment"
+    },
+    "widthRatio": {
+      "t": "Width ratio",
+      "d": "Controls the width of the garment"
+    },
+    "length": {
+      "t": "Length",
+      "d": "Choose from the different length styles"
+    },
+    "length.toHips": {
+      "t": "To the hips",
+      "d": "Draft a lacerna that ends at the hips"
+    },
+    "length.toUpperLeg": {
+      "t": "To the upper leg",
+      "d": "Draft a lacerna that ends at the upper leg or thigh"
+    },
+    "length.toKnee": {
+      "t": "To the knee",
+      "d": "Draft a lacerna that ends at the knee"
+    },
+    "length.toBelowKnee": {
+      "t": "Below the knee",
+      "d": "Draft a lacerna ends below the knee"
+    },
+    "length.toFloor": {
+      "t": "To the floor",
+      "d": "Draft a full-length lacerna down to the floor"
+    }
+  }
+}

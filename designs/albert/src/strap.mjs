@@ -16,44 +16,62 @@ export const strap = {
     paths,
     Snippet,
     snippets,
-    complete,
     sa,
-    paperless,
     macro,
     store,
+    complete,
+    units,
+    expand,
     part,
   }) => {
-    let bibWidth = store.get('bibWidth')
-    let apronWidth = store.get('apronWidth')
-    let backOpening = apronWidth - Math.max(measurements.hips, measurements.waist)
-    let hemWidth = store.get('hemWidth')
+    const bibWidth = store.get('bibWidth')
+    const apronWidth = store.get('apronWidth')
+    const backOpening = apronWidth - Math.max(measurements.hips, measurements.waist)
 
-    let hSpan = backOpening / 2 + bibWidth / 2
-    let vSpan =
+    const hSpan = backOpening / 2 + bibWidth / 2
+    const vSpan =
       measurements.hpsToWaistBack +
       measurements.hpsToWaistBack -
       measurements.hpsToWaistBack * options.bibLength
 
-    let strapWidth = store.get('strapWidth')
-    let strapLength =
+    const strapWidth = store.get('strapWidth')
+    const strapLength =
       Math.sqrt(hSpan * hSpan + vSpan * vSpan) + measurements.chest * options.chestDepth
-    /*
-    console.log('chestWidth ' + chestWidth)
-    console.log('backOpening ' + backOpening)
-    console.log('hSpan ' + hSpan)
-    console.log('vSpan ' + vSpan)
-    console.log('strapLength ' + strapLength)
-    */
+
+    if (!expand) {
+      // Expand is on, do not draw the part but flag this to the user
+      const extraSa = sa ? 2 * sa : 0
+      store.flag.note({
+        msg: `albert:cutStrap`,
+        notes: [sa ? 'flag:saIncluded' : 'flag:saExcluded', 'flag:partHiddenByExpand'],
+        replace: {
+          width: units(strapWidth + extraSa),
+          length: units(strapLength + strapWidth * 2 + extraSa),
+        },
+        suggest: {
+          text: 'flag:show',
+          icon: 'expand',
+          update: {
+            settings: ['expand', 1],
+          },
+        },
+      })
+      // Also hint about expand
+      store.flag.preset('expand')
+
+      return part.hide()
+    }
+
     points.topLeft = new Point(0, 0)
-    points.topLeftHem = points.topLeft.shift(270, hemWidth)
+    points.topLeftHem = points.topLeft.shift(270, strapWidth)
     points.topMiddle = new Point(strapWidth, 0)
-    points.topMiddleHem = new Point(strapWidth, hemWidth)
+    points.topMiddleHem = new Point(strapWidth, strapWidth)
     points.topRight = new Point(strapWidth * 2, 0)
-    points.bottomLeftHem = new Point(0, strapLength + hemWidth)
-    points.bottomLeft = new Point(0, strapLength + hemWidth * 2)
-    points.bottomMiddleHem = new Point(strapWidth, strapLength + hemWidth)
-    points.bottomMiddle = new Point(strapWidth, strapLength + hemWidth * 2)
-    points.bottomRight = new Point(strapWidth * 2, strapLength + hemWidth * 2)
+    points.bottomLeftHem = new Point(0, strapLength + strapWidth)
+    points.bottomLeft = new Point(0, strapLength + strapWidth * 2)
+    points.bottomMiddleHem = new Point(strapWidth, strapLength + strapWidth)
+    points.bottomMiddle = new Point(strapWidth, strapLength + strapWidth * 2)
+    points.bottomRight = new Point(strapWidth * 2, strapLength + strapWidth * 2)
 
     paths.seam = new Path()
       .move(points.topLeft)
@@ -64,71 +82,84 @@ export const strap = {
       .close()
       .attr('class', 'fabric')
 
-    paths.topHem = new Path()
-      .move(points.topLeftHem)
-      .line(points.topMiddleHem)
-      .attr('class', 'various dashed')
-      .attr('data-text', 'attach')
-      .attr('data-text-class', 'text-xs center')
-    paths.bottomHem = new Path()
-      .move(points.bottomLeftHem)
-      .line(points.bottomMiddleHem)
-      .attr('class', 'various dashed')
-      .attr('data-text', 'attach')
-      .attr('data-text-class', 'text-xs center')
-
-    paths.fold = new Path()
-      .move(points.topMiddle)
-      .line(points.bottomMiddle)
-      .attr('class', 'various dashed')
-      .attr('data-text', 'fold')
-      .attr('data-text-class', 'text-xs center')
-
-    // Complete?
     if (complete) {
-      points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-      snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.5)
-      points.title = points.logo.shift(-90, 50)
-      macro('title', {
-        nr: 2,
-        at: points.title,
-        title: 'Strap',
+      paths.fold = new Path()
+        .move(points.topMiddle)
+        .line(points.bottomMiddle)
+        .addClass('note help')
+        .addText('albert:foldHere', 'fill-note center')
+      macro('banner', {
+        id: 'foldHere',
+        path: paths.fold,
+        text: 'albert:foldHere',
       })
-      macro('crossBox', { from: points.topLeft, to: points.topMiddleHem })
-      macro('crossBox', { from: points.bottomLeftHem, to: points.bottomMiddle })
-      if (sa) {
-        paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-      }
     }
 
-    // Paperless?
-    if (paperless) {
-      macro('hd', {
-        from: points.bottomLeft,
-        to: points.bottomRight,
-        y: points.bottomLeft.y + sa + 15,
-      })
-      macro('vd', {
-        from: points.bottomLeft,
-        to: points.topLeft,
-        x: points.topLeft.x - sa - 15,
-      })
-      macro('vd', {
-        from: points.topMiddle,
-        to: points.topMiddleHem,
-        x: points.topMiddleHem.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.topMiddleHem,
-        to: points.bottomMiddleHem,
-        x: points.topMiddleHem.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.bottomMiddleHem,
-        to: points.bottomMiddle,
-        x: points.bottomMiddleHem.x + sa + 15,
-      })
-    }
+    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+
+    /*
+     * Annotations
+     */
+
+    // Cut list
+    store.cutlist.addCut({ cut: 2, from: 'fabric' })
+
+    // Logo
+    points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+    snippets.logo = new Snippet('logo', points.logo)
+
+    // Title
+    points.title = points.logo.shift(-90, 70)
+    macro('title', {
+      nr: 2,
+      at: points.title,
+      title: 'strap',
+      align: 'center',
+    })
+
+    // Crossbox
+    macro('crossbox', {
+      topLeft: points.topLeft,
+      bottomRight: points.topMiddleHem,
+      id: 'crossbox1',
+    })
+    macro('crossbox', {
+      topLeft: points.bottomLeftHem,
+      bottomRight: points.bottomMiddle,
+      id: 'crossbox2',
+    })
+
+    // Dimensions
+    macro('hd', {
+      from: points.bottomLeft,
+      to: points.bottomRight,
+      y: points.bottomLeft.y + sa + 15,
+      id: 'wBottom',
+    })
+    macro('vd', {
+      from: points.bottomLeft,
+      to: points.topLeft,
+      x: points.topLeft.x - sa - 30,
+      id: 'hLeft',
+    })
+    macro('vd', {
+      from: points.topMiddleHem,
+      to: points.topMiddle,
+      x: points.topLeft.x - sa - 15,
+      id: 'crossboxTop',
+    })
+    macro('vd', {
+      from: points.bottomMiddleHem,
+      to: points.topMiddleHem,
+      x: points.topLeft.x - sa - 15,
+      id: 'betweenCrossboxes',
+    })
+    macro('vd', {
+      from: points.bottomMiddle,
+      to: points.bottomMiddleHem,
+      x: points.topLeft.x - sa - 15,
+      id: 'crossboxBottom',
+    })
 
     return part
   },

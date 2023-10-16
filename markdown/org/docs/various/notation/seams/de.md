@@ -6,6 +6,6 @@ Nähte (die Linien, auf dene du nähst) werden durch eine durchgehende Linie ang
 
 <Legend part="fabricLines">
 
-Seamlines for different fabric types
+Nahtlinien für verschiedene Stoffarten
 
 </Legend>

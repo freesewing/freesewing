@@ -6,7 +6,7 @@ Het schaal controle vlak helpt je om te controleren of je patroon op de juiste s
 
 <Legend part="scalebox">
 
-The scale box
+De schaaldoos
 
 </Legend>
 

@@ -8,6 +8,7 @@
 *.md
 *.prisma
 *.css
+*.mustache
 Dockerfile
 .git
 .env
@@ -17,3 +18,4 @@ dist
 node_modules
 yarn.lock
 package.json
+*.html

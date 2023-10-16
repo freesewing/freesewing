@@ -1,5 +1,5 @@
 ---
-title: Sewing
+title: Шиття
 order: 300
 ---
 

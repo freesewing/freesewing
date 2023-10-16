@@ -1,6 +1,6 @@
 import { flyFacing } from './fly-facing.mjs'
 
-function draftCharlieFlyExtension({ points, paths, Path, complete, macro, sa, part }) {
+function draftCharlieFlyExtension({ points, paths, Path, macro, store, sa, part }) {
   // Clean up
   for (let id in paths) delete paths[id]
 
@@ -29,26 +29,34 @@ function draftCharlieFlyExtension({ points, paths, Path, complete, macro, sa, pa
     .hide()
   paths.seam = paths.saBase.clone().line(points.flyCorner).close().unhide().attr('class', 'fabric')
 
-  if (complete) {
-    macro('cutonfold', {
-      from: points.flyTop,
-      to: points.flyCorner,
-      grainline: true,
-    })
-    points.titleAnchor = points.flyCurveStart
-    macro('title', {
-      at: points.titleAnchor,
-      nr: 10,
-      title: 'flyExtention',
-    })
-    if (sa)
-      paths.sa = paths.saBase
-        .offset(sa)
-        .line(points.flyTop)
-        .reverse()
-        .line(points.flyCorner)
-        .attr('class', 'fabric sa')
-  }
+  if (sa)
+    paths.sa = paths.saBase
+      .offset(sa)
+      .line(points.flyTop)
+      .reverse()
+      .line(points.flyCorner)
+      .addClass('fabric sa')
+
+  /*
+   * Annotations
+   */
+  // Cut list
+  store.cutlist.setCut({ cut: 1, from: 'fabric', onFold: true })
+
+  // Cut on fold
+  macro('cutonfold', {
+    from: points.flyTop,
+    to: points.flyCorner,
+    grainline: true,
+  })
+
+  // Title
+  points.titleAnchor = points.flyCurveStart
+  macro('title', {
+    at: points.titleAnchor,
+    nr: 10,
+    title: 'flyExtention',
+  })
 
   return part
 }

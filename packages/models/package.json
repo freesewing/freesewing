@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/models",
-  "version": "3.0.0-alpha.8",
+  "version": "3.0.0",
   "description": "Body measurements data for a range of default sizes",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -24,10 +24,14 @@
   "type": "module",
   "module": "dist/index.mjs",
   "exports": {
-    ".": "./dist/index.mjs"
+    ".": {
+      "internal": "./src/index.mjs",
+      "default": "./dist/index.mjs"
+    }
   },
   "scripts": {
     "build": "node build.mjs",
+    "build:all": "yarn build",
     "clean": "rimraf dist",
     "mbuild": "NO_MINIFY=1 node build.mjs",
     "symlink": "mkdir -p ./node_modules/@freesewing && cd ./node_modules/@freesewing && ln -s -f ../../../* . && cd -",
@@ -36,9 +40,8 @@
     "lab": "cd ../../sites/lab && yarn start",
     "tips": "node ../../scripts/help.mjs",
     "lint": "npx eslint 'src/**' 'tests/*.mjs'",
-    "cibuild_step6": "node build.mjs",
     "wbuild": "node build.mjs",
-    "wcibuild_step6": "node build.mjs"
+    "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {},
   "dependencies": {},
@@ -49,10 +52,10 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=8"
+    "node": "18",
+    "npm": "9"
   }
 }

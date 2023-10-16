@@ -1,18 +1,18 @@
 ---
-title: Other lines
+title: Інші лінії
 ---
 
-Some patterns may have other lines on them, there are 4 additional styles:
+На деяких візерунках можуть бути інші лінії, є 4 додаткові стилі:
 
-- Note
-- Mark
-- Contrast
-- Help
+- Примітка
+- Маркуй.
+- Контраст
+- Допоможіть!
 
-They might be used by patterns designers to add additional info, depending on the context.
+Вони можуть бути використані дизайнерами шаблонів для додавання додаткової інформації, залежно від контексту.
 
 <Legend part="otherLines">
 
-Other line styles
+Інші стилі ліній
 
 </Legend>

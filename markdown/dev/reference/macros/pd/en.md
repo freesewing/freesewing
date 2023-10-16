@@ -3,8 +3,8 @@ title: pd
 ---
 
 The `pd` macro adds a _path dimension_ to your pattern, indicating the length
-of a path.  It is provided by the [dimension
-plugin](/reference/plugins/dimension/).
+of a path.
+It is provided by the [annotations plugin](/reference/plugins/annotations).
 
 ## Signature
 

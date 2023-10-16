@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function draftFrontOrganiserBase({
   options,
   Point,
@@ -21,8 +19,8 @@ function draftFrontOrganiserBase({
   const openingHeight = height * options.openingRatio
 
   points.origin = new Point(0, 0)
-  points.bottomRight = new Point(openingWidth, openingHeight)
-  points.bottomLeft = new Point(0, openingHeight)
+  points.bottomRight = new Point(openingWidth, openingHeight * 0.9)
+  points.bottomLeft = new Point(0, openingHeight * 0.9)
   points.topRight = new Point(openingWidth, 0)
 
   paths.seam = new Path()
@@ -89,6 +87,5 @@ export const frontOrganiserBase = {
     flapHeightRatio: { pct: 83, min: 60, max: 100, menu: 'style' },
     openingRatio: { pct: 66, min: 30, max: 90, menu: 'style' },
   },
-  plugins: [pluginBundle],
   draft: draftFrontOrganiserBase,
 }

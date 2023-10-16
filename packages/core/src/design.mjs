@@ -1,4 +1,4 @@
-import { Pattern } from './pattern.mjs'
+import { Pattern } from './pattern/index.mjs'
 import { __loadDesignDefaults } from './config.mjs'
 
 //////////////////////////////////////////////

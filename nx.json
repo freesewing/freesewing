@@ -1,0 +1,22 @@
+{
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "nx/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "wbuild", "build:all"],
+        "parallel": 5
+      }
+    }
+  },
+  "targetDefaults": {
+    "build": {
+      "dependsOn": ["^build", "prebuild"]
+    },
+    "wbuild": {
+      "dependsOn": ["^wbuild", "prewbuild"]
+    },
+    "e2e": {
+      "dependsOn": ["prebuild"]
+    }
+  }
+}

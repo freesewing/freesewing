@@ -9,7 +9,7 @@ You'll need to install Node.js on your system, and to do so, we'll
 use [`nvm`](https://github.com/nvm-sh/nvm), short for _Node Version Manager_.
 
 Using `nvm` has a number of benefits in comparison with installing Node.js from
-the Node.js website, or from a package provided by your Linux distribution:
+the Node.js website, or from a package that came with macOS.
 
 - You can easily switch between different Node.js versions
 - Everything gets installed in your home folder, avoiding permission problems

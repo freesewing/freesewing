@@ -1,112 +1,138 @@
 ---
-title: Knit binding
+title: Трикотажна палітурка
 ---
 
-## What is knit binding anyway?
+## Що таке трикотажна в'язка?
 
-Knit binding is a general term for a type of finish (typically) found on the neck or arm opening of T-shirts and other knitwear.
+Трикотажна в'язка - це загальний термін для позначення типу оздоблення (зазвичай), що зустрічається на горловині або на рукавах футболок та інших трикотажних виробів.
 
-There's two varieties of this finish, a knit band, and actual knit binding.
+Існує два різновиди такого оздоблення: трикотажна стрічка та власне трикотажна палітурка.
 
-## Knit band
+## Трикотажна стрічка
 
-![Like most T-shirts, the one this girl is wearing has a knit band at the neck opening.](knit_band.jpg)
+![Як і більшість футболок, та, що на цій дівчині, має трикотажну стрічку біля горловини.](knit_band.jpg)
 
-Knit band is what you typically find at the neck opening of your T-shirt. It's a strip of fabric that is folded double and attached to the edge of the garment.
+Трикотажна стрічка - це те, що ви зазвичай знаходите біля горловини футболки. Це смужка тканини, складена вдвічі і прикріплена до краю одягу.
 
-This leaves an unfinished edge on the inside that is often sewn down by edge-stitching around the knit band.
+Це залишає незакінчений край на внутрішній стороні, який часто зашивають краєобметочним швом навколо трикотажної стрічки.
 
-### Knit binding
+### Трикотажна палітурка
 
-![This girl's grey undershirt and white T-shirt both have a knit binding at the neckline.](knit_binding.jpg)
+![Сіра майка та біла футболка цієї дівчини мають трикотажну зав'язку біля вирізу горловини.](knit_binding.jpg)
 
-Real knit binding acts more like classic bias binding, in that it is wrapped around the fabric, rather than extend from it.
+Справжня трикотажна в'язка більше схожа на класичну зміщену в'язку, оскільки вона обертається навколо тканини, а не виходить з неї.
 
-The raw edge of the garment is inserted between the folded knit binding, which is edge-stitched down. This is often done with a coverlock machine, thereby neatly finishing the inside.
+Необроблений край виробу вставляється між складеними трикотажними палітурками, які прострочуються по краю. Часто це робиться за допомогою коверлок-машини, таким чином акуратно обробляючи внутрішню сторону.
 
 > Pictures by [Support Tattoos and Piercings at Work](https://www.flickr.com/photos/supporttattoosandpiercingsatwork/21870942614/) and [Derek A.](https://www.flickr.com/photos/sfj/696122404/)
 
-### Style vs function
+### Стиль vs функція
 
-A knit band is more common, and is what you typically find on T-shirt necklines. It's the more decorative option.
+Трикотажна стрічка є більш поширеною, і саме її ви зазвичай зустрічаєте на вирізах футболок. Це більш декоративний варіант.
 
-A knit binding is less common, but often used on undershirts (as in, underwear). It's the more functional option.
+Трикотажна в'язка менш поширена, але часто використовується на майках (наприклад, нижній білизні). Це більш функціональний варіант.
 
-> ##### Still confused?
+> ##### Все ще розгублений?
 > 
-> Another way to distinguish them is this: Think about what happens when you decide to widen the knit binding/band.
+> Ще один спосіб розрізнити їх - ось як: Подумайте, що станеться, коли ви вирішите розширити в'язальну в'язку/бандери.
 > 
-> On a T-shirt, widening the band at the neck will make the neck opening smaller. If you want a wider band, you will have to cut a larger hole in your T-shirt.
+> На футболці, розширивши смужку біля горловини, ви зменшите отвір для горловини. Якщо вам потрібна ширша стрічка, вам доведеться вирізати більший отвір у футболці.
 > 
-> On an undershirt, if you want the knitwear binding at the neck to be wider, it will not make the neck opening smaller. Instead, the binding will simply lay further over the undershirt main fabric.
+> На майці, якщо ви хочете, щоб трикотажна в'язка біля горловини була ширшою, це не зробить отвір горловини меншим. Натомість палітурка просто ляже далі на основну тканину майки.
 
-## Why knitwear binding requires stretch
+## Чому в'язка трикотажу потребує розтягування
 
-Whether you're using a knit band or a knit binding finish, you are going to have to stretch your binding fabric for good results. That is, assuming you're not sewing a straight seam. Here's why:
+Незалежно від того, чи використовуєте ви трикотажну стрічку або трикотажну палітурку, вам доведеться розтягнути палітурну тканину для отримання гарних результатів. Тобто, якщо припустити, що ви не шиєте прямим швом. Ось чому:
 
-### Straight: life on easy mode
+### Натурал: життя в легкому режимі
 
-![No stretch required when going straight](knitbinding1.png)
+![Не потрібно розтягуватися при прямому русі](knitbinding1.png)
 
-On a straight seam, you can simply attach your binding/band. Your fabric and binding have the same length, so everything will be fine.
+На прямий шов можна просто прикріпити палітурку/бант. Ваша тканина і палітурка мають однакову довжину, тому все буде добре.
 
-The most likely scenario where you will encounter this is on the (short) sleeves of a T-shirt. Although the knit band wraps around your arm, from a pattern perspective (as in, when the fabric is still flat) it's a straight seam.
+Найімовірніший сценарій, коли ви зіткнетеся з цим - на (коротких) рукавах футболки. Хоча трикотажна стрічка обертається навколо руки, з точки зору викрійки (коли тканина залишається плоскою) це прямий шов.
 
-### Uniformly curved: uniform stretch
+### Рівномірно вигнутий: рівномірне розтягнення
 
-![Curved seams require stretch](knitbinding2.png)
+![Вигнуті шви потребують розтяжки](knitbinding2.png)
 
-On a curved seam, like an neck opening, things get a little more complicated. That is because the outer edge and the inner edge of your binding will have a different length.
+З вигнутим швом, наприклад, горловиною, все трохи складніше. Це тому, що зовнішній і внутрішній краї палітурки матимуть різну довжину.
 
-**No stretch, and things won't lie flat (aka gape)**
+**Не розтягується, і речі не будуть лежати рівно (так званий "зяючий")**
 
-If you simply sew the binding to the fabric, things will be fine at the outer edge of your binding. But the inner edge is shorter, and your binding fabric will be pushed together. The tension that this creates will make it rise, and your binding will not lie flat against your skin.
+Якщо ви просто пришиваєте палітурку до тканини, все буде добре на зовнішньому краю палітурки. Але внутрішній край коротший, і ваша палітурна тканина буде притиснута одна до одної. Натяг, який при цьому створюється, змусить її підніматися, і ваша палітурка не буде щільно прилягати до шкіри.
 
-**Stretch it just right, and it will look great**
+**Розтягніть його як слід, і він буде виглядати чудово**
 
-To fix this issue, you need to stretch your knit binding (and not the fabric) while attaching your binding. If you do it right, the outer edge will be stretched open a bit, while the inner edge will nicely fill out your curve and everything will lie flat.
+Щоб виправити цю проблему, потрібно розтягнути трикотажну в'язку (а не тканину) під час пришивання палітурки. Якщо ви все зробите правильно, зовнішній край буде трохи розтягнутий, а внутрішній красиво заповнить ваш вигин, і все буде лежати рівно.
 
-**If you stretch too much, things will wrinkle**
+**Якщо розтягнути занадто сильно, речі помнуться**
 
-Stretch your binding too much, and it will spring back too far, causing the main fabric to wrinkle.
+Занадто сильно розтягніть палітурку, і вона занадто сильно пружинитиме, що призведе до зморщування основної тканини.
 
-### Real life: variable stretch
+### Реальне життя: змінна розтяжка
 
-![As the curve changes, so should the stretch](knitbinding3.png)
+![Зі зміною кривої змінюється і розтягнення](knitbinding3.png)
 
-Straight seams exist, and although I've never come across one, maybe uniformly curved seams exist too. But more often than not, the curvature of your seam will vary.
+Існують прямі шви, і хоча я ніколи не стикався з такими, можливо, рівномірно вигнуті шви теж існують. Але найчастіше кривизна вашого шва буде різною.
 
-On a typical T-shirt neckline, the curve at the back of your neck is different from the front, and there's probably a somewhat tighter bend behind your shoulder seam.
+На типовому вирізі футболки вигин ззаду шиї відрізняється від переднього, а за плечовим швом, ймовірно, є дещо вужчий вигин.
 
-On a slight curve, the difference between the inner and outer edge is not so big, and a little bit of stretch is all you need. But on a tighter curve, the difference between the inner and outer edge of your binding will be more significant. And you'll need more stretch to accommodate for that.
+На невеликому вигині різниця між внутрішнім і зовнішнім краєм не така вже й велика, і все, що вам потрібно - це трохи розтягнути. Але на більш вузькому вигині різниця між внутрішнім і зовнішнім краєм палітурки буде більш значною. І вам знадобиться більше розтяжки, щоб пристосуватися до цього.
 
-So as you follow your seam, and it curves around necklines, or shoulders, or design features, you will have to adapt the amount of stretch to the situation.
+Тому, коли ви будете стежити за швом, а він вигинається навколо вирізу горловини, плечей або особливостей дизайну, вам доведеться адаптувати величину розтяжки до ситуації.
 
-## You cannot calculate the length of your knit binding
+## Ви не можете розрахувати довжину трикотажної в'язки
 
-I am not saying it is theoretically impossible. But I am saying that it is practically impossible.
+Я не кажу, що це теоретично неможливо. Але я кажу, що це практично неможливо.
 
-The length of your knit binding depends on the amount it needs to be stretched. This depends on the curves you have to follow, and the width of the binding, not to mention the strength of its stretchiness. There's just too many parameters to take into account to calculate your binding length accurately.
+Довжина вашої в'язальної палітурки залежить від того, наскільки її потрібно розтягнути. Це залежить від вигинів, яких вам доведеться дотримуватися, і ширини палітурки, не кажучи вже про силу її розтяжності. Для точного розрахунку довжини палітурки потрібно врахувати надто багато параметрів.
 
-### Do not do this
+### Не робіть цього
 
-There are a bunch of tutorials out on the internet that show you how to sew on knit binding. Many of those suggest something like _make the neck binding 90% of the length of the seam you are attaching it to_ (the percentage varies).
+В інтернеті є безліч уроків, які показують, як пришивати трикотажні палітурки. Багато з них пропонують щось на кшталт _зробити горловину зав'язкою на 90% довжини шва, до якого ви її прикріплюєте_ (відсоток варіюється).
 
-This idea is that you cut your binding, join its edges, and then sew it in the opening. That is (in my opinion) no good.
+Ідея полягає в тому, що ви розрізаєте палітурку, з'єднуєте її краї, а потім прошиваєте в отвір. Це (на мою думку) недобре.
 
-An alternative approach to sidestep the length issue is to attach the binding before you close the opening your binding goes in. For example, on a T-shirt you close one shoulder seam, attach the binding, then close the second shoulder seam.
+Альтернативний підхід до вирішення проблеми довжини полягає в тому, щоб прикріпити палітурку до того, як ви закриєте отвір, в який входить палітурка. Наприклад, на футболці ви закриваєте один плечовий шов, прикріплюєте палітурку, потім закриваєте другий плечовий шов.
 
-Obviously, that means your shoulder seam will cut through your binding which is a big no no in my book.
+Очевидно, що це означає, що ваш плечовий шов буде прорізати палітурку, що є великим "ні" в моїй книзі.
 
-### Instead, do this
+### Замість цього зробіть так
 
-- Cut your binding as long as the seam it needs to be sewn into. Not 90%, but 100%. This way, you know it's going to be too long, and that's what we want.
-- Mark the place you want your binding to be joined (say center back of the neckline) and place your binding 1cm beyond this point.
-- Start sewing your binding about 3cm or so from this point, and go all the way around. While you do so, make sure to adjust the stretch to whatever the curve requires. There's no tricks for this, you'll have to practice until it comes naturally to you.
-- When you make your way around and get close to the point you marked, stop about 3cm before that.
-- Now your entire binding is attached, apart from a 6cm or so stretch at the back. Pin both edges of your binding good sides together, making is exactly as long as needed and sew them together.
-- Sew the remaining 6cm of your binding.
+- Відріжте палітурку на довжину шва, в який вона має бути вшита. Не 90%, а 100%. Таким чином, ви знаєте, що це буде занадто довго, і це те, чого ми хочемо.
+- Позначте місце, де ви хочете з'єднати палітурку (скажімо, центр задньої частини вирізу горловини), і розмістіть палітурку на 1 см далі від цієї точки.
+- Почніть прошивати палітурку приблизно через 3 см від цієї точки і пройдіть по всьому периметру. Під час цього не забудьте відрегулювати розтягнення відповідно до того, як цього вимагає крива. Тут немає ніяких хитрощів, вам доведеться потренуватися, поки це не стане для вас природним.
+- Коли ви зробите обхід і наблизитесь до позначеної точки, зупиніться приблизно за 3 см до неї.
+- Тепер вся палітурка прикріплена, за винятком 6-сантиметрової розтяжки ззаду. Скріпіть обидва краї палітурки виворітними сторонами разом, зробивши їх рівно настільки довгими, наскільки це необхідно, і зшийте їх разом.
+- Зшийте решту 6 см палітурки.
 
-This way, there is no guessing how long your binding should be, and the binding seam sits where you want it to sit.
+Таким чином, вам не доведеться гадати, якої довжини має бути палітурка, а палітурний шов ляже саме там, де ви хочете, щоб він лежав.
 
-> For detailed instructions, check [the Aaron documentation](/docs/patterns/aaron/)
+> Детальні інструкції можна знайти на сайті [та в документації Aaron](/docs/patterns/aaron/)
+
+## Alternate method
+
+While the above instructions describe one way to attach a knit band or knit binding, it is not the only method that can be used. An alternate method is to cut the exact amount of binding needed, sew it into a ring, and then attach the ring to the garment opening.
+
+Some people feel that this is an easier method for novice sewists. They are told exactly how much binding to use, and they do not have to guess how much they should be stretching the binding as they sew.
+
+1. Measure the garment opening that the binding will cover. Be sure to measure at the seamline, to account for seam allowance.
+
+2. Check the pattern instructions for the length of binding to use. Or, use a length 80-90% smaller than the opening based on the stretchiness of the binding fabric. (For example, 80% for very stretchy fabric, 90% for less stretchy fabric.)
+
+3. Cut the length of binding required plus seam allowance at each end.
+
+4. Sew the binding ends right sides together to form a closed loop or ring. Trim excess seam allowance.
+
+5. Fold the ring together at the seam to divide the ring into equal halves. Mark or insert pins at each end fold. One pin will be in the seam, and the other will mark the halfway point around the ring.
+
+6. Unfold the ring and fold it again into equal halves so the two marks/pins meet together in the middle. Again mark or insert pins into each end fold. Now there are 4 pins or marks dividing the ring into 4 quarters of equal length.
+
+7. Similarly, fold the garment opening and mark or insert pins to divide the garment opening into 4 quarters of equal length.
+
+8. Match the marks or pins on the binding with the ones on the garment opening. (Try to align it so the seam is at the most inconspicuous location in the garment opening. For example, if binding a neck opening align the binding so the seam is at the back of the neck opening.)
+
+9. Pin the binding ring to the garment opening at each quarter mark/pin. This ensures that the binding is evenly distributed around the garment opening.
+
+10. Sew the binding to the opening, one quarter at a time. While sewing, evenly stretch each quarter segment of binding to match the length of the quarter segment of garment opening.

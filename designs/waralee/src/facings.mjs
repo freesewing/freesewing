@@ -90,11 +90,13 @@ function waraleeFacings({
   if (paperless) {
     if (options.frontPocket && 'welt' == options.frontPocketStyle) {
       macro('hd', {
+        id: 1,
         from: points.frontTL,
         to: points.frontTR,
         y: points.frontTL.y + 15,
       })
       macro('vd', {
+        id: 2,
         from: points.frontTL,
         to: points.frontBL,
         x: points.frontTL.x + 15,
@@ -102,11 +104,13 @@ function waraleeFacings({
     }
     if (options.backPocket) {
       macro('hd', {
+        id: 3,
         from: points.backTL,
         to: points.backTR,
         y: points.backTL.y + 15,
       })
       macro('vd', {
+        id: 4,
         from: points.backTL,
         to: points.backBL,
         x: points.backTL.x + 15,

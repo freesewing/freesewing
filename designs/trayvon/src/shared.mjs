@@ -12,7 +12,7 @@ export const options = {
   },
 }
 export const calculateHelpers = ({ store, measurements, options, absoluteOptions }) => {
-  let halfLength =
+  const halfLength =
     (measurements.hpsToWaistBack + measurements.waistToHips + measurements.neck / 2) *
     (1 + options.lengthBonus)
   let backTip = absoluteOptions.tipWidth * 0.7
@@ -28,9 +28,9 @@ export const draftTieShape = (
   knotWidth,
   notch = false
 ) => {
-  let hl = store.get('halfLength')
-  let ht = tipWidth / 2
-  let hk = knotWidth / 2
+  const hl = store.get('halfLength')
+  const ht = tipWidth / 2
+  const hk = knotWidth / 2
 
   points.tip = new Point(0, 0)
   points.mid = new Point(0, hl)
@@ -63,39 +63,45 @@ export const draftTieShape = (
     .close()
 }
 
-export const tieShapeDimensions = ({ points, macro, paths, Path }, lining = false) => {
+export const tieShapeDimensions = ({ points, macro, paths, Path, complete }, lining = false) => {
   macro('hd', {
+    id: 'wFull',
     from: points.tipLeft,
     to: points.tipRight,
     y: points.tip.y - 15,
   })
   macro('vd', {
+    id: 'hTip',
     from: points.tipRight,
     to: points.tip,
     x: points.tipRight.x + 15,
   })
   if (lining) {
     macro('vd', {
+      id: 'hFull',
       from: points.cutRight,
       to: points.tip,
       x: points.cutRight.x + 30,
     })
   } else {
     macro('hd', {
+      id: 'wAtTip',
       from: points._tmp3,
       to: points._tmp1,
       y: points.midLeft.y + 15,
     })
     macro('vd', {
+      id: 'hLength',
       from: points.mid,
       to: points.tip,
       x: points.tipRight.x + 30,
     })
-    paths.hint = new Path()
-      .move(points._tmp3)
-      .line(points._tmp1)
-      .line(points.midRight)
-      .attr('class', 'dotted')
+    if (complete)
+      paths.hint = new Path()
+        .move(points._tmp3)
+        .line(points._tmp1)
+        .line(points.midRight)
+        .attr('class', 'dotted')
   }
 }
 

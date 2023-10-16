@@ -1,0 +1,50 @@
+{
+  "t": "Benjamin bow tie",
+  "d": "Benjamin is a bow tie pattern with four different shape options.",
+  "p": {
+    "base": "Base",
+    "bow1": "Bow",
+    "bow2": "Bow",
+    "bow3": "Bow",
+    "ribbon": "Ribbon"
+  },
+  "s": {},
+  "o": {
+    "adjustmentRibbon": {
+      "t": "Adjustment ribbon",
+      "d": "Whether or not to include an adjustment ribbon"
+    },
+    "bandLength": {
+      "t": "Band length",
+      "d": "Length of the band"
+    },
+    "tipWidth": {
+      "t": "Tip width",
+      "d": "Width of the tips"
+    },
+    "knotWidth": {
+      "t": "Knot width",
+      "d": "Width of the knot"
+    },
+    "bowLength": {
+      "t": "Bow length",
+      "d": "Length of the bow (when knotted)"
+    },
+    "bowStyle": {
+      "t": "Bow style",
+      "d": "Style of the bow"
+    },
+    "endStyle": {
+      "t": "End style",
+      "d": "Style of the bow ends"
+    },
+    "collarEase": {
+      "t": "Collar ease",
+      "d": "The amount of ease at your neck"
+    },
+    "ribbonWidth": {
+      "t": "Ribbon width",
+      "d": "Width of the ribbon"
+    }
+  }
+}

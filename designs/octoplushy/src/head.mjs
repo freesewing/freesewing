@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function octoplushyHeadSection(
   partNumber,
   {
@@ -10,12 +8,11 @@ function octoplushyHeadSection(
     paths,
     Snippet,
     snippets,
-    complete,
     sa,
-    paperless,
     macro,
     utils,
     store,
+    complete,
     part,
   }
 ) {
@@ -28,10 +25,10 @@ function octoplushyHeadSection(
   const h = options.sizeConstant * options.size * 0.5
   const sections = options.type == 'squid' ? 10 : 8
 
-  let sectionWidth = (w * 2) / sections
-  let neckWidth = sectionWidth * options.neckWidth
-  let armWidth = (w * options.armWidth * options.bottomTopArmRatio * 3.1415) / 2
-  let armAdjustedWidth = armWidth * options.bottomTopArmRatio
+  const sectionWidth = (w * 2) / sections
+  const neckWidth = sectionWidth * options.neckWidth
+  const armWidth = w * options.armWidth * options.bottomTopArmRatio * 3.1415
+  const armAdjustedWidth = armWidth * options.bottomTopArmRatio
   let armLength = ((w * 2) / 3.1415) * options.armLength
   if (options.type == 'octopus') {
     armLength *= 2
@@ -43,13 +40,6 @@ function octoplushyHeadSection(
     }
   }
 
-  // console.log({ w: w })
-  // console.log({ sectionWidth: sectionWidth })
-  // console.log({ neckWidth: neckWidth })
-  // console.log({ armAdjustedWidth: w * options.armWidth * options.bottomTopArmRatio })
-  // console.log({ toparmWidth: armAdjustedWidth })
-  // console.log({ armLength: armLength })
-
   points.topLeft = new Point(-1 * w, -1 * h)
   points.topRight = new Point(w, -1 * h)
   points.bottomLeft = new Point(-1 * w, h)
@@ -60,11 +50,10 @@ function octoplushyHeadSection(
   points.sectionTop = new Point(0, -1 * h)
   points.sectionBottom = new Point(0, h)
   points.sectionLeft = new Point((-1 * sectionWidth) / 2, 0)
-  let sectionMid = points.sectionLeft.shiftFractionTowards(points.sectionTop, 0.5)
 
+  const sectionMid = points.sectionLeft.shiftFractionTowards(points.sectionTop, 0.5)
   const sectionAngle = sectionMid.angle(points.sectionTop)
-
-  let lineEnd = sectionMid.shift(sectionAngle - 90, 1000)
+  const lineEnd = sectionMid.shift(sectionAngle - 90, 1000)
   points.circleCenter = utils.beamIntersectsY(sectionMid, lineEnd, 0)
 
   const circleRadius = points.circleCenter.dist(points.sectionTop)
@@ -97,7 +86,7 @@ function octoplushyHeadSection(
       points.lowerLeft.y
     )
 
-    let currentNeckWidth = (points.sectionTop.x - points.sectionBottomLeft.x) * 2
+    const currentNeckWidth = (points.sectionTop.x - points.sectionBottomLeft.x) * 2
 
     diff = neckWidth - currentNeckWidth
     div = div * (currentNeckWidth / neckWidth)
@@ -118,7 +107,7 @@ function octoplushyHeadSection(
     points.lowerLeft.y
   )
 
-  let sectionLeft = paths.circle.split(points.sectionTop)[1].split(points.sectionBottomLeft)[0]
+  const sectionLeft = paths.circle.split(points.sectionTop)[1].split(points.sectionBottomLeft)[0]
 
   points.sectionTop = sectionLeft.ops[0].to.clone()
   points.sectionTopCp1 = sectionLeft.ops[1].cp1.clone()
@@ -180,8 +169,8 @@ function octoplushyHeadSection(
   )
 
   if (options.type == 'octopus') {
-    let octopusHeadFactor = 0.7
-    let sectionHeight = points.sectionBottom.dist(points.sectionTop)
+    const octopusHeadFactor = 0.7
+    const sectionHeight = points.sectionBottom.dist(points.sectionTop)
     points.sectionTop = points.sectionTop.shift(90, sectionHeight * octopusHeadFactor)
     points.sectionTopCp1 = points.sectionTopCp1.shift(90, sectionHeight * octopusHeadFactor)
     points.sectionLeft = points.sectionLeft.shift(90, (sectionHeight * octopusHeadFactor) / 1.1)
@@ -194,7 +183,7 @@ function octoplushyHeadSection(
       (sectionHeight * octopusHeadFactor) / 1.1
     )
 
-    let pSkirtLeft = new Path()
+    const pSkirtLeft = new Path()
       .move(points.skirtBottomLeft)
       .curve(points.skirtBottomLeft, points.sectionBottomLeftCp1, points.sectionBottomLeft)
 
@@ -235,19 +224,19 @@ function octoplushyHeadSection(
       points.armBottom = points.armBottom.flipY(points.tentacleLeft)
       points.armBottomCp2 = points.armBottomCp2.flipY(points.tentacleLeft)
 
-      let pLeftSection = new Path()
+      const pLeftSection = new Path()
         .move(points.sectionLeft)
         .curve(points.sectionLeftCp2, points.sectionTopCp1, points.sectionTop)
       points.finSection = pLeftSection.shiftFractionAlong(0.45)
-      let pLeftCurves = pLeftSection.split(points.finSection)
+      const pLeftCurves = pLeftSection.split(points.finSection)
 
       points.sectionLeftCp2 = pLeftCurves[0].ops[1].cp1.clone()
       points.finSectionCp1 = pLeftCurves[0].ops[1].cp2.clone()
       points.finFold = points.finSection.rotate(-20, points.sectionTop)
       points.finSeam = points.finSection.rotate(-40, points.sectionTop)
-      let foldAngle = points.sectionTop.angle(points.finFold)
-      let aCp1 = points.sectionTop.angle(pLeftCurves[1].ops[1].cp1) - foldAngle
-      let aCp2 = points.sectionTop.angle(pLeftCurves[1].ops[1].cp2) - foldAngle
+      const foldAngle = points.sectionTop.angle(points.finFold)
+      const aCp1 = points.sectionTop.angle(pLeftCurves[1].ops[1].cp1) - foldAngle
+      const aCp2 = points.sectionTop.angle(pLeftCurves[1].ops[1].cp2) - foldAngle
       points.finSeamCp2 = points.sectionTop.shift(
         foldAngle - aCp1,
         points.sectionTop.dist(pLeftCurves[1].ops[1].cp1)
@@ -387,212 +376,230 @@ function octoplushyHeadSection(
     .close()
     .attr('class', 'fabric')
 
-  // Complete?
-  if (complete) {
-    points.logo = points.sectionTop.shiftFractionTowards(
-      points.sectionBottom,
-      options.type == 'octoplushy' ? 0.3 : 0.5
+  points.logo = points.sectionTop.shiftFractionTowards(
+    points.sectionBottom,
+    options.type == 'octoplushy' ? 0.3 : 0.5
+  )
+  snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.4)
+  points.gridAnchor = points.skirtTopMiddle.clone()
+
+  if (partNumber == 1) {
+    store.cutlist.addCut({ cut: 2, from: 'fabric', identical: true })
+  } else {
+    store.cutlist.addCut({ cut: 8, from: 'fabric', identical: true })
+  }
+
+  points.titleAnchor = points.sectionBottom
+    .shiftFractionTowards(points.sectionTop, options.type == 'octoplushy' ? 0.3 : 0.4)
+    .shift(180, sectionWidth * 0.2)
+  macro('title', {
+    at: points.titleAnchor,
+    nr: 1 + partNumber * 3,
+    title: 'head' + (partNumber == 0 ? '' : ' (a)'),
+    rotation: 90,
+    scale: options.type == 'octoplushy' ? 0.35 : 0.5,
+  })
+
+  if (options.type == 'octoplushy') {
+    points.eyeLeft = paths.sectionLeft.shiftFractionAlong(0.465)
+    points.eyeRight = points.eyeLeft.flipX(points.sectionTop)
+    if (complete) {
+      points.eyeLeft.addText('eye', 'center')
+      points.eyeRight.addText('eye', 'center')
+    }
+    snippets.eyeLeft = new Snippet('button', points.eyeLeft)
+    snippets.eyeRight = new Snippet('button', points.eyeRight)
+
+    points.mouthMiddle = points.sectionBottom.shiftFractionTowards(points.sectionTop, 0.45)
+    points.mouthLeft = points.mouthMiddle.shift(180, sectionWidth / 4)
+    points.mouthRight = points.mouthMiddle.shift(0, sectionWidth / 4)
+    points.mouthBottom = points.mouthMiddle.shift(270, sectionWidth / 4)
+    points.mouthLeftCp1 = points.mouthLeft.shift(270, (sectionWidth / 4) * c)
+    points.mouthRightCp2 = points.mouthRight.shift(270, (sectionWidth / 4) * c)
+    points.mouthBottomCp2 = points.mouthBottom.shift(180, (sectionWidth / 4) * c)
+    points.mouthBottomCp1 = points.mouthBottom.shift(0, (sectionWidth / 4) * c)
+    paths.mouth = new Path()
+      .move(points.mouthLeft)
+      .curve(points.mouthLeftCp1, points.mouthBottomCp2, points.mouthBottom)
+      .curve(points.mouthBottomCp1, points.mouthRightCp2, points.mouthRight)
+      .attr('class', 'stroke-lg')
+    if (complete) paths.mouth.addText('mouth', 'text-xs center')
+  }
+
+  if (options.type == 'squid' && partNumber == 1 && complete) {
+    paths.fold = new Path()
+      .move(points.sectionTop)
+      .line(points.finFold)
+      .addClass('hint dotted')
+      .addText('foldLine', 'center')
+  }
+  if (options.type == 'octopus') {
+    points.skirtArmLeft = utils.curveIntersectsX(
+      points.sectionBottomLeft,
+      points.sectionBottomLeftCp1,
+      points.skirtBottomLeft,
+      points.skirtBottomLeft,
+      points.armTopLeft.x
     )
-    snippets.logo = new Snippet('logo', points.logo).attr('data-scale', 0.4)
-
-    points.titleAnchor = points.sectionBottom
-      .shiftFractionTowards(points.sectionTop, options.type == 'octoplushy' ? 0.3 : 0.4)
-      .shift(180, sectionWidth * 0.2)
-    macro('title', {
-      at: points.titleAnchor,
-      nr: 1 + partNumber * 3,
-      title: 'Head' + (partNumber == 0 ? '' : ' (a)'),
-      rotation: 90,
-      scale: options.type == 'octoplushy' ? 0.35 : 0.5,
-    })
-
-    if (options.type == 'octoplushy') {
-      points.eyeLeft = paths.sectionLeft
-        .shiftFractionAlong(0.465)
-        .attr('data-text', 'eye')
-        .attr('data-text-class', 'center')
-      points.eyeRight = points.eyeLeft
-        .flipX(points.sectionTop)
-        .attr('data-text', 'eye')
-        .attr('data-text-class', 'center')
-      snippets.eyeLeft = new Snippet('button', points.eyeLeft)
-      snippets.eyeRight = new Snippet('button', points.eyeRight)
-
-      points.mouthMiddle = points.sectionBottom.shiftFractionTowards(points.sectionTop, 0.45)
-      points.mouthLeft = points.mouthMiddle.shift(180, sectionWidth / 4)
-      points.mouthRight = points.mouthMiddle.shift(0, sectionWidth / 4)
-      points.mouthBottom = points.mouthMiddle.shift(270, sectionWidth / 4)
-      points.mouthLeftCp1 = points.mouthLeft.shift(270, (sectionWidth / 4) * c)
-      points.mouthRightCp2 = points.mouthRight.shift(270, (sectionWidth / 4) * c)
-      points.mouthBottomCp2 = points.mouthBottom.shift(180, (sectionWidth / 4) * c)
-      points.mouthBottomCp1 = points.mouthBottom.shift(0, (sectionWidth / 4) * c)
-      paths.mouth = new Path()
-        .move(points.mouthLeft)
-        .curve(points.mouthLeftCp1, points.mouthBottomCp2, points.mouthBottom)
-        .curve(points.mouthBottomCp1, points.mouthRightCp2, points.mouthRight)
-        .attr('data-text', 'mouth')
-        .attr('data-text-class', 'text-xs center')
-        .attr('class', 'stroke-lg')
-    }
-
-    if (options.type == 'squid' && partNumber == 1) {
-      paths.fold = new Path()
-        .move(points.sectionTop)
-        .line(points.finFold)
-        .attr('data-text', 'fold line')
-        .attr('data-text-class', 'center')
-        .attr('class', 'hint dotted')
-    }
-    if (options.type == 'octopus') {
-      points.skirtArmLeft = utils.curveIntersectsX(
-        points.sectionBottomLeft,
-        points.sectionBottomLeftCp1,
-        points.skirtBottomLeft,
-        points.skirtBottomLeft,
-        points.armTopLeft.x
-      )
-      points.skirtArmRight = points.skirtArmLeft.flipX(points.sectionTop)
+    points.skirtArmRight = points.skirtArmLeft.flipX(points.sectionTop)
+    if (complete) {
       paths.armLeftLine = new Path()
         .move(points.skirtArmLeft)
         .line(points.armTopLeft)
-        .attr('data-text', 'stitch line')
-        .attr('data-text-class', 'center')
-        .attr('class', 'hint dotted')
+        .addClass('class', 'hint dotted')
+        .addText('stitchLine', 'center')
       paths.armRightLine = new Path()
         .move(points.armTopRight)
         .line(points.skirtArmRight)
-        .attr('data-text', 'stitch line')
-        .attr('data-text-class', 'center')
-        .attr('class', 'hint dotted')
-    }
-    points.sectionTop.attr('data-text', 'A').attr('data-text-class', 'center')
-    points.armTopLeft.attr('data-text', 'B').attr('data-text-class', 'center')
-    points.armTopRight.attr('data-text', 'B').attr('data-text-class', 'center')
-
-    snippets.left = new Snippet('notch', points.sectionLeft)
-    snippets.right = new Snippet('notch', points.sectionRight)
-    snippets.bottomLeft = new Snippet('notch', points.sectionBottomLeft)
-    snippets.bottomRight = new Snippet('notch', points.sectionBottomRight)
-    for (var i = 0; i < 4; i++) {
-      snippets[`armLeft${i}`] = new Snippet(
-        'notch',
-        points.armTopLeft.shiftFractionTowards(points.armBottomLeft, i / 4)
-      )
-      snippets[`armRight${i}`] = new Snippet(
-        'notch',
-        points.armTopRight.shiftFractionTowards(points.armBottomRight, i / 4)
-      )
-    }
-
-    if (sa) {
-      paths.sa = paths.section.offset(sa).attr('class', 'fabric sa')
+        .addClass('class', 'hint dotted')
+        .addText('stitchLine', 'center')
     }
   }
+  if (complete) {
+    points.sectionTop.addText('A', 'center')
+    points.armTopLeft.addText('B', 'center')
+    points.armTopRight.addText('B', 'center')
+  }
 
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.sectionLeft,
-      to: points.sectionRight,
-      y: points.sectionTop.y - sa,
-    })
-    macro('hd', {
-      from: points.armTopLeft,
-      to: points.armTopRight,
-      y: points.armTopRight.y,
-    })
-    macro('hd', {
-      from: points.armBottomLeft,
-      to: points.armBottomRight,
-      y: points.armBottom.y + sa + 10,
-    })
+  snippets.left = new Snippet('notch', points.sectionLeft)
+  snippets.right = new Snippet('notch', points.sectionRight)
+  snippets.bottomLeft = new Snippet('notch', points.sectionBottomLeft)
+  snippets.bottomRight = new Snippet('notch', points.sectionBottomRight)
+  for (var i = 0; i < 4; i++) {
+    snippets[`armLeft${i}`] = new Snippet(
+      'notch',
+      points.armTopLeft.shiftFractionTowards(points.armBottomLeft, i / 4)
+    )
+    snippets[`armRight${i}`] = new Snippet(
+      'notch',
+      points.armTopRight.shiftFractionTowards(points.armBottomRight, i / 4)
+    )
+  }
 
-    macro('vd', {
-      from: points.sectionTop,
-      to: points.sectionRight,
-      x: points.skirtBottomRight.x + sa + 10,
-    })
-    macro('vd', {
-      from: points.sectionTop,
-      to: points.sectionBottomRight,
-      x: points.skirtBottomRight.x + sa + 20,
-    })
-    macro('vd', {
-      from: points.sectionTop,
+  if (sa) {
+    paths.sa = paths.section.offset(sa).attr('class', 'fabric sa')
+  }
+
+  macro('hd', {
+    from: points.sectionLeft,
+    to: points.sectionRight,
+    y: points.sectionTop.y - sa,
+    id: 'headWidth',
+  })
+  macro('hd', {
+    from: points.armTopLeft,
+    to: points.armTopRight,
+    y: points.armTopRight.y,
+    id: 'topArmWidth',
+  })
+  macro('hd', {
+    from: points.armBottomLeft,
+    to: points.armBottomRight,
+    y: points.armBottom.y + sa + 10,
+    id: 'bottomArmWidth',
+  })
+
+  macro('vd', {
+    from: points.sectionTop,
+    to: points.sectionRight,
+    x: points.skirtBottomRight.x + sa + 10,
+    id: 'headMidHeight',
+  })
+  macro('vd', {
+    from: points.sectionTop,
+    to: points.sectionBottomRight,
+    x: points.skirtBottomRight.x + sa + 20,
+    id: 'topToNeckHeight',
+  })
+  macro('vd', {
+    from: points.sectionTop,
+    to: points.skirtBottomRight,
+    x: points.skirtBottomRight.x + sa + 30,
+    id: 'topToArmHeight',
+  })
+  macro('vd', {
+    from: points.sectionTop,
+    to: points.armBottom,
+    x: points.skirtBottomRight.x + sa + 40,
+    id: 'totalHeight',
+  })
+
+  if (options.type == 'octopus') {
+    macro('hd', {
+      from: points.skirtBottomLeft,
       to: points.skirtBottomRight,
-      x: points.skirtBottomRight.x + sa + 30,
+      y: points.skirtBottomRight.y,
+      id: 'skirtWidth',
     })
     macro('vd', {
-      from: points.sectionTop,
-      to: points.armBottom,
-      x: points.skirtBottomRight.x + sa + 40,
+      from: points.skirtBottomRight,
+      to: points.armTopRight,
+      x: points.skirtBottomRight.x + sa + 30,
+      id: 'skirtHeight',
     })
-
-    if (options.type == 'octopus') {
+  }
+  if (options.type == 'squid') {
+    macro('vd', {
+      from: points.armTopLeft,
+      to: points.sectionBottomLeft,
+      x: points.armTopLeft.x - sa - 10,
+      id: 'neckToArm',
+    })
+    macro('vd', {
+      from: points.sectionBottomLeft,
+      to: points.sectionMidLeft,
+      x: points.armTopLeft.x - sa - 10,
+      id: 'sectionHeight',
+    })
+    if (partNumber == 1) {
       macro('hd', {
-        from: points.skirtBottomLeft,
-        to: points.skirtBottomRight,
-        y: points.skirtBottomRight.y,
+        from: points.tentacleLeft,
+        to: points.tentacleRight,
+        y: points.tentacleRight.y,
+        id: 'tentacleWidth',
+      })
+      macro('hd', {
+        from: points.finSeam,
+        to: points.sectionTop,
+        y: points.sectionTop.y,
+        id: 'finWidth',
+      })
+      macro('hd', {
+        from: points.finSeam,
+        to: points.finSection,
+        y: points.finSection.y,
+        id: 'finToHead',
+      })
+      macro('hd', {
+        from: points.finFold,
+        to: points.finSection,
+        y: points.finFold.y,
+        id: 'foldToHead',
       })
       macro('vd', {
-        from: points.skirtBottomRight,
-        to: points.armTopRight,
-        x: points.skirtBottomRight.x + sa + 30,
-      })
-    }
-    if (options.type == 'squid') {
-      macro('vd', {
-        from: points.armTopLeft,
-        to: points.sectionBottomLeft,
-        x: points.armTopLeft.x - sa - 10,
+        from: points.armBottom,
+        to: points.tentacleLeft,
+        x: points.tentacleLeft.x - sa - 10,
+        id: 'tentacleHeight',
       })
       macro('vd', {
-        from: points.sectionBottomLeft,
-        to: points.sectionMidLeft,
-        x: points.armTopLeft.x - sa - 10,
+        from: points.finSeam,
+        to: points.sectionTop,
+        x: points.finSeam.x - sa,
+        id: 'finHeight',
       })
-      if (partNumber == 1) {
-        macro('hd', {
-          from: points.tentacleLeft,
-          to: points.tentacleRight,
-          y: points.tentacleRight.y,
-        })
-        macro('hd', {
-          from: points.finSeam,
-          to: points.sectionTop,
-          y: points.sectionTop.y,
-        })
-        macro('hd', {
-          from: points.finSeam,
-          to: points.finSection,
-          y: points.finSection.y,
-        })
-        macro('hd', {
-          from: points.finFold,
-          to: points.finSection,
-          y: points.finFold.y,
-        })
-        macro('vd', {
-          from: points.armBottom,
-          to: points.tentacleLeft,
-          x: points.tentacleLeft.x - sa - 10,
-        })
-        macro('vd', {
-          from: points.finSeam,
-          to: points.sectionTop,
-          x: points.finSeam.x - sa,
-        })
-        macro('vd', {
-          from: points.finFold,
-          to: points.sectionTop,
-          x: points.finSeam.x - sa - 10,
-        })
-        macro('vd', {
-          from: points.finSection,
-          to: points.sectionTop,
-          x: points.finSeam.x - sa - 20,
-        })
-      }
+      macro('vd', {
+        from: points.finFold,
+        to: points.sectionTop,
+        x: points.finSeam.x - sa - 10,
+        id: 'finFoldHeight',
+      })
+      macro('vd', {
+        from: points.finSection,
+        to: points.sectionTop,
+        x: points.finSeam.x - sa - 20,
+        id: 'finToHeadHeight',
+      })
     }
   }
   return part
@@ -600,36 +607,68 @@ function octoplushyHeadSection(
 
 const options = {
   sizeConstant: 200,
-  size: { pct: 100, min: 5, max: 500, menu: 'style' },
+  size: {
+    pct: 100,
+    min: 5,
+    max: 500,
+    menu: 'style',
+    toAbs: (val, { options }, mergedOptions) =>
+      ((mergedOptions.sizeConstant * val * 2) / 3.1415) *
+      (options.type === undefined
+        ? 1
+        : options.type == 'octopus'
+        ? 1.7
+        : options.type == 'squid'
+        ? 2
+        : 1),
+  },
   type: { dflt: 'octoplushy', list: ['octoplushy', 'octopus', 'squid'], menu: 'style' },
   armWidth: { pct: 15, min: 10, max: 30, menu: 'style' },
-  armLength: { pct: 200, min: 100, max: 500, menu: 'style' },
+  armLength: {
+    pct: 200,
+    min: 100,
+    max: 500,
+    menu: 'style',
+    toAbs: (val, { options }, mergedOptions) =>
+      ((mergedOptions.sizeConstant *
+        (options.size === undefined ? mergedOptions.size : options.size) *
+        2) /
+        3.1415) *
+      val *
+      (options.type === undefined
+        ? 1
+        : options.type == 'octopus'
+        ? 2
+        : options.type == 'squid'
+        ? 1.8
+        : 1),
+  },
   neckWidth: { pct: 25, min: 25, max: 45, menu: 'style' },
   armTaper: { pct: 25, min: 0, max: 50, menu: 'style' },
-  bottomTopArmRatio: { pct: 87, min: 75, max: 100, menu: 'style' },
+  bottomTopArmRatio: { pct: 57, min: 25, max: 75, menu: 'style' },
   bottomArmReduction: {
     pct: 90,
     min: 75,
     max: 125,
-    menu: ({ options }) => (options.type == 'octoplushy' ? 'style' : false),
+    // eslint-disable-next-line no-unused-vars
+    menu: (settings, mergedOptions) => (mergedOptions?.type === 'octoplushy' ? 'style' : false),
   },
   bottomArmReductionPlushy: {
     pct: 80,
     min: 75,
     max: 125,
-    menu: ({ options }) => (options.type != 'octoplushy' ? 'style' : false),
+    // eslint-disable-next-line no-unused-vars
+    menu: (settings, mergedOptions) => (mergedOptions?.type !== 'octoplushy' ? 'style' : false),
   },
 }
 
 export const headSection1 = {
   name: 'octoplushy.headSection1',
   options,
-  plugins: [ pluginBundle ],
   draft: (params) => octoplushyHeadSection(0, params),
 }
 export const headSection2 = {
   name: 'octoplushy.headSection2',
   options,
-  plugins: [ pluginBundle ],
   draft: (params) => octoplushyHeadSection(1, params),
 }

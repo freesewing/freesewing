@@ -1,26 +1,26 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-import { measurements, options, BuildMainShape } from './shape.mjs'
+import { measurements, optionalMeasurements, options, BuildMainShape } from './shape.mjs'
 
-function penelopeFront(params) {
-  const { options, Path, points, paths, Snippet, snippets, complete, sa, paperless, macro, part } =
-    params
+export const front = {
+  name: 'penelope.front',
+  measurements,
+  optionalMeasurements,
+  options,
+  draft: (params) => {
+    const { options, Path, points, paths, Snippet, snippets, sa, macro, store, part } = params
 
-  BuildMainShape(params, true)
+    BuildMainShape(params, true)
 
-  paths.seam = paths.leftSide
-    .clone()
-    .join(paths.bottom)
-    .join(paths.sideSeam)
-    .join(paths.waist)
-    .attr('class', 'fabric')
+    paths.seam = paths.leftSide
+      .clone()
+      .join(paths.bottom)
+      .join(paths.sideSeam)
+      .join(paths.waist)
+      .attr('class', 'fabric')
 
-  // Complete?
-  if (complete) {
     macro('cutonfold', {
       from: points.lWaist,
       to: points.lLeg,
-      margin: 5,
-      offset: 10,
+      id: 'front',
     })
     macro('title', {
       nr: 1,
@@ -37,6 +37,8 @@ function penelopeFront(params) {
 
     snippets.logo = new Snippet('logo', points.logoAnchor)
 
+    store.cutlist.addCut({ cut: 1, from: 'fabric' })
+
     if (sa) {
       paths.sa = new Path()
         .move(points.lHem)
@@ -45,22 +47,19 @@ function penelopeFront(params) {
         .attr('class', 'fabric sa')
     }
 
-    if (paperless) {
-      macro('hd', {
-        from: points.lHem,
-        to: points.rHem,
-        y: points.rHem.y - options.paperlessOffset,
-      })
-    }
-  }
+    macro('hd', {
+      from: points.lLeg,
+      to: points.rLeg,
+      y: points.rHem.y + sa + options.paperlessOffset,
+      id: 'legWidth',
+    })
+    macro('hd', {
+      from: points.lHem,
+      to: points.rHem,
+      y: points.rHem.y + sa + options.paperlessOffset * 2,
+      id: 'hemWidth',
+    })
 
-  return part
-}
-
-export const front = {
-  name: 'penelope.front',
-  measurements,
-  options,
-  plugins: [pluginBundle],
-  draft: penelopeFront,
+    return part
+  },
 }

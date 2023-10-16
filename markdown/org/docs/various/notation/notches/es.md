@@ -8,7 +8,7 @@ Un estilo alternativo muestra una cruz en un círculo. Este estilo se utiliza pa
 
 <Legend part="notches"> 
 
-The default notch style (shown left) and alternative style for notches on the back
+El estilo de muesca por defecto (mostrado a la izquierda) y el estilo alternativo para muescas en la parte posterior
 
 </Legend>
 

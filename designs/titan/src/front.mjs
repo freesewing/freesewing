@@ -8,7 +8,6 @@ function titanFront({
   measurements,
   options,
   complete,
-  paperless,
   store,
   macro,
   utils,
@@ -174,8 +173,6 @@ function titanFront({
   const adaptOutseam = () => adaptSeam('out')
   const adaptInseam = () => adaptSeam('in')
 
-  let adjustment_warning = false
-
   // Let's get to work
   points.waistX = new Point(measurements.waistFrontArc * (1 + options.waistEase), 0)
   points.upperLegY = new Point(0, measurements.waistToUpperLeg)
@@ -238,7 +235,7 @@ function titanFront({
 
   if (options.fitCrossSeam && options.fitCrossSeamFront) {
     let delta = crotchSeamDelta()
-    let previous_delta = delta
+    let previous_delta
     let rotate = ['waistIn', 'waistOut', 'cfWaist']
     let saved = []
     let run = 0
@@ -267,12 +264,12 @@ function titanFront({
       points.fork = saved.fork
     }
     if (Math.abs(delta) > 1 || Math.abs(delta) > Math.abs(previous_delta)) {
-      log.warning(
+      log.warn(
         'Unable to adjust the front crotch seam to fit the given measurements, after ' +
           run +
           ' iterations.'
       )
-      adjustment_warning = true
+      store.flag.warn({ msg: 'titan:crossSeamFitFailedFront' })
     }
   }
 
@@ -315,292 +312,143 @@ function titanFront({
   // Seamline
   paths.seam = drawPath().attr('class', 'fabric')
 
-  if (complete) {
-    points.grainlineTop.y = points.styleWaistIn.y
-    macro('grainline', {
-      from: points.grainlineTop,
-      to: points.grainlineBottom,
-    })
-    points.logoAnchor = new Point(points.crotchSeamCurveStart.x / 2, points.fork.y)
-    snippets.logo = new Snippet('logo', points.logoAnchor)
-    points.titleAnchor = points.logoAnchor.shift(-90, 60)
-    macro('title', {
-      nr: 2,
-      title: 'front',
-      at: points.titleAnchor,
-    })
-    /*
-    //notches
-    if (options.fitGuides) {
-      points.waistMid = points.waistOut.shiftFractionTowards(points.waistIn, 0.5)
-      points.seatMid = points.waistMid
-        .shiftTowards(points.waistOut, measurements.waistToSeat)
-        .rotate(90, points.waistMid)
-      points.seatInTarget = points.seatOut.shiftOutwards(points.seatMid, measurements.seat / 4)
-      points.seatOutTarget = points.seatMid.shiftTowards(points.seatOut, measurements.seat / 4)
-      points.hipsInTarget = points.waistIn
-        .shiftTowards(points.waistOut, measurements.waistToHips)
-        .rotate(90, points.waistIn)
-      points.hipsOutTarget = points.waistOut
-        .shiftTowards(points.waistIn, measurements.waistToHips)
-        .rotate(-90, points.waistOut)
-      points.hipsIn = utils.beamsIntersect(
-        points.hipsOutTarget,
-        points.hipsInTarget,
-        points.waistIn,
-        points.crotchSeamCurveStart
-      )
-      points.crotchSeamCurveStartMid = utils.beamsIntersect(
-        points.crotchSeamCurveStart,
-        points.crotchSeamCurveStart.shift(points.waistIn.angle(points.waistOut), 1),
-        points.waistMid,
-        points.seatMid
-      )
-      if (points.seatMid.y > points.crotchSeamCurveStartMid.y) {
-        points.seatIn = utils.lineIntersectsCurve(
-          points.seatMid,
-          points.seatInTarget,
-          points.fork,
-          points.crotchSeamCurveCp1,
-          points.crotchSeamCurveCp2,
-          points.crotchSeamCurveStart
-        )
-      } else {
-        points.seatIn = utils.beamsIntersect(
-          points.seatMid,
-          points.seatInTarget,
-          points.crotchSeamCurveStart,
-          points.waistIn
-        )
-      }
-      if (options.fitKnee) {
-        if (points.waistOut.x < points.seatOut.x) {
-          points.hipsOut = utils.lineIntersectsCurve(
-            points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
-            points.waistOut,
-            points.seatOut,
-            points.kneeOutCp1,
-            points.kneeOut
-          )
-          points.seatOutNotch = utils.lineIntersectsCurve(
-            points.seatMid,
-            points.seatOutTarget,
-            points.waistOut,
-            points.seatOut,
-            points.kneeOutCp1,
-            points.kneeOut
-          )
-        } else {
-          points.hipsOut = utils.lineIntersectsCurve(
-            points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
-            points.waistOut,
-            points.waistOut,
-            points.seatOutCp1,
-            points.seatOut
-          )
-          points.seatOutNotch = points.seatOut
-        }
-        points.kneeOutNotch = points.kneeOut
-        points.kneeInNotch = points.kneeIn
-      } else {
-        if (points.waistOut.x < points.seatOut.x) {
-          points.hipsOut = utils.lineIntersectsCurve(
-            points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
-            points.waistOut,
-            points.seatOut,
-            points.kneeOutCp1,
-            points.floorOut
-          )
-          points.seatOutNotch = utils.lineIntersectsCurve(
-            points.seatMid,
-            points.seatOutTarget,
-            points.waistOut,
-            points.seatOut,
-            points.kneeOutCp1,
-            points.floorOut
-          )
-          points.kneeOutNotch = utils.lineIntersectsCurve(
-            points.kneeOut,
-            points.kneeIn.rotate(180, points.kneeOut),
-            points.waistOut,
-            points.seatOut,
-            points.kneeOutCp1,
-            points.floorOut
-          )
-        } else {
-          points.hipsOut = utils.lineIntersectsCurve(
-            points.hipsOutTarget,
-            points.hipsIn.rotate(180, points.hipsOutTarget),
-            points.waistOut,
-            points.waistOut,
-            points.seatOutCp1,
-            points.seatOut
-          )
-          points.seatOutNotch = points.seatOut
-          points.kneeOutNotch = utils.lineIntersectsCurve(
-            points.kneeOut,
-            points.kneeIn.rotate(180, points.kneeOut),
-            points.seatOut,
-            points.seatOutCp2,
-            points.kneeOutCp1,
-            points.floorOut
-          )
-        }
-        points.kneeInNotch = utils.lineIntersectsCurve(
-          points.kneeIn,
-          points.kneeOut.rotate(180, points.kneeIn),
-          points.floorIn,
-          points.kneeInCp2,
-          points.forkCp1,
-          points.fork
-        )
-      }
-      macro('sprinkle', {
-        snippet: 'notch',
-        on: ['crotchSeamCurveStart', 'seatIn', 'seatOutNotch', 'kneeInNotch', 'kneeOutNotch'],
-      })
-      paths.seatline = new Path()
-        .move(points.seatOutNotch)
-        .line(points.seatIn)
-        .attr('class', 'fabric help')
-        .attr('data-text', 'Seat Line')
-        .attr('data-text-class', 'center')
-      if (
-        measurements.waistToHips * (1 - options.waistHeight) + absoluteOptions.waistbandWidth <
-        measurements.waistToHips
-      ) {
-        macro('sprinkle', {
-          snippet: 'notch',
-          on: ['hipsIn', 'hipsOut'],
-        })
-        paths.hipline = new Path()
-          .move(points.hipsOut)
-          .line(points.hipsIn)
-          .attr('class', 'fabric help')
-          .attr('data-text', 'Hip Line')
-          .attr('data-text-class', 'center')
-      }
-    }
-    */
-    if (sa) {
-      paths.saBase = drawInseam()
-        .join(
-          new Path()
-            .move(points.fork)
-            .curve(
-              points.crotchSeamCurveCp1,
-              points.crotchSeamCurveCp2,
-              points.crotchSeamCurveStart
-            )
-            .line(points.styleWaistIn)
-            .line(points.styleWaistOut)
-        )
-        .join(drawOutseam())
-      paths.hemBase = new Path().move(points.floorOut).line(points.floorIn)
-      paths.sa = paths.hemBase
-        .offset(sa * 3)
-        .join(paths.saBase.offset(sa))
-        .close()
-        .attr('class', 'fabric sa')
-      paths.saBase.hide()
-      paths.hemBase.hide()
-    }
+  if (complete)
+    paths.hint = new Path()
+      .move(points.crotchSeamCurveStart)
+      .line(points.crotchSeamCurveMax)
+      .line(points.fork)
+      .addClass('note help')
 
-    if (paperless && options.titanPaperless) {
-      // Help construct crotch seam
-      paths.hint = new Path()
-        .move(points.crotchSeamCurveStart)
-        .line(points.crotchSeamCurveMax)
-        .line(points.fork)
-        .attr('class', 'note lashed')
-      macro('hd', {
-        from: points.floorOut,
-        to: points.floor,
-        y: points.floorIn.y - 15,
-      })
-      macro('hd', {
-        from: points.floor,
-        to: points.floorIn,
-        y: points.floorIn.y - 15,
-      })
-      macro('hd', {
-        from: points.floorOut,
-        to: points.floorIn,
-        y: points.floorIn.y - 30,
-      })
-      macro('vd', {
-        from: points.floorOut,
-        to: points.fork,
-        x: points.fork.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.fork,
-        to: points.styleWaistIn,
-        x: points.fork.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.floorIn,
-        to: points.styleWaistOut,
-        x:
-          (points.seatOut.x < points.styleWaistOut.x ? points.seatOut.x : points.styleWaistOut.x) -
-          sa -
-          15,
-      })
-      macro('vd', {
-        from: points.crotchSeamCurveStart,
-        to: points.styleWaistIn,
-        x: points.crotchSeamCurveStart.x + sa + 15,
-      })
-      macro('hd', {
-        from: points.seatOut,
-        to: points.grainlineTop,
-        y: points.styleWaistIn.y - sa - 15,
-      })
-      if (points.styleWaistOut.x < points.seatOut.x) {
-        macro('hd', {
-          from: points.styleWaistOut,
-          to: points.grainlineTop,
-          y: points.styleWaistIn.y - sa - 30,
-        })
-      }
-      macro('hd', {
-        from: points.grainlineTop,
-        to: points.styleWaistIn,
-        y: points.styleWaistIn.y - sa - 15,
-      })
-      macro('hd', {
-        from: points.grainlineTop,
-        to: points.crotchSeamCurveStart,
-        y: points.styleWaistIn.y - sa - 30,
-      })
-      macro('hd', {
-        from: points.grainlineTop,
-        to: points.crotchSeamCurveMax,
-        y: points.styleWaistIn.y - sa - 45,
-      })
-      macro('hd', {
-        from: points.grainlineTop,
-        to: points.fork,
-        y: points.styleWaistIn.y - sa - 60,
-      })
-    }
+  if (sa) {
+    paths.saBase = drawInseam()
+      .join(
+        new Path()
+          .move(points.fork)
+          .curve(points.crotchSeamCurveCp1, points.crotchSeamCurveCp2, points.crotchSeamCurveStart)
+          .line(points.styleWaistIn)
+          .line(points.styleWaistOut)
+      )
+      .join(drawOutseam())
+    paths.hemBase = new Path().move(points.floorOut).line(points.floorIn)
+    paths.sa = paths.hemBase
+      .offset(sa * 3)
+      .join(paths.saBase.offset(sa))
+      .close()
+      .attr('class', 'fabric sa')
+    paths.saBase.hide()
+    paths.hemBase.hide()
   }
 
-  if (adjustment_warning) {
-    log.warning(
-      'We were not able to generate the Front pattern piece correctly. ' +
-        'Manual fitting and alteration of this and other pattern pieces ' +
-        'are likely to be needed. ' +
-        'First, please retake your measurements and generate a new pattern ' +
-        'using the new measurements. ' +
-        'If you still see this warning with the new pattern, then please ' +
-        'make a test garment, check fit, and make alterations as necessary ' +
-        'before trying to make the final garment.'
-    )
+  /*
+   * Annotations
+   */
+
+  // Cut list
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Grainline
+  points.grainlineTop.y = points.styleWaistIn.y
+  macro('grainline', {
+    from: points.grainlineTop,
+    to: points.grainlineBottom,
+  })
+
+  // Logo
+  points.logoAnchor = new Point(points.crotchSeamCurveStart.x / 2, points.fork.y)
+  snippets.logo = new Snippet('logo', points.logoAnchor)
+
+  // Title
+  points.titleAnchor = points.logoAnchor.shift(-90, 60)
+  macro('title', {
+    nr: 2,
+    title: 'front',
+    at: points.titleAnchor,
+  })
+
+  // Dimensions
+  macro('hd', {
+    id: 'wHemLeftToPleat',
+    from: points.floorOut,
+    to: points.floor,
+    y: points.floorIn.y - 15,
+  })
+  macro('hd', {
+    id: 'wHemRightToPleat',
+    from: points.floor,
+    to: points.floorIn,
+    y: points.floorIn.y - 15,
+  })
+  macro('hd', {
+    id: 'wHem',
+    from: points.floorOut,
+    to: points.floorIn,
+    y: points.floorIn.y - 30,
+  })
+  macro('vd', {
+    id: 'hHemToFork',
+    from: points.floorOut,
+    to: points.fork,
+    x: points.fork.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hForkToCfWaist',
+    from: points.fork,
+    to: points.styleWaistIn,
+    x: points.fork.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hHemToSideWaist',
+    from: points.floorIn,
+    to: points.styleWaistOut,
+    x:
+      (points.seatOut.x < points.styleWaistOut.x ? points.seatOut.x : points.styleWaistOut.x) -
+      sa -
+      15,
+  })
+  macro('vd', {
+    id: 'hStartCrotchCurveToCfWaist',
+    from: points.crotchSeamCurveStart,
+    to: points.styleWaistIn,
+    x: points.crotchSeamCurveStart.x + sa + 15,
+  })
+  macro('hd', {
+    id: 'wSideWaistToPleat',
+    from: points.seatOut,
+    to: points.grainlineTop,
+    y: points.styleWaistIn.y - sa - 15,
+  })
+  if (points.styleWaistOut.x < points.seatOut.x) {
+    macro('hd', {
+      id: 'wSideWaistToPleatAlt',
+      from: points.styleWaistOut,
+      to: points.grainlineTop,
+      y: points.styleWaistIn.y - sa - 30,
+    })
   }
+  macro('hd', {
+    id: 'wPleatToCfWaist',
+    from: points.grainlineTop,
+    to: points.styleWaistIn,
+    y: points.styleWaistIn.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wPleastToStartCrotchCurve',
+    from: points.grainlineTop,
+    to: points.crotchSeamCurveStart,
+    y: points.styleWaistIn.y - sa - 30,
+  })
+  macro('hd', {
+    id: 'wPleastToCrotchProjection',
+    from: points.grainlineTop,
+    to: points.crotchSeamCurveMax,
+    y: points.styleWaistIn.y - sa - 45,
+  })
+  macro('hd', {
+    id: 'wPleastToFork',
+    from: points.grainlineTop,
+    to: points.fork,
+    y: points.styleWaistIn.y - sa - 60,
+  })
 
   return part
 }

@@ -1,8 +1,8 @@
 ---
-title: The right to rectification
+title: Право на виправлення становища
 order: 30
 ---
 
-You have the right to rectify your personal data, or complete it if it is incomplete.
+Ви маєте право виправити свої персональні дані або доповнити їх, якщо вони є неповними.
 
-Go to [/account](/account/) to do so.
+Для цього перейдіть за посиланням [/account](/account/) .

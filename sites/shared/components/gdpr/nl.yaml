@@ -1,0 +1,38 @@
+clickHere: Klik hier om toestemming te geven
+createAccount: Account aanmaken
+compliant: "FreeSewing respecteert je privacy en je rechten. We houden ons aan de strengste privacy- en beveiligingswet ter wereld: de General Data Protection Regulation (GDPR) van de Europese Unie (EU)."
+consent: Toestemming
+consentForAccountData: Consent for account data
+consentGiven: Toestemming gegeven
+consentNotGiven: Toestemming niet gegeven
+consentWhyAnswer: Onder de GDPR is voor de verwerking van je persoonlijke gegevens granulaire toestemming nodig - met andere woorden, we hebben je toestemming nodig voor de verschillende manieren waarop we je gegevens verwerken.
+createMyAccount: Maak mijn account aan
+furtherReading: Meer lezen
+hideDetails: Verberg details
+noConsentNoAccount: This consent is required for a FreeSewing account.
+noConsentNoAccountCreation: Without this consent, we cannot create a FreeSewing account.
+noIDoNot: 'Neen, ik geef geen toestemming'
+openDataInfo: Deze gegevens worden gebruikt om de menselijke vorm in al zijn vormen te bestuderen en te begrijpen, zodat we betere naaipatronen en beter passende kledingstukken kunnen ontwerpen. Hoewel deze gegevens anoniem zijn, hebt u het recht hiertegen bezwaar te maken.
+openDataQuestion: Deel geanonimiseerde maten als open data
+privacyMatters: Privacy is een recht
+privacyNotice: FreeSewing Privacy Verklaring
+processing: Verwerking
+accountQuestion: Do you give your consent to process your account data?
+accountShareAnswer: '<b>Nee</b>, nooit.'
+accountTimingAnswer: '<b>12 months</b> after the last time your connected to our backend, or until you <b>remove</b> your account or <b>revoke</b> this consent.'
+accountWarning: Als u deze toestemming intrekt, worden al je gegevens verwijderd. Het heeft precies hetzelfde effect als het verwijderen van je account.
+accountWhatAnswerOptional: 'Optional: A <b>picture</b>, <b>bio</b>, or <b>GitHub username</b>'
+accountWhatAnswer: 'Your <b>email address</b>, <b>username</b>, and <b>password</b>, and any <b>body measurements</b> you add to your account.'
+accountWhatQuestion: What is account data?
+accountWhyAnswer: 'To <b>authenticate</b> you, <b>contact</b> you when needed, and generate <b>made-to-measure</b> sewing patterns.'
+readMore: Lees onze privacyverklaring voor meer informatie.
+readRights: Voor meer informatie kan je alles lezen over je rechten en hoe we ze beschermen.
+revokeConsent: Toestemming intrekken
+shareQuestion: Delen we ze met anderen?
+showDetails: Toon details
+timingQuestion: Hoe lang houden we ze?
+whatYouNeedToKnow: Wat je moet weten
+whyQuestion: Waarom hebben we ze nodig?
+yesIDoObject: 'Ja, ik maak bezwaar'
+yesIDo: 'Ja, ik geef mijn toestemming'
+openData: 'Opmerking: FreeSewing publiceert geanonimmiseerde maten als open gegevens voor wetenschappelijk onderzoek. U heeft het recht om hier bezwaar tegen te maken'

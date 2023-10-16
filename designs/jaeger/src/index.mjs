@@ -1,4 +1,6 @@
-import { Design } from '@freesewing/core'
+import { Design, mergeI18n } from '@freesewing/core'
+import { i18n as bentI18n } from '@freesewing/bent'
+import { i18n as jaegerI18n } from '../i18n/index.mjs'
 import { data } from '../data.mjs'
 import { backBase } from './backbase.mjs'
 import { frontBase } from './frontbase.mjs'
@@ -14,6 +16,9 @@ import { topSleeve } from './topsleeve.mjs'
 import { underSleeve } from './undersleeve.mjs'
 import { innerPocketBag } from './innerpocketbag.mjs'
 import { innerPocketWelt } from './innerpocketwelt.mjs'
+import { chestPiece } from './chest-piece.mjs'
+import { frontFacing } from './front-facing.mjs'
+import { frontLining } from './front-lining.mjs'
 
 // Setup our new design
 const Jaeger = new Design({
@@ -21,6 +26,9 @@ const Jaeger = new Design({
   parts: [
     backBase,
     frontBase,
+    frontFacing,
+    frontLining,
+    chestPiece,
     side,
     collarStand,
     collar,
@@ -36,10 +44,16 @@ const Jaeger = new Design({
   ],
 })
 
+// Merge translations
+const i18n = mergeI18n([bentI18n, jaegerI18n])
+
 // Named exports
 export {
   backBase,
   frontBase,
+  frontFacing,
+  frontLining,
+  chestPiece,
   side,
   collarStand,
   collar,
@@ -53,4 +67,5 @@ export {
   innerPocketBag,
   innerPocketWelt,
   Jaeger,
+  i18n,
 }

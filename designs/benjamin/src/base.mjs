@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function draftBenjaminBase({
   store,
   sa,
@@ -9,17 +7,16 @@ function draftBenjaminBase({
   paths,
   Snippet,
   snippets,
+  utils,
   options,
   measurements,
-  complete,
-  paperless,
   macro,
   part,
 }) {
   if (options.bowStyle === 'square') options.tipWidth = options.knotWidth
 
   for (let option of [
-    'ribbonWidth',
+    'collarBandHeight',
     'bandLength',
     'tipWidth',
     'knotWidth',
@@ -29,10 +26,13 @@ function draftBenjaminBase({
     store.set(option, measurements.neck * options[option])
 
   if (options.adjustmentRibbon) {
-    store.set('ribbonWidth', Math.max(options.adjustmentRibbonWidth, store.get('ribbonWidth')))
+    store.set(
+      'collarBandHeight',
+      Math.max(options.adjustmentRibbonWidth, store.get('collarBandHeight'))
+    )
   }
-  const ribbon = store.get('ribbonWidth')
-  store.set('knotWidth', Math.max(ribbon, store.get('knotWidth')))
+  const ribbonHeight = store.get('collarBandHeight')
+  store.set('knotWidth', Math.max(ribbonHeight, store.get('knotWidth')))
   const knot = store.get('knotWidth')
   store.set('tipWidth', Math.max(knot, store.get('tipWidth')))
 
@@ -43,7 +43,7 @@ function draftBenjaminBase({
   const bow = store.get('bowLength')
 
   // Points
-  points.bandBottomLeft = new Point(0, ribbon / 2)
+  points.bandBottomLeft = new Point(0, ribbonHeight / 2)
   points.bandTopLeft = points.bandBottomLeft.flipY()
   points.bandBottomRight = points.bandBottomLeft.shift(0, band)
   points.bandTopRight = points.bandBottomRight.flipY()
@@ -73,19 +73,35 @@ function draftBenjaminBase({
   } else {
     points.roundBottom = new Point(points.tip.x, points.tip2Bottom.y)
     points.roundTop = points.roundBottom.flipY()
-    macro('round', {
-      from: points.tip2Bottom,
-      to: points.tip,
-      via: points.roundBottom,
-      prefix: 'bottom',
-    })
-    macro('round', {
-      from: points.tip,
-      to: points.tip2Top,
-      via: points.roundTop,
-      prefix: 'top',
-    })
-    paths.cap = paths.bottomRounded.join(paths.topRounded)
+    // Macros will return the auto-generated IDs
+    const ids = {
+      bottom: macro('round', {
+        id: 'bottom',
+        from: points.tip2Bottom,
+        to: points.tip,
+        via: points.roundBottom,
+        hide: false,
+      }),
+      top: macro('round', {
+        id: 'top',
+        from: points.tip,
+        to: points.tip2Top,
+        via: points.roundTop,
+        hide: false,
+      }),
+    }
+    // Create points from them with easy names
+    for (const side in ids) {
+      for (const id of ['start', 'cp1', 'cp2', 'end']) {
+        points[`${side}${utils.capitalize(id)}`] = points[ids[side].points[id]].copy()
+      }
+    }
+    // Now construct the path joining our two rounded paths
+    paths.cap = paths[ids.top.paths.path]
+      .clone()
+      .reverse()
+      .join(paths[ids.bottom.paths.path].clone().reverse())
+      .reverse()
   }
 
   if (options.bowStyle === 'diamond' || options.bowStyle === 'butterfly') {
@@ -135,67 +151,76 @@ function draftBenjaminBase({
       .hide()
   }
 
-  // Complete?
-  if (complete) {
-    points.logoAnchor = points.tip.shift(180, 20)
-    snippets.logo = new Snippet('logo', points.logoAnchor).attr('data-scale', tip / 120)
+  /*
+   * Annotations
+   */
 
-    // Paperless?
-    if (paperless) {
-      let baseY = points.tip2Bottom.y + sa
-      macro('hd', {
-        from: points.knotBottom,
-        to: points.tip2Bottom,
-        y: baseY,
-      })
-      baseY += 15
-      if (options.bowStyle === 'butterfly' || options.bowStyle === 'diamond') {
-        macro('hd', {
-          from: points.tip1Bottom,
-          to: points.tip2Bottom,
-          y: baseY,
-        })
-        baseY += 15
-        macro('vd', {
-          from: points.tip1Bottom,
-          to: points.tip1Top,
-        })
-      }
-      macro('hd', {
-        from: points.transitionBottomRight,
-        to: points.tip2Bottom,
-        y: baseY,
-      })
-      baseY += 15
-      macro('hd', {
-        from: points.bandBottomRight,
-        to: points.tip2Bottom,
-        y: baseY,
-      })
-      baseY += 15
-      store.set('baseY', baseY)
+  // Logo
+  points.logoAnchor = points.tip.shift(180, 20)
+  snippets.logo = new Snippet('logo', points.logoAnchor).attr('data-scale', tip / 120)
 
-      macro('vd', {
-        from: points.bandBottomRight,
-        to: points.bandTopRight,
-      })
-      macro('vd', {
-        from: points.transitionBottomRight,
-        to: points.transitionTopRight,
-      })
-      macro('vd', {
-        from: points.tip2Bottom,
-        to: points.tip2Top,
-        x: points.tip.x + 15 + sa,
-      })
-      if (options.endStyle !== 'straight') {
-        macro('hd', {
-          from: points.tip2Bottom,
-          to: points.tip,
-          y: points.tip2Bottom.y + 15 + sa,
-        })
-      }
-    }
+  // Dimensions
+  let baseY = points.tip2Bottom.y + sa + 15
+  macro('hd', {
+    id: 'wEdgeToKnot',
+    from: points.knotBottom,
+    to: points.tip2Bottom,
+    y: baseY,
+  })
+  baseY += 15
+  if (['butterfly', 'diamond'].includes(options.bowStyle)) {
+    macro('hd', {
+      id: 'wEdgeToMidTip',
+      from: points.tip1Bottom,
+      to: points.tip2Bottom,
+      y: baseY,
+    })
+    baseY += 15
+    macro('vd', {
+      id: 'hMidTip',
+      from: points.tip1Bottom,
+      to: points.tip1Top,
+    })
+  }
+  macro('hd', {
+    id: 'wEdgeToBandTransitionStart',
+    from: points.transitionBottomRight,
+    to: points.tip2Bottom,
+    y: baseY,
+  })
+  baseY += 15
+  macro('hd', {
+    id: 'wEdgeToBandTransitionEnd',
+    from: points.bandBottomRight,
+    to: points.tip2Bottom,
+    y: baseY,
+  })
+  baseY += 15
+  store.set('baseY', baseY)
+
+  macro('vd', {
+    id: 'hBandTransitionEnd',
+    from: points.bandBottomRight,
+    to: points.bandTopRight,
+  })
+  macro('vd', {
+    id: 'hBandTransitionStart',
+    from: points.transitionBottomRight,
+    to: points.transitionTopRight,
+  })
+  macro('vd', {
+    id: 'hEdge',
+    from: points.tip2Bottom,
+    to: points.tip2Top,
+    x: points.tip.x + 15 + sa,
+  })
+  if (options.endStyle !== 'straight') {
+    macro('hd', {
+      id: 'wEdgeToStyledTip',
+      from: points.tip2Bottom,
+      to: points.tip,
+      y: points.tip2Bottom.y + 15 + sa,
+    })
   }
 
   return part
@@ -227,8 +252,7 @@ export const base = {
       list: ['straight', 'pointed', 'rounded'],
       menu: 'style',
     },
-    ribbonWidth: { pct: 6, min: 5, max: 8, menu: 'style' },
+    collarBandHeight: { pct: 6, min: 5, max: 8, menu: 'style' },
   },
-  plugins: [pluginBundle],
   draft: draftBenjaminBase,
 }

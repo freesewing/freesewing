@@ -1,0 +1,89 @@
+{
+  "t": "Wahid waistcoat",
+  "d": "Wahid is a classic fitted waistcoat.",
+  "p": {
+    "back": "Back",
+    "front": "Front",
+    "frontFacing": "Front facing",
+    "frontLining": "Front lining",
+    "pocketBag": "Pocket bag",
+    "pocketFacing": "Pocket facing",
+    "pocketInterfacing": "Pocket interfacing",
+    "pocketWelt": "Pocket welt"
+  },
+  "s": {},
+  "o": {
+    "backScyeDart": {
+      "t": "Back scye dart",
+      "d": "The amount to take out in a dart at the back of the armhole."
+    },
+    "frontScyeDart": {
+      "t": "Front scye dart",
+      "d": "The amount to take out in a dart at the front of the armhole."
+    },
+    "pocketLocation": {
+      "t": "Pocket location",
+      "d": "Determines the placement of the pocket"
+    },
+    "pocketWidth": {
+      "t": "Pocket width",
+      "d": "Determines the width of the pocket"
+    },
+    "weltHeight": {
+      "t": "Welt height",
+      "d": "Determines the height of the welt"
+    },
+    "necklineDrop": {
+      "t": "Neckline drop",
+      "d": "Determines how low the neckline drops at the front"
+    },
+    "frontStyle": {
+      "t": "Neck opening style",
+      "d": "Style of the neck opening"
+    },
+    "hemStyle": {
+      "t": "Hem style",
+      "d": "Style of the front hem"
+    },
+    "hemRadius": {
+      "t": "Hem radius",
+      "d": "Radius by which the hem is rounded"
+    },
+    "backInset": {
+      "t": "Back inset",
+      "d": "How much the back of the armhole is cut inwards"
+    },
+    "frontInset": {
+      "t": "Front inset",
+      "d": "How much the front of the armhole is cut inwards"
+    },
+    "shoulderInset": {
+      "t": "Shoulder inset",
+      "d": "How much the shoulder seam is cut inwards at the shoulder"
+    },
+    "neckInset": {
+      "t": "Neck inset",
+      "d": "How much the shoulder seam is cut inwards at the neck"
+    },
+    "pocketAngle": {
+      "t": "Pocket angle",
+      "d": "Angle of the pocket slant"
+    },
+    "buttons": {
+      "t": "Buttons",
+      "d": "The amount of buttons to use."
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls the amount of ease at the waist."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls the amount of ease at the hips."
+    },
+    "centerBackDart": {
+      "t": "Center back dart",
+      "d": "Whether or not to include a center back dart to fit a rounded back."
+    }
+  }
+}

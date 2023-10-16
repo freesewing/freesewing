@@ -1,0 +1,22 @@
+{
+  "t": "Máscara de Florencia",
+  "d": "Florence es una mascarilla.",
+  "p": {
+    "mask": "Mask"
+  },
+  "s": {},
+  "o": {
+    "height": {
+      "t": "Altura",
+      "d": "Controla la altura de la mascarilla"
+    },
+    "length": {
+      "t": "Longitud",
+      "d": "Controla la longitud de la mascarilla"
+    },
+    "curve": {
+      "t": "Curva",
+      "d": "Controla la curvatura del borde superior de la mascarilla"
+    }
+  }
+}

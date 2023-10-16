@@ -1,0 +1,39 @@
+measurements: Maße
+ankle: Knöchelumfang
+biceps: Bizepsumfang
+bustFront: Oberweite vorne
+bustPointToUnderbust: Brustpunkt zu Unterbrust
+bustSpan: Brustpunkte Abstand
+chest: Oberweite
+crossSeam: Taille-Schritt-Taille
+crossSeamFront: Taille-Schritt
+head: Kopfumfang
+heel: Fersenumfang
+highBustFront: Oberbrustweite vorne
+highBust: Oberbrustweite
+hips: Hüftweite
+hpsToBust: HPS zu Brust
+hpsToWaistBack: HPS zu Taille hinten
+hpsToWaistFront: HPS zu Taille vorne
+inseam: Innere Beinlänge
+knee: Knieumfang
+neck: Halsweite
+seat: Gesäßweite
+seatBack: Gesäßweite hinten
+crotchDepth: Schritthöhe
+shoulderSlope: Schulterneigung
+shoulderToElbow: Schulter bis Ellenbogen
+shoulderToShoulder: Schulter zu Schulter
+shoulderToWrist: Schulter bis Handgelenk
+underbust: Unterbrustweite
+upperLeg: Oberschenkelweite
+waist: Taillenweite
+waistBack: Taillenweite hinten
+waistToArmpit: Waist to armpit
+waistToFloor: Taille bis Boden
+waistToHips: Taille bis Hüfte
+waistToKnee: Taille bis Knie
+waistToSeat: Taille bis Gesäß
+waistToUnderbust: Taille bis Unterbrustweite
+waistToUpperLeg: Taille bis Oberschenkel
+wrist: Handgelenksumfang

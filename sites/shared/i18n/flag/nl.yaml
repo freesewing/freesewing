@@ -1,0 +1,19 @@
+apply: Apply
+decrease: Decrease
+disable: Disable
+dismiss: Dismiss
+expandIsOff.t: This design saves space (and trees) because expand is disabled
+expandIsOff.d: "Because the **expand** core setting is currently disabled, some parts are not fully drawn or not shown at all. Typically, these are simple rectangles that only take up space, or things that can be cut on the fold. \n\nTo expand all pattern parts to their full size, enable the expand setting."
+expandIsOn.t: This design can save space (and trees)
+expandIsOn.d: "Because the **expand** core setting is currently enabled, all parts are fully drawn. You can display this design in a more compact way by disabling the **expand** setting. \n\nDoing so will mean that some parts are not fully drawn or not shown at all. Typically, these are simple rectangles that only take up space, or things that can be cut on the fold."
+enable: Enable
+flagMenu.t: Messages from the designer
+flagMenuOne.d: The designer of this pattern has flagged something about your current draft that deserves your attention.
+flagMenuMany.d: The designer of this pattern has flagged some things about your current draft that deserve your attention.
+hide: Verberg
+increase: Increase
+show: Toon
+saIncluded: (This includes seam allowance)
+saExcluded: (This does not include seam allowance)
+saUnused: (This part does not require any seam allowance)
+partHiddenByExpand: This part is not shown because the **expand** core setting is currently disabled. Enable it to show this pattern part.

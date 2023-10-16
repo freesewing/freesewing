@@ -10,7 +10,8 @@ import { waistband } from './waistband.mjs'
 import { pocketFacing } from './pocketfacing.mjs'
 import { pocket } from './pocket.mjs'
 import { zipperguard } from './zipperguard.mjs'
-// import draftPlacket from './placket'
+// Translation
+import { i18n } from '../i18n/index.mjs'
 
 // Create new design
 const Cornelius = new Design({
@@ -30,4 +31,5 @@ export {
   zipperguard,
   frontpoints,
   Cornelius,
+  i18n,
 }

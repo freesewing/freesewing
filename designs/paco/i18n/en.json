@@ -1,0 +1,76 @@
+{
+  "t": "Paco pants",
+  "d": "Paco are casual yet stylish summer pants.",
+  "p": {
+    "back": "Back",
+    "backPocketBag": "Back pocket bag",
+    "backPocketWelt": "Back pocket welt",
+    "backPocketWeltInterfacing": "Bacl pocket welt interfacing",
+    "cuff": "Cuff",
+    "front": "Front",
+    "frontPocketBag": "Front pocket bag",
+    "waistband": "Waistband"
+  },
+  "s": {
+    "cutCuff.t": "The cuff is not shown",
+    "cutCuff.d": "The **Cuff** (4) is a rectangular piece of lining {{{ w }}} wide and {{{ l }}} long.",
+    "cutWaistband.t": "The waistband is not shown",
+    "cutWaistband.d": "The **Waistband** (3) is a rectangular piece of lining {{{ w }}} wide and {{{ l }}} long.",
+    "cutBackPocketBag.t": "The back pocket bag is not shown",
+    "cutBackPocketBag.d": "The **Back pocket bag** (6) is a rectangular piece of lining {{{ w }}} wide and {{{ l }}} long.",
+    "cutBackPocketWelt.t": "The back pocket welt is not shown",
+    "cutBackPocketWelt.d": "The **Back pocket welt** (7) is a rectangular piece of lining {{{ w }}} wide and {{{ l }}} long.",
+    "cutBackPocketWeltInterfacing.t": "The back pocket welt interfacing is not shown",
+    "cutBackPocketWeltInterfacing.d": "The **Back pocket welt interfacing** (8) is a rectangular piece of fusible interfacing {{{ w }}} wide and {{{ l }}} long."
+  },
+  "o": {
+    "heelEase": {
+      "t": "Heel ease",
+      "d": "The amount of ease at your heel (when stepping into the leg)"
+    },
+    "frontPockets": {
+      "t": "Front pockets",
+      "d": "Whether or not to add front pockets on the side seam"
+    },
+    "frontPocketsNo": {
+      "t": "Do not include front pockets",
+      "d": "Draft a pattern without front pockets"
+    },
+    "frontPocketsYes": {
+      "t": "Include front pockets",
+      "d": "Draft a pattern with front pockets"
+    },
+    "frontPocketFlapSize": {
+      "t": "Front pocket flap size",
+      "d": "This option controls the front pocket flap size, but it is not exposed to the UI"
+    },
+    "backPockets": {
+      "t": "Back pockets",
+      "d": "Whether or not to add welt pockets to the back"
+    },
+    "backPocketsNo": {
+      "t": "Do not include back pockets",
+      "d": "Draft a pattern without back pockets"
+    },
+    "backPocketsYes": {
+      "t": "Include back pockets",
+      "d": "Draft a pattern with back pockets"
+    },
+    "elasticatedCuff": {
+      "t": "Elasticated cuff",
+      "d": "Whether you want to include an elasticated cuff at the legs, or prefer a classic hemmed finish"
+    },
+    "elasticatedCuffNo": {
+      "t": "No elasticated cuffs",
+      "d": "Draft a pattern without elasticated cuffs"
+    },
+    "elasticatedCuffYes": {
+      "t": "With elasticated cuffs",
+      "d": "Draft a pattern with a elasticated cuffs"
+    },
+    "ankleElastic": {
+      "t": "Ankle/Hem elastic width",
+      "d": "Width of the (optional) elastic at the ankle/hem"
+    }
+  }
+}

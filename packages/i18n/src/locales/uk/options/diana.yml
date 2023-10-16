@@ -1,8 +1,0 @@
----
-shoulderSeamLength:
-  title: Довжина плечового шва
-  description: Контролює довжину плечового шва
-drapeAngle:
-  title: Кут драпірування
-  description: Контролює кількість складок
-
