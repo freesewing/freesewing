@@ -1,7 +1,7 @@
 {
   "name": "@freesewing/plugin-ringsector",
   "version": "3.0.0",
-  "description": "A FreeSewing plugin to draft a ring sector",
+  "description": "A FreeSewing plugin to draft a ring sector (think part of a donut)",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",

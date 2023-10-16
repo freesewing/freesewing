@@ -48,7 +48,7 @@
 
 # @freesewing/plugin-ringsector
 
-A FreeSewing plugin to draft a ring sector
+A FreeSewing plugin to draft a ring sector (think part of a donut)
 
 
 
