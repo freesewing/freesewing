@@ -344,7 +344,17 @@ export const base = {
     frontOnFold: { bool: false, menu: 'construction' },
     backOnFold: { bool: true, menu: 'construction' },
     // How long the zipper will be, as a % of the verticalTrunk. Longer zippers will make the garment easier to don and doff, but zippers do not stretch. Leotards and wide-necked stretch clothes can do with no zipper at all. Swimwear should have a zipper length no more than 20% since zippers do not stretch. Onesie pajamas can have much longer zippers (40%-50%).
-    zipperLength: { pct: 20, min: 0, max: 50, menu: 'construction' },
+    zipperLength: {
+      pct: 20,
+      min: 0,
+      max: 50,
+      toAbs: (pct, settings) =>
+        (settings.measurements.hpsToWaistFront +
+          settings.measurements.hpsToWaistBack +
+          settings.measurements.crossSeam) *
+        pct,
+      menu: 'construction',
+    },
     // How wide to make the section of fabric keeping the zipper away from the wearer's skin. Optional on onesie pajamas. Crucial on swimwear.
   },
   optionalMeasurements: ['highBust'],

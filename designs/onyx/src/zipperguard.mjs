@@ -19,7 +19,7 @@ function draftZipperGuard({
   Snippet,
 }) {
   const verticalTrunk = store.get('verticalTrunk')
-  const zipperLength = verticalTrunk * options.zipperLength
+  const zipperLength = absoluteOptions.zipperLength
   const zipperGuardWidth = absoluteOptions.zipperGuardWidth
   const neckGuardLength = verticalTrunk * options.neckGuardLength
 
@@ -108,6 +108,16 @@ export const zipperGuard = {
       menu: 'construction',
     },
     // How far to have the zipper guard extend past the neckline so it can be wrapped around the zipper slider and pull to keep it from digging into the wearer's neck. Important on any compression garments/swimwear.
-    neckGuardLength: { pct: 2, min: 0, max: 5, menu: 'construction' },
+    neckGuardLength: {
+      pct: 2,
+      min: 0,
+      max: 5,
+      toAbs: (pct, settings) =>
+        (settings.measurements.hpsToWaistFront +
+          settings.measurements.hpsToWaistBack +
+          settings.measurements.crossSeam) *
+        pct,
+      menu: 'construction',
+    },
   },
 }

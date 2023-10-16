@@ -9,60 +9,169 @@
 	"zipperGuard": "Zipper guard",
 	"crotchGusset": "Crotch gusset",
 	"hood": "Hood back",
-	"hoodFront": "Hood front"
+	"hoodFront": "Hood front",
+	"skirt": "Swim skirt"
   },
   "s": {},
   "o": {
-    "hemWidth": {
-      "t": "Hem width",
-      "d": "Sets the hem allowance along the bottom of the body of the shirt, as a multiple of the seam allowance."
-    },
-    "sleeveHem": {
-      "t": "Sleeve hem",
-      "d": "Sets the hem allowance of the hem along the end of the sleeves, as a multiple of the seam allowance."
-    },
-
-    "chestEase": {
-      "t": "Chest ease",
-      "d": "Controls how wide the shirt will be at your chest."
-    },
-    "neckBalance": {
-      "t": "Neck position",
-      "d": "Controls where the neck hole is placed on the shirt."
-    },
-    "neckEase": {
-      "t": "Neck ease",
-      "d": "Controls how large the neck hole is."
-    },
 	"neckbandLength": {
 	  "t": "Neckband length",
 	  "d": "Controls how long the neckband is, as a percentage of the circumference of the neckline."
 	},
 	"neckbandWidth": {
 	  "t": "Neckband width",
-	  "d": "Controls how wide the finished neckband will be, as a percentage of the neckline circumference."
+	  "d": "Controls how wide the finished neckband will be."
 	},
+    "hoodHem": {
+	  "t": "Hood hem width",
+	  "d": "Sets the hem allowance along the front of the hood, as a multiple of the seam allowance."
+	},
+    "sleeveHem": {
+      "t": "Sleeve hem",
+      "d": "Sets the hem allowance of the hem along the end of the sleeves, as a multiple of the seam allowance."
+    },
+    "legHem": {
+      "t": "Leg hem",
+      "d": "Sets the hem allowance of the hem along the bottom of the legs, as a multiple of the seam allowance."
+    },
+	"backOnFold": {
+	  "t": "Back on fold",
+	  "d": "Enable this option to make the back out of a single piece, or disable to make it out of two mirrored pieces joined by a seam. It is recommended to disable this if placing a back zipper, and enable it otherwise."
+	},
+	"frontOnFold": {
+	  "t": "Front on fold",
+	  "d": "Enable this option to make the front out of a single piece, or disable to make it out of two mirrored pieces joined by a seam. It is recommended to disable this if placing a front zipper, and enable it otherwise."
+	},
+	"zipperLength": {
+	  "t": "Zipper length",
+	  "d": "The length of the zipper, as a percentage of the vertical trunk. It is recommended that you match this length (shown below in cm/in) to the length of the actual zipper, measured from lower stop to upper stop."
+	},
+	"zipperGuardWidth": {
+	  "t": "Zipper guard width",
+	  "d": "How wide to make the zipper guard."
+	},
+	"neckGuardLength": {
+	  "t": "Neck guard length",
+	  "d": "How far to have the zipper guard extend past the top of the zipper."
+	},
+
+    "hoodHeight": {
+      "t": "Hood height",
+      "d": "Controls how tall the hood will be."
+    },
+    "hoodDepth": {
+      "t": "Hood depth",
+      "d": "Controls how much room will be in the hood in the back of the head."
+    },
+    "centerSeamEase": {
+      "t": "Center seam ease",
+      "d": "Controls how long the center seam will be, and thus how low the crotch fork of the garment will be."
+    },
+    "outseamEase": {
+      "t": "Outseam ease",
+      "d": "Controls how far down the garment the waist, hips, seat, and upper leg points on the outseam will be."
+    },
+    "chestEase": {
+      "t": "Chest ease",
+      "d": "Controls how wide the garment will be around the chest."
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls how wide the garment will be around the chest."
+    },
+    "hipsEase": {
+      "t": "Hips ease",
+      "d": "Controls how wide the garment will be at the bottom hem. This option is only used if the straight sides option is disabled."
+    },
+    "seatEase": {
+      "t": "Seat ease",
+      "d": "Controls how wide the seat is."
+    },
+    "crotchGussetWidth": {
+      "t": "Crotch gusset width",
+      "d": "Controls how wide the crotch gusset will be. Adjust so that the front and back pieces look smooth and clean around the crotch fork and upper legs."
+    },
+    "upperLegEase": {
+      "t": "Upper leg ease",
+      "d": "Controls how wide the garment will be around the upper legs."
+    },
+    "legHemEase": {
+      "t": "Leg hem ease",
+      "d": "Controls how wide the bottom of the legs will be."
+    },
+    "neckBalance": {
+      "t": "Neck position",
+      "d": "Controls where the neck hole is placed on the garment."
+    },
+    "neckEase": {
+      "t": "Neck ease",
+      "d": "Controls how large the neck hole is."
+    },
     "sleeveEase": {
       "t": "Sleeve ease",
-      "d": "Affects how wide the sleeve is at the armhole on all shirts, and has some affect on the width at the hem of short sleeved shirts."
+      "d": "Affects how wide the sleeve is at the armhole on all garments, and has some affect on the width at the hem of short sleeved garments."
     },
     "wristEase": {
       "t": "Wrist ease",
       "d": "Affects how wide the end of the sleeve is on sleeves that extend past the biceps. The effect is greater on longer sleeves."
     },
 
-    "bodyLength": {
-      "t": "Body length",
-      "d": "Controls how long the shirt is."
+    "neckStyle": {
+      "t": "Neck style",
+      "d": "Select whether you want to add a hood to the garment, or finish the neck with a neckband."
     },
+	"neckStyle.neckband": {
+      "t": "Neckband",
+	  "d": "Finish the neck with a neckband."
+	},
+	"neckStyle.hood": {
+      "t": "Hood",
+	  "d": "Generate a hood for the garment."
+	},
     "sleeveLength": {
       "t": "Sleeve length",
-      "d": "Controls the how long the sleeves of your shirt will be."
+      "d": "Controls how long the sleeves of the garment will be."
     },
+    "legLength": {
+      "t": "Leg length",
+      "d": "Controls how long the legs of the garment will be."
+    },
+    "hoodFrontPieceSize": {
+      "t": "Hood front piece size",
+      "d": "Controls if a front piece will be used, and how wide the front piece of the hood will be. The seam between the front and back pieces is useful for securely sewing in ears or other decorations to the hood. Set to 0% to build the hood using only back pieces."
+    },
+    "hoodFrontBonus": {
+      "t": "Hood front bonus",
+      "d": "Controls how far forward the hood comes over the forehead."
+    },
+    "hoodFrontDip": {
+      "t": "Hood Front dip",
+      "d": "Controls far down the front of the hood drops over the forehead. Larger values work best with lightweight/flexible fabrics."
+    },
+    "swimSkirt": {
+      "t": "Swim skirt",
+      "d": "Select whether or not you want to add a simple gathered skirt around the waist of the garment."
+    },
+	"swimSkirtNo": {
+      "t": "Nothing",
+	  "d": "A swim skirt will not be generated."
+	},
+	"swimSkirtYes": {
+      "t": "Swim skirt",
+	  "d": "A swim skirt will be generated."
+	},
 
-    "hipsEase": {
-      "t": "Hips ease",
-      "d": "Controls how wide your shirt will be at the bottom hem. This option is only used if the straight sides option is disabled."
+    "legTaperPosition": {
+      "t": "Leg taper position",
+      "d": "Controls how the lower legs are laid out on the pattern."
+    },
+    "crotchScoopWidth": {
+      "t": "Crotch scoop width",
+      "d": "Controls how wide the curve at the crotch fork is."
+    },
+    "crotchScoopLength": {
+      "t": "Crotch scoop length",
+      "d": "Controls how long the curve at the crotch fork is."
     },
     "raglanScoopLength": {
       "t": "Raglan scoop length",
@@ -71,14 +180,6 @@
     "raglanScoopMagnitude": {
       "t": "Raglan scoop depth",
       "d": "Controls how much extra material to place under the armpits."
-    },
-    "sideShape": {
-      "t": "Body shape",
-      "d": "Controls how the side seam is curved. This option is ignored if the straight sides option is enabled."
-    },
-    "straightSides": {
-      "t": "Straight Sides",
-      "d": "Forms a tubular shirt, which is a shirt where the hips and chest are the same width and connected by a straight seam."
     }
   }
 }

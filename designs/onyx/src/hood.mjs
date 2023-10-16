@@ -64,7 +64,7 @@ function draftHood({
     -frontDip * Math.sin(sideSeamPositionRadians)
   )
   points.backNeck = new Point(hoodWidth / 2, -frontDip)
-  points.backHead = new Point(measurements.head / 4, -hoodBackHeight)
+  points.backHead = new Point((measurements.head / 4) * options.hoodDepth, -hoodBackHeight)
   points.centerTop = new Point(0, -hoodTopHeight)
   points.frontTop = new Point(
     (hoodWidth / 2) * sideSeamPosition,
@@ -86,14 +86,14 @@ function draftHood({
   )
   points.backNeckCp2 = new Point(hoodWidth / 2, (-frontDip * 2) / 3 + (-hoodBackHeight * 1) / 3)
   points.backHeadCp1 = new Point(
-    measurements.head / 4,
+    (measurements.head / 4) * options.hoodDepth,
     (-frontDip * 1) / 3 + (-hoodBackHeight * 2) / 3
   )
   points.backHeadCp2 = new Point(
-    measurements.head / 4,
+    (measurements.head / 4) * options.hoodDepth,
     (points.backHead.y * 1) / 3 + (points.centerTop.y * 2) / 3
   )
-  points.centerTopCp1 = new Point(measurements.head / 12, -hoodTopHeight)
+  points.centerTopCp1 = new Point((measurements.head / 12) * options.hoodDepth, -hoodTopHeight)
   points.centerTopCp2 = new Point(
     (points.centerTop.x * 2) / 3 + (points.frontTop.x * 2) / 5,
     points.centerTop.y
@@ -243,8 +243,8 @@ export const hood = {
   after: [front, back, raglanSleeve],
   measurements: ['neck', 'chest', 'biceps', 'wrist', 'head'],
   options: {
-    // How roomy the hood is horizontally.
-    hoodWidth: {
+    // How roomy the hood in the back of the head.
+    hoodDepth: {
       pct: 120,
       min: 70,
       max: 180,
