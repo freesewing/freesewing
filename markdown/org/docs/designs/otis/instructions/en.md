@@ -1,5 +1,5 @@
 ---
-title: "Otis, the simple romper: Sewing Instructions"
+title: "Otis, the simple baby romper: Sewing Instructions"
 ---
 
 <Note>
