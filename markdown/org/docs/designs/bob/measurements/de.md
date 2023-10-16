@@ -6,4 +6,4 @@ title: "Bob der Latz: Erforderliche Maße"
 Bob benötigt keine Messungen
 </Note>
 
-<PatternMeasurements pattern='bob' />
+<DesignMeasurements design='bob' />

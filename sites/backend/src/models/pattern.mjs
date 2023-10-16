@@ -8,7 +8,7 @@ import { decorateModel } from '../utils/model-decorator.mjs'
 export function PatternModel(tools) {
   return decorateModel(this, tools, {
     name: 'pattern',
-    encryptedFields: ['data', 'img', 'name', 'notes', 'settings'],
+    encryptedFields: ['data', 'name', 'notes', 'settings'],
     jsonFields: ['data'],
     models: ['set'],
   })
@@ -128,7 +128,7 @@ PatternModel.prototype.guardedCreate = async function ({ body, user }) {
      * If an image was created, update the record with its ID
      * If not, just update the record from the database
      */
-    await this.update(this.cloak({ img }))
+    await this.update({ img })
   } else await this.read({ id: this.record.id }, { set: true, cset: true })
 
   /*

@@ -2,4 +2,4 @@
 title: "Корсет Cathrin: Варіанти дизайну"
 ---
 
-<PatternOptions pattern='cathrin' />
+<DesignOptions design='cathrin' />

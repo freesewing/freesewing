@@ -49,6 +49,11 @@ prebuildRunner({
      */
     navigation: true,
 
+    /*
+     * Always prebuild the site-specific page generation
+     */
+    'Page Templates': true,
+
     // PREBUILD IN PRUDUCTION - MOCK/SKIP IN DEV ///////////////////////////////
 
     /*

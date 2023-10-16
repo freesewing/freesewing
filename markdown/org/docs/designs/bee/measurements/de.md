@@ -2,4 +2,4 @@
 title: "Bienen-Bikinioberteil: Erforderliche Maße"
 ---
 
-<PatternMeasurements pattern='bee' />
+<DesignMeasurements design='bee' />

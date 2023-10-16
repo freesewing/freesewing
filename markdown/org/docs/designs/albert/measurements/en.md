@@ -2,4 +2,4 @@
 title: "Albert apron: Required Measurements"
 ---
 
-<PatternMeasurements pattern='albert' />
+<DesignMeasurements design='albert' />

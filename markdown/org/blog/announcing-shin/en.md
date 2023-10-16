@@ -22,9 +22,9 @@ has already provided an illustration for it too.
 Shin comes with options, and they are very close to the options available for 
 [Bruce](/designs/bruce).
 
-All [options are documented](/docs/patterns/shin/options), 
-as are the [required measurements](/docs/patterns/shin/measurements), 
-and I've also written [instructions for how to make this](/docs/patterns/shin). 
+All [options are documented](/docs/designs/shin/options), 
+as are the [required measurements](/docs/designs/shin/measurements), 
+and I've also written [instructions for how to make this](/docs/designs/shin/instructions). 
 
 I still have to do the illustrations, but it's really not hard so you'll probably
 figure it out without them.

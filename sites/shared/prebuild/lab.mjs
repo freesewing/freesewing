@@ -1,11 +1,12 @@
 import path from 'path'
 import fse from 'fs-extra'
+import { collection } from '../../lab/hooks/use-design.mjs'
+import { generateNewPatternPages } from './org.mjs'
 
 const copyFromOrg = [
   ['account'],
   ['designs'],
   ['new', 'index.mjs'],
-  ['new', '[design].mjs'],
   ['patterns'],
   ['sets'],
   ['signin'],
@@ -24,4 +25,5 @@ const copyOrgFiles = () => {
 
 export const prebuildLab = async () => {
   copyOrgFiles()
+  await generateNewPatternPages(collection, 'lab')
 }
