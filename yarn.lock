@@ -2396,10 +2396,10 @@
   dependencies:
     tslib "^2.4.0"
 
-"@tailwindcss/typography@0.5.10":
-  version "0.5.10"
-  resolved "https://registry.yarnpkg.com/@tailwindcss/typography/-/typography-0.5.10.tgz#2abde4c6d5c797ab49cf47610830a301de4c1e0a"
-  integrity sha512-Pe8BuPJQJd3FfRnm6H0ulKIGoMEQS+Vq01R6M5aCrFB/ccR/shT+0kXLjouGC1gFLm9hopTFN+DMP0pfwRWzPw==
+"@tailwindcss/typography@0.5.9":
+  version "0.5.9"
+  resolved "https://registry.yarnpkg.com/@tailwindcss/typography/-/typography-0.5.9.tgz#027e4b0674929daaf7c921c900beee80dbad93e8"
+  integrity sha512-t8Sg3DyynFysV9f4JDOVISGsjazNb48AeIYQwcL+Bsq5uf4RYL75C1giZ43KISjeDGBaTN3Kxh7Xj/vRSMJUUg==
   dependencies:
     lodash.castarray "^4.4.0"
     lodash.isplainobject "^4.0.6"
@@ -7799,10 +7799,10 @@ jiti@^1.18.2:
   resolved "https://registry.yarnpkg.com/jiti/-/jiti-1.20.0.tgz#2d823b5852ee8963585c8dd8b7992ffc1ae83b42"
   integrity sha512-3TV69ZbrvV6U5DfQimop50jE9Dl6J8O1ja1dvBbMba/sZ3YBEQqJ2VZRoQPVnhlzjNtU1vaXRZVrVjU4qtm8yA==
 
-jotai-location@0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/jotai-location/-/jotai-location-0.5.2.tgz#9d8ccbaea0cc2ed199c7e15adb7a3b8a3060fa6d"
-  integrity sha512-4S9hDh1wYp4SG4Laq3+Xd0GdW7jwnWlbEuL8U22kv3wUZW892n6gXlNhwU0LaoXnWoGG0gtjSLBuFm5iodFKLg==
+jotai-location@0.5.1:
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/jotai-location/-/jotai-location-0.5.1.tgz#1a08b683cd7823ce57f7fef8b98335f1ce5c7105"
+  integrity sha512-6b34X6PpUaXmHCcyxdMFUHgRLUEp+SFHq9UxHbg5HxHC1LddVyVZbPJI+P15+SOQJcUTH3KrsIeKmeLko+Vw/A==
 
 jotai@2.4.3:
   version "2.4.3"
@@ -10846,10 +10846,10 @@ pify@^4.0.1:
   resolved "https://registry.yarnpkg.com/pify/-/pify-4.0.1.tgz#4b2cd25c50d598735c50292224fd8c6df41e3231"
   integrity sha512-uB80kBFb/tfd68bVleG9T5GGsGPjJrLAUpR5PZIrhBnIaRTQRjqdJSsIKkOP6OAIFbj7GOrcudc5pNjZ+geV2g==
 
-pino-abstract-transport@v1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/pino-abstract-transport/-/pino-abstract-transport-1.1.0.tgz#083d98f966262164504afb989bccd05f665937a8"
-  integrity sha512-lsleG3/2a/JIWUtf9Q5gUNErBqwIu1tUKTT3dUzaf5DySw9ra1wcqKjJjLX1VTY64Wk1eEOYsVGSaGfCK85ekA==
+pino-abstract-transport@v1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/pino-abstract-transport/-/pino-abstract-transport-1.0.0.tgz#cc0d6955fffcadb91b7b49ef220a6cc111d48bb3"
+  integrity sha512-c7vo5OpW4wIS42hUVcT5REsL8ZljsUfBjqV/e2sFxmFEFZiq1XLUp5EYLtuDH6PEHq9W1egWqRbnLUP5FuZmOA==
   dependencies:
     readable-stream "^4.0.0"
     split2 "^4.0.0"
@@ -10859,21 +10859,21 @@ pino-std-serializers@^6.0.0:
   resolved "https://registry.yarnpkg.com/pino-std-serializers/-/pino-std-serializers-6.2.2.tgz#d9a9b5f2b9a402486a5fc4db0a737570a860aab3"
   integrity sha512-cHjPPsE+vhj/tnhCy/wiMh3M3z3h/j15zHQX+S9GkTBgqJuTuJzYJ4gUyACLhDaJ7kk9ba9iRDmbH2tJU03OiA==
 
-pino@8.16.0:
-  version "8.16.0"
-  resolved "https://registry.yarnpkg.com/pino/-/pino-8.16.0.tgz#2465012a1d11fa2e7a0545032f636e203990ae26"
-  integrity sha512-UUmvQ/7KTZt/vHjhRrnyS7h+J7qPBQnpG80V56xmIC+o9IqYmQOw/UIny9S9zYDfRBR0ClouCr464EkBMIT7Fw==
+pino@8.15.0:
+  version "8.15.0"
+  resolved "https://registry.yarnpkg.com/pino/-/pino-8.15.0.tgz#67c61d5e397bf297e5a0433976a7f7b8aa6f876b"
+  integrity sha512-olUADJByk4twxccmAxb1RiGKOSvddHugCV3wkqjyv+3Sooa2KLrmXrKEWOKi0XPCLasRR5jBXxioE1jxUa4KzQ==
   dependencies:
     atomic-sleep "^1.0.0"
     fast-redact "^3.1.1"
     on-exit-leak-free "^2.1.0"
-    pino-abstract-transport v1.1.0
+    pino-abstract-transport v1.0.0
     pino-std-serializers "^6.0.0"
     process-warning "^2.0.0"
     quick-format-unescaped "^4.0.3"
     real-require "^0.2.0"
     safe-stable-stringify "^2.3.1"
-    sonic-boom "^3.7.0"
+    sonic-boom "^3.1.0"
     thread-stream "^2.0.0"
 
 pirates@^4.0.1:
@@ -11291,10 +11291,10 @@ react-hotkeys-hook@4.4.1:
   resolved "https://registry.yarnpkg.com/react-hotkeys-hook/-/react-hotkeys-hook-4.4.1.tgz#1f7a7a1c9c21d4fa3280bf340fcca8fd77d81994"
   integrity sha512-sClBMBioFEgFGYLTWWRKvhxcCx1DRznd+wkFHwQZspnRBkHTgruKIHptlK/U/2DPX8BhHoRGzpMVWUXMmdZlmw==
 
-react-i18next@13.3.0:
-  version "13.3.0"
-  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-13.3.0.tgz#8e39c0101f654db7eb971f159bb55067a78925c3"
-  integrity sha512-FlR9xjYHSPIJfQspEmkN0yOlxgRyNuiJKJ8gCaZH08UJ7SZHG+VrptEPcpEMEchjNoCOZdKcvJ3PnmHEZhkeXg==
+react-i18next@13.2.2:
+  version "13.2.2"
+  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-13.2.2.tgz#b1e78ed66a54f4bc819616f68b98221e1b1a1936"
+  integrity sha512-+nFUkbRByFwnrfDcYqvzBuaeZb+nACHx+fAWN/pZMddWOCJH5hoc21+Sa/N/Lqi6ne6/9wC/qRGOoQhJa6IkEQ==
   dependencies:
     "@babel/runtime" "^7.22.5"
     html-parse-stringify "^3.0.1"
@@ -12285,7 +12285,7 @@ socks@^2.6.2:
     ip "^2.0.0"
     smart-buffer "^4.2.0"
 
-sonic-boom@^3.7.0:
+sonic-boom@^3.1.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/sonic-boom/-/sonic-boom-3.7.0.tgz#b4b7b8049a912986f4a92c51d4660b721b11f2f2"
   integrity sha512-IudtNvSqA/ObjN97tfgNmOKyDOs4dNcg4cUUsHDebqsgb8wGBBwb31LIgShNO8fye0dFI52X1+tFoKKI6Rq1Gg==
