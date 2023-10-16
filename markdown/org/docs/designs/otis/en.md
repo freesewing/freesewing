@@ -1,5 +1,5 @@
 ---
-title: "Otis: the simple romper"
+title: "Otis: the simple baby romper"
 ---
 
 <DesignInfo design='otis' docs />
