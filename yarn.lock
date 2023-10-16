@@ -3320,11 +3320,6 @@ big.js@^5.2.2:
   resolved "https://registry.yarnpkg.com/big.js/-/big.js-5.2.2.tgz#65f0af382f578bcdc742bd9c281e9cb2d7768328"
   integrity sha512-vyL2OymJxmarO8gxMr0mhChsO9QGwhynfuu4+MHTAW6czfq9humCB7rKpUjDd9YUiDPU4mzpyupFSvOClAwbmQ==
 
-bin-pack-with-constraints@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/bin-pack-with-constraints/-/bin-pack-with-constraints-1.0.1.tgz#47e67b481724a8a5a3644ec9c9ccf881c2725096"
-  integrity sha512-fiPxvZAWuIqLpK79Ov58PztT/ZiGbpDB7usifleilJ/4aqhSx0ivY5kRifESJnR2rq51pScbUJ0LgCebufGJnA==
-
 binary-extensions@^2.0.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-2.2.0.tgz#75f502eeaf9ffde42fc98829645be4ea76bd9e2d"
@@ -11390,10 +11385,10 @@ react-timeago@7.2.0:
   resolved "https://registry.yarnpkg.com/react-timeago/-/react-timeago-7.2.0.tgz#ae929d7423a63cbc3dc228e49d22fbf586d459ca"
   integrity sha512-2KsBEEs+qRhKx/kekUVNSTIpop3Jwd7SRBm0R4Eiq3mPeswRGSsftY9FpKsE/lXLdURyQFiHeHFrIUxLYskG5g==
 
-react-zoom-pan-pinch@3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/react-zoom-pan-pinch/-/react-zoom-pan-pinch-3.1.0.tgz#d87a66fd22a97f5dd56b54076411a9dce1f448cd"
-  integrity sha512-a3LlP8QPgTikvteCNkZ3X6wIWC0lrg1geP5WkUJyx2MXXAhHQek3r17N1nT/esOiWGuPIECnsd9AGoK8jOeGcg==
+react-zoom-pan-pinch@3.2.0:
+  version "3.2.0"
+  resolved "https://registry.yarnpkg.com/react-zoom-pan-pinch/-/react-zoom-pan-pinch-3.2.0.tgz#6ce7d014a8dc4aa62ce83ca57f85e76cf2e934b8"
+  integrity sha512-7MS0wYWoXjr6PrmpgHOVpVyNQr9gj7LEr4xIvq6lBy62nuNwjdI1r+XxahQ0SDHhWrLuSF11e2PTL/YLengYyg==
 
 react@18.2.0, react@^18.2.0:
   version "18.2.0"
