@@ -609,14 +609,22 @@
     ]
   },
   "shelly": {
-	"lab": true,
-	"org": true,
-    "description": "A FreeSewing pattern for a raglan shirt, perfect for swimshirts",
     "code": "Thrunic",
+    "description": "A FreeSewing pattern for a raglan shirt, perfect for swimshirts",
     "design": "Thrunic",
     "difficulty": 2,
-    "tags": ["tops", "swimwear"],
-	"techniques": ["hem", "stretch", "curvedSeam", "raglanSleeve"]
+    "lab": true,
+    "org": true,
+    "tags": [
+      "tops",
+      "swimwear"
+    ],
+    "techniques": [
+      "hem",
+      "stretch",
+      "curvedSeam",
+      "raglanSleeve"
+    ]
   },
   "shin": {
     "code": "Joost De Cock",
@@ -675,14 +683,20 @@
     ]
   },
   "skully": {
-    "description": "A FreeSewing pattern for skully, our logo, a plushy toy",
     "code": "Wouter Van Wageningen",
+    "description": "A FreeSewing pattern for skully, our logo, a plushy toy",
     "design": "Wouter Van Wageningen",
     "difficulty": 4,
     "lab": true,
     "org": true,
-    "tags": ["accessories", "toys"],
-    "techniques": ["curvedSeam", "precision"]
+    "tags": [
+      "accessories",
+      "toys"
+    ],
+    "techniques": [
+      "curvedSeam",
+      "precision"
+    ]
   },
   "sven": {
     "code": "Joost De Cock",
@@ -856,13 +870,25 @@
     ]
   },
   "otis": {
-    "description": "A FreeSewing pattern for a romper",
     "code": "Wouter Van Wageningen",
+    "description": "A FreeSewing pattern for a romper",
     "design": "Wouter Van Wageningen",
     "difficulty": 2,
     "lab": true,
     "org": true,
-    "tags": [  ],
-    "techniques": [ ]
+    "tags": [],
+    "techniques": []
+  },
+  "gozer": {
+    "code": "Coder name",
+    "description": "A FreeSewing pattern that needs a description",
+    "design": "Designer name",
+    "difficulty": 1,
+    "tags": [
+      "tagname"
+    ],
+    "techniques": [
+      "techname"
+    ]
   }
 }
