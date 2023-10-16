@@ -87,6 +87,7 @@
 #### Changed
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+ - The skirt and curved waistband are now constructed with the ringsector macro
 
 ### shin
 
@@ -123,6 +124,12 @@
 #### Added
 
  - First release of the plugin providing the default packing implementation
+
+### plugin-ringsector
+
+#### Added
+
+ - First release of the plugin facilitating drafting a ring sector
 
 ### core
 

@@ -4,6 +4,8 @@ Unreleased:
       - Allow plugins to provide their own packing implementation
     plugin-bin-pack:
       - First release of the plugin providing the default packing implementation
+    plugin-ringsector:
+      - First release of the plugin facilitating drafting a ring sector
 
   Changed:
     aaron:
@@ -33,6 +35,7 @@ Unreleased:
       - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
     sandy:
       - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
+      - The skirt and curved waistband are now constructed with the ringsector macro
     shin:
       - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes #5057
     sven:
