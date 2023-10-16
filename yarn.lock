@@ -11385,10 +11385,10 @@ react-timeago@7.2.0:
   resolved "https://registry.yarnpkg.com/react-timeago/-/react-timeago-7.2.0.tgz#ae929d7423a63cbc3dc228e49d22fbf586d459ca"
   integrity sha512-2KsBEEs+qRhKx/kekUVNSTIpop3Jwd7SRBm0R4Eiq3mPeswRGSsftY9FpKsE/lXLdURyQFiHeHFrIUxLYskG5g==
 
-react-zoom-pan-pinch@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/react-zoom-pan-pinch/-/react-zoom-pan-pinch-3.2.0.tgz#6ce7d014a8dc4aa62ce83ca57f85e76cf2e934b8"
-  integrity sha512-7MS0wYWoXjr6PrmpgHOVpVyNQr9gj7LEr4xIvq6lBy62nuNwjdI1r+XxahQ0SDHhWrLuSF11e2PTL/YLengYyg==
+react-zoom-pan-pinch@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/react-zoom-pan-pinch/-/react-zoom-pan-pinch-3.1.0.tgz#d87a66fd22a97f5dd56b54076411a9dce1f448cd"
+  integrity sha512-a3LlP8QPgTikvteCNkZ3X6wIWC0lrg1geP5WkUJyx2MXXAhHQek3r17N1nT/esOiWGuPIECnsd9AGoK8jOeGcg==
 
 react@18.2.0, react@^18.2.0:
   version "18.2.0"
