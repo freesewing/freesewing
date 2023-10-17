@@ -136,6 +136,7 @@
 #### Added
 
  - Allow plugins to provide their own packing implementation
+ - Added named export `cbqc` which exports the constant to approximate a circle with Cubic Bézier curves
 
 #### Fixed
 
