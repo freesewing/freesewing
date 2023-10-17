@@ -18,7 +18,10 @@ export const pocket = {
       points.bottomRight = points.topRight.shift(270, frontPocketSize * 1.5)
 
       points.bottomLeftCornerUp = points.bottomLeft.shift(90, frontPocketSize / 4)
-      points.bottomLeftCornerUpCp1 = points.bottomLeftCornerUp.shift(270, (frontPocketSize / 4) * c)
+      points.bottomLeftCornerUpCp1 = points.bottomLeftCornerUp.shift(
+        270,
+        (frontPocketSize / 4) * cbqc
+      )
       points.bottomLeftCornerOver = points.bottomLeft.shift(0, frontPocketSize / 4)
       points.bottomLeftCornerOverCp2 = points.bottomLeftCornerOver.shift(
         180,
