@@ -12,4 +12,4 @@ title: "Gozer the ghost: Sewing Instructions"
 
 ## Step 3: Enjoy!
 
-That's it, you are all done. Put it on and scare the neighborhood
+That's it, you are all done. Put it on and scare the neighborhood.

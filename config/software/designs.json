@@ -345,6 +345,8 @@
     "description": "A FreeSewing pattern for a ghost costume",
     "design": "Wouter Van Wageningen",
     "difficulty": 1,
+    "lab": true,
+    "org": true,
     "tags": [
       "costumes"
     ],
