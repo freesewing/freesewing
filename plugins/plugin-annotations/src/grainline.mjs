@@ -17,16 +17,16 @@ const macroDefaults = {
 export const grainlineDefs = [
   {
     name: 'grainlineFrom',
-    def: `
-<marker orient="auto" refY="3" refX="8" id="grainlineFrom" style="overflow:visible;" markerWidth="10" markerHeight="6">
-	<path d="M 0,3 L 10,0 C 8,2 8,4 10,6 z" class="fill-note note" />
+    def: (scale) => `
+<marker orient="auto" refY="0" refX="0" id="grainlineFrom" style="overflow:visible;" markerWidth="12" markerHeight="8">
+	<path class="note fill-note" d="M -10,0 L 2,-4 C 0,-2 0,2  2,4 z" transform="scale(${scale})"/>
 </marker>`,
   },
   {
     name: 'grainlineTo',
-    def: `
-<marker orient="auto" refY="3" refX="2" id="grainlineTo" style="overflow:visible;" markerWidth="10" markerHeight="6">
-	<path d="M 10,3 L 0,0 C 2,2 2,4 0,6 z" class="fill-note note" />
+    def: (scale) => `
+<marker orient="auto" refY="0" refX="0" id="grainlineTo" style="overflow:visible;" markerWidth="12" markerHeight="8">
+	<path class="note fill-note" d="M 10,0 L -2,-4 C 0,-2 -2,2  -2,4 z" transform="scale(${scale})"/>
 </marker>`,
   },
 ]

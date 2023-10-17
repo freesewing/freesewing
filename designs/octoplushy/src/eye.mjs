@@ -4,12 +4,8 @@ function octoplushyEye(
   partNumber,
   { options, Point, Path, points, paths, Snippet, snippets, sa, macro, expand, units, store, part }
 ) {
-  if (options.type == 'octoplushy') {
-    return part
-  }
-  if (partNumber > (options.type == 'squid' ? 1 : 2)) {
-    return part
-  }
+  if (options.type == 'octoplushy') return part
+  if (partNumber > (options.type == 'squid' ? 1 : 2)) return  part.hide()
 
   const c = 0.55191502449351
 
@@ -100,8 +96,8 @@ function octoplushyEye(
       .shiftFractionTowards(points.br, 0.5)
       .shiftFractionTowards(points.bl, 0.3)
   }
-  points.gridAnchor = points.logo.clone()
 
+  points.gridAnchor = points.logo.clone()
   snippets.logo = new Snippet('logo', points.logo).attr('data-scale', logoScale)
 
   macro('title', {

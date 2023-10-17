@@ -826,13 +826,16 @@
     ]
   },
   "waralee": {
-    "lab": true,
-    "org": true,
-    "description": "A FreeSewing pattern for wrap pants",
     "code": "Wouter Van Wageningen",
+    "description": "A FreeSewing pattern for wrap pants",
     "design": "Wouter Van Wageningen",
     "difficulty": 2,
-    "tags": ["bottoms", "trousers"],
+    "lab": true,
+    "org": true,
+    "tags": [
+      "bottoms",
+      "trousers"
+    ],
     "techniques": ["curvedSeam", "hem", "weltPocket"]
   },
   "yuri": {
@@ -853,7 +856,7 @@
     ]
   },
   "otis": {
-    "description": "A FreeSewing pattern for a romper",
+    "description": "A FreeSewing pattern for a baby romper",
     "code": "Wouter Van Wageningen",
     "design": "Wouter Van Wageningen",
     "difficulty": 2,

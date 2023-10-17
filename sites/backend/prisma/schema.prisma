@@ -140,13 +140,8 @@ model CuratedSet {
   notesFr   String    @default("")
   notesNl   String    @default("")
   notesUk   String    @default("")
-  tagsDe    String    @default("{}")
-  tagsEn    String    @default("{}")
-  tagsEs    String    @default("{}")
-  tagsFr    String    @default("{}")
-  tagsNl    String    @default("{}")
-  tagsUk    String    @default("{}")
-  measies   String    @default("{}")
+  tags      String    @default("{}")
+  measies   String    @default("[]")
   patterns  Pattern[]
   updatedAt DateTime  @updatedAt
   published Boolean   @default(false)
@@ -169,12 +164,7 @@ model OptionPack {
   notesFr   String    @default("")
   notesNl   String    @default("")
   notesUk   String    @default("")
-  tagsDe    String    @default("{}")
-  tagsEn    String    @default("{}")
-  tagsEs    String    @default("{}")
-  tagsFr    String    @default("{}")
-  tagsNl    String    @default("{}")
-  tagsUk    String    @default("{}")
+  tags      String    @default("[]")
   options   String    @default("{}")
   updatedAt DateTime @updatedAt
 }

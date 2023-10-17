@@ -1,9 +1,5 @@
 ---
-title: FIXME - this option is undocumented
+title: "Arm Width"
 ---
 
-<Fixme>
-Please document this option. See https://github/freesewing/freesewing/issues/5097
-
-</Fixme>
-
+The setting adjusts the width of the arms.

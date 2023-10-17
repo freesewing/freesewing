@@ -85,7 +85,7 @@ Hurray! You've finished the trickiest part! Optionally, you can secure the raw e
 
 <Tip>
 
-A more extensive how-to on knit binding can be found in the [Aaron Instuctions](/docs/patterns/aaron/instructions).
+A more extensive how-to on knit binding can be found in the [Aaron Instuctions](/docs/designs/aaron/instructions).
 
 </Tip>
 

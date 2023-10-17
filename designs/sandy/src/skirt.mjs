@@ -1,6 +1,6 @@
-import { draftRingSector } from './shared.mjs'
 import { pctBasedOn } from '@freesewing/core'
 import { elastics } from '@freesewing/snapseries'
+import { ringsectorPlugin } from '@freesewing/plugin-ringsector'
 
 function sandySkirt({
   utils,
@@ -85,29 +85,50 @@ function sandySkirt({
   const radiusHem =
     radiusWaist + store.get('fullLength') * options.lengthBonus - absoluteOptions.waistbandWidth
 
-  /**
-   * The ring sector will be rotated an angle an/2 so we
-   * display the part with one edge of the skirt vertical
-   */
-  const rot = an / 2
+  // Call the RingSector macro to draft the part
+  macro('ringsector', {
+    angle: an,
+    insideRadius: radiusWaist,
+    outsideRadius: radiusHem,
+    rotate: true,
+  })
+  const storeRoot = [
+    'parts',
+    part.name,
+    'macros',
+    '@freesewing/plugin-ringsector',
+    'ids',
+    'ringsector',
+  ]
+  const pathId = store.get([...storeRoot, 'paths', 'path'])
+  paths.seam = paths[pathId].clone().addClass('fabric')
+  paths[pathId].hide()
 
-  // Call draftRingSector to draft the part
-  paths.seam = draftRingSector(part, rot, an, radiusWaist, radiusHem, true).attr('class', 'fabric')
+  /*
+   * Macros ensure they can be used more than once in a part, and will generate unique (and complex)
+   * point names. Since we're only calling the macro once here, we will simplify these names
+   */
+  for (const [shortId, uid] of Object.entries(store.get([...storeRoot, 'points']))) {
+    points[shortId] = points[uid].copy()
+    // Some points are rotated, we need those too
+    if (points[uid + 'Rotated']) points[shortId + 'Rotated'] = points[uid + 'Rotated'].copy()
+  }
 
   // Anchor samples to the centre of the waist
   points.gridAnchor = points.in2Flipped.clone()
 
   if (sa) {
     paths.hemBase = new Path()
-      .move(points.ex1Rotated)
-      .curve(points.ex1CFlippedRotated, points.ex2CFlippedRotated, points.ex2FlippedRotated)
-      .curve(points.ex1CFlipped, points.ex2CFlipped, points.ex2Flipped)
+      .move(points.ex2)
+      .curve(points.ex2c, points.ex1c, points.ex1)
+      .curve(points.ex1cFlipped, points.ex2cFlipped, points.ex2Flipped)
       .offset(store.get('fullLength') * options.lengthBonus * options.hemWidth * -1)
     paths.saBase = new Path()
       .move(points.in2Flipped)
-      .curve(points.in2CFlipped, points.in1CFlipped, points.in2FlippedRotated)
-      .curve(points.in2CFlippedRotated, points.in1CFlippedRotated, points.in1Rotated)
-    if (!options.seamlessFullCircle) paths.saBase = paths.saBase.line(points.ex1Rotated)
+      .curve(points.in2cFlipped, points.in1cFlipped, points.in1)
+      .curve(points.in1c, points.in2c, points.in2)
+
+    if (!options.seamlessFullCircle) paths.saBase = paths.saBase.line(points.ex2)
     paths.saBase = paths.saBase.offset(sa * -1)
 
     paths.hemBase.hide()
@@ -118,8 +139,8 @@ function sandySkirt({
         .move(points.in2Flipped)
         .line(paths.saBase.start())
         .join(paths.saBase)
-        .line(points.in1Rotated)
-        .move(points.ex1Rotated)
+        .line(points.in2)
+        .move(points.ex2)
         .line(paths.hemBase.start())
         .join(paths.hemBase)
         .line(points.ex2Flipped)
@@ -150,9 +171,10 @@ function sandySkirt({
   })
   if (options.seamlessFullCircle) {
     macro('cutonfold', {
-      from: points.ex1Rotated,
-      to: points.in1Rotated,
+      from: points.ex2,
+      to: points.in2,
       id: 'double',
+      reverse: true,
     })
   }
 
@@ -171,7 +193,7 @@ function sandySkirt({
   // Notches
   macro('sprinkle', {
     snippet: 'notch',
-    on: ['in1Rotated', 'gridAnchor'],
+    on: ['in2', 'gridAnchor'],
   })
   snippets.center = new Snippet('bnotch', points.center)
 
@@ -244,5 +266,6 @@ export const skirt = {
       menu: 'fit',
     },
   },
+  plugins: ringsectorPlugin,
   draft: sandySkirt,
 }

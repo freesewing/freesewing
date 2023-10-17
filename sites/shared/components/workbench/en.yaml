@@ -35,7 +35,6 @@ docs: Documentation
 draft: Draft
 draftPattern: Draft pattern
 edit: Edit
-editByHand: Edit Manually
 editCurrentMeasies: Edit Current Measurements
 editCurrentMeasiesDesc: Changes you make here will not be saved to your measurements sets, and will only affect this pattern.
 editCurrentMeasiesHeader: Edit Pattern Measurements
@@ -48,7 +47,7 @@ exportAsData: Export as data
 exportForEditing: Export for editing
 exportForPrinting: Export for printing
 exportPattern-txt: Export a PDF suitable for your printer, or download this pattern in a variety of formats
-exportPattern: Export Pattern
+exportPattern: Export pattern
 fit: Fit
 frontPockets: Front pockets
 generatePdf: Generate print-ready PDF
@@ -81,11 +80,9 @@ partTransfoYes: Show buttons
 partTransfoYesDesc: Include these buttons on the pattern output (they will not be printed)
 pathInfo: Path info
 patternBookmarkCreated: Pattern bookmark created
-patternEditor: Pattern Editor
 patternInspector: Pattern Inspector
-patternLogs: Pattern Logs
+patternLogs: Pattern logs
 patternSaved: Pattern saved
-patternTests: Pattern Tests
 pockets: Pockets
 printLayout: Print Layout
 printSettings.d: Configure your pattern so you can print it just the way you like it. Includes page size & orientation, margins, and more.

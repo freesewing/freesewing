@@ -1,5 +1,3 @@
-import { draftRingSector } from './shared.mjs'
-
 export function draftCurvedWaistband({
   utils,
   store,
@@ -32,18 +30,35 @@ export function draftCurvedWaistband({
     store.get('waistbandOverlap') / (rad + absoluteOptions.waistbandWidth)
   )
 
-  // The curved waistband is shown with no rotation
-  const rot = 0
-  // Call draftRingSector to draft the part
-  paths.seam = draftRingSector(
-    part,
-    rot,
-    an + anExtra,
-    rad,
-    rad + absoluteOptions.waistbandWidth
-  ).attr('class', 'fabric')
+  // Call the RingSector macro to draft the waistband
+  macro('ringsector', {
+    angle: an + anExtra,
+    insideRadius: rad,
+    outsideRadius: rad + absoluteOptions.waistbandWidth,
+  })
+  const storeRoot = [
+    'parts',
+    part.name,
+    'macros',
+    '@freesewing/plugin-ringsector',
+    'ids',
+    'ringsector',
+  ]
+  const pathId = store.get([...storeRoot, 'paths', 'path'])
+  paths.seam = paths[pathId].clone().addClass('fabric')
+  paths[pathId].hide()
 
-  if (sa) paths.sa = paths.seam.offset(sa * -1).attr('class', 'fabric sa')
+  /*
+   * Macros ensure they can be used more than once in a part, and will generate unique (and complex)
+   * point names. Since we're only calling the macro once here, we will simplify these names
+   */
+  for (const [shortId, uid] of Object.entries(store.get([...storeRoot, 'points']))) {
+    points[shortId] = points[uid].copy()
+    // Some points are rotated, we need those too
+    if (points[uid + 'Rotated']) points[shortId + 'Rotated'] = points[uid + 'Rotated'].copy()
+  }
+
+  if (sa) paths.sa = paths.seam.offset(sa * -1).addClass('fabric sa')
 
   /*
    * Annotations
@@ -55,7 +70,7 @@ export function draftCurvedWaistband({
   points.gridAnchor = points.in1.clone()
 
   // Title
-  points.title = points.in1Rotated.shiftFractionTowards(points.ex1Rotated, 0.5).shift(0, 25)
+  points.title = points.ex2Flipped.shiftFractionTowards(points.ex2, 0.5)
   macro('title', {
     at: points.title,
     nr: 2,
@@ -64,42 +79,33 @@ export function draftCurvedWaistband({
   })
 
   // Grainline
-  points.grainlineFrom = utils.curveIntersectsY(
-    points.ex2FlippedRotated,
-    points.ex2CFlippedRotated,
-    points.ex1CFlippedRotated,
-    points.ex1Rotated,
-    points.title.y
-  )
-  points.grainlineTo = points.grainlineFrom.flipX()
   macro('grainline', {
-    from: points.grainlineFrom,
-    to: points.grainlineTo,
+    from: points.ex2Flipped,
+    to: points.ex2,
   })
 
   // Buttons / Notches
   if (store.get('waistbandOverlap') >= options.minimumOverlap) {
-    points.pivot = points.in2Rotated.shiftFractionTowards(points.ex2Rotated, 0.5)
+    points.pivot = points.in2.shiftFractionTowards(points.ex2, 0.5)
     points.button = points.pivot
-      .shiftTowards(points.ex2Rotated, store.get('waistbandOverlap') / 2)
+      .shiftTowards(points.ex2, store.get('waistbandOverlap') / 2)
       .rotate(-90, points.pivot)
     points.buttonhole = points.button.flipX()
     snippets.button = new Snippet('button', points.button)
-    snippets.buttonhole = new Snippet('buttonhole', points.buttonhole).attr(
-      'data-rotate',
-      -1 * points.ex2FlippedRotated.angle(points.in2FlippedRotated)
+    snippets.buttonhole = new Snippet('buttonhole', points.buttonhole).rotate(
+      points.in2.angle(points.ex2)
     )
     points.centerNotch = new Path()
       .move(points.ex1Rotated)
-      .curve(points.ex1CFlippedRotated, points.ex2CFlippedRotated, points.ex2FlippedRotated)
+      .curve(points.ex1cFlippedRotated, points.ex2cFlippedRotated, points.ex2FlippedRotated)
       .shiftAlong(store.get('waistbandOverlap') / 2)
     points.buttonNotch = new Path()
       .move(points.ex2Rotated)
-      .curve(points.ex2CRotated, points.ex1CRotated, points.ex1Rotated)
+      .curve(points.ex2cRotated, points.ex1cRotated, points.ex1Rotated)
       .shiftAlong(store.get('waistbandOverlap'))
     macro('sprinkle', {
       snippet: 'notch',
-      on: ['centerNotch', 'buttonNotch', 'ex2FlippedRotated'],
+      on: ['centerNotch', 'buttonNotch', 'ex2Flipped'],
     })
   }
 
@@ -107,25 +113,25 @@ export function draftCurvedWaistband({
   macro('hd', {
     id: 'wTop',
     from: points.in2FlippedRotated,
-    to: points.in2Rotated,
-    y: points.in2Rotated.y - sa - 15,
+    to: points.in2,
+    y: points.in2.y - sa - 15,
   })
   macro('hd', {
     from: points.ex2FlippedRotated,
     id: 'wFull',
-    to: points.ex2Rotated,
-    y: points.in2Rotated.y - sa - 30,
+    to: points.ex2,
+    y: points.in2.y - sa - 30,
   })
   macro('vd', {
     id: 'hFull',
-    from: points.ex1Rotated,
-    to: points.in2Rotated,
-    x: points.in2Rotated.x + sa + 30,
+    from: points.ex1,
+    to: points.in2,
+    x: points.in2.x + sa + 40,
   })
   macro('ld', {
     id: 'lWidth',
-    from: points.ex2Rotated,
-    to: points.in2Rotated,
+    from: points.ex2,
+    to: points.in2,
     d: -1 * sa - 15,
   })
 
