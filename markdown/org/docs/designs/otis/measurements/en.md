@@ -1,5 +1,5 @@
 ---
-title: "Otis, the simple romper: Required Measurements"
+title: "Otis, the simple baby romper: Required Measurements"
 ---
 
 <DesignMeasurements design='otis' />

@@ -2,7 +2,17 @@ import { Bezier } from 'bezier-js'
 import { Path } from './path.mjs'
 import { Point } from './point.mjs'
 
+/*
+ * See: https://en.wikipedia.org/wiki/Golden_ratio
+ */
 export const goldenRatio = 1.618034
+
+/*
+ * cbqc = Cubic Bezier Quarter Circle
+ * The value to best approximate a (quarter) circle with cubic Bézier curves
+ * See: https://spencermortensen.com/articles/bezier-circle/
+ */
+export const cbqc = 0.55191502449351
 
 //////////////////////////////////////////////
 //            PUBLIC  METHODS               //

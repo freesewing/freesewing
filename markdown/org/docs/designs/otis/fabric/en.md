@@ -1,5 +1,5 @@
 ---
-title: "Otis, the simple romper: Fabric Options"
+title: "Otis, the simple baby romper: Fabric Options"
 ---
 
 ## Main Fabric 
