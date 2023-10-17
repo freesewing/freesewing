@@ -1,3 +1,4 @@
+import { cbqc } from '@freesewing/core'
 import { front } from './front.mjs'
 import { back } from './back.mjs'
 import { raglanSleeve } from './raglansleeve.mjs'
@@ -87,13 +88,16 @@ function draftHood({
   points.backNeckCp2 = new Point(hoodWidth / 2, (-frontDip * 2) / 3 + (-hoodBackHeight * 1) / 3)
   points.backHeadCp1 = new Point(
     (measurements.head / 4) * options.hoodDepth,
-    (-frontDip * 1) / 3 + (-hoodBackHeight * 2) / 3
+    (-frontDip * 1 + -hoodBackHeight * 2) / 3
   )
   points.backHeadCp2 = new Point(
     (measurements.head / 4) * options.hoodDepth,
-    (points.backHead.y * 1) / 3 + (points.centerTop.y * 2) / 3
+    points.backHead.y * (1 - cbqc) + points.centerTop.y * cbqc
   )
-  points.centerTopCp1 = new Point((measurements.head / 12) * options.hoodDepth, -hoodTopHeight)
+  points.centerTopCp1 = new Point(
+    (measurements.head / 4) * cbqc * options.hoodDepth,
+    -hoodTopHeight
+  )
   points.centerTopCp2 = new Point(
     (points.centerTop.x * 2) / 3 + (points.frontTop.x * 2) / 5,
     points.centerTop.y
