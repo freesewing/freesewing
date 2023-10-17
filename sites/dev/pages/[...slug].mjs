@@ -80,7 +80,7 @@ export default DocsPage
 export async function getStaticProps({ params }) {
   return {
     props: {
-      ...(await serverSideTranslations('en', ['docs', 'tutorial', ...ns])),
+      ...(await serverSideTranslations('en', ['docs', 'tutorial', 'popout', ...ns])),
       ...(await loadMdxAsStaticProps({
         language: 'en',
         site: 'dev',
