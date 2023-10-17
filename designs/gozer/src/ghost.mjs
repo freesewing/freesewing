@@ -1,7 +1,7 @@
 export const ghost = {
   name: 'gozer.ghost',
   measurements: ['hpsToWaistBack', 'waistToFloor', 'head'],
-  draft: ({ measurements, Point, Path, points, paths, Snippet, snippets, sa, macro, part }) => {
+  draft: ({ measurements, Point, points, Snippet, snippets, sa, macro, part }) => {
     const eyeSize = measurements.head * 0.0416
     const size =
       measurements.hpsToWaistBack + measurements.waistToFloor + measurements.head / Math.PI
