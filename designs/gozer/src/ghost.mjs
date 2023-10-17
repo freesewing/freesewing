@@ -4,9 +4,6 @@ export const ghost = {
   name: 'gozer.ghost',
   measurements: ['hpsToWaistBack', 'waistToFloor', 'head'],
   draft: ({ measurements, Point, Path, points, paths, Snippet, snippets, sa, macro, part }) => {
-    // const c = 0.55191502449351
-    const c = cbqc
-    console.log({ c: c })
     const eyeSize = measurements.head * 0.0416
     const size =
       measurements.hpsToWaistBack + measurements.waistToFloor + measurements.head / Math.PI
@@ -19,14 +16,14 @@ export const ghost = {
     points.left = new Point(-1 * size, 0)
     points.right = new Point(size, 0)
     points.bottom = new Point(0, size)
-    points.topCp1 = points.top.shift(180, size * c)
-    points.topCp2 = points.top.shift(0, size * c)
-    points.leftCp1 = points.left.shift(270, size * c)
-    points.leftCp2 = points.left.shift(90, size * c)
-    points.bottomCp1 = points.bottom.shift(0, size * c)
-    points.bottomCp2 = points.bottom.shift(180, size * c)
-    points.rightCp1 = points.right.shift(90, size * c)
-    points.rightCp2 = points.right.shift(270, size * c)
+    points.topCp1 = points.top.shift(180, size * cbqc)
+    points.topCp2 = points.top.shift(0, size * cbqc)
+    points.leftCp1 = points.left.shift(270, size * cbqc)
+    points.leftCp2 = points.left.shift(90, size * cbqc)
+    points.bottomCp1 = points.bottom.shift(0, size * cbqc)
+    points.bottomCp2 = points.bottom.shift(180, size * cbqc)
+    points.rightCp1 = points.right.shift(90, size * cbqc)
+    points.rightCp2 = points.right.shift(270, size * cbqc)
 
     points.eyeLeft.addCircle(eyeSize)
     points.eyeRight.addCircle(eyeSize)
@@ -38,7 +35,7 @@ export const ghost = {
       .curve(points.bottomCp1, points.rightCp2, points.right)
       .curve(points.rightCp1, points.topCp2, points.top)
       .close()
-      .attr('class', 'fabric')
+      .addClass('fabric')
 
     points.title = points.middle.shiftFractionTowards(points.bottom, 0.65)
     macro('title', {
@@ -51,7 +48,7 @@ export const ghost = {
     snippets.logo = new Snippet('logo', points.logo)
 
     if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      paths.sa = paths.seam.offset(sa).addClass('fabric sa')
     }
 
     macro('hd', {
