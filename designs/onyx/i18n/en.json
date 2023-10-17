@@ -1,7 +1,8 @@
 {
-  "t": "Onyx unisuit",
-  "d": "A FreeSewing pattern for unisuits and onesie pajamas",
+  "t": "Onyx one-piece",
+  "d": "Onyx is a versatile one-piece garment with several forms.",
   "p": {
+	"base": "Base",
     "back": "Back",
     "front": "Front",
     "neckband": "Neckband",
