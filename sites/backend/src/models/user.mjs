@@ -176,13 +176,11 @@ UserModel.prototype.oauthSignIn = async function ({ body }) {
         metadata: { ihash },
         url: oauthData.img,
       })
-      if (img) data.img = this.encrypt(img)
-      else data.img = this.encrypt(this.config.avatars.user)
     } catch (err) {
       log.info(err, `Unable to update image post-oauth signup for user ${email}`)
       return this.setResponse(500, 'createAccountFailed')
     }
-  } else data.img = this.config.avatars.user
+  }
 
   /*
    * Now attempt to create the record in the database
@@ -763,7 +761,6 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
        */
       data: this.encrypt({}),
       bio: this.encrypt(''),
-      img: this.config.avatars.user,
     }
     /*
      * During tests, users can set their own permission level so you can test admin stuff
@@ -1295,7 +1292,7 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
    * Image (img)
    */
   if (typeof body.img === 'string')
-    data.img = await replaceImage({
+    await replaceImage({
       id: `uid-${this.record.ihash}`,
       data: body.img,
     })
@@ -1593,7 +1590,6 @@ UserModel.prototype.asProfile = function () {
   return {
     id: this.record.id,
     bio: this.clear.bio,
-    img: this.record.img,
     ihash: this.record.ihash,
     patron: this.record.patron,
     role: this.record.role,
@@ -1620,7 +1616,6 @@ UserModel.prototype.asAccount = function () {
     email: this.clear.email,
     data: this.clear.data,
     ihash: this.record.ihash,
-    img: this.record.img,
     imperial: this.record.imperial,
     initial: this.clear.initial,
     jwtCalls: this.record.jwtCalls,
@@ -1900,151 +1895,4 @@ UserModel.prototype.papersPlease = async function (id, type, payload) {
    * and their consent and status are ok, so so return true and let them through.
    */
   return [true, false]
-}
-
-/*
- * Everything below this comment is migration code.
- * This can all be removed after v3 is in production and all users have been migrated.
- */
-const migrateUser = (v2) => {
-  const email = clean(v2.email)
-  const initial = v2.initial ? clean(v2.initial) : email
-  const data = {
-    bio: v2.bio || '--',
-    consent: 0,
-    createdAt: v2.time?.created ? new Date(v2.time.created) : new Date(),
-    email,
-    ehash: hash(email),
-    data: {},
-    ihash: hash(initial),
-    img: 'default-avatar',
-    initial,
-    imperial: v2.settings.units === 'imperial',
-    language: v2.settings.language,
-    lastSeen: new Date(),
-    lusername: v2.username.toLowerCase(),
-    mfaEnabled: false,
-    newsletter: v2.newsletter === true ? true : false,
-    patron: v2.patron,
-    role: v2._id === '5d62aa44ce141a3b816a3dd9' ? 'admin' : 'user',
-    status: v2.status === 'active' ? 1 : 0,
-    username: v2.username,
-  }
-  if (data.consent.profile) data.consent++
-  if (data.consent.measurements) data.consent++
-  if (data.consent.openData) data.consent++
-
-  return data
-}
-
-/*
- * This is a special migration route
- */
-UserModel.prototype.migrate = async function ({ password, v2 }) {
-  //let lut = false
-  const data = migrateUser(v2.account)
-  if (v2.account.consent.profile && (v2.account.consent.model || v2.account.consent.measurements)) {
-    data.consent++
-    if (v2.account.consent.openData) v2.account.consent++
-  }
-  data.password = password
-  await this.read({ ehash: data.ehash })
-  if (!this.record) {
-    /*
-     * Skip images for now
-     */
-    data.img = 'default-avatar'
-    let available = await this.isLusernameAvailable(data.lusername)
-    while (!available) {
-      data.username += '+'
-      data.lusername += '+'
-      available = await this.isLusernameAvailable(data.lusername)
-    }
-    try {
-      await this.createRecord(data)
-    } catch (err) {
-      log.warn(err, 'Could not create user record')
-      return this.setResponse(500, 'createUserFailed')
-    }
-    // That's the user, now load their people as sets
-    const user = {
-      ...v2.account,
-      people: v2.people,
-      patterns: v2.patterns,
-    }
-    if (user.people) await this.Set.migrate(user, this.record.id)
-    //if (user.people) lut = await this.Set.migrate(user, this.record.id)
-    //if (user.patterns) await this.Pattern.import(user, lut, this.record.id)
-  } else {
-    return this.setResponse(400, 'userExists')
-  }
-
-  /*
-   * Decrypt data so we can return it
-   */
-  await this.reveal()
-
-  /*
-   * Looks like the migration was a success. Return a passwordless sign in
-   */
-  return this.signInOk()
-}
-/*
- * This is a special route not available for API users
- */
-UserModel.prototype.import = async function (user) {
-  if (user.status === 'active') {
-    const data = migrateUser(user)
-    if (user.consent.profile && (user.consent.model || user.consent.measurements)) {
-      data.consent++
-      if (user.consent.openData) data.consent++
-    }
-
-    await this.read({ ehash: data.ehash })
-    if (!this.record) {
-      /*
-       * Skip images for now
-       */
-      if (data.img) {
-        /*
-         * Figure out what image to grab from the FreeSewing v2 backend server
-         */
-        const imgId = `user-${data.ihash}`
-        const imgUrl =
-          'https://static.freesewing.org/users/' +
-          encodeURIComponent(user.handle.slice(0, 1)) +
-          '/' +
-          encodeURIComponent(user.handle) +
-          '/' +
-          encodeURIComponent(data.img)
-        data.img = await importImage({
-          id: imgId,
-          metadata: {
-            user: `v2-${user.handle}`,
-            ihash: data.ihash,
-          },
-          url: imgUrl,
-        })
-        data.img = imgId
-      } else data.img = 'default-avatar'
-      let available = await this.isLusernameAvailable(data.lusername)
-      while (!available) {
-        data.username += '+'
-        data.lusername += '+'
-        available = await this.isLusernameAvailable(data.lusername)
-      }
-      try {
-        await this.createRecord(data)
-      } catch (err) {
-        log.warn(err, 'Could not create user record')
-        return this.setResponse(500, 'createUserFailed')
-      }
-      // That's the user, now load their people as sets
-      let lut = false
-      if (user.people) lut = await this.Set.import(user, this.record.id)
-      if (user.patterns) await this.Pattern.import(user, lut, this.record.id)
-    }
-  }
-
-  return this.setResponse200()
 }

@@ -64,7 +64,6 @@ model User {
   ehash         String    @unique
   email         String
   ihash         String
-  img           String?
   initial       String
   imperial      Boolean   @default(false)
   jwtCalls      Int       @default(0)
@@ -94,17 +93,13 @@ model Pattern {
   img       String?
   name      String   @default("")
   notes     String
-  set       Set?  @relation(fields: [setId], references: [id])
-  setId     Int?
-  cset      CuratedSet?  @relation(fields: [csetId], references: [id])
-  csetId    Int?
   public    Boolean  @default(false)
   settings  String
   user      User     @relation(fields: [userId], references: [id])
   userId    Int
   updatedAt DateTime @updatedAt
 
-  @@index([userId, setId])
+  @@index([userId, design])
 }
 
 model Set {
@@ -117,7 +112,6 @@ model Set {
   user      User      @relation(fields: [userId], references: [id])
   userId    Int
   measies   String    @default("{}")
-  patterns  Pattern[]
   public    Boolean   @default(false)
   updatedAt DateTime @updatedAt
 
@@ -127,7 +121,7 @@ model Set {
 model CuratedSet {
   id        Int       @id @default(autoincrement())
   createdAt DateTime  @default(now())
-  img       String?
+  info      String    @default("")
   nameDe    String    @default("")
   nameEn    String    @default("")
   nameEs    String    @default("")
@@ -142,7 +136,6 @@ model CuratedSet {
   notesUk   String    @default("")
   tags      String    @default("{}")
   measies   String    @default("[]")
-  patterns  Pattern[]
   updatedAt DateTime  @updatedAt
   published Boolean   @default(false)
 }
@@ -152,6 +145,7 @@ model OptionPack {
   createdAt DateTime  @default(now())
   design    String    @default("")
   img       String?
+  info      String    @default("")
   nameDe    String    @default("")
   nameEn    String    @default("")
   nameEs    String    @default("")

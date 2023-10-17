@@ -217,7 +217,6 @@ export const accountTests = async (chai, config, expect, store) => {
               expect(err === null).to.equal(true)
               expect(res.status).to.equal(200)
               expect(res.body.result).to.equal(`success`)
-              expect(typeof res.body.account.img).to.equal('string')
               done()
             })
         }).timeout(5000)
@@ -247,7 +246,6 @@ export const accountTests = async (chai, config, expect, store) => {
               expect(err === null).to.equal(true)
               expect(res.status).to.equal(200)
               expect(res.body.result).to.equal(`success`)
-              expect(typeof res.body.account.img).to.equal('string')
               confirmation = res.body.confirmation
               done()
             })
@@ -275,7 +273,6 @@ export const accountTests = async (chai, config, expect, store) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(200)
             expect(res.body.result).to.equal(`success`)
-            expect(typeof res.body.account.img).to.equal('string')
             confirmation = res.body.confirmation
             done()
           })
@@ -302,7 +299,6 @@ export const accountTests = async (chai, config, expect, store) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(200)
             expect(res.body.result).to.equal(`success`)
-            expect(typeof res.body.account.img).to.equal('string')
             confirmation = res.body.confirmation
             done()
           })
@@ -331,7 +327,6 @@ export const accountTests = async (chai, config, expect, store) => {
               expect(err === null).to.equal(true)
               expect(res.status).to.equal(200)
               expect(res.body.result).to.equal(`success`)
-              expect(typeof res.body.account.img).to.equal('string')
               confirmation = res.body.confirmation
               done()
             })

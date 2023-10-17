@@ -46,7 +46,6 @@ export const optionPackTests = async (chai, config, expect, store) => {
         necklineBend: 0.7,
         necklineDrop: 0.4,
       },
-      img: cat,
     },
   }
   store.apack = {
@@ -81,7 +80,7 @@ export const optionPackTests = async (chai, config, expect, store) => {
             expect(res.status).to.equal(201)
             expect(res.body.result).to.equal(`created`)
             for (const [key, val] of Object.entries(data[auth])) {
-              if (!['options', 'img', 'test'].includes(key)) {
+              if (!['options', 'test'].includes(key)) {
                 expect(JSON.stringify(res.body.optionPack[key])).to.equal(JSON.stringify(val))
               }
             }
