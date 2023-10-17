@@ -223,8 +223,8 @@ export const accountTests = async (chai, config, expect, store) => {
       }
 
       let confirmation
+      // eslint-disable-next-line no-undef
       step(
-        // eslint-disable-line no-undef
         `${store.icon('user', auth)} Should update the account email address (${auth})`,
         (done) => {
           chai
@@ -253,68 +253,62 @@ export const accountTests = async (chai, config, expect, store) => {
         }
       )
 
-      step(
-        // eslint-disable-line no-undef
-        `${store.icon('user', auth)} Should confirm the email change (${auth})`,
-        (done) => {
-          chai
-            .request(config.api)
-            .patch(`/account/${auth}`)
-            .set(
-              'Authorization',
-              auth === 'jwt'
-                ? 'Bearer ' + store.account.token
-                : 'Basic ' +
-                    new Buffer(
-                      `${store.account.apikey.key}:${store.account.apikey.secret}`
-                    ).toString('base64')
-            )
-            .send({
-              confirm: 'emailchange',
-              confirmation,
-            })
-            .end((err, res) => {
-              expect(err === null).to.equal(true)
-              expect(res.status).to.equal(200)
-              expect(res.body.result).to.equal(`success`)
-              confirmation = res.body.confirmation
-              done()
-            })
-        }
-      )
+      // eslint-disable-next-line no-undef
+      step(`${store.icon('user', auth)} Should confirm the email change (${auth})`, (done) => {
+        chai
+          .request(config.api)
+          .patch(`/account/${auth}`)
+          .set(
+            'Authorization',
+            auth === 'jwt'
+              ? 'Bearer ' + store.account.token
+              : 'Basic ' +
+                  new Buffer(`${store.account.apikey.key}:${store.account.apikey.secret}`).toString(
+                    'base64'
+                  )
+          )
+          .send({
+            confirm: 'emailchange',
+            confirmation,
+          })
+          .end((err, res) => {
+            expect(err === null).to.equal(true)
+            expect(res.status).to.equal(200)
+            expect(res.body.result).to.equal(`success`)
+            confirmation = res.body.confirmation
+            done()
+          })
+      })
 
-      step(
-        // eslint-disable-line no-undef
-        `${store.icon('user', auth)} Restore email address (${auth})`,
-        (done) => {
-          chai
-            .request(config.api)
-            .patch(`/account/${auth}`)
-            .set(
-              'Authorization',
-              auth === 'jwt'
-                ? 'Bearer ' + store.account.token
-                : 'Basic ' +
-                    new Buffer(
-                      `${store.account.apikey.key}:${store.account.apikey.secret}`
-                    ).toString('base64')
-            )
-            .send({
-              email: store.account.email,
-              test: true,
-            })
-            .end((err, res) => {
-              expect(err === null).to.equal(true)
-              expect(res.status).to.equal(200)
-              expect(res.body.result).to.equal(`success`)
-              confirmation = res.body.confirmation
-              done()
-            })
-        }
-      )
+      // eslint-disable-next-line no-undef
+      step(`${store.icon('user', auth)} Restore email address (${auth})`, (done) => {
+        chai
+          .request(config.api)
+          .patch(`/account/${auth}`)
+          .set(
+            'Authorization',
+            auth === 'jwt'
+              ? 'Bearer ' + store.account.token
+              : 'Basic ' +
+                  new Buffer(`${store.account.apikey.key}:${store.account.apikey.secret}`).toString(
+                    'base64'
+                  )
+          )
+          .send({
+            email: store.account.email,
+            test: true,
+          })
+          .end((err, res) => {
+            expect(err === null).to.equal(true)
+            expect(res.status).to.equal(200)
+            expect(res.body.result).to.equal(`success`)
+            confirmation = res.body.confirmation
+            done()
+          })
+      })
 
+      // eslint-disable-next-line no-undef
       step(
-        // eslint-disable-line no-undef
         `${store.icon('user', auth)} Should confirm the (restore) email change (${auth})`,
         (done) => {
           chai
