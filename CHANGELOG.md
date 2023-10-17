@@ -87,6 +87,7 @@
 #### Changed
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+ - The skirt and curved waistband are now constructed with the ringsector macro
 
 ### shin
 
@@ -124,11 +125,18 @@
 
  - First release of the plugin providing the default packing implementation
 
+### plugin-ringsector
+
+#### Added
+
+ - First release of the plugin facilitating drafting a ring sector
+
 ### core
 
 #### Added
 
  - Allow plugins to provide their own packing implementation
+ - Added named export `cbqc` which exports the constant to approximate a circle with Cubic Bézier curves
 
 #### Fixed
 

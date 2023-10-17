@@ -24,7 +24,7 @@ const rmbanner = function (id = macroDefaults.id, { paths, store, part }) {
 
 const banner = function (config, { part, paths, store, complete }) {
   /*
-   * Don't add a banne when complete is false, unless force is true
+   * Don't add a banner when complete is false, unless force is true
    */
   if (!complete && !config.force) return
 
