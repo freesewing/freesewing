@@ -1,5 +1,5 @@
 import { log } from '../utils/log.mjs'
-import { replaceImage, storeImage, importImage } from '../utils/cloudflare-images.mjs'
+import { replaceImage, storeImage } from '../utils/cloudflare-images.mjs'
 import { decorateModel } from '../utils/model-decorator.mjs'
 
 /*

@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken'
 import { log } from '../utils/log.mjs'
 import { hash, hashPassword, randomString, verifyPassword } from '../utils/crypto.mjs'
-import { replaceImage, importImage, removeImage } from '../utils/cloudflare-images.mjs'
+import { replaceImage, removeImage } from '../utils/cloudflare-images.mjs'
 import { clean, asJson, i18nUrl, writeExportedData } from '../utils/index.mjs'
 import { decorateModel } from '../utils/model-decorator.mjs'
 import { userCard } from '../templates/svg/user-card.mjs'
@@ -171,7 +171,7 @@ UserModel.prototype.oauthSignIn = async function ({ body }) {
    */
   if (oauthData.img) {
     try {
-      const img = await replaceImage({
+      await replaceImage({
         id: `user-${ihash}`,
         metadata: { ihash },
         url: oauthData.img,

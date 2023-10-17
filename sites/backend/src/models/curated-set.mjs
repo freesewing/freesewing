@@ -253,7 +253,7 @@ CuratedSetModel.prototype.guardedUpdate = async function ({ params, body, user }
    * Handle the image, if there is one
    */
   if (typeof body.img === 'string') {
-    const img = await storeImage(
+    await storeImage(
       {
         id: `cset-${this.record.id}`,
         metadata: { user: this.user.uid },

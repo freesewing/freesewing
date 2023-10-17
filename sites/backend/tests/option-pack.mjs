@@ -1,4 +1,3 @@
-import { cat } from './cat.mjs'
 import { capitalize } from '../src/utils/index.mjs'
 
 export const optionPackTests = async (chai, config, expect, store) => {

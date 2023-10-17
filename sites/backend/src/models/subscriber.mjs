@@ -1,5 +1,4 @@
 import { hash } from '../utils/crypto.mjs'
-import { log } from '../utils/log.mjs'
 import { clean, i18nUrl } from '../utils/index.mjs'
 import { decorateModel } from '../utils/model-decorator.mjs'
 
