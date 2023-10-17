@@ -1,3 +1,4 @@
+import { cbqc } from '@freesewing/core'
 import { pantsProto } from './pantsproto.mjs'
 
 export const pocket = {
@@ -7,8 +8,6 @@ export const pocket = {
     if (false == options.frontPocket) {
       return part.hide()
     }
-
-    const c = 0.55191502449351
 
     const frontPocketSize = store.get('frontPocketSize')
 
@@ -23,17 +22,17 @@ export const pocket = {
       points.bottomLeftCornerOver = points.bottomLeft.shift(0, frontPocketSize / 4)
       points.bottomLeftCornerOverCp2 = points.bottomLeftCornerOver.shift(
         180,
-        (frontPocketSize / 4) * c
+        (frontPocketSize / 4) * cbqc
       )
       points.bottomRightCornerUp = points.bottomRight.shift(90, frontPocketSize / 4)
       points.bottomRightCornerUpCp2 = points.bottomRightCornerUp.shift(
         270,
-        (frontPocketSize / 4) * c
+        (frontPocketSize / 4) * cbqc
       )
       points.bottomRightCornerOver = points.bottomRight.shift(180, frontPocketSize / 4)
       points.bottomRightCornerOverCp1 = points.bottomRightCornerOver.shift(
         0,
-        (frontPocketSize / 4) * c
+        (frontPocketSize / 4) * cbqc
       )
 
       paths.seam = new Path()
@@ -53,13 +52,15 @@ export const pocket = {
         .line(points.topRight)
         .line(points.topLeft)
         .close()
-        .attr('class', 'fabric')
+        .addClass('fabric')
 
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+      paths.sa = paths.seam.offset(sa).addClass('fabric sa')
     } else {
-      paths.frontPocketSeam.setClass('fabric')
+      paths.frontPocketSeam.unhide().setClass('fabric')
 
-      paths.sa = paths.frontPocketSeamSA.offset(sa).close().attr('class', 'fabric sa')
+      if (sa) {
+        paths.sa = paths.frontPocketSeamSA.offset(sa).close().addClass('fabric sa')
+      }
 
       paths.frontPocket.unhide().setClass('mark')
 
@@ -80,10 +81,7 @@ export const pocket = {
 
     points.logo = points.title.shift(270, 75)
     snippets.logo = new Snippet('logo', points.logo)
-    points.text = points.logo
-      .shift(-90, 25)
-      .attr('data-text', 'Waralee')
-      .attr('data-text-class', 'center')
+    points.text = points.logo.shift(-90, 25).addText('Waralee', 'center')
 
     if ('welt' == options.frontPocketStyle) {
       macro('hd', {

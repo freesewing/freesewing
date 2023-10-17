@@ -25,7 +25,7 @@ export const backPocket = {
     const pocketDepth = options.backPocketDepth * measurements.crotchDepth
 
     if (!expand) {
-      // Expand is on, do not draw the part but flag this to the user
+      // Expand is off, do not draw the part but flag this to the user
       store.flag.note({
         msg: `waralee:cutBackPocket`,
         replace: {
@@ -69,7 +69,7 @@ export const backPocket = {
       .line(points.bottomRight)
       .join(paths.seamSA)
       .close()
-      .attr('class', 'fabric')
+      .addClass('fabric')
 
     macro('cutonfold', {
       from: points.bottomLeft,
@@ -87,12 +87,9 @@ export const backPocket = {
 
     points.logo = points.title.shift(270, 75)
     snippets.logo = new Snippet('logo', points.logo)
-    points.text = points.logo
-      .shift(-90, 25)
-      .attr('data-text', 'Waralee')
-      .attr('data-text-class', 'center')
+    points.text = points.logo.shift(-90, 25).addText('Waralee', 'center')
 
-    if (sa) paths.sa = paths.seamSA.close().offset(sa).attr('class', 'fabric sa')
+    if (sa) paths.sa = paths.seamSA.close().offset(sa).addClass('fabric sa')
 
     macro('hd', {
       id: 1,

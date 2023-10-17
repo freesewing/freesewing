@@ -59,7 +59,7 @@ function waraleeWaistband(
   }
 
   if (!expand) {
-    // Expand is on, do not draw the part but flag this to the user
+    // Expand is off, do not draw the part but flag this to the user
     store.flag.note({
       msg: `waralee:cut` + type,
       replace: {
@@ -97,13 +97,9 @@ function waraleeWaistband(
     .line(points.br)
     .close()
 
-  paths.fold = new Path()
-    .move(points.tm)
-    .line(points.bm)
-    .attr('class', 'fabric dotted')
-    .setText('fold')
+  paths.fold = new Path().move(points.tm).line(points.bm).addClass('fabric dotted').setText('fold')
 
-  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+  if (sa) paths.sa = paths.seam.offset(sa).addClass('fabric sa')
 
   store.cutlist.addCut({ cut: 1, from: 'fabric' })
 
@@ -112,7 +108,6 @@ function waraleeWaistband(
     nr: partNr,
     at: points.title,
     title: type,
-    prefix: 'front',
     scale: 0.4,
     align: 'center',
   })

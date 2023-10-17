@@ -22,27 +22,23 @@ export const mini = {
 
     paths.waistFoldBack = paths.waistBack
       .offset((-1 * store.get('waistBand')) / mini)
-      .attr('class', 'fabric stroke-sm')
+      .addClass('fabric stroke-sm')
     paths.waistFoldFront = paths.waistFront
       .offset((-1 * store.get('waistBand')) / mini)
-      .attr('class', 'fabric stroke-sm')
+      .addClass('fabric stroke-sm')
 
     paths.frontFold = paths.front
       .offset((-1 * store.get('hem')) / mini)
-      .attr('class', 'fabric stroke-sm')
-    paths.legFold = paths.leg
-      .offset((-1 * store.get('hem')) / mini)
-      .attr('class', 'fabric stroke-sm')
-    paths.backFold = paths.back
-      .offset((-1 * store.get('hem')) / mini)
-      .attr('class', 'fabric stroke-sm')
+      .addClass('fabric stroke-sm')
+    paths.legFold = paths.leg.offset((-1 * store.get('hem')) / mini).addClass('fabric stroke-sm')
+    paths.backFold = paths.back.offset((-1 * store.get('hem')) / mini).addClass('fabric stroke-sm')
 
     paths.cutOut = new Path()
       .move(separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
       .line(points.mWaist2)
       .line(points.mWaist1)
       .line(separateWaistband ? points.fWaistSideSeam : points.fWaistSide)
-      .attr('class', 'help')
+      .addClass('help')
 
     paths.seam.unhide()
 
@@ -56,21 +52,18 @@ export const mini = {
     }
 
     if (sa) {
-      paths.sa = paths.seam.offset(sa / mini).attr('class', 'fabric sa')
+      paths.sa = paths.seam.offset(sa / mini).addClass('fabric sa')
     }
 
     points.pText1 = points.mHip
       .shiftFractionTowards(points.mLeg, 0.5)
-      .attr('data-text', 'waralee:thisIsNotAPart')
-      .attr('data-text-class', 'center')
+      .addText('waralee:thisIsNotAPart', 'center')
     points.pText2 = points.mHip
       .shiftFractionTowards(points.mLeg, 0.6)
-      .attr('data-text', 'waralee:doNotCutFromFabric')
-      .attr('data-text-class', 'center')
+      .addText('waralee:doNotCutFromFabric', 'center')
     points.pText3 = points.mHip
       .shiftFractionTowards(points.mLeg, 0.7)
-      .attr('data-text', 'waralee:useMeasurementsToCutFromFabric')
-      .attr('data-text-class', 'center')
+      .addText('waralee:useMeasurementsToCutFromFabric', 'center')
 
     const fWaistSide = separateWaistband ? points.fWaistSideSeam : points.fWaistSide
     const fWaistFrontOverlap = separateWaistband

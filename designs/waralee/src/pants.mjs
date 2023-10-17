@@ -19,7 +19,7 @@ export const pants = {
         },
       })
     } else {
-      // Expand is on, do not draw the part but flag this to the user
+      // Expand is off, do not draw the part but flag this to the user
       store.flag.note({
         msg: `waralee:hidePants`,
       })
@@ -34,16 +34,16 @@ export const pants = {
         .move(points.bWaistSideHem)
         .line(separateWaistband ? points.bWaistBackSeam : points.bWaistBackHem)
         .line(separateWaistband ? points.bWaistBackSeam : points.bWaistBackOverlapHem)
-        .attr('class', 'fabric stroke-sm')
+        .addClass('fabric stroke-sm')
       paths.waistFoldFront = new Path()
         .move(points.fWaistSideHem)
         .line(points.fWaistFrontOverlapHem)
-        .attr('class', 'fabric stroke-sm')
+        .addClass('fabric stroke-sm')
     }
 
-    paths.frontFold = paths.front.offset(-1 * store.get('hem')).attr('class', 'fabric stroke-sm')
-    paths.legFold = paths.leg.offset(-1 * store.get('hem')).attr('class', 'fabric stroke-sm')
-    paths.backFold = paths.back.offset(-1 * store.get('hem')).attr('class', 'fabric stroke-sm')
+    paths.frontFold = paths.front.offset(-1 * store.get('hem')).addClass('fabric stroke-sm')
+    paths.legFold = paths.leg.offset(-1 * store.get('hem')).addClass('fabric stroke-sm')
+    paths.backFold = paths.back.offset(-1 * store.get('hem')).addClass('fabric stroke-sm')
 
     paths.seam.unhide()
 
@@ -61,7 +61,7 @@ export const pants = {
 
     macro('scalebox', { at: points.mHip.shift(-90, 70) })
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+    if (sa) paths.sa = paths.seam.offset(sa).addClass('fabric sa')
 
     if (options.frontPocket && 'welt' == options.frontPocketStyle) {
       paths.frontPocket.unhide()

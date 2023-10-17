@@ -21,8 +21,6 @@ export const cutout = {
       .close()
       .attr('class', 'fabric')
 
-    // paths.cutout.hide()
-
     points.title = points.mWaist.shift(270, 75)
     macro('title', {
       nr: 2,

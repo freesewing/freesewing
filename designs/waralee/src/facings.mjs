@@ -19,10 +19,8 @@ function waraleeFacing(
     part,
   }
 ) {
-  const frontPocketSize =
-    options.frontPocketSize * measurements.crotchDepth /*- measurements.waistToHips*/
-  const backPocketSize =
-    options.backPocketSize * measurements.crotchDepth /*- measurements.waistToHips*/
+  const frontPocketSize = options.frontPocketSize * measurements.crotchDepth
+  const backPocketSize = options.backPocketSize * measurements.crotchDepth
 
   if (type == 'front') {
     if (!options.frontPocket || 'welt' != options.frontPocketStyle) {
@@ -38,7 +36,7 @@ function waraleeFacing(
   const height = (type == 'front' ? frontPocketSize : backPocketSize) / 2
 
   if (!expand) {
-    // Expand is on, do not draw the part but flag this to the user
+    // Expand is off, do not draw the part but flag this to the user
     store.flag.note({
       msg: `waralee:cutFacing` + type,
       replace: {
@@ -71,7 +69,7 @@ function waraleeFacing(
     .line(points.tr)
     .line(points.tl)
     .close()
-    .attr('class', 'fabric')
+    .addClass('fabric')
 
   store.cutlist.addCut({ cut: type == 'front' ? 4 : 2, from: 'fabric' })
 
