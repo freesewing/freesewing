@@ -1,7 +1,9 @@
 {
   "t": "Gozer",
   "d": "A FreeSewing pattern for a Halloween costume",
-  "p": { },
+  "p": {
+    "ghost": "ghost"
+  },
   "s": { },
   "o": { }
 }
