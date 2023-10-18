@@ -36,7 +36,7 @@
     "@tailwindcss/typography": "0.5.10",
     "algoliasearch": "4.20.0",
     "react-copy-to-clipboard": "5.1.0",
-    "daisyui": "3.9.2",
+    "daisyui": "3.9.3",
     "echarts": "5.4.3",
     "echarts-for-react": "3.0.2",
     "jotai": "2.4.3",
