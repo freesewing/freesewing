@@ -18,7 +18,7 @@
   "dependencies": {
     "@next/mdx": "13.5.4",
     "@resvg/resvg-js": "2.4.1",
-    "@tailwindcss/typography": "0.5.10",
+    "@tailwindcss/typography": "0.5.9",
     "Buffer": "0.0.0",
     "d3-dispatch": "3.0.1",
     "d3-drag": "3.0.0",
@@ -30,7 +30,7 @@
     "highlight.js": "11.9.0",
     "github-slugger": "2.0.0",
     "jotai": "2.4.3",
-    "jotai-location": "0.5.2",
+    "jotai-location": "0.5.1",
     "lodash.clonedeep": "4.5.0",
     "lodash.debounce": "^4.0.8",
     "lodash.orderby": "4.6.0",

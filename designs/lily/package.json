@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/lily",
-  "version": "3.0.0-alpha.2",
+  "version": "3.0.0",
   "description": "A FreeSewing pattern for leggings",
   "author": "Anna Puk (https://github.com/anna-puk)",
   "homepage": "https://freesewing.org/",
@@ -49,9 +49,7 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0",
-    "@freesewing/titan": "3.0.0",
-    "@freesewing/snapseries": "3.0.0"
+    "@freesewing/core": "3.0.0"
   },
   "dependencies": {},
   "devDependencies": {
