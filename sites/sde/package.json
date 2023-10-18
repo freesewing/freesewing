@@ -60,7 +60,7 @@
     "lodash.set": "4.3.2",
     "mustache": "4.2.0",
     "next": "13.5.5",
-    "next-i18next": "14.0.0",
+    "next-i18next": "14.0.3",
     "pdfkit": "0.13.0",
     "postcss-for": "2.1.1",
     "react": "18.2.0",
