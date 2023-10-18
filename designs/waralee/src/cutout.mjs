@@ -1,38 +1,26 @@
 import { pantsProto } from './pantsproto.mjs'
 
-function waraleeCutout({
-  options,
-  Path,
-  points,
-  paths,
-  Snippet,
-  snippets,
-  complete,
-  sa,
-  paperless,
-  macro,
-  part,
-}) {
-  let separateWaistband = options.separateWaistband
-  if ('waistband' == options.frontPocketStyle) {
-    separateWaistband = true
-  }
+export const cutout = {
+  name: 'waralee.cutout',
+  from: pantsProto,
+  draft: ({ options, Path, points, paths, Snippet, snippets, sa, macro, expand, part }) => {
+    if (expand) {
+      return part.hide()
+    }
 
-  paths.seam = new Path()
-    .move(points.mWaist1)
-    .line(points.mWaist2)
-    .line(separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
-    .join(paths.backTopCutOut)
-    .join(paths.backBottomCutOut)
-    .join(paths.frontBottomCutOut)
-    .join(paths.frontTopCutOut)
-    .close()
-    .attr('class', 'fabric')
+    const separateWaistband = options.separateWaistband || 'waistband' == options.frontPocketStyle
 
-  paths.cutout.hide()
+    paths.seam = new Path()
+      .move(points.mWaist1)
+      .line(points.mWaist2)
+      .line(separateWaistband ? points.bWaistSideSeam : points.bWaistSide)
+      .join(paths.backTopCutOut)
+      .join(paths.backBottomCutOut)
+      .join(paths.frontBottomCutOut)
+      .join(paths.frontTopCutOut)
+      .close()
+      .attr('class', 'fabric')
 
-  // Complete?
-  if (complete) {
     points.title = points.mWaist.shift(270, 75)
     macro('title', {
       nr: 2,
@@ -54,10 +42,7 @@ function waraleeCutout({
 
       paths.sa = paths.seamAlternate.offset(sa).attr('class', 'fabric sa')
     }
-  }
 
-  // Paperless?
-  if (paperless) {
     macro('hd', {
       id: 1,
       from: points.fWaistSide,
@@ -82,13 +67,7 @@ function waraleeCutout({
       to: points.mWaist1,
       x: points.mWaist.x + 15,
     })
-  }
 
-  return part.setHidden(!options.showMini)
-}
-
-export const cutout = {
-  name: 'waralee.cutout',
-  from: pantsProto,
-  draft: waraleeCutout,
+    return part
+  },
 }

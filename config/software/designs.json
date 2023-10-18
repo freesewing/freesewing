@@ -340,6 +340,20 @@
       "curvedSeam"
     ]
   },
+  "gozer": {
+    "code": "Wouter Van Wageningen",
+    "description": "A FreeSewing pattern for a ghost costume",
+    "design": "Wouter Van Wageningen",
+    "difficulty": 1,
+    "lab": true,
+    "org": true,
+    "tags": [
+      "costumes"
+    ],
+    "techniques": [
+      "hem"
+    ]
+  },
   "hi": {
     "code": "Wouter Van Wageningen",
     "description": "A FreeSewing pattern for a shark plush toy",
@@ -846,7 +860,7 @@
       "bottoms",
       "trousers"
     ],
-    "techniques": []
+    "techniques": ["curvedSeam", "hem", "weltPocket"]
   },
   "yuri": {
     "code": "Hellgy",

@@ -52,7 +52,7 @@ export const plugin = {
       for (const id of Object.values(store.get([...storeRoot, 'paths']))) delete paths[id]
       for (const id of Object.values(store.get([...storeRoot, 'points']))) delete points[id]
     },
-    ringsector: function (mc, { utils, Point, points, Path, paths, store, part }) {
+    ringsector: function (mc, { utils, Point, points, Path, paths, store }) {
       const {
         angle,
         insideRadius,
@@ -66,7 +66,7 @@ export const plugin = {
        * Get the list of IDs
        */
       const ids = getIds(keys, id)
-      const pathId = getIds(['path'], id).path
+      const pathIds = getIds(['path'], id)
 
       /**
        * Calculates the distance of the control point for the internal
@@ -145,8 +145,8 @@ export const plugin = {
           points[ids[id] + 'Rotated'].rotate(deg, points[ids.in2Flipped])
         }
       }
-      // Return the path of the full ring sector
-      paths[pathId] = new Path()
+      // Construct the path of the full ring sector
+      paths[pathIds.path] = new Path()
         .move(points[ids.in2Flipped])
         .curve(points[ids.in2cFlipped], points[ids.in1cFlipped], points[ids.in1])
         .curve(points[ids.in1c], points[ids.in2c], points[ids.in2])
@@ -158,8 +158,15 @@ export const plugin = {
       /*
        * Store all IDs in the store so we can remove this macro with rmringsector
        */
-      store.set(['parts', part.name, 'macros', name, 'ids', id, 'paths'], { path: pathId })
-      store.set(['parts', part.name, 'macros', name, 'ids', id, 'points'], ids)
+      store.storeMacroIds(mc.id, {
+        paths: pathIds,
+        points: ids,
+      })
+
+      /*
+       * Returning ids is a best practice for FreeSewing macros
+       */
+      return store.getMacroIds(mc.id)
     },
   },
 }

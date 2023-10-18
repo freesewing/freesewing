@@ -9,6 +9,10 @@
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
 
+#### Fixed
+
+ - Added IDs to dimension macros that missed them, causing them to not be shown
+
 ### albert
 
 #### Changed
@@ -107,6 +111,13 @@
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
 
+### waralee
+
+#### Fixed
+
+ - Pocket opening was not drawn on the facing and pocket pieces. Fixes
+ - Improve placement of the front welt. Fixes
+
 ### yuri
 
 #### Changed
@@ -137,6 +148,7 @@
 
  - Allow plugins to provide their own packing implementation
  - Added named export `cbqc` which exports the constant to approximate a circle with Cubic Bézier curves
+ - Core will now set `activeMacro` in the store, keeping track of the running macro - Added the `generateMacroIds`, `getMacroIds`, and `removeMacroNodes` store methods
 
 #### Fixed
 

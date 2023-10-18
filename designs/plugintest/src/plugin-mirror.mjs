@@ -63,7 +63,7 @@ const pluginMirror = ({
     macro('bannerbox', {
       topLeft: new Point(options.mirrorLine === 'b' ? -35 : 5, -25),
       bottomRight: new Point(65, 50),
-      text: 'plugin = measurements',
+      text: 'plugin = mirror',
       ...store.get('bannerbox.plugin'),
     })
   }

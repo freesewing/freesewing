@@ -9,7 +9,6 @@ import { optionPacksRoutes } from './option-packs.mjs'
 import { subscribersRoutes } from './subscribers.mjs'
 import { flowsRoutes } from './flows.mjs'
 import { adminRoutes } from './admin.mjs'
-import { importsRoutes } from './imports.mjs'
 
 export const routes = {
   apikeysRoutes,
@@ -23,5 +22,4 @@ export const routes = {
   subscribersRoutes,
   flowsRoutes,
   adminRoutes,
-  importsRoutes,
 }
