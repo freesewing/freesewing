@@ -21,7 +21,7 @@ const rmcrossbox = (id = macroDefaults.id, { store, part }) =>
 /*
  * The crossbox macro
  */
-const crossbox = function (config, { points, Point, paths, Path, complete, store, log, part }) {
+const crossbox = function (config, { points, Point, paths, Path, complete, store, log }) {
   /*
    * Don't add a title when complete is false, unless force is true
    */

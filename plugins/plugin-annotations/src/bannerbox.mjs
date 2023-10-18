@@ -26,7 +26,7 @@ const rmbannerbox = (id = macroDefaults.id, { macro, store, part }) => {
 /*
  * The bannerbox macro
  */
-const bannerbox = function (config, { Point, paths, Path, part, macro, log, store, complete }) {
+const bannerbox = function (config, { Point, paths, Path, macro, log, store, complete }) {
   /*
    * Don't add a title when complete is false, unless force is true
    */

@@ -61,7 +61,7 @@ const sizes = {
 /*
  * This removes a given macro type
  */
-const removeScaleAnnotation = function (id = false, { paths, points, store, part }, type) {
+const removeScaleAnnotation = function (id = false, { store, part }, type) {
   if (!id) id = type
   return store.removeMacroNodes(id, type, part)
 }
@@ -69,10 +69,7 @@ const removeScaleAnnotation = function (id = false, { paths, points, store, part
 /*
  * The scalebox macro
  */
-const scalebox = function (
-  config,
-  { store, points, paths, scale, Point, Path, complete, log, part }
-) {
+const scalebox = function (config, { store, points, paths, scale, Point, Path, complete, log }) {
   /*
    * Don't add a title when complete is false, unless force is true
    */
@@ -264,10 +261,7 @@ const scalebox = function (
 /*
  * The miniscale macro
  */
-const miniscale = function (
-  config,
-  { points, paths, scale, Point, Path, part, complete, log, store }
-) {
+const miniscale = function (config, { points, paths, scale, Point, Path, complete, log, store }) {
   /*
    * Don't add a title when complete is false, unless force is true
    */

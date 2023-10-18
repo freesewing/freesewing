@@ -16,7 +16,7 @@ const macroDefaults = {
 const rmbanner = (id = macroDefaults.id, { store, part }) =>
   store.removeMacroNodes(id, 'banner', part)
 
-const banner = function (config, { part, paths, store, complete }) {
+const banner = function (config, { paths, store, complete }) {
   /*
    * Don't add a banner when complete is false, unless force is true
    */

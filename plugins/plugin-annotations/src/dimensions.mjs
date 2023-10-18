@@ -166,7 +166,7 @@ const removeDimension = function (id = macroDefaults.id, { store, part }, type) 
 /*
  * This method removes all dimensions of a given type
  */
-const removeDimensionType = function ({ paths, store, part }, type) {
+const removeDimensionType = function ({ store, part }, type) {
   // Get all macro IDs of the given type
   const ids = store.get(['parts', part.name, 'macros', type, 'ids'], {})
   for (const id in ids) store.removeMacroNodes(id, type, part)

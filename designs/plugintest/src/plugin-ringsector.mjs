@@ -1,7 +1,7 @@
 import { ringsectorPlugin } from '@freesewing/plugin-ringsector'
 import { base } from './base.mjs'
 
-const pluginRingsector = ({ points, Point, paths, options, macro, part, store }) => {
+const pluginRingsector = ({ paths, options, macro, part, store }) => {
   if (['ringsector', 'all'].indexOf(options.plugin) !== -1) {
     const pathId = macro('ringsector', {
       angle: options.ringsectorAngle,
