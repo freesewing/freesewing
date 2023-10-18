@@ -22,7 +22,7 @@
   </a><a
   href="#contributors-"
   title="All Contributors"
-  ><img src="https://img.shields.io/badge/all_contributors-111-pink.svg"
+  ><img src="https://img.shields.io/badge/all_contributors-112-pink.svg"
   alt="All Contributors"/>
   </a></p><p align='center'><a
   href="https://twitter.com/freesewing_org"
@@ -48,7 +48,7 @@
 
 # @freesewing/otis
 
-A FreeSewing pattern for a romper
+A FreeSewing pattern for a baby romper
 
 
 
