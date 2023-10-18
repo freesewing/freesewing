@@ -201,6 +201,7 @@ export const front = {
       from: points.cfHem,
       to: points.cfNeck,
       x: points.cfHem.x - sa - 15,
+      id: 'hHemToCfNeck',
     })
 
     return part

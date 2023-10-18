@@ -1,5 +1,3 @@
-import { getIds } from './utils.mjs'
-
 /*
  * Defaults for the sewtogether macro
  */
@@ -42,17 +40,13 @@ export const sewtogetherDefs = [
 /*
  * The rmsewtogether macro
  */
-const rmsewtogether = function (id = macroDefaults.id, { paths, store, part }) {
-  for (const pid of Object.values(
-    store.get(['parts', part.name, 'macros', 'sewtogether', 'ids', id, 'paths'], {})
-  ))
-    delete paths[pid]
-}
+const rmsewtogether = (id = macroDefaults.id, { store, part }) =>
+  store.removeMacroNodes(id, 'sewtogether', part)
 
 /*
  * The sewtogether macro
  */
-const sewtogether = function (config, { paths, Path, log, Point, complete, sa, store, part }) {
+const sewtogether = function (config, { paths, Path, log, Point, complete, sa, store }) {
   /*
    * Don't add a title when complete is false, unless force is true
    */
@@ -89,7 +83,7 @@ const sewtogether = function (config, { paths, Path, log, Point, complete, sa, s
    * Get the list of IDs
    * Initialize the verticle cadence
    */
-  const ids = getIds(['curve', 'hinge'], mc.id, 'sewtogether')
+  const ids = store.generateMacroIds(['curve', 'hinge'], mc.id)
 
   /*
    * Draw the curve
@@ -124,9 +118,12 @@ const sewtogether = function (config, { paths, Path, log, Point, complete, sa, s
   /*
    * Store all IDs in the store so we can remove this macro with rmsewtogether
    */
-  store.set(['parts', part.name, 'macros', 'sewtogether', 'ids', mc.id, 'paths'], ids)
+  store.storeMacroIds(mc.id, { paths: ids })
 
-  return store.getMacroIds(mc.id, 'sewtogether')
+  /*
+   * Returning ids is a best practice for FreeSewing macros
+   */
+  return store.getMacroIds(mc.id)
 }
 
 // Export macros
