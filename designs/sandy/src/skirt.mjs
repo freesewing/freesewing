@@ -86,21 +86,13 @@ function sandySkirt({
     radiusWaist + store.get('fullLength') * options.lengthBonus - absoluteOptions.waistbandWidth
 
   // Call the RingSector macro to draft the part
-  macro('ringsector', {
+  const ids = macro('ringsector', {
     angle: an,
     insideRadius: radiusWaist,
     outsideRadius: radiusHem,
     rotate: true,
   })
-  const storeRoot = [
-    'parts',
-    part.name,
-    'macros',
-    '@freesewing/plugin-ringsector',
-    'ids',
-    'ringsector',
-  ]
-  const pathId = store.get([...storeRoot, 'paths', 'path'])
+  const pathId = ids.paths.path
   paths.seam = paths[pathId].clone().addClass('fabric')
   paths[pathId].hide()
 
@@ -108,7 +100,7 @@ function sandySkirt({
    * Macros ensure they can be used more than once in a part, and will generate unique (and complex)
    * point names. Since we're only calling the macro once here, we will simplify these names
    */
-  for (const [shortId, uid] of Object.entries(store.get([...storeRoot, 'points']))) {
+  for (const [shortId, uid] of Object.entries(ids.points)) {
     points[shortId] = points[uid].copy()
     // Some points are rotated, we need those too
     if (points[uid + 'Rotated']) points[shortId + 'Rotated'] = points[uid + 'Rotated'].copy()

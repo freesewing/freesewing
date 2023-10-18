@@ -1,5 +1,3 @@
-import { getIds } from './utils.mjs'
-
 /*
  * Defaults for the bannner macro
  */
@@ -15,12 +13,8 @@ const macroDefaults = {
 /*
  * The rmbanner macro
  */
-const rmbanner = function (id = macroDefaults.id, { paths, store, part }) {
-  for (const pid of Object.values(
-    store.get(['parts', part.name, 'macros', 'banner', 'ids', id, 'paths'], {})
-  ))
-    delete paths[pid]
-}
+const rmbanner = (id = macroDefaults.id, { store, part }) =>
+  store.removeMacroNodes(id, 'banner', part)
 
 const banner = function (config, { part, paths, store, complete }) {
   /*
@@ -36,7 +30,7 @@ const banner = function (config, { part, paths, store, complete }) {
   /*
    * Get the list of IDs
    */
-  const ids = getIds(['banner'], mc.id, 'banner')
+  const ids = store.generateMacroIds(['banner'], mc.id)
 
   /*
    * Prepare the path to hold the banner text
@@ -57,9 +51,12 @@ const banner = function (config, { part, paths, store, complete }) {
   /*
    * Store all IDs in the store so we can remove this macro with rmbanner
    */
-  store.set(['parts', part.name, 'macros', 'banner', 'ids', mc.id, 'paths'], ids)
+  store.storeMacroIds(mc.id, { paths: ids })
 
-  return store.getMacroIds(config.id, 'banner')
+  /*
+   * Returning ids is a best practice for FreeSewing macros
+   */
+  return store.getMacroIds(mc.id)
 }
 
 // Export macros

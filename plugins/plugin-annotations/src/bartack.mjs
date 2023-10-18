@@ -1,5 +1,3 @@
-import { getIds } from './utils.mjs'
-
 /*
  * Defaults for the bartack macro
  */
@@ -122,26 +120,25 @@ function createBartack(config, props) {
   /*
    * Get the list of IDs
    */
-  const ids = getIds(['stitches'], mc.id, name)
+  const ids = props.store.generateMacroIds(['stitches'], mc.id)
   paths[ids.stitches] = bartackPath(guide, mc, props).attr('class', mc.classes)
 
   /*
    * Store all IDs in the store so we can remove this macro with rm[name]
    */
-  props.store.set(['parts', props.part.name, 'macros', name, 'ids', mc.id, 'paths'], ids)
+  props.store.storeMacroIds(mc.id, { paths: ids })
 
-  return props.store.getMacroIds(mc.id, name)
+  /*
+   * Returning ids is a best practice for FreeSewing macros
+   */
+  return props.store.getMacroIds(mc.id)
 }
 
 /*
  * The method that will remove all macros
  */
-const removeBartack = function (name = 'bartack', id = macroDefaults.id, { paths, store, part }) {
-  for (const pid of Object.values(
-    store.get(['parts', part.name, 'macros', name, 'ids', id, 'paths'], {})
-  ))
-    delete paths[pid]
-}
+const removeBartack = (name = 'bartack', id = macroDefaults.id, { store, part }) =>
+  store.removeMacroNodes(id, name, part)
 
 /*
  * The rmbartackalong and rmbartackfractionalong macros just call rmbartack with the correct name

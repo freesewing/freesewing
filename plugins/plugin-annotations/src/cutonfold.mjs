@@ -1,5 +1,3 @@
-import { getIds } from './utils.mjs'
-
 /*
  * Defaults for the cutonfold macro
  */
@@ -36,12 +34,8 @@ export const cutonfoldDefs = [
 /*
  * The rmcutonfold macro
  */
-const rmcutonfold = function (id = macroDefaults.id, { paths, store, part }) {
-  for (const pid of Object.values(
-    store.get(['parts', part.name, 'macros', 'cutonfold', 'ids', id, 'paths'], {})
-  ))
-    delete paths[pid]
-}
+const rmcutonfold = (id = macroDefaults.id, { store, part }) =>
+  store.removeMacroNodes(id, 'cutonfold', part)
 
 /*
  * The cutonfold macro
@@ -86,7 +80,7 @@ const cutonfold = function (config, { paths, Path, complete, store, scale, log, 
   /*
    * Get the list of IDs
    */
-  const ids = getIds(['line'], mc.id, 'cutonfold')
+  const ids = store.generateMacroIds(['line'], mc.id)
 
   /*
    * Draw the path
@@ -106,9 +100,12 @@ const cutonfold = function (config, { paths, Path, complete, store, scale, log, 
   /*
    * Store all IDs in the store so we can remove this macro with rmcutonfold
    */
-  store.set(['parts', part.name, 'macros', 'cutonfold', 'ids', mc.id, 'paths'], ids)
+  store.storeMacroIds(mc.id, { paths: ids })
 
-  return store.getMacroIds(mc.id, 'cutonfold')
+  /*
+   * Returning ids is a best practice for FreeSewing macros
+   */
+  return store.getMacroIds(mc.id)
 }
 
 // Export macros

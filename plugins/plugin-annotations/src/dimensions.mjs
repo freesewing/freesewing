@@ -1,5 +1,3 @@
-import { getIds } from './utils.mjs'
-
 // Export defs
 export const dimensionsDefs = [
   {
@@ -122,7 +120,7 @@ const addDimension = (config, props, type) => {
   /*
    * Get the list of IDs
    */
-  const ids = getIds(['line', 'from', 'to'], mc.id, type)
+  const ids = props.store.generateMacroIds(['line', 'from', 'to'], mc.id)
 
   /*
    * Draw the dimension
@@ -150,28 +148,28 @@ const addDimension = (config, props, type) => {
   /*
    * Store all IDs in the store so we can remove this macro with rm variants
    */
-  props.store.set(['parts', props.part.name, 'macros', type, 'ids', mc.id, 'paths'], ids)
+  props.store.storeMacroIds(mc.id, { paths: ids })
 
-  return props.store.getMacroIds(mc.id, type)
+  /*
+   * Returning ids is a best practice for FreeSewing macros
+   */
+  return props.store.getMacroIds(mc.id)
 }
 
 /*
  * This method handles the 'remove' part for all macros
  */
-const removeDimension = function (id = macroDefaults.id, { paths, store, part }, type) {
-  for (const pid of Object.values(
-    store.get(['parts', part.name, 'macros', type, 'ids', id, 'paths'], {})
-  ))
-    delete paths[pid]
+const removeDimension = function (id = macroDefaults.id, { store, part }, type) {
+  return store.removeMacroNodes(id, type, part)
 }
 
 /*
  * This method removes all dimensions of a given type
  */
 const removeDimensionType = function ({ paths, store, part }, type) {
-  for (const ids of Object.values(store.get(['parts', part.name, 'macros', type, 'ids'], {}))) {
-    for (const pid of Object.values(ids.paths)) delete paths[pid]
-  }
+  // Get all macro IDs of the given type
+  const ids = store.get(['parts', part.name, 'macros', type, 'ids'], {})
+  for (const id in ids) store.removeMacroNodes(id, type, part)
 }
 
 /*

@@ -1,5 +1,3 @@
-import { getIds } from './utils.mjs'
-
 /*
  * Defaults for the title macro
  */
@@ -65,9 +63,7 @@ const sizes = {
  */
 const removeScaleAnnotation = function (id = false, { paths, points, store, part }, type) {
   if (!id) id = type
-  const both = store.get(['parts', part.name, 'macros', type, 'ids', id], { paths: {}, points: {} })
-  for (const pid of Object.values(both.points)) delete points[pid]
-  for (const pid of Object.values(both.paths)) delete paths[pid]
+  return store.removeMacroNodes(id, type, part)
 }
 
 /*
@@ -114,7 +110,7 @@ const scalebox = function (
   /*
    * Get the list of IDs
    */
-  const ids = getIds(
+  const ids = store.generateMacroIds(
     [
       'metric',
       'imperial',
@@ -125,8 +121,7 @@ const scalebox = function (
       'textText',
       'textLink',
     ],
-    mc.id,
-    'scalebox'
+    mc.id
   )
 
   /*
@@ -245,7 +240,7 @@ const scalebox = function (
   /*
    * Store all IDs in the store so we can remove this macro with rmscaleboc
    */
-  store.set(['parts', part.name, 'macros', 'scalebox', 'ids', mc.id], {
+  store.storeMacroIds(mc.id, {
     points: {
       textLead: ids.textLead,
       textMetric: ids.textMetric,
@@ -260,7 +255,10 @@ const scalebox = function (
     },
   })
 
-  return store.getMacroIds(mc.id, 'scalebox')
+  /*
+   * Returning ids is a best practice for FreeSewing macros
+   */
+  return store.getMacroIds(mc.id)
 }
 
 /*
@@ -306,7 +304,7 @@ const miniscale = function (
   /*
    * Get the list of IDs
    */
-  const ids = getIds(['metric', 'imperial', 'textMetric', 'textImperial'], mc.id, 'miniscale')
+  const ids = store.generateMacroIds(['metric', 'imperial', 'textMetric', 'textImperial'], mc.id)
 
   /*
    * Box points (no need to add these to the part)
@@ -384,7 +382,7 @@ const miniscale = function (
   /*
    * Store all IDs in the store so we can remove this macro with rmscaleboc
    */
-  store.set(['parts', part.name, 'macros', 'miniscale', 'ids', mc.id], {
+  store.storeMacroIds(mc.id, {
     points: {
       textMetric: ids.textMetric,
       textImperial: ids.textImperial,
@@ -394,6 +392,11 @@ const miniscale = function (
       imperial: ids.imperial,
     },
   })
+
+  /*
+   * Returning ids is a best practice for FreeSewing macros
+   */
+  return store.getMacroIds(mc.id)
 }
 
 // Export macros

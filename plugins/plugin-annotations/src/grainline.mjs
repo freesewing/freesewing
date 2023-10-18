@@ -1,5 +1,3 @@
-import { getIds } from './utils.mjs'
-
 /*
  * Defaults for the grainline macro
  */
@@ -34,12 +32,8 @@ export const grainlineDefs = [
 /*
  * The rmgrainline macro
  */
-const rmgrainline = function (id = macroDefaults.id, { paths, store, part }) {
-  for (const pid of Object.values(
-    store.get(['parts', part.name, 'macros', 'grainline', 'ids', id, 'paths'], {})
-  ))
-    delete paths[pid]
-}
+const rmgrainline = (id = macroDefaults.id, { store, part }) =>
+  store.removeMacroNodes(id, 'grainline', part)
 
 /*
  * The grainline macro
@@ -80,7 +74,7 @@ const grainline = function (config = {}, { paths, Path, Point, complete, store, 
   /*
    * Get the list of IDs
    */
-  const ids = getIds(['line'], mc.id, 'grainline')
+  const ids = store.generateMacroIds(['line'], mc.id)
 
   /*
    * Draw the path
@@ -98,9 +92,12 @@ const grainline = function (config = {}, { paths, Path, Point, complete, store, 
   /*
    * Store all IDs in the store so we can remove this macro with rmgrainline
    */
-  store.set(['parts', part.name, 'macros', 'grainline', 'ids', mc.id, 'paths'], ids)
+  store.storeMacroIds(mc.id, { paths: ids })
 
-  return store.getMacroIds(mc.id, 'grainline')
+  /*
+   * Returning ids is a best practice for FreeSewing macros
+   */
+  return store.getMacroIds(mc.id)
 }
 
 // Export macros

@@ -1,5 +1,3 @@
-import { getIds } from './utils.mjs'
-
 /*
  * Defaults for the title macro
  */
@@ -17,14 +15,8 @@ const macroDefaults = {
 /*
  * The rmcrossbox macro
  */
-const rmcrossbox = function (id = macroDefaults.id, { paths, points, store, part }) {
-  const both = store.get(['parts', part.name, 'macros', 'title', 'ids', id], {
-    paths: {},
-    points: {},
-  })
-  for (const pid of Object.values(both.points)) delete points[pid]
-  for (const pid of Object.values(both.paths)) delete paths[pid]
-}
+const rmcrossbox = (id = macroDefaults.id, { store, part }) =>
+  store.removeMacroNodes(id, 'crossbox', part)
 
 /*
  * The crossbox macro
@@ -62,7 +54,7 @@ const crossbox = function (config, { points, Point, paths, Path, complete, store
   /*
    * Get the list of IDs
    */
-  const flatIds = getIds(['box', 'cross', 'text'], mc.id, 'crossbox')
+  const flatIds = store.generateMacroIds(['box', 'cross', 'text'], mc.id)
   const ids = {
     paths: {
       box: flatIds.box,
@@ -118,9 +110,12 @@ const crossbox = function (config, { points, Point, paths, Path, complete, store
    * Store all IDs in the store so we can remove this macro with rmtitle
    * Just make sure to keep points and paths apart
    */
-  store.set(['parts', part.name, 'macros', 'title', 'ids', mc.id], ids)
+  store.storeMacroIds(mc.id, ids)
 
-  return store.getMacroIds(mc.id, 'crossbox')
+  /*
+   * Returning ids is a best practice for FreeSewing macros
+   */
+  return store.getMacroIds(mc.id)
 }
 
 // Export macros

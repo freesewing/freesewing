@@ -1,5 +1,3 @@
-import { getIds } from './utils.mjs'
-
 /*
  * Defaults for the bannerbox macro
  */
@@ -20,12 +18,9 @@ const macroDefaults = {
  * Removing all this is easy as all IDs are available in the store
  * and all we need to remove are paths.
  */
-const rmbannerbox = function (id = macroDefaults.id, { paths, store, part, macro }) {
-  for (const pid of Object.values(
-    store.get(['parts', part.name, 'macros', 'bannerbox', 'ids', id, 'paths'], {})
-  ))
-    delete paths[pid]
+const rmbannerbox = (id = macroDefaults.id, { macro, store, part }) => {
   macro('rmbanner', id)
+  return store.removeMacroNodes(id, 'bannerbox', part)
 }
 
 /*
@@ -64,7 +59,7 @@ const bannerbox = function (config, { Point, paths, Path, part, macro, log, stor
   /*
    * Get the list of IDs
    */
-  const ids = getIds(['box'], mc.id, 'bannerbox')
+  const ids = store.generateMacroIds(['box'], mc.id)
 
   /*
    * Calculate the offset from the bounding box
@@ -99,9 +94,12 @@ const bannerbox = function (config, { Point, paths, Path, part, macro, log, stor
   /*
    * Store all IDs in the store so we can remove this macro with rmtitle
    */
-  store.set(['parts', part.name, 'macros', 'bannerbox', 'ids', mc.id, 'paths'], ids)
+  store.storeMacroIds(mc.id, { paths: ids })
 
-  return store.getMacroIds(mc.id, 'bannerbox')
+  /*
+   * Returning ids is a best practice for FreeSewing macros
+   */
+  return store.getMacroIds(mc.id)
 }
 
 export const bannerboxMacros = { bannerbox, rmbannerbox }
