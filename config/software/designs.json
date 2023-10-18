@@ -850,7 +850,7 @@
       "bottoms",
       "trousers"
     ],
-    "techniques": []
+    "techniques": ["curvedSeam", "hem", "weltPocket"]
   },
   "yuri": {
     "code": "Hellgy",
