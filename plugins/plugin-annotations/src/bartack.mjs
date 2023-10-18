@@ -87,7 +87,6 @@ function createBartack(config, props) {
    * Construct the guide path
    */
   let guide = false
-  let name = 'bartack'
   if (mc.anchor)
     // Anchor + angle + length
     guide = new Path().move(mc.anchor).line(mc.anchor.shift(mc.angle, mc.length))
@@ -98,10 +97,8 @@ function createBartack(config, props) {
     // Along path
     let start = false
     let end = false
-    name = 'bartackalong'
     if (mc.bartackAlong) guide = mc.path.clone()
     else if (mc.bartackFractionAlong) {
-      name = 'bartackfractionalong'
       if (mc.start === mc.end) return null
       if (mc.start > mc.end) {
         const newEnd = mc.start
