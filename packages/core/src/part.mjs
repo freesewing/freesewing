@@ -358,12 +358,12 @@ Part.prototype.__inject = function (orig) {
 Part.prototype.__macroClosure = function (props) {
   const self = this
   const method = function (key, args) {
-    const macro = utils.__macroName(key)
+    const macro = utils.__macroName(key.toLowerCase())
     let parentMacro
     if (typeof self[macro] === 'function') {
       if ('context' in self) {
         parentMacro = self.context.store.get('activeMacro', false)
-        self.context.store.set('activeMacro', key)
+        self.context.store.set('activeMacro', key.toLowerCase())
       }
       const result = self[macro](args, props)
       if ('context' in self) {
@@ -373,7 +373,7 @@ Part.prototype.__macroClosure = function (props) {
 
       return result
     } else if ('context' in self)
-      self.context.store.log.warn('Unknown macro `' + key + '` used in ' + self.name)
+      self.context.store.log.warn('Unknown macro `' + key.toLowerCase() + '` used in ' + self.name)
   }
 
   return method

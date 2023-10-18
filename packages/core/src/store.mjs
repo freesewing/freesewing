@@ -91,7 +91,7 @@ export function Store(methods = []) {
     if (!macro) macro = this.get('activeMacro')
     if (!part) part = this.get('activePart')
 
-    return this.get(['parts', part, 'macros', macro, 'ids', id], false)
+    return this.get(['parts', part, 'macros', macro.toLowerCase(), 'ids', id], false)
   }
 
   /*
