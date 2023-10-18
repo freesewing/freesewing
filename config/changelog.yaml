@@ -3,6 +3,8 @@ Unreleased:
     core:
       - Allow plugins to provide their own packing implementation
       - Added named export `cbqc` which exports the constant to approximate a circle with Cubic Bézier curves
+      - Core will now set `activeMacro` in the store, keeping track of the running macro
+       - Added the `generateMacroIds`, `getMacroIds`, and `removeMacroNodes` store methods
     plugin-bin-pack:
       - First release of the plugin providing the default packing implementation
     plugin-ringsector:
@@ -47,6 +49,8 @@ Unreleased:
       - Added support for notes in flags
 
   Fixed:
+    aaron:
+      - Added IDs to dimension macros that missed them, causing them to not be shown
     core:
       - Fix order in mergeOptions method so user settings take precendence over defaults
       - Fix upward snap for snapped percentage option when snap is a simple number
@@ -54,6 +58,9 @@ Unreleased:
       - Replaced all instances of 'seperate' with 'separate' in option names
     plugintest:
       - Remove names from old plugins from list option
+    waralee:
+      - Pocket opening was not drawn on the facing and pocket pieces. Fixes #4026
+      - Improve placement of the front welt. Fixes #4828
 
 3.0.0:
   date: 2022-09-30
