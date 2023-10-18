@@ -10,7 +10,7 @@ export const plugin = {
   name,
   version,
   macros: {
-    round: function (mc, { points, paths, Point, Path, store, part }) {
+    round: function (mc, { points, paths, Point, Path, store }) {
       const C = 0.55191502449
       const {
         from = new Point(0, 0),

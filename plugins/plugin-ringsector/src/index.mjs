@@ -52,7 +52,7 @@ export const plugin = {
       for (const id of Object.values(store.get([...storeRoot, 'paths']))) delete paths[id]
       for (const id of Object.values(store.get([...storeRoot, 'points']))) delete points[id]
     },
-    ringsector: function (mc, { utils, Point, points, Path, paths, store, part }) {
+    ringsector: function (mc, { utils, Point, points, Path, paths, store }) {
       const {
         angle,
         insideRadius,
