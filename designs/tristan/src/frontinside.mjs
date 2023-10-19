@@ -30,64 +30,32 @@ export const frontInside = {
     delete points.bustDartMiddle
     delete points.bustDartEdge
 
-    if (options.dartPosition == 'shoulder') {
-      paths.insideSeam = new Path()
-        .move(points.cfHem)
-        .line(points.waistDartLeft)
+    paths.cut = new Path()
+      .move(points.strapInside)
+      .curve(points.strapInsideCp, points.cfCutCp, points.cfCut)
+
+    paths.insideSeam = new Path()
+      .move(points.cfHem)
+      .line(points.waistDartLeft)
+      .curve(points.waistDartLeftCp, points.shoulderDartTipCpDownInside, points.shoulderDartTip)
+      .line(points.shoulderDartInside)
+      .join(paths.cut)
+
+    paths.seam = paths.insideSeam
+      .join(new Path().move(points.cfCut).line(points.cfHem))
+      .close()
+      .attr('class', 'fabric')
+
+    store.set(
+      'shoulderDartTipNotch',
+      new Path()
+        .move(points.waistDartLeft)
         .curve(points.waistDartLeftCp, points.shoulderDartTipCpDownInside, points.shoulderDartTip)
-        .line(points.shoulderDartInside)
-        .line(points.hps)
-        .curve(points.hpsCp2, points.cfNeckCp1, points.cfNeck)
-
-      paths.cut = new Path()
-        .move(points.strapInside)
-        .curve(points.strapInsideCp, points.cfCutCp, points.cfCut)
-      paths.seam = paths.insideSeam
-        .join(new Path().move(points.cfNeck).line(points.cfHem))
-        .close()
-        .attr('class', 'fabric')
-
-      store.set(
-        'shoulderDartTipNotch',
-        new Path()
-          .move(points.waistDartLeft)
-          .curve(points.waistDartLeftCp, points.shoulderDartTipCpDownInside, points.shoulderDartTip)
-          .length()
-      )
-    } else {
-      paths.insideSeam = new Path()
-        .move(points.cfHem)
-        .line(points.waistDartLeft)
-        .curve(
-          points.waistDartLeftCp,
-          points.armholeDartTipCpDownInside,
-          points.armholeDartTipInside
-        )
-        .curve(points.waistCircleInsideCp1, points.armholeCircleInsideCp1, points.armholeDartInside)
-        .join(paths.armholeInside)
-        .line(points.hps)
-        .curve(points.hpsCp2, points.cfNeckCp1, points.cfNeck)
-
-      paths.seam = paths.insideSeam
-        .join(new Path().move(points.cfNeck).line(points.cfHem))
-        .close()
-        .attr('class', 'fabric')
-
-      store.set(
-        'shoulderDartTipNotch',
-        new Path()
-          .move(points.waistDartLeft)
-          .curve(
-            points.waistDartLeftCp,
-            points.armholeDartTipCpDownInside,
-            points.armholeDartTipInside
-          )
-          .length()
-      )
-    }
+        .length()
+    )
 
     macro('cutonfold', {
-      from: points.cfNeck,
+      from: points.cfCut,
       to: points.cfHem,
       grainline: true,
     })
@@ -114,70 +82,30 @@ export const frontInside = {
     }
 
     let extraOffset = 0
-    if (options.dartPosition == 'shoulder') {
-      macro('hd', {
-        from: points.cfNeck,
-        to: points.shoulderDartInside,
-        y: points.hps.y - 25,
-        id: 'hpsToDart',
-      })
-      macro('vd', {
-        from: points.cfHem,
-        to: points.shoulderDartInside,
-        x: 0 - 30,
-        id: 'hemToDart',
-      })
-      macro('vd', {
-        from: points.cfHem,
-        to: points.shoulderDartTip,
-        x: 0 - 10,
-        id: 'hemToDartTip',
-      })
-      macro('hd', {
-        from: points.cfBust,
-        to: points.shoulderDartTip,
-        y: points.cfHem.y + sa + 25,
-        id: 'middleToDartTip',
-      })
-    } else {
-      extraOffset = 10
-      macro('hd', {
-        from: points.hps,
-        to: points.shoulderCp1,
-        y: points.hps.y - 35,
-        id: 'hpsToShoulder',
-      })
-      macro('hd', {
-        from: points.hps,
-        to: points.armholeDartInsideCp2,
-        y: points.hps.y - 25,
-        id: 'hpsToDart',
-      })
-      macro('vd', {
-        from: points.cfHem,
-        to: points.armholeDartInsideCp2,
-        x: 0 - 20,
-        id: 'hemToDart',
-      })
-      macro('vd', {
-        from: points.cfHem,
-        to: points.shoulderCp1,
-        x: 0 - 40,
-        id: 'hemToShoulder',
-      })
-      macro('vd', {
-        from: points.cfHem,
-        to: points.armholeDartTipInside,
-        x: 0 - 10,
-        id: 'hemToDartTip',
-      })
-      macro('hd', {
-        from: points.cfBust,
-        to: points.armholeDartTipInside,
-        y: points.cfHem.y + sa + 25,
-        id: 'middleToDartTip',
-      })
-    }
+    macro('hd', {
+      from: points.cfNeck,
+      to: points.shoulderDartInside,
+      y: points.hps.y - 25,
+      id: 'hpsToDart',
+    })
+    macro('vd', {
+      from: points.cfHem,
+      to: points.shoulderDartInside,
+      x: 0 - 30,
+      id: 'hemToDart',
+    })
+    macro('vd', {
+      from: points.cfHem,
+      to: points.shoulderDartTip,
+      x: 0 - 10,
+      id: 'hemToDartTip',
+    })
+    macro('hd', {
+      from: points.cfBust,
+      to: points.shoulderDartTip,
+      y: points.cfHem.y + sa + 25,
+      id: 'middleToDartTip',
+    })
 
     macro('vd', {
       from: points.cfHem,

@@ -16,51 +16,36 @@ export const frontOutside = {
 
     macro('rmcutonfold')
 
-    if (options.dartPosition == 'shoulder') {
-      paths.princessSeam = new Path()
-        .move(points.shoulderDartOutside)
-        .curve(
-          points.shoulderDartTipCpDownOutside,
-          points.waistUpDartRightCpUp,
-          points.waistUpDartRight
-        )
-        .curve(points.waistUpDartRightCpDown, points.waistCpUp, points.waistDartRight)
-        .hide()
-      paths.armhole = new Path()
-        .move(points.armhole)
-        .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
-        .curve_(points.armholePitchCp2, points.shoulder)
-        .hide()
+    paths.cut = new Path()
+      .move(points.armhole)
+      .curve(points.armholeCutCp, points.strapOutsideCp, points.strapOutside)
+      .hide()
 
-      paths.seam = new Path()
-        .move(points.waistDartRight)
-        .line(points.sideHem)
-        .line(points.armhole)
-        .join(paths.armhole)
-        .line(points.shoulderDartOutside)
-        .join(paths.princessSeam)
-        .close()
-        .attr('class', 'fabric')
-    } else {
-      paths.princessSeam = new Path()
-        .move(points.armholeDartOutside)
-        .curve(
-          points.armholeCircleOutsideCp1,
-          points.waistCircleOutsideCp1,
-          points.waistUpDartRight
-        )
-        .curve(points.waistUpDartRightCpDown, points.waistCpUp, points.waistDartRight)
-        .hide()
+    paths.princessSeam = new Path()
+      .move(points.shoulderDartOutside)
+      .curve(
+        points.shoulderDartTipCpDownOutside,
+        points.waistUpDartRightCpUp,
+        points.waistUpDartRight
+      )
+      .curve(points.waistUpDartRightCpDown, points.waistCpUp, points.waistDartRight)
+      .hide()
 
-      paths.seam = new Path()
-        .move(points.waistDartRight)
-        .line(points.sideHem)
-        .line(points.armhole)
-        .join(paths.armholeOutside.reverse())
-        .join(paths.princessSeam)
-        .close()
-        .attr('class', 'fabric')
-    }
+    paths.armhole = new Path()
+      .move(points.armhole)
+      .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
+      .curve_(points.armholePitchCp2, points.shoulder)
+      .hide()
+
+    paths.seam = new Path()
+      .move(points.waistDartRight)
+      .line(points.sideHem)
+      .line(points.armhole)
+      .join(paths.cut)
+      .line(points.shoulderDartOutside)
+      .join(paths.princessSeam)
+      .close()
+      .attr('class', 'fabric')
 
     points.grainTop = points.armhole.shift(225, 20)
     points.grainBottom = points.sideHemInitial.shift(135, 20)
@@ -122,114 +107,68 @@ export const frontOutside = {
       id: 'hemToLeft',
     })
 
-    if (options.dartPosition == 'shoulder') {
-      macro('hd', {
-        from: points.shoulderDartOutside,
-        to: points.shoulder,
-        y: points.shoulderDartOutside.y - sa - 15,
-        id: 'dartToShoulder',
-      })
-      macro('hd', {
-        from: points.snippet,
-        to: points.shoulder,
-        y: points.shoulderDartOutside.y - sa - 25,
-        id: 'dartPointToShoulder',
-      })
-      macro('hd', {
-        from: pLeft,
-        to: points.shoulder,
-        y: points.shoulderDartOutside.y - sa - 35,
-        id: 'leftToShoulder',
-      })
-      macro('hd', {
-        from: points.waistDartRight,
-        to: points.shoulder,
-        y: points.sideHemInitial.y + sa + 45,
-        id: 'hemDartToShoulder',
-      })
-      macro('vd', {
-        from: points.shoulder,
-        to: points.sideHemInitial,
-        x: points.shoulder.x,
-        id: 'hemToShoulder',
-      })
-      macro('vd', {
-        from: points.shoulderDartOutside,
-        to: points.sideHemInitial,
-        x: points.shoulderDartOutside.x,
-        id: 'sideHemToShoulderDart',
-      })
-      macro('vd', {
-        from: points.waistDartRight,
-        to: points.shoulderDartOutside,
-        x: pLeft.x - sa - 25,
-        id: 'hemToShoulderDart',
-      })
-      macro('vd', {
-        from: points.snippet,
-        to: points.shoulderDartOutside,
-        x: pLeft.x - sa - 15,
-        id: 'shoulderDartToDartPoint',
-      })
+    macro('hd', {
+      from: points.shoulderDartOutside,
+      to: points.shoulder,
+      y: points.shoulderDartOutside.y - sa - 15,
+      id: 'dartToShoulder',
+    })
+    macro('hd', {
+      from: points.snippet,
+      to: points.shoulder,
+      y: points.shoulderDartOutside.y - sa - 25,
+      id: 'dartPointToShoulder',
+    })
+    macro('hd', {
+      from: pLeft,
+      to: points.shoulder,
+      y: points.shoulderDartOutside.y - sa - 35,
+      id: 'leftToShoulder',
+    })
+    macro('hd', {
+      from: points.waistDartRight,
+      to: points.shoulder,
+      y: points.sideHemInitial.y + sa + 45,
+      id: 'hemDartToShoulder',
+    })
+    macro('vd', {
+      from: points.shoulder,
+      to: points.sideHemInitial,
+      x: points.shoulder.x,
+      id: 'hemToShoulder',
+    })
+    macro('vd', {
+      from: points.shoulderDartOutside,
+      to: points.sideHemInitial,
+      x: points.shoulderDartOutside.x,
+      id: 'sideHemToShoulderDart',
+    })
+    macro('vd', {
+      from: points.waistDartRight,
+      to: points.shoulderDartOutside,
+      x: pLeft.x - sa - 25,
+      id: 'hemToShoulderDart',
+    })
+    macro('vd', {
+      from: points.snippet,
+      to: points.shoulderDartOutside,
+      x: pLeft.x - sa - 15,
+      id: 'shoulderDartToDartPoint',
+    })
 
-      const pArmholeLeft = paths.armhole.edge('left')
-      macro('hd', {
-        from: points.waistDartRight,
-        to: pArmholeLeft,
-        y: points.sideHemInitial.y + sa + 5,
-        id: 'hemDartToRight',
-      })
-      macro('vd', {
-        from: pArmholeLeft,
-        to: points.sideHemInitial,
-        x: points.sideHemInitial.x + sa + 25,
-        id: 'hemSideToRight',
-      })
-    } else {
-      let pTop = paths.princessSeam.edge('top')
-      macro('hd', {
-        from: pLeft,
-        to: points.armholeOutsidePitchCp1,
-        y: pTop.y - sa - 35,
-        id: 'leftToArmhole',
-      })
-      macro('hd', {
-        from: pLeft,
-        to: points.armholeDartOutside,
-        y: pTop.y - sa - 25,
-        id: 'leftToArmholeDart',
-      })
-      macro('hd', {
-        from: pLeft,
-        to: pTop,
-        y: pTop.y - sa - 15,
-        id: 'leftToTop',
-      })
-      macro('vd', {
-        from: points.waistDartRight,
-        to: pTop,
-        x: pLeft.x - sa - 25,
-        id: 'hemToTop',
-      })
-      macro('vd', {
-        from: points.snippet,
-        to: pTop,
-        x: pLeft.x - sa - 15,
-        id: 'topToDartPoint',
-      })
-      macro('vd', {
-        from: points.armholeDartOutside,
-        to: points.sideHemInitial,
-        x: points.sideHemInitial.x + sa + 25,
-        id: 'sideHemToArmholeDart',
-      })
-      macro('vd', {
-        from: pTop,
-        to: points.sideHemInitial,
-        x: points.sideHemInitial.x + sa + 35,
-        id: 'sideHemToTop',
-      })
-    }
+    const pArmholeLeft = paths.armhole.edge('left')
+    macro('hd', {
+      from: points.waistDartRight,
+      to: pArmholeLeft,
+      y: points.sideHemInitial.y + sa + 5,
+      id: 'hemDartToRight',
+    })
+    macro('vd', {
+      from: pArmholeLeft,
+      to: points.sideHemInitial,
+      x: points.sideHemInitial.x + sa + 25,
+      id: 'hemSideToRight',
+    })
 
     return part
   },
