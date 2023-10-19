@@ -6962,10 +6962,10 @@ htm@^3.0.0:
   resolved "https://registry.yarnpkg.com/htm/-/htm-3.1.1.tgz#49266582be0dc66ed2235d5ea892307cc0c24b78"
   integrity sha512-983Vyg8NwUE7JkZ6NmOqpCZ+sh1bKv2iYTlUkzlWmA5JD2acKoxd4KVxbMmxX/85mtfdnDmTFoNKcg5DGAvxNQ==
 
-html-dom-parser@4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/html-dom-parser/-/html-dom-parser-4.0.0.tgz#dc382fbbc9306f8c9b5aae4e3f2822e113a48709"
-  integrity sha512-TUa3wIwi80f5NF8CVWzkopBVqVAtlawUzJoLwVLHns0XSJGynss4jiY0mTWpiDOsuyw+afP+ujjMgRh9CoZcXw==
+html-dom-parser@5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/html-dom-parser/-/html-dom-parser-5.0.1.tgz#af21fcefa7b68e6e8fdef4e559e0c15915269e6e"
+  integrity sha512-8MRxHcUjkpfkCEvf3t+r1nO7KCHgfFah23tAskZHgiOFsP5/24uxJnoS6C2Hq+p/cAzpPUiKb8vjywH6ixEgzQ==
   dependencies:
     domhandler "5.0.3"
     htmlparser2 "9.0.0"
@@ -6983,14 +6983,14 @@ html-parse-stringify@^3.0.1:
     void-elements "3.1.0"
 
 html-react-parser@^4.2.2:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-4.2.2.tgz#91f1cc2138bc069d65cbd8b9d97b1e71ed423300"
-  integrity sha512-lh0wEGISnFZEAmvQqK4xc0duFMUh/m9YYyAhFursWxdtNv+hCZge0kj1y4wep6qPB5Zm33L+2/P6TcGWAJJbjA==
+  version "4.2.5"
+  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-4.2.5.tgz#47536f20a65ee7adfb5e6c5172da498262e3fcc1"
+  integrity sha512-D9pGpsoBf50ys07PvXJ96FcRwGJ8ywF0GNfTnnO8oTXbErvxrNtWBLVREy+Rb79+NhkZLGVlLLw1XExcakXI2w==
   dependencies:
     domhandler "5.0.3"
-    html-dom-parser "4.0.0"
+    html-dom-parser "5.0.1"
     react-property "2.0.0"
-    style-to-js "1.1.4"
+    style-to-js "1.1.5"
 
 html-to-text@^9.0.5:
   version "9.0.5"
@@ -7231,6 +7231,11 @@ inline-style-parser@0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/inline-style-parser/-/inline-style-parser-0.1.1.tgz#ec8a3b429274e9c0a1f1c4ffa9453a7fef72cea1"
   integrity sha512-7NXolsK4CAS5+xvdj5OMMbI962hU/wvwoxk+LWR9Ek9bVtyuuYScDN6eS0rUm6TxApFpw7CX1o4uJzcd4AyD3Q==
+
+inline-style-parser@0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/inline-style-parser/-/inline-style-parser-0.2.2.tgz#d498b4e6de0373458fc610ff793f6b14ebf45633"
+  integrity sha512-EcKzdTHVe8wFVOGEYXiW9WmJXPjqi1T+234YpJr98RiFYKHV3cdy1+3mkTE+KHTHxFFLH51SfaGOoUdW+v7ViQ==
 
 inquirer@^7.3.3:
   version "7.3.3"
@@ -12770,24 +12775,31 @@ stubs@^3.0.0:
   resolved "https://registry.yarnpkg.com/stubs/-/stubs-3.0.0.tgz#e8d2ba1fa9c90570303c030b6900f7d5f89abe5b"
   integrity sha512-PdHt7hHUJKxvTCgbKX9C1V/ftOcjJQgz8BZwNfV5c4B6dcGqlpelTbJ999jBGZ2jYiPAwcX5dP6oBwVlBlUbxw==
 
-style-to-js@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/style-to-js/-/style-to-js-1.1.4.tgz#5fa07a181ec3ca354d699edf442549e0ac61ed32"
-  integrity sha512-zEeU3vy9xL/hdLBFmzqjhm+2vJ1Y35V0ctDeB2sddsvN1856OdMZUCOOfKUn3nOjjEKr6uLhOnY4CrX6gLDRrA==
+style-to-js@1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/style-to-js/-/style-to-js-1.1.5.tgz#cb6135c87de9f0b4e2d13579bd602754df1fb249"
+  integrity sha512-gEX6m+t79LYDpNZHlk+h+pR5HJPwit4O4qY7jDgutpUNV0vyJA0h+DdGSpmx0cb6iYKux2Eduy+m/KEo8mZAog==
   dependencies:
-    style-to-object "0.4.2"
+    style-to-object "1.0.0"
 
-style-to-object@0.4.2, style-to-object@^0.4.1:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/style-to-object/-/style-to-object-0.4.2.tgz#a8247057111dea8bd3b8a1a66d2d0c9cf9218a54"
-  integrity sha512-1JGpfPB3lo42ZX8cuPrheZbfQ6kqPPnPHlKMyeRYtfKD+0jG+QsXgXN57O/dvJlzlB2elI6dGmrPnl5VPQFPaA==
+style-to-object@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/style-to-object/-/style-to-object-1.0.0.tgz#9b252385bdca3c0624e58686314a8d88d6b2956a"
+  integrity sha512-WOxKn2+5Gdr6i0jRMaBAL02XequQZpmnXchDA9HYoG0n5T4HWT1x1iRWluN1RFZxcuHNJPugd3LWL1/Pp3IqcA==
   dependencies:
-    inline-style-parser "0.1.1"
+    inline-style-parser "0.2.2"
 
 style-to-object@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/style-to-object/-/style-to-object-0.3.0.tgz#b1b790d205991cc783801967214979ee19a76e46"
   integrity sha512-CzFnRRXhzWIdItT3OmF8SQfWyahHhjq3HwcMNCNLn+N7klOOqPjMeG/4JSu77D7ypZdGvSzvkrbyeTMizz2VrA==
+  dependencies:
+    inline-style-parser "0.1.1"
+
+style-to-object@^0.4.1:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/style-to-object/-/style-to-object-0.4.2.tgz#a8247057111dea8bd3b8a1a66d2d0c9cf9218a54"
+  integrity sha512-1JGpfPB3lo42ZX8cuPrheZbfQ6kqPPnPHlKMyeRYtfKD+0jG+QsXgXN57O/dvJlzlB2elI6dGmrPnl5VPQFPaA==
   dependencies:
     inline-style-parser "0.1.1"
 
