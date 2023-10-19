@@ -136,12 +136,12 @@ export function decorateModel(Model, tools, modelConfig) {
   /*
    * Helper method to encrypt at-rest data
    */
-  Model.cloak = function (data) {
+  Model.cloak = function (data, raw) {
     /*
      * Encrypt data
      */
     for (const field of this.encryptedFields) {
-      if (typeof data[field] !== 'undefined') {
+      if (typeof data[field] !== 'undefined' && !raw[field]) {
         if (this.jsonFields && this.jsonFields.includes(field)) {
           data[field] = this.encrypt(JSON.stringify(data[field]))
         } else {
@@ -153,7 +153,7 @@ export function decorateModel(Model, tools, modelConfig) {
     /*
      * Password needs to be hashed too
      */
-    if (data.password && typeof data.password === 'string') {
+    if (data.password && !raw.password && typeof data.password === 'string') {
       data.password = asJson(hashPassword(data.password))
     }
 
@@ -195,9 +195,9 @@ export function decorateModel(Model, tools, modelConfig) {
    * Updates the model data
    * Used when we create the data ourselves so we know it's safe
    */
-  Model.update = async function (data, include = {}) {
+  Model.update = async function (data, include = {}, raw = {}) {
     try {
-      const cloaked = await this.cloak(data)
+      const cloaked = await this.cloak(data, raw)
       this.record = await this.prisma[modelConfig.name].update({
         where: { id: this.record.id },
         include,
