@@ -131,16 +131,18 @@ CuratedSetModel.prototype.allCuratedSets = async function () {
    * Iterate over list to do some housekeeping and JSON wrangling
    */
   const list = []
-  for (const curatedSet of curatedSets) {
-    const asPojo = { ...curatedSet }
-    /*
-     * We need to parse this from JSON
-     * See https://github.com/prisma/prisma/issues/3786
-     */
-    asPojo.measies = JSON.parse(asPojo.measies)
-    asPojo.tags = JSON.parse(asPojo.tags)
-    delete asPojo.info
-    list.push(asPojo)
+  if (curatedSets) {
+    for (const curatedSet of curatedSets) {
+      const asPojo = { ...curatedSet }
+      /*
+       * We need to parse this from JSON
+       * See https://github.com/prisma/prisma/issues/3786
+       */
+      asPojo.measies = JSON.parse(asPojo.measies)
+      asPojo.tags = JSON.parse(asPojo.tags)
+      delete asPojo.info
+      list.push(asPojo)
+    }
   }
 
   return list
