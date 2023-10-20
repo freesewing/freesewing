@@ -5,7 +5,7 @@ title: "Bloqueo corporal Breanna: Lo que necesitas"
 Para hacer a Breanna, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- Aproximadamente 1,25 - 1,5 metros (1,4 - 1,7 yardas) de una tela adecuada ([consulta las opciones de tela Breanna](/docs/patterns/Breanna/fabric/))
+- Aproximadamente 1,25 - 1,5 metros (1,4 - 1,7 yardas) de una tela adecuada ([consulta las opciones de tela Breanna](/docs/designs/Breanna/fabric/))
 
 Esta lista es para una Breanna Block por defecto. Si has hecho o vas a hacer cambios en el bloque, puede que tengas que conseguir elementos adicionales como cierres, encuadernación, etc.
 
