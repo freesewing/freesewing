@@ -16,6 +16,6 @@ Cette astuce est souvent utilisée dans les jeans womenswear
 
 </Note>
 
-## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](charlie_legbalance_sample.svg "Effet de cette option sur le motif")
+
+
