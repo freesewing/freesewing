@@ -2,7 +2,7 @@
 title: "Ärmel Längenzugabe"
 ---
 
-Diese Option legt fest, wie die Ärmel verlängert werden.
+Diese Option legt fest, um wie viel die Ärmel verlängert werden.
 
 
 
