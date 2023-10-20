@@ -1,9 +1,7 @@
 ---
-title: FIXME - this option is undocumented
+title: "Bottom to Top Arm Ratio"
 ---
 
-<Fixme>
-Please document this option. See https://github/freesewing/freesewing/issues/5097
-
-</Fixme>
-
+This setting adjusts the ratio between the top and the bottom of the arms.
+The lower the ratio, the more fabric will be associated with the top of the leg.
+100% makes both the top and the bottom the same.
