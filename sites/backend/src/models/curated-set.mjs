@@ -63,6 +63,11 @@ CuratedSetModel.prototype.guardedCreate = async function ({ body, user }) {
   if (body.info) data.info = body.info
 
   /*
+   * Add the height
+   */
+  if (body.height) data.height = Number(body.height)
+
+  /*
    * Create the database record
    */
   await this.createRecord(data)
@@ -122,7 +127,7 @@ CuratedSetModel.prototype.allCuratedSets = async function () {
    */
   let curatedSets
   try {
-    curatedSets = await this.prisma.curatedSet.findMany()
+    curatedSets = await this.prisma.curatedSet.findMany({ orderBy: { height: 'asc' } })
   } catch (err) {
     log.warn(`Failed to search curated sets: ${err}`)
   }
@@ -230,6 +235,11 @@ CuratedSetModel.prototype.guardedUpdate = async function ({ params, body, user }
   if (typeof body.info === 'string') data.info = body.info
 
   /*
+   * Handle the info field
+   */
+  if (body.height) data.height = Number(body.height)
+
+  /*
    * Unlike a regular set, curated set have notes and name in each language
    */
   for (const lang of this.config.languages) {
@@ -258,7 +268,7 @@ CuratedSetModel.prototype.guardedUpdate = async function ({ params, body, user }
     await storeImage(
       {
         id: `cset-${this.record.id}`,
-        metadata: { user: this.user.uid },
+        metadata: { user: user.uid },
         b64: body.img,
       },
       this.isTest(body)
@@ -434,6 +444,7 @@ CuratedSetModel.prototype.fromSuggestion = async function ({ params, user }) {
    * Now create the curated set
    */
   await this.createRecord({
+    height: this.Confirmation.record.clear.data.height || 1,
     nameDe: name,
     nameEn: name,
     nameEs: name,
