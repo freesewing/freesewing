@@ -33,47 +33,8 @@ const NavIcons = ({ setModal }) => {
 
   return (
     <>
-      <NavButton
-        onClick={() => setModal(<ModalMenu />)}
-        label={t('header:menu')}
-        color={spectrum[0]}
-      >
-        <MenuIcon className={iconSize} />
-      </NavButton>
-      <NavSpacer />
-      <NavButton href="/designs" label={t('header:designs')} color={spectrum[1]}>
-        <DesignIcon className={iconSize} />
-      </NavButton>
-      <NavButton
-        href="/patterns"
-        label={t('header:patterns')}
-        color={spectrum[2]}
-        extraClasses="hidden lg:flex"
-      >
-        <PatternIcon className={iconSize} />
-      </NavButton>
-      <NavButton
-        href="/sets"
-        label={t('header:sets')}
-        color={spectrum[3]}
-        extraClasses="hidden lg:flex"
-      >
-        <MeasieIcon className={iconSize} />
-      </NavButton>
-      <NavSpacer />
-      <NavButton
-        href="/docs"
-        label={t('header:docs')}
-        color={spectrum[4]}
-        extraClasses="hidden lg:flex"
-      >
-        <DocsIcon className={iconSize} />
-      </NavButton>
-      <NavButton href="/code" label={t('sections:code')} color={spectrum[5]}>
-        <GitHubIcon className={iconSize} />
-      </NavButton>
-      <NavButton href="/account" label={t('header:account')} color={spectrum[6]}>
-        <UserIcon className={iconSize} />
+      <NavButton href="/new/pattern" label={t('header:new')} color={spectrum[9]}>
+        <PlusIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
       <NavButton
@@ -91,8 +52,8 @@ const NavIcons = ({ setModal }) => {
         <I18nIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
-      <NavButton href="/new" label={t('header:new')} color={spectrum[9]}>
-        <PlusIcon className={iconSize} />
+      <NavButton href="/account" label={t('header:account')} color={spectrum[6]}>
+        <UserIcon className={iconSize} />
       </NavButton>
     </>
   )
