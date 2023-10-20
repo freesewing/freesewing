@@ -9,13 +9,13 @@ title: "Llamando a todos los creadores: Aquí hay un patrón de mascarilla en un
 
 <Note>
 
-**TL;DR: Por favor, haz mascarillas para el personal sanitario**
+**TL;DR: Please make facemasks for healthcare workers**
 
 
- - Patrón en PDF de nuestra mascarilla Florence:
-   - [Patrón de mascarilla A4](/florence-facemask-freesewing.org.a4.pdf)
-   - [Patrón de mascarilla Letter](/florence-facemask-freesewing.org.letter.pdf)
- - [Instrucciones para el patrón de mascarilla](/docs/patterns/florence/instructions/)
+ - PDF pattern for our Florence face mask:
+   - [A4 facemask pattern](/florence-facemask-freesewing.org.a4.pdf)
+   - [Letter facemask pattern](/florence-facemask-freesewing.org.letter.pdf)
+ - [Instructions for the facemask pattern](/docs/designs/florence/instructions/)
 
 </Note>
 
@@ -28,7 +28,7 @@ Por lo tanto, obviamente, queremos ayudar:
  - Patrón en PDF de nuestra máscara Florence:
    - [Patrón de mascarilla A4](/florence-facemask-freesewing.org.a4.pdf)
    - [Patrón de mascarilla letter](/florence-facemask-freesewing.org.letter.pdf)
- - [Instrucciones para el patrón de la mascarilla](/docs/patterns/florence/instructions/)
+ - [Instrucciones para el patrón de la mascarilla](/docs/designs/florence/instructions/)
 
 Ahora ve a hacer un montón. ¡Nuestros profesionales de la salud cuentan contigo!
 
