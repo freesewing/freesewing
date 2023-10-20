@@ -1,6 +1,5 @@
 ---
-title: Naaien
-order: 300
+title: Sewing Terminology
 ---
 
 <ReadMore list />
