@@ -9,10 +9,13 @@ title: "Aufruf an alle Macher: Hier ist ein 1-seitiges PDF-Gesichtsmasken-Muster
 
 <Note>
 
--PDF Schnittmuster für unsere Gesichtsmaske "Florence":
-   - [A4 Gesichtsmaskenschnittmuster](/florence-facemask-freesewing.org.a4.pdf)
-   - [Letter Gesichtsmaskenschnittmuster](/florence-facemask-freesewing.org.letter.pdf)
- - [Anleitung zum Gesichtsmaskenschnittmuster](/docs/patterns/florence/instructions/)
+**TL;DR: Please make facemasks for healthcare workers**
+
+
+ - PDF pattern for our Florence face mask:
+   - [A4 facemask pattern](/florence-facemask-freesewing.org.a4.pdf)
+   - [Letter facemask pattern](/florence-facemask-freesewing.org.letter.pdf)
+ - [Instructions for the facemask pattern](/docs/designs/florence/instructions/)
 
 </Note>
 
@@ -25,7 +28,7 @@ Also wollen wir natürlich helfen:
  - PDF-Muster für unsere Gesichtsmaske Florence:
    - [A4-Gesichtsmasken Schnittmuster](/florence-facemask-freesewing.org.a4.pdf)
    - [Letter Gesichtsmasken Schnittmuster](/florence-facemask-freesewing.org.letter.pdf)
- - [Anleitung für das Gesichtsmasken Schnittmuster](/docs/patterns/florence/instructions/)
+ - [Anleitung für das Gesichtsmasken Schnittmuster](/docs/designs/florence/instructions/)
 
 Nun legen sie los und machen einen Haufen. Unsere Mitarbeiter im Gesundheitswesen zählen auf Sie!
 
