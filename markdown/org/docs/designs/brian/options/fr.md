@@ -34,8 +34,8 @@ The width of the sleevecap (and thus the width of the sleeve at the bottom of th
 
 La hauteur de la tête de manche est égale à la distance entre les points 3 et 4. The exact height is a trade-off between the measurments of the model, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. So the height may vary, and we don't control the exact value. Mais deux options permettent de contrôler la forme de notre tête de manche :
 
-- [Haut de tête de manche X](/docs/patterns/brian/options/sleevecaptopfactorx/) : Contrôle la position horizontale des points 3 et 4
-- [Haut de tête de manche Y](/docs/patterns/brian/options/sleevecaptopfactory/) : Contrôle la position verticale du point 4
+- [Haut de tête de manche X](/docs/designs/brian/options/sleevecaptopfactorx/) : Contrôle la position horizontale des points 3 et 4
+- [Haut de tête de manche Y](/docs/designs/brian/options/sleevecaptopfactory/) : Contrôle la position verticale du point 4
 
 In other words, point 4 can be made higher and lower and, perhaps less intutitively, it can also be changed to lie more to the right or the left, rather than smack in the middle as in our example.
 
@@ -45,10 +45,10 @@ In other words, point 4 can be made higher and lower and, perhaps less intutitiv
 
 Avec les points 1, 2, 3 et 4 en place, nous avons un rectangle pour dessiner notre tête de manche. Now it's time to map out our _inflection points_. These are points 5 and 6 on our drawing, and their placement is determined by the following 4 options:
 
-- [Haut de tête de manche arrière X](/docs/patterns/brian/options/sleevecapbackfactorx) : Contrôle la position horizontale du point 5
-- [Haut de tête de manche arrière Y](/docs/patterns/brian/options/sleevecapbackfactory) : Contrôle la position verticale du point 5
-- [Haut de tête de manche avant X](/docs/patterns/brian/options/sleevecapbackfactorx) : Contrôle la position horizontale du point 6
-- [Haut de tête de manche avant Y](/docs/patterns/brian/options/sleevecapbackfactory) : Contrôle la position verticale du point 6
+- [Haut de tête de manche arrière X](/docs/designs/brian/options/sleevecapbackfactorx) : Contrôle la position horizontale du point 5
+- [Haut de tête de manche arrière Y](/docs/designs/brian/options/sleevecapbackfactory) : Contrôle la position verticale du point 5
+- [Haut de tête de manche avant X](/docs/designs/brian/options/sleevecapbackfactorx) : Contrôle la position horizontale du point 6
+- [Haut de tête de manche avant Y](/docs/designs/brian/options/sleevecapbackfactory) : Contrôle la position verticale du point 6
 
 <Note>
 
@@ -64,10 +64,10 @@ En fin de compte, notre tête de manche sera la combinaison de 5 courbes. In add
 
 The points are _offset_ perpendicular from the middle of a line between the two anchor points surrounding them. Le décalage pour chaque point est contrôlé par ces 4 options :
 
-- [Décalage de tête de manche Q1](/docs/patterns/brian/options/sleevecapq1offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 2 et 6
-- [Décalage de tête de manche Q2](/docs/patterns/brian/options/sleevecapq2offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 6 et 4
-- [Décalage de tête de manche Q3](/docs/patterns/brian/options/sleevecapq3offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 4 et 5
-- [Décalage de tête de manche Q4](/docs/patterns/brian/options/sleevecapq3offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 5 et 1
+- [Décalage de tête de manche Q1](/docs/designs/brian/options/sleevecapq1offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 2 et 6
+- [Décalage de tête de manche Q2](/docs/designs/brian/options/sleevecapq2offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 6 et 4
+- [Décalage de tête de manche Q3](/docs/designs/brian/options/sleevecapq3offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 4 et 5
+- [Décalage de tête de manche Q4](/docs/designs/brian/options/sleevecapq3offset) : contrôle le décalage perpendiculaire à la ligne située entre les points 5 et 1
 
 <Note>
 
@@ -86,14 +86,14 @@ Nous disposons maintenant de tous les points de départ et d'arrivée pour dessi
 
 For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option to control the spread upwards, and downwards:
 
-- [Répartition de tête de manche vers le bas Q1](/docs/patterns/brian/options/sleevecapq1spread1) : contrôle la répartition vers le bas dans le premier quadrant
-- [Répartition de tête de manche vers le haut Q1](/docs/patterns/brian/options/sleevecapq1spread2) : contrôle la répartition vers le haut dans le premier quadrant
-- [Répartition de tête de manche vers le bas Q2](/docs/patterns/brian/options/sleevecapq2spread1) : contrôle la répartition vers le bas dans le deuxième quadrant
-- [Répartition de tête de manche vers le haut Q2](/docs/patterns/brian/options/sleevecapq2spread2) : contrôle la répartition vers le haut dans le deuxième quadrant
-- [Répartition de tête de manche vers le haut Q3](/docs/patterns/brian/options/sleevecapq3spread1) : contrôle la répartition vers le haut dans le troisième quadrant
-- [Répartition de tête de manche vers le bas Q3](/docs/patterns/brian/options/sleevecapq3spread2) : contrôle la répartition vers le bas dans le troisième quadrant
-- [Répartition de tête de manche vers le haut Q4](/docs/patterns/brian/options/sleevecapq4spread1) : contrôle la répartition vers le haut dans le quatrième quadrant
-- [Répartition de tête de manche vers le bas Q4](/docs/patterns/brian/options/sleevecapq4spread2) : contrôle la répartition vers le bas dans le quatrième quadrant
+- [Répartition de tête de manche vers le bas Q1](/docs/designs/brian/options/sleevecapq1spread1) : contrôle la répartition vers le bas dans le premier quadrant<0><0>
+- [Répartition de tête de manche vers le haut Q1](/docs/designs/brian/options/sleevecapq1spread2) : contrôle la répartition vers le haut dans le premier quadrant<0><0>
+- [Répartition de tête de manche vers le bas Q2](/docs/designs/brian/options/sleevecapq2spread1) : contrôle la répartition vers le bas dans le deuxième quadrant<0><0>
+- [Répartition de tête de manche vers le haut Q2](/docs/designs/brian/options/sleevecapq2spread2) : contrôle la répartition vers le haut dans le deuxième quadrant<0><0>
+- [Répartition de tête de manche vers le haut Q3](/docs/designs/brian/options/sleevecapq3spread1) : contrôle la répartition vers le haut dans le troisième quadrant<0><0>
+- [Répartition de tête de manche vers le bas Q3](/docs/designs/brian/options/sleevecapq3spread2) : contrôle la répartition vers le bas dans le troisième quadrant<0><0>
+- [Répartition de tête de manche vers le haut Q4](/docs/designs/brian/options/sleevecapq4spread1) : contrôle la répartition vers le haut dans le quatrième quadrant<0><0>
+- [Répartition de tête de manche vers le bas Q4](/docs/designs/brian/options/sleevecapq4spread2) : contrôle la répartition vers le bas dans le quatrième quadrant<0><0>
 
 <Note>
 
