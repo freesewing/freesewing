@@ -11,5 +11,5 @@ You can find a list of all FreeSewing reference documentation below:
 
 ## Full list
 
-<ReadMore root recurse />
+<ReadMore recurse />
 
