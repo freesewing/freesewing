@@ -4,7 +4,7 @@ title: "Carlton jas: Naai-instructies"
 
 ### Stap 1: De ontbrekende voering- en bekledingsdelen tekenen en snijden
 
-Voor sommige onderdelen voor Carlton moet je onderdelen uit de bestaande onderdelen opstellen. Hieronder staat een lijst met onderdelen die je moet opstellen, [zie Carlton Cutting](/docs/patterns/carlton/cutting/) voor meer informatie over hoe je ze moet snijden.
+Voor sommige onderdelen voor Carlton moet je onderdelen uit de bestaande onderdelen opstellen. Hieronder staat een lijst met onderdelen die je moet opstellen, [zie Carlton Cutting](/docs/designs/carlton/cutting/) voor meer informatie over hoe je ze moet snijden.
 
 #### Opstellen
 
@@ -56,12 +56,12 @@ Vergeet de naadtoeslag voor deze stukken niet bij het knippen als je deze delen 
 
 #### Knippen
 
-- Knip alle bovenstaande onderdelen uit hun respectievelijke stoffen/vullingen. ([zie Carlton Cutting](/docs/patterns/carlton/cutting/))
+- Knip alle bovenstaande onderdelen uit hun respectievelijke stoffen/vullingen. ([zie Carlton Cutting](/docs/designs/carlton/cutting/))
 
 ### Stap 2: Fixeer mij
 
 <Fixme>
 
-Documentatie voor dit patroon moet nog worden geschreven. In de tussentijd zijn er wat voorlopige instructies voor ([Carlita, Carlton's Counterpart](/docs/patterns/carlita/instructions/)) die zouden moeten helpen.
+Documentatie voor dit patroon moet nog worden geschreven. In the meantime their are some preliminary instructions for ([Carlita, Carlton's Counterpart](/docs/designs/carlita/instructions/)) that should help.
 
 </Fixme>
