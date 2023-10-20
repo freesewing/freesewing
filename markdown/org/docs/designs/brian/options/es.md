@@ -37,8 +37,8 @@ The width of the sleevecap (and thus the width of the sleeve at the bottom of th
 
 La altura de la manga es igual a la distancia entre los puntos 3 y 4. The exact height is a trade-off between the measurments of the model, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. So the height may vary, and we don't control the exact value. Pero hay dos opciones que controlan la forma de nuestra manguera:
 
-- [Sleevecap top X](/docs/patterns/brian/options/sleevecaptopfactorx/) : Controla la colocación horizontal del punto 3 y 4
-- [Sleevecap superior Y](/docs/patterns/brian/options/sleevecaptopfactory/) : Controla la posición vertical del punto 4
+- [Sleevecap top X](/docs/designs/brian/options/sleevecaptopfactorx/) : Controla la colocación horizontal del punto 3 y 4
+- [Sleevecap superior Y](/docs/designs/brian/options/sleevecaptopfactory/) : Controla la posición vertical del punto 4
 
 In other words, point 4 can be made higher and lower and, perhaps less intutitively, it can also be changed to lie more to the right or the left, rather than smack in the middle as in our example.
 
@@ -48,10 +48,10 @@ In other words, point 4 can be made higher and lower and, perhaps less intutitiv
 
 Con los puntos 1, 2, 3 y 4 en su lugar, tenemos una caja para dibujar la manga dentro. Now it's time to map out our _inflection points_. These are points 5 and 6 on our drawing, and their placement is determined by the following 4 options:
 
-- [Mantén dormido X](/docs/patterns/brian/options/sleevecapbackfactorx) : Controla la colocación horizontal del punto 5
-- [Retroceso Y](/docs/patterns/brian/options/sleevecapbackfactory) : Controla la posición vertical del punto 5
-- [Dulce frontal X](/docs/patterns/brian/options/sleevecapbackfactorx) : Controla la colocación horizontal del punto 6
-- [Sueño frontal Y](/docs/patterns/brian/options/sleevecapbackfactory) : Controla la posición vertical del punto 6
+- [Mantén dormido X](/docs/designs/brian/options/sleevecapbackfactorx) : Controla la colocación horizontal del punto 5
+- [Retroceso Y](/docs/designs/brian/options/sleevecapbackfactory) : Controla la posición vertical del punto 5
+- [Dulce frontal X](/docs/designs/brian/options/sleevecapbackfactorx) : Controla la colocación horizontal del punto 6
+- [Sueño frontal Y](/docs/designs/brian/options/sleevecapbackfactory) : Controla la posición vertical del punto 6
 
 <Note>
 
@@ -68,10 +68,10 @@ En última instancia, nuestra manga será la combinación de 5 curvas. In additi
 
 The points are _offset_ perpendicular from the middle of a line between the two anchor points surrounding them. El desplazamiento para cada punto está controlado por estas 4 opciones:
 
-- [Desplazamiento Q1 de Sleevecap](/docs/patterns/brian/options/sleevecapq1offset) : Controla el perpendicular de desplazamiento a la línea desde puntos 2 a 6
-- [Desplazamiento Q2 en durmiente](/docs/patterns/brian/options/sleevecapq2offset) : Controla el perpendicular a la línea desde puntos 6 a 4
-- [Desplazamiento Q3 en durmiente](/docs/patterns/brian/options/sleevecapq3offset) : Controla el perpendicular a la línea desde puntos 4 a 5
-- [Desplazamiento Q4 en durmiente](/docs/patterns/brian/options/sleevecapq3offset) : Controla el perpendicular a la línea desde los puntos 5 a 1
+- [Desplazamiento Q1 de Sleevecap](/docs/designs/brian/options/sleevecapq1offset) : Controla el perpendicular de desplazamiento a la línea desde puntos 2 a 6
+- [Desplazamiento Q2 en durmiente](/docs/designs/brian/options/sleevecapq2offset) : Controla el perpendicular a la línea desde puntos 6 a 4
+- [Desplazamiento Q3 en durmiente](/docs/designs/brian/options/sleevecapq3offset) : Controla el perpendicular a la línea desde puntos 4 a 5
+- [Desplazamiento Q4 en durmiente](/docs/designs/brian/options/sleevecapq3offset) : Controla el perpendicular a la línea desde los puntos 5 a 1
 
 <Note>
 
@@ -91,14 +91,14 @@ Ahora tenemos todos los puntos de inicio y final para dibujar las 5 curvas que c
 
 For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option to control the spread upwards, and downwards:
 
-- [Sleevecap Q1 dispersión a la baja](/docs/patterns/brian/options/sleevecapq1spread1) : Controla la dispersión a la baja en el primer trimestre
-- [Sleevecap Q1 upward spread](/docs/patterns/brian/options/sleevecapq1spread2) : Controla la dispersión ascendente en el primer trimestre
-- [Sleevecap Q2 a dispersión a la baja](/docs/patterns/brian/options/sleevecapq2spread1) : Controla la dispersión a la baja en el segundo trimestre
-- [Sleevecap Q2 upward spread](/docs/patterns/brian/options/sleevecapq2spread2) : Controla la dispersión ascendente en el segundo trimestre
-- [Sleevecap Q3 upward spread](/docs/patterns/brian/options/sleevecapq3spread1) : Controla la dispersión ascendente en el tercer trimestre
-- [Sleevecap Q3 con dispersión a la baja](/docs/patterns/brian/options/sleevecapq3spread2) : Controla la dispersión a la baja en el tercer trimestre
-- [Sleevecap Q4 al alza](/docs/patterns/brian/options/sleevecapq4spread1) : Controla la dispersión ascendente en el cuarto trimestre
-- [Sleevecap Q4 a dispersión a la baja](/docs/patterns/brian/options/sleevecapq4spread2) : Controla la dispersión a la baja en el cuarto trimestre
+- [Sleevecap Q1 dispersión a la baja](/docs/designs/brian/options/sleevecapq1spread1) : Controla la dispersión a la baja en el primer trimestre
+- [Sleevecap Q1 upward spread](/docs/designs/brian/options/sleevecapq1spread2) : Controla la dispersión ascendente en el primer trimestre
+- [Sleevecap Q2 a dispersión a la baja](/docs/designs/brian/options/sleevecapq2spread1) : Controla la dispersión a la baja en el segundo trimestre
+- [Sleevecap Q2 upward spread](/docs/designs/brian/options/sleevecapq2spread2) : Controla la dispersión ascendente en el segundo trimestre
+- [Sleevecap Q3 upward spread](/docs/designs/brian/options/sleevecapq3spread1) : Controla la dispersión ascendente en el tercer trimestre
+- [Sleevecap Q3 con dispersión a la baja](/docs/designs/brian/options/sleevecapq3spread2) : Controla la dispersión a la baja en el tercer trimestre
+- [Sleevecap Q4 al alza](/docs/designs/brian/options/sleevecapq4spread1) : Controla la dispersión ascendente en el cuarto trimestre
+- [Sleevecap Q4 a dispersión a la baja](/docs/designs/brian/options/sleevecapq4spread2) : Controla la dispersión a la baja en el cuarto trimestre
 
 <Note>
 
