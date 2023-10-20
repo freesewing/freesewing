@@ -37,8 +37,8 @@ The width of the sleevecap (and thus the width of the sleeve at the bottom of th
 
 Die Höhe der Ärmel entspricht der Entfernung zwischen den Punkten 3 und 4. Die genaue Höhe ist ein Kompromiss zwischen den Maßen des Modells, den Optionen, der Bequemlichkeit, der Bequemlichkeit der Ärmelkappe und der Tatsache , dass der Ärmel letztendlich zum Armloch passen muss. Die Höhe kann also variieren und wir kontrollieren nicht den exakten Wert. Aber es gibt zwei Optionen, die die Form unserer Ärmel kontrollieren:
 
-- [Sleevecap Top X](/docs/patterns/brian/options/sleevecaptopfactorx/) : Steuert die horizontale Platzierung von Punkt 3 und 4
-- [Sleevecap oben Y](/docs/patterns/brian/options/sleevecaptopfactory/) : Steuert die vertikale Platzierung von Punkt 4
+- [Sleevecap Top X](/docs/designs/brian/options/sleevecaptopfactorx/) : Steuert die horizontale Platzierung von Punkt 3 und 4
+- [Sleevecap oben Y](/docs/designs/brian/options/sleevecaptopfactory/) : Steuert die vertikale Platzierung von Punkt 4
 
 In other words, point 4 can be made higher and lower and, perhaps less intutitively, it can also be changed to lie more to the right or the left, rather than smack in the middle as in our example.
 
@@ -48,10 +48,10 @@ In other words, point 4 can be made higher and lower and, perhaps less intutitiv
 
 Mit den Punkten 1, 2, 3 und 4 haben wir ein Kästchen zum Einzeichnen unserer Ärmel. Jetzt ist es an der Zeit, unsere _Wendepunkte_darzustellen. Das sind die Punkte 5 und 6 auf unserer Zeichnung, und ihre Platzierung wird durch die folgenden 4 Optionen bestimmt:
 
-- [Sleevecap zurück X](/docs/patterns/brian/options/sleevecapbackfactorx) : Steuert die horizontale Platzierung von Punkt 5
-- [Sleevecap zurück Y](/docs/patterns/brian/options/sleevecapbackfactory) : Steuert die vertikale Platzierung von Punkt 5
-- [Sleevecap Front X](/docs/patterns/brian/options/sleevecapbackfactorx) : Steuert die horizontale Platzierung von Punkt 6
-- [Sleevecap Front Y](/docs/patterns/brian/options/sleevecapbackfactory) : Steuert die vertikale Platzierung von Punkt 6
+- [Sleevecap zurück X](/docs/designs/brian/options/sleevecapbackfactorx) : Steuert die horizontale Platzierung von Punkt 5
+- [Sleevecap zurück Y](/docs/designs/brian/options/sleevecapbackfactory) : Steuert die vertikale Platzierung von Punkt 5
+- [Sleevecap Front X](/docs/designs/brian/options/sleevecapbackfactorx) : Steuert die horizontale Platzierung von Punkt 6
+- [Sleevecap Front Y](/docs/designs/brian/options/sleevecapbackfactory) : Steuert die vertikale Platzierung von Punkt 6
 
 <Note>
 
@@ -68,10 +68,10 @@ Letztlich wird unsere Ärmel die Kombination aus 5 Kurven sein. In addition to p
 
 Die Punkte sind _versetzt_ senkrecht zur Mitte einer Linie zwischen den beiden Ankerpunkten , die sie umgeben. Der Offset für jeden Punkt wird durch diese 4 Optionen kontrolliert:
 
-- [Sleevecap Q1 Offset](/docs/patterns/brian/options/sleevecapq1offset) : Steuert den senkrechten Offset zur Linie von Punkt 2 bis 6
-- [Sleevecap Q2 Offset](/docs/patterns/brian/options/sleevecapq2offset) : Steuert den senkrechten Offset auf die Linie von Punkt 6 bis 4
-- [Sleevecap Q3 Offset](/docs/patterns/brian/options/sleevecapq3offset) : Steuert den senkrechten Offset auf die Linie von Punkt 4 bis 5
-- [Sleevecap Q4 Offset](/docs/patterns/brian/options/sleevecapq3offset) : Steuert den senkrechten Offset auf die Linie von Punkt 5 bis 1
+- [Sleevecap Q1 Offset](/docs/designs/brian/options/sleevecapq1offset) : Steuert den senkrechten Offset zur Linie von Punkt 2 bis 6
+- [Sleevecap Q2 Offset](/docs/designs/brian/options/sleevecapq2offset) : Steuert den senkrechten Offset auf die Linie von Punkt 6 bis 4
+- [Sleevecap Q3 Offset](/docs/designs/brian/options/sleevecapq3offset) : Steuert den senkrechten Offset auf die Linie von Punkt 4 bis 5
+- [Sleevecap Q4 Offset](/docs/designs/brian/options/sleevecapq3offset) : Steuert den senkrechten Offset auf die Linie von Punkt 5 bis 1
 
 <Note>
 
@@ -91,14 +91,14 @@ Wir haben jetzt alle Anfangs- und Endpunkte, um die 5 Kurven zu zeichnen, die un
 
 For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option to control the spread upwards, and downwards:
 
-- [Sleevecap Q1 nach unten ausgebreitet](/docs/patterns/brian/options/sleevecapq1spread1) : Steuert die Abwärtsverteilung im ersten Quartal
-- [Sleevecap Q1 Aufwärtsspread](/docs/patterns/brian/options/sleevecapq1spread2) : Steuert den Aufwärtsspread im ersten Quartal
-- [Sleevecap Q2 nach unten verteilt](/docs/patterns/brian/options/sleevecapq2spread1) : Steuert die Abwärtsverteilung im zweiten Quartal
-- [Sleevecap Q2 upward spread](/docs/patterns/brian/options/sleevecapq2spread2) : Steuert die Aufwärtsspanne im zweiten Quartal
-- [Sleevecap Q3 upward spread](/docs/patterns/brian/options/sleevecapq3spread1) : Steuert die Aufwärtsspanne im dritten Quartal
-- [Sleevecap Q3 nach unten verteilt](/docs/patterns/brian/options/sleevecapq3spread2) : Steuert die Abwärtsverteilung im dritten Quartal
-- [Sleevecap Q4 upward spread](/docs/patterns/brian/options/sleevecapq4spread1) : Steuert die Aufwärtsspanne im vierten Quartal
-- [Sleevecap Q4 Downward Spread](/docs/patterns/brian/options/sleevecapq4spread2) : Steuert den Downward Spread im vierten Quartal
+- [Sleevecap Q1 nach unten ausgebreitet](/docs/designs/brian/options/sleevecapq1spread1) : Steuert die Abwärtsverteilung im ersten Quartal
+- [Sleevecap Q1 Aufwärtsspread](/docs/designs/brian/options/sleevecapq1spread2) : Steuert den Aufwärtsspread im ersten Quartal
+- [Sleevecap Q2 nach unten verteilt](/docs/designs/brian/options/sleevecapq2spread1) : Steuert die Abwärtsverteilung im zweiten Quartal
+- [Sleevecap Q2 upward spread](/docs/designs/brian/options/sleevecapq2spread2) : Steuert die Aufwärtsspanne im zweiten Quartal
+- [Sleevecap Q3 upward spread](/docs/designs/brian/options/sleevecapq3spread1) : Steuert die Aufwärtsspanne im dritten Quartal
+- [Sleevecap Q3 nach unten verteilt](/docs/designs/brian/options/sleevecapq3spread2) : Steuert die Abwärtsverteilung im dritten Quartal
+- [Sleevecap Q4 upward spread](/docs/designs/brian/options/sleevecapq4spread1) : Steuert die Aufwärtsspanne im vierten Quartal
+- [Sleevecap Q4 Downward Spread](/docs/designs/brian/options/sleevecapq4spread2) : Steuert den Downward Spread im vierten Quartal
 
 <Note>
 
