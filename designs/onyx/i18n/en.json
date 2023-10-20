@@ -24,13 +24,37 @@
 	  "d": "Controls how wide the finished neckband will be."
 	},
     "hoodHem": {
-	  "t": "Hood hem width",
+	  "t": "Hood hem",
 	  "d": "Sets the hem allowance along the front of the hood, as a multiple of the seam allowance."
+	},
+	"sleeveRibbing": {
+	  "t": "Sleeve Ribbing",
+	  "d": "Choose whether to make ribbed knit cuffs for the sleeves or to use a hem."
+	},
+	"sleeveRibbingNo": {
+	  "t": "Hem",
+	  "d": "Finish the sleeves with a hem."
+	},
+	"sleeveRibbingYes": {
+	  "t": "Ribbing",
+	  "d": "Finish the sleeves with a piece of ribbing."
 	},
     "sleeveHem": {
       "t": "Sleeve hem",
       "d": "Sets the hem allowance of the hem along the end of the sleeves, as a multiple of the seam allowance."
     },
+	"legRibbing": {
+	  "t": "Leg Ribbing",
+	  "d": "Choose whether to make ribbed knit cuffs for the legs or to use a hem."
+	},
+	"legRibbingNo": {
+	  "t": "Hem",
+	  "d": "Finish the legs with a hem."
+	},
+	"legRibbingYes": {
+	  "t": "Ribbing",
+	  "d": "Finish the legs with a piece of ribbing."
+	},
     "legHem": {
       "t": "Leg hem",
       "d": "Sets the hem allowance of the hem along the bottom of the legs, as a multiple of the seam allowance."
@@ -39,9 +63,25 @@
 	  "t": "Back on fold",
 	  "d": "Enable this option to make the back out of a single piece, or disable to make it out of two mirrored pieces joined by a seam. It is recommended to disable this if placing a back zipper, and enable it otherwise."
 	},
+	"backOnFoldNo": {
+	  "t": "Cut separate",
+	  "d": "Cut two separate mirrored back pieces"
+	},
+	"backOnFoldYes": {
+	  "t": "Cut on fold",
+	  "d": "Cut the back as a single piece, on the fold"
+	},
 	"frontOnFold": {
 	  "t": "Front on fold",
 	  "d": "Enable this option to make the front out of a single piece, or disable to make it out of two mirrored pieces joined by a seam. It is recommended to disable this if placing a front zipper, and enable it otherwise."
+	},
+	"frontOnFoldNo": {
+	  "t": "Cut separate",
+	  "d": "Cut two separate mirrored front pieces"
+	},
+	"frontOnFoldYes": {
+	  "t": "Cut on fold",
+	  "d": "Cut the back as a single piece, on the fold"
 	},
 	"zipperLength": {
 	  "t": "Zipper length",
