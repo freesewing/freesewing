@@ -10,6 +10,6 @@ The side effect of shifting the side seam forward is that it's easy to get into 
 
 Met deze optie kunt u dit saldo beheren.
 
-## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](charlie_waistbalance_sample.svg "Effect van deze optie op het patroon")
+
+
