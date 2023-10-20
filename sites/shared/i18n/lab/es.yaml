@@ -1,0 +1,13 @@
+welcome: Welcome to the FreeSewing lab
+designs: Diseños
+docs: Documentación
+about: You can generate patterns here as well as manage your account. But unless you have a specific reason, you probably want to use FreeSewing.org instead.
+support: Soporte
+supportMsg: Find out where you can turn to when you need help.
+what: What is the FreeSewing lab?
+noDocs: The FreeSewing lab does not include documentation.
+see: Instead, refer to
+orgDocs: FreeSewing.org has documentation for makers, such as design options, sewing techniques, and instructions.
+devDocs: FreeSewing.dev has documentation for developers and contributors, such as API docs and guides on how to get involved with the project.
+enOnly: FreeSewing.dev is only available in English
+
