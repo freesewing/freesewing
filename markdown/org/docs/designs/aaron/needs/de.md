@@ -5,7 +5,7 @@ title: "Aaron A-Shirt: Was du brauchst"
 Um Aaron zu erstellen, benötigst du Folgendes:
 
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
-- Etwa 0.75 cm (0.8") eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/aaron/fabric))
+- Etwa 0.75 cm (0.8") eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/designs/aaron/fabric))
 
 <Note>
 
