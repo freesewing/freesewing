@@ -114,7 +114,7 @@ export function encryption(stringKey, salt = 'FreeSewing') {
  * Salts and hashes a password
  */
 export function hashPassword(input, salt = false) {
-  if (salt === false) salt = Buffer.from(randomBytes(16))
+  if (salt === false) salt = Buffer.from(randomBytes(16), 'hex')
   else salt = Buffer.from(salt, 'hex')
   const hash = scryptSync(input, salt, 64)
 

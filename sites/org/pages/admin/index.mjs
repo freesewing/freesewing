@@ -10,6 +10,7 @@ import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { AuthWrapper, ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 import { Loading } from 'shared/components/spinner.mjs'
 import { Hits } from 'shared/components/admin.mjs'
+import { PageLink } from 'shared/components/link.mjs'
 
 // Translation namespaces used on this page
 const namespaces = nsMerge(pageNs, authNs)
@@ -39,6 +40,10 @@ const AdminPage = ({ page }) => {
   return (
     <PageWrapper {...page} title="Administration">
       <AuthWrapper requiredRole="admin">
+        <p>
+          Other admin links:
+          <PageLink href="/admin/cset" txt="Curated measurement sets" />
+        </p>
         <h5>Search users</h5>
         <input
           autoFocus
