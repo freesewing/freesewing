@@ -49,7 +49,7 @@ Ich schaue eher nach vorne als zurück, aber wenn ich über das Jahr nachdenke, 
 
 Vor zwölf Monaten , [haben wir unser Patenprojekt](/blog/calling-all-patrons)gestartet. Seitdem haben sich 65 Gönnerinnen und Gönner - etwa gleichmäßig verteilt auf unsere 3 Gönnerschichten - [gemeldet, um Freesewing](/patrons/join)zu unterstützen. Die Auswirkungen dieser Menschen, die sich verpflichtet haben, unsere Arbeit zu unterstützen, haben selbst meine optimistischsten Hoffnungen übertroffen.
 
-[Du weißt vielleicht oder auch nicht, dass ich ein Versprechen](/docs/various/pledge) abgegeben habe, alle Einnahmen aus dem Freesewing für wohltätige Zwecke zu spenden. Deshalb habe ich heute Morgen unsere gesamten Jahreseinnahmen (**3162,14 Euro**) an [Médecins Sans Frontières](https://www.msf.org/) (Ärzte ohne Grenzen) überwiesen. Geld, das dazu beitragen wird, einigen der bedürftigsten Menschen auf diesem Planeten zu helfen.
+[Du weißt vielleicht oder auch nicht, dass ich ein Versprechen](/docs/about/pledge) abgegeben habe, alle Einnahmen aus dem Freesewing für wohltätige Zwecke zu spenden. Deshalb habe ich heute Morgen unsere gesamten Jahreseinnahmen (**3162,14 Euro**) an [Médecins Sans Frontières](https://www.msf.org/) (Ärzte ohne Grenzen) überwiesen. Geld, das dazu beitragen wird, einigen der bedürftigsten Menschen auf diesem Planeten zu helfen.
 
 Du hast das möglich gemacht, und wenn es dein Herz auch nur zu einem Bruchteil so erfreut wie meins, dann wirst du verstehen, wie viel mir deine Unterstützung bedeutet: .
 
