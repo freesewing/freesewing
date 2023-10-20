@@ -16,6 +16,6 @@ Enable this option and we'll draft to your high bust, fitting your body without 
 Cette option n'a aucun effet lorsqu'il n'y a pas de mesure de poitrine élevée fournie
 </Note>
 
-## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](teagan_draftforhighbust_sample.svg "Effet de cette option sur le motif")
+
+
