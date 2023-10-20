@@ -40,7 +40,7 @@
     "echarts": "5.4.3",
     "echarts-for-react": "3.0.2",
     "jotai": "2.4.3",
-    "jotai-location": "0.5.1",
+    "jotai-location": "0.5.2",
     "lodash.get": "4.4.2",
     "lodash.orderby": "4.6.0",
     "lodash.set": "4.3.2",
