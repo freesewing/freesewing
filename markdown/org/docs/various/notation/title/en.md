@@ -10,3 +10,8 @@ Example of a title
 
 </Legend>
 
+<Note>
+
+When you generate a pattern on freesewing.org, the title will also include the name of the person the pattern was made for.
+
+</Note>
