@@ -11,7 +11,7 @@ Tiberio es un patrón de inspiración histórica, y si quieres más autenticidad
 ### Paso 1: Coser las costuras de los hombros
 
 - Junta las dos partes por el lado bueno. Cose las costuras de los hombros, teniendo cuidado de detenerte en las muescas para la abertura de la cabeza.
-- Remata las costuras con el método que prefieras. (Si utilizas los tejidos recomendados en las opciones de tejido [](/docs/patterns/tiberius/fabric), se deshilacharán __. Una opción es doblar dos veces el margen de costura, encerrar el borde crudo y pespuntear. También puedes utilizar pespuntes decorativos).
+- Remata las costuras con el método que prefieras. (Si utilizas los tejidos recomendados en las opciones de tejido [](/docs/designs/tiberius/fabric), se deshilacharán __. Una opción es doblar dos veces el margen de costura, encerrar el borde crudo y pespuntear. También puedes utilizar pespuntes decorativos).
 
 <Note>
 
