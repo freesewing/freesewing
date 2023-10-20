@@ -37,8 +37,8 @@ The width of the sleevecap (and thus the width of the sleeve at the bottom of th
 
 De hoogte van de mouwkop is gelijk aan de afstand tussen de punten 3 en 4. The exact height is a trade-off between the measurments of the model, options, ease, sleevecap ease, and the fact that the sleeve ultimately has to fit the armhole. So the height may vary, and we don't control the exact value. Maar er zijn twee opties die de vorm van onze mouwkop bepalen:
 
-- [Mouwkop top X](/docs/patterns/brian/options/sleevecaptopfactorx/) : Bepaalt de horizontale plaatsing van punt 3 en 4
-- [Mouwkop top Y](/docs/patterns/brian/options/sleevecaptopfactory/) : Bepaalt de verticale plaatsing van punt 4
+- [Mouwkop top X](/docs/designs/brian/options/sleevecaptopfactorx/) : Bepaalt de horizontale plaatsing van punt 3 en 4
+- [Mouwkop top Y](/docs/designs/brian/options/sleevecaptopfactory/) : Bepaalt de verticale plaatsing van punt 4
 
 In other words, point 4 can be made higher and lower and, perhaps less intutitively, it can also be changed to lie more to the right or the left, rather than smack in the middle as in our example.
 
@@ -48,10 +48,10 @@ In other words, point 4 can be made higher and lower and, perhaps less intutitiv
 
 Met de punten 1, 2, 3 en 4 hebben we een doos om onze mouwkop in te trekken. Now it's time to map out our _inflection points_. These are points 5 and 6 on our drawing, and their placement is determined by the following 4 options:
 
-- [Mouwkop X](/docs/patterns/brian/options/sleevecapbackfactorx) : Bepaalt de horizontale plaatsing van punt 5
-- [Mouwkop Y](/docs/patterns/brian/options/sleevecapbackfactory) : Bepaalt de verticale plaatsing van punt 5
-- [Mouwkop X](/docs/patterns/brian/options/sleevecapbackfactorx) : Bepaalt de horizontale plaatsing van punt 6
-- [Mouwkop Y](/docs/patterns/brian/options/sleevecapbackfactory) : Bepaalt de verticale plaatsing van punt 6
+- [Mouwkop X](/docs/designs/brian/options/sleevecapbackfactorx) : Bepaalt de horizontale plaatsing van punt 5
+- [Mouwkop Y](/docs/designs/brian/options/sleevecapbackfactory) : Bepaalt de verticale plaatsing van punt 5
+- [Mouwkop X](/docs/designs/brian/options/sleevecapbackfactorx) : Bepaalt de horizontale plaatsing van punt 6
+- [Mouwkop Y](/docs/designs/brian/options/sleevecapbackfactory) : Bepaalt de verticale plaatsing van punt 6
 
 <Note>
 
@@ -68,10 +68,10 @@ Uiteindelijk zal onze mouwkop de combinatie van 5 curves zijn. In addition to po
 
 The points are _offset_ perpendicular from the middle of a line between the two anchor points surrounding them. De offset voor elk punt wordt bepaald door deze 4 opties:
 
-- [Mouwkop Q1 offset](/docs/patterns/brian/options/sleevecapq1offset) : Bepaalt de offset loopendicular naar de lijn van punt 2 tot 6
-- [Mouwkop Q2 offset](/docs/patterns/brian/options/sleevecapq2offset) : Bepaalt de offset perpendicular naar de lijn van punt 6 tot 4
-- [Mouwkop Q3 offset](/docs/patterns/brian/options/sleevecapq3offset) : Bepaalt de offset perpendicular naar de lijn van punt 4 tot 5
-- [Mouwkop Q4 offset](/docs/patterns/brian/options/sleevecapq3offset) : Bepaalt de offset perpendicular naar de lijn van punt 5 tot 1
+- [Mouwkop Q1 offset](/docs/designs/brian/options/sleevecapq1offset) : Bepaalt de offset loopendicular naar de lijn van punt 2 tot 6
+- [Mouwkop Q2 offset](/docs/designs/brian/options/sleevecapq2offset) : Bepaalt de offset perpendicular naar de lijn van punt 6 tot 4
+- [Mouwkop Q3 offset](/docs/designs/brian/options/sleevecapq3offset) : Bepaalt de offset perpendicular naar de lijn van punt 4 tot 5
+- [Mouwkop Q4 offset](/docs/designs/brian/options/sleevecapq3offset) : Bepaalt de offset perpendicular naar de lijn van punt 5 tot 1
 
 <Note>
 
@@ -91,14 +91,14 @@ We hebben nu alle start- en eindpunten om de 5 curves te tekenen die samen onze 
 
 For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option to control the spread upwards, and downwards:
 
-- [Mouwkop Q1 neerwaardse spreiding](/docs/patterns/brian/options/sleevecapq1spread1) : Bepaalt de neerwaartse spreiding in het eerste kwartaal
-- [Mouwkop Q1 opwaardse spreiding](/docs/patterns/brian/options/sleevecapq1spread2) : Bepaalt de opwaartse spreiding in het eerste kwartaal
-- [Mouwkop Q2 neerwaardse spreiding](/docs/patterns/brian/options/sleevecapq2spread1) : Bepaalt de neerwaartse spreiding in het tweede kwartaal
-- [Mouwkop Q2 opwaartse spreiding](/docs/patterns/brian/options/sleevecapq2spread2) : Bepaalt de opwaartse spreiding in het tweede kwartaal
-- [Mouwkop Q3 opwaartse spreiding](/docs/patterns/brian/options/sleevecapq3spread1) : Bepaalt de opwaartse spreiding in het derde kwartaal
-- [Mouwkop Q3 neerwaardse spreiding](/docs/patterns/brian/options/sleevecapq3spread2) : Bepaalt de neerwaartse spreiding in het derde kwartaal
-- [Mouwkop Q4 opwaartse spreiding](/docs/patterns/brian/options/sleevecapq4spread1) : Bepaalt de opwaartse spreiding in het vierde kwartaal
-- [Mouwkop Q4 neerwaardse spreiding](/docs/patterns/brian/options/sleevecapq4spread2) : Bepaalt de neerwaartse spreiding in het vierde kwartaal
+- [Mouwkop Q1 neerwaardse spreiding](/docs/designs/brian/options/sleevecapq1spread1) : Bepaalt de neerwaartse spreiding in het eerste kwartaal
+- [Mouwkop Q1 opwaardse spreiding](/docs/designs/brian/options/sleevecapq1spread2) : Bepaalt de opwaartse spreiding in het eerste kwartaal
+- [Mouwkop Q2 neerwaardse spreiding](/docs/designs/brian/options/sleevecapq2spread1) : Bepaalt de neerwaartse spreiding in het tweede kwartaal
+- [Mouwkop Q2 opwaartse spreiding](/docs/designs/brian/options/sleevecapq2spread2) : Bepaalt de opwaartse spreiding in het tweede kwartaal
+- [Mouwkop Q3 opwaartse spreiding](/docs/designs/brian/options/sleevecapq3spread1) : Bepaalt de opwaartse spreiding in het derde kwartaal
+- [Mouwkop Q3 neerwaardse spreiding](/docs/designs/brian/options/sleevecapq3spread2) : Bepaalt de neerwaartse spreiding in het derde kwartaal
+- [Mouwkop Q4 opwaartse spreiding](/docs/designs/brian/options/sleevecapq4spread1) : Bepaalt de opwaartse spreiding in het vierde kwartaal
+- [Mouwkop Q4 neerwaardse spreiding](/docs/designs/brian/options/sleevecapq4spread2) : Bepaalt de neerwaartse spreiding in het vierde kwartaal
 
 <Note>
 
