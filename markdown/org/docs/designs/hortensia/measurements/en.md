@@ -2,4 +2,4 @@
 title: "Hortensia handbag: Required Measurements"
 ---
 
-<PatternMeasurements pattern='hortensia' />
+<DesignMeasurements design='hortensia' />
