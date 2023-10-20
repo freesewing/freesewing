@@ -10,6 +10,6 @@ title: "Simone Shirt: Anleitung zum Nähen"
 
 <Note>
 
-Simone ist nur unser [Simon-Muster](/designs/simon/), das für Brüste angepasst wurde, so dass du jetzt einfach [Simons Anleitung](/docs/patterns/simon/instructions) folgen kannst, um deine Simone fertigzustellen :)
+Simone is just our [Simon pattern](/designs/simon/) adapted for breasts so you can now just follow [Simon's instructions](/docs/designs/simon/instructions) to finish your Simone :)
 
 </Note>
