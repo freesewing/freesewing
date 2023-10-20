@@ -16,9 +16,9 @@ Schauen wir uns die Dinge an, die im Februar passiert sind, bevor wir darüber s
 
 ### Core v1.7.0 ist erschienen
 
-Heute Morgen habe ich die Kernversion 1.7.0 veröffentlicht. Wie immer findest du alle Informationen im Änderungsprotokoll [](https://github.com/freesewing/core/blob/develop/CHANGELOG.md#170) . Am wichtigsten für die Benutzer sind jedoch [die neuen Rippenoptionen im Muster Sven](/docs/patterns/sven/options#ribbing)sowie eine Reihe zusätzlicher Verbesserungen an Carlton/Carlita.
+Heute Morgen habe ich die Kernversion 1.7.0 veröffentlicht. Wie immer findest du alle Informationen im Änderungsprotokoll [](https://github.com/freesewing/core/blob/develop/CHANGELOG.md#170) . Am wichtigsten für die Benutzer sind jedoch [die neuen Rippenoptionen im Muster Sven](/docs/designs/sven/options#ribbing)sowie eine Reihe zusätzlicher Verbesserungen an Carlton/Carlita.
 
-Diese Carlton/Carlita-Verbesserungen werden durch die Tatsache vorangetrieben, dass ich und [Anneke](/showcase/maker/annekecaramin) begonnen haben, an [der Dokumentation für diese Muster](/docs/patterns/carlton/)zu arbeiten. Und jedes Mal, wenn wir etwas wie *hier*auftragen, gehen wir auch zum Muster zurück, um genau zu markieren, wo der Vliesstoff hin muss.
+Diese Carlton/Carlita-Verbesserungen werden durch die Tatsache vorangetrieben, dass ich und [Anneke](/showcase/maker/annekecaramin) begonnen haben, an [der Dokumentation für diese Muster](/docs/designs/carlton/)zu arbeiten. Und jedes Mal, wenn wir etwas wie *hier*auftragen, gehen wir auch zum Muster zurück, um genau zu markieren, wo der Vliesstoff hin muss.
 
 Unnötig zu erwähnen, dass das ein Haufen Arbeit ist. Aber es sollte bei der Konstruktion dieser Mantelmuster helfen, besonders für diejenigen, für die es das erste Mal ist, dass sie einen Mantel machen.
 
