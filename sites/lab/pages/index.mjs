@@ -7,7 +7,6 @@ import { collection } from 'site/hooks/use-design.mjs'
 // Components
 import Head from 'next/head'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { Popout, ns as popoutNs } from 'shared/components/popout/index.mjs'
 import { WebLink, PageLink } from 'shared/components/link.mjs'
 
 const ns = nsMerge('lab', 'designs', pageNs, popoutNs)
@@ -21,7 +20,7 @@ const HomePage = ({ page }) => {
   const { t } = useTranslation(ns)
 
   return (
-    <PageWrapper footer={false}>
+    <PageWrapper {...page} footer={false}>
       <Head>
         <title>{t('lab:welcome')}</title>
       </Head>
