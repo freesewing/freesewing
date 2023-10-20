@@ -63,7 +63,7 @@ Om dit te omzeilen moet je waarschijnlijk [je account opnieuw laden](/account/re
 
 We hebben ook een paar veranderingen op de website aangebracht.
 
- - We hebben een [patroonnotatiegids](/docs/various/notation/) toegevoegd om het giswerk weg te nemen over wat die markeringen op je patroon betekenen.
+ - We hebben een [patroonnotatiegids](/docs/about/notation/) toegevoegd om het giswerk weg te nemen over wat die markeringen op je patroon betekenen.
  - We hebben een [account opnieuw laden](/account/actions/reload/) pagina toegevoegd om je te helpen problemen als gevolg van in de cache opgeslagen accountgegevens te voorkomen.
  - We hebben de styling van de verschillende maten veranderd als je een patroon vergelijkt, en we hebben ook een legenda toegevoegd die laat zien welke omtrek bij welke maat hoort.
 
