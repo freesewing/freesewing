@@ -18,15 +18,19 @@ function draftZipperGuard({
   snippets,
   Snippet,
 }) {
+  const zipperGuardTapeCoverMaterial = 0.75
+
   const verticalTrunk = store.get('verticalTrunk')
   const zipperLength = absoluteOptions.zipperLength
   const zipperGuardWidth = absoluteOptions.zipperGuardWidth
-  const neckGuardLength = verticalTrunk * options.neckGuardLength
+  const neckGuardLength =
+    options.neckStyle == 'neckband'
+      ? verticalTrunk * options.neckGuardLength
+      : zipperGuardTapeCoverMaterial * zipperGuardWidth
 
   // How much extra material to put at the bottom of the zipper guard, to cover the parts below the zipper stop.
-  const zipperGuardBottomMaterial = 0.75
   const zipperGuardLength =
-    zipperLength + neckGuardLength + zipperGuardWidth * zipperGuardBottomMaterial
+    zipperLength + neckGuardLength + zipperGuardWidth * zipperGuardTapeCoverMaterial
 
   points.topLeftCorner = new Point(0, 0)
   points.bottomLeftCorner = new Point(0, zipperGuardLength)
@@ -117,7 +121,8 @@ export const zipperGuard = {
           settings.measurements.hpsToWaistBack +
           settings.measurements.crossSeam) *
         pct,
-      menu: 'construction',
+      menu: (settings, mergedOptions) =>
+        mergedOptions.neckStyle == 'neckband' ? 'construction' : false,
     },
   },
 }
