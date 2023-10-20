@@ -5,7 +5,7 @@ title: "Bella lichaam blok: Wat je nodig hebt"
 Om Bella te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- Ongeveer 0,5 meter van een geschikte stof ([zie Bella Fabric opties](/docs/patterns/bella/fabric/))
+- Ongeveer 0,5 meter van een geschikte stof ([zie Bella Fabric opties](/docs/designs/bella/fabric/))
 
 Deze lijst is voor een standaard Bella Block. Als je veranderingen aan het blok hebt aangebracht, heb je misschien extra onderdelen nodig, zoals sluitingen, bindingen, enz.
 
