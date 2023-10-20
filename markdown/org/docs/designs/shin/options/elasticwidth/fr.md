@@ -8,6 +8,6 @@ title: "Largeur d'élastique"
 > 
 > La largeur de votre élastique doit être prise en compte, c'est à cela que sert l'option largeur d'élastique.
 
-## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](shin_elasticwidth_sample.svg "Effet de cette option sur le motif")
+
+
