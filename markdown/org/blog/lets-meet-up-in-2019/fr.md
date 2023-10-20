@@ -49,7 +49,7 @@ Je suis plus du genre à regarder vers l'avant que vers l'arrière, mais en réf
 
 Il y a douze mois , [nous avons lancé notre projet de mécénat](/blog/calling-all-patrons). Depuis, 65 mécènes - répartis à peu près équitablement entre nos 3 niveaux de mécénat - ont [fait un geste pour soutenir le freesewing](/patrons/join). Les retombées de l'engagement de ces personnes à soutenir notre travail ont dépassé même mes espoirs les plus optimistes.
 
-Tu sais peut-être, ou peut-être pas, que j'ai [fait la promesse](/docs/various/pledge) de donner tous les revenus de freesewing à des œuvres de charité. Ce matin, j'ai donc transféré la totalité de nos recettes de l'année (**3162,14 euros**) à [Médecins Sans Frontières](https://www.msf.org/) (Doctors Without Borders). De l'argent qui servira à apporter de l'aide à certaines des personnes les plus vulnérables de cette planète.
+Tu sais peut-être, ou peut-être pas, que j'ai [fait la promesse](/docs/about/pledge) de donner tous les revenus de freesewing à des œuvres de charité. Ce matin, j'ai donc transféré la totalité de nos recettes de l'année (**3162,14 euros**) à [Médecins Sans Frontières](https://www.msf.org/) (Doctors Without Borders). De l'argent qui servira à apporter de l'aide à certaines des personnes les plus vulnérables de cette planète.
 
 Tu as fait en sorte que cela se produise, et si cela apporte une fraction de la joie à ton cœur comme c'est le cas pour le mien, tu comprendras à quel point ton patronage compte pour moi.
 
