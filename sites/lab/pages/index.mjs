@@ -9,7 +9,7 @@ import Head from 'next/head'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { WebLink, PageLink } from 'shared/components/link.mjs'
 
-const ns = nsMerge('lab', 'designs', pageNs, popoutNs)
+const ns = nsMerge('lab', 'designs', pageNs)
 /*
  * Each page MUST be wrapped in the PageWrapper component.
  * You also MUST spread props.page into this wrapper component
