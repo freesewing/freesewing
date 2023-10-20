@@ -112,6 +112,11 @@ export const extendSiteNav = async (siteNav, lang) => {
     t: t('sections:admin'),
     _: 1,
     s: 'admin',
+    cset: {
+      t: 'Curated Measurement Sets',
+      s: 'admin/cset',
+      _: 1,
+    },
   }
 
   // Add account
@@ -159,6 +164,14 @@ export const extendSiteNav = async (siteNav, lang) => {
     s: 'profile',
     h: 1,
     t: t('yourProfile'),
+  }
+
+  // Add curated measurements sets
+  siteNav['curated-sets'] = {
+    m: 1,
+    s: 'curated-sets',
+    t: t('sections:curatedSets'),
+    n: 1,
   }
 
   // Add translation

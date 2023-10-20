@@ -20,7 +20,7 @@ const ShowcasePage = ({ dir, page, mdx, frontmatter }) => {
           frontmatter={frontmatter}
           mdx={mdx}
           dir={dir}
-          type="blog"
+          type="showcase"
         />
       )}
     />
