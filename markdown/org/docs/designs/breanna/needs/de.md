@@ -5,7 +5,7 @@ title: "Breanna Körperblock: Was du brauchst"
 Um Breanna herzustellen, brauchst du Folgendes:
 
 - Grundlegendes Nähzubehör
-- Etwa 1,25 - 1,5 Meter (1,4 - 1,7 Yards) eines geeigneten Stoffes ([siehe Breanna Stoffoptionen](/docs/patterns/Breanna/fabric/))
+- Etwa 1,25 - 1,5 Meter (1,4 - 1,7 Yards) eines geeigneten Stoffes ([siehe Breanna Stoffoptionen](/docs/designs/Breanna/fabric/))
 
 Diese Liste ist für einen Breanna-Grundschnitt mit Standardeinstellungen. Wenn du Änderungen an dem Block vornimmst, musst du eventuell zusätzliche Artikel wie Verschlüsse, Bindungen usw. besorgen.
 
