@@ -2,4 +2,4 @@
 title: "Wahid waistcoat: Required Measurements"
 ---
 
-<DesignMeasurements design='wahid' />
+<PatternMeasurements pattern='wahid' />
