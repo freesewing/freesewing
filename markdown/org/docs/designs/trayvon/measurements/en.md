@@ -2,4 +2,4 @@
 title: "Trayvon tie: Required Measurements"
 ---
 
-<DesignMeasurements design='trayvon' />
+<PatternMeasurements pattern='trayvon' />
