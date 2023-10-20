@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { CopyToClipboard } from 'shared/components/copy-to-clipboard.mjs'
 
 export const CodeBox = ({ code, title }) => (

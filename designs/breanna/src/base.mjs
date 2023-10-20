@@ -65,6 +65,16 @@ function draftBreannaBase({ store, points, Point, measurements, options, utils, 
   return part
 }
 
+/*
+ * Helper methods to conditionally show/hide options in the menu
+ */
+// Option is false by default, so a simple check will do
+const onlyWithShoulderDart = ({ options }) => (options?.shoulderDart ? 'fit' : false)
+
+// Option is true by default, so if it's missing it's also true
+const onlyWithWaistDart = ({ options }) =>
+  options?.waistDart || typeof options?.waistDart === 'undefined' ? 'fit' : false
+
 export const base = {
   name: 'breanna.base',
   hide: { self: true },
@@ -147,10 +157,11 @@ export const base = {
     acrossBackFactor: { pct: 96, min: 93, max: 100, menu: 'advanced' },
     armholeDepthFactor: { pct: 100, min: 80, max: 120, menu: 'advanced' },
     backNeckCutout: { pct: 5, min: 2, max: 8, menu: 'advanced' },
-    shoulderDartSize: { pct: 7, min: 4, max: 10, menu: 'fit' },
-    shoulderDartLength: { pct: 85, min: 60, max: 100, menu: 'fit' },
-    waistDartSize: { pct: 10, min: 4, max: 15, menu: 'fit' },
-    waistDartLength: { pct: 85, min: 60, max: 100, menu: 'fit' },
+    bicepsEase: { pct: 15, min: 0, max: 50, menu: 'fit' },
+    shoulderDartSize: { pct: 7, min: 4, max: 10, menu: onlyWithShoulderDart },
+    shoulderDartLength: { pct: 85, min: 60, max: 100, menu: onlyWithShoulderDart },
+    waistDartSize: { pct: 10, min: 4, max: 15, menu: onlyWithWaistDart },
+    waistDartLength: { pct: 85, min: 60, max: 100, menu: onlyWithWaistDart },
     verticalEase: { pct: 2, min: 0, max: 8, menu: 'fit' },
     frontArmholeDeeper: { pct: 1, min: 0, max: 5, menu: 'advanced' },
     shoulderEase: { pct: 0, min: 0, max: 4, menu: 'fit' },

@@ -2,4 +2,7 @@
 title: "Florent pet"
 ---
 
-<PatternDocs pattern='florent' />
+
+
+<DesignInfo design='florent' docs />
+

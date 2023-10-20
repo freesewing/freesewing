@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { Popout } from 'shared/components/popout/index.mjs'
 
 export const V3Wip = () => (

@@ -2,4 +2,4 @@
 title: "Фартух Альберт: Необхідні розміри"
 ---
 
-<PatternMeasurements pattern='albert' />
+<DesignMeasurements design='albert' />

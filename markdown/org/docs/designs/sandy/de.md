@@ -2,4 +2,7 @@
 title: "Sandy, der Tellerrock"
 ---
 
-<PatternDocs pattern='sandy' />
+
+
+<DesignInfo design='sandy' docs />
+

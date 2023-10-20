@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Hooks
 import { useTranslation } from 'next-i18next'
 // Components

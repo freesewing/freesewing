@@ -1,11 +1,11 @@
-import { frontPocket } from './front-pocket.mjs'
+import { frontPocketBag } from './front-pocket-bag.mjs'
 
 function draftCharlieFrontPocketFacing({
   points,
   Point,
   paths,
   Path,
-  complete,
+  store,
   macro,
   snippets,
   sa,
@@ -32,32 +32,41 @@ function draftCharlieFrontPocketFacing({
     )
     .line(points.pocketFacingTop)
     .close()
-    .attr('class', 'fabric', true)
+    .setClass('fabric')
 
-  if (complete) {
-    points.titleAnchor = points.slantBottomNotch.shift(0, 10)
-    macro('title', {
-      at: points.titleAnchor,
-      nr: 8,
-      title: 'frontPocketBagFacing',
-    })
-    macro('grainline', {
-      from: points.slantTop,
-      to: new Point(points.slantTop.x, points.facingDirection.y),
-    })
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['facingDirection', 'slantTopNotch', 'slantBottomNotch'],
-    })
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa', true)
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa', true)
-  }
+  /*
+   * Annotations
+   */
+  // cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Title
+  points.titleAnchor = points.slantBottomNotch.shift(0, 10)
+  macro('title', {
+    at: points.titleAnchor,
+    nr: 8,
+    title: 'frontPocketFacing',
+  })
+
+  // Grainline
+  macro('grainline', {
+    from: points.slantTop,
+    to: new Point(points.slantTop.x, points.facingDirection.y),
+  })
+
+  // Notches
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: ['facingDirection', 'slantTopNotch', 'slantBottomNotch'],
+  })
 
   return part
 }
 
 export const frontPocketFacing = {
   name: 'charlie.frontPocketFacing',
-  from: frontPocket,
+  from: frontPocketBag,
   draft: draftCharlieFrontPocketFacing,
 }

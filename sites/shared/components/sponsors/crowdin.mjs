@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 export const Crowdin = ({ className = 'w-36' }) => (
   <svg
     version="1.1"

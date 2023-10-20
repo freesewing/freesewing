@@ -6,4 +6,4 @@ title: "Bob the Bib: Required Measurements"
 Bob does not require any measurements
 </Note>
 
-<PatternMeasurements pattern='bob' />
+<DesignMeasurements design='bob' />

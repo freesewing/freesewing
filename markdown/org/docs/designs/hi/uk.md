@@ -2,4 +2,7 @@
 title: Привіт, акуло.
 ---
 
-<PatternDocs pattern='hi' />
+
+
+<DesignInfo design='hi' docs />
+

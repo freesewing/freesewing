@@ -1,4 +1,4 @@
-import { collection } from 'shared/hooks/use-design.mjs'
+import { collection } from 'site/hooks/use-design.mjs'
 
 export const DesignPicker = ({ designs = [], setDesigns }) => {
   return (

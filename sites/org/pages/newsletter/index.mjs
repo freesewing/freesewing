@@ -5,10 +5,10 @@ import { nsMerge } from 'shared/utils.mjs'
 import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
-import { Popout } from 'shared/components/popout/index.mjs'
+import { SubscribeToNewsletter, ns as nlNs } from 'shared/components/newsletter/index.mjs'
 
 // Translation namespaces used on this page
-const namespaces = nsMerge(pageNs, 'newsletter')
+const namespaces = nsMerge(pageNs, nlNs)
 
 /*
  * Each page MUST be wrapped in the PageWrapper component.
@@ -22,7 +22,8 @@ const NewsletterPage = ({ page }) => {
   return (
     <PageWrapper {...page} title={t('newsletter:newsletter')}>
       <div className="max-w-xl">
-        <Popout fixme>handle newsletter subscription here</Popout>
+        <p>{t('newsletter:subscribePitch')}</p>
+        <SubscribeToNewsletter />
       </div>
     </PageWrapper>
   )

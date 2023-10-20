@@ -5,7 +5,10 @@
     "skirt": "Skirt",
     "waistband": "Waistband"
   },
-  "s": {},
+  "s": {
+    "cutWaistband.t": "The waistband is not shown",
+    "cutWaistband.d": "The **Waistband** (2) is a rectangular piece of fabric {{{ w }}} wide and {{{ l }}} long."
+  },
   "o": {
     "waistbandWidth": {
       "t": "Waistband width",
@@ -18,6 +21,14 @@
     "waistbandShape": {
       "t": "Waistband shape",
       "d": "Whether you want a straight or shaped waistband."
+    },
+    "waistbandShape.straight": {
+      "t": "Straight waistband",
+      "d": "Draft a pattern with a straight waistband"
+    },
+    "waistbandShape.curved": {
+      "t": "Curved waistband",
+      "d": "Draft a pattern with a curved waistband"
     },
     "circleRatio": {
       "t": "Circle ratio",
@@ -38,6 +49,14 @@
     "seamlessFullCircle": {
       "t": "Seamless full circle",
       "d": "Enables a seamless full circle skirt."
+    },
+    "seamlessFullCircleNo": {
+      "t": "Draft less than a full circle skirt",
+      "d": "Drafts a pattern for the exact circle ratio you request"
+    },
+    "seamlessFullCircleYes": {
+      "t": "Draft a pattern for a full circle skirt",
+      "d": "This allows you to cut the skirt on a double-fold"
     },
     "hemWidth": {
       "t": "Hem width",

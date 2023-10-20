@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 import orderBy from 'lodash.orderby'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'

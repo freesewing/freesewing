@@ -2,4 +2,7 @@
 title: "Patron de base Brian"
 ---
 
-<PatternDocs pattern='brian' />
+
+
+<DesignInfo design='brian' docs />
+

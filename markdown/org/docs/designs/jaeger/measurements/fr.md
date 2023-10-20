@@ -2,4 +2,4 @@
 title: "Veste Jaeger : Mesures requises"
 ---
 
-<PatternMeasurements pattern='jaeger' />
+<DesignMeasurements design='jaeger' />

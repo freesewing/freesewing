@@ -1,4 +1,3 @@
-import { cat } from './cat.mjs'
 import { capitalize } from '../src/utils/index.mjs'
 
 export const optionPackTests = async (chai, config, expect, store) => {
@@ -18,12 +17,7 @@ export const optionPackTests = async (chai, config, expect, store) => {
       notesFr: 'Aaron notes A',
       notesNl: 'Aaron notes A',
       notesUk: 'Aaron notes A',
-      tagsDe: ['tagA', 'tagB'],
-      tagsEn: ['tagA', 'tagB'],
-      tagsEs: ['tagA', 'tagB'],
-      tagsFr: ['tagA', 'tagB'],
-      tagsNl: ['tagA', 'tagB'],
-      tagsUk: ['tagA', 'tagB'],
+      tags: ['tagA', 'tagB'],
       options: {
         backlineBend: 0.666,
         necklineBend: 0.8,
@@ -45,18 +39,12 @@ export const optionPackTests = async (chai, config, expect, store) => {
       notesFr: 'Aaron notes B',
       notesNl: 'Aaron notes B',
       notesUk: 'Aaron notes B',
-      tagsDe: ['tagA', 'tagB'],
-      tagsEn: ['tagA', 'tagB'],
-      tagsEs: ['tagA', 'tagB'],
-      tagsFr: ['tagA', 'tagB'],
-      tagsNl: ['tagA', 'tagB'],
-      tagsUk: ['tagA', 'tagB'],
+      tags: ['tagA', 'tagB'],
       options: {
         backlineBend: 0.444,
         necklineBend: 0.7,
         necklineDrop: 0.4,
       },
-      img: cat,
     },
   }
   store.apack = {
@@ -91,7 +79,7 @@ export const optionPackTests = async (chai, config, expect, store) => {
             expect(res.status).to.equal(201)
             expect(res.body.result).to.equal(`created`)
             for (const [key, val] of Object.entries(data[auth])) {
-              if (!['options', 'img', 'test'].includes(key)) {
+              if (!['options', 'test'].includes(key)) {
                 expect(JSON.stringify(res.body.optionPack[key])).to.equal(JSON.stringify(val))
               }
             }

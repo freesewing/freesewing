@@ -13,7 +13,7 @@ export const DefaultLayout = ({ children = [], pageTitle = false }) => (
 
     <BaseLayoutWide>
       {pageTitle && (
-        <div className="xl:pl-4 md:pt-8">
+        <div className="xl:pl-4">
           <Breadcrumbs />
           <h1 className="break-words">{pageTitle}</h1>
         </div>

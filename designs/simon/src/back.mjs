@@ -34,7 +34,7 @@ function simonBack({
   Snippet,
   snippets,
   complete,
-  paperless,
+  utils,
   macro,
   options,
   part,
@@ -204,14 +204,19 @@ function simonBack({
         .line(points.bballStart)
         .curve(points.bballCp1, points.bballCp2, points.bballEnd)
       break
-    case 'slashed':
-      macro('round', {
+    case 'slashed': {
+      // Macro will return the auto-generated IDs
+      const ids = macro('round', {
+        id: 'slash',
         from: points.hips,
         to: points.cbHem,
         via: points.hem,
         radius: points.hips.dist(points.hem) * options.hemCurve,
-        prefix: 'slash',
       })
+      // Create points from them with easy names
+      for (const id of ['start', 'cp1', 'cp2', 'end']) {
+        points[`slash${utils.capitalize(id)}`] = points[ids.points[id]].copy()
+      }
       paths.saBase = new Path()
         .move(points.hips)
         .curve(points.hipsCp2, points.waistCp1, points.waist)
@@ -222,6 +227,7 @@ function simonBack({
         .line(points.slashEnd)
         .curve(points.slashCp2, points.slashCp1, points.slashStart)
       break
+    }
     default:
       paths.saBase = new Path()
         .move(points.hem)
@@ -239,167 +245,188 @@ function simonBack({
   paths.saBase.hide()
   paths.hemBase.hide()
   paths.seam = paths.hemBase.join(paths.saBase).close().attr('class', 'fabric')
-
-  // Complete pattern?
-  if (complete) {
-    delete snippets.armholePitchNotch
-    snippets.sleevecapNotch = new Snippet('notch', points.armholeYokeSplit)
-    macro('cutonfold', {
-      from: points.cbYoke,
-      to: points.cbHem,
-      grainline: true,
-    })
-    points.title = new Point(points.armhole.x / 4, points.armhole.y)
-    macro('title', { at: points.title, nr: 3, title: 'back' })
-    points.logo = new Point(points.armhole.x / 4, points.waistCp2.y)
-    snippets.logo = new Snippet('logo', points.logo)
-    if (options.boxPleat) {
-      paths.boxPleat = new Path()
-        .move(points.boxPleatLeft)
-        .line(points.boxPleatLeftBottom)
-        .move(points.boxPleatMid)
-        .line(points.boxPleatMidBottom)
-        .move(points.boxPleatRight)
-        .line(points.boxPleatRightBottom)
-        .attr('class', 'fabric stroke-sm dashed')
-    }
-
-    if (sa) {
-      paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
-      paths.hemSa = paths.hemBase.offset(sa * 3).attr('class', 'fabric sa')
-      paths.saConnect = new Path()
-        .move(points.cbHem)
-        .line(paths.hemSa.start())
-        .move(paths.hemSa.end())
-        .line(paths.sa.start())
-        .move(paths.sa.end())
-        .line(points.cbYoke)
-        .attr('class', 'fabric sa')
-      macro('banner', {
-        path: paths.hemSa,
-        text: ['hem', ': 3x', 'seamAllowance'],
-      })
-    }
+  if (sa) {
+    paths.sa = paths.saBase.offset(sa).attr('class', 'fabric sa')
+    paths.hemSa = paths.hemBase.offset(sa * 3).attr('class', 'fabric sa')
+    paths.saConnect = new Path()
+      .move(points.cbHem)
+      .line(paths.hemSa.start())
+      .move(paths.hemSa.end())
+      .line(paths.sa.start())
+      .move(paths.sa.end())
+      .line(points.cbYoke)
+      .attr('class', 'fabric sa')
   }
+  if (complete && options.boxPleat)
+    paths.boxPleat = new Path()
+      .move(points.boxPleatLeft)
+      .line(points.boxPleatLeftBottom)
+      .move(points.boxPleatMid)
+      .line(points.boxPleatMidBottom)
+      .move(points.boxPleatRight)
+      .line(points.boxPleatRightBottom)
+      .attr('class', 'fabric stroke-sm dashed')
 
-  // Paperless?
-  if (paperless) {
-    macro('rmad') // Removes paperless dimensions from brian
-    if (store.get('backDarts')) {
-      macro('vd', {
-        from: points.dartBottom,
-        to: points.dartCenterIn,
-        x: points.dartCenterIn.x - 15,
-      })
-      macro('vd', {
-        from: points.dartCenterIn,
-        to: points.dartTop,
-        x: points.dartCenterIn.x - 15,
-      })
-      macro('hd', {
-        from: points.dartCenterIn,
-        to: points.dartCenterOut,
-        y: points.dartBottom.y + 15,
-      })
-      macro('hd', {
-        from: points.dartCenterOut,
-        to: points.waist,
-      })
-      macro('hd', {
-        from: points.cbWaist,
-        to: points.dartCenterIn,
-      })
-    } else {
-      macro('hd', {
-        from: points.cbWaist,
-        to: points.waist,
-      })
-    }
-    let bottomRight
-    if (typeof points.slashEnd !== 'undefined') {
-      macro('hd', {
-        from: points.cbHem,
-        to: points.slashEnd,
-        y: points.cbHem.y + 15 + 3 * sa,
-      })
-      macro('vd', {
-        from: points.slashEnd,
-        to: points.slashStart,
-        x: points.slashStart.x + 15 + 3 * sa,
-      })
-      bottomRight = points.slashEnd
-    } else if (typeof points.bballStart !== 'undefined') {
-      macro('hd', {
-        from: points.cbHem,
-        to: points.bballStart,
-        y: points.cbHem.y + 15 + 3 * sa,
-      })
-      macro('vd', {
-        from: points.bballStart,
-        to: points.bballEnd,
-        x: points.hips.x + 15 + sa,
-      })
-      bottomRight = points.bballStart
-    } else bottomRight = points.hem
+  /*
+   * Annotations
+   */
+
+  // Notches
+  delete snippets.armholePitchNotch
+  snippets.sleevecapNotch = new Snippet('notch', points.armholeYokeSplit)
+
+  // Cutonfold
+  macro('cutonfold', {
+    from: points.cbYoke,
+    to: points.cbHem,
+    grainline: true,
+  })
+
+  // Title
+  points.title = new Point(points.armhole.x / 4, points.armhole.y)
+  macro('title', { at: points.title, nr: 3, title: 'back' })
+
+  // Logo
+  points.logo = new Point(points.armhole.x / 4, points.waistCp2.y)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  // Dimensions
+  macro('rmad') // Removes all dimensions from brian
+  if (store.get('backDarts')) {
+    macro('vd', {
+      id: 'hDartBottom',
+      from: points.dartBottom,
+      to: points.dartCenterIn,
+      x: points.dartCenterIn.x - 15,
+    })
+    macro('vd', {
+      id: 'hDartTop',
+      from: points.dartCenterIn,
+      to: points.dartTop,
+      x: points.dartCenterIn.x - 15,
+    })
     macro('hd', {
-      from: points.cbHem,
-      to: points.hips,
-      y: points.cbHem.y + 30 + 3 * sa,
+      id: 'wDart',
+      from: points.dartCenterIn,
+      to: points.dartCenterOut,
+      y: points.dartBottom.y + 15,
     })
-    macro('vd', {
-      from: bottomRight,
-      to: points.hips,
-      x: points.hips.x + 30 + sa,
-    })
-    macro('vd', {
-      from: bottomRight,
+    macro('hd', {
+      id: 'wDartToWaistSide',
+      from: points.dartCenterOut,
       to: points.waist,
-      x: points.hips.x + 45 + sa,
     })
-    macro('vd', {
-      from: bottomRight,
-      to: points.armhole,
-      x: points.hips.x + 60 + sa,
+    macro('hd', {
+      id: 'wDartToCbWaist',
+      from: points.cbWaist,
+      to: points.dartCenterIn,
     })
-    if (options.roundBack > 0) {
-      macro('vd', {
-        from: points.armhole,
-        to: points.armholeYokeSplit,
-        x: points.armhole.x + 15 + sa,
-      })
-      macro('vd', {
-        from: points.armhole,
-        to: points.cbTop,
-        x: points.armhole.x + 30 + sa,
-      })
-      macro('hd', {
-        from: points.cbTop,
-        to: points.armholePitch,
-        y: points.cbTop.y - 15 - sa,
-      })
-      macro('hd', {
-        from: points.cbTop,
-        to: points.armholeYokeSplit,
-        y: points.cbTop.y - 30 - sa,
-      })
-    } else {
-      macro('vd', {
-        from: points.armhole,
-        to: points.armholePitch,
-        x: points.armhole.x + 15 + sa,
-      })
-      macro('hd', {
-        from: points.cbYoke,
-        to: points.armholePitch,
-        y: points.cbYoke.y - 15 - sa,
-      })
-    }
-    macro('vd', {
-      from: points.cbHem,
-      to: points.cbYoke,
-      x: points.cbHem.x - 15,
+  } else {
+    macro('hd', {
+      id: 'wAtWaist',
+      from: points.cbWaist,
+      to: points.waist,
     })
   }
+  let bottomRight
+  if (typeof points.slashEnd !== 'undefined') {
+    macro('hd', {
+      id: 'wCbHemToSlashStart',
+      from: points.cbHem,
+      to: points.slashEnd,
+      y: points.cbHem.y + 15 + 3 * sa,
+    })
+    macro('vd', {
+      id: 'hSlashCurve',
+      from: points.slashEnd,
+      to: points.slashStart,
+      x: points.slashStart.x + 15 + 3 * sa,
+    })
+    bottomRight = points.slashEnd
+  } else if (typeof points.bballStart !== 'undefined') {
+    macro('hd', {
+      id: 'wCbHemToBbalCurveStart',
+      from: points.cbHem,
+      to: points.bballStart,
+      y: points.cbHem.y + 15 + 3 * sa,
+    })
+    macro('vd', {
+      id: 'hBballCurve',
+      from: points.bballStart,
+      to: points.bballEnd,
+      x: points.hips.x + 15 + sa,
+    })
+    bottomRight = points.bballStart
+  } else bottomRight = points.hem
+  macro('hd', {
+    id: 'wAtHem',
+    from: points.cbHem,
+    to: points.hips,
+    y: points.cbHem.y + 30 + 3 * sa,
+  })
+  macro('vd', {
+    id: 'hHemToHips',
+    from: bottomRight,
+    to: points.hips,
+    x: points.hips.x + 30 + sa,
+  })
+  macro('vd', {
+    id: 'hHemToWaist',
+    from: bottomRight,
+    to: points.waist,
+    x: points.hips.x + 45 + sa,
+  })
+  macro('vd', {
+    id: 'hHemToArmhole',
+    from: bottomRight,
+    to: points.armhole,
+    x: points.hips.x + 60 + sa,
+  })
+  if (options.roundBack > 0) {
+    macro('vd', {
+      id: 'hArmholeToRoundBackYoke',
+      from: points.armhole,
+      to: points.armholeYokeSplit,
+      x: points.armhole.x + 15 + sa,
+    })
+    macro('vd', {
+      id: 'hARmholeToCbYoke',
+      from: points.armhole,
+      to: points.cbTop,
+      x: points.armhole.x + 30 + sa,
+    })
+    macro('hd', {
+      id: 'wCbYokeToArmholePitch',
+      from: points.cbTop,
+      to: points.armholePitch,
+      y: points.cbTop.y - 15 - sa,
+    })
+    macro('hd', {
+      id: 'wCbYokeToArmholeYokeSplit',
+      from: points.cbTop,
+      to: points.armholeYokeSplit,
+      y: points.cbTop.y - 30 - sa,
+    })
+  } else {
+    macro('vd', {
+      id: 'hArmholeToArmholePitch',
+      from: points.armhole,
+      to: points.armholePitch,
+      x: points.armhole.x + 15 + sa,
+    })
+    macro('hd', {
+      id: 'wAtYoke',
+      from: points.cbYoke,
+      to: points.armholePitch,
+      y: points.cbYoke.y - 15 - sa,
+    })
+  }
+  macro('vd', {
+    id: 'hFull',
+    from: points.cbHem,
+    to: points.cbYoke,
+    x: points.cbHem.x - 15,
+  })
 
   return part
 }

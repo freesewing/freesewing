@@ -2,4 +2,7 @@
 title: "Sweat à capuche Yuri"
 ---
 
-<PatternDocs pattern='yuri' />
+
+
+<DesignInfo design='yuri' docs />
+

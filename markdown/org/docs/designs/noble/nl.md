@@ -2,4 +2,7 @@
 title: "Noble bovenlichaam blok"
 ---
 
-<PatternDocs pattern='noble' />
+
+
+<DesignInfo design='noble' docs />
+

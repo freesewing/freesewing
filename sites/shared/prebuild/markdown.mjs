@@ -117,8 +117,10 @@ const mergeOrder = (titles, order, withSlug = false) => {
 const formatDate = (date, slug, lang) => {
   date = date.split('-')
   if (date.length === 1) date = date[0].split('.')
-  if (date.length === 1) console.log(`Could not format date ${date} from ${slug} (${lang})`)
-  else {
+  if (date.length === 1) {
+    if (date[0].length === 8) return date[0]
+    else console.log(`Could not format date ${date} from ${slug} (${lang})`)
+  } else {
     if (date[0].length === 4) return date.join('')
     else return date.reverse().join('')
   }
@@ -174,7 +176,7 @@ const loadBlog = async () => {
 }
 
 /*
- * Loads all showcase posts, titles and order
+ * Loads all showcase posts, titles, designs and order
  */
 const loadShowcase = async () => {
   const titles = await loadFolderFrontmatter('title', 'org', 'showcase')
@@ -207,7 +209,20 @@ const loadShowcase = async () => {
     }
   }
 
-  return { posts, meta }
+  /*
+   * Create list of showcase slugs per design
+   */
+  const designShowcases = {}
+  // Designs is the same for all languages, so only grab EN files
+  const designs = await loadFolderFrontmatter('designs', 'org', 'showcase', false, 'en')
+  for (const [slug, list] of Object.entries(designs.en)) {
+    for (const design of JSON.parse(list)) {
+      if (typeof designShowcases[design] === 'undefined') designShowcases[design] = []
+      designShowcases[design].push(slug.split('/').pop())
+    }
+  }
+
+  return { posts, meta, designShowcases }
 }
 
 /*
@@ -274,4 +289,5 @@ export const prebuildPosts = async (store) => {
   await writeFiles('newsletter', 'org', store.posts.newsletter)
   await writeFile('blog-meta', 'meta', 'org', store.posts.blog.meta)
   await writeFile('showcase-meta', 'meta', 'org', store.posts.showcase.meta)
+  await writeFile('design-examples', 'examples', 'org', store.posts.showcase.designShowcases)
 }

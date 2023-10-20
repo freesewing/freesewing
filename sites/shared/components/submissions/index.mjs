@@ -12,7 +12,7 @@ import { AuthWrapper } from 'shared/components/wrappers/auth/index.mjs'
 import { Loading } from 'shared/components/spinner.mjs'
 import { DisplayRow } from 'shared/components/account/shared.mjs'
 import { PageLink } from 'shared/components/link.mjs'
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import { Error404, ns as errNs } from 'shared/components/errors/404.mjs'
 import { TrashIcon } from 'shared/components/icons.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
@@ -199,7 +199,7 @@ export const CsetSubmission = ({ id }) => {
         {submission.height}
       </DisplayRow>
       <DisplayRow title={t('account:notes')} keyWidth="w-48">
-        <Markdown>{submission.notes}</Markdown>
+        <Mdx md={submission.notes} />
       </DisplayRow>
       <DisplayRow title={t('account:image')} keyWidth="w-48">
         <img src={cloudflareImageUrl({ type: 'w500', id: submission.img })} />

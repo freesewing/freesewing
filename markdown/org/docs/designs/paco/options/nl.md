@@ -2,4 +2,4 @@
 title: "Paco broek: Ontwerpopties"
 ---
 
-<PatternOptions pattern='paco' />
+<DesignOptions design='paco' />

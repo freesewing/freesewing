@@ -2,4 +2,7 @@
 title: "Breanna, ein Grundschnitt"
 ---
 
-<PatternDocs pattern='breanna' />
+
+
+<DesignInfo design='breanna' docs />
+

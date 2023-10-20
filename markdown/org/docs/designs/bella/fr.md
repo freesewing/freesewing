@@ -2,4 +2,7 @@
 title: "Buste de base Bella"
 ---
 
-<PatternDocs pattern='bella' />
+
+
+<DesignInfo design='bella' docs />
+

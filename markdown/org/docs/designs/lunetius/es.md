@@ -2,4 +2,7 @@
 title: "Lunetius, lacerna"
 ---
 
-<PatternDocs pattern='lunetius' />
+
+
+<DesignInfo design='lunetius' docs />
+

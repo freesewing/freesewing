@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import Link from 'next/link'
 import { useTheme } from 'shared/hooks/use-theme.mjs'
 import {

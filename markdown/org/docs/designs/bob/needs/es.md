@@ -1,5 +1,5 @@
 ---
-title: "Bob el Babero Lo que necesitas"
+title: "Bob the Bib: What You Need"
 ---
 
 Para hacer a Bob, necesitarás lo siguiente:

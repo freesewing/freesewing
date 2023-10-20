@@ -2,4 +2,4 @@
 title: "Aaron A-Shirt: Vereiste afmetingen"
 ---
 
-<PatternMeasurements pattern='aaron' />
+<DesignMeasurements design='aaron' />

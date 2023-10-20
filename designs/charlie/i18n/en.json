@@ -3,7 +3,7 @@
   "d": "Charlie is a chino trouser pattern.",
   "p": {
     "back": "Back",
-    "backPocket": "Back pocket",
+    "backPocketBag": "Back pocket bag",
     "backPocketFacing": "Back pocket facing",
     "backPocketInterfacing": "Back pocket interfacing",
     "backPocketWelt": "Back pocket welt",
@@ -11,12 +11,19 @@
     "flyExtension": "Fly extension",
     "flyFacing": "Fly facing",
     "front": "Front",
-    "frontPocket": "Front pocket",
+    "frontPocketBag": "Front pocket bag",
     "frontPocketFacing": "Front pocket facing",
     "waistband": "Waistband",
     "waistbandCurved": "Curved waistband"
   },
-  "s": {},
+  "s": {
+    "cutBeltloops.t": "The belt loops are not shown",
+    "cutBeltloops.d": "The **Belt loops** are {{{ count }}} rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long.",
+    "cutBackPocketInterfacing.t": "The back pocket interfacing is not shown",
+    "cutBackPocketInterfacing.d": "The **Back pocket interfacing** is a rectangular piece of fusible interfacing {{{ width }}} wide and {{{ length }}} long.",
+    "cutWaistband.t": "The waistband is not shown",
+    "cutWaistband.d": "The **Waistband** is a rectangular piece of fabric {{{ width }}} wide and {{{ length }}} long."
+  },
   "o": {
     "backPocketHorizontalPlacement": {
       "t": "Back pocket horizontal placement",
@@ -37,6 +44,14 @@
     "backPocketFacing": {
       "t": "Back pocket facing",
       "d": "Controls whether or not to include facing on the back pockets"
+    },
+    "backPocketFacingNo": {
+      "t": "Do not include back pocket facing",
+      "d": "Drafts a pattern that does not includes facing for the back pockets, showing the lining when peeking in the back ppcket opening."
+    },
+    "backPocketFacingYes": {
+      "t": "Include back pocket facing",
+      "d": "Drafts a pattern that includes facing for the back pockets"
     },
     "frontPocketSlantDepth": {
       "t": "Front pocket slant depth",

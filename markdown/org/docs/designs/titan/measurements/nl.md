@@ -2,4 +2,4 @@
 title: "Titan broekenblok: Vereiste afmetingen"
 ---
 
-<PatternMeasurements pattern='titan' />
+<DesignMeasurements design='titan' />

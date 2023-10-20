@@ -2,4 +2,7 @@
 title: Octoplushy, der plüschige Oktopus
 ---
 
-<PatternDocs pattern='octoplushy' />
+
+
+<DesignInfo design='octoplushy' docs />
+

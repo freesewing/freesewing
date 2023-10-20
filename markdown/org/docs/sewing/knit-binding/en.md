@@ -116,7 +116,7 @@ Obviously, that means your shoulder seam will cut through your binding which is 
 
 This way, there is no guessing how long your binding should be, and the binding seam sits where you want it to sit.
 
-> For detailed instructions, check [the Aaron documentation](/docs/patterns/aaron/)
+> For detailed instructions, check [the Aaron documentation](/docs/designs/aaron/instructions)
 
 ## Alternate method
 

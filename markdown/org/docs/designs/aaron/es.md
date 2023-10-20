@@ -1,5 +1,5 @@
 ---
-title: "Aaron, camiseta de tirantes"
+title: "Aaron A-Shirt: Designer Notes"
 ---
 
-<PatternDocs pattern='aaron' />
+<DesignInfo design='aaron' docs />

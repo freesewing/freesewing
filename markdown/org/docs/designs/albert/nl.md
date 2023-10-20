@@ -1,5 +1,7 @@
 ---
-title: "Albert schort"
+title: "Albert apron: Designer Notes"
 ---
 
-<PatternDocs pattern='albert' />
+
+
+<DesignInfo design='albert' docs />

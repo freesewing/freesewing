@@ -2,4 +2,4 @@
 title: "Pochette Lucy à nouer : Options de conception"
 ---
 
-<PatternOptions pattern='lucy' />
+<DesignOptions design='lucy' />

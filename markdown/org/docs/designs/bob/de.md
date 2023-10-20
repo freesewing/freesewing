@@ -2,4 +2,7 @@
 title: "Bob das Lätzchen"
 ---
 
-<PatternDocs pattern='bob' />
+
+
+<DesignInfo design='bob' docs />
+

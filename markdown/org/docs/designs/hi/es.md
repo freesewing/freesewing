@@ -2,4 +2,7 @@
 title: Hi shark plush toy
 ---
 
-<PatternDocs pattern='hi' />
+
+
+<DesignInfo design='hi' docs />
+

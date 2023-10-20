@@ -2,4 +2,7 @@
 title: "Hortensia, die Handtasche"
 ---
 
-<PatternDocs pattern='hortensia' />
+
+
+<DesignInfo design='hortensia' docs />
+

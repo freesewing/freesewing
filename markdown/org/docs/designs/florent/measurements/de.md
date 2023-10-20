@@ -2,4 +2,4 @@
 title: "Florent Flachmütze: Erforderliche Maße"
 ---
 
-<PatternMeasurements pattern='florent' />
+<DesignMeasurements design='florent' />

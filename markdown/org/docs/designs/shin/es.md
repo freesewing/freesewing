@@ -2,4 +2,7 @@
 title: "Shin, bañador"
 ---
 
-<PatternDocs pattern='shin' />
+
+
+<DesignInfo design='shin' docs />
+

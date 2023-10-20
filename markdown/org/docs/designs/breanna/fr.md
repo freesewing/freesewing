@@ -2,4 +2,7 @@
 title: "Haut Breanna"
 ---
 
-<PatternDocs pattern='breanna' />
+
+
+<DesignInfo design='breanna' docs />
+

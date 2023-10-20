@@ -1,6 +1,7 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 import { cloudflareImageUrl } from 'shared/utils.mjs'
-import { collection } from 'shared/hooks/use-design.mjs'
+import { collection } from 'site/hooks/use-design.mjs'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
@@ -10,7 +11,7 @@ import { useTranslation } from 'next-i18next'
 import { useDropzone } from 'react-dropzone'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Components
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import { ResetIcon, DocsIcon, UploadIcon } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
 import { isDegreeMeasurement } from 'config/measurements.mjs'
@@ -111,11 +112,12 @@ export const ButtonFrame = ({
   onClick, // onClick handler
   active, // Whether or not to render the button as active/selected
   accordion = false, // Set this to true to not set a background color when active
+  dense = false, // Use less padding
 }) => (
   <button
     className={`
     btn btn-ghost btn-secondary
-    w-full mt-2 py-4 h-auto content-start
+    w-full ${dense ? 'mt-1 py-0 btn-sm' : 'mt-2 py-4 h-auto content-start'}
     border-2 border-secondary text-left bg-opacity-20
     ${accordion ? 'hover:bg-transparent' : 'hover:bg-secondary hover:bg-opacity-10'}
     hover:border-secondary hover:border-solid hover:border-2
@@ -126,6 +128,39 @@ export const ButtonFrame = ({
   >
     {children}
   </button>
+)
+
+/*
+ * Input for integers
+ */
+export const NumberInput = ({
+  label, // Label to use
+  update, // onChange handler
+  valid, // Method that should return whether the value is valid or not
+  current, // The current value
+  original, // The original value
+  placeholder, // The placeholder text
+  docs = false, // Docs to load, if any
+  id = '', // An id to tie the input to the label
+  labelBL = false, // Bottom-Left label
+  labelBR = false, // Bottom-Right label
+  max = 0,
+  min = 220,
+  step = 1,
+}) => (
+  <FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
+    <input
+      id={id}
+      type="number"
+      placeholder={placeholder}
+      value={current}
+      onChange={(evt) => update(evt.target.value)}
+      className={`input w-full input-bordered ${
+        current === original ? 'input-secondary' : valid(current) ? 'input-success' : 'input-error'
+      }`}
+      {...{ max, min, step }}
+    />
+  </FormControl>
 )
 
 /*
@@ -440,7 +475,7 @@ export const MarkdownInput = ({
       </Tab>
       <Tab key="preview">
         <div className="flex flex-row items-center mt-4">
-          <Markdown>{current}</Markdown>
+          <Mdx md={current} />
         </div>
       </Tab>
     </Tabs>
@@ -461,7 +496,11 @@ export const MeasieInput = ({
   const units = imperial ? 'imperial' : 'metric'
 
   const [localVal, setLocalVal] = useState(
-    typeof original === 'undefined' ? original : measurementAsUnits(original, units)
+    typeof original === 'undefined'
+      ? original
+      : isDegree
+      ? Number(original)
+      : measurementAsUnits(original, units)
   )
   const [validatedVal, setValidatedVal] = useState(measurementAsUnits(original, units))
   const [valid, setValid] = useState(null)
@@ -469,7 +508,7 @@ export const MeasieInput = ({
   // Update onChange
   const localUpdate = (newVal) => {
     setLocalVal(newVal)
-    const parsedVal = parseDistanceInput(newVal, imperial)
+    const parsedVal = isDegree ? Number(newVal) : parseDistanceInput(newVal, imperial)
     if (parsedVal) {
       update(m, isDegree ? parsedVal : measurementAsMm(parsedVal, units))
       setValid(true)
@@ -501,7 +540,12 @@ export const MeasieInput = ({
    * See: https://github.com/facebook/react/issues/16554
    */
   return (
-    <FormControl label={t(m)} docs={docs} forId={id} labelBL={bottomLeftLabel}>
+    <FormControl
+      label={t(m) + (isDegree ? ' (°)' : '')}
+      docs={docs}
+      forId={id}
+      labelBL={bottomLeftLabel}
+    >
       <input
         id={id}
         type="number"

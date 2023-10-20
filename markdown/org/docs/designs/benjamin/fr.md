@@ -2,4 +2,7 @@
 title: "Nœud papillon Benjamin"
 ---
 
-<PatternDocs pattern='benjamin' />
+
+
+<DesignInfo design='benjamin' docs />
+

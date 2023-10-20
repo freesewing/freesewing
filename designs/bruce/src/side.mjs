@@ -10,7 +10,6 @@ function draftBruceSide({
   Path,
   paths,
   complete,
-  paperless,
   macro,
   utils,
   snippets,
@@ -45,7 +44,7 @@ function draftBruceSide({
   } else {
     // The circles are too far apart to intersect. Print a warning message
     // and compromise by placing the bottom left point at the midpoint.
-    log.warning('Unable to calculate a correct bottom left point on the side part.')
+    log.warn('Unable to calculate a correct bottom left point on the side part.')
     adjustment_warning = true
     points.bottomLeft = points.bottomRight.shiftFractionTowards(points.topLeft, 0.5)
   }
@@ -68,65 +67,96 @@ function draftBruceSide({
   paths.hemBase.hide()
   paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
 
+  if (sa)
+    paths.sa = paths.saBase
+      .offset(sa * -1)
+      .join(paths.hemBase.offset(sa * -2))
+      .close()
+      .attr('class', 'fabric sa')
+
+  /*
+   * Annotations
+   */
+
+  // Cut list
+  store.cutlist.addCut({ cut: 2, from: 'fabric' })
+
   // Anchor point for sampling
   points.anchor = points.topLeft
 
-  // Complete pattern?
+  // Title
+  points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+  macro('title', {
+    at: points.title.shift(90, 30),
+    nr: 3,
+    title: 'side',
+  })
+
+  // Grainline
+  macro('grainline', {
+    from: new Point(points.bottomRight.x / 2, points.bottomRight.y),
+    to: new Point(points.bottomRight.x / 2, points.topRight.y),
+  })
+
+  // Scalebox
+  macro('scalebox', { at: points.title.shift(-90, 40) })
+
+  // Notches
+  snippets.frontNotch = new Snippet(
+    'notch',
+    points.topRight.shiftTowards(points.bottomRight, store.get('frontNotch'))
+  )
+  snippets.backNotch = new Snippet(
+    'bnotch',
+    points.topLeft.shiftFractionTowards(points.bottomLeft, 0.5)
+  )
+
   if (complete) {
-    points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    macro('title', {
-      at: points.title.shift(90, 30),
-      nr: 3,
-      title: 'side',
+    paths.backNote = new Path().move(points.bottomLeft).line(points.topLeft).addClass('hidden')
+    paths.frontNote = new Path().move(points.bottomRight).line(points.topRight).addClass('hidden')
+    macro('banner', {
+      id: 'back',
+      path: paths.backNote,
+      text: '&',
+      dy: 7,
+      classes: 'text-sm fill-note center',
     })
-    macro('scalebox', { at: points.title.shift(-90, 40) })
-    if (sa) {
-      paths.sa = paths.saBase
-        .offset(sa * -1)
-        .join(paths.hemBase.offset(sa * -2))
-        .close()
-        .attr('class', 'fabric sa')
-    }
-    macro('grainline', {
-      from: new Point(points.bottomRight.x / 2, points.bottomRight.y),
-      to: new Point(points.bottomRight.x / 2, points.topRight.y),
+    macro('banner', {
+      id: 'front',
+      path: paths.frontNote,
+      text: '#',
+      classes: 'text-sm fill-note center',
     })
-    snippets.frontNotch = new Snippet(
-      'notch',
-      points.topRight.shiftTowards(points.bottomRight, store.get('frontNotch'))
-    )
-    snippets.backNotch = new Snippet(
-      'bnotch',
-      points.topLeft.shiftFractionTowards(points.bottomLeft, 0.5)
-    )
   }
 
-  // Paperless?
-  if (paperless) {
-    macro('vd', {
-      from: points.bottomLeft,
-      to: points.topLeft,
-      x: points.topLeft.x - 15 - sa,
-    })
-    macro('vd', {
-      from: points.bottomRight,
-      to: points.topRight,
-      x: points.topRight.x + 15 + sa,
-    })
-    macro('hd', {
-      from: points.topLeft,
-      to: points.topRight,
-      y: points.topLeft.y - 15 - sa,
-    })
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.bottomRight,
-      y: points.bottomLeft.y + 15 + sa,
-    })
-  }
+  // Dimensions?
+  macro('vd', {
+    id: 'hBack',
+    from: points.bottomLeft,
+    to: points.topLeft,
+    x: points.topLeft.x - 15 - sa,
+  })
+  macro('vd', {
+    id: 'hFront',
+    from: points.bottomRight,
+    to: points.topRight,
+    x: points.topRight.x + 15 + sa,
+  })
+  macro('hd', {
+    id: 'wWaist',
+    from: points.topLeft,
+    to: points.topRight,
+    y: points.topLeft.y - 15 - sa,
+  })
+  macro('hd', {
+    id: 'wHem',
+    from: points.bottomLeft,
+    to: points.bottomRight,
+    y: points.bottomLeft.y + 15 + sa,
+  })
 
   if (adjustment_warning) {
-    log.warning(
+    log.warn(
       'We were not able to generate the Side pattern piece correctly. ' +
         'Manual fitting and alteration of this and other pattern pieces ' +
         'are likely to be needed. ' +

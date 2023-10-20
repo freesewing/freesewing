@@ -4,7 +4,7 @@ import { useTranslation } from 'next-i18next'
 import { cloudflareImageUrl } from 'shared/utils.mjs'
 import { Loading } from 'shared/components/spinner.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const Author = ({ author = '' }) => {
   const { t } = useTranslation(['posts'])
@@ -24,9 +24,15 @@ export const Author = ({ author = '' }) => {
   if (profile === null) return <Loading />
   if (profile === false)
     return (
-      <Popout warning>
-        <h5>Unable to load author profile</h5>
-        <p>Please report this (FIXME: Add reporting capabilities)</p>
+      <Popout comment by="joost">
+        <h5 id="maker">We cannot link authors/makers to their FreeSewing accounts (yet)</h5>
+        <p>
+          This is a known issue that I decided not to block the v3 release for. I will take care of
+          this later.
+        </p>
+        <p>
+          If you are the author of this post, you can reach out so I can correctly attribute it.
+        </p>
       </Popout>
     )
 
@@ -64,7 +70,7 @@ export const Author = ({ author = '' }) => {
           }}
         />
         <div className="prose mdx">
-          <Markdown>{profile.bio}</Markdown>
+          <Mdx md={profile.bio} />
         </div>
       </div>
     </div>

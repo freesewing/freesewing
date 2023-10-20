@@ -2,4 +2,4 @@
 title: "Жилет вахід: Необхідні виміри"
 ---
 
-<PatternMeasurements pattern='wahid' />
+<DesignMeasurements design='wahid' />

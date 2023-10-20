@@ -84,7 +84,16 @@ lab:
   dev: *nextDev
   develop: *nextDev
   i18n: 'SITE=lab node --conditions=internal ../shared/prebuild/i18n-only.mjs'
-  e2e: &e2e 'yarn playwright test'
+  lint: *nextLint
+  prebuild: *sitePrebuild
+  start: 'cd ../org && yarn prebuild && cd - && yarn prebuild && yarn dev'
+
+sde:
+  build: *nextBuild
+  cibuild: 'yarn build'
+  dev: *nextDev
+  develop: *nextDev
+  i18n: 'SITE=sde node --conditions=internal ../shared/prebuild/i18n-only.mjs'
   lint: *nextLint
   prebuild: *sitePrebuild
   start: *nextStart

@@ -2,7 +2,7 @@
 title: "Hauteur de l'emmanchure"
 ---
 
-Cette option permet de contrôler la profondeur de l'emmanchure.
+Cette option contrôle la profondeur de l'emmanchure.
 
 ## Effet de cette option sur le motif
 

@@ -2,4 +2,7 @@
 title: "Penelope, falda de tubo"
 ---
 
-<PatternDocs pattern='penelope' />
+
+
+<DesignInfo design='penelope' docs />
+

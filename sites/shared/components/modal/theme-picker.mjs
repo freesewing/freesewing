@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { themes } from 'shared/themes/index.mjs'
 import { useTranslation } from 'next-i18next'
 import { useTheme } from 'shared/hooks/use-theme.mjs'

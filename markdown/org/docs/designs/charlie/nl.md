@@ -2,4 +2,7 @@
 title: "Charlie chinos"
 ---
 
-<PatternDocs pattern='charlie' />
+
+
+<DesignInfo design='charlie' docs />
+

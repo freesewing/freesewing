@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 import yaml from 'js-yaml'
 import { validateSettings } from './settings-validator.mjs'

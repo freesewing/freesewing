@@ -2,4 +2,7 @@
 title: "Блок благородного тіла"
 ---
 
-<PatternDocs pattern='noble' />
+
+
+<DesignInfo design='noble' docs />
+

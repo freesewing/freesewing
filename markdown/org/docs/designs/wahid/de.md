@@ -2,4 +2,7 @@
 title: "Wahid, die Weste"
 ---
 
-<PatternDocs pattern='wahid' />
+
+
+<DesignInfo design='wahid' docs />
+

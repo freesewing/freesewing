@@ -1,3 +1,5 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
+import { loadSettingsConfig as loadUiSettingsConfig } from 'shared/components/workbench/menus/ui-settings/config.mjs'
 import {
   DesignOptions,
   ns as designMenuNs,
@@ -8,11 +10,16 @@ import {
 } from 'shared/components/workbench/menus/core-settings/index.mjs'
 import { UiSettings, ns as uiNs } from 'shared/components/workbench/menus/ui-settings/index.mjs'
 import { useTranslation } from 'next-i18next'
-import { nsMerge } from 'shared/utils.mjs'
+import { patternNsFromPatternConfig, nsMerge } from 'shared/utils.mjs'
 import { SettingsIcon, OptionsIcon, DesktopIcon } from 'shared/components/icons.mjs'
 import { Accordion } from 'shared/components/accordion.mjs'
+import {
+  FlagsAccordionTitle,
+  FlagsAccordionEntries,
+} from 'shared/components/workbench/views/flags.mjs'
+import { collection } from 'site/hooks/use-design.mjs'
 
-export const ns = nsMerge(coreMenuNs, designMenuNs, uiNs)
+export const ns = nsMerge(coreMenuNs, designMenuNs, uiNs, collection)
 
 export const DraftMenu = ({
   design,
@@ -23,11 +30,11 @@ export const DraftMenu = ({
   update,
   language,
   account,
-  DynamicDocs,
   view,
   setView,
+  flags = false,
 }) => {
-  const { t } = useTranslation()
+  const { t } = useTranslation(nsMerge(ns, patternNsFromPatternConfig(patternConfig)))
   const control = account.control
   const menuProps = {
     design,
@@ -36,9 +43,9 @@ export const DraftMenu = ({
     update,
     language,
     account,
-    DynamicDocs,
     control,
   }
+  const uiSettingsConfig = loadUiSettingsConfig()
 
   const sections = [
     {
@@ -61,18 +68,26 @@ export const DraftMenu = ({
     },
   ]
 
-  return (
-    <Accordion
-      items={sections.map((section) => [
-        <>
-          <h5 className="flex flex-row gap-2 items-center justify-between w-full">
-            <span>{t(`${section.ns}:${section.name}.t`)}</span>
-            {section.icon}
-          </h5>
-          <p className="text-left">{t(`${section.ns}:${section.name}.d`)}</p>
-        </>,
-        section.menu,
-      ])}
-    />
+  const items = []
+  if (control >= uiSettingsConfig.kiosk.control && flags)
+    items.push([
+      <FlagsAccordionTitle flags={flags} key={1} />,
+      <FlagsAccordionEntries {...{ update, control, flags }} key={2} />,
+      'flags',
+    ])
+  items.push(
+    ...sections.map((section) => [
+      <>
+        <h5 className="flex flex-row gap-2 items-center justify-between w-full">
+          <span>{t(`${section.ns}:${section.name}.t`)}</span>
+          {section.icon}
+        </h5>
+        <p className="text-left">{t(`${section.ns}:${section.name}.d`)}</p>
+      </>,
+      section.menu,
+      section.name,
+    ])
   )
+
+  return <Accordion items={items} />
 }

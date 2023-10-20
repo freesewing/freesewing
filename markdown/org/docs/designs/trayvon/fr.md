@@ -2,4 +2,7 @@
 title: "Cravate Trayvon"
 ---
 
-<PatternDocs pattern='trayvon' />
+
+
+<DesignInfo design='trayvon' docs />
+

@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import colors from 'tailwindcss/colors'
 
 export const spectrum = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map(() => 'violet-400')
@@ -76,13 +77,13 @@ export const theme = {
 
   '--pattern-bg': colors.neutral['900'],
   '--pattern-fabric': colors.neutral['300'],
-  '--pattern-lining': colors.emerald['700'],
+  '--pattern-lining': colors.emerald['300'],
   '--pattern-interfacing': colors.neutral['500'],
-  '--pattern-canvas': colors.amber['700'],
-  '--pattern-various': colors.red['700'],
-  '--pattern-mark': colors.blue['700'],
-  '--pattern-contrast': colors.pink['600'],
-  '--pattern-note': colors.violet['600'],
+  '--pattern-canvas': colors.amber['300'],
+  '--pattern-various': colors.red['300'],
+  '--pattern-mark': colors.blue['300'],
+  '--pattern-contrast': colors.pink['300'],
+  '--pattern-note': colors.violet['300'],
 
   '--pattern-dev-0': colors.red['500'],
   '--pattern-dev-1': colors.green['500'],

@@ -7,7 +7,7 @@ import { useTranslation } from 'next-i18next'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 import { AuthWrapper } from 'shared/components/wrappers/auth/index.mjs'
-import { CuratedSets } from 'shared/components/curated-sets.mjs'
+import { CuratedSetsList } from 'shared/components/curated-sets.mjs'
 import { CsetSubmissions } from 'shared/components/submissions/index.mjs'
 
 // Translation namespaces used on this page
@@ -29,7 +29,7 @@ const CuratorPage = ({ page }) => {
           <h2>{t('curate:suggestedSets')}</h2>
           <CsetSubmissions />
           <h2>{t('curate:sets')}</h2>
-          <CuratedSets href={(id) => `/curate/sets/${id}`} />
+          <CuratedSetsList href={(id) => `/curate/sets/${id}`} />
         </div>
       </AuthWrapper>
     </PageWrapper>

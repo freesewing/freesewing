@@ -2,4 +2,7 @@
 title: Hi, der Hai
 ---
 
-<PatternDocs pattern='hi' />
+
+
+<DesignInfo design='hi' docs />
+

@@ -2,4 +2,7 @@
 title: "Brian body block"
 ---
 
-<PatternDocs pattern='brian' />
+
+
+<DesignInfo design='brian' docs />
+

@@ -11,12 +11,15 @@ import { Point } from './point.mjs'
  * @constructor
  * @param {string} def - The id of the snippet in the SVG defs section
  * @param {Point} anchor - The Point to anchor this Snippet on
+ * @param {boolean} force - Whether to force rendering of this snippet when complete is falsy (or not)
  * @return {Snippet} this - The Snippet instance
  */
-export function Snippet(def, anchor) {
+export function Snippet(def, anchor, force = false) {
   this.def = def
   this.anchor = anchor
   this.attributes = new Attributes()
+
+  if (force) this.attributes.set('data-force', 1)
 
   return this
 }
@@ -125,19 +128,17 @@ export function snippetsProxy(snippets, log) {
     set: (snippets, name, value) => {
       // Constructor checks
       if (value instanceof Snippet !== true)
-        log.warning(`\`snippets.${name}\` was set with a value that is not a \`Snippet\` object`)
+        log.warn(`\`snippets.${name}\` was set with a value that is not a \`Snippet\` object`)
       if (typeof value.def !== 'string')
-        log.warning(
-          `\`snippets.${name}\` was set with a \`def\` parameter that is not a \`string\``
-        )
+        log.warn(`\`snippets.${name}\` was set with a \`def\` parameter that is not a \`string\``)
       if (value.anchor instanceof Point !== true)
-        log.warning(
+        log.warn(
           `\`snippets.${name}\` was set with an \`anchor\` parameter that is not a \`Point\``
         )
       try {
         value.name = name
       } catch (err) {
-        log.warning(`Could not set \`name\` property on \`snippets.${name}\``)
+        log.warn(`Could not set \`name\` property on \`snippets.${name}\``)
       }
       return (snippets[name] = value)
     },

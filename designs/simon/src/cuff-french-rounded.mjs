@@ -7,40 +7,49 @@ export const draftRoundedFrenchCuff = ({
   Path,
   paths,
   complete,
-  paperless,
+  utils,
   macro,
   part,
 }) => {
   draftFrenchCuff(part)
   const height = store.get('cuffHeight')
-  macro('round', {
-    from: points.topRight,
-    to: points.bottomLeft,
-    via: points.topLeft,
-    radius: height / 3,
-    prefix: 'topLeft',
-  })
-  macro('round', {
-    from: points.topLeft,
-    to: points.bottomRight,
-    via: points.bottomLeft,
-    radius: height / 3,
-    prefix: 'bottomLeft',
-  })
-  macro('round', {
-    from: points.bottomLeft,
-    to: points.topRight,
-    via: points.bottomRight,
-    radius: height / 3,
-    prefix: 'bottomRight',
-  })
-  macro('round', {
-    from: points.bottomRight,
-    to: points.topLeft,
-    via: points.topRight,
-    radius: height / 3,
-    prefix: 'topRight',
-  })
+  // Macros will return the auto-generated IDs
+  const ids = {
+    topLeft: macro('round', {
+      id: 'topLeft',
+      from: points.topRight,
+      to: points.bottomLeft,
+      via: points.topLeft,
+      radius: height / 3,
+    }),
+    bottomLeft: macro('round', {
+      id: 'bottomLeft',
+      from: points.topLeft,
+      to: points.bottomRight,
+      via: points.bottomLeft,
+      radius: height / 3,
+    }),
+    bottomRight: macro('round', {
+      id: 'bottomRight',
+      from: points.bottomLeft,
+      to: points.topRight,
+      via: points.bottomRight,
+      radius: height / 3,
+    }),
+    topRight: macro('round', {
+      id: 'topRight',
+      from: points.bottomRight,
+      to: points.topLeft,
+      via: points.topRight,
+      radius: height / 3,
+    }),
+  }
+  // Create points from them with easy names
+  for (const side in ids) {
+    for (const id of ['start', 'cp1', 'cp2', 'end']) {
+      points[`${side}${utils.capitalize(id)}`] = points[ids[side].points[id]].copy()
+    }
+  }
 
   paths.seam = new Path()
     .move(points.topLeftEnd)
@@ -55,16 +64,12 @@ export const draftRoundedFrenchCuff = ({
     .close()
     .attr('class', 'fabric')
 
-  paths.fold = new Path().move(points.midLeft).line(points.midRight).attr('class', 'dotted')
+  if (complete)
+    paths.fold = new Path().move(points.midLeft).line(points.midRight).attr('class', 'dotted')
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-  // Complete pattern?
-  if (complete) {
-    decorateFrenchCuff(part)
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-  }
-
-  // Paperless?
-  if (paperless) paperlessFrenchCuff(part)
+  decorateFrenchCuff(part)
+  paperlessFrenchCuff(part)
 
   return part
 }

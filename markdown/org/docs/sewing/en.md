@@ -1,6 +1,5 @@
 ---
-title: Sewing
-order: 300
+title: Sewing Terminology
 ---
 
 <ReadMore list />

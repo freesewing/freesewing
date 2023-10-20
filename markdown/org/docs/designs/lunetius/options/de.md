@@ -2,4 +2,4 @@
 title: "Lunetius Lacerna: Gestaltungsmöglichkeiten"
 ---
 
-<PatternOptions pattern='lunetius' />
+<DesignOptions design='lunetius' />

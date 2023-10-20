@@ -7,9 +7,9 @@ import { back } from './back.mjs'
 import { front } from './front.mjs'
 import { waistband } from './waistband.mjs'
 import { waistbandCurved } from './waistband-curved.mjs'
-import { frontPocket } from './front-pocket.mjs'
+import { frontPocketBag } from './front-pocket-bag.mjs'
 import { frontPocketFacing } from './front-pocket-facing.mjs'
-import { backPocket } from './back-pocket.mjs'
+import { backPocketBag } from './back-pocket-bag.mjs'
 import { backPocketFacing } from './back-pocket-facing.mjs'
 import { backPocketInterfacing } from './back-pocket-interfacing.mjs'
 import { backPocketWelt } from './back-pocket-welt.mjs'
@@ -25,9 +25,9 @@ const Charlie = new Design({
     back,
     waistband,
     waistbandCurved,
-    frontPocket,
+    frontPocketBag,
     frontPocketFacing,
-    backPocket,
+    backPocketBag,
     backPocketFacing,
     backPocketInterfacing,
     backPocketWelt,
@@ -46,9 +46,9 @@ export {
   back,
   waistband,
   waistbandCurved,
-  frontPocket,
+  frontPocketBag,
   frontPocketFacing,
-  backPocket,
+  backPocketBag,
   backPocketFacing,
   backPocketInterfacing,
   backPocketWelt,

@@ -22,6 +22,6 @@ Das Bindeband wird durch die Hülsen in den Cups gefädelt und am Rücken mit si
 Das Bindeband und die Hülle an den Cups werden durch ein Band ersetzt, das mit Schlaufen im Rücken genäht wird.  
 Die Nackenbänder sind länger und überkreuzen sich im Rücken, gehen dann durch die Schlaufen im Band und werden dann miteinander verbunden.
 
-## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](bee_crossbackties_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+

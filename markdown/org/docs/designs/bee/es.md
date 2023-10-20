@@ -2,4 +2,7 @@
 title: "Bee, sujetador de bikini"
 ---
 
-<PatternDocs pattern='bee' />
+
+
+<DesignInfo design='bee' docs />
+

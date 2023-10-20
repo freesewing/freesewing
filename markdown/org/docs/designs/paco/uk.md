@@ -2,4 +2,7 @@
 title: "Штани Пако"
 ---
 
-<PatternDocs pattern='paco' />
+
+
+<DesignInfo design='paco' docs />
+

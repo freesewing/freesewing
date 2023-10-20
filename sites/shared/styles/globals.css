@@ -1,3 +1,5 @@
+/*  __SDEFILE__ - This file is a dependency for the stand-alone environment */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,7 +9,7 @@
 @layer components {
   /* Applied styles for common HTML tags */
   h1 {
-    @apply text-base-content text-4xl py-5 font-thin lg:text-6xl;
+    @apply text-base-content text-4xl py-5 font-light lg:text-6xl;
   }
   h2 {
     @apply text-base-content text-3xl pt-4 pb-3 m-0 font-light lg:text-4xl;
@@ -48,9 +50,11 @@
   }
 
   /* mdx styles */
-  .mdx a {
+  .md a:not(.btn),
+  .mdx a:not(.btn) {
     @apply underline decoration-2 text-secondary;
   }
+  .md a:hover,
   .mdx a:hover {
     @apply decoration-4;
   }
@@ -116,6 +120,12 @@
     padding: 8px;
     font-size: 110%;
     border-bottom: 2px solid hsl(var(--b3));
+  }
+
+  /* Padding on markdown paragraphs in flags */
+  .flag p {
+    padding: 0.25rem 0;
+    margin: 0;
   }
 
   /* FreeSewing SVG output styles */

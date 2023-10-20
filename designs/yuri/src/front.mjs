@@ -8,8 +8,6 @@ function yuriFront({
   Path,
   points,
   paths,
-  complete,
-  paperless,
   sa,
   options,
   measurements,
@@ -77,31 +75,37 @@ function yuriFront({
     .close()
     .attr('class', 'fabric')
 
-  // Complete?
-  if (complete) {
-    macro('grainline', {
-      from: points.s3CollarSplit,
-      to: new Point(points.s3CollarSplit.x, points.bottom.y),
-    })
-    snippets.buttonhole = new Snippet('buttonhole-start', points.button.shift(0, 25))
-      .attr('data-rotate', '90')
-      .attr('data-scale', '2.5')
-    snippets.button = new Snippet(
-      'button',
-      paths.buttonBase.shiftFractionAlong(0.146).shift(0, 30)
-    ).attr('data-scale', '3.3')
-
-    if (sa) {
-      paths.sa = paths.hemBase
-        .offset(3 * sa)
-        .join(paths.saBase.offset(sa))
-        .join(paths.buttonBase.offset(3 * sa))
-      paths.sa = paths.sa.line(paths.sa.start()).close().attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = paths.hemBase
+      .offset(3 * sa)
+      .join(paths.saBase.offset(sa))
+      .join(paths.buttonBase.offset(3 * sa))
+    paths.sa = paths.sa.line(paths.sa.start()).close().attr('class', 'fabric sa')
   }
 
-  // Paperless?
-  if (paperless) sharedDimensions(part, 'front')
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Grainline
+  macro('grainline', {
+    from: points.s3CollarSplit,
+    to: new Point(points.s3CollarSplit.x, points.bottom.y),
+  })
+
+  // Button(hole)
+  snippets.buttonhole = new Snippet('buttonhole-start', points.button.shift(0, 25))
+    .attr('data-rotate', '90')
+    .attr('data-scale', '2.5')
+  snippets.button = new Snippet(
+    'button',
+    paths.buttonBase.shiftFractionAlong(0.146).shift(0, 30)
+  ).attr('data-scale', '3.3')
+
+  // Dimensions
+  sharedDimensions(part, 'front')
 
   return part
 }

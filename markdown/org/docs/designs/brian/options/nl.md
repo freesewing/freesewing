@@ -2,7 +2,7 @@
 title: "Brian carrosserieblok: Ontwerpopties"
 ---
 
-<PatternOptions pattern='brian' />
+<DesignOptions design='brian' />
 
 ## De mouwkop begrijpen
 

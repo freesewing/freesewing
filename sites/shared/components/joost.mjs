@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 export const Joost = ({ className = 'w-32', stroke = 0 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

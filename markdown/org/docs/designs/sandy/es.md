@@ -2,4 +2,7 @@
 title: "Sandy, falda de vuelo"
 ---
 
-<PatternDocs pattern='sandy' />
+
+
+<DesignInfo design='sandy' docs />
+

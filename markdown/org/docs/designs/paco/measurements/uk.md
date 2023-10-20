@@ -2,4 +2,4 @@
 title: "Штани Пако: Необхідні мірки"
 ---
 
-<PatternMeasurements pattern='paco' />
+<DesignMeasurements design='paco' />

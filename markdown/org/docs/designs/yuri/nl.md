@@ -2,4 +2,7 @@
 title: "Yuri hoodie"
 ---
 
-<PatternDocs pattern='yuri' />
+
+
+<DesignInfo design='yuri' docs />
+

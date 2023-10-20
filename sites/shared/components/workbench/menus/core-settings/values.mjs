@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { ListValue, MmValue, PlainValue } from '../shared/values'
 
 const ScaleSettingValue = ({ current, config, changed }) => (
@@ -14,6 +15,7 @@ const OnlySettingValue = ({ current, config }) => (
 
 export const values = {
   complete: ListValue,
+  expand: ListValue,
   locale: ListValue,
   margin: MmValue,
   only: OnlySettingValue,

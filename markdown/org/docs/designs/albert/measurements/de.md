@@ -2,4 +2,4 @@
 title: "Albert Schürze: Erforderliche Maße"
 ---
 
-<PatternMeasurements pattern='albert' />
+<DesignMeasurements design='albert' />

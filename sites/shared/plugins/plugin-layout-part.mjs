@@ -1,4 +1,4 @@
-import { pluginAnnotations } from '@freesewing/plugin-annotations'
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 
 const name = 'Pages Plugin'
 const version = '1.0.0'
@@ -198,7 +198,6 @@ const basePlugin = ({
     },
   },
   macros: {
-    banner: pluginAnnotations.macros.banner,
     /** draft the pages */
     addPages: function (so, shorthand) {
       const [h, w] = so.size

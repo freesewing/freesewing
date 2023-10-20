@@ -2,4 +2,7 @@
 title: "Bella body block"
 ---
 
-<PatternDocs pattern='bella' />
+
+
+<DesignInfo design='bella' docs />
+

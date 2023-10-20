@@ -9,6 +9,8 @@ sabool.t: Nahtzugabe einbeziehen
 sabool.d: Legt fest, ob eine Nahtzugabe deinem Schnittmuster hinzugefügt werden soll
 complete.t: Details
 complete.d: Legt fest, wie detailliert das Schnittmuster dargestellt wird; entweder ein vollständiges Schnittmuster mit allen Details oder eine einfache Kontur der Schnittmusterteile
+expand.t: Expand
+expand.d: Controls efforts to save paper. Disable this to expand all pattern parts at the cost of using more space.
 only.t: Enthaltene Teile
 only.d: Hier kannst du genau festlegen, welche Teile des Musters in deinem Muster enthalten sein sollen.
 locale.t: Sprache
@@ -35,6 +37,10 @@ completeYes.t: Ein vollständiges Muster generieren
 completeYes.d: Dadurch wird ein vollständiges Muster mit allen Notationen, Linien und Markierungen erstellt. Verwende dies, wenn du dir nicht sicher bist, was du wählen sollst.
 completeNo.t: Erstelle einen Musterumriss
 completeNo.d: Erstelle nur die Umrisse der Musterteile. Verwende dies, wenn du einen Lasercutter verwenden möchtest oder andere spezielle Anforderungen hast.
+expandYes.t: Expand all pattern parts
+expandYes.d: This will generate a pattern where all pattern parts are drawn to their full size, even if they are simple rectangles.
+expandNo.t: Keep patterns parts compact where possible
+expandNo.d: This will draw a more dense representation of the pattern which includes all info without using up too much space & paper.
 paperlessNo.t: Erzeuge ein regelmäßiges Muster
 paperlessNo.d: Dadurch wird ein regelmäßiges Muster erzeugt, das du dann ausdrucken kannst.
 paperlessYes.t: Erstelle ein papierloses Muster

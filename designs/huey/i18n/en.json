@@ -10,7 +10,14 @@
     "sleeve": "Sleeve",
     "waistband": "Waistband"
   },
-  "s": {},
+  "s": {
+    "cutPocket.t": "The pocket is not shown",
+    "cutPocket.d": "The **Pocket** (4) is not shown, but you can trace it from the Front part (1), which has the pocket outline on it (not including seam allowance).",
+    "cutCuff.t": "The cuff is not shown",
+    "cutCuff.d": "The **Cuff** (7) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long.",
+    "cutWaistband.t": "The waistband is not shown",
+    "cutWaistband.d": "The **Waistband** (6) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long."
+  },
   "o": {
     "pocket": {
       "t": "Pocket",

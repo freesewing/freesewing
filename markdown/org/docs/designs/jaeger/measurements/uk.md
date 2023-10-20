@@ -2,4 +2,4 @@
 title: "Куртка \"Єгер\": Необхідні мірки"
 ---
 
-<PatternMeasurements pattern='jaeger' />
+<DesignMeasurements design='jaeger' />

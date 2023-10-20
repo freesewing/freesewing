@@ -8,7 +8,7 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 import { NavigationContext } from 'shared/context/navigation-context.mjs'
 // Components
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
 import { Error404, ns as ns404 } from 'shared/components/errors/404.mjs'
 import { PatternPreview } from 'shared/components/pattern/preview.mjs'
@@ -117,7 +117,7 @@ export const ManagePattern = ({ id = false }) => {
             <>
               <h2>{t('notes')}</h2>
               <div className="text-left px-4 border w-full">
-                <Markdown>{pattern.notes}</Markdown>
+                <Mdx md={pattern.notes} />
               </div>
             </>
           ) : null}
@@ -142,7 +142,7 @@ export const ManagePattern = ({ id = false }) => {
               {/* notes: Control level determines whether or not to show this */}
               {account.control >= conf.account.patterns.notes ? (
                 <EditRow title={t('notes')} field="notes" {...{ pattern, backend, t, refresh }}>
-                  <Markdown>{pattern.notes}</Markdown>
+                  <Mdx md={pattern.notes} />
                 </EditRow>
               ) : null}
             </>

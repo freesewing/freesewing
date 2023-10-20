@@ -2,4 +2,7 @@
 title: "Jupe cercle Sandy"
 ---
 
-<PatternDocs pattern='sandy' />
+
+
+<DesignInfo design='sandy' docs />
+

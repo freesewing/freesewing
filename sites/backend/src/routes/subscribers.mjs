@@ -16,5 +16,5 @@ export function subscribersRoutes(tools) {
   app.put('/subscriber', (req, res) => Subscriber.subscribeConfirm(req, res, tools))
 
   // Unsubscribe from newsletter
-  app.delete('/subscriber', (req, res) => Subscriber.unsubscribeConfirm(req, res, tools))
+  app.delete('/subscriber/:id/:ehash', (req, res) => Subscriber.unsubscribeConfirm(req, res, tools))
 }

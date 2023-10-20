@@ -2,4 +2,7 @@
 title: "Туніка Валбурга"
 ---
 
-<PatternDocs pattern='walburga' />
+
+
+<DesignInfo design='walburga' docs />
+

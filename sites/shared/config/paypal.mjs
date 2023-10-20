@@ -1,3 +1,5 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
+
 export const paypalConfig = {
   /*
    * This is the plan ID for FreeSewing Patron Subscriptions.

@@ -116,10 +116,10 @@ const NavIcons = ({ setModal, setSearch }) => {
   )
 }
 
-export const Header = ({ show }) => {
+export const Header = () => {
   const { setModal } = useContext(ModalContext)
   return (
-    <HeaderWrapper show={show}>
+    <HeaderWrapper>
       <div className="m-auto">
         <div className="p-0 flex flex-row gap-2 justify-between text-neutral-content items-center">
           {/* Non-mobile content */}

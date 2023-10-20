@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 /*
  * This React component is a long way from perfect, but it's a start for
  * handling custom layouts.
@@ -40,8 +41,6 @@
  *  Known issues
  *  - currently none
  *
- *  I've sort of left it at this because I'm starting to wonder if we should perhaps re-think
- *  how custom layouts are supported in the core. And I would like to discuss this with the core team.
  */
 import { useRef, useState, useEffect, useCallback } from 'react'
 import { generateStackTransform, getTransformedBounds } from '@freesewing/core'

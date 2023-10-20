@@ -2,4 +2,7 @@
 title: "Teagan, camiseta"
 ---
 
-<PatternDocs pattern='teagan' />
+
+
+<DesignInfo design='teagan' docs />
+

@@ -2,4 +2,4 @@
 title: "Bienen-Bikinioberteil: Design Optionen"
 ---
 
-<PatternOptions pattern='bee' />
+<DesignOptions design='bee' />

@@ -11,4 +11,4 @@ can provide the following configuration properties:
 - [`measurements` and `optionalMeasurements`](/reference/api/part/config/measurements) lists the part's required or optional measurements
 - [`options`](/reference/api/part/config/options) lists the part's options
 - [`plugins`](/reference/api/part/config/plugins) lists the part's required plugins
-
+- [`stack`](/reference/api/part/config/stack) assigns the part to a stack

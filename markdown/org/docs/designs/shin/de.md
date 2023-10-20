@@ -2,4 +2,7 @@
 title: "Shin, die Badehose"
 ---
 
-<PatternDocs pattern='shin' />
+
+
+<DesignInfo design='shin' docs />
+

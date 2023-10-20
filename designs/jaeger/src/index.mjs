@@ -16,6 +16,9 @@ import { topSleeve } from './topsleeve.mjs'
 import { underSleeve } from './undersleeve.mjs'
 import { innerPocketBag } from './innerpocketbag.mjs'
 import { innerPocketWelt } from './innerpocketwelt.mjs'
+import { chestPiece } from './chest-piece.mjs'
+import { frontFacing } from './front-facing.mjs'
+import { frontLining } from './front-lining.mjs'
 
 // Setup our new design
 const Jaeger = new Design({
@@ -23,6 +26,9 @@ const Jaeger = new Design({
   parts: [
     backBase,
     frontBase,
+    frontFacing,
+    frontLining,
+    chestPiece,
     side,
     collarStand,
     collar,
@@ -45,6 +51,9 @@ const i18n = mergeI18n([bentI18n, jaegerI18n])
 export {
   backBase,
   frontBase,
+  frontFacing,
+  frontLining,
+  chestPiece,
   side,
   collarStand,
   collar,

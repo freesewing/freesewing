@@ -2,4 +2,4 @@
 title: "Блок благородного тіла: Необхідні вимірювання"
 ---
 
-<PatternMeasurements pattern='noble' />
+<DesignMeasurements design='noble' />

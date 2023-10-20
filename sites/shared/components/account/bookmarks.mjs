@@ -11,7 +11,7 @@ import { PlusIcon, TrashIcon, LeftIcon } from 'shared/components/icons.mjs'
 import { PageLink, WebLink, Link } from 'shared/components/link.mjs'
 import { DisplayRow } from './shared.mjs'
 import { StringInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const ns = ['account', 'status']
 
@@ -47,10 +47,9 @@ export const NewBookmark = () => {
   const router = useRouter()
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
-  // FIXME: implement a solution for loading docs dynamically the is simple and work as expected
   const docs = {}
   for (const option of ['title', 'location', 'type']) {
-    docs[option] = <DynamicOrgDocs language={i18n.language} path={`site/bookmarks/${option}`} />
+    docs[option] = <DynamicMdx language={i18n.language} slug={`docs/site/bookmarks/${option}`} />
   }
 
   // State
@@ -202,33 +201,35 @@ export const Bookmarks = () => {
                 </tr>
               </thead>
               <tbody>
-                {bookmarks.map((bookmark, i) => (
-                  <tr key={i}>
-                    <td className="text-base font-medium">
-                      <input
-                        type="checkbox"
-                        checked={selected[bookmark.id] ? true : false}
-                        className="checkbox checkbox-secondary"
-                        onClick={() => toggleSelect(bookmark.id)}
-                      />
-                    </td>
-                    <td className="text-base font-medium">
-                      <PageLink href={`/account/bookmarks/${bookmark.id}`} txt={bookmark.title} />
-                    </td>
-                    <td className="text-base font-medium">
-                      <WebLink
-                        href={bookmark.url}
-                        txt={
-                          bookmark.url.length > 30
-                            ? bookmark.url.slice(0, 30) + '...'
-                            : bookmark.url
-                        }
-                      />
-                    </td>
-                    <td className="text-base font-medium"></td>
-                    <td className="text-base font-medium hidden md:block"></td>
-                  </tr>
-                ))}
+                {bookmarks
+                  .filter((bookmark) => bookmark.type === type)
+                  .map((bookmark, i) => (
+                    <tr key={i}>
+                      <td className="text-base font-medium">
+                        <input
+                          type="checkbox"
+                          checked={selected[bookmark.id] ? true : false}
+                          className="checkbox checkbox-secondary"
+                          onClick={() => toggleSelect(bookmark.id)}
+                        />
+                      </td>
+                      <td className="text-base font-medium">
+                        <PageLink href={`/account/bookmarks/${bookmark.id}`} txt={bookmark.title} />
+                      </td>
+                      <td className="text-base font-medium">
+                        <WebLink
+                          href={bookmark.url}
+                          txt={
+                            bookmark.url.length > 30
+                              ? bookmark.url.slice(0, 30) + '...'
+                              : bookmark.url
+                          }
+                        />
+                      </td>
+                      <td className="text-base font-medium"></td>
+                      <td className="text-base font-medium hidden md:block"></td>
+                    </tr>
+                  ))}
               </tbody>
             </table>
           </Fragment>

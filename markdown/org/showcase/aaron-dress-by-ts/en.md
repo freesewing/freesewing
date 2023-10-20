@@ -29,5 +29,5 @@ It's better to go a little longer than you expect, as it's easy to trim shorter 
 ![An approximation of the result of the modifications to change the Aaron A-shirt into an Aaron dress.](https://posts.freesewing.org/uploads/teagan_dress_481cb6b7b9.svg)
 
 ### Now's the easy part!
-You get to just follow the [assembly instructions for Aaron](https://freesewing.org/docs/patterns/aaron/instructions/), except with super long side seams. Before you hem your dress, try it on! I hemmed mine around ankle length, but experiment with hem depth. This is especially important if your fabric is stretchy or drapey, as it may stretch longer than you expect.
+You get to just follow the [assembly instructions for Aaron](/docs/designs/aaron/instructions/), except with super long side seams. Before you hem your dress, try it on! I hemmed mine around ankle length, but experiment with hem depth. This is especially important if your fabric is stretchy or drapey, as it may stretch longer than you expect.
 

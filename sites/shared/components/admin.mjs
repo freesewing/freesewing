@@ -10,7 +10,7 @@ import { useAccount } from 'shared/hooks/use-account.mjs'
 // Components
 import Link from 'next/link'
 import { Json } from 'shared/components/json.mjs'
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import { AccountRole } from 'shared/components/account/role.mjs'
 import { AccountStatus } from 'shared/components/account/status.mjs'
 import { Loading } from 'shared/components/spinner.mjs'
@@ -113,7 +113,7 @@ export const ShowUser = ({ user, button = null }) => (
         <div className="max-w-xs flex flex-col gap-2">{button}</div>
       </div>
       <div className="max-w-full truncate">
-        <Markdown>{user.bio}</Markdown>
+        <Mdx md={user.bio} />
       </div>
     </div>
   </div>

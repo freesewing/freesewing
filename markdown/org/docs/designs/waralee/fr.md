@@ -2,4 +2,7 @@
 title: "Pantalon portefeuille Waralee"
 ---
 
-<PatternDocs pattern='waralee' />
+
+
+<DesignInfo design='waralee' docs />
+

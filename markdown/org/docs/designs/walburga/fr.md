@@ -2,4 +2,7 @@
 title: "Tabard Walburga"
 ---
 
-<PatternDocs pattern='walburga' />
+
+
+<DesignInfo design='walburga' docs />
+

@@ -2,9 +2,11 @@
   "t": "Noble body block",
   "d": "Noble is a body block with prince(ess) seams",
   "p": {
+    "back": "Back",
     "backInside": "Back inside",
     "backOutside": "Back outside",
     "backPoints": "Back base",
+    "front": "Front",
     "frontInside": "Front inside",
     "frontOutside": "Front outside",
     "frontPoints": "Front base"
@@ -14,6 +16,14 @@
     "dartPosition": {
       "t": "Dart position",
       "d": "Controls whether to split at the shoulder or armhole"
+    },
+    "dartPosition.armhole": {
+      "t": "Dart position at the armhole",
+      "d": "This moves the prince(ss) seam to the armhole"
+    },
+    "dartPosition.shoulder": {
+      "t": "Dart position at the shoulder",
+      "d": "This moves the prince(ss) seam to the shoulder"
     },
     "chestEase": {
       "t": "Chest ease",
@@ -93,7 +103,7 @@
     },
     "fullChestEaseReduction": {
       "t": "Full chest ease reduction",
-      "d": "FIXME: Document this option"
+      "d": "Allows you to independently reduce the ease around the chest to make it fit tight(er) in that area"
     }
   }
 }

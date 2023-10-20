@@ -2,4 +2,7 @@
 title: "Светр Свен"
 ---
 
-<PatternDocs pattern='sven' />
+
+
+<DesignInfo design='sven' docs />
+

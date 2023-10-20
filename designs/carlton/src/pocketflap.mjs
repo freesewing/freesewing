@@ -1,10 +1,9 @@
 import { front } from './front.mjs'
 
 function draftCarltonPocketFlap({
-  paperless,
   sa,
   store,
-  complete,
+  utils,
   points,
   options,
   macro,
@@ -18,20 +17,29 @@ function draftCarltonPocketFlap({
   points.bottomLeft = new Point(points.topLeft.x, points.bottomRight.y)
   points.topRight = new Point(points.bottomRight.x, points.topLeft.y)
   if (options.pocketFlapRadius > 0) {
-    macro('round', {
-      from: points.topLeft,
-      to: points.bottomRight,
-      via: points.bottomLeft,
-      radius: store.get('pocketFlapRadius'),
-      prefix: 'roundLeft',
-    })
-    macro('round', {
-      from: points.bottomLeft,
-      to: points.topRight,
-      via: points.bottomRight,
-      radius: store.get('pocketFlapRadius'),
-      prefix: 'roundRight',
-    })
+    // Macros will return the auto-generated IDs
+    const ids = {
+      roundLeft: macro('round', {
+        id: 'roundLeft',
+        from: points.topLeft,
+        to: points.bottomRight,
+        via: points.bottomLeft,
+        radius: store.get('pocketFlapRadius'),
+      }),
+      roundRight: macro('round', {
+        id: 'roundRight',
+        from: points.bottomLeft,
+        to: points.topRight,
+        via: points.bottomRight,
+        radius: store.get('pocketFlapRadius'),
+      }),
+    }
+    // Create points from them with easy names
+    for (const side in ids) {
+      for (const id of ['start', 'cp1', 'cp2', 'end']) {
+        points[`${side}${utils.capitalize(id)}`] = points[ids[side].points[id]].copy()
+      }
+    }
 
     paths.seam = new Path()
       .move(points.topLeft)
@@ -45,51 +53,57 @@ function draftCarltonPocketFlap({
 
   paths.seam = paths.seam.line(points.topRight).line(points.topLeft).close().attr('class', 'fabric')
 
-  store.cutlist.addCut({ cut: 4 })
-  store.cutlist.addCut({ material: 'lmhCanvas' })
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-  if (complete) {
-    points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-    macro('title', {
-      at: points.title,
-      nr: 11,
-      title: 'pocketFlap',
+  /*
+   * Annotations
+   */
+
+  // Cut list
+  store.cutlist.addCut({ cut: 4, from: 'fabric' })
+  store.cutlist.addCut({ cut: 2, from: 'canvas' })
+
+  // Title
+  points.title = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+  macro('title', {
+    at: points.title,
+    nr: 11,
+    title: 'pocketFlap',
+    scale: 0.8,
+  })
+
+  // Grainline
+  macro('grainline', {
+    from: points.bottomLeft.shift(0, points.topRight.x / 5),
+    to: points.topLeft.shift(0, points.topRight.x / 5),
+  })
+
+  // Dimensions
+  macro('hd', {
+    from: points.topLeft,
+    to: points.topRight,
+    y: points.topLeft.y - sa - 15,
+  })
+  if (options.pocketFlapRadius > 0) {
+    macro('vd', {
+      id: 'hRoundedCorner',
+      from: points.roundRightStart,
+      to: points.roundRightEnd,
+      x: points.topRight.x + sa + 15,
     })
-
-    macro('grainline', {
-      from: points.bottomLeft.shift(0, points.topRight.x / 5),
-      to: points.topLeft.shift(0, points.topRight.x / 5),
+    macro('vd', {
+      id: 'hFull',
+      from: points.roundRightStart,
+      to: points.topRight,
+      x: points.topRight.x + sa + 30,
     })
-
-    if (sa) {
-      paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
-    }
-
-    if (paperless) {
-      macro('hd', {
-        from: points.topLeft,
-        to: points.topRight,
-        y: points.topLeft.y - sa - 15,
-      })
-      if (options.pocketFlapRadius > 0) {
-        macro('vd', {
-          from: points.roundRightStart,
-          to: points.roundRightEnd,
-          x: points.topRight.x + sa + 15,
-        })
-        macro('vd', {
-          from: points.roundRightStart,
-          to: points.topRight,
-          x: points.topRight.x + sa + 30,
-        })
-      } else {
-        macro('vd', {
-          from: points.bottomRight,
-          to: points.topRight,
-          x: points.topRight.x + sa + 15,
-        })
-      }
-    }
+  } else {
+    macro('vd', {
+      id: 'hFull',
+      from: points.bottomRight,
+      to: points.topRight,
+      x: points.topRight.x + sa + 15,
+    })
   }
 
   return part

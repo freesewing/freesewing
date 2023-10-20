@@ -2,4 +2,7 @@
 title: "Bolsillo con lazo Lucy"
 ---
 
-<PatternDocs pattern='lucy' />
+
+
+<DesignInfo design='lucy' docs />
+

@@ -15,6 +15,7 @@ import {
   beamsIntersect,
   beamIntersectsCurve,
   capitalize,
+  cbqc,
   circlesIntersect,
   curveEdge,
   curveIntersectsX,
@@ -37,6 +38,7 @@ import {
   splitCurve,
   stretchToScale,
   units,
+  goldenRatio,
 } from './utils.mjs'
 import { version } from '../data.mjs'
 
@@ -61,6 +63,7 @@ export {
   beamsIntersect,
   beamIntersectsCurve,
   capitalize,
+  cbqc,
   circlesIntersect,
   curveEdge,
   curveIntersectsX,
@@ -83,4 +86,5 @@ export {
   splitCurve,
   stretchToScale,
   units,
+  goldenRatio,
 }

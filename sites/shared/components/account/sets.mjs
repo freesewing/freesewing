@@ -1,8 +1,8 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 import { measurements } from 'config/measurements.mjs'
 import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
 import { freeSewingConfig as conf, controlLevels } from 'shared/config/freesewing.config.mjs'
-import { siteConfig } from 'site/site.config.mjs'
 import { isDegreeMeasurement } from 'config/measurements.mjs'
 import {
   shortDate,
@@ -12,7 +12,6 @@ import {
   capitalize,
   horFlexClasses,
 } from 'shared/utils.mjs'
-import orderBy from 'lodash.orderby'
 // Hooks
 import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
@@ -24,10 +23,8 @@ import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
 import { Popout } from 'shared/components/popout/index.mjs'
-import { Tag } from 'shared/components/tag.mjs'
 import { BackToAccountButton } from './shared.mjs'
 import { AnchorLink, PageLink, Link } from 'shared/components/link.mjs'
-import { V3Wip } from 'shared/components/v3-wip.mjs'
 import {
   OkIcon,
   NoIcon,
@@ -37,17 +34,15 @@ import {
   ResetIcon,
   PlusIcon,
   WarningIcon,
-  FilterIcon,
   CameraIcon,
   CsetIcon,
   BoolYesIcon,
   BoolNoIcon,
 } from 'shared/components/icons.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import Timeago from 'react-timeago'
 import { DisplayRow } from './shared.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
 import {
   StringInput,
   PassiveImageInput,
@@ -57,6 +52,8 @@ import {
   DesignDropdown,
   ns as inputNs,
 } from 'shared/components/inputs.mjs'
+import { BookmarkButton } from 'shared/components/bookmarks.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const ns = [inputNs, 'account', 'patterns', 'status', 'measurements', 'sets']
 
@@ -106,7 +103,11 @@ export const NewSet = () => {
 }
 
 export const MeasieVal = ({ val, m, imperial }) =>
-  isDegreeMeasurement(m) ? <span>{val}°</span> : <span>{formatMm(val, imperial)}</span>
+  isDegreeMeasurement(m) ? (
+    <span>{val}°</span>
+  ) : (
+    <span dangerouslySetInnerHTML={{ __html: formatMm(val, imperial) }}></span>
+  )
 
 export const MsetCard = ({
   set,
@@ -191,16 +192,6 @@ export const Mset = ({ id, publicOnly = false }) => {
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
   const { t, i18n } = useTranslation(ns)
-  // FIXME: implement a solution for loading docs dynamically the is simple and work as expected
-  const docs = {}
-  for (const option of ['name', 'units', 'public', 'notes', 'image']) {
-    docs[option] = <DynamicOrgDocs language={i18n.language} path={`site/sets/${option}`} />
-  }
-  // FIXME: implement a solution for loading docs dynamically the is simple and work as expected
-  const measieDocs = {}
-  for (const m of measurements) {
-    measieDocs[m] = <DynamicOrgDocs language={i18n.language} path={`measurements/${m}`} />
-  }
 
   // Context
   const { setModal } = useContext(ModalContext)
@@ -292,6 +283,11 @@ export const Mset = ({ id, publicOnly = false }) => {
     } else setLoadingStatus([true, 'backendError', true, false])
   }
 
+  const docs = {}
+  for (const option of ['name', 'units', 'public', 'notes', 'image']) {
+    docs[option] = <DynamicMdx language={i18n.language} slug={`docs/site/sets/${option}`} />
+  }
+
   const heading = (
     <>
       <div className="flex flex-wrap md:flex-nowrap flex-row gap-2 w-full">
@@ -317,6 +313,9 @@ export const Mset = ({ id, publicOnly = false }) => {
           ) : (
             <span></span>
           )}
+          {account.control > 2 && mset.userId === account.id ? (
+            <BookmarkButton slug={`sets/${mset.id}`} title={mset.name} type="set" thing="set" />
+          ) : null}
           <button
             onClick={() =>
               setModal(
@@ -332,7 +331,7 @@ export const Mset = ({ id, publicOnly = false }) => {
           </button>
           {!publicOnly && (
             <>
-              {account.control > 3 && mset.public ? (
+              {account.control > 2 ? (
                 <button
                   onClick={() => {
                     setSuggest(!suggest)
@@ -399,7 +398,7 @@ export const Mset = ({ id, publicOnly = false }) => {
             <h2>{t('measies')}</h2>
             {Object.entries(mset.measies).map(([m, val]) =>
               val > 0 ? (
-                <DisplayRow title={<MeasieVal m={m} val={val} />} key={m}>
+                <DisplayRow title={<MeasieVal {...{ m, val, imperial: mset.imperial }} />} key={m}>
                   <span className="font-medium">{t(m)}</span>
                 </DisplayRow>
               ) : null
@@ -414,7 +413,7 @@ export const Mset = ({ id, publicOnly = false }) => {
         </DisplayRow>
         {control >= controlLevels.sets.notes && (
           <DisplayRow title={t('notes')}>
-            <Markdown>{mset.notes}</Markdown>
+            <Mdx md={mset.notes} />
           </DisplayRow>
         )}
         {control >= controlLevels.sets.public && (
@@ -486,17 +485,6 @@ export const Mset = ({ id, publicOnly = false }) => {
           label={t('filterByDesign')}
           current={filter}
           firstOption={<option value="">{t('noFilter')}</option>}
-          docs={
-            <div className="max-w-prose">
-              <h2>
-                {t('measies')}: {t('filterByDesign')}
-              </h2>
-              <p>
-                If you have a specific design in mind, you can <b>filter by design</b> to only list
-                those measurements that are required for this design.
-              </p>
-            </div>
-          }
         />
       </div>
       {filterMeasurements().map((mplus) => {
@@ -507,12 +495,14 @@ export const Mset = ({ id, publicOnly = false }) => {
             id={`measie-${m}`}
             key={m}
             m={m}
-            docs={measieDocs[m]}
             imperial={mset.imperial}
             label={translated}
             current={mset.measies[m]}
             original={mset.measies[m]}
             update={updateMeasies}
+            docs={
+              <DynamicMdx language={i18n.language} slug={`docs/measurements/${m.toLowerCase()}`} />
+            }
           />
         )
       })}
@@ -527,9 +517,9 @@ export const Mset = ({ id, publicOnly = false }) => {
         update={setName}
         current={name}
         original={mset.name}
-        docs={docs.name}
         placeholder="Georg Cantor"
         valid={(val) => val && val.length > 0}
+        docs={docs.name}
       />
 
       {/* img: Control level determines whether or not to show this */}
@@ -540,8 +530,8 @@ export const Mset = ({ id, publicOnly = false }) => {
           label={t('image')}
           update={setImage}
           current={image}
-          docs={docs.image}
           valid={(val) => val.length > 0}
+          docs={docs.image}
         />
       ) : null}
 
@@ -552,7 +542,6 @@ export const Mset = ({ id, publicOnly = false }) => {
           id="set-public"
           label={t('public')}
           update={setIsPublic}
-          docs={docs.public}
           list={[
             {
               val: true,
@@ -579,6 +568,7 @@ export const Mset = ({ id, publicOnly = false }) => {
             },
           ]}
           current={isPublic}
+          docs={docs.public}
         />
       ) : null}
 
@@ -588,7 +578,6 @@ export const Mset = ({ id, publicOnly = false }) => {
         <ListInput
           id="set-units"
           label={t('units')}
-          docs={docs.units}
           update={setImperial}
           list={[
             {
@@ -613,6 +602,7 @@ export const Mset = ({ id, publicOnly = false }) => {
             },
           ]}
           current={imperial}
+          docs={docs.units}
         />
       ) : null}
 
@@ -623,9 +613,9 @@ export const Mset = ({ id, publicOnly = false }) => {
           id="set-notes"
           label={t('notes')}
           update={setNotes}
-          docs={docs.notes}
           current={notes}
           placeholder={t('mdSupport')}
+          docs={docs.notes}
         />
       ) : null}
       <button
@@ -700,9 +690,36 @@ export const Sets = () => {
 
   return (
     <div className="max-w-7xl xl:pl-4">
-      <p className="text-center md:text-right">
+      {sets.length > 0 ? (
+        <>
+          <p className="text-center md:text-right">
+            <Link
+              className="btn btn-primary capitalize w-full md:w-auto"
+              bottom
+              primary
+              href="/new/set"
+            >
+              <PlusIcon />
+              {t('newSet')}
+            </Link>
+          </p>
+          <div className="flex flex-row gap-2 border-b-2 mb-4 pb-4 mt-8 h-14 items-center">
+            <input
+              type="checkbox"
+              className="checkbox checkbox-secondary"
+              onClick={toggleSelectAll}
+              checked={sets.length === selCount}
+            />
+            {selCount ? (
+              <button className="btn btn-error" onClick={removeSelectedSets}>
+                <TrashIcon /> {selCount} {t('sets')}
+              </button>
+            ) : null}
+          </div>
+        </>
+      ) : (
         <Link
-          className="btn btn-primary capitalize w-full md:w-auto"
+          className="btn btn-primary capitalize w-full md:w-auto btn-lg"
           bottom
           primary
           href="/new/set"
@@ -710,20 +727,7 @@ export const Sets = () => {
           <PlusIcon />
           {t('newSet')}
         </Link>
-      </p>
-      <div className="flex flex-row gap-2 border-b-2 mb-4 pb-4 mt-8 h-14 items-center">
-        <input
-          type="checkbox"
-          className="checkbox checkbox-secondary"
-          onClick={toggleSelectAll}
-          checked={sets.length === selCount}
-        />
-        {selCount ? (
-          <button className="btn btn-error" onClick={removeSelectedSets}>
-            <TrashIcon /> {selCount} {t('sets')}
-          </button>
-        ) : null}
-      </div>
+      )}
       <div className="flex flex-row flex-wrap gap-2">
         {sets.map((set, i) => (
           <div
@@ -912,125 +916,81 @@ export const UserSetPicker = ({ design, t, href, clickHandler, size = 'lg' }) =>
   )
 }
 
-export const CuratedSetPicker = ({ design, href, clickHandler, size }) => {
+export const BookmarkedSetPicker = ({ design, clickHandler, t, size, href }) => {
   // Hooks
-  const backend = useBackend()
-  const { t, i18n } = useTranslation('sets')
-  const { language } = i18n
   const { control } = useAccount()
+  const backend = useBackend()
 
   // State
-  const [curatedSets, setCuratedSets] = useState([])
-  const [filter, setFilter] = useState([])
-  const [tags, setTags] = useState([])
+  const [sets, setSets] = useState({})
 
   // Effects
   useEffect(() => {
-    const getCuratedSets = async () => {
-      const result = await backend.getCuratedSets()
+    const getBookmarks = async () => {
+      const result = await backend.getBookmarks()
+      const loadedSets = {}
       if (result.success) {
-        const all = []
-        const allTags = new Set()
-        for (const set of result.data.curatedSets) {
-          all.push(set)
-          for (const tag of set[`tags${capitalize(language)}`]) allTags.add(tag)
+        for (const bookmark of result.data.bookmarks.filter(
+          (bookmark) => bookmark.type === 'set'
+        )) {
+          let set
+          try {
+            set = await backend.getSet(bookmark.url.slice(6))
+            if (set.success) {
+              const [hasMeasies] = hasRequiredMeasurements(
+                designMeasurements[design],
+                set.data.set.measies,
+                true
+              )
+              loadedSets[set.data.set.id] = { ...set.data.set, hasMeasies }
+            }
+          } catch (err) {
+            console.log(err)
+          }
         }
-        setCuratedSets(all)
-        setTags([...allTags])
       }
+      setSets(loadedSets)
     }
-    getCuratedSets()
-  }, [backend, language])
+    getBookmarks()
+  }, [])
 
-  const addFilter = (tag) => {
-    const newFilter = [...filter, tag]
-    setFilter(newFilter)
-  }
-
-  const removeFilter = (tag) => {
-    const newFilter = filter.filter((t) => t !== tag)
-    setFilter(newFilter)
-  }
-
-  const applyFilter = () => {
-    const newList = new Set()
-    for (const set of curatedSets) {
-      const setTags = []
-      for (const lang of siteConfig.languages) {
-        const key = `tags${capitalize(lang)}`
-        if (set[key]) setTags.push(...set[key])
-      }
-      let match = 0
-      for (const tag of filter) {
-        if (setTags.includes(tag)) match++
-      }
-      if (match === filter.length) newList.add(set)
-    }
-
-    return [...newList]
-  }
-
-  const list = applyFilter()
-
-  // Need to sort designs by their translated title
-  const translated = {}
-  for (const d of list) translated[t(`${d}.t`)] = d
+  const okSets = Object.values(sets).filter((set) => set.hasMeasies)
+  const lackingSets = Object.values(sets).filter((set) => !set.hasMeasies)
 
   return (
     <>
-      <h3 id="curatedsets">{t('account:curatedSets')}</h3>
-      <V3Wip />
-      {tags.map((tag) => (
-        <Tag onClick={() => addFilter(tag)} tag={tag} key={tag}>
-          {tag}
-        </Tag>
-      ))}
-      <div className="my-2 p-2 px-4 border rounded-lg bg-secondary bg-opacity-10 max-w-xl">
-        <div className="flex flex-row items-center justify-between gap-2">
-          <FilterIcon className="w-6 h-6 text-secondary" />
-          <span>
-            {list.length} / {curatedSets.length}
-          </span>
-          <button onClick={() => setFilter([])} className="btn btn-secondary btn-sm">
-            clear
-          </button>
+      {okSets.length > 0 && (
+        <div className="flex flex-row flex-wrap gap-2">
+          {okSets.map((set) => (
+            <MsetButton
+              {...{ set, control, design }}
+              onClick={clickHandler}
+              href={href}
+              requiredMeasies={designMeasurements[design]}
+              key={set.id}
+              size={size}
+            />
+          ))}
         </div>
-        {filter.map((tag) => (
-          <Tag onClick={() => removeFilter(tag)} color="success" hoverColor="error" key={tag}>
-            {tag}
-          </Tag>
-        ))}
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
-        {orderBy(list, ['name'], ['asc']).map((set) => (
-          <MsetButton
-            key={set.id}
-            {...{ set, control, design }}
-            href={href}
-            onClick={clickHandler}
-            requiredMeasies={measurements[design]}
-            language={i18n.language}
-            size={size}
-          />
-        ))}
-      </div>
-    </>
-  )
-}
-
-export const BookmarkedSetPicker = () => <V3Wip />
-
-export const SetPicker = ({ design, href = false, clickHandler = false, size = 'lg' }) => {
-  const { t, i18n } = useTranslation('sets')
-  const { language } = i18n
-
-  const pickerProps = { design, t, language, href, clickHandler, size }
-
-  return (
-    <>
-      <UserSetPicker {...pickerProps} />
-      <BookmarkedSetPicker {...pickerProps} />
-      <CuratedSetPicker {...pickerProps} />
+      )}
+      {lackingSets.length > 0 && (
+        <div className="my-4">
+          <Popout note compact>
+            {t('account:someSetsLacking')}
+          </Popout>
+          <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-2">
+            {lackingSets.map((set) => (
+              <MsetLink
+                {...{ set, control, design }}
+                onClick={clickHandler}
+                requiredMeasies={designMeasurements[design]}
+                key={set.id}
+                size={size}
+              />
+            ))}
+          </div>
+        </div>
+      )}
     </>
   )
 }
@@ -1131,10 +1091,7 @@ const SuggestCset = ({ mset, backend, setLoadingStatus, t }) => {
         <BoolYesIcon />
         {t('account:notes')}
       </h4>
-      <p>
-        {t('account:csetNotesMsg')}
-        {t('account:csetNotesMsg')}
-      </p>
+      <p>{t('account:csetNotesMsg')}</p>
       <Popout tip compact>
         {t('account:mdSupport')}
       </Popout>

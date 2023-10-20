@@ -2,4 +2,4 @@
 title: "Florent flat cap: Required Measurements"
 ---
 
-<PatternMeasurements pattern='florent' />
+<DesignMeasurements design='florent' />

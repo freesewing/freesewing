@@ -1,121 +1,228 @@
-const titleMacro = function (so, { points, scale, locale, store, part }) {
-  const prefix = so.prefix || ''
-  let overwrite = !so.append
+/*
+ * Defaults for the title macro
+ */
+const macroDefaults = {
+  align: 'left',
+  append: false,
+  cutlist: true,
+  dy: 8,
+  id: 'title',
+  force: false,
+  nr: 1,
+  rotation: 0,
+  scale: 1,
+  title: 'plugin-annotations:noName',
+  classes: {
+    cutlist: 'text-md fill-current',
+    date: 'text-sm fill-current',
+    for: 'fill-current font-bold',
+    name: 'fill-note',
+    nr: 'text-4xl fill-note font-bold',
+    title: 'text-lg fill-current font-bold',
+  },
+}
 
-  // Passing `false` will remove the title
-  if (so === false || overwrite) {
-    for (const id of [
-      `_${prefix}_titleNr`,
-      `_${prefix}_titleName`,
-      `_${prefix}_titlePattern`,
-      `_${prefix}_titleFor`,
-      `_${prefix}_exportDate`,
-    ])
-      delete points[id]
+/*
+ * The title macro
+ */
+const title = function (config, { Point, points, scale, locale, store, part, log, complete }) {
+  /*
+   * Don't add a title when complete is false, unless force is true
+   */
+  if (!complete && !config.force) return
 
-    if (so === false) return true
+  /*
+   * Merge macro defaults with user-provided config to create the macro config (mc)
+   */
+  const mc = {
+    ...macroDefaults,
+    ...config,
+    classes: macroDefaults.classes,
+  }
+  if (config.classes) mc.classes = { ...mc.classes, ...config.classes }
+
+  /*
+   * Take global scale setting into account
+   */
+  mc.scale = mc.scale * scale
+
+  /*
+   * Make sure mc.at is a Point so we can anchor the title
+   */
+  if (!mc.at || typeof mc.at.attr !== 'function') {
+    log.warn(`Title macro called without a valid anchor point. Anchoring title at (0,0).`)
+    mc.at = new Point(0, 0)
   }
 
-  const transform = function (anchor) {
-    const cx = anchor.x - so.scale * anchor.x
-    const cy = anchor.y - so.scale * anchor.y
-
-    return `matrix(${so.scale}, 0, 0, ${so.scale}, ${cx}, ${cy}) rotate(${so.rotation} ${anchor.x} ${anchor.y})`
-  }
-  let shift = 8
-  const nextPoint = (text, textClass, shiftAmt = shift) => {
-    const newPoint = so.at.shift(-90 - so.rotation, shiftAmt * so.scale).addText(text, textClass)
-    newPoint.attr('data-text-transform', transform(newPoint))
-    return newPoint
-  }
-  const defaults = {
-    scale: 1,
-    rotation: 0,
-    cutlist: true,
-    align: 'left',
+  /*
+   * Make sure mc.align is a valid alignment
+   */
+  if (!['left', 'right', 'center'].includes(mc.align)) {
+    log.warn(`Title macro called with invalid alignement (${mc.align}). Left-aligning title.`)
+    mc.align = 'left'
   }
 
-  so = { ...defaults, ...so }
-  so.scale = so.scale * scale
+  /*
+   * Calculate the transform only once
+   */
+  const transform =
+    'matrix(' +
+    `${mc.scale}, 0, 0, ${mc.scale}, ` +
+    `${mc.at.x - mc.scale * mc.at.x}, ` +
+    `${mc.at.y - mc.scale * mc.at.y}` +
+    `) rotate(${mc.rotation} ${mc.at.x} ${mc.at.y})`
 
-  const validAlignments = ['left', 'right', 'center']
-  const alignment = validAlignments.includes(so.align) ? ' ' + so.align : ' left'
+  /*
+   * Get the list of IDs
+   * Initialize the verticle cadence
+   */
+  const ids = store.generateMacroIds(['cutlist', 'date', 'for', 'name', 'nr', 'title'], mc.id)
 
-  points[`_${prefix}_titleNr`] = so.at
-    .clone()
-    .attr('data-text', so.nr, overwrite)
-    .attr('data-text-class', 'text-4xl fill-note font-bold' + alignment)
-    .attr('data-text-transform', transform(so.at))
+  let shift = mc.dy
 
-  if (so.title) {
-    points[`_${prefix}_titleName`] = nextPoint(
-      so.title,
-      'text-lg fill-current font-bold' + alignment
-    )
-    shift += 8
-  }
+  /*
+   * Title: nr
+   */
+  if (typeof mc.nr !== 'undefined') {
+    points[ids.nr] = mc.at
+      .clone()
+      .attr('data-text', mc.nr, mc.append ? false : true)
+      .attr('data-text-class', `${mc.classes.nr} ${mc.align}`)
+      .attr('data-text-transform', transform)
+      .attr('data-render-always', 1) // Render even when outside the part bounding box
+    store.set(['partNumbers', part.name], mc.nr)
+  } else delete ids.nr
 
-  // Cut List instructions
-  const partCutlist = store.get(['cutlist', part.name], null)
-  // if there's a cutlist and it should be included
-  if (so.cutlist && partCutlist?.materials) {
-    // get the default cutonfold
-    const cutonfold = partCutlist.cutOnFold
-    // each material
-    for (const material in partCutlist.materials) {
-      // each set of instructions
-      partCutlist.materials[material].forEach(({ cut, identical, bias, ignoreOnFold }, c) => {
-        // make a new point for this set of instructions
-        const cutPoint = nextPoint('plugin:cut', 'text-md fill-current' + alignment).addText(cut)
+  /*
+   * Title: title
+   */
+  if (mc.title) {
+    points[ids.title] = mc.at
+      .clone()
+      .shift(-90, shift)
+      .attr('data-text', mc.title, mc.append ? false : true)
+      .attr('data-text-class', `${mc.classes.title} ${mc.align}`)
+      .attr('data-text-transform', transform)
+      .attr('data-render-always', 1) // Render even when outside the part bounding box
+    shift += mc.dy
+    store.set(['partTitles', part.name], mc.title)
+  } else delete ids.title
 
-        // if they're not identical, add that to the point's text
-        if (!identical && cut > 1) cutPoint.addText('plugin:mirrored')
+  /*
+   * Title: cutlist
+   */
+  if (mc.cutlist) {
+    /*
+     * Get cutlist instructions from the store, only proceed if the list is available
+     */
+    const partCutlist = store.get(['cutlist', part.name], null)
+    if (partCutlist?.materials) {
+      /*
+       * Iterate over materials
+       */
+      for (const [material, instructions] of Object.entries(partCutlist.materials)) {
+        instructions.forEach(({ cut, identical, onBias, onFold }, c) => {
+          /*
+           * Create point
+           */
+          const id = `${ids.cutlist}_${material}_${c}`
+          ids[`cutlist_${material}_${c}`] = id
+          points[id] = mc.at
+            .clone()
+            .shift(-90, shift)
+            .attr('data-text', 'plugin-annotations:cut')
+            .attr('data-text-class', `${mc.classes.cutlist} ${mc.align}`)
+            .attr('data-text-transform', transform)
+            .attr('data-render-always', 1) // Render even when outside the part bounding box
+            .addText(cut)
+          shift += mc.dy
 
-        // if they should be cut on the fold add that, with bias or without
-        if (cutonfold && !ignoreOnFold)
-          cutPoint.addText(bias ? 'plugin:onFoldAndBias' : 'plugin:onFoldLower')
-        // otherwise if they should be on the bias, say so
-        else if (bias) cutPoint.addText('plugin:onBias')
+          /*
+           * Add instructions if parts are mirrored
+           */
+          if (!identical && cut > 1) points[id].addText('plugin-annotations:mirrored')
 
-        // add 'from' the material
-        cutPoint.addText('plugin:from').addText('plugin:' + material)
+          /*
+           * Add instructions if parts are cut on fold
+           */
+          if (onFold)
+            points[id].addText(
+              onBias ? 'plugin-annotations:onFoldAndBias' : 'plugin-annotations:onFold'
+            )
+          /*
+           * Add instructions if parts on on bias
+           */ else if (onBias) points[id].addText('plugin-annotations:onBias')
 
-        // save and shift
-        points[`_${prefix}_titleCut_${material}_${c}`] = cutPoint
-        shift += 8
-      })
+          /*
+           * Add 'from' (material) text
+           */
+          points[id].addText('plugin-annotations:from').addText('plugin-annotations:' + material)
+        })
+      }
     }
-  }
+  } else delete ids.cutlist
 
-  let name = store.data?.name || 'No Name'
-  name = name.replace('@freesewing/', '')
-  name += ' v' + (store.data?.version || 'No Version')
-  points[`_${prefix}_titlePattern`] = nextPoint(name, 'fill-note' + alignment)
-
-  if (store.data.for) {
-    shift += 8
-    points[`_${prefix}_titleFor`] = nextPoint(
-      `( ${store.data.for} )`,
-      'fill-current font-bold' + alignment
+  /*
+   * Title: Design name
+   */
+  points[ids.name] = mc.at
+    .clone()
+    .shift(-90, shift)
+    .attr(
+      'data-text',
+      `${(store.data?.name || 'plugin-annotations:noName').replace('@freesewing/', '')} v${
+        store.data?.version || 'plugin-annotations:noVersion'
+      }`
     )
-  }
-  shift += 6
-  const now = new Date()
-  let hours = now.getHours()
-  let mins = now.getMinutes()
-  if (hours < 10) hours = `0${hours}`
-  if (mins < 10) mins = `0${mins}`
-  const exportDate = now.toLocaleDateString(locale || 'en', {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'short',
-    day: 'numeric',
-  })
-  points[`_${prefix}_exportDate`] = nextPoint(
-    `${exportDate}@ ${hours}:${mins}`,
-    'text-sm' + alignment
-  )
+    .attr('data-text-class', `${mc.classes.name} ${mc.align}`)
+    .attr('data-text-transform', transform)
+    .attr('data-render-always', 1) // Render even when outside the part bounding box
+  shift += mc.dy
+
+  /*
+   * Title: For (measurements set)
+   */
+  if (store.data.for) {
+    points[ids.for] = mc.at
+      .shift(-90, shift)
+      .attr('data-text', `(${store.data.for})`)
+      .attr('data-text-class', `${mc.classes.for} ${mc.align}`)
+      .attr('data-text-transform', transform)
+      .attr('data-render-always', 1) // Render even when outside the part bounding box
+    shift += mc.dy
+  } else delete ids.for
+
+  /*
+   * Title: Date
+   */
+  points[ids.date] = mc.at
+    .shift(-90, shift)
+    .attr(
+      'data-text',
+      new Date().toLocaleString(locale || 'en', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'short',
+        day: 'numeric',
+      })
+    )
+    .attr('data-text-class', `${mc.classes.date} ${mc.align}`)
+    .attr('data-text-transform', transform)
+    .attr('data-render-always', 1) // Render even when outside the part bounding box
+
+  /*
+   * Store all IDs in the store so we can remove this macro with rmtitle
+   */
+  store.storeMacroIds(mc.id, { points: ids })
+
+  /*
+   * Returning ids is a best practice for FreeSewing macros
+   */
+  return store.getMacroIds(mc.id)
 }
 
 // Export macros
-export const titleMacros = { title: titleMacro }
+export const titleMacros = {
+  title,
+  rmtitle: (id = macroDefaults.id, { store, part }) => store.removeMacroNodes(id, 'title', part),
+}

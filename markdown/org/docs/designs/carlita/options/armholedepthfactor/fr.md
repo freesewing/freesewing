@@ -4,7 +4,7 @@ title: "Hauteur de l'emmanchure"
 
 ![Hauteur de l'emmanchure](./armholedepthfactor.svg)
 
-Cela permet de contrôler la profondeur de l'emmanchure qui, à son tour, influence la largeur de la manchette.
+Ceci contrôle la profondeur de l'emmanchure qui à son tour influe sur la largeur du tête de manche.
 
 ## Effet de cette option sur le motif
 

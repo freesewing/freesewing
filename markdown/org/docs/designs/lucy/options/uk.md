@@ -2,4 +2,4 @@
 title: "Кишеня на зав'язці Lucy: Варіанти дизайну"
 ---
 
-<PatternOptions pattern='lucy' />
+<DesignOptions design='lucy' />

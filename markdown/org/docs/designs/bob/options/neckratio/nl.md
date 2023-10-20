@@ -7,6 +7,6 @@ Bepaalt de grootte van de halsopening ten opzichte van de slabmaat. De slabmaat 
 - Verhoog het percentage om de halsopening wijder te maken.
 - Verlaag het percentage om de halsopening te vernauwen.
 
-## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](bob_neckratio_sample.svg "Effect van deze optie op het patroon")
+
+

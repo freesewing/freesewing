@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { useState, useEffect, useContext } from 'react'
 import { useSwipeable } from 'react-swipeable'
 import { ModalContext } from 'shared/context/modal-context.mjs'

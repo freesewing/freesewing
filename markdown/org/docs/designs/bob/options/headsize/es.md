@@ -8,6 +8,6 @@ In our tutorial (this bib is what we use in our tutorial to show people the rope
 
 Pero creemos que es un poco exagerado para el uso en el mundo real de nuestro sitio, así que lo hemos convertido en una opción.
 
-## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](bob_headsize_sample.svg "Efecto de esta opción en el patrón")
+
+

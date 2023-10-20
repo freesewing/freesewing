@@ -2,4 +2,7 @@
 title: "Bloc de corps Noble"
 ---
 
-<PatternDocs pattern='noble' />
+
+
+<DesignInfo design='noble' docs />
+

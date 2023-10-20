@@ -2,4 +2,7 @@
 title: "Плавки Шін"
 ---
 
-<PatternDocs pattern='shin' />
+
+
+<DesignInfo design='shin' docs />
+

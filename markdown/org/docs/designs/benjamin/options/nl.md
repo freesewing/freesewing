@@ -2,4 +2,4 @@
 title: "Benjamin vlinderdas: Ontwerpopties"
 ---
 
-<PatternOptions pattern='benjamin' />
+<DesignOptions design='benjamin' />

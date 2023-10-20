@@ -2,4 +2,7 @@
 title: "Bee, das Bikini-Oberteil"
 ---
 
-<PatternDocs pattern='bee' />
+
+
+<DesignInfo design='bee' docs />
+

@@ -2,4 +2,7 @@
 title: "Huey Hoodie"
 ---
 
-<PatternDocs pattern='huey' />
+
+
+<DesignInfo design='huey' docs />
+

@@ -2,7 +2,7 @@
 title: "Bloc de carrosserie Brian : Options de conception"
 ---
 
-<PatternOptions pattern='brian' />
+<DesignOptions design='brian' />
 
 ## Comprendre la tête de manche
 

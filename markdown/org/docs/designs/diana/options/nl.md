@@ -2,4 +2,4 @@
 title: "Diana gedrapeerde top: Ontwerpopties"
 ---
 
-<PatternOptions pattern='diana' />
+<DesignOptions design='diana' />

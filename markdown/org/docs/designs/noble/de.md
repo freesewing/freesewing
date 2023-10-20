@@ -2,4 +2,7 @@
 title: "Noble, ein Grundschnitt"
 ---
 
-<PatternDocs pattern='noble' />
+
+
+<DesignInfo design='noble' docs />
+

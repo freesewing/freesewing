@@ -1,13 +1,13 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { Fragment } from 'react'
 import { ns as optionsNs } from './options.mjs'
 import { ns as measieNs } from './measurements.mjs'
 import { Accordion } from 'shared/components/accordion.mjs'
 import { useTranslation } from 'next-i18next'
 import { nsMerge } from 'shared/utils.mjs'
-import { OptionsIcon, MeasieIcon, CommunityIcon } from 'shared/components/icons.mjs'
+import { OptionsIcon, MeasieIcon } from 'shared/components/icons.mjs'
 import { ListInput } from 'shared/components/inputs.mjs'
 import { optionsMenuStructure } from 'shared/utils.mjs'
-import { V3Wip } from 'shared/components/v3-wip.mjs'
 
 export const ns = nsMerge('workbench', optionsNs, measieNs)
 
@@ -26,15 +26,7 @@ const flattenOptions = (options, list = false, path = []) => {
 
 const spacer = <span className="px-2 opacity-50">/</span>
 
-export const TestMenu = ({
-  design,
-  patternConfig,
-  settings,
-  update,
-  //language,
-  //account,
-  //DynamicDocs,
-}) => {
+export const TestMenu = ({ design, patternConfig, settings, update }) => {
   const { t } = useTranslation(ns)
 
   const allOptions = flattenOptions(patternConfig.options)
@@ -71,6 +63,7 @@ export const TestMenu = ({
             }}
             current={settings?.sample?.option}
           />,
+          'testOptions',
         ],
         [
           <Fragment key="a">
@@ -78,7 +71,7 @@ export const TestMenu = ({
               <span>{t('workbench:testMeasurements')}</span>
               <MeasieIcon className="w-8 h-8" />
             </h5>
-            <p>{t('workbench:testOptionsDesc')}</p>
+            <p className="text-left">{t('workbench:testMeasurementsDesc')}</p>
           </Fragment>,
           <ListInput
             key="b"
@@ -92,17 +85,20 @@ export const TestMenu = ({
             }}
             current={settings?.sample?.measurement}
           />,
+          'testMeasurements',
         ],
-        [
-          <Fragment key="a">
-            <h5 className="flex flex-row gap-2 items-center justify-between w-full">
-              <span>{t('workbench:testSets')}</span>
-              <CommunityIcon className="w-8 h-8" />
-            </h5>
-            <p>{t('workbench:testSetsDesc')}</p>
-          </Fragment>,
-          <V3Wip key="b" />,
-        ],
+        // FIXME: Implement this once v3 is ready
+        //[
+        //  <Fragment key="a">
+        //    <h5 className="flex flex-row gap-2 items-center justify-between w-full">
+        //      <span>{t('workbench:testSets')}</span>
+        //      <CommunityIcon className="w-8 h-8" />
+        //    </h5>
+        //    <p>{t('workbench:testSetsDesc')}</p>
+        //  </Fragment>,
+        //  <V3Wip key="b" />,
+        //  'testSets',
+        //],
       ]}
     />
   )

@@ -3,10 +3,9 @@ import { sleeveVentLength, sleeveVentWidth } from './options.mjs'
 import { hidePresets } from '@freesewing/core'
 
 function jaegerTopSleeve({
-  paperless,
   sa,
+  store,
   utils,
-  complete,
   points,
   measurements,
   options,
@@ -104,115 +103,141 @@ function jaegerTopSleeve({
     .line(points.ventFoldRight)
     .attr('class', 'fabric lashed')
 
-  if (complete) {
-    macro('scalebox', { at: points.elbowCenter })
-    // Notches
-    macro('sprinkle', {
-      snippet: 'notch',
-      on: ['top', 'tsElbowLeft', 'elbowRight'],
-    })
-    // Title
-    points.title = points.tsLeftEdge.shiftFractionTowards(points.tsRightEdge, 0.5)
-    macro('title', {
-      at: points.title,
-      nr: 4,
-      title: 'topSleeve',
-    })
+  if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
 
-    // Grainline
-    macro('grainline', {
-      from: points.boxBottom,
-      to: points.top,
-    })
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut([
+    { cut: 2, from: 'fabric' },
+    { cut: 2, from: 'lining' },
+  ])
 
-    if (sa) paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
+  // Scalebox
+  macro('scalebox', { at: points.elbowCenter })
 
-    if (paperless) {
-      macro('ld', {
-        from: points.tsWristLeft,
-        to: points.tsWristRight,
-        d: 15,
-      })
-      macro('ld', {
-        from: points.tsWristLeft,
-        to: points.ventFoldRight,
-        d: 30,
-      })
-      macro('ld', {
-        from: points.hemLeft,
-        to: points.ventRight,
-        d: -15 - sa,
-      })
-      macro('ld', {
-        from: points.hemLeft,
-        to: points.tsWristLeft,
-        d: 15 + sa,
-      })
-      macro('ld', {
-        from: points.tsWristRight,
-        to: points.ventSlopeStart,
-        d: 15,
-      })
-      macro('ld', {
-        from: points.ventFoldRight,
-        to: points.ventSlopeEnd,
-        d: 15,
-      })
-      macro('ld', {
-        from: points.tsWristRight,
-        to: points.ventFoldRight,
-        d: -15,
-      })
-      macro('vd', {
-        from: points.ventRight,
-        to: points.top,
-        x: points.ventSlopeEnd.x + sa + 15,
-      })
-      macro('vd', {
-        from: points.tsWristLeft,
-        to: points.tsElbowLeft,
-        x: points.tsLeftEdge.x - sa - 15,
-      })
-      macro('vd', {
-        from: points.tsWristLeft,
-        to: points.tsLeftEdge,
-        x: points.tsLeftEdge.x - sa - 30,
-      })
-      macro('vd', {
-        from: points.tsLeftEdge,
-        to: points.top,
-        x: points.tsLeftEdge.x - sa - 30,
-      })
-      macro('vd', {
-        from: points.tsWristLeft,
-        to: points.top,
-        x: points.tsLeftEdge.x - sa - 45,
-      })
-      macro('ld', {
-        from: points.tsLeftEdge,
-        to: points.tsRightEdge,
-      })
-      macro('ld', {
-        from: points.tsElbowLeft,
-        to: points.elbowRight,
-      })
-      macro('hd', {
-        from: points.tsLeftEdge,
-        to: points.top,
-        y: points.top.y - sa - 15,
-      })
-      macro('hd', {
-        from: points.tsLeftEdge,
-        to: points.backPitchPoint,
-        y: points.top.y - sa - 30,
-      })
-      macro('hd', {
-        from: points.tsLeftEdge,
-        to: points.tsRightEdge,
-        y: points.top.y - sa - 45,
-      })
-    }
-  }
+  // Notches
+  macro('sprinkle', {
+    snippet: 'notch',
+    on: ['top', 'tsElbowLeft', 'elbowRight'],
+  })
+
+  // Title
+  points.title = points.tsLeftEdge.shiftFractionTowards(points.tsRightEdge, 0.5)
+  macro('title', {
+    at: points.title,
+    nr: 4,
+    title: 'topSleeve',
+  })
+
+  // Grainline
+  macro('grainline', {
+    from: points.boxBottom,
+    to: points.top,
+  })
+
+  // Dimensions
+  macro('ld', {
+    id: 'lWrist',
+    from: points.tsWristLeft,
+    to: points.tsWristRight,
+    d: 15,
+  })
+  macro('ld', {
+    id: 'lWristPlusVent',
+    from: points.tsWristLeft,
+    to: points.ventFoldRight,
+    d: 30,
+  })
+  macro('ld', {
+    id: 'lFoldoverWristPlusVent',
+    from: points.hemLeft,
+    to: points.ventRight,
+    d: -15 - sa,
+  })
+  macro('ld', {
+    id: 'hFoldoverCuff',
+    from: points.hemLeft,
+    to: points.tsWristLeft,
+    d: 15 + sa,
+  })
+  macro('ld', {
+    id: 'lVent',
+    from: points.tsWristRight,
+    to: points.ventSlopeStart,
+    d: 15,
+  })
+  macro('ld', {
+    id: 'lVentShort',
+    from: points.ventFoldRight,
+    to: points.ventSlopeEnd,
+    d: 15,
+  })
+  macro('ld', {
+    id: 'wVent',
+    from: points.tsWristRight,
+    to: points.ventFoldRight,
+    d: -15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.ventRight,
+    to: points.top,
+    x: points.ventSlopeEnd.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hInnerWristToElbow',
+    from: points.tsWristLeft,
+    to: points.tsElbowLeft,
+    x: points.tsLeftEdge.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hInnerWristToSleevecap',
+    from: points.tsWristLeft,
+    to: points.tsLeftEdge,
+    x: points.tsLeftEdge.x - sa - 30,
+  })
+  macro('vd', {
+    id: 'hSleevecap',
+    from: points.tsLeftEdge,
+    to: points.top,
+    x: points.tsLeftEdge.x - sa - 30,
+  })
+  macro('vd', {
+    id: 'hInnerWristToSleevecapTop',
+    from: points.tsWristLeft,
+    to: points.top,
+    x: points.tsLeftEdge.x - sa - 45,
+  })
+  macro('ld', {
+    id: 'wSleevecap',
+    from: points.tsLeftEdge,
+    to: points.tsRightEdge,
+  })
+  macro('ld', {
+    id: 'wAtElbow',
+    from: points.tsElbowLeft,
+    to: points.elbowRight,
+  })
+  macro('hd', {
+    id: 'wSleevecapLeft',
+    from: points.tsLeftEdge,
+    to: points.top,
+    y: points.top.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wSleevecap',
+    from: points.tsLeftEdge,
+    to: points.backPitchPoint,
+    y: points.top.y - sa - 30,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.tsLeftEdge,
+    to: points.tsRightEdge,
+    y: points.top.y - sa - 45,
+  })
 
   return part
 }

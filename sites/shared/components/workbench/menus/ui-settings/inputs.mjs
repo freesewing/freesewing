@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { ListInput } from '../shared/inputs'
 import { useControlState } from 'shared/components/account/control.mjs'
 
@@ -16,6 +17,7 @@ export const ControlSettingInput = (props) => {
 }
 
 export const inputs = {
-  renderer: ListInput,
   control: ControlSettingInput,
+  kiosk: ListInput,
+  renderer: ListInput,
 }

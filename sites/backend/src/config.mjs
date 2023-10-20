@@ -436,7 +436,7 @@ function randomEncryptionKey() {
   let key = false
   try {
     console.log(chalk.dim('Checking for prior auto-generated encryption key'))
-    key = readFileSync(filename, 'utf-8')
+    key = readFileSync(filename, 'utf-8').trim()
   } catch (err) {
     console.log(chalk.dim('No prior auto-generated encryption key found.'))
   }

@@ -2,4 +2,7 @@
 title: "Tiberius, die Tunica"
 ---
 
-<PatternDocs pattern='tiberius' />
+
+
+<DesignInfo design='tiberius' docs />
+

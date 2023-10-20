@@ -2,4 +2,4 @@
 title: "Corset Cathrin : Mesures requises"
 ---
 
-<PatternMeasurements pattern='cathrin' />
+<DesignMeasurements design='cathrin' />

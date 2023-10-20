@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { paypalConfig } from 'shared/config/paypal.mjs'
 import { useState } from 'react'
 import { useTranslation } from 'next-i18next'

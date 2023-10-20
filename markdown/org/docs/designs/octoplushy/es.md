@@ -2,4 +2,7 @@
 title: Octoplushy, el pulpo de peluche
 ---
 
-<PatternDocs pattern='octoplushy' />
+
+
+<DesignInfo design='octoplushy' docs />
+

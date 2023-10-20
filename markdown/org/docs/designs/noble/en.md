@@ -2,4 +2,7 @@
 title: "Noble body block"
 ---
 
-<PatternDocs pattern='noble' />
+
+
+<DesignInfo design='noble' docs />
+

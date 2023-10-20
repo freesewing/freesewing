@@ -27,7 +27,6 @@ export const patternTests = async (chai, config, expect, store) => {
             name: 'Just a test',
             notes: 'These are my notes',
             public: true,
-            set: store.account.sets.her.id,
             data: {
               some: 'value',
             },
@@ -39,7 +38,6 @@ export const patternTests = async (chai, config, expect, store) => {
             expect(res.body.result).to.equal(`created`)
             expect(typeof res.body.pattern?.id).to.equal('number')
             expect(res.body.pattern.userId).to.equal(store.account.id)
-            expect(res.body.pattern.setId).to.equal(store.account.sets.her.id)
             expect(res.body.pattern.design).to.equal('aaron')
             expect(res.body.pattern.public).to.equal(true)
             store.account.patterns[auth] = res.body.pattern
@@ -117,29 +115,6 @@ export const patternTests = async (chai, config, expect, store) => {
             expect(res.status).to.equal(200)
             expect(res.body.result).to.equal(`success`)
             expect(res.body.pattern.design).to.equal('aaron')
-            done()
-          })
-      })
-
-      it(`${store.icon('pattern', auth)} Should not update the set field (${auth})`, (done) => {
-        chai
-          .request(config.api)
-          .patch(`/patterns/${store.account.patterns[auth].id}/${auth}`)
-          .set(
-            'Authorization',
-            auth === 'jwt'
-              ? 'Bearer ' + store.account.token
-              : 'Basic ' +
-                  new Buffer(`${store.account.apikey.key}:${store.account.apikey.secret}`).toString(
-                    'base64'
-                  )
-          )
-          .send({ set: 1 })
-          .end((err, res) => {
-            expect(err === null).to.equal(true)
-            expect(res.status).to.equal(200)
-            expect(res.body.result).to.equal(`success`)
-            expect(res.body.pattern.setId).to.equal(store.account.sets.her.id)
             done()
           })
       })

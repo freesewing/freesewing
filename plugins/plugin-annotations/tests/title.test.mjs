@@ -20,31 +20,33 @@ describe('Title Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
+    // Note that we're not loading core plugins but the local plugin
     const Pattern = new Design({
       data: { name: 'testPattern', version: 99 },
       parts: [part],
+      noCorePlugins: true,
     })
     const pattern = new Pattern()
     pattern.draft().render()
-    let p = pattern.parts[0].test.points.__titleNr
+    let p = pattern.parts[0].test.points.__macro_title_title_nr
     expect(p.x).to.equal(-12)
     expect(p.y).to.equal(-34)
     expect(p.attributes.get('data-text')).to.equal('3')
     expect(p.attributes.get('data-text-class')).to.equal('text-4xl fill-note font-bold left')
     expect(p.attributes.get('data-text-x')).to.equal('-12')
     expect(p.attributes.get('data-text-y')).to.equal('-34')
-    p = pattern.parts[0].test.points.__titleName
+    p = pattern.parts[0].test.points.__macro_title_title_title
     expect(p.attributes.get('data-text')).to.equal('unitTest')
     expect(p.attributes.get('data-text-class')).to.equal('text-lg fill-current font-bold left')
     expect(p.attributes.get('data-text-x')).to.equal('-12')
     expect(p.attributes.get('data-text-y')).to.equal('-26')
-    p = pattern.parts[0].test.points.__titlePattern
+    p = pattern.parts[0].test.points.__macro_title_title_name
     expect(p.attributes.get('data-text')).to.equal('testPattern v99')
     expect(p.attributes.get('data-text-class')).to.equal('fill-note left')
     expect(p.attributes.get('data-text-x')).to.equal('-12')
     expect(p.attributes.get('data-text-y')).to.equal('-18')
-    p = pattern.parts[0].test.points.__exportDate
-    expect(p.attributes.get('data-text')).to.match(/^.+, .+ \d{1,2}, \d{4}@ \d\d:\d\d$/)
+    p = pattern.parts[0].test.points.__macro_title_title_date
+    expect(p.attributes.get('data-text')).to.include(', 202')
   })
 
   it('Should run the title macro with append flag', () => {
@@ -63,13 +65,15 @@ describe('Title Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
+    // Note that we're not loading core plugins but the local plugin
     const Pattern = new Design({
       data: { name: 'testPattern', version: 99 },
       parts: [part],
+      noCorePlugins: true,
     })
     const pattern = new Pattern()
     pattern.draft().render()
-    let p = pattern.parts[0].test.points.__titleNr
+    let p = pattern.parts[0].test.points.__macro_title_title_nr
     expect(p.x).to.equal(-12)
     expect(p.y).to.equal(-34)
     expect(p.attributes.get('data-text')).to.equal('# 3')
@@ -78,7 +82,7 @@ describe('Title Plugin Tests', () => {
     expect(p.attributes.get('data-text-y')).to.equal('-34')
   })
 
-  it('Should run the title macro with point prefix', () => {
+  it('Should run the title macro with a custom ID', () => {
     const part = {
       name: 'test',
       draft: ({ points, Point, macro, part }) => {
@@ -87,39 +91,41 @@ describe('Title Plugin Tests', () => {
           at: points.anchor,
           nr: 3,
           title: 'unitTest',
-          prefix: 'foo',
+          id: 'foo',
         })
 
         return part
       },
       plugins: [annotationsPlugin],
     }
+    // Note that we're not loading core plugins but the local plugin
     const Pattern = new Design({
       data: { name: 'testPattern', version: 99 },
       parts: [part],
+      noCorePlugins: true,
     })
     const pattern = new Pattern()
     pattern.draft().render()
-    let p = pattern.parts[0].test.points._foo_titleNr
+    let p = pattern.parts[0].test.points.__macro_title_foo_nr
     expect(p.x).to.equal(-12)
     expect(p.y).to.equal(-34)
     expect(p.attributes.get('data-text')).to.equal('3')
     expect(p.attributes.get('data-text-class')).to.equal('text-4xl fill-note font-bold left')
     expect(p.attributes.get('data-text-x')).to.equal('-12')
     expect(p.attributes.get('data-text-y')).to.equal('-34')
-    p = pattern.parts[0].test.points._foo_titleName
+    p = pattern.parts[0].test.points.__macro_title_foo_title
     expect(p.attributes.get('data-text')).to.equal('unitTest')
     expect(p.attributes.get('data-text-class')).to.equal('text-lg fill-current font-bold left')
     expect(p.attributes.get('data-text-x')).to.equal('-12')
     expect(p.attributes.get('data-text-y')).to.equal('-26')
-    p = pattern.parts[0].test.points._foo_titlePattern
+    p = pattern.parts[0].test.points.__macro_title_foo_name
     expect(p.attributes.get('data-text')).to.equal('testPattern v99')
     expect(p.attributes.get('data-text-class')).to.equal('fill-note left')
     expect(p.attributes.get('data-text-x')).to.equal('-12')
     expect(p.attributes.get('data-text-y')).to.equal('-18')
   })
 
-  it('Should run the title macro with valid align prefixes', () => {
+  it('Should run the title macro with custom alignment', () => {
     const part = {
       name: 'test',
       draft: ({ points, Point, macro, part }) => {
@@ -129,51 +135,45 @@ describe('Title Plugin Tests', () => {
           nr: 3,
           title: 'unitTest',
           align: 'left',
-          prefix: 'left',
+          id: 'left',
         })
         macro('title', {
           at: points.anchor,
           nr: 3,
           title: 'unitTest',
           align: 'right',
-          prefix: 'right',
+          id: 'right',
         })
         macro('title', {
           at: points.anchor,
           nr: 3,
           title: 'unitTest',
           align: 'center',
-          prefix: 'center',
+          id: 'center',
         })
 
         return part
       },
       plugins: [annotationsPlugin],
     }
+    // Note that we're not loading core plugins but the local plugin
     const Pattern = new Design({
       data: { name: 'testPattern', version: 99 },
       parts: [part],
+      noCorePlugins: true,
     })
     const pattern = new Pattern()
     pattern.draft().render()
-    let p = pattern.parts[0].test.points._left_titleNr
-    expect(p.attributes.get('data-text-class')).to.equal('text-4xl fill-note font-bold left')
-    p = pattern.parts[0].test.points._left_titleName
-    expect(p.attributes.get('data-text-class')).to.equal('text-lg fill-current font-bold left')
-    p = pattern.parts[0].test.points._left_titlePattern
-    expect(p.attributes.get('data-text-class')).to.equal('fill-note left')
-    p = pattern.parts[0].test.points._center_titleNr
-    expect(p.attributes.get('data-text-class')).to.equal('text-4xl fill-note font-bold center')
-    p = pattern.parts[0].test.points._center_titleName
-    expect(p.attributes.get('data-text-class')).to.equal('text-lg fill-current font-bold center')
-    p = pattern.parts[0].test.points._center_titlePattern
-    expect(p.attributes.get('data-text-class')).to.equal('fill-note center')
-    p = pattern.parts[0].test.points._right_titleNr
-    expect(p.attributes.get('data-text-class')).to.equal('text-4xl fill-note font-bold right')
-    p = pattern.parts[0].test.points._right_titleName
-    expect(p.attributes.get('data-text-class')).to.equal('text-lg fill-current font-bold right')
-    p = pattern.parts[0].test.points._right_titlePattern
-    expect(p.attributes.get('data-text-class')).to.equal('fill-note right')
+    for (const align of ['left', 'center', 'right']) {
+      let p = pattern.parts[0].test.points[`__macro_title_${align}_nr`]
+      expect(p.attributes.get('data-text-class')).to.equal(`text-4xl fill-note font-bold ${align}`)
+      p = pattern.parts[0].test.points[`__macro_title_${align}_name`]
+      expect(p.attributes.get('data-text-class')).to.equal(`fill-note ${align}`)
+      p = pattern.parts[0].test.points[`__macro_title_${align}_title`]
+      expect(p.attributes.get('data-text-class')).to.equal(
+        `text-lg fill-current font-bold ${align}`
+      )
+    }
   })
 
   it('Should run the title macro with an invalid align prefix', () => {
@@ -192,17 +192,21 @@ describe('Title Plugin Tests', () => {
       },
       plugins: [annotationsPlugin],
     }
+    // Note that we're not loading core plugins but the local plugin
     const Pattern = new Design({
       data: { name: 'testPattern', version: 99 },
       parts: [part],
+      noCorePlugins: true,
     })
     const pattern = new Pattern()
     pattern.draft().render()
-    let p = pattern.parts[0].test.points.__titleNr
-    expect(p.attributes.get('data-text-class')).to.equal('text-4xl fill-note font-bold left')
-    p = pattern.parts[0].test.points.__titleName
-    expect(p.attributes.get('data-text-class')).to.equal('text-lg fill-current font-bold left')
-    p = pattern.parts[0].test.points.__titlePattern
-    expect(p.attributes.get('data-text-class')).to.equal('fill-note left')
+    let p = pattern.parts[0].test.points
+    expect(p.__macro_title_title_nr.attributes.get('data-text-class')).to.equal(
+      'text-4xl fill-note font-bold left'
+    )
+    expect(p.__macro_title_title_title.attributes.get('data-text-class')).to.equal(
+      'text-lg fill-current font-bold left'
+    )
+    expect(p.__macro_title_title_name.attributes.get('data-text-class')).to.equal('fill-note left')
   })
 })

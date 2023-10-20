@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import React, { useContext } from 'react'
 import { useSwipeable } from 'react-swipeable'
 import { useHotkeys } from 'react-hotkeys-hook'

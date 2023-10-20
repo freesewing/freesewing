@@ -2,4 +2,7 @@
 title: "Боб Слюнявчик"
 ---
 
-<PatternDocs pattern='bob' />
+
+
+<DesignInfo design='bob' docs />
+

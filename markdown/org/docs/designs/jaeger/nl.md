@@ -2,4 +2,7 @@
 title: "Jaeger jasje"
 ---
 
-<PatternDocs pattern='jaeger' />
+
+
+<DesignInfo design='jaeger' docs />
+

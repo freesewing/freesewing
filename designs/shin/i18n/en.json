@@ -6,7 +6,10 @@
     "front": "Front",
     "waistband": "Waistband"
   },
-  "s": {},
+  "s": {
+    "cutWaistband.t": "The waistband is not shown",
+    "cutWaistband.d": "The **Waistband** (3) is a rectangular piece of fabric {{{ w }}} wide and {{{ l }}} long."
+  },
   "o": {
     "legReduction": {
       "t": "Leg reduction",

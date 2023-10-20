@@ -5,7 +5,14 @@
     "back": "Back",
     "frontSideDart": "Front"
   },
-  "s": {},
+  "s": {
+    "cbSeamBustBelowWaist.t": "Bust height compromised at center back",
+    "cbSeamBustBelowWaist.d": "No solution was found to place the bust point above the waist line on the center back seam. As a compromise, we've used the waist height instead. \n\nPlease verify your measurements before contacting support.",
+    "sideSeamBustBelowWaist.t": "Bust height compromised at side seam",
+    "sideSeamBustBelowWaist.d": "No solution was found to place the bust point above the waist line on the side seam. As a compromise, we've used the waist height instead. \n\nPlease verify your measurements before contacting support.",
+    "bustDartCompromise.t": "Bust dart tip compromised",
+    "bustDartCompromise.d": "No solution was found to adjust the bust dart. As a compromise we are using the bust draft as initially drafted.\n\nPlease verify your measurements before contacting support."
+  },
   "o": {
     "chestEase": {
       "t": "Chest ease",

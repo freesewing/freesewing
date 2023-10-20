@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { spectrum, rating, stripe } from 'shared/themes/index.mjs'
 import createPersistedState from 'use-persisted-state'
 

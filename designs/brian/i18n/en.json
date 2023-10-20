@@ -14,9 +14,13 @@
       "t": "Across back factor",
       "d": "Controls your across back width as a factor of your shoulder to shoulder measurement."
     },
-    "armholeDepthFactor": {
-      "t": "Armhole depth factor",
+    "armholeDepth": {
+      "t": "Armhole depth",
       "d": "Controls the depth of the armhole. Higher values make a deeper armhole."
+    },
+    "armholeDepthFactor": {
+      "t": "Armhole depth factor (legacy)",
+      "d": "Controls the depth of the armhole. Higher values make a deeper armhole. This option only applies to the legacy (v2) way of calculating the armhole depth."
     },
     "backNeckCutout": {
       "t": "Back neck cutout",
@@ -42,9 +46,29 @@
       "t": "Draft for high bust",
       "d": "Draft the pattern for the high bust measurement (if available) rather than the (full) chest. This will result in a more fitted garment for people with breasts."
     },
+    "draftForHighBustYes": {
+      "t": "Draft using the high bust measurement",
+      "d": "Drafts a pattern using the high bust measurements as the chest measurement. Recommended for people with breasts."
+    },
+    "draftForHighBustNo": {
+      "t": "Draft using the chest measurement",
+      "d": "Drafts a pattern using the chest measurement. Recommended for people without breasts."
+    },
     "frontArmholeDeeper": {
       "t": "Front armhole extra cutout",
       "d": "How much do you want the front armhole to be cut out deeper than the back."
+    },
+    "legacyArmholeDepth": {
+      "t": "Legacy armhole depth",
+      "d": "Enable this option to use the legacy way to calculate the armhole depth (using biceps circumference) rather than the v3 way (using the waist to armpit measurement)"
+    },
+    "legacyArmholeDepthNo": {
+      "t": "Calculate armhole depth the v3 way",
+      "d": "Uses the waist to armpit measurement to locate the bottom of the armhole"
+    },
+    "legacyArmholeDepthYes": {
+      "t": "Calculate armhole depth the legacy (v2) way",
+      "d": "Uses the biceps measurement to locate the bottom of the armhole"
     },
     "lengthBonus": {
       "t": "Length bonus",

@@ -1,5 +1,3 @@
-import { pluginBundle } from '@freesewing/plugin-bundle'
-
 function draftBox({
   options,
   Point,
@@ -65,6 +63,5 @@ export const box = {
   options: {
     size: { pct: 50, min: 10, max: 100, menu: 'fit' },
   },
-  plugins: [pluginBundle],
   draft: draftBox,
 }

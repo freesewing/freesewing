@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { BulletIcon } from 'shared/components/icons.mjs'
 
 const scores = [1, 2, 3, 4, 5]

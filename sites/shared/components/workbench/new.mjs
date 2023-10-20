@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Hooks
 import { useEffect, useState, useCallback, useMemo } from 'react'
 import { useTranslation } from 'next-i18next'
@@ -8,11 +9,11 @@ import { useControlState } from 'shared/components/account/control.mjs'
 // Dependencies
 import { pluginTheme } from '@freesewing/plugin-theme'
 import { pluginI18n } from '@freesewing/plugin-i18n'
-import { objUpdate, hasRequiredMeasurements } from 'shared/utils.mjs'
+import { objUpdate, hasRequiredMeasurements, nsMerge } from 'shared/utils.mjs'
 // Components
+import { Header, ns as headerNs } from 'site/components/header/index.mjs'
 import { WorkbenchHeader } from './header.mjs'
 import { ErrorView } from 'shared/components/error/view.mjs'
-import { ModalSpinner } from 'shared/components/modal/spinner.mjs'
 import { MobileMenubar } from './menus/mobile-menubar.mjs'
 // Views
 import { DraftView, ns as draftNs } from 'shared/components/workbench/views/draft/index.mjs'
@@ -25,24 +26,30 @@ import { ExportView, ns as exportNs } from 'shared/components/workbench/views/ex
 import { LogView, ns as logNs } from 'shared/components/workbench/views/logs/index.mjs'
 import { InspectView, ns as inspectNs } from 'shared/components/workbench/views/inspect/index.mjs'
 import { MeasiesView, ns as measiesNs } from 'shared/components/workbench/views/measies/index.mjs'
+import { DocsView, ns as docsNs } from 'shared/components/workbench/views/docs/index.mjs'
 
-export const ns = [
+export const ns = nsMerge(
   'account',
   'workbench',
-  ...draftNs,
-  ...saveNs,
-  ...printNs,
-  ...cutNs,
-  ...editNs,
-  ...testNs,
-  ...exportNs,
-  ...logNs,
-  ...inspectNs,
-  ...measiesNs,
-]
+  'flag',
+  'plugin-annotations',
+  draftNs,
+  saveNs,
+  printNs,
+  cutNs,
+  editNs,
+  testNs,
+  exportNs,
+  logNs,
+  inspectNs,
+  measiesNs,
+  headerNs,
+  docsNs
+)
 
 const defaultUi = {
   renderer: 'react',
+  kiosk: false,
 }
 
 const views = {
@@ -55,11 +62,14 @@ const views = {
   logs: LogView,
   inspect: InspectView,
   measies: MeasiesView,
+  docs: DocsView,
 }
 
 const draftViews = ['draft', 'inspect']
 
-export const Workbench = ({ design, Design, DynamicDocs }) => {
+const kioskClasses = 'z-30 w-screen h-screen fixed top-0 left-0 bg-base-100'
+
+export const Workbench = ({ design, Design, saveAs = false, preload = false }) => {
   // Hooks
   const { t, i18n } = useTranslation([...ns, design])
   const { language } = i18n
@@ -68,11 +78,12 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
 
   // State
   const [view, _setView] = useView()
-  const [settings, setSettings] = usePatternSettings()
+  const [settings, setSettings] = usePatternSettings(preload)
   const [ui, setUi] = useState(defaultUi)
   const [error, setError] = useState(false)
   const [mounted, setMounted] = useState(false)
   const [missingMeasurements, setMissingMeasurements] = useState(false)
+  const [preloaded, setPreloaded] = useState(0)
 
   const setView = useCallback(
     (newView) => {
@@ -87,6 +98,20 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
 
   // set mounted on mount
   useEffect(() => setMounted(true), [setMounted])
+
+  // Handle preload
+  useEffect(() => {
+    if (preload) {
+      // This will run a few times while variouos things bootstrap
+      // but should not run after that.
+      if (preload.settings && preloaded < 3) {
+        console.log('preloading settings', { mounted, preloaded })
+        setSettings(preload.settings)
+        setView('draft')
+        setPreloaded(preloaded + 1)
+      }
+    }
+  }, [preload])
 
   useEffect(() => {
     // protect against loops
@@ -133,7 +158,7 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
   )
 
   // wait for mount. this helps prevent hydration issues
-  if (!mounted) return <ModalSpinner />
+  if (!mounted) return <p>wait for it...</p> //<ModalSpinner />
 
   // Warn that the design is somehow missing
   if (!Design) return <ErrorView>{t('workbench.noDesignFound')}</ErrorView>
@@ -142,7 +167,7 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
   if (error)
     return (
       <>
-        <WorkbenchHeader {...{ view, setView, update }} />
+        <WorkbenchHeader {...{ view, setView, update }} control={account.control} />
         {error}
         <MobileMenubar />
       </>
@@ -159,8 +184,8 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
     setSettings,
     ui,
     language,
-    DynamicDocs,
     Design,
+    saveAs,
   }
   let viewContent = null
 
@@ -184,14 +209,13 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
       const pattern =
         (Design.patternConfig.measurements.length === 0 || settings.measurements !== undefined) &&
         new Design({ layout, embed: true, ...settings })
-
       // Return early if the pattern is not initialized yet
       if (typeof pattern.getConfig !== 'function') return null
 
       const patternConfig = pattern.getConfig()
       if (ui.renderer === 'svg') {
         // Add theme to svg renderer
-        pattern.use(pluginI18n, (key) => t(key, { ns: design }))
+        pattern.use(pluginI18n, (key) => t(key))
         pattern.use(pluginTheme, { skipGrid: ['pages'] })
       }
 
@@ -213,10 +237,13 @@ export const Workbench = ({ design, Design, DynamicDocs }) => {
   }
 
   return (
-    <div className="flex flex-row min-h-screen">
-      <WorkbenchHeader {...{ view, setView, update }} />
-      <div className="grow">{viewContent}</div>
-      <MobileMenubar />
-    </div>
+    <>
+      {!ui.kiosk && <Header />}
+      <div className={`flex flex-row min-h-screen ${ui.kiosk ? kioskClasses : ''}`}>
+        <WorkbenchHeader {...{ view, setView, update, saveAs }} control={account.control} />
+        <div className="grow">{viewContent}</div>
+        <MobileMenubar />
+      </div>
+    </>
   )
 }

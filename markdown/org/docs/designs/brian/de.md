@@ -2,4 +2,7 @@
 title: "Brian, ein Grundschnitt"
 ---
 
-<PatternDocs pattern='brian' />
+
+
+<DesignInfo design='brian' docs />
+

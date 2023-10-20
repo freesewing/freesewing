@@ -2,4 +2,7 @@
 title: "Bloc de pantalon Titan"
 ---
 
-<PatternDocs pattern='titan' />
+
+
+<DesignInfo design='titan' docs />
+

@@ -1,4 +1,4 @@
-import { back } from '@freesewing/brian'
+import { back } from './back.mjs'
 import { sleevePlacketLength } from './options.mjs'
 
 function simonSleevePlacketOverlap({
@@ -11,7 +11,6 @@ function simonSleevePlacketOverlap({
   Snippet,
   snippets,
   complete,
-  paperless,
   macro,
   options,
   store,
@@ -56,114 +55,128 @@ function simonSleevePlacketOverlap({
     .close()
     .attr('class', 'fabric')
 
-  paths.outline = new Path()
-    .move(points.fold1Left)
-    .line(points.boxTopRight)
-    .line(points.boxTip)
-    .line(points.boxBottomRight)
-    .line(points.fold2Left)
-    .move(points.boxTopLeft)
-    .line(points.boxBottomLeft)
-    .attr('class', 'dashed')
-
-  paths.folds = new Path()
-    .move(points.fold3Left)
-    .line(points.fold3Right)
-    .move(points.boxBottomRight)
-    .line(points.fold2Right)
-    .line(points.boxTip)
-    .line(points.fold1Right)
-    .line(points.boxTopRight)
-    .attr('class', 'dotted')
-
-  // Complete pattern?
   if (complete) {
-    // Title
-    points.title = new Point(length / 4, 0)
-    macro('title', {
-      at: points.title,
-      nr: 10,
-      title: 'sleevePlacketOverlap',
-      scale: 0.6,
-    })
+    paths.outline = new Path()
+      .move(points.fold1Left)
+      .line(points.boxTopRight)
+      .line(points.boxTip)
+      .line(points.boxBottomRight)
+      .line(points.fold2Left)
+      .move(points.boxTopLeft)
+      .line(points.boxBottomLeft)
+      .attr('class', 'dashed')
 
-    // Button
-    points.buttonhole = new Point(length / 2, 0)
-    snippets.buttonhole = new Snippet('buttonhole', points.buttonhole).attr('data-rotate', 90)
-
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.bottomLeft)
-        .line(points.bottomLeft.shift(180, sa))
-        .line(points.topLeft.shift(180, sa))
-        .line(points.topLeft)
-        .attr('class', 'fabric sa')
-    }
+    paths.folds = new Path()
+      .move(points.fold3Left)
+      .line(points.fold3Right)
+      .move(points.boxBottomRight)
+      .line(points.fold2Right)
+      .line(points.boxTip)
+      .line(points.fold1Right)
+      .line(points.boxTopRight)
+      .attr('class', 'dotted')
   }
 
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.cutBottom,
-      y: points.bottomLeft.y + 15,
-    })
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.zag,
-      y: points.bottomLeft.y + 30,
-    })
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.zig,
-      y: points.bottomLeft.y + 45,
-    })
-    macro('hd', {
-      from: points.bottomLeft,
-      to: points.cutRight,
-      y: points.bottomLeft.y + 60,
-    })
-    macro('vd', {
-      from: points.fold1Right,
-      to: points.topRight,
-      x: points.topRight.x + 15,
-    })
-    macro('vd', {
-      from: points.boxTip,
-      to: points.topRight,
-      x: points.topRight.x + 30,
-    })
-    macro('vd', {
-      from: points.fold2Right,
-      to: points.topRight,
-      x: points.topRight.x + 45,
-    })
-    macro('vd', {
-      from: points.cutRight,
-      to: points.topRight,
-      x: points.topRight.x + 60,
-    })
-    macro('vd', {
-      from: points.zag,
-      to: points.topRight,
-      x: points.topRight.x + 75,
-    })
-    macro('vd', {
-      from: points.cutBottom,
-      to: points.topRight,
-      x: points.topRight.x + 90,
-    })
-    macro('hd', {
-      from: points.topLeft,
-      to: points.boxTopLeft,
-      y: points.topLeft.y - 15,
-    })
-    macro('hd', {
-      from: points.topLeft,
-      to: points.boxTopRight,
-      y: points.topLeft.y - 30,
-    })
-  }
+  if (sa)
+    paths.sa = new Path()
+      .move(points.bottomLeft)
+      .line(points.bottomLeft.shift(180, sa))
+      .line(points.topLeft.shift(180, sa))
+      .line(points.topLeft)
+      .attr('class', 'fabric sa')
+
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Title
+  points.title = new Point(length / 4, 0)
+  macro('title', {
+    at: points.title,
+    nr: 10,
+    title: 'sleevePlacketOverlap',
+    scale: 0.6,
+  })
+
+  // Button
+  points.buttonhole = new Point(length / 2, 0)
+  snippets.buttonhole = new Snippet('buttonhole', points.buttonhole).attr('data-rotate', 90)
+
+  // Dimensions
+  macro('hd', {
+    id: 'wToZig1',
+    from: points.bottomLeft,
+    to: points.cutBottom,
+    y: points.bottomLeft.y + 15,
+  })
+  macro('hd', {
+    id: 'wToZig2',
+    from: points.bottomLeft,
+    to: points.zag,
+    y: points.bottomLeft.y + 30,
+  })
+  macro('hd', {
+    id: 'wToZag2',
+    from: points.bottomLeft,
+    to: points.zig,
+    y: points.bottomLeft.y + 45,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.bottomLeft,
+    to: points.cutRight,
+    y: points.bottomLeft.y + 60,
+  })
+  macro('vd', {
+    id: 'hTopFold',
+    from: points.fold1Right,
+    to: points.topRight,
+    x: points.topRight.x + 15,
+  })
+  macro('vd', {
+    from: points.boxTip,
+    id: 'hTopToMiddle',
+    to: points.topRight,
+    x: points.topRight.x + 30,
+  })
+  macro('vd', {
+    id: 'hTopToEdge',
+    from: points.fold2Right,
+    to: points.topRight,
+    x: points.topRight.x + 45,
+  })
+  macro('vd', {
+    id: 'hTopToZag2',
+    from: points.cutRight,
+    to: points.topRight,
+    x: points.topRight.x + 60,
+  })
+  macro('vd', {
+    id: 'hToZig2',
+    from: points.zag,
+    to: points.topRight,
+    x: points.topRight.x + 75,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.cutBottom,
+    to: points.topRight,
+    x: points.topRight.x + 90,
+  })
+  macro('hd', {
+    id: 'wToBox',
+    from: points.topLeft,
+    to: points.boxTopLeft,
+    y: points.topLeft.y - 15,
+  })
+  macro('hd', {
+    id: 'wToTipStart',
+    from: points.topLeft,
+    to: points.boxTopRight,
+    y: points.topLeft.y - 30,
+  })
 
   return part
 }

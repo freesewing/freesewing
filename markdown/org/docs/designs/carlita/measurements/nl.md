@@ -2,4 +2,4 @@
 title: "Carlita jas: Benodigde afmetingen"
 ---
 
-<PatternMeasurements pattern='carlita' />
+<DesignMeasurements design='carlita' />

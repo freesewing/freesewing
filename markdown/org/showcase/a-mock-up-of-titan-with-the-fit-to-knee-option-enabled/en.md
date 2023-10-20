@@ -1,7 +1,7 @@
 ---
 title: "A mock-up of Titan with the fit-to-knee option enabled"
 caption: "The front view of Titan"
-date: "2023-08-18"
+date: 20230818
 intro: "This user tested Titan with the fit-to-knee measurement. They reported being overall happy with the results."
 designs: ["titan"]
 maker: user-3

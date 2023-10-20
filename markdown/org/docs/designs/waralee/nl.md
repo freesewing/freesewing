@@ -2,4 +2,7 @@
 title: "Waralee wikkelbroek"
 ---
 
-<PatternDocs pattern='waralee' />
+
+
+<DesignInfo design='waralee' docs />
+

@@ -2,4 +2,7 @@
 title: "Краватка Трейвон"
 ---
 
-<PatternDocs pattern='trayvon' />
+
+
+<DesignInfo design='trayvon' docs />
+

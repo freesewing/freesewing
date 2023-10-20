@@ -2,4 +2,7 @@
 title: "Florent, boina"
 ---
 
-<PatternDocs pattern='florent' />
+
+
+<DesignInfo design='florent' docs />
+

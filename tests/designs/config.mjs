@@ -35,7 +35,7 @@ export const testPatternConfig = (Pattern) => {
       if (chunks.length > 3) {
         expect(designConfig.data.version.split('.').length).to.equal(4)
         expect(chunks[2]).to.contain.oneOf(['-alpha', '-beta', '-rc'])
-      } else expect(designConfig.version.split('.').length).to.equal(3)
+      } else expect(designConfig.data.version.split('.').length).to.equal(3)
     })
 
     it('Monorepo data:', () => true)
@@ -99,8 +99,8 @@ export const testPatternConfig = (Pattern) => {
         const draft = new Pattern({
           measurements: requested,
         }).draft()
-
-        const missWarnings = draft.setStores[0].logs.warning.filter((w, i, a) => {
+        console.log(draft.setStores[0].logs)
+        const missWarnings = draft.setStores[0].logs.warn.filter((w, i, a) => {
           return w.match(/tried to access `measurements/) && a.indexOf(w) === i
         })
         chai.assert(

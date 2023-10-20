@@ -1,7 +1,8 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { nsMerge } from 'shared/utils.mjs'
 import { MeasieInput, ns as inputNs } from 'shared/components/inputs.mjs'
 import { useTranslation } from 'next-i18next'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
 export const ns = nsMerge('workbench', inputNs)
 
@@ -20,9 +21,11 @@ export const MeasiesEditor = ({ Design, settings, update }) => {
           m={m}
           imperial={settings.units === 'umperial' ? true : false}
           original={settings.measurements?.[m]}
-          update={(val) => onUpdate(m, val)}
-          docs={<DynamicOrgDocs language={i18n.language} path={`measurements/${m}`} />}
+          update={(m, newVal) => onUpdate(m, newVal)}
           id={`edit-${m}`}
+          docs={
+            <DynamicMdx language={i18n.language} slug={`docs/measurements/${m.toLowerCase()}`} />
+          }
         />
       ))}
     </div>

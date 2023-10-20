@@ -2,4 +2,7 @@
 title: "Піджак Джагер"
 ---
 
-<PatternDocs pattern='jaeger' />
+
+
+<DesignInfo design='jaeger' docs />
+

@@ -1,5 +1,5 @@
 ---
-title: "Débardeur Aaron (A-shirt)"
+title: "Aaron A-Shirt: Designer Notes"
 ---
 
-<PatternDocs pattern='aaron' />
+<DesignInfo design='aaron' docs />

@@ -1,11 +1,14 @@
-updatingSettings: Updating settings
-settingsSaved: Settings saved
 backendError: Backend returned an error
-copiedToClipboard: Gekopieerd naar het klembord
-processingUpdate: Processing update
-generatingPdf: Generating your PDF, one moment please
-pdfReady: PDF generated
-pdfFailed: An unexpected error occured while generating your PDF
 contactingBackend: Contacting the FreeSewing backend
 contactingGitHub: Contacting GitHub
 contactingGoogle: Contacting Google
+copiedToClipboard: Gekopieerd naar het klembord
+dataLoaded: Loaded data from the FreeSewing backend
+generatingPdf: Generating your PDF, one moment please
+nailedIt: Dat is ook weer geregeld!
+pdfFailed: An unexpected error occured while generating your PDF
+pdfReady: PDF generated
+processingUpdate: Processing update
+settingsSaved: Settings saved
+updatingSettings: Updating settings
+

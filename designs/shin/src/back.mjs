@@ -1,6 +1,5 @@
 import { pctBasedOn } from '@freesewing/core'
 import { elastics } from '@freesewing/snapseries'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 
 function shinBack({
   store,
@@ -9,8 +8,6 @@ function shinBack({
   Path,
   points,
   paths,
-  complete,
-  paperless,
   snippets,
   Snippet,
   sa,
@@ -110,75 +107,89 @@ function shinBack({
     .line(points.crossSeam)
   */
 
-  // Complete?
-  if (complete) {
-    points.logo = points.hipSide.shiftFractionTowards(points.seatCb, 0.3)
-    points.title = points.hipSide.shiftFractionTowards(points.seatCb, 0.7)
-    snippets.logo = new Snippet('logo', points.logo)
-    macro('title', {
-      at: points.title,
-      nr: 1,
-      title: 'back',
-    })
-    macro('scalebox', { at: new Point(points.legSide.x + 100, points.legSide.y - 40) })
-    points.grainlineFrom = points.legSide.shift(0, 15)
-    points.grainlineTo = points.hipSide.shift(0, 15)
-    macro('grainline', {
-      from: points.grainlineFrom,
-      to: points.grainlineTo,
-    })
-    if (sa) {
-      paths.sa = paths.hemBase
-        .offset(3 * sa)
-        .join(paths.saBase.offset(sa))
-        .close()
-        .attr('class', 'fabric sa')
-    }
-  }
+  if (sa)
+    paths.sa = paths.hemBase
+      .offset(3 * sa)
+      .join(paths.saBase.offset(sa))
+      .close()
+      .addClass('fabric sa')
 
-  // Paperless?
-  if (paperless) {
-    macro('hd', {
-      from: points.hipSide,
-      to: points.hipCb,
-      y: points.hipCb.y - sa - 15,
-    })
-    macro('hd', {
-      from: points.legSide,
-      to: points.hipCb,
-      y: points.hipCb.y - sa - 30,
-    })
-    macro('vd', {
-      from: points.legSide,
-      to: points.hipSide,
-      x: points.legSide.x - sa - 15,
-    })
-    macro('vd', {
-      from: points.reducedLegInner,
-      to: points.hipSide,
-      x: points.legSide.x - sa - 30,
-    })
-    macro('hd', {
-      from: points.legSide,
-      to: points.reducedLegInner,
-      y: points.reducedLegInner.y + 3 * sa + 15,
-    })
-    macro('hd', {
-      from: points.legSide,
-      to: points.reducedCrossSeam,
-      y: points.reducedLegInner.y + 3 * sa + 30,
-    })
-    macro('vd', {
-      from: points.reducedLegInner,
-      to: points.reducedCrossSeam,
-      x: points.reducedCrossSeam.x + sa + 15,
-    })
-    macro('vd', {
-      from: points.reducedLegInner,
-      to: points.hipCb,
-      x: points.reducedCrossSeam.x + sa + 30,
-    })
-  }
+  /*
+   * Annotations
+   */
+  // Cutlist
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Logo
+  points.logo = points.hipSide.shiftFractionTowards(points.seatCb, 0.3)
+  snippets.logo = new Snippet('logo', points.logo)
+
+  // Title
+  points.title = points.hipSide.shiftFractionTowards(points.seatCb, 0.7)
+  macro('title', {
+    at: points.title,
+    nr: 1,
+    title: 'back',
+  })
+
+  // Scalebox
+  macro('scalebox', { at: new Point(points.legSide.x + 100, points.legSide.y - 40) })
+  points.grainlineFrom = points.legSide.shift(0, 15)
+  points.grainlineTo = points.hipSide.shift(0, 15)
+  macro('grainline', {
+    from: points.grainlineFrom,
+    to: points.grainlineTo,
+  })
+
+  // Dimension
+  macro('hd', {
+    id: 'wAtWaist',
+    from: points.hipSide,
+    to: points.hipCb,
+    y: points.hipCb.y - sa - 15,
+  })
+  macro('hd', {
+    id: 'wSideHemToCfWaist',
+    from: points.legSide,
+    to: points.hipCb,
+    y: points.hipCb.y - sa - 30,
+  })
+  macro('vd', {
+    id: 'hSide',
+    from: points.legSide,
+    to: points.hipSide,
+    x: points.legSide.x - sa - 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.reducedLegInner,
+    to: points.hipSide,
+    x: points.legSide.x - sa - 30,
+  })
+  macro('hd', {
+    id: 'wHem',
+    from: points.legSide,
+    to: points.reducedLegInner,
+    y: points.reducedLegInner.y + 3 * sa + 15,
+  })
+  macro('hd', {
+    id: 'wFull',
+    from: points.legSide,
+    to: points.reducedCrossSeam,
+    y: points.reducedLegInner.y + 3 * sa + 30,
+  })
+  macro('vd', {
+    id: 'hInseam',
+    from: points.reducedLegInner,
+    to: points.reducedCrossSeam,
+    x: points.reducedCrossSeam.x + sa + 15,
+  })
+  macro('vd', {
+    id: 'hFull',
+    from: points.reducedLegInner,
+    to: points.hipCb,
+    x: points.reducedCrossSeam.x + sa + 30,
+  })
 
   return part
 }
@@ -186,7 +197,6 @@ function shinBack({
 export const back = {
   name: 'shin.back',
   measurements: ['hips', 'upperLeg', 'waistToUpperLeg', 'waistToHips'],
-  plugins: [pluginBundle],
   options: {
     frontFactor: 0.58,
     legFrontFactor: 0.48,

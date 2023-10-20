@@ -23,7 +23,7 @@ export const getRoot = {
 /*
  * This is a recursive function, so it needs to be lean
  */
-const RenderTree = ({ tree, recurse, depth = 1, level = 0 }) => {
+const RenderTree = ({ tree, recurse, depth = 1, level = 0, active = false }) => {
   const orderedTree = orderBy(tree, ['o', 't'], ['asc', 'asc']).filter(
     (item) => typeof item === 'object'
   )
@@ -48,17 +48,17 @@ const RenderTree = ({ tree, recurse, depth = 1, level = 0 }) => {
           <li key={i} className="w-full flex flex-row items-start gap-0.5 lg:gap-1">
             {hasChildren ? (
               <details className={`w-full inline flex flex-row`}>
-                <summary className="hover:bg-opacity-20 bg-secondary bg-opacity-0 block w-full flex flex-row items-center gap-0.5 lg:gap-1 px-1 lg:px-2">
+                <summary className="hover:bg-opacity-20 bg-secondary bg-opacity-0 block w-full flex flex-row items-center gap-0.5 lg:gap-1 px-1 lg:px-2 py-1">
                   <RightIcon className={`w-4 h-4 summary-chevron transition-all`} stroke={3} />
-                  <Link href={`/${item.s}`}>{item.t}</Link>
+                  <Link href={`/${item.s}`}>{active === item.s ? <b>{item.t}</b> : item.t}</Link>
                 </summary>
-                <RenderTree tree={item} {...{ recurse, depth }} level={level + 1} />
+                <RenderTree tree={item} {...{ recurse, depth, active }} level={level + 1} />
               </details>
             ) : (
               <>
                 <BulletIcon className="w-2 h-2 mt-2 mx-1 ml-2 lg:ml-3 shrink-0" fill stroke={0} />
                 <Link href={`/${item.s}`} className="break-all">
-                  {item.t}
+                  {active === item.s ? <b>{item.t}</b> : item.t}
                 </Link>
               </>
             )}
@@ -69,8 +69,15 @@ const RenderTree = ({ tree, recurse, depth = 1, level = 0 }) => {
   )
 }
 
-export const ReadMore = ({ recurse = 0, root = false, site = 'org', depth = 99 }) => {
+export const ReadMore = ({
+  recurse = 0,
+  root = false,
+  site = 'org',
+  asMenu = false,
+  depth = 99,
+}) => {
   const { siteNav, slug } = useContext(NavigationContext)
+  let active = false
 
   // Deal with recurse not being a number
   if (recurse && recurse !== true) {
@@ -81,9 +88,14 @@ export const ReadMore = ({ recurse = 0, root = false, site = 'org', depth = 99 }
   // Deal with root being passed as true
   if (root === true) root = ''
 
+  if (asMenu && slug.split('/').length > 1) {
+    root = slug.split('/').slice(0, -1).join('/')
+    active = slug
+  }
+
   const tree = root === false ? getRoot[site](slug, siteNav) : getRoot[site](root, siteNav)
 
   if (!tree) return null
 
-  return <RenderTree {...{ tree, recurse, depth }} />
+  return <RenderTree {...{ tree, recurse, depth, active }} />
 }

@@ -2,4 +2,7 @@
 title: "Diana top met drapage"
 ---
 
-<PatternDocs pattern='diana' />
+
+
+<DesignInfo design='diana' docs />
+

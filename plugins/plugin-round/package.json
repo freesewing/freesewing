@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/plugin-round",
-  "version": "3.0.0-alpha.10",
+  "version": "3.0.0",
   "description": "A FreeSewing plugin to round corners",
   "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
   "homepage": "https://freesewing.org/",
@@ -49,12 +49,12 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.10"
+    "@freesewing/core": "3.0.0"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.2.0",
-    "chai": "4.3.7"
+    "chai": "4.3.10"
   },
   "files": [
     "dist/*",
@@ -62,7 +62,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": "18",

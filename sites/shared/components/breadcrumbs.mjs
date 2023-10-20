@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { HomeIcon, RightIcon } from 'shared/components/icons.mjs'
 import { Link, PageLink } from 'shared/components/link.mjs'
 

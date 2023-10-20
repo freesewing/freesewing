@@ -2,4 +2,7 @@
 title: "Boxer de bain Shin"
 ---
 
-<PatternDocs pattern='shin' />
+
+
+<DesignInfo design='shin' docs />
+

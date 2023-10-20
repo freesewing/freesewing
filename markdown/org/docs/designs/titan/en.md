@@ -2,4 +2,7 @@
 title: "Titan trouser block"
 ---
 
-<PatternDocs pattern='titan' />
+
+
+<DesignInfo design='titan' docs />
+

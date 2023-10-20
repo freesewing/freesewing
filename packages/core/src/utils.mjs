@@ -2,6 +2,18 @@ import { Bezier } from 'bezier-js'
 import { Path } from './path.mjs'
 import { Point } from './point.mjs'
 
+/*
+ * See: https://en.wikipedia.org/wiki/Golden_ratio
+ */
+export const goldenRatio = 1.618034
+
+/*
+ * cbqc = Cubic Bezier Quarter Circle
+ * The value to best approximate a (quarter) circle with cubic Bézier curves
+ * See: https://spencermortensen.com/articles/bezier-circle/
+ */
+export const cbqc = 0.55191502449351
+
 //////////////////////////////////////////////
 //            PUBLIC  METHODS               //
 //////////////////////////////////////////////
@@ -477,8 +489,8 @@ export function mergeI18n(designs, options) {
  * @param {object} optionsConfig - The pattern's options config
  * @return {object} result - An object with the merged options and their values
  */
-export function mergeOptions(settings, optionsConfig) {
-  const merged = typeof settings.options === 'undefined' ? {} : { ...settings.option }
+export function mergeOptions(settings = {}, optionsConfig) {
+  let merged = {}
   for (const [key, option] of Object.entries(optionsConfig)) {
     if (typeof option === 'object') {
       if (typeof option.pct !== 'undefined') merged[key] = option.pct / 100
@@ -489,6 +501,7 @@ export function mergeOptions(settings, optionsConfig) {
       else if (typeof option.dflt !== 'undefined') merged[key] = option.dflt
     } else merged[key] = option
   }
+  if (typeof settings.options === 'object') merged = { ...merged, ...settings.options }
 
   return merged
 }
@@ -693,7 +706,7 @@ export function __addNonEnumProp(obj, name, value) {
 export function __asNumber(value, param, method, log) {
   if (typeof value === 'number') return value
   if (typeof value === 'string') {
-    log.warning(
+    log.warn(
       `Called \`${method}(${param})\` but \`${param}\` is not a number. Will attempt to cast to Number`
     )
     try {
@@ -730,7 +743,7 @@ export function __isCoord(value) {
  * @return {string} macroName - The inernal macroName
  */
 export function __macroName(name) {
-  return `__macro_${name}`
+  return `__macro_${name.toLowerCase()}`
 }
 
 /**

@@ -1,5 +1,4 @@
 import { box } from './shared.mjs'
-import { pluginBundle } from '@freesewing/plugin-bundle'
 
 function legendGrainline({ points, Point, macro, part }) {
   points.a = new Point(10, 20)
@@ -15,6 +14,5 @@ function legendGrainline({ points, Point, macro, part }) {
 
 export const grainline = {
   name: 'legend.grainline',
-  plugins: pluginBundle,
   draft: legendGrainline,
 }

@@ -2,4 +2,7 @@
 title: "Викрійка-основа Браян"
 ---
 
-<PatternDocs pattern='brian' />
+
+
+<DesignInfo design='brian' docs />
+

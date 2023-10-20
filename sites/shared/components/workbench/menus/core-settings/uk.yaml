@@ -9,6 +9,8 @@ sabool.t: Включити припуски на шви
 sabool.d: Керує наявністю припусків на шви в Вашій викрійці
 complete.t: Деталі
 complete.d: 'Керує докладність викрійки: відображувати повноцінну викрійку з усіма подробицями чи лише основний контур елементів викрійки'
+expand.t: Expand
+expand.d: Controls efforts to save paper. Disable this to expand all pattern parts at the cost of using more space.
 only.t: Деталі, що входять до комплекту
 only.d: Використовуйте цей параметр, щоб точно контролювати, які деталі будуть включені в деталь
 locale.t: Мова
@@ -35,6 +37,10 @@ completeYes.t: Створіть повний шаблон
 completeYes.d: В результаті буде згенеровано повну викрійку з усіма позначеннями, лініями, маркуванням. Використовуйте цю функцію, якщо ви не впевнені, що вибрати.
 completeNo.t: Створіть контур деталі
 completeNo.d: Створюйте лише контури деталей лекал. Використовуйте цей параметр, якщо ви збираєтеся використовувати лазерний різак або маєте інші специфічні потреби.
+expandYes.t: Expand all pattern parts
+expandYes.d: This will generate a pattern where all pattern parts are drawn to their full size, even if they are simple rectangles.
+expandNo.t: Keep patterns parts compact where possible
+expandNo.d: This will draw a more dense representation of the pattern which includes all info without using up too much space & paper.
 paperlessNo.t: Створіть регулярний шаблон
 paperlessNo.d: В результаті буде створено звичайний шаблон, який ви можете роздрукувати.
 paperlessYes.t: Створіть безпаперовий шаблон

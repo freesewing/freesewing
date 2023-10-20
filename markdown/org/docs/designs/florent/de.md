@@ -2,4 +2,7 @@
 title: "Florent, die Schiebermütze"
 ---
 
-<PatternDocs pattern='florent' />
+
+
+<DesignInfo design='florent' docs />
+

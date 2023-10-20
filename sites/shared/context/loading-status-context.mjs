@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 /* eslint-disable */
 // Not sure why but eslint does not seem to understand this file
 // and I don't have time to hold its hand.
@@ -25,9 +26,12 @@ const LoadingStatus = ({ loadingStatus }) => {
     if (loadingStatus[2]) {
       if (timer) clearTimeout(timer)
       setTimer(
-        window.setTimeout(() => {
-          setFade('opacity-0')
-        }, timeout * 1000 - 350)
+        window.setTimeout(
+          () => {
+            setFade('opacity-0')
+          },
+          timeout * 1000 - 350
+        )
       )
     }
   }, [loadingStatus[2]])

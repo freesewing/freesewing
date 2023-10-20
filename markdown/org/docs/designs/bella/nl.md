@@ -2,4 +2,7 @@
 title: "Bella lichaam blok"
 ---
 
-<PatternDocs pattern='bella' />
+
+
+<DesignInfo design='bella' docs />
+

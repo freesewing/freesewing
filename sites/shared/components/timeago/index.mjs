@@ -17,6 +17,7 @@ export const TimeAgo = ({ date }) => {
   } else if (i.years < 1 && i.months < 1) {
     if (Math.floor(i.days) === 1) ago += `${t('oneDay')}`
     else if (Math.floor(i.days) === 0) ago += `${t('lessThanADay')}`
+    else ago += `${i.days} ${t('days')}, ${Math.floor(i.hours)} ${t('hours')}`
   } else {
     if (i.years === 1) ago += `${i.years} ${t('year')}, `
     else if (i.years > 1) ago += `${i.years} ${t('years')}, `

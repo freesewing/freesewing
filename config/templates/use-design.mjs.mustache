@@ -1,0 +1,17 @@
+/*
+ * This file is auto-generated.
+ * Any manual changes will be overwritten.
+ */
+{{#designs}}
+import { {{ Name }} as {{ name }} } from '@freesewing/{{ name }}'
+{{/designs}}
+
+const designs = {
+{{#designs}}
+  {{ name }},
+{{/designs}}
+}
+
+export const useDesign = (design) => (designs[design] ? designs[design] : false)
+
+export const collection = Object.keys(designs)

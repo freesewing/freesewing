@@ -2,4 +2,7 @@
 title: "Jupe crayon Penelope"
 ---
 
-<PatternDocs pattern='penelope' />
+
+
+<DesignInfo design='penelope' docs />
+

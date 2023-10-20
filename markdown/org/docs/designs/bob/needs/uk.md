@@ -1,5 +1,5 @@
 ---
-title: "Слюнявчик Bob the Bib Що вам потрібно"
+title: "Bob the Bib: What You Need"
 ---
 
 Щоб зробити Боба, вам знадобиться наступне:

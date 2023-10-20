@@ -2,4 +2,7 @@
 title: "Sac à main Hortensia"
 ---
 
-<PatternDocs pattern='hortensia' />
+
+
+<DesignInfo design='hortensia' docs />
+

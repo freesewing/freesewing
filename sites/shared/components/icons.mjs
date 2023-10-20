@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { logoPath } from 'shared/components/logos/freesewing.mjs'
 
 export const IconWrapper = ({
@@ -47,7 +48,7 @@ export const BookmarkIcon = (props) => (
 )
 
 export const BoolNoIcon = ({ size = 6 }) => (
-  <NoIcon className={`w-${size} h-${size} text-error`} stroke={3} />
+  <NoIcon className={`w-${size} h-${size} text-error`} stroke={4} />
 )
 export const BoolYesIcon = ({ size = 6 }) => (
   <OkIcon className={`w-${size} h-${size} text-success`} stroke={4} />
@@ -282,6 +283,18 @@ export const EmailIcon = (props) => (
   </IconWrapper>
 )
 
+export const ErrorIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
+  </IconWrapper>
+)
+
+export const ExpandIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+  </IconWrapper>
+)
+
 export const ExportIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -303,6 +316,18 @@ export const FilterIcon = (props) => (
 export const FingerprintIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
+  </IconWrapper>
+)
+
+export const FlagIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M3 3v1.5M3 21v-6m0 0l2.77-.693a9 9 0 016.208.682l.108.054a9 9 0 006.086.71l3.114-.732a48.524 48.524 0 01-.005-10.499l-3.11.732a9 9 0 01-6.085-.711l-.108-.054a9 9 0 00-6.208-.682L3 4.5M3 15V4.5" />
+  </IconWrapper>
+)
+
+export const ForbiddenIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
   </IconWrapper>
 )
 
@@ -370,6 +395,12 @@ export const InstagramIcon = (props) => (
 export const KeyIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M15.75 5.25a3 3 0 013 3m3 0a6 6 0 01-7.029 5.912c-.563-.097-1.159.026-1.563.43L10.5 17.25H8.25v2.25H6v2.25H2.25v-2.818c0-.597.237-1.17.659-1.591l6.499-6.499c.404-.404.527-1 .43-1.563A6 6 0 1121.75 8.25z" />
+  </IconWrapper>
+)
+
+export const KioskIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M 3,17.033898 V 7.2838983 c 0,-1.242641 1.007359,-2.25 2.25,-2.25 h 13.5 c 1.242641,0 2.25,1.007359 2.25,2.25 v 9.7499997 m -18,0 c 0,1.242641 1.007359,2.25 2.25,2.25 h 13.5 c 1.242641,0 2.25,-1.007359 2.25,-2.25" />
   </IconWrapper>
 )
 
@@ -471,7 +502,7 @@ export const NewsletterIcon = (props) => (
 
 export const NoIcon = (props) => (
   <IconWrapper {...props}>
-    <path d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636" />
+    <path d="M6,6 L 18,18 M 18,6 L 6,18" />
   </IconWrapper>
 )
 
@@ -626,6 +657,12 @@ export const SaIcon = (props) => (
   </IconWrapper>
 )
 
+export const SaveAsIcon = (props) => (
+  <IconWrapper {...props}>
+    <path d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z M 11.5,10 v6 M 8.5,13 h 6" />
+  </IconWrapper>
+)
+
 export const ScaleIcon = (props) => (
   <IconWrapper {...props}>
     <path d="M 2 20 h 20" strokeWidth={props.stroke / 2 || 1} />
@@ -724,7 +761,7 @@ export const TwitchIcon = (props) => (
 
 export const TwitterIcon = (props) => (
   <IconWrapper {...props} stroke={0} fill>
-    <path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" />
+    <path d="M 14.283262,10.162362 23.217802,0 h -2.1172 L 13.342742,8.8238362 7.1465624,0 H 2.3925781e-6 L 9.3698424,13.343203 2.3925781e-6,24 H 2.1173224 L 10.309822,14.681729 16.853442,24 h 7.14656 L 14.282742,10.162362 Z M 11.383302,13.46076 10.433942,12.132078 2.8802224,1.5596155 h 3.25208 l 6.0959396,8.5323145 0.94936,1.328682 7.924,11.090702 h -3.25208 l -6.46622,-9.050045 z"/>
   </IconWrapper>
 )
 
@@ -743,6 +780,7 @@ export const UploadIcon = (props) => (
     <path d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
   </IconWrapper>
 )
+export const SaveIcon = UploadIcon
 
 export const UserIcon = (props) => (
   <IconWrapper {...props}>

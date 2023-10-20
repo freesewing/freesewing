@@ -9,12 +9,12 @@ import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { BackToAccountButton, Icons, welcomeSteps } from './shared.mjs'
 import { ContinueButton } from 'shared/components/buttons/continue-button.mjs'
 import { ListInput } from 'shared/components/inputs.mjs'
-import { DynamicOrgDocs } from 'shared/components/dynamic-docs/org.mjs'
+import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 import { OkIcon, NoIcon } from 'shared/components/icons.mjs'
 
 export const ns = ['account', 'status']
 
-export const NewsletterSettings = ({ welcome = false }) => {
+export const NewsletterSettings = ({ welcome = false, bare = false }) => {
   // Hooks
   const { account, setAccount } = useAccount()
   const backend = useBackend()
@@ -63,7 +63,7 @@ export const NewsletterSettings = ({ welcome = false }) => {
         }))}
         current={selection}
         update={update}
-        docs={<DynamicOrgDocs language={i18n.language} path={`site/account/newsletter`} />}
+        docs={<DynamicMdx language={i18n.language} slug={`account/site/account/newsletter`} />}
       />
       {welcome ? (
         <>
@@ -86,7 +86,7 @@ export const NewsletterSettings = ({ welcome = false }) => {
             </>
           ) : null}
         </>
-      ) : (
+      ) : bare ? null : (
         <BackToAccountButton />
       )}
     </div>

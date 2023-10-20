@@ -2,7 +2,7 @@
 title: "Bloc corporel Breanna : Options de conception"
 ---
 
-<PatternOptions pattern='breanna' />
+<DesignOptions design='breanna' />
 
 ## Comprendre la tête de manche
 

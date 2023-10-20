@@ -2,4 +2,7 @@
 title: "Cornelius cycling breeches"
 ---
 
-<PatternDocs pattern='cornelius' />
+
+
+<DesignInfo design='cornelius' docs />
+

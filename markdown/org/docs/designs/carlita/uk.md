@@ -2,4 +2,7 @@
 title: "Пальто Карліта"
 ---
 
-<PatternDocs pattern='carlita' />
+
+
+<DesignInfo design='carlita' docs />
+

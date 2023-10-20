@@ -5,7 +5,12 @@
     "back": "Back",
     "front": "Front"
   },
-  "s": {},
+  "s": {
+    "crossSeamFitFailedBack.t": "Back cross seam compromised",
+    "crossSeamFitFailedBack.d": "No solution was found to fit the cross seam in the back part. As a compromise, we've used the best available solution instead.\n\nPlease verify your measurements before contacting support.",
+    "crossSeamFitFailedFront.t": "Front cross seam compromised",
+    "crossSeamFitFailedFront.d": "No solution was found to fit the cross seam in the front part. As a compromise, we've used the best available solution instead.\n\nPlease verify your measurements before contacting support."
+  },
   "o": {
     "kneeEase": {
       "t": "Knee ease",
@@ -26,6 +31,14 @@
     "fitKnee": {
       "t": "Fit the knee",
       "d": "Fits the legs from based on the knee circumference, rather than seat circumference"
+    },
+    "fitKneeNo": {
+      "t": "Do not fit the knee",
+      "d": "Disregard the knee measurements and draft a pattern that tapers from upper leg to ankle"
+    },
+    "fitKneeYes": {
+      "t": "Do fit the knee",
+      "d": "Use the knee measurement to draft a pattern that tapers from upper leg to knee, to then continue straight down below the knee."
     },
     "legBalance": {
       "t": "Leg balance",

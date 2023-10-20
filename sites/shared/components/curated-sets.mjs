@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 // Dependencies
 import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
@@ -13,7 +14,7 @@ import {
 } from 'shared/utils.mjs'
 import { measurements } from 'config/measurements.mjs'
 import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
-//import orderBy from 'lodash.orderby'
+import orderBy from 'lodash.orderby'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
@@ -23,10 +24,18 @@ import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 // Components
 import { DisplayRow } from './account/shared.mjs'
 import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-import Markdown from 'react-markdown'
+import { Mdx } from 'shared/components/mdx/dynamic.mjs'
 import Timeago from 'react-timeago'
 import { MeasieVal } from './account/sets.mjs'
-import { CameraIcon, UploadIcon, OkIcon, NoIcon } from 'shared/components/icons.mjs'
+import {
+  TrashIcon,
+  CameraIcon,
+  UploadIcon,
+  OkIcon,
+  NoIcon,
+  BoolNoIcon,
+  BoolYesIcon,
+} from 'shared/components/icons.mjs'
 import { Link, PageLink } from 'shared/components/link.mjs'
 import {
   StringInput,
@@ -35,6 +44,7 @@ import {
   MeasieInput,
   DesignDropdown,
   ListInput,
+  NumberInput,
   ns as inputNs,
 } from 'shared/components/inputs.mjs'
 
@@ -56,14 +66,14 @@ const SetLineup = ({ sets = [], href = false, onClick = false }) => (
       const props = {
         className: 'aspect-[1/3] w-auto h-96',
         style: {
-          backgroundImage: `url(${cloudflareImageUrl({ id: set.img, type: 'lineup' })})`,
+          backgroundImage: `url(${cloudflareImageUrl({ id: `cset-${set.id}`, type: 'lineup' })})`,
           width: 'auto',
           backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
         },
       }
-      if (onClick) props.onClick = () => onClick(set.id)
+      if (onClick) props.onClick = () => onClick(set)
       else if (typeof href === 'function') props.href = href(set.id)
 
       if (onClick) return <button {...props} key={set.id}></button>
@@ -109,7 +119,7 @@ const ShowCuratedSet = ({ cset }) => {
           onClick={() =>
             setModal(
               <ModalWrapper flex="col" justify="top lg:justify-center" slideFrom="right">
-                <img src={cloudflareImageUrl({ type: 'lineup', id: cset.img })} />
+                <img src={cloudflareImageUrl({ type: 'lineup', id: `cset-${cset.id}` })} />
               </ModalWrapper>
             )
           }
@@ -121,10 +131,13 @@ const ShowCuratedSet = ({ cset }) => {
       </div>
 
       <h2>{t('data')}</h2>
-      <DisplayRow title={t('name')}>{cset[`name${capitalize(lang)}`]}</DisplayRow>
+      <DisplayRow title={t('name')}>
+        <PageLink href={`/curated-sets/${cset.id}`} txt={cset[`name${capitalize(lang)}`]} />
+      </DisplayRow>
+      <DisplayRow title={t('height')}>{cset.height}cm</DisplayRow>
       {control >= controlLevels.sets.notes && (
         <DisplayRow title={t('notes')}>
-          <Markdown>{cset[`notes${capitalize(lang)}`]}</Markdown>
+          <Mdx md={cset[`notes${capitalize(lang)}`]} />
         </DisplayRow>
       )}
       {control >= controlLevels.sets.createdAt && (
@@ -185,8 +198,11 @@ export const CuratedSet = ({ id }) => {
   )
 }
 
+// Picker version
+export const CuratedSetPicker = (props) => <CuratedSets {...props} />
+
 // Component for the curated-sets page
-export const CuratedSets = ({ href = false }) => {
+export const CuratedSets = ({ href = false, clickHandler = false, published = true }) => {
   // Hooks
   const backend = useBackend()
   const { setLoadingStatus } = useContext(LoadingStatusContext)
@@ -202,13 +218,93 @@ export const CuratedSets = ({ href = false }) => {
       const result = await backend.getCuratedSets()
       if (result.success) {
         const allSets = {}
-        for (const set of result.data.curatedSets) allSets[set.id] = set
+        for (const set of result.data.curatedSets) {
+          if (!published || set.published) allSets[set.id] = set
+        }
         setSets(allSets)
         setLoadingStatus([true, 'status:dataLoaded', true, true])
       } else setLoadingStatus([true, 'status:backendError', true, false])
     }
     getSets()
   }, [])
+
+  const lineupProps = {
+    sets: orderBy(sets, 'height', 'asc'),
+  }
+  if (typeof href === 'function') lineupProps.href = href
+  else lineupProps.onClick = clickHandler ? clickHandler : (set) => setSelected(set.id)
+
+  return (
+    <div className="max-w-7xl xl:pl-4">
+      <SetLineup {...lineupProps} />
+      {selected && <ShowCuratedSet cset={sets[selected]} />}
+    </div>
+  )
+}
+
+// Component for the maintaining the list of curated-sets
+export const CuratedSetsList = ({ href = false }) => {
+  // Hooks
+  const { t } = useTranslation(ns)
+  const backend = useBackend()
+  const { setLoadingStatus, LoadingProgress } = useContext(LoadingStatusContext)
+  const [refresh, setRefresh] = useState(0)
+
+  // State
+  const [sets, setSets] = useState([])
+  const [selected, setSelected] = useState(false)
+
+  // Effects
+  useEffect(() => {
+    const getSets = async () => {
+      setLoadingStatus([true, 'contactingBackend'])
+      const result = await backend.getCuratedSets()
+      if (result.success) {
+        const allSets = []
+        for (const set of result.data.curatedSets) allSets.push(set)
+        setSets(allSets)
+        setLoadingStatus([true, 'status:dataLoaded', true, true])
+      } else setLoadingStatus([true, 'status:backendError', true, false])
+    }
+    getSets()
+  }, [refresh])
+
+  // Helper var to see how many are selected
+  const selCount = Object.keys(selected).length
+
+  // Helper method to toggle single selection
+  const toggleSelect = (id) => {
+    const newSelected = { ...selected }
+    if (newSelected[id]) delete newSelected[id]
+    else newSelected[id] = 1
+    setSelected(newSelected)
+  }
+
+  // Helper method to toggle select all
+  const toggleSelectAll = () => {
+    if (selCount === selected.length) setSelected({})
+    else {
+      const newSelected = {}
+      for (const set of selected) newSelected[set.id] = 1
+      setSelected(newSelected)
+    }
+  }
+
+  // Helper to delete one or more sets
+  const removeSelected = async () => {
+    let i = 0
+    for (const key in selected) {
+      i++
+      await backend.removeCuratedMeasurementsSet(key)
+      setLoadingStatus([
+        true,
+        <LoadingProgress val={i} max={selCount} msg={t('removingRecords')} key="linter" />,
+      ])
+    }
+    setSelected({})
+    setRefresh(refresh + 1)
+    setLoadingStatus([true, 'nailedIt', true, true])
+  }
 
   const lineupProps = {
     sets: Object.values(sets),
@@ -218,8 +314,64 @@ export const CuratedSets = ({ href = false }) => {
 
   return (
     <div className="max-w-7xl xl:pl-4">
+      {selCount ? (
+        <button className="btn btn-error" onClick={removeSelected}>
+          <TrashIcon /> {selCount} {t('curate:sets')}
+        </button>
+      ) : null}
+      <table className="table table-auto">
+        <thead className="border border-base-300 border-b-2 border-t-0 border-x-0">
+          <tr className="b">
+            <th className="text-base-300 text-base">
+              <input
+                type="checkbox"
+                className="checkbox checkbox-secondary"
+                onClick={toggleSelectAll}
+                checked={selected.length === selCount}
+              />
+            </th>
+            <th className="text-base-300 text-base">{t('curate:id')}</th>
+            <th className="text-base-300 text-base">{t('curate:img')}</th>
+            <th className="text-base-300 text-base">{t('curate:name')}</th>
+            <th className="text-base-300 text-base">{t('curate:published')}</th>
+            <th className="text-base-300 text-base">{t('curate:height')}</th>
+            <th className="text-base-300 text-base">{t('curate:createdAt')}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {sets.map((set) => (
+            <tr key={set.id}>
+              <td className="text-base font-medium">
+                <input
+                  type="checkbox"
+                  checked={selected[set.id] ? true : false}
+                  className="checkbox checkbox-secondary"
+                  onClick={() => toggleSelect(set.id)}
+                />
+              </td>
+              <td>
+                <PageLink href={typeof href === 'function' ? href(set.id) : href} txt={set.id} />
+              </td>
+              <td>
+                <img
+                  src={cloudflareImageUrl({ id: `cset-${set.id}`, variant: 'sq100' })}
+                  className="mask mask-squircle w-12 h-12"
+                />
+              </td>
+              <td>
+                <PageLink
+                  href={typeof href === 'function' ? href(set.id) : href}
+                  txt={set.nameEn}
+                />
+              </td>
+              <td>{set.published ? <BoolYesIcon /> : <BoolNoIcon />}</td>
+              <td>{set.height}cm</td>
+              <td>{set.createdAt}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
       <SetLineup {...lineupProps} />
-      {selected && <ShowCuratedSet cset={sets[selected]} />}
     </div>
   )
 }
@@ -278,6 +430,7 @@ export const EditCuratedSet = ({ id }) => {
       k = `notes${capitalize(lang)}`
       if (data[k] !== cset[k]) changes[k] = data[k]
     }
+    if (data.height !== cset.height) changes.height = Number(data.height)
     if (data.img !== cset.img) changes.img = data.img
     if (data.published !== cset.published) changes.published = data.published
     for (const m in data.measies) {
@@ -294,7 +447,7 @@ export const EditCuratedSet = ({ id }) => {
     <div className="max-w-2xl">
       <PageLink href={`/curated-sets/${id}`} txt={`/curated-sets/${id}`} />
       <ListInput
-        label={t('curate:publshed')}
+        label={t('curate:published')}
         update={(val) => updateData('published', val)}
         list={[
           {
@@ -319,6 +472,17 @@ export const EditCuratedSet = ({ id }) => {
           },
         ]}
         current={data.published}
+      />
+
+      <NumberInput
+        min={42}
+        max={215}
+        step={1}
+        key="height"
+        label="Height"
+        update={(val) => updateData('height', val)}
+        current={Number(data.height)}
+        valid={notEmpty}
       />
 
       <h2 id="measies">{t('measies')}</h2>

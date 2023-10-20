@@ -2,4 +2,7 @@
 title: "Titan basispatroon broek"
 ---
 
-<PatternDocs pattern='titan' />
+
+
+<DesignInfo design='titan' docs />
+

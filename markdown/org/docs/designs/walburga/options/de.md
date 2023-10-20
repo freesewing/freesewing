@@ -2,4 +2,4 @@
 title: "Walburga Wappenrock: Gestaltungsmöglichkeiten"
 ---
 
-<PatternOptions pattern='walburga' />
+<DesignOptions design='walburga' />

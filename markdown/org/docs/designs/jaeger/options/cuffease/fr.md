@@ -4,7 +4,7 @@ title: "Aisance de poignet"
 
 ![Aisance de poignet](cuffease.svg)
 
-L'aisance au niveau du poignet.
+L'ampleur d'aisance à votre poignet.
 
 ## Effet de cette option sur le motif
 

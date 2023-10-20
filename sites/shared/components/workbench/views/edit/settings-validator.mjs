@@ -1,3 +1,4 @@
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 /** A utility for validating a gist against a patternConfig */
 class SettingsValidator {
   givenSettings

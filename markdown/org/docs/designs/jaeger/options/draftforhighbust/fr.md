@@ -2,7 +2,7 @@
 title: Tracé pour le buste supérieur
 ---
 
-Dessinez le patron pour le buste supérieur (s'il existe) plutôt que pour la poitrine (entière). Il en résulte un vêtement plus ajusté pour les personnes ayant une poitrine.
+Dessiner le patron pour la mesure de la poitrine (si disponible) plutôt que pour le torse (entier). Cela permet d'obtenir un vêtement plus ajusté pour les personnes ayant une poitrine.
 
 ## Effet de cette option sur le motif
 

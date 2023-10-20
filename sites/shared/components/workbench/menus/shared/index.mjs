@@ -1,34 +1,6 @@
-//import { useContext } from 'react'
+//  __SDEFILE__ - This file is a dependency for the stand-alone environment
 import { MenuItemGroup } from './menu-item.mjs'
 import { useTranslation } from 'next-i18next'
-//import { ModalWrapper } from 'shared/components/wrappers/modal.mjs'
-//import { ModalContext } from 'shared/context/modal-context.mjs'
-
-/**
- * get a loadDocs method for a menu
- * @param  {DynamicDocs} DynamicDocs      the docs component to use
- * @param  {Function} getDocsPath         a function that accepts an item name and returns a path to its documentation
- * @param  {string} language              the language to get documentation in
- * @return {Function | false}             an event handler that loads does into a modal
- */
-/*
-export const useDocsLoader = (DynamicDocs, getDocsPath, language) => {
-  const { setModal } = useContext(ModalContext)
-  return DynamicDocs
-    ? (evt, name = false) => {
-        evt.stopPropagation()
-        const path = getDocsPath(name)
-        setModal(
-          <ModalWrapper>
-            <div className="max-w-prose">
-              <DynamicDocs path={path} language={language} />
-            </div>
-          </ModalWrapper>
-        )
-      }
-    : false
-}
-*/
 
 /**
  * A component for a collapsible sidebar menu in workbench views
@@ -42,8 +14,6 @@ export const useDocsLoader = (DynamicDocs, getDocsPath, language) => {
  * @param  {Object}   options.values        a map of value components to use, keyed by option name
  * @param  {Object}   options.currentValues a map of the values of the menu's options
  * @param  {Object}   options.passProps     any additional properties to pass the the inputs
- * @param  {DynamicDocs | Boolean}  DynamicDocs           the docs component to use for loading documentation
- * @param  {Function} getDocsPath           a function that accepts an item name and returns a path to its documentation
  * @param  {string}   language              the language to use for the menu
  * @param  {Object}   emojis                a map of the emojis to use, keyed by option name
  * @param  {React.component}   Item                  the component to use for menu items
@@ -53,28 +23,21 @@ export const WorkbenchMenu = ({
   updateFunc,
   ns,
   Icon = () => null,
-  //name,
   config,
   control,
   inputs,
   values,
   currentValues,
   passProps = {},
-  DynamicDocs = false,
-  getDocsPath = () => {},
   language,
   emojis,
   Item,
-  //isFirst,
   children,
-  //docsPath,
   isDesignOptionsGroup,
+  design,
 }) => {
   // get translation for the menu
   const { t } = useTranslation(ns)
-
-  // get a documentation loader
-  //const loadDocs = useDocsLoader(DynamicDocs, getDocsPath, language)
 
   return children ? (
     children
@@ -90,15 +53,13 @@ export const WorkbenchMenu = ({
         Icon,
         values,
         inputs,
-        //loadDocs,
         passProps,
         updateFunc,
         emojis,
         t,
-        DynamicDocs,
-        getDocsPath,
         language,
         isDesignOptionsGroup,
+        design,
       }}
     />
   )

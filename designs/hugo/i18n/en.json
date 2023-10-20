@@ -18,7 +18,15 @@
     "hoodSide": "Hood side",
     "pocketFacing": "Pocket facing",
     "pocket": "Pocket",
-    "waistband": "Waistband"
+    "waistband": "Waistband",
+    "cutPocket.t": "The pocket is not shown",
+    "cutPocket.d": "The **Pocket** (4) is not shown, but you can trace it from the Front part (1), which has the pocket outline on it (not including seam allowance).",
+    "cutCuff.t": "The cuff is not shown",
+    "cutCuff.d": "The **Cuff** (9) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long.",
+    "cutHoodCenter.t": "The hood center is not shown",
+    "cutHoodCenter.d": "The **Hood center** (7) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long.",
+    "cutWaistband.t": "The waistband is not shown",
+    "cutWaistband.d": "The **Waistband** (8) is a rectangular piece of ribbing fabric {{{ w }}} wide and {{{ l }}} long"
   },
   "o": {
     "ribbingHeight": {
@@ -28,6 +36,10 @@
     "ribbingStretch": {
       "t": "Ribbing stretch",
       "d": "Use this to adapt the pattern to how stretchy the ribbing that you are using is."
+    },
+    "pocketWidth": {
+      "t": "Pocket width",
+      "d": "Determined the width of the pocket."
     },
     "hipsEase": {
       "t": "Hips ease",

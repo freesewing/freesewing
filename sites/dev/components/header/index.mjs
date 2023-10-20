@@ -6,16 +6,17 @@ import { useTheme } from 'shared/hooks/use-theme.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
 import {
-  I18nIcon,
   SearchIcon,
   ThemeIcon,
   MenuIcon,
-  DesignIcon,
   CodeIcon,
   DocsIcon,
-  WrenchIcon,
   FreeSewingIcon,
   HeartIcon,
+  PlusIcon,
+  RocketIcon,
+  TutorialIcon,
+  YouTubeIcon,
 } from 'shared/components/icons.mjs'
 import { HeaderWrapper } from 'shared/components/wrappers/header.mjs'
 import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-picker.mjs'
@@ -39,11 +40,44 @@ const NavIcons = ({ setModal, slug }) => {
         <MenuIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
-      <NavButton href="/api" label="API Docs" color={spectrum[1]} extraClasses="hidden lg:flex">
+      <NavButton href="/guides" label="Guides" color={spectrum[1]} extraClasses="hidden lg:flex">
+        <RocketIcon className={iconSize} />
+      </NavButton>
+      <NavButton href="/howtos" label="Howtos" color={spectrum[1]} extraClasses="hidden lg:flex">
         <DocsIcon className={iconSize} />
       </NavButton>
-      <NavButton href="/design" label="Design" color={spectrum[2]} extraClasses="hidden lg:flex">
-        <DesignIcon className={iconSize} />
+      <NavButton
+        href="/reference"
+        label="Reference"
+        color={spectrum[1]}
+        extraClasses="hidden lg:flex"
+      >
+        <CodeIcon className={iconSize} />
+      </NavButton>
+      <NavButton
+        href="/tutorials"
+        label="Tutorials"
+        color={spectrum[1]}
+        extraClasses="hidden lg:flex"
+      >
+        <TutorialIcon className={iconSize} />
+      </NavButton>
+      <NavButton
+        href="/training"
+        label="Training"
+        color={spectrum[1]}
+        extraClasses="hidden lg:flex"
+      >
+        <YouTubeIcon fill stroke={0} className={iconSize} />
+      </NavButton>
+      <NavSpacer />
+      <NavButton
+        href="https://freesewing.org/"
+        label="About"
+        color={spectrum[3]}
+        extraClasses="hidden lg:flex"
+      >
+        <FreeSewingIcon className={iconSize} />
       </NavButton>
       <NavButton
         href="/contribute"
@@ -51,25 +85,15 @@ const NavIcons = ({ setModal, slug }) => {
         color={spectrum[3]}
         extraClasses="hidden lg:flex"
       >
-        <CodeIcon className={iconSize} />
-      </NavButton>
-      <NavButton href="/i18n" label="Translate" color={spectrum[4]} extraClasses="hidden lg:flex">
-        <I18nIcon className={iconSize} />
+        <PlusIcon className={iconSize} />
       </NavButton>
       <NavButton
-        href="/infra"
-        label="Infrastrucure"
-        color={spectrum[5]}
+        href="https://freesewing.org/support"
+        label="Support"
+        color={spectrum[3]}
         extraClasses="hidden lg:flex"
       >
-        <WrenchIcon className={iconSize} stroke={1.5} />
-      </NavButton>
-      <NavSpacer />
-      <NavButton href="/about" label="About" color={spectrum[6]} extraClasses="hidden lg:flex">
-        <FreeSewingIcon className={iconSize} />
-      </NavButton>
-      <NavButton href="/support" label="Support" color={spectrum[7]} extraClasses="hidden lg:flex">
-        <HeartIcon className={iconSize} fill />
+        <HeartIcon className={iconSize} fill stroke={0} />
       </NavButton>
       <NavSpacer />
       <NavButton

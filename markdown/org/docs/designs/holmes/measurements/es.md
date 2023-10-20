@@ -2,4 +2,4 @@
 title: "Sombrero de cazador Holmes: Medidas requeridas"
 ---
 
-<PatternMeasurements pattern='holmes' />
+<DesignMeasurements design='holmes' />

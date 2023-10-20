@@ -2,4 +2,7 @@
 title: "Викрійка-основа Белла"
 ---
 
-<PatternDocs pattern='bella' />
+
+
+<DesignInfo design='bella' docs />
+

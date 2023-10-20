@@ -2,4 +2,7 @@
 title: "Pantalon Paco"
 ---
 
-<PatternDocs pattern='paco' />
+
+
+<DesignInfo design='paco' docs />
+

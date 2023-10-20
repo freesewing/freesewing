@@ -1,6 +1,6 @@
 {
   "name": "@freesewing/bee",
-  "version": "3.0.0-alpha.10",
+  "version": "3.0.0",
   "description": "A FreeSewing pattern for a bikini top",
   "author": "bobgeorgethe3rd (https://github.com/bobgeorgethe3rd)",
   "homepage": "https://freesewing.org/",
@@ -49,16 +49,15 @@
     "wbuild:all": "yarn wbuild"
   },
   "peerDependencies": {
-    "@freesewing/core": "3.0.0-alpha.10",
-    "@freesewing/plugin-bundle": "3.0.0-alpha.10",
-    "@freesewing/bella": "3.0.0-alpha.10"
+    "@freesewing/core": "3.0.0",
+    "@freesewing/bella": "3.0.0"
   },
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.2.0",
-    "chai": "4.3.7",
-    "@freesewing/models": "3.0.0-alpha.10",
-    "@freesewing/plugin-timing": "3.0.0-alpha.10"
+    "chai": "4.3.10",
+    "@freesewing/models": "3.0.0",
+    "@freesewing/plugin-timing": "3.0.0"
   },
   "files": [
     "dist/*",
@@ -66,7 +65,7 @@
   ],
   "publishConfig": {
     "access": "public",
-    "tag": "next"
+    "tag": "latest"
   },
   "engines": {
     "node": "18",

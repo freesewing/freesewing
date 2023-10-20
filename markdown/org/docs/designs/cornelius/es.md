@@ -2,4 +2,7 @@
 title: "Cornelius, pantalones cortos de ciclista"
 ---
 
-<PatternDocs pattern='cornelius' />
+
+
+<DesignInfo design='cornelius' docs />
+

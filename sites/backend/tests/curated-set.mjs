@@ -17,12 +17,7 @@ export const curatedSetTests = async (chai, config, expect, store) => {
       notesFr: 'Ce sont les notes A',
       notesNl: 'Dit zijn de notities A',
       notesUk: 'These are the ukranian notes A',
-      tagsDe: ['tagA', 'tagB'],
-      tagsEn: ['tagA', 'tagB'],
-      tagsEs: ['tagA', 'tagB'],
-      tagsFr: ['tagA', 'tagB'],
-      tagsNl: ['tagA', 'tagB'],
-      tagsUk: ['tagA', 'tagB'],
+      tags: ['tagA', 'tagB'],
       measies: {
         chest: 1000,
         neck: 420,
@@ -42,17 +37,11 @@ export const curatedSetTests = async (chai, config, expect, store) => {
       notesFr: 'Ce sont les notes B',
       notesNl: 'Dit zijn de notities B',
       notesUk: 'These are the ukranian notes B',
-      tagsDe: ['tagA', 'tagB'],
-      tagsEn: ['tagA', 'tagB'],
-      tagsEs: ['tagA', 'tagB'],
-      tagsFr: ['tagA', 'tagB'],
-      tagsNl: ['tagA', 'tagB'],
-      tagsUk: ['tagA', 'tagB'],
+      tags: ['tagA', 'tagB'],
       measies: {
         chest: 930,
         neck: 360,
       },
-      img: cat,
     },
   }
   store.curatedSet = {
@@ -87,7 +76,7 @@ export const curatedSetTests = async (chai, config, expect, store) => {
             expect(res.status).to.equal(201)
             expect(res.body.result).to.equal(`created`)
             for (const [key, val] of Object.entries(data[auth])) {
-              if (!['measies', 'img', 'test'].includes(key)) {
+              if (!['measies', 'test'].includes(key)) {
                 expect(JSON.stringify(res.body.curatedSet[key])).to.equal(JSON.stringify(val))
               }
             }
@@ -236,8 +225,8 @@ export const curatedSetTests = async (chai, config, expect, store) => {
             set: 1,
             notes: 'These are the notes',
             name: 'me',
-            img: 'https://images.pexels.com/photos/1404819/pexels-photo-1404819.jpeg?cs=srgb&dl=pexels-cong-h-1404819.jpg&fm=jpg&w=640&h=427&_gl=1*nyz31t*_ga*MTM0OTk5OTY4NS4xNjYxMjUyMjc0*_ga_8JE65Q40S6*MTY5Mzg0MzAwNi4yNC4xLjE2OTM4NDMwMjIuMC4wLjA.',
             height: '166cm',
+            img: cat,
           })
           .end((err, res) => {
             expect(err === null).to.equal(true)

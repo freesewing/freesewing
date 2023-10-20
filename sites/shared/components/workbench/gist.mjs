@@ -27,6 +27,7 @@ export const defaultGist = {
   margin: 2,
   renderer: 'react',
   embed: true,
+  expand: false,
 }
 
 export const preloadGist = {

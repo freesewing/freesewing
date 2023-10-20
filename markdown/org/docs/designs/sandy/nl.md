@@ -2,4 +2,7 @@
 title: "Sandy cirkelrok"
 ---
 
-<PatternDocs pattern='sandy' />
+
+
+<DesignInfo design='sandy' docs />
+

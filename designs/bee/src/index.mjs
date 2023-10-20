@@ -12,33 +12,42 @@ const Bee = new Design({
 })
 
 // Merge translations
+const i18nKeepOptions = [
+  ...Object.keys(cup.options),
+  ...Object.keys(neckTie.options),
+  ...Object.keys(bandTie.options),
+  'bustDartCurve',
+  'bustSpanEase',
+  'chestEase',
+  'fullChestEaseReduction',
+  'shoulderToShoulderEase',
+  'waistEase',
+  'backDartHeight',
+  'bustDartLength',
+  'waistDartLength',
+  'armholeDepth',
+  'backArmholeCurvature',
+  'backArmholePitchDepth',
+  'backArmholeSlant',
+  'frontArmholeCurvature',
+  'frontArmholePitchDepth',
+  'backHemSlope',
+  'backNeckCutout',
+  'frontShoulderWidth',
+  'highBustWidth',
+]
+for (const o of [
+  'reversible',
+  'duoColorTies',
+  'pointedTieEnds',
+  'crossBackTies',
+  'bellaGuide',
+  'ties',
+])
+  i18nKeepOptions.push(o + 'Yes', o + 'No')
+
 const i18n = mergeI18n([bellaI18n, beeI18n], {
-  o: {
-    keep: [
-      ...Object.keys(cup.options),
-      ...Object.keys(neckTie.options),
-      ...Object.keys(bandTie.options),
-      'bustDartCurve',
-      'bustSpanEase',
-      'chestEase',
-      'fullChestEaseReduction',
-      'shoulderToShoulderEase',
-      'waistEase',
-      'backDartHeight',
-      'bustDartLength',
-      'waistDartLength',
-      'armholeDepth',
-      'backArmholeCurvature',
-      'backArmholePitchDepth',
-      'backArmholeSlant',
-      'frontArmholeCurvature',
-      'frontArmholePitchDepth',
-      'backHemSlope',
-      'backNeckCutout',
-      'frontShoulderWidth',
-      'highBustWidth',
-    ],
-  },
+  o: { keep: i18nKeepOptions },
 })
 
 export { cup, neckTie, bandTie, Bee, i18n }

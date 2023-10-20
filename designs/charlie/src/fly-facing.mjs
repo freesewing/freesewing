@@ -1,16 +1,6 @@
 import { front } from './front.mjs'
 
-function draftCharlieFlyFacing({
-  points,
-  Point,
-  paths,
-  Path,
-  complete,
-  macro,
-  snippets,
-  sa,
-  part,
-}) {
+function draftCharlieFlyFacing({ points, Point, paths, Path, macro, snippets, store, sa, part }) {
   // Clean up
   for (let id in paths) delete paths[id]
   for (let id in snippets) delete snippets[id]
@@ -32,27 +22,36 @@ function draftCharlieFlyFacing({
     .close()
     .attr('class', 'fabric')
 
-  if (complete) {
-    points.grainlineTop = points.flyTop.shiftFractionTowards(points.styleWaistIn, 0.5)
-    points.grainlineBottom = new Point(points.grainlineTop.x, points.flyCurveCp2.y)
-    macro('grainline', {
-      from: points.grainlineTop,
-      to: points.grainlineBottom,
-    })
-    points.titleAnchor = points.grainlineTop.shiftFractionTowards(points.grainlineBottom, 0.5)
-    macro('title', {
-      at: points.titleAnchor,
-      nr: 9,
-      title: 'flyFacing',
-    })
-    if (sa)
-      paths.sa = paths.saBase
-        .offset(sa)
-        .line(points.flyCurveStart)
-        .reverse()
-        .line(points.flyBottom)
-        .attr('class', 'sa fabric')
-  }
+  if (sa)
+    paths.sa = paths.saBase
+      .offset(sa)
+      .line(points.flyCurveStart)
+      .reverse()
+      .line(points.flyBottom)
+      .addClass('sa fabric')
+
+  /*
+   * Annotations
+   */
+  store.cutlist.setCut({ cut: 2, from: 'fabric' })
+
+  // Grainline
+  points.grainlineTop = points.flyTop.shiftFractionTowards(points.styleWaistIn, 0.5)
+  points.grainlineBottom = new Point(points.grainlineTop.x, points.flyCurveCp2.y)
+  macro('grainline', {
+    from: points.grainlineTop,
+    to: points.grainlineBottom,
+  })
+
+  // Title
+  points.titleAnchor = points.grainlineTop.shiftFractionTowards(points.grainlineBottom, 0.5)
+  macro('title', {
+    at: points.titleAnchor,
+    nr: 9,
+    title: 'flyFacing',
+    align: 'center',
+    scale: 0.5,
+  })
 
   return part
 }

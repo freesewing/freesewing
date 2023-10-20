@@ -2,4 +2,7 @@
 title: "Carlton, der Mantel"
 ---
 
-<PatternDocs pattern='carlton' />
+
+
+<DesignInfo design='carlton' docs />
+

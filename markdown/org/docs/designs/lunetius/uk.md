@@ -2,4 +2,7 @@
 title: "Ласерна Лютінус"
 ---
 
-<PatternDocs pattern='lunetius' />
+
+
+<DesignInfo design='lunetius' docs />
+

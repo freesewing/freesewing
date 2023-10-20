@@ -2,4 +2,7 @@
 title: "Diana, das drapierte Oberteil"
 ---
 
-<PatternDocs pattern='diana' />
+
+
+<DesignInfo design='diana' docs />
+

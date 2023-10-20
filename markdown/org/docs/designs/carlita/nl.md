@@ -2,4 +2,7 @@
 title: "Carlita jas"
 ---
 
-<PatternDocs pattern='carlita' />
+
+
+<DesignInfo design='carlita' docs />
+
