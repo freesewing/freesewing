@@ -109,7 +109,7 @@ Das bedeutet natürlich, dass Ihre Schulternaht durch Ihre Bindung geschnitten w
 
 Auf diese Weise erraten wir nicht, wie lange Ihre Bindung sein sollte, und die bindenden Naht sitzt dort, wo Sie sie haben wollen.
 
-> Für detaillierte Anweisungen, schaue dir [die Aaron-Dokumentation](/docs/patterns/aaron/)
+> Für detaillierte Anweisungen, schaue dir [die Aaron-Dokumentation](/docs/designs/aaron/instructions)
 
 ## Alternate method
 
