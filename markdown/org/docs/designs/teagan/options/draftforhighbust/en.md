@@ -27,6 +27,6 @@ high bust / bust ratio).
 This option has no effect when there's no high bust measurement provided
 </Note>
 
+## Effect of this option on the pattern
 
-
-
+![This image shows the effect of this option by superimposing several variants that have a different value for this option](teagan_draftforhighbust_sample.svg "Effect of this option on the pattern")
