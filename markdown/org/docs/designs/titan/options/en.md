@@ -2,4 +2,4 @@
 title: "Titan trouser block: Design Options"
 ---
 
-<DesignOptions design='titan' />
+<PatternOptions pattern='titan' />
