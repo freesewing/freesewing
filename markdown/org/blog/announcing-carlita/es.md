@@ -38,7 +38,7 @@ De este modo, el bolsillo puede integrarse en la costura princesa, en algún lug
 
 ### Una opción extra: El factor liso de la costura princesa
 
-Carlita también tiene una opción extra que Carlton no tiene, el factor de costura lisa [Princess, de nombre algo elaborado](/docs/patterns/carlita/options#princessSeamSmoothFactor).
+Carlita también tiene una opción extra que Carlton no tiene, el factor de costura lisa [Princess, de nombre algo elaborado](/docs/designs/carlita/options#princessSeamSmoothFactor).
 
 De este modo se controla el retroceso de la costura princesa después de haber añadido el volumen extra para el pecho.
 
