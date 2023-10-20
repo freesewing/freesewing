@@ -5,7 +5,7 @@ title: "Sudadera con capucha Yuri: Lo que necesitas"
 Para hacer Yuri, necesitarás lo siguiente:
 
 - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
-- Unos 2,5 metros (2,8 yardas) de una tela adecuada ([ver Opciones de tela](/docs/patterns/yuri/fabric))
+- Unos 2,5 metros (2,8 yardas) de una tela adecuada ([ver Opciones de tela](/docs/designs/yuri/fabric))
 - 2 botones grandes
 
 <Note>
