@@ -53,6 +53,7 @@ function draftRaglanSleeve({
     ) // Get how far from the biceps to the wrist the sleeve is. Do not taper the sleeve any smaller than the wrist itself, for sleeves that extend past the wrist.
     sleeveWidth = adjustedBiceps * (1 - sleevePercent) + adjustedWrist * sleevePercent // Interpolate
   }
+  store.set('sleeveWidth', sleeveWidth) // Needed for the ribbing piece.
 
   sleeveWidth /= 2 // Takes into account that there is fabric on both sides of the center line.
   const totalLength = lengthToArmhole + sleeveLength
@@ -294,7 +295,7 @@ function draftRaglanSleeve({
     if (sa) {
       paths.sa = paths.saBase
         .offset(sa)
-        .join(paths.hemBase.offset(absoluteOptions.sleeveHem))
+        .join(paths.hemBase.offset(options.sleeveRibbing ? sa : absoluteOptions.sleeveHem))
         .close()
         .attr('class', 'fabric sa')
     }

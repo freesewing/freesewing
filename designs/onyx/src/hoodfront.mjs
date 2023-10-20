@@ -10,6 +10,7 @@ function draftHoodFront({
   points,
   measurements,
   options,
+  absoluteOptions,
   part,
   store,
   paperless,
@@ -175,9 +176,9 @@ function draftHoodFront({
 
     if (sa) {
       paths.sa = paths.saHem
-        .offset(sa * options.hoodHem * 100)
+        .offset(absoluteOptions.hoodHem)
         .join(paths.saBase.offset(sa))
-        .line(points.frontTop.translate(-sa * options.hoodHem * 100, 0))
+        .line(points.frontTop.translate(-absoluteOptions.hoodHem, 0))
         .attr('class', 'fabric sa')
     }
   }

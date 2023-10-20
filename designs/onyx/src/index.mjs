@@ -13,6 +13,7 @@ import { hood } from './hood.mjs'
 import { hoodFront } from './hoodfront.mjs'
 import { skirt } from './skirt.mjs'
 import { sleeveRibbing } from './sleeveribbing.mjs'
+import { legRibbing } from './legribbing.mjs'
 
 // Create new design
 const Onyx = new Design({
@@ -28,6 +29,7 @@ const Onyx = new Design({
     hoodFront,
     skirt,
     sleeveRibbing,
+    legRibbing,
   ],
 })
 
@@ -43,6 +45,7 @@ export {
   hoodFront,
   skirt,
   sleeveRibbing,
+  legRibbing,
   Onyx,
   i18n,
 }

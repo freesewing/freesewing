@@ -169,8 +169,8 @@ function draftBack({
 
     if (sa) {
       paths.sa = new Path()
-        .move(points.inseamHem.shift(270, absoluteOptions.legHem))
-        .join(paths.hemBase.offset(absoluteOptions.legHem))
+        .move(points.inseamHem.shift(270, options.legRibbing ? sa : absoluteOptions.legHem))
+        .join(paths.hemBase.offset(options.legRibbing ? sa : absoluteOptions.legHem))
         .join(paths.saBase.offset(sa))
         .attr('class', 'fabric sa')
       if (options.backOnFold) {
@@ -178,7 +178,7 @@ function draftBack({
         paths.sa2 = new Path()
           .move(points.cfCrotch)
           .join(paths.inseamBase.offset(sa))
-          .line(points.inseamHem.shift(270, absoluteOptions.legHem))
+          .line(points.inseamHem.shift(270, options.legRibbing ? sa : absoluteOptions.legHem))
           .attr('class', 'fabric sa')
       } else paths.sa.close()
     }

@@ -1,6 +1,6 @@
-import { raglanSleeve } from './raglansleeve.mjs'
+import { base } from './base.mjs'
 
-function draftSleeveRibbing({
+function draftLegRibbing({
   Path,
   Point,
   paths,
@@ -16,18 +16,18 @@ function draftSleeveRibbing({
   snippets,
   Snippet,
 }) {
-  if (!options.sleeveRibbing) return part.hide()
+  if (!options.legRibbing) return part.hide()
 
-  const ribbingLength = store.get('sleeveWidth') * options.sleeveRibbingLength
-  const sleeveRibbingWidth = 2 * absoluteOptions.sleeveRibbingWidth
+  const ribbingLength = store.get('legWidth') * options.legRibbingLength
+  const legRibbingWidth = 2 * absoluteOptions.legRibbingWidth
 
   points.topLeftCorner = new Point(0, 0)
-  points.bottomLeftCorner = new Point(0, sleeveRibbingWidth)
-  points.bottomRightCorner = new Point(ribbingLength, sleeveRibbingWidth)
+  points.bottomLeftCorner = new Point(0, legRibbingWidth)
+  points.bottomRightCorner = new Point(ribbingLength, legRibbingWidth)
   points.topRightCorner = new Point(ribbingLength, 0)
 
-  points.leftCenter = new Point(0, sleeveRibbingWidth / 2)
-  points.rightCenter = new Point(ribbingLength, sleeveRibbingWidth / 2)
+  points.leftCenter = new Point(0, legRibbingWidth / 2)
+  points.rightCenter = new Point(ribbingLength, legRibbingWidth / 2)
 
   paths.saBase = new Path()
     .move(points.bottomLeftCorner)
@@ -50,13 +50,13 @@ function draftSleeveRibbing({
 
   if (paperless) {
     macro('vd', {
-      id: 'vdSleeveRibbing',
+      id: 'vdLegRibbing',
       from: points.topLeftCorner,
       to: points.bottomLeftCorner,
       x: -(sa + 15),
     })
     macro('hd', {
-      id: 'hdSleeveRibbing',
+      id: 'hdLegRibbing',
       from: points.topLeftCorner,
       to: points.topRightCorner,
       y: -(sa + 15),
@@ -74,8 +74,8 @@ function draftSleeveRibbing({
   store.cutlist.addCut({ cut: 2, from: 'ribbing' })
 
   if (complete) {
-    points.title = new Point(ribbingLength / 4, sleeveRibbingWidth / 2)
-    macro('title', { at: points.title, nr: 10, title: 'sleeveRibbing' })
+    points.title = new Point(ribbingLength / 4, legRibbingWidth / 2)
+    macro('title', { at: points.title, nr: 11, title: 'legRibbing' })
 
     if (sa) {
       paths.sa = new Path()
@@ -91,27 +91,27 @@ function draftSleeveRibbing({
   return part
 }
 
-export const sleeveRibbing = {
-  name: 'onyx.sleeveRibbing',
+export const legRibbing = {
+  name: 'onyx.legRibbing',
   plugins: [],
-  draft: draftSleeveRibbing,
-  after: [raglanSleeve],
+  draft: draftLegRibbing,
+  after: [base],
   options: {
-    // How wide the sleeve ribbing should be, in absolute measure.
-    sleeveRibbingWidth: {
+    // How wide the leg ribbing should be, in absolute measure.
+    legRibbingWidth: {
       pct: 20,
       min: 0,
       max: 100,
       snap: { metric: 5, imperial: 6.35 },
-      toAbs: (pct, settings, mergedOptions) => mergedOptions.sleeveRibbingWidth * 200, // Valid range is from 0 to 200mm.
-      menu: (settings, mergedOptions) => (mergedOptions.sleeveRibbing ? 'construction' : false),
+      toAbs: (pct, settings, mergedOptions) => mergedOptions.legRibbingWidth * 200, // Valid range is from 0 to 200mm.
+      menu: (settings, mergedOptions) => (mergedOptions.legRibbing ? 'construction' : false),
     },
-    // How long the sleeve ribbing should be, as a percentage of the length around the sleeve.
-    sleeveRibbingLength: {
+    // How long the leg ribbing should be, as a percentage of the length around the leg.
+    legRibbingLength: {
       pct: 75,
       min: 50,
       max: 100,
-      menu: (settings, mergedOptions) => (mergedOptions.sleeveRibbing ? 'construction' : false),
+      menu: (settings, mergedOptions) => (mergedOptions.legRibbing ? 'construction' : false),
     },
   },
 }

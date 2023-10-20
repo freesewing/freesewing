@@ -52,6 +52,7 @@ function draftBase({
   let legHemCircumference =
     (1 + options.legHemEase) *
     (adjustedLegLength * measurements.ankle + (1 - adjustedLegLength) * measurements.upperLeg)
+  store.set('legWidth', legHemCircumference) // Needed for the ribbing piece.
   legHemCircumference -= crotchGussetWidth
   //  const grainlinePosition = seat / 8 + crotchScoopWidth / 2
 
@@ -265,8 +266,8 @@ function draftBase({
 
     if (sa) {
       paths.sa = new Path()
-        .move(points.inseamHem.shift(270, absoluteOptions.legHem))
-        .join(paths.hemBase.offset(absoluteOptions.legHem))
+        .move(points.inseamHem.shift(270, options.legRibbing ? sa : absoluteOptions.legHem))
+        .join(paths.hemBase.offset(options.legRibbing ? sa : absoluteOptions.legHem))
         .join(paths.saBase.offset(sa))
         .attr('class', 'fabric sa')
       if (options.frontOnFold) {
@@ -274,7 +275,7 @@ function draftBase({
         paths.sa2 = new Path()
           .move(points.cfCrotch)
           .join(paths.inseamBase.offset(sa))
-          .line(points.inseamHem.shift(270, absoluteOptions.legHem))
+          .line(points.inseamHem.shift(270, options.legRibbing ? sa : absoluteOptions.legHem))
           .attr('class', 'fabric sa')
       } else paths.sa.close()
     }
@@ -310,8 +311,10 @@ export const base = {
     neckStyle: { dflt: 'neckband', list: ['neckband', 'hood'], menu: 'style' },
     // Do we want to add a swim skirt to the unisuit?
     swimSkirt: { bool: false, menu: 'style' },
-    // Are we using ribbing to finish the sleeve, or just hemming?
+    // Are we using ribbing to finish the sleeves, or just hemming?
     sleeveRibbing: { bool: false, menu: 'construction' },
+    // Are we using ribbing to finish the legs, or just hemming?
+    legRibbing: { bool: false, menu: 'construction' },
     // How much ease to give for the neck, as a percentage.
     neckEase: { pct: 50, min: -30, max: 150, menu: 'fit' },
     chestEase: { pct: 0, min: -40, max: 50, menu: 'fit' },
@@ -340,7 +343,7 @@ export const base = {
       min: 0,
       max: 800,
       toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.legHem,
-      menu: 'construction',
+      menu: (settings, mergedOptions) => (mergedOptions.legRibbing ? false : 'construction'),
     },
     // How wide the scoop to each side of the crotch sweeps (excluding the gusset, as a % of the verticalTrunk.
     crotchScoopWidth: { pct: 1.5, min: 1, max: 5, menu: 'advanced' },

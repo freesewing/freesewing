@@ -273,6 +273,7 @@ export const hood = {
       pct: 200,
       min: 0,
       max: 800,
+      toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.hoodHem,
       menu: (settings, mergedOptions) =>
         mergedOptions.neckStyle == 'hood' ? 'construction' : false,
     },
