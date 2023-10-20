@@ -10,8 +10,8 @@ Je kunt een goede handleiding vinden voor andere gereedschappen bij [Foundations
 
 Lijst met voorbeeldbenodigdheden:
 
-- Ongeveer 0,5 meter kernstof ([zie Stofopties](/docs/patterns/cathrin/fabric))
-- Ongeveer 0,5 meter buitenstof ([zie Stofopties](/docs/patterns/cathrin/fabric))
+- Ongeveer 0,5 meter kernstof ([zie Stofopties](/docs/designs/cathrin/fabric))
+- Ongeveer 0,5 meter buitenstof ([zie Stofopties](/docs/designs/cathrin/fabric))
 - Boning
 - Grommets (size 2)
 - Ongeveer 2 meter biaslint
