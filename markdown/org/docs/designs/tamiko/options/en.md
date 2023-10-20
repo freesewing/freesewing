@@ -2,4 +2,4 @@
 title: "Tamiko top: Design Options"
 ---
 
-<DesignOptions design='tamiko' />
+<PatternOptions pattern='tamiko' />
