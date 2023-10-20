@@ -40,7 +40,7 @@ export const ImgSettings = ({ welcome = false }) => {
       {!welcome || img !== false ? (
         <img
           alt="img"
-          src={img || cloudflareImageUrl({ id: `user-${account.ihash}`, variant: 'public' })}
+          src={img || cloudflareImageUrl({ id: `uid-${account.ihash}`, variant: 'public' })}
           className="shadow mb-4"
         />
       ) : null}

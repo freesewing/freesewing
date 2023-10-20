@@ -10,7 +10,7 @@ import { ns as setsNs } from 'shared/components/account/sets.mjs'
 import { DesignPicker, ns as designNs } from 'shared/components/designs/design-picker.mjs'
 
 // Translation namespaces used on this page
-const ns = nsMerge(designNs, setsNs, authNs, pageNs)
+const ns = nsMerge(designNs, setsNs, authNs, pageNs, 'sections')
 
 /*
  * Each page MUST be wrapped in the PageWrapper component.
@@ -18,7 +18,7 @@ const ns = nsMerge(designNs, setsNs, authNs, pageNs)
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const NewSetPage = ({ page }) => {
+const NewPatternPage = ({ page }) => {
   const { t } = useTranslation(ns)
 
   return (
@@ -28,7 +28,7 @@ const NewSetPage = ({ page }) => {
   )
 }
 
-export default NewSetPage
+export default NewPatternPage
 
 export async function getStaticProps({ locale }) {
   return {

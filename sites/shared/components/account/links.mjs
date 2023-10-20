@@ -122,7 +122,7 @@ export const AccountLinks = () => {
     bio: account.bio ? <span>{account.bio.slice(0, 15)}&hellip;</span> : '',
     img: (
       <img
-        src={cloudflareImageUrl({ type: 'sq100', id: `user-${account.ihash}` })}
+        src={cloudflareImageUrl({ type: 'sq100', id: `uid-${account.ihash}` })}
         className="w-8 h-8 aspect-square rounded-full shadow"
       />
     ),

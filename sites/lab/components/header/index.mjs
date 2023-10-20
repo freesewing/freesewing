@@ -5,22 +5,10 @@ import { useTheme } from 'shared/hooks/use-theme.mjs'
 // Context
 import { ModalContext } from 'shared/context/modal-context.mjs'
 // Components
-import {
-  DesignIcon,
-  DocsIcon,
-  MenuIcon,
-  UserIcon,
-  ThemeIcon,
-  I18nIcon,
-  MeasieIcon,
-  PatternIcon,
-  GitHubIcon,
-  PlusIcon,
-} from 'shared/components/icons.mjs'
+import { UserIcon, ThemeIcon, I18nIcon, PlusIcon } from 'shared/components/icons.mjs'
 import { HeaderWrapper } from 'shared/components/wrappers/header.mjs'
 import { ModalThemePicker, ns as themeNs } from 'shared/components/modal/theme-picker.mjs'
 import { ModalLocalePicker, ns as localeNs } from 'shared/components/modal/locale-picker.mjs'
-import { ModalMenu } from 'site/components/navigation/modal-menu.mjs'
 
 import { NavButton, NavSpacer } from 'shared/components/header.mjs'
 
@@ -33,47 +21,8 @@ const NavIcons = ({ setModal }) => {
 
   return (
     <>
-      <NavButton
-        onClick={() => setModal(<ModalMenu />)}
-        label={t('header:menu')}
-        color={spectrum[0]}
-      >
-        <MenuIcon className={iconSize} />
-      </NavButton>
-      <NavSpacer />
-      <NavButton href="/designs" label={t('header:designs')} color={spectrum[1]}>
-        <DesignIcon className={iconSize} />
-      </NavButton>
-      <NavButton
-        href="/patterns"
-        label={t('header:patterns')}
-        color={spectrum[2]}
-        extraClasses="hidden lg:flex"
-      >
-        <PatternIcon className={iconSize} />
-      </NavButton>
-      <NavButton
-        href="/sets"
-        label={t('header:sets')}
-        color={spectrum[3]}
-        extraClasses="hidden lg:flex"
-      >
-        <MeasieIcon className={iconSize} />
-      </NavButton>
-      <NavSpacer />
-      <NavButton
-        href="/docs"
-        label={t('header:docs')}
-        color={spectrum[4]}
-        extraClasses="hidden lg:flex"
-      >
-        <DocsIcon className={iconSize} />
-      </NavButton>
-      <NavButton href="/code" label={t('sections:code')} color={spectrum[5]}>
-        <GitHubIcon className={iconSize} />
-      </NavButton>
-      <NavButton href="/account" label={t('header:account')} color={spectrum[6]}>
-        <UserIcon className={iconSize} />
+      <NavButton href="/new/pattern" label={t('header:new')} color={spectrum[9]}>
+        <PlusIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
       <NavButton
@@ -91,8 +40,8 @@ const NavIcons = ({ setModal }) => {
         <I18nIcon className={iconSize} />
       </NavButton>
       <NavSpacer />
-      <NavButton href="/new" label={t('header:new')} color={spectrum[9]}>
-        <PlusIcon className={iconSize} />
+      <NavButton href="/account" label={t('header:account')} color={spectrum[6]}>
+        <UserIcon className={iconSize} />
       </NavButton>
     </>
   )
