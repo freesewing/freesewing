@@ -154,8 +154,9 @@ Note: It's not possible to hide this seam in between the lining and the fashion 
 ### Step 3: Attaching the sleeves
 - Fold each sleeve and, with _good sides together_, sew the sleeve seam from the hem to the armpit.
 
-- Keep the garment _inside-out_.
-- With _good sides together_, clip the sleeve to the body. The longer side of each sleeve should be clipped to the back, the shorter side to the front, and the sleeve seam should line up with the outseam. Verify that the sleeve is properly attached. Serge or overlock through all 3 layers.
+- Turn the garment _right-side-out_.
+- Turn the sleeves _right-side-out_.
+- With _good sides together_, clip each sleeve to the body. The longer side of each sleeve should be clipped to the back, the shorter side to the front, and the sleeve seam should line up with the outseam. Verify that the sleeve is properly attached. Serge or overlock through all 3 layers.
 - Repeat with the other sleeve.
 
 ### Step 4a: Attaching the neckband
@@ -175,9 +176,6 @@ Assembling the hood:
 If using lining, do the following two steps, otherwise skip to the next paragraph about hemming.
  - Repeat the previous steps to put together the lining pieces.
  - Place the lining assembly and the main hood assembly together with _good sides together_, and clip them together along the neck.
-
-Hemming the hood (optional for unlined hoods, required for lined hoods):
-The hood should be hemmed at this step, so as not to intefere with the installation of the zipper. See step 7 for more details.
 
 ### Step 5: Preparing the zipper guard
  - Fold the zipper guard in half short ways (so it's half as wide) with _good sides together_, and secure it loosely with a clip or two.
@@ -218,7 +216,7 @@ Sewing the zipper.
 
 ### Step 7: (Optional) Hemming
 
-- Hem the sleeves, bottom of the shirt and/or bottom of the skirt using a single-fold hem. Using a twin needle will add some stretch to the stitching, but in either case the use of a stretch stitch is still recommended for high-stretch fabrics.
+- Hem the sleeves, legs, hood, and/or bottom of the skirt using a single-fold hem. Using a twin needle will add some stretch to the stitching, but in either case the use of a stretch stitch is still recommended for high-stretch fabrics.
 - You may carefully cutaway excess fabric to make a cleaner hem. This is quite optional, since this fabric should stay on the inside.
 - Alternatively, you can overlock or serge the raw edge _without_ folding it over to give it a little bit of substance without adding as much bulk as a folded hem, or you can make a rolled hem.
 - Or you can leave the edges unfinished, particularly if it's swim fabric or some other fabric that does not fray at all.
