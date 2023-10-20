@@ -16,6 +16,6 @@ Let op de standaardwaarde en gebruik dat als basis om de mouw korter of langer t
 
 </Note>
 
-## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](carlita_sleevelengthbonus_sample.svg "Effect van deze optie op het patroon")
+
+
