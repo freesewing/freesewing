@@ -10,8 +10,8 @@ Vous pouvez trouver un bon guide pour d'autres outils sur [Fondations Révélée
 
 Liste d'échantillons de fournitures:
 
-- Environ 0,5 mètre de tissu de base ([voir les options de tissu](/docs/patterns/cathrin/fabric))
-- Environ 0,5 mètre de tissu extérieur ([voir les options de tissu](/docs/patterns/cathrin/fabric))
+- Environ 0,5 mètre de tissu de base ([voir les options de tissu](/docs/designs/cathrin/fabric))
+- Environ 0,5 mètre de tissu extérieur ([voir les options de tissu](/docs/designs/cathrin/fabric))
 - Assaisonnement
 - Grommets (size 2)
 - Environ 2 mètres de bande de biais
