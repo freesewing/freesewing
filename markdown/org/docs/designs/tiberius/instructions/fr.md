@@ -11,7 +11,7 @@ Tibère est un modèle d'inspiration historique, et si tu veux plus d'authentici
 ### Étape 1 : Coudre les coutures des épaules
 
 - Mets les deux parties avec les bons côtés ensemble. Couds les coutures des épaules, en prenant soin de t'arrêter aux encoches pour l'ouverture de la tête.
-- Finis les coutures, avec la méthode de ton choix. (Si tu as utilisé les tissus recommandés dans les options de tissu [](/docs/patterns/tiberius/fabric), ils _s'effilocheront_ . Plier deux fois la marge de couture, entourer le bord brut et surpiquer est une option. Tu peux aussi utiliser des surpiqûres décoratives).
+- Finis les coutures, avec la méthode de ton choix. (Si tu as utilisé les tissus recommandés dans les options de tissu [](/docs/designs/tiberius/fabric), ils _s'effilocheront_ . Plier deux fois la marge de couture, entourer le bord brut et surpiquer est une option. Tu peux aussi utiliser des surpiqûres décoratives).
 
 <Note>
 
