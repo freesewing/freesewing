@@ -1,13 +1,10 @@
-import { front } from './front.mjs'
-import { back } from './back.mjs'
 import { raglanSleeve } from './raglansleeve.mjs'
 
-function draftNeckband({
+function draftSleeveRibbing({
   Path,
   Point,
   paths,
   points,
-  measurements,
   options,
   absoluteOptions,
   part,
@@ -19,7 +16,7 @@ function draftNeckband({
   snippets,
   Snippet,
 }) {
-  if (options.neckStyle != 'neckband') return part.hide()
+  if (!options.sleeveRibbing) return part.hide()
 
   const neckbandLength =
     (store.get('neckLengthFront') + store.get('neckLengthBack') + store.get('neckLengthSide')) *
@@ -76,11 +73,11 @@ function draftNeckband({
     grainline: true,
   })
 
-  store.cutlist.addCut({ cut: 1 })
+  store.cutlist.addCut({ cut: 2 })
 
   if (complete) {
     points.title = new Point(neckbandLength / 4, neckbandWidth / 2)
-    macro('title', { at: points.title, nr: 4, title: 'neckband' })
+    macro('title', { at: points.title, nr: 10, title: 'sleeveRibbing' })
 
     if (sa) {
       paths.sa = new Path()
@@ -96,30 +93,27 @@ function draftNeckband({
   return part
 }
 
-export const neckband = {
-  name: 'onyx.neckband',
+export const sleeveRibbing = {
+  name: 'onyx.sleeveRibbing',
   plugins: [],
-  draft: draftNeckband,
-  after: [front, back, raglanSleeve],
-  measurements: ['neck'],
+  draft: draftSleeveRibbing,
+  after: [raglanSleeve],
   options: {
     // How long the neckband should be, as a percentage of the length of the neck hole.
-    neckbandLength: {
-      pct: 80,
-      min: 50,
-      max: 100,
-      menu: (settings, mergedOptions) =>
-        mergedOptions.neckStyle == 'neckband' ? 'construction' : false,
-    },
-    // How wide the neckband should be, as a percentage of the neckband length.
-    neckbandWidth: {
+    sleeveRibbingWidth: {
       pct: 20,
       min: 0,
       max: 100,
       snap: { metric: 5, imperial: 6.35 },
-      toAbs: (pct, settings, mergedOptions) => mergedOptions.neckbandWidth * 200, // Valid range is from 0 to 200mm.
-      menu: (settings, mergedOptions) =>
-        mergedOptions.neckStyle == 'neckband' ? 'construction' : false,
+      toAbs: (pct, settings, mergedOptions) => mergedOptions.sleeveRibbingWidth * 200, // Valid range is from 0 to 200mm.
+      menu: (settings, mergedOptions) => (mergedOptions.sleeveRibbing ? 'construction' : false),
+    },
+    // How long the neckband should be, as a percentage of the length of the neck hole.
+    sleeveRibbingLength: {
+      pct: 80,
+      min: 50,
+      max: 100,
+      menu: (settings, mergedOptions) => (mergedOptions.sleeveRibbing ? 'construction' : false),
     },
   },
 }

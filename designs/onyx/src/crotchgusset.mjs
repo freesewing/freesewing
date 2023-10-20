@@ -8,6 +8,7 @@ function draftCrotchGusset({
   points,
   measurements,
   options,
+  absoluteOptions,
   part,
   store,
   paperless,
@@ -92,8 +93,8 @@ function draftCrotchGusset({
       paths.sa = new Path()
         .move(points.bottomLeftCorner)
         .line(points.bottomLeftCorner.translate(0, sa))
-        .line(points.bottomRightCorner.translate(sa * options.legHem * 100, sa))
-        .line(points.topRightCorner.translate(sa * options.legHem * 100, -sa))
+        .line(points.bottomRightCorner.translate(absoluteOptions.legHem, sa))
+        .line(points.topRightCorner.translate(absoluteOptions.legHem, -sa))
         .line(points.topLeftCorner.translate(0, -sa))
         .line(points.topLeftCorner)
         .attr('class', 'fabric sa')

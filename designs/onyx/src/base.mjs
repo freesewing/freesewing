@@ -8,6 +8,7 @@ function draftBase({
   points,
   measurements,
   options,
+  absoluteOptions,
   part,
   store,
   paperless,
@@ -264,8 +265,8 @@ function draftBase({
 
     if (sa) {
       paths.sa = new Path()
-        .move(points.inseamHem.shift(270, sa * options.legHem * 100))
-        .join(paths.hemBase.offset(sa * options.legHem * 100))
+        .move(points.inseamHem.shift(270, absoluteOptions.legHem))
+        .join(paths.hemBase.offset(absoluteOptions.legHem))
         .join(paths.saBase.offset(sa))
         .attr('class', 'fabric sa')
       if (options.frontOnFold) {
@@ -273,7 +274,7 @@ function draftBase({
         paths.sa2 = new Path()
           .move(points.cfCrotch)
           .join(paths.inseamBase.offset(sa))
-          .line(points.inseamHem.shift(270, sa * options.legHem * 100))
+          .line(points.inseamHem.shift(270, absoluteOptions.legHem))
           .attr('class', 'fabric sa')
       } else paths.sa.close()
     }
@@ -309,6 +310,8 @@ export const base = {
     neckStyle: { dflt: 'neckband', list: ['neckband', 'hood'], menu: 'style' },
     // Do we want to add a swim skirt to the unisuit?
     swimSkirt: { bool: false, menu: 'style' },
+    // Are we using ribbing to finish the sleeve, or just hemming?
+    sleeveRibbing: { bool: false, menu: 'construction' },
     // How much ease to give for the neck, as a percentage.
     neckEase: { pct: 50, min: -30, max: 150, menu: 'fit' },
     chestEase: { pct: 0, min: -40, max: 50, menu: 'fit' },
@@ -331,16 +334,21 @@ export const base = {
     raglanScoopLength: { pct: 20, min: 0, max: 50, menu: 'advanced' },
     // How deep the scoop running down the raglan seam is, as a % of the raglan length.
     raglanScoopMagnitude: { pct: 6, min: 0, max: 20, menu: 'advanced' },
-    // How steep and deep the scoops on the crotch gusset are, in degrees. Larger values give more room. Zero forms a straight angle on the gusset and two right angles on the front pieces. Positive values shrink the angle on the gusset by twice the value and grow the angle on the front pieces by the value.
     // Width of the hem around the hips, as a multiple of the seam allowance.
-    legHem: { pct: 2, min: 0, max: 8, menu: 'construction' },
+    legHem: {
+      pct: 200,
+      min: 0,
+      max: 800,
+      toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.legHem,
+      menu: 'construction',
+    },
     // How wide the scoop to each side of the crotch sweeps (excluding the gusset, as a % of the verticalTrunk.
     crotchScoopWidth: { pct: 1.5, min: 1, max: 5, menu: 'advanced' },
     crotchScoopLength: { pct: 4, min: 3, max: 15, menu: 'advanced' },
     // How wide the crotch gusset is, as a % of the verticalTrunk. This measurement determines how much room there is in the crotch and rear-end of the garment.
     crotchGussetWidth: { pct: 5, min: 2, max: 10, menu: 'fit' },
     // 100% produces a straight outseam and has the inseam taper outwards. 0% has the inseam drop straight down (after the scoop) and the outseam tapers in.
-    legTaperPosition: { pct: 50, min: 0, max: 100, menu: 'advanced' },
+    legTaperPosition: { pct: 100, min: 0, max: 150, menu: 'advanced' },
     frontOnFold: { bool: false, menu: 'construction' },
     backOnFold: { bool: true, menu: 'construction' },
     // How long the zipper will be, as a % of the verticalTrunk. Longer zippers will make the garment easier to don and doff, but zippers do not stretch. Leotards and wide-necked stretch clothes can do with no zipper at all. Swimwear should have a zipper length no more than 20% since zippers do not stretch. Onesie pajamas can have much longer zippers (40%-50%).

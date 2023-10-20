@@ -13,6 +13,7 @@ function draftRaglanSleeve({
   points,
   measurements,
   options,
+  absoluteOptions,
   part,
   store,
   paperless,
@@ -293,7 +294,7 @@ function draftRaglanSleeve({
     if (sa) {
       paths.sa = paths.saBase
         .offset(sa)
-        .join(paths.hemBase.offset(sa * options.sleeveHem * 100))
+        .join(paths.hemBase.offset(absoluteOptions.sleeveHem))
         .close()
         .attr('class', 'fabric sa')
     }
@@ -324,6 +325,12 @@ export const raglanSleeve = {
     // How long the sleeve is. 100 is a long sleeve ending at the wrist. 20 is a typical short sleeve.
     sleeveLength: { pct: 20, min: 0, max: 125, menu: 'style' },
     // Width of the hem at the end of the sleeve, as a multiple of the seam allowance.
-    sleeveHem: { pct: 2, min: 0, max: 8, menu: 'construction' },
+    sleeveHem: {
+      pct: 200,
+      min: 0,
+      max: 800,
+      toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.sleeveHem,
+      menu: (settings, mergedOptions) => (mergedOptions.sleeveRibbing ? false : 'construction'),
+    },
   },
 }

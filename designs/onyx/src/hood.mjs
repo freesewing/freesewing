@@ -270,9 +270,9 @@ export const hood = {
     },
     // Width of the hem at the front of the hood, as a multiple of the seam allowance.
     hoodHem: {
-      pct: 2,
+      pct: 200,
       min: 0,
-      max: 8,
+      max: 800,
       menu: (settings, mergedOptions) =>
         mergedOptions.neckStyle == 'hood' ? 'construction' : false,
     },

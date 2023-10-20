@@ -121,16 +121,16 @@ export const skirt = {
     },
     // How wide to make the waistband connection, in multiples of the seam allowance.
     skirtWaistband: {
-      pct: 2,
+      pct: 200,
       min: 0,
-      max: 8,
+      max: 800,
       menu: (settings, mergedOptions) => (mergedOptions.swimSkirt ? 'construction' : false),
     },
     // How wide to make the bottom hem, in multiples of the seam allowance.
     skirtHem: {
-      pct: 2,
+      pct: 200,
       min: 0,
-      max: 8,
+      max: 800,
       menu: (settings, mergedOptions) => (mergedOptions.swimSkirt ? 'construction' : false),
     },
   },
