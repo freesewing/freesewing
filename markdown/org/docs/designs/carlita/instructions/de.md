@@ -4,7 +4,7 @@ title: "Carlita Mantel: Anleitung zum Nähen"
 
 ### Schritt 1: Zeichne und schneide die fehlenden Futter- und Verkleidungsteile zu
 
-Bei einigen Teilen für Carlton musst du Teile aus den vorhandenen Teilen entwerfen. Im Folgenden findest du eine Liste der Teile, die du entwerfen musst: [. Wie du sie schneidest, erfährst du unter](/docs/patterns/carlton/cutting/) .
+Bei einigen Teilen für Carlton musst du Teile aus den vorhandenen Teilen entwerfen. Im Folgenden findest du eine Liste der Teile, die du entwerfen musst: [. Wie du sie schneidest, erfährst du unter](/docs/designs/carlton/cutting/) .
 
 #### Entwerfen
 
@@ -48,7 +48,7 @@ Vergiss beim Zuschneiden nicht die Nahtzugabe für diese Teile, wenn du diese Te
 
 #### Zuschnitt
 
-- Schneide alle oben genannten Teile aus den jeweiligen Stoffen/Bezügen aus. ([siehe Carlita Cutting](/docs/patterns/carlita/cutting/))
+- Schneide alle oben genannten Teile aus den jeweiligen Stoffen/Bezügen aus. ([siehe Carlita Cutting](/docs/designs/carlita/cutting/))
 
 ### Schritt 2: Vorläufige Anweisungen
 
