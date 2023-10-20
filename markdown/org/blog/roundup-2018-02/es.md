@@ -16,9 +16,9 @@ Veamos lo que ocurrió en febrero antes de hablar de lo que no ocurrió.
 
 ### Core v1.7.0 ya está disponible
 
-Hoy mismo he dado el pistoletazo de salida a la versión 1.7.0 del núcleo. Como de costumbre, [el registro de cambios](https://github.com/freesewing/core/blob/develop/CHANGELOG.md#170) tiene toda la información, pero lo más significativo para los usuarios son [las nuevas opciones de canalé en el patrón Sven](/docs/patterns/sven/options#ribbing), así como un montón de mejoras adicionales en Carlton/Carlita.
+Hoy mismo he dado el pistoletazo de salida a la versión 1.7.0 del núcleo. Como de costumbre, [el registro de cambios](https://github.com/freesewing/core/blob/develop/CHANGELOG.md#170) tiene toda la información, pero lo más significativo para los usuarios son [las nuevas opciones de canalé en el patrón Sven](/docs/designs/sven/options#ribbing), así como un montón de mejoras adicionales en Carlton/Carlita.
 
-Estas mejoras de Carlton/Carlita se deben a que yo misma y [Anneke](/showcase/maker/annekecaramin) hemos empezado a trabajar en [la documentación de estos patrones](/docs/patterns/carlton/). Y cada vez que escribimos algo como *aplica la entretela fusible aquí*, también volvemos al patrón para marcar exactamente dónde tiene que ir esta entretela fusible.
+Estas mejoras de Carlton/Carlita se deben a que yo misma y [Anneke](/showcase/maker/annekecaramin) hemos empezado a trabajar en [la documentación de estos patrones](/docs/designs/carlton/). Y cada vez que escribimos algo como *aplica la entretela fusible aquí*, también volvemos al patrón para marcar exactamente dónde tiene que ir esta entretela fusible.
 
 No hace falta decir que es un montón de trabajo. Pero debería ayudar en la construcción de estos patrones de abrigo, especialmente para aquellas personas para las que es la primera vez que hacen un abrigo.
 
