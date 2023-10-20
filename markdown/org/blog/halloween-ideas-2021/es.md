@@ -1,5 +1,7 @@
 ---
-author: "joostdecock"
+author:
+  - bobgeorgethe3rd
+  - Lexander
 caption: "¡Dibujo de @racerxmachina, Sandy!"
 date: "2021-10-20"
 intro: "Puede que ya tengas una idea de lo que quieres hacer para Halloween. O tal vez no tengas ni idea. En cualquier caso, aquí tienes algo de inspiración para ponerte en marcha."
@@ -34,7 +36,7 @@ Este es un atuendo bobalicón que se puede llevar a cualquier fiesta informal. L
 [Huey](/designs/huey/), [Hugo](/designs/hugo/), y [Paco](/designs/paco/) son bases perfectas para crear sudaderas y pantalones de animales sencillos que además te resultarán cómodos de llevar. Hay muchos animales que puedes probar, así que aquí tienes unas cuantas alteraciones e ideas básicas para hacer fluir tu cerebro creativo.
 
 #### Crear una costura trasera para Hugo y Huey
-Para cosas sencillas, como picos traseros para dinosaurios, puede resultarte útil crear una costura trasera en [Hugo](/designs/hugo/) o [Huey](/designs/huey/). Esto se hace simplemente cortando dos piezas traseras en lugar de una en el pliegue. No olvides añadir el margen de costura a lo largo del centro de la espalda. A partir de ahí, construirías tus añadidos, como los pinchos, y luego los hilvanarías a una de las piezas traseras con los lados derechos juntos. Después, sujeta con alfileres la otra pieza trasera por encima, con los lados derechos juntos, y cose. Esto contará ahora como tu única pieza trasera en las instrucciones de Huey y [Hugo](https://freesewing.org/docs/patterns/hugo/instructions/).
+Para cosas sencillas, como picos traseros para dinosaurios, puede resultarte útil crear una costura trasera en [Hugo](/designs/hugo/) o [Huey](/designs/huey/). Esto se hace simplemente cortando dos piezas traseras en lugar de una en el pliegue. No olvides añadir el margen de costura a lo largo del centro de la espalda. A partir de ahí, construirías tus añadidos, como los pinchos, y luego los hilvanarías a una de las piezas traseras con los lados derechos juntos. Después, sujeta con alfileres la otra pieza trasera por encima, con los lados derechos juntos, y cose. Esto contará ahora como tu única pieza trasera en las instrucciones de Huey y [Hugo](/docs/designs/hugo/instructions/).
 
 Lo mismo puede hacerse con la pieza central del capó de [Hugo](/designs/hugo/), y [El capó de Huey](/designs/huey/)ya tiene una costura central trasera, por lo que no es necesario hacer cambios en el capó de Huey. Otra cosa que puedes hacer es dividir los patrones de la capucha por la mitad de oreja a oreja si vas a añadir cosas como orejas, pero puede que te resulte más fácil coser a mano estos elementos.
 
