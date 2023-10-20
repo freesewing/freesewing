@@ -5,7 +5,7 @@ title: "Brian lichaam blok: Wat je nodig hebt"
 Om Brian te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- Ongeveer 1,25 - 1,5 meter van een geschikte stof ([zie Brian Stoffen](/docs/patterns/brian/fabric/)).
+- Ongeveer 1,25 - 1,5 meter van een geschikte stof ([zie Brian Stoffen](/docs/designs/brian/fabric/)).
 
 Deze lijst is voor een standaard Brian Blok. Als je veranderingen aan het blok hebt aangebracht, heb je misschien extra onderdelen nodig, zoals sluitingen, bindingen, enz.
 
