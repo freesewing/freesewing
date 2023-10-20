@@ -6,7 +6,7 @@ Willkommen bei der FreeSewing-Dokumentation für Maker. Here you will find all t
 
 Wenn du neu bei FreeSewing bist, nimm dir bitte einen Moment Zeit, um die [Einstiegsdokumentation](/docs/guide/)zu lesen.
 
-<ReadMore />
+<ReadMore recurse />
 
 <Tip>
 
