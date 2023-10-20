@@ -1,9 +1,6 @@
 ---
-title: "Еластичність тканини"
+title: "Horizontal fabric stretch"
 ---
 
-Налаштуйте цей параметр для більш-менш еластичних тканин.
+Adjust this option for more or less stretchy fabrics, specifically for horizontal stretch.
 
-## Вплив цієї опції на шаблон
-
-![На цьому зображенні показано вплив цієї опції шляхом накладання декількох варіантів, які мають різне значення для цієї опції](ursula_fabricstretch_sample.svg "Вплив цієї опції на шаблон")
