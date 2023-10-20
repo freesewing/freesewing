@@ -109,7 +109,7 @@ Dit houdt dan in dat de schoudernaad ook door de bies loopt, wat onaanvaardbaar 
 
 Op deze manier is er geen gegok naar de lengte van je bies, en zit de naad van de bies waar je hem wil.
 
-> Voor gedetailleerde instructies, kijk eens bij [Aaron](/docs/patterns/aaron/)
+> Voor gedetailleerde instructies, kijk eens bij [Aaron](/docs/designs/aaron/instructions)
 
 ## Alternate method
 
