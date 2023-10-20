@@ -46,7 +46,7 @@ function draftLegRibbing({
     .attr('data-text', 'Fold Line')
     .attr('data-text-class', 'center')
 
-  paths.seam = paths.saBase.join(paths.foldBase).close().attr('class', 'various')
+  paths.seam = paths.saBase.join(paths.foldBase).close().attr('class', 'fabric')
 
   if (paperless) {
     macro('vd', {
