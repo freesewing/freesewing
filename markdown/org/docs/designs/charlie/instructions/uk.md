@@ -189,13 +189,24 @@ What we want to to prevent these edges from ravelling after we've completed our 
 
 ## Крок 9: Закрийте поперечний шов
 
+<tip>
+
+Double check that your right and left legs match the pattern markings. The right leg's crotch should extend slightly beyond the left. Refer to the pattern and cut excess on the left leg if necessary.
+
+It can be valuable to mark with chalk or thread mark the **Center Front** on each leg. This will help you make sure the peices are in the right place duing fly construction.
+
+</tip>
+
 Переконайтеся, що одна нога повернута гарною стороною назовні, а інша - гарною стороною всередину.
 
 Тепер заправте ногу виворітною стороною всередину ноги, яка знаходиться виворітною стороною всередину. Таким чином, вони мають свої позитивні сторони один проти одного.
 
-Вирівняйте поперечний шов, починаючи з задньої частини талії, приколіть обидві половинки разом, просуваючись до ширінки. Зупиніться на найнижчій надсічці.
+Вирівняйте поперечний шов, починаючи з задньої частини талії, приколіть обидві половинки разом, просуваючись до ширінки. **Stop at the fly notch** and makes sure to back-stitch.
 
 Коли закінчиш. Зроби ще раз. Завжди прошивайте поперечний шов двічі. Це одна з тих найкращих практик, яку ви ігноруєте на свій страх і ризик.
+
+![Close Crossseam](CloseCrossseam.svg)
+
 
 <Tip>
 
@@ -208,7 +219,7 @@ What we want to to prevent these edges from ravelling after we've completed our 
 
 ## Крок 10: Сконструюйте мушку
 
-### Закрийте подовжувач мушки
+### Close the fly extension and serge
 
 Складіть подовжувач мушки по лінії згину лицьовими сторонами разом.
 
@@ -216,67 +227,82 @@ What we want to to prevent these edges from ravelling after we've completed our 
 
 Обріжте половину припуску на шов, щоб прибрати зайве, а потім виверніть на виворітний бік і припрасуйте.
 
-### Обробіть подовжувач мушки та облицювання мушки
+#### Обробіть подовжувач мушки та облицювання мушки
 
 Серпантин (або зигзаг) вздовж відкритої сторони розвороту мушки. Не потрібно застібати верхню частину, оскільки вона буде зачіпатися за пояс.
 
 також прострочіть по всій ширині кокетки J-подібну кромку.
 
-### Зріжте зайвий припуск на ліву штанину спереду
+![Close Extension and Serge](CloseExtensionAndSerge.svg)
 
-Додатковий припуск на шов, що проходить вздовж ширинки. Нам це потрібно тільки на правій панелі для ніг. Відріжте його на лівій панелі так, щоб залишився лише припуск на звичайний шов.
 
 ### Прикріпіть лицьову сторону мушки
 
-Мушку пришийте лицьовим боком до лівого лицьового боку. Покладіть їх добрими сторонами один до одного, вирівнявши верхню частину.
+Sew fly facing to left leg. You will be sewing slightly past the cross seam point, so be careful to keep the right leg seam allowance out of the way and aim to sew directly on top of the cross seam line.
 
-### Заправте кінчик мушки лицьовою стороною
+![Attach Facing](AttachFacing.svg)
 
-Загніть нижній край мушки лицьовим боком всередину і закріпіть кількома стібками.
+### Finish the fly facing
 
-### Крайню строчку пришийте до ширинки лицьовим боком до припуску на шов
+Trim the fly facing to half of the seam allowance.  
+Tuck in the tip of the fly facing and secure it with a few stitches. Edge stitch the fly facing to the seam allowance. Press the seam allowance toward the facing and understitch the facing for a clean finish. Again, keeping the right leg  seam allowance out of the way.
 
-Пришийте мушку лицьовим боком до припусків на шви. Переконайтеся, що передня панель не задіяна.
+![Finish Facing](FinishFacing.svg)
 
-### Припрасуйте поперечний шов, лицьову сторону мушки і край мушки
+### Edge stitch the zipper to the fly extension
 
-Розправте поперечний шов. Притисніть ширинку лицьовою стороною вбік.
+<tip>
 
-Потім відверніть додатковий припуск на правій передній штанині і припрасуйте.
+**Zipper Length**
 
-### Пришийте застібку-блискавку до подовжувача мушки
+It's a good idea to ensure your zipper stop ends before the indicated stitch line on the pattern. This will ensure you don't sew over your zipper stop and reduces tension on the bottom of the fly. If your zipper is too long, you can do a 0 length zig zag stitch to create a new stop (on just the zipper itself).
 
-Помістіть блискавку вздовж (злегка вигнутого) краю розширювача ширинки.
+</tip>
 
-Тепер прошийте по краю. Не потрібно наближатися до блискавки, просто прошийте по краю, щоб утримати її на місці.
+Edge stitch along the left edge of the zipper to the serged edge of the fly extension to hold it in place.
 
-### Прикріпіть блискавку до ширінки
+![Baste Zipper](BasteZipper.svg)
 
-Тепер прикладіть ширинку правої передньої штанини з додатковим припуском, який ви відвернули, до застібки-блискавки.
 
-За допомогою лапки для застібки-блискавки прострочіть підвернутий край уздовж краю застібки-блискавки.
+### Top stitch the right leg to the zipper
 
-<Tip>
+Start by pressing the right leg seam allowance to the back.
 
-Можливо, ви захочете спочатку пришити її, щоб переконатися, що вона паралельна застібці-блискавці. Близько, але не надто близько.
+<tip>
 
-</Tip>
+Remember that the seam allowance starts slightly right of the center front, the center front is marked in purple in the image, make sure you don't fold along the center front line by mistake.
 
-### Пришийте застібку-блискавку до вивороту мушки
+</tip>
 
-Тепер пришийте іншу сторону застібки-блискавки до лицьового боку мушки. Переконайтеся, що вирівняли її правильно, щоб коли штани закриті, застібка-блискавка була прихована.
+Ensure you place the folded edge of the right leg just left of the zipper teeth to prevent fabric from being caught in the zipper.
 
-### Виконайте поперечний шов
+Stop sewing at the top 'fly extention' notch, slightly above the cross seam, and be sure to backstitch. If you don't do this you won't be able to keep the extension out of the way when sewing the J-Seam.
 
-Пришийте останній шматок поперечного шва до найвищої надсічки.
+![Attach Extension to Right Leg](AttachExtensionToRightLeg.svg)
+
+
+### Attach the zipper to the fly facing.
+
+Be careful to align the leg left on the right center front. It can be valuable to pin or baste through the facing and right zide of the zipper tape. (We need to sew the left side of the zipper tape to the left leg). Ensuring everything is lined, sew the fly facing to the left side of the zipper. Try to get close to the zipper, but not too close.
+
+![Attach Facing to Zipper](AttachFacingToZipper.svg)
+
 
 ### Зшийте J-образний шов ширінки
 
-Тепер прострочіть так званий J-образний шов ширинки. Переконайтеся, що подовжувач мушки не заважає.
+<tip>
 
-### Закріпіть нижню частину мушки
+Use a peice of paper as a guide to sew the J seam, this can be cut from your pattern along the indicated stitch line.
 
-Тепер припрасуйте саму гудзик J-образного шва (горизонтальну частину), але цього разу не забудьте також прихопити подовжувач мушки.
+</tip>
+
+Тепер прострочіть так званий J-образний шов ширинки. Переконайтеся, що подовжувач мушки не заважає. Since you didn't sew all the way along the fly extention, you should be able to pin it out of the way.
+
+#### Закріпіть нижню частину мушки
+
+Now, bartack the very botton of the J-seam (the horizontal part) but this time make sure to also catch the fly extension. You can choose to add an additional bar tack along the J-Seam as well (shown in purple).
+
+![Sew the J-Seam](SewTheJSeam.svg)
 
 ## Крок 11: Прикріпіть петлі для ременя
 
@@ -292,11 +318,15 @@ What we want to to prevent these edges from ravelling after we've completed our 
 
 Застрочіть (або зробіть зигзаг) довгий край смужки з обох боків.
 
+![Finish Loop Edges](FinishLoopEdges.svg)
+
 Складіть одну сторону всередину, а іншу - поверх неї. Потім притисніть праскою. В результаті повинна вийти довга смужка шириною близько 1 см.
 
 Тепер прошийте по всій довжині смужки, прострочіть посередині. Переконайтеся, що ви використовуєте достатню довжину стібка для цього.
 
 Нарешті, розріжте смужку для поясних петель потрібної довжини на 8 рівних частин, щоб вийшло 8 поясних петель.
+
+![Stitch and Cut Loops](StitchAndCutLoops.svg)
 
 ### Прикріпіть петлі для ременя
 
