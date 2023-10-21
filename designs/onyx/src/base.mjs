@@ -347,7 +347,7 @@ export const base = {
       menu: (settings, mergedOptions) => (mergedOptions.legRibbing ? false : 'construction'),
     },
     // How wide the scoop to each side of the crotch sweeps (excluding the gusset, as a % of the verticalTrunk.
-    crotchScoopWidth: { pct: 1.5, min: 1, max: 5, menu: 'advanced' },
+    crotchScoopWidth: { pct: 2.5, min: 1, max: 5, menu: 'advanced' },
     crotchScoopLength: { pct: 4, min: 3, max: 15, menu: 'advanced' },
     // How wide the crotch gusset is, as a % of the verticalTrunk. This measurement determines how much room there is in the crotch and rear-end of the garment.
     crotchGussetWidth: { pct: 5, min: 2, max: 10, menu: 'fit' },
