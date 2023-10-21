@@ -109,7 +109,7 @@ export const MovableStack = ({
       const transforms = setTransforms()
 
       // apply the transforms to the bounding box to get the new extents of the stack
-      const { tl, br } = getTransformedBounds(stack, transforms)
+      const { topLeft, bottomRight } = getTransformedBounds(stack, transforms)
 
       // update it on the draft component
       updateLayout(
@@ -122,8 +122,8 @@ export const MovableStack = ({
           rotate: liveTransforms.rotation % 360,
           flipX: liveTransforms.flipX,
           flipY: liveTransforms.flipY,
-          tl,
-          br,
+          tl: topLeft,
+          br: bottomRight,
         },
         history
       )

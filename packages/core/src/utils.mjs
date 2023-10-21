@@ -936,7 +936,7 @@ export function getTransformedBounds(boundsObj, transforms = false) {
   )
 
   return {
-    tl: transformedTl,
-    br: transformedBr,
+    topLeft: transformedTl,
+    bottomRight: transformedBr,
   }
 }
