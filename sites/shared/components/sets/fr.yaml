@@ -1,6 +1,6 @@
 setLacksMeasiesForDesign: "Ce jeu ne contient pas les mesures nécessaires pour générer un modèle { design } ."
 chooseSet: Choisis un ensemble de mesures
-fsmtm: FreeSewing génère des patrons de couture sur mesure.
+fsmtm: FreeSewing generates bespoke sewing patterns.
 patternForWhichSet: Pour quel ensemble de mesures devons-nous générer un modèle ?
 yourSets: Tes jeux de mesures
 bookmarkedSets: Jeux de mesures que tu as mis en favoris
