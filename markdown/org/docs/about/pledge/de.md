@@ -1,66 +1,26 @@
 ---
-title: Freesewing-Einnahmenversprechen
+title: FreeSewing Revenue Pledge
 ---
 
 Das **FreeSewing-Einnahmenversprechen** besagt:
 
-> ## Alle Einnahmen von FreeSewing werden an [Ärzte ohne Grenzen (MSF)](http://www.msf.org/) gespendet
+> ## All FreeSewing revenue will be donated to Doctors Without Borders (MSF)
 
-Das Versprechen wird vom FreeSewing-Maintainer (joost) getätigt und umgesetzt. Du kannst [seine Motivation dazu auf dieser Seite](/docs/various/pledge/motivation/) lesen.
+Das Versprechen wird vom FreeSewing-Maintainer (joost) getätigt und umgesetzt. You can read about [their motivations for doing so on this page](/docs/about/pledge/motivation/).
 
 ## Verlauf der Einnahmen
 
-<table class="table table-striped text-base-content">
-  <thead>
-    <tr>
-      <th>Jahr</th>
-      <th>Einnahmen</th>
-      <th>Währung</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>2015</td>
-      <td>`256,65`</td>
-      <td>Euro</td>
-    </tr>
-    <tr>
-      <td>2016</td>
-      <td>`473,50`</td>
-      <td>Euro</td>
-    </tr>
-    <tr>
-      <td>2017</td>
-      <td>`673,14`</td>
-      <td>Euro</td>
-    </tr>
-    <tr>
-      <td>2018</td>
-      <td>`3.162,14`</td>
-      <td>Euro</td>
-    </tr>
-    <tr>
-      <td>2019</td>
-      <td>`4.109,38`</td>
-      <td>Euro</td>
-    </tr>
-    <tr>
-      <td>2020</td>
-      <td>`10.736,82`</td>
-      <td>Euro</td>
-    </tr>
-    <tr>
-      <td>2021</td>
-      <td>`10.070,77`</td>
-      <td>Euro</td>
-    </tr>
-    <tr>
-      <td>**Summe**</td>
-      <td>`29.489,40`</td>
-      <td>**Euro an MSF gespendet**</td>
-    </tr>
-  </tbody>
-</table>
+|    Einnahmen | Jahr                                        |
+| ------------:|:------------------------------------------- |
+|    `€256,65` | 2015                                        |
+|    `€473,50` | 2016                                        |
+|    `€673,14` | 2017                                        |
+|  `€3.162,14` | 2018                                        |
+|  `€4.109,38` | 2019                                        |
+| `€10.736,82` | 2020                                        |
+| `€10.070,77` | 2021                                        |
+|  `€9.325,54` | 2022                                        |
+| `€38.814,94` | **Euro donated to [MSF](https://msf.org/)** |
 
 <Tip>
 
