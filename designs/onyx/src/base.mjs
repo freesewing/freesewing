@@ -26,8 +26,9 @@ function draftBase({
   const hpsToSeat = hpsToWaist + measurements.waistToSeat * (1 + options.outseamEase)
   const hpsToUpperLeg = hpsToWaist + measurements.waistToUpperLeg * (1 + options.outseamEase)
   const waistToArmpit = measurements.waistToArmpit * (1 + options.outseamEase)
-  const rawHpsToWaist = (measurements.hpsToWaistBack + measurements.hpsToWaistFront) / 2
-  const verticalTrunk = (rawHpsToWaist * 2 + measurements.crossSeam) * (1 + options.centerSeamEase)
+  const verticalTrunk =
+    (measurements.hpsToWaistFront + measurements.hpsToWaistBack + measurements.crossSeam) *
+    (1 + options.centerSeamEase)
   store.set('verticalTrunk', verticalTrunk)
   const crotchGussetWidth = verticalTrunk * options.crotchGussetWidth
   store.set('crotchGussetWidth', crotchGussetWidth)
