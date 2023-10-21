@@ -1,5 +1,5 @@
 ---
-title: "Patterns: Name"
+title: Nom
 ---
 
 Every pattern has a **name** attribute that is mandatory.
