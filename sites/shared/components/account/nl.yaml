@@ -12,6 +12,7 @@ actions: Acties
 created: Aangemaakt
 updated: Bijgewerkt
 expires: Verloopt op
+role: Role
 yourProfile: Jouw profiel
 yourPatterns: Jouw patronen
 yourSets: Jouw maten sets
@@ -217,7 +218,7 @@ curateCuratedSets: Curate our selection of curated measurements sets
 useThisSet: Gebruik deze maten set
 ownSets: Your own measurements sets
 noOwnSets: You do not have any of your own measurements sets (yet)
-pleaseMtm: Because made-to-measure lies at the heart of what we do, we strongly suggest you take accurate measurements.
+pleaseMtm: Because our patterns are bespokee, we strongly suggest you take accurate measurements.
 noOwnSetsMsg: You can store your measurements as a measurements set, after which you can generate as many patterns as you want for them.
 measurements: Maten
 chooseASet: Choose a measurements set
@@ -236,7 +237,7 @@ csetSuggestedMsg: Your submission has been registered and will be processed by o
 itIsAvailableAt: It is available at
 csetNameMsg: Each curated set has a name. You can suggest your own name or a pseudonym.
 patternNew: Een nieuw patroon genereren
-patternNewInfo: Kies een ontwerp, voeg je maten set toe en wij genereren een naaipatroon op maat voor je.
+patternNewInfo: Pick a design, add your measurements set, and we'll generate a bespoke sewing pattern for you.
 designNew: Een nieuw ontwerp creëren
 designNewInfo: FreeSewing ontwerpen zijn bundeltjes JavaScript-code die patronen genereren. Je eigen ontwerpen maken is niet zo moeilijk en we hebben een gedetailleerde handleiding om je op weg te helpen.
 pluginNew: Een nieuwe plugin creëren
