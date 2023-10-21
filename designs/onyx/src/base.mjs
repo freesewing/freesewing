@@ -31,6 +31,8 @@ function draftBase({
   store.set('verticalTrunk', verticalTrunk)
   const crotchGussetWidth = verticalTrunk * options.crotchGussetWidth
   store.set('crotchGussetWidth', crotchGussetWidth)
+  const crotchScoopWidth = verticalTrunk * options.crotchScoopWidth
+  const crotchScoopLength = verticalTrunk * options.crotchScoopLength
 
   const legLength = options.legLength * measurements.inseam
   const totalLength = hpsToUpperLeg + legLength
@@ -39,12 +41,10 @@ function draftBase({
   let chest = measurements.chest * (1 + options.chestEase)
   chest -= 4 * (options.raglanScoopMagnitude * armpitYPosition)
   const neckRadius = (measurements.neck * (1 + options.neckEase)) / (2 * Math.PI)
-  const upperLeg = measurements.upperLeg * (1 + options.upperLegEase)
-  const seat = measurements.seat * (1 + options.seatEase)
+  const upperLeg = measurements.upperLeg * (1 + options.upperLegEase) + crotchScoopWidth
+  const seat = measurements.seat * (1 + options.seatEase) + 0.8 * crotchScoopWidth
   const hips = measurements.hips * (1 + options.hipsEase)
   const waist = measurements.waist * (1 + options.waistEase)
-  const crotchScoopWidth = verticalTrunk * options.crotchScoopWidth
-  const crotchScoopLength = verticalTrunk * options.crotchScoopLength
 
   // Don't taper legs beyond ankle-length.
   const anklePosition = 0.91 // Guestimate based on my own ankle, as a % of the distance from the crotch fork to the floor.
