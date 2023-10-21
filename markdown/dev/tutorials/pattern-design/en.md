@@ -4,7 +4,7 @@ title: Pattern design tutorial
 
 Hello there, and welcome to this FreeSewing pattern design tutorial.
 My name is Joost, and in this tutorial I will show you
-how to design a made-to-measure sewing pattern, start to finish.
+how to design a bespoke sewing pattern, start to finish.
 
 This tutorial is divided into three parts, allowing you to speedrun or entirely
 skip certain parts depending on your interests or prior experience:

@@ -18,7 +18,7 @@ environment
 
 ###### No more grading
 
-FreeSewing patterns are _made-to-measure_, which means that we don't need to
+FreeSewing patterns are _bespoke_, which means that we don't need to
 grade our pattern to provide a range of sizes. We should test our pattern
 for different measurements and options to see how well it adapts.
 
