@@ -231,10 +231,6 @@ export const SignIn = () => {
           {t('susi:signUpHere')}
         </Link>
       )}
-      <Link className={`${horFlexClasses} btn btn-neutral btn-outline mt-2`} href="/migrate">
-        <SettingsIcon />
-        {t('susi:migrateV2Account')}
-      </Link>
     </>
   )
 }

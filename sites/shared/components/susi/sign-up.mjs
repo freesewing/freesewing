@@ -187,15 +187,6 @@ export const SignUp = () => {
                 </span>
                 {t('susi:signInHere')}
               </Link>
-              <Link
-                className={`${horFlexClassesNoSm} w-full btn btn-neutral btn-outline mt-2`}
-                href="/migrate"
-              >
-                <span className="hidden md:block">
-                  <SettingsIcon />
-                </span>
-                {t('susi:migrateV2Account')}
-              </Link>
               <div className="flex flex-row justify-center mt-2">
                 <button
                   onClick={() => setShowAll(false)}
