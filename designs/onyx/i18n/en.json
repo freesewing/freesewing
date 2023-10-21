@@ -39,6 +39,14 @@
 	  "t": "Ribbing",
 	  "d": "Finish the sleeves with a piece of ribbing."
 	},
+	"sleeveRibbingLength": {
+	  "t": "Sleeve Ribbing Length",
+	  "d": "Controls how long the ribbing around the sleeve is, as a percentage of the sleeve circumference."
+	},
+	"sleeveRibbingWidth": {
+	  "t": "Sleeve Ribbing Width",
+	  "d": "Controls how wide the ribbing around the sleeve is."
+	},
     "sleeveHem": {
       "t": "Sleeve hem",
       "d": "Sets the hem allowance of the hem along the end of the sleeves, as a multiple of the seam allowance."
@@ -54,6 +62,14 @@
 	"legRibbingYes": {
 	  "t": "Ribbing",
 	  "d": "Finish the legs with a piece of ribbing."
+	},
+	"legRibbingLength": {
+	  "t": "Leg Ribbing Length",
+	  "d": "Controls how long the ribbing around the leg is, as a percentage of the leg circumference."
+	},
+	"legRibbingWidth": {
+	  "t": "Leg Ribbing Width",
+	  "d": "Controls how wide the ribbing around the leg is."
 	},
     "legHem": {
       "t": "Leg hem",
@@ -102,7 +118,7 @@
     },
     "hoodDepth": {
       "t": "Hood depth",
-      "d": "Controls how much room will be in the hood in the back of the head."
+      "d": "Controls how much room will be in the hood around the back of the head."
     },
     "centerSeamEase": {
       "t": "Center seam ease",
