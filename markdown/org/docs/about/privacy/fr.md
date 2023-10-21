@@ -1,5 +1,5 @@
 ---
-title: Politique de confidentialité
+title: Avis de confidentialité de FreeSewing
 ---
 
 **Last update**: 13 August 2023
@@ -82,7 +82,7 @@ Ces données sont stockées pour toute personne ayant un compte sur notre site W
 
 - Pour vous authentifier
 - Pour être en mesure de vous contacter si nécessaire
-- To be able to generate made-to-measure sewing patterns for you
+- To be able to generate bespoke sewing patterns for you
 
 ##### Combien de temps les gardons-nous ?
 
@@ -95,6 +95,10 @@ Ces données sont stockées pour toute personne ayant un compte sur notre site W
 
 
 ## Other info relevant to this privacy notice
+
+### Utilisation par les mineurs de moins de 16 ans
+
+For legal reasons, you need to be at least 16 years old to use FreeSewing.
 
 ### Gestionnaire des données et informations de contact
 
@@ -131,18 +135,14 @@ So far:
 - FreeSewing has never provided any law enforcement organization personal data of any of our users or visitors.
 - FreeSewing has never weakened, compromised, or subverted any of its encryption at the request of law enforcement or another third party.
 
-### Utilisation par les mineurs de moins de 16 ans
-
-Pour des raisons juridiques, vous devez avoir au moins 16 ans pour utiliser Freesewing.
-
 ### Voir aussi
 
 - [Vos droits][2]
 - [Votre consentement][3]
 
-[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy
+[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/about/privacy
 
-[2]: /docs/various/rights/
+[2]: /docs/about/rights/
 
 [3]: /account/consent/
 
