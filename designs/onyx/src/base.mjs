@@ -312,7 +312,7 @@ export const base = {
     // Choose either a neckband or a hood to go at the neck of the garment.
     neckStyle: { dflt: 'neckband', list: ['neckband', 'hood'], menu: 'style' },
     // Do we want to add a swim skirt to the unisuit?
-    swimSkirt: { bool: false, menu: 'style' },
+    skirt: { bool: false, menu: 'style' },
     // Are we using ribbing to finish the sleeves, or just hemming?
     sleeveRibbing: { bool: false, menu: 'construction' },
     // Are we using ribbing to finish the legs, or just hemming?

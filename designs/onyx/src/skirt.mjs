@@ -18,7 +18,7 @@ function draftSkirt({
   snippets,
   Snippet,
 }) {
-  if (!options.swimSkirt) return part.hide()
+  if (!options.skirt) return part.hide()
 
   // We really don't want the skirt to be smaller than the suit itself, so do a little sanity check here.
   const skirtWidth = measurements.waist * Math.max(options.waistEase, options.skirtWidth)
@@ -111,14 +111,14 @@ export const skirt = {
       pct: 160,
       min: 100,
       max: 250,
-      menu: (settings, mergedOptions) => (mergedOptions.swimSkirt ? 'style' : false),
+      menu: (settings, mergedOptions) => (mergedOptions.skirt ? 'style' : false),
     },
     // How long the skirt will be, as a percentage of waistToUpperLeg.
     skirtLength: {
       pct: 100,
       min: 20,
       max: 500,
-      menu: (settings, mergedOptions) => (mergedOptions.swimSkirt ? 'style' : false),
+      menu: (settings, mergedOptions) => (mergedOptions.skirt ? 'style' : false),
     },
     // How wide to make the waistband connection, in multiples of the seam allowance.
     skirtWaistband: {
@@ -126,7 +126,7 @@ export const skirt = {
       min: 0,
       max: 800,
       toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.skirtWaistband,
-      menu: (settings, mergedOptions) => (mergedOptions.swimSkirt ? 'construction' : false),
+      menu: (settings, mergedOptions) => (mergedOptions.skirt ? 'construction' : false),
     },
     // How wide to make the bottom hem, in multiples of the seam allowance.
     skirtHem: {
@@ -134,7 +134,7 @@ export const skirt = {
       min: 0,
       max: 800,
       toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.skirtHem,
-      menu: (settings, mergedOptions) => (mergedOptions.swimSkirt ? 'construction' : false),
+      menu: (settings, mergedOptions) => (mergedOptions.skirt ? 'construction' : false),
     },
   },
 }
