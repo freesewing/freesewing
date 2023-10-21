@@ -1,5 +1,5 @@
 ---
-title: Datenschutzerklärung
+title: FreeSewing Datenschutzhinweis
 ---
 
 **Letztes Update**: 13. Januar 2023
@@ -82,7 +82,7 @@ Diese Daten werden für jede Person mit einem Account auf unserer Website gespei
 
 - Um dich zu authentifizieren
 - Um dich bei Bedarf kontaktieren zu können
-- Um für dich maßgeschneiderte Schnittmuster erstellen zu können
+- To be able to generate bespoke sewing patterns for you
 
 ##### Für wie lange behalten wir sie?
 
@@ -95,6 +95,10 @@ Diese Daten werden für jede Person mit einem Account auf unserer Website gespei
 
 
 ## Andere Informationen, die für diesen Datenschutzhinweis relevant sind
+
+### Nutzung von Minderjährigen unter 16 Jahren
+
+For legal reasons, you need to be at least 16 years old to use FreeSewing.
 
 ### Datenverantwortlicher und Kontaktinformationen
 
@@ -131,18 +135,14 @@ Bisher:
 - FreeSewing has never provided any law enforcement organization personal data of any of our users or visitors.
 - FreeSewing has never weakened, compromised, or subverted any of its encryption at the request of law enforcement or another third party.
 
-### Nutzung von Minderjährigen unter 16 Jahren
-
-Aus rechtlichen Gründen musst du mindestens 16 Jahre alt sein, um Freesewing zu benutzen.
-
 ### Siehe auch
 
 - [Deine Rechte][2]
 - [Deine Einwilligungen][3]
 
-[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy
+[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/about/privacy
 
-[2]: /docs/various/rights/
+[2]: /docs/about/rights/
 
 [3]: /account/consent/
 
