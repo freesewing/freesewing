@@ -1,8 +1,11 @@
 ---
-title: "Apart knopenpat"
+title: "Separate button placket"
 ---
 
-![Apart knopenpat](seperatebuttonplacket.svg)
+![Separate button placket](separatebuttonplacket.svg)
 
-Kies of je het knopenpat als apart patroondeel wil.
+Whether or not you want the button placket to be a separate pattern part.
+
+
+
 
