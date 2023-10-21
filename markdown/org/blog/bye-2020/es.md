@@ -39,7 +39,7 @@ También estamos ampliando nuestros esfuerzos para ofrecer patrones que sirvan p
 ##### Este año hemos ayudado a más personas que nunca
 Desde el punto de vista práctico, he ampliado el año de nuestro libro un par de semanas para que, en adelante, sólo sigamos los años naturales. A falta de un par de horas para que acabe este año, los ingresos de FreeSewing para 2020 ascienden a **10.736,82 euros**. Eso convierte a 2020 en un año absolutamente extraordinario, y es más que todos los años anteriores juntos (2015: 256,65 €, 2016: 473,50 €, 2017: 673,14 €, 2018: 3162,14 €, 2019: 4109,38 €).
 
-Como siempre, todos los ingresos de FreeSewing -- la totalidad de los 10.736,82 euros -- [se destinan a Médicos Sin Fronteras](/docs/various/pledge/).
+Como siempre, todos los ingresos de FreeSewing -- la totalidad de los 10.736,82 euros -- [se destinan a Médicos Sin Fronteras](/docs/about/pledge/).
 
 Estoy verdaderamente agradecido por vuestro apoyo y vuestras contribuciones constantes. Siento que, de una manera muy pequeña, somos capaces de aplicar algún bálsamo al dolor que a veces parece omnipresente en el mundo.
 

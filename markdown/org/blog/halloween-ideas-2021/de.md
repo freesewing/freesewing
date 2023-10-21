@@ -1,5 +1,7 @@
 ---
-author: "joostdecock"
+author:
+  - bobgeorgethe3rd
+  - Lexander
 caption: "Zeichnung von @racerxmachina, Sandy!"
 date: "2021-10-20"
 intro: "Vielleicht hast du schon eine Idee, was du zu Halloween machen möchtest. Oder vielleicht hast du keine Ahnung. Wie auch immer, hier sind ein paar Inspirationen, die dich anregen sollen."
@@ -34,7 +36,7 @@ Das ist ein albernes Outfit, das zu jeder informellen Party getragen werden kann
 [Huey](/designs/huey/), [Hugo](/designs/hugo/)und [Paco](/designs/paco/) sind die perfekte Basis, um einfache tierische Kapuzenpullis und Hosen zu kreieren, die auch noch bequem zu tragen sind. Es gibt viele Tiere, die du ausprobieren kannst. Hier sind ein paar grundlegende Änderungen und Ideen, die deine Kreativität anregen.
 
 #### Erstellen einer Rückennaht für Hugo und Huey
-Für einfache Dinge wie Rückenstacheln für Dinosaurier kann es nützlich sein, eine Rückennaht in [Hugo](/designs/hugo/) oder [Huey](/designs/huey/)zu erstellen. Dazu schneidest du einfach zwei Rückenteile anstelle von einem an der Falz. Vergiss nicht, die Nahtzugabe entlang der hinteren Mitte hinzuzufügen! Von dort aus baust du deine Ergänzungen, wie z. B. die Stacheln, und heftest sie dann mit der rechten Seite an eines der Rückenteile. Dann steckst du das andere Rückenteil rechts auf rechts über die Oberseite und nähst es fest. Dies zählt nun als dein einziges Rückenteil in der Huey und [Hugo Anleitung](https://freesewing.org/docs/patterns/hugo/instructions/).
+Für einfache Dinge wie Rückenstacheln für Dinosaurier kann es nützlich sein, eine Rückennaht in [Hugo](/designs/hugo/) oder [Huey](/designs/huey/)zu erstellen. Dazu schneidest du einfach zwei Rückenteile anstelle von einem an der Falz. Vergiss nicht, die Nahtzugabe entlang der hinteren Mitte hinzuzufügen! Von dort aus baust du deine Ergänzungen, wie z. B. die Stacheln, und heftest sie dann mit der rechten Seite an eines der Rückenteile. Dann steckst du das andere Rückenteil rechts auf rechts über die Oberseite und nähst es fest. Dies zählt nun als dein einziges Rückenteil in der Huey und [Hugo Anleitung](/docs/designs/hugo/instructions/).
 
 Das Gleiche gilt für das Mittelstück der Motorhaube von [Hugo](/designs/hugo/), und [Huey](/designs/huey/)'s Motorhaube hat bereits eine hintere Mittelnaht, so dass für Huey's Motorhaube keine Änderungen erforderlich sind. Du kannst das Kapuzenmuster auch von Ohr zu Ohr in zwei Hälften teilen, wenn du Dinge wie Ohren hinzufügst, aber vielleicht findest du es einfacher, diese Elemente einfach von Hand anzunähen.
 

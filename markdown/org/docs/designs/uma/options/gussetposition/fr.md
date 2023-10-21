@@ -1,9 +1,6 @@
 ---
-title: "Longueur du Gusset"
+title: "Gusset position"
 ---
 
-Cette option contrôle la longueur du gusset.
+This option allows you to shift the gusset forward or backward.
 
-## Effet de cette option sur le motif
-
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](ursula_gussetlength_sample.svg "Effet de cette option sur le motif")

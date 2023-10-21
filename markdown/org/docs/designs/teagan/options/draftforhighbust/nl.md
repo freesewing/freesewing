@@ -16,6 +16,6 @@ Enable this option and we'll draft to your high bust, fitting your body without 
 Deze optie heeft geen effect wanneer er geen hoge bustemeting wordt gegeven
 </Note>
 
-## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](teagan_draftforhighbust_sample.svg "Effect van deze optie op het patroon")
+
+

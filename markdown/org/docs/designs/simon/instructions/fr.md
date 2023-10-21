@@ -465,7 +465,7 @@ Vous devez maintenant épingler la manche à l'emmanchure. Pour ce faire, assure
 
 Pour ce patron, l'embu de la tête de manche est de 0,5 cm par défaut. Si vous avez un embu plus important sur votre tête de manche, vous devez répartir cette longueur supplémentaire uniformément entre les repères, comme indiqué.
 
-> Si vous n'êtes pas sûr de ce qu'est un embu de tête de manche, jetez un coup d'oeil à la documentation sur les [ options de tête de manche dans les patrons ](/docs/patterns/simon/options/sleevecapease).
+> Si vous n'êtes pas sûr de ce qu'est un embu de tête de manche, jetez un coup d'oeil à la documentation sur les [ options de tête de manche dans les patrons ](/docs/designs/simon/options/sleevecapease).
 
 #### Coudre les manches aux emmanchures
 

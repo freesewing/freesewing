@@ -5,7 +5,7 @@ title: "Bloque de cuerpo doblado: Lo que necesitas"
 Para hacer Bent, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- Aproximadamente 1,5 - 2 metros (1,7 - 2,2 yardas) de una tela adecuada ([ver Opciones de tela doblada](/docs/patterns/bent/fabric/))
+- Aproximadamente 1,5 - 2 metros (1,7 - 2,2 yardas) de una tela adecuada ([ver Opciones de tela doblada](/docs/designs/bent/fabric/))
 
 Esta lista es para un Bloque Doblado por defecto. Si has hecho o vas a hacer cambios en el bloque, puede que tengas que conseguir elementos adicionales como cierres, encuadernación, etc.
 

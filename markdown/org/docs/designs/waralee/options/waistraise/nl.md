@@ -2,8 +2,8 @@
 title: "Hoogte Taille"
 ---
 
-Hoeveel hoger de taille dan de maat voor de diepte van de zitplaats. Dit beïnvloedt de diepte van de kruissnijding.
+How much to raise the waist from the seat depth measurement. This influences the depth of the crotch cut-out.
 
-## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](waralee_waistraise_sample.svg "Effect van deze optie op het patroon")
+
+

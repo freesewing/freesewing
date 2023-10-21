@@ -8,6 +8,6 @@ Les coutures de l'emmanchure et des côtés de la chemise sont des coutures à p
 
 Cette option permet de contrôler la quantité de marge de couture à plat en tant que facteur de la marge de couture normale.
 
-## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_ffsa_sample.svg "Effet de cette option sur le motif")
+
+

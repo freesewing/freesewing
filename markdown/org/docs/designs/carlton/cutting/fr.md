@@ -4,7 +4,7 @@ title: "Manteau Carlton : Instructions de coupe"
 
 <Note>
 
-Certaines parties doivent être esquissées à partir des pièces existantes. La façon de les rédiger est fournie dans le site [instructions](/docs/patterns/carlton/instructions).
+Certaines parties doivent être esquissées à partir des pièces existantes. How to draft these are provided in the [instructions](/docs/designs/carlton/instructions).
 
 </Note>
 

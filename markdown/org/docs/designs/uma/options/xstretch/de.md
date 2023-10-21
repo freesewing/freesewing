@@ -1,9 +1,6 @@
 ---
-title: "Stoffdehnbarkeit"
+title: "Horizontal fabric stretch"
 ---
 
-Passen Sie diese Option für mehr oder weniger dehnbare Stoffe an.
+Adjust this option for more or less stretchy fabrics, specifically for horizontal stretch.
 
-## Effekt dieser Option auf das Schnittmuster
-
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](ursula_fabricstretch_sample.svg "Effekt dieser Option auf das Schnittmuster")

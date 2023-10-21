@@ -109,7 +109,7 @@ Obviamente, eso significa que su costura en el hombro cortarán su cuerpo, que e
 
 De esta manera, no hay que adivinar cuánto tiempo debe ser su vinculación, y la costura de unión se sienta donde desea que se sienta.
 
-> Para instrucciones detalladas, consulte [la documentación de Aaron](/docs/patterns/aaron/)
+> Para instrucciones detalladas, consulte [la documentación de Aaron](/docs/designs/aaron/instructions)
 
 ## Alternate method
 

@@ -62,9 +62,9 @@ Also nehme ich Julians Ratschlag zu Herzen und bitte um Hilfe. Bevor wir aber do
 
 Um sicherzustellen, dass deine Wertvorstellungen mit denen von FreeSewing in Einklang stehen, nimm dir bitte einen Moment Zeit, um dich mit dem Folgenden vertraut zu machen:
 
- - [Unsere Gemeinschaftsstandards](/docs/various/community-standards/)
+ - [Unsere Gemeinschaftsstandards](/docs/about/community-standards/)
  - [Unsere Verhaltensregeln](https://freesewing.dev/contributors/code-of-conduct/)
- - [Unser Umsatzversprechen](/docs/various/pledge/)
+ - [Unser Umsatzversprechen](/docs/about/pledge/)
 
 Wenn dich das lesen hiervon froh und nicht wütend gemacht hast, können wir deine Hilfe gebrauchen :)
 
@@ -147,7 +147,7 @@ Du weißt, wie man Dinge schön macht, auch wenn du dir nicht sicher sind, wie d
 
 ### Was habe ich davon?
 
-Wir können dir kein Geld bieten. Lies bitte [unsere Einnahmenzusage](/docs/various/pledge/) , um zu verstehen, warum das so ist.
+Wir können dir kein Geld bieten. Lies bitte [unsere Einnahmenzusage](/docs/about/pledge/) , um zu verstehen, warum das so ist.
 
 Was wir anbieten können, ist Verantwortung, Anerkennung und eine Beteiligung an etwas, das danach strebt, eine Kraft für das Gute in dieser Welt zu sein.
 

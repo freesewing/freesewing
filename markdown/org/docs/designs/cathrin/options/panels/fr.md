@@ -13,6 +13,6 @@ Plus de panneaux est un peu plus de travaux, mais permet également de rééquil
 
 > Plus de courbes = plus de panneaux
 
-## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](cathrin_panels_sample.svg "Effet de cette option sur le motif")
+
+

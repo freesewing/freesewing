@@ -1,11 +1,11 @@
 ---
-title: "Calzoncillos Ursula: Lo que necesitas"
+title: "Uma undies: What You Need"
 ---
 
-Para hacer Ursula, necesitarás lo siguiente:
+To make Uma, you will need the following:
 
 - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
-- Unos 0,7 metros (0,8 yardas) de una tela adecuada (consulta [Opciones de tela](/docs/patterns/ursula/fabric))
+- About 0.7 meters (0.8 yards) of a suitable fabric (see [Fabric options](/docs/designs/uma/fabric))
 - Unos 3 metros (3,3 yardas) de elástico para ropa interior, como elástico picot o elástico plegable
 
 <Tip>
@@ -16,6 +16,6 @@ Si se utiliza el pliegue sobre el elástico (FOE) o si se vincula el tejido, Ust
 
 ##### Una remalladora es interesante, pero opcional
 
-Como con todas las telas elásticas, una remalladora te hará la vida más fácil. Si no tienes una no te desesperes. Realmente no la necesitas. Usted puede coser la Ursula con un zigzag stitch.
+Como con todas las telas elásticas, una remalladora te hará la vida más fácil. Si no tienes una no te desesperes. Realmente no la necesitas. You can just sew Uma with a zigzag stitch.
 
 </Tip>

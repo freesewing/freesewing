@@ -10,6 +10,6 @@ Since the shape and height of the sleevecap are more important than the width, w
 
 Mais pour éviter que la manche ne devienne trop étroite, on n'adapte la largeur de la manche que dans une certaine limite. Cette option vous permet de contrôler la largeur de la manche qu'on ne touchera pas. Plus cette valeur augmente, moins la largeur de manche modifiable est importante. This way, the resulting sleeve will be closer to the theoretical sleeve width, and we will instead modify (more of) the sleevecap height to fit the sleeve.
 
-## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](brian_sleevewidthguarantee_sample.svg "Effet de cette option sur le motif")
+
+

@@ -5,7 +5,7 @@ title: "Camiseta Teagan: Lo que necesitas"
 Para hacer Teagan, necesitarás lo siguiente:
 
 - [Suministros básicos de costura](/docs/sewing/basic-sewing-supplies)
-- Aproximadamente 1 metro (1,1 yardas) de una tela adecuada ([ver Opciones de tela](/docs/patterns/teagan/fabric))
+- Aproximadamente 1 metro (1,1 yardas) de una tela adecuada ([ver Opciones de tela](/docs/designs/teagan/fabric))
 
 <Note>
 

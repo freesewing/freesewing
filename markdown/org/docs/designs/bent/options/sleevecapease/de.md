@@ -2,7 +2,7 @@
 title: "Armkugel Zugabe"
 ---
 
-Wie viel Ärmel-Leichtigkeit möchtest du?
+Wie viel Ärmelfreiheit willst du?
 
 > #### Was ist der Punkt?
 > 

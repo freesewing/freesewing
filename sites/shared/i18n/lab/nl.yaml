@@ -1,4 +1,12 @@
 welcome: Welcome to the FreeSewing lab
+<<<<<<< HEAD
+designs: Designs
+docs: Documentatie
+about: You can generate patterns here as well as manage your account. But unless you have a specific reason, you probably want to use FreeSewing.org instead.
+support: Ondersteuning
+supportMsg: Find out where you can turn to when you need help.
+what: What is the FreeSewing lab?
+=======
 about: You can generate patterns here as well as manage your account. But unless you have a specific reason, you probably want to use FreeSewing.org instead.
 goToOrg: Go to FreeSewing.org
 what: What is the FreeSewing lab?
@@ -9,6 +17,7 @@ monorepo: All of the FreeSewing source code is available in our monorepo on GitH
 labrepo: In addition, this particular lab instance has additional source code hosted at
 lab: Source code specific to this lab
 fscode: "FreeSewing's source code"
+>>>>>>> develop
 noDocs: The FreeSewing lab does not include documentation.
 see: Instead, refer to
 orgDocs: FreeSewing.org has documentation for makers, such as design options, sewing techniques, and instructions.

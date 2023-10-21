@@ -62,9 +62,9 @@ Dus ik neem Julians advies ter harte en vraag om hulp. Voordat we daar echter aa
 
 Om er zeker van te zijn dat jouw waarden overeenkomen met die van FreeSewing, neem dan even de tijd om jezelf bekend te maken met:
 
- - [Onze gemeenschapsnormen](/docs/various/community-standards/)
+ - [Onze gemeenschapsnormen](/docs/about/community-standards/)
  - [Onze gedragscode](https://freesewing.dev/contributors/code-of-conduct/)
- - [Onze inkomstenbelofte](/docs/various/pledge/)
+ - [Onze inkomstenbelofte](/docs/about/pledge/)
 
 Als het lezen hiervan je blij maakt in plaats van boos, dan kunnen we je hulp goed gebruiken :)
 
@@ -147,7 +147,7 @@ Je weet hoe je dingen mooi maakt, ook al weer je niet zeker hoe je ze kan laten 
 
 ### Wat heb ik hieraan?
 
-We kunnen je geen geld geven. Bekijk alsjeblieft [onze belofte rond inkomsten](/docs/various/pledge/) om te begrijpen waarom dat zo is.
+We kunnen je geen geld geven. Bekijk alsjeblieft [onze belofte rond inkomsten](/docs/about/pledge/) om te begrijpen waarom dat zo is.
 
 Wat we kunnen bieden is verantwoordelijkheid, erkenning en een aandeel in iets dat ernaar streeft om een positieve kracht te zijn in deze wereld.
 

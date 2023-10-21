@@ -188,13 +188,24 @@ Lorsque vous avez terminé, ouvrez la couture au fer.
 
 ## Étape 9 : Fermer la fourche
 
+<tip>
+
+Double check that your right and left legs match the pattern markings. The right leg's crotch should extend slightly beyond the left. Refer to the pattern and cut excess on the left leg if necessary.
+
+It can be valuable to mark with chalk or thread mark the **Center Front** on each leg. This will help you make sure the peices are in the right place duing fly construction.
+
+</tip>
+
 Assurez-vous qu'une jambe est retournée avec le bon côté dehors, et l'autre a le bon côté dedans.
 
 Maintenant passez la jambe avec l'endroit à l'intérieur de la jambe qui a l'endroit dedans. De cette façon, elles sont endroit contre endroit.
 
-Alignez la couture de fourche, à partir de la taille arrière, en fixant les deux moitiés ensemble pendant que vous vous dirigez vers la braguette. Arrêtez au cran de braguette la plus bas.
+Alignez la couture de fourche, à partir de la taille arrière, en fixant les deux moitiés ensemble pendant que vous vous dirigez vers la braguette. **Stop at the fly notch** and makes sure to back-stitch.
 
 Quand vous avez terminé. Faites-le à nouveau. Coudre toujours la couture de fourche deux fois. C'est l'une de ces bonnes pratiques que vous ignorerez à vos propres risques.
+
+![Close Crossseam](CloseCrossseam.svg)
+
 
 <Tip>
 
@@ -207,7 +218,7 @@ C'est une de ces choses que vous finirez par adorer chaque fois que vous les por
 
 ## Étape 10: Construire la braguette
 
-### Extension "Fermer la mouche"
+### Close the fly extension and serge
 
 Repliez le rallonge de la mouche sur sa ligne de pliage avec de bons côtés ensemble.
 
@@ -215,67 +226,82 @@ Maintenant coudre le long du fond, pour fermer l'extension de la mouche.
 
 Garnir la moitié de la marge de couture pour retirer en vrac avant de la retirer et de la presser sur le bon côté.
 
-### Serger l'extension de la mouche et faire face
+#### Serger l'extension de la mouche et faire face
 
 Serge (ou zig-zag) le long du côté ouvert de l'extension de la mouche. Pas besoin de serrer le dessus car cela se fera prendre dans notre ceinture.
 
 pendant que vous y êtes, aussi serez-vous le long de la totalité de la mouche face aux bords en forme de J.
 
-### Couper la marge de couture supplémentaire sur le devant de la jambe gauche
+![Close Extension and Serge](CloseExtensionAndSerge.svg)
 
-Il y a une marge de couture supplémentaire qui coule le long de la mouche. Nous avons seulement besoin de cela sur le panneau de droite. Coupez-le sur le panneau de gauche pour que vous ayez la marge de couture habituelle seulement.
 
 ### Fixer la face de la mouche
 
-Coudre la mouche face à gauche. Placer les deux côtés endroit contre endroit, en alignant le haut.
+Sew fly facing to left leg. You will be sewing slightly past the cross seam point, so be careful to keep the right leg seam allowance out of the way and aim to sew directly on top of the cross seam line.
 
-### Rentre la pointe de la mouche dans la face avant.
+![Attach Facing](AttachFacing.svg)
 
-Plier le fond de la mouche en faisant face à la couture à l'intérieur et sécuriser avec quelques points.
+### Finish the fly facing
 
-### Coudre le bord de la mouche face à la couture
+Trim the fly facing to half of the seam allowance.  
+Tuck in the tip of the fly facing and secure it with a few stitches. Edge stitch the fly facing to the seam allowance. Press the seam allowance toward the facing and understitch the facing for a clean finish. Again, keeping the right leg  seam allowance out of the way.
 
-Coudre la mouche face à la marge de couture. Assurez-vous de laisser le panneau avant hors de celui-ci.
+![Finish Facing](FinishFacing.svg)
 
-### Appuyez sur la couture de croix, la couture de la mouche et le bord de la mouche
+### Edge stitch the zipper to the fly extension
 
-Appuyez sur ouvrir la couture croisée. Appuyez sur la mouche face au côté.
+<tip>
 
-Pliez ensuite la marge de couture supplémentaire sur la jambe avant droite et appuyez dessus vers le bas.
+**Zipper Length**
 
-### Collez la fermeture éclair à l'extension de la mouche
+It's a good idea to ensure your zipper stop ends before the indicated stitch line on the pattern. This will ensure you don't sew over your zipper stop and reduces tension on the bottom of the fly. If your zipper is too long, you can do a 0 length zig zag stitch to create a new stop (on just the zipper itself).
 
-Placez la fermeture éclair le long du bord (légèrement courbe) de l'extension de la mouche.
+</tip>
 
-Maintenant coudre le long du bord. Pas besoin de se rapprocher de la fermeture à glissière, il suffit de coudre le long du bord pour les tenir en place.
+Edge stitch along the left edge of the zipper to the serged edge of the fly extension to hold it in place.
 
-### Attacher la fermeture éclair à la mouche
+![Baste Zipper](BasteZipper.svg)
 
-Placez maintenant la mouche de la jambe avant droite avec la marge de couture supplémentaire que vous avez pliée sur le haut de la glissière.
 
-Utilisez une couture au bord du pied zippé, le long du bord zippé.
+### Top stitch the right leg to the zipper
 
-<Tip>
+Start by pressing the right leg seam allowance to the back.
 
-Vous pourriez vouloir baster cette première fois pour vous assurer qu'elle est bien parallèle à la fermeture à glissière. Fermé, mais pas trop proche.
+<tip>
 
-</Tip>
+Remember that the seam allowance starts slightly right of the center front, the center front is marked in purple in the image, make sure you don't fold along the center front line by mistake.
 
-### Coudre la fermeture éclair sur la mouche
+</tip>
 
-Coudre ensuite l'autre côté de la fermeture à la mouche. Make sure to align it properly so that when the trousers are closed, the zip is hidden.
+Ensure you place the folded edge of the right leg just left of the zipper teeth to prevent fabric from being caught in the zipper.
 
-### Terminer la couture de croix
+Stop sewing at the top 'fly extention' notch, slightly above the cross seam, and be sure to backstitch. If you don't do this you won't be able to keep the extension out of the way when sewing the J-Seam.
 
-Coudre le dernier morceau de la couture de croix jusqu'à l'encoche la plus haute.
+![Attach Extension to Right Leg](AttachExtensionToRightLeg.svg)
+
+
+### Attach the zipper to the fly facing.
+
+Be careful to align the leg left on the right center front. It can be valuable to pin or baste through the facing and right zide of the zipper tape. (We need to sew the left side of the zipper tape to the left leg). Ensuring everything is lined, sew the fly facing to the left side of the zipper. Try to get close to the zipper, but not too close.
+
+![Attach Facing to Zipper](AttachFacingToZipper.svg)
+
 
 ### Coudre la couture J-de la mouche
 
-Désormais, renverser la soi-disant couture J-de la mouche. Assurez-vous de ne pas prendre le contrôle de l'extension du vol.
+<tip>
 
-### Tape le bas de la mouche
+Use a peice of paper as a guide to sew the J seam, this can be cut from your pattern along the indicated stitch line.
 
-Désormais, abîmez le fond même de la couture J-(la partie horizontale) mais cette fois-ci assurez-vous de prendre également la prolongation de la mouche.
+</tip>
+
+Désormais, renverser la soi-disant couture J-de la mouche. Assurez-vous de ne pas prendre le contrôle de l'extension du vol. Since you didn't sew all the way along the fly extention, you should be able to pin it out of the way.
+
+#### Tape le bas de la mouche
+
+Now, bartack the very botton of the J-seam (the horizontal part) but this time make sure to also catch the fly extension. You can choose to add an additional bar tack along the J-Seam as well (shown in purple).
+
+![Sew the J-Seam](SewTheJSeam.svg)
 
 ## Étape 11 : Fixer les boucles de ceinture
 
@@ -291,11 +317,15 @@ Couper une bande de 80 cm de long (32 po) et de 2,8 cm de large (1 1/8 po).
 
 Serge (ou zigzag) le bord long de la bande des deux côtés.
 
+![Finish Loop Edges](FinishLoopEdges.svg)
+
 Plier un côté à l'intérieur, et l'autre côté dessus. Ensuite appuyez sur votre fer à repasser. Le résultat final devrait être une bande longue d'environ 1 cm de large.
 
 Maintenant coudre sur toute la longueur de la bande, piquer au milieu de celle-ci. Assurez-vous d'utiliser une longueur de point généreuse pour cela.
 
 Enfin, coupez votre bande de courroies de longueur en 8 parties égales pour faire 8 boucles de courroie.
+
+![Stitch and Cut Loops](StitchAndCutLoops.svg)
 
 ### Attacher les boucles de ceinture
 

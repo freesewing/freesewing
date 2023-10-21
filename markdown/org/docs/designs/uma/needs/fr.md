@@ -1,11 +1,11 @@
 ---
-title: "Sous-vêtements Ursula Ce dont tu as besoin"
+title: "Uma undies: What You Need"
 ---
 
-Pour faire Ursula, vous aurez besoin des éléments suivants :
+To make Uma, you will need the following:
 
 - [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
-- Environ 0,7 mètre d'un tissu approprié (voir [Options de tissu](/docs/patterns/ursula/fabric)).
+- About 0.7 meters (0.8 yards) of a suitable fabric (see [Fabric options](/docs/designs/uma/fabric))
 - Environ 3 mètres d'élastique de sous-vêtement, tel que l'élastique à picots ou l'élastique à plis.
 
 <Tip>
@@ -16,6 +16,6 @@ Si vous utilisez un pli sur élastique (FOE) ou si vous faites une liaison trico
 
 ##### Une surjeteuse serait un plus, mais reste en option
 
-Comme pour tous les mailles et tissus stretch, une surjeteuse vous facilitera la vie. Si vous n'en avez pas, ne désespérez pas. Vous n'en avez pas vraiment besoin. Vous pouvez simplement coudre Ursula avec un point en zigzag.
+Comme pour tous les mailles et tissus stretch, une surjeteuse vous facilitera la vie. Si vous n'en avez pas, ne désespérez pas. Vous n'en avez pas vraiment besoin. You can just sew Uma with a zigzag stitch.
 
 </Tip>

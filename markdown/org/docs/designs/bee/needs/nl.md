@@ -5,8 +5,8 @@ title: "Bikinitopje bijen: Wat je nodig hebt"
 Om Bee te maken heb je het volgende nodig:
 
 - Basis naaimateriaal
-- Ongeveer 0,5 - 1 meter (0,6 - 1,1 yard) van een geschikte stof ([zie Bee Fabric options](/docs/patterns/bee/fabric/)).
-- (Optioneel) Ongeveer 0,5 - 1 meter voeringstof ([zie Bijenstof opties](/docs/patterns/bee/fabric/))
+- Ongeveer 0,5 - 1 meter (0,6 - 1,1 yard) van een geschikte stof ([zie Bee Fabric options](/docs/designs/bee/fabric/)).
+- (Optioneel) Ongeveer 0,5 - 1 meter voeringstof ([zie Bijenstof opties](/docs/designs/bee/fabric/))
 - (Optioneel) Lint/lint/koorden voor stropdassen en banden, met dezelfde lengte en breedte als de stropdas en/of band.
 
 <Note>

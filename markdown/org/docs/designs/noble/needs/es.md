@@ -5,7 +5,7 @@ title: "Bloque de carrocería noble: Lo que necesitas"
 Para hacer Noble, necesitarás lo siguiente:
 
 - Suministros básicos de costura
-- Unos 0,5 metros (0,6 yardas) de una tela adecuada ([ver opciones de telas nobles](/docs/patterns/noble/fabric/))
+- Unos 0,5 metros (0,6 yardas) de una tela adecuada ([ver opciones de telas nobles](/docs/designs/noble/fabric/))
 
 Esta lista es para un Bloque Noble por defecto. Si has hecho o vas a hacer cambios en el bloque, puede que tengas que conseguir elementos adicionales como cierres, encuadernación, etc.
 

@@ -2,7 +2,7 @@
 title: "Länge des Riemens"
 ---
 
-Steuert die Länge der Riemen an deiner Schürze.
+Steuert die Länge der Träger an deiner Schürze.
 
 
 

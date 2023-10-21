@@ -42,7 +42,7 @@ Bei Verwendung eines Overlockers/Sergers können Sie Nähte nähen, die in einem
 
 <Note>
 
-Auf dem Schnittmuster ist die hintere Kerbe als Kreuzkerbe gekennzeichnet (siehe [unsere Anleitung zur Schnittmusternotation](/docs/various/notation/notches/)). Es wird empfohlen, dies zu einer doppelten Note zu machen, wenn Sie Ihre Teile ausschneiden, um die Rückseite leichter von der Vorderseite zu unterscheiden.
+On the pattern the back notch is marked as a cross-notch (see [our pattern notation guide](/docs/about/notation/notches/)). Es wird empfohlen, dies zu einer doppelten Note zu machen, wenn Sie Ihre Teile ausschneiden, um die Rückseite leichter von der Vorderseite zu unterscheiden.
 
 </Note>
 

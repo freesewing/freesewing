@@ -4,7 +4,7 @@ title: "Пальто Карліта: Інструкція з розкрою"
 
 <Note>
 
-Певні деталі доводиться викреслювати з існуючих. Як їх складати, можна знайти за посиланням [instructions](/docs/patterns/carlita/instructions).
+Певні деталі доводиться викреслювати з існуючих. How to draft these are provided in the [instructions](/docs/designs/carlita/instructions).
 
 </Note>
 
