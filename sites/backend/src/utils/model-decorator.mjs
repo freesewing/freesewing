@@ -136,7 +136,7 @@ export function decorateModel(Model, tools, modelConfig) {
   /*
    * Helper method to encrypt at-rest data
    */
-  Model.cloak = function (data, raw) {
+  Model.cloak = function (data, raw = {}) {
     /*
      * Encrypt data
      */
