@@ -14,6 +14,6 @@ title: "Holgura de la parte superior de la manga"
 
 > Cuanto más ligero sea tu tejido, menos mangas te guste fácilmente.
 
-## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](carlton_sleevecapease_sample.svg "Efecto de esta opción en el patrón")
+
+

@@ -13,6 +13,6 @@ Cela influence également ce à quoi les choses ressembleront quand vous roulez 
 
 </Note>
 
-## Effet de cette option sur le motif
 
-![Cette image montre l'effet de cette option en superposant plusieurs variantes qui ont une valeur différente pour cette option](simon_sleeveplacketlength_sample.svg "Effet de cette option sur le motif")
+
+

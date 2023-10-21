@@ -85,7 +85,7 @@ Hoera! Je bent klaar met het lastigste deel! Eventueel kun je de knipranden vast
 
 <Tip>
 
-Een uitgebreidere manier om te springen is te vinden in de [Aaron Instuctions](/docs/patterns/aaron/instructies).
+A more extensive how-to on knit binding can be found in the [Aaron Instuctions](/docs/designs/aaron/instructions).
 
 </Tip>
 

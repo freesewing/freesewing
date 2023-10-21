@@ -1,5 +1,5 @@
 ---
-title: "Sous-vêtements Ursula : Options de conception"
+title: "Uma undies: Design Options"
 ---
 
-<DesignOptions design='ursula' />
+<DesignOptions design='uma' />

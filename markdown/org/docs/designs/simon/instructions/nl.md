@@ -465,7 +465,7 @@ Je moet nu de mouw in het armsgat spelden. Om dit te doen, let dan op dat:
 
 De standaard hoeveelheid extra stof in de mouwkop van dit patroon is 0.5 cm. Als je extra stof in de mouwkop hebt moet je die extra lengte gelijk verdelen tussen de merktekens, zoals getoond.
 
-> Als je niet zeker bent wat deze extra stof is, bekijk dan even de [documentatie voor de optie voor extra stof in de mouwkop](/docs/patterns/simon/options/sleevecapease).
+> Als je niet zeker bent wat deze extra stof is, bekijk dan even de [documentatie voor de optie voor extra stof in de mouwkop](/docs/designs/simon/options/sleevecapease).
 
 #### Stik mouw in armsgat
 

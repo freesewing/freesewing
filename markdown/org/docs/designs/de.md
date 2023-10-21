@@ -1,6 +1,5 @@
 ---
-title: Entwurf
-order: 300
+title: FreeSewing Designs
 ---
 
 <ReadMore list />

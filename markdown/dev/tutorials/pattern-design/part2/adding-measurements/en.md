@@ -3,7 +3,7 @@ title: Adding measurements
 order: 30
 ---
 
-FreeSewing is all about _made-to-measure_ sewing patterns -- or *parametric
+FreeSewing is all about _bespoke_ sewing patterns -- or *parametric
 design* to use a more generic term.
 
 That means that when drafting our pattern, I will take the measurements provided

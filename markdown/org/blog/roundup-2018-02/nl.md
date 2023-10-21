@@ -16,9 +16,9 @@ Laten we eens kijken naar de dingen die wel gebeurden in februari voordat we het
 
 ### Core v1.7.0 is uit
 
-Eerder vandaag heb ik de trekker overgehaald van core release 1.7.0. Zoals gebruikelijk bevat [de lijst met veranderingen](https://github.com/freesewing/core/blob/develop/CHANGELOG.md#170) alle informatie, maar het belangrijkste voor gebruikers zijn [de nieuwe ribbelopties in het Sven-patroon](/docs/patterns/sven/options#ribbing)en een heleboel extra verbeteringen aan Carlton/Carlita.
+Eerder vandaag heb ik de trekker overgehaald van core release 1.7.0. Zoals gebruikelijk bevat [de lijst met veranderingen](https://github.com/freesewing/core/blob/develop/CHANGELOG.md#170) alle informatie, maar het belangrijkste voor gebruikers zijn [de nieuwe ribbelopties in het Sven-patroon](/docs/designs/sven/options#ribbing)en een heleboel extra verbeteringen aan Carlton/Carlita.
 
-Deze Carlton/Carlita verbeteringen worden gedreven door het feit dat ik en [Anneke](/showcase/maker/annekecaramin) zijn begonnen met het werken aan [de documentatie voor deze patronen](/docs/patterns/carlton/). En elke keer als we iets schrijven als *hier plakvlieseline aanbrengen*, gaan we ook terug naar het patroon om precies te markeren waar dit plakvlies moet komen.
+Deze Carlton/Carlita verbeteringen worden gedreven door het feit dat ik en [Anneke](/showcase/maker/annekecaramin) zijn begonnen met het werken aan [de documentatie voor deze patronen](/docs/designs/carlton/). En elke keer als we iets schrijven als *hier plakvlieseline aanbrengen*, gaan we ook terug naar het patroon om precies te markeren waar dit plakvlies moet komen.
 
 Onnodig te zeggen dat dat veel werk is. Maar het zou moeten helpen bij het maken van deze vachtpatronen, vooral voor mensen voor wie dit de eerste keer is dat ze een vacht maken.
 

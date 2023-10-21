@@ -20,6 +20,6 @@ und sicherstellen, dass er innerhalb des Längenbonus liegt, den du zur Verfügu
 
 </Note>
 
-## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simon_buttonfreelength_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+

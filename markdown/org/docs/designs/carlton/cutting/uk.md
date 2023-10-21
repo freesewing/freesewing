@@ -4,7 +4,7 @@ title: "Пальто карлтон: Інструкція з розкрою"
 
 <Note>
 
-Певні деталі доводиться викреслювати з існуючих. Як їх складати, можна знайти за посиланням [instructions](/docs/patterns/carlton/instructions).
+Певні деталі доводиться викреслювати з існуючих. How to draft these are provided in the [instructions](/docs/designs/carlton/instructions).
 
 </Note>
 

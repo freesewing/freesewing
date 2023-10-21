@@ -37,8 +37,8 @@ The image above shows a sleevecap, starting at point 1, then going up until poin
 
 Висота втачного рукава дорівнює відстані між точками 3 і 4. Точна висота - це компроміс між вимірами моделі, опціями, легкістю, зручністю вкладання рукава і тим фактом , що рукав в кінцевому підсумку повинен відповідати проймі. Тому висота може змінюватися, і ми не контролюємо точне значення. Але є дві опції, які контролюють форму нашої втачки:
 
-- [Верх рукава X](/docs/patterns/breanna/options/sleevecaptopfactorx/) : Контролює горизонтальне розташування точок 3 і 4
-- [Верх рукава Y](/docs/patterns/breanna/options/sleevecaptopfactory/) : Керує вертикальним розміщенням точки 4
+- [Верх рукава X](/docs/designs/breanna/options/sleevecaptopfactorx/) : Контролює горизонтальне розташування точок 3 і 4
+- [Верх рукава Y](/docs/designs/breanna/options/sleevecaptopfactory/) : Керує вертикальним розміщенням точки 4
 
 In other words, point 4 can be made higher and lower and, perhaps less intutitively, it can also be changed to lie more to the right or the left, rather than smack in the middle as in our example.
 
@@ -48,10 +48,10 @@ In other words, point 4 can be made higher and lower and, perhaps less intutitiv
 
 Коли пункти 1, 2, 3 і 4 виконані, у нас є коробка, в яку ми можемо втягнути наш рукав. Тепер настав час намітити наші _точки перегину_. Це точки 5 і 6 на нашому кресленні, і їх розміщення визначається наступними 4 варіантами:
 
-- [Пілочка спинки рукава X](/docs/patterns/breanna/options/sleevecapbackfactorx) : Контролює горизонтальне розміщення точки 5
-- [Пілочка рукава ззаду Y](/docs/patterns/breanna/options/sleevecapbackfactory) : Керує вертикальним розміщенням точки 5
-- [Рукав передній X](/docs/patterns/breanna/options/sleevecapbackfactorx) : Керує горизонтальним розміщенням точки 6
-- [Рукав передній Y](/docs/patterns/breanna/options/sleevecapbackfactory) : Керує вертикальним розміщенням точки 6
+- [Пілочка спинки рукава X](/docs/designs/breanna/options/sleevecapbackfactorx) : Контролює горизонтальне розміщення точки 5
+- [Пілочка рукава ззаду Y](/docs/designs/breanna/options/sleevecapbackfactory) : Керує вертикальним розміщенням точки 5
+- [Рукав передній X](/docs/designs/breanna/options/sleevecapbackfactorx) : Керує горизонтальним розміщенням точки 6
+- [Рукав передній Y](/docs/designs/breanna/options/sleevecapbackfactory) : Керує вертикальним розміщенням точки 6
 
 <Note>
 
@@ -68,10 +68,10 @@ In other words, point 4 can be made higher and lower and, perhaps less intutitiv
 
 Точки _зміщені_ перпендикулярно до середини лінії між двома опорними точками , що їх оточують. Зміщення для кожної точки контролюється цими 4 опціями:
 
-- [Зсув пілочки Q1](/docs/patterns/breanna/options/sleevecapq1offset) : Керує зсувом перпендикулярно до лінії від точок 2 до 6
-- [Зсув пілочки Q2](/docs/patterns/breanna/options/sleevecapq2offset) : Керує зсувом перпендикулярно до лінії від точок 6 до 4
-- [Зсув пілочки Q3](/docs/patterns/breanna/options/sleevecapq3offset) : Керує зсувом перпендикулярно до лінії від точок 4 до 5
-- [Зсув пілочки Q4](/docs/patterns/breanna/options/sleevecapq3offset) : Керує зсувом перпендикулярно до лінії від точок 5 до 1
+- [Зсув пілочки Q1](/docs/designs/breanna/options/sleevecapq1offset) : Керує зсувом перпендикулярно до лінії від точок 2 до 6
+- [Зсув пілочки Q2](/docs/designs/breanna/options/sleevecapq2offset) : Керує зсувом перпендикулярно до лінії від точок 6 до 4
+- [Зсув пілочки Q3](/docs/designs/breanna/options/sleevecapq3offset) : Керує зсувом перпендикулярно до лінії від точок 4 до 5
+- [Зсув пілочки Q4](/docs/designs/breanna/options/sleevecapq3offset) : Керує зсувом перпендикулярно до лінії від точок 5 до 1
 
 <Note>
 
@@ -91,14 +91,14 @@ In other words, point 4 can be made higher and lower and, perhaps less intutitiv
 
 For each of the anchor points (the ones marked in orange, not points 1 and 2) there is an option to control the spread upwards, and downwards:
 
-- [Спред Sleevecap Q1 вниз](/docs/patterns/breanna/options/sleevecapq1spread1) : Контролює спред вниз у першому кварталі
-- [Спред Sleevecap Q1 вгору](/docs/patterns/breanna/options/sleevecapq1spread2) : Контролює спред вгору в першому кварталі
-- [Спред Sleevecap Q2 вниз](/docs/patterns/breanna/options/sleevecapq2spread1) : Контролює спред вниз у другому кварталі
-- [Спред Sleevecap Q2 вгору](/docs/patterns/breanna/options/sleevecapq2spread2) : Контролює спред вгору в другому кварталі
-- [Спред Sleevecap Q3 вгору](/docs/patterns/breanna/options/sleevecapq3spread1) : Контролює спред вгору в третьому кварталі
-- [Спред Sleevecap Q3 вниз](/docs/patterns/breanna/options/sleevecapq3spread2) : Контролює спред вниз у третьому кварталі
-- [Sleevecap Q4 спред вгору](/docs/patterns/breanna/options/sleevecapq4spread1) : Контролює спред вгору в четвертому кварталі
-- [Спред на зниження Sleevecap Q4](/docs/patterns/breanna/options/sleevecapq4spread2) : Контролює спред на зниження в четвертому кварталі
+- [Спред Sleevecap Q1 вниз](/docs/designs/breanna/options/sleevecapq1spread1) : Контролює спред вниз у першому кварталі
+- [Спред Sleevecap Q1 вгору](/docs/designs/breanna/options/sleevecapq1spread2) : Контролює спред вгору в першому кварталі
+- [Спред Sleevecap Q2 вниз](/docs/designs/breanna/options/sleevecapq2spread1) : Контролює спред вниз у другому кварталі
+- [Спред Sleevecap Q2 вгору](/docs/designs/breanna/options/sleevecapq2spread2) : Контролює спред вгору в другому кварталі
+- [Спред Sleevecap Q3 вгору](/docs/designs/breanna/options/sleevecapq3spread1) : Контролює спред вгору в третьому кварталі
+- [Спред Sleevecap Q3 вниз](/docs/designs/breanna/options/sleevecapq3spread2) : Контролює спред вниз у третьому кварталі
+- [Sleevecap Q4 спред вгору](/docs/designs/breanna/options/sleevecapq4spread1) : Контролює спред вгору в четвертому кварталі
+- [Спред на зниження Sleevecap Q4](/docs/designs/breanna/options/sleevecapq4spread2) : Контролює спред на зниження в четвертому кварталі
 
 <Note>
 

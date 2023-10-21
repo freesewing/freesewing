@@ -1,11 +1,11 @@
 ---
-title: "Ursula ondergoed: Wat je nodig hebt"
+title: "Uma undies: What You Need"
 ---
 
-Om Ursula te maken heeft u het volgende nodig:
+To make Uma, you will need the following:
 
 - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-- Ongeveer 0,7 meter van een geschikte stof (zie [Stofopties](/docs/patterns/ursula/fabric))
+- About 0.7 meters (0.8 yards) of a suitable fabric (see [Fabric options](/docs/designs/uma/fabric))
 - Ongeveer 3 meter ondergoedelastiek, zoals picotelastiek of overslagelastiek
 
 <Tip>
@@ -16,6 +16,6 @@ beïnvloeden als je de vouw over elastiek (FOE) gebruikt of jersey binden, Missc
 
 ##### Een overlock of serger/overlock is mooi, maar optioneel
 
-Zoals met alle breitwear en stretch stoffen zal een serger/overlock het leven makkelijker maken. Als je geen overlock hebt, geen zorg. Je hebt het niet echt nodig. Je kan Ursula gewoon naaien met een zigzagsteek.
+Zoals met alle breitwear en stretch stoffen zal een serger/overlock het leven makkelijker maken. Als je geen overlock hebt, geen zorg. Je hebt het niet echt nodig. You can just sew Uma with a zigzag stitch.
 
 </Tip>

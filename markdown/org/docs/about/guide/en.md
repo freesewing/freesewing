@@ -36,7 +36,7 @@ developers, designers, contributors, and translators.
 ## What is FreeSewing.org?
 
 Freesewing.org is the FreeSewing project's flagship website where we offer
-our ever-growing collection of made-to-measure sewing patterns to makers all
+our ever-growing collection of bespoke sewing patterns to makers all
 over the world.
 
 FreeSewing is not about fashion, trends, or publishing the hot new pattern of the season.
@@ -60,7 +60,7 @@ That happens in real-time, in your browser.
 
 ##### Saving is optional
 
-When you generate a made-to-measure pattern, you can tweak it endlessly through its various options,
+When you generate a bespoke pattern, you can tweak it endlessly through its various options,
 and export it to a range of formats, including PDF.  
 But it remains ephemeral until you save it to your account, so it
 becomes one of **your patterns**.
@@ -75,7 +75,7 @@ You can save as many patterns as you like.
 <Note>
 
 ##### We respect the strictest privacy laws on the planet
-To generate made-to-measure sewing patterns, we need your measurements.
+To generate bespoke sewing patterns, we need your measurements.
 Asking for them every time would be rather tedious, so we store them in your account.
 
 Your account data is stored on our backend, subject to [our privacy notice](/docs/about/privacy),

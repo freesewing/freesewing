@@ -5,7 +5,7 @@ title: "Teagan-T-Shirt: Was du brauchst"
 Um Teagan zu erstellen, benötigst du Folgendes:
 
 - [Grundlegendes Nähzubehör](/docs/sewing/basic-sewing-supplies)
-- Etwa 1 Meter (1,1 Yards) eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/patterns/teagan/fabric))
+- Etwa 1 Meter (1,1 Yards) eines geeigneten Stoffes ([siehe Stoffoptionen](/docs/designs/teagan/fabric))
 
 <Note>
 

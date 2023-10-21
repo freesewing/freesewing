@@ -8,10 +8,11 @@ Diese Option steuert die Abwärtsverteilung im ersten Quadranten der Ärmel.
 
 <Tip>
 
-Siehe [die Armkugel verstehen](/docs/patterns/brian/options#understanding-the-sleevecap) für eine detaillierte Erklärung, wie die Armkugel konstruiert wird und wie die einzelnen Optionen ihre Form beeinflussen.
+See [understanding the sleevecap](/docs/designs/brian/options#understanding-the-sleevecap) for an in-depth
+look into how the sleevecap is constructed and the influence of the different options on its shape.
 
 </Tip>
 
-## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](huey_sleevecapq1spread1_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+

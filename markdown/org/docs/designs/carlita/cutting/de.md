@@ -4,7 +4,7 @@ title: "Carlita Mantel: Schnittanleitung"
 
 <Note>
 
-Bestimmte Teile müssen von den bestehenden Teilen abgeleitet werden. Wie du diese erstellst, findest du auf [instructions](/docs/patterns/carlita/instructions).
+Bestimmte Teile müssen von den bestehenden Teilen abgeleitet werden. How to draft these are provided in the [instructions](/docs/designs/carlita/instructions).
 
 </Note>
 

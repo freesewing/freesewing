@@ -9,6 +9,6 @@ Es habitual que el borde de las solapas no sea totalmente recto, sino que gire u
 - Aumenta esta opción para desplazar la punta de la solapa hacia dentro
 - Disminuye esta opción para desplazar la punta de la solapa hacia fuera
 
-## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](jaeger_lapelreduction_sample.svg "Efecto de esta opción en el patrón")
+
+

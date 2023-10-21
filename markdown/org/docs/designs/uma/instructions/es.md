@@ -1,5 +1,5 @@
 ---
-title: "Calzoncillos Ursula: Instrucciones de costura"
+title: "Uma undies: Sewing Instructions"
 ---
 
 ### Step 1: Pin/baste the front to the first gusset piece
