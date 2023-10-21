@@ -144,9 +144,9 @@
       "t": "Seat ease",
       "d": "Controls how wide the seat is."
     },
-    "crotchGussetWidth": {
-      "t": "Crotch gusset width",
-      "d": "Controls how wide the crotch gusset will be. Adjust so that the front and back pieces look smooth and clean around the crotch fork and upper legs."
+    "crotchGussetFactor": {
+      "t": "Crotch gusset factor",
+      "d": "Controls how wide the crotch gusset will be. Adjust so that the front and back pieces look smooth and clean around the crotch fork and upper legs. Deeper thighs and abdomens require a larger value, while wider ones require a smaller value."
     },
     "upperLegEase": {
       "t": "Upper leg ease",
@@ -221,14 +221,6 @@
     "legTaperPosition": {
       "t": "Leg taper position",
       "d": "Controls how the lower legs are laid out on the pattern."
-    },
-    "crotchScoopWidth": {
-      "t": "Crotch scoop width",
-      "d": "Controls how wide the curve at the crotch fork is."
-    },
-    "crotchScoopLength": {
-      "t": "Crotch scoop length",
-      "d": "Controls how long the curve at the crotch fork is."
     },
     "raglanScoopLength": {
       "t": "Raglan scoop length",

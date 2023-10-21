@@ -30,10 +30,11 @@ function draftBase({
     (measurements.hpsToWaistFront + measurements.hpsToWaistBack + measurements.crossSeam) *
     (1 + options.centerSeamEase)
   store.set('verticalTrunk', verticalTrunk)
-  const crotchGussetWidth = verticalTrunk * options.crotchGussetWidth
+  //  const crotchGussetWidth = verticalTrunk * options.crotchGussetWidth
+  const crotchGussetWidth = 0.22 * measurements.upperLeg * options.crotchGussetFactor // .18169 = (PI - 2) / (2PI) = extra fabric needed to go from a trunk to two legs. Fudged upwards a bit because thighs are deeper than they are wide.
   store.set('crotchGussetWidth', crotchGussetWidth)
-  const crotchScoopWidth = verticalTrunk * options.crotchScoopWidth
-  const crotchScoopLength = verticalTrunk * options.crotchScoopLength
+  const crotchScoopWidth = crotchGussetWidth / 4
+  const crotchScoopLength = crotchScoopWidth
 
   const legLength = options.legLength * measurements.inseam
   const totalLength = hpsToUpperLeg + legLength
@@ -42,8 +43,8 @@ function draftBase({
   let chest = measurements.chest * (1 + options.chestEase)
   chest -= 4 * (options.raglanScoopMagnitude * armpitYPosition)
   const neckRadius = (measurements.neck * (1 + options.neckEase)) / (2 * Math.PI)
-  const upperLeg = measurements.upperLeg * (1 + options.upperLegEase) + crotchScoopWidth
-  const seat = measurements.seat * (1 + options.seatEase) + 0.8 * crotchScoopWidth
+  const upperLeg = measurements.upperLeg * (1 + options.upperLegEase)
+  const seat = measurements.seat * (1 + options.seatEase)
   const hips = measurements.hips * (1 + options.hipsEase)
   const waist = measurements.waist * (1 + options.waistEase)
 
@@ -75,7 +76,7 @@ function draftBase({
   points.cfNeck = points.neckCenter.shift(270, neckRadius)
   points.cfCrotch = new Point(0, (verticalTrunk - crotchGussetWidth) / 2)
   points.crotchEnd = new Point(crotchScoopWidth, points.cfCrotch.y + crotchScoopLength)
-  points.upperLeg = new Point(upperLeg / 2 - crotchGussetWidth / 2, hpsToUpperLeg)
+  points.upperLeg = new Point(upperLeg / 2 - crotchGussetWidth / 4, hpsToUpperLeg)
   const legBalance =
     (points.upperLeg.x - points.crotchEnd.x - legHemCircumference / 2) *
     (1 - options.legTaperPosition)
@@ -338,7 +339,7 @@ export const base = {
     raglanScoopLength: { pct: 20, min: 0, max: 50, menu: 'advanced' },
     // How deep the scoop running down the raglan seam is, as a % of the raglan length.
     raglanScoopMagnitude: { pct: 6, min: 0, max: 20, menu: 'advanced' },
-    // Width of the hem around the hips, as a multiple of the seam allowance.
+    // Width of the hem around the legs, as a multiple of the seam allowance.
     legHem: {
       pct: 200,
       min: 0,
@@ -347,12 +348,12 @@ export const base = {
       menu: (settings, mergedOptions) => (mergedOptions.legRibbing ? false : 'construction'),
     },
     // How wide the scoop to each side of the crotch sweeps (excluding the gusset, as a % of the verticalTrunk.
-    crotchScoopWidth: { pct: 2.5, min: 1, max: 5, menu: 'advanced' },
-    crotchScoopLength: { pct: 4, min: 3, max: 15, menu: 'advanced' },
+    //    crotchScoopWidth: { pct: 2.5, min: 1, max: 5, menu: 'advanced' },
+    //    crotchScoopLength: { pct: 3, min: 1.5, max: 8, menu: 'advanced' },
     // How wide the crotch gusset is, as a % of the verticalTrunk. This measurement determines how much room there is in the crotch and rear-end of the garment.
-    crotchGussetWidth: { pct: 5, min: 2, max: 10, menu: 'fit' },
+    crotchGussetFactor: { pct: 100, min: 75, max: 133, menu: 'fit' },
     // 100% produces a straight outseam and has the inseam taper outwards. 0% has the inseam drop straight down (after the scoop) and the outseam tapers in.
-    legTaperPosition: { pct: 100, min: 0, max: 150, menu: 'advanced' },
+    legTaperPosition: { pct: 50, min: 0, max: 100, menu: 'advanced' },
     frontOnFold: { bool: false, menu: 'construction' },
     backOnFold: { bool: true, menu: 'construction' },
     // How long the zipper will be, as a % of the verticalTrunk. Longer zippers will make the garment easier to don and doff, but zippers do not stretch. Leotards and wide-necked stretch clothes can do with no zipper at all. Swimwear should have a zipper length no more than 20% since zippers do not stretch. Onesie pajamas can have much longer zippers (40%-50%).
