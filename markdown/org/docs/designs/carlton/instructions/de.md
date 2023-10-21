@@ -4,7 +4,7 @@ title: "Carlton Mantel: Anleitung zum Nähen"
 
 ### Schritt 1: Zeichne und schneide die fehlenden Futter- und Verkleidungsteile zu
 
-Bei einigen Teilen für Carlton musst du Teile aus den vorhandenen Teilen entwerfen. Im Folgenden findest du eine Liste der Teile, die du entwerfen musst: [. Wie du sie schneidest, erfährst du unter](/docs/patterns/carlton/cutting/) .
+Bei einigen Teilen für Carlton musst du Teile aus den vorhandenen Teilen entwerfen. Im Folgenden findest du eine Liste der Teile, die du entwerfen musst: [. Wie du sie schneidest, erfährst du unter](/docs/designs/carlton/cutting/) .
 
 #### Entwerfen
 
@@ -56,12 +56,12 @@ Vergiss beim Zuschneiden nicht die Nahtzugabe für diese Teile, wenn du diese Te
 
 #### Zuschnitt
 
-- Schneide alle oben genannten Teile aus den jeweiligen Stoffen/Bezügen aus. ([siehe Carlton Cutting](/docs/patterns/carlton/cutting/))
+- Schneide alle oben genannten Teile aus den jeweiligen Stoffen/Bezügen aus. ([siehe Carlton Cutting](/docs/designs/carlton/cutting/))
 
 ### Schritt 2: Bring mich in Ordnung
 
 <Fixme>
 
-Die Dokumentation für dieses Muster muss noch geschrieben werden. In der Zwischenzeit gibt es einige vorläufige Anleitungen für ([Carlita, Carlton's Counterpart](/docs/patterns/carlita/instructions/)), die helfen sollten.
+Die Dokumentation für dieses Muster muss noch geschrieben werden. In the meantime their are some preliminary instructions for ([Carlita, Carlton's Counterpart](/docs/designs/carlita/instructions/)) that should help.
 
 </Fixme>

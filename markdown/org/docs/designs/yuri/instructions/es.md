@@ -42,7 +42,7 @@ Si usas un overlocker/serger puedes coser costuras que necesitan fininshing en u
 
 <Note>
 
-En el patrón, la muesca trasera está marcada como muesca en cruz (consulta [nuestra guía de notación de patrones](/docs/various/notation/notches/)). Se recomienda hacer esto una doble muñeca al cortar sus piezas para facilitar la diferencia de la parte trasera desde el frente.
+On the pattern the back notch is marked as a cross-notch (see [our pattern notation guide](/docs/about/notation/notches/)). Se recomienda hacer esto una doble muñeca al cortar sus piezas para facilitar la diferencia de la parte trasera desde el frente.
 
 </Note>
 

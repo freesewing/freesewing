@@ -83,7 +83,7 @@ This data is stored for anybody with an account on our website.
 
 - To authenticate you
 - To be able to contact you when required
-- To be able to generate made-to-measure sewing patterns for you
+- To be able to generate bespoke sewing patterns for you
 
 ##### How long do we keep it?
 

@@ -27,6 +27,6 @@ En caso de duda, o si el tamaño de tu cremallera no está disponible, utiliza e
 
 </Note>
 
-## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](hortensia_zippersize_sample.svg "Efecto de esta opción en el patrón")
+
+

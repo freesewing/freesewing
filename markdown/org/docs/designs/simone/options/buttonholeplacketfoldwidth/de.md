@@ -15,6 +15,6 @@ Dies gilt nur für einen klassischen Platzhalter. So wird es ignoriert, wenn Sie
 
 </Note>
 
-## Effekt dieser Option auf das Schnittmuster
 
-![Dieses Bild zeigt den Effekt dieser Option, indem es mehrere Varianten überlagert, die einen anderen Wert für diese Option haben](simone_buttonholeplacketfoldwidth_sample.svg "Effekt dieser Option auf das Schnittmuster")
+
+

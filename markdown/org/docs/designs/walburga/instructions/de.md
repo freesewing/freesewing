@@ -14,7 +14,7 @@ Walburga ist ein historisch inspiriertes Muster, und wenn du mehr Authentizität
 
 ### Schritt 2: Nähte und Kopföffnung fertigstellen
 
-- Bearbeite die Nähte und die Schnittkanten an der Kopföffnung mit einer Methode deiner Wahl. (Wenn du die in den [Stoffoptionen](/docs/patterns/walburga/fabric)empfohlenen Stoffe verwendest, werden sie __ ausfransen. Du kannst die Nahtzugabe zweimal falten, die Schnittkante einschlagen und absteppen. Du kannst auch dekorative Steppnähte verwenden).
+- Bearbeite die Nähte und die Schnittkanten an der Kopföffnung mit einer Methode deiner Wahl. (Wenn du die in den [Stoffoptionen](/docs/designs/walburga/fabric)empfohlenen Stoffe verwendest, werden sie __ ausfransen. Du kannst die Nahtzugabe zweimal falten, die Schnittkante einschlagen und absteppen. Du kannst auch dekorative Steppnähte verwenden).
 
 ### (Optional) Schritt 3: Schlitze schneiden
 

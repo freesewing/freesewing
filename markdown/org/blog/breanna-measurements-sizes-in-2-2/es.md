@@ -26,7 +26,7 @@ Por ejemplo, tenemos un bloque similar para ropa de hombre llamado [Brian](/desi
 
 En otras palabras, Breanna es un elemento importante para ampliar nuestra colección de ropa de mujer. Pero eso no significa que no sea una buena noticia también para ti. Si llevas un tiempo cosiendo para , es probable que hacer tu propio bloque/sloper haya estado siempre en tu lista de tareas pendientes de . Pues buenas noticias, porque aquí tienes tu bloque listo para salir.
 
-Y, por supuesto, tiene todos los extras que puedes esperar de nosotros. Echa un vistazo a [las opciones de patrones](/docs/patterns/breanna/options/) y Creo que te impresionarán positivamente. Por lo menos, este bloque puede alojar 1 ó 2 dardos de busto en 15 lugares diferentes, lo que te proporciona 120 formas únicas de colocar tu(s) dardo(s) de busto.
+Y, por supuesto, tiene todos los extras que puedes esperar de nosotros. Echa un vistazo a [las opciones de patrones](/docs/designs/breanna/options/) y Creo que te impresionarán positivamente. Por lo menos, este bloque puede alojar 1 ó 2 dardos de busto en 15 lugares diferentes, lo que te proporciona 120 formas únicas de colocar tu(s) dardo(s) de busto.
 
 Breanna lleva tiempo gestándose, y nos encantaría recibir tus comentarios al respecto. Hacer una muselina a partir de un bloque como éste no es realmente mucho trabajo. Así que si tienes algo de tiempo libre para prepararlo y contarnos cómo te ha ido, , sería estupendo.
 
@@ -74,7 +74,7 @@ Obviamente, los patrones a medida son *lo nuestro*, y no vamos a cambiar eso. Pe
 
 ### ¿Qué son las tallas estándar?
 
-¿Lo más difícil de añadir soporte para tamaños estándar? Averiguar qué diablos se supone que son las medidas estándar . Lo hemos intentado, y si tienes curiosidad puedes consultar [ nuestra tabla de tallas aquí](/docs/various/sizes/).
+¿Lo más difícil de añadir soporte para tamaños estándar? Averiguar qué diablos se supone que son las medidas estándar . Lo hemos intentado, y si tienes curiosidad puedes consultar [ nuestra tabla de tallas aquí](/sizes/).
 
 Para la ropa de hombre, nuestra gama de tallas va de la 32 a la 50, y se basan en una talla base 38 que luego graduamos hacia arriba y hacia abajo.  
 Para la ropa de mujer, nuestra gama de tallas va de la 28 a la 48, y se basan en una talla 34 de referencia que luego graduamos hacia arriba y hacia abajo.

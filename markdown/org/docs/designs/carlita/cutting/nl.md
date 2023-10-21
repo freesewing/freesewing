@@ -4,7 +4,7 @@ title: "Carlita vacht: Knip instructies"
 
 <Note>
 
-Bepaalde onderdelen moeten worden afgeleid van de bestaande onderdelen. Hoe je deze opstelt staat in de [instructions](/docs/patterns/carlita/instructions).
+Bepaalde onderdelen moeten worden afgeleid van de bestaande onderdelen. How to draft these are provided in the [instructions](/docs/designs/carlita/instructions).
 
 </Note>
 

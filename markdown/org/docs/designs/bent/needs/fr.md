@@ -5,7 +5,7 @@ title: "Bloc de corps plié : Ce dont tu as besoin"
 Pour fabriquer Bent, tu auras besoin des éléments suivants :
 
 - Fourniture de base pour la couture
-- Environ 1,5 à 2 mètres d'un tissu approprié ([voir Bent Fabric options](/docs/patterns/bent/fabric/)).
+- Environ 1,5 à 2 mètres d'un tissu approprié ([voir Bent Fabric options](/docs/designs/bent/fabric/)).
 
 Cette liste s'applique à un bloc Bent par défaut. Si vous avez apporté des modifications au bloc, vous devrez peut-être vous procurer des éléments supplémentaires tels que des fermetures, des reliures, etc.
 

@@ -5,7 +5,7 @@ title: "Aaron A-Shirt: Wat je nodig hebt"
 Om Aaron te maken heb je het volgende nodig:
 
 - [Basis naaimateriaal](/docs/sewing/basic-sewing-supplies)
-- Ongeveer 0,75 meter van een geschikte stof ([zie Stofopties](/docs/patterns/aaron/fabric))
+- Ongeveer 0,75 meter van een geschikte stof ([zie Stofopties](/docs/designs/aaron/fabric))
 
 <Note>
 

@@ -14,7 +14,7 @@ Walburga is een historisch geïnspireerd patroon en als je meer authenticiteit w
 
 ### Stap 2: Naden en hoofdopening afwerken
 
-- Werk de naden en de knipranden bij de hoofdopening af met een methode naar keuze. (Als je de stoffen hebt gebruikt die worden aanbevolen in de [stofopties](/docs/patterns/walburga/fabric), zullen ze _gaan rafelen. De naadtoeslag twee keer vouwen, de kniprand insluiten en doorstikken is een optie. Je kunt ook decoratieve doorstiksels gebruiken).
+- Werk de naden en de knipranden bij de hoofdopening af met een methode naar keuze. (Als je de stoffen hebt gebruikt die worden aanbevolen in de [stofopties](/docs/designs/walburga/fabric), zullen ze _gaan rafelen. De naadtoeslag twee keer vouwen, de kniprand insluiten en doorstikken is een optie. Je kunt ook decoratieve doorstiksels gebruiken).
 
 ### (Optioneel) Stap 3: Snijd spleten
 

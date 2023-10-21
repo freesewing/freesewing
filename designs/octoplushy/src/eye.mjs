@@ -5,7 +5,7 @@ function octoplushyEye(
   { options, Point, Path, points, paths, Snippet, snippets, sa, macro, expand, units, store, part }
 ) {
   if (options.type == 'octoplushy') return part
-  if (partNumber > (options.type == 'squid' ? 1 : 2)) return  part.hide()
+  if (partNumber > (options.type == 'squid' ? 1 : 2)) return part.hide()
 
   const c = 0.55191502449351
 

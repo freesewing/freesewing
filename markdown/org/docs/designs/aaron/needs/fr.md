@@ -5,7 +5,7 @@ title: "Aaron A-Shirt : Ce dont vous avez besoin"
 Pour réaliser Aaron, vous aurez besoin de :
 
 - [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
-- Environ 0.75 mètres (0.8 yards) d'un tissu adapté ([voir Options de tissu](/docs/patterns/aaron/fabric))
+- Environ 0.75 mètre (0.8 yard) d'un tissu adapté ([voir Options de tissu](/docs/designs/aaron/fabric))
 
 <Note>
 

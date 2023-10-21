@@ -15,38 +15,26 @@ Please refer to our [tutorials](/tutorials) to get started.
 
 </Tip>
 
+## Core API Documentation
+
+<ReadMore recurse />
+
 ## Named exports
 
-<Note>
+In general, software published under the FreeSewing namespaces prefers named 
+exports over default exports, and the `@freesewing/core` package provides several of them.
+I have grouped them below in different categories:
 
-Ever since version 3 of FreeSewing, we use only named exports, and no default exports.
+- [Constructors](#constructors)
+- [Constants](#constants)
+- [Utilities](#utilities)
 
-Refer to [the migration guide](/guides/v3) for more details.
-
-</Note>
-
-The `@freesewing/core` package provides the following named exports:
-
-
-| Named export | Description |
-| ------------ | ------------|
-| version      | The version of `@freesewing/core` |
-| Bezier       | A re-export of [the bezier-js dependency](https://www.npmjs.com/package/bezier-js) |
-
-The following named exports are **constructors**:
-
-<Note>
-
-You will typically use the `Design()` constructor.  
-The other constructors and utilities below are exported to 
-facilitate unit testing and other specific use cases.
-
-</Note>
+### Constructors
 
 | Named export | Description |
 | ------------ | ------------|
-| `Design`     | The [Design](/reference/api/design) constructor |
 | `Attributes` | The [Attributes](/reference/api/attributes) constructor |
+| `Design`     | The [Design](/reference/api/design) constructor |
 | `Pattern`    | The [Pattern](/reference/api/pattern) constructor |
 | `Point`      | The [Point](/reference/api/point) constructor |
 | `Path`       | The [Path](/reference/api/path) constructor |
@@ -54,8 +42,17 @@ facilitate unit testing and other specific use cases.
 | `Snippet`    | The [Snippet](/reference/api/snippet) constructor |
 | `Store`      | The [Store](/reference/api/store) constructor |
 
+### Constants
 
-The following named exports are **utility methods**:
+| Named export   | Description |
+| -------------- | ------------|
+| `cbqc`         | The Cubic Bezier Quarter Circle constant: `0.55191502449351` FIXME: include link |
+| `hidePresets`  | Presets you can use to [configure your part `hide` option](/reference/api/part/config/hide). |
+| `goldenRatio`  | The golden ratio constant: `1.618034` FIXME: include link |
+| `version`      | The version of `@freesewing/core` |
+
+
+### Utilities
 
 | Named export | Description |
 | ------------ | ------------|
@@ -64,6 +61,7 @@ The following named exports are **utility methods**:
 | `beamIntersectsX`         | See the [beamIntersectsX](/reference/api/utils/beamintersectsx) documentation |
 | `beamIntersectsY`         | See the [beamIntersectsY](/reference/api/utils//beamintersectsy) documentation |
 | `beamsIntersect`          | See the [beamsIntersect](/reference/api/utils/beamsintersect) documentation |
+| `Bezier`                  | A re-export of [the bezier-js dependency](https://www.npmjs.com/package/bezier-js) |
 | `capitalize`              | See the [capitalize](/reference/api/utils/capitalize) documentation |
 | `circlesIntersect`        | See the [circlesIntersect](/reference/api/utils/circlesintersect) documentation |
 | `curveEdge`               | See the [curveEdge](/reference/api/utils/curveedge) documentation |
@@ -71,9 +69,12 @@ The following named exports are **utility methods**:
 | `curveIntersectsY`        | See the [curveIntersectsY](/reference/api/utils/curveintersectsy) documentation |
 | `curvesIntersect`         | See the [curvesIntersect](/reference/api/utils/curvesintersect) documentation |
 | `deg2rad`                 | See the [deg2rad](/reference/api/utils/deg2rad) documentation |
+| `generateStackTransform`  | See the [generateStackTransform](/reference/api/utils/generatestacktransform) documentation |
+| `getTransformedBounds`    | See the [getTransformedBounds](/reference/api/utils/gettransformedbounds) documentation |
 | `lineIntersectsCircle`    | See the [lineIntersectsCircle](/reference/api/utils/lineintersectscircle) documentation |
 | `lineIntersectsCurve`     | See the [lineIntersectsCurve](/reference/api/utils/lineintersectscurve) documentation |
 | `linesIntersect`          | See the [linesIntersect](/reference/api/utils/linesintersect) documentation |
+| `mergeIi18n`              | See the [mergeI18n](/reference/api/utils/mergei18n) documentation |
 | `mergeOptions`            | See the [mergeOptions](/reference/api/utils/mergeoptions) documentation |
 | `pctBasedOn`              | See the [pctBasedOn](/reference/api/utils/pctbasedon) documentation |
 | `pointOnBeam`             | See the [pointOnBeam](/reference/api/utils/pointonbeam) documentation |

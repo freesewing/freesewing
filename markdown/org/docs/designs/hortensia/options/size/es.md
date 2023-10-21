@@ -23,6 +23,6 @@ Activa la función sin papel para ver las medidas del bolso. Esto te ayudará a 
 
 </Tip>
 
-## Efecto de esta opción en el patrón
 
-![Esta imagen muestra el efecto de esta opción superponiendo varias variantes que tienen un valor diferente para esta opción](hortensia_size_sample.svg "Efecto de esta opción en el patrón")
+
+

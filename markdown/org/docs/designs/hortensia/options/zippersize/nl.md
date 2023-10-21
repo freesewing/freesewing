@@ -27,6 +27,6 @@ Als je twijfelt of als de maat van je rits niet beschikbaar is, gebruik dan de m
 
 </Note>
 
-## Effect van deze optie op het patroon
 
-![Deze afbeelding toont het effect van deze optie door meerdere varianten die een andere waarde hebben voor deze optie te vervangen](hortensia_zippersize_sample.svg "Effect van deze optie op het patroon")
+
+

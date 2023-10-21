@@ -38,7 +38,7 @@ Op deze manier kan de zak geïntegreerd worden in de prinsessennaad, ergens onde
 
 ### Eén extra optie: De prinsessennaad ronding factor
 
-Carlita heeft ook een extra optie die Carlton niet heeft, de ietwat uitgebreid genaamde [prinsessennaad ronding factor](/docs/patterns/carlita/options#princessSeamSmoothFactor).
+Carlita heeft ook een extra optie die Carlton niet heeft, de ietwat uitgebreid genaamde [prinsessennaad ronding factor](/docs/designs/carlita/options#princessSeamSmoothFactor).
 
 Dit controleert hoe scherp de prinsessennaad terug naar binnen keert na het extra volume aan de buste te hebben toegevoegd.
 

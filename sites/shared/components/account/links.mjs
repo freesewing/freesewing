@@ -38,6 +38,8 @@ import {
   PatternIcon,
   BoolYesIcon,
   BoolNoIcon,
+  OkIcon,
+  WrenchIcon,
 } from 'shared/components/icons.mjs'
 import { cloudflareImageUrl, capitalize } from 'shared/utils.mjs'
 import { ControlScore } from 'shared/components/control/score.mjs'
@@ -122,7 +124,7 @@ export const AccountLinks = () => {
     bio: account.bio ? <span>{account.bio.slice(0, 15)}&hellip;</span> : '',
     img: (
       <img
-        src={cloudflareImageUrl({ type: 'sq100', id: `user-${account.ihash}` })}
+        src={cloudflareImageUrl({ type: 'sq100', id: `uid-${account.ihash}` })}
         className="w-8 h-8 aspect-square rounded-full shadow"
       />
     ),
@@ -175,8 +177,15 @@ export const AccountLinks = () => {
             )}
             <div className={`${itemClasses} bg-neutral max-w-md`}>
               <div className="flex flex-row items-center gap-3 font-medium">
+                <OkIcon stroke={3} />
+                <span>{t('account:role')}</span>
+              </div>
+              <div className="">{account.role}</div>
+            </div>
+            <div className={`${itemClasses} bg-neutral max-w-md`}>
+              <div className="flex flex-row items-center gap-3 font-medium">
                 <FingerprintIcon />
-                <span>{t('userId')}</span>
+                <span>ID</span>
               </div>
               <div className="">{account.id}</div>
             </div>
@@ -262,6 +271,12 @@ export const AccountLinks = () => {
       </div>
 
       <div className="flex flex-row flex-wrap gap-2 md:gap-4 justify-end">
+        {account.role === 'admin' && (
+          <Link className={`${btnClasses} btn-accent md:w-64 w-full`} href="/admin">
+            <WrenchIcon />
+            Administration
+          </Link>
+        )}
         {control > 1 && (
           <Link className={`${btnClasses} btn-secondary md:w-64 w-full`} href="/profile">
             <UserIcon />

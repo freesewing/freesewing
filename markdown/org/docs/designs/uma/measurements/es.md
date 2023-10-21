@@ -1,7 +1,7 @@
 ---
-title: "Calzoncillos Ursula: Medidas requeridas"
+title: "Uma undies: Required Measurements"
 ---
 
 <Note>
-Úrsula no necesita ninguna medida
+Uma does not require any measurements
 </Note>

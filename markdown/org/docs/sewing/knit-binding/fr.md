@@ -109,7 +109,7 @@ Une autre approche pour contourner le problème de longueur est d'attacher le bi
 
 De cette façon, il ne faut pas deviner la longueur du biais, et la couture s'ajustera partout parfaitement.
 
-> Pour des instructions détaillées, consultez [la documentation d'Aaron](/docs/patterns/aaron/)
+> Pour des instructions détaillées, consultez [la documentation d'Aaron](/docs/designs/aaron/instructions)
 
 ## Alternate method
 

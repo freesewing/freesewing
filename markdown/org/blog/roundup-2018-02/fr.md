@@ -16,9 +16,9 @@ Examinons les choses qui se sont passées en février avant de parler de ce qui 
 
 ### Core v1.7.0 est disponible
 
-Plus tôt dans la journée, j'ai appuyé sur la gâchette pour la version de base 1.7.0. Comme d'habitude, [le changelog](https://github.com/freesewing/core/blob/develop/CHANGELOG.md#170) contient toutes les informations, mais les plus importantes pour les utilisateurs sont [les nouvelles options de côtes dans le motif Sven](/docs/patterns/sven/options#ribbing), ainsi que un tas d'améliorations supplémentaires pour Carlton/Carlita.
+Plus tôt dans la journée, j'ai appuyé sur la gâchette pour la version de base 1.7.0. Comme d'habitude, [le changelog](https://github.com/freesewing/core/blob/develop/CHANGELOG.md#170) contient toutes les informations, mais les plus importantes pour les utilisateurs sont [les nouvelles options de côtes dans le motif Sven](/docs/designs/sven/options#ribbing), ainsi que un tas d'améliorations supplémentaires pour Carlton/Carlita.
 
-Ces améliorations de Carlton/Carlita sont dues au fait que moi-même et [Anneke](/showcase/maker/annekecaramin) avons commencé à travailler sur [la documentation pour ces modèles](/docs/patterns/carlton/). Et chaque fois que nous écrivons quelque chose comme *appliquer de l'entoilage thermocollant ici*, nous retournons également au modèle pour marquer exactement l'endroit où l'entoilage thermocollant doit être placé.
+Ces améliorations de Carlton/Carlita sont dues au fait que moi-même et [Anneke](/showcase/maker/annekecaramin) avons commencé à travailler sur [la documentation pour ces modèles](/docs/designs/carlton/). Et chaque fois que nous écrivons quelque chose comme *appliquer de l'entoilage thermocollant ici*, nous retournons également au modèle pour marquer exactement l'endroit où l'entoilage thermocollant doit être placé.
 
 Inutile de dire que c'est un travail considérable. Mais il devrait aider à la construction de ces patrons de manteaux, surtout pour les personnes dont c'est la première fois qu'elles font un manteau.
 

@@ -1,5 +1,5 @@
 ---
-title: "Ursula Unterhosen: Anleitung zum Nähen"
+title: "Uma undies: Sewing Instructions"
 ---
 
 ### Step 1: Pin/baste the front to the first gusset piece

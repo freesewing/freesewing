@@ -10,8 +10,6 @@ import languages from '../config/languages.json' assert { type: 'json' }
 import designs from '../config/software/designs.json' assert { type: 'json' }
 import plugins from '../config/software/plugins.json' assert { type: 'json' }
 
-console.log({ languages })
-
 const type = process.argv[2]
 
 // Add new design
@@ -53,7 +51,7 @@ async function addDesign() {
      'wahid'
    )} for a ${chalk.green('w')}aistcoat
 
-   Bonus points for picking a name that embraces diversity 🌈 ✊
+   Bonus points for picking a name that embraces diversity 🌈 ✊🏾
     `)
 
   const { name } = await prompts({
@@ -67,6 +65,8 @@ async function addDesign() {
     console.log('\n' + `  Alright, let's add ${chalk.green(name)} 🪄`)
     createDesign(name)
     execSync('npm run reconfigure')
+    console.log(`  Installing & linking dependencies...`)
+    execSync('yarn install')
     console.log(`  All done 🎉`)
 
     try {
@@ -212,10 +212,12 @@ function createDesign(name) {
 
   // Add to designs config file
   designs[name] = {
-    description: description,
     code: 'Coder name',
+    description: description,
     design: 'Designer name',
     difficulty: 1,
+    lab: true,
+    org: false,
     tags: ['tagname'],
     techniques: ['techname'],
   }

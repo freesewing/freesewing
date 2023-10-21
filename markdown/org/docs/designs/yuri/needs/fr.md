@@ -5,7 +5,7 @@ title: "Sweat à capuche Yuri : Ce dont tu as besoin"
 Pour réaliser Yuri, vous aurez besoin des fournitures suivantes :
 
 - [Fourniture de base pour la couture](/docs/sewing/basic-sewing-supplies)
-- Environ 2.5 mètres (2.8 yards) d'un tissu adapté ([voir Options de tissu](/docs/patterns/yuri/fabric))
+- Environ 2.5 mètre (2.8 yard) d'un tissu adapté ([voir Options de tissu](/docs/designs/yuri/fabric))
 - 2 gros boutons
 
 <Note>

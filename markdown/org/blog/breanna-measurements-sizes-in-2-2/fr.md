@@ -26,7 +26,7 @@ Par exemple, nous avons un bloc similaire pour les vêtements pour hommes appel�
 
 En d'autres termes, Breanna est un élément de base important pour nous permettre d'étendre notre collection de vêtements pour femmes. Mais cela ne veut pas dire que ce n'est pas une bonne nouvelle pour toi aussi. Si tu couds depuis depuis un certain temps, il y a de fortes chances pour que la création de ton propre bloc/champignon soit toujours sur ta liste de choses à faire . Eh bien, bonne nouvelle, car voici ton bloc prêt à l'emploi.
 
-Oh, et bien sûr, il a toutes les cloches et les sifflets que tu peux attendre de nous. Jette un coup d'œil à [et aux options de motifs](/docs/patterns/breanna/options/) et . Je pense que tu seras positivement impressionné. Ce bloc peut accueillir 1 ou 2 fléchettes de buste à 15 endroits différents, ce qui te donne 120 façons uniques de placer tes fléchettes de buste.
+Oh, et bien sûr, il a toutes les cloches et les sifflets que tu peux attendre de nous. Jette un coup d'œil à [et aux options de motifs](/docs/designs/breanna/options/) et . Je pense que tu seras positivement impressionné. Ce bloc peut accueillir 1 ou 2 fléchettes de buste à 15 endroits différents, ce qui te donne 120 façons uniques de placer tes fléchettes de buste.
 
 Breanna a mis du temps à voir le jour, et nous aimerions avoir ton avis sur le sujet. Faire une mousseline à partir d'un bloc comme celui-ci ne demande pas beaucoup de travail. Alors si tu as un peu de temps à consacrer à la préparation de celle-ci et que tu nous racontes comment ça s'est passé, , ce serait génial.
 
@@ -74,7 +74,7 @@ Alors __*roulement de tambour*__ ce n'est plus nécessaire. Nous proposons déso
 
 ### Qu'est-ce qu'une taille standard de toute façon ?
 
-La chose la plus difficile à propos de l'ajout d'un support pour les tailles standard ? Découvre quelles sont les tailles standard que est censé avoir. Nous avons fait un essai, et si tu es curieux, tu peux [consulter notre tableau des tailles ici](/docs/various/sizes/).
+La chose la plus difficile à propos de l'ajout d'un support pour les tailles standard ? Découvre quelles sont les tailles standard que est censé avoir. Nous avons fait un essai, et si tu es curieux, tu peux [consulter notre tableau des tailles ici](/sizes/).
 
 Pour les vêtements pour hommes, notre gamme de tailles va du 32 au 50, et elles sont basées sur une taille de référence 38 que nous avons ensuite classée par ordre croissant et décroissant.  
 Pour les vêtements pour femmes, notre gamme de tailles va du 28 au 48, et elles sont basées sur une taille de référence 34 que nous avons ensuite classée par ordre croissant et décroissant.
