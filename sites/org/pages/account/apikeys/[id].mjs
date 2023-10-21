@@ -1,7 +1,7 @@
 // Dependencies
 import dynamic from 'next/dynamic'
-//import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { i18n } from 'shared/ssr-i18n.mjs'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+//import { ssrI18n } from 'shared/ssr-i18n.mjs'
 import { nsMerge } from 'shared/utils.mjs'
 // Context
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
@@ -16,6 +16,8 @@ import { ns as apikeysNs } from 'shared/components/account/apikeys.mjs'
 
 // Translation namespaces used on this page
 const ns = nsMerge(apikeysNs, authNs, pageNs)
+const key = 'apikey'
+let i18n
 
 /*
  * Some things should never generated as SSR
@@ -65,9 +67,11 @@ const ApikeyPage = ({ page, id }) => {
 export default ApikeyPage
 
 export async function getStaticProps({ locale, params }) {
+  if (!i18n) i18n = await serverSideTranslations(locale, ns)
+
   return {
     props: {
-      ...i18n[locale],
+      ...i18n,
       id: params.id,
       page: {
         locale,
@@ -82,4 +86,4 @@ export async function getStaticProps({ locale, params }) {
  * this page should be used to generate the result.
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
-export const getStaticPaths = async () => ({ paths: [], fallback: true })
+export const getStaticPaths = async () => ({ paths: ['/account/apikeys/1'], fallback: true })
