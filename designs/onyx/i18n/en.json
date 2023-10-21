@@ -111,6 +111,14 @@
 	  "t": "Neck guard length",
 	  "d": "How far to have the zipper guard extend past the top of the zipper."
 	},
+	"skirtHem": {
+	  "t": "Skirt hem",
+	  "d": "Sets the hem allowance of the hem along the bottom of the skirt, as a multiple of the seam allowance."
+	},
+	"skirtWaistband": {
+	  "t": "Skirt waistband",
+	  "d": "Sets the width of the waistband along the top of the skirt, as a multiple of the seam allowance."
+	},
 
     "hoodHeight": {
       "t": "Hood height",
@@ -144,8 +152,8 @@
       "t": "Seat ease",
       "d": "Controls how wide the seat is."
     },
-    "crotchGussetFactor": {
-      "t": "Crotch gusset factor",
+    "crotchGussetWidth": {
+      "t": "Crotch gusset Width",
       "d": "Controls how wide the crotch gusset will be. Adjust so that the front and back pieces look smooth and clean around the crotch fork and upper legs. Deeper thighs and abdomens require a larger value, while wider ones require a smaller value."
     },
     "upperLegEase": {
@@ -195,7 +203,7 @@
     },
     "hoodFrontPieceSize": {
       "t": "Hood front piece size",
-      "d": "Controls if a front piece will be used, and how wide the front piece of the hood will be. The seam between the front and back pieces is useful for securely sewing in ears or other decorations to the hood. Set to 0% to build the hood using only back pieces."
+      "d": "Controls if a front piece will be used, and how wide the front piece of the hood will be."
     },
     "hoodFrontBonus": {
       "t": "Hood front bonus",
@@ -203,19 +211,27 @@
     },
     "hoodFrontDip": {
       "t": "Hood Front dip",
-      "d": "Controls far down the front of the hood drops over the forehead. Larger values work best with lightweight/flexible fabrics."
+      "d": "Controls far down the front of the hood drops over the forehead."
     },
-    "swimSkirt": {
-      "t": "Swim skirt",
+    "skirt": {
+      "t": "Skirt",
       "d": "Select whether or not you want to add a simple gathered skirt around the waist of the garment."
     },
-	"swimSkirtNo": {
+	"skirtNo": {
       "t": "Nothing",
-	  "d": "A swim skirt will not be generated."
+	  "d": "A skirt will not be generated."
 	},
-	"swimSkirtYes": {
+	"skirtYes": {
       "t": "Swim skirt",
-	  "d": "A swim skirt will be generated."
+	  "d": "A skirt will be generated."
+	},
+	"skirtLength": {
+	  "t": "Skirt length",
+	  "d": "Controls the length of the skirt, as a percentage of the waist to upper leg measurement."
+	},
+	"skirtWidth": {
+	  "t": "Skirt width",
+	  "d": "Controls the width of the skirt at the bottom, as a percentage of the waist measurement."
 	},
 
     "legTaperPosition": {
