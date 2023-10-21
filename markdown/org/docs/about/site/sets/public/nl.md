@@ -1,5 +1,5 @@
 ---
-title: "Measurements Sets: Public"
+title: Publiek
 ---
 
 Every measurements set has a **public** attribute that controls whether or not the measurments set is public.
