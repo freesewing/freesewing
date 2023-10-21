@@ -1,5 +1,5 @@
 ---
-title: "Patterns: Notes"
+title: Notities
 ---
 
 Every pattern has a **notes** attribute that is optional.
