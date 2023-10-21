@@ -1,6 +1,7 @@
 // Dependencies
 import dynamic from 'next/dynamic'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+//import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { i18n } from 'shared/ssr-i18n.mjs'
 import { nsMerge } from 'shared/utils.mjs'
 // Context
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
@@ -66,7 +67,7 @@ export default ApikeyPage
 export async function getStaticProps({ locale, params }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ns)),
+      ...i18n[locale],
       id: params.id,
       page: {
         locale,
