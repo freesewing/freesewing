@@ -1,5 +1,5 @@
 ---
-title: "Measurements Sets: Name"
+title: Назва
 ---
 
 Every measurements set has a **name** attribute that is mandatory.
