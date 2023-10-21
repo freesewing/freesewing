@@ -41,6 +41,6 @@ export async function getStaticProps({ locale, params }) {
 export async function getStaticPaths() {
   return {
     paths: [],
-    fallback: true,
+    fallback: 'blocking',
   }
 }

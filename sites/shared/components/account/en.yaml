@@ -12,6 +12,7 @@ actions: Actions
 created: Created
 updated: Updated
 expires: Expires
+role: Role
 
 yourProfile: Your Profile
 yourPatterns: Your Patterns

@@ -904,7 +904,7 @@ export function applyTransformToPoint(transform, point) {
  * Get the bounds of a given object after transforms have been applied
  * @param  {Object}           boundsObj   any object with `topLeft` and `bottomRight` properties
  * @param  {Boolean|String[]} transforms  the transforms to apply to the bounds, structured as they would be for being applied as an svg attribute
- * @return {Object}                       `tl` and `br` for the transformed bounds
+ * @return {Object}                       `topLeft` and `bottomRight` for the transformed bounds
  */
 export function getTransformedBounds(boundsObj, transforms = false) {
   if (!boundsObj.topLeft) return {}
@@ -936,7 +936,7 @@ export function getTransformedBounds(boundsObj, transforms = false) {
   )
 
   return {
-    tl: transformedTl,
-    br: transformedBr,
+    topLeft: transformedTl,
+    bottomRight: transformedBr,
   }
 }
