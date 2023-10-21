@@ -31,7 +31,7 @@ function draftBase({
     (1 + options.centerSeamEase)
   store.set('verticalTrunk', verticalTrunk)
   //  const crotchGussetWidth = verticalTrunk * options.crotchGussetWidth
-  const crotchGussetWidth = 0.22 * measurements.upperLeg * options.crotchGussetFactor // .18169 = (PI - 2) / (2PI) = extra fabric needed to go from a trunk to two legs. Fudged upwards a bit because thighs are deeper than they are wide.
+  const crotchGussetWidth = 0.22 * measurements.upperLeg * options.crotchGussetWidth // .18169 = (PI - 2) / (2PI) = extra fabric needed to go from a trunk to two legs. Fudged upwards a bit because thighs are deeper than they are wide.
   store.set('crotchGussetWidth', crotchGussetWidth)
   const crotchScoopWidth = crotchGussetWidth / 4
   const crotchScoopLength = crotchScoopWidth
@@ -351,7 +351,7 @@ export const base = {
     //    crotchScoopWidth: { pct: 2.5, min: 1, max: 5, menu: 'advanced' },
     //    crotchScoopLength: { pct: 3, min: 1.5, max: 8, menu: 'advanced' },
     // How wide the crotch gusset is, as a % of the verticalTrunk. This measurement determines how much room there is in the crotch and rear-end of the garment.
-    crotchGussetFactor: { pct: 100, min: 75, max: 133, menu: 'fit' },
+    crotchGussetWidth: { pct: 100, min: 75, max: 133, menu: 'fit' },
     // 100% produces a straight outseam and has the inseam taper outwards. 0% has the inseam drop straight down (after the scoop) and the outseam tapers in.
     legTaperPosition: { pct: 50, min: 0, max: 100, menu: 'advanced' },
     frontOnFold: { bool: false, menu: 'construction' },

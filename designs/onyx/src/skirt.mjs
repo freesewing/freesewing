@@ -8,6 +8,7 @@ function draftSkirt({
   points,
   measurements,
   options,
+  absoluteOptions,
   part,
   store,
   paperless,
@@ -82,15 +83,15 @@ function draftSkirt({
 
   if (complete) {
     points.title = new Point(skirtWidth / 4, skirtLength / 2)
-    macro('title', { at: points.title, nr: 9, title: 'swim skirt' })
+    macro('title', { at: points.title, nr: 9, title: 'skirt' })
 
     if (sa) {
       paths.sa = new Path()
         .move(points.bottomLeftCorner)
-        .line(points.bottomLeftCorner.translate(0, sa * options.skirtHem * 100))
-        .line(points.bottomRightCorner.translate(sa, sa * options.skirtHem * 100))
-        .line(points.topRightCorner.translate(sa, -sa * options.skirtWaistband * 100))
-        .line(points.topLeftCorner.translate(0, -sa * options.skirtWaistband * 100))
+        .line(points.bottomLeftCorner.translate(0, absoluteOptions.skirtHem))
+        .line(points.bottomRightCorner.translate(sa, absoluteOptions.skirtHem))
+        .line(points.topRightCorner.translate(sa, -absoluteOptions.skirtWaistband))
+        .line(points.topLeftCorner.translate(0, -absoluteOptions.skirtWaistband))
         .line(points.topLeftCorner)
         .attr('class', 'fabric sa')
     }
@@ -124,6 +125,7 @@ export const skirt = {
       pct: 200,
       min: 0,
       max: 800,
+      toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.skirtWaistband,
       menu: (settings, mergedOptions) => (mergedOptions.swimSkirt ? 'construction' : false),
     },
     // How wide to make the bottom hem, in multiples of the seam allowance.
@@ -131,6 +133,7 @@ export const skirt = {
       pct: 200,
       min: 0,
       max: 800,
+      toAbs: (pct, settings, mergedOptions) => settings.sa * mergedOptions.skirtHem,
       menu: (settings, mergedOptions) => (mergedOptions.swimSkirt ? 'construction' : false),
     },
   },
