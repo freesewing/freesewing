@@ -1,8 +1,8 @@
 ---
-title: Stack.asProps()
+title: Stack.asRenderProps()
 ---
 
-The `Stack.asProps()` method returns a stack object suitable for renderprops.
+The `Stack.asRenderProps()` method returns a stack object suitable for renderprops.
 
 
 ## Stack.asProps() signature
