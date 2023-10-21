@@ -3,7 +3,7 @@ title: Using the FreeSewing.org website
 ---
 
 On these pages, we'll paint a high-level picture of how to get the most out of the FreeSewing.org website.
-Most people will be most interested in [How to generate made-to-measure sewing patterns](/docs/about/site/draft/).
+Most people will be most interested in [How to generate bespoke sewing patterns](/docs/about/site/draft/).
 
 
 <Comment by="joost">
@@ -23,7 +23,7 @@ So I'm not going to do that. I'm going to assume you are reading with an open mi
 
 On every page of FreeSewing.org is the same header with links to the most important sections of the site:
 
-- [Designs](/designs/) shows our collection of parametric designs you can generate made-to-measure sewing patterns from
+- [Designs](/designs/) shows our collection of parametric designs you can generate bespoke sewing patterns from
 - [Documentation](/documentation/) holds all the documentation, for the website, for our designs, everything
 - [Blog](/blog/) holds blog posts with updates and news about FreeSewing
 - [Showcase](/showcase/) show examples from the FreeSewing community, things they have made with FreeSewing patterns
@@ -77,5 +77,5 @@ Click through to learn more about the following features:
 
 ## Generating sewing patterns
 
-With that out of the way, let's move on to [How to generate made-to-measure sewing patterns](/docs/about/site/draft/).
+With that out of the way, let's move on to [How to generate bespoke sewing patterns](/docs/about/site/draft/).
 

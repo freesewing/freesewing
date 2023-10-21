@@ -10,7 +10,7 @@ well as by FreeSewing users to test the platform.
 
 ## History
 
-FreeSewing is all about made-to-measure sewing patterns, so perpetuating the 
+FreeSewing is all about bespoke sewing patterns, so perpetuating the 
 myth of *standard sizes* was never something we wanted to be part of.
 
 In reality, having to take measurements prior to even being able to try the

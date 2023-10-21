@@ -21,7 +21,7 @@ One of the things that sets FreeSewing apart is that sewing patterns are not
 static. Each pattern is generated on the spot to accommodate the input
 provided by the user. Input that typically includes their measurements.
 
-This _made-to-measure_ approach is sort of _our thing_ at FreeSewing,
+This _bespoke_ approach is sort of _our thing_ at FreeSewing,
 but why stop there?
 There's a lot of things that can be left up to the user and taken into
 consideration when drafting the pattern. Things like how many buttons to use,

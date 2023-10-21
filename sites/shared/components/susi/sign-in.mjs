@@ -18,7 +18,6 @@ import {
   GoogleIcon,
   GitHubIcon,
   FreeSewingIcon,
-  SettingsIcon,
   UserIcon,
 } from 'shared/components/icons.mjs'
 import { StringInput, PasswordInput } from 'shared/components/inputs.mjs'
@@ -231,10 +230,6 @@ export const SignIn = () => {
           {t('susi:signUpHere')}
         </Link>
       )}
-      <Link className={`${horFlexClasses} btn btn-neutral btn-outline mt-2`} href="/migrate">
-        <SettingsIcon />
-        {t('susi:migrateV2Account')}
-      </Link>
     </>
   )
 }
