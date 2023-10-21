@@ -39,6 +39,7 @@ import {
   BoolYesIcon,
   BoolNoIcon,
   OkIcon,
+  WrenchIcon,
 } from 'shared/components/icons.mjs'
 import { cloudflareImageUrl, capitalize } from 'shared/utils.mjs'
 import { ControlScore } from 'shared/components/control/score.mjs'
@@ -270,6 +271,12 @@ export const AccountLinks = () => {
       </div>
 
       <div className="flex flex-row flex-wrap gap-2 md:gap-4 justify-end">
+        {account.role === 'admin' && (
+          <Link className={`${btnClasses} btn-accent md:w-64 w-full`} href="/admin">
+            <WrenchIcon />
+            Administration
+          </Link>
+        )}
         {control > 1 && (
           <Link className={`${btnClasses} btn-secondary md:w-64 w-full`} href="/profile">
             <UserIcon />
