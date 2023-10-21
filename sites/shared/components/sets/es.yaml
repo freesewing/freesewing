@@ -1,6 +1,6 @@
 setLacksMeasiesForDesign: "Este conjunto carece de las medidas necesarias para generar un patrón { design } ."
 chooseSet: Elige una serie de medidas
-fsmtm: FreeSewing genera patrones de costura a medida.
+fsmtm: FreeSewing generates bespoke sewing patterns.
 patternForWhichSet: '¿Para qué conjunto de medidas debemos generar un patrón?'
 yourSets: Tus conjuntos de medidas
 bookmarkedSets: Conjuntos de medidas que has marcado como favoritos
