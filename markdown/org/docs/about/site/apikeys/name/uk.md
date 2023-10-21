@@ -1,5 +1,5 @@
 ---
-title: "API Keys: Name"
+title: Назва
 ---
 
 Every API key has a **name** attribute that is mandatory.
