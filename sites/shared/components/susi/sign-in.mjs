@@ -18,7 +18,6 @@ import {
   GoogleIcon,
   GitHubIcon,
   FreeSewingIcon,
-  SettingsIcon,
   UserIcon,
 } from 'shared/components/icons.mjs'
 import { StringInput, PasswordInput } from 'shared/components/inputs.mjs'

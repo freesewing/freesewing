@@ -17,7 +17,6 @@ import {
   GoogleIcon,
   GitHubIcon,
   KeyIcon,
-  SettingsIcon,
   EmailIcon,
   DownIcon,
 } from 'shared/components/icons.mjs'
