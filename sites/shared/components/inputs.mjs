@@ -131,6 +131,39 @@ export const ButtonFrame = ({
 )
 
 /*
+ * Input for integers
+ */
+export const NumberInput = ({
+  label, // Label to use
+  update, // onChange handler
+  valid, // Method that should return whether the value is valid or not
+  current, // The current value
+  original, // The original value
+  placeholder, // The placeholder text
+  docs = false, // Docs to load, if any
+  id = '', // An id to tie the input to the label
+  labelBL = false, // Bottom-Left label
+  labelBR = false, // Bottom-Right label
+  max = 0,
+  min = 220,
+  step = 1,
+}) => (
+  <FormControl {...{ label, labelBL, labelBR, docs }} forId={id}>
+    <input
+      id={id}
+      type="number"
+      placeholder={placeholder}
+      value={current}
+      onChange={(evt) => update(evt.target.value)}
+      className={`input w-full input-bordered ${
+        current === original ? 'input-secondary' : valid(current) ? 'input-success' : 'input-error'
+      }`}
+      {...{ max, min, step }}
+    />
+  </FormControl>
+)
+
+/*
  * Input for strings
  */
 export const StringInput = ({

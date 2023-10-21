@@ -9,6 +9,10 @@
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
 
+#### Fixed
+
+ - Added IDs to dimension macros that missed them, causing them to not be shown
+
 ### albert
 
 #### Changed
@@ -76,11 +80,18 @@
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
 
+### plugintest
+
+#### Fixed
+
+ - Remove names from old plugins from list option
+
 ### sandy
 
 #### Changed
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+ - The skirt and curved waistband are now constructed with the ringsector macro
 
 ### shin
 
@@ -88,11 +99,24 @@
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
 
+### simon
+
+#### Fixed
+
+ - Replaced all instances of 'seperate' with 'separate' in option names
+
 ### sven
 
 #### Changed
 
  - Rephrased flag message when expand is off to avoid confusion about included seam allowance. Fixes
+
+### waralee
+
+#### Fixed
+
+ - Pocket opening was not drawn on the facing and pocket pieces. Fixes
+ - Improve placement of the front welt. Fixes
 
 ### yuri
 
@@ -105,6 +129,31 @@
 #### Changed
 
  - Added support for notes in flags
+
+### plugin-bin-pack
+
+#### Added
+
+ - First release of the plugin providing the default packing implementation
+
+### plugin-ringsector
+
+#### Added
+
+ - First release of the plugin facilitating drafting a ring sector
+
+### core
+
+#### Added
+
+ - Allow plugins to provide their own packing implementation
+ - Added named export `cbqc` which exports the constant to approximate a circle with Cubic Bézier curves
+ - Core will now set `activeMacro` in the store, keeping track of the running macro - Added the `generateMacroIds`, `getMacroIds`, and `removeMacroNodes` store methods
+
+#### Fixed
+
+ - Fix order in mergeOptions method so user settings take precendence over defaults
+ - Fix upward snap for snapped percentage option when snap is a simple number
 
 
 ## 3.0.0 (2022-09-30)

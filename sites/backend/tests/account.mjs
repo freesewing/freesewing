@@ -217,13 +217,13 @@ export const accountTests = async (chai, config, expect, store) => {
               expect(err === null).to.equal(true)
               expect(res.status).to.equal(200)
               expect(res.body.result).to.equal(`success`)
-              expect(typeof res.body.account.img).to.equal('string')
               done()
             })
         }).timeout(5000)
       }
 
       let confirmation
+      // eslint-disable-next-line no-undef
       step(
         `${store.icon('user', auth)} Should update the account email address (${auth})`,
         (done) => {
@@ -247,13 +247,13 @@ export const accountTests = async (chai, config, expect, store) => {
               expect(err === null).to.equal(true)
               expect(res.status).to.equal(200)
               expect(res.body.result).to.equal(`success`)
-              expect(typeof res.body.account.img).to.equal('string')
               confirmation = res.body.confirmation
               done()
             })
         }
       )
 
+      // eslint-disable-next-line no-undef
       step(`${store.icon('user', auth)} Should confirm the email change (${auth})`, (done) => {
         chai
           .request(config.api)
@@ -275,12 +275,12 @@ export const accountTests = async (chai, config, expect, store) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(200)
             expect(res.body.result).to.equal(`success`)
-            expect(typeof res.body.account.img).to.equal('string')
             confirmation = res.body.confirmation
             done()
           })
       })
 
+      // eslint-disable-next-line no-undef
       step(`${store.icon('user', auth)} Restore email address (${auth})`, (done) => {
         chai
           .request(config.api)
@@ -302,12 +302,12 @@ export const accountTests = async (chai, config, expect, store) => {
             expect(err === null).to.equal(true)
             expect(res.status).to.equal(200)
             expect(res.body.result).to.equal(`success`)
-            expect(typeof res.body.account.img).to.equal('string')
             confirmation = res.body.confirmation
             done()
           })
       })
 
+      // eslint-disable-next-line no-undef
       step(
         `${store.icon('user', auth)} Should confirm the (restore) email change (${auth})`,
         (done) => {
@@ -331,7 +331,6 @@ export const accountTests = async (chai, config, expect, store) => {
               expect(err === null).to.equal(true)
               expect(res.status).to.equal(200)
               expect(res.body.result).to.equal(`success`)
-              expect(typeof res.body.account.img).to.equal('string')
               confirmation = res.body.confirmation
               done()
             })

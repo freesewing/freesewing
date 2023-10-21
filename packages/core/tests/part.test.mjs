@@ -363,4 +363,72 @@ describe('Part', () => {
     expect(typeof pattern.parts[0].to.paths.line).to.equal('object')
     expect(pattern.parts[0].to.paths.curve.ops[1].cp2.x).to.equal(200)
   })
+
+  it('Should set/unset the name of the active macro', () => {
+    const activeMacro = []
+    const plugin = {
+      name: 'testplugin',
+      version: '0.0.1',
+      macros: {
+        macro1: (config, { part, store }) => {
+          activeMacro.push(store.activeMacro)
+          return part
+        },
+      },
+    }
+    const part = {
+      name: 'test',
+      draft: ({ macro, part }) => {
+        activeMacro.push(part.activeMacro)
+        macro('macro1')
+        activeMacro.push(part.activeMacro)
+
+        return part
+      },
+    }
+    const design = new Design({ parts: [part], plugins: [plugin] })
+    const pattern = new design()
+    pattern.draft()
+    expect(activeMacro[0]).to.equal(undefined)
+    expect(activeMacro[1]).to.equal('macro1')
+    expect(activeMacro[2]).to.equal(undefined)
+  })
+
+  it('Should set/unset the name of the active macro in a nested macro', () => {
+    const activeMacro = []
+    const plugin = {
+      name: 'testplugin',
+      version: '0.0.1',
+      macros: {
+        macro1: (config, { macro, part, store }) => {
+          activeMacro.push(store.activeMacro)
+          macro('macro2')
+          activeMacro.push(store.activeMacro)
+          return part
+        },
+        macro2: (config, { part, store }) => {
+          activeMacro.push(store.activeMacro)
+          return part
+        },
+      },
+    }
+    const part = {
+      name: 'test',
+      draft: ({ macro, part }) => {
+        activeMacro.push(part.activeMacro)
+        macro('macro1')
+        activeMacro.push(part.activeMacro)
+
+        return part
+      },
+    }
+    const design = new Design({ parts: [part], plugins: [plugin] })
+    const pattern = new design()
+    pattern.draft()
+    expect(activeMacro[0]).to.equal(undefined)
+    expect(activeMacro[1]).to.equal('macro1')
+    expect(activeMacro[2]).to.equal('macro2')
+    expect(activeMacro[3]).to.equal('macro1')
+    expect(activeMacro[4]).to.equal(undefined)
+  })
 })

@@ -1,5 +1,3 @@
-import { getIds } from './utils.mjs'
-
 /*
  * Defaults for the cutonfold macro
  */
@@ -19,16 +17,16 @@ const macroDefaults = {
 export const cutonfoldDefs = [
   {
     name: 'cutonfoldFrom',
-    def: `
-<marker orient="auto" refY="3" refX="0" id="cutonfoldFrom" style="overflow:visible;" markerWidth="10" markerHeight="6">
-	<path d="M 0,3 L 10,0 C 8,2 8,4 10,6 z" class="fill-note note" />
+    def: (scale) => `
+<marker orient="auto" refY="0" refX="0" id="cutonfoldFrom" style="overflow:visible;" markerWidth="12" markerHeight="8" transform="scale(${scale})">
+	<path class="note fill-note" d="M 0,0 L 12,-4 C 10,-2 10,2 12,4 z" transform="scale(${scale})"/>
 </marker>`,
   },
   {
     name: 'cutonfoldTo',
-    def: `
-<marker orient="auto" refY="3" refX="10" id="cutonfoldTo" style="overflow:visible;" markerWidth="10" markerHeight="6">
-	<path d="M 10,3 L 0,0 C 2,2 2,4 0,6 z" class="fill-note note" />
+    def: (scale) => `
+<marker orient="auto" refY="0" refX="0" id="cutonfoldTo" style="overflow:visible;" markerWidth="12" markerHeight="8" transform="scale(${scale})">
+	<path class="note fill-note" d="M 0,0 L -12,-4 C -10,-2 -10,2 -12,4 z" transform="scale(${scale})"/>
 </marker>`,
   },
 ]
@@ -36,17 +34,13 @@ export const cutonfoldDefs = [
 /*
  * The rmcutonfold macro
  */
-const rmcutonfold = function (id = macroDefaults.id, { paths, store, part }) {
-  for (const pid of Object.values(
-    store.get(['parts', part.name, 'macros', 'cutonfold', 'ids', id, 'paths'], {})
-  ))
-    delete paths[pid]
-}
+const rmcutonfold = (id = macroDefaults.id, { store, part }) =>
+  store.removeMacroNodes(id, 'cutonfold', part)
 
 /*
  * The cutonfold macro
  */
-const cutonfold = function (config, { paths, Path, complete, store, scale, log, Point, part }) {
+const cutonfold = function (config, { paths, Path, complete, store, scale, log, Point }) {
   /*
    * Don't add a cutonfold indicator when complete is false, unless force is true
    */
@@ -86,7 +80,7 @@ const cutonfold = function (config, { paths, Path, complete, store, scale, log, 
   /*
    * Get the list of IDs
    */
-  const ids = getIds(['line'], mc.id, 'cutonfold')
+  const ids = store.generateMacroIds(['line'], mc.id)
 
   /*
    * Draw the path
@@ -106,9 +100,12 @@ const cutonfold = function (config, { paths, Path, complete, store, scale, log, 
   /*
    * Store all IDs in the store so we can remove this macro with rmcutonfold
    */
-  store.set(['parts', part.name, 'macros', 'cutonfold', 'ids', mc.id, 'paths'], ids)
+  store.storeMacroIds(mc.id, { paths: ids })
 
-  return store.getMacroIds(mc.id, 'cutonfold')
+  /*
+   * Returning ids is a best practice for FreeSewing macros
+   */
+  return store.getMacroIds(mc.id)
 }
 
 // Export macros

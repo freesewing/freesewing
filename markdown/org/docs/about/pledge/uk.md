@@ -1,26 +1,66 @@
 ---
-title: FreeSewing Revenue Pledge
+title: Застава доходу від FreeSewing
 ---
 
 Про це йдеться в обіцянці доходу **FreeSewing** :
 
-> ## All FreeSewing revenue will be donated to Doctors Without Borders (MSF)
+> ## Весь дохід від FreeSewing буде переданий на рахунок [Лікарів без кордонів (MSF)](http://www.msf.org/)
 
-Зобов'язання приймає і виконує супровідник FreeSewing (joost). You can read about [their motivations for doing so on this page](/docs/about/pledge/motivation/).
+Зобов'язання приймає і виконує супровідник FreeSewing (joost). Ви можете прочитати про [його мотивацію для цього на цій сторінці](/docs/various/pledge/motivation/).
 
 ## Історія доходів
 
-|      Виручка | Рік                                         |
-| ------------:|:------------------------------------------- |
-|    `€256,65` | 2015                                        |
-|    `€473,50` | 2016                                        |
-|    `€673,14` | 2017                                        |
-|  `€3.162,14` | 2018                                        |
-|  `€4.109,38` | 2019                                        |
-| `€10.736,82` | 2020                                        |
-| `€10.070,77` | 2021                                        |
-|  `€9.325,54` | 2022                                        |
-| `€38.814,94` | **Euro donated to [MSF](https://msf.org/)** |
+<table class="table table-striped text-base-content">
+  <thead>
+    <tr>
+      <th>Рік</th>
+      <th>Виручка</th>
+      <th>Валюта</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2015</td>
+      <td>`256,65`</td>
+      <td>Євро</td>
+    </tr>
+    <tr>
+      <td>2016</td>
+      <td>`473,50`</td>
+      <td>Євро</td>
+    </tr>
+    <tr>
+      <td>2017</td>
+      <td>`673,14`</td>
+      <td>Євро</td>
+    </tr>
+    <tr>
+      <td>2018</td>
+      <td>`3.162,14`</td>
+      <td>Євро</td>
+    </tr>
+    <tr>
+      <td>2019</td>
+      <td>`4.109,38`</td>
+      <td>Євро</td>
+    </tr>
+    <tr>
+      <td>2020</td>
+      <td>`10.736,82`</td>
+      <td>Євро</td>
+    </tr>
+    <tr>
+      <td>2021</td>
+      <td>`10.070,77`</td>
+      <td>Євро</td>
+    </tr>
+    <tr>
+      <td>**Усього**</td>
+      <td>`29.489,40`</td>
+      <td>**Євро пожертвувано на користь MSF**</td>
+    </tr>
+  </tbody>
+</table>
 
 <Tip>
 

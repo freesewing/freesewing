@@ -39,7 +39,7 @@
     },
     "fitWaist": {
       "t": "Fit the waist",
-      "d": "Whether or not to fit the waist or rahter only fit chest and hips."
+      "d": "Whether or not to fit the waist or rather only fit chest and hips."
     },
     "curveToWaistNo": {
       "t": "Do not fit the waist",

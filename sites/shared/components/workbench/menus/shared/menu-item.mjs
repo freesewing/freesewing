@@ -270,6 +270,7 @@ export const MenuItemGroup = ({
           }}
         />
       ),
+      itemName,
     ]
   })
 

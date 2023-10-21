@@ -16,12 +16,12 @@ function draftCharlieFlyExtension({ points, paths, Path, macro, store, sa, part 
   // Paths
   paths.saBase = new Path()
     .move(points.flyCorner)
-    .line(points.flyBottom)
+    .line(points.flyExtensionBottom)
     .join(
       new Path()
         .move(points.fork)
         .curve(points.crotchSeamCurveCp1, points.crotchSeamCurveCp2, points.crotchSeamCurveStart)
-        .split(points.flyBottom)
+        .split(points.flyExtensionBottom)
         .pop()
     )
     .line(points.styleWaistIn)
@@ -55,7 +55,7 @@ function draftCharlieFlyExtension({ points, paths, Path, macro, store, sa, part 
   macro('title', {
     at: points.titleAnchor,
     nr: 10,
-    title: 'flyExtention',
+    title: 'flyExtension',
   })
 
   return part

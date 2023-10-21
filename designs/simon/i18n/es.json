@@ -155,11 +155,11 @@
       "t": "Retroceso",
       "d": "Para encajar un redondo(er) hacia atrás, esto añade longitud al centro de atrás (en el yo) que se atenúa hacia los lados."
     },
-    "seperateButtonholePlacket": {
+    "separateButtonholePlacket": {
       "t": "Tapeta de ojal separada",
       "d": "Construye una placa separada del botón."
     },
-    "seperateButtonPlacket": {
+    "separateButtonPlacket": {
       "t": "Tapeta de botones separada",
       "d": "Borra una placket de botones separada"
     },

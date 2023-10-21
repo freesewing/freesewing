@@ -10,4 +10,4 @@ For example, when you report a problem on this website, we can mention you so yo
 
 When you submit a showcase post or make changed to our content, we can credit those commits to you if we have both your username and the email address you use on GitHub.
 
-<Note compact>If all of this in confusing, you don't have to provide this info. It's an advanced feature.</Note>
+If all of this in confusing, you don't have to provide this info. It's an advanced feature.

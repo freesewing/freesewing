@@ -2,8 +2,20 @@ import set from 'lodash.set'
 import unset from 'lodash.unset'
 import get from 'lodash.get'
 
-// Don't allow setting of these top-level keys in the store
-const avoid = ['set', 'setIfUnset', 'push', 'unset', 'get', 'extend']
+/*
+ * Don't allow setting of these top-level keys in the store
+ */
+const avoid = [
+  'set',
+  'setIfUnset',
+  'push',
+  'unset',
+  'get',
+  'extend',
+  'generateMacroIds',
+  'getMacroIds',
+  'removeMacroNodes',
+]
 
 //////////////////////////////////////////////
 //               CONSTRUCTOR                //
@@ -18,8 +30,7 @@ const avoid = ['set', 'setIfUnset', 'push', 'unset', 'get', 'extend']
  */
 export function Store(methods = []) {
   /*
-   * Default logging methods
-   * You can override these with a plugin
+   * Default logging containers
    */
   const logs = {
     debug: [],
@@ -27,6 +38,11 @@ export function Store(methods = []) {
     warn: [],
     error: [],
   }
+
+  /*
+   * Default logging methods
+   * You can override these with a plugin
+   */
   this.log = {
     debug: function (...data) {
       logs.debug.push(...data)
@@ -42,8 +58,67 @@ export function Store(methods = []) {
       logs.error.push(...data)
     },
   }
+
+  /*
+   * Attach logs object
+   */
   this.logs = logs
 
+  /*
+   * Method to generate macro IDs
+   */
+  this.generateMacroIds = function (keys, id, macro = false) {
+    if (!macro) macro = this.get('activeMacro')
+    const ids = {}
+    for (const key of keys) ids[key] = `__macro_${macro}_${id}_${key}`
+
+    return ids
+  }
+
+  /*
+   * Method to store macro IDs
+   */
+  this.storeMacroIds = function (id, ids, macro = false, part = false) {
+    if (!macro) macro = this.get('activeMacro')
+    if (!part) part = this.get('activePart')
+    this.set(['parts', part, 'macros', macro, 'ids', id], ids)
+  }
+
+  /*
+   * Method to retrieve macro IDs
+   */
+  this.getMacroIds = function (id, macro = false, part = false) {
+    if (!macro) macro = this.get('activeMacro')
+    if (!part) part = this.get('activePart')
+
+    return this.get(['parts', part, 'macros', macro.toLowerCase(), 'ids', id], false)
+  }
+
+  /*
+   * Method to remove nodes added by a macro
+   */
+  this.removeMacroNodes = function (id, macro, part) {
+    const toRemove = this.getMacroIds(id, macro, part.name)
+    if (toRemove) {
+      if (toRemove.points) {
+        for (const nodeId of Object.values(toRemove.points)) delete part.points[nodeId]
+      }
+      if (toRemove.paths) {
+        for (const nodeId of Object.values(toRemove.paths)) delete part.paths[nodeId]
+      }
+    }
+
+    return this.getMacroIds(id, macro)
+  }
+
+  /*
+   * Add fallback packing algorithm
+   */
+  this.pack = fallbackPacker
+
+  /*
+   * Attache passed-in methods
+   */
   for (const [path, method] of methods) {
     if (avoid.indexOf(path) !== -1) {
       this.log.warn(`You cannot overwrite \`store.${path}()\``)
@@ -155,4 +230,22 @@ Store.prototype.unset = function (path) {
   unset(this, path)
 
   return this
+}
+
+/**
+ * The default pack method comes from a plugin, typically
+ * plugin-bin-back which is part of core plugins.
+ * However, when a pattern is loaded without plugins
+ * we stil don't want it work even when no pack method
+ * is available, so this is the fallback default pack method.
+ */
+function fallbackPacker(items) {
+  let w = 0
+  let h = 0
+  for (const item of items) {
+    if (item.width > w) w = item.width
+    if (item.height > w) w = item.height
+  }
+
+  return { w, h }
 }

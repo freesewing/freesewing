@@ -1,5 +1,6 @@
 ---
-title: Frequently Asked Questions
+title: Vaak gestelde vragen
+order: 150
 ---
 
-<ReadMore recurse />
+<ReadMore list />

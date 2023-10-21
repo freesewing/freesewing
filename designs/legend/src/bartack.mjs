@@ -1,7 +1,7 @@
 import { box } from './shared.mjs'
 
 function legendBartack({ points, Point, macro, part }) {
-  points.bartack = new Point(40, 20).attr('data-text', 'bartack').attr('data-text-dy', -2)
+  points.bartack = new Point(40, 10).attr('data-text', 'bartack').attr('data-text-dy', -2)
   macro('bartack', {
     anchor: points.bartack,
     prefix: 'a',
@@ -9,7 +9,7 @@ function legendBartack({ points, Point, macro, part }) {
     length: 23,
   })
 
-  return box(part, 100, 65)
+  return box(part, 100, 15)
 }
 
 export const bartack = {

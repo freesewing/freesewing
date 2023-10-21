@@ -5,6 +5,7 @@ import { Design, Attributes } from '../src/index.mjs'
 import { Defs } from '../src/defs.mjs'
 import { version } from '../data.mjs'
 import render from './fixtures/render.mjs'
+import { binpackPlugin } from '../../../plugins/plugin-bin-pack/src/index.mjs'
 
 chai.use(chaiString)
 const expect = chai.expect
@@ -12,6 +13,7 @@ const expect = chai.expect
 const getPattern = (settings = {}, draft = false) => {
   const part = {
     name: 'test',
+    plugins: binpackPlugin,
     draft: draft
       ? draft
       : ({ paths, Path, Point, part }) => {

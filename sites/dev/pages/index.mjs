@@ -7,6 +7,7 @@ import { PageLink } from 'shared/components/link.mjs'
 import { Highlight } from 'shared/components/mdx/highlight.mjs'
 import { FreeSewingIcon, CisFemaleIcon, CodeIcon } from 'shared/components/icons.mjs'
 import { CardLink } from 'shared/components/link.mjs'
+import { ReadMore } from 'shared/components/mdx/read-more.mjs'
 
 const title = 'Welcome to FreeSewing.dev'
 
@@ -46,7 +47,7 @@ const HomePage = ({ page }) => (
       <title>{title}</title>
     </Head>
 
-    <div className="max-w-7xl m-auto px-0 mt-24">
+    <div className="max-w-7xl m-auto px-0 mt-24 px-4">
       <FreeSewingIcon className="h-36 w-36 m-auto" />
       <h1 className="text-center font-heavy drop-shadow-md px-4">
         <span style={{ letterSpacing: '-0.2rem' }} className="text-5xl lg:text-6xl">
@@ -82,8 +83,30 @@ const HomePage = ({ page }) => (
         </Card>
       </div>
 
+      <h2 className="lg:text-center mb-4 mt-12">Documentation</h2>
+      <div className="flex flex-col gap-5 md:grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 lg:gap-4 mt-12 mb-24">
+        <div>
+          <h4>Guides</h4>
+          <ReadMore recurse root="guides" depth={3} />
+        </div>
+        <div>
+          <h4>Howtos</h4>
+          <ReadMore recurse root="howtos" depth={3} />
+        </div>
+        <div>
+          <h4>Reference</h4>
+          <ReadMore recurse root="reference" depth={3} />
+        </div>
+        <div>
+          <h4>Tutorials</h4>
+          <ReadMore recurse root="tutorials" depth={3} />
+          <h4>Training</h4>
+          <ReadMore recurse root="training" depth={3} />
+        </div>
+      </div>
+
       <h2 className="lg:text-center mb-4 mt-12">Using FreeSewing: TL;DR</h2>
-      <div className="flex flex-row flex-wrap gap-4 justify-between">
+      <div className="grid w-full m-auto  md:grid-cols-2 gap-4 justify-between">
         <div className="max-w-xl w-full">
           <h3>
             To go fast, go alone <span role="img">🚀</span>
@@ -123,7 +146,7 @@ const HomePage = ({ page }) => (
         </div>
       </div>
 
-      <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-4 mt-12">
+      <div className="flex flex-col gap-5 md:grid lg:grid-cols-2 lg:gap-4 mt-12">
         <CardLink
           href="/reference/core"
           title="Core API"

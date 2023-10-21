@@ -54,7 +54,7 @@
   "dependencies": {},
   "devDependencies": {
     "mocha": "10.2.0",
-    "chai": "4.3.9"
+    "chai": "4.3.10"
   },
   "files": [
     "dist/*",

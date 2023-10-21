@@ -245,29 +245,29 @@
       "t": "Round back",
       "d": "To fit a round(er) back, this adds length to the center back (at the yoke) that tapers of towards the sides."
     },
-    "seperateButtonholePlacket": {
-      "t": "Seperate buttonhole placket",
+    "separateButtonholePlacket": {
+      "t": "Separate buttonhole placket",
       "d": "Draft a separate buttonhole placket."
     },
-    "seperateButtonholePlacketNo": {
-      "t": "Do not seperate the buttonholeplacket",
+    "separateButtonholePlacketNo": {
+      "t": "Do not separate the buttonholeplacket",
       "d": "Draft a pattern where the buttonholeplacket is attached to the front"
     },
-    "seperateButtonholePlacketYes": {
-      "t": "Seperate the buttonholeplacket",
-      "d": "Draft a pattern where the buttonhole placket is seperated from the front, allowing one to use a different fabric or grain for the buttonhole placket"
+    "separateButtonholePlacketYes": {
+      "t": "Separate the buttonholeplacket",
+      "d": "Draft a pattern where the buttonhole placket is separated from the front, allowing one to use a different fabric or grain for the buttonhole placket"
     },
-    "seperateButtonPlacket": {
-      "t": "Seperate button placket",
+    "separateButtonPlacket": {
+      "t": "Separate button placket",
       "d": "Draft a separate button placket"
     },
-    "seperateButtonPlacketNo": {
-      "t": "Do not seperate the button placket",
+    "separateButtonPlacketNo": {
+      "t": "Do not separate the button placket",
       "d": "Draft a pattern where the button placket is attached to the front"
     },
-    "seperateButtonPlacketYes": {
-      "t": "Seperate the button placket",
-      "d": "Draft a pattern where the button placket is seperated from the front, allowing one to use a different fabric or grain for the button placket"
+    "separateButtonPlacketYes": {
+      "t": "Separate the button placket",
+      "d": "Draft a pattern where the button placket is separated from the front, allowing one to use a different fabric or grain for the button placket"
     },
     "sleevePlacketLength": {
       "t": "Sleeve placket length",

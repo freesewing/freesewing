@@ -1,5 +1,5 @@
 ---
-title: Aviso de privacidad de FreeSewing
+title: Aviso de Privacidad
 ---
 
 **Last update**: 13 August 2023
@@ -96,10 +96,6 @@ Estos datos se almacenan para cualquier persona con una cuenta en nuestro sitio 
 
 ## Other info relevant to this privacy notice
 
-### Uso por menores de 16 años
-
-For legal reasons, you need to be at least 16 years old to use FreeSewing.
-
 ### Controlador de datos e información de contacto
 
 Para preguntas sobre este aviso de privacidad, puede contactar a Joost De Cock en joost@joost.at.
@@ -108,7 +104,7 @@ Para preguntas sobre este aviso de privacidad, puede contactar a Joost De Cock e
 
 Esta política puede ser actualizada ocasionalmente. Lo indicaremos en la **Última actualización** de datos en la parte superior de este documento.
 
-A more comprehensive overview of this document's history is [available on GitHub][1]
+A more comprehensive overview of this document's history is [available on GitHub](https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy)
 
 ### Divulgación completa
 
@@ -135,6 +131,10 @@ So far:
 - FreeSewing has never provided any law enforcement organization personal data of any of our users or visitors.
 - FreeSewing has never weakened, compromised, or subverted any of its encryption at the request of law enforcement or another third party.
 
+### Uso por menores de 16 años
+
+Por razones legales, usted necesita tener al menos 16 años para usar freesewing.
+
 ### Ver también
 
 - [Tus derechos][2]
@@ -142,9 +142,7 @@ So far:
 
 [v]: #how-we-use-your-visitor-data
 
-[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/about/privacy
-
-[2]: /docs/about/rights/
+[2]: /docs/various/rights/
 
 [3]: /account/consent/
 

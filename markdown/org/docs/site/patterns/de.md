@@ -1,5 +1,0 @@
----
-title: Schnittmuster
----
-
-FIXME

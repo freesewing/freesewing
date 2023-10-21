@@ -52,7 +52,7 @@ export const draftFrontLeftClassicCuton = ({
       .move(points.placketCfNeck)
       .line(points.placketCfHem)
       .attr('class', 'help')
-    if (!options.seperateButtonPlacket) {
+    if (!options.separateButtonPlacket) {
       // Match lines are only displayed on attached plackets
       paths.frontCenter.addText('simon:matchHere', 'text-xs center')
     }

@@ -1,11 +1,8 @@
 ---
-title: "Separate button placket"
+title: "Patte de boutonnage séparée"
 ---
 
-![Separate button placket](separatebuttonplacket.svg)
+![Patte de boutonnage séparée](seperatebuttonplacket.svg)
 
-Whether or not you want the button placket to be a separate pattern part.
-
-
-
+Si vous voulez ou non que la patte de bouton soit une partie séparée.
 

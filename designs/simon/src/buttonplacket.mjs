@@ -17,7 +17,7 @@ function simonButtonPlacket({
   store,
   part,
 }) {
-  if (!options.seperateButtonPlacket) {
+  if (!options.separateButtonPlacket) {
     part.paths = {}
     part.snippets = {}
     part.points = {}

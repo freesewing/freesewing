@@ -72,7 +72,7 @@ export const components = (site = 'org', slug = []) => {
 
   if (site === 'org' && Array.isArray(slug)) {
     const url = slug.join('/')
-    if (url.indexOf('various/notation') !== -1 || url.indexOf('sewing/on-the-fold') !== -1)
+    if (url.indexOf('about/notation') !== -1 || url.indexOf('sewing/on-the-fold') !== -1)
       specific.Legend = Legend
   }
 

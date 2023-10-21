@@ -1,5 +1,6 @@
 ---
-title: Frequently Asked Questions
+title: Preguntas frecuentes
+order: 150
 ---
 
-<ReadMore recurse />
+<ReadMore list />

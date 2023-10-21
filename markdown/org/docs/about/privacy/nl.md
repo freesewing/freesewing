@@ -1,5 +1,5 @@
 ---
-title: FreeSewing Privacy Verklaring
+title: Privacy melding
 ---
 
 **Last update**: 13 August 2023
@@ -96,10 +96,6 @@ Deze gegevens worden opgeslagen voor iedereen met een account op onze website.
 
 ## Other info relevant to this privacy notice
 
-### Gebruik door minderjarigen jonger dan 16
-
-For legal reasons, you need to be at least 16 years old to use FreeSewing.
-
 ### Data Controller en contactinformatie
 
 Voor vragen over de privacy melding kan je Joost De Cock contacteren via joost@joost.at.
@@ -135,14 +131,18 @@ So far:
 - FreeSewing has never provided any law enforcement organization personal data of any of our users or visitors.
 - FreeSewing has never weakened, compromised, or subverted any of its encryption at the request of law enforcement or another third party.
 
+### Gebruik door minderjarigen jonger dan 16
+
+Om juridische redenen moet je ten minste 16 jaar oud zijn om freesewing te gebruiken.
+
 ### Zie ook
 
 - [Je rechten][2]
 - [Je toestemming][3]
 
-[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/about/privacy
+[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy
 
-[2]: /docs/about/rights/
+[2]: /docs/various/rights/
 
 [3]: /account/consent/
 

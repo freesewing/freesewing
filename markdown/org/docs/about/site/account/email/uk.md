@@ -1,6 +1,6 @@
 ---
-title: Адреса електронної пошти
+title: Email Address
 ---
 
-Ваша адреса електронної пошти гарантує, що ми зможемо зв'язатися з Вами, коли це буде потрібним. Наприклад якщо Ви забули свій пароль.
+Your email address ensures we can reach you when it's needed. For example when you have forgotten your password.
 

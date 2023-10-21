@@ -1,5 +1,5 @@
 ---
-title: Título
+title: "Bookmarks: Title"
 ---
 
 Every bookmark has a **title** attribute that is mandatory.

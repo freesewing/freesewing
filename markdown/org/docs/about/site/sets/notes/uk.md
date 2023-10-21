@@ -1,5 +1,5 @@
 ---
-title: Нотатки
+title: "Measurements Sets: Notes"
 ---
 
 Every measurements set has a **notes** attribute that is optional.

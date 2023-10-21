@@ -1,8 +1,8 @@
 ---
-title: FreeSewing Community Standards
+title: Gemeinschaftsstandards
 ---
 
-Thank you for being part of the FreeSewing community. Wenn du dich mit uns oder anderen austauschst, halte dich bitte an die folgenden einfachen Regeln:
+Vielen Dank, dass du Teil der FreeSewing-Community bist. Wenn du dich mit uns oder anderen austauschst, halte dich bitte an die folgenden einfachen Regeln:
 
 ##### Sei nett
 

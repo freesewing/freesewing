@@ -1,5 +1,4 @@
 import { name, version } from '../data.mjs'
-import { getIds } from './utils.mjs'
 
 /*
  * These are the keys for macro IDs
@@ -11,7 +10,7 @@ export const plugin = {
   name,
   version,
   macros: {
-    round: function (mc, { points, paths, Point, Path, store, part }) {
+    round: function (mc, { points, paths, Point, Path, store }) {
       const C = 0.55191502449
       const {
         from = new Point(0, 0),
@@ -22,7 +21,9 @@ export const plugin = {
         hide = true,
       } = mc
       let { radius = 66.6 } = mc
-      const ids = getIds([...pointKeys, ...pathKeys], id, name)
+      const pointIds = store.generateMacroIds(pointKeys, id)
+      const pathIds = store.generateMacroIds(pathKeys, id)
+      const ids = { ...pointIds, ...pathIds }
 
       const fd = from.dist(via)
       const td = to.dist(via)
@@ -41,16 +42,15 @@ export const plugin = {
       /*
        * Store all IDs in the store so we can remove this macro with rmtitle
        */
-      store.set(
-        ['parts', part.name, 'macros', 'round', 'ids', mc.id, 'points'],
-        getIds(pointKeys, id, name)
-      )
-      store.set(
-        ['parts', part.name, 'macros', 'round', 'ids', mc.id, 'paths'],
-        getIds(pathKeys, id, name)
-      )
+      store.storeMacroIds(mc.id, {
+        paths: pathIds,
+        points: pointIds,
+      })
 
-      return store.getMacroIds(id, 'round')
+      /*
+       * Returning ids is a best practice for FreeSewing macros
+       */
+      return store.getMacroIds(mc.id)
     },
   },
 }

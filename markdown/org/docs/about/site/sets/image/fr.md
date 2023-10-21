@@ -1,5 +1,5 @@
 ---
-title: Image
+title: "Measurements Sets: Image"
 ---
 
 Every measurements set has a **image** attribute that is optional.

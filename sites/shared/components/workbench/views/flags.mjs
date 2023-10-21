@@ -138,6 +138,7 @@ export const FlagsAccordionEntries = ({ flags, update }) => {
             <span className="uppercase font-bold">{flag.type}</span>
           </div>,
           <Flag key={key} t={t} data={flag} handleUpdate={handleUpdate} />,
+          key,
         ]
       })}
     />

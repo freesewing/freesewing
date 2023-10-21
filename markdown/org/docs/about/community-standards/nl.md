@@ -1,8 +1,8 @@
 ---
-title: FreeSewing Community Standards
+title: Huisreglement
 ---
 
-Thank you for being part of the FreeSewing community. Wanneer je met ons of met anderen hier omgaat, onthou dan alstublieft de volgende eenvoudige regels:
+Bedankt om deel uit te maken van de freesewing gemeenschap. Wanneer je met ons of met anderen hier omgaat, onthou dan alstublieft de volgende eenvoudige regels:
 
 ##### Wees lief
 

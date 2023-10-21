@@ -1041,6 +1041,24 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "iambijayd",
+      "name": "Bijay Dulal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/110587589?v=4",
+      "profile": "https://github.com/iambijayd",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "TheTanay902",
+      "name": "Tanay Toshniwal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/84577440?v=4",
+      "profile": "https://github.com/TheTanay902",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "skipCi": true,

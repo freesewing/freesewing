@@ -1,8 +1,8 @@
 ---
-title: FreeSewing Community Standards
+title: Normes communautaires
 ---
 
-Thank you for being part of the FreeSewing community. Lorsque vous vous engagez avec nous, ou lorsque vous vous engagez avec d'autres, souvenez-vous des règles simples suivantes :
+Merci de faire partie de la communauté freesewing. Lorsque vous vous engagez avec nous, ou lorsque vous vous engagez avec d'autres, souvenez-vous des règles simples suivantes :
 
 ##### Soyez gentil
 

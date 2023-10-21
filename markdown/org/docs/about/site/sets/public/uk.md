@@ -1,5 +1,5 @@
 ---
-title: Громадськість
+title: "Measurements Sets: Public"
 ---
 
 Every measurements set has a **public** attribute that controls whether or not the measurments set is public.

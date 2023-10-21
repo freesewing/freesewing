@@ -1,5 +1,5 @@
 ---
-title: Location
+title: "Bookmarks: Location"
 ---
 
 Every bookmark has a **loation** attribute that is mandatory. It holds the URL of the bookmark.

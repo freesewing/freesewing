@@ -2,6 +2,6 @@
 title: Користувацький досвід
 ---
 
-Це налаштування дозволяє Вам керувати своїм досвідом на цьому сайті. Ви можете обрати спрощену розкладку — без складних та детальних налаштувань. Або розкладку з усіма приколюхами.
+This setting allows you to control what sort of a user experience you want. One that is more simple, with advanced features hidden. Or one that has all bells and whistles.
 
-FreeSewing — доволі наворочена платформа і це може лякати нових користувачів. Це налаштування було створено для того, щоб користувачі могли почати з простого та додавати з часом все складніші функції.
+FreeSewing is a rather advanced platform, and that can be intimidating for new users. This setting was created to allow people to start simple, and then unlock more features later.

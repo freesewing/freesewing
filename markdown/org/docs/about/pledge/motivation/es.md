@@ -4,8 +4,8 @@ title: Motivación
 
 <Note>
 
-This is a personal note by Joost De Cock -- the FreeSewing maintainer -- about
-his motivations for [the FreeSewing revenue pledge](/docs/about/pledge/)
+Esta es una nota personal de Joost De Cock -- el mantenedor de FreeSewing -- acerca de
+sus motivaciones para [el pledge de ingresos de FreeSewing (/docs/various/pledge/)
 
 </Note>
 
@@ -58,4 +58,4 @@ También es una de las pocas organizaciones que tiene el alcance global para ir 
 
 Espero que esto explique la elección de Médecins Sans Frontières/Médicos Sin Fronteras como elección de organización benéfica en FreeSewing. Y espero que se unan a nosotros para hacer el mundo un poco mejor.
 
-Así que estoy feliz de hacer [esta promesa](/docs/about/pledge/).
+Así que estoy feliz de hacer [esta promesa](/docs/various/pledge/).

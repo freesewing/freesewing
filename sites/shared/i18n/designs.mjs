@@ -21,6 +21,7 @@ import { i18n as diana } from '@freesewing/diana'
 import { i18n as examples } from '@freesewing/examples'
 import { i18n as florence } from '@freesewing/florence'
 import { i18n as florent } from '@freesewing/florent'
+import { i18n as gozer } from '@freesewing/gozer'
 import { i18n as hi } from '@freesewing/hi'
 import { i18n as holmes } from '@freesewing/holmes'
 import { i18n as hortensia } from '@freesewing/hortensia'
@@ -38,9 +39,11 @@ import { i18n as penelope } from '@freesewing/penelope'
 import { i18n as plugintest } from '@freesewing/plugintest'
 import { i18n as rendertest } from '@freesewing/rendertest'
 import { i18n as sandy } from '@freesewing/sandy'
+import { i18n as shelly } from '@freesewing/shelly'
 import { i18n as shin } from '@freesewing/shin'
 import { i18n as simon } from '@freesewing/simon'
 import { i18n as simone } from '@freesewing/simone'
+import { i18n as skully } from '@freesewing/skully'
 import { i18n as sven } from '@freesewing/sven'
 import { i18n as tamiko } from '@freesewing/tamiko'
 import { i18n as teagan } from '@freesewing/teagan'
@@ -52,6 +55,7 @@ import { i18n as wahid } from '@freesewing/wahid'
 import { i18n as walburga } from '@freesewing/walburga'
 import { i18n as waralee } from '@freesewing/waralee'
 import { i18n as yuri } from '@freesewing/yuri'
+import { i18n as otis } from '@freesewing/otis'
 
 export const designs = {
   aaron,
@@ -73,6 +77,7 @@ export const designs = {
   examples,
   florence,
   florent,
+  gozer,
   hi,
   holmes,
   hortensia,
@@ -90,9 +95,11 @@ export const designs = {
   plugintest,
   rendertest,
   sandy,
+  shelly,
   shin,
   simon,
   simone,
+  skully,
   sven,
   tamiko,
   teagan,
@@ -104,4 +111,5 @@ export const designs = {
   walburga,
   waralee,
   yuri,
+  otis,
 }

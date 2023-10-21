@@ -1,5 +1,5 @@
 ---
-title: Назва
+title: "Patterns: Name"
 ---
 
 Every pattern has a **name** attribute that is mandatory.

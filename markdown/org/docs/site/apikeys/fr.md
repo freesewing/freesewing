@@ -1,5 +1,0 @@
----
-title: Clés API
----
-
-FIXME

@@ -20,6 +20,7 @@ import { Cornelius as cornelius } from '@freesewing/cornelius'
 import { Diana as diana } from '@freesewing/diana'
 import { Florence as florence } from '@freesewing/florence'
 import { Florent as florent } from '@freesewing/florent'
+import { Gozer as gozer } from '@freesewing/gozer'
 import { Hi as hi } from '@freesewing/hi'
 import { Holmes as holmes } from '@freesewing/holmes'
 import { Hortensia as hortensia } from '@freesewing/hortensia'
@@ -33,10 +34,14 @@ import { Noble as noble } from '@freesewing/noble'
 import { Octoplushy as octoplushy } from '@freesewing/octoplushy'
 import { Paco as paco } from '@freesewing/paco'
 import { Penelope as penelope } from '@freesewing/penelope'
+import { Plugintest as plugintest } from '@freesewing/plugintest'
+import { Rendertest as rendertest } from '@freesewing/rendertest'
 import { Sandy as sandy } from '@freesewing/sandy'
+import { Shelly as shelly } from '@freesewing/shelly'
 import { Shin as shin } from '@freesewing/shin'
 import { Simon as simon } from '@freesewing/simon'
 import { Simone as simone } from '@freesewing/simone'
+import { Skully as skully } from '@freesewing/skully'
 import { Sven as sven } from '@freesewing/sven'
 import { Tamiko as tamiko } from '@freesewing/tamiko'
 import { Teagan as teagan } from '@freesewing/teagan'
@@ -48,6 +53,7 @@ import { Wahid as wahid } from '@freesewing/wahid'
 import { Walburga as walburga } from '@freesewing/walburga'
 import { Waralee as waralee } from '@freesewing/waralee'
 import { Yuri as yuri } from '@freesewing/yuri'
+import { Otis as otis } from '@freesewing/otis'
 
 const designs = {
   aaron,
@@ -68,6 +74,7 @@ const designs = {
   diana,
   florence,
   florent,
+  gozer,
   hi,
   holmes,
   hortensia,
@@ -81,10 +88,14 @@ const designs = {
   octoplushy,
   paco,
   penelope,
+  plugintest,
+  rendertest,
   sandy,
+  shelly,
   shin,
   simon,
   simone,
+  skully,
   sven,
   tamiko,
   teagan,
@@ -96,6 +107,7 @@ const designs = {
   walburga,
   waralee,
   yuri,
+  otis,
 }
 
 export const useDesign = (design) => (designs[design] ? designs[design] : false)

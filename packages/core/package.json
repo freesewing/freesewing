@@ -55,7 +55,6 @@
   "dependencies": {
     "@freesewing/core-plugins": "3.0.0",
     "bezier-js": "6.1.4",
-    "bin-pack-with-constraints": "1.0.1",
     "hooks": "0.3.2",
     "lodash.get": "4.4.2",
     "lodash.set": "4.3.2",
@@ -66,8 +65,9 @@
     "eslint": "8.51.0",
     "nyc": "15.1.0",
     "mocha": "10.2.0",
-    "chai": "4.3.9",
-    "sinon": "^15.0.1"
+    "chai": "4.3.10",
+    "chai-string": "1.5.0",
+    "sinon": "^16.1.0"
   },
   "files": [
     "dist/*",

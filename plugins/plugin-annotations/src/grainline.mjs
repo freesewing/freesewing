@@ -1,5 +1,3 @@
-import { getIds } from './utils.mjs'
-
 /*
  * Defaults for the grainline macro
  */
@@ -17,16 +15,16 @@ const macroDefaults = {
 export const grainlineDefs = [
   {
     name: 'grainlineFrom',
-    def: `
-<marker orient="auto" refY="3" refX="8" id="grainlineFrom" style="overflow:visible;" markerWidth="10" markerHeight="6">
-	<path d="M 0,3 L 10,0 C 8,2 8,4 10,6 z" class="fill-note note" />
+    def: (scale) => `
+<marker orient="auto" refY="0" refX="0" id="grainlineFrom" style="overflow:visible;" markerWidth="12" markerHeight="8">
+	<path class="note fill-note" d="M -10,0 L 2,-4 C 0,-2 0,2  2,4 z" transform="scale(${scale})"/>
 </marker>`,
   },
   {
     name: 'grainlineTo',
-    def: `
-<marker orient="auto" refY="3" refX="2" id="grainlineTo" style="overflow:visible;" markerWidth="10" markerHeight="6">
-	<path d="M 10,3 L 0,0 C 2,2 2,4 0,6 z" class="fill-note note" />
+    def: (scale) => `
+<marker orient="auto" refY="0" refX="0" id="grainlineTo" style="overflow:visible;" markerWidth="12" markerHeight="8">
+	<path class="note fill-note" d="M 10,0 L -2,-4 C 0,-2 -2,2  -2,4 z" transform="scale(${scale})"/>
 </marker>`,
   },
 ]
@@ -34,17 +32,13 @@ export const grainlineDefs = [
 /*
  * The rmgrainline macro
  */
-const rmgrainline = function (id = macroDefaults.id, { paths, store, part }) {
-  for (const pid of Object.values(
-    store.get(['parts', part.name, 'macros', 'grainline', 'ids', id, 'paths'], {})
-  ))
-    delete paths[pid]
-}
+const rmgrainline = (id = macroDefaults.id, { store, part }) =>
+  store.removeMacroNodes(id, 'grainline', part)
 
 /*
  * The grainline macro
  */
-const grainline = function (config = {}, { paths, Path, Point, complete, store, log, part }) {
+const grainline = function (config = {}, { paths, Path, Point, complete, store, log }) {
   /*
    * Don't add a cutonfold indicator when complete is false, unless force is true
    */
@@ -80,7 +74,7 @@ const grainline = function (config = {}, { paths, Path, Point, complete, store, 
   /*
    * Get the list of IDs
    */
-  const ids = getIds(['line'], mc.id, 'grainline')
+  const ids = store.generateMacroIds(['line'], mc.id)
 
   /*
    * Draw the path
@@ -98,9 +92,12 @@ const grainline = function (config = {}, { paths, Path, Point, complete, store, 
   /*
    * Store all IDs in the store so we can remove this macro with rmgrainline
    */
-  store.set(['parts', part.name, 'macros', 'grainline', 'ids', mc.id, 'paths'], ids)
+  store.storeMacroIds(mc.id, { paths: ids })
 
-  return store.getMacroIds(mc.id, 'grainline')
+  /*
+   * Returning ids is a best practice for FreeSewing macros
+   */
+  return store.getMacroIds(mc.id)
 }
 
 // Export macros

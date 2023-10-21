@@ -14,7 +14,7 @@ import {
 } from 'shared/utils.mjs'
 import { measurements } from 'config/measurements.mjs'
 import { measurements as designMeasurements } from 'shared/prebuild/data/design-measurements.mjs'
-//import orderBy from 'lodash.orderby'
+import orderBy from 'lodash.orderby'
 // Hooks
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
@@ -44,6 +44,7 @@ import {
   MeasieInput,
   DesignDropdown,
   ListInput,
+  NumberInput,
   ns as inputNs,
 } from 'shared/components/inputs.mjs'
 
@@ -65,7 +66,7 @@ const SetLineup = ({ sets = [], href = false, onClick = false }) => (
       const props = {
         className: 'aspect-[1/3] w-auto h-96',
         style: {
-          backgroundImage: `url(${cloudflareImageUrl({ id: set.img, type: 'lineup' })})`,
+          backgroundImage: `url(${cloudflareImageUrl({ id: `cset-${set.id}`, type: 'lineup' })})`,
           width: 'auto',
           backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',
@@ -118,7 +119,7 @@ const ShowCuratedSet = ({ cset }) => {
           onClick={() =>
             setModal(
               <ModalWrapper flex="col" justify="top lg:justify-center" slideFrom="right">
-                <img src={cloudflareImageUrl({ type: 'lineup', id: cset.img })} />
+                <img src={cloudflareImageUrl({ type: 'lineup', id: `cset-${cset.id}` })} />
               </ModalWrapper>
             )
           }
@@ -130,7 +131,10 @@ const ShowCuratedSet = ({ cset }) => {
       </div>
 
       <h2>{t('data')}</h2>
-      <DisplayRow title={t('name')}>{cset[`name${capitalize(lang)}`]}</DisplayRow>
+      <DisplayRow title={t('name')}>
+        <PageLink href={`/curated-sets/${cset.id}`} txt={cset[`name${capitalize(lang)}`]} />
+      </DisplayRow>
+      <DisplayRow title={t('height')}>{cset.height}cm</DisplayRow>
       {control >= controlLevels.sets.notes && (
         <DisplayRow title={t('notes')}>
           <Mdx md={cset[`notes${capitalize(lang)}`]} />
@@ -198,7 +202,7 @@ export const CuratedSet = ({ id }) => {
 export const CuratedSetPicker = (props) => <CuratedSets {...props} />
 
 // Component for the curated-sets page
-export const CuratedSets = ({ href = false, clickHandler = false }) => {
+export const CuratedSets = ({ href = false, clickHandler = false, published = true }) => {
   // Hooks
   const backend = useBackend()
   const { setLoadingStatus } = useContext(LoadingStatusContext)
@@ -214,7 +218,9 @@ export const CuratedSets = ({ href = false, clickHandler = false }) => {
       const result = await backend.getCuratedSets()
       if (result.success) {
         const allSets = {}
-        for (const set of result.data.curatedSets) allSets[set.id] = set
+        for (const set of result.data.curatedSets) {
+          if (!published || set.published) allSets[set.id] = set
+        }
         setSets(allSets)
         setLoadingStatus([true, 'status:dataLoaded', true, true])
       } else setLoadingStatus([true, 'status:backendError', true, false])
@@ -223,7 +229,7 @@ export const CuratedSets = ({ href = false, clickHandler = false }) => {
   }, [])
 
   const lineupProps = {
-    sets: Object.values(sets),
+    sets: orderBy(sets, 'height', 'asc'),
   }
   if (typeof href === 'function') lineupProps.href = href
   else lineupProps.onClick = clickHandler ? clickHandler : (set) => setSelected(set.id)
@@ -236,7 +242,7 @@ export const CuratedSets = ({ href = false, clickHandler = false }) => {
   )
 }
 
-// Component for the maintaining the list of  curated-sets
+// Component for the maintaining the list of curated-sets
 export const CuratedSetsList = ({ href = false }) => {
   // Hooks
   const { t } = useTranslation(ns)
@@ -328,6 +334,7 @@ export const CuratedSetsList = ({ href = false }) => {
             <th className="text-base-300 text-base">{t('curate:img')}</th>
             <th className="text-base-300 text-base">{t('curate:name')}</th>
             <th className="text-base-300 text-base">{t('curate:published')}</th>
+            <th className="text-base-300 text-base">{t('curate:height')}</th>
             <th className="text-base-300 text-base">{t('curate:createdAt')}</th>
           </tr>
         </thead>
@@ -342,15 +349,23 @@ export const CuratedSetsList = ({ href = false }) => {
                   onClick={() => toggleSelect(set.id)}
                 />
               </td>
-              <td>{set.id}</td>
+              <td>
+                <PageLink href={typeof href === 'function' ? href(set.id) : href} txt={set.id} />
+              </td>
               <td>
                 <img
-                  src={cloudflareImageUrl({ id: set.img, variant: 'sq100' })}
+                  src={cloudflareImageUrl({ id: `cset-${set.id}`, variant: 'sq100' })}
                   className="mask mask-squircle w-12 h-12"
                 />
               </td>
-              <td>{set.nameEn}</td>
+              <td>
+                <PageLink
+                  href={typeof href === 'function' ? href(set.id) : href}
+                  txt={set.nameEn}
+                />
+              </td>
               <td>{set.published ? <BoolYesIcon /> : <BoolNoIcon />}</td>
+              <td>{set.height}cm</td>
               <td>{set.createdAt}</td>
             </tr>
           ))}
@@ -415,6 +430,7 @@ export const EditCuratedSet = ({ id }) => {
       k = `notes${capitalize(lang)}`
       if (data[k] !== cset[k]) changes[k] = data[k]
     }
+    if (data.height !== cset.height) changes.height = Number(data.height)
     if (data.img !== cset.img) changes.img = data.img
     if (data.published !== cset.published) changes.published = data.published
     for (const m in data.measies) {
@@ -431,7 +447,7 @@ export const EditCuratedSet = ({ id }) => {
     <div className="max-w-2xl">
       <PageLink href={`/curated-sets/${id}`} txt={`/curated-sets/${id}`} />
       <ListInput
-        label={t('curate:publshed')}
+        label={t('curate:published')}
         update={(val) => updateData('published', val)}
         list={[
           {
@@ -456,6 +472,17 @@ export const EditCuratedSet = ({ id }) => {
           },
         ]}
         current={data.published}
+      />
+
+      <NumberInput
+        min={42}
+        max={215}
+        step={1}
+        key="height"
+        label="Height"
+        update={(val) => updateData('height', val)}
+        current={Number(data.height)}
+        valid={notEmpty}
       />
 
       <h2 id="measies">{t('measies')}</h2>

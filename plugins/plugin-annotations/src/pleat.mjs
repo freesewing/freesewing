@@ -1,5 +1,3 @@
-import { getIds } from './utils.mjs'
-
 /*
  * Defaults for the pleat macro
  */
@@ -18,9 +16,9 @@ const macroDefaults = {
 export const pleatDefs = [
   {
     name: 'pleat',
-    def: `
+    def: (scale) => `
 <marker id="pleatTo" markerWidth="10" markerHeight="6" orient="auto" refY="3" refX="10">
-	<path d="M 10,3 L 0,0 C 2,2 2,4 0,6 z" class="fill-note note" />
+	<path d="M 10,3 L 0,0 C 2,2 2,4 0,6 z" class="fill-note note" transform="scale(${scale})" />
 </marker>
 `,
   },
@@ -29,17 +27,13 @@ export const pleatDefs = [
 /*
  * The rmpleat macro
  */
-const rmpleat = function (id = macroDefaults.id, { paths, store, part }) {
-  for (const pid of Object.values(
-    store.get(['parts', part.name, 'macros', 'pleat', 'ids', id, 'paths'], {})
-  ))
-    delete paths[pid]
-}
+const rmpleat = (id = macroDefaults.id, { store, part }) =>
+  store.removeMacroNodes(id, 'rmpleat', part)
 
 /*
  * The pleat macro
  */
-const pleat = function (config, { paths, Path, log, Point, complete, scale, store, part }) {
+const pleat = function (config, { paths, Path, log, Point, complete, scale, store }) {
   /*
    * Don't add a pleat when complete is false, unless force is true
    */
@@ -71,7 +65,7 @@ const pleat = function (config, { paths, Path, log, Point, complete, scale, stor
    * Get the list of IDs
    * Initialize the verticle cadence
    */
-  const ids = getIds(['from', 'to', 'arrow'], mc.id, 'pleat')
+  const ids = store.generateMacroIds(['from', 'to', 'arrow'], mc.id)
 
   const toIn = mc.to.shift(mc.from.shiftTowards(mc.to, 0.1).angle(mc.to) + 90, mc.margin * scale)
   const fromIn = mc.from.shift(
@@ -109,9 +103,12 @@ const pleat = function (config, { paths, Path, log, Point, complete, scale, stor
   /*
    * Store all IDs in the store so we can remove this macro with rmpleat
    */
-  store.set(['parts', part.name, 'macros', 'pleat', 'ids', mc.id, 'paths'], ids)
+  store.storeMacroIds(mc.id, { paths: ids })
 
-  return store.getMacroIds(mc.id, 'pleat')
+  /*
+   * Returning ids is a best practice for FreeSewing macros
+   */
+  return store.getMacroIds(mc.id)
 }
 
 // Export macros
