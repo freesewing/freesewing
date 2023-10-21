@@ -8,7 +8,7 @@ These sets are used by designers to test their designs on a variety of bodies, a
 
 ## Historique
 
-FreeSewing is all about made-to-measure sewing patterns, so perpetuating the myth of *standard sizes* was never something we wanted to be part of.
+FreeSewing is all about bespoke sewing patterns, so perpetuating the myth of *standard sizes* was never something we wanted to be part of.
 
 In reality, having to take measurements prior to even being able to try the platform adds a lot of friction to the onboarding of new users. So at one point, we added a sizing table with a variety of measurements/sizes so people could see what generating a pattern looked like without having to start measuring themselves.
 
