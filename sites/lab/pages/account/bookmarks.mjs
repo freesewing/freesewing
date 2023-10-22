@@ -1,20 +1,16 @@
 // Dependencies
 import dynamic from 'next/dynamic'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { nsMerge, getSearchParam } from 'shared/utils.mjs'
-// Context
-import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
+import { nsMerge } from 'shared/utils.mjs'
 // Hooks
 import { useTranslation } from 'next-i18next'
-import { useState, useEffect, useContext } from 'react'
-import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { ns as authNs } from 'shared/components/wrappers/auth/index.mjs'
 import { ns as bookmarksNs } from 'shared/components/account/bookmarks.mjs'
 
 // Translation namespaces used on this page
-const ns = nsMerge(bookmarksNs, authNs, pageNs, 'status')
+const ns = nsMerge(bookmarksNs, authNs, pageNs)
 
 /*
  * Some things should never generated as SSR
@@ -25,8 +21,8 @@ const DynamicAuthWrapper = dynamic(
   { ssr: false }
 )
 
-const DynamicBookmark = dynamic(
-  () => import('shared/components/account/bookmarks.mjs').then((mod) => mod.Bookmark),
+const DynamicBookmarks = dynamic(
+  () => import('shared/components/account/bookmarks.mjs').then((mod) => mod.Bookmarks),
   { ssr: false }
 )
 
@@ -36,38 +32,19 @@ const DynamicBookmark = dynamic(
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const BookmarkPage = ({ page }) => {
+const AccountBookmarksPage = ({ page }) => {
   const { t } = useTranslation(ns)
-  const backend = useBackend()
-  const { setLoadingStatus } = useContext(LoadingStatusContext)
-
-  const [id, setId] = useState()
-  const [bookmark, setBookmark] = useState()
-
-  useEffect(() => {
-    const getBookmark = async (id) => {
-      const result = await backend.getBookmark(id)
-      if (result.success) setBookmark(result.data.bookmark)
-      else setLoadingStatus([false])
-    }
-    const newId = getSearchParam('id')
-    console.log({ newId })
-    if (newId !== id) {
-      setId(newId)
-      getBookmark(newId)
-    }
-  }, [id, backend, setLoadingStatus])
 
   return (
-    <PageWrapper {...page} title={`${t('bookmarks')}: ${bookmark?.title}`}>
+    <PageWrapper {...page} title={t('bookmarks')}>
       <DynamicAuthWrapper>
-        <DynamicBookmark bookmark={bookmark} />
+        <DynamicBookmarks />
       </DynamicAuthWrapper>
     </PageWrapper>
   )
 }
 
-export default BookmarkPage
+export default AccountBookmarksPage
 
 export async function getStaticProps({ locale }) {
   return {
@@ -75,7 +52,7 @@ export async function getStaticProps({ locale }) {
       ...(await serverSideTranslations(locale, ns)),
       page: {
         locale,
-        path: ['account', 'bookmark'],
+        path: ['account', 'bookmarks'],
       },
     },
   }
