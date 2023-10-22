@@ -1,6 +1,6 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { nsMerge } from 'shared/utils.mjs'
+import { nsMerge, getSearchParam } from 'shared/utils.mjs'
 // Hooks
 import { useState, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
@@ -11,6 +11,7 @@ import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { PageLink } from 'shared/components/link.mjs'
+import { Hodl } from 'shared/components/hodl/index.mjs'
 
 // Translation namespaces used on this page
 const namespaces = nsMerge(pageNs, 'newsletter')
@@ -30,10 +31,17 @@ const NewsletterPage = ({ page, id, ehash }) => {
 
   const handler = async () => {
     setLoadingStatus([true, 'status:contactingBackend'])
-    await backend.confirmNewsletterSubscribe({ id, ehash })
+    await backend.confirmNewsletterUnsubscribe({ id, ehash })
     setLoadingStatus([true, 'status:settingsSaved', true, true])
     setConfirmed(true)
   }
+
+  if (!id || !ehash)
+    return (
+      <PageWrapper {...page} title={false}>
+        <Hodl />
+      </PageWrapper>
+    )
 
   return (
     <PageWrapper {...page} title={false}>
@@ -42,25 +50,16 @@ const NewsletterPage = ({ page, id, ehash }) => {
           <>
             <h1>{t('newsletter:newsletter')}</h1>
             <p>{t('newsletter:thanksDone')}</p>
-            <Popout tip>
-              <p>{t('newsletter:subscribePs')}</p>
-              <p>
-                <PageLink
-                  href={`/newsletter/unsubscribe/${id}/${ehash}`}
-                  txt={t('newsletter:unsubscribeLink')}
-                />
-              </p>
-            </Popout>
           </>
         ) : (
           <>
             <h1>
-              {t('newsletter:newsletter')}: {t('newsletter:subscribe')}
+              {t('newsletter:newsletter')}: {t('newsletter:unsubscribe')}
             </h1>
-            <h5>{t('newsletter:subscribeConfirm')}</h5>
-            <p>{t('newsletter:subscribeLead')}</p>
-            <button className="btn btn-primary w-full" onClick={handler}>
-              {t('newsletter:confirm')}
+            <h5>{t('newsletter:unsubscribeConfirm')}</h5>
+            <p>{t('newsletter:unsubscribeLead')}</p>
+            <button className="btn btn-error w-full" onClick={handler}>
+              {t('newsletter:unsubscribe')}
             </button>
             <Popout note>
               <h5>{t('newsletter:whatsWithTheClicks')}</h5>
@@ -68,8 +67,8 @@ const NewsletterPage = ({ page, id, ehash }) => {
               <p>
                 {t('newsletter:faqLead')}:{' '}
                 <PageLink
-                  href="/docs/faq/newsletter/why-subscribe-multiple-clicks"
-                  txt={t('newsletter:subscribeWhy')}
+                  href="/docs/faq/newsletter/why-unsubscribe-multiple-clicks"
+                  txt={t('newsletter:unsubscribeWhy')}
                 />
               </p>
             </Popout>
@@ -82,26 +81,14 @@ const NewsletterPage = ({ page, id, ehash }) => {
 
 export default NewsletterPage
 
-export async function getStaticProps({ locale, params }) {
+export async function getStaticProps({ locale }) {
   return {
     props: {
       ...(await serverSideTranslations(locale, namespaces)),
-      id: params.tokens[0] || null,
-      ehash: params.tokens[1] || null,
       page: {
         locale,
-        path: ['newsletter'],
+        path: ['newsletter', 'unsubscribe'],
       },
     },
-  }
-}
-
-/*
- * Do not generate anything statically
- */
-export async function getStaticPaths() {
-  return {
-    paths: [],
-    fallback: 'blocking',
   }
 }

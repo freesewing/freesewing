@@ -73,8 +73,9 @@ export const ShowUser = ({ user, button = null }) => (
     <div
       className="w-52 h-52 bg-base-100 rounded-lg shadow shrink-0"
       style={{
-        backgroundImage: `url(${cloudflareConfig.url}${user.img}/sq500)`,
+        backgroundImage: `url(${cloudflareConfig.url}uid-${user.ihash}/sq500)`,
         backgroundSize: 'cover',
+        backgroundColor: 'linear-gradient(#80FFDB, #64DFDF, #48BFE3, #5390D9, #5E60CE);',
       }}
     ></div>
     <div className="w-full">
@@ -124,7 +125,7 @@ export const User = ({ user }) => (
     <ShowUser
       user={user}
       button={
-        <Link href={`/admin/user/${user.id}`} className="btn btn-primary">
+        <Link href={`/admin/user?id=${user.id}`} className="btn btn-primary">
           Manage user
         </Link>
       }

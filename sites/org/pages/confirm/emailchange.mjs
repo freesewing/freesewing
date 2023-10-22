@@ -1,3 +1,6 @@
+// Dependencies
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { nsMerge, getSearchParam } from 'shared/utils.mjs'
 // Hooks
 import { useEffect, useState, useContext } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
@@ -6,10 +9,8 @@ import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 // Context
 import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
-// Dependencies
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import Link from 'next/link'
 // Components
+import Link from 'next/link'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { BareLayout } from 'site/components/layouts/bare.mjs'
 import { Spinner } from 'shared/components/spinner.mjs'
@@ -18,7 +19,7 @@ import { BackToAccountButton } from 'shared/components/account/shared.mjs'
 import { HelpIcon } from 'shared/components/icons.mjs'
 
 // Translation namespaces used on this page
-const ns = Array.from(new Set([...pageNs, 'account']))
+const ns = nsMerge(pageNs, 'account')
 
 const ConfirmSignUpPage = ({ page }) => {
   // Hooks
@@ -27,11 +28,18 @@ const ConfirmSignUpPage = ({ page }) => {
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const { t } = useTranslation(ns)
   const router = useRouter()
-  // Get confirmation ID and check from url
-  const [id, check] = router.asPath.slice(1).split('/').slice(2)
 
   // State
   const [error, setError] = useState(false)
+  const [id, setId] = useState()
+  const [check, setCheck] = useState()
+
+  useEffect(() => {
+    const newId = getSearchParam('id')
+    const newCheck = getSearchParam('check')
+    if (newId !== id) setId(newId)
+    if (newCheck !== check) setId(newCheck)
+  }, [id])
 
   // Effects
   useEffect(() => {
@@ -106,12 +114,5 @@ export async function getStaticProps({ locale }) {
       ...(await serverSideTranslations(locale, ns)),
       page: { locale },
     },
-  }
-}
-
-export async function getStaticPaths() {
-  return {
-    paths: [],
-    fallback: true,
   }
 }
