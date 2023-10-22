@@ -175,7 +175,7 @@ Assembling the hood:
 
 If using lining, do the following two steps, otherwise skip to step 5.
  - Repeat the previous steps to put together the lining pieces.
- - Place the lining assembly and the main hood assembly together with _good sides together_, and clip them together along the neck.
+ - Place the lining assembly and the main hood assembly together with _wrong sides together_, and clip them together along the neck and around the front.
 
 ### Step 5: Preparing the zipper guard
  - Fold the zipper guard in half short ways (so it's half as wide) with _good sides together_, and secure it loosely with a clip or two.
