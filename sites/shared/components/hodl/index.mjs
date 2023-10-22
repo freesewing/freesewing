@@ -13,14 +13,11 @@ const msg = () => Math.floor(Math.random() * messages)
 
 export const Hodl = ({ delay = 1.25, step = 2, noTitle = false }) => {
   const { t } = useTranslation(['hodl'])
-  const timeout = delay * 1000
 
   const [fade, setFade] = useState('opacity-100')
-  const [timer, setTimer] = useState(false)
   const [tick, setTick] = useState(0)
   const [loadingStatus, setLoadingStatus] = useState([true, t('hodl:oneMoment')])
   const [shown, setShown] = useState({})
-  const [color, setColor] = useState('secondary')
 
   useEffect(() => {
     if (tick > 0 && tick < 10) {
@@ -38,17 +35,13 @@ export const Hodl = ({ delay = 1.25, step = 2, noTitle = false }) => {
   useEffect(() => {
     if (loadingStatus[1]) {
       if (loadingStatus[2]) {
-        setTimer(
-          window.setTimeout(() => {
-            setFade('opacity-0')
-          }, 2000 * delay)
-        )
+        window.setTimeout(() => {
+          setFade('opacity-0')
+        }, 2000 * delay)
       } else {
-        setTimer(
-          window.setTimeout(() => {
-            setTick(tick + step)
-          }, 1000 * delay)
-        )
+        window.setTimeout(() => {
+          setTick(tick + step)
+        }, 1000 * delay)
       }
     }
   }, [loadingStatus[1]])

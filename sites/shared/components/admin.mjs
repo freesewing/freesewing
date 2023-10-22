@@ -75,7 +75,7 @@ export const ShowUser = ({ user, button = null }) => (
       style={{
         backgroundImage: `url(${cloudflareConfig.url}uid-${user.ihash}/sq500)`,
         backgroundSize: 'cover',
-        backgroundColor: 'linear-gradient(#80FFDB, #64DFDF, #48BFE3, #5390D9, #5E60CE);',
+        backgroundColor: '#ccc',
       }}
     ></div>
     <div className="w-full">
