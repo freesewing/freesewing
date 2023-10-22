@@ -17,6 +17,7 @@ function draftSkirt({
   macro,
   snippets,
   Snippet,
+  scale,
 }) {
   if (!options.skirt) return part.hide()
 
@@ -84,6 +85,8 @@ function draftSkirt({
   if (complete) {
     points.title = new Point(skirtWidth / 4, skirtLength / 2)
     macro('title', { at: points.title, nr: 9, title: 'skirt' })
+    points.logo = points.title.shift(180, 50 * scale)
+    snippets.logo = new Snippet('logo', points.logo)
 
     if (sa) {
       paths.sa = new Path()

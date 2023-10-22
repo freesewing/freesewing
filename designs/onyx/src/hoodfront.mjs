@@ -24,7 +24,6 @@ function draftHoodFront({
   // Note: Very small values of options.hoodFrontPieceSize cause crashes for unknown reasons if we attempt to draw the part.
   if (options.neckStyle != 'hood' || options.hoodFrontPieceSize < 0.001) return part.hide()
 
-  const neckRadius = store.get('neckRadius')
   const curveDip = store.get('hoodFrontPieceCurve')
   const neckLength = store.get('hoodFrontPieceNeckLength')
 
@@ -166,7 +165,7 @@ function draftHoodFront({
   if (complete) {
     points.title = new Point((points.frontBottom.x * 7) / 8, points.frontBottom.y / 2)
     macro('title', { at: points.title, nr: 8, title: 'hoodFront' })
-    points.logo = points.title.shift(-90, 70 * scale)
+    points.logo = points.title.translate(20 * scale, 70 * scale)
     snippets.logo = new Snippet('logo', points.logo)
 
     if (sa) {

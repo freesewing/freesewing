@@ -13,8 +13,6 @@ function draftLegRibbing({
   complete,
   sa,
   macro,
-  snippets,
-  Snippet,
 }) {
   if (!options.legRibbing) return part.hide()
 

@@ -6,7 +6,6 @@ function draftZipperGuard({
   Point,
   paths,
   points,
-  measurements,
   options,
   absoluteOptions,
   part,
@@ -15,8 +14,6 @@ function draftZipperGuard({
   complete,
   sa,
   macro,
-  snippets,
-  Snippet,
 }) {
   const zipperGuardTapeCoverMaterial = 0.75
 
