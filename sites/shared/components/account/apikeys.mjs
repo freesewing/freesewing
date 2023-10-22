@@ -14,7 +14,7 @@ import { useRouter } from 'next/router'
 import { BackToAccountButton, DisplayRow, NumberBullet } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { LeftIcon, PlusIcon, CopyIcon, RightIcon, TrashIcon } from 'shared/components/icons.mjs'
-import { PageLink, Link } from 'shared/components/link.mjs'
+import { PageLink, Link, linkClasses } from 'shared/components/link.mjs'
 import { StringInput, ListInput, FormControl } from 'shared/components/inputs.mjs'
 import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
@@ -83,7 +83,7 @@ const CopyInput = ({ text }) => {
   )
 }
 
-export const Apikey = ({ apikey }) => {
+export const Apikey = ({ apikey, setId }) => {
   const { t } = useTranslation(ns)
   const router = useRouter()
   const { locale } = router
@@ -97,7 +97,7 @@ export const Apikey = ({ apikey }) => {
       <div className="flex flex-row flex-wrap md:gap-2 md:items-center md:justify-between mt-8">
         <button
           className="w-full md:w-auto btn btn-secondary pr-6 flex flex-row items-center gap-2"
-          onClick={() => router.push('/account/apikeys')}
+          onClick={() => setId(null)}
         >
           <LeftIcon />
           {t('apikeys')}
@@ -254,7 +254,7 @@ export const NewApikey = () => {
 }
 
 // Component for the account/apikeys page
-export const Apikeys = () => {
+export const Apikeys = ({ setId }) => {
   const router = useRouter()
   const { locale } = router
 
@@ -367,7 +367,9 @@ export const Apikeys = () => {
                 />
               </td>
               <td className="text-base font-medium">
-                <PageLink href={`/account/apikeys/${apikey.id}`} txt={apikey.name} />
+                <button className={linkClasses} onClick={() => setId(apikey.id)}>
+                  {apikey.name}
+                </button>
               </td>
               <td className="text-base font-medium">
                 {apikey.level}
