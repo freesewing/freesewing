@@ -1,6 +1,6 @@
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { nsMerge, horFlexClasses } from 'shared/utils.mjs'
+import { nsMerge, horFlexClasses, getSearchParam } from 'shared/utils.mjs'
 // Hooks
 import { useEffect, useState } from 'react'
 import { useAccount } from 'shared/hooks/use-account.mjs'
@@ -74,6 +74,12 @@ const ConfirmSignInPage = ({ page }) => {
   const { t } = useTranslation(ns)
 
   const [error, setError] = useState(false)
+  const [id, setId] = useState()
+
+  useEffect(() => {
+    const newId = getSearchParam('id')
+    if (newId !== id) setId(newId)
+  }, [id])
 
   useEffect(() => {
     const storeAccount = async (data) => {
@@ -97,8 +103,8 @@ const ConfirmSignInPage = ({ page }) => {
       return setError(true)
     }
     // Call async method
-    getConfirmation()
-  }, [backend, confirmationCheck, confirmationId, router, setAccount, setToken])
+    if (id) getConfirmation()
+  }, [backend, confirmationCheck, confirmationId, router, setAccount, setToken, id])
 
   if (page) page.path = ['confirm', 'emailchange', confirmationId]
 
@@ -125,12 +131,5 @@ export async function getStaticProps({ locale }) {
     props: {
       ...(await serverSideTranslations(locale, ns)),
     },
-  }
-}
-
-export async function getStaticPaths() {
-  return {
-    paths: [],
-    fallback: true,
   }
 }

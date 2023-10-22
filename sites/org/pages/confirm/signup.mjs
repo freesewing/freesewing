@@ -1,12 +1,12 @@
+// Dependencies
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { nsMerge, getSearchParam } from 'shared/utils.mjs'
 // Hooks
 import { useEffect, useState } from 'react'
 import { useAccount } from 'shared/hooks/use-account.mjs'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
-import { nsMerge } from 'shared/utils.mjs'
-// Dependencies
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { BareLayout, ns as layoutNs } from 'site/components/layouts/bare.mjs'
@@ -24,18 +24,16 @@ const ConfirmSignUpPage = () => {
   // Hooks
   const router = useRouter()
   // Get confirmation ID and check from url
-  const [confirmationId, confirmationCheck] = router.asPath.slice(1).split('/').slice(2)
-  const page = {
-    path: ['confirm', 'emailchange', confirmationId],
-  }
+  //const [confirmationId, confirmationCheck] = router.asPath.slice(1).split('/').slice(2)
 
   const { setAccount, setToken } = useAccount()
   const backend = useBackend()
   const { t } = useTranslation(ns)
 
-  const [id, setId] = useState(false)
   const [ready, setReady] = useState(false)
   const [error, setError] = useState(false)
+  const [id, setId] = useState()
+  const [check, setCheck] = useState()
 
   const createAccount = async ({ consent1, consent2 }) => {
     let consent = 0
@@ -55,20 +53,27 @@ const ConfirmSignUpPage = () => {
   }
 
   useEffect(() => {
+    const newId = getSearchParam('id')
+    const newCheck = getSearchParam('check')
+    if (newId !== id) setId(newId)
+    if (newCheck !== check) setCheck(newCheck)
+  }, [id, check])
+
+  useEffect(() => {
     // Async inside useEffect requires this approach
     const getConfirmation = async () => {
       // Reach out to backend
-      const data = await backend.loadConfirmation({
-        id: confirmationId,
-        check: confirmationCheck,
-      })
+      const data = await backend.loadConfirmation({ id, check })
       if (data instanceof Error) setError(true)
       setReady(true)
-      setId(confirmationId)
     }
     // Call async method
     getConfirmation()
-  }, [backend, confirmationCheck, confirmationId])
+  }, [backend, id, check])
+
+  const page = {
+    path: ['confirm', 'emailchange', id],
+  }
 
   // Short-circuit errors
   if (error)
@@ -97,12 +102,5 @@ export async function getStaticProps({ locale }) {
     props: {
       ...(await serverSideTranslations(locale, ns)),
     },
-  }
-}
-
-export async function getStaticPaths() {
-  return {
-    paths: [],
-    fallback: true,
   }
 }

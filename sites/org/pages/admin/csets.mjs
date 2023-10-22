@@ -12,7 +12,7 @@ const namespaces = nsMerge(pageNs, authNs)
 const AdminPage = ({ page }) => (
   <PageWrapper {...page} title="Manage Curated Sets">
     <AuthWrapper requiredRole="admin">
-      <CuratedSetsList href={(id) => `/admin/cset/${id}`} />
+      <CuratedSetsList href={(id) => `/admin/cset?id=${id}`} />
     </AuthWrapper>
   </PageWrapper>
 )
