@@ -3,14 +3,14 @@ import Link from 'next/link'
 import { useTheme } from 'shared/hooks/use-theme.mjs'
 import {
   MsfIcon,
-  HelpIcon,
+  HeartIcon,
   DiscordIcon,
   FacebookIcon,
   GitHubIcon,
   InstagramIcon,
   RedditIcon,
-  TwitterIcon,
-  OpenSourceIcon,
+  MastodonIcon,
+  CloudIcon,
   YouTubeIcon,
 } from 'shared/components/icons.mjs'
 import { social } from 'config/social.mjs'
@@ -19,7 +19,7 @@ import { siteConfig } from 'site/site.config.mjs'
 const iconClasses = (color) => ({
   className: `w-8 lg:w-12 h-8 lg:h-12 text-${color} hover:text-neutral-content`,
 })
-
+console.log(social)
 export const socialList = (spectrum) => ({
   MSF: {
     icon: <MsfIcon {...iconClasses(spectrum[0])} fill />,
@@ -30,49 +30,49 @@ export const socialList = (spectrum) => ({
     name: 'Doctors Without Borders / Médecins Sans Frontières',
     community: false,
   },
-  Discord: {
-    icon: <DiscordIcon {...iconClasses(spectrum[1])} />,
-    href: social.Discord,
-    community: true,
-  },
-  Instagram: {
-    icon: <InstagramIcon {...iconClasses(spectrum[2])} />,
-    href: social.Instagram,
-    community: true,
-  },
-  Facebook: {
-    icon: <FacebookIcon {...iconClasses(spectrum[3])} />,
-    href: social.Facebook,
-    community: true,
-  },
   GitHub: {
-    icon: <GitHubIcon {...iconClasses(spectrum[4])} />,
+    icon: <GitHubIcon {...iconClasses(spectrum[1])} />,
     href: social.GitHub,
     community: true,
   },
-  Reddit: {
-    icon: <RedditIcon {...iconClasses(spectrum[5])} />,
-    href: social.Reddit,
+  Mastodon: {
+    icon: <MastodonIcon {...iconClasses(spectrum[2])} />,
+    href: social.Mastodon,
     community: true,
   },
-  Twitter: {
-    icon: <TwitterIcon {...iconClasses(spectrum[6])} />,
-    href: social.Twitter,
+  Instagram: {
+    icon: <InstagramIcon {...iconClasses(spectrum[3])} />,
+    href: social.Instagram,
     community: true,
   },
-  YouTube: {
-    icon: <YouTubeIcon {...iconClasses(spectrum[7])} fill stroke={0} />,
+  Bluesky: {
+    icon: <CloudIcon {...iconClasses(spectrum[4])} stroke={2} />,
     href: social.YouTube,
     community: true,
   },
-  'Open Souce License: MIT': {
-    icon: <OpenSourceIcon {...iconClasses(spectrum[8])} />,
-    href: 'https://github.com/freesewing/freesewing/blob/develop/LICENSE',
-    community: false,
+  Discord: {
+    icon: <DiscordIcon {...iconClasses(spectrum[5])} />,
+    href: social.Discord,
+    community: true,
   },
-  'Contact Information': {
-    icon: <HelpIcon {...iconClasses(spectrum[9])} />,
-    href: '/contact',
+  Facebook: {
+    icon: <FacebookIcon {...iconClasses(spectrum[6])} />,
+    href: social.Facebook,
+    community: true,
+  },
+  Reddit: {
+    icon: <RedditIcon {...iconClasses(spectrum[7])} />,
+    href: social.Reddit,
+    community: true,
+  },
+  YouTube: {
+    icon: <YouTubeIcon {...iconClasses(spectrum[8])} fill stroke={0} />,
+    href: social.YouTube,
+    community: true,
+  },
+  Support: {
+    icon: <HeartIcon {...iconClasses(spectrum[9])} fill stroke={0} />,
+    href: '/support',
     community: false,
   },
 })
