@@ -1,4 +1,5 @@
-import { nsMerge } from 'shared/utils.mjs'
+import { nsMerge, localePath } from 'shared/utils.mjs'
+import { siteConfig } from 'site/site.config.mjs'
 // Used in static paths
 import { pages } from 'site/prebuild/docs.en.mjs'
 // Dependencies
@@ -69,11 +70,11 @@ export async function getStaticProps({ locale, params }) {
  * To learn more, see: https://nextjs.org/docs/basic-features/data-fetching
  */
 export async function getStaticPaths() {
-  const somePaths = Object.keys(pages).filter((path) => path !== 'docs')
-  //.filter((path) => path.split('/').length < 5)
-
-  return {
-    paths: somePaths.map((key) => `/${key}`),
-    fallback: false,
+  const allSlugs = Object.keys(pages).filter((path) => path !== 'docs')
+  const paths = []
+  for (const lang of siteConfig.languages) {
+    paths.push(...allSlugs.map((slug) => localePath(lang, slug)))
   }
+
+  return { paths, fallback: false }
 }

@@ -47,10 +47,11 @@ export async function getStaticProps({ params, locale }) {
 }
 
 export const getStaticPaths = async () => {
-  return {
-    paths: getPostSlugPaths(posts),
-    fallback: 'blocking',
+  const paths = []
+  for (const lang in posts) {
+    paths.push(...Object.keys(posts[lang]).map((slug) => localePath(lang, slug)))
   }
+  return { paths, fallback: false }
 }
 
 export default BlogPage

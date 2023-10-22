@@ -54,6 +54,6 @@ export async function getStaticProps({ locale, params }) {
 export async function getStaticPaths() {
   return {
     paths: [...collection].map((design) => `/designs/${design}`),
-    fallback: 'blocking',
+    fallback: false,
   }
 }
