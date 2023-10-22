@@ -173,7 +173,7 @@ Assembling the hood:
  - Place the two main hood pieces together with _good sides together_, and serge/overlock along the center seam (the curved seam running from the back of the neck to the top of the head).
  - If using a front piece, place it against the back pieces with _good sides together_, and serge/overlock along the side seam (the straight seam going up one side, over the head, and down the other side).
 
-If using lining, do the following two steps, otherwise skip to the next paragraph about hemming.
+If using lining, do the following two steps, otherwise skip to step 5.
  - Repeat the previous steps to put together the lining pieces.
  - Place the lining assembly and the main hood assembly together with _good sides together_, and clip them together along the neck.
 
