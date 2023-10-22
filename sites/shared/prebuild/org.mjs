@@ -51,19 +51,19 @@ const vercel = {
   },
 }
 
-const generateRewriteConfig = async (designs) => {
-  const rewrites = []
-  for (const design of designs) {
-    rewrites.push({
-      source: `/account/patterns/${design}/:id/edit`,
-      destination: `/account/patterns/${design}/edit?id=:id`,
-    })
-  }
-  await fs.promises.writeFile(
-    path.resolve('..', 'org', 'vercel.json'),
-    JSON.stringify({ rewrites, ...vercel }, null, 2)
-  )
-}
+//const generateRewriteConfig = async (designs) => {
+//  const rewrites = []
+//  for (const design of designs) {
+//    rewrites.push({
+//      source: `/account/patterns/${design}/:id/edit`,
+//      destination: `/account/patterns/${design}/edit?id=:id`,
+//    })
+//  }
+//  await fs.promises.writeFile(
+//    path.resolve('..', 'org', 'vercel.json'),
+//    JSON.stringify({ rewrites, ...vercel }, null, 2)
+//  )
+//}
 
 export const prebuildOrg = async () => {
   await generateNewPatternPages(collection)

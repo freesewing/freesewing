@@ -1,6 +1,5 @@
 import { nsMerge, localePath } from 'shared/utils.mjs'
 import { pages as posts } from 'site/prebuild/showcase.mjs'
-import { getPostSlugPaths } from 'site/components/mdx/posts/utils.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { loadMdxAsStaticProps } from 'shared/mdx/load.mjs'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'

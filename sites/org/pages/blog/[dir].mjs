@@ -1,6 +1,5 @@
 import { nsMerge } from 'shared/utils.mjs'
 import { pages as posts } from 'site/prebuild/blog.mjs'
-import { getPostSlugPaths } from 'site/components/mdx/posts/utils.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { loadMdxAsStaticProps } from 'shared/mdx/load.mjs'
 import { PostLayout, ns as layoutNs } from 'site/components/layouts/post.mjs'
