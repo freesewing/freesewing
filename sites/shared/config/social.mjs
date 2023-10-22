@@ -6,5 +6,5 @@ export const social = {
   Facebook: 'https://www.facebook.com/groups/627769821272714/',
   GitHub: 'https://github.com/freesewing',
   Reddit: 'https://www.reddit.com/r/freesewing/',
-  Twitter: 'https://twitter.com/freesewing_org',
+  Mastodon: 'https://freesewing.social/@freesewing',
 }

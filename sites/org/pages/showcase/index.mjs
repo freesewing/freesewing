@@ -25,6 +25,7 @@ const count = Object.values(examples).reduce((acc, val) =>
  * when path and locale come from static props (as here)
  * or set them manually.
  */
+/* eslint-disable @next/next/no-img-element */
 const ShowcaseIndexPage = ({ page }) => {
   const { t } = useTranslation()
   const [filter, setFilter] = useFilter()
@@ -84,6 +85,7 @@ const ShowcaseIndexPage = ({ page }) => {
         {list.map((slug) => (
           <Link href={`/${slug}`} className="text-center" key={slug}>
             <img
+              alt={slug}
               src={cloudflareImageUrl({ id: slug.replace('/', '-'), variant: 'sq500' })}
               loading="lazy"
               className="rounded-lg w-full"

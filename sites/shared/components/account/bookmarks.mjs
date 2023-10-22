@@ -214,7 +214,10 @@ export const Bookmarks = () => {
                         />
                       </td>
                       <td className="text-base font-medium">
-                        <PageLink href={`/account/bookmarks/${bookmark.id}`} txt={bookmark.title} />
+                        <PageLink
+                          href={`/account/bookmark?id=${bookmark.id}`}
+                          txt={bookmark.title}
+                        />
                       </td>
                       <td className="text-base font-medium">
                         <WebLink

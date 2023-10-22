@@ -42,7 +42,7 @@ const AdminPage = ({ page }) => {
       <AuthWrapper requiredRole="admin">
         <p>
           Other admin links:
-          <PageLink href="/admin/cset" txt="Curated measurement sets" />
+          <PageLink href="/admin/csets" txt="Curated measurement sets" />
         </p>
         <h5>Search users</h5>
         <input

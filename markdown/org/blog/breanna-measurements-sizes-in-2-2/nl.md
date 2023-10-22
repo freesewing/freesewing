@@ -16,8 +16,6 @@ Even kijken wat dat allemaal betekent:
 
 ## Nieuw patroon: Breanna is een basiscorsage voor dameskleding
 
-<Linedrawing pattern="breanna" />
-
 We stellen je [Breanna](/designs/breanna/) voor, ons basiscorsage voor vrouwenkleding.
 
 Een basisvorm is misschien niet het spannendste patroon om naar te kijken, maar het speelt een belangrijke rol als vertrekpunt voor andere patronen.

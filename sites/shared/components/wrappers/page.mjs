@@ -14,7 +14,7 @@ import { DefaultLayout, ns as defaultLayoutNs } from 'site/components/layouts/de
 import { Feeds } from 'site/components/feeds.mjs'
 import { ModalContext } from 'shared/context/modal-context.mjs'
 
-export const ns = nsMerge(layoutNs, defaultLayoutNs, 'status')
+export const ns = nsMerge(layoutNs, defaultLayoutNs, 'status', 'hodl')
 
 /* This component should wrap all page content */
 export const PageWrapper = (props) => {
