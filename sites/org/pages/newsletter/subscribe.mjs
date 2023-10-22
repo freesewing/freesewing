@@ -11,7 +11,6 @@ import { LoadingStatusContext } from 'shared/context/loading-status-context.mjs'
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { PageLink } from 'shared/components/link.mjs'
-import { Loading } from 'shared/components/spinner.mjs'
 import { Hodl } from 'shared/components/hodl/index.mjs'
 
 // Translation namespaces used on this page
@@ -36,8 +35,8 @@ const NewsletterPage = ({ page }) => {
     const newId = getSearchParam('id')
     const newEhash = getSearchParam('ehash')
     if (newId !== id) setId(newId)
-    if (newEhash !== ehash) setId(newEhash)
-  }, [id])
+    if (newEhash !== ehash) setEhash(newEhash)
+  }, [id, ehash])
 
   const handler = async () => {
     setLoadingStatus([true, 'status:contactingBackend'])

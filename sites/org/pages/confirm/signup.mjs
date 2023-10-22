@@ -56,8 +56,8 @@ const ConfirmSignUpPage = () => {
     const newId = getSearchParam('id')
     const newCheck = getSearchParam('check')
     if (newId !== id) setId(newId)
-    if (newCheck !== check) setId(newCheck)
-  }, [id])
+    if (newCheck !== check) setCheck(newCheck)
+  }, [id, check])
 
   useEffect(() => {
     // Async inside useEffect requires this approach

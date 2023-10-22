@@ -4,7 +4,6 @@ import { nsMerge, getSearchParam } from 'shared/utils.mjs'
 // Hooks
 import { useEffect, useState } from 'react'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
-import { useRouter } from 'next/router'
 import { useTranslation } from 'next-i18next'
 // Components
 import { PageWrapper, ns as pageNs } from 'shared/components/wrappers/page.mjs'
@@ -19,10 +18,6 @@ const ns = nsMerge(pageNs, layoutNs, 'confirm', 'locales', 'themes')
 const SignupLinkExpired = () => <Popout fixme>Implement SignupLinkExpired compnonent</Popout>
 
 const ActiveSignUpPage = () => {
-  const router = useRouter()
-  // Get confirmation ID and check from url
-  //const [confirmationId, confirmationCheck] = router.asPath.slice(1).split('/').slice(2)
-
   const backend = useBackend()
   const { t } = useTranslation(ns)
 
@@ -34,8 +29,8 @@ const ActiveSignUpPage = () => {
     const newId = getSearchParam('id')
     const newCheck = getSearchParam('check')
     if (newId !== id) setId(newId)
-    if (newCheck !== check) setId(newCheck)
-  }, [id])
+    if (newCheck !== check) setCheck(newCheck)
+  }, [id, check])
 
   useEffect(() => {
     // Async inside useEffect requires this approach

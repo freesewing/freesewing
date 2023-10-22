@@ -2,7 +2,7 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge, getSearchParam } from 'shared/utils.mjs'
 // Hooks
-import { useState, useContext } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { useTranslation } from 'next-i18next'
 import { useBackend } from 'shared/hooks/use-backend.mjs'
 // Context
@@ -22,12 +22,21 @@ const namespaces = nsMerge(pageNs, 'newsletter')
  * when path and locale come from static props (as here)
  * or set them manually.
  */
-const NewsletterPage = ({ page, id, ehash }) => {
+const NewsletterPage = ({ page }) => {
   const { t } = useTranslation(namespaces)
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
 
   const [confirmed, setConfirmed] = useState(false)
+  const [id, setId] = useState()
+  const [ehash, setEhash] = useState()
+
+  useEffect(() => {
+    const newId = getSearchParam('id')
+    const newEhash = getSearchParam('ehash')
+    if (newId !== id) setId(newId)
+    if (newEhash !== ehash) setEhash(newEhash)
+  }, [id, ehash])
 
   const handler = async () => {
     setLoadingStatus([true, 'status:contactingBackend'])
