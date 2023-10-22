@@ -35,10 +35,15 @@ const DynamicPattern = dynamic(
  */
 const PatternPage = ({ page }) => {
   const { t } = useTranslation(ns)
-  const id = getSearchParam('id')
+  const [id, setId] = useState()
+
+  useEffect(() => {
+    const newId = getSearchParam('id')
+    if (newId !== id) setId(newId)
+  }, [id])
 
   return (
-    <PageWrapper {...page} path={['account', 'patterns', id]} title={`${t('patterns')}: #${id}`}>
+    <PageWrapper {...page} title={`${t('patterns')}: #${id}`}>
       <DynamicAuthWrapper>
         <DynamicPattern id={id} />
       </DynamicAuthWrapper>
@@ -54,7 +59,7 @@ export async function getStaticProps({ locale }) {
       ...(await serverSideTranslations(locale, ns)),
       page: {
         locale,
-        path: ['account', 'patterns'],
+        path: ['account', 'pattern'],
       },
     },
   }

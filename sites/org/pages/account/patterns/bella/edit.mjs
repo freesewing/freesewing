@@ -48,7 +48,7 @@ const EditBellaPage = ({ page }) => {
     }
     const id = getSearchParam('id')
     if (id) getPattern()
-  }, [])
+  }, [backend, setLoadingStatus, t])
 
   return (
     // prettier-ignore

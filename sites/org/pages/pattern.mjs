@@ -38,7 +38,7 @@ const PatternPage = ({ page }) => {
   }, [id])
 
   return (
-    <PageWrapper {...page} path={['patterns', id]} title={`${t('patterns')}: #${id}`}>
+    <PageWrapper {...page} title={`${t('patterns')}: #${id}`}>
       <DynamicPattern id={id} />
     </PageWrapper>
   )
@@ -52,7 +52,7 @@ export async function getStaticProps({ locale }) {
       ...(await serverSideTranslations(locale, ns)),
       page: {
         locale,
-        path: ['account', 'patterns'],
+        path: ['account', 'pattern'],
       },
     },
   }
