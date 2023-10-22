@@ -20,11 +20,11 @@ import { Loading } from 'shared/components/spinner.mjs'
 // Translation namespaces used on this page
 const ns = nsMerge('trayvon', wbNs, pageNs)
 
-const EditDesignComponent = ({ id, design, Design, settings, docs }) => (
-  <Workbench preload={{ settings }} saveAs={{ pattern: id }} {...{ design, Design, docs }} />
+const EditDesignComponent = ({ id, design, Design, settings }) => (
+  <Workbench preload={{ settings }} saveAs={{ pattern: id }} {...{ design, Design }} />
 )
 
-const EditTrayvonPage = ({ page, docs, id }) => {
+const EditTrayvonPage = ({ page }) => {
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
   const { t } = useTranslation(ns)
@@ -59,7 +59,6 @@ const EditTrayvonPage = ({ page, docs, id }) => {
           settings={pattern.settings}
           design="trayvon"
           Design={Trayvon}
-          docs={docs}
         />
       ) : (
         <div>
