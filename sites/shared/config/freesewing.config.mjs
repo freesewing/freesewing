@@ -43,7 +43,6 @@ export const freeSewingConfig = {
         instagram: 3,
         mastodon: 3,
         reddit: 3,
-        twitter: 3,
         twitch: 3,
         tiktok: 3,
         website: 3,

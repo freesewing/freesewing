@@ -1,7 +1,7 @@
 /*
  * This page is auto-generated. Do not edit it by hand.
  */
-import { $$Design$$ } from 'designs/$$design$$/src/index.mjs'
+import { Sandy } from 'designs/sandy/src/index.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge, getSearchParam } from 'shared/utils.mjs'
@@ -18,13 +18,13 @@ import { WorkbenchLayout } from 'site/components/layouts/workbench.mjs'
 import { Loading } from 'shared/components/spinner.mjs'
 
 // Translation namespaces used on this page
-const ns = nsMerge('$$design$$', wbNs, pageNs)
+const ns = nsMerge('sandy', wbNs, pageNs)
 
 const EditDesignComponent = ({ id, design, Design, settings }) => (
   <Workbench preload={{ settings }} saveAs={{ pattern: id }} {...{ design, Design }} />
 )
 
-const Edit$$Design$$Page = ({ page }) => {
+const EditSandyPage = ({ page }) => {
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
   const { t } = useTranslation(ns)
@@ -52,13 +52,13 @@ const Edit$$Design$$Page = ({ page }) => {
 
   return (
     // prettier-ignore
-    <PageWrapper {...page} title="$$Design$$" layout={pattern ? WorkbenchLayout : false} header={null}>
+    <PageWrapper {...page} title="Sandy" layout={pattern ? WorkbenchLayout : false} header={null}>
       {pattern ? (
         <EditDesignComponent
           id={pattern.id}
           settings={pattern.settings}
-          design="$$design$$"
-          Design={$$Design$$}
+          design="sandy"
+          Design={Sandy}
         />
       ) : (
         <div>
@@ -70,7 +70,7 @@ const Edit$$Design$$Page = ({ page }) => {
   )
 }
 
-export default Edit$$Design$$Page
+export default EditSandyPage
 
 export async function getStaticProps({ locale }) {
   return {
@@ -78,8 +78,8 @@ export async function getStaticProps({ locale }) {
       ...(await serverSideTranslations(locale, ns)),
       page: {
         locale,
-        path: ['account', 'patterns', '$$design$$'],
-        title: '$$Design$$',
+        path: ['account', 'patterns', 'sandy'],
+        title: 'Sandy',
       },
     },
   }

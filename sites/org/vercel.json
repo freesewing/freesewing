@@ -1,0 +1,200 @@
+{
+  "rewrites": [
+    {
+      "source": "/account/patterns/aaron/:id/edit",
+      "destination": "/account/patterns/aaron/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/albert/:id/edit",
+      "destination": "/account/patterns/albert/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/bee/:id/edit",
+      "destination": "/account/patterns/bee/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/bella/:id/edit",
+      "destination": "/account/patterns/bella/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/benjamin/:id/edit",
+      "destination": "/account/patterns/benjamin/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/bent/:id/edit",
+      "destination": "/account/patterns/bent/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/bob/:id/edit",
+      "destination": "/account/patterns/bob/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/breanna/:id/edit",
+      "destination": "/account/patterns/breanna/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/brian/:id/edit",
+      "destination": "/account/patterns/brian/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/bruce/:id/edit",
+      "destination": "/account/patterns/bruce/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/carlita/:id/edit",
+      "destination": "/account/patterns/carlita/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/carlton/:id/edit",
+      "destination": "/account/patterns/carlton/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/cathrin/:id/edit",
+      "destination": "/account/patterns/cathrin/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/charlie/:id/edit",
+      "destination": "/account/patterns/charlie/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/cornelius/:id/edit",
+      "destination": "/account/patterns/cornelius/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/diana/:id/edit",
+      "destination": "/account/patterns/diana/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/florence/:id/edit",
+      "destination": "/account/patterns/florence/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/florent/:id/edit",
+      "destination": "/account/patterns/florent/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/gozer/:id/edit",
+      "destination": "/account/patterns/gozer/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/hi/:id/edit",
+      "destination": "/account/patterns/hi/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/holmes/:id/edit",
+      "destination": "/account/patterns/holmes/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/hortensia/:id/edit",
+      "destination": "/account/patterns/hortensia/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/huey/:id/edit",
+      "destination": "/account/patterns/huey/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/hugo/:id/edit",
+      "destination": "/account/patterns/hugo/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/jaeger/:id/edit",
+      "destination": "/account/patterns/jaeger/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/lucy/:id/edit",
+      "destination": "/account/patterns/lucy/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/lunetius/:id/edit",
+      "destination": "/account/patterns/lunetius/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/noble/:id/edit",
+      "destination": "/account/patterns/noble/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/octoplushy/:id/edit",
+      "destination": "/account/patterns/octoplushy/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/paco/:id/edit",
+      "destination": "/account/patterns/paco/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/penelope/:id/edit",
+      "destination": "/account/patterns/penelope/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/sandy/:id/edit",
+      "destination": "/account/patterns/sandy/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/shelly/:id/edit",
+      "destination": "/account/patterns/shelly/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/shin/:id/edit",
+      "destination": "/account/patterns/shin/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/simon/:id/edit",
+      "destination": "/account/patterns/simon/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/simone/:id/edit",
+      "destination": "/account/patterns/simone/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/skully/:id/edit",
+      "destination": "/account/patterns/skully/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/sven/:id/edit",
+      "destination": "/account/patterns/sven/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/tamiko/:id/edit",
+      "destination": "/account/patterns/tamiko/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/teagan/:id/edit",
+      "destination": "/account/patterns/teagan/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/tiberius/:id/edit",
+      "destination": "/account/patterns/tiberius/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/titan/:id/edit",
+      "destination": "/account/patterns/titan/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/trayvon/:id/edit",
+      "destination": "/account/patterns/trayvon/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/uma/:id/edit",
+      "destination": "/account/patterns/uma/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/wahid/:id/edit",
+      "destination": "/account/patterns/wahid/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/walburga/:id/edit",
+      "destination": "/account/patterns/walburga/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/waralee/:id/edit",
+      "destination": "/account/patterns/waralee/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/yuri/:id/edit",
+      "destination": "/account/patterns/yuri/edit?id=:id"
+    },
+    {
+      "source": "/account/patterns/otis/:id/edit",
+      "destination": "/account/patterns/otis/edit?id=:id"
+    }
+  ]
+}
