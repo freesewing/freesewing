@@ -1,4 +1,4 @@
-import { nsMerge } from 'shared/utils.mjs'
+import { nsMerge, localePath } from 'shared/utils.mjs'
 import { pages as posts } from 'site/prebuild/blog.mjs'
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { loadMdxAsStaticProps } from 'shared/mdx/load.mjs'
