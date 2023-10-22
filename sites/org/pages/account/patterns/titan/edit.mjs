@@ -1,7 +1,7 @@
 /*
  * This page is auto-generated. Do not edit it by hand.
  */
-import { $$Design$$ } from 'designs/$$design$$/src/index.mjs'
+import { Titan } from 'designs/titan/src/index.mjs'
 // Dependencies
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { nsMerge, getSearchParam } from 'shared/utils.mjs'
@@ -18,13 +18,13 @@ import { WorkbenchLayout } from 'site/components/layouts/workbench.mjs'
 import { Loading } from 'shared/components/spinner.mjs'
 
 // Translation namespaces used on this page
-const ns = nsMerge('$$design$$', wbNs, pageNs)
+const ns = nsMerge('titan', wbNs, pageNs)
 
 const EditDesignComponent = ({ id, design, Design, settings, docs }) => (
   <Workbench preload={{ settings }} saveAs={{ pattern: id }} {...{ design, Design, docs }} />
 )
 
-const Edit$$Design$$Page = ({ page, docs, id }) => {
+const EditTitanPage = ({ page, docs, id }) => {
   const { setLoadingStatus } = useContext(LoadingStatusContext)
   const backend = useBackend()
   const { t } = useTranslation(ns)
@@ -52,13 +52,13 @@ const Edit$$Design$$Page = ({ page, docs, id }) => {
 
   return (
     // prettier-ignore
-    <PageWrapper {...page} title="$$Design$$" layout={pattern ? WorkbenchLayout : false} header={null}>
+    <PageWrapper {...page} title="Titan" layout={pattern ? WorkbenchLayout : false} header={null}>
       {pattern ? (
         <EditDesignComponent
           id={pattern.id}
           settings={pattern.settings}
-          design="$$design$$"
-          Design={$$Design$$}
+          design="titan"
+          Design={Titan}
           docs={docs}
         />
       ) : (
@@ -71,7 +71,7 @@ const Edit$$Design$$Page = ({ page, docs, id }) => {
   )
 }
 
-export default Edit$$Design$$Page
+export default EditTitanPage
 
 export async function getStaticProps({ locale }) {
   return {
@@ -79,8 +79,8 @@ export async function getStaticProps({ locale }) {
       ...(await serverSideTranslations(locale, ns)),
       page: {
         locale,
-        path: ['account', 'patterns', '$$design$$'],
-        title: '$$Design$$',
+        path: ['account', 'patterns', 'titan'],
+        title: 'Titan',
       },
     },
   }

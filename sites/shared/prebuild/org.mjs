@@ -30,7 +30,7 @@ export const generateNewPatternPages = async (designs, site = 'org') => {
 const generateEditPatternPages = async (designs, site = 'org') => {
   const page = await loadPageTemplate('edit-pattern.mjs')
   for (const design of designs) {
-    const dir = `../${site}/pages/account/patterns/${design}/[id]`
+    const dir = `../${site}/pages/account/patterns/${design}`
     await fs.promises.mkdir(path.resolve(dir), { recursive: true })
     await fs.promises.writeFile(
       path.resolve(`${dir}/edit.mjs`),
@@ -42,7 +42,22 @@ const generateEditPatternPages = async (designs, site = 'org') => {
   }
 }
 
+const generateRewriteConfig = async (designs) => {
+  const rewrites = []
+  for (const design of designs) {
+    rewrites.push({
+      source: `/account/patterns/${design}/:id/edit`,
+      destination: `/account/patterns/${design}/edit?id=:id`,
+    })
+  }
+  await fs.promises.writeFile(
+    path.resolve('..', 'org', 'vercel.json'),
+    JSON.stringify({ rewrites }, null, 2)
+  )
+}
+
 export const prebuildOrg = async () => {
   await generateNewPatternPages(collection)
   await generateEditPatternPages(collection)
+  await generateRewriteConfig(collection)
 }

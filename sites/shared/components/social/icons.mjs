@@ -19,7 +19,7 @@ import { siteConfig } from 'site/site.config.mjs'
 const iconClasses = (color) => ({
   className: `w-8 lg:w-12 h-8 lg:h-12 text-${color} hover:text-neutral-content`,
 })
-console.log(social)
+
 export const socialList = (spectrum) => ({
   MSF: {
     icon: <MsfIcon {...iconClasses(spectrum[0])} fill />,
