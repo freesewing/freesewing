@@ -100,10 +100,18 @@ async function addDesign() {
   If you change any of these, run ${chalk.blue('yarn reconfigure')} to update the package(s).
 
 
+  ${chalk.bold.yellow('⚒️  Build packages at least once')}
+  ${chalk.gray('≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡')}
+
+  ⚠️   You need to run ${chalk.blue('yarn buildall')} at least once before you run the steps below.
+      ${chalk.gray(`If you have never built the packages (for example, you have just cloned this repo),
+      do this now. You only need to re-run this step when you make changes to core plugins`)}
+
+
   ${chalk.bold.yellow('👷 Get to work')}
   ${chalk.gray('≡≡≡≡≡≡≡≡≡≡≡≡≡≡')}
 
-  🛠️   You can now start the development environment with ${chalk.blue('yarn lab')}
+  🚀  You can now start the development environment with ${chalk.blue('yarn lab')}
   📖  Documentation is available at ${chalk.green('https://freesewing.dev/')}
   🤓  Happy hacking
 
