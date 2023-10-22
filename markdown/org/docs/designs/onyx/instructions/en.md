@@ -169,7 +169,8 @@ Note: It's not possible to hide this seam in between the lining and the fashion 
  - Turn the neckband over. It should lay flat.
 
 ### Step 4b: Constructing and attaching the hood
-Assembling the hood:
+
+##### Assembling the hood:
  - Place the two main hood pieces together with _good sides together_, and serge/overlock along the center seam (the curved seam running from the back of the neck to the top of the head).
  - If using a front piece, place it against the back pieces with _good sides together_, and serge/overlock along the side seam (the straight seam going up one side, over the head, and down the other side).
 
@@ -177,8 +178,7 @@ If using lining, do the following two steps, otherwise skip to attaching the hoo
  - Repeat the previous steps to put together the lining pieces.
  - Place the lining assembly and the main hood assembly together with _wrong sides together_, and clip them together along the neck.
 
-##### Attaching the hood
-
+##### Attaching the hood:
  - Lay the garment down _right-side-out_.
  - Place the hood around the neckline, with _good sides together_.
  - Clip the two ends of the hood to the slit in the front where the zipper will go, and clip the back seam of the hood to the middle of the back body piece.
