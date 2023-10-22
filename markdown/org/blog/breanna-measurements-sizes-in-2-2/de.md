@@ -16,8 +16,6 @@ Schauen wir uns an, was das im Einzelnen bedeutet:
 
 ## Neues Schnittmuster: Breanna ist ein Grundschnittblock für Damenoberbekleidung
 
-<Linedrawing pattern="breanna" />
-
 Schauen Sie sich [Breanna](/designs/breanna/), unser Grundschnittblock für Damenoberbekleidung an.
 
 Ein Grundschnittblock ist vielleicht nicht das aufregendste Schnittmuster, das es gibt, aber er spielt eine wichtige Rolle, da er die Grundform ist, auf der andere Schnittmuster aufgebaut sind.

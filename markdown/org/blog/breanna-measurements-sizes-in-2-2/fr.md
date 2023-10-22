@@ -16,8 +16,6 @@ Voyons ce que cela signifie :
 
 ## Nouveau modèle : Breanna est un bloc de corsage pour les vêtements féminins.
 
-<Linedrawing pattern="breanna" />
-
 Rencontre [Breanna](/designs/breanna/), notre bloc de corsage pour les vêtements féminins.
 
 Un bloc (ou sloper) n'est peut-être pas le motif le plus excitant à regarder, mais il joue un rôle important car c'est la forme de base sur laquelle les autres motifs sont construits.
