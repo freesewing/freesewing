@@ -42,6 +42,15 @@ const generateEditPatternPages = async (designs, site = 'org') => {
   }
 }
 
+const vercel = {
+  git: {
+    deploymentEnabled: {
+      i18n: false,
+      producionBackend: false,
+    },
+  },
+}
+
 const generateRewriteConfig = async (designs) => {
   const rewrites = []
   for (const design of designs) {
@@ -52,12 +61,12 @@ const generateRewriteConfig = async (designs) => {
   }
   await fs.promises.writeFile(
     path.resolve('..', 'org', 'vercel.json'),
-    JSON.stringify({ rewrites }, null, 2)
+    JSON.stringify({ rewrites, ...vercel }, null, 2)
   )
 }
 
 export const prebuildOrg = async () => {
   await generateNewPatternPages(collection)
   await generateEditPatternPages(collection)
-  await generateRewriteConfig(collection)
+  //await generateRewriteConfig(collection)
 }
