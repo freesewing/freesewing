@@ -42,14 +42,14 @@ const generateEditPatternPages = async (designs, site = 'org') => {
   }
 }
 
-const vercel = {
-  git: {
-    deploymentEnabled: {
-      i18n: false,
-      producionBackend: false,
-    },
-  },
-}
+//const vercel = {
+//  git: {
+//    deploymentEnabled: {
+//      i18n: false,
+//      producionBackend: false,
+//    },
+//  },
+//}
 
 //const generateRewriteConfig = async (designs) => {
 //  const rewrites = []
