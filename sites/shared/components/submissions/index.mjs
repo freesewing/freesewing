@@ -176,7 +176,7 @@ export const CsetSubmission = ({ id }) => {
     console.log(result)
     if (result.success) {
       setLoadingStatus([true, 'status:nailedIt', true, true])
-      router.push(`/curated-sets/${result.data.set.id}`)
+      router.push(`/curated-set?id=${result.data.set.id}`)
     } else setLoadingStatus([true, 'backendError', true, false])
   }
 
