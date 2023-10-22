@@ -30,9 +30,11 @@ const textShadow = {
   },
 }
 
+/* eslint-disable @next/next/no-img-element */
 export const BlogPreview = ({ post }) => (
   <Link href={`/${post.s}`} className="aspect-video relative">
     <img
+      alt={post.caption}
       src={cloudflareImageUrl({ id: post.s.replace('/', '-'), variant: 'w1000' })}
       loading="lazy"
       className="rounded md:rounded-lg top-0 left-0"

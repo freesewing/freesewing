@@ -17,9 +17,10 @@ const namespaces = nsMerge(pageNs, 'patrons')
  * FIXME: This entire page needs to be adapted once we
  * migrate users from v2 to v3
  */
+/* eslint-disable @next/next/no-img-element */
 const Patron = ({ patron }) => (
   <div className="w-full text-center">
-    <img src={patron.img} className="rounded-lg" />
+    <img src={patron.img} alt={patron.username} className="rounded-lg" />
     <span className="font-medium text-sm">{patron.username}</span>
   </div>
 )
