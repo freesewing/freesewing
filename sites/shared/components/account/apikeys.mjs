@@ -14,7 +14,7 @@ import { useRouter } from 'next/router'
 import { BackToAccountButton, DisplayRow, NumberBullet } from './shared.mjs'
 import { Popout } from 'shared/components/popout/index.mjs'
 import { LeftIcon, PlusIcon, CopyIcon, RightIcon, TrashIcon } from 'shared/components/icons.mjs'
-import { PageLink, Link, linkClasses } from 'shared/components/link.mjs'
+import { Link, linkClasses } from 'shared/components/link.mjs'
 import { StringInput, ListInput, FormControl } from 'shared/components/inputs.mjs'
 import { DynamicMdx } from 'shared/components/mdx/dynamic.mjs'
 
