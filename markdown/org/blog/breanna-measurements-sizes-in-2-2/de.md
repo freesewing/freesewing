@@ -16,8 +16,6 @@ Schauen wir uns an, was das im Einzelnen bedeutet:
 
 ## Neues Schnittmuster: Breanna ist ein Grundschnittblock für Damenoberbekleidung
 
-<Linedrawing pattern="breanna" />
-
 Schauen Sie sich [Breanna](/designs/breanna/), unser Grundschnittblock für Damenoberbekleidung an.
 
 Ein Grundschnittblock ist vielleicht nicht das aufregendste Schnittmuster, das es gibt, aber er spielt eine wichtige Rolle, da er die Grundform ist, auf der andere Schnittmuster aufgebaut sind.
@@ -41,7 +39,7 @@ Wir haben uns für den High-Point Shoulder, den sogenannten HPS-Punkt, als Grund
 
 ### Wir haben die Messung "Mitte Rücken zum Nacken" eingestellt
 
-Wie bereits erwähnt, verwenden wir die Messungen vom HPS-Punkt jetzt für die vertikalen Rumpfmessungen . Aus diesem Grund haben wir die alte *Rückenmitte Nacken bis Taille* Messung eingestellt.
+Wie bereits erwähnt, verwenden wir die Messungen vom HPS-Punkt jetzt für die vertikalen Rumpfmessungen . Aus diesem Grund haben wir die alte *Rückenmitte Nacken bis Taille* Messung eingestellt. Aus diesem Grund haben wir die alte *Rückenmitte Nacken bis Taille* Messung eingestellt.
 
 Da dieses Maß nun wegfällt, musst du für bestimmte Muster eventuell ein weiteres Maß hinzufügen.
 
