@@ -73,7 +73,7 @@ export const NewSet = () => {
     const result = await backend.createSet({ name })
     if (result.success) {
       setLoadingStatus([true, t('nailedIt'), true, true])
-      router.push(`/account/sets/${result.data.set.id}`)
+      router.push(`/account/set?id=${result.data.set.id}`)
     } else setLoadingStatus([true, 'backendError', true, false])
   }
 
