@@ -427,7 +427,7 @@ export const Mset = ({ id, publicOnly = false }) => {
             </DisplayRow>
             {mset.public && (
               <DisplayRow title={t('permalink')}>
-                <PageLink href={`/sets/${mset.id}`} txt={`/sets/${mset.id}`} />
+                <PageLink href={`/set?id=${mset.id}`} txt={`/set?id=${mset.id}`} />
               </DisplayRow>
             )}
           </>
@@ -746,7 +746,7 @@ export const Sets = () => {
               />
             </label>
             <div className="w-full">
-              <MsetCard control={control} href={`/account/sets/${set.id}`} set={set} size="md" />
+              <MsetCard control={control} href={`/account/set?id=${set.id}`} set={set} size="md" />
             </div>
           </div>
         ))}
