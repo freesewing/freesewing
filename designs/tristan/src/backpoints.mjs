@@ -1,68 +1,105 @@
-import { back as bellaBack } from '@freesewing/bella'
+import { backPoints as nobleBackPoints } from '@freesewing/noble'
 import { hidePresets } from '@freesewing/core'
 import * as options from './options.mjs'
+import { frontPoints } from './frontpoints.mjs'
 
 export const backPoints = {
-  name: 'noble.backPoints',
-  from: bellaBack,
+  name: 'tristan.backPoints',
+  from: nobleBackPoints,
+  after: frontPoints,
   hide: hidePresets.HIDE_ALL,
   options,
-  draft: ({ points, Path, paths, options, snippets, log, part }) => {
-    // Hide Bella paths
+  draft: ({ points, Path, paths, options, snippets, log, store, part }) => {
+    // Hide Noble paths
     for (const key of Object.keys(paths)) paths[key].hide()
     for (const i in snippets) delete snippets[i]
 
     delete points.bustDartLeft
     delete points.bustDartLeftCp
 
-    points.shoulderDart = points.hps.shiftFractionTowards(
-      points.shoulder,
-      options.shoulderDartPosition
+    const strapWidth = store.get('strapWidth')
+
+    console.log({ BP_options: JSON.parse(JSON.stringify(options)) })
+    console.log({ BP_points: JSON.parse(JSON.stringify(points)) })
+    console.log({ BP_paths: JSON.parse(JSON.stringify(paths)) })
+
+    points.strapInside = points.shoulderDart.shiftTowards(points.hps, strapWidth / 2)
+    points.strapOutside = points.shoulderDart.shiftTowards(points.shoulder, strapWidth / 2)
+
+    points.shoulder = points.strapOutside
+
+    // points.cbCut = points.cbNeck.shiftFractionTowards(points.waistCenter, options.cutDepthBack)
+    points.cbCut = new Path()
+      .move(points.cbNeck)
+      .curve_(points.cbNeckCp2, points.waistCenter)
+      .shiftFractionAlong(options.cutDepthBack)
+
+    points.cbCutCp2 = new Path()
+      .move(points.cbNeck)
+      .curve_(points.cbNeckCp2, points.waistCenter)
+      .split(points.cbCut)[1].ops[1].cp2
+
+    points.cutSeamInside = new Path()
+      .move(points.dartBottomLeft)
+      .curve(points.dartLeftCp, points.shoulderDartCpDown, points.dartTip)
+      .curve(points.shoulderDartCpUp, points.shoulderDart, points.shoulderDart)
+      .intersectsY(points.cbCut.y)[0]
+
+    points.cutSeamOutside = new Path()
+      .move(points.shoulderDart)
+      .curve(points.shoulderDart, points.shoulderDartCpUp, points.dartTip)
+      .curve(points.shoulderDartCpDown, points.dartRightCp, points.dartBottomRight)
+      .intersectsY(points.cbCut.y)[0]
+
+    points.cbCutCp = points.cbCut.shiftFractionTowards(
+      points.cutSeamInside,
+      1 - options.cutRoundnessBack
     )
 
-    const aUp = points.dartTip.angle(points.shoulderDart)
-    const aDown = points.dartBottomRight.angle(points.dartTip)
-    const aDiff = Math.abs(aUp - aDown)
-
-    // let dartCpAdjustment = Math.abs( options.shoulderDartPosition -.5) +.05
-    const dartCpAdjustment = aDiff / 50
-
-    points.shoulderDartCpUp = points.shoulderDart.shiftFractionTowards(
-      points.dartTip,
-      1 - dartCpAdjustment
-    )
-    points.shoulderDartCpDown = points.shoulderDart.shiftFractionTowards(
-      points.dartTip,
-      1 + dartCpAdjustment
+    points.strapInsideCp = points.strapInside.shiftFractionTowards(
+      points.cutSeamInside.shift(
+        points.cutSeamInside.angle(points.shoulderDart) + 90,
+        strapWidth / 2
+      ),
+      1 - options.cutRoundnessBack
     )
 
-    const length = {
-      i: new Path()
-        .move(points.dartBottomLeft)
-        .curve(points.dartLeftCp, points.shoulderDartCpDown, points.dartTip)
-        .curve(points.shoulderDartCpUp, points.shoulderDart, points.shoulderDart)
-        .length(),
-    }
+    points.armholeCutCp = points.armhole.shiftFractionTowards(
+      points.cutSeamOutside,
+      1 - options.cutRoundnessBack
+    )
 
-    let iteration = 0
-    let diff = 0
-    let angle = 0
-    do {
-      if (length.o) angle = diff * (length.o > length.i ? -0.1 : 0.1)
+    points.strapOutsideCp = points.strapOutside.shiftFractionTowards(
+      points.cutSeamOutside.shift(
+        points.cutSeamOutside.angle(points.shoulderDart) - 90,
+        strapWidth / 2
+      ),
+      1 - options.cutRoundnessBack
+    )
 
-      points.dartBottomRight = points.dartBottomRight.rotate(angle, points.waistSide)
+    const armHole = new Path()
+      .move(points.armhole)
+      .curve(points.armholeCp2, points.armholePitchCp1, points.armholePitch)
+      .curve_(points.armholePitchCp2, points.shoulder)
 
-      length.o = new Path()
-        .move(points.shoulderDart)
-        .curve(points.shoulderDart, points.shoulderDartCpUp, points.dartTip)
-        .curve(points.shoulderDartCpDown, points.dartRightCp, points.dartBottomRight)
-        .length()
+    console.log({
+      intersects: armHole.intersects(
+        new Path()
+          .move(points.strapOutside)
+          .curve(points.strapOutsideCp, points.armholeCutCp, points.armhole)
+      ).length,
+    })
 
-      diff = length.o - length.i
-      iteration++
-    } while (diff < -0.5 || (diff > 0.5 && iteration < 100))
-    if (iteration >= 100) {
-      log.error('Something is not quite right here!')
+    var iter = 0
+    while (
+      armHole.intersects(
+        new Path()
+          .move(points.strapOutside)
+          .curve(points.strapOutsideCp, points.armholeCutCp, points.armhole)
+      ).length != 0 &&
+      ++iter < 250
+    ) {
+      points.armholeCutCp = points.armholeCutCp.shiftFractionTowards(points.cutSeamOutside, 0.05)
     }
 
     return part

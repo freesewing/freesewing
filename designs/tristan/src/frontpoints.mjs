@@ -8,14 +8,14 @@ export const frontPoints = {
   from: nobleFrontPoints,
   hide: hidePresets.HIDE_ALL,
   options,
-  draft: ({ log, points, Path, paths, snippets, options, macro, utils, part }) => {
+  draft: ({ log, points, Path, paths, snippets, options, macro, utils, store, part }) => {
     const bCircle = 0.552284749831
 
-    // Hide Bella paths
+    // Hide Noble paths
     for (const key of Object.keys(paths)) paths[key].hide()
     for (const i in snippets) delete snippets[i]
 
-    // Remove macros from Bella
+    // Remove macros from Noble
     macro('rmtitle')
     macro('rmscalebox')
 
@@ -33,6 +33,7 @@ export const frontPoints = {
     if (strapWidth / 2 > shoulderWidthOutside) {
       strapWidth = shoulderWidthOutside * 2
     }
+    store.set('strapWidth', strapWidth)
 
     console.log({ options: JSON.parse(JSON.stringify(options)) })
     console.log({ paths: JSON.parse(JSON.stringify(paths)) })
