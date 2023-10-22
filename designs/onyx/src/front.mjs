@@ -6,7 +6,6 @@ function draftFront({
   Point,
   paths,
   points,
-  measurements,
   options,
   part,
   store,
@@ -20,7 +19,6 @@ function draftFront({
   const raglanAngle = store.get('raglanAngle')
   const neckRadius = store.get('neckRadius')
   const verticalTrunk = store.get('verticalTrunk')
-  const crotchGussetWidth = store.get('crotchGussetWidth')
   const zipperLength = verticalTrunk * options.zipperLength
 
   //  points.neckCenter = points.raglanCenter.shift(270, options.neckBalance * neckRadius)

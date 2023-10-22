@@ -13,8 +13,6 @@ function draftSleeveRibbing({
   complete,
   sa,
   macro,
-  snippets,
-  Snippet,
 }) {
   if (!options.sleeveRibbing) return part.hide()
 

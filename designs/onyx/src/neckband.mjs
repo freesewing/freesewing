@@ -7,7 +7,6 @@ function draftNeckband({
   Point,
   paths,
   points,
-  measurements,
   options,
   absoluteOptions,
   part,
@@ -16,8 +15,6 @@ function draftNeckband({
   complete,
   sa,
   macro,
-  snippets,
-  Snippet,
 }) {
   if (options.neckStyle != 'neckband') return part.hide()
 

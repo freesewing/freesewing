@@ -19,19 +19,12 @@ function draftHoodFront({
   macro,
   snippets,
   Snippet,
+  scale,
 }) {
   // Note: Very small values of options.hoodFrontPieceSize cause crashes for unknown reasons if we attempt to draw the part.
   if (options.neckStyle != 'hood' || options.hoodFrontPieceSize < 0.001) return part.hide()
 
-  // Drafter's notes:
-  // - Todo: On the main hood piece, implement the options for hood length and height.
-  // Hood can be in either 3 pieces (front, left, right), or 2 pieces (left, right). 3-piece construction allows for insertion of ears or other decorations.
-
-  // Half the length around the neck of the hood. This is similar to the calculation for the length of a neckband, but the hood is not pre-stretched.
-  const neckHalfCircumference =
-    store.get('neckLengthFront') + store.get('neckLengthBack') + store.get('neckLengthSide')
   const neckRadius = store.get('neckRadius')
-  const frontDip = neckRadius * options.neckBalance
   const curveDip = store.get('hoodFrontPieceCurve')
   const neckLength = store.get('hoodFrontPieceNeckLength')
 
@@ -173,6 +166,8 @@ function draftHoodFront({
   if (complete) {
     points.title = new Point((points.frontBottom.x * 7) / 8, points.frontBottom.y / 2)
     macro('title', { at: points.title, nr: 8, title: 'hoodFront' })
+    points.logo = points.title.shift(-90, 70 * scale)
+    snippets.logo = new Snippet('logo', points.logo)
 
     if (sa) {
       paths.sa = paths.saHem

@@ -6,7 +6,6 @@ function draftCrotchGusset({
   Point,
   paths,
   points,
-  measurements,
   options,
   absoluteOptions,
   part,
@@ -17,6 +16,7 @@ function draftCrotchGusset({
   macro,
   snippets,
   Snippet,
+  scale,
 }) {
   const crotchGussetLength = store.get('crotchGussetLength')
   const crotchGussetWidth = store.get('crotchGussetWidth')
@@ -88,6 +88,8 @@ function draftCrotchGusset({
   if (complete) {
     points.title = new Point(crotchGussetLength / 4, crotchGussetWidth / 2)
     macro('title', { at: points.title, nr: 5, title: 'crotch gusset' })
+    points.logo = points.title.shift(180, 50 * scale)
+    snippets.logo = new Snippet('logo', points.logo)
 
     if (sa) {
       paths.sa = new Path()
