@@ -23,10 +23,6 @@ function draftHood({
 }) {
   if (options.neckStyle != 'hood') return part.hide()
 
-  // Drafter's notes:
-  // - Todo: Widen/Shorten Front piece to match neckline length.
-  // Hood can be in either 3 pieces (front, left, right), or 2 pieces (left, right). 3-piece construction allows for insertion of ears or other decorations.
-
   // Half the length around the neck of the hood. This is similar to the calculation for the length of a neckband, but the hood is not pre-stretched.
   const neckHalfCircumference =
     store.get('neckLengthFront') + store.get('neckLengthBack') + store.get('neckLengthSide')
@@ -251,7 +247,7 @@ export const hood = {
   options: {
     // How roomy the hood in the back of the head.
     hoodDepth: {
-      pct: 120,
+      pct: 100,
       min: 70,
       max: 180,
       menu: (settings, mergedOptions) => (mergedOptions.neckStyle == 'hood' ? 'fit' : false),
