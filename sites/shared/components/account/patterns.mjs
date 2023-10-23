@@ -105,12 +105,12 @@ export const ShowPattern = ({ id }) => {
           <DisplayRow title={t('name')}>{pattern.name}</DisplayRow>
           <DisplayRow title="#">{pattern.id}</DisplayRow>
           <DisplayRow title={t('account:publicView')}>
-            <PageLink href={`/patterns/${pattern.id}`} txt={`/patterns/${pattern.id}`} />
+            <PageLink href={`/pattern?id=${pattern.id}`} txt={`/pattern?id=${pattern.id}`} />
           </DisplayRow>
           <DisplayRow title={t('account:privateView')}>
             <PageLink
-              href={`/account/patterns/${pattern.id}`}
-              txt={`/account/patterns/${pattern.id}`}
+              href={`/account/pattern?id=${pattern.id}`}
+              txt={`/account/pattern?id=${pattern.id}`}
             />
           </DisplayRow>
           <DisplayRow title={t('created')}>
@@ -142,7 +142,7 @@ export const ShowPattern = ({ id }) => {
               <Popout tip noP>
                 <p>{t('account:ownPublicPattern')}</p>
                 <Link
-                  href={`/account/patterns/${pattern.id}/`}
+                  href={`/account/pattern?id=${pattern.id}/`}
                   className={`btn btn-secondary ${horFlexClasses} mt-2`}
                 >
                   <LockIcon /> {t('account:privateView')}
@@ -270,7 +270,7 @@ export const Pattern = ({ id }) => {
               ) : (
                 <>
                   <Link
-                    href={`/account/patterns/${pattern.design}/${pattern.id}/edit`}
+                    href={`/account/patterns/${pattern.design}/edit?id=${pattern.id}`}
                     className={`btn btn-primary btn-outline ${horFlexClasses}`}
                   >
                     <FreeSewingIcon /> {t('updatePattern')}
@@ -314,7 +314,7 @@ export const Pattern = ({ id }) => {
             </DisplayRow>
             {pattern.public && (
               <DisplayRow title={t('permalink')}>
-                <PageLink href={`/patterns/${pattern.id}`} txt={`/patterns/${pattern.id}`} />
+                <PageLink href={`/pattern?id=${pattern.id}`} txt={`/patternid=?${pattern.id}`} />
               </DisplayRow>
             )}
           </>
@@ -338,7 +338,10 @@ export const Pattern = ({ id }) => {
         )}
         <Popout tip noP>
           <p>{t('account:ownPrivatePattern')}</p>
-          <Link className={`btn btn-secondary ${horFlexClasses}`} href={`/patterns/${pattern.id}`}>
+          <Link
+            className={`btn btn-secondary ${horFlexClasses}`}
+            href={`/pattern?id=${pattern.id}`}
+          >
             <PatternIcon />
             {t('account:publicView')}
           </Link>
@@ -617,13 +620,13 @@ export const Patterns = () => {
                 <td className="text-base font-medium">{pattern.id}</td>
                 <td className="text-base font-medium">
                   <PatternCard
-                    href={`/account/patterns/${pattern.id}`}
+                    href={`/account/pattern?id=${pattern.id}`}
                     pattern={pattern}
                     size="xs"
                   />
                 </td>
                 <td className="text-base font-medium">
-                  <PageLink href={`/account/patterns/${pattern.id}`} txt={pattern.name} />
+                  <PageLink href={`/account/pattern?id=${pattern.id}`} txt={pattern.name} />
                 </td>
                 <td className="text-base font-medium">
                   <PageLink href={`/designs/${pattern.design}`} txt={capitalize(pattern.design)} />

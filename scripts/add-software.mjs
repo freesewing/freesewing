@@ -103,7 +103,7 @@ async function addDesign() {
   ${chalk.bold.yellow('👷 Get to work')}
   ${chalk.gray('≡≡≡≡≡≡≡≡≡≡≡≡≡≡')}
 
-  🛠️   You can now start the development environment with ${chalk.blue('yarn lab')}
+  🚀  You can now start the development environment with ${chalk.blue('yarn lab')}
   📖  Documentation is available at ${chalk.green('https://freesewing.dev/')}
   🤓  Happy hacking
 

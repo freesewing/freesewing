@@ -7,7 +7,6 @@ const copyFromOrg = [
   ['account'],
   ['designs'],
   ['new', 'index.mjs'],
-  ['patterns'],
   ['sets'],
   ['signin'],
   ['signup'],

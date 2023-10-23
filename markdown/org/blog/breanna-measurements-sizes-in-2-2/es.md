@@ -16,8 +16,6 @@ Veamos qué significa todo esto:
 
 ## Nuevo patrón: Breanna es un bloque de corpiño para mujer
 
-<Linedrawing pattern="breanna" />
-
 Conoce [Breanna](/designs/breanna/), nuestro bloque de corpiños para ropa de mujer.
 
 Puede que un bloque (o sloper) no sea el patrón más emocionante a la vista, pero desempeña un importante papel en , ya que es la forma básica sobre la que se construyen otros patrones.
