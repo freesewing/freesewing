@@ -158,13 +158,13 @@ const HomePage = ({ page }) => {
           text="Get inspiration from the FreeSewing community, and see how others have applied their creativity to our designs."
         />
         <CardLink
-          href="/docs/guide"
+          href="/docs/about/guide"
           title="Getting Started"
           icon={<DocsIcon className="w-10 h-10 shrink-0" />}
           text="FreeSewing.org is unlike any sewing pattern website you know. Read this short guide to get the most our of our platform."
         />
         <CardLink
-          href="/docs/faq"
+          href="/docs/about/faq"
           title="Frequently Asked Questions"
           icon={<HelpIcon className="w-10 h-10 shrink-0" />}
           text="Some of the questions that come up often when people discover our platform are answered here."
@@ -177,13 +177,13 @@ const HomePage = ({ page }) => {
 
       <div className="flex flex-col md:grid md:grid-cols-2 gap-4 max-w-7xl m-auto mb-24 px-4">
         <CardLink
-          href="/support"
+          href="/newsletter"
           title={`FreeSewing ${t('newsletter:newsletter')}`}
           icon={<NewsletterIcon className="w-10 h-10 shrink-0" />}
           text={t('newsletter:subscribePitch')}
         />
         <CardLink
-          href="/newsletter"
+          href="/support"
           title="Need Help?"
           icon={<ChatIcon className="w-10 h-10 shrink-0" />}
           text="While we are all volunteers, we have a good track record of helping people. So don't be shy to reach out."

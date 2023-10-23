@@ -23,8 +23,6 @@ const SignupLinkExpired = () => <Popout fixme>Implement SignupLinkExpired compno
 const ConfirmSignUpPage = () => {
   // Hooks
   const router = useRouter()
-  // Get confirmation ID and check from url
-  //const [confirmationId, confirmationCheck] = router.asPath.slice(1).split('/').slice(2)
 
   const { setAccount, setToken } = useAccount()
   const backend = useBackend()
