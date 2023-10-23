@@ -488,3 +488,6 @@ export const workbenchHash = ({ settings = {}, view = 'draft' }) =>
   `#settings=${encodeURIComponent(JSON.stringify(settings))}&view=${encodeURIComponent(
     '"' + view + '"'
   )}`
+
+export const getSearchParam = (name = 'id') =>
+  typeof window === 'undefined' ? undefined : new URLSearchParams(window.location.search).get(name)

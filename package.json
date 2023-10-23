@@ -45,7 +45,7 @@
     "strapi:translate": "node scripts/strapi-en-to-other.mjs",
     "fixdocs": "remark markdown --quiet --frail --output",
     "wbuildall": "lerna run wbuildall",
-    "prepare": "husky install"
+    "prepare": "husky install && yarn buildall"
   },
   "repository": {
     "type": "git",

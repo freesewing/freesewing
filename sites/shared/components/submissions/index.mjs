@@ -128,13 +128,13 @@ export const CsetSubmissions = () => {
                 />
               </td>
               <td className="text-base font-medium">
-                <PageLink href={`/curate/sets/suggested/${sug.id}`} txt={sug.data.name} />
+                <PageLink href={`/curate/sets/suggested?id=${sug.id}`} txt={sug.data.name} />
               </td>
               <td className="text-base font-medium">
-                <PageLink href={`/users/${sug.userId}`} txt={`/users/${sug.userId}`} />
+                <PageLink href={`/user?id=${sug.userId}`} txt={`/user?id=${sug.userId}`} />
               </td>
               <td className="text-base font-medium">
-                <PageLink href={`/sets/${sug.data.set}`} txt={`/sets/${sug.data.set}`} />
+                <PageLink href={`/set?id=${sug.data.set}`} txt={`/set?id=${sug.data.set}`} />
               </td>
               <td className="text-base font-medium">{sug.data.height}</td>
             </tr>
@@ -176,7 +176,7 @@ export const CsetSubmission = ({ id }) => {
     console.log(result)
     if (result.success) {
       setLoadingStatus([true, 'status:nailedIt', true, true])
-      router.push(`/curated-sets/${result.data.set.id}`)
+      router.push(`/curated-set?id=${result.data.set.id}`)
     } else setLoadingStatus([true, 'backendError', true, false])
   }
 
@@ -190,10 +190,10 @@ export const CsetSubmission = ({ id }) => {
         {submission.name}
       </DisplayRow>
       <DisplayRow title={t('submissions:id')} keyWidth="w-48">
-        <PageLink href={`/curate/sets/suggested/${submission.id}`} txt={submission.id} />
+        <PageLink href={`/curate/sets/suggested?id=${submission.id}`} txt={submission.id} />
       </DisplayRow>
       <DisplayRow title={t('account:set')} keyWidth="w-48">
-        <PageLink href={`/sets/${submission.set}`} txt={`/sets/${submission.set}`} />
+        <PageLink href={`/set?id=${submission.set}`} txt={`/set?id=${submission.set}`} />
       </DisplayRow>
       <DisplayRow title={t('account:height')} keyWidth="w-48">
         {submission.height}

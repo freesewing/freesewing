@@ -215,7 +215,7 @@ export const AccountLinks = () => {
                 <AccountLink href={`/account/${item}`} title={t(item)} key={item}>
                   <div className="flex flex-row items-center gap-3 font-medium">
                     {itemIcons[item]}
-                    {t(item)}
+                    {capitalize(t(item))}
                   </div>
                   <div className="">{itemPreviews[item]}</div>
                 </AccountLink>

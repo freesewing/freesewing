@@ -132,7 +132,7 @@ const ShowCuratedSet = ({ cset }) => {
 
       <h2>{t('data')}</h2>
       <DisplayRow title={t('name')}>
-        <PageLink href={`/curated-sets/${cset.id}`} txt={cset[`name${capitalize(lang)}`]} />
+        <PageLink href={`/curated-set?id=${cset.id}`} txt={cset[`name${capitalize(lang)}`]} />
       </DisplayRow>
       <DisplayRow title={t('height')}>{cset.height}cm</DisplayRow>
       {control >= controlLevels.sets.notes && (
@@ -445,7 +445,7 @@ export const EditCuratedSet = ({ id }) => {
 
   return (
     <div className="max-w-2xl">
-      <PageLink href={`/curated-sets/${id}`} txt={`/curated-sets/${id}`} />
+      <PageLink href={`/curated-set?id=${id}`} txt={`/curated-set?id=${id}`} />
       <ListInput
         label={t('curate:published')}
         update={(val) => updateData('published', val)}
