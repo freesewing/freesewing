@@ -7094,13 +7094,13 @@ html-parse-stringify@^3.0.1:
     void-elements "3.1.0"
 
 html-react-parser@^4.2.2:
-  version "4.2.7"
-  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-4.2.7.tgz#463282eb61632f87852f7c8718a5851c304e4331"
-  integrity sha512-2Uf9CdzqDQ/CrUiooSEB4IcHcB8bmZKhgVCzNMAb66J1L+fmxLS/tAGwjfnF6P9WNUCkbx/dGb31u0gGIKmyfA==
+  version "4.2.9"
+  resolved "https://registry.yarnpkg.com/html-react-parser/-/html-react-parser-4.2.9.tgz#d9596adc2f35a1bf8f4dab29e427fb282c9c177c"
+  integrity sha512-LgF0h+hM//79kePyGMWqgAGdvLCyV52GS96fYeQ5UhJJm+jccjZ8G5SQlprJTMj3v3XR2cBxNF2JhyC1R6gieA==
   dependencies:
     domhandler "5.0.3"
     html-dom-parser "5.0.2"
-    react-property "2.0.0"
+    react-property "2.0.2"
     style-to-js "1.1.8"
 
 html-to-text@^9.0.5:
@@ -11535,10 +11535,10 @@ react-is@^18.0.0:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
   integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
 
-react-property@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/react-property/-/react-property-2.0.0.tgz#2156ba9d85fa4741faf1918b38efc1eae3c6a136"
-  integrity sha512-kzmNjIgU32mO4mmH5+iUyrqlpFQhF8K2k7eZ4fdLSOPFrD1XgEuSBv9LDEgxRXTMBqMd8ppT0x6TIzqE5pdGdw==
+react-property@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/react-property/-/react-property-2.0.2.tgz#d5ac9e244cef564880a610bc8d868bd6f60fdda6"
+  integrity sha512-+PbtI3VuDV0l6CleQMsx2gtK0JZbZKbpdu5ynr+lbsuvtmgbNcS3VM0tuY2QjFNOcWxvXeHjDpy42RO+4U2rug==
 
 react-swipeable@7.0.1:
   version "7.0.1"
