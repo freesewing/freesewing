@@ -201,8 +201,8 @@ Note: This step is the same with or without lining. Treat the lining and the fas
  - Lay your garment _right side out_.
  - Unzip the zipper.
  - Place the zipper _good side up_ along the center seam and align it carefully. The alignment of the top stop is more important than that of the bottom stop, and try not to stretch or gather the fabric as you align your zipper.
- - Turn one side of the zipper 1/2 turn outward, and lay it along the open seam so that the tape edge is along the seam and the toothed edge is facing the bulk of the fabric. Fold back the fabric and clip in place.
- - Turning the zipper back _good side up_ and fold the fabric under.
+ - Turn one side of the zipper 1/2 turn outward, and lay it along the open seam so that the tape edge is along the seam and the toothed edge is facing the bulk of the fabric. Line up the edge of the fabric with the edge of the tape and clip in place.
+ - Turn the zipper back _good side up_, folding the fabric under in the process.
  - Repeat for the other side.
 
 At this point, the zipper should in its proper position and orientation. If anything is inside-out or not right, take it apart and try again.
