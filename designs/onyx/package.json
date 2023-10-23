@@ -1,8 +1,8 @@
 {
   "name": "@freesewing/onyx",
   "version": "3.0.0",
-  "description": "A FreeSewing pattern for unisuits and onesie pajamas",
-  "author": "Joost De Cock <joost@joost.at> (https://github.com/joostdecock)",
+  "description": "A FreeSewing pattern for one-piece garments",
+  "author": "Thrunic (https://github.com/Thrunic)",
   "homepage": "https://freesewing.org/",
   "repository": "github:freesewing/freesewing",
   "license": "MIT",
