@@ -202,16 +202,17 @@ Note: This step is the same with or without lining. Treat the lining and the fas
  - Unzip the zipper.
  - Place the zipper _good side up_ along the center seam and align it carefully. The alignment of the top stop is more important than that of the bottom stop, and try not to stretch or gather the fabric as you align your zipper.
  - Turn one side of the zipper 1/2 turn outward, and lay it along the open seam so that the tape edge is along the seam and the toothed edge is facing the bulk of the fabric. Line up the edge of the fabric with the edge of the tape and clip in place.
+
+ - If sewing swim fabric, sew the fabric and the zipper tape together with a straight stight down each side. This is both to hold things together, and to provide a second, safety line of stitching for the zipper. For less tricky fabrics, this step is optional.
+
  - Turn the zipper back _good side up_, folding the fabric under in the process.
  - Repeat for the other side.
-
-At this point, the zipper should in its proper position and orientation. If anything is inside-out or not right, take it apart and try again.
 
 Installing the zipper guard.
  - Turn the garment _inside-out_.
  - Place the long serged edge of the zipper guard along the left side of the zipper. The edge of the zipper guard should line up with the tape edge of the zipper and should cover the zipper.
  - Adjust the zipper guard vertically. It should extend above the top stop of the zipper by enough so that you can fold the fabric over to hide the zipper pull and protect the neck from the zipper.
- - Fold the portion extending above the top zipper stop over to the front of the garment.
+ - If you're using a neckband, fold the portion extending above the top zipper stop over to the front of the garment.
  - Clip the zipper guard into place. This will cover up the clips holding the zipper to the garment. Remember not to sew over these clips when sewing.
 
 Sewing the zipper.
