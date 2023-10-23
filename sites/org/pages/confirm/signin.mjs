@@ -67,19 +67,20 @@ const Wrapper = ({ page, t, children }) => (
  */
 const ConfirmSignInPage = ({ page }) => {
   const router = useRouter()
-  // Get confirmation ID and check from url
-  const [confirmationId, confirmationCheck] = router.asPath.slice(1).split('/').slice(2)
   const { setAccount, setToken } = useAccount()
   const backend = useBackend()
   const { t } = useTranslation(ns)
 
   const [error, setError] = useState(false)
   const [id, setId] = useState()
+  const [check, setCheck] = useState()
 
   useEffect(() => {
     const newId = getSearchParam('id')
+    const newCheck = getSearchParam('check')
     if (newId !== id) setId(newId)
-  }, [id])
+    if (newCheck !== check) setCheck(newCheck)
+  }, [id, check])
 
   useEffect(() => {
     const storeAccount = async (data) => {
@@ -94,19 +95,16 @@ const ConfirmSignInPage = ({ page }) => {
     // Async inside useEffect requires this approach
     const getConfirmation = async () => {
       // Reach out to backend
-      const result = await backend.signInFromLink({
-        id: confirmationId,
-        check: confirmationCheck,
-      })
+      const result = await backend.signInFromLink({ id, check })
       if (result.data?.token) return storeAccount(result.data)
       if (result.data.error) return setError(result.data.error)
       return setError(true)
     }
     // Call async method
     if (id) getConfirmation()
-  }, [backend, confirmationCheck, confirmationId, router, setAccount, setToken, id])
+  }, [backend, id, check, router, setAccount, setToken])
 
-  if (page) page.path = ['confirm', 'emailchange', confirmationId]
+  if (page) page.path = ['confirm', 'emailchange', id]
 
   // Short-circuit errors
   if (error)

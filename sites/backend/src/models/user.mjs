@@ -1004,7 +1004,7 @@ UserModel.prototype.linkSignIn = async function (req) {
   /*
    * Before we return, remove the confirmation so it works only once
    */
-  //await this.Confirmation.delete()
+  await this.Confirmation.delete()
 
   /*
    * Sign in was a success, run a final check before returning
