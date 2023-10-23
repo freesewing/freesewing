@@ -1,8 +1,11 @@
 ---
-title: "Tapeta de ojal separada"
+title: "Separate buttonhole placket"
 ---
 
-![Tapeta de ojal separada](seperatebuttonholeplacket.svg)
+![Separate buttonhole placket](separatebuttonholeplacket.svg)
 
-Si desea o no que la placket del agujero del botón sea una parte separada del patrón.
+Whether or not you want the buttonhole placket to be a separate pattern part.
+
+
+
 

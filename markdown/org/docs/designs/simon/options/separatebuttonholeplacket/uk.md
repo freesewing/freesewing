@@ -1,8 +1,8 @@
 ---
-title: "Окрема планка для петель"
+title: "Separate buttonhole placket"
 ---
 
-![Окрема планка для петель](seperatebuttonholeplacket.svg)
+![Separate buttonhole placket](separatebuttonholeplacket.svg)
 
-Незалежно від того, чи хочете ви, щоб планка петлі була окремою деталлю викрійки, чи ні.
+Whether or not you want the buttonhole placket to be a separate pattern part.
 

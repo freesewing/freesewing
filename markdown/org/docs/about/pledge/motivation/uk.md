@@ -4,8 +4,8 @@ title: Мотивація
 
 <Note>
 
-Це особиста нотатка Йооста Де Кока (Joost De Cock), супровідника FreeSewing, про
-його мотивацію до [обіцянки щодо доходу FreeSewing] (/docs/various/pledge/).
+This is a personal note by Joost De Cock -- the FreeSewing maintainer -- about
+his motivations for [the FreeSewing revenue pledge](/docs/about/pledge/)
 
 </Note>
 
@@ -58,4 +58,4 @@ While I no longer carry FreeSewing alone — and I can't overstate the value of 
 
 Я сподіваюся, що це пояснює вибір організації "Лікарі без кордонів" в якості благодійної організації для FreeSewing. І я сподіваюся, що ви приєднаєтеся до нас, щоб зробити світ трохи кращим.
 
-Тому я з радістю даю [цю обіцянку](/docs/various/pledge/).
+Тому я з радістю даю [цю обіцянку](/docs/about/pledge/).

@@ -1,5 +1,5 @@
 ---
-title: Повідомлення про конфіденційність
+title: Повідомлення про конфіденційність FreeSewing
 ---
 
 **Last update**: 13 August 2023
@@ -82,7 +82,7 @@ This data is stored for anybody who visits our website and connects to our backe
 
 - Щоб підтвердити вашу автентичність
 - Щоб мати можливість зв'язатися з вами за потреби
-- To be able to generate made-to-measure sewing patterns for you
+- To be able to generate bespoke sewing patterns for you
 
 ##### Як довго ми його зберігаємо?
 
@@ -95,6 +95,10 @@ This data is stored for anybody who visits our website and connects to our backe
 
 
 ## Other info relevant to this privacy notice
+
+### Використання неповнолітніми віком до 16 років
+
+For legal reasons, you need to be at least 16 years old to use FreeSewing.
 
 ### Контролер даних та контактна інформація
 
@@ -131,18 +135,14 @@ So far:
 - FreeSewing has never provided any law enforcement organization personal data of any of our users or visitors.
 - FreeSewing has never weakened, compromised, or subverted any of its encryption at the request of law enforcement or another third party.
 
-### Використання неповнолітніми віком до 16 років
-
-З юридичних причин, вам повинно бути не менше 16 років, щоб користуватися фрісейвінгом.
-
 ### Дивіться також
 
 - [Ваші права][2]
 - [Ваша згода][3]
 
-[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy
+[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/about/privacy
 
-[2]: /docs/various/rights/
+[2]: /docs/about/rights/
 
 [3]: /account/consent/
 

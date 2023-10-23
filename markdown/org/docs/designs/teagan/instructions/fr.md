@@ -85,7 +85,7 @@ Hourra ! Vous avez terminé la partie la plus délicate ! Tu peux aussi fixer le
 
 <Tip>
 
-Un guide plus complet sur la liaison tricot peut être trouvé dans les [Instuctions Aaron](/docs/patterns/aaron/instructions).
+A more extensive how-to on knit binding can be found in the [Aaron Instuctions](/docs/designs/aaron/instructions).
 
 </Tip>
 

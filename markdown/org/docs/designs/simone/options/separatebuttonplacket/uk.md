@@ -1,8 +1,11 @@
 ---
-title: "Окрема планка для ґудзиків"
+title: "Separate button placket"
 ---
 
-![Окрема планка для ґудзиків](seperatebuttonplacket.svg)
+![Separate button placket](separatebuttonplacket.svg)
 
-Незалежно від того, чи хочете ви, щоб планка ґудзика була окремою деталлю викрійки.
+Whether or not you want the button placket to be a separate pattern part.
+
+
+
 

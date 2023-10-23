@@ -1,8 +1,11 @@
 ---
-title: "Gorge (Patte de boutonnières) séparée"
+title: "Separate buttonhole placket"
 ---
 
-![Gorge (Patte de boutonnières) séparée](seperatebuttonholeplacket.svg)
+![Separate buttonhole placket](separatebuttonholeplacket.svg)
 
-Si vous voulez ou non que la patte de boutonnière soit une partie séparée.
+Whether or not you want the buttonhole placket to be a separate pattern part.
+
+
+
 
