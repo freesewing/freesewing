@@ -1,5 +1,3 @@
-import { front } from './front.mjs'
-import { back } from './back.mjs'
 import { raglanSleeve } from './raglansleeve.mjs'
 
 function draftNeckband({
@@ -16,7 +14,7 @@ function draftNeckband({
   sa,
   macro,
 }) {
-  if (options.neckStyle != 'neckband') return part.hide()
+  if (options.neckStyle !== 'neckband') return part.hide()
 
   const neckbandLength =
     (store.get('neckLengthFront') + store.get('neckLengthBack') + store.get('neckLengthSide')) *
@@ -36,34 +34,33 @@ function draftNeckband({
     .line(points.bottomRightCorner)
     .line(points.topRightCorner)
     .line(points.topLeftCorner)
-    .attr('class', 'fabric')
-    .hide(true)
+    .addClass('fabric')
+    .hide()
 
-  paths.foldBase = new Path().move(points.topLeftCorner).line(points.bottomLeftCorner).hide(true)
+  paths.foldBase = new Path().move(points.topLeftCorner).line(points.bottomLeftCorner).hide()
 
-  paths.foldLine = new Path()
-    .move(points.leftCenter)
-    .line(points.rightCenter)
-    .attr('class', 'various dashed')
-    .attr('data-text', 'Fold Line')
-    .attr('data-text-class', 'center')
-
-  paths.seam = paths.saBase.join(paths.foldBase).close().attr('class', 'fabric')
-
-  if (paperless) {
-    macro('vd', {
-      id: 'vdNeckBand',
-      from: points.topLeftCorner,
-      to: points.bottomLeftCorner,
-      x: -(sa + 15),
-    })
-    macro('hd', {
-      id: 'hdNeckBand',
-      from: points.topLeftCorner,
-      to: points.topRightCorner,
-      y: -(sa + 15),
-    })
+  if (complete) {
+    paths.foldLine = new Path()
+      .move(points.leftCenter)
+      .line(points.rightCenter)
+      .addClass('various dashed')
+      .addText('onyx:foldLine', 'center')
   }
+
+  paths.seam = paths.saBase.join(paths.foldBase).close().addClass('fabric')
+
+  macro('vd', {
+    id: 'vdNeckBand',
+    from: points.topLeftCorner,
+    to: points.bottomLeftCorner,
+    x: -(sa + 15),
+  })
+  macro('hd', {
+    id: 'hdNeckBand',
+    from: points.topLeftCorner,
+    to: points.topRightCorner,
+    y: -(sa + 15),
+  })
 
   points.cutonfoldFrom = points.topLeftCorner
   points.cutonfoldTo = points.bottomLeftCorner
@@ -73,32 +70,29 @@ function draftNeckband({
     grainline: true,
   })
 
-  store.cutlist.addCut({ cut: 1 })
+  store.cutlist.addCut({ cut: 1, from: 'fabric' })
 
-  if (complete) {
-    points.title = new Point(neckbandLength / 4, neckbandWidth / 2)
-    macro('title', { at: points.title, nr: 4, title: 'neckband' })
+  points.title = new Point(neckbandLength / 4, neckbandWidth / 2)
+  macro('title', { at: points.title, nr: 4, title: 'neckband' })
 
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.bottomLeftCorner)
-        .line(points.bottomLeftCorner.translate(0, sa))
-        .line(points.bottomRightCorner.translate(sa, sa))
-        .line(points.topRightCorner.translate(sa, -sa))
-        .line(points.topLeftCorner.translate(0, -sa))
-        .line(points.topLeftCorner)
-        .attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = new Path()
+      .move(points.bottomLeftCorner)
+      .line(points.bottomLeftCorner.translate(0, sa))
+      .line(points.bottomRightCorner.translate(sa, sa))
+      .line(points.topRightCorner.translate(sa, -sa))
+      .line(points.topLeftCorner.translate(0, -sa))
+      .line(points.topLeftCorner)
+      .addClass('fabric sa')
   }
+
   return part
 }
 
 export const neckband = {
   name: 'onyx.neckband',
-  plugins: [],
   draft: draftNeckband,
-  after: [front, back, raglanSleeve],
-  measurements: ['neck'],
+  after: [raglanSleeve],
   options: {
     // How long the neckband should be, as a percentage of the length of the neck hole.
     neckbandLength: {

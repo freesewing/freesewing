@@ -57,22 +57,22 @@ function draftBack({
     .curve(points.neckCp1, points.neckCp2, points.cfNeck)
 
   if (options.backOnFold) {
-    paths.saBase.hide(true)
-    paths.foldBase = new Path().move(points.cfNeck).line(points.cfCrotch).hide(true)
+    paths.saBase.hide()
+    paths.foldBase = new Path().move(points.cfNeck).line(points.cfCrotch).hide()
     paths.inseamBase = new Path()
       .move(points.cfCrotch)
       .curve(points.cfCrotchCp2, points.crotchEndCp1, points.crotchEnd)
       .line(points.inseamHem)
-      .hide(true)
+      .hide()
   } else {
     paths.saBase
       .line(points.cfCrotch)
       .curve(points.cfCrotchCp2, points.crotchEndCp1, points.crotchEnd)
       .line(points.inseamHem)
-      .hide(true)
+      .hide()
   }
 
-  paths.hemBase = new Path().move(points.inseamHem).line(points.outseamHem).hide(true)
+  paths.hemBase = new Path().move(points.inseamHem).line(points.outseamHem).hide()
 
   if (options.backOnFold)
     paths.seam = paths.saBase
@@ -80,8 +80,8 @@ function draftBack({
       .join(paths.inseamBase)
       .join(paths.hemBase)
       .close()
-      .attr('class', 'fabric')
-  else paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
+      .addClass('fabric')
+  else paths.seam = paths.saBase.join(paths.hemBase).close().addClass('fabric')
 
   if (paperless) {
     macro('vd', {
@@ -148,39 +148,37 @@ function draftBack({
       to: points.cutonfoldTo,
       grainline: true,
     })
-    store.cutlist.addCut({ cut: 1 })
+    store.cutlist.addCut({ cut: 1, from: 'fabric' })
   } else {
     macro('grainline', {
       from: points.cutonfoldFrom,
       to: points.cutonfoldTo,
     })
-    store.cutlist.addCut({ cut: 2 })
+    store.cutlist.addCut({ cut: 2, from: 'fabric' })
   }
 
-  if (complete) {
-    snippets.armpitScoopEnd = new Snippet('bnotch', points.armpitScoopEnd)
+  snippets.armpitScoopEnd = new Snippet('bnotch', points.armpitScoopEnd)
 
-    points.title = new Point(
-      points.armpitCorner.x / 2,
-      (points.cfCrotch.y + points.armpitCornerScooped.y / 2) / 2
-    )
-    macro('title', { at: points.title, nr: 2, title: 'back' })
+  points.title = new Point(
+    points.armpitCorner.x / 2,
+    (points.cfCrotch.y + points.armpitCornerScooped.y / 2) / 2
+  )
+  macro('title', { at: points.title, nr: 2, title: 'back' })
 
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.inseamHem.shift(270, options.legRibbing ? sa : absoluteOptions.legHem))
-        .join(paths.hemBase.offset(options.legRibbing ? sa : absoluteOptions.legHem))
-        .join(paths.saBase.offset(sa))
-        .attr('class', 'fabric sa')
-      if (options.backOnFold) {
-        paths.sa.line(points.cfNeck)
-        paths.sa2 = new Path()
-          .move(points.cfCrotch)
-          .join(paths.inseamBase.offset(sa))
-          .line(points.inseamHem.shift(270, options.legRibbing ? sa : absoluteOptions.legHem))
-          .attr('class', 'fabric sa')
-      } else paths.sa.close()
-    }
+  if (sa) {
+    paths.sa = new Path()
+      .move(points.inseamHem.shift(270, options.legRibbing ? sa : absoluteOptions.legHem))
+      .join(paths.hemBase.offset(options.legRibbing ? sa : absoluteOptions.legHem))
+      .join(paths.saBase.offset(sa))
+      .attr('class', 'fabric sa')
+    if (options.backOnFold) {
+      paths.sa.line(points.cfNeck)
+      paths.sa2 = new Path()
+        .move(points.cfCrotch)
+        .join(paths.inseamBase.offset(sa))
+        .line(points.inseamHem.shift(270, options.legRibbing ? sa : absoluteOptions.legHem))
+        .addClass('sa fabric')
+    } else paths.sa.close()
   }
 
   const neckPath = new Path()
@@ -193,8 +191,6 @@ function draftBack({
 
 export const back = {
   name: 'onyx.back',
-  plugins: [],
   draft: draftBack,
   from: base,
-  measurements: ['neck', 'chest', 'hips', 'waistToHips', 'hpsToWaistBack'],
 }

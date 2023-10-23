@@ -2,7 +2,7 @@
 title: "Hips ease"
 ---
 
-![The hips ease option on Onyx](./hipsease.svg)
+![The hips ease option on Onyx](hipsease.svg)
 
 Controls how wide the garment will be at your hips.
 

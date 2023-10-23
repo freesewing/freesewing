@@ -2,7 +2,7 @@
 title: "Sleeve ribbing"
 ---
 
-![The sleeve ribbing option on Onyx](./sleeveribbing.svg)
+![The sleeve ribbing option on Onyx](sleeveribbing.svg)
 
 Choose whether to make ribbed knit cuffs for the sleeves or to use a hem.
 

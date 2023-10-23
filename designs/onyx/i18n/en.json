@@ -15,7 +15,9 @@
     "sleeveRibbing": "Sleeve ribbing",
     "legRibbing": "Leg ribbing"
   },
-  "s": {},
+  "s": {
+	"foldLine": "Fold Line"
+  },
   "o": {
     "neckbandLength": {
       "t": "Neckband length",
@@ -224,7 +226,7 @@
       "d": "A skirt will not be generated."
     },
     "skirtYes": {
-      "t": "Swim skirt",
+      "t": "Skirt",
       "d": "A skirt will be generated."
     },
     "skirtLength": {

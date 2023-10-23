@@ -48,7 +48,7 @@
 
 # @freesewing/onyx
 
-A FreeSewing pattern for unisuits and onesie pajamas
+A FreeSewing pattern for one-piece garments
 
 
 

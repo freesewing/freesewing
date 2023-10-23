@@ -2,7 +2,7 @@
 title: "Chest ease"
 ---
 
-![The chest ease option on Onyx](./chestease.svg)
+![The chest ease option on Onyx](chestease.svg)
 
 Controls how wide the garment will be at your chest.
 

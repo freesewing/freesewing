@@ -2,7 +2,7 @@
 title: "Leg ribbing"
 ---
 
-![The leg ribbing option on Onyx](./legribbing.svg)
+![The leg ribbing option on Onyx](legribbing.svg)
 
 Choose whether to make ribbed knit cuffs for the legs or to use a hem.
 

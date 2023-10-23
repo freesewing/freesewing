@@ -1,6 +1,4 @@
 import { cbqc } from '@freesewing/core'
-import { front } from './front.mjs'
-import { back } from './back.mjs'
 import { raglanSleeve } from './raglansleeve.mjs'
 
 function draftHood({
@@ -21,7 +19,7 @@ function draftHood({
   Snippet,
   scale,
 }) {
-  if (options.neckStyle != 'hood') return part.hide()
+  if (options.neckStyle !== 'hood') return part.hide()
 
   // Half the length around the neck of the hood. This is similar to the calculation for the length of a neckband, but the hood is not pre-stretched.
   const neckHalfCircumference =
@@ -111,82 +109,80 @@ function draftHood({
     .curve(points.backNeckCp2, points.backHeadCp1, points.backHead)
     .curve(points.backHeadCp2, points.centerTopCp1, points.centerTop)
     .curve(points.centerTopCp2, points.frontTopCp1, points.frontTop)
-    .attr('class', 'fabric')
-    .hide(true)
+    .addClass('fabric')
+    .hide()
 
-  paths.hemBase = new Path().move(points.frontTop).line(points.frontNeck).hide(true)
+  paths.hemBase = new Path().move(points.frontTop).line(points.frontNeck).hide()
 
   paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
 
-  if (paperless) {
-    macro('vd', {
-      id: 'hBackToTop',
-      from: points.backHead,
-      to: points.centerTop,
-      x: points.backHead.x + (sa + 15),
-    })
-    macro('vd', {
-      id: 'hNeckToBack',
-      from: points.backNeck,
-      to: points.backHead,
-      x: points.backHead.x + (sa + 15),
-    })
-    macro('vd', {
-      id: 'hNeck',
-      from: points.frontNeck,
-      to: points.backNeck,
-      x: points.backHead.x + (sa + 15),
-    })
-    macro('vd', {
-      id: 'hBackNeckToTop',
-      from: points.backNeck,
-      to: points.centerTop,
-      x: points.backHead.x + (sa + 30),
-    })
-    macro('vd', {
-      id: 'hTotalHeight',
-      from: points.frontNeck,
-      to: points.centerTop,
-      x: points.backHead.x + (sa + 45),
-    })
-    macro('vd', {
-      id: 'hFront',
-      from: points.frontNeck,
-      to: points.frontTop,
-      x: points.frontTop.x - (sa + 15),
-    })
-    macro('hd', {
-      id: 'wTopToBack',
-      from: points.centerTop,
-      to: points.backHead,
-      y: points.centerTop.y - (sa + 15),
-    })
-    macro('hd', {
-      id: 'wFrontToTop',
-      from: points.frontTop,
-      to: points.centerTop,
-      y: points.centerTop.y - (sa + 15),
-    })
-    macro('hd', {
-      id: 'wFrontToBack',
-      from: points.frontTop,
-      to: points.backHead,
-      y: points.centerTop.y - (sa + 30),
-    })
-    macro('hd', {
-      id: 'wNeck',
-      from: points.frontNeck,
-      to: points.backNeck,
-      y: points.frontNeck.y + (sa + 15),
-    })
-    macro('pd', {
-      id: 'lNeck',
-      path: new Path()
-        .move(points.frontNeck)
-        .curve(points.frontNeckCp2, points.backNeckCp1, points.backNeck),
-      d: 15,
-    })
-  }
+  macro('vd', {
+    id: 'hBackToTop',
+    from: points.backHead,
+    to: points.centerTop,
+    x: points.backHead.x + (sa + 15),
+  })
+  macro('vd', {
+    id: 'hNeckToBack',
+    from: points.backNeck,
+    to: points.backHead,
+    x: points.backHead.x + (sa + 15),
+  })
+  macro('vd', {
+    id: 'hNeck',
+    from: points.frontNeck,
+    to: points.backNeck,
+    x: points.backHead.x + (sa + 15),
+  })
+  macro('vd', {
+    id: 'hBackNeckToTop',
+    from: points.backNeck,
+    to: points.centerTop,
+    x: points.backHead.x + (sa + 30),
+  })
+  macro('vd', {
+    id: 'hTotalHeight',
+    from: points.frontNeck,
+    to: points.centerTop,
+    x: points.backHead.x + (sa + 45),
+  })
+  macro('vd', {
+    id: 'hFront',
+    from: points.frontNeck,
+    to: points.frontTop,
+    x: points.frontTop.x - (sa + 15),
+  })
+  macro('hd', {
+    id: 'wTopToBack',
+    from: points.centerTop,
+    to: points.backHead,
+    y: points.centerTop.y - (sa + 15),
+  })
+  macro('hd', {
+    id: 'wFrontToTop',
+    from: points.frontTop,
+    to: points.centerTop,
+    y: points.centerTop.y - (sa + 15),
+  })
+  macro('hd', {
+    id: 'wFrontToBack',
+    from: points.frontTop,
+    to: points.backHead,
+    y: points.centerTop.y - (sa + 30),
+  })
+  macro('hd', {
+    id: 'wNeck',
+    from: points.frontNeck,
+    to: points.backNeck,
+    y: points.frontNeck.y + (sa + 15),
+  })
+  macro('pd', {
+    id: 'lNeck',
+    path: new Path()
+      .move(points.frontNeck)
+      .curve(points.frontNeckCp2, points.backNeckCp1, points.backNeck),
+    d: 15,
+  })
 
   points.grainlineBottom = new Point(0, -0.03 * measurements.head).shift(
     0,
@@ -200,21 +196,19 @@ function draftHood({
     to: points.grainlineBottom,
   })
 
-  store.cutlist.addCut({ cut: 2 })
+  store.cutlist.addCut({ cut: 2, from: 'fabric' })
 
-  if (complete) {
-    points.title = new Point(neckHalfCircumference / 6, -measurements.head * 0.3)
-    macro('title', { at: points.title, nr: 7, title: 'hood' })
-    points.logo = points.title.translate(20 * scale, -70 * scale)
-    snippets.logo = new Snippet('logo', points.logo)
+  points.title = new Point(neckHalfCircumference / 6, -measurements.head * 0.3)
+  macro('title', { at: points.title, nr: 7, title: 'hood' })
+  points.logo = points.title.translate(20 * scale, -70 * scale)
+  snippets.logo = new Snippet('logo', points.logo)
 
-    if (sa) {
-      paths.sa = paths.saBase
-        .offset(sa)
-        .join(paths.hemBase.offset(options.hoodFrontPieceSize > 0 ? sa : absoluteOptions.hoodHem))
-        .close()
-        .attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = paths.saBase
+      .offset(sa)
+      .join(paths.hemBase.offset(options.hoodFrontPieceSize > 0 ? sa : absoluteOptions.hoodHem))
+      .close()
+      .addClass('fabric sa')
   }
 
   if (options.hoodFrontPieceSize > 0) {
@@ -240,10 +234,9 @@ function draftHood({
 
 export const hood = {
   name: 'onyx.hood',
-  plugins: [],
   draft: draftHood,
-  after: [front, back, raglanSleeve],
-  measurements: ['neck', 'chest', 'biceps', 'wrist', 'head'],
+  after: [raglanSleeve],
+  measurements: ['head'],
   options: {
     // How roomy the hood in the back of the head.
     hoodDepth: {

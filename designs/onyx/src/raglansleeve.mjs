@@ -123,153 +123,151 @@ function draftRaglanSleeve({
     .line(points.frontArmholeScoopEnd)
     .curve(points.frontArmholeScoopCp2, points.frontArmholeScoopCp1, points.frontArmholeScooped)
     .line(points.frontSleeve)
-    .hide(true)
+    .hide()
 
-  paths.hemBase = new Path().move(points.frontSleeve).line(points.backSleeve).hide(true)
+  paths.hemBase = new Path().move(points.frontSleeve).line(points.backSleeve).hide()
 
-  paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
+  paths.seam = paths.saBase.join(paths.hemBase).close().addClass('fabric')
 
-  if (paperless) {
-    macro('vd', {
-      id: 'hFrontRaglanSleeveStraightPortion',
-      from: points.frontNeck,
-      to: points.frontArmholeScoopEnd,
-      x: points.frontArmholeScooped.x - (sa + 15),
-    })
-    macro('vd', {
-      id: 'hFrontRaglanSleeveCurvedPortion',
-      from: points.frontArmholeScoopEnd,
-      to: points.frontArmholeScooped,
-      x: points.frontArmholeScooped.x - (sa + 15),
-    })
-    macro('vd', {
-      id: 'hFrontRaglanSleeve',
-      from: points.frontNeck,
-      to: points.frontArmholeScooped,
-      x: points.frontArmholeScooped.x - (sa + 30),
-    })
-    macro('vd', {
-      id: 'hFrontSleeve',
-      from: points.frontArmholeScooped,
-      to: points.frontSleeve,
-      x: points.frontArmholeScooped.x - (sa + 15),
-    })
-    macro('vd', {
-      id: 'hFrontTotal',
-      from: points.frontNeck,
-      to: points.frontSleeve,
-      x: points.frontArmholeScooped.x - (sa + 45),
-    })
+  macro('vd', {
+    id: 'hFrontRaglanSleeveStraightPortion',
+    from: points.frontNeck,
+    to: points.frontArmholeScoopEnd,
+    x: points.frontArmholeScooped.x - (sa + 15),
+  })
+  macro('vd', {
+    id: 'hFrontRaglanSleeveCurvedPortion',
+    from: points.frontArmholeScoopEnd,
+    to: points.frontArmholeScooped,
+    x: points.frontArmholeScooped.x - (sa + 15),
+  })
+  macro('vd', {
+    id: 'hFrontRaglanSleeve',
+    from: points.frontNeck,
+    to: points.frontArmholeScooped,
+    x: points.frontArmholeScooped.x - (sa + 30),
+  })
+  macro('vd', {
+    id: 'hFrontSleeve',
+    from: points.frontArmholeScooped,
+    to: points.frontSleeve,
+    x: points.frontArmholeScooped.x - (sa + 15),
+  })
+  macro('vd', {
+    id: 'hFrontTotal',
+    from: points.frontNeck,
+    to: points.frontSleeve,
+    x: points.frontArmholeScooped.x - (sa + 45),
+  })
 
-    macro('vd', {
-      id: 'hBackRaglanSleeveStraightPortion',
-      from: points.backNeck,
-      to: points.backArmholeScoopEnd,
-      x: points.backArmholeScooped.x + (sa + 15),
-    })
-    macro('vd', {
-      id: 'hBackRaglanSleeveCurvedPortion',
-      from: points.backArmholeScoopEnd,
-      to: points.backArmholeScooped,
-      x: points.backArmholeScooped.x + (sa + 15),
-    })
-    macro('vd', {
-      id: 'hBackRaglanSleeve',
-      from: points.backNeck,
-      to: points.backArmholeScooped,
-      x: points.backArmholeScooped.x + (sa + 30),
-    })
-    macro('vd', {
-      id: 'hBackSleeve',
-      from: points.backArmholeScooped,
-      to: points.backSleeve,
-      x: points.backArmholeScooped.x + (sa + 15),
-    })
-    macro('vd', {
-      id: 'hBackTotal',
-      from: points.backNeck,
-      to: points.backSleeve,
-      x: points.backArmholeScooped.x + (sa + 45),
-    })
+  macro('vd', {
+    id: 'hBackRaglanSleeveStraightPortion',
+    from: points.backNeck,
+    to: points.backArmholeScoopEnd,
+    x: points.backArmholeScooped.x + (sa + 15),
+  })
+  macro('vd', {
+    id: 'hBackRaglanSleeveCurvedPortion',
+    from: points.backArmholeScoopEnd,
+    to: points.backArmholeScooped,
+    x: points.backArmholeScooped.x + (sa + 15),
+  })
+  macro('vd', {
+    id: 'hBackRaglanSleeve',
+    from: points.backNeck,
+    to: points.backArmholeScooped,
+    x: points.backArmholeScooped.x + (sa + 30),
+  })
+  macro('vd', {
+    id: 'hBackSleeve',
+    from: points.backArmholeScooped,
+    to: points.backSleeve,
+    x: points.backArmholeScooped.x + (sa + 15),
+  })
+  macro('vd', {
+    id: 'hBackTotal',
+    from: points.backNeck,
+    to: points.backSleeve,
+    x: points.backArmholeScooped.x + (sa + 45),
+  })
 
-    macro('hd', {
-      id: 'wFrontSleeve',
-      from: points.frontArmholeScooped,
-      to: points.frontSleeve,
-      y: points.frontSleeve.y + (sa + 15),
-      noStartMarker: true,
-      noEndMarker: true,
-    })
-    macro('hd', {
-      id: 'wSleeveHem',
-      from: points.frontSleeve,
-      to: points.backSleeve,
-      y: points.frontSleeve.y + (sa + 15),
-    })
-    macro('hd', {
-      id: 'wBackSleeve',
-      from: points.backSleeve,
-      to: points.backArmholeScooped,
-      y: points.backSleeve.y + (sa + 15),
-      noStartMarker: true,
-      noEndMarker: true,
-    })
-    macro('hd', {
-      id: 'wWidthAtArmpit',
-      from: points.frontArmholeScooped,
-      to: points.backArmholeScooped,
-      y: points.frontSleeve.y + (sa + 30),
-    })
-    macro('hd', {
-      id: 'wWidthAtArmpit2',
-      from: points.frontArmholeScooped,
-      to: points.backArmholeScooped,
-      y: Math.min(points.frontNeck.y, points.backNeck.y) - (sa + 45),
-    })
+  macro('hd', {
+    id: 'wFrontSleeve',
+    from: points.frontArmholeScooped,
+    to: points.frontSleeve,
+    y: points.frontSleeve.y + (sa + 15),
+    noStartMarker: true,
+    noEndMarker: true,
+  })
+  macro('hd', {
+    id: 'wSleeveHem',
+    from: points.frontSleeve,
+    to: points.backSleeve,
+    y: points.frontSleeve.y + (sa + 15),
+  })
+  macro('hd', {
+    id: 'wBackSleeve',
+    from: points.backSleeve,
+    to: points.backArmholeScooped,
+    y: points.backSleeve.y + (sa + 15),
+    noStartMarker: true,
+    noEndMarker: true,
+  })
+  macro('hd', {
+    id: 'wWidthAtArmpit',
+    from: points.frontArmholeScooped,
+    to: points.backArmholeScooped,
+    y: points.frontSleeve.y + (sa + 30),
+  })
+  macro('hd', {
+    id: 'wWidthAtArmpit2',
+    from: points.frontArmholeScooped,
+    to: points.backArmholeScooped,
+    y: Math.min(points.frontNeck.y, points.backNeck.y) - (sa + 45),
+  })
 
-    macro('hd', {
-      id: 'wFrontRaglanSleeveCurvedPortion',
-      from: points.frontArmholeScooped,
-      to: points.frontArmholeScoopEnd,
-      y: Math.min(points.frontNeck.y, points.backNeck.y) - (sa + 15),
-    })
-    macro('hd', {
-      id: 'wFrontRaglanSleeveStraightPortion',
-      from: points.frontArmholeScoopEnd,
-      to: points.frontNeck,
-      y: Math.min(points.frontNeck.y, points.backNeck.y) - (sa + 15),
-    })
-    macro('hd', {
-      id: 'wNeck',
-      from: points.frontNeck,
-      to: points.backNeck,
-      y: Math.min(points.frontNeck.y, points.backNeck.y) - (sa + 15),
-    })
-    macro('hd', {
-      id: 'wBackRaglanSleeveStraightPortion',
-      from: points.backNeck,
-      to: points.backArmholeScoopEnd,
-      y: Math.min(points.frontNeck.y, points.backNeck.y) - (sa + 15),
-    })
-    macro('hd', {
-      id: 'wBackRaglanSleeveCurvedPortion',
-      from: points.backArmholeScoopEnd,
-      to: points.backArmholeScooped,
-      y: Math.min(points.frontNeck.y, points.backNeck.y) - (sa + 15),
-    })
-    macro('hd', {
-      id: 'wBackRaglanSleeve',
-      from: points.backNeck,
-      to: points.backArmholeScooped,
-      y: Math.min(points.frontNeck.y, points.backNeck.y) - (sa + 30),
-    })
-    macro('hd', {
-      id: 'wFrontRaglanSleeve',
-      from: points.frontArmholeScooped,
-      to: points.frontNeck,
-      y: Math.min(points.frontNeck.y, points.backNeck.y) - (sa + 30),
-    })
-  }
+  macro('hd', {
+    id: 'wFrontRaglanSleeveCurvedPortion',
+    from: points.frontArmholeScooped,
+    to: points.frontArmholeScoopEnd,
+    y: Math.min(points.frontNeck.y, points.backNeck.y) - (sa + 15),
+  })
+  macro('hd', {
+    id: 'wFrontRaglanSleeveStraightPortion',
+    from: points.frontArmholeScoopEnd,
+    to: points.frontNeck,
+    y: Math.min(points.frontNeck.y, points.backNeck.y) - (sa + 15),
+  })
+  macro('hd', {
+    id: 'wNeck',
+    from: points.frontNeck,
+    to: points.backNeck,
+    y: Math.min(points.frontNeck.y, points.backNeck.y) - (sa + 15),
+  })
+  macro('hd', {
+    id: 'wBackRaglanSleeveStraightPortion',
+    from: points.backNeck,
+    to: points.backArmholeScoopEnd,
+    y: Math.min(points.frontNeck.y, points.backNeck.y) - (sa + 15),
+  })
+  macro('hd', {
+    id: 'wBackRaglanSleeveCurvedPortion',
+    from: points.backArmholeScoopEnd,
+    to: points.backArmholeScooped,
+    y: Math.min(points.frontNeck.y, points.backNeck.y) - (sa + 15),
+  })
+  macro('hd', {
+    id: 'wBackRaglanSleeve',
+    from: points.backNeck,
+    to: points.backArmholeScooped,
+    y: Math.min(points.frontNeck.y, points.backNeck.y) - (sa + 30),
+  })
+  macro('hd', {
+    id: 'wFrontRaglanSleeve',
+    from: points.frontArmholeScooped,
+    to: points.frontNeck,
+    y: Math.min(points.frontNeck.y, points.backNeck.y) - (sa + 30),
+  })
 
   points.grainlineBottom = points.backSleeve.shiftFractionTowards(points.frontSleeve, 0.5)
   points.grainlineTop = points.raglanCenter.shift(270, neckRadius)
@@ -278,33 +276,34 @@ function draftRaglanSleeve({
     to: points.grainlineBottom,
   })
 
-  store.cutlist.addCut({ cut: 2 })
+  store.cutlist.addCut({ cut: 2, from: 'fabric' })
 
-  if (complete) {
-    snippets.frontArmholeScoopEnd = new Snippet('notch', points.frontArmholeScoopEnd)
-    snippets.backArmholeScoopEnd = new Snippet('bnotch', points.backArmholeScoopEnd)
+  snippets.frontArmholeScoopEnd = new Snippet('notch', points.frontArmholeScoopEnd)
+  snippets.backArmholeScoopEnd = new Snippet('bnotch', points.backArmholeScoopEnd)
 
-    points.title = new Point(0, points.backSleeve.y / 3)
-    macro('title', { at: points.title, nr: 3, title: 'sleeve' })
+  points.title = new Point(0, points.backSleeve.y / 3)
+  macro('title', { at: points.title, nr: 3, title: 'sleeve' })
 
-    points.logo = points.title.shift(-90, 70 * scale)
-    snippets.logo = new Snippet('logo', points.logo)
-    points.scalebox = points.logo.shift(-90, 70 * scale)
-    macro('scalebox', { at: points.scalebox })
+  points.logo = points.title.shift(-90, 70 * scale)
+  snippets.logo = new Snippet('logo', points.logo)
+  points.scalebox = points.logo.shift(-90, 70 * scale)
+  macro('scalebox', { at: points.scalebox })
 
-    if (sa) {
-      paths.sa = paths.saBase
-        .offset(sa)
-        .join(paths.hemBase.offset(options.sleeveRibbing ? sa : absoluteOptions.sleeveHem))
-        .close()
-        .attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = paths.saBase
+      .offset(sa)
+      .join(paths.hemBase.offset(options.sleeveRibbing ? sa : absoluteOptions.sleeveHem))
+      .close()
+      .addClass('fabric sa')
   }
 
-  const neckPath = new Path()
-    .move(points.backNeck)
-    .curve(points.neckCp1, points.neckCp2, points.frontNeck)
-  store.set('neckLengthSide', neckPath.length())
+  store.set(
+    'neckLengthSide',
+    new Path()
+      .move(points.backNeck)
+      .curve(points.neckCp1, points.neckCp2, points.frontNeck)
+      .length()
+  )
 
   return part
 }
@@ -312,9 +311,8 @@ function draftRaglanSleeve({
 export const raglanSleeve = {
   name: 'onyx.raglanSleeve',
   after: [front, back],
-  plugins: [],
   draft: draftRaglanSleeve,
-  measurements: ['neck', 'chest', 'biceps', 'wrist', 'shoulderToWrist'],
+  measurements: ['biceps', 'wrist', 'shoulderToWrist'],
   options: {
     // How much larger to make the armhole as a proportion of the biceps measurement.
     armholeTweakFactor: 1.1,

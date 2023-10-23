@@ -29,44 +29,42 @@ function draftCrotchGusset({
   paths.saBase1 = new Path()
     .move(points.bottomLeftCorner)
     .line(points.bottomRightCorner)
-    .attr('class', 'fabric')
-    .hide(true)
+    .addClass('fabric')
+    .hide()
 
   paths.hemBase = new Path()
     .move(points.bottomRightCorner)
     .line(points.topRightCorner)
-    .attr('class', 'fabric')
-    .hide(true)
+    .addClass('fabric')
+    .hide()
 
   paths.saBase2 = new Path()
     .move(points.topRightCorner)
     .line(points.topLeftCorner)
-    .attr('class', 'fabric')
-    .hide(true)
+    .addClass('fabric')
+    .hide()
 
-  paths.foldBase = new Path().move(points.topLeftCorner).line(points.bottomLeftCorner).hide(true)
+  paths.foldBase = new Path().move(points.topLeftCorner).line(points.bottomLeftCorner).hide()
 
   paths.seam = paths.saBase1
     .join(paths.hemBase)
     .join(paths.saBase2)
     .join(paths.foldBase)
     .close()
-    .attr('class', 'fabric')
+    .addClass('fabric')
 
-  if (paperless) {
-    macro('vd', {
-      id: 'hCrotchGusset',
-      from: points.topLeftCorner,
-      to: points.bottomLeftCorner,
-      x: -(sa + 15),
-    })
-    macro('hd', {
-      id: 'wCrotchGusset',
-      from: points.topLeftCorner,
-      to: points.topRightCorner,
-      y: -(sa + 15),
-    })
-  }
+  macro('vd', {
+    id: 'hCrotchGusset',
+    from: points.topLeftCorner,
+    to: points.bottomLeftCorner,
+    x: -(sa + 15),
+  })
+  macro('hd', {
+    id: 'wCrotchGusset',
+    from: points.topLeftCorner,
+    to: points.topRightCorner,
+    y: -(sa + 15),
+  })
 
   points.cutonfoldFrom = points.topLeftCorner
   points.cutonfoldTo = points.bottomLeftCorner
@@ -83,28 +81,24 @@ function draftCrotchGusset({
     to: points.grainlineTo,
   })
 
-  store.cutlist.addCut({ cut: 1 })
+  store.cutlist.addCut({ cut: 1, from: 'fabric' })
 
-  if (complete) {
-    points.title = new Point(crotchGussetLength / 4, crotchGussetWidth / 2)
-    macro('title', { at: points.title, nr: 5, title: 'crotch gusset' })
-    points.logo = points.title.shift(180, 50 * scale)
-    snippets.logo = new Snippet('logo', points.logo)
+  points.title = new Point(crotchGussetLength / 4, crotchGussetWidth / 2)
+  macro('title', { at: points.title, nr: 5, title: 'crotch gusset' })
+  points.logo = points.title.shift(180, 50 * scale)
+  snippets.logo = new Snippet('logo', points.logo)
 
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.bottomLeftCorner)
-        .line(points.bottomLeftCorner.translate(0, sa))
-        .line(
-          points.bottomRightCorner.translate(options.legRibbing ? sa : absoluteOptions.legHem, sa)
-        )
-        .line(
-          points.topRightCorner.translate(options.legRibbing ? sa : absoluteOptions.legHem, -sa)
-        )
-        .line(points.topLeftCorner.translate(0, -sa))
-        .line(points.topLeftCorner)
-        .attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = new Path()
+      .move(points.bottomLeftCorner)
+      .line(points.bottomLeftCorner.translate(0, sa))
+      .line(
+        points.bottomRightCorner.translate(options.legRibbing ? sa : absoluteOptions.legHem, sa)
+      )
+      .line(points.topRightCorner.translate(options.legRibbing ? sa : absoluteOptions.legHem, -sa))
+      .line(points.topLeftCorner.translate(0, -sa))
+      .line(points.topLeftCorner)
+      .addClass('fabric sa')
   }
 
   return part
@@ -112,7 +106,6 @@ function draftCrotchGusset({
 
 export const crotchGusset = {
   name: 'onyx.crotchGusset',
-  plugins: [],
   draft: draftCrotchGusset,
   after: [front, back],
 }

@@ -2,7 +2,7 @@
 title: "Skirt waistband"
 ---
 
-![The skirt waistband option on Onyx](./skirtwaistband.svg)
+![The skirt waistband option on Onyx](skirtwaistband.svg)
 
 Sets the width of the waistband along the top of the skirt, as a multiple of the seam allowance..
 

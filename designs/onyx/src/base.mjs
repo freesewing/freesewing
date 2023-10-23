@@ -160,7 +160,7 @@ function draftBase({
 
   paths.saBase = new Path()
     .move(points.outseamHem)
-    .curve(points.outseamHem, points.upperLegCp1, points.upperLeg)
+    ._curve(points.upperLegCp1, points.upperLeg)
     .curve(points.upperLegCp2, points.seatCp1, points.seat)
     .curve(points.seatCp2, points.hipsCp1, points.hips)
     .curve(points.hipsCp2, points.waistCp1, points.waist)
@@ -170,29 +170,29 @@ function draftBase({
     .curve(points.neckCp1, points.neckCp2, points.cfNeck)
 
   if (options.frontOnFold) {
-    paths.saBase.hide(true)
-    paths.foldBase = new Path().move(points.cfNeck).line(points.cfCrotch).hide(true)
+    paths.saBase.hide()
+    paths.foldBase = new Path().move(points.cfNeck).line(points.cfCrotch).hide()
     paths.inseamBase = new Path()
       .move(points.cfCrotch)
       .curve(points.cfCrotchCp2, points.crotchEndCp1, points.crotchEnd)
       .line(points.inseamHem)
-      .hide(true)
+      .hide()
   } else {
     paths.saBase
       .line(points.cfCrotch)
       .curve(points.cfCrotchCp2, points.crotchEndCp1, points.crotchEnd)
       .line(points.inseamHem)
-      .hide(true)
+      .hide()
   }
 
-  paths.hemBase = new Path().move(points.inseamHem).line(points.outseamHem).hide(true)
+  paths.hemBase = new Path().move(points.inseamHem).line(points.outseamHem).hide()
 
   const crotchGussetLength =
     new Path()
       .move(points.cfCrotch)
       .curve(points.cfCrotchCp2, points.crotchEndCp1, points.crotchEnd)
       .line(points.inseamHem)
-      .hide(true)
+      .hide()
       .length() * 2
   store.set('crotchGussetLength', crotchGussetLength)
 
@@ -202,85 +202,81 @@ function draftBase({
       .join(paths.inseamBase)
       .join(paths.hemBase)
       .close()
-      .attr('class', 'fabric')
-  else paths.seam = paths.saBase.join(paths.hemBase).close().attr('class', 'fabric')
+      .addClass('fabric')
+  else paths.seam = paths.saBase.join(paths.hemBase).close().addClass('fabric')
 
-  if (paperless) {
-    macro('hd', {
-      id: 'wCrotch',
-      from: points.cfCrotch,
-      to: points.inseamHem,
-      y: points.outseamHem.y + (sa + 15),
-    })
-    macro('hd', {
-      id: 'wLegHem',
-      from: points.inseamHem,
-      to: points.outseamHem,
-      y: points.outseamHem.y + (sa + 15),
-    })
-    macro('hd', {
-      id: 'wCenterToOutseam',
-      from: points.cfCrotch,
-      to: points.outseamHem,
-      y: points.outseamHem.y + (sa + 30),
-    })
-    macro('hd', {
-      id: 'wTotalWidth',
-      from: points.cfCrotch,
-      to: paths.seam.edge('right'),
-      y: points.outseamHem.y + (sa + 45),
-    })
-    macro('vd', {
-      id: 'hInseam',
-      from: points.cfCrotch,
-      to: points.inseamHem,
-      x: 0 - (sa + 15),
-    })
-    macro('vd', {
-      id: 'hOutseam',
-      from: points.outseamHem,
-      to: points.armpitCornerScooped,
-      x: Math.max(points.outseamHem.x, points.armpitCornerScooped.x) + (sa + 15),
-    })
-    macro('vd', {
-      id: 'hArmpitScoop',
-      from: points.armpitCornerScooped,
-      to: points.armpitScoopEnd,
-      x: points.armpitCornerScooped.x + (sa + 30),
-    })
-    macro('hd', {
-      id: 'wArmpitScoop',
-      from: points.armpitScoopEnd,
-      to: points.armpitCornerScooped,
-      y: 0 - (sa + 0),
-    })
-  }
+  macro('hd', {
+    id: 'wCrotch',
+    from: points.cfCrotch,
+    to: points.inseamHem,
+    y: points.outseamHem.y + (sa + 15),
+  })
+  macro('hd', {
+    id: 'wLegHem',
+    from: points.inseamHem,
+    to: points.outseamHem,
+    y: points.outseamHem.y + (sa + 15),
+  })
+  macro('hd', {
+    id: 'wCenterToOutseam',
+    from: points.cfCrotch,
+    to: points.outseamHem,
+    y: points.outseamHem.y + (sa + 30),
+  })
+  macro('hd', {
+    id: 'wTotalWidth',
+    from: points.cfCrotch,
+    to: paths.seam.edge('right'),
+    y: points.outseamHem.y + (sa + 45),
+  })
+  macro('vd', {
+    id: 'hInseam',
+    from: points.cfCrotch,
+    to: points.inseamHem,
+    x: 0 - (sa + 15),
+  })
+  macro('vd', {
+    id: 'hOutseam',
+    from: points.outseamHem,
+    to: points.armpitCornerScooped,
+    x: Math.max(points.outseamHem.x, points.armpitCornerScooped.x) + (sa + 15),
+  })
+  macro('vd', {
+    id: 'hArmpitScoop',
+    from: points.armpitCornerScooped,
+    to: points.armpitScoopEnd,
+    x: points.armpitCornerScooped.x + (sa + 30),
+  })
+  macro('hd', {
+    id: 'wArmpitScoop',
+    from: points.armpitScoopEnd,
+    to: points.armpitCornerScooped,
+    y: 0 - (sa + 0),
+  })
 
-  if (complete) {
-    points.title = new Point(
-      points.armpitCorner.x / 2,
-      (points.cfCrotch.y + points.armpitCornerScooped.y / 2) / 2
-    )
-    macro('title', { at: points.title, nr: 5, title: 'base' })
+  points.title = new Point(
+    points.armpitCorner.x / 2,
+    (points.cfCrotch.y + points.armpitCornerScooped.y / 2) / 2
+  )
+  macro('title', { at: points.title, nr: 5, title: 'base' })
 
-    points.logo = points.title.shift(-90, 70 * scale)
-    snippets.logo = new Snippet('logo', points.logo)
+  points.logo = points.title.shift(-90, 70 * scale)
+  snippets.logo = new Snippet('logo', points.logo)
 
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.inseamHem.shift(270, options.legRibbing ? sa : absoluteOptions.legHem))
-        .join(paths.hemBase.offset(options.legRibbing ? sa : absoluteOptions.legHem))
-        .join(paths.saBase.offset(sa))
-        .attr('class', 'fabric sa')
-      if (options.frontOnFold) {
-        paths.sa.line(points.cfNeck)
-        paths.sa2 = new Path()
-          .move(points.cfCrotch)
-          .join(paths.inseamBase.offset(sa))
-          .line(points.inseamHem.shift(270, options.legRibbing ? sa : absoluteOptions.legHem))
-          .attr('class', 'fabric sa')
-      } else paths.sa.close()
-    }
+  if (sa) {
+    paths.sa = new Path()
+      .move(points.inseamHem.shift(270, options.legRibbing ? sa : absoluteOptions.legHem))
+      .join(paths.hemBase.offset(options.legRibbing ? sa : absoluteOptions.legHem))
+      .join(paths.saBase.offset(sa))
+      .addClass('fabric sa')
+    if (options.frontOnFold) {
+      paths.sa.line(points.cfNeck)
+      paths.sa2 = new Path()
+        .move(points.cfCrotch)
+        .join(paths.inseamBase.offset(sa))
+        .line(points.inseamHem.shift(270, options.legRibbing ? sa : absoluteOptions.legHem))
+        .addClass('fabric sa')
+    } else paths.sa.close()
   }
 
   return part

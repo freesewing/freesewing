@@ -2,7 +2,7 @@
 title: "Leg taper position"
 ---
 
-![The leg taper position option on Onyx](./legtaperposition.svg)
+![The leg taper position option on Onyx](legtaperposition.svg)
 
 Controls how the lower legs are laid out on the pattern.
 

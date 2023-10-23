@@ -32,34 +32,33 @@ function draftSleeveRibbing({
     .line(points.bottomRightCorner)
     .line(points.topRightCorner)
     .line(points.topLeftCorner)
-    .attr('class', 'fabric')
-    .hide(true)
+    .addClass('fabric')
+    .hide()
 
-  paths.foldBase = new Path().move(points.topLeftCorner).line(points.bottomLeftCorner).hide(true)
+  paths.foldBase = new Path().move(points.topLeftCorner).line(points.bottomLeftCorner).hide()
 
-  paths.foldLine = new Path()
-    .move(points.leftCenter)
-    .line(points.rightCenter)
-    .attr('class', 'various dashed')
-    .attr('data-text', 'Fold Line')
-    .attr('data-text-class', 'center')
-
-  paths.seam = paths.saBase.join(paths.foldBase).close().attr('class', 'fabric')
-
-  if (paperless) {
-    macro('vd', {
-      id: 'vdSleeveRibbing',
-      from: points.topLeftCorner,
-      to: points.bottomLeftCorner,
-      x: -(sa + 15),
-    })
-    macro('hd', {
-      id: 'hdSleeveRibbing',
-      from: points.topLeftCorner,
-      to: points.topRightCorner,
-      y: -(sa + 15),
-    })
+  if (complete) {
+    paths.foldLine = new Path()
+      .move(points.leftCenter)
+      .line(points.rightCenter)
+      .addClass('various dashed')
+      .addText('onyx:foldLine', 'center')
   }
+
+  paths.seam = paths.saBase.join(paths.foldBase).close().addClass('fabric')
+
+  macro('vd', {
+    id: 'vdSleeveRibbing',
+    from: points.topLeftCorner,
+    to: points.bottomLeftCorner,
+    x: -(sa + 15),
+  })
+  macro('hd', {
+    id: 'hdSleeveRibbing',
+    from: points.topLeftCorner,
+    to: points.topRightCorner,
+    y: -(sa + 15),
+  })
 
   points.cutonfoldFrom = points.topLeftCorner
   points.cutonfoldTo = points.bottomLeftCorner
@@ -71,29 +70,27 @@ function draftSleeveRibbing({
 
   store.cutlist.addCut({ cut: 2, from: 'ribbing' })
 
-  if (complete) {
-    points.title = new Point(ribbingLength / 4, sleeveRibbingWidth / 2)
-    macro('title', { at: points.title, nr: 10, title: 'sleeveRibbing' })
+  points.title = new Point(ribbingLength / 4, sleeveRibbingWidth / 2)
+  macro('title', { at: points.title, nr: 10, title: 'sleeveRibbing' })
 
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.bottomLeftCorner)
-        .line(points.bottomLeftCorner.translate(0, sa))
-        .line(points.bottomRightCorner.translate(sa, sa))
-        .line(points.topRightCorner.translate(sa, -sa))
-        .line(points.topLeftCorner.translate(0, -sa))
-        .line(points.topLeftCorner)
-        .attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = new Path()
+      .move(points.bottomLeftCorner)
+      .line(points.bottomLeftCorner.translate(0, sa))
+      .line(points.bottomRightCorner.translate(sa, sa))
+      .line(points.topRightCorner.translate(sa, -sa))
+      .line(points.topLeftCorner.translate(0, -sa))
+      .line(points.topLeftCorner)
+      .addClass('fabric sa')
   }
+
   return part
 }
 
 export const sleeveRibbing = {
   name: 'onyx.sleeveRibbing',
-  plugins: [],
   draft: draftSleeveRibbing,
-  after: [raglanSleeve],
+  after: raglanSleeve,
   options: {
     // How wide the sleeve ribbing should be, in absolute measure.
     sleeveRibbingWidth: {

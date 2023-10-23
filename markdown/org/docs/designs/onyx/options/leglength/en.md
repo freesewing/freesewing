@@ -2,7 +2,7 @@
 title: "Leg length"
 ---
 
-![The leg length option on Onyx](./leglength.svg)
+![The leg length option on Onyx](leglength.svg)
 
 Controls how long the legs on your garment will be.
  - 15-30% will make short legs.

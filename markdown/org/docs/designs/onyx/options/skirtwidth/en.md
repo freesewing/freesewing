@@ -2,7 +2,7 @@
 title: "Skirt width"
 ---
 
-![The skirt width option on Onyx](./skirtwidth.svg)
+![The skirt width option on Onyx](skirtwidth.svg)
 
 Controls the width of the skirt at the bottom, as a percentage of the waist measurement.
 

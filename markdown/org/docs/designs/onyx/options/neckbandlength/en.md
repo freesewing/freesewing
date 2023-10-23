@@ -2,7 +2,7 @@
 title: "Neckband length"
 ---
 
-![The neckband length option on Onyx](./neckbandwidth.svg)
+![The neckband length option on Onyx](neckbandlength.svg)
 
 Controls how long to make the neckband, as a percentage of the circumference of the neckline.
 

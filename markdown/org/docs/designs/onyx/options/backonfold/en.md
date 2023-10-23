@@ -2,7 +2,7 @@
 title: "Back on fold"
 ---
 
-![The backonfold option on Onyx](./backonfold.svg)
+![The backonfold option on Onyx]/backonfold.svg)
 
 Controls if the back is made of of a single piece of fabric cut on the fold, or as two mirrored pieces that are sewn together down the center.
 

@@ -1,5 +1,4 @@
-import { neckband } from './neckband.mjs'
-import { front } from './front.mjs'
+import { base } from './base.mjs'
 
 function draftZipperGuard({
   Path,
@@ -43,27 +42,25 @@ function draftZipperGuard({
     .line(points.topRightCorner)
     //    .curve(points.neckGuardCp, points.neckGuardCp, points.topLeftCorner)
     .line(points.topLeftCorner)
-    .attr('class', 'fabric')
-    .hide(true)
+    .addClass('fabric')
+    .hide()
 
-  paths.foldBase = new Path().move(points.topLeftCorner).line(points.bottomLeftCorner).hide(true)
+  paths.foldBase = new Path().move(points.topLeftCorner).line(points.bottomLeftCorner).hide()
 
-  paths.seam = paths.saBase.join(paths.foldBase).close().attr('class', 'fabric')
+  paths.seam = paths.saBase.join(paths.foldBase).close().addClass('fabric')
 
-  if (paperless) {
-    macro('vd', {
-      id: 'hZipperGuard',
-      from: points.topLeftCorner,
-      to: points.bottomLeftCorner,
-      x: -(sa + 15),
-    })
-    macro('hd', {
-      id: 'wZipperGuard',
-      from: points.topLeftCorner,
-      to: points.topRightCorner,
-      y: -(sa + 15),
-    })
-  }
+  macro('vd', {
+    id: 'hZipperGuard',
+    from: points.topLeftCorner,
+    to: points.bottomLeftCorner,
+    x: -(sa + 15),
+  })
+  macro('hd', {
+    id: 'wZipperGuard',
+    from: points.topLeftCorner,
+    to: points.topRightCorner,
+    y: -(sa + 15),
+  })
 
   points.cutonfoldFrom = points.topLeftCorner
   points.cutonfoldTo = points.bottomLeftCorner
@@ -73,22 +70,20 @@ function draftZipperGuard({
     grainline: true,
   })
 
-  store.cutlist.addCut({ cut: 1 })
+  store.cutlist.addCut({ cut: 1, from: 'fabric' })
 
-  if (complete) {
-    points.title = new Point(zipperGuardWidth / 2, zipperGuardLength / 2)
-    macro('title', { at: points.title, nr: 6, title: 'zipper guard' })
+  points.title = new Point(zipperGuardWidth / 2, zipperGuardLength / 2)
+  macro('title', { at: points.title, nr: 6, title: 'zipper guard' })
 
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.bottomLeftCorner)
-        .line(points.bottomLeftCorner.translate(0, sa))
-        .line(points.bottomRightCorner.translate(sa, sa))
-        .line(points.topRightCorner.translate(sa, -sa))
-        .line(points.topLeftCorner.translate(0, -sa))
-        .line(points.topLeftCorner)
-        .attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = new Path()
+      .move(points.bottomLeftCorner)
+      .line(points.bottomLeftCorner.translate(0, sa))
+      .line(points.bottomRightCorner.translate(sa, sa))
+      .line(points.topRightCorner.translate(sa, -sa))
+      .line(points.topLeftCorner.translate(0, -sa))
+      .line(points.topLeftCorner)
+      .addClass('fabric sa')
   }
 
   return part
@@ -98,7 +93,7 @@ export const zipperGuard = {
   name: 'onyx.zipperGuard',
   plugins: [],
   draft: draftZipperGuard,
-  after: [front, neckband],
+  after: [base],
   options: {
     zipperGuardWidth: {
       pct: 50,

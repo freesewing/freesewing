@@ -2,7 +2,7 @@
 title: "Leg ribbing length"
 ---
 
-![The leg ribbing length option on Onyx](./legribbinglength.svg)
+![The leg ribbing length option on Onyx](legribbinglength.svg)
 
 Controls how long the ribbing around the leg is, as a percentage of the leg circumference. Setting this to a smaller value will make the cuff tighter and hold onto the ankle better, while a larger value will give more room.
 

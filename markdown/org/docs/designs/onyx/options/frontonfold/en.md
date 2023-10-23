@@ -2,7 +2,7 @@
 title: "Front on fold"
 ---
 
-![The backonfold option on Onyx](./frontonfold.svg)
+![The backonfold option on Onyx](frontonfold.svg)
 
 Controls if the front is made of of a single piece of fabric cut on the fold, or as two mirrored pieces that are sewn together down the center.
 

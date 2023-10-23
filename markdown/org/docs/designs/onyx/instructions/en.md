@@ -54,29 +54,29 @@ Decide on a closure.
 - Rompers and jumpsuits can use buttons, coiled plastic zippers, invisible zippers, or a large neckhole.
 - NOTE: This design assumes the use of a zipper. If using buttons, you will need to add plackets and buttons yourself. They are not included in this design.
 
-Decide whether to cut the front and/or back pieces on the fold:
-- If using a zipper or buttons, do _not_ cut the piece containing the zipper on the fold.
-- For unitards, cut both the front and back on the fold (total of 2 pieces).
-- For unisuits, cut the back on the fold if making a front-zip unisuit, or the front on the fold is making a back-zip unisuit (total of 3 pieces).
-- For one-piece pajamas, rompers, and jumpsuits, cut only the back on the fold (total of 3 pieces).
+Decide whether to cut the front and/or back pieces _on the fold_:
+- If using a zipper or buttons, do _not_ cut the piece containing the zipper _on the fold_.
+- For unitards, cut both the front and back _on the fold_ (total of 2 pieces).
+- For unisuits, cut the back _on the fold_ if making a front-zip unisuit, or the front _on the fold_ is making a back-zip unisuit (total of 3 pieces).
+- For one-piece pajamas, rompers, and jumpsuits, cut only the back _on the fold_ (total of 3 pieces).
 
 Figure out what kind of fit you want and set your eases accordingly. Make sure you have an appropriate fabric. If in doubt, making the garment too loose is safer than too tight.
 - For unisuits and unitards, you want negative ease. This will allow the stretch/swim fabric to form itself around the wearer's body.
-- For onesie pajamas, you want positive ease and to smooth out the shape (ie., add extra ease to areas that cut in, like the waist, to give the overall garment a less fitted shape).
+- For one-piece pajamas, you want positive ease and to smooth out the shape (ie., add extra ease to areas that cut in, like the waist, to give the overall garment a less fitted shape).
 - Rompers and bodysuits use positive ease, with the amount and distribution of the ease varying greatly based on the intended shape of the garment.
 
 The neckband length will be mostly determined by the material of the neckband. Stretch fabric will generally use a length of around 80%. Less stretchy fabric will be longer, but always shorter than 100%, and ribbed knit (traditional t-shirt neckbands) are around 60-70%.
 
 ### Step 1: Forming the body (NOTE: Will have to be modified for the zipper)
 
-Note: If the front or back was cut on the fold, skip steps producing center seams.
+Note: If the front or back was cut _on the fold_, skip steps producing center seams.
 Note: These instructions are intended to form the seams such that the side seams extend backwards, and the center seams extend leftwards.
 Note: These instructions assume that the zipper is on the front. If the zipper is on the back or there is no zipper, the directions will have to be modified slightly.
 Note: If you're having the zipper zip up across the neckband (recommended for unisuits), remember that
 
 If not using lining:
-- (if front was _not_ cut on the fold) With _good sides together_, place the zipper and neckband into position along the center seam, remembering to take seam allowance into account. Mark where the bottom stop of the zipper is, and serge/overlock the front pieces together starting at the crotch fork and stopping at the bottom stop of the zipper.
-- (if back was _not_ cut on the fold) With _good sides together_, sew the back pieces together.
+- (if front was _not_ cut _on the fold_) With _good sides together_, place the zipper and neckband into position along the center seam, remembering to take seam allowance into account. Mark where the bottom stop of the zipper is, and serge/overlock the front pieces together starting at the crotch fork and stopping at the bottom stop of the zipper.
+- (if back was _not_ cut _on the fold_) With _good sides together_, sew the back pieces together.
 - With _good sides together_, sew the front and the back assemblies together along the two side seams.
 - Skip to step 2.
 

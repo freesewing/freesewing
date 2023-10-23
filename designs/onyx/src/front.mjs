@@ -46,60 +46,58 @@ function draftFront({
   const frontNecklineToRaglanAngle = raglanAngle - (necklineAngleAtRaglan + 180)
   store.set('frontNecklineToRaglanAngle', frontNecklineToRaglanAngle)
 
-  if (paperless) {
-    macro('vd', {
-      id: 'hCenterSeam',
-      from: points.cfNeck,
-      to: points.cfCrotch,
-      x: -(sa + 15),
-    })
-    macro('vd', {
-      id: 'hNeck',
-      from: points.neckShoulderCorner,
-      to: points.cfNeck,
-      x: -(sa + 15),
-      noStartMarker: true,
-      noEndMarker: true,
-    })
-    macro('vd', {
-      id: 'hTotal',
-      from: points.neckShoulderCorner,
-      to: points.inseamHem,
-      x: -(sa + 30),
-    })
-    macro('vd', {
-      id: 'hRaglanSeam',
-      from: points.armpitCornerScooped,
-      to: points.neckShoulderCorner,
-      x: points.armpitCornerScooped.x + (sa + 15),
-    })
-    macro('hd', {
-      id: 'wRaglanSeamStraightPortion',
-      from: points.neckShoulderCorner,
-      to: points.armpitScoopEnd,
-      y: 0 - (sa + 0),
-    })
-    macro('hd', {
-      id: 'wRaglanSeam',
-      from: points.neckShoulderCorner,
-      to: points.armpitCornerScooped,
-      y: 0 - (sa + 15),
-    })
-    macro('hd', {
-      id: 'wNeck',
-      from: points.cfNeck,
-      to: points.neckShoulderCorner,
-      y: 0 - (sa + 15),
-      noStartMarker: true,
-      noEndMarker: true,
-    })
-    macro('hd', {
-      id: 'wCenterToArmpit',
-      from: points.cfNeck,
-      to: points.armpitCornerScooped,
-      y: 0 - (sa + 30),
-    })
-  }
+  macro('vd', {
+    id: 'hCenterSeam',
+    from: points.cfNeck,
+    to: points.cfCrotch,
+    x: -(sa + 15),
+  })
+  macro('vd', {
+    id: 'hNeck',
+    from: points.neckShoulderCorner,
+    to: points.cfNeck,
+    x: -(sa + 15),
+    noStartMarker: true,
+    noEndMarker: true,
+  })
+  macro('vd', {
+    id: 'hTotal',
+    from: points.neckShoulderCorner,
+    to: points.inseamHem,
+    x: -(sa + 30),
+  })
+  macro('vd', {
+    id: 'hRaglanSeam',
+    from: points.armpitCornerScooped,
+    to: points.neckShoulderCorner,
+    x: points.armpitCornerScooped.x + (sa + 15),
+  })
+  macro('hd', {
+    id: 'wRaglanSeamStraightPortion',
+    from: points.neckShoulderCorner,
+    to: points.armpitScoopEnd,
+    y: 0 - (sa + 0),
+  })
+  macro('hd', {
+    id: 'wRaglanSeam',
+    from: points.neckShoulderCorner,
+    to: points.armpitCornerScooped,
+    y: 0 - (sa + 15),
+  })
+  macro('hd', {
+    id: 'wNeck',
+    from: points.cfNeck,
+    to: points.neckShoulderCorner,
+    y: 0 - (sa + 15),
+    noStartMarker: true,
+    noEndMarker: true,
+  })
+  macro('hd', {
+    id: 'wCenterToArmpit',
+    from: points.cfNeck,
+    to: points.armpitCornerScooped,
+    y: 0 - (sa + 30),
+  })
 
   points.cutonfoldFrom = points.cfNeck.shift(0, points.armpitCornerScooped.x / 8)
   points.cutonfoldTo = points.cfCrotch.shift(0, points.armpitCornerScooped.x / 8)
@@ -111,13 +109,13 @@ function draftFront({
       to: points.cutonfoldTo,
       grainline: true,
     })
-    store.cutlist.addCut({ cut: 1 })
+    store.cutlist.addCut({ cut: 1, from: 'fabric' })
   } else {
     macro('grainline', {
       from: points.cutonfoldFrom,
       to: points.cutonfoldTo,
     })
-    store.cutlist.addCut({ cut: 2 })
+    store.cutlist.addCut({ cut: 2, from: 'fabric' })
   }
 
   if (complete) {
@@ -133,8 +131,8 @@ function draftFront({
         .line(points.zipperLowerRight)
         .line(points.zipperUpperRight)
         .close()
-        .setText('Zipper')
-        .attr('class', 'various dashed')
+        .setText('onyx:zipper')
+        .addClass('various dashed')
     }
 
     snippets.armpitScoopEnd = new Snippet('notch', points.armpitScoopEnd)
@@ -156,7 +154,6 @@ function draftFront({
 
 export const front = {
   name: 'onyx.front',
-  plugins: [],
   draft: draftFront,
   from: base,
 }

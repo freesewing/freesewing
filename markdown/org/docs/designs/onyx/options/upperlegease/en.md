@@ -2,7 +2,7 @@
 title: "Upper leg ease"
 ---
 
-![The upper leg ease option on Onyx](./upperlegease.svg)
+![The upper leg ease option on Onyx](upperlegease.svg)
 
 Controls how wide the garment will be at your upper leg.
 

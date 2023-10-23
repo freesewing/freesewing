@@ -2,7 +2,7 @@
 title: "Leg ribbing width"
 ---
 
-![The leg ribbing width option on Onyx](./legribbingwidth.svg)
+![The leg ribbing width option on Onyx](legribbingwidth.svg)
 
 Controls how wide the ribbing around the leg is.
 

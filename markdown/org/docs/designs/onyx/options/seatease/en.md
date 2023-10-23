@@ -2,7 +2,7 @@
 title: "Seat ease"
 ---
 
-![The seat ease option on Onyx](./seatease.svg)
+![The seat ease option on Onyx](seatease.svg)
 
 Controls how wide the garment will be at your seat.
 

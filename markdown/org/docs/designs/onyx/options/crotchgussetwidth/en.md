@@ -2,7 +2,7 @@
 title: "Crotch gusset width"
 ---
 
-![The crotch gusset width option on Onyx](./crotchgussetwidth.svg)
+![The crotch gusset width option on Onyx](crotchgussetwidth.svg)
 
 Adjusts how wide the crotch gusset will be. The crotch gusset is a rectangular strip of fabric running up one leg, across the crotch fork, and down the other leg. It adds room in the crotch, creates a stronger outfit by avoiding the 4-way seam normally found at the crotch fork, and greatly reduces the need for scoops around the crotch fork.
 

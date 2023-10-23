@@ -1,6 +1,3 @@
-import { front } from './front.mjs'
-import { back } from './back.mjs'
-import { raglanSleeve } from './raglansleeve.mjs'
 import { hood } from './hood.mjs'
 
 function draftHoodFront({
@@ -22,7 +19,7 @@ function draftHoodFront({
   scale,
 }) {
   // Note: Very small values of options.hoodFrontPieceSize cause crashes for unknown reasons if we attempt to draw the part.
-  if (options.neckStyle != 'hood' || options.hoodFrontPieceSize < 0.001) return part.hide()
+  if (options.neckStyle !== 'hood' || options.hoodFrontPieceSize < 0.001) return part.hide()
 
   const curveDip = store.get('hoodFrontPieceCurve')
   const neckLength = store.get('hoodFrontPieceNeckLength')
@@ -98,51 +95,49 @@ function draftHoodFront({
     .move(points.frontBottom)
     .curve(points.frontBottomCp2, points.backBottomCp1, points.backBottom)
     .line(points.backTop)
-    .attr('class', 'fabric')
-    .hide(true)
+    .addClass('fabric')
+    .hide()
 
   paths.saHem = new Path()
     .move(points.frontTop)
     .curve(points.frontTopCp2, points.frontBottomCp1, points.frontBottom)
-    .attr('class', 'fabric')
-    .hide(true)
+    .addClass('fabric')
+    .hide()
 
-  paths.foldBase = new Path().move(points.backTop).line(points.frontTop).hide(true)
+  paths.foldBase = new Path().move(points.backTop).line(points.frontTop).hide()
   paths.seam = paths.saBase.join(paths.foldBase).join(paths.saHem).attr('class', 'fabric')
 
-  if (paperless) {
-    macro('vd', {
-      id: 'hFrontHeight',
-      from: points.frontTop,
-      to: points.frontBottom,
-      x: points.frontTop.x - (sa + 15),
-    })
-    macro('vd', {
-      id: 'hTotalHeight',
-      from: points.frontTop,
-      to: paths.saBase.edge('bottom'),
-      x: points.frontTop.x - (sa + 30),
-    })
-    macro('vd', {
-      id: 'hBackHeight',
-      from: points.backTop,
-      to: points.backBottom,
-      x: points.backTop.x + (sa + 15),
-    })
-    macro('hd', {
-      id: 'wTopWidth',
-      from: points.frontTop,
-      to: points.backTop,
-      y: points.frontTop.y - (sa + 15),
-    })
-    macro('pd', {
-      id: 'lNeck',
-      path: new Path()
-        .move(points.frontBottom)
-        .curve(points.frontBottomCp2, points.backBottomCp1, points.backBottom),
-      d: 15,
-    })
-  }
+  macro('vd', {
+    id: 'hFrontHeight',
+    from: points.frontTop,
+    to: points.frontBottom,
+    x: points.frontTop.x - (sa + 15),
+  })
+  macro('vd', {
+    id: 'hTotalHeight',
+    from: points.frontTop,
+    to: paths.saBase.edge('bottom'),
+    x: points.frontTop.x - (sa + 30),
+  })
+  macro('vd', {
+    id: 'hBackHeight',
+    from: points.backTop,
+    to: points.backBottom,
+    x: points.backTop.x + (sa + 15),
+  })
+  macro('hd', {
+    id: 'wTopWidth',
+    from: points.frontTop,
+    to: points.backTop,
+    y: points.frontTop.y - (sa + 15),
+  })
+  macro('pd', {
+    id: 'lNeck',
+    path: new Path()
+      .move(points.frontBottom)
+      .curve(points.frontBottomCp2, points.backBottomCp1, points.backBottom),
+    d: 15,
+  })
 
   points.cutonfoldFrom = points.frontTop
   points.cutonfoldTo = points.backTop
@@ -160,30 +155,25 @@ function draftHoodFront({
     to: points.grainlineTo,
   })
 
-  store.cutlist.addCut({ cut: 1 })
+  store.cutlist.addCut({ cut: 1, from: 'fabric' })
 
-  if (complete) {
-    points.title = new Point((points.frontBottom.x * 7) / 8, points.frontBottom.y / 2)
-    macro('title', { at: points.title, nr: 8, title: 'hoodFront' })
-    points.logo = points.title.translate(20 * scale, 70 * scale)
-    snippets.logo = new Snippet('logo', points.logo)
+  points.title = new Point((points.frontBottom.x * 7) / 8, points.frontBottom.y / 2)
+  macro('title', { at: points.title, nr: 8, title: 'hoodFront' })
+  points.logo = points.title.translate(20 * scale, 70 * scale)
+  snippets.logo = new Snippet('logo', points.logo)
 
-    if (sa) {
-      paths.sa = paths.saHem
-        .offset(absoluteOptions.hoodHem)
-        .join(paths.saBase.offset(sa))
-        .line(points.frontTop.translate(-absoluteOptions.hoodHem, 0))
-        .attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = paths.saHem
+      .offset(absoluteOptions.hoodHem)
+      .join(paths.saBase.offset(sa))
+      .line(points.frontTop.translate(-absoluteOptions.hoodHem, 0))
+      .addClass('fabric sa')
   }
   return part
 }
 
 export const hoodFront = {
   name: 'onyx.hoodFront',
-  plugins: [],
   draft: draftHoodFront,
-  after: [front, back, raglanSleeve, hood],
-  measurements: ['neck', 'chest', 'biceps', 'wrist', 'head'],
-  options: {},
+  after: [hood],
 }

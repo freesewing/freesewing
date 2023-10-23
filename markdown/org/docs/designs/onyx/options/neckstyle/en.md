@@ -2,7 +2,7 @@
 title: "Neck style"
 ---
 
-![The neck style option on Onyx](./neckstyle.svg)
+![The neck style option on Onyx](neckstyle.svg)
 
 Choose whether to add a hood to your garment, or to finish it with a neckband.
 

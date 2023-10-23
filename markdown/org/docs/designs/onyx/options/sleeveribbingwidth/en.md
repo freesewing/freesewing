@@ -2,7 +2,7 @@
 title: "Sleeve ribbing width"
 ---
 
-![The sleeve ribbing width option on Onyx](./sleeveribbingwidth.svg)
+![The sleeve ribbing width option on Onyx](sleeveribbingwidth.svg)
 
 Controls how wide the ribbing around the sleeve is.
 

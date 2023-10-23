@@ -1,6 +1,3 @@
-import { front } from './front.mjs'
-import { back } from './back.mjs'
-
 function draftSkirt({
   Path,
   Point,
@@ -33,44 +30,42 @@ function draftSkirt({
   paths.hemBase = new Path()
     .move(points.bottomLeftCorner)
     .line(points.bottomRightCorner)
-    .attr('class', 'fabric')
+    .addClass('fabric')
     .hide(true)
 
   paths.saBase = new Path()
     .move(points.bottomRightCorner)
     .line(points.topRightCorner)
-    .attr('class', 'fabric')
-    .hide(true)
+    .addClass('fabric')
+    .hide()
 
   paths.waistBase = new Path()
     .move(points.topRightCorner)
     .line(points.topLeftCorner)
-    .attr('class', 'fabric')
-    .hide(true)
+    .addClass('fabric')
+    .hide()
 
-  paths.foldBase = new Path().move(points.topLeftCorner).line(points.bottomLeftCorner).hide(true)
+  paths.foldBase = new Path().move(points.topLeftCorner).line(points.bottomLeftCorner).hide()
 
   paths.seam = paths.hemBase
     .join(paths.saBase)
     .join(paths.waistBase)
     .join(paths.foldBase)
     .close()
-    .attr('class', 'fabric')
+    .addClass('fabric')
 
-  if (paperless) {
-    macro('vd', {
-      id: 'hSkirt',
-      from: points.topLeftCorner,
-      to: points.bottomLeftCorner,
-      x: -(sa + 15),
-    })
-    macro('hd', {
-      id: 'wSkirt',
-      from: points.topLeftCorner,
-      to: points.topRightCorner,
-      y: -(sa + 15),
-    })
-  }
+  macro('vd', {
+    id: 'hSkirt',
+    from: points.topLeftCorner,
+    to: points.bottomLeftCorner,
+    x: -(sa + 15),
+  })
+  macro('hd', {
+    id: 'wSkirt',
+    from: points.topLeftCorner,
+    to: points.topRightCorner,
+    y: -(sa + 15),
+  })
 
   points.cutonfoldFrom = points.topLeftCorner
   points.cutonfoldTo = points.bottomLeftCorner
@@ -80,24 +75,22 @@ function draftSkirt({
     grainline: true,
   })
 
-  store.cutlist.addCut({ cut: 1 })
+  store.cutlist.addCut({ cut: 1, from: 'fabric' })
 
-  if (complete) {
-    points.title = new Point(skirtWidth / 4, skirtLength / 2)
-    macro('title', { at: points.title, nr: 9, title: 'skirt' })
-    points.logo = points.title.shift(180, 50 * scale)
-    snippets.logo = new Snippet('logo', points.logo)
+  points.title = new Point(skirtWidth / 4, skirtLength / 2)
+  macro('title', { at: points.title, nr: 9, title: 'skirt' })
+  points.logo = points.title.shift(180, 50 * scale)
+  snippets.logo = new Snippet('logo', points.logo)
 
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.bottomLeftCorner)
-        .line(points.bottomLeftCorner.translate(0, absoluteOptions.skirtHem))
-        .line(points.bottomRightCorner.translate(sa, absoluteOptions.skirtHem))
-        .line(points.topRightCorner.translate(sa, -absoluteOptions.skirtWaistband))
-        .line(points.topLeftCorner.translate(0, -absoluteOptions.skirtWaistband))
-        .line(points.topLeftCorner)
-        .attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = new Path()
+      .move(points.bottomLeftCorner)
+      .line(points.bottomLeftCorner.translate(0, absoluteOptions.skirtHem))
+      .line(points.bottomRightCorner.translate(sa, absoluteOptions.skirtHem))
+      .line(points.topRightCorner.translate(sa, -absoluteOptions.skirtWaistband))
+      .line(points.topLeftCorner.translate(0, -absoluteOptions.skirtWaistband))
+      .line(points.topLeftCorner)
+      .addClass('fabric sa')
   }
 
   return part
@@ -105,9 +98,8 @@ function draftSkirt({
 
 export const skirt = {
   name: 'onyx.skirt',
-  plugins: [],
   draft: draftSkirt,
-  after: [front, back],
+  measurements: ['waist'],
   options: {
     // How wide the skirt will be, as a percentage of waist measurement. It will be this width at the bottom, and gathered at the top down to 100%.
     skirtWidth: {

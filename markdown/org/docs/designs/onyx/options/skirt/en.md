@@ -2,7 +2,7 @@
 title: "Skirt"
 ---
 
-![The skirt option on Onyx](./skirt.svg)
+![The skirt option on Onyx](skirt.svg)
 
 Select whether or not you want to add a simple gathered skirt around the waist of the garment.
 

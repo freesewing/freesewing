@@ -2,7 +2,7 @@
 title: "Hood height"
 ---
 
-![The hood height option on Onyx](./hoodheight.svg)
+![The hood height option on Onyx](hoodheight.svg)
 
 Controls how tall the hood will be.
 
