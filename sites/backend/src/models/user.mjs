@@ -695,9 +695,15 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
      */
     let actionUrl = false
     if (this.record.status === 0)
-      actionUrl = i18nUrl(body.language, `/confirm/${type}/${this.Confirmation.record.id}/${check}`)
+      actionUrl = i18nUrl(
+        body.language,
+        `/confirm/${type}?id=${this.Confirmation.record.id}&check=${check}`
+      )
     else if (this.record.status === 1)
-      actionUrl = i18nUrl(body.language, `/confirm/signin/${this.Confirmation.record.id}/${check}`)
+      actionUrl = i18nUrl(
+        body.language,
+        `/confirm/signin?id=${this.Confirmation.record.id}&check=${check}`
+      )
 
     /*
      * Send email unless it's a test and we don't want to send test emails
@@ -822,7 +828,7 @@ UserModel.prototype.guardedCreate = async function ({ body }) {
       replacements: {
         actionUrl: i18nUrl(
           this.language,
-          `/confirm/signup/${this.Confirmation.record.id}/${check}`
+          `/confirm/signup?id=${this.Confirmation.record.id}&check=${check}`
         ),
         whyUrl: i18nUrl(this.language, `/docs/faq/email/why-signup`),
         supportUrl: i18nUrl(this.language, `/patrons/join`),
@@ -1071,7 +1077,7 @@ UserModel.prototype.sendSigninlink = async function (req) {
       replacements: {
         actionUrl: i18nUrl(
           this.record.language,
-          `/confirm/signin/${this.Confirmation.record.id}/${check}`
+          `/confirm/signin?id=${this.Confirmation.record.id}&check=${check}`
         ),
         whyUrl: i18nUrl(this.record.language, `/docs/faq/email/why-signin-link`),
         supportUrl: i18nUrl(this.record.language, `/patrons/join`),
@@ -1350,7 +1356,7 @@ UserModel.prototype.guardedUpdate = async function ({ body, user }) {
         replacements: {
           actionUrl: i18nUrl(
             this.record.language,
-            `/confirm/emailchange/${this.Confirmation.record.id}/${check}`
+            `/confirm/emailchange?id=${this.Confirmation.record.id}&check=${check}`
           ),
           whyUrl: i18nUrl(this.record.language, `/docs/faq/email/why-emailchange`),
           supportUrl: i18nUrl(this.record.language, `/patrons/join`),
