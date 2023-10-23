@@ -1,29 +1,252 @@
 {
-  "t": "Hugo, der Hoodie",
-  "d": "Hugo ist ein Kapuzensweatshirt mit Raglanärmeln.",
+  "t": "Onyx one-piece",
+  "d": "Onyx is a versatile one-piece garment with several forms.",
   "p": {
+    "base": "Base",
     "back": "Back",
-    "cuff": "Cuff",
     "front": "Front",
-    "hoodCenter": "Hood center",
-    "hoodSide": "Hood side",
-    "pocket": "Pocket",
-    "pocketFacing": "Pocket facing",
-    "sleeve": "Sleeve",
-    "waistband": "Waistband"
+    "neckband": "Neckband",
+    "raglanSleeve": "Sleeve",
+    "zipperGuard": "Zipper guard",
+    "crotchGusset": "Crotch gusset",
+    "hood": "Hood back",
+    "hoodFront": "Hood front",
+    "skirt": "Swim skirt",
+    "sleeveRibbing": "Sleeve ribbing",
+    "legRibbing": "Leg ribbing"
   },
-  "s": {
-    "cuff": "Manschette",
-    "hoodCenter": "Mitte der Kapuze",
-    "hoodSide": "Kapuzenseite",
-    "pocketFacing": "Taschenbesatz",
-    "pocket": "Tasche",
-    "waistband": "Bund"
-  },
+  "s": {},
   "o": {
+    "neckbandLength": {
+      "t": "Neckband length",
+      "d": "Controls how long the neckband is, as a percentage of the circumference of the neckline."
+    },
+    "neckbandWidth": {
+      "t": "Neckband width",
+      "d": "Controls how wide the finished neckband will be."
+    },
+    "hoodHem": {
+      "t": "Hood hem",
+      "d": "Sets the hem allowance along the front of the hood, as a multiple of the seam allowance."
+    },
+    "sleeveRibbing": {
+      "t": "Sleeve Ribbing",
+      "d": "Choose whether to make ribbed knit cuffs for the sleeves or to use a hem."
+    },
+    "sleeveRibbingNo": {
+      "t": "Hem",
+      "d": "Finish the sleeves with a hem."
+    },
+    "sleeveRibbingYes": {
+      "t": "Ribbing",
+      "d": "Finish the sleeves with a piece of ribbing."
+    },
+    "sleeveRibbingLength": {
+      "t": "Sleeve Ribbing Length",
+      "d": "Controls how long the ribbing around the sleeve is, as a percentage of the sleeve circumference."
+    },
+    "sleeveRibbingWidth": {
+      "t": "Sleeve Ribbing Width",
+      "d": "Controls how wide the ribbing around the sleeve is."
+    },
+    "sleeveHem": {
+      "t": "Sleeve hem",
+      "d": "Sets the hem allowance of the hem along the end of the sleeves, as a multiple of the seam allowance."
+    },
+    "legRibbing": {
+      "t": "Leg Ribbing",
+      "d": "Choose whether to make ribbed knit cuffs for the legs or to use a hem."
+    },
+    "legRibbingNo": {
+      "t": "Hem",
+      "d": "Finish the legs with a hem."
+    },
+    "legRibbingYes": {
+      "t": "Ribbing",
+      "d": "Finish the legs with a piece of ribbing."
+    },
+    "legRibbingLength": {
+      "t": "Leg Ribbing Length",
+      "d": "Controls how long the ribbing around the leg is, as a percentage of the leg circumference."
+    },
+    "legRibbingWidth": {
+      "t": "Leg Ribbing Width",
+      "d": "Controls how wide the ribbing around the leg is."
+    },
+    "legHem": {
+      "t": "Leg hem",
+      "d": "Sets the hem allowance of the hem along the bottom of the legs, as a multiple of the seam allowance."
+    },
+    "backOnFold": {
+      "t": "Back on fold",
+      "d": "Enable this option to make the back out of a single piece, or disable to make it out of two mirrored pieces joined by a seam. It is recommended to disable this if placing a back zipper, and enable it otherwise."
+    },
+    "backOnFoldNo": {
+      "t": "Cut separate",
+      "d": "Cut two separate mirrored back pieces"
+    },
+    "backOnFoldYes": {
+      "t": "Cut on fold",
+      "d": "Cut the back as a single piece, on the fold"
+    },
+    "frontOnFold": {
+      "t": "Front on fold",
+      "d": "Enable this option to make the front out of a single piece, or disable to make it out of two mirrored pieces joined by a seam. It is recommended to disable this if placing a front zipper, and enable it otherwise."
+    },
+    "frontOnFoldNo": {
+      "t": "Cut separate",
+      "d": "Cut two separate mirrored front pieces"
+    },
+    "frontOnFoldYes": {
+      "t": "Cut on fold",
+      "d": "Cut the back as a single piece, on the fold"
+    },
+    "zipperLength": {
+      "t": "Zipper length",
+      "d": "The length of the zipper, as a percentage of the vertical trunk. It is recommended that you match this length (shown below in cm/in) to the length of the actual zipper, measured from lower stop to upper stop."
+    },
+    "zipperGuardWidth": {
+      "t": "Zipper guard width",
+      "d": "How wide to make the zipper guard."
+    },
+    "neckGuardLength": {
+      "t": "Neck guard length",
+      "d": "How far to have the zipper guard extend past the top of the zipper."
+    },
+    "skirtHem": {
+      "t": "Skirt hem",
+      "d": "Sets the hem allowance of the hem along the bottom of the skirt, as a multiple of the seam allowance."
+    },
+    "skirtWaistband": {
+      "t": "Skirt waistband",
+      "d": "Sets the width of the waistband along the top of the skirt, as a multiple of the seam allowance."
+    },
+
+    "hoodHeight": {
+      "t": "Hood height",
+      "d": "Controls how tall the hood will be."
+    },
+    "hoodDepth": {
+      "t": "Hood depth",
+      "d": "Controls how much room will be in the hood around the back of the head."
+    },
+    "centerSeamEase": {
+      "t": "Center seam ease",
+      "d": "Controls how long the center seam will be, and thus how low the crotch fork of the garment will be."
+    },
+    "outseamEase": {
+      "t": "Outseam ease",
+      "d": "Controls how far down the garment the waist, hips, seat, and upper leg points on the outseam will be."
+    },
+    "chestEase": {
+      "t": "Chest ease",
+      "d": "Controls how wide the garment will be around the chest."
+    },
+    "waistEase": {
+      "t": "Waist ease",
+      "d": "Controls how wide the garment will be around the chest."
+    },
     "hipsEase": {
-      "t": "Zugabe Hüfte",
-      "d": "Die Menge an Bequemlichkeitszugabe an deinen Hüften."
+      "t": "Hips ease",
+      "d": "Controls how wide the garment will be at the bottom hem. This option is only used if the straight sides option is disabled."
+    },
+    "seatEase": {
+      "t": "Seat ease",
+      "d": "Controls how wide the seat is."
+    },
+    "crotchGussetWidth": {
+      "t": "Crotch gusset Width",
+      "d": "Controls how wide the crotch gusset will be. Adjust so that the front and back pieces look smooth and clean around the crotch fork and upper legs. Deeper thighs and abdomens require a larger value, while wider ones require a smaller value."
+    },
+    "upperLegEase": {
+      "t": "Upper leg ease",
+      "d": "Controls how wide the garment will be around the upper legs."
+    },
+    "legHemEase": {
+      "t": "Leg hem ease",
+      "d": "Controls how wide the bottom of the legs will be."
+    },
+    "neckBalance": {
+      "t": "Neck position",
+      "d": "Controls where the neck hole is placed on the garment."
+    },
+    "neckEase": {
+      "t": "Neck ease",
+      "d": "Controls how large the neck hole is."
+    },
+    "sleeveEase": {
+      "t": "Sleeve ease",
+      "d": "Affects how wide the sleeve is at the armhole on all garments, and has some affect on the width at the hem of short sleeved garments."
+    },
+    "wristEase": {
+      "t": "Wrist ease",
+      "d": "Affects how wide the end of the sleeve is on sleeves that extend past the biceps. The effect is greater on longer sleeves."
+    },
+
+    "neckStyle": {
+      "t": "Neck style",
+      "d": "Select whether you want to add a hood to the garment, or finish the neck with a neckband."
+    },
+    "neckStyle.neckband": {
+      "t": "Neckband",
+      "d": "Finish the neck with a neckband."
+    },
+    "neckStyle.hood": {
+      "t": "Hood",
+      "d": "Generate a hood for the garment."
+    },
+    "sleeveLength": {
+      "t": "Sleeve length",
+      "d": "Controls how long the sleeves of the garment will be."
+    },
+    "legLength": {
+      "t": "Leg length",
+      "d": "Controls how long the legs of the garment will be."
+    },
+    "hoodFrontPieceSize": {
+      "t": "Hood front piece size",
+      "d": "Controls if a front piece will be used, and how wide the front piece of the hood will be."
+    },
+    "hoodFrontBonus": {
+      "t": "Hood front bonus",
+      "d": "Controls how far forward the hood comes over the forehead."
+    },
+    "hoodFrontDip": {
+      "t": "Hood Front dip",
+      "d": "Controls far down the front of the hood drops over the forehead."
+    },
+    "skirt": {
+      "t": "Skirt",
+      "d": "Select whether or not you want to add a simple gathered skirt around the waist of the garment."
+    },
+    "skirtNo": {
+      "t": "Nothing",
+      "d": "A skirt will not be generated."
+    },
+    "skirtYes": {
+      "t": "Swim skirt",
+      "d": "A skirt will be generated."
+    },
+    "skirtLength": {
+      "t": "Skirt length",
+      "d": "Controls the length of the skirt, as a percentage of the waist to upper leg measurement."
+    },
+    "skirtWidth": {
+      "t": "Skirt width",
+      "d": "Controls the width of the skirt at the bottom, as a percentage of the waist measurement."
+    },
+
+    "legTaperPosition": {
+      "t": "Leg taper position",
+      "d": "Controls how the lower legs are laid out on the pattern."
+    },
+    "raglanScoopLength": {
+      "t": "Raglan scoop length",
+      "d": "Controls how far out from the armhole the raglan seam starts to scoop."
+    },
+    "raglanScoopMagnitude": {
+      "t": "Raglan scoop depth",
+      "d": "Controls how much extra material to place under the armpits."
     }
   }
 }
