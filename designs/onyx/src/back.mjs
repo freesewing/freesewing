@@ -192,7 +192,7 @@ function draftBack({
         .move(points.cfCrotch)
         .join(paths.inseamBase.offset(sa))
         .line(points.inseamHem.shift(270, options.legRibbing ? sa : absoluteOptions.legHem))
-        .addClass('sa fabric')
+        .addClass('fabric sa')
     } else paths.sa.close()
   }
 
