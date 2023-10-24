@@ -4,7 +4,7 @@ title: Your rights as a FreeSewing user
 
 Freesewing wendet die Datenschutzgrundverordnung (DSGVO) der Europäischen Union (EU) an.
 
-EU citizen or not, as a FreeSewing user you have the following rights:
+Ob EU-Bürger/-in oder nicht, für uns sind dies deine Rechte:
 
 - [Das Recht, informiert zu werden](#the-right-to-be-informed)
 - [Das Recht auf Zugriff](#the-right-of-access)
