@@ -1,5 +1,5 @@
 ---
-title: Pattern Notation Guide
+title: Patroon notatie gids
 ---
 
 Hopelijk zijn onze patronen makkelijk genoeg om te begrijpen, maar als je iets tegenkomt dat je verwart hieronder is een referentie van al onze patroon notatie:
