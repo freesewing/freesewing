@@ -67,12 +67,14 @@ Figure out what kind of fit you want and set your eases accordingly. Make sure y
 
 The neckband length will be mostly determined by the material of the neckband. Stretch fabric will generally use a length of around 80%. Less stretchy fabric will be longer, but always shorter than 100%, and ribbed knit (traditional t-shirt neckbands) are around 60-70%.
 
-### Step 1: Forming the body (NOTE: Will have to be modified for the zipper)
+Check around the hips, upper legs, and crotch fork, and make sure that everything is smooth and looks right. Small errors in measurements or options can cause issues here, and it's best to tweak seat east, upper leg ease, crotch gusset width, and leg taper position until all curves are smooth. The outseam should roughly match the silhouette of the wearer.
+
+### Step 1: Forming the body
 
 Note: If the front or back was cut _on the fold_, skip steps producing center seams.
 Note: These instructions are intended to form the seams such that the side seams extend backwards, and the center seams extend leftwards.
 Note: These instructions assume that the zipper is on the front. If the zipper is on the back or there is no zipper, the directions will have to be modified slightly.
-Note: If you're having the zipper zip up across the neckband (recommended for unisuits), remember that
+Note: If you're having the zipper zip up across the neckband (recommended for unisuits), remember that.
 
 If not using lining:
 - (if front was _not_ cut _on the fold_) With _good sides together_, place the zipper and neckband into position along the center seam, remembering to take seam allowance into account. Mark where the bottom stop of the zipper is, and serge/overlock the front pieces together starting at the crotch fork and stopping at the bottom stop of the zipper.
