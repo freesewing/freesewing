@@ -9,6 +9,7 @@ function draftUmaBase({
   measurements,
   store,
   utils,
+  macro,
   expand,
   units,
   part,
@@ -106,8 +107,9 @@ function draftUmaBase({
   /*
    * Now extend the gusset into the back part
    */
-  for (const flip of ['cfWaist', 'cfWaistband', 'sideWaistband', 'sideLeg'])
+  for (const flip of ['cfWaist', 'cfWaistband', 'sideWaistband', 'sideLeg']) {
     points[`${flip}Back`] = points[flip].flipY(points.cfMiddle)
+  }
 
   /*
    * Dip the waistband at the back
@@ -134,12 +136,30 @@ function draftUmaBase({
   )
 
   /*
+   * If the back exposure is very high (more than 80%) we need to draft a thong style
+   * and that requires narrowing the gusset as we make our way from front to back
+   */
+  const thongFactor = options.backExposure > 0.8 ? 1 - (options.backExposure - 0.8) * 4 : 1
+
+  /*
    * Now add the back gusset control point
    */
-  points.gussetBackCp = points.sideMiddle.shift(
-    90,
-    points.sideLegCpBack.dy(points.sideMiddle) * options.backExposure
-  )
+  points.gussetBackCp = points.sideMiddle
+    .shift(90, points.sideLegCpBack.dy(points.sideMiddle) * options.backExposure)
+    .shift(180, points.sideMiddle.x * (1 - thongFactor))
+
+  /*
+   * Force the sideMiddle point to lie on the line between front and back
+   * control points. This only kicks in when backExposure > 80 and thus
+   * thongFactor is not 1
+   */
+  if (thongFactor !== 1) {
+    points.sideMiddle = utils.beamIntersectsY(
+      points.gussetFrontCp,
+      points.gussetBackCp,
+      points.sideMiddle.y
+    )
+  }
 
   /*
    * Make checking for bulge easy
@@ -237,6 +257,7 @@ function draftUmaBase({
       .move(points.sideLegBack)
       .curve(points.sideLegCpBack, points.gussetBackCp, points.sideMiddle)
       .split(points.backGussetSplit)
+
     /*
      * Add the controls points of the split path to the part points
      */
@@ -320,6 +341,19 @@ function draftUmaBase({
       2
   )
 
+  macro('vd', {
+    from: points.sideWaistband,
+    to: points.sideWaistbandBack,
+    id: 'sdfsd',
+    x: points.sideWaistband.x + 30,
+  })
+  macro('hd', {
+    from: points.cfWaistband,
+    to: points.sideWaistband,
+    id: 'sd',
+    y: points.sideWaistband.y - 30,
+  })
+
   /*
    * Also flag this to the user, as well as the expand possibility
    */
@@ -337,7 +371,7 @@ function draftUmaBase({
   /*
    * Hide this part, others will extend it
    */
-  return part.hide()
+  return part
 }
 
 export const base = {
@@ -349,12 +383,12 @@ export const base = {
     /*
      * xStretch is for the horizontal fabric stretch
      */
-    xStretch: { pct: 15, min: 0, max: 50, menu: 'fit' },
+    xStretch: { pct: 15, min: 0, max: 30, menu: 'fit' },
 
     /*
      * yStretch is for the vertical fabric stretch
      */
-    yStretch: { pct: 15, min: 0, max: 50, menu: 'fit' },
+    yStretch: { pct: 5, min: 0, max: 15, menu: 'fit' },
 
     /*
      * The gusset width, based on the seam measurement
@@ -391,7 +425,7 @@ export const base = {
     /*
      * Rise controls the waist height
      */
-    rise: { pct: 46, min: 30, max: 100, menu: 'style' },
+    rise: { pct: 50, min: 30, max: 100, menu: 'style' },
 
     /*
      * legRise controls how high the leg opening is cut out
@@ -401,7 +435,7 @@ export const base = {
     /*
      * Front dip dips the front waistband
      */
-    frontDip: { pct: 5.0, min: -5, max: 15, menu: 'style' },
+    frontDip: { pct: 10.0, min: 0, max: 25, menu: 'style' },
 
     /*
      * frontExposure determines how much skin is on display at the front
@@ -412,13 +446,14 @@ export const base = {
     /*
      * Front dip dips the back waistband
      */
-    backDip: { pct: 2.5, min: -5, max: 15, menu: 'style' },
+    backDip: { pct: -5, min: -15, max: 10, menu: 'style' },
 
     /*
      * backExposure determines how much skin is on display at the back
      * Note that backDip will also influence this
      */
-    backExposure: { pct: 30, min: 25, max: 125, menu: 'style' },
+    backExposure: { pct: 30, min: 25, max: 115, menu: 'style' },
   },
   draft: draftUmaBase,
+  hide: { self: true },
 }
