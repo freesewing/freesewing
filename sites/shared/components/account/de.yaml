@@ -12,6 +12,7 @@ actions: Aktionen
 created: Erstellt
 updated: Aktualisiert
 expires: Läuft ab
+role: Role
 yourProfile: Dein Profil
 yourPatterns: Deine Schnittmuster
 yourSets: Deine Maßeinheiten
@@ -217,7 +218,7 @@ curateCuratedSets: Curate our selection of curated measurements sets
 useThisSet: Verwende diesen Satz von Messungen
 ownSets: Your own measurements sets
 noOwnSets: You do not have any of your own measurements sets (yet)
-pleaseMtm: Because made-to-measure lies at the heart of what we do, we strongly suggest you take accurate measurements.
+pleaseMtm: Because our patterns are bespokee, we strongly suggest you take accurate measurements.
 noOwnSetsMsg: You can store your measurements as a measurements set, after which you can generate as many patterns as you want for them.
 measurements: Maße
 chooseASet: Choose a measurements set
@@ -236,7 +237,7 @@ csetSuggestedMsg: Your submission has been registered and will be processed by o
 itIsAvailableAt: It is available at
 csetNameMsg: Each curated set has a name. You can suggest your own name or a pseudonym.
 patternNew: Ein neues Muster generieren
-patternNewInfo: Wähle ein Design aus, füge deine Maße hinzu und wir erstellen ein maßgeschneidertes Nähmuster für dich.
+patternNewInfo: Pick a design, add your measurements set, and we'll generate a bespoke sewing pattern for you.
 designNew: Ein neues Design erstellen
 designNewInfo: FreeSewing-Designs sind kleine Bündel von JavaScript-Code, die Muster erzeugen. Es ist nicht schwer, eigene Designs zu erstellen, und wir haben eine ausführliche Anleitung für dich, damit du loslegen kannst.
 pluginNew: Ein neues Plugin erstellen
