@@ -4,7 +4,7 @@ title: Your rights as a FreeSewing user
 
 Freesewing past de algemene verordening inzake gegevensbescherming (GDPR) van de Europese Unie (EU) toe.
 
-EU citizen or not, as a FreeSewing user you have the following rights:
+EU-burger of niet, voor ons zijn dit je rechten:
 
 - [Het recht om geïnformeerd te worden](#the-right-to-be-informed)
 - [Het recht op toegang](#the-right-of-access)

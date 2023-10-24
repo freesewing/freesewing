@@ -4,7 +4,7 @@ title: "Separate buttonhole placket"
 
 ![Separate buttonhole placket](separatebuttonholeplacket.svg)
 
-Whether or not you want the buttonhole placket to be a separate pattern part.
+Si desea o no que la placket del agujero del botón sea una parte separada del patrón.
 
 
 

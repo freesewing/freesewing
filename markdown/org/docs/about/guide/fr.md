@@ -3,7 +3,7 @@ title: Getting started with FreeSewing.org
 order: 100
 ---
 
-Hi there 👋 and welcome to FreeSewing.org 🙂
+Bonjour 👋 et bienvenue sur freesewing.org 🙂
 
 If you are new to FreeSewing, please take a few minutes to read this page and learn all about:
 

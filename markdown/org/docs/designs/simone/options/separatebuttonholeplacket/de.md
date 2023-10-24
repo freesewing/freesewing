@@ -1,10 +1,10 @@
 ---
-title: "Separate buttonhole placket"
+title: "Separate Knopflochleiste"
 ---
 
-![Separate buttonhole placket](separatebuttonholeplacket.svg)
+![Separate Knopflochleiste](separatebuttonholeplacket.svg)
 
-Whether or not you want the buttonhole placket to be a separate pattern part.
+Ob der Buttonlochplatz ein separates Musterteil sein soll oder nicht.
 
 
 

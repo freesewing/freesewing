@@ -1,5 +1,5 @@
 ---
-title: Frequently Asked Questions
+title: Foire Aux Questions (FAQ)
 ---
 
 <ReadMore recurse />

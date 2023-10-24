@@ -1,5 +1,5 @@
 ---
-title: Pattern Notation Guide
+title: Guía de notación de patrón
 ---
 
 Hopefully our patterns are easy enough to understand, but if you come across something that confuses you, below is a reference of all our pattern notation:

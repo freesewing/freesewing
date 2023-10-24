@@ -1,5 +1,5 @@
 ---
-title: Назва
+title: 'API Keys: Name'
 ---
 
 Every measurements set has a **name** attribute that is mandatory.

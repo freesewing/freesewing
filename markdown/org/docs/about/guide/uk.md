@@ -1,11 +1,11 @@
 ---
-title: Getting started with FreeSewing.org
+title: Перші кроки
 order: 100
 ---
 
-Hi there 👋 and welcome to FreeSewing.org 🙂
+Привіт 👋 і ласкаво просимо на сайт freesewing.org 🙂
 
-If you are new to FreeSewing, please take a few minutes to read this page and learn all about:
+Прочитання цього гайду займе близько 10 хвилин та допоможе зорієнтуватися на нашому вебсайті та продуктивно ним користуватися.
 
 - [What FreeSewing is](#what-is-freesewing)
 - [What FreeSewing.org is](#what-is-freesewingorg)

@@ -82,7 +82,7 @@ Diese Daten werden für jede Person mit einem Account auf unserer Website gespei
 
 - Um dich zu authentifizieren
 - Um dich bei Bedarf kontaktieren zu können
-- To be able to generate bespoke sewing patterns for you
+- Um für dich maßgeschneiderte Schnittmuster erstellen zu können
 
 ##### Für wie lange behalten wir sie?
 
@@ -98,7 +98,7 @@ Diese Daten werden für jede Person mit einem Account auf unserer Website gespei
 
 ### Nutzung von Minderjährigen unter 16 Jahren
 
-For legal reasons, you need to be at least 16 years old to use FreeSewing.
+Aus rechtlichen Gründen musst du mindestens 16 Jahre alt sein, um Freesewing zu benutzen.
 
 ### Datenverantwortlicher und Kontaktinformationen
 
@@ -140,7 +140,7 @@ Bisher:
 - [Deine Rechte][2]
 - [Deine Einwilligungen][3]
 
-[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/about/privacy
+[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy
 
 [2]: /docs/about/rights/
 

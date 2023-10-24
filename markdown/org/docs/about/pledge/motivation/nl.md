@@ -4,8 +4,8 @@ title: Motivatie
 
 <Note>
 
-This is a personal note by Joost De Cock -- the FreeSewing maintainer -- about
-his motivations for [the FreeSewing revenue pledge](/docs/about/pledge/)
+Dit is een persoonlijke opmerking van Joost De Cock -- de FreeSewing onderhouder -- over
+zijn motivaties voor [de FreeSewing revenue pledge](//docs/various/pledge/)
 
 </Note>
 
@@ -58,4 +58,4 @@ Het is ook een van de weinige organisaties die het wereldwijde bereik hebben om 
 
 Ik hoop dat dit de keuze voor Artsen zonder Grenzen als het goede doel van FreeSewing verklaart. En ik hoop dat u samen met ons de wereld wat beter zult maken.
 
-Dus ik ben blij om [deze belofte](/docs/about/pledge/) te doen.
+Dus ik ben blij om [deze belofte](/docs/various/pledge/) te doen.

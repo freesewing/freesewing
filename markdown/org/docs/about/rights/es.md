@@ -4,7 +4,7 @@ title: Your rights as a FreeSewing user
 
 La libertad aplica el Reglamento General de Protección de Datos (PIB) de la Unión Europea (UE).
 
-EU citizen or not, as a FreeSewing user you have the following rights:
+Los ciudadanos de la UE o no, para nosotros estos son sus derechos:
 
 - [El derecho a ser informado](#the-right-to-be-informed)
 - [El derecho de acceso](#the-right-of-access)

@@ -1,10 +1,10 @@
 ---
-title: Your rights as a FreeSewing user
+title: Ваші права
 ---
 
 Freesewing застосовує Загальний регламент захисту даних (GDPR) Європейського Союзу (ЄС).
 
-EU citizen or not, as a FreeSewing user you have the following rights:
+Громадянин ЄС чи ні, для нас це ваші права:
 
 - [Право бути поінформованим](#the-right-to-be-informed)
 - [Право на доступ](#the-right-of-access)
