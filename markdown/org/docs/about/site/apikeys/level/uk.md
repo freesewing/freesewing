@@ -1,5 +1,5 @@
 ---
-title: Permission level
+title: 'API Keys: Permission level'
 ---
 
 Every API key has a **permission level** the controls what the key can do.
