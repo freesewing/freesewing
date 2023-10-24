@@ -82,7 +82,7 @@ Ces données sont stockées pour toute personne ayant un compte sur notre site W
 
 - Pour vous authentifier
 - Pour être en mesure de vous contacter si nécessaire
-- To be able to generate bespoke sewing patterns for you
+- To be able to generate made-to-measure sewing patterns for you
 
 ##### Combien de temps les gardons-nous ?
 
@@ -98,7 +98,7 @@ Ces données sont stockées pour toute personne ayant un compte sur notre site W
 
 ### Utilisation par les mineurs de moins de 16 ans
 
-For legal reasons, you need to be at least 16 years old to use FreeSewing.
+Pour des raisons juridiques, vous devez avoir au moins 16 ans pour utiliser Freesewing.
 
 ### Gestionnaire des données et informations de contact
 
@@ -124,7 +124,7 @@ Bien que cela signifie qu'ils traitent vos données (au sens strict du mot), ils
 
 ### Warrant canaries
 
-Bien que nous n'ayons aucune intention de partager vos données personnelles, nous ne sommes pas au-dessus des lois.
+Si la loi nous oblige à le faire, ou si nous pensons que ce serait un moindre mal, nous divulguerons des données personnelles.
 
 Si la loi nous oblige à le faire, ou si nous pensons que ce serait un moindre mal, nous divulguerons des données personnelles.
 
@@ -140,7 +140,7 @@ So far:
 - [Vos droits][2]
 - [Votre consentement][3]
 
-[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/about/privacy
+[1]: https://github.com/freesewing/markdown/commits/develop/org/docs/various/privacy
 
 [2]: /docs/about/rights/
 
