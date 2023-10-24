@@ -16,10 +16,7 @@ function draftFront({
   snippets,
   Snippet,
 }) {
-  const raglanAngle = store.get('raglanAngle')
   const neckRadius = store.get('neckRadius')
-  const verticalTrunk = store.get('verticalTrunk')
-  const zipperLength = verticalTrunk * options.zipperLength
 
   //  points.neckCenter = points.raglanCenter.shift(270, options.neckBalance * neckRadius)
 
@@ -43,7 +40,7 @@ function draftFront({
   )
   points.neckCp2 = points.cfNeck.shift(0, necklineArcLength / 3)
 
-  const frontNecklineToRaglanAngle = raglanAngle - (necklineAngleAtRaglan + 180)
+  const frontNecklineToRaglanAngle = store.get('raglanAngle') - (necklineAngleAtRaglan + 180)
   store.set('frontNecklineToRaglanAngle', frontNecklineToRaglanAngle)
 
   macro('vd', {
@@ -118,7 +115,8 @@ function draftFront({
     store.cutlist.addCut({ cut: 2, from: 'fabric' })
   }
 
-  if (complete) {
+  if (complete && options.zipperPosition === 'front') {
+    const zipperLength = store.get('verticalTrunk') * options.zipperLength
     if (zipperLength > 0) {
       points.zipperUpperLeft = points.cfNeck.shift(180, Math.max(sa, 5))
       points.zipperLowerLeft = points.zipperUpperLeft.shift(270, zipperLength)
@@ -134,15 +132,15 @@ function draftFront({
         .setText('onyx:zipper')
         .addClass('various dashed')
     }
-
-    snippets.armpitScoopEnd = new Snippet('notch', points.armpitScoopEnd)
-
-    points.title = new Point(
-      points.armpitCorner.x / 2,
-      (points.cfCrotch.y + points.armpitCornerScooped.y / 2) / 2
-    )
-    macro('title', { at: points.title, nr: 1, title: 'front' })
   }
+
+  snippets.armpitScoopEnd = new Snippet('notch', points.armpitScoopEnd)
+
+  points.title = new Point(
+    points.armpitCorner.x / 2,
+    (points.cfCrotch.y + points.armpitCornerScooped.y / 2) / 2
+  )
+  macro('title', { at: points.title, nr: 1, title: 'front' })
 
   const neckPath = new Path()
     .move(points.neckShoulderCorner)

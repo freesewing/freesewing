@@ -17,7 +17,6 @@ function draftBack({
   snippets,
   Snippet,
 }) {
-  const raglanAngle = store.get('raglanAngle')
   const neckRadius = store.get('neckRadius')
 
   points.neckCenter = points.raglanCenter.shift(270, -options.neckBalance * neckRadius)
@@ -42,7 +41,7 @@ function draftBack({
   )
   points.neckCp2 = points.cfNeck.shift(0, necklineArcLength / 3)
 
-  const backNecklineToRaglanAngle = raglanAngle - (necklineAngleAtRaglan + 180)
+  const backNecklineToRaglanAngle = store.get('raglanAngle') - (necklineAngleAtRaglan + 180)
   store.set('backNecklineToRaglanAngle', backNecklineToRaglanAngle)
 
   paths.saBase = new Path()
@@ -155,6 +154,25 @@ function draftBack({
       to: points.cutonfoldTo,
     })
     store.cutlist.addCut({ cut: 2, from: 'fabric' })
+  }
+
+  if (complete && options.zipperPosition === 'back') {
+    const zipperLength = store.get('verticalTrunk') * options.zipperLength
+    if (zipperLength > 0) {
+      points.zipperUpperLeft = points.cfNeck.shift(180, Math.max(sa, 5))
+      points.zipperLowerLeft = points.zipperUpperLeft.shift(270, zipperLength)
+      points.zipperLowerRight = points.zipperLowerLeft.shift(0, 2 * Math.max(sa, 5))
+      points.zipperUpperRight = points.zipperLowerRight.shift(90, zipperLength)
+
+      paths.zipper = new Path()
+        .move(points.zipperUpperLeft)
+        .line(points.zipperLowerLeft)
+        .line(points.zipperLowerRight)
+        .line(points.zipperUpperRight)
+        .close()
+        .setText('onyx:zipper')
+        .addClass('various dashed')
+    }
   }
 
   snippets.armpitScoopEnd = new Snippet('bnotch', points.armpitScoopEnd)

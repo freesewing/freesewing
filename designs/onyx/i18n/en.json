@@ -185,6 +185,22 @@
       "d": "Affects how wide the end of the sleeve is on sleeves that extend past the biceps. The effect is greater on longer sleeves."
     },
 
+    "zipperPosition": {
+      "t": "Zipper Position",
+      "d": "Select where to place the zipper."
+    },
+    "zipperPosition.front": {
+      "t": "Front",
+      "d": "Place the zipper on the front."
+    },
+    "zipperPosition.back": {
+      "t": "Back",
+      "d": "Place the zipper on the back."
+    },
+    "zipperPosition.none": {
+      "t": "None",
+      "d": "Do not use a zipper."
+    },
     "neckStyle": {
       "t": "Neck style",
       "d": "Select whether you want to add a hood to the garment, or finish the neck with a neckband."

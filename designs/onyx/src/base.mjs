@@ -30,7 +30,6 @@ function draftBase({
     (measurements.hpsToWaistFront + measurements.hpsToWaistBack + measurements.crossSeam) *
     (1 + options.centerSeamEase)
   store.set('verticalTrunk', verticalTrunk)
-  //  const crotchGussetWidth = verticalTrunk * options.crotchGussetWidth
   const crotchGussetWidth = 0.22 * measurements.upperLeg * options.crotchGussetWidth // .18169 = (PI - 2) / (2PI) = extra fabric needed to go from a trunk to two legs. Fudged upwards a bit because thighs are deeper than they are wide.
   store.set('crotchGussetWidth', crotchGussetWidth)
   const crotchScoopWidth = crotchGussetWidth / 4
@@ -56,7 +55,6 @@ function draftBase({
     (adjustedLegLength * measurements.ankle + (1 - adjustedLegLength) * measurements.upperLeg)
   store.set('legWidth', legHemCircumference) // Needed for the ribbing piece.
   legHemCircumference -= crotchGussetWidth
-  //  const grainlinePosition = seat / 8 + crotchScoopWidth / 2
 
   store.set('neckRadius', neckRadius)
 
@@ -313,6 +311,8 @@ export const base = {
     sleeveRibbing: { bool: false, menu: 'construction' },
     // Are we using ribbing to finish the legs, or just hemming?
     legRibbing: { bool: false, menu: 'construction' },
+    // Where, if anywhere, to place the zipper.
+    zipperPosition: { dflt: 'front', list: ['front', 'back', 'none'], menu: 'style' },
     // How much ease to give for the neck, as a percentage.
     neckEase: { pct: 50, min: -30, max: 150, menu: 'fit' },
     chestEase: { pct: 0, min: -40, max: 50, menu: 'fit' },

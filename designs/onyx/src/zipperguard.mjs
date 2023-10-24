@@ -14,6 +14,8 @@ function draftZipperGuard({
   sa,
   macro,
 }) {
+  if (options.zipperPosition === 'none') return part.hide()
+
   const zipperGuardTapeCoverMaterial = 0.75
 
   const verticalTrunk = store.get('verticalTrunk')
