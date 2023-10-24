@@ -6,4 +6,4 @@ Una doble toma es una manera común de marcar la parte trasera del patrón. Com�
 
 Diferentes partes del mundo tienen diferentes convenciones o tradiciones sobre cómo calibrar patrones. Para evitar la confución, usamos una marca de estilo diferente para indicar el dorso, como está detallado en [nuestro guía de notación][1].
 
-[1]: /docs/about/notation/
+[1]: /docs/various/notation/
