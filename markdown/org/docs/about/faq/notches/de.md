@@ -4,6 +4,6 @@ title: Warum verwendet ihr keine doppelten Knipse, um die Rückseite des Schnitt
 
 Doppelte Knipse sind eine gängige Methode, um die Rückseite eines Schnittmusters zu markieren. Gängig, aber nicht universell.
 
-Verschiedene Teile der Welt haben unterschiedliche Konventionen oder Traditionen, wie man Schnitte markiert. Um Verwirrung zu vermeiden, verwenden wir eine anders gestaltete Kerbe, um die Rückseite zu markieren. Dies wird in [unserer Anleitung zur Schnittmusternotation][1] genauer beschrieben.
+Verschiedene Teile der Welt haben unterschiedliche Konventionen oder Traditionen, wie man Schnitte markiert. Um Verwirrung zu vermeiden, verwenden wir einen anders gestalteten Knips, um die Rückseite zu markieren. Dies wird in [unserer Anleitung zur Schnittmusternotation][1] genauer beschrieben.
 
-[1]: /docs/about/notation/
+[1]: /docs/various/notation/
