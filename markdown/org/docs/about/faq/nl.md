@@ -1,5 +1,5 @@
 ---
-title: Frequently Asked Questions
+title: Vaak gestelde vragen
 ---
 
 <ReadMore recurse />
