@@ -1,5 +1,5 @@
 ---
-title: Pattern Notation Guide
+title: Guide des repères de patron
 ---
 
 Nous espérons que nos patrons sont assez faciles à comprendre, mais si vous rencontrez quelque chose qui ne vous paraît pas clair, veuillez trouver ci-dessous une référence de toutes nos repères de patron :
