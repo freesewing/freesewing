@@ -9,7 +9,6 @@ function draftFront({
   options,
   part,
   store,
-  paperless,
   complete,
   sa,
   macro,

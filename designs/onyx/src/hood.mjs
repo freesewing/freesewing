@@ -11,8 +11,6 @@ function draftHood({
   absoluteOptions,
   part,
   store,
-  paperless,
-  complete,
   sa,
   macro,
   snippets,

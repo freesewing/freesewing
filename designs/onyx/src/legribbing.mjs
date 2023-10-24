@@ -9,7 +9,6 @@ function draftLegRibbing({
   absoluteOptions,
   part,
   store,
-  paperless,
   complete,
   sa,
   macro,
