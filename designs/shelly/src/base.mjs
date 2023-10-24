@@ -10,8 +10,6 @@ function draftBase({
   options,
   part,
   store,
-  paperless,
-  complete,
   sa,
   macro,
   snippets,
@@ -117,40 +115,38 @@ function draftBase({
     .curve(points.armpitScoopCp1, points.armpitScoopCp2, points.armpitScoopEnd)
     .line(points.neckShoulderCorner)
     .curve(points.neckCP1, points.neckCP2, points.cfNeck)
-    .hide(true)
+    .hide()
 
-  paths.foldBase = new Path().move(points.cfNeck).line(points.cfHem).hide(true)
+  paths.foldBase = new Path().move(points.cfNeck).line(points.cfHem).hide()
 
-  paths.hemBase = new Path().move(points.cfHem).line(points.sideHem).hide(true)
+  paths.hemBase = new Path().move(points.cfHem).line(points.sideHem).hide()
 
-  paths.seam = paths.saBase.join(paths.foldBase).join(paths.hemBase).close().attr('class', 'fabric')
+  paths.seam = paths.saBase.join(paths.foldBase).join(paths.hemBase).close().addClass('fabric')
 
-  if (paperless) {
-    macro('hd', {
-      id: 'wHem',
-      from: points.cfHem,
-      to: points.sideHem,
-      y: points.sideHem.y + (sa + 15),
-    })
-    macro('vd', {
-      id: 'hSide',
-      from: points.sideHem,
-      to: points.armpitCornerScooped,
-      x: Math.max(points.sideHem.x, points.armpitCornerScooped.x) + (15 + sa),
-    })
-    macro('vd', {
-      id: 'hArmpitScoop',
-      from: points.armpitCornerScooped,
-      to: points.armpitScoopEnd,
-      x: points.armpitCornerScooped.x + (30 + sa),
-    })
-    macro('hd', {
-      id: 'wArmpitScoop',
-      from: points.armpitScoopEnd,
-      to: points.armpitCornerScooped,
-      y: 0 - (sa + 0),
-    })
-  }
+  macro('hd', {
+    id: 'wHem',
+    from: points.cfHem,
+    to: points.sideHem,
+    y: points.sideHem.y + (sa + 15),
+  })
+  macro('vd', {
+    id: 'hSide',
+    from: points.sideHem,
+    to: points.armpitCornerScooped,
+    x: Math.max(points.sideHem.x, points.armpitCornerScooped.x) + (15 + sa),
+  })
+  macro('vd', {
+    id: 'hArmpitScoop',
+    from: points.armpitCornerScooped,
+    to: points.armpitScoopEnd,
+    x: points.armpitCornerScooped.x + (30 + sa),
+  })
+  macro('hd', {
+    id: 'wArmpitScoop',
+    from: points.armpitScoopEnd,
+    to: points.armpitCornerScooped,
+    y: 0 - (sa + 0),
+  })
 
   points.cutonfoldFrom = points.cfNeck
   points.cutonfoldTo = points.cfHem
@@ -160,24 +156,22 @@ function draftBase({
     grainline: true,
   })
 
-  if (complete) {
-    points.title = new Point(
-      points.armpitCorner.x / 2,
-      (points.cfHem.y + points.armpitCornerScooped.y / 2) / 2
-    )
-    macro('title', { at: points.title, nr: 5, title: 'base' })
+  points.title = new Point(
+    points.armpitCorner.x / 2,
+    (points.cfHem.y + points.armpitCornerScooped.y / 2) / 2
+  )
+  macro('title', { at: points.title, nr: 5, title: 'base' })
 
-    points.logo = points.title.shift(-90, 70 * scale)
-    snippets.logo = new Snippet('logo', points.logo)
+  points.logo = points.title.shift(-90, 70 * scale)
+  snippets.logo = new Snippet('logo', points.logo)
 
-    if (sa) {
-      paths.sa = new Path()
-        .move(points.cfHem)
-        .join(paths.hemBase.offset(sa * options.hemWidth))
-        .join(paths.saBase.offset(sa))
-        .line(points.cfNeck)
-        .attr('class', 'fabric sa')
-    }
+  if (sa) {
+    paths.sa = new Path()
+      .move(points.cfHem)
+      .join(paths.hemBase.offset(sa * options.hemWidth))
+      .join(paths.saBase.offset(sa))
+      .line(points.cfNeck)
+      .addClass('fabric sa')
   }
 
   return part
