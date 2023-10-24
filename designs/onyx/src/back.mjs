@@ -10,7 +10,6 @@ function draftBack({
   absoluteOptions,
   part,
   store,
-  paperless,
   complete,
   sa,
   macro,
@@ -82,60 +81,58 @@ function draftBack({
       .addClass('fabric')
   else paths.seam = paths.saBase.join(paths.hemBase).close().addClass('fabric')
 
-  if (paperless) {
-    macro('vd', {
-      id: 'hCenterSeam',
-      from: points.cfNeck,
-      to: points.cfCrotch,
-      x: -(sa + 15),
-    })
-    macro('vd', {
-      id: 'hNeck',
-      from: points.neckShoulderCorner,
-      to: points.cfNeck,
-      x: -(sa + 15),
-      noStartMarker: true,
-      noEndMarker: true,
-    })
-    macro('vd', {
-      id: 'hTotal',
-      from: points.neckShoulderCorner,
-      to: points.inseamHem,
-      x: -(sa + 30),
-    })
-    macro('vd', {
-      id: 'hRaglanSeam',
-      from: points.armpitCornerScooped,
-      to: points.neckShoulderCorner,
-      x: points.armpitCornerScooped.x + (sa + 15),
-    })
-    macro('hd', {
-      id: 'wRaglanSeamStraightPortion',
-      from: points.neckShoulderCorner,
-      to: points.armpitScoopEnd,
-      y: 0 - (sa + 0),
-    })
-    macro('hd', {
-      id: 'wRaglanSeam',
-      from: points.neckShoulderCorner,
-      to: points.armpitCornerScooped,
-      y: 0 - (sa + 15),
-    })
-    macro('hd', {
-      id: 'wNeck',
-      from: points.cfNeck,
-      to: points.neckShoulderCorner,
-      y: 0 - (sa + 15),
-      noStartMarker: true,
-      noEndMarker: true,
-    })
-    macro('hd', {
-      id: 'wCenterToArmpit',
-      from: points.cfNeck,
-      to: points.armpitCornerScooped,
-      y: 0 - (sa + 30),
-    })
-  }
+  macro('vd', {
+    id: 'hCenterSeam',
+    from: points.cfNeck,
+    to: points.cfCrotch,
+    x: -(sa + 15),
+  })
+  macro('vd', {
+    id: 'hNeck',
+    from: points.neckShoulderCorner,
+    to: points.cfNeck,
+    x: -(sa + 15),
+    noStartMarker: true,
+    noEndMarker: true,
+  })
+  macro('vd', {
+    id: 'hTotal',
+    from: points.neckShoulderCorner,
+    to: points.inseamHem,
+    x: -(sa + 30),
+  })
+  macro('vd', {
+    id: 'hRaglanSeam',
+    from: points.armpitCornerScooped,
+    to: points.neckShoulderCorner,
+    x: points.armpitCornerScooped.x + (sa + 15),
+  })
+  macro('hd', {
+    id: 'wRaglanSeamStraightPortion',
+    from: points.neckShoulderCorner,
+    to: points.armpitScoopEnd,
+    y: 0 - (sa + 0),
+  })
+  macro('hd', {
+    id: 'wRaglanSeam',
+    from: points.neckShoulderCorner,
+    to: points.armpitCornerScooped,
+    y: 0 - (sa + 15),
+  })
+  macro('hd', {
+    id: 'wNeck',
+    from: points.cfNeck,
+    to: points.neckShoulderCorner,
+    y: 0 - (sa + 15),
+    noStartMarker: true,
+    noEndMarker: true,
+  })
+  macro('hd', {
+    id: 'wCenterToArmpit',
+    from: points.cfNeck,
+    to: points.armpitCornerScooped,
+    y: 0 - (sa + 30),
+  })
 
   points.cutonfoldFrom = points.cfNeck.shift(0, points.armpitCornerScooped.x / 8)
   points.cutonfoldTo = points.cfCrotch.shift(0, points.armpitCornerScooped.x / 8)

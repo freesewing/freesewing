@@ -9,7 +9,6 @@ function draftNeckband({
   absoluteOptions,
   part,
   store,
-  paperless,
   complete,
   sa,
   macro,

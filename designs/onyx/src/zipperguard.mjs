@@ -9,8 +9,6 @@ function draftZipperGuard({
   absoluteOptions,
   part,
   store,
-  paperless,
-  complete,
   sa,
   macro,
 }) {

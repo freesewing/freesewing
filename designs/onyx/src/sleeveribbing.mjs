@@ -9,7 +9,6 @@ function draftSleeveRibbing({
   absoluteOptions,
   part,
   store,
-  paperless,
   complete,
   sa,
   macro,
