@@ -310,13 +310,11 @@ export const raglanSleeve = {
   name: 'onyx.raglanSleeve',
   after: [front, back],
   draft: draftRaglanSleeve,
-  measurements: ['biceps', 'wrist', 'shoulderToWrist'],
+  measurements: ['wrist', 'shoulderToWrist'],
   options: {
     // How much larger to make the armhole as a proportion of the biceps measurement.
     armholeTweakFactor: 1.1,
     bicepsPosition: 0.2,
-    // How much ease to put vertically around the armhole and the shoulder joint. Transitions gradually towards wristEase as one goes down the sleeve.
-    sleeveEase: { pct: 0, min: -30, max: 50, menu: 'fit' },
     // How much ease to put around the wrist. For sleeves that don't reach the wrist, this value is interpolated with sleeveEase.
     wristEase: { pct: 0, min: -30, max: 50, menu: 'fit' },
     // How long the sleeve is. 100 is a long sleeve ending at the wrist. 20 is a typical short sleeve.
