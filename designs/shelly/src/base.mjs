@@ -39,7 +39,13 @@ function draftBase({
   points.raglanCenter = new Point(0, 0)
   points.neckCenter = points.raglanCenter.shift(270, options.neckBalance * neckRadius)
 
-  points.armpitCorner = new Point(chest / 4, armpitYPosition)
+  points.armpitCorner = new Point(chest / 4, armpitYPosition).translate(
+    0,
+    Math.max(
+      0,
+      (measurements.biceps * options.armholeTweakFactor * options.sleeveEase) / (2 * Math.PI)
+    )
+  )
 
   points.neckShoulderCorner = utils.beamIntersectsCircle(
     points.neckCenter,
@@ -182,7 +188,15 @@ export const base = {
   plugins: [bustPlugin],
   draft: draftBase,
   hide: { self: true },
-  measurements: ['neck', 'chest', 'hips', 'waistToHips', 'hpsToWaistBack', 'waistToArmpit'],
+  measurements: [
+    'biceps',
+    'neck',
+    'chest',
+    'hips',
+    'waistToHips',
+    'hpsToWaistBack',
+    'waistToArmpit',
+  ],
   options: {
     // How much ease to give for the neck, as a percentage.
     neckEase: { pct: 50, min: -30, max: 150, menu: 'fit' },
@@ -202,6 +216,10 @@ export const base = {
     hemWidth: { pct: 200, min: 0, max: 800, menu: 'construction' },
     // How the body curves along the side from the armpit to the side of the hips, as a % of the length of the side seam. Negative values form a concave body and positive values form a convex body.
     sideShape: { pct: 0, min: -20, max: 20, menu: 'advanced' },
+    // How much larger to make the armhole as a proportion of the biceps measurement.
+    armholeTweakFactor: 1.1,
+    // How much ease to put vertically around the armhole and the shoulder joint. Transitions gradually towards wristEase as one goes down the sleeve.
+    sleeveEase: { pct: 0, min: -30, max: 50, menu: 'fit' },
   },
   optionalMeasurements: ['highBust'],
 }
