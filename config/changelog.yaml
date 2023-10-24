@@ -58,6 +58,14 @@ Unreleased:
       - Replaced all instances of 'seperate' with 'separate' in option names
     plugintest:
       - Remove names from old plugins from list option
+    uma:
+      - Changed defaults to have more rise in the back
+      - Increase default rise
+      - Decrease default vertical stretch
+      - Decreased default back waist dip
+      - Increased default front waist dip
+      - Allowed lower values on back exposure, causing back to flare out
+
     waralee:
       - Pocket opening was not drawn on the facing and pocket pieces. Fixes #4026
       - Improve placement of the front welt. Fixes #4828
