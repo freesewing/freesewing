@@ -142,9 +142,9 @@ So far:
 
 [2]: /docs/about/rights/
 
-[3]: /account/consent/
-
 [v]: #how-we-use-your-visitor-data
+
+[3]: /account/consent/
 
 [s]: #how-we-use-your-subscriber-data
 
