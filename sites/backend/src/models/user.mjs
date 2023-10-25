@@ -930,7 +930,7 @@ UserModel.prototype.passwordSignIn = async function (req) {
   /*
    * Final check for account status and other things before returning
    */
-  const [ok, err, status] = this.isOk()
+  const [ok, err, status] = this.isOk(401, 'signinFailed', true)
   if (ok === true) return this.signInOk()
   else return this.setResponse(status, err)
 }
@@ -1009,7 +1009,7 @@ UserModel.prototype.linkSignIn = async function (req) {
   /*
    * Sign in was a success, run a final check before returning
    */
-  const [ok, err, status] = this.isOk(401, 'signInFailed')
+  const [ok, err, status] = this.isOk(401, 'signInFailed', true)
   if (ok === true) return this.signInOk()
   else return this.setResponse(status, err)
 }
@@ -1755,7 +1755,11 @@ UserModel.prototype.getToken = function () {
 /*
  * Helper method to check an account is ok
  */
-UserModel.prototype.isOk = function (failStatus = 401, failMsg = 'authenticationFailed') {
+UserModel.prototype.isOk = function (
+  failStatus = 401,
+  failMsg = 'authenticationFailed',
+  allowWithoutConsent = false
+) {
   /*
    * These are all the checks we run to see if an account is 'ok'
    */
@@ -1763,14 +1767,14 @@ UserModel.prototype.isOk = function (failStatus = 401, failMsg = 'authentication
     this.exists &&
     this.record &&
     this.record.status > 0 &&
-    this.record.consent > 0 &&
+    (allowWithoutConsent || this.record.consent > 0) &&
     this.record.role &&
     this.record.role !== 'blocked'
   )
     return [true, false]
 
   if (!this.exists) return [false, 'noSuchUser', 404]
-  if (this.record.consent < 1) return [false, 'consentLacking', 451]
+  if (this.record.consent < 1 && !allowWithoutConsent) return [false, 'consentLacking', 451]
   if (this.record.status < 1) return [false, 'statusLacking', 403]
   if (this.record.role === 'blocked') return [false, 'accountBlocked', 403]
 
